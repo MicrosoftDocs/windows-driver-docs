@@ -33,7 +33,7 @@ A more complicated way to execute until a specified state is reached is to use a
 
 In specifying the desired state, it is often helpful to use *automatic pseudo-registers*. These are variables controlled by the debugger which allow you to reference a variety of values related to the target state.
 
-For example, the following breakpoint uses the **$thread** pseudo-register, which is always equal to the value of the current thread. It resolves to the value of the current thread when it is used in a command. By using **$thread** as the argument of the **/t** parameter of the [**bp (Set Breakpoint)**](https://msdn.microsoft.com/library/windows/hardware/ff538903) command, you can create a breakpoint that will be triggered every time that **NtOpenFile** is called by the thread which was active at the time you issued the **bp** command:
+For example, the following breakpoint uses the **$thread** pseudo-register, which is always equal to the value of the current thread. It resolves to the value of the current thread when it is used in a command. By using **$thread** as the argument of the **/t** parameter of the [**bp (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md) command, you can create a breakpoint that will be triggered every time that **NtOpenFile** is called by the thread which was active at the time you issued the **bp** command:
 
 ```
 kd> bp /t @$thread nt!ntopenfile
@@ -41,13 +41,13 @@ kd> bp /t @$thread nt!ntopenfile
 
 This breakpoint will not be triggered when any other thread calls **NtOpenFile**.
 
-For a list of automatic pseudo-registers, see [Pseudo-Register Syntax](https://msdn.microsoft.com/library/windows/hardware/ff553485).
+For a list of automatic pseudo-registers, see [Pseudo-Register Syntax](pseudo-register-syntax.md).
 
 ### <span id="using_a_script_file_to_control_execution"></span><span id="USING_A_SCRIPT_FILE_TO_CONTROL_EXECUTION"></span>Using a Script File to Control Execution
 
 Another way to execute until a specified state is reached is to create a script file that calls itself recursively, testing the desired state in each iteration.
 
-Typically, this script file will contain the [**.if**](https://msdn.microsoft.com/library/windows/hardware/ff563221) and [**.else**](https://msdn.microsoft.com/library/windows/hardware/ff562960) tokens. You can use a command such as [**t (Trace)**](https://msdn.microsoft.com/library/windows/hardware/ff558933) to execute a single step, and then test the condition in question.
+Typically, this script file will contain the [**.if**](-if.md) and [**.else**](-else.md) tokens. You can use a command such as [**t (Trace)**](t--trace-.md) to execute a single step, and then test the condition in question.
 
 For example, if you wish to execute until the **eax** register contains the value 0x1234, you can create a script file called *eaxstep* that contains the following line:
 
@@ -61,7 +61,7 @@ Then issue the following command from the Debugger Command window:
 t "$<eaxstep"
 ```
 
-This **t** command will execute a single step, and then execute the quoted command. This command happens to be [**$&lt; (Run Script File)**](https://msdn.microsoft.com/library/windows/hardware/ff566261), which runs the *eaxstep* file. The script file tests the value of **eax**, runs the **t** command, and then calls itself recursively. This continues until the **eax** register equals 0x1234, at which point the [**.echo (Echo Comment)**](https://msdn.microsoft.com/library/windows/hardware/ff562940) command prints a message to the Debugger Command window, and execution stops.
+This **t** command will execute a single step, and then execute the quoted command. This command happens to be [**$&lt; (Run Script File)**](-----------------------a---run-script-file-.md), which runs the *eaxstep* file. The script file tests the value of **eax**, runs the **t** command, and then calls itself recursively. This continues until the **eax** register equals 0x1234, at which point the [**.echo (Echo Comment)**](-echo--echo-comment-.md) command prints a message to the Debugger Command window, and execution stops.
 
 For details on script files, see [Using Script Files](using-script-files.md) and [Using Debugger Command Programs](using-debugger-command-programs.md).
 
@@ -69,7 +69,7 @@ For details on script files, see [Using Script Files](using-script-files.md) and
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Executing%20Until%20a%20Specified%20State%20is%20Reached%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Executing%20Until%20a%20Specified%20State%20is%20Reached%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

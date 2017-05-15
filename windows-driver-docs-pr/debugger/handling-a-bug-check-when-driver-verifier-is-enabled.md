@@ -8,7 +8,7 @@ keywords: ["Driver Verifier", "Verifier"]
 # Handling a Bug Check When Driver Verifier is Enabled
 
 
-[Driver Verifier](http://go.microsoft.com/fwlink/p?LinkID=268663) detects driver errors at run time. You can use Driver Verifier along with the [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) debugger command to detect and display information about errors in your driver.
+[Driver Verifier](http://go.microsoft.com/fwlink/p?LinkID=268663) detects driver errors at run time. You can use Driver Verifier along with the [**!analyze**](-analyze.md) debugger command to detect and display information about errors in your driver.
 
 In Windows 8, [Driver Verifier](http://go.microsoft.com/fwlink/p?LinkID=268663) has been enhanced with new features, including [DDI Compliance Checking](http://go.microsoft.com/fwlink/p?LinkID=268676). Here we give an example that demonstrates DDI Compliance Checking.
 
@@ -39,7 +39,7 @@ nt!DbgBreakPointWithStatus:
 fffff802`a40ef930 cc              int     3
 ```
 
-In the debugger, enter [**!analyze -v**](https://msdn.microsoft.com/library/windows/hardware/ff562112) to get a detailed description of the error.
+In the debugger, enter [**!analyze -v**](-analyze.md) to get a detailed description of the error.
 
 ``` syntax
 0: kd> !analyze -v
@@ -91,7 +91,7 @@ CURRENT_IRQL:  9
 
 In the preceding output, you can see the name and description of the rule, **IrqlExApcLte1**, that was violated, and you can click a link to the reference page that describes the rule: <http://go.microsoft.com/fwlink/p/?linkid=216022>. You can also click a debugger command link, **!ruleinfo 0x20005**, to get information about the rule. In this case, the rule states that you cannot call [ExAcquireFastMutex](http://go.microsoft.com/fwlink/p?LinkID=268628) if the interrupt request level (IRQL) is greater than APC\_LEVEL. The output shows that the current IRQL is 9, and in wdm.h you can see that APC\_LEVEL has a value of 1. For more information about IRQLs, see [Managing Hardware Priorities](http://go.microsoft.com/fwlink/p?LinkID=268625).
 
-The output of [**!analyze -v**](https://msdn.microsoft.com/library/windows/hardware/ff562112) continues with a stack trace and information about the code that caused the error. In the following output, you can see that the **OnInterrupt** routine in MyDriver.sys called [ExAcquireFastMutex](http://go.microsoft.com/fwlink/p?LinkID=268628). **OnInterrupt** is an interrupt service routine that runs at an IRQL greater than APC\_LEVEL, so it is a violation for this routine to call [ExAcquireFastMutex](http://go.microsoft.com/fwlink/p?LinkID=268628).
+The output of [**!analyze -v**](-analyze.md) continues with a stack trace and information about the code that caused the error. In the following output, you can see that the **OnInterrupt** routine in MyDriver.sys called [ExAcquireFastMutex](http://go.microsoft.com/fwlink/p?LinkID=268628). **OnInterrupt** is an interrupt service routine that runs at an IRQL greater than APC\_LEVEL, so it is a violation for this routine to call [ExAcquireFastMutex](http://go.microsoft.com/fwlink/p?LinkID=268628).
 
 ``` syntax
 LAST_CONTROL_TRANSFER:  from fffff802a41f00ea to fffff802a40ef930
@@ -164,7 +164,7 @@ BUCKET_ID:  0xc4_IrqlExApcLte1_XDV_VRF_MyDriver!OnInterrupt
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Handling%20a%20Bug%20Check%20When%20Driver%20Verifier%20is%20Enabled%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Handling%20a%20Bug%20Check%20When%20Driver%20Verifier%20is%20Enabled%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

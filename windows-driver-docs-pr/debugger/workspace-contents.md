@@ -15,7 +15,7 @@ Each workspace preserves the following information about the current debugging s
 
 -   All break and handling information for exceptions and events. For more information about the break and handling information, see Breakpoints in Workspaces.
 
--   All open source files. If a source file is not found, an error message appears. You can close these error messages individually or by using the [Window | Close All Error Windows](https://msdn.microsoft.com/library/windows/hardware/ff561336) command.
+-   All open source files. If a source file is not found, an error message appears. You can close these error messages individually or by using the [Window | Close All Error Windows](window---close-all-error-windows.md) command.
 
 -   All user-defined aliases.
 
@@ -27,7 +27,7 @@ Each workspace preserves the following information about the debugger configurat
 
 -   The source path. (In remote debugging, the main source path and the local source path are saved.)
 
--   The current source options that were set with [**l+, l- (Set Source Options)**](https://msdn.microsoft.com/library/windows/hardware/ff552114).
+-   The current source options that were set with [**l+, l- (Set Source Options)**](l---l---set-source-options-.md).
 
 -   Log file settings.
 
@@ -35,13 +35,13 @@ Each workspace preserves the following information about the debugger configurat
 
 -   The most recent paths in each **Open** dialog box (except for the workspace file and text file paths, which are not saved).
 
--   The current [**.enable\_unicode**](https://msdn.microsoft.com/library/windows/hardware/ff562972), [**.force\_radix\_output**](https://msdn.microsoft.com/library/windows/hardware/ff563118), and [**.enable\_long\_status**](https://msdn.microsoft.com/library/windows/hardware/ff562967) settings.
+-   The current [**.enable\_unicode**](-enable-unicode--enable-unicode-display-.md), [**.force\_radix\_output**](-force-radix-output--use-radix-for-integers-.md), and [**.enable\_long\_status**](-enable-long-status--enable-long-integer-display-.md) settings.
 
 All default workspaces and named workspaces preserve the following information about the WinDbg graphical interface. This information is loaded cumulatively, starting with the base workspace and ending with the most recently-loaded workspace.
 
 -   The title of the WinDbg window
 
--   The [Automatically Open Disassembly](https://msdn.microsoft.com/library/windows/hardware/ff561331) setting
+-   The [Automatically Open Disassembly](window---automatically-open-disassembly.md) setting
 
 -   The default font
 
@@ -91,7 +91,7 @@ If you are debugging multiple user-mode processes, only breakpoints that are ass
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Workspace%20Contents%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Workspace%20Contents%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -1,0 +1,77 @@
+---
+title: poolval
+description: The poolval extension analyzes the headers for a pool page and diagnoses any possible corruption. This extension is only available in Windows XP and later versions.
+ms.assetid: b67ab2d4-c765-4721-81ed-c6b7c9a0ba6d
+keywords: ["poolval Windows Debugging"]
+topic_type:
+- apiref
+api_name:
+- poolval
+api_type:
+- NA
+---
+
+# !poolval
+
+
+The **!poolval** extension analyzes the headers for a pool page and diagnoses any possible corruption. This extension is only available in Windows XP and later versions.
+
+``` syntax
+!poolval Address [DisplayLevel]
+```
+
+## <span id="ddk__poolval_dbg"></span><span id="DDK__POOLVAL_DBG"></span>Parameters
+
+
+<span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
+Specifies the address of the pool whose header is to be analyzed.
+
+<span id="_______DisplayLevel______"></span><span id="_______displaylevel______"></span><span id="_______DISPLAYLEVEL______"></span> *DisplayLevel*   
+Specifies the information to include in the display. This can be any of the following values (the default is zero):
+
+<span id="0"></span>0  
+Causes basic information to be displayed.
+
+<span id="1"></span>1  
+Causes basic information and linked header lists to be displayed.
+
+<span id="2"></span>2  
+Causes basic information, linked header lists, and basic header information to be displayed.
+
+<span id="3"></span>3  
+Causes basic information, linked header lists, and full header information to be displayed.
+
+### <span id="DLL"></span><span id="dll"></span>DLL
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p><strong>Windows 2000</strong></p></td>
+<td align="left"><p>Unavailable</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>Windows XP and later</strong></p></td>
+<td align="left"><p>Kdexts.dll</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+
+For information about memory pools, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. (These resources may not be available in some languages and countries.)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!poolval%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+

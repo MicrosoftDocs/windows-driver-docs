@@ -16,7 +16,7 @@ api_type:
 
 Once the DbgSrv process server has been activated, you can create a smart client on another computer and begin a debugging session.
 
-There are two ways to start a smart client: by starting CDB or WinDbg with the -premote [command-line option](https://msdn.microsoft.com/library/windows/hardware/ff539174), or by using the WinDbg graphical interface.
+There are two ways to start a smart client: by starting CDB or WinDbg with the -premote [command-line option](command-line-options.md), or by using the WinDbg graphical interface.
 
 The protocol of the smart client must match the protocol of the process server. The general syntax for starting a smart client depends on the protocol used. The following options exist:
 
@@ -54,7 +54,7 @@ ssl:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,port=Socket[,pass
 ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clicon=Server,port=Socket[,password=Password] 
 ```
 
-Alternatively, you can use the **Browse** button to locate active process servers. See [File | Connect to Remote Stub](https://msdn.microsoft.com/library/windows/hardware/ff545336) for details.
+Alternatively, you can use the **Browse** button to locate active process servers. See [File | Connect to Remote Stub](file---connect-to-remote-stub.md) for details.
 
 ## <span id="ddk_activating_a_smart_client_dbg"></span><span id="DDK_ACTIVATING_A_SMART_CLIENT_DBG"></span>
 
@@ -112,17 +112,17 @@ If a password was used when the process server was created, *Password* must be s
 (Debugging Tools for Windows 6.6.07 and earlier only) Forces the debugger to use IP version 6 rather than version 4 when using TCP to connect to the Internet. In Windows Vista and later versions, the debugger attempts to auto-default to IP version 6, making this option unnecessary.
 
 <span id="Options"></span><span id="options"></span><span id="OPTIONS"></span>*Options*  
-Any additional command-line parameters can be placed here. See [Command-Line Options](https://msdn.microsoft.com/library/windows/hardware/ff539174) for a full list. If you are using CDB, this must specify the process you wish to debug. If you are using WinDbg, you can specify the process on the command line or through the graphical interface.
+Any additional command-line parameters can be placed here. See [Command-Line Options](command-line-options.md) for a full list. If you are using CDB, this must specify the process you wish to debug. If you are using WinDbg, you can specify the process on the command line or through the graphical interface.
 
 Since the process server simply acts as a gateway for the smart client, the additional *Options* will be the same as those you would use if you were starting a user-mode debugger on the same machine as the target application.
 
-If you are using the **-premote** option with [**.attach (Attach to Process)**](https://msdn.microsoft.com/library/windows/hardware/ff562135) or [**.create (Create Process)**](https://msdn.microsoft.com/library/windows/hardware/ff562280), the parameters are the same as those listed above.
+If you are using the **-premote** option with [**.attach (Attach to Process)**](-attach--attach-to-process-.md) or [**.create (Create Process)**](-create--create-process-.md), the parameters are the same as those listed above.
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Activating%20a%20Smart%20Client%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Activating%20a%20Smart%20Client%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -64,7 +64,7 @@ This is the classic "buffer overrun" hacking attack. The system has been brought
 Resolution
 ----------
 
-Use the [**kb (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943) command to get a stack trace.
+Use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to get a stack trace.
 
 The last routine on the stack before the buffer overrun handlers and bug check call is the one that overran its local variable.
 

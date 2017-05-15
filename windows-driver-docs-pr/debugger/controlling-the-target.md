@@ -13,7 +13,7 @@ keywords: ["controlling the target", "controlling the target, overview", "starti
 
 While you are debugging a target application in user mode or a target computer in kernel mode, the target can be *running* or *stopped*.
 
-When the debugger connects to a kernel-mode target, the debugger leaves the target running, unless you use the **-b** [command-line option](https://msdn.microsoft.com/library/windows/hardware/ff539174), the target system has stopped responding (that is, *crashed*), or the target system is still stopped because of an earlier kernel debugging action.
+When the debugger connects to a kernel-mode target, the debugger leaves the target running, unless you use the **-b** [command-line option](command-line-options.md), the target system has stopped responding (that is, *crashed*), or the target system is still stopped because of an earlier kernel debugging action.
 
 When the debugger starts or connects to a user-mode target, the debugger immediately stops the target, unless you use the **-g** command-line option. For more information, see [Initial Breakpoint](initial-breakpoint.md).
 
@@ -70,7 +70,7 @@ You can use the commands in the following forms.
 <tr class="odd">
 <td align="left"></td>
 <td align="left"><img src="images/tbcursor.png" alt="Screen shot of the Run to Cursor button" /></td>
-<td align="left"><p>[Debug | Run to Cursor](https://msdn.microsoft.com/library/windows/hardware/ff541809)</p></td>
+<td align="left"><p>[Debug | Run to Cursor](debug---run-to-cursor.md)</p></td>
 <td align="left"><p>F7</p>
 <p>CTRL + F10</p></td>
 <td align="left"><p>(WinDbg only) Executes until it reaches the line that the cursor marks.</p></td>
@@ -78,153 +78,153 @@ You can use the commands in the following forms.
 <tr class="even">
 <td align="left"></td>
 <td align="left"><img src="images/tbstop.png" alt="Screen shot of the Stop Debugging button" /></td>
-<td align="left"><p>[Debug | Stop Debugging](https://msdn.microsoft.com/library/windows/hardware/ff541838)</p></td>
+<td align="left"><p>[Debug | Stop Debugging](debug---stop-debugging.md)</p></td>
 <td align="left"><p>SHIFT + F5</p></td>
 <td align="left"><p>Stops all debugging and closes the target.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>(CDB/KD only) [<strong>CTRL+C</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540312)</p></td>
+<td align="left"><p>(CDB/KD only) [<strong>CTRL+C</strong>](ctrl-c--break-.md)</p></td>
 <td align="left"><img src="images/tbbreak.png" alt="Screen shot of the Break button" /></td>
-<td align="left"><p>[Debug | Break](https://msdn.microsoft.com/library/windows/hardware/ff541727)</p></td>
+<td align="left"><p>[Debug | Break](debug---break.md)</p></td>
 <td align="left"><p>CTRL + BREAK</p></td>
 <td align="left"><p>Execution stops, and the debugger breaks into the target.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>.restart (Restart Target Application)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564823)</p></td>
+<td align="left"><p>[<strong>.restart (Restart Target Application)</strong>](-restart--restart-target-application-.md)</p></td>
 <td align="left"><img src="images/tbrestart.png" alt="Screen shot of the Restart button" /></td>
-<td align="left"><p>[Debug | Restart](https://msdn.microsoft.com/library/windows/hardware/ff541805)</p></td>
+<td align="left"><p>[Debug | Restart](debug---restart.md)</p></td>
 <td align="left"><p>CTRL + SHIFT + F5</p></td>
 <td align="left"><p>(User mode only) Restarts the target application.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>g (Go)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549693)</p></td>
+<td align="left"><p>[<strong>g (Go)</strong>](g--go-.md)</p></td>
 <td align="left"><img src="images/tbgo.png" alt="Screen shot of the Go button" /></td>
-<td align="left"><p>[Debug | Go](https://msdn.microsoft.com/library/windows/hardware/ff541759)</p></td>
+<td align="left"><p>[Debug | Go](debug---go.md)</p></td>
 <td align="left"><p>F5</p></td>
 <td align="left"><p>Target executes freely.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>gc (Go from Conditional Breakpoint)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545522)</p></td>
+<td align="left"><p>[<strong>gc (Go from Conditional Breakpoint)</strong>](gc--go-from-conditional-breakpoint-.md)</p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Resumes execution after a [conditional breakpoint](setting-a-conditional-breakpoint.md).</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>gh (Go with Exception Handled)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549618)</p></td>
+<td align="left"><p>[<strong>gh (Go with Exception Handled)</strong>](gh--go-with-exception-handled-.md)</p></td>
 <td align="left"></td>
-<td align="left"><p>[Debug | Go Handled Exception](https://msdn.microsoft.com/library/windows/hardware/ff541765)</p></td>
+<td align="left"><p>[Debug | Go Handled Exception](debug---go-handled-exception.md)</p></td>
 <td align="left"></td>
 <td align="left"><p>Same as <strong>g (Go)</strong>, except that the current exception is treated as handled.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>gn (Go with Exception Not Handled)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549672)</p></td>
+<td align="left"><p>[<strong>gn (Go with Exception Not Handled)</strong>](gn--gn--go-with-exception-not-handled-.md)</p></td>
 <td align="left"></td>
-<td align="left"><p>[Debug | Go Unhandled Exception](https://msdn.microsoft.com/library/windows/hardware/ff541774)</p></td>
+<td align="left"><p>[Debug | Go Unhandled Exception](debug---go-unhandled-exception.md)</p></td>
 <td align="left"></td>
 <td align="left"><p>Same as <strong>g (Go)</strong>, except that the current exception is treated as unhandled.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>gu (Go Up)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549688)</p></td>
+<td align="left"><p>[<strong>gu (Go Up)</strong>](gu--go-up-.md)</p></td>
 <td align="left"><img src="images/tbout.png" alt="Screen shot of the Step Out button" /></td>
-<td align="left"><p>[Debug | Step Out](https://msdn.microsoft.com/library/windows/hardware/ff541828)</p></td>
+<td align="left"><p>[Debug | Step Out](debug---step-out.md)</p></td>
 <td align="left"><p>SHIFT + F11</p></td>
 <td align="left"><p>Target executes until the current function is complete.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>p (Step)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553496)</p></td>
+<td align="left"><p>[<strong>p (Step)</strong>](p--step-.md)</p></td>
 <td align="left"><img src="images/tbover.png" alt="Screen shot of the Step Over button" /></td>
-<td align="left"><p>[Debug | Step Over](https://msdn.microsoft.com/library/windows/hardware/ff541831)</p></td>
+<td align="left"><p>[Debug | Step Over](debug---step-over.md)</p></td>
 <td align="left"><p>F10</p></td>
 <td align="left"><p>Target executes one instruction. If this instruction is a function call, that function is executed as a single step.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>pa (Step to Address)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553343)</p></td>
+<td align="left"><p>[<strong>pa (Step to Address)</strong>](pa--step-to-address-.md)</p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches the specified address. All steps in this function are displayed (but steps in called functions are not).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>pc (Step to Next Call)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553357)</p></td>
+<td align="left"><p>[<strong>pc (Step to Next Call)</strong>](pc--step-to-next-call-.md)</p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until the next <strong>call</strong> instruction. If the current instruction is a <strong>call</strong> instruction, this call is executed completely and execution continues until the next <strong>call</strong>.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>pct (Step to Next Call or Return)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553348)</p></td>
+<td align="left"><p>[<strong>pct (Step to Next Call or Return)</strong>](pct--step-to-next-call-or-return-.md)</p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches a <strong>call</strong> instruction or a <strong>return</strong> instruction.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>ph (Step to Next Branching Instruction)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553391)</p></td>
+<td align="left"><p>[<strong>ph (Step to Next Branching Instruction)</strong>](ph--step-to-next-branching-instruction-.md)</p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches any kind of branching instruction, including conditional or unconditional branches, calls, returns, and system calls.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>pt (Step to Next Return)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553491)</p></td>
+<td align="left"><p>[<strong>pt (Step to Next Return)</strong>](pt--step-to-next-return-.md)</p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches a <strong>return</strong> instruction.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>t (Trace)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff558933)</p></td>
+<td align="left"><p>[<strong>t (Trace)</strong>](t--trace-.md)</p></td>
 <td align="left"><img src="images/tbinto.png" alt="Screen shot of the Step Into button" /></td>
-<td align="left"><p>[Debug | Step Into](https://msdn.microsoft.com/library/windows/hardware/ff541822)</p></td>
+<td align="left"><p>[Debug | Step Into](debug---step-into.md)</p></td>
 <td align="left"><p>F11</p>
 <p>F8</p></td>
 <td align="left"><p>Target executes one instruction. If this instruction is a function call, debugger traces into that call.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>ta (Trace to Address)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff558862)</p></td>
+<td align="left"><p>[<strong>ta (Trace to Address)</strong>](ta--trace-to-address-.md)</p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches the specified address. All steps in this function and called functions are displayed.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>tb (Trace to Next Branch)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff558863)</p></td>
+<td align="left"><p>[<strong>tb (Trace to Next Branch)</strong>](tb--trace-to-next-branch-.md)</p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>(All modes, except kernel mode, only on x86-based systems) Target executes until it reaches the next branch instruction.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>tc (Trace to Next Call)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff558865)</p></td>
+<td align="left"><p>[<strong>tc (Trace to Next Call)</strong>](tc--trace-to-next-call-.md)</p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until the next <strong>call</strong> instruction. If the current instruction is a <strong>call</strong> instruction, the instruction is traced into until a new <strong>call</strong> is reached.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>tct (Trace to Next Call or Return)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff558864)</p></td>
+<td align="left"><p>[<strong>tct (Trace to Next Call or Return)</strong>](tct--trace-to-next-call-or-return-.md)</p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches a <strong>call</strong> instruction or <strong>return</strong> instruction. If the current instruction is a <strong>call</strong> instruction or <strong>return</strong> instruction, the instruction is traced into until a new <strong>call</strong> or <strong>return</strong> is reached.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>th (Trace to Next Branching Instruction)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff558900)</p></td>
+<td align="left"><p>[<strong>th (Trace to Next Branching Instruction)</strong>](th--trace-to-next-branching-instruction-.md)</p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches any kind of branching instruction, including conditional or unconditional branches, calls, returns, and system calls. If the current instruction is a branching instruction, the instruction is traced into until a new branching instruction is reached.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>tt (Trace to Next Return)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff558922)</p></td>
+<td align="left"><p>[<strong>tt (Trace to Next Return)</strong>](tt--trace-to-next-return-.md)</p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches a <strong>return</strong> instruction. If the current instruction is a <strong>return</strong> instruction, the instruction is traced into until a new <strong>return</strong> is reached.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>wt (Trace and Watch Data)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561497)</p></td>
+<td align="left"><p>[<strong>wt (Trace and Watch Data)</strong>](wt--trace-and-watch-data-.md)</p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
@@ -241,7 +241,7 @@ For more information about how to restart the target computer, see [Crashing and
 
 If you do not want the application to stop immediately when it starts or loads, use CDB or WinDbg together with the **-g** command-line option. For more information about this situation, see [Initial Breakpoint](initial-breakpoint.md).
 
-CDB and WinDbg also support the **-G** [command-line option](https://msdn.microsoft.com/library/windows/hardware/ff539174). This option causes the debugging session to end if the application completes properly.
+CDB and WinDbg also support the **-G** [command-line option](command-line-options.md). This option causes the debugging session to end if the application completes properly.
 
 The following command tries to run the application from start to finish, and the debugger prompt appears only if an error occurs.
 
@@ -249,7 +249,7 @@ The following command tries to run the application from start to finish, and the
 cdb -g -G ApplicationName 
 ```
 
-You can use the **-pt** [command-line option](https://msdn.microsoft.com/library/windows/hardware/ff539174) to set the break time-out. There are certain problems that can make the target unable to communicate with the debugger. If a break command is issued and the debugger cannot break into the target after this time, the debugger displays a "Break-in timed out" message.
+You can use the **-pt** [command-line option](command-line-options.md) to set the break time-out. There are certain problems that can make the target unable to communicate with the debugger. If a break command is issued and the debugger cannot break into the target after this time, the debugger displays a "Break-in timed out" message.
 
 At this point, the debugger stops trying to break into the target. Instead, the debugger pauses the target and enables you to examine (but not control) the target application.
 
@@ -259,7 +259,7 @@ The default time-out is 30 seconds.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Controlling%20the%20Target%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Controlling%20the%20Target%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

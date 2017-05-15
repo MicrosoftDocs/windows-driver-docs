@@ -1,0 +1,32 @@
+---
+title: Kernel-Mode Extensions
+description: Kernel-Mode Extensions
+ms.assetid: e8e1e692-d991-427f-a2e7-b9eb1893fe83
+keywords: ["extension commands ( commands), kernel-mode extensions", "kdextx86.dll (kernel-mode extensions)", "kdexts.dll (kernel-mode extensions)", "kext.dll (kernel-mode extensions)", "kernel-mode extensions (kdext .dll and kext.dll)"]
+---
+
+# Kernel-Mode Extensions
+
+
+## <span id="ddk_kernel_mode_extensions_dbg"></span><span id="DDK_KERNEL_MODE_EXTENSIONS_DBG"></span>
+
+
+This section of the reference describes extension commands that are primarily used during kernel-mode debugging.
+
+The debugger will automatically load the proper version of these extension commands. Unless you have manually loaded a different version, you do not have to keep track of the DLL versions being used. See [Using Debugger Extension Commands](using-debugger-extension-commands.md) for a description of the default module search order. See [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md) for an explanation of how to load extension modules.
+
+Each extension command reference page lists the DLLs that expose that command. Use the following rules to determine the proper directory from which to load this extension DLL:
+
+-   If your target computer is running Windows XP or a later version of Windows, use winxp\\Kdexts.dll.
+
+In addition, kernel-mode extensions that are not specific to any single operating system can be found in winext\\kext.dll.
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Kernel-Mode%20Extensions%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+

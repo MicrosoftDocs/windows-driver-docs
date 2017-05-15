@@ -104,7 +104,7 @@ The error that generates this message can occur after the first restart during W
 
 **To get a stack trace if the normal stack tracing procedures fail**
 
-1.  Use the [**kb (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943) command to display parameters in the stack trace. Look for the call to **NT!PspUnhandledExceptionInSystemThread**. (If this function is not listed, see the note below.)
+1.  Use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to display parameters in the stack trace. Look for the call to **NT!PspUnhandledExceptionInSystemThread**. (If this function is not listed, see the note below.)
 
 2.  The first parameter to **NT!PspUnhandledExceptionInSystemThread** is a pointer to a structure, which contains pointers to an **except** statement:
 
@@ -119,13 +119,13 @@ The error that generates this message can occur after the first restart during W
         )
     ```
 
-    Use the [**dd (Display Memory)**](https://msdn.microsoft.com/library/windows/hardware/ff542790) command on that address to display the necessary data.
+    Use the [**dd (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command on that address to display the necessary data.
 
-3.  The first retrieved value is an exception record and the second is a context record. Use the [**.exr (Display Exception Record)**](https://msdn.microsoft.com/library/windows/hardware/ff563043) command and the [**.cxr (Display Context Record)**](https://msdn.microsoft.com/library/windows/hardware/ff562301) command with these two values as their arguments, respectively.
+3.  The first retrieved value is an exception record and the second is a context record. Use the [**.exr (Display Exception Record)**](-exr--display-exception-record-.md) command and the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command with these two values as their arguments, respectively.
 
 4.  After the **.cxr** command executes, use the **kb** command to display a stack trace that is based on the context record information. This stack trace indicates the calling stack where the unhandled exception occurred.
 
-**Note**  This procedure assumes that you can locate **NT!PspUnhandledExceptionInSystemThread**. However, in some cases (such as an access violation crash) you will not be able to do this. In that case, look for **ntoskrnl!KiDispatchException**. The third parameter passed to this function is a trap frame address. Use the [**.trap (Display Trap Frame)**](https://msdn.microsoft.com/library/windows/hardware/ff565491) command with this address to set the Register Context to the proper value. You can then perform stack traces and issue other commands.
+**Note**  This procedure assumes that you can locate **NT!PspUnhandledExceptionInSystemThread**. However, in some cases (such as an access violation crash) you will not be able to do this. In that case, look for **ntoskrnl!KiDispatchException**. The third parameter passed to this function is a trap frame address. Use the [**.trap (Display Trap Frame)**](-trap--display-trap-frame-.md) command with this address to set the Register Context to the proper value. You can then perform stack traces and issue other commands.
 
  
 

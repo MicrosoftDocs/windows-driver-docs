@@ -33,7 +33,7 @@ The VIDEO\_TDR\_APPLICATION\_BLOCKED bug check has a value of 0x00000142. This i
 Remarks
 -------
 
-Secondary data of tag {270A33FD-3DA6-460D-BA89-3C1BAE21E39B} contains additional TDR related data. Use [**.enumtag (Enumerate Secondary Callback Data)**](https://msdn.microsoft.com/library/windows/hardware/ff562987) to view the data.
+Secondary data of tag {270A33FD-3DA6-460D-BA89-3C1BAE21E39B} contains additional TDR related data. Use [**.enumtag (Enumerate Secondary Callback Data)**](-enumtag--enumerate-secondary-callback-data-.md) to view the data.
 
  
 

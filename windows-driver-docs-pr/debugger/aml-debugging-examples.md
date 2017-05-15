@@ -15,7 +15,7 @@ Here are examples that illustrate how to get started with AML debugging.
 
 ### <span id="investigating_a_frozen_computer"></span><span id="INVESTIGATING_A_FROZEN_COMPUTER"></span>Investigating a Frozen Computer
 
-If the target computer has frozen and you suspect it may be an ACPI problem, begin by using the [**!amli lc**](https://msdn.microsoft.com/library/windows/hardware/ff561558) extension to display all the active contexts:
+If the target computer has frozen and you suspect it may be an ACPI problem, begin by using the [**!amli lc**](-amli-lc.md) extension to display all the active contexts:
 
 ``` syntax
 kd> !amli lc
@@ -26,9 +26,9 @@ If no contexts are displayed, the error is probably not ACPI-related.
 
 If there are contexts shown, look for the one marked with an asterisk. This is the *current context* (the one that is being executed by the interpreter at the present moment).
 
-In this example, the target computer is running Windows XP or Windows Server 2003 on a 32-bit processor. Therefore all addresses are cast to 64 bits, producing a gratuitous FFFFFFFF in the high 32 bits. The abbreviation **pbOp** indicates the instruction pointer ("pointer to binary op codes"). The **Obj** field gives the full path and name of the method as it appears in the ACPI tables. For a description of the flags, see [**!amli lc**](https://msdn.microsoft.com/library/windows/hardware/ff561558).
+In this example, the target computer is running Windows XP or Windows Server 2003 on a 32-bit processor. Therefore all addresses are cast to 64 bits, producing a gratuitous FFFFFFFF in the high 32 bits. The abbreviation **pbOp** indicates the instruction pointer ("pointer to binary op codes"). The **Obj** field gives the full path and name of the method as it appears in the ACPI tables. For a description of the flags, see [**!amli lc**](-amli-lc.md).
 
-You can use the [**!amli u**](https://msdn.microsoft.com/library/windows/hardware/ff562107) command to disassemble the \_CRS method as follows:
+You can use the [**!amli u**](-amli-u.md) command to disassemble the \_CRS method as follows:
 
 ``` syntax
 kd> !amli u \_SB.PCI0.ISA0.FDC0._CRS
@@ -42,7 +42,7 @@ ffffffff80e4a567 : Return(CRES)
 
 ### <span id="breaking_into_the_amli_debugger"></span><span id="BREAKING_INTO_THE_AMLI_DEBUGGER"></span>Breaking Into the AMLI Debugger
 
-The [**!amli debugger**](https://msdn.microsoft.com/library/windows/hardware/ff561540) command causes the AML interpreter to break into the AMLI Debugger the next time any AML code is executed.
+The [**!amli debugger**](-amli-debugger.md) command causes the AML interpreter to break into the AMLI Debugger the next time any AML code is executed.
 
 After the AMLI Debugger prompt appears, you can use any of the AMLI Debugger commands. You can also use **!amli** extension commands without prefixing them with "!amli":
 
@@ -80,7 +80,7 @@ ffffffff80e4a567 : Return(CRES)
 
 In the following example, you will break into the AMLI Debugger before the method \_BST is executed.
 
-Even if you have located a \_BST object, you should verify that it is indeed a method. You can use the [**!amli dns**](https://msdn.microsoft.com/library/windows/hardware/ff561546) extension to do this.
+Even if you have located a \_BST object, you should verify that it is indeed a method. You can use the [**!amli dns**](-amli-dns.md) extension to do this.
 
 ``` syntax
 kd> !amli dns /s \_sb.pci0.isa.bat1._bst
@@ -89,13 +89,13 @@ ACPI Name Space: \_SB.PCI0.ISA.BAT1._BST (c29c2044)
 Method(_BST:Flags=0x0,CodeBuff=c29c20a5,Len=103)
 ```
 
-Now you can use the [**!amli bp**](https://msdn.microsoft.com/library/windows/hardware/ff561537) command to place the breakpoint:
+Now you can use the [**!amli bp**](-amli-bp.md) command to place the breakpoint:
 
 ``` syntax
 kd> !amli bp \_sb.pci0.isa.bat1._bst
 ```
 
-You may also want to place breakpoints within the method. You could use the [**!amli u**](https://msdn.microsoft.com/library/windows/hardware/ff562107) command to disassemble \_BST and then place a breakpoint on one of its steps:
+You may also want to place breakpoints within the method. You could use the [**!amli u**](-amli-u.md) command to disassemble \_BST and then place a breakpoint on one of its steps:
 
 ``` syntax
 kd> !amli u _sb.pci0.isa.bat1._bst
@@ -118,14 +118,14 @@ Running \_WAK method
 Hit Breakpoint 0.
 ```
 
-Use the [**!amli ln**](https://msdn.microsoft.com/library/windows/hardware/ff562099) extension to see the nearest method to the current program counter. The following example is taken from a Windows 2000 system, so the addresses are shown in 32-bit form:
+Use the [**!amli ln**](-amli-ln.md) extension to see the nearest method to the current program counter. The following example is taken from a Windows 2000 system, so the addresses are shown in 32-bit form:
 
 ``` syntax
 kd> !amli ln
 c29accf5: \_WAK
 ```
 
-The [**!amli lc**](https://msdn.microsoft.com/library/windows/hardware/ff561558) extension displays all the active contexts:
+The [**!amli lc**](-amli-lc.md) extension displays all the active contexts:
 
 ``` syntax
 kd> !amli lc
@@ -135,7 +135,7 @@ kd> !amli lc
 
 This shows that the active contexts are associated with the methods \_Q09 and \_WAK. The current context is \_WAK.
 
-Now you can use the [**!amli r**](https://msdn.microsoft.com/library/windows/hardware/ff562102) command to display more details about the current context. From this you can see useful thread and stack information, as well as arguments passed to \_WAK and the local data objects.
+Now you can use the [**!amli r**](-amli-r.md) command to display more details about the current context. From this you can see useful thread and stack information, as well as arguments passed to \_WAK and the local data objects.
 
 ``` syntax
 kd> !amli r
@@ -161,7 +161,7 @@ c18b4040: RetObj=Unknown()
 
 ### <span id="tracing__stepping__and_running_aml_code"></span><span id="TRACING__STEPPING__AND_RUNNING_AML_CODE"></span>Tracing, Stepping, and Running AML Code
 
-If you want to trace through the code, you can turn on full tracing information by using the [**!amli set**](https://msdn.microsoft.com/library/windows/hardware/ff562104) extension as follows:
+If you want to trace through the code, you can turn on full tracing information by using the [**!amli set**](-amli-set.md) extension as follows:
 
 ``` syntax
 kd> !amli set spewon verboseon traceon
@@ -205,7 +205,7 @@ Integer(:Value=0x0000000b[11])
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20AML%20Debugging%20Examples%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20AML%20Debugging%20Examples%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

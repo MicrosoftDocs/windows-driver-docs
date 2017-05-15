@@ -36,7 +36,7 @@ The most common trap codes include the following:
 -   0x00000006, or Invalid Opcode, indicates that the processor tries to execute an invalid instruction. This error typically occurs when the instruction pointer has become corrupted and is pointing to the wrong location. The most common cause of this error is hardware memory corruption.
 
 -   0x00000008, or Double Fault, indicates that an exception occurs during a call to the handler for a prior exception. Typically, the two exceptions are handled serially. However, there are several exceptions that cannot be handled serially, and in this situation the processor signals a double fault. There are two common causes of a double fault:
-    -   A kernel stack overflow. This overflow occurs when a guard page is hit, and the kernel tries to push a trap frame. Because there is no stack left, a stack overflow results, causing the double fault. If you think this overview has occurred, use [**!thread**](https://msdn.microsoft.com/library/windows/hardware/ff565440) to determine the stack limits, and then use [**kb (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943) with a large parameter (for example, **kb 100**) to display the full stack.
+    -   A kernel stack overflow. This overflow occurs when a guard page is hit, and the kernel tries to push a trap frame. Because there is no stack left, a stack overflow results, causing the double fault. If you think this overview has occurred, use [**!thread**](-thread.md) to determine the stack limits, and then use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) with a large parameter (for example, **kb 100**) to display the full stack.
     -   A hardware problem.
 
 The less-common trap codes include the following:
@@ -67,15 +67,15 @@ A double fault can occur when the kernel stack overflows. This overflow occurs i
 Resolution
 ----------
 
-**Debugging:** Always begin with the [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) extension.
+**Debugging:** Always begin with the [**!analyze**](-analyze.md) extension.
 
-If this extension is not sufficient, use the [**kv (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943) debugger command.
+If this extension is not sufficient, use the [**kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) debugger command.
 
--   If **kv** shows a **taskGate**, use the [**.tss (Display Task State Segment)**](https://msdn.microsoft.com/library/windows/hardware/ff565500) command on the part before the colon.
+-   If **kv** shows a **taskGate**, use the [**.tss (Display Task State Segment)**](-tss--display-task-state-segment-.md) command on the part before the colon.
 
--   If **kv** shows a trap frame, use the [**.trap (Display Trap Frame)**](https://msdn.microsoft.com/library/windows/hardware/ff565491) command to format the frame.
+-   If **kv** shows a trap frame, use the [**.trap (Display Trap Frame)**](-trap--display-trap-frame-.md) command to format the frame.
 
--   Otherwise, use the [**.trap (Display Trap Frame)**](https://msdn.microsoft.com/library/windows/hardware/ff565491) command on the appropriate frame. (On x86-based platforms, this frame is associated with the procedure **NT!KiTrap**.)
+-   Otherwise, use the [**.trap (Display Trap Frame)**](-trap--display-trap-frame-.md) command on the appropriate frame. (On x86-based platforms, this frame is associated with the procedure **NT!KiTrap**.)
 
 After using one of these commands, use **kv** again to display the new stack.
 

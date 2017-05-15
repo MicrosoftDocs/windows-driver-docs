@@ -18,7 +18,7 @@ BugCheck CB, {f90c6ae0, f9949215, 81861788, 26}
 Probably caused by : ks.sys ( ks!KsProbeStreamIrp+333 )
 ```
 
-As suggested, use [**!analyze -v**](https://msdn.microsoft.com/library/windows/hardware/ff562112) to get more detailed information.
+As suggested, use [**!analyze -v**](-analyze.md) to get more detailed information.
 
 ```
 kd> !analyze -v
@@ -30,7 +30,7 @@ Arguments:
 Arg3: 81861788, A pointer to the MDL containing the locked pages.
 ```
 
-Now, use the [**!search**](https://msdn.microsoft.com/library/windows/hardware/ff564934) extension to find the virtual addresses that are associated with the MDL pointer.
+Now, use the [**!search**](-search.md) extension to find the virtual addresses that are associated with the MDL pointer.
 
 ```
 kd> !search 81861788
@@ -44,7 +44,7 @@ Pfn      Offset   Hit      Va       Pte
 00001732 000009B4 81861788 817329B4 C0205CC8
 ```
 
-For each virtual address (VA) found, look for an IRP signature. Do this by using the [**dd**](https://msdn.microsoft.com/library/windows/hardware/ff542790) command with the VA minus one DWORD.
+For each virtual address (VA) found, look for an IRP signature. Do this by using the [**dd**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command with the VA minus one DWORD.
 
 ```
 kd> dd 808A7B0C-4 l4
@@ -58,7 +58,7 @@ kd> dd 817329B4-4 l4
 kd> $ Matches signature
 ```
 
-After a VA with an IRP signature has been found, use the [**!irp**](https://msdn.microsoft.com/library/windows/hardware/ff563812) extension to find out what driver is pending on this IRP.
+After a VA with an IRP signature has been found, use the [**!irp**](-irp.md) extension to find out what driver is pending on this IRP.
 
 ```
 kd> !irp 817329b0 7
@@ -75,7 +75,7 @@ In this case, \\Driver\\TESTCAP is the likely cause of the bug check.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Interpreting%20Bug%20Check%200xCB%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Interpreting%20Bug%20Check%200xCB%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

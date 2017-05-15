@@ -21,12 +21,12 @@ The WORKER\_THREAD\_RETURNED\_WITH\_BAD\_IO\_PRIORITY bug check has a value of 0
 ## WORKER\_THREAD\_RETURNED\_WITH\_BAD\_IO\_PRIORITY Parameters
 
 
-| Parameter | Description                                                                                                                                                  |
-|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1         | Address of worker routine (Use the [**ln (List Nearest Symbols)**](https://msdn.microsoft.com/library/windows/hardware/ff552029) command on this address to find the offending driver) |
-| 2         | Current IoPrioirity value                                                                                                                                    |
-| 3         | Workitem parameter                                                                                                                                           |
-| 4         | Workitem address                                                                                                                                             |
+| Parameter | Description                                                                                                                                             |
+|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1         | Address of worker routine (Use the [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md) command on this address to find the offending driver) |
+| 2         | Current IoPrioirity value                                                                                                                               |
+| 3         | Workitem parameter                                                                                                                                      |
+| 4         | Workitem address                                                                                                                                        |
 
  
 

@@ -60,7 +60,7 @@ To use this technique, you must do the following:
 
     For more information about this step, see [**Activating a Debugging Client**](activating-a-debugging-client.md).
 
-4.  Once the debuggers are running and the `Input>` prompt appears in the kernel debugger, use the [**.sleep (Pause Debugger)**](https://msdn.microsoft.com/library/windows/hardware/ff565347) command to pause the debuggers and let the target computer run for a few seconds. This gives the target computer time to process the remote transport protocol, establishing the connection between the user-mode remote server and the remote client.
+4.  Once the debuggers are running and the `Input>` prompt appears in the kernel debugger, use the [**.sleep (Pause Debugger)**](-sleep--pause-debugger-.md) command to pause the debuggers and let the target computer run for a few seconds. This gives the target computer time to process the remote transport protocol, establishing the connection between the user-mode remote server and the remote client.
 
 If you use CDB as the user-mode debugger, the Command Prompt window that is associated with CDB remains locked and unavailable while debugging continues. If you use NTSD, no additional window is created, even though NTSD has a process ID associated with it on the target computer.
 
@@ -72,9 +72,9 @@ The four modes and the methods of switching between them described in the topic 
 
 -   If your user-mode symbols are located on a symbol server, any debugger commands that require symbol access should be issued while in remote-controlled user-mode debugging mode.
 
--   To switch from kernel-controlled user-mode debugging to remote-controlled user-mode debugging, use the [**.sleep (Pause Debugger)**](https://msdn.microsoft.com/library/windows/hardware/ff565347) command. When the user-mode debugger wakes from the sleep command, it will be in remote-controlled user-mode debugging mode.
+-   To switch from kernel-controlled user-mode debugging to remote-controlled user-mode debugging, use the [**.sleep (Pause Debugger)**](-sleep--pause-debugger-.md) command. When the user-mode debugger wakes from the sleep command, it will be in remote-controlled user-mode debugging mode.
 
--   To switch from remote-controlled user-mode debugging to kernel-mode debugging, enter any command from the `Input>` prompt. If this prompt is not visible, switch to kernel-mode debugging, and then use the [**g (Go)**](https://msdn.microsoft.com/library/windows/hardware/ff549693) command at the `kd>` prompt.
+-   To switch from remote-controlled user-mode debugging to kernel-mode debugging, enter any command from the `Input>` prompt. If this prompt is not visible, switch to kernel-mode debugging, and then use the [**g (Go)**](g--go-.md) command at the `kd>` prompt.
 
 Internally, a user-mode debugger started with -ddefer gives first priority to input from the debugging client, and second priority to input from the kernel debugger. However, there can never be a conflict between simultaneous inputs, because when the kernel debugger has broken in to the target computer, the remote connection is unavailable.
 
@@ -82,7 +82,7 @@ Internally, a user-mode debugger started with -ddefer gives first priority to in
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Combining%20This%20Method%20with%20Remote%20Debugging%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Combining%20This%20Method%20with%20Remote%20Debugging%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

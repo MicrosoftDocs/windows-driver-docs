@@ -7,13 +7,17 @@ keywords: ["DbgEng Extensions, DLL anatomy"]
 
 # Anatomy of a DbgEng Extension DLL
 
+
+## <span id="ddk_anatomy_of_a_dbgeng_extension_dll_dbx"></span><span id="DDK_ANATOMY_OF_A_DBGENG_EXTENSION_DLL_DBX"></span>
+
+
 A DbgEng extension DLL exports a number of callback functions, some of which may be implementations of extension commands.
 
 These extension DLLs are loaded by the [debugger engine](introduction.md#debugger-engine) and can provide extra functionality or automation of tasks while performing user-mode or kernel-mode debugging on Microsoft Windows.
 
 If you performed a full install of Debugging Tools for Windows, a sample DbgEng extension called "exts" can be found in the sdk\\samples\\exts subdirectory of the installation directory.
 
-## Extension Commands
+### <span id="extension_commands"></span><span id="EXTENSION_COMMANDS"></span>Extension Commands
 
 An extension DLL may export any number of functions that are used to execute extension commands. Each function is explicitly declared as an export in the .def file, and its name must consist entirely of lowercase letters.
 
@@ -23,7 +27,7 @@ These functions are named according to the standard C++ convention, except that 
 
 If myextension.dll is not already loaded, or if there may be other extension commands with the same name in other extension DLLs, you can type **!myextension.stack** into the Debugger Command window to indicate the extension DLL and the extension command in that DLL.
 
-## Other Exported Functions
+### <span id="other_exported_functions"></span><span id="OTHER_EXPORTED_FUNCTIONS"></span>Other Exported Functions
 
 A DbgEng extension DLL must export [*DebugExtensionInitialize*](https://msdn.microsoft.com/library/windows/hardware/ff540476). This will be called when the DLL is loaded, to initialize the DLL. It may be used by the DLL to initialize global variables.
 
@@ -33,7 +37,7 @@ An extension DLL may export [*DebugExtensionNotify*](https://msdn.microsoft.com/
 
 An extension DLL may export [*KnownStructOutput*](https://msdn.microsoft.com/library/windows/hardware/ff551934). If this is exported, it will be called when the DLL is loaded. This function returns a list of structures that the DLL knows how to print on a single line. It may be called later to format instances of these structures for printing.
 
-## Engine Procedure for Loading a DbgEng Extension DLL
+### <span id="engine_procedure_for_loading_a_dbgeng_extension_dll"></span><span id="ENGINE_PROCEDURE_FOR_LOADING_A_DBGENG_EXTENSION_DLL"></span>Engine Procedure for Loading a DbgEng Extension DLL
 
 When an extension DLL is loaded, the callback functions are called by the engine in the following order:
 
@@ -51,7 +55,7 @@ The debugger engine will place a **try / except** block around a call to an exte
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Anatomy%20of%20a%20DbgEng%20Extension%20DLL%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Anatomy%20of%20a%20DbgEng%20Extension%20DLL%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

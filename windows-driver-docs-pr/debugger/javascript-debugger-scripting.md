@@ -56,7 +56,7 @@ JavaScript Debugger Scripting is designed to work with all supported versions of
 ## <span id="Loading_the_JavaScript_Scripting_Provider"></span><span id="loading_the_javascript_scripting_provider"></span><span id="LOADING_THE_JAVASCRIPT_SCRIPTING_PROVIDER"></span>Loading the JavaScript Scripting Provider
 
 
-Before using any of the .script commands, a scripting provider needs to be loaded using the [**.load (Load Extension DLL)**](https://msdn.microsoft.com/library/windows/hardware/ff563964) command. To load the JavaScript provider, use the following command.
+Before using any of the .script commands, a scripting provider needs to be loaded using the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command. To load the JavaScript provider, use the following command.
 
 ```
 0:000> .load jsprovider.dll
@@ -76,15 +76,15 @@ Available Script Providers:
 
 The following commands are available to work with JavaScript Debugger Scripting.
 
--   [**.scriptproviders (List Script Providers)**](https://msdn.microsoft.com/library/windows/hardware/mt790258)
--   [**.scriptload (Load Script)**](https://msdn.microsoft.com/library/windows/hardware/mt790257)
--   [**.scriptunload (Unload Script)**](https://msdn.microsoft.com/library/windows/hardware/mt790260)
--   [**.scriptrun (Run Script)**](https://msdn.microsoft.com/library/windows/hardware/mt790259)
--   [**.scriptlist (List Loaded Scripts)**](https://msdn.microsoft.com/library/windows/hardware/mt790256)
+-   [**.scriptproviders (List Script Providers)**](-scriptproviders--list-script-providers-.md)
+-   [**.scriptload (Load Script)**](-scriptload--load-script-.md)
+-   [**.scriptunload (Unload Script)**](-scriptunload--unload-script-.md)
+-   [**.scriptrun (Run Script)**](-scriptrun--run-script-.md)
+-   [**.scriptlist (List Loaded Scripts)**](-scriptlist--list-loaded-scripts-.md)
 
 **Requirements**
 
-Before using any of the .script commands, a scripting provider needs to be loaded using the [**.load (Load Extension DLL)**](https://msdn.microsoft.com/library/windows/hardware/ff563964) command. To load the JavaScript provider, use the following command.
+Before using any of the .script commands, a scripting provider needs to be loaded using the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command. To load the JavaScript provider, use the following command.
 
 ```
 0:000> .load jsprovider.dll
@@ -106,7 +106,7 @@ Available Script Providers:
 
 Any file ending in ".NatVis" is understood as a NatVis script and any file ending in ".js" is understood as a JavaScript script. Either type of script can be loaded with the .scriptload command.
 
-For more information, see [**.scriptproviders (List Script Providers)**](https://msdn.microsoft.com/library/windows/hardware/mt790258)
+For more information, see [**.scriptproviders (List Script Providers)**](-scriptproviders--list-script-providers-.md)
 
 ## <span id=".scriptload__load_script_"></span><span id=".SCRIPTLOAD__LOAD_SCRIPT_"></span>.scriptload (Load Script)
 
@@ -120,7 +120,7 @@ JavaScript script successfully loaded from &#39;C:\WinDbg\Scripts\TestScript.js&
 
 Any object model manipulations made by the script will stay in place until the script is subsequently unloaded or is run again with different content.
 
-For more information, see [**.scriptload (Load Script)**](https://msdn.microsoft.com/library/windows/hardware/mt790257)
+For more information, see [**.scriptload (Load Script)**](-scriptload--load-script-.md)
 
 ## <span id=".SCRIPTRUN"></span>.scriptrun
 
@@ -135,7 +135,7 @@ Hello World!  We are in JavaScript!
 
 Any debugger object model manipulations made by the script will stay in place until the script is subsequently unloaded or is run again with different content.
 
-For more information, see [**.scriptrun (Run Script)**](https://msdn.microsoft.com/library/windows/hardware/mt790259).
+For more information, see [**.scriptrun (Run Script)**](-scriptrun--run-script-.md).
 
 ## <span id=".scriptunload__unload_script_"></span><span id=".SCRIPTUNLOAD__UNLOAD_SCRIPT_"></span>.scriptunload (Unload Script)
 
@@ -147,7 +147,7 @@ The .scriptunload command unloads a loaded script and calls the *uninitializeScr
 JavaScript script unloaded from &#39;C:\WinDbg\Scripts\TestScript.js&#39;
 ```
 
-For more information, see [**.scriptunload (Unload Script)**](https://msdn.microsoft.com/library/windows/hardware/mt790260).
+For more information, see [**.scriptunload (Unload Script)**](-scriptunload--unload-script-.md).
 
 ## <span id=".scriptlist__list_loaded_scripts_"></span><span id=".SCRIPTLIST__LIST_LOADED_SCRIPTS_"></span>.scriptlist (List Loaded Scripts)
 
@@ -160,7 +160,7 @@ Command Loaded Scripts:
     JavaScript script from &#39;C:\WinDbg\Scripts\TestScript.js&#39;
 ```
 
-For more information, see [**.scriptlist (List Loaded Scripts)**](https://msdn.microsoft.com/library/windows/hardware/mt790256).
+For more information, see [**.scriptlist (List Loaded Scripts)**](-scriptlist--list-loaded-scripts-.md).
 
 ## <span id="Started"></span><span id="started"></span><span id="STARTED"></span>Get Started with JavaScript Debugger Scripting
 
@@ -180,7 +180,7 @@ function initializeScript()
 
 Use a text editor such as Notepad to create a text file named *HelloWorld.js* that contains the JavaScript code shown above.
 
-Use the [**.load (Load Extension DLL)**](https://msdn.microsoft.com/library/windows/hardware/ff563964) command to load the JavaScript provider.
+Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
 ```
 0:000> .load jsprovider.dll
@@ -194,7 +194,7 @@ JavaScript script successfully loaded from &#39;c:\WinDbg\Scripts\HelloWorld.js&
 ***> Hello World! 
 ```
 
-After the script is loaded the additional functionality is available in the debugger. Use the [**dx (Display NatVis Expression)**](https://msdn.microsoft.com/library/windows/hardware/dn936815) command to display *Debugger.State.Scripts* to see that our script is now resident.
+After the script is loaded the additional functionality is available in the debugger. Use the [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command to display *Debugger.State.Scripts* to see that our script is now resident.
 
 ```
 0:000> dx Debugger.State.Scripts
@@ -221,7 +221,7 @@ function addTwoValues(a, b)
 
 Use a text editor such as Notepad to create a text file named *FirstSampleFunction.js*
 
-Use the [**.load (Load Extension DLL)**](https://msdn.microsoft.com/library/windows/hardware/ff563964) command to load the JavaScript provider.
+Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
 ```
 0:000> .load jsprovider.dll
@@ -234,7 +234,7 @@ Use the .scriptload command to load the script.
 JavaScript script successfully loaded from &#39;c:\WinDbg\Scripts\FirstSampleFunction.js&#39;
 ```
 
-After the script is loaded the additional functionality is available in the debugger. Use the [**dx (Display NatVis Expression)**](https://msdn.microsoft.com/library/windows/hardware/dn936815) command to display *Debugger.State.Scripts* to see that our script is now resident.
+After the script is loaded the additional functionality is available in the debugger. Use the [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command to display *Debugger.State.Scripts* to see that our script is now resident.
 
 ```
 0:000> dx Debugger.State.Scripts
@@ -280,7 +280,7 @@ JavaScript script successfully unloaded from &#39;c:\WinDbg\Scripts\FirstSampleF
 
 ### <span id="Automate"></span><span id="automate"></span><span id="AUTOMATE"></span>Debugger Command Automation
 
-This section describes how to create and execute a simple JavaScript debugger script that automates the sending of the [**u (Unassemble)**](https://msdn.microsoft.com/library/windows/hardware/ff560235) command. The sample also shows how to gather and display command output in a loop.
+This section describes how to create and execute a simple JavaScript debugger script that automates the sending of the [**u (Unassemble)**](u--unassemble-.md) command. The sample also shows how to gather and display command output in a loop.
 
 This script provides a single function, RunCommands().
 
@@ -307,7 +307,7 @@ host.diagnostics.debugLog("***> Exiting RunCommands Function \n");
 
 Use a text editor such as Notepad to create a text file named *RunCommands.js*
 
-Use the [**.load (Load Extension DLL)**](https://msdn.microsoft.com/library/windows/hardware/ff563964) command to load the JavaScript provider.
+Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
 ```
 0:000> .load jsprovider.dll
@@ -320,7 +320,7 @@ Use the .scriptload command to load the RunCommands script.
 JavaScript script successfully loaded from &#39;c:\WinDbg\Scripts\RunCommands.js&#39;
 ```
 
-After the script is loaded the additional functionality is available in the debugger. Use the [**dx (Display NatVis Expression)**](https://msdn.microsoft.com/library/windows/hardware/dn936815) command to display *Debugger.State.Scripts.RunCommands* to see that our script is now resident.
+After the script is loaded the additional functionality is available in the debugger. Use the [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command to display *Debugger.State.Scripts.RunCommands* to see that our script is now resident.
 
 ```
 0:000>dx -r3 Debugger.State.Scripts.RunCommands
@@ -422,9 +422,9 @@ This table summarizes which functions are called by the script commands
 <tbody>
 <tr class="odd">
 <td align="left"></td>
-<td align="left">.[<strong>.scriptload</strong>](https://msdn.microsoft.com/library/windows/hardware/mt790257)</td>
-<td align="left">[<strong>.scriptrun (Run Script)</strong>](https://msdn.microsoft.com/library/windows/hardware/mt790259)</td>
-<td align="left">[<strong>.scriptunload (Unload Script)</strong>](https://msdn.microsoft.com/library/windows/hardware/mt790260)</td>
+<td align="left">.[<strong>.scriptload</strong>](-scriptload--load-script-.md)</td>
+<td align="left">[<strong>.scriptrun (Run Script)</strong>](-scriptrun--run-script-.md)</td>
+<td align="left">[<strong>.scriptunload (Unload Script)</strong>](-scriptunload--unload-script-.md)</td>
 </tr>
 <tr class="even">
 <td align="left">root</td>
@@ -496,7 +496,7 @@ function main()
 ## <span id="Visualizer"></span><span id="visualizer"></span><span id="VISUALIZER"></span>Creating a Debugger Visualizer in JavaScript
 
 
-Custom visualization files allow you to group and organize data in a visualization structure that better reflects the data relationships and content. You can use the JavaScript debugger extensions to write debugger visualizers which act in a way very similar to NatVis. This is accomplished via authoring a JavaScript prototype object (or an ES6 class) which acts as the visualizer for a given data type. For more information about NatVis and the debugger see [**dx (Display NatVis Expression)**](https://msdn.microsoft.com/library/windows/hardware/dn936815).
+Custom visualization files allow you to group and organize data in a visualization structure that better reflects the data relationships and content. You can use the JavaScript debugger extensions to write debugger visualizers which act in a way very similar to NatVis. This is accomplished via authoring a JavaScript prototype object (or an ES6 class) which acts as the visualizer for a given data type. For more information about NatVis and the debugger see [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md).
 
 **Example class - Simple1DArray**
 
@@ -559,7 +559,7 @@ function initializeScript()
 
 Save the script in a file named arrayVisualizer.js.
 
-Use the [**.load (Load Extension DLL)**](https://msdn.microsoft.com/library/windows/hardware/ff563964) command to load the JavaScript provider.
+Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
 ```
 0:000> .load C:\ScriptProviders\jsprovider.dll
@@ -678,7 +678,7 @@ This example will evaluate notepad's open and save dialog: *notepad!ShowOpenSave
  }
 ```
 
-Use the [**.load (Load Extension DLL)**](https://msdn.microsoft.com/library/windows/hardware/ff563964) command to load the JavaScript provider.
+Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
 ```
 0:000> .load jsprovider.dll
@@ -745,7 +745,7 @@ function performOp64BitValues(a64, b64, op)
 
 Use a text editor such as Notepad to create a text file named *PlayWith64BitValues.js*
 
-Use the [**.load (Load Extension DLL)**](https://msdn.microsoft.com/library/windows/hardware/ff563964) command to load the JavaScript provider.
+Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
 ```
 0:000> .load jsprovider.dll
@@ -817,7 +817,7 @@ function comparisonWith64BitValues(a64, b64)
 
 Use a text editor such as Notepad to create a text file named *ComparisonWith64BitValues.js*
 
-Use the [**.load (Load Extension DLL)**](https://msdn.microsoft.com/library/windows/hardware/ff563964) command to load the JavaScript provider.
+Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
 ```
 0:000> .load jsprovider.dll
@@ -913,7 +913,7 @@ The following are JavaScript resources that may be useful as you develop JavaScr
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20JavaScript%20Debugger%20Scripting%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20JavaScript%20Debugger%20Scripting%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

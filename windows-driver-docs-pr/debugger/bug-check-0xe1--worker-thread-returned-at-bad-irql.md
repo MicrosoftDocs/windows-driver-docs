@@ -62,7 +62,7 @@ A worker thread completed and returned with IRQL &gt;= DISPATCH\_LEVEL.
 Resolution
 ----------
 
-To find the driver that caused the error, use the [**ln (List Nearest Symbols)**](https://msdn.microsoft.com/library/windows/hardware/ff552029) debugger command:
+To find the driver that caused the error, use the [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md) debugger command:
 
 ```
 kd> ln address

@@ -10,10 +10,10 @@ keywords: ["Plug and Play (PnP), extensions", "extensions, plug and play"]
 
 When you debug Plug and Play drivers, you may find the following debugger extensions useful.
 
-[**!arbiter**](https://msdn.microsoft.com/library/windows/hardware/ff562124)  
+[**!arbiter**](-arbiter.md)  
 Displays the current system resource arbiters. An arbiter is a piece of code that is exposed by the bus driver that arbitrates requests for resources, and attempts to solve the resource conflicts among the devices connected on that bus.
 
-[**!cmreslist**](https://msdn.microsoft.com/library/windows/hardware/ff562249)  
+[**!cmreslist**](-cmreslist.md)  
 Displays the CM\_RESOURCE\_LIST for the specified device object.
 
 You must know the address of the CM Resource List.
@@ -34,13 +34,13 @@ CmResourceList at 0xe12576e8  Version 0.0  Interface 0x1  Bus #0
 
 This shows that the device with this CM resource list is using I/O Range 3F8-3FF and IRQ 4.
 
-[**!dcs**](https://msdn.microsoft.com/library/windows/hardware/ff562322)  
-This extension is obsolete -- its functionality has been subsumed by [**!pci**](https://msdn.microsoft.com/library/windows/hardware/ff564642). See the !pci 100 example later in this section.
+[**!dcs**](-dcs.md)  
+This extension is obsolete -- its functionality has been subsumed by [**!pci**](-pci.md). See the !pci 100 example later in this section.
 
-[**!devext**](https://msdn.microsoft.com/library/windows/hardware/ff562336)  
+[**!devext**](-devext.md)  
 Displays bus-specific device extension information for a variety of devices.
 
-[**!devnode**](https://msdn.microsoft.com/library/windows/hardware/ff562345)  
+[**!devnode**](-devnode.md)  
 Displays information about a node in the device tree.
 
 Device node 0 (zero) is the root of the device tree.
@@ -70,7 +70,7 @@ DevNode 0xfffffa8003634af0 for PDO 0xfffffa8003658590
   DisableableDepends = 1 (including self)
 ```
 
-[**!devobj**](https://msdn.microsoft.com/library/windows/hardware/ff562349)  
+[**!devobj**](-devobj.md)  
 Displays detailed information about a DEVICE\_OBJECT.
 
 Here is an example:
@@ -86,10 +86,10 @@ DevExt ff0d4ba8 DevNode ff0d4a08
 Device queue is not busy.
 ```
 
-[**!drivers**](https://msdn.microsoft.com/library/windows/hardware/ff562402)  
-The [**!drivers**](https://msdn.microsoft.com/library/windows/hardware/ff562402) command is no longer supported. Please use the [**lm t n**](https://msdn.microsoft.com/library/windows/hardware/ff552026) command instead.
+[**!drivers**](-drivers.md)  
+The [**!drivers**](-drivers.md) command is no longer supported. Please use the [**lm t n**](lm--list-loaded-modules-.md) command instead.
 
-[**!drvobj**](https://msdn.microsoft.com/library/windows/hardware/ff562408)  
+[**!drvobj**](-drvobj.md)  
 Displays detailed information about a DRIVER\_OBJECT.
 
 Lists all the device objects created by the specified driver.
@@ -107,24 +107,24 @@ Device Object list:
 ffba3040  ff0b4040  ff0b59e0  ff0b5040
 ```
 
-[**!ecb, !ecd, !ecw**](https://msdn.microsoft.com/library/windows/hardware/ff562929)  
+[**!ecb, !ecd, !ecw**](-ecb---ecd---ecw.md)  
 (x86 target computers only) Writes a sequence of values into the PCI configuration space.
 
-[**ib, iw, id**](https://msdn.microsoft.com/library/windows/hardware/ff563212)  
+[**ib, iw, id**](-ib---id---iw.md)  
 Reads data from an I/O port.
 
 These three commands are useful for determining whether a certain I/O range is claimed by a device other than the driver being debugged. A byte value of 0xFF at a port indicates that the port is not in use.
 
-[**!ioreslist**](https://msdn.microsoft.com/library/windows/hardware/ff563247)  
+[**!ioreslist**](-ioreslist.md)  
 Displays the specified IO\_RESOURCE\_REQUIREMENTS\_LIST.
 
-[**!irp**](https://msdn.microsoft.com/library/windows/hardware/ff563812)  
+[**!irp**](-irp.md)  
 Displays information about an IRP.
 
-[**!irpfind**](https://msdn.microsoft.com/library/windows/hardware/ff563817)  
+[**!irpfind**](-irpfind.md)  
 Displays information about all IRPs currently allocated in the target system, or information about those IRPs whose fields match the specified search criteria.
 
-[**!pci**](https://msdn.microsoft.com/library/windows/hardware/ff564642)  
+[**!pci**](-pci.md)  
 (x86 target computers only) Displays the current status of the PCI buses and any devices attached to them. It can also display the PCI configuration space.
 
 The following example displays the devices on the primary bus:
@@ -201,20 +201,20 @@ c0: 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000
 e0: 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000
 ```
 
-[**!pcitree**](https://msdn.microsoft.com/library/windows/hardware/ff564650)  
+[**!pcitree**](-pcitree.md)  
 Displays information about PCI device objects, including child PCI buses and CardBus buses, as well as the devices attached to them.
 
-[**!pnpevent**](https://msdn.microsoft.com/library/windows/hardware/ff564684)  
+[**!pnpevent**](-pnpevent.md)  
 Displays the PnP device event queue.
 
-[**!rellist**](https://msdn.microsoft.com/library/windows/hardware/ff564798)  
+[**!rellist**](-rellist.md)  
 Displays a PnP relation list and any related CM\_RESOURCE\_LIST and IO\_RESOURCE\_LIST structures.
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Extensions%20for%20Debugging%20Plug%20and%20Play%20Drivers%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Extensions%20for%20Debugging%20Plug%20and%20Play%20Drivers%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

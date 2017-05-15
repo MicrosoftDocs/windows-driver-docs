@@ -59,13 +59,13 @@ However, if the target computer has multiple processors, the number of the curre
 0: kd> 
 ```
 
-If the debugger is busy processing a previously issued command, new commands will temporarily not be processed, although they can be added to the command buffer. In addition, you can still use [control keys](https://msdn.microsoft.com/library/windows/hardware/ff539306) in KD and CDB, and you can still use menu commands and [shortcut keys](https://msdn.microsoft.com/library/windows/hardware/ff551913) in WinDbg. When KD or CDB is in this busy state, no prompt is displayed. When WinDbg is in this busy state, the following indicator will appear in place of the prompt:
+If the debugger is busy processing a previously issued command, new commands will temporarily not be processed, although they can be added to the command buffer. In addition, you can still use [control keys](control-keys.md) in KD and CDB, and you can still use menu commands and [shortcut keys](keyboard-shortcuts.md) in WinDbg. When KD or CDB is in this busy state, no prompt is displayed. When WinDbg is in this busy state, the following indicator will appear in place of the prompt:
 
 ``` syntax
 *BUSY* 
 ```
 
-You can use the [**.pcmd (Set Prompt Command)**](https://msdn.microsoft.com/library/windows/hardware/ff564660) command to add text to this prompt.
+You can use the [**.pcmd (Set Prompt Command)**](-pcmd--set-prompt-command-.md) command to add text to this prompt.
 
 ### <span id="kinds_of_commands"></span><span id="KINDS_OF_COMMANDS"></span>Kinds of Commands
 
@@ -75,7 +75,7 @@ Some commands are available only in live debugging, and other commands are avail
 
 Some commands are available only during user-mode debugging, and other commands are available only during kernel-mode debugging.
 
-Some commands are available only when the target is running on certain processors. For more information about all of the commands and their restrictions, see [Debugger Commands](https://msdn.microsoft.com/library/windows/hardware/ff540507).
+Some commands are available only when the target is running on certain processors. For more information about all of the commands and their restrictions, see [Debugger Commands](debugger-commands.md).
 
 ### <span id="editing__repeating__and_canceling_commands"></span><span id="EDITING__REPEATING__AND_CANCELING_COMMANDS"></span>Editing, Repeating, and Canceling Commands
 
@@ -95,13 +95,13 @@ You can right-click in the Debugger Command window to automatically paste the co
 
 The maximum command length is 4096 characters. However, if you are [controlling the user-mode debugger from the kernel debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md), the maximum line length is 512 characters.
 
-In CDB and KD, press the ENTER key by itself to repeat the previous command. In WinDbg, you can enable or disable this behavior. For more information about this behavior, see [**ENTER (Repeat Last Command)**](https://msdn.microsoft.com/library/windows/hardware/ff543037).
+In CDB and KD, press the ENTER key by itself to repeat the previous command. In WinDbg, you can enable or disable this behavior. For more information about this behavior, see [**ENTER (Repeat Last Command)**](enter--repeat-last-command-.md).
 
-If the last command that you issued presents a long display and you want to cut it off, use the [**CTRL+C**](https://msdn.microsoft.com/library/windows/hardware/ff540312) key in CDB or KD. In WinDbg, use [Debug | Break](https://msdn.microsoft.com/library/windows/hardware/ff541727) or press CTRL+BREAK.
+If the last command that you issued presents a long display and you want to cut it off, use the [**CTRL+C**](ctrl-c--break-.md) key in CDB or KD. In WinDbg, use [Debug | Break](debug---break.md) or press CTRL+BREAK.
 
-In kernel-mode debugging, you can cancel commands from the keyboard of the target computer by pressing [**CTRL+C**](https://msdn.microsoft.com/library/windows/hardware/ff540312).
+In kernel-mode debugging, you can cancel commands from the keyboard of the target computer by pressing [**CTRL+C**](ctrl-c--break-.md).
 
-You can use the [**.cls (Clear Screen)**](https://msdn.microsoft.com/library/windows/hardware/ff562246) command to clear all of the text from the [Debugger Command window](debugger-command-window.md). This command clears the whole command history. In WinDbg, you can clear the command history by using the [Edit | Clear Command Output](https://msdn.microsoft.com/library/windows/hardware/ff542812) command or by clicking **Clear command output** on the shortcut menu of the Debugger Command window.
+You can use the [**.cls (Clear Screen)**](-cls--clear-screen-.md) command to clear all of the text from the [Debugger Command window](debugger-command-window.md). This command clears the whole command history. In WinDbg, you can clear the command history by using the [Edit | Clear Command Output](edit---clear-command-output.md) command or by clicking **Clear command output** on the shortcut menu of the Debugger Command window.
 
 ### <span id="expression_syntax"></span><span id="EXPRESSION_SYNTAX"></span>Expression Syntax
 
@@ -115,13 +115,13 @@ Many commands and extension commands accept *expressions* as their arguments. Th
 
 You can use the following commands to repeat an action or conditionally execute other commands:
 
--   The [**j (Execute If-Else)**](https://msdn.microsoft.com/library/windows/hardware/ff551820) conditional command
+-   The [**j (Execute If-Else)**](j--execute-if---else-.md) conditional command
 
--   The [**z (Execute While)**](https://msdn.microsoft.com/library/windows/hardware/ff561507) conditional command
+-   The [**z (Execute While)**](z--execute-while-.md) conditional command
 
--   The [**~e (Thread-Specific Command)**](https://msdn.microsoft.com/library/windows/hardware/ff563050) command qualifier
+-   The [**~e (Thread-Specific Command)**](-e--thread-specific-command-.md) command qualifier
 
--   (Windows XP and later versions of Windows) The [**!list**](https://msdn.microsoft.com/library/windows/hardware/ff563954) extension command
+-   (Windows XP and later versions of Windows) The [**!list**](-list.md) extension command
 
 For more information about each command, see the individual command topics.
 
@@ -131,7 +131,7 @@ You can use the scrollbar to view your previous commands and their output.
 
 When you are using CDB or KD, any keyboard entry automatically scrolls down the Debugger Command window back to the bottom.
 
-In WinDbg, the display automatically scrolls down to the bottom whenever a command produces output or you press the ENTER key. If you want to disable this automatic scrolling, click the [Options](https://msdn.microsoft.com/library/windows/hardware/ff560299) on the **View** menu and then clear the **Automatically scroll** check box.
+In WinDbg, the display automatically scrolls down to the bottom whenever a command produces output or you press the ENTER key. If you want to disable this automatic scrolling, click the [Options](view---options.md) on the **View** menu and then clear the **Automatically scroll** check box.
 
 ### <span id="windbg_text_features"></span><span id="WINDBG_TEXT_FEATURES"></span>WinDbg Text Features
 
@@ -139,21 +139,21 @@ In WinDbg, you can use several additional features to change how text is display
 
 -   The **Word wrap** command on the shortcut menu turns on and off the word wrap status. This command affects the whole window, not only commands that you use after this state is changed. Because many commands and extensions produce formatted displays, we typically do not recommend word wrap.
 
--   The [Edit | Add to Command Output](https://msdn.microsoft.com/library/windows/hardware/ff542804) menu command adds a comment in the Debugger Command window. The **Add to command output** command on the shortcut menu has the same effect.
+-   The [Edit | Add to Command Output](edit---add-to-command-output.md) menu command adds a comment in the Debugger Command window. The **Add to command output** command on the shortcut menu has the same effect.
 
--   You can customize the colors that are used for the text and the background of the Debugger Command window. You can specify different colors for different kinds of text. For example, you can display the automatic register output in one color, error messages in another color, and **DbgPrint** messages in a third color. For more information about this customization, see [View | Options](https://msdn.microsoft.com/library/windows/hardware/ff560299).
+-   You can customize the colors that are used for the text and the background of the Debugger Command window. You can specify different colors for different kinds of text. For example, you can display the automatic register output in one color, error messages in another color, and **DbgPrint** messages in a third color. For more information about this customization, see [View | Options](view---options.md).
 
 -   You can use all of the features common to WinDbg's debugging information windows, such as customizing the fonts and using special editing commands. For more information about these features, see [Using Debugging Information Windows](using-debugging-information-windows.md).
 
 ### <span id="remote_debugging"></span><span id="REMOTE_DEBUGGING"></span>Remote Debugging
 
-When you are performing remote debugging through the debugger, the debugging client can access a limited number of commands. To change the number of commands that the client can access, use the **-clines** [command-line option](https://msdn.microsoft.com/library/windows/hardware/ff539174) or the \_NT\_DEBUG\_HISTORY\_SIZE [environment variable](https://msdn.microsoft.com/library/windows/hardware/ff543043).
+When you are performing remote debugging through the debugger, the debugging client can access a limited number of commands. To change the number of commands that the client can access, use the **-clines** [command-line option](command-line-options.md) or the \_NT\_DEBUG\_HISTORY\_SIZE [environment variable](environment-variables.md).
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20Debugger%20Commands%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20Debugger%20Commands%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

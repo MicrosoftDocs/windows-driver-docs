@@ -15,11 +15,11 @@ In some cases, the stack trace function will fail in the debugger. This can be c
 
 The basic concept is fairly simple: dump out the stack pointer, find out where the modules are loaded, find possible function addresses, and verify by checking to see if each possible stack entry makes a call to the next.
 
-Before going through an example, it is important to note that the [**kb (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943) command has an additional feature on Intel systems. By doing a kb=\[ebp\] \[eip\] \[esp\], the debugger will display the stack trace for the frame with the given values for base pointer, instruction pointer, and stack pointer, respectively.
+Before going through an example, it is important to note that the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command has an additional feature on Intel systems. By doing a kb=\[ebp\] \[eip\] \[esp\], the debugger will display the stack trace for the frame with the given values for base pointer, instruction pointer, and stack pointer, respectively.
 
 For the example, a failure that actually gives a stack trace is used so the results can be checked at the end.
 
-The first step is to find out what modules are loaded where. This is accomplished with the [**x (Examine Symbols)**](https://msdn.microsoft.com/library/windows/hardware/ff561506) command (some symbols are edited out for reasons of length):
+The first step is to find out what modules are loaded where. This is accomplished with the [**x (Examine Symbols)**](x--examine-symbols-.md) command (some symbols are edited out for reasons of length):
 
 ``` syntax
 kd> x *! 
@@ -85,9 +85,9 @@ fe4cca5c  c00000d6 00000000 004ccb28 fe4ccbc4
 fe4cca6c  fe680ba4 fe682050 00000000 fe4ccbd4 
 ```
 
-To determine which values are likely function addresses and which are parameters or saved registers, the first thing to consider is what the different types of information look like on the stack. Most integers are going to be smaller value, which means they will be mostly zeros when displayed as DWORDs (like 0x00000270). Most pointers to local addresses will be near the stack pointer (like fe4cca78). Status codes usually begin with a c (c00000d6). Unicode and ASCII strings can be identified by the fact that each character will be in the range of 20-7f. (In KD, the [**dc (Display Memory)**](https://msdn.microsoft.com/library/windows/hardware/ff542790) command will show the characters on the right.) Most importantly, the function addresses will be in the range listed by **x \*!**.
+To determine which values are likely function addresses and which are parameters or saved registers, the first thing to consider is what the different types of information look like on the stack. Most integers are going to be smaller value, which means they will be mostly zeros when displayed as DWORDs (like 0x00000270). Most pointers to local addresses will be near the stack pointer (like fe4cca78). Status codes usually begin with a c (c00000d6). Unicode and ASCII strings can be identified by the fact that each character will be in the range of 20-7f. (In KD, the [**dc (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command will show the characters on the right.) Most importantly, the function addresses will be in the range listed by **x \*!**.
 
-Notice that all modules listed are in the ranges of 77f70000 to 8040c000 and fe4c0000 to fe6f0920. Based on these ranges, the possible function addresses in the preceding list are: 80136039, 801036fe (listed twice, so more likely a parameter), fe682ae4, fe68f57a, fe682a78, fe6a1198, 8011c901, 80127797, 80110008, fe6a1430, fe6a10ae, fe6b2c04, fe685968, fe680ba4, and fe682050. Investigate these locations by using an [**ln (List Nearest Symbols)**](https://msdn.microsoft.com/library/windows/hardware/ff552029) command for each address:
+Notice that all modules listed are in the ranges of 77f70000 to 8040c000 and fe4c0000 to fe6f0920. Based on these ranges, the possible function addresses in the preceding list are: 80136039, 801036fe (listed twice, so more likely a parameter), fe682ae4, fe68f57a, fe682a78, fe6a1198, 8011c901, 80127797, 80110008, fe6a1430, fe6a10ae, fe6b2c04, fe685968, fe680ba4, and fe682050. Investigate these locations by using an [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md) command for each address:
 
 ``` syntax
 kd> ln 80136039 
@@ -221,7 +221,7 @@ The first entry was the current location based on the stack trace, but otherwise
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Manually%20Walking%20a%20Stack%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Manually%20Walking%20a%20Stack%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

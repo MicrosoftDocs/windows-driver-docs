@@ -225,7 +225,7 @@ The Debugger help file will display help for the **.prefer\_dml** command.
 
 **Display the version of Windows on the target system**
 
-5. Display detailed version information on the target system by typing the [**vertarget (Show Target Computer Version)**](https://msdn.microsoft.com/library/windows/hardware/ff560266) command in the WinDbg window.
+5. Display detailed version information on the target system by typing the [**vertarget (Show Target Computer Version)**](vertarget--show-target-computer-version-.md) command in the WinDbg window.
 ``` syntax
 0: kd> vertarget
 Windows 10 Kernel Version 9926 MP (4 procs) Free x64
@@ -239,7 +239,7 @@ System Uptime: 0 days 01:31:58.931
 
 **List the loaded modules**
 
-6. You can verify that you are working with the right kernel mode process by displaying the loaded modules by typing the [**lm (List Loaded Modules)**](https://msdn.microsoft.com/library/windows/hardware/ff552026) command in the WinDbg window.
+6. You can verify that you are working with the right kernel mode process by displaying the loaded modules by typing the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md) command in the WinDbg window.
 ``` syntax
 0: Kd> lm
 start             end                 module name
@@ -533,7 +533,7 @@ set ENABLE_OPTIMIZER=0
     ...  
     ```
 
-    For information, see [**lm**](https://msdn.microsoft.com/library/windows/hardware/ff552026).
+    For information, see [**lm**](lm--list-loaded-modules-.md).
 
 2.  Because we set prefer\_dml =1 earlier, some elements of the output are hot links that you can click on. Click on the *Browse all global symbols link* in the debug output to display information about items symbols that start with the letter “a”.
 
@@ -552,7 +552,7 @@ set ENABLE_OPTIMIZER=0
     ...
     ```
 
-    For information, see [**x (Examine Symbols)**](https://msdn.microsoft.com/library/windows/hardware/ff561506).
+    For information, see [**x (Examine Symbols)**](x--examine-symbols-.md).
 
 4.  The **!lmi** extension displays detailed information about a module. Type **!lmi echo**. Your output should be similar to the text shown below.
 
@@ -598,7 +598,7 @@ set ENABLE_OPTIMIZER=0
 
 Information about the device driver in the plug and play device tree can be useful for troubleshooting. For example, if a device driver is not resident in the device tree, there may an issue with the installation of the device driver.
 
-For more information about the device node debug extension, see [**!devnode**](https://msdn.microsoft.com/library/windows/hardware/ff562345).
+For more information about the device node debug extension, see [**!devnode**](-devnode.md).
 
 **&lt;-On the host system**
 
@@ -989,7 +989,7 @@ The call stack shows that the kernel (nt) called into plug and play code (PnP), 
 *In Section 9, you will display information about the process and threads running in kernel mode.*
 
 **Note**  
-You can display or set process information by using the [**!process**](https://msdn.microsoft.com/library/windows/hardware/ff564717) debugger extension. We will set a breakpoint to examine the process that are used when a sound is played.
+You can display or set process information by using the [**!process**](-process.md) debugger extension. We will set a breakpoint to examine the process that are used when a sound is played.
 
  
 
@@ -1075,7 +1075,7 @@ You can display or set process information by using the [**!process**](https://m
             THREAD ffffe00080e32080  Cid 03c4.0ec0  Teb: 00007ff7cfece000 Win32Thread: 0000000000000000 RUNNING on processor 1
     ```
 
-    The output shows that the process is associated with the echoapp.exe which was running when our breakpoint on the driver write event was hit. For more information, see [**!process**](https://msdn.microsoft.com/library/windows/hardware/ff564717).
+    The output shows that the process is associated with the echoapp.exe which was running when our breakpoint on the driver write event was hit. For more information, see [**!process**](-process.md).
 
 9.  Use the **!process 0 0** to display summary information for all processes. In the output, use CTRL+F to locate the same process address for the process associated with the echoapp.exe image. In the example shown below, the process address is ffffe0007e6a7780.
 
@@ -1125,7 +1125,7 @@ You can display or set process information by using the [**!process**](https://m
 ### <span id="Threads"></span><span id="threads"></span><span id="THREADS"></span>Threads
 
 **Note**  
-The commands to view and set threads are very similar to those of processes. Use the [**!thread**](https://msdn.microsoft.com/library/windows/hardware/ff565440) command to view threads. Use [**.thread**](https://msdn.microsoft.com/library/windows/hardware/ff565449) to set the current threads.
+The commands to view and set threads are very similar to those of processes. Use the [**!thread**](-thread.md) command to view threads. Use [**.thread**](-thread--set-register-context-.md) to set the current threads.
 
  
 
@@ -1147,7 +1147,7 @@ The commands to view and set threads are very similar to those of processes. Use
     aade54c0 55              push    ebp
     ```
 
-4.  To view the threads that are running, type [**!thread**](https://msdn.microsoft.com/library/windows/hardware/ff565440). Information similar to the following should be displayed:
+4.  To view the threads that are running, type [**!thread**](-thread.md). Information similar to the following should be displayed:
 
     ``` syntax
     0: kd>  !thread
@@ -1370,7 +1370,7 @@ For more information about threads and processes, see the following references o
 
 **&lt;- On the host system**
 
-The interrupt request level (IRQL) is used to manage the priority of interrupt servicing. Each processor has an IRQL setting that threads can raise or lower. Interrupts that occur at or below the processor's IRQL setting are masked and will not interfere with the current operation. Interrupts that occur above the processor's IRQL setting take precedence over the current operation. The [**!irql**](https://msdn.microsoft.com/library/windows/hardware/ff563825) extension displays the interrupt request level (IRQL) on the current processor of the target computer before the debugger break occurred. When the target computer breaks into the debugger, the IRQL changes, but the IRQL that was effective just before the debugger break is saved and is displayed by **!irql**.
+The interrupt request level (IRQL) is used to manage the priority of interrupt servicing. Each processor has an IRQL setting that threads can raise or lower. Interrupts that occur at or below the processor's IRQL setting are masked and will not interfere with the current operation. Interrupts that occur above the processor's IRQL setting take precedence over the current operation. The [**!irql**](-irql.md) extension displays the interrupt request level (IRQL) on the current processor of the target computer before the debugger break occurred. When the target computer breaks into the debugger, the IRQL changes, but the IRQL that was effective just before the debugger break is saved and is displayed by **!irql**.
 
 ``` syntax
 0: kd> !irql
@@ -1381,7 +1381,7 @@ Debugger saved IRQL for processor 0x0 -- 2 (DISPATCH_LEVEL)
 
 **&lt;-On the host system**
 
-Display the contents of the registers for the current thread on the current processor by using the [**r (Registers)**](https://msdn.microsoft.com/library/windows/hardware/ff554663) command.
+Display the contents of the registers for the current thread on the current processor by using the [**r (Registers)**](r--registers-.md) command.
 
 ``` syntax
 0: kd> r
@@ -1397,7 +1397,7 @@ nt!DbgBreakPointWithStatus:
 fffff803`bb757020 cc              int     3
 ```
 
-Alternatively, you can display the contents of the registers by clicking **view** &gt; **registers**. For more information see [**r (Registers)**](https://msdn.microsoft.com/library/windows/hardware/ff554663).
+Alternatively, you can display the contents of the registers by clicking **view** &gt; **registers**. For more information see [**r (Registers)**](r--registers-.md).
 
 Viewing the contents of the registers can be helpful when stepping through assembly language code execution and in other scenarios. For more information about assembly language disassembly, see [Annotated x86 Disassembly](annotated-x86-disassembly.md) and [Annotated x64 Disassembly](annotated-x64-disassembly.md).
 
@@ -1451,7 +1451,7 @@ OSR <https://www.osr.com/>
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debug%20Universal%20Drivers%20-%20Step%20by%20Step%20Lab%20%28Echo%20Kernel-Mode%29%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debug%20Universal%20Drivers%20-%20Step%20by%20Step%20Lab%20%28Echo%20Kernel-Mode%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

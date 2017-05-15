@@ -88,7 +88,7 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 **If you plan to debug this problem,** Parameter 2 (the exception address) should identify the driver or function that caused this problem.
 
-The [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
 If exception code 0x80000003 occurs, a hard-coded breakpoint or assertion was hit, but the system was started with the **/NODEBUG** switch. This problem should not occur frequently. If it occurs repeatedly, make sure that a kernel debugger is connected and the system is started with the **/DEBUG** switch.
 
@@ -102,7 +102,7 @@ For more information see the following topics:
 
 [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
-[Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](https://msdn.microsoft.com/library/windows/hardware/ff562112)
+[Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)
 
  
 

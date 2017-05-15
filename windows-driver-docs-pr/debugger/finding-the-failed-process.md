@@ -11,7 +11,7 @@ keywords: ["process, finding failed process"]
 ## <span id="ddk_finding_the_failed_process_dbg"></span><span id="DDK_FINDING_THE_FAILED_PROCESS_DBG"></span>
 
 
-Before finding the failed process, make sure that you are in the context of the accepting processor. To determine the accepting processor, use the [**!pcr**](https://msdn.microsoft.com/library/windows/hardware/ff564664) extension on each processor and looking for the processor for which an exception handler has been loaded. The exception handler of the accepting processor has an address other than 0xFFFFFFFF.
+Before finding the failed process, make sure that you are in the context of the accepting processor. To determine the accepting processor, use the [**!pcr**](-pcr.md) extension on each processor and looking for the processor for which an exception handler has been loaded. The exception handler of the accepting processor has an address other than 0xFFFFFFFF.
 
 For example, because the address of **NtTib.ExceptionList** on this processor, is 0xFFFFFFFF, this is not the processor with the failed process:
 
@@ -74,7 +74,7 @@ PCR Processor 1 @81497000
                   DpcQueue: 
 ```
 
-When you are in the correct processor context, the [**!process**](https://msdn.microsoft.com/library/windows/hardware/ff564717) extension displays the currently running process.
+When you are in the correct processor context, the [**!process**](-process.md) extension displays the currently running process.
 
 The most interesting parts of the process dump are:
 
@@ -110,31 +110,31 @@ In addition to **!process**, the following extensions can help to determine the 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>!ready</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564774)</p></td>
+<td align="left"><p>[<strong>!ready</strong>](-ready.md)</p></td>
 <td align="left"><p>Identifies the threads that are ready to run, in order of priority.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!kdext*.locks</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563980)</p></td>
+<td align="left"><p>[<strong>!kdext*.locks</strong>](-locks---kdext--locks-.md)</p></td>
 <td align="left"><p>Identifies any held resource locks, in case there is a deadlock with retail time outs.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>!vm</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565602)</p></td>
+<td align="left"><p>[<strong>!vm</strong>](-vm.md)</p></td>
 <td align="left"><p>Checks the virtual memory usage.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!poolused</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564700)</p></td>
+<td align="left"><p>[<strong>!poolused</strong>](-poolused.md)</p></td>
 <td align="left"><p>Determines whether one type of pool allocation is disproportionately large (pool tagging required).</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>!memusage</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564043)</p></td>
+<td align="left"><p>[<strong>!memusage</strong>](-memusage.md)</p></td>
 <td align="left"><p>Checks the physical memory status.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!heap</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563189)</p></td>
+<td align="left"><p>[<strong>!heap</strong>](-heap.md)</p></td>
 <td align="left"><p>Checks the validity of the heap.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>!irpfind</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563817)</p></td>
+<td align="left"><p>[<strong>!irpfind</strong>](-irpfind.md)</p></td>
 <td align="left"><p>Searches nonpaged pool for active IRPs.</p></td>
 </tr>
 </tbody>
@@ -148,7 +148,7 @@ If the information provided does not indicate an unusual condition, try setting 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Finding%20the%20Failed%20Process%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Finding%20the%20Failed%20Process%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

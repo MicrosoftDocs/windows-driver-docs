@@ -65,15 +65,15 @@ This usually indicates problem with the hardware itself, or with the device driv
 Resolution
 ----------
 
-Use the [**.thread (Set Register Context)**](https://msdn.microsoft.com/library/windows/hardware/ff565449) command together with Parameter 1. Then use [**kb (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943) to find the location where the thread is stuck.
+Use the [**.thread (Set Register Context)**](-thread--set-register-context-.md) command together with Parameter 1. Then use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to find the location where the thread is stuck.
 
 If the kernel debugger is already connected and running when Windows detects a time-out condition. Then **DbgBreakPoint** will be called instead of **KeBugCheckEx**. A detailed message will be printed to the debugger. See [Sending Output to the Debugge](sending-output-to-the-debugger.md)for more information.
 
-This message will include what would have been the bug check parameters. Because no actual bug check was issued, the [**.bugcheck (Display Bug Check Data)**](https://msdn.microsoft.com/library/windows/hardware/ff562170) command will not be useful. The four parameters can also be retrieved from Watchdog's global variables by using **dd watchdog!g\_WdBugCheckData L5**" on a 32-bit system, or **dq watchdog!g\_WdBugCheckData L5**" on a 64-bit system.
+This message will include what would have been the bug check parameters. Because no actual bug check was issued, the [**.bugcheck (Display Bug Check Data)**](-bugcheck--display-bug-check-data-.md) command will not be useful. The four parameters can also be retrieved from Watchdog's global variables by using **dd watchdog!g\_WdBugCheckData L5**" on a 32-bit system, or **dq watchdog!g\_WdBugCheckData L5**" on a 64-bit system.
 
-Debugging this error in an interactive manner such as this will enable you to find an offending thread, set breakpoints in it, and then use [**g (Go)**](https://msdn.microsoft.com/library/windows/hardware/ff549693) to return to the spinning code to debug it further.
+Debugging this error in an interactive manner such as this will enable you to find an offending thread, set breakpoints in it, and then use [**g (Go)**](g--go-.md) to return to the spinning code to debug it further.
 
-On multiprocessor machines (OS build 3790 or earlier), you can hit a time out if the spinning thread is interrupted by a hardware interrupt and an ISR or DPC routine is running at the time of the bug check. This is because the time out's work item can be delivered and handled on the second CPU and the same time. If this occurs, you must look deeper at the offending thread's stack to determine the spinning code which caused the time out to occur. Use the [**dds (Display Words and Symbols)**](https://msdn.microsoft.com/library/windows/hardware/ff540455) command to do this.
+On multiprocessor machines (OS build 3790 or earlier), you can hit a time out if the spinning thread is interrupted by a hardware interrupt and an ISR or DPC routine is running at the time of the bug check. This is because the time out's work item can be delivered and handled on the second CPU and the same time. If this occurs, you must look deeper at the offending thread's stack to determine the spinning code which caused the time out to occur. Use the [**dds (Display Words and Symbols)**](dds--dps--dqs--display-words-and-symbols-.md) command to do this.
 
  
 

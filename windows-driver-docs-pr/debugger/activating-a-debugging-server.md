@@ -14,7 +14,7 @@ api_type:
 # Activating a Debugging Server
 
 
-There are two ways to activate the debugging server. It can be activated when the debugger is started by using the **-server** command-line option in a elevated Command Prompt window (Run as Administrator). It can also be activated after the debugger is running. Start the debugger with elevated privileges (Run as Administrator), and enter the [**.server**](https://msdn.microsoft.com/library/windows/hardware/ff564953) command.
+There are two ways to activate the debugging server. It can be activated when the debugger is started by using the **-server** command-line option in a elevated Command Prompt window (Run as Administrator). It can also be activated after the debugger is running. Start the debugger with elevated privileges (Run as Administrator), and enter the [**.server**](-server--create-debugging-server-.md) command.
 
 **Note**  You can activate a debugging server without having elevated privileges, and debugging clients will be able to connect to the server. However, clients will not be able to discover a debugging server unless it was activated with elevated privileges. For information about how to discover debugging servers, see [Searching for Debugging Servers](searching-for-debugging-servers.md).
 
@@ -40,7 +40,7 @@ Debugger -server ssl:proto=Protocol,{certuser=Cert|machuser=Cert},port=Socket[,h
 Debugger -server ssl:proto=Protocol,{certuser=Cert|machuser=Cert},port=Socket,clicon=Client[,password=Password] [-noio] [Options]
 ```
 
-Another method of activating a debugging server is to use the [**.server (Create Debugging Server)**](https://msdn.microsoft.com/library/windows/hardware/ff564953) command after the debugger has already been started.
+Another method of activating a debugging server is to use the [**.server (Create Debugging Server)**](-server--create-debugging-server-.md) command after the debugger has already been started.
 
 ``` syntax
 .server npipe:pipe=PipeName[,hidden][,password=Password][,IcfEnable] 
@@ -122,15 +122,15 @@ If the debugging server is created with the **-noio** option, no input or output
 (Windows XP and later versions only) Causes the debugger to enable the necessary port connections for TCP or named pipe communication when the Internet Connection Firewall is active. By default, the Internet Connection Firewall disables the ports used by these protocols. When **IcfEnable** is used with a TCP connection, the debugger causes Windows to open the port specified by the *Socket* parameter. When **IcfEnable** is used with a named pipe connection, the debugger causes Windows to open the ports used for named pipes (ports 139 and 445). The debugger does not close these ports after the connection terminates.
 
 <span id="Options_______"></span><span id="options_______"></span><span id="OPTIONS_______"></span>*Options*   
-Any additional command-line parameters can be placed here. See [Command-Line Options](https://msdn.microsoft.com/library/windows/hardware/ff539174) for a full list.
+Any additional command-line parameters can be placed here. See [Command-Line Options](command-line-options.md) for a full list.
 
-You can use the [**.server**](https://msdn.microsoft.com/library/windows/hardware/ff564953) command to start multiple servers using different protocol options. This allows different kinds of debugging clients to join the session.
-
- 
+You can use the [**.server**](-server--create-debugging-server-.md) command to start multiple servers using different protocol options. This allows different kinds of debugging clients to join the session.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Activating%20a%20Debugging%20Server%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Activating%20a%20Debugging%20Server%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

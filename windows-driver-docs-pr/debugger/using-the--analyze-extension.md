@@ -11,11 +11,11 @@ keywords: ["analyze extension, examples"]
 ## <span id="ddk_using_the_analyze_extension_dbg"></span><span id="DDK_USING_THE_ANALYZE_EXTENSION_DBG"></span>
 
 
-The first step in debugging a crashed target computer or application is to use the [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) extension command.
+The first step in debugging a crashed target computer or application is to use the [**!analyze**](-analyze.md) extension command.
 
 This extension performs a tremendous amount of automated analysis. The results of this analysis are displayed in the Debugger Command window.
 
-You should use the **-v** option for a fully verbose display of data. For details on other options, see the [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) reference page.
+You should use the **-v** option for a fully verbose display of data. For details on other options, see the [**!analyze**](-analyze.md) reference page.
 
 This topic contains:
 
@@ -63,7 +63,7 @@ NumberParameters: 3
    Parameter[2]: ffffffff
 ```
 
-The EXCEPTION\_RECORD field shows the exception record for this crash. This information can also be viewed by using the [**.exr (Display Exception Record)**](https://msdn.microsoft.com/library/windows/hardware/ff563043) command.
+The EXCEPTION\_RECORD field shows the exception record for this crash. This information can also be viewed by using the [**.exr (Display Exception Record)**](-exr--display-exception-record-.md) command.
 
 ``` syntax
 BUGCHECK_STR:  80000003
@@ -87,7 +87,7 @@ The PROCESS\_NAME field specifies the name of the process that raised the except
 LAST_CONTROL_TRANSFER:  from 01050963 to 77f97704
 ```
 
-The LAST\_CONTROL\_TRANSFER field shows the last call on the stack. In this case, the code at address 0x01050963 called a function at 0x77F97704. You can use these addresses with the [**ln (List Nearest Symbols)**](https://msdn.microsoft.com/library/windows/hardware/ff552029) command to determine what modules and functions these addresses reside in.
+The LAST\_CONTROL\_TRANSFER field shows the last call on the stack. In this case, the code at address 0x01050963 called a function at 0x77F97704. You can use these addresses with the [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md) command to determine what modules and functions these addresses reside in.
 
 ``` syntax
 STACK_TEXT:  
@@ -123,7 +123,7 @@ IMAGE_NAME:  MyApp.exe
 DEBUG_FLR_IMAGE_TIMESTAMP:  383490a9
 ```
 
-When [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) determines the instruction that has probably caused the error, it displays it in the FOLLOWUP\_IP field. The SYMBOL\_NAME, MODULE\_NAME, IMAGE\_NAME, and DBG\_FLR\_IMAGE\_TIMESTAMP fields show the symbol, module, image name, and image timestamp corresponding to this instruction.
+When [**!analyze**](-analyze.md) determines the instruction that has probably caused the error, it displays it in the FOLLOWUP\_IP field. The SYMBOL\_NAME, MODULE\_NAME, IMAGE\_NAME, and DBG\_FLR\_IMAGE\_TIMESTAMP fields show the symbol, module, image name, and image timestamp corresponding to this instruction.
 
 ``` syntax
 STACK_COMMAND:  .ecxr ; kb
@@ -150,7 +150,7 @@ There are a variety of other fields that may appear:
 
 -   If the processor misfires, you may see the SINGLE\_BIT\_ERROR, TWO\_BIT\_ERROR, or POSSIBLE\_INVALID\_CONTROL\_TRANSFER fields.
 
--   If memory corruption seems to have occurred, the CHKIMG\_EXTENSION field will specify the [**!chkimg**](https://msdn.microsoft.com/library/windows/hardware/ff562217) extension command that should be used to investigate.
+-   If memory corruption seems to have occurred, the CHKIMG\_EXTENSION field will specify the [**!chkimg**](-chkimg.md) extension command that should be used to investigate.
 
 ### <span id="ddk_a_kernel_mode_analyze_v_example_dbg"></span><span id="DDK_A_KERNEL_MODE_ANALYZE_V_EXAMPLE_DBG"></span>A Kernel-Mode !analyze -v Example
 
@@ -227,13 +227,13 @@ f832035c 894204           mov     [edx+0x4],eax     ds:0023:00000004=????????
 Resetting default context
 ```
 
-The TRAP\_FRAME field shows the trap frame for this crash. This information can also be viewed by using the [**.trap (Display Trap Frame)**](https://msdn.microsoft.com/library/windows/hardware/ff565491) command.
+The TRAP\_FRAME field shows the trap frame for this crash. This information can also be viewed by using the [**.trap (Display Trap Frame)**](-trap--display-trap-frame-.md) command.
 
 ``` syntax
 LAST_CONTROL_TRANSFER:  from f83206e0 to f832035c
 ```
 
-The LAST\_CONTROL\_TRANSFER field shows the last call on the stack. In this case, the code at address 0xF83206E0 called a function at 0xF832035C. You can use the [**ln (List Nearest Symbols)**](https://msdn.microsoft.com/library/windows/hardware/ff552029) command to determine what module and function these addresses reside in.
+The LAST\_CONTROL\_TRANSFER field shows the last call on the stack. In this case, the code at address 0xF83206E0 called a function at 0xF832035C. You can use the [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md) command to determine what module and function these addresses reside in.
 
 ``` syntax
 STACK_TEXT:  
@@ -304,7 +304,7 @@ There are a variety of other fields that may appear:
 
 -   If the processor misfires, you may see the SINGLE\_BIT\_ERROR, TWO\_BIT\_ERROR, or POSSIBLE\_INVALID\_CONTROL\_TRANSFER fields.
 
--   If memory corruption seems to have occurred, the CHKIMG\_EXTENSION field will specify the [**!chkimg**](https://msdn.microsoft.com/library/windows/hardware/ff562217) extension command that should be used to investigate.
+-   If memory corruption seems to have occurred, the CHKIMG\_EXTENSION field will specify the [**!chkimg**](-chkimg.md) extension command that should be used to investigate.
 
 -   If a bug check occurred within the code of a device driver, its name may be displayed in the BUGCHECKING\_DRIVER field.
 
@@ -312,7 +312,7 @@ There are a variety of other fields that may appear:
 
 In both user mode and kernel mode, the Followup field in the display will show information about the owner of the current stack frame, if this can be determined. This information is determined in the following manner:
 
-1.  When the [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) extension is used, the debugger begins with the top frame in the stack and determines whether it is responsible for the error. If it isn't, the next frame is analyzed. This process continues until a frame that might be at fault is found.
+1.  When the [**!analyze**](-analyze.md) extension is used, the debugger begins with the top frame in the stack and determines whether it is responsible for the error. If it isn't, the next frame is analyzed. This process continues until a frame that might be at fault is found.
 
 2.  The debugger attempts to determine the owner of the module and function in this frame. If the owner can be determined, this frame is considered to be at fault.
 
@@ -328,13 +328,13 @@ For details on the syntax of the Triage.ini file, see [Specifying Module and Fun
 
 ### <span id="ddk_additional_analyze_techniques_dbg"></span><span id="DDK_ADDITIONAL_ANALYZE_TECHNIQUES_DBG"></span>Additional !analyze Techniques
 
-If you do not believe that the BUCKET\_ID is correct, you can override the bucket choice by using [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) with the **-D** parameter.
+If you do not believe that the BUCKET\_ID is correct, you can override the bucket choice by using [**!analyze**](-analyze.md) with the **-D** parameter.
 
-If no crash or exception has occurred, [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) will display a very short text giving the current status of the target. In certain situations you may want to force the analysis to take place as if a crash had occurred. Use **!analyze -f** to accomplish this task.
+If no crash or exception has occurred, [**!analyze**](-analyze.md) will display a very short text giving the current status of the target. In certain situations you may want to force the analysis to take place as if a crash had occurred. Use **!analyze -f** to accomplish this task.
 
 In user mode, if an exception has occurred but you believe the underlying problem is a hung thread, set the current thread to the thread you are investigating, and then use **!analyze -hang**. This extension will perform a thread stack analysis to determine if any threads are blocking other threads.
 
-In kernel mode, if a bug check has occurred but you believe the underlying problem is a hung thread, use **!analyze -hang**. This extension will investigate locks held by the system and scan the DPC queue chain, and will display any indications of hung threads. If you believe the problem is a kernel-mode resource deadlock, use the [**!deadlock**](https://msdn.microsoft.com/library/windows/hardware/ff562326) extension along with the **Deadlock Detection** option of Driver Verifier.
+In kernel mode, if a bug check has occurred but you believe the underlying problem is a hung thread, use **!analyze -hang**. This extension will investigate locks held by the system and scan the DPC queue chain, and will display any indications of hung threads. If you believe the problem is a kernel-mode resource deadlock, use the [**!deadlock**](-deadlock.md) extension along with the **Deadlock Detection** option of Driver Verifier.
 
 You can also automatically ignore known issues. To do this, you must first create an XML file containing a formatted list of known issues. Use the **!analyze -c -load***KnownIssuesFile* extension to load this file. Then when an exception or break occurs, use the **!analyze -c** extension. If the exception matches one of the known issues, the target will resume execution. If the target does not resume executing, then you can use **!analyze -v** to determine the cause of the problem. A sample XML file can be found in the sdk\\samples\\analyze\_continue subdirectory of the debugger installation directory.
 
@@ -342,7 +342,7 @@ You can also automatically ignore known issues. To do this, you must first creat
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20the%20!analyze%20Extension%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20the%20!analyze%20Extension%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

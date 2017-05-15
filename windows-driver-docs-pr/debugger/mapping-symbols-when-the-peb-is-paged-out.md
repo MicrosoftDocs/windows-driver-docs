@@ -38,7 +38,7 @@ To load the symbols, enter the command that was given in the Reload command stri
 .reload notepad.exe=000007f7`8e9e0000,32000
 ```
 
-Here is another example that uses a slightly different technique. The example demonstrates how to use the [**!vad**](https://msdn.microsoft.com/library/windows/hardware/ff565574) extension to map symbols when the PEB is paged out. The basic idea is to find the starting address and size of the relevant DLL so that you can then use the [**.reload**](https://msdn.microsoft.com/library/windows/hardware/ff564805) command to load the necessary symbols. Suppose that the address of the current process is 0xE0000126\`01BA0AF0 and you want to fix the symbols for it. First, use the [**!process**](https://msdn.microsoft.com/library/windows/hardware/ff564717) command to obtain the virtual address descriptor (VAD) root address:
+Here is another example that uses a slightly different technique. The example demonstrates how to use the [**!vad**](-vad.md) extension to map symbols when the PEB is paged out. The basic idea is to find the starting address and size of the relevant DLL so that you can then use the [**.reload**](-reload--reload-module-.md) command to load the necessary symbols. Suppose that the address of the current process is 0xE0000126\`01BA0AF0 and you want to fix the symbols for it. First, use the [**!process**](-process.md) command to obtain the virtual address descriptor (VAD) root address:
 
 ```
 kd> !process e000012601ba0af0 1
@@ -50,7 +50,7 @@ PROCESS e000012601ba0af0
 ...
 ```
 
-Then use the [**!vad**](https://msdn.microsoft.com/library/windows/hardware/ff565574) extension to list the VAD tree associated with the process. Those VADs labeled "EXECUTE\_WRITECOPY" belong to code modules.
+Then use the [**!vad**](-vad.md) extension to list the VAD tree associated with the process. Those VADs labeled "EXECUTE\_WRITECOPY" belong to code modules.
 
 ```
 kd> !vad e000012601a35e70
@@ -63,7 +63,7 @@ e000012601a5cba0 ( 7)   37d9c910 37d9c924         2 Mapped  Exe  EXECUTE_WRITECO
 ...
 ```
 
-Then use the [**!vad**](https://msdn.microsoft.com/library/windows/hardware/ff565574) extension again to find the starting address and size of the paged out memory which holds the DLL of interest. This confirms that you have found the correct DLL:
+Then use the [**!vad**](-vad.md) extension again to find the starting address and size of the paged out memory which holds the DLL of interest. This confirms that you have found the correct DLL:
 
 ```
 kd> !vad e000012601be1080 1
@@ -79,7 +79,7 @@ VAD @ e000012601be1080
         File: \Windows\System32\ExplorerFrame.dll
 ```
 
-The "Start VPN" field - in this case, 0x37D9BD30 - indicates the starting virtual page number. This must be converted to an actual address, by multiplying it by the page size. You can use the [**? (Evaluate Expression)**](https://msdn.microsoft.com/library/windows/hardware/ff566240) command to multiply this value by 0x2000, which is the page size for the Itanium-based machine the example comes from.
+The "Start VPN" field - in this case, 0x37D9BD30 - indicates the starting virtual page number. This must be converted to an actual address, by multiplying it by the page size. You can use the [**? (Evaluate Expression)**](---evaluate-expression-.md) command to multiply this value by 0x2000, which is the page size for the Itanium-based machine the example comes from.
 
 ```
 kd> ? 37d9bd3e*2000 
@@ -105,7 +105,7 @@ kd> .reload /f ExplorerFrame.dll=6fb`37a7c000,1e000
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Mapping%20Symbols%20When%20the%20PEB%20is%20Paged%20Out%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Mapping%20Symbols%20When%20the%20PEB%20is%20Paged%20Out%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

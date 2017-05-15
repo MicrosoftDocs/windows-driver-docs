@@ -77,7 +77,7 @@ Specifies that an unlimited number of reset packets can be sent to the target wh
 <span id="________reconnect"></span><span id="________RECONNECT"></span> *reconnect*  
 Causes the debugger to automatically disconnect and reconnect the pipe if a read/write failure occurs. Additionally, if the debugger does not find the named pipe when the debugger is started, the *reconnect* parameter causes the debugger to wait for a pipe that is named *PipeName* to appear. Use *reconnect* for Virtual PC and other virtual machines that destroy and re-create their pipes during a computer restart. Do not use this parameter for VMware or other virtual machines that preserve their pipes during a computer restart.
 
-For more information about additional command-line options, see [**KD Command-Line Options**](https://msdn.microsoft.com/library/windows/hardware/ff551851) or [**WinDbg Command-Line Options**](https://msdn.microsoft.com/library/windows/hardware/ff561306).
+For more information about additional command-line options, see [**KD Command-Line Options**](kd-command-line-options.md) or [**WinDbg Command-Line Options**](windbg-command-line-options.md).
 
 ## <span id="generation_2_virtual_machines"></span><span id="GENERATION_2_VIRTUAL_MACHINES"></span>Generation 2 Virtual Machines
 
@@ -105,7 +105,7 @@ For more information, see [Generation 2 Virtual Machine Overview](http://go.micr
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
 
-If the target computer has stopped responding, the target computer is still stopped because of an earlier kernel debugging action, or you used the **-b** [command-line option](https://msdn.microsoft.com/library/windows/hardware/ff539174), the debugger breaks into the target computer immediately.
+If the target computer has stopped responding, the target computer is still stopped because of an earlier kernel debugging action, or you used the **-b** [command-line option](command-line-options.md), the debugger breaks into the target computer immediately.
 
 Otherwise, the target computer continues running until the debugger orders it to break.
 
@@ -123,7 +123,7 @@ During virtual machine debugging, VMWare often consumes 100% of the CPU.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Setting%20Up%20Kernel-Mode%20Debugging%20of%20a%20Virtual%20Machine%20Manually%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Setting%20Up%20Kernel-Mode%20Debugging%20of%20a%20Virtual%20Machine%20Manually%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

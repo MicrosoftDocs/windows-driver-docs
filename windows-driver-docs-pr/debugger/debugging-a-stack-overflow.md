@@ -34,7 +34,7 @@ Last event: Exception C00000FD, second chance
 
 You can look up exception code 0xC00000FD in ntstatus.h, which can be found in the Microsoft Windows SDK and the Windows Driver Kit (WDK). This exception code is STATUS\_STACK\_OVERFLOW.
 
-To double-check that the stack overflowed, you can use the [**k (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943) command:
+To double-check that the stack overflowed, you can use the [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command:
 
 ``` syntax
 0:002> k 
@@ -81,14 +81,14 @@ ChildEBP RetAddr
 
 Now you need to investigate thread 2. The period at the left of this line indicates that this is the current thread.
 
-The stack information is contained in the TEB (Thread Environment Block) at 0x7FFDC000. The easiest way to list it is using [**!teb**](https://msdn.microsoft.com/library/windows/hardware/ff565433). However, this requires you to have the proper symbols. For maximum versatility, assume you have no symbols:
+The stack information is contained in the TEB (Thread Environment Block) at 0x7FFDC000. The easiest way to list it is using [**!teb**](-teb.md). However, this requires you to have the proper symbols. For maximum versatility, assume you have no symbols:
 
 ``` syntax
 0:002> dd 7ffdc000 L4 
 7ffdc000   009fdef0 00a00000 009fc000 00000000 
 ```
 
-To interpret this, you need to look up the definition of the TEB data structure. If you had complete symbols, you could use [**dt TEB**](https://msdn.microsoft.com/library/windows/hardware/ff542772) to do this. But in this case, you will need to look at the ntpsapi.h file in the Microsoft Windows SDK. For Windows XP and later versions of Windows, this file contains the following information:
+To interpret this, you need to look up the definition of the TEB data structure. If you had complete symbols, you could use [**dt TEB**](dt--display-type-.md) to do this. But in this case, you will need to look at the ntpsapi.h file in the Microsoft Windows SDK. For Windows XP and later versions of Windows, this file contains the following information:
 
 ``` syntax
 typedef struct _TEB {
@@ -112,7 +112,7 @@ typedef struct _NT_TIB {
 } NT_TIB; 
 ```
 
-This indicates that the second and third DWORDs in the TEB structure point to the bottom and top of the stack, respectively. In this case, these addresses are 0x00A00000 and 0x009FC000. (The stack grows downward in memory.) You can calculate the stack size using the [**? (Evaluate Expression)**](https://msdn.microsoft.com/library/windows/hardware/ff566240) command:
+This indicates that the second and third DWORDs in the TEB structure point to the bottom and top of the stack, respectively. In this case, these addresses are 0x00A00000 and 0x009FC000. (The stack grows downward in memory.) You can calculate the stack size using the [**? (Evaluate Expression)**](---evaluate-expression-.md) command:
 
 ``` syntax
 0:002> ? a00000-9fc000
@@ -133,7 +133,7 @@ This shows that the maximum stack size is 256 K, which means more than adequate 
 
 Furthermore, this process looks clean -- it is not in an infinite recursion or exceeding its stack space by using excessively large stack-based data structures.
 
-Now break into KD and look at the overall system memory usage with the [**!vm**](https://msdn.microsoft.com/library/windows/hardware/ff565602) extension command:
+Now break into KD and look at the overall system memory usage with the [**!vm**](-vm.md) extension command:
 
 ``` syntax
 0:002> .breakin 
@@ -222,7 +222,7 @@ This shows that **Header\_Draw** allocated 0x58 bytes of stack space.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20a%20Stack%20Overflow%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20a%20Stack%20Overflow%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -36,7 +36,7 @@ The IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x0000000A. This indicat
 <tr class="odd">
 <td align="left"><p>1</p></td>
 <td align="left"><p>The virtual memory address that could not be accessed.</p>
-<p>Use [<strong>!pool</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564691) on this address to see whether it's Paged pool. These commands, may also be useful in gathering information about the failure: [<strong>!pte</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564748), [<strong>!address</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561519), and [<strong>ln (List Nearest Symbols)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552029).</p></td>
+<p>Use [<strong>!pool</strong>](-pool.md) on this address to see whether it's Paged pool. These commands, may also be useful in gathering information about the failure: [<strong>!pte</strong>](-pte.md), [<strong>!address</strong>](-address.md), and [<strong>ln (List Nearest Symbols)</strong>](ln--list-nearest-symbols-.md).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>
@@ -69,7 +69,7 @@ The IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x0000000A. This indicat
 <tr class="even">
 <td align="left"><p>4</p></td>
 <td align="left"><p>The instruction pointer at the time of the fault.</p>
-<p>Use the [<strong>ln (List Nearest Symbols)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552029) command on this address to see the name of the function.</p></td>
+<p>Use the [<strong>ln (List Nearest Symbols)</strong>](ln--list-nearest-symbols-.md) command on this address to see the name of the function.</p></td>
 </tr>
 </tbody>
 </table>
@@ -86,7 +86,7 @@ This bug check indicates that an attempt was made to access an invalid address w
 1. If parameter 1 is less than 0x1000, then this is likely a NULL pointer dereference.
 2. If !pool reports that parameter 1 is Paged pool, then the IRQL is too high to access this data. Run at a lower IRQL or allocate the data in NonPagedPool.
 3. If parameter 3 indicates that this was an attempt to execute pageable code, then the IRQL is too high to call this function. Run at a lower IRQL or do not mark the code as pageable.
-4. Otherwise, this may be a bad pointer, possibly caused by use-after-free or bit-flipping. Investigate the validity of parameter 1 with [**!pte**](https://msdn.microsoft.com/library/windows/hardware/ff564748), [**!address**](https://msdn.microsoft.com/library/windows/hardware/ff561519), and [**ln (List Nearest Symbols)**](https://msdn.microsoft.com/library/windows/hardware/ff552029).
+4. Otherwise, this may be a bad pointer, possibly caused by use-after-free or bit-flipping. Investigate the validity of parameter 1 with [**!pte**](-pte.md), [**!address**](-address.md), and [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md).
 
 Resolution
 ----------

@@ -29,9 +29,9 @@ The debugger has five different contexts that you can set while you are debuggin
 
 In Windows XP and later versions of Windows, multiple logon sessions can run at the same time. Each logon session has its own processes.
 
-The [**!session**](https://msdn.microsoft.com/library/windows/hardware/ff565334) extension displays all logon sessions or changes the current session context.
+The [**!session**](-session.md) extension displays all logon sessions or changes the current session context.
 
-The session context is used by the [**!sprocess**](https://msdn.microsoft.com/library/windows/hardware/ff565365) and [**!spoolused**](https://msdn.microsoft.com/library/windows/hardware/ff565361) extensions when the session number is entered as "-2".
+The session context is used by the [**!sprocess**](-sprocess.md) and [**!spoolused**](https://msdn.microsoft.com/library/windows/hardware/ff565361) extensions when the session number is entered as "-2".
 
 When the session context is changed, the process context is automatically changed to the active process for that session.
 
@@ -41,11 +41,11 @@ Each process has its own page directory that records how virtual addresses are m
 
 During user-mode debugging, the current process determines the process context. Virtual addresses that are used in debugger commands, extensions, and debugging information windows are interpreted by using the page directory of the current process.
 
-During kernel-mode debugging, you can set the process context by using the [**.process (Set Process Context)**](https://msdn.microsoft.com/library/windows/hardware/ff564723) command. Use this command to select which process's page directory is used to interpret virtual addresses. After you set the process context, you can use this context in any command that takes addresses. You can even set breakpoints at this address. By including a **/i** option in the **.process** command to specify invasive debugging, you can also use the kernel debugger to set breakpoints in user space.
+During kernel-mode debugging, you can set the process context by using the [**.process (Set Process Context)**](-process--set-process-context-.md) command. Use this command to select which process's page directory is used to interpret virtual addresses. After you set the process context, you can use this context in any command that takes addresses. You can even set breakpoints at this address. By including a **/i** option in the **.process** command to specify invasive debugging, you can also use the kernel debugger to set breakpoints in user space.
 
 You can also set user-mode breakpoints from the kernel debugger by using a process-specific breakpoint on a kernel-space function. Set strategic breakpoints and wait for the appropriate context to come up.
 
-The *user-mode address context* is part of the process context. Typically, you do not have to set the user-mode address context directly. If you set the process context, the user-mode address context automatically changes to the directory base of the relevant page table for the process. However, on an Itanium-based processor, a single process might have more than one page directory. In this situation, you can use the [**.context (Set User-Mode Address Context)**](https://msdn.microsoft.com/library/windows/hardware/ff562254) command to change the user-mode address context.
+The *user-mode address context* is part of the process context. Typically, you do not have to set the user-mode address context directly. If you set the process context, the user-mode address context automatically changes to the directory base of the relevant page table for the process. However, on an Itanium-based processor, a single process might have more than one page directory. In this situation, you can use the [**.context (Set User-Mode Address Context)**](-context--set-user-mode-address-context-.md) command to change the user-mode address context.
 
 When you set the process context during kernel-mode debugging, that process context is retained until another **.process** command changes the context. The user-mode address context is also retained until a **.process** or **.context** command changes it. These contexts are not changed when the target computer executes, and they are not affected by changes to the register context or the local context.
 
@@ -57,25 +57,25 @@ During user-mode debugging, the current thread typically determines the register
 
 You can change the register context to a value other than the current thread while you are performing user-mode debugging by using one of the following commands:
 
-[**.cxr (Display Context Record)**](https://msdn.microsoft.com/library/windows/hardware/ff562301)
+[**.cxr (Display Context Record)**](-cxr--display-context-record-.md)
 
-[**.ecxr (Display Exception Context Record)**](https://msdn.microsoft.com/library/windows/hardware/ff562945)
+[**.ecxr (Display Exception Context Record)**](-ecxr--display-exception-context-record-.md)
 
 During kernel-mode debugging, you can control the register context by using a variety of debugger commands, including the following commands:
 
-[**.thread (Set Register Context)**](https://msdn.microsoft.com/library/windows/hardware/ff565449)
+[**.thread (Set Register Context)**](-thread--set-register-context-.md)
 
-[**.cxr (Display Context Record)**](https://msdn.microsoft.com/library/windows/hardware/ff562301)
+[**.cxr (Display Context Record)**](-cxr--display-context-record-.md)
 
-[**.trap (Display Trap Frame)**](https://msdn.microsoft.com/library/windows/hardware/ff565491)
+[**.trap (Display Trap Frame)**](-trap--display-trap-frame-.md)
 
 These commands do not change the values of the CPU registers. Instead, the debugger retrieves the specified register context from its location in memory. Actually, the debugger can retrieve only the *saved* register values. (Other values are set dynamically and are not saved. The saved values are sufficient to re-create a stack trace.
 
-After the register context is set, the new register context is used for any commands that use register values, such as [**k (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943) and [**r (Registers)**](https://msdn.microsoft.com/library/windows/hardware/ff554663).
+After the register context is set, the new register context is used for any commands that use register values, such as [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) and [**r (Registers)**](r--registers-.md).
 
-However, when you are debugging multiprocessor computers, some commands enable you to specify a processor. (For more information about such commands, see [Multiprocessor Syntax](https://msdn.microsoft.com/library/windows/hardware/ff552252).) If you specify a processor for a command, the command uses the register context of the active thread on the specified processor instead of the current register context, even if the specified processor is the currently-active processor.
+However, when you are debugging multiprocessor computers, some commands enable you to specify a processor. (For more information about such commands, see [Multiprocessor Syntax](multiprocessor-syntax.md).) If you specify a processor for a command, the command uses the register context of the active thread on the specified processor instead of the current register context, even if the specified processor is the currently-active processor.
 
-Also, if the register context does not match the current processor mode setting, these commands produce incorrect or meaningless output. To avoid the output errors, commands that depend on the register state fail until you change the processor mode to match the register context. To change the processor mode, use the [**.effmach (Effective Machine)**](https://msdn.microsoft.com/library/windows/hardware/ff562949) command,
+Also, if the register context does not match the current processor mode setting, these commands produce incorrect or meaningless output. To avoid the output errors, commands that depend on the register state fail until you change the processor mode to match the register context. To change the processor mode, use the [**.effmach (Effective Machine)**](-effmach--effective-machine-.md) command,
 
 Changing the register context can also change the local context. In this manner, the register context can affect the display of local variables.
 
@@ -83,13 +83,13 @@ If any application execution, stepping, or tracing occurs, the register context 
 
 The register context affects stack traces, because the stack trace begins at the location that the stack pointer register (**esp** on an x86-based processor or **sp** on an Itanium-based processor) points to. If the register context is set to an invalid or inaccessible value, stack traces cannot be obtained.
 
-You can apply a processor breakpoint (data breakpoint) to a specific register context by using the [**.apply\_dbp (Apply Data Breakpoint to Context)**](https://msdn.microsoft.com/library/windows/hardware/ff562120) command.
+You can apply a processor breakpoint (data breakpoint) to a specific register context by using the [**.apply\_dbp (Apply Data Breakpoint to Context)**](-apply-dbp--apply-data-breakpoint-to-context-.md) command.
 
 ### <span id="local_context"></span><span id="LOCAL_CONTEXT"></span>Local Context
 
 When a program is executing, the meaning of local variables depends on the location of the program counter, because the scope of such variables extends only to the function that they are defined in.
 
-When you are performing user-mode or kernel-mode debugging, the debugger uses the scope of the current function (the current frame on the stack) as the local context. To change this context, use the [**.frame (Set Local Context)**](https://msdn.microsoft.com/library/windows/hardware/ff563155) command, or double-click the desired frame in the [Calls window](calls-window.md).
+When you are performing user-mode or kernel-mode debugging, the debugger uses the scope of the current function (the current frame on the stack) as the local context. To change this context, use the [**.frame (Set Local Context)**](-frame--set-local-context-.md) command, or double-click the desired frame in the [Calls window](calls-window.md).
 
 In user-mode debugging, the local context is always a frame within the stack trace of the current thread. In kernel-mode debugging, the local context is always a frame within the stack trace of the current register context's thread.
 
@@ -103,13 +103,13 @@ The local context is reset if any of the following events occur:
 
 -   Any change to the register context
 
-The [**!for\_each\_frame**](https://msdn.microsoft.com/library/windows/hardware/ff563128) extension enables you to execute a single command repeatedly, once for each frame in the stack. This command changes the local context for each frame, executes the specified command, and then returns the local context to its original value.
+The [**!for\_each\_frame**](-for-each-frame.md) extension enables you to execute a single command repeatedly, once for each frame in the stack. This command changes the local context for each frame, executes the specified command, and then returns the local context to its original value.
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Changing%20Contexts%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Changing%20Contexts%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

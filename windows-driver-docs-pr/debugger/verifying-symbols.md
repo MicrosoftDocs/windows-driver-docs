@@ -15,13 +15,13 @@ Symbol problems can show up in a variety of ways. Perhaps a stack trace shows in
 
 If you suspect that the debugger is not loading symbols correctly, there are several steps you can take to investigate this problem.
 
-First, use the [**lm (List Loaded Modules)**](https://msdn.microsoft.com/library/windows/hardware/ff552026) command to display the list of loaded modules with symbol information. The most useful form of this command is the following:
+First, use the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md) command to display the list of loaded modules with symbol information. The most useful form of this command is the following:
 
 ```
 0:000> lml 
 ```
 
-If you are using WinDbg, the [Debug | Modules](https://msdn.microsoft.com/library/windows/hardware/ff541795) menu command will let you see this information as well.
+If you are using WinDbg, the [Debug | Modules](debug---modules.md) menu command will let you see this information as well.
 
 Pay particular attention to any notes or abbreviations you may see in these displays. For an interpretation of these, see [Symbol Status Abbreviations](symbol-status-abbreviations.md).
 
@@ -34,7 +34,7 @@ Current Symbol Path is: d:\MyInstallation\i386\symbols\retail
 
 If your symbol path is wrong, fix it. If you are using the kernel debugger make sure your local %WINDIR% is not on your symbol path.
 
-Then reload symbols using the [**.reload (Reload Module)**](https://msdn.microsoft.com/library/windows/hardware/ff564805) command:
+Then reload symbols using the [**.reload (Reload Module)**](-reload--reload-module-.md) command:
 
 ```
 0:000> .reload ModuleName 
@@ -123,7 +123,7 @@ Windows XP and later versions of Windows do not use any .dbg symbol files. See [
 
 One of the most common problems in debugging failures on a machine that is often updated is mismatched symbols from different builds. Three common causes of this problem are: pointing at symbols for the wrong build, using a privately built binary without the corresponding symbols, and using the uniprocessor hardware abstraction level (HAL) and kernel symbols on a multiprocessor machine. The first two are simply a matter of matching your binaries and symbols; the third can be corrected by renaming your hal\*.dbg and ntkrnlmp.dbg to hal.dbg and ntoskrnl.dbg.
 
-To find out what build of Windows is installed on the target computer, use the [**vertarget (Show Target Computer Version)**](https://msdn.microsoft.com/library/windows/hardware/ff560266) command:
+To find out what build of Windows is installed on the target computer, use the [**vertarget (Show Target Computer Version)**](vertarget--show-target-computer-version-.md) command:
 
 ```
 kd> vertarget 
@@ -213,36 +213,36 @@ be682d48 77e63660 00000000 00000000 00000000 ntkrnlmp!KiSystemService+0xc9
 
 The following commands and extensions may be useful in tracking down symbol problems:
 
-<span id="lm__List_Loaded_Modules_"></span><span id="lm__list_loaded_modules_"></span><span id="LM__LIST_LOADED_MODULES_"></span>[**lm (List Loaded Modules)**](https://msdn.microsoft.com/library/windows/hardware/ff552026)  
+<span id="lm__List_Loaded_Modules_"></span><span id="lm__list_loaded_modules_"></span><span id="LM__LIST_LOADED_MODULES_"></span>[**lm (List Loaded Modules)**](lm--list-loaded-modules-.md)  
 Lists all modules and gives the loading status of all symbols in these modules.
 
-<span id="_dh_image-header-base"></span><span id="_DH_IMAGE-HEADER-BASE"></span>[**!dh image-header-base**](https://msdn.microsoft.com/library/windows/hardware/ff562360)  
+<span id="_dh_image-header-base"></span><span id="_DH_IMAGE-HEADER-BASE"></span>[**!dh image-header-base**](-dh.md)  
 Displays header information for a loaded image beginning at *image-header-base*.
 
-<span id=".RELOAD__N"></span>[**.reload /n**](https://msdn.microsoft.com/library/windows/hardware/ff564805)  
+<span id=".RELOAD__N"></span>[**.reload /n**](-reload--reload-module-.md)  
 Reloads all kernel symbols.
 
-<span id=".reload__image-name_"></span><span id=".RELOAD__IMAGE-NAME_"></span>[**.reload \[image-name\]**](https://msdn.microsoft.com/library/windows/hardware/ff564805)  
+<span id=".reload__image-name_"></span><span id=".RELOAD__IMAGE-NAME_"></span>[**.reload \[image-name\]**](-reload--reload-module-.md)  
 (CDB or WinDbg only) Reloads symbols for the image *image-name*. If no *image-name* is specified, reloads symbols for all images. (It is necessary to reload symbols after the symbol path has been changed.)
 
-<span id="_sym_noisy"></span><span id="_SYM_NOISY"></span>[**!sym noisy**](https://msdn.microsoft.com/library/windows/hardware/ff565396)  
+<span id="_sym_noisy"></span><span id="_SYM_NOISY"></span>[**!sym noisy**](-sym.md)  
 Turns on verbose mode for symbol loads. This can be used to get information about the module loads. See [Setting Symbol Options](symbol-options.md) for details.
 
-<span id=".sympath__new-symbol-path_"></span><span id=".SYMPATH__NEW-SYMBOL-PATH_"></span>[**.sympath \[new-symbol-path\]**](https://msdn.microsoft.com/library/windows/hardware/ff565407)  
+<span id=".sympath__new-symbol-path_"></span><span id=".SYMPATH__NEW-SYMBOL-PATH_"></span>[**.sympath \[new-symbol-path\]**](-sympath--set-symbol-path-.md)  
 Sets a new symbol path, or displays the current symbol path. See [Symbol Path](symbol-path.md) for details.
 
 If the kernel symbols are correct, but you aren't getting a complete stack, the following commands may also be useful:
 
-<span id="X___"></span><span id="x___"></span>[**X \*!**](https://msdn.microsoft.com/library/windows/hardware/ff561506)  
+<span id="X___"></span><span id="x___"></span>[**X \*!**](x--examine-symbols-.md)  
 This will list the modules which currently have symbols loaded. This is useful if the kernel symbols are correct.
 
-<span id=".RELOAD__USER"></span>[**.reload /user**](https://msdn.microsoft.com/library/windows/hardware/ff564805)  
+<span id=".RELOAD__USER"></span>[**.reload /user**](-reload--reload-module-.md)  
 This will attempt to reload all user-mode symbols. This is needed while performing kernel debugging if symbols were loaded while one process was running, and a break later occurred in another process. In this case, the user-mode symbols from the new process will not be loaded unless this command is executed.
 
-<span id="X_wdmaud__start_"></span><span id="x_wdmaud__start_"></span><span id="X_WDMAUD__START_"></span>[**X wdmaud!\*start\***](https://msdn.microsoft.com/library/windows/hardware/ff561506)  
+<span id="X_wdmaud__start_"></span><span id="x_wdmaud__start_"></span><span id="X_WDMAUD__START_"></span>[**X wdmaud!\*start\***](x--examine-symbols-.md)  
 This will list only the symbols in the **wdmaud** module whose names contain the "start" string. This has the advantage that it forces the reloading of all the symbols in **wdmaud**, but only displays those with "start" in them. (This means a shorter listing, but since there are always some symbols with "start" in them, there will be some verification that the load has taken place.)
 
-One other useful technique for verifying symbols is unassembling code. Most functions begin with an add, sub, or push operation using either the base pointer (**ebp**) or the stack pointer (**esp** or **sp**). Try unassembling ([**U Function**](https://msdn.microsoft.com/library/windows/hardware/ff560235)) some of the functions on the stack (from offset zero) to verify the symbols.
+One other useful technique for verifying symbols is unassembling code. Most functions begin with an add, sub, or push operation using either the base pointer (**ebp**) or the stack pointer (**esp** or **sp**). Try unassembling ([**U Function**](u--unassemble-.md)) some of the functions on the stack (from offset zero) to verify the symbols.
 
 ### <span id="network_and_port_problems"></span><span id="NETWORK_AND_PORT_PROBLEMS"></span>Network and Port Problems
 
@@ -256,7 +256,7 @@ Problems will occur with the symbol files and while connecting to the debugger. 
 
 -   .dll and .sys files with the same name (for example − mga64.sys and mga64.dll) will confuse the debugger if they aren't separated into the proper directories of the symbol tree.
 
--   The kernel debugger doesn't always like replacing the build symbol files with private symbol files. Double check the symbol path and do a **.reload***FileName* on the misbehaving symbol. The [**!dlls**](https://msdn.microsoft.com/library/windows/hardware/ff562365) command is sometimes useful.
+-   The kernel debugger doesn't always like replacing the build symbol files with private symbol files. Double check the symbol path and do a **.reload***FileName* on the misbehaving symbol. The [**!dlls**](-dlls.md) command is sometimes useful.
 
 ### <span id="questions_and_misconceptions"></span><span id="QUESTIONS_AND_MISCONCEPTIONS"></span>Questions and Misconceptions
 
@@ -284,7 +284,7 @@ Problems will occur with the symbol files and while connecting to the debugger. 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Verifying%20Symbols%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Verifying%20Symbols%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

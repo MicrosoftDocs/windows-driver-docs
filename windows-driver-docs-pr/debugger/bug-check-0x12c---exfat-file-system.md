@@ -62,7 +62,7 @@ This bug check is caused by the file system as a last resort when its internal a
 Resolution
 ----------
 
-**To debug this problem:** Use the [**.cxr (Display Context Record)**](https://msdn.microsoft.com/library/windows/hardware/ff562301) command together with Parameter 3, and then use [**kb (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943).
+**To debug this problem:** Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command together with Parameter 3, and then use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md).
 
  
 

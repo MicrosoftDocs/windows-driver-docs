@@ -93,13 +93,13 @@ start             end                 module name
 
 In the preceding example, notice that the version of the CLR (clr.dll) matches the version of the DAC (mscordacwks.dll): v4.0.30319. Also notice that both components are 64-bit.
 
-When you use [**.cordll**](https://msdn.microsoft.com/library/windows/hardware/ff562263) to load the DAC, the SOS debugging extension (sos.dll) might get loaded automatically. If sos.dll doesn't get loaded automatically, you can use one of these commands to load it.
+When you use [**.cordll**](-cordll--control-clr-debugging-.md) to load the DAC, the SOS debugging extension (sos.dll) might get loaded automatically. If sos.dll doesn't get loaded automatically, you can use one of these commands to load it.
 
 **.loadby sos clr** (for version 4.0 of the CLR)
 
 **.loadby sos mscorwks** (for version 1.0 or 2.0 of the CLR)
 
-As an alternative to using [**.loadby**](https://msdn.microsoft.com/library/windows/hardware/ff563964), you can use **.load**. For example, to load version 4.0 of the 64-bit CLR, you could enter a command similar to this.
+As an alternative to using [**.loadby**](-load---loadby--load-extension-dll-.md), you can use **.load**. For example, to load version 4.0 of the 64-bit CLR, you could enter a command similar to this.
 
 **.load C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\sos.dll**
 
@@ -170,7 +170,7 @@ In the preceding example, notice that the version of the CLR (clr.dll) matches t
 
 ### <span id="Using_the_SOS_Debugging_Extension_"></span><span id="using_the_sos_debugging_extension_"></span><span id="USING_THE_SOS_DEBUGGING_EXTENSION_"></span>Using the SOS Debugging Extension
 
-To verify that the SOS debugging extension loaded correctly, enter the [**.chain**](https://msdn.microsoft.com/library/windows/hardware/ff562212) command.
+To verify that the SOS debugging extension loaded correctly, enter the [**.chain**](-chain--list-debugger-extensions-.md) command.
 
 ``` syntax
 0:000> .chain
@@ -187,13 +187,13 @@ To test the SOS debugging extension, enter **!sos.help**. Then try one of the co
 
 ### <span id="Notes"></span><span id="notes"></span><span id="NOTES"></span>Notes
 
-Sometimes a managed-code application loads more than one version of the CLR. In that case, you must specify which version of the DAC to load. For more information, see [**.cordll**](https://msdn.microsoft.com/library/windows/hardware/ff562263).
+Sometimes a managed-code application loads more than one version of the CLR. In that case, you must specify which version of the DAC to load. For more information, see [**.cordll**](-cordll--control-clr-debugging-.md).
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20Managed%20Code%20Using%20the%20Windows%20Debugger%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20Managed%20Code%20Using%20the%20Windows%20Debugger%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -21,7 +21,7 @@ Based on configuration values and which debuggers are active, Windows handles us
 
 1.  If a user-mode debugger is currently attached to the faulting process, all errors will cause the target to break into this debugger.
 
-    As long as the user-mode debugger is attached, no other error-handling methods will be used -- even if the [**gn (Go With Exception Not Handled)**](https://msdn.microsoft.com/library/windows/hardware/ff549672) command is used.
+    As long as the user-mode debugger is attached, no other error-handling methods will be used -- even if the [**gn (Go With Exception Not Handled)**](gn--gn--go-with-exception-not-handled-.md) command is used.
 
 2.  If no user-mode debugger is attached and the executing code has its own exception handling routines (for example, **try - except**), this exception handling routine will attempt to deal with the error.
 
@@ -29,7 +29,7 @@ Based on configuration values and which debuggers are active, Windows handles us
 
     Kernel debugging connections must be opened during Windows' boot process. If you wish to prevent a user-mode interrupt from breaking into the kernel debugger, you can use the KDbgCtrl utility with the **-du** parameter. For details on how to configure kernel-debugging connections and how to use KDbgCtrl, see [Getting Set Up for Debugging](getting-set-up-for-debugging.md).
 
-    In the kernel debugger, you can use [**gh (Go With Exception Handled)**](https://msdn.microsoft.com/library/windows/hardware/ff549618) to disregard the error and continue running the target. You can use [**gn (Go With Exception Not Handled)**](https://msdn.microsoft.com/library/windows/hardware/ff549672) to bypass the kernel debugger and go on to step 4.
+    In the kernel debugger, you can use [**gh (Go With Exception Handled)**](gh--go-with-exception-handled-.md) to disregard the error and continue running the target. You can use [**gn (Go With Exception Not Handled)**](gn--gn--go-with-exception-not-handled-.md) to bypass the kernel debugger and go on to step 4.
 
 4.  If the conditions in steps 1, 2, and 3 do not apply, Windows will activate a debugging tool configured in the AeDebug registry values. Any program can be selected in advance as the tool to use in this situation. The chosen program is referred to as the *postmortem debugger*.
 
@@ -152,7 +152,7 @@ The -p and -e parameters pass the Process ID and Event, as discussed previously.
 The **-g** passes the g (Go) command to WinDbg and continues execution from the current instruction.
 
 **Note**  
-There is a significant issue passing the g (Go) command. The issue with this approach, is that exceptions do not always repeat, typically, because of a transient condition that no longer exists when the code is restarted. For more information about this issue, see [**.jdinfo (Use JIT\_DEBUG\_INFO)**](https://msdn.microsoft.com/library/windows/hardware/mt772306).
+There is a significant issue passing the g (Go) command. The issue with this approach, is that exceptions do not always repeat, typically, because of a transient condition that no longer exists when the code is restarted. For more information about this issue, see [**.jdinfo (Use JIT\_DEBUG\_INFO)**](-jdinfo--use-jit-debug-info-.md).
 
 To avoid this issue, use .jdinfo or .dump /j. This approach allows the debugger to be in the context of the code failure of interest. For more information, see [Just In Time (JIT) Debugging](#jit) later in this topic.
 
@@ -212,7 +212,7 @@ If Visual Studio is updated or re-installed, this entry will be re-written, over
 
 The Windows Sysinternals ProcDump utility can also be used for postmortem dump capture. For more information about using and downloading ProcDump, see [ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) on TechNet.
 
-Like the [**.dump**](https://msdn.microsoft.com/library/windows/hardware/ff562428) WinDbg command, ProcDump is able to be capture a dump of the crash non-interactively. The capture may occur in any Windows system session.
+Like the [**.dump**](-dump--create-dump-file-.md) WinDbg command, ProcDump is able to be capture a dump of the crash non-interactively. The capture may occur in any Windows system session.
 
 ProcDump exits when the dump file capture completes, WER then reports the failure and the faulting process is terminated.
 
@@ -265,7 +265,7 @@ ProcDump is a "packed" executable containing both the 32-bit and 64-bit version 
 
 **Setting Context to the Faulting Application**
 
-As discussed previously, it is very desirable to set the context to the exception that caused the crash using the JIT\_DEBUG\_INFO parameter. For more information about this, see [**.jdinfo (Use JIT\_DEBUG\_INFO)**](https://msdn.microsoft.com/library/windows/hardware/mt772306).
+As discussed previously, it is very desirable to set the context to the exception that caused the crash using the JIT\_DEBUG\_INFO parameter. For more information about this, see [**.jdinfo (Use JIT\_DEBUG\_INFO)**](-jdinfo--use-jit-debug-info-.md).
 
 **Debugging Tools for Windows**
 
@@ -276,7 +276,7 @@ Debugger = "<Path>\windbg.exe -p %ld -e %ld -c ".jdinfo 0x%p"
 Auto = 1
 ```
 
-The %p parameter is the address of a JIT\_DEBUG\_INFO structure in the target process’s address space. The %p parameter is pre-appended with 0x so that it is interpreted as a hex value. For more information, see [**.jdinfo (Use JIT\_DEBUG\_INFO)**](https://msdn.microsoft.com/library/windows/hardware/mt772306).
+The %p parameter is the address of a JIT\_DEBUG\_INFO structure in the target process’s address space. The %p parameter is pre-appended with 0x so that it is interpreted as a hex value. For more information, see [**.jdinfo (Use JIT\_DEBUG\_INFO)**](-jdinfo--use-jit-debug-info-.md).
 
 To debug a mix of 32 and 64 bit apps, configure both the 32 and 64 bit registry keys (described above), setting the proper path to the location of the 64-bit and 32-bit WinDbg.exe.
 
@@ -288,9 +288,9 @@ To capture a dump file whenever a failure occurs that includes the JIT\_DEBUG\_I
 <Path>\windbg.exe -p %ld -e %ld -c ".dump /j %p /u <DumpPath>\AeDebug.dmp; qd"
 ```
 
-Use the /u option to generate a unique filename to allow multiple dump files to be automatically created. For more information about the options see, [**.dump (Create Dump File)**](https://msdn.microsoft.com/library/windows/hardware/ff562428).
+Use the /u option to generate a unique filename to allow multiple dump files to be automatically created. For more information about the options see, [**.dump (Create Dump File)**](-dump--create-dump-file-.md).
 
-The created dump will have the JITDEBUG\_INFO data stored as the default exception context. Instead of using .jdinfo to view the exception information and set the context, use .exr -1 to display the exception record and .ecxr to set the context. For more information see [**.exr (Display Exception Record)**](https://msdn.microsoft.com/library/windows/hardware/ff563043) and [**.ecxr (Display Exception Context Record)**](https://msdn.microsoft.com/library/windows/hardware/ff562945).
+The created dump will have the JITDEBUG\_INFO data stored as the default exception context. Instead of using .jdinfo to view the exception information and set the context, use .exr -1 to display the exception record and .ecxr to set the context. For more information see [**.exr (Display Exception Record)**](-exr--display-exception-record-.md) and [**.ecxr (Display Exception Context Record)**](-ecxr--display-exception-context-record-.md).
 
 **Windows Error Reporting - q / qd**
 
@@ -323,7 +323,7 @@ If you are considering enabling postmortem debugging on a computer that you shar
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Enabling%20Postmortem%20Debugging%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Enabling%20Postmortem%20Debugging%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

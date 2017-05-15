@@ -39,11 +39,11 @@ In versions of Windows earlier than Windows XP SP1, callback data written by [Bu
 
 ### <span id="displaying_callback_data"></span><span id="DISPLAYING_CALLBACK_DATA"></span>Displaying Callback Data
 
-To display bug check callback data, you can use the [**!bugdump**](https://msdn.microsoft.com/library/windows/hardware/ff562171) extension.
+To display bug check callback data, you can use the [**!bugdump**](-bugdump.md) extension.
 
-Without any parameters, [**!bugdump**](https://msdn.microsoft.com/library/windows/hardware/ff562171) will display data for all callbacks.
+Without any parameters, [**!bugdump**](-bugdump.md) will display data for all callbacks.
 
-To view data for one specific callback routine, use [**!bugdump**](https://msdn.microsoft.com/library/windows/hardware/ff562171)*Component*, where *Component* is the same parameter that was passed to **KeRegisterBugCheckCallback** when that routine was registered.
+To view data for one specific callback routine, use [**!bugdump**](-bugdump.md)*Component*, where *Component* is the same parameter that was passed to **KeRegisterBugCheckCallback** when that routine was registered.
 
 ### <span id="displaying_secondary_callback_data"></span><span id="DISPLAYING_SECONDARY_CALLBACK_DATA"></span>Displaying Secondary Callback Data
 
@@ -51,7 +51,7 @@ There are two methods for displaying secondary callback data in Windows XP SP1, 
 
 Each block of secondary callback data is identified by a GUID tag. This tag is specified by the **Guid** field of the **(KBUGCHECK\_SECONDARY\_DUMP\_DATA)ReasonSpecificData** parameter passed to [BugCheckSecondaryDumpDataCallback](http://go.microsoft.com/fwlink/p/?LinkID=254481).
 
-The [**.enumtag (Enumerate Secondary Callback Data)**](https://msdn.microsoft.com/library/windows/hardware/ff562987) command is not a very precise instrument. It displays every secondary data block, showing the tag and then showing the data in hexadecimal and ASCII format. It is generally useful only to determine what tags are actually being used for secondary data blocks.
+The [**.enumtag (Enumerate Secondary Callback Data)**](-enumtag--enumerate-secondary-callback-data-.md) command is not a very precise instrument. It displays every secondary data block, showing the tag and then showing the data in hexadecimal and ASCII format. It is generally useful only to determine what tags are actually being used for secondary data blocks.
 
 To use this data in a more practical way, it is recommended that you write your own debugger extension. This extension must call methods in the dbgeng.h header file. For details, see [Writing New Debugger Extensions](writing-new-debugger-extensions.md).
 
@@ -113,7 +113,7 @@ If the callback routine causes a second bug check, this new bug check will be pr
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Reading%20Bug%20Check%20Callback%20Data%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Reading%20Bug%20Check%20Callback%20Data%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

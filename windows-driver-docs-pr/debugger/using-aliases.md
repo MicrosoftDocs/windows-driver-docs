@@ -32,17 +32,17 @@ When you define a user-named alias, you can choose the alias name and the alias 
 
 Both the alias name and the alias equivalent are case sensitive.
 
-To define or redefine a user-named alias, use the [**as (Set Alias)**](https://msdn.microsoft.com/library/windows/hardware/ff538131) or **aS (Set Alias)** command.
+To define or redefine a user-named alias, use the [**as (Set Alias)**](as--as--set-alias-.md) or **aS (Set Alias)** command.
 
-To remove an alias, use the [**ad (Delete Alias)**](https://msdn.microsoft.com/library/windows/hardware/ff537997) command.
+To remove an alias, use the [**ad (Delete Alias)**](ad--delete-alias-.md) command.
 
-To list all current user-named aliases, use the [**al (List Aliases)**](https://msdn.microsoft.com/library/windows/hardware/ff538014) command.
+To list all current user-named aliases, use the [**al (List Aliases)**](al--list-aliases-.md) command.
 
 ### <span id="defining_a_fixed_name_alias"></span><span id="DEFINING_A_FIXED_NAME_ALIAS"></span>Defining a Fixed-Name Alias
 
 There are 10 fixed-name aliases. Their alias names are **$u0**, **$u1**, ..., **$u9**. Their alias equivalents can be any string that does not contain the ENTER keystroke.
 
-Use the [**r (Registers)**](https://msdn.microsoft.com/library/windows/hardware/ff554663) command to define the alias equivalents for fixed-name aliases. When you define a fixed-name alias, you must insert a period (**.**) before the letter "u". The text after the equal sign (=) is the alias equivalent. The alias equivalent can include spaces or semicolons, but leading and trailing spaces are ignored. You should not enclose the alias equivalent in quotation marks (unless you want quotation marks in the results).
+Use the [**r (Registers)**](r--registers-.md) command to define the alias equivalents for fixed-name aliases. When you define a fixed-name alias, you must insert a period (**.**) before the letter "u". The text after the equal sign (=) is the alias equivalent. The alias equivalent can include spaces or semicolons, but leading and trailing spaces are ignored. You should not enclose the alias equivalent in quotation marks (unless you want quotation marks in the results).
 
 **Note**   Do not be confused by using the **r (Registers)** command for fixed-name aliases. These aliases are not registers or pseudo-registers, even though you use the **r** command to set their alias equivalents. You do not have to add an at (**@**) sign before these aliases, and you cannot use the **r** command to *display* the value of one of these aliases.
 
@@ -99,7 +99,7 @@ The debugger sets the following automatic aliases.
 
  
 
-Automatic aliases are similar to [automatic pseudo-registers](https://msdn.microsoft.com/library/windows/hardware/ff553485), except that you can use automatic aliases with alias-related tokens (such as **${ }**), while you cannot use pseudo-registers with these tokens.
+Automatic aliases are similar to [automatic pseudo-registers](pseudo-register-syntax.md), except that you can use automatic aliases with alias-related tokens (such as **${ }**), while you cannot use pseudo-registers with these tokens.
 
 ### <span id="using_an_alias_in_the_debugger_command_window"></span><span id="USING_AN_ALIAS_IN_THE_DEBUGGER_COMMAND_WINDOW"></span>Using an Alias in the Debugger Command Window
 
@@ -113,11 +113,11 @@ A user-named alias is recognized only if its name is separated from other charac
 
  
 
-However, you can use the **${ }** token to expand a user-named alias even when it is next to other text. You can also use this token together with certain switches to prevent an alias from being expanded or to display certain alias-related values. For more information about these situations, see [**${ } (Alias Interpreter)**](https://msdn.microsoft.com/library/windows/hardware/ff566259).
+However, you can use the **${ }** token to expand a user-named alias even when it is next to other text. You can also use this token together with certain switches to prevent an alias from being expanded or to display certain alias-related values. For more information about these situations, see [**${ } (Alias Interpreter)**](-------alias-interpreter-.md).
 
 A fixed-name alias expands correctly from any point within a line, regardless of how it is embedded within the text of the line.
 
-You cannot use commands that are available only in WinDbg ([**.open**](https://msdn.microsoft.com/library/windows/hardware/ff564622), [**.write\_cmd\_hist (Write Command History)**](https://msdn.microsoft.com/library/windows/hardware/ff566180), [**.lsrcpath**](https://msdn.microsoft.com/library/windows/hardware/ff565378), and [**.lsrcfix**](https://msdn.microsoft.com/library/windows/hardware/ff565371)) and a few additional commands ([**.hh**](https://msdn.microsoft.com/library/windows/hardware/ff563197), [**.cls**](https://msdn.microsoft.com/library/windows/hardware/ff562246), [**.wtitle**](https://msdn.microsoft.com/library/windows/hardware/ff566185), [**.remote**](https://msdn.microsoft.com/library/windows/hardware/ff564818), kernel-mode [**.restart**](https://msdn.microsoft.com/library/windows/hardware/ff564821), and user-mode [**.restart**](https://msdn.microsoft.com/library/windows/hardware/ff564823)) with aliases.
+You cannot use commands that are available only in WinDbg ([**.open**](-open--open-source-file-.md), [**.write\_cmd\_hist (Write Command History)**](-write-cmd-hist--write-command-history-.md), [**.lsrcpath**](-srcpath---lsrcpath--set-source-path-.md), and [**.lsrcfix**](-srcfix---lsrcfix--use-source-server-.md)) and a few additional commands ([**.hh**](-hh--open-html-help-file-.md), [**.cls**](-cls--clear-screen-.md), [**.wtitle**](-wtitle--set-window-title-.md), [**.remote**](-remote--create-remote-exe-server-.md), kernel-mode [**.restart**](-restart--restart-kernel-connection-.md), and user-mode [**.restart**](-restart--restart-target-application-.md)) with aliases.
 
 ### <span id="using_an_alias_in_a_script_file"></span><span id="USING_AN_ALIAS_IN_A_SCRIPT_FILE"></span>Using an Alias in a Script File
 
@@ -133,7 +133,7 @@ When you use an alias in a script file, you must take special care to make sure 
 ad myAlias
 ```
 
-The first time through the loop, the [**as, aS (Set Alias)**](https://msdn.microsoft.com/library/windows/hardware/ff538131) command assigns a value to the myAlias. The value assigned to myAlias is 1 plus 610000 (the first output of the dd command). However, when the [**.echo (Echo Comment)**](https://msdn.microsoft.com/library/windows/hardware/ff562940) command is executed, myAlias has not yet been expanded, so instead of seeing 610001, we see the text "myAlias".
+The first time through the loop, the [**as, aS (Set Alias)**](as--as--set-alias-.md) command assigns a value to the myAlias. The value assigned to myAlias is 1 plus 610000 (the first output of the dd command). However, when the [**.echo (Echo Comment)**](-echo--echo-comment-.md) command is executed, myAlias has not yet been expanded, so instead of seeing 610001, we see the text "myAlias".
 
 ``` syntax
 0:001> $$>< c:\Script02.txt
@@ -144,7 +144,7 @@ The first time through the loop, the [**as, aS (Set Alias)**](https://msdn.micro
 0000ffff 0x5
 ```
 
-The problem is that myAlias is not expanded until a new block of code is entered. The next entry to the loop is a new block, so myAlias gets expanded to 610001. But it is too late: we should have seen 610001 the first time through the loop, not the second time.We can fix this problem by enclosing the [**.echo (Echo Comment)**](https://msdn.microsoft.com/library/windows/hardware/ff562940) command in a new block as shown in the following script.
+The problem is that myAlias is not expanded until a new block of code is entered. The next entry to the loop is a new block, so myAlias gets expanded to 610001. But it is too late: we should have seen 610001 the first time through the loop, not the second time.We can fix this problem by enclosing the [**.echo (Echo Comment)**](-echo--echo-comment-.md) command in a new block as shown in the following script.
 
 ``` syntax
 .foreach (value {dd 610000 L4}) 
@@ -167,11 +167,11 @@ With the altered script, we get the following correct output.
 0000ffff 0x10000
 ```
 
-For more information, see [**.block**](https://msdn.microsoft.com/library/windows/hardware/ff562148) and [**${ } (Alias Interpreter)**](https://msdn.microsoft.com/library/windows/hardware/ff566259).
+For more information, see [**.block**](-block.md) and [**${ } (Alias Interpreter)**](-------alias-interpreter-.md).
 
 ### <span id="Using_a_.foreach_Token_in_an_Alias"></span><span id="using_a_.foreach_token_in_an_alias"></span><span id="USING_A_.FOREACH_TOKEN_IN_AN_ALIAS"></span>Using a .foreach Token in an Alias
 
-When you use a [**.foreach**](https://msdn.microsoft.com/library/windows/hardware/ff563124) token in the definition of an alias, you must take special care to ensure that the token is expanded. Consider the following sequence of commands.
+When you use a [**.foreach**](-foreach.md) token in the definition of an alias, you must take special care to ensure that the token is expanded. Consider the following sequence of commands.
 
 ``` syntax
 r $t0 = 5
@@ -188,7 +188,7 @@ The first command sets the value of the **$t0** pseudo register to 5. The second
  myAlias          Token 
 ```
 
-The problem is that the [**as**](https://msdn.microsoft.com/library/windows/hardware/ff538131) command is at the beginning of the line in the body of the [**.foreach**](https://msdn.microsoft.com/library/windows/hardware/ff563124) loop. When a line begins with an **as** command, aliases and tokens in that line are not expanded. If we put a semicolon or blank space before the **as** command, then any alias or token that already has a value is expanded. In this example, myAlias is not expanded because it does not already have a value. Token is expanded because it has a value of 5. Here is the same sequence of commands with the addition of a semicolon before the **as** command.
+The problem is that the [**as**](as--as--set-alias-.md) command is at the beginning of the line in the body of the [**.foreach**](-foreach.md) loop. When a line begins with an **as** command, aliases and tokens in that line are not expanded. If we put a semicolon or blank space before the **as** command, then any alias or token that already has a value is expanded. In this example, myAlias is not expanded because it does not already have a value. Token is expanded because it has a value of 5. Here is the same sequence of commands with the addition of a semicolon before the **as** command.
 
 ``` syntax
 r $t0 = 5
@@ -297,9 +297,9 @@ You cannot set user-named aliases in the Tools.ini file.
 
 ### <span id="fixed_name_aliases_vs__user_named_aliases"></span><span id="FIXED_NAME_ALIASES_VS__USER_NAMED_ALIASES"></span>Fixed-Name Aliases vs. User-Named Aliases
 
-User-name aliases are easier to use than fixed-named aliases. Their definition syntax is simpler, and you can list them by using the [**al (List Aliases)**](https://msdn.microsoft.com/library/windows/hardware/ff538014) command.
+User-name aliases are easier to use than fixed-named aliases. Their definition syntax is simpler, and you can list them by using the [**al (List Aliases)**](al--list-aliases-.md) command.
 
-Fixed-named aliases are replaced if they are used next to other text. To make a user-named alias be replaced when it is next to other text, enclose it in the [**${ } (Alias Interpreter)**](https://msdn.microsoft.com/library/windows/hardware/ff566259) token.
+Fixed-named aliases are replaced if they are used next to other text. To make a user-named alias be replaced when it is next to other text, enclose it in the [**${ } (Alias Interpreter)**](-------alias-interpreter-.md) token.
 
 Fixed-name alias replacement occurs before user-named alias replacement.
 
@@ -307,7 +307,7 @@ Fixed-name alias replacement occurs before user-named alias replacement.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20Aliases%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20Aliases%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

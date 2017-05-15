@@ -256,16 +256,16 @@ There are generally three different causes for this bug check:
 
 1.  A driver has inadvertently, or deliberately, modified critical kernel code or data. Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows for x64-based computers do not allow the kernel to be patched except through authorized Microsoft-originated hot patches. For more information, see [Patching Policy for x64-based Systems](http://go.microsoft.com/fwlink/p/?linkid=50719).
 
-2.  A developer attempted to set a normal kernel breakpoint using a kernel debugger that was not attached when the system was started. Normal breakpoints ([**bp**](https://msdn.microsoft.com/library/windows/hardware/ff538903)) can only be set if the debugger is attached at start time. Processor breakpoints ([**ba**](https://msdn.microsoft.com/library/windows/hardware/ff538165)) can be set at any time.
+2.  A developer attempted to set a normal kernel breakpoint using a kernel debugger that was not attached when the system was started. Normal breakpoints ([**bp**](bp--bu--bm--set-breakpoint-.md)) can only be set if the debugger is attached at start time. Processor breakpoints ([**ba**](ba--break-on-access-.md)) can be set at any time.
 
 3.  A hardware corruption occurred. For example, the kernel code or data could have been stored in memory that failed.
 
 Resolution
 ----------
 
-The [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
-To start, examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943) command. You can specify the processor number to examine the stacks on all processors.
+To start, examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command. You can specify the processor number to examine the stacks on all processors.
 
 You can also set a breakpoint in the code leading up to this stop code and attempt to single step forward into the faulting code.
 

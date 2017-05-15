@@ -21,19 +21,19 @@ C++ expressions are the same as those used in actual C++ code. In these expressi
 
 You can select the default expression evaluator in one of the following ways:
 
--   Use the \_NT\_EXPR\_EVAL [environment variable](https://msdn.microsoft.com/library/windows/hardware/ff545528) before the debugger is started.
+-   Use the \_NT\_EXPR\_EVAL [environment variable](general-environment-variables.md) before the debugger is started.
 
--   Use the **-ee** {**masm**|**c++**} [command-line option](https://msdn.microsoft.com/library/windows/hardware/ff539174) when the debugger is started.
+-   Use the **-ee** {**masm**|**c++**} [command-line option](command-line-options.md) when the debugger is started.
 
--   Use the [**.expr (Choose Expression Evaluator)**](https://msdn.microsoft.com/library/windows/hardware/ff563031) command to display or change the expression evaluator after the debugger is running.
+-   Use the [**.expr (Choose Expression Evaluator)**](-expr--choose-expression-evaluator-.md) command to display or change the expression evaluator after the debugger is running.
 
 If you do not use one of the preceding methods, the debugger uses the MASM expression evaluator.
 
-If you want to evaluate an expression without changing the debugger state, you can use the [**? (Evaluate Expression)**](https://msdn.microsoft.com/library/windows/hardware/ff566240) command.
+If you want to evaluate an expression without changing the debugger state, you can use the [**? (Evaluate Expression)**](---evaluate-expression-.md) command.
 
 All commands and debugging information windows interpret their arguments through the default expression evaluator, with the following exceptions:
 
--   The [**?? (Evaluate C++ Expression)**](https://msdn.microsoft.com/library/windows/hardware/ff566251) command always uses the C++ expression evaluator.
+-   The [**?? (Evaluate C++ Expression)**](----evaluate-c---expression-.md) command always uses the C++ expression evaluator.
 
 -   The Watch window always uses the C++ expression evaluator.
 
@@ -49,15 +49,15 @@ The two at signs (**@@**) enable you to use two different evaluators for differe
 
  
 
-For more information about the two different expression types, see [Numerical Expression Syntax](https://msdn.microsoft.com/library/windows/hardware/ff552280).
+For more information about the two different expression types, see [Numerical Expression Syntax](numerical-expression-syntax.md).
 
 ### <span id="numbers_in_expressions"></span><span id="NUMBERS_IN_EXPRESSIONS"></span>Numbers in Expressions
 
-Numbers in MASM expressions are interpreted according to the current radix. The [**n (Set Number Base)**](https://msdn.microsoft.com/library/windows/hardware/ff552287) command can be used to set the default radix to 16, 10, or 8. All un-prefixed numbers will be interpreted in this base. The default radix can be overridden by specifying the **0x** prefix (hexadecimal), the **0n** prefix (decimal), the **0t** prefix (octal), or the **0y** prefix (binary).
+Numbers in MASM expressions are interpreted according to the current radix. The [**n (Set Number Base)**](n--set-number-base-.md) command can be used to set the default radix to 16, 10, or 8. All un-prefixed numbers will be interpreted in this base. The default radix can be overridden by specifying the **0x** prefix (hexadecimal), the **0n** prefix (decimal), the **0t** prefix (octal), or the **0y** prefix (binary).
 
 Numbers in C++ expressions are interpreted as decimal numbers unless you specify differently. To specify a hexadecimal integer, add **0x** before the number. To specify an octal integer, add **0** (zero) before the number. (However, in the debugger's *output*, the **0n** decimal prefix is sometimes used.)
 
-If you want to display a number in several bases at the same time, use the [**.formats (Show Number Formats)**](https://msdn.microsoft.com/library/windows/hardware/ff563127) command.
+If you want to display a number in several bases at the same time, use the [**.formats (Show Number Formats)**](-formats--show-number-formats-.md) command.
 
 ### <span id="symbols_in_expressions"></span><span id="SYMBOLS_IN_EXPRESSIONS"></span>Symbols in Expressions
 
@@ -73,19 +73,19 @@ If a symbol might be ambiguous, precede it with the module name and an exclamati
 
 Each expression type uses a different collection of operators.
 
-For more information about the operators that you can use in MASM expressions and their precedence rules, see [MASM Numbers and Operators](https://msdn.microsoft.com/library/windows/hardware/ff552157).
+For more information about the operators that you can use in MASM expressions and their precedence rules, see [MASM Numbers and Operators](masm-numbers-and-operators.md).
 
-For more information about the operators that you can use in C++ expressions and their precedence rules, see [C++ Numbers and Operators](https://msdn.microsoft.com/library/windows/hardware/ff540372).
+For more information about the operators that you can use in C++ expressions and their precedence rules, see [C++ Numbers and Operators](c---numbers-and-operators.md).
 
 Remember that MASM operations are always byte-based, and C++ operations follow C++ type rules (including the scaling of pointer arithmetic).
 
-For some examples of the different syntaxes, see [Expression Examples](https://msdn.microsoft.com/library/windows/hardware/ff543284).
+For some examples of the different syntaxes, see [Expression Examples](expression-examples.md).
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Evaluating%20Expressions%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Evaluating%20Expressions%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

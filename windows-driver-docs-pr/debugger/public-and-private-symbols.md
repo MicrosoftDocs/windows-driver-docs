@@ -58,13 +58,13 @@ In other words, the public symbol data can be thought of as a subset of the priv
 
 There is one other difference between the private symbol data and the public symbol table. Many of the items in the public symbol table have names that are *decorated* with a prefix, a suffix, or both. These decorations are added by the C compiler, the C++ compiler, and the MASM assembler. Typical prefixes include a series of underscores or the string **\_\_imp\_** (designating an imported function). Typical suffixes include one or more at signs ( **@** ) followed by addresses or other identifying strings. These decorations are used by the linker to disambiguate the symbol, since it is possible that function names or global variable names could be repeated across different modules. These decorations are an exception to the general rule that the public symbol table is a subset of the private symbol data.
 
-### Full Symbol Files and Stripped Symbol Files
+### <span id="full_symbol_files_and_stripped_symbol_files"></span><span id="FULL_SYMBOL_FILES_AND_STRIPPED_SYMBOL_FILES"></span>Full Symbol Files and Stripped Symbol Files
 
 A *full symbol file* contains both the private symbol data and the public symbol table. This kind of file is sometimes referred to as a *private symbol file*, but this name is misleading, for such a file contains both private and public symbols.
 
 A *stripped symbol file* is a smaller file that contains only the public symbol table - or, in some cases, only a subset of the public symbol table. This file is sometimes referred to as a *public symbol file*.
 
-### Creating Full and Stripped Symbol Files
+### <span id="creating_full_and_stripped_symbol_files"></span><span id="CREATING_FULL_AND_STRIPPED_SYMBOL_FILES"></span>Creating Full and Stripped Symbol Files
 
 If you build your binaries with Visual Studio, you can create either full or stripped symbol files. When building a "debug build" of a binary, Visual Studio typically will create full symbol files. When building a "retail build", Visual Studio typically creates no symbol files, but a full or stripped symbol file will be created if the proper options are set.
 
@@ -76,7 +76,7 @@ Using the PDBCopy tool, you can create a stripped symbol file from a full symbol
 
 Using the SymChk tool, you can determine whether a symbol file contains private symbols. For details, see [SymChk](symchk.md).
 
-### Viewing Public and Private Symbols in the Debugger
+### <span id="viewing_public_and_private_symbols_in_the_debugger"></span><span id="VIEWING_PUBLIC_AND_PRIVATE_SYMBOLS_IN_THE_DEBUGGER"></span>Viewing Public and Private Symbols in the Debugger
 
 You can use WinDbg, KD, or CDB to view symbols. When one of these debuggers has access to a full symbol file, it has both the information listed in the private symbol data and the information listed in the public symbol table. The private symbol data is more detailed, while the public symbol data contains symbol decorations.
 
@@ -94,7 +94,7 @@ When accessing public symbols, the debugger's behavior depends on certain [symbo
 
 -   When the SYMOPT\_PUBLICS\_ONLY, SYMOPT\_NO\_PUBLICS, and SYMOPT\_AUTO\_PUBLICS options are all off, both private symbol data and the public symbol table are searched each time a symbol is needed. However, when matches are found in both places, the match in the private symbol data is used. Therefore, the behavior in this instance is the same as when SYMOPT\_AUTO\_PUBLICS is on, except that using SYMOPT\_AUTO\_PUBLICS may cause symbol searches to happen slightly faster.
 
-Here is an example in which the command [**x (Examine Symbols)**](https://msdn.microsoft.com/library/windows/hardware/ff561506) is used three times. The first time, the default symbol options are used, and so the information is taken from the private symbol data. Note that this includes information about the address, size, and data type of the array **typingString**. Next, the command .symopt+ 4000 is used, causing the debugger to ignore the private symbol data. When the **x** command is then run again, the public symbol table is used; this time there is no size and data type information for **typingString**. Finally, the command .symopt- 2 is used, which causes the debugger to include decorations. When the **x** command is run this final time, the decorated version of the function name, **\_typingString**, is shown.
+Here is an example in which the command [**x (Examine Symbols)**](x--examine-symbols-.md) is used three times. The first time, the default symbol options are used, and so the information is taken from the private symbol data. Note that this includes information about the address, size, and data type of the array **typingString**. Next, the command .symopt+ 4000 is used, causing the debugger to ignore the private symbol data. When the **x** command is then run again, the public symbol table is used; this time there is no size and data type information for **typingString**. Finally, the command .symopt- 2 is used, which causes the debugger to include decorations. When the **x** command is run this final time, the decorated version of the function name, **\_typingString**, is shown.
 
 ``` syntax
 0:000> x /t /d *!*typingstring* 
@@ -111,7 +111,7 @@ Here is an example in which the command [**x (Examine Symbols)**](https://msdn.m
 00434420 <NoType> TimeTest!_typingString = <no type information> 
 ```
 
-### Viewing Public and Private Symbols with the DBH Tool
+### <span id="viewing_public_and_private_symbols_with_the_dbh_tool"></span><span id="VIEWING_PUBLIC_AND_PRIVATE_SYMBOLS_WITH_THE_DBH_TOOL"></span>Viewing Public and Private Symbols with the DBH Tool
 
 Another way to view symbols is by using the [the DBH tool](dbh.md). DBH uses the same symbol options as the debugger. Like the debugger, DBH leaves [SYMOPT\_PUBLICS\_ONLY](symbol-options.md#symopt-publics-only) and [SYMOPT\_NO\_PUBLICS](symbol-options.md#symopt-no-publics) off by default, and turns [SYMOPT\_UNDNAME](symbol-options.md#symopt-undname) and [SYMOPT\_AUTO\_PUBLICS](symbol-options.md#symopt-auto-publics) on by default. These defaults can be overridden by a command-line option or by a DBH command.
 
@@ -178,7 +178,7 @@ modbase :   400000
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Public%20and%20Private%20Symbols%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Public%20and%20Private%20Symbols%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

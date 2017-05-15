@@ -57,7 +57,7 @@ The SOC\_SUBSYSTEM\_FAILURE bug check has a value of 0x0000014B. This indicates 
 Resolution
 ----------
 
-The [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
 ```
 2: kd> !analyze -v
@@ -89,7 +89,7 @@ Use the provided nt!SOC\_SUBSYSTEM\_FAILURE\_DETAILS structure to dump the failu
 
 Work with SoC vendor to further parse the data, including the optional vendor supplied general purpose data block.
 
-You may want to examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943) command. You can specify the processor number to examine the stacks on all processors.
+You may want to examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command. You can specify the processor number to examine the stacks on all processors.
 
 You can also set a breakpoint in the code leading up to this stop code and attempt to single step forward into the faulting code.
 

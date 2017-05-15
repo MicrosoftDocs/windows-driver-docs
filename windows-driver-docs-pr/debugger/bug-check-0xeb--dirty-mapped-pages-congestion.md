@@ -61,21 +61,21 @@ Cause
 
 The file system driver stack has deadlocked and most of the modified pages are destined for the file system. Because the file system is non-operational, the system has crashed because none of the modified pages can be reused without losing data. Any file system or filter driver in the stack may be at fault.
 
-To see general memory statistics, use the [**!vm 3**](https://msdn.microsoft.com/library/windows/hardware/ff565602) extension.
+To see general memory statistics, use the [**!vm 3**](-vm.md) extension.
 
 This bug check can occur for any of the following reasons:
 
 -   A driver has blocked, deadlocking the modified or mapped page writers. Examples of this include mutex deadlocks or accesses to paged out memory in file system drivers or filter drivers. This indicates a driver bug.
 
-    If Parameter 1 or Parameter 2 is large, this is a possibility. Use [**!vm 3**](https://msdn.microsoft.com/library/windows/hardware/ff565602).
+    If Parameter 1 or Parameter 2 is large, this is a possibility. Use [**!vm 3**](-vm.md).
 
 -   A storage driver is not processing requests. Examples of this are stranded queues and unresponsive drives. This indicates a driver bug.
 
-    If Parameter 1 or Parameter 2 is large, this is a possibility. Use [**!process 0 7**](https://msdn.microsoft.com/library/windows/hardware/ff564717).
+    If Parameter 1 or Parameter 2 is large, this is a possibility. Use [**!process 0 7**](-process.md).
 
 -   Windows Server 2003 only: Not enough pool is available for the storage stack to write out modified pages. This indicates a driver bug.
 
-    If Parameter 3 is small, this is a possibility. Use [**!vm**](https://msdn.microsoft.com/library/windows/hardware/ff565602) and [**!poolused 2**](https://msdn.microsoft.com/library/windows/hardware/ff564700).
+    If Parameter 3 is small, this is a possibility. Use [**!vm**](-vm.md) and [**!poolused 2**](-poolused.md).
 
  
 

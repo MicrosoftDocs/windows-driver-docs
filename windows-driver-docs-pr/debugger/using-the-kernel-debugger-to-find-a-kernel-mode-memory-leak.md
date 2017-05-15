@@ -22,9 +22,9 @@ To determine which pool tag is associated with the leak, it is usually easiest t
 
 Alternatively, you can use the kernel debugger to look for tags associated with large pool allocations. To do so, follow this procedure:
 
-1.  Reload all modules by using the [**.reload (Reload Module)**](https://msdn.microsoft.com/library/windows/hardware/ff564805) command.
+1.  Reload all modules by using the [**.reload (Reload Module)**](-reload--reload-module-.md) command.
 
-2.  Use the [**!poolused**](https://msdn.microsoft.com/library/windows/hardware/ff564700) extension. Include the flag "4" to sort the output by paged memory use:
+2.  Use the [**!poolused**](-poolused.md) extension. Include the flag "4" to sort the output by paged memory use:
     ```
     kd> !poolused 4 
     Sorting by Paged Pool Consumed
@@ -45,20 +45,20 @@ Alternatively, you can use the kernel debugger to look for tags associated with 
 
 After you have determined the pool tag associated with the leak, follow this procedure to locate the leak itself:
 
-1.  Use the [**ed (Enter Values)**](https://msdn.microsoft.com/library/windows/hardware/ff545308) command to modify the value of the global system variable **PoolHitTag**. This global variable causes the debugger to break whenever a pool tag matching its value is used.
+1.  Use the [**ed (Enter Values)**](e--ea--eb--ed--ed--ef--ep--eq--eu--ew--eza--ezu--enter-values-.md) command to modify the value of the global system variable **PoolHitTag**. This global variable causes the debugger to break whenever a pool tag matching its value is used.
 
 2.  Set **PoolHitTag** equal to the tag that you suspect to be the source of the memory leak. The module name "nt" should be specified for faster symbol resolution. The tag value must be entered in little-endian format (that is, backward). Because pool tags are always four characters, this tag is actually A-b-c-space, not merely A-b-c. So use the following command:
     ```
     kd> ed nt!poolhittag &#39; cbA&#39; 
     ```
 
-3.  To verify the current value of **PoolHitTag**, use the [**db (Display Memory)**](https://msdn.microsoft.com/library/windows/hardware/ff542790) command:
+3.  To verify the current value of **PoolHitTag**, use the [**db (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command:
     ```
     kd> db nt!poolhittag L4 
     820f2ba4  41 62 63 20           Abc  
     ```
 
-4.  The debugger will break every time that pool is allocated or freed with the tag **Abc**. Each time the debugger breaks on one of these allocations or free operations, use the [**kb (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943) debugger command to view the stack trace.
+4.  The debugger will break every time that pool is allocated or freed with the tag **Abc**. Each time the debugger breaks on one of these allocations or free operations, use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) debugger command to view the stack trace.
 
 Using this procedure, you can determine which code resident in memory is overallocating pool with the tag **Abc**.
 
@@ -70,13 +70,13 @@ kd> ed nt!poolhittag 0
 
 If there are several different places where memory with this tag is being allocated and these are in an application or driver that you have written, you can alter your source code to use unique tags for each of these allocations.
 
-If you cannot recompile the program but you want to determine which one of several possible locations in the code is causing the leak, you can unassemble the code at each location and use the debugger to edit this code resident in memory so that each instance uses a distinct (and previously unused) pool tag. Then allow the system to run for several minutes or more. After some time has passed, break in again with the debugger and use the [**!poolfind**](https://msdn.microsoft.com/library/windows/hardware/ff564696) extension to find all pool allocations associated with each of the new tags.
+If you cannot recompile the program but you want to determine which one of several possible locations in the code is causing the leak, you can unassemble the code at each location and use the debugger to edit this code resident in memory so that each instance uses a distinct (and previously unused) pool tag. Then allow the system to run for several minutes or more. After some time has passed, break in again with the debugger and use the [**!poolfind**](-poolfind.md) extension to find all pool allocations associated with each of the new tags.
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20the%20Kernel%20Debugger%20to%20Find%20a%20Kernel-Mode%20Memory%20Leak%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20the%20Kernel%20Debugger%20to%20Find%20a%20Kernel-Mode%20Memory%20Leak%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

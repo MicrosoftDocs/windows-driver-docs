@@ -71,9 +71,9 @@ The default search order is as follows:
 
      
 
-When an extension module is unloaded, it is removed from the search chain. When an extension module is loaded, it is added to the beginning of the search order. The [**.setdll (Set Default Extension DLL)**](https://msdn.microsoft.com/library/windows/hardware/ff565337) command can be used to promote any module to the top of the search chain. By using this command repeatedly, you can completely control the search chain.
+When an extension module is unloaded, it is removed from the search chain. When an extension module is loaded, it is added to the beginning of the search order. The [**.setdll (Set Default Extension DLL)**](-setdll--set-default-extension-dll-.md) command can be used to promote any module to the top of the search chain. By using this command repeatedly, you can completely control the search chain.
 
-Use the [**.chain (List Debugger Extensions)**](https://msdn.microsoft.com/library/windows/hardware/ff562212) command to display a list of all loaded extension modules in their current search order.
+Use the [**.chain (List Debugger Extensions)**](-chain--list-debugger-extensions-.md) command to display a list of all loaded extension modules in their current search order.
 
 If you attempt to execute an extension command that is not in any of the loaded extension modules, you will get an Export Not Found error message.
 
@@ -81,7 +81,7 @@ If you attempt to execute an extension command that is not in any of the loaded 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20Debugger%20Extension%20Commands%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20Debugger%20Extension%20Commands%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

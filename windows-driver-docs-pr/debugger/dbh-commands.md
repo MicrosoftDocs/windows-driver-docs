@@ -158,11 +158,11 @@ The following table lists the commands that parse the module list and control th
 </tr>
 <tr class="even">
 <td align="left"><p><strong>obj</strong> <em>Mask</em></p></td>
-<td align="left"><p>Lists all object files associated with the default module that match the specified pattern. <em>Mask</em> may contain a variety of wildcard characters and specifiers; see [String Wildcard Syntax](https://msdn.microsoft.com/library/windows/hardware/ff558819) for details.</p></td>
+<td align="left"><p>Lists all object files associated with the default module that match the specified pattern. <em>Mask</em> may contain a variety of wildcard characters and specifiers; see [String Wildcard Syntax](string-wildcard-syntax.md) for details.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>src</strong> <em>Mask</em></p></td>
-<td align="left"><p>Lists all source files associated with the default module that match the specified pattern. <em>Mask</em> may contain a variety of wildcard characters and specifiers; see [String Wildcard Syntax](https://msdn.microsoft.com/library/windows/hardware/ff558819) for details.</p></td>
+<td align="left"><p>Lists all source files associated with the default module that match the specified pattern. <em>Mask</em> may contain a variety of wildcard characters and specifiers; see [String Wildcard Syntax](string-wildcard-syntax.md) for details.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>enummod</strong></p></td>
@@ -189,7 +189,7 @@ The following table lists the commands that display and search for symbols.
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>enum</strong> <em>Module</em><strong>!</strong><em>Symbol</em></p></td>
-<td align="left"><p>Enumerates all symbols matching the specified module and symbol. <em>Module</em> specifies the module to search (without the file name extension). <em>Symbol</em> specifies a pattern that the symbol must contain. Both <em>Module</em> and <em>Symbol</em> may contain a variety of wildcard characters and specifiers; see [String Wildcard Syntax](https://msdn.microsoft.com/library/windows/hardware/ff558819) for details.</p></td>
+<td align="left"><p>Enumerates all symbols matching the specified module and symbol. <em>Module</em> specifies the module to search (without the file name extension). <em>Symbol</em> specifies a pattern that the symbol must contain. Both <em>Module</em> and <em>Symbol</em> may contain a variety of wildcard characters and specifiers; see [String Wildcard Syntax](string-wildcard-syntax.md) for details.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>enumaddr</strong> <em>Address</em></p></td>
@@ -235,7 +235,7 @@ The following table lists the commands that display and search for symbols.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>locals</strong> <em>Function</em> [<em>Mask</em>]</p></td>
-<td align="left"><p>Displays all local variables contained within the specified function. If <em>Mask</em> is included, only those locals matching the specified pattern are displayed; see [String Wildcard Syntax](https://msdn.microsoft.com/library/windows/hardware/ff558819) for details.</p></td>
+<td align="left"><p>Displays all local variables contained within the specified function. If <em>Mask</em> is included, only those locals matching the specified pattern are displayed; see [String Wildcard Syntax](string-wildcard-syntax.md) for details.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>type</strong> <em>TypeName</em></p></td>
@@ -243,7 +243,7 @@ The following table lists the commands that display and search for symbols.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>elines</strong> [<em>Source</em> [<em>Obj</em>]]</p></td>
-<td align="left"><p>Enumerates all source lines matching the specified source mask and object mask. <em>Source</em> specifies the name of the source file, including the absolute path and file name extension. <em>Obj</em> specifies the name of the object file, including the relative path and file name extension. Both <em>Source</em> and <em>Obj</em> may contain a variety of wildcard characters and specifiers; see [String Wildcard Syntax](https://msdn.microsoft.com/library/windows/hardware/ff558819) for details. If a parameter is omitted this is equivalent to using the asterisk (<strong>*</strong>) wildcard. If you do not wish to specify path information, prefix the file name with <strong>*\</strong> to indicate a wildcard path.</p></td>
+<td align="left"><p>Enumerates all source lines matching the specified source mask and object mask. <em>Source</em> specifies the name of the source file, including the absolute path and file name extension. <em>Obj</em> specifies the name of the object file, including the relative path and file name extension. Both <em>Source</em> and <em>Obj</em> may contain a variety of wildcard characters and specifiers; see [String Wildcard Syntax](string-wildcard-syntax.md) for details. If a parameter is omitted this is equivalent to using the asterisk (<strong>*</strong>) wildcard. If you do not wish to specify path information, prefix the file name with <strong>*\</strong> to indicate a wildcard path.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>index</strong> <em>Value</em></p></td>
@@ -256,7 +256,7 @@ The following table lists the commands that display and search for symbols.
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>srch</strong> [<strong>mask=</strong><em>Symbol</em>] [<strong>index=</strong><em>Index</em>] [<strong>tag=</strong><em>Tag</em>] [<strong>addr=</strong><em>Address</em>] [<strong>globals</strong>]</p></td>
-<td align="left"><p>Searches for all symbols that match the specified masks. <em>Symbol</em> specifies the symbol name. It should not include the module name, but it may contain wildcard characters and specifiers; see [String Wildcard Syntax](https://msdn.microsoft.com/library/windows/hardware/ff558819) for details. <em>Index</em> specifies the hexadecimal address of a symbol to be used as the parent for the search. <em>Tag</em> specifies the hexadecimal symbol type classifier (<strong>SymTag</strong><em>Xxx</em>) value that must match the symbol. <em>Address</em> specifies the address of the symbol. If <strong>globals</strong> is included, only global symbols will be displayed.</p></td>
+<td align="left"><p>Searches for all symbols that match the specified masks. <em>Symbol</em> specifies the symbol name. It should not include the module name, but it may contain wildcard characters and specifiers; see [String Wildcard Syntax](string-wildcard-syntax.md) for details. <em>Index</em> specifies the hexadecimal address of a symbol to be used as the parent for the search. <em>Tag</em> specifies the hexadecimal symbol type classifier (<strong>SymTag</strong><em>Xxx</em>) value that must match the symbol. <em>Address</em> specifies the address of the symbol. If <strong>globals</strong> is included, only global symbols will be displayed.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>uw</strong> <em>Address</em></p></td>
@@ -362,7 +362,7 @@ The following table lists the DBH commands that apply to real and imaginary symb
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20DBH%20Commands%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20DBH%20Commands%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -13,7 +13,7 @@ keywords: ["process, debugging noninvasively", "noninvasive debugging"]
 
 If a user-mode application is already running, the debugger can debug it *noninvasively*. With noninvasive debugging, you do not have as many debugging actions. However, you can minimize the debugger's interference with the target application. Noninvasive debugging is useful if the target application has stopped responding.
 
-In noninvasive debugging, the debugger does not actually attach to the target application. The debugger suspends all of the target's threads and has access to the target's memory, registers, and other such information. However, the debugger cannot control the target, so commands like [**g (Go)**](https://msdn.microsoft.com/library/windows/hardware/ff549693) do not work.
+In noninvasive debugging, the debugger does not actually attach to the target application. The debugger suspends all of the target's threads and has access to the target's memory, registers, and other such information. However, the debugger cannot control the target, so commands like [**g (Go)**](g--go-.md) do not work.
 
 If you try to execute commands that are not permitted during noninvasive debugging, you receive an error message that states, "The debugger is not attached, so process execution cannot be monitored."
 
@@ -41,7 +41,7 @@ Or, to noninvasively debug a running process by specifying the process name, use
 
 **cdb -pv -pn** *ProcessName*
 
-There are several other useful command-line options. For more information about the command-line syntax, see [**CDB Command-Line Options**](https://msdn.microsoft.com/library/windows/hardware/ff539058).
+There are several other useful command-line options. For more information about the command-line syntax, see [**CDB Command-Line Options**](cdb-command-line-options.md).
 
 ### <span id="windbg_command_line"></span><span id="WINDBG_COMMAND_LINE"></span>WinDbg Command Line
 
@@ -53,7 +53,7 @@ Or, to noninvasively debug a running process by specifying the process name, use
 
 **windbg -pv -pn** *ProcessName*
 
-There are several other useful command-line options. For more information about the command-line syntax, see [**WinDbg Command-Line Options**](https://msdn.microsoft.com/library/windows/hardware/ff561306).
+There are several other useful command-line options. For more information about the command-line syntax, see [**WinDbg Command-Line Options**](windbg-command-line-options.md).
 
 ### <span id="windbg_menu"></span><span id="WINDBG_MENU"></span>WinDbg Menu
 
@@ -63,7 +63,7 @@ When the Attach to Process dialog box appears, select the Noninvasive check box.
 
 ### <span id="debugger_command_window"></span><span id="DEBUGGER_COMMAND_WINDOW"></span>Debugger Command Window
 
-If the debugger is already active, you can noninvasively debug a running process by using the [**.attach -v (Attach to Process)**](https://msdn.microsoft.com/library/windows/hardware/ff562135) command in the [Debugger Command window](the-debugger-command-window.md).
+If the debugger is already active, you can noninvasively debug a running process by using the [**.attach -v (Attach to Process)**](-attach--attach-to-process-.md) command in the [Debugger Command window](the-debugger-command-window.md).
 
 You can use the .attach command if the debugger is already debugging one or more processes invasively. You can use this command in CDB if it is dormant, but not in a dormant WinDbg.
 
@@ -77,7 +77,7 @@ For more information about how to begin a debugging session, see [Debugger Opera
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Noninvasive%20Debugging%20%28User%20Mode%29%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Noninvasive%20Debugging%20%28User%20Mode%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

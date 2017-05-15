@@ -544,7 +544,7 @@ The value of Parameter 1 indicates the error.
 Resolution
 ----------
 
-If you are debugging this error, use the [**!analyze -v**](https://msdn.microsoft.com/library/windows/hardware/ff562112) extension. This extension displays all the relevant data (device extensions, nsobjects, or whatever is appropriate to the specific error).
+If you are debugging this error, use the [**!analyze -v**](-analyze.md) extension. This extension displays all the relevant data (device extensions, nsobjects, or whatever is appropriate to the specific error).
 
 If you are not performing debugging, this error indicates that you have to obtain a new BIOS. Contact your vendor or visit the internet to get a new BIOS.
 

@@ -69,7 +69,7 @@ Resolution
 
 **Debugging the problem:** The following method can be used to debug bug check 0x3F.
 
-First, get a stack trace, and use the [**!sysptes 3**](https://msdn.microsoft.com/library/windows/hardware/ff565417) extension command.
+First, get a stack trace, and use the [**!sysptes 3**](-sysptes.md) extension command.
 
 Then set **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Memory Management\\TrackPtes** equal to DWORD 1, and reboot. This will cause the system to save stack traces.
 

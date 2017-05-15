@@ -36,7 +36,7 @@ The WORKER\_THREAD\_RETURNED\_WITH\_BAD\_PAGING\_IO\_PRIORITY bug check has a va
 <tr class="odd">
 <td align="left">1</td>
 <td align="left"><p>Address of worker routine</p>
-<p>Use the [<strong>ln (List Nearest Symbols)</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552029) command on this address to find the offending driver.</p></td>
+<p>Use the [<strong>ln (List Nearest Symbols)</strong>](ln--list-nearest-symbols-.md) command on this address to find the offending driver.</p></td>
 </tr>
 <tr class="even">
 <td align="left">2</td>

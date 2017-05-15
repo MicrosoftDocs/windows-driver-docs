@@ -66,7 +66,7 @@ Resolution
 
 Make sure that the driver matches calls to the routines that increase and decrease the reference count of the object. Make sure that your driver does not make extra calls to routines that dereference the object (see Parameter 2).
 
-You can use a debugger to help analyze this problem. For more information, see [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md). The [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+You can use a debugger to help analyze this problem. For more information, see [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md). The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
 To find the handle and pointer count on the object, use the **!object** debugger command.
 

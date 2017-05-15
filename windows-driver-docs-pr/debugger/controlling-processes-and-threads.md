@@ -23,9 +23,9 @@ In kernel-mode debugging, processes and threads are not controlled by the method
 
 To display process and thread information, you can use the following methods:
 
--   The [**| (Process Status)**](https://msdn.microsoft.com/library/windows/hardware/ff566242) command
+-   The [**| (Process Status)**](---process-status-.md) command
 
--   The [**~ (Thread Status)**](https://msdn.microsoft.com/library/windows/hardware/ff566245) command
+-   The [**~ (Thread Status)**](---thread-status-.md) command
 
 -   (WinDbg only) The [Processes and Threads window](processes-and-threads-window.md)
 
@@ -33,9 +33,9 @@ To display process and thread information, you can use the following methods:
 
 To change the current process or thread, you can use the following methods:
 
--   The [**|s (Set Current Process)**](https://msdn.microsoft.com/library/windows/hardware/ff565423) command
+-   The [**|s (Set Current Process)**](-s--set-current-process-.md) command
 
--   The [**~s (Set Current Thread)**](https://msdn.microsoft.com/library/windows/hardware/ff565430) command
+-   The [**~s (Set Current Thread)**](-s--set-current-thread-.md) command
 
 -   (WinDbg only) The [Processes and Threads window](processes-and-threads-window.md)
 
@@ -49,9 +49,9 @@ Typically, each thread has a suspend count of zero. When the debugger attaches t
 
 You can control the suspend count of any thread from the debugger by using the following methods:
 
--   The [**~n (Suspend Thread)**](https://msdn.microsoft.com/library/windows/hardware/ff564580) command increments the specified thread's suspend count by one.
+-   The [**~n (Suspend Thread)**](-n--suspend-thread-.md) command increments the specified thread's suspend count by one.
 
--   The [**~m (Resume Thread)**](https://msdn.microsoft.com/library/windows/hardware/ff564090) command decrements the specified thread's suspend count by one.
+-   The [**~m (Resume Thread)**](-m--resume-thread-.md) command decrements the specified thread's suspend count by one.
 
 The most common use for these commands is to raise a specific thread's suspend count from one to two. When the debugger executes or detaches from the process, the thread then has a suspend count of one and remains suspended, even if other threads in the process are executing.
 
@@ -63,9 +63,9 @@ By default, all threads are unfrozen. When the debugger causes a process to exec
 
 To freeze and unfreeze individual threads, you can use the following methods:
 
--   The [**~f (Freeze Thread)**](https://msdn.microsoft.com/library/windows/hardware/ff563161) command freezes the specified thread.
+-   The [**~f (Freeze Thread)**](-f--freeze-thread-.md) command freezes the specified thread.
 
--   The [**~u (Unfreeze Thread)**](https://msdn.microsoft.com/library/windows/hardware/ff565571) command unfreezes the specified thread.
+-   The [**~u (Unfreeze Thread)**](-u--unfreeze-thread-.md) command unfreezes the specified thread.
 
 In any event, threads that belong to the target process never execute when the debugger has broken into the target. The suspend count of a thread affects the thread's behavior only when the debugger executes the process or detaches. The frozen status affects the thread's behavior only when the debugger executes the process.
 
@@ -73,7 +73,7 @@ In any event, threads that belong to the target process never execute when the d
 
 You can add thread specifiers or process specifiers before many other commands. For more information, see the individual command topics.
 
-You can add the [**~e (Thread-Specific Command)**](https://msdn.microsoft.com/library/windows/hardware/ff563050) qualifier before many commands and extension commands. This qualifier causes the command to be executed with respect to the specified thread. This qualifier is especially useful if you want to apply a command to more than one thread. For example, the following command repeats the [**!gle**](https://msdn.microsoft.com/library/windows/hardware/ff563177) extension command for every thread that is being debugged.
+You can add the [**~e (Thread-Specific Command)**](-e--thread-specific-command-.md) qualifier before many commands and extension commands. This qualifier causes the command to be executed with respect to the specified thread. This qualifier is especially useful if you want to apply a command to more than one thread. For example, the following command repeats the [**!gle**](-gle.md) extension command for every thread that is being debugged.
 
 ``` syntax
 ~*e !gle 
@@ -87,7 +87,7 @@ The debugger can attach to multiple targets at the same time. When these process
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Controlling%20Processes%20and%20Threads%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Controlling%20Processes%20and%20Threads%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -62,9 +62,9 @@ The most common cause of this bug check is when a file system or driver has a mi
 Resolution
 ----------
 
-The [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
-You can use the [**!apc**](https://msdn.microsoft.com/library/windows/hardware/ff562117) extension to displays the contents of one or more asynchronous procedure calls (APCs).
+You can use the [**!apc**](-apc.md) extension to displays the contents of one or more asynchronous procedure calls (APCs).
 
 You can also set a breakpoint in the code leading up to this stop code and attempt to single step forward into the faulting code.
 

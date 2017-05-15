@@ -25,7 +25,7 @@ For each directory in the symbol path, the debugger looks in three directories. 
 
 Symbol files have date and time stamps. You do not have to worry that the debugger will use the wrong symbols that it may find first in this sequence. It always looks for the symbols that match the time stamp on the binary files that it is debugging. For more information about responses when symbols files are not available, see [Compensating for Symbol-Matching Problems](matching-symbol-names.md).
 
-One way to set the symbol path is by entering the [**.sympath**](https://msdn.microsoft.com/library/windows/hardware/ff565407) command. For other ways to set the symbol path, see [Controlling the Symbol Path](#controlling-the-symbol-path) later in this topic.
+One way to set the symbol path is by entering the [**.sympath**](-sympath--set-symbol-path-.md) command. For other ways to set the symbol path, see [Controlling the Symbol Path](#controlling-the-symbol-path) later in this topic.
 
 ## <span id="Caching_Symbols_Locally"></span><span id="caching_symbols_locally"></span><span id="CACHING_SYMBOLS_LOCALLY"></span>Caching Symbols Locally
 
@@ -106,13 +106,13 @@ For more information about symbol servers and symbol stores, see [Symbol Stores 
 
 The debugger's default behavior is to use *lazy symbol loading* (also known as *deferred symbol loading*). This kind of loading means that symbols are not loaded until they are required.
 
-When the symbol path is changed, for example by using the [**.sympath**](https://msdn.microsoft.com/library/windows/hardware/ff565407) command, all loaded modules with export symbols are lazily reloaded.
+When the symbol path is changed, for example by using the [**.sympath**](-sympath--set-symbol-path-.md) command, all loaded modules with export symbols are lazily reloaded.
 
 Symbols of modules with full PDB symbols will be lazily reloaded if the new path no longer includes the original path that was used to load the PDB symbols. If the new path still includes the original path to the PDB symbol file, those symbols will not be lazily reloaded.
 
 For more information about lazy symbol loading, see [Deferred Symbol Loading](deferred-symbol-loading.md).
 
-You can turn off lazy symbol loading in CDB and KD by using the **-s**[command-line option](https://msdn.microsoft.com/library/windows/hardware/ff539174). You can also force symbol loading by using the [**ld (Load Symbols)**](https://msdn.microsoft.com/library/windows/hardware/ff551979) command or by using the [**.reload (Reload Module)**](https://msdn.microsoft.com/library/windows/hardware/ff564805) command together with the **/f** option.
+You can turn off lazy symbol loading in CDB and KD by using the **-s**[command-line option](command-line-options.md). You can also force symbol loading by using the [**ld (Load Symbols)**](ld--load-symbols-.md) command or by using the [**.reload (Reload Module)**](-reload--reload-module-.md) command together with the **/f** option.
 
 ## <span id="ddk_symbol_path_dbg"></span><span id="DDK_SYMBOL_PATH_DBG"></span>
 
@@ -121,15 +121,15 @@ You can turn off lazy symbol loading in CDB and KD by using the **-s**[command-l
 
 To control the symbol path, you can do one of the following:
 
--   Use the [**.sympath**](https://msdn.microsoft.com/library/windows/hardware/ff565407) command to display, set, change, or append to the path. The [**.symfix (Set Symbol Store Path)**](https://msdn.microsoft.com/library/windows/hardware/ff565400) command is similar to **.sympath** but saves you some typing.
+-   Use the [**.sympath**](-sympath--set-symbol-path-.md) command to display, set, change, or append to the path. The [**.symfix (Set Symbol Store Path)**](-symfix--set-symbol-store-path-.md) command is similar to **.sympath** but saves you some typing.
 
--   Before you start the debugger, use the \_NT\_SYMBOL\_PATH and \_NT\_ALT\_SYMBOL\_PATH [environment variables](https://msdn.microsoft.com/library/windows/hardware/ff543043) to set the path. The symbol path is created by appending \_NT\_SYMBOL\_PATH after \_NT\_ALT\_SYMBOL\_PATH. (Typically, the path is set through the \_NT\_SYMBOL\_PATH. However, you might want to use \_NT\_ALT\_SYMBOL\_PATH to override these settings in special cases, such as if you have private versions of shared symbol files.) If you try to add an invalid directory through these environment variables, the debugger ignores this directory.
+-   Before you start the debugger, use the \_NT\_SYMBOL\_PATH and \_NT\_ALT\_SYMBOL\_PATH [environment variables](environment-variables.md) to set the path. The symbol path is created by appending \_NT\_SYMBOL\_PATH after \_NT\_ALT\_SYMBOL\_PATH. (Typically, the path is set through the \_NT\_SYMBOL\_PATH. However, you might want to use \_NT\_ALT\_SYMBOL\_PATH to override these settings in special cases, such as if you have private versions of shared symbol files.) If you try to add an invalid directory through these environment variables, the debugger ignores this directory.
 
--   When you start the debugger, use the **-y**[command-line option](https://msdn.microsoft.com/library/windows/hardware/ff539174) to set the path.
+-   When you start the debugger, use the **-y**[command-line option](command-line-options.md) to set the path.
 
--   (WinDbg only) Use the [File | Symbol File Path](https://msdn.microsoft.com/library/windows/hardware/ff545390) command or press **CTRL+S** to display, set, change, or append to the path.
+-   (WinDbg only) Use the [File | Symbol File Path](file---symbol-file-path.md) command or press **CTRL+S** to display, set, change, or append to the path.
 
-If you use the **-sins**[command-line option](https://msdn.microsoft.com/library/windows/hardware/ff539174), the debugger ignores the symbol path environment variable.
+If you use the **-sins**[command-line option](command-line-options.md), the debugger ignores the symbol path environment variable.
 
 ## <span id="related_topics"></span>Related topics
 
@@ -140,7 +140,7 @@ If you use the **-sins**[command-line option](https://msdn.microsoft.com/library
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Symbol%20path%20for%20Windows%20debuggers%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Symbol%20path%20for%20Windows%20debuggers%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

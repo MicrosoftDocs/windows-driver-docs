@@ -45,7 +45,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>0x01</p></td>
 <td align="left"><p>NDIS_BUGCHECK_MINIPORT_FATAL_ERROR</p>
 <p>A miniport driver has encountered a fatal error and requested re-enumeration.</p></td>
-<td align="left"><p>The address of the miniport block. Run [<strong>!ndiskd.minidriver</strong>](https://msdn.microsoft.com/library/windows/hardware/mt782496) with this address for more information.</p></td>
+<td align="left"><p>The address of the miniport block. Run [<strong>!ndiskd.minidriver</strong>](-ndiskd-minidriver.md) with this address for more information.</p></td>
 <td align="left"><p>The address of the miniport's Physical Device Object (PDO)</p></td>
 <td align="left"><p>The fatal error that caused this live dump to be taken. Possible values:</p>
 <ol>
@@ -62,7 +62,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>NDIS_BUGCHECK_WATCHDOG</p>
 <p>An attempt to manage the network stack has taken too long. When NDIS calls out into other drivers, NDIS starts a watchdog timer to ensure the call completes promptly. If the call takes too long, NDIS injects a bugcheck.</p>
 <p>This can be caused by a simple deadlock. Look with &quot;!stacks 2 ndis&quot; or similar to see if any threads look suspicious. Pay special attention to the PrimaryThread from the NDIS_WATCHDOG_TRIAGE_BLOCK.</p>
-<p>This can be caused by lost NBLs, in which case [<strong>!ndiskd.pendingnbls</strong>](https://msdn.microsoft.com/library/windows/hardware/mt799825) may help. Check for OIDs that are stuck using [<strong>!ndiskd.oid</strong>](https://msdn.microsoft.com/library/windows/hardware/mt799824).</p></td>
+<p>This can be caused by lost NBLs, in which case [<strong>!ndiskd.pendingnbls</strong>](-ndiskd-pendingnbls.md) may help. Check for OIDs that are stuck using [<strong>!ndiskd.oid</strong>](-ndiskd-oid.md).</p></td>
 <td align="left"><p>The operation that took too long. Possible values:</p>
 <ul>
 <li><p>0x01 : NDIS_BUGCHECK_WATCHDOG_PROTOCOL_PAUSE</p>
@@ -98,23 +98,23 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <ul>
 <li><strong>StartTime</strong> shows what time the operation started, in 100ns units, as returned by KeQueryInterruptTime.</li>
 <li><strong>TimeoutMilliseconds</strong> shows how long NDIS waited, at a minimum, before triggering this bugcheck.</li>
-<li><strong>TargetObject</strong> is a handle to the protocol, filter module, or miniport adapter that NDIS is waiting on. Run [<strong>!ndiskd.protocol</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564546), [<strong>!ndiskd.filter</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564109), or [<strong>!ndiskd.netadapter</strong>](https://msdn.microsoft.com/library/windows/hardware/mt799821) with this handle for more information.</li>
+<li><strong>TargetObject</strong> is a handle to the protocol, filter module, or miniport adapter that NDIS is waiting on. Run [<strong>!ndiskd.protocol</strong>](-ndiskd-protocol.md), [<strong>!ndiskd.filter</strong>](-ndiskd-filter.md), or [<strong>!ndiskd.netadapter</strong>](-ndiskd-netadapter.md) with this handle for more information.</li>
 <li><strong>PrimaryThread</strong> is the thread on which NDIS initiated the operation. Usually, this is the first place to look, although the thread may have gone elsewhere if the operation is being handled asynchronously.</li>
 </ul></td>
 <td align="left"><p>The value of Parameter 4 depends on the value of Parameter 2. Each number in this list corresponds to the same number in Parameter 2.</p>
 <ul>
 <li>0x01 : 0</li>
 <li>0x02 : The NET_PNP_EVENT_CODE of the stuck event. For more information about these codes, see [<strong>NET_PNP_EVENT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568751)..</li>
-<li>0x03 : The NDIS_STATUS code of the stuck indication. Use [<strong>!ndiskd.help</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564124) to decode it.</li>
+<li>0x03 : The NDIS_STATUS code of the stuck indication. Use [<strong>!ndiskd.help</strong>](-ndiskd-help.md) to decode it.</li>
 <li>0x04 : 0</li>
 <li>0x11 : 0</li>
 <li>0x12 : The NET_PNP_EVENT_CODE of the stuck event. For possible values, see the previous list of values for item 2 in this list.</li>
-<li>0x13 : The NDIS_STATUS code of the stuck indication. Use [<strong>!ndiskd.help</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564124) to decode it.</li>
+<li>0x13 : The NDIS_STATUS code of the stuck indication. Use [<strong>!ndiskd.help</strong>](-ndiskd-help.md) to decode it.</li>
 <li>0x14 : 0</li>
 <li>0x21 : 0</li>
 <li>0x22 : 0</li>
-<li>0x23 : The OID code of the stuck request. Use [<strong>!ndiskd.help</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564124) to decode it.</li>
-<li>0x24 : The OID code of the stuck request. Use [<strong>!ndiskd.help</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564124) to decode it.</li>
+<li>0x23 : The OID code of the stuck request. Use [<strong>!ndiskd.help</strong>](-ndiskd-help.md) to decode it.</li>
+<li>0x24 : The OID code of the stuck request. Use [<strong>!ndiskd.help</strong>](-ndiskd-help.md) to decode it.</li>
 <li>0x25 : 0</li>
 <li>0x26 : 0</li>
 </ul></td>
@@ -123,7 +123,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>0x30</p></td>
 <td align="left"><p>NDIS_BUGCHECK_STUCK_NBL</p>
 <p>A miniport driver has not returned a NBL back to the stack for some time.</p></td>
-<td align="left"><p>The address of the miniport block. Run [<strong>!ndiskd.minidriver</strong>](https://msdn.microsoft.com/library/windows/hardware/mt782496) with this address for more information.</p></td>
+<td align="left"><p>The address of the miniport block. Run [<strong>!ndiskd.minidriver</strong>](-ndiskd-minidriver.md) with this address for more information.</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>0</p></td>
 </tr>

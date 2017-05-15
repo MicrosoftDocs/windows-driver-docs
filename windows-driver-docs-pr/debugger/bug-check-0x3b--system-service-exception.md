@@ -59,7 +59,7 @@ Cause
 
 The stop code indicates that executing code had an exception and the thread that was below it, is a system thread.
 
-The [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
 For more information see the following topics:
 
@@ -67,14 +67,14 @@ For more information see the following topics:
 
 [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
-[Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](https://msdn.microsoft.com/library/windows/hardware/ff562112)
+[Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)
 
 In the past, this error has been linked to excessive paged pool usage and may occur due to user-mode graphics drivers crossing over and passing bad data to the kernel code. If you suspect this is the case, use the pool options in driver verifier to gather additional information.
 
 Resolution
 ----------
 
-**To debug this problem:** Use the [**.cxr (Display Context Record)**](https://msdn.microsoft.com/library/windows/hardware/ff562301) command with Parameter 3, and then use [**kb (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943). You can also set a breakpoint in the code leading up to this stop code and attempt to single step forward into the faulting code.
+**To debug this problem:** Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command with Parameter 3, and then use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md). You can also set a breakpoint in the code leading up to this stop code and attempt to single step forward into the faulting code.
 
 For general troubleshooting of Windows bug check codes, follow these suggestions:
 

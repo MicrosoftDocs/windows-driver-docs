@@ -18,11 +18,11 @@ The symbol path specifies the directories where the symbol files are located. Fo
 
 To control the symbol path in CDB, do one of the following:
 
--   Enter the [**.sympath (Set Symbol Path)**](https://msdn.microsoft.com/library/windows/hardware/ff565407) command. If you are using a symbol server, the [**.symfix (Set Symbol Store Path)**](https://msdn.microsoft.com/library/windows/hardware/ff565400) command is similar to .sympath but saves you typing.
+-   Enter the [**.sympath (Set Symbol Path)**](-sympath--set-symbol-path-.md) command. If you are using a symbol server, the [**.symfix (Set Symbol Store Path)**](-symfix--set-symbol-store-path-.md) command is similar to .sympath but saves you typing.
 
--   When you start the debugger, use the **-y** command-line option. See [**CDB Command-Line Options**](https://msdn.microsoft.com/library/windows/hardware/ff539058).
+-   When you start the debugger, use the **-y** command-line option. See [**CDB Command-Line Options**](cdb-command-line-options.md).
 
--   Before you start the debugger, use the \_NT\_SYMBOL\_PATH and \_NT\_ALT\_SYMBOL\_PATH [environment variables](https://msdn.microsoft.com/library/windows/hardware/ff543043) to set the path. The symbol path is created by appending \_NT\_SYMBOL\_PATH after \_NT\_ALT\_SYMBOL\_PATH. (Typically, the path is set through the \_NT\_SYMBOL\_PATH. However, you might want to use \_NT\_ALT\_SYMBOL\_PATH to override these settings in special cases, such as when you have private versions of shared symbol files.)
+-   Before you start the debugger, use the \_NT\_SYMBOL\_PATH and \_NT\_ALT\_SYMBOL\_PATH [environment variables](environment-variables.md) to set the path. The symbol path is created by appending \_NT\_SYMBOL\_PATH after \_NT\_ALT\_SYMBOL\_PATH. (Typically, the path is set through the \_NT\_SYMBOL\_PATH. However, you might want to use \_NT\_ALT\_SYMBOL\_PATH to override these settings in special cases, such as when you have private versions of shared symbol files.)
 
     **Note**  If you use the **-sins** command-line option, the debugger ignores the symbol path environment variable.
 
@@ -49,11 +49,11 @@ The debugger's executable image path is a string that consists of multiple direc
 
 To control the executable image path in CDB, do one of the following:
 
--   Enter the [**.exepath (Set Executable Path)**](https://msdn.microsoft.com/library/windows/hardware/ff563029) command.
+-   Enter the [**.exepath (Set Executable Path)**](-exepath--set-executable-path-.md) command.
 
--   When you start the debugger, use the **-i** command-line option. See [**CDB Command-Line Options**](https://msdn.microsoft.com/library/windows/hardware/ff539058).
+-   When you start the debugger, use the **-i** command-line option. See [**CDB Command-Line Options**](cdb-command-line-options.md).
 
--   Before you start the debugger, use the \_NT\_EXECUTABLE\_IMAGE\_PATH [environment variable](https://msdn.microsoft.com/library/windows/hardware/ff543043) to set the path.
+-   Before you start the debugger, use the \_NT\_EXECUTABLE\_IMAGE\_PATH [environment variable](environment-variables.md) to set the path.
 
     **Note**  If you use the **-sins** command-line option, the debugger ignores the executable image path environment variable.
 
@@ -63,7 +63,7 @@ To control the executable image path in CDB, do one of the following:
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Setting%20Symbol%20and%20Executable%20Image%20Paths%20in%20CDB%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Setting%20Symbol%20and%20Executable%20Image%20Paths%20in%20CDB%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

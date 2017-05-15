@@ -21,11 +21,11 @@ Suppose you are debugging a target computer on which the MyApp.exe process is ru
 
 **Converting a virtual address to a physical address using !vtop**
 
-1.  Make sure that you are working in hexadecimal. If necessary, set the current base with the [**N 16**](https://msdn.microsoft.com/library/windows/hardware/ff552287) command.
+1.  Make sure that you are working in hexadecimal. If necessary, set the current base with the [**N 16**](n--set-number-base-.md) command.
 
 2.  Determine the *byte index* of the address. This number is equal to the lowest 12 bits of the virtual address. Thus, the virtual address 0x0012F980 has a byte index of 0x980.
 
-3.  Determine the *directory base* of the address by using the [**!process**](https://msdn.microsoft.com/library/windows/hardware/ff564717) extension:
+3.  Determine the *directory base* of the address by using the [**!process**](-process.md) extension:
 
     ``` syntax
     kd> !process 0 0
@@ -38,7 +38,7 @@ Suppose you are debugging a target computer on which the MyApp.exe process is ru
 
 4.  Determine the *page frame number* of the directory base. This is simply the directory base without the three trailing hexadecimal zeros. In this example, the directory base is 0x098FD000, so the page frame number is 0x098FD.
 
-5.  Use the [**!vtop**](https://msdn.microsoft.com/library/windows/hardware/ff565616) extension. The first parameter of this extension should be the page frame number. The second parameter of **!vtop** should be the virtual address in question:
+5.  Use the [**!vtop**](-vtop.md) extension. The first parameter of this extension should be the page frame number. The second parameter of **!vtop** should be the virtual address in question:
 
     ``` syntax
     kd> !vtop 98fd 12f980
@@ -50,7 +50,7 @@ Suppose you are debugging a target computer on which the MyApp.exe process is ru
 
 6.  Add the byte index to the address of the beginning of the page: 0x09DE9000 + 0x980 = 0x09DE9980. This is the desired physical address.
 
-You can verify that this computation was done correctly by displaying the memory at each address. The [**!d\***](https://msdn.microsoft.com/library/windows/hardware/ff562317) extension displays memory at a specified physical address:
+You can verify that this computation was done correctly by displaying the memory at each address. The [**!d\***](-db---dc---dd---dp---dq---du---dw.md) extension displays memory at a specified physical address:
 
 ``` syntax
 kd> !dc 9de9980
@@ -60,7 +60,7 @@ kd> !dc 9de9980
 # 9de99b0 .....
 ```
 
-The [**d\* (Display Memory)**](https://msdn.microsoft.com/library/windows/hardware/ff542790) command uses a virtual address as its argument:
+The [**d\* (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command uses a virtual address as its argument:
 
 ``` syntax
 kd> dc 12f980
@@ -78,7 +78,7 @@ Again, assume you are investigating the virtual address 0x0012F980 belonging to 
 
 **Converting a virtual address to a physical address using !pte**
 
-1.  Make sure that you are working in hexadecimal. If necessary, set the current base with the [**N 16**](https://msdn.microsoft.com/library/windows/hardware/ff552287) command.
+1.  Make sure that you are working in hexadecimal. If necessary, set the current base with the [**N 16**](n--set-number-base-.md) command.
 
 2.  Determine the *byte index* of the address. This number is equal to the lowest 12 bits of the virtual address. Thus, the virtual address 0x0012F980 has a byte index of 0x980.
 
@@ -97,7 +97,7 @@ Again, assume you are investigating the virtual address 0x0012F980 belonging to 
     .cache forcedecodeuser done
     ```
 
-4.  Use the [**!pte**](https://msdn.microsoft.com/library/windows/hardware/ff564748) extension with the virtual address as its argument. This displays information in two columns. The left column describes the page directory entry (PDE) for this address; the right column describes its page table entry (PTE):
+4.  Use the [**!pte**](-pte.md) extension with the virtual address as its argument. This displays information in two columns. The left column describes the page directory entry (PDE) for this address; the right column describes its page table entry (PTE):
 
     ``` syntax
     kd> !pte 12f980
@@ -119,7 +119,7 @@ Although the **!ptov** and **pte** extensions supply the fastest way to convert 
 
 Memory structures vary in size, depending on the processor and the hardware configuration. This example is taken from an x86 system that does not have Physical Address Extension (PAE) enabled.
 
-Using 0x0012F980 again as the virtual address, you first need to convert it to binary, either by hand or by using the [**.formats (Show Number Formats)**](https://msdn.microsoft.com/library/windows/hardware/ff563127) command:
+Using 0x0012F980 again as the virtual address, you first need to convert it to binary, either by hand or by using the [**.formats (Show Number Formats)**](-formats--show-number-formats-.md) command:
 
 ``` syntax
 kd> .formats 12f980
@@ -177,7 +177,7 @@ c00004bc  09de9067
 
 This PTE has value 0x09DE9067. It is made of two fields:
 
--   The low 12 bits of the PTE are the *status flags*. In this case, these flags equal 0x067 -- or in binary, 0y000001100111. For an explanation of the status flags, see the [**!pte**](https://msdn.microsoft.com/library/windows/hardware/ff564748) reference page.
+-   The low 12 bits of the PTE are the *status flags*. In this case, these flags equal 0x067 -- or in binary, 0y000001100111. For an explanation of the status flags, see the [**!pte**](-pte.md) reference page.
 
 -   The high 20 bits of the PTE are equal to the *page frame number* (PFN) of the PTE. In this case, the PFN is 0x09DE9.
 
@@ -187,7 +187,7 @@ The first physical address on the physical page is the PFN multiplied by 0x1000 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Converting%20Virtual%20Addresses%20to%20Physical%20Addresses%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Converting%20Virtual%20Addresses%20to%20Physical%20Addresses%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

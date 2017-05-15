@@ -922,7 +922,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p><strong>Deadlock:</strong> A lock hierarchy violation has been found. A bug check with this parameter occurs only when the <strong>Deadlock Detection</strong> option of Driver Verifier is active.</p>
-<p>(Use the [<strong>!deadlock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff562326) extension for further information.)</p></td>
+<p>(Use the [<strong>!deadlock</strong>](-deadlock.md) extension for further information.)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x1002 (Windows XP and later operating systems only)</p></td>
@@ -1511,7 +1511,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 Cause
 -----
 
-See the description of each code in the Parameters section for a description of the cause. Further information can be obtained by using the [**!analyze -v**](https://msdn.microsoft.com/library/windows/hardware/ff562112) extension.
+See the description of each code in the Parameters section for a description of the cause. Further information can be obtained by using the [**!analyze -v**](-analyze.md) extension.
 
 Resolution
 ----------

@@ -16,16 +16,16 @@ DML is available in Windows 10 and later.
 
 The following commands are capable of generating DML output:
 
--   [**.dml\_start**](https://msdn.microsoft.com/library/windows/hardware/hh406553)
--   [**.dml\_flow**](https://msdn.microsoft.com/library/windows/hardware/hh406545)
--   [**!dml\_proc**](https://msdn.microsoft.com/library/windows/hardware/hh406549)
--   [**lmD**](https://msdn.microsoft.com/library/windows/hardware/ff552026)
--   [**kM**](https://msdn.microsoft.com/library/windows/hardware/ff551943)
--   [**.chain /D**](https://msdn.microsoft.com/library/windows/hardware/ff562212)
--   [**.help /D**](https://msdn.microsoft.com/library/windows/hardware/ff563195)
--   [**.printf /D**](https://msdn.microsoft.com/library/windows/hardware/ff564716)
+-   [**.dml\_start**](-dml-start.md)
+-   [**.dml\_flow**](-dml-flow.md)
+-   [**!dml\_proc**](-dml-proc.md)
+-   [**lmD**](lm--list-loaded-modules-.md)
+-   [**kM**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
+-   [**.chain /D**](-chain--list-debugger-extensions-.md)
+-   [**.help /D**](-help--meta-command-help-.md)
+-   [**.printf /D**](-printf.md)
 
-The [**lmD**](https://msdn.microsoft.com/library/windows/hardware/ff552026) command is an example of a command that is capable of providing DML output. The **lmD** command displays a list of loaded modules. As the following image shows, each module name is a link that you can click to get more detailed information about the module.
+The [**lmD**](lm--list-loaded-modules-.md) command is an example of a command that is capable of providing DML output. The **lmD** command displays a list of loaded modules. As the following image shows, each module name is a link that you can click to get more detailed information about the module.
 
 ![screen shot of lmd output](images/dmlcommands01.png)
 
@@ -35,7 +35,7 @@ The following image shows the result of clicking the **usbuhci** link. The outpu
 
 **Turning DML On and Off**
 
-The [**.prefer\_dml**](https://msdn.microsoft.com/library/windows/hardware/hh439561) command turns DML on or off. When DML is turned on (.prefer\_dml 1), commands that are capable of generating DML output will generate DML output by default.
+The [**.prefer\_dml**](-prefer-dml.md) command turns DML on or off. When DML is turned on (.prefer\_dml 1), commands that are capable of generating DML output will generate DML output by default.
 
 ### <span id="Console_Enhancements"></span><span id="console_enhancements"></span><span id="CONSOLE_ENHANCEMENTS"></span>Console Enhancements
 
@@ -67,14 +67,14 @@ Links have a right-click context menu similar to the right-click context menu in
 
 Clicking the icon near the upper-right corner of the title bar to set the command browser windows to either auto-refresh or manual-refresh. Auto-refresh browsers will automatically re-run their command on debugger state changes. This keeps the output live but at the cost of executing the command on all changes. Auto-refresh is on by default. If the browser does not need to be live the window’s context menu can be used to disable auto-refresh.
 
-Because commands are executed by the engine, not by the user interface, user-interface specific commands, such as [**.cls (Clear Screen)**](https://msdn.microsoft.com/library/windows/hardware/ff562246), will return a syntax error in when used in command browser windows. It also means that when the user interface is a remote client, the command will be executed by the server, not by the client, and the command output will show server state.
+Because commands are executed by the engine, not by the user interface, user-interface specific commands, such as [**.cls (Clear Screen)**](-cls--clear-screen-.md), will return a syntax error in when used in command browser windows. It also means that when the user interface is a remote client, the command will be executed by the server, not by the client, and the command output will show server state.
 
 Command browser windows can run any debugger command, it does not have to be a command that produces DML. You can use browser windows to have an arbitrary set of commands active for use.
 
 ## <span id="Customizing_DML"></span><span id="customizing_dml"></span><span id="CUSTOMIZING_DML"></span>Customizing DML
 
 
-DML defines a small set of tags that can be included in command output. One example is the &lt;link&gt; tag. You can experiment with the &lt;link&gt; tag (and other DML tags) by using the [**.dml\_start**](https://msdn.microsoft.com/library/windows/hardware/hh406553) and [**.browse**](https://msdn.microsoft.com/library/windows/hardware/hh406542) commands. The command **.browse .dml\_start** *filepath* executes the commands stored in a DML file. The output is displayed in the [Command Browser window](command-browser-window.md) instead of the regular command window.
+DML defines a small set of tags that can be included in command output. One example is the &lt;link&gt; tag. You can experiment with the &lt;link&gt; tag (and other DML tags) by using the [**.dml\_start**](-dml-start.md) and [**.browse**](-browse--display-command-in-browser-.md) commands. The command **.browse .dml\_start** *filepath* executes the commands stored in a DML file. The output is displayed in the [Command Browser window](command-browser-window.md) instead of the regular command window.
 
 Suppose the file c:\\DmlExperiment.txt contains the following lines.
 
@@ -101,7 +101,7 @@ For a thorough discussion of DML customization and a complete list of DML tags, 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20Debugger%20Markup%20Language%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20Debugger%20Markup%20Language%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

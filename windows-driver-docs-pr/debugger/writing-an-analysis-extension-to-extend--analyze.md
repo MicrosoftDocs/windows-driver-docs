@@ -7,17 +7,17 @@ ms.assetid: 7648F789-85D5-4247-90DD-2EAA43543483
 # Writing an Analysis Extension Plugin to Extend !analyze
 
 
-You can extend the capabilities of the [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) debugger command by writing an analysis extension plugin. By providing an analysis extension plugin, you can participate in the analysis of a bug check or an exception in a way that is specific to your own component or application.
+You can extend the capabilities of the [**!analyze**](-analyze.md) debugger command by writing an analysis extension plugin. By providing an analysis extension plugin, you can participate in the analysis of a bug check or an exception in a way that is specific to your own component or application.
 
-When you write an analysis extension plugin, you also write a metadata file that describes the situations for which you want your plugin to be called. When [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) runs, it locates, loads, and runs the appropriate analysis extension plugins.
+When you write an analysis extension plugin, you also write a metadata file that describes the situations for which you want your plugin to be called. When [**!analyze**](-analyze.md) runs, it locates, loads, and runs the appropriate analysis extension plugins.
 
-To write an analysis extension plugin and make it available to [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112), follow these steps.
+To write an analysis extension plugin and make it available to [**!analyze**](-analyze.md), follow these steps.
 
 -   Create a DLL that exports an [**\_EFN\_Analyze**](https://msdn.microsoft.com/library/windows/hardware/jj983432) function.
 -   Create a metadata file that has the same name as your DLL and an extension of .alz. For example, if your DLL is named MyAnalyzer.dll, your metadata file must be named MyAnalyzer.alz. For information about how to create a metadata file, see [Metadata Files for Analysis Extensions](metadata-files-for-analysis-extensions.md). Place the metadata file in the same directory as your DLL.
--   In the debugger, use the [**.extpath**](https://msdn.microsoft.com/library/windows/hardware/ff563047) command to add your directory to the extension file path. For example, if your DLL and metadata file are in the folder named c:\\MyAnalyzer, enter the command **.extpath+ c:\\MyAnalyzer**.
+-   In the debugger, use the [**.extpath**](-extpath--set-extension-path-.md) command to add your directory to the extension file path. For example, if your DLL and metadata file are in the folder named c:\\MyAnalyzer, enter the command **.extpath+ c:\\MyAnalyzer**.
 
-When the [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) command runs in the debugger, the analysis engine looks in the extension file path for metadata files that have the .alz extension. The analysis engine reads the metadata files to determine which analysis extension plugins should be loaded. For example, suppose the analysis engine is running in response to Bug Check 0xA IRQL\_NOT\_LESS\_OR\_EQUAL, and it reads a metadata file named MyAnalyzer.alz that contains the following entries.
+When the [**!analyze**](-analyze.md) command runs in the debugger, the analysis engine looks in the extension file path for metadata files that have the .alz extension. The analysis engine reads the metadata files to determine which analysis extension plugins should be loaded. For example, suppose the analysis engine is running in response to Bug Check 0xA IRQL\_NOT\_LESS\_OR\_EQUAL, and it reads a metadata file named MyAnalyzer.alz that contains the following entries.
 
 ``` syntax
 PluginId       MyPlugin
@@ -109,7 +109,7 @@ Here is a skeleton example that you can use as a starting point.
 
     **.crash**
 
-6.  The [**.crash**](https://msdn.microsoft.com/library/windows/hardware/ff562277) command generates Bug Check 0xE2 MANUALLY\_INITIATED\_CRASH on the target computer, which causes a break in to the debugger on the host computer. The bug check analysis engine (running in the debugger on the host computer) reads MyAnalyzer.alz and sees that MyAnalyzer.dll is able to participate in analyzing bug check 0xE2. So the analysis engine loads MyAnalyzer.dll and calls its [**\_EFN\_Analyze**](https://msdn.microsoft.com/library/windows/hardware/jj983432) function.
+6.  The [**.crash**](-crash--force-system-crash-.md) command generates Bug Check 0xE2 MANUALLY\_INITIATED\_CRASH on the target computer, which causes a break in to the debugger on the host computer. The bug check analysis engine (running in the debugger on the host computer) reads MyAnalyzer.alz and sees that MyAnalyzer.dll is able to participate in analyzing bug check 0xE2. So the analysis engine loads MyAnalyzer.dll and calls its [**\_EFN\_Analyze**](https://msdn.microsoft.com/library/windows/hardware/jj983432) function.
 
     Verify that you see output similar to the following in the debugger.
 
@@ -231,7 +231,7 @@ pControl->Output(DEBUG_OUTPUT_NORMAL, "The description is %s\n", desc);
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Writing%20an%20Analysis%20Extension%20Plugin%20to%20Extend%20!analyze%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Writing%20an%20Analysis%20Extension%20Plugin%20to%20Extend%20!analyze%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

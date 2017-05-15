@@ -88,7 +88,7 @@ For a description of the possible causes, see the description of each code in th
 
 **Debugging bug check 0x9F when Parameter 1 equals 0x3**
 
--   In a kernel debugger, use the [**!analyze -v**](https://msdn.microsoft.com/library/windows/hardware/ff562112) command to perform the initial bug check analysis. The verbose analysis displays the address of the **nt!TRIAGE\_9F\_POWER** structure, which is in Arg3.
+-   In a kernel debugger, use the [**!analyze -v**](-analyze.md) command to perform the initial bug check analysis. The verbose analysis displays the address of the **nt!TRIAGE\_9F\_POWER** structure, which is in Arg3.
 
     ```
     kd>!analyze -v
@@ -109,7 +109,7 @@ For a description of the possible causes, see the description of each code in th
 
     The nt!TRIAGE\_9F\_POWER structure provides additional bug check information that might help you determine the cause of this bug check. The structure can provide a list of all outstanding power IRPs, a list of all power IRP worker threads, and a pointer to the delayed system worker queue.
 
--   Use the [**dt (Display Type)**](https://msdn.microsoft.com/library/windows/hardware/ff542772) command and specify the nt!TRIAGE\_9F\_POWER structure using the address from Arg3.
+-   Use the [**dt (Display Type)**](dt--display-type-.md) command and specify the nt!TRIAGE\_9F\_POWER structure using the address from Arg3.
 
     ```
     0: kd> dt nt!TRIAGE_9F_POWER fffff8000386c3d8
@@ -120,9 +120,9 @@ For a description of the possible causes, see the description of each code in th
        +0x018 DelayedWorkQueue : 0xfffff800`01c6d2d8 _TRIAGE_EX_WORK_QUEUE
     ```
 
-    The [**dt (Display Type)**](https://msdn.microsoft.com/library/windows/hardware/ff542772) command displays the structure. You can use various debugger commands to follow the LIST\_ENTRY fields to examine the list of outstanding IRPs and the power IRP worker threads.
+    The [**dt (Display Type)**](dt--display-type-.md) command displays the structure. You can use various debugger commands to follow the LIST\_ENTRY fields to examine the list of outstanding IRPs and the power IRP worker threads.
 
--   Use the [**!irp**](https://msdn.microsoft.com/library/windows/hardware/ff563812) command to examine the IRP that was blocked. The address of this IRP is in Arg4.
+-   Use the [**!irp**](-irp.md) command to examine the IRP that was blocked. The address of this IRP is in Arg4.
 
     ```
     0: kd> !irp fffffa800ab61bd0
@@ -161,7 +161,7 @@ For a description of the possible causes, see the description of each code in th
     
     ```
 
--   Use the [**!devstack**](https://msdn.microsoft.com/library/windows/hardware/ff562353) command with the PDO address in Arg2, to display information associated with the faulting driver.
+-   Use the [**!devstack**](-devstack.md) command with the PDO address in Arg2, to display information associated with the faulting driver.
 
     ```
     0: kd> !devstack fffffa8007b13440
@@ -224,25 +224,25 @@ For a description of the possible causes, see the description of each code in th
       THREAD: ffffe0000ef5e040 (static), IRP: ffffe00013d07420, DEVICE: ffffe00012dd5040
     ```
 
--   If you are working with a KMDF driver, use the [Windows Driver Framework Extensions](https://msdn.microsoft.com/library/windows/hardware/ff551876) (!wdfkd) to gather additional information.
+-   If you are working with a KMDF driver, use the [Windows Driver Framework Extensions](kernel-mode-driver-framework-extensions--wdfkd-dll-.md) (!wdfkd) to gather additional information.
 
-    Use [**!wdfkd.wdflogdump**](https://msdn.microsoft.com/library/windows/hardware/ff565805) &lt;your driver name&gt;, to see if KMDF is waiting for you to ACK any pending requests.
+    Use [**!wdfkd.wdflogdump**](-wdfkd-wdflogdump.md) &lt;your driver name&gt;, to see if KMDF is waiting for you to ACK any pending requests.
 
-    Use [**!wdfkd.wdfdevicequeues**](https://msdn.microsoft.com/library/windows/hardware/ff565715) &lt;your WDFDEVICE&gt; to examine all outstanding requests and what state they are in.
+    Use [**!wdfkd.wdfdevicequeues**](-wdfkd-wdfdevicequeues.md) &lt;your WDFDEVICE&gt; to examine all outstanding requests and what state they are in.
 
--   Use the [**!stacks**](https://msdn.microsoft.com/library/windows/hardware/ff565379) extension to examine the state of every thread and look for a thread that might be holding up the power state transition.
+-   Use the [**!stacks**](-stacks.md) extension to examine the state of every thread and look for a thread that might be holding up the power state transition.
 
 -   To help you determine the cause of the error, consider the following questions:
 
     -   What are the characteristics of the physical device object (PDO) driver (Arg2)?
-    -   Can you find the blocked thread? When you examine the thread with the [**!thread**](https://msdn.microsoft.com/library/windows/hardware/ff565440) debugger command, what does the thread consist of?
+    -   Can you find the blocked thread? When you examine the thread with the [**!thread**](-thread.md) debugger command, what does the thread consist of?
     -   Is there IO associated with the thread that is blocking it? What symbols are on the stack?
     -   When you examine the blocked power IRP, what do you notice?
     -   What is the PnP minor function code of the power IRP?
 
 **Debugging bug check 0x9F when Parameter 1 equals 0x4**
 
--   In a kernel debugger, use the [**!analyze -v**](https://msdn.microsoft.com/library/windows/hardware/ff562112) command to perform the initial bug check analysis. The verbose analysis displays the address of the **nt!TRIAGE\_9F\_PNP** structure, which is in Parameter 4 (arg4).
+-   In a kernel debugger, use the [**!analyze -v**](-analyze.md) command to perform the initial bug check analysis. The verbose analysis displays the address of the **nt!TRIAGE\_9F\_PNP** structure, which is in Parameter 4 (arg4).
 
     ```
     kd> !analyze -v
@@ -266,7 +266,7 @@ For a description of the possible causes, see the description of each code in th
 
     The nt!TRIAGE\_9F\_PNP structure provides additional bug check information that might help you determine the cause of the error. The nt!TRIAGE\_9F\_PNP structure provides a pointer to a structure that contains the list of dispatched (but not completed) PnP IRPs and provides a pointer to the delayed system worker queue.
 
--   Use the [**dt (Display Type)**](https://msdn.microsoft.com/library/windows/hardware/ff542772) command and specify the **nt!TRIAGE\_9F\_PNP** structure and the address that you found in Arg4.
+-   Use the [**dt (Display Type)**](dt--display-type-.md) command and specify the **nt!TRIAGE\_9F\_PNP** structure and the address that you found in Arg4.
 
     ```
     kd> dt nt!TRIAGE_9F_PNP 82931b24
@@ -277,7 +277,7 @@ For a description of the possible causes, see the description of each code in th
     
     ```
 
-    The [**dt (Display Type)**](https://msdn.microsoft.com/library/windows/hardware/ff542772) command displays the structure. You can use debugger commands to follow the LIST\_ENTRY fields to examine the list of outstanding PnP IRPs.
+    The [**dt (Display Type)**](dt--display-type-.md) command displays the structure. You can use debugger commands to follow the LIST\_ENTRY fields to examine the list of outstanding PnP IRPs.
 
     To help you determine the cause of the error, consider the following questions:
 

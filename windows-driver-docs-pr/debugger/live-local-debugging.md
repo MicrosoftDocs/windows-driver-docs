@@ -42,7 +42,7 @@ Consider the last of these.
 
 ### <span id="examining_a_hung_thread_in_lkd"></span><span id="EXAMINING_A_HUNG_THREAD_IN_LKD"></span>Examining a Hung Thread in LKD
 
-First, use the [**!process 0 0**](https://msdn.microsoft.com/library/windows/hardware/ff564717) extension to identify the process containing the hung thread. Then, issue **!process** again for more information about that thread:
+First, use the [**!process 0 0**](-process.md) extension to identify the process containing the hung thread. Then, issue **!process** again for more information about that thread:
 
 ```
 lkd> !process 816a550 7
@@ -55,7 +55,7 @@ lkd> !process 816a550 7
         Priority 10 BasePriority 8 PriorityDecrement 0
 ```
 
-The threads are not displayed, but the stack addresses are. Using the [**dds**](https://msdn.microsoft.com/library/windows/hardware/ff540455) (or **ddq**) command on the current address on the stack yields a starting point for further investigation, because it specifies which process is calling.
+The threads are not displayed, but the stack addresses are. Using the [**dds**](dds--dps--dqs--display-words-and-symbols-.md) (or **ddq**) command on the current address on the stack yields a starting point for further investigation, because it specifies which process is calling.
 
 ```
 lkd> dds f50bea74
@@ -73,7 +73,7 @@ f50beb24  f943fb1e ks!CKsPipeSection::SetDeviceState+0xb2
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Live%20Local%20Debugging%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Live%20Local%20Debugging%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -74,11 +74,11 @@ If the first parameter has the same value as the fourth parameter, and the third
 Resolution
 ----------
 
-The [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
 For more information, see [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md)
 
-To start, examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943) command.
+To start, examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command.
 
 If the problem is caused by the driver that you are developing, make sure that the function that was executing at the time of the bug check is not marked as pageable or does not call any other inline functions that could be paged out.
 

@@ -13,7 +13,7 @@ Conditional breakpoints in WinDbg and other Windows debuggers are useful when yo
 ## <span id="ddk_setting_a_conditional_breakpoint_dbg"></span><span id="DDK_SETTING_A_CONDITIONAL_BREAKPOINT_DBG"></span>
 
 
-A conditional breakpoint is created by combining a breakpoint command with either the [**j (Execute If - Else)**](https://msdn.microsoft.com/library/windows/hardware/ff551820) command or the [**.if**](https://msdn.microsoft.com/library/windows/hardware/ff563221) token, followed by the [**gc (Go from Conditional Breakpoint)**](https://msdn.microsoft.com/library/windows/hardware/ff545522) command. This breakpoint causes a break to occur only if a specific condition is satisfied.
+A conditional breakpoint is created by combining a breakpoint command with either the [**j (Execute If - Else)**](j--execute-if---else-.md) command or the [**.if**](-if.md) token, followed by the [**gc (Go from Conditional Breakpoint)**](gc--go-from-conditional-breakpoint-.md) command. This breakpoint causes a break to occur only if a specific condition is satisfied.
 
 The basic syntax for a conditional breakpoint using the **j** command is as follows:
 
@@ -36,15 +36,15 @@ Conditional breakpoints are best illustrated with an example. The following comm
 
 The preceding command has a fairly complicated syntax that contains the following elements:
 
--   The [**bp (Set Breakpoint)**](https://msdn.microsoft.com/library/windows/hardware/ff538903) command sets breakpoints. Although the preceding example uses the bp command, you could also use the **bu (Set Unresolved Breakpoint)** command. For more information about the differences between **bp** and **bu**, and for a basic introduction to breakpoints, see [Using Breakpoints](using-breakpoints.md).
+-   The [**bp (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md) command sets breakpoints. Although the preceding example uses the bp command, you could also use the **bu (Set Unresolved Breakpoint)** command. For more information about the differences between **bp** and **bu**, and for a basic introduction to breakpoints, see [Using Breakpoints](using-breakpoints.md).
 
--   Source line numbers are specified by using grave accents ( **\`** ). For details, see [Source Line Syntax](https://msdn.microsoft.com/library/windows/hardware/ff556902).
+-   Source line numbers are specified by using grave accents ( **\`** ). For details, see [Source Line Syntax](source-line-syntax.md).
 
--   When the breakpoint is hit, the command in straight quotation marks ( **"** ) is executed. In this example, this command is a [**j (Execute If - Else)**](https://msdn.microsoft.com/library/windows/hardware/ff551820) command or an [**.if**](https://msdn.microsoft.com/library/windows/hardware/ff563221) token, which tests the expression in parentheses.
+-   When the breakpoint is hit, the command in straight quotation marks ( **"** ) is executed. In this example, this command is a [**j (Execute If - Else)**](j--execute-if---else-.md) command or an [**.if**](-if.md) token, which tests the expression in parentheses.
 
--   In the source program, **MyVar** is an integer. If you are using C++ expression syntax, **MyVar** is interpreted as an integer. However, in this example (and in the default debugger configuration), MASM expression syntax is used. In a MASM expression, **MyVar** is treated as an address. Thus, you need to use the **poi** operator to dereference it. (If your variable actually is a C pointer, you will need to dereference it twice--for example, **poi(poi(MyPtr))**.) The **0n** prefix specifies that this number is decimal. For syntax details, see [MASM Numbers and Operators](https://msdn.microsoft.com/library/windows/hardware/ff552157).
+-   In the source program, **MyVar** is an integer. If you are using C++ expression syntax, **MyVar** is interpreted as an integer. However, in this example (and in the default debugger configuration), MASM expression syntax is used. In a MASM expression, **MyVar** is treated as an address. Thus, you need to use the **poi** operator to dereference it. (If your variable actually is a C pointer, you will need to dereference it twice--for example, **poi(poi(MyPtr))**.) The **0n** prefix specifies that this number is decimal. For syntax details, see [MASM Numbers and Operators](masm-numbers-and-operators.md).
 
--   The expression in parentheses is followed by two commands, surrounded by single quotation marks ( **'** ) for the **j** command and curly brackets ( {} ) for the **.if** token. If the expression is true, the first of these commands is executed. In this example, there is no first command, so command execution will end and control will remain with the debugger. If the expression in parentheses is false, the second command will execute. The second command should almost always be a [**gc (Go from Conditional Breakpoint)**](https://msdn.microsoft.com/library/windows/hardware/ff545522) command, because this command causes execution to resume in the same manner that was occurring before the breakpoint was hit (stepping, tracing, or free execution).
+-   The expression in parentheses is followed by two commands, surrounded by single quotation marks ( **'** ) for the **j** command and curly brackets ( {} ) for the **.if** token. If the expression is true, the first of these commands is executed. In this example, there is no first command, so command execution will end and control will remain with the debugger. If the expression in parentheses is false, the second command will execute. The second command should almost always be a [**gc (Go from Conditional Breakpoint)**](gc--go-from-conditional-breakpoint-.md) command, because this command causes execution to resume in the same manner that was occurring before the breakpoint was hit (stepping, tracing, or free execution).
 
 If you want to see a message each time the breakpoint is passed or when it is finally hit, you can use additional commands in the single quotation marks or curly brackets. For example:
 
@@ -63,7 +63,7 @@ In some situations you might want to break into the debugger only if a string va
 bp kernel32!CreateEventW "$$<c:\\commands.txt"
 ```
 
-The preceding [**bp**](https://msdn.microsoft.com/library/windows/hardware/ff538903) command creates a breakpoint based on conditions and optional commands that are in a script file named commands.txt. The script file contains the following statements.
+The preceding [**bp**](bp--bu--bm--set-breakpoint-.md) command creates a breakpoint based on conditions and optional commands that are in a script file named commands.txt. The script file contains the following statements.
 
 ```cmd
 .if (@r9 != 0) { as /mu ${/v:EventName} @r9 } .else { ad /q ${/v:EventName} }
@@ -72,11 +72,11 @@ The preceding [**bp**](https://msdn.microsoft.com/library/windows/hardware/ff538
 
 The *lpName* argument passed to the **CreateEventW** function is the fourth argument, so it is stored in the r9 register (x64 processor). The script performs the following steps:
 
-1.  If *lpName* is not NULL, use [**as**](https://msdn.microsoft.com/library/windows/hardware/ff538131) and [**${}**](https://msdn.microsoft.com/library/windows/hardware/ff566259) to create an alias named EventName. Assign to EventName the null-terminated Unicode string beginning at the address pointed to by *lpName*. On the other hand, if *lpName* is NULL, use [**ad**](https://msdn.microsoft.com/library/windows/hardware/ff537997) to delete any existing alias named EventName.
+1.  If *lpName* is not NULL, use [**as**](as--as--set-alias-.md) and [**${}**](-------alias-interpreter-.md) to create an alias named EventName. Assign to EventName the null-terminated Unicode string beginning at the address pointed to by *lpName*. On the other hand, if *lpName* is NULL, use [**ad**](ad--delete-alias-.md) to delete any existing alias named EventName.
 
-2.  Use [**$spat**](https://msdn.microsoft.com/library/windows/hardware/ff552157) to compare the string represented by EventName to the pattern "Global\*". If the string does not match the pattern, use [**gc**](https://msdn.microsoft.com/library/windows/hardware/ff545522) to continue without breaking. If the string does match the pattern, break and display the string represented by EventName.
+2.  Use [**$spat**](masm-numbers-and-operators.md) to compare the string represented by EventName to the pattern "Global\*". If the string does not match the pattern, use [**gc**](gc--go-from-conditional-breakpoint-.md) to continue without breaking. If the string does match the pattern, break and display the string represented by EventName.
 
-    **Note**  [**$spat**](https://msdn.microsoft.com/library/windows/hardware/ff552157) performs a case-insensitive match.
+    **Note**  [**$spat**](masm-numbers-and-operators.md) performs a case-insensitive match.
 
      
 
@@ -113,11 +113,11 @@ The following command will work properly in user mode and kernel mode:
 0:000> bp mydriver!myFunction ".if (@eax &amp; 0x0`ffffffff) = 0x0`c0004321  {} .else {gc}"
 ```
 
-For more information about which numbers are sign-extended by the debugger, see [Sign Extension](https://msdn.microsoft.com/library/windows/hardware/ff556892).
+For more information about which numbers are sign-extended by the debugger, see [Sign Extension](sign-extension.md).
 
 ### <span id="conditional_breakpoints_in_windbg"></span><span id="CONDITIONAL_BREAKPOINTS_IN_WINDBG"></span>Conditional Breakpoints in WinDbg
 
-In WinDbg, you can create a conditional breakpoint by clicking [Breakpoints](https://msdn.microsoft.com/library/windows/hardware/ff542806) from the **Edit** menu, entering a new breakpoint address into the **Command** box, and entering a condition into the **Condition** box.
+In WinDbg, you can create a conditional breakpoint by clicking [Breakpoints](edit---breakpoints.md) from the **Edit** menu, entering a new breakpoint address into the **Command** box, and entering a condition into the **Condition** box.
 
 For example, typing **mymod!myFunc+0x3A** into the **Command** box and **myVar &lt; 7** into the **Condition** box is equivalent to issuing the following command:
 
@@ -128,13 +128,13 @@ For example, typing **mymod!myFunc+0x3A** into the **Command** box and **myVar &
 
 ### <span id="restrictions_on_conditional_breakpoints"></span><span id="RESTRICTIONS_ON_CONDITIONAL_BREAKPOINTS"></span>Restrictions on Conditional Breakpoints
 
-If you are [controlling the user-mode debugger from the kernel debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md), you cannot use conditional breakpoints or any other breakpoint command string that contains the [**gc (Go from Conditional Breakpoint)**](https://msdn.microsoft.com/library/windows/hardware/ff545522) or [**g (Go)**](https://msdn.microsoft.com/library/windows/hardware/ff549693) commands. If you use these commands, the serial interface might not be able to keep up with the number of breakpoint passes, and you will be unable to break back into CDB.
+If you are [controlling the user-mode debugger from the kernel debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md), you cannot use conditional breakpoints or any other breakpoint command string that contains the [**gc (Go from Conditional Breakpoint)**](gc--go-from-conditional-breakpoint-.md) or [**g (Go)**](g--go-.md) commands. If you use these commands, the serial interface might not be able to keep up with the number of breakpoint passes, and you will be unable to break back into CDB.
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Conditional%20breakpoints%20in%20WinDbg%20and%20other%20Windows%20debuggers%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Conditional%20breakpoints%20in%20WinDbg%20and%20other%20Windows%20debuggers%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -139,13 +139,13 @@ For additional general bug check troubleshooting information, see [**Blue Screen
 Remarks
 -------
 
-The [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
 Parameter 1 identifies the type of error source that reported the error. Parameter 2 holds the address of the WHEA\_ERROR\_RECORD structure that describes the error condition.
 
 When a hardware error occurs, WHEA creates an error record to store the error information associated with the hardware error condition. Each error record is described by a WHEA\_ERROR\_RECORD structure. The Windows kernel includes the error record with the Event Tracing for Windows (ETW) hardware error event that it raises in response to the error so that the error record is saved in the system event log. The format of the error records that are used by WHEA are based on the Common Platform Error Record as described in Appendix N of version 2.2 of the Unified Extensible Firmware Interface (UEFI) Specification. For more information, see [WHEA\_ERROR\_RECORD](https://msdn.microsoft.com/library/windows/hardware/ff560483) and [Windows Hardware Error Architecture (WHEA)](https://msdn.microsoft.com/library/windows/hardware/ff559509).
 
-You can use [**!errrec**](https://msdn.microsoft.com/library/windows/hardware/ff563008) &lt;addr&gt; to display the WHEA\_ERROR\_RECORD structure using the address provided in Parameter 2. The [**!whea**](https://msdn.microsoft.com/library/windows/hardware/ff566143) and [**!errpkt**](https://msdn.microsoft.com/library/windows/hardware/ff563006) extensions can be used to display additional WHEA information.
+You can use [**!errrec**](-errrec.md) &lt;addr&gt; to display the WHEA\_ERROR\_RECORD structure using the address provided in Parameter 2. The [**!whea**](-whea.md) and [**!errpkt**](-errpkt.md) extensions can be used to display additional WHEA information.
 
 For more information see the following topics:
 
@@ -153,7 +153,7 @@ For more information see the following topics:
 
 [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
-[Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](https://msdn.microsoft.com/library/windows/hardware/ff562112)
+[Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)
 
 This bug check is not supported in Windows versions prior to Windows Vista. Instead, machine check exceptions are reported through [**bug check 0x9C**](bug-check-0x9c--machine-check-exception.md).
 

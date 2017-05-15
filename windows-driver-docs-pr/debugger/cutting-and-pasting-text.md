@@ -17,7 +17,7 @@ WinDbg uses many common methods of manipulating text and several methods that ar
 
 To select text in a [Source window](source-window.md), in the [Disassembly window](disassembly-window.md), in either pane of the [Debugger Command window](debugger-command-window.md), or in a dialog box, point to one end of the text, press and hold the left mouse button, and drag the pointer to the other end of the text.
 
-To select all of the text in a window, you can also click [Select All](https://msdn.microsoft.com/library/windows/hardware/ff542847) on the **Edit** menu or press CTRL+A.
+To select all of the text in a window, you can also click [Select All](edit---select-all.md) on the **Edit** menu or press CTRL+A.
 
 In the [Calls window](calls-window.md), Watch window, [Locals window](locals-window.md), [Registers window](registers-window.md), and [Memory window](memory-window.md), you cannot select an arbitrary span of text, but you can select a whole line or cell. Click in the desired line or cell to select its text.
 
@@ -71,9 +71,9 @@ You can paste text into the bottom pane of the Debugger Command window, into the
 
 The right mouse button has several effects that can make copying and pasting much quicker:
 
--   If you select text in either pane of the Debugger Command window, in the Scratch Pad, in the Disassembly window, or in any Source window, and then you press the right mouse button, the text is copied to the clipboard. However, if **QuickEdit Mode** has been deselected in [View | Options](https://msdn.microsoft.com/library/windows/hardware/ff560299), right-clicking in these locations will pop up the menu most relevant to the current location.
+-   If you select text in either pane of the Debugger Command window, in the Scratch Pad, in the Disassembly window, or in any Source window, and then you press the right mouse button, the text is copied to the clipboard. However, if **QuickEdit Mode** has been deselected in [View | Options](view---options.md), right-clicking in these locations will pop up the menu most relevant to the current location.
 
--   If you put the cursor (without selecting any text) in either pane of the Debugger Command window, in the Scratch Pad, or in the text entry space of the Watch window, and then you press the right mouse button, the contents of the clipboard are pasted into the window. However, if **QuickEdit Mode** has been deselected in [View | Options](https://msdn.microsoft.com/library/windows/hardware/ff560299), right-clicking in these locations will pop up the menu most relevant to the current location.
+-   If you put the cursor (without selecting any text) in either pane of the Debugger Command window, in the Scratch Pad, or in the text entry space of the Watch window, and then you press the right mouse button, the contents of the clipboard are pasted into the window. However, if **QuickEdit Mode** has been deselected in [View | Options](view---options.md), right-clicking in these locations will pop up the menu most relevant to the current location.
 
 -   If you put the cursor in any box and then press the right mouse button, a menu with **Undo**, **Cut**, **Copy**, **Paste**, and **Select All** options appears. You can choose any of these options.
 
@@ -81,7 +81,7 @@ The right mouse button has several effects that can make copying and pasting muc
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Cutting%20and%20Pasting%20Text%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Cutting%20and%20Pasting%20Text%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -15,7 +15,7 @@ For an introduction and overview of crash dump files, see [Crash Dump Files](cra
 
 ### <span id="Opening_Dump_Files"></span><span id="opening_dump_files"></span><span id="OPENING_DUMP_FILES"></span>Opening Dump Files
 
-To open a crash dump file for use as a debugger target, use [**OpenDumpFile**](https://msdn.microsoft.com/library/windows/hardware/ff552322) or [**OpenDumpfileWide**](https://msdn.microsoft.com/library/windows/hardware/ff552324). These methods are similar to the [**.opendump**](https://msdn.microsoft.com/library/windows/hardware/ff564611) debugger command.
+To open a crash dump file for use as a debugger target, use [**OpenDumpFile**](https://msdn.microsoft.com/library/windows/hardware/ff552322) or [**OpenDumpfileWide**](https://msdn.microsoft.com/library/windows/hardware/ff552324). These methods are similar to the [**.opendump**](-opendump--open-dump-file-.md) debugger command.
 
 **Note**   The engine doesn't completely attach to the dump file until the [**WaitForEvent**](https://msdn.microsoft.com/library/windows/hardware/ff561229) method has been called. When a dump file is created from a process or kernel, information about the last event is stored in the dump file. After the dump file is opened, the next time execution is attempted, the engine will generate this event for the event callbacks. Only then does the dump file become available in the debugging session. See [Debugging Session and Execution Model](debugging-session-and-execution-model.md) for more details.
 
@@ -27,13 +27,13 @@ User-mode minidump files contain several streams of information. These streams c
 
 ### <span id="Creating_Dump_Files"></span><span id="creating_dump_files"></span><span id="CREATING_DUMP_FILES"></span>Creating Dump Files
 
-To create a crash dump file of the current target -- user-mode or kernel-mode -- use [**WriteDumpFile2**](https://msdn.microsoft.com/library/windows/hardware/ff561382). This method is similar to the [**.dump**](https://msdn.microsoft.com/library/windows/hardware/ff562428) debugger command.
+To create a crash dump file of the current target -- user-mode or kernel-mode -- use [**WriteDumpFile2**](https://msdn.microsoft.com/library/windows/hardware/ff561382). This method is similar to the [**.dump**](-dump--create-dump-file-.md) debugger command.
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Dump-File%20Targets%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Dump-File%20Targets%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

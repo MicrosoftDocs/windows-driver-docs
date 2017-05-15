@@ -67,7 +67,7 @@ One possible cause of this bug check is depletion of nonpaged pool memory. If th
 Resolution
 ----------
 
-**To debug this problem:** Use the [**.cxr (Display Context Record)**](https://msdn.microsoft.com/library/windows/hardware/ff562301) command with Parameter 3, and then use [**kb (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943).
+**To debug this problem:** Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command with Parameter 3, and then use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md).
 
 **To resolve a nonpaged pool memory depletion problem:** Add new physical memory to the computer. This will increase the quantity of nonpaged pool memory available to the kernel.
 

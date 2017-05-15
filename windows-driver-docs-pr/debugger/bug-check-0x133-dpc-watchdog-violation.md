@@ -63,7 +63,7 @@ The DPC\_WATCHDOG\_VIOLATION bug check has a value of 0x00000133. This bug check
 Cause
 -----
 
-The [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
 **Parameter 1 = 0**
 
@@ -95,17 +95,17 @@ IMAGE_NAME:  BthA2DP.sys
 
 Use the following debugger commands to gather more information for failures with a parameter of 0:
 
-[**k (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943) to look at what code was running when the stop code occurred.
+[**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to look at what code was running when the stop code occurred.
 
 You may want to use the u, ub, uu (Unassemble) command to look deeper into the specifics of a the code that was running.
 
-The [**!pcr**](https://msdn.microsoft.com/library/windows/hardware/ff564664) extension displays the current status of the Processor Control Region (PCR) on a specific processor. In the output will be the address of the Prcb
+The [**!pcr**](-pcr.md) extension displays the current status of the Processor Control Region (PCR) on a specific processor. In the output will be the address of the Prcb
 
 ```
                      Prcb: fffff80309974180
 ```
 
-You can use the [**dt (Display Type)**](https://msdn.microsoft.com/library/windows/hardware/ff542772) command to display additional information about the DPCs and the DPC Watchdog. For the address use the Prcb listed in the !pcr output:
+You can use the [**dt (Display Type)**](dt--display-type-.md) command to display additional information about the DPCs and the DPC Watchdog. For the address use the Prcb listed in the !pcr output:
 
 ```
 dt nt!_KPRCB fffff80309974180 Dpc* 
@@ -121,7 +121,7 @@ For more information see the following topics:
 
 [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
-[Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](https://msdn.microsoft.com/library/windows/hardware/ff562112)
+[Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)
 
 Remarks
 -------

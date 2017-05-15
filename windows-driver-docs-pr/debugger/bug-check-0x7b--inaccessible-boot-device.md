@@ -184,7 +184,7 @@ It is helpful to know as much as possible about the boot device that Windows is 
 
 -   Note the file system that is used on the drive, typically NTFS.
 
-**To analyze this error using the kernel debugger:** Run an [**lm (List Loaded Modules)**](https://msdn.microsoft.com/library/windows/hardware/ff552026) command in the debugger to see which modules are loaded to attempt to isolate the specific driver. Verify that the following drivers were loaded.
+**To analyze this error using the kernel debugger:** Run an [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md) command in the debugger to see which modules are loaded to attempt to isolate the specific driver. Verify that the following drivers were loaded.
 
 *disk*
 
@@ -254,7 +254,7 @@ fffff806`c0770000 fffff806`c0788000   storqosflt   (deferred)
 
 **Booting with a debugger attached**
 
-If you can boot the target system with a debugger connected, issue [**!devnode 0 1**](https://msdn.microsoft.com/library/windows/hardware/ff562345) when the bugcheck occurs. You'll see which device lacks a driver or could not start, and the reason for not starting may be apparent.
+If you can boot the target system with a debugger connected, issue [**!devnode 0 1**](-devnode.md) when the bugcheck occurs. You'll see which device lacks a driver or could not start, and the reason for not starting may be apparent.
 
 One cause, might be that Plug and Play cannot assign resources to the boot device. You can verify this restriction by finding an entry for the service. If the status flags include DNF\_INSUFFICIENT\_RESOURCES or do not include DNF\_STARTED or DNF\_ENUMERATED, you may have located the problem. Try **!devnode 0 1 storahci** to save some time, instead of dumping the whole device tree.
 

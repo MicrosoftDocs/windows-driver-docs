@@ -32,14 +32,14 @@ To use a driver replacement map to replace driver files, do the following:
 2.  Set up a kernel debugging connection to the target computer, and start the kernel debugger (KD or WinDbg) on your host computer. (You do not have to actually break in to the target computer.)
 
 3.  Load the driver replacement map file by doing one of the following:
-    -   Set the \_NT\_KD\_FILES [environment variable](https://msdn.microsoft.com/library/windows/hardware/ff543043) before you start the kernel debugger.
+    -   Set the \_NT\_KD\_FILES [environment variable](environment-variables.md) before you start the kernel debugger.
 
         ``` syntax
         D:\Debugging Tools for Windows> set _NT_KD_FILES=d:\Map_Files\mymap.ini
         D:\Debugging Tools for Windows> kd
         ```
 
-    -   Use the [**.kdfiles (Set Driver Replacement Map)**](https://msdn.microsoft.com/library/windows/hardware/ff563848) command after you start the kernel debugger.
+    -   Use the [**.kdfiles (Set Driver Replacement Map)**](-kdfiles--set-driver-replacement-map-.md) command after you start the kernel debugger.
 
         ``` syntax
         D:\Debugging Tools for Windows> kd
@@ -107,7 +107,7 @@ The driver replacement map file must be a text file, but you can use any file na
 
 When driver substitution occurs, a message appears in the kernel debugger.
 
-If you use [**CTRL+D**](https://msdn.microsoft.com/library/windows/hardware/ff540315) (in KD) or CTRL+ALT+D (in WinDbg), you see verbose information about the replacement request. This information can be useful if you are not sure whether the name that you have listed matches the one in the SCM database.
+If you use [**CTRL+D**](ctrl-d--toggle-debug-info-.md) (in KD) or CTRL+ALT+D (in WinDbg), you see verbose information about the replacement request. This information can be useful if you are not sure whether the name that you have listed matches the one in the SCM database.
 
 You can enable the bcdedit bootdebug option to view early boot information that is useful for replacing the kernel, the hal, or boot drivers.
 
@@ -133,7 +133,7 @@ If you want to replace a boot driver file by using this driver replacement metho
 
 Because the target computer bypasses its Boot.ini file, you cannot set the kernel connection protocol in the typical manner. You must make the connection through the COM1 port on the target computer. The baud rate is 115200. Therefore, the kernel debugger on the host computer should be configured to use a COM connection at the 115200 speed.
 
-This special method applies only to boot drivers (that is, Acpi.sys, Classpnp.sys, Disk.sys, and anything else that [**lm t n**](https://msdn.microsoft.com/library/windows/hardware/ff552026) displays at the initial Windows breakpoint). If you have to replace a standard driver that **MmLoadSystemImage** loads after the boot has been completed, you should use the standard method described earlier.
+This special method applies only to boot drivers (that is, Acpi.sys, Classpnp.sys, Disk.sys, and anything else that [**lm t n**](lm--list-loaded-modules-.md) displays at the initial Windows breakpoint). If you have to replace a standard driver that **MmLoadSystemImage** loads after the boot has been completed, you should use the standard method described earlier.
 
 You cannot replace boot drivers on a computer that uses EFI firmware instead of the Boot.ini file.
 
@@ -141,7 +141,7 @@ You cannot replace boot drivers on a computer that uses EFI firmware instead of 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Mapping%20Driver%20Files%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Mapping%20Driver%20Files%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

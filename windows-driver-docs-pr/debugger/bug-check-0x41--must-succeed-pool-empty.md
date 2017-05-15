@@ -66,9 +66,9 @@ Resolution
 
 Replace or rewrite the driver which is making the request. A driver should not request must-succeed pool. Instead, it should ask for normal pool and gracefully handle the scenario where the pool is temporarily empty.
 
-The [**kb (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943) command will show the driver that caused the error.
+The [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command will show the driver that caused the error.
 
-Additionally, it is possible that a second component has depleted the must-succeed pool. To determine if this is the case, first use the **kb** command. Then use [**!vm 1**](https://msdn.microsoft.com/library/windows/hardware/ff565602) to display total pool usage, [**!poolused 2**](https://msdn.microsoft.com/library/windows/hardware/ff564700) to display per-tag nonpaged pool usage, and **!poolused 4** to display per-tag paged pool usage. The component associated with the tag using the most pool is probably the source of the problem.
+Additionally, it is possible that a second component has depleted the must-succeed pool. To determine if this is the case, first use the **kb** command. Then use [**!vm 1**](-vm.md) to display total pool usage, [**!poolused 2**](-poolused.md) to display per-tag nonpaged pool usage, and **!poolused 4** to display per-tag paged pool usage. The component associated with the tag using the most pool is probably the source of the problem.
 
  
 

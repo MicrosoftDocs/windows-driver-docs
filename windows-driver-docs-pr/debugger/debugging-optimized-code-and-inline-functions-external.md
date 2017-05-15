@@ -23,7 +23,7 @@ This screen shot of the Locals window in Visual Studio shows the parameters and 
 
 ![screen shot of the locals window](images/optimizedcode01.png)
 
-You can use the [**dv -v**](https://msdn.microsoft.com/library/windows/hardware/ff542786) command to see the locations of the parameters and local variables.
+You can use the [**dv -v**](dv--display-local-variables-.md) command to see the locations of the parameters and local variables.
 
 ![screen shot that shows the locations of parameters and local variables](images/optimizedcode02.png)
 
@@ -72,7 +72,7 @@ __forceinline int func1(int p1, int p2, int p3)
 }
 ```
 
-You can use the [**bm**](https://msdn.microsoft.com/library/windows/hardware/ff538903) command to set a breakpoint at `func1`.
+You can use the [**bm**](bp--bu--bm--set-breakpoint-.md) command to set a breakpoint at `func1`.
 
 ``` syntax
 0:000> bm MyApp!func1
@@ -84,7 +84,7 @@ MyApp!main+0x88:
 000007f6`8d621088 488d0d21110000  lea     rcx,[MyApp!`string' (000007f6`8d6221b0)]
 ```
 
-After you take one step into `func1`, you can use the [**k**](https://msdn.microsoft.com/library/windows/hardware/ff551943) command to see `func1` on the call stack. You can use the [**dv**](https://msdn.microsoft.com/library/windows/hardware/ff542786) command to see the local variables for `func1`. Notice that the local variable `num3` is shown as unavailable. A local variable can be unavailable in optimized code for a number of reasons. It might be that the variable doesn't exist in the optimized code. It might be that the variable has not been initialized yet or that the variable is no longer being used.
+After you take one step into `func1`, you can use the [**k**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to see `func1` on the call stack. You can use the [**dv**](dv--display-local-variables-.md) command to see the local variables for `func1`. Notice that the local variable `num3` is shown as unavailable. A local variable can be unavailable in optimized code for a number of reasons. It might be that the variable doesn't exist in the optimized code. It might be that the variable has not been initialized yet or that the variable is no longer being used.
 
 ``` syntax
 0:000> p
@@ -117,7 +117,7 @@ If you look at frame 1 in the stack trace, you can see the local variables for t
 @esi                            a = 0n6
 ```
 
-The Windows debugger aggregates data from PDB files to find all the places where a specific function has been placed inline. You can use the [**x**](https://msdn.microsoft.com/library/windows/hardware/ff561506) command to list all the caller sites of the an inline function.
+The Windows debugger aggregates data from PDB files to find all the places where a specific function has been placed inline. You can use the [**x**](x--examine-symbols-.md) command to list all the caller sites of the an inline function.
 
 ``` syntax
 0:000> x simple!MoreCalculate
@@ -128,9 +128,9 @@ The Windows debugger aggregates data from PDB files to find all the places where
 00000000`ff6e141b simple!Calculate =  (inline caller) simple!wmain+53
 ```
 
-Because the Windows debugger can enumerate all the caller sites of an inline function, it can set a breakpoints inside the inline function by calculating the offsets from the caller sites. You can use the [**bm**](https://msdn.microsoft.com/library/windows/hardware/ff538903) command (which is used to set breakpoints that match regular expression patterns) to set breakpoints for inline functions.
+Because the Windows debugger can enumerate all the caller sites of an inline function, it can set a breakpoints inside the inline function by calculating the offsets from the caller sites. You can use the [**bm**](bp--bu--bm--set-breakpoint-.md) command (which is used to set breakpoints that match regular expression patterns) to set breakpoints for inline functions.
 
-The Windows debugger groups all breakpoints that are set for a specific inline function into a breakpoint container. You can manipulate the breakpoint container as a whole by using commands like [**be**](https://msdn.microsoft.com/library/windows/hardware/ff538855), [**bd**](https://msdn.microsoft.com/library/windows/hardware/ff538172), [**bc**](https://msdn.microsoft.com/library/windows/hardware/ff538168). See the following **bd 3** and **bc 3** command examples. You can also manipulate individual breakpoints. See the following **be 2** command example.
+The Windows debugger groups all breakpoints that are set for a specific inline function into a breakpoint container. You can manipulate the breakpoint container as a whole by using commands like [**be**](be--breakpoint-enable-.md), [**bd**](bd--breakpoint-disable-.md), [**bc**](bc--breakpoint-clear-.md). See the following **bd 3** and **bc 3** command examples. You can also manipulate individual breakpoints. See the following **be 2** command example.
 
 ```ManagedCPlusPlus
 0:000> bm simple!MoreCalculate
@@ -176,7 +176,7 @@ Because there are no explicit call or return instructions for inline functions, 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20Optimized%20Code%20and%20Inline%20Functions%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20Optimized%20Code%20and%20Inline%20Functions%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

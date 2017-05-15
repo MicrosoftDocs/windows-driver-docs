@@ -4,7 +4,7 @@ description: This lab provides hands-on exercises that demonstrate how to debug 
 ms.assetid: 4A31451C-FC7E-4C5F-B4EB-FBBAC8DADF9E
 ---
 
-# Debug Drivers - Step by Step Lab (Sysvad Kernel-Mode)
+# <span id="debugger.debug_universal_drivers__kernel-mode_"></span>Debug Drivers - Step by Step Lab (Sysvad Kernel-Mode)
 
 
 This lab provides hands-on exercises that demonstrate how to debug the Sysvad audio kernel mode device driver.
@@ -13,7 +13,7 @@ Microsoft Windows Debugger (WinDbg) is a powerful Windows-based debugging tool t
 
 WinDbg can step through source code, set breakpoints, view variables (including C++ objects), stack traces, and memory. Its Debugger Command window allows the user to issue a wide variety of commands.
 
-## Lab setup
+## <span id="Lab_setup"></span><span id="lab_setup"></span><span id="LAB_SETUP"></span>Lab setup
 
 
 You will need the following hardware to be able to complete the lab.
@@ -32,17 +32,17 @@ You will need the following software to be able to complete the lab.
 
 For information on downloading and installing the WDK, see [Download the Windows Driver Kit (WDK)](https://developer.microsoft.com/windows/hardware/windows-driver-kit)
 
-## >Sysvad debugging walkthrough overview
+## <span id="Sysvad_debugging_walkthrough_overview"></span><span id="sysvad_debugging_walkthrough_overview"></span><span id="SYSVAD_DEBUGGING_WALKTHROUGH_OVERVIEW"></span>Sysvad debugging walkthrough overview
 
 
 This topic will walk through the process to debug a kernel mode driver. The exercises use the sysvad virtual audio driver sample. Because the sysvad audio driver doesn't interact with actual audio hardware it can be used on most devices. The walkthrough will cover the following tasks:
 
--   [Section 1: Connect to a kernel mode WinDbg session](#section-1)
--   [Section 2: Kernel mode debugging commands and techniques](#secetion-2)
--   [Section 3: Download and build the Sysvad audio driver](#section-3)
--   [Section 4: Install the Sysvad audio driver on the target system](#section-4)
--   [Section 5: Use WinDbg to display information about the driver](#section5)
--   [Section 6: Display plug and play device tree information](#section6)
+-   [Section 1: Connect to a kernel mode WinDbg session](#connectto)
+-   [Section 2: Kernel mode debugging commands and techniques](#kernelmodedebuggingcommandsandtechniques)
+-   [Section 3: Download and build the Sysvad audio driver](#section3-download-build)
+-   [Section 4: Install the Sysvad audio driver on the target system](#section4-install)
+-   [Section 5: Use WinDbg to display information about the driver](#usewindbgtodisplayinformation)
+-   [Section 6: Display plug and play device tree information](#displayingtheplugandplaydevicetree)
 -   [Section 7: Work with breakpoints and source code](#workingwithbreakpoints)
 -   [Section 8: Look at variables](#lookingatvariables)
 -   [Section 9: View call stacks](#viewingcallstacks)
@@ -52,12 +52,12 @@ This topic will walk through the process to debug a kernel mode driver. The exer
 -   [Section 13: Ending the WinDbg session](#endingthesession)
 -   [Section 14: Windows debugging resources](#windowsdebuggingresources)
 
-## Echo Driver Lab
+## <span id="Echo_Driver_Lab"></span><span id="echo_driver_lab"></span><span id="ECHO_DRIVER_LAB"></span>Echo Driver Lab
 
 
 The Echo driver is a simpler driver then the Sysvad audio driver. If you are new to WinDbg, you may want to consider first completing the [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md). This lab reuses the setup directions from that lab, so if you have completed that lab you will be able to skip section 1 and 2.
 
-## Section 1: Connect to a kernel mode WinDbg session
+## <span id="connectto"></span><span id="CONNECTTO"></span>Section 1: Connect to a kernel mode WinDbg session
 
 
 *In Section 1, you will configure network debugging on the host and target system.*
@@ -74,7 +74,7 @@ The steps in the lab assume that you are using a cross over network cable, but t
 
 To work with kernel mode applications and using Windbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](https://msdn.microsoft.com/windows-drivers/develop/preparing_a_computer_for_manual_driver_deployment) and [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md).
 
-### Configure kernel–mode debugging using a crossover ethernet cable
+### <span id="Configure__kernel_mode_debugging_using_a_crossover_ethernet_cable"></span><span id="configure__kernel_mode_debugging_using_a_crossover_ethernet_cable"></span><span id="CONFIGURE__KERNEL_MODE_DEBUGGING_USING_A_CROSSOVER_ETHERNET_CABLE"></span>Configure kernel–mode debugging using a crossover ethernet cable
 
 Follow the next steps to enable kernel mode debugging on the target system.
 
@@ -200,7 +200,8 @@ The Debugger Command window is split into two panes. You type commands in the sm
 
 In the command entry pane, use the up arrow and down arrow keys to scroll through the command history. When a command appears, you can edit it or press **ENTER** to run the command.
 
-## Section 2: Kernel mode debugging commands and techniques
+## <span id="KernelModeDebuggingCommandsAndTechniques"></span><span id="kernelmodedebuggingcommandsandtechniques"></span><span id="KERNELMODEDEBUGGINGCOMMANDSANDTECHNIQUES"></span>Section 2: Kernel mode debugging commands and techniques
+
 
 *In Section 2, you will use debug commands to display information about the target system.*
 
@@ -232,7 +233,7 @@ The Debugger help file will display help for the **.prefer\_dml** command.
 
 **Display the version of Windows on the target system**
 
-5. Display detailed version information on the target system by typing the [**vertarget (Show Target Computer Version)**](https://msdn.microsoft.com/library/windows/hardware/ff560266) command in the WinDbg window.
+5. Display detailed version information on the target system by typing the [**vertarget (Show Target Computer Version)**](vertarget--show-target-computer-version-.md) command in the WinDbg window.
 ``` syntax
 0: kd> vertarget
 Windows 10 Kernel Version 9926 MP (4 procs) Free x64
@@ -246,7 +247,7 @@ System Uptime: 0 days 01:31:58.931
 
 **List the loaded modules**
 
-6. You can verify that you are working with the right kernel mode process by displaying the loaded modules by typing the [**lm (List Loaded Modules)**](https://msdn.microsoft.com/library/windows/hardware/ff552026) command in the WinDbg window.
+6. You can verify that you are working with the right kernel mode process by displaying the loaded modules by typing the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md) command in the WinDbg window.
 ``` syntax
 0: Kd> lm
 start             end                 module name
@@ -269,7 +270,7 @@ fffff801`094d9000 fffff801`09561000   CI         (export symbols)       CI.dll
 
 Because we have yet to set the symbol path and loaded symbols, limited information is available in the debugger.
 
-## Section 3: Download and build the Sysvad audio driver
+## <span id="Section3_Download_Build"></span><span id="section3_download_build"></span><span id="SECTION3_DOWNLOAD_BUILD"></span>Section 3: Download and build the Sysvad audio driver
 
 
 *In Section 3, you will download and build the Sysvad audio driver.*
@@ -353,7 +354,8 @@ To download and build the Sysvad sample audio driver, complete the following ste
 
 In the next section, you will copy the code to the target system, and install and test the driver.
 
-## Section 4: Install the Sysvad audio driver sample on the target system
+## <span id="Section4_Install"></span><span id="section4_install"></span><span id="SECTION4_INSTALL"></span>Section 4: Install the Sysvad audio driver sample on the target system
+
 
 *In Section 4, you will use devcon to install the Sysvad audio driver.*
 
@@ -522,7 +524,7 @@ set ENABLE_OPTIMIZER=0
     ...  
     ```
 
-    For more information, see [**lm**](https://msdn.microsoft.com/library/windows/hardware/ff552026).
+    For more information, see [**lm**](lm--list-loaded-modules-.md).
 
 2.  Click on the *Browse all global symbols link* in the debug output to display information about items symbols that start with the letter “a”.
 3.  Because DML is enabled, some elements of the output are hot links that you can click on. Click on the *data* link in the debug output to display information about items symbols that start with the letter A.
@@ -534,7 +536,7 @@ set ENABLE_OPTIMIZER=0
     fffff806`9adb1000 tabletaudiosample!AddDevice (struct _DRIVER_OBJECT *, struct _DEVICE_OBJECT *)
     ```
 
-    For information, see [**x (Examine Symbols)**](https://msdn.microsoft.com/library/windows/hardware/ff561506).
+    For information, see [**x (Examine Symbols)**](x--examine-symbols-.md).
 
 4.  The **!lmi** extension displays detailed information about a module. Type **!lmi tabletaudiosample**. Your output should be similar to the text shown below.
 
@@ -588,7 +590,7 @@ set ENABLE_OPTIMIZER=0
 
 Information about the device driver in the plug and play device tree can be useful for troubleshooting. For example, if a device driver is not resident in the device tree, there may an issue with the installation of the device driver.
 
-For more information about the device node debug extension, see [**!devnode**](https://msdn.microsoft.com/library/windows/hardware/ff562345).
+For more information about the device node debug extension, see [**!devnode**](-devnode.md).
 
 **&lt;-On the host system**
 
@@ -788,16 +790,10 @@ To set a breakpoint using a debug command, use one of the following **b** comman
 2.  Add your local code location to the source path by typing the following command.
 
     ``` syntax
-    ```
-
-    ``` syntax
-    .srcpath+ C:\WDK_Samples\Sysvad
+    .sympath+ C:\WDK_Samples\Sysvad
     ```
 
 3.  Add your local symbol location to the symbol path by typing the following command.
-
-    ``` syntax
-    ```
 
     ``` syntax
     .sympath+ C:\WDK_Samples\Sysvad
@@ -889,9 +885,6 @@ To set a breakpoint using a debug command, use one of the following **b** comman
 **Setting memory access breakpoints**
 
 You can also set breakpoints that fire when a memory location is accessed. Use the **ba** (break on access) command, with the following syntax.
-
-``` syntax
-```
 
 ``` syntax
 ba <access> <size> <address> {options}
@@ -1121,7 +1114,7 @@ Tip: You may want to keep a copy of the Sysvad driver with out the breakpoint ad
     77b3b770 defe     __debugbreak
     ```
 
-## Section 8: Display variables
+## <span id="LookingAtVariables"></span><span id="lookingatvariables"></span><span id="LOOKINGATVARIABLES"></span>Section 8: Display variables
 
 
 *In Section 8, you will use debugger commands to display variables.*
@@ -1215,7 +1208,7 @@ It can be useful to examine variables as the code executes to confirm that the c
 
 8.  **Use DML to Display Variables**
 
-    To use DML to explore variables, click on the underlined elements. The click action builds a [**dx (Display NatVis Expression)**](https://msdn.microsoft.com/library/windows/hardware/dn936815) command that allows you to drill down on nested data structures.
+    To use DML to explore variables, click on the underlined elements. The click action builds a [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command that allows you to drill down on nested data structures.
 
     ``` syntax
     0: kd> dx -r1 (*((tabletaudiosample!CMiniportWaveRT *)0xffffe001d10b8380))
@@ -1352,7 +1345,7 @@ It can be useful to examine variables as the code executes to confirm that the c
                   stream = 0x00000000`00000000
     ```
 
-## Section 9: View call stacks
+## <span id="ViewingCallStacks"></span><span id="viewingcallstacks"></span><span id="VIEWINGCALLSTACKS"></span>Section 9: View call stacks
 
 
 *In Section 9, you will view call stacks to examine caller/calle code.*
@@ -1413,7 +1406,7 @@ This output shows the call stack while debugging the sample adapter code in a br
 11 00000000`00000000 : 00000000`00000000 00000000`00000000 00000000`00000080 00000000`00000000 : 0x12e
 ```
 
-You can use DML to further explore the code. When you click on the first 00 entry, the [**.frame (Set Local Context)**](https://msdn.microsoft.com/library/windows/hardware/ff563155) command is used to set the context and then, the [**dv (Display Local Variables)**](https://msdn.microsoft.com/library/windows/hardware/ff542786) command displays the local variables.
+You can use DML to further explore the code. When you click on the first 00 entry, the [**.frame (Set Local Context)**](-frame--set-local-context-.md) command is used to set the context and then, the [**dv (Display Local Variables)**](dv--display-local-variables-.md) command displays the local variables.
 
 ``` syntax
 0: kd> .frame 0n0;dv /t /v
@@ -1429,7 +1422,7 @@ ffffd001`c3098210 long ntStatus = 0n0
 ffffd001`c3098218 class CMiniportWaveRTStream * stream = 0x00000000`00000000
 ```
 
-## Section 10: Display processes and threads
+## <span id="DisplayingProcessesAndThreads"></span><span id="displayingprocessesandthreads"></span><span id="DISPLAYINGPROCESSESANDTHREADS"></span>Section 10: Display processes and threads
 
 
 *In Section 10, you will use debugger commands to display processes and threads.*
@@ -1440,7 +1433,7 @@ To change the current process context, use the .process &lt;process&gt; command.
 
 -   Use the `!process` command to display the current process that is involved in playing the sound.
 
-    For more information see [**!process**](https://msdn.microsoft.com/library/windows/hardware/ff564717)
+    For more information see [**!process**](-process.md)
 
 The output shows that the process is associated with audiodg.exe. If you are still at the breakpoint described in the previous section of this topic, the current process should be associated with the audiodg.exe image.
 
@@ -1624,7 +1617,7 @@ Because this code is not active, all of the threads are in WAIT state, as expect
 
 **Threads**
 
-The commands to view and set threads are very similar to those of processes. Use the [**!thread**](https://msdn.microsoft.com/library/windows/hardware/ff565440) command to view threads. Use [**.thread**](https://msdn.microsoft.com/library/windows/hardware/ff565449) to set the current threads.
+The commands to view and set threads are very similar to those of processes. Use the [**!thread**](-thread.md) command to view threads. Use [**.thread**](-thread--set-register-context-.md) to set the current threads.
 
 To explore threads associated with the media player, play the media clip again. If the breakpoint described in the previous section is still in place, you will stop in the context of audiodg.exe.
 
@@ -1635,10 +1628,7 @@ Use the !thread -1 0 to display brief information for the current thread. This s
 THREAD ffffe001d3a27040  Cid 10f0.17f4  Teb: 000000ee6cf9d000 Win32Thread: 0000000000000000 RUNNING on processor 0
 ```
 
-To view more information about the thread that is running, type [**!thread**](https://msdn.microsoft.com/library/windows/hardware/ff565440). Information similar to the following should be displayed:
-
-``` syntax
-```
+To view more information about the thread that is running, type [**!thread**](-thread.md). Information similar to the following should be displayed:
 
 ``` syntax
 0: kd> !thread
@@ -1756,27 +1746,27 @@ For more information about threads and processes, see the following references o
 
  
 
-## Section 11: IRQL, registers and disassembly
+## <span id="IRQLRegistersMemory"></span><span id="irqlregistersmemory"></span><span id="IRQLREGISTERSMEMORY"></span>Section 11: IRQL, registers and disassembly
 
 
-### View the saved IRQL
+### <span id="View_the_saved_IRQL"></span><span id="view_the_saved_irql"></span><span id="VIEW_THE_SAVED_IRQL"></span>View the saved IRQL
 
 *In Section 11, you will display the IRQL, and the contents of the regsisters.*
 
 **&lt;- On the host system**
 
-The interrupt request level (IRQL) is used to manage the priority of interrupt servicing. Each processor has an IRQL setting that threads can raise or lower. Interrupts that occur at or below the processor's IRQL setting are masked and will not interfere with the current operation. Interrupts that occur above the processor's IRQL setting take precedence over the current operation. The [**!irql**](https://msdn.microsoft.com/library/windows/hardware/ff563825) extension displays the interrupt request level (IRQL) on the current processor of the target computer before the debugger break occurred. When the target computer breaks into the debugger, the IRQL changes, but the IRQL that was effective just before the debugger break is saved and is displayed by !irql.
+The interrupt request level (IRQL) is used to manage the priority of interrupt servicing. Each processor has an IRQL setting that threads can raise or lower. Interrupts that occur at or below the processor's IRQL setting are masked and will not interfere with the current operation. Interrupts that occur above the processor's IRQL setting take precedence over the current operation. The [**!irql**](-irql.md) extension displays the interrupt request level (IRQL) on the current processor of the target computer before the debugger break occurred. When the target computer breaks into the debugger, the IRQL changes, but the IRQL that was effective just before the debugger break is saved and is displayed by !irql.
 
 ``` syntax
 0: kd> !irql
 Debugger saved IRQL for processor 0x0 -- 2 (DISPATCH_LEVEL)
 ```
 
-### View the registers and disassembly
+### <span id="ViewingTheRegisters"></span><span id="viewingtheregisters"></span><span id="VIEWINGTHEREGISTERS"></span>View the registers and disassembly
 
 **View the registers**
 
-Display the contents of the registers for the current thread on the current processor by using the [**r (Registers)**](https://msdn.microsoft.com/library/windows/hardware/ff554663) command.
+Display the contents of the registers for the current thread on the current processor by using the [**r (Registers)**](r--registers-.md) command.
 
 ``` syntax
 0: kd> r
@@ -1796,7 +1786,7 @@ Alternatively, you can display the contents of the registers by clicking **View*
 
 ![windbg registers window showing about 12 registers](images/sysvad-lab-audio-display-registers.png)
 
-Viewing the contents of the registers can be helpful when stepping through assembly language code execution and in other scenarios. For more information see [**r (Registers)**](https://msdn.microsoft.com/library/windows/hardware/ff554663).
+Viewing the contents of the registers can be helpful when stepping through assembly language code execution and in other scenarios. For more information see [**r (Registers)**](r--registers-.md).
 
 For information about contents of the register, see [x86 Architecture](x86-architecture.md) and [x64 Architecture](x64-architecture.md).
 
@@ -1808,7 +1798,7 @@ You can disassemble the code that is under execution to view the assembly langua
 
 For more information about assembly language disassembly, see [Annotated x86 Disassembly](annotated-x86-disassembly.md) and [Annotated x64 Disassembly](annotated-x64-disassembly.md).
 
-## Section 12: Work with memory
+## <span id="WorkingWithMemory"></span><span id="workingwithmemory"></span><span id="WORKINGWITHMEMORY"></span>Section 12: Work with memory
 
 
 *In Section 12, you will use debugger commands to display the contents of memory.*
@@ -1915,7 +1905,7 @@ Alternatively, you can view the memory by clicking **View** &gt; **Memory**. Use
     }
     ```
 
-8.  Attempt to display the value at the memory location of IVolume by using the [**dt (Display Type)**](https://msdn.microsoft.com/library/windows/hardware/ff542772) command.
+8.  Attempt to display the value at the memory location of IVolume by using the [**dt (Display Type)**](dt--display-type-.md) command.
 
     ``` syntax
     kd> dt dt lVolume
@@ -1931,7 +1921,7 @@ Alternatively, you can view the memory by clicking **View** &gt; **Memory**. Use
         return ntStatus;
     ```
 
-10. Display the value at the memory location of IVolume by using the [**dt (Display Type)**](https://msdn.microsoft.com/library/windows/hardware/ff542772) command.
+10. Display the value at the memory location of IVolume by using the [**dt (Display Type)**](dt--display-type-.md) command.
 
     ``` syntax
     kd> dt lVolume
@@ -1941,7 +1931,7 @@ Alternatively, you can view the memory by clicking **View** &gt; **Memory**. Use
 
     Now that the variable is active, a value of 6291456 is displayed in this example.
 
-11. You can also display the memory location of IVolume by using the [**? (Evaluate Expression)**](https://msdn.microsoft.com/library/windows/hardware/ff566240) command.
+11. You can also display the memory location of IVolume by using the [**? (Evaluate Expression)**](---evaluate-expression-.md) command.
 
     ``` syntax
     kd> ? lVolume
@@ -2077,7 +2067,6 @@ The following example shows how to overwrite memory.
     ffffb780`b7eee6d4  00 00 00 00 28 00 00 00-00 00 00 00 02 00 00 00  ....(...........
     ```
 
-
 Alternatively, you can modify the contents of the memory in a watch or locals window. For the watch window, you may see variables that are out of context of the current frame. Modifying them is not relevant if they are not in context.
 
 ## <span id="EndingTheSession"></span><span id="endingthesession"></span><span id="ENDINGTHESESSION"></span>Section 13: End the WinDbg session
@@ -2095,7 +2084,7 @@ Be sure and use the **g** command to let the target computer run code, so that i
 
 For more information, see [Ending a Debugging Session in WinDbg](ending-a-debugging-session-in-windbg.md) in the debugging reference documentation.
 
-## Section 14: Debugging Resources
+## <span id="WindowsDebuggingResources"></span><span id="windowsdebuggingresources"></span><span id="WINDOWSDEBUGGINGRESOURCES"></span>Section 14: Debugging Resources
 
 
 Additional information is available on Windows debugging. Note that some of these books will use older versions of Windows such as Windows Vista in their examples, but the concepts discussed are applicable to most versions of Windows.
@@ -2120,7 +2109,7 @@ OSR <https://www.osr.com/>
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debug%20Drivers%20-%20Step%20by%20Step%20Lab%20%28Sysvad%20Kernel-Mode%29%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debug%20Drivers%20-%20Step%20by%20Step%20Lab%20%28Sysvad%20Kernel-Mode%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

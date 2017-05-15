@@ -83,7 +83,7 @@ The GPU is taking more time than permitted to display graphics to your monitor. 
     -   Defective parts (memory modules, motherboards, etc.)
 -   Visual effects, or too many programs running in the background may be slowing your PC down so that the video card can not respond as necessary.
 
-The [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
 ```
 1: kd> !analyze -v
@@ -112,7 +112,7 @@ MODULE_NAME: nvlddmkm
 IMAGE_NAME:  nvlddmkm.sys
 ```
 
-You can use the [**lm (List Loaded Modules)**](https://msdn.microsoft.com/library/windows/hardware/ff552026)command to display information about the faulting driver, including the timestamp.
+You can use the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md)command to display information about the faulting driver, including the timestamp.
 
 ```
 1: kd> lmvm nvlddmkm
@@ -170,7 +170,7 @@ fffff801`6470c144 48ff257d2deaff  jmp     qword ptr [nvlddmkm+0x6eeec8 (fffff801
 fffff801`6470c14b cc              int     3
 ```
 
-You may wish to examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943) command.
+You may wish to examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command.
 
 ```
 1: kd> k

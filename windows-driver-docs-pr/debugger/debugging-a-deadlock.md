@@ -21,11 +21,11 @@ User-mode deadlocks arise when multiple threads of one application have blocked 
 
 When a deadlock occurs in user mode, use the following procedure to debug it:
 
-1.  Issue the [**!ntsdexts.locks**](https://msdn.microsoft.com/library/windows/hardware/ff563985) extension. In user mode, you can just type **!locks** at the debugger prompt; the **ntsdexts** prefix is assumed.
+1.  Issue the [**!ntsdexts.locks**](-locks---ntsdexts-locks-.md) extension. In user mode, you can just type **!locks** at the debugger prompt; the **ntsdexts** prefix is assumed.
 
-2.  This extension displays all the critical sections associated with the current process, along with the ID for the owning thread and the lock count for each critical section. If a critical section has a lock count of zero, it is not locked. Use the [**~ (Thread Status)**](https://msdn.microsoft.com/library/windows/hardware/ff566245) command to see information about the threads that own the other critical sections.
+2.  This extension displays all the critical sections associated with the current process, along with the ID for the owning thread and the lock count for each critical section. If a critical section has a lock count of zero, it is not locked. Use the [**~ (Thread Status)**](---thread-status-.md) command to see information about the threads that own the other critical sections.
 
-3.  Use the [**kb (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943) command for each of these threads to determine whether they are waiting on other critical sections.
+3.  Use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command for each of these threads to determine whether they are waiting on other critical sections.
 
 4.  Using the output of these **kb** commands, you can find the deadlock: two threads that are each waiting on a lock held by the other thread. In rare cases, a deadlock could be caused by more than two threads holding locks in a circular pattern, but most deadlocks involve only two threads.
 
@@ -62,7 +62,7 @@ The first critical section displayed has no locks and, therefore, can be ignored
 
 The second critical section displayed has a lock count of 2 and is, therefore, a possible cause of a deadlock. The owning thread has a thread ID of 0xA3.
 
-You can find this thread by listing all threads with the [**~ (Thread Status)**](https://msdn.microsoft.com/library/windows/hardware/ff566245) command, and looking for the thread with this ID:
+You can find this thread by listing all threads with the [**~ (Thread Status)**](---thread-status-.md) command, and looking for the thread with this ID:
 
 ``` syntax
 0:006>  ~ 
@@ -79,7 +79,7 @@ You can find this thread by listing all threads with the [**~ (Thread Status)**]
 
 In this display, the first item is the debugger's internal thread number. The second item (the `Id` field) contains two hexadecimal numbers separated by a decimal point. The number before the decimal point is the process ID; the number after the decimal point is the thread ID. In this example, you see that thread ID 0xA3 corresponds to thread number 4.
 
-You then use the [**kb (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943) command to display the stack that corresponds to thread number 4:
+You then use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to display the stack that corresponds to thread number 4:
 
 ``` syntax
 0:006>  ~4 kb 
@@ -133,13 +133,13 @@ Having confirmed the nature of this deadlock, you can use the usual debugging te
 
 There are several debugger extensions that are useful for debugging deadocks in kernel mode:
 
--   The [**!kdexts.locks**](https://msdn.microsoft.com/library/windows/hardware/ff563980) extension displays information about all locks held on kernel resources and the threads holding these locks. (In kernel mode, you can just type **!locks** at the debugger prompt; the **kdexts** prefix is assumed.)
+-   The [**!kdexts.locks**](-locks---kdext--locks-.md) extension displays information about all locks held on kernel resources and the threads holding these locks. (In kernel mode, you can just type **!locks** at the debugger prompt; the **kdexts** prefix is assumed.)
 
--   The [**!qlocks**](https://msdn.microsoft.com/library/windows/hardware/ff564765) extension displays the state of all queued spin locks.
+-   The [**!qlocks**](-qlocks.md) extension displays the state of all queued spin locks.
 
--   The [**!wdfkd.wdfspinlock**](https://msdn.microsoft.com/library/windows/hardware/ff562326) extension displays information about a Kernel-Mode Driver Framework (KMDF) spin-lock object.
+-   The [**!wdfkd.wdfspinlock**](-deadlock.md) extension displays information about a Kernel-Mode Driver Framework (KMDF) spin-lock object.
 
--   The [**!deadlock**](https://msdn.microsoft.com/library/windows/hardware/ff562326) extension is used in conjunction with Driver Verifier to detect inconsistent use of locks in your code that have the potential to cause deadlocks.
+-   The [**!deadlock**](-deadlock.md) extension is used in conjunction with Driver Verifier to detect inconsistent use of locks in your code that have the potential to cause deadlocks.
 
 When a deadlock occurs in kernel mode, use the **!kdexts.locks** extension to list all the locks currently acquired by threads.
 
@@ -149,7 +149,7 @@ You can usually pinpoint the deadlock by finding one non-executing thread that h
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20a%20Deadlock%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20a%20Deadlock%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

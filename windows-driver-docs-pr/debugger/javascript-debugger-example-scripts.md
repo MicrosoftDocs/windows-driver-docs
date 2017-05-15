@@ -37,13 +37,13 @@ function sayHi()
 }
 ```
 
-3. Use the [**.load (Load Extension DLL)**](https://msdn.microsoft.com/library/windows/hardware/ff563964) command to load the JavaScript provider.
+3. Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
 ```
 0:000> .load jsprovider.dll
 ```
 
-4. Use the [**.scriptrun (Run Script)**](https://msdn.microsoft.com/library/windows/hardware/mt790259)command to load and execute the script. The .scriptrun command will run code at the root/top and the code under the function names *initializeScript* and *invokeScript*.
+4. Use the [**.scriptrun (Run Script)**](-scriptrun--run-script-.md)command to load and execute the script. The .scriptrun command will run code at the root/top and the code under the function names *initializeScript* and *invokeScript*.
 
 ```
 0:000> .scriptrun c:\WinDbg\Scripts\HelloWorld.js
@@ -68,7 +68,7 @@ This sample code filters the device node tree to display just devices that conta
 
 This script is intended to support kernel mode debugging.
 
-You can use the !devnode 0 1 command to display information about the device tree. For more information, see [**!devnode**](https://msdn.microsoft.com/library/windows/hardware/ff562345).
+You can use the !devnode 0 1 command to display information about the device tree. For more information, see [**!devnode**](-devnode.md).
 
 ```
 // PlugAndPlayDeviceTree.js
@@ -713,7 +713,7 @@ Debugger.State.Scripts.titleFinder.Contents.findTitleWithLINQ() : C:\Windows\Sys
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20JavaScript%20Debugger%20Example%20Scripts%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20JavaScript%20Debugger%20Example%20Scripts%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

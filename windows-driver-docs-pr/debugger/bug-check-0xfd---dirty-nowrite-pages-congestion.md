@@ -62,7 +62,7 @@ This bug check usually occurs because the component that owns the modified non-w
 Resolution
 ----------
 
-For more information about which driver is causing the problem, use the [**!vm 3**](https://msdn.microsoft.com/library/windows/hardware/ff565602) extension, followed by [**!memusage 1**](https://msdn.microsoft.com/library/windows/hardware/ff564043) .
+For more information about which driver is causing the problem, use the [**!vm 3**](-vm.md) extension, followed by [**!memusage 1**](-memusage.md) .
 
  
 

@@ -46,7 +46,7 @@ Here's how to troubleshoot this problem.
 
 2.  Get the stack pointer of this thread. The stack will look like the one shown in the preceding example. In this example, the stack pointer is 0x0068FBA0.
 
-3.  Get the call information for this thread. In order to do that, use the [**!rpcexts.rpcreadstack**](https://msdn.microsoft.com/library/windows/hardware/ff564874) extension with the thread stack pointer as its parameter, as follows:
+3.  Get the call information for this thread. In order to do that, use the [**!rpcexts.rpcreadstack**](-rpcexts-rpcreadstack.md) extension with the thread stack pointer as its parameter, as follows:
 
     ```
     0:001> !rpcexts.rpcreadstack 68fba0
@@ -60,7 +60,7 @@ Here's how to troubleshoot this problem.
 
     The information displayed here will allow you to trace the call.
 
-4.  The network address is empty, which indicates the local machine. The endpoint is 1120. You need to determine which process hosts this endpoint. This can be done by passing this endpoint number to the [**!rpcexts.getendpointinfo**](https://msdn.microsoft.com/library/windows/hardware/ff564858) extension, as follows:
+4.  The network address is empty, which indicates the local machine. The endpoint is 1120. You need to determine which process hosts this endpoint. This can be done by passing this endpoint number to the [**!rpcexts.getendpointinfo**](-rpcexts-getendpointinfo.md) extension, as follows:
     ```
     0:001> !rpcexts.getendpointinfo 1120
     Searching for endpoint info ...
@@ -69,7 +69,7 @@ Here's how to troubleshoot this problem.
     0278 0000.0001 01            TCP 1120
     ```
 
-5.  From the preceding information, you can see that process 0x278 contains this endpoint. You can determine if this process knows anything about this call by using the [**!rpcexts.getcallinfo**](https://msdn.microsoft.com/library/windows/hardware/ff564843) extension. This extension needs four parameters: *CallID*, *IfStart*, and *ProcNum* (which were found in step 3), and the *ProcessID* of 0x278:
+5.  From the preceding information, you can see that process 0x278 contains this endpoint. You can determine if this process knows anything about this call by using the [**!rpcexts.getcallinfo**](-rpcexts-getcallinfo.md) extension. This extension needs four parameters: *CallID*, *IfStart*, and *ProcNum* (which were found in step 3), and the *ProcessID* of 0x278:
     ```
     0:001> !rpcexts.getcallinfo 1 19bb5061 0 278
     Searching for call info ...
@@ -78,7 +78,7 @@ Here's how to troubleshoot this problem.
     0278 0000.0004 02 000 19bb5061 0000.0002 00000001 00000001 00072c09 0000.0003
     ```
 
-6.  The information in step 5 is useful, but somewhat abbreviated. The cell ID is given in the second column as 0000.0004. If you pass the process ID and this cell number to the [**!rpcexts.getdbgcell**](https://msdn.microsoft.com/library/windows/hardware/ff564854) extension, you will see a more readable display of this cell:
+6.  The information in step 5 is useful, but somewhat abbreviated. The cell ID is given in the second column as 0000.0004. If you pass the process ID and this cell number to the [**!rpcexts.getdbgcell**](-rpcexts-getdbgcell.md) extension, you will see a more readable display of this cell:
 
     ```
     0:001> !rpcexts.getdbgcell 278 0.4
@@ -94,7 +94,7 @@ Here's how to troubleshoot this problem.
     Owning connection identifier: 0x0.3
     ```
 
-    This shows that the call is in state "dispatched", which means is has left the RPC Run-Time. The last update time is 470.25. You can learn the current time by using the [**!rpcexts.rpctime**](https://msdn.microsoft.com/library/windows/hardware/ff564876) extension:
+    This shows that the call is in state "dispatched", which means is has left the RPC Run-Time. The last update time is 470.25. You can learn the current time by using the [**!rpcexts.rpctime**](-rpcexts-rpctime.md) extension:
 
     ```
     0:001> !rpcexts.rpctime
@@ -126,7 +126,7 @@ It is possible that the thread was making another RPC call. If necessary, you ca
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Analyzing%20a%20Stuck%20Call%20Problem%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Analyzing%20a%20Stuck%20Call%20Problem%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

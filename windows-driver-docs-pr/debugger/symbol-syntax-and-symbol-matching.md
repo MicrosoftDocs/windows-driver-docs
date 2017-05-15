@@ -19,7 +19,7 @@ In many cases, symbols can be used as parameters in debugger commands. This is s
 
 A symbol name consists of one or more characters, but always begins with a letter, underscore (**\_**), question mark (**?**), or dollar sign (**$**).
 
-A symbol name may be qualified by a module name. An exclamation mark (**!**) separates the module name from the symbol (for instance, **mymodule!main**). If no module name is used, the symbol can still be prefixed with an exclamation mark. Using an exclamation mark with no module name can be especially useful, even for local variables, to indicate to a debugger command that a parameter is a name and not a hexadecimal number. For example, the variable **fade** will be read by the [**dt (Display Type)**](https://msdn.microsoft.com/library/windows/hardware/ff542772) command as an address, unless it is prefixed by an exclamation mark or the -n option is used. However, to specify that a symbol is local, precede it with a dollar sign ( $ ) and an exclamation point ( ! ), as in **$!lime**.
+A symbol name may be qualified by a module name. An exclamation mark (**!**) separates the module name from the symbol (for instance, **mymodule!main**). If no module name is used, the symbol can still be prefixed with an exclamation mark. Using an exclamation mark with no module name can be especially useful, even for local variables, to indicate to a debugger command that a parameter is a name and not a hexadecimal number. For example, the variable **fade** will be read by the [**dt (Display Type)**](dt--display-type-.md) command as an address, unless it is prefixed by an exclamation mark or the -n option is used. However, to specify that a symbol is local, precede it with a dollar sign ( $ ) and an exclamation point ( ! ), as in **$!lime**.
 
 Symbol names are completely case-insensitive. This means that the presence of a **myInt** and a **MyInt** in your program will not be correctly understood by the debuggers; any command that references one of these may access the other one, regardless of how the command is capitalized.
 
@@ -35,7 +35,7 @@ For an explanation of when and how to use each type of syntax, see [Evaluating E
 
 If you are using MASM expression syntax, any symbol that could be interpreted as a hexadecimal number or as a register (e.g., **BadFeed**, **ebX**) should always be prefixed by an exclamation point. This makes sure the debugger recognizes it as a symbol.
 
-The [**ss (Set Symbol Suffix)**](https://msdn.microsoft.com/library/windows/hardware/ff558792) command can be used to set the symbol suffix. This instructs the debugger to automatically append "A" or "W" to any symbol name it cannot find otherwise.
+The [**ss (Set Symbol Suffix)**](ss--set-symbol-suffix-.md) command can be used to set the symbol suffix. This instructs the debugger to automatically append "A" or "W" to any symbol name it cannot find otherwise.
 
 Many Win32 routines exist in both ASCII and Unicode versions. These routines often have an "A" or "W" appended to the end of their names, respectively. Using a symbol suffix will aid the debugger when searching for these symbols.
 
@@ -43,9 +43,9 @@ Suffix matching is not active by default.
 
 ### <span id="symbol_syntax_in_text_expressions"></span><span id="SYMBOL_SYNTAX_IN_TEXT_EXPRESSIONS"></span>Symbol Syntax in Text Expressions
 
-Symbols can be used in the text parameters of some commands -- for example, [**bm (Set Breakpoint)**](https://msdn.microsoft.com/library/windows/hardware/ff538903) and [**x (Examine Symbols)**](https://msdn.microsoft.com/library/windows/hardware/ff561506).
+Symbols can be used in the text parameters of some commands -- for example, [**bm (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md) and [**x (Examine Symbols)**](x--examine-symbols-.md).
 
-These text parameters support a variety of wildcards and specifiers. See [String Wildcard Syntax](https://msdn.microsoft.com/library/windows/hardware/ff558819) for details. In addition to the standard string wildcards, a text expression used to specify a symbol can be prefixed with a leading underscore. When matching this to a symbol, the debugger will treat this as any quantity of underscores, even zero.
+These text parameters support a variety of wildcards and specifiers. See [String Wildcard Syntax](string-wildcard-syntax.md) for details. In addition to the standard string wildcards, a text expression used to specify a symbol can be prefixed with a leading underscore. When matching this to a symbol, the debugger will treat this as any quantity of underscores, even zero.
 
 The symbol suffix is not used when matching symbols in text expressions.
 
@@ -53,7 +53,7 @@ The symbol suffix is not used when matching symbols in text expressions.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Symbol%20Syntax%20and%20Symbol%20Matching%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Symbol%20Syntax%20and%20Symbol%20Matching%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 
