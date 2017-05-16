@@ -29,7 +29,7 @@ The *client* is a remote computer that sends commands to the console program. Th
 
 The Remote tool supports multiple clients in each remote session. Each client is running one Remote Client. All of the clients can send commands to the console program running on the server, and all of the clients can see the commands sent and output displayed.
 
-### <span id="visible_session"></span><span id="VISIBLE_SESSION"></span>Visible Session
+### <span id="visible-session"></span><span id="VISIBLE_SESSION"></span>Visible Session
 
 When remote sessions are *visible*, they appear in the list of remote sessions on the computer. To display the list, use the [**Remote Server query command**](remote-server-query-command.md) (**/q**).
 

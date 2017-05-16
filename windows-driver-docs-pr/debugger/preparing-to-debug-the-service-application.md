@@ -11,7 +11,7 @@ This topic lists all the preparatory steps that may be required prior to debuggi
 
 Each of the preparatory steps described in this topic specifies the conditions under which it is required. These steps can be done in any order.
 
-### <span id="enabling_the_debugging_of_the_initialization_code"></span><span id="ENABLING_THE_DEBUGGING_OF_THE_INITIALIZATION_CODE"></span> Enabling the Debugging of the Initialization Code
+### <span id="enabling-the-debugging-of-the-initialization_code"></span><span id="ENABLING_THE_DEBUGGING_OF_THE_INITIALIZATION_CODE"></span> Enabling the Debugging of the Initialization Code
 
 If you plan to debug the service application from the beginning of its execution, including its initialization code, this preparatory step is required.
 
@@ -57,7 +57,7 @@ Under this registry key, create a string data value entitled **Debugger**. The v
 
 After this registry edit is complete, the debugger is launched whenever a service with this name is started or restarted.
 
-### <span id="enabling_the_service_application_to_break_into_the_debugger"></span><span id="ENABLING_THE_SERVICE_APPLICATION_TO_BREAK_INTO_THE_DEBUGGER"></span> Enabling the Service Application to Break Into the Debugger
+### <span id="enabling-the-service-application-to-break-into-the-debugger"></span><span id="ENABLING_THE_SERVICE_APPLICATION_TO_BREAK_INTO_THE_DEBUGGER"></span> Enabling the Service Application to Break Into the Debugger
 
 If you want the service application to break into the debugger when it crashes or encounters an exception, this preparatory step is required. This step is also required if you want the service application to break into the debugger by calling the **DebugBreak** function.
 
@@ -99,7 +99,7 @@ This preparatory step involves registering the chosen debugger as the postmortem
 
 When you issue one of these commands, the postmortem debugger is registered. This debugger will be launched whenever any user-mode program, including a service application, encounters an exception or runs a **DebugBreak** function.
 
-### <span id="adjusting_the_service_application_timeout"></span><span id="ADJUSTING_THE_SERVICE_APPLICATION_TIMEOUT"></span> Adjusting the Service Application Timeout
+### <span id="adjusting-the-service-application-timeout"></span><span id="ADJUSTING_THE_SERVICE_APPLICATION_TIMEOUT"></span> Adjusting the Service Application Timeout
 
 If you plan to launch the debugger automatically (either when the service starts or when it encounters an exception), this preparatory step is required.
 
@@ -115,7 +115,7 @@ The significance of this value is that a clock starts to run when each service i
 
 This setting applies to every service that is started or restarted after the registry edit is complete. If some service crashes or hangs and this setting is still in effect, the problem is not detected by Windows. Therefore, you should use this setting only while you are debugging, and return the registry key to its original value after your debugging is complete.
 
-### <span id="isolating_the_service"></span><span id="ISOLATING_THE_SERVICE"></span> Isolating the Service
+### <span id="isolating-the-service"></span><span id="ISOLATING_THE_SERVICE"></span> Isolating the Service
 
 Sometimes, multiple services are combined in a single Service Host (Svchost) process. If you want to debug such a service, you must first isolate it into a separate Svchost process.
 

@@ -32,7 +32,7 @@ The entry `BugCheckCode  0x0A` specifies that this plugin wants to participate i
 
  
 
-## <span id="Skeleton_Example"></span><span id="skeleton_example"></span><span id="SKELETON_EXAMPLE"></span>Skeleton Example
+## <span id="Skeleton_Example"></span><span id="skeleton-example"></span><span id="SKELETON_EXAMPLE"></span>Skeleton Example
 
 
 Here is a skeleton example that you can use as a starting point.
@@ -131,7 +131,7 @@ Here is a skeleton example that you can use as a starting point.
 
 The preceding debugger output shows that the analysis engine called the [**\_EFN\_Analyze**](https://msdn.microsoft.com/library/windows/hardware/jj983432) function four times: once for each phase of the analysis. The analysis engine passes the **\_EFN\_Analyze** function two interface pointers. *Client* is an [**IDebugClient4**](https://msdn.microsoft.com/library/windows/hardware/ff550494) interface, and *pAnalysis* is an [**IDebugFailureAnalysis2**](https://msdn.microsoft.com/library/windows/hardware/jj983405) interface. The code in the preceding skeleton example shows how to obtain two more interface pointers. `Client->QueryInterface` gets an [**IDebugControl**](https://msdn.microsoft.com/library/windows/hardware/ff550508) interface, and `pAnalysis->GetDebugFATagControl` gets an **IDebugFAEntryTags** interface.
 
-## <span id="failure_analysis_entries_tags_and_data_types"></span><span id="FAILURE_ANALYSIS_ENTRIES_TAGS_AND_DATA_TYPES"></span>Failure Analysis Entries, Tags, and Data Types
+## <span id="failure-analysis-entries-tags-and-data-types"></span><span id="FAILURE_ANALYSIS_ENTRIES_TAGS_AND_DATA_TYPES"></span>Failure Analysis Entries, Tags, and Data Types
 
 
 The analysis engine creates a [**DebugFailureAnalysis**](https://msdn.microsoft.com/library/windows/hardware/jj983405) object to organize the data related to a particular code failure. A **DebugFailureAnalysis** object has a collection of [failure analysis entries](failure-analysis-entries.md) (FA entries), each of which is represented by an **FA\_ENTRY** structure. An analysis extension plugin uses the **IDebugFailureAnalysis2** interface to get access to this collection of FA entries. Each FA entry has a tag that identifies the kind of information that the entry contains. For example, an FA entry might have the tag **DEBUG\_FLR\_BUGCHECK\_CODE**, which tells us that the entry contains a bug check code. Tags are values in the **DEBUG\_FLR\_PARAM\_TYPE** enumeration (defined in extsfns.h), which is also called the **FA\_TAG** enumeration.

@@ -72,14 +72,14 @@ Debugging over a USB 2.0 cable requires the following hardware:
 
 8.  Reboot the target computer.
 
-## <span id="Setting_Up_the_Host_Computer"></span><span id="setting_up_the_host_computer"></span><span id="SETTING_UP_THE_HOST_COMPUTER"></span>Setting Up the Host Computer
+## <span id="Setting-Up-the-Host-Computer"></span><span id="setting_up_the_host_computer"></span><span id="SETTING_UP_THE_HOST_COMPUTER"></span>Setting Up the Host Computer
 
 
 1.  Verify that the host computer is not configured to be the target of USB debugging. (If necessary, open a Command Prompt window as Administrator, enter **bcdedit /debug off**, and reboot.)
 2.  On the host computer, use UsbView to find the EHCI host controllers and ports that support debugging. If possible, plug one end of the USB 2.0 debug cable into an EHCI port (on the host computer) that does not support debugging. Otherwise, plug the cable into any EHCI port on the host computer.
 3.  Plug the other end of the USB 2.0 debug cable into the connector that you identified previously on the target computer.
 
-## <span id="Starting_a_Debugging_Session_for_the_First_Time"></span><span id="starting_a_debugging_session_for_the_first_time"></span><span id="STARTING_A_DEBUGGING_SESSION_FOR_THE_FIRST_TIME"></span>Starting a Debugging Session for the First Time
+## <span id="Starting-a-Debugging-Session-for-the-First-Time"></span><span id="starting_a_debugging_session_for_the_first_time"></span><span id="STARTING_A_DEBUGGING_SESSION_FOR_THE_FIRST_TIME"></span>Starting a Debugging Session for the First Time
 
 
 1.  Determine the bitness (32-bit or 64-bit) of Windows running on the host computer.
@@ -92,10 +92,10 @@ At this point, the USB debug driver gets installed on the host computer. This is
 
  
 
-## <span id="Starting_a_Debugging_Session"></span><span id="starting_a_debugging_session"></span><span id="STARTING_A_DEBUGGING_SESSION"></span>Starting a Debugging Session
+## <span id="Starting-a-Debugging-Session"></span><span id="starting_a_debugging_session"></span><span id="STARTING_A_DEBUGGING_SESSION"></span>Starting a Debugging Session
 
 
-### <span id="Using_WinDbg"></span><span id="using_windbg"></span><span id="USING_WINDBG"></span>Using WinDbg
+### <span id="Using-WinDbg"></span><span id="using_windbg"></span><span id="USING_WINDBG"></span>Using WinDbg
 
 On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**. In the Kernel Debugging dialog box, open the **USB** tab. Enter the target name that you created when you set up the target computer. Click **OK**.
 
@@ -109,7 +109,7 @@ On the host computer, open a Command Prompt window and enter the following comma
 
 **kd /k usb:targetname=***TargetName*
 
-## <span id="what_if_usbview_shows_a_debug_capable_port"></span><span id="WHAT_IF_USBVIEW_SHOWS_A_DEBUG_CAPABLE_PORT"></span>What if USBView shows a debug-capable port, but does not show the port mapped to any physical connector?
+## <span id="what-if-usbview-shows-a-debug-capable_port"></span><span id="WHAT_IF_USBVIEW_SHOWS_A_DEBUG_CAPABLE_PORT"></span>What if USBView shows a debug-capable port, but does not show the port mapped to any physical connector?
 
 
 On some computers, USBView shows a debug-capable port, but does not show the port mapped to any physical USB connector. For example, USBView might show port 2 as the debug port number for an eHCI controller.
@@ -142,11 +142,11 @@ In a case like this, you might still be able to establish kernel-mode debugging 
 
 **bcdedit /set "{dbgsettings}" busparams 0.29.0**
 
-### <span id="software_setup"></span><span id="SOFTWARE_SETUP"></span>Additional Support
+### <span id="software-setup"></span><span id="SOFTWARE_SETUP"></span>Additional Support
 
 For troubleshooting tips and detailed instructions on setting up kernel debugging over USB, see [Setting Up Kernel Debugging with USB 2.0](http://go.microsoft.com/fwlink/p?linkid=389435) in MSDN Blogs.
 
-## <span id="related_topics"></span>Related topics
+## <span id="related-topics"></span>Related topics
 
 
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)

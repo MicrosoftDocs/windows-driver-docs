@@ -15,7 +15,7 @@ api_type:
 
 
 **Important**  
-This extension is not supported in Windows Vista and later versions of Windows. Lpc is now emulated in alpc, use the [**!alpc**](debugger-_alpc) extension instead.
+This extension is not supported in Windows Vista and later versions of Windows. Lpc is now emulated in alpc, use the !alpc extension instead.
 
  
 

@@ -85,7 +85,7 @@ The register context affects stack traces, because the stack trace begins at the
 
 You can apply a processor breakpoint (data breakpoint) to a specific register context by using the [**.apply\_dbp (Apply Data Breakpoint to Context)**](-apply-dbp--apply-data-breakpoint-to-context-.md) command.
 
-### <span id="local_context"></span><span id="LOCAL_CONTEXT"></span>Local Context
+### <span id="local-context"></span><span id="LOCAL_CONTEXT"></span>Local Context
 
 When a program is executing, the meaning of local variables depends on the location of the program counter, because the scope of such variables extends only to the function that they are defined in.
 

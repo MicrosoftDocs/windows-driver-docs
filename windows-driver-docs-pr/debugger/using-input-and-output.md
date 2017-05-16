@@ -17,7 +17,7 @@ For an overview of the input and output streams in the debugger engine, see [Inp
 
 The engine will ask for input from all its clients if the [**Input**](https://msdn.microsoft.com/library/windows/hardware/ff550962) method is called on a client. The input is returned to the caller of **Input**.
 
-### <span id="input_callbacks"></span><span id="INPUT_CALLBACKS"></span>Input Callbacks
+### <span id="input-callbacks"></span><span id="INPUT_CALLBACKS"></span>Input Callbacks
 
 When the engine asks for input from a client, it uses the [IDebugInputCallbacks](https://msdn.microsoft.com/library/windows/hardware/ff550785) object registered with that client. An **IDebugInputCallbacks** object may be registered with a client using [*SetInputCallbacks*](https://msdn.microsoft.com/library/windows/hardware/ff556721). Each client can have at most one **IDebugInputCallbacks** object registered with it.
 
@@ -41,19 +41,19 @@ Output may be buffered by the engine. If multiple pieces of output are passed to
 
 Each client object has an *output width*, which is the width of the output display for the client object. While this width is only used as a hint, some commands and extension functions format their output based on this width. The width is returned by the GetOutputWidth method and can be set using the SetOutputWidth method.
 
-### <span id="output_callbacks"></span><span id="OUTPUT_CALLBACKS"></span>Output Callbacks
+### <span id="output-callbacks"></span><span id="OUTPUT_CALLBACKS"></span>Output Callbacks
 
 When the engine sends output to a client, it uses the [IDebugOutputCallbacks](https://msdn.microsoft.com/library/windows/hardware/ff550801) object registered with the client. An **IDebugOutputCallbacks** object may be registered with a client using [*SetOutputCallbacks*](https://msdn.microsoft.com/library/windows/hardware/ff556751). Each client can have at most one **IDebugInputCallbacks** object registered with it.
 
 To send the output, the engine calls the [**IDebugOutputCallbacks::Output**](https://msdn.microsoft.com/library/windows/hardware/ff550815) method.
 
-### <span id="output_line_prefix"></span><span id="OUTPUT_LINE_PREFIX"></span>Output Line Prefix
+### <span id="output-line-prefix"></span><span id="OUTPUT_LINE_PREFIX"></span>Output Line Prefix
 
 Each client object has an *output line prefix* which is prepended to every line of output sent to the output callback associated with the client object. This can be used for indentation or to place identifying marks on each line of output.
 
 The output line prefix is returned by GetOutputLinePrefix and can be set using SetOutputLinePrefix. To temporarily change the output line prefix and later change it back again, use PushOutputLinePrefix and PopOutputLinePrefix.
 
-### <span id="log_files"></span><span id="LOG_FILES"></span>Log Files
+### <span id="log-files"></span><span id="LOG_FILES"></span>Log Files
 
 The debugger engine supports opening a log file to record a debugging session. At most, one log file can be open at a time. Output sent to the output callbacks is also sent to this log file (unless it is flagged to not be logged).
 

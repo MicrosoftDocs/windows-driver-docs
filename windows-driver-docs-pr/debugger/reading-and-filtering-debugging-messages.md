@@ -31,7 +31,7 @@ The basic procedure is as follows:
 
 Full details follow. All references on this page to **DbgPrintEx** apply equally to **KdPrintEx**.
 
-### <span id="identifying_the_component_name"></span><span id="IDENTIFYING_THE_COMPONENT_NAME"></span>Identifying the Component Name
+### <span id="identifying-the-component-name"></span><span id="IDENTIFYING_THE_COMPONENT_NAME"></span>Identifying the Component Name
 
 Each component has a separate filter mask. This allows the debugger to configure the filter for each component separately.
 
@@ -116,7 +116,7 @@ The warning, trace, and information levels should be used in the appropriate sit
 
 In Windows Vista and later versions of Windows, all messages sent by **DbgPrint** and **KdPrint** behave like **DbgPrintEx** and **KdPrintEx** messages with *Level* equal to DPFLTR\_INFO\_LEVEL. In other words, these messages have the third bit of their importance bit field set.
 
-### <span id="setting_the_component_filter_mask"></span><span id="SETTING_THE_COMPONENT_FILTER_MASK"></span>Setting the Component Filter Mask
+### <span id="setting-the-component-filter-mask"></span><span id="SETTING_THE_COMPONENT_FILTER_MASK"></span>Setting the Component Filter Mask
 
 There are two ways to set a component filter mask:
 
@@ -128,7 +128,7 @@ Filter masks stored in the registry take effect during boot. Filter masks create
 
 There is also a system-wide mask called **WIN2000**. This is equal to 0x1 by default, though it can be changed through the registry or the debugger like all other components. When filtering is performed, each component filter mask is first ORed with the **WIN2000** mask. In particular, this means that components whose masks have never been specified default to 0x1.
 
-### <span id="criteria_for_displaying_the_message"></span><span id="CRITERIA_FOR_DISPLAYING_THE_MESSAGE"></span>Criteria for Displaying the Message
+### <span id="criteria-for-displaying_the_message"></span><span id="CRITERIA_FOR_DISPLAYING_THE_MESSAGE"></span>Criteria for Displaying the Message
 
 When **DbgPrintEx** is called in kernel-mode code, Windows compares the message importance bit field specified by *Level* with the filter mask of the component specified by *ComponentId*.
 
@@ -176,7 +176,7 @@ The third message has its *Level* parameter equal to DPFLTR\_MASK | 0x10. This i
 
 The fourth message was passed to **DbgPrint** instead of **DbgPrintEx**. In Windows Server 2003 and earlier versions of Windows, messages passed to this routine are always transmitted. In Windows Vista and later versions of Windows, messages passed to this routine are always given a default filter. The importance bit field is equal to 1 &lt;&lt; DPFLTR\_INFO\_LEVEL, which is 0x00000008. The component for this routine is **DEFAULT**. Since you have not set the **DEFAULT** component filter mask, it has a value of 0x1. When this is ANDed with the importance bit field, the result is zero. So the fourth message is not transmitted.
 
-### <span id="the_dbgprint_buffer"></span><span id="THE_DBGPRINT_BUFFER"></span>The DbgPrint Buffer
+### <span id="the-dbgprint-buffer"></span><span id="THE_DBGPRINT_BUFFER"></span>The DbgPrint Buffer
 
 When **DbgPrint**, **DbgPrintEx**, **KdPrint**, or **KdPrintEx** transmits a message to the debugger, the formatted string is sent to the *DbgPrint buffer*. In most cases, the contents of this buffer are displayed immediately in the Debugger Command window. This display can be disabled by using the **Buffer DbgPrint Output** option of the Global Flags Utility (gflags.exe). This display does not automatically appear during local kernel debugging.
 

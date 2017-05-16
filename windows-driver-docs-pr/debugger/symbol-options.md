@@ -316,7 +316,7 @@ This option is on by default in all debuggers. Once the debugger is running, it 
 
 This option is off by default in DBH. Once DBH is running, it can be turned on or off by using symopt +20000 or symopt -20000, respectively.
 
-### <span id="symopt_secure"></span><span id="SYMOPT_SECURE"></span>SYMOPT\_SECURE
+### <span id="symopt-secure"></span><span id="SYMOPT_SECURE"></span>SYMOPT\_SECURE
 
 (Kernel mode only) This symbol option indicates whether [Secure Mode](secure-mode.md) is active.
 
@@ -326,7 +326,7 @@ This option is off by default in DBH. Once DBH is running, it can be turned on o
 
 Secure mode can never be turned off once it has been activated.
 
-### <span id="symopt_no_prompts"></span><span id="SYMOPT_NO_PROMPTS"></span>SYMOPT\_NO\_PROMPTS
+### <span id="symopt-no-prompts"></span><span id="SYMOPT_NO_PROMPTS"></span>SYMOPT\_NO\_PROMPTS
 
 This symbol option suppresses authentication dialog boxes from the proxy server. This may result in SymSrv being unable to access a symbol store on the internet.
 
@@ -336,11 +336,11 @@ In KD and CDB, this option is on by default; in WinDbg, this option is off by de
 
 This option is off by default in DBH. Once DBH is running, it can be turned on or off by using symopt +80000 or symopt -80000, respectively.
 
-### <span id="symopt_disable_fast_symbols"></span><span id="SYMOPT_DISABLE_FAST_SYMBOLS"></span>
+### <span id="symopt-disable-fast-symbols"></span>
 
-### <span id="symopt_disable_symsrv_timeout"></span><span id="SYMOPT_DISABLE_SYMSRV_TIMEOUT"></span>
+### <span id="symopt_disable_symsrv_timeout"></span>
 
-### <span id="symopt_debug"></span><span id="SYMOPT_DEBUG"></span>SYMOPT\_DEBUG
+### <span id="symopt-debug"></span>-SYMOPT\_DEBUG
 
 This symbol option turns on *noisy symbol loading*. This instructs the debugger to display information about its search for symbols.
 

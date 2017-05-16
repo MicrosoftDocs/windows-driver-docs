@@ -12,7 +12,7 @@ You can use the windows debuggers (WinDbg, CDB, and NTSD) to debug target applic
 
 The windows debuggers are separate from the Visual Studio debugger. For information about the distinction between the windows debuggers and the Visual Studio debugger, see [Windows Debugging](introduction6.md).
 
-## <span id="introduction_to_managed_code"></span><span id="INTRODUCTION_TO_MANAGED_CODE"></span>Introduction to Managed Code
+## <span id="introduction-to-managed-code"></span><span id="INTRODUCTION_TO_MANAGED_CODE"></span>Introduction to Managed Code
 
 
 Managed code is executed together with the Microsoft .NET common language runtime (CLR). In a managed-code application, the binary code that the compiler produces is in Microsoft intermediate language (MSIL), which is platform-independent.
@@ -34,7 +34,7 @@ The CLR is not updated every time the .NET Framework is updated. For example, ve
 
  
 
-## <span id="debugging_managed_code"></span><span id="DEBUGGING_MANAGED_CODE"></span>Debugging Managed Code
+## <span id="debugging-managed_code"></span><span id="DEBUGGING_MANAGED_CODE"></span>Debugging Managed Code
 
 
 To debug managed code, the debugger must load these two components.
@@ -46,7 +46,7 @@ To debug managed code, the debugger must load these two components.
 
  
 
-### <span id="getting_the_sos_debugging_extension"></span><span id="GETTING_THE_SOS_DEBUGGING_EXTENSION"></span>Getting the SOS Debugging Extension (sos.dll)
+### <span id="getting-the-sos-debugging-extension"></span><span id="GETTING_THE_SOS_DEBUGGING_EXTENSION"></span>Getting the SOS Debugging Extension (sos.dll)
 
 The SOS debugging extension (sos.dll) files are not included in the current version of Debugging Tools for Windows.
 

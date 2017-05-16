@@ -45,7 +45,7 @@ Ndiskd.dll
 Examples
 --------
 
-The **NET\_BUFFER** in the following examples was obtained from the [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-list-structure) in the Examples section of the [**!ndiskd.nbl**](debugger-) topic. The NB's handle is ffffdf8014952610.
+The **NET\_BUFFER** in the following examples was obtained from the [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-list-structure) in the Examples section of the [**!ndiskd.nbl**](-ndiskd-nbl.md) topic. The NB's handle is ffffdf8014952610.
 
 ```cmd
 2: kd> !ndiskd.nbl ffffdf80149524a0 -data
@@ -94,7 +94,7 @@ Use the **!ndiskd.nb -chain** command to see this **NET\_BUFFER**'s MDL chain in
 
 [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-list-structure)
 
-[**!ndiskd.nbl**](debugger-)
+[**!ndiskd.nbl**](-ndiskd-nbl.md)
 
  
 
