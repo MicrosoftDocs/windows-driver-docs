@@ -59,9 +59,9 @@ We're making the docs more community-driven. On many pages of the Windows driver
 
 ![screenshot of contribute button](contribute-button.png)
 
-When you click **Contribute**, you'll arrive at the Markdown source file for that topic in a [GitHub repository](https://github.com/Microsoft/windows-driver-docs). You can click **Edit** and suggest changes right here.
+When you click **Contribute**, you'll arrive at the Markdown source file for that topic in a [GitHub repository](https://github.com/MicrosoftDocs/windows-driver-docs). You can click **Edit** and suggest changes right here.
 
-For more details, see [CONTRIBUTING.md](https://github.com/Microsoft/windows-driver-docs/blob/staging/CONTRIBUTING.md) in the repo. And thanks for taking the time to improve the docs!
+For more details, see [CONTRIBUTING.md](https://github.com/MicrosoftDocs/windows-driver-docs/blob/staging/CONTRIBUTING.md) in the repo. And thanks for taking the time to improve the docs!
 
 ### Debugging Tools for Windows
 

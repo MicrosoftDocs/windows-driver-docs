@@ -14,10 +14,7 @@ ms.technology: windows-devices
 
 
 Use the Sensor Diagnostic Tool to test whether your driver and firmware support property retrieval. The tool invokes properties in the Sensor API to determine whether you support property retrieval.
-
-**Note**  The Sensor Diagnostic Tool is acceptable for testing on Windows 8.1 and earlier operating systems. The tool is now deprecated for Windows 10, so for sensor driver testing and diagnostics on Windows 10 and later operating systems, please use the SensorInfo App from the Windows Store.
-
- 
+Â 
 
 ## Configuring the Sensor Diagnostic Tool to Retrieve Sensor Properties
 
