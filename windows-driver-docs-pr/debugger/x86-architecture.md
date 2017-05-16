@@ -214,7 +214,7 @@ cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000             efl=00000286
 
 In user-mode debugging, you can ignore the **iopl** and the entire last line of the debugger display.
 
-### <span id="x86_flags"></span><span id="X86_FLAGS"></span>x86 Flags
+### <span id="x86-flags"></span><span id="X86_FLAGS"></span>x86 Flags
 
 In the preceding example, the two-letter codes at the end of the second line are *flags*. These are single-bit registers and have a variety of uses.
 

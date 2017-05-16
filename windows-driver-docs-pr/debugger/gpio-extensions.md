@@ -13,7 +13,7 @@ The GPIO debugger extension commands are implemented in gpiokd.dll. To load the 
 
 Each GPIO controller has a set of banks. Each bank has a pin table that has an array of pins. The GPIO debugger extension commands display information about GPIO controllers, banks, pin tables, and pins.
 
-## <span id="data_structures_used_by_the_gpio_commands"></span><span id="DATA_STRUCTURES_USED_BY_THE_GPIO_COMMANDS"></span>Data structures used by the GPIO commands
+## <span id="data-structures-used-by-the-gpio-commands"></span><span id="DATA_STRUCTURES_USED_BY_THE_GPIO_COMMANDS"></span>Data structures used by the GPIO commands
 
 
 The GPIO debugger extension commands use these data structures, which are defined by Msgpioclx.sys.

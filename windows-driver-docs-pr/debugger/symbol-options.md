@@ -236,7 +236,7 @@ This option is off by default in all debuggers. It can be activated by using the
 
 This option is off by default in DBH. Once DBH is running, it can be turned on or off by using symopt +80 or symopt -80, respectively.
 
-### <span id="symopt-no-unqualified_loads"></span><span id="SYMOPT_NO_UNQUALIFIED_LOADS"></span>SYMOPT\_NO\_UNQUALIFIED\_LOADS
+### <span id="symopt-no-unqualified-loads"></span><span id="SYMOPT_NO_UNQUALIFIED_LOADS"></span>SYMOPT\_NO\_UNQUALIFIED\_LOADS
 
 This symbol option disables the symbol handler's automatic loading of modules. When this option is set and the debugger attempts to match a symbol, it will only search modules which have already been loaded.
 
@@ -246,7 +246,7 @@ This option is off by default in all debuggers. It can be activated by using the
 
 This option is off by default in DBH. Once DBH is running, it can be turned on or off by using symopt +100 or symopt -100, respectively.
 
-### <span id="symopt-fail-critical_errors"></span><span id="SYMOPT_FAIL_CRITICAL_ERRORS"></span>SYMOPT\_FAIL\_CRITICAL\_ERRORS
+### <span id="symopt-fail-critical-errors"></span><span id="SYMOPT_FAIL_CRITICAL_ERRORS"></span>SYMOPT\_FAIL\_CRITICAL\_ERRORS
 
 This symbol option causes file access error dialog boxes to be suppressed.
 

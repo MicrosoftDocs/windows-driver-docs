@@ -65,7 +65,7 @@ If the stack frame is at the top of the call stack, the current instruction is t
 
 The methods [**GetScope**](https://msdn.microsoft.com/library/windows/hardware/ff548270) and [**SetScope**](https://msdn.microsoft.com/library/windows/hardware/ff556773) can be used to get and set the current scope. When an event occurs, the current scope is set to the scope of the event. The current scope can be reset to the scope of the last event using [**ResetScope**](https://msdn.microsoft.com/library/windows/hardware/ff554577).
 
-### <span id="thread_context"></span><span id="THREAD_CONTEXT"></span>Thread Context
+### <span id="thread-context"></span><span id="THREAD_CONTEXT"></span>Thread Context
 
 The *thread context* is the state preserved by Windows when switching threads. This is similar to the register context, except that there is some kernel-only processor state that is part of the register context but not the thread context. This extra state is available as registers during kernel-mode debugging.
 

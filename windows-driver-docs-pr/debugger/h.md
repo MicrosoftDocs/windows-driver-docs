@@ -11,7 +11,7 @@ ms.assetid: 478e6900-86f9-487c-a2fd-18543402f5e2
 <span id="host"></span><span id="HOST"></span>**host**  
 See host computer.
 
-<span id="handling_status"></span><span id="HANDLING_STATUS"></span>**handling status**  
+<span id="handling-status"></span><span id="HANDLING_STATUS"></span>**handling status**  
 The handling status specifies whether the debugger engine should flag an exception event as handled or not. The handling status is part of an exception filter.
 
 See also break status. For more information, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md) and [Event Filters](event-filters.md)
