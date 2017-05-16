@@ -1,13 +1,13 @@
 ---
-title: TBD
-description: TBD
+title: Switch from Legacy MBR disk to GPT disk with Windows 10 
+description: Provides guidance to enable a seamless upgrade and enable the user to leverage new and improved security features of Windows 10.
+author: windows-driver-content
 ms.author: windowsdriverdev
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
-
 
 
 
@@ -45,10 +45,7 @@ Upgrade paths
 ## Related resources
 
 
-| [Windows 10 Specification](https://www.microsoft.com/en-us/windows/Windows-10-specifications) |
-|-----------------------------------------------------------------------------------------------|
-
-
+[Windows 10 Specification](https://www.microsoft.com/en-us/windows/Windows-10-specifications) 
 
 
 

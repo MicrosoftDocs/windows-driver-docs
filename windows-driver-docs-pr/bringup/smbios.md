@@ -32,7 +32,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td><b>Example</b></td>
         </tr>
         <tr>
-            <td>"Manufacturer"</td>
+            <td>Manufacturer</td>
             <td>System Information (Type 1)</td>
             <td>String</td>
             <td>04h</td>
@@ -41,7 +41,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>"Contoso"</td>
         </tr>
         <tr>
-            <td>"Family"</td>
+            <td>Family</td>
             <td>System Information (Type 1)</td>
             <td>String</td>
             <td>1Ah</td>
@@ -49,7 +49,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>"A11"</td>
         </tr>
         <tr>
-            <td>"Product Name"</td>
+            <td>Product Name</td>
             <td>System Information (Type 1)</td>
             <td>String</td>
             <td>05h</td>
@@ -57,7 +57,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>"A11 a110001"</td>
         </tr>
         <tr>
-            <td>"Baseboard Product"</td>
+            <td>Baseboard Product</td>
             <td>Baseboard Information (Type 2)</td>
             <td>String</td>
             <td>05h</td>
@@ -65,7 +65,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>"bb03"</td>
         </tr>
         <tr>
-            <td>"SKU Number"</td>
+            <td>KU Number</td>
             <td>System Information (Type 1)</td>
             <td>String</td>
             <td>19h</td>
@@ -73,7 +73,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>"A11a11001-EU-04"</td>
         </tr>
         <tr>
-            <td>"Serial Number"</td>
+            <td>Serial Number</td>
             <td>System Information (Type 1)</td>
             <td>String</td>
             <td>07h</td>
@@ -81,7 +81,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>"A1B2C3456789ABC"</td>
         </tr>
         <tr>
-            <td>"UUID"</td>
+            <td>UUID</td>
             <td>System Information (Type 1)</td>
             <td>Varies</td>
             <td>08h</td>
@@ -89,7 +89,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>Universal unique ID number<br>See section 7.2.1. in <a href="http://www.dmtf.org/standards/smbios">DMTF SMBIOS Specification 3.1</a> or later.</td>
         </tr>
         <tr>
-            <td>"Enclosure Type"</td>
+            <td>Enclosure Type</td>
             <td>System Enclosure (Type 3) </td>
             <td>Byte</td>
             <td>05h</td>
@@ -140,8 +140,6 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
 **Note** SMBIOS fields starting with BIOS \* may be considered optional or recommended.<br>These are used to build the **Computer Hardware ID (CHID)** and ensure additional levels of uniqueness in resulting CHID.
 
 
-## TBD A
-
 <table>
 	<tbody>
 		<tr>
@@ -154,37 +152,37 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
 		<tr>
 			<td>Manufacturer</td>
 			<td>Number of null-terminated string.</td>
-			<td>The value in the "manufacturer" field identifies the company brand name under which the device is marketed to the end user. (for example, a brand name or logo imprinted on the device)</td>
-			<td>The format of the "manufacturer" field string is to match what end users identify as the company brand.</td>
-			<td>The “manufacturer” field is the first-level indicator to end users, representing the grouping of all devices sold by the company. This field should rarely, if ever, change.</td>
+			<td>The value in the <b>manufacturer</b> field identifies the company brand name under which the device is marketed to the end user. (for example, a brand name or logo imprinted on the device)</td>
+			<td>The format of the <b>manufacturer</b> field string is to match what end users identify as the company brand.</td>
+			<td>The <b>manufacturer</b> field is the first-level indicator to end users, representing the grouping of all devices sold by the company. This field should rarely, if ever, change.</td>
 		</tr>
 		<tr>
 			<td>Family</td>
 			<td>Number of null-terminated string.</td>>
-			<td>The value in the familyf field identifies the company sub-brand name, specific to a grouping of similar devices know as a product line, under which the device is marketed to end users. The "family" value excludes variance by components, device generation, manufactured year, SKU, or other factors. The "family" value is generally not specific enough to indicate an actual device, but rather product line marketed to end users.</td>
-			<td>The format of the “family” field string is to match what End Users identify as Company’s sub-brand name, specific to a product line. The “family” field string should not contain the “manufacturer” name.</td>
-			<td>The “family” field is the second-level indicator to End Users, representing a grouping of similar devices know as a product line. This field should remain consistent for the life of the product line.</td>
+			<td>The value in the familyf field identifies the company sub-brand name, specific to a grouping of similar devices know as a product line, under which the device is marketed to end users. The <b>family</b> value excludes variance by components, device generation, manufactured year, SKU, or other factors. The <b>family</b> value is generally not specific enough to indicate an actual device, but rather product line marketed to end users.</td>
+			<td>The format of the <b>family</b> field string is to match what End Users identify as Company’s sub-brand name, specific to a product line. The <b>family</b> field string should not contain the <b>manufacturer</b> name.</td>
+			<td>The <b>family</b> field is the second-level indicator to End Users, representing a grouping of similar devices know as a product line. This field should remain consistent for the life of the product line.</td>
 		</tr>
 		<tr>
 			<td>Product Name</td>
 			<td>Number of null-terminated string.</td>
-			<td>The value in the “product name” field identifies Company’s specific model of device, without enumerating configuration variance. (for example, processor, memory, and storage variance) There are often several “product names” that are specific to model in a specific “family”, although generally no more than a dozen or so.</td>
-			<td>The format of the “product name” field string is to match what End Users see as the device model name or identifier value. The recommendation is to include the full value of the Family field followed by a single space and then the model name/identifier value.</td>
-			<td>The “product name” field is the third-level indicator to End Users, representing the specific model of device. A “product name” may last for the lifetime of the “family”, through multiple revisions or generations of the hardware where hardware revisions are not marketed as a new product to End Users.</td>
+			<td>The value in the <b>product name</b> field identifies Company’s specific model of device, without enumerating configuration variance. (for example, processor, memory, and storage variance) There are often several <b>product names</b> that are specific to model in a specific <b>family</b>, although generally no more than a dozen or so.</td>
+			<td>The format of the <b>product name</b> field string is to match what End Users see as the device model name or identifier value. The recommendation is to include the full value of the Family field followed by a single space and then the model name/identifier value.</td>
+			<td>The <b>product name</b> field is the third-level indicator to End Users, representing the specific model of device. A <b>product name</b> may last for the lifetime of the <b>family</b>, through multiple revisions or generations of the hardware where hardware revisions are not marketed as a new product to End Users.</td>
 		</tr>
 		<tr>
 			<td>Baseboard Product</td>
 			<td>Number of null-terminated string.</td>
-			<td>The value in the “baseboard product” field identifies the baseboard and should accurately reflect variances in baseboards across different devices in the same “family” and “product name”. This value must change when the baseboard in the device model changes and it may be used as an asset identifier for servicing.</td>
-			<td>The format of the “baseboard product” field string can be set by Company, and it does not need to align to end user marketing information.</td>
-			<td>The “baseboard product” field is the fourth-level indicator of devices to the company and is not marketed to end users. </td>
+			<td>The value in the <b>baseboard product</b> field identifies the baseboard and should accurately reflect variances in baseboards across different devices in the same <b>family</b> and <b>product name</b>. This value must change when the baseboard in the device model changes and it may be used as an asset identifier for servicing.</td>
+			<td>The format of the <b>baseboard product</b> field string can be set by Company, and it does not need to align to end user marketing information.</td>
+			<td>The <b>baseboard product</b> field is the fourth-level indicator of devices to the company and is not marketed to end users. </td>
 		</tr>
 		<tr>
 			<td>Serial Number</td>
 			<td>Number of null-terminated string.</td>
 			<td>The information in this structure defines attributes of the overall system and is intended to be associated with the Component ID group of the system’s MIF. An SMBIOS implementation is associated with a single system instance and contains one and only one System Information (Type 1) structure.</td>
-			<td>TBD</td>
-			<td>TBD</td>
+			<td>The format of the <b>Serial Number</b> field string is to match the Serial Number on the exterior of the device.</td>
+			<td>The <b>Serial Number</b> field is indicator of the Serial Number assigned from Company and is accessible on exterior of device. The <b>Serial Number</b> field is the sixth-level indicator of devices.</td>
 		</tr>
 		<tr>
 			<td>UUID</td>
@@ -195,17 +193,17 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
 		</tr>
 		<tr>
 			<td>SKU Number</td>
-			<td>TBD</td>
-			<td>TBD</td>
-			<td>TBD</td>
-			<td>TBD</td>
+			<td>Number of null-terminated string. This text string identifies a particular computer configuration for sale. It is sometimes also called a product ID or purchase order number. This number is frequently found in existing fields, but there is no standard format. Typically for a given system board from a given OEM, there are tens of unique processor, memory, hard drive, and optical drive configurations.</td>
+			<td>The value in the <b>SKU number</b> field identifies the device in a format that can be determined by Company. This field may include variations of the device determined by production run, shipment region, retailer, configuration variances. (for example, processor, memory, and storage variance) This value can be used as an asset identifier for servicing and if it is not used by Company, it may be left blank.</td>
+			<td>The format of the <b>SKU number</b> field string can be set by Company, and it does not need to align to end user marketing information.</td>
+			<td>The <b>SKU number</b> field is the fifth-level indicator of devices to Company and is not marketed to end users.</td>
 		</tr>
 		<tr>
 			<td>Enclosure Type</td>
-			<td>TBD</td>
-			<td>TBD</td>
 			<td>N/A</td>
-			<td>N/a</td>
+			<td>Defined in the <b>Enclosure Type</b> table below</td>
+			<td>N/A</td>
+			<td>N/A</td>
 		</tr>
 		<tr>
 			<td>BIOS Vendor</td>
@@ -216,21 +214,21 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
 		</tr>
         <tr>
 			<td>BIOS Version</td>
-			<td>TBD</td>
+			<td>String number of the BIOS Version. This value is a free-form string that may contain Core and OEM version information.</td>
 			<td>Defined in the DMTF SMBIOS specification 3.1 or later</td>
-			<td>TBD</td>
-			<td>TBD</td>
+			<td></td>
+			<td></td>
 		</tr>
 		<tr>
 			<td>BIOS Major Release</td>
-			<td>TBD</td>
+			<td>Identifies the major release of the System BIOS, for example, the value is 0Ah for revision 10.22 and 02h for revision 2.1. This field or the System BIOS Minor Release field or both are updated each time a System BIOS update for a given system is released. If the system does not support the use of this field, the value is FFh for both this field and the System BIOS Minor Release field.</td>
 			<td>Defined in the DMTF SMBIOS specification 3.1 or later</td>
-			<td>TBD</td>
-			<td>TBD</td>
+			<td></td>
+			<td></td>
 		</tr>
 		<tr>
 			<td>BIOS Minor Release</td>
-			<td>Identifies the minor release of the System BIOS; for example, the value is 16h for revision 10.22 and 01h for revision 2.1.</td>
+			<td>Identifies the minor release of the System BIOS, for example, the value is 16h for revision 10.22 and 01h for revision 2.1.</td>
 			<td>Defined in the DMTF SMBIOS specification 3.1 or later</td>
 			<td></td>
 			<td></td>
@@ -239,58 +237,54 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
 </table>
 
 
-
-
-### TBD B
+The following table describes settings for the **Enlosure Type** field.
 
 <table>
 	<tbody>
 		<tr>
-			<td>TBD</td>
-			<td>TBD</td>
-			<td>TBD</td>
-			<td>TBD</td>
+			<td><b>Enclosure Type</b></td>
+			<td><b>Byte Value</b></td>
+			<td><b>OHR FFC/FFSC</b></td>
+			<td><b>Microsoft description</b></td>
 		</tr>
 		<tr>
-			<td>TBD</td>
-			<td>TBD</td>
-			<td>TBD</td>
-			<td>TBD</td>
+			<td>Desktop</td>
+			<td>03h</td>
+			<td>Desktop/Standard</td>
+			<td><b>Desktop</b> means a Customer System in a tower case and is not a portable Customer System. It does not include an integrated display and inputs.</td>
 		</tr>
 		<tr>
-			<td>TBD</td>
-			<td>TBD</td>
-			<td>TBD</td>
-			<td>TBD</td>
+			<td>Notebook</td>
+			<td>0Ah</td>
+			<td>Notebook/Standard</td>
+			<td><b>Notebook</b> means a Customer System with a clamshell form factor and has a non-detachable keyboard. Portable (08h) or Laptop (09h) are not to be used when identifying a <b>Notebook</b>. </td>
 		</tr>
 		<tr>
-			<td>TBD</td>
-			<td>TBD</td>
-			<td>TBD</td>
-			<td>TBD</td>
+			<td>All-in-One</td>
+			<td>0Dh</td>
+			<td>Desktop/AiO</td>
+			<td><b>All-in-One</b> means a Customer System that integrates a touch screen with other hardware components in a single chassis.</td>
 		</tr>
 		<tr>
-			<td>TBD</td>
-			<td>TBD</td>
-			<td>TBD</td>
-			<td>TBD</td>
+			<td>Tablet</td>
+			<td>1Eh</td>
+			<td>Tablet/Standard</td>
+			<td><b>Tablet</b> means a Customer System that combines a display, rechargeable power source, and other components into a single chassis, and utilizes touch as its primary means of input. It does not include a physically attached keyboard. In the case where the Customer System’s form factor does not allow for a keyboard to be physically connected to the chassis, but a Bluetooth or other wireless keyboard is sold as an optional accessory to the End User, the <b>enclosure type</b> field is to be identified as a <b>Tablet</b>.</td>
 		</tr>
 		<tr>
-			<td>TBD</td>
-			<td>TBD</td>
-			<td>TBD</td>
-			<td>TBD</td>
+			<td>Convertible</td>
+			<td>1Fh</td>
+			<td>Notebook/Convertible</td>
+			<td><b>Convertible</b> means a Customer System that combines a display, rechargeable power source, and point device into a single chassis with an adjustable (any motion:  flips, swivels, turns) display to be facing forward or facing away from the attached keyboard.</td>
 		</tr>
 		<tr>
-			<td>TBD</td>
-			<td>TBD</td>
-			<td>TBD</td>
-			<td>TBD</td>
+			<td>Detachable</td>
+			<td>20h</td>
+			<td>Tablet/Standard</td>
+			<td><b>Detachable</b> means a Customer System that combines a display, rechargeable power source, and pointing device into a single chassis together with a detachable keyboard. In the case where the Customer System’s form factor allows for a keyboard, not including Bluetooth or other wireless keyboards, to be physically connected to the chassis but the physical keyboard is sold as an optional accessory to the End User, the <b>enclosure type</b> field is to be identified as a <b>Detachable</b>.</td>
 		</tr>
 	</tbody>
 </table>
-<p>TBD</p>
-
 
 
 ## Related resources
