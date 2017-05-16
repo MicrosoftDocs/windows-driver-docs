@@ -109,7 +109,7 @@ On the host computer, open a Command Prompt window and enter the following comma
 
 **kd /k usb:targetname=***TargetName*
 
-## <span id="what-if-usbview-shows-a-debug-capable_port"></span><span id="WHAT_IF_USBVIEW_SHOWS_A_DEBUG_CAPABLE_PORT"></span>What if USBView shows a debug-capable port, but does not show the port mapped to any physical connector?
+## <span id="what-if-usbview-shows-a-debug-capable-port"></span><span id="WHAT_IF_USBVIEW_SHOWS_A_DEBUG_CAPABLE_PORT"></span>What if USBView shows a debug-capable port, but does not show the port mapped to any physical connector?
 
 
 On some computers, USBView shows a debug-capable port, but does not show the port mapped to any physical USB connector. For example, USBView might show port 2 as the debug port number for an eHCI controller.

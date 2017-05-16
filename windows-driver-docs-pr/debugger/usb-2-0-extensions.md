@@ -11,7 +11,7 @@ This section describes the USB 2.0 debugger extension commands. These commands d
 
 The USB 2.0 debugger extension commands are implemented in Usbkd.dll. To load the Usbkd commands, enter **.load usbkd.dll** in the debugger.
 
-## <span id="usb_2_tree"></span><span id="USB_2_TREE"></span>USB 2.0 Tree
+## <span id="usb-2-tree"></span><span id="USB_2_TREE"></span>USB 2.0 Tree
 
 
 The USB 2.0 tree contains the device nodes that represent execution units on EHCI host controller devices along with the child nodes that represent hubs and connected devices. This diagram shows an example of a USB 2.0 tree.

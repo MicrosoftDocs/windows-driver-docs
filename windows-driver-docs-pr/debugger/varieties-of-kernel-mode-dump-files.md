@@ -21,7 +21,7 @@ There are five settings for kernel-mode crash dump files:
 
 [Automatic Memory Dump](automatic-memory-dump.md)
 
-[Active Memory Dump](debugger-active_memory_dump)
+[Active Memory Dump](varieties-of-kernel-mode-dump-files.md)
 
 The difference between these dump files is one of size. The *Complete Memory Dump* is the largest and contains the most information, the *Kernel Memory Dump* is somewhat smaller, and the *Small Memory Dump* is only 64 KB in size.
 
