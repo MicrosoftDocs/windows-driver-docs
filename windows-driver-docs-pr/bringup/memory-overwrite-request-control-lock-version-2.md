@@ -1,8 +1,9 @@
 ---
-title: TBD
-description: TBD
+title: Memory Overwrite Request Control (MOR) LOCK version 2
+description: Memory Overwrite Request Control (MOR) LOCK version 2
+author: windows-driver-content
 ms.author: windowsdriverdev
-ms.date: 05/05/2017
+ms.date: 05/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -26,9 +27,9 @@ Support for MOR Lock V2 is included in the following versions of Windows:
 
 ## Related resources
 
-| [TCG Platform Reset Attack Mitigation Specification](https://www.trustedcomputinggroup.org/wp-content/uploads/Platform-Reset-Attack-Mitigation-Specification.pdf) |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Secure MOR Implementation](https://msdn.microsoft.com/en-us/windows/hardware/drivers/bringup/device-guard-requirements)                                          |
+[TCG Platform Reset Attack Mitigation Specification](https://www.trustedcomputinggroup.org/wp-content/uploads/Platform-Reset-Attack-Mitigation-Specification.pdf) 
+
+[Secure MOR Implementation](https://msdn.microsoft.com/en-us/windows/hardware/drivers/bringup/device-guard-requirements)                                          
 
 
 --------------------

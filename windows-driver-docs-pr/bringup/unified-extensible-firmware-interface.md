@@ -1,8 +1,9 @@
 ---
-title: TBD
-description: TBD
+title: Unified extensible firmware interface (UEFI) 
+description: Unified extensible firmware interface (UEFI) 
+author: windows-driver-content
 ms.author: windowsdriverdev
-ms.date: 05/05/2017
+ms.date: 05/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,9 +29,9 @@ As of Revision 1.1, the latest updates to the UEFI Specification regarding Secur
 
 ## Related resources
 
-| [UEFI Specification Documents](http://www.uefi.org/specifications)                                         |
-|------------------------------------------------------------------------------------------------------------|
-| [UEFI Specification 2.6 Document](http://www.uefi.org/sites/default/files/resources/UEFI%20Spec%202_6.pdf) |
+[UEFI Specification Documents](http://www.uefi.org/specifications)                                         
+
+[UEFI Specification 2.6 Document](http://www.uefi.org/sites/default/files/resources/UEFI%20Spec%202_6.pdf) 
 
 
 

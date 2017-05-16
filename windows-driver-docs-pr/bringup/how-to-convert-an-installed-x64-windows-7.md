@@ -1,8 +1,9 @@
 ---
-title: TBD
-description: TBD
+title: How to convert an installed x64 Windows 7 system
+description: How to convert an installed x64 Windows 7 system
+author: windows-driver-content
 ms.author: windowsdriverdev
-ms.date: 05/05/2017
+ms.date: 05/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -12,7 +13,7 @@ ms.technology: windows-devices
 # How to convert an installed x64 Windows 7 system
 
 
-The following steps are intended for when the ITPro is in a situation where they need to convert from Legacy MBR+CSM to UEFI+GPT. Usually they start with a system that was installed with Windows 7 x64. For x86 OS, see section in FAQ below about "What is the dependency on 32-bit vs. 64-bit UEFI". Installed in BIOS mode to Legacy MBR boot disk with CSM enabled, and you know or have checked with the OEM for that system to ensure that the system has the following:
+The following steps are intended for use when the ITPro is in a situation where they need to convert from Legacy MBR+CSM to UEFI+GPT. Usually they start with a system that was installed with Windows 7 x64. For x86 OS, see section in FAQ below about "What is the dependency on 32-bit vs. 64-bit UEFI". Installed in BIOS mode to Legacy MBR boot disk with CSM enabled, and you know or have checked with the OEM for that system to ensure that the system has the following:
 
 1.  Ability to enable and disable the CSM
 
@@ -79,25 +80,27 @@ For example; you will need to use Diskpart.exe to ‘clean’ the existing parti
 
 On a Windows 10 system:
 
-1. Press <Windows key> + <R> to open the Run dialog
+1. Press \<Windows key\> + \<R\> to open the **Run** dialog.
 
 2. Type Msinfo32 and click **OK**.
 
-The System Summary page will open by default Look for the following:
+The System Summary page will open by default 
+
+Look for the following information:
 
 ![Systems Summary page](images/system-summary-page.png)
 
-To run as an administrator, go through the following steps:
+To run as an administrator, use the following steps:
 
-Press <Windows key>
+1. Press \<Windows key\>
 
-Start typing "System Information"
+2. Start typing "System Information"
 
 If System information is highlighted, hold <ctrl> + <shift> and hit <enter> or use your mouse and right click and select "Run as Administrator"
 
 You will be prompted by User Access Control (UAC) with the following message: "Do You want this app to make changes to your desktop?"
 
-Through BCDEDIT
+#### Through BCDEDIT
 
 On Windows 7 and later systems
 
@@ -109,19 +112,17 @@ On Windows 7 and later systems
 
     1.  If you have UEFI, the path will show Winload.efi. If you have CSM, the path will show Winload.exe as listed in sample output.
 
-> *Sample output*
+**Sample output**
 
+```
 Windows Boot Loader
-
 -------------------
-
 identifier {current}
-
 device partition=C:
+path \WINDOWS\system32\winload.efi
+```
 
-path \\WINDOWS\\system32\\winload.efi
-
-Through NOTEPAD and SETUPACT.LOG
+#### Through NOTEPAD and SETUPACT.LOG
 
 1.  Start an elevated command prompt.
 

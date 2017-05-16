@@ -1,27 +1,28 @@
 ---
-title: TBD
-description: TBD
+title: Trusted Platform Module (TPM) Considerations
+description: Trusted Platform Module (TPM) Considerations
+author: windows-driver-content
 ms.author: windowsdriverdev
-ms.date: 05/05/2017
+ms.date: 05/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
 
-# Trusted platform Module (TPM) Considerations
-------------------------------------------------------------------------------------------------------------------------------------------
+# Trusted Platform Module (TPM) Considerations
 
-New devices with TPM2.0 should use SHA256 for use with all PCR banks. This may not be compatible with downlevel operating systems.
+New devices with TPM 2.0 should use SHA256 for all PCR banks. This may not be compatible with downlevel operating systems.
 
-TPM 2.0 is **not** usable in legacy boot mode (with CSM enabled) for anything besides BitLocker.  There is no legacy BIOS interface to TPM 2.0. If installing Win7 on current hardware, you should install in x64 UEFI mode so that you can receive some benefit from the TPM 2.0 (BitLocker only). After you upgrade to later operating system (Win8 and later), depending on the firmware installed on the system, you may have the ability to enable Secure Boot. If you install Windows operating system in legacy BIOS mode on existing hardware, you cannot receive the full benefits of TPM 2.0 or Secure Boot.
+TPM 2.0 is **not** usable in legacy boot mode (with CSM enabled) for anything besides BitLocker.  There is no legacy BIOS interface to TPM 2.0. If installing Windows 7 on current hardware, you should install in x64 UEFI mode so that you can receive some benefit from the TPM 2.0 (BitLocker only). After you upgrade to later operating system (Win8 and later), depending on the firmware installed on the system, you may have the ability to enable Secure Boot. If you install a Windows operating system in legacy BIOS mode on existing hardware, you cannot receive the full benefits of TPM 2.0 or Secure Boot.
 
 ## Related resources
 
-| [TPM recommendations](https://technet.microsoft.com/itpro/windows/keep-secure/tpm-recommendations)                                        |
-|-------------------------------------------------------------------------------------------------------------------------------------------|
-| [Trusted Platform Module 2.0: A Brief Introduction](http://www.trustedcomputinggroup.org/trusted-platform-module-2-0-brief-introduction/) |
-| [Trusted Platform Module (TPM)](http://www.trustedcomputinggroup.org/work-groups/trusted-platform-module/)                                |
+[TPM recommendations](https://technet.microsoft.com/itpro/windows/keep-secure/tpm-recommendations)                                        
+
+[Trusted Platform Module 2.0: A Brief Introduction](http://www.trustedcomputinggroup.org/trusted-platform-module-2-0-brief-introduction/)
+
+[Trusted Platform Module (TPM)](http://www.trustedcomputinggroup.org/work-groups/trusted-platform-module/)                                
 
 
 

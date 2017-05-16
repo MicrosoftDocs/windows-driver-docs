@@ -1,8 +1,9 @@
 ---
-title: TBD
-description: TBD
+title: Hardware Security Test Interface (HSTI) 1.1a
+description: Hardware Security Test Interface (HSTI) 1.1a
+author: windows-driver-content
 ms.author: windowsdriverdev
-ms.date: 05/05/2017
+ms.date: 05/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -12,7 +13,7 @@ ms.technology: windows-devices
 # Hardware Security Test Interface (HSTI) 1.1a
 
 
-HSTI specifies a standard test interface for proprietary platform security technologies that enforce the Secure Boot promise (e.g. SPI flash or eMMC partition locking, proper SMM configuration, Intel Boot Guard properly configured, …). The silicon and BIOS vendors specify and implement the necessary test cases which are shipped in release firmware as a built-in self-test.
+HSTI specifies a standard test interface for proprietary platform security technologies that enforce the Secure Boot promise (for example, SPI flash or eMMC partition locking, proper SMM configuration, Intel Boot Guard properly configured, and so on). Silicon and BIOS vendors specify and implement the necessary test cases which are shipped in release firmware as a built-in self-test.
 
 The presence of the test gives the customer the ability to verify the presence of security features and if they are correctly implemented.
 
@@ -26,8 +27,7 @@ Support for HSTI is included in the following versions of Windows:
 
 ## Related resources
 
-| [Hardware Security Testability Specification](https://msdn.microsoft.com/en-us/library/windows/hardware/mt712332(v=vs.85).aspx) |
-|---------------------------------------------------------------------------------------------------------------------------------|
+[Hardware Security Testability Specification](https://msdn.microsoft.com/en-us/library/windows/hardware/mt712332)
 
 
 

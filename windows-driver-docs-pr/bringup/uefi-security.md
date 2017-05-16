@@ -17,7 +17,7 @@ Windows operating systems depend on the integrity and configuration of the firmw
 
 This section is intended as a guide to provide pointers to the information that will enable you to implement and validate security features in the firmware for Windows operating systems.
 
-The following sections describe components of the firmware used to enable a more secure firmware, and a more secure operating system. In the following sections, we’re going to go over highlights of the components and provide pointers and links to existing online resources where available.
+The following sections describe components of the firmware used to enable a more secure firmware, and a more secure operating system. The following sections, cover highlights of the components and provide pointers and links to existing online resources where available.
 
 
 
