@@ -46,7 +46,7 @@ NDIS KD EXTENSIONS
     netreport          Draw a box diagram of your network stack
 
     Show more extensions
-    View examples &amp; tutorials online
+    View examples & tutorials online
 
 ```
 

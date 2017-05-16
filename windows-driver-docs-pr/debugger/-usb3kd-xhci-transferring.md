@@ -59,7 +59,7 @@ DeviceContextBase: VA 0xfffffa8005a41000 LA 0x116841000 !wdfcommonbuffer 0x57ffa
 
 ## [1] SlotID : dt USBXHCI!_USBDEVICE_DATA 0xfffffa800598c7d0 dt _SLOT_CONTEXT32 0xfffffa8005a42000
 ------------------------------------------------------------------------------------------------
-    USB\VID_125F&amp;PID_312A ADATA Technology Co., Ltd.
+    USB\VID_125F&PID_312A ADATA Technology Co., Ltd.
     SlotEnabled IsDevice NumberOfTTs 0 TTThinkTime 0
     Speed: Super PortPathDepth: 1 PortPath: [ 2 ] DeviceAddress: 1
     !device_info_from_pdo 0xfffffa800597d720

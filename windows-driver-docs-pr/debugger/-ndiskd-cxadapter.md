@@ -70,7 +70,7 @@ NETADAPTER
     Network interface  ffffd1022e395a20
 
     Media type         802.3
-    Device instance    PCI\VEN_10EC&amp;DEV_8168&amp;SUBSYS_816810EC&amp;REV_03\4&amp;22bb23f1&amp;0&amp;0038
+    Device instance    PCI\VEN_10EC&DEV_8168&SUBSYS_816810EC&REV_03\4&22bb23f1&0&0038
     Device object      ffffd1022de127f0    More information
     MAC address        00-e0-4c-68-00-8b
 

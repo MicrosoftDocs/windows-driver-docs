@@ -79,7 +79,7 @@ function *filterDevices(deviceNode)
     //
     // If the device instance path has "PCI" in it and is started (state == 776), yield it from the generator.
     //
-    if (deviceNode.InstancePath.indexOf("PCI") != -1 &amp;&amp; deviceNode.State == 776)
+    if (deviceNode.InstancePath.indexOf("PCI") != -1 && deviceNode.State == 776)
     {
         yield deviceNode;
     }
@@ -118,12 +118,12 @@ Call the filterAllDevices() function.
 ```
 0: kd> dx Debugger.State.Scripts.PlugAndPlayDeviceTree.Contents.filterAllDevices()
 Debugger.State.Scripts.PlugAndPlayDeviceTree.Contents.filterAllDevices()                 : [object Generator]
-    [0x0]            : PCI\VEN_8086&amp;DEV_D131&amp;SUBSYS_304A103C&amp;REV_11\3&amp;21436425&amp;0&amp;00
-    [0x1]            : PCI\VEN_8086&amp;DEV_D138&amp;SUBSYS_304A103C&amp;REV_11\3&amp;21436425&amp;0&amp;18 (pci)
-    [0x2]            : PCI\VEN_10DE&amp;DEV_06FD&amp;SUBSYS_062E10DE&amp;REV_A1\4&amp;324c21a&amp;0&amp;0018 (nvlddmkm)
-    [0x3]            : PCI\VEN_8086&amp;DEV_3B64&amp;SUBSYS_304A103C&amp;REV_06\3&amp;21436425&amp;0&amp;B0 (HECIx64)
-    [0x4]            : PCI\VEN_8086&amp;DEV_3B3C&amp;SUBSYS_304A103C&amp;REV_05\3&amp;21436425&amp;0&amp;D0 (usbehci)
-    [0x5]            : PCI\VEN_8086&amp;DEV_3B56&amp;SUBSYS_304A103C&amp;REV_05\3&amp;21436425&amp;0&amp;D8 (HDAudBus)
+    [0x0]            : PCI\VEN_8086&DEV_D131&SUBSYS_304A103C&REV_11\3&21436425&0&00
+    [0x1]            : PCI\VEN_8086&DEV_D138&SUBSYS_304A103C&REV_11\3&21436425&0&18 (pci)
+    [0x2]            : PCI\VEN_10DE&DEV_06FD&SUBSYS_062E10DE&REV_A1\4&324c21a&0&0018 (nvlddmkm)
+    [0x3]            : PCI\VEN_8086&DEV_3B64&SUBSYS_304A103C&REV_06\3&21436425&0&B0 (HECIx64)
+    [0x4]            : PCI\VEN_8086&DEV_3B3C&SUBSYS_304A103C&REV_05\3&21436425&0&D0 (usbehci)
+    [0x5]            : PCI\VEN_8086&DEV_3B56&SUBSYS_304A103C&REV_05\3&21436425&0&D8 (HDAudBus)
 ...
 ```
 
@@ -132,14 +132,14 @@ Each of these objects presented above, automatically supports DML, and can be cl
 Alternatively to using this script, it is possible to use a LINQ query to accomplish a similar result.
 
 ```
-0: kd> dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.InstancePath.Contains("PCI") &amp;&amp; n.State == 776)
-@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.InstancePath.Contains("PCI") &amp;&amp; n.State == 776)  
-    [0x0]            : PCI\VEN_8086&amp;DEV_D131&amp;SUBSYS_304A103C&amp;REV_11\3&amp;21436425&amp;0&amp;00
-    [0x1]            : PCI\VEN_8086&amp;DEV_D138&amp;SUBSYS_304A103C&amp;REV_11\3&amp;21436425&amp;0&amp;18 (pci)
-    [0x2]            : PCI\VEN_10DE&amp;DEV_06FD&amp;SUBSYS_062E10DE&amp;REV_A1\4&amp;324c21a&amp;0&amp;0018 (nvlddmkm)
-    [0x3]            : PCI\VEN_8086&amp;DEV_3B64&amp;SUBSYS_304A103C&amp;REV_06\3&amp;21436425&amp;0&amp;B0 (HECIx64)
-    [0x4]            : PCI\VEN_8086&amp;DEV_3B3C&amp;SUBSYS_304A103C&amp;REV_05\3&amp;21436425&amp;0&amp;D0 (usbehci)
-    [0x5]            : PCI\VEN_8086&amp;DEV_3B56&amp;SUBSYS_304A103C&amp;REV_05\3&amp;21436425&amp;0&amp;D8 (HDAudBus)
+0: kd> dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.InstancePath.Contains("PCI") && n.State == 776)
+@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.InstancePath.Contains("PCI") && n.State == 776)  
+    [0x0]            : PCI\VEN_8086&DEV_D131&SUBSYS_304A103C&REV_11\3&21436425&0&00
+    [0x1]            : PCI\VEN_8086&DEV_D138&SUBSYS_304A103C&REV_11\3&21436425&0&18 (pci)
+    [0x2]            : PCI\VEN_10DE&DEV_06FD&SUBSYS_062E10DE&REV_A1\4&324c21a&0&0018 (nvlddmkm)
+    [0x3]            : PCI\VEN_8086&DEV_3B64&SUBSYS_304A103C&REV_06\3&21436425&0&B0 (HECIx64)
+    [0x4]            : PCI\VEN_8086&DEV_3B3C&SUBSYS_304A103C&REV_05\3&21436425&0&D0 (usbehci)
+    [0x5]            : PCI\VEN_8086&DEV_3B56&SUBSYS_304A103C&REV_05\3&21436425&0&D8 (HDAudBus)
 ...
 ```
 
@@ -461,7 +461,7 @@ function initializeScript()
                 this.__hasDevice = (this.__deviceExtension.Signature == 0x44696350); /* &#39;PciD&#39; */
                 this.__hasBus = (this.__busExtension.Signature == 0x42696350); /* &#39;PciB&#39; */
                 
-                if (!this.__hasDevice &amp;&amp; !this.__hasBus)
+                if (!this.__hasDevice && !this.__hasBus)
                 {
                     throw new Error("Unrecognized PCI device extension");
                 }
@@ -483,7 +483,7 @@ function initializeScript()
         toString()
         {
             
-            if (this.__hasBus &amp;&amp; this.__hasDevice)
+            if (this.__hasBus && this.__hasDevice)
             {
                 return "Bus: " + this.__busExtension.toString() + " Device: " + this.__deviceExtension.toString();
             }

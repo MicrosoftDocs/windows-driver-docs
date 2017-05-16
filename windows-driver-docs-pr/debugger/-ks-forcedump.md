@@ -106,7 +106,7 @@ Filter object 829493c4 [CKsFilter = 82949350]
         None
     CKsFilter object 82949350 [KSFILTER = 829493c4]
         Processing Mutex         82949484 is not held
-        Gate &amp;                   82949464
+        Gate &                   82949464
         Gate.Count               1
         Pin Factories:
             Pin ID 0 [Video/General Capture Out]:

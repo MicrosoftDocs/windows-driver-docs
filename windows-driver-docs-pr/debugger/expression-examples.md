@@ -74,7 +74,7 @@ The following examples set the default expression evaluator to MASM and then eva
 If **myInt** is a ULONG64 value and if you know that this value is followed in memory by another ULONG64, you can set an access breakpoint at that location by using one of the following examples. (Note the use of pointer arithmetic.)
 
 ```
-0:000> ba r8 @@( &amp;myInt + 1 ) 
+0:000> ba r8 @@( &myInt + 1 ) 
 0:000> ba r8 myInt + 8 
 ```
 

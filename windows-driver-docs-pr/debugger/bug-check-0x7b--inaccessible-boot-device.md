@@ -262,17 +262,17 @@ One cause, might be that Plug and Play cannot assign resources to the boot devic
 0: kd> !devnode 0 1 storahci
 Dumping IopRootDeviceNode (= 0xffffb9053d94d850)
 DevNode 0xffffb9053e8dea50 for PDO 0xffffb9053e8da060
-  InstancePath is "PCI\VEN_8086&amp;DEV_3B22&amp;SUBSYS_304A103C&amp;REV_05\3&amp;21436425&amp;0&amp;FA"
+  InstancePath is "PCI\VEN_8086&DEV_3B22&SUBSYS_304A103C&REV_05\3&21436425&0&FA"
   ServiceName is "storahci"
   State = DeviceNodeStarted (0x308)
   Previous State = DeviceNodeEnumerateCompletion (0x30d)
   DevNode 0xffffb9053e88db30 for PDO 0xffffb9053e890060
-    InstancePath is "SCSI\Disk&amp;Ven_&amp;Prod_ST3500418AS\4&amp;23d99fa2&amp;0&amp;000000"
+    InstancePath is "SCSI\Disk&Ven_&Prod_ST3500418AS\4&23d99fa2&0&000000"
     ServiceName is "disk"
     State = DeviceNodeStarted (0x308)
     Previous State = DeviceNodeEnumerateCompletion (0x30d)
   DevNode 0xffffb9053e88d850 for PDO 0xffffb9053e88e060
-    InstancePath is "SCSI\CdRom&amp;Ven_hp&amp;Prod_DVD-RAM_GH60L\4&amp;23d99fa2&amp;0&amp;010000"
+    InstancePath is "SCSI\CdRom&Ven_hp&Prod_DVD-RAM_GH60L\4&23d99fa2&0&010000"
     ServiceName is "cdrom"
     TargetDeviceNotify List - f 0xffffdf0ae9bbb0e0  b 0xffffdf0aea874710
     State = DeviceNodeStarted (0x308)

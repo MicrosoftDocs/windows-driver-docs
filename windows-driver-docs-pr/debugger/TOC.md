@@ -1,4 +1,4 @@
-# [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](introduction6.md)
+# [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](index.md)
 # [Getting Started with Windows Debugging](getting-started-with-windows-debugging.md)
 # [Getting Started with WinDbg (User-Mode)](getting-started-with-windbg.md)
 # [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md)

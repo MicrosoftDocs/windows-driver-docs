@@ -34,7 +34,7 @@ Debug Data Dirs: Type  Size     VA  Pointer
     Symbol Type: PDB      - Symbols loaded successfully from image header.
                  c:\Debuggers\sym\ndis.pdb\06A2E58C996D441981A0BB293BD63BCA1\ndis.pdb
        Compiler: Linker - front end [0.0 bld 0] - back end [14.0 bld 23917]
-    Load Report: private symbols &amp; lines, source indexed 
+    Load Report: private symbols & lines, source indexed 
                  c:\Debuggers\sym\ndis.pdb\06A2E58C996D441981A0BB293BD63BCA1\ndis.pdb
 ```
 

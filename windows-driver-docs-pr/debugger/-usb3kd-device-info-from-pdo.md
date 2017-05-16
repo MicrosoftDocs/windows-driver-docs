@@ -46,19 +46,19 @@ You can get the address of the PDO from the output of [**!usb\_tree**](-usb3kd-u
 
 Dumping IopRootDeviceNode (= 0xfffffa8003609cc0)
 DevNode 0xfffffa8005981730 for PDO 0xfffffa8004ffc550
-  InstancePath is "USB\ROOT_HUB30\5&amp;11db9684&amp;0&amp;0"
+  InstancePath is "USB\ROOT_HUB30\5&11db9684&0&0"
   ServiceName is "USBHUB3"
   State = DeviceNodeStarted (0x308)
   Previous State = DeviceNodeEnumerateCompletion (0x30d)
 
   DevNode 0xfffffa8005a546a0 for PDO 0xfffffa80059c3800
-    InstancePath is "USB\VID_125F&amp;PID_312A\09021000000000000342192873"
+    InstancePath is "USB\VID_125F&PID_312A\09021000000000000342192873"
     ServiceName is "USBSTOR"
     State = DeviceNodeStarted (0x308)
     Previous State = DeviceNodeEnumerateCompletion (0x30d)
 
     DevNode 0xfffffa8005a09730 for PDO 0xfffffa8005b3a650
-      InstancePath is "USBSTOR\Disk&amp;Ven ...
+      InstancePath is "USBSTOR\Disk&Ven ...
       ServiceName is "disk"
       State = DeviceNodeStarted (0x308)
       Previous State = DeviceNodeEnumerateCompletion (0x30d)

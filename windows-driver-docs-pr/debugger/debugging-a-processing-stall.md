@@ -18,7 +18,7 @@ Pin object 8160DDE0 [CKsPin = 8160DD50]
     CKsPin object 8160DD50 [KSPIN = 8160DDE0]
         State                    KSSTATE_RUN
         Processing Mutex         8160DFD0 is not held
-        And Gate &amp;               8160DF88
+        And Gate &               8160DF88
         And Gate Count           1
 ```
 
@@ -67,7 +67,7 @@ Pin object 8160DDE0 [CKsPin = 8160DD50]
     CKsPin object 8160DD50 [KSPIN = 8160DDE0]
         State                    KSSTATE_RUN
         Processing Mutex         8160DFD0 is not held
-        And Gate &amp;               8160DF88
+        And Gate &               8160DF88
         And Gate Count           1
 ```
 

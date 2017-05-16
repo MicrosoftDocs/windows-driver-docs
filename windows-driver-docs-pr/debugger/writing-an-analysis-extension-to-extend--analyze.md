@@ -52,12 +52,12 @@ Here is a skeleton example that you can use as a starting point.
        HRESULT hr = E_FAIL;
 
        PDEBUG_CONTROL pControl = NULL;
-       hr = Client->QueryInterface(__uuidof(IDebugControl), (void**)&amp;pControl);
+       hr = Client->QueryInterface(__uuidof(IDebugControl), (void**)&pControl);
 
-       if(S_OK == hr &amp;&amp; NULL != pControl)
+       if(S_OK == hr && NULL != pControl)
        {
           IDebugFAEntryTags* pTags = NULL;
-          pAnalysis->GetDebugFATagControl(&amp;pTags);
+          pAnalysis->GetDebugFATagControl(&pTags);
 
           if(NULL != pTags)
           {
@@ -174,7 +174,7 @@ Each tag has a data type property that you can inspect to determine the data typ
 The following line of code gets the data type of the **DEBUG\_FLR\_BUILD\_VERSION\_STRING** tag. In this case, the data type is **DEBUG\_FA\_ENTRY\_ANSI\_STRING**. In the code, `pAnalysis` is a pointer to an [**IDebugFailureAnalysis2**](https://msdn.microsoft.com/library/windows/hardware/jj983405) interface.
 
 ```ManagedCPlusPlus
-IDebugFAEntryTags* pTags = pAnalysis->GetDebugFATagControl(&amp;pTags);
+IDebugFAEntryTags* pTags = pAnalysis->GetDebugFATagControl(&pTags);
 
 if(NULL != pTags)
 {
@@ -209,7 +209,7 @@ CHAR desc[MAX_DESCRIPTION_LENGTH] = {0};
 ULONG descSize = MAX_DESCRIPTION_LENGTH;
                   
 PFA_ENTRY pEntry = pAnalysis->NextEntry(NULL); 
-pTags->GetProperties(pEntry->Tag, name, &amp;nameSize, desc, &amp;descSize, NULL);
+pTags->GetProperties(pEntry->Tag, name, &nameSize, desc, &descSize, NULL);
 pControl->Output(DEBUG_OUTPUT_NORMAL, "The name is %s\n", name);
 pControl->Output(DEBUG_OUTPUT_NORMAL, "The description is %s\n", desc);
 ```

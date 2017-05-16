@@ -41,14 +41,14 @@ Similar to XML, DML tags are given as a starting &lt;tagname \[args\]&gt; and a 
 
 **Special Characters**
 
-DML content roughly follows the XML/HTML rules for special characters. The characters &, &lt;, &gt; and “ are special and cannot be used in plain text. The equivalent escaped versions are &amp;, &lt;, &gt; and &quot;. For example this text:
+DML content roughly follows the XML/HTML rules for special characters. The characters &, &lt;, &gt; and “ are special and cannot be used in plain text. The equivalent escaped versions are &, &lt;, &gt; and &quot;. For example this text:
 
 "Alice & Bob think 3 &lt; 4"
 
 would be converted to the following DML.
 
 ```
-&amp;quot;Alice &amp;amp; Bob think 3 &amp;lt 4&amp;quot;
+&quot;Alice &amp; Bob think 3 &lt 4&quot;
 ```
 
 **C programming language formatting characters**
@@ -513,7 +513,7 @@ HRESULT CALLBACK testout(_In_ PDEBUG_CLIENT pClient, _In_ PCWSTR /*pwszArgs*/)
     HRESULT hr = S_OK;
 
     ComPtr<IDebugControl4> spControl;
-    IfFailedReturn(pClient->QueryInterface(IID_PPV_ARGS(&amp;spControl)));
+    IfFailedReturn(pClient->QueryInterface(IID_PPV_ARGS(&spControl)));
 
     spControl->ControlledOutputWide(DEBUG_OUTCTL_DML, DEBUG_OUTPUT_NORMAL, L"DML/NORMAL Y{t}: %Y{t}\n", L"Hello <World>");
     spControl->ControlledOutputWide(DEBUG_OUTCTL_DML, DEBUG_OUTPUT_NORMAL, L"DML/NORMAL Y{T}: %Y{T}\n", L"Hello <World>");
@@ -548,9 +548,9 @@ DML/NORMAL Y{T}: "Hello <World>"
 DML/NORMAL Y{s}: Hello <World>
 DML/NORMAL Y{S}: Hello <World>
 TEXT/NORMAL Y{t}: "Hello <World>"
-TEXT/NORMAL Y{T}: &amp;quot;Hello &amp;lt;World&amp;gt;&amp;quot;
+TEXT/NORMAL Y{T}: &quot;Hello &lt;World&gt;&quot;
 TEXT/NORMAL Y{s}: Hello <World>
-TEXT/NORMAL Y{S}: Hello &amp;lt;World&amp;gt;
+TEXT/NORMAL Y{S}: Hello &lt;World&gt;
 DML/NORMAL Y{a}: 00007ffa`7da163c0
 DML/NORMAL Y{as} 64bit   : &#39;         &#39;
 DML/NORMAL Y{as} 32value : &#39;         &#39;

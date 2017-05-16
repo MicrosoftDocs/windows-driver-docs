@@ -28,7 +28,7 @@ BOOL SetPrivilege(HANDLE hToken, LPCTSTR lpszPrivilege, BOOL bEnablePrivilege)
     LUID luid;
     BOOL bRet=FALSE;
 
-    if (LookupPrivilegeValue(NULL, lpszPrivilege, &amp;luid))
+    if (LookupPrivilegeValue(NULL, lpszPrivilege, &luid))
     {
         TOKEN_PRIVILEGE tp;
 
@@ -38,7 +38,7 @@ BOOL SetPrivilege(HANDLE hToken, LPCTSTR lpszPrivilege, BOOL bEnablePrivilege)
         //
         //  Enable the privilege or disable all privileges.
         //
-        if (AdjustTokenPrivileges(hToken, FALSE, &amp;tp, NULL, (PTOKEN_PRIVILEGES)NULL, (PDWORD)NULL))
+        if (AdjustTokenPrivileges(hToken, FALSE, &tp, NULL, (PTOKEN_PRIVILEGES)NULL, (PDWORD)NULL))
         {
             //
             //  Check to see if you have proper access.
@@ -57,7 +57,7 @@ The following example shows how to use this function:
 HANDLE hProcess=GetCurrentProcess();
 HANDLE hToken;
 
-if (OpenProcessToken(hProcess, TOKEN_ADJUST_PRIVILEGES, &amp;hToken))
+if (OpenProcessToken(hProcess, TOKEN_ADJUST_PRIVILEGES, &hToken))
 {
     SetPrivilege(hToken, SE_DEBUG_NAME, TRUE);
     CloseHandle(hToken);

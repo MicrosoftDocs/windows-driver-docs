@@ -81,7 +81,7 @@ MINIPORT
 
     Media type         802.3
     Physical medium    NdisPhysicalMediumUnspecified
-    Device instance    PCI\VEN_11AB&amp;DEV_2B38&amp;SUBSYS_045E0001&amp;REV_00\4&amp;379f07b2&amp;0&amp;00E0
+    Device instance    PCI\VEN_11AB&DEV_2B38&SUBSYS_045E0001&REV_00\4&379f07b2&0&00E0
     Device object      ffffc804b9e6f050    More information
     MAC address        c0-33-5e-13-22-f7
 
@@ -140,7 +140,7 @@ Now you can click the "Show state history" link or use the net adapter's handle 
 1: kd> !ndiskd.netadapter ffffc804b9e6f1a0 -log
 
 
-MINIPORT PM &amp; PNP EVENTS
+MINIPORT PM & PNP EVENTS
 
     Event              Timestamp           (most recent event at bottom)        
     DeviceAdded

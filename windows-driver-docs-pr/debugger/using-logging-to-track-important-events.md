@@ -35,7 +35,7 @@ typedef struct _LOGENTRY {
 LONG g_LogCount;
 LOGENTRY g_Log [LOGSIZE];
 #define LOG(tag,arg1,arg2,arg3) do { \
-    LONG i = InterlockedIncrement (&amp;g_LogCount) % LOGSIZE; \
+    LONG i = InterlockedIncrement (&g_LogCount) % LOGSIZE; \
     g_Log [i].Tag = tag; \
     g_Log [i].Arg [0] = (ULONG)(arg1); \
     g_Log [i].Arg [1] = (ULONG)(arg2); \

@@ -23,7 +23,7 @@ HRESULT CUserView::CloseView(void)
     if (m_fDestroyed) return S_OK;
 
     BOOL fViewObjectChanged = FALSE;
-    ReleaseAndNull(&amp;m_pdtgt);
+    ReleaseAndNull(&m_pdtgt);
 
     if (m_psv) {
         m_psb->EnableModelessSB(FALSE);
@@ -32,7 +32,7 @@ HRESULT CUserView::CloseView(void)
         IShellView* psv;
 
         HWND hwndCapture = GetCapture();
-        if (hwndCapture &amp;&amp; hwndCapture == m_hwnd) {
+        if (hwndCapture && hwndCapture == m_hwnd) {
             SendMessage(m_hwnd, WM_CANCELMODE, 0, 0);
         }
 
@@ -46,18 +46,18 @@ HRESULT CUserView::CloseView(void)
         psv = m_psv;
         m_psv = NULL;
 
-        ReleaseAndNull(&amp;_pctView);
+        ReleaseAndNull(&_pctView);
 
         if (m_pvo) {
             IAdviseSink *pSink;
-            if (SUCCEEDED(m_pvo->GetAdvise(NULL, NULL, &amp;pSink)) &amp;&amp; pSink) {
+            if (SUCCEEDED(m_pvo->GetAdvise(NULL, NULL, &pSink)) && pSink) {
                 if (pSink == (IAdviseSink *)this)
                     m_pvo->SetAdvise(0, 0, NULL);
                 pSink->Release();
             }
 
             fViewObjectChanged = TRUE;
-            ReleaseAndNull(&amp;m_pvo);
+            ReleaseAndNull(&m_pvo);
         }
 
         if (psv) {
@@ -79,7 +79,7 @@ HRESULT CUserView::CloseView(void)
         CancelPendingActions();
     }
 
-    ReleaseAndNull(&amp;_psf);
+    ReleaseAndNull(&_psf);
 
     if (fViewObjectChanged)
         NotifyViewClients(DVASPECT_CONTENT, -1);
@@ -89,7 +89,7 @@ HRESULT CUserView::CloseView(void)
         m_pszTitle = NULL;
     }
 
-    SetRect(&amp;m_rcBounds, 0, 0, 0, 0);
+    SetRect(&m_rcBounds, 0, 0, 0, 0);
     return S_OK;
 }
 ```
@@ -174,14 +174,14 @@ The compiler delayed saving the EBX register until later in the function, so if 
 
 ```
     BOOL fViewObjectChanged = FALSE;
-    ReleaseAndNull(&amp;m_pdtgt);
+    ReleaseAndNull(&m_pdtgt);
 ```
 
 The execution of these two lines of code is interleaved, so pay attention.
 
 ```
 NotDestroyed:
-7151714f 8d86c0000000     lea     eax,[esi+0xc0]    ; eax = &amp;m_pdtgt
+7151714f 8d86c0000000     lea     eax,[esi+0xc0]    ; eax = &m_pdtgt
 ```
 
 The **lea** instruction computes the effect address of a memory access and stores it in the destination. The actual memory address is not dereferenced.
@@ -240,7 +240,7 @@ NoWS:
 Indirect calls through globals is how function imports are implemented in Microsoft Win32. The loader fixes up the globals to point to the actual address of the target. This is a handy way to get your bearings when you are investigating a crashed machine. Look for the calls to imported functions and in the target. You will usually have the name of some imported function, which you can use to determine where you are in the source code.
 
 ```
-        if (hwndCapture &amp;&amp; hwndCapture == m_hwnd) {
+        if (hwndCapture && hwndCapture == m_hwnd) {
             SendMessage(m_hwnd, WM_CANCELMODE, 0, 0);
         }
 7151718b 3bc7             cmp     eax,edi           ; hwndCapture == 0?
@@ -294,13 +294,13 @@ Notice how you had to change your "this" pointer when calling a method on a diff
 The first local variable is **psv**.
 
 ```
-        ReleaseAndNull(&amp;_pctView);
-715171d3 8d466c           lea     eax,[esi+0x6c]    ; eax = &amp;_pctView
+        ReleaseAndNull(&_pctView);
+715171d3 8d466c           lea     eax,[esi+0x6c]    ; eax = &_pctView
 715171d6 50               push    eax               ; parameter
 715171d7 ffd3             call    ebx               ; call ReleaseAndNull
         if (m_pvo) {
 715171d9 8b86a8000000     mov     eax,[esi+0xa8]    ; eax = m_pvo
-715171df 8dbea8000000     lea     edi,[esi+0xa8]    ; edi = &amp;m_pvo
+715171df 8dbea8000000     lea     edi,[esi+0xa8]    ; edi = &m_pvo
 715171e5 85c0             test    eax,eax           ; eax == 0?
 715171e7 7448             jz      No_Pvo (71517231) ; jump if zero
 ```
@@ -308,9 +308,9 @@ The first local variable is **psv**.
 Note that the compiler speculatively prepared the address of the **m\_pvo** member, because you are going to use it frequently for a while. Thus, having the address handy will result in smaller code.
 
 ```
-            if (SUCCEEDED(m_pvo->GetAdvise(NULL, NULL, &amp;pSink)) &amp;&amp; pSink) {
+            if (SUCCEEDED(m_pvo->GetAdvise(NULL, NULL, &pSink)) && pSink) {
 715171e9 8b08             mov     ecx,[eax]         ; ecx = m_pvo->lpVtbl
-715171eb 8d5508           lea     edx,[ebp+0x8]     ; edx = &amp;pSink
+715171eb 8d5508           lea     edx,[ebp+0x8]     ; edx = &pSink
 715171ee 52               push    edx               ; parameter
 715171ef 6a00             push    0x0               ; NULL
 715171f1 6a00             push    0x0               ; NULL
@@ -401,8 +401,8 @@ The evaluation of the next two statements is interleaved. Do not forget that EBX
 
 ```
             fViewObjectChanged = TRUE;
-            ReleaseAndNull(&amp;m_pvo);
-71517227 57               push    edi               ; &amp;m_pvo
+            ReleaseAndNull(&m_pvo);
+71517227 57               push    edi               ; &m_pvo
 71517228 c745fc01000000   mov     dword ptr [ebp-0x4],0x1 ; fViewObjectChanged = TRUE
 7151722f ffd3             call    ebx               ; call ReleaseAndNull
 No_Pvo:
@@ -461,10 +461,10 @@ In order to call **CancelPendingActions**, you have to move from (ViewState\*)th
 ```
 71517272 8d4eec           lea     ecx,[esi-0x14]    ; ecx = (CUserView*)this
 71517275 e832fbffff       call CUserView::CancelPendingActions (71516dac) ; __thiscall
-    ReleaseAndNull(&amp;_psf);
+    ReleaseAndNull(&_psf);
 7151727a 33ff             xor     edi,edi           ; edi = 0 (for later)
 No_Psv:
-7151727c 8d4678           lea     eax,[esi+0x78]    ; eax = &amp;_psf
+7151727c 8d4678           lea     eax,[esi+0x78]    ; eax = &_psf
 7151727f 50               push    eax               ; parameter
 71517280 ffd3             call    ebx               ; call ReleaseAndNull
     if (fViewObjectChanged)
@@ -479,7 +479,7 @@ No_Psv:
 NoNotifyViewClients:
     if (m_pszTitle)
 71517294 8b8680000000     mov     eax,[esi+0x80]    ; eax = m_pszTitle
-7151729a 8d9e80000000     lea     ebx,[esi+0x80]    ; ebx = &amp;m_pszTitle (for later)
+7151729a 8d9e80000000     lea     ebx,[esi+0x80]    ; ebx = &m_pszTitle (for later)
 715172a0 3bc7             cmp     eax,edi           ; eax == 0?
 715172a2 7409             jz      No_Title (715172ad) ; jump if zero
         LocalFree(m_pszTitle);
@@ -493,13 +493,13 @@ Remember that EDI is still zero and EBX is still &m\_pszTitle, because those reg
 ```
 715172ab 893b             mov     [ebx],edi         ; m_pszTitle = 0
 No_Title:
-    SetRect(&amp;m_rcBounds, 0, 0, 0, 0);
+    SetRect(&m_rcBounds, 0, 0, 0, 0);
 715172ad 57               push    edi               ; 0
 715172ae 57               push    edi               ; 0
 715172af 57               push    edi               ; 0
-715172b0 81c6fc000000     add     esi,0xfc          ; esi = &amp;this->m_rcBounds
+715172b0 81c6fc000000     add     esi,0xfc          ; esi = &this->m_rcBounds
 715172b6 57               push    edi               ; 0
-715172b7 56               push    esi               ; &amp;m_rcBounds
+715172b7 56               push    esi               ; &m_rcBounds
 715172b8 ff15e41a5071     call   [_imp__SetRect]
 ```
 

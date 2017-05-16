@@ -171,7 +171,7 @@ For a description of the possible causes, see the description of each code in th
     > fffffa8007b13440  \Driver\usbhub     fffffa8007b13590  Cannot read info offset from nt!ObpInfoMaskToOffset
 
     !DevNode fffffa8007ac8a00 :
-      DeviceInst is "USB\VID_04D8&amp;PID_0033\5&amp;46fa7b7&amp;0&amp;1"
+      DeviceInst is "USB\VID_04D8&PID_0033\5&46fa7b7&0&1"
       ServiceName is "HidUsb"
     ```
 

@@ -167,7 +167,7 @@ kd> !devnode ff0cfe88 6
 DevNode 0xff0cfe88 for PDO 0xff0cf030 at level 0x3
   Parent 0xff0d1348   Sibling 0000000000   Child 0xff0c84a8
   InterfaceType 0xffffffff  Bus Number 0xfffffff0
-  InstancePath is "PCIIDE\IDEChannel\1&amp;1"
+  InstancePath is "PCIIDE\IDEChannel\1&1"
   ServiceName is "atapi"
   TargetDeviceNotify List - f 0xff0cfeec  b 0xff0cfeec
   Flags (0x6000120b)  DNF_PROCESSED, DNF_STARTED,
@@ -337,7 +337,7 @@ kd> !devnode ff0cde88 6
 DevNode 0xff0cde88 for PDO 0xff0ce870 at level 0x2
   Parent 0xff0cf448   Sibling 0xff0cddc8   Child 0000000000
   InterfaceType 0xffffffff  Bus Number 0xffffffff
-  InstancePath is "PCI\VEN_8086&amp;DEV_7010\0&amp;69"
+  InstancePath is "PCI\VEN_8086&DEV_7010\0&69"
   ServiceName is "intelide"
   TargetDeviceNotify List - f 0xff0cdeec  b 0xff0cdeec
   Flags (0x00001209)  DNF_PROCESSED, DNF_ENUMERATED,

@@ -257,7 +257,7 @@ class gipTable
             {
                 var entryAddress = page.address.add(this.__data.bytesPerEntry * entryNum);
                 var gipEntry = host.createPointerObject(entryAddress, "combase.dll", "GIPEntry *", this.__data.process);
-                if (gipEntry.cUsage != -1 &amp;&amp; gipEntry.dwType != 0)
+                if (gipEntry.cUsage != -1 && gipEntry.dwType != 0)
                 {
                     yield {entry : gipEntry, cookie : (gipEntry.dwSeqNo | (pageNum << this.__data.PAGESHIFT) | entryNum)};
                 }
@@ -267,18 +267,18 @@ class gipTable
 
     entryFromCookie(cookie)
     {
-        var sequenceNo = (cookie &amp; this.__data.SEQNOMASK);
-        cookie = cookie &amp; ~sequenceNo;
+        var sequenceNo = (cookie & this.__data.SEQNOMASK);
+        cookie = cookie & ~sequenceNo;
         var pageNum = (cookie >> this.__data.PAGESHIFT);
         if (pageNum < this.__data.pageCount)
         {
             var page = this.__data.pageList[pageNum];
-            var entryNum = (cookie &amp; this.__data.PAGEMASK);
+            var entryNum = (cookie & this.__data.PAGEMASK);
             if (entryNum < this.__data.entriesPerPage)
             {
                 var entryAddress = page.address.add(this.__data.bytesPerEntry * entryNum);
                 var gipEntry = host.createPointerObject(entryAddress, "combase.dll", "GIPEntry *", this.__data.process);
-                if (gipEntry.cUsage != -1 &amp;&amp; gipEntry.dwType != 0 &amp;&amp; gipEntry.dwSeqNo == sequenceNo)
+                if (gipEntry.cUsage != -1 && gipEntry.dwType != 0 && gipEntry.dwSeqNo == sequenceNo)
                 {
                     return {entry : gipEntry, cookie : (gipEntry.dwSeqNo | (pageNum << this.__data.PAGESHIFT) | entryNum)};
                 }

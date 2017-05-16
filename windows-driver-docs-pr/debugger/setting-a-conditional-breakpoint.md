@@ -109,8 +109,8 @@ You should formulate your commands defensively against sign extension in both mo
 The following command will work properly in user mode and kernel mode:
 
 ```
-0:000> bp mydriver!myFunction "j (@eax &amp; 0x0`ffffffff) = 0x0`c0004321  &#39;&#39;;&#39;gc&#39;" 
-0:000> bp mydriver!myFunction ".if (@eax &amp; 0x0`ffffffff) = 0x0`c0004321  {} .else {gc}"
+0:000> bp mydriver!myFunction "j (@eax & 0x0`ffffffff) = 0x0`c0004321  &#39;&#39;;&#39;gc&#39;" 
+0:000> bp mydriver!myFunction ".if (@eax & 0x0`ffffffff) = 0x0`c0004321  {} .else {gc}"
 ```
 
 For more information about which numbers are sign-extended by the debugger, see [Sign Extension](sign-extension.md).

@@ -45,10 +45,10 @@ SomeObject myObj;
 if (g_DebugControl->
         GetExtensionFunction(0,
                              "GetObject",
-                             (FARPROC *) &amp;extFn ) == S_OK &amp;&amp;
+                             (FARPROC *) &extFn ) == S_OK &&
     extFn)
 {
-    status = (*extFn)(client, &amp;myObj);
+    status = (*extFn)(client, &myObj);
 }
 ```
 

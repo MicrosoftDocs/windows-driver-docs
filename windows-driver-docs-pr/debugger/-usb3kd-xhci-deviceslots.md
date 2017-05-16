@@ -78,7 +78,7 @@ DeviceContextBase: VA 0xfffffa8005ab9000 LA 0x1168b9000 !wdfcommonbuffer 0x57ffa
 
 ## [1] SlotID : dt USBXHCI!_USBDEVICE_DATA 0xfffffa8005a427d0 dt _SLOT_CONTEXT32 0xfffffa8005aba000
 ------------------------------------------------------------------------------------------------
-    USB\VID_125F&amp;PID_312A ADATA Technology Co., Ltd.
+    USB\VID_125F&PID_312A ADATA Technology Co., Ltd.
     SlotEnabled IsDevice NumberOfTTs 0 TTThinkTime 0
     Speed: Super PortPathDepth: 1 PortPath: [ 2 ] DeviceAddress: 1
     !device_info_from_pdo 0xfffffa8005a36800
@@ -96,7 +96,7 @@ DeviceContextBase: VA 0xfffffa8005ab9000 LA 0x1168b9000 !wdfcommonbuffer 0x57ffa
 
 ## [2] SlotID : dt USBXHCI!_USBDEVICE_DATA 0xfffffa80052de320 dt _SLOT_CONTEXT32 0xfffffa8005b8b000
 ------------------------------------------------------------------------------------------------
-    USB\VID_18A5&amp;PID_0304 Verbatim Americas LLC
+    USB\VID_18A5&PID_0304 Verbatim Americas LLC
     SlotEnabled IsDevice NumberOfTTs 0 TTThinkTime 0
     Speed: High PortPathDepth: 1 PortPath: [ 3 ] DeviceAddress: 2
     !device_info_from_pdo 0xfffffa80058fb800

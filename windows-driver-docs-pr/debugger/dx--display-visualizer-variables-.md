@@ -749,12 +749,12 @@ Use this command to view devices not in state DeviceNodeStarted.
 1: kd>  dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.State != 776)
 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.State != 776)                
     [0x0]            : ACPI\PNP0C01\1
-    [0x1]            : ACPI\PNP0000\4&amp;215d0f95&amp;0
-    [0x2]            : ACPI\PNP0200\4&amp;215d0f95&amp;0
-    [0x3]            : ACPI\PNP0100\4&amp;215d0f95&amp;0
-    [0x4]            : ACPI\PNP0800\4&amp;215d0f95&amp;0
-    [0x5]            : ACPI\PNP0C04\4&amp;215d0f95&amp;0
-    [0x6]            : ACPI\PNP0700\4&amp;215d0f95&amp;0 (fdc)
+    [0x1]            : ACPI\PNP0000\4&215d0f95&0
+    [0x2]            : ACPI\PNP0200\4&215d0f95&0
+    [0x3]            : ACPI\PNP0100\4&215d0f95&0
+    [0x4]            : ACPI\PNP0800\4&215d0f95&0
+    [0x5]            : ACPI\PNP0C04\4&215d0f95&0
+    [0x6]            : ACPI\PNP0700\4&215d0f95&0 (fdc)
     [0x7]            : ACPI\PNP0C02\1
     [0x8]            : ACPI\PNP0C02\2
 ```
@@ -773,7 +773,7 @@ For example, to view devices that have a non zero problem code use this command.
 1: kd> dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.DeviceNodeObject.Problem != 0)
 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.DeviceNodeObject.Problem != 0)                
     [0x0]            : HTREE\ROOT\0
-    [0x1]            : ACPI\PNP0700\4&amp;215d0f95&amp;0 (fdc)
+    [0x1]            : ACPI\PNP0700\4&215d0f95&0 (fdc)
 ```
 
 **View All Devices Without a Problem**
@@ -798,7 +798,7 @@ Use this command to view devices with a problem state of 0x16.
 1: kd> dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.DeviceNodeObject.Problem == 0x16)
 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.DeviceNodeObject.Problem == 0x16)                
     [0x0]            : HTREE\ROOT\0
-    [0x1]            : ACPI\PNP0700\4&amp;215d0f95&amp;0 (fdc)
+    [0x1]            : ACPI\PNP0700\4&215d0f95&0 (fdc)
 ```
 
 **View Devices by Function Driver**
@@ -814,8 +814,8 @@ To view devices using a certain function driver, such as atapi, use this command
 ```
 1: kd> dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.ServiceName == "atapi")
 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.ServiceName == "atapi")                
-    [0x0]            : PCIIDE\IDEChannel\4&amp;10bf2f88&amp;0&amp;0 (atapi)
-    [0x1]            : PCIIDE\IDEChannel\4&amp;10bf2f88&amp;0&amp;1 (atapi)
+    [0x0]            : PCIIDE\IDEChannel\4&10bf2f88&0&0 (atapi)
+    [0x1]            : PCIIDE\IDEChannel\4&10bf2f88&0&1 (atapi)
 ```
 
 **Viewing a List of Boot Start Drivers**
@@ -864,7 +864,7 @@ dx -r1 -g Debugger.Utility.Collections.FromListEntry(*(nt!_LIST_ENTRY *)0x808c99
 View devices by capability using the DeviceNodeObject.CapabilityFlags object.
 
 ```
-dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags &amp; <flag>) != 0)
+dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & <flag>) != 0)
 ```
 
 This table summarizes the use of the dx command with common device capability flags.
@@ -879,12 +879,12 @@ This table summarizes the use of the dx command with common device capability fl
 <td align="left">Removable</td>
 <td align="left"><div class="code">
 ```
-0: kd> dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags &amp; 0x10) != 0)
-@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags &amp; 0x10) != 0)                
+0: kd> dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x10) != 0)
+@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x10) != 0)                
     [0x0]            : SWD\PRINTENUM\{2F8DBBB6-F246-4D84-BB1D-AA8761353885}
     [0x1]            : SWD\PRINTENUM\{F210BC77-55A1-4FCA-AA80-013E2B408378}
     [0x2]            : SWD\PRINTENUM\{07940A8E-11F4-46C3-B714-7FF9B87738F8}
-    [0x3]            : DISPLAY\Default_Monitor\6&amp;1a097cd8&amp;0&amp;UID5527112 (monitor)
+    [0x3]            : DISPLAY\Default_Monitor\6&1a097cd8&0&UID5527112 (monitor)
 ```
 </div></td>
 </tr>
@@ -892,8 +892,8 @@ This table summarizes the use of the dx command with common device capability fl
 <td align="left">UniqueID</td>
 <td align="left"><div class="code">
 ```
-0: kd> dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags &amp; 0x40) != 0)
-@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags &amp; 0x40) != 0)                
+0: kd> dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x40) != 0)
+@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x40) != 0)                
     [0x0]            : HTREE\ROOT\0
     [0x1]            : ROOT\volmgr\0000 (volmgr)
     [0x2]            : ROOT\spaceport\0000 (spaceport)
@@ -905,8 +905,8 @@ This table summarizes the use of the dx command with common device capability fl
 <td align="left">SilentInstall</td>
 <td align="left"><div class="code">
 ```
-0: kd> dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags &amp; 0x80) != 0)
-@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags &amp; 0x80) != 0)                
+0: kd> dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x80) != 0)
+@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x80) != 0)                
     [0x0]            : HTREE\ROOT\0
     [0x1]            : ROOT\volmgr\0000 (volmgr)
     [0x2]            : ROOT\spaceport\0000 (spaceport)
@@ -918,8 +918,8 @@ This table summarizes the use of the dx command with common device capability fl
 <td align="left">RawDeviceOk</td>
 <td align="left"><div class="code">
 ```
-0: kd> dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags &amp; 0x100) != 0)
-@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags &amp; 0x100) != 0)                
+0: kd> dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x100) != 0)
+@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x100) != 0)                
     [0x0]            : HTREE\ROOT\0
     [0x1]            : SWD\MMDEVAPI\MicrosoftGSWavetableSynth
     [0x2]            : SWD\IP_TUNNEL_VBUS\IP_TUNNEL_DEVICE_ROOT
@@ -931,8 +931,8 @@ This table summarizes the use of the dx command with common device capability fl
 <td align="left">SurpriseRemovalOK</td>
 <td align="left"><div class="code">
 ```
-0: kd> dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags &amp; 0x200) != 0)
-@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags &amp; 0x200) != 0)                
+0: kd> dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x200) != 0)
+@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x200) != 0)                
     [0x0]            : SWD\MMDEVAPI\MicrosoftGSWavetableSynth
     [0x1]            : SWD\IP_TUNNEL_VBUS\IP_TUNNEL_DEVICE_ROOT
     [0x2]            : SWD\PRINTENUM\PrintQueues

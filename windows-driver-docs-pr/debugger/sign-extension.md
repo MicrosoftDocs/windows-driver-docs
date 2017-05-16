@@ -31,7 +31,7 @@ A number from 0x80000000 through 0xFFFFFFFF is sign extended based on the follow
 
 -   Individual numbers and registers in an expression can be sign extended, but no other calculations during expression evaluation are sign extended. As a result, you can mask the high bits of a number or register by using the following syntax.
     ```
-    ( 0x0`FFFFFFFF &amp; expression )
+    ( 0x0`FFFFFFFF & expression )
     ```
 
 ### <span id="sign_extension_in_c___expressions"></span><span id="SIGN_EXTENSION_IN_C___EXPRESSIONS"></span>Sign Extension in C++ Expressions
