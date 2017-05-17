@@ -13,7 +13,7 @@ USBView (Universal Serial Bus Viewer, Usbview.exe) is a Windows graphical user i
 ## <span id="Where_to_get_USBView"></span><span id="where_to_get_usbview"></span><span id="WHERE_TO_GET_USBVIEW"></span>Where to get USBView
 
 
-USBView is included in [Debugging Tools for Windows](introduction6.md).
+USBView is included in [Debugging Tools for Windows](index.md).
 
 [USBView](http://go.microsoft.com/fwlink/p/?LinkId=618004) is also available in the [Windows driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
 

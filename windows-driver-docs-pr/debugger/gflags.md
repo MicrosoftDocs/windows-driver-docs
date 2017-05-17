@@ -13,7 +13,7 @@ GFlags (the Global Flags Editor), gflags.exe, enables and disables advanced debu
 ## <span id="Where_to_get_GFlags"></span><span id="where_to_get_gflags"></span><span id="WHERE_TO_GET_GFLAGS"></span>Where to get GFlags
 
 
-GFlags is included in [Debugging Tools for Windows](introduction6.md).
+GFlags is included in [Debugging Tools for Windows](index.md).
 
 ## <span id="ddk_gflags_dtools"></span><span id="DDK_GFLAGS_DTOOLS"></span>Overview of GFlags
 

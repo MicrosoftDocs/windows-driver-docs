@@ -13,7 +13,7 @@ DumpChk (the Microsoft Crash Dump File Checker tool) is a program that performs 
 ## <span id="Where_to_get_DumpChk"></span><span id="where_to_get_dumpchk"></span><span id="WHERE_TO_GET_DUMPCHK"></span>Where to get DumpChk
 
 
-DumpChk.exe is included in [Debugging Tools for Windows](introduction6.md).
+DumpChk.exe is included in [Debugging Tools for Windows](index.md).
 
 ## <span id="DumpChk_command-line_options"></span><span id="dumpchk_command-line_options"></span><span id="DUMPCHK_COMMAND-LINE_OPTIONS"></span>DumpChk command-line options
 

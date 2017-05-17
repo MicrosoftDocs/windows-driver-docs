@@ -16,7 +16,7 @@ ADPlus V7.0 is a total rewrite of ADPlus. ADPlus V7.0 is written in managed code
 ## <span id="Where_to_get_ADPlus"></span><span id="where_to_get_adplus"></span><span id="WHERE_TO_GET_ADPLUS"></span>Where to get ADPlus
 
 
-ADPlus is included in [Debugging Tools for Windows](introduction6.md).
+ADPlus is included in [Debugging Tools for Windows](index.md).
 
 For ADPlus V7.0 documentation, see adplus.doc in the installation folder for Debugging Tools for Windows.
 

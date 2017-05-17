@@ -10,7 +10,7 @@ keywords: ["managed code debugging", "managed code debugging, overview", ".NET c
 
 You can use the windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code. To debug managed code, you must load the [SOS debugging extension (sos.dll)](http://go.microsoft.com/fwlink/p/?linkid=223345) and a data access component (mscordacwks.dll).
 
-The windows debuggers are separate from the Visual Studio debugger. For information about the distinction between the windows debuggers and the Visual Studio debugger, see [Windows Debugging](introduction6.md).
+The windows debuggers are separate from the Visual Studio debugger. For information about the distinction between the windows debuggers and the Visual Studio debugger, see [Windows Debugging](index.md).
 
 ## <span id="introduction-to-managed-code"></span><span id="INTRODUCTION_TO_MANAGED_CODE"></span>Introduction to Managed Code
 

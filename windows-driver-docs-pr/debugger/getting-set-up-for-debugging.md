@@ -10,7 +10,7 @@ keywords: ["setup debugging", "configure debugging", "configure debugger", "WinD
 
 There are two ways you can set up debugging with the Windows debuggers. You can use Microsoft Visual Studio (integrated with the Windows Driver Kit (WDK)), or you can do the setup manually. After you set up kernel-mode debugging, you can use Visual Studio, WinDbg, or KD to establish a debugging session. After you set up user-mode debugging, you can use Visual Studio, WinDbg, CDB, or NTSD to establish a debugging session.
 
-**Note**  The Windows debuggers are included in Debugging Tools for Windows. These debuggers are different from the Visual Studio debugger, which is included with Visual Studio. For more information, see [Windows Debugging](introduction6.md).
+**Note**  The Windows debuggers are included in Debugging Tools for Windows. These debuggers are different from the Visual Studio debugger, which is included with Visual Studio. For more information, see [Windows Debugging](index.md).
 
  
 

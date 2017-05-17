@@ -13,7 +13,7 @@ The Remote tool, Remote.exe, is a command-line tool that lets you run and contro
 ## <span id="Where_to_get_the_Remote_tool"></span><span id="where_to_get_the_remote_tool"></span><span id="WHERE_TO_GET_THE_REMOTE_TOOL"></span>Where to get the Remote tool
 
 
-Remote.exe is included in [Debugging Tools for Windows](introduction6.md).
+Remote.exe is included in [Debugging Tools for Windows](index.md).
 
 ## <span id="ddk_remote_tool_dtools"></span><span id="DDK_REMOTE_TOOL_DTOOLS"></span>Remote tool components
 

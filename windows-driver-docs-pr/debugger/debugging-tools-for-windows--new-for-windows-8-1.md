@@ -17,7 +17,7 @@ For Windows 8.1, Debugging Tools for Windows includes these new features.
 ## <span id="related_topics"></span>Related topics
 
 
-[Windows Debugging](introduction6.md)
+[Windows Debugging](index.md)
 
  
 

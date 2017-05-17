@@ -9,7 +9,7 @@ ms.assetid: 1B61591F-0D48-4FBD-B242-68BB90D27FAF
 
 WinDbg is a kernel-mode and user-mode debugger that is included in Debugging Tools for Windows. Here we provide hands-on exercises that will help you get started using WinDbg as a kernel-mode debugger.
 
-For information about how to get Debugging Tools for Windows, see [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](introduction6.md). After you have installed the debugging tools, locate the installation directories for 64-bit (x64) and 32-bit (x86) versions of the tools. For example:
+For information about how to get Debugging Tools for Windows, see [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](index.md). After you have installed the debugging tools, locate the installation directories for 64-bit (x64) and 32-bit (x86) versions of the tools. For example:
 
 -   C:\\Program Files (x86)\\Windows Kits\\8.1\\Debuggers\\x64
 -   C:\\Program Files (x86)\\Windows Kits\\8.1\\Debuggers\\x86
@@ -52,7 +52,7 @@ Likewise, if you decided to set up your host and target computers for debugging 
 
 
 1.  On the host computer, open WinDbg and establish a kernel-mode debugging session with the target computer.
-2.  In WinDbg, choose **Contents** from the **Help** menu. This opens the debugger documentation CHM file. The debugger documentation is also available on line [here](introduction6.md).
+2.  In WinDbg, choose **Contents** from the **Help** menu. This opens the debugger documentation CHM file. The debugger documentation is also available on line [here](index.md).
 3.  When you establish a kernel-mode debugging session, WinDbg might break in to the target computer automatically. If WinDbg has not already broken in, choose **Break** from the **Debug** menu.
 
 4.  Near the bottom of the WinDbg window, in the command line, enter this command:

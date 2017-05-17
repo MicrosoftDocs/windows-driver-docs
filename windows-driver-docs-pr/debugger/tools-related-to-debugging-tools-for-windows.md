@@ -20,7 +20,7 @@ You can configure Windows Error Reporting (WER) to write user-mode dump files wh
 
 [Tools Included in Debugging Tools for Windows](extra-tools.md)
 
-[Debugging Tools for Windows](introduction6.md)
+[Debugging Tools for Windows](index.md)
 
  
 

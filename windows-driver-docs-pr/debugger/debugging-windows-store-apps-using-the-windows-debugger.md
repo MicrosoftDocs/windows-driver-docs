@@ -11,7 +11,7 @@ You can use the Windows debuggers (WinDbg, CDB, and NTSD) to debug Windows apps.
 
 To debug a managed-code Windows app, load the [SOS debugging extension (sos.dll)](http://go.microsoft.com/fwlink/p/?linkid=223345) and a data access component (mscordacwks.dll). For more information, see [Debugging Managed Code Using the Windows Debugger](debugging-managed-code.md).
 
-The windows debuggers are separate from the Visual Studio debugger. For information about the distinction between the windows debuggers and the Visual Studio debugger, see [Windows Debugging](introduction6.md).
+The windows debuggers are separate from the Visual Studio debugger. For information about the distinction between the windows debuggers and the Visual Studio debugger, see [Windows Debugging](index.md).
 
  
 

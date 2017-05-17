@@ -23,7 +23,7 @@ To debug code running on Windows Vistaor Windows Server 2008, get the Windows 
 ## <span id="related_topics"></span>Related topics
 
 
-[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](introduction6.md)
+[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](index.md)
 
  
 

@@ -26,7 +26,7 @@ Sos.dll is a component that is used for debugging managed code. The Windows 8 D
 ## <span id="related_topics"></span>Related topics
 
 
-[Windows Debugging](introduction6.md)
+[Windows Debugging](index.md)
 
  
 

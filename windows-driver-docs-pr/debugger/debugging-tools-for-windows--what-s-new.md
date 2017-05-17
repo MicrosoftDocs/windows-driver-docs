@@ -16,7 +16,7 @@ ms.assetid: 7F85412E-7A5D-4B1E-83B9-C32EDA7C6B49
 ## <span id="related_topics"></span>Related topics
 
 
-[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](introduction6.md)
+[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](index.md)
 
  
 

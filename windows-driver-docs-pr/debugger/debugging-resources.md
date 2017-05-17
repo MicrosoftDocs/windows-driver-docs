@@ -12,7 +12,7 @@ Use Debugging Tools for Windows to debug drivers, applications, and services on 
 ## <span id="Getting_Started_with_Debugging_Tools_for_Windows"></span><span id="getting_started_with_debugging_tools_for_windows"></span><span id="GETTING_STARTED_WITH_DEBUGGING_TOOLS_FOR_WINDOWS"></span>Getting Started with Debugging Tools for Windows
 
 
--   [Windows Debugging](introduction6.md)
+-   [Windows Debugging](index.md)
 
 ## <span id="Installing_Debugging_Tools_for_Windows"></span><span id="installing_debugging_tools_for_windows"></span><span id="INSTALLING_DEBUGGING_TOOLS_FOR_WINDOWS"></span>Installing Debugging Tools for Windows
 

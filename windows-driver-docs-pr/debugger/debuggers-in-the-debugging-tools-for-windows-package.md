@@ -98,7 +98,7 @@ It is possible to redirect the input and output from NTSD (or CDB) so that it ca
 ## <span id="related_topics"></span>Related topics
 
 
-[Windows Debugging](introduction6.md)
+[Windows Debugging](index.md)
 
  
 

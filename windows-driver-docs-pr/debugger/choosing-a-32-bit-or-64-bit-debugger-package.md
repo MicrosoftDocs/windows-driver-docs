@@ -33,7 +33,7 @@ If your host computer uses an x64-based processor and is running a 64-bit versio
 ## <span id="related_topics"></span>Related topics
 
 
-[Windows Debugging](introduction6.md)
+[Windows Debugging](index.md)
 
  
 

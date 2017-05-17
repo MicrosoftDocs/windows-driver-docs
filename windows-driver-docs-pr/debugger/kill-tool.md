@@ -13,7 +13,7 @@ The Kill tool, kill.exe, terminates one or more processes and all of their threa
 ## <span id="Where_to_get_Kill_Tool"></span><span id="where_to_get_kill_tool"></span><span id="WHERE_TO_GET_KILL_TOOL"></span>Where to get Kill Tool
 
 
-Kill.exe is included in [Debugging Tools for Windows](introduction6.md).
+Kill.exe is included in [Debugging Tools for Windows](index.md).
 
 ## <span id="Kill_Tool_command-line_options"></span><span id="kill_tool_command-line_options"></span><span id="KILL_TOOL_COMMAND-LINE_OPTIONS"></span>Kill Tool command-line options
 

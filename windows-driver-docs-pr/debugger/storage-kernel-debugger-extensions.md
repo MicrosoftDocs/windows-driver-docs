@@ -13,7 +13,7 @@ Extension commands that are useful for debugging storage drivers, via classpnp m
 
 Please refer to [SCSI Miniport Extensions (Scsikd.dll and Minipkd.dll)](scsi-miniport-extensions--scsikd-dll-and-minipkd-dll-.md) for debugging needs for Windows 7 and below version of OS targets.
 
-**Important**  You need special symbols to use this extension. For more information, see [Debugging Tools for Windows](introduction6.md).
+**Important**  You need special symbols to use this extension. For more information, see [Debugging Tools for Windows](index.md).
 
  
 
