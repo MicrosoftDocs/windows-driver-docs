@@ -497,7 +497,7 @@ Some of the structures that appear in the preceding table are not defined in any
 
 The following procedures will help you debug certain instances of this bug check.
 
-<span id="parameter_1_equals_0x2"></span><span id="PARAMETER_1_EQUALS_0X2"></span>
+<span id="parameter-1-equals-0x2"></span><span id="PARAMETER-1-EQUALS-0X2"></span>
 **Debugging bug check 0xA0 when Parameter 1 equals 0x2**
 
 1.  Examine the stack. Look for the **ntoskrnl!PopExceptionFilter** function. This function contains the following code as its first argument.
@@ -526,7 +526,7 @@ The following procedures will help you debug certain instances of this bug check
 
 4.  Use a variety of commands to analyze the source of the error. Start with [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) .
 
-<span id="parameter_1_equals_0x7"></span><span id="PARAMETER_1_EQUALS_0X7"></span>
+<span id="parameter-1-equals-0x7"></span><span id="PARAMETER-1-EQUALS-0X7"></span>
 **Debugging bug check 0xA0 when Parameter 1 equals 0x7**
 
 1.  Examine the stack. Look for the **ntoskrnl!PopExceptionFilter** function. The first argument to this function is of type PEXCEPTION\_POINTERS. Note the value of this argument.
@@ -549,7 +549,7 @@ The following procedures will help you debug certain instances of this bug check
 
 4.  Use a variety of commands to analyze the source of the error. Start with [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) .
 
-<span id="parameter_1_equals_0x101"></span><span id="PARAMETER_1_EQUALS_0X101"></span>
+<span id="parameter-1-equals-0x101"></span><span id="PARAMETER-1-EQUALS-0X101"></span>
 **Debugging bug check 0xA0 when Parameter 1 equals 0x101**
 
 1.  Use the [**dt (Display Type)**](dt--display-type-.md) command and specify the value of Parameter 3 as *argument*.

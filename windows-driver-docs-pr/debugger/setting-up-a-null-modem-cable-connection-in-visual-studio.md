@@ -52,7 +52,7 @@ Determine the numbers of the COM ports you are using for debugging on the host a
 
 You can double check the COM port and baud rate settings on the target computer by opening a Command Prompt window as Administrator, and entering **bcdedit /dbgsettings**. If you are using COM2 on the target computer and a baud rate of 115200, the output of **bcdedit** should show `debugport 2` and `baudrate 115200`.
 
-## <span id="null_modem_cable_wiring"></span><span id="NULL_MODEM_CABLE_WIRING"></span>Null Modem Cable Wiring
+## <span id="null-modem-cable-wiring"></span><span id="NULL-MODEM-CABLE-WIRING"></span>Null Modem Cable Wiring
 
 
 The following tables show how null-modem cables are wired.

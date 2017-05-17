@@ -14,7 +14,7 @@ The [debugger engine](introduction.md#debugger-engine) supports debugging differ
 
 Both user-mode, and kernel-mode crash-dump files are opened with [**OpenDumpFile**](https://msdn.microsoft.com/library/windows/hardware/ff552322). The engine is also able to create dump files from a target with [**WriteDumpFile2**](https://msdn.microsoft.com/library/windows/hardware/ff561382).
 
-### <span id="live__user_mode_targets"></span><span id="LIVE__USER_MODE_TARGETS"></span>Live, User-Mode Targets
+### <span id="live--user-mode-targets"></span><span id="LIVE--USER-MODE-TARGETS"></span>Live, User-Mode Targets
 
 The debugger engine can both create and attach to user-mode processes.
 
@@ -24,11 +24,11 @@ When detaching from a process, the engine can optionally leave the process runni
 
 The engine can be queried for information about all of the user-mode processes that are running on the computer, including the process ID and name of the executable image that is used to start the process. This information can be used to help locate a process to debug.
 
-### <span id="live__kernel_mode_targets"></span><span id="LIVE__KERNEL_MODE_TARGETS"></span>Live, Kernel-Mode Targets
+### <span id="live--kernel-mode-targets"></span><span id="LIVE--KERNEL-MODE-TARGETS"></span>Live, Kernel-Mode Targets
 
 The method [**AttachKernel**](https://msdn.microsoft.com/library/windows/hardware/ff538145) connects the debugger engine to a Windows kernel.
 
-### <span id="remote_targets"></span><span id="REMOTE_TARGETS"></span>Remote Targets
+### <span id="remote-targets"></span><span id="REMOTE-TARGETS"></span>Remote Targets
 
 When using the debugger engine to debug remotely, there are potentially two extra steps:
 

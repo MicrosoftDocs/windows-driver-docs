@@ -29,7 +29,7 @@ The amount of callback and secondary callback data that is available to the debu
 
 See [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md) for more details on these different dump file sizes.
 
-## <span id="earlier_versions_of_windows"></span><span id="EARLIER_VERSIONS_OF_WINDOWS"></span>Earlier Versions of Windows
+## <span id="earlier-versions-of-windows"></span><span id="EARLIER-VERSIONS-OF-WINDOWS"></span>Earlier Versions of Windows
 
 
 In versions of Windows earlier than Windows XP SP1, callback data written by [BugCheckCallback](http://go.microsoft.com/fwlink/p/?LinkID=254479) is included in the crash dump file.
@@ -37,7 +37,7 @@ In versions of Windows earlier than Windows XP SP1, callback data written by [Bu
 ## <span id="ddk_reading_bug_check_callback_data_dbg"></span><span id="DDK_READING_BUG_CHECK_CALLBACK_DATA_DBG"></span>
 
 
-### <span id="displaying_callback_data"></span><span id="DISPLAYING_CALLBACK_DATA"></span>Displaying Callback Data
+### <span id="displaying-callback-data"></span><span id="DISPLAYING-CALLBACK-DATA"></span>Displaying Callback Data
 
 To display bug check callback data, you can use the [**!bugdump**](-bugdump.md) extension.
 
@@ -45,7 +45,7 @@ Without any parameters, [**!bugdump**](-bugdump.md) will display data for all ca
 
 To view data for one specific callback routine, use [**!bugdump**](-bugdump.md)*Component*, where *Component* is the same parameter that was passed to **KeRegisterBugCheckCallback** when that routine was registered.
 
-### <span id="displaying_secondary_callback_data"></span><span id="DISPLAYING_SECONDARY_CALLBACK_DATA"></span>Displaying Secondary Callback Data
+### <span id="displaying-secondary-callback-data"></span><span id="DISPLAYING-SECONDARY-CALLBACK-DATA"></span>Displaying Secondary Callback Data
 
 There are two methods for displaying secondary callback data in Windows XP SP1, Windows Server 2003, and later versions of Windows. You can use the **.enumtag** command or you can write your own debugger extension.
 
@@ -103,7 +103,7 @@ STDMETHOD(EndEnumTagged)(
     ) PURE; 
 ```
 
-### <span id="debugging_callback_routines"></span><span id="DEBUGGING_CALLBACK_ROUTINES"></span>Debugging Callback Routines
+### <span id="debugging-callback-routines"></span><span id="DEBUGGING-CALLBACK-ROUTINES"></span>Debugging Callback Routines
 
 It is also possible to debug the callback routine itself. Breakpoints within callback routines work just like any other breakpoint.
 

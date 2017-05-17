@@ -117,7 +117,7 @@ You can turn off lazy symbol loading in CDB and KD by using the **-s**[command-l
 ## <span id="ddk_symbol_path_dbg"></span><span id="DDK_SYMBOL_PATH_DBG"></span>
 
 
-### <span id="controlling_the_symbol_path"></span><span id="CONTROLLING_THE_SYMBOL_PATH"></span>Controlling the Symbol Path
+### <span id="controlling-the-symbol-path"></span><span id="CONTROLLING-THE-SYMBOL-PATH"></span>Controlling the Symbol Path
 
 To control the symbol path, you can do one of the following:
 

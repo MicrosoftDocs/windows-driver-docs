@@ -279,7 +279,7 @@ Unable to enumerate user-mode unloaded modules, Win32 error 0n30
 ```
 
 8. Because we have yet to set the symbol path and loaded symbols, limited information is available in the debugger.
-### <span id="Section3_Download_Build"></span><span id="section3_download_build"></span><span id="SECTION3_DOWNLOAD_BUILD"></span>Section 3: Download and build the KMDF universal echo driver
+### <span id="Section3-Download-Build"></span><span id="section3-download-build"></span><span id="SECTION3-DOWNLOAD-BUILD"></span>Section 3: Download and build the KMDF universal echo driver
 
 *In Section 3, you will download and build the KMDF universal echo driver.*
 
@@ -374,7 +374,7 @@ To download and build the Echo sample audio driver, complete the following steps
 
 In the next section, you will copy the code to the target system, and install and test the driver.
 
-### <span id="Section4_Install"></span><span id="section4_install"></span><span id="SECTION4_INSTALL"></span>Section 4: Install the KMDF cho driver sample on the target system
+### <span id="Section4-Install"></span><span id="section4-install"></span><span id="SECTION4-INSTALL"></span>Section 4: Install the KMDF cho driver sample on the target system
 
 *In Section 4, you will use devcon to install the echo sample driver.*
 

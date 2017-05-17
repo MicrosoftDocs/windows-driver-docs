@@ -76,7 +76,7 @@ The debugger data model allows for the creation of an interface to information a
 -   Can be queried using LINQ- This allows for extraction and sorting of data using a standard query language.
 -   Can be logically and consistently extended - Extensible using techniques described in this topic with debugger scripting providers such as Natvis and JavaScript.
 
-## <span id="Extending_Debugger_Object"></span><span id="extending_debugger_object"></span><span id="EXTENDING_DEBUGGER_OBJECT"></span>Extending a Debugger Object in JavaScript
+## <span id="Extending-Debugger-Object"></span><span id="extending-debugger-object"></span><span id="EXTENDING-DEBUGGER-OBJECT"></span>Extending a Debugger Object in JavaScript
 
 
 In addition to being able to create a visualizer in JavaScript, script extensions can also modify the core concepts of the debugger - sessions, processes, threads, stacks, stack frames, local variables - and even publish themselves as extension points that other extensions can consume.
@@ -446,7 +446,7 @@ Debugger.Sessions.First().Processes.First().Threads.Duplicate(2),d              
 …
 ```
 
-## <span id="Debugger_Objects"></span><span id="debugger_objects"></span><span id="DEBUGGER_OBJECTS"></span>Debugger Objects in JavaScript Extensions
+## <span id="Debugger-Objects"></span><span id="debugger-objects"></span><span id="DEBUGGER-OBJECTS"></span>Debugger Objects in JavaScript Extensions
 
 
 **Passing Native Objects**
@@ -602,7 +602,7 @@ As mentioned, a JavaScript script can get access to native objects by having the
 
  
 
-## <span id="Host_APIs"></span><span id="host_apis"></span><span id="HOST_APIS"></span>Host APIs for JavaScript Extensions
+## <span id="Host-APIs"></span><span id="host-apis"></span><span id="HOST-APIS"></span>Host APIs for JavaScript Extensions
 
 
 The JavaScript provider inserts an object called host into the global namespace of every script which it loads. This object provides access to critical functionality for the script as well as access to the namespace of the debugger. It is set up in two phases.
@@ -840,7 +840,7 @@ The memory sub-namespace of the host object contains the following.
 
  
 
-## <span id="Data_Model"></span><span id="data_model"></span><span id="DATA_MODEL"></span>Data Model Concepts in JavaScript
+## <span id="Data-Model"></span><span id="data-model"></span><span id="DATA-MODEL"></span>Data Model Concepts in JavaScript
 
 
 **Data Model Mapping**
@@ -982,7 +982,7 @@ class myNativeModel
 }
 ```
 
-## <span id="Design_Considerations"></span><span id="design_considerations"></span><span id="DESIGN_CONSIDERATIONS"></span>Debugger Data Model Design Considerations
+## <span id="Design-Considerations"></span><span id="design-considerations"></span><span id="DESIGN-CONSIDERATIONS"></span>Debugger Data Model Design Considerations
 
 
 **Design Principles**
@@ -1024,7 +1024,7 @@ A script that is published should not break compatibility with other scripts tha
 
 Scripts that are intended to be used as extensions must not rely on dbgeng-specific features whenever possible (such as executing "classic" debugger extensions). Scripts should be usable on top of any debugger that hosts the data model.
 
-## <span id="Testing_Debugger_Extensions"></span><span id="testing_debugger_extensions"></span><span id="TESTING_DEBUGGER_EXTENSIONS"></span>Testing Debugger Extensions
+## <span id="Testing-Debugger-Extensions"></span><span id="testing-debugger-extensions"></span><span id="TESTING-DEBUGGER-EXTENSIONS"></span>Testing Debugger Extensions
 
 
 Extensions are expected to work in a wide range of scenarios. While some extensions may be specific to a scenario (such as a kernel debugging scenario), most extensions should be expected to work in all scenarios, or have metadata indicating the supported scenarios.

@@ -90,7 +90,7 @@ For help, open a Command Prompt window, navigate to the [installation directory]
 <span id="rtlist___remote_task_list_viewer___rtlist.exe_"></span><span id="RTLIST___REMOTE_TASK_LIST_VIEWER___RTLIST.EXE_"></span>RTList (Remote Task List Viewer) (Rtlist.exe)  
 List running processes via a DbgSrv process server. For help, open a Command Prompt window, navigate to the [installation directory](#installation-directories), and enter **rtlist /?**.
 
-## <span id="installation_directories"></span><span id="INSTALLATION_DIRECTORIES"></span>Installation Directory
+## <span id="installation-directories"></span><span id="INSTALLATION-DIRECTORIES"></span>Installation Directory
 
 
 The default installation directory for 64 bit OS installs for the debugging tools is C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\. If you have a 32-bit OS, you can find the Windows Kits folder under C:\\Program Files. To determine if you should use the 32 bit or 64 bit tools, see [Choosing the 32-Bit or 64-Bit Debugging Tools](choosing-a-32-bit-or-64-bit-debugger-package.md).

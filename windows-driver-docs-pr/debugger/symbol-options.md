@@ -308,7 +308,7 @@ This option is on by default in all debuggers. It can be deactivated by using th
 
 This option is on by default in DBH. It is turned off if the -d command-line option is used. Once DBH is running, it can be turned on or off by using symopt +10000 or symopt -10000, respectively.
 
-### <span id="symopt-no-image_search"></span><span id="SYMOPT_NO_IMAGE_SEARCH"></span>SYMOPT\_NO\_IMAGE\_SEARCH
+### <span id="symopt-no-image-search"></span><span id="SYMOPT-NO-IMAGE-SEARCH"></span>SYMOPT\_NO\_IMAGE\_SEARCH
 
 This symbol option prevents DbgHelp from searching the disk for a copy of the image when symbols are loaded.
 
