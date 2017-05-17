@@ -46,13 +46,13 @@ Install the Windows Hardware Lab Kit (HLK) on the test system with the PTP and r
 
 **Note** While submitting the firmware update driver package, make sure to select Windows 8 or later as the applicable OS. If any down-level OS is chosen, then the Windows Dev Center Hardware Dashboard will sign the catalog in the driver package with SHA1 algorithm. Starting in Windows 8, all firmware update driver packages must be SHA256 signed.
 
-Though not recommended, it is possible to submit a package to Microsoft without first generating HLK test logs (or including HLK test logs when submitting). Use "Create driver signing submission" for driver signing without the HLK pass test log or for validation testing.
+Though not recommended, it is possible to submit a package to Microsoft without first generating HLK test logs (or including HLK test logs when submitting). Use **Create driver signing submission** for driver signing without the HLK pass test log or for validation testing.
 
-The requirement for Driver Signing without HLK test logs is that the driver is submitted in CAB format.
+The requirement for driver signing without HLK test logs is that the driver is submitted in CAB format.
 
-The in-box Makecab.exe allows the user to create a cab file. Though there are other tools (such as Cabarch.exe) out there, they are sometimes more difficult to locate and not included in-box.
+The in-box Makecab.exe allows the user to create a CAB file. Though there are other tools (such as Cabarch.exe) available, they are sometimes more difficult to locate and not included in-box.
 
-The key is to make sure that the folder that contains the driver is included in the cabinet as well. For example, the driver package may have a strucure as follows:
+The key is to make sure that the folder that contains the driver is included in the CAB file as well. For example, the driver package may have a structure similar to the following:
 
 ```
 C:\Desktop
@@ -65,11 +65,11 @@ If you follow this format, the submission should pass. To confirm the parent fol
 
 ## Related resources
 
-[Authoring a firmware update package](https://msdn.microsoft.com/en-us/windows/hardware/drivers/bringup/authoring-a-firmware-update-package)                                      
+[Authoring a firmware update package](https://msdn.microsoft.com/en-us/windows/hardware/drivers/bringup/authoring-a-firmware-update-package)
 
 [Certifying and signing the update package](https://msdn.microsoft.com/en-us/windows/hardware/drivers/bringup/certifying-and-signing-the-update-package)
 
-[Device.Fundamentals Reliability Testing Prerequisites](https://msdn.microsoft.com/en-us/library/windows/hardware/dn974452)                                                         
+[Device.Fundamentals Reliability Testing Prerequisites](https://msdn.microsoft.com/en-us/library/windows/hardware/dn974452)     
 
 [Driver Signing](https://msdn.microsoft.com/en-us/library/windows/hardware/dn962252)
 

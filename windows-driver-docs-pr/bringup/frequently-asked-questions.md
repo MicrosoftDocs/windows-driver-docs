@@ -1,26 +1,27 @@
 ---
-title: TBD
-description: TBD
+title: Firmware WEG FAQ
+description:  Firmware WEG: Frequently asked questions (FAQ)
+author: windows-driver-content
 ms.author: windowsdriverdev
-ms.date: 05/05/2017
+ms.date: 05/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
 
-# Frequently asked questions (FAQ)
+# Firmware WEG: Frequently asked questions (FAQ)
 
 
-The following Q and A came about due to the number of machines still using Windows 7. 
+The following FAQ came about due to the number of machines still using Windows 7.  
 
-Please review and send questions, comments or thoughts to the link at the beginning of this document.
+Please send aditional questions or comments to <SAUEFI@Microsoft.com>.
 
-**Q:** If I am installing Windows 7 on Skylake, which configuration should be chosen? Should the firmware CSM be enabled with UEFI boot (Config \#2) or legacy boot MBR (config \#3)? If Legacy boot mode, why?
+**Q:** If I am installing Windows 7 on Skylake, which configuration should be chosen? Should the firmware CSM be enabled with UEFI boot (Config \#2) or legacy boot MBR (Config \#3)? If Legacy boot mode, why?
 
 > **A:** Specifically, for Windows 7 it is recommended to use Config \#2. You will need to enable the CSM and set default to UEFI boot, falling back to legacy boot only if needed. Secure Boot will need to be disabled.
 >
-> Windows 7 is not able to support Config \# 1. Windows 7 has a dependency on Int10 support for basic display when the high-res graphics driver is not available (e.g., Bugcheck, Sleep transitions, etc.), a dependency satisfied by the CSM. You can boot Win7 in UEFI mode if a partial CSM is in place (enabled) providing Int10 support. If firmware defaults to UEFI boot mode leaving Int10 CSM enabled, then Win7 will install successfully in UEFI mode. Microsoft has also backported TPM 2.0 support to Windows 7 for when it is installed in UEFI mode (see [KB2920188](https://support.microsoft.com/en-us/kb/2920188)).
+> Windows 7 is not able to support Config \# 1. Windows 7 has a dependency on Int10 support for basic display when the high-res graphics driver is not available (for example, Bugcheck, Sleep transitions, etc.), a dependency satisfied by the CSM. You can boot Win7 in UEFI mode if a partial CSM is in place (enabled) providing Int10 support. If firmware defaults to UEFI boot mode leaving Int10 CSM enabled, then Win7 will install successfully in UEFI mode. Microsoft has also backported TPM 2.0 support to Windows 7 for when it is installed in UEFI mode (see [KB2920188](https://support.microsoft.com/en-us/kb/2920188)).
 >
 > Microsoft recommends you should use Config \# 2; Legacy MBR Boot mode should not be used.
 
@@ -70,7 +71,7 @@ Please review and send questions, comments or thoughts to the link at the beginn
 
 **Q:** What is the dependency on 32-bit vs. 64-bit UEFI?
 
-> **A:** Microsoft does support both 32 and 64 bit UEFI. The bitness of the OS and the UEFI firmware must match. (e.g. if you have a 64-bit UEFI firmware then you must install 64-bit Windows OS).
+> **A:** Microsoft does support both 32 and 64 bit UEFI. The bitness of the OS and the UEFI firmware must match. (for example, if you have a 64-bit UEFI firmware then you must install 64-bit Windows OS).
 
 **Q:** Can you programmatically switch firmware settings?
 
@@ -81,8 +82,8 @@ Please review and send questions, comments or thoughts to the link at the beginn
 > **A:** Secure Boot is only supported in UEFI mode with the CSM disabled. If Secure Boot was not pre-configured on the factory floor prior to system shipping out to customers, then you will probably not have the option available to you. If the system did previously have Secure Boot enabled, but disabled for current Windows 7 OS (using downgrade rights) then it may be as simple as disabling the CSM and enabling Secure Boot. However, if partition was cleaned and you are not setup for UEFI boot to GPT disk. Then you will need to clean the disk and re-install the operating system for UEFI boot prior to turning on Secure Boot.
 >
 > Consult with the original equipment manufacturer (OEM) prior to making any changes to ensure your system supports secure boot.
-
-**Note** Cleaning the disk will destroy any data that is on that disk even if in other partitions.
+>
+> **Note** Cleaning the disk will destroy any data that is on that disk even if in other partitions.
 
 **Q:** Any dependency on BitLocker and Non-Microsoft disk encryption tools?
 
@@ -112,10 +113,11 @@ Please review and send questions, comments or thoughts to the link at the beginn
 
 ## Related resources
 
-| [UEFI Firmware](https://technet.microsoft.com/en-us/library/hh824898.aspx)                                                  |
-|-----------------------------------------------------------------------------------------------------------------------------|
-| [Windows 10 Specifications - Microsoft](https://www.microsoft.com/en-US/windows/windows-10-specifications)                  |
-| [Update to add support for TPM 2.0 in Windows 7 and Windows Server 2008 R2](https://support.microsoft.com/en-us/kb/2920188) |
+[UEFI Firmware](https://technet.microsoft.com/en-us/library/hh824898)
+ 
+[Windows 10 Specifications - Microsoft](https://www.microsoft.com/en-US/windows/windows-10-specifications)
+
+[Update to add support for TPM 2.0 in Windows 7 and Windows Server 2008 R2](https://support.microsoft.com/en-us/kb/2920188)
 
 
 

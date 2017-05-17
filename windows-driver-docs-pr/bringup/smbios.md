@@ -12,11 +12,11 @@ ms.technology: windows-devices
 
 # SMBIOS
 
-SMBIOS specification defines data structures and information that will go into the data structures pertinent to a system. By using the latest SMBIOS specification, we keep up with the latest changes defined in the specification. The table below describe the recommended SMBIOS settings along with guidance on what type of information should be in these fields. Having these fields populated with data pertaining to each individual system allows system administrators the ability to remotely identify and manage these systems. Computer Hardware IDs (CHIDs) are generated using the values from this table, and care and thought should be given to setting these.
+The SMBIOS specification defines data structures and information that will go into the data structures pertinent to a system. By using the latest SMBIOS specification, we keep up with the latest changes defined in the specification. The tables below describe recommended SMBIOS settings along with guidance on what type of information should be in these fields. Having these fields populated with data pertaining to each individual system allows system administrators the ability to remotely identify and manage these systems. Computer Hardware IDs (CHIDs) are generated using the values from these tables, and care and thought should be given to setting these.
 
-To add uniformity to SMBIOS to better identify device information, we recommend the following as guidance when populating SMBIOS fields. The SMBIOS data below is also collected and used in various capacities. The data going into these fields should be planned in detail before populating using tools provided by BIOS/Firmware vendors. The hash generated for CHID targeting is based off of data populating these fields.
+To add uniformity to SMBIOS to better identify device information, we recommend the following as guidance when populating SMBIOS fields. The SMBIOS data below is also collected and used in various capacities. The data going into these fields should be planned in detail before populating using tools provided by BIOS/Firmware vendors. The hash generated for CHID targeting is based on the data populating these fields.
 
-Although this information is similar to that listed in the [Windows 10 Driver Publishing Workflow](http://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx), the following tables prescribe additional levels of detail for some fields, helping to increase the level of specificity.
+Although this information is similar to that listed in the [Windows 10 Driver Publishing Workflow](http://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx), the following tables prescribe additional levels of detail for some fields, increasing the level of specificity.
 
 ## Recommended settings when moving to SMBIOS 3.0
 
@@ -135,10 +135,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
     </tbody>
 </table>
 
-
-
-**Note** SMBIOS fields starting with BIOS \* may be considered optional or recommended.<br>These are used to build the **Computer Hardware ID (CHID)** and ensure additional levels of uniqueness in resulting CHID.
-
+**Note**  SMBIOS fields starting with **BIOS** may be considered optional or recommended. These are used to build the **Computer Hardware ID (CHID)** and ensure additional levels of uniqueness in the resulting CHID.
 
 <table>
 	<tbody>
@@ -237,7 +234,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
 </table>
 
 
-The following table describes settings for the **Enlosure Type** field.
+The following table describes settings for the **Enclosure Type** field.
 
 <table>
 	<tbody>

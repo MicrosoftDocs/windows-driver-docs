@@ -1,8 +1,9 @@
 ---
-title: TBD
-description: TBD
+title: Configure system firmware for Windows 7 and enable for Windows 10
+description: Configure system firmware for Windows 7 and enable for Windows 10
+author: windows-driver-content
 ms.author: windowsdriverdev
-ms.date: 05/05/2017
+ms.date: 05/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -12,27 +13,27 @@ ms.technology: windows-devices
 # Configure system firmware for Windows 7 and enable for Windows 10
 
 
-To setup a modern system for installation of a downlevel operating system (such as Windows 7) here is the list of requirements to satisfy both Windows 7 and Windows 10.
+To setup a modern system for installation of a downlevel operating system (such as Windows 7), this checklist can be used to meet both Windows 7 and Windows 10 requirements.
 
-1.  UEFI 2.3.1 Errata C; This is based on a requirement for Win8.1, in anticipation of future upgrade to Win10.
+- UEFI 2.3.1 Errata C; This is based on a requirement for Windows 8.1, in anticipation of future upgrade to Windows 10.
 
-2.  Secure Boot components for Win10 should be installed (certificates etc.) (see [Secure Boot](#_INTELs_No_eXecute) section above for more information)
+- Secure Boot components for Windows 10 should be installed (certificates, etc.) See [Secure Boot](secure-boot.md) for more information.
 
-3.  TPM2.0 used (see [*KB2920188*](https://support.microsoft.com/en-us/kb/2920188) for TPM2.0 support in Win7).
+- TPM 2.0 used for TPM support in Windows 7. See [KB2920188](https://support.microsoft.com/en-us/kb/2920188) for more information.
 
-4.  EFI System Resource Table(ESRT) should be populated with a model specific Unique ID for System and Devices that can update firmware
+- EFI System Resource Table(ESRT) should be populated with a model specific Unique ID for System and Devices that can update firmware.
 
-5.  UpdateCapsule() & QueryCapsuleCapabilitiesenabled() in UEFI
+- **UpdateCapsule()** and **QueryCapsuleCapabilitiesenabled()** in UEFI.
 
-6.  SMBIOS configured and populated per [SMBIOS guidance](#_Table_of_recommended) above (even if using downlevel SMBIOS, within reason)
+- SMBIOS configured and populated per [SMBIOS](smbios.md) guidance (even if using downlevel SMBIOS, within reason).
 
-7.  CSM is enabled, this is needed for Windows 7 and will disable Secure Boot
+- CSM is enabled. This is needed for Windows 7 and will disable Secure Boot.
 
-8.  Configure hard drive as GPT disk
+- Configure hard drive as GPT disk.
 
-9.  Device configured for UEFI Boot
+- Device configured for UEFI Boot.
 
-**Note** These requirements are based on both Windows 7 requirements, such as CSM enabled for UEFI boot. As well as for Windows 10 requirements, such as ESRT and UpdateCapsule() being enabled.
+**Note** These requirements are based on both Windows 7 requirements, such as CSM enabled for UEFI boot, and Windows 10 requirements, such as ESRT and **UpdateCapsule()** being enabled.
 
 
 

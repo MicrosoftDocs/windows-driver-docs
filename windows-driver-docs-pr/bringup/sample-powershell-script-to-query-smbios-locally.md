@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Sample PowerShell script to query SMBIOS locally
 
 
-List of ChassisTypes copied from DMTF\\SBIOS latest specification document
+The following list of ChassisTypes is copied from the latest DMTF SMBIOS specification.
 
 ```
 # Set-ExecutionPolicy or Script Signing documentation needs to be reviewed

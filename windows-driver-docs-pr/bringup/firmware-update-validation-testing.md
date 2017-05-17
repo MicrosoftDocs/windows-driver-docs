@@ -1,8 +1,9 @@
 ---
-title: TBD
-description: TBD
+title: Firmware update validation testing
+description: Firmware update validation testing
+author: windows-driver-content
 ms.author: windowsdriverdev
-ms.date: 05/05/2017
+ms.date: 05/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -10,18 +11,23 @@ ms.technology: windows-devices
 
 
 
-# Firmware Update validation testing
+# Firmware update validation testing
 
-Windows provides a mechanism to verify firmware update support going through device manager. Refer to the Related resources for more information.
+Windows provides a mechanism to verify firmware update support going through **Device Manager**. 
+
+Refer to the **Related resources** below for more information.
+
 
 ## Related resources
 
-| [Validating Windows UEFI Firmware Update Platform Functionality](https://msdn.microsoft.com/en-us/library/windows/hardware/dn972665(v=vs.85).aspx) |
-|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Firmware Update test](https://msdn.microsoft.com/en-us/library/windows/hardware/jj124838(v=vs.85).aspx)                                           |
-| [How to verify firmware update support](https://msdn.microsoft.com/en-us/library/windows/hardware/mt188596(v=vs.85).aspx)                          |
-| [Test Distribution Drivers](https://msdn.microsoft.com/en-us/library/windows/hardware/mt149093(v=vs.85).aspx)                                      |
 
+[Validating Windows UEFI Firmware Update Platform Functionality](https://msdn.microsoft.com/en-us/library/windows/hardware/dn972665)
+
+[Firmware Update test](https://msdn.microsoft.com/en-us/library/windows/hardware/jj124838)
+
+[How to verify firmware update support](https://msdn.microsoft.com/en-us/library/windows/hardware/mt188596)
+
+[Test Distribution Drivers](https://msdn.microsoft.com/en-us/library/windows/hardware/mt149093)
 
 
 
