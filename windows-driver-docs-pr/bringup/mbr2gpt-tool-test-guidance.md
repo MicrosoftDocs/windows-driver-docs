@@ -1,8 +1,9 @@
 ---
-title: TBD
-description: TBD
+title: MBR2GPT tool test guidance
+description: MBR2GPT tool test guidance
+author: windows-driver-content
 ms.author: windowsdriverdev
-ms.date: 05/05/2017
+ms.date: 05/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,9 +16,9 @@ ms.technology: windows-devices
 
 **MBR2GPT.EXE** converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt but can also be run from the full Windows 10 operating system (OS).
 
-For detailed description about the tool, including usage information and troubleshooting guidance, please review the documentation at the Technet article for [MBR2GPT](https://technet.microsoft.com/en-us/itpro/windows/deploy/mbr-to-gpt).
+For detailed description about the tool, including usage information and troubleshooting guidance, please review the documentation in the Technet article for [MBR2GPT](https://technet.microsoft.com/en-us/itpro/windows/deploy/mbr-to-gpt).
 
-### Sample checklist when verifying conversion from BIOS/MBR to UEFI/GPT
+## Sample checklist when verifying conversion from BIOS/MBR to UEFI/GPT
 
 - Prior to running MBR2GPT                                                                                                               
     - Run msinfo32 to verify the Machine is currently booted in BIOS mode                                                                                                     
@@ -33,9 +34,9 @@ For detailed description about the tool, including usage information and trouble
 
 **Note** System firmware can vary by manufacturer and by device. Contact the device manufacturer for assistance if you have questions or concerns.
 
-### Test scenarios
+## Test scenarios
 
-### Conversion after in-place upgrade
+### Conversion after an in-place upgrade
 
 1.  Start with a device running Windows 7, 8, or 8.1 in BIOS mode.
 
@@ -43,17 +44,19 @@ For detailed description about the tool, including usage information and trouble
 
 3.  Boot the device into Windows PE, version 1703, which can be obtained from the Windows Assessment and Deployment Kit for Windows 10, version 1703.
 
-4.  Run MBR2GPT.EXE against the disk where Windows 10 is installed
+4.  Run MBR2GPT.EXE against the disk where Windows 10 is installed.
 
 5.  Reconfigure the firmware to boot in UEFI mode, enable Secure Boot, and disable CSM by:
 
-    1.  Changing the relevant settings in the firmware menu, or
+    - Changing the relevant settings in the firmware menu
+    
+    or
 
-    2.  Running a tool provided by the PC or firmware manufacturer
+    - Running a tool provided by the PC or firmware manufacturer
 
 6.  Boot to Windows 10 in UEFI mode
 
-### Conversion as part of reimaging
+### Conversion as part of re-imaging
 
 1.  Start with a device running Windows 7, 8, or 8.1 in BIOS mode.
 
@@ -61,19 +64,21 @@ For detailed description about the tool, including usage information and trouble
 
 3.  Boot the device into Windows PE, version 1703, which can be obtained from the Windows Assessment and Deployment Kit for Windows 10, version 1703.
 
-4.  Deploy Windows 10, version 1703 image.
+4.  Deploy the Windows 10, version 1703 image.
 
 5.  Run MBR2GPT.EXE against the disk where Windows 10 is installed.
 
 6.  Reconfigure the firmware to boot in UEFI mode, enable Secure Boot, and disable CSM by:
 
-    1.  Changing the relevant settings in the firmware menu, or
+    - Changing the relevant settings in the firmware menu
+    
+    or
 
-    2.  Running a tool provided by the PC or firmware manufacturer
+    - Running a tool provided by the PC or firmware manufacturer
 
 7.  Boot to Windows 10 in UEFI mode
 
-    Restore data and settings using USMT Load State
+Restore data and settings using USMT Load State.
 
 ### Conversion as part of Hyper-V generation 1 VM
 
@@ -91,17 +96,15 @@ For detailed description about the tool, including usage information and trouble
 
 7.  Boot to Windows 10, version 1703 in UEFI mode using a gen 2 VM.
 
-**Note** For any of the workflows above, you can convert an MBR disk with BitLocker-encrypted volumes as long as protection has been suspended. To resume BitLocker after conversion, you will need to delete the existing protectors and recreate them.
+**Note** For any of the scenarios above, you can convert an MBR disk with BitLocker-encrypted volumes as long as protection has been suspended. To resume BitLocker after conversion, you will need to delete the existing protectors and recreate them.
 
-### Troubleshooting
+## Troubleshooting
 
 Please refer to the MBR2GPT.EXE [Troubleshooting](https://docs.microsoft.com/en-us/windows/deployment/mbr-to-gpt#troubleshooting) documentation for information about log file locations and additional help. If you are automating the use of this tool via scripting or SCCM/MDT task sequences, you can script handlers for the returned codes that are discussed in the documentation.
 
 ## Related resources
 
 [MBR2GPT.EXE](https://docs.microsoft.com/en-us/windows/deployment/mbr-to-gpt) 
-
-
 
 
 

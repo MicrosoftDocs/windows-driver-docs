@@ -13,78 +13,83 @@ ms.technology: windows-devices
 # How to convert an installed x64 Windows 7 system
 
 
-The following steps are intended for use when the ITPro is in a situation where they need to convert from Legacy MBR+CSM to UEFI+GPT. Usually they start with a system that was installed with Windows 7 x64. For x86 OS, see section in FAQ below about "What is the dependency on 32-bit vs. 64-bit UEFI". Installed in BIOS mode to Legacy MBR boot disk with CSM enabled, and you know or have checked with the OEM for that system to ensure that the system has the following:
+The following steps are intended for use by an ITPro in a scenario where they need to convert from Legacy MBR+CSM to UEFI+GPT. Usually this process starts with a system that has Windows 7 x64 installed. 
+
+For x86 OS systems, see the section in the [Firmware WEG FAQ](frequently-asked-questions.md) about "What is the dependency on 32-bit vs. 64-bit UEFI". 
+
+Installed in BIOS mode to Legacy MBR boot disk with CSM enabled, and you know or have checked with the OEM to ensure that the system has the following:
 
 1.  Ability to enable and disable the CSM
 
 2.  Has UEFI firmware 2.3.1c or later
 
-3.  The security features that you are interested in (Secure boot, Device Guard, and/or Credential Guard) has all the correct components already configured on the system.
+3.  The security features that you are interested in (Secure boot, Device Guard, and Credential Guard) have all the correct components already configured on the system.
 
-**Note** Microsoft does not currently have a mechanism to convert Legacy MBR boot disks over to GPT disks without first wiping/cleaning the existing file system and creating the new file system with the clean disk.
+    **Note** Microsoft does not currently have a mechanism to convert Legacy MBR boot disks to GPT disks without first wiping or cleaning an existing file system and creating the new file system on the clean disk.
 
-For example; you will need to use Diskpart.exe to ‘clean’ the existing partition before they can run the ‘convert GPT’ command on that disk. This ‘clean’ command will wipe the entire disk.
+For example, you will need to use Diskpart.exe to **clean** the existing partition before running the **convert GPT** command on that disk. The **clean** command will wipe the entire disk. 
 
-1.  Once all data is backed up from the primary boot device, and USER/ITPro has confirmed that Primary boot device is Disk 0
+1.  Ensure all data is backed up from the primary boot device, and the user or ITPro has confirmed that primary boot device is Disk 0
 
 2.  Primary boot device has been completely backed up (any data left on disk will be wiped)
 
-3.  reboot to BIOS (contact Manufacture for steps to switch BIOS boot mode to UEFI boot mode) switch to UEFI+CSM
+3.  Reboot to BIOS (contact the manufacturer for steps to switch BIOS boot mode to UEFI boot mode) aand switch to UEFI+CSM
 
-4.  Boot to USB Thumb drive with x64 Winpe
+4.  Boot to the USB flash drive  that contains x64 WinPE
 
-5.  Once booted in WinPE, at main command prompt:
+5.  After booting into WinPE, at the command prompt:
 
-    1.  Open Diskpart.exe
+    a. Open Diskpart.exe
 
-    2.  select disk 0
+    b. select disk 0
 
-    3.  list par
+    c. list par
 
-    4.  list VOL <= to identify current drive letters so you know where existing OS is assigned (identify drive letter for OS, used later)
+    d. list VOL <= to identify current drive letters so you know where existing OS is assigned (identify drive letter for OS, used later)
 
-    5.  convert GPT
+    e. convert GPT
 
-    6.  select partition 1
+    f. select partition 1
 
-    7.  create par EFI size=800 (mg)
+    g. create par EFI size=800 (mg)
 
-    8.  format fs=fat32 label=System
+    h. format fs=fat32 label=System
 
-    9.  assign letter S
+    i. assign letter S
 
-    10. create par MSR
+    j. create par MSR
 
-    11. list par 
+    k. list par 
 
-    12. exit
+    l. exit
 
-6.  back at command prompt, type in the following:
+6.  Back at the command prompt, type in the following:
 
-    1.  s:
+    a.  s:
 
-    2.  BCDboot c:\\windows /s s: /f UEFI     <= drive letter identified in step c/d above
+    b.  BCDboot c:\\windows /s s: /f UEFI   
+        
+        **Note** This is the drive letter identified in step c and d above
 
-    3.  dir /a
+    c.  dir /a
 
-    4.  should see s:\\EFI
+    d.  should see s:\\EFI
 
-7.  Reboot and attempt to boot to OS. <results?>
+7.  Reboot and attempt to boot to OS.
 
-8.  <END>
+## Verify system is booted in UEFI mode
 
-### Method to verify system is booted in UEFI mode
+Use one of the following methods to verify system is booted in UEFI mode.
 
+### MSINFO32
 
-#### Using MSINFO32
-
-On a Windows 10 system:
+On Windows 10 systems:
 
 1. Press \<Windows key\> + \<R\> to open the **Run** dialog.
 
 2. Type Msinfo32 and click **OK**.
 
-The System Summary page will open by default 
+The System Summary page will open by default.
 
 Look for the following information:
 
@@ -92,17 +97,17 @@ Look for the following information:
 
 To run as an administrator, use the following steps:
 
-1. Press \<Windows key\>
+1. Press \<Windows key\> + \<R\> to open the **Run** dialog.
 
-2. Start typing "System Information"
+2. Start typing "System Information".
 
-If System information is highlighted, hold <ctrl> + <shift> and hit <enter> or use your mouse and right click and select "Run as Administrator"
+If **System Information** is highlighted, hold \<CTRL\> + \<SHIFT\> and hit \<ENTER\>, or use your mouse to right-click and select **Run as Administrator**.
 
-You will be prompted by User Access Control (UAC) with the following message: "Do You want this app to make changes to your desktop?"
+You will be prompted by User Access Control (UAC) with the following message: **Do You want this app to make changes to your desktop?**
 
-#### Through BCDEDIT
+### BCDEDIT
 
-On Windows 7 and later systems
+On Windows 7 and later systems:
 
 1.  Start an elevated command prompt.
 
@@ -110,7 +115,8 @@ On Windows 7 and later systems
 
     **Note**: If booted from WinPE, use the "/store" switch in BCDedit.exe.
 
-    1.  If you have UEFI, the path will show Winload.efi. If you have CSM, the path will show Winload.exe as listed in sample output.
+    - If you have UEFI, the path will show Winload.efi. 
+    - If you have CSM, the path will show Winload.exe as listed in sample output.
 
 **Sample output**
 
@@ -122,38 +128,44 @@ device partition=C:
 path \WINDOWS\system32\winload.efi
 ```
 
-#### Through NOTEPAD and SETUPACT.LOG
+### NOTEPAD and SETUPACT.LOG
 
 1.  Start an elevated command prompt.
 
-2.  Run "notepad c:\\windows\\panther\\setupact.log."
+2.  Run "notepad c:\\windows\\panther\\setupact.log".
 
-3.  "ctrl + f" for find (or search).
+3.  Press \<CTRL\> + \<F\> for find (or search).
 
-4.  Search for "Callback\_BootEnvironmentDetect"
+4.  Search for "Callback\_BootEnvironmentDetect".
 
-    1.  Results would look something like this:
+    - Results would look something like this:
 
-        Callback\_BootEnvironmentDetect:FirmwareType 1.
+        ```
+        Callback_BootEnvironmentDetect:FirmwareType 1.
 
-        Callback\_BootEnvironmentDetect: Detected boot environment: BIOS
+        Callback_BootEnvironmentDetect: Detected boot environment: BIOS
+        ```
 
         Or
 
-        Callback\_BootEnvironmentDetect:FirmwareType 2.
+        ```
+        Callback_BootEnvironmentDetect:FirmwareType 2.
 
-        Callback\_BootEnvironmentDetect: Detected boot environment: UEFI
+        Callback_BootEnvironmentDetect: Detected boot environment: UEFI
+        ```
 
-You may need to consult with the Original Equipment Manufacturer (OEM) for configuration details on your specific system.
+You may need to consult with the OEM for configuration details on your specific system.
 
-**Note** using diskpart.exe or Setup to ‘clean’ or ‘wipe’ the hard disk drive partition information will destroy data on disk. Consult PC manufacturer concerning factory image recovery methods or data backup options prior to making any of these changes.  
+**Warning** Using diskpart.exe or Setup to clean or wipe the hard disk drive partition information will all destroy data on the disk. Consult the PC manufacturer concerning factory image recovery methods or data backup options prior to making any of these changes.  
 
 ## Related resources
 
-| [Recommended UEFI-Based Disk-Partition Configurations](https://technet.microsoft.com/en-us/library/dd744301(v=ws.10).aspx)                                      |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Win7 Back up your programs, system settings, and files](http://windows.microsoft.com/en-us/windows/back-up-programs-system-settings-files#1TC=windows-7)       |
-| [Win7 Protect your files and PC with Windows 7 Backup](https://blogs.technet.microsoft.com/filecab/2009/10/23/protect-your-files-and-pc-with-windows-7-backup/) |
+
+[Recommended UEFI-Based Disk-Partition Configurations](https://technet.microsoft.com/en-us/library/dd744301)                              
+
+[Win7 Back up your programs, system settings, and files](http://windows.microsoft.com/en-us/windows/back-up-programs-system-settings-files#1TC=windows-7)       
+
+[Win7 Protect your files and PC with Windows 7 Backup](https://blogs.technet.microsoft.com/filecab/2009/10/23/protect-your-files-and-pc-with-windows-7-backup/)
 
 
 

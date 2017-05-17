@@ -43,11 +43,11 @@ These four configurations will be used:
 ## In this section
 
 
-[New method: Windows 10, version 1703 and later](new-method--windows-10--version-1703-and-later.md)
+[New method - Windows 10, version 1703 and later](new-method--windows-10--version-1703-and-later.md)
 
 [MBR2GPT tool test guidance](mbr2gpt-tool-test-guidance.md)
 
-[Old method: method: Windows 10, version 1607 and earlier](old-method--windows-10--version-1607-and-earlier.md)
+[Old method - Windows 10, version 1607 and earlier](old-method--windows-10--version-1607-and-earlier.md)
 
 [How to convert an installed x64 Windows 7 system](how-to-convert-an-installed-x64-windows-7.md)
 

@@ -1,20 +1,23 @@
 ---
-title: TBD
-description: TBD
+title: New method - Windows 10, version 1703 and later
+description: New method - Windows 10, version 1703 and later
+author: windows-driver-content
 ms.author: windowsdriverdev
-ms.date: 05/05/2017
+ms.date: 05/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
 
-# New Method Post Windows 10 Creators Update
+# New method - Windows 10, version 1703 and later
 
 
-Recently Microsoft started including a new tool to convert Legacy MBR disk to GPT disk in a non-destructive conversion. . This tool is [Mbr2gpt.exe](https://technet.microsoft.com/en-us/itpro/windows/deploy/mbr-to-gpt) and is to facilitate migrating from Legacy BIOS configuration to full UEFI on qualified systems in a non-destructive fashion.
+Microsoft has made a new Mbr2gpt.exe tool available to convert Legacy MBR disk to GPT disk in a non-destructive conversion. 
 
-The process described in section 8.2 is considered a destructive conversion as the technician, application, or process must wipe the disk before converting the disk to a GPT disk.
+[Mbr2gpt.exe](https://technet.microsoft.com/en-us/itpro/windows/deploy/mbr-to-gpt) facilitates migrating from a Legacy BIOS configuration to full UEFI on qualified systems in a non-destructive fashion.
+
+Previous methods are considered a destructive conversion as the technician, application, or process must wipe the disk before converting the disk to a GPT disk.
 
 
 
