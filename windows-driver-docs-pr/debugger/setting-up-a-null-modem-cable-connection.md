@@ -90,7 +90,7 @@ On the host computer, specify the correct baud rate when you start the debugger 
 -   **kd -k ..., baud=115200**
 -   **set \_NT\_DEBUG\_BAUD\_RATE=115200**
 
-## <span id="null_modem_cable_wiring"></span><span id="NULL_MODEM_CABLE_WIRING"></span>Null Modem Cable Wiring
+## <span id="null-modem-cable-wiring"></span><span id="NULL-MODEM-CABLE-WIRING"></span>Null Modem Cable Wiring
 
 
 The following tables show how null-modem cables are wired.
