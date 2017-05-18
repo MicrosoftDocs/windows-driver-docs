@@ -1,6 +1,6 @@
 ---
 title: Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)
-description: April 2017
+description: Start here for an overview of Debugging Tools for Windows. This tool set includes WinDbg and other debuggers.
 ms.assetid: 938ef180-84de-442f-9b6c-1138c2fc8d5a
 keywords: ["Debugging Tools for Windows", "Windows debugging", "Windows Debugger", "Kernel debugging", "Kernel debugger", "WinDbg"]
 ---
