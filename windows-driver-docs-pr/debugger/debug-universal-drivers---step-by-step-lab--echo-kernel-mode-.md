@@ -57,8 +57,8 @@ The lab has the following seven sections.
 
 -   [Section 1: Connect to a kernel mode WinDbg session](#connectto)
 -   [Section 2: Kernel mode debugging commands and techniques](#kernelmodedebuggingcommandsandtechniques)
--   [Section 3: Download and build the KMDF Universal Echo Driver](#section3-download-build)
--   [Section 4: Install the KMDF Echo driver sample on the target system](#section4-install)
+-   [Section 3: Download and build the KMDF Universal Echo Driver](#downloadbuild)
+-   [Section 4: Install the KMDF Echo driver sample on the target system](#install)
 -   [Section 5: Use WinDbg to display information about the driver](#usewindbgtodisplayinformation)
 -   [Section 6: Display plug and play device tree information](#displayingtheplugandplaydevicetree)
 -   [Section 7: Work with breakpoints and source code](#workingwithbreakpoints)
@@ -279,7 +279,7 @@ Unable to enumerate user-mode unloaded modules, Win32 error 0n30
 ```
 
 8. Because we have yet to set the symbol path and loaded symbols, limited information is available in the debugger.
-### <span id="section3-download-build"></span>Section 3: Download and build the KMDF universal echo driver
+### <span id="downloadbuild"></span>Section 3: Download and build the KMDF universal echo driver
 
 *In Section 3, you will download and build the KMDF universal echo driver.*
 
@@ -374,7 +374,7 @@ To download and build the Echo sample audio driver, complete the following steps
 
 In the next section, you will copy the code to the target system, and install and test the driver.
 
-### <span id="section4-install"></span>Section 4: Install the KMDF echo driver sample on the target system
+### <span id="install"></span>Section 4: Install the KMDF echo driver sample on the target system
 
 *In Section 4, you will use devcon to install the echo sample driver.*
 
