@@ -1,6 +1,6 @@
 ---
-title: C
-description: Glossary page
+title: C (Windows Debugger Glossary)
+description: Glossary page - C
 Robots: noindex, nofollow
 ms.assetid: 295b05a3-e27f-4761-a562-7e87e25bfd3b
 ---

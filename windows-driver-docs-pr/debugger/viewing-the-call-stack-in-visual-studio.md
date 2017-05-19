@@ -1,6 +1,6 @@
 ---
 title: Viewing the Call Stack in Visual Studio
-description: The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio.
+description: The procedure describes how to view the Call Stack in Visual Studio
 ms.assetid: 060A2441-C1A7-4485-82E5-2C024E6A3FBE
 ---
 

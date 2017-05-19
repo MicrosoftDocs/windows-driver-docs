@@ -1,6 +1,6 @@
 ---
-title: F
-description: Glossary page
+title: F (Windows Debugger Glossary)
+description: Glossary page - F
 Robots: noindex, nofollow
 ms.assetid: 9e5917b2-0f7d-4d6c-8e92-249b29b546ca
 ---

@@ -1,6 +1,6 @@
 ---
 title: Opening a Dump File Using Visual Studio
-description: The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio.
+description: The procedures Opening a Dump File Using Visual Studio.
 ms.assetid: 3B7327FE-335F-46FB-94C3-75D5B52A295D
 ---
 

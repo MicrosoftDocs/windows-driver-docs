@@ -1,6 +1,6 @@
 ---
-title: B
-description: Glossary page
+title: B (Windows Debugger Glossary)
+description: Glossary page - B
 Robots: noindex, nofollow
 ms.assetid: 5ba110fc-1a12-4cbd-adc9-ef9441e257cb
 ---

@@ -1,6 +1,6 @@
 ---
 title: ndiskd.ndisevent
-description: Note  Third party network driver developers are not expected to manually use this extension command.
+description: The !ndiskd.ndisevent extension displays an NDIS debug event log.
 ms.assetid: E042CA22-6521-4DD4-9396-39EC587706D6
 keywords: ["ndiskd.ndisevent Windows Debugging"]
 topic_type:

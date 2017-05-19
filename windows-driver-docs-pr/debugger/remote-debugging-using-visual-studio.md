@@ -1,6 +1,6 @@
 ---
 title: Remote Debugging Using Visual Studio
-description: The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio.
+description: The procedure covers Remote Debugging Using Visual Studio.
 ms.assetid: 9FA347BF-878E-46C8-8459-DC73A8B1EB26
 ---
 

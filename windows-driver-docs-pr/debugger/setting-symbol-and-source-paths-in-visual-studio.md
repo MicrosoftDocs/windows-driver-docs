@@ -1,6 +1,6 @@
 ---
 title: Setting Symbol and Executable Image Paths in Visual Studio
-description: The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio.
+description: The procedure covers Setting Symbol and Executable Image Paths in Visual Studio
 ms.assetid: BFFF9BBC-C926-4974-A43E-C3A2DDA74AA4
 ---
 

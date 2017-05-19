@@ -1,6 +1,6 @@
 ---
 title: Viewing and Editing Memory and Registers in Visual Studio
-description: The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio.
+description: The procedure covers Viewing and Editing Memory and Registers in Visual Studio.
 ms.assetid: BE365305-F1C7-4D29-885A-55D040D5D900
 ---
 

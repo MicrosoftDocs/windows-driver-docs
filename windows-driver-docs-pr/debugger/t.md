@@ -1,6 +1,6 @@
 ---
-title: T
-description: Glossary page
+title: T (Windows Debugger Glossary)
+description: Glossary page - T
 Robots: noindex, nofollow
 ms.assetid: e17a63eb-a002-4e72-86a9-8176bf5f75d0
 ---

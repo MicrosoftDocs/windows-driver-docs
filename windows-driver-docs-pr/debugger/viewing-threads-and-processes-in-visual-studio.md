@@ -1,6 +1,6 @@
 ---
 title: Controlling Threads and Processes in Visual Studio
-description: The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio.
+description: The procedures covers Controlling Threads and Processes in Visual Studio.
 ms.assetid: 5A1F9A59-EFCD-4BC9-BDEC-DED11A184651
 ---
 

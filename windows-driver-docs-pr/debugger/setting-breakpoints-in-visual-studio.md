@@ -1,6 +1,6 @@
 ---
 title: Setting Breakpoints in Visual Studio
-description: The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio.
+description: The procedure covers Setting Breakpoints in Visual Studio.
 ms.assetid: 503CAAEB-B400-4941-A0AE-B3C5CC8C364B
 ---
 

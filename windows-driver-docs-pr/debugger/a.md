@@ -1,6 +1,6 @@
 ---
-title: A
-description: Glossary page
+title: A (Windows Debugger Glossary)
+description: Glossary page - A
 Robots: noindex, nofollow
 ms.assetid: ef7fa08b-0eed-4ef9-8b2f-79247e2ad988
 ---

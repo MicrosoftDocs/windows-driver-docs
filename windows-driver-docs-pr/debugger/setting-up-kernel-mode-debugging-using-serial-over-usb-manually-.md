@@ -1,6 +1,6 @@
 ---
-title: Setting Up Kernel-Mode Debugging using Serial over USB Manually
-description: The Sharks Cove development board supports serial debugging over a USB cable.
+title: Setting Up Kernel-Mode Debugging using Serial over USB Manually for a Sharks cove development board
+description: This topic describes setting up Kernel-Mode Debugging manually for a Sharks cove development board.
 ms.assetid: E6157263-74E8-4704-9668-B845043737A7
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: symsrv
+title: symsrv extension command
 description: The symsrv extension closes the symbol server client.
 ms.assetid: 666fa9d7-f723-4745-95fc-17aa20993b42
 keywords: ["symsrv Windows Debugging"]

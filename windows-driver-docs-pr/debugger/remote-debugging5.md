@@ -1,6 +1,6 @@
 ---
-title: Remote Debugging
-description: Remote Debugging
+title: Remote Debugging (Debugger Engine)
+description: Remote debugging occurs when a client's communication with a target is indirect, for example, through a network connection.
 ms.assetid: e52cc5fb-9f10-415e-9fe8-6eba71daab6d
 keywords: ["Debugger Engine, remote debugging"]
 ---

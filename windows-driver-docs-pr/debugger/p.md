@@ -1,6 +1,6 @@
 ---
-title: P
-description: Glossary page
+title: P (Windows Debugger Glossary)
+description: Glossary page - P
 Robots: noindex, nofollow
 ms.assetid: 4cfad26c-d8c0-4f80-aa54-b9cadbc84df3
 ---

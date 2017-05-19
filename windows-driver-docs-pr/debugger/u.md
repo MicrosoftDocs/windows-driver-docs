@@ -1,6 +1,6 @@
 ---
-title: U
-description: Glossary page
+title: U (Windows Debugger Glossary)
+description: Glossary page - U
 Robots: noindex, nofollow
 ms.assetid: f3866ed9-eb94-4433-8a73-3b37f7e67303
 ---

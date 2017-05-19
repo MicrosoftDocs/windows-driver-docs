@@ -1,6 +1,6 @@
 ---
-title: W
-description: Glossary page
+title: W (Windows Debugger Glossary)
+description: Glossary page - W
 Robots: noindex, nofollow
 ms.assetid: 99a1fa3e-f690-458a-afcd-ff54a7c40ba6
 ---

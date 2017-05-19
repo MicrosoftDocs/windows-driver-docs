@@ -1,6 +1,6 @@
 ---
-title: L
-description: Glossary page
+title: L (Windows Debugger Glossary)
+description: Glossary page - L
 Robots: noindex, nofollow
 ms.assetid: d290c203-4cb3-423c-a41f-baabb3c9a3c1
 ---

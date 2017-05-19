@@ -1,6 +1,6 @@
 ---
-title: E
-description: Glossary page
+title: E (Windows Debugger Glossary)
+description: Glossary page - E
 Robots: noindex, nofollow
 ms.assetid: 1e32bd40-8c77-4c6b-913c-6ec26707ed36
 ---

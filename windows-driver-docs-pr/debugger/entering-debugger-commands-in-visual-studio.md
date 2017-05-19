@@ -1,6 +1,6 @@
 ---
 title: Entering Debugger Commands in Visual Studio
-description: The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio.
+description: The procedures covers Entering Debugger Commands in Visual Studio.
 ms.assetid: 0590D849-3885-46D9-A6A1-55F3086B95FF
 ---
 
