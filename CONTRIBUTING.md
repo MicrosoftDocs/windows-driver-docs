@@ -7,8 +7,12 @@ There's also an [introductory video](https://channel9.msdn.com/Blogs/WinHEC/Cont
 ## Sign a CLA
 
 If you want to contribute more than a couple lines and you're not a Microsoft employee, you need to [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/). 
+
+If you are a Microsoft employee, be sure to [link your GitHub account and alias](https://opensource.microsoft.com/link).
+
 If you've already contributed to Microsoft repositories in the past, congratulations! 
 You've already completed this step.
+
 
 ## Proposing a change
 
