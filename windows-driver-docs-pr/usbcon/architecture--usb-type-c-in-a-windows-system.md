@@ -66,6 +66,12 @@ In the preceding image,
 
     If you are writing a driver, the USB connector manager class extension follows the WDF class extension-client driver model. Your client driver communicates with the hardware and the class extension to handle tasks such as CC detection, PD messaging, Muxing, and VBus/VConn control, and select policy for power delivery and alternate mode. The class extension communicates the information reported by the client driver to the operating system. For example, the CC detection result is used to configure the role-switch drivers; USB Type-C/PD power information is used to determine the level at which the system should charge. The client driver manages USB Type-C and PD state machines. The client driver can delegate some tasks to other drivers, for example, Mux may be controlled by another driver. To write the client driver, use the [USB Type-C connector driver programming interfaces.](https://msdn.microsoft.com/library/windows/hardware/mt188011).
 
+    **USB Type-C port controller**
+
+    The Type-C Port Controller Interface Class Extension (UcmTcpciCx.sys) communicates with Device Policy Manager (DPM), a system component that implements Type-C PD state machine. A client driver to that class extension is a port controller that needs to the keep class extension informed about the hardware events. These drivers are used for a system that does not have the capability of handling the power delivery (PD) state machine.
+
+    For information about writing the client driver, see [Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md).
+
 -   **Charging arbitration driver**
 
     This driver is provided by Microsoft for Windows 10 Mobile. The driver acts as the arbiter for multiple charging sources. The USB connector manager reports USB Type-C and PD charging source information to CAD, which makes a selection from that information and BC1.2 charger detection performed by the USB device-side drivers (if applicable). CAD then reports the most appropriate charging source to use to the battery subsystem.

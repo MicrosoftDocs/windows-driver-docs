@@ -27,7 +27,7 @@ ms.technology: windows-devices
 
 -   USB Type-C feature support in Windows
 -   [FAQ: USB Type-C connector on a Windows system](faq--usb-type-c-connector-on-a-windows-system.md)
--   [Troubleshoot messages in UI](introduction-to-usb-type-c-connectors.md)
+-   [Troubleshoot messages in UI](http://go.microsoft.com/fwlink/?LinkId=526894)
 
 Describes Windows support for USB Type-C connector and tasks for OEMs who are building USB Type-C systems, including how to write drivers that manage different features of the connector.
 
@@ -67,21 +67,33 @@ The USB Type-C connector, introduced by the USB-IF, defined in the USB 3.1 speci
 </tr>
 <tr class="odd">
 <td><img src="images/drivers-c.png" alt="Drivers" /></td>
-<td><ul>
-<li><p>For a system that has an embedded controller, implement the USB Type-C Connector System Software Interface (UCSI) in the EC and BIOS, and load the Microsoft provided in-box driver, UcmUcsi.sys, that implements UCSI Specification.</p>
-<p>[UCSI driver](ucsi.md)</p></li>
-<li><p>Otherwise, implement a driver that communicates with the connector and keeps the operating system informed about USB Type-C events on the connector.</p>
-<p>[Developing Windows drivers for USB Type-C connectors](developing-windows-drivers-for-usb-type-c-connectors.md)</p>
-<p>[Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md)</p>
-<p>[UCmCx client driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188011)</p></li>
-</ul></td>
+<td>
+Use this flow chart to determine a solution for your USB Type-C system. 
+
+-   For a system that implements a PD state machine, implement a client driver to the UcmCx class extension.
+
+    [Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md)
+
+    [UCmCx client driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188011)
+
+-   For a system that does not implement a PD state machine, implement a client driver to the UcmTcpciCx class extension. 
+
+    [Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md)
+
+    [USB Type-C Port Controller Interface driver class extensions reference](https://msdn.microsoft.com/en-us/library/windows/hardware/mt805826)
+
+-   For a system that has PD state machine and supports USB Type-C Connector System Software Interface (UCSI) over ACPI, load the Microsoft provided in-box driver, UcmUcsi.sys. (See [UCSI driver](ucsi.md)). 
+
+    If the system supports UCSI over another transport such as PCI, implement a UCSI-compliant client driver to the UcmCx class extension. Modify [this sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi) and replace ACPI portions with your implementation for another transport.
+
+</td>
 </tr>
 <tr class="even">
 <td><img src="images/bringup-c3.png" alt="Bringup" /></td>
 <td><ol>
 <li>If you are building is a mobile device (such as a phone) modify system ACPI to indicate to the Microsoft in-box function controller driver that the connector is a USB Type-C connector.</li>
 <li>If you are building a dual-role mobile device, modify system ACPI to enable the Microsoft in-box USB role-switch driver.</li>
-<li>Bringing up the connector driver depends on the driver that you choose for the connector, Microsoft in-box driver, UCSI (UcmUcsi.sys) or a custom driver.
+<li>Bringing up the connector driver depends on the driver that you choose for the connector, Microsoft in-box driver - UCSI (UcmUcsi.sys), a client driver to UcmCx or UcmTcpciCx. For more information, see the links in the precedeing section. 
 <ul>
 <li>If you are using UCSI, follow the instructions given in [Intel BIOS Implementation of UCSI](http://go.microsoft.com/fwlink/p/?LinkId=760658) to load the driver.</li>
 <li>If you are using a custom driver, load the driver by using the connector driver installation package.</li>

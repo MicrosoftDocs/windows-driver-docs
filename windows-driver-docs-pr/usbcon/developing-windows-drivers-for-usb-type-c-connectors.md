@@ -29,7 +29,7 @@ ms.technology: windows-devices
 
 -   [UCmCx client driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188011)
 
-You need to write a driver for the connector if your USB Type-C system does not include an embedded controller, otherwise you can load the Microsoft-provided [UCSI driver](ucsi.md).
+You need to write a driver for the connector if your USB Type-C system does not implement PD state machine or it implements state machine but does not support UCSI over non-ACPI transport. If it does, you can load the Microsoft-provided [UCSI driver](ucsi.md).
 
 ![drivers](images/drivers-c.png)
 
