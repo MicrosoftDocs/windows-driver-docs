@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Creating an Interrupt Object
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 A UMDF driver that handles a device's hardware interrupts must create a framework interrupt object for each interrupt that each device can support.
 

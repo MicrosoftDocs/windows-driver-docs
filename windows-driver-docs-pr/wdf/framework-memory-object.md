@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Framework Memory Object
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The framework memory object is exposed to drivers by the [IWDFMemory](https://msdn.microsoft.com/library/windows/hardware/ff559249) interface. It provides access to a memory block.
 

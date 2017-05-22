@@ -22,7 +22,7 @@ developers to make better use of the UWP. They are similar to the
 previously defined [restricted
 capabilities](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#special-and-restricted-capabilities)
 which give access to protected resources. However, there are some key
-differences between the two. Unlike restricted resources, 3^rd^ party
+differences between the two. Unlike restricted resources, 3rd party
 partners can define or claim their own capabilities. Custom capabilities
 also do not have to be built into Windows at compilation time. They are
 different from previous [app

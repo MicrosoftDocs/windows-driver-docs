@@ -25,7 +25,7 @@ Instead of capturing traces by using the command line tool, logman, and then par
 ## Install and launch Microsoft Message Analyzer
 
 
-1.  [Download Microsoft Message Analyzer](http://www.microsoft.com/download/details.aspx?id=40308) and install the tool by following **Install Instructions** on the download page. After downloading, follow the install prompts and select **Update items**.
+1.  [Download Microsoft Message Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=44226) and install the tool by following **Install Instructions** on the download page. After downloading, follow the install prompts and select **Update items**.
 
 2.  After installation completes, the tool launches and the start page is shown.
 

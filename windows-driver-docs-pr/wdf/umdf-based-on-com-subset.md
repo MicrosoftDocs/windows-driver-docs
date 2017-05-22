@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # UMDF Based on COM Subset
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The framework objects and interfaces are based on the Component Object Model (COM) for the following reasons:
 

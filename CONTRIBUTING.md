@@ -1,7 +1,6 @@
 # Contributing to Windows Driver Documentation
 
-Thank you for your interest in the Windows driver documentation! We appreciate your feedback, edits, and additions to our docs.
-This page covers the basic steps for contributing to our technical documentation.
+This page covers the basic steps for contributing to the Windows driver documentation.
 
 There's also an [introductory video](https://channel9.msdn.com/Blogs/WinHEC/Contributing-to-MSDN-and-TechNet-Documentation) that shows you how to propose changes.
 
@@ -11,46 +10,33 @@ If you want to contribute more than a couple lines and you're not a Microsoft em
 If you've already contributed to Microsoft repositories in the past, congratulations! 
 You've already completed this step.
 
-## Public and private repos
+## Proposing a change
 
-The driver docs are hosted in two different repos which are then merged and updated to a single site: one repo is for contributions from anyone and the other is only for Microsoft employees.
+If you'd like to suggest a change to the docs, follow these steps:
 
-If you are ***not*** a Microsoft employee, work in the [public content repository](https://github.com/Microsoft/windows-driver-docs).
+1. If you're viewing a Docs.microsoft.com page, click the **Edit** button in the upper right of the page.  You will be redirected to the corresponding Markdown source file in the [GitHub repository](https://github.com/MicrosoftDocs/windows-driver-docs).  If you're already in the [GitHub repo](https://github.com/MicrosoftDocs/windows-driver-docs), you can just navigate to the source file you would like to change.
+2. If you don't already have a GitHub account, click **Sign Up** in the upper right and create a new account.
+3. From the GitHub page you would like to change, click the pencil icon.
+4. Modify the file and use the preview tab to ensure the changes look good.
+5. When you're done, commit your changes and open a pull request.
 
-If you ***are*** a Microsoft employee, you can work in either the public repo or the [private content repository](https://cpubwin.visualstudio.com/drivers/_git/drivers).  Typically, employees use the public repo for changes that can go live in the near term, and the private repo for changes that need to stay under wraps until some future date.
-
-## Editing topics
-
-We've tried to make editing an existing file as simple as possible. 
-- If you're already in the repo, just navigate to the file and click the **Edit** button.  
-- Alternatively, if you're viewing a Docs.microsoft.com page in your browser, click the **Edit** button on the top right of the page. You will be redirected to the correct Markdown source file in the repo, where you can click the **Edit** button. 
-
-> **Note** We're actively moving docs into the repo, so the one you want might not be there yet.  If you don't see an **Edit** button for a page you'd like to change, please open an issue in the repo and be sure to provide the URL of the page in question.
- 
-If you're using the GitHub-based public repo, GitHub automatically forks the official repo into your personal GitHub account, where you can make your changes. 
-
-If you're using the VSO-based private repo, use the drop-down arrow next to the Commit button and select **Commit to new branch**.
-
-Either way, when you're done, submit a pull request back to the staging branch (if using GitHub) or master branch (if using VSO) of the official repository. 
 After you create the pull request, a member of the Windows Driver Documentation team will review your changes. 
+
 If your request is accepted, updates are published to https://docs.microsoft.com/windows-hardware/drivers.
+
+If you're a Microsoft employee and you need to collaborate in a private environment, please contact the windowsdriverdev alias.
 
 ## Making more substantial changes
 
-To make substantial changes to an existing article, add or change images, or contribute a new article, you will need to create a local clone of the content. 
-For info about creating a fork or clone, see the GitHub help topic, [Fork a Repo](https://help.github.com/articles/fork-a-repo/).
+To make substantial changes to an existing article, add or change images, or contribute a new article, we recommend forking the official repo into your GitHub account, and then creating a local clone.
 
-If you are using the public repo, fork the official repo into your personal GitHub account, and then clone the fork down to your local computer.  Work locally, then push your changes back into your fork.  Then open a pull request back to the staging branch of the official public repo.
-
-If you are using the private repo, clone the private repo to your local computer.  Create a new branch from master, make your changes, and then push your new branch back into the VSO private repo.  Then open a pull request back to the master branch.
+For more info, see [Fork a Repo](https://help.github.com/articles/fork-a-repo/).
 
 ## Using issues to provide feedback on Windows driver documentation
 
-If you just want to provide feedback rather than directly modifying actual documentation pages, you can create an issue in the appropriate (public or private) repository.
-At the top of a topic page you'll see an **Issues** tab. Click the tab and then click the **New issue** button. 
-Be sure to include the topic title and the URL for the page, if it's different from the page you launched the New issue dialog from.  
+To provide feedback rather than directly modifying actual documentation pages, [create an issue](https://github.com/MicrosoftDocs/windows-driver-docs/issues).
 
-Members of the Windows driver documentation team review issues regularly, and we triage, assign, and address them accordingly.
+Be sure to include the topic title and the URL for the page.
 
 ## Resources
 

@@ -1,6 +1,7 @@
 ---
 Description: CDC Direct Line Control Model
 title: CDC Direct Line Control Model
+author: windows-driver-content
 ---
 
 # CDC Direct Line Control Model

@@ -19,6 +19,7 @@ ms.technology: windows-devices
 
 # Creating a File Object to Handle I/O
 
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 When an application opens a file handle, the I/O manager creates a file object. The framework in turn creates a framework file object to represent the I/O manager's file object.
 

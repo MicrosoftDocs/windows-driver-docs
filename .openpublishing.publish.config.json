@@ -19,10 +19,14 @@
     }
   ],
   "branch_target_mapping": {
+     "duncan_mos_rs3_pdf": [
+        "Publish",
+        "Pdf"
+    ],
     "live": [
         "Publish",
         "Pdf"
-    ]
+    ]   
   },
   "Targets": {
     "Pdf": {
@@ -31,7 +35,7 @@
   },
   "notification_subscribers": [],
   "branches_to_filter": [],
-  "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/windows-driver-docs",
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/windows-driver-docs",
   "git_repository_branch_open_to_public_contributors": "staging",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
@@ -47,5 +51,6 @@
         "branch": "master"
     }
   ],
-  "need_generate_pdf_url_template": true
+  "need_generate_pdf_url_template": true,
+  "resolve_user_profile_using_github": true
 }

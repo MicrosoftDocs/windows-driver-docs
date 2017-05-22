@@ -16,6 +16,7 @@ ms.technology: windows-devices
 
 # Determining Why a UMDF Driver Consumes an Excessive Amount of Memory
 
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 This topic describes how you can use the Wudfext.dll debugger extensions in conjunction with a User-Mode Driver Framework (UMDF) version 1 driver to determine why a UMDF driver consumes an excessive amount of memory.
 

@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # Initializing UMDF Drivers
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 Before a UMDF driver for a device is initialized, the driver manager and the reflector are loaded by the operating system and the driver host process is created. To ensure that a device starts successfully, the driver manager is loaded and fully initialized by the time the reflector initializes.
 
