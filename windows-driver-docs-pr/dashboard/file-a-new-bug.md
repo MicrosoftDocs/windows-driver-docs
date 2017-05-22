@@ -117,41 +117,44 @@ You can create a new bug online, and then submit it to be filed with Microsoft.
 
 5. Click **Browse** below the Attachments label to attach a file to the bug. (Recommended)
 
-  Providing data at the time of bug submission helps Microsoft efficiently manage the bug process. Please use the appropriate data collection process for the specific issue being reported:
+  Attaching data at the time of bug submission helps us efficiently manage the bug process toward closure. Please use the appropriate process below for the specific issue being reported.
 
   **For Windows Phone and IoT(ARM) devices**:
-    1. download the [FieldMedic tool](http://www.windowsphone.com/en-us/store/app/field-medic/73c58570-d5a7-46f8-b1b2-2a90024fc29c) and run it on the devices that reproduce the issue you are reporting.
+    Please download the [FieldMedic tool](http://www.windowsphone.com/en-us/store/app/field-medic/73c58570-d5a7-46f8-b1b2-2a90024fc29c) and run it on the devices that reproduce the issue you are reporting.
     > [!NOTE]
     > Be sure that all providers associated with the problem you are reporting are enabled. This can be done by going to the **Advanced** menu within Field Medic, and selecting **Choose which ETW Providers ...**.
 
-  **For Windows x86 and x64 devices**: We recommend using the  [UCSLogTool](https://www.microsoft.com/en-us/download/details.aspx?id=54322) log collection tool. This tool will gather logs and traces pertinent to the specific feature area selected. When using this tool, follow the below steps:
+  **For Windows x86 and x64**: Please use the log collection tool, [UCSLogTool](https://www.microsoft.com/en-us/download/details.aspx?id=54322), posted on Connect and Microsoft Download Center. This tool will gather logs and traces relevant to the specific feature area selected. Follow these steps to use the tool:
 
-    1. Download and install UCSLogTool on the problem device. When the installation completes, launch the tool using its desktop short-cut.
+    1. Download and install UCSLogTool on the problem device. When the installation is complete, start the tool using the desktop short-cut.
 
-    2. After UCSLogTool launches you will be presented with a user interface within the Command Prompt. Locate the scenario or feature that is closest to the problem you are reporting, enter the corresponding number, and press enter.
+    2. After UCSLogTool starts, you’ll be presented with a user interface in the Command Prompt. Locate the scenario or feature that’s closest to the problem you’re reporting, enter the corresponding number, and then press Enter. 
 
-    3. After you have selected the scenario to be traced, a list of relevant features will be displayed. You can view additional features by entering “Y”, or continue by entering “N”.
+    3. After you’ve selected the scenario to be traced, a list of the selected features will be displayed. You can view additional features by entering **Y**, or continue by entering **N**.
 
-    4. By default, any feature you select will include the "general log collection" feature. Once you have selected the correct traces, follow the prompts to either add additional features or to continue with the current selection.
+    4. By default, any feature that’s selected will also include the General windows log collection feature. Please confirm that the correct traces have been selected, and then follow the prompts to either add additional features or to continue with the current selection.
 
-    5. You will be prompted to keep the temporary folder containing a copy of the trace data. Follow the prompt, and press enter.
+    5. You’ll be prompted to keep the temporary folder containing a copy of the trace data. Follow the prompt, and press Enter.
 
-    6. After the tool has completed collecting the traces, the collected trace data and logs will be compressed into a single zip file on the desktop. For example: `GeneralDataCollection_15063.rs2_release.170317-1834.zip`
+    > [!NOTE]
+    > Many UCSLogTool features will open in a new window to capture their respective traces. When this occurs, follow the instructions in the new window, and then return to the UCSLogTool command window for the final steps.
+
+    6. After the tool collects the traces, the collected trace data and logs will be compressed into a single ZIP file on the desktop (for example,  `GeneralDataCollection_15063.rs2_release.170317-1834.zip`). 
 
     > [!IMPORTANT]
-    > Do not rename the file as there are automated processes that check these files for validity
+    > Do not rename the file. Renaming the file will interfere with the automated processes that check it for validity
 
     7. Attach this .zip file to the bug
 
     > [!NOTE]
-    > If you are unable to execute the USCLogTool due to the system state, run the script manually by following the below steps:
-      1. Download and install the UCL Log Tool on a working system.
+    > If you are unable to execute the USCLogTool due to the system state, run the script manually by doing the following:
+      1. Download and install the UCSLogTool on a working system.
       2. Copy the "UCSLogTool" directory (typically C:\Program Files\UCSLogTool) and its contents onto a USB Flash Drive.
-      3. Connect the flash drive to the problem system when booted to OOBE / WinPE.
+      3. Connect the flash drive to the problem system when booted to OOBE or Windows PE.
       4. Press Shift+F10 on the keyboard to get to a command prompt.
-      5. Change directory to the location on the USB Flash Drive where the UCSLogTool was copied to.
-      6. Run the following script manually to collect the “General Windows log collection”. UCSLogTool\WINDOWS_LOG\GetLogs.cmd
-      7. Once it completes copy the data onto the flash drive and attach to the bug in a .zip format.
+      5. Change directory to the location on the USB Flash Drive that UCSLogTool was copied to.
+      6. Run the following script manually to collect the General Windows log collection: `UCSLogTool\WINDOWS_LOG\GetLogs.cmd`
+      7. g)	After the tool collects the data, copy the data onto the flash drive and attach to the bug in a ZIP file format.
 
       We recommend submitting a memory dump file when the problem system is in a non-responsive state. This file will help Microsoft investigate the issue you are encountering.
       
