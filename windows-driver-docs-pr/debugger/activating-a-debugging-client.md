@@ -1,6 +1,6 @@
 ---
 title: Activating a Debugging Client
-description: Once the debugging server has been activated, you can start a debugging client on another computer and connect to the debugging session.There are two ways to start a debugging client by using the -remote command-line option, or by using the WinDbg graphical interface.The protocol of the client must match the protocol of the server. The general syntax for starting a debugging client depends on the protocol used. The following options exist
+description: Once the debugging server has been activated, you can start a debugging client on another computer and connect to the debugging session.
 ms.assetid: 45a7baa7-08dc-47ae-a137-874aaa4ec8aa
 keywords: ["Activating a Debugging Client Windows Debugging"]
 topic_type:

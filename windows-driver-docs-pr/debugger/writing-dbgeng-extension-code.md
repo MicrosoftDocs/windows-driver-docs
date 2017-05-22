@@ -1,6 +1,6 @@
 ---
 title: Writing DbgEng Extension Code
-description: Writing DbgEng Extension Code
+description: This section describes writing DbgEng extension code
 ms.assetid: b1ee686b-986e-46eb-a4bf-93e2de6d1aeb
 keywords: ["DbgEng Extensions, writing"]
 ---

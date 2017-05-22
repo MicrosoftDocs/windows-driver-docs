@@ -1,6 +1,6 @@
 ---
 title: db, dc, dd, dp, dq, du, dw
-description: The db, dc, dd, dp, dq, du, and dw extensions display data at the specified physical address on the target computer.These extension commands should not be confused with the d\ (Display Memory) command, or with the ntsdexts.dp extension command.
+description: The db, dc, dd, dp, dq, du, and dw extensions display data at the specified physical address on the target computer.
 ms.assetid: d34eebb7-bc91-4bff-9787-d92f74195ee1
 keywords: ["db extension", "dc extension", "dd extension", "dp extension", "dq extension", "du extension", "dw extension", "memory, Display Physical ( d ) extensions", "db, dc, dd, dp, dq, du, dw Windows Debugging"]
 topic_type:

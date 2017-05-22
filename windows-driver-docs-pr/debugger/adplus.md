@@ -1,6 +1,6 @@
 ---
 title: ADPlus
-description: ADPlus
+description: This topic covers ADPlus
 ms.assetid: f0ac9322-3728-42ef-87a4-5b6d25a282d1
 keywords: ["ADPlus", "dump file, ADPlus", "adplus.vbs", "adplus.vbs, ADPlus", "Autodump+", "Autodump+, See "ADPlus""]
 ---

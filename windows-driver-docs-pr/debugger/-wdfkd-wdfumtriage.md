@@ -1,6 +1,6 @@
 ---
 title: wdfkd\_wdfumtriage
-description: The wdfkd\_wdfumtriage extension displays information about all UMDF devices on the system, including device objects, corresponding host process, loaded drivers and class extensions, PnP device stack, PnP device nodes, dispatched IRPs, and problem state if relevant.
+description: The wdfkd\_wdfumtriage extension displays information UMDF devices on the system, including device objects, loaded drivers and class extensions, PnP device stack, dispatched IRPs.
 ms.assetid: E25DAE56-E42A-4A56-B36F-8B0B1D826524
 keywords: ["wdfkd_wdfumtriage Windows Debugging"]
 topic_type:

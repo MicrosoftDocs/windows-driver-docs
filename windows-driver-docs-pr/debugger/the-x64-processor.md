@@ -1,6 +1,6 @@
 ---
 title: The x64 Processor
-description: The x64 Processor
+description: This section provides information on the x64 Processor
 ms.assetid: b3e00741-9d39-4078-a758-e71d224a62b1
 keywords: ["x64 processor", "x64 processor, overview", "AMD64 processor", "AMD64 processor, See "x64 processor"", "x86-64 processor", "x86-64 processor, See "x64 processor"", "AMD x86-64 processor", "AMD x86-64 processor, See "x64 processor""]
 ---

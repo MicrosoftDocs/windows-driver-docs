@@ -1,6 +1,6 @@
 ---
 title: Using Debugger Commands
-description: Using Debugger Commands
+description: This section describes using Debugger Commands. You enter commands at the prompt at the bottom of the window.
 ms.assetid: 64dcc364-53b5-41d3-9266-abcfe4b328f4
 keywords: ["commands", "commands, using", "debugger commands", "debugger commands, See "commands"", "meta-commands ("." commands)", "meta-commands ("." commands), using", ". commands", ". commands, See "meta-commands"", "macros"]
 ---

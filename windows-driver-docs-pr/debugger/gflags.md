@@ -1,6 +1,6 @@
 ---
 title: GFlags
-description: GFlags (the Global Flags Editor), gflags.exe, enables and disables advanced debugging, diagnostic, and troubleshooting features. It is most often used to turn on indicators that other tools track, count, and log.
+description: GFlags (the Global Flags Editor), gflags.exe, enables and disables advanced debugging, diagnostic, and troubleshooting features. 
 ms.assetid: e268af2e-90a9-411e-8e29-ab486d2aac48
 keywords: ["GFlags", "Global Flags Editor (gflags.exe)", "Global Flags Editor (gflags.exe), See "GFlags"", "gflags.exe (Global Flags Editor)", "gflags.exe (Global Flags Editor), See "GFlags""]
 ---

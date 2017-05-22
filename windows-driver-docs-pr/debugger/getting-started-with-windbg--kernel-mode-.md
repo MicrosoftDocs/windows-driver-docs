@@ -1,6 +1,6 @@
 ---
 title: Getting Started with WinDbg (Kernel-Mode)
-description: WinDbg is a kernel-mode and user-mode debugger that is included in Debugging Tools for Windows. Here we provide hands-on exercises that will help you get started using WinDbg as a kernel-mode debugger.
+description: This topic provides hands-on exercises that will help you get started using WinDbg as a kernel-mode debugger.
 ms.assetid: 1B61591F-0D48-4FBD-B242-68BB90D27FAF
 ---
 

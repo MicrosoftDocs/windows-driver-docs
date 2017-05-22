@@ -1,6 +1,6 @@
 ---
 title: Activating a Smart Client
-description: Once the DbgSrv process server has been activated, you can create a smart client on another computer and begin a debugging session.There are two ways to start a smart client by starting CDB or WinDbg with the -premote command-line option, or by using the WinDbg graphical interface.The protocol of the smart client must match the protocol of the process server. The general syntax for starting a smart client depends on the protocol used. The following options exist
+description: Once the DbgSrv process server has been activated, you can create a smart client on another computer and begin a debugging session.
 ms.assetid: 7199dc95-e8fc-4f58-ab6e-c0141681113e
 keywords: ["Activating a Smart Client Windows Debugging"]
 topic_type:

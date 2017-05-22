@@ -1,6 +1,6 @@
 ---
 title: wdfkd.wdfdmaenablers
-description: The wdfkd.wdfdmaenablers extension displays all WDF direct memory access (DMA) objects associated with a specified device object. It also displays their associated transaction and common buffer objects.
+description: The wdfkd.wdfdmaenablers extension displays all WDF direct memory access (DMA) objects associated with a specified device object. 
 ms.assetid: 31b185e7-74d3-4329-b389-37279e5aa75c
 keywords: ["wdfkd.wdfdmaenablers Windows Debugging"]
 topic_type:

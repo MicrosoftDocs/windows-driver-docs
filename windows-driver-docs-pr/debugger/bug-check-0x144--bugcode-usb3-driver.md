@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x144 BUGCODE\_USB3\_DRIVER
-description: The BUGCODE\_USB3\_DRIVER bug check has a value of 0x00000144. This is the code used for all USB 3 bug checks. Parameter 1 specifies the type of the USB 3 bug check, and the meanings of the other parameters are dependent on Parameter 1.
+description: The BUGCODE\_USB3\_DRIVER bug check has a value of 0x00000144. This is the code used for all USB 3 bug checks.
 ms.assetid: 39414287-3E20-405B-846A-B7F9F8AEE078
 keywords: ["Bug Check 0x144 BUGCODE_USB3_DRIVER", "BUGCODE_USB3_DRIVER"]
 topic_type:

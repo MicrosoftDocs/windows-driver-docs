@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x79 MISMATCHED\_HAL
-description: The MISMATCHED\_HAL bug check has a value of 0x00000079. This bug check indicates that the Hardware Abstraction Layer (HAL) revision level or configuration does not match that of the kernel or the computer.
+description: The MISMATCHED\_HAL bug check has a value of 0x00000079 that indicates that the HAL revision level or configuration does not match that of the kernel or the computer.
 ms.assetid: 2d063c2a-c647-4436-b005-04f71a4d2b66
 keywords: ["Bug Check 0x79 MISMATCHED_HAL", "MISMATCHED_HAL"]
 topic_type:

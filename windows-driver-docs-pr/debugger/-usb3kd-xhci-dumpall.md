@@ -1,6 +1,6 @@
 ---
 title: usb3kd.xhci\_dumpall
-description: The usb3kd.xhci\_dumpall command displays information about all USB 3.0 host controllers on the computer. The display is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys).
+description: The usb3kd.xhci\_dumpall command displays information about all USB 3.0 host controllers on the computer. The display is based on the data structures maintained by UsbXhci.sys.
 ms.assetid: D1087DC6-B065-48E3-93B2-EF53AE9DA8C7
 keywords: ["usb3kd.xhci_dumpall Windows Debugging"]
 topic_type:

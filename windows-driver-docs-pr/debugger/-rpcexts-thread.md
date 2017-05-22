@@ -1,6 +1,6 @@
 ---
 title: rpcexts.thread
-description: The rpcexts.thread extension displays the per-thread RPC information.This extension command should not be confused with the .thread (Set Register Context) command or the thread ( kdextx86.thread and kdexts.thread) extension.
+description: The rpcexts.thread extension displays the per-thread RPC information.This extension command should not be confused with the .thread command.
 ms.assetid: eecc4eb6-7789-47ed-8b3f-5ec21cc6117c
 keywords: ["rpcexts.thread Windows Debugging"]
 topic_type:

@@ -1,6 +1,6 @@
 ---
 title: usbkd.\_ehcitd
-description: The usbkd.\_ehcitd command displays information from a usbehci \_TRANSFER\_CONTEXT structure. Use this command to display information about asynchronous endpoints (that is, control and bulk endpoints).
+description: The usbkd.\_ehcitd command displays information from a usbehci \_TRANSFER\_CONTEXT structure. 
 ms.assetid: C0EE04CF-E059-4064-9791-3500E66B24FA
 keywords: ["usbkd._ehcitd Windows Debugging"]
 topic_type:

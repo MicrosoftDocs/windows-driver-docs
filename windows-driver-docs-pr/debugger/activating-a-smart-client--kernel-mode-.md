@@ -1,6 +1,6 @@
 ---
 title: Activating a Smart Client (Kernel Mode)
-description: Once the KD connection server has been activated, you can create a smart client on another computer and begin a debugging session.There are two ways to start a smart client by starting KD or WinDbg with the kernel protocol kdsrv, or by using the WinDbg graphical interface.You need to specify the remote transfer protocol used by the KD connection server. You can also specify the protocol for the actual kernel connection between the KD connection server and the target computer, or you can use the default.The general syntax for starting a smart client depends on the protocol used. The following options exist
+description: Once the KD connection server has been activated, you can create a smart client on another computer and begin a debugging session.
 ms.assetid: bf0f1dd5-e6dc-4168-8476-cf21e77bd335
 keywords: ["Activating a Smart Client (Kernel Mode) Windows Debugging"]
 topic_type:

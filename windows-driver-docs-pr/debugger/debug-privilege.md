@@ -1,6 +1,6 @@
 ---
 title: Debug Privilege
-description: The debug privilege allows someone to debug a process that they wouldn’t otherwise have access to. For example, a process running as a user with the debug privilege enabled on its token can debug a service running as local system.
+description: The debug privilege allows someone to debug a process that they wouldn’t otherwise have access to.
 ms.assetid: f3ea9065-6d04-4629-88ed-85428f7915ca
 keywords: ["debug privilege", "debug privilege, overview"]
 ---

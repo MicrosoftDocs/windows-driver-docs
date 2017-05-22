@@ -1,6 +1,6 @@
 ---
 title: String Wildcard Syntax
-description: String Wildcard Syntax
+description: This topic covers string wildcard syntax. Some debugger commands have string parameters that accept a variety of wildcard characters.
 ms.assetid: 11e73f81-5d5c-4d9a-8380-ec767b27f603
 keywords: ["string wildcards", "expressions, string wildcards", "regular expressions", "regular expressions, See "string wildcards"", "syntax rules for commands, string wildcards"]
 ---

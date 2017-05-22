@@ -1,6 +1,6 @@
 ---
 title: wdfkd.wdfdriverinfo
-description: The wdfkd.wdfdriverinfo extension displays information about the specified driver, including its device tree, the version of the Kernel-Mode Driver Framework (KMDF) library that the driver was compiled with, and a list of the framework device objects that the driver created.
+description: The wdfkd.wdfdriverinfo extension displays information about the specified driver, including its device tree, and version information.
 ms.assetid: dc758fd3-1226-46e3-b249-2cf37ef3e539
 keywords: ["wdfkd.wdfdriverinfo Windows Debugging"]
 topic_type:

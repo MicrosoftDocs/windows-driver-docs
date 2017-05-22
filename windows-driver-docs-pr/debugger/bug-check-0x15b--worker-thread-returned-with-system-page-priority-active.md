@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x15B WORKER\_THREAD\_RETURNED\_WITH\_SYSTEM\_PAGE\_PRIORITY\_ACTIVE
-description: The WORKER\_THREAD\_RETURNED\_WITH\_SYSTEM\_PAGE\_PRIORITY\_ACTIVE bug check has a value of 0x0000015B. This indicates that a worker thread's system page priority was leaked by the called worker routine.
+description: The WORKER\_THREAD\_RETURNED\_WITH\_SYSTEM\_PAGE\_PRIORITY\_ACTIVE bug check has a value of 0x0000015B that indicates a worker thread's system page priority was leaked.
 ms.assetid: F618AA35-54BC-4923-99C8-311DB1D20C71
 keywords: ["Bug Check 0x15B WORKER_THREAD_RETURNED_WITH_SYSTEM_PAGE_PRIORITY_ACTIVE", "WORKER_THREAD_RETURNED_WITH_SYSTEM_PAGE_PRIORITY_ACTIVE"]
 topic_type:

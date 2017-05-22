@@ -1,6 +1,6 @@
 ---
 title: wmitrace.setprefix
-description: The wmitrace.setprefix extension specifies the trace message prefix that is prepended to the trace messages from this session. This extension allows you to change the prefix during the debugging session.
+description: The wmitrace.setprefix extension specifies the trace message prefix that is prepended to the trace messages from this session. 
 ms.assetid: 8712af44-f231-48f6-97ac-56a1d737cd6b
 keywords: ["wmitrace.setprefix Windows Debugging"]
 topic_type:

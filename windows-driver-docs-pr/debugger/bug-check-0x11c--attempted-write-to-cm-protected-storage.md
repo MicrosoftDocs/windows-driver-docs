@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x11C ATTEMPTED\_WRITE\_TO\_CM\_PROTECTED\_STORAGE
-description: The ATTEMPTED\_WRITE\_TO\_CM\_PROTECTED\_STORAGE bug check has a value of 0x0000011C. This bug check indicates that an attempt was made to write to the read-only protected storage of the configuration manager.
+description: The ATTEMPTED\_WRITE\_TO\_CM\_PROTECTED\_STORAGE bug check has a value of 0x0000011C that indicates that a write was attempted to the protected storage of the configuration manager.
 ms.assetid: 5a322457-51d7-4832-8eeb-1fdc99f313e8
 keywords: ["Bug Check 0x11C ATTEMPTED_WRITE_TO_CM_PROTECTED_STORAGE", "ATTEMPTED_WRITE_TO_CM_PROTECTED_STORAGE"]
 topic_type:

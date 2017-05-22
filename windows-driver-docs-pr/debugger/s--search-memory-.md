@@ -1,6 +1,6 @@
 ---
 title: s (Search Memory)
-description: The s command searches through memory to find a specific byte pattern.Do not confuse this command with the ~s (Change Current Processor), ~s (Set Current Thread), s (Set Current Process), or s (Set Current System) commands.
+description: The s command searches through memory to find a specific byte pattern.
 ms.assetid: fdca07c3-95c8-46cf-8da1-07a5e6767f67
 keywords: ["s (Search Memory) Windows Debugging"]
 topic_type:

@@ -1,6 +1,6 @@
 ---
 title: The AMLI Debugger
-description: The AMLI Debugger
+description: This topic describes the AMLI Debugger
 ms.assetid: f9a9c646-e8a0-4ae0-b2a2-147e256f8683
 keywords: ["AML debugging", "AML debugging, See "AMLI Debugger"", "AMLI Debugger", "ACPI debugging, AMLI Debugger", "BIOS debugging, AML (ACPI Machine Language) debugging"]
 ---

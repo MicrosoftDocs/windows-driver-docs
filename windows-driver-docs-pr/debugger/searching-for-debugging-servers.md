@@ -1,6 +1,6 @@
 ---
 title: Searching for Debugging Servers
-description: You can use KD or CDB with the -QR command-line option to obtain a list of available debugging servers that are running on a network server.This list may include servers that no longer exist but which were not shut down properly -- connecting to one of these generates an error message. The list will also include process servers and KD connection servers. The server type will be indicated in each case.The syntax for this is as follows
+description: You can use KD or CDB with the -QR command-line option to obtain a list of available debugging servers that are running on a network server.
 ms.assetid: 510d5f9a-cde8-4dc8-8e2f-80f84ad44fce
 keywords: ["Searching for Debugging Servers Windows Debugging"]
 topic_type:

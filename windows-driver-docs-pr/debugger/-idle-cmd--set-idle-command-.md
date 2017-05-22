@@ -1,6 +1,6 @@
 ---
 title: .idle\_cmd (Set Idle Command)
-description: The .idle\_cmd command sets the idle command. This is a command that is executed whenever control returns from the target to the debugger. For example, when the target reaches a breakpoint, this command executes.
+description: The .idle\_cmd command sets the idle command. This is a command that is executed whenever control returns from the target to the debugger. 
 ms.assetid: 8cfe7aa8-4e31-4e97-b61d-9e8bb1b7be61
 keywords: [".idle_cmd (Set Idle Command) Windows Debugging"]
 topic_type:

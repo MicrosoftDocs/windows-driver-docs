@@ -1,6 +1,6 @@
 ---
 title: ndiskd.netadapter
-description: The ndiskd.netadapter extension displays information about NDIS miniports, or network adapters, that are active on the system. If you run this command with no parameters, ndiskd will display a list of all network adapters.
+description: The ndiskd.netadapter extension displays information about NDIS miniports, or network adapters, that are active on the system. 
 ms.assetid: 7D55F7CE-5DDB-4C80-8C27-F619F2FB7F15
 keywords: ["ndiskd.netadapter Windows Debugging"]
 topic_type:

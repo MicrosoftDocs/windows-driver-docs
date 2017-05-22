@@ -1,6 +1,6 @@
 ---
 title: hidkd.hidtree
-description: The hidkd.hidtree command displays a list of all device nodes that have a HID function driver along with their child nodes. The child nodes have a physical device object (PDO) that was created by the parent node's HID function driver.
+description: The hidkd.hidtree command displays a list of all device nodes that have a HID function driver along with their child nodes. 
 ms.assetid: 50FD5526-3B0E-4585-BFFD-72ED363D007A
 keywords: ["hidkd.hidtree Windows Debugging"]
 topic_type:

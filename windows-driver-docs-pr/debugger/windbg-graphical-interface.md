@@ -1,6 +1,6 @@
 ---
 title: Using the WinDbg Graphical Interface
-description: Using the WinDbg Graphical Interface
+description: This section covers using the WinDbg Graphical Interface
 ms.assetid: 15276b1e-e424-4c2a-a33f-3e1e13fda74e
 keywords: ["WinDbg, graphical interface", "GUI", "graphical interface", "graphical interface, overview", "GUI, See "graphical interface""]
 ---

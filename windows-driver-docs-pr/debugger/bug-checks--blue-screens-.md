@@ -1,6 +1,6 @@
 ---
 title: Bug Checks (Blue Screens)
-description: Bug Checks (Blue Screens)
+description: This topic covers bug checks (Blue Screens)
 ms.assetid: 6ACE4AD9-5318-4c96-A560-D247033CB500
 keywords: ["bug check", "blue screen", "blue screen, See "bug check"", "kernel error", "kernel error, See "bug check"", "stop error", "stop error, See "bug check"", "stop code", "stop code, See "bug check""]
 ---

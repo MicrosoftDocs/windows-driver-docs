@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x14F PDC\_WATCHDOG\_TIMEOUT
-description: The PDC\_WATCHDOG\_TIMEOUT bug check has a value of 0x0000014F. This indicates that a system component failed to respond within the allocated time period, preventing the system from exiting connected standby.
+description: The PDC\_WATCHDOG\_TIMEOUT bug check has a value of 0x0000014F. This indicates that a system component failed to respond within the allocated time period.
 ms.assetid: 347D31C2-7027-44BD-A0E8-60C6EC3A2030
 keywords: ["Bug Check 0x14F PDC_WATCHDOG_TIMEOUT", "PDC_WATCHDOG_TIMEOUT"]
 topic_type:

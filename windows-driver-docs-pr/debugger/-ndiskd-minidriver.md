@@ -1,6 +1,6 @@
 ---
 title: ndiskd.minidriver
-description: The ndiskd.minidriver command displays information about an NDIS miniport driver. If you run this extension with no parameters, ndiskd will display a list of NDIS miniport drivers that are active on the system.
+description: The ndiskd.minidriver command displays information about an NDIS miniport driver. 
 ms.assetid: CD349B10-8363-4D48-A830-CC9EF5EA75BF
 keywords: ["ndiskd.minidriver Windows Debugging"]
 topic_type:

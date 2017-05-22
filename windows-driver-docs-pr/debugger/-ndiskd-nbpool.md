@@ -1,6 +1,6 @@
 ---
 title: ndiskd.nbpool
-description: The ndiskd.nbpool extension displays information about a NET\_BUFFER (NB) pool. If you run this extension with no parameters, ndiskd will display a list of all allocated NB pools in the system.
+description: The ndiskd.nbpool extension displays information about a NET\_BUFFER (NB) pool. 
 ms.assetid: 4FCD48B7-C469-4057-A279-20522B00E80B
 keywords: ["ndiskd.nbpool Windows Debugging"]
 topic_type:

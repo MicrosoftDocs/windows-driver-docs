@@ -1,6 +1,6 @@
 ---
 title: Avoiding debugger searches for unneeded symbols
-description: You arrive at an interesting breakpoint while debugging your driver, only to have the debugger pause for a very long time while it attempts to load symbols for drivers that you don't own and that don't even matter for the debugging task at hand.
+description: Why does symbol loading sometimes take so long? That depends on whether the symbol name is qualified or unqualified.
 ms.assetid: 710BAEAF-BC45-416E-8359-69E9DFCA2570
 ---
 

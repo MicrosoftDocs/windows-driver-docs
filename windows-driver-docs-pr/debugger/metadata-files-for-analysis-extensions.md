@@ -1,6 +1,6 @@
 ---
 title: Metadata Files for Analysis Extension Plug-ins
-description: When you write an analysis extension plug-in, you also write a metadata file that describes the situations for which you want your plug-in to be called. When the analyze debugger command runs, it uses metadata files to determine which plug-ins to load.
+description: When you write an analysis extension plug-in, you also write a metadata file that describes the situations for which you want your plug-in to be called.
 ms.assetid: 13B9B7A5-1D68-49A3-825B-454AC070FCC1
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: ndiskd.protocol
-description: The ndiskd.protocol command displays information about an NDIS protocol driver. If you run this extension with no parameters, ndiskd will display a list of NDIS protocol drivers that are active on the system.
+description: The ndiskd.protocol command displays information about an NDIS protocol driver. 
 ms.assetid: c1d349d5-b0ba-4665-a399-1bc5cd55dde6
 keywords: ["ndiskd.protocol Windows Debugging"]
 topic_type:

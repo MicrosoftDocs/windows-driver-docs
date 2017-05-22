@@ -1,6 +1,6 @@
 ---
 title: Activating a KD Connection Server
-description: The KD connection server that is included in Debugging Tools for Windows is called KdSrv (kdsrv.exe). To activate a KD connection server, open an elevated Command Prompt window (Run as Adminstrator), and enter the kdsrv command.
+description: To activate a KD connection server, open an elevated Command Prompt window (Run as Adminstrator), and enter the kdsrv command.
 ms.assetid: 1b6f6f72-2679-45c7-bf1b-9607bf7e7d89
 keywords: ["Activating a KD Connection Server Windows Debugging"]
 topic_type:

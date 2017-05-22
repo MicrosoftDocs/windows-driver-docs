@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0xA5 ACPI\_BIOS\_ERROR
-description: The ACPI\_BIOS\_ERROR bug check has a value of 0x000000A5. This bug check indicates that the Advanced Configuration and Power Interface (ACPI) BIOS of the computer is not fully compliant with the ACPI specification.
+description: The ACPI\_BIOS\_ERROR bug check has a value of 0x000000A5 that indicates that the ACPI BIOS of the computer is not fully compliant with the ACPI specification.
 ms.assetid: f0366a3c-a2c4-4fc8-a722-52fdda59eb2b
 keywords: ["Bug Check 0xA5 ACPI_BIOS_ERROR", "ACPI_BIOS_ERROR"]
 topic_type:

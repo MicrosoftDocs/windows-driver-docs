@@ -1,6 +1,6 @@
 ---
 title: CTRL+D (Toggle Debug Info)
-description: The CTRL+D key toggles debugger internal information flow on and off. This is used to restart communication between the target computer and the host computer in cases where the debugger is not communicating properly.
+description: The CTRL+D key toggles debugger internal information flow on and off. This is used to restart communication in cases where the debugger is not communicating properly.
 ms.assetid: fcc5d597-6a3f-4d6c-82f9-3624efb4f434
 keywords: ["CTRL+D (Toggle Debug Info) Windows Debugging"]
 topic_type:

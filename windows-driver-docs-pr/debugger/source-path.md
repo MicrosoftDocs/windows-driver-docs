@@ -1,6 +1,6 @@
 ---
 title: Source Path
-description: Source Path
+description: This topic covers how to set the source path or load the individual source files.
 ms.assetid: b5dcb557-b413-401a-be4b-2d45b2597e6c
 keywords: ["source files and paths", "source files and paths, overview", "source path", "source path, See "source files and paths""]
 ---

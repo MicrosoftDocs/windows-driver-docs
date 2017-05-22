@@ -1,6 +1,6 @@
 ---
 title: s (Set Current Process)
-description: The s command sets or displays the current process number.Do not confuse this command with the s (Search Memory), ~s (Change Current Processor), ~s (Set Current Thread), or s (Set Current System) command.
+description: The s command sets or displays the current process number.
 ms.assetid: 6b4d8e00-426c-496b-9c52-c60faeb0c975
 keywords: ["s (Set Current Process) Windows Debugging"]
 topic_type:

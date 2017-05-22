@@ -1,6 +1,6 @@
 ---
 title: Blue Screen Data
-description: When Microsoft Windows encounters a condition that compromises safe system operation, the system halts. This condition is called a bug check. It is also commonly referred to as a system crash, a kernel error, or a stop error.
+description: When Microsoft Windows encounters a condition that compromises safe system operation, the system halts. This condition is called a bug check or stop error.
 ms.assetid: 8cc42643-e231-49dd-96b0-6cb528d5d7a9
 keywords: ["Blue Screen Data Windows Debugging"]
 topic_type:

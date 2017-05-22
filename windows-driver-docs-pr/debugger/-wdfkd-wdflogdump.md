@@ -1,6 +1,6 @@
 ---
 title: wdfkd.wdflogdump
-description: The wdfkd.wdflogdump extension displays the WDF In-flight Recorder log records, if available, for a KMDF driver or a UMDF 2 driver. You can use this command with a complete memory dump, a kernel memory dump, or a live kernel-mode target.
+description: The wdfkd.wdflogdump extension displays the WDF In-flight Recorder log records, if available, for a KMDF driver or a UMDF 2 driver. 
 ms.assetid: da03fafe-4cc8-4da6-9795-828e69e0df20
 keywords: ["wdfkd.wdflogdump Windows Debugging"]
 topic_type:

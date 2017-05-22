@@ -1,6 +1,6 @@
 ---
 title: ndiskd.pktpools
-description: Warning  This extension is for legacy NDIS 5.x drivers. The NDIS\_PACKET structure and its associated architecture have been deprecated. The ndiskd.pktpools extension displays a list of all allocated packet pools.
+description: Warning  This extension is for legacy NDIS 5.x drivers. The ndiskd.pktpools extension displays a list of all allocated packet pools.
 ms.assetid: 0aceb22c-17ab-4199-a313-ecbc4c8f0b6e
 keywords: ["ndiskd.pktpools Windows Debugging"]
 topic_type:

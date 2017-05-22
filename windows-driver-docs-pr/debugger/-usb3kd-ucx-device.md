@@ -1,6 +1,6 @@
 ---
 title: usb3kd.ucx\_device
-description: The usb3kd.ucx\_device extension displays information about a USB device in the USB 3.0 tree. The display is based on data structures maintained by the USB host controller extension driver (UcxVersion.sys).
+description: The usb3kd.ucx\_device extension displays information about a USB device in the USB 3.0 tree. The display is based on data structures maintained by UcxVersion.sys.
 ms.assetid: 7AC3DBBF-1D62-492E-B46E-C193579DE1E3
 keywords: ["usb3kd.ucx_device Windows Debugging"]
 topic_type:

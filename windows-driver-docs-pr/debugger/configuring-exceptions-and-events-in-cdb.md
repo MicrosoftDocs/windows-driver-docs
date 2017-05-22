@@ -1,6 +1,6 @@
 ---
 title: Configuring Exceptions and Events in CDB
-description: You can configure CDB to react to specified exceptions and events in a specific way. For each exception, you can set the break status and the handling status. For each event, you can set the break status.
+description: You can configure CDB to react to specified exceptions and events in a specific way. For each exception, you can set the break status and the handling status. 
 ms.assetid: EA23057E-3241-43F2-84D3-CA5E56721583
 ---
 

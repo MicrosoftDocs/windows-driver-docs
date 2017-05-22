@@ -1,6 +1,6 @@
 ---
 title: mui
-description: The mui extension displays the Multilingual User Interface (MUI) cache information. The implementation of MUI was vastly improved in Windows Vista. As a result, the behavior of this extension on earlier implementations is undefined.
+description: The mui extension displays the Multilingual User Interface (MUI) cache information. The implementation of MUI was improved in Windows Vista. 
 ms.assetid: f485450f-0dd2-4f1c-85fe-dbf272c2dbae
 keywords: ["multi-language user interface", "mui Windows Debugging"]
 topic_type:
@@ -14,7 +14,7 @@ api_type:
 # !mui
 
 
-The **!mui** extension displays the Multilingual User Interface (MUI) cache information. The implementation of MUI was vastly improved in Windows Vista. As a result, the behavior of this extension on earlier implementations is undefined.
+The **!mui** extension displays the Multilingual User Interface (MUI) cache information. The implementation of MUI was improved in Windows Vista. As a result, the behavior of this extension on earlier implementations is undefined.
 
 ``` syntax
 !mui -c
