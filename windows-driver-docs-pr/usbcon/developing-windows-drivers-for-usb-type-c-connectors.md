@@ -29,10 +29,20 @@ ms.technology: windows-devices
 
 -   [UCmCx client driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188011)
 
+-   [USB Type-C Port Controller Interface driver class extensions reference](https://msdn.microsoft.com/en-us/library/windows/hardware/mt805826)
+
 You need to write a driver for the connector if your USB Type-C system does not implement PD state machine or it implements state machine but does not support UCSI over non-ACPI transport. If it does, you can load the Microsoft-provided [UCSI driver](ucsi.md).
 
 ![drivers](images/drivers-c.png)
 
+| Hardware/Firmware capabilities                        | Non-detachable    | Add-on card    | 
+|------------------------------------------------------ |-------------      |---            |
+|USB Type-C connector does not have a PD state machine.  | Write a client driver to UcmTcpciCx. <p>Start with [UcmTcpciCx Port Controller Client Driver](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmTcpciCxClientSample) </p>| Write a client driver to UcmCx. <p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi).</p>| 
+|Connector is UCSI-compliant with ACPI.                  | Load the in-box driver, UcmUcsi.sys.  |N/A| 
+|Connector is UCSI-compliant without ACPI.| Write a client driver to UcmCx. <p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi) and replace the ACPI your implementation for the required bus.| Write a client driver to UcmCx. <p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi) and replace the ACPI your implementation for the required bus. |
+| Has PD state machine but is not UCSI-compliant.| Write a client driver to UcmCx. <p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi).  |Write a client driver to UcmCx. <p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi). </p>|                 
+## In this section
+To implementation the proposed solutions in the preceding table, read these topics:
 <table>
 <colgroup>
 <col width="50%" />

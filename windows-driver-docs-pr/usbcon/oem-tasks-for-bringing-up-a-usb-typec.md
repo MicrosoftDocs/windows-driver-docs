@@ -67,26 +67,25 @@ The USB Type-C connector, introduced by the USB-IF, defined in the USB 3.1 speci
 </tr>
 <tr class="odd">
 <td><img src="images/drivers-c.png" alt="Drivers" /></td>
-<td>
-Use this flow chart to determine a solution for your USB Type-C system. 
+<td><ul>
+<p>Use this flow chart to determine a solution for your USB Type-C system. </p>
 
--   For a system that implements a PD state machine, implement a client driver to the UcmCx class extension.
+<li><p>For a system that implements a PD state machine, implement a client driver to the UcmCx class extension.</p>
 
-    [Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md)
+<p>[Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md)</P>
 
-    [UCmCx client driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188011)
+<p>[UCmCx client driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188011)</p></li>
 
--   For a system that does not implement a PD state machine, implement a client driver to the UcmTcpciCx class extension. 
+<li><p>For a system that does not implement a PD state machine, implement a client driver to the UcmTcpciCx class extension. </p>
 
-    [Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md)
+<p>[Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md)</p>
 
-    [USB Type-C Port Controller Interface driver class extensions reference](https://msdn.microsoft.com/en-us/library/windows/hardware/mt805826)
+<p>[USB Type-C Port Controller Interface driver class extension reference](https://msdn.microsoft.com/en-us/library/windows/hardware/mt805826)</p></li>
 
--   For a system that has PD state machine and supports USB Type-C Connector System Software Interface (UCSI) over ACPI, load the Microsoft provided in-box driver, UcmUcsi.sys. (See [UCSI driver](ucsi.md)). 
+<li>For a system that has PD state machine and supports USB Type-C Connector System Software Interface (UCSI) over ACPI, load the Microsoft provided in-box driver, UcmUcsi.sys. See [UCSI driver](ucsi.md). 
 
-    If the system supports UCSI over another transport such as PCI, implement a UCSI-compliant client driver to the UcmCx class extension. Modify [this sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi) and replace ACPI portions with your implementation for another transport.
-
-</td>
+If the system supports UCSI over another transport such as PCI, implement a UCSI-compliant client driver to the UcmCx class extension. Modify [this sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi) and replace ACPI portions with your implementation for another transport.</li>
+</ul></td>
 </tr>
 <tr class="even">
 <td><img src="images/bringup-c3.png" alt="Bringup" /></td>
