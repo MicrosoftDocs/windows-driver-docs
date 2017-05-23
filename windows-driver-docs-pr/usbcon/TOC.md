@@ -104,7 +104,7 @@
 #### [Bring up the function controller on a USB Type-C Windows system](function-controller-bringup-for-a-usb-type-c-system.md)
 #### [Bring up the dual-role controller for a USB Type-C Windows system](dual-role-controller-bringup-for-a-usb-type-c-system.md)
 #### [Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md)
-#### [Write a USB Type-C port controller driver](write a usb type-c port controller driver.md)
+#### [Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md)
 ### [Troubleshoot messages for a USB Type-C Windows system](introduction-to-usb-type-c-connectors.md)
 ## [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)
 ### [Capture and view USB traces with Microsoft Message Analyzer](capture-and-view-ing-usb-traces-with-microsoft-message-analyzer-.md)
