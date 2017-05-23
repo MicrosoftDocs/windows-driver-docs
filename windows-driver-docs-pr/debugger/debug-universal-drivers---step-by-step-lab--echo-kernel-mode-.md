@@ -279,6 +279,7 @@ Unable to enumerate user-mode unloaded modules, Win32 error 0n30
 ```
 
 8. Because we have yet to set the symbol path and loaded symbols, limited information is available in the debugger.
+
 ### <span id="Download"></span><span id="download"></span><span id="DOWNLOAD"></span>Section 3: Download and build the KMDF universal echo driver
 
 *In Section 3, you will download and build the KMDF universal echo driver.*
