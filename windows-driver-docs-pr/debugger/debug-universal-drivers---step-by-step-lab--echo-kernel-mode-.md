@@ -226,6 +226,7 @@ The Debugger help file will display help for the **.prefer\_dml** command.
 **Display the version of Windows on the target system**
 
 5. Display detailed version information on the target system by typing the [**vertarget (Show Target Computer Version)**](vertarget--show-target-computer-version-.md) command in the WinDbg window.
+
 ``` syntax
 0: kd> vertarget
 Windows 10 Kernel Version 9926 MP (4 procs) Free x64
@@ -261,6 +262,7 @@ fffff801`094d9000 fffff801`09561000   CI         (export symbols)       CI.dll
  
 
 7. To request detailed information about a specific module, use the v (verbose) option as shown.
+
 ``` syntax
 0: Kd> lm v m tcpip
 Browse full module list
