@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Framework Object Hierarchy
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The following figure shows the parent-child framework object hierarchy.
 

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Framework Driver Object
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The framework driver object is exposed to drivers by the [IWDFDriver](https://msdn.microsoft.com/library/windows/hardware/ff558893) interface. It is the framework representation of the driver image loaded in the driver host process. The framework creates a new driver object for each driver loaded in the driver host process. The **IWDFDriver** interface is passed to the driver by the [**IDriverEntry::OnInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff554900) method, which is the main entry point for the user-mode driver.
 

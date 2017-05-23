@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Framework Base Object
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The framework base object is exposed to drivers by the [IWDFObject](https://msdn.microsoft.com/library/windows/hardware/ff560200) interface. It provides basic functionality that is common across all framework object types. All framework objects are derived from this root object.
 

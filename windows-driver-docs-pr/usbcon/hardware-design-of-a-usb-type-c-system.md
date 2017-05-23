@@ -1,6 +1,7 @@
 ---
 Description: Here are some example designs for USB Type-C system.
 title: Hardware design of USB Type-C systems
+author: windows-driver-content
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article

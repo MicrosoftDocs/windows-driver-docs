@@ -1,6 +1,7 @@
 ---
 Description: Information about how a USB client driver can allocate, build, and submit URBs to the USB driver stack.
 title: USB Request Blocks (URBs)
+author: windows-driver-content
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article

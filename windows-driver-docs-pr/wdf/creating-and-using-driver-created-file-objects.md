@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # Creating and Using Driver-Created File Objects
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 If your driver needs to create and send an I/O request that is independent of the application to the next driver in the stack (the default I/O target), the driver must create and close its own file objects.
 
