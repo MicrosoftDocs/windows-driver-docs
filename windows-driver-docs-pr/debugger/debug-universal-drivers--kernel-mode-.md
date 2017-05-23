@@ -2,6 +2,12 @@
 title: Debug Drivers - Step-by-Step Lab (Sysvad Kernel Mode)
 description: This lab provides hands-on exercises that demonstrate how to debug the Sysvad audio kernel-mode device driver.
 ms.assetid: 4A31451C-FC7E-4C5F-B4EB-FBBAC8DADF9E
+keywords: ["debug lab", "step-by-step", "SYSVAD"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # <span id="debugger.debug_universal_drivers__kernel-mode_"></span>Debug Drivers - Step by Step Lab (Sysvad Kernel Mode)
