@@ -3,6 +3,11 @@ title: Maintain a list of objects for each type
 description: Maintain a list of objects for each type
 ms.assetid: 845ba6cb-60b3-4053-9d54-f43ed344f82d
 keywords: ["Maintain a list of objects for each type (global flag)"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Maintain a list of objects for each type

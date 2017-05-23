@@ -3,6 +3,11 @@ title: The Ssindex.cmd Script
 description: The Ssindex.cmd Script
 ms.assetid: 38bff31a-af4e-4fd4-bdf6-da901067bdd0
 keywords: ["SrcSrv, Ssindex.cmd script", "Ssindex.cmd script"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The Ssindex.cmd Script

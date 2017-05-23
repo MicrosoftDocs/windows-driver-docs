@@ -3,6 +3,11 @@ title: SymStore Command-Line Options
 description: The following syntax forms are supported for SymStore transactions. The first parameter must always be add or del. The order of the other parameters is immaterial.
 ms.assetid: 44009878-8f8a-4301-b075-eb0164b4f3a3
 keywords: ["SymStore Command-Line Options Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

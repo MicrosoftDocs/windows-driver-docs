@@ -3,6 +3,11 @@ title: usb3kd.xhci\_info
 description: The usb3kd.xhci\_info extension displays all the XHCI commands for an individual USB 3.0 host controller.
 ms.assetid: C3C3B379-4871-4293-9C35-B64F3A5E1348
 keywords: ["usb3kd.xhci_info Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: Source Indexing
 description: Source Indexing
 ms.assetid: 381020c6-26b1-48ab-bc7d-9ab718ecb89f
 keywords: ["source indexing"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Source Indexing

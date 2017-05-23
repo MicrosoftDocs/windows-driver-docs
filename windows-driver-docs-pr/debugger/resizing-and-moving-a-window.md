@@ -3,6 +3,11 @@ title: Resizing and Moving a Window
 description: Resizing and Moving a Window
 ms.assetid: 135e1ec1-9d58-45de-a0b4-5f962ed9e1f7
 keywords: ["debugging information windows, resizing and moving a window", "resizing and moving windows"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Resizing and Moving a Window

@@ -3,6 +3,11 @@ title: Client Objects and the Engine
 description: Client Objects and the Engine
 ms.assetid: 959912c0-bce9-4d5b-9119-1ac07a8ea1ad
 keywords: ["EngExtCpp extensions, client objects"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Client Objects and the Engine

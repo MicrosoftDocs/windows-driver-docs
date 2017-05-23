@@ -3,6 +3,11 @@ title: devhandles
 description: The devhandles extension displays the open handles for the specified device.
 ms.assetid: a473dd58-1571-4969-b8b7-f7a71128d824
 keywords: ["devhandles Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: Bug Check 0x137 WIN32K\_HANDLE\_MANAGER
 description: The WIN32K\_HANDLE\_MANAGER bug check has a value of 0x00000137. This indicates that the win32k/ntuser handle manager has detected a fatal error.
 ms.assetid: 1DD53B1D-EFAA-42D3-9085-B5A76B54DF1A
 keywords: ["Bug Check 0x137 WIN32K_HANDLE_MANAGER", "WIN32K_HANDLE_MANAGER"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: Bug Check 0x103 MUP\_FILE\_SYSTEM
 description: The MUP\_FILE\_SYSTEM bug check has a value of 0x00000103.
 ms.assetid: 2756bdcc-5b10-481e-99ec-17b00c4f459d
 keywords: ["Bug Check 0x103 MUP_FILE_SYSTEM", "MUP_FILE_SYSTEM"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

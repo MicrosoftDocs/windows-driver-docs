@@ -3,6 +3,11 @@ title: Bug Check 0x15E BUGCODE\_NDIS\_DRIVER\_LIVE\_DUMP
 description: The BUGCODE\_NDIS\_DRIVER\_LIVE\_DUMP bug code has a value of 0x0000015E. This bug code indicates that NDIS has captured a live kernel dump. NDIS does not generate a bug check in this situation.
 ms.assetid: 3663A955-A1D7-4880-BD83-0976012F2CB1
 keywords: ["Bug Check 0x15E BUGCODE_NDIS_DRIVER_LIVE_DUMP", "BUGCODE_NDIS_DRIVER"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

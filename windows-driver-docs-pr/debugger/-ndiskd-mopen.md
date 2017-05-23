@@ -3,6 +3,11 @@ title: ndiskd.mopen
 description: The ndiskd.mopen extension displays information about bindings between miniports and protocols. 
 ms.assetid: 439c4647-8f3e-4473-aca8-364b5d2206e9
 keywords: ["ndiskd.mopen Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

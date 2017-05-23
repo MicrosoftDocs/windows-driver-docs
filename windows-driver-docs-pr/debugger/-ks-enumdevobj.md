@@ -3,6 +3,11 @@ title: ks.enumdevobj
 description: The ks.enumdevobj extension displays the KSDEVICE associated with a given WDM device object, and lists the filter types and filters currently instantiated on this device.
 ms.assetid: 3730fe3e-df7a-47fd-825b-ef31be6f7620
 keywords: ["ks.enumdevobj Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

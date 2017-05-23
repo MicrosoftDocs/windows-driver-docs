@@ -3,6 +3,11 @@ title: View Command Browser
 description: View Command Browser
 ms.assetid: 61ddbca3-e718-41a4-8b02-b57e2c36751d
 keywords: ["View Command Browser", "command browser window, View Command Browser"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # View | Command Browser

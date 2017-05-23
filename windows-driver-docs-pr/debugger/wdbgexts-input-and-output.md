@@ -3,6 +3,11 @@ title: WdbgExts Input and Output
 description: WdbgExts Input and Output
 ms.assetid: 5648b509-7bdd-4d2a-947f-db55a8c69100
 keywords: ["WdbgExts extensions, input", "WdbgExts extensions, output"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WdbgExts Input and Output

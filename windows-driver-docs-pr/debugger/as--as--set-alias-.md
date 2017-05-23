@@ -3,6 +3,11 @@ title: as, aS (Set Alias)
 description: The as and aS commands define a new alias or redefine an existing one.
 ms.assetid: 6e42122b-5a18-403b-a19a-1346bea8da12
 keywords: ["as, aS (Set Alias) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

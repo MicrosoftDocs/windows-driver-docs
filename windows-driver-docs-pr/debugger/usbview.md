@@ -3,6 +3,11 @@ title: USBView
 description: USBView
 ms.assetid: 88d2a93f-2e7c-493c-bb9e-487f1d1f2016
 keywords: ["USBView"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USBView

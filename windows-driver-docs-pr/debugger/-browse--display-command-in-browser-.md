@@ -3,6 +3,11 @@ title: .browse (Display Command in Browser)
 description: The .browse command displays the output of a specified command in a new Command Browser window.
 ms.assetid: 37822DDE-8AA8-4DB9-8213-08E73110ACE5
 keywords: [".browse (Display Command in Browser) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

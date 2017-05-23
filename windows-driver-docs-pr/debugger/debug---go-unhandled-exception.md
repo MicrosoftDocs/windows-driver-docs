@@ -3,6 +3,11 @@ title: Debug Go Unhandled Exception
 description: Debug Go Unhandled Exception
 ms.assetid: b9263b79-c8cb-4a3e-bf4e-f2e6673a8498
 keywords: ["Debug Go Unhandled Exception", "controlling the target, Debug Go Unhandled Exception", "exceptions, Debug Go Unhandled Exception"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debug | Go Unhandled Exception

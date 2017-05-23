@@ -3,6 +3,11 @@ title: View Font
 description: View Font
 ms.assetid: 808cd0e5-5433-4705-830e-acf1087a6df5
 keywords: ["View Font"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # View | Font

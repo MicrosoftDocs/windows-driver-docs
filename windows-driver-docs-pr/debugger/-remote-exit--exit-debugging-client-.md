@@ -3,6 +3,11 @@ title: .remote\_exit (Exit Debugging Client)
 description: The .remote\_exit command exits the debugging client but does not end the debugging session.
 ms.assetid: 9e15a842-6864-4ff9-97bc-f6cc8549a422
 keywords: ["Exit Debugging Client (.remote_exit) command", "remote debugging through the debugger, Exit Debugging Client (.remote_exit) command", ".remote_exit (Exit Debugging Client) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

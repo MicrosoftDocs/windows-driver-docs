@@ -3,6 +3,11 @@ title: ppmstate
 description: The ppmstate command
 ms.assetid: 45181F34-6753-4C5D-B573-A46B7E64870B
 keywords: ["ppmstate Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

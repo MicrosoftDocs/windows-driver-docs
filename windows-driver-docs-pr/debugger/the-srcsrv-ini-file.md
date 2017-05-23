@@ -3,6 +3,11 @@ title: The Srcsrv.ini File
 description: The Srcsrv.ini File
 ms.assetid: 5a3f5990-e43a-4c50-a16f-cbaa9f706ece
 keywords: ["SrcSrv, Srcsrv.ini file", "Srcsrv.ini file", "SrcSrv, SRCSRV_INI_FILE environment variable", "SRCSRV_INI_FILE environment variable"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The Srcsrv.ini File

@@ -3,6 +3,11 @@ title: Analyzing a Kernel-Mode Dump File
 description: Analyzing a Kernel-Mode Dump File
 ms.assetid: 2bda51c2-b022-4740-8df9-5a2cf2382e3e
 keywords: ["dump file, analyzing a kernel-mode dump file"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Analyzing a Kernel-Mode Dump File

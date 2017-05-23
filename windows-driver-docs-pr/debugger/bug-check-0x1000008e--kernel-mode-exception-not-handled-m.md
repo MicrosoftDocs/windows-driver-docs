@@ -3,6 +3,11 @@ title: Bug Check 0x1000008E KERNEL\_MODE\_EXCEPTION\_NOT\_HANDLED\_M
 description: The KERNEL\_MODE\_EXCEPTION\_NOT\_HANDLED\_M bug check has a value of 0x1000008E.
 ms.assetid: 1ed1d625-685a-40d3-b97b-37480190801d
 keywords: ["Bug Check 0x1000008E KERNEL_MODE_EXCEPTION_NOT_HANDLED_M", "KERNEL_MODE_EXCEPTION_NOT_HANDLED_M"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

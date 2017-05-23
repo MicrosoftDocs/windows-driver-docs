@@ -3,6 +3,11 @@ title: Bug Check 0x70 SESSION4\_INITIALIZATION\_FAILED
 description: The SESSION4\_INITIALIZATION\_FAILED bug check has a value of 0x00000070. This bug check indicates that the initialization of the Microsoft Windows operating system failed.
 ms.assetid: 05de773c-19eb-44dd-b6ef-3efa43d703ef
 keywords: ["Bug Check 0x70 SESSION4_INITIALIZATION_FAILED", "SESSION4_INITIALIZATION_FAILED"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

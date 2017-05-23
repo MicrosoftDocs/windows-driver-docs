@@ -3,6 +3,11 @@ title: Debugging in Assembly Mode
 description: Debugging in Assembly Mode
 ms.assetid: 048c43ff-7f9e-4a20-a524-44f66d92eefe
 keywords: ["assembly debugging", "assembly mode", "assembly debugging, overview"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging in Assembly Mode

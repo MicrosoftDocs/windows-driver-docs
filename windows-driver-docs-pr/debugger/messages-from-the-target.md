@@ -3,6 +3,11 @@ title: Messages from the Target
 description: Messages from the Target
 ms.assetid: d2ef68c6-90be-434a-b719-1619b063da47
 keywords: ["debugging messages", "debugging messages, overview"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Messages from the Target

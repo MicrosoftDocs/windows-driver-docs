@@ -3,6 +3,11 @@ title: Live Local Debugging
 description: Live Local Debugging
 ms.assetid: ec76a71e-f173-4b66-beaf-d57a1c991acd
 keywords: ["kernel streaming debugging, live local debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Live Local Debugging

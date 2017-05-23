@@ -3,6 +3,11 @@ title: ndiskd.interfaces
 description: The ndiskd.interfaces extension displays information about a network interface.
 ms.assetid: AC458FDF-CCB6-4A65-8C9C-38C436062017
 keywords: ["ndiskd.interfaces Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

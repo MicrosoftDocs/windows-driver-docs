@@ -3,6 +3,11 @@ title: errrec
 description: The errrec extension displays the contents of a Windows Hardware Error Architecture (WHEA) error record.
 ms.assetid: 372e4700-0cd7-468d-98e8-b0ead4ebc92f
 keywords: ["errrec Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: Bug Check 0x12C EXFAT\_FILE\_SYSTEM
 description: The EXFAT\_FILE\_SYSTEM bug check has a value of 0x0000012C. This bug check indicates that a problem occurred in the Extended File Allocation Table (exFAT) file system.
 ms.assetid: f55bbe88-d96f-494f-b84b-eda7c4e6bdfc
 keywords: ["Bug Check 0x12C EXFAT_FILE_SYSTEM", "EXFAT_FILE_SYSTEM"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

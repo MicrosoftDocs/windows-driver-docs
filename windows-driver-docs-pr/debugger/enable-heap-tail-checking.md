@@ -3,6 +3,11 @@ title: Enable heap tail checking
 description: Enable heap tail checking
 ms.assetid: d71b4567-55e7-49e6-a791-a292ad477c10
 keywords: ["Enable heap tail checking (global flag)"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enable heap tail checking

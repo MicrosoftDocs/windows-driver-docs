@@ -3,6 +3,11 @@ title: nsobj
 description: The nsobj extension displays an ACPI namespace object.
 ms.assetid: 348aeb42-41c6-42de-bb43-b075f55076c4
 keywords: ["nsobj Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

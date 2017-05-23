@@ -3,6 +3,11 @@ title: amli ds
 description: The amli ds extension displays an AML stack.
 ms.assetid: 62a1a1dd-c0d8-4509-a29f-16ad2b96b412
 keywords: ["amli ds Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

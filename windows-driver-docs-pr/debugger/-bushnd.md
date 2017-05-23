@@ -3,6 +3,11 @@ title: bushnd
 description: The bushnd extension displays a HAL BUS\_HANDLER structure.
 ms.assetid: dd2cb9c1-9abe-4209-a4fa-dc50965e807e
 keywords: ["bushnd Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

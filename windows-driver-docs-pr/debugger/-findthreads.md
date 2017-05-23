@@ -3,6 +3,11 @@ title: findthreads
 description: The findthreads extension displays summary information about one or more threads on the target system based on supplied search criteria.
 ms.assetid: ED14E503-0AF2-4444-81B0-7E00A6E424E5
 keywords: ["findthreads Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

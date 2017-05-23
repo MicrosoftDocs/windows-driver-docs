@@ -3,6 +3,11 @@ title: File Kernel Debug
 description: File Kernel Debug
 ms.assetid: a80b3572-87a0-4a9d-9b62-67e1ca65fff4
 keywords: ["File Kernel Debug", "starting the debugger, File Kernel Debug"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # File | Kernel Debug

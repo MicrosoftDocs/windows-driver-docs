@@ -3,6 +3,11 @@ title: .call (Call Function)
 description: The .call command causes the target process to execute a function.
 ms.assetid: 93265c2a-ea4d-4523-928c-1bb75a9356b1
 keywords: [".call (Call Function) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: Bug Check 0x8F PP0\_INITIALIZATION\_FAILED
 description: The PP0\_INITIALIZATION\_FAILED bug check has a value of 0x0000008F. This bug check indicates that the Plug and Play (PnP) manager could not be initialized.
 ms.assetid: 2e369d1a-51b1-4f65-8afb-b362ad48b703
 keywords: ["Bug Check 0x8F PP0_INITIALIZATION_FAILED", "PP0_INITIALIZATION_FAILED"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

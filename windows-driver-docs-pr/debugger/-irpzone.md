@@ -3,6 +3,11 @@ title: irpzone
 description: irpzone
 ms.assetid: 85da1a2d-ca80-412a-bb46-dad450cb2d15
 keywords: ["irpzone extension (obsolete)"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # !irpzone

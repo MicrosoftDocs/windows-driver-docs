@@ -3,6 +3,11 @@ title: Setting Up Kernel-Mode Debugging over a Network Cable in Visual Studio
 description: You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over an Ethernet network.
 ms.assetid: 4D442355-526A-4F39-8341-614BB7A41A3E
 keywords: ["network debugging visual studio", "ethernet debugging visual studio", "debugging over ethernet visual studio"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Up Kernel-Mode Debugging over a Network Cable in Visual Studio

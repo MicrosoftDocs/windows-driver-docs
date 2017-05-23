@@ -3,6 +3,11 @@ title: pcitree
 description: The pcitree extension displays information about PCI device objects, including child PCI buses and CardBus buses, and the devices attached to them.
 ms.assetid: cd1b2f85-b8de-4396-8b37-79bb3d62092c
 keywords: ["PCI bus", "PCI device", "pcitree Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: Using Logging to Track Important Events
 description: Using Logging to Track Important Events
 ms.assetid: 297336c2-85fb-4235-a7ab-0bbf571b8b98
 keywords: ["kernel streaming debugging, video stream stall, logging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Logging to Track Important Events

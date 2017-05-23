@@ -3,6 +3,11 @@ title: Noninvasive Debugging (User Mode)
 description: Noninvasive Debugging (User Mode)
 ms.assetid: 91f09fb1-9f5e-4081-89b3-78c95eada817
 keywords: ["process, debugging noninvasively", "noninvasive debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Noninvasive Debugging (User Mode)

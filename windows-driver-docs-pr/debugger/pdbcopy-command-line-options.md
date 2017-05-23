@@ -3,6 +3,11 @@ title: PDBCopy Command-Line Options
 description: The PDBCopy command line uses the following syntax. The parameters can be included in any order.
 ms.assetid: a793f860-db21-41fb-a0d2-931812400f0d
 keywords: ["PDBCopy Command-Line Options Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

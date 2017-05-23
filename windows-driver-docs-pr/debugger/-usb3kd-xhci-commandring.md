@@ -3,6 +3,11 @@ title: usb3kd.xhci\_commandring
 description: The usb3kd.xhci\_commandring extension displays information about the command ring data structure associated with a USB 3.0 host controller.
 ms.assetid: 3099F3F1-B881-4BBD-90F5-59DC2DFECF3B
 keywords: ["usb3kd.xhci_commandring Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: Get RPC Call Information
 description: Get RPC Call Information
 ms.assetid: bb883bb1-3ab8-4702-896d-4ff8076bad68
 keywords: ["RPC call information", "SCALL (server call)"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Get RPC Call Information

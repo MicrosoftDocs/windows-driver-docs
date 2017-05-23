@@ -3,6 +3,11 @@ title: Analyzing a Capture Stall
 description: Analyzing a Capture Stall
 ms.assetid: 9a88deba-374c-4ccc-8bb8-18e3b4124158
 keywords: ["kernel streaming debugging, blah"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Analyzing a Capture Stall

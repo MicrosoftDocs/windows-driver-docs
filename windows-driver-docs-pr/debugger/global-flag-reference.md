@@ -3,6 +3,11 @@ title: Global Flag Reference
 description: Global Flag Reference
 ms.assetid: 17de082d-a252-46e6-a0ca-9f8d4273c1c4
 keywords: ["GFlags, global flag reference"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Global Flag Reference

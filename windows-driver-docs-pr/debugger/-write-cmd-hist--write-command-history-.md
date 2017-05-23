@@ -3,6 +3,11 @@ title: .write\_cmd\_hist (Write Command History)
 description: The .write\_cmd\_hist command writes the entire history of the Debugger Command window to a file.
 ms.assetid: 7d512f0c-56cd-48e5-b618-d5615113f065
 keywords: [".write_cmd_hist (Write Command History) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

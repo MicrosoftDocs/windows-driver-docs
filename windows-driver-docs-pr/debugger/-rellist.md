@@ -3,6 +3,11 @@ title: rellist
 description: The rellist extension displays a Plug and Play relation list.
 ms.assetid: ecbf7e35-91c0-4ff4-82a4-53a935920915
 keywords: ["rellist Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

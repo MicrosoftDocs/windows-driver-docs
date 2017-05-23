@@ -3,6 +3,11 @@ title: Controlling a KD Connection Server Session
 description: Controlling a KD Connection Server Session
 ms.assetid: d927575f-f408-48d0-81f4-0711a09b0015
 keywords: ["KD connection server, controlling a session"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Controlling a KD Connection Server Session

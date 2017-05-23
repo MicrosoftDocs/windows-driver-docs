@@ -3,6 +3,11 @@ title: .jdinfo (Use JIT\_DEBUG\_INFO)
 description: The .jdinfo command uses a JIT\_DEBUG\_INFO structure as the source of the exception and context for just in time (JIT) debugging.
 ms.assetid: C35A2A04-CF0E-475e-8471-2A8562BB3650
 keywords: ["Use JIT_DEBUG_INFO (.jdinfo) command ----- Appendix", "JIT_DEBUG_INFO ----- Appendix", ".jdinfo (Use JIT_DEBUG_INFO) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

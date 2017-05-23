@@ -3,6 +3,11 @@ title: ks.enumdrvobj
 description: The ks.enumdrvobj extension displays all KSDEVICE structures associated with a given WDM driver object, and lists the filter types and filters currently instantiated on these devices.
 ms.assetid: 8fcb8c83-48b6-402a-8374-6b1f0314837e
 keywords: ["ks.enumdrvobj Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

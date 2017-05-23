@@ -3,6 +3,11 @@ title: Bug Check 0x78 PHASE0\_EXCEPTION
 description: The PHASE0\_EXCEPTION bug check has a value of 0x00000078.This bug check occurs when an unexpected break is encountered during HAL initialization.
 ms.assetid: 2f306296-a7f4-47f8-b077-7acc623a538f
 keywords: ["Bug Check 0x78 PHASE0_EXCEPTION", "PHASE0_EXCEPTION"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

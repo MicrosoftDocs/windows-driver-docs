@@ -3,6 +3,11 @@ title: Checking for Resource Conflicts
 description: Checking for Resource Conflicts
 ms.assetid: c994085c-8610-487f-88a5-f11b4a68ec4a
 keywords: ["Plug and Play (PnP), resource conflicts", "resource conflicts"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Checking for Resource Conflicts

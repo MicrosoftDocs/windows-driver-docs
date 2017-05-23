@@ -3,6 +3,11 @@ title: Controlling Variables Through the Watch Window
 description: Controlling Variables Through the Watch Window
 ms.assetid: bd857442-fbd7-4c00-9743-6077d38ee38e
 keywords: ["Watch window, global variables", "Watch window, local variables"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Controlling Variables Through the Watch Window

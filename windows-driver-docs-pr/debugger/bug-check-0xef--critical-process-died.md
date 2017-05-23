@@ -3,6 +3,11 @@ title: (Developer Content) Bug Check 0xEF CRITICAL\_PROCESS\_DIED
 description: The CRITICAL\_PROCESS\_DIED bug check has a value of 0x000000EF. This indicates that a critical system process died.
 ms.assetid: caa18221-6128-4d77-ab61-ef3c28cfba38
 keywords: ["(Developer Content) Bug Check 0xEF CRITICAL_PROCESS_DIED", "CRITICAL_PROCESS_DIED"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

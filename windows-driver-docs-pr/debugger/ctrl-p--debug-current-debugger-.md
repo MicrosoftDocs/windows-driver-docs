@@ -3,6 +3,11 @@ title: CTRL+P (Debug Current Debugger)
 description: The CTRL+P command is obsolete and has been replaced by CTRL+\\ and CTRL+ALT+\\.
 ms.assetid: c6e72631-ffd7-413b-966f-63e6be1643d9
 keywords: ["CTRL+P (Debug Current Debugger) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

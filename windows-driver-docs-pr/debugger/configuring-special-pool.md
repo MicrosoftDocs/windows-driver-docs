@@ -3,6 +3,11 @@ title: Configuring Special Pool
 description: Configuring Special Pool
 ms.assetid: a6c90e88-8d67-47e8-8862-b7585a5d8bec
 keywords: ["GFlags, configuring kernel special pool", "kernel special pool", "special pool", "pool tags and special pool"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configuring Special Pool

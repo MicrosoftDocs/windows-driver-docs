@@ -3,6 +3,11 @@ title: whea
 description: The whea extension displays top-level Windows Hardware Error Architecture (WHEA) information.
 ms.assetid: 5d621507-74e7-4a43-8600-88dca29e461d
 keywords: ["whea Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

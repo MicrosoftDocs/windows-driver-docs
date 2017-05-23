@@ -3,6 +3,11 @@ title: Process Server Examples
 description: Process Server Examples
 ms.assetid: f87e6ff5-05a4-4dae-8151-913ea469b4ec
 keywords: ["process server, examples"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Process Server Examples

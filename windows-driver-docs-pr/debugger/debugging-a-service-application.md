@@ -3,6 +3,11 @@ title: Debugging a Service Application
 description: Debugging a Service Application
 ms.assetid: 1d1e24d5-8b6b-4ed5-84ad-b73356168b10
 keywords: ["service application debugging", "postmortem debugging, debugging service applications", "services"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging a Service Application

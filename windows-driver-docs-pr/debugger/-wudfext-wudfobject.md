@@ -3,6 +3,11 @@ title: wudfext.wudfobject
 description: The wudfext.wudfobject extension displays information about a WDF object, as well as its parent and child relationships.
 ms.assetid: cb9398fb-24f5-4692-9a08-543bf1317b19
 keywords: ["wudfext.wudfobject Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

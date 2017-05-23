@@ -3,6 +3,11 @@ title: Manifest File Format
 description: Manifest File Format
 ms.assetid: 1b0dc305-878c-4eb2-9e92-f7f7017ae4eb
 keywords: ["LogViewer, manifest, file format"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Manifest File Format

@@ -3,6 +3,11 @@ title: wdfkd.wdfcollection
 description: The wdfkd.wdfcollection extension displays all of the objects that are stored in a WDFCOLLECTION structure.
 ms.assetid: 095bc37d-214a-4f00-9e44-5ce6009d6636
 keywords: ["wdfkd.wdfcollection Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: Determining the ACL of an Object
 description: Determining the ACL of an Object
 ms.assetid: 8dcd4f5a-1415-4a58-bfb1-fd3cbd58cc56
 keywords: ["access control list (ACL)", "ACL (access control list)"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Determining the ACL of an Object

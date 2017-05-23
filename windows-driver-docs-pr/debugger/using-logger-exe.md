@@ -3,6 +3,11 @@ title: Using Logger.exe
 description: Using Logger.exe
 ms.assetid: da2ec999-4529-49dc-855e-a7d3b15583f7
 keywords: ["Logger, logger.exe", "logger.exe", "Logger, stand-alone"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Logger.exe

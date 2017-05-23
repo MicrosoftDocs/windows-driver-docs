@@ -3,6 +3,11 @@ title: Entering Debugger Commands in WinDbg
 description: Entering Debugger Commands in WinDbg using the Debugger Command window 
 ms.assetid: 4d839170-efaf-43d5-a81c-ac3b9c33586c
 keywords: ["debugging information windows, Command window", "debugging information windows, Debugger Command window", "Debugger Command window, WinDbg", "Command window", "Command window, See "Debugger Command window""]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Entering Debugger Commands in WinDbg

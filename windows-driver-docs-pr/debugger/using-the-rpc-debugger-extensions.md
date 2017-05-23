@@ -3,6 +3,11 @@ title: Using the RPC Debugger Extensions
 description: Using the RPC Debugger Extensions
 ms.assetid: 55303052-c5b3-4fe7-96ce-6f41a45a2358
 keywords: ["RPC extensions (rpcexts.dll)", "RPC debugging, extensions (rpcexts.dll)", "rpcexts.dll (RPC extensions)"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the RPC Debugger Extensions

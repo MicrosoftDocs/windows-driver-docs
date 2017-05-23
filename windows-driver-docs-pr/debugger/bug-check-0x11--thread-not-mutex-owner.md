@@ -3,6 +3,11 @@ title: Bug Check 0x11 THREAD\_NOT\_MUTEX\_OWNER
 description: The THREAD\_NOT\_MUTEX\_OWNER bug check has a value of 0x00000011.This bug check appears very infrequently.
 ms.assetid: 9f6fe1db-535f-4983-866a-8a5ea035ac80
 keywords: ["Bug Check 0x11 THREAD_NOT_MUTEX_OWNER", "THREAD_NOT_MUTEX_OWNER"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

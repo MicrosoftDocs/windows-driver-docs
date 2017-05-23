@@ -3,6 +3,11 @@ title: Debugger-Related APIs
 description: Debugger-Related APIs
 ms.assetid: 46a14b0d-8fad-4ab1-9661-d19fa5ed3817
 keywords: ["debugger-related apis", "apis"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugger-Related APIs

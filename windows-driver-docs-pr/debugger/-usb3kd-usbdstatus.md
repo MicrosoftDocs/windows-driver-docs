@@ -3,6 +3,11 @@ title: usb3kd.usbdstatus
 description: The usb3kd.usbdstatus extension displays the name of a USBD status code.
 ms.assetid: B79B4E6E-7281-4BB0-9708-23F1462171BB
 keywords: ["usb3kd.usbdstatus Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

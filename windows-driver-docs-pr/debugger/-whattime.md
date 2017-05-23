@@ -3,6 +3,11 @@ title: whattime
 description: The whattime extension converts a tick count into a standard time value.
 ms.assetid: c63e8bad-3a87-4209-b9f0-b6c433c294b2
 keywords: ["tick count", "whattime Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

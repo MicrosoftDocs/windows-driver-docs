@@ -3,6 +3,11 @@ title: CDB and WinDbg
 description: CDB and WinDbg
 ms.assetid: 840dbe3c-510c-4064-ae6c-bb7525841621
 keywords: ["dump file, CDB", "dump file, WinDbg"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CDB and WinDbg

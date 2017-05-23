@@ -3,6 +3,11 @@ title: sysinfo
 description: The sysinfo extension reads and displays specified SMBIOS, Advanced Configuration and Power Interface (ACPI), and CPU information from a dump file or live system.
 ms.assetid: 1637fcc8-54ff-46a4-94f4-0b2df38507d1
 keywords: ["sysinfo Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

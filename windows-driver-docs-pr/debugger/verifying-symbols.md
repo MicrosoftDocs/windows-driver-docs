@@ -3,6 +3,11 @@ title: Verifying Symbols
 description: Verifying Symbols
 ms.assetid: 61b4fcce-960b-4091-b575-4dd53c39cff2
 keywords: ["symbols, verifying"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Verifying Symbols

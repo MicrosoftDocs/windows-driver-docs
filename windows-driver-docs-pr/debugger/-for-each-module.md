@@ -3,6 +3,11 @@ title: for\_each\_module
 description: The for\_each\_module extension executes a debugger command one time for each loaded module.
 ms.assetid: 607947d8-be06-4012-8901-13bf27e382b1
 keywords: ["for_each_module Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

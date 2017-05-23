@@ -3,6 +3,11 @@ title: File Save Workspace As
 description: File Save Workspace As
 ms.assetid: 5b1da6f0-8a72-4aa9-a03b-542e14523fa4
 keywords: ["File Save Workspace As", "workspaces, File Save Workspace As"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # File | Save Workspace As

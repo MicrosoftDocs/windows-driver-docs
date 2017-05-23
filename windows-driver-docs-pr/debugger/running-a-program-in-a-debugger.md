@@ -3,6 +3,11 @@ title: Running a Program in a Debugger
 description: Running a Program in a Debugger
 ms.assetid: e34b9560-33a2-47ed-83eb-84712b65a7f0
 keywords: ["GFlags, running a program in a debugger"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Running a Program in a Debugger

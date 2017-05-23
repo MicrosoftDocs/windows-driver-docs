@@ -3,6 +3,11 @@ title: slist
 description: The slist extension displays a singly-linked list (SList).
 ms.assetid: 2ce6e941-eaa7-4850-9dd9-f4546659dbca
 keywords: ["SList (singly-linked list)", "slist Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: sysptes
 description: The sysptes extension displays a formatted view of the system page table entries (PTEs).
 ms.assetid: cfb40732-6658-43aa-8b83-0ad4b55194ba
 keywords: ["sysptes Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

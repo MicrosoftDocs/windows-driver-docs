@@ -3,6 +3,11 @@ title: ks.objhdr
 description: The ks.objhdr extension displays the kernel streaming object header associated with the specified file object.
 ms.assetid: 105b1c03-fc89-4c0f-91d0-42e88f07c71c
 keywords: ["ks.objhdr Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

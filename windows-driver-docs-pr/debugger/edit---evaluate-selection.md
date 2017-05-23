@@ -3,6 +3,11 @@ title: Edit Evaluate Selection
 description: Edit Evaluate Selection
 ms.assetid: fa374669-509a-4b91-b5a0-79322c006910
 keywords: ["Edit Evaluate Selection"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Edit | Evaluate Selection

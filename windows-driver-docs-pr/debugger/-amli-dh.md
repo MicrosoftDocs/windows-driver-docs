@@ -3,6 +3,11 @@ title: amli dh
 description: The amli dh extension displays the AML interpreter's internal heap block.
 ms.assetid: 52027a44-3308-4d9e-be66-8b45cdd88b3b
 keywords: ["amli dh Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

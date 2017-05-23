@@ -3,6 +3,11 @@ title: Controlling Exceptions and Events
 description: Controlling Exceptions and Events
 ms.assetid: cc8067f3-07de-4ee2-b028-94f9ac088891
 keywords: ["exceptions", "exceptions, overview", "exceptions, handling", "events", "events, overview", "events, handling"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Controlling Exceptions and Events

@@ -3,6 +3,11 @@ title: (Developer Content) Bug Check 0x19 BAD\_POOL\_HEADER
 description: The BAD\_POOL\_HEADER bug check has a value of 0x00000019. This indicates that a pool header is corrupt.
 ms.assetid: a3e84703-d778-426b-80e6-e143f5d8f869
 keywords: ["(Developer Content) Bug Check 0x19 BAD_POOL_HEADER", "BAD_POOL_HEADER"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: Bug Check 0x90 PP1\_INITIALIZATION\_FAILED
 description: The PP1\_INITIALIZATION\_FAILED bug check has a value of 0x00000090. This bug check indicates that the Plug and Play (PnP) manager could not be initialized.
 ms.assetid: 8dd46d24-0174-4310-953e-7b451ae34c71
 keywords: ["Bug Check 0x90 PP1_INITIALIZATION_FAILED", "PP1_INITIALIZATION_FAILED"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: Bug Check 0x149 REFS\_FILE\_SYSTEM
 description: The REFS\_FILE\_SYSTEM bug check has a value of 0x00000149. This indicates that a file system error has occurred.
 ms.assetid: 899E89E7-46CD-4143-B1DC-7959F01643CF
 keywords: ["Bug Check 0x149 REFS_FILE_SYSTEM", "REFS_FILE_SYSTEM"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

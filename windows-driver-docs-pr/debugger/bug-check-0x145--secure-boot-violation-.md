@@ -3,6 +3,11 @@ title: Bug Check 0x145 SECURE\_BOOT\_VIOLATION
 description: The SECURE\_BOOT\_VIOLATION bug check has a value of 0x00000145. This indicates that the secure Boot policy enforcement could not be started.
 ms.assetid: C877C655-D94D-45B5-82DB-1361F0B020D2
 keywords: ["Bug Check 0x145 SECURE_BOOT_VIOLATION", "SECURE_BOOT_VIOLATION"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

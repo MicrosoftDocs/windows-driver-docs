@@ -3,6 +3,11 @@ title: usbkd.isthisdumpasyncissue
 description: This command checks a 0xFE crash dump file, to see whether the likely cause of the crash was an Interrupt on Async Advance issue associated with a USB EHCI host controller.
 ms.assetid: 1729E52F-F943-4062-94AC-7890C2E25EBF
 keywords: ["usbkd.isthisdumpasyncissue Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

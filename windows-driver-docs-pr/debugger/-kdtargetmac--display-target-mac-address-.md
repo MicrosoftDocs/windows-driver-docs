@@ -3,6 +3,11 @@ title: .kdtargetmac (Display Target MAC Address)
 description: Display Target MAC Address.
 ms.assetid: 95042682-BD92-44B0-AAA8-AB8661393230
 keywords: [".kdtargetmac (Display Target MAC Address) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

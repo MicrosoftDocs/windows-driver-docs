@@ -3,6 +3,11 @@ title: Bug Check 0x12B FAULTY\_HARDWARE\_CORRUPTED\_PAGE
 description: The FAULTY\_HARDWARE\_CORRUPTED\_PAGE bug check has a value of 0x00000128. This bug check indicates that a single-bit error was found in this page. This is a hardware memory error.
 ms.assetid: caa57d76-946f-4394-bfcf-1dbf3813a55b
 keywords: ["Bug Check 0x12B FAULTY_HARDWARE_CORRUPTED_PAGE", "FAULTY_HARDWARE_CORRUPTED_PAGE"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

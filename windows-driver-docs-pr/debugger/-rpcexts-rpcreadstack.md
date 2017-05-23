@@ -3,6 +3,11 @@ title: rpcexts.rpcreadstack
 description: The rpcexts.rpcreadstack extension reads an RPC client-side stack and retrieves the call information.
 ms.assetid: e0988ac9-dc6e-4a4f-9096-6af2e70dcd42
 keywords: ["rpcexts.rpcreadstack Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

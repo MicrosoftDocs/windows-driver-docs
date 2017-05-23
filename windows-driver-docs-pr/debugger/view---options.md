@@ -3,6 +3,11 @@ title: View Options
 description: View Options
 ms.assetid: 2579c586-f1f3-4b03-a47f-22be98fe6c51
 keywords: ["View Options"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # View | Options

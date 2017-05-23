@@ -3,6 +3,11 @@ title: .srcnoisy (Noisy Source Loading)
 description: The .srcnoisy command controls the verbosity level for source file loading.
 ms.assetid: c57e0d0a-7903-455a-9a92-fab75f10ca80
 keywords: [".srcnoisy (Noisy Source Loading) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

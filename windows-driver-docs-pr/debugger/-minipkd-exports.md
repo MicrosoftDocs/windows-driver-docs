@@ -3,6 +3,11 @@ title: minipkd.exports
 description: The minipkd.exports extension displays the addresses of the miniport exports for the specified adapter.
 ms.assetid: 7d92539c-26b5-4cab-84df-b643612a98d0
 keywords: ["minipkd.exports Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

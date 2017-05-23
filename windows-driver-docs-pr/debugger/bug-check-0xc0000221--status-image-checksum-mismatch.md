@@ -3,6 +3,11 @@ title: Bug Check 0xC0000221 STATUS\_IMAGE\_CHECKSUM\_MISMATCH
 description: The STATUS\_IMAGE\_CHECKSUM\_MISMATCH bug check has a value of 0xC0000221. This indicates that a driver or a system DLL has been corrupted.
 ms.assetid: d0baccb0-51a2-45c7-ae08-507217d0ac96
 keywords: ["Bug Check 0xC0000221 STATUS_IMAGE_CHECKSUM_MISMATCH", "STATUS_IMAGE_CHECKSUM_MISMATCH"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

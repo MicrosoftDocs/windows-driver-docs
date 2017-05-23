@@ -3,6 +3,11 @@ title: Converting Virtual Addresses to Physical Addresses
 description: Converting Virtual Addresses to Physical Addresses
 ms.assetid: 5b3d19df-09cc-4131-ae64-5ce64d986df3
 keywords: ["virtual address", "virtual address, converting to physical address", "physical address", "physical address, converting from virtual address", "addresses", "addresses, converting virtual to physical", "memory, virtual addresses", "memory, physical addresses"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Converting Virtual Addresses to Physical Addresses

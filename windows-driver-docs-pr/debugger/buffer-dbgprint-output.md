@@ -3,6 +3,11 @@ title: Buffer DbgPrint Output
 description: Buffer DbgPrint Output
 ms.assetid: af97c484-3a37-4c86-8828-12a0ea1c8c0e
 keywords: ["Buffer DbgPrint Output (global flag)"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Buffer DbgPrint Output

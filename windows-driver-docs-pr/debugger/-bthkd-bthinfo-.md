@@ -3,6 +3,11 @@ title: bthkd.bthinfo
 description: The bthkd.bthinfo command displays details about the BTHPORT FDO. This command is a good starting point for Bluetooth investigations.
 ms.assetid: 6D0294FA-8A37-4590-A3B0-83E6950D0950
 keywords: ["bthkd.bthinfo Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

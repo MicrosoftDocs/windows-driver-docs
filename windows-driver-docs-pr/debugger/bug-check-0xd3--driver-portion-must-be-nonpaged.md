@@ -3,6 +3,11 @@ title: Bug Check 0xD3 DRIVER\_PORTION\_MUST\_BE\_NONPAGED
 description: The DRIVER\_PORTION\_MUST\_BE\_NONPAGED bug check has a value of 0x000000D3. This indicates that the system attempted to access pageable memory at a process IRQL that was too high.
 ms.assetid: 8b33dd20-9faa-4c02-96b7-89f55e69aeec
 keywords: ["Bug Check 0xD3 DRIVER_PORTION_MUST_BE_NONPAGED", "DRIVER_PORTION_MUST_BE_NONPAGED"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

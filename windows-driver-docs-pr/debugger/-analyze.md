@@ -3,6 +3,11 @@ title: analyze
 description: The analyze extension displays information about the current exception or bug check.
 ms.assetid: dec760fb-0af6-4504-9855-8fe63c1c9783
 keywords: ["analyze Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: Bug Check 0x9B UDFS\_FILE\_SYSTEM
 description: The UDFS\_FILE\_SYSTEM bug check has a value of 0x0000009B. This bug check indicates that a problem occurred in the UDF file system.
 ms.assetid: cf20429d-6007-47e7-9faa-db7e1489e96b
 keywords: ["Bug Check 0x9B UDFS_FILE_SYSTEM", "UDFS_FILE_SYSTEM"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

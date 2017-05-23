@@ -3,6 +3,11 @@ title: Enabling NDIS Debug Tracing By Setting Registry Values
 description: Enabling NDIS Debug Tracing By Setting Registry Values
 ms.assetid: ae01f546-0636-4e67-bfc7-229c3cc24b27
 keywords: ["NDIS debugging, debug tracing, setting registry values"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling NDIS Debug Tracing By Setting Registry Values

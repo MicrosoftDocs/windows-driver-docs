@@ -3,6 +3,11 @@ title: Remote Debugging Through Remote.exe
 description: Remote Debugging Through Remote.exe
 ms.assetid: 138cd409-bf89-498a-8c7c-74fca7c227d5
 keywords: ["remote debugging through remote.exe", "remote debugging through remote.exe, overview", "Remote.exe", "Remote.exe, overview", "Remote.exe, Remote.exe Client", "Remote.exe, Remote.exe Server"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Remote Debugging Through Remote.exe

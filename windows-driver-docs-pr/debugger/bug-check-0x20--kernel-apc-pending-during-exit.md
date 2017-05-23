@@ -3,6 +3,11 @@ title: Bug Check 0x20 KERNEL\_APC\_PENDING\_DURING\_EXIT
 description: The KERNEL\_APC\_PENDING\_DURING\_EXIT bug check has a value of 0x00000020. This indicates that an asynchronous procedure call (APC) was still pending when a thread exited.
 ms.assetid: 0ef7c2b2-0864-4206-b786-bac9df9cedc7
 keywords: ["Bug Check 0x20 KERNEL_APC_PENDING_DURING_EXIT", "KERNEL_APC_PENDING_DURING_EXIT"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

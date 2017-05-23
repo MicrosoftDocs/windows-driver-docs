@@ -3,6 +3,11 @@ title: Bug Check 0xBD INVALID\_HIBERNATED\_STATE
 description: The INVALID\_HIBERNATED\_STATE bug check has a value of 0x000000BD.
 ms.assetid: DB386A20-EE6F-4E2B-8FFD-51CCE0A8AEAC
 keywords: ["Bug Check 0xBD INVALID_HIBERNATED_STATE", "INVALID_HIBERNATED_STATE"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

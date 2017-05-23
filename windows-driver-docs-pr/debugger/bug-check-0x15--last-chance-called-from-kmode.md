@@ -3,6 +3,11 @@ title: Bug Check 0x15 LAST\_CHANCE\_CALLED\_FROM\_KMODE
 description: The LAST\_CHANCE\_CALLED\_FROM\_KMODE bug check has a value of 0x00000015.This bug check appears very infrequently.
 ms.assetid: e0839e78-ba14-484c-9570-012a11896ad0
 keywords: ["Bug Check 0x15 LAST_CHANCE_CALLED_FROM_KMODE", "LAST_CHANCE_CALLED_FROM_KMODE"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

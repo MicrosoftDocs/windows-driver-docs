@@ -3,6 +3,11 @@ title: wudfext.wudfdevicequeues
 description: The wudfext.wudfdevicequeues extension displays information about all the I/O queues for a device.
 ms.assetid: 985e6d93-018f-436a-a75c-088251398539
 keywords: ["wudfext.wudfdevicequeues Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

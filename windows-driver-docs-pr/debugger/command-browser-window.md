@@ -3,6 +3,11 @@ title: Using the Command Browser Window in WinDbg
 description: Using the Command Browser Window in WinDbg
 ms.assetid: b895f463-38ec-451a-8c0a-0deb8650a904
 keywords: ["debugging information windows, command browser window", "command browser window", "Debugger Command window, command browser window"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the Command Browser Window in WinDbg

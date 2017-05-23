@@ -4,6 +4,11 @@ description: Glossary page - S
 Robots: noindex, nofollow
 ms.assetid: 94cbf33b-e975-49eb-a266-774798955a48
 keywords: ["suspended thread", "suspended process"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # S

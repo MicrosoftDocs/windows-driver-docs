@@ -3,6 +3,11 @@ title: dma
 description: The dma extension displays information about the Direct Memory Access (DMA) subsystem, and the DMA Verifier option of Driver Verifier.
 ms.assetid: 4ccf679f-5804-4644-935a-18ff8711ae9a
 keywords: ["DMA Verification (Driver Verifier)", "dma Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

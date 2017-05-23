@@ -3,6 +3,11 @@ title: ln (List Nearest Symbols)
 description: The ln command displays the symbols at or near the given address.
 ms.assetid: ff01ace7-398a-4e32-9d58-00873eca3201
 keywords: ["ln (List Nearest Symbols) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: gentable
 description: The gentable extension displays an RTL\_GENERIC\_TABLE.
 ms.assetid: acf85ff8-9004-4c8e-b67f-20202c577aab
 keywords: ["gentable Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

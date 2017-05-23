@@ -3,6 +3,11 @@ title: Attaching to a Target Computer Running Hyper-V
 description: Attaching to a Target Computer Running Hyper-V
 ms.assetid: 379ebaf6-0599-41df-a57a-03a133ea0b02
 keywords: ["Hyper-V debugging", "Windows hypervisor debugging", "hypervisor debugging", "root partition", "parent partition", "guest partition", "child partition"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Attaching to a Target Computer Running Hyper-V

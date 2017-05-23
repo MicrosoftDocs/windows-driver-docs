@@ -3,6 +3,11 @@ title: Debug Step Into
 description: Debug Step Into
 ms.assetid: 809a14f8-7280-46d3-b113-7b1808c13d0f
 keywords: ["Debug Step Into", "controlling the target, Debug Step Into"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debug | Step Into

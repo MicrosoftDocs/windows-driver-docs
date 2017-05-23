@@ -3,6 +3,11 @@ title: Analyzing a User-Mode Dump File with CDB
 description: Analyzing a User-Mode Dump File with CDB
 ms.assetid: 992e9e5b-a2de-4644-b1bb-1569a18081df
 keywords: ["CDB, analyzing a dump file", "CAB file containing a dump file, analyzing user-mode dump file with CDB"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Analyzing a User-Mode Dump File with CDB

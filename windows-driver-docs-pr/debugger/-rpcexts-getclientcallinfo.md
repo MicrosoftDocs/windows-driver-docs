@@ -3,6 +3,11 @@ title: rpcexts.getclientcallinfo
 description: The rpcexts.getclientcallinfo extension searches the system's RPC state information for client call (CCALL) information.
 ms.assetid: 1b838238-63b3-4618-bc59-6b4d74274b9c
 keywords: ["rpcexts.getclientcallinfo Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

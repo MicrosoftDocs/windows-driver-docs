@@ -3,6 +3,11 @@ title: Bug Check 0x47 REF\_UNKNOWN\_LOGON\_SESSION
 description: The REF\_UNKNOWN\_LOGON\_SESSION bug check has a value of 0x00000047.This bug check appears very infrequently.
 ms.assetid: 9d3ddc84-f17d-4760-b1e1-7153048a77ea
 keywords: ["Bug Check 0x47 REF_UNKNOWN_LOGON_SESSION", "REF_UNKNOWN_LOGON_SESSION"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: Stop on hung GUI
 description: Stop on hung GUI
 ms.assetid: f1c1a045-e5ca-4274-9b47-b64d389b5fe5
 keywords: ["Stop on hung GUI (global flag)"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stop on hung GUI

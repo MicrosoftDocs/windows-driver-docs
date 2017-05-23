@@ -3,6 +3,11 @@ title: Interacting with the Engine
 description: Interacting with the Engine
 ms.assetid: 80f5320f-ed34-4839-a16e-b3ff5d8edbfe
 keywords: ["Debugger Engine API, use"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Interacting with the Engine

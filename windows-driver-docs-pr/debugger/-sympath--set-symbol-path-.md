@@ -3,6 +3,11 @@ title: .sympath (Set Symbol Path)
 description: The .sympath command sets or alters the symbol path. The symbol path specifies locations where the debugger looks for symbol files.
 ms.assetid: 32146871-a59f-4c93-b886-137c5ecf5c99
 keywords: ["Set Symbol Path (.sympath) command", "symbol files and paths, Set Symbol Path (.sympath) command", ".sympath (Set Symbol Path) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

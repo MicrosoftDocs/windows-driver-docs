@@ -3,6 +3,11 @@ title: Edit Copy
 description: Edit Copy
 ms.assetid: 62e4ea69-8d8b-4a99-b0c9-314cda7e20bc
 keywords: ["Edit Copy", "text, Edit Copy"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Edit | Copy

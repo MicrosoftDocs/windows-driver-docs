@@ -3,6 +3,11 @@ title: Bug Check 0x79 MISMATCHED\_HAL
 description: The MISMATCHED\_HAL bug check has a value of 0x00000079 that indicates that the HAL revision level or configuration does not match that of the kernel or the computer.
 ms.assetid: 2d063c2a-c647-4436-b005-04f71a4d2b66
 keywords: ["Bug Check 0x79 MISMATCHED_HAL", "MISMATCHED_HAL"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

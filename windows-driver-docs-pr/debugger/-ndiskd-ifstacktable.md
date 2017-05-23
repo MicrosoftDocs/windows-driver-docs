@@ -3,6 +3,11 @@ title: ndiskd.ifstacktable
 description: The ndiskd.ifstacktable extension displays the network interface stack table (ifStackTable).
 ms.assetid: 8166C088-9366-49C4-9C3A-0089807352A9
 keywords: ["ndiskd.ifstacktable Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

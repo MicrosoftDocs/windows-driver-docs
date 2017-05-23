@@ -3,6 +3,11 @@ title: ~ (Thread Status)
 description: The tilde (~) command displays status for the specified thread or for all threads in the current process.
 ms.assetid: c27e4c72-86da-459d-833f-d27d26bdea0e
 keywords: ["~ (Thread Status) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

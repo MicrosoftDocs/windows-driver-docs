@@ -3,6 +3,11 @@ title: Bug Check 0x147 ABNORMAL\_RESET\_DETECTED
 description: The ABNORMAL\_RESET\_DETECTED bug check has a value of 0x00000147. This indicates that Windows underwent an abnormal reset.
 ms.assetid: 83D537CD-AEDA-466F-A150-411131DE54B0
 keywords: ["Bug Check 0x147 ABNORMAL_RESET_DETECTED", "ABNORMAL_RESET_DETECTED"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

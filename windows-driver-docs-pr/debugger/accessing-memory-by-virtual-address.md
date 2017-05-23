@@ -3,6 +3,11 @@ title: Accessing Memory by Virtual Address
 description: Accessing Memory by Virtual Address
 ms.assetid: 13e97cba-c4a4-4240-99b3-88a7537b0ca8
 keywords: ["virtual address, accessing memory"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing Memory by Virtual Address

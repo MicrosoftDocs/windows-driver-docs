@@ -3,6 +3,11 @@ title: pt (Step to Next Return)
 description: The pt command executes the program until a return instruction is reached.
 ms.assetid: f4388953-4cb2-4df5-af8b-150e50ce765b
 keywords: ["pt (Step to Next Return) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: Debugger Command Program Examples
 description: Debugger Command Program Examples
 ms.assetid: da756906-6243-4cb9-b4e5-5b0b4540533d
 keywords: ["debugger command program, examples"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugger Command Program Examples

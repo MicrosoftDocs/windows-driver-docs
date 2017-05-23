@@ -3,6 +3,11 @@ title: Event Filters
 description: Event Filters
 ms.assetid: 91f2a483-8971-42de-a6c5-cc25409279a5
 keywords: ["Debugger Engine API, event filters"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Event Filters

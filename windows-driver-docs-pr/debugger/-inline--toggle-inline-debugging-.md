@@ -3,6 +3,11 @@ title: .inline (Toggle Inline Function Debugging)
 description: The .inline command enables or disables inline function debugging.
 ms.assetid: 7B6CB75D-E318-4832-935F-239531B8DC66
 keywords: [".inline (Toggle Inline Function Debugging) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

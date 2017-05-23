@@ -3,6 +3,11 @@ title: usbkd.ehci\_info\_from\_fdo
 description: The usbkd.ehci\_info\_from\_fdo command displays information about a USB host controller.
 ms.assetid: C7026EF3-F58D-45EB-83D5-8B4A3E661759
 keywords: ["usbkd.ehci_info_from_fdo Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

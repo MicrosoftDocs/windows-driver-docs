@@ -3,6 +3,11 @@ title: .nvunloadall (NatVis Unload All)
 description: The .nvunloadall command unloads all of the NatVis files from the debugger environment.
 ms.assetid: E018D09A-1B52-4D9E-944E-7F61841EAE1A
 keywords: [".nvunloadall (NatVis Unload All) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

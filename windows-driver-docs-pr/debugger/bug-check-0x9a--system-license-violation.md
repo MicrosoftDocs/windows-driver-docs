@@ -3,6 +3,11 @@ title: Bug Check 0x9A SYSTEM\_LICENSE\_VIOLATION
 description: The SYSTEM\_LICENSE\_VIOLATION bug check has a value of 0x0000009A. This bug check indicates that the software license agreement has been violated.
 ms.assetid: 742d864c-46f8-4d7f-8617-061c75fe833a
 keywords: ["Bug Check 0x9A SYSTEM_LICENSE_VIOLATION", "SYSTEM_LICENSE_VIOLATION"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

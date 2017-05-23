@@ -3,6 +3,11 @@ title: KDbgCtrl Command-Line Options
 description: The KDbgCtrl command line uses the following syntax
 ms.assetid: 0367a09d-c475-4aeb-8f88-47d51ec7e9d5
 keywords: ["KDbgCtrl Command-Line Options Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: CTRL+F (Break to KD)
 description: The CTRL+F key cancels commands or breaks into the debugger.
 ms.assetid: 45bb7eaf-cb79-4fb4-a01d-373bfb1957c3
 keywords: ["CTRL+F (Break to KD) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

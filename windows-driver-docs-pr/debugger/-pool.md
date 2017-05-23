@@ -3,6 +3,11 @@ title: pool extension command
 description: The pool extension displays information about a specific pool allocation or about the entire system-wide pool.
 ms.assetid: 1c224e0c-d50c-487e-8238-9be054368ac2
 keywords: ["pool", "pool, See "memory"", "pooltag.txt file", "pool tag", "memory, pool tag", "pool Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

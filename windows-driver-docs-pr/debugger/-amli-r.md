@@ -3,6 +3,11 @@ title: amli r
 description: The amli r extension displays information about the current context or the specified context.
 ms.assetid: 1a8977ed-a420-4f68-8580-8e7446075283
 keywords: ["amli r Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

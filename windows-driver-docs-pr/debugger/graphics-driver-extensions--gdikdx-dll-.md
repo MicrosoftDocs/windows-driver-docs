@@ -3,6 +3,11 @@ title: Graphics Driver Extensions (Gdikdx.dll)
 description: Graphics Driver Extensions (Gdikdx.dll)
 ms.assetid: f8fa570c-e225-4b7d-a3db-a04d5ab04882
 keywords: ["graphics driver extensions (gdikdx.dll)", "gdikdx.dll (graphics driver extensions)", "extensions, graphics driver"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Graphics Driver Extensions (Gdikdx.dll)

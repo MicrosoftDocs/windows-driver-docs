@@ -3,6 +3,11 @@ title: Bug Check 0xA1 PCI\_BUS\_DRIVER\_INTERNAL
 description: The PCI\_BUS\_DRIVER\_INTERNAL bug check has a value of 0x000000A1. This bug check indicates that the PCI Bus driver detected inconsistency problems in its internal structures and could not continue.
 ms.assetid: ec1981a7-eb26-4d17-97d6-55a33abb0e98
 keywords: ["Bug Check 0xA1 PCI_BUS_DRIVER_INTERNAL", "PCI_BUS_DRIVER_INTERNAL"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

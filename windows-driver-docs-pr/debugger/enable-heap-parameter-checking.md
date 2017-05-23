@@ -3,6 +3,11 @@ title: Enable heap parameter checking
 description: Enable heap parameter checking
 ms.assetid: e9c7a2e3-8e43-45e3-948b-6154da1359e2
 keywords: ["Enable heap parameter checking (global flag)"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enable heap parameter checking

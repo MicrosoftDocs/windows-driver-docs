@@ -3,6 +3,11 @@ title: Edit Display Selected Type
 description: Edit Display Selected Type
 ms.assetid: 45073276-df6c-47d4-b614-acd4437f5b73
 keywords: ["Edit Display Selected Type", "data types, Edit Display Selected Type"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Edit | Display Selected Type

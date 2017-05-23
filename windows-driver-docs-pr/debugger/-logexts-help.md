@@ -3,6 +3,11 @@ title: logexts.help
 description: The logexts.help extension displays a Help text in the Command Prompt window showing all Logexts.dll extension commands.
 ms.assetid: 6b3f8aed-b0c5-448d-b1f8-41cfaf357ebb
 keywords: ["logexts.help Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

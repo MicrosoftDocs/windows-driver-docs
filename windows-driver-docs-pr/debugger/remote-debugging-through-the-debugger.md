@@ -3,6 +3,11 @@ title: Remote Debugging Through the Debugger
 description: Remote Debugging Through the Debugger
 ms.assetid: a9f6f355-e684-471f-a45c-b2235a5372b1
 keywords: ["remote debugging through the debugger", "remote debugging through the debugger, overview", "debugging client", "debugging server", "TCP (remote debugging protocol)", "COM port (remote debugging protocol)", "modem (remote debugging protocol)", "named pipe (remote debuggi"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Remote Debugging Through the Debugger

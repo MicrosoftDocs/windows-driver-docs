@@ -3,6 +3,11 @@ title: Bug Check 0x38 SERIAL\_DRIVER\_INTERNAL
 description: The SERIAL\_DRIVER\_INTERNAL bug check has a value of 0x00000038.This bug check appears very infrequently.
 ms.assetid: 27a11ade-0938-4153-b5b5-4b1a3edbb5b7
 keywords: ["Bug Check 0x38 SERIAL_DRIVER_INTERNAL", "SERIAL_DRIVER_INTERNAL"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

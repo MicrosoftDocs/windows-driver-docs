@@ -3,6 +3,11 @@ title: Meta-Commands
 description: This section of the reference discusses the various debugger meta-commands that can be used in CDB, KD, and WinDbg.
 ms.assetid: 8aa960d4-834c-46f5-aa9f-b528402ad52c
 keywords: ["meta-commands ("." commands), reference"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Meta-Commands

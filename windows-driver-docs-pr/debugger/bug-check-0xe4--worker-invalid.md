@@ -3,6 +3,11 @@ title: Bug Check 0xE4 WORKER\_INVALID
 description: The WORKER\_INVALID bug check has a value of 0x000000E4. This typically indicates that memory that should not contain an executive work item does contain such an item.
 ms.assetid: 93951b77-bedf-4781-9c2b-e8df2aa8cb1c
 keywords: ["Bug Check 0xE4 WORKER_INVALID", "WORKER_INVALID"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: storagekd.storunit
 description: The storagekd.storunit extension displays information about the specified Storport logical unit.
 ms.assetid: 73A2632C-962E-4075-97B9-5D7D843E9D0F
 keywords: ["storagekd.storunit Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

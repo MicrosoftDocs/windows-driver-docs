@@ -3,6 +3,11 @@ title: tp
 description: The tp extension displays thread pool information.
 ms.assetid: 33b22e04-b781-4890-8142-c2624fdc4055
 keywords: ["thread pool", "tp Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

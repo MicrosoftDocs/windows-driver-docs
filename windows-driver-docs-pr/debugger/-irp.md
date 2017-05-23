@@ -3,6 +3,11 @@ title: irp extension command
 description: The irp extension displays information about an I/O request packet (IRP).
 ms.assetid: 2260255d-813b-4b89-8dbe-6ce7e5596ccf
 keywords: ["IRP", "IRP, See "I/O Request Packet (IRP)"", "irp Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

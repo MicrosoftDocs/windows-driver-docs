@@ -3,6 +3,11 @@ title: Using Themes Provided in Debugging Tools for Windows
 description: Using Themes Provided in Debugging Tools for Windows
 ms.assetid: d3571a7a-cdab-4a17-b4e0-ffb1690de642
 keywords: ["themes, provided"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Themes Provided in Debugging Tools for Windows

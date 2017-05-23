@@ -3,6 +3,11 @@ title: Debug Source Mode
 description: Debug Source Mode
 ms.assetid: 51fd8b6c-9bd9-42ed-a5fa-0098b3f0fea2
 keywords: ["Debug Source Mode", "source debugging, Debug Source Mode", "assembly debugging, Debug Source Mode"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debug | Source Mode

@@ -3,6 +3,11 @@ title: for\_each\_function
 description: The for\_each\_function extension executes a debugger command for each function, in a specified module, whose name matches a specified pattern.
 ms.assetid: D51C3562-3D49-4528-A208-71A8756EBC8E
 keywords: ["for_each_function Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

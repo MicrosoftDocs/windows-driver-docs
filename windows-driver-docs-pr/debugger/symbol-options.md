@@ -3,6 +3,11 @@ title: Symbol Options
 description: Symbol Options
 ms.assetid: 4a501ea3-431c-4c11-8826-154eb8799a64
 keywords: ["symbols, setting symbol options", "symbols, SYMOPT_XXXX", "noisy symbol loading", "CV record"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Symbol Options

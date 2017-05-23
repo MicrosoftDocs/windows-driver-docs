@@ -3,6 +3,11 @@ title: Activating Secure Mode
 description: Activating Secure Mode
 ms.assetid: bb7cd081-f032-4af4-bb4d-efa96917088b
 keywords: ["Secure Mode, how to activate"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Activating Secure Mode

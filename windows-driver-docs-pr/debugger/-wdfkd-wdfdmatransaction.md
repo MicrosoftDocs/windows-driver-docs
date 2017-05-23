@@ -3,6 +3,11 @@ title: wdfkd.wdfdmatransaction
 description: The wdfkd.wdfdmatransaction extension displays information about a WDF direct memory access (DMA) transaction object.
 ms.assetid: 6d80152b-6e64-4fef-b57e-3ed3f486ae9a
 keywords: ["wdfkd.wdfdmatransaction Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

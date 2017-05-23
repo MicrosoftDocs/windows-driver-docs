@@ -3,6 +3,11 @@ title: Microsoft public symbol server
 description: The Microsoft symbol server makes Windows debugger symbols publicly available.
 ms.assetid: b0d38104-c386-4d20-8d9c-7701347c1643
 keywords: ["SymSrv, public Microsoft symbols", "symbol servers, public Microsoft symbols", "public symbol store", "Microsoft symbol store"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Microsoft public symbol server

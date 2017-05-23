@@ -3,6 +3,11 @@ title: Using WdbgExts Extension Callbacks
 description: Using WdbgExts Extension Callbacks
 ms.assetid: b9a2f30a-b09c-43eb-b105-a6b0ffdb1342
 keywords: ["WdbgExts extensions, callbacks, using"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using WdbgExts Extension Callbacks

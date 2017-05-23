@@ -3,6 +3,11 @@ title: usbkd.usbhubmddevext
 description: The usbkd.usbhubmddevext command displays a usbhub \_DEVICE\_EXTENSION\_HUB structure if one is present in a crash dump that was generated as a result of a Bug Check 0xFE.
 ms.assetid: 2A3C1AD4-0537-43B1-BD87-734047D242B9
 keywords: ["usbkd.usbhubmddevext Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

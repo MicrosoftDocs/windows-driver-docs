@@ -3,6 +3,11 @@ title: Creating a New Dock
 description: Creating a New Dock
 ms.assetid: 99cba4f9-4025-4684-920b-43c7147b5385
 keywords: ["docking windows, creating a new dock", "window docking, creating a new dock"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a New Dock

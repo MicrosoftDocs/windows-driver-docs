@@ -3,6 +3,11 @@ title: File Connect to Remote Stub
 description: File Connect to Remote Stub
 ms.assetid: 7357db85-babe-4729-9a20-76ba284f5bf3
 keywords: ["File Connect to Remote Stub"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # File | Connect to Remote Stub

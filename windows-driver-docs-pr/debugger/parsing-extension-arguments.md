@@ -3,6 +3,11 @@ title: Parsing Extension Arguments
 description: Parsing Extension Arguments
 ms.assetid: 3c75fb75-50d0-48e4-abf4-e4dba9a080f9
 keywords: ["EngExtCpp extensions, parsing arguments"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Parsing Extension Arguments

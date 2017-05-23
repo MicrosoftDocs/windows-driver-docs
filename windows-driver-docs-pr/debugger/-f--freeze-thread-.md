@@ -3,6 +3,11 @@ title: ~f (Freeze Thread)
 description: The ~f command freezes the given thread, causing it to stop and wait until it is unfrozen.Do not confuse this command with the f (Fill Memory) command.
 ms.assetid: 86fbbcee-c752-4425-a330-4d95a4069b0d
 keywords: ["~f (Freeze Thread) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

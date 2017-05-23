@@ -3,6 +3,11 @@ title: Interpreting a Log Comparison
 description: Interpreting a Log Comparison
 ms.assetid: fe2acdd5-00aa-4414-a59e-e6203ad48363
 keywords: ["UMDH, interpreting a log comparison"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Interpreting a Log Comparison

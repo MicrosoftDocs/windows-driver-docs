@@ -3,6 +3,11 @@ title: DbgRpc Command-Line Options
 description: The DbgRpc command line must always contain exactly one of the -l, -e, -t, -c, or -a switches. The options following these switches depend on the switch used. 
 ms.assetid: 1c90f97c-f054-402d-a559-2459528029b9
 keywords: ["DbgRpc Command-Line Options Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

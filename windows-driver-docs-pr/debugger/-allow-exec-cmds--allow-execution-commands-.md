@@ -3,6 +3,11 @@ title: .allow\_exec\_cmds (Allow Execution Commands)
 description: The .allow\_exec\_cmds command controls whether execution commands can be used.
 ms.assetid: c6e37cf1-42cc-4f82-9eb8-d252f0b6e196
 keywords: [".allow_exec_cmds (Allow Execution Commands) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

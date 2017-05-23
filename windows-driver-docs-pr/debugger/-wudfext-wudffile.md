@@ -3,6 +3,11 @@ title: wudfext.wudffile
 description: The wudfext.wudffile extension displays information about a framework file.
 ms.assetid: f655703d-0e61-4e9c-a033-834a89ef6d05
 keywords: ["wudfext.wudffile Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

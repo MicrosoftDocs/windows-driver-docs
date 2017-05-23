@@ -3,6 +3,11 @@ title: GFlags Flag Table
 description: GFlags Flag Table
 ms.assetid: 09029471-8b29-4232-bee1-d2802035b0fb
 keywords: ["GFlags, flag table"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GFlags Flag Table

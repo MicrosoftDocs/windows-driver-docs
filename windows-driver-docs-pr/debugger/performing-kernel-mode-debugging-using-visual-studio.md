@@ -3,6 +3,11 @@ title: Kernel-Mode Debugging in Visual Studio
 description: To perform kernel-mode debugging in Microsoft Visual Studio
 ms.assetid: 6E77843F-4907-4193-B987-92BD0719AE10
 keywords: ["kernel-mode debugging visual studio"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # <span id="debugger.performing_kernel-mode_debugging_using_visual_studio"></span>Kernel-Mode Debugging in Visual Studio

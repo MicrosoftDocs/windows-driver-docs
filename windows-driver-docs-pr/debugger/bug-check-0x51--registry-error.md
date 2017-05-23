@@ -3,6 +3,11 @@ title: Bug Check 0x51 REGISTRY\_ERROR
 description: The REGISTRY\_ERROR bug check has a value of 0x00000051. This indicates that a severe registry error has occurred.
 ms.assetid: 286e462f-e4d4-408f-91ad-3e20336e2025
 keywords: ["Bug Check 0x51 REGISTRY_ERROR", "REGISTRY_ERROR"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

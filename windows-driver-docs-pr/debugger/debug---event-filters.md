@@ -3,6 +3,11 @@ title: Debug Event Filters
 description: Debug Event Filters
 ms.assetid: ffa1241a-8a75-44ac-94b7-608393cf4138
 keywords: ["Debug Event Filters", "exceptions, Debug Event Filters", "events, Debug Event Filters"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debug | Event Filters

@@ -3,6 +3,11 @@ title: nstree
 description: The nstree extension displays an ACPI namespace object and its children in the namespace tree.
 ms.assetid: 0dec2a5a-ca77-4f91-9128-2d3dd8cd035f
 keywords: ["nstree Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

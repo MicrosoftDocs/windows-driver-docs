@@ -3,6 +3,11 @@ title: Debugging with Visual SourceSafe
 description: Debugging with Visual SourceSafe
 ms.assetid: 65cc4eda-7aed-489f-a622-27a42afc0e4a
 keywords: ["Visual SourceSafe, debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging with Visual SourceSafe

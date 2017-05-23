@@ -3,6 +3,11 @@ title: Annotated x86 Disassembly
 description: Annotated x86 Disassembly
 ms.assetid: ea1e67c8-d752-42d8-92db-a0c105ceddd6
 keywords: ["x86 processor, annotated disassembly", "x86 processor, assembly code", "x86 processor, source code"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Annotated x86 Disassembly

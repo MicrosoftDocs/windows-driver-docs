@@ -3,6 +3,11 @@ title: Early critical section event creation
 description: Early critical section event creation
 ms.assetid: a9453e6d-7566-4226-a950-d32d6192f8ac
 keywords: ["Early critical section event creation (global flag)"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Early critical section event creation

@@ -3,6 +3,11 @@ title: View Memory
 description: View Memory
 ms.assetid: 6d4630c0-2b57-417d-8ab1-85116d8e0ff0
 keywords: ["View Memory"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # View | Memory

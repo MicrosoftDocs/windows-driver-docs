@@ -3,6 +3,11 @@ title: RPC Extensions (Rpcexts.dll)
 description: RPC Extensions (Rpcexts.dll)
 ms.assetid: 2c5c1d99-4eb0-459e-949b-e02db7f1a300
 keywords: ["RPC extensions (rpcexts.dll), complete listing", "extensions, RPC"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # RPC Extensions (Rpcexts.dll)

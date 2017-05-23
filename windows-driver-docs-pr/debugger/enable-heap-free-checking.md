@@ -3,6 +3,11 @@ title: Enable heap free checking
 description: Enable heap free checking
 ms.assetid: d97d6aac-608c-4c0a-8702-c078ed4820db
 keywords: ["Enable heap free checking (global flag)"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enable heap free checking

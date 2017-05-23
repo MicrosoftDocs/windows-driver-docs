@@ -3,6 +3,11 @@ title: Creating Your Own Source Control System
 description: Creating Your Own Source Control System
 ms.assetid: 86492545-fc94-40ee-b22d-26fa2b0fbcc8
 keywords: ["source servers, HTTP sites", "source servers, UNC shares", "SrcSrv, HTTP sites", "SrcSrv, UNC shares"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Your Own Source Control System

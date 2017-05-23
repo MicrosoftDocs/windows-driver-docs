@@ -3,6 +3,11 @@ title: asd
 description: The asd extension displays a specified number of failure analysis entries from the data cache, starting at the specified address.
 ms.assetid: fb0eeedd-d50b-4385-b35f-4ac46fb97ce0
 keywords: ["failure analysis entries, display from data cache", "asd Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

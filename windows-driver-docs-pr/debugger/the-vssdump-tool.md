@@ -3,6 +3,11 @@ title: The VSSDump Tool
 description: The VSSDump Tool
 ms.assetid: b213c949-3433-4686-8323-5af83a6ee5b1
 keywords: ["SrcSrv, VSSDump tool", "VSSDump tool"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The VSSDump Tool

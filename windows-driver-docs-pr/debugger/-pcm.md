@@ -3,6 +3,11 @@ title: pcm
 description: The pcm extension displays the specified private cache map. This extension is only available in Windows 2000.
 ms.assetid: a6880ad0-5326-4bea-ac84-3311a2ec01da
 keywords: ["private cache map", "cache manager", "pcm Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: usbkd.usbfaildata
 description: The usbkd.usbfaildata command displays the failure data (if any) stored for a USB device.
 ms.assetid: 08FD3F82-73E3-4616-92EB-D562ECAB8A96
 keywords: ["usbkd.usbfaildata Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: Remote Client Syntax
 description: To start the client side of the Remote tool, use the following syntax at the command line.
 ms.assetid: 4728ef17-a365-4024-815c-2719b51b81f6
 keywords: ["Remote Client Syntax Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

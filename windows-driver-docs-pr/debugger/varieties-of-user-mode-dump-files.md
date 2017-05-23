@@ -3,6 +3,11 @@ title: Varieties of User-Mode Dump Files
 description: Varieties of User-Mode Dump Files
 ms.assetid: 683f7c77-f14f-4076-b40d-26ff2a117fc1
 keywords: ["dump file, user-mode file types"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Varieties of User-Mode Dump Files

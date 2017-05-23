@@ -3,6 +3,11 @@ title: can\_write\_kdump
 description: The can\_write\_kdump extension verifies that there is enough disk space on the target computer to write a kernel dump file of the specified type.
 ms.assetid: e9fdf8a4-3294-4625-a854-5e42a69374a6
 keywords: ["kernel dump", "can_write_kdump Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

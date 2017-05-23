@@ -3,6 +3,11 @@ title: Enable pool tagging
 description: Enable pool tagging
 ms.assetid: e88f97a0-a8c3-4162-871a-b78671b902bb
 keywords: ["Enable pool tagging (global flag)"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enable pool tagging

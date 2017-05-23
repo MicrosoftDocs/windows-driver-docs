@@ -3,6 +3,11 @@ title: Analyzing a Kernel-Mode Dump File with WinDbg
 description: Analyzing a Kernel-Mode Dump File with WinDbg
 ms.assetid: a1493740-5bb5-4335-b177-ee94b93f716b
 keywords: ["WinDbg, analyzing a kernel-mode dump file", "CAB file containing a dump file, analyzing kernel-mode dump file with WinDbg"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Analyzing a Kernel-Mode Dump File with WinDbg

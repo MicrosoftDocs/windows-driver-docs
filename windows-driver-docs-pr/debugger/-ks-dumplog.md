@@ -3,6 +3,11 @@ title: ks.dumplog
 description: The ks.dumplog extension displays the internal kernel streaming debug log.
 ms.assetid: 09829517-c01c-4cbd-bd0f-2ad0c1554f39
 keywords: ["ks.dumplog Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

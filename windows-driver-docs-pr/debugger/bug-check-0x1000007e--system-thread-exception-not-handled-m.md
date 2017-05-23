@@ -3,6 +3,11 @@ title: Bug Check 0x1000007E SYSTEM\_THREAD\_EXCEPTION\_NOT\_HANDLED\_M
 description: The SYSTEM\_THREAD\_EXCEPTION\_NOT\_HANDLED\_M bug check has a value of 0x1000007E.
 ms.assetid: 830c44e7-c801-4545-8154-c980329720a8
 keywords: ["Bug Check 0x1000007E SYSTEM_THREAD_EXCEPTION_NOT_HANDLED_M", "SYSTEM_THREAD_EXCEPTION_NOT_HANDLED_M"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

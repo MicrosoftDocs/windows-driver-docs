@@ -3,6 +3,11 @@ title: irpfind
 description: The irpfind extension displays information about all I/O request packets (IRP) currently allocated in the target system, or about those IRPs matching the specified search criteria.
 ms.assetid: f0d850d9-8804-40df-90a3-b9c6a6b4540f
 keywords: ["irpfind Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

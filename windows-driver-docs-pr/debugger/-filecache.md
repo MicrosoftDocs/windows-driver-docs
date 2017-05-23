@@ -3,6 +3,11 @@ title: filecache
 description: The filecache extension displays information regarding the system file cache memory and PTE use.
 ms.assetid: 38dbff14-5144-455c-a9b8-1ac6292f4200
 keywords: ["file cache", "filecache Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

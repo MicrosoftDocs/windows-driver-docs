@@ -3,6 +3,11 @@ title: usbkd.\_ehcisitd
 description: The usbkd.\_ehcisitd command displays information from a usbehci \_HCD\_SI\_TRANSFER\_DESCRIPTOR
 ms.assetid: FA1F61AE-A9D4-429E-97BC-0CCC3A9AF33E
 keywords: ["usbkd._ehcisitd Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

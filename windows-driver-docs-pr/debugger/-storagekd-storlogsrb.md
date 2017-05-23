@@ -3,6 +3,11 @@ title: storagekd.storlogsrb
 description: The storagekd.storlogsrb extension displays the Storport’s internal log entries for the adapter filtered for the Storage (or SCSI) Request Block (SRB) provided.
 ms.assetid: 9E742636-DD19-4D8D-BDA1-C9BB8C293D8C
 keywords: ["storagekd.storlogsrb Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

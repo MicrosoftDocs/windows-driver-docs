@@ -3,6 +3,11 @@ title: Bug Check 0x65 MEMORY1\_INITIALIZATION\_FAILED
 description: The MEMORY1\_INITIALIZATION\_FAILED bug check has a value of 0x00000065.This bug check appears very infrequently.
 ms.assetid: 9bd07824-f3bd-455a-8287-0cc9dd21dbe5
 keywords: ["Bug Check 0x65 MEMORY1_INITIALIZATION_FAILED", "MEMORY1_INITIALIZATION_FAILED"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

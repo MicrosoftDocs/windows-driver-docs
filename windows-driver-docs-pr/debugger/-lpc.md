@@ -3,6 +3,11 @@ title: lpc
 description: The lpc extension displays information about all local procedure call (LPC) ports and messages in the target system.
 ms.assetid: d474aeca-fb12-424a-b57e-360215d0305c
 keywords: ["LPC (local/light-weight procedure call)", "lpc Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

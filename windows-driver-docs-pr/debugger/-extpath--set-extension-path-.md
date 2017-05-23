@@ -3,6 +3,11 @@ title: .extpath (Set Extension Path)
 description: The .extpath command sets or displays the extension DLL search path.
 ms.assetid: 957028ff-d8f4-41ab-bdaa-ff1bbe886bec
 keywords: [".extpath (Set Extension Path) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

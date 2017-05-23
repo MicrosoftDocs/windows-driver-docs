@@ -3,6 +3,11 @@ title: Remote Tool Commands
 description: Remote Tool Commands
 ms.assetid: 23ce5a62-dcea-4460-a354-f391c105e3bd
 keywords: ["Remote Tool, commands"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Remote Tool Commands

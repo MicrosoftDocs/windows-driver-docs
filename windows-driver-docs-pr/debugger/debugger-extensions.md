@@ -3,6 +3,11 @@ title: Using Debugger Extensions
 description: This topic describes using debugger extensions
 ms.assetid: 55de0cbd-c6ba-40af-a932-2f9e57f1e8ec
 keywords: ["extension commands ( commands)", "extension commands ( commands), overview", "commands", "commands, See "extension commands"", "debugger extensions, See "extension commands"", "extensions", "extensions, commands"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Debugger Extensions

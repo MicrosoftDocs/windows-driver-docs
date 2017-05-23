@@ -3,6 +3,11 @@ title: ndiskd.netpacketfragment
 description: The ndiskd.netpacketfragment extension displays information about a NET\_PACKET\_FRAGMENT structure.
 ms.assetid: 2075D682-45F5-414D-A8ED-0494B3550C77
 keywords: ["ndiskd.netpacketfragment Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

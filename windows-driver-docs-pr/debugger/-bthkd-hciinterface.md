@@ -3,6 +3,11 @@ title: bthkd.hciinterface
 description: The bthkd.hciinterface command displays the bthport \_HCI\_INTERFACE structure.
 ms.assetid: C91AF3CE-CDB8-491A-A486-8836C8EBB9A3
 keywords: ["bthkd.hciinterface Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

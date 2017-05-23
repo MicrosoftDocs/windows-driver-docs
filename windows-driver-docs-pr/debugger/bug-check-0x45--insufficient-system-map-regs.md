@@ -3,6 +3,11 @@ title: Bug Check 0x45 INSUFFICIENT\_SYSTEM\_MAP\_REGS
 description: The INSUFFICIENT\_SYSTEM\_MAP\_REGS bug check has a value of 0x00000045.This bug check appears very infrequently.
 ms.assetid: fc01b455-a0b5-4d25-a115-076c227ed303
 keywords: ["Bug Check 0x45 INSUFFICIENT_SYSTEM_MAP_REGS", "INSUFFICIENT_SYSTEM_MAP_REGS"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

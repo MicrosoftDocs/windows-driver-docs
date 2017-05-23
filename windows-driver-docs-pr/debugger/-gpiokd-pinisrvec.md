@@ -3,6 +3,11 @@ title: gpiokd.pinisrvec
 description: The gpiokd.pinisrvec command displays Interrupt Service Routine (ISR) vector information for a specified pin.
 ms.assetid: 83D4C072-92B2-4F61-A099-0BA4F8255BE8
 keywords: ["gpiokd.pinisrvec Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: rpcexts.getdbgcell
 description: The rpcexts.getdbgcell extension displays RPC state information for the specified cell.
 ms.assetid: 28be074f-6756-4610-aa86-1162b83fd0a7
 keywords: ["rpcexts.getdbgcell Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: Process Servers (User Mode)
 description: Process Servers (User Mode)
 ms.assetid: 9391fcd4-c64f-4c2b-89c2-da09be7646d1
 keywords: ["remote debugging through a process server", "process server", "process server, overview", "smart client (user mode)", "DbgSrv", "DbgSrv, overview"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Process Servers (User Mode)

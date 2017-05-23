@@ -3,6 +3,11 @@ title: amli bp
 description: The amli bp extension places a breakpoint in AML code.
 ms.assetid: 830df6b8-835c-4485-a28a-e9a028f166f5
 keywords: ["amli bp Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: File Open Workspace
 description: File Open Workspace
 ms.assetid: 589d782c-c6b4-4b5a-a533-1ed02129fb9c
 keywords: ["File Open Workspace", "workspaces, File Open Workspace"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # File | Open Workspace

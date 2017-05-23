@@ -3,6 +3,11 @@ title: Bug Check 0x1 APC\_INDEX\_MISMATCH
 description: 0x00000001.
 ms.assetid: 01e64516-809c-49ce-9aaa-b4e439ac575b
 keywords: ["Bug Check 0x1 APC_INDEX_MISMATCH", "APC_INDEX_MISMATCH"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

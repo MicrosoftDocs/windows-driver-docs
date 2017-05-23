@@ -3,6 +3,11 @@ title: analyzebugcheck
 description: analyzebugcheck
 ms.assetid: e1d50d3f-558d-4d2a-be30-5124076fff52
 keywords: ["analyzebugcheck extension (obsolete)"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # !analyzebugcheck

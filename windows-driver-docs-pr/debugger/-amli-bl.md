@@ -3,6 +3,11 @@ title: amli bl
 description: The amli bl extension displays a list of all AML breakpoints.
 ms.assetid: 4ce52006-d44e-40ab-b669-2aa9509b6b21
 keywords: ["amli bl Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

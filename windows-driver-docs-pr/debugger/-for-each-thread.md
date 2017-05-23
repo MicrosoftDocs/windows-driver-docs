@@ -3,6 +3,11 @@ title: for\_each\_thread
 description: The for\_each\_thread extension executes the specified debugger command once for each thread in the target.
 ms.assetid: 4ca8e1bd-1a1b-4fef-a2d9-42c26f9b746b
 keywords: ["for_each_thread Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

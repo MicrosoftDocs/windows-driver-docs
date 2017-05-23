@@ -3,6 +3,11 @@ title: Using DBH
 description: Using DBH
 ms.assetid: c544013d-e925-40bf-b76d-bf9cefb9fd6d
 keywords: ["DBH, using"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using DBH

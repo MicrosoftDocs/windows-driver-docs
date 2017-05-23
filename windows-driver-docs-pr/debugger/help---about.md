@@ -3,6 +3,11 @@ title: Help About
 description: Help About
 ms.assetid: 0eb9b790-00aa-4070-b854-cf936745313a
 keywords: ["Help About", "WinDbg, version information"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Help | About

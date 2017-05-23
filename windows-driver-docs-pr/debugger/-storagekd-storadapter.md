@@ -3,6 +3,11 @@ title: storagekd.storadapter
 description: The storagekd.storadapter extension displays information about the specified Storport adapter.
 ms.assetid: E7EBC2F7-676A-4DD9-ADAA-5C240299013C
 keywords: ["storagekd.storadapter Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

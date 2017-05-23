@@ -3,6 +3,11 @@ title: .enable\_unicode (Enable Unicode Display)
 description: The .enable\_unicode command specifies whether the debugger displays USHORT pointers and arrays as Unicode strings.
 ms.assetid: bb029ff4-1802-4d91-ba4b-9db10fa7c055
 keywords: ["Enable Unicode Display (.enable_unicode) command", "UNICODE_STRING structure", ".enable_unicode (Enable Unicode Display) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

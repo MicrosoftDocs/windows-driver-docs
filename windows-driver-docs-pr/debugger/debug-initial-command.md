@@ -3,6 +3,11 @@ title: Debug initial command
 description: Debug initial command
 ms.assetid: 0af0b53d-455f-4cdb-b956-9d7e49601733
 keywords: ["Debug initial command (global flag)"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debug initial command

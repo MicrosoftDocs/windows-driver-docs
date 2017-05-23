@@ -3,6 +3,11 @@ title: Event Information
 description: Event Information
 ms.assetid: e6621b5d-f1af-4021-8832-43f79835a6c1
 keywords: ["targets, events"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Event Information

@@ -3,6 +3,11 @@ title: Bug Check 0x11B DRIVER\_RETURNED\_HOLDING\_CANCEL\_LOCK
 description: The DRIVER\_RETURNED\_HOLDING\_CANCEL\_LOCK bug check has a value of 0x0000011B.
 ms.assetid: 8728dc74-cf21-490f-b3b0-1513d2310461
 keywords: ["Bug Check 0x11B DRIVER_RETURNED_HOLDING_CANCEL_LOCK", "DRIVER_RETURNED_HOLDING_CANCEL_LOCK"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

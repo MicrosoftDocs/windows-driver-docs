@@ -3,6 +3,11 @@ title: .formats (Show Number Formats)
 description: The .formats command evaluates an expression or symbol in the context of the current thread and process and displays it in multiple numeric formats.
 ms.assetid: 9eac92b3-5137-4adb-a074-31510dc9bff7
 keywords: [".formats (Show Number Formats) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

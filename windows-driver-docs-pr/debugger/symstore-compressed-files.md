@@ -3,6 +3,11 @@ title: SymStore Compressed Files
 description: SymStore Compressed Files
 ms.assetid: 4ec6a7f5-ceee-46d5-9a5e-36ab9fe9db52
 keywords: ["SymStore, compressed files"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SymStore Compressed Files

@@ -3,6 +3,11 @@ title: .f+, .f- (Shift Local Context)
 description: The .f+ command shifts the frame index to the next frame in the current stack. The .f- command shifts the frame index to the previous frame in the current stack.
 ms.assetid: aade5ec0-4d40-4ff1-9d4b-f3ad81b54b79
 keywords: [".f+, .f- (Shift Local Context) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: RPC Debugging
 description: RPC Debugging
 ms.assetid: 5b3918d7-0a1c-4efd-8b83-bc20741b5afe
 keywords: ["RPC debugging", "RPC state information", "DbgRpc, RPC debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # RPC Debugging

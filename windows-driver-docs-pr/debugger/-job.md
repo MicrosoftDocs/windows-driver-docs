@@ -3,6 +3,11 @@ title: job
 description: The job extension displays a job object.
 ms.assetid: 1fbadcc7-d81b-4cfb-a54a-7843e2f78ea1
 keywords: ["job Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

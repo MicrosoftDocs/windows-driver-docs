@@ -3,6 +3,11 @@ title: Local Kernel-Mode Debugging
 description: Local Kernel-Mode Debugging
 ms.assetid: e66dc23b-9254-4148-9828-d27c30bfa492
 keywords: ["local kernel debugging", "local kernel debugging, commands available", "local kernel debugging, LiveKD tool", "LiveKD tool"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Local Kernel-Mode Debugging

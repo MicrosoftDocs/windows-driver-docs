@@ -3,6 +3,11 @@ title: ks.pchelp
 description: The ks.pchelp extension displays a help text showing PortCls-specific Ks.dll extension commands.
 ms.assetid: 6724deae-fceb-415b-991c-370347d5ff15
 keywords: ["ks.pchelp Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

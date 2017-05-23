@@ -3,6 +3,11 @@ title: Application Verifier
 description: Application Verifier
 ms.assetid: d3040254-aa9b-4aae-b850-966078df7988
 keywords: ["verifying drivers (Application Verifier)", "driver verification (Application Verifier)", "Application Verifier", "AppVerif.exe", "user-mode application testing"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Application Verifier

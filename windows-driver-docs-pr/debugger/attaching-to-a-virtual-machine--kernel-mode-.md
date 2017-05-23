@@ -3,6 +3,11 @@ title: Setting Up Kernel-Mode Debugging of a Virtual Machine Manually
 description: Debugging Tools for Windows supports kernel debugging of a virtual machine.
 ms.assetid: e863e664-8338-4bbe-953b-e000a6843db9
 keywords: ["virtual machine debugging", "Virtual PC debugging", "VMware debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Up Kernel-Mode Debugging of a Virtual Machine Manually

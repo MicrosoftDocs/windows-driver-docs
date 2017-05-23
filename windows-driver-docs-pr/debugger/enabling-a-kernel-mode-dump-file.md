@@ -3,6 +3,11 @@ title: Enabling a Kernel-Mode Dump File
 description: Enabling a Kernel-Mode Dump File
 ms.assetid: 4faf389f-764e-4439-9e45-fdd53890b0d1
 keywords: ["dump file, enabling kernel-mode dump file"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling a Kernel-Mode Dump File

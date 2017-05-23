@@ -3,6 +3,11 @@ title: Bug Check 0xCD PAGE\_FAULT\_BEYOND\_END\_OF\_ALLOCATION
 description: The PAGE\_FAULT\_BEYOND\_END\_OF\_ALLOCATION bug check has a value of 0x000000CD. This indicates that the system accessed memory beyond the end of some driver's pool allocation.
 ms.assetid: ce506f92-94a9-4ef5-974b-32013410468a
 keywords: ["Bug Check 0xCD PAGE_FAULT_BEYOND_END_OF_ALLOCATION", "PAGE_FAULT_BEYOND_END_OF_ALLOCATION"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: minipkd.adapter
 description: The minipkd.adapter extension displays information about the specified adapter.
 ms.assetid: 86cde6f0-9690-41b6-8e81-b9d25d7d6de5
 keywords: ["minipkd.adapter Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

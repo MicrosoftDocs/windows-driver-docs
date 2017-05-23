@@ -3,6 +3,11 @@ title: Finding a User-Mode Memory Leak
 description: Finding a User-Mode Memory Leak
 ms.assetid: 5ce5a237-d2c4-4fca-9fb4-d927522a5352
 keywords: ["memory leak, user-mode", "memory leak, user-mode, overview"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Finding a User-Mode Memory Leak

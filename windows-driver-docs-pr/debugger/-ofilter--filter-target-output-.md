@@ -3,6 +3,11 @@ title: .ofilter (Filter Target Output)
 description: The .ofilter command filters the output from the target application or target computer.
 ms.assetid: 0b94d177-0e41-4781-b0bc-ed58cee584f1
 keywords: ["Filter Target Output (.ofilter) command", ".ofilter (Filter Target Output) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

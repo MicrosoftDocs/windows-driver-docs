@@ -3,6 +3,11 @@ title: sid
 description: The sid extension displays the security identifier (SID) at the specified address.
 ms.assetid: 7b93eb0e-7c0f-4c30-851b-6f40c7df8e1b
 keywords: ["sid Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

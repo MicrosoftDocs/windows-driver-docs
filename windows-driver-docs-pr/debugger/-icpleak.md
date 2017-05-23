@@ -3,6 +3,11 @@ title: icpleak
 description: The icpleak extension examines all I/O completion objects in the system for the object with the largest number of queued entries.
 ms.assetid: 8644a41a-44da-47bc-94ef-5024bb457c7d
 keywords: ["I/O completion", "icpleak Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

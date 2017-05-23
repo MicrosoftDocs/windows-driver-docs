@@ -3,6 +3,11 @@ title: bitcount
 description: The bitcount extension counts the number of \ 0034;1 \ 0034; bits in a memory range.
 ms.assetid: dacf3d63-6241-4779-afca-514905b37e26
 keywords: ["bitcount Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

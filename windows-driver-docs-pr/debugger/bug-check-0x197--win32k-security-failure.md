@@ -3,6 +3,11 @@ title: Bug Check 0x197 WIN32K\_SECURITY\_FAILURE
 description: The WIN32K\_SECURITY\_FAILURE bug check has a value of 0x00000197. This indicates a security failure was detected in win32k.
 ms.assetid: FBF81B3B-6F72-4624-84E8-FA9ED19F8198
 keywords: ["Bug Check 0x197 WIN32K_SECURITY_FAILURE", "WIN32K_SECURITY_FAILURE"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

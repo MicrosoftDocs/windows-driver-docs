@@ -3,6 +3,11 @@ title: Bug Check 0xE7 INVALID\_FLOATING\_POINT\_STATE
 description: The INVALID\_FLOATING\_POINT\_STATE bug check has a value of 0x000000E7. This indicates that a thread's saved floating-point state is invalid.
 ms.assetid: 71a61132-cb7f-4618-b3d5-95602e52c098
 keywords: ["Bug Check 0xE7 INVALID_FLOATING_POINT_STATE", "INVALID_FLOATING_POINT_STATE"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

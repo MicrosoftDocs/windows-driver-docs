@@ -3,6 +3,11 @@ title: str
 description: The str extension displays an ANSI\_STRING or OEM\_STRING structure.
 ms.assetid: 5ebb29d4-5d77-475b-ace5-8bc8a4299320
 keywords: ["strings", "ANSI_STRING structure", "str Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: Bug Check 0x73 CONFIG\_LIST\_FAILED
 description: The CONFIG\_LIST\_FAILED bug check has a value of 0x00000073. This bug check indicates that one of the top-level registry keys, also known as core system hives, cannot be linked in the registry tree.
 ms.assetid: fec1f3ee-5405-49c2-8082-75adfdabd6b8
 keywords: ["Bug Check 0x73 CONFIG_LIST_FAILED", "CONFIG_LIST_FAILED"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

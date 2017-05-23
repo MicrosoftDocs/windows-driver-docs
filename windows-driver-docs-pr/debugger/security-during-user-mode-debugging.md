@@ -3,6 +3,11 @@ title: Security During User-Mode Debugging
 description: Security During User-Mode Debugging
 ms.assetid: e198c29a-d793-4974-8ee3-f26679bd70b4
 keywords: ["security considerations, user-mode debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Security During User-Mode Debugging

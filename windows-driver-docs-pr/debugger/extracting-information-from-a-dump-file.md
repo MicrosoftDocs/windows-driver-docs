@@ -3,6 +3,11 @@ title: Extracting Information from a Dump File
 description: Extracting Information from a Dump File
 ms.assetid: abde266e-e3ab-4e5e-ac6d-a27933f3d1a9
 keywords: ["extracting information from a dump file", "dump file, extracting various information", "machine name (determining from a dump file)", "computer name (determining from a dump file)", "IP address (determining from a dump file)"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extracting Information from a Dump File

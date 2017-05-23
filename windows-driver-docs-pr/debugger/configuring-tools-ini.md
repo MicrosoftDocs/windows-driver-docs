@@ -3,6 +3,11 @@ title: Configuring tools.ini
 description: Configuring tools.ini
 ms.assetid: 4f0d9f48-99d5-4180-b25d-70fd8de6f20e
 keywords: ["tools.ini file", "ntsd.ini file"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configuring tools.ini

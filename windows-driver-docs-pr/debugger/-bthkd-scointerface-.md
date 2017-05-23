@@ -3,6 +3,11 @@ title: bthkd.scointerface
 description: The bthkd.scointerface command displays information about the SCO interface.
 ms.assetid: FF689CCB-E3AB-4A4B-A77A-91FB69987C06
 keywords: ["bthkd.scointerface Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

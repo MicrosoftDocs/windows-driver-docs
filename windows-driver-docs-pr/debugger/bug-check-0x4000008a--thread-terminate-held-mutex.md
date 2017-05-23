@@ -3,6 +3,11 @@ title: Bug Check 0x4000008A THREAD\_TERMINATE\_HELD\_MUTEX
 description: The THREAD\_TERMINATE\_HELD\_MUTEX bug check has a value of 0x4000008A.
 ms.assetid: 30A796F0-D622-43F2-8050-C9B62941FBE9
 keywords: ["Bug Check 0x4000008A THREAD_TERMINATE_HELD_MUTEX", "THREAD_TERMINATE_HELD_MUTEX"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: Bug Check 0x49 PAGE\_FAULT\_WITH\_INTERRUPTS\_OFF
 description: The PAGE\_FAULT\_WITH\_INTERRUPTS\_OFF bug check has a value of 0x00000049.This bug check appears very infrequently.
 ms.assetid: c7fa7d00-7702-4f2b-9c71-886861259092
 keywords: ["Bug Check 0x49 PAGE_FAULT_WITH_INTERRUPTS_OFF", "PAGE_FAULT_WITH_INTERRUPTS_OFF"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

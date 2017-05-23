@@ -3,6 +3,11 @@ title: Finding the Failed Process
 description: Finding the Failed Process
 ms.assetid: 64d1fa71-940f-4f67-87a6-00d41d6f24e0
 keywords: ["process, finding failed process"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Finding the Failed Process

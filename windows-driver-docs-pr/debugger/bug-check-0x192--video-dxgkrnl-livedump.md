@@ -3,6 +3,11 @@ title: Bug Check 0x193 VIDEO\_DXGKRNL\_LIVEDUMP
 description: The VIDEO\_DXGKRNL\_LIVEDUMP bug check has a value of 0x00000193. This indicates a livedump triggered by dxgkrnl occurred.
 ms.assetid: 73B84617-7DBB-4161-BAB3-8BCDDBE9BE93
 keywords: ["Bug Check 0x193 VIDEO_DXGKRNL_LIVEDUMP", "VIDEO_DXGKRNL_LIVEDUMP"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

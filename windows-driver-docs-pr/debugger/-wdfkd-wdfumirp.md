@@ -3,6 +3,11 @@ title: wdfkd.wdfumirp
 description: The wdfkd.wdfumirp extension displays information about a user-mode I/O request packet (UM IRP).
 ms.assetid: 8706E8F6-A387-48A9-AF14-ED2C0F94AD98
 keywords: ["wdfkd.wdfumirp Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

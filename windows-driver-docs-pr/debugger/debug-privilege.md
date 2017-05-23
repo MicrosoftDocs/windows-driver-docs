@@ -3,6 +3,11 @@ title: Debug Privilege
 description: The debug privilege allows someone to debug a process that they wouldn’t otherwise have access to.
 ms.assetid: f3ea9065-6d04-4629-88ed-85428f7915ca
 keywords: ["debug privilege", "debug privilege, overview"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debug Privilege

@@ -3,6 +3,11 @@ title: View Command
 description: View Command
 ms.assetid: 5ed8a9bb-efc7-4954-8cb9-b6ee41686bf5
 keywords: ["View Command"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # View | Command

@@ -3,6 +3,11 @@ title: Using Client Objects
 description: Using Client Objects
 ms.assetid: 07311a2e-86a7-4985-9dfa-55a876cd7899
 keywords: ["Debugger Engine, COM Interfaces"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Client Objects

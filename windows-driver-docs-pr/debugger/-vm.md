@@ -3,6 +3,11 @@ title: vm
 description: The vm extension displays summary information about virtual memory use statistics on the target system.
 ms.assetid: 25e4f80c-d4ca-407c-991d-e8ee5dfbb309
 keywords: ["vm Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

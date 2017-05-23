@@ -3,6 +3,11 @@ title: usbkd.usbdpc
 description: The usbkd.usbdpc command displays information stored in an \_XDPC\_CONTEXT structure.
 ms.assetid: 51ED1BB0-416B-4B2B-9F4D-61F841224126
 keywords: ["usbkd.usbdpc Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

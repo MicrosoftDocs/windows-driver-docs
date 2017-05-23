@@ -3,6 +3,11 @@ title: Debugging Environments
 description: Starting with Windows Driver Kit (WDK) 8.0, the driver development environment and the Windows debugger are integrated into Microsoft Visual Studio.
 ms.assetid: 13F9D82A-4C04-425A-A063-B349DB5C8E08
 keywords: ["WinDbg", "KD", "CDB", "NTSD"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging Environments

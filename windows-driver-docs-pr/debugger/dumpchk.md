@@ -3,6 +3,11 @@ title: DumpChk
 description: DumpChk
 ms.assetid: f7431207-562b-451a-843e-1c2be038e306
 keywords: ["DumpChk"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DumpChk

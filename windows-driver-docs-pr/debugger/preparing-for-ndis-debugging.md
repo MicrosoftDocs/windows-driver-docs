@@ -3,6 +3,11 @@ title: Preparing for NDIS Debugging
 description: Preparing for NDIS Debugging
 ms.assetid: 9a23cc3a-5940-46c3-928f-7fac46dfaba2
 keywords: ["NDIS debugging, setup"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Preparing for NDIS Debugging

@@ -3,6 +3,11 @@ title: Executing Until a Specified State is Reached
 description: Executing Until a Specified State is Reached
 ms.assetid: 0657a7bf-4d72-4248-9e45-d79d51b91139
 keywords: ["executing until a specified state is reached", "breakpoints, used to control execution", "breakpoints, and pseudo-registers", "script file, used to control execution"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Executing Until a Specified State is Reached

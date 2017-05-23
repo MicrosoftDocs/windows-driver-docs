@@ -3,6 +3,11 @@ title: .prompt\_allow (Control Prompt Display)
 description: The .prompt\_allow command controls what information is displayed during stepping and tracing and whenever the target's execution stops.
 ms.assetid: 916114f9-0a68-4423-ba28-a5f0da8a1af9
 keywords: [".prompt_allow (Control Prompt Display) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

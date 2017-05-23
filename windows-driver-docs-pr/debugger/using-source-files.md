@@ -3,6 +3,11 @@ title: Using Source Files
 description: Using Source Files
 ms.assetid: c6dfcb37-140f-43d8-aa15-14f0317b5e19
 keywords: ["Debugger Engine API, source"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Source Files

@@ -3,6 +3,11 @@ title: usb3kd.xhci\_capability
 description: The usb3kd.xhci\_capability extension displays the capabilities of a USB 3.0 host controller.
 ms.assetid: 72D3919A-C111-4B16-8A52-B439429DFFCC
 keywords: ["usb3kd.xhci_capability Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: Bug Check 0x33 UNEXPECTED\_INITIALIZATION\_CALL
 description: The UNEXPECTED\_INITIALIZATION\_CALL bug check has a value of 0x00000033.This bug check appears very infrequently.
 ms.assetid: f925e167-1a89-4728-829d-2fdc4dea2908
 keywords: ["Bug Check 0x33 UNEXPECTED_INITIALIZATION_CALL", "UNEXPECTED_INITIALIZATION_CALL"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

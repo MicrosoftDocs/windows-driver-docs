@@ -3,6 +3,11 @@ title: Bug Check 0x127 PAGE\_NOT\_ZERO
 description: The PAGE\_NOT\_ZERO bug check has a value of 0x00000127.
 ms.assetid: b6485307-191d-401a-8f2e-7f4a54a630f9
 keywords: ["Bug Check 0x127 PAGE_NOT_ZERO", "PAGE_NOT_ZERO"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

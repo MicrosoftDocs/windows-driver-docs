@@ -3,6 +3,11 @@ title: Breakpoint Syntax
 description: This topic covers breakpoint syntax
 ms.assetid: 86228b87-9ca3-4d0c-be9e-63446ac6ce31
 keywords: ["methods, breakpoints on methods", "breakpoints, breakpoints on methods", "syntax rules for commands, b (breakpoint identifier)", "b (breakpoint identifier)", "breakpoint identifier ( b )", "syntax rules for commands, "" (literal MASM identifier)", """ (literal MASM identifier)", "templated functions", "templated functions, breakpoints"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Breakpoint Syntax

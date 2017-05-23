@@ -3,6 +3,11 @@ title: Controlling Processes and Threads
 description: Controlling Processes and Threads
 ms.assetid: f5a50b54-443e-425e-98cb-cff8d31ac897
 keywords: ["process", "process, choosing", "thread", "thread, choosing", "thread, freezing", "thread, unfreezing (thawing)", "thread, suspending", "suspend count of threads", "freezing threads"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Controlling Processes and Threads

@@ -3,6 +3,11 @@ title: uniqstack
 description: The uniqstack extension displays all of the stacks for all of the threads in the current process, excluding stacks that appear to have duplicates.
 ms.assetid: c7502106-90b7-4fec-aa6b-394967ed2cfb
 keywords: ["uniqstack Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: Crashing and Rebooting the Target Computer
 description: This topic covers crashing and rebooting the Target Computer
 ms.assetid: 7480e572-05ca-40c6-aa91-b1ab35e4496b
 keywords: ["controlling the target, crashing the target computer", "controlling the target, rebooting the target computer", "reboot", "reboot, See "boot process"", "boot process", "boot process, debugging during", "system crash, deliberately causing", "bug check, deliberately causing"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Crashing and Rebooting the Target Computer

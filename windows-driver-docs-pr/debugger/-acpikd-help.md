@@ -3,6 +3,11 @@ title: acpikd.help
 description: The acpikd.help extension displays a Help text in the Debugger Command window showing all Acpikd.dll extension commands.
 ms.assetid: 46062e9d-bd68-43d4-90dd-4e481c48f5ee
 keywords: ["acpikd.help Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

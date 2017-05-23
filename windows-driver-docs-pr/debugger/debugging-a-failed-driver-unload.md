@@ -3,6 +3,11 @@ title: Debugging a Failed Driver Unload
 description: Debugging a Failed Driver Unload
 ms.assetid: df4b6082-8236-4a7f-80f4-6c33dc8e887a
 keywords: ["failed driver unload", "driver unload debugging", "unload failures"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging a Failed Driver Unload

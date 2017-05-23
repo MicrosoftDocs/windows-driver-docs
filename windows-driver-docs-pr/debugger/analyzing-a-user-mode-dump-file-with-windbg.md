@@ -3,6 +3,11 @@ title: Analyzing a User-Mode Dump File with WinDbg
 description: Analyzing a User-Mode Dump File with WinDbg
 ms.assetid: 46b6a170-e8dd-4d89-bcb9-ea65d74d2a54
 keywords: ["WinDbg, analyzing a user-mode dump file", "CAB file containing a dump file, analyzing user-mode dump file with WinDbg"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Analyzing a User-Mode Dump File with WinDbg

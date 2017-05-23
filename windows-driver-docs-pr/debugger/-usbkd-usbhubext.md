@@ -3,6 +3,11 @@ title: usbkd.usbhubext
 description: The usbkd.usbhubext command displays information about a USB hub..
 ms.assetid: 1EC75753-3743-4384-8068-E796083D8239
 keywords: ["usbkd.usbhubext Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

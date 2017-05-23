@@ -3,6 +3,11 @@ title: sd
 description: The sd extension displays the security descriptor at the specified address.
 ms.assetid: 67c72bdb-7bfc-42d6-9b65-31a07dc67729
 keywords: ["sd Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: .exptr (Display Exception Pointers)
 description: The .exptr command displays an EXCEPTION\_POINTERS structure.
 ms.assetid: ef98bf22-10a1-4fd2-80f1-fd7eb75015c1
 keywords: [".exptr (Display Exception Pointers) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: gs
 description: The gs extension analyzes a /GS stack overflow.
 ms.assetid: 4c73fd73-e476-4836-80f7-ab9b9c797d8b
 keywords: ["gs Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

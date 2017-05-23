@@ -3,6 +3,11 @@ title: avrf
 description: The avrf extension controls the settings of Application Verifier and displays a variety of output produced by Application Verifier.
 ms.assetid: e9313954-a1fa-45a9-bc1a-78be2451f5aa
 keywords: ["avrf Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: Bug Check 0xE3 RESOURCE\_NOT\_OWNED
 description: The RESOURCE\_NOT\_OWNED bug check has a value of 0x000000E3. This indicates that a thread tried to release a resource it did not own.
 ms.assetid: f0f47af6-cba0-42a0-912b-562f069d5b3e
 keywords: ["Bug Check 0xE3 RESOURCE_NOT_OWNED", "RESOURCE_NOT_OWNED"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: bth
 description: The bth extension displays the Itanium-based branch traces history for the specified processor.
 ms.assetid: e6bf1452-adb7-4b1d-8614-03fcf0306c70
 keywords: ["branch trace history", "bth Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

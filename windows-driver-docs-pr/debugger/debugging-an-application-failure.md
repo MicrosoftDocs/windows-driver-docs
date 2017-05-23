@@ -3,6 +3,11 @@ title: Debugging an Application Failure
 description: Debugging an Application Failure
 ms.assetid: c4118acb-2566-441a-8481-dee4bfdb03ba
 keywords: ["application failures"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging an Application Failure

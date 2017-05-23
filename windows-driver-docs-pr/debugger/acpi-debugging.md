@@ -3,6 +3,11 @@ title: ACPI Debugging
 description: ACPI Debugging
 ms.assetid: c3d5e404-c2d9-4f38-8473-66e76ea97ea9
 keywords: ["ACPI debugging", "BIOS debugging, ACPI BIOS debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ACPI Debugging

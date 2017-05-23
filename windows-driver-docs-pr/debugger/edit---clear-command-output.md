@@ -3,6 +3,11 @@ title: Edit Clear Command Output
 description: Edit Clear Command Output
 ms.assetid: ded3de6c-4974-48d4-af65-9c4d09ba10cf
 keywords: ["Edit Clear Command Output", "Debugger Command window, Edit Clear Command Output"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Edit | Clear Command Output

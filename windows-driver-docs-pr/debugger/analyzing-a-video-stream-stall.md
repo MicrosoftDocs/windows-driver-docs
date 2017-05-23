@@ -3,6 +3,11 @@ title: Analyzing a Video Stream Stall
 description: Analyzing a Video Stream Stall
 ms.assetid: b53b7f4b-c82f-4dba-933c-ec72177e6990
 keywords: ["kernel streaming debugging, video stream stall"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Analyzing a Video Stream Stall

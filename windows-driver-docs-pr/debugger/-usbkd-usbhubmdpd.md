@@ -3,6 +3,11 @@ title: usbkd.usbhubmdpd
 description: The usbkd.usbhubmdpd command displays a usbhub \_HUB\_PORT\_DATA structure if one is present in a crash dump that was generated as a result of Bug Check 0xFE.
 ms.assetid: 128D45A2-A891-42BC-9E3E-FCDC5B4504A2
 keywords: ["usbkd.usbhubmdpd Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

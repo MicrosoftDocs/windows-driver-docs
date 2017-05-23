@@ -3,6 +3,11 @@ title: Bug Check 0x14C FATAL\_ABNORMAL\_RESET\_ERROR
 description: The FATAL\_ABNORMAL\_RESET\_ERROR bug check has a value of 0x0000014C. This indicates that an unrecoverable system error occurred or the system has abnormally reset.
 ms.assetid: 46E624EE-CA84-443E-95C2-E128E8D03188
 keywords: ["Bug Check 0x14C FATAL_ABNORMAL_RESET_ERROR", "FATAL_ABNORMAL_RESET_ERROR"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

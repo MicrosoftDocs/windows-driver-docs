@@ -3,6 +3,11 @@ title: Numerical Expression Syntax
 description: Numerical Expression Syntax
 ms.assetid: 65f2df02-62f5-410a-bcb9-7a7eb7df9c74
 keywords: ["expressions", "numerical expressions", "MASM expressions", "C++ expressions", "syntax rules for commands, numerical expressions", "syntax rules for commands, MASM expressions", "syntax rules for commands, C++ expressions"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Numerical Expression Syntax

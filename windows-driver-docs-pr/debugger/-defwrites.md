@@ -3,6 +3,11 @@ title: defwrites
 description: The defwrites extension displays the values of the kernel variables used by the cache manager.
 ms.assetid: da576e05-3d9f-4599-bf8e-b1fa05093d77
 keywords: ["cache manager", "defwrites Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

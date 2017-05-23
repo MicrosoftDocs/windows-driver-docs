@@ -3,6 +3,11 @@ title: Logger Restrictions and Limitations
 description: Logger Restrictions and Limitations
 ms.assetid: cb16c193-5420-4900-bf07-44b49859e296
 keywords: ["Logger, restrictions", "Logger, limitations"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Logger Restrictions and Limitations

@@ -3,6 +3,11 @@ title: scsikd.scsiext
 description: The scsikd.scsiext extension displays detailed information about the specified SCSI port extension.
 ms.assetid: 0fcb0545-eb5a-4500-8e14-a5296624c80b
 keywords: ["scsikd.scsiext Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

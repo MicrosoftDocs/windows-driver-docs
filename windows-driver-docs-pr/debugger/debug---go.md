@@ -3,6 +3,11 @@ title: Debug Go
 description: Debug Go
 ms.assetid: d6b4bcb2-60f1-42ed-a125-8f754f2fd235
 keywords: ["Debug Go", "controlling the target, Debug Go"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debug | Go

@@ -3,6 +3,11 @@ title: ndiskd.pendingnbls
 description: The ndiskd.pendingnbls extension displays pending NBLs (NET\_BUFFER\_LISTs) that are in transit.
 ms.assetid: 9137B995-FCCA-4E25-85D3-FCB5B717EBDF
 keywords: ["ndiskd.pendingnbls Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: lmi
 description: The lmi extension displays detailed information about a module.
 ms.assetid: 00438edf-618a-401e-818f-24add7861487
 keywords: ["lmi Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: dcs
 description: dcs
 ms.assetid: 947adf2d-9596-4260-b500-3169a13741a8
 keywords: ["dcs extension (obsolete)"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # !dcs

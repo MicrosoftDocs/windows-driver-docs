@@ -3,6 +3,11 @@ title: Resource Time Outs
 description: Resource Time Outs
 ms.assetid: ea5b61e0-cb51-4da2-9596-ab85f7b01bed
 keywords: ["resource time outs"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Resource Time Outs

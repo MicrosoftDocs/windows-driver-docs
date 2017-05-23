@@ -3,6 +3,11 @@ title: Additional DBH Examples
 description: Additional DBH Examples
 ms.assetid: 6db23b6b-e5da-4ea3-9f0a-ab42c0e712d7
 keywords: ["DBH, displaying symbols", "DBH, symbol decorations", "DBH, data types", "DBH, imaginary symbols"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Additional DBH Examples

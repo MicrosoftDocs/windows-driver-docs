@@ -3,6 +3,11 @@ title: Bug Check 0x1C4 DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP
 description: The DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP bug check has a value of 0x000001C4.
 ms.assetid: B5C00570-477C-4C0C-B8B9-A7796FC33D63
 keywords: ["Bug Check 0x1C4 DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP", "DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

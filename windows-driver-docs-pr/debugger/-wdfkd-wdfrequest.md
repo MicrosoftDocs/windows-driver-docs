@@ -3,6 +3,11 @@ title: wdfkd.wdfrequest
 description: The wdfkd.wdfrequest extension displays information about a specified framework request object and the WDM I/O request packet (IRP) that is associated with the request object.
 ms.assetid: 8b99ec30-ac2b-421d-8b20-bfbd09d41dfb
 keywords: ["wdfkd.wdfrequest Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

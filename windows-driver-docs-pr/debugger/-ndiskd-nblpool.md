@@ -3,6 +3,11 @@ title: ndiskd.nblpool
 description: The ndiskd.nblpool extension displays information about a NET\_BUFFER\_LIST (NBL) pool. If you run this extension with no parameters, ndiskd will display a list of all allocated NBL pools in the system.
 ms.assetid: 78F8E45C-D13D-4628-A387-529291B4C50C
 keywords: ["ndiskd.nblpool Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

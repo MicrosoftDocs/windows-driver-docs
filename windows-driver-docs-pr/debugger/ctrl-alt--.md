@@ -3,6 +3,11 @@ title: CTRL+ALT+\\ (Debug Current Debugger)
 description: The CTRL+ALT+\\ key launches a new instance of CDB; this new debugger takes the current debugger as its target.
 ms.assetid: 0a36baa4-fe40-4498-9cf8-ae81497f1dda
 keywords: ["CTRL+ALT+\ (Debug Current Debugger) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

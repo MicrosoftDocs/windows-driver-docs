@@ -3,6 +3,11 @@ title: Setting Up Kernel-Mode Debugging over a Network Cable Manually
 description: Debugging Tools for Windows supports kernel debugging over an Ethernet network.
 ms.assetid: B4A79B2E-D4B1-42CA-9121-DEC923C76927
 keywords: ["Network debugging", "Ethernet debugging", "Docking station"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Up Kernel-Mode Debugging over a Network Cable Manually

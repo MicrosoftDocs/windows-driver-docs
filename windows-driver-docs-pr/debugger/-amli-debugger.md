@@ -3,6 +3,11 @@ title: amli debugger
 description: The amli debugger extension breaks into the AMLI Debugger.
 ms.assetid: ef55a45f-445a-4b05-a2a9-b21be3667ec3
 keywords: ["amli debugger Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

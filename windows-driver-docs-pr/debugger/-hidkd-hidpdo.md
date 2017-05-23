@@ -3,6 +3,11 @@ title: hidkd.hidpdo
 description: The hidkd.hidpdo command displays HID information associated with a physical device object (PDO).
 ms.assetid: B7FF3B62-AC41-4CFC-A9D6-609B1204E4CA
 keywords: ["hidkd.hidpdo Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

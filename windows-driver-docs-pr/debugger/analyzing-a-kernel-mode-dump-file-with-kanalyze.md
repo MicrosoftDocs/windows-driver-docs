@@ -3,6 +3,11 @@ title: Analyzing a Kernel-Mode Dump File with KAnalyze
 description: Analyzing a Kernel-Mode Dump File with KAnalyze
 ms.assetid: 647edb27-e9dc-4e6f-afa5-ea11c1c24e57
 keywords: ["dump file, KAnalyze", "KAnalyze", "OEM Support Tools, KAnalyze"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Analyzing a Kernel-Mode Dump File with KAnalyze

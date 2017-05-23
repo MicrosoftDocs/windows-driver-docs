@@ -3,6 +3,11 @@ title: Bug Check 0x59 PINBALL\_FILE\_SYSTEM
 description: The PINBALL\_FILE\_SYSTEM bug check has a value of 0x00000059. This indicates that a problem occurred in the Pinball file system.
 ms.assetid: b6b9f2e9-261d-4d4d-b282-41fadd0bf8b3
 keywords: ["Bug Check 0x59 PINBALL_FILE_SYSTEM", "PINBALL_FILE_SYSTEM"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

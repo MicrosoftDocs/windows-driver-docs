@@ -3,6 +3,11 @@ title: SymStore
 description: SymStore
 ms.assetid: acc7bf3a-62ea-4c93-843e-b81d4f71555f
 keywords: ["SymStore, features", "SymStore, using", "symbol stores, SymStore (symstore.exe)"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SymStore

@@ -3,6 +3,11 @@ title: wmitrace.stop
 description: The wmitrace.stop extension stops the Event Tracing for Windows (ETW) logger on the target computer.
 ms.assetid: 38be65ae-efef-400f-bb10-315d1f6b11d8
 keywords: ["wmitrace.stop Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: usb3kd.xhci\_resourceusage
 description: The usb3kd.xhci\_resourceusage extension displays the resources used by a USB 3.0 host controller.
 ms.assetid: 6AAB64D6-3CDA-4BA2-BBA8-F2F5AD1DBB6F
 keywords: ["usb3kd.xhci_resourceusage Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

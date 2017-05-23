@@ -3,6 +3,11 @@ title: SrcSrv
 description: SrcSrv
 ms.assetid: 4d9a236c-2a0a-4107-8f99-3f9437c79404
 keywords: ["source servers", "SrcSrv"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SrcSrv

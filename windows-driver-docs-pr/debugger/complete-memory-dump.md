@@ -3,6 +3,11 @@ title: Complete Memory Dump
 description: Complete Memory Dump
 ms.assetid: ccc4d22a-89af-4c7d-a982-f77c682cd001
 keywords: ["dump file, Complete Memory Dump", "Complete Memory Dump"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Complete Memory Dump

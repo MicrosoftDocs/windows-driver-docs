@@ -3,6 +3,11 @@ title: ds, dS (Display String)
 description: The ds and dS commands display a STRING, ANSI\_STRING, or UNICODE\_STRING structure.
 ms.assetid: cb05e89c-6c83-476b-a577-a6aeefd8cdd6
 keywords: ["ds, dS (Display String) Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,11 @@ title: GFlags Commands
 description: To use GFlags, type the following commands at the command line. You can use the GFlags commands and the Global Flags Dialog Box interchangeably.
 ms.assetid: 832b7269-623a-4f32-8bda-1059087bab09
 keywords: ["GFlags Commands Windows Debugging"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

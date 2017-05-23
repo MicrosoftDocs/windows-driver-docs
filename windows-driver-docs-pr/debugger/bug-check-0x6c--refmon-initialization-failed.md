@@ -3,6 +3,11 @@ title: Bug Check 0x6C REFMON\_INITIALIZATION\_FAILED
 description: The REFMON\_INITIALIZATION\_FAILED bug check has a value of 0x0000006C.This bug check appears very infrequently.
 ms.assetid: a312eb27-56dd-45e5-97d1-8ab4846fd31a
 keywords: ["Bug Check 0x6C REFMON_INITIALIZATION_FAILED", "REFMON_INITIALIZATION_FAILED"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

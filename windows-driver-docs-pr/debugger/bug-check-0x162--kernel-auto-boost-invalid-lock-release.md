@@ -3,6 +3,11 @@ title: Bug Check 0x162 KERNEL\_AUTO\_BOOST\_INVALID\_LOCK\_RELEASE
 description: The KERNEL\_AUTO\_BOOST\_INVALID\_LOCK\_RELEASE bug check has a value of 0x00000162. This indicates that a lock tracked by AutoBoost was released by a thread that did not own the lock.
 ms.assetid: 8430B461-892C-4517-B5E1-94DCDB413B21
 keywords: ["Bug Check 0x162 KERNEL_AUTO_BOOST_INVALID_LOCK_RELEASE", "KERNEL_AUTO_BOOST_INVALID_LOCK_RELEASE"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
