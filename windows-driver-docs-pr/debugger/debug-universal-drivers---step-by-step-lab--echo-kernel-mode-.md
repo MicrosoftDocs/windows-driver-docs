@@ -1,5 +1,5 @@
 ---
-title: Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)
+title: Debug Universal Drivers - Step-by-Step Lab (Echo Kernel Mode)
 description: This lab introduces the WinDbg kernel debugger. WinDbg is used to debug the echo kernel mode sample driver code.
 ms.assetid: 3FBC3693-4288-42BA-B1E8-84DC2A9AFFD9
 ---
@@ -49,11 +49,11 @@ You will need the following hardware to be able to complete the lab.
 You will need the following software to be able to complete the lab.
 
 -   Visual Studio 2015
--   Windows 10 SDK
--   Windows 10 WDK
+-   Windows Software Development Kit (SDK) for Windows 10
+-   Windows Driver Kit (WDK) for Windows 10
 -   The sample echo driver for Windows 10
 
-The lab has the following seven sections.
+The lab has the following eleven sections.
 
 -   [Section 1: Connect to a kernel mode WinDbg session](#connectto)
 -   [Section 2: Kernel mode debugging commands and techniques](#kernelmodedebuggingcommandsandtechniques)
@@ -74,7 +74,7 @@ The lab has the following seven sections.
 
 The PCs in this lab need to be configured to use an Ethernet network connection for kernel debugging.
 
-This lab uses two PCs. Windows debugger runs on the “host” system and the KMDF Echo driver runs on the “target” system.
+This lab uses two PCs. Windows debugger runs on the *host* system and the KMDF Echo driver runs on the *target* system.
 
 The "&lt;-Host" on the left is connected using a cross over ethernet cable to the "-&gt;Target" on the right.
 
@@ -82,11 +82,11 @@ The steps in the lab assume that you are using a cross over network cable, but t
 
 ![two pcs connected with a double arrow](images/debuglab-image-targethostdrawing1.png)
 
-To work with kernel mode applications and using Windbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](https://msdn.microsoft.com/windows-drivers/develop/preparing_a_computer_for_manual_driver_deployment) and [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md).
+To work with kernel mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](https://msdn.microsoft.com/windows-drivers/develop/preparing_a_computer_for_manual_driver_deployment) and [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md).
 
 ### <span id="Configure__kernel_mode_debugging_using_a_crossover_ethernet_cable"></span><span id="configure__kernel_mode_debugging_using_a_crossover_ethernet_cable"></span><span id="CONFIGURE__KERNEL_MODE_DEBUGGING_USING_A_CROSSOVER_ETHERNET_CABLE"></span>Configure kernel–mode debugging using a crossover ethernet cable
 
-Follow the next steps to enable kernel mode debugging on the target system.
+To enable kernel mode debugging on the target system, perform the following steps.
 
 **&lt;- On the host system**
 
@@ -102,7 +102,7 @@ Ethernet adapter Ethernet:
    Default Gateway . . . . . . . . . :
 ```
 
-2. Record the IP address of the Host System: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+2. Record the IP address of the host system: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 **-&gt; On the target system**
 
@@ -158,7 +158,7 @@ The operation completed successfully.
 **Note**  
 **Firewalls and debuggers**
 
-If you receive a pop up message from the firewall, if you wish to use the debugger, unblock the types of networks that you desire.
+If you receive a pop-up message from the firewall, and you wish to use the debugger, unblock the types of networks that you desire.
 
 ![windows security alert - windows firewall has blocked some features of this app ](images/debuglab-image-firewall-dialog-box.png)
 
@@ -166,7 +166,7 @@ If you receive a pop up message from the firewall, if you wish to use the debugg
 
 **&lt;- On the host system**
 
-1. On the host computer, open a Command Prompt window as Administrator. Change to the WinDbg.exe directory. We will use the x64version of WinDbg.exe from the Windows WDK that was installed as part of the Windows kit installation.
+1. On the host computer, open a Command Prompt window as Administrator. Change to the WinDbg.exe directory. We will use the x64version of WinDbg.exe from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation.
 ``` syntax
 C:\> Cd C:\Program Files(x86)\Windows Kits\10\Debuggers\x64 
 ```
@@ -201,10 +201,10 @@ In the command entry pane, use the up arrow and down arrow keys to scroll throug
 
 **Enable Debugger Markup Language (DML) with .prefer\_dml**
 
-Some debug commands will display text using Debugger Markup Language that you can click on to quickly gather more information.
+Some debug commands display text using Debugger Markup Language that you can click on to quickly gather more information.
 
 1. Use Ctrl+Break (Scroll Lock) in WinDBg to break into the code running on the target system. It may take a bit of time for the target system to respond.
-2. Type the following command to enable DML in the debugger command window.
+2. Type the following command to enable DML in the Debugger Command window.
 ``` syntax
 0: kd> .prefer_dml 1
 DML versions of commands on by default
@@ -286,9 +286,9 @@ Unable to enumerate user-mode unloaded modules, Win32 error 0n30
 
 *In Section 3, you will download and build the KMDF universal echo driver.*
 
-Typically, you would be working with your own driver code when you use WinDbg. To become familiar with WinDbg operation, the KMDF Template "Echo" sample driver will be used. With the source code available, it will also be easier to understand the information that is displayed in WinDbg. In addition, this sample will be used to illustrate how you can single step through native kernel mode code. This technique can be very valuable for debugging complex kernel mode code issues.
+Typically, you would be working with your own driver code when you use WinDbg. To become familiar with WinDbg operation, the KMDF Template "Echo" sample driver is used. With the source code available, it will also be easier to understand the information that is displayed in WinDbg. In addition, this sample is used to illustrate how you can single step through native kernel mode code. This technique can be very valuable for debugging complex kernel mode code issues.
 
-To download and build the Echo sample audio driver, complete the following steps.
+To download and build the Echo sample audio driver, perform the following steps.
 
 1.  **Download and extract the KMDF Echo sample from GitHub**
 
@@ -308,13 +308,13 @@ To download and build the Echo sample audio driver, complete the following steps
 
     ![github windows-driver-samples highlighting the general folder and the download zip button](images/debuglab-image-github.png)
 
-    a. For this lab, we will download the universal driver samples in one zip file.
+    a. This lab, shows how to download the universal driver samples in one zip file.
 
     <https://github.com/Microsoft/Windows-driver-samples/archive/master.zip>
 
     b. Download the master.zip file to your local hard drive.
 
-    c. Right-click *Windows-driver-samples-master.zip*, and choose **Extract All**. Specify a new folder, or browse to an existing one that will store the extracted files. For example, you could specify *C:\\DriverSamples\\* as the new folder into which the files will be extracted.
+    c. Right-click *Windows-driver-samples-master.zip*, and choose **Extract All**. Specify a new folder, or browse to an existing one that will store the extracted files. For example, you could specify *C:\\DriverSamples\\* as the new folder into which the files are extracted.
 
     d. After the files are extracted, navigate to the following subfolder.
 
@@ -348,7 +348,7 @@ To download and build the Echo sample audio driver, complete the following steps
 
     In Visual Studio, click **Build** &gt; **Build Solution**.
 
-    If all goes well, the build windows will display a message indicating that the build for all three projects succeeded.
+    If all goes well, the build windows should display a message indicating that the build for all three projects succeeded.
 
 7.  **Locate the built driver files**
 
@@ -389,15 +389,15 @@ The process of moving the driver package to the target computer and installing t
 
 Before you manually deploy a driver, you must prepare the target computer by turning on test signing. You also need to locate the DevCon tool in your WDK installation. After that you’re ready to run the built driver sample.
 
-Installing the driver on the target system by performing the following steps.
+To install the driver on the target system, perform the following steps.
 
 **Enable test signed drivers**
 
-Enable the ability to run test signed drivers, by completing the following steps.
+Enable the ability to run test signed drivers:
 
 a. Open Windows Settings.
 b. In Update and Security, select **Recovery**.
-c. Under Advanced startup, click on **Restart Now**.
+c. Under Advanced startup, click **Restart Now**.
 d. When the PC reboots, select **Startup options**.
 e. Select Disable driver signature enforcement by pressing the **F7** key.
 f. Reboot the target computer.
@@ -427,7 +427,7 @@ On the target computer, open a Command Prompt window as Administrator. Navigate 
 If you get an error message about *devcon* not being recognized, try adding the path to the *devcon* tool. For example, if you copied it to a folder called *C:\\Tools*, then try using the following command:
 
 **c:\\tools\\devcon install echo.inf root\\ECHO**
-A dialog box will appear indicating that the test driver is an unsigned driver. Click on “Install this driver anyway” to proceed.
+A dialog box will appear indicating that the test driver is an unsigned driver. Click **Install this driver anyway** to proceed.
 
 ![windows security warning - windows can't verify the publisher of this driver software](images/debuglab-image-install-security-warning.png)
 
@@ -599,7 +599,7 @@ set ENABLE_OPTIMIZER=0
 
 *In Section 6, you will display information about the echo sample device driver and where it lives in the Plug and Play device tree.*
 
-Information about the device driver in the plug and play device tree can be useful for troubleshooting. For example, if a device driver is not resident in the device tree, there may an issue with the installation of the device driver.
+Information about the device driver in the Plug and Play device tree can be useful for troubleshooting. For example, if a device driver is not resident in the device tree, there may an issue with the installation of the device driver.
 
 For more information about the device node debug extension, see [**!devnode**](-devnode.md).
 
@@ -627,7 +627,7 @@ For more information about the device node debug extension, see [**!devnode**](-
 
     ![find dialog box showing the term echo being searched for](images/debuglab-image-find-dialog.png)
 
-3.  The echo device driver should be loaded. Use the **!devnode 0 1 echo** command to display plug and play information associated with our echo device driver as shown below.
+3.  The echo device driver should be loaded. Use the **!devnode 0 1 echo** command to display Plug and Play information associated with our echo device driver as shown below.
 
     ``` syntax
     0: Kd> !devnode 0 1 echo
@@ -640,7 +640,7 @@ For more information about the device node debug extension, see [**!devnode**](-
     …
     ```
 
-4.  The output displayed in the previous command includes the PDO associated with the running instance of our driver, in this example it is *0xffffe0007b71a960*. Enter the **!devobj***&lt;PDO address&gt;* command to display plug and play information associated with the echo device driver on your PC. Use the PDO address that **!devnode** displays on your PC, not the one shown here.
+4.  The output displayed in the previous command includes the PDO associated with the running instance of our driver, in this example it is *0xffffe0007b71a960*. Enter the **!devobj***&lt;PDO address&gt;* command to display Plug and Play information associated with the echo device driver. Use the PDO address that **!devnode** displays on your PC, not the one shown here.
 
     ``` syntax
     0: kd> !devobj 0xffffe0007b71a960
@@ -654,7 +654,7 @@ For more information about the device node debug extension, see [**!devnode**](-
     Device queue is not busy.
     ```
 
-5.  The output displayed in the **!devnode 0 1** command includes the PDO address associated with the running instance of our driver, in this example it is *0xffffe0007b71a960*. Enter the **!devstack***&lt;PDO address&gt;* command to display plug and play information associated with the device driver. Use the PDO address that **!devnode** displays on your PC, not the one shown below.
+5.  The output displayed in the **!devnode 0 1** command includes the PDO address associated with the running instance of our driver, in this example it is *0xffffe0007b71a960*. Enter the **!devstack***&lt;PDO address&gt;* command to display Plug and Play information associated with the device driver. Use the PDO address that **!devnode** displays on your PC, not the one shown below.
 
     ``` syntax
     0: kd> !devstack 0xffffe0007b71a960

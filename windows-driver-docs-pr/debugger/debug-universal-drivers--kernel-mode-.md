@@ -1,13 +1,13 @@
 ---
-title: Debug Drivers - Step by Step Lab (Sysvad Kernel-Mode)
-description: This lab provides hands-on exercises that demonstrate how to debug the Sysvad audio kernel mode device driver.
+title: Debug Drivers - Step-by-Step Lab (Sysvad Kernel Mode)
+description: This lab provides hands-on exercises that demonstrate how to debug the Sysvad audio kernel-mode device driver.
 ms.assetid: 4A31451C-FC7E-4C5F-B4EB-FBBAC8DADF9E
 ---
 
-# <span id="debugger.debug_universal_drivers__kernel-mode_"></span>Debug Drivers - Step by Step Lab (Sysvad Kernel-Mode)
+# <span id="debugger.debug_universal_drivers__kernel-mode_"></span>Debug Drivers - Step by Step Lab (Sysvad Kernel Mode)
 
 
-This lab provides hands-on exercises that demonstrate how to debug the Sysvad audio kernel mode device driver.
+This lab provides hands-on exercises that demonstrate how to debug the Sysvad audio kernel-mode device driver.
 
 Microsoft Windows Debugger (WinDbg) is a powerful Windows-based debugging tool that you can use to perform user-mode and kernel-mode debugging. WinDbg provides source-level debugging for the Windows kernel, kernel-mode drivers, and system services, as well as user-mode applications and drivers.
 
@@ -16,29 +16,29 @@ WinDbg can step through source code, set breakpoints, view variables (including 
 ## <span id="lab_setup"></span>Lab setup
 
 
-You will need the following hardware to be able to complete the lab.
+You will need the following hardware to be able to complete the lab:
 
 -   A laptop or desktop computer (host) running Windows 10
 -   A laptop or desktop computer (target) running Windows 10
--   A network cross over cable or a network hub and network cables to connect the two PCs
+-   A network cross-over cable, or a network hub and network cables to connect the two PCs
 -   Access to the internet to download symbol files
 
 You will need the following software to be able to complete the lab.
 
 -   Microsoft Visual Studio 2015
--   Windows 10 SDK
--   Windows 10 WDK
+-   Windows Software Development Kit (SDK) for Windows 10
+-   Windows Driver Kit (WDK) for Windows 10
 -   The sample Sysvad audio driver for Windows 10
 
 For information on downloading and installing the WDK, see [Download the Windows Driver Kit (WDK)](https://developer.microsoft.com/windows/hardware/windows-driver-kit)
 
-## <span id="sysvad_debugging_walkthrough_overview"></span>Sysvad debugging walkthrough overview
+## <span id="sysvad_debugging_walkthrough_overview"></span>Sysvad debugging walkthrough
 
 
-This topic will walk through the process to debug a kernel mode driver. The exercises use the sysvad virtual audio driver sample. Because the sysvad audio driver doesn't interact with actual audio hardware it can be used on most devices. The walkthrough will cover the following tasks:
+This lab walk you through the process of debugging a kernel-mode driver. The exercises use the sysvad virtual audio driver sample. Because the sysvad audio driver doesn't interact with actual audio hardware, it can be used on most devices. The lab covers the following tasks:
 
--   [Section 1: Connect to a kernel mode WinDbg session](#connectto)
--   [Section 2: Kernel mode debugging commands and techniques](#kernelmodedebuggingcommandsandtechniques)
+-   [Section 1: Connect to a kernel-mode WinDbg session](#connectto)
+-   [Section 2: kernel-mode debugging commands and techniques](#kernelmodedebuggingcommandsandtechniques)
 -   [Section 3: Download and build the Sysvad audio driver](#download)
 -   [Section 4: Install the Sysvad audio driver on the target system](#install)
 -   [Section 5: Use WinDbg to display information about the driver](#usewindbgtodisplayinformation)
@@ -52,19 +52,19 @@ This topic will walk through the process to debug a kernel mode driver. The exer
 -   [Section 13: Ending the WinDbg session](#endingthesession)
 -   [Section 14: Windows debugging resources](#windowsdebuggingresources)
 
-## <span id="echo_driver_lab"></span>Echo Driver Lab
+## <span id="echo_driver_lab"></span>Echo driver lab
 
 
-The Echo driver is a simpler driver then the Sysvad audio driver. If you are new to WinDbg, you may want to consider first completing the [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md). This lab reuses the setup directions from that lab, so if you have completed that lab you will be able to skip section 1 and 2.
+The Echo driver is a simpler driver then the Sysvad audio driver. If you are new to WinDbg, you may want to consider first completing the [Debug Universal Drivers - Step-by-Step Lab (Echo kernel mode)](debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md). This lab reuses the setup directions from that lab, so if you have completed that lab you can skip sections 1 and 2 here.
 
-## <span id="connectto"></span>Section 1: Connect to a kernel mode WinDbg session
+## <span id="connectto"></span>Section 1: Connect to a kernel-mode WinDbg session
 
 
 *In Section 1, you will configure network debugging on the host and target system.*
 
 The PCs in this lab need to be configured to use an Ethernet network connection for kernel debugging.
 
-This lab uses two PCs. Windows debugger runs on the “host” system and the Sysvad driver runs on the “target” system.
+This lab uses two computers. WinDbg runs on the *host* system and the Sysvad driver runs on the *target* system.
 
 The "&lt;-Host" on the left is connected using a cross over ethernet cable to the "-&gt;Target" on the right.
 
@@ -72,11 +72,11 @@ The steps in the lab assume that you are using a cross over network cable, but t
 
 ![two pcs connected with a double arrow](images/debuglab-image-targethostdrawing1.png)
 
-To work with kernel mode applications and using Windbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](https://msdn.microsoft.com/windows-drivers/develop/preparing_a_computer_for_manual_driver_deployment) and [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md).
+To work with kernel-mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](https://msdn.microsoft.com/windows-drivers/develop/preparing_a_computer_for_manual_driver_deployment) and [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md).
 
 ### <span id="configure__kernel_mode_debugging_using_a_crossover_ethernet_cable"></span>Configure kernel–mode debugging using a crossover ethernet cable
 
-Follow the next steps to enable kernel mode debugging on the target system.
+To enable kernel-mode debugging on the target system, perform the following steps.
 
 **&lt;- On the host system**
 
@@ -96,9 +96,9 @@ Ethernet adapter Ethernet:
    Default Gateway . . . . . . . . . :
 ```
 
-2. Record the IP address of the Host System: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+2. Record the IP address of the host System: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-3. Record the Host Name of the Host System: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+3. Record the Host Name of the host System: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 **-&gt; On the target system**
 
@@ -119,7 +119,7 @@ Approximate round trip times in milli-seconds:
     Minimum = 0ms, Maximum = 1ms, Average = 0ms
 ```
 
-Use the KDNET utility to enable kernel mode debugging on the target system by completing the following steps.
+To use the KDNET utility to enable kernel-mode debugging on the target system, peform the following steps.
 
 1. On the host system, locate the WDK KDNET directory. By default it is located here.
 ``` syntax
@@ -149,7 +149,7 @@ Enabling network debugging on Intel(R) 82577LM Gigabit Network Connection.
 Key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
 ```
 
-5. Type this command to confirm that the dbgsettings they are set properly.
+5. Type this command to confirm that the dbgsettings are set properly.
 ``` syntax
 C:\> bcdedit /dbgsettings
 busparams               0.25.0
@@ -165,7 +165,7 @@ Copy the auto generated unique key into a text file, to avoid having to type it 
 **Note**  
 **Firewalls and debuggers**
 
-If you receive a pop up message from the firewall, if you wish to use the debugger, unblock the types of networks that you desire.
+If you receive a pop-up message from the firewall, and you wish to use the debugger, unblock the types of networks that you desire.
 
 ![windows security alert - windows firewall has blocked some features of this app](images/debuglab-image-firewall-dialog-box.png)
 
@@ -173,13 +173,13 @@ If you receive a pop up message from the firewall, if you wish to use the debugg
 
 **&lt;- On the host system**
 
-1. On the host computer, open a Command Prompt window as Administrator. Change to the WinDbg.exe directory. We will use the x64version of WinDbg.exe from the Windows WDK that was installed as part of the Windows kit installation.
+1. On the host computer, open a Command Prompt window as Administrator. Change to the WinDbg.exe directory. We will use the x64version of WinDbg.exe from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation.
 
 ``` syntax
 C:\> Cd C:\Program Files (x86)\Windows Kits\10\Debuggers\x64 
 ```
 
-2. Launch WinDbg with remote user debug using the following command. The value for the key and port match what we set earlier using BCDEdit on the target.
+2. Launch WinDbg with remote user debug using the following command. The value for the key and port match what you set earlier using BCDEdit on the target.
 ``` syntax
 C:\> WinDbg –k net:port=50010,key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
 ```
@@ -200,7 +200,7 @@ The Debugger Command window is split into two panes. You type commands in the sm
 
 In the command entry pane, use the up arrow and down arrow keys to scroll through the command history. When a command appears, you can edit it or press **ENTER** to run the command.
 
-## <span id="kernelmodedebuggingcommandsandtechniques"></span>Section 2: Kernel mode debugging commands and techniques
+## <span id="kernelmodedebuggingcommandsandtechniques"></span>Section 2: kernel-mode debugging commands and techniques
 
 
 *In Section 2, you will use debug commands to display information about the target system.*
@@ -209,10 +209,10 @@ In the command entry pane, use the up arrow and down arrow keys to scroll throug
 
 **Enable Debugger Markup Language (DML) with .prefer\_dml**
 
-Some debug commands will display text using Debugger Markup Language that you can click on to quickly gather more information.
+Some debug commands display text using Debugger Markup Language that you can click on to quickly gather more information.
 
 1. Use Ctrl+Break (Scroll Lock) in WinDBg to break into the code running on the target system. It may take a bit of time for the target system to respond.
-2. Type the following command to enable DML in the debugger command window.
+2. Type the following command to enable DML in the Debugger Command window.
 ``` syntax
 0: kd> .prefer_dml 1
 DML versions of commands on by default
@@ -247,7 +247,7 @@ System Uptime: 0 days 01:31:58.931
 
 **List the loaded modules**
 
-6. You can verify that you are working with the right kernel mode process by displaying the loaded modules by typing the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md) command in the WinDbg window.
+6. You can verify that you are working with the right kernel-mode process by displaying the loaded modules by typing the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md) command in the WinDbg window.
 ``` syntax
 0: Kd> lm
 start             end                 module name
@@ -275,9 +275,9 @@ Because we have yet to set the symbol path and loaded symbols, limited informati
 
 *In Section 3, you will download and build the Sysvad audio driver.*
 
-Typically, you would be working with your own driver code when you use WinDbg. To become familiar with debugging audio drivers, the Sysvad virtual audio sample driver will be used. This sample will be used to illustrate how you can single step through native kernel mode code. This technique can be very valuable for debugging complex kernel mode code issues.
+Typically, you would be working with your own driver code when you use WinDbg. To become familiar with debugging audio drivers, the Sysvad virtual audio sample driver is used. This sample is used to illustrate how you can single step through native kernel-mode code. This technique can be very valuable for debugging complex kernel-mode code issues.
 
-To download and build the Sysvad sample audio driver, complete the following steps.
+To download and build the Sysvad sample audio driver, perform the following steps.
 
 1.  **Download and extract the Sysvad audio sample from GitHub**
 
@@ -287,13 +287,13 @@ To download and build the Sysvad sample audio driver, complete the following ste
 
     ![github repo showing general folder and download zip button](images/sysvad-lab-github.png)
 
-    For this lab, we will show how to download the universal driver samples in one zip file.
+    This lab, shows how to download the universal driver samples in one zip file.
 
     a. Download the master.zip file to your local hard drive.
 
     <https://github.com/Microsoft/Windows-driver-samples/archive/master.zip>
 
-    b. Right-click *Windows-driver-samples-master.zip*, and choose **Extract All**. Specify a new folder, or browse to an existing one that will store the extracted files. For example, you could specify *C:\\WDK\_Samples\\* as the new folder into which the files will be extracted.
+    b. Right-click *Windows-driver-samples-master.zip*, and choose **Extract All**. Specify a new folder, or browse to an existing one that will store the extracted files. For example, you could specify *C:\\WDK\_Samples\\* as the new folder into which the files are extracted.
 
     c. After the files are extracted, navigate to the following subfolder.
 
@@ -311,7 +311,7 @@ To download and build the Sysvad sample audio driver, complete the following ste
 
     In Solution Explorer, right-click **Solution 'sysvad' (6 projects)**, and choose **Configuration Manager**. Make sure that the configuration and platform settings are the same for the four projects. By default, the configuration is set to "Win10 Debug", and the platform is set to "Win64" for all the projects. If you make any configuration and/or platform changes for one project, you must make the same changes for the remaining three projects.
 
-    **Note**  This lab assumes that 64 bit Windows is being used. If you are using 32 bit Window, build the driver for 32 bit.
+    **Note**  This lab assumes that 64 bit Windows is being used. If you are using 32 bit Windows, build the driver for 32 bit.
 
      
 
@@ -323,17 +323,17 @@ To download and build the Sysvad sample audio driver, complete the following ste
 
     In Visual Studio, click **Build** &gt; **Build Solution**.
 
-    If all goes well, the build windows will display a message indicating that the build for all six projects succeeded.
+    The build windows should display a message indicating that the build for all six projects succeeded.
 
 6.  **Locate the built driver files**
 
-    In File Explorer, navigate to the folder that contains the extracted files for the sample. For example, you would navigate to *C:\\WDK\_Samples\\Sysvad*, if that's the folder you specified earlier. Within that folder, the location of the compiled driver files varies depending on the configuration and platform settings that you selected in the **Configuration Manager**. For example, if you left the default settings unchanged, then the compiled driver files will be saved to a folder named *\\x64\\Debug* for a 64 bit, debug build.
+    In File Explorer, navigate to the folder that contains the extracted files for the sample. For example, you would navigate to *C:\\WDK\_Samples\\Sysvad*, if that's the folder you specified earlier. Within that folder, the location of the compiled driver files varies depending on the configuration and platform settings that you selected in the **Configuration Manager**. For example, if you left the default settings unchanged, then the compiled driver files will be saved to a folder named *\\x64\\Debug* for a 64-bit, debug build.
 
     Navigate to the folder that contains the built files for the TabletAudioSample driver:
 
     *C:\\WDK\_Samples\\Sysvad\\TabletAudioSample\\x64\\Debug*. The folder will contain the TabletAudioSample .SYS driver, symbol pdp file and the inf file. You will also need to locate the SwapAPO, PropPageExt and KeywordDetectorContosoAdapter dlls and symbol files.
 
-    To install the driver, you will need these files:
+    To install the driver, you will need the following files.
 
     |                                   |                                                                                   |
     |-----------------------------------|-----------------------------------------------------------------------------------|
@@ -367,25 +367,25 @@ The process of moving the driver package to the target computer and installing t
 
 Before you manually deploy a driver, you must prepare the target computer by turning on test signing. You also need to locate the DevCon tool in your WDK installation. After that you’re ready to run the built driver sample on the target system.
 
-Installing the driver on the target system by performing the following steps.
+To install the driver on the target system, perform the following steps.
 
 1.  **Enable test signed drivers**
 
-    Enable the ability to run test signed drivers, by completing the following steps.
+    To enable the ability to run test signed drivers:
 
     1. Open Windows Settings.
 
     2. In **Update and Security**, select **Recovery**.
 
-    3. Under **Advanced startup**, click on **Restart Now**.
+    3. Under **Advanced startup**, click **Restart Now**.
 
     4. When the PC restarts, select **Troubleshoot**.
 
-    4. Then select **Advanced options**, **Startup Settings** and then click on **Restart**.
+    5. Then select **Advanced options**, **Startup Settings** and then click **Restart**.
 
-    5. Select Disable driver signature enforcement by pressing the **F7** key.
+    6. Select Disable driver signature enforcement by pressing the **F7** key.
 
-    6. The PC will start with the new values in place.
+    7. The PC will start with the new values in place.
 
 2.  **&lt;- On the host system**
 
@@ -399,9 +399,9 @@ Installing the driver on the target system by performing the following steps.
 
     The following instructions show you how to install and test the sample driver.
 
-    The INF file required for installing this driver is *TabletAudioSample.inf*. On the target computer, open a Command Prompt window as Administrator. Navigate to your driver package folder, right click the TabletAudioSample.inf file and select **Install**.
+    The INF file required for installing this driver is *TabletAudioSample.inf*. On the target computer, open a Command Prompt window as Administrator. Navigate to your driver package folder, right-click the TabletAudioSample.inf file, and then select **Install**.
 
-    A dialog box will appear indicating that the test driver is an unsigned driver. Click on “Install this driver anyway” to proceed.
+    A dialog box will appear indicating that the test driver is an unsigned driver. Click **Install this driver anyway** to proceed.
 
     ![windows security warning - windows can't verify the publisher](images/debuglab-image-install-security-warning.png)
 
@@ -412,31 +412,33 @@ Installing the driver on the target system by performing the following steps.
 
     For more detailed instructions, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](http://msdn.microsoft.com/library/windows/hardware/hh698272.aspx).
 
-    The inf file contains the hardware ID for installing the *tabletaudiosample.sys*. For the sysvad sample the hardware ID is **root\\sysvad\_TabletAudioSample**.
+    The INF file contains the hardware ID for installing the *tabletaudiosample.sys*. For the sysvad sample, the hardware ID is **root\\sysvad\_TabletAudioSample**.
 
     On the target computer, open a Command Prompt window as Administrator. Navigate to your driver package folder, and enter the following command:
 
     **devcon status root\\sysvad\_TabletAudioSample**
 
+    Status information is displayed durring the devcon install.
+
 4.  **Examine the driver in Device Manager**
 
-    On the target computer, in a Command Prompt window, enter **devmgmt** open Device Manager. In Device Manager, on the View menu, choose Devices by type.
+    On the target computer, in a Command Prompt window, enter **devmgmt** to open Device Manager. In Device Manager, on the View menu, select **Devices by type**.
 
     In the device tree, locate *Virtual Audio Device (WDM) - Tablet Sample* in the Audio Device node. This is typically under the **Sound, video and game controllers** node. Confirm that it is installed and active.
 
-    Highlight the driver for the actual hardware on the PC in device manager. Right click the driver and click disable to disable the driver.
+    Highlight the driver for the actual hardware on the PC in Device Manager. Then right-click the driver and click disable to disable the driver.
 
-    Confirm in device manager that audio hardware driver, displays the a down arrow, indicating that it is disabled.
+    Confirm in Device Manager that audio hardware driver, displays the a down arrow, indicating that it is disabled.
 
     ![device manager tree with the virtual audio device tablet sample highlighted](images/sysvad-lab-audio-device-manager.png)
 
     After successfully installing the sample driver, you're now ready to test it.
 
-**Test the sysvad audio driver**
+**Test the Sysvad audio driver**
 
-1. On the target computer, in a Command Prompt window, enter **devmgmt** to open Device Manager. In Device Manager, on the **View** menu, choose **Devices by type**. In the device tree, locate *Virtual Audio Device (WDM) - Tablet Sample*.
+1. On the target computer, in a Command Prompt window, enter **devmgmt** to open Device Manager. In Device Manager, on the **View** menu, select **Devices by type**. In the device tree, locate *Virtual Audio Device (WDM) - Tablet Sample*.
 
-2. Open Control Panel and navigate to **Hardware and Sound** &gt; **Manage audio devices**. In the Sound dialog box, select the speaker icon labeled as *Virtual Audio Device (WDM) - Tablet Sample*, then click **Set Default**, but do not click **OK**. This will keep the Sound dialog box open.
+2. Open Control Panel and navigate to **Hardware and Sound** &gt; **Manage audio devices**. In the Sound dialog box, select the speaker icon labeled as *Virtual Audio Device (WDM) - Tablet Sample*, and then click **Set Default**, but do not click **OK**. This will keep the Sound dialog box open.
 3. Locate an MP3 or other audio file on the target computer and double-click to play it. Then in the Sound dialog box, verify that there is activity in the volume level indicator associated with the *Virtual Audio Device (WDM) - Tablet Sample* driver.
 
 ## <span id="usewindbgtodisplayinformation"></span>Section 5: Use WinDbg to display information about the driver
@@ -446,7 +448,7 @@ Installing the driver on the target system by performing the following steps.
 
 Symbols allow for WinDbg to display additional information such as variable names, that can be invaluable when debugging. WinDbg uses the Microsoft Visual Studio debug symbol formats for source-level debugging. It can access any symbol or variable from a module that has PDB symbol files.
 
-Load the debugger by performing the following steps.
+To load the debugger, perform the following steps.
 
 **&lt;-On the host system**
 
@@ -458,7 +460,7 @@ Load the debugger by performing the following steps.
 
 2.  Use Ctrl+Break (Scroll Lock) to break into the code running on the target system.
 
-**Setting the symbol path**
+**Set the symbol path**
 
 1.  To set the symbols path to the Microsoft symbol server in the WinDbg environment, use the **.symfix** command.
 
@@ -495,11 +497,11 @@ There are a number of approaches that can be used to work with symbols. In many 
  
 
 **Note**  
-**Understanding source code symbol requirements**
+**Understand source code symbol requirements**
 
 To perform source debugging, you must build a checked (debug) version of your binaries. The compiler will create symbol files (.pdb files). These symbol files will show the debugger how the binary instructions correspond to the source lines. The actual source files themselves must also be accessible to the debugger.
 
-The symbol files do not contain the text of the source code. For debugging, it is best if the linker does not optimize your code. Source debugging and access to local variables are more difficult, and sometimes nearly impossible, if the code has been optimized. If you are having problems viewing local variables or source lines, set the following build options:
+The symbol files do not contain the text of the source code. For debugging, it is best if the linker does not optimize your code. Source debugging and access to local variables are more difficult, and sometimes nearly impossible, if the code has been optimized. If you are having problems viewing local variables or source lines, set the following build options.
 
 ``` syntax
 set COMPILE_DEBUG=1
@@ -508,7 +510,7 @@ set ENABLE_OPTIMIZER=0
 
  
 
-1.  Type the following in the command area of the debugger to display information about the Sysvad driver :
+1.  Type the following in the command area of the debugger to display information about the Sysvad driver.
 
     ``` syntax
     0: kd> lm m tabletaudiosample v
@@ -526,8 +528,8 @@ set ENABLE_OPTIMIZER=0
 
     For more information, see [**lm**](lm--list-loaded-modules-.md).
 
-2.  Click on the *Browse all global symbols link* in the debug output to display information about items symbols that start with the letter “a”.
-3.  Because DML is enabled, some elements of the output are hot links that you can click on. Click on the *data* link in the debug output to display information about items symbols that start with the letter A.
+2.  Click on **Browse all global symbols** link in the debug output to display information about items symbols that start with the letter a.
+3.  Because DML is enabled, some elements of the output are hot links that you can click on. Click on the *data* link in the debug output to display information about items symbols that start with the letter a.
 
     ``` syntax
     0: kd> x /D /f tabletaudiosample!a*
@@ -588,13 +590,13 @@ set ENABLE_OPTIMIZER=0
 
 *In Section 6, you will display information about the Sysvad sample device driver and where it lives in the Plug and Play device tree.*
 
-Information about the device driver in the plug and play device tree can be useful for troubleshooting. For example, if a device driver is not resident in the device tree, there may an issue with the installation of the device driver.
+Information about the device driver in the Plug and Play device tree can be useful for troubleshooting. For example, if a device driver is not resident in the device tree, there may an issue with the installation of the device driver.
 
 For more information about the device node debug extension, see [**!devnode**](-devnode.md).
 
 **&lt;-On the host system**
 
-1.  To see all the device nodes in the Plug and Play device tree, enter the **!devnode 0 1** command. This command can take a minute or two to run. During that time "\*Busy" will be displayed in the status area of WinDbg.
+1.  To see all the device nodes in the Plug and Play device tree, enter the **!devnode 0 1** command. This command can take a minute or two to run. During that time, "\*Busy" will be displayed in the status area of WinDbg.
 
     ``` syntax
     0: kd> !devnode 0 1
@@ -628,7 +630,7 @@ For more information about the device node debug extension, see [**!devnode**](-
 
     Note that the PDO address and the DevNode address are displayed.
 
-3.  Use the **!devnode 0 1 sysvad\_TabletAudioSample** command to display plug and play information associated with our sysvad device driver.
+3.  Use the **!devnode 0 1 sysvad\_TabletAudioSample** command to display Plug and Play information associated with our Sysvad device driver.
 
     ``` syntax
     0: kd> !devnode 0 1 sysvad_TabletAudioSample
@@ -672,7 +674,7 @@ For more information about the device node debug extension, see [**!devnode**](-
         Previous State = DeviceNodeStartPostWork (0x307)
     ```
 
-4.  The output displayed in the previous command includes the PDO associated with the running instance of our driver, in this example it is *0xffffe00089c575a0*. Enter the **!devobj***&lt;PDO address&gt;* command to display plug and play information associated with the Sysvad device driver on your PC. Use the PDO address that **!devnode** displays on your PC, not the one shown here.
+4.  The output displayed in the previous command includes the PDO associated with the running instance of our driver, in this example it is *0xffffe00089c575a0*. Enter the **!devobj***&lt;PDO address&gt;* command to display Plug and Play information associated with the Sysvad device driver. Use the PDO address that **!devnode** displays on your PC, not the one shown here.
 
     ``` syntax
     0: kd> !devobj 0xffffe00089c575a0
@@ -686,7 +688,7 @@ For more information about the device node debug extension, see [**!devnode**](-
     Device queue is not busy.
     ```
 
-5.  The output displayed in the **!devobj** command includes the name of the attached device - *\\Driver\\sysvad\_tabletaudiosample*. Use the **!drvobj** command with a bit mask of 2, to display information associated with the attached device.
+5.  The output displayed in the **!devobj** command includes the name of the attached device: *\\Driver\\sysvad\_tabletaudiosample*. Use the **!drvobj** command with a bit mask of 2, to display information associated with the attached device.
 
     ``` syntax
     0: kd> !drvobj \Driver\sysvad_tabletaudiosample 2
@@ -760,7 +762,7 @@ This diagram shows a more complex device node tree.
 
 Breakpoints are used to stop code execution at a particular line of code. You can then step forward in the code from that point, to debug that specific section of code.
 
-To set a breakpoint using a debug command, use one of the following **b** commands:
+To set a breakpoint using a debug command, use one of the following **b** commands.
 
 <table>
 <colgroup>
@@ -828,7 +830,7 @@ To set a breakpoint using a debug command, use one of the following **b** comman
 
 8.  **-&gt;On the target system**
 
-    In Windows open device manager by using the icon or by entering **mmc devmgmt.msc**. In **Device Manager** expand the **Sound, video and game controllers** node. Right click on the virtual audio driver entry and select **Disable** from the menu.
+    In Windows, open Device Manager by using the icon or by entering **mmc devmgmt.msc**. In **Device Manager** expand the **Sound, video and game controllers** node. Right click on the virtual audio driver entry and select **Disable** from the menu.
 
 9.  Right click on the virtual audio driver entry again and select **Enable** from the menu.
 10. **&lt;- On the host system**
@@ -1746,7 +1748,7 @@ For more information about threads and processes, see the following references o
 
  
 
-## <span id="irqlregistersmemory"></span>Section 11: IRQL, registers and disassembly
+## <span id="irqlregistersmemory"></span>Section 11: IRQL, registers, and disassembly
 
 
 ### <span id="view_the_saved_irql"></span>View the saved IRQL
@@ -2084,7 +2086,7 @@ Be sure and use the **g** command to let the target computer run code, so that i
 
 For more information, see [Ending a Debugging Session in WinDbg](ending-a-debugging-session-in-windbg.md) in the debugging reference documentation.
 
-## <span id="windowsdebuggingresources"></span>Section 14: Debugging Resources
+## <span id="windowsdebuggingresources"></span>Section 14: Windows debugging resources
 
 
 Additional information is available on Windows debugging. Note that some of these books will use older versions of Windows such as Windows Vista in their examples, but the concepts discussed are applicable to most versions of Windows.
