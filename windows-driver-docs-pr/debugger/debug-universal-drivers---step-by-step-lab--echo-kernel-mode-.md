@@ -57,7 +57,7 @@ The lab has the following seven sections.
 
 -   [Section 1: Connect to a kernel mode WinDbg session](#connectto)
 -   [Section 2: Kernel mode debugging commands and techniques](#kernelmodedebuggingcommandsandtechniques)
--   [Section 3: Download and build the KMDF Universal Echo Driver](#downloadbuild)
+-   [Section 3: Download and build the KMDF Universal Echo Driver](#download)
 -   [Section 4: Install the KMDF Echo driver sample on the target system](#install)
 -   [Section 5: Use WinDbg to display information about the driver](#usewindbgtodisplayinformation)
 -   [Section 6: Display plug and play device tree information](#displayingtheplugandplaydevicetree)
@@ -192,7 +192,7 @@ The Debugger Command window is split into two panes. You type commands in the sm
 
 In the command entry pane, use the up arrow and down arrow keys to scroll through the command history. When a command appears, you can edit it or press **ENTER** to run the command.
 
-## <span id="KernelModeDebuggingCommandsAndTechniques"></span><span id="kernelmodedebuggingcommandsandtechniques"></span><span id="KERNELMODEDEBUGGINGCOMMANDSANDTECHNIQUES"></span>Section 2: Kernel mode debugging commands and techniques
+### <span id="KernelModeDebuggingCommandsAndTechniques"></span><span id="kernelmodedebuggingcommandsandtechniques"></span><span id="KERNELMODEDEBUGGINGCOMMANDSANDTECHNIQUES"></span>Section 2: Kernel mode debugging commands and techniques
 
 
 *In Section 2, you will use debug commands to display information about the target system.*
@@ -279,7 +279,7 @@ Unable to enumerate user-mode unloaded modules, Win32 error 0n30
 ```
 
 8. Because we have yet to set the symbol path and loaded symbols, limited information is available in the debugger.
-### <span id="downloadbuild"></span>Section 3: Download and build the KMDF universal echo driver
+### <span id="Download"></span><span id="download"></span><span id="DOWNLOAD"></span>Section 3: Download and build the KMDF universal echo driver
 
 *In Section 3, you will download and build the KMDF universal echo driver.*
 
@@ -374,7 +374,7 @@ To download and build the Echo sample audio driver, complete the following steps
 
 In the next section, you will copy the code to the target system, and install and test the driver.
 
-### <span id="install"></span>Section 4: Install the KMDF echo driver sample on the target system
+### <span id="Install"></span><span id="install"></span><span id="INSTALL"></span>Section 4: Install the KMDF echo driver sample on the target system
 
 *In Section 4, you will use devcon to install the echo sample driver.*
 
@@ -1417,7 +1417,7 @@ Be sure and use the **g** command to let the target computer run code, so that i
 
 For more information, see [Ending a Debugging Session in WinDbg](ending-a-debugging-session-in-windbg.md) in the debugging reference documentation.
 
-## <span id="WindowsDebuggingResources"></span><span id="windowsdebuggingresources"></span><span id="WINDOWSDEBUGGINGRESOURCES"></span>Section 11: Windows debugging resources
+### <span id="WindowsDebuggingResources"></span><span id="windowsdebuggingresources"></span><span id="WINDOWSDEBUGGINGRESOURCES"></span>Section 11: Windows debugging resources
 
 
 Additional information is available on Windows debugging. Note that some of these books will use older versions of Windows such as Windows Vista in their examples, but the concepts discussed are applicable to most versions of Windows.
@@ -1438,7 +1438,7 @@ The Defrag Tools Show WinDbg Episodes 13-29 <http://channel9.msdn.com/Shows/Defr
 
 OSR <https://www.osr.com/>
 
-## <span id="related_topics"></span>Related topics
+### <span id="related_topics"></span>Related topics
 
 
 [Standard Debugging Techniques](standard-debugging-techniques.md)
