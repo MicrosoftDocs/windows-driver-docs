@@ -22,6 +22,9 @@
       - name: Windows Driver Frameworks
         tocHref: /windows-hardware/drivers/wdf/
         topicHref: /windows-hardware/drivers/wdf/index
+      - name: Windows Debugging Tools
+        tocHref: /windows-hardware/drivers/debugger/
+        topicHref: /windows-hardware/drivers/debugger/index
       - name: Device and Driver Technologies
         tocHref: /windows-hardware/drivers/device-and-driver-technologies/
         topicHref: /windows-hardware/drivers/device-and-driver-technologies
