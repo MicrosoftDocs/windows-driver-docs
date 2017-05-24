@@ -87,6 +87,7 @@ To enable kernel-mode debugging on the target system, perform the following step
 **&lt;- On the host system**
 
 1. Open a command prompt on the host system and type **ipconfig /all** to determine its IP address.
+
 ``` syntax
 C:\>ipconfig /all
 Windows IP Configuration
@@ -128,17 +129,20 @@ Approximate round trip times in milli-seconds:
 To use the KDNET utility to enable kernel-mode debugging on the target system, peform the following steps.
 
 1. On the host system, locate the WDK KDNET directory. By default it is located here.
+
 ``` syntax
 C:\Program Files (x86)\Windows Kits\10\
 ```
 
 2. Locate these two files and copy them to a network share or thumb drive, so that they will be available on the target computer.
+
 ``` syntax
 kdnet.exe
 VerifiedNICList.xml
 ```
 
 3. On the target computer, open a Command Prompt window as Administrator. Enter this command to validate that the NIC on the target PC is suported.
+
 ``` syntax
 C:\KDNET>kdnet
 
@@ -147,6 +151,7 @@ busparams=0.25.0, Intel(R) 82579LM Gigabit Network Connection, KDNET is running 
 ```
 
 4. Type this command to set the IP address of the host system. Use the IP address of the host system that you recorded earlier, not the one shown. Pick a unique port address for each target/host pair that you work with, such as 50010.
+
 ``` syntax
 C:\>kdnet TARGETPC 50010
 
@@ -156,6 +161,7 @@ Key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
 ```
 
 5. Type this command to confirm that the dbgsettings are set properly.
+
 ``` syntax
 C:\> bcdedit /dbgsettings
 busparams               0.25.0
