@@ -4,6 +4,7 @@
 # [Developing, Testing, and Deploying Drivers](develop/index.md)
 # [Device and Driver Installation](install/index.md)
 # [Windows Driver Frameworks](wdf/index.md)
+# [Windows Debugging Tools](debugger/index.md)
 # [Windows Store Device Apps](devapps/index.md)
 # [Device and Driver Technologies](device-and-driver-technologies.md)
 ## [3D print devices](3dprint/index.md)
