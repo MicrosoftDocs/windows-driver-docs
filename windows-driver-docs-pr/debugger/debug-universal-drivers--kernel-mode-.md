@@ -88,7 +88,7 @@ To enable kernel-mode debugging on the target system, perform the following step
 
 1. Open a command prompt on the host system and type **ipconfig /all** to determine its IP address.
 
-``` syntax
+``` syntax cmd
 C:\>ipconfig /all
 Windows IP Configuration
 
@@ -111,7 +111,7 @@ Ethernet adapter Ethernet:
 
 4. Open a command prompt on the target system and use the **ping** command to confirm network connectivity between the two systems. Use the IP address of the host system you recorded instead of the one shown in the sample output.
 
-``` syntax
+``` syntax cmd
 C:\> ping 169.182.1.1
 
 Pinging 169.182.1.1 with 32 bytes of data:
@@ -130,20 +130,20 @@ To use the KDNET utility to enable kernel-mode debugging on the target system, p
 
 1. On the host system, locate the WDK KDNET directory. By default it is located here.
 
-``` syntax
+``` syntax cmd
 C:\Program Files (x86)\Windows Kits\10\
 ```
 
 2. Locate these two files and copy them to a network share or thumb drive, so that they will be available on the target computer.
 
-``` syntax
+``` syntax cmd
 kdnet.exe
 VerifiedNICList.xml
 ```
 
 3. On the target computer, open a Command Prompt window as Administrator. Enter this command to validate that the NIC on the target PC is suported.
 
-``` syntax
+``` syntax cmd
 C:\KDNET>kdnet
 
 Network debugging is supported on the following NICs:
@@ -187,12 +187,12 @@ If you receive a pop-up message from the firewall, and you wish to use the debug
 
 1. On the host computer, open a Command Prompt window as Administrator. Change to the WinDbg.exe directory. We will use the x64version of WinDbg.exe from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation.
 
-``` syntax
+``` syntax cmd
 C:\> Cd C:\Program Files (x86)\Windows Kits\10\Debuggers\x64 
 ```
 
 2. Launch WinDbg with remote user debug using the following command. The value for the key and port match what you set earlier using BCDEdit on the target.
-``` syntax
+``` syntax cmd
 C:\> WinDbg –k net:port=50010,key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
 ```
 
@@ -225,7 +225,7 @@ Some debug commands display text using Debugger Markup Language that you can cli
 
 1. Use Ctrl+Break (Scroll Lock) in WinDBg to break into the code running on the target system. It may take a bit of time for the target system to respond.
 2. Type the following command to enable DML in the Debugger Command window.
-``` syntax
+``` syntax cmd
 0: kd> .prefer_dml 1
 DML versions of commands on by default
 ```
@@ -235,7 +235,7 @@ DML versions of commands on by default
 You can access reference command help using the **.hh** command.
 
 3. Type the following command to view the command reference help for **.prefer\_dml**.
-``` syntax
+``` syntax cmd
 0: kd> .hh .prefer_dml
 ```
 
@@ -246,7 +246,7 @@ The Debugger help file will display help for the **.prefer\_dml** command.
 **Display the version of Windows on the target system**
 
 5. Display detailed version information on the target system by typing the [**vertarget (Show Target Computer Version)**](vertarget--show-target-computer-version-.md) command in the WinDbg window.
-``` syntax
+``` syntax cmd
 0: kd> vertarget
 Windows 10 Kernel Version 9926 MP (4 procs) Free x64
 Product: WinNt, suite: TerminalServer SingleUserTS
@@ -260,7 +260,7 @@ System Uptime: 0 days 01:31:58.931
 **List the loaded modules**
 
 6. You can verify that you are working with the right kernel-mode process by displaying the loaded modules by typing the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md) command in the WinDbg window.
-``` syntax
+``` syntax cmd
 0: Kd> lm
 start             end                 module name
 fffff801`09200000 fffff801`0925f000   volmgrx    (no symbols)           
@@ -417,20 +417,19 @@ To install the driver on the target system, perform the following steps.
 
     ![windows security warning - windows can't verify the publisher](images/debuglab-image-install-security-warning.png)
 
-    **Tip**  If you have any issues with the installation, check the following file for more information.
-    *%windir%\\inf\\setupapi.dev.log*
-
-     
-
+    [!TIP] If you have any issues with the installation, check the following file for more information.
+    `%windir%\\inf\\setupapi.dev.log`
+ 
     For more detailed instructions, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](http://msdn.microsoft.com/library/windows/hardware/hh698272.aspx).
 
-    The INF file contains the hardware ID for installing the *tabletaudiosample.sys*. For the sysvad sample, the hardware ID is **root\\sysvad\_TabletAudioSample**.
+    The INF file contains the hardware ID for installing the *tabletaudiosample.sys*. For the sysvad sample, the hardware ID is:
+    `root\\sysvad\_TabletAudioSample`
 
-    On the target computer, open a Command Prompt window as Administrator. Navigate to your driver package folder, and enter the following command:
-
-    **devcon status root\\sysvad\_TabletAudioSample**
-
+    On the target computer, open a Command Prompt window as Administrator. Navigate to your driver package folder, and enter the following command: `devcon status root\\sysvad\_TabletAudioSample`
+   
+    
     Status information is displayed durring the devcon install.
+
 
 4.  **Examine the driver in Device Manager**
 
