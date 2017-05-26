@@ -23,14 +23,14 @@ NDIS 6.0 and later versions of NDIS provide standardized enumeration keywords fo
 The following example shows an INF file definition for an enumeration keyword.
 
 ```
-HKR, Ndi\params\\<SubkeyName>, ParamDesc, 0, "%<SubkeyName>%"
-HKR, Ndi\params\\<SubkeyName>, Type, 0, "enum"
-HKR, Ndi\params\\<SubkeyName>, Default, 0, "3"
-HKR, Ndi\params\\<SubkeyName>, Optional, 0, "0"
-HKR, Ndi\params\\<SubkeyName>\enum, "0", 0, "%Disabled%"
-HKR, Ndi\params\\<SubkeyName>\enum, "1", 0, "%Tx Enabled%"
-HKR, Ndi\params\\<SubkeyName>\enum, "2", 0, "%Rx Enabled%"
-HKR, Ndi\params\\<SubkeyName>\enum, "3", 0, "%Rx & Tx Enabled%"
+HKR, Ndi\params\<SubkeyName>, ParamDesc, 0, "%<SubkeyName>%"
+HKR, Ndi\params\<SubkeyName>, Type, 0, "enum"
+HKR, Ndi\params\<SubkeyName>, Default, 0, "3"
+HKR, Ndi\params\<SubkeyName>, Optional, 0, "0"
+HKR, Ndi\params\<SubkeyName>\enum, "0", 0, "%Disabled%"
+HKR, Ndi\params\<SubkeyName>\enum, "1", 0, "%Tx Enabled%"
+HKR, Ndi\params\<SubkeyName>\enum, "2", 0, "%Rx Enabled%"
+HKR, Ndi\params\<SubkeyName>\enum, "3", 0, "%Rx & Tx Enabled%"
 ```
 
 The general enumeration keywords are:
