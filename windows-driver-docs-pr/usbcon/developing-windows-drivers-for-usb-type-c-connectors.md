@@ -10,7 +10,7 @@ ms.technology: windows-devices
 ---
 
 # Developing Windows drivers for USB Type-C connectors
-
+You need to write a driver for the connector if your USB Type-C system does not implement PD state machine or it implements state machine but does not support UCSI over non-ACPI transport. If it does, you can load the Microsoft-provided [UCSI driver](ucsi.md).
 
 **Intended audience**
 
@@ -31,7 +31,6 @@ ms.technology: windows-devices
 
 -   [USB Type-C Port Controller Interface driver class extensions reference](https://msdn.microsoft.com/en-us/library/windows/hardware/mt805826)
 
-You need to write a driver for the connector if your USB Type-C system does not implement PD state machine or it implements state machine but does not support UCSI over non-ACPI transport. If it does, you can load the Microsoft-provided [UCSI driver](ucsi.md).
 
 ![drivers](images/drivers-c.png)
 
