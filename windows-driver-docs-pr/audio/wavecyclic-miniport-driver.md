@@ -42,26 +42,33 @@ The miniport interface, [IMiniportWaveCyclic](https://msdn.microsoft.com/library
 [**IMiniportWaveCyclic::Init**](https://msdn.microsoft.com/library/windows/hardware/ff536722)
 
 Initializes the miniport object.
+
 [**IMiniportWaveCyclic::NewStream**](https://msdn.microsoft.com/library/windows/hardware/ff536723)
 
 Creates a new stream object.
+
 The stream interface, [IMiniportWaveCyclicStream](https://msdn.microsoft.com/library/windows/hardware/ff536715), inherits the methods in the [**IUnknown**](https://msdn.microsoft.com/library/windows/desktop/ms680509) interface. IMiniportWaveCyclicStream provides the following additional methods:
 
 [**IMiniportWaveCyclicStream::GetPosition**](https://msdn.microsoft.com/library/windows/hardware/ff536716)
 
 Gets the device's current position in the wave stream.
+
 [**IMiniportWaveCyclicStream::NormalizePhysicalPosition**](https://msdn.microsoft.com/library/windows/hardware/ff536717)
 
 Converts a physical buffer position value into a time-based value.
+
 [**IMiniportWaveCyclicStream::SetFormat**](https://msdn.microsoft.com/library/windows/hardware/ff536718)
 
 Sets the data format of the wave stream.
+
 [**IMiniportWaveCyclicStream::SetNotificationFreq**](https://msdn.microsoft.com/library/windows/hardware/ff536719)
 
 Sets the frequency at which notification interrupts occur.
+
 [**IMiniportWaveCyclicStream::SetState**](https://msdn.microsoft.com/library/windows/hardware/ff536720)
 
 Sets the state of the wave stream.
+
 [**IMiniportWaveCyclicStream::Silence**](https://msdn.microsoft.com/library/windows/hardware/ff536721)
 
 Copies silence into a buffer.
