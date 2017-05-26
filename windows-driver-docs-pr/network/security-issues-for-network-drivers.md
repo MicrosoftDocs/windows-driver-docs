@@ -46,7 +46,7 @@ Most Query OIDs can be issued by any usermode application on the system. Follow 
     oid->DATA.QUERY_INFORMATION.BytesWritten = DATA.QUERY_INFORMATION.InformationBufferLength; 
     ```
 
-The OS will copy BytesWritten bytes back to a usermode application. If BytesWritten is larger than the number of bytes the driver actually wrote, then the OS might end up copying back uninitialized kernel memory to usermode, which would be an information disclosure vulnerability. Instead, use code similar to this:
+    The OS will copy BytesWritten bytes back to a usermode application. If BytesWritten is larger than the number of bytes the driver actually wrote, then the OS might end up copying back uninitialized kernel memory to usermode, which would be an information disclosure vulnerability. Instead, use code similar to this:
 
     ```c++
     oid->DATA.QUERY_INFORMATION.BytesWritten = sizeof(ULONG);
@@ -121,7 +121,7 @@ Most Set OIDs can be issued by a usermode application running in the Administrat
         }
         ```
    
-   3. InformationBuffer + Pattern->PatternOffset + Pattern->PatternLength does not overflow
+    3. InformationBuffer + Pattern->PatternOffset + Pattern->PatternLength does not overflow
 
         ```c++
         ULONG TotalSize = 0;
