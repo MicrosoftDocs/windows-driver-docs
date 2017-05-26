@@ -70,8 +70,9 @@ To implementation the proposed solutions in the preceding table, read these topi
 <tr class="even">
 <td><p>[Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md)</p></td>
 <td><p>Describes the USB connector manager (UCM) that manages a USB Type-C connector and the expected behavior of a connector driver.</p></td>
-<td><p>[Write a USB Type-C port controller driver]
-(write-a-usb-type-c-port-controller-driver.md)</p></td>
+</tr>
+<tr class="odd">
+<td><p>[Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md)</p></td>
 <td><p>Describes how to write a the USB Type-C port controller driver that communicates with a USB Type-C connector without PD state machine. </p></td>
 
 </tr>
