@@ -39,8 +39,8 @@ Error   10  error MSB3721: The command ""C:\Program Files (x86)\Windows Kits\10\
 
 1.  If you switched a legacy desktop driver to universal, verify that you are including the correct libraries. Right click the project and choose properties. Navigate to **Linker-&gt;Input**. The **Additional Dependencies** should contain:
 
-    ``` syntax
-    %AdditionalDependencies);$(SDK_LIB_PATH)\mincore.lib;$(SDK_LIB_PATH)\WppRecorderUM.lib
+    ```
+    %AdditionalDependencies);$(SDK_LIB_PATH)\OneCoreUAP.lib
     ```
 
 2.  Remove or replace the non-universal API calls one at a time and rerun the tool until there are no errors.
