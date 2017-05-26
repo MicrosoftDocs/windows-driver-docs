@@ -30,7 +30,7 @@ User-Mode
 
 Kernel-Mode
 
-```bat
+```cmd
 !analyze [-v] [-f | -hang] [-D BucketID] 
 !analyze -c [-load KnownIssuesFile | -unload | -help ]
 !analyze -show BugCheckCode [BugParameters]
