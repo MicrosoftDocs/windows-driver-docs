@@ -23,14 +23,14 @@ The **!analyze** extension displays information about the current exception or b
 
 User-Mode
 
-```shell
+```cmd
 !analyze [-v] [-f | -hang] [-D BucketID] 
 !analyze -c [-load KnownIssuesFile | -unload | -help ]
 ```
 
 Kernel-Mode
 
-```shell
+```bat
 !analyze [-v] [-f | -hang] [-D BucketID] 
 !analyze -c [-load KnownIssuesFile | -unload | -help ]
 !analyze -show BugCheckCode [BugParameters]
