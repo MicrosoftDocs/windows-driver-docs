@@ -23,7 +23,7 @@ The **!wsle** extension displays all working set list entries (WSLEs).
 
 Syntax
 
-``` syntax
+```
     !wsle [Flags [Address]] 
 ```
 
@@ -60,7 +60,7 @@ This extension can take a significant amount of time to execute.
 
 Here is an example from an x86 target computer running Windows Server 2003:
 
-``` syntax
+```
 kd> !wsle 3
 
 Working Set @ c0503000

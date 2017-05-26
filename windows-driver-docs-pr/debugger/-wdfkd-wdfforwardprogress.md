@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfforwardprogress** extension displays information about the forward progress of a specified framework queue object.
 
-``` syntax
+```
 !wdfkd.wdfforwardprogress Handle
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The **!processirps** extension displays information about I/O request packets (IRPs) associated with processes.
 
-``` syntax
+```
 !processirps
 !processirps ProcessAddress [Flags]
 ```

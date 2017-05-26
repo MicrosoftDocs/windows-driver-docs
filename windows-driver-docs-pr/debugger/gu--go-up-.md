@@ -23,13 +23,13 @@ The **gu** command causes the target to execute until the current function is co
 
 User-Mode Syntax
 
-``` syntax
+```
 [~Thread] gu 
 ```
 
 Kernel-Mode Syntax
 
-``` syntax
+```
 gu
 ```
 

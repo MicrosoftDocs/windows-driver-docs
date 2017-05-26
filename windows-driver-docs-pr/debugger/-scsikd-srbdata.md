@@ -21,7 +21,7 @@ api_type:
 
 The **!scsikd.srbdata** extension displays the specified SRB\_DATA tracking block.
 
-``` syntax
+```
     !scsikd.srbdata Address 
 ```
 

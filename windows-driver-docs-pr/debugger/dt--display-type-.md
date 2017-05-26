@@ -23,7 +23,7 @@ The **dt** command displays information about a local variable, global variable 
 
 User-Mode Syntax
 
-``` syntax
+```
 dt [-DisplayOpts] [-SearchOpts] [module!]Name [[-SearchOpts] Field] [Address] [-l List] 
 dt [-DisplayOpts] Address [-l List] 
 dt -h 
@@ -31,7 +31,7 @@ dt -h
 
 Kernel-Mode Syntax
 
-``` syntax
+```
 [Processor] dt [-DisplayOpts] [-SearchOpts] [module!]Name [[-SearchOpts] Field] [Address] [-l List] 
 dt [-DisplayOpts] Address [-l List] 
 dt -h 
@@ -204,7 +204,7 @@ The type information used by **dt** includes all type names created with **typed
 
 All types created by **typedefs** within your own code will be present, as long as they have actually been used in your program. However, types that are defined in your headers but never actually used will not be stored in the .pdb symbol files and will not be accessible to the debugger. To make such a type available to the debugger, use it as the *input* of a **typedef** statement. For example, if the following appears in your code, the structure MY\_DATA will be stored in the .pdb symbol file and can be displayed by the **dt** command:
 
-``` syntax
+```
 typedef struct _MY_DATA {
     . . .
     } MY_DATA;
@@ -213,7 +213,7 @@ typedef  MY_DATA *PMY_DATA;
 
 On the other hand, the following code would not suffice because both MY\_DATA and PMY\_DATA are defined by the initial **typedef** and, therefore, MY\_DATA has not itself been used as the input of any **typedef** statement:
 
-``` syntax
+```
 typedef struct _MY_DATA {
     . . .
     } MY_DATA, *PMY_DATA; 
@@ -225,7 +225,7 @@ If you want to display unicode strings, you need to use the [**.enable\_unicode 
 
 In the following example, **dt** displays a global variable:
 
-``` syntax
+```
 0:000> dt mt1 
    +0x000 a                : 10
    +0x004 b                : 98 'b'
@@ -237,7 +237,7 @@ In the following example, **dt** displays a global variable:
 
 In the following example, **dt** displays the array field **gn**:
 
-``` syntax
+```
 0:000> dt mt1 -a gn 
    +0x00c gn : 
     [00] 0x1
@@ -250,7 +250,7 @@ In the following example, **dt** displays the array field **gn**:
 
 The following command displays some subfields of a variable:
 
-``` syntax
+```
 0:000> dt mcl1 m_t1 dpo 
    +0x010 dpo  : DEEP_ONE
    +0x070 m_t1 : MYTYPE1 
@@ -258,7 +258,7 @@ The following command displays some subfields of a variable:
 
 The following command displays the subfields of the field **m\_t1**. Because the period automatically causes prefix matching, this will also display subfields of any field that begins with "m\_t1":
 
-``` syntax
+```
 0:000> dt mcl1 m_t1. 
    +0x070 m_t1  : 
       +0x000 a     : 0
@@ -273,14 +273,14 @@ You could repeat this to any depth. For example, the command **dt mcl1 a..c.** w
 
 Here is a more detailed example of how subfields can be displayed. First, display the **Ldr** field:
 
-``` syntax
+```
 0:000> dt nt!_PEB Ldr 7ffdf000 
    +0x00c Ldr : 0x00191ea0 
 ```
 
 Now expand the pointer type field:
 
-``` syntax
+```
 0:000> dt nt!_PEB Ldr Ldr. 7ffdf000 
    +0x00c Ldr  : 0x00191ea0
       +0x000 Length : 0x28
@@ -294,14 +294,14 @@ Now expand the pointer type field:
 
 Now display the **CriticalSectionTimeout** field:
 
-``` syntax
+```
 0:000> dt nt!_PEB CriticalSectionTimeout 7ffdf000 
    +0x070 CriticalSectionTimeout : _LARGE_INTEGER 0xffffe86d`079b8000 
 ```
 
 Now expand the **CriticalSectionTimeout** structure subfields one level deep:
 
-``` syntax
+```
 0:000> dt nt!_PEB CriticalSectionTimeout. 7ffdf000 
    +0x070 CriticalSectionTimeout  :  0xffffe86d`079b8000
       +0x000 LowPart                 : 0x79b8000
@@ -312,7 +312,7 @@ Now expand the **CriticalSectionTimeout** structure subfields one level deep:
 
 Now expand the **CriticalSectionTimeout** structure subfields two levels deep:
 
-``` syntax
+```
 0:000> dt nt!_PEB CriticalSectionTimeout.. 7ffdf000 
    +0x070 CriticalSectionTimeout   :  0xffffe86d`079b8000
       +0x000 LowPart                  : 0x79b8000
@@ -325,7 +325,7 @@ Now expand the **CriticalSectionTimeout** structure subfields two levels deep:
 
 The following command displays an instance of the data type MYTYPE1 that is located at the address 0x0100297C:
 
-``` syntax
+```
 0:000> dt 0x0100297c MYTYPE1 
    +0x000 a                : 22
    +0x004 b                : 43 '+'
@@ -337,7 +337,7 @@ The following command displays an instance of the data type MYTYPE1 that is loca
 
 The following command displays an array of 10 ULONGs at the address 0x01002BE0:
 
-``` syntax
+```
 0:000> dt -ca10 ULONG 01002be0 
 [0] 0x1001098
 [1] 0x1
@@ -353,7 +353,7 @@ The following command displays an array of 10 ULONGs at the address 0x01002BE0:
 
 The following command continues the previous display at a different address. Note that "ULONG" does not need to be re-entered:
 
-``` syntax
+```
 0:000> dt -ca4 . 01002d00 
 Using sym ULONG
 [0] 0x12
@@ -364,7 +364,7 @@ Using sym ULONG
 
 Here are some examples of type display. The following command displays all types and globals beginning with the string "MY" in the module *thismodule*. Those prefixed with an address are actual instances; those without addresses are type definitions:
 
-``` syntax
+```
 0:000> dt thismodule!MY* 
 010029b8  thismodule!myglobal1
 01002990  thismodule!myglobal2
@@ -380,7 +380,7 @@ Here are some examples of type display. The following command displays all types
 
 When performing type display, the **-v** option can be used to display the size of each item. The **-s** *size* option can be used to only enumerate items of a specific size. Again, those prefixed with an address are actual instances; those without addresses are type definitions:
 
-``` syntax
+```
 0:001> dt -s 2 -v thismodule!* 
 Enumerating symbols matching thismodule!*, Size = 0x2
 Address   Size Symbol
@@ -397,7 +397,7 @@ Address   Size Symbol
 
 Here is an example of the **-b** option. The structure is expanded and the **OwnerThreads** array within the structure is expanded, but the **Flink** and **Blink** list pointers are not followed:
 
-``` syntax
+```
 kd> dt nt!_ERESOURCE -b 0x8154f040 
    +0x000 SystemResourcesList :  [ 0x815bb388 - 0x816cd478 ]
       +0x000 Flink            : 0x815bb388
@@ -426,7 +426,7 @@ kd> dt nt!_ERESOURCE -b 0x8154f040
 
 Here is an example of **dt** in kernel mode. The following command produces results similar to [**!process 0 0**](-process.md):
 
-``` syntax
+```
 kd> dt nt!_EPROCESS -l ActiveProcessLinks.Flink -y Ima -yoi Uni 814856f0 
 ## ActiveProcessLinks.Flink at 0x814856f0
 

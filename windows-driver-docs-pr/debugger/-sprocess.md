@@ -21,7 +21,7 @@ api_type:
 
 The **!sprocess** extension displays information about the specified session process, or about all processes in the specified session.
 
-``` syntax
+```
 !sprocess Session [Flags [ImageName]] 
 !sprocess -?
 ```

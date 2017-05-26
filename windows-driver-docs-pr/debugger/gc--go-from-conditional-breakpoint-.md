@@ -21,7 +21,7 @@ api_type:
 
 The **gc** command resumes execution from a conditional breakpoint in the same fashion that was used to hit the breakpoint (stepping, tracing, or freely executing).
 
-``` syntax
+```
 gc
 ```
 

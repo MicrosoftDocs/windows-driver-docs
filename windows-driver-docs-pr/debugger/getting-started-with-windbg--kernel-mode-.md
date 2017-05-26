@@ -61,7 +61,7 @@ Likewise, if you decided to set up your host and target computers for debugging 
 
     The output is similar to this:
 
-    ``` syntax
+    ```
     Symbol search path is: srv*
     Expanded Symbol search path is: cache*;SRV*https://msdl.microsoft.com/download/symbols
     ```
@@ -78,7 +78,7 @@ Likewise, if you decided to set up your host and target computers for debugging 
 
     The output is similar to this:
 
-    ``` syntax
+    ```
     0:000>3: kd> lm
     start             end                 module name
     fffff800`00000000 fffff800`00088000   CI         (deferred)             
@@ -103,7 +103,7 @@ Likewise, if you decided to set up your host and target computers for debugging 
 
     The output is similar to this:
 
-    ``` syntax
+    ```
     0:000>0: kd> dt nt!_FILE_OBJECT
        +0x000 Type             : Int2B
        +0x002 Size             : Int2B
@@ -120,7 +120,7 @@ Likewise, if you decided to set up your host and target computers for debugging 
 
     The output is similar to this:
 
-    ``` syntax
+    ```
     0:000>0: kd> x nt!*CreateProcess*
     fffff800`030821cc nt!ViCreateProcessCallbackInternal (<no parameter info>)
     ...
@@ -139,7 +139,7 @@ Likewise, if you decided to set up your host and target computers for debugging 
 
     The output is similar to this:
 
-    ``` syntax
+    ```
     0:000>0: kd> bu nt!MmCreateProcessAddressSpace
     0: kd> bl
      0 e fffff800`02e03904     0001 (0001) nt!MmCreateProcessAddressSpace
@@ -155,7 +155,7 @@ Likewise, if you decided to set up your host and target computers for debugging 
 
     The output is similar to this:
 
-    ``` syntax
+    ```
     0:000>2: kd> k
     Child-SP          RetAddr           Call Site
     ffffd000`224b4c88 fffff800`02d96834 nt!MmCreateProcessAddressSpace
@@ -182,7 +182,7 @@ Likewise, if you decided to set up your host and target computers for debugging 
 
     The output is similar to this:
 
-    ``` syntax
+    ```
     0:000>0: kd> !process 0 0
     **** NT ACTIVE PROCESS DUMP ****
     PROCESS ffffe000002287c0
@@ -209,7 +209,7 @@ Likewise, if you decided to set up your host and target computers for debugging 
 
     The output shows the threads in the process.
 
-    ``` syntax
+    ```
     0:000>0:000>0: kd> !process ffffe00000d52900 2
     PROCESS ffffe00000d52900
         SessionId: 1  Cid: 0910    Peb: 7ff669b8e000  ParentCid: 0a98
@@ -236,7 +236,7 @@ Likewise, if you decided to set up your host and target computers for debugging 
 
     The output shows information about the individual thread.
 
-    ``` syntax
+    ```
     0: kd> !thread ffffe00000e6d080
     THREAD ffffe00000e6d080  Cid 0910.0cc0  Teb: 00007ff669a10000 Win32Thread: 0000000000000000 WAIT: ...
         ffffe0000089a300  QueueObject
@@ -259,7 +259,7 @@ Likewise, if you decided to set up your host and target computers for debugging 
 
     [**!devnode 0 1**](http://go.microsoft.com/fwlink/p?linkid=399242)
 
-    ``` syntax
+    ```
     0:000>0: kd> !devnode 0 1
     Dumping IopRootDeviceNode (= 0xffffe000002dbd30)
     DevNode 0xffffe000002dbd30 for PDO 0xffffe000002dc9e0
@@ -284,7 +284,7 @@ Likewise, if you decided to set up your host and target computers for debugging 
 
     [**!devnode 0 9**](http://go.microsoft.com/fwlink/p?linkid=399242)
 
-    ``` syntax
+    ```
     0:000>...
             DevNode 0xffffe000010fa770 for PDO 0xffffe000010c2060
               InstancePath is "PCI\VEN_8086&DEV_2937&SUBSYS_2819103C&REV_02\3&33fd14ca&0&D0"
@@ -308,7 +308,7 @@ Likewise, if you decided to set up your host and target computers for debugging 
 
     [**!devnode 0 1 disk**](http://go.microsoft.com/fwlink/p?linkid=399242)
 
-    ``` syntax
+    ```
     0: kd> !devnode 0 1 disk
     Dumping IopRootDeviceNode (= 0xffffe000002dbd30)
     DevNode 0xffffe0000114fd30 for PDO 0xffffe00001159610
@@ -325,7 +325,7 @@ Likewise, if you decided to set up your host and target computers for debugging 
 
     For example: *PdoAddress***!devstack 0xffffe00001159610**
 
-    ``` syntax
+    ```
     0:000>0: kd> !devstack 0xffffe00001159610
       !DevObj           !DrvObj            !DevExt           ObjectName
       ffffe00001d50040  \Driver\partmgr    ffffe00001d50190  
@@ -337,7 +337,7 @@ Likewise, if you decided to set up your host and target computers for debugging 
 
     [**!drvobj disk 2**](http://go.microsoft.com/fwlink/p?linkid=399246)
 
-    ``` syntax
+    ```
     0:000>0: kd> !drvobj disk 2
     Driver object (ffffe00001d52680) is for:
      \Driver\disk
@@ -371,7 +371,7 @@ Likewise, if you decided to set up your host and target computers for debugging 
 
     The output is similar to this:
 
-    ``` syntax
+    ```
     2: kd> k
     Child-SP          RetAddr           Call Site
     ffffd000`21d06cf8 fffff800`0056c14e CLASSPNP!ClassGlobalDispatch

@@ -21,7 +21,7 @@ api_type:
 
 The **!finddata** extension displays the cached data at a given offset within a specified file object.
 
-``` syntax
+```
 !finddata FileObject Offset
 ```
 

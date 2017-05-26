@@ -21,8 +21,8 @@ api_type:
 
 The **!minipkd.exports** extension displays the addresses of the miniport exports for the specified adapter.
 
-``` syntax
-    !minipkd.exports Adapter 
+```
+!minipkd.exports Adapter 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

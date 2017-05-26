@@ -21,7 +21,7 @@ api_type:
 
 The **!storagekd.storhelp** extension displays help text for Storagekd.dll extension commands.
 
-``` syntax
+```
     !storagekd.storhelp 
 ```
 

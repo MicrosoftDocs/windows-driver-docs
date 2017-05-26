@@ -21,7 +21,7 @@ api_type:
 
 The **so** command sets or displays the kernel debugging options.
 
-``` syntax
+```
     so [Options] 
 ```
 

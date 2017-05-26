@@ -21,7 +21,7 @@ api_type:
 
 The **up** command displays an assembly translation of the specified program code in physical memory.
 
-``` syntax
+```
     up Range 
 up Address 
 up 

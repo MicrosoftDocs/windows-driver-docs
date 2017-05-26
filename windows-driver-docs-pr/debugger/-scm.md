@@ -21,7 +21,7 @@ api_type:
 
 The **!scm** extension displays the specified shared cache map.
 
-``` syntax
+```
 !scm Address
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The **dg** command shows the segment descriptor for the specified selector.
 
-``` syntax
+```
 dg FirstSelector [LastSelector]
 ```
 

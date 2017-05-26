@@ -21,7 +21,7 @@ api_type:
 
 The **tb** command executes the program until a branch instruction is reached.
 
-``` syntax
+```
     tb [r] [= StartAddress] [Count] 
 ```
 

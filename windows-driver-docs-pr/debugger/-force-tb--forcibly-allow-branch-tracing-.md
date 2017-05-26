@@ -21,8 +21,8 @@ api_type:
 
 The **.force\_tb** command forces the processor to trace branches early in the boot process.
 
-``` syntax
-    .force_tb 
+```
+.force_tb 
 ```
 
 ## <span id="ddk_meta_forcibly_allow_branch_tracing_dbg"></span><span id="DDK_META_FORCIBLY_ALLOW_BRANCH_TRACING_DBG"></span>

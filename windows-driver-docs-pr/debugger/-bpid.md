@@ -21,7 +21,7 @@ api_type:
 
 The **!bpid** extension requests that a process on the target computer break into the debugger or requests that a user-mode debugger be attached to a process on the target computer.
 
-``` syntax
+```
     !bpid [Options] PID 
 ```
 

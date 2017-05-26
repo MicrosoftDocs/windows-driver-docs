@@ -21,7 +21,7 @@ api_type:
 
 The **.write\_cmd\_hist** command writes the entire history of the Debugger Command window to a file.
 
-``` syntax
+```
     .write_cmd_hist Filename 
 ```
 

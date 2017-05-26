@@ -23,13 +23,13 @@ The **ta** command executes the program until the specified address is reached, 
 
 User-Mode
 
-``` syntax
+```
 [~Thread] ta [r] [= StartAddress] StopAddress 
 ```
 
 Kernel-Mode
 
-``` syntax
+```
     ta [r] [= StartAddress] StopAddress 
 ```
 

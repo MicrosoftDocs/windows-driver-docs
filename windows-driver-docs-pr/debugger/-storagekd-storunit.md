@@ -21,7 +21,7 @@ api_type:
 
 The **!storagekd.storunit** extension displays information about the specified Storport logical unit.
 
-``` syntax
+```
     !storagekd.storunit [Address] 
 ```
 

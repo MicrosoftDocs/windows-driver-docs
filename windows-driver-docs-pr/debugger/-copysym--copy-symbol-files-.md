@@ -21,7 +21,7 @@ api_type:
 
 The **.copysym** command copies the current symbol files to the specified directory.
 
-``` syntax
+```
     .copysym [/l] Path
 ```
 

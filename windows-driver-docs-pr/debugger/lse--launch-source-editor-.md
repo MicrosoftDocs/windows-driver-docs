@@ -21,7 +21,7 @@ api_type:
 
 The **lse** command opens an editor for the current source file.
 
-``` syntax
+```
     lse 
 ```
 

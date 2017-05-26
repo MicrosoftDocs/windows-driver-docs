@@ -21,7 +21,7 @@ api_type:
 
 The **vertarget** command displays the current version of the Microsoft Windows operating system of the target computer.
 
-``` syntax
+```
     vertarget 
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The **.ttime** command displays the running times for a thread.
 
-``` syntax
+```
     .ttime 
 ```
 

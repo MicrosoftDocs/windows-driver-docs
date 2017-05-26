@@ -21,7 +21,7 @@ api_type:
 
 The **!timer** extension displays a detailed listing of all system timer use.
 
-``` syntax
+```
     !timer 
 ```
 

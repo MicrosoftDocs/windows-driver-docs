@@ -21,7 +21,7 @@ api_type:
 
 The **!cbreg** extension displays CardBus Socket registers and CardBus Exchangable Card Architecture (ExCA) registers.
 
-``` syntax
+```
     !cbreg [%%]Address 
 ```
 

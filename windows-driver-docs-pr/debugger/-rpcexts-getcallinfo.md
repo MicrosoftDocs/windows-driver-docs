@@ -21,7 +21,7 @@ api_type:
 
 The **!rpcexts.getcallinfo** extension searches the system's RPC state information for server-side call (SCALL) information.
 
-``` syntax
+```
     !rpcexts.getcallinfo [ CallID | 0 [ IfStart | 0 [ ProcNum | 0xFFFF [ProcessID|0] ] ] ] 
 !rpcexts.getcallinfo -? 
 ```

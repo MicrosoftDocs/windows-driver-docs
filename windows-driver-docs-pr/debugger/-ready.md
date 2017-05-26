@@ -21,7 +21,7 @@ api_type:
 
 The **!ready** extension displays summary information about each thread in the system in a READY state.
 
-``` syntax
+```
 !ready [Flags]
 ```
 

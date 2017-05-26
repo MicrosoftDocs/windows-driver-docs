@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfumdevstacks** extension displays information about all UMDF device stacks in the [implicit process](controlling-threads-and-processes.md).
 
-``` syntax
+```
 !wdfkd.wdfumdevstacks [Flags] 
 ```
 
@@ -61,7 +61,7 @@ This command displays the same information as the user-mode command [**!wudfext.
 
 Before you use this command, use [**!process**](-process.md) to get a list of all UMDF host processes.
 
-``` syntax
+```
 0: kd> !process 0 0 wudfhost.exe
 PROCESS ffffe00000c32900
     SessionId: 0  Cid: 079c    Peb: 7ff782537000  ParentCid: 037c
@@ -73,7 +73,7 @@ The preceding output shows that there is one UMDF host process; that is, there i
 
 Next use [**.process**](-process--set-process-context-.md) to set the implicit process to wudfhost.exe.
 
-``` syntax
+```
 0: kd> .process /P ffffe00000c32900
 Implicit process is now ffffe000`00c32900
 .cache forcedecodeptes done
@@ -81,7 +81,7 @@ Implicit process is now ffffe000`00c32900
 
 Now use **!wdfkd.wdfumdevstacks** to display the UMDF device stacks in the implicit process (wudfhost.exe).
 
-``` syntax
+```
 0: kd> !wdfkd.wdfumdevstacks
 Number of device stacks: 1
   Device Stack: 0x000000a5a3ab5f70     Pdo Name: \Device\00000052

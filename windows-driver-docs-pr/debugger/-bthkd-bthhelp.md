@@ -21,7 +21,7 @@ api_type:
 
 The **!bthkd.bthhelp** command displays help for the Bluetooth debug extension commands.
 
-``` syntax
+```
 !bthkd.bthhelp
 ```
 

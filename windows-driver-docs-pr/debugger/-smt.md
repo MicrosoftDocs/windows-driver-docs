@@ -21,7 +21,7 @@ api_type:
 
 The **!smt** extension displays a summary of the simultaneous multithreaded processor information.
 
-``` syntax
+```
     !smt
 ```
 

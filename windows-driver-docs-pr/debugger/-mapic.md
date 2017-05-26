@@ -23,7 +23,7 @@ The **!mapic** extension displays an ACPI Multiple APIC table.
 
 Syntax
 
-``` syntax
+```
 !mapic Address
 ```
 

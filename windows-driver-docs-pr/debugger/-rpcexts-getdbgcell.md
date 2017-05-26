@@ -21,7 +21,7 @@ api_type:
 
 The **!rpcexts.getdbgcell** extension displays RPC state information for the specified cell.
 
-``` syntax
+```
 !rpcexts.getdbgcell ProcessID CellID1.CellID2 
 !rpcexts.getdbgcell -?
 ```
@@ -70,7 +70,7 @@ This extension can only be used with CDB or with user-mode WinDbg.
 
 Here is an example:
 
-``` syntax
+```
 0:002> !rpcexts.getdbgcell c4 0.19
 Getting cell info ...
 Call

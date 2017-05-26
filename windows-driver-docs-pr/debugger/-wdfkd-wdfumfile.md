@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfumfile** extension displays information about a UMDF intra-stack file.
 
-``` syntax
+```
 !wdfkd.wdfumfile Address 
 ```
 

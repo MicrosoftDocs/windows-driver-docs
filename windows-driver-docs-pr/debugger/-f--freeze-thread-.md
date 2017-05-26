@@ -23,7 +23,7 @@ The **~f** command freezes the given thread, causing it to stop and wait until i
 
 Do not confuse this command with the [**f (Fill Memory)**](f--fp--fill-memory-.md) command.
 
-``` syntax
+```
 ~Thread f 
 ```
 

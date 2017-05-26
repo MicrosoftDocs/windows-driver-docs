@@ -23,7 +23,7 @@ DumpChk.exe is included in [Debugging Tools for Windows](index.md).
 ## <span id="DumpChk_command-line_options"></span><span id="dumpchk_command-line_options"></span><span id="DUMPCHK_COMMAND-LINE_OPTIONS"></span>DumpChk command-line options
 
 
-``` syntax
+```
 DumpChk [-y SymbolPath] DumpFile
 ```
 

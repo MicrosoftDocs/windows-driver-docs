@@ -21,7 +21,7 @@ api_type:
 
 The **.frame** command specifies which local context (scope) is used to interpret local variables or displays the current local context.
 
-``` syntax
+```
 .frame [/c] [/r] [FrameNumber] 
 .frame [/c] [/r] = BasePtr [FrameIncrement] 
 .frame [/c] [/r] = BasePtr StackPtr InstructionPtr 

@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbhublog** command displays the debug log for a USB hub.
 
-``` syntax
+```
 !usbkd.usbhublog DeviceExtension[, NumberOfEntries]
 ```
 
@@ -44,7 +44,7 @@ Examples
 
 Here is one way to find the address of the device extension for the FDO of a USB hub. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-``` syntax
+```
 0: kd> !usbkd.usb2tree
 ...
 2)!ehci_info ffffe00001ca11a0 !devobj ffffe00001ca1050 PCI: VendorId 8086 DeviceId 293c RevisionId 0002 
@@ -54,7 +54,7 @@ Here is one way to find the address of the device extension for the FDO of a USB
 
 In the preceding output, you can see the suggested command **!devstack ffffe00002320050**. Enter this command.
 
-``` syntax
+```
 0: kd> !kdexts.devstack ffffe00002320050
 
   !DevObj           !DrvObj            !DevExt           ObjectName
@@ -67,7 +67,7 @@ In the preceding output, `ffffe000023201a0` is the address of the device extensi
 
 Now pass the address of the device extension to **!usbhublog**. In this example, the second argument limits the display to 10 log entries.
 
-``` syntax
+```
 0: kd> !usbkd.usbhublog ffffe000023201a0, 10
 
 LOG@: ffffe000023201a0 (usbhub!_DEVICE_EXTENSION_HUB)

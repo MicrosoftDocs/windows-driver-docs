@@ -21,7 +21,7 @@ api_type:
 
 The **!rpcexts.rpctime** extension displays the current system time.
 
-``` syntax
+```
     !rpcexts.rpctime 
 ```
 

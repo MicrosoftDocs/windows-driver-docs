@@ -23,7 +23,7 @@ The **!version** extension displays the version information for the extension DL
 
 This extension command should not be confused with the [**version (Show Debugger Version)**](version--show-debugger-version-.md) command.
 
-``` syntax
+```
 ![ExtensionDLL.]version
 ```
 

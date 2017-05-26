@@ -21,8 +21,8 @@ api_type:
 
 The **.leave** token is used to exit from a [**.catch**](-catch.md) block.
 
-``` syntax
-    .catch { ... ; .if (Condition) .leave ; ... } 
+```
+.catch { ... ; .if (Condition) .leave ; ... } 
 ```
 
 ## <span id="ddk_token_leave_dbg"></span><span id="DDK_TOKEN_LEAVE_DBG"></span>

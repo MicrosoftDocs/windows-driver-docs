@@ -21,7 +21,7 @@ api_type:
 
 The AgeStore command line uses the following syntax. The parameters can be included in any order.
 
-``` syntax
+```
     agestore [PathSpec] -date=Month-Day-Year Options 
 
 agestore [PathSpec] -days=NumberOfDays Options 

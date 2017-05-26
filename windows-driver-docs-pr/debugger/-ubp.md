@@ -21,7 +21,7 @@ api_type:
 
 The **!ubp** extension sets a breakpoint in user space.
 
-``` syntax
+```
     !ubp Address 
 ```
 

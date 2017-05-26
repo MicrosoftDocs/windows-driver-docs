@@ -23,7 +23,7 @@ The **m** command copies the contents of memory from one location to another.
 
 Do not confuse this command with the [**~m (Resume Thread)**](-m--resume-thread-.md) command.
 
-``` syntax
+```
     m Range Address 
 ```
 

@@ -23,8 +23,8 @@ The **!dp** extension in Ntsdexts.dll displays a CSR process.
 
 This extension command should not be confused with the [**dp (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command, or with the [**!kdext\*.dp**](-db---dc---dd---dp---dq---du---dw.md) extension command.
 
-``` syntax
-    !dp [v] [ PID | CSR-Process ]
+```
+!dp [v] [ PID | CSR-Process ]
 ```
 
 ## <span id="ddk__ntsdexts_dp_dbg"></span><span id="DDK__NTSDEXTS_DP_DBG"></span>Parameters

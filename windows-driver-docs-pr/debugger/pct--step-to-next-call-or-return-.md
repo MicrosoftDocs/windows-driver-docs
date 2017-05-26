@@ -23,13 +23,13 @@ The **pct** command executes the program until it reaches a call instruction or 
 
 User-Mode
 
-``` syntax
+```
 [~Thread] pct [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-``` syntax
+```
     pct [r] [= StartAddress] [Count] 
 ```
 

@@ -21,8 +21,8 @@ api_type:
 
 The **!ioreslist** extension displays an IO\_RESOURCE\_REQUIREMENTS\_LIST structure.
 
-``` syntax
-    !ioreslist Address 
+```
+!ioreslist Address 
 ```
 
 ## <span id="ddk__ioreslist_dbg"></span><span id="DDK__IORESLIST_DBG"></span>Parameters

@@ -21,7 +21,7 @@ api_type:
 
 The **.scriptunload** command unloads the specified script.
 
-``` syntax
+```
     .scriptunload ScriptFile
      
    

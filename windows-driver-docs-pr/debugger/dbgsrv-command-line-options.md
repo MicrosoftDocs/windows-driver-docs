@@ -21,7 +21,7 @@ api_type:
 
 The DbgSrv command line uses the following syntax.
 
-``` syntax
+```
     dbgsrv -t ServerTransport [-sifeo image.ext] -c[s] AppCmdLine [-x | -pc] 
 
 dbgsrv -? 

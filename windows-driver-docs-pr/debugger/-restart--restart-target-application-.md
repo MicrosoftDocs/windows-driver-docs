@@ -23,7 +23,7 @@ The **.restart** command restarts the target application.
 
 Do not confuse this command with the [**.restart (Restart Kernel Connection)**](-restart--restart-kernel-connection-.md) command, which works only in kernel mode.
 
-``` syntax
+```
     .restart 
 ```
 

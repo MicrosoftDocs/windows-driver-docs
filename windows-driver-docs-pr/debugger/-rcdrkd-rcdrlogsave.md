@@ -21,7 +21,7 @@ api_type:
 
 The **!rcdrkd.rcdrlogsave** extension saves the recorder buffers of a driver.
 
-``` syntax
+```
 !rcdrkd.rcdrlogsave DriverName [CaptureFilename ]
 ```
 

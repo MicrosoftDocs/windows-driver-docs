@@ -47,7 +47,7 @@ The following example illustrates this procedure:
 
 2.  Create a text file containing a list of the symbols to be removed. Each line in this file should include the name of one symbol, including decorations, but not including module names. In this example, the file would contain the following two lines:
 
-    ``` syntax
+    ```
     _myGlobal1
     _myGlobal2 
     ```
@@ -56,7 +56,7 @@ The following example illustrates this procedure:
 
 3.  Use the following PDBCopy command line:
 
-    ``` syntax
+    ```
     pdbcopy OldPDB NewPDB-p -f:@TextFile 
     ```
 
@@ -64,7 +64,7 @@ The following example illustrates this procedure:
 
     In the current example, the command would look like this:
 
-    ``` syntax
+    ```
     pdbcopy c:\dir1\mysymbols.pdb c:\dir3\mysymbols.pdb -p -f:@c:\temp\listfile.txt 
     ```
 

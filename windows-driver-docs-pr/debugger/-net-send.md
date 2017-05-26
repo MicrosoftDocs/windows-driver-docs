@@ -21,7 +21,7 @@ api_type:
 
 The **!net\_send** extension sends a message over a local network.
 
-``` syntax
+```
 !net_send SendingMachine TargetMachine Sender Message
 ```
 

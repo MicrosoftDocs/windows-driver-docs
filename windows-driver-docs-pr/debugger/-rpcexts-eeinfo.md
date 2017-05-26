@@ -21,7 +21,7 @@ api_type:
 
 The **!rpcexts.eeinfo** extension displays the extended error information chain.
 
-``` syntax
+```
 !rpcexts.eeinfo EEInfoAddress
 ```
 

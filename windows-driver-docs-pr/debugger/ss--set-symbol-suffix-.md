@@ -21,7 +21,7 @@ api_type:
 
 The **ss** command sets or displays the current suffix value that is used for symbol matching in numeric expressions.
 
-``` syntax
+```
     ss [a|w|n] 
 ```
 

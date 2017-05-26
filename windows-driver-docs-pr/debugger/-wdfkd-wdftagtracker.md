@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdftagtracker** extension displays all available tag information (including tag value, line, file, and time) for a specified tag tracker.
 
-``` syntax
+```
 !wdfkd.wdftagtracker TagObjectPointer [Flags]
 ```
 

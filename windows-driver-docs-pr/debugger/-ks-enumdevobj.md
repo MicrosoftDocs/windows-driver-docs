@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.enumdevobj** extension displays the KSDEVICE associated with a given WDM device object, and lists the filter types and filters currently instantiated on this device.
 
-``` syntax
-    !ks.enumdevobj DeviceObject 
+```
+!ks.enumdevobj DeviceObject 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

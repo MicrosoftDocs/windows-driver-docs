@@ -21,7 +21,7 @@ api_type:
 
 The KDbgCtrl command line uses the following syntax:
 
-``` syntax
+```
     kdbgctrl [-e|-d|-c] [-ea|-da|-ca] [-eu|-du|-cu] [-eb|-db|-cb] [-sdb Size | -cdb] 
 
 kdbgctrl -cx 

@@ -21,8 +21,8 @@ api_type:
 
 The **!ndiskd.protocol** command displays information about an NDIS protocol driver. If you run this extension with no parameters, !ndiskd will display a list of NDIS protocol drivers that are active on the system.
 
-``` syntax
-    !ndiskd.protocol [-handle <x>] [-findname <any>] 
+```
+!ndiskd.protocol [-handle <x>] [-findname <any>] 
 ```
 
 ## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
@@ -44,7 +44,7 @@ Examples
 
 Enter the **!ndiskd.protocol** command to see a list of all NDIS protocols, their handles, and open bindings to miniports (if any). In the following example, look for the TCPIP6TUNNEL protocol's handle, ffff8083e1a95c00.
 
-```cmd
+```
 3: kd> !ndiskd.protocol
 ffff8083e0114730 - NDISUIO
   ffff8083e55f3010 - Microsoft Kernel Debug Network Adapter
@@ -78,7 +78,7 @@ ffff8083e11cec10 - TCPIP
 
 With the protocol's handle, now you can enter either click the handle or enter the **!ndiskd.protocol -handle** command to see information for that protocol, such as the handles for the miniports that are bound to it.
 
-```cmd
+```
 3: kd> !ndiskd.protocol ffff8083e1a95c00
 
 

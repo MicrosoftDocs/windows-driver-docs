@@ -21,7 +21,7 @@ api_type:
 
 The **br** command renumbers one or more breakpoints.
 
-``` syntax
+```
 br OldID NewID [OldID2 NewID2 ...] 
 ```
 

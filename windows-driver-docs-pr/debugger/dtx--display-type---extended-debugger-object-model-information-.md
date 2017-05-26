@@ -21,7 +21,7 @@ api_type:
 
 The dtx command displays extended symbolic type information using the debugger object model. The dtx command is similar to the [**dt (Display Type)**](dt--display-type-.md) command.
 
-``` syntax
+```
     dtx -DisplayOpts [Module!]Name Address
 ```
 

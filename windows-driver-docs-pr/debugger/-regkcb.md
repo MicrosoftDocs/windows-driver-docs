@@ -21,7 +21,7 @@ api_type:
 
 The **!regkcb** extension displays a registry key control block.
 
-``` syntax
+```
     !regkcb Address 
 ```
 

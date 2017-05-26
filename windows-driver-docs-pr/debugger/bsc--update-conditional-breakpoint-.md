@@ -21,7 +21,7 @@ api_type:
 
 The **bsc** command changes the condition under which a breakpoint occurs or changes the command executed when the specified conditional breakpoint is encountered.
 
-``` syntax
+```
 bsc ID Condition ["CommandString"] 
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The **!rcdrkd.rcdrsearchpath** extension sets the search path for trace message format (TMF) and trace message control (TMC) files.
 
-``` syntax
+```
 !rcdrkd.rcdrsearchpath FilePath
 ```
 

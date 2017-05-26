@@ -21,7 +21,7 @@ api_type:
 
 The **!ubc** extension clears a user-space breakpoint.
 
-``` syntax
+```
     !ubc BreakpointNumber 
 ```
 

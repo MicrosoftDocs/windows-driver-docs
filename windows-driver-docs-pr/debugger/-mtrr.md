@@ -21,7 +21,7 @@ api_type:
 
 The **!mtrr** extension displays the contents of the MTRR register.
 
-``` syntax
+```
 !mtrr
 ```
 

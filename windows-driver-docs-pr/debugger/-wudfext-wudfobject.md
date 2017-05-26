@@ -21,7 +21,7 @@ api_type:
 
 The **!wudfext.wudfobject** extension displays information about a WDF object, as well as its parent and child relationships.
 
-``` syntax
+```
 !wudfext.wudfobject pWDFObject Flags TypeName
 ```
 

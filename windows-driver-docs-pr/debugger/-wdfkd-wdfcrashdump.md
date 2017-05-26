@@ -23,13 +23,13 @@ The **!wdfkd.wdfcrashdump** extension displays error log information and other c
 
 KMDF
 
-``` syntax
+```
 !wdfkd.wdfcrashdump [InfoType]
 ```
 
 UMDF
 
-``` syntax
+```
 !wdfkd.wdfcrashdump [DriverName.dll][-d | -f | -m]
 ```
 
@@ -99,7 +99,7 @@ Retrieving crashdump loader information...
 
 This example shows how to use **!wdfkd.wdfcrashdump** to view information about UMDF drivers. If you issue **!wdfkd.wdfcrashdump** with no parameters, the output includes the driver that caused the crash and a list of all loaded drivers in the host process that failed. You can click on drivers in this list that have associated logs.
 
-``` syntax
+```
 0:001> !wdfkd.wdfcrashdump
 Opening minidump at location C:\temp\WudfHost_ext__1312.dmp
 

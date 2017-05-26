@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfpoolusage** extension displays pool usage information for a specified driver, if the Kernel-Mode Driver Framework (KMDF) verifier is enabled for the driver.
 
-``` syntax
+```
 !wdfkd.wdfpoolusage [DriverName [SearchAddress] [Flags]]]
 ```
 

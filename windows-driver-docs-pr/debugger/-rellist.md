@@ -21,7 +21,7 @@ api_type:
 
 The **!rellist** extension displays a Plug and Play relation list.
 
-``` syntax
+```
     !rellist Address [Flags] 
 ```
 

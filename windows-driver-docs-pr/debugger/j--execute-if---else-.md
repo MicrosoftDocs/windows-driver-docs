@@ -21,7 +21,7 @@ api_type:
 
 The **j** command conditionally executes one of the specified commands, depending on the evaluation of a given expression.
 
-``` syntax
+```
 j Expression Command1 ; Command2 
 j Expression 'Command1' ; 'Command2' 
 ```

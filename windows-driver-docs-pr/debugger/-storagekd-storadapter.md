@@ -21,7 +21,7 @@ api_type:
 
 The **!storagekd.storadapter** extension displays information about the specified Storport adapter.
 
-``` syntax
+```
     !storagekd.storadapter [Address]  
 ```
 

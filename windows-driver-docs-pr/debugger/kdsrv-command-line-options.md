@@ -21,7 +21,7 @@ api_type:
 
 The KdSrv command line uses the following syntax.
 
-``` syntax
+```
     kdsrv -t ServerTransport 
 
    

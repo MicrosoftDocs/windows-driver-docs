@@ -21,7 +21,7 @@ api_type:
 
 The **!bthkd.sdpinterface** command displays information about the SDP interface.
 
-``` syntax
+```
 !bthkd.sdpinterface
 ```
 

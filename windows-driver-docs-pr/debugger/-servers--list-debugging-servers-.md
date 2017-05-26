@@ -21,7 +21,7 @@ api_type:
 
 The **.servers** command lists all debugging servers that have been established by this debugger.
 
-``` syntax
+```
     .servers 
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The [**!usb3kd.ucx\_controller**](-usb3kd-device-info.md) command displays information about a USB 3.0 host controller. The display is based on data structures maintained by the USB host controller extension driver (Ucx*Version*.sys).
 
-``` syntax
+```
 !usb3kd.ucx_controller UcxControllerPrivContext
 ```
 
@@ -46,7 +46,7 @@ Examples
 
 To obtain the address of the UCX controller private context, look at the output of the [**!ucx\_controller\_list**](-usb3kd-ucx-controller-list.md) command. In the following example, the address of the private context is 0xfffffa80052da050.
 
-```cmd
+```
 3: kd> !ucx_controller_list
 
 ## Dumping List of UCX controller objects
@@ -62,7 +62,7 @@ To obtain the address of the UCX controller private context, look at the output 
 
 Now you can pass the address of the UCX controller private context to the [**!ucx\_controller**](-usb3kd-device-info.md) command.
 
-```cmd
+```
 3: kd> !ucx_controller 0xfffffa80052da050
 
 ## Dumping Ucx Controller Information fffffa80052da050

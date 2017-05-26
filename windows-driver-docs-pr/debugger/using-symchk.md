@@ -18,7 +18,7 @@ ms.technology: windows-devices
 
 The basic syntax for SymChk is as follows:
 
-``` syntax
+```
 symchk [/r] FileNames /s SymbolPath 
 ```
 
@@ -28,7 +28,7 @@ There are many more command-line options. For a full listing, see [**SymChk Comm
 
 The symbol path specified can include any number of local directories, UNC directories, or symbol servers. Local directories and UNC directories are not searched recursively. Only the specified directory and a subdirectory based on the executable's extension are searched. For example, the query
 
-``` syntax
+```
 symchk thisdriver.sys /s g:\symbols 
 ```
 
@@ -36,7 +36,7 @@ will search g:\\mysymbols and g:\\mysymbols\\sys.
 
 You can specify a symbol server by using either of the following syntaxes as part of your symbol path:
 
-``` syntax
+```
 srv*DownstreamStore*\\Server\Share
 srv*\\Server\Share
 ```
@@ -59,7 +59,7 @@ To determine whether a symbol file is private or public, use the **/v** paramete
 
 If MyApp.pdb contains private symbols, the output of SymChk looks like this.
 
-``` syntax
+```
 [SYMCHK] Searching for symbols to c:\sym\MyApp.exe in path c:\sym
 ...
 DBGHELP: MyApp - private symbols & lines
@@ -71,7 +71,7 @@ SYMCHK: PASSED + IGNORED files = 1
 
 If MyApp.pdb contains only public symbols, the output of SymChk looks like this.
 
-``` syntax
+```
 [SYMCHK] Searching for symbols to c:\sym\MyApp.exe in path c:\sym
 ...
 DBGHELP: MyApp - public symbols
@@ -91,7 +91,7 @@ For more information, see [Public and Private Symbols](public-and-private-symbol
 
 Here are some examples. The following command searches for symbols for the program Myapp.exe:
 
-``` syntax
+```
 e:\debuggers> symchk f:\myapp.exe /s f:\symbols\applications 
 
 SYMCHK: Myapp.exe           FAILED  - Myapp.pdb is missing
@@ -102,7 +102,7 @@ SYMCHK: PASSED + IGNORED files = 0
 
 You can try again with a different symbol path:
 
-``` syntax
+```
 e:\debuggers> symchk f:\myapp.exe /s f:\symbols\newdirectory 
 
 SYMCHK: FAILED files = 0
@@ -115,7 +115,7 @@ A program file is ignored if it contains no executable code. Many resource files
 
 If you prefer to see the file names of all program files, you can use the **/v** option to generate verbose output:
 
-``` syntax
+```
 e:\debuggers> symchk /v f:\myapp.exe /s f:\symbols\newdirectory 
 
 SYMCHK: MyApp.exe           PASSED
@@ -126,7 +126,7 @@ SYMCHK: PASSED + IGNORED files = 1
 
 The following command searches for a huge number of Windows symbols in a symbol server. There are a great variety of possible error messages:
 
-``` syntax
+```
 e:\debuggers> symchk /r c:\windows\system32 /s srv*\\manysymbols\windows 
 
 SYMCHK: msisam11.dll         FAILED  - MSISAM11.pdb is missing

@@ -21,7 +21,7 @@ api_type:
 
 Use the following commands to record and analyze the heap memory allocations in a running process. This analysis focuses on stack traces.
 
-``` syntax
+```
     umdh -p:PID [-f:LogFile] [-v[:MsgFile]] | [-g] | [-h]
 
    

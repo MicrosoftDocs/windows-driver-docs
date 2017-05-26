@@ -21,8 +21,8 @@ api_type:
 
 The **!kuser** extension displays the shared user-mode page (KUSER\_SHARED\_DATA).
 
-``` syntax
-    !kuser 
+```
+!kuser 
 ```
 
 ## <span id="ddk__kuser_dbg"></span><span id="DDK__KUSER_DBG"></span>

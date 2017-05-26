@@ -23,7 +23,7 @@ The **!fadt** extension displays a Fixed ACPI Description Table (FADT).
 
 Syntax
 
-``` syntax
+```
 !fadt Address
 ```
 

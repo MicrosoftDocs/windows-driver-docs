@@ -23,13 +23,13 @@ The **pc** command executes the program until a call instruction is reached.
 
 User-Mode
 
-``` syntax
+```
 [~Thread] pc [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-``` syntax
+```
     pc [r] [= StartAddress] [Count] 
 ```
 

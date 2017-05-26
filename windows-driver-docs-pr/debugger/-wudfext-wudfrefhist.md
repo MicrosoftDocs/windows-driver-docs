@@ -21,7 +21,7 @@ api_type:
 
 The **!wudfext.wudfrefhist** extension displays the reference count stack history for a UMDF object.
 
-``` syntax
+```
 !wudfext.wudfrefhist ObjectAddress
 ```
 

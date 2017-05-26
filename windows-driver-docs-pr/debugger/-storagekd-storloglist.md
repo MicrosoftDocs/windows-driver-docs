@@ -21,7 +21,7 @@ api_type:
 
 The **!storagekd.storloglist** extension displays the Storport adapter’s internal log entries.
 
-``` syntax
+```
     !storagekd.storloglist <Address> [<starting_entry> [<ending_entry>]] [L <count>] 
 ```
 

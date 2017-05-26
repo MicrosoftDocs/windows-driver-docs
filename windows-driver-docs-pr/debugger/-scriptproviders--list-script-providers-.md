@@ -21,7 +21,7 @@ api_type:
 
 The **.scriptproviders** command lists the active script providers.
 
-``` syntax
+```
     .scriptproviders 
    
 ```

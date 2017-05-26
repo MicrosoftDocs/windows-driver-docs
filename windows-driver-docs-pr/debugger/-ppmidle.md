@@ -21,7 +21,7 @@ api_type:
 
 The **!ppmidle** command
 
-``` syntax
+```
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

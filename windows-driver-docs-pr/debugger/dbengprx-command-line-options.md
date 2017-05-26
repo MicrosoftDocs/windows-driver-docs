@@ -21,7 +21,7 @@ api_type:
 
 The DbEngPrx command line uses the following syntax.
 
-``` syntax
+```
     dbengprx [-p] -c ClientTransport -s ServerTransport 
 
 dbengprx -? 

@@ -21,7 +21,7 @@ api_type:
 
 The **.else** token behaves like the **else** keyword in C.
 
-``` syntax
+```
 .if (Condition) { Commands } .else { Commands } 
 
 .if (Condition) { Commands } .elsif (Condition) { Commands } .else { Commands } 

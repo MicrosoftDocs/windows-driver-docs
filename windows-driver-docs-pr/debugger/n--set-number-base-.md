@@ -23,7 +23,7 @@ The **n** command sets the default number base (radix) to the specified value or
 
 Do not confuse this command with the [**~n (Suspend Thread)**](-n--suspend-thread-.md) command.
 
-``` syntax
+```
 n [Radix]
 ```
 

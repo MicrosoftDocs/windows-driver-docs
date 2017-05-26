@@ -23,7 +23,7 @@ The **!sd** extension displays the security descriptor at the specified address.
 
 Syntax
 
-``` syntax
+```
     !sd Address [Flags] 
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The **!scsikd.classext** extension displays the specified class Plug and Play (PnP) device.
 
-``` syntax
+```
     !scsikd.classext [Device [Level]] 
 ```
 

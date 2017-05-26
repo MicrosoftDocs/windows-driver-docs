@@ -21,7 +21,7 @@ api_type:
 
 The **.scriptload** command will load and execute the specified script file.
 
-``` syntax
+```
     .scriptload ScriptFile
      
    

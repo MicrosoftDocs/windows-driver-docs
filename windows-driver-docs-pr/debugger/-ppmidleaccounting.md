@@ -21,7 +21,7 @@ api_type:
 
 The **!ppmidleaccounting** command
 
-``` syntax
+```
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

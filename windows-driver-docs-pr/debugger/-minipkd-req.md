@@ -21,8 +21,8 @@ api_type:
 
 The **!minipkd.req** extension displays information about all of the currently active requests on the specified adapter or device.
 
-``` syntax
-    !minipkd.req Adapter 
+```
+!minipkd.req Adapter 
 !minipkd.req Device 
 ```
 

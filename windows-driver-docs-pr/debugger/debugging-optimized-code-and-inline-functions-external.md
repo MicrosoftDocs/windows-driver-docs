@@ -79,7 +79,7 @@ __forceinline int func1(int p1, int p2, int p3)
 
 You can use the [**bm**](bp--bu--bm--set-breakpoint-.md) command to set a breakpoint at `func1`.
 
-``` syntax
+```
 0:000> bm MyApp!func1
   1: 000007f6`8d621088 @!"MyApp!func1" (MyApp!func1 inlined in MyApp!main+0x88)
 0:000> g
@@ -91,7 +91,7 @@ MyApp!main+0x88:
 
 After you take one step into `func1`, you can use the [**k**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to see `func1` on the call stack. You can use the [**dv**](dv--display-local-variables-.md) command to see the local variables for `func1`. Notice that the local variable `num3` is shown as unavailable. A local variable can be unavailable in optimized code for a number of reasons. It might be that the variable doesn't exist in the optimized code. It might be that the variable has not been initialized yet or that the variable is no longer being used.
 
-``` syntax
+```
 0:000> p
 MyApp!func1+0x7:
 000007f6`8d62108f 8d3c33          lea     edi,[rbx+rsi]
@@ -112,7 +112,7 @@ MyApp!func1+0x7:
 
 If you look at frame 1 in the stack trace, you can see the local variables for the `main` function. Notice that two of the variables are stored in registers.
 
-``` syntax
+```
 0:000> .frame 1
 01 00000000`0050fc90 000007f6`8d6213f3 MyApp!main+0x8f
 
@@ -124,7 +124,7 @@ If you look at frame 1 in the stack trace, you can see the local variables for t
 
 The Windows debugger aggregates data from PDB files to find all the places where a specific function has been placed inline. You can use the [**x**](x--examine-symbols-.md) command to list all the caller sites of the an inline function.
 
-``` syntax
+```
 0:000> x simple!MoreCalculate
 00000000`ff6e1455 simple!MoreCalculate =  (inline caller) simple!wmain+8d
 00000000`ff6e1528 simple!MoreCalculate =  (inline caller) simple!wmain+160

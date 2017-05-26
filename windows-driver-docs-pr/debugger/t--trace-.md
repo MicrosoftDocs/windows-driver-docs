@@ -23,13 +23,13 @@ The **t** command executes a single instruction or source line and optionally di
 
 User-Mode
 
-``` syntax
+```
 [~Thread] t [r] [= StartAddress] [Count] ["Command"] 
 ```
 
 Kernel-Mode
 
-``` syntax
+```
     t [r] [= StartAddress] [Count] ["Command"] 
 ```
 

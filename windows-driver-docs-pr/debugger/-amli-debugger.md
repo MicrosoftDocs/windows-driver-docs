@@ -23,7 +23,7 @@ The **!amli debugger** extension breaks into the AMLI Debugger.
 
 Syntax
 
-``` syntax
+```
 !amli debugger
 ```
 

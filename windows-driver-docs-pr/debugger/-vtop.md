@@ -23,7 +23,7 @@ The **!vtop** extension converts a virtual address to the corresponding physical
 
 Syntax
 
-``` syntax
+```
 !vtop PFN VirtualAddress 
 !vtop 0 VirtualAddress 
 ```

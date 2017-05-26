@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.forcedump** command displays information about memory contents at a caller-supplied address.
 
-``` syntax
-    !ks.forcedump Object Type [Level] 
+```
+!ks.forcedump Object Type [Level] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

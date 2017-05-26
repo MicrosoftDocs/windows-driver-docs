@@ -21,7 +21,7 @@ api_type:
 
 The **!for\_each\_thread** extension executes the specified debugger command once for each thread in the target.
 
-``` syntax
+```
 !for_each_thread ["CommandString"] 
 !for_each_thread -? 
 ```

@@ -21,7 +21,7 @@ api_type:
 
 The syntax of the TList command is as follows:
 
-``` syntax
+```
     tlist [/p ProcessName | PID | Pattern | /t | /c | /e | /k | /m [Module] | /s | /v
 
    

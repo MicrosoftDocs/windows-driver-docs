@@ -21,7 +21,7 @@ api_type:
 
 To display a list of available sessions on a local or Remote Server, use the following syntax.
 
-``` syntax
+```
     remote /q Computer
 
    

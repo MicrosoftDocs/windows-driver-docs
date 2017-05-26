@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbpnp** command displays state context information about a USB hub.
 
-``` syntax
+```
 !usbkd.usbpnp DeviceExtension
 ```
 

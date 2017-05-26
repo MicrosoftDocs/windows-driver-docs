@@ -23,8 +23,8 @@ The **!ndiskd.netpacket** extension displays information about a [NET\_PACKET](h
 
 For more information about the Network Adapter WDF Class Extension (NetAdapterCx), see [Network Adapter WDF Class Extension (Cx)](https://docs.microsoft.com/windows-hardware/drivers/netcx).
 
-``` syntax
-    !ndiskd.netpacket [-handle <x>] [-basic] [-layout] [-checksum] [-data] 
+```
+!ndiskd.netpacket [-handle <x>] [-basic] [-layout] [-checksum] [-data] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -69,7 +69,7 @@ To obtain a handle for a NET\_PACKET, follow these steps:
 For details on Steps 1-4 of this procedure, see the examples on the **!ndiskd.cxadapter** topic. For details on Step 5 of this procedure, see the examples on the [**!ndiskd.netqueue**](-ndiskd-netqueue.md) topic. For details on Steps 6-7 of this procedure, see the examples on the [**!ndiskd.netrb**](-ndiskd-netrb.md) topic.
 In the following example, look for the handle for the first NET\_PACKET, ffffd1022d000040.
 
-```cmd
+```
 0: kd> !ndiskd.netrb ffffd1022d000000 -dump
 
     [000] ffffd1022d000040 - NET_PACKET
@@ -90,7 +90,7 @@ In the following example, look for the handle for the first NET\_PACKET, ffffd10
 
 By clicking on the handle for this NET\_PACKET or by entering **!ndiskd.netpacket -handle** on the command line, you can see details for this NET\_PACKET, including the ring buffer that contains it, the datapath queue that contains its ring buffer, and the handle for its first fragment.
 
-```cmd
+```
 0: kd> !ndiskd.netpacket ffffd1022d000040
 
 
@@ -106,7 +106,7 @@ By clicking on the handle for this NET\_PACKET or by entering **!ndiskd.netpacke
 
 You can now combine the basic description with any of the other **!ndiskd.netpacket** parameters, or all of them, to see specific information for this fragment. The following example uses all parameters.
 
-```cmd
+```
 0: kd> !ndiskd.netpacket ffffd1022d000040 -basic -layout -checksum -data
 
     NET_PACKET         ffffd1022d000040    Ring Buffer        ffffd1022d000000

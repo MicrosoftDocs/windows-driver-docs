@@ -21,7 +21,7 @@ api_type:
 
 The **!rpcexts.getclientcallinfo** extension searches the system's RPC state information for client call (CCALL) information.
 
-``` syntax
+```
     !rpcexts.getclientcallinfo [ CallID | 0 [ IfStart | 0 [ ProcNum | 0xFFFF [ProcessID|0] ] ] ] 
 !rpcexts.getclientcallinfo -? 
 ```

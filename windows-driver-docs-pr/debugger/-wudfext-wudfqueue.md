@@ -21,7 +21,7 @@ api_type:
 
 The **!wudfext.wudfqueue** extension displays information about an I/O queue.
 
-``` syntax
+```
 !wudfext.wudfqueue pWDFQueue
 ```
 

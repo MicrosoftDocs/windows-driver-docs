@@ -21,8 +21,8 @@ api_type:
 
 The **.endsrv** command causes the debugger to cancel an active debugging server.
 
-``` syntax
-    .endsrv ServerID 
+```
+.endsrv ServerID 
 ```
 
 ## <span id="ddk_meta_end_debugging_server_dbg"></span><span id="DDK_META_END_DEBUGGING_SERVER_DBG"></span>Parameters

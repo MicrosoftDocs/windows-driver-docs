@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.automation** extension displays any automation items associated with the given object.
 
-``` syntax
-    !ks.automation Object
+```
+!ks.automation Object
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

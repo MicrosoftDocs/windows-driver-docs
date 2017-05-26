@@ -21,7 +21,7 @@ api_type:
 
 The **!wudfext.umirps** extension displays the list of pending user-mode I/O request packets (UM IRPs) in the host process.
 
-``` syntax
+```
 !wudfext.umirps NumberOfIrps Flags
 ```
 

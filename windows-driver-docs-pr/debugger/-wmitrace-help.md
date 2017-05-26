@@ -21,7 +21,7 @@ api_type:
 
 The **!wmitrace.help** extension displays the extension commands in Wmitrace.dll.
 
-``` syntax
+```
     !wmitrace.help 
 ```
 

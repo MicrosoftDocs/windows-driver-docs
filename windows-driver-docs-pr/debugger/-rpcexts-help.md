@@ -21,7 +21,7 @@ api_type:
 
 The **!rpcexts.help** extension displays a Help text in the Command Prompt window showing all Rpcexts.dll extension commands.
 
-``` syntax
+```
     !rpcexts.help 
 ```
 

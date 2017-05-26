@@ -21,7 +21,7 @@ api_type:
 
 The **.fiximports** command validates and corrects all static import links for a target module.
 
-``` syntax
+```
 .fiximports Module
 ```
 

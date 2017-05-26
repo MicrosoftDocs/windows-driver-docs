@@ -21,8 +21,8 @@ api_type:
 
 The **.fpo** command controls the frame pointer omission (FPO) overrides.
 
-``` syntax
-    .fpo -s [-fFlag] Address 
+```
+.fpo -s [-fFlag] Address 
 .fpo -d Address 
 .fpo -x Address 
 .fpo -o Address 

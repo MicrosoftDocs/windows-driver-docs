@@ -21,7 +21,7 @@ api_type:
 
 The **!ppmperfpolicy** command
 
-``` syntax
+```
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

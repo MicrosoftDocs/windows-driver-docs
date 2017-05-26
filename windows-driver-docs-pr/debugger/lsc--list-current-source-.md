@@ -21,7 +21,7 @@ api_type:
 
 The **lsc** command displays the current source file name and line number.
 
-``` syntax
+```
     lsc 
 ```
 

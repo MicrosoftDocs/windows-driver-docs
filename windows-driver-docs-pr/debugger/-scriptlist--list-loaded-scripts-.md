@@ -21,7 +21,7 @@ api_type:
 
 The **.scriptlist** command lists the loaded scripts.
 
-``` syntax
+```
     .scriptlist 
    
 ```

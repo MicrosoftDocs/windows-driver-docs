@@ -21,7 +21,7 @@ api_type:
 
 To start the client side of the Remote tool, use the following syntax at the command line.
 
-``` syntax
+```
     remote /c Server SessionName [/L Lines] [/f] [/b] [/k ColorFile] 
 
    

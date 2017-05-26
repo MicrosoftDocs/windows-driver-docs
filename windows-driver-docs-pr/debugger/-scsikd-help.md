@@ -21,7 +21,7 @@ api_type:
 
 The **!scsikd.help** extension displays help text for Scsikd.dll extension commands.
 
-``` syntax
+```
     !scsikd.help 
 ```
 

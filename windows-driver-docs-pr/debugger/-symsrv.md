@@ -21,7 +21,7 @@ api_type:
 
 The **!symsrv** extension closes the symbol server client.
 
-``` syntax
+```
 !symsrv close
 ```
 

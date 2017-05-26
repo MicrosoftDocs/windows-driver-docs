@@ -21,7 +21,7 @@ api_type:
 
 The **!gflag** extension sets or displays the global flags.
 
-``` syntax
+```
 !gflag [+|-] Value 
 !gflag {+|-} Abbreviation 
 !gflag -? 

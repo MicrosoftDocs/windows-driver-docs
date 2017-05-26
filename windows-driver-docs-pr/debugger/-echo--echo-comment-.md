@@ -21,7 +21,7 @@ api_type:
 
 The **.echo** command displays a comment string.
 
-``` syntax
+```
 .echo String 
 .echo "String" 
 ```

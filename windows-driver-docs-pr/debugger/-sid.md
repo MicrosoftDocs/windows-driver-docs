@@ -23,7 +23,7 @@ The **!sid** extension displays the security identifier (SID) at the specified a
 
 Syntax
 
-``` syntax
+```
     !sid Address [Flags] 
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The [**!usb3kd.usbdstatus**](-usb3kd-device-info.md) extension displays the name of a USBD status code.
 
-``` syntax
+```
 !usb3kd.ucx_usbdstatus UrbStatus
 ```
 
@@ -46,7 +46,7 @@ Examples
 
 The following example passes the numeric value 0x80000200 to the **!usbdstatus** command. The command returns the name of the status code, USBD\_STATUS\_INVALID\_URB\_FUNCTION.
 
-```cmd
+```
 3: kd> !usbdstatus 0x80000200
 USBD_STATUS_INVALID_URB_FUNCTION (0x80000200)
 ```

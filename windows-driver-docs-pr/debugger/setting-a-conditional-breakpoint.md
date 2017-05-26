@@ -64,13 +64,13 @@ These comments are especially useful if you have several such breakpoints runnin
 
 In some situations you might want to break into the debugger only if a string variable matches a pattern. For example, suppose you want to break at kernel32!CreateEventW only if the *lpName* argument points to a string that matches the pattern "Global\*". The following example shows how to create the conditional breakpoint.
 
-```cmd
+```
 bp kernel32!CreateEventW "$$<c:\\commands.txt"
 ```
 
 The preceding [**bp**](bp--bu--bm--set-breakpoint-.md) command creates a breakpoint based on conditions and optional commands that are in a script file named commands.txt. The script file contains the following statements.
 
-```cmd
+```
 .if (@r9 != 0) { as /mu ${/v:EventName} @r9 } .else { ad /q ${/v:EventName} }
 .if ($spat(@"${EventName}", "Global*") == 0)  { gc } .else { .echo EventName }
 ```

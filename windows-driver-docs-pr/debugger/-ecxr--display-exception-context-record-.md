@@ -21,7 +21,7 @@ api_type:
 
 The **.ecxr** command displays the context record that is associated with the current exception.
 
-``` syntax
+```
 .ecxr
 ```
 

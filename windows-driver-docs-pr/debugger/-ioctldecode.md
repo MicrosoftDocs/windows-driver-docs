@@ -21,8 +21,8 @@ api_type:
 
 The **!ioctldecode** extension displays the *Device Type*, *Required Access*, *Function Code* and *Transfer Type* as specified by the given IOCTL code. For more information about IOCTL control codes, see [Defining I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff543023).
 
-``` syntax
-    !ioctldecode IoctlCode 
+```
+!ioctldecode IoctlCode 
 ```
 
 ## <span id="ddk__ioresdes_dbg"></span><span id="DDK__IORESDES_DBG"></span>Parameters

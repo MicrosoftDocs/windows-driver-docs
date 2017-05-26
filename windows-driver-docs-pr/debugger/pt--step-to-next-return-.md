@@ -23,13 +23,13 @@ The **pt** command executes the program until a return instruction is reached.
 
 User-Mode
 
-``` syntax
+```
 [~Thread] pt [r] [= StartAddress] [Count] ["Command"]
 ```
 
 Kernel-Mode
 
-``` syntax
+```
     pt [r] [= StartAddress] [Count] ["Command"]
 ```
 

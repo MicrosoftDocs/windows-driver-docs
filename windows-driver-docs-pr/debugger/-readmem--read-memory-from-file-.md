@@ -21,7 +21,7 @@ api_type:
 
 The **.readmem** command reads raw binary data from the specified file and copies the data to the target computer's memory.
 
-``` syntax
+```
     .readmem FileName Range 
 ```
 

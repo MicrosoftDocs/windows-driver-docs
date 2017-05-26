@@ -21,7 +21,7 @@ api_type:
 
 The **.dml\_start** command displays output that serves as a starting point for exploration using commands that support [Debugger Markup Language](debugger-markup-language-commands.md) (DML).
 
-``` syntax
+```
 .dml_start
 .dml_start filename
 ```
@@ -46,7 +46,7 @@ Each line of output in the preceding example is a link that you can click to inv
 
 If you supply a path to a DML file, the file is used as the starting output. For example, suppose the file c:\\MyFavoriteCommands.txt contains the following text and DML tags.
 
-```cmd
+```
 Display all device nodes.
    <link cmd="!devnode 0 1">!devnode 0 1</link>
 

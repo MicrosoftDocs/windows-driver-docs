@@ -21,7 +21,7 @@ api_type:
 
 The [**!usbkd.usbhcdext**](https://msdn.microsoft.com/library/windows/hardware/dn367072) command displays information from the device extension of a USB host controller or a USB root hub.
 
-``` syntax
+```
 !usbkd.usbhcdext DeviceExtension
 ```
 
@@ -44,7 +44,7 @@ Examples
 
 Here is one way to find the address of the device extension for the FDO of an EHCI host controller. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-``` syntax
+```
 0: kd> !usbkd.usb2tree
 
 EHCI MINIPORT(s) dt usbport!_USBPORT_MINIPORT_DRIVER ffffe00001f48bd0
@@ -57,7 +57,7 @@ In the preceding output, the address of the device extension of the FDO is displ
 
 Now pass the address of the device extension to the [**!usbhcdext**](https://msdn.microsoft.com/library/windows/hardware/dn367072) command.
 
-``` syntax
+```
 0: kd> !usbkd.usbhcdext ffffe00001ca11a0
 
 HC Flavor 1000  FDO ffffe00001ca1050
@@ -89,7 +89,7 @@ BusContextHead: !usblist ffffe00001ca16b0, BC
 
 Here is one way to find the address of the device extension for the PDO of a root hub. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-``` syntax
+```
 0: kd> !usbkd.usb2tree
 
 EHCI MINIPORT(s) dt usbport!_USBPORT_MINIPORT_DRIVER ffffe00001f48bd0
@@ -101,7 +101,7 @@ EHCI MINIPORT(s) dt usbport!_USBPORT_MINIPORT_DRIVER ffffe00001f48bd0
 
 In the preceding output, you can see the address of the FDO of the root hub displayed as the argument to the command **!devstack ffffe00002320050**. Use the [**!devstack**](-devstack.md) command to find the address of the PDO and the PDO device extension.
 
-``` syntax
+```
 0: kd> !kdexts.devstack ffffe00002320050
   !DevObj           !DrvObj            !DevExt           ObjectName
 > ffffe00002320050  \Driver\usbhub     ffffe000023201a0  0000002d
@@ -113,7 +113,7 @@ In the preceding output, you can see that the address of the device extension fo
 
 Now pass the address of the device extension to the [**!usbhcdext**](https://msdn.microsoft.com/library/windows/hardware/dn367072) command.
 
-``` syntax
+```
 0: kd> !usbkd.usbhcdext ffffe0000213c1a0
 
 Root Hub PDO Extension

@@ -26,7 +26,7 @@ Just as with **ExpWaitForResource*Xxx***, the lock identifier is the first param
 
 Start by displaying the stack:
 
-``` syntax
+```
 0:024> kb
 
 ChildEBP RetAddr  Args to Child
@@ -43,7 +43,7 @@ ChildEBP RetAddr  Args to Child
 
 Now use the [**!ntsdexts.locks**](-locks---ntsdexts-locks-.md) extension to find the critical section:
 
-``` syntax
+```
 0:024> !locks 
 CritSec winsrv!_ScrollBufferLock at 5ffa9f9c        5ffa9f9c is the first one 
 LockCount          5
@@ -65,7 +65,7 @@ ContentionCount    1d47
 
 Now search for the thread that has the ID number 0x6D:
 
-``` syntax
+```
 0:024> ~ 
   0  id: 16.15   Teb 7ffdd000 Unfrozen
   1  id: 16.13   Teb 7ffdb000 Unfrozen
@@ -96,7 +96,7 @@ Now search for the thread that has the ID number 0x6D:
 
 Thread 21 owns the first critical section. Make that the active thread and get a stack trace:
 
-``` syntax
+```
 0:024> ~21s
 ntdll!_ZwWaitForSingleObject+0xb:
 77f71bfb c20c00           ret     0xc
@@ -118,7 +118,7 @@ ChildEBP RetAddr  Args to Child
 
 Thread 6 owns the second critical section. Examine its stack as well:
 
-``` syntax
+```
 0:021> ~6s
 winsrv!_PtiFromThreadId+0xd:
 5fe8429a 394858           cmp     [eax+0x58],ecx    ds:0023:7f504da8=000000f8

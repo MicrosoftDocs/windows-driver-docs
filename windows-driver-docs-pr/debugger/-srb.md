@@ -21,7 +21,7 @@ api_type:
 
 The **!srb** extension displays information about a SCSI Request Block (SRB).
 
-``` syntax
+```
     !srb Address 
 ```
 

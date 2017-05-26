@@ -21,7 +21,7 @@ api_type:
 
 The **!wudfext.wudfdevicequeues** extension displays information about all the I/O queues for a device.
 
-``` syntax
+```
 !wudfext.wudfdevicequeues pWDFDevice
 ```
 

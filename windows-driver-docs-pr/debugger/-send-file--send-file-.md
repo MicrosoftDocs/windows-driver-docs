@@ -21,7 +21,7 @@ api_type:
 
 The **.send\_file** command copies files. If you are performing remote debugging through a process server, it sends a file from the smart client's computer to the process server's computer.
 
-``` syntax
+```
  .send_file [-f] Source Destination 
 .send_file [-f] -s Destination 
 ```

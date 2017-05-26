@@ -21,7 +21,7 @@ api_type:
 
 The .scriptrun command will load and run a JavaScript.
 
-``` syntax
+```
     .scriptrun ScriptFile  
    
 ```

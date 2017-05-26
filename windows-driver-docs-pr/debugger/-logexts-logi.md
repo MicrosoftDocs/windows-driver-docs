@@ -21,7 +21,7 @@ api_type:
 
 The **!logexts.logi** extension initializes logging by injecting Logger into the target application.
 
-``` syntax
+```
     !logexts.logi [OutputDirectory] 
 ```
 

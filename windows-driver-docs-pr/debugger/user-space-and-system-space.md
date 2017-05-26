@@ -27,7 +27,7 @@ If you need to determine the extent of user space and system space on the target
 
 For example, on a 32-bit target computer with an x86 processor and standard boot parameters, this command will show the following result:
 
-``` syntax
+```
 kd> dp nt!mmhighestuseraddress L1 
 81f71864  7ffeffff 
 ```
@@ -36,7 +36,7 @@ This indicates that user space ranges from the address 0x00000000 to 0x7FFEFFFF,
 
 With a 64-bit target computer, different values will occur. For example, this command might show the following:
 
-``` syntax
+```
 0: kd> dp nt!mmhighestuseraddress L1 
 fffff800`038b4010  000007ff`fffeffff 
 ```

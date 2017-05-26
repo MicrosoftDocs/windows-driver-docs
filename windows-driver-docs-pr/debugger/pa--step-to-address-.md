@@ -23,13 +23,13 @@ The **pa** command executes the program until the specified address is reached, 
 
 User-Mode
 
-``` syntax
+```
 [~Thread] pa [r] [= StartAddress] StopAddress ["Command"]
 ```
 
 Kernel-Mode
 
-``` syntax
+```
     pa [r] [= StartAddress] StopAddress ["Command"]
 ```
 

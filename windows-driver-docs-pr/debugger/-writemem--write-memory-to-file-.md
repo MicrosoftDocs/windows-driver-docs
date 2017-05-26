@@ -21,7 +21,7 @@ api_type:
 
 The **.writemem** command writes a section of memory to a file.
 
-``` syntax
+```
     .writemem FileName Range 
 ```
 

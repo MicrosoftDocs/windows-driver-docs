@@ -23,7 +23,7 @@ First-time users of KD should begin with the [Debugging Using KD and NTKD](debug
 
 The KD command line uses the following syntax.
 
-``` syntax
+```
     kd [ -server ServerTransport | -remote ClientTransport ] 
    [-b | -x] [-d] [-bonc] [-m] [-myob] [-lines] [-n] [-r] [-s] 
    [-v] [-clines lines] [-failinc] [-noio] [-noshell] 

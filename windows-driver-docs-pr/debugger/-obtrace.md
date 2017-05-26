@@ -21,7 +21,7 @@ api_type:
 
 The **!obtrace** extension displays object reference tracing data for the specified object.
 
-``` syntax
+```
 !obtrace Object
 ```
 
@@ -65,7 +65,7 @@ Before using this extension to display object reference tracing data, you must u
 
 Here is an example of the output from the **!obtrace** extension:
 
-``` syntax
+```
 kd> !obtrace 0xfa96f700
 Object: fa96f700        Image: cmd.exe
 Sequence  (+/-)  Stack

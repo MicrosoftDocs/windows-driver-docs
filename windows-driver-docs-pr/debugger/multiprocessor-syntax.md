@@ -28,13 +28,13 @@ You can use the [**.echocpunum (Show CPU Number)**](-echocpunum--show-cpu-number
 
 In the following example, **0:** in front of the **kd&gt;** prompt indicates that you are debugging the first processor in the computer.
 
-``` syntax
+```
 0: kd>
 ```
 
 Use the [**~s (Change Current Processor)**](-s--change-current-processor-.md) command to switch between processors, as the following example shows.
 
-``` syntax
+```
 0: kd> ~1s
 1: kd>
 ```
@@ -53,7 +53,7 @@ You can add a processor number before several commands. This number is not prece
 
 Processor IDs do not have to be referred to explicitly. Instead, you can use a numerical expression that resolves to an integer that corresponds to a processor ID. To indicate that the expression should be interpreted as a processor, use the following syntax.
 
-``` syntax
+```
 ||[Expression]
 ```
 
@@ -61,7 +61,7 @@ In this syntax, the square brackets are required, and *Expression* stands for an
 
 In the following example, the processor changes depending on the value of a user-defined pseudo-register.
 
-``` syntax
+```
 ||[@$t0]
 ```
 
@@ -69,19 +69,19 @@ In the following example, the processor changes depending on the value of a user
 
 The following example uses the [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to display a stack trace from processor two.
 
-``` syntax
+```
 1: kd> 2k 
 ```
 
 The following example uses the [**r (Registers)**](r--registers-.md) command to display the **eax** register of processor three.
 
-``` syntax
+```
 1: kd> 3r eax 
 ```
 
 However, the following command gives a syntax error, because you cannot change the state of a processor other than the current processor.
 
-``` syntax
+```
 1: kd> 3r eax=808080 
 ```
 
@@ -91,7 +91,7 @@ During kernel debugging, the [**bp, bu, bm (Set Breakpoint)**](bp--bu--bm--set-b
 
 For example, if the current processor is three, you can enter the following command to put a breakpoint at **SomeAddress**.
 
-``` syntax
+```
 1: kd> bp SomeAddress 
 ```
 

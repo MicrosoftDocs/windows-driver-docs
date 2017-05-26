@@ -25,8 +25,8 @@ api_type:
 
 The **!ndiskd.findpacket** extension finds the specified packets.
 
-``` syntax
-    !ndiskd.findpacket [-VirtualAddress] [-PoolAddress]  
+```
+!ndiskd.findpacket [-VirtualAddress] [-PoolAddress]  
 ```
 
 ## <span id="ddk__ndiskd_findpacket_dbg"></span><span id="DDK__NDISKD_FINDPACKET_DBG"></span>Parameters

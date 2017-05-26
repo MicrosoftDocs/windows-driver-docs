@@ -21,7 +21,7 @@ api_type:
 
 The **!ptov** extension displays the entire physical-to-virtual map for a given process.
 
-``` syntax
+```
 !ptov DirBase
 ```
 
@@ -57,7 +57,7 @@ Remarks
 
 Here is an example. First, use [**.process**](-process--set-process-context-.md) and [**!process**](-process.md) to determine the directory base of the current process:
 
-``` syntax
+```
 1: kd> .process
 Implicit process is now 852b4040
 1: kd> !process 852b4040 1
@@ -69,7 +69,7 @@ PROCESS 852b4040  SessionId: none  Cid: 0004    Peb: 00000000  ParentCid: 0000
 
 In this case, the directory base is 0x00185000. Pass this address to **!ptov**:
 
-``` syntax
+```
 1: kd> !ptov 185000
 X86PtoV: pagedir 185000, PAE enabled.
 15e11000 10000
@@ -91,7 +91,7 @@ The total display is very long.
 
 Here is a 64-bit example.
 
-``` syntax
+```
 3: kd> .process
 Implicit process is now fffffa80`0361eb30
 3: kd> !process fffffa80`0361eb30 1

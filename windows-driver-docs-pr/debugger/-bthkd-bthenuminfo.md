@@ -21,7 +21,7 @@ api_type:
 
 The **!bthkd.bthenuminfo** command displays information about the BTHENUM FDO.
 
-``` syntax
+```
 !bthkd.bthenuminfo
 ```
 

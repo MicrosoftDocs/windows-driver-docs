@@ -21,7 +21,7 @@ api_type:
 
 The **!apc** extension formats and displays the contents of one or more asynchronous procedure calls (APCs).
 
-``` syntax
+```
 !apc
 !apc proc Process
 !apc thre Thread

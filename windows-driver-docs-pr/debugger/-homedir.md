@@ -21,7 +21,7 @@ api_type:
 
 The **!homedir** extension sets the default directory used by the symbol server and the source server.
 
-``` syntax
+```
 !homedir Directory
 !homedir
 ```
