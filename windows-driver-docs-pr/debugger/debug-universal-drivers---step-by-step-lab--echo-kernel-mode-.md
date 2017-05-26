@@ -97,7 +97,7 @@ To enable kernel mode debugging on the target system, perform the following step
 **&lt;- On the host system**
 
 1. Open a command prompt on the host system and type **ipconfig** to determine its IP address.
-```cmd
+```
 C:\>ipconfig
 Windows IP Configuration
 Ethernet adapter Ethernet:
@@ -114,7 +114,7 @@ Ethernet adapter Ethernet:
 
 3. Open a command prompt on the target system and use the **ping** command to confirm network connectivity between the two systems. Use the IP address of the host system you recorded instead of the one shown in the sample output.
 
-```cmd
+```
 C:\> ping 169.182.1.1
 
 Pinging 169.182.1.1 with 32 bytes of data:
@@ -132,17 +132,17 @@ Approximate round trip times in milli-seconds:
 Enable kernel mode debugging on the target system by completing the following steps.
 
 1. On the target computer, open a Command Prompt window as Administrator. Enter this command to enable debugging.
-```cmd
+```
 C:\> bcdedit /set {default} DEBUG YES
 ```
 
 2. Type this command to enable test signing.
-```cmd
+```
 C:\> bcdedit /set TESTSIGNING ON 
 ```
 
 3. Type this command to set the IP address of the host system. Use the IP address of the host system that you recorded earlier, not the one shown.
-```cmd
+```
 C:\> bcdedit /dbgsettings net hostip:192.168.1.1 port:50000 key:1.2.3.4
 ```
 
@@ -150,7 +150,7 @@ C:\> bcdedit /dbgsettings net hostip:192.168.1.1 port:50000 key:1.2.3.4
 
 4. Type this command to confirm that the dbgsettings they are set properly.
 
-```cmd
+```
 C:\> bcdedit /dbgsettings
 key                     1.2.3.4
 debugtype               NET
@@ -172,12 +172,12 @@ If you receive a pop-up message from the firewall, and you wish to use the debug
 **&lt;- On the host system**
 
 1. On the host computer, open a Command Prompt window as Administrator. Change to the WinDbg.exe directory. We will use the x64version of WinDbg.exe from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation.
-```cmd
+```
 C:\> Cd C:\Program Files(x86)\Windows Kits\10\Debuggers\x64 
 ```
 
 2. Launch WinDbg with remote user debug using the following command. The value for the key and port match what we set earlier using BCDEdit on the target.
-```cmd
+```
 WinDbg –k net:port=50000,key=1.2.3.4
 ```
 
@@ -212,7 +212,7 @@ Some debug commands display text using Debugger Markup Language that you can cli
 
 2. Type the following command to enable DML in the Debugger Command window.
 
-```cmd
+```
 0: kd> .prefer_dml 1
 DML versions of commands on by default
 ```
@@ -223,7 +223,7 @@ You can access reference command help using the **.hh** command.
 
 3. Type the following command to view the command reference help for **.prefer\_dml**.
 
-```cmd
+```
 0: kd> .hh .prefer_dml
 ```
 
@@ -235,7 +235,7 @@ The Debugger help file will display help for the **.prefer\_dml** command.
 
 5. Display detailed version information on the target system by typing the [**vertarget (Show Target Computer Version)**](vertarget--show-target-computer-version-.md) command in the WinDbg window.
 
-```cmd
+```
 0: kd> vertarget
 Windows 10 Kernel Version 9926 MP (4 procs) Free x64
 Product: WinNt, suite: TerminalServer SingleUserTS
@@ -250,7 +250,7 @@ System Uptime: 0 days 01:31:58.931
 
 6. You can verify that you are working with the right kernel mode process by displaying the loaded modules by typing the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md) command in the WinDbg window.
 
-```cmd
+```
 0: Kd> lm
 start             end                 module name
 fffff801`09200000 fffff801`0925f000   volmgrx    (no symbols)           
@@ -272,7 +272,7 @@ fffff801`094d9000 fffff801`09561000   CI         (export symbols)       CI.dll
 
 7. To request detailed information about a specific module, use the v (verbose) option as shown.
 
-```cmd
+```
 0: Kd> lm v m tcpip
 Browse full module list
 start             end                 module name
@@ -455,7 +455,7 @@ On the target computer, in a Command Prompt window, enter **devmgmt** open Devic
 
 Type **echoapp** to start the test echo app to confirm that the driver is functional.
 
-```cmd
+```
 C:\Samples\KMDF_Echo_Sample> echoapp
 DevicePath: \\?\root#sample#0005#{cdc35b6e-0be4-4936-bf5f-5537380a7c1a}
 Opened device successfully

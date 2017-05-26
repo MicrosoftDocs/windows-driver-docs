@@ -30,11 +30,11 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 
 <table>
 <colgroup>
-<col width="15%" />
-<col width="15%" />
-<col width="15%" />
-<col width="15%" />
-<col width="15%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
 
 </colgroup>
 <thead>
