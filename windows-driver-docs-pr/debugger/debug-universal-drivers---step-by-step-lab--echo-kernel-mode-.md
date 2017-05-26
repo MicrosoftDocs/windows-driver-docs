@@ -477,7 +477,7 @@ View information about the driver by performing the following steps.
 
 1.  If you closed the debugger, open it again using the following command in the administrator command prompt window.
 
-    ```cmd
+    ```
     WinDbg -k net:port=50000,key=1.2.3.4
     ```
 
@@ -487,13 +487,13 @@ View information about the driver by performing the following steps.
 
 1.  To set the symbols path to the Microsoft symbol server in the WinDbg environment, use the **.symfix** command.
 
-    ```cmd
+    ```
     0: kd> .symfix
     ```
 
 2.  To add your local symbol location to use your local symbols, add the path using **.sympath+** and then **.reload /f**.
 
-    ```cmd
+    ```
     0: kd> .sympath+ C:\DriverSamples\general\echo\kmdf
     0: kd> .reload /f
     ```
@@ -503,7 +503,7 @@ View information about the driver by performing the following steps.
      
 
 **Note**  You must load the proper symbols to use advanced functionality that WinDbg provides. If you do not have symbols properly configured, you will receive messages indicating that symbols are not available when you attempt to use functionality that is dependent on symbols.
-```cmd
+```
 0:000> dv
 Unable to enumerate locals, HRESULT 0x80004005
 Private symbols (symbols.pri) are required for locals.
@@ -526,7 +526,7 @@ To perform source debugging, you must build a checked (debug) version of your bi
 
 The symbol files do not contain the text of the source code. For debugging, it is best if the linker does not optimize your code. Source debugging and access to local variables are more difficult, and sometimes nearly impossible, if the code has been optimized. If you are having problems viewing local variables or source lines, set the following build options:
 
-```cmd
+```
 set COMPILE_DEBUG=1
 set ENABLE_OPTIMIZER=0
 ```
@@ -535,7 +535,7 @@ set ENABLE_OPTIMIZER=0
 
 1.  Type the following in the command area of the debugger to display information about the echo driver :
 
-    ```cmd
+    ```
     0: kd> lm m echo* v
     Browse full module list
     start             end                 module name
@@ -550,13 +550,13 @@ set ENABLE_OPTIMIZER=0
 
 2.  Because we set prefer\_dml =1 earlier, some elements of the output are hot links that you can click on. Click on the *Browse all global symbols link* in the debug output to display information about items symbols that start with the letter “a”.
 
-    ```cmd
+    ```
     0: kd> x /D Echo!a*
     ```
 
 3.  As it turns out, the echo sample doesn’t contain any symbols that start with the letter “a”, so to display information about all of the symbols associated with echo driver that start with Echo, type **x ECHO!Echo\***.
 
-    ```cmd
+    ```
     0: kd> x ECHO!Echo*
     fffff801`0bf95690 ECHO!EchoEvtIoQueueContextDestroy (void *)
     fffff801`0bf95000 ECHO!EchoEvtDeviceSelfManagedIoStart (struct WDFDEVICE__ *)
@@ -569,7 +569,7 @@ set ENABLE_OPTIMIZER=0
 
 4.  The **!lmi** extension displays detailed information about a module. Type **!lmi echo**. Your output should be similar to the text shown below.
 
-    ```cmd
+    ```
     0: kd> !lmi echo
     Loaded Module Info: [echo] 
              Module: ECHO
@@ -580,7 +580,7 @@ set ENABLE_OPTIMIZER=0
 
 5.  Use the **!dh** extension to display header information as shown below.
 
-    ```cmd
+    ```
     0: kd> !dh echo
 
     File Type: EXECUTABLE IMAGE
@@ -595,13 +595,13 @@ set ENABLE_OPTIMIZER=0
 
     Type the following to change the default debug bit mask so that all debug messages from the target system will be displayed in the debugger.
 
-    ```cmd
+    ```
     0: kd> !ed nt!Kd_DEFAULT_MASK  0xFFFFFFFF
     ```
 
     Some drivers will display additional information when the mask of 0xFFFFFFFF is used. Set the mask to 0x00000000 if you would like to reduce the amount of information that is displayed.
 
-    ```cmd
+    ```
     0: kd> !ed nt!Kd_DEFAULT_MASK  0x00000000
     ```
 
@@ -617,7 +617,7 @@ For more information about the device node debug extension, see [**!devnode**](-
 
 1.  To see all the device nodes in the Plug and Play device tree, enter the **!devnode 0 1** command.
 
-    ```cmd
+    ```
     0: kd> !devnode 0 1
     Dumping IopRootDeviceNode (= 0xffffe0005a3a8d30)
     DevNode 0xffffe0005a3a8d30 for PDO 0xffffe0005a3a9e50
@@ -639,7 +639,7 @@ For more information about the device node debug extension, see [**!devnode**](-
 
 3.  The echo device driver should be loaded. Use the **!devnode 0 1 echo** command to display Plug and Play information associated with our echo device driver as shown below.
 
-    ```cmd
+    ```
     0: Kd> !devnode 0 1 echo
     Dumping IopRootDeviceNode (= 0xffffe0007b725d30)
     DevNode 0xffffe0007b71a630 for PDO 0xffffe0007b71a960
@@ -652,7 +652,7 @@ For more information about the device node debug extension, see [**!devnode**](-
 
 4.  The output displayed in the previous command includes the PDO associated with the running instance of our driver, in this example it is *0xffffe0007b71a960*. Enter the **!devobj***&lt;PDO address&gt;* command to display Plug and Play information associated with the echo device driver. Use the PDO address that **!devnode** displays on your PC, not the one shown here.
 
-    ```cmd
+    ```
     0: kd> !devobj 0xffffe0007b71a960
     Device object (ffffe0007b71a960) is for:
      0000000e \Driver\PnpManager DriverObject ffffe0007b727e60
@@ -666,7 +666,7 @@ For more information about the device node debug extension, see [**!devnode**](-
 
 5.  The output displayed in the **!devnode 0 1** command includes the PDO address associated with the running instance of our driver, in this example it is *0xffffe0007b71a960*. Enter the **!devstack***&lt;PDO address&gt;* command to display Plug and Play information associated with the device driver. Use the PDO address that **!devnode** displays on your PC, not the one shown below.
 
-    ```cmd
+    ```
     0: kd> !devstack 0xffffe0007b71a960
       !DevObj           !DrvObj            !DevExt           ObjectName
       ffffe000801fee20  \Driver\ECHO       ffffe0007f72eff0  
@@ -678,7 +678,7 @@ For more information about the device node debug extension, see [**!devnode**](-
 
 The output shows that we have a fairly simple device driver stack. The echo driver is a child of the PnPManager node. The PnPManager is a root node.
 
-```cmd
+```
 \Driver\ECHO      
 \Driver\PnpManager
 ```
@@ -737,19 +737,19 @@ For more information, see [Source Code Debugging in WinDbg](source-window.md) in
 
 2.  Add your local code location to the source path by typing the following command.
 
-    ```cmd
+    ```
     .srcpath+ C:\DriverSamples\KMDF_Echo_Sample\driver\AutoSync
     ```
 
 3.  Add your local symbol location to the symbol path by typing the following command.
 
-    ```cmd
+    ```
     .sympath+ C:\DriverSamples\KMDF_Echo_Sample\driver\AutoSync
     ```
 
 4.  We will use the **x** command to examine the symbols associated with the echo driver to determine the function name to use for the breakpoint. We can use a wild card or Ctrl+F to locate the **DeviceAdd** function name.
 
-    ```cmd
+    ```
     0: kd> x ECHO!EchoEvt*
     8b4c7490          ECHO!EchoEvtIoQueueContextDestroy (void *)
     8b4c7000          ECHO!EchoEvtDeviceSelfManagedIoStart (struct WDFDEVICE__ *)
@@ -766,7 +766,7 @@ For more information, see [Source Code Debugging in WinDbg](source-window.md) in
 
 5.  Set the breakpoint with the **bm** command using the name of the driver, followed by the function name (for example **AddDevice**) where you want to set the breakpoint, separated by an exclamation mark. We will use **AddDevice** to watch the driver being loaded.
 
-    ```cmd
+    ```
     0: kd> bm ECHO!EchoEvtDeviceAdd
       1: fffff801`0bf9b1c0 @!"ECHO!EchoEvtDeviceAdd"
     ```
@@ -778,7 +778,7 @@ For more information, see [Source Code Debugging in WinDbg](source-window.md) in
 
 6.  List the current breakpoints to confirm that the breakpoint was set by typing the **bl** command.
 
-    ```cmd
+    ```
     0: kd> bl
     1 e fffff801`0bf9b1c0     0001 (0001) ECHO!EchoEvtDeviceAdd
     ```
@@ -848,7 +848,7 @@ Alternatively, you can also modify breakpoints by clicking **edit** &gt; **break
 
 You can also set breakpoints that fire when a memory location is accessed. Use the **ba** (break on access) command, with the following syntax.
 
-```cmd
+```
 ba <access> <size> <address> {options}
 ```
 
@@ -885,7 +885,7 @@ Note that you can only set four data breakpoints at any given time and it is up 
 
 For example, to set a read/write breakpoint on a specific memory address, you could use a command like this.
 
-```cmd
+```
 ba r 4 0x0003f7bf0
 ```
 
@@ -934,7 +934,7 @@ You can find the location of a global variable address by typing *? &lt;variable
 
 You can display the names and values of all local variables for a given frame by typing the **dv** command.
 
-```cmd
+```
 0: kd> dv
          Driver = 0x00001fff`7ff9c838
      DeviceInit = 0xffffd001`51978190
@@ -981,7 +981,7 @@ To display the call stack, use the k\* commands.
 
 2. Use the **kn** command to show the call stack while debugging the sample adapter code in a break state.
 
-```cmd
+```
 3: kd> kn
 # Child-SP          RetAddr           Call Site
 00 ffffd001`51978110 fffff801`0942f55b ECHO!EchoEvtDeviceAdd+0x66 [c:\Samples\kmdf echo sample\c++\driver\autosync\driver.c @ 138]
@@ -1010,7 +1010,7 @@ You can display or set process information by using the [**!process**](-process.
 
     Type the **dv** command to examine the locale variables associated with the **EchoEvtIo** routine as shown.
 
-    ```cmd
+    ```
     0: kd> dv ECHO!EchoEvtIo*
     ECHO!EchoEvtIoQueueContextDestroy
     ECHO!EchoEvtIoWrite
@@ -1019,13 +1019,13 @@ You can display or set process information by using the [**!process**](-process.
 
 2.  Clear the previous breakpoints using **bc \***.
 
-    ```cmd
+    ```
     0: kd> bc *  
     ```
 
 3.  3. Set a symbol breakpoint on the **EchoEvtIo** routines using the following command.
 
-    ```cmd
+    ```
     0: kd> bm ECHO!EchoEvtIo*
       2: aade5490          @!”ECHO!EchoEvtIoQueueContextDestroy”
       3: aade55d0          @!”ECHO!EchoEvtIoWrite”
@@ -1034,7 +1034,7 @@ You can display or set process information by using the [**!process**](-process.
 
 4.  List the breakpoints to confirm that the breakpoint is set properly.
 
-    ```cmd
+    ```
     0: kd> bl
     1 e aabf0490 [c:\Samples\kmdf echo sample\c++\driver\autosync\queue.c @ 197]    0001 (0001) ECHO!EchoEvtIoQueueContextDestroy
     ...
@@ -1042,7 +1042,7 @@ You can display or set process information by using the [**!process**](-process.
 
 5.  Type **g** to restart code execution.
 
-    ```cmd
+    ```
     0: kd> g
     ```
 
@@ -1054,7 +1054,7 @@ You can display or set process information by using the [**!process**](-process.
 
     When the test app runs, the I/O routine in the driver will be called. This will cause the breakpoint to fire, and execution of the driver code on the target system will halt.
 
-    ```cmd
+    ```
     Breakpoint 2 hit
     ECHO!EchoEvtIoWrite:
     fffff801`0bf95810 4c89442418      mov     qword ptr [rsp+18h],r8
@@ -1062,7 +1062,7 @@ You can display or set process information by using the [**!process**](-process.
 
 8.  Use the **!process** command to display the current process that is involved in running echoapp.exe.
 
-    ```cmd
+    ```
     0: kd> !process
     PROCESS ffffe0007e6a7780
         SessionId: 1  Cid: 03c4    Peb: 7ff7cfec4000  ParentCid: 0f34
@@ -1092,7 +1092,7 @@ You can display or set process information by using the [**!process**](-process.
 
 9.  Use the **!process 0 0** to display summary information for all processes. In the output, use CTRL+F to locate the same process address for the process associated with the echoapp.exe image. In the example shown below, the process address is ffffe0007e6a7780.
 
-    ```cmd
+    ```
     ...
 
     PROCESS ffffe0007e6a7780
@@ -1111,7 +1111,7 @@ You can display or set process information by using the [**!process**](-process.
 
 12. Use the **!process** command to confirm that you are now running a different process. In the output shown below, the process with the Image value of *System* is different from the *Echo* Image value.
 
-    ```cmd
+    ```
     1: kd> !process
     PROCESS ffffe0007b65d900
         SessionId: none  Cid: 0004    Peb: 00000000  ParentCid: 0000
@@ -1128,7 +1128,7 @@ You can display or set process information by using the [**!process**](-process.
 
 13. Now, use the **!process** command to try to look at the process ID that had been associated with echoapp.exe that you recorded earlier. Provide your echoapp.exe process address that you recorded earlier, instead of the example process address shown below.
 
-    ```cmd
+    ```
     0: kd> !process ffffe0007e6a7780
     TYPE mismatch for process object at 82a9acc0
     ```
@@ -1154,7 +1154,7 @@ The commands to view and set threads are very similar to those of processes. Use
 
     The breakpoint will be hit and code execution will halt.
 
-    ```cmd
+    ```
     Breakpoint 4 hit
     ECHO!EchoEvtIoRead:
     aade54c0 55              push    ebp
@@ -1162,7 +1162,7 @@ The commands to view and set threads are very similar to those of processes. Use
 
 4.  To view the threads that are running, type [**!thread**](-thread.md). Information similar to the following should be displayed:
 
-    ```cmd
+    ```
     0: kd>  !thread
     THREAD ffffe000809a0880  Cid 0b28.1158  Teb: 00007ff7d00dd000 Win32Thread: 0000000000000000 RUNNING on processor 0
     IRP List:
@@ -1177,7 +1177,7 @@ The commands to view and set threads are very similar to those of processes. Use
 
 5.  4. Use the **!process** command to determine if this is the only thread running in the process associated with echoapp.exe. Note that the thread number of the running thread in the process is the same thread running that the !thread command displayed.
 
-    ```cmd
+    ```
     0: kd> !process
     PROCESS ffffe0008096c900
         SessionId: 1  Cid: 0b28    Peb: 7ff7d00df000  ParentCid: 0f34
@@ -1209,7 +1209,7 @@ The commands to view and set threads are very similar to those of processes. Use
 
     EchoApp.exe: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-    ```cmd
+    ```
     0: kd> !process 0 0 
 
     …
@@ -1234,7 +1234,7 @@ The commands to view and set threads are very similar to those of processes. Use
 
     This example output is for the cmd.exe process ID that was recorded earlier. Note that the image name for this process ID is cmd.exe.
 
-    ```cmd
+    ```
     0: kd>  !process ffffe0007bbde900
     PROCESS ffffe0007bbde900
         SessionId: 1  Cid: 0f34    Peb: 7ff72dfa7000  ParentCid: 0c64
@@ -1265,7 +1265,7 @@ The commands to view and set threads are very similar to those of processes. Use
 
     This example output is for the echoapp.exe process ID that was recorded earlier.
 
-    ```cmd
+    ```
     0: kd>  !process ffffe0008096c900
     PROCESS ffffe0008096c900
         SessionId: 1  Cid: 0b28    Peb: 7ff7d00df000  ParentCid: 0f34
@@ -1303,7 +1303,7 @@ The commands to view and set threads are very similar to those of processes. Use
 
 9.  Use the **!Thread** command to display information about the current thread.
 
-    ```cmd
+    ```
     0: kd>  !Thread
     THREAD ffffe000809a0880  Cid 0b28.1158  Teb: 00007ff7d00dd000 Win32Thread: 0000000000000000 RUNNING on processor 0
     IRP List:
@@ -1319,7 +1319,7 @@ The commands to view and set threads are very similar to those of processes. Use
 
 10. Use the **!Thread** command to display information about the thread associated with cmd.exe process. Provide the thread address you recorded earlier.
 
-    ```cmd
+    ```
     0: kd> !Thread ffffe0007cf34880
     THREAD ffffe0007cf34880  Cid 0f34.0f1c  Teb: 00007ff72dfae000 Win32Thread: 0000000000000000 WAIT: (UserRequest) UserMode Non-Alertable
         ffffe0008096c900  ProcessObject
@@ -1346,14 +1346,14 @@ The commands to view and set threads are very similar to those of processes. Use
 
 11. Provide the thread address of the waiting CMD.exe thread to change the context to that waiting thread.
 
-    ```cmd
+    ```
     0: kd> .Thread ffffe0007cf34880
     Implicit thread is now ffffe000`7cf34880
     ```
 
 12. Use the **k** command to view the call stack associated with the waiting thread.
 
-    ```cmd
+    ```
     0: kd> k
       *** Stack trace for last set context - .thread/.cxr resets it
 # Child-SP          RetAddr           Call Site
@@ -1385,7 +1385,7 @@ For more information about threads and processes, see the following references o
 
 The interrupt request level (IRQL) is used to manage the priority of interrupt servicing. Each processor has an IRQL setting that threads can raise or lower. Interrupts that occur at or below the processor's IRQL setting are masked and will not interfere with the current operation. Interrupts that occur above the processor's IRQL setting take precedence over the current operation. The [**!irql**](-irql.md) extension displays the interrupt request level (IRQL) on the current processor of the target computer before the debugger break occurred. When the target computer breaks into the debugger, the IRQL changes, but the IRQL that was effective just before the debugger break is saved and is displayed by **!irql**.
 
-```cmd
+```
 0: kd> !irql
 Debugger saved IRQL for processor 0x0 -- 2 (DISPATCH_LEVEL)
 ```
@@ -1396,7 +1396,7 @@ Debugger saved IRQL for processor 0x0 -- 2 (DISPATCH_LEVEL)
 
 Display the contents of the registers for the current thread on the current processor by using the [**r (Registers)**](r--registers-.md) command.
 
-```cmd
+```
 0: kd> r
 rax=000000000000c301 rbx=ffffe00173eed880 rcx=0000000000000001
 rdx=000000d800000000 rsi=ffffe00173eed8e0 rdi=ffffe00173eed8f0
@@ -1424,7 +1424,7 @@ To end a user-mode debugging session, return the debugger to dormant mode, and s
 
 Be sure and use the **g** command to let the target computer run code, so that it can be used. It also a good idea to clear any break points using **bc \***, so that the target computer won't break and try to connect to the host computer debugger.
 
-```cmd
+```
 0: kd> qd
 ```
 
