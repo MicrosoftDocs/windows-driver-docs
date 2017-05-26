@@ -60,7 +60,7 @@ You can use any INF directive in a universal INF file except for the following:
 
 The following directives are valid with some caveats:
 
--   The [**INF AddReg Directive**](inf-addreg-directive.md) is valid only if entries in the specified *add-registry-section* have a *reg-root* value of **HKR**. The directive may also be valid in the following cases:
+-   The [**INF AddReg Directive**](inf-addreg-directive.md) is valid if entries in the specified *add-registry-section* have a *reg-root* value of **HKR**, or in the following cases:
 	-	For registration of [Component Object Model (COM)](https://msdn.microsoft.com/en-us/library/ee663262(v=vs.85).aspx) objects, a key may be written under:
 		-	HKCR
 		-	HKLM\SOFTWARE\Classes
