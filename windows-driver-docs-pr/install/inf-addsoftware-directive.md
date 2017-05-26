@@ -18,7 +18,7 @@ If referenced software fails to install, the system tries again when the referen
 
 An **AddSoftware** directive is used within an INF [*DDInstall*.**Software**](inf-ddinstall-software-section.md) section.
 
-``` syntax
+```
 [DDInstall.Software]
 
 AddSoftware=SoftwareName,[flags],software-install-section
@@ -77,7 +77,7 @@ If you use this entry, you must add the executable to the DriverStore by specify
 
 Specifies extension-specific arguments to append to the command line.  You can specify command line arguments that the system simply passes through into the generated command line.  You can also specify special strings called *runtime context variables*.  When you specify a runtime context variable, the system converts it into a device-specific value before appending it to the generated command line.  You can mix and match literal string arguments with runtime context variables.  Supported runtime context variables are:
 
-*<<DeviceInstanceID>>*
+`<<DeviceInstanceID>>`
 
 The system replaces the string above with the device instance ID of the software component.
 
@@ -104,7 +104,7 @@ The above example results in a command line like this:
 
 The above results in:
 
-`arg1 PCI\VEN_1000&DEV_0001&SUBSYS_0000\1&08` arg2`
+`arg1 PCI\VEN_1000&DEV_0001&SUBSYS_0000\1&08 arg2`
 
 **SoftwareVersion**=*w.x.y.z*
 

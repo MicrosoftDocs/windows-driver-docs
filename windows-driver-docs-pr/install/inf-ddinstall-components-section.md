@@ -11,7 +11,7 @@ ms.technology: windows-devices
 
 This optional section contains one or more [**INF AddComponent directives**](inf-addcomponent-directive.md) that reference additional INF-writer-defined sections in a driver package INF file.  This section is supported for Windows 10 Version 1703 and later.
 
-``` syntax
+```
 [install-section-name.Components] |
 [install-section-name.nt.Components] |
 [install-section-name.ntx86.Components] |
