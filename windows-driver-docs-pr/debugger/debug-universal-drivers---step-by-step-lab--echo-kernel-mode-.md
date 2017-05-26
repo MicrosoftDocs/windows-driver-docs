@@ -66,7 +66,7 @@ The lab has the following eleven sections.
 -   [Section 3: Download and build the KMDF Universal Echo Driver](#download)
 -   [Section 4: Install the KMDF Echo driver sample on the target system](#install)
 -   [Section 5: Use WinDbg to display information about the driver](#usewindbgtodisplayinformation)
--   [Section 6: Display plug and play device tree information](#displayingtheplugandplaydevicetree)
+-   [Section 6: Display Plug and Play device tree information](#displayingtheplugandplaydevicetree)
 -   [Section 7: Work with breakpoints and source code](#workingwithbreakpoints)
 -   [Section 8: View variables and call stacks](#viewingvariables)
 -   [Section 9: Display processes and threads](#displayingprocessesandthreads)
@@ -516,7 +516,7 @@ There are a number of approaches that can be used to work with symbols. In many 
  
 
 **Note**  
-**Understanding source code symbol requirements**
+**Understand source code symbol requirements**
 
 To perform source debugging, you must build a checked (debug) version of your binaries. The compiler will create symbol files (.pdb files). These symbol files will show the debugger how the binary instructions correspond to the source lines. The actual source files themselves must also be accessible to the debugger.
 
@@ -672,7 +672,7 @@ For more information about the device node debug extension, see [**!devnode**](-
       ServiceName is "ECHO"
     ```
 
-The output shows that we have a pretty simple device driver stack. The echo driver is a child of the PnPManager node. The PnPManager is a root node.
+The output shows that we have a fairly simple device driver stack. The echo driver is a child of the PnPManager node. The PnPManager is a root node.
 
 ``` syntax
 \Driver\ECHO      
@@ -698,7 +698,7 @@ To be able to step through code and check the values of variables in real time, 
 
 Breakpoints are used to stop code execution at a particular line of code. You can then step forward in the code from that point, to debug that specific section of code.
 
-To set a breakpoint using a debug command, use one of the following **b** commands:
+To set a breakpoint using a debug command, use one of the following **b** commands.
 
 <table>
 <colgroup>
@@ -787,9 +787,9 @@ For more information, see [Source Code Debugging in WinDbg](source-window.md) in
 
     In Windows, open **Device Manager** using the icon or by entering **mmc devmgmt.msc**. In Device Manager, expand the **Samples** node.
 
-9.  Right-click on the KMDF Echo driver entry and select **Disable** from the menu.
+9.  Right-click the KMDF Echo driver entry and select **Disable** from the menu.
 
-10. Right-click on the KMDF Echo driver entry again and select **Enable** from the menu.
+10. Right-click the KMDF Echo driver entry again and select **Enable** from the menu.
 
 11. **&lt;- On the host system**
 
@@ -877,7 +877,7 @@ ba <access> <size> <address> {options}
 
  
 
-Note that you can only set four data breakpoints at any given time and it is up to you to make sure that you are aligning your data correctly or you won’t trigger the breakpoint (i.e. words must end in addresses divisible by 2, dwords are divisible by 4, and quadwords by 0 or 8)
+Note that you can only set four data breakpoints at any given time and it is up to you to make sure that you are aligning your data correctly or you won’t trigger the breakpoint (words must end in addresses divisible by 2, dwords must be divisible by 4, and quadwords by 0 or 8).
 
 For example, to set a read/write breakpoint on a specific memory address, you could use a command like this.
 
@@ -890,11 +890,11 @@ ba r 4 0x0003f7bf0
 **Note**  
 **Stepping through code from the Debugger Command window**
 
-The following are the commands that you can use to step through your code. The associated keyboard short cuts are shown in parentheses:
+The following are the commands that you can use to step through your code (with the associated keyboard short cuts shown in parentheses).
 
 -   Break in (Ctrl+Break) - This command will interrupt a system as long as the system is running and is in communication with WinDbg (the sequence in the Kernel Debugger is Ctrl+C).
 
--   Run to cursor (F7 or Ctrl+F10) – Place the cursor in a source or disassembly window where you want the execution to break, then press F7; code execution will run to that point. Note that if the flow of code execution does not reach the point indicated by the cursor (e.g., an IF statement isn't executed), WinDbg would not break, because the code execution did not reach the indicated point.
+-   Run to cursor (F7 or Ctrl+F10) – Place the cursor in a source or disassembly window where you want the execution to break, then press F7; code execution will run to that point. Note that if the flow of code execution does not reach the point indicated by the cursor (an IF statement isn't executed), WinDbg would not break, because the code execution did not reach the indicated point.
 
 -   Run (F5) – Run until a breakpoint is encountered or an event like a bug check occurs.
 
@@ -942,7 +942,7 @@ You can display the names and values of all local variables for a given frame by
 **Note**  
 The call stack is the chain of function calls that have led to the current location of the program counter. The top function on the call stack is the current function, and the next function is the function that called the current function, and so on.
 
-To display the call stack, use the k\* commands:
+To display the call stack, use the k\* commands.
 
 <table>
 <colgroup>
@@ -989,7 +989,7 @@ To display the call stack, use the k\* commands:
 ...
 ```
 
-The call stack shows that the kernel (nt) called into plug and play code (PnP), that called driver framework code (Wdf) that subsequently called the echo driver **DeviceAdd** function.
+The call stack shows that the kernel (nt) called into Plug and Play code (PnP), that called driver framework code (WDF) that subsequently called the echo driver **DeviceAdd** function.
 
 ### <span id="DisplayingProcessesAndThreads"></span><span id="displayingprocessesandthreads"></span><span id="DISPLAYINGPROCESSESANDTHREADS"></span>Section 9: Displaying processes and threads
 

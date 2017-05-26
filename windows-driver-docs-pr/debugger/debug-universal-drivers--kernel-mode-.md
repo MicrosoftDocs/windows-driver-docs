@@ -41,14 +41,14 @@ For information on downloading and installing the WDK, see [Download the Windows
 ## <span id="sysvad_debugging_walkthrough_overview"></span>Sysvad debugging walkthrough
 
 
-This lab walk you through the process of debugging a kernel-mode driver. The exercises use the sysvad virtual audio driver sample. Because the sysvad audio driver doesn't interact with actual audio hardware, it can be used on most devices. The lab covers the following tasks:
+This lab walk you through the process of debugging a kernel-mode driver. The exercises use the Syvad virtual audio driver sample. Because the Syvad audio driver doesn't interact with actual audio hardware, it can be used on most devices. The lab covers the following tasks:
 
 -   [Section 1: Connect to a kernel-mode WinDbg session](#connectto)
 -   [Section 2: kernel-mode debugging commands and techniques](#kernelmodedebuggingcommandsandtechniques)
 -   [Section 3: Download and build the Sysvad audio driver](#download)
 -   [Section 4: Install the Sysvad audio driver on the target system](#install)
 -   [Section 5: Use WinDbg to display information about the driver](#usewindbgtodisplayinformation)
--   [Section 6: Display plug and play device tree information](#displayingtheplugandplaydevicetree)
+-   [Section 6: Display Plug and Play device tree information](#displayingtheplugandplaydevicetree)
 -   [Section 7: Work with breakpoints and source code](#workingwithbreakpoints)
 -   [Section 8: Look at variables](#lookingatvariables)
 -   [Section 9: View call stacks](#viewingcallstacks)
@@ -422,7 +422,7 @@ To install the driver on the target system, perform the following steps.
  
     For more detailed instructions, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](http://msdn.microsoft.com/library/windows/hardware/hh698272.aspx).
 
-    The INF file contains the hardware ID for installing the *tabletaudiosample.sys*. For the sysvad sample, the hardware ID is:
+    The INF file contains the hardware ID for installing the *tabletaudiosample.sys*. For the Syvad sample, the hardware ID is:
     `root\\sysvad\_TabletAudioSample`
 
     On the target computer, open a Command Prompt window as Administrator. Navigate to your driver package folder, and enter the following command: `devcon status root\\sysvad\_TabletAudioSample`
@@ -539,7 +539,7 @@ set ENABLE_OPTIMIZER=0
 
     For more information, see [**lm**](lm--list-loaded-modules-.md).
 
-2.  Click on **Browse all global symbols** link in the debug output to display information about items symbols that start with the letter a.
+2.  Click the **Browse all global symbols** link in the debug output to display information about items symbols that start with the letter a.
 3.  Because DML is enabled, some elements of the output are hot links that you can click on. Click on the *data* link in the debug output to display information about items symbols that start with the letter a.
 
     ```syntax cmd
@@ -629,7 +629,7 @@ For more information about the device node debug extension, see [**!devnode**](-
 
     ![find dialog box showing the term sysvad being searched for](images/sysvad-lab-audio-find-dialog.png)
 
-    A device node entry with a name of sysvad\_TabletAudioSample will be present in the !devnode output for sysvad.
+    A device node entry with a name of sysvad\_TabletAudioSample will be present in the !devnode output for Syvad.
 
     ```syntax cmd
       DevNode 0xffffe00086e68190 for PDO 0xffffe00089c575a0
@@ -741,7 +741,7 @@ For more information about the device node debug extension, see [**!devnode**](-
     [1b] IRP_MJ_PNP                         fffff80114b5f7d0 tabletaudiosample!PnpHandler
     ```
 
-6.  Enter the **!devstack***&lt;PDO address&gt;* command to display plug and play information associated with the device driver. The output displayed in the **!devnode 0 1** command includes the PDO address associated with the running instance of our driver, in this example it is *0xffffe00089c575a0*. . Use the PDO address that **!devnode** displays on your PC, not the one shown below.
+6.  Enter the **!devstack***&lt;PDO address&gt;* command to display Plug and Play information associated with the device driver. The output displayed in the **!devnode 0 1** command includes the PDO address associated with the running instance of our driver. In this example it is *0xffffe00089c575a0*. Use the PDO address that **!devnode** displays on your PC, not the one shown below.
 
     ```syntax cmd
     0: kd> !devstack 0xffffe00089c575a0
@@ -754,13 +754,13 @@ For more information about the device node debug extension, see [**!devnode**](-
       ServiceName is "sysvad_tabletaudiosample"
     ```
 
-The output shows that we have a pretty simple device driver stack. The sysvad\_TabletAudioSample driver is a child of the PnPManager node. The PnPManager is a root node.
+The output shows that we have a farily simple device driver stack. The sysvad\_TabletAudioSample driver is a child of the PnPManager node. The PnPManager is a root node.
 
 This diagram shows a more complex device node tree.
 
 ![device node tree with about 20 nodes](images/debuglab-image-device-node-tree.png)
 
-**Note**  For more information about more complex driver stacks, see [Driver stacks](https://msdn.microsoft.com/library/windows/hardware/hh439632) and [Device nodes and device stacks](https://msdn.microsoft.com/library/windows/hardware/ff554721) on MSDN.
+**Note**  For more information about more complex driver stacks, see [Driver stacks](https://msdn.microsoft.com/library/windows/hardware/hh439632) and [Device nodes and device stacks](https://msdn.microsoft.com/library/windows/hardware/ff554721).
 
  
 
@@ -841,9 +841,9 @@ To set a breakpoint using a debug command, use one of the following **b** comman
 
 8.  **-&gt;On the target system**
 
-    In Windows, open Device Manager by using the icon or by entering **mmc devmgmt.msc**. In **Device Manager** expand the **Sound, video and game controllers** node. Right click on the virtual audio driver entry and select **Disable** from the menu.
+    In Windows, open Device Manager by using the icon or by entering **mmc devmgmt.msc**. In **Device Manager** expand the **Sound, video and game controllers** node. Right click the virtual audio driver entry and select **Disable** from the menu.
 
-9.  Right click on the virtual audio driver entry again and select **Enable** from the menu.
+9.  Right click the virtual audio driver entry again and select **Enable** from the menu.
 10. **&lt;- On the host system**
 
     This should cause Windows to reload the driver, which calls AddDevice. This will cause the AddDevice debug breakpoint to fire and the execution of the driver code on the target system should halt.
@@ -932,7 +932,7 @@ ba <access> <size> <address> {options}
 
  
 
-Note that you can only set four data breakpoints at any given time and it is up to you to make sure that you are aligning your data correctly or you won’t trigger the breakpoint (i.e. words must end in addresses divisible by 2, dwords are divisible by 4, and quadwords by 0 or 8)
+Note that you can only set four data breakpoints at any given time and it is up to you to make sure that you are aligning your data correctly or you won’t trigger the breakpoint (words must end in addresses divisible by 2, dwords must be divisible by 4, and quadwords by 0 or 8)
 
 For example, to set a read/write breakpoint on a specific memory address, use a command like this.
 
@@ -942,7 +942,7 @@ ba r 4 fffff800`7bc9eff0
 
 **Modifying breakpoint state**
 
-You can modify existing breakpoints by using the following commands:
+You can modify existing breakpoints by using the following commands.
 
 <table>
 <colgroup>
@@ -977,7 +977,7 @@ Alternatively, you can also modify breakpoints by clicking **edit** &gt; **break
 
 Different parts of the audio driver code is called to respond to various events, after the device driver is loaded. In the next section, we set a breakpoint that will fire when the user adjusts the volume control for the virtual audio driver.
 
-Setting a breakpoint on MixerVolume by performing the following steps.
+To set a breakpoint on MixerVolume, perform the following steps.
 
 1.  **&lt;- On the host system**
 
@@ -1009,7 +1009,7 @@ Setting a breakpoint on MixerVolume by performing the following steps.
 
 5.  Restart code execution on the target system by typing the go command **g**.
 
-6.  In Control Panel and select **Hardware and Sound** &gt;**Sound**. Right click on **Sink Description Sample** and select **Properties**. Click on the **Levels** tab. Adjust the slider volume.
+6.  In Control Panel select **Hardware and Sound** &gt;**Sound**. Right click **Sink Description Sample** and select **Properties**. Select the **Levels** tab. Adjust the slider volume.
 
 7.  This should cause the SetMixerVolume debug breakpoint to fire and execution of the driver code on the target system should halt.
 
@@ -1047,7 +1047,7 @@ Setting a breakpoint on MixerVolume by performing the following steps.
 
 **Summary - Stepping through code from the Debugger Command window**
 
-The following are the commands that you can use to step through your code. The associated keyboard short cuts are shown in parentheses:
+The following are the commands that you can use to step through your code (with the associated keyboard short cuts shown in parentheses).
 
 -   Break in (Ctrl+Break) - This command will interrupt a system as long as the system is running and is in communication with WinDbg (the sequence in the Kernel Debugger is Ctrl+C).
 
@@ -1063,7 +1063,7 @@ The following are the commands that you can use to step through your code. The a
 
 **Advanced options**
 
--   Set instruction to the current line (Ctrl+Shift+I) – In a source window, you can place your cursor on a line, enter this keyboard shortcut, and code execution will start from that point as soon as you let it proceed (e.g., F5 or F10). This is handy if you want to retry a sequence. But it requires some care. For example, registers and variables are not set to what they would be if code execution had reached that line naturally.
+-   Set instruction to the current line (Ctrl+Shift+I) – In a source window, you can place your cursor on a line, enter this keyboard shortcut, and code execution will start from that point as soon as you let it proceed (for example using F5 or F10). This is handy if you want to retry a sequence, but it requires some care. For example, registers and variables are not set to what they would be if code execution had reached that line naturally.
 
 -   Direct setting of the eip register -- You can put a value into the eip register, and as soon as you press F5 (or F10, F11, etc.), execution commences from that address. This is similar to setting instruction to the cursor-designated current line, except that you specify the address of an assembly instruction.
 
@@ -1117,7 +1117,7 @@ Tip: You may want to keep a copy of the Sysvad driver with out the breakpoint ad
     } // AddDevice
     ```
 
-2.  Follow all of the steps previously described to rebuild the driver in Visual Studio and re-install it to the target machine. Be sure to uninstall the existing driver before installing the updated driver.
+2.  Follow all of the steps previously described to rebuild the driver in Microsoft Visual Studio and re-install it to the target machine. Be sure to uninstall the existing driver before installing the updated driver.
 3.  Clear any previous breakpoints and make sure that the debugger is attached to the target PC.
 
 4.  When the code runs and reaches the `DebugBreak` statement, execution will stop and a message will be displayed.
@@ -1157,11 +1157,11 @@ It can be useful to examine variables as the code executes to confirm that the c
 
 5.  **-&gt; On the target system**
 
-    Locate a small media file (such as Windows notification sound file with a .wav file extension) and click on the file to play it. For example you can use Ring05.wav located in the Windows\\Media directory.
+    Locate a small media file (such as Windows notification sound file with a .wav file extension) and click the file to play it. For example you can use Ring05.wav located in the Windows\\Media directory.
 
 6.  **&lt;- On the host system**
 
-    When the media file is played, the breakpoint should fire, which will cause execution of the driver code on the target system should halt.
+    When the media file is played, the breakpoint should fire, and execution of the driver code on the target system should halt.
 
     ```syntax cmd
     Breakpoint 1 hit
@@ -1221,7 +1221,7 @@ It can be useful to examine variables as the code executes to confirm that the c
 
 8.  **Use DML to Display Variables**
 
-    To use DML to explore variables, click on the underlined elements. The click action builds a [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command that allows you to drill down on nested data structures.
+    To use DML to explore variables, click the underlined elements. The click action builds a [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command that allows you to drill down on nested data structures.
 
     ```syntax cmd
     0: kd> dx -r1 (*((tabletaudiosample!CMiniportWaveRT *)0xffffe001d10b8380))
@@ -1343,7 +1343,7 @@ It can be useful to examine variables as the code executes to confirm that the c
     ...
     ```
 
-14. Use the **dv** command to display the names and values of all local variables for a given frame. Note that as expected, the values are different from the last time we ran this command, as additional code has been run that changes the local variables and some variables are now not in the current frame or their values have changed.
+14. Use the **dv** command to display the names and values of all local variables for a given frame. Note that, as expected, the values are different from the last time we ran this command, as additional code has been run that changes the local variables and some variables are now not in the current frame or their values have changed.
 
     ```syntax cmd
     2: kd> dv
@@ -1390,7 +1390,7 @@ To display the call stack, use the k\* commands:
 
  
 
-If you want to keep the call stack available, you can click **View**&gt; **Call stack** to view it. Click on the columns at the top of the window to toggle the display of additional information.
+If you want to keep the call stack available, you can click **View**&gt; **Call stack** to view it. Click the columns at the top of the window to toggle the display of additional information.
 
 ![windbg call stack window](images/sysvad-lab-call-stack.png)
 
@@ -1549,7 +1549,7 @@ PROCESS ffffe001cd0ad040
 ...
 ```
 
-The output above shows that a different system process of *ffffe001cd0ad040* is running. The image name shows, System, not audiodg.exe.
+The output above shows that a different system process of *ffffe001cd0ad040* is running. The image name shows System, not audiodg.exe.
 
 Now use the !process command to switch to the process that was associated with audiodg.exe. In the example, the process ID is *ffffe001d147c840*. Substitute the process ID in the example with your process ID, that you recorded earlier.
 
@@ -1641,7 +1641,7 @@ Use the !thread -1 0 to display brief information for the current thread. This s
 THREAD ffffe001d3a27040  Cid 10f0.17f4  Teb: 000000ee6cf9d000 Win32Thread: 0000000000000000 RUNNING on processor 0
 ```
 
-To view more information about the thread that is running, type [**!thread**](-thread.md). Information similar to the following should be displayed:
+To view more information about the thread that is running, type [**!thread**](-thread.md). Information similar to the following should be displayed.
 
 ```syntax cmd
 0: kd> !thread
@@ -1749,7 +1749,7 @@ ffffd001`cd16add0 00007fff`674c1494 : 00007fff`674b1e97 0000a7c6`daee0559 000000
 The image name is rundll32.exe, which is indeed not the image name associated with playing the media clip.
 
 **Note**  
-To set the current thread type .thread &lt;thread number&gt;.
+To set the current thread, type .thread &lt;thread number&gt;.
 
 For more information about threads and processes, see the following references on MSDN:
 
@@ -1805,7 +1805,7 @@ For information about contents of the register, see [x86 Architecture](x86-archi
 
 **Disassembly**
 
-You can disassemble the code that is under execution to view the assembly language code that is being run. **View** &gt; **Disassembly**.
+You can disassemble the code that is under execution to view the assembly language code that is being run by clicking **View** &gt; **Disassembly**.
 
 ![windbg disassembly window](images/sysvad-lab-audio-disassembly-window.png)
 
@@ -1818,7 +1818,7 @@ For more information about assembly language disassembly, see [Annotated x86 Dis
 
 **View memory**
 
-You may need to examine memory to identify an issue or to inspect variables, pointers, etc. You can display memory by typing one of the following **d\* &lt;address&gt;** commands.
+You may need to examine memory to identify an issue or to inspect variables, pointers, and so on. You can display memory by typing one of the following **d\* &lt;address&gt;** commands.
 
 <table>
 <colgroup>
