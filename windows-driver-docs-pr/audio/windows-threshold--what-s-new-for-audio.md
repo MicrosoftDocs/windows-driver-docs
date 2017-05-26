@@ -51,7 +51,7 @@ The total latency of a device is the sum of the latencies of the following compo
 -   Audio Driver
 -   Audio Hardware
 
-In Windows 10 work was done to reduce the latency ion the OS. Without any driver changes, applications in Windows 10 will experience 4.5-16ms lower latency. In addition, if the driver has been updated to take advantage of the new low latency DDIs that use small buffers to process audio data, then the latency will be reduced even more. If a driver supports 3ms audio buffers, then the roundtrip latency is ~10ms.
+In Windows 10 work was done to reduce the latency in the OS. Without any driver changes, applications in Windows 10 will experience 4.5-16ms lower latency. In addition, if the driver has been updated to take advantage of the new low latency DDIs that use small buffers to process audio data, then the latency will be reduced even more. If a driver supports 3ms audio buffers, then the roundtrip latency is ~10ms.
 
 ![low latency audio stack diagram showing apps, audio engine driver and h/w](images/low-latency-audio-stack-diagram-1.png)
 
@@ -166,7 +166,7 @@ For more information, see [Implementing Hardware Offloaded APO Effects](implemen
 ## <span id="CortanaVoice"></span><span id="cortanavoice"></span><span id="CORTANAVOICE"></span>Cortana Voice Activation - Wake on Voice
 
 
-Cortana, the personal assistant technology introduced on Windows Phone 8.1, is now supported on Windows 10 devices. Voice activation is a feature that enables users to invoke a speech recognition engine from various device power states by saying a specific phrase - "Hey Cortana". The "Hey Cortana" Voice Activation (VA) feature allows users to quickly engage an experience (e.g., Cortana) outside of his or her active context (i.e., what is currently on screen) by using his or her voice. The feature is targeted for scenarios when the screen is off, idle or when it is fully active. If the hardware supports buffering, users can the chain the key phrase and command phrase together. This improves the end to end wake on voice experience for the user. For more information, see [Voice Activation](voice-activation.md).
+Cortana, the personal assistant technology introduced on Windows Phone 8.1, is now supported on Windows 10 devices. Voice activation is a feature that enables users to invoke a speech recognition engine from various device power states by saying a specific phrase - "Hey Cortana". The "Hey Cortana" Voice Activation (VA) feature allows users to quickly engage an experience (e.g., Cortana) outside of his or her active context (i.e., what is currently on screen) by using his or her voice. The feature is targeted for scenarios when the screen is off, idle or when it is fully active. If the hardware supports buffering, users can then chain the key phrase and command phrase together. This improves the end to end wake on voice experience for the user. For more information, see [Voice Activation](voice-activation.md).
 
 ## <span id="WindowsUniversal"></span><span id="windowsuniversal"></span><span id="WINDOWSUNIVERSAL"></span>Windows Universal Drivers for Audio
 
