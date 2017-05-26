@@ -1,6 +1,6 @@
 ---
 title: (Evaluate Expression)
-description: The question mark ( ) command evaluates and displays the value of an expression.Note � A question mark by itself ( ) displays command help.
+description: The question mark ( ) command evaluates and displays the value of an expression.Note � A question mark by itself ( ) displays command help.
 ms.assetid: fae689b3-47c9-44bd-992d-8344805fb4b7
 keywords: ["(Evaluate Expression) Windows Debugging"]
 ms.author: windowsdriverdev
@@ -25,7 +25,7 @@ The question mark (**?**) command evaluates and displays the value of an express
 
  
 
-``` syntax
+```
 ? Expression
 ```
 
