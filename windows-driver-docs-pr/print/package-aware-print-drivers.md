@@ -2,14 +2,14 @@
 title: Package-Aware Print Drivers
 author: windows-driver-content
 description: Package-Aware Print Drivers
-MS-HAID:
-- 'prtinst\_89404671-55db-483f-be25-a34c9d564c2c.xml'
-- 'print.package\_aware\_print\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f2ab38b9-410c-4dd8-bb81-4a8e0e48317a
-keywords: ["package-aware print drivers WDK"]
+keywords:
+- package-aware print drivers WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Package-Aware Print Drivers

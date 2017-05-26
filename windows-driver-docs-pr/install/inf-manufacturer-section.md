@@ -2,13 +2,19 @@
 title: INF Manufacturer Section
 description: The Manufacturer section identifies the manufacturer of one or more devices that can be installed by using the INF file.
 ms.assetid: c5128d0a-d581-4461-8eb9-5680b6b6ef38
-keywords: ["INF Manufacturer Section Device and Driver Installation"]
+keywords:
+- INF Manufacturer Section Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF Manufacturer Section
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF Manufacturer Section

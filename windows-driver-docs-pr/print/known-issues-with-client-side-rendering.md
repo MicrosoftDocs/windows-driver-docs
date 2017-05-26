@@ -2,14 +2,14 @@
 title: Known Issues with Client-Side Rendering
 author: windows-driver-content
 description: Known Issues with Client-Side Rendering
-MS-HAID:
-- 'splarch\_50f1acd1-7e7b-4818-b1fb-3f140a3254e6.xml'
-- 'print.known\_issues\_with\_client\_side\_rendering'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ad17639d-6671-466b-8f72-e635e79fd1cc
-keywords: ["client-side rendering WDK print , known issues"]
+keywords:
+- client-side rendering WDK print , known issues
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Known Issues with Client-Side Rendering

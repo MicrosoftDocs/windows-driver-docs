@@ -1,10 +1,12 @@
 ---
 title: Creating and configuring Internet Sharing experiences
 description: Creating and configuring Internet Sharing experiences
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 11906ee4-68f5-4be6-a3ab-6af3253c8a11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating and configuring Internet Sharing experiences

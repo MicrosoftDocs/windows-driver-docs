@@ -2,6 +2,11 @@
 title: Managing Physical Network Adapter Connection Status
 description: Managing Physical Network Adapter Connection Status
 ms.assetid: B8C6EB48-59D7-469B-87C8-57E60CB5C5D2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing Physical Network Adapter Connection Status

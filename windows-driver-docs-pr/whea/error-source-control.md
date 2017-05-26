@@ -2,14 +2,20 @@
 title: Error Source Control
 author: windows-driver-content
 description: Error Source Control
-MS-HAID:
-- 'whea\_675d7659-b616-4163-a450-48ea93f8fb14.xml'
-- 'whea.error\_source\_control'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f73d9006-a7e7-4a0d-9654-004f53286743
-keywords: ["Windows Hardware Error Architecture WDK , error source control", "WHEA WDK , error source control", "hardware errors WDK WHEA , error source control", "errors WDK WHEA , error source control", "platform-specific hardware error driver plug-ins WDK WHEA , error source control", "PSHED plug-ins WDK WHEA , error source control", "error source control WDK WHEA"]
+keywords:
+- Windows Hardware Error Architecture WDK , error source control
+- WHEA WDK , error source control
+- hardware errors WDK WHEA , error source control
+- errors WDK WHEA , error source control
+- platform-specific hardware error driver plug-ins WDK WHEA , error source control
+- PSHED plug-ins WDK WHEA , error source control
+- error source control WDK WHEA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Error Source Control

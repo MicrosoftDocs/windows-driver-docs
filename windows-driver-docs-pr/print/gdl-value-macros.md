@@ -2,14 +2,19 @@
 title: GDL Value Macros
 author: windows-driver-content
 description: GDL Value Macros
-MS-HAID:
-- 'gplfiles\_c2bc2917-b208-44e3-bdd4-8e358bb9bbbd.xml'
-- 'print.gdl\_value\_macros'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 171245ef-d9ab-4c1d-86b9-f53ae10033b3
-keywords: ["GDL WDK , macros", "macros WDK GDL , value macros", "value macros WDK GDL", "values WDK GDL , value macros", "Macros directive WDK GDL", "macros WDK GDL , examples"]
+keywords:
+- GDL WDK , macros
+- macros WDK GDL , value macros
+- value macros WDK GDL
+- values WDK GDL , value macros
+- Macros directive WDK GDL
+- macros WDK GDL , examples
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Value Macros

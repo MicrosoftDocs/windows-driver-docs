@@ -2,7 +2,13 @@
 title: Porting CoNDIS Miniport Driver Receive Data Handling
 description: Porting CoNDIS Miniport Driver Receive Data Handling
 ms.assetid: 9f540bd8-8cbf-4a7a-b4ac-83cd159f5e37
-keywords: ["porting miniport drivers WDK networking , send and receive operations"]
+keywords:
+- porting miniport drivers WDK networking , send and receive operations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting CoNDIS Miniport Driver Receive Data Handling

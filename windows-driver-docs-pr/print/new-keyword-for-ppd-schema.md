@@ -2,14 +2,17 @@
 title: ew Keyword for PPD Schema
 author: windows-driver-content
 description: ew Keyword for PPD Schema
-MS-HAID:
-- 'autocfg\_174fa1b7-2827-44b0-8d4f-db08539209bd.xml'
-- 'print.new\_keyword\_for\_ppd\_schema'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 05caa402-4949-4c0f-913c-1c87e65c30d7
-keywords: ["root-level keywords WDK printer autoconfiguration", "PPD files WDK autoconfiguration , keywords", "keywords WDK printer autoconfiguration", "in-box autoconfiguration support WDK printer , keywords"]
+keywords:
+- root-level keywords WDK printer autoconfiguration
+- PPD files WDK autoconfiguration , keywords
+- keywords WDK printer autoconfiguration
+- in-box autoconfiguration support WDK printer , keywords
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ew Keyword for PPD Schema

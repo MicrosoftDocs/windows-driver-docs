@@ -2,7 +2,14 @@
 title: Handling the E\_INVALIDARG Return Value
 description: Handling the E\_INVALIDARG Return Value
 ms.assetid: 312b2452-71b3-4fbe-93fb-f4b0e6099c0f
-keywords: ["user-mode display drivers WDK Windows Vista , E_INVALIDARG return value", "E_INVALIDARG return value WDK display"]
+keywords:
+- user-mode display drivers WDK Windows Vista , E_INVALIDARG return value
+- E_INVALIDARG return value WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling the E\_INVALIDARG Return Value

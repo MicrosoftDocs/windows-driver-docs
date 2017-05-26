@@ -2,14 +2,15 @@
 title: Microsoft USB Printer Driver (Usbprint.sys)
 author: windows-driver-content
 description: Usbprint.sys is the Microsoft-provided device driver for USB printers. Usbprint.sys works with Usbmon.dll to provide end-to-end connectivity between USB printers and high-level printer drivers.
-MS-HAID:
-- 'usbprnt\_39d931b8-11cd-42c5-a212-da319bedddb8.xml'
-- 'print.usb\_printing'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6fc1635d-b819-43ba-a549-2488995fa9b0
-keywords: ["printer drivers WDK , USB", "USB printers WDK"]
+keywords:
+- printer drivers WDK , USB
+- USB printers WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Microsoft USB Printer Driver (Usbprint.sys)

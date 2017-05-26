@@ -2,13 +2,12 @@
 title: Changing the WIA Item Tree Structure
 author: windows-driver-content
 description: Changing the WIA Item Tree Structure
-MS-HAID:
-- 'WIA\_tree\_6e7a0162-0067-44cc-b5be-8c724d2593c2.xml'
-- 'image.changing\_the\_wia\_item\_tree\_structure'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fa6c9d25-4435-43ee-a262-9e267b9a0a69
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Changing the WIA Item Tree Structure

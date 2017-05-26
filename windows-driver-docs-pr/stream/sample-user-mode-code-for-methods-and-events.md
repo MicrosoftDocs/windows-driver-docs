@@ -2,14 +2,20 @@
 title: Sample User-Mode Code for Methods and Events
 author: windows-driver-content
 description: Sample User-Mode Code for Methods and Events
-MS-HAID:
-- 'avsover\_5e27cc99-0dca-497c-a539-6f188d46374f.xml'
-- 'stream.sample\_user\_mode\_code\_for\_methods\_and\_events'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0d564eb7-8e81-43bd-b539-f1240b3a21de
-keywords: ["events WDK AVStream", "AVStream events WDK", "user-mode KsProxy plug-in sample WDK AVStream", "methods WDK AVStream", "automation tables WDK AVStream", "notifications WDK AVStream", "KsProxy plug-in sample WDK AVStream"]
+keywords:
+- events WDK AVStream
+- AVStream events WDK
+- user-mode KsProxy plug-in sample WDK AVStream
+- methods WDK AVStream
+- automation tables WDK AVStream
+- notifications WDK AVStream
+- KsProxy plug-in sample WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample User-Mode Code for Methods and Events

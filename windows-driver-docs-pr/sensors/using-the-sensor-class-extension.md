@@ -2,10 +2,12 @@
 title: Using the sensor class extension
 author: windows-driver-content
 description: The sensor class extension supports the linkage between a sensor driver and the Sensor API.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: F9632F86-10E8-4006-8FB7-97FA5EED492D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the sensor class extension

@@ -3,13 +3,21 @@ title: UMDF Based on COM Subset
 author: windows-driver-content
 description: UMDF Based on COM Subset
 ms.assetid: 918459a9-a6a2-40b8-8b97-3aabe3e49bfb
-keywords: ["UMDF objects WDK , COM subset", "framework objects WDK UMDF , COM subset", "COM WDK UMDF"]
+keywords:
+- UMDF objects WDK , COM subset
+- framework objects WDK UMDF , COM subset
+- COM WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UMDF Based on COM Subset
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The framework objects and interfaces are based on the Component Object Model (COM) for the following reasons:
 

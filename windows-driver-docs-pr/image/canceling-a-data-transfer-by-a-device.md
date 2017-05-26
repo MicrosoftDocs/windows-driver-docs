@@ -2,13 +2,12 @@
 title: Canceling a Data Transfer by a Device
 author: windows-driver-content
 description: Canceling a Data Transfer by a Device
-MS-HAID:
-- 'WIA\_drv\_cam\_635ba080-c03b-4517-8927-4a264281c6c1.xml'
-- 'image.canceling\_a\_data\_transfer\_by\_a\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e9d1bbee-64fa-43e2-a8c5-ff92461db65d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Canceling a Data Transfer by a Device

@@ -2,13 +2,19 @@
 title: INF DDInstall Section
 description: Each per-Models DDInstall section contains an optional DriverVer directive and one or more directives referencing additional named sections in the INF file, shown here with the most frequently specified INF directives, CopyFiles and AddReg, listed first.
 ms.assetid: 79cba88d-fda1-4b91-bf51-98afd7224bc9
-keywords: ["INF DDInstall Section Device and Driver Installation"]
+keywords:
+- INF DDInstall Section Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF DDInstall Section
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF DDInstall Section

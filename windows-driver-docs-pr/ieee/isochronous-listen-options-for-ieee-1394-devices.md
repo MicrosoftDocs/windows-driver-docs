@@ -2,14 +2,21 @@
 title: Isochronous Listen Options for IEEE 1394 Devices
 author: windows-driver-content
 description: Isochronous Listen Options for IEEE 1394 Devices
-MS-HAID:
-- '1394-isoch\_98e7dc15-b142-407d-9f7c-265e7dda75b9.xml'
-- 'IEEE.isochronous\_listen\_options\_for\_ieee\_1394\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a369b7f0-be85-49f0-bb09-d07cbd3d3558
-keywords: ["isochronous I/O WDK IEEE 1394 bus , listen options", "listen options WDK IEEE 1394 bus", "packet-based DMA WDK IEEE 1394 bus", "stream-based DMA WDK IEEE 1394 bus", "DMA transfers WDK IEEE 1394 bus", "packet DMA WDK IEEE 1394 bus", "stripping packet headers", "headers WDK IEEE 1394 bus"]
+keywords:
+- isochronous I/O WDK IEEE 1394 bus , listen options
+- listen options WDK IEEE 1394 bus
+- packet-based DMA WDK IEEE 1394 bus
+- stream-based DMA WDK IEEE 1394 bus
+- DMA transfers WDK IEEE 1394 bus
+- packet DMA WDK IEEE 1394 bus
+- stripping packet headers
+- headers WDK IEEE 1394 bus
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Isochronous Listen Options for IEEE 1394 Devices

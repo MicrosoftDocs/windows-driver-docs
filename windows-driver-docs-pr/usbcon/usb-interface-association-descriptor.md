@@ -1,12 +1,12 @@
 ---
-Description: 'USB interface association descriptor (IAD) allows the device to group interfaces that belong to a function. This topic describes how a client driver can determine whether the device contains an IAD for a function.'
-MS-HAID:
-- 'usb-config\_f6a43294-76ae-4a86-8dbd-5ac6f34e4115.xml'
-- 'buses.usb\_interface\_association\_descriptor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: USB interface association descriptor (IAD) allows the device to group interfaces that belong to a function. 
 title: USB Interface Association Descriptor
+author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB Interface Association Descriptor
@@ -111,12 +111,12 @@ The following illustrates a descriptor layout for a composite USB device. The ex
 <a href="" id="function-1--video-class"></a>**Function 1: Video Class**  
 This function is defined by an interface association descriptor (IAD) and contains two interfaces: interface zero (0) and interface one (1).
 
-The system generates hardware and compatible identifiers (IDs) for the function, as described in [Enumeration of Interface Collections on USB Devices with IADs](enumeration-of-interface-collections-on-devices-that-have-iads.md). After matching the appropriate INF file, the system loads the Video Class driver stack.
+The system generates hardware and compatible identifiers (IDs) for the function, as described in [Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md). After matching the appropriate INF file, the system loads the Video Class driver stack.
 
 <a href="" id="function-2--human-input-device"></a>**Function 2: Human Input Device**  
 This function contains only one interface: interface two (2).
 
-The system generates hardware and compatible IDs for the function, as described in [Enumeration of Interfaces on USB Composite Devices](enumeration-of-interfaces-not-grouped-in-collections.md). After matching the appropriate INF file, the system loads the Human Input Device (HID) class driver.
+The system generates hardware and compatible IDs for the function, as described in [Enumeration of Interface Collections on USB Composite Devices](support-for-interface-collections.md). After matching the appropriate INF file, the system loads the Human Input Device (HID) class driver.
 
 The descriptor is as follows:
 
@@ -256,16 +256,9 @@ The descriptor is as follows:
 ```
 
 ## Related topics
+[USB Descriptors](usb-descriptors.md)  
 
-
-[USB Descriptors](usb-descriptors.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20USB%20Interface%20Association%20Descriptor%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

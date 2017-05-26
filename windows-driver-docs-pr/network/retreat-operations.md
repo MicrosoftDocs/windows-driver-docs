@@ -2,7 +2,19 @@
 title: Retreat Operations
 description: Retreat Operations
 ms.assetid: fdf1228b-ccae-4079-b968-b4dbb5665555
-keywords: ["network data WDK , retreat operations", "data WDK networking , retreat operations", "packets WDK networking , retreat operations", "retreat operations WDK networking", "sending data WDK networking", "receiving data WDK networking", "allocating MDLs"]
+keywords:
+- network data WDK , retreat operations
+- data WDK networking , retreat operations
+- packets WDK networking , retreat operations
+- retreat operations WDK networking
+- sending data WDK networking
+- receiving data WDK networking
+- allocating MDLs
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Retreat Operations

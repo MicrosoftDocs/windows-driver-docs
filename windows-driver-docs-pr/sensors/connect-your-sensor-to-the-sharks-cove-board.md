@@ -2,10 +2,12 @@
 title: Connect your sensor to the Sharks Cove board
 author: windows-driver-content
 description: This topic provides guidance on how to connect your sensor test board to the Sharks Cove board.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B081F4B6-D15E-4F1A-A5C0-E19DA806EAB2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Connect your sensor to the Sharks Cove board

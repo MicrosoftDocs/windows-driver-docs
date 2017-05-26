@@ -2,13 +2,12 @@
 title: Updating Your Package-Aware Driver's INF
 author: windows-driver-content
 description: Updating Your Package-Aware Driver's INF
-MS-HAID:
-- 'prtinst\_2f9ad318-b6ae-494f-9999-40ca32232ee6.xml'
-- 'print.updating\_your\_package\_aware\_driver\_s\_inf'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d0bf489d-d084-40df-b5aa-69cdf679993f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Updating Your Package-Aware Driver's INF

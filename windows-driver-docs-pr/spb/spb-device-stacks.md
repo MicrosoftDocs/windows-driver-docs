@@ -1,11 +1,13 @@
 ---
 title: SPB Device Stacks
 author: windows-driver-content
-description: The Windows Driver Model cleanly separates the driver components that control a peripheral device (for example, a temperature sensor) on a bus from the driver components that manage the bus controller, which transfers data and control information to and from the peripheral device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+description: Acpi.sys creates the PDO for a peripheral device on an SPB.
 ms.assetid: 21AB67A2-AA3C-4998-A532-78D6F6F76244
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SPB Device Stacks

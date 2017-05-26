@@ -1,13 +1,12 @@
 ---
 title: Functionality of the PCMCIA\_INTERFACE\_STANDARD Interface
 description: Functionality of the PCMCIA\_INTERFACE\_STANDARD Interface
-MS-HAID:
-- 'mcch2\_a8029e6d-4c7f-439e-8f01-0cc3368ff3f4.xml'
-- 'PCMCIA.functionality\_of\_the\_pcmcia\_interface\_standard\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 301b4165-4753-4d55-9760-17628174c043
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Functionality of the PCMCIA\_INTERFACE\_STANDARD Interface

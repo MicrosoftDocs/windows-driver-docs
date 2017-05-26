@@ -2,14 +2,16 @@
 title: Video Capture Overview
 author: windows-driver-content
 description: Video Capture Overview
-MS-HAID:
-- 'vidcapds\_cef19cb9-a8a1-49d0-93fd-56571691c74e.xml'
-- 'stream.video\_capture\_overview'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3f299905-beab-48e2-b5c9-9850452115c6
-keywords: ["video capture WDK AVStream , about video capture", "capturing video WDK AVStream , about video capture", "video capture WDK AVStream"]
+keywords:
+- video capture WDK AVStream , about video capture
+- capturing video WDK AVStream , about video capture
+- video capture WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Video Capture Overview

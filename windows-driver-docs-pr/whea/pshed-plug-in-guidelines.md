@@ -2,14 +2,15 @@
 title: PSHED Plug-In Guidelines
 author: windows-driver-content
 description: PSHED Plug-In Guidelines
-MS-HAID:
-- 'whea\_860fe871-a348-4fe6-bb4a-5747226488a9.xml'
-- 'whea.pshed\_plug\_in\_guidelines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2d17ebef-9474-4825-be09-c924ebd60c44
-keywords: ["platform-specific hardware error driver plug-ins WDK WHEA , guidelines", "PSHED plug-ins WDK WHEA , guidelines"]
+keywords:
+- platform-specific hardware error driver plug-ins WDK WHEA , guidelines
+- PSHED plug-ins WDK WHEA , guidelines
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PSHED Plug-In Guidelines

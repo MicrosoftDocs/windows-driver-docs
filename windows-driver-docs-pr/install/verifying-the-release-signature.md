@@ -2,6 +2,11 @@
 title: Verifying the Release-Signature
 description: Verifying the Release-Signature
 ms.assetid: 28ed3bb6-dc57-42f9-8bd5-7118619f3bf5
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Verifying the Release-Signature

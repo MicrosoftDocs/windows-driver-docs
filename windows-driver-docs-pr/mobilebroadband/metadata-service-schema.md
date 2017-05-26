@@ -1,10 +1,12 @@
 ---
 title: Metadata
 description: Metadata
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bab7803c-df1f-4282-a9d7-5536d30d00dc
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Metadata

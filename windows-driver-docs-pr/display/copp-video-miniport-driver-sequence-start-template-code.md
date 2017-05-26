@@ -2,7 +2,13 @@
 title: COPP Video Miniport Driver Sequence Start Template Code
 description: COPP Video Miniport Driver Sequence Start Template Code
 ms.assetid: f1fc0d03-43f6-44a0-b911-1ca473e4e701
-keywords: ["sequence start WDK COPP"]
+keywords:
+- sequence start WDK COPP
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # COPP Video Miniport Driver Sequence Start Template Code

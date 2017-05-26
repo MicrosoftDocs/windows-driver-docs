@@ -2,14 +2,15 @@
 title: Template Directive Example
 author: windows-driver-content
 description: Template Directive Example
-MS-HAID:
-- 'gplfiles\_f46d574c-d104-4610-a99c-fdae9d362c3a.xml'
-- 'print.template\_directive\_example'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ae8fe5e6-ee79-424d-80b3-fd6300257977
-keywords: ["Production directive WDK GDL", "templates WDK GDL , examples"]
+keywords:
+- Production directive WDK GDL
+- templates WDK GDL , examples
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Template Directive Example

@@ -2,14 +2,15 @@
 title: Cursor Commands
 author: windows-driver-content
 description: Cursor Commands
-MS-HAID:
-- 'nt5gpd\_0b5ea78b-b771-4489-860a-bf0216e45f6e.xml'
-- 'print.cursor\_commands'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3ef09c7e-0e88-4236-a4c9-d89eb7ec61cb
-keywords: ["printer commands WDK Unidrv , cursors", "cursor commands WDK Unidrv"]
+keywords:
+- printer commands WDK Unidrv , cursors
+- cursor commands WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Cursor Commands

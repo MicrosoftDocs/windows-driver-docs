@@ -2,6 +2,11 @@
 ms.assetid: 2274e848-2a0b-445c-82cd-7bcd9e23078a
 title: Debugging a Driver
 description: Typically, debugging a kernel-mode driver requires two computers.
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging a Driver

@@ -1,10 +1,12 @@
 ---
-Description: 'This topic provides guidelines for choosing the best driver model for developing a USB client driver that acts as the device's function driver.'
-MS-HAID: 'buses.winusb\_considerations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: Choosing a driver model for developing a USB client driver
+Description: Guidelines for choosing the best driver model for developing a USB client driver that acts as the device's function driver.
+title: Choose a driver model for developing a USB driver
+author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Choosing a driver model for developing a USB client driver
@@ -24,10 +26,10 @@ The most common approach has been to implement a device driver, (termed as a *US
 
 Writing a driver that is customized to the device's requirements is the most flexible way to provide access to a USB device. However, implementing a driver requires a lot of work. The driver must perform complex tasks, such as driver initialization when new devices are detected, power management, I/O operations, surprise removal, state management, and cleanup when the device is removed. Before you choose to write a driver, ask the following questions:
 
--   [Can you use a Microsoft-provided driver?](#can-you-use-a-microsoft-provided-driver-)
+-   [Can you use a Microsoft-provided driver?](#can-you-use-a-microsoft-provided-driver)
 -   [If you write a USB client driver, which driver model is best?](#if-you--write-a-usb-client-driver--which-driver-model-is-best-)
 
-## Can you use a Microsoft-provided driver?
+## <a href="" id="can-you-use-a-microsoft-provided-driver"></a>Can you use a Microsoft-provided driver?
 
 
 You might *not* need to write a driver if:
@@ -140,22 +142,12 @@ Yes⁴: Isochronous transfers are supported in Windows 8.1 or later versions of
 All client SKUs of the 32-bit versions of Windows XP with SP2support WinUSB. WinUSB is not native to Windows XP; it must be installed with the WinUSB co-installer. All Windows Vista SKUs and later versions of Windows support WinUSB.
 
 ## Related topics
+[Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)  
+[WinUSB](winusb.md)  
+[Write your first USB client driver (UMDF)](implement-driver-entry-for-a-usb-driver--umdf-.md)  
+[Write your first USB client driver (KMDF)](tutorial--write-your-first-usb-client-driver--kmdf-.md)  
 
-
-[Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)
-
-[WinUSB](winusb.md)
-
-[Write your first USB client driver (UMDF)](implement-driver-entry-for-a-usb-driver--umdf-.md)
-
-[Write your first USB client driver (KMDF)](tutorial--write-your-first-usb-client-driver--kmdf-.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Choosing%20a%20driver%20model%20for%20developing%20a%20USB%20client%20driver%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

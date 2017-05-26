@@ -2,7 +2,16 @@
 title: RSNA Preauthentication Guidelines
 description: RSNA Preauthentication Guidelines
 ms.assetid: 307346fa-288b-4930-90f6-655ca8b63875
-keywords: ["authentication WDK Native 802.11 , preauthentications", "Robust Security Network Association WDK Native 802.11", "RSNA WDK Native 802.11", "preauthentication WDK Native 802.11"]
+keywords:
+- authentication WDK Native 802.11 , preauthentications
+- Robust Security Network Association WDK Native 802.11
+- RSNA WDK Native 802.11
+- preauthentication WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # RSNA Preauthentication Guidelines

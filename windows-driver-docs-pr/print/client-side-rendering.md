@@ -2,14 +2,19 @@
 title: Client-Side Rendering
 author: windows-driver-content
 description: Client-Side Rendering
-MS-HAID:
-- 'splarch\_c35c7273-95ce-4a1f-9796-4854fd5f4812.xml'
-- 'print.client\_side\_rendering'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7b67de2a-b5aa-4d8c-9b2c-9caeffdb71c3
-keywords: ["print jobs WDK , client-side rendering", "rendering print jobs WDK", "client-side rendering WDK print", "print spooler print-job rendering WDK", "spooler print-job rendering WDK print", "jobs WDK print , client-side rendering"]
+keywords:
+- print jobs WDK , client-side rendering
+- rendering print jobs WDK
+- client-side rendering WDK print
+- print spooler print-job rendering WDK
+- spooler print-job rendering WDK print
+- jobs WDK print , client-side rendering
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Client-Side Rendering

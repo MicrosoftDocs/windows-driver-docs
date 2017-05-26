@@ -1,10 +1,12 @@
 ---
 title: Establish temporary network connectivity
 description: Establish temporary network connectivity
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5ee9d1ab-cc6f-4262-b2b0-e8b0b0c0c1d3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Establish temporary network connectivity

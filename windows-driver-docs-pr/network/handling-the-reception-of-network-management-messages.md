@@ -2,7 +2,14 @@
 title: Handling the Reception of Network Management Messages
 description: Handling the Reception of Network Management Messages
 ms.assetid: d5cdd9b9-cc67-4cdc-b919-5f26a8066b70
-keywords: ["non-standard packets and messages WDK TCP chimney offload , network management messages", "network management messages WDK TCP chimney offload"]
+keywords:
+- non-standard packets and messages WDK TCP chimney offload , network management messages
+- network management messages WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling the Reception of Network Management Messages

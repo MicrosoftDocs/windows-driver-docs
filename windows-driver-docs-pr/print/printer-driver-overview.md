@@ -2,14 +2,14 @@
 title: Printer Driver Overview
 author: windows-driver-content
 description: Printer Driver Overview
-MS-HAID:
-- 'prndrv\_overview\_959dca48-429d-425c-aaa4-c57bd48de390.xml'
-- 'print.printer\_driver\_overview'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d6bfa85a-2094-4ff8-b32b-e8d7204bb452
-keywords: ["printer drivers WDK , disign options"]
+keywords:
+- printer drivers WDK , disign options
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Driver Overview

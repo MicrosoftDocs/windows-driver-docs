@@ -2,7 +2,13 @@
 title: Enabling Wake-Up Events
 description: Enabling Wake-Up Events
 ms.assetid: 48ed0f41-efa0-4040-8589-8d477c5ddd0e
-keywords: ["wake-up capabilities WDK networking , enabling wake-up events"]
+keywords:
+- wake-up capabilities WDK networking , enabling wake-up events
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling Wake-Up Events

@@ -2,10 +2,12 @@
 title: V4 Printer Driver User Interfaces
 author: windows-driver-content
 description: V4 print drivers support customization in both the Windows Desktop UI, and the Windows Store app UI.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: DE45C0F3-3385-451D-AD29-94D28089E9C3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # V4 Printer Driver User Interfaces

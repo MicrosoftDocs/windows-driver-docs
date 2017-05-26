@@ -2,7 +2,17 @@
 title: TCP Chimney Offload for Intermediate Drivers
 description: TCP Chimney Offload for Intermediate Drivers
 ms.assetid: 542897a9-94c3-4263-8392-3f20f22ccdbf
-keywords: ["TCP chimney offload WDK networking , intermediate drivers", "chimney offload WDK networking , intermediate drivers", "intermediate drivers WDK TCP chimney offload", "intermediate drivers WDK TCP chimney offload , about chimney offload for intermediate drivers", "intermediate drivers WDK networking , TCP chimney offload"]
+keywords:
+- TCP chimney offload WDK networking , intermediate drivers
+- chimney offload WDK networking , intermediate drivers
+- intermediate drivers WDK TCP chimney offload
+- intermediate drivers WDK TCP chimney offload , about chimney offload for intermediate drivers
+- intermediate drivers WDK networking , TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TCP Chimney Offload for Intermediate Drivers

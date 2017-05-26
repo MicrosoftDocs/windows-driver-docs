@@ -2,7 +2,17 @@
 title: Loading a DPXD Alpha-Blending Surface
 description: Loading a DPXD Alpha-Blending Surface
 ms.assetid: 6b5f62e9-3211-42c2-8168-505983c7814e
-keywords: ["stride WDK DirectX VA", "alpha-blend data loading WDK DirectX VA", "blended pictures WDK DirectX VA , alpha-blend data loading", "DPXD alpha-blending surface WDK DirectX VA", "decoded PXD alpha-blending surface WDK DirectX VA"]
+keywords:
+- stride WDK DirectX VA
+- alpha-blend data loading WDK DirectX VA
+- blended pictures WDK DirectX VA , alpha-blend data loading
+- DPXD alpha-blending surface WDK DirectX VA
+- decoded PXD alpha-blending surface WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Loading a DPXD Alpha-Blending Surface

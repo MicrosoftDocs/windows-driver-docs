@@ -1,10 +1,12 @@
 ---
-Description: 'This topic describes how to example a event trace file by using Netmon.'
-MS-HAID: 'buses.how\_to\_examining\_a\_trace\_file\_by\_using\_netmon'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This topic describes how to example a event trace file by using Netmon.
 title: How to view a USB ETW trace in Netmon
+author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to view a USB ETW trace in Netmon
@@ -40,7 +42,7 @@ Observe that the events are listed in the **Frame Summary** pane. The preceding 
 Select an event in the **Frame Summary** pane. Netmon displays the details for the event in the **Frame Details** and **Hex Details** panes. In the **Frame Details** pane, expand the items to examine the details of the event.
 For an example of using Netmon to examine a USB trace file, see [Case Study: Troubleshooting an Unknown USB Device by Using ETW and Netmon](case-study--troubleshooting-an-unknown-usb-device-by-using-etw-and-netmon.md).
 
-## New columns the USB ETW parser for USB 3.0 driver stack
+## <a href="" id="new-columns-the-usb-etw-parser-for-usb-3-0-driver-stack"></a>New columns the USB ETW parser for USB 3.0 driver stack
 
 
 Important types of events from the USB 2.0 driver stack are also defined in the USB 3.0 driver stack. However, there are subtle differences between those types. For example, consider the USB control transfer completion event type (**Description** : USBPort:Complete URB\_FUNCTION\_CONTROL\_TRANSFER\_EX with Data):
@@ -76,20 +78,11 @@ USBIsDisconnect == 1 // Show when any device disconnected
 All columns can be filtered. To create a filter, right-click a cell and select **Add "&lt;column name&gt;" to Display Filter**. Netmon creates a filter based on its value and the column name and adds it under the **Display Filter** pane.
 
 ## Related topics
+[Using USB ETW](using-usb-etw.md)  
+[USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
+[Case Study: Troubleshooting an Unknown USB Device by Using ETW and Netmon](case-study--troubleshooting-an-unknown-usb-device-by-using-etw-and-netmon.md)  
 
-
-[Using USB ETW](using-usb-etw.md)
-
-[USB Event Tracing for Windows](usb-event-tracing-for-windows.md)
-
-[Case Study: Troubleshooting an Unknown USB Device by Using ETW and Netmon](case-study--troubleshooting-an-unknown-usb-device-by-using-etw-and-netmon.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20view%20a%20USB%20ETW%20trace%20in%20Netmon%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

@@ -3,7 +3,16 @@ title: Mounting a Volume
 author: windows-driver-content
 description: Mounting a Volume
 ms.assetid: 0531b023-f35c-4fe9-9c0d-5acafc42f9b4
-keywords: ["filter drivers WDK file system , volume mount process", "file system filter drivers WDK , volume mount process", "volumes WDK file system , mounting", "mounting volumes WDK file systems"]
+keywords:
+- filter drivers WDK file system , volume mount process
+- file system filter drivers WDK , volume mount process
+- volumes WDK file system , mounting
+- mounting volumes WDK file systems
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mounting a Volume

@@ -2,10 +2,12 @@
 title: GNSS driver design
 author: windows-driver-content
 description: Discusses design principles to consider when developing a GNSS driver for Windows 10 including data structures, error reporting, and driver versioning.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: E10B1149-CC8B-438D-B537-258F7FCFA0E7
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GNSS driver design

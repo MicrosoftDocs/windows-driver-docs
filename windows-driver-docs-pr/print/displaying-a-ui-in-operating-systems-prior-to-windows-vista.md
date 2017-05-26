@@ -2,14 +2,19 @@
 title: Displaying a UI in Operating Systems Prior to Windows Vista
 author: windows-driver-content
 description: Displaying a UI in Operating Systems Prior to Windows Vista
-MS-HAID:
-- 'provider\_f564a1a5-f181-48b9-96f0-c83012713995.xml'
-- 'print.displaying\_a\_ui\_in\_operating\_systems\_prior\_to\_windows\_vista'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: de62310e-b10a-49b0-9bcc-b918318b2728
-keywords: ["print spooler customizing WDK , pre-Windows Vista UI display", "spooler customizing WDK print , pre-Windows Vista UI display", "customizing print spooler components WDK , pre-Windows Vista UI display", "displaying UI for print component", "UI displaying WDK print", "user interface WDK print"]
+keywords:
+- print spooler customizing WDK , pre-Windows Vista UI display
+- spooler customizing WDK print , pre-Windows Vista UI display
+- customizing print spooler components WDK , pre-Windows Vista UI display
+- displaying UI for print component
+- UI displaying WDK print
+- user interface WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Displaying a UI in Operating Systems Prior to Windows Vista

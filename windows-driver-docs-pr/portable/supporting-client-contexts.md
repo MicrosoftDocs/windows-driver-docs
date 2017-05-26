@@ -1,8 +1,11 @@
 ---
 Description: Supporting Client Contexts
-MS-HAID: 'wpddk.supporting\_client\_contexts'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Supporting Client Contexts
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Client Contexts

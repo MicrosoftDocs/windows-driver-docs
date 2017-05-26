@@ -2,7 +2,16 @@
 title: Identifier Score
 description: Identifier Score
 ms.assetid: c291205f-5152-419c-b6fa-0f720a5b628f
-keywords: ["identifier score WDK device installations", "device identification strings WDK , identifier score driver ranking", "identifier-match-type score WDK device installations", "identifier-list-position score WDK device installations"]
+keywords:
+- identifier score WDK device installations
+- device identification strings WDK , identifier score driver ranking
+- identifier-match-type score WDK device installations
+- identifier-list-position score WDK device installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Identifier Score

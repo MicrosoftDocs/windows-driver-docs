@@ -2,7 +2,18 @@
 title: Drivers That Assume State Information
 description: Drivers That Assume State Information
 ms.assetid: c4dfb701-c547-4e94-8fd8-05571508137c
-keywords: ["surfaces WDK DirectDraw , blitting", "drawing blt WDK DirectDraw , state information", "DirectDraw blitting WDK Windows 2000 display , state information", "blitting WDK DirectDraw , state information", "blt WDK DirectDraw , state information", "states WDK DirectDraw"]
+keywords:
+- surfaces WDK DirectDraw , blitting
+- drawing blt WDK DirectDraw , state information
+- DirectDraw blitting WDK Windows 2000 display , state information
+- blitting WDK DirectDraw , state information
+- blt WDK DirectDraw , state information
+- states WDK DirectDraw
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Drivers That Assume State Information

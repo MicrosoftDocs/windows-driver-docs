@@ -2,13 +2,12 @@
 title: Creating Push-Model Aware Applications
 author: windows-driver-content
 description: Creating Push-Model Aware Applications
-MS-HAID:
-- 'stillimg\_e831001f-39ba-44e9-82ae-e040cdc05fa1.xml'
-- 'image.creating\_push\_model\_aware\_applications'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0f554b2c-0217-4109-8ef6-99c5400dfed6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Push-Model Aware Applications

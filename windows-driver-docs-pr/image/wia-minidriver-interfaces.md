@@ -2,13 +2,12 @@
 title: WIA Minidriver Interfaces
 author: windows-driver-content
 description: WIA Minidriver Interfaces
-MS-HAID:
-- 'WIA\_arch\_bfd610ea-a256-4fa0-a3ef-2d30a53217d5.xml'
-- 'image.wia\_minidriver\_interfaces'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6d069584-f9e1-4312-b8f2-1ef3d518faeb
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Minidriver Interfaces

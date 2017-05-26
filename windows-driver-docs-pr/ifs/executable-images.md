@@ -3,7 +3,16 @@ title: Executable Images
 author: windows-driver-content
 description: Executable Images
 ms.assetid: ca279a74-5f30-4413-bf1c-4d5af12d294d
-keywords: ["security WDK file systems , semantic model checks", "semantic model checks WDK file systems , executable images", "executable images WDK file systems", "memory mapped files WDK file systems"]
+keywords:
+- security WDK file systems , semantic model checks
+- semantic model checks WDK file systems , executable images
+- executable images WDK file systems
+- memory mapped files WDK file systems
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Executable Images

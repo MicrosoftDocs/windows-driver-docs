@@ -2,7 +2,14 @@
 title: Introduction to NDIS Miniport Drivers
 description: Introduction to NDIS Miniport Drivers
 ms.assetid: 59260c68-f4d3-46bf-9aba-e6f369747069
-keywords: ["miniport drivers WDK networking , about miniport drivers", "NDIS miniport drivers WDK , about miniport drivers"]
+keywords:
+- miniport drivers WDK networking , about miniport drivers
+- NDIS miniport drivers WDK , about miniport drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to NDIS Miniport Drivers

@@ -2,13 +2,12 @@
 title: DSM Terminology
 author: windows-driver-content
 description: DSM Terminology
-MS-HAID:
-- 'dsm\_design\_80c9b199-816d-418d-864e-25f088859f00.xml'
-- 'image.dsm\_terminology'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 72a62672-b4bb-42f4-a80f-9aa4d60951ca
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DSM Terminology

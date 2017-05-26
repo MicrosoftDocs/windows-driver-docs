@@ -2,14 +2,15 @@
 title: Streaming Media Samples
 author: windows-driver-content
 description: Streaming Media Samples
-MS-HAID:
-- 'StreamingMediaSamples\_6110cf31-8894-4218-8fd3-838dc02b9932.xml'
-- 'stream.streaming\_media\_samples'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 797763a6-cd13-4d76-8ddb-75d812a8dde3
-keywords: ["streaming media samples WDK", "samples WDK streaming media"]
+keywords:
+- streaming media samples WDK
+- samples WDK streaming media
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Streaming Media Samples

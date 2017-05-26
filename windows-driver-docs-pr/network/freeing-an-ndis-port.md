@@ -2,7 +2,15 @@
 title: Freeing an NDIS Port
 description: Freeing an NDIS Port
 ms.assetid: ae7b608d-6105-4fdc-b805-0f0101d7c218
-keywords: ["ports WDK NDIS , freeing", "NDIS ports WDK , freeing", "freeing NDIS ports"]
+keywords:
+- ports WDK NDIS , freeing
+- NDIS ports WDK , freeing
+- freeing NDIS ports
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Freeing an NDIS Port

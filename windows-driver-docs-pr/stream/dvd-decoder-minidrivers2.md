@@ -2,14 +2,22 @@
 title: DVD Decoder Minidrivers
 author: windows-driver-content
 description: DVD Decoder Minidrivers
-MS-HAID:
-- 'dvd-design\_6d655ef7-437d-46fe-a5b2-d302b5683522.xml'
-- 'stream.dvd\_decoder\_minidrivers2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1dec271d-47cf-4ab6-9149-7f5b9b92b189
-keywords: ["Windows 2000 Kernel Streaming Model WDK , DVD decoder minidrivers", "Streaming Model WDK Windows 2000 Kernel , DVD decoder minidrivers", "Kernel Streaming Model WDK , DVD decoder minidrivers", "DVD decoder minidrivers WDK", "decoder minidrivers WDK DVD", "movie playbacks WDK DVD decoder", "audio playbacks WDK DVD decoder", "video playbacks WDK DVD decoder", "playback WDK DVD decoder"]
+keywords:
+- Windows 2000 Kernel Streaming Model WDK , DVD decoder minidrivers
+- Streaming Model WDK Windows 2000 Kernel , DVD decoder minidrivers
+- Kernel Streaming Model WDK , DVD decoder minidrivers
+- DVD decoder minidrivers WDK
+- decoder minidrivers WDK DVD
+- movie playbacks WDK DVD decoder
+- audio playbacks WDK DVD decoder
+- video playbacks WDK DVD decoder
+- playback WDK DVD decoder
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DVD Decoder Minidrivers

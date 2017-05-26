@@ -1,6 +1,11 @@
 ---
 title: Wi-Fi Hotspot Data Submission Format
 description: Wi-Fi Hotspot Data Submission Format
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wi-Fi Hotspot Data Submission Format

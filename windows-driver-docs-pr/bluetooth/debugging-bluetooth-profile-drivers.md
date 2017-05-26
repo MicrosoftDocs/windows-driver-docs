@@ -2,7 +2,16 @@
 title: Debugging Bluetooth Profile Drivers
 description: Debugging Bluetooth Profile Drivers
 ms.assetid: 3c04017e-7f5c-49d4-ad7e-36c7405133a1
-keywords: ["debugging profile drivers WDK Bluetooth", "Bluetooth WDK , debugging profile drivers", "debugging drivers WDK Bluetooth", "profile drivers WDK Bluetooth , debugging"]
+keywords:
+- debugging profile drivers WDK Bluetooth
+- Bluetooth WDK , debugging profile drivers
+- debugging drivers WDK Bluetooth
+- profile drivers WDK Bluetooth , debugging
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging Bluetooth Profile Drivers

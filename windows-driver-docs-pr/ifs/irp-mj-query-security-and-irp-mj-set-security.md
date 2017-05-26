@@ -3,7 +3,21 @@ title: IRP\_MJ\_QUERY\_SECURITY and IRP\_MJ\_SET\_SECURITY
 author: windows-driver-content
 description: IRP\_MJ\_QUERY\_SECURITY and IRP\_MJ\_SET\_SECURITY
 ms.assetid: 64216496-55f0-4ad4-b475-341ed9eb6886
-keywords: ["IRP_MJ_QUERY_SECURITY", "IRP_MJ_SET_SECURITY", "security WDK file systems , adding security checks", "security checks WDK file systems , IRP_MJ_SET_SECURITY", "security checks WDK file systems , IRP_MJ_QUERY_SECURITY", "security descriptors WDK file systems , security checking", "descriptors WDK file systems , security checking", "retrieving security descriptors", "querying security descriptors"]
+keywords:
+- IRP_MJ_QUERY_SECURITY
+- IRP_MJ_SET_SECURITY
+- security WDK file systems , adding security checks
+- security checks WDK file systems , IRP_MJ_SET_SECURITY
+- security checks WDK file systems , IRP_MJ_QUERY_SECURITY
+- security descriptors WDK file systems , security checking
+- descriptors WDK file systems , security checking
+- retrieving security descriptors
+- querying security descriptors
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IRP\_MJ\_QUERY\_SECURITY and IRP\_MJ\_SET\_SECURITY

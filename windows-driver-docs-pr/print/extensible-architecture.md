@@ -2,14 +2,19 @@
 title: Extensible Architecture
 author: windows-driver-content
 description: Extensible Architecture
-MS-HAID:
-- 'drvarch\_4f39680e-d27e-42fe-af2c-60a2268c20ab.xml'
-- 'print.extensible\_architecture'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 48a9c3ea-282c-4d3c-83ca-dc7051fe5002
-keywords: ["direct consumption WDK XPSDrv", "scalable consumption WDK XPSDrv", "print paths WDK XPSDrv", "XPSDrv printer drivers WDK , print paths", "XPSDrv printer drivers WDK , extensibility", "extensibility WDK XPSDrv"]
+keywords:
+- direct consumption WDK XPSDrv
+- scalable consumption WDK XPSDrv
+- print paths WDK XPSDrv
+- XPSDrv printer drivers WDK , print paths
+- XPSDrv printer drivers WDK , extensibility
+- extensibility WDK XPSDrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extensible Architecture

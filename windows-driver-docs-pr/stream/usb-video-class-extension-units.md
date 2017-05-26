@@ -2,14 +2,18 @@
 title: USB Video Class Extension Units
 author: windows-driver-content
 description: USB Video Class Extension Units
-MS-HAID:
-- 'uvcds\_1D752385-CC94-4242-97F6-3B1EC8F3DE05.xml'
-- 'stream.usb\_video\_class\_extension\_units'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 91addb52-4681-4f3d-bdd8-bf64f4917fc9
-keywords: ["USB Video Class drivers WDK AVStream , extension units", "Video Class drivers WDK USB , extension units", "UVC drivers WDK AVStream , extension units", "extension units WDK USB Video Class", "user-mode plug-ins WDK USB Video Class"]
+keywords:
+- USB Video Class drivers WDK AVStream , extension units
+- Video Class drivers WDK USB , extension units
+- UVC drivers WDK AVStream , extension units
+- extension units WDK USB Video Class
+- user-mode plug-ins WDK USB Video Class
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB Video Class Extension Units

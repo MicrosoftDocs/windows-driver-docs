@@ -2,6 +2,11 @@
 title: Determining Receive Filtering Capabilities
 description: Determining Receive Filtering Capabilities
 ms.assetid: 11EE5987-A2DE-4388-86D0-77285453E80A
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Determining Receive Filtering Capabilities

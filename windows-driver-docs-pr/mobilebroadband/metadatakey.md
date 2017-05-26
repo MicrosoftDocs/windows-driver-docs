@@ -1,10 +1,12 @@
 ---
 title: MetadataKey
 description: MetadataKey
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1915db47-98bb-40f5-be3b-75e9af80f506
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MetadataKey

@@ -2,13 +2,12 @@
 title: Providing Event Notification
 author: windows-driver-content
 description: Providing Event Notification
-MS-HAID:
-- 'WIA\_db\_event\_99c57a0c-8d9a-4d44-8907-45a7eaeb73a2.xml'
-- 'image.providing\_event\_notification'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 53ca7ef0-fa8b-4ae1-9b5e-b145c2d02db2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Providing Event Notification

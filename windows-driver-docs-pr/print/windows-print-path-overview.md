@@ -2,14 +2,17 @@
 title: Windows Print Path Overview
 author: windows-driver-content
 description: Windows Print Path Overview
-MS-HAID:
-- 'drvarch\_c54c4829-8fb2-4e83-9218-015258a319da.xml'
-- 'print.windows\_print\_path\_overview'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c06e122b-a4d8-4b3a-9db0-0bc8f2728177
-keywords: ["XPSDrv printer drivers WDK , print paths", "print paths WDK XPSDrv", "GDI print path WDK XPSDrv", "XPS print path WDK XPSDrv"]
+keywords:
+- XPSDrv printer drivers WDK , print paths
+- print paths WDK XPSDrv
+- GDI print path WDK XPSDrv
+- XPS print path WDK XPSDrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Print Path Overview

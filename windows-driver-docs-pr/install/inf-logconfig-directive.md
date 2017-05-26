@@ -1,14 +1,20 @@
 ---
 title: INF LogConfig Directive
-description: A LogConfig directive references one or more INF-writer-defined sections, each of which specifies a logical configuration of hardware resources − the interrupt request lines, memory ranges, I/O ports, and DMA channels that can be used by the device.
+description: A LogConfig directive references one or more INF-writer-defined sections, each of which specifies a logical configuration of hardware resources.
 ms.assetid: 6b60c3eb-bf70-42f7-bed7-a856fd626d8c
-keywords: ["INF LogConfig Directive Device and Driver Installation"]
+keywords:
+- INF LogConfig Directive Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF LogConfig Directive
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF LogConfig Directive

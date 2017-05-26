@@ -2,11 +2,20 @@
 title: HID Transports
 author: windows-driver-content
 description: HID Transports
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: E442CB87-992B-475A-A97F-9C22468BA877
-keywords: ["HID Transports", "USB transport", "Bluetooth transport", "Bluetooth", "Bluetooth LE", "I2C", "transport minidriver"]
+keywords:
+- HID Transports
+- USB transport
+- Bluetooth transport
+- Bluetooth
+- Bluetooth LE
+- I2C
+- transport minidriver
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # HID Transports

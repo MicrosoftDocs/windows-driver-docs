@@ -2,6 +2,11 @@
 title: Installing the Device Metadata Authoring Wizard
 description: Installing the Device Metadata Authoring Wizard
 ms.assetid: 3DA5F7E8-B33B-4D05-9506-DDEE06773A5D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing the Device Metadata Authoring Wizard

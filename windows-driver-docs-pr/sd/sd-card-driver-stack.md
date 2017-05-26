@@ -2,14 +2,22 @@
 title: SD Card Driver Stack
 author: windows-driver-content
 description: SD Card Driver Stack
-MS-HAID:
-- 'securedigital\_dg\_d9c564f2-63e2-4429-ad4d-3f28f97baba7.xml'
-- 'SD.sd\_card\_driver\_stack'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 196739bb-530f-4a60-98a0-ece0b4c5ef34
-keywords: ["SD WDK buses , driver stacks", "driver stacks WDK SD bus", "stacks WDK SD bus", "device stacks WDK SD bus", "SDIO WDK buses", "Secure Digital I/O WDK buses", "host controllers WDK SD bus", "hardware WDK SD bus", "software WDK SD bus"]
+keywords:
+- SD WDK buses , driver stacks
+- driver stacks WDK SD bus
+- stacks WDK SD bus
+- device stacks WDK SD bus
+- SDIO WDK buses
+- Secure Digital I/O WDK buses
+- host controllers WDK SD bus
+- hardware WDK SD bus
+- software WDK SD bus
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SD Card Driver Stack

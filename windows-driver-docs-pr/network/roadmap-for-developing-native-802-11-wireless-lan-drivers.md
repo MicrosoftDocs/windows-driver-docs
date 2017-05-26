@@ -2,7 +2,15 @@
 title: Roadmap for Developing Native 802.11 Wireless LAN Drivers
 description: Roadmap for Developing Native 802.11 Wireless LAN Drivers
 ms.assetid: bedfa5e7-a5b2-45a4-9bc0-82686b0ecffe
-keywords: ["wireless LAN networks WDK , roadmap", "WLAN networks WDK , roadmap", "Native 802.11 WDK networking , roadmap"]
+keywords:
+- wireless LAN networks WDK , roadmap
+- WLAN networks WDK , roadmap
+- Native 802.11 WDK networking , roadmap
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Roadmap for Developing Native 802.11 Wireless LAN Drivers

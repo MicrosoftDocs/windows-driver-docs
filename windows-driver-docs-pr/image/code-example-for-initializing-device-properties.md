@@ -2,13 +2,12 @@
 title: Code Example for Initializing Device Properties
 author: windows-driver-content
 description: Code Example for Initializing Device Properties
-MS-HAID:
-- 'WIA\_wsd\_scan\_6d71eea2-52ae-44b1-b691-772847ab525d.xml'
-- 'image.code\_example\_for\_initializing\_device\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ec25fa77-13d8-4cb0-913c-b24010355702
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Code Example for Initializing Device Properties

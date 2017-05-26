@@ -2,14 +2,16 @@
 title: TCP/IP Schema Extensions for Driver-Specific Queries
 author: windows-driver-content
 description: TCP/IP Schema Extensions for Driver-Specific Queries
-MS-HAID:
-- 'autocfg\_de2dd533-8185-4943-b76a-1b8a2e0a2b73.xml'
-- 'print.tcp\_ip\_schema\_extensions\_for\_driver\_specific\_queries'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c6f85f99-852a-418f-98da-41fe4c36e9ba
-keywords: ["TCP/IP schema extensions WDK printer", "schema extensions WDK TCP/IP", "driver-specific queries WDK printer"]
+keywords:
+- TCP/IP schema extensions WDK printer
+- schema extensions WDK TCP/IP
+- driver-specific queries WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TCP/IP Schema Extensions for Driver-Specific Queries

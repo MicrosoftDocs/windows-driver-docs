@@ -2,7 +2,14 @@
 title: Vertex Buffer Creation Handling on Windows 2000
 description: Vertex Buffer Creation Handling on Windows 2000
 ms.assetid: 4155a4c6-cbac-4a75-8ddf-5983fe5099c6
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display , vertex buffers, creation handling", "vertex buffers WDK DirectX 8.0 , creation handling on Windows 2000"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display , vertex buffers, creation handling
+- vertex buffers WDK DirectX 8.0 , creation handling on Windows 2000
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Vertex Buffer Creation Handling on Windows 2000

@@ -2,7 +2,13 @@
 title: CM_PROB_NO_SOFTCONFIG
 description: CM_PROB_NO_SOFTCONFIG
 ms.assetid: 9572de56-6cad-4e20-a1f7-9323f457975a
-keywords: ["CM_PROB_NO_SOFTCONFIG"]
+keywords:
+- CM_PROB_NO_SOFTCONFIG
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CM_PROB_NO_SOFTCONFIG

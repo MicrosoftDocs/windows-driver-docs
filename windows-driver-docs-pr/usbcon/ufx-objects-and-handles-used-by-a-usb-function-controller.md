@@ -1,10 +1,12 @@
 ---
-Description: 'USB function class extension (UFX) uses the WDF object functionality to define these USB-specific UFX objects.'
-MS-HAID: 'buses.ufx\_objects\_and\_handles\_used\_by\_a\_usb\_function\_controller'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: USB function class extension (UFX) uses the WDF object functionality to define these USB-specific UFX objects.
 title: UFX objects and handles used by a USB function client driver
+author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UFX objects and handles used by a USB function client driver
@@ -83,16 +85,9 @@ Sets charger information that it uses to enable charging over USB.
 Represents a logical connection between the host and the device. The object is responsible for transfer of data to/from the host. For every device object there can be one or more endpoints. The default endpoint is always the control endpoint and rest are class driver specific objects. The function controller driver creates the object in the [*EVT\_UFX\_DEVICE\_ENDPOINT\_ADD*](https://msdn.microsoft.com/library/windows/hardware/mt187851) callback by calling the [**UfxEndpointCreate**](https://msdn.microsoft.com/library/windows/hardware/mt187965) method.
 
 ## Related topics
+[Developing Windows drivers for USB function controllers](developing-windows-drivers-for-usb-function-controllers.md)  
 
-
-[Developing Windows drivers for USB function controllers](developing-windows-drivers-for-usb-function-controllers.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20UFX%20objects%20and%20handles%20used%20by%20a%20USB%20function%20client%20driver%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

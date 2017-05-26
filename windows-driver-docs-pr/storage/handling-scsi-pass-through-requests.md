@@ -3,7 +3,16 @@ title: Handling SCSI Pass-Through Requests
 author: windows-driver-content
 description: Handling SCSI Pass-Through Requests
 ms.assetid: 61f8dc02-b5ae-4be5-b7e1-d8207304ef7c
-keywords: ["peripherals WDK storage , SCSI pass-through requests", "storage peripherals WDK , SCSI pass-through requests", "SCSI pass-through requests WDK storage", "pass-through requests WDK storage"]
+keywords:
+- peripherals WDK storage , SCSI pass-through requests
+- storage peripherals WDK , SCSI pass-through requests
+- SCSI pass-through requests WDK storage
+- pass-through requests WDK storage
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling SCSI Pass-Through Requests

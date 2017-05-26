@@ -2,7 +2,14 @@
 title: Registering Optional NDIS 6.0 Protocol Driver Entry Points
 description: Registering Optional NDIS 6.0 Protocol Driver Entry Points
 ms.assetid: bb26cf47-1183-470c-84f1-5cb20999a0fc
-keywords: ["registering entry points", "optional entry points WDK networking"]
+keywords:
+- registering entry points
+- optional entry points WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering Optional NDIS 6.0 Protocol Driver Entry Points

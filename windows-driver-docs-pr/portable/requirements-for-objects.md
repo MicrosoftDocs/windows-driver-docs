@@ -1,8 +1,11 @@
 ---
 Description: Requirements for Objects
-MS-HAID: 'wpddk.requirements\_for\_objects'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Requirements for Objects
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Requirements for Objects

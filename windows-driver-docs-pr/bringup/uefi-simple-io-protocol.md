@@ -2,10 +2,12 @@
 title: UEFI simple I/O protocol
 author: windows-driver-content
 description: UEFI simple I/O protocol
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0cb55bf5-71e9-4b59-aef1-7d74eb331a18
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UEFI simple I/O protocol

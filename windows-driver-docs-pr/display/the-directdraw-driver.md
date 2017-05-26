@@ -2,7 +2,15 @@
 title: The DirectDraw Driver
 description: The DirectDraw Driver
 ms.assetid: 6f3343d6-9544-4389-a753-f4520f21a65c
-keywords: ["drawing WDK DirectDraw , DirectDraw driver", "DirectDraw WDK Windows 2000 display , DirectDraw driver", "DirectDraw driver WDK Windows 2000 display"]
+keywords:
+- drawing WDK DirectDraw , DirectDraw driver
+- DirectDraw WDK Windows 2000 display , DirectDraw driver
+- DirectDraw driver WDK Windows 2000 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The DirectDraw Driver

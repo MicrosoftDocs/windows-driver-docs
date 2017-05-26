@@ -1,10 +1,12 @@
 ---
 title: Open the networks list
 description: Open the networks list
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 55935290-ebcb-4105-9b51-c862654f9f56
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Open the networks list

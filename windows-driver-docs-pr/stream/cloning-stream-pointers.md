@@ -2,14 +2,17 @@
 title: Cloning Stream Pointers
 author: windows-driver-content
 description: Cloning Stream Pointers
-MS-HAID:
-- 'avsover\_85d2e0dc-1225-42f4-aa7d-bd73cd4e63e9.xml'
-- 'stream.cloning\_stream\_pointers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bbe01f48-db86-41c9-b7b8-b48a4a295d21
-keywords: ["stream pointers WDK AVStream , cloning", "cloning stream pointers WDK AVStream", "duplicating stream pointers WDK AVStream", "copying stream pointers WDK AVStream"]
+keywords:
+- stream pointers WDK AVStream , cloning
+- cloning stream pointers WDK AVStream
+- duplicating stream pointers WDK AVStream
+- copying stream pointers WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Cloning Stream Pointers

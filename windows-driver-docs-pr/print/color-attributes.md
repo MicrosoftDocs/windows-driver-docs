@@ -2,14 +2,15 @@
 title: Color Attributes
 author: windows-driver-content
 description: Color Attributes
-MS-HAID:
-- 'nt5gpd\_082abbe3-496e-4d9e-bbf4-0f637c4a61a4.xml'
-- 'print.color\_attributes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c8de0186-9cf5-43e5-81e7-33351a34c13c
-keywords: ["color attributes WDK Unidrv", "general printer attributes WDK Unidrv , color"]
+keywords:
+- color attributes WDK Unidrv
+- general printer attributes WDK Unidrv , color
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Color Attributes

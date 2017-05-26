@@ -2,10 +2,12 @@
 title: EFI\_USBFN\_IO\_PROTOCOL.GetVendorIdProductId
 author: windows-driver-content
 description: EFI\_USBFN\_IO\_PROTOCOL.GetVendorIdProductId
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 78dbc589-3ffd-4ee2-9d80-4570b3b20b2f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EFI\_USBFN\_IO\_PROTOCOL.GetVendorIdProductId

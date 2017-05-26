@@ -2,7 +2,16 @@
 title: Reporting Support for 2D Operations Using Surface Formats
 description: Reporting Support for 2D Operations Using Surface Formats
 ms.assetid: c7737daf-3342-48dc-a365-f789b7203013
-keywords: ["two-dimensional operations WDK DirectX 9.0 , surface formats", "2D operations WDK DirectX 9.0 , surface formats", "surface formats WDK DirectX 9.0", "surface formats WDK DirectX 9.0 , reporting support for 2D operations"]
+keywords:
+- two-dimensional operations WDK DirectX 9.0 , surface formats
+- 2D operations WDK DirectX 9.0 , surface formats
+- surface formats WDK DirectX 9.0
+- surface formats WDK DirectX 9.0 , reporting support for 2D operations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting Support for 2D Operations Using Surface Formats

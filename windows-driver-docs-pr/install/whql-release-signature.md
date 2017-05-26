@@ -2,7 +2,19 @@
 title: WHQL Release Signature
 description: WHQL Release Signature
 ms.assetid: edc815d4-596c-4f50-9bff-029b8ea19a0a
-keywords: ["driver signing WDK , WHQL digital signatures", "signing drivers WDK , WHQL digital signatures", "digital signatures WDK , WHQL", "signatures WDK , WHQL", "WHQL digital signatures WDK", "public release driver signing WDK , WHQL", "release signing WDK , WHQL"]
+keywords:
+- driver signing WDK , WHQL digital signatures
+- signing drivers WDK , WHQL digital signatures
+- digital signatures WDK , WHQL
+- signatures WDK , WHQL
+- WHQL digital signatures WDK
+- public release driver signing WDK , WHQL
+- release signing WDK , WHQL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WHQL Release Signature

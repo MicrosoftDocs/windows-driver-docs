@@ -2,7 +2,15 @@
 title: Initializing a Header-Data Split Provider
 description: Initializing a Header-Data Split Provider
 ms.assetid: 19a01906-6a05-4f57-a22a-911138095c84
-keywords: ["header-data split WDK , initializing provider", "initializing header-data split providers", "header-data split providers WDK"]
+keywords:
+- header-data split WDK , initializing provider
+- initializing header-data split providers
+- header-data split providers WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing a Header-Data Split Provider

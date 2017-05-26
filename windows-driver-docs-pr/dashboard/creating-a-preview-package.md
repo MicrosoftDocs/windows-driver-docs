@@ -1,13 +1,12 @@
 ---
 title: Creating a Preview Package
 description: Creating a Preview Package
-MS-HAID:
-- 'p\_dashboard.creating\_a\_preview\_package'
-- 'hw\_dashboard.creating\_a\_preview\_package'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 49880681-480d-4f2d-bf8f-d621ac275244
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Preview Package

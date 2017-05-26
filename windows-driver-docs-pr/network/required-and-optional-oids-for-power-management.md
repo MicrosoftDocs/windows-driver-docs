@@ -2,7 +2,16 @@
 title: Required and Optional OIDs for Power Management
 description: Required and Optional OIDs for Power Management
 ms.assetid: 147e35b2-dfa5-4238-82e6-5c48ffa30af5
-keywords: ["OIDs WDK networking , power management", "wake-up capabilities WDK networking , OIDs", "power management WDK NDIS miniport , OIDs", "object identifiers WDK networking"]
+keywords:
+- OIDs WDK networking , power management
+- wake-up capabilities WDK networking , OIDs
+- power management WDK NDIS miniport , OIDs
+- object identifiers WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Required and Optional OIDs for Power Management

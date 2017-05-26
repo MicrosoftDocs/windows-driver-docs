@@ -2,14 +2,14 @@
 title: FORM\_INFO\_2 Data Structure
 author: windows-driver-content
 description: FORM\_INFO\_2 Data Structure
-MS-HAID:
-- 'splarch\_400f0024-a803-43e7-8a24-226125fb5e7b.xml'
-- 'print.form\_info\_2\_data\_structure'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: df953fe9-00a2-468a-a2ae-ba8f3fce9982
-keywords: ["FORM_INFO_2 data structure WDK printer"]
+keywords:
+- FORM_INFO_2 data structure WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # FORM\_INFO\_2 Data Structure

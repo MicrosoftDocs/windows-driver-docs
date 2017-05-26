@@ -2,7 +2,15 @@
 title: Configuring the Component's Driver
 description: Configuring the Component's Driver
 ms.assetid: 0aab9bb0-180c-4e21-ac8e-f20db7e8201a
-keywords: ["notify objects WDK networking , driver configuration", "network notify objects WDK , driver configuration", "driver configuration WDK network component"]
+keywords:
+- notify objects WDK networking , driver configuration
+- network notify objects WDK , driver configuration
+- driver configuration WDK network component
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configuring the Component's Driver

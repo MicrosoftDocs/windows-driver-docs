@@ -2,7 +2,20 @@
 title: DisplayConfigSetDeviceInfo Summary and Scenarios
 description: DisplayConfigSetDeviceInfo Summary and Scenarios
 ms.assetid: b00c1586-26f0-4fe1-8cc8-3db552ebba86
-keywords: ["connecting displays WDK Windows 7 display , CCD APIs, DisplayConfigSetDeviceInfo", "connecting displays WDK Windows Server 2008 R2 display , CCD APIs, DisplayConfigSetDeviceInfo", "configuring displays WDK Windows 7 display , CCD APIs, DisplayConfigSetDeviceInfo", "configuring displays WDK Windows Server 2008 R2 display , CCD APIs, DisplayConfigSetDeviceInfo", "CCD concepts WDK Windows 7 display , DisplayConfigSetDeviceInfo", "CCD concepts WDK Windows Server 2008 R2 display , DisplayConfigSetDeviceInfo", "DisplayConfigSetDeviceInfo WDK Windows 7 display", "DisplayConfigSetDeviceInfo WDK Windows Server 2008 R2 display"]
+keywords:
+- connecting displays WDK Windows 7 display , CCD APIs, DisplayConfigSetDeviceInfo
+- connecting displays WDK Windows Server 2008 R2 display , CCD APIs, DisplayConfigSetDeviceInfo
+- configuring displays WDK Windows 7 display , CCD APIs, DisplayConfigSetDeviceInfo
+- configuring displays WDK Windows Server 2008 R2 display , CCD APIs, DisplayConfigSetDeviceInfo
+- CCD concepts WDK Windows 7 display , DisplayConfigSetDeviceInfo
+- CCD concepts WDK Windows Server 2008 R2 display , DisplayConfigSetDeviceInfo
+- DisplayConfigSetDeviceInfo WDK Windows 7 display
+- DisplayConfigSetDeviceInfo WDK Windows Server 2008 R2 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DisplayConfigSetDeviceInfo Summary and Scenarios

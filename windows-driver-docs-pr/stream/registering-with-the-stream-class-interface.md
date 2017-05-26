@@ -2,14 +2,17 @@
 title: Registering with the Stream Class Interface
 author: windows-driver-content
 description: Registering with the Stream Class Interface
-MS-HAID:
-- 'vidcapds\_89e1e13e-1f49-4250-aa84-476da22c2ca3.xml'
-- 'stream.registering\_with\_the\_stream\_class\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dfc94f8d-0c0a-44ed-a4f8-791ce49aba2d
-keywords: ["video capture WDK AVStream , registering Stream class interface", "capturing video WDK AVStream , registering Stream class interface", "registering Stream class interface WDK AVStream", "initializing stream data WDK AVStream"]
+keywords:
+- video capture WDK AVStream , registering Stream class interface
+- capturing video WDK AVStream , registering Stream class interface
+- registering Stream class interface WDK AVStream
+- initializing stream data WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering with the Stream Class Interface

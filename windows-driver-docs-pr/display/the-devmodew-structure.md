@@ -2,7 +2,17 @@
 title: The DEVMODEW Structure
 description: The DEVMODEW Structure
 ms.assetid: 26212e3b-a591-4ed6-b441-b130d8d4d948
-keywords: ["GDI WDK Windows 2000 display , DEVMODEW structure", "graphics drivers WDK Windows 2000 display , DEVMODEW structure", "DEVMODEW structure WDK Windows 2000 display", "Unicode WDK graphics", "drawing WDK GDI , DEVMODEW structure"]
+keywords:
+- GDI WDK Windows 2000 display , DEVMODEW structure
+- graphics drivers WDK Windows 2000 display , DEVMODEW structure
+- DEVMODEW structure WDK Windows 2000 display
+- Unicode WDK graphics
+- drawing WDK GDI , DEVMODEW structure
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The DEVMODEW Structure

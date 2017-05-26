@@ -2,14 +2,16 @@
 title: Debugging Spooler Components
 author: windows-driver-content
 description: Debugging Spooler Components
-MS-HAID:
-- 'prntools\_88cbed5d-036b-4fdf-8bc4-baf95c75d6ae.xml'
-- 'print.debugging\_spooler\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ed4dcd29-105c-4562-9741-858cb9542449
-keywords: ["debugging spooler components WDK printer", "spooler component debugging WDK print", "trace messages WDK printer"]
+keywords:
+- debugging spooler components WDK printer
+- spooler component debugging WDK print
+- trace messages WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging Spooler Components

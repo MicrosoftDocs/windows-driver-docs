@@ -2,7 +2,16 @@
 title: Obsolete RFCs That Should Not Be Used
 description: Obsolete RFCs That Should Not Be Used
 ms.assetid: 989247bc-0f85-42d3-9888-da8db7eba738
-keywords: ["RFC compliance WDK TCP chimney offload", "IETF RFC compliance WDK TCP chimney offload", "task-offload engine NIC WDK TCP chimney offload", "TOE NIC WDK TCP chimney offload"]
+keywords:
+- RFC compliance WDK TCP chimney offload
+- IETF RFC compliance WDK TCP chimney offload
+- task-offload engine NIC WDK TCP chimney offload
+- TOE NIC WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Obsolete RFCs That Should Not Be Used

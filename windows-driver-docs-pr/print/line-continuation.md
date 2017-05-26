@@ -2,14 +2,17 @@
 title: Line Continuation
 author: windows-driver-content
 description: Line Continuation
-MS-HAID:
-- 'nt5gpd\_d1fecb11-d652-4efb-875b-9fc30f44709f.xml'
-- 'print.line\_continuation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ee4dbb3d-ba9d-45bb-82dd-ecee4682ae63
-keywords: ["GPD file entries WDK Unidrv , line continuations", "line continuations WDK GPD files", "continued lines WDK GPD files", "continuation character WDK GPD files"]
+keywords:
+- GPD file entries WDK Unidrv , line continuations
+- line continuations WDK GPD files
+- continued lines WDK GPD files
+- continuation character WDK GPD files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Line Continuation

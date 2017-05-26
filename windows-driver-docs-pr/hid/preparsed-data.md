@@ -2,14 +2,15 @@
 title: Preparsed Data
 author: windows-driver-content
 description: Preparsed Data
-MS-HAID:
-- 'hidclass\_9906f57d-defc-4565-aec3-40dc5214d5a9.xml'
-- 'hid.preparsed\_data'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 50ac2877-4c45-4d55-b5cc-013486892fbf
-keywords: ["parsed data WDK HID", "preparsed data WDK HID"]
+keywords:
+- parsed data WDK HID
+- preparsed data WDK HID
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Preparsed Data

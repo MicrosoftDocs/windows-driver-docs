@@ -2,13 +2,12 @@
 title: WIA Camera Minidriver
 author: windows-driver-content
 description: WIA Camera Minidriver
-MS-HAID:
-- 'WIA\_drv\_cam\_0160e622-fd69-4d74-9e9b-72a470a21664.xml'
-- 'image.wia\_camera\_minidriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c6289dcf-9ab2-45c3-b7f6-fb48161c726c
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Camera Minidriver

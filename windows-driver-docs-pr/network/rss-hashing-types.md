@@ -2,7 +2,15 @@
 title: RSS Hashing Types
 description: RSS Hashing Types
 ms.assetid: 21ea384c-5fe2-46c1-9e01-30513f505672
-keywords: ["receive-side scaling WDK networking , hash", "RSS WDK networking , hash", "hash WDK RSS"]
+keywords:
+- receive-side scaling WDK networking , hash
+- RSS WDK networking , hash
+- hash WDK RSS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # RSS Hashing Types

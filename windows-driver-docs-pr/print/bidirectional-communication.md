@@ -2,14 +2,16 @@
 title: Bidirectional Communication
 author: windows-driver-content
 description: Bidirectional Communication
-MS-HAID:
-- 'autocfg\_888f7078-e2a7-4b5c-8152-55b8ed0d2bc3.xml'
-- 'print.bidirectional\_communication'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c88f5f43-4a14-4f63-9f17-b6680fc0d645
-keywords: ["printer configuration WDK , bidirectional communication", "bidirectional communication WDK print", "bidi communication WDK print"]
+keywords:
+- printer configuration WDK , bidirectional communication
+- bidirectional communication WDK print
+- bidi communication WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bidirectional Communication

@@ -2,7 +2,16 @@
 title: Handling the Reception of Non-Standard Packets and Messages
 description: Handling the Reception of Non-Standard Packets and Messages
 ms.assetid: d1e17c40-be11-4988-bc88-cf8bd6fd1515
-keywords: ["data I/O WDK TCP chimney offload , non-standard packets and messsages", "I/O WDK TCP chimney offload , non-standard packets and messages", "non-standard packets and messages WDK TCP chimney offload", "received data processing WDK TCP chimney offload , non-standard packets and messages"]
+keywords:
+- data I/O WDK TCP chimney offload , non-standard packets and messsages
+- I/O WDK TCP chimney offload , non-standard packets and messages
+- non-standard packets and messages WDK TCP chimney offload
+- received data processing WDK TCP chimney offload , non-standard packets and messages
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling the Reception of Non-Standard Packets and Messages

@@ -2,14 +2,17 @@
 title: Public Interfaces
 author: windows-driver-content
 description: Public Interfaces
-MS-HAID:
-- 'splarch\_4c35dbb6-1673-4aa7-a29e-204eab9785cb.xml'
-- 'print.public\_interfaces'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3913c921-dda2-404c-b608-add9d74df21d
-keywords: ["spooler notification WDK print , public interfaces", "print spooler notification WDK , public interfaces", "public interfaces WDK spooler notification", "interfaces WDK spooler notification"]
+keywords:
+- spooler notification WDK print , public interfaces
+- print spooler notification WDK , public interfaces
+- public interfaces WDK spooler notification
+- interfaces WDK spooler notification
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Public Interfaces

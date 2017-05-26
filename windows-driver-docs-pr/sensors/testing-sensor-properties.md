@@ -2,19 +2,18 @@
 title: Testing Sensor Data Retrieval
 author: windows-driver-content
 description: The Sensor Diagnostic Tool lets you test your driver and firmware support for data retrieval by invoking properties in the Sensor API.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: A4473253-D4AC-4374-9C5D-919B597FE2F0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Testing Sensor Data Retrieval
 
 
 The Sensor Diagnostic Tool lets you test your driver and firmware support for data retrieval by invoking properties in the Sensor API.
-
-**Note**  The Sensor Diagnostic Tool is acceptable for testing on Windows 8.1 and earlier operating systems. The tool is now deprecated for Windows 10, so for sensor driver testing and diagnostics on Windows 10 and later operating systems, please use the SensorInfo App from the Windows Store.
-
  
 
 ## Configuring the Sensor Diagnostic Tool to retrieve a single sensor reading
@@ -22,7 +21,7 @@ The Sensor Diagnostic Tool lets you test your driver and firmware support for da
 
 The following procedure describes how to configure the diagnostic tool to retrieve an accelerometer reading.
 
-1.  Expand the node for the accelerometer in the left Sensors pane and check the **CONNECTED** box.
+1.  Expand the node for the accelerometer in the left Sensors pane. Check the **CONNECTED** box and uncheck the **SUBSCRIBED** box.
 2.  Rotate the accelerometer and hold in place.
 3.  Click the **Refresh Data/Execute** button and view the retrieved data in the Data section of the right pane.
 
@@ -31,7 +30,7 @@ The Data section of the right pane contains the updated data for your sensor. Th
 ## Configuring the Sensor Diagnostic Tool for synchronous polling
 
 
-The following procedure describes how to configure the diagnostic tool to conduct synchronous polling of the accelerometer.
+The following procedure describes how to configure the diagnostic tool to conduct synchronous polling of the accelerometer. In other words, this allows you to get a data reading from the sensor at a regular interval.
 
 1.  Expand the node for the accelerometer in the left Sensors pane; check the **CONNECTED** box and uncheck the **SUBSCRIBED** box.
 2.  In the **Automatic Data Request** textbox, enter your desired polling interval in milliseconds. (Note that an interval of zero disables synchronous polling.)

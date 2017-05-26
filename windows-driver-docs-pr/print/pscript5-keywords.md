@@ -2,13 +2,12 @@
 title: Pscript5 Keywords
 author: windows-driver-content
 description: Pscript5 Keywords
-MS-HAID:
-- 'drvarch\_aa0ee163-92fe-408c-ab96-808a81ce1c3c.xml'
-- 'print.pscript5\_keywords'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a5f4384a-8d78-4dc6-969b-f7a1fa6cb5e7
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pscript5 Keywords

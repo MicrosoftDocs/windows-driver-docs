@@ -2,7 +2,21 @@
 title: Converting the Direct3D Fixed-Function State
 description: Converting the Direct3D Fixed-Function State
 ms.assetid: bc93d65e-ac16-470d-8c52-db8b1cc74456
-keywords: ["user-mode display drivers WDK Windows Vista , convert Direct3D fixed-function state", "fixed-function state conversions WDK display", "converting Direct3D fixed-function state", "converters WDK Windows Vista Direct3D", "pixel shader converters WDK display", "vertex shader converters WDK display", "shader converters WDK display", "texture stage states WDK display", "render states WDK display"]
+keywords:
+- user-mode display drivers WDK Windows Vista , convert Direct3D fixed-function state
+- fixed-function state conversions WDK display
+- converting Direct3D fixed-function state
+- converters WDK Windows Vista Direct3D
+- pixel shader converters WDK display
+- vertex shader converters WDK display
+- shader converters WDK display
+- texture stage states WDK display
+- render states WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Converting the Direct3D Fixed-Function State

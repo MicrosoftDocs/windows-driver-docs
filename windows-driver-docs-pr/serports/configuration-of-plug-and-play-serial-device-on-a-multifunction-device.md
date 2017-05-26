@@ -2,14 +2,20 @@
 title: Configure PnP Multifunction Serial Device with 16550 UART Interface
 author: windows-driver-content
 description: Configuration of Plug and Play Serial Device on a Multifunction Device that Requires a 16550 UART-Compatible Interface
-MS-HAID:
-- 'sseovr\_016ede5f-97a2-4196-a8dc-b3b56fa88a78.xml'
-- 'serports.configuration\_of\_plug\_and\_play\_serial\_device\_on\_a\_multifunction\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 63588ac9-4c87-421d-8da3-3e950cbd466c
-keywords: ["Plug and Play serial devices WDK", "serial devices WDK , Plug and Play", "universal asynchronous receiver-transmitters WDK serial devices", "UART WDK serial devices", "16550 UART-compatible interfaces WDK serial devices", "multifunction devices", "multifunction devices WDK serial devices"]
+keywords:
+- Plug and Play serial devices WDK
+- serial devices WDK , Plug and Play
+- universal asynchronous receiver-transmitters WDK serial devices
+- UART WDK serial devices
+- 16550 UART-compatible interfaces WDK serial devices
+- multifunction devices
+- multifunction devices WDK serial devices
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configuration of Plug and Play Serial Device on a Multifunction Device that Requires a 16550 UART-Compatible Interface

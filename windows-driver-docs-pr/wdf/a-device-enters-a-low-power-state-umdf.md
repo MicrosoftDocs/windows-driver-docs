@@ -3,13 +3,20 @@ title: A Device Enters a Low-Power State
 author: windows-driver-content
 description: A Device Enters a Low-Power State
 ms.assetid: c3697272-75ec-4de5-b123-3d1c68d2044e
-keywords: ["power management scenarios WDK UMDF, entering a low-power state", "low-power state scenario WDK UMDF"]
+keywords:
+- power management scenarios WDK UMDF, entering a low-power state
+- low-power state scenario WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # A Device Enters a Low-Power State
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 A device leaves its working (D0) state and enters a low-power state if one of the following occurs:
 

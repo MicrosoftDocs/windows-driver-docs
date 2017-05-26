@@ -2,14 +2,14 @@
 title: Connecting to a Parallel Device
 author: windows-driver-content
 description: Connecting to a Parallel Device
-MS-HAID:
-- 'vspd\_95afbad1-a97d-4916-814c-129b107a3e0c.xml'
-- 'parports.connecting\_to\_a\_parallel\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c05a1a1e-308a-4b9f-af43-761c4c14d6af
-keywords: ["parallel devices WDK , connections"]
+keywords:
+- parallel devices WDK , connections
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Connecting to a Parallel Device

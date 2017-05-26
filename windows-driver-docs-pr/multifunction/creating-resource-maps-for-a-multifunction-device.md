@@ -2,14 +2,16 @@
 title: Creating Resource Maps for a Multifunction Device
 author: windows-driver-content
 description: Creating Resource Maps for a Multifunction Device
-MS-HAID:
-- 'mf-supp\_412d6527-52b3-4e22-93ff-e84a25d11fce.xml'
-- 'multifunc.creating\_resource\_maps\_for\_a\_multifunction\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 332eef11-4056-4fe0-87ed-4305c091bab1
-keywords: ["multifunction devices WDK , resource maps", "resource maps WDK multifunction devices", "child function resource maps WDK"]
+keywords:
+- multifunction devices WDK , resource maps
+- resource maps WDK multifunction devices
+- child function resource maps WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Resource Maps for a Multifunction Device

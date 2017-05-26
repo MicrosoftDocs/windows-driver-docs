@@ -2,6 +2,11 @@
 title: Port Policies
 description: Port Policies
 ms.assetid: F23B4A2F-4E33-4A8F-AF57-E4805DE48C15
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Port Policies

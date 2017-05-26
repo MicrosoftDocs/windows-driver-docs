@@ -2,14 +2,17 @@
 title: Plug and Play for Printers
 author: windows-driver-content
 description: Plug and Play for Printers
-MS-HAID:
-- 'prtinst\_e089e54d-082d-4933-9400-23c157033260.xml'
-- 'print.plug\_and\_play\_for\_printers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 60d3afa7-e234-4e7b-940d-f625037c8486
-keywords: ["installing drivers WDK printer , Plug and Play", "printer driver installations WDK , Plug and Play", "PnP WDK print", "Plug and Play WDK print"]
+keywords:
+- installing drivers WDK printer , Plug and Play
+- printer driver installations WDK , Plug and Play
+- PnP WDK print
+- Plug and Play WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Plug and Play for Printers

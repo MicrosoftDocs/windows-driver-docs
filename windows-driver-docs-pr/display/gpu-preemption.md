@@ -2,6 +2,11 @@
 title: GPU preemption
 description: A new GPU preemption model is available starting with Windows 8.
 ms.assetid: 9382786E-2E1E-408F-A9E9-04EEEA1CC34A
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GPU preemption

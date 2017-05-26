@@ -1,15 +1,26 @@
 ---
-title: Canceling I/O Requests
+title: Canceling I/O Requests in UMDF
 author: windows-driver-content
-description: Canceling I/O Requests
+description: Canceling I/O Requests in UMDF
 ms.assetid: 4f69903b-00ef-4b47-a564-aaa7d076481b
-keywords: ["I/O requests WDK UMDF , canceling", "request processing WDK UMDF , canceling requests", "canceling I/O requests WDK UMDF", "in-flight requests WDK UMDF", "I/O requests WDK UMDF , states", "request processing WDK UMDF , states"]
+keywords:
+- I/O requests WDK UMDF , canceling
+- request processing WDK UMDF , canceling requests
+- canceling I/O requests WDK UMDF
+- in-flight requests WDK UMDF
+- I/O requests WDK UMDF , states
+- request processing WDK UMDF , states
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Canceling I/O Requests
+# Canceling I/O Requests in UMDF
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 A device's in-progress I/O operation (such as a request to read several blocks from a disk) can be canceled by an application, the system, or a driver. If a device's I/O operation is canceled, the I/O Manager attempts to cancel all unprocessed I/O requests that are associated with the I/O operation. The device's drivers can register to be notified when the I/O Manager attempts to cancel I/O requests, and the drivers can cancel the requests that they own by [completing](completing-i-o-requests.md) them with a completion status of HRESULT\_FROM\_WIN32(ERROR\_OPERATION\_ABORTED).
 

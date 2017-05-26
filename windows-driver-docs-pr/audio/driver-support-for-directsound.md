@@ -2,7 +2,17 @@
 title: Driver Support for DirectSound
 description: Driver Support for DirectSound
 ms.assetid: a32a2a01-4ecd-485f-8293-402a0bcc8336
-keywords: ["WDM audio drivers WDK , DirectSound", "audio drivers WDK , DirectSound", "DirectSound WDK audio", "DirectSound WDK audio , about DirectSound", "miniport drivers WDK audio , DirectSound"]
+keywords:
+- WDM audio drivers WDK , DirectSound
+- audio drivers WDK , DirectSound
+- DirectSound WDK audio
+- DirectSound WDK audio , about DirectSound
+- miniport drivers WDK audio , DirectSound
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Support for DirectSound

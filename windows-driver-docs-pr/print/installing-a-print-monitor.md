@@ -2,14 +2,18 @@
 title: Installing a Print Monitor
 author: windows-driver-content
 description: Installing a Print Monitor
-MS-HAID:
-- 'provider\_59183c6d-e903-4803-b0c2-f27467eac18b.xml'
-- 'print.installing\_a\_print\_monitor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2ab993fd-647b-40aa-981c-1bc270ec79a4
-keywords: ["print monitors WDK , installing", "installing print monitors WDK", "INF files WDK print , print monitors", "language monitors WDK print , installing", "port monitors WDK print , installing"]
+keywords:
+- print monitors WDK , installing
+- installing print monitors WDK
+- INF files WDK print , print monitors
+- language monitors WDK print , installing
+- port monitors WDK print , installing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing a Print Monitor

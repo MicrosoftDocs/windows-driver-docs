@@ -2,14 +2,18 @@
 title: Minidriver-Supplied Callbacks
 author: windows-driver-content
 description: Minidriver-Supplied Callbacks
-MS-HAID:
-- 'di\_77664f3f-7e91-47bf-ad6d-f6b10e072b84.xml'
-- 'hid.minidriver\_supplied\_callbacks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: df5bbc1c-988f-4e07-9783-4f380f85c2b6
-keywords: ["joysticks WDK HID , callbacks", "virtual joystick drivers WDK HID , callbacks", "VJoyD WDK HID , callbacks", "callbacks WDK joysticks", "polling WDK joysticks"]
+keywords:
+- joysticks WDK HID , callbacks
+- virtual joystick drivers WDK HID , callbacks
+- VJoyD WDK HID , callbacks
+- callbacks WDK joysticks
+- polling WDK joysticks
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Minidriver-Supplied Callbacks

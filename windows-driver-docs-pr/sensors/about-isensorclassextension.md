@@ -2,13 +2,12 @@
 title: About ISensorClassExtension
 author: windows-driver-content
 description: About ISensorClassExtension
-MS-HAID:
-- 'Sensor\_DG\_Overview\_02c75653-460f-4a62-af75-fd070b5f3acd.xml'
-- 'sensors.about\_isensorclassextension'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1f55f28a-796a-40e5-9995-e6a28761b9a4
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # About ISensorClassExtension

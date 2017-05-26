@@ -2,10 +2,12 @@
 title: Airplane mode radio management
 author: windows-driver-content
 description: Starting with Windows 8, the Windows operating system provides support via HID, for airplane mode radio management controls.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5B0662B0-CBD3-4F31-B98F-6BC8184574DB
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Airplane mode radio management

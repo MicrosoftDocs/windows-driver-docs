@@ -2,7 +2,17 @@
 title: Points to Consider when Restoring Complex Flipping Chains
 description: Points to Consider when Restoring Complex Flipping Chains
 ms.assetid: f368576f-a0a0-4def-888d-abf4fea8f6fb
-keywords: ["context WDK Direct3D , D3dCreateSurfaceEx", "D3dCreateSurfaceEx", "flipping chain WDK Direct3D", "Z-buffer WDK Direct3D", "restoring flipping chains WDK Direct3D"]
+keywords:
+- context WDK Direct3D , D3dCreateSurfaceEx
+- D3dCreateSurfaceEx
+- flipping chain WDK Direct3D
+- Z-buffer WDK Direct3D
+- restoring flipping chains WDK Direct3D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Points to Consider when Restoring Complex Flipping Chains

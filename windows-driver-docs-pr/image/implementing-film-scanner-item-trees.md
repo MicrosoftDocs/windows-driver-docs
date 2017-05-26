@@ -2,13 +2,12 @@
 title: Implementing Film Scanner Item Trees
 author: windows-driver-content
 description: Implementing Film Scanner Item Trees
-MS-HAID:
-- 'WIA\_scanner\_tree\_0e3bfc70-edda-4be6-9b10-6fc8716c9413.xml'
-- 'image.implementing\_film\_scanner\_item\_trees'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8ae8741d-9444-49bf-b38d-e955a285b198
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing Film Scanner Item Trees

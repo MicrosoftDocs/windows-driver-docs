@@ -2,7 +2,14 @@
 title: Sample Metadata Response Output
 description: Sample Metadata Response Output
 ms.assetid: e31cdc1f-21eb-4121-9618-2d8e3d6775dc
-keywords: ["WSDBIT tool WDK , sample", "WSDAPI Basic Interoperability Tool WDK , sample"]
+keywords:
+- WSDBIT tool WDK , sample
+- WSDAPI Basic Interoperability Tool WDK , sample
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Metadata Response Output

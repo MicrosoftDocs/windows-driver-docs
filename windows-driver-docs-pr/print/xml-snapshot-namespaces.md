@@ -2,14 +2,18 @@
 title: XML Snapshot Namespaces
 author: windows-driver-content
 description: XML Snapshot Namespaces
-MS-HAID:
-- 'gplfiles\_ea8dbbd1-fc52-4f87-b31a-325db4a19ca4.xml'
-- 'print.xml\_snapshot\_namespaces'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 723f1cfd-633c-4f87-b85f-5ccee45a8c4e
-keywords: ["GDL WDK , namespaces", "SnapshotRoot element WDK GDL", "snapshots WDK GDL , structure", "snapshots WDK GDL , namespaces", "namespaces WDK GDL"]
+keywords:
+- GDL WDK , namespaces
+- SnapshotRoot element WDK GDL
+- snapshots WDK GDL , structure
+- snapshots WDK GDL , namespaces
+- namespaces WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XML Snapshot Namespaces

@@ -2,13 +2,12 @@
 title: LDAP and Active Directory Queries
 author: windows-driver-content
 description: LDAP and Active Directory Queries
-MS-HAID:
-- 'dsm\_des\_tut\_3855b268-e97b-4734-b730-b1148ee066fa.xml'
-- 'image.ldap\_and\_active\_directory\_queries'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 866c603e-6265-47a2-b78a-c64a8cb1e553
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # LDAP and Active Directory Queries

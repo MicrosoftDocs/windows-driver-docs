@@ -2,14 +2,14 @@
 title: Option Attributes for the Halftone Feature
 author: windows-driver-content
 description: Option Attributes for the Halftone Feature
-MS-HAID:
-- 'nt5gpd\_615b85fe-9f93-405c-92de-cfc639ae31dc.xml'
-- 'print.option\_attributes\_for\_the\_halftone\_feature'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a188908a-ddf7-4b4d-a46d-e3550ffb0418
-keywords: ["Halftone Feature"]
+keywords:
+- Halftone Feature
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Option Attributes for the Halftone Feature

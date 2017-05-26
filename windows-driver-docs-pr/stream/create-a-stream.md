@@ -2,14 +2,16 @@
 title: Create a Stream
 author: windows-driver-content
 description: Create a Stream
-MS-HAID:
-- 'avcsguide\_dbb9d67a-4e30-40d7-b2aa-27b1fe6b3fbb.xml'
-- 'stream.create\_a\_stream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9984275f-7ead-4df2-aa98-a3b4e5e85ae0
-keywords: ["Avcstrm.sys streaming filter driver WDK , creating streams", "stream creation WDK AV/C streaming", "contexts WDK AV/C streaming"]
+keywords:
+- Avcstrm.sys streaming filter driver WDK , creating streams
+- stream creation WDK AV/C streaming
+- contexts WDK AV/C streaming
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Create a Stream

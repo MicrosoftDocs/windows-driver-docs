@@ -1,10 +1,12 @@
 ---
 title: DeviceCompanionApplications
 description: DeviceCompanionApplications
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3e0b21a8-aa1f-4f7a-84fc-447bba172794
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DeviceCompanionApplications

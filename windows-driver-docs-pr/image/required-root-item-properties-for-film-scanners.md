@@ -2,13 +2,12 @@
 title: Required Root Item Properties for Film Scanners
 author: windows-driver-content
 description: Required Root Item Properties for Film Scanners
-MS-HAID:
-- 'WIA\_scanner\_tree\_2ca6459b-b243-4501-83b4-430cf549dddd.xml'
-- 'image.required\_root\_item\_properties\_for\_film\_scanners'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bd0f2fa6-a7fd-4f05-87fe-bfc4175aacea
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Required Root Item Properties for Film Scanners

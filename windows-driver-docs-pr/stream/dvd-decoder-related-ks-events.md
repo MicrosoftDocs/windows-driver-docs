@@ -2,14 +2,17 @@
 title: DVD Decoder Related KS Events
 author: windows-driver-content
 description: DVD Decoder Related KS Events
-MS-HAID:
-- 'dvd-design\_65149264-702d-4668-82c0-5eb54d337b2a.xml'
-- 'stream.dvd\_decoder\_related\_ks\_events'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 19fd2c88-72f4-4742-8c96-74be250dd59d
-keywords: ["DVD decoder minidrivers WDK , KS events", "decoder minidrivers WDK DVD , KS events", "KS events WDK DVD decoder", "events WDK DVD decoder"]
+keywords:
+- DVD decoder minidrivers WDK , KS events
+- decoder minidrivers WDK DVD , KS events
+- KS events WDK DVD decoder
+- events WDK DVD decoder
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DVD Decoder Related KS Events

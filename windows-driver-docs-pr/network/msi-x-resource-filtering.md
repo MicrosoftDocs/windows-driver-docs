@@ -2,7 +2,16 @@
 title: MSI-X Resource Filtering
 description: MSI-X Resource Filtering
 ms.assetid: ccc6aac0-7c89-4e48-ac53-9e3a72965a43
-keywords: ["MSI-X WDK networking , resource-requirements filter function", "message-signaled interrupts WDK networking , resource-requirements filter function", "MSIs WDK networking , resource-requirements filter function", "resource-requirements filter function WDK net"]
+keywords:
+- MSI-X WDK networking , resource-requirements filter function
+- message-signaled interrupts WDK networking , resource-requirements filter function
+- MSIs WDK networking , resource-requirements filter function
+- resource-requirements filter function WDK net
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MSI-X Resource Filtering

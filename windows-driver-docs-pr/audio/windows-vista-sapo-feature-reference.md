@@ -2,7 +2,16 @@
 title: Windows Vista sAPO Feature Reference
 description: Windows Vista sAPO Feature Reference
 ms.assetid: bafbc56c-53a3-41a5-b077-3289967daf87
-keywords: ["sAPO WDK", "speakerfill WDK", "swap sample WDK audio", "compress sample WDK audio"]
+keywords:
+- sAPO WDK
+- speakerfill WDK
+- swap sample WDK audio
+- compress sample WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Vista sAPO Feature Reference

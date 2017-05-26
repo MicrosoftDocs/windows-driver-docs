@@ -2,14 +2,16 @@
 title: Print Capabilities Support in GDI-based, Monolithic Print Drivers
 author: windows-driver-content
 description: Print Capabilities Support in GDI-based, Monolithic Print Drivers
-MS-HAID:
-- 'drvarch\_4a81b62f-6def-46eb-815b-2bbe348940cf.xml'
-- 'print.print\_capabilities\_support\_in\_gdi\_based\_\_monolithic\_print\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4b8116a8-7aee-44cb-9c9d-560662b61073
-keywords: ["Print Capabilities WDK , GDI-based monolithic print drivers", "GDI-based monolithic print drivers WDK", "monolithic print drivers WDK"]
+keywords:
+- Print Capabilities WDK , GDI-based monolithic print drivers
+- GDI-based monolithic print drivers WDK
+- monolithic print drivers WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Capabilities Support in GDI-based, Monolithic Print Drivers

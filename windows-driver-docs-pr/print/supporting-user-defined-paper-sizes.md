@@ -2,14 +2,17 @@
 title: Supporting User-Defined Paper Sizes
 author: windows-driver-content
 description: Supporting User-Defined Paper Sizes
-MS-HAID:
-- 'nt5gpd\_c4027b04-9e7f-4fb9-8990-e7546eb632e8.xml'
-- 'print.supporting\_user\_defined\_paper\_sizes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f9c0b759-687e-4d92-80ce-330e30cbc41c
-keywords: ["user-defined paper sizes WDK Unidrv", "customized paper sizes WDK Unidrv", "largest paper size WDK Unidrv", "margins WDK paper size"]
+keywords:
+- user-defined paper sizes WDK Unidrv
+- customized paper sizes WDK Unidrv
+- largest paper size WDK Unidrv
+- margins WDK paper size
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting User-Defined Paper Sizes

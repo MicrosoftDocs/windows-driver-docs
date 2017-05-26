@@ -2,13 +2,12 @@
 title: WIA Driver Fundamentals
 author: windows-driver-content
 description: WIA Driver Fundamentals
-MS-HAID:
-- 'WIA\_arch\_e2149437-d42c-4a33-90e6-2463fee7781e.xml'
-- 'image.wia\_driver\_fundamentals'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 374388eb-ca2e-47da-aa0a-d90fdd00c665
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Driver Fundamentals

@@ -2,13 +2,12 @@
 title: Cancellation of Data Transfers in Windows Vista
 author: windows-driver-content
 description: Cancellation of Data Transfers in Windows Vista
-MS-HAID:
-- 'WIA\_arch\_3ab83687-507c-44dc-be8e-03f650a01419.xml'
-- 'image.cancellation\_of\_data\_transfers\_in\_windows\_vista'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0cdc02bf-23fe-4122-8d5f-f42c3c07da8b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Cancellation of Data Transfers in Windows Vista

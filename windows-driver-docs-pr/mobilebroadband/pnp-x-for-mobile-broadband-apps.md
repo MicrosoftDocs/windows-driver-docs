@@ -1,10 +1,12 @@
 ---
 title: PnP-X for mobile broadband apps
 description: PnP-X for mobile broadband apps
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f8f4756e-00b6-4778-9d67-73653865cf54
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PnP-X for mobile broadband apps

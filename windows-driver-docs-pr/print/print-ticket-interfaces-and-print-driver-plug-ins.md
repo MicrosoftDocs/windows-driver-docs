@@ -2,14 +2,15 @@
 title: Print Ticket Interfaces and Print Driver Plug-ins
 author: windows-driver-content
 description: Print Ticket Interfaces and Print Driver Plug-ins
-MS-HAID:
-- 'drvarch\_f2856f17-824c-4109-aabe-99bdd01a8fb2.xml'
-- 'print.print\_ticket\_interfaces\_and\_print\_driver\_plug\_ins'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5c5237a1-f4ff-42f9-8992-753743fd5e15
-keywords: ["IPrintTicketProvider", "IPrintOemPrintTicketProvider"]
+keywords:
+- IPrintTicketProvider
+- IPrintOemPrintTicketProvider
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Ticket Interfaces and Print Driver Plug-ins

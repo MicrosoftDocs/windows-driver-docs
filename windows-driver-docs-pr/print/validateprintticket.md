@@ -1,18 +1,18 @@
 ---
-title: ValidatePrintTicket
+title: ValidatePrintTicket overview
 author: windows-driver-content
-description: ValidatePrintTicket
-MS-HAID:
-- 'drvarch\_41203c19-dfde-447d-975d-b0736016bfda.xml'
-- 'print.validateprintticket'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+description: Each plug-in calls the IPrintOemPrintTicketProvider::ValidatePrintTicket method to validate the PrintTicket.
 ms.assetid: 3a4cf946-c931-4f71-9f1a-4efec4dfe866
-keywords: ["ValidatePrintTicket"]
+keywords:
+- ValidatePrintTicket
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# ValidatePrintTicket
+# ValidatePrintTicket overview
 
 
 Unidrv and PScript5 print drivers validate the Print Ticket by using the sequence that the following illustration and list show.

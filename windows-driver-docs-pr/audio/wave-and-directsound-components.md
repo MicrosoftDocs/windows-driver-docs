@@ -2,7 +2,25 @@
 title: Wave and DirectSound Components
 description: Wave and DirectSound Components
 ms.assetid: df00fcaf-49b0-4af1-a12f-bd3fcb9e025d
-keywords: ["wave components WDK audio", "wave streams WDK audio", "DirectSound WDK audio , components", "user-mode components WDK audio", "kernel-mode components WDK audio", "wave rendering WDK audio", "wave capturing WDK audio", "render components WDK audio", "capture components WDK audio", "wave-rendering applications WDK audio", "wave-capturing applications WDK audio", "wave-out applications WDK audio", "wave-in applications WDK audio"]
+keywords:
+- wave components WDK audio
+- wave streams WDK audio
+- DirectSound WDK audio , components
+- user-mode components WDK audio
+- kernel-mode components WDK audio
+- wave rendering WDK audio
+- wave capturing WDK audio
+- render components WDK audio
+- capture components WDK audio
+- wave-rendering applications WDK audio
+- wave-capturing applications WDK audio
+- wave-out applications WDK audio
+- wave-in applications WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wave and DirectSound Components

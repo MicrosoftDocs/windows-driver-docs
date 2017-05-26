@@ -2,14 +2,15 @@
 title: Printer Configuration Commands
 author: windows-driver-content
 description: Printer Configuration Commands
-MS-HAID:
-- 'nt5gpd\_fc1a0192-9a95-42cc-afec-322ecf0a4f71.xml'
-- 'print.printer\_configuration\_commands'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ed5102e7-1651-4188-8042-f0d544a54a1d
-keywords: ["printer commands WDK Unidrv , configuration", "configuration commands WDK Unidrv"]
+keywords:
+- printer commands WDK Unidrv , configuration
+- configuration commands WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Configuration Commands

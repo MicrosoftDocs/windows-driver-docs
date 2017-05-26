@@ -2,13 +2,12 @@
 title: Data Transfers
 author: windows-driver-content
 description: Data Transfers
-MS-HAID:
-- 'WIA\_arch\_fce93e3a-5d61-4305-be1f-1e0f2d335ad1.xml'
-- 'image.data\_transfers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 55ef8125-40d3-44f3-8520-cc3a0912c3d2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Data Transfers

@@ -2,7 +2,18 @@
 title: CoNDIS TAPI Shutdown
 description: CoNDIS TAPI Shutdown
 ms.assetid: 97baf489-9a9b-48c8-b0f8-79beea33bc38
-keywords: ["CoNDIS WAN drivers WDK networking , TAPI services", "telephonic services WDK WAN , shutdown", "CoNDIS TAPI WDK networking , shutdown", "CoNDIS TAPI WDK networking , closing operations", "shutdown WDK networking", "closing CoNDIS TAPI operations calls WDK CoNDIS WAN"]
+keywords:
+- CoNDIS WAN drivers WDK networking , TAPI services
+- telephonic services WDK WAN , shutdown
+- CoNDIS TAPI WDK networking , shutdown
+- CoNDIS TAPI WDK networking , closing operations
+- shutdown WDK networking
+- closing CoNDIS TAPI operations calls WDK CoNDIS WAN
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CoNDIS TAPI Shutdown

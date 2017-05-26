@@ -3,13 +3,20 @@ title: Framework Objects
 author: windows-driver-content
 description: Framework Objects
 ms.assetid: bd9ec812-205d-4f9a-b85b-4e3a2f7556bd
-keywords: ["UMDF objects WDK , listed", "framework objects WDK UMDF , listed"]
+keywords:
+- UMDF objects WDK , listed
+- framework objects WDK UMDF , listed
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Framework Objects
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The following table provides basic information about each framework object, links to the object's interface, and links to more information about the core framework objects.
 

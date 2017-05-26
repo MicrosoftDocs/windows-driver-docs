@@ -2,14 +2,17 @@
 title: BidiFiles Entry in a Minidriver's INI File
 author: windows-driver-content
 description: BidiFiles Entry in a Minidriver's INI File
-MS-HAID:
-- 'autocfg\_f0b0b793-2613-499c-8a39-74fe8ccf5173.xml'
-- 'print.bidifiles\_entry\_in\_a\_minidriver\_s\_ini\_file'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 953a29d2-f778-410e-bc8a-a09e294f2473
-keywords: ["BidiFiles section", "INF files WDK print , bidi extension file information", "bidi extension files WDK printer autoconfig", "in-box autoconfiguration support WDK printer , bidi extension files"]
+keywords:
+- BidiFiles section
+- INF files WDK print , bidi extension file information
+- bidi extension files WDK printer autoconfig
+- in-box autoconfiguration support WDK printer , bidi extension files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # BidiFiles Entry in a Minidriver's INI File

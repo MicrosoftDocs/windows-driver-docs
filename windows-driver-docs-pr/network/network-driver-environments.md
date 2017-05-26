@@ -2,7 +2,15 @@
 title: Network Driver Environments
 description: Network Driver Environments
 ms.assetid: 5336bdc5-bf91-473a-a97d-f06b27eae5d0
-keywords: ["network drivers WDK , driver environment", "driver environments WDK networking", "environments WDK networking"]
+keywords:
+- network drivers WDK , driver environment
+- driver environments WDK networking
+- environments WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network Driver Environments

@@ -2,13 +2,12 @@
 title: Simple Duplex-Capable Document Feeder
 author: windows-driver-content
 description: Simple Duplex-Capable Document Feeder
-MS-HAID:
-- 'WIA\_scanner\_tree\_d8a16762-0ff1-4d34-8626-a9dd1e2cab3d.xml'
-- 'image.simple\_duplex\_capable\_document\_feeder'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0807f02a-5bbf-4ed1-b381-63e1f37a0e2e
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Simple Duplex-Capable Document Feeder

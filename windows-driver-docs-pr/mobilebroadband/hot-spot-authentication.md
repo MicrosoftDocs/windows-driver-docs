@@ -1,10 +1,12 @@
 ---
 title: Hot spot authentication
 description: Hot spot authentication
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6de07795-1ddb-43ff-97d9-b3a938d5a149
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hot spot authentication

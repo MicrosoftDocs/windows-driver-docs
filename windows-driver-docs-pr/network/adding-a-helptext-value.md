@@ -2,7 +2,14 @@
 title: Adding a HelpText Value
 description: Adding a HelpText Value
 ms.assetid: fb29852c-5d47-4660-9fe4-dc8ae05449ff
-keywords: ["add-registry-sections WDK networking , HelpText values", "HelpText values WDK networking"]
+keywords:
+- add-registry-sections WDK networking , HelpText values
+- HelpText values WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding a HelpText Value

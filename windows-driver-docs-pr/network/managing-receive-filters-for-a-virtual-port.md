@@ -2,6 +2,11 @@
 title: Managing the Receive Filters for a Virtual Port
 description: Managing the Receive Filters for a Virtual Port
 ms.assetid: 6FDBB159-3094-42F7-95EB-695B64BD4342
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing the Receive Filters for a Virtual Port

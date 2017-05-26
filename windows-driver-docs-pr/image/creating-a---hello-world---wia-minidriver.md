@@ -2,13 +2,12 @@
 title: Creating a 'Hello World' WIA Minidriver
 author: windows-driver-content
 description: Creating a 'Hello World' WIA Minidriver
-MS-HAID:
-- 'WIA\_db\_hello\_4ec19070-996b-4c7b-82c9-45857d104ca3.xml'
-- 'image.creating\_a\_\_\_hello\_world\_\_\_wia\_minidriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 074da2ff-bc60-48a9-b2ff-83f070bd5351
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a 'Hello World' WIA Minidriver

@@ -1,11 +1,13 @@
 ---
 title: HID Clients Supported in Windows
 author: windows-driver-content
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: E6584286-6BF1-40C7-83C1-D07077B13F3E
 description: 
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # HID Clients Supported in Windows

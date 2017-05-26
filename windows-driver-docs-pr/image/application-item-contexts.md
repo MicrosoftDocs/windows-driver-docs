@@ -2,13 +2,12 @@
 title: Application Item Contexts
 author: windows-driver-content
 description: Application Item Contexts
-MS-HAID:
-- 'WIA\_arch\_aa3ad280-5f22-4062-a0e4-46c6abc4970b.xml'
-- 'image.application\_item\_contexts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d11b1750-999f-411c-9e83-6d2b20ce65db
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Application Item Contexts

@@ -1,10 +1,12 @@
 ---
 title: Get a code signing certificate
 description: Get a code signing certificate
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6CF4111A-C645-40F5-8D45-55F46B3C0740
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Get a code signing certificate
@@ -159,7 +161,7 @@ You must use the same computer and browser to retrieve your certificate.
 
 -   If you’ve already set up a Hardware Dev Center hardware dashboard account and need to renew a certificate, follow the steps in [Update a code signing certificate](https://msdn.microsoft.com/library/windows/hardware/update-a-code-signing-certificate).
 
-## <span id="Code_Signing_FAQ"></span><span id="code_signing_faq"></span><span id="CODE_SIGNING_FAQ"></span>Code Signing FAQ
+## Code Signing FAQ
 
 
 This section provides answers to frequently asked questions about code signing for Windows 10. Additional code signing information is available on the Windows Hardware Certification blog.

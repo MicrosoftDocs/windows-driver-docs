@@ -3,7 +3,14 @@ title: Returning Status from a Minifilter DriverEntry Routine
 author: windows-driver-content
 description: Returning Status from a Minifilter DriverEntry Routine
 ms.assetid: a9448908-f712-43f7-99c0-e02abc1678ed
-keywords: ["status values WDK file system", "returning status WDK file system"]
+keywords:
+- status values WDK file system
+- returning status WDK file system
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Returning Status from a Minifilter DriverEntry Routine

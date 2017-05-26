@@ -2,14 +2,17 @@
 title: Differences between UVC 1.0 and UVC 1.1
 author: windows-driver-content
 description: Differences between UVC 1.0 and UVC 1.1
-MS-HAID:
-- 'uvcds\_b0105c74-a4fe-42ac-acdc-a8d59dae19d5.xml'
-- 'stream.differences\_between\_uvc\_1\_0\_and\_uvc\_1\_1'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5199fc4f-7bc2-4edb-bb52-cd2028756f64
-keywords: ["USB Video Class drivers WDK AVStream , version differences", "USB Video Class drivers WDK AVStream , differences between UVC 1.0 and UVC 1.1", "Video Class drivers WDK USB , differences between UVC 1.0 and UVC 1.1", "UVC drivers WDK AVStream , differences between UVC 1.0 and UVC 1.1"]
+keywords:
+- USB Video Class drivers WDK AVStream , version differences
+- USB Video Class drivers WDK AVStream , differences between UVC 1.0 and UVC 1.1
+- Video Class drivers WDK USB , differences between UVC 1.0 and UVC 1.1
+- UVC drivers WDK AVStream , differences between UVC 1.0 and UVC 1.1
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Differences between UVC 1.0 and UVC 1.1

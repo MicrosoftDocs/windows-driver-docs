@@ -2,13 +2,12 @@
 title: Optional Flatbed Item Properties
 author: windows-driver-content
 description: Optional Flatbed Item Properties
-MS-HAID:
-- 'WIA\_scanner\_tree\_df7533e9-a103-461e-ac1b-4aa4b0c3129c.xml'
-- 'image.optional\_flatbed\_item\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6a4a42f6-7a6e-49da-845b-a857c12c4cfd
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Optional Flatbed Item Properties

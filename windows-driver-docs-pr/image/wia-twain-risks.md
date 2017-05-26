@@ -2,13 +2,12 @@
 title: WIA-TWAIN Risks
 author: windows-driver-content
 description: WIA-TWAIN Risks
-MS-HAID:
-- 'WIA\_drv\_scan\_51c1a3de-521f-40ba-83c4-214ad213ec75.xml'
-- 'image.wia\_twain\_risks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f202a0f6-ceec-4658-a499-b3024f6ebb71
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA-TWAIN Risks

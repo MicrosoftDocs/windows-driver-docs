@@ -2,13 +2,12 @@
 title: Automatically Generated Object Names
 author: windows-driver-content
 description: Automatically Generated Object Names
-MS-HAID:
-- 'WIA\_drv\_cam\_c1cc2533-b78c-4aa7-a385-643e04d4fef8.xml'
-- 'image.automatically\_generated\_object\_names'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bbedfb17-9e71-4253-9e37-0a81d4c91b6b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Automatically Generated Object Names

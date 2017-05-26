@@ -1,10 +1,12 @@
 ---
 title: Create a MobileBroadbandAccount object
 description: Create a MobileBroadbandAccount object
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 631e885f-67bb-4c30-a82f-352c23cc973a
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Create a MobileBroadbandAccount object

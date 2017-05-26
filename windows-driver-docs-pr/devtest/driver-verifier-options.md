@@ -2,16 +2,20 @@
 title: Driver Verifier Options
 description: Driver Verifier Options
 ms.assetid: f251fe07-e68e-4d93-9aa5-9a0bc818756d
-keywords: ["Driver Verifier WDK , options listed", "errors WDK Driver Verifier"]
+keywords:
+- Driver Verifier WDK , options listed
+- errors WDK Driver Verifier
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Verifier Options
 
 
-## <span id="ddk_driver_verifier_options_tools"></span><span id="DDK_DRIVER_VERIFIER_OPTIONS_TOOLS"></span>
-
-
-The following sections describe the optional features of Driver Verifier. See [Standard settings](#standard-options) for the list of options included when you use the standard settings.
+The following sections describe the optional features of Driver Verifier. See [Standard settings](#standard-settings) for the list of options included when you use the standard settings.
 
 -   [Automatic Checks](automatic-checks.md)
 
@@ -113,8 +117,7 @@ The following sections describe the optional features of Driver Verifier. See [S
 
     (Starting with Windows 8.1) This option monitors filter drivers (*extensible switch extensions*) that run inside the [Hyper-V Extensible Switch](https://msdn.microsoft.com/library/windows/hardware/hh598161).
 
-## <span id="standard_options"></span><span id="STANDARD_OPTIONS"></span>Standard settings
-
+## Standard settings
 
 <table>
 <colgroup>
@@ -161,7 +164,7 @@ The following sections describe the optional features of Driver Verifier. See [S
 
  
 
-## <span id="Driver_Verifier_options_that_require_I_O_Verification"></span><span id="driver_verifier_options_that_require_i_o_verification"></span><span id="DRIVER_VERIFIER_OPTIONS_THAT_REQUIRE_I_O_VERIFICATION"></span>Driver Verifier options that require I/O Verification
+## Driver Verifier options that require I/O Verification
 
 
 There are four options that require you to first enable [I/O Verification](i-o-verification.md). If I/O Verification is not enabled, these options are not enabled.

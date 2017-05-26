@@ -2,7 +2,21 @@
 title: Listening for and Accepting Incoming Connections
 description: Listening for and Accepting Incoming Connections
 ms.assetid: 3ec7d6d0-8b8c-4d98-9e2a-e42b52dcd544
-keywords: ["Winsock Kernel WDK networking , incoming connections", "WSK WDK networking , incoming connections", "incoming connections WDK Winsock Kernel", "listening sockets WDK Winsock Kernel", "conditional acceptance WDK Winsock Kernel", "listen operations WDK Winsock Kernel", "SO_CONDITIONAL_ACCEPT", "accepting connections WDK Winsock Kernel", "WskAccept"]
+keywords:
+- Winsock Kernel WDK networking , incoming connections
+- WSK WDK networking , incoming connections
+- incoming connections WDK Winsock Kernel
+- listening sockets WDK Winsock Kernel
+- conditional acceptance WDK Winsock Kernel
+- listen operations WDK Winsock Kernel
+- SO_CONDITIONAL_ACCEPT
+- accepting connections WDK Winsock Kernel
+- WskAccept
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Listening for and Accepting Incoming Connections

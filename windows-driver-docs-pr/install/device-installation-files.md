@@ -2,7 +2,16 @@
 title: Device Installation Files
 description: Device Installation Files
 ms.assetid: a4a53040-ff53-49ba-a4a5-aba5f13119ef
-keywords: ["Device setup WDK device installations , files", "device installations WDK , files", "installing devices WDK , files", "files WDK device installations"]
+keywords:
+- Device setup WDK device installations , files
+- device installations WDK , files
+- installing devices WDK , files
+- files WDK device installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Installation Files

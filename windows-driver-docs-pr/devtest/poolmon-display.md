@@ -2,7 +2,14 @@
 title: PoolMon Display
 description: PoolMon Display
 ms.assetid: 1dee4331-a508-4e7f-b621-4d22f6572aec
-keywords: ["PoolMon WDK , displays", "Memory Pool Monitor WDK , displays"]
+keywords:
+- PoolMon WDK , displays
+- Memory Pool Monitor WDK , displays
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PoolMon Display

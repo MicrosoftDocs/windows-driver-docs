@@ -2,13 +2,12 @@
 title: IStream Data Transfer Driver Changes
 author: windows-driver-content
 description: IStream Data Transfer Driver Changes
-MS-HAID:
-- 'WIA\_arch\_92188404-bb79-49b1-8d19-10706b00a502.xml'
-- 'image.istream\_data\_transfer\_driver\_changes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1c837e4f-8d53-40ed-8f5b-0d525c7dd758
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IStream Data Transfer Driver Changes

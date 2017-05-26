@@ -2,14 +2,22 @@
 title: Array Template Data Types
 author: windows-driver-content
 description: Array Template Data Types
-MS-HAID:
-- 'gplfiles\_c42ca4e9-a1b2-48a5-b5a0-04d23deaaecd.xml'
-- 'print.array\_template\_data\_types'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d6be4ec3-1980-4e55-bd52-5249cd93deb8
-keywords: ["templates WDK GDL , data types", "data types WDK GDL , compound", "ARRAY data type WDK GDL", "ElementType directive WDK GDL", "RequiredDelimiter directive WDK GDL", "OptionalDelimiter directive WDK GDL", "ElementTags directive WDK GDL", "ArraySize directive WDK GDL", "ArrayLabel directive WDK GDL"]
+keywords:
+- templates WDK GDL , data types
+- data types WDK GDL , compound
+- ARRAY data type WDK GDL
+- ElementType directive WDK GDL
+- RequiredDelimiter directive WDK GDL
+- OptionalDelimiter directive WDK GDL
+- ElementTags directive WDK GDL
+- ArraySize directive WDK GDL
+- ArrayLabel directive WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Array Template Data Types

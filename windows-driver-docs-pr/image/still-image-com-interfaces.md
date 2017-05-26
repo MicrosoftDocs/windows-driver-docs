@@ -2,13 +2,12 @@
 title: Still Image COM Interfaces
 author: windows-driver-content
 description: Still Image COM Interfaces
-MS-HAID:
-- 'stillimg\_64fd5340-e343-4d33-8818-d5d528753bc0.xml'
-- 'image.still\_image\_com\_interfaces'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2fd0e340-fbb2-4871-aee8-60008880423f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Still Image COM Interfaces

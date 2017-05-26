@@ -1,8 +1,17 @@
 ---
-title: Specific Requirements for Device Property Page Providers (Co-Installers)
+title: Requirements for Device Property Page Providers (Co-Installers)
 description: Specific Requirements for Device Property Page Providers (Co-Installers)
 ms.assetid: b57beaed-5e5f-499e-b973-532f33b7fb99
-keywords: ["device property pages WDK device installations , DIF_ADDPROPERTYPAGE_ADVANCED", "property pages WDK device installations , DIF_ADDPROPERTYPAGE_ADVANCED", "custom property pages WDK device installations , DIF_ADDPROPERTYPAGE_ADVANCED", "DIF_ADDPROPERTYPAGE_ADVANCED"]
+keywords:
+- device property pages WDK device installations , DIF_ADDPROPERTYPAGE_ADVANCED
+- property pages WDK device installations , DIF_ADDPROPERTYPAGE_ADVANCED
+- custom property pages WDK device installations , DIF_ADDPROPERTYPAGE_ADVANCED
+- DIF_ADDPROPERTYPAGE_ADVANCED
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specific Requirements for Device Property Page Providers (Co-Installers)

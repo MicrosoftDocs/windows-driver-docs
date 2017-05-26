@@ -2,7 +2,14 @@
 title: Winsock Kernel Programming Considerations
 description: Winsock Kernel Programming Considerations
 ms.assetid: 55fb4882-fcbf-4bc5-ad94-1aba3df04f6d
-keywords: ["Winsock Kernel WDK networking , programming considerations", "WSK WDK networking , programming considerations"]
+keywords:
+- Winsock Kernel WDK networking , programming considerations
+- WSK WDK networking , programming considerations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Winsock Kernel Programming Considerations

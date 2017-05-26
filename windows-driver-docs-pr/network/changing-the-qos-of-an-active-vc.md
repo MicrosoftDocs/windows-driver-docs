@@ -2,7 +2,21 @@
 title: Changing the QoS of an Active VC
 description: Changing the QoS of an Active VC
 ms.assetid: 95973c8e-7410-4e47-9f7f-24e46d332eb5
-keywords: ["connection-oriented NDIS WDK , virtual connections", "CoNDIS WDK networking , virtual connections", "virtual connections WDK CoNDIS , QoS changes", "connection-oriented NDIS WDK , quality of service", "CoNDIS WDK networking , quality of service", "quality of service WDK CoNDIS", "QoS WDK CoNDIS", "MCM drivers WDK networking", "call managers WDK networking , quality of service"]
+keywords:
+- connection-oriented NDIS WDK , virtual connections
+- CoNDIS WDK networking , virtual connections
+- virtual connections WDK CoNDIS , QoS changes
+- connection-oriented NDIS WDK , quality of service
+- CoNDIS WDK networking , quality of service
+- quality of service WDK CoNDIS
+- QoS WDK CoNDIS
+- MCM drivers WDK networking
+- call managers WDK networking , quality of service
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Changing the QoS of an Active VC

@@ -2,7 +2,15 @@
 title: Adding Event Tracing to Kernel-Mode Drivers
 description: Adding Event Tracing to Kernel-Mode Drivers
 ms.assetid: 74fdb4b2-aad1-4d8a-b146-40a92e1fdbb5
-keywords: ["Event Tracing for Windows WDK , kernel-mode", "ETW WDK , kernel-mode", "kernel-mode ETW WDK software tracing"]
+keywords:
+- Event Tracing for Windows WDK , kernel-mode
+- ETW WDK , kernel-mode
+- kernel-mode ETW WDK software tracing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding Event Tracing to Kernel-Mode Drivers
@@ -16,26 +24,26 @@ This section describes how to use the Event Tracing for Windows (ETW) kernel-mod
 
 In this section:
 
--   [Workflow - Adding Event Tracing to Kernel-Mode Drivers](#to-add-event-tracing-to-kernel-mode-drivers)
--   [1. Decide the type of events to raise and where to publish them.](#decide-the-type-of-events-to-raise-and-where-to-publish-them-)
--   [2. Create an instrumentation manifest that defines the provider, the events, and channels.](#create-an-instrumentation-manifest-that-defines-the-provider--the-e)
--   [3. Compile the instrumentation manifest by using the message compiler (Mc.exe).](#compile-the-instrumentation-manifest-by-using-the-message-compiler-)
--   [4. Add the generated code to raise (publish) the events (register, unregister, and write events).](#write-the-code-to-raise--publish--the-events--register--unregister-)
--   [5. Build the driver.](#build-the-driver-)
--   [6. Install the manifest.](#install-the-manifest-)
--   [7. Test the driver to verify ETW support.](#test-the-driver-to-verify-etw-support-)
+-   [Workflow - Adding Event Tracing to Kernel-Mode Drivers](#workflow---adding-event-tracing-to-kernel-mode-drivers)
+-   [1. Decide the type of events to raise and where to publish them](#1-decide-the-type-of-events-to-raise-and-where-to-publish-them)
+-   [2. Create an instrumentation manifest that defines the provider, the events, and channels](#2-create-an-instrumentation-manifest-that-defines-the-provider-the-events-and-channels)
+-   [3. Compile the instrumentation manifest by using the message compiler (Mc.exe)](#3-compile-the-instrumentation-manifest-by-using-the-message-compiler-mcexe)
+-   [4. Add the generated code to raise (publish) the events (register, unregister, and write events)](#4-add-the-generated-code-to-raise-publish-the-events-register-unregister-and-write-events)
+-   [5. Build the driver](#5-build-the-driver)
+-   [6. Install the manifest](#6-install-the-manifest)
+-   [7. Test the driver to verify ETW support](#7-test-the-driver-to-verify-etw-support)
 
-### <span id="to_add_event_tracing_to_kernel_mode_drivers"></span><span id="TO_ADD_EVENT_TRACING_TO_KERNEL_MODE_DRIVERS"></span>Workflow - Adding Event Tracing to Kernel-Mode Drivers
+## Workflow - Adding Event Tracing to Kernel-Mode Drivers
 
 ![overview of process to add event tracing to kernel mode drivers.](images/etw-km-process.png)
 
-### <span id="decide_the_type_of_events_to_raise_and_where_to_publish_them_"></span><span id="DECIDE_THE_TYPE_OF_EVENTS_TO_RAISE_AND_WHERE_TO_PUBLISH_THEM_"></span>1. Decide the type of events to raise and where to publish them.
+## 1. Decide the type of events to raise and where to publish them
 
 Before you begin coding, you must decide what type of events you want the driver to log through Event Tracing for Windows (ETW). For example, you might want to log events that can help you diagnose problems after your driver is distributed, or events that might help you as you are developing your driver. The types of events are identified with channels. A *channel* is a named stream of events of type Admin, Operational, Analytical, or Debug directed toward a specific audience, similar to a television channel. A channel delivers the events from the event provider to the event logs and event consumers. For information about channels and event types, see [Event Logs and Channels in Windows Event log](http://go.microsoft.com/fwlink/p/?linkid=62587).
 
 During development, you are most likely interested in tracing events that help you debug your code. This same channel could be used in the production code to help troubleshoot problems that might appear after the driver is deployed. You might also want to trace events that could be used to measure performance; these events can help IT professionals fine tune server performance and can help identify network bottlenecks.
 
-### <span id="create_an_instrumentation_manifest_that_defines_the_provider__the_e"></span><span id="CREATE_AN_INSTRUMENTATION_MANIFEST_THAT_DEFINES_THE_PROVIDER__THE_E"></span>2. Create an instrumentation manifest that defines the provider, the events, and channels.
+## 2. Create an instrumentation manifest that defines the provider, the events, and channels
 
 The instrumentation manifest is an XML file that provides a formal description of the events a provider will raise. The instrumentation manifest identifies the event provider, specifies the channel or channels (up to eight), and describes the events, and templates the events use. Additionally, the instrumentation manifest allows for string localization, so you can localize the trace messages. The event system and event consumers can make use of the structured XML data provided in the manifest to perform queries and analysis.
 
@@ -155,7 +163,7 @@ When you create a template for the event payload (event message, and data), you 
 </instrumentationManifest>
 ```
 
-### <span id="compile_the_instrumentation_manifest_by_using_the_message_compiler_"></span><span id="COMPILE_THE_INSTRUMENTATION_MANIFEST_BY_USING_THE_MESSAGE_COMPILER_"></span>3. Compile the instrumentation manifest by using the message compiler (Mc.exe).
+## 3. Compile the instrumentation manifest by using the message compiler (Mc.exe)
 
 The [message compiler (Mc.exe)](http://go.microsoft.com/fwlink/p/?linkid=62589) must be run before you compile your source code. The message compiler is included in the Windows Driver Kit (WDK). The message compiler creates a header file that contains definitions for the event provider, event attributes, channels, and events. You must include this header file in your source code. The message compiler also places the generated resource compiler script (\*.rc) and the generated .bin files (binary resources) that the resource compiler script includes.
 
@@ -212,7 +220,7 @@ When you build the Eventdrv.sys sample, Visual Studio creates the necessary file
 
     By default, the message compiler uses the base name of the input file as the base name of the files that it generates. To specify a base name, set the **Generated Files Base Name** (-z) field. In the Eventdr.sys sample, the base name is set to *evntdrvEvents* so that it matches the name of the header file evntdrvEvents.h, which is included in evntdrv.c.
 
-### <span id="write_the_code_to_raise__publish__the_events__register__unregister_"></span><span id="WRITE_THE_CODE_TO_RAISE__PUBLISH__THE_EVENTS__REGISTER__UNREGISTER_"></span>4. Add the generated code to raise (publish) the events (register, unregister, and write events).
+## 4. Add the generated code to raise (publish) the events (register, unregister, and write events)
 
 In the instrumentation manifest, you defined the names of the event provider and the event descriptors. When you compile the instrumentation manifest with the message compiler, the message compiler generates a header file that describes the resources and also defines macros for the events. Now, you must add the generated code to your driver to raise these events.
 
@@ -436,14 +444,14 @@ In the instrumentation manifest, you defined the names of the event provider and
     
     ```
 
-### <span id="build_the_driver_"></span><span id="BUILD_THE_DRIVER_"></span>5. Build the driver.
+## 5. Build the driver
 
 If you have added the instrument manifest to the project and have configured the message compiler (MC.exe) properties, you can build the driver project or solution using Visual Studio and MSBuild.
 
 1.  Open the driver solution in Visual Studio.
 2.  Build the sample from the Build menu by selecting **Build Solution**. For more information about building solutions, see [Building a Driver](https://msdn.microsoft.com/windows-drivers/develop/building_a_driver).
 
-### <span id="install_the_manifest_"></span><span id="INSTALL_THE_MANIFEST_"></span>6. Install the manifest.
+## 6. Install the manifest
 
 You must install the manifest on the target system so that event consumers (for example, the Event Log) can find the location of the binary that contains the event metadata. If you added the message compiler task to the driver project in Step 3, the instrumentation manifest was compiled and the resource files were generated when you built the driver. Use the Windows Event Command-line Utility (Wevtutil.exe) to install the manifest. The syntax to install the manifest is as follows:
 
@@ -465,13 +473,9 @@ For example, to uninstall the manifest for the [Eventdrv sample](http://go.micro
 Wevtutil.exe um evntdrv.xml
 ```
 
-### <span id="test_the_driver_to_verify_etw_support_"></span><span id="TEST_THE_DRIVER_TO_VERIFY_ETW_SUPPORT_"></span>7. Test the driver to verify ETW support.
+## 7. Test the driver to verify ETW support
 
-Install the driver. Exercise the driver to generate trace activity. View the results in the Event Viewer. You can also run [Tracelog](tracelog.md), and then run [Tracerpt](http://go.microsoft.com/fwlink/p/?linkid=103397), a tool for processing event trace logs, to control, collect, and view the event trace logs.
-
- 
-
- 
+Install the driver. Exercise the driver to generate trace activity. View the results in the Event Viewer. You can also run [Tracelog](tracelog.md), and then run [Tracerpt](http://go.microsoft.com/fwlink/p/?linkid=103397), a tool for processing event trace logs, to control, collect, and view the event trace logs. 
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Adding%20Event%20Tracing%20to%20Kernel-Mode%20Drivers%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 

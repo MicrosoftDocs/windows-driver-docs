@@ -2,7 +2,16 @@
 title: Removing a NIC
 description: Removing a NIC
 ms.assetid: eaa4b784-4375-465d-9ef5-99b38b7fd15a
-keywords: ["NICs WDK networking , removing", "network interface cards WDK networking , removing", "Plug and Play WDK NDIS miniport , removing NIC", "removing NICs WDK networking"]
+keywords:
+- NICs WDK networking , removing
+- network interface cards WDK networking , removing
+- Plug and Play WDK NDIS miniport , removing NIC
+- removing NICs WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Removing a NIC

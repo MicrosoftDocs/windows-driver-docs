@@ -2,7 +2,22 @@
 title: BinPlace
 description: BinPlace
 ms.assetid: ba5a9242-d766-459f-9152-63f7f764f82b
-keywords: ["building drivers WDK , BinPlace", "driver building WDK , BinPlace", "building samples WDK , BinPlace", "sample building WDK , BinPlace", "building software components WDK , BinPlace", "software component building WDK , BinPlace", "BinPlace WDK", "symbol files WDK BinPlace", "BinPlace WDK , about BinPlace", "files WDK BinPlace"]
+keywords:
+- building drivers WDK , BinPlace
+- driver building WDK , BinPlace
+- building samples WDK , BinPlace
+- sample building WDK , BinPlace
+- building software components WDK , BinPlace
+- software component building WDK , BinPlace
+- BinPlace WDK
+- symbol files WDK BinPlace
+- BinPlace WDK , about BinPlace
+- files WDK BinPlace
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # BinPlace

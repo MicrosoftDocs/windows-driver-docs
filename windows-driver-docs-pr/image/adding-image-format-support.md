@@ -2,13 +2,12 @@
 title: Adding Image Format Support
 author: windows-driver-content
 description: Adding Image Format Support
-MS-HAID:
-- 'WIA\_drv\_basic\_cc1855e3-5119-44d9-9824-a9afd8cfd10c.xml'
-- 'image.adding\_image\_format\_support'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1ffa7c0d-23ec-402a-a0b5-fb5596a851bf
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding Image Format Support

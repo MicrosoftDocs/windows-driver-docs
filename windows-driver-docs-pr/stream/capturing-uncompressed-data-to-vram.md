@@ -2,14 +2,17 @@
 title: Capturing Uncompressed Data to VRAM
 author: windows-driver-content
 description: Capturing Uncompressed Data to VRAM
-MS-HAID:
-- 'gpucap\_70206040-4a1d-4e01-a01e-db8e00a27d27.xml'
-- 'stream.capturing\_uncompressed\_data\_to\_vram'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: efec607d-3337-40a5-812c-57292f201d54
-keywords: ["VRAM capture WDK AVStream , uncompressed data", "uncompressed data WDK VRAM capture", "formats WDK VRAM capture", "pin VRAM processing WDK AVStream"]
+keywords:
+- VRAM capture WDK AVStream , uncompressed data
+- uncompressed data WDK VRAM capture
+- formats WDK VRAM capture
+- pin VRAM processing WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Capturing Uncompressed Data to VRAM

@@ -2,14 +2,16 @@
 title: Handling Data Type Negotiation in AVStream Codecs
 author: windows-driver-content
 description: Handling Data Type Negotiation in AVStream Codecs
-MS-HAID:
-- 'shed\_dg\_c8c5541a-4ff6-48dd-b191-078dde404780.xml'
-- 'stream.handling\_data\_type\_negotiation\_in\_avstream\_codecs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b5212429-dbc8-4e9a-b5a9-2431f8a1eb2a
-keywords: ["hardware codec support WDK AVStream , data type negotiation", "data type negotiation WDK AVStream", "AVStream hardware codec support WDK , handling data type negotiation"]
+keywords:
+- hardware codec support WDK AVStream , data type negotiation
+- data type negotiation WDK AVStream
+- AVStream hardware codec support WDK , handling data type negotiation
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Data Type Negotiation in AVStream Codecs

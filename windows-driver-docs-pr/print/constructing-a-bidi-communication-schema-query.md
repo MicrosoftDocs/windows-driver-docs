@@ -2,14 +2,15 @@
 title: Constructing a Bidi Communication Schema Query
 author: windows-driver-content
 description: Constructing a Bidi Communication Schema Query
-MS-HAID:
-- 'autocfg\_91accda0-abad-498c-a9c5-33a400404ab7.xml'
-- 'print.constructing\_a\_bidi\_communication\_schema\_query'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b18fc69a-652c-4e36-83b3-fc4715b03c0f
-keywords: ["bidirectional communication schema WDK print", "bidi communication schema WDK print"]
+keywords:
+- bidirectional communication schema WDK print
+- bidi communication schema WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Constructing a Bidi Communication Schema Query

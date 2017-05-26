@@ -2,13 +2,12 @@
 title: Auto-Configured Scanning
 author: windows-driver-content
 description: Auto-Configured Scanning
-MS-HAID:
-- 'WIA\_scanner\_tree\_566f0968-e112-4734-84d7-1efaafbb604a.xml'
-- 'image.auto\_configured\_scanning'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6904e216-3eb7-419f-a6ca-198defaeebe0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Auto-Configured Scanning

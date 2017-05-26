@@ -2,7 +2,15 @@
 title: Performing Control Operations on a Socket
 description: Performing Control Operations on a Socket
 ms.assetid: 5d6ff02a-dc50-4818-9d0d-ba741fe7dfd8
-keywords: ["Winsock Kernel WDK networking , control operations", "WSK WDK networking , control operations", "control operations WDK Winsock Kernel"]
+keywords:
+- Winsock Kernel WDK networking , control operations
+- WSK WDK networking , control operations
+- control operations WDK Winsock Kernel
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Performing Control Operations on a Socket

@@ -2,6 +2,11 @@
 title: Registering NDIS QoS Capabilities
 description: Registering NDIS QoS Capabilities
 ms.assetid: 03D70079-37A4-4FAA-BF18-ACED3A9E8267
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering NDIS QoS Capabilities

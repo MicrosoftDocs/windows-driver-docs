@@ -2,13 +2,12 @@
 title: WIA Compatibility Layer Data Transfers Overview
 author: windows-driver-content
 description: WIA Compatibility Layer Data Transfers Overview
-MS-HAID:
-- 'WIA\_Fundamentals\_a75f5f69-8de0-40c7-b2d9-3689389fd003.xml'
-- 'image.wia\_compatibility\_layer\_data\_transfers\_overview'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4c88474e-f776-4876-a15f-c9d6fb0d20e5
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Compatibility Layer Data Transfers Overview

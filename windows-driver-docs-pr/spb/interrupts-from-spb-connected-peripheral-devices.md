@@ -2,10 +2,12 @@
 title: Interrupts from SPB-Connected Peripheral Devices
 author: windows-driver-content
 description: Unlike a bus such as PCI, a simple peripheral bus (SPB), such as I²C or SPI, provides no standardized, bus-specific means to convey interrupt requests from peripheral devices to the processor.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: E302BB21-582E-494E-9ADD-72703EF32446
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Interrupts from SPB-Connected Peripheral Devices

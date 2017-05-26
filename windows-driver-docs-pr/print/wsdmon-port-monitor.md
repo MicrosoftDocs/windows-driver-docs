@@ -2,14 +2,18 @@
 title: WSDMON Port Monitor
 author: windows-driver-content
 description: WSDMON Port Monitor
-MS-HAID:
-- 'provider\_8e3bbe9a-2767-4dc7-86a1-d62b3ddb99dd.xml'
-- 'print.wsdmon\_port\_monitor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fd6b0136-ca6e-4882-b6b9-be868f0dfc18
-keywords: ["print monitors WDK , WSDMON", "WSDMON port monitors WDK", "port monitors WDK print , WSDMON", "Web Services for Devices WDK WIA , port monitor", "WSD compliance WDK print"]
+keywords:
+- print monitors WDK , WSDMON
+- WSDMON port monitors WDK
+- port monitors WDK print , WSDMON
+- Web Services for Devices WDK WIA , port monitor
+- WSD compliance WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WSDMON Port Monitor

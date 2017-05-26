@@ -2,13 +2,12 @@
 title: Serial Controller Driver Design Guide
 author: windows-driver-content
 description: You can design a driver or application that uses the serial I/O request interface to communicate with a peripheral device connected to a serial port.
-MS-HAID:
-- 'spddg\_56b8294f-950d-4291-a017-7eee7d21e1eb.xml'
-- 'serports.serial\_devices\_design\_guide'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 66120e14-20dc-4220-b340-c05cbc59dac8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Serial Controller Driver Design Guide

@@ -2,13 +2,19 @@
 title: DevCon HwIDs
 description: Displays the hardware IDs, compatible IDs, and device instance IDs of the specified devices. Valid on local and remote computers.
 ms.assetid: b76de01e-fedf-41c2-ba2e-837b442ab93f
-keywords: ["DevCon HwIDs Driver Development Tools"]
+keywords:
+- DevCon HwIDs Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - DevCon HwIDs
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DevCon HwIDs

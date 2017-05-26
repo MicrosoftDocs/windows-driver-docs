@@ -1,13 +1,12 @@
 ---
 title: Get assets for a submission
 description: Get assets for a submission
-MS-HAID:
-- 'p\_dashboard.get\_assets\_for\_a\_submission'
-- 'hw\_dashboard.get\_assets\_for\_a\_submission'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5afb71e0-e44f-42f5-a0da-fed0519faa51
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Get assets for a submission

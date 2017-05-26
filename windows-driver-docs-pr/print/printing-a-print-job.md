@@ -2,14 +2,22 @@
 title: Printing a Print Job
 author: windows-driver-content
 description: Printing a Print Job
-MS-HAID:
-- 'provider\_99758ffc-45a9-4278-812b-42fda0aa5e7a.xml'
-- 'print.printing\_a\_print\_job'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2e881f99-9dbe-4e89-8628-feb05137c9b0
-keywords: ["print monitors WDK , printing print jobs", "print jobs WDK , printing", "jobs WDK print , printing", "WritePort", "ReadPort", "GetPrinterDataFromPort", "bidirectional communication WDK print", "bidi communication WDK print", "printing print jobs WDK"]
+keywords:
+- print monitors WDK , printing print jobs
+- print jobs WDK , printing
+- jobs WDK print , printing
+- WritePort
+- ReadPort
+- GetPrinterDataFromPort
+- bidirectional communication WDK print
+- bidi communication WDK print
+- printing print jobs WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printing a Print Job

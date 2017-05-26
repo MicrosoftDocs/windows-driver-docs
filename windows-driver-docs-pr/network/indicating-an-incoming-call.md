@@ -2,7 +2,15 @@
 title: Indicating an Incoming Call
 description: Indicating an Incoming Call
 ms.assetid: ca7f4a1f-47a2-4ac0-b4a2-d0367163135f
-keywords: ["call setup WDK CoNDIS", "incoming calls WDK CoNDIS", "indicating incoming calls WDK CoNDIS"]
+keywords:
+- call setup WDK CoNDIS
+- incoming calls WDK CoNDIS
+- indicating incoming calls WDK CoNDIS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Indicating an Incoming Call

@@ -2,7 +2,13 @@
 title: Rectangular Memory Allocation
 description: Rectangular Memory Allocation
 ms.assetid: 27e60130-3a6e-410a-86a7-19acad5ecb53
-keywords: ["rectangular memory allocation WDK DirectDraw"]
+keywords:
+- rectangular memory allocation WDK DirectDraw
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Rectangular Memory Allocation

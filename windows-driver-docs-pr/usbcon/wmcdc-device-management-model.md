@@ -1,12 +1,7 @@
 ---
 Description: WMCDC Device Management Model
-MS-HAID:
-- 'usbsystem\_e3a47e77-f074-4d9d-87ca-6b52ee26d654.xml'
-- 'buses.wmcdc\_device\_management\_model'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: WMCDC Device Management Model
+author: windows-driver-content
 ---
 
 # WMCDC Device Management Model

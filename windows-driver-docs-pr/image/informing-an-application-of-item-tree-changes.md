@@ -2,13 +2,12 @@
 title: Informing an Application of Item Tree Changes
 author: windows-driver-content
 description: Informing an Application of Item Tree Changes
-MS-HAID:
-- 'WIA\_drv\_basic\_a4b68780-4bfe-4183-8092-966c271f12ef.xml'
-- 'image.informing\_an\_application\_of\_item\_tree\_changes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6b3cb1d0-ab9f-4895-8c3f-f66c398960bb
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Informing an Application of Item Tree Changes

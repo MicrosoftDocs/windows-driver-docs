@@ -3,7 +3,16 @@ title: ATA Port Driver
 author: windows-driver-content
 description: ATA Port Driver
 ms.assetid: c7b9d794-a8cb-4bdd-bb93-bff473ea26a7
-keywords: ["storage port drivers WDK , ATA Port driver", "ATA Port drivers WDK", "ATA Port drivers WDK , about ATA Port drivers", "IDE controllers WDK ATA Port driver"]
+keywords:
+- storage port drivers WDK , ATA Port driver
+- ATA Port drivers WDK
+- ATA Port drivers WDK , about ATA Port drivers
+- IDE controllers WDK ATA Port driver
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ATA Port Driver

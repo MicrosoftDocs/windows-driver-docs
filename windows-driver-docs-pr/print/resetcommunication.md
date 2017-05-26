@@ -2,13 +2,12 @@
 title: ResetCommunication
 author: windows-driver-content
 description: ResetCommunication
-MS-HAID:
-- 'provider\_715bb4ad-c6d3-41e7-a30c-217a14a2b20b.xml'
-- 'print.resetcommunication'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d99bf222-274a-4ab4-b45b-a466d8fc11cd
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ResetCommunication

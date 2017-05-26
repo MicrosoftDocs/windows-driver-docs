@@ -2,14 +2,15 @@
 title: PSHED Plug-In Operations
 author: windows-driver-content
 description: PSHED Plug-In Operations
-MS-HAID:
-- 'whea\_0efed5b7-08a5-4ee1-92f8-32be9c39114c.xml'
-- 'whea.pshed\_plug\_in\_operations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 05862cc4-0257-46d1-88c1-faa4230e3b89
-keywords: ["platform-specific hardware error driver plug-ins WDK WHEA , operations", "PSHED plug-ins WDK WHEA , operations"]
+keywords:
+- platform-specific hardware error driver plug-ins WDK WHEA , operations
+- PSHED plug-ins WDK WHEA , operations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PSHED Plug-In Operations

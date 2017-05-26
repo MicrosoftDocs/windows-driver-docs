@@ -2,13 +2,12 @@
 title: Page Size and Orientation Code Examples
 author: windows-driver-content
 description: Page Size and Orientation Code Examples
-MS-HAID:
-- 'WIA\_drv\_scan\_a7d58adc-2c1c-493c-9130-f95c35b8164d.xml'
-- 'image.page\_size\_and\_orientation\_code\_examples'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 28425df2-131b-4fbc-ae44-043be2fb4813
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Page Size and Orientation Code Examples

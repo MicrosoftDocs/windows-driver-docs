@@ -3,13 +3,23 @@ title: Preventing an Imbalance of Create and Close Notifications to a Driver
 author: windows-driver-content
 description: Preventing an Imbalance of Create and Close Notifications to a Driver
 ms.assetid: e6678226-44d3-4b1d-a296-2017bc9c7c37
-keywords: ["create-file notifications WDK UMDF", "cleanup-file notifications WDK UMDF", "close-file notifications WDK UMDF", "notifications WDK UMDF", "notifications WDK UMDF , preventing create and close imbalance"]
+keywords:
+- create-file notifications WDK UMDF
+- cleanup-file notifications WDK UMDF
+- close-file notifications WDK UMDF
+- notifications WDK UMDF
+- notifications WDK UMDF , preventing create and close imbalance
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Preventing an Imbalance of Create and Close Notifications to a Driver
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 An upper UMDF driver can use the [**IWDFDeviceInitialize::AutoForwardCreateCleanupClose**](https://msdn.microsoft.com/library/windows/hardware/ff556971) method to control when the framework automatically forwards create-file, cleanup-file, and close-file notifications to the next lower driver in the device stack. However, because the upper driver sets **AutoForwardCreateCleanupClose** to automatically forward only on a device level and not on a per-file level, forwarding must be the same for all files for a device. The framework ensures this forwarding behavior for cleanup-file and close-file notifications. If the upper driver implements the [**IQueueCallbackCreate::OnCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff556841) callback function, it must ensure that its forwarding behavior is the same for all create-file requests and is consistent with the forwarding behavior for cleanup-file and close-file notifications. Failing to do so might cause lower drivers to receive an unequal amount of calls to their **IQueueCallbackCreate::OnCreateFile** method and [**IFileCallbackCleanup::OnCleanupFile**](https://msdn.microsoft.com/library/windows/hardware/ff554905) and [**IFileCallbackClose::OnCloseFile**](https://msdn.microsoft.com/library/windows/hardware/ff554910) methods.
 

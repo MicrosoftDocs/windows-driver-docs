@@ -2,14 +2,17 @@
 title: Value Capability Arrays
 author: windows-driver-content
 description: Value Capability Arrays
-MS-HAID:
-- 'hidclass\_836e269b-beda-4e74-b7e4-0fb825769678.xml'
-- 'hid.value\_capability\_arrays'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d447dda6-a1e5-4e57-b06f-f79f8662c236
-keywords: ["value capability arrays WDK HID", "arrays WDK HID", "capabilities WDK HID collections", "usage value arrays WDK HID"]
+keywords:
+- value capability arrays WDK HID
+- arrays WDK HID
+- capabilities WDK HID collections
+- usage value arrays WDK HID
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Value Capability Arrays

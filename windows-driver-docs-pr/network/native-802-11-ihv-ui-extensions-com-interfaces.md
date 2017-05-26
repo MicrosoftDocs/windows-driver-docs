@@ -2,7 +2,14 @@
 title: Native 802.11 IHV UI Extensions COM Interfaces
 description: Native 802.11 IHV UI Extensions COM Interfaces
 ms.assetid: 95487686-17a0-43e2-93bb-99b3adb9dadd
-keywords: ["IHV UI Extensions DLL WDK Native 802.11 , COM interfaces", "COM interfaces WDK Native 802.11 IHV UI Extensions DLL"]
+keywords:
+- IHV UI Extensions DLL WDK Native 802.11 , COM interfaces
+- COM interfaces WDK Native 802.11 IHV UI Extensions DLL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 IHV UI Extensions COM Interfaces

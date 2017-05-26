@@ -2,7 +2,15 @@
 title: Notify Callback Functions in a Video Capture Driver
 description: Notify Callback Functions in a Video Capture Driver
 ms.assetid: 2b900436-7874-43a7-97bf-7d1eead78126
-keywords: ["DxApi miniport drivers WDK DirectDraw , notifying callback functions", "notifying callback functions WDK kernel-mode video transport", "callback functions WDK kernel-mode video transport"]
+keywords:
+- DxApi miniport drivers WDK DirectDraw , notifying callback functions
+- notifying callback functions WDK kernel-mode video transport
+- callback functions WDK kernel-mode video transport
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Notify Callback Functions in a Video Capture Driver

@@ -2,13 +2,12 @@
 title: Windows 98 Core Components
 author: windows-driver-content
 description: Windows 98 Core Components
-MS-HAID:
-- 'stillimg\_48490ca5-010a-48d9-abb7-51e87f3cbc18.xml'
-- 'image.windows\_98\_core\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 59e2c077-c6f5-4965-891b-4601623ca47b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows 98 Core Components

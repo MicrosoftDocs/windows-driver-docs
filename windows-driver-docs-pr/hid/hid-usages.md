@@ -2,14 +2,28 @@
 title: HID Usages
 author: windows-driver-content
 description: HID usages identify the intended use of HID controls and what the controls actually measure.
-MS-HAID:
-- 'hidclass\_9f7a2de2-8693-40ea-a1ae-caf5bad70bc8.xml'
-- 'hid.hid\_usages'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 84fed314-3554-4291-b51c-734d874a4bab
-keywords: ["Human Interface Devices WDK , usages", "HID WDK , usages", "interactive input devices WDK , usages", "input devices WDK , usages", "Human Interface Devices WDK , controls", "HID WDK , controls", "interactive input devices WDK , controls", "input devices WDK , controls", "controls WDK HID", "usage pages WDK HID", "usage IDs WDK HID", "extended usage WDK HID", "usage ranges WDK HID", "aliased usages WDK HID", "usage WDK HID"]
+keywords:
+- Human Interface Devices WDK , usages
+- HID WDK , usages
+- interactive input devices WDK , usages
+- input devices WDK , usages
+- Human Interface Devices WDK , controls
+- HID WDK , controls
+- interactive input devices WDK , controls
+- input devices WDK , controls
+- controls WDK HID
+- usage pages WDK HID
+- usage IDs WDK HID
+- extended usage WDK HID
+- usage ranges WDK HID
+- aliased usages WDK HID
+- usage WDK HID
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 #  HID Usages

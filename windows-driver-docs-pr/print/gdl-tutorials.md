@@ -2,14 +2,18 @@
 title: GDL Tutorials
 author: windows-driver-content
 description: GDL Tutorials
-MS-HAID:
-- 'gplfiles\_63dc08fa-8492-4d7d-b314-d6f24895837b.xml'
-- 'print.gdl\_tutorials'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 79c73df6-0890-436c-827d-6fccbd14b503
-keywords: ["GDL WDK , examples", "examples WDK GDL", "tutorials WDK GDL", "GDL Correctness Test WDK", "GDL WDK , tutorials"]
+keywords:
+- GDL WDK , examples
+- examples WDK GDL
+- tutorials WDK GDL
+- GDL Correctness Test WDK
+- GDL WDK , tutorials
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Tutorials

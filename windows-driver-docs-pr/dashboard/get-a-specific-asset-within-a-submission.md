@@ -1,13 +1,12 @@
 ---
 title: Get a specific asset within a submission
 description: Get a specific asset within a submission
-MS-HAID:
-- 'p\_dashboard.get\_a\_specific\_asset\_within\_a\_submission'
-- 'hw\_dashboard.get\_a\_specific\_asset\_within\_a\_submission'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9e0c15cc-a551-4c9e-9679-3201f28b2936
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Get a specific asset within a submission

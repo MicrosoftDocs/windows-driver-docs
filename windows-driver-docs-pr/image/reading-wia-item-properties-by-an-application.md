@@ -2,13 +2,12 @@
 title: Reading WIA Item Properties by an Application
 author: windows-driver-content
 description: Reading WIA Item Properties by an Application
-MS-HAID:
-- 'WIA\_drv\_basic\_ff15d639-ba2a-4b34-9ce6-70813673c4e2.xml'
-- 'image.reading\_wia\_item\_properties\_by\_an\_application'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e09f604e-451e-40dc-bc12-a077d4d263ee
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reading WIA Item Properties by an Application

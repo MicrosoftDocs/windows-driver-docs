@@ -2,14 +2,16 @@
 title: INF Files for PSHED Plug-Ins
 author: windows-driver-content
 description: INF Files for PSHED Plug-Ins
-MS-HAID:
-- 'whea\_5fe317d6-e176-4d5f-b821-ca740d66780b.xml'
-- 'whea.inf\_files\_for\_pshed\_plug\_ins'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 60bb9902-c558-4ee1-9b33-1a08885e7c06
-keywords: ["PSHED plug-ins WDK WHEA , INF files", "platform-specific hardware error driver plug-ins WDK WHEA , INF files", "INF files WDK WHEA"]
+keywords:
+- PSHED plug-ins WDK WHEA , INF files
+- platform-specific hardware error driver plug-ins WDK WHEA , INF files
+- INF files WDK WHEA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF Files for PSHED Plug-Ins

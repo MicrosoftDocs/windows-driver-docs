@@ -2,7 +2,19 @@
 title: Canceling a Send Operation
 description: Canceling a Send Operation
 ms.assetid: 5bd7a815-4e4d-4259-b322-f4f8d07f2e1a
-keywords: ["network data WDK , sending", "data WDK networking , sending", "packets WDK networking , sending", "sending data WDK networking", "NDIS_SET_NET_BUFFER_LIST_CANCEL_ID", "canceling send operations WDK networking", "cancellation IDs WDK networking"]
+keywords:
+- network data WDK , sending
+- data WDK networking , sending
+- packets WDK networking , sending
+- sending data WDK networking
+- NDIS_SET_NET_BUFFER_LIST_CANCEL_ID
+- canceling send operations WDK networking
+- cancellation IDs WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Canceling a Send Operation

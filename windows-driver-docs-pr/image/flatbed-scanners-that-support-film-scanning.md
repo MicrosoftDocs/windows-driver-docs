@@ -2,13 +2,12 @@
 title: Flatbed Scanners that Support Film Scanning
 author: windows-driver-content
 description: Flatbed Scanners that Support Film Scanning
-MS-HAID:
-- 'WIA\_scanner\_tree\_172e3130-75fd-4ceb-817f-442c329222fc.xml'
-- 'image.flatbed\_scanners\_that\_support\_film\_scanning'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ee77c2c6-41a2-43dd-90e4-baf902b46f69
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Flatbed Scanners that Support Film Scanning

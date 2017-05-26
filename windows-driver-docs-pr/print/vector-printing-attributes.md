@@ -2,14 +2,15 @@
 title: Vector Printing Attributes
 author: windows-driver-content
 description: Vector Printing Attributes
-MS-HAID:
-- 'nt5gpd\_b908b165-85c0-48ad-abb0-c9ca46fd38ff.xml'
-- 'print.vector\_printing\_attributes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a44124b7-8272-4901-86be-5d99402fc453
-keywords: ["vector printing attributes WDK Unidrv", "general printer attributes WDK Unidrv , vector"]
+keywords:
+- vector printing attributes WDK Unidrv
+- general printer attributes WDK Unidrv , vector
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Vector Printing Attributes

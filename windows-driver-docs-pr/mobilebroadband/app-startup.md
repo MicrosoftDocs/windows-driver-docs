@@ -1,10 +1,12 @@
 ---
 title: App startup
 description: App startup
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0aca0d3c-9865-4a11-a9c5-e77cc735ba21
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # App startup

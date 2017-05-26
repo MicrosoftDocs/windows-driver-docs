@@ -2,13 +2,12 @@
 title: Writing a sensor device driver
 author: windows-driver-content
 description: Writing a sensor device driver
-MS-HAID:
-- 'Sensor\_DG\_DevelopmentBasics\_ae4c92ca-47c2-435a-a388-a757ab23a21e.xml'
-- 'sensors.writing\_a\_sensor\_device\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f876bbfb-6595-484e-a917-0b3f5932b3c8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing a sensor device driver

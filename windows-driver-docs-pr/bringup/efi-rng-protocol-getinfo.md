@@ -2,10 +2,12 @@
 title: EFI\_RNG\_PROTOCOL.GetInfo
 author: windows-driver-content
 description: EFI\_RNG\_PROTOCOL.GetInfo
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 11E9927B-8BC6-4B01-A12D-C75B636E3988
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EFI\_RNG\_PROTOCOL.GetInfo

@@ -2,7 +2,20 @@
 title: Striping
 description: Striping
 ms.assetid: 29ab650c-0c3b-4693-a277-4d9ba63b7b66
-keywords: ["striping WDK audio", "HD Audio, striping", "High Definition Audio (HD Audio), striping", "HD Audio, bandwidth", "High Definition Audio (HD Audio), bandwidth", "bus bandwidth WDK audio", "bandwidth WDK audio", "allocating bandwidth"]
+keywords:
+- striping WDK audio
+- HD Audio, striping
+- High Definition Audio (HD Audio), striping
+- HD Audio, bandwidth
+- High Definition Audio (HD Audio), bandwidth
+- bus bandwidth WDK audio
+- bandwidth WDK audio
+- allocating bandwidth
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Striping

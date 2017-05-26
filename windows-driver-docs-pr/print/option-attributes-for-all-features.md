@@ -2,13 +2,12 @@
 title: Option Attributes for All Features
 author: windows-driver-content
 description: Option Attributes for All Features
-MS-HAID:
-- 'nt5gpd\_8884273f-de8d-430c-8b2c-284256a76191.xml'
-- 'print.option\_attributes\_for\_all\_features'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0d269fdf-f4a1-431a-9f07-044289b9f0fa
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Option Attributes for All Features

@@ -2,14 +2,16 @@
 title: General Attributes
 author: windows-driver-content
 description: General Attributes
-MS-HAID:
-- 'nt5gpd\_73ef04e5-4a90-4249-9f31-8f7a7acef75d.xml'
-- 'print.general\_attributes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c48fabff-0580-478f-b423-d959815bbeb4
-keywords: ["printer attributes WDK Unidrv , general", "general printer attributes WDK Unidrv", "general printer attributes WDK Unidrv , about general printer attributes"]
+keywords:
+- printer attributes WDK Unidrv , general
+- general printer attributes WDK Unidrv
+- general printer attributes WDK Unidrv , about general printer attributes
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # General Attributes

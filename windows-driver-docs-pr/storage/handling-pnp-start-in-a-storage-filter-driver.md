@@ -3,7 +3,16 @@ title: Handling PnP Start in a Storage Filter Driver
 author: windows-driver-content
 description: Handling PnP Start in a Storage Filter Driver
 ms.assetid: 02a87fec-772d-4416-bd3a-5c7f98e8d55e
-keywords: ["storage filter drivers WDK , PnP", "filter drivers WDK storage , PnP", "SFD WDK storage , PnP", "PnP WDK storage"]
+keywords:
+- storage filter drivers WDK , PnP
+- filter drivers WDK storage , PnP
+- SFD WDK storage , PnP
+- PnP WDK storage
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling PnP Start in a Storage Filter Driver

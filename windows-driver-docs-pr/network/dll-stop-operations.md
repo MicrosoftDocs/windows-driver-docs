@@ -2,7 +2,16 @@
 title: DLL Stop Operations
 description: DLL Stop Operations
 ms.assetid: b49e9215-3781-4e19-8287-f484553ccb2e
-keywords: ["IHV Extensions DLL WDK Native 802.11 , stop operations", "unloading IHV Extensions DLL", "stopping IHV Extensions DLL", "Native 802.11 IHV Extensions DLL WDK , stop operations"]
+keywords:
+- IHV Extensions DLL WDK Native 802.11 , stop operations
+- unloading IHV Extensions DLL
+- stopping IHV Extensions DLL
+- Native 802.11 IHV Extensions DLL WDK , stop operations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DLL Stop Operations

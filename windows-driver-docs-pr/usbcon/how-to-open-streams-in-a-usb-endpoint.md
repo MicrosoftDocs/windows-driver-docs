@@ -1,10 +1,12 @@
 ---
-Description: 'This topic discusses static streams capability and explains how a USB client driver can open and close streams in a bulk endpoint of a USB 3.0 device.'
-MS-HAID: 'buses.how\_to\_open\_streams\_in\_a\_usb\_endpoint'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This topic discusses static streams capability and explains how a USB client driver can open and close streams in a bulk endpoint of a USB 3.0 device.
 title: How to open and close static streams in a USB bulk endpoint
+author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to open and close static streams in a USB bulk endpoint
@@ -34,7 +36,7 @@ Before a client driver can open or close streams, the driver must have:
 
     The method requires the client contract version to be USBD\_CLIENT\_CONTRACT\_VERSION\_602. By specifying that version the client driver must adhere to a set of rules. For more information, see [Best Practices: Using URBs](usb-client-driver-contract-in-windows-8.md).
 
-    The call retrieves a WDFUSBDEVICE handle to the framework's USB target device object. That handle is required in order to make subsequent calls to open streams. Typically, the client driver registers itself in the driver's [*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880) event callback routine.
+    The call retrieves a WDFUSBDEVICE handle to the framework's USB target device object. That handle is required in order to make subsequent calls to open streams. Typically, the client driver registers itself in the driver's [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://msdn.microsoft.com/library/windows/hardware/ff540880) event callback routine.
 
     **WDM drivers:  **Call the [**USBD\_CreateHandle**](https://msdn.microsoft.com/library/windows/hardware/hh406241) routine and obtain a USBD handle for the driver's registration with the USB driver stack.
 
@@ -48,7 +50,7 @@ Instructions
 ### How to open static streams
 
 <a href="" id="open-streams"></a>
-1.  Determine whether the underlying USB driver stack and the host controller supports the static streams capability by calling the [**WdfUsbTargetDeviceQueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh439434) method. Typically, the client driver calls the routine in the driver's [*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880) event callback routine.
+1.  Determine whether the underlying USB driver stack and the host controller supports the static streams capability by calling the [**WdfUsbTargetDeviceQueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh439434) method. Typically, the client driver calls the routine in the driver's [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://msdn.microsoft.com/library/windows/hardware/ff540880) event callback routine.
 
     **WDM drivers:  **Call the [**USBD\_QueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh406230) routine. Typically, the driver queries for the capabilities that it wants to use in the driver's start-device routine ([**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749)). For code example, see **USBD\_QueryUsbCapability**.
 
@@ -311,16 +313,9 @@ Exit:
 ```
 
 ## Related topics
+[USB I/O Operations](usb-device-i-o.md)  
 
-
-[USB I/O Operations](usb-device-i-o.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20open%20and%20close%20static%20streams%20in%20a%20USB%20bulk%20endpoint%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

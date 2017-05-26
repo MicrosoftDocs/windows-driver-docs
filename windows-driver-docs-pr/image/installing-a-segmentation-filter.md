@@ -2,13 +2,12 @@
 title: Installing a Segmentation Filter
 author: windows-driver-content
 description: Installing a Segmentation Filter
-MS-HAID:
-- 'WIA\_tree\_670ff774-5726-415b-9fc4-1b51bf9eefb3.xml'
-- 'image.installing\_a\_segmentation\_filter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 39f96c16-2408-460c-8aa3-08b6a6584bef
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing a Segmentation Filter

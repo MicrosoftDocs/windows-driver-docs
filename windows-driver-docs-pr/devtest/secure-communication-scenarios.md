@@ -2,7 +2,17 @@
 title: Secure Communication Scenarios
 description: Secure Communication Scenarios
 ms.assetid: 0273f4e7-0b93-4ab1-8564-e51c14e91243
-keywords: ["WSDBIT tool WDK , test scenarios", "WSDAPI Basic Interoperability Tool WDK , test scenarios", "scenarios WDK WSDBIT", "test scenarios WDK WSDBIT", "Secure Communication scenario WDK WSDBIT"]
+keywords:
+- WSDBIT tool WDK , test scenarios
+- WSDAPI Basic Interoperability Tool WDK , test scenarios
+- scenarios WDK WSDBIT
+- test scenarios WDK WSDBIT
+- Secure Communication scenario WDK WSDBIT
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Secure Communication Scenarios

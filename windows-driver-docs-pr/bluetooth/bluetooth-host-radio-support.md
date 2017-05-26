@@ -1,7 +1,12 @@
 ---
-title: Bluetooth Host Radio Support
+title: Bluetooth host radio support
 ms.assetid: 7AA53797-F8DC-4FA6-9A19-E20289AF50CA
-description: 
+description: Provides a list of questions and answers about Bluetooth host radio support in Windows
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bluetooth Host Radio Support
@@ -9,20 +14,20 @@ description:
 
 The following list provides a Bluetooth Radio Support Q&A:
 
-[Which Bluetooth host controllers does Windows support?](#targ1)
-[In Windows Vista, can the Bluetooth stack be forced to load if Windows cannot match the device ID?](#targ2)
-[How do I ensure in-box support for Bluetooth radios in Windows Vista?](#targ3)
-[Should third-party INF files use the Microsoft-defined class GUID?](#targ4)
-[Why is the Control Panel Bluetooth application missing in Windows 7?](#targ5)
-[Why does the Bluetooth icon not appear in the taskbar?](#targ6)
-[Does Windows support Bluetooth radio firmware updates?](#targ7)
-[Does Windows support vendor-specific pass-through commands?](#targ8)
-[Does Windows support vendor-supplied profiles?](#targ9)
-[Why are only some Bluetooth profiles and protocols enabled by default?](#targ10)
-[Can Group Policy block Bluetooth radio installation?](#targ11)
-[How do I change the Device ID Profile record published by Windows 8 and Windows 8.1?](#targ12)
-## <span id="targ1"></span><span id="TARG1"></span>Which Bluetooth host controllers does Windows support?
+- [Which Bluetooth host controllers does Windows support?](#targ1)
+- [In Windows Vista, can the Bluetooth stack be forced to load if Windows cannot match the device ID?](#targ2)
+- [How do I ensure in-box support for Bluetooth radios in Windows Vista?](#targ3)
+- [Should third-party INF files use the Microsoft-defined class GUID?](#targ4)
+- [Why is the Control Panel Bluetooth application missing in Windows 7?](#targ5)
+- [Why does the Bluetooth icon not appear in the taskbar?](#targ6)
+- [Does Windows support Bluetooth radio firmware updates?](#targ7)
+- [Does Windows support vendor-specific pass-through commands?](#targ8)
+- [Does Windows support vendor-supplied profiles?](#targ9)
+- [Why are only some Bluetooth profiles and protocols enabled by default?](#targ10)
+- [Can Group Policy block Bluetooth radio installation?](#targ11)
+- [How do I change the Device ID Profile record published by Windows 8 and Windows 8.1?](#targ12)
 
+## <span id="targ1"></span><span id="TARG1"></span>Which Bluetooth host controllers does Windows support?
 
 With Windows, a Bluetooth radio can be packaged as an external dongle or embedded inside a computer but it must be connected to one of the computer’s USB ports. The Bluetooth stack that is included with Windows 7 and Windows Vista does not support Bluetooth radio connections over PCI, I2C, serial, Secure Digital I/O (SDIO), CompactFlash, or PC Card interfaces. In Windows 8 and Windows 8.1, radios connected over alternate transports can be added via a third-party bus driver. Refer to the Extensible Transport sections of the [Bluetooth Devices Reference](https://msdn.microsoft.com/library/windows/hardware/ff536585) for more information.
 

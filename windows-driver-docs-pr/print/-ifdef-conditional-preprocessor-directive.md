@@ -1,15 +1,18 @@
 ---
-title: \ Ifdef Conditional Preprocessor Directive
+title: '\ Ifdef Conditional Preprocessor Directive'
 author: windows-driver-content
-description: \ Ifdef Conditional Preprocessor Directive
-MS-HAID:
-- 'gplfiles\_81df6562-2fd6-4494-ae5b-7b3a4b20542a.xml'
-- 'print.\_ifdef\_conditional\_preprocessor\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+description: '\ Ifdef Conditional Preprocessor Directive'
 ms.assetid: 57c59bf8-19bd-47bc-858d-ea500d44fb4d
-keywords: ["preprocessor directives WDK GDL , conditional directives", "directives WDK GDL , conditional directives", "conditional directives WDK GDL", "Ifdef directive WDK GDL"]
+keywords:
+- preprocessor directives WDK GDL , conditional directives
+- directives WDK GDL , conditional directives
+- conditional directives WDK GDL
+- Ifdef directive WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # \#Ifdef Conditional Preprocessor Directive

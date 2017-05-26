@@ -2,7 +2,16 @@
 title: Render Target Requirements
 description: Render Target Requirements
 ms.assetid: 4d16819e-f209-44df-b5af-f3ff9cae256b
-keywords: ["render targets WDK Direct3D", "color buffers WDK Direct3D", "buffers WDK Direct3D", "depth buffers WDK Direct3D"]
+keywords:
+- render targets WDK Direct3D
+- color buffers WDK Direct3D
+- buffers WDK Direct3D
+- depth buffers WDK Direct3D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Render Target Requirements

@@ -2,7 +2,15 @@
 title: Initializing Display Miniport and User-Mode Display Drivers
 description: Initializing Display Miniport and User-Mode Display Drivers
 ms.assetid: 5deffb45-c286-4a69-84d9-04f34eb791c0
-keywords: ["display driver model WDK Windows Vista , initialization", "Windows Vista display driver model WDK , initialization", "initializing Windows Vista display drivers"]
+keywords:
+- display driver model WDK Windows Vista , initialization
+- Windows Vista display driver model WDK , initialization
+- initializing Windows Vista display drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing Display Miniport and User-Mode Display Drivers

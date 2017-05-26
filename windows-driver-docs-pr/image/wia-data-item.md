@@ -2,13 +2,12 @@
 title: WIA Data Item
 author: windows-driver-content
 description: WIA Data Item
-MS-HAID:
-- 'WIA\_tree\_cc358c1a-17a7-4ea1-aa45-43d18ad32845.xml'
-- 'image.wia\_data\_item'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3ce01393-4a0b-4b70-8087-abe989aa00a9
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Data Item

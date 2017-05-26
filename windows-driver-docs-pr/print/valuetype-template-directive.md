@@ -2,14 +2,14 @@
 title: ValueType Template Directive
 author: windows-driver-content
 description: ValueType Template Directive
-MS-HAID:
-- 'gplfiles\_0f168d62-264c-4d0a-b1f4-030f2e943ae4.xml'
-- 'print.valuetype\_template\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f0ae79b3-ccbd-4b7a-8b45-c73225bf6fe8
-keywords: ["ValueType directive WDK GDL"]
+keywords:
+- ValueType directive WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ValueType Template Directive

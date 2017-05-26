@@ -2,13 +2,12 @@
 title: Definitions and Variables Used in the Examples
 author: windows-driver-content
 description: Definitions and Variables Used in the Examples
-MS-HAID:
-- 'WIA\_wsd\_scan\_3f7368ec-2fd6-41a9-932b-933fcad87635.xml'
-- 'image.definitions\_and\_variables\_used\_in\_the\_examples'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 55dd0618-2171-406b-a22a-437412c77cbc
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Definitions and Variables Used in the Examples

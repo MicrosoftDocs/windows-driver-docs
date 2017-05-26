@@ -2,14 +2,18 @@
 title: Isochronous Synchronization Options for IEEE 1394 Devices
 author: windows-driver-content
 description: Isochronous Synchronization Options for IEEE 1394 Devices
-MS-HAID:
-- '1394-isoch\_ab4493be-72bf-4d38-b4b0-e24b377b81d7.xml'
-- 'IEEE.isochronous\_synchronization\_options\_for\_ieee\_1394\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 27137890-09e7-45d5-b268-7e93c943b489
-keywords: ["isochronous I/O WDK IEEE 1394 bus , synchronization", "synchronization WDK IEEE 1394 bus", "filtering WDK IEEE 1394 bus", "cycle time synchronization WDK IEEE 1394 bus", "buffers WDK IEEE 1394 bus"]
+keywords:
+- isochronous I/O WDK IEEE 1394 bus , synchronization
+- synchronization WDK IEEE 1394 bus
+- filtering WDK IEEE 1394 bus
+- cycle time synchronization WDK IEEE 1394 bus
+- buffers WDK IEEE 1394 bus
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Isochronous Synchronization Options for IEEE 1394 Devices

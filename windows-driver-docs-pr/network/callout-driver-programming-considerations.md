@@ -2,7 +2,17 @@
 title: Callout Driver Programming Considerations
 description: Callout Driver Programming Considerations
 ms.assetid: e470202a-bc3b-41ac-8156-8aac8cd976cd
-keywords: ["Windows Filtering Platform callout drivers WDK , programming considerations", "callout drivers WDK Windows Filtering Platform , programming considerations", "ALE flow established filtering layers WDK Windows Filtering Platform", "kernel-mode callout drivers WDK Windows Filtering Platform", "user-mode callout drivers WDK Windows Filtering Platform"]
+keywords:
+- Windows Filtering Platform callout drivers WDK , programming considerations
+- callout drivers WDK Windows Filtering Platform , programming considerations
+- ALE flow established filtering layers WDK Windows Filtering Platform
+- kernel-mode callout drivers WDK Windows Filtering Platform
+- user-mode callout drivers WDK Windows Filtering Platform
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Callout Driver Programming Considerations

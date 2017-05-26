@@ -2,7 +2,15 @@
 title: Sample NDIS Miniport Drivers
 description: Sample NDIS Miniport Drivers
 ms.assetid: bb9e29d0-4812-4b3d-a2e1-cfa2ab51408e
-keywords: ["miniport drivers WDK networking , samples", "NDIS miniport drivers WDK networking , samples", "sample drivers WDK NDIS"]
+keywords:
+- miniport drivers WDK networking , samples
+- NDIS miniport drivers WDK networking , samples
+- sample drivers WDK NDIS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample NDIS Miniport Drivers

@@ -1,13 +1,12 @@
 ---
 title: Create a request
 description: Create a request
-MS-HAID:
-- 'p\_dashboard.create\_a\_request'
-- 'hw\_dashboard.create\_a\_request'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bd26d6a7-c970-47b6-8095-98da63e25603
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Create a request

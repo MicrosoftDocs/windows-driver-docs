@@ -2,7 +2,14 @@
 title: Setting the Size and Pitch of the Memory Allocation
 description: Setting the Size and Pitch of the Memory Allocation
 ms.assetid: babd331f-7aec-4aee-aef9-7c10b98f9181
-keywords: ["memory allocation WDK display", "allocating memory WDK display"]
+keywords:
+- memory allocation WDK display
+- allocating memory WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting the Size and Pitch of the Memory Allocation

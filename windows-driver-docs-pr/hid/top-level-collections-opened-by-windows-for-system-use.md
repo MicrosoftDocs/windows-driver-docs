@@ -2,14 +2,14 @@
 title: Top-Level Collections Opened by Windows for System Use
 author: windows-driver-content
 description: Top-Level Collections Opened by Windows for System Use
-MS-HAID:
-- 'hidclass\_b9fe7321-9513-4b7c-8c51-d203dcb77198.xml'
-- 'hid.top\_level\_collections\_opened\_by\_windows\_for\_system\_use'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e489ce46-379e-4ba9-a0e3-5848b1f4a17b
-keywords: ["top-level collections WDK HID"]
+keywords:
+- top-level collections WDK HID
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Top-Level Collections Opened by Windows for System Use

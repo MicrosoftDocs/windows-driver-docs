@@ -2,14 +2,16 @@
 title: GDL Macro Arguments
 author: windows-driver-content
 description: GDL Macro Arguments
-MS-HAID:
-- 'gplfiles\_c3a6acf2-768e-48f9-ac04-9888d609970b.xml'
-- 'print.gdl\_macro\_arguments'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2aeaf2fd-39e3-4661-85d1-ccb855a73044
-keywords: ["GDL WDK , macros", "macros WDK GDL , arguments", "macros WDK GDL , examples"]
+keywords:
+- GDL WDK , macros
+- macros WDK GDL , arguments
+- macros WDK GDL , examples
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Macro Arguments

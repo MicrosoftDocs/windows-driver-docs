@@ -2,7 +2,14 @@
 title: WMI Support for Header-Data Split
 description: WMI Support for Header-Data Split
 ms.assetid: f923779d-1170-4307-97d9-9a133a62a002
-keywords: ["header-data split WDK , configuration", "WMI WDK networking , header-data split"]
+keywords:
+- header-data split WDK , configuration
+- WMI WDK networking , header-data split
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WMI Support for Header-Data Split

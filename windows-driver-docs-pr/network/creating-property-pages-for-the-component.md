@@ -2,7 +2,17 @@
 title: Creating Property Pages for the Component
 description: Creating Property Pages for the Component
 ms.assetid: f353844f-56f4-42cd-8f7d-2fa87f469d3c
-keywords: ["notify objects WDK networking , property pages", "network notify objects WDK , property pages", "property pages WDK networking", "properties WDK networking", "property-page callback functions WDK networking"]
+keywords:
+- notify objects WDK networking , property pages
+- network notify objects WDK , property pages
+- property pages WDK networking
+- properties WDK networking
+- property-page callback functions WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Property Pages for the Component

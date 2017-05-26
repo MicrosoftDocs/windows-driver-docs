@@ -2,7 +2,16 @@
 title: Dynamic Change of Permitted Driver Accelerations
 description: Dynamic Change of Permitted Driver Accelerations
 ms.assetid: a80bb755-f4ff-4d5d-aff1-28f8262061ae
-keywords: ["acceleration levels WDK Windows 2000 display", "driver accelerations WDK Windows 2000 display", "Control Panel slider control WDK Windows 2000 display", "GDI acceleration changes WDK Windows 2000 display"]
+keywords:
+- acceleration levels WDK Windows 2000 display
+- driver accelerations WDK Windows 2000 display
+- Control Panel slider control WDK Windows 2000 display
+- GDI acceleration changes WDK Windows 2000 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Dynamic Change of Permitted Driver Accelerations

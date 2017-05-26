@@ -2,14 +2,17 @@
 title: Supporting Property Sets
 author: windows-driver-content
 description: Supporting Property Sets
-MS-HAID:
-- 'strmini-design\_afbbdcf8-8794-44aa-a9b8-1ee142f48dfe.xml'
-- 'stream.supporting\_property\_sets'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 49a3e3e6-3a09-4202-a2cb-df65806d3336
-keywords: ["Stream.sys class driver WDK Windows 2000 Kernel , property sets", "streaming minidrivers WDK Windows 2000 Kernel , property sets", "minidrivers WDK Windows 2000 Kernel Streaming , property sets", "property sets WDK streaming minidriver"]
+keywords:
+- Stream.sys class driver WDK Windows 2000 Kernel , property sets
+- streaming minidrivers WDK Windows 2000 Kernel , property sets
+- minidrivers WDK Windows 2000 Kernel Streaming , property sets
+- property sets WDK streaming minidriver
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Property Sets

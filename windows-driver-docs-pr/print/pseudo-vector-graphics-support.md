@@ -2,14 +2,16 @@
 title: Pseudo-Vector Graphics Support
 author: windows-driver-content
 description: Pseudo-Vector Graphics Support
-MS-HAID:
-- 'nt5gpd\_35b225fa-acfa-42f7-a727-42146d37f900.xml'
-- 'print.pseudo\_vector\_graphics\_support'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8eeba51b-00fa-4bf3-a78c-ac1d1adc9696
-keywords: ["vector graphics WDK Unidrv , pseudovector graphics", "pseudovector graphics WDK Unidrv", "nonvector graphics devices WDK Unidrv"]
+keywords:
+- vector graphics WDK Unidrv , pseudovector graphics
+- pseudovector graphics WDK Unidrv
+- nonvector graphics devices WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pseudo-Vector Graphics Support

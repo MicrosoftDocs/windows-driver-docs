@@ -1,14 +1,13 @@
 ---
 title: WIA Utility Classes
 author: windows-driver-content
-MS-HAID:
-- 'WIA\_arch\_8f63e3f7-6f07-488e-a4b6-0eefdd498166.xml'
-- 'image.wia\_utility\_classes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cc20a088-6470-4648-b7d9-999dbd74baf1
 description: 
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Utility Classes

@@ -2,7 +2,17 @@
 title: Splitting Ethernet Frames
 description: Splitting Ethernet Frames
 ms.assetid: 7b857dee-2805-4004-8f31-452f0cff0e0c
-keywords: ["header-data split WDK , Ethernet frame splitting", "splitting Ethernet frames", "Ethernet frame splitting WDK networking", "Ethernet frame splitting WDK networking , about Ethernet frame splitting", "header-data split providers WDK"]
+keywords:
+- header-data split WDK , Ethernet frame splitting
+- splitting Ethernet frames
+- Ethernet frame splitting WDK networking
+- Ethernet frame splitting WDK networking , about Ethernet frame splitting
+- header-data split providers WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Splitting Ethernet Frames

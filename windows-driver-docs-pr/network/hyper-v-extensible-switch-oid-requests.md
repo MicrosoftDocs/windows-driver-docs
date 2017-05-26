@@ -2,6 +2,11 @@
 title: Hyper-V Extensible Switch OID Requests
 description: Hyper-V Extensible Switch OID Requests
 ms.assetid: 0B6D1628-DD83-4EA6-B5D5-33D74AD45EFD
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hyper-V Extensible Switch OID Requests

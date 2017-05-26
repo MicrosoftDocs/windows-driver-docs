@@ -2,7 +2,28 @@
 title: Survey of Software Tracing Tools
 description: Survey of Software Tracing Tools
 ms.assetid: d6b5d131-ed03-4961-9680-1c4ded35de96
-keywords: ["software tracing WDK , tools listed", "tracing WDK , tools listed", "adding tracing", "software tracing WDK , adding", "tracing WDK , adding", "software tracing WDK , controlling sessions", "tracing WDK , controlling sessions", "software tracing WDK , TMF files", "tracing WDK , TMF files", "software tracing WDK , formatting messages", "tracing WDK , formatting messages", "software tracing WDK , displaying messages", "tracing WDK , displaying messages", "software tracing WDK , viewing events", "tracing WDK , viewing events", "trace consumers WDK"]
+keywords:
+- software tracing WDK , tools listed
+- tracing WDK , tools listed
+- adding tracing
+- software tracing WDK , adding
+- tracing WDK , adding
+- software tracing WDK , controlling sessions
+- tracing WDK , controlling sessions
+- software tracing WDK , TMF files
+- tracing WDK , TMF files
+- software tracing WDK , formatting messages
+- tracing WDK , formatting messages
+- software tracing WDK , displaying messages
+- tracing WDK , displaying messages
+- software tracing WDK , viewing events
+- tracing WDK , viewing events
+- trace consumers WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Survey of Software Tracing Tools

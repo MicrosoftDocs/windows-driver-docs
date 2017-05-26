@@ -2,13 +2,12 @@
 title: Macro Example to Filter Error Codes
 author: windows-driver-content
 description: Macro Example to Filter Error Codes
-MS-HAID:
-- 'WIA\_wsd\_scan\_89af7352-0809-4d70-a840-6e2c67552de2.xml'
-- 'image.macro\_example\_to\_filter\_error\_codes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 68aa0a75-82c7-4dd9-8f8f-eca5de6ea102
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Macro Example to Filter Error Codes

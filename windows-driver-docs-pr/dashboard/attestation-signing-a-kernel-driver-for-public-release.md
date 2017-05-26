@@ -1,10 +1,12 @@
 ---
 title: Attestation signing a kernel driver for public release
 description: This topic describes how to sign a driver using attestation signing.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: A292B15D-37FD-407E-998C-728D9423E712
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Attestation signing a kernel driver for public release
@@ -12,15 +14,17 @@ ms.assetid: A292B15D-37FD-407E-998C-728D9423E712
 
 This topic describes how to sign a driver using attestation signing.
 
-**Important**  You must still use [Hardware Dev Center (Sysdev)](dashboard-services.md) to sign a driver using attestation signing until driver signing is available through the new Windows Hardware Dev Center dashboard.
+> [!IMPORTANT]
+> You must still use [Hardware Dev Center (Sysdev)](dashboard-services.md) to sign a driver using attestation signing until driver signing is available through the new Windows Hardware Dev Center dashboard.
 
  
 
-**Note**  Attestation signing has the following properties.
--   Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
--   Attestation signing requires the use of an EV Certificate to submit the driver to the Hardware Dev Center (Sysdev) dashboard.
--   An attestation signed driver will only work for Windows 10 Desktop. It will not work for other versions of Windows, such as Windows Server 2016,Windows 8.1, or Windows 7.
-
+> [!Note]  
+> Attestation signing has the following properties.
+> -   Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
+> -   Attestation signing requires the use of an EV Certificate to submit the driver to the Hardware Dev Center (Sysdev) dashboard.
+> -   An attestation signed driver will only work for Windows 10 Desktop. It will not work for other versions of Windows, such as Windows Server 2016,Windows 8.1, or Windows 7.
+> -   Attestation signing requires driver folder names to contain no special characters, and to be less than 40 characters long.
  
 
 ## <span id="Attestation_Signing_a_Kernel_Mode_Driver"></span><span id="attestation_signing_a_kernel_mode_driver"></span><span id="ATTESTATION_SIGNING_A_KERNEL_MODE_DRIVER"></span>Attestation Signing a Kernel Mode Driver
@@ -102,7 +106,7 @@ MAKECAB [/V[n]] [/D var=value ...] /F directive_file [...]
 ```
 ;*** Echo.ddf example
 ;
-.OPTION EXPLICIT     ; Generate errors 
+.OPTION EXPLICIT     ; Generate errors
 .Set CabinetFileCountThreshold=0
 .Set FolderFileCountThreshold=0
 .Set FolderSizeThreshold=0
@@ -115,7 +119,7 @@ MAKECAB [/V[n]] [/D var=value ...] /F directive_file [...]
 ;Specify file name for new cab file
 .Set CabinetNameTemplate=Echo.cab
 ; Specify the subdirectory for the files.  
-; Your cab file should not have files at the root level, 
+; Your cab file should not have files at the root level,
 ; and each driver package must be in a separate subfolder.
 .Set DestinationDir=Echo
 ;Specify files to be included in cab file
@@ -240,7 +244,7 @@ Prepare a cab file DDF input file that references the subdirectories. It might l
 ```
 ;*** Submission.ddf multiple driver example
 ;
-.OPTION EXPLICIT     ; Generate errors 
+.OPTION EXPLICIT     ; Generate errors
 .Set CabinetFileCountThreshold=0
 .Set FolderFileCountThreshold=0
 .Set FolderSizeThreshold=0
@@ -270,7 +274,3 @@ Follow the steps previously described to sign, submit and test the driver files.
  
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20Attestation%20signing%20a%20kernel%20driver%20for%20public%20release%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-

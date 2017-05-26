@@ -2,7 +2,16 @@
 title: Display Hardware Acceleration Slider
 description: Display Hardware Acceleration Slider
 ms.assetid: af3daa64-196a-4163-872d-713bc4cf0335
-keywords: ["display drivers WDK Windows 2000 , debugging", "debugging drivers WDK Windows 2000 display", "hardware acceleration slider WDK Windows 2000 display", "acceleration slider WDK Windows 2000 display"]
+keywords:
+- display drivers WDK Windows 2000 , debugging
+- debugging drivers WDK Windows 2000 display
+- hardware acceleration slider WDK Windows 2000 display
+- acceleration slider WDK Windows 2000 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Display Hardware Acceleration Slider

@@ -2,7 +2,14 @@
 title: Overlay DDI Programming Considerations
 description: Overlay DDI Programming Considerations
 ms.assetid: 887624a7-0293-4add-94a7-d490ebd93205
-keywords: ["Overlay DDI WDK Windows 7 display , programming considerations", "Overlay DDI WDK Server 2008 R2 display , programming considerations"]
+keywords:
+- Overlay DDI WDK Windows 7 display , programming considerations
+- Overlay DDI WDK Server 2008 R2 display , programming considerations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overlay DDI Programming Considerations

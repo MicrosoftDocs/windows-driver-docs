@@ -2,7 +2,19 @@
 title: Registration and Deregistration of NDIS Miniport Drivers with WMI
 description: Registration and Deregistration of NDIS Miniport Drivers with WMI
 ms.assetid: 7460cb3f-7dc1-4454-b683-e1849233fc1d
-keywords: ["miniport adapters WDK networking , registering", "adapters WDK networking , registering", "WMI WDK networking , registering miniport adapters", "registering miniport drivers", "registering miniport adapters", "miniport adapters WDK networking , WMI", "adapters WD"]
+keywords:
+- miniport adapters WDK networking , registering
+- adapters WDK networking , registering
+- WMI WDK networking , registering miniport adapters
+- registering miniport drivers
+- registering miniport adapters
+- miniport adapters WDK networking , WMI
+- adapters WD
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registration and Deregistration of NDIS Miniport Drivers with WMI

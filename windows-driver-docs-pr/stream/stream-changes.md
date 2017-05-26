@@ -2,14 +2,17 @@
 title: Stream Changes
 author: windows-driver-content
 description: Stream Changes
-MS-HAID:
-- 'dvd-design\_35ccb7b5-e45a-4c93-a156-8408234228c2.xml'
-- 'stream.stream\_changes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3bd6a511-c602-4159-87b4-7e1e55c03b2e
-keywords: ["stream changes WDK DVD decoder", "formats WDK DVD decoder", "headers WDK DVD decoder", "stream formats WDK DVD decoder"]
+keywords:
+- stream changes WDK DVD decoder
+- formats WDK DVD decoder
+- headers WDK DVD decoder
+- stream formats WDK DVD decoder
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stream Changes

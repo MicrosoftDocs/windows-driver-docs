@@ -2,14 +2,19 @@
 title: Getting Error Injection Capabilities
 author: windows-driver-content
 description: Getting Error Injection Capabilities
-MS-HAID:
-- 'whea\_0ae41111-71db-403b-9b2f-254942b2cc72.xml'
-- 'whea.getting\_error\_injection\_capabilities'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d4ff0d9c-bb17-4dff-8008-bf8d59e44621
-keywords: ["error injection capabilities WDK WHEA", "retrieving error injection capabilities WDK WHEA", "errors WDK WHEA , error injection", "WHEA WDK , error injection", "Windows Hardware Error Architecture WDK , error injection", "injecting hardware errors WDK WHEA"]
+keywords:
+- error injection capabilities WDK WHEA
+- retrieving error injection capabilities WDK WHEA
+- errors WDK WHEA , error injection
+- WHEA WDK , error injection
+- Windows Hardware Error Architecture WDK , error injection
+- injecting hardware errors WDK WHEA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Getting Error Injection Capabilities

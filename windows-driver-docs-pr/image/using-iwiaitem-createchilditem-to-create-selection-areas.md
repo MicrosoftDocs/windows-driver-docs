@@ -2,13 +2,12 @@
 title: Using IWiaItem CreateChildItem to Create Selection Areas
 author: windows-driver-content
 description: Using IWiaItem CreateChildItem to Create Selection Areas
-MS-HAID:
-- 'WIA\_scanner\_tree\_4af67f4f-e54c-4fa8-9de0-cb8ca3d35b79.xml'
-- 'image.using\_iwiaitem\_createchilditem\_to\_create\_selection\_areas'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c430d15b-51e9-4419-9cdb-904a0f5ef09b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using IWiaItem::CreateChildItem to Create Selection Areas

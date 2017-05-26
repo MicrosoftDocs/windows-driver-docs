@@ -2,14 +2,19 @@
 title: Default GDL Configurations
 author: windows-driver-content
 description: Default GDL Configurations
-MS-HAID:
-- 'gplfiles\_86c34cbb-56fe-4249-a4d8-e66bd063d67d.xml'
-- 'print.default\_gdl\_configurations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9963513b-52dc-4fb7-8f85-abca2975c36d
-keywords: ["GDL WDK , configurations", "parser WDK GDL , creating default configurations", "configurations WDK GDL , default configurations", "default GDL configurations WDK", "configurations WDK GDL , examples", "DefaultOption directive WDK GDL"]
+keywords:
+- GDL WDK , configurations
+- parser WDK GDL , creating default configurations
+- configurations WDK GDL , default configurations
+- default GDL configurations WDK
+- configurations WDK GDL , examples
+- DefaultOption directive WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Default GDL Configurations

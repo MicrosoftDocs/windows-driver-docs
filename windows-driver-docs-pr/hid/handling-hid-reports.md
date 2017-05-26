@@ -2,14 +2,20 @@
 title: Handling HID Reports
 author: windows-driver-content
 description: This section describes the mechanisms that user-mode applications and kernel-mode drivers use for handling HID reports.
-MS-HAID:
-- 'hidclass\_72b43306-d6a8-4164-b888-85b82b47d8bd.xml'
-- 'hid.handling\_hid\_reports'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5bd43bd3-3c7a-40a3-97cd-2c43c168e721
-keywords: ["collections WDK HID , reports", "HID collections WDK , reports", "reports WDK HID , operations", "Human Interface Devices WDK , reports", "interactive input devices WDK , reports", "input devices WDK , reports", "HID reports WDK , operations"]
+keywords:
+- collections WDK HID , reports
+- HID collections WDK , reports
+- reports WDK HID , operations
+- Human Interface Devices WDK , reports
+- interactive input devices WDK , reports
+- input devices WDK , reports
+- HID reports WDK , operations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling HID Reports

@@ -1,13 +1,12 @@
 ---
 title: For Administrators
 description: For Administrators
-MS-HAID:
-- 'p\_dashboard.for\_administrators'
-- 'hw\_dashboard.for\_administrators'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0f81d730-73bf-49da-a0d1-1e3387c6587d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # For Administrators

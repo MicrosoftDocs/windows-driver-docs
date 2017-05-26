@@ -2,7 +2,26 @@
 title: Indicating Connection Status
 description: Indicating Connection Status
 ms.assetid: 8a511c14-6b09-47fe-90de-6a90dab93171
-keywords: ["WMI WDK networking , media connection status", "miniport drivers WDK networking , media connection status", "NDIS miniport drivers WDK , media connection status", "connection status WDK networking", "media connections WDK networking", "NDIS_STATUS_MEDIA_CONNECT", "NDIS_STATUS_MEDIA_DISCONNECT", "status information WDK NDIS miniport", "status indications WDK networking , media connections", "sleeping state WDK networking", "Waking state WDK networking", "Resetting state WDK networking", "Halting state WDK networking", "Initializing state WDK networking"]
+keywords:
+- WMI WDK networking , media connection status
+- miniport drivers WDK networking , media connection status
+- NDIS miniport drivers WDK , media connection status
+- connection status WDK networking
+- media connections WDK networking
+- NDIS_STATUS_MEDIA_CONNECT
+- NDIS_STATUS_MEDIA_DISCONNECT
+- status information WDK NDIS miniport
+- status indications WDK networking , media connections
+- sleeping state WDK networking
+- Waking state WDK networking
+- Resetting state WDK networking
+- Halting state WDK networking
+- Initializing state WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Indicating Connection Status

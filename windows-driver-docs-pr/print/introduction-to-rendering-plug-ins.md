@@ -2,14 +2,14 @@
 title: Introduction to Rendering Plug-Ins
 author: windows-driver-content
 description: Introduction to Rendering Plug-Ins
-MS-HAID:
-- 'custdrvr\_5f7c5498-9ba8-43dc-a39b-7d0c8bf2695f.xml'
-- 'print.introduction\_to\_rendering\_plug\_ins'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7e6756ca-822a-4386-bcbd-363a10b1b2a3
-keywords: ["rendering plug-ins WDK print , about rendering plug-ins"]
+keywords:
+- rendering plug-ins WDK print , about rendering plug-ins
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Rendering Plug-Ins

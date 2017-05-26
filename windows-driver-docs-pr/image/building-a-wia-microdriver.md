@@ -2,13 +2,12 @@
 title: Building a WIA Microdriver
 author: windows-driver-content
 description: Building a WIA Microdriver
-MS-HAID:
-- 'WIA\_GS\_8e9ea6bf-62b1-42bf-a9ce-5cd959fc9336.xml'
-- 'image.building\_a\_wia\_microdriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dcec3079-2844-4d87-b2e4-0c1850118192
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Building a WIA Microdriver

@@ -2,7 +2,16 @@
 title: Maintaining State Within a Context
 description: Maintaining State Within a Context
 ms.assetid: dabf6aa7-f127-419c-9245-5270768fef5b
-keywords: ["context WDK Direct3D , maintaining state", "states WDK Direct3D", "internal states WDK Direct3D", "public states WDK Direct3D"]
+keywords:
+- context WDK Direct3D , maintaining state
+- states WDK Direct3D
+- internal states WDK Direct3D
+- public states WDK Direct3D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Maintaining State Within a Context

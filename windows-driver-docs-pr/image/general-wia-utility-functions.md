@@ -2,13 +2,12 @@
 title: General WIA Utility Functions
 author: windows-driver-content
 description: General WIA Utility Functions
-MS-HAID:
-- 'WIA\_arch\_81d51318-880a-4154-8ebe-daaa4a13b418.xml'
-- 'image.general\_wia\_utility\_functions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 235c07a1-4903-4df6-b29f-0ecc342782b4
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # General WIA Utility Functions

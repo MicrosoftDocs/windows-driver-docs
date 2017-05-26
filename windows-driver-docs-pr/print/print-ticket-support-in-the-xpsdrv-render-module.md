@@ -2,13 +2,12 @@
 title: Print Ticket Support in the XPSDrv Render Module
 author: windows-driver-content
 description: Print Ticket Support in the XPSDrv Render Module
-MS-HAID:
-- 'xpsfiltpipe\_58c3e78b-341b-4ecf-a9a5-e4cb0ed72bcc.xml'
-- 'print.print\_ticket\_support\_in\_the\_xpsdrv\_render\_module'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ea9bb6a1-b878-4402-a865-adc65d480373
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Ticket Support in the XPSDrv Render Module

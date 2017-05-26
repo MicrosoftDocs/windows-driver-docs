@@ -1,7 +1,12 @@
 ---
 title: INF Validation Errors and Warnings
-description: This topic describes driver installation errors and warnings that can appear as a result of the automatic INF verification that Microsoft Visual Studio performs, or when you run the InfVerif tool.
+description: Driver installation errors and warnings can appear as a result of the automatic INF verification that Microsoft Visual Studio performs.
 ms.assetid: E021D8F8-BFDA-4F71-B8EA-0997096761FB
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF Validation Errors and Warnings
@@ -15,7 +20,7 @@ Starting in Visual Studio 2015 with WDK 10, when you build your driver, the foll
 -   [Universal INF errors (1300-1309)](#err-130x)
 -   [Installation warnings (2000-2999)](#warning-2xxx)
 
-## <span id="err_12xx"></span><span id="ERR_12XX"></span>Syntax errors in the INF file (1200-1299)
+## Syntax errors in the INF file (1200-1299)<a name="err-12xx"></a>
 
 
 When you install a driver, Windows skips lines in the INF file that contain errors, but does not fail driver installation due to errors in this range. If the driver installs successfully, you might not notice that some lines were skipped.
@@ -129,29 +134,29 @@ CatalogFile=wudf.cat
 <div class="code">
 <pre>
 [MyAddReg]
-HKR,,DllPath,‚Äù%SystemRoot%\System32\myDll.sys‚Äù
+HKR,,DllPath,î%SystemRoot%\System32\myDll.sysî
 </pre>
 </div>
-<p>This line causes the INF parser to attempt to locate the token "SystemRoot" from the [Strings] section, rather than the intended behavior of storing the literal "%SystemRoot%" in the registry.  To use the literal value ‚Äú%SystemRoot%‚Äù rather than perform a string replacement, use the escape sequence ‚Äò%%‚Äô.</p>
+<p>This line causes the INF parser to attempt to locate the token "SystemRoot" from the [Strings] section, rather than the intended behavior of storing the literal "%SystemRoot%" in the registry.  To use the literal value ì%SystemRoot%î rather than perform a string replacement, use the escape sequence ë%%í.</p>
 <div class="code">
 <pre>
 [MyAddReg]
-HKR,,DllPath,‚Äù%%SystemRoot%%\System32\myDll.sys‚Äù
+HKR,,DllPath,î%%SystemRoot%%\System32\myDll.sysî
 </pre>
 </div></td>
 </tr>
 </tbody>
 </table>
 
-¬†
+†
 
-## <span id="err_130x"></span><span id="ERR_130X"></span>Universal INF errors (1300-1309)
+## Universal INF errors (1300-1309) <a name="err-130x"></a>
 
 
-**Important**¬†¬†
+**Important**††
 If you do not get any errors or warnings with error number 130*x* and error text ("Found legacy *Xxx* operation..."), your driver INF file is universal.
 
-¬†
+†
 
 The following errors and warnings are related to INF configurability:
 
@@ -168,15 +173,15 @@ The following errors and warnings are related to INF configurability:
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><span id="1301__Found_legacyXxx"></span><span id="1301__found_legacyxxx"></span><span id="1301__FOUND_LEGACYXXX"></span><strong>1301: Found legacy</strong>¬†<em>Xxx</em></p></td>
+<td align="left"><p><span id="1301__Found_legacyXxx"></span><span id="1301__found_legacyxxx"></span><span id="1301__FOUND_LEGACYXXX"></span><strong>1301: Found legacy</strong>†<em>Xxx</em></p></td>
 <td align="left"><p>You'll see this error if you use deprecated sections or directives such as [<strong>LogConfig</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547448) or [<strong>DDInstall.CoInstallers</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547321).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span id="1302__Found_legacyXxxoperationXxx"></span><span id="1302__found_legacyxxxoperationxxx"></span><span id="1302__FOUND_LEGACYXXXOPERATIONXXX"></span><strong>1302: Found legacy</strong>¬†<em>Xxx</em>¬†<strong>operation</strong>¬†<em>Xxx</em></p></td>
+<td align="left"><p><span id="1302__Found_legacyXxxoperationXxx"></span><span id="1302__found_legacyxxxoperationxxx"></span><span id="1302__FOUND_LEGACYXXXOPERATIONXXX"></span><strong>1302: Found legacy</strong>†<em>Xxx</em>†<strong>operation</strong>†<em>Xxx</em></p></td>
 <td align="left"><p>You'll see this error if you use deprecated sections or directives such as [<strong>LogConfig</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547448) or [<strong>DDInstall.CoInstallers</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547321).</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span id="1303__Found_legacyXxxoperation_forXxx"></span><span id="1303__found_legacyxxxoperation_forxxx"></span><span id="1303__FOUND_LEGACYXXXOPERATION_FORXXX"></span><strong>1303: Found legacy</strong>¬†<em>Xxx</em>¬†<strong>operation for</strong>¬†<em>Xxx</em></p></td>
+<td align="left"><p><span id="1303__Found_legacyXxxoperation_forXxx"></span><span id="1303__found_legacyxxxoperation_forxxx"></span><span id="1303__FOUND_LEGACYXXXOPERATION_FORXXX"></span><strong>1303: Found legacy</strong>†<em>Xxx</em>†<strong>operation for</strong>†<em>Xxx</em></p></td>
 <td align="left"><p>This error occurs when the operation affects something external to the driver package, like deleting a service or deleting a file.</p></td>
 </tr>
 <tr class="even">
@@ -203,7 +208,7 @@ AddReg = HKR,,CoInstallers32,0x00010000,"MyCoinstaller.dll"
 </tbody>
 </table>
 
-¬†
+†
 
 Whether these issues appear as errors or warnings depends on the following:
 
@@ -214,7 +219,7 @@ Whether these issues appear as errors or warnings depends on the following:
     -   In Visual Studio, you build your driver with target platform set to **Desktop**.
     -   You run InfVerif.exe from the command line and do not specify the /c flag.
 
-## <span id="warning_2xxx"></span><span id="WARNING_2XXX"></span>Installation warnings (2000-2999)
+## Installation warnings (2000-2999) <a name="warning-2xxx"></a>
 
 
 Issues in the 2000-2999 range appears as warnings. Possible values include the following.
@@ -278,14 +283,10 @@ LogConfig=LogConfigSection
 </tbody>
 </table>
 
-¬†
+†
 
-¬†
+†
 
-¬†
+†
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20INF%20Validation%20Errors%20and%20Warnings%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-

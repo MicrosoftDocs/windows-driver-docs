@@ -2,13 +2,12 @@
 title: Page Size and Orientation
 author: windows-driver-content
 description: Page Size and Orientation
-MS-HAID:
-- 'WIA\_drv\_scan\_074682a3-037a-4425-9c25-439b94a0661d.xml'
-- 'image.page\_size\_and\_orientation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f744a00c-8614-4488-9a29-d193a0c4268f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Page Size and Orientation

@@ -2,14 +2,15 @@
 title: INF PS2\_Inst.NoInterruptInit.Bioses Section
 author: windows-driver-content
 description: INF PS2\_Inst.NoInterruptInit.Bioses Section
-MS-HAID:
-- 'km-ovr\_5b4cea2d-d8ed-4585-a36b-a1d98f856a08.xml'
-- 'hid.inf\_ps2\_inst\_nointerruptinit\_bioses\_section'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2bf1dc0f-00b6-4f4a-99f0-e9843fe6e66b
-keywords: ["INF files WDK non-HID keyboard/mouse", "PS2_Inst.NoInterruptInit.Bioses section"]
+keywords:
+- INF files WDK non-HID keyboard/mouse
+- PS2_Inst.NoInterruptInit.Bioses section
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF PS2\_Inst.NoInterruptInit.Bioses Section

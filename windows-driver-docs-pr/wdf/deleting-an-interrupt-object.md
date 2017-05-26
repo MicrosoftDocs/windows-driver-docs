@@ -3,12 +3,17 @@ title: Deleting an Interrupt Object
 author: windows-driver-content
 description: Deleting an Interrupt Object
 ms.assetid: B72DA452-B22F-47CD-8C5D-E741F09F556E
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Deleting an Interrupt Object
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 If the driver creates an interrupt object by calling [**IWDFDevice3::CreateInterrupt**](https://msdn.microsoft.com/library/windows/hardware/hh451208), the driver does not need to delete the interrupt object. The framework deletes the interrupt object automatically because the interrupt object is a child object of the framework device object.
 

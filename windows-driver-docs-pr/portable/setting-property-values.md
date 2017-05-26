@@ -1,8 +1,11 @@
 ---
 Description: Setting Property Values
-MS-HAID: 'wpddk.setting\_property\_values'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Setting Property Values
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Property Values

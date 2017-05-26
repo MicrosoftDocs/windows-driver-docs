@@ -1,11 +1,15 @@
 ---
-title: Network Virtualization with Generic Routing Encapsulation (NVGRE) Task Offload
-description: NDIS 6.30 (available in Windows Server 2012 and later) introduces NVGRE Task Offload, which makes it possible to use NVGRE-formatted packets with Large Send Offload (LSO)Virtual Machine Queue (VMQ)Transmit (Tx) checksum offload (IPv4, TCP, UDP)Receive (Rx) checksum offload (IPv4, TCP, UDP).
+title: NVGRE Task Offload
+description: This section describes Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload
 ms.assetid: D1BE5659-4491-411B-9D32-9CB7A141A240
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload
-
 
 Hyper-V Network Virtualization supports Network Virtualization using Generic Routing Encapsulation (NVGRE) as the mechanism to virtualize IP addresses. In NVGRE, the virtual machine's packet is encapsulated inside another packet. The header of this new, NVGRE-formatted packet has the appropriate source and destination provider area (PA) IP addresses. In addition, it has a 24-bit Virtual Subnet ID (VSID), which is stored in the GRE header of the new packet.
 

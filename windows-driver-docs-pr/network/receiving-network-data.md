@@ -2,7 +2,19 @@
 title: Receiving Network Data
 description: Receiving Network Data
 ms.assetid: d929c956-73dc-433f-9e60-bc3f8e0bcc14
-keywords: ["network data WDK , receiving", "data WDK networking , receiving", "packets WDK networking , receiving", "returning data WDK networking", "network data WDK , returning", "data WDK networking , returning", "packets WDK networking , returning"]
+keywords:
+- network data WDK , receiving
+- data WDK networking , receiving
+- packets WDK networking , receiving
+- returning data WDK networking
+- network data WDK , returning
+- data WDK networking , returning
+- packets WDK networking , returning
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Receiving Network Data

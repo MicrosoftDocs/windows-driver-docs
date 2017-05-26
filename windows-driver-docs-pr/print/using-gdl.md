@@ -2,14 +2,17 @@
 title: Using GDL
 author: windows-driver-content
 description: Using GDL
-MS-HAID:
-- 'gplfiles\_664e0a13-1bf5-48f8-b0ef-cd3d87c15a48.xml'
-- 'print.using\_gdl'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 25bbe17d-f9a5-4e29-98e8-c91d71b897b6
-keywords: ["GDL WDK , programming with GDL", "programming with GDL WDK", "printer drivers WDK , programming with GDL", "GDL WDK , features of"]
+keywords:
+- GDL WDK , programming with GDL
+- programming with GDL WDK
+- printer drivers WDK , programming with GDL
+- GDL WDK , features of
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using GDL

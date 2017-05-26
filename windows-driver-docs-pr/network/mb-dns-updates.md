@@ -2,6 +2,11 @@
 title: MB DNS Updates
 description: MB DNS Updates
 ms.assetid: be93f0b4-a075-455e-b03c-6d23a2be7b1d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MB DNS Updates

@@ -2,13 +2,12 @@
 title: Code Example for Reading Device Properties
 author: windows-driver-content
 description: Code Example for Reading Device Properties
-MS-HAID:
-- 'WIA\_wsd\_scan\_0f336f3c-dbc6-4697-9544-00634ee4e134.xml'
-- 'image.code\_example\_for\_reading\_device\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9ff3f30d-fd1c-4241-a068-1af2160e9296
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Code Example for Reading Device Properties

@@ -2,14 +2,16 @@
 title: Autoconfiguration in an IHV Driver
 author: windows-driver-content
 description: Autoconfiguration in an IHV Driver
-MS-HAID:
-- 'autocfg\_7dfd921f-9b7f-4680-8e2b-533f860272d1.xml'
-- 'print.autoconfiguration\_in\_an\_ihv\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 81febae0-6fab-4226-9e98-7705d606caf4
-keywords: ["IHV driver autoconfiguration WDK printer", "autoconfiguration WDK printer , IHV drivers", "printer autoconfiguration WDK printer , IHV drivers"]
+keywords:
+- IHV driver autoconfiguration WDK printer
+- autoconfiguration WDK printer , IHV drivers
+- printer autoconfiguration WDK printer , IHV drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Autoconfiguration in an IHV Driver

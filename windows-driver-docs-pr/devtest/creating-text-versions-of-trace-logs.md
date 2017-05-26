@@ -2,7 +2,22 @@
 title: Creating Text Versions of Trace Logs
 description: Creating Text Versions of Trace Logs
 ms.assetid: 15d15da3-e381-4b5f-81f2-300aa87e11db
-keywords: ["TraceView WDK , text version trace logs", "trace logs WDK TraceView , text versions", "log files WDK TraceView , text versions", "Trace Message Lists WDK", "text format trace logs WDK", "listing files WDK software tracing", ".out files", "out files", "converting trace log format", "formats WDK audio , trace logs"]
+keywords:
+- TraceView WDK , text version trace logs
+- trace logs WDK TraceView , text versions
+- log files WDK TraceView , text versions
+- Trace Message Lists WDK
+- text format trace logs WDK
+- listing files WDK software tracing
+- .out files
+- out files
+- converting trace log format
+- formats WDK audio , trace logs
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Text Versions of Trace Logs

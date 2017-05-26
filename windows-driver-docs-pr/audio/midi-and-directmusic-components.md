@@ -2,7 +2,22 @@
 title: MIDI and DirectMusic Components
 description: MIDI and DirectMusic Components
 ms.assetid: 6334f332-31ba-4daf-aad1-94bb65d25153
-keywords: ["WDM audio components WDK", "user-mode components WDK audio", "kernel-mode components WDK audio", "capture components WDK audio", "MIDI components WDK audio", "DirectMusic WDK audio , components", "playback WDK audio", "time-stamped MIDI WDK audio", "note-on events WDK audio", "note-off events WDK audio"]
+keywords:
+- WDM audio components WDK
+- user-mode components WDK audio
+- kernel-mode components WDK audio
+- capture components WDK audio
+- MIDI components WDK audio
+- DirectMusic WDK audio , components
+- playback WDK audio
+- time-stamped MIDI WDK audio
+- note-on events WDK audio
+- note-off events WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MIDI and DirectMusic Components

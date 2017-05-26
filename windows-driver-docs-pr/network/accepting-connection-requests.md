@@ -2,7 +2,19 @@
 title: Accepting Connection Requests
 description: Accepting Connection Requests
 ms.assetid: 2233daa7-c5c5-49be-b76e-61a90a496447
-keywords: ["SAN connection setup WDK , accepting connection requests", "incoming connection requests WDK SANs", "session negotiations WDK SANs", "remote peer connection requests WDK SANs", "accepting connection requests WDK SANs", "refusing SAN connection requests", "rejecting SAN connection requests"]
+keywords:
+- SAN connection setup WDK , accepting connection requests
+- incoming connection requests WDK SANs
+- session negotiations WDK SANs
+- remote peer connection requests WDK SANs
+- accepting connection requests WDK SANs
+- refusing SAN connection requests
+- rejecting SAN connection requests
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accepting Connection Requests

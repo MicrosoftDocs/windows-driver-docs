@@ -2,7 +2,15 @@
 title: Offloading IPsec Tasks in the Receive Path
 description: Offloading IPsec Tasks in the Receive Path
 ms.assetid: d1dff4fa-7354-4c8c-8591-223c6b524619
-keywords: ["ESP-protected packets WDK IPsec offload , receive path offload", "AH-protected packets WDK IPsec offload , receive path offload", "receive path offload WDK IPsec offload"]
+keywords:
+- ESP-protected packets WDK IPsec offload , receive path offload
+- AH-protected packets WDK IPsec offload , receive path offload
+- receive path offload WDK IPsec offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Offloading IPsec Tasks in the Receive Path

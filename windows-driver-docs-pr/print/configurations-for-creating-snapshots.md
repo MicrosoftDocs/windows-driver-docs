@@ -2,14 +2,17 @@
 title: Configurations for Creating Snapshots
 author: windows-driver-content
 description: Configurations for Creating Snapshots
-MS-HAID:
-- 'gplfiles\_65390d47-e438-4ab8-9558-094807749154.xml'
-- 'print.configurations\_for\_creating\_snapshots'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d837348e-81e2-432a-b8b2-5df9cc1c7a9a
-keywords: ["GDL WDK , configurations", "snapshots WDK GDL , configurations for snapshots", "parser WDK GDL , configurations for snapshots", "configurations WDK GDL , creating snapshots"]
+keywords:
+- GDL WDK , configurations
+- snapshots WDK GDL , configurations for snapshots
+- parser WDK GDL , configurations for snapshots
+- configurations WDK GDL , creating snapshots
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configurations for Creating Snapshots

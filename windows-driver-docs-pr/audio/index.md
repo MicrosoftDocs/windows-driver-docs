@@ -1,8 +1,11 @@
 ---
 Description: Audio Devices Design Guide
-MS-HAID: 'audio.audio\_devices\_design\_guide'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Audio Devices Design Guide
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio Devices Design Guide

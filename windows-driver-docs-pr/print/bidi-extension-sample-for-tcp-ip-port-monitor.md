@@ -2,14 +2,15 @@
 title: Bidi Extension Sample for TCP/IP Port Monitor
 author: windows-driver-content
 description: Bidi Extension Sample for TCP/IP Port Monitor
-MS-HAID:
-- 'autocfg\_45081edb-c5ca-4056-8028-be227d1d18a8.xml'
-- 'print.bidi\_extension\_sample\_for\_tcp\_ip\_port\_monitor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 76454b0c-0e02-4372-97ed-2401a785cef8
-keywords: ["bidi extension files WDK printer autoconfig", "in-box autoconfiguration support WDK printer , bidi extension files"]
+keywords:
+- bidi extension files WDK printer autoconfig
+- in-box autoconfiguration support WDK printer , bidi extension files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bidi Extension Sample for TCP/IP Port Monitor

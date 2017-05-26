@@ -2,7 +2,16 @@
 title: Format of a Text Log Section
 description: Format of a Text Log Section
 ms.assetid: e0f7227c-6cd8-4c66-a38b-104f222847bc
-keywords: ["sections WDK SetupAPI logging", "formats WDK SetupAPI logging", "text logs WDK SetupAPI , sections", "SetupAPI logging WDK Windows Vista , text log sections"]
+keywords:
+- sections WDK SetupAPI logging
+- formats WDK SetupAPI logging
+- text logs WDK SetupAPI , sections
+- SetupAPI logging WDK Windows Vista , text log sections
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Format of a Text Log Section

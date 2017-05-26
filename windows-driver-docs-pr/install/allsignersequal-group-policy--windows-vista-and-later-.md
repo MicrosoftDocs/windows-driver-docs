@@ -2,7 +2,16 @@
 title: AllSignersEqual Group Policy
 description: AllSignersEqual Group Policy
 ms.assetid: b23eed87-76ce-4447-86d2-2be370ee57c5
-keywords: ["driver selections WDK device installations , AllSignersEqual group policy", "locating drivers for device installation WDK device installations , AllSignersEqual group policy", "searching for drivers during device installation WDK device installations , AllSignersEqual group policy", "AllSignersEq"]
+keywords:
+- driver selections WDK device installations , AllSignersEqual group policy
+- locating drivers for device installation WDK device installations , AllSignersEqual group policy
+- searching for drivers during device installation WDK device installations , AllSignersEqual group policy
+- AllSignersEq
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AllSignersEqual Group Policy

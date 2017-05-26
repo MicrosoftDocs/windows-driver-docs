@@ -2,14 +2,15 @@
 title: Autoconfiguration Flow for GPD in Windows Vista
 author: windows-driver-content
 description: Autoconfiguration Flow for GPD in Windows Vista
-MS-HAID:
-- 'autocfg\_98e70186-0e3f-4c0d-afb9-fcf5664fafed.xml'
-- 'print.autoconfiguration\_flow\_for\_gpd\_in\_windows\_vista'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 41468218-fa05-4431-a57d-3056449f2e2e
-keywords: ["GPD files WDK GDL extensions , autoconfiguration flow", "in-box autoconfiguration support WDK printer , sequence of steps"]
+keywords:
+- GPD files WDK GDL extensions , autoconfiguration flow
+- in-box autoconfiguration support WDK printer , sequence of steps
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Autoconfiguration Flow for GPD in Windows Vista

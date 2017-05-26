@@ -1,8 +1,11 @@
 ---
 Description: The Windows Driver Frameworks Files
-MS-HAID: 'wpddk.the\_windows\_driver\_foundation\_files'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: The Windows Driver Frameworks Files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The Windows Driver Frameworks Files

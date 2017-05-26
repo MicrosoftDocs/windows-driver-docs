@@ -2,13 +2,12 @@
 title: IStream Transfer Driver Example
 author: windows-driver-content
 description: IStream Transfer Driver Example
-MS-HAID:
-- 'WIA\_arch\_da400e7c-1648-49da-8b8e-a3ac391c1652.xml'
-- 'image.istream\_transfer\_driver\_example'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fb830522-f95e-4dd7-8c1b-de092a6c5a51
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IStream Transfer Driver Example

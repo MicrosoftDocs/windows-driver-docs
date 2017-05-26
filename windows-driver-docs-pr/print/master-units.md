@@ -2,14 +2,15 @@
 title: Master Units
 author: windows-driver-content
 description: Master Units
-MS-HAID:
-- 'nt5gpd\_c7da5ac1-b971-4a3d-a5f2-f69a98f2278f.xml'
-- 'print.master\_units'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6c3abf16-1206-4b90-a7e9-c8a581191502
-keywords: ["GPD files WDK Unidrv , master units", "master units WDK GPD files"]
+keywords:
+- GPD files WDK Unidrv , master units
+- master units WDK GPD files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Master Units

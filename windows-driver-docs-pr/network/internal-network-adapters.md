@@ -2,6 +2,11 @@
 title: Internal Network Adapters
 description: Internal Network Adapters
 ms.assetid: 4E4B0EC9-8E4C-47FC-B608-EC6D18367A79
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Internal Network Adapters

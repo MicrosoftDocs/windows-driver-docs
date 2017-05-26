@@ -2,14 +2,17 @@
 title: Tuner Properties
 author: windows-driver-content
 description: Tuner Properties
-MS-HAID:
-- 'vidcapds\_db50776f-54f5-4fc1-9378-058f2d315c1d.xml'
-- 'stream.tuner\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 43a0c018-fb0e-4a45-9c9a-5896f1e728ac
-keywords: ["tuner properties WDK video capture", "PROPSETID_TUNER", "radio tuner properties WDK video capture", "TV tuner properties WDK video capture"]
+keywords:
+- tuner properties WDK video capture
+- PROPSETID_TUNER
+- radio tuner properties WDK video capture
+- TV tuner properties WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tuner Properties

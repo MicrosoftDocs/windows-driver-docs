@@ -2,10 +2,12 @@
 title: EFI\_USBFN\_IO\_PROTOCOL.GetMaxTransferSize
 author: windows-driver-content
 description: EFI\_USBFN\_IO\_PROTOCOL.GetMaxTransferSize
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 61160708-029b-4691-87fe-22d06424220d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EFI\_USBFN\_IO\_PROTOCOL.GetMaxTransferSize

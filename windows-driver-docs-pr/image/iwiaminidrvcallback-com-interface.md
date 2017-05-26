@@ -2,13 +2,12 @@
 title: IWiaMiniDrvCallBack COM Interface
 author: windows-driver-content
 description: IWiaMiniDrvCallBack COM Interface
-MS-HAID:
-- 'WIA\_arch\_e1978c90-692e-4473-84fa-c644d59de8e9.xml'
-- 'image.iwiaminidrvcallback\_com\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a535d718-e34f-4cd0-9137-83d28d0b8e9c
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IWiaMiniDrvCallBack COM Interface

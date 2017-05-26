@@ -2,14 +2,18 @@
 title: Interface Identifiers for Printer Drivers
 author: windows-driver-content
 description: Interface Identifiers for Printer Drivers
-MS-HAID:
-- 'custdrvr\_f26b006e-edec-4272-8e4e-9be75b383556.xml'
-- 'print.interface\_identifiers\_for\_printer\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8182cba5-4461-4ca0-8b01-342519609b1f
-keywords: ["COM interfaces WDK print , interface identifiers", "interface identifiers WDK print", "plug-ins WDK print , interface identifiers", "identifiers WDK printer", "GUIDs WDK printer"]
+keywords:
+- COM interfaces WDK print , interface identifiers
+- interface identifiers WDK print
+- plug-ins WDK print , interface identifiers
+- identifiers WDK printer
+- GUIDs WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Interface Identifiers for Printer Drivers

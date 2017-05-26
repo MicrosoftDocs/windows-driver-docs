@@ -2,13 +2,12 @@
 title: Print Ticket and Print Capabilities Support
 author: windows-driver-content
 description: Print Ticket and Print Capabilities Support
-MS-HAID:
-- 'drvarch\_c1af12fd-586f-44bb-886c-9d867573df0b.xml'
-- 'print.print\_ticket\_and\_print\_capabilities\_support'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 052901d1-455a-4a09-8e18-6eaa0d6ca524
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Ticket and Print Capabilities Support

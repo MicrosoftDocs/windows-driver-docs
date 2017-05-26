@@ -1,10 +1,12 @@
 ---
 title: PrivilegedApplications
 description: PrivilegedApplications
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fb0c4a7e-173e-4768-b1ba-a6c5149d61aa
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PrivilegedApplications

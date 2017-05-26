@@ -2,14 +2,16 @@
 title: Processing Mutex in AVStream
 author: windows-driver-content
 description: Processing Mutex in AVStream
-MS-HAID:
-- 'avsover\_97bed035-018e-4398-8284-62013830df12.xml'
-- 'stream.processing\_mutex\_in\_avstream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dd84fe3f-352e-4641-99d7-792ccecb0b40
-keywords: ["AVStream mutexes WDK", "mutexes WDK AVStream", "processing mutex WDK AVStream"]
+keywords:
+- AVStream mutexes WDK
+- mutexes WDK AVStream
+- processing mutex WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Processing Mutex in AVStream

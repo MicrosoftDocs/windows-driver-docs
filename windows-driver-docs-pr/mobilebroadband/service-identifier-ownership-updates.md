@@ -1,10 +1,12 @@
 ---
 title: Service identifier ownership updates
 description: Service identifier ownership updates
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6cb03631-def6-44d4-a73a-0e6124e3b1f2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Service identifier ownership updates

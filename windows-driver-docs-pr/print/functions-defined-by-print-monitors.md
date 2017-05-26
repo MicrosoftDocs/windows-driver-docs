@@ -2,14 +2,15 @@
 title: Functions Defined by Print Monitors
 author: windows-driver-content
 description: Functions Defined by Print Monitors
-MS-HAID:
-- 'provider\_42336e3c-b4b9-4085-b83a-80101a8d45f8.xml'
-- 'print.functions\_defined\_by\_print\_monitors'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 718682a5-4f64-47f3-9b92-88f89c1f7516
-keywords: ["functions WDK print", "print monitors WDK , functions"]
+keywords:
+- functions WDK print
+- print monitors WDK , functions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Functions Defined by Print Monitors

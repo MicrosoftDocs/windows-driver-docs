@@ -2,6 +2,11 @@
 title: Stack Based Failure Injection
 description: The Stack Based Failure Injection option injects resource failures in kernel mode drivers.
 ms.assetid: B5C06413-81FB-46DA-B053-80ED347DA3EB
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stack Based Failure Injection

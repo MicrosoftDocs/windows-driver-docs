@@ -2,7 +2,14 @@
 title: Creating a New Device Setup Class
 description: Creating a New Device Setup Class
 ms.assetid: 3235d1e9-f6f7-4efe-a50c-5ea7a9956e7e
-keywords: ["device setup classes WDK device installations", "setup classes WDK device installations"]
+keywords:
+- device setup classes WDK device installations
+- setup classes WDK device installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a New Device Setup Class

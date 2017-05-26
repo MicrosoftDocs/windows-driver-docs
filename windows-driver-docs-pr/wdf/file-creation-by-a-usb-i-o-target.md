@@ -3,13 +3,24 @@ title: File Creation by a USB I/O Target
 author: windows-driver-content
 description: File Creation by a USB I/O Target
 ms.assetid: 44bbc4c7-632d-4d75-94b9-f65e4d480e90
-keywords: ["user-mode drivers WDK UMDF , USB I/O targets, file creation", "UMDF WDK , USB I/O targets, file creation", "User-Mode Driver Framework WDK , USB I/O targets", "framework-based drivers WDK UMDF , USB I/O targets", "USB I/O targets WDK UMDF , file creation", "I/O targets WDK UMDF , USB, file creation"]
+keywords:
+- user-mode drivers WDK UMDF , USB I/O targets, file creation
+- UMDF WDK , USB I/O targets, file creation
+- User-Mode Driver Framework WDK , USB I/O targets
+- framework-based drivers WDK UMDF , USB I/O targets
+- USB I/O targets WDK UMDF , file creation
+- I/O targets WDK UMDF , USB, file creation
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # File Creation by a USB I/O Target
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 During its initialization, the USB I/O target creates an intra-stack file object, which represents a default session that the USB I/O target keeps open. For more information about an intra-stack file object, see [Creating a File Object to Handle I/O](creating-a-file-object-to-handle-i-o.md). The USB I/O target or its USB pipe target children use this file object to send any I/O that they originate (for example, I/O to obtain the USB configuration descriptor).
 

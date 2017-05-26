@@ -2,6 +2,11 @@
 ms.assetid: eaefc81a-b5e3-4763-bf51-8ec47f620e72
 title: Creating a Driver Package
 description: Creating a Driver Package
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Driver Package

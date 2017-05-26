@@ -1,10 +1,12 @@
 ---
 title: Network cost information element
 description: Network cost information element
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 973294b5-0c4f-4056-ad28-62c58f10c232
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network cost information element

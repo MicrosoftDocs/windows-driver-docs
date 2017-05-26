@@ -2,7 +2,16 @@
 title: CoNDIS TAPI Initialization
 description: CoNDIS TAPI Initialization
 ms.assetid: eabb2038-ab64-4f48-8c94-e47d1139727b
-keywords: ["CoNDIS WAN drivers WDK networking , TAPI services", "telephonic services WDK WAN , initiliazing", "CoNDIS TAPI WDK networking , initializing", "initializing CoNDIS TAPI"]
+keywords:
+- CoNDIS WAN drivers WDK networking , TAPI services
+- telephonic services WDK WAN , initiliazing
+- CoNDIS TAPI WDK networking , initializing
+- initializing CoNDIS TAPI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CoNDIS TAPI Initialization

@@ -2,13 +2,12 @@
 title: Creating the WIA Driver Item Tree
 author: windows-driver-content
 description: Creating the WIA Driver Item Tree
-MS-HAID:
-- 'WIA\_drv\_basic\_b7d6ef2c-2798-466e-9e59-aa9e3bad7d78.xml'
-- 'image.creating\_the\_wia\_driver\_item\_tree'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3ae489b9-175e-4b1e-a6c8-a72a3a3c212a
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating the WIA Driver Item Tree

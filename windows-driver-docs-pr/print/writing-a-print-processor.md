@@ -2,14 +2,19 @@
 title: Writing a Print Processor
 author: windows-driver-content
 description: Writing a Print Processor
-MS-HAID:
-- 'provider\_2d9ec794-4d25-4156-863a-ee48ffd22815.xml'
-- 'print.writing\_a\_print\_processor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2443ec67-ef5d-46eb-b00a-deafad9abc69
-keywords: ["print spooler customizing WDK , print processors", "spooler customizing WDK print , print processors", "customizing print spooler components WDK , print processors", "print processors WDK", "processors WDK print", "writing print processors"]
+keywords:
+- print spooler customizing WDK , print processors
+- spooler customizing WDK print , print processors
+- customizing print spooler components WDK , print processors
+- print processors WDK
+- processors WDK print
+- writing print processors
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing a Print Processor

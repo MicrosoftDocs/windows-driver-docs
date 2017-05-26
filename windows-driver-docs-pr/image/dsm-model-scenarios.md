@@ -2,13 +2,12 @@
 title: DSM Model Scenarios
 author: windows-driver-content
 description: DSM Model Scenarios
-MS-HAID:
-- 'dsm\_des\_theory\_5f5e2be2-9114-4fe5-856e-c728eae61c40.xml'
-- 'image.dsm\_model\_scenarios'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 326fb0b5-77a6-4c2b-9670-aceb2eacc911
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DSM Model Scenarios

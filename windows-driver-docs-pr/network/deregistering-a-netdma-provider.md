@@ -2,7 +2,15 @@
 title: Deregistering a NetDMA Provider
 description: Deregistering a NetDMA Provider
 ms.assetid: 4fe5f378-2683-44e7-8056-581783045ad4
-keywords: ["NetDMA provider drivers WDK networking , deregistering", "deregistering NetDMA provider drivers", "unegistering NetDMA provider drivers"]
+keywords:
+- NetDMA provider drivers WDK networking , deregistering
+- deregistering NetDMA provider drivers
+- unegistering NetDMA provider drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Deregistering a NetDMA Provider

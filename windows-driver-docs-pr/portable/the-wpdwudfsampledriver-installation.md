@@ -1,8 +1,11 @@
 ---
 Description: Installing the WpdWudfSampleDriver Sample
-MS-HAID: 'wpddk.the\_wpdwudfsampledriver\_installation'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Installing the WpdWudfSampleDriver Sample
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing the WpdWudfSampleDriver Sample

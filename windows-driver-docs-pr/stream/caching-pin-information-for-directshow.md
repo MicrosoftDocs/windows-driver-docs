@@ -2,14 +2,19 @@
 title: Caching Pin Information for DirectShow
 author: windows-driver-content
 description: Caching Pin Information for DirectShow
-MS-HAID:
-- 'bdadg\_97e17562-e49d-4d72-92fa-09f568b28534.xml'
-- 'stream.caching\_pin\_information\_for\_directshow'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1e6a973b-32d2-4ac2-9cd6-f4d3c329cecf
-keywords: ["pin data cache WDK BDA", "cache WDK AVStream", "DirectShow pin data cache WDK AVStream", "updating pin data cache WDK AVStream", "Broadcast Driver Architecture WDK AVStream , pin data cache", "BDA WDK AVStream , pin data cache"]
+keywords:
+- pin data cache WDK BDA
+- cache WDK AVStream
+- DirectShow pin data cache WDK AVStream
+- updating pin data cache WDK AVStream
+- Broadcast Driver Architecture WDK AVStream , pin data cache
+- BDA WDK AVStream , pin data cache
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Caching Pin Information for DirectShow

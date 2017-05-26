@@ -2,13 +2,12 @@
 title: WIA Tools
 author: windows-driver-content
 description: WIA Tools
-MS-HAID:
-- 'WIA\_GS\_8cd0287d-7940-409e-b23e-2d911f1b075f.xml'
-- 'image.wia\_tools'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 17939e85-b69b-4d89-9f97-a4f061b8dd5b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Tools

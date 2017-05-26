@@ -1,8 +1,11 @@
 ---
 Description: Retrieving a list of Supported Resources
-MS-HAID: 'wpddk.retrieving\_a\_list\_of\_supported\_resources'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Retrieving a list of Supported Resources
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Retrieving a list of Supported Resources

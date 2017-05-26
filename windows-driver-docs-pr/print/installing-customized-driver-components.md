@@ -2,14 +2,17 @@
 title: Installing Customized Driver Components
 author: windows-driver-content
 description: Installing Customized Driver Components
-MS-HAID:
-- 'custdrvr\_b80b941b-4f53-416c-b20b-2940696f3d86.xml'
-- 'print.installing\_customized\_driver\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 88f189bd-97f5-4bc6-ba3e-3d9da18e2102
-keywords: ["printer driver customizing WDK , installing components", "customizing printer drivers WDK , installing components", "installing custom printer driver components WDK", "INF files WDK print , customized driver components"]
+keywords:
+- printer driver customizing WDK , installing components
+- customizing printer drivers WDK , installing components
+- installing custom printer driver components WDK
+- INF files WDK print , customized driver components
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing Customized Driver Components

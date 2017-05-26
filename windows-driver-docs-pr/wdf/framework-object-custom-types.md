@@ -3,6 +3,11 @@ title: Framework Object Custom Types
 author: windows-driver-content
 description: Framework Object Custom Types
 ms.assetid: E00393ED-7285-4354-9E1B-D9ABDB7DC9F2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Framework Object Custom Types

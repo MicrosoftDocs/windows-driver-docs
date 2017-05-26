@@ -2,7 +2,18 @@
 title: Vendor's GFX User Interface
 description: Vendor's GFX User Interface
 ms.assetid: 853c7df4-6292-44c1-b104-7c62cbc36b3a
-keywords: ["GFX filters WDK audio , user interfaces", "user interface WDK GFX filters", "ISpecifyPropertyPages interface", "IPropertyPage interface", "property page objects WDK GFX filters", "COM user interfaces WDK GFX filters"]
+keywords:
+- GFX filters WDK audio , user interfaces
+- user interface WDK GFX filters
+- ISpecifyPropertyPages interface
+- IPropertyPage interface
+- property page objects WDK GFX filters
+- COM user interfaces WDK GFX filters
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Vendor's GFX User Interface

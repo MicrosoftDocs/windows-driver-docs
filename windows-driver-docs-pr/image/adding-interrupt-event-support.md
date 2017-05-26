@@ -2,13 +2,12 @@
 title: Adding Interrupt Event Support
 author: windows-driver-content
 description: Adding Interrupt Event Support
-MS-HAID:
-- 'WIA\_db\_event\_396502fc-3098-4dcb-9874-4cb6282b27f4.xml'
-- 'image.adding\_interrupt\_event\_support'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 74fbaa7c-f058-4b17-b278-3dea0faf4431
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding Interrupt Event Support

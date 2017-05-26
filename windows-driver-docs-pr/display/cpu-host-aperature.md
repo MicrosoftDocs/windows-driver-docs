@@ -2,6 +2,11 @@
 title: CPU host aperture
 description: For 32bit OS discrete graphics processing units (GPUs), which donâ€™t support resizable BAR or when resizing the frame buffer BAR fails, Windows Display Driver Model (WDDM) v2 will offer an alternative mechanism by which a discrete GPU VRAM can be efficiently accessed. For GPUs, which support a programmable BAR address space, a new CPU Host Aperture functionality is introduced in WDDM v2 to abstract that functionality.
 ms.assetid: 0E4D01E4-93AF-4205-A360-0CA3470716D2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CPU host aperture

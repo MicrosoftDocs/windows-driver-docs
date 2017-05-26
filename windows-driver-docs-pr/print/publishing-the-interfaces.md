@@ -2,14 +2,18 @@
 title: Publishing the Interfaces
 author: windows-driver-content
 description: Publishing the Interfaces
-MS-HAID:
-- 'drvarch\_cb0224d0-b056-4350-b948-e21d034c1465.xml'
-- 'print.publishing\_the\_interfaces'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3beefaa0-58b9-459a-89e5-1d9d81e80519
-keywords: ["IPrintCoreHelperPS", "IPrintCoreHelperUni", "IPrintCoreHelper", "helper interfaces WDK printer interface DLL", "publishing WDK printer interface DLL"]
+keywords:
+- IPrintCoreHelperPS
+- IPrintCoreHelperUni
+- IPrintCoreHelper
+- helper interfaces WDK printer interface DLL
+- publishing WDK printer interface DLL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Publishing the Interfaces

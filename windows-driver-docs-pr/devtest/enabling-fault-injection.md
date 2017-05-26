@@ -2,6 +2,11 @@
 title: Enabling Fault Injection
 description: Enabling Fault Injection
 ms.assetid: 451a5e9e-bc5c-4148-b475-7f38c535cf6a
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling Fault Injection

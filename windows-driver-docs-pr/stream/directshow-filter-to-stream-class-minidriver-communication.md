@@ -2,14 +2,15 @@
 title: DirectShow Filter to Stream Class Minidriver Communication
 author: windows-driver-content
 description: DirectShow Filter to Stream Class Minidriver Communication
-MS-HAID:
-- 'vidcapds\_951def8a-3a83-4fd1-9479-4d6610ba3226.xml'
-- 'stream.directshow\_filter\_to\_stream\_class\_minidriver\_communication'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d2122827-758c-4557-b2fd-8774179b5da4
-keywords: ["filter graph configurations WDK video capture , DirectShow", "DirectShow WDK video capture"]
+keywords:
+- filter graph configurations WDK video capture , DirectShow
+- DirectShow WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectShow Filter to Stream Class Minidriver Communication

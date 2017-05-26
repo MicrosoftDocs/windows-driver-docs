@@ -2,14 +2,16 @@
 title: Locking and Unlocking Stream Pointers
 author: windows-driver-content
 description: Locking and Unlocking Stream Pointers
-MS-HAID:
-- 'avsover\_320bf93f-fb53-4a8c-9eef-940593151fa2.xml'
-- 'stream.locking\_and\_unlocking\_stream\_pointers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3826a5bc-4ba5-4ada-a8aa-e7bbd949187e
-keywords: ["stream pointers WDK AVStream , locked and unlocked", "locked stream pointers WDK AVStream", "unlocked stream pointers WDK AVStream"]
+keywords:
+- stream pointers WDK AVStream , locked and unlocked
+- locked stream pointers WDK AVStream
+- unlocked stream pointers WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Locking and Unlocking Stream Pointers

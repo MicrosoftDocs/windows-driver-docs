@@ -2,10 +2,12 @@
 title: Serial Controller Drivers Overview
 author: windows-driver-content
 description: All versions of Windows provide driver support for serial controller devices.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1EA0221E-0F68-429B-9DA5-4AE2D3394A09
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Serial Controller Drivers Overview

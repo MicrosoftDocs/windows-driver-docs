@@ -2,7 +2,13 @@
 title: Macroblock Addresses
 description: Macroblock Addresses
 ms.assetid: f04c5462-db7c-4917-b8ef-22a630c82994
-keywords: ["macroblocks WDK DirectX VA , addresses"]
+keywords:
+- macroblocks WDK DirectX VA , addresses
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Macroblock Addresses

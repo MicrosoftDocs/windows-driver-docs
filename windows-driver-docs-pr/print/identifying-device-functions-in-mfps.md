@@ -2,13 +2,12 @@
 title: Identifying Device Functions in MFPs
 author: windows-driver-content
 description: Identifying Device Functions in MFPs
-MS-HAID:
-- 'prn\_dxpui\_4b644a84-be1f-4a0d-a5eb-972faf3d56ec.xml'
-- 'print.identifying\_device\_functions\_in\_mfps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 14016c43-b93a-4009-848b-1bcf3f1d94b6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Identifying Device Functions in MFPs

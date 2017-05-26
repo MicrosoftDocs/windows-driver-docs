@@ -3,7 +3,19 @@ title: Using the Registry in WDF Drivers
 author: windows-driver-content
 description: Using the Registry in WDF Drivers
 ms.assetid: 278a5ccb-dd43-4b26-999f-9207a4ede9dc
-keywords: ["registry WDK KMDF", "registry-key objects WDK KMDF", "framework-based drivers WDK KMDF , registry", "kernel-mode drivers WDK KMDF , registry", "KMDF WDK , registry", "Kernel-Mode Driver Framework WDK , registry", "keys WDK KMDF"]
+keywords:
+- registry WDK KMDF
+- registry-key objects WDK KMDF
+- framework-based drivers WDK KMDF , registry
+- kernel-mode drivers WDK KMDF , registry
+- KMDF WDK , registry
+- Kernel-Mode Driver Framework WDK , registry
+- keys WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the Registry in WDF Drivers

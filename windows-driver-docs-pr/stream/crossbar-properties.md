@@ -2,14 +2,15 @@
 title: Crossbar Properties
 author: windows-driver-content
 description: Crossbar Properties
-MS-HAID:
-- 'vidcapds\_f81ee1be-6afb-49ad-8147-152adb383165.xml'
-- 'stream.crossbar\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 41e46d45-90f8-4b0c-ab27-1fec4202b711
-keywords: ["crossbar properties WDK video capture", "PROPSETID_VIDCAP_CROSSBAR"]
+keywords:
+- crossbar properties WDK video capture
+- PROPSETID_VIDCAP_CROSSBAR
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Crossbar Properties

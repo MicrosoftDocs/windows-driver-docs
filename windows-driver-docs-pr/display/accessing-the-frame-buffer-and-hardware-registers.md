@@ -2,7 +2,21 @@
 title: Accessing the Frame Buffer and Hardware Registers
 description: Accessing the Frame Buffer and Hardware Registers
 ms.assetid: 6f735f33-0bb7-45b8-ac01-f34ec4937a8b
-keywords: ["frame buffers WDK Windows 2000 display", "reduce display driver size WDK Windows 2000", "size WDK Windows 2000 display", "display drivers WDK Windows 2000 , size reduction", "video hardware registers WDK Windows 2000 display", "hardware registers WDK Windows 2000 display", "banks WDK Windows 2000 display", "banked memory WDK Windows 2000 display", "linear frame buffers WDK Windows 2000 display"]
+keywords:
+- frame buffers WDK Windows 2000 display
+- reduce display driver size WDK Windows 2000
+- size WDK Windows 2000 display
+- display drivers WDK Windows 2000 , size reduction
+- video hardware registers WDK Windows 2000 display
+- hardware registers WDK Windows 2000 display
+- banks WDK Windows 2000 display
+- banked memory WDK Windows 2000 display
+- linear frame buffers WDK Windows 2000 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing the Frame Buffer and Hardware Registers

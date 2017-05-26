@@ -2,14 +2,15 @@
 title: Customized PDEV Structures
 author: windows-driver-content
 description: Customized PDEV Structures
-MS-HAID:
-- 'custdrvr\_00b01a5a-f8d5-42ce-ab0b-f681725f6583.xml'
-- 'print.customized\_pdev\_structures'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e5c51b9a-5f73-4411-88d8-931981a8450c
-keywords: ["rendering plug-ins WDK print , PDEV structures", "PDEV WDK print"]
+keywords:
+- rendering plug-ins WDK print , PDEV structures
+- PDEV WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Customized PDEV Structures

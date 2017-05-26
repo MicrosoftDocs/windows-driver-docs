@@ -3,11 +3,22 @@ title: Supporting Kernel-Mode Clients in UMDF 1.x Drivers
 author: windows-driver-content
 description: Supporting Kernel-Mode Clients in UMDF 1.x Drivers
 ms.assetid: 933dc761-2616-4bee-8357-dbb6644596c2
-keywords: ["kernel-mode clients WDK UMDF", "UMDF drivers WDK UMDF , kernel-mode clients", "user-mode drivers WDK UMDF , kernel-mode clients", "UMDF WDK , kernel-mode clients", "User-Mode Driver Framework WDK , kernel-mode clients"]
+keywords:
+- kernel-mode clients WDK UMDF
+- UMDF drivers WDK UMDF , kernel-mode clients
+- user-mode drivers WDK UMDF , kernel-mode clients
+- UMDF WDK , kernel-mode clients
+- User-Mode Driver Framework WDK , kernel-mode clients
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Kernel-Mode Clients in UMDF 1.x Drivers
 
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 UMDF versions 1.9 and later allow UMDF drivers to support *kernel-mode clients*. A kernel-mode client can be either of the following:
 

@@ -2,14 +2,16 @@
 title: Video Control Properties
 author: windows-driver-content
 description: Video Control Properties
-MS-HAID:
-- 'vidcapds\_738c1bb7-3a8d-4671-bc6d-47c4a982cfcb.xml'
-- 'stream.video\_control\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3b39295f-b4fa-4d6a-bad8-f759bda284b1
-keywords: ["video control properties WDK video capture", "control properties WDK video capture", "PROPSETID_VIDCAP_VIDEOCONTROL"]
+keywords:
+- video control properties WDK video capture
+- control properties WDK video capture
+- PROPSETID_VIDCAP_VIDEOCONTROL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Video Control Properties

@@ -1,8 +1,11 @@
 ---
 Description: Using the WpdInfo Tool
-MS-HAID: 'wpddk.using\_the\_wpdinfo\_tool'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Using the WpdInfo Tool
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the WpdInfo Tool

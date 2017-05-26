@@ -2,14 +2,25 @@
 title: GDL Directives for Configurations
 author: windows-driver-content
 description: GDL Directives for Configurations
-MS-HAID:
-- 'gplfiles\_751e41ad-89b4-42e2-9fde-f3e488d0b894.xml'
-- 'print.gdl\_directives\_for\_configurations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c7b3c364-06b2-4de8-9fe6-2c77d313a2f8
-keywords: ["directives WDK GDL , configuration directives", "source files WDK GDL , configuration directives", "configuration directives WDK GDL", "parser WDK GDL , directives", "Feature directive WDK GDL", "Option directive WDK GDL", "Switch/Case directive WDK GDL", "Default directive WDK GDL", "DefaultOption directive WDK GDL", "Constraints directive WDK GDL", "InvalidCombinations directive WDK GDL", "configurations WDK GDL , directives"]
+keywords:
+- directives WDK GDL , configuration directives
+- source files WDK GDL , configuration directives
+- configuration directives WDK GDL
+- parser WDK GDL , directives
+- Feature directive WDK GDL
+- Option directive WDK GDL
+- Switch/Case directive WDK GDL
+- Default directive WDK GDL
+- DefaultOption directive WDK GDL
+- Constraints directive WDK GDL
+- InvalidCombinations directive WDK GDL
+- configurations WDK GDL , directives
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Directives for Configurations

@@ -2,14 +2,20 @@
 title: Installing an Advanced Properties Page for a COM Port
 author: windows-driver-content
 description: Installing an Advanced Properties Page for a COM Port
-MS-HAID:
-- 'sseovr\_e34ea760-0e77-4c87-ba3c-34ceb75282cb.xml'
-- 'serports.installing\_an\_advanced\_properties\_page\_for\_a\_com\_port'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 056fd245-a9d2-4a10-9e92-fe75e51f6770
-keywords: ["advanced COM port properties page WDK serial devices", "COM ports WDK serial devices", "default user dialog box for COM port", "overriding default dialog box WDK serial devices", "port numbers WDK serial devices", "FIFO control parameters WDK serial devices", "COM port numbers WDK serial devices"]
+keywords:
+- advanced COM port properties page WDK serial devices
+- COM ports WDK serial devices
+- default user dialog box for COM port
+- overriding default dialog box WDK serial devices
+- port numbers WDK serial devices
+- FIFO control parameters WDK serial devices
+- COM port numbers WDK serial devices
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing an Advanced Properties Page for a COM Port

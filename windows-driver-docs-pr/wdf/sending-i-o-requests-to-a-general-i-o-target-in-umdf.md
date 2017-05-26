@@ -3,13 +3,20 @@ title: Sending I/O Requests to a General I/O Target in UMDF
 author: windows-driver-content
 description: Sending I/O Requests to a General I/O Target in UMDF
 ms.assetid: f373afa8-292a-47bb-af6f-5035287d1e8c
-keywords: ["general I/O targets WDK UMDF , sending I/O requests to", "sending I/O requests WDK UMDF"]
+keywords:
+- general I/O targets WDK UMDF , sending I/O requests to
+- sending I/O requests WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sending I/O Requests to a General I/O Target in UMDF
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 A UMDF driver can send I/O requests to general I/O targets either synchronously or asynchronously.
 

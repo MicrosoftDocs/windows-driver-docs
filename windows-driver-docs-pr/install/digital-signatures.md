@@ -2,7 +2,21 @@
 title: Digital Signatures
 description: Digital Signatures
 ms.assetid: 637212b2-bc57-414b-9a06-07f79d9264f9
-keywords: ["driver package digital signatures WDK", "package digital signatures WDK", "digital signatures WDK , driver packages", "signatures WDK , driver packages", "driver signing WDK , driver packages", "signing drivers WDK , driver packages", "device installations WDK , digital signatures", "driver signing WDK", "certificates WDK , about digital signatures"]
+keywords:
+- driver package digital signatures WDK
+- package digital signatures WDK
+- digital signatures WDK , driver packages
+- signatures WDK , driver packages
+- driver signing WDK , driver packages
+- signing drivers WDK , driver packages
+- device installations WDK , digital signatures
+- driver signing WDK
+- certificates WDK , about digital signatures
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Digital Signatures

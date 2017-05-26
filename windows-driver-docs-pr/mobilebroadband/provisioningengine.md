@@ -1,10 +1,12 @@
 ---
 title: ProvisioningEngine
 description: ProvisioningEngine
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b6b10145-d554-43be-8682-1355145b3241
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ProvisioningEngine

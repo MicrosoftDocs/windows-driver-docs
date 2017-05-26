@@ -2,13 +2,12 @@
 title: Calling Order for Minidriver Functions
 author: windows-driver-content
 description: Calling Order for Minidriver Functions
-MS-HAID:
-- 'WIA\_drv\_basic\_d5b7e7e9-0773-4699-9344-e8f6ddd6c92f.xml'
-- 'image.calling\_order\_for\_minidriver\_functions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0e51d29c-964d-44d5-86be-095601286f94
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Calling Order for Minidriver Functions

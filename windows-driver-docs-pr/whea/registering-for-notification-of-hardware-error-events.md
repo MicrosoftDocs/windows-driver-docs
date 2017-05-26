@@ -2,14 +2,18 @@
 title: Registering for Notification of Hardware Error Events
 author: windows-driver-content
 description: Registering for Notification of Hardware Error Events
-MS-HAID:
-- 'whea\_4ab3285a-ccc1-4733-994e-b1d5c5f965d7.xml'
-- 'whea.registering\_for\_notification\_of\_hardware\_error\_events'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 86816fc7-fa69-4ecf-9d50-822b0fa6992d
-keywords: ["events WDK WHEA , registering for notifications", "registering hardware event notifications", "notifications WDK WHEA", "WHEA WDK , registering for event notifications", "Windows Hardware Error Architecture WDK , registering for event notifications"]
+keywords:
+- events WDK WHEA , registering for notifications
+- registering hardware event notifications
+- notifications WDK WHEA
+- WHEA WDK , registering for event notifications
+- Windows Hardware Error Architecture WDK , registering for event notifications
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering for Notification of Hardware Error Events

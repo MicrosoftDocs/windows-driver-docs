@@ -2,13 +2,12 @@
 title: SOAP Communications for WIA Scanners
 author: windows-driver-content
 description: SOAP Communications for WIA Scanners
-MS-HAID:
-- 'WIA\_wsd\_scan\_40104358-f0a2-42ef-90b1-bd45d926f6b0.xml'
-- 'image.soap\_communications\_for\_wia\_scanners'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 853350eb-1e42-4a16-a1f4-f4f69f5e80f7
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SOAP Communications for WIA Scanners

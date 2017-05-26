@@ -2,7 +2,29 @@
 title: Using the Bluetooth Driver Stack
 description: Using the Bluetooth Driver Stack
 ms.assetid: c8a68c30-4cd6-4ee2-a653-7e0c1a28f4cf
-keywords: ["Bluetooth WDK , driver stack", "driver stacks WDK Bluetooth", "stacks WDK Bluetooth", "Plug and Play WDK Bluetooth", "PnP WDK Bluetooth", "IRPs WDK Bluetooth", "profile drivers WDK Bluetooth", "IOCTL_INTERNAL_BTH_SUBMIT_BRB", "Bluetooth WDK , Bluetooth request blocks", "BRBs WDK", "Bluetooth request blocks WDK", "IRP_MJ_DEVICE_CONTROL", "IRP_MJ_INTERNAL_DEVICE_CONTROL", "Bluetooth WDK , IOCTLs", "IOCTLs WDK Bluetooth", "remote connections WDK Bluetooth", "connections WDK Bluetooth"]
+keywords:
+- Bluetooth WDK , driver stack
+- driver stacks WDK Bluetooth
+- stacks WDK Bluetooth
+- Plug and Play WDK Bluetooth
+- PnP WDK Bluetooth
+- IRPs WDK Bluetooth
+- profile drivers WDK Bluetooth
+- IOCTL_INTERNAL_BTH_SUBMIT_BRB
+- Bluetooth WDK , Bluetooth request blocks
+- BRBs WDK
+- Bluetooth request blocks WDK
+- IRP_MJ_DEVICE_CONTROL
+- IRP_MJ_INTERNAL_DEVICE_CONTROL
+- Bluetooth WDK , IOCTLs
+- IOCTLs WDK Bluetooth
+- remote connections WDK Bluetooth
+- connections WDK Bluetooth
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the Bluetooth Driver Stack

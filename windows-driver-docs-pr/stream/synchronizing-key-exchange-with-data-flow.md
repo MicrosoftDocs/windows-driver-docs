@@ -2,14 +2,21 @@
 title: Synchronizing Key Exchange with Data Flow
 author: windows-driver-content
 description: Synchronizing Key Exchange with Data Flow
-MS-HAID:
-- 'dvd-design\_3b2e981e-809d-4fb1-9f59-cb39c0eead46.xml'
-- 'stream.synchronizing\_key\_exchange\_with\_data\_flow'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 54abc258-d26a-4d42-a5aa-712cdae76b6d
-keywords: ["DVD decoder minidrivers WDK , copyright protection", "decoder minidrivers WDK DVD , copyright protection", "copyright protection WDK DVD decoder", "key exchange WDK DVD decoder", "decryption WDK DVD decoder", "encryption WDK DVD decoder", "cryptography WDK DVD decoder", "DVD decrypters WDK"]
+keywords:
+- DVD decoder minidrivers WDK , copyright protection
+- decoder minidrivers WDK DVD , copyright protection
+- copyright protection WDK DVD decoder
+- key exchange WDK DVD decoder
+- decryption WDK DVD decoder
+- encryption WDK DVD decoder
+- cryptography WDK DVD decoder
+- DVD decrypters WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Synchronizing Key Exchange with Data Flow

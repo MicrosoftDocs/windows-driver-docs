@@ -2,13 +2,12 @@
 title: Mapping for a Vista Application and Legacy Driver
 author: windows-driver-content
 description: Mapping for a Vista Application and Legacy Driver
-MS-HAID:
-- 'WIA\_Fundamentals\_beeb9a3b-c341-4e5a-a3ae-69c39af1d310.xml'
-- 'image.mapping\_for\_a\_vista\_application\_and\_legacy\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 176157b0-cc30-467b-95ec-2d25a40c43ab
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mapping for a Vista Application and Legacy Driver

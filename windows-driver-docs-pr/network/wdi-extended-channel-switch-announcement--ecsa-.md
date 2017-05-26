@@ -1,13 +1,18 @@
 ---
 title: WDI Extended channel switch announcement (ECSA)
-description: To minimize the cases where the Wi-Fi Direct port causes the system to operate in Multi-Channel mode, multi-channel uses cases are not as performant as single channel use cases.
+description: This section provides suggested driver/firmware changes to implement Extended Channel Switch Announcement (ECSA)
 ms.assetid: 9C59C8A2-335F-4BA4-8682-6DFFB82E1CAF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDI Extended channel switch announcement (ECSA)
 
 
-To minimize the cases where the Wi-Fi Direct port causes the system to operate in Multi-Channel mode, multi-channel uses cases are not as performant as single channel use cases. We recommend the device (driver/firmware) implements ECSA. This feature should exist completely on the IHV side.
+To minimize the cases where the Wi-Fi Direct port causes the system to operate in Multi-Channel mode, multi-channel uses cases are not as performant as single channel use cases. We recommend that the device (driver/firmware) implements ECSA. This feature should exist completely on the IHV side.
 
 Here are the suggested driver/firmware changes.
 

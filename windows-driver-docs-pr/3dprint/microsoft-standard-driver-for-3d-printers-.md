@@ -2,10 +2,12 @@
 title: Getting started guide - Microsoft Standard Driver for 3D Printers
 author: windows-driver-content
 description: The Microsoft Standard Driver for 3D Printers allows developers to easily make their printer compatible with Windows 10.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: DAFC5B26-09BA-483C-B964-1DA96E77765F
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Getting started guide - Microsoft Standard Driver for 3D Printers

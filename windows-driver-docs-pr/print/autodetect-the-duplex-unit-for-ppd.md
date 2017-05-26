@@ -2,14 +2,18 @@
 title: Autodetect the Duplex Unit for PPD
 author: windows-driver-content
 description: Autodetect the Duplex Unit for PPD
-MS-HAID:
-- 'autocfg\_0208652e-4f28-4806-93f2-7ee91d8fbdd6.xml'
-- 'print.autodetect\_the\_duplex\_unit\_for\_ppd'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bbecceb1-ba1d-4d2d-9a7b-e43f49345ca2
-keywords: ["autodetecting duplex unit WDK printer autoconfiguration", "PPD files WDK autoconfiguration , autodetecting duplex unit", "in-box autoconfiguration support WDK printer , autodetecting duplex unit", "detecting duplex unit", "duplex unit WDK printer autoconfiguration"]
+keywords:
+- autodetecting duplex unit WDK printer autoconfiguration
+- PPD files WDK autoconfiguration , autodetecting duplex unit
+- in-box autoconfiguration support WDK printer , autodetecting duplex unit
+- detecting duplex unit
+- duplex unit WDK printer autoconfiguration
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Autodetect the Duplex Unit for PPD

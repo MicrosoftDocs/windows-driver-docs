@@ -2,6 +2,11 @@
 title: Using NDIS 6.30 Data Structures
 description: Using NDIS 6.30 Data Structures
 ms.assetid: 0CAD1CCE-5AF6-4EBD-85C9-040FA0D1C141
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using NDIS 6.30 Data Structures

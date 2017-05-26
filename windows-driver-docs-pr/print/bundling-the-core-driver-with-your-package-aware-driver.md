@@ -2,13 +2,12 @@
 title: Bundling the Core Driver with Your Package-Aware Driver
 author: windows-driver-content
 description: Bundling the Core Driver with Your Package-Aware Driver
-MS-HAID:
-- 'prtinst\_afc46b40-a7ba-4099-b2b2-8f8910674533.xml'
-- 'print.bundling\_the\_core\_driver\_with\_your\_package\_aware\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 72e29f79-4e71-4aa8-929f-eefdebfe4835
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bundling the Core Driver with Your Package-Aware Driver

@@ -2,13 +2,12 @@
 title: DSM Device Requirements
 author: windows-driver-content
 description: DSM Device Requirements
-MS-HAID:
-- 'dsm\_des\_req\_ee354a13-79fb-45f7-948d-0a2e31027c7e.xml'
-- 'image.dsm\_device\_requirements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b052d7fb-ead0-4aa3-b20a-9a0b2c2db4eb
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DSM Device Requirements

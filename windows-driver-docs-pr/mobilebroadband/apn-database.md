@@ -1,10 +1,12 @@
 ---
 title: COSA/APN database
 description: COSA/APN database
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 699b797e-c225-47ba-96a5-26b15c91a759
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # COSA/APN database

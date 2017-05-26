@@ -2,10 +2,12 @@
 title: EFI\_USBFN\_IO\_PROTOCOL.GetDeviceInfo
 author: windows-driver-content
 description: EFI\_USBFN\_IO\_PROTOCOL.GetDeviceInfo
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b72f6ba1-7704-4661-8855-1ff88bd08e5a
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EFI\_USBFN\_IO\_PROTOCOL.GetDeviceInfo

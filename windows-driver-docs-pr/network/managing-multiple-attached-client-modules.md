@@ -2,7 +2,15 @@
 title: Managing Multiple Attached Client Modules
 description: Managing Multiple Attached Client Modules
 ms.assetid: dcb2ebba-6df7-47d5-97b6-ed2691b5e6c8
-keywords: ["provider modules WDK Network Module Registrar , multiple attached", "client modules WDK Network Module Registrar , multiple attached", "multiple attached network modules WDK Network Module Registrar"]
+keywords:
+- provider modules WDK Network Module Registrar , multiple attached
+- client modules WDK Network Module Registrar , multiple attached
+- multiple attached network modules WDK Network Module Registrar
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing Multiple Attached Client Modules

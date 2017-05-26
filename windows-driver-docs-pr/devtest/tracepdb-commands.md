@@ -2,13 +2,19 @@
 title: Tracepdb Commands
 description: To use Tracepdb, type the commands in a Command Prompt window. The following syntax displays the elements of a Tracepdb command.
 ms.assetid: c6502f26-d50e-48dc-85b4-978a83abff33
-keywords: ["Tracepdb Commands Driver Development Tools"]
+keywords:
+- Tracepdb Commands Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - Tracepdb Commands
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tracepdb Commands

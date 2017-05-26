@@ -2,14 +2,19 @@
 title: Troubleshooting GDL Parsing
 author: windows-driver-content
 description: Troubleshooting GDL Parsing
-MS-HAID:
-- 'gplfiles\_4f838a89-b68e-4832-a840-f6df2182132c.xml'
-- 'print.troubleshooting\_gdl\_parsing'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8c678a2f-b15b-4693-9bed-0edec06b3485
-keywords: ["GDL WDK , parser", "parser WDK GDL , troubleshooting parsing", "parsing GDL data WDK", "troubleshooting GDL parsing WDK", "GDL WDK , parsing errors", "GDL WDK , errors"]
+keywords:
+- GDL WDK , parser
+- parser WDK GDL , troubleshooting parsing
+- parsing GDL data WDK
+- troubleshooting GDL parsing WDK
+- GDL WDK , parsing errors
+- GDL WDK , errors
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Troubleshooting GDL Parsing

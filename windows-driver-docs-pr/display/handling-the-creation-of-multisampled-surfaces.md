@@ -2,7 +2,15 @@
 title: Handling the Creation of Multisampled Surfaces
 description: Handling the Creation of Multisampled Surfaces
 ms.assetid: 78557c9d-b741-4eb9-b8e2-56387cad80c4
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display , multisample rendering, creating", "multisample rendering WDK DirectX 8.0 , creating", "rendering multisamples WDK DirectX 8.0 , creating"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display , multisample rendering, creating
+- multisample rendering WDK DirectX 8.0 , creating
+- rendering multisamples WDK DirectX 8.0 , creating
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling the Creation of Multisampled Surfaces

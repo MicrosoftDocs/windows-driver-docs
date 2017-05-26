@@ -2,6 +2,11 @@
 title: C28717
 description: Warning C28717 Invalid VARIANT type.
 ms.assetid: e1373005-a1ff-4722-98f9-00c7e4f89370
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28717

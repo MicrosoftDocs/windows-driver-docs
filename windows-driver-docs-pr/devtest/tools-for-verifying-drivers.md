@@ -2,7 +2,16 @@
 title: Tools for Verifying Drivers
 description: Tools for Verifying Drivers
 ms.assetid: 1d878be6-8730-4452-a35a-0635ebed9091
-keywords: ["tools WDK , verifying drivers", "driver development tools WDK , verifying drivers", "verifying drivers WDK", "driver verification WDK"]
+keywords:
+- tools WDK , verifying drivers
+- driver development tools WDK , verifying drivers
+- verifying drivers WDK
+- driver verification WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tools for Verifying Drivers

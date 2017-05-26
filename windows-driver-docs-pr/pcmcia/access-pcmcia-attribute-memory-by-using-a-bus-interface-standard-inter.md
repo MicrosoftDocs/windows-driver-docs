@@ -1,14 +1,15 @@
 ---
-title: Access PCMCIA Attribute Memory by Using a BUS\_INTERFACE\_STANDARD Interface
+title: Access Memory by Using a BUS\_INTERFACE\_STANDARD
 description: Access PCMCIA Attribute Memory by Using a BUS\_INTERFACE\_STANDARD Interface
-MS-HAID:
-- 'pamch1\_8f8d04fa-c8f9-46e5-be60-0f72f75dc7fc.xml'
-- 'PCMCIA.access\_pcmcia\_attribute\_memory\_by\_using\_a\_bus\_interface\_standard\_inter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2696a9ca-38b5-47f2-9639-029bba1173b5
-keywords: ["attribute memory WDK PCMCIA bus , BUS_INTERFACE_STANDARD interface", "BUS_INTERFACE_STANDARD"]
+keywords:
+- attribute memory WDK PCMCIA bus , BUS_INTERFACE_STANDARD interface
+- BUS_INTERFACE_STANDARD
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Access PCMCIA Attribute Memory by Using a BUS\_INTERFACE\_STANDARD Interface

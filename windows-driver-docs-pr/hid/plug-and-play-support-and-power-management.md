@@ -2,10 +2,12 @@
 title: Plug and play support for I2C
 author: windows-driver-content
 description: This section describes plug and play support for devices that support HID over the I²C.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2D51B1B7-345E-4311-81D6-8A14CE2B44FE
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Plug and play support for I2C

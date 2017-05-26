@@ -2,13 +2,12 @@
 title: Required WIA Item Properties for Feeder Scanners
 author: windows-driver-content
 description: Required WIA Item Properties for Feeder Scanners
-MS-HAID:
-- 'WIA\_scanner\_tree\_51ec6e72-9c1d-4c37-ba06-9ff3cdec481d.xml'
-- 'image.required\_wia\_item\_properties\_for\_feeder\_scanners'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f9868f05-3c1f-4042-9820-9c1c38af3432
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Required WIA Item Properties for Feeder Scanners

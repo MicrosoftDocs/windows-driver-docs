@@ -2,10 +2,12 @@
 title: Sample driver I/O model
 author: windows-driver-content
 description: An SPB driver communicates over the simple peripheral bus, the system GPIO pins, and the resource hub. Here you can see how the components are organized in user mode, kernel mode, and the actual hardware.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 86DA1BDE-DD97-45CA-884D-12BD279BD12E
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample driver I/O model

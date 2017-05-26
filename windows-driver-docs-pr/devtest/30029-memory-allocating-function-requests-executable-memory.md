@@ -2,6 +2,11 @@
 title: C30029
 description: Warning C30029 Calling a memory allocating function that requests executable memory.
 ms.assetid: E32E6EDB-010A-4E7F-8505-1E7557BB3FDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C30029

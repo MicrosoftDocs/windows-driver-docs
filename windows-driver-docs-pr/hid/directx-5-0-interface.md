@@ -2,14 +2,24 @@
 title: DirectX 5.0 Interface
 author: windows-driver-content
 description: DirectX 5.0 Interface
-MS-HAID:
-- 'di\_51ddb57a-206e-4bf3-bb81-c2bbf4766307.xml'
-- 'hid.directx\_5\_0\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 416a9187-d64f-48a4-8868-fd5158d58a25
-keywords: ["joysticks WDK HID , interfaces", "virtual joystick drivers WDK HID , interfaces", "VJoyD WDK HID , interfaces", "interfaces WDK joysticks", "joysticks WDK HID , callbacks", "virtual joystick drivers WDK HID , callbacks", "VJoyD WDK HID , callbacks", "callbacks WDK joysticks", "polling WDK joysticks", "joysticks WDK HID , versions", "VJoyD WDK HID , versions"]
+keywords:
+- joysticks WDK HID , interfaces
+- virtual joystick drivers WDK HID , interfaces
+- VJoyD WDK HID , interfaces
+- interfaces WDK joysticks
+- joysticks WDK HID , callbacks
+- virtual joystick drivers WDK HID , callbacks
+- VJoyD WDK HID , callbacks
+- callbacks WDK joysticks
+- polling WDK joysticks
+- joysticks WDK HID , versions
+- VJoyD WDK HID , versions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 #  DirectX 5.0 Interface

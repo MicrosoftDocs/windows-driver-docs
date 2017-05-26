@@ -1,11 +1,13 @@
 ---
 title: Windows ACPI design guide for SoC platforms
 author: windows-driver-content
-description: The Advanced Configuration and Power Interface Specification, Revision 5.0 (ACPI 5.0 specification), defines a new set of features to support low-power, mobile devices that are based on System on a Chip (SoC) integrated circuits and that implement the connected standby power model. Starting with Windows 8 and Windows 8.1, Windows supports the new ACPI 5.0 features for SoC-based platforms.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+description: ACPI 5.0 defines new features to support low-power, mobile devices based on SoC ICs that implement the connected standby power model.
 ms.assetid: 661BFB7E-D190-450D-A466-7D6AD0EAAAB0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows ACPI design guide for SoC platforms

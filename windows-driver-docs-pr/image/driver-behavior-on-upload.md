@@ -2,13 +2,12 @@
 title: Driver Behavior on Upload
 author: windows-driver-content
 description: Driver Behavior on Upload
-MS-HAID:
-- 'WIA\_arch\_a9b7e481-3d56-4062-a6bd-37b34067481d.xml'
-- 'image.driver\_behavior\_on\_upload'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a8edfd88-89b9-4759-b9b3-6f1ff2ae7fc9
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Behavior on Upload

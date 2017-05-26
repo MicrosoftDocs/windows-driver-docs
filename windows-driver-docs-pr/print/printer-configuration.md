@@ -2,14 +2,17 @@
 title: Printer Configuration
 author: windows-driver-content
 description: Printer Configuration
-MS-HAID:
-- 'prn\_config\_6d818dde-7159-4e30-89d4-3885dbc22ec6.xml'
-- 'print.printer\_configuration'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bbde600b-3ac1-4d37-bcc6-037a9527fb27
-keywords: ["installing drivers WDK printer , configurng printers", "printer driver installations WDK , configuring printers", "printer configuration WDK", "printer drivers WDK , configuring"]
+keywords:
+- installing drivers WDK printer , configurng printers
+- printer driver installations WDK , configuring printers
+- printer configuration WDK
+- printer drivers WDK , configuring
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Configuration

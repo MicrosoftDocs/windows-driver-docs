@@ -1,10 +1,12 @@
 ---
 title: ServiceNumber
 description: ServiceNumber
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7e02557a-34e5-41f2-9a27-122a144c2ab9
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ServiceNumber

@@ -2,14 +2,14 @@
 title: Supporting Point and Print During Printer Connections
 author: windows-driver-content
 description: Supporting Point and Print During Printer Connections
-MS-HAID:
-- 'prtinst\_a43880b2-a8bc-4e3b-b1a6-4233b374b2d9.xml'
-- 'print.supporting\_point\_and\_print\_during\_printer\_connections'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 941c815f-03c7-4ede-b45f-70d6aeb06442
-keywords: ["Point and Print WDK , during printer connections"]
+keywords:
+- Point and Print WDK , during printer connections
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Point and Print During Printer Connections

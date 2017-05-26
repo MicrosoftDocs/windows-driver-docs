@@ -2,14 +2,20 @@
 title: Predictive Failure Analysis (PFA)
 author: windows-driver-content
 description: Predictive Failure Analysis (PFA)
-MS-HAID:
-- 'whea\_d53aadee-1376-492f-bad0-bffbcad8df8a.xml'
-- 'whea.predictive\_failure\_analysis\_\_pfa\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d2ded330-edcc-4bdd-9b52-73c1961d8ef2
-keywords: ["Windows Hardware Error Architecture WDK , predictive failure analysis", "Windows Hardware Error Architecture WDK , PFA", "WHEA WDK , predictive failure analysis", "WHEA WDK , PFA", "predictive failure analysis (PFA) WDK WHEA", "PFA WDK WHEA", "failure analysis WDK WHEA"]
+keywords:
+- Windows Hardware Error Architecture WDK , predictive failure analysis
+- Windows Hardware Error Architecture WDK , PFA
+- WHEA WDK , predictive failure analysis
+- WHEA WDK , PFA
+- predictive failure analysis (PFA) WDK WHEA
+- PFA WDK WHEA
+- failure analysis WDK WHEA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Predictive Failure Analysis (PFA)

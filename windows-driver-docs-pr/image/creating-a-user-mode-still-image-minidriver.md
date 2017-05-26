@@ -2,13 +2,12 @@
 title: Creating a User-Mode Still Image Minidriver
 author: windows-driver-content
 description: Creating a User-Mode Still Image Minidriver
-MS-HAID:
-- 'stillimg\_136a5b33-a779-4041-80f0-ed6741e78a6e.xml'
-- 'image.creating\_a\_user\_mode\_still\_image\_minidriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 94fdbeba-5b4a-4b66-b381-ec362b6d38c9
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a User-Mode Still Image Minidriver

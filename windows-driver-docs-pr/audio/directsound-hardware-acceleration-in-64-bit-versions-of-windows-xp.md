@@ -2,7 +2,14 @@
 title: DirectSound Hardware Acceleration in 64-Bit Versions of Windows XP
 description: DirectSound Hardware Acceleration in 64-Bit Versions of Windows XP
 ms.assetid: 0497acff-1e7f-45b9-b5ec-f1783ea7e900
-keywords: ["hardware acceleration WDK DirectSound , 64-bit systems", "64-bit WDK audio"]
+keywords:
+- hardware acceleration WDK DirectSound , 64-bit systems
+- 64-bit WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectSound Hardware Acceleration in 64-Bit Versions of Windows XP

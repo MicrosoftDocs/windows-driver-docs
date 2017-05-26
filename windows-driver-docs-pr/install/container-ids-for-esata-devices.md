@@ -2,6 +2,11 @@
 title: Container IDs for eSATA Devices
 description: Container IDs for eSATA Devices
 ms.assetid: 991836f1-936c-4051-ac3b-ad491a4ca221
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Container IDs for eSATA Devices

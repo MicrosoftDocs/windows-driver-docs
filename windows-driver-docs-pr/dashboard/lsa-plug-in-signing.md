@@ -1,13 +1,12 @@
 ---
 title: LSA plug-in signing
 description: LSA plug-in signing
-MS-HAID:
-- 'p\_dashboard.lsa\_plug\_in\_signing'
-- 'hw\_dashboard.lsa\_plug\_in\_signing'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7f0bc573-2616-499e-9a77-3e4f1d0ccbf3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # LSA plug-in signing

@@ -2,7 +2,21 @@
 title: Hardware Requirements for WavePci Devices
 description: Hardware Requirements for WavePci Devices
 ms.assetid: 58a73ac1-baba-42df-a590-e7282f902157
-keywords: ["WavePci hardware requirements WDK audio", "bus master WDK audio", "arbitrary alignment WDK audio", "memory WDK audio", "cache WDK audio", "data copying WDK audio", "copying audio data", "buffers WDK audio", "plit buffer frames WDK audio"]
+keywords:
+- WavePci hardware requirements WDK audio
+- bus master WDK audio
+- arbitrary alignment WDK audio
+- memory WDK audio
+- cache WDK audio
+- data copying WDK audio
+- copying audio data
+- buffers WDK audio
+- plit buffer frames WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hardware Requirements for WavePci Devices

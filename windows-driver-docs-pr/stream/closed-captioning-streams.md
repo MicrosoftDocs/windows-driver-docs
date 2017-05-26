@@ -2,14 +2,16 @@
 title: Closed Captioning Streams
 author: windows-driver-content
 description: Closed Captioning Streams
-MS-HAID:
-- 'dvd-design\_23b9cd9a-c92a-4649-9bba-8ffad916d2b3.xml'
-- 'stream.closed\_captioning\_streams'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ee6cfac6-c532-4e73-81b2-ee767d2d6a4d
-keywords: ["closed captioning streams WDK DVD decoder", "group of pictures WDK DVD decoder", "GOP WDK DVD decoder"]
+keywords:
+- closed captioning streams WDK DVD decoder
+- group of pictures WDK DVD decoder
+- GOP WDK DVD decoder
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Closed Captioning Streams

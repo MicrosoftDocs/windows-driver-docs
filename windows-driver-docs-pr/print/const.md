@@ -1,18 +1,18 @@
 ---
-title: Const
+title: Const (TCP/IP)
 author: windows-driver-content
-description: Const
-MS-HAID:
-- 'autocfg\_2a7874bf-0aca-4862-bfa9-287915aada31.xml'
-- 'print.const'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+description: The TCP/IP Const construct defines the data type and value that must be returned.
 ms.assetid: a0ede11d-ada4-4dc4-87a4-68c96635c0fd
-keywords: ["Const construct"]
+keywords:
+- Const construct
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Const
+# Const (TCP/IP)
 
 
 The TCP/IP Const construct defines the data type and value that must be returned. Const is used for elements that do not change in value. The Const construct is defined in Tcpbidi.xsd.

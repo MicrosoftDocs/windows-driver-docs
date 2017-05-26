@@ -2,14 +2,16 @@
 title: Qualifying and Distributing PSHED Plug-Ins
 author: windows-driver-content
 description: Qualifying and Distributing PSHED Plug-Ins
-MS-HAID:
-- 'whea\_0ffd01eb-e708-4444-80b2-f842e09b23b2.xml'
-- 'whea.qualifying\_and\_distributing\_pshed\_plug\_ins'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fe6cbb01-552f-4b24-b300-168d6311a596
-keywords: ["digital signatures WDK WHEA), PSHED plug-ins", "PSHED plug-ins WDK WHEA , qualifying", "PSHED plug-ins WDK WHEA , distributing"]
+keywords:
+- digital signatures WDK WHEA), PSHED plug-ins
+- PSHED plug-ins WDK WHEA , qualifying
+- PSHED plug-ins WDK WHEA , distributing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Qualifying and Distributing PSHED Plug-Ins

@@ -2,7 +2,16 @@
 title: Monitoring Global Counters
 description: Monitoring Global Counters
 ms.assetid: ca8f2b87-bb62-4389-bd59-1ed8ef6ac730
-keywords: ["global counters WDK Driver Verifier", "Driver Verifier WDK , counters", "statistics WDK Driver Verifier", "counters WDK Driver Verifier"]
+keywords:
+- global counters WDK Driver Verifier
+- Driver Verifier WDK , counters
+- statistics WDK Driver Verifier
+- counters WDK Driver Verifier
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Monitoring Global Counters

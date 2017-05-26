@@ -2,7 +2,16 @@
 title: Packet-Based Bus-Master DMA
 description: Packet-Based Bus-Master DMA
 ms.assetid: f94b9ca9-6e29-4801-a092-30af19345f6d
-keywords: ["bus-master DMA WDK video miniport , packet based", "DMA bus-master WDK video miniport , packet based", "packet-based DMA WDK video miniport , description", "VideoPortStartDma"]
+keywords:
+- bus-master DMA WDK video miniport , packet based
+- DMA bus-master WDK video miniport , packet based
+- packet-based DMA WDK video miniport , description
+- VideoPortStartDma
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Packet-Based Bus-Master DMA

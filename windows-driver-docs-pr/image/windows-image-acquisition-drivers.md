@@ -2,13 +2,12 @@
 title: Windows Image Acquisition Drivers
 author: windows-driver-content
 description: Windows Image Acquisition Drivers
-MS-HAID:
-- 'WIA\_DGHDR\_8e3c25c2-ffbb-4213-9f7a-fc1cfbed63ae.xml'
-- 'image.windows\_image\_acquisition\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ac145e5f-82c5-4c44-a0cc-c1ea7726d34e
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Image Acquisition Drivers

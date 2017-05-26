@@ -2,6 +2,11 @@
 title: Querying Packet Coalescing Receive Filters
 description: Querying Packet Coalescing Receive Filters
 ms.assetid: D0B41718-37B9-4FB4-BA10-20765F836214
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Querying Packet Coalescing Receive Filters

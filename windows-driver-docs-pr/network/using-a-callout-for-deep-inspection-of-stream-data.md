@@ -2,7 +2,15 @@
 title: Using a Callout for Deep Inspection of Stream Data
 description: Using a Callout for Deep Inspection of Stream Data
 ms.assetid: 433d2d9a-c95e-4315-8678-8614791cd529
-keywords: ["classify callouts WDK Windows Filtering Platform , deep inspection", "deep inspection WDK Windows Filtering Platform", "stream data deep inspection WDK Windows Filtering Platform"]
+keywords:
+- classify callouts WDK Windows Filtering Platform , deep inspection
+- deep inspection WDK Windows Filtering Platform
+- stream data deep inspection WDK Windows Filtering Platform
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using a Callout for Deep Inspection of Stream Data

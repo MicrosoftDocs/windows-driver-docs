@@ -2,14 +2,19 @@
 title: Platform-Specific Hardware Error Driver Plug-Ins
 author: windows-driver-content
 description: Platform-Specific Hardware Error Driver Plug-Ins
-MS-HAID:
-- 'whea\_6d959e5f-fef5-44d3-9a03-982c10dbd6e5.xml'
-- 'whea.platform\_specific\_hardware\_error\_driver\_plug\_ins2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 473d9206-9db2-4bc7-bc76-6be2fb77b20b
-keywords: ["Windows Hardware Error Architecture WDK , platform-specific hardware error driver plug-ins", "hardware errors WDK WHEA , platform-specific hardware error driver plug-ins", "errors WDK WHEA , platform-specific hardware error driver plug-ins", "platform-specific hardware error driver plug-ins WDK WHEA", "hardware error driver plug-ins WDK WHEA", "PSHED plug-ins WDK WHEA"]
+keywords:
+- Windows Hardware Error Architecture WDK , platform-specific hardware error driver plug-ins
+- hardware errors WDK WHEA , platform-specific hardware error driver plug-ins
+- errors WDK WHEA , platform-specific hardware error driver plug-ins
+- platform-specific hardware error driver plug-ins WDK WHEA
+- hardware error driver plug-ins WDK WHEA
+- PSHED plug-ins WDK WHEA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Platform-Specific Hardware Error Driver Plug-Ins

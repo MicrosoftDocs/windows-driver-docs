@@ -2,12 +2,6 @@
 title: Setting Up LogConfig Entries
 author: windows-driver-content
 description: Setting Up LogConfig Entries
-MS-HAID:
-- 'di\_eba02a28-72bf-4c12-9b72-f060f4e32894.xml'
-- 'hid.setting\_up\_logconfig\_entries'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d8317009-f8d0-4020-83b1-4cdf6366a642
 keywords: ["INF files WDK joysticks , LogConfig entries", "LogConfig entries WDK joysticks"]
 ---

@@ -1,12 +1,12 @@
 ---
-Description: 'This topic describes the WDM device states to use for USB device power states as specified in section 9.1 of the Universal Serial Bus 2.0 specification.'
-MS-HAID:
-- 'usbpower\_9662a03f-8bd8-4097-a6a3-646161507444.xml'
-- 'buses.comparing\_usb\_device\_states\_to\_wdm\_device\_states'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This topic describes the WDM device states to use for USB device power states as specified in section 9.1 of the Universal Serial Bus 2.0 specification.
 title: USB Device Power States
+author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB Device Power States
@@ -20,7 +20,7 @@ USB device power states (as specified in section 9.1 of the Universal Serial Bus
 -   Powered: The device is in one of the fully powered states: Default, Address, or Configured.
 -   Suspended: The device is the Idle state and operating on low power.
 
-There is no direct correlation between the device power states defined in the WDM power model and the device power states defined in the USB standard. For example, the terms *suspended* and *idle* have very specific meanings in the USB specification; however these terms are often used differently in the WDM power model. Windows client drivers can put a USB device in the Suspended state. For more information, see [USB Selective Suspend](usb-selective-suspend.md). When a client driver is ready to suspend its device, it instructs the bus driver to idle it. For a discussion of idle requests, see [Sending a USB Idle Request IRP](sending-a-usb-idle-request-irp.md).
+There is no direct correlation between the device power states defined in the WDM power model and the device power states defined in the USB standard. For example, the terms *suspended* and *idle* have very specific meanings in the USB specification; however these terms are often used differently in the WDM power model. Windows client drivers can put a USB device in the Suspended state. For more information, see [USB Selective Suspend](usb-selective-suspend.md). When a client driver is ready to suspend its device, it instructs the bus driver to idle it. For a discussion of idle requests, see [USB Selective Suspend](usb-selective-suspend.md).
 
 Device power states in the WDM model can be summarized as follows:
 
@@ -98,16 +98,9 @@ The generic parent driver suspends the USB port for the device when one of the f
 -   The client drivers for all functions on the composite device have initiated selective suspend.
 
 ## Related topics
+[USB Power Management](usb-power-management.md)  
 
-
-[USB Power Management](usb-power-management.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20USB%20Device%20Power%20States%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

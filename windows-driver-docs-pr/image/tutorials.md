@@ -2,13 +2,12 @@
 title: Tutorials
 author: windows-driver-content
 description: Tutorials
-MS-HAID:
-- 'dsm\_des\_tut\_98b43907-764a-4060-8a63-c07c7ac1fe33.xml'
-- 'image.tutorials'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 095e41c4-71ba-425a-8c63-243799852f57
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tutorials

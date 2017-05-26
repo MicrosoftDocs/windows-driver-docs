@@ -2,6 +2,11 @@
 title: Importing an SPC into a Certificate Store
 description: Importing an SPC into a Certificate Store
 ms.assetid: 4640b48c-e56f-4c6b-8943-f8b6fc3e37d7
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Importing an SPC into a Certificate Store

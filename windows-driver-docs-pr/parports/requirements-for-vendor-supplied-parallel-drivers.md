@@ -2,14 +2,14 @@
 title: Requirements for Vendor-Supplied Parallel Drivers
 author: windows-driver-content
 description: Requirements for Vendor-Supplied Parallel Drivers
-MS-HAID:
-- 'vspd\_5287f4de-5caa-44ed-99a6-a65e0ccc261b.xml'
-- 'parports.requirements\_for\_vendor\_supplied\_parallel\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2194ad1a-3548-4b67-9268-4245389cf264
-keywords: ["vendor-supplied parallel drivers WDK , about vendor-supplied parallel drivers"]
+keywords:
+- vendor-supplied parallel drivers WDK , about vendor-supplied parallel drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Requirements for Vendor-Supplied Parallel Drivers

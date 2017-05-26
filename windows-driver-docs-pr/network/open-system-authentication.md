@@ -2,7 +2,14 @@
 title: Open System Authentication
 description: Open System Authentication
 ms.assetid: f07d2d77-ccaf-4599-b59e-6ea4ecf55e0f
-keywords: ["Open System authentication WDK Native 802.11", "authentication WDK Native 802.11 , Open System"]
+keywords:
+- Open System authentication WDK Native 802.11
+- authentication WDK Native 802.11 , Open System
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Open System Authentication

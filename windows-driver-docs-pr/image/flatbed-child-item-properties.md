@@ -2,13 +2,12 @@
 title: Flatbed Child Item Properties
 author: windows-driver-content
 description: Flatbed Child Item Properties
-MS-HAID:
-- 'WIA\_scanner\_tree\_b8d8eb93-591d-474a-888c-ad386ea79688.xml'
-- 'image.flatbed\_child\_item\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ad13e4a2-0c5c-43a5-ab83-fc2ef65b4467
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Flatbed Child Item Properties

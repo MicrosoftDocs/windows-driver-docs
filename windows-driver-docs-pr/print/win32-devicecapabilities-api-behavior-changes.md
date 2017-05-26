@@ -2,13 +2,12 @@
 title: Win32 DeviceCapabilities API Behavior Changes
 author: windows-driver-content
 description: Win32 DeviceCapabilities API Behavior Changes
-MS-HAID:
-- 'xpsconfig\_aa487372-7443-430e-8554-d028388c9115.xml'
-- 'print.win32\_devicecapabilities\_api\_behavior\_changes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 44745e33-2bd8-4200-be29-b3ddb0e30de4
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Win32 DeviceCapabilities API Behavior Changes

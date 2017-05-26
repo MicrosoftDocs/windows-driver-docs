@@ -2,14 +2,19 @@
 title: Microsoft Plotter Driver
 author: windows-driver-content
 description: Microsoft Plotter Driver
-MS-HAID:
-- 'plotter\_a0885766-76d1-4951-9709-3e48674e1312.xml'
-- 'print.microsoft\_plotter\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5c8efa08-8d66-4c0f-b1ba-8384967465d3
-keywords: ["printer drivers WDK , Plotter Driver", "Plotter Driver WDK print", "MSPlot WDK print", "plotters WDK print", "Hewlett-Packard Graphics Language WDK MSPlot", "Microsoft Plotter Driver WDK print"]
+keywords:
+- printer drivers WDK , Plotter Driver
+- Plotter Driver WDK print
+- MSPlot WDK print
+- plotters WDK print
+- Hewlett-Packard Graphics Language WDK MSPlot
+- Microsoft Plotter Driver WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Microsoft Plotter Driver

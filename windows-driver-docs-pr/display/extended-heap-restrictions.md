@@ -2,7 +2,16 @@
 title: Extended Heap Restrictions
 description: Extended Heap Restrictions
 ms.assetid: 4f907768-670a-4ce5-b2d7-7af27baf80da
-keywords: ["drawing extended surface capabilities WDK DirectDraw , heaps", "DirectDraw extended surface capabilities WDK Windows 2000 display , heaps", "extended surface capabilities WDK DirectDraw , heaps", "heaps WDK DirectDraw"]
+keywords:
+- drawing extended surface capabilities WDK DirectDraw , heaps
+- DirectDraw extended surface capabilities WDK Windows 2000 display , heaps
+- extended surface capabilities WDK DirectDraw , heaps
+- heaps WDK DirectDraw
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extended Heap Restrictions

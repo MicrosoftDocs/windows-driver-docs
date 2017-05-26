@@ -2,14 +2,17 @@
 title: Videoport Category
 author: windows-driver-content
 description: Videoport Category
-MS-HAID:
-- 'vidcapds\_f2ab027c-e34a-4b13-9656-1060982fe0af.xml'
-- 'stream.videoport\_category'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c11a407f-4ff0-4337-b989-e3ec42418ec3
-keywords: ["stream categories WDK video capture , videoport", "videoport category WDK video capture", "video port category WDK video capture", "PINNAME_VIDEO_VIDEOPORT"]
+keywords:
+- stream categories WDK video capture , videoport
+- videoport category WDK video capture
+- video port category WDK video capture
+- PINNAME_VIDEO_VIDEOPORT
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Videoport Category

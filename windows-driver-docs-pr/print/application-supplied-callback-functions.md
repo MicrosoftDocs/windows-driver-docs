@@ -2,14 +2,17 @@
 title: Application-Supplied Callback Functions
 author: windows-driver-content
 description: Application-Supplied Callback Functions
-MS-HAID:
-- 'cpsui\_a42f2307-b7e9-4ddc-908c-31cf10063c31.xml'
-- 'print.application\_supplied\_callback\_functions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7c3c510a-cdc9-4283-8771-08c4e3b54e2e
-keywords: ["Common Property Sheet User Interface WDK print , functions", "CPSUI WDK print , functions", "property sheet pages WDK print , functions", "functions WDK CPSUI"]
+keywords:
+- Common Property Sheet User Interface WDK print , functions
+- CPSUI WDK print , functions
+- property sheet pages WDK print , functions
+- functions WDK CPSUI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Application-Supplied Callback Functions

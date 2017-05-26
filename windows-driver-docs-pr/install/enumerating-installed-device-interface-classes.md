@@ -2,7 +2,16 @@
 title: Enumerating Installed Device Interfaces
 description: Enumerating Installed Device Interfaces
 ms.assetid: 14A9E6DD-58A9-4af0-B469-7CCF4596BE27
-keywords: ["enumerating installed device interfaces WDK", "installed device interfaces WDK", "installed device interfaces WDK , enumerating", "device interfaces WDK device installations , enumerating"]
+keywords:
+- enumerating installed device interfaces WDK
+- installed device interfaces WDK
+- installed device interfaces WDK , enumerating
+- device interfaces WDK device installations , enumerating
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enumerating Installed Device Interfaces

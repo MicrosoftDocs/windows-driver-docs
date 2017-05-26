@@ -2,13 +2,12 @@
 title: Camera Microdriver Sample
 author: windows-driver-content
 description: Camera Microdriver Sample
-MS-HAID:
-- 'WIA\_GS\_110cb361-3702-4d3b-8162-2485afddb5d8.xml'
-- 'image.camera\_microdriver\_sample'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a3aa0cf1-9954-4556-8dae-512a12864dfe
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Camera Microdriver Sample

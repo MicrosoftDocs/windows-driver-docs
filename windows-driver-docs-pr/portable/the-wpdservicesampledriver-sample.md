@@ -1,8 +1,11 @@
 ---
 Description: The WpdServiceSampleDriver Sample
-MS-HAID: 'wpddk.the\_wpdservicesampledriver\_sample'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: The WpdServiceSampleDriver Sample
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The WpdServiceSampleDriver Sample

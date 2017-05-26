@@ -2,14 +2,15 @@
 title: Criteria for Associating GDL Templates with Keywords
 author: windows-driver-content
 description: Criteria for Associating GDL Templates with Keywords
-MS-HAID:
-- 'gplfiles\_6cc53850-39c8-4fce-8c94-a36c174cec8a.xml'
-- 'print.criteria\_for\_associating\_gdl\_templates\_with\_keywords'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 22b58881-277b-4e1d-ab6a-363432830772
-keywords: ["templates WDK GDL , associating templates with keywords", "keywords WDK GDL , associating templates with keywords"]
+keywords:
+- templates WDK GDL , associating templates with keywords
+- keywords WDK GDL , associating templates with keywords
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Criteria for Associating GDL Templates with Keywords

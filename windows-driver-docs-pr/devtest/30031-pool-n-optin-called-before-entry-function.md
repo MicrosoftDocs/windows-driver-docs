@@ -2,6 +2,11 @@
 title: C30031
 description: Warning C30031 Calling a memory allocating function and passing a parameter that indicates executable memory.
 ms.assetid: 5DBC7AC3-30CA-4BD4-BBCB-2275033FF505
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C30031

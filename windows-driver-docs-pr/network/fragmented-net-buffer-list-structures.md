@@ -2,7 +2,18 @@
 title: Fragmented NET\_BUFFER\_LIST Structures
 description: Fragmented NET\_BUFFER\_LIST Structures
 ms.assetid: a72bc0cf-8c92-4c3e-ad10-710e5b93c74c
-keywords: ["NET_BUFFER_LIST", "fragmented structures WDK networking", "dividing data structures WDK networking", "parent/child NET_BUFFER_LIST relationships WDK networking", "child/parent NET_BUFFER_LIST relationships WDK networking", "relationships WDK NET_BUFFER_LIST"]
+keywords:
+- NET_BUFFER_LIST
+- fragmented structures WDK networking
+- dividing data structures WDK networking
+- parent/child NET_BUFFER_LIST relationships WDK networking
+- child/parent NET_BUFFER_LIST relationships WDK networking
+- relationships WDK NET_BUFFER_LIST
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Fragmented NET\_BUFFER\_LIST Structures

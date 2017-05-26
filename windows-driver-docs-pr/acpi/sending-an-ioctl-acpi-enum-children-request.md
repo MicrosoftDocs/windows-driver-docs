@@ -2,13 +2,12 @@
 title: Sending an IOCTL\_ACPI\_ENUM\_CHILDREN Request
 author: windows-driver-content
 description: Sending an IOCTL\_ACPI\_ENUM\_CHILDREN Request
-MS-HAID:
-- 'acpi-meth-eval-dg\_f84e38f7-867a-4ed9-9253-2f8e977cd4c0.xml'
-- 'acpi.sending\_an\_ioctl\_acpi\_enum\_children\_request'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cbad53dd-4320-4920-9d16-231d0aaae839
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sending an IOCTL\_ACPI\_ENUM\_CHILDREN Request

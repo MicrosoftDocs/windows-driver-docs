@@ -2,7 +2,19 @@
 title: Learning About Intermediate Drivers
 description: Learning About Intermediate Drivers
 ms.assetid: 9ce2594a-cdae-4b3e-91f7-c61f860a325e
-keywords: ["connectionless drivers WDK networking", "connection-oriented drivers WDK networking", "intermediate drivers WDK networking , connectionless lower edge", "NDIS intermediate drivers WDK , connectionless lower edge", "intermediate drivers WDK networking , connection-oriented lower edge", "NDIS intermediate drivers WDK , connection-oriented lower edge", "network drivers WDK , types"]
+keywords:
+- connectionless drivers WDK networking
+- connection-oriented drivers WDK networking
+- intermediate drivers WDK networking , connectionless lower edge
+- NDIS intermediate drivers WDK , connectionless lower edge
+- intermediate drivers WDK networking , connection-oriented lower edge
+- NDIS intermediate drivers WDK , connection-oriented lower edge
+- network drivers WDK , types
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Learning About Intermediate Drivers

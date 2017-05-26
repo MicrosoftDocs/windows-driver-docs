@@ -2,10 +2,12 @@
 title: V4 Print Class Driver Rendering
 author: windows-driver-content
 description: For rendering, the v4 printer driver can utilize the existing rendering capabilities of a Print Class driver.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: F8178988-1C11-4B21-B250-6626528E0AE5
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # V4 Print Class Driver Rendering

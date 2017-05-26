@@ -2,14 +2,20 @@
 title: Participating in Error Recovery
 author: windows-driver-content
 description: Participating in Error Recovery
-MS-HAID:
-- 'whea\_9081c238-3067-4383-ba97-475c94f6fb29.xml'
-- 'whea.participating\_in\_error\_recovery'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 79f534b2-a5eb-4249-bfff-2f40c25805a6
-keywords: ["Windows Hardware Error Architecture WDK , error recovery", "WHEA WDK , error recovery", "hardware errors WDK WHEA , error recovery", "errors WDK WHEA , error recovery", "platform-specific hardware error driver plug-ins WDK WHEA , error recovery", "PSHED plug-ins WDK WHEA , error recovery", "error recovery WDK WHEA"]
+keywords:
+- Windows Hardware Error Architecture WDK , error recovery
+- WHEA WDK , error recovery
+- hardware errors WDK WHEA , error recovery
+- errors WDK WHEA , error recovery
+- platform-specific hardware error driver plug-ins WDK WHEA , error recovery
+- PSHED plug-ins WDK WHEA , error recovery
+- error recovery WDK WHEA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Participating in Error Recovery

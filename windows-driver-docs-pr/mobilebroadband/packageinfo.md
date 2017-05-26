@@ -1,10 +1,12 @@
 ---
 title: PackageInfo
 description: PackageInfo
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b74bfc2a-6779-4f53-9e46-71ca8ae26fda
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PackageInfo

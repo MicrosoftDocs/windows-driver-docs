@@ -3,7 +3,16 @@ title: UMDF Version History
 author: windows-driver-content
 description: This topic lists versions of User-Mode Driver Framework (UMDF), the corresponding versions of the Windows operating system, and the changes made in each release.
 ms.assetid: f3e895c6-6801-4033-adaa-d7d04a46db0a
-keywords: ["UMDF WDK , revision history", "UMDF WDK , version information", "revision history WDK UMDF", "version information WDK UMDF"]
+keywords:
+- UMDF WDK , revision history
+- UMDF WDK , version information
+- revision history WDK UMDF
+- version information WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UMDF Version History

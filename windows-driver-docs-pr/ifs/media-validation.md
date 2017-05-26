@@ -3,7 +3,18 @@ title: Media Validation
 author: windows-driver-content
 description: Media Validation
 ms.assetid: 609ac09b-88be-49a6-8b87-9fd453c21446
-keywords: ["security WDK file systems , semantic model checks", "semantic model checks WDK file systems , media validation", "media validation WDK file systems", "disk of death attacks WDK file systems", "validating media WDK file systems", "removable media validation WDK file systems"]
+keywords:
+- security WDK file systems , semantic model checks
+- semantic model checks WDK file systems , media validation
+- media validation WDK file systems
+- disk of death attacks WDK file systems
+- validating media WDK file systems
+- removable media validation WDK file systems
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Media Validation

@@ -2,7 +2,18 @@
 title: Registering Your Synthesizer
 description: Registering Your Synthesizer
 ms.assetid: c8cb30ba-97ca-49ee-a6ef-2938a0ab780e
-keywords: ["DirectMusic custom rendering WDK audio , synthesizers", "custom rendering in user mode WDK audio , synthesizers", "synthesizers WDK audio , registering", "registering synthesizers", "user-mode synths WDK audio , synthesizer registration", "custom synths WDK audio , synthesizer registration"]
+keywords:
+- DirectMusic custom rendering WDK audio , synthesizers
+- custom rendering in user mode WDK audio , synthesizers
+- synthesizers WDK audio , registering
+- registering synthesizers
+- user-mode synths WDK audio , synthesizer registration
+- custom synths WDK audio , synthesizer registration
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering Your Synthesizer

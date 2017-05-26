@@ -2,7 +2,15 @@
 title: Force IRQL Checking
 description: Force IRQL Checking
 ms.assetid: cb972a72-6504-4ed7-9618-2830192fda1d
-keywords: ["Force IRQL Checking feature WDK Driver Verifier", "IRQL monitoring WDK Driver Verifier", "spin locks WDK Driver Verifier"]
+keywords:
+- Force IRQL Checking feature WDK Driver Verifier
+- IRQL monitoring WDK Driver Verifier
+- spin locks WDK Driver Verifier
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Force IRQL Checking

@@ -2,10 +2,12 @@
 title: EFI\_USBFN\_IO\_PROTOCOL.SetEndpointStallState
 author: windows-driver-content
 description: EFI\_USBFN\_IO\_PROTOCOL.SetEndpointStallState
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bd754296-5002-48b6-9986-fa09c2094470
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EFI\_USBFN\_IO\_PROTOCOL.SetEndpointStallState

@@ -1,24 +1,23 @@
 ---
 title: Manage hardware submissions
-description: Manage hardware submissions
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+description: Manage hardware submissions for the Windows Hardware Dev Center Dashboard
 ms.assetid: C4C3C56F-8E92-4CB1-A57B-942E466ECD3D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Manage hardware submissions
+# Managing hardware submissions in the Windows Hardware Dev Center dashboard
 
 
 After you submit your product for the Windows Hardware Compatibility Program for Windows 10 (or the certification program for previous Windows versions), you can manage it through the dashboard.
 
--   [Find a hardware submission](#find-submission)
--   [Update an HCK hardware submission using the Driver Update Acceptable (DUA) process](#configuration-settings)
+-   [Find a hardware submission](#find-a-hardware-submission)
+-   [Update an HCK hardware submission using the Driver Update Acceptable (DUA) process](#update-an-hck-hardware-submission-using-the-driver-update-acceptable-dua-process)
 
-## <span id="find_submission"></span><span id="FIND_SUBMISSION"></span>
-
-
-**Find a hardware submission**
+## **Find a hardware submission**
 
 1.  Sign in to the Windows Hardware Dev Center dashboard.
 
@@ -82,12 +81,9 @@ After you submit your product for the Windows Hardware Compatibility Program for
 
      
 
-## <span id="update_submission"></span><span id="UPDATE_SUBMISSION"></span>
+## **Update an HCK hardware submission using the Driver Update Acceptable (DUA) process**
 
-
-**Update an HCK hardware submission using the Driver Update Acceptable (DUA) process**
-
-1.  [Find the hardware submission](#find-submission) that you want to update.
+1.  [Find the hardware submission](#find-a-hardware-submission) that you want to update.
 
 2.  Select **Download DUA shell**, and then select **Save**. Note: DUA is only available for driver submissions that include a driver.
 

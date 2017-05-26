@@ -2,10 +2,12 @@
 title: Supporting the accelerometer properties
 author: windows-driver-content
 description: The source file, SensorDdi.cpp, contains three arrays of PROPERTYKEY structures that define the properties supported by the accelerometer device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: A1196CFD-9A90-479A-859E-6F9850867AC6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting the accelerometer properties

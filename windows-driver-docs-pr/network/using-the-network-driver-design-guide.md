@@ -2,7 +2,13 @@
 title: Using the Network Driver Design Guide
 description: Using the Network Driver Design Guide
 ms.assetid: 8d9cbf3c-5eec-4409-ab4c-595bb921832d
-keywords: ["network drivers WDK , documentation"]
+keywords:
+- network drivers WDK , documentation
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the Network Driver Design Guide

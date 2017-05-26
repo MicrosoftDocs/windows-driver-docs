@@ -2,6 +2,11 @@
 title: Performance in Network Adapters
 description: There are always tradeoffs in deciding which hardware functions to implement on a network adapter.
 ms.assetid: 7BE3FC13-DEE1-41A2-9B4A-D04CF5D0FC9B
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Performance in Network Adapters
@@ -10,8 +15,8 @@ ms.assetid: 7BE3FC13-DEE1-41A2-9B4A-D04CF5D0FC9B
 There are always tradeoffs in deciding which hardware functions to implement on a network adapter. It is becoming increasingly important to consider adding task offload features that allow for interrupt moderation, dynamic tuning on the hardware, improving the use of the PCI bus, and supporting Jumbo Frames. These are particularly important for the high-end network adapter that will be used in configurations requiring top performance.
 
 -   [Supporting TCP and IP checksum offload](#supporting-tcp-and-ip-checksum-offload)
--   [Supporting large send offload (LSO)](#supporting-large-send-offload--lso-)
--   [Supporting IP security (IPSec) offload](#supporting-ip-security--ipsec--offload)
+-   [Supporting large send offload (LSO)](#supporting-large-send-offload-lso)
+-   [Supporting IP security (IPSec) offload](#supporting-ip-security-ipsec-offload)
 -   [Improving interrupt moderation](#improving-interrupt-moderation)
 -   [Using the PCI bus efficiently](#using-the-pci-bus-efficiently)
 -   [Supporting jumbo frames](#supporting-jumbo-frames)

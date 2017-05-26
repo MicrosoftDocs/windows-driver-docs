@@ -2,13 +2,12 @@
 title: 64-Bit and WIA
 author: windows-driver-content
 description: 64-Bit and WIA
-MS-HAID:
-- 'WIA\_Fundamentals\_1e720eec-204d-4500-b29b-edf0fc2d4879.xml'
-- 'image.64\_bit\_and\_wia'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 392e60c7-2ad6-4a71-83de-5e5ac550dc8b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # 64-Bit and WIA

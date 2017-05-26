@@ -2,6 +2,11 @@
 title: Mobile Broadband Implementation Guidelines for USB Devices
 description: This topic provides specific implementation guidance to help mobile broadband device manufacturers produce compliant USB devices for Windows.
 ms.assetid: 1E8CBBCC-9E35-49AA-85A7-DFAD6772B164
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mobile Broadband Implementation Guidelines for USB Devices

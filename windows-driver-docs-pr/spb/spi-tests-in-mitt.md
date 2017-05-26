@@ -1,11 +1,13 @@
 ---
 title: SPI tests in MITT
 author: windows-driver-content
-description: SPI test modules that are included in the MITT software package can be used to test data transfers for a SPI controller on the system under test and its driver. The MITT board acts as a client device connected to the SPI bus.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+description: SPI test modules that are included in the MITT software package.
 ms.assetid: 8240841C-FFA0-48EC-AB7E-4E15E262C23D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SPI tests in MITT

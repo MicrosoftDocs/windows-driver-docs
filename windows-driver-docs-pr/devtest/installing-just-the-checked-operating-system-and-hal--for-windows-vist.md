@@ -2,6 +2,11 @@
 title: Installing Just the Checked Operating System and HAL
 description: Installing Just the Checked Operating System and HAL (For Windows Vista and Later)
 ms.assetid: 1203b7cd-50b9-4174-8bec-112019444fac
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing Just the Checked Operating System and HAL (For Windows Vista and Later)
@@ -9,22 +14,17 @@ ms.assetid: 1203b7cd-50b9-4174-8bec-112019444fac
 
 Instead of installing the complete checked build on your computer, you can install the free build of the system, and then install the checked versions of the operating system image and the hardware abstraction layer (HAL). If you use this procedure, you can configure the boot loader to provide you with two boot options. One boot option is for the free build. The second boot option starts the system using the checked operating system image and HAL, but uses free versions of all other system components.
 
--   [Step 1: Identifying the Files To Install for Windows Vista and later](#step-1--identifying-the-files-to-install-for-windows-vistaand-later)
--   [Step 2: Copying the Checked Files](#step-2--copying-the-checked-files)
--   [Step 3: Changing the boot parameters using BCDEdit](#step-3--changing-the-boot-parameters-using-bcdedit)
--   [Step 4: Restart the computer](#step-4--restart-the-computer)
-
-### <span id="step_1__identifying_the_files_to_install_for_windows_vistaand_later"></span><span id="STEP_1__IDENTIFYING_THE_FILES_TO_INSTALL_FOR_WINDOWS_VISTAAND_LATER"></span>Step 1: Identifying the Files To Install for Windows Vista and later
+## Step 1 - Identifying the Files To Install for Windows Vista and later
 
 Before you install a partial checked build, you must determine the version of the operating system image and HAL files that were used to install the free build on your system.
 
-**Tip**   For 64-bit versions of Windows Vista and later, this process is easy. If you have the [Windows Driver Kit (WDK)](https://msdn.microsoft.com/library/windows/hardware/ff557573), you can use the operating system image and HAL files from the Debug\\ directory of the WDK. See [Downloading a Checked Build of Windows](obtaining-the-checked-build.md). There is only one version of each for amd64 or ia64. The names of the files are ntkrnlmp.exe and Hal.dll. If you have the WDK for the version of Windows you are using, you can skip ahead to [Step 2: Copying the Checked Files](#step-2--copying-the-checked-files).
+**Tip**   For 64-bit versions of Windows Vista and later, this process is easy. If you have the [Windows Driver Kit (WDK)](https://msdn.microsoft.com/library/windows/hardware/ff557573), you can use the operating system image and HAL files from the Debug\\ directory of the WDK. See [Installing the Checked Build](installing-the-checked-build.md). There is only one version of each for amd64 or ia64. The names of the files are ntkrnlmp.exe and Hal.dll. If you have the WDK for the version of Windows you are using, you can skip ahead to [Step 2: Copying the Checked Files](#step-2---copying-the-checked-files).
 
  
 
 On computers running the 32-bit version of Windows, use the following procedures to identify the names of the files to copy:
 
-### <span id="determining_the_name_of_the_hal_that_is_installed"></span><span id="DETERMINING_THE_NAME_OF_THE_HAL_THAT_IS_INSTALLED"></span>Determining the name of the HAL that is installed
+### Determining the name of the HAL that is installed
 
 1.  Open the file %SystemRoot%\\Inf\\setupapi.dev.log and search for hal.dll.
 
@@ -45,7 +45,7 @@ The following example is from a setupapi.dev.log file. The *SourceFilename* is h
 {FILE_QUEUE_COPY exit(0x00000000)}
 ```
 
-### <span id="determining_the_name_of_the_operating_system_image_file_installed"></span><span id="DETERMINING_THE_NAME_OF_THE_OPERATING_SYSTEM_IMAGE_FILE_INSTALLED"></span>Determining the name of the operating system image file installed
+### Determining the name of the operating system image file installed
 
 For 64-bit versions of Windows Vista and later, the name of the file is ntkrnlmp.exe.
 
@@ -77,7 +77,7 @@ Multiprocessor x86 architecture systems with 4 GB of physical memory or less.
 <span id="NTKRPAMP.EXE"></span>ntkrpamp.exe  
 Multiprocessor x86 architecture systems with PAE support.
 
-### <span id="step_2__copying_the_checked_files"></span><span id="STEP_2__COPYING_THE_CHECKED_FILES"></span> Step 2: Copying the Checked Files
+## Step 2 - Copying the Checked Files
 
 Now that you know the names of the files that were used during your system installation, you can copy the checked versions of these files to your system. Find the files you have identified in the debug directory of the WDK or in the checked distribution kit. Then copy these files to the %SystemRoot%\\system32 directory of your system, giving them new, unique, file names. One way to ensure unique file names is to rename the file types from their original file types (.dll or .exe) to .chk when they are copied. Thus, using the example in Step 1, you would copy files from the checked distribution kit as follows:
 
@@ -114,7 +114,7 @@ Now that you know the names of the files that were used during your system insta
 
  
 
-### <span id="step_3__changing_the_boot_parameters_using_bcdedit"></span><span id="STEP_3__CHANGING_THE_BOOT_PARAMETERS_USING_BCDEDIT"></span>Step 3: Changing the boot parameters using BCDEdit
+## Step 3 - Changing the boot parameters using BCDEdit
 
 After you have copied the checked files to the %SystemRoot%\\system32 directory, you must create a boot-time entry that allows the system to start using these checked files. You can use BCDEdit to create this.
 
@@ -124,9 +124,6 @@ For general instructions on using BCDEdit, see [Tools for Changing Boot Options 
 **Note**  Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
  
-
- 
-
 To configure a partial checked build on Windows Vista and later, use the [**BCDEdit /set**](https://msdn.microsoft.com/library/windows/hardware/ff542202) command and the **kernel** and **hal** options.
 
 For example, the following commands configure a boot entry to use the checked versions of the kernel and HAL.
@@ -139,7 +136,7 @@ bcdedit /set {44a942bf-d6ee-11e3-baf8-000ffee4f6cd} kernel ntkrnlmp.chk
 bcdedit /set {44a942bf-d6ee-11e3-baf8-000ffee4f6cd} hal hal.chk
 ```
 
-You must also configure the computer for kernel debugging. Specifically, you must enable the boot entry for boot debugging ([**BCDEdit /bootdebug**](https://msdn.microsoft.com/library/windows/hardware/ff542183)). If you do not enable boot debugging and you do not have a kernel debugger connected to the computer, the computer will boot into the Windows Recover Environment if you select this new boot entry.
+You must also configure the computer for kernel debugging. Specifically, you must enable the boot entry for boot debugging [**BCDEdit /bootdebug**](https://msdn.microsoft.com/library/windows/hardware/ff542183). If you do not enable boot debugging and you do not have a kernel debugger connected to the computer, the computer will boot into the Windows Recover Environment if you select this new boot entry.
 
 ```
 bcdedit /bootdebug {44a942bf-d6ee-11e3-baf8-000ffee4f6cd} on
@@ -172,7 +169,7 @@ bootmenupolicy          Standard
 debug                   Yes
 ```
 
-### <span id="step_4__restart_the_computer"></span><span id="STEP_4__RESTART_THE_COMPUTER"></span>Step 4: Restart the computer
+## Step 4 - Restart the computer
 
 After you have made the changes, and have configured your computer for kernel debugging, enabled boot debugging, and have a kernel debugger connected. restart your computer. When you restart the computer, a new operating system boot option will be displayed that allows you to select your checked operating system image and HAL.
 
@@ -190,7 +187,7 @@ For example, the following description for the event indicates a checked build o
 Microsoft (R) Windows (R) 6.00. 6001 Service Pack 1 Multiprocessor Checked.
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Setting Up Debugging (Kernel-Mode and User-Mode)](https://msdn.microsoft.com/library/windows/hardware/hh450944)

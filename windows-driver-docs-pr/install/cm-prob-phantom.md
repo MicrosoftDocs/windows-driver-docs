@@ -2,7 +2,13 @@
 title: CM_PROB_PHANTOM
 description: CM_PROB_PHANTOM
 ms.assetid: ec95671b-24f6-479b-abf1-4fa4bd619b73
-keywords: ["CM_PROB_PHANTOM"]
+keywords:
+- CM_PROB_PHANTOM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CM_PROB_PHANTOM

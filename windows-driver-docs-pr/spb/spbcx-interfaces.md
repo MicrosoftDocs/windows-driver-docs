@@ -2,10 +2,12 @@
 title: SpbCx Interfaces
 author: windows-driver-content
 description: The SPB framework extension (SpbCx) has two interfaces.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2449BB88-1912-43F9-97E6-B56158D92E55
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SpbCx Interfaces
@@ -15,8 +17,8 @@ The SPB framework extension (SpbCx) has two interfaces. The first is an I/O requ
 
 The two SpbCx interfaces are defined in the Spbcx.h and Spb.h header files. Spbcx.h defines the DDI between SpbCx and the SPB controller driver. Spb.h defines the SPB-specific I/O control codes that are supported by the SpbCx I/O request interface.
 
--   [SpbCx Device Driver Interface (DDI)](#spbcx-device-driver-interface--ddi-)
--   [SPB I/O Request Interface](#spb-i-o-request-interface)
+-   [SpbCx Device Driver Interface (DDI)](#spbcx-device-driver-interface-ddi)
+-   [SPB I/O Request Interface](#spb-io-request-interface)
 
 ## SpbCx Device Driver Interface (DDI)
 

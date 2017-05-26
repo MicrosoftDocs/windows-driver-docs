@@ -2,13 +2,19 @@
 title: DevCon Enable
 description: Enables devices on the computer. Valid only on the local computer.To enable a device means that the device driver is loaded into memory and the device is ready for use.
 ms.assetid: 2fb2cb9b-ba37-4946-b78b-0cd2aaaadcb4
-keywords: ["DevCon Enable Driver Development Tools"]
+keywords:
+- DevCon Enable Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - DevCon Enable
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DevCon Enable

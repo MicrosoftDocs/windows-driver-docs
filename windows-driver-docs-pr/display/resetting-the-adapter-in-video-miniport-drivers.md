@@ -2,7 +2,15 @@
 title: Resetting the Adapter in Video Miniport Drivers
 description: Resetting the Adapter in Video Miniport Drivers
 ms.assetid: 321a5b6c-5a70-4acb-bf88-42ffb0cff86d
-keywords: ["video miniport drivers WDK Windows 2000 , resetting adapters", "resetting adapters WDK video miniport", "HwVidResetHw"]
+keywords:
+- video miniport drivers WDK Windows 2000 , resetting adapters
+- resetting adapters WDK video miniport
+- HwVidResetHw
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Resetting the Adapter in Video Miniport Drivers

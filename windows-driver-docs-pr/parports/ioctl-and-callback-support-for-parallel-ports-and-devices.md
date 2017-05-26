@@ -2,14 +2,19 @@
 title: IOCTL and Callback Support for Parallel Ports and Devices
 author: windows-driver-content
 description: IOCTL and Callback Support for Parallel Ports and Devices
-MS-HAID:
-- 'sspd\_cafc81fd-1ccb-4f62-bae4-acc7763cb06e.xml'
-- 'parports.ioctl\_and\_callback\_support\_for\_parallel\_ports\_and\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 72a31f50-2f59-4a4d-aac7-571f83a94259
-keywords: ["system-supplied parallel drivers WDK , IOCTLs", "IOCTLs WDK parallel drivers", "callbacks WDK parallel drivers", "system-supplied parallel drivers WDK , callbacks", "parallel devices WDK , callbacks", "parallel devices WDK , IOCTLs"]
+keywords:
+- system-supplied parallel drivers WDK , IOCTLs
+- IOCTLs WDK parallel drivers
+- callbacks WDK parallel drivers
+- system-supplied parallel drivers WDK , callbacks
+- parallel devices WDK , callbacks
+- parallel devices WDK , IOCTLs
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IOCTL and Callback Support for Parallel Ports and Devices

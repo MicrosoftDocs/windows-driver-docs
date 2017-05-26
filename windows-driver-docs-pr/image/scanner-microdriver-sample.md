@@ -2,13 +2,12 @@
 title: Scanner Microdriver Sample
 author: windows-driver-content
 description: Scanner Microdriver Sample
-MS-HAID:
-- 'WIA\_GS\_734732b0-a590-492b-9abb-1c64650cf292.xml'
-- 'image.scanner\_microdriver\_sample'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1b50d057-1585-4f2d-b3dc-0d5cad5533ba
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Scanner Microdriver Sample

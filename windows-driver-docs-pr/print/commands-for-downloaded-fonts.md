@@ -2,14 +2,15 @@
 title: Commands for Downloaded Fonts
 author: windows-driver-content
 description: Commands for Downloaded Fonts
-MS-HAID:
-- 'nt5gpd\_ebaaff0b-7bbf-40b3-a09c-0c60bec11a57.xml'
-- 'print.commands\_for\_downloaded\_fonts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5cf6b2bd-5378-4e90-8959-ced978dee02f
-keywords: ["downloaded font commands WDK Unidrv", "font commands WDK Unidrv"]
+keywords:
+- downloaded font commands WDK Unidrv
+- font commands WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Commands for Downloaded Fonts

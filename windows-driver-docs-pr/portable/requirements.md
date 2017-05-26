@@ -1,8 +1,11 @@
 ---
 Description: Requirements
-MS-HAID: 'wpddk.requirements'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Requirements
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Requirements

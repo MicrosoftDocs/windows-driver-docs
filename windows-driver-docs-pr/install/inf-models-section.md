@@ -1,14 +1,20 @@
 ---
 title: INF Models Section
-description: A per-manufacturer Models section identifies at least one device, references the DDInstall section of the INF file for that device, and specifies a unique-to-the-model-section hardware identifier (ID) for that device.
+description: A Models section identifies a device, references its DDInstall section, and specifies a hardware identifier for the device.
 ms.assetid: b870e8fb-21b4-439b-b858-c45bf9be2ec1
-keywords: ["INF Models Section Device and Driver Installation"]
+keywords:
+- INF Models Section Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF Models Section
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF Models Section

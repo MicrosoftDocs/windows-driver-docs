@@ -2,7 +2,17 @@
 title: Binding a Socket to a Transport Address
 description: Binding a Socket to a Transport Address
 ms.assetid: b76bb601-536f-43de-b91c-932f4f08c274
-keywords: ["Winsock Kernel WDK networking , local transport addresses", "WSK WDK networking , local transport addresses", "binding sockets WDK Winsock Kernel", "local transport address bindings WDK Winsock Kernel", "transport addresses WDK Winsock Kernel"]
+keywords:
+- Winsock Kernel WDK networking , local transport addresses
+- WSK WDK networking , local transport addresses
+- binding sockets WDK Winsock Kernel
+- local transport address bindings WDK Winsock Kernel
+- transport addresses WDK Winsock Kernel
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Binding a Socket to a Transport Address

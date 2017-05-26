@@ -2,14 +2,15 @@
 title: Installing Driver-Specific Files
 author: windows-driver-content
 description: Installing Driver-Specific Files
-MS-HAID:
-- 'prtinst\_b280e616-e031-4286-9b02-bf6ce3ed8e3e.xml'
-- 'print.installing\_driver\_specific\_files'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 19beaf89-c0c2-4706-8d25-12d76dc936d7
-keywords: ["Point and Print WDK , driver-specific files", "driver-specific files WDK printer"]
+keywords:
+- Point and Print WDK , driver-specific files
+- driver-specific files WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing Driver-Specific Files

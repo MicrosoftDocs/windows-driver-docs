@@ -1,8 +1,11 @@
 ---
 Description: Supporting the Service Commands
-MS-HAID: 'wpddk.the\_wpdservicesampledriver\_supporting\_service\_commands'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Supporting the Service Commands
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting the Service Commands

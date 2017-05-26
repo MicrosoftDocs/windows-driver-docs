@@ -2,14 +2,19 @@
 title: XPS Filters
 author: windows-driver-content
 description: XPS Filters
-MS-HAID:
-- 'xpsfiltpipe\_46f24e94-4b80-437d-8a6c-aad459df15f5.xml'
-- 'print.xps\_filters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dd8044a6-6558-488e-9508-a83718fabb7d
-keywords: ["XPSDrv printer drivers WDK , render modules", "render modules WDK XPSDrv , XPS filters", "XPS filters WDK XPSDrv", "DllGetClassObject", "filters WDK XPS", "IPrintPipelineFilter"]
+keywords:
+- XPSDrv printer drivers WDK , render modules
+- render modules WDK XPSDrv , XPS filters
+- XPS filters WDK XPSDrv
+- DllGetClassObject
+- filters WDK XPS
+- IPrintPipelineFilter
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XPS Filters

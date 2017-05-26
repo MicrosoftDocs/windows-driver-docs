@@ -2,7 +2,15 @@
 title: RAS Architecture Overview
 description: RAS Architecture Overview
 ms.assetid: 1ff285d7-2aed-46e1-979e-3b77614dcbf5
-keywords: ["remote access service WDK networking", "RAS WDK networking", "architecture WDK WAN , RAS"]
+keywords:
+- remote access service WDK networking
+- RAS WDK networking
+- architecture WDK WAN , RAS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # RAS Architecture Overview

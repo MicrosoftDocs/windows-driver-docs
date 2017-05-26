@@ -1,10 +1,12 @@
 ---
 title: Register for the Hardware Program
 description: Register for the Hardware Program
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8E947636-7F0E-4C31-9149-D6BF60D84226
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Register for the Hardware Program
@@ -30,7 +32,7 @@ Review the following requirements before you start the registration process.
 ## <span id="Registration_steps"></span><span id="registration_steps"></span><span id="REGISTRATION_STEPS"></span>Registration steps
 
 
-There are four main steps to the Hardware Program registration.
+There are five main steps to the Hardware Program registration.
 
 1.  Get a code signing certificate
 
@@ -38,23 +40,23 @@ There are four main steps to the Hardware Program registration.
 
     -   If you do not have a certificate, you must buy one and have it available.
 
-2.  Sign and upload a file
+2.  Download signtool.exe
+    -   signtool.exe is available as part of the [Windows SDK download](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk)
 
-    -   Download the provided signable file.
+3.  Sign and upload a file
+    > [!IMPORTANT]
+    > The following three steps must be completed within the same browser session. If you close and reopen your web browser, you will need to start these steps over again.
+    1. Download the provided signable file.
+    2. Sign the file with signtool.exe and your code signing certificate.
+    3. Upload the signed file. Your company name and ID number is extracted from the signed file.
 
-    -   Download the signtool.exe signing tool. The tool is available as part of the [Windows SDK download](http://go.microsoft.com/fwlink/p/?linkid=84091).
-
-    -   Sign the signable file with your code signing certificate.
-
-    -   Upload the signed file. Your company name and ID number is extracted from the signed file.
-
-3.  Sign in with an Azure AD Global administrator account
+4.  Sign in with an Azure AD Global administrator account
 
     -   If your company already has an Azure AD directory, sign in with a [Global administrator](http://go.microsoft.com/fwlink/?LinkId=746654) account.
 
     -   If your company does not have an Azure AD directory, you must create one and sign in.
 
-4.  Account details
+5.  Account details
 
     -   Enter in account details, such as company display name and personal contact information.
 

@@ -2,10 +2,12 @@
 title: Defining the accelerometer object
 author: windows-driver-content
 description: The sample driver treats the accelerometer as an object.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: EA30C9E6-3DA1-44C8-89DA-6FA21BE3B226
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Defining the accelerometer object

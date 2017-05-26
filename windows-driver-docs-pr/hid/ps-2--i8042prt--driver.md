@@ -2,10 +2,12 @@
 title: PS/2 (i8042prt) driver
 author: windows-driver-content
 description: This topic describes the features of I8042prt, the Microsoft Windows 2000 and later system function driver for PS/2-style keyboard and mouse devices.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: BB1046EE-8780-46ED-8CEB-63110643D325
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PS/2 (i8042prt) driver

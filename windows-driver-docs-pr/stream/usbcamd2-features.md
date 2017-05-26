@@ -2,14 +2,19 @@
 title: USBCAMD2 Features
 author: windows-driver-content
 description: USBCAMD2 Features
-MS-HAID:
-- 'usbcmdds\_96751d88-1e75-4631-adaa-bb676df0ee2e.xml'
-- 'stream.usbcamd2\_features'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e800948a-6903-496e-9561-697ff5ccd1d7
-keywords: ["Windows 2000 Kernel Streaming Model WDK , USBCAMD2 minidriver library", "Streaming Model WDK Windows 2000 Kernel , USBCAMD2 minidriver library", "Kernel Streaming Model WDK , USBCAMD2 minidriver library", "USBCAMD2 features WDK Windows 2000 Kernel Streaming", "USB-based streaming cameras WDK USBCAMD2", "cameras WDK USBCAMD2"]
+keywords:
+- Windows 2000 Kernel Streaming Model WDK , USBCAMD2 minidriver library
+- Streaming Model WDK Windows 2000 Kernel , USBCAMD2 minidriver library
+- Kernel Streaming Model WDK , USBCAMD2 minidriver library
+- USBCAMD2 features WDK Windows 2000 Kernel Streaming
+- USB-based streaming cameras WDK USBCAMD2
+- cameras WDK USBCAMD2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USBCAMD2 Features

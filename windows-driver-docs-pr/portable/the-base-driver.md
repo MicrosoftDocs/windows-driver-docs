@@ -1,8 +1,11 @@
 ---
 Description: The Base Driver
-MS-HAID: 'wpddk.the\_base\_driver'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: The Base Driver
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The Base Driver

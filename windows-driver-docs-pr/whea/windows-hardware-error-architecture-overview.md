@@ -2,13 +2,12 @@
 title: Windows Hardware Error Architecture Overview
 author: windows-driver-content
 description: Windows Hardware Error Architecture Overview
-MS-HAID:
-- 'whea\_3749b5e7-6c5c-4366-9a36-2d88438e0da1.xml'
-- 'whea.windows\_hardware\_error\_architecture\_overview'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 859caa70-371c-4191-baf9-52a38411164a
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Hardware Error Architecture Overview

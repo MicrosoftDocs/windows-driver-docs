@@ -2,13 +2,12 @@
 title: WIA Core Components
 author: windows-driver-content
 description: WIA Core Components
-MS-HAID:
-- 'WIA\_intro\_763484cc-ebf5-439e-8a33-addda2d83853.xml'
-- 'image.wia\_core\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 59c02fa2-9116-4b57-a8fa-b977a4d6c714
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Core Components

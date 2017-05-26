@@ -1,10 +1,15 @@
 ---
-title: Power Management
-description: Power Management
+title: USB Remote NDIS power management
+description: USB Remote NDIS power management
 ms.assetid: c0035f77-4ea3-493f-8b26-7e576fea55c7
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Power Management
+# USB Remote NDIS power management
 
 
 ## <a href="" id="ddk-power-management-ng"></a>

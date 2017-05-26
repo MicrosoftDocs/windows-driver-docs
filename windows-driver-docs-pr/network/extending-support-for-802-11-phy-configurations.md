@@ -2,7 +2,16 @@
 title: Extending Support for 802.11 PHY Configurations
 description: Extending Support for 802.11 PHY Configurations
 ms.assetid: 91c216e9-c6eb-4a4e-801e-dc805d37eb0b
-keywords: ["extending functionality WDK Native 802.11", "Extensible Station PHY configuration WDK Native 802.11", "ExtSTA PHY configuration WDK Native 802.11", "PHY configuration WDK Native 802.11"]
+keywords:
+- extending functionality WDK Native 802.11
+- Extensible Station PHY configuration WDK Native 802.11
+- ExtSTA PHY configuration WDK Native 802.11
+- PHY configuration WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extending Support for 802.11 PHY Configurations

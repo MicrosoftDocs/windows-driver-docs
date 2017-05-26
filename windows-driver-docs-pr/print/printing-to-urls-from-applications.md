@@ -2,14 +2,19 @@
 title: Printing to URLs from Applications
 author: windows-driver-content
 description: Printing to URLs from Applications
-MS-HAID:
-- 'inetpri\_c25d0465-9498-4da0-b43b-0bcaba363350.xml'
-- 'print.printing\_to\_urls\_from\_applications'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bc9aedb4-1d64-4b70-b14b-1392f914a635
-keywords: ["Internet printing WDK , printing to URLs", "URL-identified print queue WDK", "friendly names WDK printer", "printing to URLs WDK", "print Web pages WDK , printing to URLs", "Web pages WDK printer , printing to URLs"]
+keywords:
+- Internet printing WDK , printing to URLs
+- URL-identified print queue WDK
+- friendly names WDK printer
+- printing to URLs WDK
+- print Web pages WDK , printing to URLs
+- Web pages WDK printer , printing to URLs
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printing to URLs from Applications

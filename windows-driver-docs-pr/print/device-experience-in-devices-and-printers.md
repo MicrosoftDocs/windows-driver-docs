@@ -2,13 +2,12 @@
 title: Device Experience in Devices and Printers
 author: windows-driver-content
 description: Device Experience in Devices and Printers
-MS-HAID:
-- 'prn\_dxpui\_d8db5f0a-d3e9-4064-bbf5-65eb2665b007.xml'
-- 'print.device\_experience\_in\_devices\_and\_printers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 95c5ce1d-8a38-4d88-bea2-e6728f83f010
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Experience in Devices and Printers

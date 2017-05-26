@@ -2,14 +2,19 @@
 title: Supporting Printer Change Notifications
 author: windows-driver-content
 description: Supporting Printer Change Notifications
-MS-HAID:
-- 'provider\_441f0bb4-dde7-462d-85e3-efcac1b81391.xml'
-- 'print.supporting\_printer\_change\_notifications'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e75c6f89-9cef-4900-af89-edf1f7f786c7
-keywords: ["print providers WDK , printer change notifications", "network print providers WDK , printer change notifications", "notifications WDK printer", "printer change notifications WDK", "events WDK printer", "print queues WDK , printer change notifications"]
+keywords:
+- print providers WDK , printer change notifications
+- network print providers WDK , printer change notifications
+- notifications WDK printer
+- printer change notifications WDK
+- events WDK printer
+- print queues WDK , printer change notifications
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Printer Change Notifications

@@ -2,14 +2,16 @@
 title: Preventing BDA Minidriver Threats
 author: windows-driver-content
 description: Preventing BDA Minidriver Threats
-MS-HAID:
-- 'bdadg\_26003974-43c7-46ba-9e55-9afeaa0a4864.xml'
-- 'stream.preventing\_bda\_minidriver\_threats'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 090cd2fb-d35b-4c42-a90d-a0d567d4b93f
-keywords: ["Broadcast Driver Architecture WDK AVStream , security", "BDA WDK AVStream , security", "security WDK BDA"]
+keywords:
+- Broadcast Driver Architecture WDK AVStream , security
+- BDA WDK AVStream , security
+- security WDK BDA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Preventing BDA Minidriver Threats

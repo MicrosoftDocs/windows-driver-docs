@@ -1,13 +1,15 @@
 ---
-title: HardwareId
-description: HardwareId
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+title: HardwareId (APN element)
+description: HardwareId (APN element)
 ms.assetid: 9c09915c-d0f6-4ddf-b2e1-79f00599c3a0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# HardwareId
+# HardwareId (APN element)
 
 
 The HardwareId element specifies the HWID for the specified operator.

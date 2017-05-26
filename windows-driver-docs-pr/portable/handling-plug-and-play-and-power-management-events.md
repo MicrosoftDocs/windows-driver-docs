@@ -1,8 +1,11 @@
 ---
 Description: Handling Plug and Play and Power Management Events
-MS-HAID: 'wpddk.handling\_plug\_and\_play\_and\_power\_management\_events'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Handling Plug and Play and Power Management Events
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Plug and Play and Power Management Events

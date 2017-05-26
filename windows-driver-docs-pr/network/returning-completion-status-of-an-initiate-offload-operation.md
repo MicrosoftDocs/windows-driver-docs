@@ -2,7 +2,15 @@
 title: Returning Completion Status of an Initiate Offload Operation
 description: Returning Completion Status of an Initiate Offload Operation
 ms.assetid: 8405d881-6a0d-4c4e-85db-a8cada8f6e11
-keywords: ["state offloading process WDK TCP chimney offload , completion status", "offloading state process WDK TCP chimney offload , completion status", "completion status of initiate operation WDK TCP chimney offload"]
+keywords:
+- state offloading process WDK TCP chimney offload , completion status
+- offloading state process WDK TCP chimney offload , completion status
+- completion status of initiate operation WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Returning Completion Status of an Initiate Offload Operation

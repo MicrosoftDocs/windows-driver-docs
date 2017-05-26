@@ -2,14 +2,14 @@
 title: Control Method Macros
 author: windows-driver-content
 description: Control Method Macros
-MS-HAID:
-- 'acpi-meth-eval-dg\_69965f04-c94a-462f-970e-f91257f614a3.xml'
-- 'acpi.control\_method\_macros'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cffcfb7a-c949-4bc9-a92f-349f5637ab84
-keywords: ["ACPI control methods WDK , macros"]
+keywords:
+- ACPI control methods WDK , macros
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Control Method Macros

@@ -2,10 +2,12 @@
 title: POS design guide
 author: windows-driver-content
 description: This section provides design guidance for point-of-service devices.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: D00B2CDF-C5CB-4CB5-A6AE-ECDE52B7603B
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # POS design guide

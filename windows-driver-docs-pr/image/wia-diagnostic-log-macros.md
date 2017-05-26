@@ -2,13 +2,12 @@
 title: WIA Diagnostic Log Macros
 author: windows-driver-content
 description: WIA Diagnostic Log Macros
-MS-HAID:
-- 'WIA\_arch\_43228ef6-1d22-4092-9c25-58db78ed25f6.xml'
-- 'image.wia\_diagnostic\_log\_macros'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8b544045-e9d7-422b-825c-f1a5531e0e11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Diagnostic Log Macros

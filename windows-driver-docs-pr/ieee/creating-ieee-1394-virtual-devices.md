@@ -2,14 +2,16 @@
 title: Creating IEEE 1394 Virtual Devices
 author: windows-driver-content
 description: Creating IEEE 1394 Virtual Devices
-MS-HAID:
-- '1394-configrom\_c96ec262-5546-4489-adce-5c768b7997a0.xml'
-- 'IEEE.creating\_ieee\_1394\_virtual\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5b6a4d7a-e116-4a68-a1f8-fd561fbc0495
-keywords: ["emulation drivers WDK IEEE 1394 bus", "hardware emulation drivers WDK IEEE 1394 bus", "virtual devices WDK IEEE 1394 bus"]
+keywords:
+- emulation drivers WDK IEEE 1394 bus
+- hardware emulation drivers WDK IEEE 1394 bus
+- virtual devices WDK IEEE 1394 bus
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating IEEE 1394 Virtual Devices

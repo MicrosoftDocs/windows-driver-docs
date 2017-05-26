@@ -1,8 +1,11 @@
 ---
 Description: Defining the Service Properties
-MS-HAID: 'wpddk.the\_wpdservicesampledriver\_property\_definitions'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Defining the Service Properties
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Defining the Service Properties

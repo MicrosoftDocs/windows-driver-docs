@@ -2,13 +2,12 @@
 title: Web Services on Devices
 author: windows-driver-content
 description: Web Services on Devices
-MS-HAID:
-- 'wsdbiz\_design\_39f69623-e4cf-45be-8a21-2eeb97460fbd.xml'
-- 'image.web\_services\_on\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 875abd6d-74f9-47be-860b-efd0bf235b22
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Web Services on Devices

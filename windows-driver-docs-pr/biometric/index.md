@@ -2,6 +2,11 @@
 title: Biometric Devices Design Guide
 description: Biometric Devices Design Guide
 ms.assetid: 78270890-4ea2-403e-bbd7-84a22581bbb7
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Biometric Devices Design Guide

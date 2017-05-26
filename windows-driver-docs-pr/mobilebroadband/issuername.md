@@ -1,10 +1,12 @@
 ---
 title: IssuerName
 description: IssuerName
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 189c9b8f-11de-4ef2-9474-b0068b8178bc
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IssuerName

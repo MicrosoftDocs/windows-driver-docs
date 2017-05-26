@@ -2,13 +2,12 @@
 title: Providing IPrintCoreHelper Configuration Service to Filters
 author: windows-driver-content
 description: Providing IPrintCoreHelper Configuration Service to Filters
-MS-HAID:
-- 'xpsconfig\_d4e5ad71-b151-47d4-9547-bb6100edd1bf.xml'
-- 'print.providing\_iprintcorehelper\_configuration\_service\_to\_filters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 78f12957-fc05-4183-a79b-4c637afe25b2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Providing IPrintCoreHelper Configuration Service to Filters

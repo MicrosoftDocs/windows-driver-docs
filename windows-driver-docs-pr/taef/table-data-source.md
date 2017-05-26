@@ -2,6 +2,11 @@
 title: Table Data Source
 description: Table Data Source
 ms.assetid: D0CC0536-5569-47ed-8DE8-B64FF3042C51
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Table Data Source

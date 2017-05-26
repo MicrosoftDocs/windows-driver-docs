@@ -2,13 +2,19 @@
 title: Device Console (DevCon.exe) Commands
 description: DevCon (DevCon.exe) is a command line tool that can display detailed information about devices on computers running Windows. You can also use DevCon to enable, disable, install, configure, and remove devices. DevCon uses the following syntax.
 ms.assetid: b397c407-db1f-4e2a-8beb-4fe989bd06e0
-keywords: ["Device Console (DevCon.exe) Commands Driver Development Tools"]
+keywords:
+- Device Console (DevCon.exe) Commands Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - Device Console (DevCon.exe) Commands
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Console (DevCon.exe) Commands
@@ -129,7 +135,7 @@ For example, **devcon hwids =media \*pnp\* \*microsoft\*** returns devices in th
 
  
 
-### <span id="ddk_rebooting_and_restarting_tools"></span><span id="DDK_REBOOTING_AND_RESTARTING_TOOLS"></span>Rebooting and restarting
+### <span id="ddk_rebooting_and_restarting_tools"></span><span id="DDK_REBOOTING_AND_RESTARTING_TOOLS"></span><a name="ddk-rebooting-and-restarting-tools"></a>Rebooting and restarting
 
 DevCon provides two methods to reboot the operating system and one method to restart devices.
 

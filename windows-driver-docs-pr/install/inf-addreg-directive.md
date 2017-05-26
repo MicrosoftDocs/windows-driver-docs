@@ -2,13 +2,19 @@
 title: INF AddReg Directive
 description: An AddReg directive references one or more INF-writer-defined add-registry-sections that are used to modify or create registry information.
 ms.assetid: e8162e20-0d8c-4400-9f4d-5f4abe81305b
-keywords: ["INF AddReg Directive Device and Driver Installation"]
+keywords:
+- INF AddReg Directive Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF AddReg Directive
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF AddReg Directive

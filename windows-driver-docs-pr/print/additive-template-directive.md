@@ -2,14 +2,15 @@
 title: Additive Template Directive
 author: windows-driver-content
 description: Additive Template Directive
-MS-HAID:
-- 'gplfiles\_9f98f54a-427a-4313-ac24-c6ca04c57c5b.xml'
-- 'print.additive\_template\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 94883a51-a3a6-492e-9597-6a2f913d40bc
-keywords: ["Additive directive WDK GDL", "templates WDK GDL , order of definitions"]
+keywords:
+- Additive directive WDK GDL
+- templates WDK GDL , order of definitions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Additive Template Directive

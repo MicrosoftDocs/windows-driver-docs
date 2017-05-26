@@ -2,14 +2,16 @@
 title: Scanning to Tunable Signals
 author: windows-driver-content
 description: Scanning to Tunable Signals
-MS-HAID:
-- 'vidcapds\_1145acb4-a242-4124-82ec-3c862191da30.xml'
-- 'stream.scanning\_to\_tunable\_signals'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cc934079-5d00-42e0-a024-1b7548bb88e4
-keywords: ["signal scanning WDK video capture", "scanning tunable signals WDK video capture", "tunable signals WDK video capture"]
+keywords:
+- signal scanning WDK video capture
+- scanning tunable signals WDK video capture
+- tunable signals WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Scanning to Tunable Signals

@@ -3,13 +3,20 @@ title: Initializing a General I/O Target in UMDF
 author: windows-driver-content
 description: Initializing a General I/O Target in UMDF
 ms.assetid: cf1b39c3-4c82-411b-8eef-117ac0fe793e
-keywords: ["general I/O targets WDK UMDF , initializing", "initializing general I/O targets WDK UMDF"]
+keywords:
+- general I/O targets WDK UMDF , initializing
+- initializing general I/O targets WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing a General I/O Target in UMDF
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The steps that your driver uses to initialize a general I/O target depend on whether the I/O target is [local](general-i-o-targets-in-umdf.md) or remote.
 

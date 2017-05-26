@@ -2,14 +2,16 @@
 title: Printer INF Files
 author: windows-driver-content
 description: Printer INF Files
-MS-HAID:
-- 'prtinst\_65d50440-7a1f-4d68-acb0-11e3e3acf792.xml'
-- 'print.printer\_inf\_files'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 33f1c836-0846-49d5-8ab5-baadf9e0678c
-keywords: ["installing drivers WDK printer , INF files", "printer driver installations WDK , INF files", "INF files WDK print"]
+keywords:
+- installing drivers WDK printer , INF files
+- printer driver installations WDK , INF files
+- INF files WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer INF Files

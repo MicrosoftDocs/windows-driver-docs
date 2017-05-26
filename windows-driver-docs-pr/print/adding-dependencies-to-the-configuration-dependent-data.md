@@ -2,14 +2,20 @@
 title: Adding Dependencies to the Configuration-Dependent Data
 author: windows-driver-content
 description: Adding Dependencies to the Configuration-Dependent Data
-MS-HAID:
-- 'gplfiles\_91072c63-dc7d-4a83-abbe-b972e8daebdf.xml'
-- 'print.adding\_dependencies\_to\_the\_configuration\_dependent\_data'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 16e15147-6e83-4675-b050-cf13dcd6b397
-keywords: ["GDL WDK , configurations", "configurations WDK GDL , adding dependencies", "adding dependencies to configuration-dependent data WDK GDL", "dependencies in configuration-dependent data WDK GDL", "Switch/Case directive WDK GDL", "Feature/Option directive WDK GDL", "constructs WDK GDL , default construct"]
+keywords:
+- GDL WDK , configurations
+- configurations WDK GDL , adding dependencies
+- adding dependencies to configuration-dependent data WDK GDL
+- dependencies in configuration-dependent data WDK GDL
+- Switch/Case directive WDK GDL
+- Feature/Option directive WDK GDL
+- constructs WDK GDL , default construct
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding Dependencies to the Configuration-Dependent Data

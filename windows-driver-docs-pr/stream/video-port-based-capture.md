@@ -2,14 +2,18 @@
 title: Video Port-Based Capture
 author: windows-driver-content
 description: Video Port-Based Capture
-MS-HAID:
-- 'vidcapds\_503de714-ef84-4d14-973f-9c3a10bef1bc.xml'
-- 'stream.video\_port\_based\_capture'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 84cc1ee3-142c-4dae-9f5c-0dde66cc3df9
-keywords: ["filter graph configurations WDK video capture , video port-based capture", "video port-based capture WDK video capture", "video port pins WDK video capture", "VPEs WDK video capture", "video port extensions WDK video capture"]
+keywords:
+- filter graph configurations WDK video capture , video port-based capture
+- video port-based capture WDK video capture
+- video port pins WDK video capture
+- VPEs WDK video capture
+- video port extensions WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Video Port-Based Capture

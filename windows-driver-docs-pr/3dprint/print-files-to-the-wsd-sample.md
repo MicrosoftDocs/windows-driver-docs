@@ -2,10 +2,12 @@
 title: Print files to the WSD sample
 author: windows-driver-content
 description: This section describes how to print to the WSD sample.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: E03A957E-C96A-4B35-BFDD-10C1D5A4CCD5
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print files to the WSD sample

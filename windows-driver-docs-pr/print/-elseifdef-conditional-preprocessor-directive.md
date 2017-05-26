@@ -1,15 +1,18 @@
 ---
-title: \ Elseifdef Conditional Preprocessor Directive
+title: '\ Elseifdef Conditional Preprocessor Directive'
 author: windows-driver-content
-description: \ Elseifdef Conditional Preprocessor Directive
-MS-HAID:
-- 'gplfiles\_97a4b56f-0d91-4e31-b04a-96de84acb091.xml'
-- 'print.\_elseifdef\_conditional\_preprocessor\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+description: '\ Elseifdef Conditional Preprocessor Directive'
 ms.assetid: 0239696a-ea6a-4fd4-b4ca-870a87022c81
-keywords: ["preprocessor directives WDK GDL , conditional directives", "directives WDK GDL , conditional directives", "conditional directives WDK GDL", "Elseifdef directive WDK GDL"]
+keywords:
+- preprocessor directives WDK GDL , conditional directives
+- directives WDK GDL , conditional directives
+- conditional directives WDK GDL
+- Elseifdef directive WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # \#Elseifdef Conditional Preprocessor Directive

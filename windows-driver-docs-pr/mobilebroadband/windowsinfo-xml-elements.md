@@ -1,10 +1,12 @@
 ---
 title: WindowsInfo XML Elements
 description: WindowsInfo XML Elements
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 045f149a-4bd5-4f33-a18f-39953f2e5e19
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WindowsInfo XML Elements

@@ -2,6 +2,11 @@
 title: WOL Patterns for NDIS Power Management
 description: WOL Patterns for NDIS Power Management
 ms.assetid: 44d49fe9-0983-4753-8f6f-f3445b5b9f3b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WOL Patterns for NDIS Power Management

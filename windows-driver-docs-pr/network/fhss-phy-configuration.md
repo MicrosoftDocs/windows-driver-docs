@@ -2,7 +2,15 @@
 title: FHSS PHY Configuration
 description: FHSS PHY Configuration
 ms.assetid: c8fa2942-3ace-4961-9870-f7837cd1145a
-keywords: ["PHY configuration WDK Native 802.11 , frequency-hopping spread spectrum", "frequency-hopping spread spectrum WDK Native 802.11", "FHSS WDK Native 802.11"]
+keywords:
+- PHY configuration WDK Native 802.11 , frequency-hopping spread spectrum
+- frequency-hopping spread spectrum WDK Native 802.11
+- FHSS WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # FHSS PHY Configuration

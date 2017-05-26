@@ -2,14 +2,18 @@
 title: AVStream Clocks
 author: windows-driver-content
 description: AVStream Clocks
-MS-HAID:
-- 'avsover\_466db2a8-840f-494b-a360-9169e9ea2a1b.xml'
-- 'stream.avstream\_clocks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fc1d5bca-72e3-48e2-b46f-09a13bba83b4
-keywords: ["clocks WDK AVStream", "AVStream clocks WDK", "pin clocks WDK AVStream", "timers WDK AVStream", "time WDK AVStream"]
+keywords:
+- clocks WDK AVStream
+- AVStream clocks WDK
+- pin clocks WDK AVStream
+- timers WDK AVStream
+- time WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AVStream Clocks

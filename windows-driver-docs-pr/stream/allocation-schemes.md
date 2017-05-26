@@ -2,14 +2,14 @@
 title: Allocation Schemes
 author: windows-driver-content
 description: Allocation Schemes
-MS-HAID:
-- 'ks-overview\_599dd0a5-39c5-4b67-95a4-81d0774274b5.xml'
-- 'stream.allocation\_schemes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bd51205d-53e6-42d0-b5e3-36968acba3a3
-keywords: ["allocation options WDK kernel streaming"]
+keywords:
+- allocation options WDK kernel streaming
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocation Schemes

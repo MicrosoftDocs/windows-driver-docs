@@ -1,10 +1,12 @@
 ---
 title: Determine which mobile broadband network is currently connected
 description: Determine which mobile broadband network is currently connected
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 65a47e79-3976-4f72-b810-982e7222fee3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Determine which mobile broadband network is currently connected

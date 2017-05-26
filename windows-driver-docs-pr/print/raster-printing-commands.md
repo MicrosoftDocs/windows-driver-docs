@@ -2,14 +2,15 @@
 title: Raster Printing Commands
 author: windows-driver-content
 description: Raster Printing Commands
-MS-HAID:
-- 'nt5gpd\_c5b7d110-8bfd-4033-b01b-65c0137e48a6.xml'
-- 'print.raster\_printing\_commands'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e46d85b8-e3fa-437e-8b39-26525cea02d3
-keywords: ["raster printing commands WDK Unidrv", "printer commands WDK Unidrv , raster"]
+keywords:
+- raster printing commands WDK Unidrv
+- printer commands WDK Unidrv , raster
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Raster Printing Commands

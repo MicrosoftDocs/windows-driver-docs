@@ -2,6 +2,11 @@
 title: Cross Machine Execution
 description: Cross Machine Execution
 ms.assetid: FDDD2320-E853-45a8-9820-12FB16365B9C
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Cross Machine Execution
@@ -64,7 +69,6 @@ You can manually specify additional test dependencies via the **/TestDependencie
     ``` syntax
     te unittests\wex.common.tests.dll /runon:TAEFTest1 /TestDependencies:*verification*.jpg;mysample.txt
     ```
-
     -   Sends all necessary binaries for your test to TAEFTest1 as well as any files found that match the files specified in the **/TestDependencies** parameter.
 -   **Directories**
 
@@ -77,7 +81,7 @@ You can manually specify additional test dependencies via the **/TestDependencie
     -   Sends all necessary binaries for your test to TAEFTest1 as well as all files/directories within or below the *unittests* directory. TAEF retains the directory hierarchy.
 
     ``` syntax
-    te unittests\wex.common.tests.dll /runon:TAEFTest1 /TestDependencies:unittests\*.jpg...
+_    te unittests\wex.common.tests.dll /runon:TAEFTest1 /TestDependencies:unittests\*.jpg...
     ```
 
     -   Sends all necessary binaries for your test to TAEFTest1 as well as all jpg files within or below the *unittests* directory. TAEF retains the directory hierarchy.
@@ -86,7 +90,7 @@ You can manually specify additional test dependencies via the **/TestDependencie
 
 You can aso specify test dependencies via [DeploymentItem metadata](deploymentitem-metadata.md)
 
-## <span id="User_Context"></span><span id="user_context"></span><span id="USER_CONTEXT"></span>User Context
+## User Context 
 
 
 By default, TAEF attempts to run the tests on the remote machine with your user context. It does so by:

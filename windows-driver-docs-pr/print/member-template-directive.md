@@ -2,14 +2,14 @@
 title: Member Template Directive
 author: windows-driver-content
 description: Member Template Directive
-MS-HAID:
-- 'gplfiles\_e70cf90f-a9db-4812-bcb0-aa43bec92e7e.xml'
-- 'print.member\_template\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3f4bdf3c-30cb-4edc-bd9e-422c4bfbb5b7
-keywords: ["Member directive WDK GDL"]
+keywords:
+- Member directive WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Member Template Directive

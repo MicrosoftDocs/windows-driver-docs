@@ -2,14 +2,22 @@
 title: Writing a Network Print Provider
 author: windows-driver-content
 description: Writing a Network Print Provider
-MS-HAID:
-- 'provider\_21e0d16d-61bb-45dc-8967-7f37c5b0aceb.xml'
-- 'print.writing\_a\_network\_print\_provider'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9dbe8a00-6b5f-41ae-8ab5-218dcbe37833
-keywords: ["print spooler customizing WDK , print providers", "spooler customizing WDK print , print providers", "customizing print spooler components WDK , print providers", "print providers WDK , writing", "network print providers WDK", "writing print providers", "print providers WDK , about network print providers", "network print providers WDK , about network print providers", "providers WDK print"]
+keywords:
+- print spooler customizing WDK , print providers
+- spooler customizing WDK print , print providers
+- customizing print spooler components WDK , print providers
+- print providers WDK , writing
+- network print providers WDK
+- writing print providers
+- print providers WDK , about network print providers
+- network print providers WDK , about network print providers
+- providers WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing a Network Print Provider

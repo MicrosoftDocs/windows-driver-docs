@@ -2,14 +2,15 @@
 title: Building a Printer Graphics DLL
 author: windows-driver-content
 description: Building a Printer Graphics DLL
-MS-HAID:
-- 'drvarch\_8bf51f8f-9896-470a-b18e-825a6fa274ad.xml'
-- 'print.building\_a\_printer\_graphics\_dll'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bec1e9cc-a846-43e5-bc9e-e43a151ef6c4
-keywords: ["printer graphics DLL WDK , building", "graphics DLL WDK printer , building"]
+keywords:
+- printer graphics DLL WDK , building
+- graphics DLL WDK printer , building
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Building a Printer Graphics DLL

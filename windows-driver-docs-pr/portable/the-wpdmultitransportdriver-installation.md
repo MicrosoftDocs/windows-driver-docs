@@ -1,8 +1,11 @@
 ---
 Description: Installing the WpdMultiTransportDriver Sample
-MS-HAID: 'wpddk.the\_wpdmultitransportdriver\_installation'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Installing the WpdMultiTransportDriver Sample
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing the WpdMultiTransportDriver Sample

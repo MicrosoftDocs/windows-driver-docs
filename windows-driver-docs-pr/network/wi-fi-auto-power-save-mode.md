@@ -1,7 +1,12 @@
 ---
 title: Wi-Fi Auto Power Save Mode
-description: Wi-Fi miniport drivers are required to perform detection and negotiation of proper Wi-Fi Power Save Mode (PSM) between the device and the Wi-Fi Access Point and report it in driver capability during initialization in DOT11\_EXTSTA\_ATTRIBUTES.Windows 8 miniport drivers need to continue to support the OID\_DOT11\_POWER\_MGMT\_REQUEST which should be treated as a hint to the users preferred power consumption level.
+description: This section describes Native 802.11 Wi-Fi Power Save Mode detection
 ms.assetid: F8292C7E-4AEE-44E8-88BA-BF0D52654192
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wi-Fi Auto Power Save Mode

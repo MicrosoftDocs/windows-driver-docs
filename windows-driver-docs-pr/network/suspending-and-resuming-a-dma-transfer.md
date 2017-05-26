@@ -2,7 +2,18 @@
 title: Suspending and Resuming a DMA Transfer
 description: Suspending and Resuming a DMA Transfer
 ms.assetid: 0d46f60d-58a7-4108-b683-2f1322fa8211
-keywords: ["memory-to-memory data transfers WDK NetDMA , suspending", "data transfers WDK NetDMA , suspending", "transferring data WDK NetDMA , suspending", "DMA transfers WDK NetDMA , suspending DMA transfers", "NetDMA WDK networking , suspending DMA transfers", "suspendi"]
+keywords:
+- memory-to-memory data transfers WDK NetDMA , suspending
+- data transfers WDK NetDMA , suspending
+- transferring data WDK NetDMA , suspending
+- DMA transfers WDK NetDMA , suspending DMA transfers
+- NetDMA WDK networking , suspending DMA transfers
+- suspendi
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Suspending and Resuming a DMA Transfer

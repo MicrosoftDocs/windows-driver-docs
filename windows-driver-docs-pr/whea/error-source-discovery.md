@@ -2,14 +2,20 @@
 title: Error Source Discovery
 author: windows-driver-content
 description: Error Source Discovery
-MS-HAID:
-- 'whea\_2710c208-b8f0-4afc-98f5-075312bd80db.xml'
-- 'whea.error\_source\_discovery'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 58b7501d-b51a-436f-ac29-8d03161d0956
-keywords: ["Windows Hardware Error Architecture WDK , error source discovery", "WHEA WDK , error source discovery", "hardware errors WDK WHEA , error source discovery", "errors WDK WHEA , error source discovery", "platform-specific hardware error driver plug-ins WDK WHEA , error source discovery", "PSHED plug-ins WDK WHEA , error source discovery", "error source discovery WDK WHEA"]
+keywords:
+- Windows Hardware Error Architecture WDK , error source discovery
+- WHEA WDK , error source discovery
+- hardware errors WDK WHEA , error source discovery
+- errors WDK WHEA , error source discovery
+- platform-specific hardware error driver plug-ins WDK WHEA , error source discovery
+- PSHED plug-ins WDK WHEA , error source discovery
+- error source discovery WDK WHEA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Error Source Discovery

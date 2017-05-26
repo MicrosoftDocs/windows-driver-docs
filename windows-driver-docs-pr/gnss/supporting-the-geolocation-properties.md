@@ -2,10 +2,12 @@
 title: Supporting the geolocation properties
 author: windows-driver-content
 description: The source file, geolocation.cpp, contains three arrays of PROPERTYKEY structures that define the properties supported by the simulated sensor.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0D25D58F-1023-4470-9F7D-E62544B87A42
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting the geolocation properties

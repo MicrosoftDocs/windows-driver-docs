@@ -2,7 +2,27 @@
 title: Audio Endpoints, Properties and Events
 description: Audio Endpoints, Properties and Events
 ms.assetid: ffc5834f-30c8-40b5-b57b-fe784331690c
-keywords: ["audio events WDK", "audio properties WDK", "port drivers WDK audio , properties", "port drivers WDK audio , events", "adapter drivers WDK audio , events", "adapter drivers WDK audio , properties", "audio properties WDK , about audio properties", "audio events WDK , about audio events", "WDM audio properties WDK", "WDM audio events WDK", "WDM audio properties WDK , about audio properties", "KS properties WDK audio", "KS events WDK audio", "properties WDK audio", "pins WDK audio"]
+keywords:
+- audio events WDK
+- audio properties WDK
+- port drivers WDK audio , properties
+- port drivers WDK audio , events
+- adapter drivers WDK audio , events
+- adapter drivers WDK audio , properties
+- audio properties WDK , about audio properties
+- audio events WDK , about audio events
+- WDM audio properties WDK
+- WDM audio events WDK
+- WDM audio properties WDK , about audio properties
+- KS properties WDK audio
+- KS events WDK audio
+- properties WDK audio
+- pins WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio Endpoints, Properties and Events

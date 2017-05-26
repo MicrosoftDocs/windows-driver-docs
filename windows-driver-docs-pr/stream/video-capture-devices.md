@@ -2,14 +2,14 @@
 title: Video Capture Devices
 author: windows-driver-content
 description: Video Capture Devices
-MS-HAID:
-- 'vidcapds\_e7514920-f72b-42c8-a69a-a0e7aaca0cd8.xml'
-- 'stream.video\_capture\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ed02e6c8-fd82-488b-a0dc-8e83a842bcc4
-keywords: ["capturing video WDK AVStream"]
+keywords:
+- capturing video WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Video Capture Devices

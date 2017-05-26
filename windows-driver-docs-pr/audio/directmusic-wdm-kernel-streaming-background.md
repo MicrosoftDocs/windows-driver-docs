@@ -2,7 +2,20 @@
 title: DirectMusic WDM Kernel Streaming Background
 description: DirectMusic WDM Kernel Streaming Background
 ms.assetid: 851fa156-590a-43fb-9c49-df528f0ea608
-keywords: ["DirectMusic kernel-mode WDK audio , WDM kernel streaming", "kernel-mode synths WDK audio , WDM kernel streaming", "WDM kernel streaming WDK audio", "kernel streaming WDK audio", "port drivers WDK audio , synthesizers", "hardware acceleration WDK audio", "miniport drivers WDK audio , kernel-mode hardware acceleration", "synthesizers WDK audio , kernel-mode hardware acceleration"]
+keywords:
+- DirectMusic kernel-mode WDK audio , WDM kernel streaming
+- kernel-mode synths WDK audio , WDM kernel streaming
+- WDM kernel streaming WDK audio
+- kernel streaming WDK audio
+- port drivers WDK audio , synthesizers
+- hardware acceleration WDK audio
+- miniport drivers WDK audio , kernel-mode hardware acceleration
+- synthesizers WDK audio , kernel-mode hardware acceleration
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectMusic WDM Kernel Streaming Background

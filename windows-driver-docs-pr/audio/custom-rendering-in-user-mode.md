@@ -2,7 +2,25 @@
 title: Custom Rendering in User Mode
 description: Custom Rendering in User Mode
 ms.assetid: a30c9eae-c3a9-4ff8-8e6c-d98c83f8596e
-keywords: ["DirectMusic custom rendering WDK audio", "DirectMusic custom rendering WDK audio , about user-mode custom rendering", "Microsoft Software Synthesizer WDK audio", "custom synths WDK audio", "user-mode synths WDK audio , custom", "customizing user mode rendering WDK audio", "wave sinks WDK audio , user-mode custom rendering", "DirectMusic WDK audio , custom synths", "custom rendering in user mode WDK audio", "custom rendering in user mode WDK audio , about custom rendering", "DirectMusic WDK audio , user mode", "default synthesizers", "synthesizers WDK audio , user-mode custom rendering"]
+keywords:
+- DirectMusic custom rendering WDK audio
+- DirectMusic custom rendering WDK audio , about user-mode custom rendering
+- Microsoft Software Synthesizer WDK audio
+- custom synths WDK audio
+- user-mode synths WDK audio , custom
+- customizing user mode rendering WDK audio
+- wave sinks WDK audio , user-mode custom rendering
+- DirectMusic WDK audio , custom synths
+- custom rendering in user mode WDK audio
+- custom rendering in user mode WDK audio , about custom rendering
+- DirectMusic WDK audio , user mode
+- default synthesizers
+- synthesizers WDK audio , user-mode custom rendering
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Custom Rendering in User Mode

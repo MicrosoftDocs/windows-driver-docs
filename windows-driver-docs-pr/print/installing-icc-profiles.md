@@ -2,14 +2,15 @@
 title: Installing ICC Profiles
 author: windows-driver-content
 description: Installing ICC Profiles
-MS-HAID:
-- 'printicm\_3c284e3f-5145-419f-96d7-cb1b84f5dd43.xml'
-- 'print.installing\_icc\_profiles'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d9253ee8-c414-46a9-899f-46ae32cee41a
-keywords: ["color management WDK print , installing ICC profiles", "ICC profiles WDK print"]
+keywords:
+- color management WDK print , installing ICC profiles
+- ICC profiles WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing ICC Profiles

@@ -3,7 +3,17 @@ title: Understanding Volume Enumerations with Duplicate Volume Names
 author: windows-driver-content
 description: Understanding Volume Enumerations with Duplicate Volume Names
 ms.assetid: c05982dc-4124-4f9a-93b8-0e56ac296d1b
-keywords: ["volumes WDK file system , duplicate names", "volumes WDK file system , enumerating", "filter manager WDK file system minifilter , volumes", "duplicate volume names WDK file system", "enumerating volumes WDK file system"]
+keywords:
+- volumes WDK file system , duplicate names
+- volumes WDK file system , enumerating
+- filter manager WDK file system minifilter , volumes
+- duplicate volume names WDK file system
+- enumerating volumes WDK file system
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Understanding Volume Enumerations with Duplicate Volume Names

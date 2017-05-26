@@ -2,14 +2,16 @@
 title: Spooler Notification
 author: windows-driver-content
 description: Spooler Notification
-MS-HAID:
-- 'splarch\_d5994792-271c-4846-b0ad-e9618c5bf835.xml'
-- 'print.spooler\_notification'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b5d9b909-f2e4-4773-903e-1dd73b0ca567
-keywords: ["spooler notification WDK print", "print spooler notification WDK", "notification WDK print spooler"]
+keywords:
+- spooler notification WDK print
+- print spooler notification WDK
+- notification WDK print spooler
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Spooler Notification

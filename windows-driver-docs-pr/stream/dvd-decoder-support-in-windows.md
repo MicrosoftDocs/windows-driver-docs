@@ -2,14 +2,17 @@
 title: DVD Decoder Support in Windows
 author: windows-driver-content
 description: DVD Decoder Support in Windows
-MS-HAID:
-- 'dvd-design\_e7edc693-498e-421b-b4cf-2c6c0ad23ae4.xml'
-- 'stream.dvd\_decoder\_support\_in\_windows'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3a77b6d1-6095-4cf8-8cd4-2e6d80d171c8
-keywords: ["DVD decoder minidrivers WDK , Windows support", "decoder minidrivers WDK DVD , Windows support", "DVD decoder minidrivers WDK , writing", "decoder minidrivers WDK DVD , writing"]
+keywords:
+- DVD decoder minidrivers WDK , Windows support
+- decoder minidrivers WDK DVD , Windows support
+- DVD decoder minidrivers WDK , writing
+- decoder minidrivers WDK DVD , writing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DVD Decoder Support in Windows

@@ -2,7 +2,14 @@
 title: Extensible Station Indications
 description: Extensible Station Indications
 ms.assetid: c261c877-f007-4dd6-9047-5d3a06517f84
-keywords: ["ExtSTA status indications WDK Native 802.11", "Extensible Station status indications WDK Native 802.11"]
+keywords:
+- ExtSTA status indications WDK Native 802.11
+- Extensible Station status indications WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extensible Station Indications

@@ -2,14 +2,17 @@
 title: Reading and Writing a Parallel Device
 author: windows-driver-content
 description: Reading and Writing a Parallel Device
-MS-HAID:
-- 'vspd\_c292ce44-8328-4b86-85fe-c5a2375c500f.xml'
-- 'parports.reading\_and\_writing\_a\_parallel\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f28506b1-fa87-4119-a57a-2b49573197d8
-keywords: ["parallel devices WDK , reading", "parallel devices WDK , writing", "reading parallel devices", "writing parallel devices"]
+keywords:
+- parallel devices WDK , reading
+- parallel devices WDK , writing
+- reading parallel devices
+- writing parallel devices
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reading and Writing a Parallel Device

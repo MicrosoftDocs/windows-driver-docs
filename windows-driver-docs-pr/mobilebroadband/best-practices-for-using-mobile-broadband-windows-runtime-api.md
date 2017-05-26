@@ -1,10 +1,12 @@
 ---
 title: Best practices for using Mobile Broadband Windows Runtime API
 description: Best practices for using Mobile Broadband Windows Runtime API
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c9d60bb3-34ea-44a0-ae9e-1415b93e2fd8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Best practices for using Mobile Broadband Windows Runtime API

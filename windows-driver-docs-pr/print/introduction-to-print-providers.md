@@ -2,14 +2,18 @@
 title: Introduction to Print Providers
 author: windows-driver-content
 description: Introduction to Print Providers
-MS-HAID:
-- 'splarch\_ae5e7e21-9184-4597-b7a5-177998682b14.xml'
-- 'print.introduction\_to\_print\_providers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a0e5e8c8-7af4-4715-9036-64ae851b307d
-keywords: ["print providers WDK , about print providers", "print jobs WDK , print providers", "print providers WDK , flow paths", "OpenPrinter", "jobs WDK print , print providers"]
+keywords:
+- print providers WDK , about print providers
+- print jobs WDK , print providers
+- print providers WDK , flow paths
+- OpenPrinter
+- jobs WDK print , print providers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Print Providers

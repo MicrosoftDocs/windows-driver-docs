@@ -2,6 +2,11 @@
 title: WDI IHV driver interfaces
 description: The WDI IHV miniport is like any other NDIS miniport driver and it would follow the development practices and documentation for any NDIS miniport.
 ms.assetid: B4528C70-9FE4-4E00-9D0B-8832CCEC982E
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDI IHV driver interfaces
@@ -28,8 +33,8 @@ The WDI IHV miniport is like any other NDIS miniport driver and it would follow 
 -   [MiniportSendNetBufferLists](#miniportsendnetbufferlists)
 -   [MiniportCancelSend](#miniportcancelsend)
 -   [MiniportReturnNetBufferLists](#miniportreturnnetbufferlists)
--   [WDI handler: MiniportWdiOpenAdapter](#wdi-handler--miniportwdiopenadapter)
--   [WDI handler: MiniportWdiCloseAdapter](#wdi-handler--miniportwdicloseadapter)
+-   [WDI handler: MiniportWdiOpenAdapter](#wdi-handler-miniportwdiopenadapter)
+-   [WDI handler: MiniportWdiCloseAdapter](#wdi-handler-miniportwdicloseadapter)
 
 ## Driver installation
 

@@ -2,13 +2,12 @@
 title: WIA with Web Services for Devices
 author: windows-driver-content
 description: WIA with Web Services for Devices
-MS-HAID:
-- 'WIA\_wsd\_scan\_8f81b262-0a09-4f8f-989d-1466985b2f28.xml'
-- 'image.wia\_with\_web\_services\_for\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e1f91963-503b-4766-a6f1-c334465f0e73
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA with Web Services for Devices

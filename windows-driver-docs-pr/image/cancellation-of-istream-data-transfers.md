@@ -2,13 +2,12 @@
 title: Cancellation of IStream Data Transfers
 author: windows-driver-content
 description: Cancellation of IStream Data Transfers
-MS-HAID:
-- 'WIA\_arch\_96d5db9f-77ff-413e-b74b-ef95f321fb86.xml'
-- 'image.cancellation\_of\_istream\_data\_transfers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cefe8ef3-f0f8-4260-b666-c61f9902de5c
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Cancellation of IStream Data Transfers

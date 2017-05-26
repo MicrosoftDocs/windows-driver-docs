@@ -2,11 +2,20 @@
 title: Introduction to HID Concepts
 author: windows-driver-content
 description: This section introduces Human Interface Devices (or HID). Typically, these are devices that humans use to directly control the operation of computer systems.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 477FF911-5A17-4EA5-9403-1D7B4E8B3BA5
-keywords: ["Human Interface Devices", "HID", "keyboards", "mice", "sensory data", "accelerometers", "gyroscope"]
+keywords:
+- Human Interface Devices
+- HID
+- keyboards
+- mice
+- sensory data
+- accelerometers
+- gyroscope
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to HID Concepts

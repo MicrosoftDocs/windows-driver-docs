@@ -2,14 +2,15 @@
 title: Command Entry Format
 author: windows-driver-content
 description: Command Entry Format
-MS-HAID:
-- 'nt5gpd\_5d956627-52d5-4a87-ad19-081a2dad7620.xml'
-- 'print.command\_entry\_format'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f2b14c12-3c34-45b2-9ead-8cd57d657e9e
-keywords: ["printer commands WDK Unidrv , entry format", "formats WDK printer commands"]
+keywords:
+- printer commands WDK Unidrv , entry format
+- formats WDK printer commands
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Command Entry Format

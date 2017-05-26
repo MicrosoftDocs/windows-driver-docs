@@ -2,13 +2,12 @@
 title: Registry Entries for WIA Drivers
 author: windows-driver-content
 description: Registry Entries for WIA Drivers
-MS-HAID:
-- 'WIA\_GS\_e4cef85a-2ebf-4436-92c7-296d6a7be985.xml'
-- 'image.registry\_entries\_for\_wia\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5546eeca-f251-4b2f-8539-591b95c093f8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registry Entries for WIA Drivers

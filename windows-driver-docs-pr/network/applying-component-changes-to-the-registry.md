@@ -2,7 +2,15 @@
 title: Applying Component Changes to the Registry
 description: Applying Component Changes to the Registry
 ms.assetid: f844a693-cf26-407c-b182-b652a4c585b4
-keywords: ["notify objects WDK networking , registry values", "network notify objects WDK , registry values", "registry WDK notify objects"]
+keywords:
+- notify objects WDK networking , registry values
+- network notify objects WDK , registry values
+- registry WDK notify objects
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Applying Component Changes to the Registry

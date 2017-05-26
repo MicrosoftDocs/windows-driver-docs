@@ -2,13 +2,12 @@
 title: Driver Features
 author: windows-driver-content
 description: Driver Features
-MS-HAID:
-- 'pscript\_a64f2cd3-6775-4121-98b1-7470c302574f.xml'
-- 'print.driver\_features'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 56efebda-970f-4885-9c5f-1eac97aecfdd
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Features

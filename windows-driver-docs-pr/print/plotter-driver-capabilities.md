@@ -2,14 +2,15 @@
 title: Plotter Driver Capabilities
 author: windows-driver-content
 description: Plotter Driver Capabilities
-MS-HAID:
-- 'plotter\_b8f3e18e-7e71-47c4-9632-127df8e56e4a.xml'
-- 'print.plotter\_driver\_capabilities'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9fc32297-504c-453d-967b-ca4a4e56eaa2
-keywords: ["Plotter Driver WDK print , capabilities", "MSPlot WDK print , capabilities"]
+keywords:
+- Plotter Driver WDK print , capabilities
+- MSPlot WDK print , capabilities
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Plotter Driver Capabilities

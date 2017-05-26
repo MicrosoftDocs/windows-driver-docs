@@ -2,7 +2,16 @@
 title: Closing a Socket
 description: Closing a Socket
 ms.assetid: 3fa2d5c3-7b52-4bbe-b99d-ef3be19c7c7e
-keywords: ["Winsock Kernel WDK networking , socket closing", "WSK WDK networking , socket closing", "closing sockets", "WskCloseSocket"]
+keywords:
+- Winsock Kernel WDK networking , socket closing
+- WSK WDK networking , socket closing
+- closing sockets
+- WskCloseSocket
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Closing a Socket

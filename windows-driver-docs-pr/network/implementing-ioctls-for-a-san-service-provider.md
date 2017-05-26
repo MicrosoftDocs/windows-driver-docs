@@ -2,7 +2,15 @@
 title: Implementing IOCTLs for a SAN Service Provider
 description: Implementing IOCTLs for a SAN Service Provider
 ms.assetid: 7d4c7039-6b42-4620-aee5-9189b4acd030
-keywords: ["proxy drivers WDK SANs , IOCTLs", "SAN proxy drivers WDK , IOCTLs", "IOCTLs WDK SANs"]
+keywords:
+- proxy drivers WDK SANs , IOCTLs
+- SAN proxy drivers WDK , IOCTLs
+- IOCTLs WDK SANs
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing IOCTLs for a SAN Service Provider

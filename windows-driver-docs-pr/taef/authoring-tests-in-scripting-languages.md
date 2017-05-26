@@ -2,6 +2,11 @@
 title: Authoring Tests in Scripting Languages
 description: Authoring Tests in Scripting Languages
 ms.assetid: 4F5328E4-4817-4391-BF56-EC9E7F469AA7
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Authoring Tests in Scripting Languages

@@ -2,7 +2,21 @@
 title: GFX Filters
 description: GFX Filters
 ms.assetid: e1b5cb04-7793-4423-8162-3f70e3b9ac42
-keywords: ["GFX filters WDK audio", "global effects WDK audio", "audio filters WDK audio , GPX", "filters WDK audio , GPX", "WDM audio drivers WDK , GPX filters", "audio drivers WDK , GPX filters", "GFX filters WDK audio , about GFX filters", "USB WDK audio", "audio proces"]
+keywords:
+- GFX filters WDK audio
+- global effects WDK audio
+- audio filters WDK audio , GPX
+- filters WDK audio , GPX
+- WDM audio drivers WDK , GPX filters
+- audio drivers WDK , GPX filters
+- GFX filters WDK audio , about GFX filters
+- USB WDK audio
+- audio proces
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GFX Filters

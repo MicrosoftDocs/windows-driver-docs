@@ -2,7 +2,14 @@
 title: Specifying WAN Endpoints for a WAN Adapter
 description: Specifying WAN Endpoints for a WAN Adapter
 ms.assetid: e6dd12c3-03e3-4f7d-8ad7-2511bf46c4f8
-keywords: ["add-registry-sections WDK networking , WAN adapter endpoints", "WAN adapter endpoints WDK networking"]
+keywords:
+- add-registry-sections WDK networking , WAN adapter endpoints
+- WAN adapter endpoints WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying WAN Endpoints for a WAN Adapter

@@ -2,7 +2,21 @@
 title: Bob Method
 description: Bob Method
 ms.assetid: 3ef4ad25-fe62-4f80-8d0a-d21035d93c1f
-keywords: ["DirectX VPE support WDK DirectDraw , displaying interleaved video", "drawing VPEs WDK DirectDraw , displaying interleaved video", "DirectDraw VPEs WDK Windows 2000 display , displaying interleaved video", "video port extensions WDK DirectDraw , displaying interleaved video", "VPEs WDK DirectDraw , displaying interleaved video", "displaying interleaved video", "interleaved video displays WDK video port extensions", "bob WDK DirectDraw", "deinterlacing WDK video port extensions"]
+keywords:
+- DirectX VPE support WDK DirectDraw , displaying interleaved video
+- drawing VPEs WDK DirectDraw , displaying interleaved video
+- DirectDraw VPEs WDK Windows 2000 display , displaying interleaved video
+- video port extensions WDK DirectDraw , displaying interleaved video
+- VPEs WDK DirectDraw , displaying interleaved video
+- displaying interleaved video
+- interleaved video displays WDK video port extensions
+- bob WDK DirectDraw
+- deinterlacing WDK video port extensions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bob Method

@@ -1,10 +1,12 @@
 ---
 title: ModelIDList
 description: ModelIDList
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b7c6a100-95bf-421c-9a84-71623c0276fe
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ModelIDList

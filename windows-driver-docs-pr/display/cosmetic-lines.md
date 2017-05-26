@@ -2,7 +2,17 @@
 title: Cosmetic Lines
 description: Cosmetic Lines
 ms.assetid: eb9651dd-cc77-469f-8441-4bb958bd374d
-keywords: ["lines WDK GDI , cosmetic", "GDI WDK Windows 2000 display , lines, cosmetic", "graphics drivers WDK Windows 2000 display , lines, cosmetic", "drawing WDK GDI , lines, cosmetic", "cosmetic lines WDK GDI"]
+keywords:
+- lines WDK GDI , cosmetic
+- GDI WDK Windows 2000 display , lines, cosmetic
+- graphics drivers WDK Windows 2000 display , lines, cosmetic
+- drawing WDK GDI , lines, cosmetic
+- cosmetic lines WDK GDI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Cosmetic Lines

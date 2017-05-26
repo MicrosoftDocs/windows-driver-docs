@@ -3,13 +3,22 @@ title: Managing the Lifetime of Objects
 author: windows-driver-content
 description: Managing the Lifetime of Objects
 ms.assetid: 55ad8133-a70a-462f-87cd-6aeaffb0aec8
-keywords: ["UMDF objects WDK , lifetimes", "framework objects WDK UMDF , lifetimes", "lifetimes WDK UMDF", "callback objects WDK UMDF"]
+keywords:
+- UMDF objects WDK , lifetimes
+- framework objects WDK UMDF , lifetimes
+- lifetimes WDK UMDF
+- callback objects WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing the Lifetime of Objects
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 UMDF uses a reference-counting scheme to manage the lifetime of [callback objects](creating-callback-objects.md) and [framework objects](framework-objects.md).
 

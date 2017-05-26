@@ -1,10 +1,12 @@
 ---
 title: MobileBroadbandInfo XML example
 description: MobileBroadbandInfo XML example
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 605566a2-55d7-456c-8999-e3bb626527fd
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MobileBroadbandInfo XML example

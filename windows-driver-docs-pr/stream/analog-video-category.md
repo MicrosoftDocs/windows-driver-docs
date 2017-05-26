@@ -2,14 +2,17 @@
 title: Analog Video Category
 author: windows-driver-content
 description: Analog Video Category
-MS-HAID:
-- 'vidcapds\_2f2633e0-230c-4043-a925-b203f1d40cdc.xml'
-- 'stream.analog\_video\_category'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 64564c81-b1e1-482b-ae70-59b229a5e86f
-keywords: ["stream categories WDK video capture , analog video", "analog video category WDK video capture", "PINNAME_VIDEO_ANALOGVIDEOIN", "analog audio WDK video capture"]
+keywords:
+- stream categories WDK video capture , analog video
+- analog video category WDK video capture
+- PINNAME_VIDEO_ANALOGVIDEOIN
+- analog audio WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Analog Video Category

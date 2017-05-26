@@ -1,7 +1,12 @@
 ---
 title: Static Driver Verifier commands (MSBuild)
-description: You can run Static Driver Verifier (SDV) in a Visual Studio Command Prompt window. Navigate to the directory where the driver's project file or the library's project file is stored. The parameters can appear in any order on the command line.
+description: Commands used with Static Driver Verifier
 ms.assetid: F0663631-AD7B-4BFE-8E07-7BB2FFC72911
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 #  Static Driver Verifier commands (MSBuild)
@@ -9,9 +14,9 @@ ms.assetid: F0663631-AD7B-4BFE-8E07-7BB2FFC72911
 
 You can run Static Driver Verifier (SDV) in a **Visual Studio Command Prompt** window. Navigate to the directory where the driver's project file or the library's project file is stored. The parameters can appear in any order on the command line.
 
-**Note**¬†¬†Previously available in the Windows Driver Kit (WDK) as a stand-alone tool, SDV is now integrated into Visual Studio and can be run as an MSBuild target, or from the **Driver** menu in Visual Studio.
+**Note**††Previously available in the Windows Driver Kit (WDK) as a stand-alone tool, SDV is now integrated into Visual Studio and can be run as an MSBuild target, or from the **Driver** menu in Visual Studio.
 
-¬†
+†
 
 ``` syntax
 msbuild /t:sdv /p:Inputs="Parameters" ProjectFile /p:Configuration=configuration /p:Platform=platform     
@@ -19,9 +24,9 @@ msbuild /t:sdv /p:Inputs="Parameters" ProjectFile /p:Configuration=configuration
 
 You must select a Release configuration (for example, **/p:Configuration="Windows 7 Release"**). For the list of supported Release Configurations, see [Building a Driver](https://msdn.microsoft.com/windows-drivers/develop/building_a_driver). The Platform can be **Win32** (for x86) or **x64** (for example, **/p:Platform=Win32**).
 
-**Note**¬†¬†Be sure to check your computer's power management plan to ensure the computer will not go into a sleep state during the analysis.
+**Note**††Be sure to check your computer's power management plan to ensure the computer will not go into a sleep state during the analysis.
 
-¬†
+†
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -83,7 +88,7 @@ Displays usage for SDV commands. Commands that use this parameter do not have to
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-Running **msbuild /t:/sdv p:/Inputs=‚Äù/?‚Äù** without parameters displays usage for the SDV commands.
+Running **msbuild /t:/sdv p:/Inputs=î/?î** without parameters displays usage for the SDV commands.
 
 A **/clean** command deletes the files that SDV uses to create the Static Driver Verifier Report display for a verification. After running this command, the Static Driver Verifier Report display for the verification is no longer available.
 
@@ -129,9 +134,9 @@ msbuild /t:sdv /p:Inputs="/view" mydriver.VcxProj /p:Configuration="Windows 7 Re
 
 [Using Static Driver Verifier to Find Defects in Windows Drivers](using-static-driver-verifier-to-find-defects-in-drivers.md)
 
-¬†
+†
 
-¬†
+†
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20%20Static%20Driver%20Verifier%20commands%20%28MSBuild%29%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 

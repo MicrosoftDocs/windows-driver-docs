@@ -2,6 +2,11 @@
 title: Virtual Machine Queue (VMQ)
 description: Virtual Machine Queue (VMQ)
 ms.assetid: c502c7d6-bdf1-4656-b5a5-339250910f08
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Virtual Machine Queue (VMQ)

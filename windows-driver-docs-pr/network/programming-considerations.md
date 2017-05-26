@@ -2,7 +2,17 @@
 title: Programming Considerations
 description: Programming Considerations
 ms.assetid: 5f51352a-cfbb-4fa0-98af-953b151a4563
-keywords: ["Network Module Registrar WDK , programming considerations", "NMR WDK , programming considerations", "reference counts WDK Network Module Registrar", "in-progress calls WDK Network Module Registrar", "counting references WDK Network Module Registrar"]
+keywords:
+- Network Module Registrar WDK , programming considerations
+- NMR WDK , programming considerations
+- reference counts WDK Network Module Registrar
+- in-progress calls WDK Network Module Registrar
+- counting references WDK Network Module Registrar
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Programming Considerations

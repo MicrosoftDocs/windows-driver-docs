@@ -2,7 +2,18 @@
 title: Including a MOF File
 description: Including a MOF File
 ms.assetid: 87ef7156-d204-4797-b805-a50d9a4c509d
-keywords: ["custom GUIDs WDK networking", "WMI WDK networking , GUIDs", "OIDs WDK networking , WMI", "GUIDs WDK networking", "Windows Management Instrumentation WDK networking , GUIDs", "MOF files WDK networking"]
+keywords:
+- custom GUIDs WDK networking
+- WMI WDK networking , GUIDs
+- OIDs WDK networking , WMI
+- GUIDs WDK networking
+- Windows Management Instrumentation WDK networking , GUIDs
+- MOF files WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Including a MOF File

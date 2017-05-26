@@ -2,14 +2,17 @@
 title: Securing a BDA Minidriver
 author: windows-driver-content
 description: Securing a BDA Minidriver
-MS-HAID:
-- 'bdadg\_302560cd-8efe-48d7-883c-77a5a64a108d.xml'
-- 'stream.securing\_a\_bda\_minidriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e3061a1b-ecba-48a6-9ff0-0176254c2933
-keywords: ["Broadcast Driver Architecture WDK AVStream , security", "BDA WDK AVStream , security", "security WDK BDA", "blue screen WDK BDA"]
+keywords:
+- Broadcast Driver Architecture WDK AVStream , security
+- BDA WDK AVStream , security
+- security WDK BDA
+- blue screen WDK BDA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Securing a BDA Minidriver

@@ -3,13 +3,20 @@ title: A Device Returns to Its Working State
 author: windows-driver-content
 description: A Device Returns to Its Working State
 ms.assetid: 2b192eea-f731-4d61-be19-95724bf7b04a
-keywords: ["power management scenarios WDK UMDF , device returning to its working state", "device returning to working state scenario WDK UMDF"]
+keywords:
+- power management scenarios WDK UMDF , device returning to its working state
+- device returning to working state scenario WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # A Device Returns to Its Working State
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 A device that is in a low-power state returns to its working state if one of the following occurs:
 

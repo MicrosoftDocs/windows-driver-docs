@@ -2,14 +2,16 @@
 title: Buffering Isochronous DMA Transfers for IEEE 1394 Devices
 author: windows-driver-content
 description: Buffering Isochronous DMA Transfers for IEEE 1394 Devices
-MS-HAID:
-- '1394-isoch\_c355e228-b716-45a4-a713-8b35550a8302.xml'
-- 'IEEE.buffering\_isochronous\_dma\_transfers\_for\_ieee\_1394\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5a08303b-8a4a-4c55-ba48-c4d5ea06157e
-keywords: ["isochronous I/O WDK IEEE 1394 bus , buffering DMA transfers", "buffers WDK IEEE 1394 bus", "DMA transfers WDK IEEE 1394 bus"]
+keywords:
+- isochronous I/O WDK IEEE 1394 bus , buffering DMA transfers
+- buffers WDK IEEE 1394 bus
+- DMA transfers WDK IEEE 1394 bus
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Buffering Isochronous DMA Transfers for IEEE 1394 Devices

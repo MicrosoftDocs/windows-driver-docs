@@ -2,14 +2,14 @@
 title: Option Attributes for the PaperSize Feature
 author: windows-driver-content
 description: Option Attributes for the PaperSize Feature
-MS-HAID:
-- 'nt5gpd\_d9fca447-1f6c-46e4-849d-56a2b4d43b32.xml'
-- 'print.option\_attributes\_for\_the\_papersize\_feature'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cfd82bc5-b89b-41c2-b542-28cb5905e37a
-keywords: ["PaperSize Feature"]
+keywords:
+- PaperSize Feature
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Option Attributes for the PaperSize Feature

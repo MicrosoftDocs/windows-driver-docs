@@ -2,14 +2,14 @@
 title: Print Capabilities Architecture
 author: windows-driver-content
 description: Print Capabilities Architecture
-MS-HAID:
-- 'drvarch\_2c763dd4-8ace-442d-8605-31c3b8555983.xml'
-- 'print.print\_capabilities\_architecture'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d19438ca-8c88-4835-8445-2799387e0912
-keywords: ["Print Capabilities WDK , architecture"]
+keywords:
+- Print Capabilities WDK , architecture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Capabilities Architecture

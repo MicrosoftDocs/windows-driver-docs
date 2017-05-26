@@ -2,14 +2,23 @@
 title: Identifying a Printer's Color Capability
 author: windows-driver-content
 description: Identifying a Printer's Color Capability
-MS-HAID:
-- 'drvarch\_f19dbb35-eaba-431a-9c21-5c0dd0cc785d.xml'
-- 'print.identifying\_a\_printer\_s\_color\_capability'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 24abf76d-c0f9-440e-b825-8b39ea9ab807
-keywords: ["printer interface DLL WDK , color capability supported", "color management WDK print , identifying capabilities", "identifying printer color capabilities", "printer color capabilities WDK", "dmColor", "DC_COLORDEVICE", "DrvDeviceCapabilities", "monochrome output WDK printer", "noncolor output WDK printer", "grayscale output WDK printer"]
+keywords:
+- printer interface DLL WDK , color capability supported
+- color management WDK print , identifying capabilities
+- identifying printer color capabilities
+- printer color capabilities WDK
+- dmColor
+- DC_COLORDEVICE
+- DrvDeviceCapabilities
+- monochrome output WDK printer
+- noncolor output WDK printer
+- grayscale output WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Identifying a Printer's Color Capability

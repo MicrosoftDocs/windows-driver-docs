@@ -2,13 +2,12 @@
 title: About Sensor Constants
 author: windows-driver-content
 description: About Sensor Constants
-MS-HAID:
-- 'Sensor\_DG\_Overview\_21534314-e402-408c-a819-9b7e73bb832e.xml'
-- 'sensors.about\_sensor\_constants'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9c26e305-0d5c-4442-9bcf-a9cdc1778c6b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # About Sensor Constants

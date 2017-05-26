@@ -2,14 +2,17 @@
 title: Registry Settings for Serenum
 author: windows-driver-content
 description: Registry Settings for Serenum
-MS-HAID:
-- 'sseovr\_7fbd5415-ac22-4750-9fba-dac49572b88c.xml'
-- 'serports.registry\_settings\_for\_serenum'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c8a8f1b7-ea58-49ed-98e0-40297ec9a769
-keywords: ["Serenum driver WDK , registry settings", "registry WDK serial devices", "serial devices WDK , registry settings", "serial devices WDK , Serenum driver"]
+keywords:
+- Serenum driver WDK , registry settings
+- registry WDK serial devices
+- serial devices WDK , registry settings
+- serial devices WDK , Serenum driver
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registry Settings for Serenum

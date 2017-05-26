@@ -1,10 +1,12 @@
 ---
-Description: 'This topic discusses the LPM mechanism for saving power and described various common problems seen in current USB 3.0 hardware.'
-MS-HAID: 'buses.common\_hardware\_problems\_with\_u1\_or\_u2\_implementation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This topic discusses the LPM mechanism for saving power and described various common problems seen in current USB 3.0 hardware.
 title: Common hardware problems with U1 or U2 implementation
+author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Common hardware problems with U1 or U2 implementation
@@ -25,7 +27,7 @@ LPM can significantly save power and lead to longer battery life. Therefore, it 
 
 -   **Incorrect deferred packet implementation**
 
-    As described in [Packet Deferring](hardware-transitions.md#packet-def), after a device has sent ERDY, the device must keep the link in U0 until the host sends a response to ERDY or **tERDYTimeout** occurs. Some devices fail to send ERDY after getting a deferred packet notification. This can lead to a problematic situation where a transfer never completes.
+    As described in [Packet Deferring](u1-and-u2-transitions.md#packet-deferring), after a device has sent ERDY, the device must keep the link in U0 until the host sends a response to ERDY or **tERDYTimeout** occurs. Some devices fail to send ERDY after getting a deferred packet notification. This can lead to a problematic situation where a transfer never completes.
 
 -   **Failure to send Ping.LPFS in U1**
 
@@ -52,7 +54,7 @@ LPM can significantly save power and lead to longer battery life. Therefore, it 
 
 -   **Incorrect implementation of deferred packet**
 
-    As described in [Packet Deferring](hardware-transitions.md#packet-def), hubs are responsible for sending the deferred bit packet header back to the host that must process the packet, similar to a NRDY notification from the device. Some hubs fail to send the deferred packet to the host or the device. Some hosts do not correctly process the deferred bit packet or re-send the transfer when the device ultimately sends ERDY. This leads to transfer failures and unreliable behavior.
+    As described in [Packet Deferring](u1-and-u2-transitions.md#packet-deferring), hubs are responsible for sending the deferred bit packet header back to the host that must process the packet, similar to a NRDY notification from the device. Some hubs fail to send the deferred packet to the host or the device. Some hosts do not correctly process the deferred bit packet or re-send the transfer when the device ultimately sends ERDY. This leads to transfer failures and unreliable behavior.
 
 -   **Not sending upstream port to U2 when no device connected**
 
@@ -70,7 +72,8 @@ LPM can significantly save power and lead to longer battery life. Therefore, it 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Common%20hardware%20problems%20with%20U1%20or%20U2%20implementation%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
+--------------------
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Common%20hardware%20problems%20with%20U1%20or%20U2%20implementation%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

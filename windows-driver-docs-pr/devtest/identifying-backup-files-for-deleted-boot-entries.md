@@ -2,7 +2,19 @@
 title: Identifying Backup Files for Deleted Boot Entries
 description: Identifying Backup Files for Deleted Boot Entries
 ms.assetid: ba1bcd10-83cb-4d28-9360-7927b169f056
-keywords: ["NVRAM boot options WDK , backup file searches", "EFI NVRAM boot options WDK , backup file searches", "searches WDK boot options", "locating boot entry backups WDK", "deleted boot entry searches WDK", "boot entry backups WDK", "identifying backup files for boot entries"]
+keywords:
+- NVRAM boot options WDK , backup file searches
+- EFI NVRAM boot options WDK , backup file searches
+- searches WDK boot options
+- locating boot entry backups WDK
+- deleted boot entry searches WDK
+- boot entry backups WDK
+- identifying backup files for boot entries
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Identifying Backup Files for Deleted Boot Entries

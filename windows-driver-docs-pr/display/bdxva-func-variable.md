@@ -2,7 +2,17 @@
 title: bDXVA\_Func Variable
 description: bDXVA\_Func Variable
 ms.assetid: 6db9fa71-7bc2-4eb6-afcb-b16df48f7e8b
-keywords: ["video decoding WDK DirectX VA , formats", "decoding video WDK DirectX VA , formats", "picture decoding WDK DirectX VA , formats", "formats WDK DirectX VA", "bDXVA_Func variable WDK DirectX VA"]
+keywords:
+- video decoding WDK DirectX VA , formats
+- decoding video WDK DirectX VA , formats
+- picture decoding WDK DirectX VA , formats
+- formats WDK DirectX VA
+- bDXVA_Func variable WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # bDXVA\_Func Variable

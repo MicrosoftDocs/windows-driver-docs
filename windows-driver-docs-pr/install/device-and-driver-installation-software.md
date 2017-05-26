@@ -2,6 +2,11 @@
 title: Device and Driver Installation Software
 description: Device and Driver Installation Software
 ms.assetid: 462b7e95-9b05-4b2e-8ffe-f325219e2b2f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device and Driver Installation Software

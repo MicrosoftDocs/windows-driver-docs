@@ -2,7 +2,17 @@
 title: About Event Tracing for Drivers
 description: About Event Tracing for Drivers
 ms.assetid: 1b5c85b1-5b7a-48bc-bdd4-356316d4467f
-keywords: ["Event Tracing for Windows WDK , about Event Tracing for Windows", "ETW WDK , about Event Tracing for Windows", "Event Tracing for Windows WDK , kernel-mode", "ETW WDK , kernel-mode", "kernel-mode ETW WDK software tracing"]
+keywords:
+- Event Tracing for Windows WDK , about Event Tracing for Windows
+- ETW WDK , about Event Tracing for Windows
+- Event Tracing for Windows WDK , kernel-mode
+- ETW WDK , kernel-mode
+- kernel-mode ETW WDK software tracing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # About Event Tracing for Drivers

@@ -2,13 +2,12 @@
 title: Virtual Printers in Printer INF Files
 author: windows-driver-content
 description: Virtual Printers in Printer INF Files
-MS-HAID:
-- 'prtinst\_f3e936f2-08f6-4e14-8601-422cad288473.xml'
-- 'print.virtual\_printers\_in\_printer\_inf\_files'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a7308b0f-61b8-4b4d-a116-ce940787882b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Virtual Printers in Printer INF Files

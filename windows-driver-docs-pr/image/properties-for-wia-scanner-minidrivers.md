@@ -2,13 +2,12 @@
 title: Properties for WIA Scanner Minidrivers
 author: windows-driver-content
 description: Properties for WIA Scanner Minidrivers
-MS-HAID:
-- 'WIA\_arch\_cb30daa2-673e-4645-ac88-91b60bebe3d4.xml'
-- 'image.properties\_for\_wia\_scanner\_minidrivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9de8694a-0d19-4945-b0c1-a3c4bc71dad3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Properties for WIA Scanner Minidrivers

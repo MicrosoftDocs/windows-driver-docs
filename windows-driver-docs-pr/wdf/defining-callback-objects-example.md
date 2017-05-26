@@ -3,13 +3,19 @@ title: Defining Callback Objects Example
 author: windows-driver-content
 description: Defining Callback Objects Example
 ms.assetid: d987bb95-cbee-46aa-beaf-167572ca4a80
-keywords: ["callback objects WDK UMDF , example of defining"]
+keywords:
+- callback objects WDK UMDF , example of defining
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Defining Callback Objects Example
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The following code example shows how a driver inherits from the [IPnpCallbackHardware](https://msdn.microsoft.com/library/windows/hardware/ff556764) interface to define a device callback object.
 

@@ -1,14 +1,15 @@
 ---
 title: Read and Write Attribute Memory
 description: Read and Write Attribute Memory
-MS-HAID:
-- 'mcch2\_dcba1d53-cf45-471f-9deb-66db8d957c9c.xml'
-- 'PCMCIA.read\_and\_write\_attribute\_memory'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8e430057-b68a-4edc-8755-1d7255412269
-keywords: ["PCMCIA WDK buses , attribute memory", "attribute memory WDK PCMCIA bus , read and write"]
+keywords:
+- PCMCIA WDK buses , attribute memory
+- attribute memory WDK PCMCIA bus , read and write
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Read and Write Attribute Memory

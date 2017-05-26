@@ -2,14 +2,18 @@
 title: GDL Exercise 5 Defining Name Limits for Different Features
 author: windows-driver-content
 description: GDL Exercise 5 Defining Name Limits for Different Features
-MS-HAID:
-- 'gplfiles\_170a8b36-fa4a-48dc-b31f-d52640b09be0.xml'
-- 'print.gdl\_exercise\_5\_\_defining\_name\_limits\_for\_different\_features'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8e6c59d7-c748-4133-ba70-e5be413bae54
-keywords: ["GDL WDK , examples", "examples WDK GDL", "tutorials WDK GDL", "GDL WDK , tutorials", "templates WDK GDL , defining name limits"]
+keywords:
+- GDL WDK , examples
+- examples WDK GDL
+- tutorials WDK GDL
+- GDL WDK , tutorials
+- templates WDK GDL , defining name limits
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Exercise 5: Defining Name Limits for Different Features

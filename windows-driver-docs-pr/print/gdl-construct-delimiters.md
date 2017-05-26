@@ -2,14 +2,16 @@
 title: GDL Construct Delimiters
 author: windows-driver-content
 description: GDL Construct Delimiters
-MS-HAID:
-- 'gplfiles\_7b04da7f-b754-4796-9248-e5739950729e.xml'
-- 'print.gdl\_construct\_delimiters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6f759534-3dc2-4e04-afe0-3f377790be21
-keywords: ["constructs WDK GDL , delimiters", "GDL WDK , constructs", "parser WDK GDL , handling construct delimiters"]
+keywords:
+- constructs WDK GDL , delimiters
+- GDL WDK , constructs
+- parser WDK GDL , handling construct delimiters
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Construct Delimiters

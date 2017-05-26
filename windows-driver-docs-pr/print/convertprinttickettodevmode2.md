@@ -1,17 +1,16 @@
 ---
-title: ConvertPrintTicketToDevMode
+title: ConvertPrintTicketToDevMode print ticket support
 author: windows-driver-content
-description: ConvertPrintTicketToDevMode
-MS-HAID:
-- 'drvarch\_5b5df4e3-41fb-4489-80d0-341c4a7d6783.xml'
-- 'print.convertprinttickettodevmode2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+description: This method is called by the print subsystem to convert the PrintTicket object to a DEVMODEW structure.
 ms.assetid: 7ef8990d-66dd-421d-8bee-5abee52b8338
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# ConvertPrintTicketToDevMode
+# ConvertPrintTicketToDevMode print ticket support
 
 
 The [**IPrintTicketProvider::ConvertPrintTicketToDevMode**](https://msdn.microsoft.com/library/windows/hardware/ff554363) method is called by the print subsystem to convert the PrintTicket object to a [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) structure.

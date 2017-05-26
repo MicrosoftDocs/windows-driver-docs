@@ -2,6 +2,11 @@
 title: Automatic installation for Windows Store device apps
 description: This topic describes how automatic installation works and how the app, metadata, and drivers can be updated and uninstalled.
 ms.assetid: ED9C7A63-5D2A-45D3-AD62-32C6876142FC
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Automatic installation for Windows Store device apps

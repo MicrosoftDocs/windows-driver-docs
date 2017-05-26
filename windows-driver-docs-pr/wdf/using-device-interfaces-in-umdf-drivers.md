@@ -3,13 +3,22 @@ title: Using Device Interfaces in UMDF Drivers
 author: windows-driver-content
 description: Using Device Interfaces in UMDF Drivers
 ms.assetid: acb6da80-bd04-48f0-b42a-96463f091b0a
-keywords: ["user-mode drivers WDK UMDF , device interfaces", "UMDF WDK , device interfaces", "User-Mode Driver Framework WDK , device interfaces", "device interfaces WDK UMDF"]
+keywords:
+- user-mode drivers WDK UMDF , device interfaces
+- UMDF WDK , device interfaces
+- User-Mode Driver Framework WDK , device interfaces
+- device interfaces WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Device Interfaces in UMDF Drivers
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 A *device interface* is a symbolic link to a Plug and Play (PnP) device that an application can use to access the device. A user-mode application can pass the interface's symbolic link name to an API element, such as the Microsoft Win32 [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858) function. To obtain a device interface's symbolic link name, the user-mode application can call **SetupDi** functions. For more information about SetupDi functions, see SetupDi Device Interface Functions.
 

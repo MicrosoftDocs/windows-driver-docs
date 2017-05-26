@@ -2,7 +2,16 @@
 title: Selecting the Appropriate Signature Type
 description: Selecting the Appropriate Signature Type
 ms.assetid: 4e93542d-75ea-47f6-9ee5-96461cc8b9c9
-keywords: ["driver signing WDK , selecting signature type", "signing drivers WDK , selecting signature type", "digital signatures WDK , selecting signature type", "signatures WDK , selecting signature type"]
+keywords:
+- driver signing WDK , selecting signature type
+- signing drivers WDK , selecting signature type
+- digital signatures WDK , selecting signature type
+- signatures WDK , selecting signature type
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Selecting the Appropriate Signature Type

@@ -2,14 +2,18 @@
 title: Combined Language and Port Monitor
 author: windows-driver-content
 description: Combined Language and Port Monitor
-MS-HAID:
-- 'provider\_23b72757-c2b9-45d9-83a5-0e24b529fbf7.xml'
-- 'print.combined\_language\_and\_port\_monitor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5da362cf-92b8-4c78-80b2-57106b978600
-keywords: ["print monitors WDK , language monitors", "print monitors WDK , port monitors", "language monitors WDK print , port monitor interaction", "port monitors WDK print , language monitor interaction", "combined language and port monitors WDK"]
+keywords:
+- print monitors WDK , language monitors
+- print monitors WDK , port monitors
+- language monitors WDK print , port monitor interaction
+- port monitors WDK print , language monitor interaction
+- combined language and port monitors WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Combined Language and Port Monitor

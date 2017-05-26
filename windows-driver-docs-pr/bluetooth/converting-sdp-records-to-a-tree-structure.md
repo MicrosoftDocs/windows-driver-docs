@@ -2,7 +2,21 @@
 title: Converting SDP Records to a Tree Structure
 description: Converting SDP Records to a Tree Structure
 ms.assetid: 762cf68b-0082-4b9e-8f24-ff19ecf6f8bd
-keywords: ["Bluetooth WDK , SDP server communication", "SDP WDK Bluetooth", "Service Discovery Protocol WDK Bluetooth", "browsing services WDK Bluetooth", "searching services WDK Bluetooth", "services browsing WDK Bluetooth", "converting SDP records", "tree structures from SDP records WDK Bluetooth", "SdpConvertStreamToTree"]
+keywords:
+- Bluetooth WDK , SDP server communication
+- SDP WDK Bluetooth
+- Service Discovery Protocol WDK Bluetooth
+- browsing services WDK Bluetooth
+- searching services WDK Bluetooth
+- services browsing WDK Bluetooth
+- converting SDP records
+- tree structures from SDP records WDK Bluetooth
+- SdpConvertStreamToTree
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Converting SDP Records to a Tree Structure

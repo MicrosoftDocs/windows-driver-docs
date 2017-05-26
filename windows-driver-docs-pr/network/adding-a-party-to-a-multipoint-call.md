@@ -2,7 +2,15 @@
 title: Adding a Party to a Multipoint Call
 description: Adding a Party to a Multipoint Call
 ms.assetid: 2d6b8ebe-8028-46d0-91bd-7f95b0375cc4
-keywords: ["parties WDK CoNDIS", "multipoint calls WDK CoNDIS", "adding parties to multipoint calls"]
+keywords:
+- parties WDK CoNDIS
+- multipoint calls WDK CoNDIS
+- adding parties to multipoint calls
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding a Party to a Multipoint Call

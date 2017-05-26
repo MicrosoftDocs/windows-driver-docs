@@ -2,7 +2,14 @@
 title: Using Events in Display Drivers
 description: Using Events in Display Drivers
 ms.assetid: 0c02d64f-0aad-43b4-b105-09ab8901e0de
-keywords: ["events WDK Windows 2000 display", "display drivers WDK Windows 2000 , events"]
+keywords:
+- events WDK Windows 2000 display
+- display drivers WDK Windows 2000 , events
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Events in Display Drivers

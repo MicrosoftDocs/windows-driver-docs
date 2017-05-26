@@ -2,14 +2,15 @@
 title: Supporting Vendor-Defined Paper Sizes
 author: windows-driver-content
 description: Supporting Vendor-Defined Paper Sizes
-MS-HAID:
-- 'nt5gpd\_604ab2cc-9380-4cd0-b796-c029256ae99f.xml'
-- 'print.supporting\_vendor\_defined\_paper\_sizes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5c356857-ef43-41e4-a4ed-fae6655bd9ce
-keywords: ["vendor-supplied paper sizes WDK Unidrv", "nonstandard paper sizes WDK Unidrv"]
+keywords:
+- vendor-supplied paper sizes WDK Unidrv
+- nonstandard paper sizes WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Vendor-Defined Paper Sizes

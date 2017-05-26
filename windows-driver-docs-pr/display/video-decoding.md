@@ -2,7 +2,17 @@
 title: Video Decoding
 description: Video Decoding
 ms.assetid: 4e8bf7e9-7a3c-4732-9ac0-4f6f5ef07552
-keywords: ["DirectX Video Acceleration WDK Windows 2000 display , video decoding", "Video Acceleration WDK DirectX , video decoding", "VA WDK DirectX , video decoding", "decoding video WDK DirectX VA , about decoding video", "video decoding WDK DirectX VA , about decoding video"]
+keywords:
+- DirectX Video Acceleration WDK Windows 2000 display , video decoding
+- Video Acceleration WDK DirectX , video decoding
+- VA WDK DirectX , video decoding
+- decoding video WDK DirectX VA , about decoding video
+- video decoding WDK DirectX VA , about decoding video
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Video Decoding

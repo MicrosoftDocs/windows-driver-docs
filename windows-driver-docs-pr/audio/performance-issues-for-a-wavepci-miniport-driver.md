@@ -2,7 +2,22 @@
 title: Performance Issues for a WavePci Miniport Driver
 description: Performance Issues for a WavePci Miniport Driver
 ms.assetid: 785fd743-0c78-44cd-95bf-1f961aa414b5
-keywords: ["WavePci performance issues WDK audio", "stream servicing mechanisms WDK audio", "hardware interrupts WDK audio", "interrupt service routines WDK audio", "ISRs WDK audio", "timer DPCs WDK audio", "PAUSE/ACQUIRE optimizations WDK audio", "IPreFetchOffset", "synchronization primitives WDK audio", "IPinCount"]
+keywords:
+- WavePci performance issues WDK audio
+- stream servicing mechanisms WDK audio
+- hardware interrupts WDK audio
+- interrupt service routines WDK audio
+- ISRs WDK audio
+- timer DPCs WDK audio
+- PAUSE/ACQUIRE optimizations WDK audio
+- IPreFetchOffset
+- synchronization primitives WDK audio
+- IPinCount
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Performance Issues for a WavePci Miniport Driver

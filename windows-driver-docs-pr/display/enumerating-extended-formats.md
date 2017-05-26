@@ -2,7 +2,14 @@
 title: Enumerating Extended Formats
 description: Enumerating Extended Formats
 ms.assetid: 504464ff-4449-43fa-9fc8-645400ac8236
-keywords: ["nonstandard display modes WDK DirectX 9.0 , extended", "extended nonstandard display modes WDK DirectX 9.0"]
+keywords:
+- nonstandard display modes WDK DirectX 9.0 , extended
+- extended nonstandard display modes WDK DirectX 9.0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enumerating Extended Formats

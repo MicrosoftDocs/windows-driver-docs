@@ -3,13 +3,20 @@ title: A User Plugs in a Device
 author: windows-driver-content
 description: A User Plugs in a Device
 ms.assetid: 1968270b-ce57-4a8c-8b7a-bbd4a972435d
-keywords: ["power management scenarios WDK UMDF , plugging in a device", "plugging in a device scenario WDK UMDF"]
+keywords:
+- power management scenarios WDK UMDF , plugging in a device
+- plugging in a device scenario WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # A User Plugs in a Device
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 When a user plugs in a device, the framework calls a UMDF driver's PnP and Power Management callback methods in the following sequence, starting from the Device Arrived state at the bottom of the figure:
 

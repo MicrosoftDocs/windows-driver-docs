@@ -2,14 +2,14 @@
 title: GetIdlePollingState
 author: windows-driver-content
 description: GetIdlePollingState
-MS-HAID:
-- 'provider\_c9cf6aea-5408-4414-9ee7-efb6a3ea8e61.xml'
-- 'print.getidlepollingstate'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e2c96291-e86c-49a1-a9ce-73e00eddc22a
-keywords: ["GetIdlePollingState"]
+keywords:
+- GetIdlePollingState
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GetIdlePollingState

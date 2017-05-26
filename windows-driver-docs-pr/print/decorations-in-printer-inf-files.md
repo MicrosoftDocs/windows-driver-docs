@@ -2,14 +2,17 @@
 title: Decorations in Printer INF Files
 author: windows-driver-content
 description: Decorations in Printer INF Files
-MS-HAID:
-- 'prtinst\_5a926067-0556-48d4-b86c-7672107c5e3d.xml'
-- 'print.decorations\_in\_printer\_inf\_files'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 86ddca11-e2a9-44b8-8c42-313116fc580e
-keywords: ["INF files WDK print , decorations", "additional drivers WDK printer", "decorated INF WDK", "INF Models Section"]
+keywords:
+- INF files WDK print , decorations
+- additional drivers WDK printer
+- decorated INF WDK
+- INF Models Section
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Decorations in Printer INF Files

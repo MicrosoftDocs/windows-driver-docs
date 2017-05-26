@@ -2,13 +2,12 @@
 title: Named Kernel Objects for WIA Drivers
 author: windows-driver-content
 description: Named Kernel Objects for WIA Drivers
-MS-HAID:
-- 'WIA\_best\_practice\_6baa98dd-aa52-4a07-8a21-96d0aa27e9ce.xml'
-- 'image.named\_kernel\_objects\_for\_wia\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1a8311b7-12c7-4009-a3c8-dcee30b0a442
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Named Kernel Objects for WIA Drivers

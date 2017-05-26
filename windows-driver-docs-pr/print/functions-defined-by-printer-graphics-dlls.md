@@ -2,14 +2,16 @@
 title: Functions Defined by Printer Graphics DLLs
 author: windows-driver-content
 description: Functions Defined by Printer Graphics DLLs
-MS-HAID:
-- 'drvarch\_bca7b4b3-3144-4009-be77-2118e3331c1a.xml'
-- 'print.functions\_defined\_by\_printer\_graphics\_dlls'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b0c9ce45-76c4-4058-af3f-7b9d230bcf94
-keywords: ["printer graphics DLL WDK , functions", "functions WDK printer graphics DLL", "graphics DLL WDK printer , functions"]
+keywords:
+- printer graphics DLL WDK , functions
+- functions WDK printer graphics DLL
+- graphics DLL WDK printer , functions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Functions Defined by Printer Graphics DLLs

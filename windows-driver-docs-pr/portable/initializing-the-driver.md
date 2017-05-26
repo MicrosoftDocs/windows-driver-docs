@@ -1,8 +1,11 @@
 ---
 Description: Initializing the Driver
-MS-HAID: 'wpddk.initializing\_the\_driver'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Initializing the Driver
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing the Driver

@@ -2,14 +2,15 @@
 title: Improved Form-to-Tray Matching Algorithm
 author: windows-driver-content
 description: Improved Form-to-Tray Matching Algorithm
-MS-HAID:
-- 'splarch\_ceb6b8ce-8328-4046-8c9f-2d38a66bd349.xml'
-- 'print.improved\_form\_to\_tray\_matching\_algorithm'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ce58501d-a2f6-4106-9a99-ad44ff4bf658
-keywords: ["matching algorithm WDK forms", "form-to-tray matching algorithm WDK printer"]
+keywords:
+- matching algorithm WDK forms
+- form-to-tray matching algorithm WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Improved Form-to-Tray Matching Algorithm

@@ -2,14 +2,18 @@
 title: AV/C Streaming Overview
 author: windows-driver-content
 description: AV/C Streaming Overview
-MS-HAID:
-- 'avcsguide\_c32b1696-8e9e-4441-a8dc-31dce2fb4c69.xml'
-- 'stream.av\_c\_streaming\_overview'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c500fad7-26b7-4507-953e-258dd9c91253
-keywords: ["AV/C WDK , Stream filter driver", "Stream filter driver WDK AV/C", "Avcstrm.sys streaming filter driver WDK", "Avcstrm.sys streaming filter driver WDK , about Avcstrm.sys streaming filter driver", "filter drivers WDK AV/C streaming"]
+keywords:
+- AV/C WDK , Stream filter driver
+- Stream filter driver WDK AV/C
+- Avcstrm.sys streaming filter driver WDK
+- Avcstrm.sys streaming filter driver WDK , about Avcstrm.sys streaming filter driver
+- filter drivers WDK AV/C streaming
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AV/C Streaming Overview

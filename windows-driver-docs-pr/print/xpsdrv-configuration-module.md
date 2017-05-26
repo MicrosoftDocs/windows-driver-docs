@@ -2,14 +2,18 @@
 title: XPSDrv Configuration Module
 author: windows-driver-content
 description: XPSDrv Configuration Module
-MS-HAID:
-- 'xpsconfig\_78a09a22-0fc2-45e5-82ba-59ed9337fc1e.xml'
-- 'print.xpsdrv\_configuration\_module'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 439d7769-57d1-41f9-a3db-da254b4b7cae
-keywords: ["XPSDrv printer drivers WDK , configuration modules", "configuration modules WDK XPSDrv , about configuration modules", "conversion render modules WDK XPSDrv", "notifications WDK XPSDrv", "event notifications WDK XPSDrv"]
+keywords:
+- XPSDrv printer drivers WDK , configuration modules
+- configuration modules WDK XPSDrv , about configuration modules
+- conversion render modules WDK XPSDrv
+- notifications WDK XPSDrv
+- event notifications WDK XPSDrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XPSDrv Configuration Module

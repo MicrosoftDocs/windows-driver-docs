@@ -2,14 +2,15 @@
 title: AVStream Samples
 author: windows-driver-content
 description: AVStream Samples
-MS-HAID:
-- 'avstrsamp\_7c83c332-cdd0-4324-86d8-fd3853107728.xml'
-- 'stream.avstream\_samples'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 18ddd9f1-d8bb-49a7-91bf-a8aeaa9565ad
-keywords: ["AVStream WDK , samples", "sample minidrivers WDK AVStream"]
+keywords:
+- AVStream WDK , samples
+- sample minidrivers WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AVStream Samples

@@ -2,14 +2,20 @@
 title: Extension Unit Plug-In Architecture
 author: windows-driver-content
 description: Extension Unit Plug-In Architecture
-MS-HAID:
-- 'uvcds\_9d034ac2-f455-4ed6-b1df-040ff0dd64d9.xml'
-- 'stream.extension\_unit\_plug\_in\_architecture'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cf2b32dd-0b65-41ce-b6e8-a9068e232600
-keywords: ["extension units WDK USB Video Class , architecture", "Extension Unit controls WDK USB Video Class", "registry WDK USB Video Class", "events WDK USB Video Class", "COM API WDK USB Video Class", "plug-in DLL WDK USB Video Class", "extension unit"]
+keywords:
+- extension units WDK USB Video Class , architecture
+- Extension Unit controls WDK USB Video Class
+- registry WDK USB Video Class
+- events WDK USB Video Class
+- COM API WDK USB Video Class
+- plug-in DLL WDK USB Video Class
+- extension unit
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extension Unit Plug-In Architecture

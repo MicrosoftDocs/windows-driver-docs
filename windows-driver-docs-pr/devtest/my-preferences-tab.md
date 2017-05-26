@@ -2,6 +2,11 @@
 title: My Preferences Tab
 description: This topic describes WDF Verifier's My Preferences page. On this page, you can set preferences for some of the control panel’s features.
 ms.assetid: 6f37fd6b-c60c-4d59-94fb-0dc7d3ff6f0f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # My Preferences Tab

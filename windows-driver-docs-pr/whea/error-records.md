@@ -2,14 +2,20 @@
 title: Error Records
 author: windows-driver-content
 description: Error Records
-MS-HAID:
-- 'whea\_60ee65ce-47a9-4287-a71f-8eaab2c1ca5a.xml'
-- 'whea.error\_records'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 080da29a-b5cb-45a5-848d-048d9612ee2a
-keywords: ["Windows Hardware Error Architecture WDK , error records", "WHEA WDK , error records", "errors WDK WHEA , error records", "error records WDK WHEA", "error record format WDK WHEA", "error record header WDK WHEA", "error record section WDK WHEA"]
+keywords:
+- Windows Hardware Error Architecture WDK , error records
+- WHEA WDK , error records
+- errors WDK WHEA , error records
+- error records WDK WHEA
+- error record format WDK WHEA
+- error record header WDK WHEA
+- error record section WDK WHEA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Error Records

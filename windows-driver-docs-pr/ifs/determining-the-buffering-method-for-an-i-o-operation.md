@@ -3,7 +3,20 @@ title: Determining the Buffering Method for an I/O Operation
 author: windows-driver-content
 description: Determining the Buffering Method for an I/O Operation
 ms.assetid: 219378d9-a9fa-495a-b016-36595a7efb49
-keywords: ["buffers WDK file system minifilter", "preoperation callback routines WDK file system minifilter , buffers", "postoperation callback routines WDK file system minifilter , buffers", "buffered I/O WDK file system", "direct I/O WDK file system", "neither buffered nor direct I/O WDK file system", "data buffers WDK file system minifilter", "I/O WDK file systems"]
+keywords:
+- buffers WDK file system minifilter
+- preoperation callback routines WDK file system minifilter , buffers
+- postoperation callback routines WDK file system minifilter , buffers
+- buffered I/O WDK file system
+- direct I/O WDK file system
+- neither buffered nor direct I/O WDK file system
+- data buffers WDK file system minifilter
+- I/O WDK file systems
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Determining the Buffering Method for an I/O Operation

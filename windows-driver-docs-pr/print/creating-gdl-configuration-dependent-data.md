@@ -2,14 +2,17 @@
 title: Creating GDL Configuration-Dependent Data
 author: windows-driver-content
 description: Creating GDL Configuration-Dependent Data
-MS-HAID:
-- 'gplfiles\_2eeeb9a0-4567-43fc-b3c3-f9ecff2bb32b.xml'
-- 'print.creating\_gdl\_configuration\_dependent\_data'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5b00903c-a637-4f83-96b8-92fe850d309e
-keywords: ["GDL WDK , configurations", "configurations WDK GDL , creating configuration-dependent data", "creating configuration-dependent data WDK GDL", "GDL WDK , organizing data"]
+keywords:
+- GDL WDK , configurations
+- configurations WDK GDL , creating configuration-dependent data
+- creating configuration-dependent data WDK GDL
+- GDL WDK , organizing data
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating GDL Configuration-Dependent Data

@@ -2,6 +2,11 @@
 title: Architectural Overview
 description: This topic presents an architectural overview of the Windows 8.1 support for rerouting audio data to bypass the Bluetooth host controller interface (HCI).
 ms.assetid: FC9E5254-B543-4890-811C-1DA5F28E61B9
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Architectural Overview

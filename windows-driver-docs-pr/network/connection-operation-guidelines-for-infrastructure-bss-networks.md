@@ -2,7 +2,15 @@
 title: Connection Operation Guidelines for Infrastructure BSS Networks
 description: Connection Operation Guidelines for Infrastructure BSS Networks
 ms.assetid: e5fd785f-044e-4981-9843-c3b67109331d
-keywords: ["infrastructure BSS networks WDK Native 802.11", "BSS networks WDK Native 802.11", "connections WDK Native 802.11 network operations"]
+keywords:
+- infrastructure BSS networks WDK Native 802.11
+- BSS networks WDK Native 802.11
+- connections WDK Native 802.11 network operations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Connection Operation Guidelines for Infrastructure BSS Networks

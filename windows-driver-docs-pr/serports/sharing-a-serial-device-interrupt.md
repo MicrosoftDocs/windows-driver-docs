@@ -2,14 +2,21 @@
 title: Sharing a Serial Device Interrupt
 author: windows-driver-content
 description: Sharing a Serial Device Interrupt
-MS-HAID:
-- 'sseovr\_ffbc7f96-f556-4140-9d03-ceaeb9ecaa43.xml'
-- 'serports.sharing\_a\_serial\_device\_interrupt'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1d35fbc0-7031-42f3-bb22-52d2bcdcfa92
-keywords: ["COM ports WDK serial devices", "serial devices WDK , COM ports", "legacy COM ports WDK serial devices", "sharing serial device interrupts", "serial devices WDK , interrupts", "interrupts WDK serial devices", "shared interrupts WDK serial devices", "Serial driver WDK , interrupts"]
+keywords:
+- COM ports WDK serial devices
+- serial devices WDK , COM ports
+- legacy COM ports WDK serial devices
+- sharing serial device interrupts
+- serial devices WDK , interrupts
+- interrupts WDK serial devices
+- shared interrupts WDK serial devices
+- Serial driver WDK , interrupts
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sharing a Serial Device Interrupt

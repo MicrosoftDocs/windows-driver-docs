@@ -2,14 +2,19 @@
 title: Version 3 XPSDrv Print Driver Components
 author: windows-driver-content
 description: Version 3 XPSDrv Print Driver Components
-MS-HAID:
-- 'xpsconfig\_976dcb54-665d-48bd-8dba-f0249c878a39.xml'
-- 'print.version\_3\_xpsdrv\_print\_driver\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7eced017-a6a6-4fa5-8965-ff6655f86b8c
-keywords: ["XPSDrv printer drivers WDK , configuration modules", "configuration modules WDK XPSDrv , Version 3 XPS drivers", "Version 3 XPS drivers WDK XPSDrv", "conversion rendering modules WDK XPSDrv", "Version 3 XPS drivers WDK XPSDrv , about Version 3 XPS drivers", "XPSDrv printer drivers WDK , Version 3 XPS drivers"]
+keywords:
+- XPSDrv printer drivers WDK , configuration modules
+- configuration modules WDK XPSDrv , Version 3 XPS drivers
+- Version 3 XPS drivers WDK XPSDrv
+- conversion rendering modules WDK XPSDrv
+- Version 3 XPS drivers WDK XPSDrv , about Version 3 XPS drivers
+- XPSDrv printer drivers WDK , Version 3 XPS drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Version 3 XPSDrv Print Driver Components

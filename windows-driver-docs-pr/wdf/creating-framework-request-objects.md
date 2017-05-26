@@ -3,7 +3,14 @@ title: Creating Framework Request Objects
 author: windows-driver-content
 description: Creating Framework Request Objects
 ms.assetid: 4bd668ec-14fb-4999-9535-a49712a26ba6
-keywords: ["request objects WDK KMDF , creating", "request objects WDK KMDF , read operations"]
+keywords:
+- request objects WDK KMDF , creating
+- request objects WDK KMDF , read operations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Framework Request Objects

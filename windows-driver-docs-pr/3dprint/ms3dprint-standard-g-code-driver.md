@@ -2,10 +2,12 @@
 title: MS3DPrint Standard G-Code driver
 author: windows-driver-content
 description: The MS3DPrint Standard G-Code driver implements a typical Windows 8.1 or Windows 10 driver for fused filament fabrication 3D printers that run with G-Code, particularly open source printers, including those from the RepRap project.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: F5818F58-C705-458F-9806-3F840BF7EE01
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MS3DPrint Standard G-Code driver

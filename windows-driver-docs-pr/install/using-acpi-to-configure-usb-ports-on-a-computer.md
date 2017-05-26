@@ -2,6 +2,11 @@
 title: Using ACPI to Configure USB Ports on a Computer
 description: Using ACPI to Configure USB Ports on a Computer
 ms.assetid: 999f9fef-512c-415a-abc6-d64560c5c2f8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using ACPI to Configure USB Ports on a Computer

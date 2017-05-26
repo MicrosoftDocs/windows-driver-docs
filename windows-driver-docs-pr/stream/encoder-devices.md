@@ -2,14 +2,23 @@
 title: Encoder Devices
 author: windows-driver-content
 description: Encoder Devices
-MS-HAID:
-- 'encodeds\_7b142d5b-66d1-41d1-9362-fbe7e865349d.xml'
-- 'stream.encoder\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 156b1d6d-c6f6-4ab3-a91e-3124351c6ae5
-keywords: ["encoder devices WDK AVStream", "AVStream WDK , encoder devices", "uncompressed data streams WDK AVStream", "encoded streams WDK AVStream", "audio encoder devices WDK AVStream", "video encoder devices WDK AVStream", "software-based encoders WDK AVStream", "hardware-based encoders WDK AVStream", "integrated encoders WDK AVStream", "standalone encoders WDK AVStream"]
+keywords:
+- encoder devices WDK AVStream
+- AVStream WDK , encoder devices
+- uncompressed data streams WDK AVStream
+- encoded streams WDK AVStream
+- audio encoder devices WDK AVStream
+- video encoder devices WDK AVStream
+- software-based encoders WDK AVStream
+- hardware-based encoders WDK AVStream
+- integrated encoders WDK AVStream
+- standalone encoders WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Encoder Devices

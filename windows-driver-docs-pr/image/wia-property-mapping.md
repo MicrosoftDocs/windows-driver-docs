@@ -2,13 +2,12 @@
 title: WIA Property Mapping
 author: windows-driver-content
 description: WIA Property Mapping
-MS-HAID:
-- 'WIA\_Fundamentals\_451f9a66-9e7f-46ba-bc07-1e29f47802eb.xml'
-- 'image.wia\_property\_mapping'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: decd46b1-6a03-4c48-8b61-12d506cd419e
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Property Mapping

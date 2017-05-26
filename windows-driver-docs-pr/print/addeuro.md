@@ -2,14 +2,18 @@
 title: AddEuro
 author: windows-driver-content
 description: AddEuro
-MS-HAID:
-- 'pscript\_13ff5d66-cdd0-48a5-bc88-b4266d6ef68e.xml'
-- 'print.addeuro'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1d27fbb0-787f-4fb2-8a1c-3c68598d6d41
-keywords: ["minidrivers WDK Pscript , AddEuro feature", "AddEuro feature WDK print", "Euro symbol WDK print", "European Union symbol WDK print", "ADHasEuro"]
+keywords:
+- minidrivers WDK Pscript , AddEuro feature
+- AddEuro feature WDK print
+- Euro symbol WDK print
+- European Union symbol WDK print
+- ADHasEuro
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AddEuro

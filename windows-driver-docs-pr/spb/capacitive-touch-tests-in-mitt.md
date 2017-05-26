@@ -2,10 +2,12 @@
 title: Capacitive touch tests in MITT
 author: windows-driver-content
 description: Capacitive touch tests in the MITT software package require MCATT (Microsoft Capacitive Applications Test Tool).
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 86E4D489-7DC3-4765-85BE-3706B3CA6C0B
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Capacitive touch tests in MITT

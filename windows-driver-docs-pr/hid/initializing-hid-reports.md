@@ -2,14 +2,17 @@
 title: Initializing HID Reports
 author: windows-driver-content
 description: Initializing HID Reports
-MS-HAID:
-- 'hidclass\_176818c2-8c4c-4078-939c-1632f2a94340.xml'
-- 'hid.initializing\_hid\_reports'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 14229315-3928-4421-a8d8-c3f7837bf1c3
-keywords: ["HID reports WDK , initializing", "reports WDK HID , initializing", "initializing reports", "controls WDK HID"]
+keywords:
+- HID reports WDK , initializing
+- reports WDK HID , initializing
+- initializing reports
+- controls WDK HID
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing HID Reports

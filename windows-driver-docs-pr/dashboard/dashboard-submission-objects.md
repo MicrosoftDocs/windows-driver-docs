@@ -1,13 +1,12 @@
 ---
 title: Dashboard submission objects
 description: Dashboard submission objects
-MS-HAID:
-- 'p\_dashboard.dashboard\_submission\_objects'
-- 'hw\_dashboard.dashboard\_submission\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1ce17c11-901b-4f8d-8e79-8bf490a94ba7
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Dashboard submission objects

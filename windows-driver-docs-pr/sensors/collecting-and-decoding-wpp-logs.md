@@ -2,10 +2,12 @@
 title: Collecting and decoding WPP logs
 author: windows-driver-content
 description: This topic provides information about collecting and decoding Windows software trace preprocessor (WPP) logs for the sensor class extension (CX) trace provider.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 174CDE37-D0D1-44BF-AD50-5A90C989FDE2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Collecting and decoding WPP logs

@@ -2,7 +2,15 @@
 title: Version Section in a Network INF File
 description: Version Section in a Network INF File
 ms.assetid: c76151e9-fef2-4bfe-8587-d58d95d234bc
-keywords: ["INF files WDK network , Version section", "network INF files WDK , Version section", "Version section WDK networking"]
+keywords:
+- INF files WDK network , Version section
+- network INF files WDK , Version section
+- Version section WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Version Section in a Network INF File

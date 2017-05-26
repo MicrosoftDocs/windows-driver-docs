@@ -2,14 +2,14 @@
 title: AVStream Overview
 author: windows-driver-content
 description: AVStream Overview
-MS-HAID:
-- 'avsover\_cd833956-4045-4fef-988d-7164b2cc054b.xml'
-- 'stream.avstream\_overview'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 305039fe-0a00-4f3e-ae1a-61c50a2f2fb3
-keywords: ["AVStream WDK , about AVStream minidrivers"]
+keywords:
+- AVStream WDK , about AVStream minidrivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AVStream Overview

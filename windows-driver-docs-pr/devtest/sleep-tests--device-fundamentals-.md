@@ -2,6 +2,11 @@
 title: Sleep Tests (Device Fundamentals)
 description: The Device Fundamentals Sleep tests run I/O and PnP operations on the specified devices, before and after, or during system sleep state transitions.
 ms.assetid: 38B65078-B436-4C24-B973-032702DB9CBE
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sleep Tests (Device Fundamentals)
@@ -9,7 +14,7 @@ ms.assetid: 38B65078-B436-4C24-B973-032702DB9CBE
 
 The Device Fundamentals Sleep tests run I/O and PnP operations on the specified devices, before and after, or during system sleep state transitions. The Sleep tests ensure that the device under test permits the system to be cycled through all of the supported sleep states. Additionally, it ensures that the device is still functional after these state changes through Simple I/O stress testing.
 
-## <span id="sleep_tests"></span><span id="SLEEP_TESTS"></span>Sleep tests
+## Sleep tests
 
 
 <table>
@@ -49,7 +54,7 @@ The Device Fundamentals Sleep tests run I/O and PnP operations on the specified 
 <tr class="odd">
 <td align="left"><p><span id="Sleep_and_PNP__disable_and_enable__with_I_O_Before_and_After"></span><span id="sleep_and_pnp__disable_and_enable__with_i_o_before_and_after"></span><span id="SLEEP_AND_PNP__DISABLE_AND_ENABLE__WITH_I_O_BEFORE_AND_AFTER"></span>Sleep and PNP (disable and enable) with I/O Before and After</p></td>
 <td align="left"><p>This test cycles the system through various sleep states and performs I/O and basic PnP (disable/enable) on devices before and after each sleep state cycle.</p>
-<p>For more information, see [About the Sleep and PNP (disable and enable) with IO Before and After test](#about-sleep-pnp-disable-etc).</p>
+<p>For more information, see [About the Sleep and PNP disable and enable with IO Before and After test](#about-the-sleep-and-pnp-disable-and-enable-with-io-before-and-after-test).</p>
 <p><strong>Test binary:</strong> Devfund_Sleep_PNP_DisableEnable_With_IO_BeforeAndAfter.wsc</p>
 <p><strong>Test method:</strong> Sleep_PNP_DisableEnable_With_IO_Before_And_After</p>
 <p><strong>Parameters:</strong> - see [Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)</p>
@@ -61,7 +66,7 @@ The Device Fundamentals Sleep tests run I/O and PnP operations on the specified 
 <tr class="even">
 <td align="left"><p><span id="Sleep_with_I_O_Before_and_After"></span><span id="sleep_with_i_o_before_and_after"></span><span id="SLEEP_WITH_I_O_BEFORE_AND_AFTER"></span>Sleep with I/O Before and After</p></td>
 <td align="left"><p>This test cycles the system through various sleep states and performs I/O on devices before and after each sleep state cycle.</p>
-<p>For more information, see [About the Sleep with IO Before And After test](#about-sleep-with-io).</p>
+<p>For more information, see [About the Sleep with IO Before And After test](#about-the-sleep-with-io-before-and-after-test).</p>
 <p><strong>Test binary:</strong> Devfund_Sleep_With_IO_BeforeAndAfter.wsc</p>
 <p><strong>Test method:</strong> Sleep_With_Io_Before_And_After</p>
 <p><strong>Parameters:</strong> - see [Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)</p>
@@ -86,7 +91,7 @@ The Device Fundamentals Sleep tests run I/O and PnP operations on the specified 
 
  
 
-## <span id="about_Sleep_PnP_disable_etc"></span><span id="about_sleep_pnp_disable_etc"></span><span id="ABOUT_SLEEP_PNP_DISABLE_ETC"></span>About the Sleep and PNP (disable and enable) with IO Before and After test
+## About the Sleep and PNP disable and enable with IO Before and After test
 
 
 This test does the following:
@@ -102,7 +107,7 @@ This test does the following:
 9.  Repeats step 3-8 for each supported sleep state of the test system.
 10. Repeats step 1-9 several times.
 
-## <span id="About_sleep_with_IO"></span><span id="about_sleep_with_io"></span><span id="ABOUT_SLEEP_WITH_IO"></span>About the Sleep with IO Before And After test
+## About the Sleep with IO Before And After test
 
 
 This test does the following:
@@ -115,7 +120,7 @@ This test does the following:
 6.  Repeats steps 3 - 5 for each supported sleep state of the test system.
 7.  Repeats steps 1 - 6 several times.
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [How to How to test a driver at runtime using Visual Studio](https://msdn.microsoft.com/windows-drivers/develop/testing_a_driver_at_runtime)

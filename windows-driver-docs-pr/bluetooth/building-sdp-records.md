@@ -2,7 +2,21 @@
 title: Building SDP Records
 description: Building SDP Records
 ms.assetid: ca3c0483-6193-4683-94bb-15466a8f332e
-keywords: ["Bluetooth WDK , SDP server communication", "SDP WDK Bluetooth", "Service Discovery Protocol WDK Bluetooth", "browsing services WDK Bluetooth", "searching services WDK Bluetooth", "services browsing WDK Bluetooth", "advertising services WDK Bluetooth", "services advertising WDK Bluetooth", "SdpCreateNodeTree"]
+keywords:
+- Bluetooth WDK , SDP server communication
+- SDP WDK Bluetooth
+- Service Discovery Protocol WDK Bluetooth
+- browsing services WDK Bluetooth
+- searching services WDK Bluetooth
+- services browsing WDK Bluetooth
+- advertising services WDK Bluetooth
+- services advertising WDK Bluetooth
+- SdpCreateNodeTree
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Building SDP Records

@@ -1,8 +1,11 @@
 ---
 Description: Object Enumeration
-MS-HAID: 'wpddk.object\_enumeration'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Object Enumeration
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Object Enumeration

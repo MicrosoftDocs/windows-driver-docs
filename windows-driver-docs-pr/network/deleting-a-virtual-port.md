@@ -2,6 +2,11 @@
 title: Deleting a Virtual Port
 description: Deleting a Virtual Port
 ms.assetid: CBE7AC59-D878-44BA-8FE6-168EC17A2D67
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Deleting a Virtual Port

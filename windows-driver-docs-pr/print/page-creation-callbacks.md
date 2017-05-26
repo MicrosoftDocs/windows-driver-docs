@@ -2,14 +2,19 @@
 title: Page Creation Callbacks
 author: windows-driver-content
 description: Page Creation Callbacks
-MS-HAID:
-- 'cpsui\_24224479-1b57-4293-b191-fc990941e6f4.xml'
-- 'print.page\_creation\_callbacks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ec514d17-415e-417b-bb29-b37be43c3cf6
-keywords: ["callback functions WDK CPSUI", "Common Property Sheet User Interface WDK print , callbacks", "CPSUI WDK print , callbacks", "property sheet pages WDK print , callbacks", "page creation callbacks WDK CPSUI", "CommonPropertySheetUI"]
+keywords:
+- callback functions WDK CPSUI
+- Common Property Sheet User Interface WDK print , callbacks
+- CPSUI WDK print , callbacks
+- property sheet pages WDK print , callbacks
+- page creation callbacks WDK CPSUI
+- CommonPropertySheetUI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Page Creation Callbacks

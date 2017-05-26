@@ -2,6 +2,11 @@
 title: Accessing and Modifying Device Properties
 description: Accessing and Modifying Device Properties
 ms.assetid: 8292C7B5-8D3D-4430-866B-4363AF02FA8A
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing and Modifying Device Properties

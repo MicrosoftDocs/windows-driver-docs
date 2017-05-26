@@ -2,14 +2,16 @@
 title: COM Interfaces for UI Plug-Ins
 author: windows-driver-content
 description: COM Interfaces for UI Plug-Ins
-MS-HAID:
-- 'custdrvr\_f58048dc-fdf2-4b6c-ae9c-807c8cdffe8e.xml'
-- 'print.com\_interfaces\_for\_ui\_plug\_ins'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9cc6502b-a003-4d0b-857e-4653cf6fa0ea
-keywords: ["user interface plug-ins WDK print , COM interfaces", "UI plug-ins WDK print , COM interfaces", "COM interfaces WDK print , user interface plug-ins"]
+keywords:
+- user interface plug-ins WDK print , COM interfaces
+- UI plug-ins WDK print , COM interfaces
+- COM interfaces WDK print , user interface plug-ins
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # COM Interfaces for UI Plug-Ins

@@ -1,13 +1,12 @@
 ---
 title: App Certification Submissions
 description: App Certification Submissions
-MS-HAID:
-- 'p\_dashboard.app\_certification\_submissions'
-- 'hw\_dashboard.app\_certification\_submissions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3356ee84-fb45-45cc-a7a4-c069238b7600
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # App Certification Submissions

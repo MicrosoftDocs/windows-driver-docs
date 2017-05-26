@@ -2,7 +2,19 @@
 title: Updating Driver Files
 description: Updating Driver Files
 ms.assetid: e232abd9-4e51-4fa7-a00c-f5e184706222
-keywords: ["Hardware Update Wizard WDK", "updating driver files", "driver file updates WDK", "Device setup WDK device installations , updating existing drivers", "device installations WDK , updating existing drivers", "installing devices WDK , updating existing drivers", "existing driver updates WDK"]
+keywords:
+- Hardware Update Wizard WDK
+- updating driver files
+- driver file updates WDK
+- Device setup WDK device installations , updating existing drivers
+- device installations WDK , updating existing drivers
+- installing devices WDK , updating existing drivers
+- existing driver updates WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Updating Driver Files

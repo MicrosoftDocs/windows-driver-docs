@@ -2,13 +2,12 @@
 title: About the Parameter Types
 author: windows-driver-content
 description: About the Parameter Types
-MS-HAID:
-- 'Sensor\_DG\_Overview\_9b8941b4-b9a1-4b5e-93f6-2282da4bd989.xml'
-- 'sensors.about\_the\_parameter\_types'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 392ea7b9-df6f-4d47-9367-a167c0656dd4
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # About the Parameter Types

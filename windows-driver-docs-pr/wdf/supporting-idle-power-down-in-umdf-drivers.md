@@ -3,13 +3,20 @@ title: Supporting Idle Power-Down in UMDF Drivers
 author: windows-driver-content
 description: Supporting Idle Power-Down in UMDF Drivers
 ms.assetid: 128f009e-1847-493e-90e3-2fe8c141b158
-keywords: ["power management WDK UMDF , idle power-down", "idle power-down WDK UMDF"]
+keywords:
+- power management WDK UMDF , idle power-down
+- idle power-down WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Idle Power-Down in UMDF Drivers
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 Some devices can enter a sleeping state while the system remains in its working state. For such devices, the framework initiates lowering the device's power after the device has been idle (not used) for a predetermined (and settable) amount of time.
 

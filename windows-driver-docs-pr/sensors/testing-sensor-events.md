@@ -2,19 +2,18 @@
 title: Testing Sensor Events
 author: windows-driver-content
 description: The Sensor Diagnostic Tool lets you test support for events in your driver and firmware.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 92C067E0-3787-441E-8A2D-C48367ECE471
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Testing Sensor Events
 
 
 The Sensor Diagnostic Tool lets you test support for events in your driver and firmware.
-
-**Note**  The Sensor Diagnostic Tool is acceptable for testing on Windows 8.1 and earlier operating systems. The tool is now deprecated for Windows 10, so for sensor driver testing and diagnostics on Windows 10 and later operating systems, please use the SensorInfo App from the Windows Store.
-
  
 
 ## Configuring the Sensor Diagnostic Tool to Capture Event Data
@@ -22,35 +21,15 @@ The Sensor Diagnostic Tool lets you test support for events in your driver and f
 
 The following procedure describes how to configure the diagnostic tool to capture events for an accelerometer.
 
-1.  Expand the node for the accelerometer in the left Sensors pane and check the **CONNECTED** and **SUBSCRIBED** boxes.
-2.  In the **Events** menu, choose **Show Events**.
-3.  Click the Accelerometer node in the left pane.
-4.  Rotate the accelerometer and view the event data in the right pane
+1.  Expand the node for the accelerometer in the left Sensors pane and make sure both the **CONNECTED** and **SUBSCRIBED** boxes are checked.
+2.  In the **Events** menu, verify that **Show Events** is checked.
+3.  Select the Accelerometer node in the left pane.
+4.  Rotate the device and view the event data in the right pane.
 
 The following illustration shows the tool after it begins capturing accelerometer events.
 
 ![sensor diagnostic tool: capturing accelerometer events](images/sdt-events.png)
 
-## Testing Support for Change Sensitivity
-
-
-Use the Sensor Diagnostic Tool to test new change-sensitivity values. The procedure describes how to alter change sensitivity for an accelerometer.
-
-1.  Configure the Sensor Diagnostic Tool to capture event data. (See previous section in this topic.)
-2.  In the upper right pane, choose **Change Sensitivity/Change**.
-3.  In the dialog that appears, replace the default value (or values) for each axis with the new change sensitivity values that you wish to test.
-4.  Press the **Update** button at the bottom of the dialog.
-5.  Rotate the accelerometer and view the **Data** fields to verify that the new change sensitivity values were applied.
-
-## Testing Support for the Current Report Interval
-
-
-Use the Sensor Diagnostic Tool to test new current report-interval values. The following procedure describes how to alter the report interval for an accelerometer.
-
-1.  Configure the Sensor Diagnostic Tool to capture event data. (See the first section in this topic.)
-2.  In the upper right pane, enter a new value (in milliseconds) in the **Report Interval** box.
-3.  Press the **Execute** button.
-4.  Rotate the accelerometer and view the timestamp for the accelerometer events to verify that the new report interval was applied.
 
 ## Logging Event Data to an XML File
 
@@ -67,12 +46,15 @@ Your data will be logged to the file that you specified in step 3. XML logging i
 ## Logging Event Data to a CSV File
 
 
-In addition to logging sensor data as XML, you can also log it in CSV files. If this is necessary, follow these steps.
+In addition to logging sensor data as XML, you can also log it in CSV files. If this is necessary, follow these steps. 
+
+> [!NOTE]
+> You may need to run the program as an administrator for this to work properly.
 
 1.  Configure the Sensor Diagnostic Tool to capture event data (See the first section in this topic.)
 2.  In the **Sensors** menu, choose the **Enable CSV Logging** menu option.
 3.  Begin testing your device. For example, if it's an accelerometer, begin rotating, or moving, the sensor.
-4.  Once your tests are complete, uncheck the **Enable CSV Logging** menu option. This will stop logging and save your data to the output file.
+4.  Once your tests are complete, uncheck the **Enable CSV Logging** menu option. This will stop logging and save your data to the output file. The files are placed into the same directory as the executable.
 
 Your data will be logged to one or more CSV files. The tool creates a file for each connected sensor if a collection exists. CSV logging is supported for both events and data retrieval, while XML logging is only supported for events.
 

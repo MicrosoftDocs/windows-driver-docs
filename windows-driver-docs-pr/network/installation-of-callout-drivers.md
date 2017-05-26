@@ -2,7 +2,17 @@
 title: Installation of Callout Drivers
 description: Installation of Callout Drivers
 ms.assetid: 3baefd81-04bc-4a34-b4cd-afa544308a90
-keywords: ["Windows Filtering Platform callout drivers WDK , installing", "callout drivers WDK Windows Filtering Platform , installing", "installing callout drivers WDK Windows Filtering Platform", "loading drivers WDK Windows Filtering Platform", "INF files WDK Windows Filtering Platform"]
+keywords:
+- Windows Filtering Platform callout drivers WDK , installing
+- callout drivers WDK Windows Filtering Platform , installing
+- installing callout drivers WDK Windows Filtering Platform
+- loading drivers WDK Windows Filtering Platform
+- INF files WDK Windows Filtering Platform
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installation of Callout Drivers

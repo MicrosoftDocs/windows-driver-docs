@@ -2,6 +2,11 @@
 title: Creating a Private Build of an Inbox Driver
 description: Creating a Private Build of an Inbox Driver
 ms.assetid: aed3c175-3e95-4bfb-a514-a663dd9e3f57
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Private Build of an Inbox Driver
@@ -38,7 +43,7 @@ You can automate the process for building a private version of an inbox driver t
 
      
 
-Once the driver is built, you must sign the [driver package](driver-packages.md) and must use the same [catalog file](catalog-files.md) that was specified in the **-c** parameter of [Stampinf](https://msdn.microsoft.com/library/windows/hardware/ff552786) within your *Makefile*. To sign the driver package, follow the steps that are outlined in [Signing Drivers During Development and Test (Windows Vista and Later)](signing-drivers-during-development-and-test--windows-vista-and-later-.md).
+Once the driver is built, you must sign the [driver package](driver-packages.md) and must use the same [catalog file](catalog-files.md) that was specified in the **-c** parameter of [Stampinf](https://msdn.microsoft.com/library/windows/hardware/ff552786) within your *Makefile*. To sign the driver package, follow the steps that are outlined in [Signing Drivers During Development and Test](signing-drivers-during-development-and-test.md).
 
  
 

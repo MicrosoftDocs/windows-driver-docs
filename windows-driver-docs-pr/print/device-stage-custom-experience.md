@@ -2,13 +2,12 @@
 title: Device Stage Custom Experience
 author: windows-driver-content
 description: Device Stage Custom Experience
-MS-HAID:
-- 'prn\_dxpui\_23f12132-1126-4707-9cfa-3a6cb1e0a326.xml'
-- 'print.device\_stage\_custom\_experience'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fb6c8022-83cd-47c2-8605-84ec8647efa8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Stage Custom Experience

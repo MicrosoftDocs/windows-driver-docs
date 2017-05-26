@@ -1,13 +1,12 @@
 ---
 title: Device Metadata
 description: Device Metadata
-MS-HAID:
-- 'p\_dashboard.device\_metadata'
-- 'hw\_dashboard.device\_metadata'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b3546d53-d51f-46d2-9dfb-ec63da4809e2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Metadata

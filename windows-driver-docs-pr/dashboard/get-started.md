@@ -1,13 +1,12 @@
 ---
 title: Get Started
 description: Get Started
-MS-HAID:
-- 'p\_dashboard.get\_started'
-- 'hw\_dashboard.get\_started'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3a0d38b9-13e2-40e5-87cb-4d057975930d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Get Started

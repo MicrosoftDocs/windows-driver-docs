@@ -2,7 +2,20 @@
 title: GDI-Managed Bitmaps
 description: GDI-Managed Bitmaps
 ms.assetid: 4b575574-7090-4010-962b-80cac059bfa5
-keywords: ["GDI WDK Windows 2000 display , rendering engine", "graphics drivers WDK Windows 2000 display , rendering engine", "drawing WDK GDI , rendering engine", "rendering engine WDK GDI", "GDI WDK Windows 2000 display , bitmaps", "graphics drivers WDK Windows 2000 display , bitmaps", "drawing WDK GDI , bitmaps", "bitmaps WDK GDI"]
+keywords:
+- GDI WDK Windows 2000 display , rendering engine
+- graphics drivers WDK Windows 2000 display , rendering engine
+- drawing WDK GDI , rendering engine
+- rendering engine WDK GDI
+- GDI WDK Windows 2000 display , bitmaps
+- graphics drivers WDK Windows 2000 display , bitmaps
+- drawing WDK GDI , bitmaps
+- bitmaps WDK GDI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI-Managed Bitmaps

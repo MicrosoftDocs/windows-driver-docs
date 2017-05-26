@@ -2,14 +2,14 @@
 title: Using EnumOptions
 author: windows-driver-content
 description: Using EnumOptions
-MS-HAID:
-- 'pscript\_994e4b01-d08d-42db-9f58-40508020f27b.xml'
-- 'print.using\_enumoptions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6ce16d28-eff7-4701-a592-046f364cda44
-keywords: ["EnumOptions"]
+keywords:
+- EnumOptions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using EnumOptions

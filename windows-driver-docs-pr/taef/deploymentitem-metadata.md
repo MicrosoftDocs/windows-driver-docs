@@ -2,6 +2,11 @@
 title: DeploymentItem Metadata
 description: DeploymentItem Metadata
 ms.assetid: 7F18CD71-F000-4231-9093-82980EB7584D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DeploymentItem Metadata

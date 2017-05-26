@@ -2,14 +2,16 @@
 title: Win32 API Support for Print Capabilities
 author: windows-driver-content
 description: Win32 API Support for Print Capabilities
-MS-HAID:
-- 'drvarch\_8371e82f-e015-4c98-b1f9-f780c30d17e9.xml'
-- 'print.win32\_api\_support\_for\_print\_capabilities'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1b40cc3e-c6f6-460f-b514-4ef3a001f563
-keywords: ["Print Capabilities WDK , Win32 API support", "DrvDeviceCapabilities", "Win32 applications WDK print"]
+keywords:
+- Print Capabilities WDK , Win32 API support
+- DrvDeviceCapabilities
+- Win32 applications WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Win32 API Support for Print Capabilities

@@ -2,6 +2,11 @@
 title: How do I notify a driver when enabling, disabling, or changing certain flags
 description: How do I notify a driver when enabling, disabling, or changing certain flags
 ms.assetid: 1bdf8047-8d3f-4cdf-883b-3544dea06705
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How do I notify a driver when enabling, disabling, or changing certain flags?

@@ -1,10 +1,12 @@
 ---
 title: NetworkConfiguration
 description: NetworkConfiguration
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4a52b185-1bfb-4626-99fb-6be364e88e85
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NetworkConfiguration

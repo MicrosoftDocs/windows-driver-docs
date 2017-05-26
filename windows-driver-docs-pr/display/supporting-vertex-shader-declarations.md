@@ -2,7 +2,14 @@
 title: Supporting Vertex Shader Declarations
 description: Supporting Vertex Shader Declarations
 ms.assetid: 6f4b876a-bfe3-4f1e-b632-97373627d78f
-keywords: ["vertex shader declarations WDK DirectX 9.0", "shader declarations WDK DirectX 9.0"]
+keywords:
+- vertex shader declarations WDK DirectX 9.0
+- shader declarations WDK DirectX 9.0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Vertex Shader Declarations

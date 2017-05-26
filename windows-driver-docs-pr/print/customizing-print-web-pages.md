@@ -2,14 +2,17 @@
 title: Customizing Print Web Pages
 author: windows-driver-content
 description: Customizing Print Web Pages
-MS-HAID:
-- 'inetpri\_d20f3fdf-8ece-4c0f-9664-3a0b6834cdfe.xml'
-- 'print.customizing\_print\_web\_pages'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7592e530-9f87-4d4e-a8aa-d2125014971a
-keywords: ["Internet printing WDK , customizing print Web pages", "print Web pages WDK , customizing", "Web pages WDK printer , customizing", "customized print Web pages WDK"]
+keywords:
+- Internet printing WDK , customizing print Web pages
+- print Web pages WDK , customizing
+- Web pages WDK printer , customizing
+- customized print Web pages WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Customizing Print Web Pages

@@ -2,13 +2,12 @@
 title: Creating a Well-Behaved PTP Camera
 author: windows-driver-content
 description: Creating a Well-Behaved PTP Camera
-MS-HAID:
-- 'WIA\_drv\_cam\_7f94e23a-772d-4d84-869b-66240b352077.xml'
-- 'image.creating\_a\_well\_behaved\_ptp\_camera'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5d36a973-c4ff-4da7-9626-f358f801b592
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Well-Behaved PTP Camera

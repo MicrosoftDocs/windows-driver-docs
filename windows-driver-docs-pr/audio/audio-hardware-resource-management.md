@@ -2,6 +2,11 @@
 title: Audio Hardware Resource Management
 description: Windows 10 includes the ability to express concurrency constraints using and XML file.
 ms.assetid: 6E94529E-F3F0-4DC5-AF8B-F896A4F991E3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio Hardware Resource Management

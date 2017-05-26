@@ -2,13 +2,12 @@
 title: Building a PSHED Plug-In
 author: windows-driver-content
 description: Building a PSHED Plug-In
-MS-HAID:
-- 'whea\_45292051-c708-4018-bd1b-11568017fb28.xml'
-- 'whea.building\_a\_pshed\_plug\_in'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2d4dc052-af8b-4ee1-a8e7-4dbbb3817616
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Building a PSHED Plug-In

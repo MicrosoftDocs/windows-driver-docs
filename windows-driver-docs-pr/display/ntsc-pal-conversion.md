@@ -2,7 +2,21 @@
 title: NTSC/PAL Conversion
 description: NTSC/PAL Conversion
 ms.assetid: 2ae22ebd-e75a-4f9c-b50e-d0ddfe05d987
-keywords: ["interlaced video WDK video port extensions", "DirectX VPE support WDK DirectDraw , interlaced video", "drawing VPEs WDK DirectDraw , interlaced video", "DirectDraw VPEs WDK Windows 2000 display , interlaced video", "video port extensions WDK DirectDraw , interlaced video", "VPEs WDK DirectDraw , interlaced video", "NTSC/PAL WDK video port extensions", "converting NTSC to PAL", "3 2 pulldown WDK video port extensions"]
+keywords:
+- interlaced video WDK video port extensions
+- DirectX VPE support WDK DirectDraw , interlaced video
+- drawing VPEs WDK DirectDraw , interlaced video
+- DirectDraw VPEs WDK Windows 2000 display , interlaced video
+- video port extensions WDK DirectDraw , interlaced video
+- VPEs WDK DirectDraw , interlaced video
+- NTSC/PAL WDK video port extensions
+- converting NTSC to PAL
+- 3 2 pulldown WDK video port extensions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NTSC/PAL Conversion

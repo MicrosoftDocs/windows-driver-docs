@@ -2,7 +2,16 @@
 title: Adding Registry Values for a Notify Object
 description: Adding Registry Values for a Notify Object
 ms.assetid: 8872a9b9-b7c5-4c10-b5d4-4fe880fc436f
-keywords: ["add-registry-sections WDK networking , notify object registry values", "notify objects WDK networking , registry values", "network notify objects WDK , registry values", "registry WDK notify objects"]
+keywords:
+- add-registry-sections WDK networking , notify object registry values
+- notify objects WDK networking , registry values
+- network notify objects WDK , registry values
+- registry WDK notify objects
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding Registry Values for a Notify Object

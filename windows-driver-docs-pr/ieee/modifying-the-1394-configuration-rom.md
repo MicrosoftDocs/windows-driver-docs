@@ -2,14 +2,16 @@
 title: Modifying the 1394 Configuration ROM
 author: windows-driver-content
 description: Modifying the 1394 Configuration ROM
-MS-HAID:
-- '1394-configrom\_80b59cac-0599-4d82-b46b-94e6fcde850a.xml'
-- 'IEEE.modifying\_the\_1394\_configuration\_rom'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3dc4fe53-a26b-44c7-96ef-e7bb6181c958
-keywords: ["IEEE 1394 WDK buses , modifying Configuration ROMs", "1394 WDK buses , modifying Configuration ROMs", "Configuration ROMs WDK IEEE 1394 bus"]
+keywords:
+- IEEE 1394 WDK buses , modifying Configuration ROMs
+- 1394 WDK buses , modifying Configuration ROMs
+- Configuration ROMs WDK IEEE 1394 bus
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Modifying the 1394 Configuration ROM

@@ -2,14 +2,15 @@
 title: Print Schema
 author: windows-driver-content
 description: Print Schema
-MS-HAID:
-- 'drvarch\_3c61f3b1-cd52-4575-b4a1-777e40a647e0.xml'
-- 'print.print\_schema'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6e2d69b7-1c06-4f26-8a4b-944b452d8017
-keywords: ["Print Schema WDK", "printer drivers WDK , Print Schema"]
+keywords:
+- Print Schema WDK
+- printer drivers WDK , Print Schema
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Schema

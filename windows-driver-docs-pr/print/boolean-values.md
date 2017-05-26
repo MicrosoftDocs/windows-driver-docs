@@ -2,14 +2,15 @@
 title: Boolean Values
 author: windows-driver-content
 description: Boolean Values
-MS-HAID:
-- 'nt5gpd\_5b40700d-4e84-4ca7-95fc-a57cd2a3e9ae.xml'
-- 'print.boolean\_values'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 74ada705-1965-464a-9610-5d71b068eb1e
-keywords: ["GPD file entries WDK Unidrv , Boolean values", "Boolean values WDK GPD files"]
+keywords:
+- GPD file entries WDK Unidrv , Boolean values
+- Boolean values WDK GPD files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Boolean Values

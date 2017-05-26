@@ -2,14 +2,17 @@
 title: GDL Schemas
 author: windows-driver-content
 description: GDL Schemas
-MS-HAID:
-- 'gplfiles\_a0f4bb98-4acb-4e9c-990e-e5a6d4eb6b52.xml'
-- 'print.gdl\_schemas'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1020bec8-3b34-4391-9e75-9ffcd8b07785
-keywords: ["GDL WDK , schemas", "schemas WDK GDL", "schemas WDK GDL , examples", "constructs WDK GDL , examples"]
+keywords:
+- GDL WDK , schemas
+- schemas WDK GDL
+- schemas WDK GDL , examples
+- constructs WDK GDL , examples
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Schemas

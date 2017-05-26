@@ -3,7 +3,18 @@ title: MUP and DFS Interactions
 author: windows-driver-content
 description: MUP and DFS Interactions
 ms.assetid: 39c1f1e3-fb2d-46e7-b3dc-3d4bfab9608c
-keywords: ["DFS WDK network redirectors", "Distributed File System WDK network redirectors", "kernel network redirectors WDK , MUP", "MUP WDK network redirectors", "multiple UNC provider WDK network redirectors", "UNC WDK network redirectors"]
+keywords:
+- DFS WDK network redirectors
+- Distributed File System WDK network redirectors
+- kernel network redirectors WDK , MUP
+- MUP WDK network redirectors
+- multiple UNC provider WDK network redirectors
+- UNC WDK network redirectors
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MUP and DFS Interactions

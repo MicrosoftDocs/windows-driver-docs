@@ -2,13 +2,12 @@
 title: Implementation Notes for Segmentation Filters
 author: windows-driver-content
 description: Implementation Notes for Segmentation Filters
-MS-HAID:
-- 'WIA\_tree\_a51f7699-f6be-4c33-886b-a0612f87be5f.xml'
-- 'image.implementation\_notes\_for\_segmentation\_filters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c4caf8dd-8108-4bc7-b02f-1e180fedb95f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementation Notes for Segmentation Filters

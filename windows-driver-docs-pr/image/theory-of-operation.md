@@ -2,13 +2,12 @@
 title: Theory of Operation
 author: windows-driver-content
 description: Theory of Operation
-MS-HAID:
-- 'dsm\_des\_theory\_1f862ee5-c6f2-463d-8cea-2ce4134db5bb.xml'
-- 'image.theory\_of\_operation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a3562c13-daf1-46f3-88e0-9d2b102f7cd0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Theory of Operation

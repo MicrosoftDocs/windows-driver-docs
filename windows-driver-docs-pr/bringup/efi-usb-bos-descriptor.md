@@ -2,10 +2,12 @@
 title: EFI\_USB\_BOS\_DESCRIPTOR
 author: windows-driver-content
 description: EFI\_USB\_BOS\_DESCRIPTOR
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: A12E3678-E5B6-4AB0-8F28-FCDA57C9D397
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EFI\_USB\_BOS\_DESCRIPTOR

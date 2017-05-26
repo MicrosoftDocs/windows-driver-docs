@@ -2,13 +2,12 @@
 title: Debugging Still Image Components
 author: windows-driver-content
 description: Debugging Still Image Components
-MS-HAID:
-- 'stillimg\_654c9678-e111-49bc-9bae-d3363c0e5a5a.xml'
-- 'image.debugging\_still\_image\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 587b8db7-7fca-4b70-8901-3adbde07718f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging Still Image Components

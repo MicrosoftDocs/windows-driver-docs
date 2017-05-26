@@ -2,13 +2,12 @@
 title: Driver Behavior During Multipage Transfers
 author: windows-driver-content
 description: Driver Behavior During Multipage Transfers
-MS-HAID:
-- 'WIA\_arch\_7a7fc5d7-f32a-4c59-b9e1-bf4ab3af5741.xml'
-- 'image.driver\_behavior\_during\_multipage\_transfers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ecf0428b-c11c-49ff-9aa3-322e55dbca07
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Behavior During Multipage Transfers

@@ -2,14 +2,16 @@
 title: Font Cartridge Attributes
 author: windows-driver-content
 description: Font Cartridge Attributes
-MS-HAID:
-- 'nt5gpd\_a4bc7477-8c09-4409-a181-bbffcbae21ef.xml'
-- 'print.font\_cartridge\_attributes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d1f99322-9c77-428a-beb5-6d0ff166c3e5
-keywords: ["printer font descriptions WDK Unidrv , cartridges", "font cartridges WDK Unidrv", "cartridge fonts WDK Unidrv"]
+keywords:
+- printer font descriptions WDK Unidrv , cartridges
+- font cartridges WDK Unidrv
+- cartridge fonts WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Font Cartridge Attributes

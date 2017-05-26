@@ -1,8 +1,11 @@
 ---
 Description: WPD Programming Guide
-MS-HAID: 'wpddk.wpd\_programming\_guide'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WPD Programming Guide
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WPD Programming Guide

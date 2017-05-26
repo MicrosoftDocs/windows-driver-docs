@@ -1,8 +1,11 @@
 ---
 Description: Supporting Rendering Profiles
-MS-HAID: 'wpddk.supporting\_rendering\_profiles'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Supporting Rendering Profiles
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Rendering Profiles

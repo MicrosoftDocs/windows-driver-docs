@@ -2,14 +2,15 @@
 title: Evaluating ACPI Control Methods
 author: windows-driver-content
 description: Evaluating ACPI Control Methods
-MS-HAID:
-- 'acpi-meth-eval-dg\_87baa061-4626-4822-bde0-7835cc11225f.xml'
-- 'acpi.evaluating\_acpi\_control\_methods'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 00cf7530-30e6-4ff2-8a26-1c5143413b56
-keywords: ["ACPI control methods WDK , evaluating", "ACPI devices WDK , evaluating control methods"]
+keywords:
+- ACPI control methods WDK , evaluating
+- ACPI devices WDK , evaluating control methods
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Evaluating ACPI Control Methods

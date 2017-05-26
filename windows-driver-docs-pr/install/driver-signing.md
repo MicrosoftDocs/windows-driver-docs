@@ -2,7 +2,13 @@
 title: Driver Signing
 description: Driver Signing
 ms.assetid: 1f7d5340-c7be-4b6a-a85e-246dcc78b1fa
-keywords: ["driver signing WDK"]
+keywords:
+- driver signing WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Signing
@@ -22,6 +28,7 @@ Kernel-mode driver binaries embed signed with dual (SHA1 and SHA2) certificates 
 
 
 -   [Overview of Digital Signatures for Driver Installation](overview-of-digital-signatures-for-driver-installation.md)
+-   [Windows 10 S Driver Guidelines](Windows10SDriverGuidelines.md)
 -   [Managing the Signing Process](managing-the-signing-process.md)
 -   [Signing Drivers during Development and Test](signing-drivers-during-development-and-test.md)
 -   [Signing Drivers for Public Release](signing-drivers-for-public-release.md)

@@ -2,14 +2,14 @@
 title: Controlling Color Management
 author: windows-driver-content
 description: Controlling Color Management
-MS-HAID:
-- 'printicm\_3e18342e-a0b6-4568-85b4-161e4a801806.xml'
-- 'print.controlling\_color\_management'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cb210b8d-fee1-4904-8c50-f03d2445085e
-keywords: ["color management WDK print , controlling"]
+keywords:
+- color management WDK print , controlling
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Controlling Color Management

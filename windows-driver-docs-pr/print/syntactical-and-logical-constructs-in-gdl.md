@@ -2,14 +2,19 @@
 title: Syntactical and Logical Constructs in GDL
 author: windows-driver-content
 description: Syntactical and Logical Constructs in GDL
-MS-HAID:
-- 'gplfiles\_3d0fda72-27be-4584-8693-29669e36076c.xml'
-- 'print.syntactical\_and\_logical\_constructs\_in\_gdl'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f0802424-319c-4ba4-a8cd-539006f4d22c
-keywords: ["syntactical constructs WDK GDL", "logical constructs WDK GDL", "constructs WDK GDL , syntactical constructs", "constructs WDK GDL , logical constructs", "GDL WDK , constructs", "parser WDK GDL , handling constructs"]
+keywords:
+- syntactical constructs WDK GDL
+- logical constructs WDK GDL
+- constructs WDK GDL , syntactical constructs
+- constructs WDK GDL , logical constructs
+- GDL WDK , constructs
+- parser WDK GDL , handling constructs
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Syntactical and Logical Constructs in GDL

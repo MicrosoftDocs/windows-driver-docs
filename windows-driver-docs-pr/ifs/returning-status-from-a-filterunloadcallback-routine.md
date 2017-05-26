@@ -3,7 +3,15 @@ title: Returning Status from a FilterUnloadCallback Routine
 author: windows-driver-content
 description: Returning Status from a FilterUnloadCallback Routine
 ms.assetid: 6fdaadc7-860d-49d6-833c-64624f435fd3
-keywords: ["status values WDK file system", "returning status WDK file system", "refusing unload operations"]
+keywords:
+- status values WDK file system
+- returning status WDK file system
+- refusing unload operations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Returning Status from a FilterUnloadCallback Routine

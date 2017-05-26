@@ -1,8 +1,11 @@
 ---
 Description: Supported Command Retrieval
-MS-HAID: 'wpddk.supported\_command\_retrieval'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Supported Command Retrieval
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supported Command Retrieval

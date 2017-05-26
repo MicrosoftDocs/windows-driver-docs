@@ -2,13 +2,12 @@
 title: Object Handle and Event Order
 author: windows-driver-content
 description: Object Handle and Event Order
-MS-HAID:
-- 'WIA\_drv\_cam\_8224a24d-5a93-4dfc-9793-4394d212b904.xml'
-- 'image.object\_handle\_and\_event\_order'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5abbcda2-66cc-4460-99b6-e7796e65af68
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Object Handle and Event Order

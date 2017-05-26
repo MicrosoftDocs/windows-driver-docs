@@ -3,13 +3,23 @@ title: General I/O Targets in UMDF
 author: windows-driver-content
 description: General I/O Targets in UMDF
 ms.assetid: 46fac165-3afd-4481-b68d-8d3474e0ff52
-keywords: ["general I/O targets WDK UMDF", "I/O targets WDK UMDF , general", "local I/O targets WDK UMDF", "remote I/O targets WDK UMDF", "general I/O targets WDK UMDF , about general I/O targets"]
+keywords:
+- general I/O targets WDK UMDF
+- I/O targets WDK UMDF , general
+- local I/O targets WDK UMDF
+- remote I/O targets WDK UMDF
+- general I/O targets WDK UMDF , about general I/O targets
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # General I/O Targets in UMDF
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 General I/O targets, which can be either *local* or *remote*, are I/O targets that do not support special, device-specific data formats, such as USB request blocks. Before drivers send data to a general I/O target, they must put data into a write buffer in a format that the I/O target and device can interpret. Likewise, when drivers read data from a general I/O target, the drivers must be able to interpret the contents of data buffers that they receive from the target.
 

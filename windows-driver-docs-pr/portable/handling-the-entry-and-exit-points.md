@@ -1,8 +1,11 @@
 ---
 Description: Handling the Entry and Exit Points
-MS-HAID: 'wpddk.handling\_the\_entry\_and\_exit\_points'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Handling the Entry and Exit Points
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling the Entry and Exit Points

@@ -2,13 +2,12 @@
 title: Film Scanner Architecture
 author: windows-driver-content
 description: Film Scanner Architecture
-MS-HAID:
-- 'WIA\_scanner\_tree\_a27f92cf-a898-4085-8973-fd0365c123c2.xml'
-- 'image.film\_scanner\_architecture'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fe3a2c23-a520-4701-8178-02f50ac08767
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Film Scanner Architecture

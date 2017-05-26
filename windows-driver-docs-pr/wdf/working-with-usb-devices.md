@@ -3,7 +3,24 @@ title: Working with USB Devices
 author: windows-driver-content
 description: This topic describes the operations that a Kernel-Mode Driver Framework (KMDF) or User-Mode Driver Framework (UMDF) driver starting in version 2 can perform using the USB device object methods provided by Windows Driver Frameworks (WDF).
 ms.assetid: 8e06f3c4-1a58-4b9f-ae89-ff4e37eb8f0a
-keywords: ["USB I/O targets WDK KMDF , framework USB device objects", "framework objects WDK KMDF , USB device objects", "USB request blocks WDK KMDF", "URBs WDK KMDF", "USB I/O targets WDK KMDF , USB devices", "control transfers WDK KMDF", "power-cycling ports WDK KMDF", "resetting ports WDK KMDF", "sending URBs WDK KMDF", "Unicode strings WDK KMDF", "status information WDK KMDF , USB I/O targets", "device objects WDK KMDF"]
+keywords:
+- USB I/O targets WDK KMDF , framework USB device objects
+- framework objects WDK KMDF , USB device objects
+- USB request blocks WDK KMDF
+- URBs WDK KMDF
+- USB I/O targets WDK KMDF , USB devices
+- control transfers WDK KMDF
+- power-cycling ports WDK KMDF
+- resetting ports WDK KMDF
+- sending URBs WDK KMDF
+- Unicode strings WDK KMDF
+- status information WDK KMDF , USB I/O targets
+- device objects WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Working with USB Devices

@@ -2,14 +2,32 @@
 title: GDL Directives for Templates
 author: windows-driver-content
 description: GDL Directives for Templates
-MS-HAID:
-- 'gplfiles\_359bf9a4-68cb-4fb9-9ee9-7d6e879fbaf5.xml'
-- 'print.gdl\_directives\_for\_templates'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c68650ae-d6ee-4ae3-afa2-655f2bcad916
-keywords: ["directives WDK GDL , template directives", "source files WDK GDL , template directives", "template directives WDK GDL", "parser WDK GDL , directives", "Template directive WDK GDL", "Name directive WDK GDL", "Inherits directive WDK GDL", "Members directive WDK GDL", "Type directive WDK GDL", "Production directive WDK GDL", "Member directive WDK GDL", "Occurs directive WDK GDL", "Additive directive WDK GDL", "ValueType directive WDK GDL", "DataType directive WDK GDL", "ElementType directive WDK GDL", "ArrayLabel directive WDK GDL", "ElementTags directive WDK GDL", "templates WDK GDL , directives"]
+keywords:
+- directives WDK GDL , template directives
+- source files WDK GDL , template directives
+- template directives WDK GDL
+- parser WDK GDL , directives
+- Template directive WDK GDL
+- Name directive WDK GDL
+- Inherits directive WDK GDL
+- Members directive WDK GDL
+- Type directive WDK GDL
+- Production directive WDK GDL
+- Member directive WDK GDL
+- Occurs directive WDK GDL
+- Additive directive WDK GDL
+- ValueType directive WDK GDL
+- DataType directive WDK GDL
+- ElementType directive WDK GDL
+- ArrayLabel directive WDK GDL
+- ElementTags directive WDK GDL
+- templates WDK GDL , directives
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Directives for Templates

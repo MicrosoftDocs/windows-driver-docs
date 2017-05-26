@@ -1,12 +1,7 @@
 ---
 Description: CDC Direct Line Control Model
-MS-HAID:
-- 'usbsystem\_33bf6394-ef51-4776-8cbf-92a87fea8891.xml'
-- 'buses.cdc\_direct\_line\_control\_model'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: CDC Direct Line Control Model
+author: windows-driver-content
 ---
 
 # CDC Direct Line Control Model

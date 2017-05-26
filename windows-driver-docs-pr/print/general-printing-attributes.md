@@ -2,13 +2,12 @@
 title: General Printing Attributes
 author: windows-driver-content
 description: General Printing Attributes
-MS-HAID:
-- 'nt5gpd\_b4e151ad-3ed6-4974-8f88-5a7d09ce3422.xml'
-- 'print.general\_printing\_attributes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3238c000-05fc-4f6a-a67a-083371007171
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # General Printing Attributes

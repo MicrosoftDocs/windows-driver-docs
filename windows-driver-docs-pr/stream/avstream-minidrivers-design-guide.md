@@ -2,14 +2,22 @@
 title: AVStream Minidrivers Design Guide
 author: windows-driver-content
 description: AVStream Minidrivers Design Guide
-MS-HAID:
-- 'avconcep\_9ef36e0c-e036-49ac-8a55-b9b8f794d08b.xml'
-- 'stream.avstream\_minidrivers\_design\_guide'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ad717dca-55fe-428a-8d5c-239324251eda
-keywords: ["streaming media WDK , AVStream minidrivers", "media streaming WDK , AVStream minidrivers", "AVStream WDK , writing minidrivers", "minidrivers WDK AVStream", "multimedia class drivers WDK AVStream", "video-only streaming WDK AVStream", "integrated audio/video streaming WDK AVStream", "audio/video streaming WDK AVStream", "audio WDK AVStream"]
+keywords:
+- streaming media WDK , AVStream minidrivers
+- media streaming WDK , AVStream minidrivers
+- AVStream WDK , writing minidrivers
+- minidrivers WDK AVStream
+- multimedia class drivers WDK AVStream
+- video-only streaming WDK AVStream
+- integrated audio/video streaming WDK AVStream
+- audio/video streaming WDK AVStream
+- audio WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AVStream Minidrivers Design Guide

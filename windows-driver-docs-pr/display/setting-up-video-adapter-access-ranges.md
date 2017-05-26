@@ -2,7 +2,16 @@
 title: Setting up Video Adapter Access Ranges
 description: Setting up Video Adapter Access Ranges
 ms.assetid: 250c5611-c6f5-49b5-94bc-93a1b43312e6
-keywords: ["video adapter access ranges WDK video miniport", "ranges WDK video miniport", "logical range addresses WDK video miniport", "adapter access ranges WDK video miniport"]
+keywords:
+- video adapter access ranges WDK video miniport
+- ranges WDK video miniport
+- logical range addresses WDK video miniport
+- adapter access ranges WDK video miniport
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting up Video Adapter Access Ranges

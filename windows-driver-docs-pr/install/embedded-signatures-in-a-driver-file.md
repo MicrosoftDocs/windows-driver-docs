@@ -2,7 +2,17 @@
 title: Embedded Signatures in a Driver File
 description: Embedded Signatures in a Driver File
 ms.assetid: 21941c7b-4f9a-424c-9984-3048a53398b6
-keywords: ["embedded signatures WDK driver signing", "driver signing WDK , embedded", "signing drivers WDK , embedded", "digital signatures WDK , embedded", "signatures WDK , embedded"]
+keywords:
+- embedded signatures WDK driver signing
+- driver signing WDK , embedded
+- signing drivers WDK , embedded
+- digital signatures WDK , embedded
+- signatures WDK , embedded
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Embedded Signatures in a Driver File

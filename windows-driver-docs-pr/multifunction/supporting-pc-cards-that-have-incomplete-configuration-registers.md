@@ -2,14 +2,16 @@
 title: Supporting PC Cards That Have Incomplete Configuration Registers
 author: windows-driver-content
 description: Supporting PC Cards That Have Incomplete Configuration Registers
-MS-HAID:
-- 'mf-supp\_fa900c43-bf40-4a03-9cbe-630e82d2ce71.xml'
-- 'multifunc.supporting\_pc\_cards\_that\_have\_incomplete\_configuration\_registers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 62bdb1e7-ca45-42e6-bdf5-c48fb3ddb3fc
-keywords: ["incomplete configuration registers WDK multifunction devices", "system-supplied multifunction bus drivers WDK", "mf.sys"]
+keywords:
+- incomplete configuration registers WDK multifunction devices
+- system-supplied multifunction bus drivers WDK
+- mf.sys
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting PC Cards That Have Incomplete Configuration Registers

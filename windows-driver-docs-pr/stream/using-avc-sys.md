@@ -2,14 +2,16 @@
 title: Using Avc.sys
 author: windows-driver-content
 description: Using Avc.sys
-MS-HAID:
-- 'AVCguide\_9f2853fb-2c7b-4d3e-89ee-4b9b1436c692.xml'
-- 'stream.using\_avc\_sys'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3b4ec139-ff01-40bd-8e29-92f554180585
-keywords: ["Avc.sys function driver WDK , about Avc.sys function driver", "AV/C WDK , Avc.sys usage", "subunit support WDK AV/C"]
+keywords:
+- Avc.sys function driver WDK , about Avc.sys function driver
+- AV/C WDK , Avc.sys usage
+- subunit support WDK AV/C
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Avc.sys

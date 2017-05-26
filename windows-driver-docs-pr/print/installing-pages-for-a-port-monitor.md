@@ -2,14 +2,16 @@
 title: Installing Pages for a Port Monitor
 author: windows-driver-content
 description: Installing Pages for a Port Monitor
-MS-HAID:
-- 'inetpri\_e2dd3167-60b8-4e01-bcaf-4464b70e1841.xml'
-- 'print.installing\_pages\_for\_a\_port\_monitor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: acb1a6f9-65d1-4097-b702-28dc4da8e4cf
-keywords: ["installing customized print Web pages WDK", "customized print Web pages WDK , installing", "port monitors WDK print , customized Web pages"]
+keywords:
+- installing customized print Web pages WDK
+- customized print Web pages WDK , installing
+- port monitors WDK print , customized Web pages
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing Pages for a Port Monitor

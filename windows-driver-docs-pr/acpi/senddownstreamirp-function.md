@@ -2,13 +2,12 @@
 title: SendDownStreamIrp Function
 author: windows-driver-content
 description: SendDownStreamIrp Function
-MS-HAID:
-- 'acpi-meth-eval-dg\_b374e5d4-529f-42b9-9ca2-49717d7154ec.xml'
-- 'acpi.senddownstreamirp\_function'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 09a06041-5b26-4796-b9b8-d7d27321d955
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SendDownStreamIrp Function

@@ -2,13 +2,12 @@
 title: DSM Schemas
 author: windows-driver-content
 description: DSM Schemas
-MS-HAID:
-- 'dsm\_des\_arch\_36bce8d1-718d-4994-a248-5672f688d040.xml'
-- 'image.dsm\_schemas'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 54466df0-72e8-4ed0-adff-3d54cdf628bf
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DSM Schemas

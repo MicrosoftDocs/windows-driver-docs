@@ -2,13 +2,12 @@
 title: Overview of STI Components
 author: windows-driver-content
 description: Overview of STI Components
-MS-HAID:
-- 'stillimg\_fa21c4ae-8161-417d-a762-4ac7f5713ebf.xml'
-- 'image.overview\_of\_sti\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 30aaa622-fb86-42dc-a417-df61e0093db3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of STI Components

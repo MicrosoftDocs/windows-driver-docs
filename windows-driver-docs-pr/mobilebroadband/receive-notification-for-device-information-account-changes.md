@@ -1,10 +1,12 @@
 ---
 title: Receive notification for device information account changes
 description: Receive notification for device information account changes
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 67d96f61-57dc-4e4b-a6c1-5c3da28e8aaf
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Receive notification for device information account changes

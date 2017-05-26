@@ -2,7 +2,14 @@
 title: Approving the Sdv-map.h File
 description: Approving the Sdv-map.h File
 ms.assetid: eb192eb2-7a2c-47eb-846e-3d641d5046a8
-keywords: ["Sdv-map.h WDK Static Driver Verifier , approving", "approving Sdv-map.h"]
+keywords:
+- Sdv-map.h WDK Static Driver Verifier , approving
+- approving Sdv-map.h
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Approving the Sdv-map.h File

@@ -2,14 +2,18 @@
 title: Describing Printer Memory Configurations
 author: windows-driver-content
 description: Describing Printer Memory Configurations
-MS-HAID:
-- 'nt5gpd\_c9260a28-9f49-4ac3-9a5c-7df478f0ac53.xml'
-- 'print.describing\_printer\_memory\_configurations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4a85788a-9713-42fb-a788-4d45f9aaabac
-keywords: ["Unidrv, printer memory configurations", "GPD files WDK Unidrv , printer memory configurations", "printer memory configurations WDK Unidrv", "memory configurations WDK Unidrv", "Unidrv WDK print"]
+keywords:
+- Unidrv, printer memory configurations
+- GPD files WDK Unidrv , printer memory configurations
+- printer memory configurations WDK Unidrv
+- memory configurations WDK Unidrv
+- Unidrv WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Describing Printer Memory Configurations

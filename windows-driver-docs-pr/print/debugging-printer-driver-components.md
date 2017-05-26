@@ -2,14 +2,18 @@
 title: Debugging Printer Driver Components
 author: windows-driver-content
 description: Debugging Printer Driver Components
-MS-HAID:
-- 'prntools\_4c541e21-d745-454c-87f8-cb23411c550b.xml'
-- 'print.debugging\_printer\_driver\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 550cc8fe-5520-4521-8c4e-9c8c80521357
-keywords: ["debugging drivers WDK printer", "printer drivers WDK , debugging", "user-mode debugging WDK printer", "macros WDK printer", "global variables WDK debugging"]
+keywords:
+- debugging drivers WDK printer
+- printer drivers WDK , debugging
+- user-mode debugging WDK printer
+- macros WDK printer
+- global variables WDK debugging
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging Printer Driver Components

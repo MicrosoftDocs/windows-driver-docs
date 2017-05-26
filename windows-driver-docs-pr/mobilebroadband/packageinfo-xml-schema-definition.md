@@ -1,10 +1,12 @@
 ---
 title: PackageInfo XML schema definition
 description: PackageInfo XML schema definition
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b0e4f800-816a-4d8b-a68b-56dc468caf52
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PackageInfo XML schema definition

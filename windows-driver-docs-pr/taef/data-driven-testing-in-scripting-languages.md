@@ -2,6 +2,11 @@
 title: Data-driven Testing in Scripting Languages
 description: Data-driven Testing in Scripting Languages
 ms.assetid: CF60C594-8877-4f09-AF82-9F4CA27123C7
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # <span id="taef.data-driven_testing_in_scripting_languages"></span>Data-driven Testing in Scripting Languages

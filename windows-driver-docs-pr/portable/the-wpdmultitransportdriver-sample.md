@@ -1,8 +1,11 @@
 ---
 Description: The WpdMultiTransportDriver Sample
-MS-HAID: 'wpddk.the\_wpdmultitransportdriver\_sample'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: The WpdMultiTransportDriver Sample
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The WpdMultiTransportDriver Sample

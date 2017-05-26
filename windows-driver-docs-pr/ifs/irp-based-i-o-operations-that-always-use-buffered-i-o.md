@@ -3,7 +3,13 @@ title: IRP-Based I/O Operations That Always Use Buffered I/O
 author: windows-driver-content
 description: IRP-Based I/O Operations That Always Use Buffered I/O
 ms.assetid: ac9b62a2-a562-4f40-83af-e1c74d58ce2b
-keywords: ["buffered I/O WDK file system"]
+keywords:
+- buffered I/O WDK file system
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IRP-Based I/O Operations That Always Use Buffered I/O

@@ -2,10 +2,12 @@
 title: ACPI system description tables
 author: windows-driver-content
 description: Implementation of the Advanced Configuration and Power Interface (ACPI) Hardware Specification is not required on SoC-based platforms, but much of the ACPI Software Specification is (or can be) required.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6EFCD288-031D-46BB-ABF3-8ADB53E7B4B1
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ACPI system description tables

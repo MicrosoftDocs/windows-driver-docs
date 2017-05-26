@@ -2,14 +2,20 @@
 title: Printer Options
 author: windows-driver-content
 description: Printer Options
-MS-HAID:
-- 'nt5gpd\_af51fdc8-ce76-4817-85f3-f7cca4e19ae3.xml'
-- 'print.printer\_options'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 48033d01-e701-4bc5-aac9-9ac2f0fd4de9
-keywords: ["Unidrv, printer options", "GPD files WDK Unidrv , printer options", "printer options WDK Unidrv", "options WDK printer", "printer features WDK Unidrv , printer options", "printer options WDK Unidrv , about printer options", "Unidrv WDK print"]
+keywords:
+- Unidrv, printer options
+- GPD files WDK Unidrv , printer options
+- printer options WDK Unidrv
+- options WDK printer
+- printer features WDK Unidrv , printer options
+- printer options WDK Unidrv , about printer options
+- Unidrv WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Options

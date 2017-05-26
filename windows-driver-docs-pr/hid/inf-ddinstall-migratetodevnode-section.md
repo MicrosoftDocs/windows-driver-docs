@@ -2,14 +2,15 @@
 title: INF DDInstall.MigrateToDevNode Section
 author: windows-driver-content
 description: INF DDInstall.MigrateToDevNode Section
-MS-HAID:
-- 'km-ovr\_973dd05c-849c-45cb-a0dd-b839cf2a983c.xml'
-- 'hid.inf\_ddinstall\_migratetodevnode\_section'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a4edbc9e-a2d0-4012-aca9-0b357939a881
-keywords: ["INF files WDK non-HID keyboard/mouse", "DDInstall.MigrateToDevNode section"]
+keywords:
+- INF files WDK non-HID keyboard/mouse
+- DDInstall.MigrateToDevNode section
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF DDInstall.MigrateToDevNode Section

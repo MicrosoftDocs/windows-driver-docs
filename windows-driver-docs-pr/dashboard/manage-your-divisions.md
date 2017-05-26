@@ -1,13 +1,12 @@
 ---
 title: Manage your divisions
 description: Manage your divisions
-MS-HAID:
-- 'p\_dashboard.manage\_your\_divisions'
-- 'hw\_dashboard.manage\_your\_divisions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0b6fda43-70f3-465c-8975-187b0a37d1cd
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Manage your divisions

@@ -2,6 +2,11 @@
 title: SIM locking
 description: SIM locking
 ms.assetid: b2ea81ec-fb49-4016-9918-a808aab549f7
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SIM locking

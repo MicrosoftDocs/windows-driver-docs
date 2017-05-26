@@ -1,10 +1,12 @@
 ---
 title: Test distribution guidance to self-host desktop drivers
 description: Test distribution guidance to self-host desktop drivers
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 67E31BC1-6209-4264-B9F4-8CDFE8CE2E65
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Test distribution guidance to self-host desktop drivers

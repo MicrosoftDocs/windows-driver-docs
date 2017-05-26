@@ -2,13 +2,12 @@
 title: Installing a PTP Camera
 author: windows-driver-content
 description: Installing a PTP Camera
-MS-HAID:
-- 'WIA\_drv\_cam\_6f4b005e-e5d2-48d6-8a7a-a91c8edc65e1.xml'
-- 'image.installing\_a\_ptp\_camera'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bf18a245-1344-47f1-83bc-3c369627bcdf
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing a PTP Camera

@@ -2,14 +2,18 @@
 title: Printer Driver Architecture
 author: windows-driver-content
 description: Printer Driver Architecture
-MS-HAID:
-- 'drvarch\_ea28fa5f-7815-44f6-bbfa-d7d19a500411.xml'
-- 'print.printer\_driver\_architecture'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 68a61007-8f0d-4fd4-b4a7-c8acbc101236
-keywords: ["print jobs WDK , printer drivers", "jobs WDK print , printer drivers", "Windows printing architecture WDK", "printer driver architecture WDK", "printer drivers WDK , architecture"]
+keywords:
+- print jobs WDK , printer drivers
+- jobs WDK print , printer drivers
+- Windows printing architecture WDK
+- printer driver architecture WDK
+- printer drivers WDK , architecture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Driver Architecture

@@ -1,15 +1,18 @@
 ---
-title: Configuration of Non-Plug and Play Serial Device Connected to an RS-232 Port
+title: Configure Non-PnP devices to an RS-232 Port
 author: windows-driver-content
 description: Configuration of Non-Plug and Play Serial Device Connected to an RS-232 Port
-MS-HAID:
-- 'sseovr\_c9480af3-2539-4271-8574-8ee507054d2d.xml'
-- 'serports.configuration\_of\_non\_plug\_and\_play\_serial\_device\_connected\_to\_an\_rs\_23'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5106e42e-4f87-47c3-a0ec-f70e77daabd3
-keywords: ["Plug and Play serial devices WDK", "serial devices WDK , non-Plug and Play", "non-Plug and Play serial devices WDK", "RS-232 ports WDK serial devices"]
+keywords:
+- Plug and Play serial devices WDK
+- serial devices WDK , non-Plug and Play
+- non-Plug and Play serial devices WDK
+- RS-232 ports WDK serial devices
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configuration of Non-Plug and Play Serial Device Connected to an RS-232 Port

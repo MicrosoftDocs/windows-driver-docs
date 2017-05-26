@@ -2,13 +2,12 @@
 title: WIA Utility Library
 author: windows-driver-content
 description: WIA Utility Library
-MS-HAID:
-- 'WIA\_arch\_dc28e915-487c-4474-a0e2-1609d8a7e9c8.xml'
-- 'image.wia\_utility\_library'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 333d7ad3-9bab-401e-a1d9-c8a5b241bfef
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Utility Library

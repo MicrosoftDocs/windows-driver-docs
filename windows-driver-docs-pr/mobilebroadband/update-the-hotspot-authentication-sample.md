@@ -1,10 +1,12 @@
 ---
 title: Update the hotspot authentication sample
 description: Update the hotspot authentication sample
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 68ebcdee-7b21-4177-b032-ba725ad2aee4
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Update the hotspot authentication sample

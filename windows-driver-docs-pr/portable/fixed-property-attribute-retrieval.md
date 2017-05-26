@@ -1,8 +1,11 @@
 ---
-Description: 'Fixed Property-Attribute Retrieval'
-MS-HAID: 'wpddk.fixed\_property\_attribute\_retrieval'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Fixed Property-Attribute Retrieval'
+Description: Fixed Property-Attribute Retrieval
+title: Fixed Property-Attribute Retrieval
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Fixed Property-Attribute Retrieval

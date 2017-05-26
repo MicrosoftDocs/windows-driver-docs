@@ -3,7 +3,27 @@ title: Specifying WDF Directives in INF Files
 author: windows-driver-content
 description: Specifying WDF Directives in INF Files
 ms.assetid: aefc678e-dc81-47dc-a84b-f1a79c16cad9
-keywords: ["WDF directives WDK UMDF", "DDInstall section WDK UMDF", "UmdfService INF directive WDK UMDF", "UmdfServiceOrder INF directive WDK UMDF", "UmdfImpersonationLevel INF directive WDK UMDF", "UmdfMethodNeitherAction INF directive WDK UMDF", "UmdfKernelModeClientPolicy INF directive WDK UMDF", "UmdfLibraryVersion INF directive WDK UMDF", "ServiceBinary INF directive WDK UMDF", "DriverCLSID INF directive WDK UMDF", "directives WDK UMDF", "UMDF-specific directives WDK", "UMDF-service-install section WDK", "INF files WDK UMDF , directives", "UmdfDispatcher INF directive WDK UMDF , syntax"]
+keywords:
+- WDF directives WDK UMDF
+- DDInstall section WDK UMDF
+- UmdfService INF directive WDK UMDF
+- UmdfServiceOrder INF directive WDK UMDF
+- UmdfImpersonationLevel INF directive WDK UMDF
+- UmdfMethodNeitherAction INF directive WDK UMDF
+- UmdfKernelModeClientPolicy INF directive WDK UMDF
+- UmdfLibraryVersion INF directive WDK UMDF
+- ServiceBinary INF directive WDK UMDF
+- DriverCLSID INF directive WDK UMDF
+- directives WDK UMDF
+- UMDF-specific directives WDK
+- UMDF-service-install section WDK
+- INF files WDK UMDF , directives
+- UmdfDispatcher INF directive WDK UMDF , syntax
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying WDF Directives in INF Files

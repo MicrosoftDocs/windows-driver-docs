@@ -2,7 +2,14 @@
 title: Handling a NetDMA Interrupt DPC
 description: Handling a NetDMA Interrupt DPC
 ms.assetid: 92da9324-5bc2-4a19-9c27-811cd7ad4572
-keywords: ["interrupts WDK NetDMA , DPC", "DPCs WDK NetDMA"]
+keywords:
+- interrupts WDK NetDMA , DPC
+- DPCs WDK NetDMA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling a NetDMA Interrupt DPC

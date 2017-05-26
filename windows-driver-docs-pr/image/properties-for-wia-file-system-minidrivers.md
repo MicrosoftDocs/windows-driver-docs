@@ -2,13 +2,12 @@
 title: Properties for WIA File System Minidrivers
 author: windows-driver-content
 description: Properties for WIA File System Minidrivers
-MS-HAID:
-- 'WIA\_arch\_f377d140-1612-49a6-ab97-8ba9a4d47d31.xml'
-- 'image.properties\_for\_wia\_file\_system\_minidrivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: af4d2d37-b5ec-4180-844b-cd9e709efd24
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Properties for WIA File System Minidrivers

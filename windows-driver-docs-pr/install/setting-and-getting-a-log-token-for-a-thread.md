@@ -2,7 +2,19 @@
 title: Setting and Getting a Log Token for a Thread
 description: Setting and Getting a Log Token for a Thread
 ms.assetid: 6c701b91-ae0a-48ba-a1e0-711fc21eaf60
-keywords: ["text logs WDK SetupAPI , log context", "log context WDK SetupAPI", "SetupGetThreadLogToken", "SetupAPI logging WDK Windows Vista , log context", "log tokens WDK SetupAPI", "thread log tokens WDK SetupAPI", "SetupSetThreadLogToken"]
+keywords:
+- text logs WDK SetupAPI , log context
+- log context WDK SetupAPI
+- SetupGetThreadLogToken
+- SetupAPI logging WDK Windows Vista , log context
+- log tokens WDK SetupAPI
+- thread log tokens WDK SetupAPI
+- SetupSetThreadLogToken
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting and Getting a Log Token for a Thread

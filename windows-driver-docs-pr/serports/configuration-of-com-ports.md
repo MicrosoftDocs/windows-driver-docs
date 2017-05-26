@@ -2,14 +2,15 @@
 title: Configuration of COM Ports
 author: windows-driver-content
 description: Configuration of COM Ports
-MS-HAID:
-- 'sseovr\_145bc1da-8152-4bd0-9161-c82c91269a85.xml'
-- 'serports.configuration\_of\_com\_ports'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 519ca9c8-bc67-4a85-87ae-6015c6212dea
-keywords: ["COM ports WDK serial devices", "serial devices WDK , COM ports"]
+keywords:
+- COM ports WDK serial devices
+- serial devices WDK , COM ports
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configuration of COM Ports

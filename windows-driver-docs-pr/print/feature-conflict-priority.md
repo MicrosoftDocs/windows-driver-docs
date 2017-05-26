@@ -2,14 +2,15 @@
 title: Feature Conflict Priority
 author: windows-driver-content
 description: Feature Conflict Priority
-MS-HAID:
-- 'nt5gpd\_d9afecaa-d6d0-4ca6-8042-1109d4a87109.xml'
-- 'print.feature\_conflict\_priority'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1185f983-ed04-4610-8b93-684ae3e07e84
-keywords: ["printer features WDK Unidrv , conflict priority", "conflict priority WDK printer features"]
+keywords:
+- printer features WDK Unidrv , conflict priority
+- conflict priority WDK printer features
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Feature Conflict Priority

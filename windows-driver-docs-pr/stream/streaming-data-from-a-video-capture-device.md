@@ -2,14 +2,15 @@
 title: Streaming Data from a Video Capture Device
 author: windows-driver-content
 description: Streaming Data from a Video Capture Device
-MS-HAID:
-- 'vidcapds\_9bb1948f-ee71-431a-9ae6-5fe8e77e3237.xml'
-- 'stream.streaming\_data\_from\_a\_video\_capture\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c83aae8e-70a7-4d65-a888-00a7c21eebdd
-keywords: ["video capture WDK AVStream , streaming data from", "capturing video WDK AVStream , streaming data from"]
+keywords:
+- video capture WDK AVStream , streaming data from
+- capturing video WDK AVStream , streaming data from
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Streaming Data from a Video Capture Device

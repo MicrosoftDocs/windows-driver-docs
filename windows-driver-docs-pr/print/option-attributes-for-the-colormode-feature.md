@@ -2,14 +2,14 @@
 title: Option Attributes for the ColorMode Feature
 author: windows-driver-content
 description: Option Attributes for the ColorMode Feature
-MS-HAID:
-- 'nt5gpd\_ec488fb7-b71a-4f7a-a19b-1853f3f3eee7.xml'
-- 'print.option\_attributes\_for\_the\_colormode\_feature'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e6f68a50-f044-406e-b92c-8449d126bceb
-keywords: ["ColorMode Feature"]
+keywords:
+- ColorMode Feature
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Option Attributes for the ColorMode Feature

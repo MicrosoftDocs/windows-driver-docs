@@ -2,13 +2,12 @@
 title: WIA-TWAIN Driver Design Considerations
 author: windows-driver-content
 description: WIA-TWAIN Driver Design Considerations
-MS-HAID:
-- 'WIA\_drv\_scan\_668f5669-6dec-4dad-aea4-13e41a26572c.xml'
-- 'image.wia\_twain\_driver\_design\_considerations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dd813838-ca00-4233-8257-5d1b84d849a8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA-TWAIN Driver Design Considerations

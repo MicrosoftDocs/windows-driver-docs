@@ -1,10 +1,12 @@
 ---
 title: Run new SMS received background events
 description: Run new SMS received background events
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 57534569-3678-4e2c-b55a-7dc6f057fb7d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Run new SMS received background events

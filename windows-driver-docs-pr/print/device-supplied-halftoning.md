@@ -2,14 +2,14 @@
 title: Device-Supplied Halftoning
 author: windows-driver-content
 description: Device-Supplied Halftoning
-MS-HAID:
-- 'nt5gpd\_b75cca34-5c19-41fb-be92-8b1ab5906e2d.xml'
-- 'print.device\_supplied\_halftoning'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d1d7963e-c23e-4cb5-a33f-43fec5dc74d2
-keywords: ["device-supplied halftoning WDK Unidrv"]
+keywords:
+- device-supplied halftoning WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device-Supplied Halftoning

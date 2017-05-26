@@ -1,11 +1,16 @@
 ---
-title: IRP\_MJ\_CLEANUP
+title: Checking the Oplock State of an IRP_MJ_CLEANUP operation
 author: windows-driver-content
-description: IRP\_MJ\_CLEANUP
+description: Checking the Oplock State of an IRP_MJ_CLEANUP operation
 ms.assetid: 5e078575-cbb8-4460-9986-4c546b8c20be
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# IRP\_MJ\_CLEANUP
+# Checking the Oplock State of an IRP_MJ_CLEANUP operation
 
 
 The following only applies when a *stream* is being closed.

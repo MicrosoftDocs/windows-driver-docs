@@ -1,10 +1,12 @@
 ---
 title: TrustedCertificateList
 description: TrustedCertificateList
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 116ee448-b0a8-4441-845c-945fc5ae0ddd
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TrustedCertificateList

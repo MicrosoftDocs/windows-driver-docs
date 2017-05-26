@@ -2,14 +2,16 @@
 title: TCP/IP Indexed Properties and Device Indexes
 author: windows-driver-content
 description: TCP/IP Indexed Properties and Device Indexes
-MS-HAID:
-- 'autocfg\_6d15c50d-622c-4f5e-ba1c-5ed50d79e57a.xml'
-- 'print.tcp\_ip\_indexed\_properties\_and\_device\_indexes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b26b0c18-1787-43e0-8461-acfbd9fb38f9
-keywords: ["TCP/IP indexed properties WDK printer", "indexed properties WDK printer", "device indexes WDK printer"]
+keywords:
+- TCP/IP indexed properties WDK printer
+- indexed properties WDK printer
+- device indexes WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TCP/IP Indexed Properties and Device Indexes

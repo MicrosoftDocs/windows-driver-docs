@@ -2,7 +2,18 @@
 title: Software-First Installation
 description: Software-First Installation
 ms.assetid: 2199316d-17d5-463a-8c97-f89c87473f20
-keywords: ["installation applications WDK , software-first installations", "device installation applications WDK , software-first installations", "distribution medium WDK device installations , software-first installations", "software-first installations WDK device installations", "AutoRun-enabled installation applications WDK", "device installations WDK , types"]
+keywords:
+- installation applications WDK , software-first installations
+- device installation applications WDK , software-first installations
+- distribution medium WDK device installations , software-first installations
+- software-first installations WDK device installations
+- AutoRun-enabled installation applications WDK
+- device installations WDK , types
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Software-First Installation

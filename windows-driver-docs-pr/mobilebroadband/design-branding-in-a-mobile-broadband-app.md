@@ -1,10 +1,12 @@
 ---
 title: Design branding in a mobile broadband app
 description: Design branding in a mobile broadband app
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0badd121-ce1d-4be2-a9f0-e062631c00c8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Design branding in a mobile broadband app

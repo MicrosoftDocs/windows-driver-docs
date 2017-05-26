@@ -2,7 +2,17 @@
 title: Synchronizing with an MSI Interrupt
 description: Synchronizing with an MSI Interrupt
 ms.assetid: 61745a93-79dc-49ac-9ace-3ecb647b7b9a
-keywords: ["MSI-X WDK networking , synchronizing interrupts", "message-signaled interrupts WDK networking , synchronizing interrupts", "MSIs WDK networking , synchronizing interrupts", "interrupts WDK networking , synchronizing", "synchronization WDK MSI-X"]
+keywords:
+- MSI-X WDK networking , synchronizing interrupts
+- message-signaled interrupts WDK networking , synchronizing interrupts
+- MSIs WDK networking , synchronizing interrupts
+- interrupts WDK networking , synchronizing
+- synchronization WDK MSI-X
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Synchronizing with an MSI Interrupt

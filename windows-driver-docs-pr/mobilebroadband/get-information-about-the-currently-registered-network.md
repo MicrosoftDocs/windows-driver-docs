@@ -1,10 +1,12 @@
 ---
 title: Get information about the currently registered network
 description: Get information about the currently registered network
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 94321933-fc93-4203-8de1-e715d66fd1e3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Get information about the currently registered network

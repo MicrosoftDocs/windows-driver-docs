@@ -2,13 +2,12 @@
 title: Image Processing
 author: windows-driver-content
 description: Image Processing
-MS-HAID:
-- 'WIA\_arch\_3233beea-55c0-4871-af2d-019dd1f4817f.xml'
-- 'image.image\_processing'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 84e10fcc-3998-434c-922a-65b42dccbdaf
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Image Processing

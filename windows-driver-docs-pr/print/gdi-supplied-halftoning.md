@@ -2,14 +2,14 @@
 title: GDI-Supplied Halftoning
 author: windows-driver-content
 description: GDI-Supplied Halftoning
-MS-HAID:
-- 'nt5gpd\_03c43c37-589d-45fc-8327-9b5cd4a0e813.xml'
-- 'print.gdi\_supplied\_halftoning'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c7f3d148-4620-4060-bbf8-253e9e35c397
-keywords: ["GDI-supplied halftoning WDK Unidrv"]
+keywords:
+- GDI-supplied halftoning WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI-Supplied Halftoning

@@ -3,13 +3,22 @@ title: Operation Flow with Single Device Stack
 author: windows-driver-content
 description: Operation Flow with Single Device Stack
 ms.assetid: b7e38844-2e00-48b8-9741-3bfc38869a6d
-keywords: ["single device stack flow WDK UMDF", "operation flow WDK UMDF", "I/O requests WDK UMDF , operation flow", "request processing WDK UMDF , operation flow"]
+keywords:
+- single device stack flow WDK UMDF
+- operation flow WDK UMDF
+- I/O requests WDK UMDF , operation flow
+- request processing WDK UMDF , operation flow
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Operation Flow with Single Device Stack
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The following figure shows the flow of operations that occur to and from the UMDF functional driver in a single device stack.
 

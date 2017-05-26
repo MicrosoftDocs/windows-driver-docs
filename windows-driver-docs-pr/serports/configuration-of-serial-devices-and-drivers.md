@@ -2,14 +2,17 @@
 title: Configuration of Serial Devices and Drivers
 author: windows-driver-content
 description: Configuration of Serial Devices and Drivers
-MS-HAID:
-- 'sseovr\_6a1edcc2-da15-4eab-876e-d8aa287e9800.xml'
-- 'serports.configuration\_of\_serial\_devices\_and\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a3b5c58a-e66a-4e8c-ab59-7684c12f8e8b
-keywords: ["serial devices WDK , configurations", "serial drivers WDK", "Serial driver WDK , configurations", "Serenum driver WDK , configurations"]
+keywords:
+- serial devices WDK , configurations
+- serial drivers WDK
+- Serial driver WDK , configurations
+- Serenum driver WDK , configurations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configuration of Serial Devices and Drivers

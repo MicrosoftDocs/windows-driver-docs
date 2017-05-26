@@ -2,10 +2,12 @@
 title: EFI\_USBFN\_DEVICE\_INFO\_ID
 author: windows-driver-content
 description: EFI\_USBFN\_DEVICE\_INFO\_ID
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bc0391b4-876a-4c3c-920c-a16a781a84b0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EFI\_USBFN\_DEVICE\_INFO\_ID

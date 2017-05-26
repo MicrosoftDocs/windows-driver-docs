@@ -2,14 +2,20 @@
 title: Master Clock
 author: windows-driver-content
 description: Master Clock
-MS-HAID:
-- 'dvd-design\_61f6626b-b686-471e-bb71-697f247c13cb.xml'
-- 'stream.master\_clock'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 87a99371-9c72-4310-bcc7-02af19207b3e
-keywords: ["DVD decoder minidrivers WDK , master clock", "decoder minidrivers WDK DVD , master clock", "master clocks WDK DVD decoder", "clocks WDK DVD decoder", "onboard clock WDK DVD decoder", "current stream time WDK DVD decoder", "time WDK DVD decoder"]
+keywords:
+- DVD decoder minidrivers WDK , master clock
+- decoder minidrivers WDK DVD , master clock
+- master clocks WDK DVD decoder
+- clocks WDK DVD decoder
+- onboard clock WDK DVD decoder
+- current stream time WDK DVD decoder
+- time WDK DVD decoder
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Master Clock

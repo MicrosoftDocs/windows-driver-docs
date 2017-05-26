@@ -1,7 +1,12 @@
 ---
 title: Windows Store device apps
-description: .
+description: Windows Store device apps are device companions, have capabilities beyond regular Windows Store apps, and perform privileged operations, such as firmware updates
 ms.assetid: fb64bad6-aa3d-4718-b62e-68da59a07ced
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Store device apps
@@ -66,6 +71,11 @@ If you're looking for info about Windows Store mobile broadband apps, see [Mobil
 <tr class="odd">
 <td align="left"><p>[Automatic installation for Windows Store device apps](auto-install-for-windows-store-device-apps.md)</p></td>
 <td align="left"><p>This topic describes how automatic installation works and how the app, metadata, and drivers can be updated and uninstalled.</p></td>
+</tr>
+</tr>
+<tr class="even">
+<td align="left"><p>[Hardware access for Universal Windows Platform apps](hardware-access-for-universal-windows-platform-apps.md)</p></td>
+<td align="left"><p>This topic introduces getting Hardware access for Universal Windows Platform apps.</p></td>
 </tr>
 </tbody>
 </table>

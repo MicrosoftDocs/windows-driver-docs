@@ -1,10 +1,12 @@
 ---
-Description: 'The USB Type-C Connection Exerciser (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board. The shield provides a four-to-one switch to automate interoperability tests for USB Type-C scenarios.'
-MS-HAID: 'buses.test\_usb\_type-c\_systems\_with\_mutt\_connex-c'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'Test USB Type-C systems with USB Type-C ConnEx
+Description: The MUTT Connection Exerciser Type-C (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board. 
+title: Test USB Type-C systems with USB Type-C ConnEx
+author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Test USB Type-C systems with USB Type-C ConnEx
@@ -31,7 +33,7 @@ title: 'Test USB Type-C systems with USB Type-C ConnEx
 
 \[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
 
-The USB Type-C Connection Exerciser (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board. The shield provides a four-to-one switch to automate interoperability tests for USB Type-C scenarios.
+The MUTT Connection Exerciser Type-C (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board. The shield provides a four-to-one switch to automate interoperability tests for USB Type-C scenarios.
 
 This topic provides guidelines to automate the testing of systems, devices, docks with USB Type-C connectors and their interoperability with the Windows operating system. You can test hardware that belong to one of the following categories:
 
@@ -58,7 +60,7 @@ To perform the USB Type-C interoperability test procedures by using USB Type-C C
 
     For information about compatible adapters for the Arduino Mega 2560 R3 board, [see this site](http://go.microsoft.com/fwlink/p/?LinkID=733660).
 
--   ** USB Type-C ConnEx **
+-   **USB Type-C ConnEx**
 
     The shield has one male USB Type-C port (labeled **J1**) to which the SUT is connected. The shield also has four other USB ports (labeled **J2**, **J3**, **J4**, **J6**) to which devices can be attached that act as peripherals to the SUT. The shield monitors amperage and voltage being drawn from the SUT. You can buy this board from [MCCI](http://go.microsoft.com/fwlink/p/?LinkId=733488) or [JJG Technologies]( http://go.microsoft.com/fwlink/p/?linkid=618287).
 
@@ -105,7 +107,7 @@ Make sure you meet these requirements:
 -   Your SUT must have the version of the Windows operating system with which you want to test interoperability.
 -   The proxy controller must be running Windows 10.
 -   [![download the mutt software package](images/download.png)](http://go.microsoft.com/fwlink/p/?LinkId=786621) and install the latest MUTT software package on the proxy controller.
--   The package is a suite of tools used to run tests with USB Type-C ConnEx.
+-   The package is a suite of tools used to run tests with USB Type-C ConnEx .
 
     It includes utilities to update the firmware, switch between the peripheral ports, and send requests to simulate test cases. It also contains test driver packages that test the functionality of the buses, its controller, and devices connected to the bus.
 
@@ -157,13 +159,13 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
         Your assembled unit should be similar to this image:
 
-        ![connected USB Type-C ConnEx board](images/connexc-connect1.png)
+        ![connected connex-c board](images/connexc-connect1.png)
 
 2.  Power the USB Type-C ConnEx from the attached microcontroller by using either the USB Type-B (connected to the proxy controller) or from an external power adapter. The LCD display is similar to this image:
 
     After five seconds, the LCD display shows the current and voltage.
 
-    ![ USB Type-C ConnEx before firmware boot](images/connexc-connect2.png)![ USB Type-C ConnEx before firmware boot](images/connexc-connect3.png)
+    ![USB Type-C ConnEx before firmware boot](images/connexc-connect2.png)![USB Type-C ConnEx before firmware boot](images/connexc-connect3.png)
 
     If you do not the see display as shown in the previous image, make sure your have assembled the unit correctly.
 
@@ -203,7 +205,7 @@ In these steps, you will connect the hardware pieces, update the firmware on the
     1.  Right-click the Start button in the task bar and select **Device Manager**.
     2.  Expand the **Ports (COM & LPT)** node and note the COM port that is used by the microcontroller. In this example, it is connected to COM 4.
 
-        ![ USB Type-C ConnEx in device manager](images/connexc-connect8.png)
+        ![USB Type-C ConnEx in device manager](images/connexc-connect8.png)
 
 ## <a href="" id="connexutil"></a>ConnExUtil.exe
 
@@ -226,7 +228,7 @@ Here are the command line options that ConnExUtil.exe supports for controlling t
 <tbody>
 <tr class="odd">
 <td>Device Discovery
-<p>List all devices connected to USB Type-C ConnEx </p></td>
+<p>List all devices connected to USB Type-C ConnEx</p></td>
 <td><strong>/list</strong></td>
 <td>For USB connected devices, this option lists the device instance path. For audio connected devices it shows <strong>Audio</strong>.
 <p>To view audio devices, use this in combination with the <strong>/all</strong> parameter. Lists with 1-based index that can be used for input to the <strong>/#</strong> parameter.</p></td>
@@ -355,10 +357,10 @@ do (
 )
 ```
 
-## <a href="" id="scripts"></a>Scripts for controlling the MUTT ConnEx-C board
+## <a href="" id="scripts"></a>Scripts for controlling the USB Type-C ConnEx board
 
 
-These scripts exercise the control interface supported by ConnExUtil.exe to run sequential and stress type tests with the MUTT ConnEx-C through the command line. All of these scripts support the optional command line parameter **audio** to indicate that the MUTT ConnEx-C board is connected over the 3.5 mm audio interface. By default they will only attempt to use USB connected boards.
+These scripts exercise the control interface supported by ConnExUtil.exe to run sequential and stress type tests with the USB Type-C ConnEx through the command line. All of these scripts support the optional command line parameter **audio** to indicate that the USB Type-C ConnEx board is connected over the 3.5 mm audio interface. By default they will only attempt to use USB connected boards.
 
 ### <a href="" id="cxloop"></a>Simple connect / disconnect sequence: CXLOOP.CMD
 
@@ -574,7 +576,7 @@ For configuration images related to step 2 -4, see [Get started...](#config).
 
 1.  Power off the SUT.
 2.  Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
-3.  Connect the proxy controller to MUTT USB Type-C ConnEx.
+3.  Connect the proxy controller to USB Type-C ConnEx.
 4.  Connect peripherals to USB Type-C ConnEx.
 5.  Power on the SUT and log on to Windows.
 6.  At an elevated Command prompt, run the CXSTRESS.CMD for 12 hours. .
@@ -614,7 +616,7 @@ The following stress tests can be adapted from the SuperMUTT test documentation 
 
 ### Confirming charging and power
 
-The onboard LCD on the USB Type-C ConnEx displays power (volts, amps, and direction). Confirm that it matches expectations from power sources plugged in and actively enabled with the USB Type-C ConnEx.
+The onboard LCD on the USB Type-C ConnEx displays power (volts, amps, and direction). Confirm that it matches expectations from power sources plugged in and actively enabled with the USB Type-C ConnEx .
 
 ![confirming charging and power](images/connexc-connect9.png)
 
@@ -674,8 +676,9 @@ Provide these details:
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Test%20USB%20Type-C%20systems%20with%20MUTT%20ConnEx-C%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
+--------------------
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Test%20USB%20Type-C%20systems%20with%20MUTT%20ConnEx-C%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

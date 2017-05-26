@@ -2,14 +2,18 @@
 title: Device Installation
 author: windows-driver-content
 description: Device Installation
-MS-HAID:
-- 'prntools\_b99e4e64-a434-4dae-8d78-1d7982da3835.xml'
-- 'print.device\_installation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 47bbe4cd-bcbc-42d5-9513-9ea659c123dc
-keywords: ["hot-pluggable bus WDK printer", "printer installation checks WDK", "states WDK printer", "verifying printer installations", "installed driver tests WDK printer"]
+keywords:
+- hot-pluggable bus WDK printer
+- printer installation checks WDK
+- states WDK printer
+- verifying printer installations
+- installed driver tests WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Installation

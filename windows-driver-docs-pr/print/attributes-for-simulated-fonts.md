@@ -2,14 +2,15 @@
 title: Attributes for Simulated Fonts
 author: windows-driver-content
 description: Attributes for Simulated Fonts
-MS-HAID:
-- 'nt5gpd\_5f15e9a5-a9fd-4689-a4bc-e98323ae5233.xml'
-- 'print.attributes\_for\_simulated\_fonts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 000f3c30-2e8a-41b7-ac06-6f2da550ac70
-keywords: ["simulated font attributes WDK Unidrv", "font attributes WDK Unidrv"]
+keywords:
+- simulated font attributes WDK Unidrv
+- font attributes WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Attributes for Simulated Fonts

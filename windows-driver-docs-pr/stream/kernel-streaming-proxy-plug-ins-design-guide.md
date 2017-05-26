@@ -2,14 +2,14 @@
 title: Kernel Streaming Proxy Plug-ins Design Guide
 author: windows-driver-content
 description: Kernel Streaming Proxy Plug-ins Design Guide
-MS-HAID:
-- 'ksproxy\_dg\_716b697a-a5b5-4509-9727-c83ecb1b09b6.xml'
-- 'stream.kernel\_streaming\_proxy\_plug\_ins\_design\_guide'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9a2b83ab-f54c-421b-bc9b-7dad63cd8cb5
-keywords: ["Kernel Streaming Proxy WDK AVStream , plug-ins"]
+keywords:
+- Kernel Streaming Proxy WDK AVStream , plug-ins
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Kernel Streaming Proxy Plug-ins Design Guide

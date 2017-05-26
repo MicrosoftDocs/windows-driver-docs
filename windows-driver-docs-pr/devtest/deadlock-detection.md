@@ -2,7 +2,16 @@
 title: Deadlock Detection
 description: Deadlock Detection
 ms.assetid: ecda3e19-218d-484a-973d-8406bed8d820
-keywords: ["Deadlock Detection feature WDK Driver Verifier", "deadlocks WDK Driver Verifier", "locked resources WDK Driver Verifier", "thread locks WDK Driver Verifier"]
+keywords:
+- Deadlock Detection feature WDK Driver Verifier
+- deadlocks WDK Driver Verifier
+- locked resources WDK Driver Verifier
+- thread locks WDK Driver Verifier
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Deadlock Detection

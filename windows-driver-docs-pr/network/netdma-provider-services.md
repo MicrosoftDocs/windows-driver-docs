@@ -2,7 +2,17 @@
 title: NetDMA Provider Services
 description: NetDMA Provider Services
 ms.assetid: f93eef62-3a6b-4bee-99b9-fca2c02142d1
-keywords: ["NetDMA provider drivers WDK networking , services", "NetDMA provider services WDK networking", "memory-to-memory data transfers WDK NetDMA , provider services", "data transfers WDK NetDMA , provider services", "transferring data WDK NetDMA , provider service"]
+keywords:
+- NetDMA provider drivers WDK networking , services
+- NetDMA provider services WDK networking
+- memory-to-memory data transfers WDK NetDMA , provider services
+- data transfers WDK NetDMA , provider services
+- transferring data WDK NetDMA , provider service
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NetDMA Provider Services

@@ -1,10 +1,19 @@
-# Windows Driver Kit (WDK)
+---
+title: Getting Started with the Windows Driver Kit
+description: This section describes how to get the WDK and samples and start building Windows drivers.
+ms.assetid: 5502AAF9-2400-4338-A646-C746B29F9A44
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+---
+
+# Getting Started with the Windows Driver Kit
 
 Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2015 and [Debugging Tools for Windows](https://msdn.microsoft.com/en-us/library/windows/hardware/ff551063). This integrated environment gives you the tools you need to develop, build, package, deploy, test, and debug drivers. You can run many basic certification tests in the integrated environment. The Windows Driver Kit (WDK) includes templates for several technologies and driver models, including [Windows Driver Frameworks](https://msdn.microsoft.com/en-us/library/windows/hardware/ff557565), Universal Serial Bus (USB), print, networking, and file system filters.
 
-## Get started
-
-For fundamental driver concepts and an introduction to driver development tools, please see [Getting started with Windows drivers](https://msdn.microsoft.com/en-us/library/windows/hardware/ff554690).
+For fundamental driver concepts and an introduction to driver development tools, please see [Getting started with Windows drivers](gettingstarted/index.md).
 
 ## Universal Windows driver samples
 

@@ -2,13 +2,12 @@
 title: Device Stage General Development Kit
 author: windows-driver-content
 description: Device Stage General Development Kit
-MS-HAID:
-- 'prn\_dxpui\_87c470c7-720a-4418-a3e1-1a48806e5d58.xml'
-- 'print.device\_stage\_general\_development\_kit'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 259b3ac8-b9d3-4cbd-a003-e2d59e76bc1f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Stage General Development Kit

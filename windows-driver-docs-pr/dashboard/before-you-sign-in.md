@@ -1,13 +1,12 @@
 ---
 title: Before You Sign In
 description: Before You Sign In
-MS-HAID:
-- 'p\_dashboard.before\_you\_sign\_in'
-- 'hw\_dashboard.before\_you\_sign\_in'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5eeb8457-e63c-419b-ac68-11c1fde82e8c
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Before You Sign In

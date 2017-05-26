@@ -2,13 +2,12 @@
 title: Reporting WIA Minidriver Status
 author: windows-driver-content
 description: Reporting WIA Minidriver Status
-MS-HAID:
-- 'WIA\_drv\_basic\_92a5a6d4-fe78-4ee2-bab8-ff4b6e3f2dae.xml'
-- 'image.reporting\_wia\_minidriver\_status'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a8215292-ad09-4d8c-b6d5-f6de7827e2b5
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting WIA Minidriver Status

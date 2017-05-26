@@ -1,10 +1,12 @@
 ---
 title: MetadataBuilderInformation
 description: MetadataBuilderInformation
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 94403994-2165-405e-bfa0-974af8e241fe
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MetadataBuilderInformation

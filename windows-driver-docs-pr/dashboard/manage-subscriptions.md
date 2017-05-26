@@ -1,13 +1,12 @@
 ---
 title: Manage Subscriptions
 description: Manage Subscriptions
-MS-HAID:
-- 'p\_dashboard.manage\_subscriptions'
-- 'hw\_dashboard.manage\_subscriptions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dc7d53d2-9235-42f4-b52b-ad926f4df155
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Manage Subscriptions

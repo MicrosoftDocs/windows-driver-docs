@@ -2,14 +2,15 @@
 title: Plotter Driver Components
 author: windows-driver-content
 description: Plotter Driver Components
-MS-HAID:
-- 'plotter\_53499edf-27fb-4fea-9ad4-d7aefcb46960.xml'
-- 'print.plotter\_driver\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6a976956-c188-4d31-b176-e97e09e8cc0b
-keywords: ["Plotter Driver WDK print , components", "MSPlot WDK print , components"]
+keywords:
+- Plotter Driver WDK print , components
+- MSPlot WDK print , components
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Plotter Driver Components

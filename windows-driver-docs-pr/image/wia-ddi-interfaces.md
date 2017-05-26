@@ -2,13 +2,12 @@
 title: WIA DDI Interfaces
 author: windows-driver-content
 description: WIA DDI Interfaces
-MS-HAID:
-- 'WIA\_arch\_9e0ef36b-dea7-4da4-98e9-c5f241aa256e.xml'
-- 'image.wia\_ddi\_interfaces'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 738a87e2-9c74-4215-85dc-ec793f10ce05
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA DDI Interfaces

@@ -3,13 +3,33 @@ title: WDM Concepts for WDF Drivers
 author: windows-driver-content
 description: WDM Concepts for WDF Drivers
 ms.assetid: 164b4882-a5a3-45d3-a2f5-53367b396439
-keywords: ["kernel-mode drivers WDK KMDF , WDM", "KMDF WDK , WDM", "Kernel-Mode Driver Framework WDK , WDM", "framework-based drivers WDK KMDF , WDM", "WDM drivers WDK KMDF", "bus enumeration WDK KMDF", "bus drivers WDK KMDF", "function drivers WDK KMDF", "filter drivers WDK KMDF", "driver stacks WDK KMDF", "stacks WDK KMDF", "device stacks WDK KMDF", "IRPs WDK KMDF", "I/O request packets WDK KMDF", "I/O requests WDK KMDF , IRPs"]
+keywords:
+- kernel-mode drivers WDK KMDF , WDM
+- KMDF WDK , WDM
+- Kernel-Mode Driver Framework WDK , WDM
+- framework-based drivers WDK KMDF , WDM
+- WDM drivers WDK KMDF
+- bus enumeration WDK KMDF
+- bus drivers WDK KMDF
+- function drivers WDK KMDF
+- filter drivers WDK KMDF
+- driver stacks WDK KMDF
+- stacks WDK KMDF
+- device stacks WDK KMDF
+- IRPs WDK KMDF
+- I/O request packets WDK KMDF
+- I/O requests WDK KMDF , IRPs
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDM Concepts for WDF Drivers
 
 
-Windows Driver Frameworks (WDF) is a wrapper around Microsoft Windows Driver Model (WDM) interfaces. Although the framework simplifies many WDM concepts and hides others completely so that you do not have to work with them, you should still understand some of the basic concepts of WDM drivers. Specifically, you should understand [driver types](#driver-types), [driver stacks](#driver-stacks), [device stacks](#device-stacks), and [I/O request packets](#i-o-request-packets).
+Windows Driver Frameworks (WDF) is a wrapper around Microsoft Windows Driver Model (WDM) interfaces. Although the framework simplifies many WDM concepts and hides others completely so that you do not have to work with them, you should still understand some of the basic concepts of WDM drivers. Specifically, you should understand [driver types](#driver-types), [driver stacks](#driver-stacks), [device stacks](#device-stacks), and [I/O request packets](#io-request-packets).
 
 ### Driver types
 

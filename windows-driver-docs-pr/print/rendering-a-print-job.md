@@ -2,14 +2,19 @@
 title: Rendering a Print Job
 author: windows-driver-content
 description: Rendering a Print Job
-MS-HAID:
-- 'drvarch\_ff06fb5f-010f-460d-8c22-0209d641ff11.xml'
-- 'print.rendering\_a\_print\_job'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 78967839-b518-41c0-8825-b00f8b8560e6
-keywords: ["printer graphics DLL WDK , rendering print jobs", "graphics DLL WDK printer , rendering print jobs", "rendering print jobs WDK", "jobs WDK print , rendering", "print jobs WDK , rendering", "banding WDK print"]
+keywords:
+- printer graphics DLL WDK , rendering print jobs
+- graphics DLL WDK printer , rendering print jobs
+- rendering print jobs WDK
+- jobs WDK print , rendering
+- print jobs WDK , rendering
+- banding WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Rendering a Print Job

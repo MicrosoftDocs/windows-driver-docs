@@ -2,12 +2,6 @@
 title: About the DirectInput Control Panel
 author: windows-driver-content
 description: About the DirectInput Control Panel
-MS-HAID:
-- 'di\_1d8d3ee2-c1cf-4f8e-809c-81d1dca41a3a.xml'
-- 'hid.about\_the\_directinput\_control\_panel'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d6845778-1203-4b5a-8a7b-7d4eecbcc59e
 keywords: ["property sheets WDK DirectInput , about control panel", "game controllers WDK DirectInput , about control panel", "control panels WDK DirectInput , about control panel", "Joy.cpl"]
 ---

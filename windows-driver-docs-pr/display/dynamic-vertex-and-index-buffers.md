@@ -2,7 +2,15 @@
 title: Dynamic Vertex and Index Buffers
 description: Dynamic Vertex and Index Buffers
 ms.assetid: 81ee22c6-3f98-4767-a4cd-a7907ed8f8a2
-keywords: ["dynamic vertex WDK DirectX 9.0", "index buffers WDK DirectX 9.0", "dynamic buffers WDK DirectX 9.0"]
+keywords:
+- dynamic vertex WDK DirectX 9.0
+- index buffers WDK DirectX 9.0
+- dynamic buffers WDK DirectX 9.0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Dynamic Vertex and Index Buffers

@@ -2,7 +2,25 @@
 title: Reading and Filtering Debugging Messages
 description: Reading and Filtering Debugging Messages
 ms.assetid: 2ad320f6-596d-4b4c-bfad-d570c856bcc7
-keywords: ["debugging code WDK , reading messages", "debugging code WDK , filtering messages", "reading debugging messages", "filtering debugging messages WDK", "routines WDK debugging , message filtering", "filter masks WDK debugging", "component names WDK debugging", "importance bitfield WDK debugging", "levels WDK debugging", "Level parameter", "displaying debugging messages", "prioritizing debugging messages WDK", "DbgPrint buffer"]
+keywords:
+- debugging code WDK , reading messages
+- debugging code WDK , filtering messages
+- reading debugging messages
+- filtering debugging messages WDK
+- routines WDK debugging , message filtering
+- filter masks WDK debugging
+- component names WDK debugging
+- importance bitfield WDK debugging
+- levels WDK debugging
+- Level parameter
+- displaying debugging messages
+- prioritizing debugging messages WDK
+- DbgPrint buffer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reading and Filtering Debugging Messages
@@ -36,9 +54,9 @@ For a full explanation, see the following section.
 -   [Setting the Component Filter Mask](#setting-the-component-filter-mask)
 -   [Criteria for Displaying the Message](#criteria-for-displaying-the-message)
 -   [Example](#example)
--   [DbgPrint Buffer and the Debugger](#ddk-the-dbgprint-buffer-and-the-debugger-tools)
+-   [DbgPrint Buffer and the Debugger](#dbgprint-buffer-and-the-debugger)
 
-### <span id="identifying_the_component_name"></span><span id="IDENTIFYING_THE_COMPONENT_NAME"></span>Identifying the Component Name
+### Identifying the Component Name
 
 Each component has a separate filter mask. This mask enables the debugger to configure the filter for each component separately.
 
@@ -93,7 +111,7 @@ For example, if you are writing a video driver, you would use DPFLTR\_IHVVIDEO\_
 
 In Windows Vista and later versions of Windows, all messages that **DbgPrint** and **KdPrint** send are associated with the DEFAULT component (DPFLTR\_DEFAULT\_ID).
 
-### <span id="choosing_the_correct_level"></span><span id="CHOOSING_THE_CORRECT_LEVEL"></span>Choosing the Correct Level
+### Choosing the Correct Level
 
 The *Level* parameter of the **DbgPrintEx** routine is of type DWORD. It is used to determine the *importance bitfield*. The connection between the *Level* parameter and this bitfield depends on the size of *Level*:
 
@@ -123,7 +141,7 @@ Use the warning, trace, and information levels in the appropriate situations. Yo
 
 In Windows Vista and later versions of Windows, all messages sent by **DbgPrint** and **KdPrint** behave like **DbgPrintEx** and **KdPrintEx** messages with *Level* equal to DPFLTR\_INFO\_LEVEL. In other words, these messages have the third bit of their importance bitfield set.
 
-### <span id="setting_the_component_filter_mask"></span><span id="SETTING_THE_COMPONENT_FILTER_MASK"></span>Setting the Component Filter Mask
+### Setting the Component Filter Mask
 
 There are two ways to set a component filter mask:
 
@@ -135,7 +153,7 @@ Filter masks that are stored in the registry take effect during boot. Filter mas
 
 There is also a system-wide mask called WIN2000. By default, this mask is equal to 0x1, but you can change it through the registry or the debugger like all other components. When filtering is performed, each component filter mask is first combined with the WIN2000 mask by using a bitwise OR. In particular, this combination means that components whose masks have never been specified default to 0x1.
 
-### <span id="criteria_for_displaying_the_message"></span><span id="CRITERIA_FOR_DISPLAYING_THE_MESSAGE"></span>Criteria for Displaying the Message
+### Criteria for Displaying the Message
 
 When **DbgPrintEx** is called in kernel-mode code, Windows compares the message importance bitfield that is specified by *Level* with the filter mask of the component that is specified by *ComponentId*.
 
@@ -145,7 +163,7 @@ When **DbgPrintEx** is called in kernel-mode code, Windows compares the message 
 
 Windows performs an AND operation on the importance bitfield and the component filter mask. If the result is nonzero, the message is sent to the debugger.
 
-### <span id="example"></span><span id="EXAMPLE"></span>Example
+### Example
 
 Suppose that before the last boot, you created the following values in the **Debug Print Filter** key:
 
@@ -181,7 +199,7 @@ The third message has its *Level* parameter equal to DPFLTR\_MASK | 0x10. This v
 
 The fourth message was passed to the **DbgPrint** routine instead of the **DbgPrintEx** routine. In Windows Server 2003 and earlier versions of Windows, messages that are passed to **DbgPrint** are always transmitted. In Windows Vista and later versions of Windows, messages that are passed to **DbgPrint** are always given a default filter. The importance bitfield is equal to 1 &lt;&lt; DPFLTR\_INFO\_LEVEL, which is 0x00000008. The component for this routine is DEFAULT. Because you have not set the DEFAULT component filter mask, it has a value of 0x1. When this mask is combined with the importance bitfield by using an AND operation, the result is zero. So the fourth message is not transmitted.
 
-### <span id="ddk_the_dbgprint_buffer_and_the_debugger_tools"></span><span id="DDK_THE_DBGPRINT_BUFFER_AND_THE_DEBUGGER_TOOLS"></span>DbgPrint Buffer and the Debugger
+### DbgPrint Buffer and the Debugger
 
 When the **DbgPrint**, **DbgPrintEx**, **vDbgPrintEx**, **vDbgPrintExWithPrefix**, **KdPrint**, or **KdPrintEx** routine transmits a message to the debugger, the formatted string is sent to the **DbgPrint** buffer. The contents of this buffer are displayed immediately in the Debugger Command window, unless you disabled this display by using the **Buffer DbgPrint Output** option of GFlags.
 

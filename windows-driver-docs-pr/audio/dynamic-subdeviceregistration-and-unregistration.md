@@ -2,7 +2,16 @@
 title: Dynamic Subdevice Registration and Unregistration
 description: Dynamic Subdevice Registration and Unregistration
 ms.assetid: 7157b7b3-655b-49d9-be45-c4a86a3cc82d
-keywords: ["dynamic subdevice WDK audio", "audio subdevices WDK", "registering audio subdevices WDK", "deregistering audio subdevices WDK"]
+keywords:
+- dynamic subdevice WDK audio
+- audio subdevices WDK
+- registering audio subdevices WDK
+- deregistering audio subdevices WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Dynamic Subdevice Registration and Unregistration

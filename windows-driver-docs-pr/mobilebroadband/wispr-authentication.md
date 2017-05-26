@@ -1,10 +1,12 @@
 ---
 title: WISPr authentication
 description: WISPr authentication
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 49782d7f-c2f9-408d-971c-1af4d93d4d8d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WISPr authentication

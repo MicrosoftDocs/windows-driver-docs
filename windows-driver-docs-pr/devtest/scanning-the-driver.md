@@ -2,7 +2,18 @@
 title: Scanning the Driver
 description: Scanning the Driver
 ms.assetid: c36960b4-d97e-49b7-a7ad-e71b0820db8a
-keywords: ["Static Driver Verifier WDK , DriverEntry routine scans", "StaticDV WDK , DriverEntry routine scans", "SDV WDK , DriverEntry routine scans", "scanning DriverEntry routine WDK Static Driver Verifier", "driver entry points WDK Static Driver Verifier", "entry points WDK Static Driver Verifier"]
+keywords:
+- Static Driver Verifier WDK , DriverEntry routine scans
+- StaticDV WDK , DriverEntry routine scans
+- SDV WDK , DriverEntry routine scans
+- scanning DriverEntry routine WDK Static Driver Verifier
+- driver entry points WDK Static Driver Verifier
+- entry points WDK Static Driver Verifier
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Scanning the Driver

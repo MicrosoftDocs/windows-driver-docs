@@ -2,14 +2,18 @@
 title: Downloading Queue-Specific Files
 author: windows-driver-content
 description: Downloading Queue-Specific Files
-MS-HAID:
-- 'prtinst\_7c16afd8-3364-4262-bc16-125817806499.xml'
-- 'print.downloading\_queue\_specific\_files'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b6aad46a-2934-461a-ad11-6ad699687fc1
-keywords: ["downloading queue-specific printer files", "Point and Print WDK , queue-specific files", "queue-specific files WDK printer", "print queues WDK , Point and Print", "queues WDK printer , Point and Print"]
+keywords:
+- downloading queue-specific printer files
+- Point and Print WDK , queue-specific files
+- queue-specific files WDK printer
+- print queues WDK , Point and Print
+- queues WDK printer , Point and Print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Downloading Queue-Specific Files

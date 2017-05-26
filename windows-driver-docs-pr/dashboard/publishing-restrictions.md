@@ -1,10 +1,12 @@
 ---
 title: Publishing restrictions
 description: The following items are restricted during publication. You can still create a shipping label for them, but the request will require additional Microsoft review.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 30D23457-6BE1-4A4C-B69A-3C8C0A8E093A
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Publishing restrictions

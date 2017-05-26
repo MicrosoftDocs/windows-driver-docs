@@ -1,10 +1,12 @@
 ---
 title: Get started with a hotspot authentication app
 description: Get started with a hotspot authentication app
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c4d83e2f-5cc4-4bdf-bdb5-c468c9fb49c9
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Get started with a hotspot authentication app

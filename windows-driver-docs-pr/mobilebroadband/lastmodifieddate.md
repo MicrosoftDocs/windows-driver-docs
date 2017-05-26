@@ -1,10 +1,12 @@
 ---
 title: LastModifiedDate
 description: LastModifiedDate
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e0ef7ca0-0c3d-4e71-af2e-ead90013e561
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # LastModifiedDate

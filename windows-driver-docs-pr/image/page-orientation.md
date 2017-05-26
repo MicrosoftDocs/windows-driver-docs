@@ -2,13 +2,12 @@
 title: Page Orientation
 author: windows-driver-content
 description: Page Orientation
-MS-HAID:
-- 'WIA\_drv\_scan\_d770df42-8aa4-4c40-9cf9-99d9c2f0a2cb.xml'
-- 'image.page\_orientation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fb28863a-920a-4b26-a652-fb255622824f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Page Orientation

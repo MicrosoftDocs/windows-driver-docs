@@ -2,14 +2,18 @@
 title: Providing DEVMODE Structure Additions
 author: windows-driver-content
 description: Providing DEVMODE Structure Additions
-MS-HAID:
-- 'custdrvr\_e4f470d5-853a-4f48-8b25-d12e235e7172.xml'
-- 'print.providing\_devmode\_structure\_additions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7ce698f5-14c7-484d-be3d-b41c690b9576
-keywords: ["user interface plug-ins WDK print , DEVMODEW structure additions", "UI plug-ins WDK print , DEVMODEW structure additions", "DEVMODEW", "private DEVMODE WDK print", "public DEVMODE WDK print"]
+keywords:
+- user interface plug-ins WDK print , DEVMODEW structure additions
+- UI plug-ins WDK print , DEVMODEW structure additions
+- DEVMODEW
+- private DEVMODE WDK print
+- public DEVMODE WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Providing DEVMODE Structure Additions

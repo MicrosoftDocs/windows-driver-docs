@@ -2,14 +2,24 @@
 title: Encoder Code Examples
 author: windows-driver-content
 description: Encoder Code Examples
-MS-HAID:
-- 'encodeds\_75b74f82-f7a7-4ea3-9e6a-989affddc628.xml'
-- 'stream.encoder\_code\_examples'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cbe773ad-2222-4d62-8e1e-6d47418a3e7c
-keywords: ["variable bit rates WDK encoder", "encoder devices WDK AVStream", "AVStream WDK , encoder devices", "uncompressed data streams WDK AVStream", "encoded streams WDK AVStream", "audio encoder devices WDK AVStream", "video encoder devices WDK AVStream", "ENCAPIPARAM_BITRATE_MODE", "ENCAPIPARAM_BITRATE", "bit rates WDK encoder", "registry WDK encoder"]
+keywords:
+- variable bit rates WDK encoder
+- encoder devices WDK AVStream
+- AVStream WDK , encoder devices
+- uncompressed data streams WDK AVStream
+- encoded streams WDK AVStream
+- audio encoder devices WDK AVStream
+- video encoder devices WDK AVStream
+- ENCAPIPARAM_BITRATE_MODE
+- ENCAPIPARAM_BITRATE
+- bit rates WDK encoder
+- registry WDK encoder
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Encoder Code Examples

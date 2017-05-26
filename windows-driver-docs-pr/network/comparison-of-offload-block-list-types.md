@@ -2,7 +2,17 @@
 title: Comparison of Offload Block List Types
 description: Comparison of Offload Block List Types
 ms.assetid: f3611f54-e664-4fb1-a7d8-12cccb462330
-keywords: ["propagating TCP chimney state-manipulation operations, block list types", "state-manipulation operations WDK TCP chimney offload , block list types", "block list types WDK TCP chimney offload", "NDIS_MINIPORT_OFFLOAD_BLOCK_LIST", "NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST"]
+keywords:
+- propagating TCP chimney state-manipulation operations, block list types
+- state-manipulation operations WDK TCP chimney offload , block list types
+- block list types WDK TCP chimney offload
+- NDIS_MINIPORT_OFFLOAD_BLOCK_LIST
+- NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Comparison of Offload Block List Types

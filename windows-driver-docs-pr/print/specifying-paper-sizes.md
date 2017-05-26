@@ -2,14 +2,17 @@
 title: Specifying Paper Sizes
 author: windows-driver-content
 description: Specifying Paper Sizes
-MS-HAID:
-- 'nt5gpd\_3c3f3006-031b-4c5d-96b3-cb27e3ef62be.xml'
-- 'print.specifying\_paper\_sizes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 81352d15-c446-4d61-91ad-0c22d69da8ed
-keywords: ["Unidrv, paper sizes", "paper sizes WDK Unidrv", "size WDK paper", "Unidrv WDK print"]
+keywords:
+- Unidrv, paper sizes
+- paper sizes WDK Unidrv
+- size WDK paper
+- Unidrv WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying Paper Sizes

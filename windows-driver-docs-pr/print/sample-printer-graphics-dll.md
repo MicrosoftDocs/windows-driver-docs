@@ -2,14 +2,15 @@
 title: Sample Printer Graphics DLL
 author: windows-driver-content
 description: Sample Printer Graphics DLL
-MS-HAID:
-- 'drvarch\_ba61d707-640d-450e-8d1c-15a1699e66a0.xml'
-- 'print.sample\_printer\_graphics\_dll'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d113159a-766e-44c3-a1b1-2975e803d7e2
-keywords: ["printer graphics DLL WDK , samples", "graphics DLL WDK printer , samples"]
+keywords:
+- printer graphics DLL WDK , samples
+- graphics DLL WDK printer , samples
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Printer Graphics DLL

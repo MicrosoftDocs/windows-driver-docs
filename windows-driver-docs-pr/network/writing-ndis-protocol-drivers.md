@@ -2,7 +2,17 @@
 title: Writing NDIS Protocol Drivers
 description: Writing NDIS Protocol Drivers
 ms.assetid: 30d27b9b-e6b9-4548-ab83-f240e60d5393
-keywords: ["protocol drivers WDK networking , about protocol drivers", "NDIS protocol drivers WDK , about NDIS protocol drivers", "NDIS protocol drivers WDK , writing", "protocol drivers WDK networking , writing", "writing NDIS protocol drivers WDK networking"]
+keywords:
+- protocol drivers WDK networking , about protocol drivers
+- NDIS protocol drivers WDK , about NDIS protocol drivers
+- NDIS protocol drivers WDK , writing
+- protocol drivers WDK networking , writing
+- writing NDIS protocol drivers WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing NDIS Protocol Drivers

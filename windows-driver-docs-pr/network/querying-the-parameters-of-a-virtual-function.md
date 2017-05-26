@@ -2,6 +2,11 @@
 title: Querying the Parameters of a Virtual Function
 description: Querying the Parameters of a Virtual Function
 ms.assetid: D834762D-9141-4F0F-B76D-5C8ABB016B64
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Querying the Parameters of a Virtual Function

@@ -2,14 +2,18 @@
 title: Common Property Sheet User Interface
 author: windows-driver-content
 description: Common Property Sheet User Interface
-MS-HAID:
-- 'cpsui\_2b90f806-c3fd-453c-8f80-ba17cb26d2b4.xml'
-- 'print.common\_property\_sheet\_user\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7af3435a-19e0-40a1-9f94-319d9d323856
-keywords: ["printer driver customizing WDK , Common Property Sheet User Interface", "customizing printer drivers WDK , Common Property Sheet User Interface", "Common Property Sheet User Interface WDK print", "CPSUI WDK print", "property sheet pages WDK print"]
+keywords:
+- printer driver customizing WDK , Common Property Sheet User Interface
+- customizing printer drivers WDK , Common Property Sheet User Interface
+- Common Property Sheet User Interface WDK print
+- CPSUI WDK print
+- property sheet pages WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Common Property Sheet User Interface

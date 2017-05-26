@@ -2,14 +2,16 @@
 title: GPD File Entries
 author: windows-driver-content
 description: GPD File Entries
-MS-HAID:
-- 'nt5gpd\_1327a925-de47-470c-b85d-8c4849f69006.xml'
-- 'print.gpd\_file\_entries'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b563e7b5-8b04-4757-877e-c2b856817d39
-keywords: ["GPD files WDK Unidrv , entries", "entries WDK GPD files", "GPD file entries WDK Unidrv"]
+keywords:
+- GPD files WDK Unidrv , entries
+- entries WDK GPD files
+- GPD file entries WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GPD File Entries

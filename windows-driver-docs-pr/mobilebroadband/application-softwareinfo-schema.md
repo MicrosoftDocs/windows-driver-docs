@@ -1,13 +1,15 @@
 ---
-title: Application
-description: Application
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+title: Application (SoftwareInfo)
+description: Application (SoftwareInfo)
 ms.assetid: 1f16a690-4453-4563-a4b1-44bbd5d02f47
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Application
+# Application (SoftwareInfo)
 
 
 The Application element specifies the associated device notification handler.

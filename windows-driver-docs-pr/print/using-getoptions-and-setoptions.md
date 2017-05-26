@@ -2,14 +2,15 @@
 title: Using GetOptions and SetOptions
 author: windows-driver-content
 description: Using GetOptions and SetOptions
-MS-HAID:
-- 'pscript\_9c9f919f-341e-45bb-ab32-a8e215cecb41.xml'
-- 'print.using\_getoptions\_and\_setoptions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c8b5c235-0b74-47c8-b6ba-eba810a8467b
-keywords: ["GetOptions", "SetOptions"]
+keywords:
+- GetOptions
+- SetOptions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using GetOptions and SetOptions

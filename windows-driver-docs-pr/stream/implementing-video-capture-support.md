@@ -2,14 +2,16 @@
 title: Implementing Video Capture Support
 author: windows-driver-content
 description: Implementing Video Capture Support
-MS-HAID:
-- 'vidcapds\_b4bfc0b1-f2b0-4200-866a-a28a7d80b23e.xml'
-- 'stream.implementing\_video\_capture\_support'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 798629ae-ab98-477f-beba-cc67bc7cb024
-keywords: ["video capture WDK AVStream , implementing", "capturing video WDK AVStream , implementing", "Stream class interface WDK video capture"]
+keywords:
+- video capture WDK AVStream , implementing
+- capturing video WDK AVStream , implementing
+- Stream class interface WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing Video Capture Support

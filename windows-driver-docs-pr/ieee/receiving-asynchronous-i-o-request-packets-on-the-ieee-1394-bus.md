@@ -2,14 +2,17 @@
 title: Receiving Asynchronous I/O Request Packets on the IEEE 1394 Bus
 author: windows-driver-content
 description: The computer itself is a node on the IEEE 1394 bus, and therefore can receive asynchronous I/O requests.
-MS-HAID:
-- '1394-async\_b14ca735-5a08-4e52-9e51-783dde848f69.xml'
-- 'IEEE.receiving\_asynchronous\_i\_o\_request\_packets\_on\_the\_ieee\_1394\_bus'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7b8eaf40-7fdc-4c25-86a7-8377d2d51877
-keywords: ["receiving asynchronous I/O requests", "allocating address ranges", "addresses WDK IEEE 1394 bus", "backing store WDK IEEE 1394 bus"]
+keywords:
+- receiving asynchronous I/O requests
+- allocating address ranges
+- addresses WDK IEEE 1394 bus
+- backing store WDK IEEE 1394 bus
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Receiving Asynchronous I/O Request Packets on the IEEE 1394 Bus
@@ -23,7 +26,7 @@ Two different drivers may allocate the same address range. By default, the bus d
 
 -   [Which addresses are allocated?](#ddk-receiving-asynchronous-i-o-request-packets-on-the-ieee-1394-bus-kg)
 -   [Allocation and backing store](#allocation-and-backing-store)
--   [Client driver's notification routine for receive asynchronous I/O requests](#client-driver-s-notification-routine-for-receive-asynchronous-i-o-requests)
+-   [Client driver's notification routine for receive asynchronous I/O requests](#client-drivers-notification-routine-for-receive-asynchronous-io-requests)
 -   [Asynchronous receive in the pre-notification case](#asynchronous-receive-in-the-pre-notification-case)
 
 ## <a href="" id="ddk-receiving-asynchronous-i-o-request-packets-on-the-ieee-1394-bus-kg"></a>Which addresses are allocated?

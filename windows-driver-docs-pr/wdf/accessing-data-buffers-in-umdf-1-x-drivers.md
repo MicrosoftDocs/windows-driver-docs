@@ -3,13 +3,21 @@ title: Accessing Data Buffers in UMDF 1.x Drivers
 author: windows-driver-content
 description: Accessing Data Buffers in UMDF 1.x Drivers
 ms.assetid: cbd67ada-696e-403e-9b35-d8ed06a844d5
-keywords: ["data buffers WDK UMDF", "buffers WDK UMDF", "request processing WDK UMDF , data buffers"]
+keywords:
+- data buffers WDK UMDF
+- buffers WDK UMDF
+- request processing WDK UMDF , data buffers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing Data Buffers in UMDF 1.x Drivers
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 When a driver receives a read, write, or device I/O control request, the request object contains either an input buffer or an output buffer, or both. (A few device I/O control requests provide two input, two output, or two input/output buffers.)
 

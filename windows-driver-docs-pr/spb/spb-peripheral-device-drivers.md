@@ -2,10 +2,12 @@
 title: SPB peripheral device drivers
 author: windows-driver-content
 description: An SPB peripheral device driver controls a peripheral device that is connected to a simple peripheral bus (SPB).
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8352EBD9-D94C-4EC6-A17E-3A72DDE4C16C
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SPB peripheral device drivers

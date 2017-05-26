@@ -1,13 +1,12 @@
 ---
 title: Manage App Certifications
 description: Manage App Certifications
-MS-HAID:
-- 'p\_dashboard.manage\_app\_certifications'
-- 'hw\_dashboard.manage\_app\_certifications'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 87d63f77-f145-4a38-a16d-ed0e9281ab30
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Manage App Certifications

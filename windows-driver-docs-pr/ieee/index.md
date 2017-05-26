@@ -2,14 +2,16 @@
 title: IEEE 1394 bus driver design guide
 author: windows-driver-content
 description: IEEE 1394 bus driver design guide
-MS-HAID:
-- '1394dg\_bcf91831-5433-4ad8-a54e-ffcd23250b6a.xml'
-- 'IEEE.ieee\_1394\_bus\_design\_guide'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 815d6295-a64d-4c9b-94f5-bced729acb54
-keywords: ["IEEE 1394 WDK buses", "buses WDK , IEEE 1394", "1394 WDK buses"]
+keywords:
+- IEEE 1394 WDK buses
+- buses WDK , IEEE 1394
+- 1394 WDK buses
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IEEE 1394 bus driver design guide

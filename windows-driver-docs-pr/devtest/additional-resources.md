@@ -2,7 +2,15 @@
 title: Additional resources
 description: Additional resources
 ms.assetid: 3C4D4D58-7B81-4791-A040-903BED94B46E
-keywords: ["device metadata resources", "device experience resources", "Windows Store device app resources"]
+keywords:
+- device metadata resources
+- device experience resources
+- Windows Store device app resources
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Additional resources

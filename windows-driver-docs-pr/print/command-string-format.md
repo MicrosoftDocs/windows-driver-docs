@@ -2,14 +2,16 @@
 title: Command String Format
 author: windows-driver-content
 description: Command String Format
-MS-HAID:
-- 'nt5gpd\_3e75feec-3134-4f59-b814-17d42e347ec1.xml'
-- 'print.command\_string\_format'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3b33b261-08c7-4441-94f5-6c9de53ae349
-keywords: ["printer commands WDK Unidrv , strings", "command strings WDK Unidrv", "strings WDK Unidrv"]
+keywords:
+- printer commands WDK Unidrv , strings
+- command strings WDK Unidrv
+- strings WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Command String Format

@@ -2,14 +2,26 @@
 title: HIDClass Hardware IDs for Top-Level Collections
 author: windows-driver-content
 description: This section specifies the hardware IDs that the HID class driver generates for top-level collections.
-MS-HAID:
-- 'hidclass\_da24ea11-748c-4fd3-930c-3db3e6db333a.xml'
-- 'hid.hidclass\_hardware\_ids\_for\_top\_level\_collections'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a90eea17-0a63-4786-a31f-740bcc670c2a
-keywords: ["Human Interface Devices WDK , hardware IDs", "HID WDK , hardware IDs", "interactive input devices WDK , hardware IDs", "input devices WDK , hardware IDs", "vendor hardware IDs WDK HID", "hardware IDs WDK HID", "ID formats WDK HID", "Human Interface Devices WDK , collections", "HID WDK , collections", "interactive input devices WDK , collections", "input devices WDK , collections", "collections WDK HID , hardware IDs", "top-level collections WDK HID"]
+keywords:
+- Human Interface Devices WDK , hardware IDs
+- HID WDK , hardware IDs
+- interactive input devices WDK , hardware IDs
+- input devices WDK , hardware IDs
+- vendor hardware IDs WDK HID
+- hardware IDs WDK HID
+- ID formats WDK HID
+- Human Interface Devices WDK , collections
+- HID WDK , collections
+- interactive input devices WDK , collections
+- input devices WDK , collections
+- collections WDK HID , hardware IDs
+- top-level collections WDK HID
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # HIDClass Hardware IDs for Top-Level Collections

@@ -2,6 +2,11 @@
 title: Device Metadata Package Structure
 description: Device Metadata Package Structure
 ms.assetid: 37614100-0a56-4a32-8e45-3161994e503a
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Metadata Package Structure

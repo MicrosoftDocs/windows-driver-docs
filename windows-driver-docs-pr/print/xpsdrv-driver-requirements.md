@@ -2,14 +2,14 @@
 title: XPSDrv Driver Requirements
 author: windows-driver-content
 description: XPSDrv Driver Requirements
-MS-HAID:
-- 'xpsconfig\_c7e22628-e6ea-416f-8e20-f4cf5df6eef1.xml'
-- 'print.xpsdrv\_driver\_requirements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 382b53eb-a69a-452a-8403-876640a9129e
-keywords: ["Version 3 XPS drivers WDK XPSDrv , requirements"]
+keywords:
+- Version 3 XPS drivers WDK XPSDrv , requirements
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XPSDrv Driver Requirements

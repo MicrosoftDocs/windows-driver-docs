@@ -2,7 +2,17 @@
 title: Porting Address Family Close Operations to CoNDIS 6.0
 description: Porting Address Family Close Operations to CoNDIS 6.0
 ms.assetid: bafba536-2da0-45b0-ad5c-737635fabe3a
-keywords: ["address families WDK networking", "call managers WDK networking , address families", "CoNDIS call managers WDK networking", "porting CoNDIS drivers WDK networking , address families", "closing address families"]
+keywords:
+- address families WDK networking
+- call managers WDK networking , address families
+- CoNDIS call managers WDK networking
+- porting CoNDIS drivers WDK networking , address families
+- closing address families
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Address Family Close Operations to CoNDIS 6.0

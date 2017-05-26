@@ -2,14 +2,14 @@
 title: Using GetOptionAttribute
 author: windows-driver-content
 description: Using GetOptionAttribute
-MS-HAID:
-- 'pscript\_5d1c95f2-0903-43c2-8822-52396dc48969.xml'
-- 'print.using\_getoptionattribute'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d35f0811-d572-422c-8672-ffd29bf69efa
-keywords: ["GetOptionAttribute"]
+keywords:
+- GetOptionAttribute
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using GetOptionAttribute

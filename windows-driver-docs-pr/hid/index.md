@@ -2,14 +2,17 @@
 title: HID drivers
 author: windows-driver-content
 description: This section introduces Human Interface Devices (or HID). Typically, these are devices that humans use to directly control the operation of computer systems.
-MS-HAID:
-- 'iidguide\_ce3797c6-83fd-4f05-8841-0457eb77b811.xml'
-- 'hid.human\_input\_devices\_design\_guide'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 19aefe5f-d82a-411f-86ab-5d1d53191524
-keywords: ["pointing devices WDK", "input devices WDK", "Human Interface Devices WDK", "HID WDK"]
+keywords:
+- pointing devices WDK
+- input devices WDK
+- Human Interface Devices WDK
+- HID WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # HID drivers

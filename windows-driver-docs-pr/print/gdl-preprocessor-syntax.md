@@ -2,14 +2,17 @@
 title: GDL Preprocessor Syntax
 author: windows-driver-content
 description: GDL Preprocessor Syntax
-MS-HAID:
-- 'gplfiles\_a30c3136-f95b-4cb8-ab3f-8d3313806d5a.xml'
-- 'print.gdl\_preprocessor\_syntax'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 14e9a595-3b6f-43b9-b670-7c9324619974
-keywords: ["directives WDK GDL , source file preprocessor directives", "source files WDK GDL , preprocessor directives", "preprocessor directives WDK GDL , syntax", "syntax WDK GDL"]
+keywords:
+- directives WDK GDL , source file preprocessor directives
+- source files WDK GDL , preprocessor directives
+- preprocessor directives WDK GDL , syntax
+- syntax WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Preprocessor Syntax

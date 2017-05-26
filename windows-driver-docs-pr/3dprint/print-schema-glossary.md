@@ -2,11 +2,13 @@
 title: Print schema glossary
 author: windows-driver-content
 description: Glossary page
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 Robots: noindex, nofollow
 ms.assetid: 70B4C1B6-F076-4D58-A9A6-46DA9CBF5151
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print schema glossary

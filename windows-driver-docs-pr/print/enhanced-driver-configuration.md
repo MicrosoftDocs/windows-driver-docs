@@ -2,10 +2,12 @@
 title: Enhanced Driver Configuration
 author: windows-driver-content
 description: GPD and PPD files can be used to provide enhanced driver configuration information for a v4 print driver.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B208C661-4D5B-467A-8451-4382453EC09A
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enhanced Driver Configuration

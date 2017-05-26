@@ -3,7 +3,17 @@ title: Framework Object Life Cycle
 author: windows-driver-content
 description: Framework Object Life Cycle
 ms.assetid: 33efc3a8-ac46-4626-ba0f-beb1eaa9ee47
-keywords: ["framework objects WDK KMDF , life cycle", "life cycles WDK KMDF", "framework objects WDK KMDF , creating", "reference counts WDK KMDF", "framework objects WDK KMDF , deleting"]
+keywords:
+- framework objects WDK KMDF , life cycle
+- life cycles WDK KMDF
+- framework objects WDK KMDF , creating
+- reference counts WDK KMDF
+- framework objects WDK KMDF , deleting
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Framework Object Life Cycle

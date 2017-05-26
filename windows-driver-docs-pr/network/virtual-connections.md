@@ -2,7 +2,16 @@
 title: Virtual Connections
 description: Virtual Connections
 ms.assetid: becb3acf-2a23-408a-8d1f-ff8a1e7ffe61
-keywords: ["connection-oriented NDIS WDK , virtual connections", "CoNDIS WDK networking , virtual connections", "virtual connections WDK CoNDIS", "virtual connections WDK CoNDIS , about virtual connections"]
+keywords:
+- connection-oriented NDIS WDK , virtual connections
+- CoNDIS WDK networking , virtual connections
+- virtual connections WDK CoNDIS
+- virtual connections WDK CoNDIS , about virtual connections
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Virtual Connections

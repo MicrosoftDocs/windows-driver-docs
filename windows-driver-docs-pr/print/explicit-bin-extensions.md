@@ -2,14 +2,14 @@
 title: Explicit Bin Extensions
 author: windows-driver-content
 description: Explicit Bin Extensions
-MS-HAID:
-- 'autocfg\_2fb246f9-6aa0-464c-b034-78b1ffbdcb85.xml'
-- 'print.explicit\_bin\_extensions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a9f7f290-1af8-4312-b348-c1c98a3fc4a6
-keywords: ["explicit bin extensions WDK printer"]
+keywords:
+- explicit bin extensions WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Explicit Bin Extensions

@@ -2,14 +2,15 @@
 title: Autoconfiguration During Device Installation
 author: windows-driver-content
 description: Autoconfiguration During Device Installation
-MS-HAID:
-- 'autocfg\_b4510615-f172-4730-aec8-15a752a86187.xml'
-- 'print.autoconfiguration\_during\_device\_installation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 04b53767-4b5e-450d-96ab-b029cdf62b36
-keywords: ["autoconfiguration WDK printer , during device installations", "printer autoconfiguration WDK printer , during device installations"]
+keywords:
+- autoconfiguration WDK printer , during device installations
+- printer autoconfiguration WDK printer , during device installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Autoconfiguration During Device Installation

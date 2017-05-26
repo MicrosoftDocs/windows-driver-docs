@@ -2,7 +2,16 @@
 title: NDIS Miniport Drivers with a WDM Lower Edge
 description: NDIS Miniport Drivers with a WDM Lower Edge
 ms.assetid: b371a267-c57d-4d6d-81a1-53f4b51cacea
-keywords: ["miniport drivers WDK networking , types", "NDIS miniport drivers WDK , types", "WDM lower edge WDK networking", "lower edge of NDIS miniport drivers WDK networking"]
+keywords:
+- miniport drivers WDK networking , types
+- NDIS miniport drivers WDK , types
+- WDM lower edge WDK networking
+- lower edge of NDIS miniport drivers WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS Miniport Drivers with a WDM Lower Edge

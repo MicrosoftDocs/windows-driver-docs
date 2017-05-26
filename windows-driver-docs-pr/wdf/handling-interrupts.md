@@ -1,14 +1,19 @@
 ---
-title: Handling Interrupts
+title: Handling interrupts in UMDF drivers
 author: windows-driver-content
 description: Handling Interrupts
 ms.assetid: 5C8CB68A-EAE6-4AF9-8B10-F8B73B50DEB2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Handling Interrupts
+# Handling interrupts in UMDF drivers
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 Starting in UMDF version 1.11, UMDF drivers can handle hardware interrupts. UMDF supports both line-based (both level-triggered and edge-triggered) and message-signaled (MSI) interrupts.
 

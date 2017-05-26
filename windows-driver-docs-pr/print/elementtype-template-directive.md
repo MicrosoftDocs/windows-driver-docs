@@ -2,14 +2,14 @@
 title: ElementType Template Directive
 author: windows-driver-content
 description: ElementType Template Directive
-MS-HAID:
-- 'gplfiles\_8addc338-a144-45dd-a04f-85ed5536649b.xml'
-- 'print.elementtype\_template\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fadb6953-543c-4433-a898-6794d345bb91
-keywords: ["ElementType directive WDK GDL"]
+keywords:
+- ElementType directive WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ElementType Template Directive

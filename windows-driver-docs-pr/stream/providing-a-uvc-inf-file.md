@@ -2,14 +2,17 @@
 title: Providing a UVC INF File
 author: windows-driver-content
 description: Providing a UVC INF File
-MS-HAID:
-- 'uvcds\_2d986a38-5165-4c35-a8ff-5d1fe152c8e3.xml'
-- 'stream.providing\_a\_uvc\_inf\_file'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 44311eb8-1035-466c-878b-a5d964b34490
-keywords: ["INF files WDK USB Video Class", "UVC INF files WDK USB Video Class", "UVC INF files WDK USB Video Class , sample code", "sample code WDK USB Video Class , UVC INF files"]
+keywords:
+- INF files WDK USB Video Class
+- UVC INF files WDK USB Video Class
+- UVC INF files WDK USB Video Class , sample code
+- sample code WDK USB Video Class , UVC INF files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Providing a UVC INF File

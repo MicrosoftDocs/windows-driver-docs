@@ -2,14 +2,14 @@
 title: Creating Standard Resource Maps
 author: windows-driver-content
 description: Creating Standard Resource Maps
-MS-HAID:
-- 'mf-supp\_d7f4fd76-d3dc-41c5-af8f-b190d7c2782e.xml'
-- 'multifunc.creating\_standard\_resource\_maps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 97d95481-5290-41d3-a6e6-7cc142d4c2e8
-keywords: ["standard resource maps WDK multifunction devices"]
+keywords:
+- standard resource maps WDK multifunction devices
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Standard Resource Maps

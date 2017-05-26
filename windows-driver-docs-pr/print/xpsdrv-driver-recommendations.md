@@ -2,14 +2,14 @@
 title: XPSDrv Driver Recommendations
 author: windows-driver-content
 description: XPSDrv Driver Recommendations
-MS-HAID:
-- 'xpsconfig\_27d5ed73-1eec-44a8-aba5-2a9acbb2366a.xml'
-- 'print.xpsdrv\_driver\_recommendations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6700afd2-8526-4464-92b8-a9c1a37f8402
-keywords: ["Version 3 XPS drivers WDK XPSDrv , recommendations"]
+keywords:
+- Version 3 XPS drivers WDK XPSDrv , recommendations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XPSDrv Driver Recommendations

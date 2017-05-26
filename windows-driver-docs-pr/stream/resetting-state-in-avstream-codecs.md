@@ -2,14 +2,14 @@
 title: Resetting State in AVStream Codecs
 author: windows-driver-content
 description: Resetting State in AVStream Codecs
-MS-HAID:
-- 'shed\_dg\_32f7ddc6-784a-4671-9a7a-72bbf685ab62.xml'
-- 'stream.resetting\_state\_in\_avstream\_codecs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c50014fe-bff0-43f4-8552-24e8e97f636b
-keywords: ["AVStream hardware codec support WDK , resetting state"]
+keywords:
+- AVStream hardware codec support WDK , resetting state
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Resetting State in AVStream Codecs

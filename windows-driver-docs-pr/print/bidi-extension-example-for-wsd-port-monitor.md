@@ -2,14 +2,17 @@
 title: Bidi Extension Example for WSD Port Monitor
 author: windows-driver-content
 description: Bidi Extension Example for WSD Port Monitor
-MS-HAID:
-- 'autocfg\_0486add6-5815-4284-aba8-6b2dd5f71ae1.xml'
-- 'print.bidi\_extension\_example\_for\_wsd\_port\_monitor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a04f16d5-ae99-4df5-bb55-aef95bd03588
-keywords: ["bidi extension files WDK printer autoconfig", "in-box autoconfiguration support WDK printer , bidi extension files", "WSD schema extensions WDK printer", "schema extensions WDK WSD"]
+keywords:
+- bidi extension files WDK printer autoconfig
+- in-box autoconfiguration support WDK printer , bidi extension files
+- WSD schema extensions WDK printer
+- schema extensions WDK WSD
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bidi Extension Example for WSD Port Monitor

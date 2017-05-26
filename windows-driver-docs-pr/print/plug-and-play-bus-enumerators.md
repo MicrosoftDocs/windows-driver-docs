@@ -2,14 +2,17 @@
 title: Plug and Play Bus Enumerators
 author: windows-driver-content
 description: Plug and Play Bus Enumerators
-MS-HAID:
-- 'prtinst\_49f1b983-891a-48f9-8d06-f35e97404890.xml'
-- 'print.plug\_and\_play\_bus\_enumerators'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6cfab5a2-7d5c-42c2-86d7-5585e5853a1f
-keywords: ["Plug and Play bus enumeration WDK print", "bus enumeration WDK print", "enumeration WDK print", "ports WDK , Plug and Play for printers"]
+keywords:
+- Plug and Play bus enumeration WDK print
+- bus enumeration WDK print
+- enumeration WDK print
+- ports WDK , Plug and Play for printers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Plug and Play Bus Enumerators

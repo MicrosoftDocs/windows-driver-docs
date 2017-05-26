@@ -2,7 +2,13 @@
 title: Proprietary Speaker-Configuration Utilities
 description: Proprietary Speaker-Configuration Utilities
 ms.assetid: d04b8c1b-13c6-422f-b13a-909f7074ac75
-keywords: ["proprietary speaker-configuration utilities WDK audio"]
+keywords:
+- proprietary speaker-configuration utilities WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Proprietary Speaker-Configuration Utilities

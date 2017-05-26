@@ -2,14 +2,25 @@
 title: Parallel Device Interfaces, Internal Names, and Symbolic Links
 author: windows-driver-content
 description: Parallel Device Interfaces, Internal Names, and Symbolic Links
-MS-HAID:
-- 'sspd\_a84208f6-d301-4715-8c80-f39842db46cd.xml'
-- 'parports.parallel\_device\_interfaces\_\_internal\_names\_\_and\_symbolic\_links'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 859e20bb-e411-4572-a393-a6faf534cf15
-keywords: ["system-supplied parallel drivers WDK , device interfaces", "system-supplied parallel drivers WDK , internal names", "system-supplied parallel drivers WDK , symbolic links", "device interfaces WDK parallel drivers", "symbolic links WDK parallel drivers", "internal names WDK parallel drivers", "names WDK parallel drivers", "unprotected symbolic links WDK", "parallel devices WDK , device interfaces", "device objects WDK parallel drivers", "parallel devices WDK , internal names", "parallel devices WDK , symbolic links"]
+keywords:
+- system-supplied parallel drivers WDK , device interfaces
+- system-supplied parallel drivers WDK , internal names
+- system-supplied parallel drivers WDK , symbolic links
+- device interfaces WDK parallel drivers
+- symbolic links WDK parallel drivers
+- internal names WDK parallel drivers
+- names WDK parallel drivers
+- unprotected symbolic links WDK
+- parallel devices WDK , device interfaces
+- device objects WDK parallel drivers
+- parallel devices WDK , internal names
+- parallel devices WDK , symbolic links
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Parallel Device Interfaces, Internal Names, and Symbolic Links

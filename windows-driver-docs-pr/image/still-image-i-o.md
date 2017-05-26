@@ -2,13 +2,12 @@
 title: Still Image I/O
 author: windows-driver-content
 description: Still Image I/O
-MS-HAID:
-- 'stillimg\_79fb7804-3b1b-4b8f-896a-2df4b40730fd.xml'
-- 'image.still\_image\_i\_o'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1dd23545-e13a-4a69-b9bc-e2305e4c2163
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Still Image I/O

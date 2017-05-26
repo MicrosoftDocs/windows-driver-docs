@@ -2,7 +2,17 @@
 title: Native 802.11 Power Management
 description: Native 802.11 Power Management
 ms.assetid: b6506655-9d87-4ba7-ba95-4e01a8b5305c
-keywords: ["Native 802.11 miniport drivers WDK networking , power management", "miniport drivers WDK Native 802.11 , power management", "power management WDK Native 802.11 miniport", "power states WDK Native 802.11 miniport", "transitioning power states WDK networking"]
+keywords:
+- Native 802.11 miniport drivers WDK networking , power management
+- miniport drivers WDK Native 802.11 , power management
+- power management WDK Native 802.11 miniport
+- power states WDK Native 802.11 miniport
+- transitioning power states WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 Power Management

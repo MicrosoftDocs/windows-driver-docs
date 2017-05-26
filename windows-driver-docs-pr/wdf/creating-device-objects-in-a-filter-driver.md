@@ -3,7 +3,17 @@ title: Creating Device Objects in a Filter Driver
 author: windows-driver-content
 description: Creating Device Objects in a Filter Driver
 ms.assetid: f5a4851d-7caf-467d-9500-11f341fdf680
-keywords: ["PnP WDK KMDF , filter drivers", "Plug and Play WDK KMDF , filter drivers", "power management WDK KMDF , filter drivers", "filter drivers WDK KMDF", "filter DOs WDK KMDF"]
+keywords:
+- PnP WDK KMDF , filter drivers
+- Plug and Play WDK KMDF , filter drivers
+- power management WDK KMDF , filter drivers
+- filter drivers WDK KMDF
+- filter DOs WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Device Objects in a Filter Driver

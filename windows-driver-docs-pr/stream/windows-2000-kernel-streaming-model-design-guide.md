@@ -2,14 +2,18 @@
 title: Windows 2000 Kernel Streaming Model Design Guide
 author: windows-driver-content
 description: Windows 2000 Kernel Streaming Model Design Guide
-MS-HAID:
-- 'w2kks\_f09143eb-4c59-49e7-ad9f-075d55374739.xml'
-- 'stream.windows\_2000\_kernel\_streaming\_model\_design\_guide'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7cc080ad-ce4a-4a08-917a-d9e4a002f4fa
-keywords: ["streaming media WDK , Windows 2000 Kernel Streaming Model", "media streaming WDK , Windows 2000 Kernel Streaming Model", "Windows 2000 Kernel Streaming Model WDK", "Streaming Model WDK Windows 2000 Kernel", "Kernel Streaming Model WDK"]
+keywords:
+- streaming media WDK , Windows 2000 Kernel Streaming Model
+- media streaming WDK , Windows 2000 Kernel Streaming Model
+- Windows 2000 Kernel Streaming Model WDK
+- Streaming Model WDK Windows 2000 Kernel
+- Kernel Streaming Model WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows 2000 Kernel Streaming Model Design Guide

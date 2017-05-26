@@ -2,6 +2,11 @@
 title: GpuMmu Example Scenarios
 description: This topic describes common usage scenarios and the sequence of operations necessary to implement them.
 ms.assetid: 30F7D158-3D99-40EE-8FED-48EC1615AC71
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GpuMmu Example Scenarios
@@ -17,7 +22,7 @@ These scenarios include:
 -   [Making an allocation resident in system memory](#making-an-allocation-resident-in-system-memory)
 -   [Initialization of the memory manager control structures](#initialization-of-the-memory-manager-control-structures)
 
-## <span id="Updating_page_table_entries_of_a_process"></span><span id="updating_page_table_entries_of_a_process"></span><span id="UPDATING_PAGE_TABLE_ENTRIES_OF_A_PROCESS"></span>Updating page table entries of a process
+## Updating page table entries of a process <a name="updating-page-table-entries-of-a-process"></a>
 
 
 Here is the sequence of operations to update page table entries to map an allocation that belong to a process (P) to physical memory. It is assumed that the page table allocations are already resident in a graphics processing unit (GPU) memory segment.
@@ -32,7 +37,7 @@ Here is the sequence of operations to update page table entries to map an alloca
 
 ![updating page table entries of a process](images/examples.1.png)
 
-## <span id="Transferring_allocation_content_from_one_location_to_another"></span><span id="transferring_allocation_content_from_one_location_to_another"></span><span id="TRANSFERRING_ALLOCATION_CONTENT_FROM_ONE_LOCATION_TO_ANOTHER"></span>Transferring allocation content from one location to another
+## Transferring allocation content from one location to another<a name="transferring-allocation-content-from-one-location-to-another"></a>
 
 
 Here is the sequence of operations when transferring an allocation content from one location to another (ex. from local memory to system memory).
@@ -46,7 +51,7 @@ Here is the sequence of operations when transferring an allocation content from 
 
 ![transferring allocation content from one location to another](images/examples.2.png)
 
-## <span id="Filling_an_allocation_with_a_pattern"></span><span id="filling_an_allocation_with_a_pattern"></span><span id="FILLING_AN_ALLOCATION_WITH_A_PATTERN"></span>Filling an allocation with a pattern
+## Filling an allocation with a pattern <a name="filling-an-allocation-with-a-pattern"></a>
 
 
 Here is the sequence of operations when an allocation needs to be filled with a pattern.
@@ -59,7 +64,7 @@ Here is the sequence of operations when an allocation needs to be filled with a 
 
 ![filling an allocation with a pattern](images/examples.3.png)
 
-## <span id="Making_an_allocation_resident_in_system_memory"></span><span id="making_an_allocation_resident_in_system_memory"></span><span id="MAKING_AN_ALLOCATION_RESIDENT_IN_SYSTEM_MEMORY"></span>Making an allocation resident in system memory
+## Making an allocation resident in system memory
 
 
 The following operations are performed when [**D3DKMTMakeResident**](https://msdn.microsoft.com/library/windows/hardware/dn906775) is called to make an allocation resident. It is assumed that the application process page tables are resident in memory.
@@ -77,7 +82,7 @@ In the video memory manager worker thread context:
 2.  If the allocation is resident in a local memory segment, fill the allocation with zeros (see the corresponding section above).
 3.  Submit the *SignalSynchronizationObject* command to the scheduler with the paging fence ID.
 
-## <span id="Initialization_of_the_memory_manager_control_structures"></span><span id="initialization_of_the_memory_manager_control_structures"></span><span id="INITIALIZATION_OF_THE_MEMORY_MANAGER_CONTROL_STRUCTURES"></span>Initialization of the memory manager control structures
+## Initialization of the memory manager control structures
 
 
 <span id="The_paging_process_initialization"></span><span id="the_paging_process_initialization"></span><span id="THE_PAGING_PROCESS_INITIALIZATION"></span>The paging process initialization  
@@ -102,7 +107,3 @@ When a new process is created, the DirectX graphics kernel will:
  
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20GpuMmu%20Example%20Scenarios%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-

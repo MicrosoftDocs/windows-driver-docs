@@ -3,7 +3,16 @@ title: Filter Device Object Attached to a File System
 author: windows-driver-content
 description: Filter Device Object Attached to a File System
 ms.assetid: 5fb0ec43-a639-4b2a-8057-3313e9dee457
-keywords: ["filter device objects WDK file system", "device object I/O requests WDK file system", "filter drivers WDK file system , device object I/O requests", "file system filter drivers WDK , device object I/O requests"]
+keywords:
+- filter device objects WDK file system
+- device object I/O requests WDK file system
+- filter drivers WDK file system , device object I/O requests
+- file system filter drivers WDK , device object I/O requests
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Filter Device Object Attached to a File System

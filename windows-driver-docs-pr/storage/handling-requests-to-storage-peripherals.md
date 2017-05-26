@@ -3,7 +3,18 @@ title: Handling Requests to Storage Peripherals
 author: windows-driver-content
 description: Handling Requests to Storage Peripherals
 ms.assetid: 3859588e-fc39-4323-a901-8771874e64d2
-keywords: ["storage class drivers WDK , peripherals", "class drivers WDK storage , peripherals", "peripherals WDK storage", "storage peripherals WDK", "peripherals WDK storage , about storage peripherals", "storage peripherals WDK , about storage peripherals"]
+keywords:
+- storage class drivers WDK , peripherals
+- class drivers WDK storage , peripherals
+- peripherals WDK storage
+- storage peripherals WDK
+- peripherals WDK storage , about storage peripherals
+- storage peripherals WDK , about storage peripherals
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Requests to Storage Peripherals

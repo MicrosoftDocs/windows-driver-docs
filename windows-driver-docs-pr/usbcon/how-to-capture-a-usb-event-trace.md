@@ -1,10 +1,12 @@
 ---
-Description: 'This topic provides information about using the Logman tool to capture a USB ETW event trace. Logman is a tracing tool that is built into Windows. You can use Logman to capture events into an event trace log file.'
-MS-HAID: 'buses.how\_to\_capture\_a\_usb\_event\_trace'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This topic provides information about using the Logman tool to capture a USB ETW event trace. 
 title: How to capture a USB event trace with Logman
+author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to capture a USB event trace with Logman
@@ -25,8 +27,6 @@ Event traces from the USB 3.0 driver stack are similar to the USB 2.0 driver sta
 
 Instructions
 ------------
-
-### []()
 
 **To collect USB trace events**
 
@@ -168,20 +168,11 @@ For more information on Netmon filters, see "USB Netmon Filters" in [Case Study:
 Sometimes it is helpful to have the transfer events in your trace log, such as hub requests and device requests that result in errors such as an XACT error or a stall. You might first capture a log without the transfer events and analyze that smaller log. Then run the trace again without filtering after you have a general understanding of the issues in your problem scenario.
 
 ## Related topics
+[Using USB ETW](using-usb-etw.md)  
+[USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
+[Defining Keywords Used to Classify Types of Events](https://msdn.microsoft.com/library/windows/desktop/dd996915)  
 
-
-[Using USB ETW](using-usb-etw.md)
-
-[USB Event Tracing for Windows](usb-event-tracing-for-windows.md)
-
-[Defining Keywords Used to Classify Types of Events](https://msdn.microsoft.com/library/windows/desktop/dd996915)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20capture%20a%20USB%20event%20trace%20with%20Logman%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

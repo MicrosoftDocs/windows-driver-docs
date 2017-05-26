@@ -2,14 +2,15 @@
 title: Autoconfiguration Implementation Options
 author: windows-driver-content
 description: Autoconfiguration Implementation Options
-MS-HAID:
-- 'autocfg\_b8b73984-8375-4adc-aeea-597e01a9deda.xml'
-- 'print.autoconfiguration\_implementation\_options'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 78a4e11c-ee6e-4306-b787-2ff7889ff877
-keywords: ["autoconfiguration WDK printer , implementation options", "printer autoconfiguration WDK printer , implementation options"]
+keywords:
+- autoconfiguration WDK printer , implementation options
+- printer autoconfiguration WDK printer , implementation options
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Autoconfiguration Implementation Options

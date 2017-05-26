@@ -2,7 +2,15 @@
 title: Control GUID File
 description: Control GUID File
 ms.assetid: cf5dd9bf-c9db-4324-abd3-ee0e1b15e14d
-keywords: ["control GUIDs WDK", ".ctl files", "ctl files"]
+keywords:
+- control GUIDs WDK
+- .ctl files
+- ctl files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Control GUID File

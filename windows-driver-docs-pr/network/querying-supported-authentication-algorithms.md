@@ -2,7 +2,14 @@
 title: Querying Supported Authentication Algorithms
 description: Querying Supported Authentication Algorithms
 ms.assetid: b976d53d-4ce6-4d20-a16b-575345006fd6
-keywords: ["querying authentication algorithms", "algorithms WDK Native 802.11 authentication"]
+keywords:
+- querying authentication algorithms
+- algorithms WDK Native 802.11 authentication
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Querying Supported Authentication Algorithms

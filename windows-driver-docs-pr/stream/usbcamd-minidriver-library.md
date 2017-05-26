@@ -2,14 +2,19 @@
 title: USBCAMD Minidriver Library
 author: windows-driver-content
 description: USBCAMD Minidriver Library
-MS-HAID:
-- 'usbcmdds\_631f3371-85c5-4c26-bf0b-2f4cb67c3666.xml'
-- 'stream.usbcamd\_minidriver\_library'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4447bf3d-5eaa-4de7-96bb-22dae68b44eb
-keywords: ["Windows 2000 Kernel Streaming Model WDK , USBCAMD2 minidriver library", "Streaming Model WDK Windows 2000 Kernel , USBCAMD2 minidriver library", "Kernel Streaming Model WDK , USBCAMD2 minidriver library", "USBCAMD2 minidriver library WDK Windows 2000 Kernel Streaming", "USB-based streaming cameras WDK USBCAMD2", "cameras WDK USBCAMD2"]
+keywords:
+- Windows 2000 Kernel Streaming Model WDK , USBCAMD2 minidriver library
+- Streaming Model WDK Windows 2000 Kernel , USBCAMD2 minidriver library
+- Kernel Streaming Model WDK , USBCAMD2 minidriver library
+- USBCAMD2 minidriver library WDK Windows 2000 Kernel Streaming
+- USB-based streaming cameras WDK USBCAMD2
+- cameras WDK USBCAMD2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USBCAMD Minidriver Library

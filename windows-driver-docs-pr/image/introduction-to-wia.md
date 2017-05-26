@@ -2,13 +2,12 @@
 title: Introduction to WIA
 author: windows-driver-content
 description: Introduction to WIA
-MS-HAID:
-- 'WIA\_intro\_5478aa76-1f52-423b-990f-82dcd7015ec6.xml'
-- 'image.introduction\_to\_wia'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 51674b06-f9d5-4e35-a2ec-9d6cc0a09ef3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to WIA

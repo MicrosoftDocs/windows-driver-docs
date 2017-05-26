@@ -2,7 +2,14 @@
 title: Extensible Station Requirements for Cipher Key Types
 description: Extensible Station Requirements for Cipher Key Types
 ms.assetid: 03e9f8fb-4852-4f87-85ea-32b9bb5dd0ab
-keywords: ["cipher operations WDK Native 802.11 , cipher keys", "cipher keys WDK Native 802.11"]
+keywords:
+- cipher operations WDK Native 802.11 , cipher keys
+- cipher keys WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extensible Station Requirements for Cipher Key Types

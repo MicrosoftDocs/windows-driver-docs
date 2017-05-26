@@ -2,7 +2,18 @@
 title: Network Interface Card Support
 description: Network Interface Card Support
 ms.assetid: de673a37-3870-4995-b4f1-647b502e0773
-keywords: ["miniport drivers WDK networking , NIC support", "NDIS miniport drivers WDK , NIC support", "NICs WDK networking , types", "network interface cards WDK networking , types", "bus-master DMA NICs WDK networking", "non-bus-master DMA NICs WDK networking"]
+keywords:
+- miniport drivers WDK networking , NIC support
+- NDIS miniport drivers WDK , NIC support
+- NICs WDK networking , types
+- network interface cards WDK networking , types
+- bus-master DMA NICs WDK networking
+- non-bus-master DMA NICs WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network Interface Card Support

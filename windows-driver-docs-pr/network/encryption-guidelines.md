@@ -2,7 +2,14 @@
 title: Encryption Guidelines
 description: Encryption Guidelines
 ms.assetid: 35ca791e-cbd8-4e87-a101-b091a0a3d57a
-keywords: ["cipher operations WDK Native 802.11 , encryption", "encryption WDK Native 802.11"]
+keywords:
+- cipher operations WDK Native 802.11 , encryption
+- encryption WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Encryption Guidelines

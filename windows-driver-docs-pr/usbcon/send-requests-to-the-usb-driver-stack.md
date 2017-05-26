@@ -1,10 +1,12 @@
 ---
-Description: 'This topic describes the steps that are required to submit an initialized URB to the USB driver stack to process a particular request.'
-MS-HAID: 'buses.send\_requests\_to\_the\_usb\_driver\_stack'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This topic describes the steps that are required to submit an initialized URB to the USB driver stack to process a particular request.
 title: How to Submit an URB
+author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to Submit an URB
@@ -20,8 +22,6 @@ Before sending a request to the Universal Serial Bus (USB) driver stack, the cli
 
 Instructions
 ------------
-
-### []()
 
 1.  Allocate an IRP for the URB by calling the [**IoAllocateIrp**](https://msdn.microsoft.com/library/windows/hardware/ff548257) routine. You must provide the stack size of the device object that receives the IRP. You received a pointer to that device object in a previous call to the [**IoAttachDeviceToDeviceStack**](https://msdn.microsoft.com/library/windows/hardware/ff548300) routine. The stack size is stored in the **StackSize** member of the [**DEVICE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147) structure.
 2.  Get a pointer to the IRP's first stack location ([**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659)) by calling [**IoGetNextIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff549266).
@@ -250,16 +250,9 @@ Exit:
 ```
 
 ## Related topics
+[Sending Requests to a USB Device](communicating-with-a-usb-device.md)  
 
-
-[Sending Requests to a USB Device](communicating-with-a-usb-device.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20Submit%20an%20URB%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

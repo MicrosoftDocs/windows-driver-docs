@@ -2,13 +2,19 @@
 title: INF DelReg Directive
 description: A DelReg directive references one or more INF-writer-defined sections describing keys and/or value entries to be removed from the registry.
 ms.assetid: a456327f-9b2c-42e6-a575-47ad788aa8b1
-keywords: ["INF DelReg Directive Device and Driver Installation"]
+keywords:
+- INF DelReg Directive Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF DelReg Directive
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF DelReg Directive

@@ -1,7 +1,12 @@
 ---
-title: Updating the IP Headers for Coalesced Segments
-description: When finalizing a single coalescing unit (SCU), a receive segment coalescing (RSC)-capable miniport driver updates the fields in the IP headers as described in the following tables.
+title: Updating the IP headers for coalesced segments
+description: This section describes how to update the IP headers for coalesced segments
 ms.assetid: 18F2944A-D5A7-41BB-885F-EC183A00F7CE
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Updating the IP Headers for Coalesced Segments

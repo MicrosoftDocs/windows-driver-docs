@@ -3,7 +3,19 @@ title: Initializing WMI Support in Your Driver
 author: windows-driver-content
 description: Initializing WMI Support in Your Driver
 ms.assetid: cf79176c-8e08-45f9-b2fb-a82707d8667b
-keywords: ["WMI WDK KMDF , initializing support", "provider instances WDK KMDF", "multiple provider instances WDK KMDF", "single provider instances WDK KMDF", "registering MOF resource names WDK KMDF", "MOF resource names WDK KMDF", "initializing WMI support WDK KMDF"]
+keywords:
+- WMI WDK KMDF , initializing support
+- provider instances WDK KMDF
+- multiple provider instances WDK KMDF
+- single provider instances WDK KMDF
+- registering MOF resource names WDK KMDF
+- MOF resource names WDK KMDF
+- initializing WMI support WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing WMI Support in Your Driver

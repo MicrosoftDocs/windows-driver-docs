@@ -2,7 +2,16 @@
 title: Bob Deinterlacing Mechanics
 description: Bob Deinterlacing Mechanics
 ms.assetid: 1735f9c6-ac83-4a6a-bc6f-4d4a193876dd
-keywords: ["bob deinterlacing WDK DirectX VA , mechanics", "interleaved fields WDK DirectX VA", "stride WDK DirectX VA", "deinterlacing WDK DirectX VA , bob, mechanics"]
+keywords:
+- bob deinterlacing WDK DirectX VA , mechanics
+- interleaved fields WDK DirectX VA
+- stride WDK DirectX VA
+- deinterlacing WDK DirectX VA , bob, mechanics
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bob Deinterlacing Mechanics

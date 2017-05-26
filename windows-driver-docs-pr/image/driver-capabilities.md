@@ -2,13 +2,12 @@
 title: Driver Capabilities
 author: windows-driver-content
 description: Driver Capabilities
-MS-HAID:
-- 'WIA\_arch\_6fc7181b-5344-4baf-bd5a-b99813c0ce9e.xml'
-- 'image.driver\_capabilities'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 639eff56-655d-4b6a-95f0-daa1daf62fae
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Capabilities

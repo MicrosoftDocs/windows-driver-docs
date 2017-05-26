@@ -1,15 +1,18 @@
 ---
-title: \ Define Preprocessor Directive
+title: '\ Define Preprocessor Directive'
 author: windows-driver-content
-description: \ Define Preprocessor Directive
-MS-HAID:
-- 'gplfiles\_9d35749d-5480-4ee0-a718-c790578f500f.xml'
-- 'print.\_define\_preprocessor\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+description: '\ Define Preprocessor Directive'
 ms.assetid: e2fab866-dc81-4e4a-bac7-291d0b803962
-keywords: ["preprocessor directives WDK GDL , keywords", "keywords WDK GDL", "reserved keywords WDK", "Define directive WDK GDL"]
+keywords:
+- preprocessor directives WDK GDL , keywords
+- keywords WDK GDL
+- reserved keywords WDK
+- Define directive WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # \#Define Preprocessor Directive

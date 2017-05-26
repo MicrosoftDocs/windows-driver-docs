@@ -2,7 +2,14 @@
 title: Writing INF Files
 description: Writing INF Files
 ms.assetid: 0A31484C-3A61-4a6d-B500-E5C69E2130F9
-keywords: ["INF files WDK device installations , writing", "writing INF files WDK device installations"]
+keywords:
+- INF files WDK device installations , writing
+- writing INF files WDK device installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing INF Files

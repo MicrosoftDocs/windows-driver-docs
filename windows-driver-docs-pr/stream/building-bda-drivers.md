@@ -2,14 +2,18 @@
 title: Building BDA Drivers
 author: windows-driver-content
 description: Building BDA Drivers
-MS-HAID:
-- 'bdabuild\_204783a0-9b51-4a0a-ac71-6b3e314476fb.xml'
-- 'stream.building\_bda\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2272fa18-5102-443e-8728-f256444ab044
-keywords: ["Broadcast Driver Architecture WDK AVStream , building drivers", "BDA WDK AVStream , building drivers", "building drivers WDK , BDA", "Build utility WDK , BDA", "macros WDK BDA"]
+keywords:
+- Broadcast Driver Architecture WDK AVStream , building drivers
+- BDA WDK AVStream , building drivers
+- building drivers WDK , BDA
+- Build utility WDK , BDA
+- macros WDK BDA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Building BDA Drivers

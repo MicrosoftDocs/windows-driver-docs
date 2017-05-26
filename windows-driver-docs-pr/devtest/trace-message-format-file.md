@@ -2,7 +2,16 @@
 title: Trace Message Format File
 description: Trace Message Format File
 ms.assetid: ac45475e-bf2d-4fa6-82fc-37ef8f4c0f6c
-keywords: ["trace message format files WDK", "TMF files WDK", "TMF files WDK , about TMF files", "files WDK software tracing"]
+keywords:
+- trace message format files WDK
+- TMF files WDK
+- TMF files WDK , about TMF files
+- files WDK software tracing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Trace Message Format File

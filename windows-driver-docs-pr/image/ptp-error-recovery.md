@@ -2,13 +2,12 @@
 title: PTP Error Recovery
 author: windows-driver-content
 description: PTP Error Recovery
-MS-HAID:
-- 'WIA\_drv\_cam\_2c7a4a31-3af9-4b60-b06c-ba67e0b3507a.xml'
-- 'image.ptp\_error\_recovery'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0f89d6b6-9d95-4e98-aa90-08c9508a2228
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PTP Error Recovery

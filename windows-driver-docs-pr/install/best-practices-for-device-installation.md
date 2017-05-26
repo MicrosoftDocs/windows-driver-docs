@@ -2,7 +2,14 @@
 title: Best Practices for Device and Driver Installation
 description: Best Practices for Device and Driver Installation
 ms.assetid: fca32a7f-5af1-42cf-880c-0312022a3266
-keywords: ["device installations WDK , best practices", "driver installations WDK , best practices"]
+keywords:
+- device installations WDK , best practices
+- driver installations WDK , best practices
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Best Practices for Device and Driver Installation

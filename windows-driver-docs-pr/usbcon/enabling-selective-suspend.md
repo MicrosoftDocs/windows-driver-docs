@@ -1,12 +1,7 @@
 ---
-Description: 'Selective suspend is disabled for upgrade versions of Microsoft Windows XP. It is enabled for clean installations of Windows XP, Windows Vista, and later versions of Windows.'
-MS-HAID:
-- 'usbpower\_76a46a67-e54f-42c3-afdf-8b5f9d0a0dc6.xml'
-- 'buses.enabling\_selective\_suspend'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: Selective suspend is disabled for upgrade versions of Microsoft Windows XP. It is enabled for clean installations of Windows XP, Windows Vista, and later versions of Windows.
 title: Enabling Selective Suspend
+author: windows-driver-content
 ---
 
 # Enabling Selective Suspend

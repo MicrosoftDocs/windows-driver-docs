@@ -2,14 +2,15 @@
 title: Pscript Support for Stapling
 author: windows-driver-content
 description: Pscript Support for Stapling
-MS-HAID:
-- 'pscript\_eba18c7b-f29b-4f3a-8179-67fd6c981a89.xml'
-- 'print.pscript\_support\_for\_stapling'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 75fc11e1-5cd9-4e95-b062-989fe493fdb5
-keywords: ["minidrivers WDK Pscript , stapling", "stapling WDK Pscript"]
+keywords:
+- minidrivers WDK Pscript , stapling
+- stapling WDK Pscript
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pscript Support for Stapling

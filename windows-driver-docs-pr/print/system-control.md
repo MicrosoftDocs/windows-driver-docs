@@ -2,14 +2,15 @@
 title: System Control
 author: windows-driver-content
 description: System Control
-MS-HAID:
-- 'printicm\_2edff746-dd62-422b-af97-17fa37052e4e.xml'
-- 'print.system\_control'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3ac58d53-daa7-4f50-a512-05325b95a17d
-keywords: ["system-controlled color management WDK print", "default print color management"]
+keywords:
+- system-controlled color management WDK print
+- default print color management
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # System Control

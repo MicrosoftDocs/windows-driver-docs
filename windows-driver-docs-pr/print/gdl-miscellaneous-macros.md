@@ -2,14 +2,19 @@
 title: GDL Miscellaneous Macros
 author: windows-driver-content
 description: GDL Miscellaneous Macros
-MS-HAID:
-- 'gplfiles\_1420028c-d872-4342-8fde-5324e66aedd8.xml'
-- 'print.gdl\_miscellaneous\_macros'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d3c66bc1-815d-484b-b69b-6616d2b43069
-keywords: ["GDL WDK , macros", "macros WDK GDL , miscellaneous macros", "IgnoreBlock directive WDK GDL", "macros WDK GDL , examples", "constructs WDK GDL , disabling processing of constructs", "disabling processing of GDL constructs WDK GDL"]
+keywords:
+- GDL WDK , macros
+- macros WDK GDL , miscellaneous macros
+- IgnoreBlock directive WDK GDL
+- macros WDK GDL , examples
+- constructs WDK GDL , disabling processing of constructs
+- disabling processing of GDL constructs WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Miscellaneous Macros

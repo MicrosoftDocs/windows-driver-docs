@@ -2,6 +2,11 @@
 title: Programming Considerations for RSC Drivers
 description: The following sections describe issues to consider when implementing a receive-segment coalescing (RSC)-capable miniport driver.
 ms.assetid: 03FDD557-3918-408A-BD79-64CD52BDD43A
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Programming Considerations for RSC Drivers
@@ -12,7 +17,7 @@ The following sections describe issues to consider when implementing a receive-s
 -   [Responding to Queries for RSC Statistics](#responding-to-queries-for-rsc-statistics)
 -   [Forwarded TCP Packets](#forwarded-tcp-packets)
 -   [RSC Support for Lightweight Filters and MUX Intermediate Drivers](#rsc-support-for-lightweight-filters-and-mux-intermediate-drivers)
--   [Windows Filtering Platform (WFP) Inspection and Callout Drivers](#windows-filtering-platform--wfp--inspection-and-callout-drivers)
+-   [Windows Filtering Platform (WFP) Inspection and Callout Drivers](#windows-filtering-platform-wfp-inspection-and-callout-drivers)
 
 ## Responding to Queries for RSC Statistics
 

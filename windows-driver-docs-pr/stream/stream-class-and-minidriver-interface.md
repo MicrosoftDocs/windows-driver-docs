@@ -2,14 +2,19 @@
 title: Stream Class and Minidriver Interface
 author: windows-driver-content
 description: Stream Class and Minidriver Interface
-MS-HAID:
-- 'strmini-design\_98e75677-fe1d-4c27-8142-2ed6c8fd324b.xml'
-- 'stream.stream\_class\_and\_minidriver\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d85510e6-1fd7-442a-bd88-f32b6c13ff75
-keywords: ["Stream.sys class driver WDK Windows 2000 Kernel , stream class interface", "streaming minidrivers WDK Windows 2000 Kernel , stream class interface", "minidrivers WDK Windows 2000 Kernel Streaming , stream class interface", "stream class interface WDK streaming minidriver", "SRBs WDK streaming minidriver", "ISRs WDK streaming minidriver"]
+keywords:
+- Stream.sys class driver WDK Windows 2000 Kernel , stream class interface
+- streaming minidrivers WDK Windows 2000 Kernel , stream class interface
+- minidrivers WDK Windows 2000 Kernel Streaming , stream class interface
+- stream class interface WDK streaming minidriver
+- SRBs WDK streaming minidriver
+- ISRs WDK streaming minidriver
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stream Class and Minidriver Interface

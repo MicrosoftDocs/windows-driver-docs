@@ -2,14 +2,15 @@
 title: Vector Printing Commands
 author: windows-driver-content
 description: Vector Printing Commands
-MS-HAID:
-- 'nt5gpd\_4c3ca6b8-ee9f-4bfa-88b8-a7db2533270c.xml'
-- 'print.vector\_printing\_commands'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b81fa498-62a5-4839-ae4a-1330d8a03d03
-keywords: ["vector printing commands WDK Unidrv", "printer commands WDK Unidrv , vector"]
+keywords:
+- vector printing commands WDK Unidrv
+- printer commands WDK Unidrv , vector
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Vector Printing Commands

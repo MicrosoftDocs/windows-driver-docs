@@ -2,7 +2,16 @@
 title: Target Device ID
 description: Target Device ID
 ms.assetid: 5275e404-19b9-4a44-88de-1a40f3798ede
-keywords: ["GFX filters WDK audio , target device IDs", "target device IDs WDK audio", "device IDs WDK audio", "identifying audio target devices"]
+keywords:
+- GFX filters WDK audio , target device IDs
+- target device IDs WDK audio
+- device IDs WDK audio
+- identifying audio target devices
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Target Device ID

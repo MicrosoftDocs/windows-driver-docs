@@ -2,7 +2,16 @@
 title: Boot Parameters to Load a Partial Checked Build
 description: Boot Parameters to Load a Partial Checked Build
 ms.assetid: 701a3258-d659-49a7-8e0d-52adc556a289
-keywords: ["partial checked build boot options WDK", "boot parameters WDK", "boot entry parameters WDK", "loading partial checked builds WDK boot options"]
+keywords:
+- partial checked build boot options WDK
+- boot parameters WDK
+- boot entry parameters WDK
+- loading partial checked builds WDK boot options
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 #  Boot Parameters to Load a Partial Checked Build

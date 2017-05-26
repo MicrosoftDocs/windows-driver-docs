@@ -2,14 +2,15 @@
 title: Improved Color Printing
 author: windows-driver-content
 description: Improved Color Printing
-MS-HAID:
-- 'drvarch\_5c6af7f8-799d-4bcc-abeb-708bdf095905.xml'
-- 'print.improved\_color\_printing'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b0487ee0-9b4a-4083-9416-ad22b97ed94b
-keywords: ["XPSDrv printer drivers WDK , color printing", "color printing WDK XPSDrv"]
+keywords:
+- XPSDrv printer drivers WDK , color printing
+- color printing WDK XPSDrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Improved Color Printing

@@ -2,12 +2,6 @@
 title: Driver Interface
 author: windows-driver-content
 description: Driver Interface
-MS-HAID:
-- 'di\_df2610bd-842f-4047-8a10-b3655cd9ee5b.xml'
-- 'hid.driver\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cb5e06c3-6add-4eba-b794-861d567a3047
 keywords: ["force feedback drivers WDK HID , methods supported"]
 ---

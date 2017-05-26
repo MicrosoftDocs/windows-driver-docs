@@ -3,7 +3,16 @@ title: Introduction to Remote File Systems
 author: windows-driver-content
 description: Introduction to Remote File Systems
 ms.assetid: 24fe7b8e-b956-4c27-be12-8317e4f35ba6
-keywords: ["network redirectors WDK , remote file systems", "redirector drivers WDK , remote file systems", "remote file systems WDK", "file system drivers WDK , remote file systems"]
+keywords:
+- network redirectors WDK , remote file systems
+- redirector drivers WDK , remote file systems
+- remote file systems WDK
+- file system drivers WDK , remote file systems
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Remote File Systems

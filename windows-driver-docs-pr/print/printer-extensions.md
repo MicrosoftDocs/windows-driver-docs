@@ -2,10 +2,12 @@
 title: Printer Extensions
 author: windows-driver-content
 description: Printer extension apps support print preferences and printer notifications when users run existing applications on the Windows desktop.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: D617A897-D93E-4006-B42D-923CA7F29D7E
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Extensions

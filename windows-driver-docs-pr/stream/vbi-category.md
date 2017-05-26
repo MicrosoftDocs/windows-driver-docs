@@ -2,14 +2,17 @@
 title: VBI Category
 author: windows-driver-content
 description: VBI Category
-MS-HAID:
-- 'vidcapds\_8195d0ea-b46c-411f-992a-50a84867ebda.xml'
-- 'stream.vbi\_category'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c33c0427-5162-435a-bb96-a230455a1035
-keywords: ["stream categories WDK video capture , VBI", "VBI WDK video capture", "vertical blanking interval WDK video capture", "PINNAME_VIDEO_VBI"]
+keywords:
+- stream categories WDK video capture , VBI
+- VBI WDK video capture
+- vertical blanking interval WDK video capture
+- PINNAME_VIDEO_VBI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # VBI Category

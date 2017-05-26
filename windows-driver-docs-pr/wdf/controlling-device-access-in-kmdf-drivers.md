@@ -3,7 +3,17 @@ title: Controlling Device Access in KMDF Drivers
 author: windows-driver-content
 description: Controlling Device Access in KMDF Drivers
 ms.assetid: 62bbc69f-0754-4d37-a476-dd2ac3d70de6
-keywords: ["device access controls WDK KMDF", "names WDK device objects", "device objects WDK KMDF", "framework objects WDK KMDF , device access controls", "security descriptors WDK KMDF"]
+keywords:
+- device access controls WDK KMDF
+- names WDK device objects
+- device objects WDK KMDF
+- framework objects WDK KMDF , device access controls
+- security descriptors WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Controlling Device Access in KMDF Drivers

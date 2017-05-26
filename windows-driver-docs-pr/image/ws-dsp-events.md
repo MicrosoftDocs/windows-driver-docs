@@ -2,13 +2,12 @@
 title: WS-DSP Events
 author: windows-driver-content
 description: WS-DSP Events
-MS-HAID:
-- 'dsm\_des\_theory\_859fe6ae-28fa-4173-83fc-20e50c4cd9d8.xml'
-- 'image.ws\_dsp\_events'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 660d3110-c695-405e-8bab-c0a9c65fcc8f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WS-DSP Events

@@ -2,14 +2,14 @@
 title: Pscript Printer Minidriver Versioning
 author: windows-driver-content
 description: Pscript Printer Minidriver Versioning
-MS-HAID:
-- 'pscript\_65f2b3b3-3094-41d5-9bf7-a21a78c7bafd.xml'
-- 'print.pscript\_printer\_minidriver\_versioning'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bdc203ee-b256-492b-bb8c-c695a8b4686d
-keywords: ["minidrivers WDK Pscript , versioning"]
+keywords:
+- minidrivers WDK Pscript , versioning
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pscript Printer Minidriver Versioning

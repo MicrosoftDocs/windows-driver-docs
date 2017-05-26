@@ -2,13 +2,12 @@
 title: WIA Compatibility Layer Message Mapping
 author: windows-driver-content
 description: WIA Compatibility Layer Message Mapping
-MS-HAID:
-- 'WIA\_Fundamentals\_1bfac2b5-d862-4c1c-ab11-273d55175dfc.xml'
-- 'image.wia\_compatibility\_layer\_message\_mapping'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4bdf72e1-48ce-43f8-af62-0a2f6d01f558
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Compatibility Layer Message Mapping

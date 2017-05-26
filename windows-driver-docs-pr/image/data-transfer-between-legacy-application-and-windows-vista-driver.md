@@ -2,13 +2,12 @@
 title: Data Transfer Between Legacy Application and Windows Vista Driver
 author: windows-driver-content
 description: Data Transfer Between Legacy Application and Windows Vista Driver
-MS-HAID:
-- 'WIA\_Fundamentals\_b19b14f0-63a5-4627-8122-7d1b29a8b06a.xml'
-- 'image.data\_transfer\_between\_legacy\_application\_and\_windows\_vista\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 83817277-3526-4f64-8e7c-7e02c8cd77bd
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Data Transfer Between Legacy Application and Windows Vista Driver

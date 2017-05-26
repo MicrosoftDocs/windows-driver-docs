@@ -1,14 +1,16 @@
 ---
-title: Wi-Fi Direct Printing Overview
+title: Wi-Fi Direct Printing overview
 author: windows-driver-content
-description: .
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+description: Provides information on supported user experiences and use cases for a Wi-Fi Direct Printing.
 ms.assetid: 40ED3410-EC46-42C8-B09B-8010639F2268
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Wi-Fi Direct Printing Overview
+# Wi-Fi Direct Printing overview
 
 
 ## Supported User Experiences

@@ -2,13 +2,12 @@
 title: Creating and Opening Processes by WIA Drivers
 author: windows-driver-content
 description: Creating and Opening Processes by WIA Drivers
-MS-HAID:
-- 'WIA\_best\_practice\_52919156-d9b0-478f-933b-24ed5e4f2090.xml'
-- 'image.creating\_and\_opening\_processes\_by\_wia\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c939eb25-b92b-41ef-ade0-98c2a707fee6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating and Opening Processes by WIA Drivers

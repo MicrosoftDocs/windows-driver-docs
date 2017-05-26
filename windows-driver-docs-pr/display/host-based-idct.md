@@ -2,7 +2,19 @@
 title: Host-Based IDCT
 description: Host-Based IDCT
 ms.assetid: 9f44e734-8cbc-4317-bd72-66d4ac7cd4de
-keywords: ["macroblocks WDK DirectX VA , IDCT", "low-level IDCT WDK DirectX VA", "host-based IDCT WDK DirectX VA", "inverse discrete-cosine transform WDK DirectX VA", "IDCT WDK DirectX VA", "16-bit host-based IDCT WDK DirectX VA", "8-8 overflow host-based IDCT WDK DirectX VA"]
+keywords:
+- macroblocks WDK DirectX VA , IDCT
+- low-level IDCT WDK DirectX VA
+- host-based IDCT WDK DirectX VA
+- inverse discrete-cosine transform WDK DirectX VA
+- IDCT WDK DirectX VA
+- 16-bit host-based IDCT WDK DirectX VA
+- 8-8 overflow host-based IDCT WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Host-Based IDCT

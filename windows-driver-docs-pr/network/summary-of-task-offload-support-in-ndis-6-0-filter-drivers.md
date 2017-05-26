@@ -2,7 +2,17 @@
 title: Summary of Task Offload Support in NDIS 6.0 Filter Drivers
 description: Summary of Task Offload Support in NDIS 6.0 Filter Drivers
 ms.assetid: 7df5beb4-b694-4550-87a1-cf3c0f2d965c
-keywords: ["task offload porting WDK networking , filter drivers", "TCP/IP offload service porting WDK networking , filter drivers", "offload service porting WDK networking , filter drivers", "porting task offload services WDK networking , filter drivers", "filter drivers"]
+keywords:
+- task offload porting WDK networking , filter drivers
+- TCP/IP offload service porting WDK networking , filter drivers
+- offload service porting WDK networking , filter drivers
+- porting task offload services WDK networking , filter drivers
+- filter drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Summary of Task Offload Support in NDIS 6.0 Filter Drivers

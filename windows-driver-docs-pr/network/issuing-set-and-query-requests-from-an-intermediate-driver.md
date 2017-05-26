@@ -2,7 +2,14 @@
 title: Issuing Set and Query Requests from an Intermediate Driver
 description: Issuing Set and Query Requests from an Intermediate Driver
 ms.assetid: bd049639-970c-43c8-8ef9-c5e75cc2d75f
-keywords: ["query operations WDK NDIS intermediate", "set operations WDK NDIS intermediate"]
+keywords:
+- query operations WDK NDIS intermediate
+- set operations WDK NDIS intermediate
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Issuing Set and Query Requests from an Intermediate Driver

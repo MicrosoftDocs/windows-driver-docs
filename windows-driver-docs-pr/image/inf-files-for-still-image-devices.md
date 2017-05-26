@@ -2,13 +2,12 @@
 title: INF Files for Still Image Devices
 author: windows-driver-content
 description: INF Files for Still Image Devices
-MS-HAID:
-- 'stillimg\_d4b9463b-e568-4d78-ab61-8288ffaad713.xml'
-- 'image.inf\_files\_for\_still\_image\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f68ba904-9049-4f7e-9903-fdf6f413a1a5
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF Files for Still Image Devices

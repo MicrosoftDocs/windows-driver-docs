@@ -2,10 +2,12 @@
 title: Accelerometer object
 author: windows-driver-content
 description: Accelerometer object
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: D8E227E1-FFB5-4F4B-A981-6BD05C8FFAF2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accelerometer object

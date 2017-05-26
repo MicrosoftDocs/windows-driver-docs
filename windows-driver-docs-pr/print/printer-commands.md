@@ -2,14 +2,19 @@
 title: Printer Commands
 author: windows-driver-content
 description: Printer Commands
-MS-HAID:
-- 'nt5gpd\_e0787109-d0df-44ff-ab5e-eef343e7ba4c.xml'
-- 'print.printer\_commands'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4f47ae57-cfca-4670-823e-526e2f40de82
-keywords: ["Unidrv, commands", "GPD files WDK Unidrv , printer commands", "commands WDK Unidrv", "printer commands WDK Unidrv", "printer commands WDK Unidrv , about printer commands", "Unidrv WDK print"]
+keywords:
+- Unidrv, commands
+- GPD files WDK Unidrv , printer commands
+- commands WDK Unidrv
+- printer commands WDK Unidrv
+- printer commands WDK Unidrv , about printer commands
+- Unidrv WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Commands

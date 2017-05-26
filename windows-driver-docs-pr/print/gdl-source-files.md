@@ -2,14 +2,18 @@
 title: GDL Source Files
 author: windows-driver-content
 description: GDL Source Files
-MS-HAID:
-- 'gplfiles\_ecc56183-860a-432c-b9ef-f854c3adaea7.xml'
-- 'print.gdl\_source\_files'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 42ba6286-96e2-4ef3-8e24-2053368a1930
-keywords: ["GDL WDK , source files", "source files WDK GDL", "GDL WDK , entries", "GDL WDK , directives", "directives WDK GDL , preprocessor directives"]
+keywords:
+- GDL WDK , source files
+- source files WDK GDL
+- GDL WDK , entries
+- GDL WDK , directives
+- directives WDK GDL , preprocessor directives
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Source Files

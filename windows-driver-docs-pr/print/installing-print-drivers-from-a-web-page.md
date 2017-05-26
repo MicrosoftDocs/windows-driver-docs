@@ -2,14 +2,17 @@
 title: Installing Print Drivers from a Web Page
 author: windows-driver-content
 description: Installing Print Drivers from a Web Page
-MS-HAID:
-- 'inetpri\_2ac1a070-6b25-4df3-b687-f0f9c55597f8.xml'
-- 'print.installing\_print\_drivers\_from\_a\_web\_page'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 44da45f7-687c-4c54-9ee6-79c91fce3947
-keywords: ["Internet printing WDK , installing drivers from Web pages", "print Web pages WDK , installing print drivers from", "Web pages WDK printer , installing print drivers from", "installing drivers WDK printer , Web pages"]
+keywords:
+- Internet printing WDK , installing drivers from Web pages
+- print Web pages WDK , installing print drivers from
+- Web pages WDK printer , installing print drivers from
+- installing drivers WDK printer , Web pages
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing Print Drivers from a Web Page

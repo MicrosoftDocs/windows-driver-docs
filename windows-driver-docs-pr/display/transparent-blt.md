@@ -2,7 +2,19 @@
 title: Transparent Blt
 description: Transparent Blt
 ms.assetid: bc2f4159-cd5d-43db-8bc3-e6fbf1e594fb
-keywords: ["surfaces WDK DirectDraw , blitting", "drawing blt WDK DirectDraw , transparent blt", "DirectDraw blitting WDK Windows 2000 display , transparent blt", "blitting WDK DirectDraw , transparent blt", "blt WDK DirectDraw , transparent", "color keys WDK DirectDraw", "transparent blts WDK DirectDraw"]
+keywords:
+- surfaces WDK DirectDraw , blitting
+- drawing blt WDK DirectDraw , transparent blt
+- DirectDraw blitting WDK Windows 2000 display , transparent blt
+- blitting WDK DirectDraw , transparent blt
+- blt WDK DirectDraw , transparent
+- color keys WDK DirectDraw
+- transparent blts WDK DirectDraw
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Transparent Blt

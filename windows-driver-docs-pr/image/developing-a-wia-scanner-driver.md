@@ -2,13 +2,12 @@
 title: Developing a WIA Scanner Driver
 author: windows-driver-content
 description: Developing a WIA Scanner Driver
-MS-HAID:
-- 'WIA\_drv\_scan\_d253061d-730b-4871-a2bb-b1545e8329d6.xml'
-- 'image.developing\_a\_wia\_scanner\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: befe7e36-cb42-48da-88b4-d8983876266f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Developing a WIA Scanner Driver

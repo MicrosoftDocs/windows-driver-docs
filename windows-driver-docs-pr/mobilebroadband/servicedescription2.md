@@ -1,10 +1,12 @@
 ---
 title: ServiceDescription2
 description: ServiceDescription2
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 92de51be-dfd7-443b-987c-b4b364e1aaa6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ServiceDescription2

@@ -2,13 +2,12 @@
 title: WIA Minidriver Troubleshooting
 author: windows-driver-content
 description: WIA Minidriver Troubleshooting
-MS-HAID:
-- 'WIA\_GS\_67001d78-2401-45f6-a4b4-8a3bfd6ba263.xml'
-- 'image.wia\_minidriver\_troubleshooting'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a0944bdd-56c4-4f7b-b542-eb353cd4d1f2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Minidriver Troubleshooting

@@ -1,10 +1,12 @@
 ---
-title: Get IMEI, ICCID, IMSI, telephone numbers for mobile broadband device
+title: Get IMEI, ICCID, IMSI, and telephone numbers for the MB device
 description: Get the IMEI, ICCID, IMSI and telephone numbers for the mobile broadband device
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b604d08c-7e6f-4dad-9e1d-3f24a0da5760
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Get the IMEI, ICCID, IMSI and telephone numbers for the mobile broadband device

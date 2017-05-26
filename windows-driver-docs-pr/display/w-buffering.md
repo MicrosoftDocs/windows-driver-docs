@@ -2,7 +2,14 @@
 title: W-Buffering
 description: W-Buffering
 ms.assetid: 0f06a709-11dc-4407-a230-85a689fb46a2
-keywords: ["Direct3D WDK Windows 2000 display , w-buffering", "w-buffering WDK Direct3D"]
+keywords:
+- Direct3D WDK Windows 2000 display , w-buffering
+- w-buffering WDK Direct3D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # W-Buffering

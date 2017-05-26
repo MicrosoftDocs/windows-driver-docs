@@ -2,14 +2,17 @@
 title: KS Interfaces
 author: windows-driver-content
 description: KS Interfaces
-MS-HAID:
-- 'ks-overview\_66fbd820-9191-4a1f-ba6e-07913ed402e0.xml'
-- 'stream.ks\_interfaces'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cc6fad32-0587-44a8-92d1-54bc0370e5c0
-keywords: ["interfaces WDK kernel streaming", "KSPIN_INTERFACE", "kernel streaming WDK , interfaces", "KS WDK , interfaces"]
+keywords:
+- interfaces WDK kernel streaming
+- KSPIN_INTERFACE
+- kernel streaming WDK , interfaces
+- KS WDK , interfaces
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KS Interfaces

@@ -2,7 +2,14 @@
 title: Direct OID Request Interface in NDIS 6.1
 description: Direct OID Request Interface in NDIS 6.1
 ms.assetid: 1a24dec6-f16a-45f5-857b-c6e0df4ce261
-keywords: ["direct OID request interface WDK networking", "direct OID request path WDK networking"]
+keywords:
+- direct OID request interface WDK networking
+- direct OID request path WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Direct OID Request Interface in NDIS 6.1

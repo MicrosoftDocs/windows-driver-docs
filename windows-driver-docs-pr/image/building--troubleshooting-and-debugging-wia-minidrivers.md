@@ -2,13 +2,12 @@
 title: Building, Troubleshooting and Debugging WIA Minidrivers
 author: windows-driver-content
 description: Building, Troubleshooting and Debugging WIA Minidrivers
-MS-HAID:
-- 'WIA\_GS\_5d5a69ea-b3ca-4fea-a398-bc62774b65f1.xml'
-- 'image.building\_\_troubleshooting\_and\_debugging\_wia\_minidrivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ed1e5809-aa4a-47d3-9673-eb6b63a034af
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Building, Troubleshooting and Debugging WIA Minidrivers

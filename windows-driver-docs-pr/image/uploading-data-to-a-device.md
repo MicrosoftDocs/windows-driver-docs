@@ -2,13 +2,12 @@
 title: Uploading Data to a Device
 author: windows-driver-content
 description: Uploading Data to a Device
-MS-HAID:
-- 'WIA\_arch\_bc8edc52-25bb-49cb-a5de-7c415ca03bd1.xml'
-- 'image.uploading\_data\_to\_a\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 50fc5f56-3758-4151-9748-dd88544006f1
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Uploading Data to a Device

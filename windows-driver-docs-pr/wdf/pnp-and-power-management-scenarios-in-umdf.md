@@ -3,13 +3,23 @@ title: PnP and Power Management Scenarios in UMDF
 author: windows-driver-content
 description: PnP and Power Management Scenarios in UMDF
 ms.assetid: ca36eee5-482c-4cfe-a515-be9d3743e241
-keywords: ["Plug and Play WDK UMDF , power management scenarios in UMDF", "PnP WDK UMDF , power management scenarios in UMDF", "power management scenarios WDK UMDF", "power management scenarios WDK UMDF , PnP", "power management scenarios WDK UMDF , Plug and Play"]
+keywords:
+- Plug and Play WDK UMDF , power management scenarios in UMDF
+- PnP WDK UMDF , power management scenarios in UMDF
+- power management scenarios WDK UMDF
+- power management scenarios WDK UMDF , PnP
+- power management scenarios WDK UMDF , Plug and Play
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PnP and Power Management Scenarios in UMDF
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The following PnP and power management scenarios show the sequences in which the framework calls a UMDF driver's event callback functions:
 

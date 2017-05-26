@@ -2,7 +2,17 @@
 title: Modifying Registry Keys by Class Installers and Co-installers
 description: Modifying Registry Keys by Class Installers and Co-installers
 ms.assetid: A7F41F97-5E06-41d8-B80F-DDBC41A62BB3
-keywords: ["registry WDK device installations , modifying registry keys", "registry WDK device installations , modifying registry keys, class installers", "registry WDK device installations , modifying registry keys, co-installers", "class installers WDK device installations , modifying registry keys", "co-installers WDK device installations , modifying registry keys"]
+keywords:
+- registry WDK device installations , modifying registry keys
+- registry WDK device installations , modifying registry keys, class installers
+- registry WDK device installations , modifying registry keys, co-installers
+- class installers WDK device installations , modifying registry keys
+- co-installers WDK device installations , modifying registry keys
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Modifying Registry Keys by Class Installers and Co-installers

@@ -1,8 +1,11 @@
 ---
 Description: Installing the Sample Driver
-MS-HAID: 'wpddk.the\_wpdbasichardwaredriver\_installation'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Installing the Sample Driver
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing the Sample Driver

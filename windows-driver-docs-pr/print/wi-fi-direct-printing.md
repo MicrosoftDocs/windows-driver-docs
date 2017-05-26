@@ -2,10 +2,12 @@
 title: Wi-Fi Direct Printing
 author: windows-driver-content
 description: Windows 8.1 and later versions of Windows support printing over Wi-Fi Direct (WFD).
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B2FC1293-F9E4-43A4-84BF-21EF8C3D27E0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wi-Fi Direct Printing

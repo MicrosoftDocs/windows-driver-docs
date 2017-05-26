@@ -2,14 +2,15 @@
 title: Autoconfig Flow in Windows Vista for PPD
 author: windows-driver-content
 description: Autoconfig Flow in Windows Vista for PPD
-MS-HAID:
-- 'autocfg\_58cbc1af-7abd-4e82-ac2c-d034df5722b0.xml'
-- 'print.autoconfig\_flow\_in\_windows\_vista\_for\_ppd'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 60675cd3-fe98-4772-aa1b-a73529480d8a
-keywords: ["PPD files WDK autoconfiguration , sequence of steps", "in-box autoconfiguration support WDK printer , sequence of steps"]
+keywords:
+- PPD files WDK autoconfiguration , sequence of steps
+- in-box autoconfiguration support WDK printer , sequence of steps
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Autoconfig Flow in Windows Vista for PPD

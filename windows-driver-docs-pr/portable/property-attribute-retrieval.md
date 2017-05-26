@@ -1,8 +1,11 @@
 ---
-Description: 'Property-Attribute Retrieval'
-MS-HAID: 'wpddk.property\_attribute\_retrieval'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Property-Attribute Retrieval'
+Description: Property-Attribute Retrieval
+title: Property-Attribute Retrieval
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Property-Attribute Retrieval

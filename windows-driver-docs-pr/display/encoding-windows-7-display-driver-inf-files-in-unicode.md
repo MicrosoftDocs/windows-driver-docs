@@ -2,6 +2,11 @@
 title: Encoding Windows 7 Display Driver INF Files in Unicode
 description: Encoding Windows 7 Display Driver INF Files in Unicode
 ms.assetid: b371d6cf-02b2-4ba7-966c-8f18324d5782
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Encoding Windows 7 Display Driver INF Files in Unicode

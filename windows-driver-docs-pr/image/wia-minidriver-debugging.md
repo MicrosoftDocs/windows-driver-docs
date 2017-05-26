@@ -2,13 +2,12 @@
 title: WIA Minidriver Debugging
 author: windows-driver-content
 description: WIA Minidriver Debugging
-MS-HAID:
-- 'WIA\_GS\_9d650836-b3cc-4b5c-9c16-f62aac8974bc.xml'
-- 'image.wia\_minidriver\_debugging'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6466d0db-a2f9-4b3e-aa3e-8030b243f862
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Minidriver Debugging

@@ -2,14 +2,16 @@
 title: Writing a Stream Minidriver
 author: windows-driver-content
 description: Writing a Stream Minidriver
-MS-HAID:
-- 'strmini-design\_b704f365-0320-4a14-bb8d-5197a476b85b.xml'
-- 'stream.writing\_a\_stream\_minidriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 83540dff-3774-4197-8ba1-d28e12b4e366
-keywords: ["Stream.sys class driver WDK Windows 2000 Kernel , writing", "streaming minidrivers WDK Windows 2000 Kernel , writing", "minidrivers WDK Windows 2000 Kernel Streaming , writing"]
+keywords:
+- Stream.sys class driver WDK Windows 2000 Kernel , writing
+- streaming minidrivers WDK Windows 2000 Kernel , writing
+- minidrivers WDK Windows 2000 Kernel Streaming , writing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing a Stream Minidriver

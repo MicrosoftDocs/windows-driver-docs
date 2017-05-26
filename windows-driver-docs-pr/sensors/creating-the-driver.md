@@ -2,13 +2,12 @@
 title: Creating a sensor driver
 author: windows-driver-content
 description: Creating a sensor driver
-MS-HAID:
-- 'Sensor\_DG\_DevelopmentBasics\_99e00c6c-6a4e-4645-8d02-15c9b354589f.xml'
-- 'sensors.creating\_the\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7a1cea3c-d542-47e9-90f9-18bae4969b9f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a sensor driver

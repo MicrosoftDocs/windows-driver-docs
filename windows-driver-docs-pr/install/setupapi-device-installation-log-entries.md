@@ -2,7 +2,14 @@
 title: SetupAPI Device Installation Log Entries
 description: SetupAPI Device Installation Log Entries
 ms.assetid: 4f23dae8-8b1b-4970-a175-0abb3bee71c7
-keywords: ["logs WDK driver signing", "SetupAPI logging WDK driver signing"]
+keywords:
+- logs WDK driver signing
+- SetupAPI logging WDK driver signing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SetupAPI Device Installation Log Entries

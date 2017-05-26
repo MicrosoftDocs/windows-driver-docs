@@ -2,7 +2,15 @@
 title: Volume Textures
 description: Volume Textures
 ms.assetid: 11a079f7-d809-48a9-85e8-aa9fb4305075
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display , volume textures", "volume textures WDK DirectX 8.0", "3D textures WDK DirectX 8.0"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display , volume textures
+- volume textures WDK DirectX 8.0
+- 3D textures WDK DirectX 8.0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Volume Textures

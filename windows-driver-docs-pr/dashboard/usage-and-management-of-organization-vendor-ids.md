@@ -1,13 +1,12 @@
 ---
 title: Usage and Management of Organization Vendor IDs
 description: Usage and Management of Organization Vendor IDs
-MS-HAID:
-- 'p\_dashboard.usage\_and\_management\_of\_organization\_vendor\_ids'
-- 'hw\_dashboard.usage\_and\_management\_of\_organization\_vendor\_ids'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: CC419814-36AB-4D53-AA7D-761C9CB57BD4
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Usage and Management of Organization Vendor IDs

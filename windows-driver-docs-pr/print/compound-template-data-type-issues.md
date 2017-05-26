@@ -2,14 +2,16 @@
 title: Compound Template Data Type Issues
 author: windows-driver-content
 description: Compound Template Data Type Issues
-MS-HAID:
-- 'gplfiles\_2c9b0f75-5f3f-45e1-ae25-64015930a434.xml'
-- 'print.compound\_template\_data\_type\_issues'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 61f26465-c79d-42e3-94c8-26c2c61ecb98
-keywords: ["templates WDK GDL , data types", "data types WDK GDL , problems with template data types", "data types WDK GDL , compound"]
+keywords:
+- templates WDK GDL , data types
+- data types WDK GDL , problems with template data types
+- data types WDK GDL , compound
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Compound Template Data Type Issues

@@ -2,7 +2,16 @@
 title: Review of the Older Alignment Method
 description: Review of the Older Alignment Method
 ms.assetid: 4efc380f-6303-42e1-8651-c9d64498942a
-keywords: ["drawing extended surface alignment WDK DirectDraw", "DirectDraw extended surface alignment WDK Windows 2000 display", "surfaces WDK DirectDraw , extended alignment", "extended surface alignment WDK DirectDraw"]
+keywords:
+- drawing extended surface alignment WDK DirectDraw
+- DirectDraw extended surface alignment WDK Windows 2000 display
+- surfaces WDK DirectDraw , extended alignment
+- extended surface alignment WDK DirectDraw
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Review of the Older Alignment Method

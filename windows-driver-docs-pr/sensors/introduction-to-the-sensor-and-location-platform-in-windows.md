@@ -2,13 +2,12 @@
 title: Introduction to the Sensor and Location Platform in Windows
 author: windows-driver-content
 description: Introduction to the Sensor and Location Platform in Windows
-MS-HAID:
-- 'Sensor\_DG\_GettingStarted\_65e2dd62-99dd-4f85-a739-c12946bb4434.xml'
-- 'sensors.introduction\_to\_the\_sensor\_and\_location\_platform\_in\_windows'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 62e945e5-78a1-4eb6-ad59-b30cf5e3d5ad
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to the Sensor and Location Platform in Windows

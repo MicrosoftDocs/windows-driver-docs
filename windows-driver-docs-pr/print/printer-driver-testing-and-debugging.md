@@ -2,13 +2,12 @@
 title: Printer Driver Testing and Debugging
 author: windows-driver-content
 description: Printer Driver Testing and Debugging
-MS-HAID:
-- 'prntools\_5523079c-90ea-404b-b4e1-61eb2348d947.xml'
-- 'print.printer\_driver\_testing\_and\_debugging'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cf6250c7-d4ae-4498-8de2-3c41e4ae3dd5
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Driver Testing and Debugging

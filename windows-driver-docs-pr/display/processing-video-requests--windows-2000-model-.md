@@ -2,7 +2,16 @@
 title: Processing Video Requests (Windows 2000 Model)
 description: Processing Video Requests (Windows 2000 Model)
 ms.assetid: 86b3037e-2d18-46b0-8b02-c66be65a4001
-keywords: ["video miniport drivers WDK Windows 2000 , processing requests", "request processing WDK video miniport", "I/O WDK video miniport", "HwVidStartIO"]
+keywords:
+- video miniport drivers WDK Windows 2000 , processing requests
+- request processing WDK video miniport
+- I/O WDK video miniport
+- HwVidStartIO
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Processing Video Requests (Windows 2000 Model)

@@ -2,7 +2,16 @@
 title: Device Manager Details Tab
 description: Device Manager Details Tab
 ms.assetid: 5f1e345f-72c6-4bd4-a0fa-304e5d0d91be
-keywords: ["Device Manager WDK , Details tab", "firmware revision numbers WDK Device Manager", "revision numbers WDK Device Manager", "Details tab WDK Device Manager"]
+keywords:
+- Device Manager WDK , Details tab
+- firmware revision numbers WDK Device Manager
+- revision numbers WDK Device Manager
+- Details tab WDK Device Manager
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Manager Details Tab

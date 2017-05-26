@@ -2,14 +2,16 @@
 title: Adding a Port
 author: windows-driver-content
 description: Adding a Port
-MS-HAID:
-- 'provider\_bd1cc174-541c-49ce-aacb-fbde4192fc80.xml'
-- 'print.adding\_a\_port'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ec908ddd-761b-4a82-8fc3-ac45c39a0571
-keywords: ["port management WDK print , adding ports", "adding ports", "AddPort"]
+keywords:
+- port management WDK print , adding ports
+- adding ports
+- AddPort
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding a Port

@@ -2,6 +2,11 @@
 title: How Windows Ranks Drivers
 description: How Windows Ranks Drivers
 ms.assetid: af072edb-5682-4787-b139-386269df1355
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How Windows Ranks Drivers

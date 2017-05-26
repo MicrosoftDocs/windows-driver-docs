@@ -2,7 +2,18 @@
 title: Sending Output to the Debugger
 description: Sending Output to the Debugger
 ms.assetid: ee167261-78cd-4178-ba98-3250cc735657
-keywords: ["debugging code WDK , sending output", "sending output to debugger", "output routines WDK", "user-mode output routines WDK", "kernel-mode output routines WDK", "routines WDK debugging , output"]
+keywords:
+- debugging code WDK , sending output
+- sending output to debugger
+- output routines WDK
+- user-mode output routines WDK
+- kernel-mode output routines WDK
+- routines WDK debugging , output
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sending Output to the Debugger

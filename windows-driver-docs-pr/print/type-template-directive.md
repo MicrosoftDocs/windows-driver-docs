@@ -2,14 +2,14 @@
 title: Type Template Directive
 author: windows-driver-content
 description: Type Template Directive
-MS-HAID:
-- 'gplfiles\_7956f1e3-3857-49a1-a28c-9bb84d7af73e.xml'
-- 'print.type\_template\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 22bfc832-965f-4e40-a45e-4938b3a15479
-keywords: ["Type directive WDK GDL"]
+keywords:
+- Type directive WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Type Template Directive

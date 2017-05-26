@@ -1,14 +1,19 @@
 ---
 title: Best Practices for the Design of PC Cards and Card Drivers
 description: Best Practices for the Design of PC Cards and Card Drivers
-MS-HAID:
-- 'mcch2\_f331b6fa-9e96-43e5-be44-8ebfb14b3fbb.xml'
-- 'PCMCIA.best\_practices\_for\_the\_design\_of\_pc\_cards\_and\_card\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c3f31757-4063-4c68-ae19-1d8af98f81bc
-keywords: ["IRQ routing WDK PCMCIA bus", "PCMCIA WDK buses , IRQ routing", "PC Cards WDK PCMCIA bus", "interrupts WDK PCMCIA bus", "PCI interrupts WDK PCMCIA bus", "ISA interrupts WDK PCMCIA bus"]
+keywords:
+- IRQ routing WDK PCMCIA bus
+- PCMCIA WDK buses , IRQ routing
+- PC Cards WDK PCMCIA bus
+- interrupts WDK PCMCIA bus
+- PCI interrupts WDK PCMCIA bus
+- ISA interrupts WDK PCMCIA bus
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Best Practices for the Design of PC Cards and Card Drivers

@@ -1,12 +1,12 @@
 ---
-Description: 'A USB function driver supports runtime idle detection by implementing USB selective suspend. Here is content for driver developers about how to implement selective suspend in USB drivers that are based on the Windows® Driver Foundation (WDF).'
-MS-HAID:
-- 'buses.selective\_suspend\_in\_usb\_drivers'
-- 'buses.selective\_suspend\_in\_usb\_drivers\_wdf'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'Selective suspend in USB drivers (WDF)'
+Description: A USB function driver supports runtime idle detection by implementing USB selective suspend. 
+title: Selective suspend in USB drivers (WDF)
+author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Selective suspend in USB drivers (WDF)
@@ -89,26 +89,14 @@ If the driver is not the PPO, the framework takes no further actions because onl
  
 
 ## Related topics
+[Windows Driver Frameworks (WDF)](http://go.microsoft.com/fwlink/p/?linkid=53698)  
+[Plug and Play - Architecture and Driver Support](http://go.microsoft.com/fwlink/p/?linkid=320985)  
+[PnP and Power Management in KMDF Drivers](http://go.microsoft.com/fwlink/p/?linkid=320986)  
+[When WDF Drivers Can Use Power-Managed I/O Queues](http://go.microsoft.com/fwlink/p/?linkid=320987)  
+[Writing USB Drivers with WDF](http://go.microsoft.com/fwlink/p/?linkid=320988)  
+[Implementing power management in USB client drivers](http://go.microsoft.com/fwlink/p/?linkid=320989)  
 
-
-[Windows Driver Frameworks (WDF)](http://go.microsoft.com/fwlink/p/?linkid=53698)
-
-[Plug and Play - Architecture and Driver Support](http://go.microsoft.com/fwlink/p/?linkid=320985)
-
-[PnP and Power Management in KMDF Drivers](http://go.microsoft.com/fwlink/p/?linkid=320986)
-
-[When WDF Drivers Can Use Power-Managed I/O Queues](http://go.microsoft.com/fwlink/p/?linkid=320987)
-
-[Writing USB Drivers with WDF](http://go.microsoft.com/fwlink/p/?linkid=320988)
-
-[Implementing power management in USB client drivers](http://go.microsoft.com/fwlink/p/?linkid=320989)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Selective%20suspend%20in%20USB%20drivers%20%28WDF%29%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

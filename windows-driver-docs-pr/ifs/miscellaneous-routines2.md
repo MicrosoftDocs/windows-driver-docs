@@ -3,7 +3,14 @@ title: Miscellaneous Routines
 author: windows-driver-content
 description: Miscellaneous Routines
 ms.assetid: e065c86c-a784-49e1-a1d9-e2bcff3fcae4
-keywords: ["RDBSS WDK file systems , miscellaneous routines", "Redirected Drive Buffering Subsystem WDK file systems , miscellaneous routines"]
+keywords:
+- RDBSS WDK file systems , miscellaneous routines
+- Redirected Drive Buffering Subsystem WDK file systems , miscellaneous routines
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Miscellaneous Routines

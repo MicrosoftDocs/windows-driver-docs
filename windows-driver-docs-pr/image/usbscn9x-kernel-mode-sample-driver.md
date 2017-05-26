@@ -2,13 +2,12 @@
 title: USBSCN9X Kernel-Mode Sample Driver
 author: windows-driver-content
 description: USBSCN9X Kernel-Mode Sample Driver
-MS-HAID:
-- 'WIA\_GS\_1bc67ff1-11f2-44ed-bf7b-f98375390c0d.xml'
-- 'image.usbscn9x\_kernel\_mode\_sample\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 58630e04-3b50-4045-bf74-1ef066ec0089
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USBSCN9X Kernel-Mode Sample Driver

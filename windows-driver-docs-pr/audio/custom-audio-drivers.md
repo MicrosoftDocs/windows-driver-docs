@@ -2,7 +2,17 @@
 title: Custom Audio Drivers
 description: Custom Audio Drivers
 ms.assetid: d5f19a72-0b43-4fe1-b0e1-0198344b4d19
-keywords: ["WDM audio drivers WDK , custom", "audio drivers WDK , custom", "custom audio drivers WDK", "vendor-supplied drivers WDK audio", "PortCls WDK audio , custom audio drivers"]
+keywords:
+- WDM audio drivers WDK , custom
+- audio drivers WDK , custom
+- custom audio drivers WDK
+- vendor-supplied drivers WDK audio
+- PortCls WDK audio , custom audio drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Custom Audio Drivers

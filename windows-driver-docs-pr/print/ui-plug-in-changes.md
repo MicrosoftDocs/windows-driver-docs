@@ -2,14 +2,14 @@
 title: UI Plug-in Changes
 author: windows-driver-content
 description: UI Plug-in Changes
-MS-HAID:
-- 'autocfg\_b1728da4-e033-4ae2-89b5-cc01303b0784.xml'
-- 'print.ui\_plug\_in\_changes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e4042eb8-a626-4237-97ae-37a5175005a5
-keywords: ["in-box autoconfiguration support WDK printer , UI plug-in changes"]
+keywords:
+- in-box autoconfiguration support WDK printer , UI plug-in changes
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UI Plug-in Changes

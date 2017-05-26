@@ -2,13 +2,12 @@
 title: WIA Driver Versioning
 author: windows-driver-content
 description: WIA Driver Versioning
-MS-HAID:
-- 'WIA\_arch\_59e55bce-0b0a-45c2-86e4-3e8a527140ad.xml'
-- 'image.wia\_driver\_versioning'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9ebd79ac-d742-4524-9573-5873f7a8ec37
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Driver Versioning

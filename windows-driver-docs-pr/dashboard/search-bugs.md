@@ -1,13 +1,12 @@
 ---
 title: Search Bugs
 description: Search Bugs
-MS-HAID:
-- 'p\_dashboard.search\_bugs'
-- 'hw\_dashboard.search\_bugs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 873a59b2-beaf-47dc-ab17-d7498d692209
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Search Bugs

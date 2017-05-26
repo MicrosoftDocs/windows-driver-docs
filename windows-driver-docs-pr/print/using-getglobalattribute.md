@@ -2,14 +2,14 @@
 title: Using GetGlobalAttribute
 author: windows-driver-content
 description: Using GetGlobalAttribute
-MS-HAID:
-- 'pscript\_2f75968f-f633-4ce5-ab0e-19fc5e9c48ef.xml'
-- 'print.using\_getglobalattribute'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0e23ecba-7d89-44f5-b6a7-7d6be9a56765
-keywords: ["GetGlobalAttribute"]
+keywords:
+- GetGlobalAttribute
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using GetGlobalAttribute

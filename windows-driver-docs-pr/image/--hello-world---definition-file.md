@@ -2,13 +2,12 @@
 title: Hello World' Definition File
 author: windows-driver-content
 description: Hello World' Definition File
-MS-HAID:
-- 'WIA\_db\_hello\_4ebbc6aa-b2d9-4d6b-a8e3-426b3bdd58fc.xml'
-- 'image.\_\_hello\_world\_\_\_definition\_file'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 50c38eea-7826-44bb-9048-ce8e07ce3478
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # 'Hello World' Definition File

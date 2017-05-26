@@ -1,10 +1,12 @@
 ---
 title: ServiceInfo XML schema
 description: ServiceInfo XML schema
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e59aa675-fea2-4c2d-90f8-4979aac1c7e8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ServiceInfo XML schema

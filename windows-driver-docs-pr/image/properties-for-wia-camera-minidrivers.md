@@ -2,13 +2,12 @@
 title: Properties for WIA Camera Minidrivers
 author: windows-driver-content
 description: Properties for WIA Camera Minidrivers
-MS-HAID:
-- 'WIA\_arch\_b9ccab2f-89b6-4bb2-aabb-1c38aecdd207.xml'
-- 'image.properties\_for\_wia\_camera\_minidrivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3a5e61d7-1ca8-44a8-b24a-7a5929d424a5
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Properties for WIA Camera Minidrivers

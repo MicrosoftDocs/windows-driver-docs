@@ -2,14 +2,15 @@
 title: Rectangles
 author: windows-driver-content
 description: Rectangles
-MS-HAID:
-- 'nt5gpd\_e5859202-6c1a-4cef-9037-12091c96ecee.xml'
-- 'print.rectangles'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c0991533-baf3-4fb6-8e1c-fb74c862b860
-keywords: ["GPD file entries WDK Unidrv , rectangles", "rectangles WDK GPD files"]
+keywords:
+- GPD file entries WDK Unidrv , rectangles
+- rectangles WDK GPD files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Rectangles

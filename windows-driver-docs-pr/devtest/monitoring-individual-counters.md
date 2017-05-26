@@ -2,7 +2,16 @@
 title: Monitoring Individual Counters
 description: Monitoring Individual Counters
 ms.assetid: 95d4492b-20b9-401a-97aa-eaf700b64420
-keywords: ["individual counters WDK Driver Verifier", "Driver Verifier WDK , counters", "statistics WDK Driver Verifier", "counters WDK Driver Verifier"]
+keywords:
+- individual counters WDK Driver Verifier
+- Driver Verifier WDK , counters
+- statistics WDK Driver Verifier
+- counters WDK Driver Verifier
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Monitoring Individual Counters

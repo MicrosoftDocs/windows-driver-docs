@@ -2,14 +2,16 @@
 title: Registering a PSHED Plug-In
 author: windows-driver-content
 description: Registering a PSHED Plug-In
-MS-HAID:
-- 'whea\_ca85ab7e-c051-4f2e-beb6-9c05d2ea0a24.xml'
-- 'whea.registering\_a\_pshed\_plug\_in'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8b710aa2-1477-4906-b5cb-d269d821ea28
-keywords: ["platform-specific hardware error driver plug-ins WDK WHEA , registering", "registering PSHED plug-ins WDK WHEA", "PSHED plug-ins WDK WHEA , registering"]
+keywords:
+- platform-specific hardware error driver plug-ins WDK WHEA , registering
+- registering PSHED plug-ins WDK WHEA
+- PSHED plug-ins WDK WHEA , registering
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering a PSHED Plug-In

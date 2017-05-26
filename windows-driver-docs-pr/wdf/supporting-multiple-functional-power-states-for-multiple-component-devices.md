@@ -1,8 +1,13 @@
 ---
-title: WDF Multiple-Component Devices with Single or Multiple Functional Power States
+title: Multiple-Component Device, one or more Functional Power States
 author: windows-driver-content
 description: Supporting Multiple-Component Devices with Single or Multiple Functional Power States
 ms.assetid: D601A0F6-A035-4161-879A-D495518E7EC6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Multiple-Component Devices with Single or Multiple Functional Power States

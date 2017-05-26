@@ -3,7 +3,17 @@ title: Physical sensor model
 author: windows-driver-content
 description: Physical sensor model
 ms.assetid: D3887E09-E0A4-4FBC-9D26-344016047235
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Physical sensor model

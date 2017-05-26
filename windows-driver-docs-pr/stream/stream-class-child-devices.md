@@ -2,14 +2,17 @@
 title: Stream Class Child Devices
 author: windows-driver-content
 description: Stream Class Child Devices
-MS-HAID:
-- 'strmini-design\_f5b7427c-2446-4a23-a68d-d89f14fa9613.xml'
-- 'stream.stream\_class\_child\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2885a77d-5e39-4730-b715-99f0a426f273
-keywords: ["Stream.sys class driver WDK Windows 2000 Kernel , child devices", "streaming minidrivers WDK Windows 2000 Kernel , child devices", "minidrivers WDK Windows 2000 Kernel Streaming , child devices", "child devices WDK streaming minidriver"]
+keywords:
+- Stream.sys class driver WDK Windows 2000 Kernel , child devices
+- streaming minidrivers WDK Windows 2000 Kernel , child devices
+- minidrivers WDK Windows 2000 Kernel Streaming , child devices
+- child devices WDK streaming minidriver
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stream Class Child Devices

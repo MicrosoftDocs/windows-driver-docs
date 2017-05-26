@@ -1,10 +1,12 @@
 ---
-Description: 'Microsoft-provided in-box driver (Usbser.sys) for your Communications and CDC Control device.'
-MS-HAID: 'buses.usb\_driver\_installation\_based\_on\_compatible\_ids'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'USB serial driver (Usbser.sys)'
+Description: Microsoft-provided in-box driver (Usbser.sys) for your Communications and CDC Control device.
+title: USB serial driver (Usbser.sys)
+author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB serial driver (Usbser.sys)
@@ -43,7 +45,7 @@ Load the Microsoft-provided in-box driver (Usbser.sys) for your Communications a
 
 **Windows 10**
 
-In Windows 10, a new INF, Usbser.inf, has been added to %Systemroot%\\Inf that loads Usbser.sys as the function device object (FDO) in the device stack. If your device belongs to the Communications and CDC Control device class, Usbser.sys is loaded automatically. The driver is loaded based on a compatible ID match similar to [other USB device class drivers included in Windows](supported-usb-classes.md).
+In Windows 10, a new INF, Usbser.inf, has been added to %Systemroot%\\Inf that loads Usbser.sys as the function device object (FDO) in the device stack. If your device belongs to the Communications and CDC Control device class, Usbser.sys is loaded automatically.You do not need to write your own INF to reference the driver. The driver is loaded based on a compatible ID match similar to [other USB device class drivers included in Windows](supported-usb-classes.md).
 
 `USB\Class_02`
 
@@ -59,7 +61,9 @@ In Windows 10, a new INF, Usbser.inf, has been added to %Systemroot%\\Inf that 
 
 **Windows 8.1 and earlier versions**
 
-In Windows 8.1 and earlier versions of the operating system, Usbser.sys is not automatically loaded when a USB-to-serial device is attached to a computer. To load the driver, you need to write an INF that references the modem INF (mdmcpq.inf) and includes \[Install\] and \[Needs\] sections. Those sections are required for instantiating the service, copying inbox binaries, and registering a device interface GUID that applications require to find the device and talk to it. That INF specifies "Usbser" as a lower filter driver in a device stack.
+In Windows 8.1 and earlier versions of the operating system, Usbser.sys is not automatically loaded when a USB-to-serial device is attached to a computer. To load the driver, you need to write an INF that references the modem INF (mdmcpq.inf) by using the **Include** directive. The directive is required for instantiating the service, copying inbox binaries, and registering a device interface GUID that applications require to find the device and talk to it. That INF specifies "Usbser" as a lower filter driver in a device stack.
+
+The INF also needs to specify the device setup class as **Modem** to use mdmcpq.inf. Under the [Version] section of the INF, specify the **Modem** and the device class GUID. for details, see [System-Supplied Device Setup Classes](https://msdn.microsoft.com/library/windows/hardware/ff553419).
 
 ``` syntax
 [DDInstall.NT]
@@ -120,16 +124,10 @@ If you install Usbser.sys for the USB CDC device, here are the application progr
     -   [System.IO.Ports Namespace](https://msdn.microsoft.com/library/System.IO.Ports.aspx)
 
 ## Related topics
+[USB device class drivers included in Windows](supported-usb-classes.md)  
+[How to use or to reference the Usbser.sys driver from universal serial bus (USB) modem .inf files](https://support.microsoft.com/en-us/help/837637/how-to-use-or-to-reference-the-usbser.sys-driver-from-universal-serial-bus-usb-modem-.inf-files)
 
-
-[USB device class drivers included in Windows](supported-usb-classes.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20USB%20serial%20driver%20%28Usbser.sys%29%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

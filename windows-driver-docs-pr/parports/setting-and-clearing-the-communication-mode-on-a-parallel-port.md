@@ -2,14 +2,15 @@
 title: Setting and Clearing the Communication Mode on a Parallel Port
 author: windows-driver-content
 description: Setting and Clearing the Communication Mode on a Parallel Port
-MS-HAID:
-- 'vspd\_015cd500-d62c-48bb-b2d6-323e79142594.xml'
-- 'parports.setting\_and\_clearing\_the\_communication\_mode\_on\_a\_parallel\_port'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a22cdeef-4ae7-49f8-b0b5-a4d68feb4235
-keywords: ["parallel ports WDK , communication modes", "communication modes WDK parallel ports"]
+keywords:
+- parallel ports WDK , communication modes
+- communication modes WDK parallel ports
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting and Clearing the Communication Mode on a Parallel Port

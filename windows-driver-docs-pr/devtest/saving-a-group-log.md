@@ -2,7 +2,17 @@
 title: Saving a Group Log
 description: Saving a Group Log
 ms.assetid: 3e572e3e-68c9-4161-97bd-f93505ead496
-keywords: ["grouping trace sessions", "trace sessions WDK , groups", "saving trace group logs", "log files WDK TraceView , group logs", "log files WDK TraceView"]
+keywords:
+- grouping trace sessions
+- trace sessions WDK , groups
+- saving trace group logs
+- log files WDK TraceView , group logs
+- log files WDK TraceView
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Saving a Group Log

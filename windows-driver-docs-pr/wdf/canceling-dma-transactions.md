@@ -3,6 +3,11 @@ title: Canceling DMA Transactions
 author: windows-driver-content
 description: Canceling DMA Transactions
 ms.assetid: 1E1D659D-80C9-45B1-B96F-78E5A1EE4F6B
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Canceling DMA Transactions

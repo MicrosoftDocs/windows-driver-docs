@@ -2,14 +2,15 @@
 title: Port Monitor Client DLL Functions
 author: windows-driver-content
 description: Port Monitor Client DLL Functions
-MS-HAID:
-- 'provider\_daa4b059-7266-44b7-b1da-e98baccecbbc.xml'
-- 'print.port\_monitor\_client\_dll\_functions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 41efab1a-0638-4925-90a2-cf68d2306ca6
-keywords: ["port monitors WDK print , functions", "client DLL port monitor functions WDK"]
+keywords:
+- port monitors WDK print , functions
+- client DLL port monitor functions WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Port Monitor Client DLL Functions

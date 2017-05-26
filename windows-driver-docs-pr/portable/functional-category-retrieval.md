@@ -1,8 +1,11 @@
 ---
-Description: 'Functional-Category Retrieval'
-MS-HAID: 'wpddk.functional\_category\_retrieval'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Functional-Category Retrieval'
+Description: Functional-Category Retrieval
+title: Functional-Category Retrieval
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Functional-Category Retrieval

@@ -2,14 +2,16 @@
 title: Separating Nodes in Individual Filters
 author: windows-driver-content
 description: Separating Nodes in Individual Filters
-MS-HAID:
-- 'bdaov\_b0e8a0db-420b-4b62-9254-af740a4a4a28.xml'
-- 'stream.separating\_nodes\_in\_individual\_filters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9ae5c72a-a97b-48aa-80c1-bb8767701497
-keywords: ["control nodes WDK BDA", "nodes WDK BDA", "separating nodes in filters"]
+keywords:
+- control nodes WDK BDA
+- nodes WDK BDA
+- separating nodes in filters
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Separating Nodes in Individual Filters

@@ -2,14 +2,16 @@
 title: Sample CPSUI Application
 author: windows-driver-content
 description: Sample CPSUI Application
-MS-HAID:
-- 'cpsui\_e6eb3e37-5f79-4f0b-8872-d91312220a82.xml'
-- 'print.sample\_cpsui\_application'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 895afbfe-c18a-4bcc-b815-8cb323bbac80
-keywords: ["Common Property Sheet User Interface WDK print , samples", "CPSUI WDK print , samples", "property sheet pages WDK print , samples"]
+keywords:
+- Common Property Sheet User Interface WDK print , samples
+- CPSUI WDK print , samples
+- property sheet pages WDK print , samples
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample CPSUI Application

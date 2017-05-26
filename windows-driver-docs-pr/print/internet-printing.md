@@ -2,14 +2,19 @@
 title: Internet Printing
 author: windows-driver-content
 description: Internet Printing
-MS-HAID:
-- 'inetpri\_3191cd65-243a-4630-87d0-8cf0161090d7.xml'
-- 'print.internet\_printing'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: be448fee-a86e-4a78-8d50-5753a7b2c8f0
-keywords: ["printer drivers WDK , Internet", "Internet printing WDK", "print queues WDK , Internet printing", "queues WDK printer , Internet printing", "print Web pages WDK", "Web pages WDK printer"]
+keywords:
+- printer drivers WDK , Internet
+- Internet printing WDK
+- print queues WDK , Internet printing
+- queues WDK printer , Internet printing
+- print Web pages WDK
+- Web pages WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Internet Printing

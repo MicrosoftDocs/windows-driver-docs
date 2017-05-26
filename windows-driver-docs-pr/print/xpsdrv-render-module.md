@@ -2,14 +2,20 @@
 title: XPSDrv Render Module
 author: windows-driver-content
 description: XPSDrv Render Module
-MS-HAID:
-- 'xpsfiltpipe\_bee73107-bb78-4e96-9627-f8b13ffac9e1.xml'
-- 'print.xpsdrv\_render\_module'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e844e320-bd3d-4855-bb47-fdfbdb157802
-keywords: ["XPSDrv printer drivers WDK , render modules", "render modules WDK XPSDrv , about render modules", "filter pipelines WDK XPSDrv", "Filter Pipeline Manager WDK XPSDrv", "FPM WDK XPSDrv", "Inter-Filter Communicator WDK XPSDrv", "IFC WDK XPSDrv"]
+keywords:
+- XPSDrv printer drivers WDK , render modules
+- render modules WDK XPSDrv , about render modules
+- filter pipelines WDK XPSDrv
+- Filter Pipeline Manager WDK XPSDrv
+- FPM WDK XPSDrv
+- Inter-Filter Communicator WDK XPSDrv
+- IFC WDK XPSDrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XPSDrv Render Module

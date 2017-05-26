@@ -2,14 +2,14 @@
 title: Registry Settings for the Serial Service
 author: windows-driver-content
 description: Registry Settings for the Serial Service
-MS-HAID:
-- 'sseovr\_01592e4e-14e2-422a-87be-982a9759a24e.xml'
-- 'serports.registry\_settings\_for\_the\_serial\_service'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5c4a28ab-e2e5-45b4-8179-6f5d40e9c98c
-keywords: ["Serial service WDK"]
+keywords:
+- Serial service WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registry Settings for the Serial Service

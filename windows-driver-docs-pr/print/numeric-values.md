@@ -2,14 +2,15 @@
 title: Numeric Values
 author: windows-driver-content
 description: Numeric Values
-MS-HAID:
-- 'nt5gpd\_28e2faad-c428-4c64-bb4b-350dae45d780.xml'
-- 'print.numeric\_values'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4f1f4145-aeda-4770-9a49-d8fe701763c8
-keywords: ["GPD file entries WDK Unidrv , numeric values", "numeric values WDK GPD files"]
+keywords:
+- GPD file entries WDK Unidrv , numeric values
+- numeric values WDK GPD files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Numeric Values

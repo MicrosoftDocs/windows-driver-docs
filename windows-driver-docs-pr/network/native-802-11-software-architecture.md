@@ -2,7 +2,18 @@
 title: Native 802.11 Software Architecture
 description: Native 802.11 Software Architecture
 ms.assetid: fc2d90d8-478e-4511-acfa-3809de5b2748
-keywords: ["Native 802.11 WDK networking , software architecture", "independent hardware vendor extensions WDK Native 802.11", "IHV extensions WDK Native 802.11 , architecture", "wireless LAN networks WDK , Native 802.11 software architecture", "WLAN networks WDK , Native 802.11 software architecture", "Native 802.11 IHV Extensions WDK , software architecture"]
+keywords:
+- Native 802.11 WDK networking , software architecture
+- independent hardware vendor extensions WDK Native 802.11
+- IHV extensions WDK Native 802.11 , architecture
+- wireless LAN networks WDK , Native 802.11 software architecture
+- WLAN networks WDK , Native 802.11 software architecture
+- Native 802.11 IHV Extensions WDK , software architecture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 Software Architecture

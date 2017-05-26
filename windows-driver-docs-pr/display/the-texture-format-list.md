@@ -2,7 +2,15 @@
 title: The Texture Format List
 description: The Texture Format List
 ms.assetid: 5e60d6e3-d0a2-4b52-86cb-06de839f970a
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display , texture format lists", "texture format lists WDK DirectX 8.0", "DPIXELFORMAT"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display , texture format lists
+- texture format lists WDK DirectX 8.0
+- DPIXELFORMAT
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The Texture Format List

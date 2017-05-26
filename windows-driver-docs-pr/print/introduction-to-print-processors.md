@@ -2,14 +2,17 @@
 title: Introduction to Print Processors
 author: windows-driver-content
 description: Introduction to Print Processors
-MS-HAID:
-- 'provider\_84369bfb-43c6-4a96-9a59-2db977191082.xml'
-- 'print.introduction\_to\_print\_processors'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a34d8daa-b000-4501-8799-5f38cdf38ba4
-keywords: ["print processors WDK , about print processors", "customized print processors WDK", "print processors WDK , data types", "data types WDK print processor"]
+keywords:
+- print processors WDK , about print processors
+- customized print processors WDK
+- print processors WDK , data types
+- data types WDK print processor
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Print Processors

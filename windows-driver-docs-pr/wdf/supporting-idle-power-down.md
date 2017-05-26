@@ -3,7 +3,18 @@ title: Supporting Idle Power-Down
 author: windows-driver-content
 description: Some devices can enter a low-power (Dx) state while the system remains in its working (S0) state.
 ms.assetid: d0ce51db-eeb7-45ef-b823-248cd03ee2a9
-keywords: ["idle power-down WDK KMDF", "power management WDK KMDF , idle power-down", "wake-up capabilities WDK KMDF", "sleep power management WDK KMDF", "low-power states WDK KMDF", "system sleeping states WDK KMDF"]
+keywords:
+- idle power-down WDK KMDF
+- power management WDK KMDF , idle power-down
+- wake-up capabilities WDK KMDF
+- sleep power management WDK KMDF
+- low-power states WDK KMDF
+- system sleeping states WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Idle Power-Down

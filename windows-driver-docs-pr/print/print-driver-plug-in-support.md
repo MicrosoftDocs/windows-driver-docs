@@ -2,14 +2,15 @@
 title: Print Driver Plug-in Support
 author: windows-driver-content
 description: Print Driver Plug-in Support
-MS-HAID:
-- 'drvarch\_13be4750-d40f-455e-97e2-8c49d239f688.xml'
-- 'print.print\_driver\_plug\_in\_support'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fa072fc9-66da-46c2-a270-6f604860aaff
-keywords: ["Print Capabilities WDK , plug-ins", "IPrintOemPrintTicketProvider"]
+keywords:
+- Print Capabilities WDK , plug-ins
+- IPrintOemPrintTicketProvider
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Driver Plug-in Support

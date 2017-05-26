@@ -3,6 +3,11 @@ title: Breaking Oplocks
 author: windows-driver-content
 description: Breaking Oplocks
 ms.assetid: 1f3c4a99-5ad2-4597-a1c9-a21f80c40291
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Breaking Oplocks
@@ -33,19 +38,19 @@ When Level 2, Read, and, under certain circumstances (see note), Read-Handle opl
 
 There are certain file system operations which check the current oplock state to determine if the oplock needs to be broken. The following sections list each operation and describe what triggers an oplock break, what determines the level to which the oplock breaks, and whether an acknowledgment of the break is required:
 
-[IRP\_MJ\_CREATE](irp-mj-create2.md)
+- [IRP_MJ_CREATE](irp-mj-create2.md)
 
-[IRP\_MJ\_READ](irp-mj-read2.md)
+- [IRP_MJ_READ](irp-mj-read2.md)
 
-[IRP\_MJ\_WRITE](irp-mj-write2.md)
+- [IRP_MJ_WRITE](irp-mj-write2.md)
 
-[IRP\_MJ\_CLEANUP](irp-mj-cleanup2.md)
+- [IRP_MJ_CLEANUP](irp-mj-cleanup2.md)
 
-[IRP\_MJ\_LOCK\_CONTROL](irp-mj-lock-control2.md)
+- [IRP_MJ_LOCK_CONTROL](irp-mj-lock-control2.md)
 
-[IRP\_MJ\_SET\_INFORMATION](irp-mj-set-information2.md)
+- [IRP_MJ_SET_INFORMATION](irp-mj-set-information2.md)
 
-[IRP\_MJ\_FILE\_SYSTEM\_CONTROL](irp-mj-file-system-control2.md)
+- [IRP_MJ_FILE_SYSTEM_CONTROL](irp-mj-file-system-control2.md)
 
 A break of a Windows 7 oplock requires an acknowledgment if the REQUEST\_OPLOCK\_OUTPUT\_FLAG\_ACK\_REQUIRED flag is set in the **Flags** member of the REQUEST\_OPLOCK\_OUTPUT\_BUFFER structure passed as the output parameter of [DeviceIoControl](http://go.microsoft.com/fwlink/p/?linkid=124239)(*lpOutBuffer*), [**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988)(*OutBuffer*) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)(*OutBuffer*). For more information, see [**FSCTL\_REQUEST\_OPLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff545530).
 

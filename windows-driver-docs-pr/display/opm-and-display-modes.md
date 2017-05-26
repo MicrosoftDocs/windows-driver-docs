@@ -2,6 +2,11 @@
 title: OPM and Display Modes
 description: OPM and Display Modes
 ms.assetid: d412a32b-7afd-4f48-9b8e-7cf66533349f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # OPM and Display Modes

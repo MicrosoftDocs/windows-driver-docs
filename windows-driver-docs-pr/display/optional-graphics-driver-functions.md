@@ -2,7 +2,19 @@
 title: Optional Graphics Driver Functions
 description: Optional Graphics Driver Functions
 ms.assetid: 3cdef152-4bcc-426a-9aa7-fd94acf2331f
-keywords: ["GDI WDK Windows 2000 display , functions, optional", "graphics drivers WDK Windows 2000 display , functions, optional", "functions WDK graphics , optional", "drawing WDK GDI , functions, optional", "GDI WDK Windows 2000 display , DDI, optional functions", "graphics drivers WDK Windows 2000 display , DDI, optional functions", "DDI WDK graphics , optional functions"]
+keywords:
+- GDI WDK Windows 2000 display , functions, optional
+- graphics drivers WDK Windows 2000 display , functions, optional
+- functions WDK graphics , optional
+- drawing WDK GDI , functions, optional
+- GDI WDK Windows 2000 display , DDI, optional functions
+- graphics drivers WDK Windows 2000 display , DDI, optional functions
+- DDI WDK graphics , optional functions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Optional Graphics Driver Functions

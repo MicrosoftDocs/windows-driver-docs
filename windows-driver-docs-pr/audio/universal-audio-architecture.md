@@ -2,7 +2,22 @@
 title: Universal Audio Architecture
 description: The Microsoft Universal Audio Architecture (UAA) enables audio devices that comply with the architecture to rely entirely on the operating system for driver support.
 ms.assetid: a42eff33-7952-4004-903d-9b202d1864b9
-keywords: ["UAA WDK", "Universal Audio Architecture WDK", "audio devices WDK UAA", "PCI audio adapters WDK", "USB WDK audio", "IEEE 1394 WDK audio", "Intel High Definition Audio Specification", "WDM audio drivers WDK , Universal Audio Architecture", "audio drivers WDK , Universal Audio Architecture", "1394 WDK audio"]
+keywords:
+- UAA WDK
+- Universal Audio Architecture WDK
+- audio devices WDK UAA
+- PCI audio adapters WDK
+- USB WDK audio
+- IEEE 1394 WDK audio
+- Intel High Definition Audio Specification
+- WDM audio drivers WDK , Universal Audio Architecture
+- audio drivers WDK , Universal Audio Architecture
+- 1394 WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Universal Audio Architecture

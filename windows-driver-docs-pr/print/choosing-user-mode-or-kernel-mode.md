@@ -2,14 +2,17 @@
 title: Choosing User Mode or Kernel Mode
 author: windows-driver-content
 description: Choosing User Mode or Kernel Mode
-MS-HAID:
-- 'drvarch\_779ca1c4-513e-45ce-8280-7f0e6e672de1.xml'
-- 'print.choosing\_user\_mode\_or\_kernel\_mode'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1e63d01e-8cf2-488a-89e8-d4a3ff5cfe19
-keywords: ["printer graphics DLL WDK , user-mode vs. kernel-mode", "graphics DLL WDK printer , user-mode vs. kernel-mode", "user-mode execution WDK printer graphics", "kernel-mode execution WDK printer graphics"]
+keywords:
+- printer graphics DLL WDK , user-mode vs. kernel-mode
+- graphics DLL WDK printer , user-mode vs. kernel-mode
+- user-mode execution WDK printer graphics
+- kernel-mode execution WDK printer graphics
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Choosing User Mode or Kernel Mode

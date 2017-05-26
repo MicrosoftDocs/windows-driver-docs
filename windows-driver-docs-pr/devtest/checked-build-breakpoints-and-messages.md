@@ -2,7 +2,16 @@
 title: Checked Build Breakpoints and Messages
 description: Checked Build Breakpoints and Messages
 ms.assetid: 99b27487-eb95-4303-bad6-0b7ed8b450f0
-keywords: ["breakpoints WDK", "checked builds WDK , breakpoints", "checked builds WDK , messages", "messages WDK checked builds"]
+keywords:
+- breakpoints WDK
+- checked builds WDK , breakpoints
+- checked builds WDK , messages
+- messages WDK checked builds
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Checked Build Breakpoints and Messages

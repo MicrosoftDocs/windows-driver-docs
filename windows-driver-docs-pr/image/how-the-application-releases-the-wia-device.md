@@ -2,13 +2,12 @@
 title: How the Application Releases the WIA Device
 author: windows-driver-content
 description: How the Application Releases the WIA Device
-MS-HAID:
-- 'WIA\_drv\_basic\_66c11c75-ca8f-422e-978c-f2fcf806cb32.xml'
-- 'image.how\_the\_application\_releases\_the\_wia\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 694daed4-d794-4835-a052-27cc498baa10
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How the Application Releases the WIA Device

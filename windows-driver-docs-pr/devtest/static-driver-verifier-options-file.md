@@ -2,7 +2,18 @@
 title: Static Driver Verifier Options File
 description: Static Driver Verifier Options File
 ms.assetid: 694fbaef-6bff-4ecb-a271-a0313dae1d6c
-keywords: ["Static Driver Verifier WDK , input files", "StaticDV WDK , input files", "SDV WDK , input files", "input files WDK Static Driver Verifier", "files WDK Static Driver Verifier", "options files WDK Static Driver Verifier"]
+keywords:
+- Static Driver Verifier WDK , input files
+- StaticDV WDK , input files
+- SDV WDK , input files
+- input files WDK Static Driver Verifier
+- files WDK Static Driver Verifier
+- options files WDK Static Driver Verifier
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Static Driver Verifier Options File

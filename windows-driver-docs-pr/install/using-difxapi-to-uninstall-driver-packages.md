@@ -2,6 +2,11 @@
 title: Using DIFxAPI to Uninstall Driver Packages
 description: Using DIFxAPI to Uninstall Driver Packages
 ms.assetid: 2a3a9cb8-7418-41dd-b071-a2f25155c2be
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using DIFxAPI to Uninstall Driver Packages

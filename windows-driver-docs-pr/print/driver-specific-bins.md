@@ -2,14 +2,14 @@
 title: Driver-Specific Bins
 author: windows-driver-content
 description: Driver-Specific Bins
-MS-HAID:
-- 'autocfg\_14eb1a62-d3b8-440d-a68b-cea7e28deb50.xml'
-- 'print.driver\_specific\_bins'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4c014e64-9e82-4058-9ec9-51769102f815
-keywords: ["device-specific bins WDK printer"]
+keywords:
+- device-specific bins WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver-Specific Bins

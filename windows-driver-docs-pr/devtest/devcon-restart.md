@@ -2,13 +2,19 @@
 title: DevCon Restart
 description: Stops and restarts the specified devices. Valid only on the local computer.
 ms.assetid: 3d16435d-e80d-408c-8e61-fad4a5aa7b9b
-keywords: ["DevCon Restart Driver Development Tools"]
+keywords:
+- DevCon Restart Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - DevCon Restart
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DevCon Restart

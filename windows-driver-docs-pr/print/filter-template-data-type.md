@@ -2,14 +2,20 @@
 title: Filter Template Data Type
 author: windows-driver-content
 description: Filter Template Data Type
-MS-HAID:
-- 'gplfiles\_3f6657ae-df87-4dc5-9b56-366d2455f238.xml'
-- 'print.filter\_template\_data\_type'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cfbe8f39-9a8d-4e6b-91d8-f25926057e7b
-keywords: ["templates WDK GDL , data types", "data types WDK GDL , primitive", "FILTER_TYPE data type WDK GDL", "ArrayLabel directive WDK GDL", "ElementType directive WDK GDL", "FilterTypeName directive WDK GDL", "ElementTags directive WDK GDL"]
+keywords:
+- templates WDK GDL , data types
+- data types WDK GDL , primitive
+- FILTER_TYPE data type WDK GDL
+- ArrayLabel directive WDK GDL
+- ElementType directive WDK GDL
+- FilterTypeName directive WDK GDL
+- ElementTags directive WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Filter Template Data Type

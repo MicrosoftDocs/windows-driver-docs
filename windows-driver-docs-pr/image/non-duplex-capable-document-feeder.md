@@ -2,13 +2,12 @@
 title: Non-Duplex-Capable Document Feeder
 author: windows-driver-content
 description: Non-Duplex-Capable Document Feeder
-MS-HAID:
-- 'WIA\_scanner\_tree\_69baa038-21d4-4f70-b70b-3627e82b76ae.xml'
-- 'image.non\_duplex\_capable\_document\_feeder'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e22ec1bb-623e-45c6-88f4-d3b6a45fa175
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Non-Duplex-Capable Document Feeder

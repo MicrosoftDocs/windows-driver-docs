@@ -2,7 +2,19 @@
 title: Handling NDIS Ports PnP Event Notifications
 description: Handling NDIS Ports PnP Event Notifications
 ms.assetid: 2f542b62-43a0-42fa-b72d-f789e029d3f0
-keywords: ["ports WDK NDIS , PnP event notifications", "NDIS ports WDK , PnP event notifications", "PnP event notifications WDK NDIS ports", "event notifications WDK networking", "notifications WDK networking", "notifications WDK PnP , NDIS ports", "events WDK networkin"]
+keywords:
+- ports WDK NDIS , PnP event notifications
+- NDIS ports WDK , PnP event notifications
+- PnP event notifications WDK NDIS ports
+- event notifications WDK networking
+- notifications WDK networking
+- notifications WDK PnP , NDIS ports
+- events WDK networkin
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling NDIS Ports PnP Event Notifications

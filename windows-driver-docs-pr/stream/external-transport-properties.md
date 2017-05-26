@@ -2,14 +2,16 @@
 title: External Transport Properties
 author: windows-driver-content
 description: External Transport Properties
-MS-HAID:
-- 'vidcapds\_fdc7fc6f-f341-4b5d-ae67-f19b7c5cb6a5.xml'
-- 'stream.external\_transport\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e57e6c13-dfa3-4bec-9136-0e2bb2ffdd56
-keywords: ["external transport properties WDK video capture", "transport properties WDK video capture", "PROPSETID_EXT_TRANSPORT"]
+keywords:
+- external transport properties WDK video capture
+- transport properties WDK video capture
+- PROPSETID_EXT_TRANSPORT
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # External Transport Properties

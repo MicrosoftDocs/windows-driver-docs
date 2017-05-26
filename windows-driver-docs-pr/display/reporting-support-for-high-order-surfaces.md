@@ -2,7 +2,14 @@
 title: Reporting Support for High Order Surfaces
 description: Reporting Support for High Order Surfaces
 ms.assetid: cf214ed7-2c06-4dc6-8c73-c2a3f51332ab
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display , high order surfaces, reporting support", "high order surfaces WDK DirectX 8.0 , reporting support"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display , high order surfaces, reporting support
+- high order surfaces WDK DirectX 8.0 , reporting support
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting Support for High Order Surfaces

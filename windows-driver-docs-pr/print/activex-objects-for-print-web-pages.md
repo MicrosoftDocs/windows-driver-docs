@@ -2,14 +2,17 @@
 title: ActiveX Objects for Print Web Pages
 author: windows-driver-content
 description: ActiveX Objects for Print Web Pages
-MS-HAID:
-- 'inetpri\_b8be201b-872c-469e-b319-f9a6ee5a36df.xml'
-- 'print.activex\_objects\_for\_print\_web\_pages'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 85c37895-542f-4399-bf87-517eaab99a09
-keywords: ["print Web pages WDK , ActiveX objects", "Web pages WDK printer , ActiveX objects", "customized print Web pages WDK , ActiveX objects", "ActiveX objects WDK printer"]
+keywords:
+- print Web pages WDK , ActiveX objects
+- Web pages WDK printer , ActiveX objects
+- customized print Web pages WDK , ActiveX objects
+- ActiveX objects WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ActiveX Objects for Print Web Pages

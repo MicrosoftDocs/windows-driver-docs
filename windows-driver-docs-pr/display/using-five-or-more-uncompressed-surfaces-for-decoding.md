@@ -2,7 +2,19 @@
 title: Using Five or More Uncompressed Surfaces for Decoding
 description: Using Five or More Uncompressed Surfaces for Decoding
 ms.assetid: 7cd09d7a-6700-4079-97bd-0b0151705b82
-keywords: ["video decoding WDK DirectX VA , sequence requirements", "decoding video WDK DirectX VA , sequence requirements", "picture decoding WDK DirectX VA , sequence requirements", "sequence requirements WDK DirectX VA", "succession requirements WDK DirectX VA", "multiple uncompressed surfaces for decoding WDK DirectX VA", "uncompressed surfaces example for decoding WDK DirectX VA"]
+keywords:
+- video decoding WDK DirectX VA , sequence requirements
+- decoding video WDK DirectX VA , sequence requirements
+- picture decoding WDK DirectX VA , sequence requirements
+- sequence requirements WDK DirectX VA
+- succession requirements WDK DirectX VA
+- multiple uncompressed surfaces for decoding WDK DirectX VA
+- uncompressed surfaces example for decoding WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Five or More Uncompressed Surfaces for Decoding

@@ -2,7 +2,18 @@
 title: Operating System Upgrades
 description: Operating System Upgrades
 ms.assetid: f985967e-e6cf-431a-bb7e-7b6d8486709c
-keywords: ["audio adapters WDK , operating system upgrades", "adapter drivers WDK audio , operating system upgrades", "Port Class audio adapters WDK , operating system upgrades", "preserving audio settings WDK audio", "migration DLL WDK audio", "migrating settings WDK audio"]
+keywords:
+- audio adapters WDK , operating system upgrades
+- adapter drivers WDK audio , operating system upgrades
+- Port Class audio adapters WDK , operating system upgrades
+- preserving audio settings WDK audio
+- migration DLL WDK audio
+- migrating settings WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Operating System Upgrades

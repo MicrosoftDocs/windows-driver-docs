@@ -2,7 +2,17 @@
 title: Network Programming Interface
 description: Network Programming Interface
 ms.assetid: 74d706e1-5398-4685-b3ab-7b4c4b6b5588
-keywords: ["NPI WDK Network Module Registrar", "client characteristics structure WDK Network Module Registrar", "provider characteristics structure WDK Network Module Registrar", "client dispatch tables WDK Network Module Registrar", "dispatch tables WDK Network Module Registrar"]
+keywords:
+- NPI WDK Network Module Registrar
+- client characteristics structure WDK Network Module Registrar
+- provider characteristics structure WDK Network Module Registrar
+- client dispatch tables WDK Network Module Registrar
+- dispatch tables WDK Network Module Registrar
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network Programming Interface

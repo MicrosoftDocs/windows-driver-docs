@@ -2,7 +2,15 @@
 title: Native 802.11 Network Operations
 description: Native 802.11 Network Operations
 ms.assetid: 86ae8be6-b3b4-445d-95b6-8c1c7ae9c68d
-keywords: ["Native 802.11 miniport drivers WDK networking , network operations", "miniport drivers WDK Native 802.11 , network operations", "network operations WDK Native 802.11"]
+keywords:
+- Native 802.11 miniport drivers WDK networking , network operations
+- miniport drivers WDK Native 802.11 , network operations
+- network operations WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 Network Operations

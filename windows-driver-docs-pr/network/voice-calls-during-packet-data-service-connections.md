@@ -2,6 +2,11 @@
 title: Voice Calls during Packet Data Service Connections
 description: Voice Calls during Packet Data Service Connections
 ms.assetid: 441d2fea-eb39-4af5-a8de-c288c81be99a
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Voice Calls during Packet Data Service Connections

@@ -2,13 +2,12 @@
 title: WS-DSD Scenario Create a Scan Process
 author: windows-driver-content
 description: WS-DSD Scenario Create a Scan Process
-MS-HAID:
-- 'dsm\_des\_theory\_d150d651-23f3-4e0a-9ce1-8fc901957d75.xml'
-- 'image.ws\_dsd\_scenario\_\_create\_a\_scan\_process'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ba321bf0-26d6-41e0-8d80-91519594eee3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WS-DSD Scenario: Create a Scan Process

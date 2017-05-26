@@ -2,14 +2,15 @@
 title: Printer INF File Entries
 author: windows-driver-content
 description: Printer INF File Entries
-MS-HAID:
-- 'prtinst\_90f747b5-4c87-4d93-84af-fc2940561beb.xml'
-- 'print.printer\_inf\_file\_entries'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 897072bb-e481-4c8d-a2bf-57b19c69ac0e
-keywords: ["INF files WDK print , entries", "dependent files WDK printer"]
+keywords:
+- INF files WDK print , entries
+- dependent files WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer INF File Entries

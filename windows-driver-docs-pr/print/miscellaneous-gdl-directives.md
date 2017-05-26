@@ -2,14 +2,17 @@
 title: Miscellaneous GDL Directives
 author: windows-driver-content
 description: Miscellaneous GDL Directives
-MS-HAID:
-- 'gplfiles\_766de68b-d586-47a2-a450-029b904eeaa2.xml'
-- 'print.miscellaneous\_gdl\_directives'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8a1c4bdf-7a84-44b5-8dad-4518edc2b560
-keywords: ["directives WDK GDL , miscellaneous directives", "source files WDK GDL , miscellaneous directives", "parser WDK GDL , directives", "IgnoreBlock directive WDK GDL"]
+keywords:
+- directives WDK GDL , miscellaneous directives
+- source files WDK GDL , miscellaneous directives
+- parser WDK GDL , directives
+- IgnoreBlock directive WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Miscellaneous GDL Directives

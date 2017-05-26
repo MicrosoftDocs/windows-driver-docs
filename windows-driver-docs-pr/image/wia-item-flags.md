@@ -2,13 +2,12 @@
 title: WIA Item Flags
 author: windows-driver-content
 description: WIA Item Flags
-MS-HAID:
-- 'WIA\_tree\_5cc18bfb-06b9-4c92-a57e-69986b427aaa.xml'
-- 'image.wia\_item\_flags'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2b96bc23-705b-47f0-811c-1cb4a8be8b34
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Item Flags

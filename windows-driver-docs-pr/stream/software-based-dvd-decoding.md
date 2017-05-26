@@ -2,14 +2,16 @@
 title: Software-based DVD Decoding
 author: windows-driver-content
 description: Software-based DVD Decoding
-MS-HAID:
-- 'dvd-design\_1daf4143-0fae-44a7-bc94-1ed48caf1a65.xml'
-- 'stream.software\_based\_dvd\_decoding'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 23181ace-563b-4920-b4c3-4fc4452a10b3
-keywords: ["DVD decoder minidrivers WDK , software-based DVD decoding", "decoder minidrivers WDK DVD , software-based DVD decoding", "software-based DVD decoding WDK"]
+keywords:
+- DVD decoder minidrivers WDK , software-based DVD decoding
+- decoder minidrivers WDK DVD , software-based DVD decoding
+- software-based DVD decoding WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Software-based DVD Decoding

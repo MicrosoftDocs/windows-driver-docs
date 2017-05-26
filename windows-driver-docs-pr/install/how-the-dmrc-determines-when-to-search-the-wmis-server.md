@@ -2,6 +2,11 @@
 title: How the DMRC Determines When to Search the WMIS Server
 description: How the DMRC Determines When to Search the WMIS Server
 ms.assetid: dc68045e-85c2-443d-9e4d-099bbd21590d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How the DMRC Determines When to Search the WMIS Server

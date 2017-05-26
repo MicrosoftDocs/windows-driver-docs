@@ -2,14 +2,17 @@
 title: In-Box Support for Autoconfiguration
 author: windows-driver-content
 description: In-Box Support for Autoconfiguration
-MS-HAID:
-- 'autocfg\_124e7bcd-5b91-43f6-8953-5d3bf20fabab.xml'
-- 'print.in\_box\_support\_for\_autoconfiguration'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cd2faef4-96ba-4d11-99f6-90e41ae2e283
-keywords: ["autoconfiguration WDK printer , in-box support", "printer autoconfiguration WDK printer , in-box support", "in-box autoconfiguration support WDK printer", "in-box autoconfiguration support WDK printer , about in-box autoconfiguration support"]
+keywords:
+- autoconfiguration WDK printer , in-box support
+- printer autoconfiguration WDK printer , in-box support
+- in-box autoconfiguration support WDK printer
+- in-box autoconfiguration support WDK printer , about in-box autoconfiguration support
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # In-Box Support for Autoconfiguration

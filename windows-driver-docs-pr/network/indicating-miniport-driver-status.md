@@ -2,7 +2,16 @@
 title: Indicating Miniport Driver Status
 description: Indicating Miniport Driver Status
 ms.assetid: 366caecb-6c4b-42f3-927d-b72db764d6cf
-keywords: ["status information WDK CoNDIS", "connection-oriented NDIS WDK , miniport drivers", "CoNDIS WDK networking , miniport drivers", "miniport drivers WDK networking , CoNDIS"]
+keywords:
+- status information WDK CoNDIS
+- connection-oriented NDIS WDK , miniport drivers
+- CoNDIS WDK networking , miniport drivers
+- miniport drivers WDK networking , CoNDIS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Indicating Miniport Driver Status

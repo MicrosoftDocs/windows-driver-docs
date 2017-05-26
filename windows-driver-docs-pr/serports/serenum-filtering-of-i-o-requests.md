@@ -2,14 +2,16 @@
 title: Serenum Filtering of I/O Requests
 author: windows-driver-content
 description: Serenum Filtering of I/O Requests
-MS-HAID:
-- 'sseovr\_2ab60ed7-248a-457d-a03d-43650056b99c.xml'
-- 'serports.serenum\_filtering\_of\_i\_o\_requests'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 773688b8-3d5a-48ed-8f20-368cf35fa6e2
-keywords: ["Serenum driver WDK , I/O request filtering", "I/O request filtering WDK Serenum", "filtering I/O requests WDK serial devices"]
+keywords:
+- Serenum driver WDK , I/O request filtering
+- I/O request filtering WDK Serenum
+- filtering I/O requests WDK serial devices
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Serenum Filtering of I/O Requests

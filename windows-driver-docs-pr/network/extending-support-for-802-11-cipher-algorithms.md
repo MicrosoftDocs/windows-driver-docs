@@ -2,7 +2,18 @@
 title: Extending Support for 802.11 Cipher Algorithms
 description: Extending Support for 802.11 Cipher Algorithms
 ms.assetid: 2c58e839-f33a-4151-b680-3528ae43922a
-keywords: ["extending functionality WDK Native 802.11", "Extensible Station cipher algorithms WDK Native 802.11", "ExtSTA cipher algorithms WDK Native 802.11", "algorithms WDK Native 802.11 cipher", "cipher operations WDK Native 802.11 , extending support", "cipher operations WDK Native 802.11 , cipher algorithms"]
+keywords:
+- extending functionality WDK Native 802.11
+- Extensible Station cipher algorithms WDK Native 802.11
+- ExtSTA cipher algorithms WDK Native 802.11
+- algorithms WDK Native 802.11 cipher
+- cipher operations WDK Native 802.11 , extending support
+- cipher operations WDK Native 802.11 , cipher algorithms
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extending Support for 802.11 Cipher Algorithms

@@ -1,14 +1,20 @@
 ---
 title: INF UpdateInis Directive
-description: An UpdateInis directive references one or more named sections, specifying an INI file from which a particular section or line is to be read and applied to an existing INI file of the same name on the target computer.
+description: An UpdateInis directive specifies an INI file from which to read a section to be applied to an existing INI file of the same name on a target computer.
 ms.assetid: c4717b6c-dc2d-45ba-8b39-3fc33e49466e
-keywords: ["INF UpdateInis Directive Device and Driver Installation"]
+keywords:
+- INF UpdateInis Directive Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF UpdateInis Directive
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF UpdateInis Directive

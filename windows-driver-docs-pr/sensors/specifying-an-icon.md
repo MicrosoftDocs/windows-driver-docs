@@ -2,13 +2,12 @@
 title: Specifying a sensor icon
 author: windows-driver-content
 description: Specifying a sensor icon
-MS-HAID:
-- 'Sensor\_DG\_DevelopmentBasics\_464e41d7-e1a8-4139-a20e-097c35c3c713.xml'
-- 'sensors.specifying\_an\_icon'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fe4a204f-befb-45d4-ad95-03b9e788e375
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying a sensor icon

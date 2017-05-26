@@ -2,6 +2,11 @@
 title: Overview of Data Center Bridging
 description: Overview of Data Center Bridging
 ms.assetid: FEB3FDBB-8A3C-4907-A6D0-CB5E94BCFEFF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Data Center Bridging

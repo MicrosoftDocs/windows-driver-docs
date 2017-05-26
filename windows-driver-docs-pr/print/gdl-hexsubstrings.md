@@ -2,14 +2,17 @@
 title: GDL HexSubStrings
 author: windows-driver-content
 description: GDL HexSubStrings
-MS-HAID:
-- 'gplfiles\_df9650ed-5783-411a-9578-d47757987fd2.xml'
-- 'print.gdl\_hexsubstrings'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7451fd1f-a765-486a-bd90-bc01eac2c388
-keywords: ["constructs WDK GDL , strings", "GDL WDK , strings", "strings WDK GDL , HexSubString", "HexSubString WDK GDL"]
+keywords:
+- constructs WDK GDL , strings
+- GDL WDK , strings
+- strings WDK GDL , HexSubString
+- HexSubString WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL HexSubStrings

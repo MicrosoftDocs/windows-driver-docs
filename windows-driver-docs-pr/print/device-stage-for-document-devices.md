@@ -2,13 +2,12 @@
 title: Device Stage for Document Devices
 author: windows-driver-content
 description: Device Stage for Document Devices
-MS-HAID:
-- 'prn\_dxpui\_eac6d1c4-35a8-4ed8-b20b-18deb8f4f3ab.xml'
-- 'print.device\_stage\_for\_document\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7188573a-d214-4f57-8b92-013c06e53d9e
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Stage for Document Devices

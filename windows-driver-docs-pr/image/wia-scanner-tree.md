@@ -2,13 +2,12 @@
 title: WIA Scanner Tree
 author: windows-driver-content
 description: WIA Scanner Tree
-MS-HAID:
-- 'WIA\_tree\_72242c8a-506e-4dc9-9234-c0b15bcedebf.xml'
-- 'image.wia\_scanner\_tree'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bd1452b9-1926-4dd6-b94c-e44f07573266
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Scanner Tree

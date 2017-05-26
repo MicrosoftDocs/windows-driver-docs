@@ -2,14 +2,17 @@
 title: Mutexes in AVStream
 author: windows-driver-content
 description: Mutexes in AVStream
-MS-HAID:
-- 'avsover\_06f6ddb2-6da8-4d9f-82fb-d4e7cb97c632.xml'
-- 'stream.mutexes\_in\_avstream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 011edaaa-7449-41c3-8cfb-0d319901af8b
-keywords: ["AVStream mutexes WDK", "mutexes WDK AVStream", "objects WDK AVStream", "hierarchy WDK AVStream"]
+keywords:
+- AVStream mutexes WDK
+- mutexes WDK AVStream
+- objects WDK AVStream
+- hierarchy WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mutexes in AVStream

@@ -2,6 +2,11 @@
 title: Handling Status Indications in a Protocol Driver
 description: Handling Status Indications in a Protocol Driver
 ms.assetid: 1a021919-fd27-49b2-95a0-5ccb9029abd4
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Status Indications in a Protocol Driver

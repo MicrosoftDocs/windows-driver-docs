@@ -2,10 +2,12 @@
 title: System and device firmware updates via a firmware driver package
 author: windows-driver-content
 description: Deploying a firmware update using a firmware driver package follows a relatively simple process that can be divided into three phases
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: D649234A-B757-41A6-B2C1-6D43775FF999
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # System and device firmware updates via a firmware driver package

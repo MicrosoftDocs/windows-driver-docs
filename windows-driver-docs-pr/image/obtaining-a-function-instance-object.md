@@ -2,13 +2,12 @@
 title: Obtaining a Function Instance Object
 author: windows-driver-content
 description: Obtaining a Function Instance Object
-MS-HAID:
-- 'WIA\_wsd\_scan\_9446ed50-f28b-42a2-8245-8f426ac04999.xml'
-- 'image.obtaining\_a\_function\_instance\_object'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2c750281-031b-4b9f-9012-3b341ebe1cd9
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Obtaining a Function Instance Object

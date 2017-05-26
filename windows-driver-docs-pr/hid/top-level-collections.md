@@ -2,14 +2,14 @@
 title: Top-Level Collections
 author: windows-driver-content
 description: Top-Level Collections
-MS-HAID:
-- 'hidclass\_988aac38-032e-4f7d-82d4-e27fa641713b.xml'
-- 'hid.top\_level\_collections'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dcbee8e3-d03a-45c8-92e4-0897b9f55177
-keywords: ["top-level collections WDK HID"]
+keywords:
+- top-level collections WDK HID
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Top-Level Collections

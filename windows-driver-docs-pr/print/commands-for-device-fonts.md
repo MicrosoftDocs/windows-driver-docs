@@ -2,14 +2,15 @@
 title: Commands for Device Fonts
 author: windows-driver-content
 description: Commands for Device Fonts
-MS-HAID:
-- 'nt5gpd\_f7aa8213-e1d1-456c-a64d-f3272d8c6f50.xml'
-- 'print.commands\_for\_device\_fonts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c74ed63c-819a-4451-bc18-816713689d3e
-keywords: ["device fonts WDK Unidrv", "font commands WDK Unidrv"]
+keywords:
+- device fonts WDK Unidrv
+- font commands WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Commands for Device Fonts

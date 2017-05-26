@@ -2,7 +2,14 @@
 title: PCM High Bitdepth Stream Data Range
 description: PCM High Bitdepth Stream Data Range
 ms.assetid: 4f3d48ff-e01d-4c80-b493-253afdba6fd7
-keywords: ["PCM high-bitdepth stream data ranges WDK", "high-bitdepth stream data ranges WDK"]
+keywords:
+- PCM high-bitdepth stream data ranges WDK
+- high-bitdepth stream data ranges WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PCM High Bitdepth Stream Data Range

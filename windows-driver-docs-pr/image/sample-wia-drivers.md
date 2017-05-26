@@ -2,13 +2,12 @@
 title: Sample WIA Drivers
 author: windows-driver-content
 description: Sample WIA Drivers
-MS-HAID:
-- 'WIA\_GS\_c1406aa8-1c77-4847-b44d-19a20d6f4fa3.xml'
-- 'image.sample\_wia\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1d69602f-67d7-4000-b499-aa448fd50fef
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample WIA Drivers

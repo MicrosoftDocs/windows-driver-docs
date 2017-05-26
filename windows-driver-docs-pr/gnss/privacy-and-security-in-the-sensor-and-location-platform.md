@@ -2,13 +2,12 @@
 title: Privacy and Security in the Sensor and Location Platform
 author: windows-driver-content
 description: Privacy and Security in the Sensor and Location Platform
-MS-HAID:
-- 'Sensor\_DG\_PrivacySecurity\_db032110-f125-4d57-9ec7-d0a67c471db7.xml'
-- 'sensors.privacy\_and\_security\_in\_the\_sensor\_and\_location\_platform'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9defb163-4de6-46cc-b817-d3e6291137be
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Privacy and Security in the Sensor and Location Platform

@@ -3,13 +3,24 @@ title: User Control of Device Idle and Wake Behavior in UMDF
 author: windows-driver-content
 description: User Control of Device Idle and Wake Behavior in UMDF
 ms.assetid: 9341c412-dd0a-4e80-a164-250e24004082
-keywords: ["power management WDK UMDF , idle power-down", "power management WDK UMDF , wake-up", "idle power-down capabilities WDK UMDF", "idle power-down capabilities WDK UMDF , user control", "wake-up capabilities WDK UMDF", "wake-up capabilities WDK UMDF , user control"]
+keywords:
+- power management WDK UMDF , idle power-down
+- power management WDK UMDF , wake-up
+- idle power-down capabilities WDK UMDF
+- idle power-down capabilities WDK UMDF , user control
+- wake-up capabilities WDK UMDF
+- wake-up capabilities WDK UMDF , user control
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # User Control of Device Idle and Wake Behavior in UMDF
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 If a device has idle power-down or wake-up capabilities, you can decide whether users should be allowed to enable or disable these capabilities.
 

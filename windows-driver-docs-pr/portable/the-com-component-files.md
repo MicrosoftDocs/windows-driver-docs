@@ -1,8 +1,11 @@
 ---
 Description: The COM Component Files
-MS-HAID: 'wpddk.the\_com\_component\_files'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: The COM Component Files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The COM Component Files

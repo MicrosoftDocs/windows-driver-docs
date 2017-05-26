@@ -2,13 +2,12 @@
 title: WIA Samples and Tools
 author: windows-driver-content
 description: WIA Samples and Tools
-MS-HAID:
-- 'WIA\_GS\_1f75c80c-131e-4d26-9bad-ade56001e1f4.xml'
-- 'image.wia\_samples\_and\_tools'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a7b8ca02-0d4b-4e56-a546-7037f08e2980
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Samples and Tools

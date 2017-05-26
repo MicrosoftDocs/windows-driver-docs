@@ -2,14 +2,16 @@
 title: KS Allocators
 author: windows-driver-content
 description: KS Allocators
-MS-HAID:
-- 'ks-overview\_ca1dc529-989f-4655-9e4e-c7bda4c139bd.xml'
-- 'stream.ks\_allocators'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 07812703-a66f-450a-b28e-4cf765267c4a
-keywords: ["kernel streaming WDK , allocators", "KS WDK , allocators", "allocators WDK kernel streaming"]
+keywords:
+- kernel streaming WDK , allocators
+- KS WDK , allocators
+- allocators WDK kernel streaming
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KS Allocators

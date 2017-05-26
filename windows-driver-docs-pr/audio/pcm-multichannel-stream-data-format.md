@@ -2,7 +2,13 @@
 title: PCM Multichannel Stream Data Format
 description: PCM Multichannel Stream Data Format
 ms.assetid: cab528a7-5db4-4e37-89c4-35dfc472f0ae
-keywords: ["PCM multichannel stream data formats WDK"]
+keywords:
+- PCM multichannel stream data formats WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PCM Multichannel Stream Data Format

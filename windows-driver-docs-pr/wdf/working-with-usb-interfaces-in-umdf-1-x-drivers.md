@@ -3,13 +3,22 @@ title: Working with USB Interfaces in UMDF 1.x Drivers
 author: windows-driver-content
 description: Working with USB Interfaces in UMDF 1.x Drivers
 ms.assetid: fc25e3b2-1631-445e-9340-a8cc92c68733
-keywords: ["UMDF WDK , USB interfaces", "User-Mode Driver Framework WDK , USB interfaces", "user-mode drivers WDK UMDF , USB interfaces", "USB interfaces WDK UMDF"]
+keywords:
+- UMDF WDK , USB interfaces
+- User-Mode Driver Framework WDK , USB interfaces
+- user-mode drivers WDK UMDF , USB interfaces
+- USB interfaces WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Working with USB Interfaces in UMDF 1.x Drivers
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The framework represents each USB interface as a framework USB interface object. When a UMDF driver creates a framework USB device object, the framework creates a framework USB interface object for each USB interface that the device supports.
 

@@ -2,7 +2,15 @@
 title: Checked and Free Build Differences
 description: There are two distinct builds of the NT-based operating systems that are available free (retail) and checked (debug). There is a third option, called a partial checked build, that combines the elements of the two.
 ms.assetid: 43aebfdb-2605-485c-a3a4-93e03b33aeca
-keywords: ["checked builds WDK , vs. free builds", "free builds WDK", "retail builds WDK"]
+keywords:
+- checked builds WDK , vs. free builds
+- free builds WDK
+- retail builds WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Checked and Free Build Differences
@@ -10,30 +18,30 @@ keywords: ["checked builds WDK , vs. free builds", "free builds WDK", "retail bu
 
 There are two distinct builds of the NT-based operating systems that are available: free (retail) and checked (debug). There is a third option, *called a partial checked build*, that combines the elements of the two.
 
--   [Differences between the checked and free builds](#ddk-checked-and-free-build-differences-tools)
--   [Where to find a checked build of Windows?](#where-to-find-a-checked-build-of-windows-)
--   [When to use the checked build or partial checked build?](#when-to-use-the-checked-build-or-partial-checked-build-)
+- [Differences between the checked and free builds](#differences-between-the-checked-and-free-builds)
+- [Where to find a checked build of Windows](#where-to-find-a-checked-build-of-windows)
+- [When to use the checked build or partial checked build](#when-to-use-the-checked-build-or-partial-checked-build)
 
-## <span id="ddk_checked_and_free_build_differences_tools"></span><span id="DDK_CHECKED_AND_FREE_BUILD_DIFFERENCES_TOOLS"></span>Differences between the checked and free builds
+## Differences between the checked and free builds
 
 
 This section lists some of the differences between the build choices.
 
-<span id="The__________________free_build__________________or__________________retail_build_"></span><span id="the__________________free_build__________________or__________________retail_build_"></span><span id="THE__________________FREE_BUILD__________________OR__________________RETAIL_BUILD_"></span>**The free build (or retail build)**  
+**The free build (or retail build)**  
 The free build of Microsoft Windows is used in production environments. The free build of the operating system is built with full compiler optimizations. When the free build discovers correctable problems, it continues to run.
 
 The distribution media that contain the free build of the operating system do not have any special labels--in other words, the CD or download that contains the free build is labeled with the Windows version name, without any reference to the type of build.
 
-<span id="The__________________checked_build__________________or__________________debug_build_"></span><span id="the__________________checked_build__________________or__________________debug_build_"></span><span id="THE__________________CHECKED_BUILD__________________OR__________________DEBUG_BUILD_"></span>**The checked build (or debug build)**  
+**The checked build (or debug build)**  
 The checked build of Microsoft Windows makes identifying and diagnosing operating-system-level problems easier.
 
 The checked build differs from the free build in the following ways:
 
--   Many compiler optimizations (such as stack frame elimination) are disabled in the checked build. This makes it easier to understand disassembled machine instructions, and therefore it is easier to trace the cause of problems in system software.
+- Many compiler optimizations (such as stack frame elimination) are disabled in the checked build. This makes it easier to understand disassembled machine instructions, and therefore it is easier to trace the cause of problems in system software.
 
--   The checked build enables a large number of debugging checks in the operating system code and system-provided drivers. This helps the checked build to identify internal inconsistencies and problems as soon as they occur.
+- The checked build enables a large number of debugging checks in the operating system code and system-provided drivers. This helps the checked build to identify internal inconsistencies and problems as soon as they occur.
 
-<span id="A__________________partial_checked_build__________________or__________________partial_debug_build_"></span><span id="a__________________partial_checked_build__________________or__________________partial_debug_build_"></span><span id="A__________________PARTIAL_CHECKED_BUILD__________________OR__________________PARTIAL_DEBUG_BUILD_"></span>**A partial checked build (or partial debug build)**  
+**A partial checked build (or partial debug build)**  
 A partial checked build of Microsoft Windows is similar to the full checked build. The principal difference is that the partial checked build includes only the checked operating system image (the kernel) and the checked hardware abstraction layer (HAL). The rest of the Windows components come from the free (retail) build of Windows.
 
 The partial checked build differs from the free and full checked builds in the following ways:
@@ -44,12 +52,12 @@ The partial checked build differs from the free and full checked builds in the f
 
 -   The partial checked build requires that you first install the complete free (retail) build of Windows. Using boot options, you can configure the computer to load either the checked or free components at boot time. You can then use a single computer for testing a driver with both checked and free builds of Windows.
 
-## <span id="Where_to_find_a_checked_build_of_Windows_"></span><span id="where_to_find_a_checked_build_of_windows_"></span><span id="WHERE_TO_FIND_A_CHECKED_BUILD_OF_WINDOWS_"></span>Where to find a checked build of Windows?
+## Where to find a checked build of Windows
 
 
-The downloads and distribution media that contain the checked build are clearly labeled as "Debug/Checked Build." The checked build downloads contain the checked version of the operating system, plus the checked versions of HALs, drivers, file systems, and even many user-mode components. For information about obtaining the checked and partial checked builds, see [Downloading a Checked Build of Windows](obtaining-the-checked-build.md). For convenience, the checked versions of the kernel and HAL are provided in the /debug directory of the Windows Driver Kit (starting with WDK for Windows Vista).
+The downloads and distribution media that contain the checked build are clearly labeled as "Debug/Checked Build." The checked build downloads contain the checked version of the operating system, plus the checked versions of HALs, drivers, file systems, and even many user-mode components. For information about obtaining the checked and partial checked builds, see [Installing the Checked Build](installing-the-checked-build.md). For convenience, the checked versions of the kernel and HAL are provided in the /debug directory of the Windows Driver Kit (starting with WDK for Windows Vista).
 
-## <span id="When_to_use_the_checked_build_or_partial_checked_build_"></span><span id="when_to_use_the_checked_build_or_partial_checked_build_"></span><span id="WHEN_TO_USE_THE_CHECKED_BUILD_OR_PARTIAL_CHECKED_BUILD_"></span>When to use the checked build or partial checked build?
+## When to use the checked build or partial checked build
 
 
 You should always use the checked build at some point in during development when you need to test your driver. The checked build can expose problems in how the driver interacts with the operating system. No testing can be considered complete without testing that your driver is able to run in the checked build without issues.

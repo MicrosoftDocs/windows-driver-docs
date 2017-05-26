@@ -2,14 +2,18 @@
 title: Customizing CPSUI-Supported Window Controls
 author: windows-driver-content
 description: Customizing CPSUI-Supported Window Controls
-MS-HAID:
-- 'cpsui\_0b5e4cd8-fa58-4dad-90f7-baa067ecba74.xml'
-- 'print.customizing\_cpsui\_supported\_window\_controls'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b9ced902-6368-4b3b-a974-81e7d38c0ced
-keywords: ["Common Property Sheet User Interface WDK print , window controls", "CPSUI WDK print , window controls", "property sheet pages WDK print , window controls", "window controls WDK CPSUI", "customizing CPSUI-supported window controls WDK print"]
+keywords:
+- Common Property Sheet User Interface WDK print , window controls
+- CPSUI WDK print , window controls
+- property sheet pages WDK print , window controls
+- window controls WDK CPSUI
+- customizing CPSUI-supported window controls WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Customizing CPSUI-Supported Window Controls

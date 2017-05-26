@@ -2,7 +2,15 @@
 title: Winsock Kernel Extension Interfaces
 description: Winsock Kernel Extension Interfaces
 ms.assetid: db0030fa-0ee9-482b-b6ba-e95b40a25473
-keywords: ["Winsock Kernel WDK networking , extension interfaces", "WSK WDK networking , extension interfaces", "extension interfaces WDK Winsock Kernel"]
+keywords:
+- Winsock Kernel WDK networking , extension interfaces
+- WSK WDK networking , extension interfaces
+- extension interfaces WDK Winsock Kernel
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Winsock Kernel Extension Interfaces

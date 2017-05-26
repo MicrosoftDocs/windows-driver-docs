@@ -2,14 +2,17 @@
 title: Accessing an Operation Region
 author: windows-driver-content
 description: Accessing an Operation Region
-MS-HAID:
-- 'opregdg\_03c5d195-449e-4a6e-ab94-532fa9856edb.xml'
-- 'acpi.accessing\_an\_operation\_region'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9a1aa29e-679c-4f7f-a16c-3e1c94be66a7
-keywords: ["ACPI devices WDK , operation regions", "operation regions WDK ACPI", "function drivers WDK ACPI , operation regions", "WDM function drivers WDK ACPI , operation regions"]
+keywords:
+- ACPI devices WDK , operation regions
+- operation regions WDK ACPI
+- function drivers WDK ACPI , operation regions
+- WDM function drivers WDK ACPI , operation regions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing an Operation Region

@@ -2,7 +2,26 @@
 title: Learning About Miniport Drivers
 description: Learning About Miniport Drivers
 ms.assetid: faaeee13-7d21-4e06-a33c-da249716d925
-keywords: ["connectionless drivers WDK networking", "connection-oriented drivers WDK networking", "WAN miniport drivers WDK networking", "miniport drivers WDK networking , WAN miniport drivers", "NDIS miniport drivers WDK , WAN miniport drivers", "miniport drivers WDK networking , miniport drivers with WDM lower edge", "NDIS miniport drivers WDK , miniport drivers with WDM lower edge", "WDM lower edge WDK networking", "miniport drivers WDK networking , IrDA miniport drivers", "NDIS miniport drivers WDK , IrDA miniport drivers", "IrDA drivers WDK networking", "miniport drivers WDK networking , scalable networking support", "NDIS miniport drivers WDK , scalable networking support", "network drivers WDK , types"]
+keywords:
+- connectionless drivers WDK networking
+- connection-oriented drivers WDK networking
+- WAN miniport drivers WDK networking
+- miniport drivers WDK networking , WAN miniport drivers
+- NDIS miniport drivers WDK , WAN miniport drivers
+- miniport drivers WDK networking , miniport drivers with WDM lower edge
+- NDIS miniport drivers WDK , miniport drivers with WDM lower edge
+- WDM lower edge WDK networking
+- miniport drivers WDK networking , IrDA miniport drivers
+- NDIS miniport drivers WDK , IrDA miniport drivers
+- IrDA drivers WDK networking
+- miniport drivers WDK networking , scalable networking support
+- NDIS miniport drivers WDK , scalable networking support
+- network drivers WDK , types
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Learning About Miniport Drivers

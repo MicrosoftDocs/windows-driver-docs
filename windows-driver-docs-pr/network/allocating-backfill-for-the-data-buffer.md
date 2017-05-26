@@ -2,7 +2,16 @@
 title: Allocating Backfill for the Data Buffer
 description: Allocating Backfill for the Data Buffer
 ms.assetid: 2588986d-8d51-4f34-a3b9-d0df406afcba
-keywords: ["header-data split WDK , backfill allocation", "backfill space allocations WDK header-data split", "pre-allocated backfill storage WDK header-data split", "data backfill space WDK header-data split"]
+keywords:
+- header-data split WDK , backfill allocation
+- backfill space allocations WDK header-data split
+- pre-allocated backfill storage WDK header-data split
+- data backfill space WDK header-data split
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating Backfill for the Data Buffer

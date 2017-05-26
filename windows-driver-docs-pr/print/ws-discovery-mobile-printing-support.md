@@ -2,10 +2,12 @@
 title: WS-Discovery Mobile Printing Support
 author: windows-driver-content
 description: WS-Discovery Mobile Printing Support
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 788E2A1C-FBE9-40CD-A3EB-14A2DE266A2C
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WS-Discovery Mobile Printing Support

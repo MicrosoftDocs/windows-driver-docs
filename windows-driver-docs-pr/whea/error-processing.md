@@ -2,14 +2,25 @@
 title: Error Processing
 author: windows-driver-content
 description: Error Processing
-MS-HAID:
-- 'whea\_b8e38256-a661-4ff1-8fd1-d3529f3b4f92.xml'
-- 'whea.error\_processing'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d9cb2f62-1ccf-4ab6-b547-dc54f6d07820
-keywords: ["Windows Hardware Error Architecture WDK , error processing", "WHEA WDK , error processing", "hardware errors WDK WHEA , error processing", "errors WDK WHEA , error processing", "corrected errors WDK WHEA", "uncorrected errors WDK WHEA", "fatal hardware errors WDK WHEA", "non-fatal hardware errors WDK WHEA", "low-level hardware error handlers WDK WHEA", "LLHEHs WDK WHEA", "platform-specific hardware error drivers WDK WHEA", "PSHED WDK WHEA"]
+keywords:
+- Windows Hardware Error Architecture WDK , error processing
+- WHEA WDK , error processing
+- hardware errors WDK WHEA , error processing
+- errors WDK WHEA , error processing
+- corrected errors WDK WHEA
+- uncorrected errors WDK WHEA
+- fatal hardware errors WDK WHEA
+- non-fatal hardware errors WDK WHEA
+- low-level hardware error handlers WDK WHEA
+- LLHEHs WDK WHEA
+- platform-specific hardware error drivers WDK WHEA
+- PSHED WDK WHEA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Error Processing

@@ -2,14 +2,22 @@
 title: Broadcast Driver Architecture Drivers
 author: windows-driver-content
 description: Broadcast Driver Architecture Drivers
-MS-HAID:
-- 'bdad\_f5ada6c2-5524-47fa-89a7-3684a96df126.xml'
-- 'stream.broadcast\_driver\_architecture\_drivers2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 23597c6d-791c-45d4-a1cd-8c26d9d888fb
-keywords: ["AVStream WDK , Broadcast Driver Architecture", "Broadcast Driver Architecture WDK AVStream", "BDA WDK AVStream", "filter graphs WDK BDA", "digital broadcast signals WDK BDA", "broadcast signals WDK BDA", "hardware WDK AVStream", "signal manipulation WDK BDA", "radio frequency tuner node WDK BDA"]
+keywords:
+- AVStream WDK , Broadcast Driver Architecture
+- Broadcast Driver Architecture WDK AVStream
+- BDA WDK AVStream
+- filter graphs WDK BDA
+- digital broadcast signals WDK BDA
+- broadcast signals WDK BDA
+- hardware WDK AVStream
+- signal manipulation WDK BDA
+- radio frequency tuner node WDK BDA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Broadcast Driver Architecture Drivers

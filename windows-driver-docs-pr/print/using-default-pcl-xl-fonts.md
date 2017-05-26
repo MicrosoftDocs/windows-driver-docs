@@ -2,14 +2,16 @@
 title: Using Default PCL XL Fonts
 author: windows-driver-content
 description: Using Default PCL XL Fonts
-MS-HAID:
-- 'nt5gpd\_bd5e43fb-7eab-449e-aea8-b96485cb8cc4.xml'
-- 'print.using\_default\_pcl\_xl\_fonts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8e6abae5-c86f-4cfc-a379-2dd3f8810474
-keywords: ["PCL XL vector graphics WDK Unidrv , default fonts", "default PCL XL fonts", "fonts WDK PCL XL"]
+keywords:
+- PCL XL vector graphics WDK Unidrv , default fonts
+- default PCL XL fonts
+- fonts WDK PCL XL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Default PCL XL Fonts

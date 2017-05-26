@@ -3,7 +3,27 @@ title: Using Automatic Synchronization
 author: windows-driver-content
 description: Using Automatic Synchronization
 ms.assetid: be7d3c0e-c3cf-4104-ab81-5ecdcb9163c8
-keywords: ["synchronization WDK KMDF", "automatic synchronization WDK KMDF", "locking WDK KMDF", "device-level synchronization WDK KMDF", "queue-level synchronization WDK KMDF", "no synchronization WDK KMDF", "synchronization scope WDK KMDF", "execution levels WDK KMDF", "WdfExecutionLevelPassive", "WdfExecutionLevelDispatch", "WdfExecutionLevelInheritFromParent", "WdfSynchronizationScopeDevice", "WdfSynchronizationScopeQueue", "WdfSynchronizationScopeNone", "WdfSynchronizationScopeInheritFromParent"]
+keywords:
+- synchronization WDK KMDF
+- automatic synchronization WDK KMDF
+- locking WDK KMDF
+- device-level synchronization WDK KMDF
+- queue-level synchronization WDK KMDF
+- no synchronization WDK KMDF
+- synchronization scope WDK KMDF
+- execution levels WDK KMDF
+- WdfExecutionLevelPassive
+- WdfExecutionLevelDispatch
+- WdfExecutionLevelInheritFromParent
+- WdfSynchronizationScopeDevice
+- WdfSynchronizationScopeQueue
+- WdfSynchronizationScopeNone
+- WdfSynchronizationScopeInheritFromParent
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Automatic Synchronization

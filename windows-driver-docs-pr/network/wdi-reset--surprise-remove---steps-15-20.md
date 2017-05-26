@@ -2,6 +2,11 @@
 title: Reset (surprise remove) steps 15-20
 description: The steps of reset (surprise-remove), which are Steps 15 through 20, are described below. The steps correspond to the diagram shown in UE hang detection and recovery flow.
 ms.assetid: E72714A9-9B06-4609-820C-F25DC6BC0696
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reset (surprise remove): steps 15-20

@@ -2,14 +2,14 @@
 title: Installing an AVStream-based Hardware Codec Driver
 author: windows-driver-content
 description: Installing an AVStream-based Hardware Codec Driver
-MS-HAID:
-- 'shed\_dg\_402804d2-cd60-4869-919f-40966d4d2845.xml'
-- 'stream.installing\_an\_avstream\_based\_hardware\_codec\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7b3bbff7-c8e7-47ea-a455-66f01a552e3b
-keywords: ["hardware codec support WDK AVStream , installing a driver"]
+keywords:
+- hardware codec support WDK AVStream , installing a driver
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing an AVStream-based Hardware Codec Driver

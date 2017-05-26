@@ -2,13 +2,12 @@
 title: PTP References
 author: windows-driver-content
 description: PTP References
-MS-HAID:
-- 'WIA\_drv\_cam\_3353bea6-b8a9-435a-a493-f137e154ae94.xml'
-- 'image.ptp\_references'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4d044986-9c82-423f-8702-fc2a7ede5c51
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PTP References

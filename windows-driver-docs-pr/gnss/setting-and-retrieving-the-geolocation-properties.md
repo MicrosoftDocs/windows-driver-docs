@@ -2,10 +2,12 @@
 title: Setting and retrieving the geolocation properties
 author: windows-driver-content
 description: When an application retrieves a particular property value, a corresponding property-retrieval method is called in the sample driver.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 576C610E-180A-44A0-9637-5C18341F3777
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting and retrieving the geolocation properties

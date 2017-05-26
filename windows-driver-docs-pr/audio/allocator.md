@@ -2,7 +2,16 @@
 title: Allocator
 description: Allocator
 ms.assetid: 8f263288-2f79-4f1d-b740-d78d40f47b32
-keywords: ["MIDI transport WDK audio", "wave sinks WDK audio , MIDI transport", "synthesizers WDK audio , MIDI transport", "allocators WDK audio"]
+keywords:
+- MIDI transport WDK audio
+- wave sinks WDK audio , MIDI transport
+- synthesizers WDK audio , MIDI transport
+- allocators WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocator

@@ -1,13 +1,15 @@
 ---
-title: TrustedCertificate
-description: TrustedCertificate
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+title: TrustedCertificate (APN element)
+description: TrustedCertificate (APN element)
 ms.assetid: 8b1b09ab-7ab8-4d6d-9ea6-395a109def91
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# TrustedCertificate
+# TrustedCertificate (APN element)
 
 
 The TrustedCertificate element specifies a trusted certificate for the specified operator.

@@ -2,14 +2,15 @@
 title: Unidrv Components
 author: windows-driver-content
 description: Unidrv Components
-MS-HAID:
-- 'nt5gpd\_bf0c203e-0692-43a8-84f6-d3ab98eaac5b.xml'
-- 'print.unidrv\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 358eed9e-05e3-4670-b6b1-d5413c46edf0
-keywords: ["Unidrv, components", "Unidrv WDK print"]
+keywords:
+- Unidrv, components
+- Unidrv WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Unidrv Components

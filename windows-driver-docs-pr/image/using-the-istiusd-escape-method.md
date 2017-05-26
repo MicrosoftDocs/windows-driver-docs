@@ -2,13 +2,12 @@
 title: Using the IStiUSD Escape Method
 author: windows-driver-content
 description: Using the IStiUSD Escape Method
-MS-HAID:
-- 'WIA\_drv\_scan\_1cc00ed8-6dd0-4ded-a155-3fb515dc8851.xml'
-- 'image.using\_the\_istiusd\_escape\_method'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f9b1ede6-8311-4cc9-8bf7-20018cb35a3d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the IStiUSD Escape Method

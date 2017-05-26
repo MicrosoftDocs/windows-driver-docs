@@ -2,6 +2,11 @@
 title: What is an autologger
 description: What is an autologger
 ms.assetid: 4bf286c5-faa9-4b9a-8fb1-a7190223e590
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # What is an autologger?

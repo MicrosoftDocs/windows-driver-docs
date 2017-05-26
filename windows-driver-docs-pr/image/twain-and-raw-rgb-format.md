@@ -2,13 +2,12 @@
 title: TWAIN and Raw RGB Format
 author: windows-driver-content
 description: TWAIN and Raw RGB Format
-MS-HAID:
-- 'WIA\_drv\_scan\_0ae0930d-ef81-45b8-9a59-ab511185ca76.xml'
-- 'image.twain\_and\_raw\_rgb\_format'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0de4a547-6c8e-4fbf-a7a3-7af440bf72f3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TWAIN and Raw RGB Format

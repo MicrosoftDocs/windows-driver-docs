@@ -2,14 +2,14 @@
 title: IPrintOemDriverUI COM Interface
 author: windows-driver-content
 description: IPrintOemDriverUI COM Interface
-MS-HAID:
-- 'custdrvr\_1c50662a-4f79-4978-9e94-8d79783085da.xml'
-- 'print.iprintoemdriverui\_com\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ed11789f-750d-4f29-b5e0-ab299a1388db
-keywords: ["IPrintOemDriverUI"]
+keywords:
+- IPrintOemDriverUI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IPrintOemDriverUI COM Interface

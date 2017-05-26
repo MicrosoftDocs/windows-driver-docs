@@ -2,7 +2,16 @@
 title: Registering Miniport Driver Functions for WDM Lower Edge
 description: Registering Miniport Driver Functions for WDM Lower Edge
 ms.assetid: 68048d36-d57c-4ad9-a15e-92b1d7866d4a
-keywords: ["NDIS-WDM miniport drivers WDK networking , registering functions", "NDIS-WDM miniport drivers WDK networking , entry-point functions", "lower edge of NDIS miniport drivers WDK networking , entry-point functions", "WDM lower edge WDK networking , entry-point functions"]
+keywords:
+- NDIS-WDM miniport drivers WDK networking , registering functions
+- NDIS-WDM miniport drivers WDK networking , entry-point functions
+- lower edge of NDIS miniport drivers WDK networking , entry-point functions
+- WDM lower edge WDK networking , entry-point functions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering Miniport Driver Functions for WDM Lower Edge

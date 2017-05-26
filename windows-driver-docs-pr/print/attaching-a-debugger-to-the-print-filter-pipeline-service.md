@@ -2,13 +2,12 @@
 title: Attaching a Debugger to the Print Filter Pipeline Service
 author: windows-driver-content
 description: Attaching a Debugger to the Print Filter Pipeline Service
-MS-HAID:
-- 'xpsfiltpipe\_fa4a8579-40cd-4568-a8a2-18195e71d3e9.xml'
-- 'print.attaching\_a\_debugger\_to\_the\_print\_filter\_pipeline\_service'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d2e032f8-bdce-415a-8cf4-d9816b7c9de5
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Attaching a Debugger to the Print Filter Pipeline Service

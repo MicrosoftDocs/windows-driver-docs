@@ -2,14 +2,17 @@
 title: Asynchronous Notifications in Print Filters
 author: windows-driver-content
 description: Asynchronous Notifications in Print Filters
-MS-HAID:
-- 'xpsfiltpipe\_ca7d1578-a521-4498-941c-73032d7ddb89.xml'
-- 'print.asynchronous\_notifications\_in\_print\_filters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 52b0790b-4927-4e1b-8ae5-6e2afc7c9df6
-keywords: ["render modules WDK XPSDrv , XPS filters", "XPS filters WDK XPSDrv", "filters WDK XPS", "asynchronous notifications WDK XPS"]
+keywords:
+- render modules WDK XPSDrv , XPS filters
+- XPS filters WDK XPSDrv
+- filters WDK XPS
+- asynchronous notifications WDK XPS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Asynchronous Notifications in Print Filters

@@ -2,7 +2,13 @@
 title: Property Value Requirements
 description: Property Value Requirements
 ms.assetid: 05512f3d-fe64-4de0-848c-c983d883fc60
-keywords: ["device properties WDK device installations , property value requirements"]
+keywords:
+- device properties WDK device installations , property value requirements
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Property Value Requirements

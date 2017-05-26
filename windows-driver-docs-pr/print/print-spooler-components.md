@@ -2,14 +2,16 @@
 title: Print Spooler Components
 author: windows-driver-content
 description: Print Spooler Components
-MS-HAID:
-- 'provider\_be3001db-e434-482c-8569-c892c1398cdb.xml'
-- 'print.print\_spooler\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 42b5e6cf-b434-4734-86f3-b3b9d15ea468
-keywords: ["print spooler customizing WDK", "spooler customizing WDK print", "customizing print spooler components WDK"]
+keywords:
+- print spooler customizing WDK
+- spooler customizing WDK print
+- customizing print spooler components WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Spooler Components

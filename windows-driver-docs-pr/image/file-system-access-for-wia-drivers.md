@@ -2,13 +2,12 @@
 title: File System Access for WIA Drivers
 author: windows-driver-content
 description: File System Access for WIA Drivers
-MS-HAID:
-- 'WIA\_best\_practice\_9c1e2f35-fd38-472f-867f-e77a547a0839.xml'
-- 'image.file\_system\_access\_for\_wia\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7bdd116e-d58f-4c2e-a5ec-c9a8196cfd62
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # File System Access for WIA Drivers

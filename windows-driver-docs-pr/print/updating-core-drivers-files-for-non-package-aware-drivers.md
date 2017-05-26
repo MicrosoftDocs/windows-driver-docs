@@ -2,13 +2,12 @@
 title: Updating Core Drivers Files for Non-Package-Aware Drivers
 author: windows-driver-content
 description: Updating Core Drivers Files for Non-Package-Aware Drivers
-MS-HAID:
-- 'prtinst\_db565992-b722-401f-9c4f-f416014ba3c7.xml'
-- 'print.updating\_core\_drivers\_files\_for\_non\_package\_aware\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ce5da376-edac-4cd1-8750-9981bb5b709d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Updating Core Drivers Files for Non-Package-Aware Drivers

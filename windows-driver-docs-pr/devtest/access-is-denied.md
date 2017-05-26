@@ -2,6 +2,11 @@
 title: Access is denied
 description: Access is denied
 ms.assetid: 7126a065-aa6a-47c3-9cfb-0c6d5feeb176
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Access is denied

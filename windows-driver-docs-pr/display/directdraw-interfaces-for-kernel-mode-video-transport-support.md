@@ -2,7 +2,18 @@
 title: DirectDraw Interfaces for Kernel-Mode Video Transport Support
 description: DirectDraw Interfaces for Kernel-Mode Video Transport Support
 ms.assetid: 8012f6b0-3b55-438f-8146-4f62e6bafad3
-keywords: ["kernel-mode video transport WDK DirectDraw , interfaces", "DirectX VPE support WDK DirectDraw , kernel-mode video transport", "drawing VPEs WDK DirectDraw , kernel-mode video transport", "DirectDraw VPEs WDK Windows 2000 display , kernel-mode video transport", "video port extensions WDK DirectDraw , kernel-mode video transport", "VPEs WDK DirectDraw , kernel-mode video transport"]
+keywords:
+- kernel-mode video transport WDK DirectDraw , interfaces
+- DirectX VPE support WDK DirectDraw , kernel-mode video transport
+- drawing VPEs WDK DirectDraw , kernel-mode video transport
+- DirectDraw VPEs WDK Windows 2000 display , kernel-mode video transport
+- video port extensions WDK DirectDraw , kernel-mode video transport
+- VPEs WDK DirectDraw , kernel-mode video transport
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectDraw Interfaces for Kernel-Mode Video Transport Support

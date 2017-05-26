@@ -2,13 +2,12 @@
 title: Property Sheet Extensions
 author: windows-driver-content
 description: Property Sheet Extensions
-MS-HAID:
-- 'WIA\_drv\_cus\_c7543368-cb18-4bee-8b96-f5138696504f.xml'
-- 'image.property\_sheet\_extensions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 36254759-882c-45af-92df-e0769b65ec55
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Property Sheet Extensions

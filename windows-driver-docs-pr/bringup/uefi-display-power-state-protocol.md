@@ -2,10 +2,12 @@
 title: UEFI display power state protocol
 author: windows-driver-content
 description: UEFI display power state protocol
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ab16c548-1402-4819-9fbb-a1d6f55d934a
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UEFI display power state protocol

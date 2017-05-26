@@ -2,13 +2,12 @@
 title: Using Custom Properties
 author: windows-driver-content
 description: Using Custom Properties
-MS-HAID:
-- 'WIA\_drv\_basic\_1d962c5c-055d-4788-9acc-d59e3f133530.xml'
-- 'image.using\_custom\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cf4e728f-7900-4849-ab1c-135f9fec9713
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Custom Properties

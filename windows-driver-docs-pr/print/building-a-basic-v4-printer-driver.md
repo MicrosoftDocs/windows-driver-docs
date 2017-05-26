@@ -2,10 +2,12 @@
 title: Building a Basic v4 Printer Driver
 author: windows-driver-content
 description: Build a basic v4 printer driver by using the driver development Wizard in Microsoft Visual Studio 2013 to select the minimum set of features to create a functional printer driver.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6E50CD69-D385-4724-B6B1-85D42EFFC6F0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Building a Basic v4 Printer Driver

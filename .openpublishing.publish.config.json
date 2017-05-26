@@ -1,18 +1,55 @@
 {
-    "build_entry_point": "",
-    "report_severity_level": "Warning", 
-    "docsets_to_publish": [
-        {
-            "docset_name": "wdkdocs",
-            "build_output_subfolder": "windows-driver-docs-pr",
-            "locale": "en-us",
-            "version": 0,
-            "open_to_public_contributors": "true",
-            "type_mapping": {
-                "Conceptual": "Content"
-                }
-        }
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false,
+  "docsets_to_publish": [
+    {
+      "docset_name": "wdkdocs",
+      "build_source_folder": "windows-driver-docs-pr",
+      "build_output_subfolder": "wdkdocs",
+      "locale": "en-us",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    }
+  ],
+  "branch_target_mapping": {
+     "duncan_mos_rs3_pdf": [
+        "Publish",
+        "Pdf"
     ],
-    "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/windows-driver-docs",
-    "git_repository_branch_open_to_public_contributors": "staging"
+    "live": [
+        "Publish",
+        "Pdf"
+    ]   
+  },
+  "Targets": {
+    "Pdf": {
+        "template_folder": "_themes.pdf"
+    }
+  },
+  "notification_subscribers": [],
+  "branches_to_filter": [],
+  "git_repository_url_open_to_public_contributors": "https://cpubwin.visualstudio.com/_git/drivers",
+  "skip_source_output_uploading": false,
+  "need_preview_pull_request": false,
+  "dependent_repositories": [
+    {
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft",
+      "branch": "master",
+      "branch_mapping": {}
+    }, {
+        "path_to_root": "_themes.pdf",
+        "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+        "branch": "master"
+    }
+  ],
+  "need_generate_pdf_url_template": true,
+  "resolve_user_profile_using_github": true
 }

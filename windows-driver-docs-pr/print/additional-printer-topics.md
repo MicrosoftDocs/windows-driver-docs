@@ -2,13 +2,12 @@
 title: Additional Printer Topics
 author: windows-driver-content
 description: Additional Printer Topics
-MS-HAID:
-- 'prn\_addl\_0a72640a-e4ab-452a-b029-8d595a852bd0.xml'
-- 'print.additional\_printer\_topics'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e2d2b399-0a84-430f-8ffc-e1cf9562d601
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Additional Printer Topics

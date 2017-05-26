@@ -2,14 +2,20 @@
 title: Printer Forms Support
 author: windows-driver-content
 description: Printer Forms Support
-MS-HAID:
-- 'splarch\_798da957-9470-470f-9027-61e646fd762f.xml'
-- 'print.printer\_forms\_support'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7525dc6c-7521-4a6b-923c-00b7e1c9db8c
-keywords: ["printer forms WDK", "forms WDK printer", "special forms WDK printer", "special paper sizes WDK printer", "paper sizes WDK forms", "custom forms WDK printer", "databases WDK printer forms"]
+keywords:
+- printer forms WDK
+- forms WDK printer
+- special forms WDK printer
+- special paper sizes WDK printer
+- paper sizes WDK forms
+- custom forms WDK printer
+- databases WDK printer forms
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Forms Support

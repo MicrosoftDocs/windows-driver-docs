@@ -2,7 +2,13 @@
 title: Performing a Post-Association Operation
 description: Performing a Post-Association Operation
 ms.assetid: b029d499-a23d-4f2f-aa28-2e8bfb2a00e5
-keywords: ["post-association operations WDK Native 802.11 IHV Extensions DLL"]
+keywords:
+- post-association operations WDK Native 802.11 IHV Extensions DLL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Performing a Post-Association Operation

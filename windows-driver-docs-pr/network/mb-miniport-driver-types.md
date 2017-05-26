@@ -2,6 +2,11 @@
 title: MB Miniport Driver Types
 description: MB Miniport Driver Types
 ms.assetid: ec1743a1-4c5e-4960-b352-40fc5b9c016a
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MB Miniport Driver Types

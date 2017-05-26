@@ -2,14 +2,18 @@
 title: GDL Preprocessor Keywords
 author: windows-driver-content
 description: GDL Preprocessor Keywords
-MS-HAID:
-- 'gplfiles\_6703dd5e-a2a3-472b-bccc-274d69c1bf97.xml'
-- 'print.gdl\_preprocessor\_keywords'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 95ad9645-7c16-421a-937e-d4ada587d1e1
-keywords: ["directives WDK GDL , source file preprocessor directives", "source files WDK GDL , preprocessor directives", "preprocessor directives WDK GDL , keywords", "keywords WDK GDL", "reserved keywords WDK"]
+keywords:
+- directives WDK GDL , source file preprocessor directives
+- source files WDK GDL , preprocessor directives
+- preprocessor directives WDK GDL , keywords
+- keywords WDK GDL
+- reserved keywords WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Preprocessor Keywords

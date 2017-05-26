@@ -16,7 +16,9 @@
     "globalMetadata": {
         "ROBOTS": "INDEX, FOLLOW",
         "Search.Product": "eADQiWindows 10XVcnh",
-        "breadcrumb_path": "/windows/hardware/drivers/breadcrumbs/toc.json"
+        "uhfHeaderId": "MSDocsHeader-WinHW",
+        "breadcrumb_path": "/windows-hardware/drivers/breadcrumbs/toc.json",
+        "contributors_to_exclude": ["barrygolden", "PageWriter-MSFT", "tedhudek"]
     },
     "externalReference": [
     ],

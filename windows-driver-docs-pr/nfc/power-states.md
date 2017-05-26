@@ -3,7 +3,17 @@ title: Power states
 author: windows-driver-content
 description: The NFC class extension driver serves as the power policy owner for the device, so it calls WdfDeviceInitSetPowerPolicyOwnership(TRUE) during its device initialization routine.
 ms.assetid: 12433344-9C33-415B-BA14-4BD4C7E838CC
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Power states

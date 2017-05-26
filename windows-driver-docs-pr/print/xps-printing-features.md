@@ -2,14 +2,16 @@
 title: XPS Printing Features
 author: windows-driver-content
 description: XPS Printing Features
-MS-HAID:
-- 'drvarch\_530dd1c8-5cca-4c84-936a-caa564077f45.xml'
-- 'print.xps\_printing\_features'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5315a424-ea5a-4da3-bf51-80efa8f07758
-keywords: ["XPSDrv printer drivers WDK , printing features", "XPS printing features WDK XPSDrv", "color management WDK print , XPS printing advantages"]
+keywords:
+- XPSDrv printer drivers WDK , printing features
+- XPS printing features WDK XPSDrv
+- color management WDK print , XPS printing advantages
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XPS Printing Features

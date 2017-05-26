@@ -3,7 +3,27 @@ title: Storage Volumes
 author: windows-driver-content
 description: Storage Volumes
 ms.assetid: 37b65bb6-7c62-47be-a16d-3813dc4c1259
-keywords: ["filter drivers WDK file system , storage volumes", "file system filter drivers WDK , storage volumes", "storage volumes WDK file system", "Mount Manager WDK file system", "storage device objects WDK file system", "volumes WDK file system , parameter blocks", "VPBs WDK file system", "volumes WDK file system , about storage volumes", "logical volumes WDK file system", "partitions WDK file system", "unique volume names WDK file system", "GUIDs WDK file system", "names WDK file systems", "Unique Volume Name", "Volume GUID"]
+keywords:
+- filter drivers WDK file system , storage volumes
+- file system filter drivers WDK , storage volumes
+- storage volumes WDK file system
+- Mount Manager WDK file system
+- storage device objects WDK file system
+- volumes WDK file system , parameter blocks
+- VPBs WDK file system
+- volumes WDK file system , about storage volumes
+- logical volumes WDK file system
+- partitions WDK file system
+- unique volume names WDK file system
+- GUIDs WDK file system
+- names WDK file systems
+- Unique Volume Name
+- Volume GUID
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storage Volumes

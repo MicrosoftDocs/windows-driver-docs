@@ -2,7 +2,21 @@
 title: Installing a Filter Driver
 description: Installing a Filter Driver
 ms.assetid: 48ffa6db-3254-4108-b8bb-5884b9168a9d
-keywords: ["Device setup WDK device installations , filter drivers", "device installations WDK , filter drivers", "installing devices WDK , filter drivers", "filter drivers WDK device installations", "device-specific filter drivers WDK device installations", "class filter drivers WDK device installations", "SetupInstallFilesFromInfSection", "UpperFilters", "LowerFilters"]
+keywords:
+- Device setup WDK device installations , filter drivers
+- device installations WDK , filter drivers
+- installing devices WDK , filter drivers
+- filter drivers WDK device installations
+- device-specific filter drivers WDK device installations
+- class filter drivers WDK device installations
+- SetupInstallFilesFromInfSection
+- UpperFilters
+- LowerFilters
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing a Filter Driver

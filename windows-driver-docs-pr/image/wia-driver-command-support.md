@@ -2,13 +2,12 @@
 title: WIA Driver Command Support
 author: windows-driver-content
 description: WIA Driver Command Support
-MS-HAID:
-- 'WIA\_db\_event\_18c13021-bb6f-4a97-a312-e2c0122f4d97.xml'
-- 'image.wia\_driver\_command\_support'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9c552316-7dd6-4102-88d3-fab9732d1e5d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Driver Command Support

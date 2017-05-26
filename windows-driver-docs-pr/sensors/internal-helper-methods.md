@@ -1,11 +1,13 @@
 ---
 title: Driver update methods
 author: windows-driver-content
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: F809BCE4-9176-4503-9EC7-B80AC229ABB5
-description: 
+description: Update methods supported by the sensor driver.
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver update methods

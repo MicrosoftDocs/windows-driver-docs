@@ -2,13 +2,12 @@
 title: Flatbed Scanner Architecture
 author: windows-driver-content
 description: Flatbed Scanner Architecture
-MS-HAID:
-- 'WIA\_scanner\_tree\_b294d307-7ea8-4188-b36d-a0cb8f65fc10.xml'
-- 'image.flatbed\_scanner\_architecture'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 04f7df17-d289-44a1-8c2d-7d0fa618cc97
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Flatbed Scanner Architecture

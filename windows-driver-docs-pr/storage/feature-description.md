@@ -3,6 +3,11 @@ title: Feature Description
 author: windows-driver-content
 description: Feature Description
 ms.assetid: 19c1378d-f8d8-42a2-9776-4f5bfdb9e39e
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Feature Description

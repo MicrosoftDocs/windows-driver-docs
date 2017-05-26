@@ -1,8 +1,11 @@
 ---
 Description: Property Support
-MS-HAID: 'wpddk.property\_support'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Property Support
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Property Support

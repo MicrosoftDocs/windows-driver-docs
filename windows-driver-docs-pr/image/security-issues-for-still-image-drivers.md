@@ -2,13 +2,12 @@
 title: Security Issues for Still Image Drivers
 author: windows-driver-content
 description: Security Issues for Still Image Drivers
-MS-HAID:
-- 'stillimg\_f5413645-1836-4e0c-a2e8-a053ca48e992.xml'
-- 'image.security\_issues\_for\_still\_image\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ad795cf0-8bff-4b9b-ac43-94c74cc19d60
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Security Issues for Still Image Drivers

@@ -1,8 +1,11 @@
 ---
 Description: Mapping Object Identifiers
-MS-HAID: 'wpddk.mapping\_object\_identifiers'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Mapping Object Identifiers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mapping Object Identifiers

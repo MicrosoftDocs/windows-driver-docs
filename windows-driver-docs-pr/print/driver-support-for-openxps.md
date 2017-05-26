@@ -2,10 +2,12 @@
 title: Driver Support for OpenXPS
 author: windows-driver-content
 description: OpenXPS is the Open XML Paper Specification format for documents, and it’s based on the Ecma International standard specification.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9BC9787E-A54D-4A11-B256-57BE5D206404
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Support for OpenXPS

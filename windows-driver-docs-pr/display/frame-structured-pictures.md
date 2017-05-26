@@ -2,7 +2,18 @@
 title: Frame-Structured Pictures
 description: Frame-Structured Pictures
 ms.assetid: 6449492e-06b5-4b8b-9e0d-a2e80272f062
-keywords: ["MPEG-2 WDK DirectX VA", "frame motion compensation WDK DirectX VA", "field (16x8) motion compensation WDK DirectX VA", "dual-prime motion compensation WDK DirectX VA", "16x8 motion compensation WDK DirectX VA", "prediction blocks WDK DirectX VA"]
+keywords:
+- MPEG-2 WDK DirectX VA
+- frame motion compensation WDK DirectX VA
+- field (16x8) motion compensation WDK DirectX VA
+- dual-prime motion compensation WDK DirectX VA
+- 16x8 motion compensation WDK DirectX VA
+- prediction blocks WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Frame-Structured Pictures

@@ -2,7 +2,19 @@
 title: AES-CCMP
 description: AES-CCMP
 ms.assetid: 38270d9f-b927-4e4e-ac7f-319c60ae6224
-keywords: ["cipher operations WDK Native 802.11 , cipher algorithms", "algorithms WDK Native 802.11 cipher", "AES-CCMP WDK Native 802.11", "Advanced Encryption Standard WDK Native 802.11", "Counter-Mode Cipher Block Chaining WDK Native 802.11", "CCMP WDK Native 802.11", "block cipher WDK Native 802.11"]
+keywords:
+- cipher operations WDK Native 802.11 , cipher algorithms
+- algorithms WDK Native 802.11 cipher
+- AES-CCMP WDK Native 802.11
+- Advanced Encryption Standard WDK Native 802.11
+- Counter-Mode Cipher Block Chaining WDK Native 802.11
+- CCMP WDK Native 802.11
+- block cipher WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AES-CCMP

@@ -2,10 +2,12 @@
 title: SerCx2 System-DMA-Transmit Transactions
 author: windows-driver-content
 description: Some serial controller drivers implement support for transmit transactions that use the system DMA controller.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8569E76F-CAFF-4A2C-8052-62B340C5ADED
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SerCx2 System-DMA-Transmit Transactions

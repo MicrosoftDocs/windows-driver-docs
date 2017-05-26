@@ -2,14 +2,15 @@
 title: CodePage Template Entry Issues
 author: windows-driver-content
 description: CodePage Template Entry Issues
-MS-HAID:
-- 'gplfiles\_cf6ade4e-28af-4153-9e34-f0afd76bf838.xml'
-- 'print.codepage\_template\_entry\_issues'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e11c1857-f12f-44c0-be35-eba93b4b87eb
-keywords: ["data types WDK GDL , problems with template data types", "CodePage directive WDK GDL"]
+keywords:
+- data types WDK GDL , problems with template data types
+- CodePage directive WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CodePage Template Entry Issues

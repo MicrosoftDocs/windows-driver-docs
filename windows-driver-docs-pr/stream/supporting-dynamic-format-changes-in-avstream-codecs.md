@@ -2,14 +2,17 @@
 title: Supporting Dynamic Format Changes in AVStream Codecs
 author: windows-driver-content
 description: Supporting Dynamic Format Changes in AVStream Codecs
-MS-HAID:
-- 'shed\_dg\_df628630-aad1-4c20-9580-24aaee621d8c.xml'
-- 'stream.supporting\_dynamic\_format\_changes\_in\_avstream\_codecs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ae222512-fd19-404a-aaf8-6fbfa2a3349e
-keywords: ["hardware codec support WDK AVStream , dynamic format change", "supporting dynamic format change WDK AVStream", "dynamic format change WDK AVStream", "AVStream hardware codec support WDK , supporting dynamic format change"]
+keywords:
+- hardware codec support WDK AVStream , dynamic format change
+- supporting dynamic format change WDK AVStream
+- dynamic format change WDK AVStream
+- AVStream hardware codec support WDK , supporting dynamic format change
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Dynamic Format Changes in AVStream Codecs

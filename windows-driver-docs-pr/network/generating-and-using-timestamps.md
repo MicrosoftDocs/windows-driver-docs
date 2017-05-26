@@ -2,7 +2,23 @@
 title: Generating and Using Timestamps
 description: Generating and Using Timestamps
 ms.assetid: a654a702-d01e-43d9-a0ef-7886ccfeb11d
-keywords: ["TCP chimney offload WDK networking , timestamps", "chimney offload WDK networking , timestamps", "timestamps WDK TCP chimney offload", "TCP timestamps WDK TCP chimney offload", "timestamps WDK TCP chimney offload , about TCP timestamps", "TCP timestamps WDK TCP chimney offload , about TCP timestamps", "synchronization WDK TCP chimney offload", "target synchronization WDK TCP chimney offload", "calibrating timestamps WDK TCP chimney offload", "clocks WDK TCP chimney offload", "connection timestamps WDK TCP chimney offload"]
+keywords:
+- TCP chimney offload WDK networking , timestamps
+- chimney offload WDK networking , timestamps
+- timestamps WDK TCP chimney offload
+- TCP timestamps WDK TCP chimney offload
+- timestamps WDK TCP chimney offload , about TCP timestamps
+- TCP timestamps WDK TCP chimney offload , about TCP timestamps
+- synchronization WDK TCP chimney offload
+- target synchronization WDK TCP chimney offload
+- calibrating timestamps WDK TCP chimney offload
+- clocks WDK TCP chimney offload
+- connection timestamps WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Generating and Using Timestamps

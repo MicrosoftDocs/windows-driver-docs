@@ -2,7 +2,15 @@
 title: Graphics System Overview
 description: Graphics System Overview
 ms.assetid: d120a9df-d8ed-4862-b421-2e7545be1ed0
-keywords: ["GDI WDK Windows 2000 display , about graphics system", "graphics drivers WDK Windows 2000 display , about graphics system", "drawing WDK GDI , about graphics system"]
+keywords:
+- GDI WDK Windows 2000 display , about graphics system
+- graphics drivers WDK Windows 2000 display , about graphics system
+- drawing WDK GDI , about graphics system
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Graphics System Overview

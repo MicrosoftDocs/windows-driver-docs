@@ -2,13 +2,12 @@
 title: USB Driver
 author: windows-driver-content
 description: USB Driver
-MS-HAID:
-- 'WIA\_drv\_basic\_a4e56387-cf63-4e78-9099-da798c10bc73.xml'
-- 'image.usb\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c20bd393-98d0-498e-a3e8-bbd1958ed774
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB Driver

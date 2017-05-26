@@ -2,7 +2,13 @@
 title: Remote NDIS Device Control
 description: Remote NDIS Device Control
 ms.assetid: 52096845-57ee-4da5-95c7-ceae00e8159d
-keywords: ["Remote NDIS WDK networking , device control"]
+keywords:
+- Remote NDIS WDK networking , device control
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Remote NDIS Device Control

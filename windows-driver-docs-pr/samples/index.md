@@ -2,13 +2,12 @@
 title: Windows driver samples
 author: windows-driver-content
 description: Starting with Windows 10, the Windows driver samples repository is available on GitHub.
-MS-HAID:
-- 'WDKSamples\_6f42a1ad-c0ae-4cb0-9643-3bfc29ebbee3.xml'
-- 'wdkappendix.windows\_driver\_kit\_samples'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4c51f6c3-a84d-4790-82df-a50570af02bd
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows driver samples

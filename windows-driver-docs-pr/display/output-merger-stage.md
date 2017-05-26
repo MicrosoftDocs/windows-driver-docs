@@ -2,6 +2,11 @@
 title: Output Merger Stage
 description: Output Merger Stage
 ms.assetid: 9b549614-0f51-4c79-a6c4-ba907a5f9068
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Output Merger Stage

@@ -2,13 +2,12 @@
 title: Mass Storage Driver
 author: windows-driver-content
 description: Mass Storage Driver
-MS-HAID:
-- 'WIA\_drv\_cam\_18982b19-7c1a-4343-b28c-1d97bfe124bf.xml'
-- 'image.mass\_storage\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 383a8609-633c-42f6-b557-daf68e61ab02
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mass Storage Driver

@@ -1,14 +1,13 @@
 ---
 title: WIA Driver Services Library
 author: windows-driver-content
-MS-HAID:
-- 'WIA\_arch\_34db7cb6-0927-4926-9cbd-7d7dfcdec80f.xml'
-- 'image.wia\_driver\_services\_library'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c179483b-74c3-4788-aa04-20cec0e0eb3a
-description: 
+description: Describes the WIA driver services library that contains functions a WIA minidriver can call for assistance in performing specific tasks
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Driver Services Library

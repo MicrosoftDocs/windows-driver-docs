@@ -2,7 +2,17 @@
 title: DMus Port Driver
 description: DMus Port Driver
 ms.assetid: 19828364-1b0d-4fc0-b142-9d776cbf1ada
-keywords: ["DirectMusic WDK audio , port drivers", "DMus port drivers WDK audio", "PortCls WDK audio , port drivers", "audio miniport drivers WDK , port drivers", "miniport drivers WDK audio , port drivers"]
+keywords:
+- DirectMusic WDK audio , port drivers
+- DMus port drivers WDK audio
+- PortCls WDK audio , port drivers
+- audio miniport drivers WDK , port drivers
+- miniport drivers WDK audio , port drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DMus Port Driver

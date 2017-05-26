@@ -2,14 +2,17 @@
 title: Writing a PCL XL GPD File
 author: windows-driver-content
 description: Writing a PCL XL GPD File
-MS-HAID:
-- 'nt5gpd\_d4d0e598-7ab0-4874-9d8d-ada3cb35e7c5.xml'
-- 'print.writing\_a\_pcl\_xl\_gpd\_file'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 35abc33a-a046-452b-b650-5c4f626bf6cb
-keywords: ["PCL XL vector graphics WDK Unidrv , writing GPD files", "GPD files WDK Unidrv , PCL XL", "command ordering WDK PCL XL", "writing PCL XL GPD files"]
+keywords:
+- PCL XL vector graphics WDK Unidrv , writing GPD files
+- GPD files WDK Unidrv , PCL XL
+- command ordering WDK PCL XL
+- writing PCL XL GPD files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing a PCL XL GPD File

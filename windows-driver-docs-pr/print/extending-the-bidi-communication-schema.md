@@ -2,14 +2,17 @@
 title: Extending the Bidi Communication Schema
 author: windows-driver-content
 description: Extending the Bidi Communication Schema
-MS-HAID:
-- 'autocfg\_0a1e651a-3ef2-421b-84a2-77e60b1fba32.xml'
-- 'print.extending\_the\_bidi\_communication\_schema'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b216a238-184e-4ebd-b9ef-227ff6bf4dbe
-keywords: ["bidirectional communication schema WDK print", "bidi communication schema WDK print", "extensions WDK bidi communication", "bidi extension files WDK bidi communication schema"]
+keywords:
+- bidirectional communication schema WDK print
+- bidi communication schema WDK print
+- extensions WDK bidi communication
+- bidi extension files WDK bidi communication schema
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extending the Bidi Communication Schema

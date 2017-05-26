@@ -2,14 +2,21 @@
 title: Connecting Between Pins of Filters for BDA Minidrivers
 author: windows-driver-content
 description: Connecting Between Pins of Filters for BDA Minidrivers
-MS-HAID:
-- 'bdadg\_6489fae1-d1f1-4e1b-8b55-c85602e806f3.xml'
-- 'stream.connecting\_between\_pins\_of\_filters\_for\_bda\_minidrivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 549031f3-1501-43c0-b172-bc88613d7e61
-keywords: ["Broadcast Driver Architecture WDK AVStream , pin data ranges", "BDA WDK AVStream , pin data ranges", "data ranges WDK AVStream", "ranges WDK AVStream", "pin data ranges WDK", "pin connections WDK BDA", "connecting pins WDK BDA", "connections WDK BDA"]
+keywords:
+- Broadcast Driver Architecture WDK AVStream , pin data ranges
+- BDA WDK AVStream , pin data ranges
+- data ranges WDK AVStream
+- ranges WDK AVStream
+- pin data ranges WDK
+- pin connections WDK BDA
+- connecting pins WDK BDA
+- connections WDK BDA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Connecting Between Pins of Filters for BDA Minidrivers

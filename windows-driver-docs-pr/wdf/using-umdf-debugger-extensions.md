@@ -3,13 +3,21 @@ title: Summary of Debugger Extensions in Wudfext.dll
 author: windows-driver-content
 description: The Windows Driver Kit (WDK) includes a debugger extension library, named WudfExt.dll, which is located in the DDKROOT \\bin subdirectory.
 ms.assetid: af84ed3a-33a1-4736-9080-c43e87052064
-keywords: ["UMDF debugger extensions WDK", "debugger extensions WDK UMDF", "extensions WDK debuggers"]
+keywords:
+- UMDF debugger extensions WDK
+- debugger extensions WDK UMDF
+- extensions WDK debuggers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Summary of Debugger Extensions in Wudfext.dll
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The Windows Driver Kit (WDK) includes a debugger extension library, named *WudfExt.dll*, which is located in the %DDKROOT%\\bin subdirectory. This topic describes the debugger extension commands in *WudfExt.dll*, which you can use to debug User-Mode Driver Framework (UMDF) version 1.*x* drivers.
 

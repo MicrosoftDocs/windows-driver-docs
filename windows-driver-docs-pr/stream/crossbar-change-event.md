@@ -2,14 +2,16 @@
 title: Crossbar Change Event
 author: windows-driver-content
 description: Crossbar Change Event
-MS-HAID:
-- 'vidcapds\_e1fb039c-1f25-457d-81f4-4e3b7033c634.xml'
-- 'stream.crossbar\_change\_event'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 67202a53-d981-47db-9bc1-7de18f9192aa
-keywords: ["crossbar changed event WDK video capture", "events WDK video capture", "EVENTSETID_CROSSBAR"]
+keywords:
+- crossbar changed event WDK video capture
+- events WDK video capture
+- EVENTSETID_CROSSBAR
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Crossbar Change Event

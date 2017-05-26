@@ -1,8 +1,11 @@
 ---
 Description: Guidance for the Hardware Vendor
-MS-HAID: 'wpddk.guidance\_for\_the\_hardware\_vendor'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Guidance for the Hardware Vendor
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Guidance for the Hardware Vendor

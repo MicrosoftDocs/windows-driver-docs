@@ -2,7 +2,14 @@
 title: Display Devices Design Guide
 description: Display Devices Design Guide
 ms.assetid: 0cbd75a3-49c3-4805-8f97-ab3551d0c6ee
-keywords: ["display drivers WDK", "miniport drivers WDK display"]
+keywords:
+- display drivers WDK
+- miniport drivers WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Display Devices Design Guide

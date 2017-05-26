@@ -1,10 +1,12 @@
 ---
 title: Common tasks for mobile broadband Windows Runtime APIs
 description: Common tasks for mobile broadband Windows Runtime APIs
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ad2372e4-2901-42b7-aa67-215f0661d94f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Common tasks for mobile broadband Windows Runtime APIs

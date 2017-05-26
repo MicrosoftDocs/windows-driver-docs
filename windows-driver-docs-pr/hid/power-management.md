@@ -1,11 +1,13 @@
 ---
-title: Power management
+title: Power management for HID over USB
 author: windows-driver-content
 description: HID over USB employs USB suspend to power manage a device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7B5E10B0-2EEA-450A-9E21-B60215F60027
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Power management

@@ -2,14 +2,16 @@
 title: Customizing Other Printer Interface Operations
 author: windows-driver-content
 description: Customizing Other Printer Interface Operations
-MS-HAID:
-- 'custdrvr\_64ea88ab-b165-4878-a8a6-8a8f335b2377.xml'
-- 'print.customizing\_other\_printer\_interface\_operations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ae59d2e7-9049-432d-b519-9e7c88af8d48
-keywords: ["user interface plug-ins WDK print , customization methods", "UI plug-ins WDK print , customization methods", "IPrintOemUI"]
+keywords:
+- user interface plug-ins WDK print , customization methods
+- UI plug-ins WDK print , customization methods
+- IPrintOemUI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Customizing Other Printer Interface Operations

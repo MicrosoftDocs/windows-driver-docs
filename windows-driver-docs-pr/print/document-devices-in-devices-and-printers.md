@@ -2,13 +2,12 @@
 title: Document Devices in Devices and Printers
 author: windows-driver-content
 description: Document Devices in Devices and Printers
-MS-HAID:
-- 'prn\_dxpui\_69747f36-6e94-4205-b4da-07a831f7c3bc.xml'
-- 'print.document\_devices\_in\_devices\_and\_printers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6855d8fa-1354-4af9-8c00-486b6a643f85
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Document Devices in Devices and Printers

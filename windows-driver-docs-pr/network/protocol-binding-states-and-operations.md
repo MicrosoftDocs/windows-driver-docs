@@ -2,7 +2,18 @@
 title: Protocol Binding States and Operations
 description: Protocol Binding States and Operations
 ms.assetid: 669b3de1-7f6b-4e63-8943-c8eaadfa80fc
-keywords: ["protocol drivers WDK networking , binding operational states", "NDIS protocol drivers WDK , binding operation states", "binding states WDK networking", "protocol drivers WDK networking , events", "NDIS protocol drivers WDK , events", "events WDK networking"]
+keywords:
+- protocol drivers WDK networking , binding operational states
+- NDIS protocol drivers WDK , binding operation states
+- binding states WDK networking
+- protocol drivers WDK networking , events
+- NDIS protocol drivers WDK , events
+- events WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Protocol Binding States and Operations

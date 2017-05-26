@@ -2,7 +2,15 @@
 title: Extending Native 802.11 Functionality
 description: Extending Native 802.11 Functionality
 ms.assetid: 6ef2a690-568c-4b39-b988-40a01b6f7298
-keywords: ["Native 802.11 miniport drivers WDK networking , extending functionality", "miniport drivers WDK Native 802.11 , extending functionality", "extending functionality WDK Native 802.11"]
+keywords:
+- Native 802.11 miniport drivers WDK networking , extending functionality
+- miniport drivers WDK Native 802.11 , extending functionality
+- extending functionality WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extending Native 802.11 Functionality

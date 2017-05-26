@@ -3,13 +3,25 @@ title: Initializing UMDF Drivers
 author: windows-driver-content
 description: Initializing UMDF Drivers
 ms.assetid: b21ec019-1a80-4219-8aa8-3545ec3383b9
-keywords: ["User-Mode Driver Framework WDK , initializing drivers", "UMDF WDK , initializing drivers", "user-mode drivers WDK UMDF , initializing", "initializing drivers WDK UMDF", "reflectors WDK UMDF", "loading reflectors WDK UMDF", "driver host process WDK UMDF"]
+keywords:
+- User-Mode Driver Framework WDK , initializing drivers
+- UMDF WDK , initializing drivers
+- user-mode drivers WDK UMDF , initializing
+- initializing drivers WDK UMDF
+- reflectors WDK UMDF
+- loading reflectors WDK UMDF
+- driver host process WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing UMDF Drivers
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 Before a UMDF driver for a device is initialized, the driver manager and the reflector are loaded by the operating system and the driver host process is created. To ensure that a device starts successfully, the driver manager is loaded and fully initialized by the time the reflector initializes.
 

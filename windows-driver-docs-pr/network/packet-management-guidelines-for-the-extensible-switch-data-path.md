@@ -2,6 +2,11 @@
 title: Packet Management Guidelines for the Extensible Switch Data Path
 description: Packet Management Guidelines for the Extensible Switch Data Path
 ms.assetid: 18B2BCBA-8428-45CF-93A0-8F7182DBCAA2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Packet Management Guidelines for the Extensible Switch Data Path

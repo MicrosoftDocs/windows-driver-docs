@@ -2,7 +2,14 @@
 title: Status Security and Authenticity
 description: Status Security and Authenticity
 ms.assetid: 554d74ee-26fb-4e75-b799-c55c6bdd0153
-keywords: ["status information WDK COPP", "status exchange WDK COPP"]
+keywords:
+- status information WDK COPP
+- status exchange WDK COPP
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Status Security and Authenticity

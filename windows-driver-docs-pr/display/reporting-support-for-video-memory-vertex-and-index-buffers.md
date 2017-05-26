@@ -2,7 +2,14 @@
 title: Reporting Support for Video Memory Vertex and Index Buffers
 description: Reporting Support for Video Memory Vertex and Index Buffers
 ms.assetid: fa0d7dd5-3bed-45db-a946-0761fd631a52
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display , reporting capabilities", "D3DCAPS8"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display , reporting capabilities
+- D3DCAPS8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting Support for Video Memory Vertex and Index Buffers

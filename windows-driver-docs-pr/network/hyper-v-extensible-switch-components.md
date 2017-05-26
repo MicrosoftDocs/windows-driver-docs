@@ -2,6 +2,11 @@
 title: Hyper-V Extensible Switch Components
 description: Hyper-V Extensible Switch Components
 ms.assetid: 510A4D75-8DB4-46D7-BA54-248ED4FEC349
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hyper-V Extensible Switch Components

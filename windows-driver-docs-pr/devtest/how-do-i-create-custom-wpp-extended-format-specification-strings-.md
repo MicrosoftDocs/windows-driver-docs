@@ -2,6 +2,11 @@
 title: How do I create custom WPP extended format specification strings
 description: How do I create custom WPP extended format specification strings
 ms.assetid: 6c4c47c6-71b2-48a0-bab3-8498029b8244
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How do I create custom WPP extended format specification strings?
@@ -11,13 +16,13 @@ You create custom WPP extended format specification strings by using the DEFINE\
 
 This topic provides examples that show you how to do the following:
 
--   [Trace fixed-length strings through custom WPP extended format specification strings](#trace-fixed-length-strings-through-custom-wpp-extended-format-specific)
+- [Trace fixed-length strings through custom WPP extended format specification strings](#trace-fixed-length-strings-through-custom-wpp-extended-format-specification-strings)
 
--   [Trace variable-length strings through custom WPP extended format specification strings](#trace-variable-length-strings-through-custom-wpp-extended-format-speci)
+- [Trace variable-length strings through custom WPP extended format specification strings](#trace-variable-length-strings-through-custom-wpp-extended-format-specification-strings)
 
 Each of these examples shows the use of a custom WPP configuration file for the definition of the DEFINE\_CPLX\_TYPE macro. In these examples, the configuration file is named LocalWpp.ini. For more information about how to use custom WPP configuration files, see [How do you define custom data types?](how-do-you-define-custom-data-types-.md).
 
-### <span id="trace_fixed_length_strings_through_custom_wpp_extended_format_specific"></span><span id="TRACE_FIXED_LENGTH_STRINGS_THROUGH_CUSTOM_WPP_EXTENDED_FORMAT_SPECIFIC"></span> Trace fixed-length strings through custom WPP extended format specification strings
+## Trace fixed-length strings through custom WPP extended format specification strings
 
 This example shows how to trace Internet Protocol version 6 (IPv6) network addresses by using a custom WPP extended format specification string. IPv6 network addresses, as defined by the in6\_addr structure, have a fixed-length length of 16 bytes.
 
@@ -68,7 +73,7 @@ DoTraceMessage(Noise, "IN6_ADDR  = %!IPV6ADDR!", &IPAddressV6);
 
  
 
-### <span id="trace_variable_length_strings_through_custom_wpp_extended_format_speci"></span><span id="TRACE_VARIABLE_LENGTH_STRINGS_THROUGH_CUSTOM_WPP_EXTENDED_FORMAT_SPECI"></span> Trace variable-length strings through custom WPP extended format specification strings
+## Trace variable-length strings through custom WPP extended format specification strings
 
 This example shows how to trace variable-length buffers of data by using a custom WPP extended format specification string.
 
@@ -156,13 +161,7 @@ CHAR HexDump[1024] = {0, 1, 2, 3, 4, 5, 6, 7} ;
 DoTraceMessage(Noise, "HEXDUMP: %!HEXDUMP! ", LOG_LENSTR(sizeof(HexDump),(PCHAR)HexDump));
 ```
 
-**Note**  You can create a complex type (HEXBYTES) for tracing variable-length buffers. This complex type can be specified by following the procedure that was used for the HEXDUMP complex type.
-
- 
-
- 
-
- 
+**Note**  You can create a complex type (HEXBYTES) for tracing variable-length buffers. This complex type can be specified by following the procedure that was used for the HEXDUMP complex type. 
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20How%20do%20I%20create%20custom%20WPP%20extended%20format%20specification%20strings?%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 

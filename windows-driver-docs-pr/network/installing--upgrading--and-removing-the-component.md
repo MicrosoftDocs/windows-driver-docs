@@ -2,7 +2,21 @@
 title: Installing, Upgrading, and Removing the Component
 description: Installing, Upgrading, and Removing the Component
 ms.assetid: 7069e7a0-0c7e-4f7c-a764-a83e758df1bf
-keywords: ["notify objects WDK networking , removing network components", "network notify objects WDK , removing network components", "notify objects WDK networking , upgrading network components", "network notify objects WDK , upgrading network components", "notify objects WDK networking , installing network components", "network notify objects WDK , installing network components", "removing network components", "upgrading network components WDK , notify objects", "installing network components WDK , notify objects"]
+keywords:
+- notify objects WDK networking , removing network components
+- network notify objects WDK , removing network components
+- notify objects WDK networking , upgrading network components
+- network notify objects WDK , upgrading network components
+- notify objects WDK networking , installing network components
+- network notify objects WDK , installing network components
+- removing network components
+- upgrading network components WDK , notify objects
+- installing network components WDK , notify objects
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing, Upgrading, and Removing the Component

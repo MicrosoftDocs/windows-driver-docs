@@ -2,13 +2,12 @@
 title: Using Theme Manifests
 author: windows-driver-content
 description: Using Theme Manifests
-MS-HAID:
-- 'prtinst\_ac1153a9-36e9-42e9-86ba-9953d7810260.xml'
-- 'print.using\_theme\_manifests'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8b3feb56-501b-4f35-937e-0be99338ae01
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Theme Manifests

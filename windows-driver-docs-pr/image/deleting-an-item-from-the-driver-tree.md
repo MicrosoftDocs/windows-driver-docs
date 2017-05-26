@@ -2,13 +2,12 @@
 title: Deleting an Item from the Driver Tree
 author: windows-driver-content
 description: Deleting an Item from the Driver Tree
-MS-HAID:
-- 'WIA\_drv\_basic\_21d4d9c7-7f22-4637-aca8-4f074cdd3f60.xml'
-- 'image.deleting\_an\_item\_from\_the\_driver\_tree'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: eea7565c-be15-4610-a1b4-16596d1daca2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Deleting an Item from the Driver Tree

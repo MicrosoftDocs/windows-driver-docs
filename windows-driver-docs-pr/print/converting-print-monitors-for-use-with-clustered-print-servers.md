@@ -2,14 +2,17 @@
 title: Converting Print Monitors for Use with Clustered Print Servers
 author: windows-driver-content
 description: Converting Print Monitors for Use with Clustered Print Servers
-MS-HAID:
-- 'provider\_42484e98-b94e-49a9-82b3-b683ee592ec5.xml'
-- 'print.converting\_print\_monitors\_for\_use\_with\_clustered\_print\_servers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6b374d61-bb2b-42a4-9609-3cde9b82bb2b
-keywords: ["print monitors WDK , clustered print servers", "clustered print servers WDK", "print server clustering WDK", "converting print monitors for clustered print servers"]
+keywords:
+- print monitors WDK , clustered print servers
+- clustered print servers WDK
+- print server clustering WDK
+- converting print monitors for clustered print servers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Converting Print Monitors for Use with Clustered Print Servers

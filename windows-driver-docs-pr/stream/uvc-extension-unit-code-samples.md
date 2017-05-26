@@ -2,14 +2,15 @@
 title: UVC Extension Unit Code Samples
 author: windows-driver-content
 description: UVC Extension Unit Code Samples
-MS-HAID:
-- 'uvcds\_f0003d52-b63e-4981-b4ac-06d9210ef4e2.xml'
-- 'stream.uvc\_extension\_unit\_code\_samples'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c4f24646-57ea-4467-ad48-a3e6044658e3
-keywords: ["extension units WDK USB Video Class , samples", "sample code WDK USB Video Class"]
+keywords:
+- extension units WDK USB Video Class , samples
+- sample code WDK USB Video Class
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UVC Extension Unit Code Samples

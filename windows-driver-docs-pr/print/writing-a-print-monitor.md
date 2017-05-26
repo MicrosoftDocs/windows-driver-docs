@@ -2,14 +2,20 @@
 title: Writing a Print Monitor
 author: windows-driver-content
 description: Writing a Print Monitor
-MS-HAID:
-- 'provider\_81f595db-3146-48ba-8d0b-5eabe4fdb340.xml'
-- 'print.writing\_a\_print\_monitor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ca5600fc-9e2c-4735-90c4-9509c31dee29
-keywords: ["print spooler customizing WDK , print monitors", "spooler customizing WDK print , print monitors", "customizing print spooler components WDK , print monitors", "print monitors WDK", "writing print monitors", "monitors WDK print", "print monitors WDK , about print monitors"]
+keywords:
+- print spooler customizing WDK , print monitors
+- spooler customizing WDK print , print monitors
+- customizing print spooler components WDK , print monitors
+- print monitors WDK
+- writing print monitors
+- monitors WDK print
+- print monitors WDK , about print monitors
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing a Print Monitor

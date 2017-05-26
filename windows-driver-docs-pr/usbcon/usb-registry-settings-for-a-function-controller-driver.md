@@ -1,10 +1,12 @@
 ---
-Description: 'OEMs must set several registry values to make sure that their device enumerates with the correct metadata when connected to a computer.'
-MS-HAID: 'buses.usb\_registry\_settings\_for\_a\_function\_controller\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: OEMs must set several registry values to make sure that their device enumerates with the correct metadata when connected to a computer.
 title: USB registry settings for a function controller driver
+author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB registry settings for a function controller driver
@@ -205,18 +207,10 @@ To enable MirrorLink connectivity on Windows 10 Mobile Device, OEM must make th
 Alternatively, a CDC Function Union Descriptor can also be defined as a Class-Specific Interface Descriptor; however, the interface numbers specified by the Union descriptor are static and are not be assigned by the USB function driver stack, and the presence of a Union descriptor does not cause the interfaces described by it to be associated with a single child PDO. An IAD is required for that association.
 
 ## Related topics
+[USB device-side drivers in Windows](usb-device-side-drivers-in-windows.md)  
+[Developing Windows drivers for USB function controllers](developing-windows-drivers-for-usb-function-controllers.md)  
 
-
-[USB device-side drivers in Windows](usb-device-side-drivers-in-windows.md)
-
-[Developing Windows drivers for USB function controllers](developing-windows-drivers-for-usb-function-controllers.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20USB%20registry%20settings%20for%20a%20function%20controller%20driver%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

@@ -2,7 +2,20 @@
 title: Tools for Building Drivers
 description: Tools for Building Drivers
 ms.assetid: 4e7dce6a-4ac2-4d09-89d8-1394a8e61ea8
-keywords: ["tools WDK , building drivers", "driver development tools WDK , building drivers", "building drivers WDK , tools", "driver building WDK , tools", "building samples WDK", "sample building WDK", "building software components WDK", "software component building WDK"]
+keywords:
+- tools WDK , building drivers
+- driver development tools WDK , building drivers
+- building drivers WDK , tools
+- driver building WDK , tools
+- building samples WDK
+- sample building WDK
+- building software components WDK
+- software component building WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tools for Building Drivers

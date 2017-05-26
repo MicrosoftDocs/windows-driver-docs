@@ -2,14 +2,14 @@
 title: Sample Print Provider
 author: windows-driver-content
 description: Sample Print Provider
-MS-HAID:
-- 'splarch\_c0dbdc37-4481-44b8-aca0-9d7938a3e352.xml'
-- 'print.sample\_print\_provider'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fdb6979a-3566-4280-bee7-b58cc39af6f8
-keywords: ["print providers WDK , samples"]
+keywords:
+- print providers WDK , samples
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Print Provider

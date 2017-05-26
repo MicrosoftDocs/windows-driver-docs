@@ -2,14 +2,16 @@
 title: Range Template Data Type Issues
 author: windows-driver-content
 description: Range Template Data Type Issues
-MS-HAID:
-- 'gplfiles\_75a0e3e3-6201-4dbb-bb96-8a1b2560b6ee.xml'
-- 'print.range\_template\_data\_type\_issues'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 36cc91dc-5edc-4786-b3c9-f60bff06997d
-keywords: ["data types WDK GDL , problems with template data types", "range data type WDK GDL", "ArraySize directive wDK GDL"]
+keywords:
+- data types WDK GDL , problems with template data types
+- range data type WDK GDL
+- ArraySize directive wDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Range Template Data Type Issues

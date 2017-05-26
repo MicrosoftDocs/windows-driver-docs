@@ -2,14 +2,19 @@
 title: Extending the DirectInput Game Controller Control Panel
 author: windows-driver-content
 description: Extending the DirectInput Game Controller Control Panel
-MS-HAID:
-- 'di\_c264991f-1512-46e2-89dc-63437cc0b6c8.xml'
-- 'hid.extending\_the\_directinput\_game\_controller\_control\_panel'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 45df8aee-10e0-43b3-8878-3ad83d822028
-keywords: ["property sheets WDK DirectInput", "game controllers WDK DirectInput", "control panels WDK DirectInput", "joysticks WDK HID , game controller support", "force feedback drivers WDK HID , property sheets", "game pad support WDK DirectInput"]
+keywords:
+- property sheets WDK DirectInput
+- game controllers WDK DirectInput
+- control panels WDK DirectInput
+- joysticks WDK HID , game controller support
+- force feedback drivers WDK HID , property sheets
+- game pad support WDK DirectInput
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extending the DirectInput Game Controller Control Panel

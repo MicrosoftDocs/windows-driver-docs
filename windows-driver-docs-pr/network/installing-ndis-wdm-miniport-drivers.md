@@ -2,7 +2,15 @@
 title: Installing NDIS-WDM Miniport Drivers
 description: Installing NDIS-WDM Miniport Drivers
 ms.assetid: 7b87d8e3-cefa-49d7-ae66-0c3d771e24ef
-keywords: ["NDIS-WDM miniport driver WDK networking , installing", "lower edge of NDIS miniport drivers WDK networking , driver installations", "WDM lower edge WDK networking , driver installations"]
+keywords:
+- NDIS-WDM miniport driver WDK networking , installing
+- lower edge of NDIS miniport drivers WDK networking , driver installations
+- WDM lower edge WDK networking , driver installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing NDIS-WDM Miniport Drivers

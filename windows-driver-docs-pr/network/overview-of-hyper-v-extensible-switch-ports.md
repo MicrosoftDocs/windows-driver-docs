@@ -2,6 +2,11 @@
 title: Overview of Hyper-V Extensible Switch Ports
 description: Overview of Hyper-V Extensible Switch Ports
 ms.assetid: FD6B6014-B840-4EC8-96F4-34C08EC303EA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Hyper-V Extensible Switch Ports

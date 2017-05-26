@@ -2,14 +2,20 @@
 title: AVStream Allocators
 author: windows-driver-content
 description: AVStream Allocators
-MS-HAID:
-- 'avsover\_95bbe5c5-5e41-4e53-a6c6-bba905ee7318.xml'
-- 'stream.avstream\_allocators'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cda90faa-d4e3-4f17-aa5a-87dcde314bfd
-keywords: ["AVStream allocators WDK", "allocators WDK AVStream", "frames WDK AVStream", "data buffers WDK AVStream", "buffers WDK AVStream", "allocating frames WDK AVStream", "freeing frames WDK AVStream"]
+keywords:
+- AVStream allocators WDK
+- allocators WDK AVStream
+- frames WDK AVStream
+- data buffers WDK AVStream
+- buffers WDK AVStream
+- allocating frames WDK AVStream
+- freeing frames WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AVStream Allocators

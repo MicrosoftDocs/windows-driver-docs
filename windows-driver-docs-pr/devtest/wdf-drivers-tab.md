@@ -2,7 +2,20 @@
 title: WDF Drivers Tab
 description: This topic provides detailed information about WDF Verifier's WDF Drivers page.
 ms.assetid: e1e1d92e-1173-48ef-b985-688ebfb08bdc
-keywords: ["WDF Verifier control application WDK", "WDF Verifier WDK", "tools WDK , verifying", "testing drivers WDK WDF", "debugging drivers WDK WDF", "verifying drivers WDK WDF", "KMDF verifier tools WDK WDF", "UMDF verifier tools WDK WDF"]
+keywords:
+- WDF Verifier control application WDK
+- WDF Verifier WDK
+- tools WDK , verifying
+- testing drivers WDK WDF
+- debugging drivers WDK WDF
+- verifying drivers WDK WDF
+- KMDF verifier tools WDK WDF
+- UMDF verifier tools WDK WDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDF Drivers Tab

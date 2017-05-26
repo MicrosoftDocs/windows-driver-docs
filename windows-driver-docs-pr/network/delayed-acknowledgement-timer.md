@@ -2,7 +2,16 @@
 title: Delayed Acknowledgement Timer
 description: Delayed Acknowledgement Timer
 ms.assetid: f3004af1-b807-4bff-a388-32396202a8f6
-keywords: ["timers WDK TCP chimney offload , delayed acknowledgement timers", "TCP timers WDK TCP chimney offload , delayed acknowledgement timers", "delayed acknowledgement timers WDK TCP chimney offload", "acknowledgement timers WDK TCP chimney offload"]
+keywords:
+- timers WDK TCP chimney offload , delayed acknowledgement timers
+- TCP timers WDK TCP chimney offload , delayed acknowledgement timers
+- delayed acknowledgement timers WDK TCP chimney offload
+- acknowledgement timers WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Delayed Acknowledgement Timer

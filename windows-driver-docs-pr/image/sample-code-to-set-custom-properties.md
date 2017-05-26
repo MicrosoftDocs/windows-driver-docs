@@ -2,13 +2,12 @@
 title: Sample Code to Set Custom Properties
 author: windows-driver-content
 description: Sample Code to Set Custom Properties
-MS-HAID:
-- 'WIA\_drv\_basic\_7361e4e5-c017-41d5-854c-45dcaa937b7d.xml'
-- 'image.sample\_code\_to\_set\_custom\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 726315eb-de5c-47b6-a35b-524ec1c97d52
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Code to Set Custom Properties

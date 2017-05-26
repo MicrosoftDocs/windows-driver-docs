@@ -2,7 +2,20 @@
 title: DMA Verification
 description: DMA Verification
 ms.assetid: ffcb718a-63f5-49ff-9d36-67b2aa59761f
-keywords: ["DMA Verification feature WDK Driver Verifier", "HAL Verification WDK Driver Verifier", "common-buffer DMA WDK Driver Verifier", "packet DMA WDK Driver Verifier", "scatter-gather DMA WDK Driver Verifier", "system DMA WDK Driver Verifier", "Direct Memory Access WDK Driver Verifier", "DMA errors WDK Driver Verifier"]
+keywords:
+- DMA Verification feature WDK Driver Verifier
+- HAL Verification WDK Driver Verifier
+- common-buffer DMA WDK Driver Verifier
+- packet DMA WDK Driver Verifier
+- scatter-gather DMA WDK Driver Verifier
+- system DMA WDK Driver Verifier
+- Direct Memory Access WDK Driver Verifier
+- DMA errors WDK Driver Verifier
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DMA Verification

@@ -2,14 +2,18 @@
 title: GDL Exercise 1 Implementing a GDL Schema
 author: windows-driver-content
 description: GDL Exercise 1 Implementing a GDL Schema
-MS-HAID:
-- 'gplfiles\_a682abf2-85aa-4a2c-9183-acca57ec8fc3.xml'
-- 'print.gdl\_exercise\_1\_\_implementing\_a\_gdl\_schema'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0adfef5a-4211-45e9-bb65-8174822efdc5
-keywords: ["GDL WDK , examples", "examples WDK GDL", "tutorials WDK GDL", "GDL WDK , tutorials", "schemas WDK GDL , implementing GDL schemas"]
+keywords:
+- GDL WDK , examples
+- examples WDK GDL
+- tutorials WDK GDL
+- GDL WDK , tutorials
+- schemas WDK GDL , implementing GDL schemas
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Exercise 1: Implementing a GDL Schema

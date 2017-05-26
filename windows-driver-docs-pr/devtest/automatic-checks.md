@@ -2,7 +2,24 @@
 title: Automatic Checks
 description: Automatic Checks
 ms.assetid: ec3cb6a4-d990-4830-914c-064f6c79371a
-keywords: ["automatic checks WDK Driver Verifier", "IRQL monitoring WDK Driver Verifier", "stack switching WDK Driver Verifier", "free pool timers WDK Driver Verifier", "clean up checks WDK Driver Verifier", "switching stacks WDK Driver Verifier", "driver unloads WDK Driver Verifier", "Driver Verifier options, Monitoring IRQL and Memory Routines", "Driver Verifier options, Monitoring Stack Switching", "Driver Verifier options, Checking on Driver Unload", "Driver Verifier options, Monitoring Driver Dispatch Routines", "Driver Verifier options, Monitoring Memory Dispatch List (MDL) Usage"]
+keywords:
+- automatic checks WDK Driver Verifier
+- IRQL monitoring WDK Driver Verifier
+- stack switching WDK Driver Verifier
+- free pool timers WDK Driver Verifier
+- clean up checks WDK Driver Verifier
+- switching stacks WDK Driver Verifier
+- driver unloads WDK Driver Verifier
+- Driver Verifier options, Monitoring IRQL and Memory Routines
+- Driver Verifier options, Monitoring Stack Switching
+- Driver Verifier options, Checking on Driver Unload
+- Driver Verifier options, Monitoring Driver Dispatch Routines
+- Driver Verifier options, Monitoring Memory Dispatch List (MDL) Usage
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Automatic Checks

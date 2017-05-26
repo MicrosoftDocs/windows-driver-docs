@@ -2,13 +2,12 @@
 title: WIA Item Properties for Film Scanners
 author: windows-driver-content
 description: WIA Item Properties for Film Scanners
-MS-HAID:
-- 'WIA\_scanner\_tree\_8f162b6c-063e-48b9-ac62-e1a53c6a855e.xml'
-- 'image.wia\_item\_properties\_for\_film\_scanners'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a94ca7f2-90ee-49a7-b011-12947485f37b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Item Properties for Film Scanners

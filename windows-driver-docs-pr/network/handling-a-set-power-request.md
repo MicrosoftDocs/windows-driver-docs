@@ -2,7 +2,17 @@
 title: Handling a Set Power Request
 description: Handling a Set Power Request
 ms.assetid: c69d4a9b-009a-4320-8e20-32a9cf9113bf
-keywords: ["set-power requests WDK NDIS intermediate", "Sleeping state WDK NDIS intermediate", "Working state WDK NDIS intermediate", "standby flags WDK NDIS intermediate", "power states WDK networking"]
+keywords:
+- set-power requests WDK NDIS intermediate
+- Sleeping state WDK NDIS intermediate
+- Working state WDK NDIS intermediate
+- standby flags WDK NDIS intermediate
+- power states WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling a Set Power Request

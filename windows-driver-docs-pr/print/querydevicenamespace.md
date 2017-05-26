@@ -2,14 +2,14 @@
 title: QueryDeviceNamespace
 author: windows-driver-content
 description: The IPrintTicketProvider QueryDeviceNamespace routine provides the default namespace that the PrintTicket-to-DEVMODE and DEVMODE-to-PrintTicket conversions will use if they need to put a feature or option from a private namespace in a Print Ticket.
-MS-HAID:
-- 'drvarch\_59F1691E-0C4A-48a6-BBB7-0DE6F084CDF4.xml'
-- 'print.querydevicenamespace'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5f940cdc-42c3-4521-91c5-cc8e340ce34a
-keywords: ["QueryDeviceNamespace"]
+keywords:
+- QueryDeviceNamespace
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # QueryDeviceNamespace

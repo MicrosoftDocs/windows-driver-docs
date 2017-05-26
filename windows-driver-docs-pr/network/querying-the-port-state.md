@@ -2,7 +2,17 @@
 title: Querying the Port State
 description: Querying the Port State
 ms.assetid: 3659d99b-1bbd-453c-8a56-b968d1748c1f
-keywords: ["port states WDK NDIS", "querying NDIS port states", "ports WDK NDIS , OID requests", "NDIS ports WDK , OID requests", "OID requests WDK NDIS ports"]
+keywords:
+- port states WDK NDIS
+- querying NDIS port states
+- ports WDK NDIS , OID requests
+- NDIS ports WDK , OID requests
+- OID requests WDK NDIS ports
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Querying the Port State

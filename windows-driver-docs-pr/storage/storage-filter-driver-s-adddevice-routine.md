@@ -3,7 +3,16 @@ title: Storage Filter Driver's AddDevice Routine
 author: windows-driver-content
 description: Storage Filter Driver's AddDevice Routine
 ms.assetid: 7970fb3e-4e4c-4ff7-9738-e09454a864c4
-keywords: ["storage filter drivers WDK , AddDevice", "filter drivers WDK storage , AddDevice", "SFD WDK storage , AddDevice", "AddDevice routine WDK storage"]
+keywords:
+- storage filter drivers WDK , AddDevice
+- filter drivers WDK storage , AddDevice
+- SFD WDK storage , AddDevice
+- AddDevice routine WDK storage
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storage Filter Driver's AddDevice Routine

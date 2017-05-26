@@ -1,10 +1,12 @@
 ---
 title: Provisioning Windows using a website
 description: Provisioning Windows using a website
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ba60fddd-a248-4afb-9390-f9277ef1f094
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Provisioning Windows using a website

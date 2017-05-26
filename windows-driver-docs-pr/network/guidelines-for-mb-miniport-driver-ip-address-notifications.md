@@ -2,6 +2,11 @@
 title: Guidelines for MB Miniport Driver IP Address Notifications
 description: Guidelines for MB Miniport Driver IP Address Notifications
 ms.assetid: 23d74bc4-5648-45e3-a603-350d71bb16e3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Guidelines for MB Miniport Driver IP Address Notifications

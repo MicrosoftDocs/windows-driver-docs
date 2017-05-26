@@ -2,14 +2,15 @@
 title: GDL Examples
 author: windows-driver-content
 description: GDL Examples
-MS-HAID:
-- 'gplfiles\_663ee58d-5712-4616-b5b5-9d09263cdea9.xml'
-- 'print.gdl\_examples'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c0279584-64b4-47f2-b607-f7e0988250cc
-keywords: ["GDL WDK , examples", "examples WDK GDL"]
+keywords:
+- GDL WDK , examples
+- examples WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Examples

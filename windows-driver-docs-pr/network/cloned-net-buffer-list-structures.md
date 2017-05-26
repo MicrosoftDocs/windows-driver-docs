@@ -2,7 +2,18 @@
 title: Cloned NET\_BUFFER\_LIST Structures
 description: Cloned NET\_BUFFER\_LIST Structures
 ms.assetid: efcf7d03-401e-46da-9ca3-8423af1e385a
-keywords: ["NET_BUFFER_LIST", "cloned structures WDK networking", "duplicate structures WDK networking", "parent/child NET_BUFFER_LIST relationships WDK networking", "child/parent NET_BUFFER_LIST relationships WDK networking", "relationships WDK NET_BUFFER_LIST"]
+keywords:
+- NET_BUFFER_LIST
+- cloned structures WDK networking
+- duplicate structures WDK networking
+- parent/child NET_BUFFER_LIST relationships WDK networking
+- child/parent NET_BUFFER_LIST relationships WDK networking
+- relationships WDK NET_BUFFER_LIST
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Cloned NET\_BUFFER\_LIST Structures

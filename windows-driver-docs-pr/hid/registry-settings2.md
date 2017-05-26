@@ -2,14 +2,17 @@
 title: Registry Settings
 author: windows-driver-content
 description: Registry Settings
-MS-HAID:
-- 'di\_a401deb1-8cc6-4767-92d2-adc96721eee2.xml'
-- 'hid.registry\_settings2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a2536911-0467-4bd0-a63b-55341f0d7567
-keywords: ["joysticks WDK HID , registry settings", "virtual joystick drivers WDK HID , registry settings", "VJoyD WDK HID , registry settings", "registry WDK joysticks"]
+keywords:
+- joysticks WDK HID , registry settings
+- virtual joystick drivers WDK HID , registry settings
+- VJoyD WDK HID , registry settings
+- registry WDK joysticks
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registry Settings

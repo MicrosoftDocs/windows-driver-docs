@@ -2,7 +2,14 @@
 title: Requesting Explicit Scan Operations
 description: Requesting Explicit Scan Operations
 ms.assetid: 036c5a7a-c3f3-4f51-bc82-cee7619d0ee0
-keywords: ["explicit scan operations WDK Native 802.11", "requesting explicit scan operations WDK Native 802.11"]
+keywords:
+- explicit scan operations WDK Native 802.11
+- requesting explicit scan operations WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Requesting Explicit Scan Operations

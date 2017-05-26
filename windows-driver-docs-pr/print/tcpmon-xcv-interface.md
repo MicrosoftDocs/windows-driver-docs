@@ -2,14 +2,17 @@
 title: TCPMON Xcv Interface
 author: windows-driver-content
 description: TCPMON Xcv Interface
-MS-HAID:
-- 'provider\_19c6db6a-92dd-4650-a96f-7ae24574be36.xml'
-- 'print.tcpmon\_xcv\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7b2b1cff-ab8f-44e0-9327-dc60a0072bf5
-keywords: ["print monitors WDK , TCPMON Xcv", "transceive (Xcv) interface WDK print", "Xcv interface WDK print", "TCPMON Xcv interface WDK print"]
+keywords:
+- print monitors WDK , TCPMON Xcv
+- transceive (Xcv) interface WDK print
+- Xcv interface WDK print
+- TCPMON Xcv interface WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TCPMON Xcv Interface

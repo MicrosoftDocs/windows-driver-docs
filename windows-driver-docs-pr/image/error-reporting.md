@@ -2,13 +2,12 @@
 title: Error Reporting
 author: windows-driver-content
 description: Error Reporting
-MS-HAID:
-- 'WIA\_arch\_95481f64-dbc7-4ccb-bad6-da1763903ca8.xml'
-- 'image.error\_reporting'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6f8c08f4-2809-4f49-9332-bbee85399404
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Error Reporting

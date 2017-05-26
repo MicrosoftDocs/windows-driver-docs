@@ -2,13 +2,12 @@
 title: Starting and Stopping the Still Image Service
 author: windows-driver-content
 description: Starting and Stopping the Still Image Service
-MS-HAID:
-- 'stillimg\_1bcb93c4-f7c8-4585-af0d-bd18e390a07a.xml'
-- 'image.starting\_and\_stopping\_the\_still\_image\_service'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 52770566-1d03-4ae8-9925-240fffcc5f57
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Starting and Stopping the Still Image Service

@@ -2,14 +2,18 @@
 title: ASP Variables for Print Web Pages
 author: windows-driver-content
 description: ASP Variables for Print Web Pages
-MS-HAID:
-- 'inetpri\_b06dc4f9-f022-4b83-9e78-7f42fc32d9bd.xml'
-- 'print.asp\_variables\_for\_print\_web\_pages'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: eab0d5e0-0e20-443c-b714-a2b2327894e4
-keywords: ["customized print Web pages WDK , ASP variables", "ASP variables WDK printer", "session variables WDK printer", "print Web pages WDK , ASP variables", "Web pages WDK printer , ASP variables"]
+keywords:
+- customized print Web pages WDK , ASP variables
+- ASP variables WDK printer
+- session variables WDK printer
+- print Web pages WDK , ASP variables
+- Web pages WDK printer , ASP variables
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ASP Variables for Print Web Pages

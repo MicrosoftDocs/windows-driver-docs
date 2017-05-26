@@ -2,13 +2,12 @@
 title: Introduction to Microsoft STI
 author: windows-driver-content
 description: Introduction to Microsoft STI
-MS-HAID:
-- 'stillimg\_1fd4cb6b-b6dc-49a0-8ab0-5b66cf1d20e6.xml'
-- 'image.introduction\_to\_microsoft\_sti'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b329dbbc-28c5-47df-9ced-33180415b7c6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Microsoft STI

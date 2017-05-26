@@ -2,7 +2,17 @@
 title: Connection-Oriented Timing Features
 description: Connection-Oriented Timing Features
 ms.assetid: 73b005c2-39bd-4931-89cd-7ea3db9068ca
-keywords: ["connection-oriented NDIS WDK , timing features", "CoNDIS WDK networking , timing features", "timing features WDK CoNDIS", "clocks", "local clocks WDK CoNDIS"]
+keywords:
+- connection-oriented NDIS WDK , timing features
+- CoNDIS WDK networking , timing features
+- timing features WDK CoNDIS
+- clocks
+- local clocks WDK CoNDIS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Connection-Oriented Timing Features

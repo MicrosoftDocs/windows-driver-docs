@@ -3,13 +3,24 @@ title: Specifying a Callback Synchronization Mode
 author: windows-driver-content
 description: Specifying a Callback Synchronization Mode
 ms.assetid: 3e041493-1095-47cb-b9a7-879a4cf1bd2e
-keywords: ["callback synchronization WDK UMDF", "synchronization WDK UMDF", "queue callback functions WDK UMDF", "callback functions WDK UMDF", "I/O queues WDK UMDF", "locking WDK UMDF"]
+keywords:
+- callback synchronization WDK UMDF
+- synchronization WDK UMDF
+- queue callback functions WDK UMDF
+- callback functions WDK UMDF
+- I/O queues WDK UMDF
+- locking WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying a Callback Synchronization Mode
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The driver can specify how its callback functions are called by the framework. The driver specifies a synchronization (or locking) mode for a device before it calls the [**IWDFDriver::CreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff558899) method to create a [device object](framework-device-object.md) for the device. To specify synchronization mode, the driver should call the [**IWDFDeviceInitialize::SetLockingConstraint**](https://msdn.microsoft.com/library/windows/hardware/ff556991) method. The driver receives a pointer to the [IWDFDeviceInitialize](https://msdn.microsoft.com/library/windows/hardware/ff556965) interface when its [**IDriverEntry::OnDeviceAdd**](https://msdn.microsoft.com/library/windows/hardware/ff554896) method is called to add the device to the system.
 

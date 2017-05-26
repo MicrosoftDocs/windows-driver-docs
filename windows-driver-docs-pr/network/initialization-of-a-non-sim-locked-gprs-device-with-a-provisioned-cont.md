@@ -1,11 +1,15 @@
 ---
-title: Initialization of a Non-SIM-Locked GPRS Device with a Provisioned Context
+title: Initializing a non-SIM-locked GPRS device (provisioned context)
 description: Initialization of a Non-SIM-Locked GPRS Device with a Provisioned Context
 ms.assetid: 0bbd4842-72ad-445b-9f28-b28e8740f263
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initialization of a Non-SIM-Locked GPRS Device with a Provisioned Context
-
 
 The following diagram represents the optimal user experience for GSM-based MB devices. The out-of-box experience requires no user configuration. It is assumed that the device is configured to automatically select the network to register with. The labels in bold represent OID identifiers or transactional flow control, and the labels in regular text represent the important flags within the OID structure.
 

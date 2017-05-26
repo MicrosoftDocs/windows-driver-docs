@@ -2,14 +2,15 @@
 title: Point and Print DLLs
 author: windows-driver-content
 description: Point and Print DLLs
-MS-HAID:
-- 'prtinst\_1ea7a7f4-ab11-489f-b7e3-ec831b2256e9.xml'
-- 'print.point\_and\_print\_dlls'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7ead940e-8426-4756-890f-f3607dc1f9ca
-keywords: ["Point and Print WDK , DLLs", "DLLs WDK Point and Print"]
+keywords:
+- Point and Print WDK , DLLs
+- DLLs WDK Point and Print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Point and Print DLLs

@@ -1,13 +1,12 @@
 ---
 title: Debugging OCA minidump files
 description: Debugging OCA minidump files
-MS-HAID:
-- 'p\_dashboard.debugging\_oca\_minidump\_files'
-- 'hw\_dashboard.debugging\_oca\_minidump\_files'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 37c60d16-7f4a-4119-8953-68c6fd136735
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging OCA minidump files

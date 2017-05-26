@@ -2,10 +2,12 @@
 title: Secure MOR implementation
 author: windows-driver-content
 description: Describes the behavior and usage for the MemoryOverwriteRequestControlLock UEFI variable, revision 2.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 94F42629-3B76-4EB1-A5FA-4FA13C932CED
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Secure MOR implementation

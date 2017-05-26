@@ -2,7 +2,13 @@
 title: MPEG2\_B
 description: MPEG2\_B
 ms.assetid: 7d67f0ef-a5eb-40db-9f00-6f652d28e530
-keywords: ["MPEG2_B restricted profile WDK DirectX VA"]
+keywords:
+- MPEG2_B restricted profile WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MPEG2\_B

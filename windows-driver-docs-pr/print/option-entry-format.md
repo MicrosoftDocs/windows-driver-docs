@@ -2,14 +2,15 @@
 title: Option Entry Format
 author: windows-driver-content
 description: Option Entry Format
-MS-HAID:
-- 'nt5gpd\_b71b6850-2c31-48f8-8c69-e0d083a1f1ec.xml'
-- 'print.option\_entry\_format'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: defc035a-d571-4bf1-abeb-c7528ba23b81
-keywords: ["printer options WDK Unidrv , entry format", "formats WDK printer options"]
+keywords:
+- printer options WDK Unidrv , entry format
+- formats WDK printer options
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Option Entry Format

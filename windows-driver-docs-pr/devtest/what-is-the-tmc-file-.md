@@ -2,6 +2,11 @@
 title: What is the TMC file
 description: What is the TMC file
 ms.assetid: 5927d6be-93af-4ab2-bdc1-387fabc9c5ca
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # What is the TMC file?

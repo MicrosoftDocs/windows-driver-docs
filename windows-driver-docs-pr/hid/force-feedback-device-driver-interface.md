@@ -2,14 +2,18 @@
 title: Force Feedback Device Driver Interface
 author: windows-driver-content
 description: Force Feedback Device Driver Interface
-MS-HAID:
-- 'di\_31ea3fc5-27cb-4a0d-a5ad-66c15b18da60.xml'
-- 'hid.force\_feedback\_device\_driver\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 59668521-84b9-4a1a-980b-6de57422a2c5
-keywords: ["force feedback drivers WDK HID", "virtual joystick drivers WDK HID , force feedback", "VJoyD WDK HID , force feedback", "joysticks WDK HID , force feedback", "effect drivers WDK force feedback"]
+keywords:
+- force feedback drivers WDK HID
+- virtual joystick drivers WDK HID , force feedback
+- VJoyD WDK HID , force feedback
+- joysticks WDK HID , force feedback
+- effect drivers WDK force feedback
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Force Feedback Device Driver Interface

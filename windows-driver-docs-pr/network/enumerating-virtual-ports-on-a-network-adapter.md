@@ -2,6 +2,11 @@
 title: Enumerating Virtual Ports on a Network Adapter
 description: Enumerating Virtual Ports on a Network Adapter
 ms.assetid: 437C3356-4CC7-4128-9E61-FD01157F4FD9
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enumerating Virtual Ports on a Network Adapter

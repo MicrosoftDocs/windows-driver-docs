@@ -2,13 +2,12 @@
 title: Access Permissions for WIA Drivers
 author: windows-driver-content
 description: Access Permissions for WIA Drivers
-MS-HAID:
-- 'WIA\_best\_practice\_36abd7e4-9b23-46a0-91f1-fedb68fdcacb.xml'
-- 'image.access\_permissions\_for\_wia\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 593e9367-5304-4b04-8597-4a7c498b9f47
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Access Permissions for WIA Drivers

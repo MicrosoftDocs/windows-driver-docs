@@ -2,14 +2,17 @@
 title: Handling End of Stream in AVStream Codecs
 author: windows-driver-content
 description: Handling End of Stream in AVStream Codecs
-MS-HAID:
-- 'shed\_dg\_a21f4511-23d7-4b24-826b-1e8516808d42.xml'
-- 'stream.handling\_end\_of\_stream\_in\_avstream\_codecs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ee57137b-999a-449f-9f9d-50bc19e07ba8
-keywords: ["handling end of stream WDK AVStream", "end of stream WDK AVStream", "hardware codec support WDK AVStream , end of stream", "AVStream hardware codec support WDK , handling end of stream"]
+keywords:
+- handling end of stream WDK AVStream
+- end of stream WDK AVStream
+- hardware codec support WDK AVStream , end of stream
+- AVStream hardware codec support WDK , handling end of stream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling End of Stream in AVStream Codecs

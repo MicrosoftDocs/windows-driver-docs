@@ -2,14 +2,16 @@
 title: TV Audio Properties
 author: windows-driver-content
 description: TV Audio Properties
-MS-HAID:
-- 'vidcapds\_839dad6f-28e8-42c5-b177-1970fe41b8ff.xml'
-- 'stream.tv\_audio\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0eed4007-9fd9-4927-8ac7-2e23fd082dec
-keywords: ["TV audio properties WDK video capture", "audio properties WDK video capture", "PROPSETID_VIDCAP_TVAUDIO"]
+keywords:
+- TV audio properties WDK video capture
+- audio properties WDK video capture
+- PROPSETID_VIDCAP_TVAUDIO
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TV Audio Properties

@@ -2,7 +2,18 @@
 title: Installing Device Interfaces for an Audio Adapter
 description: Installing Device Interfaces for an Audio Adapter
 ms.assetid: 824cc6a2-702a-4e51-91b1-ab776b1babf1
-keywords: ["audio adapters WDK , device interfaces", "adapter drivers WDK audio , device interfaces", "Port Class audio adapters WDK , device interfaces", "device interfaces WDK audio", "subdevices WDK audio", "audio device interfaces WDK"]
+keywords:
+- audio adapters WDK , device interfaces
+- adapter drivers WDK audio , device interfaces
+- Port Class audio adapters WDK , device interfaces
+- device interfaces WDK audio
+- subdevices WDK audio
+- audio device interfaces WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing Device Interfaces for an Audio Adapter

@@ -2,12 +2,6 @@
 title: Driver Settings
 author: windows-driver-content
 description: Driver Settings
-MS-HAID:
-- 'di\_92de9fe4-5947-4e5c-8957-3108d996aa65.xml'
-- 'hid.driver\_settings'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 55ea5606-39a9-4962-989f-29900d5ccac8
 ---
 

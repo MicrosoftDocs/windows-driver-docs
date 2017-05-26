@@ -2,14 +2,17 @@
 title: Programming Considerations for USBPRINT
 author: windows-driver-content
 description: Programming Considerations for USBPRINT
-MS-HAID:
-- 'usbprnt\_9c9ea53b-94cc-4515-b9b2-c3c7fd919649.xml'
-- 'print.programming\_considerations\_for\_usbprint'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 351b3124-d584-4817-a5ce-09e16b54d41b
-keywords: ["printer drivers WDK , USB", "USBPRINT", "USBMON", "USB printers WDK"]
+keywords:
+- printer drivers WDK , USB
+- USBPRINT
+- USBMON
+- USB printers WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Programming Considerations for USBPRINT

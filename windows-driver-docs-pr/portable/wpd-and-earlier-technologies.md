@@ -1,8 +1,11 @@
 ---
 Description: WPD and Earlier Technologies
-MS-HAID: 'wpddk.wpd\_and\_earlier\_technologies'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WPD and Earlier Technologies
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WPD and Earlier Technologies

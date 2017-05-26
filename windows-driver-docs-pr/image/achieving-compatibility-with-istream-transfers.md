@@ -2,13 +2,12 @@
 title: Achieving Compatibility with IStream Transfers
 author: windows-driver-content
 description: Achieving Compatibility with IStream Transfers
-MS-HAID:
-- 'WIA\_arch\_ae2ffea8-f864-48dc-95e7-31aa118518df.xml'
-- 'image.achieving\_compatibility\_with\_istream\_transfers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fdd0dce8-8f21-466b-bd2d-48da34914a23
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Achieving Compatibility with IStream Transfers

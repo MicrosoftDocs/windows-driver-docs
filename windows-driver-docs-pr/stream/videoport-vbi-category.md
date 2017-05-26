@@ -2,14 +2,17 @@
 title: Videoport VBI Category
 author: windows-driver-content
 description: Videoport VBI Category
-MS-HAID:
-- 'vidcapds\_b36349cb-6333-40e3-ad77-f1edc79b857d.xml'
-- 'stream.videoport\_vbi\_category'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 99a4d204-45af-4b73-8d31-d745387a38ac
-keywords: ["stream categories WDK video capture , videoport VBI", "videoport VBI category WDK video capture", "VBI WDK video capture", "vertical blanking interval WDK video capture"]
+keywords:
+- stream categories WDK video capture , videoport VBI
+- videoport VBI category WDK video capture
+- VBI WDK video capture
+- vertical blanking interval WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Videoport VBI Category

@@ -2,14 +2,19 @@
 title: Control Nodes
 author: windows-driver-content
 description: Control Nodes
-MS-HAID:
-- 'bdaov\_1db5ff47-4047-4ca1-a97d-1c92621bb2eb.xml'
-- 'stream.control\_nodes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e1ab522e-089e-4508-aef4-5b2a65f50bb5
-keywords: ["broadcast receiver topology WDK BDA", "receiver topology WDK BDA", "Broadcast Driver Architecture WDK AVStream , broadcast receiver topology", "BDA WDK AVStream , receiver topology", "control nodes WDK BDA", "nodes WDK BDA"]
+keywords:
+- broadcast receiver topology WDK BDA
+- receiver topology WDK BDA
+- Broadcast Driver Architecture WDK AVStream , broadcast receiver topology
+- BDA WDK AVStream , receiver topology
+- control nodes WDK BDA
+- nodes WDK BDA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Control Nodes

@@ -3,12 +3,17 @@ title: Synchronizing Interrupt Code
 author: windows-driver-content
 description: Synchronizing Interrupt Code
 ms.assetid: 5E2D0063-2251-40B3-8982-46001E67EB55
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Synchronizing Interrupt Code
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 All driver code that accesses the interrupt data buffer must be synchronized so that only one routine accesses the data at a time.
 

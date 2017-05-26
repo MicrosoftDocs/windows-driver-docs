@@ -2,14 +2,26 @@
 title: GDL Constructs
 author: windows-driver-content
 description: GDL Constructs
-MS-HAID:
-- 'gplfiles\_60717f3a-3e5f-45ee-bf54-a0be69dd6857.xml'
-- 'print.gdl\_constructs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e579bff0-4e28-4e9e-bef2-f6748c3849e5
-keywords: ["GDL WDK , constructs", "constructs WDK GDL", "child entries WDK GDL", "parent construct WDK GDL", "ancestor construct WDK GDL", "syntactical constructs WDK GDL", "logical constructs WDK GDL", "unions WDK GDL", "constructs WDK GDL , syntactical constructs", "constructs WDK GDL , logical constructs", "constructs WDK GDL , unions", "constructs WDK GDL , delimiters", "constructs WDK GDL , examples"]
+keywords:
+- GDL WDK , constructs
+- constructs WDK GDL
+- child entries WDK GDL
+- parent construct WDK GDL
+- ancestor construct WDK GDL
+- syntactical constructs WDK GDL
+- logical constructs WDK GDL
+- unions WDK GDL
+- constructs WDK GDL , syntactical constructs
+- constructs WDK GDL , logical constructs
+- constructs WDK GDL , unions
+- constructs WDK GDL , delimiters
+- constructs WDK GDL , examples
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Constructs

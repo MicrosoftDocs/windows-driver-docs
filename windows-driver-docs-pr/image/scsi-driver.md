@@ -2,13 +2,12 @@
 title: SCSI Driver
 author: windows-driver-content
 description: SCSI Driver
-MS-HAID:
-- 'WIA\_drv\_basic\_4076f288-5fc7-464e-b368-65e2dd5a79b2.xml'
-- 'image.scsi\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e69e3ac6-6726-4f63-afdb-2da1255dde19
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SCSI Driver

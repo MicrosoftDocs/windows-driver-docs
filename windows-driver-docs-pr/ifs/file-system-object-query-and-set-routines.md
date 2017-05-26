@@ -3,7 +3,18 @@ title: File System Object Query and Set Routines
 author: windows-driver-content
 description: File System Object Query and Set Routines
 ms.assetid: 34b97a6e-a155-443c-94dd-4d8f1fc4b430
-keywords: ["mini-redirectors WDK , query operations", "mini-redirectors WDK , set operations", "query operations WDK network redirectors", "set operations WDK network redirectors", "file objects WDK mini-redirectors", "objects WDK mini-redirectors"]
+keywords:
+- mini-redirectors WDK , query operations
+- mini-redirectors WDK , set operations
+- query operations WDK network redirectors
+- set operations WDK network redirectors
+- file objects WDK mini-redirectors
+- objects WDK mini-redirectors
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # File System Object Query and Set Routines

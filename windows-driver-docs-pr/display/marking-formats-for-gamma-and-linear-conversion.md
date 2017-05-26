@@ -2,7 +2,15 @@
 title: Marking Formats for Gamma and Linear Conversion
 description: Marking Formats for Gamma and Linear Conversion
 ms.assetid: 1285b04e-b67a-46d2-82b2-3cde433bf578
-keywords: ["gamma correction WDK DirectX 9.0 , marking formats for gamma conversion", "marking formats for conversion WDK DirectX 9.0", "linear conversions WDK DirectX 9.0"]
+keywords:
+- gamma correction WDK DirectX 9.0 , marking formats for gamma conversion
+- marking formats for conversion WDK DirectX 9.0
+- linear conversions WDK DirectX 9.0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Marking Formats for Gamma and Linear Conversion

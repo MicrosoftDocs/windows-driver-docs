@@ -2,13 +2,12 @@
 title: WIA Driver Error Reporting for Windows Me and Windows XP
 author: windows-driver-content
 description: WIA Driver Error Reporting for Windows Me and Windows XP
-MS-HAID:
-- 'WIA\_error\_15aa965b-4c9a-449c-bb8e-3974bccb34e5.xml'
-- 'image.wia\_driver\_error\_reporting\_for\_windows\_me\_and\_windows\_xp'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5f696e16-0c22-4d71-98d2-d642e721ac8c
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Driver Error Reporting for Windows Me and Windows XP

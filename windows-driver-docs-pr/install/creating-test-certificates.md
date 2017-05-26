@@ -2,6 +2,11 @@
 title: Creating Test Certificates
 description: Creating Test Certificates
 ms.assetid: 4e6daa96-029c-4e1c-b483-b900cb836858
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Test Certificates

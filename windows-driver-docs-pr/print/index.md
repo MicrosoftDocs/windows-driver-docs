@@ -2,14 +2,16 @@
 title: Printer driver design guide
 author: windows-driver-content
 description: This section provides information on designing, testing, and debugging printer drivers.
-MS-HAID:
-- 'prnSpool\_65349c7f-8e59-4d93-b5ff-0b346049b7f2.xml'
-- 'print.print\_devices\_design\_guide'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ff6b9c2e-920a-4cfc-8872-38976ed872f9
-keywords: ["print devices WDK", "print WDK See printer driver", "print WDK See printing"]
+keywords:
+- print devices WDK
+- print WDK See printer driver
+- print WDK See printing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer driver design guide

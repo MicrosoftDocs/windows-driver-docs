@@ -2,13 +2,12 @@
 title: Mapping PTP Objects to WIA Items
 author: windows-driver-content
 description: Mapping PTP Objects to WIA Items
-MS-HAID:
-- 'WIA\_drv\_cam\_5f382dc0-262f-40af-ac6d-3184bd7c2b8b.xml'
-- 'image.mapping\_ptp\_objects\_to\_wia\_items'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3ee88c09-7f36-403a-ae7b-41d08c11c52f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mapping PTP Objects to WIA Items

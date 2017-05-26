@@ -2,12 +2,6 @@
 title: DirectInput Control Panel Architecture
 author: windows-driver-content
 description: DirectInput Control Panel Architecture
-MS-HAID:
-- 'di\_2f1668ea-b827-409b-977f-a59a5a599252.xml'
-- 'hid.directinput\_control\_panel\_architecture'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 638af2f9-7944-4325-b455-271d4f970170
 keywords: ["property sheets WDK DirectInput , control panel structure", "game controllers WDK DirectInput , control panel structure", "control panels WDK DirectInput , architecture", "architecture WDK DirectInput control panel"]
 ---

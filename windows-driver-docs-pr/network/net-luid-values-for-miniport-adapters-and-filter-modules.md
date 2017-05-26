@@ -2,7 +2,17 @@
 title: NET\_LUID Values for Miniport Adapters and Filter Modules
 description: NET\_LUID Values for Miniport Adapters and Filter Modules
 ms.assetid: d9135438-3399-4845-a28d-d445471cb41d
-keywords: ["NDIS network interfaces WDK , NET_LUID", "network interfaces WDK , NET_LUID", "NET_LUID", "miniport adapters WDK networking , NET_LUID value", "filter modules WDK networking , NET_LUID value"]
+keywords:
+- NDIS network interfaces WDK , NET_LUID
+- network interfaces WDK , NET_LUID
+- NET_LUID
+- miniport adapters WDK networking , NET_LUID value
+- filter modules WDK networking , NET_LUID value
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NET\_LUID Values for Miniport Adapters and Filter Modules

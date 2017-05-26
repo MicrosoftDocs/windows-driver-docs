@@ -2,13 +2,12 @@
 title: Vendor-Extended Features
 author: windows-driver-content
 description: Vendor-Extended Features
-MS-HAID:
-- 'WIA\_drv\_cam\_a433d0f5-ecf7-4392-92d6-7175d7962f2d.xml'
-- 'image.vendor\_extended\_features'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8063622e-efc4-4940-893f-2916bf297d12
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Vendor-Extended Features

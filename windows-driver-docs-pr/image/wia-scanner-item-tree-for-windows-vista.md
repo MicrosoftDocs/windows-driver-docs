@@ -2,13 +2,12 @@
 title: WIA Scanner Item Tree for Windows Vista
 author: windows-driver-content
 description: WIA Scanner Item Tree for Windows Vista
-MS-HAID:
-- 'WIA\_scanner\_tree\_a5d32360-a065-438d-a7ca-a3e5961ae643.xml'
-- 'image.wia\_scanner\_item\_tree\_for\_windows\_vista'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 62e0d70a-834f-4fc2-ad15-764211d4bea3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Scanner Item Tree for Windows Vista

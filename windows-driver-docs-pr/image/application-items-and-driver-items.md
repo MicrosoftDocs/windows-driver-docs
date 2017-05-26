@@ -2,13 +2,12 @@
 title: Application Items and Driver Items
 author: windows-driver-content
 description: Application Items and Driver Items
-MS-HAID:
-- 'WIA\_tree\_3f7c6dc5-c8ce-4896-a13b-70307b1f1282.xml'
-- 'image.application\_items\_and\_driver\_items'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 33b602dc-4a0b-47e1-90e2-b77ecc05f66d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Application Items and Driver Items

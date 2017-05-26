@@ -2,6 +2,11 @@
 title: Custom Port Feature Status
 description: Custom Port Feature Status
 ms.assetid: 87E88302-6FEA-4D71-A80D-E7AD6D42C0BE
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Custom Port Feature Status

@@ -1,10 +1,12 @@
 ---
 title: Developer guide for creating service metadata
 description: Developer guide for creating service metadata
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2d250bce-2dd2-4bd8-aa0f-432dde7783e1
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Developer guide for creating service metadata
@@ -76,7 +78,7 @@ The mobile broadband app doesn’t have to be published to the Windows Store unt
 ## <span id="Creating_service_metadata_packages"></span><span id="creating_service_metadata_packages"></span><span id="CREATING_SERVICE_METADATA_PACKAGES"></span>Creating service metadata packages
 
 
-Creating a service metadata package starts with the Service Metadata wizard that is available on the Windows Dev Center hardware dashboard. For more info on the Service Metadata wizard, see [Step 2: Create the service metadata package](#bkmk-step2). You can use the Service Metadata wizard to create a new or edit an existing service metadata package. As you go through the wizard and fill out the values, the wizard will validate and notify you of any errors or warnings. This validation includes checking for missing or incorrect fields, service identifier ownership, mobile broadband app existence in the Windows Store, and so on.
+Creating a service metadata package starts with the Service Metadata wizard that is available on the Windows Dev Center hardware dashboard. For more info on the Service Metadata wizard, see [Step 2- Create the service metadata package](#2-create-the-service-metadata-package). You can use the Service Metadata wizard to create a new or edit an existing service metadata package. As you go through the wizard and fill out the values, the wizard will validate and notify you of any errors or warnings. This validation includes checking for missing or incorrect fields, service identifier ownership, mobile broadband app existence in the Windows Store, and so on.
 
 When you are on the final confirmation page and ready to submit, you have the option of submitting your package either in **Developer** mode or **Preview** mode.
 
@@ -90,26 +92,26 @@ The following diagram discusses the workflow:
 
 ![creating a service metadata package](images/mbae-sxs81-createpackageworkflow.png)
 
-To create a new service metadata package, see [Steps for creating a service metadata package](#bkmk-createnewpackage).
+To create a new service metadata package, see [Steps for creating a service metadata package](#steps-for-creating-a-service-metadata-package).
 
-To edit an existing service metadata package, see [Steps for editing a service metadata package](#bkmk-editpackage).
+To edit an existing service metadata package, see [Steps for editing a service metadata package](#steps-for-editing-a-service-metadata-package).
 
-## <span id="BKMK_CreateNewPackage"></span><span id="bkmk_createnewpackage"></span><span id="BKMK_CREATENEWPACKAGE"></span>Steps for creating a service metadata package
+## Steps for creating a service metadata package
 
 
 Use the following steps to create a service metadata package on the Windows Dev Center hardware dashboard:
 
--   [Step 1: Gather the required information for the service metadata package](#bkmk-step1)
+-   [1-Gather the required information for the service metadata package](#1-gather-the-required-information-for-the-service-metadata-package)
 
--   [Step 2: Create the service metadata package](#bkmk-step2)
+-   [2-Create the service metadata package](#2-create-the-service-metadata-package)
 
--   [Step 3: Insert the store manifest file into the Windows Store device app](#bkmk-step3)
+-   [3-Insert the store manifest file into the Windows Store device app](#3-insert-the-store-manifest-file-into-the-windows-store-device-app)
 
--   [Step 4: Test the service metadata package](#bkmk-step4)
+-   [4-Test the service metadata package](#4-test-the-service-metadata-package)
 
--   [Step 5: Publish the service metadata package](#bkmk-step5)
+-   [5-Publish the service metadata package](#5-publish-the-service-metadata-package)
 
-### <span id="BKMK_Step1"></span><span id="bkmk_step1"></span><span id="BKMK_STEP1"></span>Step 1: Gather the required information for the service metadata package
+### 1-Gather the required information for the service metadata package
 
 As you go through the steps in the Service Metadata Wizard in Step 2 of this topic, several pieces of information stored in the package.appxmanifest file from the mobile broadband app project that you want to associated with the device is required. Use the following steps to gather the information so that it’s ready for Step 2 of this topic.
 
@@ -156,7 +158,7 @@ You can also complete this without using Visual Studio 2013 by doing the followi
 
 5.  Save and close the package.appxmanifest file.
 
-### <span id="BKMK_Step2"></span><span id="bkmk_step2"></span><span id="BKMK_STEP2"></span>Step 2: Create the service metadata package
+### 2-Create the service metadata package
 
 Service metadata is created by using the Service Metadata Wizard in the Windows Dev Center hardware dashboard.
 
@@ -212,7 +214,7 @@ Service metadata is created by using the Service Metadata Wizard in the Windows 
 
     ![this is the confirm step of the wizard](images/mbae-sxs81-confirm.png)
 
-### <span id="BKMK_Step3"></span><span id="bkmk_step3"></span><span id="BKMK_STEP3"></span>Step 3: Insert the store manifest file into the Windows Store device app
+### 3-Insert the store manifest file into the Windows Store device app
 
 A store manifest file must be included with a Windows Store device app. Use the following steps to download the store manifest file from your service metadata package and insert it into the mobile broadband app project.
 
@@ -230,7 +232,7 @@ A store manifest file must be included with a Windows Store device app. Use the 
 
 5.  Recompile the mobile broadband app and publish it again to the Windows Store.
 
-### <span id="BKMK_Step4"></span><span id="bkmk_step4"></span><span id="BKMK_STEP4"></span>Step 4: Test the service metadata package
+### 4-Test the service metadata package
 
 To test the service metadata package, you must have the mobile broadband device and the service metadata package files. The instructions to configure your test system and install the service metadata package depend on the mode of the package.
 
@@ -259,7 +261,7 @@ You do not have to enable test signing to test a service metadata package that i
 
  
 
-After the PreviewKey registry entry is created, plug in your mobile broadband device and ensure that it shows in the Networks list. If it does not, see the [Troubleshooting](#bkmk-troubleshooting) section for more info.
+After the PreviewKey registry entry is created, plug in your mobile broadband device and ensure that it shows in the Networks list. If it does not, see the [Troubleshooting](#troubleshooting) section for more info.
 
 ### <span id="Clear_the_existing_service_metadata"></span><span id="clear_the_existing_service_metadata"></span><span id="CLEAR_THE_EXISTING_SERVICE_METADATA"></span>Clear the existing service metadata
 
@@ -286,7 +288,7 @@ This will not work on a Windows RT device. Use the steps in the procedure named 
      
 
     ``` syntax
-# DEVICE SHOULD BE CONNECTED TO MACHINE
+    # DEVICE SHOULD BE CONNECTED TO MACHINE
 
     Write-Host "Launching devcon to remove MBAE software device nodes devcon.exe remove @SWD\MBAE\*"
     $DevconParameters = ' remove @SWD\MBAE\* '
@@ -333,7 +335,7 @@ This will not work on a Windows RT device. Use the steps in the procedure named 
     Stop-Service DsmSvc
 
     Write-Host "Removing MBAE metadata packages in store"
-#Find Package Ids
+    #Find Package Ids
     $MBAEPackageRegKeyHive = "HKLM:\SOFTWARE\Microsoft\WwanSvc\MobileBroadbandAccounts\Accounts\"
     if(Test-Path $MBAEPackageRegKeyHive)
     {
@@ -382,7 +384,7 @@ This will not work on a Windows RT device. Use the steps in the procedure named 
 
     Write-Host "END of Script"
 
-# DEVICE SHOULD BE CONNECTED TO MACHINE
+    # DEVICE SHOULD BE CONNECTED TO MACHINE
 
     Write-Host "Launching devcon to remove MBAE software device nodes devcon.exe remove @SWD\MBAE\*"
     $DevconParameters = ' remove @SWD\MBAE\* '
@@ -421,7 +423,7 @@ This will not work on a Windows RT device. Use the steps in the procedure named 
 
 
     Write-Host "Removing MBAE metadata packages in cache and store"
-#Find Package Ids
+    #Find Package Ids
     $MBAEPackageRegKeyHive = "HKLM:\SOFTWARE\Microsoft\WwanSvc\MobileBroadbandAccounts\Accounts\"
     if(Test-Path $MBAEPackageRegKeyHive)
     {
@@ -517,20 +519,20 @@ After the environment is set up, run the following steps each time that you want
 
     2.  Right-click each mobile broadband device, and then click **Enable**.
 
-### <span id="BKMK_Step5"></span><span id="bkmk_step5"></span><span id="BKMK_STEP5"></span>Step 5: Publish the service metadata package
+### 5-Publish the service metadata package
 
 Once you have confirmed that the service metadata package works correctly, the final step is to release the package. You can release the package by selecting the package attached to the specific experience by clicking the **Release** button, as shown below.
 
 ![release your service metadata package](images/mbae-sxs81-releasetolive.jpg)
 
-## <span id="BKMK_EditPackage"></span><span id="bkmk_editpackage"></span><span id="BKMK_EDITPACKAGE"></span>Steps for editing a service metadata package
+## Steps for editing a service metadata package
 
 
 You can edit a service metadata package by using the Manage Experiences page of the Windows Dev Center hardware dashboard.
 
 ![the manage experiences page](images/mbae-sxs81-manageexperience.png)
 
-## <span id="BKMK_Troubleshooting"></span><span id="bkmk_troubleshooting"></span><span id="BKMK_TROUBLESHOOTING"></span>Troubleshooting
+##Troubleshooting
 
 
 Open the networks list and look for your mobile broadband network. If the network is listed by using the name and icon that you used in the service metadata package **ServiceInfo.xml** file, the package is correctly parsed. If you are updating a service metadata package that has the same name and icon, or if the name or icon has not appeared in the list after about approximately one minute, you should perform additional steps, as discussed here:

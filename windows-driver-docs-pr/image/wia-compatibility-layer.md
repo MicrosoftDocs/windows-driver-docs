@@ -2,13 +2,12 @@
 title: WIA Compatibility Layer
 author: windows-driver-content
 description: WIA Compatibility Layer
-MS-HAID:
-- 'WIA\_Fundamentals\_5b0dd7cd-0fd0-44d3-bbf0-e94803013e64.xml'
-- 'image.wia\_compatibility\_layer'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9c53fef9-0eef-4821-be59-6ecadf7f17c6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Compatibility Layer

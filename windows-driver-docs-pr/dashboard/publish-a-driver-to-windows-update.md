@@ -1,10 +1,12 @@
 ---
 title: Publish a driver to Windows Update
 description: To publish a driver to Windows Update, create a hardware submission and then follow the steps below.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: E62AADCF-E481-40CA-98F1-BE4629C3EE35
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Publish a driver to Windows Update
@@ -79,11 +81,17 @@ To publish a driver to Windows Update, [create a hardware submission](create-a-n
 
     ![screenshot that shows targeting section and pnps](images/publish-targeting-windows-update.png)
 
-7.  If you want to add Computer Hardware IDs (CHIDs), enter each CHID into the text box and select **Add CHID(s)**. To bulk add multiple CHIDs, ensure that each CHID is separated by a newline, select **Add multiple CHIDs**, and paste your CHIDs into the text box. You can view all added CHIDs in the list below the text box.
+7.  If you want to add Computer Hardware IDs (CHIDs), enter each CHID into the text box and select **Add CHID(s)**. To bulk add multiple CHIDs, ensure that each CHID is separated by a newline, select **Add multiple CHIDs**, and paste your CHIDs into the text box. You can view all added CHIDs in the list below the text box. To remove a CHID from the list, select **Remove**
 
-    To remove a CHID from the list, select **Remove**
+8. If your driver targets Windows 10 S, you must select both boxes, confirming the following:
 
-8.  Select **Publish** to send your request to Windows Update. If you do not want to publish the shipping label right now, you can select **Save**. You can publish the shipping label later by either opening the shipping label and selecting **Publish**, or you can select **Publish all pending** from the hardware submission page. Note that selecting **Publish all pending** will publish all unpublished shipping labels.
+  *	Your driver is compatible with and follows the driver policies outlined in the [Windows 10 S driver guidelines](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/windows10sdriverguidelines).
+  * You verify that your driver follows the additional code integrity policies outlined in the Windows 10 S guidelines.
+  * Your driver does not contain any non-Microsoft UI components or applications in the driver package.
+
+  ![A screenshot of the two checkboxes you must select when submitting a driver for Windows 10 S](images/win-cloud-checkboxes.png)
+
+9.  Select **Publish** to send your request to Windows Update. If you do not want to publish the shipping label right now, you can select **Save**. You can publish the shipping label later by either opening the shipping label and selecting **Publish**, or you can select **Publish all pending** from the hardware submission page. Note that selecting **Publish all pending** will publish all unpublished shipping labels.
 
  
 

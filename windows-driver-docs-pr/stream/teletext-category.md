@@ -2,14 +2,18 @@
 title: Teletext Category
 author: windows-driver-content
 description: Teletext Category
-MS-HAID:
-- 'vidcapds\_86cd2ca8-a5ea-44ed-9d6e-3825d90a9c1f.xml'
-- 'stream.teletext\_category'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f8eb289f-0b01-43cc-8160-f16dc6de12d9
-keywords: ["stream categories WDK video capture , teletext", "teletext category WDK video capture", "PINNAME_VIDEO_TELETEXT", "World Standard Teletext data WDK video capture", "WST data WDK video capture"]
+keywords:
+- stream categories WDK video capture , teletext
+- teletext category WDK video capture
+- PINNAME_VIDEO_TELETEXT
+- World Standard Teletext data WDK video capture
+- WST data WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Teletext Category

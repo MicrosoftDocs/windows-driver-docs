@@ -2,13 +2,12 @@
 title: Getting More Information
 author: windows-driver-content
 description: Getting More Information
-MS-HAID:
-- 'prn\_dxpui\_71fa7b35-39b2-45b8-b79f-a95c8e7c6efb.xml'
-- 'print.getting\_more\_information'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9fb5fd18-160c-4684-a0c1-54a20a253285
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Getting More Information

@@ -2,14 +2,15 @@
 title: Raster Printing Attributes
 author: windows-driver-content
 description: Raster Printing Attributes
-MS-HAID:
-- 'nt5gpd\_d5cc0af3-6f35-4712-ab9e-5b83287bc18b.xml'
-- 'print.raster\_printing\_attributes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d0b73d5b-0e6e-4ad6-890a-a8b8b6d76424
-keywords: ["raster printing attributes WDK Unidrv", "general printer attributes WDK Unidrv , raster"]
+keywords:
+- raster printing attributes WDK Unidrv
+- general printer attributes WDK Unidrv , raster
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Raster Printing Attributes

@@ -2,7 +2,13 @@
 title: Assign categories in the Device Metadata Authoring Wizard
 description: Assign categories in the Device Metadata Authoring Wizard
 ms.assetid: B96C46A7-A276-4410-83D1-BCE4CC8D2807
-keywords: ["Assign categories in the Device Metadata Authoring Wizard"]
+keywords:
+- Assign categories in the Device Metadata Authoring Wizard
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Assign categories in the Device Metadata Authoring Wizard

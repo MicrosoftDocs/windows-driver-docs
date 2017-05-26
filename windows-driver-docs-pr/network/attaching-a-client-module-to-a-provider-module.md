@@ -2,7 +2,19 @@
 title: Attaching a Client Module to a Provider Module
 description: Attaching a Client Module to a Provider Module
 ms.assetid: 351c07f6-186a-4f47-95f8-c94084ff68fb
-keywords: ["attaching network modules", "registering network modules", "Network Module Registrar WDK , attaching network modules", "NMR WDK , attaching network modules", "client modules WDK Network Module Registrar , attaching", "network modules WDK Network Module Registrar , attachment", "NmrClientAttachProvider"]
+keywords:
+- attaching network modules
+- registering network modules
+- Network Module Registrar WDK , attaching network modules
+- NMR WDK , attaching network modules
+- client modules WDK Network Module Registrar , attaching
+- network modules WDK Network Module Registrar , attachment
+- NmrClientAttachProvider
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Attaching a Client Module to a Provider Module

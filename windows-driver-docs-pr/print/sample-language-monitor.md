@@ -2,14 +2,14 @@
 title: Sample Language Monitor
 author: windows-driver-content
 description: Sample Language Monitor
-MS-HAID:
-- 'provider\_88eefa7f-d761-4e78-88e0-a1eb1fd5983d.xml'
-- 'print.sample\_language\_monitor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fd1ef790-c17b-4735-87fc-6b7b8597ac4d
-keywords: ["language monitors WDK print , samples"]
+keywords:
+- language monitors WDK print , samples
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Language Monitor

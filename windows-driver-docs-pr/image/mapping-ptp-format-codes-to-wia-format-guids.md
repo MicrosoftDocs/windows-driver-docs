@@ -2,13 +2,12 @@
 title: Mapping PTP Format Codes to WIA Format GUIDs
 author: windows-driver-content
 description: Mapping PTP Format Codes to WIA Format GUIDs
-MS-HAID:
-- 'WIA\_drv\_cam\_22e5674b-4908-4a72-93d1-dbd9d9a73af8.xml'
-- 'image.mapping\_ptp\_format\_codes\_to\_wia\_format\_guids'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a69269c0-1474-4de5-9a08-94902ef1f089
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mapping PTP Format Codes to WIA Format GUIDs

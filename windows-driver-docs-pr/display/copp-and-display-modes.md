@@ -2,7 +2,17 @@
 title: COPP and Display Modes
 description: COPP and Display Modes
 ms.assetid: e7da753d-0ccd-428e-b51f-3fd0a19674e8
-keywords: ["copy protection WDK COPP , display modes", "video copy protection WDK COPP , display modes", "COPP WDK DirectX VA , display modes", "protected video WDK COPP , display modes", "display modes WDK COPP"]
+keywords:
+- copy protection WDK COPP , display modes
+- video copy protection WDK COPP , display modes
+- COPP WDK DirectX VA , display modes
+- protected video WDK COPP , display modes
+- display modes WDK COPP
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # COPP and Display Modes

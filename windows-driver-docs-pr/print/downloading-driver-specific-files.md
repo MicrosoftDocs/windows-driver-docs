@@ -2,14 +2,16 @@
 title: Downloading Driver-Specific Files
 author: windows-driver-content
 description: Downloading Driver-Specific Files
-MS-HAID:
-- 'prtinst\_6d51c715-eea0-47c9-a79f-efb3cb1c3a08.xml'
-- 'print.downloading\_driver\_specific\_files'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7ac5057a-32fb-4c3a-a5c3-3fc1217dbdc6
-keywords: ["Point and Print WDK , driver-specific files", "driver-specific files WDK printer", "downloading driver-specific printer files"]
+keywords:
+- Point and Print WDK , driver-specific files
+- driver-specific files WDK printer
+- downloading driver-specific printer files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Downloading Driver-Specific Files

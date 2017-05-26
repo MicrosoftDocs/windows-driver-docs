@@ -2,14 +2,21 @@
 title: Capturing Video to VRAM using AVStream
 author: windows-driver-content
 description: Capturing Video to VRAM using AVStream
-MS-HAID:
-- 'gpucap\_7e3f1890-3a42-4dac-827c-954b11f7d0f0.xml'
-- 'stream.capturing\_video\_to\_vram\_using\_avstream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c4ca4a67-83cb-4a89-bc84-e06b1dc67b66
-keywords: ["AVStream WDK , VRAM capture", "VRAM capture WDK AVStream", "capturing video to VRAM WDK AVStream", "video capture to VRAM WDK AVStream", "audio capture to VRAM WDK AVStream", "data capture to VRAM WDK AVStream", "display minidrivers WDK VRAM capture", "minidrivers WDK VRAM capture"]
+keywords:
+- AVStream WDK , VRAM capture
+- VRAM capture WDK AVStream
+- capturing video to VRAM WDK AVStream
+- video capture to VRAM WDK AVStream
+- audio capture to VRAM WDK AVStream
+- data capture to VRAM WDK AVStream
+- display minidrivers WDK VRAM capture
+- minidrivers WDK VRAM capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Capturing Video to VRAM using AVStream

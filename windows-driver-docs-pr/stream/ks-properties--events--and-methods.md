@@ -2,14 +2,25 @@
 title: KS Properties, Events, and Methods
 author: windows-driver-content
 description: KS Properties, Events, and Methods
-MS-HAID:
-- 'ks-overview\_364985f9-e7db-439a-bfbd-d01e426b19e4.xml'
-- 'stream.ks\_properties\_\_events\_\_and\_methods'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 933bbe81-92d8-4bcc-b935-9ae929464ca1
-keywords: ["kernel streaming WDK , properties", "KS properties WDK kernel streaming", "kernel streaming WDK , events", "KS WDK , events", "kernel streaming WDK , methods", "KS WDK , methods", "properties WDK kernel streaming", "events WDK kernel streaming", "methods WDK kernel streaming", "alias structures WDK kernel streaming", "set operations WDK kernel streaming", "get operations WDK kernel streaming"]
+keywords:
+- kernel streaming WDK , properties
+- KS properties WDK kernel streaming
+- kernel streaming WDK , events
+- KS WDK , events
+- kernel streaming WDK , methods
+- KS WDK , methods
+- properties WDK kernel streaming
+- events WDK kernel streaming
+- methods WDK kernel streaming
+- alias structures WDK kernel streaming
+- set operations WDK kernel streaming
+- get operations WDK kernel streaming
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KS Properties, Events, and Methods

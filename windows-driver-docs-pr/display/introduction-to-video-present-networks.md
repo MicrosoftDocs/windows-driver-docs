@@ -2,7 +2,26 @@
 title: Introduction to Video Present Networks
 description: Introduction to Video Present Networks
 ms.assetid: 62a92f00-b1da-41c2-99af-eef8140b064e
-keywords: ["video present networks WDK display , about video present networks", "VidPN WDK display , about video present networks", "video present paths WDK display", "video present sources WDK display", "video present targets WDK display", "display adapter presentational subsystem WDK video present network", "presentational subsystem WDK video present network", "source modes WDK video present network", "source mode sets WDK video present network", "target modes WDK video present network", "target mode sets WDK video present network", "video output codecs WDK video present network", "codecs WDK video present network", "CRTC WDK video present network"]
+keywords:
+- video present networks WDK display , about video present networks
+- VidPN WDK display , about video present networks
+- video present paths WDK display
+- video present sources WDK display
+- video present targets WDK display
+- display adapter presentational subsystem WDK video present network
+- presentational subsystem WDK video present network
+- source modes WDK video present network
+- source mode sets WDK video present network
+- target modes WDK video present network
+- target mode sets WDK video present network
+- video output codecs WDK video present network
+- codecs WDK video present network
+- CRTC WDK video present network
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Video Present Networks

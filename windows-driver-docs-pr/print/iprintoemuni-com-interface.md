@@ -2,14 +2,14 @@
 title: IPrintOemUni COM Interface
 author: windows-driver-content
 description: IPrintOemUni COM Interface
-MS-HAID:
-- 'custdrvr\_07852acc-7277-46c0-8b61-de6dde178cf7.xml'
-- 'print.iprintoemuni\_com\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b120def0-f270-49c6-b12f-10c220801f51
-keywords: ["IPrintOemUni"]
+keywords:
+- IPrintOemUni
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IPrintOemUni COM Interface

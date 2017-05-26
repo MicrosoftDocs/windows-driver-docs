@@ -1,21 +1,20 @@
 ---
-title: Supporting PC Cards That Have Incomplete Configuration Register Addresses
+title: PC cards with incomplete configuration register addresses
 author: windows-driver-content
-description: Supporting PC Cards That Have Incomplete Configuration Register Addresses
-MS-HAID:
-- 'mf-supp\_deb675d3-7b0c-45a1-bb76-2e9399e48f76.xml'
-- 'multifunc.supporting\_pc\_cards\_that\_have\_incomplete\_configuration\_register\_addres'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+description: Information on supporting PC cards with incomplete configuration register addresses
 ms.assetid: 2a708ca5-a119-4ef5-81ee-d9e40e7a5255
-keywords: ["incomplete configuration registers WDK multifunction devices", "system-supplied multifunction bus drivers WDK", "mf.sys"]
+keywords:
+- incomplete configuration registers WDK multifunction devices
+- system-supplied multifunction bus drivers WDK
+- mf.sys
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Supporting PC Cards That Have Incomplete Configuration Register Addresses
-
-
-## <a href="" id="ddk-supporting-pc-cards-that-have-incomplete-configuration-register-ad"></a>
+# PC cards with incomplete configuration register addresses
 
 
 If a multifunction 16-bit PC Card device has configuration registers for each function but does not contain pointers in attribute memory to all register sets (does not support the LONGLINK\_MFC tuple), the vendor of such a device can use the system-supplied multifunction bus driver (mf.sys) but must provide a custom INF file and support for the individual functions.

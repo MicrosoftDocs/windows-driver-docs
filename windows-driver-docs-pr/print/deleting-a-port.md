@@ -2,14 +2,17 @@
 title: Deleting a Port
 author: windows-driver-content
 description: Deleting a Port
-MS-HAID:
-- 'provider\_8655114a-3511-4b39-a764-813b5d6d0d11.xml'
-- 'print.deleting\_a\_port'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0d491368-e529-4f04-a323-678e31a862c3
-keywords: ["port management WDK print , deleting ports", "deleting print ports", "removing print ports", "DeletePort"]
+keywords:
+- port management WDK print , deleting ports
+- deleting print ports
+- removing print ports
+- DeletePort
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Deleting a Port

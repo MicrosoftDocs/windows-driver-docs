@@ -2,13 +2,12 @@
 title: In-Memory Transfers
 author: windows-driver-content
 description: In-Memory Transfers
-MS-HAID:
-- 'WIA\_arch\_a6d98631-8df2-4e63-b201-47eb51886b4d.xml'
-- 'image.in\_memory\_transfers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 90238354-e47c-41c7-bb6b-6337f39f63f0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # In-Memory Transfers

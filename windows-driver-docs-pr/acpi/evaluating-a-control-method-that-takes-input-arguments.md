@@ -2,13 +2,12 @@
 title: Evaluating a Control Method That Takes Input Arguments
 author: windows-driver-content
 description: Evaluating a Control Method That Takes Input Arguments
-MS-HAID:
-- 'acpi-meth-eval-dg\_1234e21b-a4bc-4eb2-babb-51a98895b284.xml'
-- 'acpi.evaluating\_a\_control\_method\_that\_takes\_input\_arguments'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3a4be8a8-0906-4d38-bf6d-f245e6ae236a
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Evaluating a Control Method That Takes Input Arguments

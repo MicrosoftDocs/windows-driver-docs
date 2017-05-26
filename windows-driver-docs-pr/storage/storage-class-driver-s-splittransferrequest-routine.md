@@ -3,7 +3,16 @@ title: Storage Class Driver's SplitTransferRequest Routine
 author: windows-driver-content
 description: Storage Class Driver's SplitTransferRequest Routine
 ms.assetid: 4f449d3b-9a0a-4ff9-a7fb-bfa21b8a56c0
-keywords: ["SplitTransferRequest", "noncontiguous pages WDK storage", "splitting transfer requests", "transfer request splitting WDK storage"]
+keywords:
+- SplitTransferRequest
+- noncontiguous pages WDK storage
+- splitting transfer requests
+- transfer request splitting WDK storage
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storage Class Driver's SplitTransferRequest Routine

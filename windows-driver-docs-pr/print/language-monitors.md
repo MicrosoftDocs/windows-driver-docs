@@ -2,14 +2,16 @@
 title: Language Monitors
 author: windows-driver-content
 description: Language Monitors
-MS-HAID:
-- 'provider\_961c1b18-081e-46b8-b78f-1bf863c6488c.xml'
-- 'print.language\_monitors'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 26ba1c22-390a-4187-b67a-3f3497964f8e
-keywords: ["print monitors WDK , language monitors", "language monitors WDK print", "language monitors WDK print , about language monitors"]
+keywords:
+- print monitors WDK , language monitors
+- language monitors WDK print
+- language monitors WDK print , about language monitors
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Language Monitors

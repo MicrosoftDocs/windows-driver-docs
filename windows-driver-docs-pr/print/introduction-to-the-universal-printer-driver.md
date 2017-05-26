@@ -2,13 +2,12 @@
 title: Introduction to the Universal Printer Driver
 author: windows-driver-content
 description: Introduction to the Universal Printer Driver
-MS-HAID:
-- 'nt5gpd\_813ea40e-0d2f-4ea8-89bc-b1eb3bb408d2.xml'
-- 'print.introduction\_to\_the\_universal\_printer\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e4e66d88-4273-47b1-9eb1-f2f5af8a7529
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to the Universal Printer Driver

@@ -2,7 +2,17 @@
 title: Porting CoNDIS MCM Registration
 description: Porting CoNDIS MCM Registration
 ms.assetid: 996eb9a5-6ba3-4f37-823a-767a5b7663e7
-keywords: ["CoNDIS drivers WDK networking , registering CoNDIS drivers", "connection-oriented drivers WDK networking , registering CoNDIS drivers", "registering CoNDIS drivers WDK networking", "miniport drivers WDK networking , CoNDIS registration", "NDIS miniport driver"]
+keywords:
+- CoNDIS drivers WDK networking , registering CoNDIS drivers
+- connection-oriented drivers WDK networking , registering CoNDIS drivers
+- registering CoNDIS drivers WDK networking
+- miniport drivers WDK networking , CoNDIS registration
+- NDIS miniport driver
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting CoNDIS MCM Registration

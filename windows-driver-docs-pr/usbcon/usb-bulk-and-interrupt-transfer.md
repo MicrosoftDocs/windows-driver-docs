@@ -1,12 +1,12 @@
 ---
-Description: 'This topic provides a brief overview about USB bulk transfers. It also provides step-by-step instructions about how a client driver can send and receive bulk data from the device.'
-MS-HAID:
-- 'usb-io\_9baaf14b-6b8e-484d-85ea-1e5bb2bbc7bf.xml'
-- 'buses.usb\_bulk\_and\_interrupt\_transfer'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This topic provides a brief overview about USB bulk transfers. 
 title: How to send USB bulk transfer requests
+author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to send USB bulk transfer requests
@@ -143,7 +143,7 @@ The transfer buffer or the transfer buffer MDL contains the data to send or rece
 
 The client driver does not need to release this memory. The memory is associated with the parent request object and is released when the parent is released.
 
-### Step 2: Format and send a framework request object to the USB driver stack.
+### <a href="" id="step-2--format-and-send-a-framework-request-object-to-the-usb-driver-stack-"></a>Step 2: Format and send a framework request object to the USB driver stack.
 
 You can send the transfer request asynchronously or synchronously.
 
@@ -160,7 +160,7 @@ If you send the request synchronously, call these methods:
 -   [**WdfUsbTargetPipeWriteSynchronously**](https://msdn.microsoft.com/library/windows/hardware/ff551163)
 
 For code examples, see the Examples section of the reference topics for those methods.
-### Step 3: Implement a completion routine for the request.
+### <a href="" id="step-3--implement-a-completion-routine-for-the-request-"></a>Step 3: Implement a completion routine for the request.
 
 If the request is sent asynchronously, you must implement a completion routine to get notified when the USB driver stack completes the request. Upon completion, the framework invokes the driver's completion routine. The framework passes these parameters:
 
@@ -363,18 +363,10 @@ Exit:
 ```
 
 ## Related topics
+[USB I/O Transfers](usb-device-i-o.md)  
+[How to open and close static streams in a USB bulk endpoint](how-to-open-streams-in-a-usb-endpoint.md)  
 
-
-[USB I/O Transfers](usb-device-i-o.md)
-
-[How to open and close static streams in a USB bulk endpoint](how-to-open-streams-in-a-usb-endpoint.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20send%20USB%20bulk%20transfer%20requests%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

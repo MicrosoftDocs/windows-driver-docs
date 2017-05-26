@@ -2,7 +2,16 @@
 title: Example 3 Typical Start Command
 description: Example 3 Typical Start Command
 ms.assetid: a0e8580d-b841-4077-82f5-6aaef57b0ff7
-keywords: ["trace sessions WDK , starting", "start command", "-start command", "starting trace sessions"]
+keywords:
+- trace sessions WDK , starting
+- start command
+- -start command
+- starting trace sessions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 3: Typical Start Command

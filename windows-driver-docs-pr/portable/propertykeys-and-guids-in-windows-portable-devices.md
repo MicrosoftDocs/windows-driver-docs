@@ -1,8 +1,11 @@
 ---
 Description: PROPERTYKEYs and GUIDs in Windows Portable Devices
-MS-HAID: 'wpddk.propertykeys\_and\_guids\_in\_windows\_portable\_devices'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: PROPERTYKEYs and GUIDs in Windows Portable Devices
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PROPERTYKEYs and GUIDs in Windows Portable Devices

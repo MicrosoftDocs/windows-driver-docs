@@ -2,21 +2,30 @@
 title: Testing sensor functionality with the Sensor Diagnostic Tool
 author: windows-driver-content
 description: Use the Sensor Diagnostic Tool to test your driver, firmware, and hardware functionality.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 447E1348-53BA-4AD4-9010-A6452F46A827
-keywords: ["testing sensors", "sensors, testing", "Sensor Diagnostic Tool", "sensor driver, testing", "sensor firmware, testing", "sensor hardware, testing", "sensor events", "sensor, report interval", "sensor, change sensitivity", "report interval", "change sensitivity"]
+keywords:
+- testing sensors
+- sensors, testing
+- Sensor Diagnostic Tool
+- sensor driver, testing
+- sensor firmware, testing
+- sensor hardware, testing
+- sensor events
+- sensor, report interval
+- sensor, change sensitivity
+- report interval
+- change sensitivity
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Testing sensor functionality with the Sensor Diagnostic Tool
 
 
 Use the Sensor Diagnostic Tool to test your driver, firmware, and hardware functionality.
-
-**Note**  The Sensor Diagnostic Tool is acceptable for testing on Windows 8.1 and earlier operating systems. The tool is now deprecated for Windows 10, so for sensor driver testing and diagnostics on Windows 10 and later operating systems, please use the SensorInfo App from the Windows Store.
-
- 
 
 The tool invokes the Sensor and Location API to test:
 
@@ -30,10 +39,10 @@ Instead of writing an application to perform these tests, you can use the Sensor
 
 For example, if your driver development computer is an x64-based machine, and you installed the WDK to the default location, then you will find the sensor diagnostic tool in the following folder:
 
-*C:\\Program Files (x86)\\Windows Kits\\8.1\\Tools\\x64\\sensordiagnostictool.exe*
+*C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\x64\\sensordiagnostictool.exe*
 Once your sensor or location driver is installed and your hardware is attached to your PC, the tool immediately recognizes and records your device in the list of available sensors.
 
-The following image shows the Sensor Diagnostic Tool startup screen when several sensors are connected to a PC.
+The following image shows the Sensor Diagnostic Tool startup screen when several sensors are connected to a PC. The sensors available on the PC are shown in the left pane.
 
 ![sensor diagnostic tool: startup](images/sdt-startup.png)
 

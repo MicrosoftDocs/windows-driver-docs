@@ -2,14 +2,15 @@
 title: Writing an AVStream Minidriver
 author: windows-driver-content
 description: Writing an AVStream Minidriver
-MS-HAID:
-- 'avsover\_57fb4c9d-0f71-49b4-9b89-4a3af3ab8276.xml'
-- 'stream.writing\_an\_avstream\_minidriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6187fb33-cb61-493b-89f9-32ed76d933b3
-keywords: ["AVStream WDK , writing minidrivers", "minidrivers WDK AVStream , writing"]
+keywords:
+- AVStream WDK , writing minidrivers
+- minidrivers WDK AVStream , writing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing an AVStream Minidriver

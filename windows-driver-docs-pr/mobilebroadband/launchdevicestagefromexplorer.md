@@ -1,10 +1,12 @@
 ---
 title: LaunchDeviceStageFromExplorer
 description: LaunchDeviceStageFromExplorer
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8c1d16e5-e183-4658-8379-09bfed9fe975
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # LaunchDeviceStageFromExplorer

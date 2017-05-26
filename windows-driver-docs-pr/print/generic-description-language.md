@@ -2,14 +2,29 @@
 title: Generic Description Language
 author: windows-driver-content
 description: Generic Description Language
-MS-HAID:
-- 'gplfiles\_307330cc-14d3-474c-8ef4-565c4d195896.xml'
-- 'print.generic\_description\_language'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 818037fd-90bb-46dd-a2e3-239d57ed5fcf
-keywords: ["printer configuration WDK , GDL files", "text files WDK GDL files", "Generic Description Language WDK", "GDL WDK", "GDL WDK , about", "generic printer description WDK Unidrv", "GPD WDK", "printer drivers WDK , Generic Description Language", "printer drivers WDK , converting data into XML", "converting data into XML WDK GDL", "transforming data into XML WDK GDL", "GDL WDK , parser", "GDL WDK , snapshots", "snapshots WDK GDL", "GDL WDK , directives", "directives WDK GDL"]
+keywords:
+- printer configuration WDK , GDL files
+- text files WDK GDL files
+- Generic Description Language WDK
+- GDL WDK
+- GDL WDK , about
+- generic printer description WDK Unidrv
+- GPD WDK
+- printer drivers WDK , Generic Description Language
+- printer drivers WDK , converting data into XML
+- converting data into XML WDK GDL
+- transforming data into XML WDK GDL
+- GDL WDK , parser
+- GDL WDK , snapshots
+- snapshots WDK GDL
+- GDL WDK , directives
+- directives WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Generic Description Language

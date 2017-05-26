@@ -3,7 +3,19 @@ title: Buffer Handling
 author: windows-driver-content
 description: Buffer Handling
 ms.assetid: 0739ff35-2915-4237-9fe0-11559eccb0bb
-keywords: ["security WDK file systems , minimizing threats", "buffers WDK file systems", "paged buffers WDK file systems", "non-paged buffers WDK file systems", "bug check WDK file systems", "address validation WDK file systems", "fast I/O WDK file systems"]
+keywords:
+- security WDK file systems , minimizing threats
+- buffers WDK file systems
+- paged buffers WDK file systems
+- non-paged buffers WDK file systems
+- bug check WDK file systems
+- address validation WDK file systems
+- fast I/O WDK file systems
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Buffer Handling

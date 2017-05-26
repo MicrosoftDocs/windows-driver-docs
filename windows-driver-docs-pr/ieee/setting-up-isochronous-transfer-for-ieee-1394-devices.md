@@ -2,14 +2,20 @@
 title: Setting Up Isochronous Transfer for IEEE 1394 Devices
 author: windows-driver-content
 description: Setting Up Isochronous Transfer for IEEE 1394 Devices
-MS-HAID:
-- '1394-isoch\_5b296f25-f7e4-47f9-b724-8a03419363ed.xml'
-- 'IEEE.setting\_up\_isochronous\_transfer\_for\_ieee\_1394\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5161da54-0f20-496c-bf64-dc756b987de2
-keywords: ["isochronous I/O WDK IEEE 1394 bus , setting up", "bus cycles WDK IEEE 1394 bus", "isochronous channels WDK IEEE 1394 bus", "resource handles WDK IEEE 1394 bus", "buffers WDK IEEE 1394 bus", "speed WDK IEEE 1394 bus", "allocating bandwidth"]
+keywords:
+- isochronous I/O WDK IEEE 1394 bus , setting up
+- bus cycles WDK IEEE 1394 bus
+- isochronous channels WDK IEEE 1394 bus
+- resource handles WDK IEEE 1394 bus
+- buffers WDK IEEE 1394 bus
+- speed WDK IEEE 1394 bus
+- allocating bandwidth
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Up Isochronous Transfer for IEEE 1394 Devices

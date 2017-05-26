@@ -2,7 +2,24 @@
 title: IDirectMusicSynth and IDirectMusicSynthSink
 description: IDirectMusicSynth and IDirectMusicSynthSink
 ms.assetid: ce9a353b-9e4b-402b-92bb-948200e3c2ef
-keywords: ["IDirectMusicSynth interface", "IDirectMusicSynthSink interface", "custom rendering in user mode WDK audio , interfaces", "user-mode synths WDK audio , interfaces", "custom wave sinks WDK audio", "wave sinks WDK audio , user-mode", "latency WDK audio , synthesizers", "master clocks WDK audio , synthesizers", "clocks WDK audio , synthesizers", "synthesizers WDK audio , interfaces", "custom synths WDK audio , interfaces", "DirectMusic custom rendering WDK audio , synthesizers"]
+keywords:
+- IDirectMusicSynth interface
+- IDirectMusicSynthSink interface
+- custom rendering in user mode WDK audio , interfaces
+- user-mode synths WDK audio , interfaces
+- custom wave sinks WDK audio
+- wave sinks WDK audio , user-mode
+- latency WDK audio , synthesizers
+- master clocks WDK audio , synthesizers
+- clocks WDK audio , synthesizers
+- synthesizers WDK audio , interfaces
+- custom synths WDK audio , interfaces
+- DirectMusic custom rendering WDK audio , synthesizers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IDirectMusicSynth and IDirectMusicSynthSink

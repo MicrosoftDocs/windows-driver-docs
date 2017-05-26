@@ -1,15 +1,18 @@
 ---
-title: \ UndefinePrefix Preprocessor Directive
+title: '\ UndefinePrefix Preprocessor Directive'
 author: windows-driver-content
-description: \ UndefinePrefix Preprocessor Directive
-MS-HAID:
-- 'gplfiles\_6c271a60-8846-47f7-b4b8-c3ee55a5eb50.xml'
-- 'print.\_undefineprefix\_preprocessor\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+description: '\ UndefinePrefix Preprocessor Directive'
 ms.assetid: 7c99c2cf-6609-4fec-ae21-1477699ba5c8
-keywords: ["preprocessor directives WDK GDL , keywords", "keywords WDK GDL", "reserved keywords WDK", "UndefinePrefix directive WDK GDL"]
+keywords:
+- preprocessor directives WDK GDL , keywords
+- keywords WDK GDL
+- reserved keywords WDK
+- UndefinePrefix directive WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # \#UndefinePrefix Preprocessor Directive

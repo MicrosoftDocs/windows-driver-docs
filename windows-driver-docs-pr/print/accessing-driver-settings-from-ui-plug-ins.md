@@ -2,14 +2,16 @@
 title: Accessing Driver Settings from UI Plug-Ins
 author: windows-driver-content
 description: Accessing Driver Settings from UI Plug-Ins
-MS-HAID:
-- 'custdrvr\_c38acf2b-a754-498a-aee9-626fce29b8de.xml'
-- 'print.accessing\_driver\_settings\_from\_ui\_plug\_ins'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 898e1cfb-851b-403e-a88b-d38c505c1390
-keywords: ["user interface plug-ins WDK print , accessing driver settings", "UI plug-ins WDK print , accessing driver settings", "status information WDK print plug-ins"]
+keywords:
+- user interface plug-ins WDK print , accessing driver settings
+- UI plug-ins WDK print , accessing driver settings
+- status information WDK print plug-ins
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing Driver Settings from UI Plug-Ins

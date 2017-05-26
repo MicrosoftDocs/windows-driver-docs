@@ -2,13 +2,12 @@
 title: What Is Device Stage
 author: windows-driver-content
 description: What Is Device Stage
-MS-HAID:
-- 'prn\_dxpui\_76dee368-ed4c-4ebc-bae1-d7d8421fe926.xml'
-- 'print.what\_is\_device\_stage\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 57b402c5-31ad-4096-be70-a1dbbee86b83
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # What Is Device Stage?

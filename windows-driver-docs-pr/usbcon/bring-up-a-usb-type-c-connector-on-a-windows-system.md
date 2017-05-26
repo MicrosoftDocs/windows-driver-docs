@@ -1,10 +1,12 @@
 ---
-Description: 'Describes the USB connector manager (UCM) that manages a USB Type-C connector and the expected behavior of a connector driver.'
-MS-HAID: 'buses.bring\_up\_a\_usb\_type-c\_connector\_on\_a\_windows\_system'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'Write a USB Type-C connector driver'
+Description: Describes the USB connector manager (UCM) that manages a USB Type-C connector and the expected behavior of a connector driver.
+title: Write a USB Type-C connector driver
+author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Write a USB Type-C connector driver
@@ -27,7 +29,7 @@ title: 'Write a USB Type-C connector driver'
 
 **WDF version**
 
--   KMDF version 1.15.
+-   KMDF version 1.15
 -   UMDF version 2.15
 
 **Last updated:**
@@ -62,7 +64,7 @@ To enable a USB Type-C connector on a system, you must write the client driver.
 
     This support enables you to build Windows devices with USB Type-C connectors, USB Type-C docks and accessories, and USB Type-C chargers. The client driver reports connector events that allow the operating system to implement policies around USB and power consumption in the system.
 
--   Install Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) on your target computer or Windows 10 Mobile with the USB Type-C connector.
+-   Install Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) on your target computer or Windows 10 Mobile with a USB Type-C connector.
 -   Familiarize yourself with UCM and how it interacts with other Windows drivers. See [Architecture: USB Type-C design for a Windows system](architecture--usb-type-c-in-a-windows-system.md).
 -   Familiarize yourself with Windows Driver Foundation (WDF). Recommended reading: [Developing Drivers with Windows Driver Foundation]( http://go.microsoft.com/fwlink/p/?LinkId=691676), written by Penny Orwick and Guy Smith.
 
@@ -111,7 +113,8 @@ The UCM connector object (UCMCONNECTOR) represents the USB Type-C connector and 
 
 Here is the summary of the sequence in which the client driver retrieves a UCMCONNECTOR handle for the connector. Perform these tasks in your driver's
 
-1.  Call [**UcmInitializeDevice**](https://msdn.microsoft.com/library/windows/hardware/mt187920) by passing the reference to a [**UCM\_MANAGER\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/mt187932) structure. The driver must call this method in the [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function before calling [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926).
+1.  Call [**UcmInitializeDevice**](https://msdn.microsoft.com/library/windows/hardware/mt187920) by passing the reference to a [**UCM\_MANAGER\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/mt187932) structure. The driver must call this method in the [**EVT_WDF_DRIVER_DEVICE_ADD**](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function before calling [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926).
+
 2.  Specify the initialization parameters for the USB Type-C connector in a [**UCM\_CONNECTOR\_TYPEC\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/mt187930) structure. This includes the operating mode of the connector, whether it's a downstream-facing port, upstream-facing port, or is dual-role capable. It also specifies the USB Type-C current levels when the connector is a power source. A USB Type-C connector can be designed such that it can act a 3.5 mm audio jack. If the hardware supports the feature, the connector object must be initialized accordingly.
 
     In the structure, you must also register the client driver's callback function for handling data roles.
@@ -130,7 +133,7 @@ Here is the summary of the sequence in which the client driver retrieves a UCMCO
     [*EVT\_UCM\_CONNECTOR\_SET\_POWER\_ROLE*](https://msdn.microsoft.com/library/windows/hardware/mt187819)  
     Sets the power role of the connector to the specified role when attached to a partner connector.
 
-4.  Call [**UcmConnectorCreate**](https://msdn.microsoft.com/library/windows/hardware/mt187909) and retrieve a UCMCONNECTOR handle for the connector. Make sure you call this method after the client driver has created the framework device object by calling [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926). An appropriate place for this call can be in driver's [*EVT\_WDF\_DEVICE\_PREPARE\_HARDWARE*](https://msdn.microsoft.com/library/windows/hardware/ff540880) or [*EVT\_WDF\_DEVICE\_D0\_ENTRY*](https://msdn.microsoft.com/library/windows/hardware/ff540848).
+4.  Call [**UcmConnectorCreate**](https://msdn.microsoft.com/library/windows/hardware/mt187909) and retrieve a UCMCONNECTOR handle for the connector. Make sure you call this method after the client driver has created the framework device object by calling [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926). An appropriate place for this call can be in driver's [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://msdn.microsoft.com/library/windows/hardware/ff540880) or [**EVT_WDF_DEVICE_D0_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff540848).
 
 ```
 EVT_UCM_CONNECTOR_SET_DATA_ROLE     EvtSetDataRole;
@@ -382,16 +385,9 @@ When a device running Windows 10 Mobile is connected to a PC running Windows 1
  
 
 ## Related topics
+[Developing Windows drivers for USB Type-C connectors](developing-windows-drivers-for-usb-type-c-connectors.md)  
 
-
-[Developing Windows drivers for USB Type-C connectors](developing-windows-drivers-for-usb-type-c-connectors.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Write%20a%20USB%20Type-C%20connector%20driver%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

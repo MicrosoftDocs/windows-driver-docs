@@ -2,6 +2,11 @@
 title: Resizable BAR support
 description: It is typical today for a discrete graphics processing unit (GPU) to have only a small portion of its frame buffer exposed over the PCI bus.
 ms.assetid: 9CBB8D2E-D3E3-4F52-BCAC-F17446D74991
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Resizable BAR support

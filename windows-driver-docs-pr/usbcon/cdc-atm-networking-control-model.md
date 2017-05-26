@@ -1,12 +1,7 @@
 ---
 Description: CDC ATM Networking Control Model
-MS-HAID:
-- 'usbsystem\_292de0de-f9ef-4a4b-8589-43da792c5db2.xml'
-- 'buses.cdc\_atm\_networking\_control\_model'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: CDC ATM Networking Control Model
+author: windows-driver-content
 ---
 
 # CDC ATM Networking Control Model

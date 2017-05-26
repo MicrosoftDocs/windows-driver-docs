@@ -2,14 +2,18 @@
 title: Autoconfiguring the Printer's Memory for GPD
 author: windows-driver-content
 description: Autoconfiguring the Printer's Memory for GPD
-MS-HAID:
-- 'autocfg\_7eda4a8f-1c24-44c9-a43a-6f04d3204c68.xml'
-- 'print.autoconfiguring\_the\_printer\_s\_memory\_for\_gpd'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5e8339a5-d515-4821-853e-bc6607b2d9c1
-keywords: ["memory WDK printer autoconfig", "GPD files WDK GDL extensions , memory", "in-box autoconfiguration support WDK printer , memory", "autoconfiguring printer memory WDK", "printer memory configurations WDK autoconfiguration"]
+keywords:
+- memory WDK printer autoconfig
+- GPD files WDK GDL extensions , memory
+- in-box autoconfiguration support WDK printer , memory
+- autoconfiguring printer memory WDK
+- printer memory configurations WDK autoconfiguration
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Autoconfiguring the Printer's Memory for GPD

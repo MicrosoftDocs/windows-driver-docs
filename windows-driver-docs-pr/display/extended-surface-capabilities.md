@@ -2,7 +2,21 @@
 title: Extended Surface Capabilities
 description: Extended Surface Capabilities
 ms.assetid: daa1a310-1cea-48ca-a373-a496b997424f
-keywords: ["drawing extended surface capabilities WDK DirectDraw , about extended surface capabilities", "DirectDraw extended surface capabilities WDK Windows 2000 display , about extended surface capabilities", "extended surface capabilities WDK DirectDraw , about extended surface capabilities", "surfaces WDK DirectDraw , extended capabilities", "drawing extended surface capabilities WDK DirectDraw", "DirectDraw extended surface capabilities WDK Windows 2000 display", "extended surface capabilities WDK DirectDraw", "DDSCAPS2", "DD_MORESURFACECAPS"]
+keywords:
+- drawing extended surface capabilities WDK DirectDraw , about extended surface capabilities
+- DirectDraw extended surface capabilities WDK Windows 2000 display , about extended surface capabilities
+- extended surface capabilities WDK DirectDraw , about extended surface capabilities
+- surfaces WDK DirectDraw , extended capabilities
+- drawing extended surface capabilities WDK DirectDraw
+- DirectDraw extended surface capabilities WDK Windows 2000 display
+- extended surface capabilities WDK DirectDraw
+- DDSCAPS2
+- DD_MORESURFACECAPS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extended Surface Capabilities

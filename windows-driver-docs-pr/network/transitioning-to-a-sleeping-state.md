@@ -2,7 +2,19 @@
 title: Transitioning to a Sleeping State
 description: Transitioning to a Sleeping State
 ms.assetid: cea326dd-7235-41a3-ad37-19549533a8dd
-keywords: ["network interface cards WDK networking , transitioning power states", "NICs WDK networking , transitioning power states", "sleeping states WDK networking", "power management WDK NDIS miniport , transitioning power states", "device power states WDK networking", "power states WDK networking", "transitioning power states WDK networking"]
+keywords:
+- network interface cards WDK networking , transitioning power states
+- NICs WDK networking , transitioning power states
+- sleeping states WDK networking
+- power management WDK NDIS miniport , transitioning power states
+- device power states WDK networking
+- power states WDK networking
+- transitioning power states WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Transitioning to a Sleeping State

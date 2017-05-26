@@ -2,13 +2,12 @@
 title: Auto Item
 author: windows-driver-content
 description: Auto Item
-MS-HAID:
-- 'WIA\_scanner\_tree\_a0aaffa4-6586-4ef0-832a-7efbfeb120ef.xml'
-- 'image.auto\_item'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 59f9b71b-e4bd-44a3-a4f2-dfea9f1045e2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Auto Item

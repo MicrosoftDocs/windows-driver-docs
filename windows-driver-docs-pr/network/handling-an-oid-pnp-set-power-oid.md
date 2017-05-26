@@ -2,7 +2,20 @@
 title: Handling an OID\_PNP\_SET\_POWER OID
 description: Handling an OID\_PNP\_SET\_POWER OID
 ms.assetid: 6140c772-57ba-47d3-b294-a2e2b2e3ccc7
-keywords: ["OID_PNP_SET_POWER_OID", "network interface cards WDK networking , transitioning power states", "network adapters WDK networking , transitioning power states", "power management WDK NDIS miniport , transitioning power states", "device power states WDK networking", "power states WDK networking", "transitioning power states WDK networking", "wake-up capabilities WDK networking , transitioning power states"]
+keywords:
+- OID_PNP_SET_POWER_OID
+- network interface cards WDK networking , transitioning power states
+- network adapters WDK networking , transitioning power states
+- power management WDK NDIS miniport , transitioning power states
+- device power states WDK networking
+- power states WDK networking
+- transitioning power states WDK networking
+- wake-up capabilities WDK networking , transitioning power states
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling an OID\_PNP\_SET\_POWER OID

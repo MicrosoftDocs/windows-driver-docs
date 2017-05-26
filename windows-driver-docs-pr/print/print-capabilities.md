@@ -2,14 +2,17 @@
 title: Print Capabilities
 author: windows-driver-content
 description: Print Capabilities
-MS-HAID:
-- 'drvarch\_db60853f-6a32-4234-b3ba-e4980d58769c.xml'
-- 'print.print\_capabilities'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8ccbdab3-5be4-4ee1-9798-3b90e8b5b4d4
-keywords: ["Print Capabilities WDK , about Print Capabilities", "XML PrintCapabilities WDK print", "PrintCapabilities document WDK print", "IPrintTicketProvider"]
+keywords:
+- Print Capabilities WDK , about Print Capabilities
+- XML PrintCapabilities WDK print
+- PrintCapabilities document WDK print
+- IPrintTicketProvider
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Capabilities

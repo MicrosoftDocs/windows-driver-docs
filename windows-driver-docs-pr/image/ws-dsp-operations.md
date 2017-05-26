@@ -2,13 +2,12 @@
 title: WS-DSP Operations
 author: windows-driver-content
 description: WS-DSP Operations
-MS-HAID:
-- 'dsm\_des\_theory\_68d8dcac-cdb9-4c2f-9c78-17f6f979c2a8.xml'
-- 'image.ws\_dsp\_operations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: abbf00c2-2448-40c4-a296-9e5c1d0810a5
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WS-DSP Operations

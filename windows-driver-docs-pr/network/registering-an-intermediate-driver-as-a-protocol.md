@@ -2,7 +2,15 @@
 title: Registering an Intermediate Driver as a Protocol
 description: Registering an Intermediate Driver as a Protocol
 ms.assetid: 79707f6b-0e31-46a8-a763-fa2669ce9635
-keywords: ["registering intermediate drivers", "intermediate drivers WDK networking , registering", "NDIS intermediate drivers WDK , registering"]
+keywords:
+- registering intermediate drivers
+- intermediate drivers WDK networking , registering
+- NDIS intermediate drivers WDK , registering
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering an Intermediate Driver as a Protocol

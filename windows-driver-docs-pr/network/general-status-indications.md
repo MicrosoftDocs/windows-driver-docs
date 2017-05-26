@@ -2,7 +2,13 @@
 title: General Status Indications
 description: General Status Indications
 ms.assetid: 5a7bed1c-3c03-4533-b8f1-ce8878bf7f86
-keywords: ["general status indications WDK Native 802.11"]
+keywords:
+- general status indications WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # General Status Indications

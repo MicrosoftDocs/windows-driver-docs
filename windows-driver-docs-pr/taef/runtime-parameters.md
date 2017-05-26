@@ -2,6 +2,11 @@
 title: Runtime Parameters
 description: Runtime Parameters
 ms.assetid: 5CE5D2C3-F967-4318-B799-38CE8E8B15A6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Runtime Parameters

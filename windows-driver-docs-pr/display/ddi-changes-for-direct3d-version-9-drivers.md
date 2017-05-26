@@ -2,7 +2,16 @@
 title: DDI Changes for Direct3D Version 9 Drivers
 description: DDI Changes for Direct3D Version 9 Drivers
 ms.assetid: b702c02d-3be6-46e8-9e53-5d33e5e3fc70
-keywords: ["Direct3D version 10.1 WDK Windows 7 display , DDI changes for Direct3D version 9 drivers", "Direct3D version 9 drivers WDK Windows 7 display", "Direct3D version 9 drivers WDK Windows 7 display , DDI changes", "XR_BIAS WDK Windows 7 display , Direct3D version 9 DDI"]
+keywords:
+- Direct3D version 10.1 WDK Windows 7 display , DDI changes for Direct3D version 9 drivers
+- Direct3D version 9 drivers WDK Windows 7 display
+- Direct3D version 9 drivers WDK Windows 7 display , DDI changes
+- XR_BIAS WDK Windows 7 display , Direct3D version 9 DDI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DDI Changes for Direct3D Version 9 Drivers

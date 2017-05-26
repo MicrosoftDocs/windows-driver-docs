@@ -2,7 +2,15 @@
 title: Reserving Processors for Applications
 description: Reserving Processors for Applications
 ms.assetid: e09790e9-29a7-4ff6-a122-b4bd99de8bc7
-keywords: ["CPU configuration WDK RSS", "reserving processors for applications WDK RSS", "processors WDK RSS"]
+keywords:
+- CPU configuration WDK RSS
+- reserving processors for applications WDK RSS
+- processors WDK RSS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reserving Processors for Applications

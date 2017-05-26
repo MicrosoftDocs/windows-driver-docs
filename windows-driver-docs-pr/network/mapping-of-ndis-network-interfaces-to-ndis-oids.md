@@ -2,7 +2,19 @@
 title: Mapping of NDIS Network Interfaces to NDIS OIDs
 description: Mapping of NDIS Network Interfaces to NDIS OIDs
 ms.assetid: 117f94fd-829d-4ad8-be25-a6a90a8d4c50
-keywords: ["NDIS network interfaces WDK , mapping", "network interfaces WDK , mapping", "OIDs WDK networking , network interfaces", "OID requests WDK networking", "proxy interface providers WDK networking", "NDIS proxy interface providers WDK", "NDIS network interfaces"]
+keywords:
+- NDIS network interfaces WDK , mapping
+- network interfaces WDK , mapping
+- OIDs WDK networking , network interfaces
+- OID requests WDK networking
+- proxy interface providers WDK networking
+- NDIS proxy interface providers WDK
+- NDIS network interfaces
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mapping of NDIS Network Interfaces to NDIS OIDs

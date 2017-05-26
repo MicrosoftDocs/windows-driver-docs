@@ -2,13 +2,12 @@
 title: Registry Access for WIA Drivers
 author: windows-driver-content
 description: Registry Access for WIA Drivers
-MS-HAID:
-- 'WIA\_best\_practice\_be148eac-3738-422b-91f1-ad7532ccb171.xml'
-- 'image.registry\_access\_for\_wia\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0e0b7493-858b-4add-9e1d-fd71bae21b6e
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registry Access for WIA Drivers

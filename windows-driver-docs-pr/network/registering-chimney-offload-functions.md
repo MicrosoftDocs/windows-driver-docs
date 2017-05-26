@@ -2,7 +2,15 @@
 title: Registering Chimney Offload Functions
 description: Registering Chimney Offload Functions
 ms.assetid: 8169dc67-3ab1-4aeb-a513-7af4b01772c3
-keywords: ["TCP chimney offload WDK networking , function registration", "chimney offload WDK networking , function registration", "registering chimney offload functions"]
+keywords:
+- TCP chimney offload WDK networking , function registration
+- chimney offload WDK networking , function registration
+- registering chimney offload functions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering Chimney Offload Functions

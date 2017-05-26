@@ -2,7 +2,14 @@
 title: Creating a Video Decode Device
 description: Creating a Video Decode Device
 ms.assetid: a9820da9-436f-40b7-a25d-3208600f7a2f
-keywords: ["video decoding WDK DirectX VA , creating decode devices", "decoding video WDK DirectX VA , creating decode devices"]
+keywords:
+- video decoding WDK DirectX VA , creating decode devices
+- decoding video WDK DirectX VA , creating decode devices
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Video Decode Device

@@ -2,13 +2,12 @@
 title: Loading and Unloading a WIA Minidriver
 author: windows-driver-content
 description: Loading and Unloading a WIA Minidriver
-MS-HAID:
-- 'WIA\_drv\_basic\_9cd4cf52-8064-42d8-9f5e-30a3090edcc3.xml'
-- 'image.loading\_and\_unloading\_a\_wia\_minidriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a5f930c3-f92c-498a-a334-b5eb60fbd61b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Loading and Unloading a WIA Minidriver

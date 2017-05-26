@@ -2,6 +2,11 @@
 title: Properties and Related System-Defined Items
 description: Properties and Related System-Defined Items
 ms.assetid: 87787a84-6403-4246-abf5-49747b883202
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Properties and Related System-Defined Items

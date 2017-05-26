@@ -2,14 +2,18 @@
 title: Print Ticket and Print Capabilities Technologies
 author: windows-driver-content
 description: Print Ticket and Print Capabilities Technologies
-MS-HAID:
-- 'drvarch\_841111bd-d317-46f8-901e-a547e7eaaa8c.xml'
-- 'print.print\_ticket\_and\_print\_capabilities\_technologies'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 12b1881f-1a45-4e7e-a876-b2ca4c9458f9
-keywords: ["printer drivers WDK , Print Tickets", "printer drivers WDK , Print Capabilities", "Print Capabilities WDK", "Print Tickets WDK , about Print Tickets", "Print Tickets WDK"]
+keywords:
+- printer drivers WDK , Print Tickets
+- printer drivers WDK , Print Capabilities
+- Print Capabilities WDK
+- Print Tickets WDK , about Print Tickets
+- Print Tickets WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Ticket and Print Capabilities Technologies

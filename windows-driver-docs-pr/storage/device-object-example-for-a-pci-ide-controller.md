@@ -3,7 +3,16 @@ title: Device Object Example for a PCI IDE Controller
 author: windows-driver-content
 description: Device Object Example for a PCI IDE Controller
 ms.assetid: 7cb97da7-1d94-42a1-af3a-9085e68c8f28
-keywords: ["storage drivers WDK , device objects", "device objects WDK storage", "PCI IDE controller example WDK storage", "IDE controllers WDK storage"]
+keywords:
+- storage drivers WDK , device objects
+- device objects WDK storage
+- PCI IDE controller example WDK storage
+- IDE controllers WDK storage
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Object Example for a PCI IDE Controller

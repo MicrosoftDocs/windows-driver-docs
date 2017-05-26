@@ -2,14 +2,16 @@
 title: Pscript User Interface
 author: windows-driver-content
 description: Pscript User Interface
-MS-HAID:
-- 'pscript\_6f91bafb-781b-47c5-9439-fc314cae8cc5.xml'
-- 'print.pscript\_user\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 88c1bb99-bc05-454f-ae36-722e9aa246c6
-keywords: ["PostScript Printer Driver WDK print , user interface", "Pscript WDK print , user interface", "user interface WDK Pscript"]
+keywords:
+- PostScript Printer Driver WDK print , user interface
+- Pscript WDK print , user interface
+- user interface WDK Pscript
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pscript User Interface

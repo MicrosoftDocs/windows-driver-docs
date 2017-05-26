@@ -2,13 +2,12 @@
 title: WIA Scanner Storage
 author: windows-driver-content
 description: WIA Scanner Storage
-MS-HAID:
-- 'WIA\_scanner\_tree\_39528bb4-1bf6-406c-8176-2f671d5a1964.xml'
-- 'image.wia\_scanner\_storage'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d47d2c30-1f2f-4baf-927c-eda30377ab6b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Scanner Storage

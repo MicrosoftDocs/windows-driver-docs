@@ -3,7 +3,20 @@ title: Timer and Worker Thread Management
 author: windows-driver-content
 description: Timer and Worker Thread Management
 ms.assetid: b1feeb4a-0555-4ed6-a26c-ef2a5fc58280
-keywords: ["RDBSS WDK file systems , worker thread management", "Redirected Drive Buffering Subsystem WDK file systems , worker thread management", "RDBSS WDK file systems , timers", "Redirected Drive Buffering Subsystem WDK file systems , timers", "timers WDK RDBSS", "worker threads WDK RDBSS", "one-shot notifications WDK RDBSS", "periodic triggers WDK RDBSS"]
+keywords:
+- RDBSS WDK file systems , worker thread management
+- Redirected Drive Buffering Subsystem WDK file systems , worker thread management
+- RDBSS WDK file systems , timers
+- Redirected Drive Buffering Subsystem WDK file systems , timers
+- timers WDK RDBSS
+- worker threads WDK RDBSS
+- one-shot notifications WDK RDBSS
+- periodic triggers WDK RDBSS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Timer and Worker Thread Management

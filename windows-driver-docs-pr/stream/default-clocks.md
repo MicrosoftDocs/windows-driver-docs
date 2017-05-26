@@ -2,14 +2,14 @@
 title: Default Clocks
 author: windows-driver-content
 description: Default Clocks
-MS-HAID:
-- 'ks-overview\_f271771e-f1f9-4a85-9a34-9cb217281a2a.xml'
-- 'stream.default\_clocks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8c1a51e5-238b-446a-8f20-3fe1b82020b5
-keywords: ["default clocks WDK kernel streaming"]
+keywords:
+- default clocks WDK kernel streaming
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Default Clocks

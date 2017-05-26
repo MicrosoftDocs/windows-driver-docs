@@ -2,14 +2,21 @@
 title: Device Stacks for an ACPI Device
 author: windows-driver-content
 description: Device Stacks for an ACPI Device
-MS-HAID:
-- 'opregdg\_e6789f01-535e-440c-97f6-1eb80ae49345.xml'
-- 'acpi.device\_stacks\_for\_an\_acpi\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f177d29f-eaf9-4126-8cb3-9355d977bfb0
-keywords: ["ACPI devices WDK , device stacks", "device stacks WDK ACPI", "functional device objects WDK ACPI", "FDOs WDK ACPI", "filter DOs WDK ACPI", "root bus drivers WDK ACPI", "function drivers WDK ACPI , device stacks", "WDM function drivers WDK ACPI , device stacks"]
+keywords:
+- ACPI devices WDK , device stacks
+- device stacks WDK ACPI
+- functional device objects WDK ACPI
+- FDOs WDK ACPI
+- filter DOs WDK ACPI
+- root bus drivers WDK ACPI
+- function drivers WDK ACPI , device stacks
+- WDM function drivers WDK ACPI , device stacks
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Stacks for an ACPI Device

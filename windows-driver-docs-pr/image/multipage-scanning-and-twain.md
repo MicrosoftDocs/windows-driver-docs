@@ -2,13 +2,12 @@
 title: Multipage Scanning and TWAIN
 author: windows-driver-content
 description: Multipage Scanning and TWAIN
-MS-HAID:
-- 'WIA\_drv\_scan\_bd8fe910-f764-466e-9db7-715ffdd6bc12.xml'
-- 'image.multipage\_scanning\_and\_twain'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 02b5ef48-413d-403b-8c42-caecd9521067
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Multipage Scanning and TWAIN

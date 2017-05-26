@@ -2,13 +2,12 @@
 title: About the Interfaces
 author: windows-driver-content
 description: About the Interfaces
-MS-HAID:
-- 'Sensor\_DG\_Overview\_14de902c-f344-4fb9-afdb-bc6cae143350.xml'
-- 'sensors.about\_the\_interfaces'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0de85b2d-9853-45d9-86b8-2685aa270cb1
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # About the Interfaces

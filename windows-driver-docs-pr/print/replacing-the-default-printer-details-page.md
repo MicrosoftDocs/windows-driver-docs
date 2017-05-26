@@ -2,14 +2,16 @@
 title: Replacing the Default Printer Details Page
 author: windows-driver-content
 description: Replacing the Default Printer Details Page
-MS-HAID:
-- 'inetpri\_a1c4ee61-2da7-4d9b-a37c-cc973e73176b.xml'
-- 'print.replacing\_the\_default\_printer\_details\_page'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 451f442b-a882-4540-82dd-e96dab5e7619
-keywords: ["customized print Web pages WDK , replacing default page", "replacing default printer details page", "default printer details page"]
+keywords:
+- customized print Web pages WDK , replacing default page
+- replacing default printer details page
+- default printer details page
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Replacing the Default Printer Details Page

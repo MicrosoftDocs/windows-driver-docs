@@ -2,6 +2,11 @@
 title: Lab Mode
 description: Lab Mode
 ms.assetid: 127BDA2E-753E-4a71-89E2-6F31C4E5A263
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Lab Mode

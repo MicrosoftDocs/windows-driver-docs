@@ -2,14 +2,18 @@
 title: Accessing Frequency Properties of a BDA Tuner Node
 author: windows-driver-content
 description: Accessing Frequency Properties of a BDA Tuner Node
-MS-HAID:
-- 'bdadg\_329850f2-1436-47f4-a004-40e49e2dbd99.xml'
-- 'stream.accessing\_frequency\_properties\_of\_a\_bda\_tuner\_node'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 47c24e99-c82c-4bc8-af36-bd7f728634ba
-keywords: ["method sets WDK BDA , RF tuner node", "property sets WDK BDA , RF tuner node", "KSPROPSETID_BdaFrequencyFilter", "RF tuners WDK BDA", "frequency properties WDK BDA"]
+keywords:
+- method sets WDK BDA , RF tuner node
+- property sets WDK BDA , RF tuner node
+- KSPROPSETID_BdaFrequencyFilter
+- RF tuners WDK BDA
+- frequency properties WDK BDA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing Frequency Properties of a BDA Tuner Node

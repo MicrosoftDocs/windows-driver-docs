@@ -2,10 +2,12 @@
 title: Access the sensor class extension
 author: windows-driver-content
 description: Access the sensor class extension
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 206A00AE-45D7-49D8-97E2-45A6DACFCB08
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Access the sensor class extension

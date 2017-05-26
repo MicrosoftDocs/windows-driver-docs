@@ -2,14 +2,19 @@
 title: PCD Source File Format
 author: windows-driver-content
 description: PCD Source File Format
-MS-HAID:
-- 'plotter\_a4eba66a-0479-4fa5-a32c-d1a0ad009eed.xml'
-- 'print.pcd\_source\_file\_format'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8651d6ca-7cd7-4c07-aa66-2766dd2222e0
-keywords: ["Plotter Driver WDK print , minidrivers", "MSPlot WDK print , minidrivers", "minidrivers WDK MSPlot", "PCD files WDK MSPlot", ".pcd files", "keywords WDK MSPlot"]
+keywords:
+- Plotter Driver WDK print , minidrivers
+- MSPlot WDK print , minidrivers
+- minidrivers WDK MSPlot
+- PCD files WDK MSPlot
+- .pcd files
+- keywords WDK MSPlot
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PCD Source File Format

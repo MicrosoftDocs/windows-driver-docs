@@ -2,6 +2,11 @@
 title: Enabling Support for Debugging Device Installations
 description: Enabling Support for Debugging Device Installations
 ms.assetid: cc47b4c9-fd1d-47c2-9af9-0b7f4a7a918a
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling Support for Debugging Device Installations

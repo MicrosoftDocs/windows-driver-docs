@@ -2,6 +2,11 @@
 title: Accessing Device Instance SPDRP\_Xxx Properties
 description: Accessing Device Instance SPDRP\_Xxx Properties
 ms.assetid: 15ee51f8-1904-43ee-8bc2-311688c860e0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing Device Instance SPDRP\_Xxx Properties

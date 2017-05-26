@@ -2,14 +2,15 @@
 title: Setting Attributes on a Parallel Device
 author: windows-driver-content
 description: Setting Attributes on a Parallel Device
-MS-HAID:
-- 'vspd\_e8d2cd3a-f9e8-48f5-9bde-e71ab3bfdb5c.xml'
-- 'parports.setting\_attributes\_on\_a\_parallel\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 10df9a1b-99ec-46b1-b515-10fb20fe2aed
-keywords: ["parallel devices WDK , attributes", "attributes WDK parallel devices"]
+keywords:
+- parallel devices WDK , attributes
+- attributes WDK parallel devices
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Attributes on a Parallel Device

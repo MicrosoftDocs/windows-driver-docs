@@ -2,7 +2,13 @@
 title: MPEG1\_A
 description: MPEG1\_A
 ms.assetid: 2c4d79b7-3331-49f9-a561-6e5b609543df
-keywords: ["MPEG1_A restricted profile WDK DirectX VA"]
+keywords:
+- MPEG1_A restricted profile WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MPEG1\_A

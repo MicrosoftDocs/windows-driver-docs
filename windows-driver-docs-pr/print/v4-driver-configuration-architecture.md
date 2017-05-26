@@ -2,10 +2,12 @@
 title: V4 Printer Driver Configuration Architecture
 author: windows-driver-content
 description: The v4 printer driver model supports a greatly simplified configuration layer.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: E797CB4A-C28E-4442-89E6-97B589900BD6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # V4 Printer Driver Configuration Architecture

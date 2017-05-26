@@ -2,10 +2,12 @@
 title: Build a v4 Printer Driver in Visual Studio
 author: windows-driver-content
 description: Build a v4 printer driver in Microsoft Visual Studio 2013, using the built-in driver templates and the driver development Wizard.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: FAEAF22B-552F-4B3F-B275-A5BAC0DC700E
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Build a v4 Printer Driver in Visual Studio

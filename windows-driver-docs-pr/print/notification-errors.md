@@ -2,14 +2,17 @@
 title: Notification Errors
 author: windows-driver-content
 description: Notification Errors
-MS-HAID:
-- 'splarch\_1520d6c1-d98d-45c4-9e5d-184f348aebc0.xml'
-- 'print.notification\_errors'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ffead40c-5c1c-45f6-83d2-48e4af357255
-keywords: ["spooler notification WDK print , errors", "print spooler notification WDK , errors", "notification errors WDK print spooler", "errors WDK spooler notification"]
+keywords:
+- spooler notification WDK print , errors
+- print spooler notification WDK , errors
+- notification errors WDK print spooler
+- errors WDK spooler notification
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Notification Errors

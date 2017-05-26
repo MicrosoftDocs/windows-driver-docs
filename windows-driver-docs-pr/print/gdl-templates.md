@@ -2,14 +2,21 @@
 title: GDL Templates
 author: windows-driver-content
 description: GDL Templates
-MS-HAID:
-- 'gplfiles\_7a85d25b-cfbb-4f61-8a8a-76ecde8905f5.xml'
-- 'print.gdl\_templates'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9cce885d-395e-4f8d-8076-951d75d82410
-keywords: ["GDL WDK , templates", "templates WDK GDL", "validating GDL entries WDK GDL", "GDL WDK , validating entries", "attributes WDK GDL , in templates", "constructs WDK GDL , in templates", "inheritance WDK GDL", "schemas WDK GDL , inheritance-based schemas"]
+keywords:
+- GDL WDK , templates
+- templates WDK GDL
+- validating GDL entries WDK GDL
+- GDL WDK , validating entries
+- attributes WDK GDL , in templates
+- constructs WDK GDL , in templates
+- inheritance WDK GDL
+- schemas WDK GDL , inheritance-based schemas
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Templates

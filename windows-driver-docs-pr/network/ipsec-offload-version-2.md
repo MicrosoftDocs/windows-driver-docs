@@ -2,7 +2,14 @@
 title: IPsec Offload Version 2
 description: IPsec Offload Version 2
 ms.assetid: f83228bd-f912-4c85-92db-189949e6d60d
-keywords: ["IPsec offload WDK TCP/IP transport , version 2", "IPsecOV2 WDK TCP/IP transport"]
+keywords:
+- IPsec offload WDK TCP/IP transport , version 2
+- IPsecOV2 WDK TCP/IP transport
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IPsec Offload Version 2

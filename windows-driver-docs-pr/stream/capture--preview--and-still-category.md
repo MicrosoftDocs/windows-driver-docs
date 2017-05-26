@@ -2,14 +2,22 @@
 title: Capture, Preview, and Still Category
 author: windows-driver-content
 description: Capture, Preview, and Still Category
-MS-HAID:
-- 'vidcapds\_7a02c099-5a76-4945-9847-497d305cf9f4.xml'
-- 'stream.capture\_\_preview\_\_and\_still\_category'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b82cc3b6-1cea-4864-9501-95919f05455f
-keywords: ["stream categories WDK video capture , capture video streams", "stream categories WDK video capture , preview video streams", "stream categories WDK video capture , capture still images", "capture video streams category WDK video capture", "preview video streams category WDK video capture", "capture still images category WDK video capture", "PINNAME_VIDEO_CAPTURE", "NAME_VIDEO_PREVIEW", "PINNAME_VIDEO_STILL"]
+keywords:
+- stream categories WDK video capture , capture video streams
+- stream categories WDK video capture , preview video streams
+- stream categories WDK video capture , capture still images
+- capture video streams category WDK video capture
+- preview video streams category WDK video capture
+- capture still images category WDK video capture
+- PINNAME_VIDEO_CAPTURE
+- NAME_VIDEO_PREVIEW
+- PINNAME_VIDEO_STILL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Capture, Preview, and Still Category

@@ -2,13 +2,12 @@
 title: Adding Polling Event Support
 author: windows-driver-content
 description: Adding Polling Event Support
-MS-HAID:
-- 'WIA\_db\_event\_645eacba-1ef0-47a0-a2af-8d699fc599d2.xml'
-- 'image.adding\_polling\_event\_support'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7c7617d4-22d6-48a8-b69c-dd0347f078dd
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding Polling Event Support

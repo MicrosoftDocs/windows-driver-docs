@@ -3,7 +3,17 @@ title: Associating a Per-Stream Context With a File Stream
 author: windows-driver-content
 description: Associating a Per-Stream Context With a File Stream
 ms.assetid: 99c93574-2ba6-417a-89a4-a5b9a350a8da
-keywords: ["filter drivers WDK file system , per-stream context tracking", "file system filter drivers WDK , per-stream context tracking", "per-stream context tracking WDK file system", "tracking per-stream context WDK file system", "associating per-stream context WDK file system"]
+keywords:
+- filter drivers WDK file system , per-stream context tracking
+- file system filter drivers WDK , per-stream context tracking
+- per-stream context tracking WDK file system
+- tracking per-stream context WDK file system
+- associating per-stream context WDK file system
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Associating a Per-Stream Context With a File Stream

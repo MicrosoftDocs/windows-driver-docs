@@ -2,14 +2,17 @@
 title: Device Mutex in AVStream
 author: windows-driver-content
 description: Device Mutex in AVStream
-MS-HAID:
-- 'avsover\_c09d7995-bd1e-449c-a620-7f2eb27c0631.xml'
-- 'stream.device\_mutex\_in\_avstream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cec2a040-59d6-44ef-aef1-04f434811d60
-keywords: ["AVStream mutexes WDK", "mutexes WDK AVStream", "device mutex WDK AVStream", "synchronization WDK AVStream"]
+keywords:
+- AVStream mutexes WDK
+- mutexes WDK AVStream
+- device mutex WDK AVStream
+- synchronization WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Mutex in AVStream

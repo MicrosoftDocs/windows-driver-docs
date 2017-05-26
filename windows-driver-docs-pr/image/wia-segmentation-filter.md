@@ -2,13 +2,12 @@
 title: WIA Segmentation Filter
 author: windows-driver-content
 description: WIA Segmentation Filter
-MS-HAID:
-- 'WIA\_tree\_15dbe759-5434-4eb6-a763-33ebe378f829.xml'
-- 'image.wia\_segmentation\_filter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7a0ac9d9-2526-426a-b17d-2b5edd8f1f10
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Segmentation Filter

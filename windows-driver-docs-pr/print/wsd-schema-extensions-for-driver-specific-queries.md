@@ -2,14 +2,16 @@
 title: WSD Schema Extensions for Driver-Specific Queries
 author: windows-driver-content
 description: WSD Schema Extensions for Driver-Specific Queries
-MS-HAID:
-- 'autocfg\_7ffb022c-ecf3-4da5-acec-a0a20491e472.xml'
-- 'print.wsd\_schema\_extensions\_for\_driver\_specific\_queries'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 508a9f87-8fd2-4c95-8efb-5d1d7201981a
-keywords: ["WSD schema extensions WDK printer", "schema extensions WDK WSD", "driver-specific queries WDK printer"]
+keywords:
+- WSD schema extensions WDK printer
+- schema extensions WDK WSD
+- driver-specific queries WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WSD Schema Extensions for Driver-Specific Queries

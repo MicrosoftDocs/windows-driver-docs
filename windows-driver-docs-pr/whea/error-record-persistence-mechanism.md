@@ -2,13 +2,12 @@
 title: Error Record Persistence Mechanism
 author: windows-driver-content
 description: Error Record Persistence Mechanism
-MS-HAID:
-- 'whea\_9a3404b5-437b-4d30-8842-1efe7d4e0f0d.xml'
-- 'whea.error\_record\_persistence\_mechanism'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f361c966-7ed4-4676-afa9-75268196c0e4
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Error Record Persistence Mechanism

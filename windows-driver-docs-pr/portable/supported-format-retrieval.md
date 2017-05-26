@@ -1,8 +1,11 @@
 ---
 Description: Supported Format Retrieval
-MS-HAID: 'wpddk.supported\_format\_retrieval'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Supported Format Retrieval
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supported Format Retrieval

@@ -2,14 +2,22 @@
 title: Printer Autoconfiguration
 author: windows-driver-content
 description: Printer Autoconfiguration
-MS-HAID:
-- 'autocfg\_66a0ab4e-9f83-4b81-8c23-bd0d5b099029.xml'
-- 'print.printer\_autoconfiguration'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bbe5e58b-4ca2-4ec2-867e-27765d4f59ab
-keywords: ["autoconfiguration WDK printer", "printer autoconfiguration WDK printer", "autoconfiguration WDK printer , about printer autoconfiguration", "printer autoconfiguration WDK printer , about printer autoconfiguration", "print queues WDK , autoconfiguration", "queues WDK printer , autoconfiguration", "automatic printer configuration WDK", "printer configuration WDK , autoconfiguration", "queues WDK printer"]
+keywords:
+- autoconfiguration WDK printer
+- printer autoconfiguration WDK printer
+- autoconfiguration WDK printer , about printer autoconfiguration
+- printer autoconfiguration WDK printer , about printer autoconfiguration
+- print queues WDK , autoconfiguration
+- queues WDK printer , autoconfiguration
+- automatic printer configuration WDK
+- printer configuration WDK , autoconfiguration
+- queues WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Autoconfiguration

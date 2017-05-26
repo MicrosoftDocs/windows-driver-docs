@@ -2,10 +2,12 @@
 title: Get Request and Response Schemas
 author: windows-driver-content
 description: The Get request schema and corresponding response schema definition, and an example of each, are below.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 48980220-4DD6-4785-AAC1-850F8FBE49EC
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Get Request and Response Schemas

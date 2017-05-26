@@ -2,13 +2,12 @@
 title: Out-of-Process COM Objects for WIA Drivers
 author: windows-driver-content
 description: Out-of-Process COM Objects for WIA Drivers
-MS-HAID:
-- 'WIA\_best\_practice\_84f531b7-45f2-4f6d-81ed-ca741f2ac430.xml'
-- 'image.out\_of\_process\_com\_objects\_for\_wia\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0b08652e-36ae-46f8-8915-7f2bb45df05c
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Out-of-Process COM Objects for WIA Drivers

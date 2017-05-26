@@ -2,14 +2,17 @@
 title: Powering Up a Serial Device
 author: windows-driver-content
 description: Powering Up a Serial Device
-MS-HAID:
-- 'sseovr\_3880cfa8-3cea-4f56-8ad3-e100b94a4a12.xml'
-- 'serports.powering\_up\_a\_serial\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 83f86da6-0acb-4cad-8856-e826c98c2182
-keywords: ["Serial driver WDK , device power", "powering up serial devices WDK", "turning on serial devices WDK", "serial devices WDK , powering up"]
+keywords:
+- Serial driver WDK , device power
+- powering up serial devices WDK
+- turning on serial devices WDK
+- serial devices WDK , powering up
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Powering Up a Serial Device

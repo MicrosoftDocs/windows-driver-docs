@@ -2,14 +2,16 @@
 title: Unidrv User Interface
 author: windows-driver-content
 description: Unidrv User Interface
-MS-HAID:
-- 'nt5gpd\_45cb70f0-7bd3-4d55-8164-5281275ec25c.xml'
-- 'print.unidrv\_user\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b1f34ebf-8c8a-4b43-ba48-26bcf6352360
-keywords: ["Unidrv, user interface", "user interface WDK Unidrv", "Unidrv WDK print"]
+keywords:
+- Unidrv, user interface
+- user interface WDK Unidrv
+- Unidrv WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Unidrv User Interface

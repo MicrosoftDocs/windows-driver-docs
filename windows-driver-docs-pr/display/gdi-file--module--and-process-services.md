@@ -2,7 +2,24 @@
 title: GDI File, Module, and Process Services
 description: GDI File, Module, and Process Services
 ms.assetid: abf37bed-cad9-4fbc-95fe-346b0c07c81b
-keywords: ["GDI WDK Windows 2000 display , module services", "graphics drivers WDK Windows 2000 display , module services", "drawing WDK GDI , module services", "GDI WDK Windows 2000 display , file services", "graphics drivers WDK Windows 2000 display , file services", "drawing WDK GDI , file services", "GDI WDK Windows 2000 display , process services", "graphics drivers WDK Windows 2000 display , process services", "drawing WDK GDI , process services", "process services WDK GDI", "file services WDK GDI", "modules WDK GDI"]
+keywords:
+- GDI WDK Windows 2000 display , module services
+- graphics drivers WDK Windows 2000 display , module services
+- drawing WDK GDI , module services
+- GDI WDK Windows 2000 display , file services
+- graphics drivers WDK Windows 2000 display , file services
+- drawing WDK GDI , file services
+- GDI WDK Windows 2000 display , process services
+- graphics drivers WDK Windows 2000 display , process services
+- drawing WDK GDI , process services
+- process services WDK GDI
+- file services WDK GDI
+- modules WDK GDI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI File, Module, and Process Services

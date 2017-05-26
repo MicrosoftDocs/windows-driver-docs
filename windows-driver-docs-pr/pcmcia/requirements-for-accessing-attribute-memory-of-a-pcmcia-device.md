@@ -1,14 +1,14 @@
 ---
 title: Requirements for Accessing Attribute Memory of a PCMCIA Device
 description: Requirements for Accessing Attribute Memory of a PCMCIA Device
-MS-HAID:
-- 'pamch1\_6d6ba262-48bf-4a88-81ea-79eb232c1584.xml'
-- 'PCMCIA.requirements\_for\_accessing\_attribute\_memory\_of\_a\_pcmcia\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8af41eb0-c057-43c9-a50f-b7d88e1bed6a
-keywords: ["attribute memory WDK PCMCIA bus , requirements"]
+keywords:
+- attribute memory WDK PCMCIA bus , requirements
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Requirements for Accessing Attribute Memory of a PCMCIA Device

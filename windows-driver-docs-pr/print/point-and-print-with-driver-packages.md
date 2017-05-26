@@ -2,14 +2,14 @@
 title: Point and Print with Driver Packages
 author: windows-driver-content
 description: Point and Print with Driver Packages
-MS-HAID:
-- 'prtinst\_f431dab3-013c-4a79-805a-4eb652b6e1e1.xml'
-- 'print.point\_and\_print\_with\_driver\_packages'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4574d0c3-2ec5-4870-96ac-f828ba8515b3
-keywords: ["Point and Print WDK , packages"]
+keywords:
+- Point and Print WDK , packages
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Point and Print with Driver Packages

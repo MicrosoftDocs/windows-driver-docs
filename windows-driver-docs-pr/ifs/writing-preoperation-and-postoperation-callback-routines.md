@@ -3,7 +3,23 @@ title: Writing Preoperation and Postoperation Callback Routines
 author: windows-driver-content
 description: Writing Preoperation and Postoperation Callback Routines
 ms.assetid: ad706d01-7a14-4730-8189-c465637987dc
-keywords: ["file system minifilter drivers WDK , preoperation callback routine", "minifilter drivers WDK , preoperation callback routine", "preoperation callback routines WDK file system minifilter , about preoperation callback routines", "postoperation callback routines WDK file system minifilter , about postoperation callback routines", "file system minifilter drivers WDK , postoperation callback routines", "minifilter drivers WDK , postoperation callback routines", "preoperation callback routines WDK file system minifilter", "postoperation callback routines WDK file system minifilter", "I/O WDK file systems", "callback routines WDK file system", "filtering I/O operations WDK file system minifilter"]
+keywords:
+- file system minifilter drivers WDK , preoperation callback routine
+- minifilter drivers WDK , preoperation callback routine
+- preoperation callback routines WDK file system minifilter , about preoperation callback routines
+- postoperation callback routines WDK file system minifilter , about postoperation callback routines
+- file system minifilter drivers WDK , postoperation callback routines
+- minifilter drivers WDK , postoperation callback routines
+- preoperation callback routines WDK file system minifilter
+- postoperation callback routines WDK file system minifilter
+- I/O WDK file systems
+- callback routines WDK file system
+- filtering I/O operations WDK file system minifilter
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing Preoperation and Postoperation Callback Routines

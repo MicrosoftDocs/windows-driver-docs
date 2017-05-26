@@ -2,7 +2,25 @@
 title: AEC System Filter
 description: AEC System Filter
 ms.assetid: 45865e8c-7080-428f-b436-6004a8d5c011
-keywords: ["acoustic echo cancellation WDK audio", "AEC WDK audio", "NS WDK audio", "noise suppression WDK audio", "data formats WDK audio , AEC system filters", "render-out pins WDK audio", "capture-out pins WDK audio", "render-in pins WDK audio", "capture-in pins WDK audio", "filters WDK audio , AEC system filters", "connections WDK audio", "filter graphs WDK audio , AEC system filters", "audio filter graphs WDK"]
+keywords:
+- acoustic echo cancellation WDK audio
+- AEC WDK audio
+- NS WDK audio
+- noise suppression WDK audio
+- data formats WDK audio , AEC system filters
+- render-out pins WDK audio
+- capture-out pins WDK audio
+- render-in pins WDK audio
+- capture-in pins WDK audio
+- filters WDK audio , AEC system filters
+- connections WDK audio
+- filter graphs WDK audio , AEC system filters
+- audio filter graphs WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AEC System Filter

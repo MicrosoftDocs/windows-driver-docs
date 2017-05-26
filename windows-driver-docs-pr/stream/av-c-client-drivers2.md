@@ -2,14 +2,15 @@
 title: AV/C Client Drivers
 author: windows-driver-content
 description: AV/C Client Drivers
-MS-HAID:
-- 'AVCintro\_81f54deb-c406-4dfb-9282-d50b97d2880b.xml'
-- 'stream.av\_c\_client\_drivers2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 70d98c31-2da6-455b-91d8-59bed306b574
-keywords: ["AVStream WDK , AV/C", "AV/C WDK"]
+keywords:
+- AVStream WDK , AV/C
+- AV/C WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AV/C Client Drivers

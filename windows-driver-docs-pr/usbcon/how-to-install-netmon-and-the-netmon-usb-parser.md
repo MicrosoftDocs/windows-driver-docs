@@ -1,10 +1,12 @@
 ---
-Description: 'This topic provides installation information about Netmon and the USB ETW parsers.'
-MS-HAID: 'buses.how\_to\_install\_netmon\_and\_the\_netmon\_usb\_parser'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This topic provides installation information about Netmon and the USB ETW parsers.
 title: How to install Netmon and USB ETW Parsers
+author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to install Netmon and USB ETW Parsers
@@ -64,20 +66,11 @@ Instructions
 Netmon is now configured for use with a USB ETW trace file. For more information, see [How to view a USB ETW trace in Netmon](how-to-examining-a-trace-file-by-using-netmon.md).
 
 ## Related topics
+[Using USB ETW](using-usb-etw.md)  
+[USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
+[How to open an ETW trace in Netmon](how-to-examining-a-trace-file-by-using-netmon.md)  
 
-
-[Using USB ETW](using-usb-etw.md)
-
-[USB Event Tracing for Windows](usb-event-tracing-for-windows.md)
-
-[How to open an ETW trace in Netmon](how-to-examining-a-trace-file-by-using-netmon.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20install%20Netmon%20and%20USB%20ETW%20Parsers%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

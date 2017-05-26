@@ -2,14 +2,19 @@
 title: Opening and Closing a Stream
 author: windows-driver-content
 description: Opening and Closing a Stream
-MS-HAID:
-- 'vidcapds\_92e4a8d7-c44e-44db-9c58-e64ee9908e4e.xml'
-- 'stream.opening\_and\_closing\_a\_stream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a4895e99-ab2e-482e-b89f-04b01177ec03
-keywords: ["video capture WDK AVStream , opening streams", "capturing video WDK AVStream , opening streams", "video capture WDK AVStream , closing streams", "capturing video WDK AVStream , closing streams", "opening streams WDK AVStream", "closing streams WDK AVStream"]
+keywords:
+- video capture WDK AVStream , opening streams
+- capturing video WDK AVStream , opening streams
+- video capture WDK AVStream , closing streams
+- capturing video WDK AVStream , closing streams
+- opening streams WDK AVStream
+- closing streams WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Opening and Closing a Stream

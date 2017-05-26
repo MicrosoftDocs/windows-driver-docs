@@ -2,14 +2,15 @@
 title: XPSDrv Installation
 author: windows-driver-content
 description: XPSDrv Installation
-MS-HAID:
-- 'xpsconfig\_04fe7055-bb78-4911-9938-8acb11c3aa9b.xml'
-- 'print.xpsdrv\_installation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0b5ef114-2862-46f9-bd32-ae09fa4e6a92
-keywords: ["XPSDrv printer drivers WDK , installing", "INF files WDK print , XPSDrv printer drivers"]
+keywords:
+- XPSDrv printer drivers WDK , installing
+- INF files WDK print , XPSDrv printer drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XPSDrv Installation

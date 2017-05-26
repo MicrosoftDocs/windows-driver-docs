@@ -2,7 +2,16 @@
 title: Detecting Child Devices
 description: Detecting Child Devices
 ms.assetid: 36c0c4ef-7810-4e8a-b349-0b7c1f8c2f0c
-keywords: ["video miniport drivers WDK Windows 2000 , child devices", "child devices WDK video miniport , detecting", "detecting child devices WDK video miniport", "HwVidGetVideoChildDescriptor"]
+keywords:
+- video miniport drivers WDK Windows 2000 , child devices
+- child devices WDK video miniport , detecting
+- detecting child devices WDK video miniport
+- HwVidGetVideoChildDescriptor
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Detecting Child Devices

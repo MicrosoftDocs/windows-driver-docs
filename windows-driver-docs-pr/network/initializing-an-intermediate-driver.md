@@ -2,7 +2,15 @@
 title: Initializing an Intermediate Driver
 description: Initializing an Intermediate Driver
 ms.assetid: cd4903f8-f522-403a-bec4-03ee7e82dcac
-keywords: ["NDIS intermediate drivers WDK , initializing", "intermediate drivers WDK networking , initializing", "initializing intermediate drivers"]
+keywords:
+- NDIS intermediate drivers WDK , initializing
+- intermediate drivers WDK networking , initializing
+- initializing intermediate drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing an Intermediate Driver

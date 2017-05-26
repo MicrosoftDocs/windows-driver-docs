@@ -2,14 +2,15 @@
 title: Printer Attribute Format
 author: windows-driver-content
 description: Printer Attribute Format
-MS-HAID:
-- 'nt5gpd\_49bdf751-b532-4221-b4da-92c7b071a487.xml'
-- 'print.printer\_attribute\_format'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 676e9220-4990-4581-8f23-79083afc311c
-keywords: ["printer attributes WDK Unidrv , formats", "formats WDK printer attributes"]
+keywords:
+- printer attributes WDK Unidrv , formats
+- formats WDK printer attributes
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Attribute Format

@@ -2,7 +2,16 @@
 title: NDIS 6.0 Task Offload Porting Issues
 description: NDIS 6.0 Task Offload Porting Issues
 ms.assetid: f8da32a6-3c44-48c4-a43b-886638a63105
-keywords: ["task offload porting WDK networking , about porting task offload services", "TCP/IP offload service porting WDK networking , about porting task offload services", "offload service porting WDK networking , about porting task offload services", "porting task of"]
+keywords:
+- task offload porting WDK networking , about porting task offload services
+- TCP/IP offload service porting WDK networking , about porting task offload services
+- offload service porting WDK networking , about porting task offload services
+- porting task of
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS 6.0 Task Offload Porting Issues

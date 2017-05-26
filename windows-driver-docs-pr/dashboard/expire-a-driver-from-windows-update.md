@@ -1,10 +1,12 @@
 ---
 title: Expire a driver from Windows Update
 description: To expire a driver from Windows Update, follow the steps below.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 085DF794-A65E-4EBC-B473-0C4AF9F6F126
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Expire a driver from Windows Update

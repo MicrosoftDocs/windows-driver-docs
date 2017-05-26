@@ -2,7 +2,18 @@
 title: NDIS Port Send and Receive Operations
 description: NDIS Port Send and Receive Operations
 ms.assetid: f9a22b7b-5565-4d56-a9b9-22562b6bf0da
-keywords: ["ports WDK NDIS , send and receive operations", "NDIS ports WDK , send and receive operations", "send operations WDK NDIS ports", "receive operations WDK NDIS ports", "target ports WDK NDIS", "source ports WDK NDIS"]
+keywords:
+- ports WDK NDIS , send and receive operations
+- NDIS ports WDK , send and receive operations
+- send operations WDK NDIS ports
+- receive operations WDK NDIS ports
+- target ports WDK NDIS
+- source ports WDK NDIS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS Port Send and Receive Operations

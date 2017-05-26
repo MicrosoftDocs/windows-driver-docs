@@ -2,13 +2,12 @@
 title: Allocating Memory for Data
 author: windows-driver-content
 description: Allocating Memory for Data
-MS-HAID:
-- 'WIA\_db\_trans\_f3f797e8-48de-4bee-a59c-4ead8b09efa2.xml'
-- 'image.allocating\_memory\_for\_data'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 15df5616-ddce-44ec-bd10-65cae0d95cf4
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating Memory for Data

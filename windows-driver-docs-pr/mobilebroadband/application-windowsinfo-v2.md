@@ -1,13 +1,15 @@
 ---
-title: Application
-description: Application
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+title: Application (WindowsInfo)
+description: Application (WindowsInfo)
 ms.assetid: e76ede51-e494-47b4-b30a-e354799f66e7
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Application
+# Application (WindowsInfo)
 
 
 The Application element specifies the application ID for the app.

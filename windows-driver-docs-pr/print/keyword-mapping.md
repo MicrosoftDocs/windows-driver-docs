@@ -2,13 +2,12 @@
 title: Keyword Mapping
 author: windows-driver-content
 description: Keyword Mapping
-MS-HAID:
-- 'drvarch\_f649ed64-ccb4-4214-9ba9-7853d007af71.xml'
-- 'print.keyword\_mapping'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: eb2cbe3c-b516-4db3-92ad-5eafd7181624
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Keyword Mapping

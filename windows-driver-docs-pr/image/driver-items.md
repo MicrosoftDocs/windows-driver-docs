@@ -2,13 +2,12 @@
 title: Driver Items
 author: windows-driver-content
 description: Driver Items
-MS-HAID:
-- 'WIA\_arch\_4cb014c3-6bc7-431b-851c-15313cb46a7b.xml'
-- 'image.driver\_items'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7b557c92-400e-45e5-bee6-328489d20cae
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Items

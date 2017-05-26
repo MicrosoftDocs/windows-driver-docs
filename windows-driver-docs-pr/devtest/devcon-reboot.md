@@ -2,13 +2,19 @@
 title: DevCon Reboot
 description: Stops and then starts the operating system. Valid only on the local computer.
 ms.assetid: 4e27c35c-8b98-4edc-98d7-8ba0f96d7a78
-keywords: ["DevCon Reboot Driver Development Tools"]
+keywords:
+- DevCon Reboot Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - DevCon Reboot
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DevCon Reboot

@@ -1,11 +1,13 @@
 ---
 title: Hardware Resources for User-Mode SPB Peripheral Drivers
 author: windows-driver-content
-description: The code examples in this topic show how the User-Mode Driver Framework (UMDF) driver for a peripheral device on a simple peripheral bus (SPB) obtains the hardware resources that it requires to operate the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+description: Code examples for a UMDF driver for a peripheral device on an SPB, and obtains the hardware resources.
 ms.assetid: 4D240011-1F4E-4C1E-8258-A2CF44BD3F06
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hardware Resources for User-Mode SPB Peripheral Drivers

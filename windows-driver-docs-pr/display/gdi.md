@@ -2,7 +2,18 @@
 title: GDI
 description: GDI
 ms.assetid: b92146b6-5252-45d3-a684-623f72f02b86
-keywords: ["graphics WDK Windows 2000 display", "Windows 2000 display driver model WDK , GDI", "display driver model WDK Windows 2000 , GDI", "Graphics Device Interface WDK Windows 2000 display", "GDI WDK Windows 2000 display", "drawing WDK GDI"]
+keywords:
+- graphics WDK Windows 2000 display
+- Windows 2000 display driver model WDK , GDI
+- display driver model WDK Windows 2000 , GDI
+- Graphics Device Interface WDK Windows 2000 display
+- GDI WDK Windows 2000 display
+- drawing WDK GDI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI

@@ -2,13 +2,12 @@
 title: Required Root Item Properties for Scanner Storage
 author: windows-driver-content
 description: Required Root Item Properties for Scanner Storage
-MS-HAID:
-- 'WIA\_scanner\_tree\_8976ab40-c65d-43ab-86e2-a9da699a139e.xml'
-- 'image.required\_root\_item\_properties\_for\_scanner\_storage'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 204a7c79-e5cb-453a-a9b8-e2ebb0f6c041
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Required Root Item Properties for Scanner Storage

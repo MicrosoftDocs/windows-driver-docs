@@ -2,14 +2,16 @@
 title: Close a Stream
 author: windows-driver-content
 description: Close a Stream
-MS-HAID:
-- 'avcsguide\_238b68e7-c6e3-47be-88ff-0bad62fcb684.xml'
-- 'stream.close\_a\_stream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1ed9b07c-8d22-485f-a7e8-3a27ca3768b0
-keywords: ["Avcstrm.sys streaming filter driver WDK , closing streams", "stream closing WDK AV/C streaming", "closing streams"]
+keywords:
+- Avcstrm.sys streaming filter driver WDK , closing streams
+- stream closing WDK AV/C streaming
+- closing streams
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Close a Stream

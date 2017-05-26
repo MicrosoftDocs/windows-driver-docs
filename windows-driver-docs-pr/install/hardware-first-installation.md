@@ -2,7 +2,17 @@
 title: Hardware-First Installation
 description: Hardware-First Installation
 ms.assetid: 42e47250-3600-4479-8e49-483c7470935d
-keywords: ["installation applications WDK , hardware-first installations", "device installation applications WDK , hardware-first installations", "hardware-first installations WDK device installations", "distribution medium WDK device installations , hardware-first installations", "device installations WDK , types"]
+keywords:
+- installation applications WDK , hardware-first installations
+- device installation applications WDK , hardware-first installations
+- hardware-first installations WDK device installations
+- distribution medium WDK device installations , hardware-first installations
+- device installations WDK , types
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hardware-First Installation

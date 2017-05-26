@@ -2,14 +2,16 @@
 title: Validating and Certifying Hardware Codecs
 author: windows-driver-content
 description: Validating and Certifying Hardware Codecs
-MS-HAID:
-- 'shed\_dg\_7628bff1-683e-471c-b506-083947e867fb.xml'
-- 'stream.validating\_and\_certifying\_hardware\_codecs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8cf96aac-78ba-41f0-b9d0-48948f704262
-keywords: ["hardware codecs WDK AVStream , validating", "hardware codecs WDK AVStream , certifying", "hardware codec support WDK AVStream , validating and certifying"]
+keywords:
+- hardware codecs WDK AVStream , validating
+- hardware codecs WDK AVStream , certifying
+- hardware codec support WDK AVStream , validating and certifying
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Validating and Certifying Hardware Codecs

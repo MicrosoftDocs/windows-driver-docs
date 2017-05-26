@@ -2,14 +2,16 @@
 title: Windows Hardware Error Architecture Debugger Extensions
 author: windows-driver-content
 description: Windows Hardware Error Architecture Debugger Extensions
-MS-HAID:
-- 'whea\_49dfaa57-1d43-45e2-aad5-a2f0e4743c88.xml'
-- 'whea.windows\_hardware\_error\_architecture\_debugger\_extensions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 47eaaf7e-31d6-437a-8318-a650d07e0c11
-keywords: ["WHEA WDK , debugger extensions", "Windows Hardware Error Architecture WDK , debugger extensions", "debugger extensions WDK WHEA , whea debugger extension WDK WHEA , errpkt debugger extension WDK WHEA , errrec debugger extension WDK WHEA"]
+keywords:
+- WHEA WDK , debugger extensions
+- Windows Hardware Error Architecture WDK , debugger extensions
+- debugger extensions WDK WHEA , whea debugger extension WDK WHEA , errpkt debugger extension WDK WHEA , errrec debugger extension WDK WHEA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Hardware Error Architecture Debugger Extensions

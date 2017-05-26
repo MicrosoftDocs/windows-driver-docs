@@ -2,13 +2,12 @@
 title: Scan Service (WS-SCAN)
 author: windows-driver-content
 description: Scan Service (WS-SCAN)
-MS-HAID:
-- 'ws\_scan\_des\_30f3c4a2-99bd-4c8f-9eb4-6dfd8a42a417.xml'
-- 'image.scan\_service\_\_ws\_scan'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b38b84b2-ae3d-433f-ba82-1123fd698df1
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Scan Service (WS-SCAN)

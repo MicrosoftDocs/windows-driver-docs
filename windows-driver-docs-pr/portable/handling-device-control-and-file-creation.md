@@ -1,8 +1,11 @@
 ---
 Description: Handling Device Control and File Creation
-MS-HAID: 'wpddk.handling\_device\_control\_and\_file\_creation'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Handling Device Control and File Creation
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Device Control and File Creation

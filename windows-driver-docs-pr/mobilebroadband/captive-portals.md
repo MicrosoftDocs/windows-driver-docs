@@ -1,10 +1,12 @@
 ---
 title: Captive portals
 description: Captive portals
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6f710440-3012-4bf4-92cc-3743b0f4fd34
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Captive portals

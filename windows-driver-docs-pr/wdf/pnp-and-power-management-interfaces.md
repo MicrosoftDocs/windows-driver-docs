@@ -3,13 +3,21 @@ title: PnP and Power Management Interfaces
 author: windows-driver-content
 description: PnP and Power Management Interfaces
 ms.assetid: b80228f7-50be-4551-870b-2d7e2b5db239
-keywords: ["Plug and Play WDK UMDF , power management interfaces", "PnP WDK UMDF , power management interfaces", "power management WDK UMDF , interfaces"]
+keywords:
+- Plug and Play WDK UMDF , power management interfaces
+- PnP WDK UMDF , power management interfaces
+- power management WDK UMDF , interfaces
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PnP and Power Management Interfaces
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 When a new device arrives in the system, the framework calls the [**IDriverEntry::OnDeviceAdd**](https://msdn.microsoft.com/library/windows/hardware/ff554896) method to notify the UMDF driver of the arrival and passes the [**IWDFDriver**](https://msdn.microsoft.com/library/windows/hardware/ff558893) and [**IWDFDeviceInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff556965) interfaces in the call. The driver calls the [**IWDFDriver::CreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff558899) method to create a framework device object for the device.
 

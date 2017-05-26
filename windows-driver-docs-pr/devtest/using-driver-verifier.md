@@ -2,6 +2,11 @@
 title: Using Driver Verifier
 description: Using Driver Verifier
 ms.assetid: 0b8da3f9-f22e-4ef4-afc7-5fe72dfa8043
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Driver Verifier

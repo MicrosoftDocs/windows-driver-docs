@@ -2,7 +2,27 @@
 title: Topology Filters
 description: Topology Filters
 ms.assetid: 1b3d35e9-5858-407c-9cd0-06307d82ce58
-keywords: ["audio filters WDK audio , topology filters", "topology filters WDK audio", "filters WDK audio , topology", "mixing rendering streams WDK audio", "multiplexing capture streams WDK audio", "bridge pins WDK audio", "connections WDK audio", "filter factories WDK audio", "pins WDK audio , topology filters", "nodes WDK audio", "input pins WDK audio", "output pins WDK audio", "PCCONNECTION_DESCRIPTOR array", "audio jacks WDK", "digital connectors WDK audio"]
+keywords:
+- audio filters WDK audio , topology filters
+- topology filters WDK audio
+- filters WDK audio , topology
+- mixing rendering streams WDK audio
+- multiplexing capture streams WDK audio
+- bridge pins WDK audio
+- connections WDK audio
+- filter factories WDK audio
+- pins WDK audio , topology filters
+- nodes WDK audio
+- input pins WDK audio
+- output pins WDK audio
+- PCCONNECTION_DESCRIPTOR array
+- audio jacks WDK
+- digital connectors WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Topology Filters

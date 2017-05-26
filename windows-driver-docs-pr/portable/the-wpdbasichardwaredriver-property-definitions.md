@@ -1,8 +1,11 @@
 ---
 Description: Defining the Sensor Properties
-MS-HAID: 'wpddk.the\_wpdbasichardwaredriver\_property\_definitions'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Defining the Sensor Properties
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Defining the Sensor Properties

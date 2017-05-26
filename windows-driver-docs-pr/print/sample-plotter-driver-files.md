@@ -2,14 +2,15 @@
 title: Sample Plotter Driver Files
 author: windows-driver-content
 description: Sample Plotter Driver Files
-MS-HAID:
-- 'plotter\_eceba856-f6bd-459e-9011-7c98cd42ad27.xml'
-- 'print.sample\_plotter\_driver\_files'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d72bcb9a-62d7-4deb-9d6c-7431e67be77c
-keywords: ["Plotter Driver WDK print , samples", "MSPlot WDK print , samples"]
+keywords:
+- Plotter Driver WDK print , samples
+- MSPlot WDK print , samples
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Plotter Driver Files

@@ -1,11 +1,14 @@
 ---
-Description: Supporting the Capability Commands
-MS-HAID: 'wpddk.the\_wpdservicesampledriver\_supporting\_wpd\_capability\_commands'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: Supporting the Capability Commands
+Description: Support for capability commands (WpdServiceSampleDriver sample)
+title: Support for capability commands (WpdServiceSampleDriver sample)
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Supporting the Capability Commands
+# Support for capability commands (WpdServiceSampleDriver sample)
 
 
 The sample driver supports ten capability commands for a device and 14 capability commands for a service. The code that supports the device-capability commands is found in *WpdCapabilities.cpp*. The code that supports the service-capability commands is found in *WpdServiceCapabilities.cpp*. WPD invokes these commands when an application retrieves device-capability or service-capability data. For example, when an application calls **IPortableDeviceServiceCapabilities::GetSupportedFormats**, WPD issues a corresponding WPD\_COMMAND\_SERVICE\_CAPABILITIES\_GET\_SUPPORTED\_FORMATS command to the driver to retrieve the supported formats for a given service.

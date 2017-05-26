@@ -2,14 +2,17 @@
 title: Point and Print with Packages
 author: windows-driver-content
 description: Point and Print with Packages
-MS-HAID:
-- 'prtinst\_359b78be-b7be-4dd8-a06b-d735166ddcf0.xml'
-- 'print.point\_and\_print\_with\_packages'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ea160ffc-fca3-49e4-894d-67bdc65cda38
-keywords: ["Point and Print WDK , security", "User Account Control WDK printer", "UAC WDK printer", "driver store WDK printer"]
+keywords:
+- Point and Print WDK , security
+- User Account Control WDK printer
+- UAC WDK printer
+- driver store WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Point and Print with Packages

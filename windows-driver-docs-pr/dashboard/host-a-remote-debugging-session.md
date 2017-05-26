@@ -1,13 +1,12 @@
 ---
 title: Host a Remote Debugging Session
 description: Host a Remote Debugging Session
-MS-HAID:
-- 'p\_dashboard.host\_a\_remote\_debugging\_session'
-- 'hw\_dashboard.host\_a\_remote\_debugging\_session'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b26f4037-e6c9-4510-b4b2-b718b070d201
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Host a Remote Debugging Session

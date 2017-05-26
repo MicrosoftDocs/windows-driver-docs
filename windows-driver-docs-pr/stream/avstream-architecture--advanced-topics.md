@@ -2,14 +2,14 @@
 title: AVStream Architecture Advanced Topics
 author: windows-driver-content
 description: AVStream Architecture Advanced Topics
-MS-HAID:
-- 'avsover\_0a7619e6-2480-4d99-abf5-b28fb79abbb5.xml'
-- 'stream.avstream\_architecture\_\_advanced\_topics'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 05e330f0-df6a-49bf-8033-a16388bf0f9e
-keywords: ["AVStream WDK , architecture"]
+keywords:
+- AVStream WDK , architecture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AVStream Architecture: Advanced Topics

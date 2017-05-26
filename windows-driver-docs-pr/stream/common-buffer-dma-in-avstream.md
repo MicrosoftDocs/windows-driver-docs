@@ -2,14 +2,19 @@
 title: Common Buffer DMA in AVStream
 author: windows-driver-content
 description: Common Buffer DMA in AVStream
-MS-HAID:
-- 'avsover\_449507c1-b07f-48fb-8af8-6e4cc32b3c63.xml'
-- 'stream.common\_buffer\_dma\_in\_avstream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8cbadb5a-f879-4fe0-a698-cde3b9f6df83
-keywords: ["common buffer DMA WDK AVStream", "buffers WDK AVStream", "AVStream WDK , hardware", "hardware WDK AVStream", "DMA services WDK AVStream", "Direct Memory Access WDK AVStream"]
+keywords:
+- common buffer DMA WDK AVStream
+- buffers WDK AVStream
+- AVStream WDK , hardware
+- hardware WDK AVStream
+- DMA services WDK AVStream
+- Direct Memory Access WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Common Buffer DMA in AVStream

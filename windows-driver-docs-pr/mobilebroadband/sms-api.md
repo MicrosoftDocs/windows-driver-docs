@@ -1,10 +1,12 @@
 ---
 title: SMS API
 description: SMS API
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d39d82b0-d88d-4448-a24a-22f329e95106
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SMS API

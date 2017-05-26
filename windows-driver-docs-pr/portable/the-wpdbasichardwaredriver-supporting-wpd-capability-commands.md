@@ -1,11 +1,14 @@
 ---
-Description: Supporting the Capability Commands
-MS-HAID: 'wpddk.the\_wpdbasichardwaredriver\_supporting\_wpd\_capability\_commands'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: Supporting the Capability Commands
+Description: Support for capability commands (WpdBasicHardwareDriver sample)
+title: Support for capability commands (WpdBasicHardwareDriver sample)
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Supporting the Capability Commands
+# Support for capability commands (WpdBasicHardwareDriver sample)
 
 
 The sample driver supports ten capability commands. These commands are processed initially by the **WpdCapabilities::DispatchMessage** method that, in turn, invokes a corresponding command handler. The **DispatchMessage** method and the individual handlers are found in the *WpdCapabilities.cpp* file.

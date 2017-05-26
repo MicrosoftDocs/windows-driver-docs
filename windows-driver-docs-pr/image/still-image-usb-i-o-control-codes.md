@@ -2,13 +2,12 @@
 title: Still Image USB I/O Control Codes
 author: windows-driver-content
 description: Still Image USB I/O Control Codes
-MS-HAID:
-- 'stillimg\_6b814fe6-97df-4ae2-8a7b-b8c601f8b9d1.xml'
-- 'image.still\_image\_usb\_i\_o\_control\_codes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 66a06a25-2fcb-4b14-85e2-485d2d4ac9d5
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Still Image USB I/O Control Codes

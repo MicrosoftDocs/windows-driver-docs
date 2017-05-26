@@ -2,6 +2,11 @@
 title: Passing DXGI Information at Resource Creation Time
 description: Passing DXGI Information at Resource Creation Time
 ms.assetid: d99fc77a-7192-4e45-852a-7a2ae87cc9a2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Passing DXGI Information at Resource Creation Time

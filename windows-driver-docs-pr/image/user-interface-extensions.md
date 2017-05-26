@@ -2,13 +2,12 @@
 title: User Interface Extensions
 author: windows-driver-content
 description: User Interface Extensions
-MS-HAID:
-- 'WIA\_drv\_cus\_ee92f63a-b6d1-42cd-a704-4404a02a6f73.xml'
-- 'image.user\_interface\_extensions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 06212343-4742-4dea-b750-0e9505695419
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # User Interface Extensions

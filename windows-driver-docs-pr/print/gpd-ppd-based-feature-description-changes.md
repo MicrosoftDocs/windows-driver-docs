@@ -2,13 +2,12 @@
 title: GPD/PPD-Based Feature Description Changes
 author: windows-driver-content
 description: GPD/PPD-Based Feature Description Changes
-MS-HAID:
-- 'xpsconfig\_29e46201-d574-445e-9382-3cfbad7d6c28.xml'
-- 'print.gpd\_ppd\_based\_feature\_description\_changes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 22333d78-f78f-4031-a9f3-50b43ec746b6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GPD/PPD-Based Feature Description Changes

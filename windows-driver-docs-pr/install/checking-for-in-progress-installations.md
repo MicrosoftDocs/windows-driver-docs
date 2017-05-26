@@ -2,7 +2,15 @@
 title: Checking for In-Progress Installations
 description: Checking for In-Progress Installations
 ms.assetid: 9630a22e-65df-41f1-bfaf-ef4df9ca8aed
-keywords: ["in-progress installations WDK", "checking in-progress installations", "verifying in-progress installations"]
+keywords:
+- in-progress installations WDK
+- checking in-progress installations
+- verifying in-progress installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Checking for In-Progress Installations

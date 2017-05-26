@@ -1,13 +1,12 @@
 ---
 title: Bug Management
 description: Bug Management
-MS-HAID:
-- 'p\_dashboard.bug\_management'
-- 'hw\_dashboard.bug\_management'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fd42ee6c-ce7c-4b9e-92b5-81fc09c3cd41
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bug Management

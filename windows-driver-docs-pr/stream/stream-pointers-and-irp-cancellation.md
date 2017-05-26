@@ -2,14 +2,17 @@
 title: Stream Pointers and IRP Cancellation
 author: windows-driver-content
 description: Stream Pointers and IRP Cancellation
-MS-HAID:
-- 'avsover\_9533f966-26e3-40c3-9fed-1ae2e26e6cfd.xml'
-- 'stream.stream\_pointers\_and\_irp\_cancellation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ce392496-ca07-497d-af8a-709239a7bd5e
-keywords: ["stream pointers WDK AVStream , IRP cancellations", "IRP cancellations WDK AVStream", "canceling IRPs WDK AVStream", "locked stream pointers WDK AVStream"]
+keywords:
+- stream pointers WDK AVStream , IRP cancellations
+- IRP cancellations WDK AVStream
+- canceling IRPs WDK AVStream
+- locked stream pointers WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stream Pointers and IRP Cancellation

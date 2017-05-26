@@ -2,14 +2,17 @@
 title: Axis Selection
 author: windows-driver-content
 description: Axis Selection
-MS-HAID:
-- 'di\_a7b86bc9-7508-4de4-9391-c8cc8ed063d0.xml'
-- 'hid.axis\_selection'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5ba78609-d5e7-44b1-86e8-5a677a19aadd
-keywords: ["joysticks WDK HID , axes", "virtual joystick drivers WDK HID , axes", "VJoyD WDK HID , axes", "axes WDK joysticks"]
+keywords:
+- joysticks WDK HID , axes
+- virtual joystick drivers WDK HID , axes
+- VJoyD WDK HID , axes
+- axes WDK joysticks
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Axis Selection

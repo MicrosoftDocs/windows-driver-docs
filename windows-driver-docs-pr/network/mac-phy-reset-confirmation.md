@@ -2,7 +2,13 @@
 title: MAC/PHY Reset Confirmation
 description: MAC/PHY Reset Confirmation
 ms.assetid: 2fd93b09-94b2-437f-bf4c-97c12123b806
-keywords: ["MAC/PHY reset WDK Native 802.11"]
+keywords:
+- MAC/PHY reset WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MAC/PHY Reset Confirmation

@@ -2,7 +2,14 @@
 title: What is a driver
 description: What is a driver
 ms.assetid: 8a5f51e3-ff5a-4b5d-aa9d-d94b431ee9f7
-keywords: ["define driver", "driver definition"]
+keywords:
+- define driver
+- driver definition
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # What is a driver?

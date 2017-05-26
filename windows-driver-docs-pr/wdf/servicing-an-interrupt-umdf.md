@@ -3,12 +3,17 @@ title: Servicing an Interrupt
 author: windows-driver-content
 description: Servicing an Interrupt
 ms.assetid: 79BA75B3-E10F-4AC1-A2C5-A502BF821188
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Servicing an Interrupt
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 Servicing an interrupt consists of two steps:
 

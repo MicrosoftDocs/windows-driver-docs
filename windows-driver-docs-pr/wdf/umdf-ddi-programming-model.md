@@ -3,13 +3,22 @@ title: UMDF DDI Programming Model
 author: windows-driver-content
 description: UMDF DDI Programming Model
 ms.assetid: d4bf0791-d2c4-4504-84ad-020880124363
-keywords: ["UMDF objects WDK , DDI", "framework objects WDK UMDF , DDI", "UMDF DDI WDK", "DDI WDK UMDF"]
+keywords:
+- UMDF objects WDK , DDI
+- framework objects WDK UMDF , DDI
+- UMDF DDI WDK
+- DDI WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UMDF DDI Programming Model
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The framework and the UMDF driver communicate through the UMDF DDI. The UMDF DDI is similar to the KMDF DDI except that the UMDF DDI is based on COM. Therefore, driver writers familiar with KMDF will understand UMDF.
 

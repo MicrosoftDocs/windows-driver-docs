@@ -2,7 +2,20 @@
 title: DirectDraw
 description: DirectDraw
 ms.assetid: b7f1194e-0f5e-444e-a71c-6a4a836547d9
-keywords: ["DirectDraw WDK Windows 2000 display", "Windows 2000 display driver model WDK , DirectDraw", "display driver model WDK Windows 2000 , DirectDraw", "header files WDK DirectDraw", "DirectDraw WDK Windows 2000 display , header files", "drawing WDK DirectDraw", "drawing WDK DirectDraw , header files", "graphics WDK Windows 2000 display"]
+keywords:
+- DirectDraw WDK Windows 2000 display
+- Windows 2000 display driver model WDK , DirectDraw
+- display driver model WDK Windows 2000 , DirectDraw
+- header files WDK DirectDraw
+- DirectDraw WDK Windows 2000 display , header files
+- drawing WDK DirectDraw
+- drawing WDK DirectDraw , header files
+- graphics WDK Windows 2000 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectDraw

@@ -2,14 +2,15 @@
 title: Minidriver-Supplied Halftoning
 author: windows-driver-content
 description: Minidriver-Supplied Halftoning
-MS-HAID:
-- 'nt5gpd\_b1aa78a7-33e1-4cd1-b79e-94580b149c3f.xml'
-- 'print.minidriver\_supplied\_halftoning'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 15af499a-c541-4d61-ace3-5a211574674c
-keywords: ["minidriver-supplied halftoning WDK Unidrv", "customized halftoning WDK Unidrv"]
+keywords:
+- minidriver-supplied halftoning WDK Unidrv
+- customized halftoning WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Minidriver-Supplied Halftoning

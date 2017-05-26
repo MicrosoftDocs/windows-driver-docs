@@ -2,14 +2,20 @@
 title: Data Type Wrappers
 author: windows-driver-content
 description: Data Type Wrappers
-MS-HAID:
-- 'gplfiles\_76fead8a-2258-4725-aa39-2fd58f914e0e.xml'
-- 'print.data\_type\_wrappers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8c88002b-4d0a-4e81-b50d-f765caa7cf80
-keywords: ["snapshots WDK GDL , structure", "GDL WDK , enumerations", "enumerations WDK GDL", "data types WDK GDL", "GDL WDK , data types", "parser WDK GDL , data type wrappers", "snapshots WDK GDL , data type wrapers"]
+keywords:
+- snapshots WDK GDL , structure
+- GDL WDK , enumerations
+- enumerations WDK GDL
+- data types WDK GDL
+- GDL WDK , data types
+- parser WDK GDL , data type wrappers
+- snapshots WDK GDL , data type wrapers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Data Type Wrappers

@@ -2,14 +2,15 @@
 title: Block Macros
 author: windows-driver-content
 description: Block Macros
-MS-HAID:
-- 'nt5gpd\_862ce812-d388-44a3-98a6-3500e0040aa1.xml'
-- 'print.block\_macros'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: da2f6161-072a-4d3c-94a8-1020520de524
-keywords: ["block macros WDK GPD files", "referencing macros"]
+keywords:
+- block macros WDK GPD files
+- referencing macros
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Block Macros

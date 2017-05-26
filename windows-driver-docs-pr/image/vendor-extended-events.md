@@ -2,13 +2,12 @@
 title: Vendor-Extended Events
 author: windows-driver-content
 description: Vendor-Extended Events
-MS-HAID:
-- 'WIA\_drv\_cam\_563bb5a2-6e90-4c8a-851f-2d9038ae420b.xml'
-- 'image.vendor\_extended\_events'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 00131b75-3b15-46f8-b4da-1e1593afb3c0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Vendor-Extended Events

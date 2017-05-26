@@ -2,10 +2,12 @@
 title: Print Schema keywords for 3D manufacturing
 author: windows-driver-content
 description: The Print Schema keywords for 3D manufacturing is a supplemental specification to the Print Schema Specification.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: DC54C326-31AE-43C9-AF0D-A3A64DAEF1F2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Schema keywords for 3D manufacturing

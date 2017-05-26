@@ -2,14 +2,14 @@
 title: Supporting Point and Print
 author: windows-driver-content
 description: Supporting Point and Print
-MS-HAID:
-- 'prtinst\_61a2669c-b296-4e83-9e57-c4d14a0b4b8d.xml'
-- 'print.supporting\_point\_and\_print'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a41bed5e-a006-4b9e-aa71-d2bcd154fae2
-keywords: ["Point and Print WDK"]
+keywords:
+- Point and Print WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Point and Print

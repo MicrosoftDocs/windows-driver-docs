@@ -2,14 +2,21 @@
 title: Data Flow Using Isochronous Pipes
 author: windows-driver-content
 description: Data Flow Using Isochronous Pipes
-MS-HAID:
-- 'usbcmdds\_df2cba6f-05d7-4c1c-a1cb-e9a24071f039.xml'
-- 'stream.data\_flow\_using\_isochronous\_pipes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a66f4191-53ce-4ca2-aae7-8fb24a1a9a16
-keywords: ["isochronous pipes WDK USBCAMD2", "Windows 2000 Kernel Streaming Model WDK , USBCAMD2 minidriver library", "Streaming Model WDK Windows 2000 Kernel , USBCAMD2 minidriver library", "Kernel Streaming Model WDK , USBCAMD2 minidriver library", "USBCAMD2 minidriver library WDK Windows 2000 Kernel Streaming", "USB-based streaming cameras WDK USBCAMD2", "cameras WDK USBCAMD2", "data flow WDK USBCAMD2"]
+keywords:
+- isochronous pipes WDK USBCAMD2
+- Windows 2000 Kernel Streaming Model WDK , USBCAMD2 minidriver library
+- Streaming Model WDK Windows 2000 Kernel , USBCAMD2 minidriver library
+- Kernel Streaming Model WDK , USBCAMD2 minidriver library
+- USBCAMD2 minidriver library WDK Windows 2000 Kernel Streaming
+- USB-based streaming cameras WDK USBCAMD2
+- cameras WDK USBCAMD2
+- data flow WDK USBCAMD2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Data Flow Using Isochronous Pipes

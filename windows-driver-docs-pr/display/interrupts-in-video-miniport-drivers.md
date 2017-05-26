@@ -2,7 +2,15 @@
 title: Interrupts in Video Miniport Drivers
 description: Interrupts in Video Miniport Drivers
 ms.assetid: bf84a3fb-860a-4647-ac34-93f3a22b166b
-keywords: ["video miniport drivers WDK Windows 2000 , interrupts", "interrupts WDK video miniport", "HwVidInterrupt"]
+keywords:
+- video miniport drivers WDK Windows 2000 , interrupts
+- interrupts WDK video miniport
+- HwVidInterrupt
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Interrupts in Video Miniport Drivers

@@ -2,14 +2,15 @@
 title: Starting a BDA Minidriver
 author: windows-driver-content
 description: Starting a BDA Minidriver
-MS-HAID:
-- 'bdadg\_26ed5e0c-c521-4011-8a2b-2e51b05dc25d.xml'
-- 'stream.starting\_a\_bda\_minidriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c71e1483-756c-4e98-a413-64ff02ee4a9b
-keywords: ["BDA minidrivers WDK AVStream , starting", "starting BDA minidrivers WDK AVStream"]
+keywords:
+- BDA minidrivers WDK AVStream , starting
+- starting BDA minidrivers WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Starting a BDA Minidriver

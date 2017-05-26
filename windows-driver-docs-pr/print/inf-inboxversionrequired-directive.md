@@ -2,13 +2,12 @@
 title: INF InboxVersionRequired Directive
 author: windows-driver-content
 description: INF InboxVersionRequired Directive
-MS-HAID:
-- 'prtinst\_6e5800cd-7d4e-4b8c-aabb-0172737d9778.xml'
-- 'print.inf\_inboxversionrequired\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 75a07ca7-d279-4815-b644-10b58753f885
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF InboxVersionRequired Directive

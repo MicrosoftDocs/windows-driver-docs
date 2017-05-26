@@ -1,13 +1,12 @@
 ---
 title: Trusted certificates
 description: Trusted certificates
-MS-HAID:
-- 'p\_dashboard.trusted\_certificates'
-- 'hw\_dashboard.trusted\_certificates'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9323b7dd-7311-479e-bb00-b4a6ee71f27f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Trusted certificates

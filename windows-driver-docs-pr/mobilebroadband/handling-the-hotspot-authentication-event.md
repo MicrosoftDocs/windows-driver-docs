@@ -1,10 +1,12 @@
 ---
 title: Handling the hotspot authentication event
 description: Handling the hotspot authentication event
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e293757e-de4b-4669-a6c4-a57fff157cf4
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling the hotspot authentication event

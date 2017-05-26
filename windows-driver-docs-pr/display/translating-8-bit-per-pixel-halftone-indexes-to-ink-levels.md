@@ -2,7 +2,20 @@
 title: Translating 8-Bit-Per-Pixel Halftone Indexes to Ink Levels
 description: Translating 8-Bit-Per-Pixel Halftone Indexes to Ink Levels
 ms.assetid: 5859b379-4e03-4cd8-836d-9a0b068b47c0
-keywords: ["GDI WDK Windows 2000 display , halftoning", "graphics drivers WDK Windows 2000 display , halftoning", "drawing WDK GDI , halftoning", "halftoning WDK GDI", "8-bit-per-pixel CMY mask modes WDK GDI", "GenerateInkLevels", "INKLEVELS", "translating 8-bit-per-pixel halftone indexes WDK GDI"]
+keywords:
+- GDI WDK Windows 2000 display , halftoning
+- graphics drivers WDK Windows 2000 display , halftoning
+- drawing WDK GDI , halftoning
+- halftoning WDK GDI
+- 8-bit-per-pixel CMY mask modes WDK GDI
+- GenerateInkLevels
+- INKLEVELS
+- translating 8-bit-per-pixel halftone indexes WDK GDI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Translating 8-Bit-Per-Pixel Halftone Indexes to Ink Levels

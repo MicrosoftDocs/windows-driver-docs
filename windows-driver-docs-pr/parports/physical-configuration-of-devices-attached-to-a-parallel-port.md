@@ -2,14 +2,17 @@
 title: Physical Configuration of Devices Attached to a Parallel Port
 author: windows-driver-content
 description: Physical Configuration of Devices Attached to a Parallel Port
-MS-HAID:
-- 'pcppd\_f41f7a80-ebf1-423d-b29c-a773c8037e3d.xml'
-- 'parports.physical\_configuration\_of\_devices\_attached\_to\_a\_parallel\_port'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ae90fcc6-7ea8-4cb1-89a1-1fbf1ad5c05e
-keywords: ["IEEE 1284 WDK", "parallel ports WDK , device configurations", "daisy chain devices WDK", "parallel devices WDK , physical configurations"]
+keywords:
+- IEEE 1284 WDK
+- parallel ports WDK , device configurations
+- daisy chain devices WDK
+- parallel devices WDK , physical configurations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Physical Configuration of Devices Attached to a Parallel Port

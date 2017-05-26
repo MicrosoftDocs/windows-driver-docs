@@ -2,7 +2,18 @@
 title: Monitor INF File Sections
 description: Monitor INF File Sections
 ms.assetid: f5208b6a-00b0-446e-82f7-eb26082ed9a5
-keywords: ["monitor INF file sections WDK Windows 2000 display", "INF files WDK Windows 2000 display", "INF writer-defined sections WDK Windows 2000 display", "DDInstall section WDK Windows 2000 display", "Models section WDK Windows 2000 display", "SourceDisksFiles section WDK Windows 2000 display"]
+keywords:
+- monitor INF file sections WDK Windows 2000 display
+- INF files WDK Windows 2000 display
+- INF writer-defined sections WDK Windows 2000 display
+- DDInstall section WDK Windows 2000 display
+- Models section WDK Windows 2000 display
+- SourceDisksFiles section WDK Windows 2000 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Monitor INF File Sections

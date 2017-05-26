@@ -2,14 +2,17 @@
 title: Windows Hardware Error Architecture Definitions
 author: windows-driver-content
 description: Windows Hardware Error Architecture Definitions
-MS-HAID:
-- 'whea\_6bd8064d-3bed-46ba-ad76-41d29e217d23.xml'
-- 'whea.windows\_hardware\_error\_architecture\_definitions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4de5ead1-aa17-4c14-9afc-bc0d9689a13e
-keywords: ["Windows Hardware Error Architecture WDK , terminology", "WHEA WDK , terminology", "hardware errors WDK WHEA , terminology", "errors WDK WHEA , terminology"]
+keywords:
+- Windows Hardware Error Architecture WDK , terminology
+- WHEA WDK , terminology
+- hardware errors WDK WHEA , terminology
+- errors WDK WHEA , terminology
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Hardware Error Architecture Definitions

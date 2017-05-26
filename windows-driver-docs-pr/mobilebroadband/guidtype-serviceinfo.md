@@ -1,14 +1,15 @@
 ---
-title: GUIDType
-description: GUIDType
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+title: GUIDType (ServiceInfo)
+description: GUIDType (ServiceInfo)
 ms.assetid: a08d4c7c-c282-4870-b836-6788ffa2d088
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# GUIDType
-
+# GUIDType (ServiceInfo)
 
 The GUIDType XML simple type specifies a GUID.
 

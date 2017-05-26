@@ -2,14 +2,15 @@
 title: Filter Specific Allocators
 author: windows-driver-content
 description: Filter Specific Allocators
-MS-HAID:
-- 'ks-overview\_124e0e0b-6da4-45bd-b350-ad064991bf30.xml'
-- 'stream.filter\_specific\_allocators'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 581f3000-4e66-4ba0-979d-b187115a30b2
-keywords: ["filter specific allocators WDK kernel streaming", "filter allocators WDK kernel streaming"]
+keywords:
+- filter specific allocators WDK kernel streaming
+- filter allocators WDK kernel streaming
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Filter Specific Allocators

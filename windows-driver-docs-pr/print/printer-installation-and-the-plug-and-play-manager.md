@@ -2,14 +2,16 @@
 title: Printer Installation and the Plug and Play Manager
 author: windows-driver-content
 description: Printer Installation and the Plug and Play Manager
-MS-HAID:
-- 'prtinst\_7fbd6efd-3969-4657-8430-e0c6b6046b84.xml'
-- 'print.printer\_installation\_and\_the\_plug\_and\_play\_manager'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1edc92f1-fcd9-4af0-957d-cd7ff2e40125
-keywords: ["Plug and Play manager WDK print", "duplicate installation detection WDK print", "detecting duplicate printer installations"]
+keywords:
+- Plug and Play manager WDK print
+- duplicate installation detection WDK print
+- detecting duplicate printer installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Installation and the Plug and Play Manager

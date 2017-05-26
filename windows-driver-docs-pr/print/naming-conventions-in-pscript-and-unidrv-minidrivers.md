@@ -2,14 +2,15 @@
 title: Naming Conventions in Pscript and Unidrv Minidrivers
 author: windows-driver-content
 description: Naming Conventions in Pscript and Unidrv Minidrivers
-MS-HAID:
-- 'autocfg\_a075d809-3acb-45de-8e2a-8d978f6a6561.xml'
-- 'print.naming\_conventions\_in\_pscript\_and\_unidrv\_minidrivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d15c72e9-781d-4c71-bcf5-b3d08ec603ca
-keywords: ["in-box autoconfiguration support WDK printer , naming conventions", "names WDK printer autoconfig"]
+keywords:
+- in-box autoconfiguration support WDK printer , naming conventions
+- names WDK printer autoconfig
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Naming Conventions in Pscript and Unidrv Minidrivers

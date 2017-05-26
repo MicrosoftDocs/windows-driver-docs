@@ -2,14 +2,16 @@
 title: GDL Template Data Types
 author: windows-driver-content
 description: GDL Template Data Types
-MS-HAID:
-- 'gplfiles\_1c175413-0143-4be0-beae-1335aaa94bbf.xml'
-- 'print.gdl\_template\_data\_types'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9dd7ff66-9e50-490d-b7a4-76d645e2b9a5
-keywords: ["templates WDK GDL , data types", "GDL WDK , templates", "data types WDK GDL"]
+keywords:
+- templates WDK GDL , data types
+- GDL WDK , templates
+- data types WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Template Data Types
