@@ -97,7 +97,7 @@ Windows IP Configuration
 
 Ethernet adapter Ethernet:
    Connection-specific DNS Suffix  . :
-   Link-local IPv6 Address . . . . . : fe80::c8b6:db13:d1e8:b13b%3
+   Link-local IPv6 Address . . . . . : fe80::c8b6:db13:d1e8:b13b3
    Autoconfiguration IPv4 Address. . : 169.182.1.1
    Subnet Mask . . . . . . . . . . . : 255.255.0.0
    Default Gateway . . . . . . . . . :
@@ -192,6 +192,7 @@ C:\> Cd C:\Program Files (x86)\Windows Kits\10\Debuggers\x64
 ```
 
 2. Launch WinDbg with remote user debug using the following command. The value for the key and port match what you set earlier using BCDEdit on the target.
+
 ```cmd
 C:\> WinDbg –k net:port=50010,key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
 ```
@@ -225,6 +226,7 @@ Some debug commands display text using Debugger Markup Language that you can cli
 
 1. Use Ctrl+Break (Scroll Lock) in WinDBg to break into the code running on the target system. It may take a bit of time for the target system to respond.
 2. Type the following command to enable DML in the Debugger Command window.
+
 ```cmd
 0: kd> .prefer_dml 1
 DML versions of commands on by default
@@ -246,6 +248,7 @@ The Debugger help file will display help for the **.prefer\_dml** command.
 **Display the version of Windows on the target system**
 
 5. Display detailed version information on the target system by typing the [**vertarget (Show Target Computer Version)**](vertarget--show-target-computer-version-.md) command in the WinDbg window.
+
 ```cmd
 0: kd> vertarget
 Windows 10 Kernel Version 9926 MP (4 procs) Free x64
@@ -260,6 +263,7 @@ System Uptime: 0 days 01:31:58.931
 **List the loaded modules**
 
 6. You can verify that you are working with the right kernel-mode process by displaying the loaded modules by typing the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md) command in the WinDbg window.
+
 ```cmd
 0: Kd> lm
 start             end                 module name
@@ -553,7 +557,7 @@ set ENABLE_OPTIMIZER=0
 
 4.  The **!lmi** extension displays detailed information about a module. Type **!lmi tabletaudiosample**. Your output should be similar to the text shown below.
 
-    ```syntax  cmd
+    ```cmd
     0: kd> !lmi tabletaudiosample
     Loaded Module Info: [tabletaudiosample] 
              Module: tabletaudiosample
@@ -576,9 +580,9 @@ set ENABLE_OPTIMIZER=0
                      C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\sym\TabletAudioSample.pdb\5395F0C5AE504C56AD31DD5473BD318F1\TabletAudioSample.pdb
     ```
 
-5.  5. Use the **!dh** extension to display header information as shown below.
+5.  Use the **!dh** extension to display header information as shown below.
 
-    ```syntax  cmd
+    ```cmd
     0: kd> !dh tabletaudiosample 
 
     File Type: EXECUTABLE IMAGE
@@ -867,12 +871,12 @@ To set a breakpoint using a debug command, use one of the following **b** comman
 
         maxObjects = g_MaxMiniports;
         
-#ifdef SYSVAD_BTH_BYPASS
+        #ifdef SYSVAD_BTH_BYPASS
         // 
         // Allow three (3) Bluetooth hands-free profile devices.
         //
         maxObjects += g_MaxBthHfpMiniports * 3; 
-#endif // SYSVAD_BTH_BYPASS
+        #endif // SYSVAD_BTH_BYPASS
 
         // Tell the class driver to add the device.
         //
@@ -1111,7 +1115,6 @@ Tip: You may want to keep a copy of the Sysvad driver with out the breakpoint ad
                 maxObjects,
                 0
             );
-
 
         return ntStatus;
     } // AddDevice
@@ -1498,9 +1501,6 @@ PROCESS ffffe001d147c840
 ```
 
 Note that one of the threads associated with this process is in the RUNNING state. This thread was supporting the playing of the media clip when the breakpoint was hit.
-
-```cmd
-```
 
 Use the **!process 0 0** command to display summary information for all processes. In the command output use CTRL+F to locate the process ID for the process associated with the audiodg.exe image. In the example shown below, the process ID is *ffffe001d147c840*.
 
