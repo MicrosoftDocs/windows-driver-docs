@@ -59,7 +59,7 @@ The following example shows how you might use a software component to install a 
 
 ### Driver package INF file
 
-``` syntax
+```
 [Version]
 Signature   = "$WINDOWS NT$"
 Class       = Display
@@ -116,7 +116,7 @@ ContosoGrfx.SvcDesc = "Contoso Graphics Card Driver"
 
 ### Software component INF file
 
-``` syntax
+```
 [Version]
 Signature   = "$WINDOWS NT$"
 Class       = SoftwareComponent
