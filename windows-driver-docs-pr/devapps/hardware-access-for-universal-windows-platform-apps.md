@@ -21,7 +21,7 @@ ms.technology: windows-devices
 
 This section describes how to pair a device-specific [Universal Windows Platform
 (UWP)](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide)
-application with a device.
+application with a device on Windows 10.
 
 After the app is installed, you can easily update it through the Windows Store.
 
