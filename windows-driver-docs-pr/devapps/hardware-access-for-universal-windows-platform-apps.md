@@ -18,28 +18,14 @@ ms.technology: windows-devices
 # Hardware access for Universal Windows Platform apps
 
 ## Overview
-The extensibility of the Windows platform has led to the creation of a
-diverse ecosystem of device builders where innovative differentiation is
-key to success for these device manufacturers, which enables unique
-hardware and software experiences. [Universal Windows Platform
+
+This section describes how to pair a device-specific [Universal Windows Platform
 (UWP)](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide)
-applications create a broad range of scenarios such as to control
-hardware device settings and provide a diverse app platform available on
-any device running Windows 10.
+application with a device.
 
-Device and System vendors often provide their users with applications
-that allow them to have some control over the functionality of their
-hardware; previously apps with such functionality were not made as UWP
-apps as they were unable to get access to system software from the app
-container. They would come pre-installed or become installed with a
-driver by a Windows Update or as an installation downloaded from the
-internet. A problem would be that these applications couldn’t update
-outside of an updater app, often required a co-installer, and could very
-easily get out of sync.
+After the app is installed, you can easily update it through the Windows Store.
 
-For more information about developing specific types of UWP apps, see
-[Develop UWP
-apps](https://developer.microsoft.com/en-us/windows/apps/develop)**.**
+To associate the UWP app with your device, you'll need to create a custom capability.
 
 ## In this Section
 |Topic|Description|
