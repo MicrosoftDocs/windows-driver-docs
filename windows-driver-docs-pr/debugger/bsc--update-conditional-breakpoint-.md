@@ -80,7 +80,7 @@ If the *CommandString* is not specified, any commands already set on the breakpo
 The same effect can be achieved by using the [**bs (Update Breakpoint Command)**](bs--update-breakpoint-command-.md) command with the following syntax:
 
 ```
-bs ID "j Condition &#39;CommandString&#39;; &#39;gc&#39;"
+bs ID "j Condition 'CommandString'; 'gc'"
 ```
 
  

@@ -22,9 +22,7 @@ api_type:
 The **.scriptload** command will load and execute the specified script file.
 
 ```
-    .scriptload ScriptFile
-     
-   
+.scriptload ScriptFile
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -64,7 +62,7 @@ The .scriptload command will load a script and execute a script. The following c
 
 ```
 0:000> .scriptload C:\WinDbg\Scripts\TestScript.js
-JavaScript script successfully loaded from &#39;C:\WinDbg\Scripts\TestScript.js&#39;
+JavaScript script successfully loaded from 'C:\WinDbg\Scripts\TestScript.js'
 ```
 
 If there are any errors in the initial load and execution of the script, the errors will be displayed to console, including the line number and error message.
@@ -72,7 +70,7 @@ If there are any errors in the initial load and execution of the script, the err
 ```
 0:000:x86> .scriptload C:\WinDbg\Scripts\TestScript.js
 0:000> "C:\WinDbg\Scripts\TestScript.js" (line 11 (@ 1)): Error (0x80004005): Syntax error
-Error: Unable to execute JavaScript script &#39;C:\WinDbg\Scripts\TestScript.js&#39;
+Error: Unable to execute JavaScript script 'C:\WinDbg\Scripts\TestScript.js'
 ```
 
 The .scriptload command will execute the following in a JavaScript.

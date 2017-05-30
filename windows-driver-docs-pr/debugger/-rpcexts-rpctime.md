@@ -22,7 +22,7 @@ api_type:
 The **!rpcexts.rpctime** extension displays the current system time.
 
 ```
-    !rpcexts.rpctime 
+!rpcexts.rpctime 
 ```
 
 ## <span id="ddk__rpcexts_rpctime_dbg"></span><span id="DDK__RPCEXTS_RPCTIME_DBG"></span>

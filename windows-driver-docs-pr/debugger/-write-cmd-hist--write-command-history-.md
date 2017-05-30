@@ -22,7 +22,7 @@ api_type:
 The **.write\_cmd\_hist** command writes the entire history of the Debugger Command window to a file.
 
 ```
-    .write_cmd_hist Filename 
+.write_cmd_hist Filename 
 ```
 
 ## <span id="ddk_meta_cmd_hist_write_command_history_dbg"></span><span id="DDK_META_CMD_HIST_WRITE_COMMAND_HISTORY_DBG"></span>Parameters

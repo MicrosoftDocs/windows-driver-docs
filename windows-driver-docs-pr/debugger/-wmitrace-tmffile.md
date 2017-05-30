@@ -22,7 +22,7 @@ api_type:
 The **!wmitrace.tmffile** extension specifies a trace message format (TMF) file. The file specified by this extension is used to format trace messages displayed or written by other WMI tracing extensions.
 
 ```
-    !wmitrace.tmffile TMFFile 
+!wmitrace.tmffile TMFFile 
 ```
 
 ## <span id="ddk__wmitrace_tmffile_dbg"></span><span id="DDK__WMITRACE_TMFFILE_DBG"></span>Parameters

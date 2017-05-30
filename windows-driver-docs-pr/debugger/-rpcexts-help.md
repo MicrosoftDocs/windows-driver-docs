@@ -22,7 +22,7 @@ api_type:
 The **!rpcexts.help** extension displays a Help text in the Command Prompt window showing all Rpcexts.dll extension commands.
 
 ```
-    !rpcexts.help 
+!rpcexts.help 
 ```
 
 ## <span id="ddk__rpcexts_help_dbg"></span><span id="DDK__RPCEXTS_HELP_DBG"></span>

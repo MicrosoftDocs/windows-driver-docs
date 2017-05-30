@@ -30,7 +30,7 @@ User-Mode
 Kernel-Mode
 
 ```
-    pa [r] [= StartAddress] StopAddress ["Command"]
+pa [r] [= StartAddress] StopAddress ["Command"]
 ```
 
 ## <span id="ddk_cmd_step_to_address_dbg"></span><span id="DDK_CMD_STEP_TO_ADDRESS_DBG"></span>Parameters

@@ -22,7 +22,7 @@ api_type:
 The **!wmitrace.logdump** extension displays the contents of the trace buffers for a trace session. You can limit the display to trace messages from specified providers.
 
 ```
-    !wmitrace.logdump [-t Count] [{LoggerID|LoggerName} [GUIDFile]] 
+!wmitrace.logdump [-t Count] [{LoggerID|LoggerName} [GUIDFile]] 
 ```
 
 ## <span id="ddk__wmitrace_logdump_dbg"></span><span id="DDK__WMITRACE_LOGDUMP_DBG"></span>Parameters

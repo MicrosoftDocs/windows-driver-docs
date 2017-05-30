@@ -22,7 +22,7 @@ api_type:
 The **!storagekd.storlogirp** extension displays the Storport’s internal log entries for the adapter filtered for the IRP provided.
 
 ```
-    !storagekd.storlogirp <Address> <irp> [<starting_entry> [<ending_entry>]] [L <count>]  
+!storagekd.storlogirp <Address> <irp> [<starting_entry> [<ending_entry>]] [L <count>]  
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

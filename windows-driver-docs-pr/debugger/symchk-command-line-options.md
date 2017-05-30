@@ -47,8 +47,6 @@ symchk [/v | /q ] /om Manifest /ih HotFixFile
 symchk [/v | /q ] /om Manifest /ip ProcessFile
 
 symchk [/v | /q ] /om Manifest /it TextFileList
-
-   
 ```
 
 ## <span id="ddk_symchk_command_line_options_dtoolq"></span><span id="DDK_SYMCHK_COMMAND_LINE_OPTIONS_DTOOLQ"></span>Parameters

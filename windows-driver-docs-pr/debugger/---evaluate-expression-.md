@@ -82,7 +82,7 @@ Evaluate expression: 0 = 00000000
 0:001> ? $spat( "${AliasName}", "*name*" )
 Evaluate expression: 0 = 00000000
 0:001> ? $spat( "c:\dir\", "*filename*" )
-Syntax error at &#39;( "c:\dir\", "*filename*" )
+Syntax error at '( "c:\dir\", "*filename*" )
 ```
 
 In the first two examples, even though the string does match the pattern, the evaluator is returning a value of **FALSE**. In the third, the evaluator cannot make a comparison because the string ends in a backslash ( \\ ), and so the **\\"** is translated by the evaluator.

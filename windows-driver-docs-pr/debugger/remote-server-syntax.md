@@ -22,9 +22,7 @@ api_type:
 To start the server side of the Remote tool, use the following syntax at the command line.
 
 ```
-    remote /s Command SessionName [/f Color] [/b] [/u User [/u User...]] [/ud User [/ud User...]] [/v | /-v]
-
-   
+remote /s Command SessionName [/f Color] [/b] [/u User [/u User...]] [/ud User [/ud User...]] [/v | /-v]
 ```
 
 ## <span id="ddk_remote_server_syntax_dtools"></span><span id="DDK_REMOTE_SERVER_SYNTAX_DTOOLS"></span>Parameters

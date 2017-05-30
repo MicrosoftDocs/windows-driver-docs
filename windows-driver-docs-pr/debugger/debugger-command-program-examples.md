@@ -28,7 +28,7 @@ The following example uses the [**.foreach**](-foreach.md) token to search for W
 
 The following example uses the [**.foreach**](-foreach.md) token to search for WORD values of 5a4d. For each 5a4d value that is found, the debugger displays 8 DWORD values, starting 4 bytes prior to the address where the 5a4d DWORD was found.
 
-```VisualBasic
+```
 0:000> .foreach (place { s-[1]w 77000000 L?4000000 5a4d }) { dc place -0x4 L8 } 
 ```
 

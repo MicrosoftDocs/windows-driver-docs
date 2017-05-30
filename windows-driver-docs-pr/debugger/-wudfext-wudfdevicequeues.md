@@ -73,7 +73,7 @@ Queue: 1 (!wudfqueue 0x000f3500)
       IWDFIoRequest 0x000faa50     CWdfIoRequest 0x000fa9d8
 ...
       IWDFIoRequest 0x000fa678     CWdfIoRequest 0x000fa600
-    Driver&#39;s callback interfaces.
+    Driver's callback interfaces.
       IQueueCallbackRead 0x000f343c
       IQueueCallbackDeviceIoControl 0x000f3438
       IQueueCallbackWrite 0x000f3440

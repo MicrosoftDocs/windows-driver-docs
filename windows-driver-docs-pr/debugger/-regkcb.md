@@ -22,7 +22,7 @@ api_type:
 The **!regkcb** extension displays a registry key control block.
 
 ```
-    !regkcb Address 
+!regkcb Address 
 ```
 
 ## <span id="ddk__regkcb_dbg"></span><span id="DDK__REGKCB_DBG"></span>Parameters

@@ -22,7 +22,7 @@ api_type:
 The **!wmitrace.stop** extension stops the Event Tracing for Windows (ETW) logger on the target computer.
 
 ```
-    !wmitrace.stop { LoggerID | LoggerName } 
+!wmitrace.stop { LoggerID | LoggerName } 
 ```
 
 ## <span id="ddk__wmitrace_strdump_dbg"></span><span id="DDK__WMITRACE_STRDUMP_DBG"></span>Parameters

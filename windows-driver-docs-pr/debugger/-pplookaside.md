@@ -22,6 +22,7 @@ api_type:
 The **!pplookaside** command displays [Lookaside Lists](https://msdn.microsoft.com/library/windows/hardware/ff565416) for processors in the target computer.
 
 ```
+!pplookaside <address>
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

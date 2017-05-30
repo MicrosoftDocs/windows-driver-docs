@@ -22,7 +22,7 @@ api_type:
 The **!rpcexts.getthreadinfo** extension searches the system's RPC state information for thread information.
 
 ```
-    !rpcexts.getthreadinfo ProcessID [ThreadID] 
+!rpcexts.getthreadinfo ProcessID [ThreadID] 
 !rpcexts.getthreadinfo -? 
 ```
 

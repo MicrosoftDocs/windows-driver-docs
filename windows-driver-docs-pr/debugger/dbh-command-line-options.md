@@ -22,7 +22,7 @@ api_type:
 The DBH command line uses the following syntax.
 
 ```
-    dbh [Options] -p:PID [Command] 
+dbh [Options] -p:PID [Command] 
 
 dbh [Options] ExecutableName [Command] 
 
@@ -31,8 +31,6 @@ dbh [Options] SymbolFileName [Command]
 dbh -? 
 
 dbh -??  
-
-   
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

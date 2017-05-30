@@ -22,7 +22,7 @@ api_type:
 The **!wmitrace.strdump** extension displays the WMI event trace structures. You can limit the display to the structures for a particular trace session.
 
 ```
-    !wmitrace.strdump [ LoggerID | LoggerName ] 
+!wmitrace.strdump [ LoggerID | LoggerName ] 
 ```
 
 ## <span id="ddk__wmitrace_strdump_dbg"></span><span id="DDK__WMITRACE_STRDUMP_DBG"></span>Parameters

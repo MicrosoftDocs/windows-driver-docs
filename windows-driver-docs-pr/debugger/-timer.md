@@ -22,7 +22,7 @@ api_type:
 The **!timer** extension displays a detailed listing of all system timer use.
 
 ```
-    !timer 
+!timer 
 ```
 
 ## <span id="ddk__timer_dbg"></span><span id="DDK__TIMER_DBG"></span>

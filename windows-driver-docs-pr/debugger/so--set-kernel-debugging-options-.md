@@ -22,7 +22,7 @@ api_type:
 The **so** command sets or displays the kernel debugging options.
 
 ```
-    so [Options] 
+so [Options] 
 ```
 
 ## <span id="ddk_cmd_set_kernel_debugging_options_dbg"></span><span id="DDK_CMD_SET_KERNEL_DEBUGGING_OPTIONS_DBG"></span>Parameters

@@ -22,7 +22,7 @@ api_type:
 The **!ubp** extension sets a breakpoint in user space.
 
 ```
-    !ubp Address 
+!ubp Address 
 ```
 
 ## <span id="ddk__ubp_dbg"></span><span id="DDK__UBP_DBG"></span>Parameters

@@ -142,7 +142,7 @@ Likewise, if you decided to set up your host and target computers for debugging 
     ```
     0:000>0: kd> bu nt!MmCreateProcessAddressSpace
     0: kd> bl
-     0 e fffff800`02e03904     0001 (0001) nt!MmCreateProcessAddressSpace
+    0 e fffff800`02e03904     0001 (0001) nt!MmCreateProcessAddressSpace
     ```
 
     Enter [**g**](http://go.microsoft.com/fwlink/p?linkid=399388) to let the target computer run.

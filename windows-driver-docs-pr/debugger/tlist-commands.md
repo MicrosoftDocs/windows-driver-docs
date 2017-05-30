@@ -22,9 +22,7 @@ api_type:
 The syntax of the TList command is as follows:
 
 ```
-    tlist [/p ProcessName | PID | Pattern | /t | /c | /e | /k | /m [Module] | /s | /v
-
-   
+tlist [/p ProcessName | PID | Pattern | /t | /c | /e | /k | /m [Module] | /s | /v
 ```
 
 ## <span id="ddk_tlist_commands_dtools"></span><span id="DDK_TLIST_COMMANDS_DTOOLS"></span>Parameters

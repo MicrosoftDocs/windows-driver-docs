@@ -22,7 +22,7 @@ api_type:
 The **wt** command runs through the whole function and then displays statistics, when you execute this command at the beginning of a function call.
 
 ```
-    wt [WatchOptions] [= StartAddress] [EndAddress] 
+wt [WatchOptions] [= StartAddress] [EndAddress] 
 ```
 
 ## <span id="ddk_cmd_trace_and_watch_data_dbg"></span><span id="DDK_CMD_TRACE_AND_WATCH_DATA_DBG"></span>Parameters

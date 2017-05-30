@@ -24,7 +24,7 @@ The **m** command copies the contents of memory from one location to another.
 Do not confuse this command with the [**~m (Resume Thread)**](-m--resume-thread-.md) command.
 
 ```
-    m Range Address 
+m Range Address 
 ```
 
 ## <span id="ddk_cmd_move_memory_dbg"></span><span id="DDK_CMD_MOVE_MEMORY_DBG"></span>Parameters

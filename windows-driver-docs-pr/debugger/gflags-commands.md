@@ -26,81 +26,61 @@ You can use the GFlags commands and the [Global Flags Dialog Box](global-flags-d
 To open the GFlags dialog box:
 
 ```
-    gflags
-
-   
+gflags
 ```
 
 To set or clear global flags in the registry:
 
 ```
-    gflags /r [{+ | -}Flag [{+ | -}Flag...]]
-
-   
+gflags /r [{+ | -}Flag [{+ | -}Flag...]]
 ```
 
 To set or clear global flags for the current session:
 
 ```
-    gflags /k [{+ | -}Flag [{+ | -}Flag...]]
-
-   
+gflags /k [{+ | -}Flag [{+ | -}Flag...]]
 ```
 
 To set or clear global flags for an image file:
 
 ```
-    gflags /i ImageFile [{+ | -}Flag [{+ | -}Flag...]]
+gflags /i ImageFile [{+ | -}Flag [{+ | -}Flag...]]
 gflags /i ImageFile /tracedb SizeInMB
-
-   
 ```
 
 To set or clear the Special Pool feature (Windows Vista and later)
 
 ```
-    gflags {/r | /k} {+ | -}spp {PoolTag | 0xSize}
-
-   
+gflags {/r | /k} {+ | -}spp {PoolTag | 0xSize}
 ```
 
 To enable or disable the Object Reference Tracing feature (Windows Vista and later)
 
 ```
-    gflags {/ro | /ko} [/p] [/i ImageFile | /t PoolTag;[PoolTag...]]
-
-   
+gflags {/ro | /ko} [/p] [/i ImageFile | /t PoolTag;[PoolTag...]]
 ```
 
 ```
-    gflags {/ro | /ko} /d
-
-   
+gflags {/ro | /ko} /d
 ```
 
 To enable and configure page heap verification:
 
 ```
-    gflags /p /enable ImageFile  [ /full [/backwards] | /random Probability | /size SizeStart SizeEnd | /address AddressStart AddressEnd | /dlls DLL [DLL...] ] 
+gflags /p /enable ImageFile  [ /full [/backwards] | /random Probability | /size SizeStart SizeEnd | /address AddressStart AddressEnd | /dlls DLL [DLL...] ] 
 [/debug ["DebuggerCommand"] | /kdebug] [/unaligned] [/notraces] [/fault Rate [TimeOut]] [/leaks] [/protect] [/no_sync] [/no_lock_checks] 
-
-   
 ```
 
 To disable page heap verification:
 
 ```
-    gflags /p [/disable ImageFile] [/?]
-
-   
+gflags /p [/disable ImageFile] [/?]
 ```
 
 To display help:
 
 ```
-    glags /?
-
-   
+glags /?
 ```
 
 ## <span id="ddk_gflags_commands_dtools"></span><span id="DDK_GFLAGS_COMMANDS_DTOOLS"></span>Parameters

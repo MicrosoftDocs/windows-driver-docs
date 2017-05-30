@@ -22,7 +22,7 @@ api_type:
 The **.writemem** command writes a section of memory to a file.
 
 ```
-    .writemem FileName Range 
+.writemem FileName Range 
 ```
 
 ## <span id="ddk_meta_write_memory_to_file_dbg"></span><span id="DDK_META_WRITE_MEMORY_TO_FILE_DBG"></span>Parameters

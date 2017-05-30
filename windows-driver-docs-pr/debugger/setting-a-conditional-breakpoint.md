@@ -23,7 +23,7 @@ A conditional breakpoint is created by combining a breakpoint command with eithe
 The basic syntax for a conditional breakpoint using the **j** command is as follows:
 
 ```
-0:000> bp Address "j (Condition) &#39;OptionalCommands&#39;; &#39;gc&#39; "
+0:000> bp Address "j (Condition) 'OptionalCommands'; 'gc' "
 ```
 
 The basic syntax for a conditional breakpoint using the **.if** token is as follows:
@@ -35,7 +35,7 @@ The basic syntax for a conditional breakpoint using the **.if** token is as foll
 Conditional breakpoints are best illustrated with an example. The following command sets a breakpoint at line 143 of the Mysource.cpp source file. When this breakpoint is hit, the variable **MyVar** is tested. If this variable is less than or equal to 20, execution continues; if it is greater than 20, execution stops.
 
 ```
-0:000> bp `mysource.cpp:143` "j (poi(MyVar)>0n20) &#39;&#39;; &#39;gc&#39; " 
+0:000> bp `mysource.cpp:143` "j (poi(MyVar)>0n20) ''; 'gc' " 
 0:000> bp `mysource.cpp:143` ".if (poi(MyVar)>0n20) {} .else {gc}"
 ```
 
@@ -54,7 +54,7 @@ The preceding command has a fairly complicated syntax that contains the followin
 If you want to see a message each time the breakpoint is passed or when it is finally hit, you can use additional commands in the single quotation marks or curly brackets. For example:
 
 ```
-0:000> bp `:143` "j (poi(MyVar)>5) &#39;.echo MyVar Too Big&#39;; &#39;.echo MyVar Acceptable; gc&#39; " 
+0:000> bp `:143` "j (poi(MyVar)>5) '.echo MyVar Too Big'; '.echo MyVar Acceptable; gc' " 
 0:000> bp `:143` ".if (poi(MyVar)>5) {.echo MyVar Too Big} .else {.echo MyVar Acceptable; gc} " 
 ```
 
@@ -96,14 +96,14 @@ You can set a breakpoint that is conditional on a register value.
 The following command will break at the beginning of the **myFunction** function if the **eax** register is equal to 0xA3:
 
 ```
-0:000> bp mydriver!myFunction "j @eax = 0xa3  &#39;&#39;;&#39;gc&#39;" 
+0:000> bp mydriver!myFunction "j @eax = 0xa3  '';'gc'" 
 0:000> bp mydriver!myFunction ".if @eax = 0xa3  {} .else {gc}"
 ```
 
 However, the following similar command will not necessarily break when **eax** equals 0xC0004321:
 
 ```
-0:000> bp mydriver!myFunction "j @eax = 0xc0004321  &#39;&#39;;&#39;gc&#39;" 
+0:000> bp mydriver!myFunction "j @eax = 0xc0004321  '';'gc'" 
 0:000> bp mydriver!myFunction ".if @eax = 0xc0004321  {} .else {gc}"
 ```
 
@@ -114,7 +114,7 @@ You should formulate your commands defensively against sign extension in both mo
 The following command will work properly in user mode and kernel mode:
 
 ```
-0:000> bp mydriver!myFunction "j (@eax & 0x0`ffffffff) = 0x0`c0004321  &#39;&#39;;&#39;gc&#39;" 
+0:000> bp mydriver!myFunction "j (@eax & 0x0`ffffffff) = 0x0`c0004321  '';'gc'" 
 0:000> bp mydriver!myFunction ".if (@eax & 0x0`ffffffff) = 0x0`c0004321  {} .else {gc}"
 ```
 
@@ -127,7 +127,7 @@ In WinDbg, you can create a conditional breakpoint by clicking [Breakpoints](edi
 For example, typing **mymod!myFunc+0x3A** into the **Command** box and **myVar &lt; 7** into the **Condition** box is equivalent to issuing the following command:
 
 ```
-0:000> bu mymod!myFunc+0x3A "j(myVar<7) &#39;.echo "Breakpoint hit, condition myVar<7"&#39;; &#39;gc&#39;" 
+0:000> bu mymod!myFunc+0x3A "j(myVar<7) '.echo "Breakpoint hit, condition myVar<7"'; 'gc'" 
 0:000> bu mymod!myFunc+0x3A ".if(myVar<7) {.echo "Breakpoint hit, condition myVar<7"} .else {gc}" 
 ```
 

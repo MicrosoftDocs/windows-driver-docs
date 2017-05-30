@@ -22,9 +22,7 @@ api_type:
 The **.scriptunload** command unloads the specified script.
 
 ```
-    .scriptunload ScriptFile
-     
-   
+.scriptunload ScriptFile
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -64,7 +62,7 @@ The .scriptunload command unloads a loaded script. Use the following command syn
 
 ```
 0:000:x86> .scriptunload C:\WinDbg\Scripts\TestScript.js
-JavaScript script unloaded from &#39;C:\WinDbg\Scripts\TestScript.js&#39;
+JavaScript script unloaded from 'C:\WinDbg\Scripts\TestScript.js'
 ```
 
 If there are outstanding references to objects in a script, the contents of the script will be unlinked but the script may remain in memory until all such references are released.

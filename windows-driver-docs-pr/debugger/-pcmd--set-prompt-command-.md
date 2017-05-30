@@ -22,7 +22,7 @@ api_type:
 The **.pcmd** command causes the debugger to issue a command whenever the target stops executing and to display a prompt in the [Debugger Command window](debugger-command-window.md) with register or target state information.
 
 ```
-    .pcmd -s CommandString 
+.pcmd -s CommandString 
 .pcmd -c 
 .pcmd 
 ```
@@ -79,7 +79,7 @@ In the following example, the first use of **.pcmd** sets a fixed string that ap
 No per-prompt command
 
 0:000> .pcmd -s ".echo Execution is done."
-Per-prompt command is &#39;.echo Execution is done.&#39;
+Per-prompt command is '.echo Execution is done.'
 
 0:000> t
 Prymes!isPrime+0xd0:
@@ -98,7 +98,7 @@ Kernel:  0 days 0:00:00.031
 User:    0 days 0:00:00.000
 
 0:000> .pcmd -s "r $tpid, $tid"
-Per-prompt command is &#39;r $tpid, $tid&#39;
+Per-prompt command is 'r $tpid, $tid'
 
 0:000> t
 Prymes!isPrime+0xdd:

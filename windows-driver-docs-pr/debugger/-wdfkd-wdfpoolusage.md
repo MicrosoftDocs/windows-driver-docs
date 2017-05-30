@@ -70,13 +70,13 @@ The following example shows the output from the **!wdfpoolusage** extension when
 -----------------------------------
 ## FxDriverGlobals 83b7af18 pool stats
 -----------------------------------
-Driver Tag: &#39;RawB&#39;
+Driver Tag: 'RawB'
 15126 NonPaged Bytes, 548 Paged Bytes
 94 NonPaged Allocations, 10 Paged Allocations
 15610 PeakNonPaged Bytes, 752 PeakPaged Bytes
 100 PeakNonPaged Allocations, 14 PeakPaged Allocations
 
-pool 82dbae00, Size  512 Tag &#39;RawB&#39;, NonPaged, Caller:  Wdf01000!FxVerifierLock::AllocateThreadTable+5d
+pool 82dbae00, Size  512 Tag 'RawB', NonPaged, Caller:  Wdf01000!FxVerifierLock::AllocateThreadTable+5d
 ```
 
 The following example shows the output from **!wdfpoolusage** that appears when the value of *Flags* is 1. (Note that the ellipsis (...) on the second line indicates the omission of some output that is the same as that shown in the preceding example.)
@@ -87,7 +87,7 @@ kd> !wdfpoolusage wdfrawbusenumtest 0 1
 100 PeakNonPaged Allocations, 14 PeakPaged Allocations
 
 Client alloc starts at 82dbae00
-Size  512 Tag &#39;RawB&#39;
+Size  512 Tag 'RawB'
 NonPaged (0x0)
 Caller:  Wdf01000!FxVerifierLock::AllocateThreadTable+5d
 ```

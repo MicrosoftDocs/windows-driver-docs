@@ -62,7 +62,7 @@ When a [conditional breakpoint](setting-a-conditional-breakpoint.md) includes an
 For example, the following is a proper conditional breakpoint formulation:
 
 ```
-0:000> bp Address "j (Condition) &#39;OptionalCommands&#39;; &#39;gc&#39; " 
+0:000> bp Address "j (Condition) 'OptionalCommands'; 'gc' " 
 ```
 
 When this breakpoint is encountered and the expression is false, execution will resume using the same execution type that was previously used. For example, if you used a **g (Go)** command to reach this breakpoint, execution would resume freely. But if you reached this breakpoint while stepping or tracing, execution would resume with a step or a trace.
@@ -70,7 +70,7 @@ When this breakpoint is encountered and the expression is false, execution will 
 On the other hand, the following is an improper breakpoint formulation, since execution will always resume freely even if you had been stepping before reaching the breakpoint:
 
 ```
-0:000> bp Address "j (Condition) &#39;OptionalCommands&#39;; &#39;g&#39; " 
+0:000> bp Address "j (Condition) 'OptionalCommands'; 'g' " 
 ```
 
  

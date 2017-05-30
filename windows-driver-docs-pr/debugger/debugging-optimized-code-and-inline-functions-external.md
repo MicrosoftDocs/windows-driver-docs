@@ -36,7 +36,7 @@ Notice that the Locals window displays the parameters correctly even though they
 
 In addition to tracking variables with primitive types, the location records track data members of local structures and classes. The following debugger output displays local structures.
 
-```ManagedCPlusPlus
+```
 0:000> dt My1
 Local var Type _LocalStruct
    +0x000 i1               : 0n0 (edi)
@@ -67,7 +67,7 @@ During code optimization, some functions are placed in line. Tat is, the body of
 
 Suppose you compile an application and force a function named `func1` to be inline.
 
-```ManagedCPlusPlus
+```
 __forceinline int func1(int p1, int p2, int p3)
 {
    int num1 = 0;
@@ -137,7 +137,7 @@ Because the Windows debugger can enumerate all the caller sites of an inline fun
 
 The Windows debugger groups all breakpoints that are set for a specific inline function into a breakpoint container. You can manipulate the breakpoint container as a whole by using commands like [**be**](be--breakpoint-enable-.md), [**bd**](bd--breakpoint-disable-.md), [**bc**](bc--breakpoint-clear-.md). See the following **bd 3** and **bc 3** command examples. You can also manipulate individual breakpoints. See the following **be 2** command example.
 
-```ManagedCPlusPlus
+```
 0:000> bm simple!MoreCalculate
   2: 00000000`ff6e1455 @!"simple!MoreCalculate" (simple!MoreCalculate inlined in simple!wmain+0x8d)
   4: 00000000`ff6e1528 @!"simple!MoreCalculate" (simple!MoreCalculate inlined in simple!wmain+0x160)

@@ -22,9 +22,7 @@ api_type:
 The KdSrv command line uses the following syntax.
 
 ```
-    kdsrv -t ServerTransport 
-
-   
+kdsrv -t ServerTransport 
 ```
 
 ## <span id="ddk_kdsrv_command_line_options_dbg"></span><span id="DDK_KDSRV_COMMAND_LINE_OPTIONS_DBG"></span>Parameters

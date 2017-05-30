@@ -22,7 +22,7 @@ api_type:
 The **lse** command opens an editor for the current source file.
 
 ```
-    lse 
+lse 
 ```
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment

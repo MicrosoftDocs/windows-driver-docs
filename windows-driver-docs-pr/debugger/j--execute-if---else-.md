@@ -71,20 +71,20 @@ You cannot add a semicolon or additional commands after the **j** command. If a 
 The following command displays the value of **eax** if **MySymbol** is equal to zero and displays the values of **ebx** and **ecx** otherwise.
 
 ```
-0:000> j (MySymbol=0) &#39;r eax&#39;; &#39;r ebx; r ecx&#39; 
+0:000> j (MySymbol=0) 'r eax'; 'r ebx; r ecx' 
 ```
 
 You could omit the single quotation marks around **r eax**, but they make the command easier to read. If you want to omit one of the commands, you can include empty quotation marks or omit the parameter for that command, as in the following commands.
 
 ```
-0:000> j (MySymbol=0) &#39;&#39;; &#39;r ebx; r ecx&#39; 
-0:000> j (MySymbol=0)  ; &#39;r ebx; r ecx&#39; 
+0:000> j (MySymbol=0) ''; 'r ebx; r ecx' 
+0:000> j (MySymbol=0)  ; 'r ebx; r ecx' 
 ```
 
 You can also use the **j** command inside other commands. For example, you can use a **j** command to create conditional breakpoints.
 
 ```
-0:000> bp `mysource.cpp:143` "j (poi(MyVar)>0n20) &#39;&#39;; &#39;gc&#39; "
+0:000> bp `mysource.cpp:143` "j (poi(MyVar)>0n20) ''; 'gc' "
 ```
 
 For more information about the syntax for conditional breakpoints, see [Setting a Conditional Breakpoint](setting-a-conditional-breakpoint.md).

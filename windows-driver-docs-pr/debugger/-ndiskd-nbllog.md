@@ -22,7 +22,7 @@ api_type:
 The **!ndiskd.nbllog** extension displays the log of all NBL ([**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-list-structure)) activity on the system.
 
 ```
-    !ndiskd.nbllog [-stacks] 
+!ndiskd.nbllog [-stacks] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -96,7 +96,7 @@ After you have enabled NBL tracking on the target debugee machine, enter the **!
     ffffe00bc3cf2d10   CPU  1              ProtocolSent       ffffe00bc5ac4880 - QoS Packet Scheduler-0000
 
     Maximum of 200 events printed; quitting early.
-    Rerun with the &#39;-force&#39; option to bypass this limit.
+    Rerun with the '-force' option to bypass this limit.
 ```
 
 For a more detailed description of how to interpret the results of **!ndiskd.nbllog**, see [!ndiskd.nbl -log](https://go.microsoft.com/fwlink/p/?linkid=846176) on the NDIS blog.

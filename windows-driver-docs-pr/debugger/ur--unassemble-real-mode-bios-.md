@@ -22,7 +22,7 @@ api_type:
 The **ur** command displays an assembly translation of the specified 16-bit real-mode code.
 
 ```
-    ur Range 
+ur Range 
 ur Address
 ur 
 ```

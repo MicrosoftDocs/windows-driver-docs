@@ -22,7 +22,7 @@ api_type:
 The **tb** command executes the program until a branch instruction is reached.
 
 ```
-    tb [r] [= StartAddress] [Count] 
+tb [r] [= StartAddress] [Count] 
 ```
 
 ## <span id="ddk_cmd_trace_to_next_branch_dbg"></span><span id="DDK_CMD_TRACE_TO_NEXT_BRANCH_DBG"></span>Parameters

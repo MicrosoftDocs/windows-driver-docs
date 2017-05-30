@@ -22,7 +22,7 @@ api_type:
 The **!ndiskd.nblpool** extension displays information about a [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-list-structure) (NBL) pool. If you run this extension with no parameters, !ndiskd will display a list of all allocated NBL pools in the system.
 
 ```
-    !ndiskd.nblpool [-handle <x>] [-basic] [-allocations] [-find <str>] [-findnb <str>] 
+!ndiskd.nblpool [-handle <x>] [-basic] [-allocations] [-find <str>] [-findnb <str>] 
     [-findctx <str>] [-findctxtype <str>] [-findva <x>] [-findpa <x>]
 ```
 
@@ -151,7 +151,7 @@ ALL ALLOCATED NBLs
     ffffdf80148b1b90   Allocated
     ffffdf80148b1de0   Allocated
     ffffdf80148b1030   Allocated
-    [Maximum of 1024 items read; quitting early. Rerun with the &#39;-force&#39; option
+    [Maximum of 1024 items read; quitting early. Rerun with the '-force' option
     to bypass this limit.]
 ```
 

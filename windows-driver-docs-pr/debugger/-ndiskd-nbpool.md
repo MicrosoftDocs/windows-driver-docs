@@ -128,7 +128,7 @@ ALL ALLOCATED NBs
     ffffdf8015e48f50   Freed
     ffffdf8015de64e0   Freed
     ffffdf8015ddff50   Freed
-    [Maximum of 1024 items read; quitting early. Rerun with the &#39;-force&#39; option
+    [Maximum of 1024 items read; quitting early. Rerun with the '-force' option
     to bypass this limit.]
 ```
 

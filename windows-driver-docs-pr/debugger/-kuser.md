@@ -65,7 +65,7 @@ TickCount:    fa00000 * 00482006 (0:20:30:56.093)
 TimeZone Id: 2
 ImageNumber Range: [14c .. 14c]
 Crypto Exponent: 0
-SystemRoot: &#39;F:\WINDOWS&#39;
+SystemRoot: 'F:\WINDOWS'
 ```
 
  

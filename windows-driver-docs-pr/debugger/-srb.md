@@ -22,7 +22,7 @@ api_type:
 The **!srb** extension displays information about a SCSI Request Block (SRB).
 
 ```
-    !srb Address 
+!srb Address 
 ```
 
 ## <span id="ddk__srb_dbg"></span><span id="DDK__SRB_DBG"></span>Parameters

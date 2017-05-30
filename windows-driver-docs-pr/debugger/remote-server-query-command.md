@@ -22,9 +22,7 @@ api_type:
 To display a list of available sessions on a local or Remote Server, use the following syntax.
 
 ```
-    remote /q Computer
-
-   
+remote /q Computer
 ```
 
 ## <span id="ddk_remote_server_query_command_dtools"></span><span id="DDK_REMOTE_SERVER_QUERY_COMMAND_DTOOLS"></span>Parameters

@@ -24,7 +24,7 @@ The **!wsle** extension displays all working set list entries (WSLEs).
 Syntax
 
 ```
-    !wsle [Flags [Address]] 
+!wsle [Flags [Address]] 
 ```
 
 ## <span id="ddk__wsle_dbg"></span><span id="DDK__WSLE_DBG"></span>Parameters

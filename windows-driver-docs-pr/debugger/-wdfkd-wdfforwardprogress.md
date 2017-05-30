@@ -107,7 +107,7 @@ kd> !wdfkd.wdfforwardprogress 0x79af3250
             !WDFREQUEST 0x7bc53ca8 (Reserved) !IRP 0x875f59f0
             !WDFREQUEST 0x7bced8b8 (Reserved) !IRP 0x85c25348
 
-    Number of undispatched IRP&#39;s in list: 0
+    Number of undispatched IRP's in list: 0
 
     EvtIoReservedResourcesAllocate: (0x9a3f1b70) mqueue!EvtIoAllocateResourcesForReservedRequest
     EvtIoExamineIrp: (0x9a3f19d0) mqueue!EvtIoWdmIrpForForwardProgress

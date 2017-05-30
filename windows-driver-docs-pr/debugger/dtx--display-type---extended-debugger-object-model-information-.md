@@ -22,7 +22,7 @@ api_type:
 The dtx command displays extended symbolic type information using the debugger object model. The dtx command is similar to the [**dt (Display Type)**](dt--display-type-.md) command.
 
 ```
-    dtx -DisplayOpts [Module!]Name Address
+dtx -DisplayOpts [Module!]Name Address
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -122,7 +122,7 @@ Tip: Use the [**x (Examine Symbols)**](x--examine-symbols-.md) command to displa
 ```
 0: kd> x /d HdAudio!CazMixertopoMiniport*
 ...
-fffff806`d24992b8 HdAudio!CAzMixertopoMiniport::`vftable&#39; = <no type information>
+fffff806`d24992b8 HdAudio!CAzMixertopoMiniport::`vftable' = <no type information>
 ...
 ```
 

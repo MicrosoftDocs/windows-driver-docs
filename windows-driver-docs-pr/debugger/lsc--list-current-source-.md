@@ -22,7 +22,7 @@ api_type:
 The **lsc** command displays the current source file name and line number.
 
 ```
-    lsc 
+lsc 
 ```
 
 ## <span id="ddk_cmd_list_current_source_dbg"></span><span id="DDK_CMD_LIST_CURRENT_SOURCE_DBG"></span>

@@ -22,7 +22,7 @@ api_type:
 The **.wtitle** command sets the title in the main WinDbg window or in the NTSD, CDB, or KD window.
 
 ```
-    .wtitle Title 
+.wtitle Title 
 ```
 
 ## <span id="ddk_meta_set_window_title_dbg"></span><span id="DDK_META_SET_WINDOW_TITLE_DBG"></span>Parameters

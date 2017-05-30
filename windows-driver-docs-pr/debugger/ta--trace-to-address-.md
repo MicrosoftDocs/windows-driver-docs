@@ -30,7 +30,7 @@ User-Mode
 Kernel-Mode
 
 ```
-    ta [r] [= StartAddress] StopAddress 
+ta [r] [= StartAddress] StopAddress 
 ```
 
 ## <span id="ddk_cmd_trace_to_address_dbg"></span><span id="DDK_CMD_TRACE_TO_ADDRESS_DBG"></span>Parameters

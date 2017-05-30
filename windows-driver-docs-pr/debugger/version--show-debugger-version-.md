@@ -24,7 +24,7 @@ The **version** command displays version information about the debugger and all 
 Do not confuse this command with the [**!version (Show DLL Version)**](-version.md) extension command.
 
 ```
-    version 
+version 
 ```
 
 ## <span id="ddk_cmd_show_debugger_version_dbg"></span><span id="DDK_CMD_SHOW_DEBUGGER_VERSION_DBG"></span>

@@ -77,16 +77,16 @@ Consider the following situation. Suppose that you start some debugging servers,
 
 ```
 0:000> .server npipe:pipe=rabbit
-Server started with &#39;npipe:pipe=rabbit&#39;
+Server started with 'npipe:pipe=rabbit'
 0:000> .server tcp:port=7
-Server started with &#39;tcp:port=7&#39;
+Server started with 'tcp:port=7'
 ```
 
 Then, you decide to use a password, as the following example shows.
 
 ```
 0:000> .server npipe:pipe=tiger,password=hardtoguess
-Server started with &#39;npipe:pipe=tiger,password=hardtoguess&#39;
+Server started with 'npipe:pipe=tiger,password=hardtoguess'
 ```
 
 But the earlier servers are still running, so you should cancel them, as the following example shows.

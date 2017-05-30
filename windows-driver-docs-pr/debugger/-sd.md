@@ -24,7 +24,7 @@ The **!sd** extension displays the security descriptor at the specified address.
 Syntax
 
 ```
-    !sd Address [Flags] 
+!sd Address [Flags] 
 ```
 
 ## <span id="ddk__sd_dbg"></span><span id="DDK__SD_DBG"></span>Parameters

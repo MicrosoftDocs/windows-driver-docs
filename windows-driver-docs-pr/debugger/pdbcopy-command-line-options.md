@@ -22,15 +22,13 @@ api_type:
 The PDBCopy command line uses the following syntax. The parameters can be included in any order.
 
 ```
-    pdbcopy OldPDB NewPDB [Options] 
+pdbcopy OldPDB NewPDB [Options] 
 
 pdbcopy OldPDB NewPDB -p [-f:Symbol] [-f:@TextFile] [Options] 
 
 pdbcopy OldPDB NewPDB -p [-F:Symbol] [-F:@TextFile] [Options] 
 
 pdbcopy /? 
-
-   
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

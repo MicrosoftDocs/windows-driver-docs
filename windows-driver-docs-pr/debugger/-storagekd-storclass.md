@@ -22,7 +22,7 @@ api_type:
 The **!storagekd.storclass** extension displays information about the specified *classpnp* device.
 
 ```
-    !storagekd.storclass [Address [Level]] 
+!storagekd.storclass [Address [Level]] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

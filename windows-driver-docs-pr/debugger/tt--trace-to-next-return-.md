@@ -30,7 +30,7 @@ User-Mode
 Kernel-Mode
 
 ```
-    tt [r] [= StartAddress] [Count] 
+tt [r] [= StartAddress] [Count] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

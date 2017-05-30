@@ -71,7 +71,7 @@ dt ucx01000!_UCXCONTROLLER_PRIVCONTEXT 0xfffffa80052da050
 Parent Device: !wdfdevice 0x57ffac91fd8
 Controller Queues:
     Default               : !wdfqueue 0x57ffacc5fd8
-    Address&#39;0&#39;Ownership   : !wdfqueue 0x57ffad5ad88
+    Address'0'Ownership   : !wdfqueue 0x57ffad5ad88
     DeviceManagement      : !wdfqueue 0x57ffacd6fd8
     ... pend on Ctrl Reset: !wdfqueue 0x57ffad48fd8
 

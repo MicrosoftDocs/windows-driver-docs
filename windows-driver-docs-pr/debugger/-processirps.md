@@ -60,7 +60,7 @@ Examples
 
 You can use [**!process**](-process.md) command to get process addresses. For example, you could get the process address for explorer.exe.
 
-```ManagedCPlusPlus
+```
 2: kd> !process 0 0
 **** NT ACTIVE PROCESS DUMP ****
 ...
@@ -72,7 +72,7 @@ PROCESS fffffa800688c940
 
 Now you can pass the process address for explorer.exe to the **!processirps** command. The following output shows that explorer.exe has IRPs queued to threads and IRPs queued to file objects.
 
-```ManagedCPlusPlus
+```
 2: kd> !processirps fffffa800688c940
 **** PROCESS fffffa800688c940 (Image: explorer.exe) ****
 

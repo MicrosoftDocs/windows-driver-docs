@@ -22,7 +22,7 @@ api_type:
 The **!wmitrace.help** extension displays the extension commands in Wmitrace.dll.
 
 ```
-    !wmitrace.help 
+!wmitrace.help 
 ```
 
 ## <span id="ddk__wmitrace_help_dbg"></span><span id="DDK__WMITRACE_HELP_DBG"></span>

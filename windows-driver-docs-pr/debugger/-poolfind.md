@@ -22,7 +22,7 @@ api_type:
 The **!poolfind** extension finds all instances of a specific pool tag in either nonpaged or paged memory pools.
 
 ```
-    !poolfind TagString [PoolType] 
+!poolfind TagString [PoolType] 
 !poolfind TagValue [PoolType] 
 ```
 

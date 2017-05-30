@@ -30,7 +30,7 @@ User-Mode
 Kernel-Mode
 
 ```
-    tc [r] [= StartAddress] [Count] 
+tc [r] [= StartAddress] [Count] 
 ```
 
 ## <span id="ddk_cmd_trace_to_next_call_dbg"></span><span id="DDK_CMD_TRACE_TO_NEXT_CALL_DBG"></span>Parameters

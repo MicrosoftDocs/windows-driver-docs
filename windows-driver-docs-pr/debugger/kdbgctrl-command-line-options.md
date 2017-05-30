@@ -22,15 +22,13 @@ api_type:
 The KDbgCtrl command line uses the following syntax:
 
 ```
-    kdbgctrl [-e|-d|-c] [-ea|-da|-ca] [-eu|-du|-cu] [-eb|-db|-cb] [-sdb Size | -cdb] 
+kdbgctrl [-e|-d|-c] [-ea|-da|-ca] [-eu|-du|-cu] [-eb|-db|-cb] [-sdb Size | -cdb] 
 
 kdbgctrl -cx 
 
 kdbgctrl -td ProcessID File 
 
 kdbgctrl -? 
-
-   
 ```
 
 ## <span id="ddk_kdbgctrl_command_line_options_dbg"></span><span id="DDK_KDBGCTRL_COMMAND_LINE_OPTIONS_DBG"></span>Parameters
