@@ -17,19 +17,7 @@ ms.technology: windows-devices
 
 # Custom Capabilities 
 
-Custom capabilities are a new capability class introduced to allow
-developers to make better use of the UWP. They are similar to the
-previously defined [restricted
-capabilities](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#special-and-restricted-capabilities)
-which give access to protected resources. However, there are some key
-differences between the two. Unlike restricted resources, 3rd party
-partners can define or claim their own capabilities. Custom capabilities
-also do not have to be built into Windows at compilation time. They are
-different from previous [app
-capabilities](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations)
-as they do not use the same authorization model and instead, app
-authorization to use the capability verifies during the app installation
-instead of when uploaded to the store.
+You can create a custom capability to associate a UWP app with a device.
 
 For a developer to get access to a custom capability, they must have a
 signed custom capability descriptor (SCCD) which allows the authorized
@@ -140,6 +128,7 @@ following steps:
 Microsoft then validates the Capability Owner and the intention of the
 custom capability.
 
+
 Reply to confirm Custom capability addition request.
 
 Once approved, the custom capability a unique custom capability string
@@ -192,4 +181,8 @@ ONLY work on devices in Developer Mode.
     </xs:complexType>
 </xs:element>
 ```
+
+### See Also
+
+-  [App capability declarations](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations)
 
