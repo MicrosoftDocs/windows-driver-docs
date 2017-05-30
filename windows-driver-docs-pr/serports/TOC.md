@@ -22,6 +22,7 @@
 ##### [Connecting a KMDF Peripheral Driver to a Serial Port](connecting-a-kmdf-peripheral-device-driver-to-a-serial-port.md)
 #### [SerCx2 Handling of Read and Write Requests](sercx2-handling-of-read-and-write-requests.md)
 #### [Reading Data from a SerCx2-Managed Serial Port](reading-data-from-a-sercx2-managed-serial-port.md)
+### [SerCx2 Object Handles](sercx2-object-handles.md)
 ## [Using Serial.sys and Serenum.sys](using-serial-sys-and-serenum-sys.md)
 ### [Features of Serial and Serenum](features-of-serial-and-serenum.md)
 ### [Configuration of Serial Devices and Drivers](configuration-of-serial-devices-and-drivers.md)
