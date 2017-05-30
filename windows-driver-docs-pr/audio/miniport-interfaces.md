@@ -24,22 +24,26 @@ ms.technology: windows-devices
 ## <span id="miniport_interfaces"></span><span id="MINIPORT_INTERFACES"></span>
 
 
-As described in [Supporting a Device](supporting-a-device.md), the PortCls system driver provides a set of five built-in port drivers for managing wave and MIDI devices. To use one of these port drivers to manage a particular type of audio device, the adapter driver must provide a corresponding miniport driver that complements the port driver by managing all the device's hardware-dependent functions.
+As described in [Supporting a Device](supporting-a-device.md), the PortCls system driver provides a set of built-in port drivers for managing wave and MIDI devices. To use one of these port drivers to manage a particular type of audio device, the adapter driver must provide a corresponding miniport driver that complements the port driver by managing all the device's hardware-dependent functions.
 
-This section discusses the following five miniport driver types:
+This section discusses the following miniport driver types:
 
 [WaveRT Miniport Driver](wavert-miniport-driver.md)
 
 Complements the WaveRT port driver by managing the hardware-dependent functions of a wave rendering or capture device that uses a cyclic buffer for audio data.
+
 [Topology Miniport Driver](topology-miniport-driver.md)
 
 Complements the Topology port driver by managing the various hardware controls (for example, volume level) in the audio adapter's mixer circuitry.
+
 [MIDI Miniport Driver](midi-miniport-driver.md)
 
 Complements the MIDI port driver by managing the hardware-dependent functions of a simple MIDI device.
+
 [DMus Miniport Driver](dmus-miniport-driver.md)
 
 Complements the DMus port driver by managing the hardware-dependent functions of an advanced MIDI device.
+
 Each port driver implements an **IPortXxx** interface, which it presents to the miniport driver. In turn, the miniport driver must implement an **IMiniportXxx** interface, which the port driver uses to communicate with the miniport driver. The following table shows the **IPortXxx** interface and the corresponding **IMiniportXxx** interface for each device type.
 
 <table>
