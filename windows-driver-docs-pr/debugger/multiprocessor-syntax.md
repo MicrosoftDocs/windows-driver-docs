@@ -2,7 +2,7 @@
 title: Multiprocessor Syntax
 description: This topic covers Multiprocessor Syntax
 ms.assetid: 71adc522-f078-457c-8bc9-9e971e914a41
-keywords: ["multiprocessor computer", "multiprocessor computer, command syntax", "dual-processor computer", "dual-processor computer, See "multiprocessor computer"", "(processor identifier)", "(processor identifier)", "syntax rules for commands, (processor identifier)", "syntax rules for commands, (processor identifier)", "processor identifier ( )"]
+keywords: multiprocessor computer, multiprocessor, command syntax, dual-processor computer, syntax rules for commands, processor identifier
 ms.author: windowsdriverdev
 ms.date: 05/23/2017
 ms.topic: article
