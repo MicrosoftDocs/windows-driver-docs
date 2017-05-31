@@ -23,7 +23,7 @@ api_type:
 
 The **!wdfkd.wdfsearchpath** extension sets the search path to formatting files for Kernel-Mode Driver Framework (KMDF) error log records.
 
-``` syntax
+```
 !wdfkd.wdfsearchpath Path
 ```
 

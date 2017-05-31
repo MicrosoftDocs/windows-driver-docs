@@ -21,8 +21,8 @@ api_type:
 
 The **!wmitrace.disable** extension disables a provider for the specified Event Tracing for Windows (ETW) trace session.
 
-``` syntax
-    !wmitrace.disable { LoggerID | LoggerName } GUID 
+```
+!wmitrace.disable { LoggerID | LoggerName } GUID 
 ```
 
 ## <span id="ddk__wmitrace_strdump_dbg"></span><span id="DDK__WMITRACE_STRDUMP_DBG"></span>Parameters

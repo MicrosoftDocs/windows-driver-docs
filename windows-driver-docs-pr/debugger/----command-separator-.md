@@ -21,7 +21,7 @@ api_type:
 
 The semicolon ( **;** ) character is used to separate multiple commands on a single line.
 
-``` syntax
+```
     Command1 ; Command2 [; Command3 ...] 
 ```
 

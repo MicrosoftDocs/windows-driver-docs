@@ -61,7 +61,7 @@ In some cases you might want to set up the target computer for kernel debugging,
 
 To block kernel debugging, set up the target computer by using commands similar to the following:
 
-``` syntax
+```
 bcdedit /debug on
 bcdedit /dbgsettings 1394 channel:32 /start DISABLE /noumex
 ```
@@ -70,14 +70,14 @@ When you restart the target computer, it will be prepared for kernel debugging, 
 
 When you are ready, you can enable kernel debugging (without restarting the target computer) by entering the following commands.
 
-``` syntax
+```
 kdbgctrl -db
 kdbgctrl -e
 ```
 
 Later, you can disable kernel debugging by entering the following commands.
 
-``` syntax
+```
 kdbgctrl -d
 kdbgctrl -eb
 ```

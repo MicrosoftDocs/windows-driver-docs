@@ -21,7 +21,7 @@ api_type:
 
 The **sx***\** commands control the action that the debugger takes when an exception occurs in the application that is being debugged, or when certain events occur.
 
-``` syntax
+```
 sx 
 
 sx{e|d|i|n} [-c "Cmd1"] [-c2 "Cmd2"] [-h] {Exception|Event|*} 

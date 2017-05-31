@@ -21,8 +21,8 @@ api_type:
 
 The **!minipkd.lun** extension displays detailed information about the specified Logical Unit Extension (LUN).
 
-``` syntax
-    !minipkd.lun LUN 
+```
+!minipkd.lun LUN 
 !minipkd.lun Device 
 ```
 

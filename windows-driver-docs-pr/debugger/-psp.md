@@ -23,7 +23,7 @@ The **!psp** extension displays the processor state parameter (PSP) register at 
 
 This extension is supported only on Itanium-based target computers.
 
-``` syntax
+```
 !psp Address [DisplayLevel]
 ```
 

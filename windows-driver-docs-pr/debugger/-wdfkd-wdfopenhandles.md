@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfopenhandles** extension displays information about all the handles that are open on the specified WDF device.
 
-``` syntax
+```
 !wdfkd.wdfopenhandles Handle [Flags]
 ```
 

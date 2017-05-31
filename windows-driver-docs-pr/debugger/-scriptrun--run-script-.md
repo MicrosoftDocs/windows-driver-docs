@@ -21,9 +21,8 @@ api_type:
 
 The .scriptrun command will load and run a JavaScript.
 
-``` syntax
-    .scriptrun ScriptFile  
-   
+```
+.scriptrun ScriptFile  
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -69,7 +68,7 @@ A confirmation message is displayed when the code is loaded and executed.
 
 ```
 0:000> .scriptrun C:\WinDbg\Scripts\helloWorld.js
-JavaScript script successfully loaded from &#39;C:\WinDbg\Scripts\helloWorld.js&#39;
+JavaScript script successfully loaded from 'C:\WinDbg\Scripts\helloWorld.js'
 Hello World!  We are in JavaScript!
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The **!wudfext.downkmmirp** extension displays the kernel-mode I/O request packet (IRP) that corresponds to the specified user-mode I/O request packet (UM IRP).
 
-``` syntax
+```
 !wudfext.wudfdownkmirp Address
 ```
 

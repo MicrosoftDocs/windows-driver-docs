@@ -21,7 +21,7 @@ api_type:
 
 A pair of braces ( **{ }** ) is used to surround a block of statements within a debugger command program.
 
-``` syntax
+```
 Statements { Statements } Statements 
 ```
 

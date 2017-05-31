@@ -21,7 +21,7 @@ api_type:
 
 The **!wudfext.help** extension displays all Wudfext.dll extension commands.
 
-``` syntax
+```
 !wudfext.help
 ```
 

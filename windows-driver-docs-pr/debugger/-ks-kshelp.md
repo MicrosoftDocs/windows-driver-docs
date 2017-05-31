@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.kshelp** extension displays a help text showing original KS 1.0-specific Ks.dll extension commands.
 
-``` syntax
-    !ks.kshelp 
+```
+!ks.kshelp 
 ```
 
 ### <span id="DLL"></span><span id="dll"></span>DLL

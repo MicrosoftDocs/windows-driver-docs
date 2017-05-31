@@ -21,7 +21,7 @@ api_type:
 
 The **!amli set** extension sets or displays the AMLI Debugger options.
 
-``` syntax
+```
 !amli set Options
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The **!runaway** extension displays information about the time consumed by each thread.
 
-``` syntax
+```
 !runaway [Flags]
 ```
 
@@ -80,7 +80,7 @@ The display identifies each thread by the debugger's internal thread numbering a
 
 Here is an example:
 
-``` syntax
+```
 0:001> !runaway 7
 
  User Mode Time

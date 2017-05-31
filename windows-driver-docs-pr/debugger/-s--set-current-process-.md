@@ -23,7 +23,7 @@ The **|s** command sets or displays the current process number.
 
 Do not confuse this command with the [**s (Search Memory)**](s--search-memory-.md), [**~s (Change Current Processor)**](-s--change-current-processor-.md), [**~s (Set Current Thread)**](-s--set-current-thread-.md), or [**||s (Set Current System)**](--s--set-current-system-.md) command.
 
-``` syntax
+```
 |Process s 
 | s 
 ```

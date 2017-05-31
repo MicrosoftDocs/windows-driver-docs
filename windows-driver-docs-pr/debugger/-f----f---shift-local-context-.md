@@ -21,8 +21,8 @@ api_type:
 
 The **.f+** command shifts the frame index to the next frame in the current stack. The **.f-** command shifts the frame index to the previous frame in the current stack.
 
-``` syntax
-    .f+  
+```
+.f+  
 .f-  
 ```
 

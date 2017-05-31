@@ -21,7 +21,7 @@ api_type:
 
 The **!tz** extension displays the specified power thermal zone structure.
 
-``` syntax
+```
 !tz [Address]
 ```
 

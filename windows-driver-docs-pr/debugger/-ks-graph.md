@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.graph** extension command displays a textual description of the kernel mode graph in topologically sorted order.
 
-``` syntax
-    !ks.graph Object [Level] [Flags] 
+```
+!ks.graph Object [Level] [Flags] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

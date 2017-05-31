@@ -21,7 +21,7 @@ api_type:
 
 The **.settings** command sets, modifies, displays, loads and saves settings in the Debugger.Settings namespace.
 
-``` syntax
+```
 .settings set  namespace.setting=value
 .settings set namespace.setting+=value 
 .settings save [file path] 

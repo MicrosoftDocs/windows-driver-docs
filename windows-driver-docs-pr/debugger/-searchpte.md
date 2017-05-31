@@ -21,7 +21,7 @@ api_type:
 
 The **!searchpte** extension searches physical memory for the specified page frame number (PFN).
 
-``` syntax
+```
 !searchpte PFN 
 !searchpte -?
 ```

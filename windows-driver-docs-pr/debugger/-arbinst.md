@@ -21,7 +21,7 @@ api_type:
 
 The **!arbinst** extension displays information about a specified arbiter.
 
-``` syntax
+```
 !arbinst Address [Flags]
 ```
 
@@ -68,7 +68,7 @@ For the arbiter specified, **!arbinst** displays each allocated range of system 
 
 Here is an example:
 
-``` syntax
+```
 kd> !arbinst e0000106002ee8e8
 Port Arbiter "PCI I/O Port (b=02)" at e0000106002ee8e8
   Allocated ranges:

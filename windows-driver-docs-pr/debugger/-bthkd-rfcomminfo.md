@@ -21,7 +21,7 @@ api_type:
 
 The **!bthkd.rfcomminfo** command displays information about the RFCOMM FDO and the TDI Device Object.
 
-``` syntax
+```
 !bthkd.rfcomminfo
 ```
 

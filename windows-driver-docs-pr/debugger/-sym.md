@@ -21,7 +21,7 @@ api_type:
 
 The **!sym** extension controls noisy symbol loading and symbol prompts.
 
-``` syntax
+```
 !sym 
 !sym noisy 
 !sym quiet 

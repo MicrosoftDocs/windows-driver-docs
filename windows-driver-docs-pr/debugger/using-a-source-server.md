@@ -23,13 +23,13 @@ Debugging Tools for Windows includes the source server [SrcSrv](srcsrv.md) (Srcs
 
 To use [SrcSrv](srcsrv.md) with the debugger, enter the following command to set the source path to srv\*.
 
-```cmd
+```
 .srcfix
 ```
 
 You can get the same result by entering the following command.
 
-```cmd
+```
 .srcpath srv*
 ```
 
@@ -39,7 +39,7 @@ If you want to use [SrcSrv](srcsrv.md) and also include a list of directories in
 
 For example:
 
-```cmd
+```
 .srcpath srv*;c:\someSourceCode 
 ```
 
@@ -47,7 +47,7 @@ If the source path is set as shown in the preceding example, the debugger first 
 
 You can also use [**.srcfix+**](-srcfix---lsrcfix--use-source-server-.md) to append `srv*` to your existing source path, as shown in the following example.
 
-```cmd
+```
 3: kd> .srcpath c:\mySource
 Source search path is: c:\mySource
 3: kd> .srcfix+

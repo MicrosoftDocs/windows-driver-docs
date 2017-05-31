@@ -63,7 +63,7 @@ Each breakpoint has a decimal number called the breakpoint ID associated with it
 
 You can include a command in a breakpoint that is automatically executed when the breakpoint is hit. For example, the following command breaks at MyFunction+0x47, writes a dump file, and then resumes execution.
 
-``` syntax
+```
 0:000> bu MyFunction+0x47 ".dump c:\mydump.dmp; g" 
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The **!threadfields** extension displays the names and offsets of the fields within the executive thread (ETHREAD) block.
 
-``` syntax
+```
 !threadfields
 ```
 
@@ -58,13 +58,13 @@ Remarks
 
 This extension command is not available in Windows XP or later versions of Windows. Instead, use the [**dt (Display Type)**](dt--display-type-.md) command to show the ETHREAD structure directly:
 
-``` syntax
+```
 kd> dt nt!_ETHREAD 
 ```
 
 Here is an example of **!threadfields** from a Windows 2000 system:
 
-``` syntax
+```
 kd> !threadfields
  ETHREAD structure offsets:
 

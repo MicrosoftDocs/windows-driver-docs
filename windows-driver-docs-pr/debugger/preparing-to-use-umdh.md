@@ -46,13 +46,13 @@ If you also include a path to Windows symbols, the analysis may be more complete
 
 For example, if the symbols for your application are located at C:\\MyApp\\Symbols, and you have installed the Windows symbol files to \\\\myshare\\winsymbols, you would use the following command to set your symbol path:
 
-``` syntax
+```
 set _NT_SYMBOL_PATH=c:\myapp\symbols;\\myshare\winsymbols
 ```
 
 As another example, if the symbols for your application are located at C:\\MyApp\\Symbols, and you want to use the public Microsoft symbol store for your Windows symbols, using C:\\MyCache as your downstream store, you would use the following command to set your symbol path:
 
-``` syntax
+```
 set _NT_SYMBOL_PATH=c:\myapp\symbols;srv*c:\mycache*https://msdl.microsoft.com/download/symbols
 ```
 

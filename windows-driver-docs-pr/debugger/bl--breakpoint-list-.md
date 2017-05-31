@@ -21,7 +21,7 @@ api_type:
 
 The **bl** command lists information about existing breakpoints.
 
-``` syntax
+```
 bl [/L] [Breakpoints]
 ```
 
@@ -92,7 +92,7 @@ The following example shows the output of a **bl** command.
 
 Example
 
-```cmd
+```
 0:000> bl
  0 e 010049e0     0001 (0001)  0:**** stst!main
 ```

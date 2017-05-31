@@ -21,7 +21,7 @@ api_type:
 
 The **!tzinfo** extension displays the contents of the specified thermal zone information structure.
 
-``` syntax
+```
 !tzinfo Address
 ```
 

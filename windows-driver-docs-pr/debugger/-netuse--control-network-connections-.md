@@ -21,7 +21,7 @@ api_type:
 
 The **.netuse** command adds a connection to a network share.
 
-``` syntax
+```
 .netuse /a "[Local]" "Remote" "[User]" "[Password]" 
 ```
 

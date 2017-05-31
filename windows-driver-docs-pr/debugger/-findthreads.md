@@ -23,7 +23,7 @@ The !findthreads extension displays summary information about one or more thread
 
 Syntax
 
-``` syntax
+```
 !findthreads [-v][-t  <Thread Address>|-i <IRP Address>|-d <Device Address>|( -a <Pointer Address> -e <End Address> | -l <Range Length>)] 
 ```
 
@@ -77,7 +77,7 @@ Remarks
 
 Here is example output using the -v and -t options:
 
-``` syntax
+```
 kd> !findthreads -v -t ffffd001ee29cdc0
 
 Added criterion for THREAD 0xffffd001ee29cdc0

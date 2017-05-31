@@ -23,14 +23,14 @@ The **ph** command executes the program until any kind of branching instruction 
 
 User-Mode
 
-``` syntax
+```
 [~Thread] ph [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-``` syntax
-    ph [r] [= StartAddress] [Count] 
+```
+ph [r] [= StartAddress] [Count] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

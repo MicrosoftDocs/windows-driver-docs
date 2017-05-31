@@ -21,7 +21,7 @@ api_type:
 
 The **!pci** extension displays the current status of the peripheral component interconnect (PCI) buses, as well as any devices attached to those buses.
 
-``` syntax
+```
 !pci [Flags [Segment] [Bus [Device [Function [MinAddress MaxAddress]]]]]
 ```
 
@@ -118,7 +118,7 @@ To edit the PCI configuration space, use [**!ecb**](-ecb---ecd---ecw.md), **!ecd
 
 The following example displays a list of all buses and their devices. This command will take a long time to execute. You will see a moving counter at the bottom of the display while the debugger scans the target system for PCI buses:
 
-``` syntax
+```
 kd> !pci 2 ff
 PCI Bus 0
 00:0  8086:1237.02  Cmd[0106:.mb..s]  Sts[2280:.....]  Device  Host bridge
@@ -133,7 +133,7 @@ PCI Bus 1
 
 This example displays verbose information about the devices on the primary bus. The two-digit number at the beginning of each line is the device number; the one-digit number following it is the function number:
 
-``` syntax
+```
 kd> !pci 1 0
 PCI Bus 0
 00:0  8086:1237.02  Cmd[0106:.mb..s]  Sts[2280:.....]  Device  Host bridge
@@ -157,7 +157,7 @@ PCI Bus 0
 
 This example shows even more detailed information about bus 0 (zero), device 0x0D, and function 0x1, including the raw DWORDS from addresses between 0x00 and 0x3F:
 
-``` syntax
+```
 kd> !pci f 0 d 1 0 3f
 PCI Bus 0
 0d:1  8086:7010.00  Cmd[0005:i.b...]  Sts[0280:.....]  Device  IDE controller
@@ -171,7 +171,7 @@ PCI Bus 0
 
 This example displays the configuration space for segment 1, bus 0, device 1:
 
-``` syntax
+```
 0: kd> !pci 301 1 0 1
  
 PCI Configuration Space (Segment:0001 Bus:00 Device:01 Function:00)
@@ -192,7 +192,7 @@ Common Header:
 
 To display all devices and buses on valid segments, issue the command **!pci 602 ffff ff**:
 
-``` syntax
+```
 0: kd> !pci 602 ffff ff
 Scanning the following PCI segments: 0 0x1
 PCI Segment 0 Bus 0

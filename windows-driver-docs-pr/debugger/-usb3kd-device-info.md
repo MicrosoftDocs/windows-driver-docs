@@ -21,7 +21,7 @@ api_type:
 
 The **!usb3kd.device\_info** command displays information about a USB device in the [USB 3.0 tree](usb-3-extensions.md#usb-3-tree).
 
-``` syntax
+```
 !usb3kd.device_info DeviceContext
 ```
 
@@ -46,7 +46,7 @@ Examples
 
 You can obtain the address of the device context structure by looking at the output of the [**!usb\_tree**](-usb3kd-usb-tree.md) command. In the following example, the address of the device context structure is 0xfffffa8005abd0c0.
 
-```cmd
+```
 3: kd> !usb_tree
 
 ## Dumping HUB Tree - !drvObj 0xfffffa800597f770
@@ -69,7 +69,7 @@ Topology
 
 Now you can pass the address of the device context to the **!device\_info** command.
 
-```cmd
+```
 3: kd> !device_info 0xfffffa8005abd0c0
 
 ## Dumping Device Information fffffa8005abd0c0

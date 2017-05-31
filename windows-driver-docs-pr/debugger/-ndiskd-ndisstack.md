@@ -25,8 +25,8 @@ api_type:
 
 The **!ndiskd.ndisstack** extension displays a debug stack trace.
 
-``` syntax
-    !ndiskd.ndisstack [-handle <x>] [-statistics] 
+```
+!ndiskd.ndisstack [-handle <x>] [-statistics] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

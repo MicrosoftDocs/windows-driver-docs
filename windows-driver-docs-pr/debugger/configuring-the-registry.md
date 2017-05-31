@@ -25,7 +25,7 @@ This will add entries for the settings that will be prefixed with an "x" so that
 
 ```
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Symbol Server Proxy]
-"Available Settings"="Remove the &#39;x&#39; prefix to use the setting"
+"Available Settings"="Remove the 'x' prefix to use the setting"
 "xLogLevel"=dword:0000000f
 "xNoInternetProxy"=dword:00000001
 "xNoFilePointers"=dword:00000001

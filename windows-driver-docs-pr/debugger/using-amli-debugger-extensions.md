@@ -18,13 +18,13 @@ ms.technology: windows-devices
 
 In Windows XP and later versions of Windows, AMLI Debugger extension commands are contained in the extension module Kdexts.dll and use the following syntax:
 
-``` syntax
+```
 kd> !amli command [parameters] 
 ```
 
 In Windows 2000, these extension commands are contained in Acpikd.dll and use the following syntax:
 
-``` syntax
+```
 kd> !acpikd.amli command [parameters] 
 ```
 
@@ -32,7 +32,7 @@ As with any extension module, after it has been loaded you can omit the **acpikd
 
 If you are at the AMLI Debugger prompt, you can execute any of these extension commands by simply entering the *command* name without the **!amli** prefix:
 
-``` syntax
+```
 AMLI(? for help)-> command [parameters] 
 ```
 

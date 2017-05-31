@@ -23,7 +23,7 @@ The **s** command searches through memory to find a specific byte pattern.
 
 Do not confuse this command with the [**~s (Change Current Processor)**](-s--change-current-processor-.md), [**~s (Set Current Thread)**](-s--set-current-thread-.md), [**|s (Set Current Process)**](-s--set-current-process-.md), or [**||s (Set Current System)**](--s--set-current-system-.md) commands.
 
-``` syntax
+```
 s [-[[Flags]Type]] Range Pattern 
 s -[[Flags]]v Range Object 
 s -[[Flags]]sa Range 
@@ -175,25 +175,25 @@ The **s-sa** and **s-su** commands search for unspecified ASCII and Unicode stri
 
 Example: The following command finds ASCII strings that are of length &gt;=3 in the range beginning at 0000000140000000 and ending 400 bytes later.
 
-``` syntax
+```
 s-sa 0000000140000000 L400
 ```
 
 The following command finds ASCII strings that are of length &gt;=4 in the range beginning at 0000000140000000 and ending 400 bytes later
 
-``` syntax
+```
 s -[l4]sa 0000000140000000 L400
 ```
 
 The following command does the same thing, but it limits the search to writeable memory regions.
 
-``` syntax
+```
 s -[wl4]sa 0000000140000000 L400
 ```
 
 The following command does the same thing, but displays only the address of the match, rather than the address and the value.
 
-``` syntax
+```
 s -[1wl4]sa 0000000140000000 L400
 ```
 
@@ -201,15 +201,15 @@ The **s-v** command searches for objects of the same data type as the *Object* o
 
 Example: Assume the current radix is 16. The following three command all do the same thing: search memory locations 0012FF40 through 0012FF5F for "Hello".
 
-``` syntax
+```
 0:000> s 0012ff40 L20 'H' 'e' 'l' 'l' 'o' 
 ```
 
-``` syntax
+```
 0:000> s 0012ff40 L20 48 65 6c 6c 6f 
 ```
 
-``` syntax
+```
 0:000> s -a 0012ff40 L20 "Hello" 
 ```
 
@@ -219,7 +219,7 @@ The debugger returns only patterns that are completely contained in the search r
 
 The following example shows a search that uses the *Type* parameter. This command searches memory locations 0012FF40 through 0012FF5F for the double-word 'VUTS':
 
-``` syntax
+```
 0:000> s -d 0012ff40 L20 'VUTS' 
 ```
 

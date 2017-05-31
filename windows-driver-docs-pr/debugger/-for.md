@@ -21,7 +21,7 @@ api_type:
 
 The **.for** token behaves like the **for** keyword in C, except that multiple increment commands must be separated by semicolons, not by commas.
 
-``` syntax
+```
 .for (InitialCommand ; Condition ; IncrementCommands) { Commands } 
 ```
 

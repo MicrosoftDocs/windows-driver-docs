@@ -21,7 +21,7 @@ api_type:
 
 The **!isainfo** extension displays information about PNPISA cards or devices present in the system..
 
-``` syntax
+```
 !isainfo [Card]
 ```
 
@@ -57,7 +57,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-``` syntax
+```
 0: kd> !isainfo
 ISA PnP FDO @ 0x867b9938, DevExt @ 0x867b99f0, Bus # 0
 Flags (0x80000000)  DF_BUS

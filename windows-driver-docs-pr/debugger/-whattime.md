@@ -21,7 +21,7 @@ api_type:
 
 The **!whattime** extension converts a tick count into a standard time value.
 
-``` syntax
+```
 !whattime Ticks
 ```
 
@@ -57,7 +57,7 @@ Remarks
 
 The output is displayed as *HH:MM:SS.mmm*. Here is an example:
 
-``` syntax
+```
 kd> !whattime 29857ae4
 696613604 Ticks in Standard Time:  15:02:16.040s
 ```

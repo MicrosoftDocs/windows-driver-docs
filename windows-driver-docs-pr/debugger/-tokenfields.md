@@ -21,7 +21,7 @@ api_type:
 
 The **!tokenfields** extension displays the names and offsets of the fields within the access token object (the TOKEN structure).
 
-``` syntax
+```
 !tokenfields
 ```
 
@@ -58,7 +58,7 @@ Remarks
 
 This extension command is not available in Windows XP or later versions of Windows. Instead, use the [**dt (Display Type)**](dt--display-type-.md) command to show the TOKEN structure directly:
 
-``` syntax
+```
 kd> dt nt!_TOKEN 
 ```
 
@@ -66,7 +66,7 @@ To see a specific instance of the TOKEN structure, use the [**!token**](-token.m
 
 Here is an example of **!tokenfields** from a Windows 2000 system:
 
-``` syntax
+```
 kd> !tokenfields
  TOKEN structure offsets:
     TokenSource:           0x0

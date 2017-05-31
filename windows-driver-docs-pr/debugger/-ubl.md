@@ -21,7 +21,7 @@ api_type:
 
 The **!ubl** extension lists all user-space breakpoints and their current status.
 
-``` syntax
+```
 !ubl
 ```
 
@@ -54,7 +54,7 @@ Remarks
 
 Here is an example of the use and display of user-space breakpoints:
 
-``` syntax
+```
 kd> !ubp 8014a131
 This command is VERY DANGEROUS, and may crash your system!
 If you don't know what you are doing, enter "!ubc *" now!

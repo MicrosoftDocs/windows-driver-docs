@@ -21,7 +21,7 @@ api_type:
 
 The **!wmitrace.eventlogdump** extension displays the contents of the specified logger. The display is formatted like an event log.
 
-``` syntax
+```
 !wmitrace.eventlogdump { LoggerID | LoggerName }
 ```
 

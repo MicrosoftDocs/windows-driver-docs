@@ -21,7 +21,7 @@ api_type:
 
 The **.bugcheck** command displays the data from a bug check on the target computer.
 
-``` syntax
+```
     .bugcheck 
 ```
 

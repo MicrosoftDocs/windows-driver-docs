@@ -23,7 +23,7 @@ The **~e** command executes one or more commands for a specific thread or for al
 
 Do not confuse this command with the [**e (Enter Values)**](e--ea--eb--ed--ed--ef--ep--eq--eu--ew--eza--ezu--enter-values-.md) command.
 
-``` syntax
+```
 ~Thread e CommandString
 ```
 
@@ -72,7 +72,7 @@ You can specify threads only in user mode. In kernel mode, the tilde (~) refers 
 
 When you use the **~e** command together with one thread, the **~e** command only saves some typing. For example, the following two commands are equivalent.
 
-``` syntax
+```
 0:000> ~2e r; k; kd 
 
 0:000> ~2r; ~2k; ~2kd 
@@ -80,7 +80,7 @@ When you use the **~e** command together with one thread, the **~e** command onl
 
 However, you can use the **~e** qualifier to repeat a command or extension command several times. When you use the qualifier in this manner, it can eliminate extra typing. For example, the following command repeats the [**!gle**](-gle.md) extension command for every thread that you are debugging.
 
-``` syntax
+```
 0:000> ~*e !gle 
 ```
 

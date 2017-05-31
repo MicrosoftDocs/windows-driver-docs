@@ -21,7 +21,7 @@ api_type:
 
 The **!dml\_proc** extension displays a list of processes and provides links for obtaining more detailed information about processes.
 
-``` syntax
+```
 !dml_proc
 ```
 

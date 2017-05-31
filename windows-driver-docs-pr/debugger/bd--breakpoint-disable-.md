@@ -21,7 +21,7 @@ api_type:
 
 The **bd** command disables, but does not delete, previously set breakpoints.
 
-``` syntax
+```
 bd Breakpoints
 ```
 

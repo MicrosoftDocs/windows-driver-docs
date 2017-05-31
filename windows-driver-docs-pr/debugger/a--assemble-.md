@@ -21,7 +21,7 @@ api_type:
 
 The **a** command assembles 32-bit x86 instruction mnemonics and puts the resulting instruction codes into memory.
 
-``` syntax
+```
 a [Address]
 ```
 

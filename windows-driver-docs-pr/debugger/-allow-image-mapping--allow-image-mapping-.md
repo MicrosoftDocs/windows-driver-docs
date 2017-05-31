@@ -21,8 +21,8 @@ api_type:
 
 The **.allow\_image\_mapping** command controls whether image files will be mapped.
 
-``` syntax
-    .allow_image_mapping [/r] 0 
+```
+.allow_image_mapping [/r] 0 
 .allow_image_mapping [/r] 1 
 .allow_image_mapping 
 ```

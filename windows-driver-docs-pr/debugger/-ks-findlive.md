@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.findlive** extension searches the internal Ks.sys debug log to attempt to find live objects of a specified type.
 
-``` syntax
-    !ks.findlive Type [Entries] [Level] 
+```
+!ks.findlive Type [Entries] [Level] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

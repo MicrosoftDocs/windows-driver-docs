@@ -21,8 +21,8 @@ api_type:
 
 The **vertarget** command displays the current version of the Microsoft Windows operating system of the target computer.
 
-``` syntax
-    vertarget 
+```
+vertarget 
 ```
 
 ## <span id="ddk_cmd_show_target_computer_version_dbg"></span><span id="DDK_CMD_SHOW_TARGET_COMPUTER_VERSION_DBG"></span>

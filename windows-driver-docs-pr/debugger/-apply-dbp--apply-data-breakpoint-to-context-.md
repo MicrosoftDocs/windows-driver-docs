@@ -21,7 +21,7 @@ api_type:
 
 The **.apply\_dbp** command applies the current process' existing data breakpoints to the specified register context.
 
-``` syntax
+```
     .apply_dbp [/m Context] 
 ```
 

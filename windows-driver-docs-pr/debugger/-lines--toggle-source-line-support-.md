@@ -21,8 +21,8 @@ api_type:
 
 The **.lines** command enables or disables support for source-line information.
 
-``` syntax
-    .lines [-e|-d|-t]
+```
+.lines [-e|-d|-t]
 ```
 
 ## <span id="ddk_meta_toggle_source_line_support_dbg"></span><span id="DDK_META_TOGGLE_SOURCE_LINE_SUPPORT_DBG"></span>Parameters

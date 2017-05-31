@@ -21,7 +21,7 @@ api_type:
 
 The **!rebase** extension searches in a rebase.log file for a specified address or symbol.
 
-``` syntax
+```
 !rebase [-r] Address [Path]
 !rebase Symbol [Path]
 !rebase -stack [Path]

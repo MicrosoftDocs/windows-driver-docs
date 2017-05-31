@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfqueue** extension displays information about a specified framework queue object and the framework request objects that are in the queue.
 
-``` syntax
+```
 !wdfkd.wdfqueue Handle
 ```
 

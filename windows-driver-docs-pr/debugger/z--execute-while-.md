@@ -23,13 +23,13 @@ The **z** command executes a command while a given condition is true.
 
 User-Mode
 
-``` syntax
+```
 Command ; z( Expression ) 
 ```
 
 Kernel-Mode
 
-``` syntax
+```
 Command ; [Processor] z( Expression )
 ```
 
@@ -85,19 +85,19 @@ To break a loop that is continuing for too long, use [**CTRL+C**](ctrl-c--break-
 
 The following code example shows an unnecessarily complex way to zero the **eax** register.
 
-``` syntax
+```
 0:000> reax = eax - 1 ; z(eax)
 ```
 
 The following example increments the **eax** and **ebx** registers until one of them is at least 8 and then it increments the **ecx** register once.
 
-``` syntax
+```
 0:000> reax=eax+1; rebx=ebx+1; z((eax<8)|(ebx<8)); recx=ecx+1
 ```
 
 The following example uses C++ expression syntax and uses the pseudo-register **$t0** as a loop variable.
 
-``` syntax
+```
 0:000> .expr /s c++
 Current expression evaluator: C++ - C++ source expressions
 

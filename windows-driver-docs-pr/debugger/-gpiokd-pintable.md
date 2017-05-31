@@ -21,7 +21,7 @@ api_type:
 
 The **!gpiokd.pintable** command displays information about an array of GPIO pins.
 
-``` syntax
+```
 !gpiokd.pintable PinBase PinCount [Flags]
 ```
 

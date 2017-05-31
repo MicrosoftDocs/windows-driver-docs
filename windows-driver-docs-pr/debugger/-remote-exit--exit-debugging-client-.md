@@ -21,7 +21,7 @@ api_type:
 
 The **.remote\_exit** command exits the debugging client but does not end the debugging session.
 
-``` syntax
+```
 .remote_exit [FinalCommands]
 ```
 

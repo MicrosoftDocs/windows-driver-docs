@@ -21,8 +21,8 @@ api_type:
 
 The **.exepath** command sets or displays the executable file search path.
 
-``` syntax
-    .exepath[+] [Directory [; ...]] 
+```
+.exepath[+] [Directory [; ...]] 
 ```
 
 ## <span id="ddk_meta_set_executable_path_dbg"></span><span id="DDK_META_SET_EXECUTABLE_PATH_DBG"></span>Parameters

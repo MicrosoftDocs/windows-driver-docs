@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbpdoxls** command displays information about all physical device objects (PDOs) created by the USB hub driver. For each PDO, this command displays a row of comma-separated values.
 
-``` syntax
+```
 !usbkd.usbpdoxls
 ```
 

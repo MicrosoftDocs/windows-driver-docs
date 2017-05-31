@@ -21,7 +21,7 @@ api_type:
 
 The **.cordll** command controls managed code debugging and the Microsoft .NET common language runtime (CLR).
 
-``` syntax
+```
 .cordll [Options]
 ```
 

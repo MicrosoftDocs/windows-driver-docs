@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.topology** extension displays a sorted graph of the internal topology of the filter closest to *Object*.
 
-``` syntax
-    !ks.topology Object [Level] [Flags] 
+```
+!ks.topology Object [Level] [Flags] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

@@ -21,8 +21,8 @@ api_type:
 
 The **.idle\_cmd** command sets the *idle command*. This is a command that is executed whenever control returns from the target to the debugger. For example, when the target reaches a breakpoint, this command executes.
 
-``` syntax
-    .idle_cmd
+```
+.idle_cmd
 .idle_cmd String 
 .idle_cmd /d
 ```

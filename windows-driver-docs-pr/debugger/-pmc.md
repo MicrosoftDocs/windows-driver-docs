@@ -23,7 +23,7 @@ The **!pmc** extension displays the Performance Monitor Counter (PMC) register a
 
 This extension is supported only on an Itanium-based target computer.
 
-``` syntax
+```
 !pmc [- Option] Expression [DisplayLevel]
 ```
 

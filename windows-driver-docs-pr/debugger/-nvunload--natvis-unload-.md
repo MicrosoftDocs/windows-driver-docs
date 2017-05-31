@@ -21,8 +21,8 @@ api_type:
 
 The .nvunload command unloads a NatVis file from the debugger environment.
 
-``` syntax
-    .nvunload FileName|ModuleName 
+```
+.nvunload FileName|ModuleName 
    
 ```
 

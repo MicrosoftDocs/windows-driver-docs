@@ -21,7 +21,7 @@ api_type:
 
 The **rm** command modifies or displays the register display mask. This mask controls how registers are displayed by the [**r (Registers)**](r--registers-.md) command.
 
-``` syntax
+```
 rm 
 rm ? 
 rm Mask 

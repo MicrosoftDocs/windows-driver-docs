@@ -21,7 +21,7 @@ api_type:
 
 The **!elog\_str** extension adds a string to the event log.
 
-``` syntax
+```
 !elog_str String
 ```
 

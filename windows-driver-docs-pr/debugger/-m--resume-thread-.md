@@ -23,7 +23,7 @@ The **~m** command resumes execution of the specified thread.
 
 Do not confuse this command with the [**m (Move Memory)**](m--move-memory-.md) command.
 
-``` syntax
+```
 ~Thread m 
 ```
 

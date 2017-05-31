@@ -23,7 +23,7 @@ The **!amli cl** extension clears the AML interpreter's event log.
 
 Syntax
 
-``` syntax
+```
 !amli cl
 ```
 

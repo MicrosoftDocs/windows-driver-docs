@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfdeviceinterrupts** extension displays all the interrupt objects for a specified device handle.
 
-``` syntax
+```
 !wdfkd.wdfdeviceinterrupts Handle
 ```
 

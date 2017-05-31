@@ -21,7 +21,7 @@ api_type:
 
 The **.pop** command restores the state of the debugger to a state that has previously been saved by using the [**.push (Save Debugger State)**](-push--save-debugger-state-.md) command.
 
-``` syntax
+```
 .pop
 .pop /r
 .pop /r /q

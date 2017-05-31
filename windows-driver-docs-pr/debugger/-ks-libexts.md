@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.libexts** extension provides access to Microsoft-supplied library extensions that are statically linked to the extension module.
 
-``` syntax
-    !ks.libexts [Command] [Libext] 
+```
+!ks.libexts [Command] [Libext] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

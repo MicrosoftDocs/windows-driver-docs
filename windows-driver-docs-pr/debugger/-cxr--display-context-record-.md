@@ -21,8 +21,8 @@ api_type:
 
 The **.cxr** command displays the context record saved at the specified address. It also sets the register context.
 
-``` syntax
-    .cxr [Options] [Address]  
+```
+.cxr [Options] [Address]  
 ```
 
 ## <span id="ddk_meta_display_context_record_dbg"></span><span id="DDK_META_DISPLAY_CONTEXT_RECORD_DBG"></span>Parameters

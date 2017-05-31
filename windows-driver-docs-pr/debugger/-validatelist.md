@@ -21,7 +21,7 @@ api_type:
 
 The **!validatelist** extension verifies that the backward and forward links in a doubly-linked list are valid.
 
-``` syntax
+```
 !validatelist Address
 ```
 

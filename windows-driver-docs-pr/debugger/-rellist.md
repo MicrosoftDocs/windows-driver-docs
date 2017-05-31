@@ -21,8 +21,8 @@ api_type:
 
 The **!rellist** extension displays a Plug and Play relation list.
 
-``` syntax
-    !rellist Address [Flags] 
+```
+!rellist Address [Flags] 
 ```
 
 ## <span id="ddk__rellist_dbg"></span><span id="DDK__RELLIST_DBG"></span>Parameters

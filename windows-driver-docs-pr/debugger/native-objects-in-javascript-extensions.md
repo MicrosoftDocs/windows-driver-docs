@@ -24,8 +24,8 @@ Example debugger objects include the following.
 For example the host.namespace.Debugger.Utility.Control.ExecuteCommand object can be used to send the u command to the debugger with following two lines of JavaScript code.
 
 ```
-  var ctl = host.namespace.Debugger.Utility.Control;   
-  var output = ctl.ExecuteCommand("u");
+var ctl = host.namespace.Debugger.Utility.Control;   
+var output = ctl.ExecuteCommand("u");
 ```
 
 This topic describes how to work with common objects and provides reference information on their attributes and behaviors.
@@ -158,12 +158,12 @@ In this code snippet, we create add a sub-namespace called 'COM' on to the exist
 var comProcessExtension =
 {
     //
-    // Add a sub-namespace called &#39;COM&#39; on process.
+    // Add a sub-namespace called 'COM' on process.
     //
     get COM()
     {
         //
-        // What is &#39;this&#39; below...?  It&#39;s the debugger&#39;s process object.  Yes -- this means that there is a cross-language
+        // What is 'this' below...?  It's the debugger's process object.  Yes -- this means that there is a cross-language
         // object hierarchy here.  A C++ object implemented in the debugger has a parent model (prototype) which is
         // implemented in JavaScript.
         //
@@ -190,7 +190,7 @@ class comNamespace
     {
         //
         // This is an entirely JavaScript object.  Each instantiation of a comNamespace will keep track
-        // of what process it is attached to (passed via the &#39;&#39;this&#39;&#39; pointer of the property getter
+        // of what process it is attached to (passed via the ''this'' pointer of the property getter
         // we authored above.
         //
         this.__process = process;
@@ -218,7 +218,7 @@ class gipTable
     constructor(gipProcess)
     {
         //
-        // Windows 8 through certain builds of Windows 10, it&#39;s in CGIPTable::_palloc.  In certain builds
+        // Windows 8 through certain builds of Windows 10, it's in CGIPTable::_palloc.  In certain builds
         // of Windows 10 and later, this has been moved to GIPEntry::_palloc.  We need to check which.
         //
         var gipAllocator = undefined;
@@ -357,7 +357,7 @@ Load the JavaScript scripting provider and the extension.
 ```
 0:000:x86> !load jsprovider.dll
 0:000:x86> .scriptload C:\JSExtensions\GipTableAbstractor.js
-JavaScript script successfully loaded from &#39;C:\JSExtensions\GipTableAbstractor.js&#39;
+JavaScript script successfully loaded from 'C:\JSExtensions\GipTableAbstractor.js'
 ```
 
 Then use the dx command to display information about the process using the predefined @$curprocess.
@@ -431,7 +431,7 @@ Load the JavaScript scripting provider if necessary and then load the DuplicateD
 ```
 0:000:x86> !load jsprovider.dll
 0:000:x86> .scriptload C:\JSExtensions\DuplicateDataModel.js
-JavaScript script successfully loaded from &#39;C:\JSExtensions\DuplicateDataModel.js&#39;
+JavaScript script successfully loaded from 'C:\JSExtensions\DuplicateDataModel.js'
 ```
 
 Use the dx command to test the new Duplicate function.

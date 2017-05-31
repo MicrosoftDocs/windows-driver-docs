@@ -21,7 +21,7 @@ api_type:
 
 The **!wmitrace.dumpminievent** extension displays the system event log trace fragment, which is stored in a dump file.
 
-``` syntax
+```
 !wmitrace.dumpminievent
 ```
 

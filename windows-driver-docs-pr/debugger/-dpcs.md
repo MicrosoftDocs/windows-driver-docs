@@ -21,7 +21,7 @@ api_type:
 
 The **!dpcs** extension displays the deferred procedure call (DPC) queues for a specified processor.
 
-``` syntax
+```
 !dpcs [Processor]
 ```
 

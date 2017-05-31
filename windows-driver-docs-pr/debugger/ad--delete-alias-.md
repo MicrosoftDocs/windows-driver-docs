@@ -21,7 +21,7 @@ api_type:
 
 The **ad** command deletes an alias from the alias list.
 
-``` syntax
+```
 ad [/q] Name 
 ad * 
 ```

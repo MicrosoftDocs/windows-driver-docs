@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.\_ehciregs** command displays the operational and root hub port status registers of a USB EHCI host controller.
 
-``` syntax
+```
 !usbkd._ehciregs StructAddr[, NumPorts]
 ```
 
@@ -44,7 +44,7 @@ Examples
 
 Here is one way to get the address of a **usbehci!\_HC\_OPERATIONAL\_REGISTER** structure. First enter [**!usbkd.usbhcdlist**](-usbkd-usbhcdlist.md).
 
-``` syntax
+```
 0: kd> !usbkd.usbhcdlist
 MINIPORT List @ fffff80001e5bbd0
 
@@ -62,7 +62,7 @@ In the preceding output,` ffffd000228bf020` is the address of a **\_HC\_OPERATIO
 
 Now pass the structure address to **!\_ehciregs**. In this example, the second argument limits the display to two root hub port status registers.
 
-``` syntax
+```
 0: kd> !usbkd._ehciregs ffffd000228bf020, 2
 *(ehci)HC_OPERATIONAL_REGISTER ffffd000228bf020
     USBCMD 00010001

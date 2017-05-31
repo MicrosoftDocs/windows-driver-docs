@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfcommonbuffer** extension displays information about a WDF common buffer object.
 
-``` syntax
+```
 !wdfkd.wdfcommonbuffer Handle
 ```
 

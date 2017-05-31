@@ -29,7 +29,7 @@ As suggested, use [**!analyze -v**](-analyze.md) to get more detailed informatio
 kd> !analyze -v
 DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS (cb)
 Caused by a driver not cleaning up completely after an I/O.
-When possible, the guilty driver&#39;s name (Unicode string) is printed on
+When possible, the guilty driver's name (Unicode string) is printed on
 the bugcheck screen and saved in KiBugCheckDriver.
 Arguments:
 Arg3: 81861788, A pointer to the MDL containing the locked pages.
