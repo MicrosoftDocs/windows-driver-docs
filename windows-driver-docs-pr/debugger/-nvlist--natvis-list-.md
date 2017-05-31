@@ -21,8 +21,8 @@ api_type:
 
 The .nvllist command lists the NatVis files loaded into the debugger environment.
 
-``` syntax
-   .nvlist
+```
+.nvlist
 ```
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment

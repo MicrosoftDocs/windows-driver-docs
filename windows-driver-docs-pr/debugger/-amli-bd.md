@@ -23,7 +23,7 @@ The **!amli bd** extension temporarily disables an AML breakpoint.
 
 Syntax
 
-``` syntax
+```
 !amli bd Breakpoint!amli bd *
 ```
 

@@ -23,8 +23,8 @@ The **.restart** command restarts the target application.
 
 Do not confuse this command with the [**.restart (Restart Kernel Connection)**](-restart--restart-kernel-connection-.md) command, which works only in kernel mode.
 
-``` syntax
-    .restart 
+```
+.restart 
 ```
 
 ## <span id="ddk_meta_restart_target_application_dbg"></span><span id="DDK_META_RESTART_TARGET_APPLICATION_DBG"></span>

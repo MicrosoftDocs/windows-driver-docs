@@ -40,7 +40,7 @@ If you start a new user-mode application by using the debugger, the initial brea
 
 To move the program counter to the beginning of the application, add a breakpoint at the entry point to your binary. In the [Debugger Command window](debugger-command-window.md), type the following command.
 
-``` syntax
+```
 bp main
 g
 ```
@@ -85,7 +85,7 @@ You can use the [**lsp (Set Number of Source Lines)**](lsp--set-number-of-source
 
 The following sequence of commands is an effective way to step through a source file.
 
-``` syntax
+```
 .lines        enable source line information
 bp main       set initial breakpoint
 l+t           stepping will be done by source line
@@ -111,7 +111,7 @@ You can also perform source debugging by using the expression evaluator to deter
 
 The following command displays a memory offset.
 
-``` syntax
+```
 ? `[[module!]filename][:linenumber]` 
 ```
 
@@ -123,7 +123,7 @@ This syntax is understood in CDB only if the **.lines** command or the **-lines*
 
 This technique is very versatile, because you can use it regardless of where the program counter is pointing. For example, this technique enables you to set breakpoints in advance, by using commands such as the following.
 
-``` syntax
+```
 bp `source.c:31` 
 ```
 
@@ -135,7 +135,7 @@ When you are debugging in source mode, there can be multiple function calls on a
 
 For example, in the following command, the **t** command steps into both **GetTickCount** and **printf**, while the **p** command steps over both function calls.
 
-``` syntax
+```
 printf( "%x\n", GetTickCount() );
 ```
 

@@ -73,7 +73,7 @@ Complete these steps using Computer Management:
 
 Configure a debugger to use this symbol path:
 
-``` syntax
+```
 srv*C:\Symbols*\\MachineName\Symbols
 ```
 
@@ -86,19 +86,19 @@ There are multiples ways to configure your debugger’s symbol path (.sympath) t
 
 Direct File Share use (no local caching):
 
-``` syntax
+```
 srv*\\MachineName\Symbols
 ```
 
 Local Caching of the File Share’s files to a particular local folder (e.g. c:\\Symbols):
 
-``` syntax
+```
 srv*c:\Symbols*\\MachineName\Symbols
 ```
 
 Local Caching of the File Share’s files to the %DBGHELP\_HOMEDIR%\\Sym folder:
 
-``` syntax
+```
 srv**\\MachineName\Symbols
 ```
 

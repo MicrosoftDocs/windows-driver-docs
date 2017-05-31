@@ -21,8 +21,8 @@ api_type:
 
 The **!minipkd.srb** extension displays the specified SCSI request block (SRB) data structure.
 
-``` syntax
-    !minipkd.srb SRB 
+```
+!minipkd.srb SRB 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

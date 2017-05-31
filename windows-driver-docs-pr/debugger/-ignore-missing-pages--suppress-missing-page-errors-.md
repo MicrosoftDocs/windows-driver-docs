@@ -21,7 +21,7 @@ api_type:
 
 The **.ignore\_missing\_pages** command suppresses the error messages when a Kernel Memory Dump has missing pages.
 
-``` syntax
+```
 .ignore_missing_pages 0
 .ignore_missing_pages 1
 .ignore_missing_pages 

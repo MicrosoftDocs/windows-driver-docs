@@ -31,7 +31,7 @@ The following GFlags settings enable UMDH stack traces:
 
     Or, equivalently, use the following GFlags command line, where *ImageName* is the process name (including the file name extension):
 
-    ``` syntax
+    ```
     gflags /i ImageName +ust 
     ```
 
@@ -43,7 +43,7 @@ Before using UMDH, you must have access to the proper symbols for your applicati
 
 For example, if the symbols for your application are located at C:\\MySymbols, and you want to use the public Microsoft symbol store for your Windows symbols, using C:\\MyCache as your downstream store, you would use the following command to set your symbol path:
 
-``` syntax
+```
 set _NT_SYMBOL_PATH=c:\mysymbols;srv*c:\mycache*https://msdl.microsoft.com/download/symbols 
 ```
 
@@ -61,7 +61,7 @@ After making these preparations, you can use UMDH to capture information about t
 
 2.  Use UMDH to analyze the heap memory allocations for this process, and save it to a log file. Use the -p switch with the PID, and the -f switch with the name of the log file. For example, if the PID is 124, and you want to name the log file Log1.txt, use the following command:
 
-    ``` syntax
+    ```
     umdh -p:124 -f:log1.txt 
     ```
 
@@ -71,13 +71,13 @@ After making these preparations, you can use UMDH to capture information about t
 
     UMDH can compare two different log files and display the change in their respective allocation sizes. You can use the greater-than symbol (**&gt;**) to redirect the results into a third text file. You may also want to include the -d option, which converts the byte and allocation counts from hexadecimal to decimal. For example, to compare Log1.txt and Log2.txt, saving the results of the comparison to the file LogCompare.txt, use the following command:
 
-    ``` syntax
+    ```
     umdh log1.txt log2.txt > logcompare.txt 
     ```
 
 5.  Open the LogCompare.txt file. Its contents resemble the following:
 
-    ``` syntax
+    ```
     + 5320 ( f110 - 9df0) 3a allocs BackTrace00B53 
     Total increase == 5320 
     ```
@@ -86,7 +86,7 @@ After making these preparations, you can use UMDH to capture information about t
 
 6.  To determine what is in that backtrace, open one of the original log files (for example, Log2.txt) and search for "BackTrace00B53." The results are similar to this data:
 
-    ``` syntax
+    ```
     00005320 bytes in 0x14 allocations (@ 0x00000428) by: BackTrace00B53
     ntdll!RtlDebugAllocateHeap+0x000000FD
     ntdll!RtlAllocateHeapSlowly+0x0000005A

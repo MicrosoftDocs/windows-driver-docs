@@ -21,8 +21,8 @@ api_type:
 
 The **!logexts.logb** extension displays or flushes the output buffer.
 
-``` syntax
-    !logexts.logb p 
+```
+!logexts.logb p 
 !logexts.logb f 
 ```
 

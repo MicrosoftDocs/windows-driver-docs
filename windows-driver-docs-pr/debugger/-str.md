@@ -21,7 +21,7 @@ api_type:
 
 The **!str** extension displays an ANSI\_STRING or OEM\_STRING structure.
 
-``` syntax
+```
 !str Address
 ```
 
@@ -61,7 +61,7 @@ Remarks
 
 ANSI strings are counted 8-bit character strings, as defined in the following structure:
 
-``` syntax
+```
 typedef struct _STRING {
     USHORT Length;
     USHORT MaximumLength;

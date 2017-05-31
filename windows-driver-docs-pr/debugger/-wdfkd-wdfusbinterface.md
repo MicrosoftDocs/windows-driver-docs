@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfusbinterface** extension displays information about a specified Kernel-Mode Driver Framework (KMDF) USB interface object, including its possible and current settings.
 
-``` syntax
+```
 !wdfkd.wdfusbinterface Handle [Flags]
 ```
 

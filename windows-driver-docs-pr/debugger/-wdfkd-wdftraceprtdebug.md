@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdftraceprtdebug** extension enables and disables the Traceprt.dll diagnostic mode, which generates verbose debugging information.
 
-``` syntax
+```
 !wdfkd.wdftraceprtdebug {on | off}
 ```
 

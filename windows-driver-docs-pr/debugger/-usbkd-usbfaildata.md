@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbfaildata** command displays the failure data (if any) stored for a USB device.
 
-``` syntax
+```
 !usbkd.usbfaildata PDO
 ```
 
@@ -41,7 +41,7 @@ Examples
 
 Here is one way to find the address of the PDO of a USB device. Enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-``` syntax
+```
  kd> !usbkd.usb2tree
 ...
 2)!ehci_info ffffe00001ca11a0 !devobj ffffe00001ca1050 PCI: VendorId 8086 DeviceId 293c RevisionId 0002 

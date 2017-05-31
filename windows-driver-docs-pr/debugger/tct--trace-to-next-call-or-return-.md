@@ -23,14 +23,14 @@ The **tct** command executes the program until it reaches a call instruction or 
 
 User-Mode
 
-``` syntax
+```
 [~Thread] tct [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-``` syntax
-    tct [r] [= StartAddress] [Count] 
+```
+tct [r] [= StartAddress] [Count] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

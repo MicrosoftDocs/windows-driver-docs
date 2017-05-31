@@ -21,7 +21,7 @@ api_type:
 
 The **bs** command changes the command executed when the specified breakpoint is encountered.
 
-``` syntax
+```
 bs ID ["CommandString"] 
 ```
 

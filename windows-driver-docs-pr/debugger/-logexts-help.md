@@ -21,8 +21,8 @@ api_type:
 
 The **!logexts.help** extension displays a Help text in the Command Prompt window showing all Logexts.dll extension commands.
 
-``` syntax
-    !logexts.help 
+```
+!logexts.help 
 ```
 
 ## <span id="ddk__logexts_help_dbg"></span><span id="DDK__LOGEXTS_HELP_DBG"></span>

@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.pciks** extension lists functional devices for kernel streaming devices that are attached to the PCI bus. Optionally, it can display information about active streams on those functional devices.
 
-``` syntax
-    !ks.pciks [Flags] [Level] 
+```
+!ks.pciks [Flags] [Level] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

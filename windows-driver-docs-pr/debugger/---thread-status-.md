@@ -21,7 +21,7 @@ api_type:
 
 The tilde (**~**) command displays status for the specified thread or for all threads in the current process.
 
-``` syntax
+```
 ~ Thread
 ```
 

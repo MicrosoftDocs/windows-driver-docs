@@ -21,7 +21,7 @@ api_type:
 
 The **.srcnoisy** command controls the verbosity level for source file loading.
 
-``` syntax
+```
 .srcnoisy [Options]
 ```
 

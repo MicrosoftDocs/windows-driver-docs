@@ -21,8 +21,8 @@ api_type:
 
 The **!ndiskd.netreport** extension generates a visual report of the entire network stack. The report **!ndiskd.netreport** generates is an HTML file, and it will give you a link to its location. The HTML file contains detailed information about the network stack, so if you need to share it for analysis you can email it instead of having to send a large crash dump file.
 
-``` syntax
-    !ndiskd.netreport [-outputpath <str>] [-jsononly] 
+```
+!ndiskd.netreport [-outputpath <str>] [-jsononly] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -43,7 +43,7 @@ Examples
 
 Run the **!ndiskd.netreport** extension to draw a box diagram of your network stack.
 
-```cmd
+```
 1: kd> !ndiskd.netreport
 
 

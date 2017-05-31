@@ -21,7 +21,7 @@ api_type:
 
 The **.holdmem** command saves memory ranges and compares them to other memory ranges.
 
-``` syntax
+```
 .holdmem -a Range 
 .holdmem -d { Range | Address } 
 .holdmem -D 

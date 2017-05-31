@@ -21,8 +21,8 @@ api_type:
 
 The **.noshell** command prevents you from using [**.shell**](-shell--command-shell-.md) commands.
 
-``` syntax
-    .noshell 
+```
+.noshell 
 ```
 
 ## <span id="ddk_meta_prohibit_shell_commands_dbg"></span><span id="DDK_META_PROHIBIT_SHELL_COMMANDS_DBG"></span>

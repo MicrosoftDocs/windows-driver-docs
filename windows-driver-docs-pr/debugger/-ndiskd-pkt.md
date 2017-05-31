@@ -25,8 +25,8 @@ api_type:
 
 The **!ndiskd.pkt** extension displays information about an [NDIS\_PACKET](https://msdn.microsoft.com/library/windows/hardware/ff557086) structure.
 
-``` syntax
-    !ndiskd.pkt [-packet] [-verbosity] 
+```
+!ndiskd.pkt [-packet] [-verbosity] 
 ```
 
 ## <span id="ddk__ndiskd_pkt_dbg"></span><span id="DDK__NDISKD_PKT_DBG"></span>Parameters

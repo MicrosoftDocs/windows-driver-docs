@@ -21,7 +21,7 @@ api_type:
 
 The **!btb** extension displays the Itanium-based processor, branch traces buffer (BTB) configuration and trace registers for the current processor.
 
-``` syntax
+```
 !btb
 ```
 

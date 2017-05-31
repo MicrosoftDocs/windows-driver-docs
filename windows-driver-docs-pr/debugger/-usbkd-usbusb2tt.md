@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbusb2tt** command displays information from a **usbport!\_TT** structure.
 
-``` syntax
+```
 !usbkd.usbusb2tt StructAddr
 ```
 

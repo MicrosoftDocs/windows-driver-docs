@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfinterrupt** extension displays information about a WDFINTERRUPT object.
 
-``` syntax
+```
 !wdfkd.wdfinterrupt Handle [Flags]
 ```
 

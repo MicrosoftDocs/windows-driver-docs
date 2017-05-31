@@ -21,7 +21,7 @@ api_type:
 
 The **!bcb** extension displays the specified buffer control block.
 
-``` syntax
+```
 !bcb Address
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The number sign (**\#**) command searches for the specified pattern in the disassembly code.
 
-``` syntax
+```
 # [Pattern] [Address [ L Size ]] 
 ```
 

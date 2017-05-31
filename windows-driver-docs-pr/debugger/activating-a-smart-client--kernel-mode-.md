@@ -27,7 +27,7 @@ You need to specify the remote transfer protocol used by the KD connection serve
 
 The general syntax for starting a smart client depends on the protocol used. The following options exist:
 
-``` syntax
+```
 Debugger -k kdsrv:server=@{npipe:server=Server,pipe=PipeName[,password=Password]},trans=@{ConnectType} [Options]
 
 Debugger -k kdsrv:server=@{tcp:server=Server,port=Socket[,password=Password][,ipversion=6]},trans=@{ConnectType} [Options]
@@ -45,7 +45,7 @@ Debugger -k kdsrv:server=@{ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clic
 
 To use the graphical interface to connect to a KD connection server, WinDbg must be in dormant mode -- it must either have been started with no command-line parameters, or it must have ended the previous debugging session. Select the **File | Connect to Remote Stub** menu command. When the **Connect to Remote Stub Server** dialog box appears, enter one of the following strings into the **Connection string** text box:
 
-``` syntax
+```
 npipe:server=Server,pipe=PipeName[,password=Password] 
 
 tcp:server=Server,port=Socket[,password=Password][,ipversion=6] 
@@ -117,7 +117,7 @@ If a password was used when the KD connection server was created, *Password* mus
 <span id="________trans___________ConnectType_________"></span><span id="________trans___________connecttype_________"></span><span id="________TRANS___________CONNECTTYPE_________"></span> **trans=@{** *ConnectType* **}**  
 Tells the debugger how to connect to the target. The following kernel connection protocols are permitted:
 
-``` syntax
+```
 com:port=ComPort,baud=BaudRate 
 1394:channel=1394Channel[,symlink=1394Protocol] 
 usb2:targetname=String 

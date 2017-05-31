@@ -23,7 +23,7 @@ The **!lockedpages** extension displays driver-locked pages for a specified proc
 
 Syntax
 
-``` syntax
+```
 !lockedpages [Process]
 ```
 

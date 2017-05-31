@@ -101,14 +101,14 @@ Use the [**dg (Display Selector)**](dg--display-selector-.md) command to view se
 
 In MASM expressions, you can also use the **poi** operator to dereference any pointer. For example, if the pointer at address 0x00123456 points to address location 0x00420000, the following two commands are equivalent.
 
-``` syntax
+```
 0:000> dd 420000 
 0:000> dd poi(123456) 
 ```
 
 In C++ expressions, pointers behave like pointers in C++. However, numbers are interpreted as integers. If you have to deference an actual number, you must cast it first, as the following example shows.
 
-``` syntax
+```
 0:000> dd *( (long*) 0x123456 ) 
 ```
 
@@ -122,19 +122,19 @@ You can specify an address range by a pair of addresses or by an address and obj
 
 To specify a range by a pair of addresses, specify the starting address and the ending address. For example, the following example is a range of 8 bytes, beginning at the address 0x00001000.
 
-``` syntax
+```
 0x00001000  0x00001007
 ```
 
 To specify an address range by an address and object count, specify an address argument, the letter L (uppercase or lowercase), and a value argument. The address specifies the starting address. The value specifies the number of objects to be examined or displayed. The size of the object depends on the command. For example, if the object size is 1 byte, the following example is a range of 8 bytes, beginning at the address 0x00001000.
 
-``` syntax
+```
 0x00001000  L8
 ```
 
 However, if the object size is a double word (32 bits or 4 bytes), the following two ranges each give an 8-byte range.
 
-``` syntax
+```
 0x00001000  0x00001007
 0x00001000  L2
 ```

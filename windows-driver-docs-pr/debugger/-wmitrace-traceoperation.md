@@ -21,8 +21,8 @@ api_type:
 
 The **!wmitrace.traceoperation** extension displays the progress messages from the tracing components in Windows.
 
-``` syntax
-    !wmitrace.traceoperation {0 | 1 | 2} 
+```
+!wmitrace.traceoperation {0 | 1 | 2} 
 ```
 
 ## <span id="ddk__wmitrace_traceoperation_dbg"></span><span id="DDK__WMITRACE_TRACEOPERATION_DBG"></span>Parameters

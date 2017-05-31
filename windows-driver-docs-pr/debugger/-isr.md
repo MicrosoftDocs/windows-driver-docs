@@ -21,7 +21,7 @@ api_type:
 
 The !isr extension displays the Itanium Interruption Status Register (ISR) at the specified address.
 
-``` syntax
+```
 !isr Expression [DisplayLevel]
 ```
 
@@ -75,7 +75,7 @@ Remarks
 
 Here are a couple of examples of output from this extension:
 
-``` syntax
+```
 kd> !isr @isr
 isr:ed ei so ni ir rs sp na r w x vector code
   0  0  0  0  0  0  0  0 0 0 0      0   0

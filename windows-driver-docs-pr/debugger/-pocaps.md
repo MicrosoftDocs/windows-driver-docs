@@ -21,7 +21,7 @@ api_type:
 
 The **!pocaps** extension displays the power capabilities of the target computer.
 
-``` syntax
+```
 !pocaps
 ```
 
@@ -58,7 +58,7 @@ Remarks
 
 Here is an example of this command's output:
 
-``` syntax
+```
 kd> !pocaps
 PopCapabilities @ 0x8016b100
   Misc Supported Features:  S4 FullWake

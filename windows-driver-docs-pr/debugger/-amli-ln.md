@@ -23,7 +23,7 @@ The **!amli ln** extension displays the specified method or the method containin
 
 Syntax
 
-``` syntax
+```
 !amli ln [ MethodName | CodeAddress ]
 ```
 
@@ -51,7 +51,7 @@ If neither *MethodName* nor *CodeAddress* is specified, the method associated wi
 
 The following command shows the method being currently run:
 
-``` syntax
+```
 kd> !amli ln
 c29accf5: \_WAK
 ```

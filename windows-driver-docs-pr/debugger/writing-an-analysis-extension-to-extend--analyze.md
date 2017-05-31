@@ -19,7 +19,7 @@ To write an analysis extension plugin and make it available to [**!analyze**](-a
 
 When the [**!analyze**](-analyze.md) command runs in the debugger, the analysis engine looks in the extension file path for metadata files that have the .alz extension. The analysis engine reads the metadata files to determine which analysis extension plugins should be loaded. For example, suppose the analysis engine is running in response to Bug Check 0xA IRQL\_NOT\_LESS\_OR\_EQUAL, and it reads a metadata file named MyAnalyzer.alz that contains the following entries.
 
-``` syntax
+```
 PluginId       MyPlugin
 DebuggeeClass  Kernel
 BugCheckCode   0xA
@@ -89,7 +89,7 @@ Here is a skeleton example that you can use as a starting point.
 
 2.  Create a metadata file named MyAnalyzer.alz that has the following entries.
 
-    ```cmd
+    ```
     PluginId      MyPlugin
     DebuggeeClass Kernel
     BugCheckCode  0xE2
@@ -113,7 +113,7 @@ Here is a skeleton example that you can use as a starting point.
 
     Verify that you see output similar to the following in the debugger.
 
-    ``` syntax
+    ```
     *                        Bugcheck Analysis                                    *
     *                                                                             *
     *******************************************************************************

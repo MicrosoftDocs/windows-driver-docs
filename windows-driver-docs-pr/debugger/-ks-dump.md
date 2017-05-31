@@ -21,7 +21,7 @@ api_type:
 
 The **!ks.dump** extension displays the specified object.
 
-``` syntax
+```
 !ks.dump Object [Level] [Flags]  
 ```
 

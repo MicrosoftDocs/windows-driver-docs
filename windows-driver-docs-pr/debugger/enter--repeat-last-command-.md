@@ -21,7 +21,7 @@ api_type:
 
 The ENTER key repeats the last command that you typed.
 
-``` syntax
+```
 ENTER
 ```
 

@@ -21,8 +21,8 @@ api_type:
 
 The **!qlocks** extension displays the state of all queued spin locks.
 
-``` syntax
-    !qlocks 
+```
+!qlocks 
 ```
 
 ## <span id="ddk__qlocks_dbg"></span><span id="DDK__QLOCKS_DBG"></span>

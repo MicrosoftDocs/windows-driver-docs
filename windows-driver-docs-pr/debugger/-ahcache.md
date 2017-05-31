@@ -21,7 +21,7 @@ api_type:
 
 The **!ahcache** extension displays the application compatibility cache.
 
-``` syntax
+```
     !ahcache [Flags] 
 ```
 

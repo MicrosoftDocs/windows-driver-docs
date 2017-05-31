@@ -23,7 +23,7 @@ The **.catch** token is used to prevent a program from terminating if an error o
 
 It does not behave like the **catch** keyword in C++.
 
-``` syntax
+```
     Commands ; .catch { Commands } ; Commands 
 ```
 

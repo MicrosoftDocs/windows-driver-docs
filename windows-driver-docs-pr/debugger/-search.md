@@ -23,7 +23,7 @@ The **!search** extension searches pages in physical memory for pointer-sized da
 
 Syntax
 
-``` syntax
+```
 !search [-s] [-p] Data [ Delta [ StartPFN [ EndPFN ]]] 
 !search -?
 ```
@@ -83,13 +83,13 @@ Because the debugger's search engine structures reside in memory on the target c
 
 Here are some examples. The following will search the memory page with PFN 0x237D for values between 0x80001230 and 0x80001238, inclusive:
 
-``` syntax
+```
 kd> !search 80001234 4 237d 237d 
 ```
 
 The following will search the memory pages ranging from PFN 0x2370 to 0x237F for values that are within one bit of 0x0F100F0F. The exact matches are indicated in bold; the others are off by one bit:
 
-``` syntax
+```
 kd> !search 0f100f0f 0 2370 237f
 Searching PFNs in range 00002370 - 0000237F for [0F100F0F - 0F100F0F]
 

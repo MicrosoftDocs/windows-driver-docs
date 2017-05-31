@@ -21,7 +21,7 @@ api_type:
 
 The **.step\_filter** command creates a list of functions that are skipped (stepped over) when tracing. This allows you to trace through code and skip only certain functions. It can also be used in source mode to control stepping when there are multiple function calls on one line.
 
-``` syntax
+```
 .step_filter "FilterList" 
 .step_filter /c 
 .step_filter 

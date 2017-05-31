@@ -23,7 +23,7 @@ Kill.exe is included in [Debugging Tools for Windows](index.md).
 ## <span id="Kill_Tool_command-line_options"></span><span id="kill_tool_command-line_options"></span><span id="KILL_TOOL_COMMAND-LINE_OPTIONS"></span>Kill Tool command-line options
 
 
-``` syntax
+```
 kill [/f] { PID | Pattern* }
 ```
 

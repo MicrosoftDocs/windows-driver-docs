@@ -21,7 +21,7 @@ api_type:
 
 The **!wmitrace.dumpmini** extension displays the system trace fragment, which is stored in a dump file.
 
-``` syntax
+```
 !wmitrace.dumpmini
 ```
 

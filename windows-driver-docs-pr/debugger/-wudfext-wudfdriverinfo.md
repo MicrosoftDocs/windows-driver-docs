@@ -21,7 +21,7 @@ api_type:
 
 The **!wudfext.wudfdriverinfo** extension displays information about a UMDF driver within the current host process.
 
-``` syntax
+```
 !wudfext.wudfdriverinfo Name
 ```
 

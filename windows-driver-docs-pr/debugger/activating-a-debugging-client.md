@@ -25,7 +25,7 @@ There are two ways to start a debugging client: by using the -remote [command-li
 
 The protocol of the client must match the protocol of the server. The general syntax for starting a debugging client depends on the protocol used. The following options exist:
 
-``` syntax
+```
 Debugger -remote npipe:server=Server,pipe=PipeName[,password=Password] 
 
 Debugger -remote tcp:server=Server,port=Socket[,password=Password][,ipversion=6] 
@@ -43,7 +43,7 @@ Debugger -remote ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clicon=Server,
 
 To use the graphical interface to connect to a remote debugging session, WinDbg must be in dormant mode -- it must either have been started with no command-line parameters, or it must have ended the previous debugging session. Select the **File | Connect to Remote Session** menu command, or press the CTRL+R shortcut key. When the **Connect to Remote Debugger Session** dialog box appears, enter one of the following strings into the **Connection string** text box:
 
-``` syntax
+```
 npipe:server=Server,pipe=PipeName[,password=Password] 
 
 tcp:server=Server,port=Socket[,password=Password][,ipversion=6] 

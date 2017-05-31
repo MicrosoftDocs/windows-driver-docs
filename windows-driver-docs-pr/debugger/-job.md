@@ -21,8 +21,8 @@ api_type:
 
 The **!job** extension displays a job object.
 
-``` syntax
-    !job [Process [Flags]] 
+```
+!job [Process [Flags]] 
 ```
 
 ## <span id="ddk__job_dbg"></span><span id="DDK__JOB_DBG"></span>Parameters

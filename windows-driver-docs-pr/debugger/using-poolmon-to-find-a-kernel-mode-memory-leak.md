@@ -27,7 +27,7 @@ On Windows Server 2003 and later versions of Windows, pool tagging is always ena
 
 The PoolMon header displays the total paged and non-paged pool bytes. The columns show pool use for each pool tag. The display is updated automatically every few seconds. For example:
 
-``` syntax
+```
 Memory: 16224K Avail: 4564K PageFlts: 31 InRam Krnl: 684K P: 680K
 Commit: 24140K Limit: 24952K Peak: 24932K Pool N: 744K P: 2180K
 

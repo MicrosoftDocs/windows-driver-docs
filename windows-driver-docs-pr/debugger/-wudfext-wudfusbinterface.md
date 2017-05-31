@@ -21,7 +21,7 @@ api_type:
 
 The **!wudfext.wudfusbinterface** extension displays information about a USB interface object.
 
-``` syntax
+```
 !wudfext.wudfusbinterface pWDFUSBInterface TypeName
 ```
 

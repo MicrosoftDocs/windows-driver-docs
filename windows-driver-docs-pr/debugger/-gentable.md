@@ -23,7 +23,7 @@ The **!gentable** extension displays an RTL\_GENERIC\_TABLE.
 
 Syntax
 
-``` syntax
+```
 !gentable Address[Flag]
 ```
 

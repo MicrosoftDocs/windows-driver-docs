@@ -21,7 +21,7 @@ api_type:
 
 The **.time** command displays information about the system time variables.
 
-``` syntax
+```
 .time [-h Hours]
 ```
 
@@ -65,7 +65,7 @@ The system time variables control performance counter behavior.
 
 Here is an example in kernel mode:
 
-``` syntax
+```
 kd> .time
 Debug session time: Wed Jan 31 14:47:08 2001
 System Uptime: 0 days 2:53:56 
@@ -73,7 +73,7 @@ System Uptime: 0 days 2:53:56
 
 Here is an example in user mode:
 
-``` syntax
+```
 0:000> .time
 Debug session time: Mon Apr 07 19:10:50 2003
 System Uptime: 4 days 4:53:56.461

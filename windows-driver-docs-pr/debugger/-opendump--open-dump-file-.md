@@ -21,7 +21,7 @@ api_type:
 
 The **.opendump** command opens a dump file for debugging.
 
-``` syntax
+```
 .opendump DumpFile 
 .opendump /c "DumpFileInArchive" [CabFile] 
 ```

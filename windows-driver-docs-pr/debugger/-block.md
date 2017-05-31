@@ -21,7 +21,7 @@ api_type:
 
 The **.block** token performs no action; it is used solely to introduce a block of statements.
 
-``` syntax
+```
     Commands ; .block { Commands } ; Commands 
 ```
 

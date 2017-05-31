@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.pchelp** extension displays a help text showing PortCls-specific Ks.dll extension commands.
 
-``` syntax
-    !ks.pchelp 
+```
+!ks.pchelp 
 ```
 
 ### <span id="DLL"></span><span id="dll"></span>DLL

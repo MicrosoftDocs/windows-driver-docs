@@ -21,7 +21,7 @@ api_type:
 
 The **dx** command displays a C++ expression using the NatVis extension model. For more information about NatVis, see [Create custom views of native objects in the debugger](http://msdn.microsoft.com/library/jj620914.aspx).
 
-``` syntax
+```
 dx [-g|-gc #][-c #][-n|-v]-r[#] Expression[,<FormatSpecifier> ]
 dx [{-?}|{-h}]
 ```
@@ -92,7 +92,7 @@ Displays help for objects available in the debugger.
 **Command line usage example**
 
 The .dx settings command can be used to display information about the Debug Settings object. For more information about the debug settings objects, see [**.settings**](-settings--set-debug-settings-.md) .
-``` syntax
+```
 kd> dx -r1 Debugger.Settings
 Debugger.Settings : 
     Display          : 
@@ -106,7 +106,7 @@ Debugger.Settings :
 
 Use the -r1 recursion option to view the other Debugger objects - Sessions, Settings and State.
 
-``` syntax
+```
 kd> dx -r1 Debugger
 Debugger : 
   Sessions : 
@@ -116,7 +116,7 @@ Debugger :
 
 Specify the Debugger.Sessions object with the -r3 recursion option to travel further down the object chain.
 
-``` syntax
+```
 kd> dx -r3 Debugger.Sessions
 Debugger.Sessions : 
   [0]              : Remote KD: KdSrv:Server=@{<Local>},Trans=@{1394:Channel=0}
@@ -136,7 +136,7 @@ Debugger.Sessions :
 
 Add the x format specifier to display the ordinal values in hexadecimal.
 
-``` syntax
+```
 kd> dx -r3 Debugger.Sessions,x
 Debugger.Sessions,x : 
   [0x0]            : Remote KD: KdSrv:Server=@{<Local>},Trans=@{1394:Channel=0}
@@ -161,7 +161,7 @@ Debugger.Sessions,x :
 
 This example uses an active debug session to list the call stack of the first thread in the first process.
 
-``` syntax
+```
 kd> dx -r1 Debugger.Sessions.First().Processes.First().Threads.First().Stack.Frames
 Debugger.Sessions.First().Processes.First().Threads.First().Stack.Frames : 
     [0x0]            : nt!RtlpBreakWithStatusInstruction
@@ -177,14 +177,14 @@ Debugger.Sessions.First().Processes.First().Threads.First().Stack.Frames :
 
 Use the -g option to display output as a data grid. Click on a column to sort.
 
-``` syntax
+```
 kd> dx -g @$curprocess.Modules
 ```
 
 ![output from dx -g @$curprocess.modules showing columnar grid output](images/dx-grid-example.png)
 
 Use the -h option to display information about objects.
-``` syntax
+```
 kd>  dx -h Debugger.State
 Debugger.State   [State pertaining to the current execution of the debugger (e.g.: user variables)]
     DebuggerVariables [Debugger variables which are owned by the debugger and can be referenced by a pseudo-register prefix of @$]
@@ -196,20 +196,20 @@ Debugger.State   [State pertaining to the current execution of the debugger (e.g
 
 When displaying information about various Windows system variables, there are times where not all of the type information is available in the public symbols. This example illustrates this situation.
 
-``` syntax
+```
 0: kd> dx nt!PsIdleProcess
 Error: No type (or void) for object at Address 0xfffff800e1d50128
 ```
 
 The dx command supports the ability to reference the address of a variable which does not have type information. Such “address of” references are treated as “void \*” and can be cast as such. This means that if the data type is known, the following syntax can be used to display type information for the variable.
 
-``` syntax
+```
 dx (Datatype *)&VariableName
 ```
 
 For example for a nt!PsIdleProcess which has a data type of nt!\_EPROCESS, use this command.
 
-``` syntax
+```
 dx (nt!_EPROCESS *)&nt!PsIdleProcess
 (nt!_EPROCESS *)&nt!PsIdleProcess                 : 0xfffff800e1d50128 [Type: _EPROCESS *]
     [+0x000] Pcb              [Type: _KPROCESS]
@@ -263,7 +263,7 @@ C:\\Program Files\\Debugging Tools for Windows (x64)\\Visualizers
 
 Run your program, and break in at the main function. Take a step so that the variable `MyDog` gets initialized. Display `MyDog` using [**??**](----evaluate-c---expression-.md) and again using **dx**.
 
-``` syntax
+```
 0:000> ??MyDog
 class CDog
    +0x000 m_age        : 0n8

@@ -80,7 +80,7 @@ You can add thread specifiers or process specifiers before many other commands. 
 
 You can add the [**~e (Thread-Specific Command)**](-e--thread-specific-command-.md) qualifier before many commands and extension commands. This qualifier causes the command to be executed with respect to the specified thread. This qualifier is especially useful if you want to apply a command to more than one thread. For example, the following command repeats the [**!gle**](-gle.md) extension command for every thread that is being debugged.
 
-``` syntax
+```
 ~*e !gle 
 ```
 

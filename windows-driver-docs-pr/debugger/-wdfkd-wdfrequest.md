@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfrequest** extension displays information about a specified framework request object and the WDM I/O request packet (IRP) that is associated with the request object.
 
-``` syntax
+```
 !wdfkd.wdfrequest Handle
 ```
 

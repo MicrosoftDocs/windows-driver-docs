@@ -21,7 +21,7 @@ api_type:
 
 The **!prcb** extension displays the processor control block (PRCB).
 
-``` syntax
+```
 !prcb [Processor]
 ```
 
@@ -63,7 +63,7 @@ The PRCB is an extension of the processor control region (PCR). To display the P
 
 Here is an example:
 
-``` syntax
+```
 kd> !prcb
 PRCB for Processor 0 at e0000000818ba000:
 Threads--  Current e0000000818bbe10 Next 0000000000000000 Idle e0000000818bbe10

@@ -20,7 +20,7 @@ Before finding the failed process, make sure that you are in the context of the 
 
 For example, because the address of **NtTib.ExceptionList** on this processor, is 0xFFFFFFFF, this is not the processor with the failed process:
 
-``` syntax
+```
 0: kd> !pcr 
 PCR Processor 0 @ffdff000
  NtTib.ExceptionList: ffffffff
@@ -50,7 +50,7 @@ PCR Processor 0 @ffdff000
 
 However, the results for Processor 1 are quite different. In this case, the value of **NtTib.ExceptionList** is **f0823cc0**, not 0xFFFFFFFF, indicating that this is the processor on which the exception occurred.
 
-``` syntax
+```
 0: kd> ~1 
 1: kd> !pcr
 PCR Processor 1 @81497000
@@ -93,7 +93,7 @@ Although using the **!process 0 7** extension is the best way to find the proble
 
 When using a **!process 0 7**, many of the threads might be marked "kernel stack not resident" because those stacks are paged out. If those pages are still in the cache that is in transition, you can get more information by using a **.cache decodeptes** before **!process 0 7**:
 
-``` syntax
+```
 kd> .cache decodeptes 
 kd> !process 0 7 
 ```

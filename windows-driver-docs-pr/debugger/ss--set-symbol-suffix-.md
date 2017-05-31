@@ -21,8 +21,8 @@ api_type:
 
 The **ss** command sets or displays the current suffix value that is used for symbol matching in numeric expressions.
 
-``` syntax
-    ss [a|w|n] 
+```
+ss [a|w|n] 
 ```
 
 ## <span id="ddk_cmd_set_symbol_suffix_dbg"></span><span id="DDK_CMD_SET_SYMBOL_SUFFIX_DBG"></span>Parameters

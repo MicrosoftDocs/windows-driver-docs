@@ -21,8 +21,8 @@ api_type:
 
 The **.closehandle** command closes a handle owned by the target application.
 
-``` syntax
-    .closehandle Handle 
+```
+.closehandle Handle 
 .closehandle -a 
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The **!findxmldata** extension retrieves XML data from a CAB file that contains a kernel-mode Small Memory Dump file.
 
-``` syntax
+```
 !findxmldata [ -d DeviceName | -h HwId ] 
 !findxmldata -r Driver 
 !findxmldata -chksum [ -z CabFile ]
@@ -85,7 +85,7 @@ When you do not use any options, the extension displays all devices.
 
 The following examples show you how to use **!findxmldata**.
 
-``` syntax
+```
 kd> !findxmldata -v
 SYSTEM Info:
 OSVER: 5.1.2600 2.0

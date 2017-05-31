@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfspinlock** extension displays information about a framework spin-lock object. This information includes the spin lock's acquisition history and the length of time that the lock was held.
 
-``` syntax
+```
 !wdfkd.wdfspinlock Handle
 ```
 

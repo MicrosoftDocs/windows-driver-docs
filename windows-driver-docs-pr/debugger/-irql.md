@@ -21,8 +21,8 @@ api_type:
 
 The **!irql** extension displays the interrupt request level (IRQL) of a processor on the target computer before the debugger break.
 
-``` syntax
-    !irql [Processor] 
+```
+!irql [Processor] 
 ```
 
 ## <span id="ddk__irql_dbg"></span><span id="DDK__IRQL_DBG"></span>Parameters
@@ -77,7 +77,7 @@ If you supply an invalid processor number, or there has been kernel corruption, 
 
 Here is an example of the output from this extension from a dual-processor x86 computer:
 
-``` syntax
+```
 kd> !irql 0
 Debugger saved IRQL for processor 0x0 -- 28 (CLOCK2_LEVEL)
 
@@ -87,14 +87,14 @@ Debugger saved IRQL for processor 0x1 -- 0 (LOW_LEVEL)
 
 If the debugger is in verbose mode, a description of the IRQL itself is included. Here is an example from an Itanium processor:
 
-``` syntax
+```
 kd> !irql
 Debugger saved IRQL for processor 0x0 -- 12 (PC_LEVEL) [Performance counter level]
 ```
 
 The meaning of the IRQL number often depends on the processor. Here is an example from an x64 processor. Note that the IRQL number is the same as in the previous example, but the IRQL meaning is different:
 
-``` syntax
+```
 kd> !irql
 Debugger saved IRQL for processor 0x0 -- 12 (SYNCH_LEVEL) [Synchronization level]
 ```

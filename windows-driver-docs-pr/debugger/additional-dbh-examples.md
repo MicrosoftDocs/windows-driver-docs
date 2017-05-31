@@ -144,7 +144,7 @@ The **undec** command can be used to reveal the meaning of C++ symbol decoration
 dbh: undec ??_C@_03GGCAPAJC@Sep?$AA@
 
 ??_C@_03GGCAPAJC@Sep?$AA@ =
-`string&#39; 
+`string' 
 ```
 
 The following examples decode the decorations attached to three function names, revealing their prototypes:

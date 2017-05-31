@@ -21,7 +21,7 @@ api_type:
 
 The **!sysptes** extension displays a formatted view of the system page table entries (PTEs).
 
-``` syntax
+```
 !sysptes [Flags]
 ```
 
@@ -80,7 +80,7 @@ To examine a specific PTE, use the [**!pte**](-pte.md) extension.
 
 Here is an example from a Windows 2000 system:
 
-``` syntax
+```
 kd> !sysptes 1
 
 System PTE Information
@@ -110,7 +110,7 @@ loading (99% complete)
 
 In Windows XP and later versions of Windows, the display is similar, except that the page count statistics at the end are not included. Here is an example from a Windows XP system:
 
-``` syntax
+```
 kd> !sysptes 1
 
 System PTE Information

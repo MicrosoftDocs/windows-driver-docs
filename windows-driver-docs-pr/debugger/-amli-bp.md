@@ -23,7 +23,7 @@ The **!amli bp** extension places a breakpoint in AML code.
 
 Syntax
 
-``` syntax
+```
 !amli bp { MethodName | CodeAddress }
 ```
 

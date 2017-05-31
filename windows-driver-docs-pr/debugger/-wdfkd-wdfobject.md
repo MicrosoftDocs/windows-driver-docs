@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfobject** extension displays information about a specified framework object.
 
-``` syntax
+```
 !wdfkd.wdfobject FrameworkObject
 ```
 

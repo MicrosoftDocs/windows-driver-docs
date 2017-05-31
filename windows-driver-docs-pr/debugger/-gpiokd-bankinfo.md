@@ -21,7 +21,7 @@ api_type:
 
 The **!gpiokd.bankinfo** command displays information about a GPIO bank.
 
-``` syntax
+```
 !gpiokd.bankinfo BankAddress [Flags]
 ```
 

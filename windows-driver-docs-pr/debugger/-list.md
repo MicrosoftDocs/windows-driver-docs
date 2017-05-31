@@ -21,7 +21,7 @@ api_type:
 
 The **!list** extension executes the specified debugger commands repeatedly, once for every element in a linked list.
 
-``` syntax
+```
 !list -t [Module!]Type.Field -x "Commands" [-a "Arguments"] [Options] StartAddress 
 !list " -t [Module!]Type.Field -x \"Commands\" [-a \"Arguments\"] [Options] StartAddress " 
 !list -h 

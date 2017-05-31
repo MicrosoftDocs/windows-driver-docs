@@ -21,8 +21,8 @@ api_type:
 
 The **.endpsrv** command causes the current process server or KD connection server to close.
 
-``` syntax
-    .endpsrv 
+```
+.endpsrv 
 ```
 
 ## <span id="ddk_meta_end_process_server_dbg"></span><span id="DDK_META_END_PROCESS_SERVER_DBG"></span>

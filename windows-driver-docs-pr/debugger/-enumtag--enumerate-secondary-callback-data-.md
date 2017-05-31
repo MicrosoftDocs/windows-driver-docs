@@ -21,8 +21,8 @@ api_type:
 
 The **.enumtag** command displays secondary bug check callback data and all data tags.
 
-``` syntax
-    .enumtag 
+```
+.enumtag 
 ```
 
 ## <span id="ddk_meta_enumerate_secondary_callback_data_dbg"></span><span id="DDK_META_ENUMERATE_SECONDARY_CALLBACK_DATA_DBG"></span>

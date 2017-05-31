@@ -21,7 +21,7 @@ api_type:
 
 The **.do** token behaves like the **do** keyword in C, except that the word "while" is not used before the condition.
 
-``` syntax
+```
 .do { Commands } (Condition) 
 ```
 

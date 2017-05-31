@@ -250,7 +250,7 @@ CDB and WinDbg also support the **-G** [command-line option](command-line-option
 
 The following command tries to run the application from start to finish, and the debugger prompt appears only if an error occurs.
 
-``` syntax
+```
 cdb -g -G ApplicationName 
 ```
 

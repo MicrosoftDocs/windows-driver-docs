@@ -21,7 +21,7 @@ api_type:
 
 The **.wake** command causes sleep mode to end. This command is used only when you are controlling the user-mode debugger from the kernel debugger.
 
-``` syntax
+```
 .wake PID
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The **!bthkd.bthtree** command displays the complete Bluetooth device tree.
 
-``` syntax
+```
 !bthkd.bthtree
 ```
 

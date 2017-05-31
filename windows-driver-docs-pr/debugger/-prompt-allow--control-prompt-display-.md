@@ -21,8 +21,8 @@ api_type:
 
 The **.prompt\_allow** command controls what information is displayed during stepping and tracing and whenever the target's execution stops.
 
-``` syntax
-    .prompt_allow {+|-}Item [...] 
+```
+.prompt_allow {+|-}Item [...] 
 .prompt_allow 
 ```
 

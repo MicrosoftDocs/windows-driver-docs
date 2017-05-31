@@ -23,7 +23,7 @@ The **!locks** extension in Ntsdexts.dll displays a list of critical sections as
 
 This extension command should not be confused with the [**!kdext\*.locks**](-locks---kdext--locks-.md) extension command.
 
-``` syntax
+```
     !locks [Options] 
 ```
 

@@ -24,19 +24,19 @@ To use this technique, you must do the following:
 
     For example, you can attach to a running process by using the following syntax.
 
-    ``` syntax
+    ```
     ntsd -server ServerTransport -ddefer [-y UserSymbolPath] -p PID 
     ```
 
     Or, you can start a new process as the target by using the following syntax.
 
-    ``` syntax
+    ```
     ntsd -server ServerTransport -ddefer [-y UserSymbolPath] ApplicationName 
     ```
 
     If you are installing this as a postmortem debugger, you would use the following syntax. Note that you must manually edit the registry to install a postmortem debugger that includes the -server parameter; for details, see [Enabling Postmortem Debugging](enabling-postmortem-debugging.md).
 
-    ``` syntax
+    ```
     ntsd -server ServerTransport -ddefer [-y UserSymbolPath] 
     ```
 
@@ -44,7 +44,7 @@ To use this technique, you must do the following:
 
 2.  Start WinDbg or KD on the host computer, as if you were going to debug the target computer, but do not actually break in to the target computer. To use WinDbg, use the following syntax.
 
-    ``` syntax
+    ```
     windbg [-y KernelSymbolPath] [-k ConnectionOptions] 
     ```
 
@@ -54,7 +54,7 @@ To use this technique, you must do the following:
 
 3.  Start WinDbg or CDB as a debugging client, with the same transport options used to start the server. This debugging client can be run on either the host computer or on a third computer.
 
-    ``` syntax
+    ```
     cdb -remote ClientTransport 
     ```
 

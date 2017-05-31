@@ -21,7 +21,7 @@ api_type:
 
 The **!driveinfo** extension displays volume information for the specified drive.
 
-``` syntax
+```
 !driveinfo Drive[:] 
 !driveinfo 
 ```
@@ -61,7 +61,7 @@ Remarks
 
 The drive information displayed by this extension is obtained by querying the underlying file system; for example:
 
-``` syntax
+```
 kd> !driveinfo c:
 Drive c:, DriveObject e136cd88
     Directory Object: e1001408  Name: C:

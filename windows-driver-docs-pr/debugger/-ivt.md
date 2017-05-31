@@ -21,7 +21,7 @@ api_type:
 
 The !ivt extension displays the Itanium interrupt vector table.
 
-``` syntax
+```
 !ivt [-v] [-a] [Vector] 
 !ivt -? 
 ```
@@ -77,7 +77,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-``` syntax
+```
 kd> !ivt
 
 Dumping IA64 IVT:

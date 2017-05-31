@@ -21,8 +21,8 @@ api_type:
 
 The **!ube** extension re-enables a user-space breakpoint.
 
-``` syntax
-    !ube BreakpointNumber 
+```
+!ube BreakpointNumber 
 ```
 
 ## <span id="ddk__ube_dbg"></span><span id="DDK__UBE_DBG"></span>Parameters

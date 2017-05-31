@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfsettraceprefix** extension sets the trace prefix format string.
 
-``` syntax
+```
 !wdfkd.wdfsettraceprefix String
 ```
 

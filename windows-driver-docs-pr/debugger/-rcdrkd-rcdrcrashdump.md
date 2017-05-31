@@ -21,7 +21,7 @@ api_type:
 
 The [**!rcdrkd.rcdrcrashdump**](-usb3kd-device-info.md) extension is used with a minidump file to display the recorder log (if the log is present in the minidump).
 
-``` syntax
+```
 !rcdrkd.rcdrcrashdump TraceProviderGuid
 !rcdrkd.rcdrcrashdump DriverName
 ```

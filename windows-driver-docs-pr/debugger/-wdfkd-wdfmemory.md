@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfmemory** extension displays the address and size of the buffer that is associated with a framework memory object.
 
-``` syntax
+```
 !wdfkd.wdfmemory Handle
 ```
 

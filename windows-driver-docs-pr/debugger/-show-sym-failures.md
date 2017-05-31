@@ -21,7 +21,7 @@ api_type:
 
 The **.show\_sym\_failures** command enables or disables the display of symbol lookup failures and type lookup failures.
 
-``` syntax
+```
 .show_sym_failures /s 
 .show_sym_failures /S
 .show_sym_failures /t

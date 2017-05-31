@@ -121,10 +121,10 @@ Here is an example:
 ```
 0: kd> !scsikd.classext 
 
- &#39; !scsikd.classext 8633e3f0 &#39;   (             ) "IBM     " / "DDYS-T09170M    " / "S93E" / "        XBY45906"
- &#39; !scsikd.classext 86347b48 &#39;   (paging device) "IBM     " / "DDYS-T09170M    " / "S80D" / "        VDA60491"
-  &#39; !scsikd.classext 86347360 &#39;   (             ) "UNISYS  " / "003451ST34573WC " / "5786" / "HN0220750000181300L6"
-  &#39; !scsikd.classext 861d1898 &#39;   (             ) "" / "MATSHITA CD-ROM CR-177" / "7T03" / ""
+ ' !scsikd.classext 8633e3f0 '   (             ) "IBM     " / "DDYS-T09170M    " / "S93E" / "        XBY45906"
+ ' !scsikd.classext 86347b48 '   (paging device) "IBM     " / "DDYS-T09170M    " / "S80D" / "        VDA60491"
+  ' !scsikd.classext 86347360 '   (             ) "UNISYS  " / "003451ST34573WC " / "5786" / "HN0220750000181300L6"
+  ' !scsikd.classext 861d1898 '   (             ) "" / "MATSHITA CD-ROM CR-177" / "7T03" / ""
 
  usage: !classext <class fdo> <level [0-2]> 
 ```

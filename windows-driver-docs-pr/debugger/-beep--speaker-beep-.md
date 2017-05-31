@@ -21,7 +21,7 @@ api_type:
 
 The **.beep** command makes noise on the computer speaker.
 
-``` syntax
+```
     .beep
 ```
 

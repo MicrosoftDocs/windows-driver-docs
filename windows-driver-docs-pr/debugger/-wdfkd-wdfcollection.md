@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfcollection** extension displays all of the objects that are stored in a WDFCOLLECTION structure.
 
-``` syntax
+```
 !wdfkd.wdfcollection Handle
 ```
 
