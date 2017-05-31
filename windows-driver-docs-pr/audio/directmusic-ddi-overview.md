@@ -33,12 +33,15 @@ DirectMusic uses the following user-mode interfaces to control user-mode synthes
 [IDirectMusicSynth](https://msdn.microsoft.com/library/windows/hardware/ff536519)
 
 This is the user-mode interface for implementing custom software synths.
+
 [IDirectMusicSynthSink](https://msdn.microsoft.com/library/windows/hardware/ff536520)
 
 This is the user-mode interface for implementing custom wave sinks in Microsoft DirectX 6.1 and DirectX 7. In DirectX 8 and later, DirectMusic always uses its private wave sink with a user-mode synth, and no public interface is supported for user-mode wave sinks.
+
 [IKsControl](https://msdn.microsoft.com/library/windows/hardware/ff559766)
 
 DirectMusic uses this interface to access the properties of kernel-streaming drivers from user mode in DirectX 6.1 and later.
+
 Kernel-mode terminology differs slightly from user-mode because of the port-miniport driver model (see [Introduction to Port Class](introduction-to-port-class.md)), which delegates generic kernel-streaming tasks to the [DMus port driver](dmus-port-driver.md) and assigns hardware-specific functions to the DMus miniport driver. The port and miniport drivers share responsibilities for the synth. The kernel-mode wave sink is part of the kernel-resident port driver. Unlike the user-mode wave sink in DirectX 6.1 and DirectX 7, the kernel-mode wave sink is not replaceable. Most of the work that is required to build a custom kernel-mode driver is in the writing of the miniport driver. In most cases, the miniport driver is the only component that the driver writer needs to implement to support a piece of hardware, or to implement a custom software synth for DirectMusic.
 
 Custom DMus miniport drivers use the following kernel-mode interfaces:

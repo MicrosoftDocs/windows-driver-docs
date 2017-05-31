@@ -24,6 +24,7 @@
 ## [GPIO drivers](gpio/index.md)
 ## [Mobile broadband](mobilebroadband/index.md)
 ## [Multifunction device drivers](multifunction/index.md)
+## [NetAdapterCx](netcx/index.md)
 ## [Network drivers](network/index.md)
 ## [NFC device drivers](nfc/index.md)
 ## [Partner application development](partnerapps/index.md)
