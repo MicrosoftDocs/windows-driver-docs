@@ -21,8 +21,8 @@ api_type:
 
 The **.detach** command ends the debugging session, but leaves any user-mode target application running.
 
-``` syntax
-    .detach [ /h | /n ]
+```
+.detach [ /h | /n ]
 ```
 
 ## <span id="ddk_meta_detach_from_process_dbg"></span><span id="DDK_META_DETACH_FROM_PROCESS_DBG"></span>Parameters

@@ -21,7 +21,7 @@ api_type:
 
 The **!dma** extension displays information about the Direct Memory Access (DMA) subsystem, and the **DMA Verifier** option of Driver Verifier.
 
-``` syntax
+```
 !dma 
 !dma Adapter [Flags]
 ```
@@ -87,7 +87,7 @@ When the **!dma** extension is used with no parameters, it displays a concise li
 
 Here is an example of how this extension can be used when the Driver Verifier's **DMA Verification** option is active:
 
-``` syntax
+```
 0:kd> !dma
 
 Dumping all DMA adapters...
@@ -100,7 +100,7 @@ Master adapter: 80076800
 
 From this output, you can see that there are three DMA adapters in the system. SCSIPORT owns two and NDIS owns the third. To examine the NDIS adapter in detail, use the **!dma** extension with its address:
 
-``` syntax
+```
 0:kd> !dma  82f06cd0
 Adapter: 82f06cd0     Owner: NDIS!NdisMAllocateMapRegisters (0x9fe24351)
  MasterAdapter:       00000000
@@ -120,7 +120,7 @@ Adapter: 82f06cd0     Owner: NDIS!NdisMAllocateMapRegisters (0x9fe24351)
 
 The first block of data is specific information that a HAL developer can use to debug the problem. For your purposes, the data below "Dma verifier additional information" is what is interesting. In this example, you see that NDIS has allocated 0x840 map registers. This is a huge number, especially because NDIS had indicated that it planned to use a maximum of two map registers. This adapter apparently does not use scatter/gather lists and has put away all its adapter channels. Look at the map registers in more detail:
 
-``` syntax
+```
 0:kd> !dma  82f06cd0 2
 Adapter: 82f06cd0     Owner: NDIS!NdisMAllocateMapRegisters 
 ...
@@ -153,7 +153,7 @@ In this example, two map register files are in use. This means that the driver h
 
 An examination of the common buffers reveals:
 
-``` syntax
+```
 0:kd> !dma  82f06cd0 4
 Adapter: 82f06cd0     Owner: NDIS!NdisMAllocateMapRegisters 
 ...

@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbpo** command displays the internal list of outstanding USB power requests.
 
-``` syntax
+```
 !usbkd.usbpo
 ```
 

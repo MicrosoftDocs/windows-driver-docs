@@ -21,7 +21,7 @@ api_type:
 
 The **.pagein** command pages in the specified region of memory.
 
-``` syntax
+```
 .pagein [Options] Address
 ```
 

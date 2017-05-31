@@ -21,7 +21,7 @@ api_type:
 
 The **.if** token behaves like the **if** keyword in C.
 
-``` syntax
+```
 .if (Condition) { Commands } 
 
 .if (Condition) { Commands } .else { Commands } 

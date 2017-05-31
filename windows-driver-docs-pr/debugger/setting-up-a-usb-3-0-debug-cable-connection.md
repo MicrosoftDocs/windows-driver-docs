@@ -28,7 +28,7 @@ On the target computer, launch the UsbView tool. The UsbView tool is included in
 In UsbView, locate all of the xHCI host controllers.
 In UsbView, expand the nodes of the xHCI host controllers. Look for an indication that a port on the host controller supports debugging.
 
-``` syntax
+```
 [Port1] 
 
 Is Port User Connectable:         yes
@@ -43,7 +43,7 @@ Protocols Supported:
 
 Make a note of the bus, device, and function numbers for the xHCI controller that you intend to use for debugging. UsbView displays these number. In the following example, the bus number is 48, the device number is 0, and the function number is 0.
 
-``` syntax
+```
 USB xHCI Compliant Host Controller
 ...
 DriverKey: {36fc9e60-c465-11cf-8056-444553540000}\0020

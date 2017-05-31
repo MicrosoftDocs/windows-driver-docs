@@ -21,8 +21,8 @@ api_type:
 
 The **.exptr** command displays an EXCEPTION\_POINTERS structure.
 
-``` syntax
-    .exptr Address
+```
+.exptr Address
 ```
 
 ## <span id="ddk_meta_display_exception_pointers_dbg"></span><span id="DDK_META_DISPLAY_EXCEPTION_POINTERS_DBG"></span>Parameters

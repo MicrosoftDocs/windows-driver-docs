@@ -21,7 +21,7 @@ api_type:
 
 The **.tss** command displays a formatted view of the saved Task State Segment (TSS) information for the current processor.
 
-``` syntax
+```
 .tss [Address]
 ```
 

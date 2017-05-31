@@ -21,7 +21,7 @@ api_type:
 
 The **.ofilter** command filters the output from the target application or target computer.
 
-``` syntax
+```
 .ofilter [/!] String 
 .ofilter "" 
 .ofilter 

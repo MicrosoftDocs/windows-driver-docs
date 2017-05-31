@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbhcdhccontext** command displays the **USB2LIB\_HC\_CONTEXT** for a USB host controller.
 
-``` syntax
+```
 !usbkd.usbhcdhccontext DeviceExtension
 ```
 

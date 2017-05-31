@@ -21,7 +21,7 @@ api_type:
 
 The **!avrf** extension controls the settings of [Application Verifier](application-verifier.md) and displays a variety of output produced by Application Verifier.
 
-``` syntax
+```
 !avrf
 !avrf -vs { Length | -a Address }
 !avrf -hp { Length | -a Address }

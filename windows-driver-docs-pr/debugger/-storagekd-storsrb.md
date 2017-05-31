@@ -21,8 +21,8 @@ api_type:
 
 The **!storagekd.storsrb** extension displays information about the specified Storage (or SCSI) Request Block (SRB).
 
-``` syntax
-    !storagekd.storsrb Address 
+```
+!storagekd.storsrb Address 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

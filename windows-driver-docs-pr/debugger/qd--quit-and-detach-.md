@@ -21,8 +21,8 @@ api_type:
 
 The **qd** command ends the debugging session and leaves any user-mode target application running. (In CDB and KD, this command also exits the debugger itself. In WinDbg, this command returns the debugger to dormant mode.)
 
-``` syntax
-    qd 
+```
+qd 
 ```
 
 ## <span id="ddk_cmd_quit_and_detach_dbg"></span><span id="DDK_CMD_QUIT_AND_DETACH_DBG"></span>

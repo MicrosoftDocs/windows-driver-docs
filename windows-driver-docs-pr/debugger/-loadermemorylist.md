@@ -21,7 +21,7 @@ api_type:
 
 The **!loadermemorylist** extension displays the memory allocation list that the Windows boot loader passes to Windows.
 
-``` syntax
+```
 !loadermemorylist ListHeadAddress
 ```
 

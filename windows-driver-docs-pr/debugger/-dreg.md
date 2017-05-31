@@ -21,7 +21,7 @@ api_type:
 
 The **!dreg** extension displays registry information.
 
-``` syntax
+```
 !dreg [-d|-w] KeyPath[!Value] 
 !dreg
 ```
@@ -93,19 +93,19 @@ If **!dreg** is used during kernel-mode debugging, the results shown will be for
 
 Here are some examples. The following will display all subkeys of the specified registry key:
 
-``` syntax
+```
 !dreg hkcu\Software\Microsoft
 ```
 
 The following will display all values in the specified registry key:
 
-``` syntax
+```
 !dreg System\CurrentControlSet\Services\Tcpip!*
 ```
 
 The following will display the value Start in the specified registry key:
 
-``` syntax
+```
 !dreg System\CurrentControlSet\Services\Tcpip!Start
 ```
 

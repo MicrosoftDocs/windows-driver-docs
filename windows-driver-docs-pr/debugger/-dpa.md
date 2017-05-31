@@ -21,7 +21,7 @@ api_type:
 
 The **!dpa** extension displays pool allocation information.
 
-``` syntax
+```
 !dpa Options 
 !dpa -?
 ```

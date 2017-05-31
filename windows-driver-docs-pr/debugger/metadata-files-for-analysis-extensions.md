@@ -44,7 +44,7 @@ You can use the following keys in a metadata file.
 
 The following metadata file describes a plug-in that is interested in analyzing bug check code 0xE2. (Recall that the last line must end with a newline character.)
 
-``` syntax
+```
 PluginId      MyPlugin
 DebuggeeClass Kernel
 BugCheckCode  0xE2
@@ -52,7 +52,7 @@ BugCheckCode  0xE2
 
 The following metadata file describes a plug-in that is interested in analyzing bug checks 0x8, 0x9, and 0xA if MyDriver.sys is considered to be the module at fault.
 
-``` syntax
+```
 PluginId      MyPlugin
 DebuggeeClass Kernel
 BugCheckCode  0x8
@@ -63,7 +63,7 @@ ImageName     MyDriver.sys
 
 The following metadata file describes a plug-in that is interested in analyzing exception code 0xC0000005 if MyApp.exe is the running executable of the process being analyzed. Also, the plug-in might create as many as three custom tags.
 
-``` syntax
+```
 PluginId        MyPlugin
 DebuggeeClass   User
 ExceptionCode   0xC0000005
@@ -72,7 +72,7 @@ ExecutableName  MyApp.exe
 
 Debugging Tools for Windows has a sample that you can use to build a debugger extension module named dbgexts.dll. This extension module implements several debugger extension commands, but it can also serve as an analysis extension plug-in; that is, it exports an [**\_EFN\_Analyze**](https://msdn.microsoft.com/library/windows/hardware/jj983432) function. Here is a metadata file that describes dbgexts.dll as an analysis extension plug-in.
 
-``` syntax
+```
 PluginId         PluginSample
 DebuggeeClass   User
 ExceptionCode   0xc0000005

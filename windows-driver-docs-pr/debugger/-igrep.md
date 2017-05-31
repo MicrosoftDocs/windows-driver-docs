@@ -21,7 +21,7 @@ api_type:
 
 The **!igrep** extension searches for a pattern in disassembly.
 
-``` syntax
+```
 !igrep [Pattern [StartAddress]] 
 ```
 

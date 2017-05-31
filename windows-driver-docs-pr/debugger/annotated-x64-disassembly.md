@@ -18,7 +18,7 @@ ms.technology: windows-devices
 
 The following very simple function illustrates the x64 calling convention.
 
-``` syntax
+```
 int Simple(int i, int j)
 {
     return i*5 + j + 3;
@@ -27,7 +27,7 @@ int Simple(int i, int j)
 
 This compiles to code like this:
 
-``` syntax
+```
 01001080 lea     eax,[rdx+rcx*4]        ; eax = rdx+rcx*4
 01001083 lea     eax,[rcx+rax+0x3]      ; eax = rcx+rax+3
 01001087 ret
@@ -47,7 +47,7 @@ Return values are passed in the **rax** register. In this case, the result is al
 
 Next we consider a more complicated function to demonstrate typical x64 disassembly:
 
-``` syntax
+```
 HRESULT Meaningless(IDispatch *pdisp, DISPID dispid, BOOL fUnique, LPCWSTR pszExe)
 {
     IQueryAssociations *pqa;
@@ -101,7 +101,7 @@ Recall that the first four parameters are passed in registers. Since this functi
 
 The assembly begins as follows:
 
-``` syntax
+```
 Meaningless:
 010010e0 push    rbx                    ; save
 010010e1 push    rsi                    ; save
@@ -119,14 +119,14 @@ Meaningless:
 
 The function begins by saving nonvolatile registers, and then reserving stack space for local variables. It then saves parameters in nonvolatile registers. Note that the destination of the middle two **mov** instructions is a 32-bit register, so they are implicitly zero-extended to 64 bits.
 
-``` syntax
+```
     IQueryAssociations *pqa;
     HRESULT hr = AssocCreate(CLSID_QueryAssociations, IID_IQueryAssociations, (void**)&pqa);
 ```
 
 The first parameter to **AssocCreate** is a 128-bit CLSID passed by value. Since this doesn't fit in a 64-bit register, the CLSID is copied to the stack, and a pointer to the stack location is passed instead.
 
-``` syntax
+```
 010010fe movdqu  xmm0,oword ptr [CLSID_QueryAssociations (01001060)]
 01001106 movdqu  oword ptr [rsp+0x60],xmm0  ; temp buffer for first parameter
 0100110c lea     r8,[rsp+0x58]          ; arg3 = &pqa
@@ -137,7 +137,7 @@ The first parameter to **AssocCreate** is a 128-bit CLSID passed by value. Since
 
 The **movdqu** instruction transfers 128-bits values to and from **xmm***n* registers. In this instance, the assembly code uses it to copy the CLSID to the stack. The pointer to the CLSID is passed in **r8**. The other two arguments are passed in **rcx** and **rdx**.
 
-``` syntax
+```
     if (SUCCEEDED(hr)) {
 
 01001123 test    eax,eax
@@ -146,7 +146,7 @@ The **movdqu** instruction transfers 128-bits values to and from **xmm***n* regi
 
 The code checks to see if the return value is a success.
 
-``` syntax
+```
         hr = pqa->Init(ASSOCF_INIT_BYEXENAME, pszExe, NULL, NULL);
 
 0100112b mov     rcx,[rsp+0x58]         ; arg1 = pqa
@@ -162,7 +162,7 @@ The code checks to see if the return value is a success.
 
 This is an indirect function call using a C++ vtable. The **this** pointer is passed in **rcx** as the first parameter. The first three parameters are passed in registers, while the final parameter is passed on the stack. The function reserves 16 bytes for the parameters passed in registers, so the fifth parameter begins at **rsp**+0x20.
 
-``` syntax
+```
         if (SUCCEEDED(hr)) {
 
 0100114d mov     ebx,eax                ; ebx = hr
@@ -172,7 +172,7 @@ This is an indirect function call using a C++ vtable. The **this** pointer is pa
 
 The assembly-language code saves the result in **ebx**, and checks to see if it's a success code.
 
-``` syntax
+```
             WCHAR wszName[MAX_PATH];
             DWORD cchName = MAX_PATH;
             hr = pqa->GetString(0, ASSOCSTR_FRIENDLYAPPNAME, NULL, wszName, &cchName);
@@ -196,7 +196,7 @@ The assembly-language code saves the result in **ebx**, and checks to see if it'
 
 Once again, we set up the parameters and call a function, then test the return value for success.
 
-``` syntax
+```
                 VARIANTARG rgvarg[2] = { 0 };
 
 01001196 lea     rdi,[rsp+0x82]         ; rdi = &rgvarg
@@ -207,7 +207,7 @@ Once again, we set up the parameters and call a function, then test the return v
 
 The idiomatic method for zeroing out a buffer on x64 is the same as x86.
 
-``` syntax
+```
                 V_VT(&rgvarg[0]) = VT_BSTR;
                 V_BSTR(&rgvarg[0]) = SysAllocString(wszName);
                 if (V_BSTR(&rgvarg[0])) {
@@ -230,7 +230,7 @@ The idiomatic method for zeroing out a buffer on x64 is the same as x86.
 
 **InterlockedIncrement** compiles directly to machine code. The **lock xadd** instruction performs an atomic exchange and add. The final result is stored in **ecx**.
 
-``` syntax
+```
                     V_VT(&rgvarg[1]) = VT_I4;
                     V_I4(&rgvarg[1]) = fUnique ? lUnique : 0;
 
@@ -243,7 +243,7 @@ The idiomatic method for zeroing out a buffer on x64 is the same as x86.
 
 Since x64 supports the **cmov** instruction, the **?:** construct can be compiled without using a jump.
 
-``` syntax
+```
                     dp.rgvarg = rgvarg;
                     dp.cArgs = 2;
                     dp.rgdispidNamedArgs = NULL;
@@ -258,7 +258,7 @@ Since x64 supports the **cmov** instruction, the **?:** construct can be compile
 
 This code initializes the rest of the members of DISPPARAMS. Note that the compiler reuses the space on the stack previously used by the CLSID.
 
-``` syntax
+```
                     hr = pdisp->Invoke(dispid, IID_NULL, 0, DISPATCH_METHOD, &dp, NULL, NULL, NULL);
 
 01001219 mov     rax,[rsi]                  ; rax = pdisp.vtbl
@@ -278,7 +278,7 @@ This code initializes the rest of the members of DISPPARAMS. Note that the compi
 
 The code then sets up the parameters and calls the **Invoke** method.
 
-``` syntax
+```
                     VariantClear(&rgvarg[0]);
                     VariantClear(&rgvarg[1]);
 
@@ -291,7 +291,7 @@ The code then sets up the parameters and calls the **Invoke** method.
 
 The code finishes up the current branch of the conditional, and skips over the **else** branch.
 
-``` syntax
+```
                 } else {
                     hr = E_OUTOFMEMORY;
                 }
@@ -308,7 +308,7 @@ ReleasePQA:
 
 The **else** branch.
 
-``` syntax
+```
     return hr;
 }
 

@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.eval** extension evaluates an expression using an extension-specific expression evaluator.
 
-``` syntax
-    !ks.eval Expression 
+```
+!ks.eval Expression 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

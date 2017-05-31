@@ -21,7 +21,7 @@ api_type:
 
 The **!wudfext.wudfdevice** extension displays the Plug and Play (PnP) and power-management state systems for a device.
 
-``` syntax
+```
 !wudfext.wudfdevice pWDFDevice
 ```
 

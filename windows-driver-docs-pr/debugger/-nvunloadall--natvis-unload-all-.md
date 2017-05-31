@@ -21,9 +21,8 @@ api_type:
 
 The .nvunloadall command unloads all of the NatVis files from the debugger environment.
 
-``` syntax
-    .nvunloadall 
-   
+```
+ .nvunloadall 
 ```
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment

@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfumdownirp** extension displays the kernel-mode I/O request packet (IRP) that is associated with a specified user-mode IRP. This command is used in two steps. See Remarks.
 
-``` syntax
+```
 !wdfkd.wdfumdownirp UmIrp [FileObject] 
 ```
 

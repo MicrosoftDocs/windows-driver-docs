@@ -21,7 +21,7 @@ api_type:
 
 The **!vpb** extension displays a volume parameter block (VPB).
 
-``` syntax
+```
 !vpb Address
 ```
 
@@ -61,7 +61,7 @@ Remarks
 
 Here is an example. First, the device tree is displayed with the [**!devnode**](-devnode.md) extension:
 
-``` syntax
+```
 kd> !devnode 0 1
 Dumping IopRootDeviceNode (= 0x80e203b8)
 DevNode 0x80e203b8 for PDO 0x80e204f8
@@ -89,7 +89,7 @@ DevNode 0x80e203b8 for PDO 0x80e204f8
 
 The last device node listed is a volume. Examine its physical device object (PDO) with the [**!devobj**](-devobj.md) extension:
 
-``` syntax
+```
 kd> !devobj 80e15cb8
 Device object (80e15cb8) is for:
  HarddiskVolume1 \Driver\Ftdisk DriverObject 80e4e248
@@ -102,7 +102,7 @@ Device queue is not busy.
 
 The address of this device's VPB is included in this listing. Use this address with the **!vpb** extension:
 
-``` syntax
+```
 kd> !vpb 80e15c30
 Vpb at 0x80e15c30
 Flags: 0x1 mounted 

@@ -23,7 +23,7 @@ Use the following commands to analyze User-Mode Dump Heap (UMDH) logs that were 
 
 You can analyze a single log file or compare logs from different runs to detect the changes in the program or driver's memory dump allocations over time.
 
-``` syntax
+```
 umdh [-d] [-v] [-l] File1 [File2] [-h | ?]
 ```
 

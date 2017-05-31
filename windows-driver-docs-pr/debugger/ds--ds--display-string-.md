@@ -21,7 +21,7 @@ api_type:
 
 The **ds** and **dS** commands display a STRING, ANSI\_STRING, or UNICODE\_STRING structure. (These commands do not display null-delimited character strings.)
 
-``` syntax
+```
 d{s|S} [/c Width] [Address]
 ```
 

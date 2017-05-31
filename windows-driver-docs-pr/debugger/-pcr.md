@@ -21,7 +21,7 @@ api_type:
 
 The **!pcr** extension displays the current status of the Processor Control Region (PCR) on a specific processor.
 
-``` syntax
+```
 !pcr [Processor]
 ```
 
@@ -63,7 +63,7 @@ The processor control block (PRCB) is an extension of the PCR. It can be display
 
 Here is an example of the **!pcr** extension on an x86 target computer:
 
-``` syntax
+```
 kd> !pcr 0
 KPCR for Processor 0 at ffdff000:
     Major 1 Minor 1

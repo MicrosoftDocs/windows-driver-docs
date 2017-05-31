@@ -23,7 +23,7 @@ The pipe (**|**) command displays status for the specified process, or for all p
 
 Do not confuse this command with the [**|| (System Status)**](----system-status-.md) command.
 
-``` syntax
+```
 | Process
 ```
 

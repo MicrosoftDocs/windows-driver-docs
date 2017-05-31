@@ -2,7 +2,7 @@
 title: Debugging Managed Code Using the Windows Debugger
 description: You can use the windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code.
 ms.assetid: eb4cc883-71ac-4a57-8654-07c3120310c0
-keywords: ["managed code debugging", "managed code debugging, overview", ".NET common language runtime", "common language runtime (CLR)", "CLR (common language runtime)", "JIT compiler", "JITted code", "JITted code, See "managed code debugging"", "Visual C++ with managed extensions"]
+keywords: debugging, debug, Windbg, managed code debugging, .NET common language runtime, common language runtime, CLR , JIT compiler, JITted code
 ms.author: windowsdriverdev
 ms.date: 05/23/2017
 ms.topic: article
@@ -76,7 +76,7 @@ The debugger must load a version of the DAC that is the same as the version of t
 
 The output should be similar to this.
 
-``` syntax
+```
 CLRDLL: Loaded DLL C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscordacwks.dll
 CLR DLL status: Loaded DLL C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscordacwks.dll
 ```
@@ -89,7 +89,7 @@ To verify that the version of mscordacwks.dll matches the version of the CLR tha
 
 The output should be similar to this.
 
-``` syntax
+```
 start             end                 module name
 000007ff`26710000 000007ff`2706e000   clr        (deferred)             
     Image path: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\clr.dll
@@ -134,7 +134,7 @@ Enter these commands.
 
 The output will be similar to this.
 
-``` syntax
+```
 CLRDLL: Unable to get version info for 'C:\Windows\Microsoft.NET
    \Framework64\v4.0.30319\mscordacwks.dll', Win32 error 0n87
 
@@ -164,7 +164,7 @@ To verify that the version of mscordacwks.dll matches the version of the CLR tha
 
 The output should be similar to this.
 
-``` syntax
+```
 start             end                 module name
 000007ff`26710000 000007ff`2706e000   clr        (deferred)             
     Image path: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\clr.dll
@@ -177,7 +177,7 @@ In the preceding example, notice that the version of the CLR (clr.dll) matches t
 
 To verify that the SOS debugging extension loaded correctly, enter the [**.chain**](-chain--list-debugger-extensions-.md) command.
 
-``` syntax
+```
 0:000> .chain
 Extension DLL search Path:
 ...

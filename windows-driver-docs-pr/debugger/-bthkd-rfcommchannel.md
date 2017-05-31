@@ -21,7 +21,7 @@ api_type:
 
 The **!bthkd.rfcommchannel** command displays information about a given RFCOMM channel CB.
 
-``` syntax
+```
 !bthkd.rfcommchannel addr 
 ```
 

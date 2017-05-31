@@ -2,7 +2,7 @@
 title: Breakpoint Syntax
 description: This topic covers breakpoint syntax
 ms.assetid: 86228b87-9ca3-4d0c-be9e-63446ac6ce31
-keywords: ["methods, breakpoints on methods", "breakpoints, breakpoints on methods", "syntax rules for commands, b (breakpoint identifier)", "b (breakpoint identifier)", "breakpoint identifier ( b )", "syntax rules for commands, "" (literal MASM identifier)", """ (literal MASM identifier)", "templated functions", "templated functions, breakpoints"]
+keywords: debugger, breakpoints on methods, breakpoints, syntax rules for commands, b (breakpoint identifier), literal MASM identifier, templated functions
 ms.author: windowsdriverdev
 ms.date: 05/23/2017
 ms.topic: article
@@ -22,7 +22,7 @@ The following syntax elements can be used when creating a [breakpoint](using-bre
 
 Breakpoints support many kinds of address syntax, including virtual addresses, function offsets, and source line numbers. For example, you can use any of the following commands to set breakpoints:
 
-``` syntax
+```
 0:000> bp 0040108c
 0:000> bp main+5c
 0:000> bp `source.c:31`
@@ -36,14 +36,14 @@ If you want to put a breakpoint on the *MyMethod* method in the *MyClass* class,
 
 -   In MASM expression syntax, you can indicate a method by a double colon or by a double underscore.
 
-    ``` syntax
+    ```
     0:000> bp MyClass::MyMethod 
     0:000> bp MyClass__MyMethod 
     ```
 
 -   In C++ expression syntax, you must indicate a method by a double colon.
 
-    ``` syntax
+    ```
     0:000> bp @@( MyClass::MyMethod ) 
     ```
 
@@ -55,7 +55,7 @@ To set a breakpoint on complicated functions, including functions that contain s
 
 A more versatile technique is to use the @!"chars" syntax. This is a special escape in the MASM evaluator that enables you to provide arbitrary text for symbol resolution. You must start with the three symbols @!" and end with a quotation mark ("). Without this syntax, you cannot use spaces, angle brackets (&lt;, &gt;), or other special characters in symbol names in the MASM evaluator. This syntax is exclusively for names, and not parameters. Templates and overloads are the primary sources of symbols that require this quote notation. You can also set the **bu** command by using the @!"chars" syntax, as the following code example shows.
 
-``` syntax
+```
 0:000> bu @!"ExecutableName!std::pair<unsigned int,std::basic_string<unsigned short,std::char_traits<unsigned short>,std::allocator<unsigned short> > >::operator="
 ```
 
@@ -69,7 +69,7 @@ To set a breakpoint on arbitrary text in C++ syntax, use **bu @@c++(***text***)*
 
 Breakpoint IDs do not have to be referred to explicitly. Instead, you can use a numerical expression that resolves to an integer that corresponds to a breakpoint ID. To indicate that the expression should be interpreted as a breakpoint, use the following syntax.
 
-``` syntax
+```
 b?[Expression]
 ```
 
@@ -77,7 +77,7 @@ In this syntax, the square brackets are required, and *Expression* stands for an
 
 This syntax allows debugger scripts to programmatically select a breakpoint. In the following example, the breakpoint changes depending on the value of a user-defined pseudo-register.
 
-``` syntax
+```
 b?[@$t0]
 ```
 

@@ -23,7 +23,7 @@ The double vertical bar (**||**) command prints status for the specified system 
 
 Do not confuse this command with the [**| (Process Status)**](---process-status-.md) command.
 
-``` syntax
+```
 || System 
 ```
 

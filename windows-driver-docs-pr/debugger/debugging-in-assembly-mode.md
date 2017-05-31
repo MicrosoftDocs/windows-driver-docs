@@ -42,7 +42,7 @@ You can display the resulting code (known as *disassembly code*) in several diff
 
 The disassembly display appears in four columns: address offset, binary code, assembly language mnemonic, and assembly language details. The following example shows this display.
 
-``` syntax
+```
 0040116b    45          inc         ebp            
 0040116c    fc          cld                        
 0040116d    8945b0      mov         eax,[ebp-0x1c] 

@@ -24,7 +24,7 @@ All pseudo-registers begin with a dollar sign (**$**). If you are using MASM syn
 
 For example, the following two commands produce the same output, but the second command is faster.
 
-``` syntax
+```
 0:000> ? $exp
 Evaluate expression: 143 = 0000008f
 0:000> ? @$exp
@@ -37,7 +37,7 @@ If you are using C++ expression syntax, the at sign ( **@** ) is always required
 
 The [**r (Registers)**](r--registers-.md) command is an exception to this rule. The debugger always interprets its first argument as a register or pseudo-register. (An at sign is not required or permitted.) If there is a second argument for the **r** command, it is interpreted according to the default expression syntax. If the default expression syntax is C++, you must use the following command to copy the **$t2** pseudo-register to the **$t1** pseudo-register.
 
-``` syntax
+```
 0:000> r $t1 = @$t2
 ```
 
@@ -332,14 +332,14 @@ There are 20 user-defined pseudo-registers (**$t0**, **$t1**, ..., **$t19**). Th
 
 To write to one of these pseudo-registers, use the [**r (Registers)**](r--registers-.md) command, as the following example shows.
 
-``` syntax
+```
 0:000> r $t0 = 7
 0:000> r $t1 = 128*poi(MyVar)
 ```
 
 Like all pseudo-registers, you can use the user-defined pseudo-register in any expression, as the following example shows.
 
-``` syntax
+```
 0:000> bp $t3 
 0:000> bp @$t4 
 0:000> ?? @$t1 + 4*@$t2 
@@ -347,7 +347,7 @@ Like all pseudo-registers, you can use the user-defined pseudo-register in any e
 
 A pseudo-register is always typed as an integer, unless you use the **?** switch together with the **r** command. If you use this switch, the pseudo-register acquires the type of whatever is assigned to it. For example, the following command assigns the UNICODE\_STRING\*\* type and the 0x0012FFBC value to **$t15**.
 
-``` syntax
+```
 0:000> r? $t15 = * (UNICODE_STRING*) 0x12ffbc
 ```
 
@@ -361,7 +361,7 @@ User-defined pseudo-registers use zero as the default value when the debugger is
 
 The following example sets a breakpoint that is hit every time that the current thread calls **NtOpenFile**. But this breakpoint is not hit when other threads call **NtOpenFile**.
 
-``` syntax
+```
 kd> bp /t @$thread nt!ntopenfile
 ```
 
@@ -369,13 +369,13 @@ kd> bp /t @$thread nt!ntopenfile
 
 The following example executes a command until the register holds a specified value. First, put the following code for conditional stepping in a script file named "eaxstep".
 
-``` syntax
+```
 .if (@eax == 1234) { .echo 1234 } .else { t "$<eaxstep" }
 ```
 
 Next, issue the following command.
 
-``` syntax
+```
 t "$<eaxstep"
 ```
 

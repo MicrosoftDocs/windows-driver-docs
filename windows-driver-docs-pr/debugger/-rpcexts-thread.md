@@ -23,7 +23,7 @@ The **!rpcexts.thread** extension displays the per-thread RPC information.
 
 This extension command should not be confused with the [**.thread (Set Register Context)**](-thread--set-register-context-.md) command or the [**!thread**](-thread.md) (!kdextx86.thread and !kdexts.thread) extension.
 
-``` syntax
+```
 !rpcexts.thread TEB
 ```
 

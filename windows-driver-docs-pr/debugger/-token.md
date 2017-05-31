@@ -23,14 +23,14 @@ The **!token** extension displays a formatted view of a security token object.
 
 Kernel-Mode Syntax:
 
-``` syntax
+```
 !token [-n] [Address] 
 !token -?
 ```
 
 User-Mode Syntax:
 
-``` syntax
+```
 !token [-n] [Handle] 
 !token -?
 ```
@@ -69,7 +69,7 @@ You can get the token address from the output of [**!process**](-process.md). To
 
 Here is an example:
 
-``` syntax
+```
 kd> !process 81464da8 1
 PROCESS 81464da8  SessionId: 0  Cid: 03bc    Peb: 7ffdf000  ParentCid: 0124
     DirBase: 0dec2000  ObjectTable: e1a31198  TableSize: 275.

@@ -21,7 +21,7 @@ api_type:
 
 The **sq** command turns quiet mode on or off.
 
-``` syntax
+```
 sq 
 sq{e|d} 
 ```

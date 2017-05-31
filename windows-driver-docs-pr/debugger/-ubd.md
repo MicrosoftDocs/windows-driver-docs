@@ -21,8 +21,8 @@ api_type:
 
 The **!ubd** extension temporarily disables a user-space breakpoint.
 
-``` syntax
-    !ubd BreakpointNumber 
+```
+!ubd BreakpointNumber 
 ```
 
 ## <span id="ddk__ubd_dbg"></span><span id="DDK__UBD_DBG"></span>Parameters

@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfdevice** extension displays information that is associated with a WDFDEVICE-typed object handle.
 
-``` syntax
+```
 !wdfkd.wdfdevice Handle [Flags]
 ```
 

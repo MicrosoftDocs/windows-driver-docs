@@ -23,14 +23,14 @@ The **t** command executes a single instruction or source line and optionally di
 
 User-Mode
 
-``` syntax
+```
 [~Thread] t [r] [= StartAddress] [Count] ["Command"] 
 ```
 
 Kernel-Mode
 
-``` syntax
-    t [r] [= StartAddress] [Count] ["Command"] 
+```
+t [r] [= StartAddress] [Count] ["Command"] 
 ```
 
 ## <span id="ddk_cmd_trace_dbg"></span><span id="DDK_CMD_TRACE_DBG"></span>Parameters

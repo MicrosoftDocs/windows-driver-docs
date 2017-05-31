@@ -21,7 +21,7 @@ api_type:
 
 The **!gpiokd.gpioext** command displays information about a GPIO controller.
 
-``` syntax
+```
 !gpiokd.gpioext ExtensionAddress [Flags]
 ```
 

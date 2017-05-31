@@ -21,7 +21,7 @@ api_type:
 
 The **!envvar** extension displays the value of the specified environment variable.
 
-``` syntax
+```
 !envvar Variable
 ```
 
@@ -61,7 +61,7 @@ Remarks
 
 The **!envvar** extension works both in user mode and in kernel mode. However, in kernel mode, when you set the idle thread as the current process, the pointer to the Process Environment Block (PEB) is **NULL**, so it fails. In kernel mode, the **!envvar** extension displays the environment variables on the target computer, as the following example shows.
 
-``` syntax
+```
 0:000> !envvar _nt_symbol_path
         _nt_symbol_path = srv*C:\mysyms*https://msdl.microsoft.com/download/symbols
 ```

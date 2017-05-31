@@ -21,7 +21,7 @@ api_type:
 
 The **.browse** command displays the output of a specified command in a new [Command Browser window](command-browser-window.md).
 
-``` syntax
+```
 .browse Command
 ```
 
@@ -36,7 +36,7 @@ Remarks
 
 The following example uses the **.browse** command to display the output of the [**.chain /D**](-chain--list-debugger-extensions-.md) command in a Command Browser window.
 
-```cmd
+```
 .browse .chain /D
 ```
 

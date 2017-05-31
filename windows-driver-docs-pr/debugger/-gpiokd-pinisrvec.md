@@ -21,7 +21,7 @@ api_type:
 
 The **!gpiokd.pinisrvec** command displays Interrupt Service Routine (ISR) vector information for a specified pin.
 
-``` syntax
+```
 !gpiokd.bankinfo PinAddress
 ```
 

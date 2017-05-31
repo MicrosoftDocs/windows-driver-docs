@@ -23,9 +23,9 @@ The **!filelock** extension displays a file lock structure.
 
 Syntax
 
-``` syntax
- !filelock FileLockAddress 
- !filelock ObjectAddress 
+```
+!filelock FileLockAddress 
+!filelock ObjectAddress 
 ```
 
 ## <span id="ddk__filelock_dbg"></span><span id="DDK__FILELOCK_DBG"></span>Parameters

@@ -23,7 +23,7 @@ The **!amli bl** extension displays a list of all AML breakpoints.
 
 Syntax
 
-``` syntax
+```
 !amli bl
 ```
 

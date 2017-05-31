@@ -21,8 +21,8 @@ api_type:
 
 The **.allow\_exec\_cmds** command controls whether execution commands can be used.
 
-``` syntax
-    .allow_exec_cmds 0 
+```
+.allow_exec_cmds 0 
 .allow_exec_cmds 1 
 .allow_exec_cmds 
 ```

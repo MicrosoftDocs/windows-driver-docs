@@ -21,7 +21,7 @@ api_type:
 
 The **!pat** extension displays the Page Attribute Table (PAT) registers for the target processor.
 
-``` syntax
+```
 !pat Flag 
 !pat 
 ```

@@ -21,8 +21,8 @@ api_type:
 
 The **!kuser** extension displays the shared user-mode page (KUSER\_SHARED\_DATA).
 
-``` syntax
-    !kuser 
+```
+!kuser 
 ```
 
 ## <span id="ddk__kuser_dbg"></span><span id="DDK__KUSER_DBG"></span>
@@ -65,7 +65,7 @@ TickCount:    fa00000 * 00482006 (0:20:30:56.093)
 TimeZone Id: 2
 ImageNumber Range: [14c .. 14c]
 Crypto Exponent: 0
-SystemRoot: &#39;F:\WINDOWS&#39;
+SystemRoot: 'F:\WINDOWS'
 ```
 
  

@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.ohdr** extension displays details of a kernel streaming object header.
 
-``` syntax
-    !ks.ohdr Object [Level] [Flags]  
+```
+!ks.ohdr Object [Level] [Flags]  
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

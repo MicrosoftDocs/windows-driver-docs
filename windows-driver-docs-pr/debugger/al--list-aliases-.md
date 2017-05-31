@@ -21,7 +21,7 @@ api_type:
 
 The **al** command displays a list of all currently defined user-named aliases.
 
-``` syntax
+```
 al
 ```
 

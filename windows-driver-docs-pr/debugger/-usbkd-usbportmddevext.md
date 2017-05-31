@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbportmddevext** command displays a **usbport!\_DEVICE\_EXTENSION** structure if one is present in a crash dump that was generated as a result [**Bug Check 0xFE**](bug-check-0xfe--bugcode-usb-driver.md).
 
-``` syntax
+```
 !usbkd.usbportmddevext
 ```
 
@@ -40,7 +40,7 @@ Examples
 
 Here is an example of the output of **!usbportmddevext**.
 
-``` syntax
+```
 1: kd> !analyze -v
 *** ...
 BUGCODE_USB_DRIVER (fe) 

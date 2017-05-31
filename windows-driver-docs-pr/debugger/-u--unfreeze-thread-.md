@@ -23,7 +23,7 @@ The **~u** command unfreezes the specified thread.
 
 Do not confuse this command with the [**U (Unassemble)**](u--unassemble-.md) command.
 
-``` syntax
+```
 ~Thread u 
 ```
 

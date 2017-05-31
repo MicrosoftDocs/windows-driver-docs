@@ -2,7 +2,7 @@
 title: Using Debugger Commands
 description: This section describes using Debugger Commands. You enter commands at the prompt at the bottom of the window.
 ms.assetid: 64dcc364-53b5-41d3-9266-abcfe4b328f4
-keywords: ["commands", "commands, using", "debugger commands", "debugger commands, See "commands"", "meta-commands ("." commands)", "meta-commands ("." commands), using", ". commands", ". commands, See "meta-commands"", "macros"]
+keywords: commands, debugger commands, meta-commands
 ms.author: windowsdriverdev
 ms.date: 05/23/2017
 ms.topic: article
@@ -38,7 +38,7 @@ You can use the UP ARROW and DOWN ARROW keys to scroll through the command histo
 
 When you are performing user-mode debugging, the prompt in the Debugger Command window looks like the following example.
 
-``` syntax
+```
 2:005>
 ```
 
@@ -46,7 +46,7 @@ In the preceding example, 2 is the current process number, and 005 is the curren
 
 If you attach the debugger to more than one computer, the system number is included before the process and thread number, as in the following example.
 
-``` syntax
+```
 3:2:005>
 ```
 
@@ -54,19 +54,19 @@ In this example, 3 is the current system number, 2 is the current process number
 
 When you are performing kernel-mode debugging on a target computer that has only one processor, the prompt looks like the following example.
 
-``` syntax
+```
 kd>
 ```
 
 However, if the target computer has multiple processors, the number of the current processor appears before the prompt, as in the following example.
 
-``` syntax
+```
 0: kd> 
 ```
 
 If the debugger is busy processing a previously issued command, new commands will temporarily not be processed, although they can be added to the command buffer. In addition, you can still use [control keys](control-keys.md) in KD and CDB, and you can still use menu commands and [shortcut keys](keyboard-shortcuts.md) in WinDbg. When KD or CDB is in this busy state, no prompt is displayed. When WinDbg is in this busy state, the following indicator will appear in place of the prompt:
 
-``` syntax
+```
 *BUSY* 
 ```
 

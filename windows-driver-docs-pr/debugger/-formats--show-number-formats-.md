@@ -21,7 +21,7 @@ api_type:
 
 The **.formats** command evaluates an expression or symbol in the context of the current thread and process and displays it in multiple numeric formats.
 
-``` syntax
+```
 .formats expression 
 ```
 

@@ -21,8 +21,8 @@ api_type:
 
 The **!minipkd.portconfig** extension displays information about the specified PORT\_CONFIGURATION\_INFORMATION data structure.
 
-``` syntax
-    !minipkd.portconfig PortConfig 
+```
+!minipkd.portconfig PortConfig 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

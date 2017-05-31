@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdffindobjects** extension searches memory for WDF objects.
 
-``` syntax
+```
 !wdfkd.wdffindobjects [StartAddress [Flags]]
 ```
 

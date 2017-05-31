@@ -21,7 +21,7 @@ api_type:
 
 The **ib**, **iw**, and **id** commands read and display a byte, word, or double word from the selected port.
 
-``` syntax
+```
 ib Address 
 iw Address 
 id Address

@@ -23,7 +23,7 @@ DumpChk.exe is included in [Debugging Tools for Windows](index.md).
 ## <span id="DumpChk_command-line_options"></span><span id="dumpchk_command-line_options"></span><span id="DUMPCHK_COMMAND-LINE_OPTIONS"></span>DumpChk command-line options
 
 
-``` syntax
+```
 DumpChk [-y SymbolPath] DumpFile
 ```
 
@@ -111,9 +111,9 @@ Stream 1: type ThreadInfoListStream (17), size 0000008C, RVA 00000220
   RVA 0000026C, ID 1340
 Stream 2: type ModuleListStream (4), size 00000148, RVA 000002AC
   3 modules
-  RVA 000002B0, 00400000 - 00438000: &#39;C:\CODE\TimeTest\Debug\TimeTest.exe&#39;
-  RVA 0000031C, 779c0000 - 77ade000: &#39;C:\Windows\System32\ntdll.dll&#39;
-  RVA 00000388, 76830000 - 76908000: &#39;C:\Windows\System32\kernel32.dll&#39;
+  RVA 000002B0, 00400000 - 00438000: 'C:\CODE\TimeTest\Debug\TimeTest.exe'
+  RVA 0000031C, 779c0000 - 77ade000: 'C:\Windows\System32\ntdll.dll'
+  RVA 00000388, 76830000 - 76908000: 'C:\Windows\System32\kernel32.dll'
 Stream 3: type Memory64ListStream (9), size 00000290, RVA 00001D89
   40 memory ranges
   RVA 0x2019 BaseRva
@@ -154,10 +154,10 @@ PEB at 7ffd9000
     SubSystemData:     00000000
     ProcessHeap:       002c0000
     ProcessParameters: 002c14c0
-    WindowTitle:  &#39;C:\CODE\TimeTest\Debug\TimeTest.exe&#39;
-    ImageFile:    &#39;C:\CODE\TimeTest\Debug\TimeTest.exe&#39;
-    CommandLine:  &#39;\CODE\TimeTest\Debug\TimeTest.exe&#39;
-    DllPath:      &#39;C:\CODE\TimeTest\Debug;C:\Windows\system32;C:\Windows\system;
+    WindowTitle:  'C:\CODE\TimeTest\Debug\TimeTest.exe'
+    ImageFile:    'C:\CODE\TimeTest\Debug\TimeTest.exe'
+    CommandLine:  '\CODE\TimeTest\Debug\TimeTest.exe'
+    DllPath:      'C:\CODE\TimeTest\Debug;C:\Windows\system32;C:\Windows\system;
     Environment:  002c0808
         =C:=C:\CODE
         =ExitCode=00000000

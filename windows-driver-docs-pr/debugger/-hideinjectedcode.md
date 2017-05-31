@@ -21,7 +21,7 @@ api_type:
 
 The **.hideinjectedcode** command turns on, or off, the hiding of injected code.
 
-``` syntax
+```
 .hideinjectedcode { on | off } 
 .hideinjectedcode help 
 .hideinjectedcode

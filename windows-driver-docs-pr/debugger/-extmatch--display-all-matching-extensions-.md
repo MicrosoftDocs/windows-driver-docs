@@ -21,7 +21,7 @@ api_type:
 
 The **.extmatch** command displays extension commands exported by the currently loaded extension DLLs that match the specified pattern.
 
-``` syntax
+```
 .extmatch [Options] Pattern 
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The **CTRL+ALT+\\** key launches a new instance of CDB; this new debugger takes the current debugger as its target.
 
-``` syntax
+```
 CTRL+ALT+\ 
 ```
 

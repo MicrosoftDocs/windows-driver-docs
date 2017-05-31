@@ -21,7 +21,7 @@ api_type:
 
 The **.typeopt** command sets or displays the type options.
 
-``` syntax
+```
 .typeopt +Flags 
 .typeopt -Flags 
 .typeopt +FlagName 

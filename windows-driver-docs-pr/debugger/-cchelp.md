@@ -21,7 +21,7 @@ api_type:
 
 The **!cchelp** extension displays some brief Help text in the Debugger command window for some of the cache management extensions.
 
-``` syntax
+```
 !cchelp
 ```
 

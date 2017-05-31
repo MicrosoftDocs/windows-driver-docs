@@ -21,7 +21,7 @@ api_type:
 
 The **.echotimestamps** command turns on or turns off the display of time stamp information.
 
-``` syntax
+```
 .echotimestamps 0 
 .echotimestamps 1 
 .echotimestamps 

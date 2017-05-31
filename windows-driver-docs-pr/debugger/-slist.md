@@ -21,7 +21,7 @@ api_type:
 
 The **!slist** extension displays a singly-linked list (SList).
 
-``` syntax
+```
 !slist Address [ Symbol [Offset] ] 
 !slist -?
 ```
@@ -67,7 +67,7 @@ Remarks
 
 If you know the nature of the linked structures, the *Symbol* and *Offset* parameters are very useful. To see the difference, here are two examples; the first omits the *Symbol* and *Offset* parameters, while the second includes them.
 
-``` syntax
+```
 0:000> !slist ListHead
 SLIST HEADER:
    +0x000 Alignment          : a000a002643e8
@@ -88,7 +88,7 @@ SLIST CONTENTS:
 00260f80  00000000 00000001 6e676953 72757461
 ```
 
-``` syntax
+```
 0:000> !slist ListHead _PROGRAM_ITEM 0
 SLIST HEADER:
  +0x000 Alignment          : a000a002643e8

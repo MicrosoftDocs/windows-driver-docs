@@ -21,7 +21,7 @@ api_type:
 
 The **.show\_read\_failures** command enables or disables the display of read failures.
 
-``` syntax
+```
 .show_read_failures /v 
 .show_sym_failures /V
 ```

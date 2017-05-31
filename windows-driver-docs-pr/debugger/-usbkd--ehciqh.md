@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.\_ehciqh** command displays information from a **usbehci!\_HCD\_QUEUEHEAD\_DESCRIPTOR** structure. Use this command to display information about asynchronous endpoints (that is, control and bulk endpoints).
 
-``` syntax
+```
 !usbkd._ehciqh StructAddr
 ```
 

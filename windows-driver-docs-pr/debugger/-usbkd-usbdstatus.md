@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbdstatus** command displays the name of a USBD status code.
 
-``` syntax
+```
 !usbkd.usbdstatus StatusCode
 ```
 
@@ -41,7 +41,7 @@ Examples
 
 Here is an example of the output of **!usbdstatus**.
 
-``` syntax
+```
 1: kd> !usbkd.usbdstatus 0xC0000008
 
 USBD_STATUS_DATA_OVERRUN (0xC0000008)

@@ -21,8 +21,8 @@ api_type:
 
 The DbgRpc command line must always contain exactly one of the -l, -e, -t, -c, or -a switches. The options following these switches depend on the switch used. The -s, -p, and -r options can be used with any other options.
 
-``` syntax
-    dbgrpc [-s Server -p ProtSeq] [-r Radix] -l -P ProcessID -L CellID1.CellID2 
+```
+ dbgrpc [-s Server -p ProtSeq] [-r Radix] -l -P ProcessID -L CellID1.CellID2 
 
 dbgrpc [-s Server -p ProtSeq] [-r Radix] -e [-E EndpointName] 
 
@@ -31,8 +31,6 @@ dbgrpc [-s Server -p ProtSeq] [-r Radix] -t -P ProcessID [-T ThreadID]
 dbgrpc [-s Server -p ProtSeq] [-r Radix] [-c|-a] [-C CallID] [-I IfStart] [-N ProcNum] [-P ProcessID] 
 
 dbgrpc -? 
-
-   
 ```
 
 ## <span id="ddk_dbgrpc_command_line_options_dbg"></span><span id="DDK_DBGRPC_COMMAND_LINE_OPTIONS_DBG"></span>Parameters

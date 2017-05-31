@@ -21,7 +21,7 @@ api_type:
 
 The **dv** command displays the names and values of all local variables in the current scope.
 
-``` syntax
+```
 dv [Flags] [Pattern] 
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The **!calldata** extension displays performance information in the form of procedure call statistics from the named table.
 
-``` syntax
+```
     !calldata Table 
 ```
 

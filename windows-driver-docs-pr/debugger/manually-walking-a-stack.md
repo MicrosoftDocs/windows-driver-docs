@@ -26,7 +26,7 @@ For the example, a failure that actually gives a stack trace is used so the resu
 
 The first step is to find out what modules are loaded where. This is accomplished with the [**x (Examine Symbols)**](x--examine-symbols-.md) command (some symbols are edited out for reasons of length):
 
-``` syntax
+```
 kd> x *! 
 start    end        module name
 77f70000 77fb8000   ntdll     (C:\debug\ntdll.dll, \\ntstress\symbols\dll\ntdll.DBG)
@@ -66,7 +66,7 @@ fe6c0000 fe6f0920   srv       (load from srv.sys deferred)
 
 The second step is dumping out the stack pointer to look for addresses in the modules given by the **x \*!** command:
 
-``` syntax
+```
 kd> dd esp 
 fe4cc97c  80136039 00000270 00000000 00000000
 fe4cc98c  fe682ae4 801036fe 00000000 fe68f57a
@@ -94,7 +94,7 @@ To determine which values are likely function addresses and which are parameters
 
 Notice that all modules listed are in the ranges of 77f70000 to 8040c000 and fe4c0000 to fe6f0920. Based on these ranges, the possible function addresses in the preceding list are: 80136039, 801036fe (listed twice, so more likely a parameter), fe682ae4, fe68f57a, fe682a78, fe6a1198, 8011c901, 80127797, 80110008, fe6a1430, fe6a10ae, fe6b2c04, fe685968, fe680ba4, and fe682050. Investigate these locations by using an [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md) command for each address:
 
-``` syntax
+```
 kd> ln 80136039 
 (80136039)   NT!_KiServiceExit+0x1e  |  (80136039)   NT!_KiServiceExit2-0x177
 kd> ln fe682ae4 
@@ -131,7 +131,7 @@ kd> ln fe682050
 
 As noted before, 801036fe is not likely to be part of the stack trace as it is listed twice. If the return addresses have an offset of zero, they can be ignored (you cannot return to the beginning of a function). Based on this information, the stack trace is revealed to be:
 
-``` syntax
+```
 NT!_KiServiceExit+0x1e
 rdr!_RdrSectionInfo+0x2c
 rdr!_RdrDereferenceDiscardableCode+0xb4  
@@ -148,7 +148,7 @@ rdr!__strnicmp+0xaa
 
 To verify each symbol, unassemble immediately before the return address specified to see if it does a call to the function above it. To reduce length, the following is edited (the offsets used were found by trial and error):
 
-``` syntax
+```
 kd> u 80136039-2 l1      //  looks ok, its a call
 NT!_KiServiceExit+0x1c:
 80136037 ffd3             call    ebx
@@ -201,7 +201,7 @@ Based on this, it appears that **RdrReconnectConnection** called **RdrCleanupTra
 
 In this case, the stack trace worked properly. Following is the actual stack trace to check the answer:
 
-``` syntax
+```
 kd> k 
 ChildEBP RetAddr
 fe4cc978 80136039 NT!_NtClose+0xd

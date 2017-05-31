@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfiotarget** extension displays information about a specified I/O target object.
 
-``` syntax
+```
 !wdfkd.wdfiotarget Handle [Flags]
 ```
 

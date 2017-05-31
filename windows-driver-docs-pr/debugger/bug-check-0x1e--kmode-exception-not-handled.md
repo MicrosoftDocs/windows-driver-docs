@@ -113,7 +113,7 @@ The error that generates this message can occur after the first restart during W
 
 2.  The first parameter to **NT!PspUnhandledExceptionInSystemThread** is a pointer to a structure, which contains pointers to an **except** statement:
 
-    ``` syntax
+    ```
     typedef struct _EXCEPTION_POINTERS {
         PEXCEPTION_RECORD ExceptionRecord;
         PCONTEXT ContextRecord;
@@ -136,7 +136,7 @@ The error that generates this message can occur after the first restart during W
 
 Here is an example of bug check 0x1E on an x86 processor:
 
-``` syntax
+```
 kd> .bugcheck                 get the bug check data
 Bugcheck code 0000001e
 Arguments c0000005 8013cd0a 00000000 0362cffff

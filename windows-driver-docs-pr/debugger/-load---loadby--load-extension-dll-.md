@@ -21,7 +21,7 @@ api_type:
 
 The **.load** and **.loadby** commands load a new extension DLL into the debugger.
 
-``` syntax
+```
 .load DLLName  
 !DLLName.load 
 .loadby DLLName ModuleName

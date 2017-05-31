@@ -21,8 +21,8 @@ api_type:
 
 The **.open** command searches the source path for a source file and opens this file.
 
-``` syntax
-    .open [-m Address] FileName 
+```
+.open [-m Address] FileName 
 .open -a Address 
 ```
 

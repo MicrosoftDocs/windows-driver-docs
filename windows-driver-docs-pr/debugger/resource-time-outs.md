@@ -40,11 +40,11 @@ If you get to a thread that is not waiting for another resource, that thread is 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
 ```
-Resource @ fc664ee0                  // Here&#39;s the resource lock address
+Resource @ fc664ee0                  // Here's the resource lock address
 
  ActiveCount = 0001  Flags = IsOwnedExclusive ExclusiveWaiter
  NumberOfExclusiveWaiters = 0001
-  Thread = ffaf5410, Count = 01                // Here&#39;s the owning thread
+  Thread = ffaf5410, Count = 01                // Here's the owning thread
   Thread = 00000000, Count = 00
 ntoskrnl!_DbgBreakPoint:
 80131400 cc               int     3

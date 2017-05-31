@@ -21,7 +21,7 @@ api_type:
 
 The **uf** command displays an assembly translation of the specified function in memory.
 
-``` syntax
+```
 uf [Options] Address
 ```
 

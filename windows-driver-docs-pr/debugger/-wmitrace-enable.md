@@ -21,8 +21,8 @@ api_type:
 
 The **!wmitrace.enable** extension enables a provider for the specified Event Tracing for Windows (ETW) trace session.
 
-``` syntax
-    !wmitrace.enable { LoggerID | LoggerName } GUID [-level Num] [-matchallkw Num] [-matchanykw Num] [-enableproperty Num] [-flag Num] 
+```
+!wmitrace.enable { LoggerID | LoggerName } GUID [-level Num] [-matchallkw Num] [-matchanykw Num] [-enableproperty Num] [-flag Num] 
 ```
 
 ## <span id="ddk__wmitrace_strdump_dbg"></span><span id="DDK__WMITRACE_STRDUMP_DBG"></span>Parameters

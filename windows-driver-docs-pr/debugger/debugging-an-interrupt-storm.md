@@ -34,7 +34,7 @@ This example demonstrates one method for detecting and debugging an interrupt st
 
 When the machine hangs, use a kernel debugger to break in. Use the **!irpfind** extension command to look for pending IRPs. Then, use the **!irp** extension to obtain details about any pending IRPs. For example:
 
-``` syntax
+```
 kd> !irp 81183468 
 Irp is active with 2 stacks 2 is current (= 0x811834fc)
  No Mdl Thread 00000000:  Irp stack trace.
@@ -51,7 +51,7 @@ This example shows that \\driver\\e100b has not returned the IRP for **ntoskrnl!
 
 To investigate, use the **kb** command to request a stack trace. For example:
 
-``` syntax
+```
 kd> kb
 ChildEBP RetAddr  Args to Child
 f714ee68 8046355a 00000001 80068c10 00000030 ntoskrnl!RtlpBreakWithStatusInstruction
@@ -64,7 +64,7 @@ f714ef78 80501cb5 00000000 00000240 8000017c halacpi!HalpDispatchInterrupt2ndEnt
 
 Notice that the section in bold is an interrupt dispatch. If you use the **g** command and break in again, you will very likely see a different stack trace, but you will still see an interrupt dispatch. To determine which interrupt is responsible for the system stall, look at the second parameter passed into **HalBeginSystemInterrupt** (in this case, 0x3B). The standard rule is that the interrupt vector displayed (0x3B) is the IRQ line plus 0x30, so the interrupt is number 0xB. Running another stack trace may provide more information about which device issued the interrupt service request (ISR). In this case, a second stack trace has the following result:
 
-``` syntax
+```
 kd> kb
 ChildEBP RetAddr  Args to Child
 f714ee24 8046355a 00000001 00000010 00000030 ntoskrnl!RtlpBreakWithStatusInstruction
@@ -93,7 +93,7 @@ The system is currently running the ISR for the video card. The system will run 
 
 Use the **!arbiter 4** extension to determine which devices are on IRQ 0xB. If there is only one device on IRQ 0xB, you have found the cause of the problem.. If there is more than one device sharing the interrupt (99% of the cases), you will need to isolate the device either by manually programming LNK nodes (which is destructive to the system state), or by removing or disabling hardware.
 
-``` syntax
+```
 kd> !arbiter 4 
 DEVNODE 8149a008 (HTREE\ROOT\0)
   Interrupt Arbiter "RootIRQ" at 80472a20
@@ -178,7 +178,7 @@ In this case, the audio, Universal Serial Bus (USB), network interface card (NIC
 
 To find out which ISR claims ownership of the interrupt, examine the return value from the ISR. Simply disassemble the ISR using the **U** command with address given in the **!arbiter** display, and set a breakpoint on the last instruction of the ISR (which will be a 'ret' instruction). Note that using the command **g &lt;address&gt;** is the equivalent of setting a breakpoint on that address:
 
-``` syntax
+```
 kd> g bfe33e7b 
 ds1wdm!AdapterIsr+ad:
 bfe33e7b c20800           ret     0x8 
@@ -186,7 +186,7 @@ bfe33e7b c20800           ret     0x8
 
 Use the **r** command to examine the registers. In particular, look at the EAX register. If the portion of the register contents in bold (in the following code example) is anything other then zero, this ISR claimed the interrupt. Otherwise, the interrupt was not claimed, and the operating system will call the next ISR. This example shows that the video card is not claiming the interrupt:
 
-``` syntax
+```
 kd> r 
 eax=00000000 ebx=813f4ff0 ecx=00000010 edx=ffdff848 esi=8145d168 edi=813f4fc8
 eip=bfe33e7b esp=f714eec4 ebp=f714eee0 iopl=0         nv up ei pl zr na po nc
@@ -197,7 +197,7 @@ bfe33e7b c20800           ret     0x8
 
 In fact, in this case, the interrupt is not claimed by any of the devices on IRQ 0xb. When you encounter this problem, you should also check to see if each piece of hardware associated with the interrupt is actually enabled. For PCI, this is easy -- look at the CMD register displayed by the **!pci** extension output:
 
-``` syntax
+```
 kd> !pci 0 0 
 PCI Bus 0
 00:0  8086:7190.03  Cmd[0006:.mb...]  Sts[2210:c....]  Device  Host bridge

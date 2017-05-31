@@ -32,7 +32,7 @@ Here is an example of how to debug a stack overflow. In this example, NTSD is ru
 
 The first step is see what event caused the debugger to break in:
 
-``` syntax
+```
 0:002> .lastevent 
 Last event: Exception C00000FD, second chance 
 ```
@@ -41,7 +41,7 @@ You can look up exception code 0xC00000FD in ntstatus.h, which can be found in t
 
 To double-check that the stack overflowed, you can use the [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command:
 
-``` syntax
+```
 0:002> k 
 ChildEBP RetAddr
 009fdd0c 71a32520 COMCTL32!_chkstk+0x25
@@ -67,7 +67,7 @@ ChildEBP RetAddr
 
 The target thread has broken into COMCTL32!\_chkstk, which indicates a stack problem. Now you should investigate the stack usage of the target process. The process has multiple threads, but the important one is the one that caused the overflow, so identify this thread first:
 
-``` syntax
+```
 0:002> ~*k
 
    0  id: 570.574   Suspend: 1 Teb 7ffde000 Unfrozen
@@ -88,14 +88,14 @@ Now you need to investigate thread 2. The period at the left of this line indica
 
 The stack information is contained in the TEB (Thread Environment Block) at 0x7FFDC000. The easiest way to list it is using [**!teb**](-teb.md). However, this requires you to have the proper symbols. For maximum versatility, assume you have no symbols:
 
-``` syntax
+```
 0:002> dd 7ffdc000 L4 
 7ffdc000   009fdef0 00a00000 009fc000 00000000 
 ```
 
 To interpret this, you need to look up the definition of the TEB data structure. If you had complete symbols, you could use [**dt TEB**](dt--display-type-.md) to do this. But in this case, you will need to look at the ntpsapi.h file in the Microsoft Windows SDK. For Windows XP and later versions of Windows, this file contains the following information:
 
-``` syntax
+```
 typedef struct _TEB {
     NT_TIB NtTib;
     PVOID  EnvironmentPointer;
@@ -119,14 +119,14 @@ typedef struct _NT_TIB {
 
 This indicates that the second and third DWORDs in the TEB structure point to the bottom and top of the stack, respectively. In this case, these addresses are 0x00A00000 and 0x009FC000. (The stack grows downward in memory.) You can calculate the stack size using the [**? (Evaluate Expression)**](---evaluate-expression-.md) command:
 
-``` syntax
+```
 0:002> ? a00000-9fc000
 Evaluate expression: 16384 = 00004000 
 ```
 
 This shows that the stack size is 16 K. The maximum stack size is stored in the field **DeallocationStack**. After some calculation, you can determine that this field's offset is 0xE0C.
 
-``` syntax
+```
 0:002> dd 7ffdc000+e0c L1 
 7ffdce0c   009c0000 
 
@@ -140,7 +140,7 @@ Furthermore, this process looks clean -- it is not in an infinite recursion or e
 
 Now break into KD and look at the overall system memory usage with the [**!vm**](-vm.md) extension command:
 
-``` syntax
+```
 0:002> .breakin 
 Break instruction exception - code 80000003 (first chance)
 ntoskrnl!_DbgBreakPointWithStatus+4:
@@ -193,7 +193,7 @@ To do this, disassemble the first few instructions and look for the instruction 
 
 Here is an example:
 
-``` syntax
+```
 0:002> k 
 ChildEBP RetAddr
 009fdd0c 71a32520 COMCTL32!_chkstk+0x25

@@ -21,7 +21,7 @@ api_type:
 
 The **!bthkd.sdpstream** command displays the contents of a SDP stream.
 
-``` syntax
+```
 !bthkd.sdpstream streamaddr streamlength
 ```
 

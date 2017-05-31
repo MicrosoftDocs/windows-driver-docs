@@ -21,7 +21,7 @@ api_type:
 
 The **.kdfiles** command reads a file and uses its contents as the driver replacement map.
 
-``` syntax
+```
 .kdfiles MapFile 
 .kdfiles -m OldDriver NewDriver
 .kdfiles -s SaveFile 

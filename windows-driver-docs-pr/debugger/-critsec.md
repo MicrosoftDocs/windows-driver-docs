@@ -21,8 +21,8 @@ api_type:
 
 The **!critsec** extension displays a critical section.
 
-``` syntax
-    !critsec Address 
+```
+!critsec Address 
 ```
 
 ## <span id="ddk__critsec_dbg"></span><span id="DDK__CRITSEC_DBG"></span>Parameters

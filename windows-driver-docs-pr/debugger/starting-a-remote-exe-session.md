@@ -30,13 +30,13 @@ Change the values for the height and width of the "Windows Size" section if you 
 
 The general syntax for starting a Remote.exe Server is as follows:
 
-``` syntax
+```
 remote /s "Command_Line" Unique_Id [/f Foreground_Color] [/b Background_Color] 
 ```
 
 This can be used to start KD or CDB on the remote computer, as in the following examples:
 
-``` syntax
+```
 remote /s "KD [options]" MyBrokenBox 
 
 remote /s "CDB [options]" MyBrokenApp 
@@ -54,13 +54,13 @@ Since the **.remote** command is issued after the debugger has started, this met
 
 Here is an example. First, start the debugger in the normal fashion:
 
-``` syntax
+```
 KD [options] 
 ```
 
 Once the debugger is running, use the **.remote** command:
 
-``` syntax
+```
 .remote MyBrokenBox 
 ```
 
@@ -72,13 +72,13 @@ One advantage of this method is that you do not have to decide in advance if you
 
 The general syntax for starting a Remote.exe Client is as follows:
 
-``` syntax
+```
 remote /c ServerNetBIOSName Unique_ID [/l Lines_to_Get] [/f Foreground_Color] [/b Background_Color] 
 ```
 
 For example, if the "MyBrokenBox" session, described above, was started on a local host computer whose network name was "Server2", you can connect to it with the command:
 
-``` syntax
+```
 remote /c server2 MyBrokenBox 
 ```
 

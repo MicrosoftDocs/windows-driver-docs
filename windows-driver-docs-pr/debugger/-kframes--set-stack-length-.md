@@ -21,7 +21,7 @@ api_type:
 
 The **.kframes** command sets the default length of a stack trace display.
 
-``` syntax
+```
 .kframes FrameCountDefault 
 ```
 

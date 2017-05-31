@@ -21,7 +21,7 @@ api_type:
 
 The **.unloadall** command unloads all extension DLLs from the debugger on the host system.
 
-``` syntax
+```
 .unloadall
 ```
 

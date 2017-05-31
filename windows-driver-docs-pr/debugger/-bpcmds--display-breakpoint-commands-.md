@@ -21,7 +21,7 @@ api_type:
 
 The **.bpcmds** command displays the commands that were used to set each of the current breakpoints.
 
-``` syntax
+```
     .bpcmds
 ```
 

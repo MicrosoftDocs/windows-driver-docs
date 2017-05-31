@@ -21,7 +21,7 @@ api_type:
 
 The **!ih** extension displays the interrupt history record for the specified processor.
 
-``` syntax
+```
 !ih Processor
 ```
 
@@ -65,7 +65,7 @@ This extension displays the interrupt history record without referencing the pro
 
 Here is an example of the output from this extension:
 
-``` syntax
+```
 kd> !ih
 Total # of interruptions = 2093185
 Vector              IIP                   IPSR          ExtraField 
