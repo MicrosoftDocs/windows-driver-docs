@@ -28,6 +28,7 @@ The DMus port driver exposes an [IPortDMus](https://msdn.microsoft.com/library/w
 [**IPortDMus::Notify**](https://msdn.microsoft.com/library/windows/hardware/ff536880)
 
 Notifies the port driver that the MIDI synthesizer or capture device has advanced to a new position in the MIDI stream.
+
 [**IPortDMus::RegisterServiceGroup**](https://msdn.microsoft.com/library/windows/hardware/ff536882)
 
 Registers a service group object with the port driver.
@@ -38,12 +39,15 @@ The DMus port driver also creates a memory [allocator](allocator.md) for each st
 [**IAllocatorMXF::GetBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536492)
 
 Gets a buffer for a MIDI event or list of events that is too large to fit within a [**DMUS\_KERNEL\_EVENT**](https://msdn.microsoft.com/library/windows/hardware/ff536340) structure.
+
 [**IAllocatorMXF::GetBufferSize**](https://msdn.microsoft.com/library/windows/hardware/ff536493)
 
 Gets the size in bytes of the buffer retrieved by the **GetBuffer** method.
+
 [**IAllocatorMXF::GetMessage**](https://msdn.microsoft.com/library/windows/hardware/ff536494)
 
 Gets a message buffer containing storage for a single structure of type DMUS\_KERNEL\_EVENT.
+
 [**IAllocatorMXF::PutBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536495)
 
 Not used.
