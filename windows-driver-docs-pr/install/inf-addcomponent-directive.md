@@ -9,17 +9,17 @@ ms.technology: windows-devices
 
 # INF AddComponent Directive
 
-An **AddComponent** directive is used within an INF *DDInstall*.**Components** section.  It creates a virtual child device for the software component under the current device.  This directive is supported for Windows 10 Version 1703 and later.
+An **AddComponent** directive is used within an [**INF *DDInstall*.Components**](inf-ddinstall-components-section.md) section.  It creates a virtual child device for the software component under the current device.  This directive is supported for Windows 10 Version 1703 and later.
 
 ```
 [DDInstall.Components]
 
-**AddComponent**=ComponentName,[flags],component-install-section
+AddComponent=ComponentName,[flags],component-install-section
 ```
 
 ## Entries
 
-**ComponentName**
+*ComponentName*
 
 Specifies the name of the software component to create.  Each **AddComponent** directive in an INF file must have a unique value.
 
