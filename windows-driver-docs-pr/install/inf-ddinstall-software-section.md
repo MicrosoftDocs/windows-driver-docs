@@ -29,7 +29,7 @@ The software installation must be non-interactive.
 
 **AddSoftware**=*SoftwareName,[flags],software-install-section*
 
-This directive references an INF-writer-defined *software-install-section* elsewhere in the software component INF file. For more information, see [**INF AddSoftware directive**](inf-addsoftware-directive.md).
+This directive references an INF-writer-defined *software-install-section* elsewhere in the software component INF file.  For more information, see [**INF AddSoftware directive**](inf-addsoftware-directive.md).
 
 ## Remarks
 
