@@ -14,7 +14,7 @@ If you want to include user-mode software for use with a device on Windows 10, y
 |Method|Scenario|
 |---|---|
 |[Hardware support apps](../devapps/hardware-access-for-universal-windows-platform-apps.md)| Device add-on software packaged as a UWP app.  Recommended approach. |
-|Software components|Device add-on software is an MSI or EXE binary.  Allowed in [Universal Windows drivers](../develop/windows-10-editions-for-universal-drivers.md) but referenced binary only runs on desktop editions (Home, Pro, and Enterprise). |
+|Software components|Device add-on software is an MSI or EXE binary.  Allowed in [Universal Windows drivers](../develop/windows-10-editions-for-universal-drivers.md) but referenced binary only runs on desktop editions (Home, Pro, and Enterprise). The referenced binary will not run on Windows 10S.|
 |Co-installers| Device add-on software is an MSI or EXE binary. Available on Desktop only for legacy support. Not recommended for new development. |
 
 This page provides guidelines for the use of software components.
