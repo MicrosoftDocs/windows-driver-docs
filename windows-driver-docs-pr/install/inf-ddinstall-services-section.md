@@ -42,7 +42,6 @@ You can provide a *DDInstall***.Services** section with at least one **AddServic
 
 
 <a href="" id="addservice-servicename--flags--service-install-section"></a>**AddService=***ServiceName*,\[*flags*\]**,***service-install-section*  
-
 <a href="" id="------------------------------------------------event-log-install-section---eventlogtype---eventname-------"></a>                                       \[,*event-log-install-section*\[**,**\[*EventLogType*\]\[**,***EventName*\]\]\]...\]  
 This directive references an INF-writer-defined *service-install-section* and, possibly, an *event-log-install-section* elsewhere in the INF file for the drivers of the devices covered by this *DDInstall* section. For more information, see [**INF AddService Directive**](inf-addservice-directive.md).
 
