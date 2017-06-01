@@ -24,9 +24,8 @@ If you are writing an NDIS driver for more than one version of Microsoft Windows
 
 This set of design guide documentation is targeted at Windows Vista and later operating systems and NDIS 6.0 and later drivers. Documentation for earlier Windows and NDIS versions is contained in prior releases of the documentation. For the Windows XP and NDIS 5.1 documentation, see [Windows 2000 and Windows XP Networking Design Guide](https://msdn.microsoft.com/library/windows/hardware/ff565849).
 
-**Note**  A driver can query the NDIS version by calling the [**NdisReadConfiguration**](https://msdn.microsoft.com/library/windows/hardware/ff564511) function with the *Keyword* parameter set to **NdisVersion**.
-
- 
+> [!NOTE]
+> A driver can query the NDIS version by calling the [**NdisReadConfiguration**](https://msdn.microsoft.com/library/windows/hardware/ff564511) function with the *Keyword* parameter set to **NdisVersion**. 
 
 Windows operating system, Microsoft Windows Driver Kit (WDK), and Driver Development Kit (DDK) version support for NDIS versions, as well as support for major NDIS features across NDIS versions, are described in the following table.
 
@@ -64,3 +63,13 @@ Windows operating system, Microsoft Windows Driver Kit (WDK), and Driver Develop
 |  |  | For information about NDIS 6.30 features, see [Introduction to NDIS 6.30](introduction-to-ndis-6-30.md). |
 | Windows 8.1 and Windows Server 2012 R2 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.40 | X | X | X |
 |  |  | For information about NDIS 6.40 features, see [Introduction to NDIS 6.40](introduction-to-ndis-6-40.md). |
+| Windows 10, version 1507 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.50 | X | X | X |
+|   |   | For more information about NDIS 6.50 features, see [Introduction to NDIS 6.50](introduction-to-ndis-6-50.md). | 
+| Windows 10, version 1511 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.51 | X | X | X |
+| Windows 10, version 1607 and Windows Server 2016 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.60 | X | X | X |
+|   |   | For more information about NDIS 6.60 features, see [Introduction to NDIS 6.60](introduction-to-ndis-6-60.md). | 
+| Windows 10, version 1703 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.70 | X | X | X |
+|   |   | NDIS 6.70 coincided with a preview release of the Network Adapter WDF Class Extension, a.k.a. [NetAdapterCx](../netcx/index.md).<p>For more information about NDIS 6.70 features, see [Introduction to NDIS 6.70](introduction-to-ndis-6-70.md).</p> | 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
