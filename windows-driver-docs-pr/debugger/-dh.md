@@ -21,7 +21,7 @@ api_type:
 
 The **!dh** extension displays the headers for the specified image.
 
-``` syntax
+```
 !dh [Options] Address 
 !dh -h
 ```

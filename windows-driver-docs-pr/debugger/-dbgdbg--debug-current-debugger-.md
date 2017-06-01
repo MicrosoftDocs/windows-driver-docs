@@ -21,8 +21,8 @@ api_type:
 
 The **.dbgdbg** command launches a new instance of CDB; this new debugger takes the current debugger as its target.
 
-``` syntax
-    .dbgdbg 
+```
+.dbgdbg 
 ```
 
 ## <span id="ddk_meta_debug_current_debugger_dbg"></span><span id="DDK_META_DEBUG_CURRENT_DEBUGGER_DBG"></span>

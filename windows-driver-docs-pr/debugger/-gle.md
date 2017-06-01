@@ -21,7 +21,7 @@ api_type:
 
 The **!gle** extension displays the last error value for the current thread.
 
-``` syntax
+```
 !gle [-all]
 ```
 

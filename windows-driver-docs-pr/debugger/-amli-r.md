@@ -23,7 +23,7 @@ The **!amli r** extension displays information about the current context or the 
 
 Syntax
 
-``` syntax
+```
 !amli r [ContextAddress]
 ```
 
@@ -48,7 +48,7 @@ If the AMLI Debugger prompt appears suddenly, this is a useful command to use.
 
 For example, the following command will display the current context of the interpreter:
 
-``` syntax
+```
 AMLI(? for help)-> r
 
 Context=c18b4000*, Queue=00000000, ResList=00000000

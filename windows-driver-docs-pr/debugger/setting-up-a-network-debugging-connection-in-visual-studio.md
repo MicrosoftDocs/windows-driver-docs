@@ -70,7 +70,7 @@ On the target computer, open a Command Prompt window as Administrator, and enter
 
 **bcdedit /enum**
 
-``` syntax
+```
 ...
 key                     RF8...KNE
 debugtype               NET

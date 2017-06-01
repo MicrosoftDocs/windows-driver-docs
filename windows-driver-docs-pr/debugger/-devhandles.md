@@ -21,7 +21,7 @@ api_type:
 
 The **!devhandles** extension displays the open handles for the specified device.
 
-``` syntax
+```
 !devhandles Address 
 ```
 

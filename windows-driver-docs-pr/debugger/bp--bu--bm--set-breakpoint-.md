@@ -23,7 +23,7 @@ The **bp**, **bu**, and **bm** commands set one or more software breakpoints. Yo
 
 User-Mode
 
-``` syntax
+```
 [~Thread] bp[ID] [Options] [Address [Passes]] ["CommandString"] 
 [~Thread] bu[ID] [Options] [Address [Passes]] ["CommandString"] 
 [~Thread] bm [Options] SymbolPattern [Passes] ["CommandString"]
@@ -31,7 +31,7 @@ User-Mode
 
 Kernel-Mode
 
-``` syntax
+```
 bp[ID] [Options] [Address [Passes]] ["CommandString"] 
 bu[ID] [Options] [Address [Passes]] ["CommandString"] 
 bm [Options] SymbolPattern [Passes] ["CommandString"]
@@ -162,7 +162,7 @@ The **bm** command is useful when you want to use wildcard characters in the sym
 
 Example
 
-``` syntax
+```
 0:000> bm myprogram!mem* 
   4: 0040d070 MyProgram!memcpy
  5: 0040c560 MyProgram!memmove
@@ -185,19 +185,19 @@ The **bp**, **bu**, and **bm** commands set software breakpoints by replacing th
 
 The following command sets a breakpoint 12 bytes past the beginning of the function **MyTest**. This breakpoint is ignored for the first six passes through the code, but execution stops on the seventh pass through the code.
 
-``` syntax
+```
 0:000> bp MyTest+0xb 7 
 ```
 
 The following command sets a breakpoint at **RtlRaiseException**, displays the **eax** register, displays the value of the symbol **MyVar**, and continues.
 
-``` syntax
+```
 kd> bp ntdll!RtlRaiseException "r eax; dt MyVar; g"
 ```
 
 The following two **bm** commands set three breakpoints. When the commands are executed, the displayed result does not distinguish between breakpoints created with the **/d** switch and those created without it. The [**.bpcmds (Display Breakpoint Commands)**](-bpcmds--display-breakpoint-commands-.md) can be used to distinguish between these two types. If the breakpoint was created by **bm** without the **/d** switch, the **.bpcmds** display indicates the breakpoint type as **bu**, followed by the evaluated symbol enclosed in the **@!""** token (which indicates it is a literal symbol and not a numeric expression or register). If the breakpoint was created by **bm** with the **/d** switch, the **.bpcmds** display indicates the breakpoint type as **bp**.
 
-``` syntax
+```
 0:000> bm myprog!openf* 
   0: 00421200 @!"myprog!openFile"
   1: 00427800 @!"myprog!openFilter"

@@ -23,7 +23,7 @@ The **!amli do** extension displays an AML data object.
 
 Syntax
 
-``` syntax
+```
 !amli do Address
 ```
 

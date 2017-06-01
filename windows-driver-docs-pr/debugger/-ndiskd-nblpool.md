@@ -21,8 +21,8 @@ api_type:
 
 The **!ndiskd.nblpool** extension displays information about a [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-list-structure) (NBL) pool. If you run this extension with no parameters, !ndiskd will display a list of all allocated NBL pools in the system.
 
-``` syntax
-    !ndiskd.nblpool [-handle <x>] [-basic] [-allocations] [-find <str>] [-findnb <str>] 
+```
+!ndiskd.nblpool [-handle <x>] [-basic] [-allocations] [-find <str>] [-findnb <str>] 
     [-findctx <str>] [-findctxtype <str>] [-findva <x>] [-findpa <x>]
 ```
 
@@ -65,7 +65,7 @@ Examples
 
 Enter the **!ndiskd.nblpool** command with no parameters to see a list of all allocated NBL pools. In this example, look for the NBL pool allocated by the kernel debugger network interface card (kdnic) with the KDNr Tag. Its handle is ffffdf80147e4a40.
 
-```cmd
+```
 2: kd> !ndiskd.nblpool
     NBL Pool           Tag                 Allocated by                         
     ffffdf80179b6a40   NiBP                WdNisDrv!CWFPLayer::Initialize+c6
@@ -92,7 +92,7 @@ Enter the **!ndiskd.nblpool** command with no parameters to see a list of all al
 
 Click on the NBL pool's handle or enter the **!ndiskd.nblpool -handle** command to examine its details.
 
-```cmd
+```
 2: kd> !ndiskd.nblpool ffffdf80147e4a40
 
 
@@ -113,7 +113,7 @@ NBL POOL
 
 To explore the NBLs contained in this NBL pool, click on the "All allocated NBLs" link at the bottom. Alternatively, you can also enter the **!ndiskd.nblpool -handle -allocations** command. As shown in the following example, this NBL pool contains more than 1024 NBLs so !ndiskd quit early. You can use the -force option to work around this limit and see all of the NBLs in this NBL pool.
 
-```cmd
+```
 2: kd> !ndiskd.nblpool ffffdf80147e4a40 -allocations
 
 
@@ -151,7 +151,7 @@ ALL ALLOCATED NBLs
     ffffdf80148b1b90   Allocated
     ffffdf80148b1de0   Allocated
     ffffdf80148b1030   Allocated
-    [Maximum of 1024 items read; quitting early. Rerun with the &#39;-force&#39; option
+    [Maximum of 1024 items read; quitting early. Rerun with the '-force' option
     to bypass this limit.]
 ```
 

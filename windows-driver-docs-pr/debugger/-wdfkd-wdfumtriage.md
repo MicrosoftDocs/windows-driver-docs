@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd\_wdfumtriage** extension displays information about all UMDF devices on the system, including device objects, corresponding host process, loaded drivers and class extensions, PnP device stack, PnP device nodes, dispatched IRPs, and problem state if relevant.
 
-``` syntax
+```
 !wdfkd.wdfumtriage
 ```
 

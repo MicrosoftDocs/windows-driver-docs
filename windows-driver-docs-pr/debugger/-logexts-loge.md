@@ -21,7 +21,7 @@ api_type:
 
 The **!logexts.loge** extension enables logging. If logging has not been initialized, it will be initialized and enabled.
 
-``` syntax
+```
     !logexts.loge [OutputDirectory] 
 ```
 

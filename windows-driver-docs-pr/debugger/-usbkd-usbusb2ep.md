@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbusb2ep** command displays information from a **usbport!\_USB2\_EP** structure.
 
-``` syntax
+```
 !usbkd.usbusb2ep StructAddr
 ```
 

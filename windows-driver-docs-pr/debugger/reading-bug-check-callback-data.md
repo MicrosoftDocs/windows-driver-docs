@@ -62,7 +62,7 @@ To use this data in a more practical way, it is recommended that you write your 
 
 If you know the GUID tag of the secondary data block, your extension should use the method **IDebugDataSpaces3::ReadTagged** to access the data. Its prototype is as follows:
 
-``` syntax
+```
 STDMETHOD(ReadTagged)(
     THIS_
     IN LPGUID Tag,
@@ -75,7 +75,7 @@ STDMETHOD(ReadTagged)(
 
 Here is an example of how to use this method:
 
-``` syntax
+```
 UCHAR RawData[MY_DATA_SIZE];
 GUID MyGuid = .... ;
 
@@ -89,7 +89,7 @@ If two blocks have identical GUID tags, the first matching block will be returne
 
 If you are not sure of the GUID tag of your block, you can use the **IDebugDataSpaces3::StartEnumTagged**, **IDebugDataSpaces3::GetNextTagged**, and **IDebugDataSpaces3::EndEnumTagged** methods to enumerate the tagged blocks. Their prototypes are as follows:
 
-``` syntax
+```
 STDMETHOD(StartEnumTagged)(
     THIS_
     OUT PULONG64 Handle

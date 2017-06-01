@@ -21,7 +21,7 @@ api_type:
 
 The **!stl** extension displays some of the known Standard Template Library (STL) templates.
 
-``` syntax
+```
 !stl [Options] Template 
 !stl -?
 ```

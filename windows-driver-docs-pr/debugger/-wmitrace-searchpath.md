@@ -21,7 +21,7 @@ api_type:
 
 The **!wmitrace.searchpath** extension specifies the location of the trace message format files for messages in the trace buffers.
 
-``` syntax
+```
 !wmitrace.searchpath [+] TMFPath 
 !wmitrace.searchpath
 ```

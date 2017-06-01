@@ -21,7 +21,7 @@ api_type:
 
 The **!bthkd.bthusbtransfer** command displays the Bluetooth usb transfer context including Irp, Bip and transfer buffer information.
 
-``` syntax
+```
 !bthkd.bthusbtransfer addr 
 ```
 

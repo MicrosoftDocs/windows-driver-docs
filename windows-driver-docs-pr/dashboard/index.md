@@ -33,7 +33,8 @@ The Windows Hardware Dev Center dashboard replaces the [Hardware Dev Center (Sys
 
 You must continue to use [Hardware Dev Center (Sysdev)](dashboard-services.md) to complete the following tasks.
 
-**Important**  The dashboard submission REST APIs will no longer be available for use as of November 10th, 2016. APIs for driver submissions are under consideration for a future release.
+> [!IMPORTANT]  
+> The dashboard submission REST APIs will no longer be available for use as of November 10th, 2016. APIs for driver submissions are under consideration for a future release.
 
  
 
@@ -52,10 +53,10 @@ This transition timeframe table contains estimates of when features will be avai
 
 | Task                                 | Transition timeframe |
 |--------------------------------------|----------------------|
-| WLK device certification submissions | 2017                 |
-| Attestation signing                  | End of 2016          |
-| Hardware certification submissions   | 2017                 |
-| UEFI and LSA                         | To be scheduled      |
+| WLK device certification submissions | End of 2017          |
+| Attestation signing                  | January 2016         |
+| Hardware certification submissions   | End of 2017          |
+| UEFI and LSA                         | Early 2018           |
 | Device metadata                      | To be scheduled      |
 | Bug management                       | To be scheduled      |
 | Remote debugging (WRD)               | To be scheduled      |

@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfdmatransaction** extension displays information about a WDF direct memory access (DMA) transaction object.
 
-``` syntax
+```
 !wdfkd.wdfdmatransaction Handle
 ```
 

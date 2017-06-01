@@ -21,8 +21,8 @@ api_type:
 
 The **!minipkd.adapter** extension displays information about the specified adapter.
 
-``` syntax
-    !minipkd.adapter Address 
+```
+!minipkd.adapter Address 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

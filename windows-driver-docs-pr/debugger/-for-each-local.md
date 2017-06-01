@@ -21,7 +21,7 @@ api_type:
 
 The **!for\_each\_local** extension executes a debugger command one time for each local variable in the current frame.
 
-``` syntax
+```
 !for_each_local ["CommandString"] 
 !for_each_local -? 
 ```

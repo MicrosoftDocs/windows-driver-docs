@@ -21,7 +21,7 @@ gflags /i MyApp.exe /tracedb 24
 As the following error message indicates, this command fails because the [Create user mode stack trace database](create-user-mode-stack-trace-database.md) (+ust) flag is not set for the MyApp image file. You cannot set the size of a trace database until you create one.
 
 ```
-Failed to set the trace database size for `MyApp.exe&#39;
+Failed to set the trace database size for `MyApp.exe'
 ```
 
 The following commands fix the error. The first command creates a trace database for myapp.exe and the second command sets the maximum size of the trace database to 24 MB. These commands cannot be combined into a single command. The following display shows the commands and the success message from GFlags.
@@ -34,7 +34,7 @@ Current Registry Settings for MyApp.exe executable are: 00001000
 
 gflags /i MyApp.exe /tracedb 24
 
-Trace database size for `MyApp.exe&#39; set to 24 Mb.
+Trace database size for `MyApp.exe' set to 24 Mb.
 ```
 
 GFlags can change the size of the user-mode stack trace database, but it does not display it. To display the trace database size, use registry APIs, Regedit, or Reg (reg.exe), a tool included in Windows XP and Windows Server 2003, to check the value of the **StackTraceDatabaseSizeInMB** registry entry (HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\*ImageFileName*\\**StackTraceDatabaseSizeInMB**).

@@ -21,8 +21,8 @@ api_type:
 
 The **!logexts.logo** extension sets or displays the Logger output options.
 
-``` syntax
-    !logexts.logo {e|d} {d|t|v} 
+```
+!logexts.logo {e|d} {d|t|v} 
 !logexts.logo 
 ```
 

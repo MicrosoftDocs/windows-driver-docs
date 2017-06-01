@@ -21,7 +21,7 @@ api_type:
 
 The **.help** command displays a list of all meta-commands.
 
-``` syntax
+```
 .help
 .help /D 
 ```

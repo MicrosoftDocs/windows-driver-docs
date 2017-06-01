@@ -21,7 +21,7 @@ api_type:
 
 The **!acpikd.help** extension displays a Help text in the Debugger Command window showing all Acpikd.dll extension commands.
 
-``` syntax
+```
     !acpikd.help 
 ```
 

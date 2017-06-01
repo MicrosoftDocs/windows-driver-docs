@@ -21,15 +21,14 @@ api_type:
 
 The **.scriptproviders** command lists the active script providers.
 
-``` syntax
-    .scriptproviders 
-   
+```
+.scriptproviders 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
 
-<span id="_______________"></span> ****   
+<span id="_______________"></span>    
 None
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
@@ -66,8 +65,8 @@ In the example below, the JavaScript and NatVis providers are loaded.
 ```
 0:000> .scriptproviders
 Available Script Providers:
-    NatVis (extension &#39;.NatVis&#39;)
-    JavaScript (extension &#39;.js&#39;)
+    NatVis (extension '.NatVis')
+    JavaScript (extension '.js')
 ```
 
 **Requirements**

@@ -29,7 +29,7 @@ KdSrv supports several transport protocols: named pipe (NPIPE), TCP, COM port, s
 
 The syntax for the KdSrv command line depends on the protocol used. The following options exist:
 
-``` syntax
+```
 kdsrv -t npipe:pipe=PipeName[,hidden][,password=Password][,IcfEnable] 
 
 kdsrv -t tcp:port=Socket[,hidden][,password=Password][,ipversion=6][,IcfEnable] 

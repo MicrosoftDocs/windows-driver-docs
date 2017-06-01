@@ -21,8 +21,8 @@ api_type:
 
 The **!ioresdes** extension displays the IO\_RESOURCE\_DESCRIPTOR structure at the specified address.
 
-``` syntax
-    !ioresdes Address 
+```
+!ioresdes Address 
 ```
 
 ## <span id="ddk__ioresdes_dbg"></span><span id="DDK__IORESDES_DBG"></span>Parameters

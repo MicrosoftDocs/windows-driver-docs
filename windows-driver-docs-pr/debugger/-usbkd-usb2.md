@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usb2** command displays a list of USB endpoints that have USB 2.0 scheduling information.
 
-``` syntax
+```
 !usbkd.usb2 DeviceExtension
 ```
 
@@ -41,7 +41,7 @@ Examples
 
 Here is one way to find the address of the device extension for the FDO of a USB host controller. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-``` syntax
+```
 0: kd> !usbkd.usb2tree
 
 EHCI MINIPORT(s) dt usbport!_USBPORT_MINIPORT_DRIVER ffffe00001f48bd0
@@ -52,7 +52,7 @@ EHCI MINIPORT(s) dt usbport!_USBPORT_MINIPORT_DRIVER ffffe00001f48bd0
 
 In the preceding output, the address of the device extension of the FDO is displayed as the argument of the [DML](debugger-markup-language-commands.md) command **!ehci\_info ffffe00001ca11a0**. Pass the address of the device extension to the **!usb2** command.
 
-``` syntax
+```
 0: kd> !usbkd.usb2 ffffe00001ca11a0
 
 Sig: HFDO

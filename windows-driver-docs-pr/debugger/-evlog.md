@@ -21,7 +21,7 @@ api_type:
 
 The **!evlog** extension displays, changes, or backs up the event log.
 
-``` syntax
+```
 !evlog addsource [-d] [-s Source] [-t Type] [-f MsgFile] 
 !evlog backup [-d] [-l EventLog] [-f BackupFile] 
 !evlog clear [-!] [-d] [-l EventLog] [-f BackupFile] 
@@ -144,7 +144,7 @@ Remarks
 
 After you have added an event source to the registry with **!evlog addsource**, you can view the values with [**!dreg**](-dreg.md). For example:
 
-``` syntax
+```
 0:000> !dreg hklm\system\currentcontrolset\services\eventlog\Application\<source>!* 
 ```
 
@@ -154,7 +154,7 @@ Before using **!evlog report**, you should use **!evlog addsource** to configure
 
 Here is an example of the **!evlog info** extension:
 
-``` syntax
+```
 ## 0:000> !evlog info -?
 
 Application Event Log:

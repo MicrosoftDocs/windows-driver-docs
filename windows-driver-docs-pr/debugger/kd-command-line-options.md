@@ -23,8 +23,8 @@ First-time users of KD should begin with the [Debugging Using KD and NTKD](debug
 
 The KD command line uses the following syntax.
 
-``` syntax
-    kd [ -server ServerTransport | -remote ClientTransport ] 
+```
+kd [ -server ServerTransport | -remote ClientTransport ] 
    [-b | -x] [-d] [-bonc] [-m] [-myob] [-lines] [-n] [-r] [-s] 
    [-v] [-clines lines] [-failinc] [-noio] [-noshell] 
    [-secure] [-sdce] [-ses] [-sicv] [-sins] [-snc] [-snul]
@@ -42,8 +42,6 @@ kd -QR Server
 kd -wake PID 
 
 kd -?
-
-   
 ```
 
 Descriptions of the KD command-line options follow. Only the **-remote** and **-server** options are case-sensitive. The initial hyphen can be replaced with a forward-slash (/). Options which do not take any additional parameters can be concatenated -- so **kd -r -n -v** can be written as **kd -rnv**.

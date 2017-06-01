@@ -21,7 +21,7 @@ api_type:
 
 The **!bitcount** extension counts the number of "1" bits in a memory range.
 
-``` syntax
+```
 !bitcount StartAddress TotalBits
 ```
 

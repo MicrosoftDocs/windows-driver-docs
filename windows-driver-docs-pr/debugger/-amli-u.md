@@ -23,7 +23,7 @@ The **!amli u** extension unassembles AML code.
 
 Syntax
 
-``` syntax
+```
 !amli u [ MethodName | CodeAddress ]
 ```
 
@@ -57,7 +57,7 @@ The disassembly display will continue until the end of the method is reached.
 
 Here are some examples. To disassemble the object at address 0x80E5D701, use the following command:
 
-``` syntax
+```
 kd> !amli u 80e5d701
 
 ffffffff80e5d701 : CreateWordField(CRES, 0x1, IRQW)
@@ -69,7 +69,7 @@ ffffffff80e5d72d : Return(CRES)
 
 The following command will disassemble the \_DCK method:
 
-``` syntax
+```
 kd> u \_sb.pci0.dock._dck
 ```
 

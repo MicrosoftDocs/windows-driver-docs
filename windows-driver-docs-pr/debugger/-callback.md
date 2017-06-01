@@ -21,7 +21,7 @@ api_type:
 
 The **!callback** extension displays the callback data related to the trap for the specified thread.
 
-``` syntax
+```
 !callback Address [Number]
 ```
 

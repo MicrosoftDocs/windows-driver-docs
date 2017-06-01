@@ -23,7 +23,7 @@ The **!amli bc** extension permanently clears an AML breakpoint.
 
 Syntax
 
-``` syntax
+```
 !amli bc Breakpoint 
 !amli bc *
 ```

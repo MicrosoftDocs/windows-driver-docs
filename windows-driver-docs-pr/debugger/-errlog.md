@@ -21,8 +21,8 @@ api_type:
 
 The **!errlog** extension displays the contents of any pending entries in the I/O system's error log.
 
-``` syntax
-    !errlog 
+```
+!errlog 
 ```
 
 ## <span id="ddk__errlog_dbg"></span><span id="DDK__ERRLOG_DBG"></span>

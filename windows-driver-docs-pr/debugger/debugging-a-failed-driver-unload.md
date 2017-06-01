@@ -28,7 +28,7 @@ Here is an example of how to debug this problem. Although **DeviceObject** is us
 
 2.  Find the object header by using the [**!object**](-object.md) extension on this object address:
 
-    ``` syntax
+    ```
     kd> !object 81a578c0 
     Object: 81a578c0  Type: (81bd0e70) Device
         ObjectHeader: 81a578a8
@@ -40,7 +40,7 @@ Here is an example of how to debug this problem. Although **DeviceObject** is us
 
 3.  Put a write breakpoint on the pointer count, using the **ObjectHeader**'s address:
 
-    ``` syntax
+    ```
     kd> ba w4 81a578a8 "k;g" 
     ```
 

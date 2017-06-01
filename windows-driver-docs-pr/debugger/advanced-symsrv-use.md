@@ -25,7 +25,7 @@ Finally, SymSrv can obtain symbol files from an HTTP or HTTPS source using the l
 
 To use this symbol server, symsrv.dll must be installed in the same directory as the debugger. The symbol path can be set as shown here:
 
-``` syntax
+```
 set _NT_SYMBOL_PATH = symsrv*ServerDLL*DownstreamStore*\\Server\Share 
 
 set _NT_SYMBOL_PATH = symsrv*ServerDLL*\\Server\Share 
@@ -70,25 +70,25 @@ The symbol server does not have to be the only entry in the symbol path. If the 
 
 Here are some examples. To use SymSrv as the symbol server with a symbol store on \\\\mybuilds\\mysymbols, set the following symbol path:
 
-``` syntax
+```
 set _NT_SYMBOL_PATH= symsrv*symsrv.dll*\\mybuilds\mysymbols
 ```
 
 To set the symbol path so that the debugger will copy symbol files from a symbol store on \\\\mybuilds\\mysymbols to your local directory c:\\localsymbols, use:
 
-``` syntax
+```
 set _NT_SYMBOL_PATH=symsrv*symsrv.dll*c:\localsymbols*\\mybuilds\mysymbols
 ```
 
 To set the symbol path so that the debugger will copy symbol files from the HTTP site www.company.com/manysymbols to a local network directory \\\\localserver\\myshare\\mycache, use:
 
-``` syntax
+```
 set _NT_SYMBOL_PATH=symsrv*symsrv.dll*\\localserver\myshare\mycache*http://www.company.com/manysymbols
 ```
 
 This last example can also be shortened as such:
 
-``` syntax
+```
 set _NT_SYMBOL_PATH=srv*\\localserver\myshare\mycache*http://www.company.com/manysymbols
 ```
 
@@ -114,7 +114,7 @@ After the initial **srv\*** or **symsrv\****ServerDLL***\***, each subsequent to
 
 Here is an example of a symbol path that uses two downstream stores to hold information from the main symbol store being accessed. These could be called the master store, the mid-level store, and the local cache:
 
-``` syntax
+```
 srv*c:\localcache*\\interim\store*https://msdl.microsoft.com/download/symbols
 ```
 
@@ -122,7 +122,7 @@ In this scenario, SymSrv will first look in c:\\localcache for a symbol file. If
 
 A similar behavior would be obtained by using the following path:
 
-``` syntax
+```
 srv**\\interim\store*http://internetsite
 ```
 
@@ -148,26 +148,26 @@ HTTP is only supported when using the SRV\* prefix (implemented by the symsrv.dl
 
 A common UNC-only deployment involves a central office hosting all of the files (\\\\MainOffice\\Symbols), branch offices caching a subset (\\\\BranchOfficeA\\Symbols), and desktops (C:\\Symbols) caching the files that they reference.
 
-``` syntax
+```
 srv*C:\Symbols*\\BranchOfficeA\Symbols*\\MainOffice\Symbols
 ```
 
 When the SMB share is the primary (upstream) symbol store, Read is required.
 
-``` syntax
+```
 srv*C:\Symbols*\\MachineName\Symbols
 ```
 
 When the SMB share is an intermediate (downstream) symbol store, Read/Change is required. The client will copy the file from the primary symbol store to the SMB share, and then from the SMB share to the local folder.
 
-``` syntax
+```
 srv*C:\Symbols*\\MachineName\Symbols*https://msdl.microsoft.com/download/symbols
 srv*C:\Symbols*\\MachineName\Symbols*\\MainOffice\Symbols
 ```
 
 When the SMB share is an intermediate (downstream) symbol store in a SymProxy deployment, only Read is required. The SymProxy ISAPI Filter will perform the writes, not the client.
 
-``` syntax
+```
 srv*C:\Symbols*\\MachineName\Symbols*https://SymProxyName/Symbols
 ```
 
@@ -175,7 +175,7 @@ srv*C:\Symbols*\\MachineName\Symbols*https://SymProxyName/Symbols
 
 It is possible to specify multiple chains of symbol servers and cache locations, separated by a semi colon “;”. If the symbols are located in the first chain, the second chain is not traversed. If the symbols are not located in the first chain, the second chain will be traversed and if the symbols are located in the second chain, they will be cached in the specified location. This approach will allow a primary symbol server to normally be used, with a secondary server only being used, if the symbols are not available on the primary symbol server specified in the first chain.
 
-``` syntax
+```
 srv*C:\Symbols*\\Machine1\Symbols*http://SymProxyName/Symbols;srv*C:\WebSymbols* https://msdl.microsoft.com/download/symbols
 ```
 
@@ -185,7 +185,7 @@ Another way to create a local cache of symbols is by using the **cache\****local
 
 For example, the following symbol path will not cache symbols taken from *\\\\someshare*. It will use c:\\mysymbols to cache symbols taken from *\\\\anothershare*, because the element beginning with *\\\\anothershare* appears to the right of the **cache\*c:\\mysymbols** element. It will also use c:\\mysymbols to cache symbols taken from the Microsoft public symbol store, because of the usual syntax used by the symbol server (**srv** with two or more asterisks). Moreover, if you subsequently use the [**.sympath+**](-sympath--set-symbol-path-.md) command to add additional locations to this path, these new elements will also be cached, since they will be appended to the right side of the path.
 
-``` syntax
+```
 _NT_SYMBOL_PATH=\\someshare\that\cachestar\ignores;srv*c:\mysymbols*https://msdl.microsoft.com/download/symbols;cache*c:\mysymbols;\\anothershare\that\gets\cached
 ```
 

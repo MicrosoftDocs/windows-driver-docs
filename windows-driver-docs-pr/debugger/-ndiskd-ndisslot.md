@@ -25,8 +25,8 @@ api_type:
 
 The **!ndiskd.ndisslot** extension displays the contents of an NDIS per-processor variable. If you run this extension with no parameters, !ndiskd will display a list of all NDIS per-processor variables on the system.
 
-``` syntax
-    !ndiskd.ndisslot [-handle <x>] [-itemtype <str>] 
+```
+!ndiskd.ndisslot [-handle <x>] [-itemtype <str>] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -47,7 +47,7 @@ Examples
 
 Run the **!ndiskd.ndisslot** extension with no parameters to see a list of all per-processor slot variables. The following example output has excised the middle portion of the list for brevity.
 
-```cmd
+```
 1: kd> !ndiskd.ndisslot
     Per-processor slot                     Summary of contents                  
     ffffc804ae060000 - NDrw                All values are zero
@@ -84,7 +84,7 @@ Run the **!ndiskd.ndisslot** extension with no parameters to see a list of all p
 
 Clicking on one of the handles for the per-processor slot variables will show you the details for that variable. The following example uses the handle ffffc804ae060920 for the tsR variable, from the previous example.
 
-```cmd
+```
 1: kd> !ndiskd.ndisslot ffffc804ae060920
     Processor          Slot value                                               
     00                 00000006

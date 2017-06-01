@@ -35,6 +35,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <col width="20%" />
 <col width="20%" />
 <col width="20%" />
+
 </colgroup>
 <thead>
 <tr class="header">

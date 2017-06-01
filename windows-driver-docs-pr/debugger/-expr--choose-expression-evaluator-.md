@@ -21,8 +21,8 @@ api_type:
 
 The **.expr** command specifies the default expression evaluator.
 
-``` syntax
-    .expr /s masm 
+```
+.expr /s masm 
 .expr /s c++ 
 .expr /q 
 .expr 

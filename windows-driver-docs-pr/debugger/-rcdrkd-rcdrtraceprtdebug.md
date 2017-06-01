@@ -21,7 +21,7 @@ api_type:
 
 The **!rcdrkd.rcdrtraceprtdebug** extension turns TracePrt diagnostic mode on or off. This extension should be used under the direction of support.
 
-``` syntax
+```
 !rcdrkd.rcdrtraceprtdebug {on|off}
 ```
 

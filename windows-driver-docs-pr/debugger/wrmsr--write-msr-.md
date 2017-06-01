@@ -21,8 +21,8 @@ api_type:
 
 The **wrmsr** command writes a value to a Model-Specific Register (MSR) at the specified address.
 
-``` syntax
-    wrmsr Address Value 
+```
+wrmsr Address Value 
 ```
 
 ## <span id="ddk_cmd_write_msr_dbg"></span><span id="DDK_CMD_WRITE_MSR_DBG"></span>Parameters

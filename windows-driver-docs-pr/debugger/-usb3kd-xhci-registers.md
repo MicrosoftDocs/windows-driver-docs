@@ -21,7 +21,7 @@ api_type:
 
 The [**!usb3kd.xhci\_registers**](-usb3kd-device-info.md) extension displays the registers of a USB 3.0 host controller.
 
-``` syntax
+```
 !usb3kd.xhci_registers DeviceExtension
 ```
 
@@ -46,7 +46,7 @@ Examples
 
 To obtain the address of the device extension, look at the output of the [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md) command. In the following example, the address of the device extension is 0xfffffa800536e2d0.
 
-```cmd
+```
 3: kd> !xhci_dumpall
 
 ## Dumping all the XHCI controllers - DrvObj 0xfffffa80053072f0
@@ -64,7 +64,7 @@ To obtain the address of the device extension, look at the output of the [**!xhc
 
 Now you can pass the address of the device extension to the **!xhci\_registers** command.
 
-```cmd
+```
 3: kd> !xhci_registers 0xfffffa800536e2d0
 
 ## Dumping controller registers

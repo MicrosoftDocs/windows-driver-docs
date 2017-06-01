@@ -21,7 +21,7 @@ api_type:
 
 The **!hidkd.hidpdo** command displays HID information associated with a physical device object (PDO).
 
-``` syntax
+```
 !hidkd.hidpdo pdo
 ```
 
@@ -41,7 +41,7 @@ Examples
 
 Here is an example of the output of the **!hidpdo** command. The example first calls [**!hidtree**](-hidkd-hidtree.md) to get the address of a PDO.
 
-``` syntax
+```
 0: kd> !hidkd.hidtree
 HID Device Tree
 ...

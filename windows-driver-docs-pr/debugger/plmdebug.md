@@ -29,7 +29,7 @@ PLMDebug.exe is a tool that enables you to use the Windows debugger to debug Win
 
 PLMDebug.exe is included in [Debugging Tools for Windows](index.md).
 
-``` syntax
+```
 plmdebug /query [Package]
 plmdebug /enableDebug Package [DebuggerCommandLine]
 plmdebug /terminate Package
@@ -103,7 +103,7 @@ Suppose you have an app named MyApp that is in a package named MyApp\_1.0.0.0\_x
 
 **plmdebug /query**
 
-``` syntax
+```
 Package full name: 1daa103b-74e1-426d-8193-b6bc7ed66fed_1.0.0.0_x86__tnq5r49etfg3c
 Package state: Terminated
 

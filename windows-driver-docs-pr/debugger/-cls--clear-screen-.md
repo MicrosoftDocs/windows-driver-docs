@@ -21,7 +21,7 @@ api_type:
 
 The **.cls** command clears the Debugger Command window display.
 
-``` syntax
+```
     .cls 
 ```
 

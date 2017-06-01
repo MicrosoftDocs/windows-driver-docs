@@ -21,7 +21,7 @@ api_type:
 
 The CTRL+B key causes the debugger to terminate abruptly. This does not end a remote debugging session.
 
-``` syntax
+```
 CTRL+B  ENTER 
 ```
 

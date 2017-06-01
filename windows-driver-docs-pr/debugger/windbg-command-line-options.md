@@ -23,8 +23,8 @@ First-time users of WinDbg should begin with the [Debugging Using WinDbg](debugg
 
 The WinDbg command line uses the following syntax:
 
-``` syntax
-    windbg [ -server ServerTransport | -remote ClientTransport ] [-lsrcpath ]
+```
+windbg [ -server ServerTransport | -remote ClientTransport ] [-lsrcpath ]
    [ -premote SmartClientTransport ] [-?] [-ee {masm|c++}] 
    [-clines lines] [-b] [-d] [-aExtension]  
    [-failinc] [-g] [-G] [-hd] [-j] [-n] [-noshell] [-o] 
@@ -42,8 +42,6 @@ windbg -I[S]
 windbg -IU KeyString
 
 windbg -IA[S] 
-
-   
 ```
 
 Descriptions of the WinDbg command-line options follow. All command-line options are case-sensitive except for **-j**. The initial hyphen can be replaced with a forward-slash (/).
@@ -251,7 +249,7 @@ Pops up this HTML Help window.
 
 When you are running the debugger from the command line, specify arguments for the target application after application's file name. For instance:
 
-``` syntax
+```
 windbg myexe arg1 arg2
 ```
 

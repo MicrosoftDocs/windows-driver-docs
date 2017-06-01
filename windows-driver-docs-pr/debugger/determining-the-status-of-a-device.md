@@ -30,7 +30,7 @@ In the example for the **!devnode** command in the [Extensions for Debugging Plu
 
 The following example shows a device that was created by the PCI bus. This device does not have the DNF\_MADEUP flag set.
 
-``` syntax
+```
 0: kd> !devnode 0xfffffa8004483490
 DevNode 0xfffffa8004483490 for PDO 0xfffffa800448d060
   Parent 0xfffffa80036766d0   Sibling 0xfffffa8004482010   Child 0xfffffa80058ad720
@@ -54,7 +54,7 @@ DevNode 0xfffffa8004483490 for PDO 0xfffffa800448d060
 
 1. A devnode for a device with insufficient resources:
 
-``` syntax
+```
 kd> !devnode 0xff0d06e8 6
 
 DevNode 0xff0d06e8 for PDO 0xff0d07d0 at level 0x3
@@ -86,7 +86,7 @@ Note that the devnode has no CM Resource List, because it is not started and is 
 
 2. Note that there are no resources stored in this devnode for a legacy driver.
 
-``` syntax
+```
 kd> !devnode 0xff0d1648 6
 
 DevNode 0xff0d1648 for PDO 0xff0d22d0 at level 0x2

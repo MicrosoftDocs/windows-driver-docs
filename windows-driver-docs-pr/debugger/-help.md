@@ -23,8 +23,8 @@ The **!help** extension displays help text that describes the extension commands
 
 Do not confuse this extension command with the [**? (Command Help)**](---command-help-.md) or [**.help (Meta-Command Help)**](-help--meta-command-help-.md) commands.
 
-``` syntax
-    ![ExtensionDLL.]help [-v] [CommandName] 
+```
+![ExtensionDLL.]help [-v] [CommandName] 
 ```
 
 ## <span id="ddk__help_dbg"></span><span id="DDK__HELP_DBG"></span>Parameters

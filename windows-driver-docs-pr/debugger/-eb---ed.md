@@ -23,7 +23,7 @@ The **!eb** and **!ed** extensions write a sequence of values into a specified p
 
 These extension commands should not be confused with the [**e\* (Enter Values)**](e--ea--eb--ed--ed--ef--ep--eq--eu--ew--eza--ezu--enter-values-.md) command.
 
-``` syntax
+```
 !eb [Flag] PhysicalAddress Data [ ... ] 
 !ed [Flag] PhysicalAddress Data [ ... ]
 ```

@@ -21,8 +21,8 @@ api_type:
 
 The **.force\_radix\_output** command specifies whether integers are displayed in decimal format or in the default radix.
 
-``` syntax
-    .force_radix_output 0 
+```
+.force_radix_output 0 
 .force_radix_output 1 
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The **.scroll\_prefs** command controls the positioning of the source in a Source window when scrolling to a line.
 
-``` syntax
+```
 .scroll_prefs Before After 
 .scroll_prefs 
 ```

@@ -21,7 +21,7 @@ api_type:
 
 The **.inline** command enables or disables inline function debugging.
 
-``` syntax
+```
 .inline 0
 .inline 1
 ```

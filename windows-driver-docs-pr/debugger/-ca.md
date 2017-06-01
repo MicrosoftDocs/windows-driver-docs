@@ -21,7 +21,7 @@ api_type:
 
 The **!ca** extension displays information about a control area.
 
-``` syntax
+```
 !ca [Address | 0 | -1] [Flags]
 ```
 
@@ -113,7 +113,7 @@ To get a list of the control areas of all mapped files, use the [**!memusage**](
 
 Here is an example:
 
-``` syntax
+```
 kd> !memusage
  loading PFN database
 loading (99% complete)

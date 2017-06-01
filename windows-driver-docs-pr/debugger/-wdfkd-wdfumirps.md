@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfumirps** extension displays the list of pending user-mode I/O request packets (UM IRPs) in the [implicit process](controlling-threads-and-processes.md).
 
-``` syntax
+```
 !wdfkd.wdfumirps NumberOfIrps Flags
 ```
 
@@ -63,7 +63,7 @@ You can use [**!process**](-process.md) to get a list of all UMDF host processes
 
 Here is an example of the output of **!wdfkd.wdfumirps**.
 
-``` syntax
+```
 0: kd> !wdfkd.wdfumirps
 Number of pending IRPS: 0x4
 ####  CWudfIrp     Current Type           UniqueId KernelIrp         Device Stack

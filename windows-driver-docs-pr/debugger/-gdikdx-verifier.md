@@ -21,8 +21,8 @@ api_type:
 
 The **!gdikdx.verifier** extension displays the status of Driver Verifier during the verification of a graphics driver.
 
-``` syntax
-    !gdikdx.verifier [-Flags] 
+```
+!gdikdx.verifier [-Flags] 
 ```
 
 ## <span id="ddk__gdikdx_verifier_dbg"></span><span id="DDK__GDIKDX_VERIFIER_DBG"></span>Parameters

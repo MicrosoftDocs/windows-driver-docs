@@ -21,10 +21,8 @@ api_type:
 
 Use the following commands to record and analyze the heap memory allocations in a running process. This analysis focuses on stack traces.
 
-``` syntax
-    umdh -p:PID [-f:LogFile] [-v[:MsgFile]] | [-g] | [-h]
-
-   
+```
+umdh -p:PID [-f:LogFile] [-v[:MsgFile]] | [-g] | [-h]
 ```
 
 ## <span id="ddk_analyze_a_running_process_dtools"></span><span id="DDK_ANALYZE_A_RUNNING_PROCESS_DTOOLS"></span>Parameters

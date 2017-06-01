@@ -21,7 +21,7 @@ api_type:
 
 The **!ustr** extension displays a UNICODE\_STRING structure.
 
-``` syntax
+```
 !ustr Address
 ```
 
@@ -61,7 +61,7 @@ Remarks
 
 Unicode strings are counted 16-bit character strings, as defined in the following structure:
 
-``` syntax
+```
 typedef struct _UNICODE_STRING {
     USHORT Length;
     USHORT MaximumLength;

@@ -21,7 +21,7 @@ api_type:
 
 The **!rcdrkd.rcdrtmffile** extension sets or clears the name of the trace message format (TMF) file.
 
-``` syntax
+```
 !rcdrkd.rcdrtmffile [Filename] 
 ```
 

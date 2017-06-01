@@ -23,7 +23,7 @@ The **!acl** extension formats and displays the contents of an access control li
 
 Syntax
 
-``` syntax
+```
     !acl Address [Flags] 
 ```
 

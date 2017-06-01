@@ -21,7 +21,7 @@ api_type:
 
 The **!devnode** extension displays information about a node in the device tree.
 
-``` syntax
+```
 !devnode Address [Flags] [Service]  
 !devnode 1 
 !devnode 2

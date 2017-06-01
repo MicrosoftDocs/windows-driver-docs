@@ -21,8 +21,8 @@ api_type:
 
 The **.createdir** command controls the starting directory and handle inheritance for any processes created by the debugger.
 
-``` syntax
-    .createdir [-i | -I] [Path] 
+```
+.createdir [-i | -I] [Path] 
 ```
 
 ## <span id="ddk_meta_set_created_process_directory_dbg"></span><span id="DDK_META_SET_CREATED_PROCESS_DIRECTORY_DBG"></span>Parameters

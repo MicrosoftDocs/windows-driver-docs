@@ -21,7 +21,7 @@ api_type:
 
 The **!for\_each\_module** extension executes a debugger command one time for each loaded module.
 
-``` syntax
+```
 !for_each_module ["CommandString"]
 !for_each_module -?
 ```
@@ -195,7 +195,7 @@ Remarks
 
 If you do not specify any arguments, the **!for\_each\_module** extension displays general information about the loaded modules. This information is similar to the information that the following command shows.
 
-``` syntax
+```
 !for_each_module .echo @#ModuleIndex : @#Base @#End @#ModuleName @#ImageName  @#LoadedImageName
 ```
 
@@ -205,26 +205,26 @@ If you enable verbose debugger output, the debugger displays the total number of
 
 The following examples show how to use the **!for\_each\_module** extension. The following commands display the global debug flags.
 
-``` syntax
+```
 !for_each_module x ${@#ModuleName}!*Debug*Flag*
 !for_each_module x ${@#ModuleName}!g*Debug*
 ```
 
 The following command checks for binary corruption in every loaded module, by using the [**!chkimg**](-chkimg.md) extension:
 
-``` syntax
+```
 !for_each_module !chkimg @#ModuleName
 ```
 
 The following command searches for the pattern "MZ" in every loaded image.
 
-``` syntax
+```
 !for_each_module s-a @#Base @#End "MZ"
 ```
 
 The following example demonstrates the use of @\#FileVersion and @\#ProductVersion for each module name:
 
-``` syntax
+```
 0:000> !for_each_module .echo @#ModuleName fver = @#FileVersion pver = @#ProductVersion 
 USER32 fver = 6.0.6000.16438 (vista_gdr.070214-1610) pver = 6.0.6000.16438
 kernel32 fver = 6.0.6000.16386 (vista_rtm.061101-2205) pver = 6.0.6000.16386

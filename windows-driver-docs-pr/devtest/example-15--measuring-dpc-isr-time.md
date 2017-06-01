@@ -149,7 +149,7 @@ In this command, the **-report** parameter specifies the method of analysis and 
 When creating this report in Windows Server 2003 with SP1 and later versions of Windows, you can create an HTML-formatted report by using the following command.
 
 ```
-tracerpt test01.etl -report dpcisr.txt -f HTML
+tracerpt test01.etl -report dpcisr.html -f HTML
 ```
 
 In this command, the **-report** parameter specifies the name of the output file and the **-f** parameter specifies the report format.

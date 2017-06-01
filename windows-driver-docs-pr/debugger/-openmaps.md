@@ -21,7 +21,7 @@ api_type:
 
 The **!openmaps** extension displays the referenced buffer control blocks (BCBs) and virtual address control blocks (VACBs) for the specified shared cache map.
 
-``` syntax
+```
 !openmaps Address [Flag]
 ```
 

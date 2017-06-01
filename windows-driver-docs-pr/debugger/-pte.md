@@ -23,7 +23,7 @@ The **!pte** extension displays the page table entry (PTE) and page directory en
 
 Syntax
 
-``` syntax
+```
 !pte VirtualAddress 
 !pte PTE 
 !pte LiteralAddress 1 
@@ -64,7 +64,7 @@ For a list of all system PTEs, use the [**!sysptes**](-sysptes.md) extension.
 
 Here is an example from an x86 target computer:
 
-``` syntax
+```
 kd> !pte 801544f4
 801544F4  - PDE at C0300800        PTE at C0200550
           contains 0003B163      contains 00154121

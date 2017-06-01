@@ -21,7 +21,7 @@ api_type:
 
 The **.unload** command unloads an extension DLL from the debugger.
 
-``` syntax
+```
 .unload DLLName 
 !DLLName.unload
 ```

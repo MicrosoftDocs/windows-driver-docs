@@ -21,8 +21,8 @@ api_type:
 
 The **vercommand** command displays the command that opened the debugger.
 
-``` syntax
-    vercommand 
+```
+vercommand 
 ```
 
 ## <span id="ddk_cmd_show_debugger_command_line_dbg"></span><span id="DDK_CMD_SHOW_DEBUGGER_COMMAND_LINE_DBG"></span>

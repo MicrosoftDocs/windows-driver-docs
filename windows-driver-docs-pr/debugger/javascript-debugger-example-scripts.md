@@ -47,7 +47,7 @@ function sayHi()
 
 ```
 0:000> .scriptrun c:\WinDbg\Scripts\HelloWorld.js
-JavaScript script successfully loaded from &#39;c:\WinDbg\Scripts\HelloWorld.js&#39;
+JavaScript script successfully loaded from 'c:\WinDbg\Scripts\HelloWorld.js'
 ***> Hello World! 
 ```
 
@@ -110,7 +110,7 @@ Either load a kernel dump file or establish a kernel mode connection to a target
 
 ```
 0: kd> .scriptload c:\WinDbg\Scripts\deviceFilter.js
-JavaScript script successfully loaded from &#39;c:\WinDbg\Scripts\deviceFilter.js&#39;
+JavaScript script successfully loaded from 'c:\WinDbg\Scripts\deviceFilter.js'
 ```
 
 Call the filterAllDevices() function.
@@ -237,7 +237,7 @@ function initializeScript()
             // accurate.  Make sure this is wrapped in a try/catch to avoid invalid memory reads causing
             // us to bail out.
             //
-            // Don&#39;t even bother checking the PDO.
+            // Don't even bother checking the PDO.
             //
             for (var pdo of allPDOs)
             {
@@ -359,7 +359,7 @@ First load the script provider as described previously. Then load the script.
 
 ```
 0: kd> .scriptload c:\WinDbg\Scripts\StreamingFinder.js
-JavaScript script successfully loaded from &#39;c:\WinDbg\Scripts\StreamingFinder.js&#39;
+JavaScript script successfully loaded from 'c:\WinDbg\Scripts\StreamingFinder.js'
 ```
 
 Then use the dx command to access the new StreamingDevices capabilities that the script provides.
@@ -426,7 +426,7 @@ function initializeScript()
     // __getStackPDO():
     //
     // Returns the physical device object of the device stack whose device object
-    // is passed in as &#39;devObj&#39;.
+    // is passed in as 'devObj'.
     //
     function __getStackPDO(devObj)
     {
@@ -458,8 +458,8 @@ function initializeScript()
                 this.__deviceExtension = host.createTypedObject(this.__pciPDO.DeviceExtension.address, "pci.sys", "_PCI_DEVICE", this.__pciPDO);
                 this.__busExtension = host.createTypedObject(this.__pciDev.DeviceExtension.address, "pci.sys", "_PCI_BUS", this.__pciPDO);
                 
-                this.__hasDevice = (this.__deviceExtension.Signature == 0x44696350); /* &#39;PciD&#39; */
-                this.__hasBus = (this.__busExtension.Signature == 0x42696350); /* &#39;PciB&#39; */
+                this.__hasDevice = (this.__deviceExtension.Signature == 0x44696350); /* 'PciD' */
+                this.__hasBus = (this.__busExtension.Signature == 0x42696350); /* 'PciB' */
                 
                 if (!this.__hasDevice && !this.__hasBus)
                 {
@@ -470,7 +470,7 @@ function initializeScript()
             {
                 this.__deviceExtension = host.createTypedObject(this.__pciPDO.DeviceExtension.address, "pci.sys", "_PCI_DEVICE", this.__pciPDO);
                 
-                this.__hasDevice = (this.__deviceExtension.Signature == 0x44696350); /* &#39;PciD&#39; */
+                this.__hasDevice = (this.__deviceExtension.Signature == 0x44696350); /* 'PciD' */
                 this.__hasBus = false;
                 
                 if (!this.__hasDevice)
@@ -577,7 +577,7 @@ First load the script provider as described previously. Then load the script.
 
 ```
 0: kd> .scriptload c:\WinDbg\Scripts\DeviceExtensionInformation.js
-JavaScript script successfully loaded from &#39;c:\WinDbg\Scripts\DeviceExtensionInformation.js&#39;
+JavaScript script successfully loaded from 'c:\WinDbg\Scripts\DeviceExtensionInformation.js'
 ```
 
 We need to locate the address of the device object we are interested in. In this example, we will examine the audio HDAudBus driver.
@@ -687,7 +687,7 @@ function findTitleWithLINQ()
 
 ```
 0: kd> .scriptload c:\WinDbg\Scripts\TitleFinder.js
-JavaScript script successfully loaded from &#39;c:\WinDbg\Scripts\TitleFinder.js&#39;
+JavaScript script successfully loaded from 'c:\WinDbg\Scripts\TitleFinder.js'
 ```
 
 Calling the findTitle() function returns notepad.exe

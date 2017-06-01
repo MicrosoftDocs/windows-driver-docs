@@ -21,7 +21,7 @@ api_type:
 
 The **!defwrites** extension displays the values of the kernel variables used by the cache manager.
 
-``` syntax
+```
 !defwrites
 ```
 
@@ -62,7 +62,7 @@ When the number of deferred writes ("dirty pages") becomes too large, page writi
 
 Here is an example:
 
-``` syntax
+```
 kd> !defwrites 
 *** Cache Write Throttle Analysis ***
 

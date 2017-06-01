@@ -21,8 +21,8 @@ api_type:
 
 The **.create** command creates a new target application.
 
-``` syntax
-    .create [-premote RemoteOptions] [-f] CommandLine 
+```
+.create [-premote RemoteOptions] [-f] CommandLine 
 ```
 
 ## <span id="ddk_meta_create_process_dbg"></span><span id="DDK_META_CREATE_PROCESS_DBG"></span>Parameters

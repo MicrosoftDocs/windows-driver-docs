@@ -21,7 +21,7 @@ api_type:
 
 The **!hidkd.hidppd** command displays HID preparsed data.
 
-``` syntax
+```
 !hidkd.hidppd ppd
 ```
 
@@ -41,7 +41,7 @@ Examples
 
 This example shows how to use [**!hidpdo**](-hidkd-hidpdo.md) followed by **!hidppd**. The output of **!hidpdo** shows the address of a **HIDP\_PREPARSED\_DATA** structure.
 
-``` syntax
+```
 
 0: kd> !hidpdo 0xffffe000029f6060
 ## PDO 0xffffe000029f6060  (!devobj/!devstack)

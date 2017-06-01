@@ -23,13 +23,13 @@ The **g** command starts executing the given process or thread. Execution will h
 
 User-Mode Syntax
 
-``` syntax
+```
 [~Thread] g[a] [= StartAddress] [BreakAddress ... [; BreakCommands]]
 ```
 
 Kernel-Mode Syntax
 
-``` syntax
+```
 g[a] [= StartAddress] [BreakAddress ... [; BreakCommands]] 
 ```
 

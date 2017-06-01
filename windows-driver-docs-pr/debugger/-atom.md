@@ -21,7 +21,7 @@ api_type:
 
 The **!atom** extension displays the formatted atom table for the specified atom or for all atoms of the current process.
 
-``` syntax
+```
     !atom [Address] 
 ```
 

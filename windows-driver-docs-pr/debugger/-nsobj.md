@@ -23,7 +23,7 @@ The **!nsobj** extension displays an ACPI namespace object.
 
 Syntax
 
-``` syntax
+```
 !nsobj [Address]
 ```
 

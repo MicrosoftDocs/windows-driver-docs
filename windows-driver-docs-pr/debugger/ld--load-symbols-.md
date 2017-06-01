@@ -21,7 +21,7 @@ api_type:
 
 The **ld** command loads symbols for the specified module and updates all module information.
 
-``` syntax
+```
 ld ModuleName [/f FileName]
 ```
 

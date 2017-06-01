@@ -21,7 +21,7 @@ api_type:
 
 The **dds**, **dps**, and **dqs** commands display the contents of memory in the given range. This memory is assumed to be a series of addresses in the symbol table. The corresponding symbols are displayed as well.
 
-``` syntax
+```
 dds [Options] [Range] 
 dqs [Options] [Range] 
 dps [Options] [Range] 

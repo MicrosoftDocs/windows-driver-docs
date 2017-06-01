@@ -23,7 +23,7 @@ api_type:
 
 The **!lookaside** extension displays information about look-aside lists, resets the counters of look-aside lists, or modifies the depth of a look-aside list.
 
-``` syntax
+```
 !lookaside [Address [Options [Depth]]]
 !lookaside [-all]
 !lookaside 0 [-all]
@@ -69,7 +69,7 @@ Note that if the current depth of a look-aside list exceeds the maximum depth of
 
 Here is an example of the output from this extension:
 
-``` syntax
+```
 !lookaside 0xfffff88001294f80
 
 Lookaside "" @ 0xfffff88001294f80  Tag(hex): 0x7366744e "Ntfs"

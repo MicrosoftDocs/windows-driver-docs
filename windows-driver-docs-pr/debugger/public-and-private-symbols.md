@@ -101,7 +101,7 @@ When accessing public symbols, the debugger's behavior depends on certain [symbo
 
 Here is an example in which the command [**x (Examine Symbols)**](x--examine-symbols-.md) is used three times. The first time, the default symbol options are used, and so the information is taken from the private symbol data. Note that this includes information about the address, size, and data type of the array **typingString**. Next, the command .symopt+ 4000 is used, causing the debugger to ignore the private symbol data. When the **x** command is then run again, the public symbol table is used; this time there is no size and data type information for **typingString**. Finally, the command .symopt- 2 is used, which causes the debugger to include decorations. When the **x** command is run this final time, the decorated version of the function name, **\_typingString**, is shown.
 
-``` syntax
+```
 0:000> x /t /d *!*typingstring* 
 00434420 char [128] TimeTest!typingString = char [128] ""
 
@@ -122,7 +122,7 @@ Another way to view symbols is by using the [the DBH tool](dbh.md). DBH uses the
 
 Here is an example in which the DBH command **addr 414fe0** is used three times. The first time, the default symbol options are used, and so the information is taken from the private symbol data. Note that this includes information about the address, size, and data type of the function **fgets**. Next, the command symopt +4000 is used, which causes DBH to ignore the private symbol data. When the **addr 414fe0** is then run again, the public symbol table is used; this time there is no size and data type information for the function **fgets**. Finally, the command symopt -2 is used, which causes DBH to include decorations. When the **addr 414fe0** is run this final time, the decorated version of the function name, **\_fgets**, is shown.
 
-``` syntax
+```
 pid:4308 mod:TimeTest[400000]: addr 414fe0
 
 fgets

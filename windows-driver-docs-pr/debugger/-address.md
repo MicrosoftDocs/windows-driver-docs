@@ -23,7 +23,7 @@ The **!address** extension displays information about the memory that the target
 
 User-Mode
 
-``` syntax
+```
 !address Address
 !address -summary 
 !address [-f:F1,F2,...] {[-o:{csv | tsv | 1}] | [-c:"Command"]}
@@ -32,7 +32,7 @@ User-Mode
 
 Kernel-Mode
 
-``` syntax
+```
 !address Address 
 !address
 ```
@@ -366,7 +366,7 @@ In user mode, **!address** *Address* shows the characteristics of the region tha
 
 The following example uses **!address** to retrieve information about a region of memory that is mapped to kernel32.dll.
 
-``` syntax
+```
 0:000> !address 75831234
 Usage:                  Image
 Base Address:           75831000
@@ -386,7 +386,7 @@ If you are starting with an address and trying to determine information about it
 
 The following example uses the [**s (Search Memory)**](s--search-memory-.md) command to search each memory region of type **Image** for the wide-character string "Note".
 
-``` syntax
+```
 !address /f:Image /c:"s -u %1 %2 \"Note\""
 
 *** Executing: s -u 0xab0000 0xab1000 "Note"
@@ -400,7 +400,7 @@ The following example uses the [**s (Search Memory)**](s--search-memory-.md) com
 
 In kernel mode, the output of **!address** is similar to the user mode output but contains less information. The following example example shows the kernel mode output.
 
-``` syntax
+```
 kd> !address
   804de000 - 00235000                           
  Usage       KernelSpaceUsageImage

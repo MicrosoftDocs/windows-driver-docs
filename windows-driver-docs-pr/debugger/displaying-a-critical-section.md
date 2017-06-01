@@ -24,7 +24,7 @@ Critical sections can be displayed by the **!ntsdexts.locks** extension, the **!
 
 The [**!ntsdexts.locks**](-locks---ntsdexts-locks-.md) extension displays a list of critical sections associated with the current process. If the **-v** option is used, all critical sections are displayed. Here is an example:
 
-``` syntax
+```
 0:000> !locks
 
 CritSec ntdll!FastPebLock+0 at 77FC49E0
@@ -41,7 +41,7 @@ Scanned 37 critical sections
 
 If you know the address of the critical section you wish to display, you can use the [**!critsec**](-critsec.md) extension. This displays the same collection of information as **!ntsdexts.locks**. For example:
 
-``` syntax
+```
 0:000> !critsec 77fc49e0
 
 CritSec ntdll!FastPebLock+0 at 77FC49E0
@@ -57,7 +57,7 @@ The [**!cs**](-cs.md) extension is only available in Microsoft Windows XP and la
 
 The information displayed by **!cs** is slightly different than that shown by **!ntsdexts.locks** and **!critsec**. For example:
 
-``` syntax
+```
 ## 0:000> !cs 77fc49e0
 
 Critical section   = 0x77fc49e0 (ntdll!FastPebLock+0x0)
@@ -72,7 +72,7 @@ SpinCount          = 0x00000000
 
 The [**dt (Display Type)**](dt--display-type-.md) command can be used to display the literal contents of the RTL\_CRITICAL\_SECTION structure. For example:
 
-``` syntax
+```
 0:000> dt RTL_CRITICAL_SECTION 77fc49e0
    +0x000 DebugInfo        : 0x77fc3e00 
    +0x004 LockCount        : 0
@@ -94,7 +94,7 @@ The most important fields of the critical section structure are as follows:
 
 A newly initialized critical section looks like this:
 
-``` syntax
+```
 0:000> !critsec 433e60
 CritSec mymodule!cs+0 at 00433E60
 LockCount          NOT LOCKED 
@@ -106,7 +106,7 @@ ContentionCount    0
 
 The debugger displays "NOT LOCKED" as the value for **LockCount**. The actual value of this field for an unlocked critical section is -1. You can verify this with the **dt (Display Type)** command:
 
-``` syntax
+```
 0:000> dt RTL_CRITICAL_SECTION 433e60
    +0x000 DebugInfo        : 0x77fcec80
    +0x004 LockCount        : -1
@@ -118,7 +118,7 @@ The debugger displays "NOT LOCKED" as the value for **LockCount**. The actual va
 
 When the first thread calls the **EnterCriticalSection** routine, the critical section's **LockCount**, **RecursionCount**, **EntryCount** and **ContentionCount** fields are all incremented by one, and **OwningThread** becomes the thread ID of the caller. **EntryCount** and **ContentionCount** are never decremented. For example:
 
-``` syntax
+```
 0:000> !critsec 433e60
 CritSec mymodule!cs+0 at 00433E60
 LockCount          0
@@ -132,7 +132,7 @@ At this point, four different things can happen.
 
 1.  The owning thread calls **EnterCriticalSection** again. This will increment **LockCount** and **RecursionCount**. **EntryCount** is not incremented.
 
-    ``` syntax
+    ```
     0:000> !critsec 433e60
     CritSec mymodule!cs+0 at 00433E60
     LockCount          1
@@ -144,7 +144,7 @@ At this point, four different things can happen.
 
 2.  A different thread calls **EnterCriticalSection**. This will increment **LockCount** and **EntryCount**. **RecursionCount** is not incremented.
 
-    ``` syntax
+    ```
     0:000> !critsec 433e60
     CritSec mymodule!cs+0 at 00433E60
     LockCount          1
@@ -156,7 +156,7 @@ At this point, four different things can happen.
 
 3.  The owning thread calls **LeaveCriticalSection**. This will decrement **LockCount** (to -1) and **RecursionCount** (to 0), and will reset **OwningThread** to 0.
 
-    ``` syntax
+    ```
     0:000> !critsec 433e60
     CritSec mymodule!cs+0 at 00433E60
     LockCount          NOT LOCKED 
@@ -182,21 +182,21 @@ In Microsoft Windows Server 2003 Service Pack 1 and later versions of Windows, t
 
 As an example, suppose the **LockCount** is -22. The lowest bit can be determined in this way:
 
-``` syntax
+```
 0:009> ? 0x1 & (-0n22)
 Evaluate expression: 0 = 00000000
 ```
 
 The next-lowest bit can be determined in this way:
 
-``` syntax
+```
 0:009> ? (0x2 & (-0n22)) >> 1
 Evaluate expression: 1 = 00000001
 ```
 
 The ones-complement of the remaining bits can be determined in this way:
 
-``` syntax
+```
 0:009> ? ((-1) - (-0n22)) >> 2
 Evaluate expression: 5 = 00000005
 ```

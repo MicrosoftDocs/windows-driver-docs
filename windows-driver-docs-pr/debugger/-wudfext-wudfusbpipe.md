@@ -21,7 +21,7 @@ api_type:
 
 The **!wudfext.wudfusbpipe** extension displays information about a USB pipe object.
 
-``` syntax
+```
 !wudfext.wudfusbpipe pWDFUSBPipe TypeName
 ```
 

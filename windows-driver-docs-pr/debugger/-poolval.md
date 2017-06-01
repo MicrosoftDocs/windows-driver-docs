@@ -21,7 +21,7 @@ api_type:
 
 The **!poolval** extension analyzes the headers for a pool page and diagnoses any possible corruption. This extension is only available in Windows XP and later versions.
 
-``` syntax
+```
 !poolval Address [DisplayLevel]
 ```
 

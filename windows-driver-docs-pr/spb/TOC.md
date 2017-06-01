@@ -7,6 +7,7 @@
 ### [Using the SPB_TRANSFER_LIST Structure for Custom IOCTLs](using-the-spb-transfer-list-structure.md)
 ### [Handling IOCTL_SPB_FULL_DUPLEX Requests](handling-ioctl-spb-full-duplex-requests.md)
 ### [How to Get the Connection Settings for a Device](how-to-get-the-connection-settings-for-a-device.md)
+### [SpbCx Object Handles](spbcx-object-handles.md)
 ## [SPB peripheral device drivers](spb-peripheral-device-drivers.md)
 ### [Using the SPB I/O Request Interface](using-the-spb-i-o-request-interface.md)
 ### [Connection IDs for SPB-Connected Peripheral Devices](connection-ids-for-spb-connected-peripheral-devices.md)

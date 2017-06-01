@@ -21,8 +21,8 @@ api_type:
 
 The **.dvfree** command frees a memory allocation owned by the target process.
 
-``` syntax
-    .dvfree [/d] BaseAddress Size 
+```
+.dvfree [/d] BaseAddress Size 
 ```
 
 ## <span id="ddk_meta_free_memory_dbg"></span><span id="DDK_META_FREE_MEMORY_DBG"></span>Parameters

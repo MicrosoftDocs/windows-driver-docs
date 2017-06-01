@@ -21,7 +21,7 @@ api_type:
 
 The **!hidkd.hidtree** command displays a list of all device nodes that have a HID function driver along with their child nodes. The child nodes have a physical device object (PDO) that was created by the parent node's HID function driver.
 
-``` syntax
+```
 !hidkd.hidtree
 ```
 

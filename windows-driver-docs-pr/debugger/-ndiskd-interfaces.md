@@ -19,14 +19,12 @@ api_type:
 # !ndiskd.interfaces
 
 
-T
-
-he **!ndiskd.interfaces** extension displays information about a network interface. If you run this extension with no parameters, !ndiskd will display a list of all network interfaces.
+The **!ndiskd.interfaces** extension displays information about a network interface. If you run this extension with no parameters, !ndiskd will display a list of all network interfaces.
 
 For more information about network interfaces, see [NDIS Network Interfaces](https://msdn.microsoft.com/windows/hardware/drivers/network/ndis-network-interfaces2).
 
-``` syntax
-    !ndiskd.interfaces [-handle <x>] [-luid <x>] 
+```
+!ndiskd.interfaces [-handle <x>] [-luid <x>] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -47,7 +45,7 @@ Examples
 
 Run the **!ndiskd.interfaces** extension with no parameters to see a list of all network interfaces on the system. In this example, look for the Intel(R) 82579LM Gigabit Network Connection interface. Its handle is ffffdf80139f8a20.
 
-```cmd
+```
 1: kd> !ndiskd.interfaces
     Interface                                                                   
     ffffdf801494fa20 - Microsoft Kernel Debug Network Adapter-WFP Native MAC Layer LightWeight Filter-0000
@@ -71,7 +69,7 @@ Run the **!ndiskd.interfaces** extension with no parameters to see a list of all
 
 By clicking on the handle for an interface or by entering the **!ndiskd.interfaces -handle** command, you can see the details about that interface, including its Identifier information and its current state. In this example, you can see that the Intel(R) 82579LM Gigabit Network Connection is an Ethernet connection (its ifAlias) and is in a MediaConnectUnknown state for its connection (as it has been reserved for use by the Windows kernel debugger).
 
-```cmd
+```
 1: kd> !ndiskd.interfaces ffffdf80139f8a20
 
 

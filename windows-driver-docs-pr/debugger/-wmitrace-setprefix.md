@@ -21,7 +21,7 @@ api_type:
 
 The **!wmitrace.setprefix** extension specifies the trace message prefix that is prepended to the trace messages from this session. This extension allows you to change the prefix during the debugging session.
 
-``` syntax
+```
 !wmitrace.setprefix [+] PrefixVariables 
 !wmitrace.setprefix 
 ```

@@ -21,7 +21,7 @@ api_type:
 
 The **.chain** command lists all loaded debugger extensions in their default search order.
 
-``` syntax
+```
 .chain
 .chain /D
 ```

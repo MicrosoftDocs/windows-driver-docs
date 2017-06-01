@@ -23,13 +23,13 @@ The **p** command executes a single instruction or source line and optionally di
 
 User-Mode
 
-``` syntax
+```
 [~Thread] p[r] [= StartAddress] [Count] ["Command"] 
 ```
 
 Kernel-Mode
 
-``` syntax
+```
 p[r] [= StartAddress] [Count] ["Command"] 
 ```
 

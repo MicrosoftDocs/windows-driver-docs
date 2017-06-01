@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfsetdriver** extension sets the name of the default Kernel-Mode Driver Framework (KMDF) driver to which debugger extension commands apply.
 
-``` syntax
+```
 !wdfkd.wdfsetdriver DriverName
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbpdos** command displays information about all physical device objects (PDOs) created by the USB hub driver.
 
-``` syntax
+```
 !usbkd.usbpdos
 ```
 
@@ -35,7 +35,7 @@ Examples
 
 Here's an example of the output of the **!usbpdos** command.
 
-``` syntax
+```
 0: kd> !usbkd.usbpdos
 
 ext ffffe00006c513f0

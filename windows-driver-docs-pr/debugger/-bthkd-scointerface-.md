@@ -21,7 +21,7 @@ api_type:
 
 The **!bthkd.scointerface** command displays information about the SCO interface.
 
-``` syntax
+```
 !bthkd.scointerface
 ```
 

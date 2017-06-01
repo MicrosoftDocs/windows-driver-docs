@@ -21,7 +21,7 @@ api_type:
 
 The **!blockeddrv** extension displays the list of blocked drivers on the target computer.
 
-``` syntax
+```
     !blockeddrv
 ```
 
@@ -54,7 +54,7 @@ Remarks
 
 Here is an example:
 
-``` syntax
+```
 kd> !blockeddrv
 Driver:      Status    GUID
 afd.sys      0:        {00000008-0206-0001-0000-000030C964E1}

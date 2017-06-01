@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.objhdr** extension displays the kernel streaming object header associated with the specified file object.
 
-``` syntax
-    !ks.objhdr FileObject [Level] [Flags]  
+```
+!ks.objhdr FileObject [Level] [Flags]  
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

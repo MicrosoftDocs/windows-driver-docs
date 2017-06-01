@@ -21,7 +21,7 @@ api_type:
 
 The **q** and **qq** commands end the debugging session. (In CDB and KD, this command also exits the debugger itself. In WinDbg, this command returns the debugger to dormant mode.)
 
-``` syntax
+```
 q 
 qq 
 ```

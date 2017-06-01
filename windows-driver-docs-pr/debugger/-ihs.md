@@ -21,7 +21,7 @@ api_type:
 
 The **!ihs** extension displays the interrupt history record for the specified processor, using program counter symbols.
 
-``` syntax
+```
 !ihs Processor 
 ```
 
@@ -65,7 +65,7 @@ To display the interrupt history record without using program counter symbols, u
 
 Here is an example of the output from this extension:
 
-``` syntax
+```
 kd> !ihs
 Total # of interruptions = 2093185
 Vector              IIP                   IPSR          ExtraField            IIP Symbol

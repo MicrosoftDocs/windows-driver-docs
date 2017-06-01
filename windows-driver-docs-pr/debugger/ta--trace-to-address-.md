@@ -23,14 +23,14 @@ The **ta** command executes the program until the specified address is reached, 
 
 User-Mode
 
-``` syntax
+```
 [~Thread] ta [r] [= StartAddress] StopAddress 
 ```
 
 Kernel-Mode
 
-``` syntax
-    ta [r] [= StartAddress] StopAddress 
+```
+ta [r] [= StartAddress] StopAddress 
 ```
 
 ## <span id="ddk_cmd_trace_to_address_dbg"></span><span id="DDK_CMD_TRACE_TO_ADDRESS_DBG"></span>Parameters

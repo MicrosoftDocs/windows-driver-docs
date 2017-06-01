@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfgetdriver** extension displays the name of the current default driver.
 
-``` syntax
+```
 !wdfkd.wdfgetdriver
 ```
 

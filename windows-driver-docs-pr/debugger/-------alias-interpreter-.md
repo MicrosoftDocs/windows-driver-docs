@@ -21,7 +21,7 @@ api_type:
 
 A dollar sign followed by a pair of braces ( **${ }** ) evaluates to a variety of values related to the specified user-named alias.
 
-``` syntax
+```
 Text ${Alias} Text 
 Text ${/d:Alias} Text 
 Text ${/f:Alias} Text 

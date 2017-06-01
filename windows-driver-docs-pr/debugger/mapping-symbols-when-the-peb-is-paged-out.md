@@ -20,13 +20,13 @@ To reclaim memory, the Memory Manager may page out user-mode data to make space 
 
 Suppose a user-mode module is mapped into the current process and you want to fix the symbols for it. Find any address in the range of virtual addresses of the module. For example, suppose a module is mapped into a virtual address range that contains the address 7f78e9e000F. Enter the following command.
 
-```cmd
+```
 3: kd> !vad 7f78e9e000F 1
 ```
 
 The command output displays information about the virtual address descriptor (VAD) for the module. The command output also includes a Reload command string that you can use to load the symbols for the module. The Reload command string includes the starting address (000007f7\`8e9e0000) and size (32000) of the notepad module.
 
-```cmd
+```
 VAD @ fffffa80056fb960
 ...
 Reload command: .reload notepad.exe=000007f7`8e9e0000,32000
@@ -34,7 +34,7 @@ Reload command: .reload notepad.exe=000007f7`8e9e0000,32000
 
 To load the symbols, enter the command that was given in the Reload command string.
 
-```cmd
+```
 .reload notepad.exe=000007f7`8e9e0000,32000
 ```
 

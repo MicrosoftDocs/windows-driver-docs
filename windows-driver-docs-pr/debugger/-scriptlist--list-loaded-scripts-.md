@@ -21,15 +21,14 @@ api_type:
 
 The **.scriptlist** command lists the loaded scripts.
 
-``` syntax
-    .scriptlist 
-   
+```
+.scriptlist 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
 
-<span id="_______________"></span> ****   
+<span id="_______________"></span>    
 None
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
@@ -66,7 +65,7 @@ If the TestScript was successfully loaded using .scriptload, the .scriptlist com
 ```
 0:000> .scriptlist
 Command Loaded Scripts:
-    JavaScript script from &#39;C:\WinDbg\Scripts\TestScript.js&#39;
+    JavaScript script from 'C:\WinDbg\Scripts\TestScript.js'
 ```
 
 **Requirements**

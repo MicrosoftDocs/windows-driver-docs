@@ -21,8 +21,8 @@ api_type:
 
 The **.push** command saves the current state of the debugger.
 
-``` syntax
-    .push
+```
+.push
 .push /r
 .push /r /q
  

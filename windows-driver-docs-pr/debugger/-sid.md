@@ -23,8 +23,8 @@ The **!sid** extension displays the security identifier (SID) at the specified a
 
 Syntax
 
-``` syntax
-    !sid Address [Flags] 
+```
+!sid Address [Flags] 
 ```
 
 ## <span id="ddk__sid_dbg"></span><span id="DDK__SID_DBG"></span>Parameters
