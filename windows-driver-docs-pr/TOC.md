@@ -27,6 +27,7 @@
 ## [NetAdapterCx](netcx/index.md)
 ## [Network drivers](network/index.md)
 ## [NFC device drivers](nfc/index.md)
+## [Parallel port drivers](parports/index.md)
 ## [Partner application development](partnerapps/index.md)
 ## [PCI drivers](pci/index.md)
 ## [PCMCIA drivers](pcmcia/index.md)
