@@ -16,7 +16,7 @@ Valid installation types depend on the [target platform](../develop/windows-10-e
 When a software component INF file specifies **AddSoftware**, the system queues software to be installed after device installation.  There is no guarantee when or if the software will be installed.
 If referenced software fails to install, the system tries again when the referencing software component is updated.
 
-An **AddSoftware** directive is used within an INF [*DDInstall*.**Software**](inf-ddinstall-software-section.md) section.
+An **AddSoftware** directive is used within an [**INF *DDInstall*.Software**](inf-ddinstall-software-section.md) section.
 
 ```
 [DDInstall.Software]
@@ -26,7 +26,7 @@ AddSoftware=SoftwareName,[flags],software-install-section
 
 ## Entries
 
-**SoftwareName**
+*SoftwareName*
 
 Specifies the name of the software to be installed.  This name uniquely identifies the software.  The processing of an **AddSoftware** directive checks the version against previous software installed with the same name by an **AddSoftware** directive from any driver package.  We recommend prefacing the SoftwareName with the vendor name, for example `ContosoControlPanel`.
 
@@ -96,7 +96,9 @@ For example:
 
 The above example results in a command line like this:
 
-`<DriverStorePath>\ContosoControlPanel.exe PCI\VEN_1000&DEV_0001&SUBSYS_0000\1&08`
+`<DriverStorePath>\ContosoControlPanel.exe PCI\VEN_0000&DEV_0001&SUBSYS_00000000&REV_00\0123`
+
+If SoftwareArguments contains multiple arguments:
 
 ```
 	SoftwareArguments=arg1,<<DeviceInstanceID>>,arg2
@@ -104,7 +106,7 @@ The above example results in a command line like this:
 
 The above results in:
 
-`arg1 PCI\VEN_1000&DEV_0001&SUBSYS_0000\1&08 arg2`
+`<DriverStorePath>\ContosoControlPanel.exe arg1 PCI\VEN_0000&DEV_0001&SUBSYS_00000000&REV_00\0123 arg2`
 
 **SoftwareVersion**=*w.x.y.z*
 
