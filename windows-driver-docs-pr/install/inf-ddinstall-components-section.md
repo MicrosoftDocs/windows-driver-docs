@@ -27,7 +27,7 @@ You can provide a *DDInstall*.**Components** section with one or more **AddCompo
 
 **AddComponent**=*ComponentName,[flags],component-install-section*
 
-This directive references an INF-writer-defined component-install-section elsewhere in the INF file for the drivers of the devices covered by this *DDInstall* section.  For more information, see [INF AddComponent Directive](inf-addcomponent-directive.md).
+This directive references an INF-writer-defined component-install-section elsewhere in the INF file for the drivers of the devices covered by this *DDInstall* section.  For more information, see [**INF AddComponent Directive**](inf-addcomponent-directive.md).
 
 ## Remarks
 
@@ -41,7 +41,7 @@ For more information about how to use the system-defined **.nt**, **.ntx86**, **
 
 ```
 [ContosoGrfx.NT.Components]
-AddComponent = ContosoControlPanel,, Component_Inst
+AddComponent = ContosoControlPanel,,Component_Inst
 
 [Component_Inst]
 ComponentIDs = VID0001&PID0001&SID0001
