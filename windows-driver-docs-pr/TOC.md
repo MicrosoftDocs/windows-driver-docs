@@ -35,6 +35,7 @@
 ## [Print device drivers](print/index.md)
 ## [SD card bus drivers](sd/index.md)
 ## [Sensor drivers](sensors/index.md)
+## [Serial port drivers](serports/index.md)
 ## [Smartcard device drivers](smartcard/index.md)
 ## [SPB drivers](spb/index.md)
 ## [Storage device drivers](storage/index.md)
