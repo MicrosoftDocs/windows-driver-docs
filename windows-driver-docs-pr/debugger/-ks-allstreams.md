@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.allstreams** extension walks the entire device tree and finds every kernel streaming device in the system.
 
-``` syntax
-    !ks.allstreams [Flags] [Level] 
+```
+!ks.allstreams [Flags] [Level] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

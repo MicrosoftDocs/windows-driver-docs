@@ -21,7 +21,7 @@ api_type:
 
 The **!rcdrkd.rcdrloglist** extension displays a list of the recorder logs owned by a driver or a set of drivers.
 
-``` syntax
+```
 !rcdrkd.rcdrloglist DriverName [DriverName ...]
 ```
 
@@ -46,7 +46,7 @@ Examples
 
 The following example displays a list of all recorder logs owned by the USB 3.0 host controller driver (usbxhci.sys).
 
-```cmd
+```
 3: kd> !rcdrloglist usbxhci
 Log dump command                           Log ID                   Size
 ================                           ======                   ====

@@ -21,7 +21,7 @@ api_type:
 
 The **.sound\_notify** command causes a sound to be played when WinDbg enters the wait-for-command state.
 
-``` syntax
+```
 .sound_notify /ed 
 .sound_notify /ef File 
 .sound_notify /d 

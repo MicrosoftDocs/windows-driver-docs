@@ -21,7 +21,7 @@ api_type:
 
 The **!pool** extension displays information about a specific pool allocation or about the entire system-wide pool.
 
-``` syntax
+```
 !pool [Address [Flags]]
 ```
 
@@ -83,7 +83,7 @@ If the **!pool** extension reports pool corruption, you should use [**!poolval**
 
 Here is an example. If *Address* specifies 0xE1001050, the headers of all pools in this block are displayed, and 0xE1001050 itself is marked with an asterisk (\*).
 
-``` syntax
+```
 kd> !pool e1001050 
  e1001000 size:   40 previous size:    0  (Allocated)  MmDT
  e1001040 size:   10 previous size:   40  (Free)       Mm  
@@ -99,7 +99,7 @@ In this example, the right-most column shows the pool tag. The column to the lef
 
 The following command shows the pool headers and pool contents:
 
-``` syntax
+```
 kd> !pool e1001050 1
  e1001000 size:   40 previous size:    0  (Allocated)  MmDT
  e1001008  ffffffff 0057005c 004e0049 004f0044

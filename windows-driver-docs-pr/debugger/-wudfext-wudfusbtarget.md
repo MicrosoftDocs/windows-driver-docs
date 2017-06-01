@@ -21,7 +21,7 @@ api_type:
 
 The **!wudfext.wudfusbtarget** extension displays information about a USB I/O target.
 
-``` syntax
+```
 !wudfext.wudfusbtarget pWDFUSBTarget TypeName
 ```
 

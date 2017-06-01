@@ -21,7 +21,7 @@ api_type:
 
 The **ux** command displays the instruction set of the x86-based BIOS code.
 
-``` syntax
+```
 ux [Address]
 ```
 

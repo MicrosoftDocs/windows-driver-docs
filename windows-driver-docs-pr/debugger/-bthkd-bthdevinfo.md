@@ -21,7 +21,7 @@ api_type:
 
 The **!bthkd.bthdevinfo** command displays the information about a given BTHENUM created device PDO.
 
-``` syntax
+```
 !bthkd.bthdevinfo addr
 ```
 

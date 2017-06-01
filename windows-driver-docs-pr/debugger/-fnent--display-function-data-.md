@@ -21,7 +21,7 @@ api_type:
 
 The **.fnent** command displays information about the function table entry for a specified function.
 
-``` syntax
+```
 .fnent Address
 ```
 
@@ -65,7 +65,7 @@ If the nearest symbol is not in the function table, no information is displayed.
 
 The following example shows a possible display.
 
-``` syntax
+```
 0:001> .fnent 77f9f9e7
 Debugger function entry 00b61f50 for:
 (77f9f9e7)   ntdll!RtlpBreakWithStatusInstruction   |  (77f9fa98)   ntdll!DbgPrintReturnControlC

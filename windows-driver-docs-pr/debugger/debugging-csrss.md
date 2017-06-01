@@ -32,13 +32,13 @@ To do this, start the GFlags utility, select the **System Registry** radio butto
 
 Alternatively, you can use the following GFlags command-line:
 
-``` syntax
+```
 gflags /r +20000 
 ```
 
 Or, if you prefer, you can edit the registry key manually instead of using GFlags. Open the following registry key:
 
-``` syntax
+```
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager 
 ```
 

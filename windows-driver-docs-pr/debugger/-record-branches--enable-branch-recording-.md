@@ -21,7 +21,7 @@ api_type:
 
 The **.record\_branches** command enables the recording of branches that the target's code executed.
 
-``` syntax
+```
 .record_branches {1|0} 
 .record_branches
 ```

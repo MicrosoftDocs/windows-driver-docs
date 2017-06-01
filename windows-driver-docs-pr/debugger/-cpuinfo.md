@@ -23,8 +23,8 @@ The **!cpuinfo** extension displays detailed information about the target comput
 
 Syntax
 
-``` syntax
-    !cpuinfo [Processor] 
+```
+!cpuinfo [Processor] 
 ```
 
 ## <span id="ddk__cpuinfo_dbg"></span><span id="DDK__CPUINFO_DBG"></span>Parameters

@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usb2tree** command displays [USB 2.0 tree](usb-2-0-extensions.md#usb-2-tree).
 
-``` syntax
+```
 !usbkd.usb2tree
 ```
 

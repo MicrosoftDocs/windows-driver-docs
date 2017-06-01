@@ -21,7 +21,7 @@ api_type:
 
 The **!object** extension displays information about a system object.
 
-``` syntax
+```
 !object Address [Flags] 
 !object Path
 !object 0 Name 
@@ -77,7 +77,7 @@ Kdexts.dll
 
 This example passes the path of the \\Device directory to **!object**. The output lists all objects in the \\Device directory.
 
-``` syntax
+```
 0: kd> !object \Device
 Object: ffffc00b074166a0  Type: (ffffe0083b768690) Directory
     ObjectHeader: ffffc00b07416670 (new version)
@@ -99,7 +99,7 @@ Object: ffffc00b074166a0  Type: (ffffe0083b768690) Directory
 
 Choose one of listed objects, say USBPDO-8. Pass the address of USBPDO-8 (ffffe0083b85d060) to **!objec**t. Set *Flags* to 0x0 to get minimal information.
 
-``` syntax
+```
 0: kd> !object ffffe0083b85d060 0x0
 Object: ffffe0083b85d060  Type: (ffffe0083b87df20) Device
     ObjectHeader: ffffe0083b85d030 (new version)
@@ -107,7 +107,7 @@ Object: ffffe0083b85d060  Type: (ffffe0083b87df20) Device
 
 Include name and reference count information for the same object by setting *Flags* to 0x1.
 
-``` syntax
+```
 0: kd> !object ffffe0083b85d060 0x1
 Object: ffffe0083b85d060  Type: (ffffe0083b87df20) Device
     ObjectHeader: ffffe0083b85d030 (new version)
@@ -117,7 +117,7 @@ Object: ffffe0083b85d060  Type: (ffffe0083b87df20) Device
 
 Get optional header information for the same object by setting *Flags* to 0x10.
 
-``` syntax
+```
 0: kd> !object ffffe0083b85d060 0x10
 Object: ffffe0083b85d060  Type: (ffffe0083b87df20) Device
     ObjectHeader: ffffe0083b85d030 (new version)
@@ -127,7 +127,7 @@ Optional Headers:
 
 The following example calls **!object** twice for a Directory object. The first time, the contents of the directory are not displayed because the 0x8 flag is not set. The second time, the contents of the directory are displayed because both the 0x8 and 0x1 flags are set (Flags = 0x9).
 
-``` syntax
+```
 0: kd> !object ffffc00b07481d00 0x1
 Object: ffffc00b07481d00  Type: (ffffe0083b768690) Directory
     ObjectHeader: ffffc00b07481cd0 (new version)
@@ -148,7 +148,7 @@ Object: ffffc00b07481d00  Type: (ffffe0083b768690) Directory
 
 The following example calls **!object** twice for a SymbolicLink object. The first time, the target of the symbolic link is not displayed because the 0x8 flag is not set. The second time, the target of the symbolic link is splayed because both the 0x8 and 0x1 flags are set (Flags = 0x9).
 
-``` syntax
+```
 0: kd> !object ffffc00b07628fb0 0x1
 Object: ffffc00b07628fb0  Type: (ffffe0083b769450) SymbolicLink
     ObjectHeader: ffffc00b07628f80 (new version)

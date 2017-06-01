@@ -23,7 +23,7 @@ The **!session** extension controls the session context. It can also display a l
 
 Syntax
 
-``` syntax
+```
 !session 
 !session -s DefaultSession 
 !session -?

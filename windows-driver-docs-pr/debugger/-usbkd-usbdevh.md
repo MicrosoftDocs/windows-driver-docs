@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbdevh** command displays information about a USB device handle.
 
-``` syntax
+```
 !usbkd.usbdevh StructAddr
 ```
 
@@ -41,7 +41,7 @@ Examples
 
 Here is one way to find the address of a **usbport!\_USBD\_DEVICE\_HANDLE** structure. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-``` syntax
+```
 0: kd> !usbkd.usb2tree
 ...
 2)!ehci_info ffffe00001ca11a0 !devobj ffffe00001ca1050 PCI: VendorId 8086 DeviceId 293c RevisionId 0002 
@@ -52,7 +52,7 @@ In the preceding output, the address of the device extension of the FDO is displ
 
 Either click the DML command or pass the address of the device extension to [**!usbhcdext**](https://msdn.microsoft.com/library/windows/hardware/dn367072) to get the device handle list.
 
-``` syntax
+```
 0: kd> !usbkd.usbhcdext ffffe00001ca11a0
 
 HC Flavor 1000  FDO ffffe00001ca1050
@@ -71,7 +71,7 @@ DeviceHandleDeletedList: !usblist ffffe00001ca23c8, DL [Empty]
 
 Now use the [**!usbkd.usblist**](-usbkd-usblist.md) command to get the addresses of **usbport!\_USBD\_DEVICE\_HANDLE** structures.
 
-``` syntax
+```
 0: kd> !usblist ffffe00001ca23b8, DL
 list: ffffe00001ca23b8 DL
 ----------
@@ -82,7 +82,7 @@ SSP [IdleReady] (0)
 
 In the preceding output, `ffffe000020f9590` is the address of a **\_USBD\_DEVICE\_HANDLE** structure. Pass this address to **!usbdevh**.
 
-``` syntax
+```
 0: kd> !usbkd.usbdevh ffffe000020f9590
 
 dt USBPORT!_USBD_DEVICE_HANDLE ffffe000020f9590

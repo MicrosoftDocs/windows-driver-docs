@@ -23,7 +23,7 @@ The **!amli ds** extension displays an AML stack.
 
 Syntax
 
-``` syntax
+```
     !amli ds [/v] [Address] 
 ```
 

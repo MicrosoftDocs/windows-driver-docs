@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbhubmddevext** command displays a **usbhub!\_DEVICE\_EXTENSION\_HUB** structure if one is present in a crash dump that was generated as a result of a [**Bug Check 0xFE**](bug-check-0xfe--bugcode-usb-driver.md).
 
-``` syntax
+```
 !usbkd.usbhubmddevext
 ```
 

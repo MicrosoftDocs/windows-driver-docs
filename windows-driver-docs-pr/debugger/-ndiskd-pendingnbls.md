@@ -21,8 +21,8 @@ api_type:
 
 The **!ndiskd.pendingnbls** extension displays pending NBLs ([**NET\_BUFFER\_LISTs**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-list-structure)) that are in transit.
 
-``` syntax
-    !ndiskd.pendingnbls [-handle <x>] [-fullstack] [-verbosity <x>] 
+```
+!ndiskd.pendingnbls [-handle <x>] [-fullstack] [-verbosity <x>] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -46,7 +46,7 @@ Examples
 
 **!ndiskd.pendingnbls** can be passed the handle of an NDIS miniport, filter, or open. The following series of examples use a miniport handle. To see a list of all miniports and their associated minidrivers, run the [**!ndiskd.netadapter**](-ndiskd-netadapter.md) extension with no parameters. In the following example output, look for the Microsoft Kernel Debug Network Adapter, whose handle is ffffe00bc3f701a0. Its minidriver's handle is ffffe00bc51b9ae0.
 
-```cmd
+```
 0: kd> !ndiskd.netadapter
     Driver             NetAdapter          Name                                 
     ffffe00bc6e12ae0   ffffe00bc6e4e1a0    Microsoft ISATAP Adapter #2
@@ -55,7 +55,7 @@ Examples
 
 To see the pending NBLs for a miniport, set a breakpoint on its minidriver's SendNetBufferListsHandler. Use the minidriver's handle to run the [**!ndiskd.minidriver -handle -handlers**](-ndiskd-minidriver.md) command to see a list of its handlers, then click the "bp" link to the right of the SendNetBufferListsHandler. You can alternatively enter the [**bp -handle**](bp--bu--bm--set-breakpoint-.md) command in the command line.
 
-```cmd
+```
 0: kd> !ndiskd.minidriver ffffe00bc51b9ae0 -handlers
 
 
@@ -86,7 +86,7 @@ HANDLERS
 
 After setting the breakpoint on the SendNetBufferListsHandler, enter the **g** command to let the debugee target machine run and hit the breakpoint.
 
-```cmd
+```
 0: kd> bp fffff80ae9611870
 0: kd> g
 Breakpoint 0 hit
@@ -100,7 +100,7 @@ The debugee target machine in this example was loading a web page when it hit th
 
  
 
-```cmd
+```
 0: kd> !ndiskd.pendingnbls ffffe00bc3f701a0
 
 PHASE 1/3: Found 20 NBL pool(s).                 

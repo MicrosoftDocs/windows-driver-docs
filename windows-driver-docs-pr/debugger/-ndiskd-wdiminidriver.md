@@ -25,8 +25,8 @@ For more information about WDI miniport drivers, see the [WDI Miniport Driver De
 
 For more information about WDI miniport driver reference, see [WDI Miniport Driver Reference](https://msdn.microsoft.com/library/windows/hardware/dn926075).
 
-``` syntax
-    !ndiskd.wdiminidriver [-handle <x>] [-pm] [-rcvfilter] 
+```
+!ndiskd.wdiminidriver [-handle <x>] [-pm] [-rcvfilter] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -50,7 +50,7 @@ Examples
 
 Run the **!ndiskd.wdiminidriver** extension with no parameters to see a list of all CMiniportDriver objects. In the following example, there is only one CMiniportDriver object. The handle of its WdiMiniDriver is ffffc804b8ce7c40.
 
-```cmd
+```
 1: kd> !ndiskd.wdiminidriver
     WdiMiniDriver      Name                                                     
     ffffc804b8ce7c40 - WDI MiniDriver
@@ -58,7 +58,7 @@ Run the **!ndiskd.wdiminidriver** extension with no parameters to see a list of 
 
 Click on the WdiMiniDriver's handle or enter the **!ndiskd.wdiminidriver -handle** command to see details for this WDI miniport driver.
 
-```cmd
+```
 1: kd> !ndiskd.wdiminidriver ffffc804b8ce7c40
 
 
@@ -78,7 +78,7 @@ WDI MINIPORT DRIVER
 
 Now you can click the "Handlers" link at the bottom of the WDI Miniport Driver's details, or you can use the handle to enter the **!ndiskd.wdiminidriver -handle -handlers** command, to see a list of all this WDI Miniport Driver's handlers.
 
-```cmd
+```
 1: kd> !ndiskd.wdiminidriver ffffc804b8ce7c40 -handlers
 
 

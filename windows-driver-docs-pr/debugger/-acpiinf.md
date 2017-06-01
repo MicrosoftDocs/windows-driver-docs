@@ -21,7 +21,7 @@ api_type:
 
 The **!acpiinf** extension displays information on the configuration of the Advanced Configuration and Power Interface (ACPI), including the location of system tables and the contents of the ACPI fixed feature hardware.
 
-``` syntax
+```
 !acpiinf
 ```
 

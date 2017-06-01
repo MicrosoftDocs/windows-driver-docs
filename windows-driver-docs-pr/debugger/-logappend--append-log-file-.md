@@ -21,7 +21,7 @@ api_type:
 
 The **.logappend** command appends a copy of the events and commands from the [Debugger Command window](debugger-command-window.md) to the specified log file.
 
-``` syntax
+```
 .logappend [/u] [FileName]
 ```
 

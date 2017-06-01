@@ -21,8 +21,8 @@ api_type:
 
 The **!ndiskd.ndisref** extension displays a debug log of a tracked reference count.
 
-``` syntax
-    !ndiskd.ndisref [-handle <x>] [-tagtype <str>] [-stacks] [-tag <str>] [-refdebug] 
+```
+!ndiskd.ndisref [-handle <x>] [-tagtype <str>] [-stacks] [-tag <str>] [-refdebug] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -52,7 +52,7 @@ Examples
 
 The following example passes the handle of an NDIS miniport driver to the **!ndiskd.ndisref** extension to display the refcount block for that driver. First, run [**!ndiskd.minidriver**](-ndiskd-minidriver.md) with no parameters to see a list of all miniport drivers on the system. In the example output below, look for the handle for the kdnic driver, ffffdf801418d650.
 
-```cmd
+```
 3: kd> !ndiskd.minidriver
     ffffdf8015a98380 - tunnel
     ffffdf801418d650 - kdnic
@@ -60,7 +60,7 @@ The following example passes the handle of an NDIS miniport driver to the **!ndi
 
 Using the miniport driver's handle, enter the **!ndiskd.ndisref -handle** command to see the refcount block for this miniport driver. The following example has the middle of the refcount block excised for brevity.
 
-```cmd
+```
 3: kd> !ndiskd.ndisref ffffdf801418d650
 
 

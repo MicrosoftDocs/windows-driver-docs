@@ -21,7 +21,7 @@ api_type:
 
 The **!vadump** extension displays all virtual memory ranges and their corresponding protection information.
 
-``` syntax
+```
     !vadump [-v] 
 ```
 

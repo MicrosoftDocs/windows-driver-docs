@@ -34,7 +34,7 @@ Debugging over a USB 2.0 cable requires the following hardware:
 2.  In UsbView, locate all of the host controllers that are compatible with the EHCI specification. For example, you could look for controllers that are listed as Enhanced.
 3.  In UsbView, expand the nodes of the EHCI host controllers. Look for an indication that a host controller supports debugging, and look for the number of the debug port. For example, UsbView displays this output for an EHCI host controller that supports debugging on port 1.
 
-    ``` syntax
+    ```
     Xxx xxx xxx USB2 Enhanced Host Controller - 293A
     ...
     Debug Port Number:  1
@@ -119,7 +119,7 @@ On the host computer, open a Command Prompt window and enter the following comma
 
 On some computers, USBView shows a debug-capable port, but does not show the port mapped to any physical USB connector. For example, USBView might show port 2 as the debug port number for an eHCI controller.
 
-``` syntax
+```
 ... USB Enhanced Host Controller ...
 ...
 Debug Port Number:  2
@@ -128,7 +128,7 @@ Bus.Device.Function (in decimal): 0.29.0
 
 Also, when you use USBView to look at the individual port, it is listed as debug-capable.
 
-``` syntax
+```
 [Port 2]
 Is Port User Connectiable: Yes
 Is Port Debug Capable: Yes

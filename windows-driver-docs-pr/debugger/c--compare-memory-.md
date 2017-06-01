@@ -21,7 +21,7 @@ api_type:
 
 The **c** command compares the values held in two memory areas.
 
-``` syntax
+```
 c Range Address 
 ```
 

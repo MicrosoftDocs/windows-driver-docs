@@ -21,7 +21,7 @@ api_type:
 
 The **!pfn** extension displays information about a specific page frame or the entire page frame database.
 
-``` syntax
+```
 !pfn PageFrame
 ```
 
@@ -63,7 +63,7 @@ The page frame number for a virtual address can be obtained by using the [**!pte
 
 Here is an example of the output from this extension:
 
-``` syntax
+```
 kd> !pte 801544f4
 801544F4  - PDE at C0300800        PTE at C0200550
           contains 0003B163      contains 00154121

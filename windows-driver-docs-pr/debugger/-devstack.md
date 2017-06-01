@@ -21,8 +21,8 @@ api_type:
 
 The **!devstack** extension displays a formatted view of the device stack associated with a device object.
 
-``` syntax
-    !devstack DeviceObject 
+```
+!devstack DeviceObject 
 ```
 
 ## <span id="ddk__devstack_dbg"></span><span id="DDK__DEVSTACK_DBG"></span>Parameters

@@ -21,7 +21,7 @@ api_type:
 
 The **!arbiter** extension displays the current system resource arbiters and arbitrated ranges.
 
-``` syntax
+```
 !arbiter [Flags] 
 ```
 

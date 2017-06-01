@@ -23,13 +23,13 @@ The CTRL+A key toggles the baud rate used in the kernel debugging connection.
 
 KD Syntax
 
-``` syntax
+```
 CTRL+A  ENTER 
 ```
 
 WinDbg Syntax
 
-``` syntax
+```
 CTRL+ALT+A 
 ```
 

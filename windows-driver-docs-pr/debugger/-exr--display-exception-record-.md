@@ -21,7 +21,7 @@ api_type:
 
 The **.exr** command displays the contents of an exception record.
 
-``` syntax
+```
 .exr Address 
 .exr -1
 ```

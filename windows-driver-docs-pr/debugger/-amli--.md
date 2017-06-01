@@ -23,7 +23,7 @@ The **!amli ?** extension displays some Help text in the Debugger Command window
 
 Syntax
 
-``` syntax
+```
 !amli ? [Command] 
 ```
 

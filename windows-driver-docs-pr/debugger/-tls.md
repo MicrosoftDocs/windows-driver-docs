@@ -21,7 +21,7 @@ api_type:
 
 The **!tls** extension displays a thread local storage (TLS) slot.
 
-``` syntax
+```
 !tls Slot [TEB]
 ```
 
@@ -60,7 +60,7 @@ Remarks
 
 Here is an example:
 
-``` syntax
+```
 0:000> !tls -1
 TLS slots on thread: c08.f54
 0x0000 : 00000000

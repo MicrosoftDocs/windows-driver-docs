@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfhelp** extension displays help information about all Wdfkd.dll extension commands.
 
-``` syntax
+```
 !wdfkd.wdfhelp
 ```
 

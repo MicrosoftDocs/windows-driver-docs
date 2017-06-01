@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfchildlist** extension displays a child list's state and information about all of the device identification descriptions that are in the child list.
 
-``` syntax
+```
 !wdfkd.wdfchildlist Handle 
 ```
 

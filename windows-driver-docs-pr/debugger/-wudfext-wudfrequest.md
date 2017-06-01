@@ -21,7 +21,7 @@ api_type:
 
 The **!wudfext.wudfrequest** extension displays information about an I/O request.
 
-``` syntax
+```
 !wudfext.wudfrequest pWDFRequest
 ```
 

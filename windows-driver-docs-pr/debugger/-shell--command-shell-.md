@@ -21,7 +21,7 @@ api_type:
 
 The **.shell** command launches a shell process and redirects its output to the debugger, or to a specified file.
 
-``` syntax
+```
 .shell [Options] [ShellCommand] 
 .shell -i InFile [-o OutFile [-e ErrFile]] [Options] ShellCommand
 ```
@@ -96,7 +96,7 @@ This command cannot be used while debugging CSRSS, because new processes cannot 
 
 You can use the -ci flag to run one or more debugger commands and then pass their output to a shell process. For example, you could pass the output from the [**!process 0 7**](-process.md) command to a Perl script by using the following command:
 
-``` syntax
+```
 0:000> .shell -ci "!process 0 7" perl.exe parsemyoutput.pl 
 ```
 

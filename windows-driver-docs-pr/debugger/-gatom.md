@@ -21,8 +21,8 @@ api_type:
 
 The **!gatom** extension displays the global atom table.
 
-``` syntax
-    !gatom 
+```
+!gatom 
 ```
 
 ## <span id="ddk__gatom_dbg"></span><span id="DDK__GATOM_DBG"></span>

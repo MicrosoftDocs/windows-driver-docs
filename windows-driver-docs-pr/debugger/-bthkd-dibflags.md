@@ -21,7 +21,7 @@ api_type:
 
 The **!bthkd.dibflags** command displays DEVICE\_INFO\_BLOCK.DibFlags dumps flags set in \_DEVICE\_INFO\_BLOCK.DibFlags.
 
-``` syntax
+```
 !bthkd.dibflags flags
 ```
 

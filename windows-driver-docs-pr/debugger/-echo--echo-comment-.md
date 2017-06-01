@@ -21,7 +21,7 @@ api_type:
 
 The **.echo** command displays a comment string.
 
-``` syntax
+```
 .echo String 
 .echo "String" 
 ```
@@ -65,7 +65,7 @@ The **.echo** command causes the debugger to display *String* immediately after 
 An **.echo** command is ended if the debugger encounters a semicolon (unless the semicolon occurs within a quoted string). This restriction enables you to use **.echo** in complex constructions such as [conditional breakpoints](setting-a-conditional-breakpoint.md), as the following example shows.
 
 ```
-0:000> bp `:143` "j (poi(MyVar)>5) &#39;.echo MyVar Too Big&#39;; &#39;.echo MyVar Acceptable; gc&#39; " 
+0:000> bp `:143` "j (poi(MyVar)>5) '.echo MyVar Too Big'; '.echo MyVar Acceptable; gc' " 
 ```
 
 The **.echo** command also provides an easy way for users of debugging servers and debugging clients to communicate with one another. For more information about this situation, see [Controlling a Remote Debugging Session](controlling-a-remote-debugging-session.md).

@@ -21,8 +21,8 @@ api_type:
 
 The **!errpkt** extension displays the contents of a Windows Hardware Error Architecture (WHEA) hardware error packet.
 
-``` syntax
-    !errpkt Address 
+```
+!errpkt Address 
 ```
 
 ## <span id="ddk__ubp_dbg"></span><span id="DDK__UBP_DBG"></span>Parameters

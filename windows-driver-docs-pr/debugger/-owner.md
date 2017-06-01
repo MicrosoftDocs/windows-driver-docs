@@ -21,7 +21,7 @@ api_type:
 
 The **!owner** extension displays the owner of a module or function.
 
-``` syntax
+```
 !owner [Module[!Symbol]]
 ```
 

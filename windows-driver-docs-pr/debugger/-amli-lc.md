@@ -23,7 +23,7 @@ The **!amli lc** extension lists all active ACPI contexts.
 
 Syntax
 
-``` syntax
+```
 !amli lc
 ```
 

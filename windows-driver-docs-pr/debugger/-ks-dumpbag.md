@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.dumpbag** extension displays the contents of the object bag for the specified object.
 
-``` syntax
-    !ks.dumpbag Object [Level]  
+```
+!ks.dumpbag Object [Level]  
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

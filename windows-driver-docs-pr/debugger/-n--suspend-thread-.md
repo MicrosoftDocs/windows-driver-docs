@@ -23,7 +23,7 @@ The **~n** command suspends execution of the specified thread.
 
 Do not confuse this command with the [**n (Set Number Base)**](n--set-number-base-.md) command.
 
-``` syntax
+```
 ~Thread n 
 ```
 

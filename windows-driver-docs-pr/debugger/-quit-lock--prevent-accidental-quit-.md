@@ -21,7 +21,7 @@ api_type:
 
 The **.quit\_lock** command sets a password to prevent you from accidentally ending the debugging session.
 
-``` syntax
+```
 .quit_lock /s NewPassword 
 .quit_lock /q Password 
 .quit_lock 

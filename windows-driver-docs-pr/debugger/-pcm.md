@@ -21,7 +21,7 @@ api_type:
 
 The **!pcm** extension displays the specified private cache map. This extension is only available in Windows 2000.
 
-``` syntax
+```
 !pcm Address
 ```
 

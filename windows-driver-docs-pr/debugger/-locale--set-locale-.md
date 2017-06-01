@@ -21,8 +21,8 @@ api_type:
 
 The **.locale** command sets the locale or displays the current locale.
 
-``` syntax
-    .locale [Locale] 
+```
+.locale [Locale] 
 ```
 
 ## <span id="ddk_meta_set_locale_dbg"></span><span id="DDK_META_SET_LOCALE_DBG"></span>Parameters

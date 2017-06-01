@@ -23,13 +23,13 @@ The CTRL+W key displays version information for the debugger and all loaded exte
 
 CDB / KD Syntax
 
-``` syntax
+```
 CTRL+W  ENTER 
 ```
 
 WinDbg Syntax
 
-``` syntax
+```
 CTRL+ALT+W 
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The **!bushnd** extension displays a HAL BUS\_HANDLER structure.
 
-``` syntax
+```
     !bushnd [Address] 
 ```
 

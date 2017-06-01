@@ -21,7 +21,7 @@ api_type:
 
 The **.symopt** command sets or displays the symbol options.
 
-``` syntax
+```
 .symopt+ Flags 
 .symopt- Flags 
 .symopt 

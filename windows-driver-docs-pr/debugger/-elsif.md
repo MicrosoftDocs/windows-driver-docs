@@ -21,7 +21,7 @@ api_type:
 
 The **.elsif** token behaves like the **else if** keyword combination in C.
 
-``` syntax
+```
 .if (Condition) { Commands } .elsif (Condition) { Commands } 
 
 .if (Condition) { Commands } .elsif (Condition) { Commands } .else { Commands } 

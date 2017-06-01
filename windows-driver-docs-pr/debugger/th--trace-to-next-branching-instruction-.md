@@ -23,14 +23,14 @@ The **th** command executes the program until it reaches any kind of branching i
 
 User-Mode
 
-``` syntax
+```
 [~Thread] th [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-``` syntax
-    th [r] [= StartAddress] [Count] 
+```
+th [r] [= StartAddress] [Count] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

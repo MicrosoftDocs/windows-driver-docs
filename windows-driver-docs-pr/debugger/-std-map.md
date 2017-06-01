@@ -21,7 +21,7 @@ api_type:
 
 The **!std\_map** extension displays the entries of a std::map tree.
 
-``` syntax
+```
 !std_map Address [Module!Type [TypeSize]]
 !std_map -?
 ```

@@ -21,7 +21,7 @@ api_type:
 
 The **!hstring2** extension displays an entire **HSTRING** including any embedded NULL characters in the string itself.
 
-``` syntax
+```
 !hstring2 Address
 ```
 

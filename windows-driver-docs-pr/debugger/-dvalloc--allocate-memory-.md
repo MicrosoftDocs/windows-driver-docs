@@ -21,8 +21,8 @@ api_type:
 
 The **.dvalloc** command causes Windows to allocate additional memory to the target process.
 
-``` syntax
-    .dvalloc [Options] Size 
+```
+.dvalloc [Options] Size 
 ```
 
 ## <span id="ddk_meta_allocate_memory_dbg"></span><span id="DDK_META_ALLOCATE_MEMORY_DBG"></span>Parameters

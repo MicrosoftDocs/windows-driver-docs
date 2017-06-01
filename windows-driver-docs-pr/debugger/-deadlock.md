@@ -21,7 +21,7 @@ api_type:
 
 The **!deadlock** extension displays information about deadlocks collected by the **Deadlock Detection** option of Driver Verifier.
 
-``` syntax
+```
 !deadlock 
 !deadlock 1
 ```
@@ -65,7 +65,7 @@ The **!deadlock 1** extension causes stack traces to be displayed. The stacks di
 
 Here is an example:
 
-``` syntax
+```
 0:kd> !deadlock
 
 Deadlock detected (2 resources in 2 threads):
@@ -84,7 +84,7 @@ This tells you which threads and which locks are involved. However, it is intend
 
 Use **!deadlock 1** to print out the contents of the call stacks at the time that each lock participating in the deadlock was acquired. Because these are run-time stack traces, they will be more complete if a checked build is being used. On a free build, they may be truncated after as little as one line.
 
-``` syntax
+```
 0:kd> !deadlock 1
 
 Deadlock detected (2 resources in 2 threads):
@@ -120,7 +120,7 @@ Thread 1 (8D903030) took locks in the following order:
 
 With this information, you have almost everything you need, except the current stack:
 
-``` syntax
+```
 0: kd> k
 ChildEBP RetAddr
 f78aae6c 80664c58 ntkrnlpa!DbgBreakPoint
@@ -136,7 +136,7 @@ f78aaff4 804b922b ntkrnlpa!KiRetireDpcList+0x5d
 
 From this you can see which locks were involved and where they were acquired. This should be enough information for you to debug the deadlock. If the source code is available, you can use the debugger to see exactly where the problem occurred:
 
-``` syntax
+```
 0: kd> .lines
 Line number information will be loaded
 

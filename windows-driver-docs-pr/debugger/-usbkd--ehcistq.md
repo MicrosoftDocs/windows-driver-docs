@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.\_ehcistq** command displays a **usbehci!\_HCD\_QUEUEHEAD\_DESCRIPTOR** structure.
 
-``` syntax
+```
 !usbkd._ehciep StructAddr
 ```
 

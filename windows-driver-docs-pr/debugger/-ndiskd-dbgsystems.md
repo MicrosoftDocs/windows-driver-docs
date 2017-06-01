@@ -24,7 +24,7 @@ The **!ndiskd.dbgsystems** extension displays and optionally changes the NDIS su
 **Warning**  
 **!ndiskd.dbgsystems** has been superceded by WPP (Windows software trace preprocessor) and Driver Verifier. !ndiskd will give you the following warning if your target system does not support **!ndiskd.dbgsystems**.
 
-```cmd
+```
 0: kd> !ndiskd.dbgsystems
     This target does not support tracing through !ndiskd.dbglevel or
     !ndiskd.dbgsystems.
@@ -33,7 +33,7 @@ The **!ndiskd.dbgsystems** extension displays and optionally changes the NDIS su
 
 If you click on the link at the bottom of the warning, !ndiskd will give you more information.
 
-```cmd
+```
 0: kd> !ndiskd.help wpptracing
     WPP traces are fast, flexible, and detailed.  Plus, starting with Windows 8
     and Windows Server 2012, you can automatically decode NDIS traces using the
@@ -56,8 +56,8 @@ For more information about Driver Verifier, see [Driver Verifier](https://msdn.m
 
 For more information about WMI tracing, see [WMI Tracing Extensions (Wmitrace.dll)](https://msdn.microsoft.com/library/windows/hardware/ff561362).
 
-``` syntax
-    !ndiskd.dbgsystems [-subsystem <any>] 
+```
+!ndiskd.dbgsystems [-subsystem <any>] 
 ```
 
 ## <span id="ddk__ndiskd_dbgsystems_dbg"></span><span id="DDK__NDISKD_DBGSYSTEMS_DBG"></span>Parameters

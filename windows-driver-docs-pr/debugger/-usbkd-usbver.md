@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbver** command displays the USBD interface version of the USB driver stack.
 
-``` syntax
+```
 !usbkd.usbver
 ```
 
@@ -40,7 +40,7 @@ Examples
 
 Here is an example of the output of **!usbkd.usbver**.
 
-``` syntax
+```
 1: kd> !usbkd.usbver
 
 USBD VER 600 USB stack is VISTA

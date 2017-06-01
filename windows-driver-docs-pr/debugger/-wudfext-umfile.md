@@ -21,7 +21,7 @@ api_type:
 
 The **!wudfext.umfile** extension displays information about a UMDF intra-stack file.
 
-``` syntax
+```
 !wudfext.umfile Address
 ```
 

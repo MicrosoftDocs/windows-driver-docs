@@ -21,7 +21,7 @@ api_type:
 
 The **.fiber** command specifies which fiber is used for the fiber context.
 
-``` syntax
+```
 .fiber [Address]
 ```
 

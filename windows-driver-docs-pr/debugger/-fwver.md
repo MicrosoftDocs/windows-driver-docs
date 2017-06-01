@@ -21,8 +21,8 @@ api_type:
 
 The **!fwver** extension displays the Itanium firmware version.
 
-``` syntax
-    !fwver 
+```
+!fwver 
 ```
 
 **Important**  This command has been deprecated in the Windows Debugger Version 10.0.14257 and later, and is no longer available.

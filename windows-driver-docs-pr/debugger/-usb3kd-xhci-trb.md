@@ -21,7 +21,7 @@ api_type:
 
 The [**!usb3kd.xhci\_trb**](-usb3kd-device-info.md) extension displays one or more transfer request blocks (TRBs) used by a USB 3.0 host controller
 
-``` syntax
+```
 !usb3kd.xhci_trb VirtualAddress Count
 !usb3kd.xhci_trb PhysicalAddress Count 1
 ```
@@ -56,7 +56,7 @@ Examples
 
 In the following example, **0x844d7c00** is the virtual address of a TRB. The **1** is the count, which specifies how many consecutive TRBs to display.
 
-```cmd
+```
 0: kd> !xhci_trb 0x844d7c00 1
 
         [  0] ISOCH        0x844d7c00 CycleBit 1 IOC 0 CH 1 BEI 0 InterrupterTarget 1 TransferLength  2688 TDSize  0 TBC 0 TLBPC 2 Frame 0x3D2
@@ -64,7 +64,7 @@ In the following example, **0x844d7c00** is the virtual address of a TRB. The **
 
 In the following example, **0x0dced7c00** is the physical address of a TRB. The **4** is the count, which specifies how many consecutive TRBs to display. The **1** specifies that the address is a physical address.
 
-```cmd
+```
 0: kd> !xhci_trb 0x0dced7c00 4 1
 
         [  0] ISOCH        0xdced7c00 CycleBit 1 IOC 0 CH 1 BEI 0 InterrupterTarget 1 TransferLength  2688 TDSize  0 TBC 0 TLBPC 2 Frame 0x3D2

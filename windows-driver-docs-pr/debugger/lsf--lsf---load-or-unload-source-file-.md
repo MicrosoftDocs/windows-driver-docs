@@ -21,7 +21,7 @@ api_type:
 
 The **lsf** and **lsf-** commands load or unload a source file.
 
-``` syntax
+```
 lsf Filename 
 lsf- Filename
 ```

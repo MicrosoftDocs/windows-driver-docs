@@ -21,7 +21,7 @@ api_type:
 
 The **!apicerr** extension displays the local Advanced Programmable Interrupt Controller (APIC) error log.
 
-``` syntax
+```
     !apicerr [Format] 
 ```
 

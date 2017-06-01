@@ -21,8 +21,8 @@ api_type:
 
 The **.eventlog** command displays the recent Microsoft Win32 debug events, such as module loading, process creation and termination, and thread creation and termination.
 
-``` syntax
-    .eventlog 
+```
+.eventlog 
 ```
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment

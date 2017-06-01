@@ -23,13 +23,13 @@ The **!wdfkd.wdflogdump** extension displays the WDF In-flight Recorder log reco
 
 KMDF
 
-``` syntax
+```
 !wdfkd.wdflogdump [DriverName][WdfDriverGlobals][-d | -f | -a LogAddress]
 ```
 
 UMDF
 
-``` syntax
+```
 !wdfkd.wdflogdump  [DriverName.dll][HostProcessId][-d | -f | -m]
 ```
 

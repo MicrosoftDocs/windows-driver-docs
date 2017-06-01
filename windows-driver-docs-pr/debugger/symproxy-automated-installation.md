@@ -69,31 +69,31 @@ regedit.exe /s symproxy.reg
 
 IF not exist %VirDirectory% mkdir %VirDirectory%
 
-rem Make the &#39;Default Web Site&#39;
+rem Make the 'Default Web Site'
 %windir%\system32\inetsrv\appcmd.exe add site -site.name:"Default Web Site" -bindings:"http/*:80:" -physicalPath:C:\inetpub\wwwroot
 
-rem Enabled Directory Browsing on the &#39;Default Web Site&#39;
+rem Enabled Directory Browsing on the 'Default Web Site'
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site" -section:system.webServer/directoryBrowse /enabled:"True"
 
-rem Make the &#39;SymProxy App Pool&#39;
+rem Make the 'SymProxy App Pool'
 %windir%\system32\inetsrv\appcmd.exe add apppool -apppool.name:SymProxyAppPool -managedRuntimeVersion:
 %windir%\system32\inetsrv\appcmd.exe set apppool -apppool.name:SymProxyAppPool -processModel.identityType:SpecificUser -processModel.userName:%UserName% -processModel.password:%Password% 
 
-rem Make the &#39;Symbols&#39; Virtual Directory and assign the &#39;SymProxy App Pool&#39;
+rem Make the 'Symbols' Virtual Directory and assign the 'SymProxy App Pool'
 %windir%\system32\inetsrv\appcmd.exe add app -site.name:"Default Web Site" -path:/Symbols -physicalpath:%VirDirectory%
 %windir%\system32\inetsrv\appcmd.exe set app -app.name:"Default Web Site/Symbols" -applicationPool:SymProxyAppPool
 
-rem Disable &#39;web.config&#39; for folders under virtual directories in the &#39;Default Web Site&#39;
-%windir%\system32\inetsrv\appcmd.exe set config -section:system.applicationHost/sites "/[name=&#39;Default Web Site&#39;].virtualDirectoryDefaults.allowSubDirConfig:false
+rem Disable 'web.config' for folders under virtual directories in the 'Default Web Site'
+%windir%\system32\inetsrv\appcmd.exe set config -section:system.applicationHost/sites "/[name='Default Web Site'].virtualDirectoryDefaults.allowSubDirConfig:false
 
-rem Add the &#39;SymProxy ISAPI Filter&#39;
-%windir%\system32\inetsrv\appcmd.exe set config -section:system.webServer/isapiFilters /+"[name=&#39;SymProxy&#39;,path=&#39;%windir%\system32\inetsrv\SymProxy.dll&#39;,enabled=&#39;True&#39;]
+rem Add the 'SymProxy ISAPI Filter'
+%windir%\system32\inetsrv\appcmd.exe set config -section:system.webServer/isapiFilters /+"[name='SymProxy',path='%windir%\system32\inetsrv\SymProxy.dll',enabled='True']
 
-rem Clear the MIME Types on the &#39;Default Web Site&#39;
+rem Clear the MIME Types on the 'Default Web Site'
 %windir%\system32\inetsrv\appcmd.exe set config -in "Default Web Site" < staticContentClear.xml
 
-rem Add * to the MIME Types of the &#39;Default Web Site&#39;
-%windir%\system32\inetsrv\appcmd.exe set config "Default Web Site" -section:staticContent /+"[fileExtension=&#39;.*&#39;,mimeType=&#39;application/octet-stream&#39;]"
+rem Add * to the MIME Types of the 'Default Web Site'
+%windir%\system32\inetsrv\appcmd.exe set config "Default Web Site" -section:staticContent /+"[fileExtension='.*',mimeType='application/octet-stream']"
 ```
 
 ## <span id="staticcontentclear.xml"></span><span id="STATICCONTENTCLEAR.XML"></span>staticContentClear.xml

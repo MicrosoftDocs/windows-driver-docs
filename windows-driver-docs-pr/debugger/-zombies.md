@@ -21,7 +21,7 @@ api_type:
 
 The **!zombies** extension displays all dead ("zombie") processes or threads.
 
-``` syntax
+```
 !zombies [Flags [RestartAddress]]
 ```
 

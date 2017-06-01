@@ -21,7 +21,7 @@ api_type:
 
 The **!bthkd.hciinterface** command displays the bthport!\_HCI\_INTERFACE structure.
 
-``` syntax
+```
 !bthkd.hciinterface
 ```
 

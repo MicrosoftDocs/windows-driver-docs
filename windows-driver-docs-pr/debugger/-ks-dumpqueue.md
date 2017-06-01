@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.dumpqueue** extension displays information about the queues associated with a given AVStream object, or the stream associated with a port class object.
 
-``` syntax
-    !ks.dumpqueue Object [Level] 
+```
+!ks.dumpqueue Object [Level] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

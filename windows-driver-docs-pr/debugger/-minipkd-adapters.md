@@ -21,8 +21,8 @@ api_type:
 
 The **!minipkd.adapters** extension displays all of the adapters that work with the SCSI Port driver that have been identified in the system, and the individual devices associated with each adapter.
 
-``` syntax
-    !minipkd.adapters 
+```
+!minipkd.adapters 
 ```
 
 ### <span id="DLL"></span><span id="dll"></span>DLL

@@ -23,7 +23,7 @@ The **!pmssa** extension displays a specified processor Minimal State Save Area 
 
 This extension can only be used with an Itanium-based target computer.
 
-``` syntax
+```
 !pmssa Address
 ```
 

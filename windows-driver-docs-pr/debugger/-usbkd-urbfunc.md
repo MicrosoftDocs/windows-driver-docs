@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.urbfunc** command displays the name of a URB function code.
 
-``` syntax
+```
 !usbkd.urbfunc FunctionCode
 ```
 
@@ -41,7 +41,7 @@ Examples
 
 Here is an example of the output of **!urbfunc**.
 
-``` syntax
+```
 0: kd> !usbkd.urbfunc 0xA
 
 URB_FUNCTION_ISOCH_TRANSFER (0xA)

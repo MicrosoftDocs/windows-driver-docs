@@ -23,14 +23,14 @@ The **tc** command executes the program until a call instruction is reached.
 
 User-Mode
 
-``` syntax
+```
 [~Thread] tc [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-``` syntax
-    tc [r] [= StartAddress] [Count] 
+```
+tc [r] [= StartAddress] [Count] 
 ```
 
 ## <span id="ddk_cmd_trace_to_next_call_dbg"></span><span id="DDK_CMD_TRACE_TO_NEXT_CALL_DBG"></span>Parameters

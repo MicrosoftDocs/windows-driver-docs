@@ -17,7 +17,7 @@ The Microsoft symbol server makes Windows debugger symbols publicly available.
 
 You can refer directly to the public symbol server in your symbol path in the following manner:
 
-``` syntax
+```
 set _NT_SYMBOL_PATH=srv*DownstreamStore*https://msdl.microsoft.com/download/symbols
 ```
 
@@ -25,7 +25,7 @@ set _NT_SYMBOL_PATH=srv*DownstreamStore*https://msdl.microsoft.com/download/symb
 
 To avoid typing this long symbol path, use the [**.symfix (Set Symbol Store Path)**](-symfix--set-symbol-store-path-.md) command. The following command appends the public symbol store to your existing symbol path:
 
-``` syntax
+```
 .symfix+ DownstreamStore 
 ```
 

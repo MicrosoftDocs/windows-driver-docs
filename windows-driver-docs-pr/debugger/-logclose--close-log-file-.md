@@ -21,7 +21,7 @@ api_type:
 
 The **.logclose** command closes any open log file.
 
-``` syntax
+```
     .logclose 
 ```
 

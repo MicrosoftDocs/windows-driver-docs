@@ -21,7 +21,7 @@ api_type:
 
 The **.enable\_unicode** command specifies whether the debugger displays USHORT pointers and arrays as Unicode strings.
 
-``` syntax
+```
 .enable_unicode 0 
 .enable_unicode 1
 ```

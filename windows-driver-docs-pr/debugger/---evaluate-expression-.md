@@ -1,6 +1,6 @@
 ---
 title: (Evaluate Expression)
-description: The question mark ( ) command evaluates and displays the value of an expression.Note � A question mark by itself ( ) displays command help.
+description: The question mark ( ) command evaluates and displays the value of an expression.Note � A question mark by itself ( ) displays command help.
 ms.assetid: fae689b3-47c9-44bd-992d-8344805fb4b7
 keywords: ["(Evaluate Expression) Windows Debugging"]
 ms.author: windowsdriverdev
@@ -25,7 +25,7 @@ The question mark (**?**) command evaluates and displays the value of an express
 
  
 
-``` syntax
+```
 ? Expression
 ```
 
@@ -82,7 +82,7 @@ Evaluate expression: 0 = 00000000
 0:001> ? $spat( "${AliasName}", "*name*" )
 Evaluate expression: 0 = 00000000
 0:001> ? $spat( "c:\dir\", "*filename*" )
-Syntax error at &#39;( "c:\dir\", "*filename*" )
+Syntax error at '( "c:\dir\", "*filename*" )
 ```
 
 In the first two examples, even though the string does match the pattern, the evaluator is returning a value of **FALSE**. In the third, the evaluator cannot make a comparison because the string ends in a backslash ( \\ ), and so the **\\"** is translated by the evaluator.

@@ -21,7 +21,7 @@ api_type:
 
 The **!can\_write\_kdump** extension verifies that there is enough disk space on the target computer to write a kernel dump file of the specified type.
 
-``` syntax
+```
 !can_write_kdump [-dn] [Options]
 ```
 
@@ -71,7 +71,7 @@ If no *Option* is specified, then the extension will determine if there is enoug
 
 In the following example, the file system is not specified:
 
-``` syntax
+```
 kd> !can_write_kdump
 Checking kernel summary dump...
 WARNING: Can't predict how many pages will be used, assuming worst-case.
