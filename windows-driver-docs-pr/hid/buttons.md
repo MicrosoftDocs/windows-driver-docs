@@ -56,6 +56,7 @@ Here are some general pointers to help you decide which implementation you shoul
 <td><p>If you are implementing a GPIO button, describe the button in the system ACPI so that Windows can load the in-box driver, Hidinterrupt.sys, as the button driver that reports events to the operating system.</p>
 <ul>
 <li>[ACPI button device](acpi-button-device.md)</li>
+<li>[Button Behavior](https://msdn.microsoft.com/en-us/library/windows/hardware/dn457871(v=vs.85).aspx)</li>
 <li>[Sample buttons ACPI for phone/tablet](acpi-button-device.md#acpi-button-phone)</li>
 <li>[Sample buttons ACPI for desktop](acpi-button-device.md#acpi-button-desktop)</li>
 </ul>
