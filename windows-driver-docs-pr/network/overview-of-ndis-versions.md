@@ -1,6 +1,6 @@
 ---
-title: NDIS Versions in Network Drivers
-description: NDIS Versions in Network Drivers
+title: Overview of NDIS versions
+description: Overview of NDIS versions
 ms.assetid: 6ecd4040-2831-4238-8080-97edc6a7c3ba
 keywords:
 - network drivers WDK , NDIS versions
@@ -14,7 +14,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# NDIS Versions in Network Drivers
+# Overview of NDIS versions
 
 
 ## <a href="" id="ddk-ndis-versions-ng"></a>
