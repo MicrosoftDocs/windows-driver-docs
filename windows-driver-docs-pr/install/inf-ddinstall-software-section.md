@@ -9,7 +9,7 @@ ms.technology: windows-devices
 
 # INF DDInstall.Software Section
 
-Each per-Models *DDInstall*.**Software** section contains one or more [INF AddSoftware directives](inf-addsoftware-directive.md) that reference additional INF-writer-defined sections in a software component INF file.  This section is supported for Windows 10 Version 1703 and later.
+Each per-Models *DDInstall*.**Software** section contains one or more [**INF AddSoftware directives**](inf-addsoftware-directive.md) that reference additional INF-writer-defined sections in a software component INF file.  This section is supported for Windows 10 Version 1703 and later.
 
 ```
 [install-section-name.Software] |
@@ -29,7 +29,7 @@ The software installation must be non-interactive.
 
 **AddSoftware**=*SoftwareName,[flags],software-install-section*
 
-This directive references an INF-writer-defined *software-install-section* elsewhere in the software component INF file.
+This directive references an INF-writer-defined *software-install-section* elsewhere in the software component INF file. For more information, see [**INF AddSoftware directive**](inf-addsoftware-directive.md).
 
 ## Remarks
 
