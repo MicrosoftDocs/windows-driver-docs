@@ -25,14 +25,18 @@ A Universal Windows driver calls only device driver interfaces (DDIs) that are p
 
 A Universal Windows driver can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the Windows Driver Model (WDM).
 
-## Requirements and Best Practices
+## Requirements
 
-Use the following recommendations when writing a universal driver:
+The following are required when writing a universal driver:
 
-*  Create a universal INF file for your driver.  For more info, and to review the list of INF sections and directives that are valid in universal drivers, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).
-*  Use the [InfVerif](../devtest/infverif.md) tool to verify that your driver's INF file is universal.
-*  Optionally, provide a UWP app that works with your device.  For info, see [Hardware access for Universal Windows Platform apps](../devapps/hardware-access-for-universal-windows-platform-apps.md).  In Windows 10, version 1703, the OEM needs to pre-load such an app.  Alternatively, users can manually download the app from the Windows Store.
-*  Use the ApiValidator tool to verify that the APIs your driver calls are valid for a universal driver.  For more info, see [Validating Universal Windows drivers](validating-universal-drivers.md).
+*  Create a universal INF file for your driver:
+        1.  Review the list of INF sections and directives that are valid in universal drivers in [Using a Universal INF File](../install/using-a-universal-inf-file.md).
+        2.  Use the [InfVerif](../devtest/infverif.md) tool to verify that your driver's INF file is universal.
+*  Use the ApiValidator tool to verify that the APIs your driver calls are valid for a universal driver.  See [Validating Universal Windows drivers](validating-universal-drivers.md).
 
-<!--add other links from OneNote-->
+## Best Practices
 
+Use the following optional best practices:
+
+*  If your INF performs any custom setup actions that depend on the target platform, consider separating these out into an extension INF.  You can update an extension INF independently from the base INF, so servicing is easier.  See [Using an Extension INF File](../install/creating-an-extensible-inf-file.md).
+*  Provide a UWP app that works with your device.  For details, see [Hardware access for Universal Windows Platform apps](../devapps/hardware-access-for-universal-windows-platform-apps.md).  In Windows 10, version 1703, the OEM needs to pre-load such an app.  Alternatively, users can manually download the app from the Windows Store.
