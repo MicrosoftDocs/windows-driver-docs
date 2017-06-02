@@ -39,19 +39,19 @@ For the most up-to-date information about the Code Analysis tool, Static Driver 
 
 You can also create the driver verification log from a Visual Studio Command Prompt window. Set up the environment by running one of the following batch files.
 
-``` syntax
+```
 "C:\Program Files\Microsoft Visual Studio 11.0\VC\vcvarsall.bat" x64
 ```
 
 -Or-
 
-``` syntax
+```
 "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\vcvarsall.bat" x64
 ```
 
 Create the driver verification log.
 
-``` syntax
+```
 msbuild.exe <vcxprojectfile> /target:dvl /p:Configuration="Win8 Release" /P:Platform=x64
 ```
 

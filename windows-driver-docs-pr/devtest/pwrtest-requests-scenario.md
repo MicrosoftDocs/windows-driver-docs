@@ -21,7 +21,7 @@ You could also use the administrator tool [PowerCfg](http://go.microsoft.com/fwl
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 pwrtest /requests [/t:n] [/?] 
 ```
 
@@ -30,11 +30,11 @@ Specifies the total time (in minutes) for the scenario to run (the default value
 
 **Examples**
 
-``` syntax
+```
 pwrtest /requests  
 ```
 
-``` syntax
+```
 pwrtest /requests  /t:60
 ```
 

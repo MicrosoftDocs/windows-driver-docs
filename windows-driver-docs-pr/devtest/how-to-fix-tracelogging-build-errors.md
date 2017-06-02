@@ -33,7 +33,7 @@ Include windows.h before including TraceLoggingProvider.h in your source file.
 <span id="Build_Error__snippet__"></span><span id="build_error__snippet__"></span><span id="BUILD_ERROR__SNIPPET__"></span>Build Error (snippet):  
 After copying the TraceLogging header files into your build environment and adding this line:
 
-``` syntax
+```
 TraceLoggingRegisterByGuid(g_3DBuilderTraceProvider, &s_3DBuilderTraceProviderGuid);
 ```
 

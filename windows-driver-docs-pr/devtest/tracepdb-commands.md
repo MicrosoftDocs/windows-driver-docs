@@ -24,7 +24,7 @@ To use Tracepdb, type the commands in a Command Prompt window. The following syn
 
 Use the following parameters to specify the location of the PDB files.
 
-``` syntax
+```
     tracepdb [-f PDBFiles] [-s] [-p TMFDirectory] [-v] [-c]
 
    
@@ -32,7 +32,7 @@ Use the following parameters to specify the location of the PDB files.
 
 Use the following parameters to specify an image file for the [trace provider](trace-provider.md).
 
-``` syntax
+```
     tracepdb -i ImageFiles [-r SymbolPaths] [-p TMFDiretory]  [-v]
 
    

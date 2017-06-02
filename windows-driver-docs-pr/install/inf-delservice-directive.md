@@ -26,7 +26,7 @@ ms.technology: windows-devices
 
 A **DelService** directive is used in a [***DDInstall*.Services**](inf-ddinstall-services-section.md) section to remove one or more previously installed device/driver services from the target computer.
 
-``` syntax
+```
 [DDInstall.Services] 
  
 DelService=ServiceName[,[flags][,[EventLogType][,EventName]]

@@ -26,7 +26,7 @@ Tracelog has commands (or actions) that start, stop, and control a [trace sessio
 
  
 
-``` syntax
+```
     tracelog [actions] [options] | [-h | -help | -?]
 
    

@@ -32,7 +32,7 @@ get-winevent -providername "Windows Error Reporting" | where-object {$_.Message 
 
 The following is a sample UMDF WER report of type **WUDFHostProblem**. It was obtained from the ReportQueue directory described above. If you use PowerShell to retrieve the reports, the fields may be labeled P0, P1, P2 instead of Sig\[0\], Sig\[1\], Sig\[2\]. Otherwise, the fields are the same and contain the same possible values. This sample was generated from one of the WDK samples that use the OSR USB-FX2 hardware reference board.
 
-``` syntax
+```
 Sig[0].Name=EventClass
 Sig[0].Value=HostProblem
 Sig[1].Name=Problem

@@ -26,7 +26,7 @@ To run PnPUtil, open a Command Prompt window (**Run as Administrator**) and type
 
  
 
-``` syntax
+```
     PnPUtil [/a [/i] InfFileName] [/d [/f] PublishedInfFileName] [/e] [/?] 
 ```
 

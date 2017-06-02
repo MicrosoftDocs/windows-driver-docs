@@ -33,7 +33,7 @@ The following example shows how the edit metadata in the .vcxproj file.
 
 The following example shows the command-line invocation:
 
-``` syntax
+```
 stampinf.exe –a "x86" a.inf
 stampinf.exe b.inf
 ```

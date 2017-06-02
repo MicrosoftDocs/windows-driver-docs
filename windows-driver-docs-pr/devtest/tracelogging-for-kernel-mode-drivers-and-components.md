@@ -40,13 +40,13 @@ To use the TraceLogging API, include the TraceLogging header file TraceLoggingPr
 
 1.  Add the [**TRACELOGGING\_DECLARE\_PROVIDER**](https://msdn.microsoft.com/library/windows/desktop/dn904623) macro to declare the provider handle variable. The macro has the syntax:
 
-    ``` syntax
+    ```
     TRACELOGGING_DECLARE_PROVIDER(hProviderVariableName)
     ```
 
     The following example TraceLogging statement declares the variable named *g\_hProvider*.
 
-    ``` syntax
+    ```
     TRACELOGGING_DECLARE_PROVIDER(g_hProvider);
     ```
 
@@ -58,13 +58,13 @@ To use the TraceLogging API, include the TraceLogging header file TraceLoggingPr
 
 2.  Add the [**TRACELOGGING\_DEFINE\_PROVIDER**](https://msdn.microsoft.com/library/windows/desktop/dn904624) macro, and specify a name for the trace provider and the trace provider handle. The handle is the variable you declared in step 1. The syntax of the macro is:
 
-    ``` syntax
+    ```
     TRACELOGGING_DEFINE_PROVIDER(hProviderVariableName, "ProviderName", providerId [,option])
     ```
 
     For example, the following statement defines a provider called MyTraceLoggingProviderKM and assigns it to the handle g\_hProvider. The providerId parameter is the ETW provider GUID.
 
-    ``` syntax
+    ```
     TRACELOGGING_DEFINE_PROVIDER(g_hProvider, "MyTraceLoggingProviderKM", 
         (0xb3864c38, 0x4273, 0x58c5, 0x54, 0x5b, 0x8b, 0x36, 0x08, 0x34, 0x34, 0x71));
     ```
@@ -106,7 +106,7 @@ TraceLogging provides macros for logging events.
 
 The basic macro is [**TraceLoggingWrite**](https://msdn.microsoft.com/library/windows/desktop/dn904617). This macro has the following syntax:
 
-``` syntax
+```
 TraceLoggingWrite(g_hProvider, "EventName", args...)
 ```
 

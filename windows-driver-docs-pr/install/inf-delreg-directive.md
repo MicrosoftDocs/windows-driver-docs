@@ -26,7 +26,7 @@ ms.technology: windows-devices
 
 A **DelReg** directive references one or more INF-writer-defined sections describing keys and/or value entries to be removed from the registry.
 
-``` syntax
+```
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -39,7 +39,7 @@ DelReg=del-registry-section[,del-registry-section]...
 
 Each *del-registry-section* referenced by a **DelReg** directive has the following form:
 
-``` syntax
+```
 [del-registry-section]
 reg-root-string,subkey[,value-entry-name][,flags][,value]
 reg-root-string,subkey[,value-entry-name][,flags][,value]
@@ -124,13 +124,13 @@ Each *del-registry-section* name must be unique to the INF file, but it can be r
 
 With operating system versions prior to Windows XP, the only way to delete a key is by specifying the following:
 
-``` syntax
+```
 reg-root-string, subkey
 ```
 
 For Windows XP and later versions of Windows, the following is also permitted (to specify the 32-bit registry):
 
-``` syntax
+```
 reg-root-string, subkey,,0x4000
 ```
 

@@ -26,7 +26,7 @@ ms.technology: windows-devices
 
 A **DelFiles** directive references an INF-writer-defined section elsewhere in the INF file, and causes that list of files to be deleted in the context of operations on the section in which the referring **DelFiles** directive is specified.
 
-``` syntax
+```
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -44,7 +44,7 @@ A **DelFiles** directive can be specified within any of the sections shown in th
 
 Each named section referenced by a **DelFiles** directive has one or more entries of the following form:
 
-``` syntax
+```
 [file-list-section]
  
 destination-file-name[,,,flag]

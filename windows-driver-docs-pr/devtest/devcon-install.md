@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Creates a new, root-enumerated devnode for a non-Plug and Play device and installs its supporting software. Valid only on the local computer.
 
-``` syntax
+```
     devcon [/r] install INFfile HardwareID 
 
    

@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 BinPlace uses the following syntax at the command line:
 
-``` syntax
+```
     binplace [Options] File [ [Options] [@PlaceFile] File [...] ]
 
    

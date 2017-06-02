@@ -25,7 +25,7 @@ For information about using the utility, see [Converting a WDK sources file to a
 
 The Nmake2MsBuild.exe utility has the following syntax:
 
-``` syntax
+```
 NMake2MSBuild.exe  < sources [<sources>...] | dirs >
                           [-Name:<Name of output project>]
                           [-Package:<Path to package project file to generate>]
@@ -102,7 +102,7 @@ To build a driver project that was built with a previous version of the WDK (usi
 
 For example, to convert a driver that was previously built with the Windows 7 WDK, called MyDriver, you first open a **Visual Studio Command Prompt** window. Browse to the directory or supply the path to the directory that contains the *sources* or *dirs* build configuration file. For example, the following command generates the MyDriver.Vcxproj file in the same folder as the *sources* file.
 
-``` syntax
+```
 nmake2msbuild.exe  .\myDriver\sources
 ```
 

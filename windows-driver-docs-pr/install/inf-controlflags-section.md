@@ -26,7 +26,7 @@ ms.technology: windows-devices
 
 A **ControlFlags** section identifies devices for which Windows should take certain unique actions during installation.
 
-``` syntax
+```
 [ControlFlags]
 
 ExcludeFromSelect=* | 

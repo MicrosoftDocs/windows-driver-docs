@@ -19,7 +19,7 @@ Starting in Windows 8, the operating system includes a security identifier (SID
 
 The SID for UMDF drivers is SDDL\_USER\_MODE\_DRIVERS, and the definition is in sddl.h. The full representation of this SID is:
 
-``` syntax
+```
 S-1-5-84-0-0-0-0-0
 ```
 
@@ -34,13 +34,13 @@ In the INF file, you can use either the abbreviated form or the fully specified 
 
 The abbreviated form is available starting in Windows 8:
 
-``` syntax
+```
 HKR,,Security,,"D:P(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;UD)"   
 ```
 
 On operating systems earlier than Windows 8, you must use the fully specified form:
 
-``` syntax
+```
 HKR,,Security,,"D:P(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;S-1-5-84-0-0-0-0-0)"       
 ```
 

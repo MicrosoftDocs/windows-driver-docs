@@ -19,7 +19,7 @@ This scenario is primarily used for Windows 7 device power activity, subsequent 
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 pwrtest /device  [/t:n] [/?] 
 ```
 
@@ -28,11 +28,11 @@ Specifies the total time (in minutes) for the scenario to run (the default value
 
 **Examples**
 
-``` syntax
+```
 pwrtest /device /t:60
 ```
 
-``` syntax
+```
 pwrtest /device
 ```
 

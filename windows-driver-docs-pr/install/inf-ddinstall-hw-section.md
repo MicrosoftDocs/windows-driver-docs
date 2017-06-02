@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 *DDInstall***.HW** sections are typically used for installing multifunction devices, for installing PnP filter drivers, and for setting up any user-accessible device-specific but driver-independent information in the registry, whether with explicit [**AddReg**](inf-addreg-directive.md) directives or with **Include** and **Needs** entries.
 
-``` syntax
+```
 [install-section-name.HW] |
 [install-section-name.nt.HW] |
 [install-section-name.ntx86.HW] |

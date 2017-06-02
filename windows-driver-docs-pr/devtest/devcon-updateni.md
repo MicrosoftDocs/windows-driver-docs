@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Forcibly replaces the current device drivers with drivers listed in the specified INF file without prompting the user for information or confirmation. Valid only on the local computer.
 
-``` syntax
+```
     devcon [/r] updateni INFfile HardwareID 
 
    

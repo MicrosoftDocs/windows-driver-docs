@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Each per-Models *DDInstall***.Services** section contains one or more [**INF AddService directives**](inf-addservice-directive.md) that reference additional INF-writer-defined sections in an INF file.
 
-``` syntax
+```
 [install-section-name.Services] |
 [install-section-name.nt.Services] |
 [install-section-name.ntx86.Services] |

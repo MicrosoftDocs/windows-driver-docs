@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Use a **TraceView -parsepdb** command to create [trace message format files](trace-message-format-file.md) from data in a [PDB symbol file](pdb-symbol-files.md).
 
-``` syntax
+```
     traceview -parsepdb PDBfile [-p TMFPath] 
 
    

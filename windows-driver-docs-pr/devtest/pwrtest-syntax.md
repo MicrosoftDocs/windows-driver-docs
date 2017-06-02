@@ -16,7 +16,7 @@ You run PwrTest from a Command Prompt window. You can select and configure [PwrT
 
 The syntax for the PwrTest tool is:
 
-``` syntax
+```
 pwrtest /scenario [/scenario_options] [/common_options]
 ```
 
@@ -62,15 +62,15 @@ For example: **pwrtest.exe /sleep /?**
 
 **Examples**
 
-``` syntax
+```
 pwrtest /?  
 ```
 
-``` syntax
+```
 pwrtest /requests  /?
 ```
 
-``` syntax
+```
 pwrtest /requests  /t:60
 ```
 

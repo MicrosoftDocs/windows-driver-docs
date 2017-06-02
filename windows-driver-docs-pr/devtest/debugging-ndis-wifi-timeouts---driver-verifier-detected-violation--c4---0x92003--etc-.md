@@ -28,7 +28,7 @@ When Driver Verifier is testing a NDIS/WIFI time-out rule, such as [**NdisTimedO
 
 As with any bug check that occurs, once you have control of the debugger, the best first step is to run the [**!analyze -v**](https://msdn.microsoft.com/library/windows/hardware/ff562112) command.
 
-``` syntax
+```
 DRIVER_VERIFIER_DETECTED_VIOLATION (c4)
 A device driver attempting to corrupt the system has been caught.  This is
 because the driver was specified in the registry as being suspect (by the
@@ -44,7 +44,7 @@ Arg4: 9c1f3480, Address of supplemental states (third argument to !ruleinfo).
 
 In the following section of the **!analyze -v** output, the reason why the rule was violated under is shown under the DV\_VIOLATED\_CONDITION field. The DV\_MSDN\_LINK section is also useful to pull up a link to documentation on this rule.
 
-``` syntax
+```
 ## Debugging Details:
 
 
@@ -68,7 +68,7 @@ FAULTING_MODULE: 9fee1000 NdisTimedOidComplete
 
 Further down this analysis output, you can click on the link under the DV\_RULE\_INFO section for additional rule descriptions. For time-out type of rules, the current stack might not contain relevant information.
 
-``` syntax
+```
 DV_RULE_INFO: 0x92003
 
 BUGCHECK_STR:  0xc4_NdisTimedOidComplete_XDV
@@ -103,7 +103,7 @@ STACK_TEXT:
 
 The **DV\_RULE\_INFO:** field of the **!analyze** output shows a link to the command you can use to find more information about this rule violation. For this example, if you click the link, it runs the [**!ruleinfo**](https://msdn.microsoft.com/library/windows/hardware/dn265374) command with the RULE\_ID (0x92003) the Arg3 and Arg 4 bug check values.
 
-``` syntax
+```
 kd> !ruleinfo 0x92003 0xffffffff9c17b860 0xffffffff9c1f3480
 
 RULE_ID: 0x92003
@@ -131,7 +131,7 @@ RULE_STATE: 0x9C1F3480
 
 In the example we are using here, the miniport driver, NdisTimedOidComplete.sys, has a sleep cycle injected into its *MPOidRequest* function. We can check by clicking on the LAST\_CALL\_STACK link in the [**!ruleinfo**](https://msdn.microsoft.com/library/windows/hardware/dn265374) output. This is the last call stack seen by Driver Verifier, where we see that NDIS called *ndisMInvokeOidRequest* before the time out occurred.
 
-``` syntax
+```
 kd> dps 0x9C1F3480 + 0x10
 9c1f3490  850e1e37 ndis!ndisMInvokeOidRequest+0x16641
 9c1f3494  850765c8 ndis!ndisMDoOidRequest+0x24a

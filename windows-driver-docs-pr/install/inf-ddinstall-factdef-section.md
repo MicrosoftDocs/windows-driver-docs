@@ -26,7 +26,7 @@ ms.technology: windows-devices
 
 This section should be used in an INF for any manually installed non-PnP device that an end-user might install. This section specifies the factory-default hardware configuration settings, such as the bus-relative I/O ports and IRQ (if any), for such a card.
 
-``` syntax
+```
 [install-section-name.FactDef] |
 [install-section-name.nt.FactDef] | 
 [install-section-name.ntx86.FactDef] | 
@@ -68,7 +68,7 @@ Specifies the bus-relative DMA channel as a decimal number. *DMAattrs* is option
 <a href="" id="ioconfig-io-range"></a>**IOConfig=***io-range*  
 Specifies the I/O port range for the device in the following form:
 
-``` syntax
+```
 start-end[([decode-mask][:alias-offset][:attr])]
 ```
 
@@ -99,7 +99,7 @@ Specifies the letter **M** if the specified range is in system memory. If omitte
 <a href="" id="memconfig-mem-range"></a>**MemConfig=***mem-range*  
 Specifies the memory range for the device in the following form:
 
-``` syntax
+```
 start-end[(attr)]
 ```
 

@@ -22,7 +22,7 @@ To view all the messages displayed by ApiValidator, navigate to **Tools &gt; Opt
 
 For the umdf2\_fx2 driver sample, API validation errors look this:
 
-``` syntax
+```
 Warning  1   warning : API DecodePointer in kernel32.dll is not supported. osrusbfx2um.dll calls this API.   C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2_fx2\driver\ApiValidator.exe    osrusbfx2um
 Warning 2   warning : API DisableThreadLibraryCalls in kernel32.dll is not supported. osrusbfx2um.dll calls this API.   C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2_fx2\driver\ApiValidator.exe    osrusbfx2um
 Warning 3   warning : API EncodePointer in kernel32.dll is not supported. osrusbfx2um.dll calls this API.   C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2_fx2\driver\ApiValidator.exe    osrusbfx2um
@@ -61,7 +61,7 @@ For example, to verify the APIs called by the Activity sample in the WDK, first 
 
 The command produces the following output:
 
-``` syntax
+```
 ApiValidator.exe: Warning: API DecodePointer in kernel32.dll is not supported. osrusbfx2um.dll calls this API.
 ApiValidator.exe: Warning: API DisableThreadLibraryCalls in kernel32.dll is not supported. osrusbfx2um.dll calls this API.
 ApiValidator.exe: Warning: API EncodePointer in kernel32.dll is not supported. osrusbfx2um.dll calls this API.
@@ -82,7 +82,7 @@ The XML files that enumerate the valid APIs for Universal Windows drivers are lo
 
 If ApiValidator.exe outputs an incorrect format error such as the following:
 
-``` syntax
+```
 Error      1              error : AitStatic output file has incorrect format or analysis run on incorrect file types.     C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2_fx2\driver\ApiValidator.exe            osrusbfx2um
 ```
 
@@ -90,7 +90,7 @@ Use this workaround:
 
 1.  Open Project properties, navigate to **General**, and rename **Output Directory** to the following:
 
-    ``` syntax
+    ```
     $(SolutionDir)$(Platform)\$(ConfigurationName)\
     ```
 

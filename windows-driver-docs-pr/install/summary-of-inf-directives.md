@@ -105,7 +105,7 @@ This rarely used directive references one or more *ini-to-registry-section*s spe
 
 The sections under which any of the directives in the previous list can be specified is system-determined. The basic form of each directive is shown in the formal syntax of the reference for each section, as for example:
 
-``` syntax
+```
 [DDInstall] | [DDInstall.HW] | [DDInstall.CoInstallers] | 
 [ClassInstall32] | [ClassInstall32.ntx86] | [ClassInstall32.ntia64] | [ClassInstall32.ntamd64]
 

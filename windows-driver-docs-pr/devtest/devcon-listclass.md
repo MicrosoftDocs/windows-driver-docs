@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Lists all devices in the specified device setup classes. Valid on local and remote computers.
 
-``` syntax
+```
     devcon [/m:\\computer] listclass class [class...] 
 
    
