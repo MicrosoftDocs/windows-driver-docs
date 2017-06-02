@@ -64,8 +64,6 @@ Add the following compiler settings to the Visual Studio project for your driver
 
 For information on building a driver with the Windows 10, version 1703 release of the WDK, see [Building a Driver](../develop/building-a-driver.md).
 
-For information on converting an driver's build files to a Visual Studio project , see [Creating a Driver From Existing Source Files](../develop/creating-a-driver-from-existing-source-files.md).
-
 ## Using NDIS 6.70 driver data structures
 
 ### NIC drivers
