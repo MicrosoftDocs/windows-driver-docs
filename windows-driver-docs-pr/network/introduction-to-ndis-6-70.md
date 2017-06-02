@@ -36,7 +36,7 @@ The following network driver features have been deprecated along with the releas
 
 ### NIC drivers
 
-The NDIS miniport driver model has been superceded by the NetAdapterCx NIC driver model in NDIS 6.70. For more information about implementing a NIC driver with the NetAdapterCx, see [NetAdapterCx](../netcx/index.md).
+The NDIS miniport driver model has been superseded by the NetAdapterCx NIC driver model in NDIS 6.70. For more information about implementing a NIC driver with the NetAdapterCx, see [NetAdapterCx](../netcx/index.md).
 
 ### Protocol, filter, and intermediate drivers
 
@@ -52,7 +52,7 @@ In addition, an NDIS 6.70 driver must be compliant with the following requiremen
 
 ### NIC drivers
 
-The NDIS miniport driver model has been superceded by the NetAdapterCx NIC driver model in NDIS 6.70. For more information about compiling a NIC driver with the NetAdapterCx, see [Porting NDIS miniport drivers to NetAdapter Class Extension (Compilation settings)](../netcx/porting-ndis-to-netadapter-cx.md#compilation-settings).
+The NDIS miniport driver model has been superseded by the NetAdapterCx NIC driver model in NDIS 6.70. For more information about compiling a NIC driver with the NetAdapterCx, see [Porting NDIS miniport drivers to NetAdapter Class Extension (Compilation settings)](../netcx/porting-ndis-to-netadapter-cx.md#compilation-settings).
 
 ### Protocol, and filter drivers
 
@@ -70,7 +70,7 @@ For information on converting an driver's build files to a Visual Studio project
 
 ### NIC drivers
 
-The NDIS miniport driver model has been superceded by the NetAdapterCx NIC driver model in NDIS 6.70. For more information about NetAdapterCx data structures, see [NetAdapterCx](../netcx/index.md).
+The NDIS miniport driver model has been superseded by the NetAdapterCx NIC driver model in NDIS 6.70. For more information about NetAdapterCx data structures, see [NetAdapterCx](../netcx/index.md).
 
 ### Protocol, filter, and intermediate drivers
 
