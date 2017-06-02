@@ -1,5 +1,5 @@
 ---
-title: Porting NDIS 6.x Drivers to NDIS 6.60
+title: Porting NDIS 6.x drivers to NDIS 6.60
 description: NDIS 6.60 is substantially the same as NDIS 6.50. For detailed information about new features for NDIS 6.60, see Introduction to NDIS 6.60.
 ms.assetid: EEDB1D20-BF50-4970-ACCB-FA289C8A7065
 ms.author: windowsdriverdev
@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Porting NDIS 6.x Drivers to NDIS 6.60
+# Porting NDIS 6.x drivers to NDIS 6.60
 
 NDIS 6.60 is substantially the same as NDIS 6.50. For detailed information about new features for NDIS 6.60, see [Introduction to NDIS 6.60](introduction-to-ndis-6-60.md).
 

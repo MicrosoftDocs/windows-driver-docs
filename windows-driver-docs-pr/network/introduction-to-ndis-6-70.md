@@ -1,6 +1,6 @@
 ---
 title: Introduction to NDIS 6.70
-description: This section introduces NDIS 6.70 and describes changes from NDIS 6.60. NDIS 6.70 is included in Windows 10, version 1703 and later.
+description: This section introduces NDIS 6.70 and describes changes from NDIS 6.60. NDIS 6.70 is included in Windows 10, version 1703.
 ms.assetid: D846EE68-2C84-40E0-91DE-2034F75D576F
 ms.author: windowsdriverdev
 ms.date: 06/01/2017
@@ -11,7 +11,7 @@ ms.technology: windows-devices
 
 # Introduction to NDIS 6.70
 
-This topic introduces Network Driver Interface Specification (NDIS) 6.70 and describes its major design additions. NDIS 6.70 is included in Windows 10, version 1703 and later.
+This topic introduces Network Driver Interface Specification (NDIS) 6.70 and describes its major design additions. NDIS 6.70 is included in Windows 10, version 1703.
 
 NDIS 6.70 is a minor version update to NDIS 6.60. For more information about porting NDIS 6.x drivers to NDIS 6.70, see [Porting NDIS 6.x drivers to NDIS 6.70](porting-ndis-6-x-drivers-to-ndis-6-70.md).
 
@@ -36,7 +36,7 @@ The following network driver features have been deprecated along with the releas
 
 ### NIC drivers
 
-The NDIS miniport driver model has been superceded by the NetAdapterCx NIC driver model in NDIS 6.70 and later. For more information about implementing a NIC driver with the NetAdapterCx, see [NetAdapterCx](../netcx/index.md).
+The NDIS miniport driver model has been superceded by the NetAdapterCx NIC driver model in NDIS 6.70. For more information about implementing a NIC driver with the NetAdapterCx, see [NetAdapterCx](../netcx/index.md).
 
 ### Protocol, filter, and intermediate drivers
 
@@ -52,7 +52,7 @@ In addition, an NDIS 6.70 driver must be compliant with the following requiremen
 
 ### NIC drivers
 
-The NDIS miniport driver model has been superceded by the NetAdapterCx NIC driver model in NDIS 6.70 and later. For more information about compiling a NIC driver with the NetAdapterCx, see [Porting NDIS miniport drivers to NetAdapter Class Extension (Compilation settings)](../netcx/porting-ndis-to-netadapter-cx.md#compilation-settings).
+The NDIS miniport driver model has been superceded by the NetAdapterCx NIC driver model in NDIS 6.70. For more information about compiling a NIC driver with the NetAdapterCx, see [Porting NDIS miniport drivers to NetAdapter Class Extension (Compilation settings)](../netcx/porting-ndis-to-netadapter-cx.md#compilation-settings).
 
 ### Protocol, and filter drivers
 
@@ -70,7 +70,7 @@ For information on converting an driver's build files to a Visual Studio project
 
 ### NIC drivers
 
-The NDIS miniport driver model has been superceded by the NetAdapterCx NIC driver model in NDIS 6.70 and later. For more information about NetAdapterCx data structures, see [NetAdapterCx](../netcx/index.md).
+The NDIS miniport driver model has been superceded by the NetAdapterCx NIC driver model in NDIS 6.70. For more information about NetAdapterCx data structures, see [NetAdapterCx](../netcx/index.md).
 
 ### Protocol, filter, and intermediate drivers
 

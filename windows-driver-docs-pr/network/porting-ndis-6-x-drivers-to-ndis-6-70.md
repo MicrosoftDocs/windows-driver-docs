@@ -1,5 +1,5 @@
 ---
-title: Porting NDIS 6.x Drivers to NDIS 6.70
+title: Porting NDIS 6.x drivers to NDIS 6.70
 description: For NDIS protocol, filter, and intermediate drivers, NDIS 6.70 is substantially the same as NDIS 6.60. For detailed information about new features for NDIS 6.70, see Introduction to NDIS 6.70.
 ms.assetid: DB099908-E8EF-4D4B-95FF-9B17702D4A7B
 ms.author: windowsdriverdev
@@ -9,9 +9,9 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Porting NDIS 6.x Drivers to NDIS 6.70
+# Porting NDIS 6.x drivers to NDIS 6.70
 
-For NDIS protocol, filter, and intermediate drivers, NDIS 6.70 is substantially the same as NDIS 6.60. However, because NDIS 6.70 includes the first release of the Network Adapter WDF Class Extension, a.k.a. [NetAdapterCx](../netcx/index.md), NDIS no longer uses the miniport model for NIC drivers in NDIS 6.70 and later. To port an NDIS miniport driver to the NetAdapter class extension, see [Porting NDIS miniport drivers to NetAdapter class extension](../netcx/porting-ndis-to-netadapter-cx.md).
+For NDIS protocol, filter, and intermediate drivers, NDIS 6.70 is substantially the same as NDIS 6.60. However, the NDIS miniport driver model has been superceded by the NetAdapterCx NIC driver model in NDIS 6.70. To port an NDIS miniport driver to the NetAdapter class extension, see [Porting NDIS miniport drivers to NetAdapter class extension](../netcx/porting-ndis-to-netadapter-cx.md).
 
 For detailed information about new features for NDIS 6.70, see [Introduction to NDIS 6.70](introduction-to-ndis-6-70.md).
 
