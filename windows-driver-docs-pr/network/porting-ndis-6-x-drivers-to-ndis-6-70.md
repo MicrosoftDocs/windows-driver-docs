@@ -15,7 +15,7 @@ For NDIS protocol, filter, and intermediate drivers, NDIS 6.70 is substantially 
 
 For detailed information about new features for NDIS 6.70, including implementation and compilation details specific to this version of NDIS, see [Introduction to NDIS 6.70](introduction-to-ndis-6-70.md).
 
-If you are porting an NDIS 6.x protocol, filter, or intermediate driver to NDIS 6.70, you should be familar with the changes to each version between your driver's version and 6.70. For more information about previous NDIS 6.x versions, see the following topics:
+If you are porting an NDIS 6.x protocol, filter, or intermediate driver to NDIS 6.70, you should be familiar with the changes to each version between your driver's version and 6.70. For more information about previous NDIS 6.x versions, see the following topics:
 
 - [Introduction to NDIS 6.60](introduction-to-ndis-6-60.md)
 - [Introduction to NDIS 6.50](introduction-to-ndis-6-50.md)
