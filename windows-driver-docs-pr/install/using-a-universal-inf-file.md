@@ -25,7 +25,7 @@ A universal INF file installs predictably, with the same result each time. The r
 
 As a result, a driver package with a universal INF file can be configured in advance and added to an offline system.
 
-You can use the [InfVerif](https://msdn.microsoft.com/library/windows/hardware/dn929319) tool to test if your driver's INF file is universal.
+You can use the [InfVerif](../devtest/infverif.md) tool to test if your driver's INF file is universal.
 
 ## Which INF sections are invalid in a universal INF file?
 

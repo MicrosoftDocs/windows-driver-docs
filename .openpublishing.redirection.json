@@ -754,7 +754,13 @@
       "source_path": "windows-driver-docs-pr/nfc/p2p-rf-data-exchagne-sequence",
       "redirect_URL": "/windows-hardware/drivers/nfc/p2p-rf-data-exchange-sequence",
       "redirect_document_id": true
-    },{
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/using-a-configurable-inf-file",
+      "redirect_URL": "/windows-hardware/drivers/install/using-a-universal-inf-file",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/nfc/tag-rf-data-exchagne-sequence.md",
       "redirect_URL": "/windows-hardware/drivers/nfc/tag-rf-data-exchange-sequence",
       "redirect_document_id": true

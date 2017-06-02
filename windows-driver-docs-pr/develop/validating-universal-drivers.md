@@ -45,8 +45,9 @@ Error   10  error MSB3721: The command ""C:\Program Files (x86)\Windows Kits\10\
 
 2.  Remove or replace the non-universal API calls one at a time and rerun the tool until there are no errors.
 
-## <span id="Running_ApiValidator_from_the_Command_Prompt"></span><span id="running_apivalidator_from_the_command_prompt"></span><span id="RUNNING_APIVALIDATOR_FROM_THE_COMMAND_PROMPT"></span>Running ApiValidator from the Command Prompt
+3.  In some cases, you can replace these calls with alternate DDIs that are listed on the reference pages for the desktop-only DDI. If you cannot find a suitable replacement, please [submit feedback](http://go.microsoft.com/fwlink/p/?linkid=529549).  You may have to code a workaround if there is not a suitable replacement.  If you need to, write a new Universal Windows driver starting from the driver templates in the WDK.
 
+## Running ApiValidator from the Command Prompt
 
 You can also run Apivalidator.exe from the command prompt. In your WDK installation, navigate to C:\\Program Files (x86)\\Windows Kits\\10\\bin\\*&lt;arch&gt;*.
 
