@@ -26,5 +26,7 @@
 #### [Setting and Clearing a Communication Mode for a Parallel Device](setting-and-clearing-a-communication-mode-for-a-parallel-device.md)
 #### [Setting Attributes on a Parallel Device](setting-attributes-on-a-parallel-device.md)
 #### [Reading and Writing a Parallel Device](reading-and-writing-a-parallel-device.md)
+#### [Device-specific operations for I/O requests for parallel devices](device-specific-operations-io-requests-parallel-devices.md)
+#### [Device-specific operations for I/O requests for parallel ports](device-specific-operations-io-requests-parallel-ports.md)
 ### [Installing Parallel Ports and Devices](installing-parallel-ports-and-devices.md)
 
