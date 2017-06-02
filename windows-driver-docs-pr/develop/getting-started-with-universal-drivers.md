@@ -25,14 +25,12 @@ A Universal Windows driver calls only device driver interfaces (DDIs) that are p
 
 A Universal Windows driver can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the Windows Driver Model (WDM).
 
-## Best Practices
+## Requirements and Best Practices
 
 Use the following recommendations when writing a universal driver:
 
 *  Create a universal INF file for your driver.  For more info, and to review the list of INF sections and directives that are valid in universal drivers, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).
 *  Use the [InfVerif](../devtest/infverif.md) tool to verify that your driver's INF file is universal.
-*  If your INF performs any custom setup actions that depend on the target platform, consider separating these out into an extension INF.  You can update an extension INF independently from the base INF, so servicing is easier.  For more info, see [Using an Extension INF File](../install/creating-an-extensible-inf-file.md).
-*  To replace existing co-installer functionality, consider using software components.  For more info, see [Adding Software Components with an INF file](../install/adding-software-components-with-an-inf-file.md).
 *  Optionally, provide a UWP app that works with your device.  For info, see [Hardware access for Universal Windows Platform apps](../devapps/hardware-access-for-universal-windows-platform-apps.md).  In Windows 10, version 1703, the OEM needs to pre-load such an app.  Alternatively, users can manually download the app from the Windows Store.
 *  Use the ApiValidator tool to verify that the APIs your driver calls are valid for a universal driver.  For more info, see [Validating Universal Windows drivers](validating-universal-drivers.md).
 
