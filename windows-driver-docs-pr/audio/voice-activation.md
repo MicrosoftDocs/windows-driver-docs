@@ -51,9 +51,9 @@ The *Software Keyword Spotter* is the software voice activation software detecti
 
 **The "Learn my voice" feature**
 
-The "Learn my voice" feature allows the user to train Cortana to recognize their unique voice. This is accomplished by the user clicking on "Learn my voice" in the Cortana settings screen. The user then repeats six carefully chosen phrases that provide a sufficient variety of phonetic patterns to identify the unique attributes of the users voice.
+The "Learn my voice" feature allows the user to train Cortana to recognize their unique voice. This is accomplished by the user clicking on *Learn how I say "Hey Cortana"* in the Cortana settings screen. The user then repeats six carefully chosen phrases that provide a sufficient variety of phonetic patterns to identify the unique attributes of the users voice.
 
-![cortana desktop settings for hw keyword spotter wake on voice](images/audio-voice-activation-hw-ks-wov.png)
+![cortana desktop settings for hw keyword spotter wake on voice](images/audio-voice-activation-settings-2017.png)
 
 When voice activation is paired with "Learn my voice", where the two algorithms will work together to reduce false activations. This is especially valuable for the meeting room scenario, where one person says "Hey Cortana" in a room full of devices.
 
