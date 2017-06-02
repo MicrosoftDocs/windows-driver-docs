@@ -46,7 +46,7 @@ In addition, an NDIS 6.70 driver must be compliant with the following requiremen
 
 - An NDIS 6.70 driver must report the correct NDIS version when it registers with NDIS.
 
-   You must update the major and minor NDIS version number in the NDIS_Xxx_DRIVER_CHARACTERISTICS structure to support NDIS 6.70. The MajorNdisVersion member must contain 6 and the MinorNdisVersion member must contain 70. This requirement applies to protocol and filter drivers. You must also update the version information for the compiler. See [Compiling an NDIS 6.70 Driver](#compiling-an-ndis-670-driver).
+   You must update the major and minor NDIS version number in the NDIS_Xxx_DRIVER_CHARACTERISTICS structure to support NDIS 6.70. The MajorNdisVersion member must contain 6 and the MinorNdisVersion member must contain 70. This requirement applies to protocol and filter drivers. You must also update the version information for the compiler (see [Compiling an NDIS 6.70 driver](#compiling-an-ndis-670-driver)).
 
 ## Compiling an NDIS 6.70 driver
 
