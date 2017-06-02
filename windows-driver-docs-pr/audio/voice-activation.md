@@ -59,9 +59,7 @@ When voice activation is paired with "Learn my voice", where the two algorithms 
 
 Voice activation is powered by a keyword spotter (KWS) which reacts if the key phrase is detected. If the KWS is to wake the device from a low powered state, the solution is known as Wake on Voice (WoV). For more information, see [Wake on Voice](#wake_on_voice).
 
-## <span id="Implementing_Voice_Activation"></span><span id="implementing_voice_activation"></span><span id="IMPLEMENTING_VOICE_ACTIVATION"></span>Implementing Voice Activation
-
-** Integrating a Hardware Keyword Spotter **
+## <span id="Implementing_Voice_Activation"></span><span id="implementing_voice_activation"></span><span id="IMPLEMENTING_VOICE_ACTIVATION"></span>Integrating a Hardware Keyword Spotter
 
 To implement a hardware keyword spotter (HW KWS) SoC vendors must complete the following tasks.
 
