@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Lists all [device setup classes](https://msdn.microsoft.com/library/windows/hardware/ff541509), including classes that devices on the system do not use. Valid on local and remote computers.
 
-``` syntax
+```
     devcon [/m:\\computer] classes 
 
    

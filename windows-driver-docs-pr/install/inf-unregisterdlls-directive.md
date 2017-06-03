@@ -20,13 +20,13 @@ ms.technology: windows-devices
 # INF UnregisterDlls Directive
 
 
-**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-configurable-inf-file.md).
+**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 
 An **UnregisterDlls** directive references one or more INF sections used to specify files that are OLE controls and require self-unregistration (self-removal).
 
-``` syntax
+```
 [DDInstall]
   
 UnregisterDlls=unregister-dll-section[,unregister-dll-section]...
@@ -34,7 +34,7 @@ UnregisterDlls=unregister-dll-section[,unregister-dll-section]...
 
 Each INF section referenced by an **UnregisterDlls** directive must have the following entry format:
 
-``` syntax
+```
 [unregister-dll-section] 
   
 dirid,[subdir],filename,registration-flags[,[timeout][,argument]] 

@@ -20,13 +20,13 @@ ms.technology: windows-devices
 # INF ProfileItems Directive
 
 
-**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-configurable-inf-file.md).
+**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 
 A **ProfileItems** directive is used in an [**INF *DDInstall* section**](inf-ddinstall-section.md) to list one or more *profile-items-sections* that contain items or groups to be added to, or removed from, the Start menu.
 
-``` syntax
+```
 [DDInstall] 
  
 ProfileItems=profile-items-section[,profile-items-section]...
@@ -35,7 +35,7 @@ ProfileItems=profile-items-section[,profile-items-section]...
 
 Each named section referenced by a **ProfileItems** directive has the following form:
 
-``` syntax
+```
 [profile-items-section]
  
 Name=link-name[,name-attributes]
@@ -123,7 +123,7 @@ The *info-tip* value can also be specified as **"@***ResDllPath***\\***ResDll***
 
 Use this format to support Windows Multilingual User Interface (MUI). An example is as follows:
 
-``` syntax
+```
 InfoTip = "@%11%\shell32.dll,-22531"
 ```
 
@@ -132,7 +132,7 @@ This optional entry specifies a string resource that identifies a localizable st
 
 *ResDllPath* and *ResDll* specify the path and file name of a resource DLL, and *resID* is a positive value that represents a resource ID. An example is as follows:
 
-``` syntax
+```
 DisplayResource="%11%\shell32.dll",22019
 ```
 

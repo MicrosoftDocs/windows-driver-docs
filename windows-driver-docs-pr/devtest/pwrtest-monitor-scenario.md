@@ -21,7 +21,7 @@ If you run both scenarios, be sure to use the **/ln:***name* parameter so that y
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 pwrtest /monitor  [/t:n] [/?] 
 ```
 
@@ -30,11 +30,11 @@ Specifies the total time (in minutes) for the scenario to run (the default value
 
 **Examples**
 
-``` syntax
+```
 pwrtest /device 
 ```
 
-``` syntax
+```
 pwrtest /device /t:60
 ```
 

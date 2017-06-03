@@ -169,7 +169,7 @@ FilterSample.ServiceDesc = "Sample Upper Filter"
 ## Related topics
 
 
-[Using a Universal INF File](using-a-configurable-inf-file.md)
+[Using a Universal INF File](using-a-universal-inf-file.md)
 
 [Getting Started with Universal Drivers](https://msdn.microsoft.com/windows-drivers/develop/getting_started_with_universal_drivers)
 

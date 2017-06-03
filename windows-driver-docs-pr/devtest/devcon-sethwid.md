@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Adds, deletes, and changes the order of hardware IDs of root-enumerated devices on a local or remote computer.
 
-``` syntax
+```
     devcon [/m:\\computer] sethwid {* | ID [ID ...] | =class [ID [ID ...]]} := [ = | + | - | ! ]HardwareIDs ...
 
    

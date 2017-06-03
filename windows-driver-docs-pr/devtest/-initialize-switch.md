@@ -26,7 +26,7 @@ The **/Initialize** switch of the Enhanced Storage Certificate Management tool i
 
  
 
-``` syntax
+```
     EhStorCertMgrCmd /Initialize  -Volume:
     VolumeName 
     [-Quiet]

@@ -20,13 +20,13 @@ ms.technology: windows-devices
 # INF ClassInstall32.Services Section
 
 
-**Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-configurable-inf-file.md).
+**Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 
 A **ClassInstall32** section installs a new [device setup class](device-setup-classes.md) (and possibly a class installer) for devices in the new class.
 
-``` syntax
+```
 [ClassInstall32.Services] | 
 [ClassInstall32.nt.Services] | 
 [ClassInstall32.ntx86.Services] | 

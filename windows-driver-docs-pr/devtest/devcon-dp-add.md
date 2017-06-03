@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Adds a third-party (OEM) driver package to the driver store on the local computer.
 
-``` syntax
+```
     devcon dp_add inf
 
    

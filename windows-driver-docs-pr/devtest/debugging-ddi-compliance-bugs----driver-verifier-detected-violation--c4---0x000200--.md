@@ -28,7 +28,7 @@ The DDI Compliance rules ensure that a driver correctly interacts with the Windo
 
 As with any bug check that occurs, once you have control of the debugger, the best first step is to run the [**!analyze -v**](https://msdn.microsoft.com/library/windows/hardware/ff562112) command.
 
-``` syntax
+```
 *******************************************************************************
 *                                                                             *
 *                        Bugcheck Analysis                                    *
@@ -73,7 +73,7 @@ The [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112)
 
 The **DV\_RULE\_INFO:** field of the **!analyze** output shows the command you can use to find more information about this rule violation. For this example, you can use the command: **!ruleinfo 0x20004**
 
-``` syntax
+```
 kd> !ruleinfo 0x20004
 
 RULE_ID: 0x20004
@@ -99,7 +99,7 @@ MSDN_LINK: http://go.microsoft.com/fwlink/p/?linkid=216021
 
 When this violation is caught, Driver Verifier will bug check the system immediately. The **!analyze** output will show the current IRQL, current stack, point where the call to allocate memory was made, and if source-code enabled The **!analyze –v** (for verbose) output will also show the source file and line number where the allocation request was made:
 
-``` syntax
+```
 CURRENT_IRQL:  10
 
 ANALYSIS_VERSION: 6.13.0016.1929 (debuggers(dbg).130725-1857) amd64fre

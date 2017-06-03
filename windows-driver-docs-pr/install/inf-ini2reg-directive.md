@@ -20,13 +20,13 @@ ms.technology: windows-devices
 # INF Ini2Reg Directive
 
 
-**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-configurable-inf-file.md).
+**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 
 An **Ini2Reg** directive references one or more named sections in which lines or sections from a supplied INI file are moved into the registry. This creates or replaces one or more value entries under a specified key.
 
-``` syntax
+```
         [
         DDInstall
         ] | 
@@ -41,7 +41,7 @@ Ini2Reg=ini-to-registry-section[,ini-to-registry-section]...
 
 Each named section referenced by an **Ini2Reg** directive has the following form:
 
-``` syntax
+```
 [ini-to-registry-section]
  
 ini-file,ini-section,[ini-key],reg-root,subkey[,flags]

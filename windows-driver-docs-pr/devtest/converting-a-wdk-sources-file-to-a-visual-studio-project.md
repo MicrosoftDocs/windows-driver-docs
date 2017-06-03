@@ -12,11 +12,11 @@ ms.technology: windows-devices
 # Converting a WDK sources file to a Visual Studio project
 
 
-**Note**  The Nmake2MsBuild tool was removed from the WDK starting in Windows 10, version 1511.
+**Note**ï¿½ï¿½The Nmake2MsBuild tool was removed from the WDK starting in Windowsï¿½10, version 1511.
 
- 
+ï¿½
 
-For most Windows 7 WDK projects that were built using Build.exe, you can use the [Nmake2MsBuild](nmake2msbuild.md) utility, or the automatic conversion process within Visual Studio, to generate a project file (.VcxProj). In most cases, the Visual Studio project file closely maps to the original *sources* file so the project can be built successfully in Visual Studio, or from an MSBuild command. For some build targets, you need to customize the rule-based mapping that the conversion tools uses. This topic describes how the conversion utility works and how you can extend it by creating your own rule mapping.
+For most Windowsï¿½7 WDK projects that were built using Build.exe, you can use the [Nmake2MsBuild](nmake2msbuild.md) utility, or the automatic conversion process within Visual Studio, to generate a project file (.VcxProj). In most cases, the Visual Studio project file closely maps to the original *sources* file so the project can be built successfully in Visual Studio, or from an MSBuild command. For some build targets, you need to customize the rule-based mapping that the conversion tools uses. This topic describes how the conversion utility works and how you can extend it by creating your own rule mapping.
 
 ## <span id="The_Nmake2MsBuild_conversion_process"></span><span id="the_nmake2msbuild_conversion_process"></span><span id="THE_NMAKE2MSBUILD_CONVERSION_PROCESS"></span>The Nmake2MsBuild conversion process
 
@@ -71,17 +71,17 @@ The NMake2MsBuild utility does not support conversion of custom targets or the c
 
 -   Expansion of Macro references in Inference rules that define optional directories:
 
-    ``` syntax
+    ```
     INPUT_DIR= c:\MyDirectory
     .FromExt{$(INPUT_DIR)}.ToExt:
-         cmd.exe /c echo “something”
+         cmd.exe /c echo ï¿½somethingï¿½
     ```
 
-    You’d have to change the above to:
+    Youï¿½d have to change the above to:
 
-    ``` syntax
+    ```
     .FromExt{ c:\MyDirectory}.ToExt:
-         cmd.exe /c echo “something”
+         cmd.exe /c echo ï¿½somethingï¿½
     ```
 
 -   NMAKE inline files and macro substitutions are not supported.
@@ -90,9 +90,9 @@ The NMake2MsBuild utility does not support conversion of custom targets or the c
 
     Macro substitutions: See **Macro Substitution**
 
-    Because inline files and macro substitutions are not supported the following target won’t be converted correctly:
+    Because inline files and macro substitutions are not supported the following target wonï¿½t be converted correctly:
 
-    ``` syntax
+    ```
     fsdkmsg.mc : ..\..\wrapper\fsdkmsgbase.src
            copy ..\..\wrapper\fsdkmsgbase.src
         @type <<$(ECHO_RSP)
@@ -104,10 +104,10 @@ The NMake2MsBuild utility does not support conversion of custom targets or the c
     <<$(BUILD_NOKEEP)   
     ```
 
--   **!Error** statements will not be converted. There’s no equivalent in MSBuild that would work outside MSBuild targets as well.
+-   **!Error** statements will not be converted. Thereï¿½s no equivalent in MSBuild that would work outside MSBuild targets as well.
 -   Target definitions must match 1:1 with NTTARGETFILE\* macros that invoke the target: The following is not supported:
 
-    ``` syntax
+    ```
     Sources File:
     OBJ_NAME=Something
     NTTARGETFILES=$(_OBJ_DIR)\$(TARGET_DIRECTORY)\$(OBJ_NAME).obj
@@ -116,11 +116,11 @@ The NMake2MsBuild utility does not support conversion of custom targets or the c
       
     ```
 
--   Both the target’s definition and NTTARGETFILES must match; they both should use $(OBJ\_NAME).obj or *Somename*.obj. $? And $&lt; tokens in Targets are always expanded for all dependents.
+-   Both the targetï¿½s definition and NTTARGETFILES must match; they both should use $(OBJ\_NAME).obj or *Somename*.obj. $? And $&lt; tokens in Targets are always expanded for all dependents.
 
     See **Filename Macros** for more information.
 
--   $? Expands to “All dependents with a later timestamp than the current target.” For converted projects the timestamp is ignored and this evaluates to all dependents. The same holds true for $&lt;
+-   $? Expands to ï¿½All dependents with a later timestamp than the current target.ï¿½ For converted projects the timestamp is ignored and this evaluates to all dependents. The same holds true for $&lt;
 
 ## <span id="Limitations_of_Converted_Projects"></span><span id="limitations_of_converted_projects"></span><span id="LIMITATIONS_OF_CONVERTED_PROJECTS"></span>Limitations of Converted Projects
 
@@ -136,9 +136,9 @@ Converted projects do not support VS .Filters files.
 
 [Creating a Driver From Existing Source Files](https://msdn.microsoft.com/windows-drivers/develop/creating_a_driver_from_existing_source_files)
 
- 
+ï¿½
 
- 
+ï¿½
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Converting%20a%20WDK%20sources%20file%20to%20a%20Visual%20Studio%20project%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 

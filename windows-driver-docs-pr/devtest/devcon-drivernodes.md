@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Lists all [driver packages](https://msdn.microsoft.com/library/windows/hardware/ff539954) that are compatible with the device, along with their version and ranking. Valid only on the local computer.
 
-``` syntax
+```
     devcon drivernodes {* | ID [ID ...] | =class [ID [ID ...]]} 
 
    

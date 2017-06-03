@@ -24,7 +24,7 @@ Disables devices on the computer. Valid only on the local computer.
 
 To *disable* a device means that the device remains physically connected to the computer, but its driver is unloaded from memory and its resources are freed so that the device cannot be used.
 
-``` syntax
+```
     devcon [/r] disable {* | ID [ID ...] | =class [ID [ID ...]]} 
 
    

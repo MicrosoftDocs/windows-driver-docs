@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Displays the full path and file name of installed INF files and device driver files for the specified devices. Valid only on the local computer.
 
-``` syntax
+```
     devcon driverfiles {* | ID [ID ...] | =class [ID [ID ...]]} 
 
    

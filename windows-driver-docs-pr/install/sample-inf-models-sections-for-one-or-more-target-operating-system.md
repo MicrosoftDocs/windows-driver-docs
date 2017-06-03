@@ -28,7 +28,7 @@ This topic shows a sample INF file that installs a driver package on various ope
 
 -   [**INF CopyFiles directives**](inf-copyfiles-directive.md) that copies platform-specific files to the target x86- and AMD64-based systems.
 
-``` syntax
+```
 [Version]
 Signature       = "$Windows NT$"
 Class           = Net

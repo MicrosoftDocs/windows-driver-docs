@@ -32,7 +32,7 @@ verifier /flags 7 /driver beep.sys flpydisk.sys
 
 You can use the **/volatile** parameter with some Driver Verifier **/flags** options and with **/standard**. You cannot use **/volatile** with the **/flags** options for [DDI compliance checking](ddi-compliance-checking.md), [Power Framework Delay Fuzzing](concurrency-stress-test.md), [Storport Verification](dv-storport-verification.md), or [SCSI Verification](scsi-verification.md). For details, see [Using Volatile Settings](using-volatile-settings.md).
 
-``` syntax
+```
   verifier /standard /all
   verifier /standard /driver NAME [NAME ...]
   verifier /flags <options> /all
@@ -60,7 +60,7 @@ You can use the **/volatile** parameter with some Driver Verifier **/flags** opt
 
 You can use the **/volatile** parameter with some Driver Verifier **/flags** options and with **/standard**. You cannot use **/volatile** with the **/flags** options for [DDI compliance checking](ddi-compliance-checking.md), [Power Framework Delay Fuzzing](concurrency-stress-test.md), [Storport Verification](dv-storport-verification.md), or [SCSI Verification](scsi-verification.md). For details, see [Using Volatile Settings](using-volatile-settings.md).
 
-``` syntax
+```
   verifier /standard /all
   verifier /standard /driver NAME [NAME ...]
   verifier /flags <options> /all
@@ -84,7 +84,7 @@ You can use the **/volatile** parameter with some Driver Verifier **/flags** opt
 
 You can use the **/volatile** parameter with some Driver Verifier **/flags** options and with **/standard**. You cannot use **/volatile** with the /flags options for [DDI compliance checking](ddi-compliance-checking.md), [Power Framework Delay Fuzzing](concurrency-stress-test.md), [Storport Verification](dv-storport-verification.md), [SCSI Verification](scsi-verification.md) or with **/disk**. For details, see [Using Volatile Settings](using-volatile-settings.md).
 
-``` syntax
+```
 verifier [/volatile] [/standard | /flags Options ] [ /all | /driver DriverList ]
 verifier /volatile /faults [Probability PoolTags Applications DelayMins] /driver DriverList
 verifier /volatile {/adddriver | /removedriver} DriverList
@@ -99,7 +99,7 @@ verifier /?
 
 **Windows Server 2003 Syntax**
 
-``` syntax
+```
 verifier [/disk] [ /standard | /flags Options ] [ /all | /driver DriverList ] 
 verifier /volatile /flags VolatileOptions 
 verifier /volatile {/adddriver | /removedriver} DriverList

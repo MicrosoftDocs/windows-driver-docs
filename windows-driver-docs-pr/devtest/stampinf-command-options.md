@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Stampinf is a command-line tool that updates common INF file directives.
 
-``` syntax
+```
 Stampinf -f filename 
 [-s section] 
 [-d [date | *]] 

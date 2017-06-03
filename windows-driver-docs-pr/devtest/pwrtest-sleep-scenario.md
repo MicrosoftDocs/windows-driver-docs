@@ -19,7 +19,7 @@ PwrTest is capable of directing the platform into one or more sleep states in an
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 pwrtest /sleep [/c:n] [/d:n] [/p:n] [/h:{y|n}] [/s:{1|3|4|all|rnd|hibernate|standby}] [/unattend] [/e:n] [/?] 
 ```
 
@@ -66,11 +66,11 @@ Specifies the timeout in seconds to wait for the transition end event (120 secon
 
 **Examples**
 
-``` syntax
+```
 pwrtest pwrtest /sleep /c:4 /s:all 
 ```
 
-``` syntax
+```
   pwrtest /sleep /c:4 /p:120 /d:150 /s:all
 ```
 

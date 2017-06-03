@@ -48,14 +48,14 @@ To add tracing messages to your framework-based driver, you must:
 
 -   Open the Property Pages for your driver project. Right-click the driver project in Solution Explorer and select **Properties**. In the Property Pages for the driver, click **Configuration Properties**, and then **Wpp**. Under the **General** menu, set **Run WPP Tracing** to Yes. Under the **File Options** menu, you should also specify the framework's WPP template file, for example:
 
-    ``` syntax
+    ```
     {km-WdfDefault.tpl}*.tmh
     ```
     
 -   To specify additional WPP trace settings for your driver project in Visual Studio, right-click on the driver project in Solutions Explorer. Then follow the link to Properties->Configuration Properties->WPP Tracing. 
 
 -   To specify a trace configuration file use the 'Scan Configuration Data' setting. For more than one trace configuration file add it under the 'Command Line'-> 'Additional Options' as follows
-    ``` syntax
+    ```
     -scan:"$(KMDF_INC_PATH)\$(KMDF_VER_PATH)\wdftraceenums.h"
     ```
 For more information about adding tracing messages to your driver, see [Adding WPP Macros to a Driver](https://msdn.microsoft.com/library/windows/hardware/ff541243).
