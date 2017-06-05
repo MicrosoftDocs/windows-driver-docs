@@ -761,6 +761,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows-driver-docs-pr/install/creating-an-extensible-inf-file",
+      "redirect_URL": "/windows-hardware/drivers/install/using-an-extension-inf-file",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/nfc/tag-rf-data-exchagne-sequence.md",
       "redirect_URL": "/windows-hardware/drivers/nfc/tag-rf-data-exchange-sequence",
       "redirect_document_id": true
