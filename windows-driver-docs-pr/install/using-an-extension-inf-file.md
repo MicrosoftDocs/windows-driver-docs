@@ -1,9 +1,9 @@
 ---
 title: Using an Extension INF File
-description: Starting in Windows 10 Mobile, you can extend a driver package INF file's functionality by providing an additional INF file called an extension INF.
+description: Starting in Windows 10, you can extend a driver package INF file's functionality by providing an additional INF file called an extension INF.
 ms.assetid: 124C4E58-7F06-46F5-B530-29A03FA75C0A
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 06/5/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -11,7 +11,11 @@ ms.technology: windows-devices
 
 # Using an Extension INF File
 
-Starting in Windows 10, you can extend a driver package INF file's functionality by providing an additional INF file called an extension INF.  Typically, a component maker provides a primary INF, and then a system builder provides an extension INF that supplements and in some cases overrides the configuration and settings of the primary INF.  The extension INF might modify some of the settings, such as customizing the device friendly name, modifying a hardware configuration setting, or adding a filter driver.
+Starting in Windows 10, you can extend a driver package INF file's functionality by providing an additional INF file called an extension INF.  In one common scenario, a device manufacturer (IHV) provides a base driver and a primary INF, and then a system builder (OEM) provides an extension INF that supplements and in some cases overrides the configuration and settings of the primary INF.
+
+The extension INF might modify some of the settings, such as customizing the device friendly name, modifying a hardware configuration setting, or adding a filter driver.
+
+Primary and extension INFs for the same device can be updated independently by different organizations.
 
 You can associate multiple extension INFs with the same device.
 
@@ -23,20 +27,23 @@ Settings in an extension INF are applied after settings in a primary INF. As a r
 
 ## Specifying ExtensionId
 
-When you write an extension INF, you generate a special GUID called the **ExtensionId**, which is an entry in the INF's **\[Version\]** section. The following guidelines apply:
+The system identifies possible extension INFs for a specific device by matching the hardware ID and compatible IDs of the device to those specified in the [**Manufacturer**](inf-manufacturer-section.md) section of the extension INF.
 
--   For a given device, only one extension INF is installed for each unique **ExtensionId** value. Driver date and driver version are the tiebreakers, in that order, between multiple extension INFs with the same **ExtensionId**.
--   For multiple extension INFs to be applied to the same device, each extension INF must have a unique **ExtensionId**.
+When you write an extension INF, you generate a special GUID called the **ExtensionId**, which is an entry in the INF's **\[Version\]** section.
 
-In addition to the primary INF selected for installation of a given device, Plug and Play (PnP) identifies any extension INFs that apply to a given device by matching the hardware ID and compatible IDs of the device to those specified in the [**\[Manufacturer\]**](inf-manufacturer-section.md) section of the extension INF. For each extension INF that specifies a unique **ExtensionId** value, PnP selects the best match and applies its settings over those of the primary INF.
+For each possible extension INF that specifies a unique **ExtensionId** value, the system selects only one and applies its settings over those of the primary INF.
 
-To illustrate, let's consider a hypothetical device for which there are four extension INFs. Two extension INFs have the same **ExtensionId** value, and two have unique **ExtensionId** values. From the first two, the one with the most recent driver date is selected. If driver date is the same, driver version is the next tiebreaker. From the latter two, both are selected, because they have unique **ExtensionId** values. In this example, the system applies the primary INF for the device, and then applies three extension INFs for that device.
+Driver date and driver version are the tiebreakers, in that order, between multiple extension INFs with the same **ExtensionId**.
+
+To illustrate, consider a hypothetical device for which there are four extension INFs. Two extension INFs have the same **ExtensionId** value, and two have unique **ExtensionId** values. From the first two, the one with the most recent driver date is selected. If driver date is the same, driver version is the next tiebreaker.
+
+From the latter two, both are selected, because they have unique **ExtensionId** values. In this example, the system applies the primary INF for the device, and then applies three extension INFs for that device.
 
 ## Creating an extension INF
 
 Here are the entries you need to define an INF as an extension INF.
 
-1.  Specify these values for **Class** and **ClassGuid** in the [**\[Version\]**](inf-version-section.md) section.
+1.  Specify these values for **Class** and **ClassGuid** in the [**Version**](inf-version-section.md) section.
 
     ```
     [Version]
@@ -53,15 +60,15 @@ Here are the entries you need to define an INF as an extension INF.
 
 3.  If you are updating an extension INF, keep the **ExtensionId** the same and increment the version or date (or both) specified by the [**DriverVer**](inf-driverver-directive.md) directive. For a given **ExtensionId** value, PnP selects the INF with the highest **DriverVer**.
 
-4.  In the [**INF \[Models\] section**](inf-models-section.md), specify one or more hardware and compatible IDs that match the target device. Note that these hardware and compatible IDs do not need to match those of the primary INF.  Typically, an extension INF lists a more specific hardware ID than the primary INF, with the goal of further specializing a specific driver configuration. However, the extension INF might list the same hardware ID as the primary INF, for instance if the device is already very narrowly targeted, or if the primary INF already lists the most specific hardware ID.  In some cases, the extension INF might provide a less specific device ID, like a compatible ID, in order to customize a setting across a broader set of devices.
+4.  In the [**INF Models section**](inf-models-section.md), specify one or more hardware and compatible IDs that match those of the target device.  Note that these hardware and compatible IDs do not need to match those of the primary INF.  Typically, an extension INF lists a more specific hardware ID than the primary INF, with the goal of further specializing a specific driver configuration.  However, the extension INF might list the same hardware ID as the primary INF, for instance if the device is already very narrowly targeted, or if the primary INF already lists the most specific hardware ID.  In some cases, the extension INF might provide a less specific device ID, like a compatible ID, in order to customize a setting across a broader set of devices.
 
     ```
     [DeviceExtensions.NTamd64]
     %Device.ExtensionDesc% = DeviceExtension_Install, USB\VID_XXXX&PID_XXXX&REV_XXXX
     ```
 
-5.  Optionally, provide a **\[TargetComputers\]** section if you want to constrain which computers this INF can be installed on. You might do this if you are using extension INFs with less specific hardware IDs or compatible IDs that are applicable to a large number of devices.
-6.  Do not define a service with SPSVCINST\_ASSOCSERVICE. However, an extension INF can define other services, such as a filter driver for the device. For more info about specifying services, see [**INF AddService Directive**](inf-addservice-directive.md).
+5.  Optionally, provide a **TargetComputers** section if you want to constrain which computers this INF can be installed on.  You might do this if you are using extension INFs with less specific hardware IDs or compatible IDs that are applicable to a large number of devices.
+6.  Do not define a service with `SPSVCINST_ASSOCSERVICE`.  However, an extension INF can define other services, such as a filter driver for the device.  For more info about specifying services, see [**INF AddService Directive**](inf-addservice-directive.md).
 
 ## Example 1: Using an extension INF to set the device friendly name
 
