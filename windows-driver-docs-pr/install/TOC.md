@@ -34,7 +34,7 @@
 ### [INF Files](inf-files.md)
 #### [Overview of INF Files](overview-of-inf-files.md)
 ##### [Looking at an INF File](looking-at-an-inf-file.md)
-##### [Using a Universal INF File](using-a-configurable-inf-file.md)
+##### [Using a Universal INF File](using-a-universal-inf-file.md)
 ##### [Using an Extension INF File](creating-an-extensible-inf-file.md)
 ##### [Summary of INF Sections](summary-of-inf-sections.md)
 ##### [Summary of INF Directives](summary-of-inf-directives.md)

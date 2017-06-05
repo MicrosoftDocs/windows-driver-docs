@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 To start PoolMon, type a command at the command line using the following syntax and parameters.
 
-``` syntax
+```
     poolmon [/iTag] [/xTag] [/c [LocalTagFile]] [/g [PoolTagFile]] [/s[TSSessionID]] [ /p | /p /p ] [/e] [/( | /)]  [/t | /a| /f| /d | /b| /m] [/l] [/n [File]] [/? | /h] 
 
    

@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 An INF *DDInstall*.**WMI** section contains one or more **WMIInterface** directives that specify characteristics for each WMI class that the driver provides.
 
-``` syntax
+```
 [install-section-name.WMI] |
 [install-section-name.nt.WMI] | 
 [install-section-name.ntx86.WMI] |

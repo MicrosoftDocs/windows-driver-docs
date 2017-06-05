@@ -26,7 +26,7 @@ The **/Clear** switch of the Enhanced Storage Certificate Management tool remove
 
  
 
-``` syntax
+```
     EhStorCertMgrCmd /Clear  -Volume:
     VolumeName
 

@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Uses Windows Plug and Play features to update the device list for the computer. Valid on local and remote computers.
 
-``` syntax
+```
     devcon [/m:\\computer] [/r] rescan 
 
    

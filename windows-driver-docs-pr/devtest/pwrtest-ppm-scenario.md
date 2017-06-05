@@ -17,7 +17,7 @@ The PwrTest PPM Scenario logs processor power management (PPM) information and p
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 pwrtest /ppm [/n:n] [/i:n] [/c:[y|n]] [/p:{y|n}] [/u:{y|n}] [/live] [/t:n] [/?] 
 ```
 
@@ -44,19 +44,19 @@ Specifies the indicates the total runtime, in minutes, for the **/live** option 
 
 **Examples**
 
-``` syntax
+```
 pwrtest /ppm /c:y /p:y /u:y /n:60 /i:1000
 ```
 
-``` syntax
+```
   pwrtest /ppm /c:n /p:n /u:y /n:3600 /i:1000
 ```
 
-``` syntax
+```
   pwrtest /ppm /live
 ```
 
-``` syntax
+```
   pwrtest /ppm /live /t:60
 ```
 

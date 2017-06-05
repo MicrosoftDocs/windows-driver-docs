@@ -34,19 +34,19 @@ For the most up-to-date information about Static Driver Verifier and the Driver 
 
 You can also run Static Driver Verifier from a Visual Studio Command Prompt window. Set up the environment by running one of the following batch files.
 
-``` syntax
+```
 "C:\Program Files\Microsoft Visual Studio 11.0\VC\vcvarsall.bat" x64
 ```
 
 -Or-
 
-``` syntax
+```
 "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\vcvarsall.bat" x64
 ```
 
 Run Static Driver Verifier.
 
-``` syntax
+```
 msbuild.exe <vcxprojectfile> /p:Configuration="Win8 Release" /p:Platform=x64 /target:sdv /p:inputs="/clean"
 msbuild.exe <vcxprojectfile> /p:Configuration="Win8 Release" /p:Platform=x64 /target:sdv /p:inputs="/check:default.sdv"
 ```

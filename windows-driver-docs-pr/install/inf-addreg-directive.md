@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 An **AddReg** directive references one or more INF-writer-defined *add-registry-sections* that are used to modify or create registry information.
 
-``` syntax
+```
 [DDInstall] | 
 [DDInstall.HW] | 
 [DDInstall.CoInstallers] | 
@@ -45,7 +45,7 @@ Each *add-registry section* can have entries to do the following:
 
 Each named *add-registry section* referenced by an **AddReg** directive has the following format:
 
-``` syntax
+```
 [add-registry-section]
 reg-root, [subkey],[value-entry-name],[flags],[value][,[value]]
 reg-root, [subkey],[value-entry-name],[flags],[value][,[value]]
@@ -206,7 +206,7 @@ This technique can be used to define new registry types for numeric values, but 
 
 Special keywords are defined for use in the HKR **AddReg** entries. The format for the entries that use these keywords is as follows:
 
-``` syntax
+```
 [HKR,,DeviceCharacteristics,0x10001,characteristics] 
 [HKR,,DeviceType,0x10001,device-type] 
 [HKR,,Security,,security-descriptor-string] 
@@ -226,7 +226,7 @@ A **DeviceCharacteristics** HKR **AddReg** entry specifies characteristics for t
 
 Only the following values can be specified in an INF:
 
-``` syntax
+```
 #define FILE_REMOVABLE_MEDIA            0x00000001
 #define FILE_READ_ONLY_DEVICE           0x00000002
 #define FILE_FLOPPY_DISKETTE            0x00000004

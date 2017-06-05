@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 This section allows users to request additional signatures as required by certain certification scenarios. Examples of these scenarios are: Protected Environment media playback, Early Launch Antimalware, and third party HAL extensions. These additional signatures will only be applied if your Hardware Certification Kit package contains the proper Features and passing Tests.
 
-``` syntax
+```
 [SignatureAttributes]
 FileOne = SignatureAttributes.SigType
 

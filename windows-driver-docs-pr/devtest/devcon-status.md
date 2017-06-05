@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Displays the status (running, stopped, or disabled) of the driver for devices on the computer. Valid on local and remote computers.
 
-``` syntax
+```
     devcon [/m:\\computer] status {* | ID [ID ...] | =class [ID [ID ...]]} 
 
    

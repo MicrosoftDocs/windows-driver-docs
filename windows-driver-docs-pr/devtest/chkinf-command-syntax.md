@@ -24,7 +24,7 @@ The ChkINF scripts are located in the %WindowSdkDir%\\Tools\\x86\\Chkinf subdire
 
 Use the following command syntax:
 
-``` syntax
+```
     chkinf {INFFile [INFFile...] | Directory} [/L TextFile] [/B] [/LO] [/DC Options]
 
    

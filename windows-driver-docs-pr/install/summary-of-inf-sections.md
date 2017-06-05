@@ -68,7 +68,7 @@ Starting with Microsoft Windows 2000, this section is required as an expansion o
 This optional section adds device-specific (and typically, driver-independent) information to the registry or removes such information from the registry, possibly for a multifunction device or to install one or more PnP filter drivers.
 
 <a href="" id="ddinstall-coinstallers-section"></a>[***DDInstall*.CoInstallers Section**](inf-ddinstall-coinstallers-section.md)  
-**Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-configurable-inf-file.md).
+**Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 
@@ -77,14 +77,14 @@ This optional section registers one or more device-specific co-installers suppli
 A co-installer is an IHV/OEM-provided Win32 DLL that typically writes additional configuration information to the registry or performs other installation tasks that require dynamically generated, machine-specific information that is not available when the device's INF file is created. For more information, see [Writing a Co-installer](writing-a-co-installer.md).
 
 <a href="" id="ddinstall-factdef-section"></a>[***DDInstall*.FactDef Section**](inf-ddinstall-factdef-section.md)  
-**Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-configurable-inf-file.md).
+**Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 
 This section should be included in the INF file of any manually installed non-PnP device. It specifies the factory default hardware configuration settings, such as the bus-relative I/O ports, IRQ (if any), and so forth, for the card.
 
 <a href="" id="ddinstall-logconfigoverride-section"></a>[***DDInstall*.LogConfigOverride Section**](inf-ddinstall-logconfigoverride-section.md)  
-**Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-configurable-inf-file.md).
+**Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 

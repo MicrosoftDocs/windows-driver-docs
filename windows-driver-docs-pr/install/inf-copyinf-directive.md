@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 A **CopyINF** directive causes specified INF files to be copied to the target system. The **CopyINF** directive is supported in Windows XP and later versions of Windows.
 
-``` syntax
+```
 [DDInstall]
   
 CopyINF=filename1.inf[,filename2.inf]...

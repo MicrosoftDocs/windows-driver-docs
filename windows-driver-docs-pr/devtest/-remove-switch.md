@@ -26,7 +26,7 @@ The **/Remove** switch of the Enhanced Storage Certificate Management tool remov
 
  
 
-``` syntax
+```
     EhStorCertMgrCmd /Remove  -Volume:
     VolumeName
      -Index:
