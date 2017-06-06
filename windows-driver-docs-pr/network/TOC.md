@@ -62,7 +62,7 @@
 #### [Fragmented NET_BUFFER_LIST Structures](fragmented-net-buffer-list-structures.md)
 #### [Reassembled NET_BUFFER_LIST Structures](reassembled-net-buffer-list-structures.md)
 ## [Introduction to NDIS PDPI](introduction-to-ndis-pdpi.md)
-# [NDIS version guide](ndis-version-information.md)
+# [NDIS version guide](ndis-version-guide.md)
 ## [Overview of NDIS versions](overview-of-ndis-versions.md)
 ## [Introductions to NDIS 6.0 and later](introductions-to-ndis-6-0-and-later.md)
 ### [Introduction to NDIS 6.70](introduction-to-ndis-6-70.md)
