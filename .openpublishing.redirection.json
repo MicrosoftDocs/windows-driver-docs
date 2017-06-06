@@ -771,8 +771,8 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "/windows-hardware/drivers/network/ndis-versions-in-network-drivers.md",
-      "redirect_URL": "/windows-hardware/drivers/network/overview-of-ndis-versions.md",
+      "source_path": "windows-driver-docs-pr/network/ndis-versions-in-network-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/network/overview-of-ndis-versions",
       "redirect_document_id": true
     }
   ]
