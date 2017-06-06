@@ -22,12 +22,12 @@ ms.technology: windows-devices
 
 ## What’s the difference between UWP’s with Custom Capabilities and DCA’s (Device Companion Apps)?
 
-|                           | **DCA**                                                  |  **RPAL**                                                   | **UWP App with Custom Capabilities**|
-|---------------------------|----------------------------------------------------------|-------------------------------------------------------------|-------------------------------------|
-|Communication|Device Scenario APIS (image capture, scanning, etc.)<br>Device protocol APIs (USB, HID, etc.)<br>Customer driver access|  Blanket access to APIS, Drivers, Services|DCA support + NT Services            |                                                                              
-|Trust Model|Defined at a “container” level<br>The system's OEM must submit apps for internal components|Defined at a system level<br>The system's OEM must submit apps for internal components|Defined at a component level<br>IHVs own the trust boundaries for their components|
-|Automatic App Acquisition  |Available for peripherals                                  | Not available                                               |Available for all hardware          |
-|Deployment Dependencies    |WU: Driver package<br>Store: App|N/A – preload only|WU: Driver package<br>Store: App                  |
+|                           | **DCA**                                                  | **UWP App with Custom Capabilities**|
+|---------------------------|----------------------------------------------------------|-------------------------------------|
+|Communication|Device Scenario APIS (image capture, scanning, etc.)<br>Device protocol APIs (USB, HID, etc.)<br>Customer driver access|                                                                              
+|Trust Model|Defined at a “container” level<br>The system's OEM must submit apps for internal components|Defined at a system level<br>The system's OEM must submit apps for internal components|
+|Automatic App Acquisition  |Available for peripherals                                  |Available for all hardware          |
+|Deployment Dependencies    |WU: Driver package<br>Store: App|WU: Driver package<br>Store: App                  |
                                                                                                                                                     
                                                                                                             
                                                                                                                                                     

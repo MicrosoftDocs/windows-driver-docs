@@ -23,8 +23,7 @@ version of Visual Studio and create an UWP app project. If you
 haven't done that yet, you can [download the tools
 here](http://go.microsoft.com/fwlink/p/?LinkId=302196). To get started
 with Microsoft Visual Studio, see[ Develop Windows Store apps using
-Visual
-Studio](https://developer.microsoft.com/en-us/windows/apps/develop).
+Visual Studio](https://developer.microsoft.com/en-us/windows/apps/develop).
 
 ### Create a Windows Store account
 
@@ -46,7 +45,7 @@ For an App Developer to develop UWP Apps with custom capabilities, they
 must request access to a Custom capability from a Capability Owner. The
 request should have the following:
 
--   App PFN acquired from the Windows Store
+-   App PFN (Package Family Name) acquired from the Windows Store
 -   The name of the custom capability
 -   Signature Hash of the app signing cert which can be generated from
     your .cer file using certutil.exe. The certificate must be SHA-256.
@@ -83,7 +82,7 @@ PC in developer mode:
 ## Granting Custom Capability Access to System Software
 
 Currently, there are two types of system software that you can grant
-access to using Custom Capabilities: RPC Endpoints (from within an NT
+access to using Custom Capabilities: RPC (Remote Procedure Call) Endpoints (from within an NT
 Service) and Drivers.
 
 ![Custom Capability Architecture Diagram](images/cc-arch.png)
@@ -94,18 +93,17 @@ Service) and Drivers.
 
 When an UWP declares a custom capability in its app manifest, it will at
 a later point contain the SID form of the Custom capability in its
-process token at runtime. By default, RPC endpoints don’t allow UWP’s
-(AppContainer processes) to connect to them so some security must be set
-at the endpoint to allow access to UWP’s with the correct Custom
-capabilities. The following steps are taken to do so:
+process token at runtime. By default, a RPC endpoint doesn't allow UWP’s
+(AppContainer processes) to connect to them. A UWP app must have the appropriate Custom
+capabilities for access. The following steps are taken to do so:
 
 1.  Convert the custom capability name to a SID
 
 2.  Create a Security Descriptor to the SID of the Custom capability along
-with all other needed SID. For more information on creating a Security
-Descriptor follow the example[here](https://msdn.microsoft.com/en-us/library/windows/desktop/aa446595(v=vs.85).aspx).
+with all other needed SID's. For more information on creating a Security
+Descriptor follow the example [here](https://msdn.microsoft.com/en-us/library/windows/desktop/aa446595(v=vs.85).aspx).
 
-3.  Create an RPC endpoint with the Security Descriptor from above.
+3.  Create an RPC endpoint with the information from the Security Descriptor above.
 
 ### Granting Custom Capability Access to a Driver 
 
