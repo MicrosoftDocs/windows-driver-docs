@@ -38,5 +38,5 @@ The following are required when writing a universal driver:
 
 Use the following optional best practices:
 
-*  If your INF performs any custom setup actions that depend on the target platform, consider separating them out into an extension INF.  You can update an extension INF independently from the primary INF to improve robustness and servicing.  See [Using an Extension INF File](../install/creating-an-extensible-inf-file.md).
+*  If your INF performs any custom setup actions that depend on the target platform, consider separating them out into an extension INF.  You can update an extension INF independently from the primary INF to improve robustness and servicing.  See [Using an Extension INF File](../install/using-an-extension-inf-file.md).
 *  Provide a UWP app that works with your device.  For details, see [Hardware access for Universal Windows Platform apps](../devapps/hardware-access-for-universal-windows-platform-apps.md).  In Windows 10, version 1703, the OEM needs to pre-load such an app.  Alternatively, users can manually download the app from the Windows Store.
