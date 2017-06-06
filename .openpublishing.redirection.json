@@ -769,11 +769,6 @@
       "source_path": "windows-driver-docs-pr/nfc/tag-rf-data-exchagne-sequence.md",
       "redirect_URL": "/windows-hardware/drivers/nfc/tag-rf-data-exchange-sequence",
       "redirect_document_id": true
-    },
-    {
-      "source_path": "windows-driver-docs-pr/network/ndis-versions-in-network-drivers.md",
-      "redirect_URL": "/windows-hardware/drivers/network/overview-of-ndis-versions",
-      "redirect_document_id": true
-    }
+    }    
   ]
 }
