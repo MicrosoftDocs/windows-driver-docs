@@ -18,7 +18,7 @@ You can find devices and systems by filtering the list or by running a search fo
 
 
 > [!IMPORTANT]
-> The Windows Certified Products List only exists on the Sysdev Dashboard, and does not include submissions made through the Windows Hardware Devcenter Dashboard. 
+> The Windows Certified Products List only exists on the legacy Dashboard, and does not include submissions made through the Windows Hardware Dev Center Dashboard. 
 
 
 ### <span id="To_find_a_product_by_searching"></span><span id="to_find_a_product_by_searching"></span><span id="TO_FIND_A_PRODUCT_BY_SEARCHING"></span>To find a product by searching
@@ -71,11 +71,6 @@ The details page of a product contains links to the Windows Certification Verifi
 To view a Windows Certification Verification Report:
 
 -   On the Details page of a product, click any of the links in the **Verification report** section. The Certification Verification Report will open in PDF format.
-
-
-### <span id="To_get_listed_on_the_Windows_Certified_Products_List"></span><span id="to_get_listed_on_the_windows_certified_products_list"></span><span id="TO_GET_LISTED_ON_THE_WINDOWS_CERTIFIED_PRODUCTS_LIST"></span>To get listed on the Windows Certified Products List
-
-The only way for vendors to ensure a listing on the Windows Certified Products List is to submit their products to the Hardware Dev Center Dashboard for certification. For more information, see [Hardware Certification Submissions](https://msdn.microsoft.com/library/windows/hardware/br230796.aspx).
 
  
 

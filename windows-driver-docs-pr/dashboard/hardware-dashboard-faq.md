@@ -46,10 +46,6 @@ See [Managing User Roles](managing-user-roles.md) for more information.
 
 All hardware submissions to the dashboard will be processed within five business days or less, depending on whether the submission requires manual review. Manual review may be required if your submission's tests fail, if it does not have a valid filter applied, or due to internal business policy.
 
-### <span id="How_do_I_get_my_product_listed_on_Windows_Compatible_Products_List_"></span><span id="how_do_i_get_my_product_listed_on_windows_compatible_products_list_"></span><span id="HOW_DO_I_GET_MY_PRODUCT_LISTED_ON_WINDOWS_COMPATIBLE_PRODUCTS_LIST_"></span>How do I get my product listed on Windows Compatible Products List?
-
-Check that the announcement date that has been set. If it is not, set the date for either the current date or your preferred date. The product will be listed the day after the date you set.
-
 ### <span id="Why_do_I_see_a_difference_in_download_signed_files_"></span><span id="why_do_i_see_a_difference_in_download_signed_files_"></span><span id="WHY_DO_I_SEE_A_DIFFERENCE_IN_DOWNLOAD_SIGNED_FILES_"></span>Why do I see a difference in download signed files?
 
 In order to make Windows 10 more secure without affecting performance, all binaries are now receiving embedded signatures. This applies to all submissions for certification, not only Windows 10 submissions.
