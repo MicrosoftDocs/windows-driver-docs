@@ -29,7 +29,7 @@ In addition, an NDIS 6.50 driver must be compliant with the following requiremen
    
    You must update the major and minor NDIS version number in the NDIS_Xxx_DRIVER_CHARACTERISTICS structure to support NDIS 6.50. The MajorNdisVersion member must contain 6 and the MinorNdisVersion member must contain 50. This requirement applies to miniport, protocol, and filter drivers. You must also update the version information for the compiler (see [Compiling an NDIS 6.50 driver](#compiling-an-ndis-650-driver)).
 
-- NDIS 6.50 miniport drivers for Windows 10, version 1507 and later must use the NDIS 6.50 versions of APIs. For more information, see [Using NDIS 6.50 APIs](#using-ndis-650-data-structures).
+- NDIS 6.50 miniport drivers for Windows 10, version 1507 and later must use the NDIS 6.50 versions of APIs. For more information, see [Using NDIS 6.50 APIs](#using-ndis-650-apis).
 
 ## Compiling an NDIS 6.50 driver
 
@@ -48,15 +48,33 @@ For information on building a driver with the Windows 10, version 1507 release 
 
 The following APIs are new in NDIS 6.50.
 
-- [NDIS_STATUS_PD_CURRENT_CONFIG](https://msdn.microsoft.com/library/windows/hardware/dn931850)
 - [OID_WWAN_SYS_CAPS](https://msdn.microsoft.com/library/windows/hardware/mt799833)
 - [OID_WWAN_DEVICE_CAPS_EX](https://msdn.microsoft.com/library/windows/hardware/mt799830)
 - [OID_WWAN_SLOT_INFO_STATUS](https://msdn.microsoft.com/library/windows/hardware/mt799832)
 - [OID_WWAN_NETWORK_IDLE_HINT](https://msdn.microsoft.com/library/windows/hardware/dn931089) 
+- [NDIS_STATUS_PD_CURRENT_CONFIG](https://msdn.microsoft.com/library/windows/hardware/dn931850)
+- [NDIS_PD_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/dn931833)
+- [NDIS_PD_CLOSE_PROVIDER_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/dn931834)
+- [NDIS_PD_CONFIG](https://msdn.microsoft.com/library/windows/hardware/dn931835)
+- [NDIS_PD_COUNTER_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/dn931836)
+- [NDIS_PD_COUNTER_VALUE](https://msdn.microsoft.com/library/windows/hardware/dn931838)
+- [NDIS_PD_FILTER_COUNTER](https://msdn.microsoft.com/library/windows/hardware/dn931839)
+- [NDIS_PD_FILTER_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/dn931840)
+- [NDIS_PD_ON_RSS_QUEUE_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/dn931841)
+- [NDIS_PD_OPEN_PROVIDER_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/dn931842)
+- [NDIS_PD_PROVIDER_DISPATCH](https://msdn.microsoft.com/library/windows/hardware/dn931843)
+- [NDIS_PD_QUEUE](https://msdn.microsoft.com/library/windows/hardware/dn931844)
+- [NDIS_PD_QUEUE_DISPATCH](https://msdn.microsoft.com/library/windows/hardware/dn931845)
+- [NDIS_PD_QUEUE_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/dn931846)
+- [NDIS_PD_RECEIVE_QUEUE_COUNTER](https://msdn.microsoft.com/library/windows/hardware/dn931848)
+- [NDIS_PD_TRANSMIT_QUEUE_COUNTER](https://msdn.microsoft.com/library/windows/hardware/dn931849)
+- [PD_BUFFER](https://msdn.microsoft.com/library/windows/hardware/dn931863)
+- [PD_BUFFER_8021Q_INFO](https://msdn.microsoft.com/library/windows/hardware/dn931864)
+- [PD_BUFFER_VIRTUAL_SUBNET_INFO](https://msdn.microsoft.com/library/windows/hardware/dn931865)
 
 ### Updated APIs
 
-The following APIs were updated for NDIS 6.50.
+The following APIs were updated in NDIS 6.50.
 
 - [NET_PNP_EVENT_NOTIFICATION](https://msdn.microsoft.com/library/windows/hardware/ff568752)
 - [NDIS_OID_REQUEST](https://msdn.microsoft.com/library/windows/hardware/ff566710)

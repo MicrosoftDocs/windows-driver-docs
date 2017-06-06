@@ -13,13 +13,13 @@ ms.technology: windows-devices
 
 This topic introduces Network Driver Interface Specification (NDIS) 6.70 and describes its major design additions. NDIS 6.70 is included in Windows 10, version 1703.
 
-NDIS 6.70 is a minor version update to NDIS 6.60. For more information about porting NDIS 6.x drivers to NDIS 6.70, see [Porting NDIS 6.x drivers to NDIS 6.70](porting-ndis-6-x-drivers-to-ndis-6-70.md).
+NDIS 6.70 is a minor version update to NDIS 6.60 for protocol, filter, and intermediate drivers. For more information about porting NDIS 6.x drivers to NDIS 6.70, see [Porting NDIS 6.x drivers to NDIS 6.70](porting-ndis-6-x-drivers-to-ndis-6-70.md).
 
 ## Feature updates
 
 ### NetAdapterCx
 
-NDIS 6.70 coincided with the release of a major new feature for NIC drivers, the Network Adapter WDF Class Extension, a.k.a. [NetAdapterCx](../netcx/index.md). NetAdapterCx is preview only in Windows 10, version 1703. The NetAdapterCx model enables NIC driver developers to harness the full functionality and simplified driver model of WDF, meaning NIC drivers are easier to write.
+NDIS 6.70 includes a major new feature for NIC drivers, the Network Adapter WDF Class Extension, a.k.a. [NetAdapterCx](../netcx/index.md). NetAdapterCx is preview only in Windows 10, version 1703. The NetAdapterCx model enables NIC driver developers to harness the full functionality and simplified driver model of WDF, meaning NIC drivers are easier to write.
 
 ### Other feature updates
 
@@ -56,7 +56,7 @@ The NDIS miniport driver model has been superseded by the NetAdapterCx NIC drive
 
 ### Protocol, and filter drivers
 
-The WDK for Windows 10, version 1703 supports header versioning. Header versioning makes sure that NDIS 6.70 drivers use the appropriate NDIS 6.70 data structures at compile time.
+The WDK for Windows 10, version 1703 supports header versioning. Header versioning makes sure that NDIS 6.70 drivers use the appropriate NDIS 6.70 APIs at compile time.
 
 Add the following compiler settings to the Visual Studio project for your driver:
 
@@ -64,16 +64,18 @@ Add the following compiler settings to the Visual Studio project for your driver
 
 For information on building a driver with the Windows 10, version 1703 release of the WDK, see [Building a Driver](../develop/building-a-driver.md).
 
-## Using NDIS 6.70 driver data structures
+## Using NDIS 6.70 driver APIs
 
 ### NIC drivers
 
-The NDIS miniport driver model has been superseded by the NetAdapterCx NIC driver model in NDIS 6.70. For more information about NetAdapterCx data structures, see [NetAdapterCx](../netcx/index.md).
+The NDIS miniport driver model has been superseded by the NetAdapterCx NIC driver model in NDIS 6.70. For more information about NetAdapterCx APIs, see [NetAdapterCx](../netcx/index.md).
 
 ### Protocol, filter, and intermediate drivers
 
-The following data structures were updated for NDIS 6.70.
+#### New APIs
 
+The following APIs are new in NDIS 6.70.
 
+- [NDIS_STATUS_WWAN_DEVICE_CAPS_EX](https://msdn.microsoft.com/library/windows/hardware/mt782396)
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
