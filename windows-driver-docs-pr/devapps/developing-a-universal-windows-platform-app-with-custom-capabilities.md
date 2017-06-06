@@ -1,7 +1,7 @@
 ---
 title: Developing a Universal Windows Platform app with Custom Capabilities
 author: windows-driver-content
-description: Guide to developing a UWP app with custom capabilities
+description: Guide to developing a UWP app with Custom Capabilities
 keywords:
 - Custom , Capabilities
 - UWP Apps
@@ -41,12 +41,12 @@ account](https://docs.microsoft.com/windows/uwp/publish/opening-a-developer-acco
 
 ## Contacting the Custom Capability Owner
 
-For an App Developer to develop UWP Apps with custom capabilities, they
-must request access to a Custom capability from a Capability Owner. The
+For an App Developer to develop UWP Apps with Custom Capabilities, they
+must request access to a Custom Capability from a Capability Owner. The
 request should have the following:
 
 -   App PFN (Package Family Name) acquired from the Windows Store
--   The name of the custom capability
+-   The name of the Custom Capability
 -   Signature Hash of the app signing cert which can be generated from
     your .cer file using certutil.exe. The certificate must be SHA-256.
 
@@ -89,17 +89,17 @@ Service) and Drivers.
 
 *Custom Capability Architecture Diagram*
 
-### Granting custom capability access to an RPC Endpoint
+### Granting Custom Capability access to an RPC Endpoint
 
-When an UWP declares a custom capability in its app manifest, it will at
-a later point contain the SID form of the Custom capability in its
+When an UWP declares a Custom Capability in its app manifest, it will at
+a later point contain the SID form of the Custom Capability in its
 process token at runtime. By default, a RPC endpoint doesn't allow UWP’s
 (AppContainer processes) to connect to them. A UWP app must have the appropriate Custom
 capabilities for access. The following steps are taken to do so:
 
-1.  Convert the custom capability name to a SID
+1.  Convert the Custom Capability name to a SID
 
-2.  Create a Security Descriptor to the SID of the Custom capability along
+2.  Create a Security Descriptor to the SID of the Custom Capability along
 with all other needed SID's. For more information on creating a Security
 Descriptor follow the example [here](https://msdn.microsoft.com/en-us/library/windows/desktop/aa446595(v=vs.85).aspx).
 
@@ -115,7 +115,7 @@ driver INF file) set the property
 capability access. In this property, you can specify one or more custom
 capabilities.
 
-There are two methods for granting custom capability access to a driver
+There are two methods for granting Custom Capability access to a driver
 either via INF or with just the driver code as seen below.
 
 <span style="font-variant:small-caps;">*INF Method*</span>
@@ -149,7 +149,7 @@ Status = WdfDeviceAssignInterfaceProperty(
 
 ```
 
-## Adding a Custom capability to App Package Manifest
+## Adding a Custom Capability to App Package Manifest
 
 Capabilities must be declared in your Universal Windows Platform (UWP)
 app's [package
@@ -162,7 +162,7 @@ dependencies, required capabilities, visual elements, and extensibility
 points. Every app package must include one package manifest.
 
 The app developer must modify the app package manifest to include a
-capabilities attribute that declares the custom capabilities in a
+capabilities attribute that declares the Custom Capabilities in a
 similar fashion to below.
 ```xml
 <Capabilities>
@@ -171,7 +171,7 @@ similar fashion to below.
 
 ```
 Afterward, the App developer includes the SCCD file from the previous
-steps into the appx package. The signed custom capability descriptor
+steps into the appx package. The signed Custom Capability descriptor
 (SCCD) is a signed XML file that goes in the package root of the appx
 package. It has the file extension of ".sccd." They can do this by
 simply copying the SCCD file to the root of an app project folder. Once
