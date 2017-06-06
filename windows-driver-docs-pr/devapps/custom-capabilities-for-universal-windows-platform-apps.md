@@ -18,8 +18,7 @@ ms.technology: windows-devices
 # Custom Capabilities for Universal Windows Platform Apps
 
 Custom capabilities are a new capability class introduced to allow
-developers to make better use of the UWP(Universal Windows Platform). A [Universal Windows Platform
-(UWP)](https://msdn.microsoft.com/50a5605e-3a91-41db-800a-9180717c1e86)
+developers to make better use of the UWP(Universal Windows Platform). A [Universal Windows Platform (UWP)](https://msdn.microsoft.com/50a5605e-3a91-41db-800a-9180717c1e86)
 application can utilize Custom Capabilities to gain access to system
 software.
 
@@ -109,8 +108,7 @@ following steps:
 custom capability.
 
 3.  Once approved, the SCCD recives a unique custom capability string
-name in the format **CompanyName.capabilityName\_PublisherID**  that is
-recorded and emailed back to the Capability Owner
+name in the format **CompanyName.capabilityName\_PublisherID**  that is recorded and emailed back to the Capability Owner
 
 
 ## Authoring and Signing an SCCD as a Capability Owner
@@ -155,4 +153,8 @@ ONLY work on devices in Developer Mode. For more information on enabling Develop
     </xs:complexType>
 </xs:element>
 ```
+
+### See Also
+
+-  [App capability declarations](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations)
 

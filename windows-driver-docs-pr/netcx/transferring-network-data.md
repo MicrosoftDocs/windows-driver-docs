@@ -6,7 +6,7 @@ title: Transferring Network Data
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-<!--To watch a video that introduces the data path model in NetAdapterCx, see [Network Adapter Class Extension: Data Path](https://aka.ms/netadapter/video3).-->
+To watch a video that introduces the data path model in NetAdapterCx, see [Network Adapter Class Extension: Data Path](https://aka.ms/netadapter/video3).
 
 In the NetAdapterCx model, network data requests are stored in WDF queues.  Each queue is associated with a ring buffer, which contains a group of packets and pointers to indicate where in the ring to read and write next.
 
