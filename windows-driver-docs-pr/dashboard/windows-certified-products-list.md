@@ -18,7 +18,7 @@ You can find devices and systems by filtering the list or by running a search fo
 
 
 > [!IMPORTANT]
-> The Windows Certified Products List only exists on the legacy Dashboard, and does not include submissions made through the Windows Hardware Dev Center Dashboard. 
+> The Windows Certified Products List only exists on the legacy dashboard, and does not include submissions made through the Windows Hardware Dev Center Dashboard. 
 
 
 ### <span id="To_find_a_product_by_searching"></span><span id="to_find_a_product_by_searching"></span><span id="TO_FIND_A_PRODUCT_BY_SEARCHING"></span>To find a product by searching
