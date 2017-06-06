@@ -16,6 +16,9 @@ The [Windows Certified Products List](http://sysdev.microsoft.com/hardware/lpl/)
 
 You can find devices and systems by filtering the list or by running a search for a specific product name.
 
+> [!IMPORTRANT]
+> The Windows Certified Products List only exists on the Sysdev Dashboard, and does not include submissions made through the Windows Hardware Devcenter Dashboard. 
+
 ### <span id="To_find_a_product_by_searching"></span><span id="to_find_a_product_by_searching"></span><span id="TO_FIND_A_PRODUCT_BY_SEARCHING"></span>To find a product by searching
 
 To find a product by searching (in this case, Arc Mouse), follow these steps:
@@ -66,20 +69,6 @@ The details page of a product contains links to the Windows Certification Verifi
 To view a Windows Certification Verification Report:
 
 -   On the Details page of a product, click any of the links in the **Verification report** section. The Certification Verification Report will open in PDF format.
-
-### To share a link to a Windows Certification Verification Report:
--   A sharable URL contains three identification numbers separated by slashes as shown below: `https://developer.microsoft.com/dashboard/hardware/driver/DownloadCertificationReport/SellerID/PrivateProductID/SubmissionID`
-
-- The identification numbers used in the URL, and their locations are as follows:
-
-| Component | Description |
-| ---       | ---         |
-|SellerID   | The identification number of your partner account. This can be found on the account management page, under **Account settings**. |
-|PrivateProductID | The identification number generated with each product creation. Located on the driver details page for your product. See [Dashboard ID definitions](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/id-definitions) for more information. |
-|SubmissionID | The idenfication number given to each submission and submission update. Located on the driver details page for your product. See [Dashboard ID definitions](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/id-definitions) for more information. |
-
-- To create a sharable link, replace **SellerID**, **PrivateProductID**, and **SubmissionID** in the example URL above with the appropriate identification numbers.
-- This URL allows the report to be accessed and downloaded without prior authorization or access to the Windows Hardware Dev Center Dashboard.   
 
 
 ### <span id="To_get_listed_on_the_Windows_Certified_Products_List"></span><span id="to_get_listed_on_the_windows_certified_products_list"></span><span id="TO_GET_LISTED_ON_THE_WINDOWS_CERTIFIED_PRODUCTS_LIST"></span>To get listed on the Windows Certified Products List
