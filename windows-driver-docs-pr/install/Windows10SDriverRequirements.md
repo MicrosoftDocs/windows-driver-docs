@@ -7,7 +7,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Windows 10 S Driver Requriements
+# Windows 10 S Driver Requirements
 
 This section describes driver installation requirements and blocked components on Windows 10 S.  
 
