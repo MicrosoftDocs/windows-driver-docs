@@ -85,7 +85,7 @@ To publish a driver to Windows Update, [create a hardware submission](create-a-n
 
 8. If your driver targets Windows 10 S, you must select both boxes, confirming the following:
 
-  *	Your driver is compatible with and follows the driver policies outlined in the [Windows 10 S driver guidelines](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/windows10sdriverguidelines).
+  *	Your driver is compatible with and follows the driver policies outlined in the [Windows 10 S Driver Requirements](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/Windows10SDriverRequirements).
   * You verify that your driver follows the additional code integrity policies outlined in the Windows 10 S guidelines.
   * Your driver does not contain any non-Microsoft UI components or applications in the driver package.
 

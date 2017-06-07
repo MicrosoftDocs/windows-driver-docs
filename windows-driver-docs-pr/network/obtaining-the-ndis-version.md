@@ -22,7 +22,7 @@ NDIS versions might not be the same as the operating system versions. For exampl
 ## Related topics
 
 
-[NDIS Versions in Network Drivers](ndis-versions-in-network-drivers.md)
+[Overview of NDIS versions](overview-of-ndis-versions.md)
 
 [Specifying NDIS Version Information](specifying-ndis-version-information.md)
 
