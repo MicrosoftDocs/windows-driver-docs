@@ -61,9 +61,11 @@ Applies to:
 
 [USB Type-C Port Controller Interface driver class extensions reference]
 
-**Reference sample**
+**UcmTcpciCx client driver template**
 
-[UcmTcpciCx Port Controller Client Driver](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmTcpciCxClientSample)
+[UcmTcpciCx Client Driver Template](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmTcpciCxClientSample)
+
+*Need to edit UcmTcpciCxClientSample path to clearly emphasize that it isn't a sample driver that works with existing hardware, and is instead a template*
 
 ## Before you begin...
 
