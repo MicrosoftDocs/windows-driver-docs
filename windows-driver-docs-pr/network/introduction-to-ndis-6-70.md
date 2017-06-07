@@ -13,7 +13,7 @@ ms.technology: windows-devices
 
 This topic introduces Network Driver Interface Specification (NDIS) 6.70 and describes its major design additions. NDIS 6.70 is included in Windows 10, version 1703.
 
-NDIS 6.70 is a minor version update to NDIS 6.60 for protocol, filter, and intermediate drivers. For more information about porting NDIS 6.x drivers to NDIS 6.70, see [Porting NDIS 6.x drivers to NDIS 6.70](porting-ndis-6-x-drivers-to-ndis-6-70.md).
+NDIS 6.70 is a minor version update to NDIS 6.60 for miniport, protocol, filter, and intermediate drivers. For more information about porting NDIS 6.x drivers to NDIS 6.70, see [Porting NDIS 6.x drivers to NDIS 6.70](porting-ndis-6-x-drivers-to-ndis-6-70.md).
 
 ## Feature updates
 
@@ -36,30 +36,31 @@ The following network driver features have been deprecated along with the releas
 
 ### NIC drivers
 
-The model for writing miniport drivers has been superseded by the NetAdapterCx NIC driver model in NDIS 6.70. For more information about implementing a NIC driver with the NetAdapterCx, see [NetAdapterCx](../netcx/index.md).
+For more information about implementing a NIC driver with the NetAdapterCx, see [NetAdapterCx](../netcx/index.md).
 
-### Protocol, filter, and intermediate drivers
+### Miniport, protocol, filter, and intermediate drivers
 
-An NDIS 6.70 protocol, filter, or intermediate driver must follow the requirements that are defined in [Implementing an NDIS 6.60 driver](introduction-to-ndis-6-60.md#implementing-an-ndis-660-driver).
+An NDIS 6.70 driver must follow the requirements that are defined in [Implementing an NDIS 6.60 driver](introduction-to-ndis-6-60.md#implementing-an-ndis-660-driver).
 
 In addition, an NDIS 6.70 driver must be compliant with the following requirements:
 
 - An NDIS 6.70 driver must report the correct NDIS version when it registers with NDIS.
 
-   You must update the major and minor NDIS version number in the NDIS_Xxx_DRIVER_CHARACTERISTICS structure to support NDIS 6.70. The MajorNdisVersion member must contain 6 and the MinorNdisVersion member must contain 70. This requirement applies to protocol and filter drivers. You must also update the version information for the compiler (see [Compiling an NDIS 6.70 driver](#compiling-an-ndis-670-driver)).
+   You must update the major and minor NDIS version number in the NDIS_Xxx_DRIVER_CHARACTERISTICS structure to support NDIS 6.70. The MajorNdisVersion member must contain 6 and the MinorNdisVersion member must contain 70. This requirement applies to miniport, protocol and filter drivers. You must also update the version information for the compiler (see [Compiling an NDIS 6.70 driver](#compiling-an-ndis-670-driver)).
 
 ## Compiling an NDIS 6.70 driver
 
 ### NIC drivers
 
-With NDIS 6.70, the model for writing miniport drivers has been superseded by the NetAdapterCx NIC driver model. For more information about compiling a NIC driver with the NetAdapterCx, see [Porting NDIS miniport drivers to NetAdapter Class Extension (Compilation settings)](../netcx/porting-ndis-to-netadapter-cx.md#compilation-settings).
+For more information about compiling a NIC driver with the NetAdapterCx, see [Porting NDIS miniport drivers to NetAdapter Class Extension (Compilation settings)](../netcx/porting-ndis-to-netadapter-cx.md#compilation-settings).
 
-### Protocol, and filter drivers
+### Miniport, protocol, and filter drivers
 
 The WDK for Windows 10, version 1703 supports header versioning. Header versioning makes sure that NDIS 6.70 drivers use the appropriate NDIS 6.70 data structures at compile time.
 
 Add the following compiler settings to the Visual Studio project for your driver:
 
+- For a miniport driver, add ```NDIS670_MINIPORT=1```.
 - For a filter or protocol driver, add ```NDIS670=1```.
 
 For information on building a driver with the Windows 10, version 1703 release of the WDK, see [Building a Driver](../develop/building-a-driver.md).
@@ -68,9 +69,9 @@ For information on building a driver with the Windows 10, version 1703 release 
 
 ### NIC drivers
 
-The NDIS miniport driver model has been superseded by the NetAdapterCx NIC driver model in NDIS 6.70. For more information about NetAdapterCx data structures, see [NetAdapterCx](../netcx/index.md).
+For more information about NetAdapterCx data structures, see [NetAdapterCx](../netcx/index.md).
 
-### Protocol, filter, and intermediate drivers
+### Miniport, protocol, filter, and intermediate drivers
 
 #### New data structures
 
