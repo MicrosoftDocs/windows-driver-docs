@@ -29,11 +29,11 @@ In addition, an NDIS 6.50 driver must be compliant with the following requiremen
    
    You must update the major and minor NDIS version number in the NDIS_Xxx_DRIVER_CHARACTERISTICS structure to support NDIS 6.50. The MajorNdisVersion member must contain 6 and the MinorNdisVersion member must contain 50. This requirement applies to miniport, protocol, and filter drivers. You must also update the version information for the compiler (see [Compiling an NDIS 6.50 driver](#compiling-an-ndis-650-driver)).
 
-- NDIS 6.50 miniport drivers for Windows 10, version 1507 and later must use the NDIS 6.50 versions of APIs. For more information, see [Using NDIS 6.50 APIs](#using-ndis-650-apis).
+- NDIS 6.50 miniport drivers for Windows 10, version 1507 and later must use the NDIS 6.50 versions of data structures. For more information, see [Using NDIS 6.50 data structures](#using-ndis-650-data-structures).
 
 ## Compiling an NDIS 6.50 driver
 
-The WDK for Windows 10, version 1507 supports header versioning. Header versioning makes sure that NDIS 6.50 drivers use the appropriate NDIS 6.50 APIs at compile time.
+The WDK for Windows 10, version 1507 supports header versioning. Header versioning makes sure that NDIS 6.50 drivers use the appropriate NDIS 6.50 data structures at compile time.
 
 Add the following compiler settings to the Visual Studio project for your driver:
 
@@ -42,11 +42,11 @@ Add the following compiler settings to the Visual Studio project for your driver
 
 For information on building a driver with the Windows 10, version 1507 release of the WDK, see [Building a Driver](../develop/building-a-driver.md).
 
-## Using NDIS 6.50 APIs
+## Using NDIS 6.50 data structures
 
-### New APIs
+### New data structures
 
-The following APIs are new in NDIS 6.50.
+The following data structures are new in NDIS 6.50.
 
 - [OID_WWAN_SYS_CAPS](https://msdn.microsoft.com/library/windows/hardware/mt799833)
 - [OID_WWAN_DEVICE_CAPS_EX](https://msdn.microsoft.com/library/windows/hardware/mt799830)
@@ -72,9 +72,9 @@ The following APIs are new in NDIS 6.50.
 - [PD_BUFFER_8021Q_INFO](https://msdn.microsoft.com/library/windows/hardware/dn931864)
 - [PD_BUFFER_VIRTUAL_SUBNET_INFO](https://msdn.microsoft.com/library/windows/hardware/dn931865)
 
-### Updated APIs
+### Updated data structures
 
-The following APIs were updated in NDIS 6.50.
+The following data structures were updated in NDIS 6.50.
 
 - [NET_PNP_EVENT_NOTIFICATION](https://msdn.microsoft.com/library/windows/hardware/ff568752)
 - [NDIS_OID_REQUEST](https://msdn.microsoft.com/library/windows/hardware/ff566710)

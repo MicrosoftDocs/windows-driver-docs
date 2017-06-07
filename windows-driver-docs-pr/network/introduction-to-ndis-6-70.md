@@ -36,7 +36,7 @@ The following network driver features have been deprecated along with the releas
 
 ### NIC drivers
 
-The NDIS miniport driver model has been superseded by the NetAdapterCx NIC driver model in NDIS 6.70. For more information about implementing a NIC driver with the NetAdapterCx, see [NetAdapterCx](../netcx/index.md).
+The model for writing miniport drivers has been superseded by the NetAdapterCx NIC driver model in NDIS 6.70. For more information about implementing a NIC driver with the NetAdapterCx, see [NetAdapterCx](../netcx/index.md).
 
 ### Protocol, filter, and intermediate drivers
 
@@ -52,11 +52,11 @@ In addition, an NDIS 6.70 driver must be compliant with the following requiremen
 
 ### NIC drivers
 
-The NDIS miniport driver model has been superseded by the NetAdapterCx NIC driver model in NDIS 6.70. For more information about compiling a NIC driver with the NetAdapterCx, see [Porting NDIS miniport drivers to NetAdapter Class Extension (Compilation settings)](../netcx/porting-ndis-to-netadapter-cx.md#compilation-settings).
+With NDIS 6.70, the model for writing miniport drivers has been superseded by the NetAdapterCx NIC driver model. For more information about compiling a NIC driver with the NetAdapterCx, see [Porting NDIS miniport drivers to NetAdapter Class Extension (Compilation settings)](../netcx/porting-ndis-to-netadapter-cx.md#compilation-settings).
 
 ### Protocol, and filter drivers
 
-The WDK for Windows 10, version 1703 supports header versioning. Header versioning makes sure that NDIS 6.70 drivers use the appropriate NDIS 6.70 APIs at compile time.
+The WDK for Windows 10, version 1703 supports header versioning. Header versioning makes sure that NDIS 6.70 drivers use the appropriate NDIS 6.70 data structures at compile time.
 
 Add the following compiler settings to the Visual Studio project for your driver:
 
@@ -64,17 +64,17 @@ Add the following compiler settings to the Visual Studio project for your driver
 
 For information on building a driver with the Windows 10, version 1703 release of the WDK, see [Building a Driver](../develop/building-a-driver.md).
 
-## Using NDIS 6.70 driver APIs
+## Using NDIS 6.70 driver data structures
 
 ### NIC drivers
 
-The NDIS miniport driver model has been superseded by the NetAdapterCx NIC driver model in NDIS 6.70. For more information about NetAdapterCx APIs, see [NetAdapterCx](../netcx/index.md).
+The NDIS miniport driver model has been superseded by the NetAdapterCx NIC driver model in NDIS 6.70. For more information about NetAdapterCx data structures, see [NetAdapterCx](../netcx/index.md).
 
 ### Protocol, filter, and intermediate drivers
 
-#### New APIs
+#### New data structures
 
-The following APIs are new in NDIS 6.70.
+The following data structures are new in NDIS 6.70.
 
 - [NDIS_STATUS_WWAN_DEVICE_CAPS_EX](https://msdn.microsoft.com/library/windows/hardware/mt782396)
 

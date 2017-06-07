@@ -29,11 +29,11 @@ In addition, an NDIS 6.60 driver must be compliant with the following requiremen
    
    You must update the major and minor NDIS version number in the NDIS_Xxx_DRIVER_CHARACTERISTICS structure to support NDIS 6.60. The MajorNdisVersion member must contain 6 and the MinorNdisVersion member must contain 60. This requirement applies to miniport, protocol, and filter drivers. You must also update the version information for the compiler (see [Compiling an NDIS 6.60 driver](#compiling-an-ndis-660-driver)).
 
-- NDIS 6.60 miniport drivers for Windows 10, version 1607 and Windows Server 2016 and later must use the NDIS 6.60 versions of APIs. For more information, see [Using NDIS 6.60 APIs](#using-ndis-660-apis).
+- NDIS 6.60 miniport drivers for Windows 10, version 1607 and Windows Server 2016 and later must use the NDIS 6.60 versions of data structures. For more information, see [Using NDIS 6.60 data structures](#using-ndis-660-data-structures).
 
 ## Compiling an NDIS 6.60 driver
 
-The WDK for Windows 10, version 1607 supports header versioning. Header versioning makes sure that NDIS 6.60 drivers use the appropriate NDIS 6.60 APIs at compile time.
+The WDK for Windows 10, version 1607 supports header versioning. Header versioning makes sure that NDIS 6.60 drivers use the appropriate NDIS 6.60 data structures at compile time.
 
 Add the following compiler settings to the Visual Studio project for your driver:
 
@@ -42,17 +42,17 @@ Add the following compiler settings to the Visual Studio project for your driver
 
 For information on building a driver with the Windows 10, version 1607 release of the WDK, see [Building a Driver](../develop/building-a-driver.md).
 
-## Using NDIS 6.60 APIs
+## Using NDIS 6.60 data structures
 
-### New APIs
+### New data structures
 
-The following APIs are new in NDIS 6.60.
+The following data structures are new in NDIS 6.60.
 
 - [OID_WWAN_PRESHUTDOWN](https://msdn.microsoft.com/library/windows/hardware/mt593239)
 
-### Updated APIs
+### Updated data structures
 
-The following APIs were updated in NDIS 6.60.
+The following data structures were updated in NDIS 6.60.
 
 - [NDIS_NIC_SWITCH_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff566583)
 - [NDIS_RECEIVE_SCALE_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff567228)
