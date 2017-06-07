@@ -23,23 +23,22 @@ Windows 8.1 and Windows Server 2012 R2 introduce minor updates to the followi
 
 NDKPI 1.2 adds the following new elements to the NDKPI DDI:
 
--   *NdkSendAndInvalidate* ([*NDK\_FN\_SEND\_AND\_INVALIDATE*](https://msdn.microsoft.com/library/windows/hardware/dn265507)) function
--   *NdkGetCqResultsEx* ([*NDK\_FN\_GET\_CQ\_RESULTS\_EX*](https://msdn.microsoft.com/library/windows/hardware/dn265506)) function
--   [**NDK\_RESULT\_EX**](https://msdn.microsoft.com/library/windows/hardware/dn265509) structure
--   New request callback *Flags* value: **NDK\_OP\_FLAG\_DEFER**
--   New [**NDK\_ADAPTER\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh439851)**AdapterFlags** value: **NDK\_ADAPTER\_FLAG\_RDMA\_READ\_LOCAL\_INVALIDATE\_SUPPORTED**
+- *NdkSendAndInvalidate* ([*NDK\_FN\_SEND\_AND\_INVALIDATE*](https://msdn.microsoft.com/library/windows/hardware/dn265507)) function
+- *NdkGetCqResultsEx* ([*NDK\_FN\_GET\_CQ\_RESULTS\_EX*](https://msdn.microsoft.com/library/windows/hardware/dn265506)) function
+- [**NDK\_RESULT\_EX**](https://msdn.microsoft.com/library/windows/hardware/dn265509) structure
+- New request callback *Flags* value: **NDK\_OP\_FLAG\_DEFER**
+- New [**NDK\_ADAPTER\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh439851)**AdapterFlags** value: **NDK\_ADAPTER\_FLAG\_RDMA\_READ\_LOCAL\_INVALIDATE\_SUPPORTED**
 
 ### Native 802.11 Wireless LAN
 
 IEEE 802.11ac very-high throughput (VHT) PHY is now supported. The following DDI elements have been updated:
 
--   [**DOT11\_PHY\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff548741) enumeration
--   [OID\_DOT11\_CURRENT\_CHANNEL](https://msdn.microsoft.com/library/windows/hardware/ff569127)
--   [OID\_DOT11\_SUPPORTED\_PHY\_TYPES](https://msdn.microsoft.com/library/windows/hardware/ff569426)
--   [OID\_DOT11\_SUPPORTED\_OFDM\_FREQUENCY\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569425)
+- [**DOT11\_PHY\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff548741) enumeration
+- [OID\_DOT11\_CURRENT\_CHANNEL](https://msdn.microsoft.com/library/windows/hardware/ff569127)
+- [OID\_DOT11\_SUPPORTED\_PHY\_TYPES](https://msdn.microsoft.com/library/windows/hardware/ff569426)
+- [OID\_DOT11\_SUPPORTED\_OFDM\_FREQUENCY\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569425)
 
 ## Sample and Documentation Updates
-
 
 The [Hyper-V Extensible Switch forwarding extension sample](http://go.microsoft.com/fwlink/p/?LinkId=617913) has been updated to implement Hybrid Forwarding.
 
@@ -54,21 +53,11 @@ The following documentation sections have been added or significantly expanded:
 
 The NetDMA interface is not supported in Windows 8 and Windows Server 2012 and later. The documentation has now been updated to reflect this.
 
-You should be familiar with earlier versions of NDIS 6.x before learning about NDIS 6.40. For more information about previous NDIS 6.x versions, see the following topics:
-
-[Introduction to NDIS 6.0](introduction-to-ndis-6-0.md)
-
-[Introduction to NDIS 6.1](introduction-to-ndis-6-1.md)
-
-[Introduction to NDIS 6.20](introduction-to-ndis-6-20.md)
-
-[Introduction to NDIS 6.30](introduction-to-ndis-6-30.md)
-
 This section includes the following topics:
 
--   [Implementing an NDIS 6.40 Driver](implementing-an-ndis-6-40-driver.md)
--   [Using NDIS 6.40 Data Structures](using-ndis-6-40-data-structures.md)
--   [Compiling an NDIS 6.40 Driver](compiling-an-ndis-6-40-driver.md)
+- [Implementing an NDIS 6.40 Driver](implementing-an-ndis-6-40-driver.md)
+- [Using NDIS 6.40 Data Structures](using-ndis-6-40-data-structures.md)
+- [Compiling an NDIS 6.40 Driver](compiling-an-ndis-6-40-driver.md)
 
  
 

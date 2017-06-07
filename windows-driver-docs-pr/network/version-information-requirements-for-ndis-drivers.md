@@ -43,7 +43,7 @@ To access the members in structures that have version information, NDIS drivers 
 ## Related topics
 
 
-[NDIS Versions in Network Drivers](ndis-versions-in-network-drivers.md)
+[Overview of NDIS versions](overview-of-ndis-versions.md)
 
 [Specifying NDIS Version Information](specifying-ndis-version-information.md)
 

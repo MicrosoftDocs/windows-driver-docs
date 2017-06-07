@@ -19,6 +19,8 @@ This topic provides a high level summary of what's new in audio for Windows 10.
 
 Here are the new audio features in Windows 10.
 
+-   [Implementing Audio Module Communication](implementing-audio-module-communication.md)
+
 -   [Low Latency Audio Improvements](#lowlatency)
 
 -   [Signal Processing Modes and Audio Categories](#signalprocessing)
