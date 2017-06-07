@@ -11,26 +11,29 @@ ms.technology: windows-devices
 
 # Write a USB Type-C port controller driver
 
-You need to write a USB Type-C port controller driver if your USB Type-C hardware implements the USB Type-C or Power Delivery (PD) physical layer but does not implement the state machines required for the PD policy engine. 
+You need to write a USB Type-C port controller driver if your USB Type-C hardware implements the USB Type-C or Power Delivery (PD) physical layer but does not implement the state machines required for the Power Delivery. 
 
-In Windows 10, version 1703, the USB Type-C architecture has been improved to support hardware designs that implement the USB Type-C or Power Delivery (PD) physical layer but do not have a corresponding PD policy engine. For these designs, Windows 10 version 1703 provides a software-based PD policy engine and device policy manager through a new class extension called "USB Connector Manager Type-C Port Controller Interface Class Extension" (UcmTcpciCx). A client driver written by an IHV or OEM/ODM communicates with UcmTcpciCx to provide information about the hardware events needed for the PD policy engine and device policy manager in UcmTcpciCx to function. That communication is enabled through a set of programming interfaces described in this topic and in the reference section.
+In Windows 10, version 1703, the USB Type-C architecture has been improved to support hardware designs that implement the USB Type-C or Power Delivery (PD) physical layer but do not have a corresponding PD policy engine or protocol layer implementation. For these designs, Windows 10 version 1703 provides a software-based PD policy engine and device policy manager through a new class extension called "USB Connector Manager Type-C Port Controller Interface Class Extension" (UcmTcpciCx). A client driver written by an IHV or OEM/ODM communicates with UcmTcpciCx to provide information about the hardware events needed for the PD policy engine and device policy manager in UcmTcpciCx to function. That communication is enabled through a set of programming interfaces described in this topic and in the reference section.
 
 ![usb connector manager](images/tcpci-arch.png)
 
-DPM implements the PD state machines. This includes: 
+**Anch comment: In general this section is very confusing for me because we have various components that do not map 1:1 to the official PD or TCPC specs. I have gotten very very confused trying to figure out how to word this section for accuracy. I highly recommend completely abstracting how UcmTcpciCx works to say that the UcmTcpciCx driver stack (UcmTcpciCx + UcmTcpciCx client driver) is analogous to the TCPM and leaving it at that. **
+
+The Device Policy Manager (DPM) implements the PD state machines. This includes: 
 
 * PD messaging protocol sequences. For example, negotiating an initial power contract, alternate mode discovery, power contract updates, etc. 
 
 * PD receiver and transmitter state machines. This includes managing the message ID counter, message retries, etc. 
 
-DPM expects to receive cable-detection events and PD-messaging events from the port manager.
+The Device Policy Manager expects to receive cable-detection events and PD-messaging events from the port manager.
 
-The port manager implements the USB Type-C state machine logic. It is analogous to the TCPC (Type-C Port Manager) as described in the TCPCI specification. It processes alerts received from the port controller interface. It also handles events related to the execution of the state machine. When the port manager receives events relevant to PD messaging, they are forwarded to DPM. It sends its requests and those received from DPM to the port controller interface. 
+The Port Manager implements the USB Type-C state machine logic. It is analogous to the TCPM (Type-C Port Manager) as described in the TCPCI specification. It processes alerts received from the port controller interface. It also handles events related to the execution of the state machine. When the port manager receives events relevant to PD messaging, they are forwarded to DPM. It sends its requests and those received from DPM to the port controller interface. 
 
 The port manager interfaces with UcmCx to report USB Type-C-specific connector updates. 
 
-The UcmTcpciCx class extension is a client driver of UcmCx. The policy decisions about power contracts, data roles, are made in UcmCx and forwarded to UcmTcpciCx. UcmTcpciCx implements those policies and manages the Type-C and PD state machines, by using the port controller interface provided by your UcmTcpciCx client driver. 
+**Anch comment: End of confusing section**
 
+The UcmTcpciCx class extension is itself a client driver of UcmCx. The policy decisions about power contracts, data roles, are made in UcmCx and forwarded to UcmTcpciCx. UcmTcpciCx implements those policies and manages the Type-C and PD state machines, by using the port controller interface provided by your UcmTcpciCx client driver. 
 
 **Summary**
 - Services provided by the UcmTcpci class extension
