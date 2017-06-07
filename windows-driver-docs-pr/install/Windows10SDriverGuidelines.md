@@ -1,5 +1,5 @@
 ---
-title: Windows 10 S Driver Guidelines
+title: Windows 10 S Driver Requirements
 ms.author: windowsdriverdev
 ms.date: 05/05/2017
 ms.topic: article
@@ -7,11 +7,11 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Windows 10 S Driver Guidelines
+# Windows 10 S Driver Requriements
 
 This section describes driver installation requirements and blocked components on Windows 10 S.  
 
-## Driver Guidelines
+## Driver Requirements
 
 To install on Windows 10 S, driver packages must meet the following requirements:
 
