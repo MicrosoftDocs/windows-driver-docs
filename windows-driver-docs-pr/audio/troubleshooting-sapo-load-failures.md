@@ -22,7 +22,7 @@ The following information is provided to help you understand how failure is moni
 
 The audio system monitors sAPO return codes to determine whether sAPOs are being successfully incorporated into the graph. It monitors the return codes by tracking the HRESULT values that are returned by any one of the designated methods. The system maintains a separate failure count value for each LFX sAPO and the GFX sAPO that is being incorporated into the graph.
 
-The audio system monitors the returned HRESULT values form the following four methods.
+The audio system monitors the returned HRESULT values from the following four methods.
 
 -   CoCreateInstance
 

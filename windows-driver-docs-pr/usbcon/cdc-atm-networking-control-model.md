@@ -1,6 +1,7 @@
 ---
 Description: CDC ATM Networking Control Model
 title: CDC ATM Networking Control Model
+author: windows-driver-content
 ---
 
 # CDC ATM Networking Control Model

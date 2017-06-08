@@ -1,6 +1,7 @@
 ---
 Description: This topic summarizes the new features and improvements for Universal Serial Bus (USB) client drivers in Windows 8.
 title: Windows 8 - What's new for USB
+author: windows-driver-content
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article

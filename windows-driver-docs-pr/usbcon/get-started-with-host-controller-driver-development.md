@@ -1,6 +1,7 @@
 ---
 Description: This section introduces you to high-level concepts and tasks for host driver development.
 title: Architecture of USB host controller extension (UCX)
+author: windows-driver-content
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
