@@ -13,7 +13,7 @@ ms.technology: windows-devices
 
 Universal Windows drivers enable developers to create a single driver that runs across multiple different device types, from embedded systems to tablets and desktop PCs.
 
-Universal Windows drivers run on Windows 10 for desktop editions (Home, Pro, and Enterprise), Windows 10 Mobile, Windows 10 IoT Core, Windows Server 2016 Technical Preview, as well as other Windows 10 editions that share a common set of interfaces.
+Universal Windows drivers run on Windows 10 for desktop editions (Home, Pro, and Enterprise), Windows 10 S, Windows 10 Mobile, Windows 10 IoT Core, Windows Server 2016 Technical Preview, as well as other Windows 10 editions that share a common set of interfaces.
 
 ## Introduction to Universal Windows drivers
 
@@ -24,6 +24,17 @@ A Universal Windows driver is a kernel-mode or user-mode driver binary that inst
 A Universal Windows driver calls only device driver interfaces (DDIs) that are part of UWP. These DDIs are marked as **Universal** on the corresponding MSDN reference pages.
 
 A Universal Windows driver can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the Windows Driver Model (WDM).
+
+## Design Principles
+
+When you write a universal driver, there are four design principles to consider:
+
+*  Declarative: uses a universal INF file to enable driver installation on an offline image (for example, no co-installers)
+*  Componentized: customizations are in an extension INF separate from the primary driver INF, facilitating updating of a single component and different organizations owning different components
+*  Hardware support app: use custom capabilities to associate a hardware-specific UWP (Universal Windows Platform) app with your driver
+*  Universal DDI compliance: driver calls only DDIs that are included in the OneCore subset
+
+Below, you'll find requirements and recommendations related to these principles.  Also check out [Universal Driver Scenarios](universal-driver-scenarios.md), which describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) applies the DCHU design principles.
 
 ## Requirements
 
