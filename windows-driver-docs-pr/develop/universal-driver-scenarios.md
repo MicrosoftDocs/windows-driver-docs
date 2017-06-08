@@ -119,19 +119,36 @@ SoftwareVersion = 1.0.0.0
 osrfx2_DCHU_componentsoftware.exe
 ```
 
+The [source code for the Win32 app](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_component/osrfx2_DCHU_componentsoftware) is included in the DCHU sample.
+
 Note that the component INF is only installed on Desktop SKUs due to targeting set in the Windows Hardware Dev Center dashboard.  For more info, see [Publish a driver to Windows Update](https://docs.microsoft.com/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update).
 
-## Add a GUI-based companion app
+## Add a hardware support app
 
-Fabrikam would like to provide a GUI-based companion app as part of the universal driver package.  Because Win32-based companion applications cannot be part of a universal driver package, they port their Win32 app to the Universal Windows Platform (UWP) and [pair the app with the device](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-access-for-universal-windows-platform-apps).  
+Fabrikam would like to provide a GUI-based companion app as part of the universal driver package.  Because Win32-based companion applications cannot be part of a universal driver package, they port their Win32 app to the Universal Windows Platform (UWP) and [pair the app with the device](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-access-for-universal-windows-platform-apps).
 
-The new app is secure and can be updated easily in the Windows Store.   With the `componentsoftware.exe` application ready, Contoso uses [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows) to pre-load the application on Windows desktop edition images.
+The following snippet from [`osrfx2_DCHU_base.inx`] shows how the primary INF adds a custom capability to the device interface instance:
+
+```cpp
+    WDF_DEVICE_INTERFACE_PROPERTY_DATA PropertyData = { 0 };
+    static const wchar_t customCapabilities[] = L"CompanyName.yourCustomCapabilityNameTBD_YourStorePubId\0";
+
+    WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT(&PropertyData,
+                                            &GUID_DEVINTERFACE_OSRUSBFX2,
+                                            &DEVPKEY_DeviceInterface_UnrestrictedAppCapabilities);
+
+    Status = WdfDeviceAssignInterfaceProperty(Device,
+                                              &PropertyData,
+                                              DEVPROP_TYPE_STRING_LIST,
+                                              sizeof(customCapabilities),
+                                              (PVOID)customCapabilities);
+```
+
+The new app (not included in the DCHU sample) is secure and can be updated easily in the Windows Store.   With the UWP application ready, Contoso uses [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows) to pre-load the application on Windows desktop edition images.
 
 ## Run from the driver store
 
-Provide an [**INF DestinationDirs Section**](../install/inf-destinationdirs-section.md) and set `DefaultDestDir` to 13 to make the driver run from the Driver Store.  This will not work for some devices.
-
-The following snippet is from the [`osrfx2_DCHU_component.inx`] file:
+To make it easier to update the driver, Fabrikam uses the following snippet in [`osrfx2_DCHU_component.inx`] and [`osrfx2_DCHU_usersvc.inx`] to copy the driver files to the [Driver Store](../install/driver-store.md):
 
 ```
 [DestinationDirs]
@@ -140,7 +157,7 @@ DefaultDestDir = 13 ; copy to driverstore
 
 ## Summary
 
-The following diagram shows the three driver packages that Fabrikam and Contoso created to create a Universal Windows Driver.
+The following diagram shows the three driver packages that Fabrikam and Contoso created for their Universal Windows Driver.
 
 ![Extension, primary, and component driver packages](images/universal-scenarios.png)
 
