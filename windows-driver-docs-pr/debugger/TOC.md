@@ -657,6 +657,7 @@
 #### [Kernel Memory Dump](kernel-memory-dump.md)
 #### [Small Memory Dump](small-memory-dump.md)
 #### [Automatic Memory Dump](automatic-memory-dump.md)
+#### [Active Memory Dump](active-memory-dump.md)
 ### [Creating a Kernel-Mode Dump File](creating-a-kernel-mode-dump-file.md)
 #### [Enabling a Kernel-Mode Dump File](enabling-a-kernel-mode-dump-file.md)
 #### [Forcing a System Crash](forcing-a-system-crash.md)
