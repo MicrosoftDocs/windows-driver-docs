@@ -16,7 +16,7 @@ First, Fabrikam reviews the [list of INF sections and directives](https://docs.m
 
 This means that the driver package is larger than it could be, and it's harder to service the driver when a bug affects only a subset of the OEM systems that ship the driver.  Also, most of the OEM-specific code is related to branding, so Fabrikam needs to update the driver package every time an OEM is added or a minor issue affects a subset of OEM systems.
 
-To simplify, Fabrikam separates customizations that are specific to their different OEM partners (such as Contoso) from the primary INF into an extension INF.
+To simplify, Fabrikam separates customizations that are specific to their different OEM partners (such as Contoso) from the primary INF into an [extension INF](../install/using-an-extension-inf-file.md).
 
 The following snippet, updated from [`osrfx2_DCHU_extension.inx`], specifies the `Extension` class and identifies Contoso as the provider since they will own the extension driver package:
 
@@ -55,7 +55,7 @@ Fabrikam requires the LEDs on the OSR board to be treated as a child device of t
 
 To accomplish this, they encapsulate the LED device in a component and provide a separate LED controller INF [`osrfx2_DCHU_usersvc.inx`] in the base driver package to install the service.
 
-The following snippet from [`osrfx2_DCHU_base.inx`] specifies the AddComponent directive to make the LED lights a child device to the main board and a CopyINF directive to copy the LED INF to the system:
+The following snippet from [`osrfx2_DCHU_base.inx`] specifies the [**AddComponent**](../install/inf-addcomponent-directive.md) directive to make the LED lights a child device to the main board and a CopyINF directive to copy the LED INF to the system:
 
 ```
 [OsrFx2_Install.NT.Components]
@@ -68,9 +68,9 @@ ComponentIds = VID_045e&PID_94ac  ; Matches with SWC\VID_045e&PID_94ac
 CopyInf = osrfx2_DCHU_usersvc.inf
 ```
 
-Use the CopyINF directive for multifunction devices when both INFs are owned by the same organization.  Use extension INFs when different hardware partners own the code.
+Use the [**CopyINF**](../install/inf-copyinf-directive.md) directive for multifunction devices when both INFs are owned by the same organization.  Use extension INFs when different hardware partners own the code.
 
-To add and start the service, Fabrikam specifies the AddService directive in the LED controller's INF file [`osrfx2_DCHU_usersvc.inx`]:
+To add and start the service, Fabrikam specifies the [**AddService**](../install/inf-addservice-directive.md) directive in the LED controller's INF file [`osrfx2_DCHU_usersvc.inx`]:
 
 ```
 [OsrFx2UserSvc_Install.NT.Services]
@@ -90,9 +90,9 @@ osrfx2_DCHU_usersvc.exe
 
 ## Add optional software for legacy scenarios
 
-Fabrikam has an executable file `osrfx2_DCHU_componentsoftware.exe` that they previously installed using a co-installer.  This legacy software displays the registry keys set by the board and is required by the OEM.  While both parties understand that this software is not relevant on Windows SKUs that don't have UI, they agree to support it on Desktop SKUs.  To do so, they create a separate component driver package.
+Fabrikam has an executable file `osrfx2_DCHU_componentsoftware.exe` that they previously installed using a co-installer.  This legacy software displays the registry keys set by the board and is required by the OEM.  While both parties understand that this software is not relevant on Windows SKUs that do not have UI, they agree to support it on Desktop SKUs.  To do so, they create a separate component driver package.
 
-The following snippet from [`osrfx2_DCHU_base.inx`] uses the AddComponent directive to create a virtual child device:
+The following snippet from [`osrfx2_DCHU_base.inx`] uses the [**AddComponent**](../install/inf-addcomponent-directive.md) directive to create a virtual child device:
 
 ```
 [OsrFx2_Install.NT.Components]
@@ -102,7 +102,7 @@ AddComponent = osrfx2_DCHU_component,, OsrFx2_ComponentInstall
 ComponentIds = VID_045e&PID_94ab; Matches with SWC\VID_045e&PID_94ab
 ```
 
-Then, in the component INF [`osrfx2_DCHU_component.inx`], Fabrikam specifies the AddSoftware directive to install the optional executable:
+Then, in the component INF [`osrfx2_DCHU_component.inx`], Fabrikam specifies the [**AddSoftware**](../install/inf-addsoftware-directive.md) directive to install the optional executable:
 
 ```
 [OsrFx2Component_Install.NT.Software]
@@ -124,11 +124,11 @@ Note that the component INF is only installed on Desktop SKUs due to targeting s
 
 Fabrikam would like to provide a GUI-based companion app as part of the universal driver package, so they port their Win32-based companion application to the Universal Windows Platform (UWP) and [pair the app with the device](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-access-for-universal-windows-platform-apps).  
 
-The resulting app is secure and can be updated easily because it is in the Windows Store.   With the `componentsoftware.exe` application ready, Contoso uses DISM to pre-load the application offline on their Windows Desktop SKU images.
+The resulting app is secure and can be updated easily because it is in the Windows Store.   With the `componentsoftware.exe` application ready, Contoso uses [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows) to pre-load the application offline on their Windows Desktop SKU images.
 
 ## Run from the driver store
 
-When possible, use the `DestinationDirs` section to make the driver run from the Driver Store by using a `DefaultDestDir` of 13.  This will not work for some devices.
+When possible, use the [**INF DestinationDirs Section**](../install/inf-destinationdirs-section.md) section to make the driver run from the Driver Store by using a `DefaultDestDir` of 13.  This will not work for some devices.
 
 The following snippet is from the [`osrfx2_DCHU_component.inx`] file:
 
@@ -147,7 +147,6 @@ The following diagram shows the three driver packages that Fabrikam and Contoso 
 
 [Getting Started with Universal Windows drivers](getting-started-with-universal-drivers.md)
 
-<!--add links to files on GitHub, links to INF sections and directives-->
 <!--should links be full URLs or relative paths in doc repo-->
 
 [`osrfx2_DCHU_base.inx`]: https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_base/osrfx2_DCHU_base.inx
