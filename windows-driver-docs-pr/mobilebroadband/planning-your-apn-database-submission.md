@@ -36,7 +36,7 @@ COSA and the APN connectivity database are updated by using Windows Update. The 
 
 The APN update spreadsheet is used to gather the required information so Microsoft can update the COSA or the APN database appropriately. This spreadsheet is included in your submission request to Microsoft.
 
-Use the following link to download the latest APN update spreadsheet: <http://go.microsoft.com/fwlink/p/?LinkId=257829>
+Use the following link to download the latest APN update spreadsheet: <https://go.microsoft.com/fwlink/p/?linkid=851213>
 
 The following table explains each entry in the spreadsheet. 
 
