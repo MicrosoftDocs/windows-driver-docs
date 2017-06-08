@@ -1,22 +1,28 @@
 # Universal Driver Scenarios
 
-This page shows you examples of universal driver installation scenarios.
+This topic describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) applies the DCHU design principles.  You can use it as a model for your own universal driver package.
 
-## What you will need
+If you would like a local copy of the sample repo, clone from [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples).
 
-The scenarios on this page show snippets from the [DCHU sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).  If you would like a local copy of the sample repo, clone from [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples).
+## Prerequisites
+
+Before you read this section, check out the requirements and best practices for universal drivers described in [Getting Started with Universal Windows drivers](getting-started-with-universal-drivers.md)
 
 ## Overview
 
-The DCHU sample provides example scenarios where two hardware partners, Contoso (OEM) and Fabrikam (IHV) are working together to create a Universal Windows Driver for a device in Contoso's upcoming system.  The device in question is an [OSR USB FX2 learning kit](https://store.osr.com/product/osr-usb-fx2-learning-kit-v2/).  In the past, Fabrikam would write a non-universal driver package that was customized to a specific Contoso product line, and then hand it to the OEM to handle servicing.  The scenarios on this page demonstrate how they've worked together to create a Universal Windows Driver package compliant with the DCHU design principles.
+The DCHU sample provides example scenarios where two hardware partners, Contoso (OEM) and Fabrikam (IHV) are working together to create a Universal Windows Driver for a device in Contoso's upcoming system.  The device in question is an [OSR USB FX2 learning kit](https://store.osr.com/product/osr-usb-fx2-learning-kit-v2/).  In the past, Fabrikam would write a non-universal driver package that was customized to a specific Contoso product line, and then hand it to the OEM to handle servicing.  This resulted in significant maintenance overhead, so Fabrikam decides to refactor the code and create a universal driver instead.
 
-## Use extension INFs to componentize a driver package
+## Use only declarative sections and directives
 
 First, Fabrikam reviews the [list of INF sections and directives](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file) that are invalid in universal drivers.  During this exercise, Fabrikam notices that they're using many of these sections and directives in their driver package.  The biggest amount of incompliant code resides in their co-installer, which applies settings and files that depend on the target platform.
 
 This means that the driver package is larger than it could be, and it's harder to service the driver when a bug affects only a subset of the OEM systems that ship the driver.  Also, most of the OEM-specific code is related to branding, so Fabrikam needs to update the driver package every time an OEM is added or a minor issue affects a subset of OEM systems.
 
-To simplify, Fabrikam separates customizations that are specific to OEM partners (such as Contoso) from the primary INF into an [extension INF](../install/using-an-extension-inf-file.md).
+Fabrikam removes the non-universal sections and directives and uses the [InfVerif](../devtest/infverif.md) tool to verify that the new driver's INF file is universal.
+
+## Use extension INFs to componentize a driver package
+
+Next, Fabrikam separates customizations that are specific to OEM partners (such as Contoso) from the primary INF into an [extension INF](../install/using-an-extension-inf-file.md).
 
 The following snippet, updated from [`osrfx2_DCHU_extension.inx`], specifies the `Extension` class and identifies Contoso as the provider since they will own the extension driver package:
 
@@ -44,12 +50,7 @@ HKR, OSR, "OperatingParams",, "-Extended"
 HKR, OSR, "OperatingExceptions",, "x86"	
 ```
 
-For more detailed information, see:
-
-*  [Using a Universal INF File](../install/using-a-universal-inf-file.md)
-*  [Using an Extension INF File](../install/using-an-extension-inf-file.md)
-
-## Use a component to install a service in a driver package
+## Use a component to install a service from a driver package
 
 Fabrikam requires the LEDs on the OSR board to be treated as a child device of the main board.  They control these lights using a Win32 service.
 
@@ -88,7 +89,7 @@ ServiceBinary = %13%\osrfx2_DCHU_usersvc.exe
 osrfx2_DCHU_usersvc.exe
 ```
 
-## Use a component to install software in a driver package
+## Use a component to install software from a driver package
 
 Fabrikam has an executable file `osrfx2_DCHU_componentsoftware.exe` that they previously installed using a co-installer.  This legacy software displays the registry keys set by the board and is required by the OEM.  This is a GUI-based executable that only runs on Windows for desktop editions.  To install it, Fabrikam creates a separate component driver package.
 
@@ -122,13 +123,13 @@ Note that the component INF is only installed on Desktop SKUs due to targeting s
 
 ## Add a GUI-based companion app
 
-Fabrikam would like to provide a GUI-based companion app as part of the universal driver package, but Win32-based companion applications cannot be part of a universal driver package.  So they port their Win32 app to the Universal Windows Platform (UWP) and [pair the app with the device](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-access-for-universal-windows-platform-apps).  
+Fabrikam would like to provide a GUI-based companion app as part of the universal driver package.  Because Win32-based companion applications cannot be part of a universal driver package, they port their Win32 app to the Universal Windows Platform (UWP) and [pair the app with the device](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-access-for-universal-windows-platform-apps).  
 
 The new app is secure and can be updated easily in the Windows Store.   With the `componentsoftware.exe` application ready, Contoso uses [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows) to pre-load the application on Windows desktop edition images.
 
 ## Run from the driver store
 
-When possible, use the [**INF DestinationDirs Section**](../install/inf-destinationdirs-section.md) section to make the driver run from the Driver Store by using a `DefaultDestDir` of 13.  This will not work for some devices.
+Provide an [**INF DestinationDirs Section**](../install/inf-destinationdirs-section.md) and set `DefaultDestDir` to 13 to make the driver run from the Driver Store.  This will not work for some devices.
 
 The following snippet is from the [`osrfx2_DCHU_component.inx`] file:
 

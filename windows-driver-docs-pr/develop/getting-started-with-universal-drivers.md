@@ -30,7 +30,7 @@ A Universal Windows driver can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/gett
 The following are required when writing a universal driver:
 
 *  Create a universal INF file for your driver:
-    1.  Review the list of INF sections and directives that are valid in universal drivers in [Using a Universal INF File](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file#which-inf-sections-are-invalid-in-a-universal-inf-file).
+    1.  Review the list of INF sections and directives that are valid in universal drivers in [Using a Universal INF File](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file).
     2.  Use the [InfVerif](../devtest/infverif.md) tool to verify that your driver's INF file is universal.
 *  Use the ApiValidator tool to verify that the APIs your driver calls are valid for a universal driver.  See [Validating Universal Windows drivers](validating-universal-drivers.md).
 
