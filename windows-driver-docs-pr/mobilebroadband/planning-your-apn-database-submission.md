@@ -37,8 +37,7 @@ The APN update spreadsheet is used to gather the required information so Microso
 
 Use the following link to download the latest APN update spreadsheet: <https://go.microsoft.com/fwlink/p/?linkid=851213>
 
-> [!IMPORTANT]
-> The following table describes which tables to see for explanations for each entry in the spreadsheet, depending on which version of Windows you are targeting. MOs should send all information to target all devices to Microsoft when submitting an APN update, if applicable.
+The following table describes which tables to see for explanations for each entry in the spreadsheet, depending on which version of Windows you are targeting. MOs should send all information to target all devices to Microsoft when submitting an APN update, if applicable.
 
 | Target Windows version | Applicable profile | Table for explanation |
 | --- | --- | --- |
