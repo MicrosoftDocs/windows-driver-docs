@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbhubs** command displays information about USB hubs.
 
-``` syntax
+```
 !usbkd.usbhubs a[v]
 !usbkd.usbhubs x[v]
 !usbkd.usbhubs r[v]
@@ -52,7 +52,7 @@ Examples
 
 Here is an example of verbose output from the **!usbhubs** command.
 
-``` syntax
+```
 0: kd> !usbkd.usbhubs rv
 
 args 'rv'

@@ -21,7 +21,7 @@ api_type:
 
 The **!wudfext.umdevstacks** extension displays information about all device stacks in the current host process.
 
-``` syntax
+```
 !wudfext.umdevstacks [Flags] 
 ```
 

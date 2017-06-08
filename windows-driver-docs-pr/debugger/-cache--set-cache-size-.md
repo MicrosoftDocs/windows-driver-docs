@@ -21,8 +21,8 @@ api_type:
 
 The **.cache** command sets the size of the cache used to hold data obtained from the target. Also sets a number of cache and memory options.
 
-``` syntax
-    .cache Size 
+```
+.cache Size 
 .cache Option 
 .cache 
 ```

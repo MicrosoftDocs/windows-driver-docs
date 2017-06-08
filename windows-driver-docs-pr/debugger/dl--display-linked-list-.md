@@ -21,7 +21,7 @@ api_type:
 
 The **dl** command displays a LIST\_ENTRY or SINGLE\_LIST\_ENTRY linked list.
 
-``` syntax
+```
 dl[b] Address MaxCount Size
 ```
 

@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.pciaudio** extension displays a list of FDOs currently attached to PortCls.
 
-``` syntax
-    !ks.pciaudio [Options] [Level]  
+```
+!ks.pciaudio [Options] [Level]  
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

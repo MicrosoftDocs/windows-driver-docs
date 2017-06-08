@@ -67,8 +67,8 @@ Use the .scriptproviders command to confirm that the JavaScript provider is load
 ```
 0:000> .scriptproviders
 Available Script Providers:
-    NatVis (extension &#39;.NatVis&#39;)
-    JavaScript (extension &#39;.js&#39;)
+    NatVis (extension '.NatVis')
+    JavaScript (extension '.js')
 ```
 
 ## <span id="Commands"></span><span id="commands"></span><span id="COMMANDS"></span>JavaScript Scripting Meta Commands
@@ -100,8 +100,8 @@ In the example below, the JavaScript and NatVis providers are loaded.
 ```
 0:000> .scriptproviders
 Available Script Providers:
-    NatVis (extension &#39;.NatVis&#39;)
-    JavaScript (extension &#39;.js&#39;)
+    NatVis (extension '.NatVis')
+    JavaScript (extension '.js')
 ```
 
 Any file ending in ".NatVis" is understood as a NatVis script and any file ending in ".js" is understood as a JavaScript script. Either type of script can be loaded with the .scriptload command.
@@ -115,7 +115,7 @@ The .scriptload command will load a script and execute the root code of a script
 
 ```
 0:000> .scriptload C:\WinDbg\Scripts\TestScript.js
-JavaScript script successfully loaded from &#39;C:\WinDbg\Scripts\TestScript.js&#39;
+JavaScript script successfully loaded from 'C:\WinDbg\Scripts\TestScript.js'
 ```
 
 Any object model manipulations made by the script will stay in place until the script is subsequently unloaded or is run again with different content.
@@ -129,7 +129,7 @@ The .scriptrun command will load a script, execute the root code of the script, 
 
 ```
 0:000> .scriptrun C:\WinDbg\Scripts\helloWorld.js
-JavaScript script successfully loaded from &#39;C:\WinDbg\Scripts\helloWorld.js&#39;
+JavaScript script successfully loaded from 'C:\WinDbg\Scripts\helloWorld.js'
 Hello World!  We are in JavaScript!
 ```
 
@@ -144,7 +144,7 @@ The .scriptunload command unloads a loaded script and calls the *uninitializeScr
 
 ```
 0:000:x86> .scriptunload C:\WinDbg\Scripts\TestScript.js
-JavaScript script unloaded from &#39;C:\WinDbg\Scripts\TestScript.js&#39;
+JavaScript script unloaded from 'C:\WinDbg\Scripts\TestScript.js'
 ```
 
 For more information, see [**.scriptunload (Unload Script)**](-scriptunload--unload-script-.md).
@@ -157,7 +157,7 @@ The .scriptlist command will list any scripts which have been loaded via the .sc
 ```
 0:000> .scriptlist
 Command Loaded Scripts:
-    JavaScript script from &#39;C:\WinDbg\Scripts\TestScript.js&#39;
+    JavaScript script from 'C:\WinDbg\Scripts\TestScript.js'
 ```
 
 For more information, see [**.scriptlist (List Loaded Scripts)**](-scriptlist--list-loaded-scripts-.md).
@@ -190,7 +190,7 @@ Use the .scriptload command to load and execute the script. Because we used the 
 
 ```
 0:000> .scriptload c:\WinDbg\Scripts\HelloWorld.js
-JavaScript script successfully loaded from &#39;c:\WinDbg\Scripts\HelloWorld.js&#39;
+JavaScript script successfully loaded from 'c:\WinDbg\Scripts\HelloWorld.js'
 ***> Hello World! 
 ```
 
@@ -231,7 +231,7 @@ Use the .scriptload command to load the script.
 
 ```
 0:000> .scriptload c:\WinDbg\Scripts\FirstSampleFunction.js
-JavaScript script successfully loaded from &#39;c:\WinDbg\Scripts\FirstSampleFunction.js&#39;
+JavaScript script successfully loaded from 'c:\WinDbg\Scripts\FirstSampleFunction.js'
 ```
 
 After the script is loaded the additional functionality is available in the debugger. Use the [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command to display *Debugger.State.Scripts* to see that our script is now resident.
@@ -275,7 +275,7 @@ When you are done working with the script use the .scriptunload command to unloa
 
 ```
 0:000> .scriptunload c:\WinDbg\Scripts\FirstSampleFunction.js
-JavaScript script successfully unloaded from &#39;c:\WinDbg\Scripts\FirstSampleFunction.js&#39;
+JavaScript script successfully unloaded from 'c:\WinDbg\Scripts\FirstSampleFunction.js'
 ```
 
 ### <span id="Automate"></span><span id="automate"></span><span id="AUTOMATE"></span>Debugger Command Automation
@@ -317,7 +317,7 @@ Use the .scriptload command to load the RunCommands script.
 
 ```
 0:000> .scriptload c:\WinDbg\Scripts\RunCommands.js 
-JavaScript script successfully loaded from &#39;c:\WinDbg\Scripts\RunCommands.js&#39;
+JavaScript script successfully loaded from 'c:\WinDbg\Scripts\RunCommands.js'
 ```
 
 After the script is loaded the additional functionality is available in the debugger. Use the [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command to display *Debugger.State.Scripts.RunCommands* to see that our script is now resident.
@@ -569,7 +569,7 @@ Use .scriptload to load the array visualizer script.
 
 ```
 0:000> .scriptload c:\WinDbg\Scripts\arrayVisualizer.js
-JavaScript script successfully loaded from &#39;c:\WinDbg\Scripts\arrayVisualizer.js&#39;
+JavaScript script successfully loaded from 'c:\WinDbg\Scripts\arrayVisualizer.js'
 ```
 
 Now, when the dx command is used the script visualizer will display rows of array content.
@@ -624,7 +624,7 @@ This method can now be utilized in the example LINQ query above. First we load t
 
 ```
 0:000> .scriptload c:\WinDbg\Scripts\arrayVisualizer2.js
-JavaScript script successfully loaded from &#39;c:\WinDbg\Scripts\arrayVisualizer2.js&#39;
+JavaScript script successfully loaded from 'c:\WinDbg\Scripts\arrayVisualizer2.js'
 
 0:000> dx @$myScript = Debugger.State.Scripts.arrayVisualizer2.Contents
 ```
@@ -669,10 +669,10 @@ This example will evaluate notepad's open and save dialog: *notepad!ShowOpenSave
         //When we hit the open dialog, continue.
         //When we hit the save dialog, break.
     if(host.memory.readWideString(address)=="Open"){
-        //host.diagnostics.debugLog("We&#39;re opening, let&#39;s continue!\n");
+        //host.diagnostics.debugLog("We're opening, let's continue!\n");
         ctl.ExecuteCommand("gc");
     }else{
-        //host.diagnostics.debugLog("We&#39;re saving, let&#39;s break!\n");
+        //host.diagnostics.debugLog("We're saving, let's break!\n");
     }
  
  }
@@ -693,7 +693,7 @@ bp notepad!ShowOpenSaveDialog ".scriptrun C:\\WinDbg\\Scripts\\DebugHandler.js"
 Then when the File &gt; Save option is selected in notepad, the script is run, the g command is not sent, and a break in code execution occurs.
 
 ```
-JavaScript script successfully loaded from &#39;C:\WinDbg\Scripts\DebugHandler.js&#39;
+JavaScript script successfully loaded from 'C:\WinDbg\Scripts\DebugHandler.js'
 notepad!ShowOpenSaveDialog:
 00007ff6`f9761884 48895c2408      mov     qword ptr [rsp+8],rbx ss:000000db`d2a9f2f0=0000021985fe2060
 ```
@@ -755,7 +755,7 @@ Use the .scriptload command to load the script.
 
 ```
 0:000> .scriptload c:\WinDbg\Scripts\PlayWith64BitValues.js
-JavaScript script successfully loaded from &#39;c:\WinDbg\Scripts\PlayWith64BitValues.js&#39;
+JavaScript script successfully loaded from 'c:\WinDbg\Scripts\PlayWith64BitValues.js'
 ```
 
 To make the script a bit more convenient to work with, assign a variable in the debugger to hold the contents of the script using the dx command.
@@ -827,7 +827,7 @@ Use the .scriptload command to load the script.
 
 ```
 0:000> .scriptload c:\WinDbg\Scripts\ComparisonWith64BitValues.js
-JavaScript script successfully loaded from &#39;c:\WinDbg\Scripts\ComparisonWith64BitValues.js&#39;
+JavaScript script successfully loaded from 'c:\WinDbg\Scripts\ComparisonWith64BitValues.js'
 ```
 
 To make the script a bit more convenient to work with, assign a variable in the debugger to hold the contents of the script using the dx command.

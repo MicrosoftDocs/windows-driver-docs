@@ -21,7 +21,7 @@ api_type:
 
 The **!diskspace** extension displays the amount of free space on a hard disk of the target computer.
 
-``` syntax
+```
 !diskspace Drive[:]
 ```
 
@@ -57,7 +57,7 @@ Remarks
 
 Here is an example:
 
-``` syntax
+```
 kd> !diskspace c:
 Checking Free Space for c: ..........
    Cluster Size 0 KB

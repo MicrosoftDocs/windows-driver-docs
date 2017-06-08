@@ -21,7 +21,7 @@ api_type:
 
 The **!wudfext.wudffile** extension displays information about a framework file.
 
-``` syntax
+```
 !wudfext.wudffile pWDFFile [TypeName] 
 ```
 

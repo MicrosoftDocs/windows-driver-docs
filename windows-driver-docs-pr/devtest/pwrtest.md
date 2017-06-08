@@ -53,11 +53,11 @@ PwrTest functionality is separated into scenarios. For information about these s
 
     **Examples**
 
-    ``` syntax
+    ```
     pwrtest /? 
     ```
 
-    ``` syntax
+    ```
     pwrtest /battery /c:4 /i:1000
     ```
 

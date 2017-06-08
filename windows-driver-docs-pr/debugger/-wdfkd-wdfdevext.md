@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfdevext** extension displays information that is associated with the **DeviceExtension** member of a Microsoft Windows Driver Model (WDM) DEVICE\_OBJECT structure.
 
-``` syntax
+```
 !wdfkd.wdfdevext DeviceExtension
 ```
 
@@ -48,7 +48,7 @@ Remarks
 
 Here is an example for HdAudBus.sys, which is a KMDF driver. Use [**!devnode**](-devnode.md) to find a device node that has HdAudBus as its function driver. Take the physical device object (PDO) from the output and pass it to [**!devstack**](-devstack.md). Take the device extension address from the output of **!devstack** and pass it to **!wdfdevext**.
 
-``` syntax
+```
 0: kd> !devnode 0 1 hdaudbus
 Dumping IopRootDeviceNode (= 0xffffe000002cfd30)
 DevNode 0xffffe000009b7a50 for PDO 0xffffe00000226880
@@ -74,7 +74,7 @@ Device context is 0xffffe000009a3c00
 
 Here is an example for Wudfrd.sys, which is the function driver for the kernel-mode portion of a UMDF 2 driver stack. Use [**!devnode**](-devnode.md) to find a device node that has Wudfrd as its function driver. Take the physical device object (PDO) from the output and pass it to [**!devstack**](-devstack.md). Take the device extension address from the output of **!devstack** and pass it to **!wdfdevext**.
 
-``` syntax
+```
 0: kd> !devnode 0 1 wudfrd
 Dumping IopRootDeviceNode (= 0xffffe000002cfd30)
 DevNode 0xffffe00000a1e530 for PDO 0xffffe00000b15b00

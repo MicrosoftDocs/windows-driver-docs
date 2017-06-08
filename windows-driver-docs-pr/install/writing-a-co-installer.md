@@ -21,7 +21,7 @@ ms.technology: windows-devices
 ## <a href="" id="ddk-writing-a-co-installer-dg"></a>
 
 
-**Note**  Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-configurable-inf-file.md).
+**Note**  Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 

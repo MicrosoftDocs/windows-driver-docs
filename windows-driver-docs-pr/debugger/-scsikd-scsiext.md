@@ -21,8 +21,8 @@ api_type:
 
 The **!scsikd.scsiext** extension displays detailed information about the specified SCSI port extension.
 
-``` syntax
-    !scsikd.scsiext Device 
+```
+!scsikd.scsiext Device 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

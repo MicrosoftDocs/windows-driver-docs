@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfextendwatchdog** extension extends the time-out period (from 10 minutes to 24 hours) of the framework's watchdog timer during power transitions.
 
-``` syntax
+```
 !wdfkd.wdfextendwatchdog Handle [Extend]
 ```
 

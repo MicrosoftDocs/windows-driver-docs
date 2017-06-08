@@ -483,7 +483,7 @@ In the preceding table, several of the parameters are pointers to structures. Fo
 
 Some of the structures that appear in the preceding table are not defined in any public header file. You can see the definitions of those structures by using the [**dt**](dt--display-type-.md) debugger command. The following example shows how to use the **dt** command to see the **DEVICE\_OBJECT\_POWER\_EXTENSION** structure.
 
-``` syntax
+```
 3: kd> dt nt!DEVICE_OBJECT_POWER_EXTENSION
    +0x000 IdleCount        : Uint4B
    +0x004 BusyCount        : Uint4B

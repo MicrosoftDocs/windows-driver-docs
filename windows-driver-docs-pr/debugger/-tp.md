@@ -21,7 +21,7 @@ api_type:
 
 The **!tp** extension displays thread pool information.
 
-``` syntax
+```
 !tp pool Address [Flags] 
 !tp tqueue Address [Flags] 
 !tp ItemType Address [Flags] 

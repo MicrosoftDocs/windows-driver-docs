@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbtriage** command displays a list of USB drivers and device objects.
 
-``` syntax
+```
 !usbkd.usbtriage
 ```
 

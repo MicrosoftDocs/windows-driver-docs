@@ -21,8 +21,8 @@ api_type:
 
 The **.echotime** command displays the current time.
 
-``` syntax
-    .echotime 
+```
+.echotime 
 ```
 
 ## <span id="ddk_meta_show_current_time_dbg"></span><span id="DDK_META_SHOW_CURRENT_TIME_DBG"></span>

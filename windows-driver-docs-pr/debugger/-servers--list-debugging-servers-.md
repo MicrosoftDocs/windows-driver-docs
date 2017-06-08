@@ -21,8 +21,8 @@ api_type:
 
 The **.servers** command lists all debugging servers that have been established by this debugger.
 
-``` syntax
-    .servers 
+```
+.servers 
 ```
 
 ## <span id="ddk_meta_list_debugging_servers_dbg"></span><span id="DDK_META_LIST_DEBUGGING_SERVERS_DBG"></span>

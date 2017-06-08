@@ -21,8 +21,8 @@ api_type:
 
 The **!devobj** extension displays detailed information about a DEVICE\_OBJECT structure.
 
-``` syntax
-    !devobj DeviceObject 
+```
+!devobj DeviceObject 
 ```
 
 ## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters

@@ -21,7 +21,7 @@ api_type:
 
 The **!asd** extension displays a specified number of failure analysis entries from the data cache, starting at the specified address.
 
-``` syntax
+```
 !asd Address DataUsed
 ```
 

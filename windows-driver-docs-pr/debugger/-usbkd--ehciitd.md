@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.\_ehciitd** command displays information from a **usbehci!\_HCD\_HSISO\_TRANSFER\_DESCRIPTOR** structure.
 
-``` syntax
+```
 !usbkd._ehciitd StructAddr
 ```
 

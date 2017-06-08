@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 This section contains the following topics which describe the various software components that can be optionally developed to enhance device and driver installations:
 
-**Note**  Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-configurable-inf-file.md).
+**Note**  Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 

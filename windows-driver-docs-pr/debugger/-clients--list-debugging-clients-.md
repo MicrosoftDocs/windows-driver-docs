@@ -21,7 +21,7 @@ api_type:
 
 The **.clients** command lists all debugging clients currently connected to the debugging session.
 
-``` syntax
+```
     .clients 
 ```
 

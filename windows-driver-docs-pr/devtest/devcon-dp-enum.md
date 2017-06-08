@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Lists the third-party (OEM) driver packages in the driver store on the local computer.
 
-``` syntax
+```
     devcon dp_enum
 
    

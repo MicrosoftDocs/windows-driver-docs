@@ -23,13 +23,13 @@ The **!logonsession** extension displays information about a specified logon ses
 
 Free Build Syntax
 
-``` syntax
+```
 !logonsession LUID
 ```
 
 Checked Build Syntax
 
-``` syntax
+```
 !logonsession LUID [InfoLevel]
 ```
 
@@ -74,7 +74,7 @@ Remarks
 
 Here is an example of the output from this extension on a free build:
 
-``` syntax
+```
 kd> !logonsession 0
 
 Dumping all logon sessions.

@@ -21,8 +21,8 @@ api_type:
 
 The **!ndiskd.help** command displays a list of available !ndiskd commands with a brief description of each one.
 
-``` syntax
-    !ndiskd.help 
+```
+!ndiskd.help 
 ```
 
 ## <span id="DLL"></span><span id="dll"></span>DLL
@@ -35,7 +35,7 @@ Examples
 
 The following example shows the list of help commands using **!ndiskd.help**.
 
-```cmd
+```
 3: kd> !ndiskd.help
 
 NDIS KD EXTENSIONS
@@ -62,7 +62,7 @@ Some alternate commands are listed at the bottom of this example. These commands
 
  
 
-```cmd
+```
 3: kd> !ndiskd.help -all
 
 NDIS KD EXTENSIONS

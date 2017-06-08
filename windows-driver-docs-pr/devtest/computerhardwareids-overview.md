@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 To run ComputerHardwareIds, type a command at the command prompt. Use the following syntax and parameters.
 
-``` syntax
+```
     ComputerHardwareIds
 
    

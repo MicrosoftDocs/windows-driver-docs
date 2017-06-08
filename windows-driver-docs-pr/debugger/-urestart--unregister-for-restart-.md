@@ -21,7 +21,7 @@ api_type:
 
 The **.urestart** command unregisters the debugging session for restart in case of a reboot or an application failure.
 
-``` syntax
+```
 .urestart
 ```
 

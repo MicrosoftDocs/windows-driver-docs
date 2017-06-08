@@ -21,7 +21,7 @@ api_type:
 
 The double question mark (**??**) command evaluates and displays the value of an expression according to C++ expression rules.
 
-``` syntax
+```
 ?? Expression
 ```
 

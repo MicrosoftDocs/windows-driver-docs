@@ -21,8 +21,8 @@ api_type:
 
 The **!ndiskd.rcvqueue** command displays information about a receive queue.
 
-``` syntax
-    !ndiskd.rcvqueue [-handle <x>] [-filters] [-mem] [-verbose] [-rcvqueueverbosity <x>] 
+```
+!ndiskd.rcvqueue [-handle <x>] [-filters] [-mem] [-verbose] [-rcvqueueverbosity <x>] 
 ```
 
 ## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
@@ -53,7 +53,7 @@ Examples
 
 To obtain the receive queue handle, first enter the [**!ndiskd.netadapter**](-ndiskd-netadapter.md) command with no parameters to see the list of net adapters, their drivers, and their handles. In the following example, look for the Microsoft ISATAP Adapter \#2's NetAdapter handle, ffff8083e02ce1a0.
 
-```cmd
+```
 3: kd> !ndiskd.netadapter
     Driver             NetAdapter          Name                                 
     ffff8083e2668970   ffff8083e02ce1a0    Microsoft ISATAP Adapter #2
@@ -62,7 +62,7 @@ To obtain the receive queue handle, first enter the [**!ndiskd.netadapter**](-nd
 
 Next, with the net adapter's handle, use the **!ndiskd.netadapter -handle -rcvqueues** command to obtain a list of receive queues for this net adapter along with their handles. In this example, there is only one receive queue (the default one) with a handle of ffff8083e3a3d3a0.
 
-```cmd
+```
 3: kd> !ndiskd.netadapter ffff8083e02ce1a0 -rcvqueues
 
 
@@ -76,7 +76,7 @@ RECEIVE QUEUES
 
 Now you can use the queue handle to examine the receive queue details with the **!ndiskd.rcvqueue** command.
 
-```cmd
+```
 3: kd> !ndiskd.rcvqueue ffff8083e3a3d3a0
 
 

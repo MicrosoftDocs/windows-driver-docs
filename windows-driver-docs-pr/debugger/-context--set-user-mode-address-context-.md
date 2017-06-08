@@ -21,7 +21,7 @@ api_type:
 
 The **.context** command specifies which page directory of a process will be used for the user-mode address context, or displays the current user-mode address context.
 
-``` syntax
+```
 .context [PageDirectoryBase]
 ```
 
@@ -75,7 +75,7 @@ If you are doing crash dump debugging, the [**.cache**](-cache--set-cache-size-.
 
 Here is an example. Use the [**!process**](-process.md) extension to find the directory base for the desired process:
 
-``` syntax
+```
 kd> !process 0 0
 **** NT ACTIVE PROCESS DUMP ****
 PROCESS fe5039e0  SessionId: 0  Cid: 0008    Peb: 00000000  ParentCid: 0000
@@ -91,13 +91,13 @@ PROCESS fe3c0d60  SessionId: 0  Cid: 0208    Peb: 7ffdf000  ParentCid: 00d4
 
 Now use the **.context** command with this page directory base.
 
-``` syntax
+```
 kd> .context 0011f000
 ```
 
 This enables you to examine the address space in various ways. For example, here is the output of the [**!peb**](-peb.md) extension:
 
-``` syntax
+```
 kd> !peb
 PEB at 7FFDF000
     InheritedAddressSpace:    No

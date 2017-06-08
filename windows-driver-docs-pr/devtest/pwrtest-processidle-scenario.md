@@ -17,7 +17,7 @@ The PwrTest ProcessIdle Scenario forces background maintenance tasks to run (now
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 pwrtest /processidle [/t:n] [/?] 
 ```
 
@@ -26,11 +26,11 @@ Specifies the maximum time (in minutes) for the scenario to run, after which the
 
 **Examples**
 
-``` syntax
+```
 pwrtest /processidle  
 ```
 
-``` syntax
+```
 pwrtest /processidle  /t:30
 ```
 

@@ -23,14 +23,14 @@ The **pa** command executes the program until the specified address is reached, 
 
 User-Mode
 
-``` syntax
+```
 [~Thread] pa [r] [= StartAddress] StopAddress ["Command"]
 ```
 
 Kernel-Mode
 
-``` syntax
-    pa [r] [= StartAddress] StopAddress ["Command"]
+```
+pa [r] [= StartAddress] StopAddress ["Command"]
 ```
 
 ## <span id="ddk_cmd_step_to_address_dbg"></span><span id="DDK_CMD_STEP_TO_ADDRESS_DBG"></span>Parameters

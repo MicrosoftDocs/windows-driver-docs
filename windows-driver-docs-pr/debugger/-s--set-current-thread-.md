@@ -23,7 +23,7 @@ The **~s** command sets or displays the current thread number.
 
 In user mode, **~s** sets the current thread. Do not confuse this command confused with the [**~s (Change Current Processor)**](-s--change-current-processor-.md) command (which works only in kernel mode), the [**|s (Set Current Process)**](-s--set-current-process-.md) command, the [**||s (Set Current System)**](--s--set-current-system-.md) command, or the [**s (Search Memory)**](s--search-memory-.md) command.
 
-``` syntax
+```
 ~Thread s 
 ~ s 
 ```

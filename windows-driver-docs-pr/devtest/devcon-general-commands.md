@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 DevCon (DevCon.exe) is a command line tool that can display detailed information about devices on computers running Windows. You can also use DevCon to enable, disable, install, configure, and remove devices. DevCon uses the following syntax.
 
-``` syntax
+```
 devcon [/m:\\computer] [/r] command [arguments] 
 ```
 

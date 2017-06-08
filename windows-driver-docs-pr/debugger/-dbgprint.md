@@ -21,7 +21,7 @@ api_type:
 
 The **!dbgprint** extension displays a string that was previously sent to the **DbgPrint** buffer.
 
-``` syntax
+```
 !dbgprint
 ```
 

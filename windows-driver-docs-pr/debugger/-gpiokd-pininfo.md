@@ -21,7 +21,7 @@ api_type:
 
 The **!gpiokd.pininfo** command displays information about a specified GPIO pin.
 
-``` syntax
+```
 !gpiokd.pininfo PinAddress
 ```
 

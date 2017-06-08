@@ -73,7 +73,7 @@ You can activate the Miscellaneous Checks option for one or more drivers by usin
 
     On Windows Vista and later versions of Windows, you can also activate and deactivate Miscellaneous Checks without rebooting the computer by adding the **/volatile** parameter to the command. For example:
 
-    ``` syntax
+    ```
     verifier /volatile /flags 0x800 /adddriver MyDriver.sys
     ```
 
@@ -81,7 +81,7 @@ You can activate the Miscellaneous Checks option for one or more drivers by usin
 
     The Miscellaneous Checks option is also included in the standard settings. For example:
 
-    ``` syntax
+    ```
     verifier  /standard /driver MyDriver.sys
     ```
 
@@ -100,7 +100,7 @@ To view the results of the Miscellaneous Checks option, use the **!verifier** ex
 
 In the following example, the Miscellaneous Checks option detected an active ERESOURCE structure in memory that the driver was trying to free, resulting in [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://msdn.microsoft.com/library/windows/hardware/ff560187). The Bug Check 0xC4 display includes the address of the ERESOURCE and the affected memory.
 
-``` syntax
+```
 1: kd> !verifier 1
 
 Verify Level 800 ... enabled options are:
@@ -153,7 +153,7 @@ Pool page 9655d468 region is Paged pool
 
 To find information about the ERESOURCE, use the [**!locks (!kdext\*.locks)**](https://msdn.microsoft.com/library/windows/hardware/ff563980) debugger extension with the address of the structure.
 
-``` syntax
+```
 1: kd> !locks 0x9655D4A8     <<<<<- ERESOURCE @0x9655D4A8 lives inside the pool block being freed
 
 Resource @ 0x9655d4a8    Available
@@ -162,7 +162,7 @@ Resource @ 0x9655d4a8    Available
 
 You can also use the **kb** debugger command to display a stack trace of the calls that led to the failure. The following example shows the stack, including the call to **ExFreePoolWithTag** that Driver Verifier intercepted.
 
-``` syntax
+```
 1: kd> kb
 ChildEBP RetAddr  Args to Child
 92f6374c 82c2c95a 00000003 92f68cdc 00000000 nt!RtlpBreakWithStatusInstruction 

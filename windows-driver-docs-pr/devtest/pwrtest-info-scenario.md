@@ -17,7 +17,7 @@ The PwrTest Info Scenario captures and logs the current system power information
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 pwrtest /info:option [/p:{n|a|*}] [/w:n]  [/?] 
 ```
 
@@ -84,27 +84,27 @@ Specifies the time in seconds to wait for PPM rundown event (default is 10 secon
 
 **Examples**
 
-``` syntax
+```
 pwrtest /info:all
 ```
 
-``` syntax
+```
   pwrtest /info:battery
 ```
 
-``` syntax
+```
   pwrtest /info:ppm
 ```
 
-``` syntax
+```
   pwrtest /info:ppm /p:1
 ```
 
-``` syntax
+```
  pwrtest /info:ppmidle
 ```
 
-``` syntax
+```
   pwrtest /info:ppmperf /p:2
 ```
 

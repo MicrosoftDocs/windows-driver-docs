@@ -21,7 +21,7 @@ api_type:
 
 The **!vm** extension displays summary information about virtual memory use statistics on the target system.
 
-``` syntax
+```
 !vm [Flags]
 ```
 
@@ -87,7 +87,7 @@ Remarks
 
 Here is an example of the short output produced when *Flags* is 1:
 
-``` syntax
+```
 kd> !vm 1
 
 *** Virtual Memory Usage ***

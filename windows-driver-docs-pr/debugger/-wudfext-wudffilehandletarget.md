@@ -21,7 +21,7 @@ api_type:
 
 The **!wudfext.wudffilehandletarget** extension displays information about a file-handle-based I/O target.
 
-``` syntax
+```
 !wudfext.wudffilehandletarget pWDFFileHandleTarget TypeName
 ```
 

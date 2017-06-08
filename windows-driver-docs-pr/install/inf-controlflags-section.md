@@ -20,13 +20,13 @@ ms.technology: windows-devices
 # INF ControlFlags Section
 
 
-**Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-configurable-inf-file.md).
+**Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 
 A **ControlFlags** section identifies devices for which Windows should take certain unique actions during installation.
 
-``` syntax
+```
 [ControlFlags]
 
 ExcludeFromSelect=* | 

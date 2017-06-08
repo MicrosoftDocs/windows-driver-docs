@@ -24,7 +24,7 @@ A per-manufacturer *Models* section identifies at least one device, references t
 
 Any entry in the per-manufacturer *Models* section can also specify one or more additional device IDs for models that are compatible with the device designated by the initial hardware ID and are controlled by the same drivers.
 
-``` syntax
+```
 [models-section-name] |
 [models-section-name.TargetOSVersion]  (Windows XP and later versions of Windows)
 

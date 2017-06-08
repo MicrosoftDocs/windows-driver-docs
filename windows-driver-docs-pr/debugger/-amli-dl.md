@@ -23,7 +23,7 @@ The **!amli dl** extension displays a portion of the AML interpreter's event log
 
 Syntax
 
-``` syntax
+```
 !amli dl
 ```
 

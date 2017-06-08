@@ -80,7 +80,7 @@ Then set **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Man
 
 This allows you to display more detailed information about the PTE owners. For example:
 
-``` syntax
+```
 0: kd> !sysptes 4
 
 0x2c47 System PTEs allocated to mapping locked pages

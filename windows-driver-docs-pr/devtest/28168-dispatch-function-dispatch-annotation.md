@@ -66,7 +66,7 @@ __drv_dispatchType(IRP_MJ_CREATE_NAMED_PIPE)
 
 In this situation, the Code Analysis tool reports this error:
 
-``` syntax
+```
 The function 'DispatchPassIrp' does not have a _Dispatch_type_ annotation matching dispatch table position 'IRP_MJ_CREATE' (0x00):  This can be  corrected either by adding a _Dispatch_type_ annotation to the function declaration or correcting the dispatch table entry being used.
 ```
 

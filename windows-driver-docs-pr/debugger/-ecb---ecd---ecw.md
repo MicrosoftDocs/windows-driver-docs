@@ -21,8 +21,8 @@ api_type:
 
 The **!ecb**, **!ecd**, and **!ecw** extensions write to the PCI configuration space.
 
-``` syntax
-    !ec Bus.Device.Function Offset Data 
+```
+!ec Bus.Device.Function Offset Data 
 ```
 
 ## <span id="ddk__ec__dbg"></span><span id="DDK__EC__DBG"></span>Parameters

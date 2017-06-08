@@ -21,7 +21,7 @@ api_type:
 
 The **!hidppd** extension displays the contents of the HIDP\_PREPARSED\_DATA structure.
 
-``` syntax
+```
 !hidppd Address
 ```
 

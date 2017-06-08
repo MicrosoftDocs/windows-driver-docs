@@ -21,8 +21,8 @@ api_type:
 
 The **.event\_code** command displays the current event instructions.
 
-``` syntax
-    .event_code 
+```
+.event_code 
 ```
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment

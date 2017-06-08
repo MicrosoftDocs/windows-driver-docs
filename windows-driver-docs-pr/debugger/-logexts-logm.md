@@ -21,8 +21,8 @@ api_type:
 
 The **!logexts.logm** extension creates or displays a module inclusion list or a module exclusion list.
 
-``` syntax
-    !logexts.logm i Modules 
+```
+!logexts.logm i Modules 
 !logexts.logm x Modules 
 !logexts.logm 
 ```

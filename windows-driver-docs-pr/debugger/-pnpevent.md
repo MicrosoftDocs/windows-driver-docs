@@ -21,7 +21,7 @@ api_type:
 
 The **!pnpevent** extension displays the Plug and Play device event queue.
 
-``` syntax
+```
 !pnpevent [DeviceEvent]
 ```
 

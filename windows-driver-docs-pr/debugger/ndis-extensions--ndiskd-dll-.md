@@ -20,7 +20,7 @@ This section describes commands available in !ndiskd, a debugger extension that 
 
 The commands can be found in Ndiskd.dll. To load the symbols, enter **.reload /f ndis.sys** in the debugger command window. To confirm the symbols loaded successfully, use the [**!lmi ndis**](-lmi.md) extension and look for the phrase "Symbols loaded successfully" toward the bottom. Your output should look similar to the following example:
 
-```cmd
+```
 3: kd> !lmi ndis
 Loaded Module Info: [ndis] 
          Module: ndis

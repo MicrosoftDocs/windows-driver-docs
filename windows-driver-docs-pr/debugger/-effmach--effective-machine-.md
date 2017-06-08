@@ -21,7 +21,7 @@ api_type:
 
 The **.effmach** command displays or changes the processor mode that the debugger uses.
 
-``` syntax
+```
 .effmach [MachineType]
 ```
 

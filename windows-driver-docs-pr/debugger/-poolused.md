@@ -21,7 +21,7 @@ api_type:
 
 The **!poolused** extension displays memory use summaries, based on the tag used for each pool allocation.
 
-``` syntax
+```
 !poolused [Flags [TagString]] 
 ```
 
@@ -86,7 +86,7 @@ The display for this command shows the memory use for each tag in paged pool and
 
 Here is a partial example of the output from this extension:
 
-``` syntax
+```
 0: kd> !poolused
    Sorting by  Tag
 

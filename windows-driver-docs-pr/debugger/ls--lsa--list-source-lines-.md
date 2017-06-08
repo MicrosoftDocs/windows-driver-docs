@@ -21,7 +21,7 @@ api_type:
 
 The **ls** and **lsa** commands display a series of lines from the current source file and advance the current source line number.
 
-``` syntax
+```
 ls [.] [first] [, count] 
 lsa [.] address [, first [, count]] 
 ```

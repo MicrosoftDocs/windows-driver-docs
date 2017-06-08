@@ -21,7 +21,7 @@ api_type:
 
 The **!frozen** extension displays the state of each processor.
 
-``` syntax
+```
 !frozen
 ```
 
@@ -51,7 +51,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-``` syntax
+```
 0: kd> !frozen
 Processor states:
        0 : Current

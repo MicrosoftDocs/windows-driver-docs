@@ -23,7 +23,7 @@ The **!amli be** extension enables an AML breakpoint.
 
 Syntax
 
-``` syntax
+```
 !amli be Breakpoint!amli be *
 ```
 

@@ -24,7 +24,7 @@ api_type:
 
 The **!vad\_reload** extension reloads the user-mode modules for a specified process by using the virtual address descriptors (VADs) of that process.
 
-``` syntax
+```
 !vad_reload Process
 ```
 
@@ -45,7 +45,7 @@ You can use the [**!process**](-process.md) extension to find the address of a p
 
 Here is an example of how to find an address and use it in the **!vad\_reload** command.
 
-``` syntax
+```
 3: kd> !process 0 0
 . . .
 PROCESS fffffa8007d54450

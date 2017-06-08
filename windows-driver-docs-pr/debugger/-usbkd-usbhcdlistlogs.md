@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbhcdlistlogs** command displays a list of all functional device objects (FDOs) associated with the USB port driver (Usbport.sys). The command also displays the complete debug logs for all EHCI Host Controllers.
 
-``` syntax
+```
 !usbkd.usbhcdlistlogs
 ```
 
@@ -35,7 +35,7 @@ Examples
 
 This example shows a portion of the output of the **!usbhcdlistlogs** command.
 
-``` syntax
+```
 0: kd> !usbkd.usbhcdlistlogs
 
 MINIPORT List @ fffff80001e5bbd0

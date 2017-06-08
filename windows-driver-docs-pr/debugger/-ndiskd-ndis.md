@@ -21,8 +21,8 @@ api_type:
 
 The **!ndiskd.ndis** extension displays build information about ndis.sys.
 
-``` syntax
-    !ndiskd.ndis 
+```
+!ndiskd.ndis 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -39,7 +39,7 @@ Examples
 
 The following example shows that the debugee machine has a Checked Ndis build.
 
-```cmd
+```
 0: kd> !ndiskd.ndis
 Checked Ndis
 ```

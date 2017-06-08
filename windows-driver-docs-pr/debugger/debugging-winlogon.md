@@ -28,7 +28,7 @@ Because you will be redirecting the user-mode debugger output to the kernel debu
 
 To attach a debugger to WinLogon, you must go through the registry so the process is debugged from the time it starts up. To set up WinLogon debugging, set **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\WinLogon.EXE\\Debugger** to:
 
-``` syntax
+```
 ntsd -d -x -g 
 ```
 

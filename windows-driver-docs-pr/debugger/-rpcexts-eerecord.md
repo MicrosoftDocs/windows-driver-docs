@@ -21,7 +21,7 @@ api_type:
 
 The **!rpcexts.eerecord** extension displays the contents of an extended error information record.
 
-``` syntax
+```
 !rpcexts.eerecord EERecordAddress
 ```
 

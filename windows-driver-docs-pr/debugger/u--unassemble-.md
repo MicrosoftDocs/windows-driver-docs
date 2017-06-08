@@ -23,7 +23,7 @@ The **u\*** commands display an assembly translation of the specified program co
 
 Do not confuse this command with the [**~u (Unfreeze Thread)**](-u--unfreeze-thread-.md) command.
 
-``` syntax
+```
 u[u|b] Range 
 u[u|b] Address
 u[u|b] 

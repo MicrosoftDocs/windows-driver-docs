@@ -21,7 +21,7 @@ api_type:
 
 The **!ate** extension displays the alternate page table entry (ATE) for the specified address.
 
-``` syntax
+```
 !ate Address
 ```
 

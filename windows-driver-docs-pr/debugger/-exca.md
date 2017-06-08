@@ -21,7 +21,7 @@ api_type:
 
 The **!exca** extension displays PC-Card Interrupt Controller (PCIC) Exchangable Card Architecture (ExCA) registers.
 
-``` syntax
+```
 !exca BasePort.SocketNumber
 ```
 

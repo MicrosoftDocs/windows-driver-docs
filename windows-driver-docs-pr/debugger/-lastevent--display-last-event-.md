@@ -21,8 +21,8 @@ api_type:
 
 The **.lastevent** command displays the most recent exception or event that occurred.
 
-``` syntax
-    .lastevent 
+```
+.lastevent 
 ```
 
 ## <span id="ddk_meta_display_last_event_dbg"></span><span id="DDK_META_DISPLAY_LAST_EVENT_DBG"></span>

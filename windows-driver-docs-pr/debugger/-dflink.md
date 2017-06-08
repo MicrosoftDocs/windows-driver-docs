@@ -21,8 +21,8 @@ api_type:
 
 The **!dflink** extension displays a linked list in the forward direction.
 
-``` syntax
-    !dflink Address [Count] [Bias]  
+```
+!dflink Address [Count] [Bias]  
 ```
 
 ## <span id="ddk__dflink_dbg"></span><span id="DDK__DFLINK_DBG"></span>Parameters

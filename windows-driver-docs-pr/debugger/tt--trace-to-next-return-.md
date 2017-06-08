@@ -23,14 +23,14 @@ The **tt** command executes the program until a return instruction is reached.
 
 User-Mode
 
-``` syntax
+```
 [~Thread] tt [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-``` syntax
-    tt [r] [= StartAddress] [Count] 
+```
+tt [r] [= StartAddress] [Count] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

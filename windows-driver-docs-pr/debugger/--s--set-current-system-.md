@@ -23,7 +23,7 @@ The **||s** command sets or displays the current system number.
 
 Do not confuse this command with the [**s (Search Memory)**](s--search-memory-.md), [**~s (Change Current Processor)**](-s--change-current-processor-.md), [**~s (Set Current Thread)**](-s--set-current-thread-.md), or [**|s (Set Current Process)**](-s--set-current-process-.md) command.
 
-``` syntax
+```
 ||System s 
 || s 
 ```

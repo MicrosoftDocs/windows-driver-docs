@@ -21,7 +21,7 @@ api_type:
 
 The **!fpsearch** extension searches the freed special pool for a specified address.
 
-``` syntax
+```
 !fpsearch [Address] [Flag]
 ```
 
@@ -64,7 +64,7 @@ If *Address* is set to -1, the debugger displays the entire freed special pool.
 
 If the debugger cannot find the specified address in the freed special pool, it does not display anything.Here is an example of the output from this extension:
 
-``` syntax
+```
 kd> !fpsearch -1 1
 Searching the free page list (8 entries) for all freed special pool
 

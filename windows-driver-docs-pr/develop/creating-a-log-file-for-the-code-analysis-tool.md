@@ -28,19 +28,19 @@ Code Analysis for Drivers is a compile-time static verification tool that detect
 
 You can also run the Code Analysis tool from a Visual Studio Command Prompt window. Set up the environment by running one of the following batch files.
 
-``` syntax
+```
 "C:\Program Files\Microsoft Visual Studio 11.0\VC\vcvarsall.bat" x64
 ```
 
 -Or-
 
-``` syntax
+```
 "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\vcvarsall.bat" x64
 ```
 
 Run the Code Analysis tool.
 
-``` syntax
+```
 msbuild.exe <vcxprojectfile> /p:Configuration="Win8 Release" /P:Platform=x64 /target:clean
 msbuild.exe <vcxprojectfile> /p:Configuration="Win8 Release" /P:Platform=x64 /P:RunCodeAnalysisOnce=True
 ```

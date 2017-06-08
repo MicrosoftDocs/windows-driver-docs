@@ -22,7 +22,7 @@ The following method can be used if you are performing kernel debugging. To use 
 
 First, use the [**!object**](-object.md) debugger extension with the name of the object in question:
 
-``` syntax
+```
 kd> !object \BaseNamedObjects\AgentToWkssvcEvent
 Object: ffbb8a98  Type: (80e30e70) Event
     ObjectHeader: ffbb8a80
@@ -32,7 +32,7 @@ Object: ffbb8a98  Type: (80e30e70) Event
 
 This shows that the object header has address 0xFFBB8A80. Use the [**dt (Display Type)**](dt--display-type-.md) command with this address and the **nt!\_OBJECT\_HEADER** structure name:
 
-``` syntax
+```
 kd> dt nt!_OBJECT_HEADER ffbb8a80
    +0x000 PointerCount     : 3
    +0x004 HandleCount      : 2
@@ -50,7 +50,7 @@ kd> dt nt!_OBJECT_HEADER ffbb8a80
 
 The security descriptor pointer value is shown as 0xE11F08B6. The lowest 3 bits of this value represent an offset past the beginning of this structure, so you should ignore them. In other words, the SECURITY\_DESCRIPTOR structure actually begins at 0xE11F08B6 & ~0x7. Use the [**!sd**](-sd.md) extension on this address:
 
-``` syntax
+```
 kd> !sd e11f08b0
 ->Revision: 0x1
 ->Sbz1    : 0x0

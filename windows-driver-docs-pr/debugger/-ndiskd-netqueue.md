@@ -23,8 +23,8 @@ The **!ndiskd.netqueue** extension displays information about a NETTXQUEUE or NE
 
 For more information about the Network Adapter WDF Class Extension (NetAdapterCx), see [Network Adapter WDF Class Extension (Cx)](https://docs.microsoft.com/windows-hardware/drivers/netcx).
 
-``` syntax
-    !ndiskd.netqueue [-handle <x>] [-basic] 
+```
+!ndiskd.netqueue [-handle <x>] [-basic] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -57,7 +57,7 @@ To obtain a handle for a NETTXQUEUE or NETRXQUEUE, follow these steps:
 For details on this procedure, see the examples on the **!ndiskd.cxadapter** topic.
 In the following example, look for the handle for this NETADAPTER's NETTXQUEUE, ffffd1022f512700.
 
-```cmd
+```
 0: kd> !ndiskd.cxadapter ffffd1022f1a0720 -basic -datapath
 
 
@@ -81,7 +81,7 @@ DATAPATH QUEUES
 
 By clicking on the NETTXQUEUE's handle or entering the **!ndiskd.netqueue -handle** command on the command line, you can see details for this queue, including the handle to its companion WDF object, the handle to its ring buffer, and function pointers for its registered callbacks.
 
-```cmd
+```
 0: kd> !ndiskd.netqueue ffffd1022f512700
 
     NETTXQUEUE         00002efdd0aed9a8

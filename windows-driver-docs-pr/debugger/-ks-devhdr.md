@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.devhdr** extension displays the kernel streaming device header associated with the given WDM object.
 
-``` syntax
-    !ks.devhdr DeviceObject 
+```
+!ks.devhdr DeviceObject 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

@@ -20,7 +20,7 @@ api_type:
 
 In Windows XP and later versions of Windows, the **!drivers** extension is obsolete. To display information about loaded drivers and other modules, use the [**lm**](lm--list-loaded-modules-.md) command. The command lm t n displays information in a format very similar to the old **!drivers** extension. However, this command will not display the memory usage of the drivers as the **!drivers** extension did. It will only display the drivers' start and end addresses, image names, and timestamps. The [**!vm**](-vm.md) and [**!memusage**](-memusage.md) extensions can be used to display memory usage statistics.
 
-``` syntax
+```
 !drivers [Flags]
 ```
 
@@ -124,7 +124,7 @@ An explanation of this command's display is given in the following table:
 
 The following is a truncated example of this command:
 
-``` syntax
+```
 kd> !drivers
 Loaded System Driver Summary
 Base     Code Size      Data Size      Driver Name  Creation Time

@@ -21,7 +21,7 @@ api_type:
 
 The **.asm** command controls how disassembly code will be displayed.
 
-``` syntax
+```
 .asm 
 .asm[-] Options
 ```

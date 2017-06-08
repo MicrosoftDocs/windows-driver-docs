@@ -32,7 +32,7 @@ The /**Debug** switch of the Enhanced Storage Certificate Management tool report
 
  
 
-``` syntax
+```
     EhStorCertMgrCmd /Debug -Volume:
     VolumeName
 

@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbdevobj** command displays information from a USB device object.
 
-``` syntax
+```
 !usbkd.usbdevobj DeviceObject
 ```
 

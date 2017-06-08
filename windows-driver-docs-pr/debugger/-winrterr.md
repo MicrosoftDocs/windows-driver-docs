@@ -21,7 +21,7 @@ api_type:
 
 The **!winrterr** sets the debugger reporting mode for Windows Runtime errors.
 
-``` syntax
+```
 !winrterr Mode
 !winrterr
 ```

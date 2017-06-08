@@ -20,7 +20,7 @@ This section provides guidelines that [*class installers*](https://msdn.microsof
 
 [Modifying Registry Values by Class Installers and Co-installers](modifying-registry-values-by-class-installers-and-co-installers.md)
 
-**Note**  Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-configurable-inf-file.md).
+**Note**  Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 

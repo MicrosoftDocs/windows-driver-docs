@@ -21,7 +21,7 @@ api_type:
 
 The **.setdll** command changes the default extension DLL for the debugger.
 
-``` syntax
+```
 .setdll DLLName 
 !DLLName.setdll 
 ```

@@ -21,7 +21,7 @@ api_type:
 
 The [**!usb3kd.usb\_tree**](-usb3kd-device-info.md) extension displays information, in tree format, about all USB 3.0 controllers, hubs, and devices on the computer.
 
-``` syntax
+```
 !usb3kd.usb_tree [1]
 ```
 

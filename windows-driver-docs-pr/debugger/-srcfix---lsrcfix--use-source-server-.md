@@ -21,7 +21,7 @@ api_type:
 
 The **.srcfix** and **.lsrcfix** commands automatically set the source path to indicate that a source server will be used.
 
-``` syntax
+```
 .srcfix[+] [Paths] 
 .lsrcfix[+] [Paths] 
 ```

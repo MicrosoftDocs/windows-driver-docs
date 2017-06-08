@@ -21,7 +21,7 @@ api_type:
 
 The **!wudfext.wudfqueue** extension displays information about an I/O queue.
 
-``` syntax
+```
 !wudfext.wudfqueue pWDFQueue
 ```
 
@@ -73,7 +73,7 @@ kd> !wudfqueue 0x000f3500
       ...
       IWDFIoRequest 0x000fa530     CWdfIoRequest 0x000fa4b8
       IWDFIoRequest 0x000fa678     CWdfIoRequest 0x000fa600
-    Driver&#39;s callback interfaces.
+    Driver's callback interfaces.
       IQueueCallbackRead 0x000f343c
       IQueueCallbackDeviceIoControl 0x000f3438
       IQueueCallbackWrite 0x000f3440

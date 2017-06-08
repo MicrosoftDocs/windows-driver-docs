@@ -21,7 +21,7 @@ api_type:
 
 The **d\*** commands display the contents of memory in the given range.
 
-``` syntax
+```
 d{a|b|c|d|D|f|p|q|u|w|W} [Options] [Range] 
 dy{b|d} [Options] [Range] 
 d [Options] [Range] 

@@ -21,8 +21,8 @@ api_type:
 
 The **.call** command causes the target process to execute a function.
 
-``` syntax
-    .call [/v] Function( Arguments ) 
+```
+.call [/v] Function( Arguments ) 
 .call /s Prototype Function( Arguments ) 
 .call /c 
 .call /C 

@@ -21,7 +21,7 @@ api_type:
 
 The **.printf** token behaves like the **printf** statement in C.
 
-``` syntax
+```
 .printf [/D] [Option] "FormatString" [, Argument , ...] 
 ```
 
@@ -194,7 +194,7 @@ The color settings that you can choose by using the *Options* parameter are by d
 
 The following example shows how to include a DML tag in the format string.
 
-```cmd
+```
 .printf /D "Click <link cmd=\".chain /D\">here</link> to see extensions DLLs."
 ```
 

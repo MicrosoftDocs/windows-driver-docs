@@ -23,7 +23,7 @@ The **!db**, **!dc**, **!dd**, **!dp**, **!dq**, **!du**, and **!dw** extensions
 
 These extension commands should not be confused with the [**d\* (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command, or with the [**!ntsdexts.dp**](-dp---ntsdexts-dp-.md) extension command.
 
-``` syntax
+```
 !db [Caching] [-m] [PhysicalAddress] [L Size] 
 !dc [Caching] [-m] [PhysicalAddress] [L Size] 
 !dd [Caching] [-m] [PhysicalAddress] [L Size] 
@@ -107,7 +107,7 @@ Consequently, using two of these extensions that are distinct with the same valu
 
 Here is an example in which the caching attribute flag is needed:
 
-``` syntax
+```
 kd> !dc e9000
 physical memory read at e9000 failed
 If you know the caching attributes used for the memory,

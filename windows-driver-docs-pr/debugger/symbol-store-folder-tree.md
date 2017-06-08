@@ -18,7 +18,7 @@ The folder tree’s location should be chosen carefully as well as the disk’s 
 
 Normally files are placed in a single tier directory structure in which a single subdirectory exists for each filename cached. Under each filename folder, additional folders are made to store each version of the file. The tree will have this structure:
 
-``` syntax
+```
 D:\SymStore\Symbols\ntdll.dll\...\
 D:\SymStore\Symbols\ntdll.pdb\...\
 D:\SymStore\Symbols\kernel32.dll\...\
@@ -29,7 +29,7 @@ If a large number of files are to be stored, a two-tier structure can be used at
 
 To use a two-tier structure, place a file called index2.txt in the root of D:\\SymStore\\Symbols. The content of the file is of no importance. When this file exists, symsrv.dll will create and consume files from the two-tier tree using this structure:
 
-``` syntax
+```
 D:\SymStore\Symbols\nt\ntdll.dll\...\
 D:\SymStore\Symbols\nt\ntdll.pdb\...\
 D:\SymStore\Symbols\ke\kernel32.dll\...\

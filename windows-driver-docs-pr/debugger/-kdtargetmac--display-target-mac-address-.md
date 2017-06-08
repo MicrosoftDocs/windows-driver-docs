@@ -21,9 +21,8 @@ api_type:
 
 Display Target MAC Address
 
-``` syntax
-    .kdtargetmac 
-   
+```
+.kdtargetmac 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

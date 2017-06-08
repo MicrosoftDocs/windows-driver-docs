@@ -21,7 +21,7 @@ api_type:
 
 The **!teb** extension displays a formatted view of the information in the thread environment block (TEB).
 
-``` syntax
+```
 !teb [TEB-Address] 
 ```
 

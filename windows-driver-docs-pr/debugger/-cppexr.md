@@ -21,7 +21,7 @@ api_type:
 
 The **!cppexr** extension displays the contents of a C++ exception record.
 
-``` syntax
+```
     !cppexr Address 
 ```
 

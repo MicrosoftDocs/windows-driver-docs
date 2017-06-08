@@ -1,6 +1,6 @@
 ---
 title: PnPUtil Command Syntax
-description: To run PnPUtil, open a Command Prompt window (Run as Administrator) and type a command using the following syntax and parameters.Note  PnPUtil (PnPUtil.exe) is included in every version of Windows, starting with Windows Vista (in the windir \\system32 directory). �
+description: To run PnPUtil, open a Command Prompt window (Run as Administrator) and type a command using the following syntax and parameters.Note  PnPUtil (PnPUtil.exe) is included in every version of Windows, starting with Windows Vista (in the windir \\system32 directory). 
 ms.assetid: f14ceb98-8d82-43dd-b06e-2595b59b6999
 keywords:
 - PnPUtil Command Syntax Driver Development Tools
@@ -26,7 +26,7 @@ To run PnPUtil, open a Command Prompt window (**Run as Administrator**) and type
 
  
 
-``` syntax
+```
     PnPUtil [/a [/i] InfFileName] [/d [/f] PublishedInfFileName] [/e] [/?] 
 ```
 

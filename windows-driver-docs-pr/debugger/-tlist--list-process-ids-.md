@@ -21,7 +21,7 @@ api_type:
 
 The **.tlist** command lists all processes running on the system.
 
-``` syntax
+```
 .tlist [Options][FileNamePattern]
 ```
 

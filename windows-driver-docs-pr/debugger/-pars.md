@@ -21,7 +21,7 @@ api_type:
 
 The **!pars** extension displays a specified processor application registers file.
 
-``` syntax
+```
 !pars Address
 ```
 

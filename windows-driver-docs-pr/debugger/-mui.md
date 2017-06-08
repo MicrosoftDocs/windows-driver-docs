@@ -21,7 +21,7 @@ api_type:
 
 The **!mui** extension displays the Multilingual User Interface (MUI) cache information. The implementation of MUI was improved in Windows Vista. As a result, the behavior of this extension on earlier implementations is undefined.
 
-``` syntax
+```
 !mui -c
 !mui -s
 !mui -r ModuleAddress

@@ -21,8 +21,8 @@ api_type:
 
 The **wt** command runs through the whole function and then displays statistics, when you execute this command at the beginning of a function call.
 
-``` syntax
-    wt [WatchOptions] [= StartAddress] [EndAddress] 
+```
+wt [WatchOptions] [= StartAddress] [EndAddress] 
 ```
 
 ## <span id="ddk_cmd_trace_and_watch_data_dbg"></span><span id="DDK_CMD_TRACE_AND_WATCH_DATA_DBG"></span>Parameters
@@ -140,7 +140,7 @@ Because the output from **wt** can be long, you might want to use a log file to 
 
 The following example shows a typical log file.
 
-``` syntax
+```
 0:000> l+                  Source options set to show source lines
 Source options are f:
      1/t - Step/trace by source line

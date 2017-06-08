@@ -23,19 +23,19 @@ The CTRL+C key breaks into the debugger, stopping the target application or targ
 
 CDB Syntax
 
-``` syntax
+```
 CTRL+C 
 ```
 
 KD Syntax
 
-``` syntax
+```
 CTRL+C 
 ```
 
 Target Computer Syntax
 
-``` syntax
+```
 SYSRQ 
 ALT+SYSRQ 
 F12 

@@ -21,7 +21,7 @@ api_type:
 
 The **!bugdump** extension formats and displays the information contained in the bug check callback buffers.
 
-``` syntax
+```
     !bugdump [Component] 
 ```
 

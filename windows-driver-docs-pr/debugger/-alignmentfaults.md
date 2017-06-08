@@ -21,7 +21,7 @@ api_type:
 
 The **!alignmentfaults** extension displays all current type alignment faults by location and image, sorted by frequencies.
 
-``` syntax
+```
 !alignmentfaults
 ```
 

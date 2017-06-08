@@ -21,8 +21,8 @@ api_type:
 
 The **.hh** command opens the Debugging Tools for Windows documentation.
 
-``` syntax
-    .hh [Text] 
+```
+.hh [Text] 
 ```
 
 ## <span id="ddk_meta_open_html_help_file_dbg"></span><span id="DDK_META_OPEN_HTML_HELP_FILE_DBG"></span>Parameters

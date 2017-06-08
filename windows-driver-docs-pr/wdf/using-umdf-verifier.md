@@ -35,7 +35,7 @@ Starting in UMDF 2.0, UMDF Verifier issues breakpoints in some cases, and causes
 
 We recommend running [Application Verifier (AppVerif.exe)](http://www.microsoft.com/download/details.aspx?id=20028) on WUDFHost.exe while testing or debugging your UMDF driver. Use the following command, and then reboot.
 
-``` syntax
+```
 AppVerif –enable Heaps Exceptions Handles Locks Memory TLS Leak –for WudfHost.exe
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The **.logfile** command determines whether a log file exists and displays the file's status.
 
-``` syntax
+```
     .logfile 
 ```
 

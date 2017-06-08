@@ -21,7 +21,7 @@ api_type:
 
 The **l+**and **l-** commands set the source line options that control source display and program stepping options.
 
-``` syntax
+```
 l+Option 
 l-Option 
 l{+|-} 

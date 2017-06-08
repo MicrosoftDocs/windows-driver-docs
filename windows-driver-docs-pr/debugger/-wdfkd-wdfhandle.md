@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfhandle** extension displays information about a specified framework object handle, such as the handle type, object context pointers, and the underlying framework object pointer.
 
-``` syntax
+```
 !wdfkd.wdfhandle Handle [Flags]
 ```
 

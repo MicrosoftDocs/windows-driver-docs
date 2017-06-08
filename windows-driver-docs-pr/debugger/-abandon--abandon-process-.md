@@ -21,7 +21,7 @@ api_type:
 
 The **.abandon** command ends the debugging session, but leaves the target application in a debugging state. This returns the debugger to dormant mode.
 
-``` syntax
+```
     .abandon [/h|/n] 
 ```
 

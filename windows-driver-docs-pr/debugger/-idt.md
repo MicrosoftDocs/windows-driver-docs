@@ -21,7 +21,7 @@ api_type:
 
 The **!idt** extension displays the interrupt service routines (ISRs) for a specified interrupt dispatch table (IDT).
 
-``` syntax
+```
 !idt IDT 
 !idt [-a] 
 !idt -? 
@@ -73,7 +73,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-``` syntax
+```
 0: kd> !idt
 
 Dumping IDT:

@@ -21,7 +21,7 @@ api_type:
 
 The **!bthkd.sdpnode** command displays information about a node in an sdp tree.
 
-``` syntax
+```
 !bthkd.sdpnode addr [flags]
 ```
 

@@ -29,7 +29,7 @@ The debuggers support several transport protocols: named pipe (NPIPE), TCP, COM 
 
 The general syntax for activating a debugging server depends on the protocol used.
 
-``` syntax
+```
 Debugger -server npipe:pipe=PipeName[,hidden][,password=Password][,IcfEnable] [-noio] [Options]
 
 Debugger -server tcp:port=Socket[,hidden][,password=Password][,ipversion=6][,IcfEnable] [-noio] [Options]
@@ -47,7 +47,7 @@ Debugger -server ssl:proto=Protocol,{certuser=Cert|machuser=Cert},port=Socket,cl
 
 Another method of activating a debugging server is to use the [**.server (Create Debugging Server)**](-server--create-debugging-server-.md) command after the debugger has already been started.
 
-``` syntax
+```
 .server npipe:pipe=PipeName[,hidden][,password=Password][,IcfEnable] 
 
 .server tcp:port=Socket[,hidden][,password=Password][,ipversion=6][,IcfEnable] 

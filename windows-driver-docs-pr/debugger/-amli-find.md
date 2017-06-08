@@ -23,7 +23,7 @@ The **!amli find** extension finds an ACPI namespace object.
 
 Syntax
 
-``` syntax
+```
 !amli find Name
 ```
 

@@ -27,7 +27,7 @@ If you are using debugger commands for general purposes or using debugger extens
 You can use comparison operators to create [conditional breakpoints](setting-a-conditional-breakpoint.md). The following code example uses MASM expression syntax. Because the current default radix is 16, the example uses the **0n** prefix so that the number 20 is understood as a decimal number.
 
 ```
-0:000> bp MyFunction+0x43 "j ( poi(MyVar)>0n20 ) &#39;&#39;; &#39;gc&#39; " 
+0:000> bp MyFunction+0x43 "j ( poi(MyVar)>0n20 ) ''; 'gc' " 
 ```
 
 In the previous example, **MyVar** is an integer in the C source. Because the MASM parser treats all symbols as addresses, the example must have the **poi** operator to dereference **MyVar**.

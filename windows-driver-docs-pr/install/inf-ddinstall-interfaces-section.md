@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Each per-Models *DDInstall***.Interfaces** section can have one or more [**AddInterface**](inf-addinterface-directive.md) directives, depending on how many device interfaces a particular device/driver supports.
 
-``` syntax
+```
 [install-section-name.Interfaces] |
 [install-section-name.nt.Interfaces] | 
 [install-section-name.ntx86.Interfaces] |

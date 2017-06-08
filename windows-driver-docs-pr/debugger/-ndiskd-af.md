@@ -21,8 +21,8 @@ api_type:
 
 The **!ndiskd.af** extension displays a Connection-Oriented NDIS (CoNDIS) address family (AF).
 
-``` syntax
-    !ndiskd.af [-handle <x>] 
+```
+!ndiskd.af [-handle <x>] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -47,7 +47,7 @@ Examples
 
 CoNDIS is used in certain situations such as connecting to a VPN, so running **!ndiskd.af** will not show you results unless a miniport driver on your system has created and activated a CoNDIS virtual connection. The following example shows results from a machine that is connected to a VPN network. First, run the [**!ndiskd.netadapter**](-ndiskd-netadapter.md) extension with no parameters to see a list of miniports and miniport drivers on the system. In the following output, look for the miniport driver for the Marvell AVASTAR Wireless-AC Network Controller network adapter. Its handle is ffffc804af2e3710.
 
-```cmd
+```
 1: kd> !ndiskd.netadapter
     Driver             NetAdapter          Name                                 
     ffffc804af2e3710   ffffc804b9e6f1a0    Marvell AVASTAR Wireless-AC Network Controller
@@ -68,7 +68,7 @@ CoNDIS is used in certain situations such as connecting to a VPN, so running **!
 
 Next, enter the **!ndiskd.af** command with the miniport driver's handle to see the address family for this miniport driver, which is acting as a connection-oriented client.
 
-```cmd
+```
 1: kd> !ndiskd.af ffffc804af2e3710
 
 

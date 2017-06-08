@@ -117,7 +117,7 @@ The WPR and WPA tools must be compatible with the version of the TraceLogging th
 
 2.  For kernel mode providers, you need to add the NonPagedMemory="true" attribute to the EventProvider Id element.
 
-    ``` syntax
+    ```
     <EventProvider Id="EventProvider_myTraceLoggingProviderKM" 
       Name="263dd596-513b-4fd9-969c-022b691bb130" NonPagedMemory="true"/>
     ```
@@ -125,7 +125,7 @@ The WPR and WPA tools must be compatible with the version of the TraceLogging th
 3.  Save the file with the file name extension (.WPRP).
 4.  Start the capture using WPR from a Command Prompt window.
 
-    ``` syntax
+    ```
     <path to wpr>\wpr.exe -start GeneralProfile -start  yourTraceLoggingProvider.wprp
     ```
 
@@ -134,13 +134,13 @@ The WPR and WPA tools must be compatible with the version of the TraceLogging th
 5.  Run your test scenario (load and unload the driver or component to trigger events).
 6.  Stop trace capture and merge all recordings.
 
-    ``` syntax
+    ```
     <path to wpr>\wpr.exe -stop GeneralProfile -stop  yourTraceCaptureFile.etl description
     ```
 
 You can also use Windows Performance Recorder user interface (Wprui.exe) to collect trace data.
 
-``` syntax
+```
 <path to wpr>\wprui.exe
 ```
 
@@ -154,26 +154,26 @@ You can also use Windows Performance Recorder user interface (Wprui.exe) to coll
 
 1.  Start trace capture of your provider.
 
-    ``` syntax
+    ```
     cmdd tracelog '-start test -f c:\test.etl -guid #providerguid'
     ```
 
 2.  Run your test scenarios to log events.
 3.  Stop trace capture.
 
-    ``` syntax
+    ```
     cmdd tracelog '-stop test'
     ```
 
 4.  Merge trace results.
 
-    ``` syntax
+    ```
     cmdd xperf -merge c:\test.etl c:\testmerged.etl
     ```
 
 5.  Retrieve the merged log file.
 
-    ``` syntax
+    ```
     getd c:\testmerged.etl
     ```
 
@@ -183,7 +183,7 @@ Currently, WPA is the only viewer you can use to view the etl files that TraceLo
 
 1.  Start WPA.
 
-    ``` syntax
+    ```
     <path to wpr>\wpa.exe
     ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The **!rpcexts.getendpointinfo** extension searches the system's RPC state information for endpoint information.
 
-``` syntax
+```
     !rpcexts.getendpointinfo [EndpointName] 
 !rpcexts.getendpointinfo -? 
 ```

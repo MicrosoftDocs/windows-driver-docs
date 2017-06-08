@@ -21,8 +21,8 @@ api_type:
 
 The **!mps** extension displays BIOS information for the Intel Multiprocessor Specification (MPS) of the target computer.
 
-``` syntax
-    !mps [Address] 
+```
+!mps [Address] 
 ```
 
 ## <span id="ddk__mps_dbg"></span><span id="DDK__MPS_DBG"></span>Parameters

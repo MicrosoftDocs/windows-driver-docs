@@ -21,7 +21,7 @@ api_type:
 
 The **!wudfext.wudfdumpobjects** extension displays outstanding UMDF objects.
 
-``` syntax
+```
 !wudfext.wudfdumpobjects ObjTrackerAddress
 ```
 

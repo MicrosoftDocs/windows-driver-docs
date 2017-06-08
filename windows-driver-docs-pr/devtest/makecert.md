@@ -24,7 +24,7 @@ MakeCert (Makecert.exe) is a command-line [CryptoAPI](http://go.microsoft.com/fw
 
 MakeCert supports a large number of switches but this section only describes the basic switches that are relevant to creating a [test certificate](https://msdn.microsoft.com/library/windows/hardware/ff548693) that can be used to test-sign a [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) or embed a signature in a driver file.
 
-``` syntax
+```
     MakeCert [/b DateStart] [/e DateEnd] [/len KeyLength] [/m nMonths] [/n "Name"] [/pe] [/r] [/sc SubjectCertFile] [/sk SubjectKey] [/sr SubjectCertStoreLocation] [/ss SubjectCertStoreName] [/sv SubjectKeyFile]OutputFile
 ```
 

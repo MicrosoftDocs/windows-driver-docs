@@ -21,7 +21,7 @@ api_type:
 
 The **!findstack** extension locates all of the stacks that contain a specified symbol or module.
 
-``` syntax
+```
 !findstack Symbol [DisplayLevel]
 !findstack -?
 ```
@@ -79,7 +79,7 @@ The [**!stacks**](-stacks.md) kernel-mode extension also display information abo
 
 The following are some examples of the output from this extension:
 
-``` syntax
+```
 0:023> !uext.findstack wininet
 Thread 009, 2 frame(s) match
         * 06 03eaffac 771d9263 wininet!ICAsyncThread::SelectThread+0x22a

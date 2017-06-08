@@ -21,7 +21,7 @@ api_type:
 
 The **.thread** command specifies which thread will be used for the register context.
 
-``` syntax
+```
 .thread [/p [/r] ] [/P] [/w] [Thread]
 ```
 
@@ -87,7 +87,7 @@ This command does not actually change the current thread. In other words, extens
 
 Here is an example. Use the [**!process**](-process.md) extension to find the address of the desired thread. (In this case, **!process 0 0** is used to list all processes, then **!process** is used a second time to list all the threads for the desired process.)
 
-``` syntax
+```
 kd> !process 0 0
 **** NT ACTIVE PROCESS DUMP ****
 PROCESS fe5039e0  SessionId: 0  Cid: 0008    Peb: 00000000  ParentCid: 0000
@@ -122,7 +122,7 @@ PROCESS ffaa5280  SessionId: 0  Cid: 0120    Peb: 7ffdf000  ParentCid: 01e0
 
 Now use the **.thread** command with the address of the desired thread. This sets the register context and enables you to examine the important registers and the call stack for this thread.
 
-``` syntax
+```
 kd> .thread ffaa43a0
 Using context of thread ffaa43a0
 

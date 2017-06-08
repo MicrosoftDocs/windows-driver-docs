@@ -21,7 +21,7 @@ api_type:
 
 The **!dskheap** extension displays desktop heap information for a specified session.
 
-``` syntax
+```
 !dskheap [-v] [-s SessionID]
 ```
 
@@ -66,7 +66,7 @@ The desktop heap information for the session is arranged by window station.
 
 Here are a couple of examples:
 
-``` syntax
+```
 kd> !dskheap -s 3
 ##   Winstation\Desktop            Heap Size(KB)   Used Rate(%)
 

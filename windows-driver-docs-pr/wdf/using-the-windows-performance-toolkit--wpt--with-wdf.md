@@ -155,7 +155,7 @@ Finally, to determine callback duration for PnP/Power callbacks, the framework r
 -   Be sure to reboot after you run the WdfPerfEnhancedVerifier.cmd script.
 -   To determine if your driver is configured to record an event log, use the **!WdfKd.wdfdriverinfo** kernel debugger command. If the driver is configured for performance tracing, you will see output like this:
 
-    ``` syntax
+    ```
     !WdfKd.WdfDriverInfo Echo.sys
     …
     …

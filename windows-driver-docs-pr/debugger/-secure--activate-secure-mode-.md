@@ -21,7 +21,7 @@ api_type:
 
 The **.secure** command activates or displays the status of Secure Mode.
 
-``` syntax
+```
 .secure 1 
 .secure 
 ```

@@ -21,7 +21,7 @@ api_type:
 
 The **!bthkd.l2capinterface** command displays information about the L2CAP interface.
 
-``` syntax
+```
 !bthkd.l2capinterface
 ```
 

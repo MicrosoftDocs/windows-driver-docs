@@ -23,7 +23,7 @@ The **.jdinfo** command uses a JIT\_DEBUG\_INFO structure as the source of the e
 
 For more information about the registry keys used, see [Enabling Postmortem Debugging](enabling-postmortem-debugging.md). For more information about register contexts, see [Changing Contexts](changing-contexts.md).
 
-``` syntax
+```
 .jdinfo Address 
 ```
 
@@ -62,13 +62,13 @@ Specifies the address of the JIT\_DEBUG\_INFO structure. The address to the stru
 
 This example show how the AeDebug registry entry can be configured to use the WinDbg can be used as the JIT debugger.
 
-``` syntax
+```
 Debugger = "Path\WinDbg.EXE -p %ld -e %ld -c ".jdinfo 0x%p"
 ```
 
 Then, when a crash occurs, the configured JIT debugger is invoked and the %p parameter is used to pass the address of the JIT\_DEBUG\_INFO structure to the **.jdinfo** command that is executed after the debugger is started.
 
-``` syntax
+```
 nMicrosoft (R) Windows Debugger Version 10.0.10240.9 AMD64
 Copyright (c) Microsoft Corporation. All rights reserved.
 
@@ -140,13 +140,13 @@ If you use **-c .jdinfo** instead of **-g** in your **AeDebug** key, no executio
 
 For example, consider the following **AeDebug** key.
 
-``` syntax
+```
 ntsd -p %ld -e %ld -c ".jdinfo 0x%p"
 ```
 
 The following example is even less invasive. The **-pv** switch causes the debugger to attach noninvasively, which does not inject any new threads into the target.
 
-``` syntax
+```
 ntsd -pv -p %ld -e %ld -c ".jdinfo 0x%p"
 ```
 
@@ -156,7 +156,7 @@ If you want to use this for dump file debugging, you should use [**.dump /j**](-
 
 The JIT\_DEBUG\_INFO structure is defined as follows.
 
-``` syntax
+```
 typedef struct _JIT_DEBUG_INFO {
     DWORD dwSize;
     DWORD dwProcessorArchitecture;
@@ -170,7 +170,7 @@ typedef struct _JIT_DEBUG_INFO {
 
 You can use the dt command to display the JIT\_DEBUG\_INFO structure.
 
-``` syntax
+```
 0: kd> dt JIT_DEBUG_INFO
 nt!JIT_DEBUG_INFO
    +0x000 dwSize           : Uint4B
@@ -186,7 +186,7 @@ nt!JIT_DEBUG_INFO
 
 After the .jdinfo command has been used to set the context to the moment of failure, you can view the exception record returned by .jdinfo, the call stack and the lastevent, as shown below, to investigate cause.
 
-``` syntax
+```
 0:000> .jdinfo  0x00000000003E0000
 ----- Exception occurred on thread 0:15c8
 ntdll!NtWaitForMultipleObjects+0x14:
