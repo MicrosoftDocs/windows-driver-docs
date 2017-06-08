@@ -12,11 +12,11 @@ The DCHU sample provides example scenarios where two hardware partners, Contoso 
 
 ## Use extension INFs to componentize a driver package
 
-First, Fabrikam reviews the [list of INF sections and directives](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file#which-inf-sections-are-invalid-in-a-universal-inf-file) that are invalid in universal drivers.  During this exercise, Fabrikam notices that they're using many of these sections and directives in their driver package.  The biggest amount of incompliant code resides in their co-installer, which applies  settings and files that depend on the target platform.
+First, Fabrikam reviews the [list of INF sections and directives](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file) that are invalid in universal drivers.  During this exercise, Fabrikam notices that they're using many of these sections and directives in their driver package.  The biggest amount of incompliant code resides in their co-installer, which applies settings and files that depend on the target platform.
 
 This means that the driver package is larger than it could be, and it's harder to service the driver when a bug affects only a subset of the OEM systems that ship the driver.  Also, most of the OEM-specific code is related to branding, so Fabrikam needs to update the driver package every time an OEM is added or a minor issue affects a subset of OEM systems.
 
-To simplify, Fabrikam separates customizations that are specific to their different OEM partners (such as Contoso) from the primary INF into an [extension INF](../install/using-an-extension-inf-file.md).
+To simplify, Fabrikam separates customizations that are specific to OEM partners (such as Contoso) from the primary INF into an [extension INF](../install/using-an-extension-inf-file.md).
 
 The following snippet, updated from [`osrfx2_DCHU_extension.inx`], specifies the `Extension` class and identifies Contoso as the provider since they will own the extension driver package:
 
@@ -49,13 +49,13 @@ For more detailed information, see:
 *  [Using a Universal INF File](../install/using-a-universal-inf-file.md)
 *  [Using an Extension INF File](../install/using-an-extension-inf-file.md)
 
-## Use components within a driver package
+## Use a component to install a service in a driver package
 
 Fabrikam requires the LEDs on the OSR board to be treated as a child device of the main board.  They control these lights using a Win32 service.
 
 To accomplish this, they encapsulate the LED device in a component and provide a separate LED controller INF [`osrfx2_DCHU_usersvc.inx`] in the base driver package to install the service.
 
-The following snippet from [`osrfx2_DCHU_base.inx`] specifies the [**AddComponent**](../install/inf-addcomponent-directive.md) directive to make the LED lights a child device to the main board and a CopyINF directive to copy the LED INF to the system:
+The following snippet from [`osrfx2_DCHU_base.inx`] specifies the [**AddComponent**](../install/inf-addcomponent-directive.md) directive to make the LED lights a child device to the main board and a [**CopyINF**](../install/inf-copyinf-directive.md) directive to copy the LED INF to the system:
 
 ```
 [OsrFx2_Install.NT.Components]
@@ -70,7 +70,7 @@ CopyInf = osrfx2_DCHU_usersvc.inf
 
 Use the [**CopyINF**](../install/inf-copyinf-directive.md) directive for multifunction devices when both INFs are owned by the same organization.  Use extension INFs when different hardware partners own the code.
 
-To add and start the service, Fabrikam specifies the [**AddService**](../install/inf-addservice-directive.md) directive in the LED controller's INF file [`osrfx2_DCHU_usersvc.inx`]:
+Then, in the LED controller's INF file [`osrfx2_DCHU_usersvc.inx`], Fabrikam specifies the [**AddService**](../install/inf-addservice-directive.md) directive to add and start the service:
 
 ```
 [OsrFx2UserSvc_Install.NT.Services]
@@ -88,9 +88,9 @@ ServiceBinary = %13%\osrfx2_DCHU_usersvc.exe
 osrfx2_DCHU_usersvc.exe
 ```
 
-## Add optional software for legacy scenarios
+## Use a component to install software in a driver package
 
-Fabrikam has an executable file `osrfx2_DCHU_componentsoftware.exe` that they previously installed using a co-installer.  This legacy software displays the registry keys set by the board and is required by the OEM.  While both parties understand that this software is not relevant on Windows SKUs that do not have UI, they agree to support it on Desktop SKUs.  To do so, they create a separate component driver package.
+Fabrikam has an executable file `osrfx2_DCHU_componentsoftware.exe` that they previously installed using a co-installer.  This legacy software displays the registry keys set by the board and is required by the OEM.  This is a GUI-based executable that only runs on Windows for desktop editions.  To install it, Fabrikam creates a separate component driver package.
 
 The following snippet from [`osrfx2_DCHU_base.inx`] uses the [**AddComponent**](../install/inf-addcomponent-directive.md) directive to create a virtual child device:
 
@@ -120,11 +120,11 @@ osrfx2_DCHU_componentsoftware.exe
 
 Note that the component INF is only installed on Desktop SKUs due to targeting set in the Windows Hardware Dev Center dashboard.  For more info, see [Publish a driver to Windows Update](https://docs.microsoft.com/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update).
 
-## Add a Hardware Support App (HSA)
+## Add a GUI-based companion app
 
-Fabrikam would like to provide a GUI-based companion app as part of the universal driver package, so they port their Win32-based companion application to the Universal Windows Platform (UWP) and [pair the app with the device](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-access-for-universal-windows-platform-apps).  
+Fabrikam would like to provide a GUI-based companion app as part of the universal driver package, but Win32-based companion applications cannot be part of a universal driver package.  So they port their Win32 app to the Universal Windows Platform (UWP) and [pair the app with the device](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-access-for-universal-windows-platform-apps).  
 
-The resulting app is secure and can be updated easily because it is in the Windows Store.   With the `componentsoftware.exe` application ready, Contoso uses [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows) to pre-load the application offline on their Windows Desktop SKU images.
+The new app is secure and can be updated easily in the Windows Store.   With the `componentsoftware.exe` application ready, Contoso uses [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows) to pre-load the application on Windows desktop edition images.
 
 ## Run from the driver store
 
@@ -146,8 +146,6 @@ The following diagram shows the three driver packages that Fabrikam and Contoso 
 ## See also
 
 [Getting Started with Universal Windows drivers](getting-started-with-universal-drivers.md)
-
-<!--should links be full URLs or relative paths in doc repo-->
 
 [`osrfx2_DCHU_base.inx`]: https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_base/osrfx2_DCHU_base.inx
 [`osrfx2_DCHU_usersvc.inx`]: https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_usersvc/osrfx2_DCHU_usersvc.inx
