@@ -15,7 +15,7 @@ ms.technology: windows-devices
 Use the sections in this topic when you are planning to add a new APN to the baseline COSA/APN database that ships with WIndows, or update an existing one.
 
 > [!IMPORTANT] 
-> Starting in Windows 10, Version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before Version 1703 will continue to use the APN database while Windows 10, Version 1703 and later use COSA. For a list of frequently asked questions about COSA, see [COSA FAQ](cosa---faq.md).
+> Starting in Windows 10, version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before version 1703 will continue to use the APN database while Windows 10, version 1703 and later use COSA. For a list of frequently asked questions about COSA, see [COSA FAQ](cosa---faq.md).
 
 ## The APN update process
 
@@ -56,8 +56,8 @@ The following entries in the spreadsheet apply to the APN database only. These e
 | Cert Subject Name | The Cert Subject Name of your signing certificate used for operator XML provisioning. | Optional | If specified, you must also specify the Cert Issuer Name and Carrier GUID. |
 | Carrier GUID | The self-assigned GUID that is used in future operator XML provisioning packages. | Optional | If specified, you must also specify the Cert Subject Name and Cert Issuer Name. |
 | GSM Provider Name | A string of no more than 36 characters that should match the GSM provider name reported by your device. This entry is case sensitive. | Optional | This entry is only supported on Windows 8.1 and versions of Windows 10 before Windows 10, version 1703. |
-| Connection Information – Purchase Flag | A yes or no value describing if the APN is provisioning or purchase. | Required | <p>Possible values: <ul><li>**Y** – if the APN is provisioning or purchase</li><li>**N** – if the APN is not provisioning or purchase</li></ul></p> <p>If **Purchase Flag** entry is **Y**, the **Connect Flag** entry must be **N**.</p> |
-| Connection Information – Connect Flag | A yes or no value describing if the APN is provisioning or purchase. | Required | <p>Possible values: <ul><li>**Y** – if the APN is provisioning or purchase</li><li>**N** – if the APN is not provisioning or purchase</li></ul></p> <p>If **Connect Flag** entry is **Y**, the **Purchase Flag** entry must be **N**.</p> |
+| Connection Information – Purchase Flag | A yes or no value describing if the APN is provisioning or purchase. | Required | Possible values: <ul><li>**Y** – if the APN is provisioning or purchase</li><li>**N** – if the APN is not provisioning or purchase</li></ul> <p>If **Purchase Flag** entry is **Y**, the **Connect Flag** entry must be **N**.</p> |
+| Connection Information – Connect Flag | A yes or no value describing if the APN is provisioning or purchase. | Required | Possible values: <ul><li>**Y** – if the APN is provisioning or purchase</li><li>**N** – if the APN is not provisioning or purchase</li></ul> <p>If **Connect Flag** entry is **Y**, the **Purchase Flag** entry must be **N**.</p> |
 | Connection Information – Auto-Connect Order | Windows tries connections to the APNs provided by the operator and marked as “auto-connect” in the APN database until it successfully connects to the mobile network. If all auto-connect attempts fail, Windows will show a prompt allowing the user to pick an APN or enter a custom APN. | Optional | If you have more than one access string for an operator, this entry must start with 1. This is needed for Windows to try several APN entries that share either an IMSI range, ICCID range, CDMA provider ID, or CDMA provider name when the user tries to connect. |
 
 ### APN database and COSA
@@ -71,18 +71,18 @@ The following entries apply to both APN database and COSA. All entries for COSA 
 | Operator | The name of the operator. You do not need to include the country or region in this field. | Required | Ensure you use the same spelling and capitalization each time you submit an update for your APN entries. |
 | MCC | A 3-digit MCC value used for GSM IMSI submissions. | Required for GSM providers |  |
 | MNC | A 2- or 3-digit MNC value used for GSM IMSI submissions. | Required for GSM providers |  |
-| IMSI Range - Start | A 15-digit number that includes the MCC+MNC at the start of the number. | Optional | <p>The number should end in 00. </p> <p>If this entry and the **IMSI Range - End** entry is left blank but the **MCC** and **MNC** entrys are specified, the entire MCC+MNC range is covered.</p> |
-| IMSI Range - End | A 15-digit number that includes the MCC+MNC at the start of the number. | Optional | <p>The number should end in 99.</p> <p>If this entry and the **IMSI Range - Start** entry is left blank but the **MCC** and **MNC** entrys are specified, the entire MCC+MNC range is covered.</p> |
+| IMSI Range - Start | A 15-digit number that includes the MCC+MNC at the start of the number. | Optional | The number should end in 00. <p>If this entry and the **IMSI Range - End** entry is left blank but the **MCC** and **MNC** entries are specified, the entire MCC+MNC range is covered.</p> |
+| IMSI Range - End | A 15-digit number that includes the MCC+MNC at the start of the number. | Optional | The number should end in 99. <p>If this entry and the **IMSI Range - Start** entry is left blank but the **MCC** and **MNC** entries are specified, the entire MCC+MNC range is covered.</p> |
 | ICCID Range - Start | A 19- or 20-digit number that starts with 89 (the ICCID issuer identifier number). | Optional | The number should end in 00. |
 | ICCID Range - End | A 19- or 20-digit number that starts with 89 (the ICCID issuer identifier number). | Optional | The number should end in 99. |
 | Account Experience URL | Used by Windows Connection Manager if the user does not have an active plan and tries to connect to your network. | Optional | Helps improve the plan acquisition experience. |
 | Connection Information – Friendly Name | A name for this APN entry that is understandable and meaningful to subscribers. | Optional | Appears in the Windows Connection Manager in cases where Windows cannot automatically connect to the network. |
 | Connection Information – Access String | For GSM networks, this is an APN such as data.contoso.com. For CDMA networks, this is an access string that includes a special dial code such as #777 or an Network Access Identifier such as example@contoso.com. | Required |  |
-| IP Type | A string specifying the network protocol of the connection. | Optional | <p>Available values are: <ul><li>IPv4</li><li>IPv6</li><li>IPv4v6</li></ul></p> <p>If left blank, defaults to "IPv4."</p> |
+| IP Type | A string specifying the network protocol of the connection. | Optional | Available values are: <ul><li>IPv4</li><li>IPv6</li><li>IPv4v6</li></ul> <p>If left blank, defaults to "IPv4."</p> |
 | Connection Information – User Name | The user name used to connect to your APN. This entry is case sensitive. | Optional |  |
 | Connection Information - Password | The password used to connect to your APN. This entry is case sensitive. | Optional |  |
-| Auth Protocol | Specifies the authentication protocol to be used for activating a Packet Data Protocol (PDP) context. | Optional | <p>Possible values: <ul><li>**NONE** – No authentication protocol is required</li><li>**PAP** – PAP authentication is required.</li><li>**CHAP** – CHAP authentication is required.</li><li>**MsCHAPV2** –MSCHAPv2 is authentication is required.</li></ul></p><p>This entry is only supported on Windows 8.1 and versions of Windows 10 before Windows 10, version 1703.</p> |
-| Compression | Specifies if compression will be used at the data link for header and data transfer. | Optional | <p>Possible values: <ul><li>**ENABLE** – Compression is enabled</li><li>**DISABLE** – Compression is not enabled</li></ul></p> <p>This entry is only supported on Windows 8.1 and versions of Windows 10 before Windows 10, version 1703.</p> |
+| Auth Protocol | Specifies the authentication protocol to be used for activating a Packet Data Protocol (PDP) context. | Optional | Possible values: <ul><li>**NONE** – No authentication protocol is required</li><li>**PAP** – PAP authentication is required.</li><li>**CHAP** – CHAP authentication is required.</li><li>**MsCHAPV2** –MSCHAPv2 is authentication is required.</li></ul> <p>This entry is only supported on Windows 8.1 and versions of Windows 10 before Windows 10, version 1703.</p> |
+| Compression | Specifies if compression will be used at the data link for header and data transfer. | Optional | Possible values: <ul><li>**ENABLE** – Compression is enabled</li><li>**DISABLE** – Compression is not enabled</li></ul> <p>This entry is only supported on Windows 8.1 and versions of Windows 10 before Windows 10, version 1703.</p> |
 
 ### COSA only
 
@@ -129,17 +129,17 @@ Note the following for both COSA and APN database.
 
 - Changes provided by the OEM will take precedence over the default COSA/APN database included in Windows.
 
-- The **Country/Region** and the **Operator** entrys in the spreadsheet are used to determine whether this is an update to an existing APN or a request for a new APN. If the **Country/Region** and the **Operator** fields match content that already exists in the APN database, the entries will be deleted and replaced with the entries that you list in your spreadsheet.
+- The **Country/Region** and the **Operator** entries in the spreadsheet are used to determine whether this is an update to an existing APN or a request for a new APN. If the **Country/Region** and the **Operator** fields match content that already exists in the APN database, the entries will be deleted and replaced with the entries that you list in your spreadsheet.
 
     >[!NOTE]  
     >Because the previous entries will be deleted, it is important to list all APNs for the **Operator** and **Country/Region** combination, including the ones that are not changing.
 
     For example, when the following values are entered in a row in the spreadsheet:
 
-      ```syntax
-      Operator: Contoso
-      Country/Region: Argentina
-      ```
+    ```syntax
+     Operator: Contoso
+     Country/Region: Argentina
+    ```
 
     All entries currently in the COSA or APN connectivity database that match the following format will be deleted and replaced with the row in your spreadsheet for that **Operator** and **Country/Region** combination:
 
@@ -147,7 +147,7 @@ Note the following for both COSA and APN database.
     <Operator name="Contoso (Argentina)">
     ```
 
--   If the **Operator** and **Country/Region** entrys do not match content that already exists in COSA or the APN database, a new APN is created.
+-   If the **Operator** and **Country/Region** entries do not match content that already exists in COSA or the APN database, a new APN is created.
 
     For example, if the following values are entered in a row in the spreadsheet:
 
@@ -186,6 +186,6 @@ Note the following for both COSA and APN database.
 
     -   For CDMA networks, a Network Access Identifier (NAI) is used to connect to the Internet. 
 
-Once your spreadsheet is complete, you can test the APNs you’ve entered. 
+Once your spreadsheet is complete, you can test the APNs you’ve entered. For the next steps in testing your APN update, see [Testing your COSA/APN database submission](testing-your-apn-database-submission.md).
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
