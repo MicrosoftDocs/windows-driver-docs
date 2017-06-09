@@ -91,6 +91,8 @@ ServiceBinary = %13%\osrfx2_DCHU_usersvc.exe
 osrfx2_DCHU_usersvc.exe
 ```
 
+Note that the [**AddService**](../install/inf-addservice-directive.md) directive is not required to be in a separate component.  Fabrikam made this choice to improve componentization of their universal driver package.
+
 ## Use a component to install software from a driver package
 
 Fabrikam has an executable file `osrfx2_DCHU_componentsoftware.exe` that they previously installed using a co-installer.  This legacy software displays the registry keys set by the board and is required by the OEM.  This is a GUI-based executable that only runs on Windows for desktop editions.  To install it, Fabrikam creates a separate component driver package.
@@ -156,6 +158,8 @@ To make it easier to update the driver, Fabrikam uses the following snippet in [
 [DestinationDirs]
 DefaultDestDir = 13 ; copy to driverstore
 ```
+
+Specifying a `DefaultDestDir` value of 13 can result in improved stability during the driver update process.
 
 ## Summary
 
