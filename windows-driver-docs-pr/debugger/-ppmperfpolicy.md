@@ -19,7 +19,7 @@ api_type:
 # !ppmperfpolicy
 
 
-The **!ppmperfpolicy** command
+The **!ppmperfpolicy** command is no longer supported, use the [!ppmsettings](-ppmsettings.md) command instead.
 
 ```
 !ppmperfpolicy
@@ -27,13 +27,12 @@ The **!ppmperfpolicy** command
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
-
-<span id="ParamName"></span><span id="paramname"></span><span id="PARAMNAME"></span>*ParamName*  
--
+None
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
- 
+Kdexts.dll
+  
 
  
 
