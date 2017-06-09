@@ -29,10 +29,10 @@ A Universal Windows driver can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/gett
 
 When you write a universal driver, there are four design principles to consider:
 
-*  Declarative: uses a universal INF file to enable driver installation on an offline image (for example, no co-installers)
-*  Componentized: customizations are in an extension INF separate from the primary driver INF, facilitating updating of a single component and different organizations owning different components
-*  Hardware support app: use custom capabilities to associate a hardware-specific UWP (Universal Windows Platform) app with your driver
-*  Universal DDI compliance: driver calls only DDIs that are included in the OneCore subset
+*  Declarative: uses a universal INF file to remove dependency on runtime installation actions (such as co-installers). Enables driver installation on an offline image and improves robustness in the installation process.
+*  Componentized: system and/or OEM-specific customizations are in an extension INF separate from the base driver INF, facilitating updating of a single component and different organizations owning different components.
+*  Hardware support application: use custom capabilities to associate a hardware-specific UWP (Universal Windows Platform) application with your driver.
+*  Universal DDI compliance: driver calls only DDIs that are included in the OneCore subset.
 
 Below, you'll find requirements and recommendations related to these principles.  Also check out [Universal Driver Scenarios](universal-driver-scenarios.md), which describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) applies the DCHU design principles.
 
