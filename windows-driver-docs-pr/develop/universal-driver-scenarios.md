@@ -131,7 +131,7 @@ Note that the component INF is only installed on Desktop SKUs due to targeting s
 
 Fabrikam would like to provide a GUI-based companion app as part of the universal driver package.  Because Win32-based companion applications cannot be part of a universal driver package, they port their Win32 app to the Universal Windows Platform (UWP) and [pair the app with the device](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-access-for-universal-windows-platform-apps).
 
-The following snippet from [`osrfx2_DCHU_base.inx`] shows how the primary INF adds a custom capability to the device interface instance:
+The following snippet from [`osrfx2_DCHU_base/device.c`](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_base/device.c) shows how the primary INF adds a custom capability to the device interface instance:
 
 ```cpp
     WDF_DEVICE_INTERFACE_PROPERTY_DATA PropertyData = { 0 };
