@@ -45,7 +45,7 @@ The following are required when writing a universal driver package:
 
 ## Best Practices
 
-Use the following optional best practices:
+Use the following best practices:
 
 *  If your INF performs any custom setup actions that depend on the target platform, consider separating them out into an extension INF.  You can update an extension INF independently from the primary driver package to improve robustness and servicing.  See [Using an Extension INF File](../install/using-an-extension-inf-file.md).
 *  Provide a UWP app that works with your device.  For details, see [Hardware access for Universal Windows Platform apps](../devapps/hardware-access-for-universal-windows-platform-apps.md).  In Windows 10, version 1703, the OEM needs to pre-load such an app using [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).  Alternatively, users can manually download the app from the Windows Store.
