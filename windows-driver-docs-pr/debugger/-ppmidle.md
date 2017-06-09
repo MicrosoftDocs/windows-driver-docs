@@ -19,7 +19,7 @@ api_type:
 # !ppmidle
 
 
-The **!ppmidle** command display processor idle states.
+The **!ppmidle** command displays processor idle states.
 
 ```
 !ppmidle
