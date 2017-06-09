@@ -8,7 +8,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# MB Multi-SIM Operations
+# MB Multi-SIM operations
 
 ## Desktop Multi-Modem Multi-Executor Support
 
@@ -136,7 +136,7 @@ With the addition of the executor concept to non-Windows Mobile devices in Windo
 |  | OID_WWAN_SLOT_INFO_STATUS |
 
 > [!NOTE]
-> [OID_WWAN_RADIO_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569832) has been updated for Windows 10 Version 1703 as well. See OID_WWAN_RADIO_STATE for more information.
+> [OID_WWAN_RADIO_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569832) has been updated for Windows 10, version 1703 as well. See OID_WWAN_RADIO_STATE for more information.
 
 ## MBIM Interface Update for Multi-SIM Operations
 
@@ -391,13 +391,15 @@ The following MBIM_MS_UICCSLOT_STATE structure describes the possible states of 
 
 | States | Value | Description |
 | --- | --- | --- |
-| MBIMMsUICCSlotStateUnknown | 0 | The modem is still in the process of initializing so the SIM slot state is not deterministic. |
-| MBIMMsUICCSlotStateEmpty | 1 | The UICC slot is powered off and no card is present. An implementation that is unable to determine the presence of a card in a slot that is powered off reports its state as MBIMUICCSlotStateOff. |
-| MBIMMsUICCSlotStateOff | 2 | The UICC slot is powered off. |
-| MBIMMsUICCSlotStateEmpty | 3 | The UICC slot is empty (there is no card in it). |
-| MBIMMsUICCSlotStateNotReady | 4 | The UICC slot is occupied and powered on but the card within it is not yet ready. |
-| MBIMMsUICCSlotStateActive | 5 | The UICC slot is occupied and the card within it is ready. |
-| MBIMMsUICCSlotStateError | 6 | The UICC slot is occupied and powered on but the card is in an error state and cannot be used until it is next reset. |
+| UICCSlotStateUnknown | 0 | The modem is still in the process of initializing so the SIM slot state is not deterministic. |
+| UICCSlotStateOffEmpty | 1 | The UICC slot is powered off and no card is present. An implementation that is unable to determine the presence of a card in a slot that is powered off reports its state as UICCSlotStateOff. |
+| UICCSlotStateOff | 2 | The UICC slot is powered off. |
+| UICCSlotStateEmpty | 3 | The UICC slot is empty (there is no card in it). |
+| UICCSlotStateNotReady | 4 | The UICC slot is occupied and powered on but the card within it is not yet ready. |
+| UICCSlotStateActive | 5 | The UICC slot is occupied and the card within it is ready. |
+| UICCSlotStateError | 6 | The UICC slot is occupied and powered on but the card is in an error state and cannot be used until it is next reset. |
+| UICCSlotStateActiveEsim | 7 | The card in the slot is an eSIM with an active profile and is ready to accept commands. |
+| UICCSlotStateActiveEsimNoProfiles | 8 | The card in the slot is an eSIM with no profiles (or no active profiles) and is ready to accept commands. |
 
 #### Status Codes
 
