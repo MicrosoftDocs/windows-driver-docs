@@ -1,4 +1,4 @@
-# Universal Driver Scenarios
+ # Universal Driver Scenarios
 
 This topic describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) applies the DCHU design principles.  You can use it as a model for your own universal driver package.
 
@@ -8,19 +8,21 @@ This sample is intended to be used with Windows 10 Version 1703 and later.
 
 ## Prerequisites
 
-Before you read this section, check out the requirements and best practices for universal drivers described in [Getting Started with Universal Windows drivers](getting-started-with-universal-drivers.md)
+Before you read this section, check out the requirements and best practices for universal driver packages described in [Getting Started with Universal Windows drivers](getting-started-with-universal-drivers.md)
 
 ## Overview
 
-The DCHU sample provides example scenarios where two hardware partners, Contoso (OEM) and Fabrikam (IHV) are working together to create a Universal Windows Driver for a device in Contoso's upcoming system.  The device in question is an [OSR USB FX2 learning kit](https://store.osr.com/product/osr-usb-fx2-learning-kit-v2/).  In the past, Fabrikam would write a non-universal driver package that was customized to a specific Contoso product line, and then hand it to the OEM to handle servicing.  This resulted in significant maintenance overhead, so Fabrikam decides to refactor the code and create a universal driver instead.
+The DCHU sample provides example scenarios where two hardware partners, Contoso (OEM) and Fabrikam (IHV) are working together to create a Universal Windows Driver for a device in Contoso's upcoming system.  The device in question is an [OSR USB FX2 learning kit](https://store.osr.com/product/osr-usb-fx2-learning-kit-v2/).  In the past, Fabrikam would write a non-universal driver package that was customized to a specific Contoso product line, and then hand it to the OEM to handle servicing.  This resulted in significant maintenance overhead, so Fabrikam decides to refactor the code and create a universal driver package instead.
 
 ## Use only declarative sections and directives
 
-First, Fabrikam reviews the [list of INF sections and directives](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file) that are invalid in universal drivers.  During this exercise, Fabrikam notices that they're using many of these sections and directives in their driver package.  The biggest amount of incompliant code resides in their co-installer, which applies settings and files that depend on the target platform.
+First, Fabrikam reviews the [list of INF sections and directives](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file) that are invalid in universal driver packages.  During this exercise, Fabrikam notices that they're using many of these sections and directives in their driver package.  
 
-This means that the driver package is larger than it could be, and it's harder to service the driver when a bug affects only a subset of the OEM systems that ship the driver.  Also, most of the OEM-specific code is related to branding, so Fabrikam needs to update the driver package every time an OEM is added or a minor issue affects a subset of OEM systems.
+One directive they are using is the one to register a co-installer.  Their co-installer applies settings and files that depend on the target platform, instead of those settings and files being applied declaratively through the INF.
 
-Fabrikam removes the non-universal sections and directives and uses the [InfVerif](../devtest/infverif.md) tool to verify that the new driver's INF file is universal.
+This means that the driver package is larger than it could be, and it is harder to service the driver when a bug affects only a subset of the OEM systems that ship the driver.  Also, most of the OEM-specific modifications are related to branding, so Fabrikam needs to update the driver package every time an OEM is added or a minor issue affects a subset of OEM systems.
+
+Fabrikam removes the non-universal sections and directives and uses the [InfVerif](../devtest/infverif.md) tool to verify that the new driver package's INF file is universal.
 
 ## Use extension INFs to componentize a driver package
 
