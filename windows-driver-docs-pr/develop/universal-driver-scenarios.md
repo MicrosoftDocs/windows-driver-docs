@@ -163,7 +163,7 @@ Specifying a `DefaultDestDir` value of 13 can result in improved stability durin
 
 ## Summary
 
-The following diagram shows the three driver packages that Fabrikam and Contoso created for their Universal Windows Driver.
+The following diagram shows the multiple driver packages that Fabrikam and Contoso created for their Universal Windows Driver as well as the three set of files they will submit to the Windows Hardware Dev Center.  
 
 ![Extension, primary, and component driver packages](images/universal-scenarios.png)
 
