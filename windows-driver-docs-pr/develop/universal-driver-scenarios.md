@@ -4,6 +4,8 @@ This topic describes how the [DCHU universal driver sample](https://github.com/M
 
 If you would like a local copy of the sample repo, clone from [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples).
 
+This sample is intended to be used in Windows 10 Version 1703 and later
+
 ## Prerequisites
 
 Before you read this section, check out the requirements and best practices for universal drivers described in [Getting Started with Universal Windows drivers](getting-started-with-universal-drivers.md)
