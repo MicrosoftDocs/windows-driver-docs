@@ -24,7 +24,7 @@ Fabrikam removes the non-universal sections and directives and uses the [InfVeri
 
 ## Use extension INFs to componentize a driver package
 
-Next, Fabrikam separates customizations that are specific to OEM partners (such as Contoso) from the primary INF into an [extension INF](../install/using-an-extension-inf-file.md).
+Next, Fabrikam separates customizations that are specific to OEM partners (such as Contoso) from the primary driver package into an [extension INF](../install/using-an-extension-inf-file.md).
 
 The following snippet, updated from [`osrfx2_DCHU_extension.inx`], specifies the `Extension` class and identifies Contoso as the provider since they will own the extension driver package:
 
@@ -56,9 +56,9 @@ HKR, OSR, "OperatingExceptions",, "x86"
 
 Fabrikam requires the LEDs on the OSR board to be treated as a child device of the main board.  They control these lights using a Win32 service.
 
-To accomplish this, they encapsulate the LED device in a component and provide a separate LED controller INF [`osrfx2_DCHU_usersvc.inx`] in the base driver package to install the service.
+To accomplish this, they encapsulate the LED device in a component and add a separate LED controller driver package to install the service.  Now they have two driver packages in the same Visual Studio solution, which they will provide as one submission in the Windows Hardware Dev Center dashboard.
 
-The following snippet from [`osrfx2_DCHU_base.inx`] specifies the [**AddComponent**](../install/inf-addcomponent-directive.md) directive to make the LED lights a child device to the main board and a [**CopyINF**](../install/inf-copyinf-directive.md) directive to copy the LED INF to the system:
+The following snippet from [`osrfx2_DCHU_base.inx`] specifies the [**AddComponent**](../install/inf-addcomponent-directive.md) directive to make the LED lights a child device to the main board and a [**CopyINF**](../install/inf-copyinf-directive.md) directive to copy the LED driver package to the system:
 
 ```
 [OsrFx2_Install.NT.Components]
@@ -71,7 +71,7 @@ ComponentIds = VID_045e&PID_94ac  ; Matches with SWC\VID_045e&PID_94ac
 CopyInf = osrfx2_DCHU_usersvc.inf
 ```
 
-Use the [**CopyINF**](../install/inf-copyinf-directive.md) directive for multifunction devices when both INFs are owned by the same organization.  Use extension INFs when different hardware partners own the code.
+Use the [**CopyINF**](../install/inf-copyinf-directive.md) directive for multifunction devices when both driver packages are owned by the same organization.  Use extension INFs when different hardware partners own the code.
 
 Then, in the LED controller's INF file [`osrfx2_DCHU_usersvc.inx`], Fabrikam specifies the [**AddService**](../install/inf-addservice-directive.md) directive to add and start the service:
 
@@ -125,13 +125,13 @@ osrfx2_DCHU_componentsoftware.exe
 
 The [source code for the Win32 app](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_component/osrfx2_DCHU_componentsoftware) is included in the DCHU sample.
 
-Note that the component INF is only installed on Desktop SKUs due to targeting set in the Windows Hardware Dev Center dashboard.  For more info, see [Publish a driver to Windows Update](https://docs.microsoft.com/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update).
+Note that the component driver package is only installed on Desktop SKUs due to targeting set in the Windows Hardware Dev Center dashboard.  For more info, see [Publish a driver to Windows Update](https://docs.microsoft.com/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update).
 
 ## Add a hardware support app
 
 Fabrikam would like to provide a GUI-based companion app as part of the universal driver package.  Because Win32-based companion applications cannot be part of a universal driver package, they port their Win32 app to the Universal Windows Platform (UWP) and [pair the app with the device](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-access-for-universal-windows-platform-apps).
 
-The following snippet from [`osrfx2_DCHU_base/device.c`](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_base/device.c) shows how the primary INF adds a custom capability to the device interface instance:
+The following snippet from [`osrfx2_DCHU_base/device.c`](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_base/device.c) shows how the primary driver package adds a custom capability to the device interface instance:
 
 ```cpp
     WDF_DEVICE_INTERFACE_PROPERTY_DATA PropertyData = { 0 };
@@ -159,7 +159,7 @@ To make it easier to update the driver, Fabrikam uses the following snippet in [
 DefaultDestDir = 13 ; copy to driverstore
 ```
 
-Specifying a `DefaultDestDir` value of 13 can result in improved stability during the driver update process.
+Using a destination directory value of 13 can result in improved stability during the driver update process.
 
 ## Summary
 
