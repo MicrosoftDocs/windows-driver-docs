@@ -35,7 +35,7 @@ Here are the values you might see for **Target Platform** on MSDN, and what they
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="Universal"></span><span id="universal"></span><span id="UNIVERSAL"></span>Universal</p></td>
-<td align="left"><p>A Universal Windows driver can call this device driver interface (DDI).</p>
+<td align="left"><p>A driver binary in a Universal Windows driver can call this device driver interface (DDI).</p>
 <p>A Universal Windows driver runs on the following Universal Windows Platform (UWP)-based editions of Windows 10:</p>
 <ul>
 <li>Windows 10 for desktop editions (Home, Pro, and Enterprise)</li>
@@ -47,11 +47,11 @@ Here are the values you might see for **Target Platform** on MSDN, and what they
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Desktop"></span><span id="desktop"></span><span id="DESKTOP"></span>Desktop</p></td>
-<td align="left"><p>A driver for Windows 10 for desktop editions or Windows Server 2016 Technical Preview can call this DDI.</p></td>
+<td align="left"><p>A driver binary for Windows 10 for desktop editions or Windows Server 2016 Technical Preview can call this DDI.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="Mobile"></span><span id="mobile"></span><span id="MOBILE"></span>Mobile</p></td>
-<td align="left"><p>A driver for Windows 10 Mobile can call this DDI.</p></td>
+<td align="left"><p>A driver binary for Windows 10 Mobile can call this DDI.</p></td>
 </tr>
 </tbody>
 </table>
