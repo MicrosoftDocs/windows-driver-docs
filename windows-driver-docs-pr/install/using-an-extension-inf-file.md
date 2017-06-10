@@ -57,7 +57,7 @@ Here are the entries you need to define an INF as an extension INF.
 2.  Provide an **ExtensionId** entry in the [**\[Version\]**](inf-version-section.md) section. Generate a new GUID for the initial version of an extension INF, or reuse the last GUID for subsequent updates of the initial extension INF.
 
     ```
-    ExtensionId = {028b4317-f2e4-4fb2-80af-aaac8c07e98e} ; Example GUID
+    ExtensionId = {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzz} ; replace with your own GUID
     ```
 
 3.  If you are updating an extension INF, keep the **ExtensionId** the same and increment the version or date (or both) specified by the [**DriverVer**](inf-driverver-directive.md) directive. For a given **ExtensionId** value, PnP selects the INF with the highest **DriverVer**.

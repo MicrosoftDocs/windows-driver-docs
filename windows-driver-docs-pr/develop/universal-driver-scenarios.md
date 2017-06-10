@@ -163,7 +163,7 @@ Using a destination directory value of 13 can result in improved stability durin
 
 ## Summary
 
-The following diagram shows the three driver packages that Fabrikam and Contoso created for their Universal Windows Driver.
+The following diagram shows the driver packages that Fabrikam and Contoso created for their Universal Windows Driver.  They will make three submissions on the Windows Hardware Dev Center dashboard.
 
 ![Extension, primary, and component driver packages](images/universal-scenarios.png)
 
