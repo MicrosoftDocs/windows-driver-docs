@@ -11,32 +11,42 @@ ms.technology: windows-devices
 
 # Getting Started with Universal Windows drivers
 
-Universal Windows drivers enable developers to create a single driver that runs across multiple different device types, from embedded systems to tablets and desktop PCs.
+Universal Windows drivers enable developers to create a single driver package that runs across multiple different device types, from embedded systems to tablets and desktop PCs.
 
-Universal Windows drivers run on Windows 10 for desktop editions (Home, Pro, and Enterprise), Windows 10 Mobile, Windows 10 IoT Core, Windows Server 2016 Technical Preview, as well as other Windows 10 editions that share a common set of interfaces.
+A Universal Windows driver is a driver package that contains an INF file and binaries that will install and run on Universal Windows Platform (UWP) based editions of Windows 10, such as Windows 10 for desktop editions (Home, Pro, and Enterprise), Windows 10 S, Windows 10 Mobile, Windows 10 IoT Core, Windows Server 2016 Technical Preview, as well as other Windows 10 editions that share a common set of interfaces.
 
-## Introduction to Universal Windows drivers
+A Universal INF file is an INF file that only uses the [INF syntax supported on the UWP-based editions of Windows 10](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file).
 
-Windows 10 provides a set of API and DDI interfaces that are common to multiple editions of Windows. This set of interfaces is called the Universal Windows Platform (UWP).
+Any binaries referenced by the Universal INF file must use only API and DDI interfaces that are included in UWP-based editions of Windows 10.
 
-A Universal Windows driver is a kernel-mode or user-mode driver binary that installs and runs on UWP-based editions of Windows 10.
+A driver binary must call only device driver interfaces (DDIs) that are part of UWP.  These DDIs are marked as **Universal** on the corresponding documentation reference pages.  The driver binary can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the Windows Driver Model (WDM).
 
-A Universal Windows driver calls only device driver interfaces (DDIs) that are part of UWP. These DDIs are marked as **Universal** on the corresponding MSDN reference pages.
+Other binaries contained in your Universal Windows driver must pass the [API validation tests](../devtest/infverif.md).
 
-A Universal Windows driver can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the Windows Driver Model (WDM).
+## Design Principles
+
+When you write a universal driver package, there are four design principles to consider:
+
+*  Declarative: Installation operations are done declaratively through directives in the INF file and not through extension points such as co-installers, RegisterDlls, etc.
+*  Componentized: System and/or OEM-specific customizations are in an [extension INF](../install/using-an-extension-inf-file.md) driver package separate from the primary driver package, facilitating independent updates of different components owned by different organizations.
+*  Hardware support application: Use [custom capabilities](../devapps/hardware-access-for-universal-windows-platform-apps.md) to associate a hardware-specific UWP (Universal Windows Platform) application with your driver.
+*  Universal compliance: Binaries in the universal driver package only call APIs and DDIs that are included in the OneCore subset.  INF files use only universal INF syntax.
+
+Below, you'll find requirements and recommendations related to these principles.  Also check out [Universal Driver Scenarios](universal-driver-scenarios.md), which describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) applies the DCHU design principles.
 
 ## Requirements
 
-The following are required when writing a universal driver:
+The following are required when writing a universal driver package:
 
 *  Create a universal INF file for your driver:
-    1.  Review the list of INF sections and directives that are valid in universal drivers in [Using a Universal INF File](../install/using-a-universal-inf-file.md).
-    2.  Use the [InfVerif](../devtest/infverif.md) tool to verify that your driver's INF file is universal.
-*  Use the ApiValidator tool to verify that the APIs your driver calls are valid for a universal driver.  See [Validating Universal Windows drivers](validating-universal-drivers.md).
+    1.  Review the list of INF sections and directives that are valid in universal driver packages in [Using a Universal INF File](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file).
+    2.  Use the [InfVerif](../devtest/infverif.md) tool to verify that your driver package's INF file is universal.
+*  Use the ApiValidator tool to verify that the APIs your binaries call are valid for a universal driver package.  See [Validating Universal Windows drivers](validating-universal-drivers.md).
 
 ## Best Practices
 
 Use the following optional best practices:
 
-*  If your INF performs any custom setup actions that depend on the target platform, consider separating them out into an extension INF.  You can update an extension INF independently from the primary INF to improve robustness and servicing.  See [Using an Extension INF File](../install/using-an-extension-inf-file.md).
-*  Provide a UWP app that works with your device.  For details, see [Hardware access for Universal Windows Platform apps](../devapps/hardware-access-for-universal-windows-platform-apps.md).  In Windows 10, version 1703, the OEM needs to pre-load such an app.  Alternatively, users can manually download the app from the Windows Store.
+*  If your INF performs any custom setup actions that depend on the target platform, consider separating them out into an extension INF.  You can update an extension INF independently from the primary driver package to improve robustness and servicing.  See [Using an Extension INF File](../install/using-an-extension-inf-file.md).
+*  Provide a UWP app that works with your device.  For details, see [Hardware access for Universal Windows Platform apps](../devapps/hardware-access-for-universal-windows-platform-apps.md).  In Windows 10, version 1703, the OEM needs to pre-load such an app using [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).  Alternatively, users can manually download the app from the Windows Store.
+*  Provide an [**INF DestinationDirs Section**](../install/inf-destinationdirs-section.md) and set `DefaultDestDir` to 13 to make the driver run from the Driver Store.  This will not work for some devices.
