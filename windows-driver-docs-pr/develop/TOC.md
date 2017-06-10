@@ -1,7 +1,6 @@
 # [Developing, Testing, and Deploying Drivers](index.md)
 # [Getting Started with Universal Drivers](getting-started-with-universal-drivers.md)
 ## [Validating Universal Drivers](validating-universal-drivers.md)
-## [Installing a Universal Driver](installing-a-universal-driver.md)
 ## [Universal Driver Scenarios](universal-driver-scenarios.md)
 ## [Debugging a Universal driver](debugging-a-universal-driver.md)
 ## [Target platform on MSDN driver reference pages](windows-10-editions-for-universal-drivers.md)
