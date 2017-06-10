@@ -56,11 +56,48 @@ By using these commands to select the current system, and by using the standard 
 
 However, you cannot separate execution of these processes. The [**g (Go)**](g--go-.md) command always causes all targets to execute together.
 
-**Note**   We recommend that you do not debug live targets and dump targets together, because commands behave differently for each type of debugging. For example, if you use the **g (Go)** command when the current system is a dump file, the debugger begins executing, but you cannot break back into the debugger, because the break command is not recognized as valid for dump file debugging.
+**Note**   There are complications, when you debug live targets and dump targets together, because commands behave differently for each type of debugging. For example, if you use the **g (Go)** command when the current system is a dump file, the debugger begins executing, but you cannot break back into the debugger, because the break command is not recognized as valid for dump file debugging.
 
  
+Example
+-------
 
- 
+If you want to work with three dump files at the same time, you can load both using the -z option. For more infomation see [WinDbg Command-Line Options](-WinDbg Command-Line Options.md). You can also use the [.opendump](-opendump--open-dump-file-.md)  and the [**g (Go)**](g--go-.md) commands to load additional dump files in the debugger. 
+
+```
+windbg -z c:\notepad.dmp -z c:\paint.dmp -z c:\calc.dmp
+```
+
+Use the  [|| (System Status)](----system-status-.md) command to confirm that all three systems are present.
+
+```
+||0:0:007> ||
+.  0 User mini dump: c:\notepad.dmp
+   1 User mini dump: C:\paint.dmp
+   2 User mini dump: c:\calc.dmp
+```
+
+Then use the  [||s (Set Current System)](--s--set-current-system-.md) command to set the current system to system 1.
+
+```
+||0:0:007> ||1s
+   0 User mini dump: c:\notepad.dmp
+.  1 User mini dump: C:\paint.dmp
+   2 User mini dump: c:\calc.dmp
+```
+
+You can use the [.detach](-detach.md) command when you are done looking at a specific dump file.
+
+```
+||1:1:017> .detach
+ntdll!DbgBreakPoint:
+00007ff8`aada8d70 cc              int     3
+Detached
+0:007> ||
+.  0 User mini dump: c:\notepad.dmp
+```
+
+
 
  
 
