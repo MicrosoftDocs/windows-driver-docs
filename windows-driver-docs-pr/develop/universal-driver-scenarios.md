@@ -33,7 +33,7 @@ The following snippet, updated from [`osrfx2_DCHU_extension.inx`], specifies the
 Class       = Extension
 ClassGuid   = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
 Provider    = Contoso
-ExtensionId = {3846ad8c-dd27-433d-ab89-453654cd542a}
+ExtensionId = {3846ad8c-dd27-433d-ab89-453654cd542a} ; replace with your own GUID
 ```
 
 In [`osrfx2_DCHU_base.inx`], Fabrikam specifies the following entries:
