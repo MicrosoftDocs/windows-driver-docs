@@ -62,11 +62,13 @@ However, you cannot separate execution of these processes. The [**g (Go)**](g--g
 Example
 -------
 
-If you want to work with three dump files at the same time, you can load both using the -z option. For more infomation see [WinDbg Command-Line Options](windbg-command-line-options.md). You can also use the [.opendump](-opendump--open-dump-file-.md)  and the [**g (Go)**](g--go-.md) commands to load additional dump files in the debugger. 
+To  work with three dump files at the same time, you can use the -z option to load them when WinDbg is started. 
 
 ```
 windbg -z c:\notepad.dmp -z c:\paint.dmp -z c:\calc.dmp
 ```
+
+For more infomation see [WinDbg Command-Line Options](windbg-command-line-options.md). You can also use the [.opendump](-opendump--open-dump-file-.md)  and the [**g (Go)**](g--go-.md) commands to load additional dump files in the debugger. 
 
 Use the  [|| (System Status)](----system-status-.md) command to confirm that all three systems are present.
 
