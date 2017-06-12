@@ -27,11 +27,11 @@ ms.technology: windows-devices
 # Overview of Boot Options in Windows Vista and Later
 
 
-Windows Vista introduced a new boot loader architecture, a new firmware-independent boot configuration and storage system called *Boot Configuration Data* (BCD), and a new boot option editing tool, BCDEdit (BCDEdit.exe). During development, you can use BCDEdit to configure boot options for debugging, testing, and troubleshooting your driver on computers running Windows 10, Windows 8, Windows Server 2012, Windows 7, and Windows Server 2008.
+Windows Vista introduced a new boot loader architecture, a new firmware-independent boot configuration and storage system called *Boot Configuration Data* (BCD), and a new boot option editing tool, BCDEdit (BCDEdit.exe). During development, you can use BCDEdit to configure boot options for debugging, testing, and troubleshooting your driver on computers running Windows 10, Windows 8, Windows Server 2012, Windows 7, and Windows Server 2008.
 
-**Important**  Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using BCDEdit could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings.
+**Important**  Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using BCDEdit could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings.
 
- 
+ 
 
 ### <span id="boot_loading_architecture_in_windows_vista_and_later"></span><span id="BOOT_LOADING_ARCHITECTURE_IN_WINDOWS_VISTA_AND_LATER"></span>Boot Loading Architecture
 
@@ -55,7 +55,7 @@ Windows boot options are stored in the Boot Configuration Data (BCD) store on BI
 
 BCD replaces the traditional Boot.ini text file in BIOS-based systems. Storing boot parameters in a text file, however simple, was considered to be too vulnerable to malicious attacks to justify its use. On EFI-based computers, where boot options are stored in NVRAM, you use the same BCD methods to edit boot options as you would use on a BIOS-based computer, instead of accessing NVRAM directly using Windows APIs or specialized tools.
 
-BCD provides a common, firmware-independent boot option interface for all computers running Windows 10, Windows 8, Windows Server 2012, Windows 7, and Windows Server 2008. It is more secure than previous boot option storage configurations, because it permits secure lockdown of the BCD store and lets Administrators assign rights for managing boot options. BCD is available at run time and during all phases of setup. You can even call BCD during power state transitions and use it to define the boot process for resuming after hibernation.
+BCD provides a common, firmware-independent boot option interface for all computers running Windows 10, Windows 8, Windows Server 2012, Windows 7, and Windows Server 2008. It is more secure than previous boot option storage configurations, because it permits secure lockdown of the BCD store and lets Administrators assign rights for managing boot options. BCD is available at run time and during all phases of setup. You can even call BCD during power state transitions and use it to define the boot process for resuming after hibernation.
 
 You can manage BCD remotely and manage BCD when the system boots from media other than the media on which the BCD store resides. This feature is extremely important for debugging and troubleshooting, especially when a BCD store must be restored while running Startup Repair from a CD, from USB-based storage media, or even remotely.
 
@@ -98,9 +98,9 @@ To change boot options programmatically in Windows, use the Windows Management I
 
 [Boot Configuration Data](http://go.microsoft.com/fwlink/p/?linkid=74322)
 
- 
+ 
 
- 
+ 
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Overview%20of%20Boot%20Options%20in%20Windows%20Vista%20and%20Later%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
