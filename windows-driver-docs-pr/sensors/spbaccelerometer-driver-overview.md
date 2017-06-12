@@ -17,9 +17,9 @@ This sample UMDF driver controls an ADXL345 accelerometer that is connected to a
 
 Even if your system doesn't support this sensor, you can use the sample driver as a reference for integrating other devices over I2C.
 
- 
+ 
 
- 
+ 
 
 
 --------------------

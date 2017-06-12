@@ -15,13 +15,13 @@ ms.technology: windows-devices
 
 This topic shows you how to install the sensor driver on a development board, after you update the secondary system description table (SSDT) for the development board.
 
-This topic uses the Sharks Cove development board and an ADXL345 accelerometer as a case study, to help explain the process of installing a sensor driver on a development board. So if you want to perform the tasks presented in this topic, you must first install an operating system on the Sharks Cove. For more information about how to do that, see [Download kits and tools for Windows 10](https://msdn.microsoft.com/windows/hardware/dn913721.aspx), and follow the instructions in **Step 1** (Install Windows 10).
+This topic uses the Sharks Cove development board and an ADXL345 accelerometer as a case study, to help explain the process of installing a sensor driver on a development board. So if you want to perform the tasks presented in this topic, you must first install an operating system on the Sharks Cove. For more information about how to do that, see [Download kits and tools for Windows 10](https://msdn.microsoft.com/windows/hardware/dn913721.aspx), and follow the instructions in **Step 1** (Install Windows 10).
 
 After you finish installing the operating system on the Sharks Cove, See [Build the sensor driver](build-the-sensor-driver.md) to learn how to build a driver in Microsoft Visual Studio. Then return here to continue.
 
 The accelerometer is attached to the Sharks Cove via the I2C bus. Peripherals that are connected to the I2C bus are enumerated via the Advanced Configuration and Power Interface (ACPI). So the sample driver for the accelerometer was developed to support ACPI instead of Plug and Play.
 
-To make the Sharks Cove’s ACPI driver aware of the new device (the accelerometer) on the I2C bus, you must add information about the accelerometer to the SSDT on the Sharks Cove. This table describes the hardware resources and interrupt requirements for a hardware platform’s devices, including attached peripherals like the accelerometer.
+To make the Sharks Cove's ACPI driver aware of the new device (the accelerometer) on the I2C bus, you must add information about the accelerometer to the SSDT on the Sharks Cove. This table describes the hardware resources and interrupt requirements for a hardware platform's devices, including attached peripherals like the accelerometer.
 
 ## Before you begin
 
@@ -177,12 +177,12 @@ Before you install the sample sensor driver, you must turn on testsigning. Perfo
 
 1. In the Command prompt window, enter the following command to see whether testsigning is already turned on.
 **bcdedit /enum**
-2. If you see a listing similar to the following, showing an entry for testsigning, with its value set to “yes” then skip to **Step 5**.
+2. If you see a listing similar to the following, showing an entry for testsigning, with its value set to  yes  then skip to **Step 5**.
 ![command prompt window showing testsigning set to yes.](images/testsigning.png)
 
 3. If you need to turn on test signing, then enter the following command:
 **bcdedit /set testsigning on**
-4. Repeat **Step 1** (in this exercise) to verify that the value of the testsigning system variable is now set to “yes” in the Windows Boot Loader list.
+4. Repeat **Step 1** (in this exercise) to verify that the value of the testsigning system variable is now set to  yes  in the Windows Boot Loader list.
 
 5. Restart the Sharks Cove. As the board restarts, hold the Volume-up button for about 2 seconds, to enter system setup (UEFI) window.
 
@@ -224,9 +224,9 @@ For information about how to use Visual Studio to deploy a driver to a client co
 
 After successfully installing the sample sensor driver, see [Test your universal sensor driver](test-your-universal-sensor-driver.md) for information about how to test a sensor.
 
- 
+ 
 
- 
+ 
 
 
 --------------------
