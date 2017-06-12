@@ -57,7 +57,7 @@ C:\Windows\System32\certutil.exe -dump CertificateName.cer
 Look for the signature hash near the bottom and ensure it’s SHA256. If
 it’s not, you’ll need to use a SHA256 cert to sign your app. It should
 look something like the following example hash below.
-```text
+```
 Signature Hash:
 ca9fc964db7e0c2938778f4559946833e7a8cfde0f3eaa07650766d4764e86c4
 ```
@@ -75,11 +75,13 @@ to approve their request. Ignore the following in the SCCD on a desktop
 PC in developer mode:
 
 -   Catalog entry in the SCCD. This is set to FFFF.
+
     ```
     <Catalog>FFFF</Catalog>
     ```
 -   Certificate Signature Hash in the authorized entity entry in the SCCD. While it is
     neither enforced nor validated, please put a 64-char sequence.
+
     ```
     <AuthorizedEntity AppPackageFamilyName="MicrosoftHSATest.Microsoft.SDKSamples.Hsa.CPP_q536wpkpf5cy2" CertificateSignatureHash="ca9fc964db7e0c2938778f4559946833e7a8cfde0f3eaa07650766d4764e86c4"></AuthorizedEntity>
     ```
@@ -87,7 +89,7 @@ PC in developer mode:
 ## Granting Custom Capability Access to System Software
 
 Currently, there are two types of system software that you can grant
-access to a UWP app with Custom Capabilities: RPC (Remote Procedure Call) Endpoints (from within an NT
+access to a UWP app with Custom Capabilities: [RPC (Remote Procedure Call)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378651) Endpoints (from within an NT
 Service) and Drivers.
 
 ![Custom Capability Architecture Diagram](images/cc-arch.png)
@@ -97,7 +99,7 @@ Service) and Drivers.
 ### Granting Custom Capability access to an RPC Endpoint
 
 When an UWP declares a Custom Capability in its app manifest, it will at
-a later point contain the SID form of the Custom Capability in its
+a later point contain the SID [Security Identifier](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379571) form of the Custom Capability in its
 process token at runtime. By default, a RPC endpoint doesn't allow UWP’s
 (AppContainer processes) to connect to them. A UWP app must have the appropriate Custom
 capabilities for access. The following steps are taken to do so:
