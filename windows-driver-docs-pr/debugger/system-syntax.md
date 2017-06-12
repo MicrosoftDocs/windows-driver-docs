@@ -57,16 +57,9 @@ Systems are assigned ordinals in the order that the debugger attaches to them.
 
 When debugging begins, the current system is the one that caused the present exception or debug event (or the one that the debugger most recently attached to). That system remains the current system until you specify a new one by using a [**||s (Set Current System)**](--s--set-current-system-.md) command or by using the [Processes and Threads window](processes-and-threads-window.md) in WinDbg.
 
-Remarks
--------
-
-To work with multiple systems, you can use the [.opendump](-opendump--open-dump-file-.md) to debug multiple crash dumps at the same time. For more information about how to control a multiple-target session, see [Debugging Multiple Targets](debugging-multiple-targets.md).
-
-**Note**   There are complications, when you debug live targets and dump targets together, because commands behave differently for each type of debugging. For example, if you use the **g (Go)** command when the current system is a dump file, the debugger begins executing, but you cannot break back into the debugger, because the break command is not recognized as valid for dump file debugging.
-
 Example
 -------
-This example shows three dump files are loaded. System 1 is active and system 2 caused the current exception or debug event.
+This example shows three dump files are loaded. System 1 is active and system 2 caused the debug event.
 
 ```
 ||1:1:017> ||
@@ -75,6 +68,15 @@ This example shows three dump files are loaded. System 1 is active and system 2 
 #  2 User mini dump: c:\calc.dmp
 
 ```
+
+
+Remarks
+-------
+
+To work with multiple systems, you can use the [.opendump](-opendump--open-dump-file-.md) to debug multiple crash dumps at the same time. For more information about how to control a multiple-target session, see [Debugging Multiple Targets](debugging-multiple-targets.md).
+
+**Note**   There are complications, when you debug live targets and dump targets together, because commands behave differently for each type of debugging. For example, if you use the **g (Go)** command when the current system is a dump file, the debugger begins executing, but you cannot break back into the debugger, because the break command is not recognized as valid for dump file debugging.
+
 
 
 
