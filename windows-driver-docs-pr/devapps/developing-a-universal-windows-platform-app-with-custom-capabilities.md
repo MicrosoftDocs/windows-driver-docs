@@ -76,13 +76,13 @@ PC in developer mode:
 
 -   Catalog entry in the SCCD. This is set to FFFF.
 
-    ```
+    ```xml
     <Catalog>FFFF</Catalog>
     ```
 -   Certificate Signature Hash in the authorized entity entry in the SCCD. While it is
     neither enforced nor validated, please put a 64-char sequence.
 
-    ```
+    ```xml
     <AuthorizedEntity AppPackageFamilyName="MicrosoftHSATest.Microsoft.SDKSamples.Hsa.CPP_q536wpkpf5cy2" CertificateSignatureHash="ca9fc964db7e0c2938778f4559946833e7a8cfde0f3eaa07650766d4764e86c4"></AuthorizedEntity>
     ```
 
