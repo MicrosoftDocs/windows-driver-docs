@@ -17,10 +17,7 @@ ms.technology: windows-devices
 
 # Custom Capabilities for Universal Windows Platform Apps
 
-Custom Capabilities are a new capability class introduced to allow
-developers to make better use of the UWP(Universal Windows Platform). A [Universal Windows Platform (UWP)](https://msdn.microsoft.com/50a5605e-3a91-41db-800a-9180717c1e86)
-application can utilize Custom Capabilities to gain access to system
-software.
+Custom Capabilities are a new capability class introduced to allow developers to make better use of the UWP(Universal Windows Platform). You can create a custom capability to associate a [Universal Windows Platform (UWP)](https://msdn.microsoft.com/50a5605e-3a91-41db-800a-9180717c1e86) app with a device.
 
 3rd party partners can define or claim their own capabilities. Custom Capabilities
 also do not have to be built into Windows at compilation time. App
@@ -36,11 +33,11 @@ immediately if an internet connection is available.
 ## Signed Custom Capability Descriptors
 
 For a developer to get access to a Custom Capability, they must have a
-signed Custom Capability descriptor (SCCD) which allows the authorized
+Signed Custom Capability Descriptor (SCCD) which allows the authorized
 use of one or more Custom Capabilities.
 
-A SCCD is an XML file that contains the name of the capability or capabilities the SCCD is authorizing, a list of authorized
-entities that are authorized to use the Custom Capability, and the
+An SCCD is an XML file that contains the name of the capability or capabilities the SCCD is authorizing, a list of authorized
+entities that are allowed to use the Custom Capability, and the
 catalog containing the signature of the SCCD file itself. An authorized
 entity identifies an app by its Package Family Name and the Certificate
 Signature Hash of the certificate that signs the app. The hash must be
