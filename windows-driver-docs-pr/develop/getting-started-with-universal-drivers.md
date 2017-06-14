@@ -13,7 +13,7 @@ ms.technology: windows-devices
 
 Universal Windows drivers enable developers to create a single driver package that runs across multiple different device types, from embedded systems to tablets and desktop PCs.
 
-A Universal Windows driver is a driver package that contains an INF file and binaries that will install and run on Universal Windows Platform (UWP) based editions of Windows 10, such as Windows 10 for desktop editions (Home, Pro, and Enterprise), Windows 10 S, Windows 10 Mobile, Windows 10 IoT Core, Windows Server 2016 Technical Preview, as well as other Windows 10 editions that share a common set of interfaces.
+A Universal Windows driver is a driver package that contains an INF file and binaries that will install and run on Universal Windows Platform (UWP) based editions of Windows 10, such as Windows 10 for desktop editions (Home, Pro, and Enterprise), Windows 10 S, Windows 10 Mobile, Windows 10 IoT Core, Windows Server 2016, as well as other Windows 10 editions that share a common set of interfaces.
 
 A Universal INF file is an INF file that only uses the [INF syntax supported on the UWP-based editions of Windows 10](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file).
 

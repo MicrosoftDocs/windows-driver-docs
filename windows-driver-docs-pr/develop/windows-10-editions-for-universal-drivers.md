@@ -41,13 +41,13 @@ Here are the values you might see for **Target Platform** on MSDN, and what they
 <li>Windows 10 for desktop editions (Home, Pro, and Enterprise)</li>
 <li>Windows 10 Mobile</li>
 <li>Windows 10 IoT Core</li>
-<li>Windows Server 2016 Technical Preview</li>
+<li>Windows Server 2016</li>
 </ul>
 <p>For more info, see [Getting Started with Universal Windows drivers](getting-started-with-universal-drivers.md).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Desktop"></span><span id="desktop"></span><span id="DESKTOP"></span>Desktop</p></td>
-<td align="left"><p>A driver binary for Windows 10 for desktop editions or Windows Server 2016 Technical Preview can call this DDI.</p></td>
+<td align="left"><p>A driver binary for Windows 10 for desktop editions or Windows Server 2016 can call this DDI.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="Mobile"></span><span id="mobile"></span><span id="MOBILE"></span>Mobile</p></td>
