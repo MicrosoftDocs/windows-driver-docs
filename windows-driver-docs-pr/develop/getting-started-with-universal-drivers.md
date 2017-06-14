@@ -25,7 +25,7 @@ Other binaries contained in your Universal Windows driver must pass the [API val
 
 When you write a universal driver package, there are four design principles to consider:
 
-*  Declarative: Installation operations are done declaratively through directives in the INF file and not through extension points such as co-installers, RegisterDlls, etc.
+*  Declarative: Use directives in the INF file for installation operations and not extension points such as co-installers, RegisterDlls, etc.
 *  Componentized: System and/or OEM-specific customizations are in an [extension INF](../install/using-an-extension-inf-file.md) driver package separate from the primary driver package, facilitating independent updates of different components owned by different organizations.
 *  Hardware support application: Use [custom capabilities](../devapps/hardware-access-for-universal-windows-platform-apps.md) to associate a hardware-specific UWP (Universal Windows Platform) application with your driver.
 *  Universal compliance: Binaries in the universal driver package only call APIs and DDIs that are included in the OneCore subset.  INF files use only universal INF syntax.
