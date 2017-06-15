@@ -1,0 +1,55 @@
+---
+title: Handling an IRP\_MN\_REMOVE\_DEVICE Request
+author: windows-driver-content
+description: Handling an IRP\_MN\_REMOVE\_DEVICE Request
+MS-HAID:
+- 'PlugPlay\_aae711ea-6220-40e6-8c1b-1633d8c82082.xml'
+- 'kernel.handling\_an\_irp\_mn\_remove\_device\_request'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 1e0c8b41-5375-41dd-80eb-e48c0f513e01
+keywords: ["IRP_MN_REMOVE_DEVICE"]
+---
+
+# Handling an IRP\_MN\_REMOVE\_DEVICE Request
+
+
+## <a href="" id="ddk-handling-an-irp-mn-remove-device-request-kg"></a>
+
+
+The PnP manager uses this IRP to direct drivers to remove a device's software representation (device objects, and so forth). The PnP manager sends this IRP when a device has been removed in an orderly fashion (for example, initiated by a user in the Unplug or Eject Hardware program), by surprise (a user pulls the device from its slot without prior warning), or when the user requests to update drivers.
+
+On Windows 2000 and later systems, the PnP manager sends this IRP when Device Manager disables the device. On Windows 98/Me, the PnP manager sends stop IRPs instead. See [Stopping a Device](stopping-a-device.md) for details.
+
+The PnP manager does the following before sending this IRP to the drivers for a device:
+
+-   Sends **IRP\_MN\_REMOVE\_DEVICE** requests to the device's children, if any.
+
+-   Notifies any user-mode components and kernel-mode drivers that registered for notification that the device is being removed. The PnP manager calls any user-mode components that registered for target device notification on a handle to the device and calls any kernel-mode drivers that registered for **EventCategoryTargetDeviceChange**.
+
+-   (On Windows 2000 and later systems) If a file system is mounted on the device, the PnP manager sends a remove request to the file system and any file system filters. In response, a file system typically dismounts the volume.
+
+The top driver in a device stack handles a remove IRP and passes it to the next lower driver. The parent bus driver for a device is the last driver to perform its remove-device operations. A driver handles remove IRPs in its [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine.
+
+Before a driver returns success for an **IRP\_MN\_REMOVE\_DEVICE** request, it must ensure that all resources for the device have been released. This IRP could be the last call before the driver is unloaded.
+
+Removing one device can create the need to remove a series of other devices. The PnP manager coordinates the removal of the additional device objects from the top level down to the root-device level.
+
+This section describes:
+
+[Removing a Device in a Function Driver](removing-a-device-in-a-function-driver.md)
+
+[Removing a Device in a Filter Driver](removing-a-device-in-a-filter-driver.md)
+
+[Removing a Device in a Bus Driver](removing-a-device-in-a-bus-driver.md)
+
+ 
+
+ 
+
+
+--------------------
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Handling%20an%20IRP_MN_REMOVE_DEVICE%20Request%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+

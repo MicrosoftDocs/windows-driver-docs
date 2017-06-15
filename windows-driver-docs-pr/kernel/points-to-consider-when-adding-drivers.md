@@ -1,0 +1,37 @@
+---
+title: Points to Consider When Adding Drivers
+author: windows-driver-content
+description: Points to Consider When Adding Drivers
+MS-HAID:
+- 'WDMIntro\_793aa7f5-ea35-46e8-886b-3e575b13c892.xml'
+- 'kernel.points\_to\_consider\_when\_adding\_drivers'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: bcbaa842-03b6-4311-9b93-1a4af165020b
+keywords: ["WDM drivers WDK kernel , configurations", "WDM drivers WDK kernel , layered drivers", "layered drivers WDK kernel", "driver layers WDK WDM", "replacing drivers", "adding kernel-mode drivers"]
+---
+
+# Points to Consider When Adding Drivers
+
+
+## <a href="" id="ddk-points-to-consider-when-adding-drivers-kg"></a>
+
+
+Keep the following points in mind when designing a kernel-mode driver:
+
+-   The system-supplied SCSI and video port drivers cannot be replaced.
+
+-   A replacement lowest-level driver must implement the same functionality as the driver it replaces. For example, a replacement keyboard or mouse port driver must use the system-defined interface between itself and a system-supplied class driver that it reuses, and vice versa.
+
+-   A new intermediate driver, inserted between any pair of system-supplied drivers, must interoperate with those drivers so that the functionality of the upper and lower drivers is not reduced.
+
+ 
+
+ 
+
+
+--------------------
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Points%20to%20Consider%20When%20Adding%20Drivers%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
