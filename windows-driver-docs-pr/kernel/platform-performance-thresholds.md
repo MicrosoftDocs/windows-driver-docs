@@ -1,7 +1,7 @@
 ---
 title: Platform Performance Thresholds
 author: windows-driver-content
-description: There are two types of performance thresholds â€“ static thresholds which remain fixed for the platform and dynamic thresholds that change at runtime.
+description: There are two types of performance thresholds: static thresholds which remain fixed for the platform and dynamic thresholds that change at runtime.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -11,7 +11,7 @@ ms.assetid: 4FB3AFEF-1560-4683-9D57-3029DAA50FE8
 # Platform Performance Thresholds
 
 
-There are two types of performance thresholds â€“ static thresholds which remain fixed for the platform and dynamic thresholds that change at runtime. This topic describes the static performance thresholds of the platform and the allowed range for the dynamic threshold.
+There are two types of performance thresholds: static thresholds which remain fixed for the platform and dynamic thresholds that change at runtime. This topic describes the static performance thresholds of the platform and the allowed range for the dynamic threshold.
 
 The static performance thresholds have the following definitions:
 
@@ -27,7 +27,7 @@ The lowest performance level at which nonlinear power saving is achieved as perf
 <a href="" id="lowest-performance"></a>*Lowest Performance*  
 The absolute lowest performance level of the platform. Selecting a performance level lower than the lowest nonlinear performance level may be equivalent from an efficiency perspective or may actually cause an efficiency penalty, but should reduce the instantaneous power consumption of the processor.
 
-**Note**  All static performance levels do not need to be distinct. A platformâ€™s nominal performance level may also be its highest performance level, for example.
+**Note**  All static performance levels do not need to be distinct. A platform's nominal performance level may also be its highest performance level, for example.
 
  
 
