@@ -76,4 +76,4 @@
 ##### [Axis Selection](axis-selection.md)
 #### [Force Feedback Device Driver Interface](force-feedback-device-driver-interface.md)
 #### [Extending the DirectInput Game Controller Control Panel](extending-the-directinput-game-controller-control-panel.md)
-
+## [Hdpi.h Macros](hdpi-h-macros.md)

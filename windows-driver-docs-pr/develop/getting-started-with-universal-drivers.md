@@ -13,13 +13,11 @@ ms.technology: windows-devices
 
 Universal Windows drivers enable developers to create a single driver package that runs across multiple different device types, from embedded systems to tablets and desktop PCs.
 
-A Universal Windows driver is a driver package that contains an INF file and binaries that will install and run on Universal Windows Platform (UWP) based editions of Windows 10, such as Windows 10 for desktop editions (Home, Pro, and Enterprise), Windows 10 S, Windows 10 Mobile, Windows 10 IoT Core, Windows Server 2016 Technical Preview, as well as other Windows 10 editions that share a common set of interfaces.
+A Universal Windows driver is a driver package that contains an INF file and binaries that will install and run on Universal Windows Platform (UWP) based editions of Windows 10, such as Windows 10 for desktop editions (Home, Pro, and Enterprise), Windows 10 S, Windows 10 Mobile, Windows 10 IoT Core, Windows Server 2016, as well as other Windows 10 editions that share a common set of interfaces.
 
 A Universal INF file is an INF file that only uses the [INF syntax supported on the UWP-based editions of Windows 10](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file).
 
-Any binaries referenced by the Universal INF file must use only API and DDI interfaces that are included in UWP-based editions of Windows 10.
-
-A driver binary must call only device driver interfaces (DDIs) that are part of UWP.  These DDIs are marked as **Universal** on the corresponding documentation reference pages.  The driver binary can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the Windows Driver Model (WDM).
+Any binaries referenced by the Universal INF file must use only device driver interfaces (DDI) that are included in UWP-based editions of Windows 10.  These DDIs are marked as **Universal** on the corresponding documentation reference pages.  The driver binary can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the Windows Driver Model (WDM).
 
 Other binaries contained in your Universal Windows driver must pass the [API validation tests](../devtest/infverif.md).
 
@@ -27,7 +25,7 @@ Other binaries contained in your Universal Windows driver must pass the [API val
 
 When you write a universal driver package, there are four design principles to consider:
 
-*  Declarative: Installation operations are done declaratively through directives in the INF file and not through extension points such as co-installers, RegisterDlls, etc.
+*  Declarative: Use directives in the INF file for installation operations and not extension points such as co-installers, RegisterDlls, etc.
 *  Componentized: System and/or OEM-specific customizations are in an [extension INF](../install/using-an-extension-inf-file.md) driver package separate from the primary driver package, facilitating independent updates of different components owned by different organizations.
 *  Hardware support application: Use [custom capabilities](../devapps/hardware-access-for-universal-windows-platform-apps.md) to associate a hardware-specific UWP (Universal Windows Platform) application with your driver.
 *  Universal compliance: Binaries in the universal driver package only call APIs and DDIs that are included in the OneCore subset.  INF files use only universal INF syntax.

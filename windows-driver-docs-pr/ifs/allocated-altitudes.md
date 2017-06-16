@@ -269,6 +269,7 @@ The current altitude allocations are listed for each of the following load order
 | Backupreader.sys                 | 385500   | Microsoft                                              |
 | AppVMon.sys                      | 385400   | Microsoft                                              |
 | DpmFilter.sys                    | 385300   | Microsoft                                              |
+| Sysmondrv.sys                    | 385201   | Microsoft                                              |
 | Procmon11.sys                    | 385200   | Microsoft                                              |
 | minispy.sys - Top                | 385100   | Microsoft                                              |
 | fdrtrace.sys                     | 385001   | Microsoft                                              |

@@ -8,7 +8,7 @@ This sample is intended to be used with Windows 10 Version 1703 and later.
 
 ## Prerequisites
 
-Before you read this section, check out the requirements and best practices for universal driver packages described in [Getting Started with Universal Windows drivers](getting-started-with-universal-drivers.md)
+Before you read this section, check out the requirements and best practices for universal driver packages described in [Getting Started with Universal Windows drivers](getting-started-with-universal-drivers.md).
 
 ## Overview
 
@@ -44,7 +44,7 @@ HKR, OSR, "OperatingMode",, "Default" ; FLG_ADDREG_TYPE_SZ
 HKR, OSR, "OperatingParams",, "None" ; FLG_ADDREG_TYPE_SZ
 ```
 
-In [`osrfx2_DCHU_extension.inx`], Contoso overrides the `OperatingParams` registry key and adds `OperatingExceptions`:
+In [`osrfx2_DCHU_extension.inx`], Contoso overrides the **OperatingParams** registry key and adds **OperatingExceptions**:
 
 ```
 [OsrUsbFx2Extension_AddReg]
@@ -56,7 +56,7 @@ HKR, OSR, "OperatingExceptions",, "x86"
 
 Fabrikam requires the LEDs on the OSR board to be treated as a child device of the main board.  They control these lights using a Win32 service.
 
-To accomplish this, they encapsulate the LED device in a component and add a separate LED controller driver package to install the service.  Now they have two driver packages in the same Visual Studio solution, which they will provide as one submission in the Windows Hardware Dev Center dashboard.
+To accomplish this, they encapsulate the LED device in a component and add a separate LED controller driver package to install the service.  Now they have two driver packages in the same Visual Studio solution, which they will provide as one submission in the [Windows Hardware Dev Center dashboard](https://developer.microsoft.com/dashboard/Registration/Hardware).
 
 The following snippet from [`osrfx2_DCHU_base.inx`] specifies the [**AddComponent**](../install/inf-addcomponent-directive.md) directive to make the LED lights a child device to the main board and a [**CopyINF**](../install/inf-copyinf-directive.md) directive to copy the LED driver package to the system:
 
@@ -125,7 +125,7 @@ osrfx2_DCHU_componentsoftware.exe
 
 The [source code for the Win32 app](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_component/osrfx2_DCHU_componentsoftware) is included in the DCHU sample.
 
-Note that the component driver package is only installed on Desktop SKUs due to targeting set in the Windows Hardware Dev Center dashboard.  For more info, see [Publish a driver to Windows Update](https://docs.microsoft.com/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update).
+Note that the component driver package is only installed on Desktop SKUs due to targeting set in the [Windows Hardware Dev Center dashboard](https://developer.microsoft.com/dashboard/Registration/Hardware).  For more info, see [Publish a driver to Windows Update](https://docs.microsoft.com/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update).
 
 ## Add a hardware support app
 
@@ -163,7 +163,7 @@ Using a destination directory value of 13 can result in improved stability durin
 
 ## Summary
 
-The following diagram shows the driver packages that Fabrikam and Contoso created for their Universal Windows Driver.  They will make three submissions on the Windows Hardware Dev Center dashboard.
+The following diagram shows the driver packages that Fabrikam and Contoso created for their Universal Windows Driver.  They will make three submissions on the [Windows Hardware Dev Center dashboard](https://developer.microsoft.com/dashboard/Registration/Hardware).
 
 ![Extension, primary, and component driver packages](images/universal-scenarios.png)
 
