@@ -57,22 +57,21 @@ This includes both EV and Standard – there is no restriction on the number of 
 <tbody>
 <tr class="odd">
 <td>Hardware certification</td>
-<td><p>Windows Certification Program Testing Agreement v1.0</p>
-<p>Windows Logo License Agreement for Hardware 2017</p></td>
+<td><p>Windows Hardware Compatibility Program Test Agreement (Required)</p>
+<p>Windows Logo License Agreement for Hardware 2017*</p></td>
 </tr>
 <tr class="even">
 <td>Software certification</td>
-<td><p>Windows Certification Program Testing Agreement v1.0</p>
-<p>Windows Logo License Agreement For Software v1.9</p></td>
+<td><p>Windows Hardware Compatibility Program Test Agreement (Required)</p>
+<p>Windows Logo License Agreement For Software v1.9*</p></td>
 </tr>
 <tr class="odd">
 <td>File driver signing</td>
-<td><p>Windows Compatibility Program and Driver Quality Attestment Testing Agreement</p>
-<p>Windows Certification Program Testing Agreement v1.0</p></td>
+<td><p>Windows Compatibility Program and Driver Quality Attestment Testing Agreement (Required)</p>
 </tr>
 </tbody>
 </table>
-
+*These agreements are optional unless using the feature or asssts in the associated agreement.
  
 
 ### <span id="How_do_I_sign_legal_agreements_"></span><span id="how_do_i_sign_legal_agreements_"></span><span id="HOW_DO_I_SIGN_LEGAL_AGREEMENTS_"></span>How do I sign legal agreements?
