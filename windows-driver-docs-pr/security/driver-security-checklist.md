@@ -335,7 +335,7 @@ For more information, review these topics.
 
 [SDDL for Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff563667)
 
-"Names, Security Descriptors and Device Classes " on page 6 of the *January February 2017 The NT Insider Newsletter* published by [OSR](www.osr.com).
+"Names, Security Descriptors and Device Classes " on page 6 of the *January February 2017 The NT Insider Newsletter* published by [OSR](http://www.osr.com).
 **Additional general Windows security model information**
 
 [Windows security model: what every driver writer needs to know](windows-security-model--what-every-driver-writer-needs-to-know.md)
@@ -818,7 +818,7 @@ US-CERT - Build Security In - <https://www.us-cert.gov/bsi>
 
 **OSR**
 
-[OSR](www.osr.com) provides driver development training and consulting services.
+[OSR](http://www.osr.com) provides driver development training and consulting services.
 
 [You've Gotta Use Protection -- Inside Driver & Device Security](http://www.osronline.com/article.cfm?article=100)
 
@@ -842,7 +842,7 @@ Review these driver samples to review examples of driver projects that illustrat
 
 **Training**
 
-Classroom training is available from [OSR](www.osr.com) and [Windows Internals](http://www.windows-internals.com/pages/training-services/windows-internals/).
+Classroom training is available from [OSR](http://www.osr.com) and [Windows Internals](http://www.windows-internals.com/pages/training-services/windows-internals/).
 
 Online training is available from a variety of sources. For example this course is available from coursera. [https://www.coursera.org/learn/software-security](https://www.coursera.org/learn/software-security#faqs)
 
