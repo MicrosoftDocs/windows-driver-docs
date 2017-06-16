@@ -48,7 +48,7 @@ The CAB file name, including extension. *CabName* can include an absolute or rel
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>live, crash dump</p></td>
+<td align="left"><p>crash dump</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Platforms</strong></p></td>
