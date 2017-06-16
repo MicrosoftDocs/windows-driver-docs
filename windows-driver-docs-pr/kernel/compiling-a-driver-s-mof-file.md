@@ -2,14 +2,13 @@
 title: Compiling a Driver's MOF File
 author: windows-driver-content
 description: Compiling a Driver's MOF File
-MS-HAID:
-- 'WMI\_ea6bbdc9-4b53-4219-979c-5d63621e7831.xml'
-- 'kernel.compiling\_a\_driver\_s\_mof\_file'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0a4ab163-3e2c-48e9-9659-756d35ad445f
 keywords: ["WMI WDK kernel , publishing schema", "publishing WMI schema WDK", "schema publishing WDK WMI", "MOF files WDK WMI", "compiling MOF files"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Compiling a Driver's MOF File

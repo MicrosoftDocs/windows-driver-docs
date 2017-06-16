@@ -2,14 +2,13 @@
 title: Removing a Device in a Bus Driver
 author: windows-driver-content
 description: Removing a Device in a Bus Driver
-MS-HAID:
-- 'PlugPlay\_3895ab38-c258-48f6-b0c2-ffc0406f1499.xml'
-- 'kernel.removing\_a\_device\_in\_a\_bus\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f3961c29-02e1-41f0-bb7f-784bcdb57eb0
 keywords: ["bus drivers WDK PnP", "DispatchPnP routine"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Removing a Device in a Bus Driver

@@ -2,14 +2,13 @@
 title: Organization of DPC Queues
 author: windows-driver-content
 description: Organization of DPC Queues
-MS-HAID:
-- 'Intrupts\_afe6a2be-20f3-4be7-82a3-9f47ab9c448e.xml'
-- 'kernel.organization\_of\_dpc\_queues'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: df176a6d-d7a7-4d8b-ab1b-fd7f5b89fcbe
 keywords: ["DPC queues WDK kernel", "queues WDK DPC"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Organization of DPC Queues

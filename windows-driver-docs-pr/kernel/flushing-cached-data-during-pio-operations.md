@@ -2,14 +2,13 @@
 title: Flushing Cached Data during PIO Operations
 author: windows-driver-content
 description: Flushing Cached Data during PIO Operations
-MS-HAID:
-- 'ioprogpio\_dd3fb7f6-e0d9-476f-b7fa-1311621f5564.xml'
-- 'kernel.flushing\_cached\_data\_during\_pio\_operations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8b15f1c4-d3c9-4d61-be37-ee1593f9d5e5
 keywords: ["flushing cached data", "KeFlushIoBuffers", "PIO transfer operations WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Flushing Cached Data during PIO Operations

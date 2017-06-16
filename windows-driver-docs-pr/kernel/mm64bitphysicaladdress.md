@@ -2,12 +2,6 @@
 title: Windows kernel global variables
 author: windows-driver-content
 description: Kernel global variables.
-MS-HAID:
-- 'k106\_e5cdef6e-32bf-45ae-86b9-1f5a0c76f938.xml'
-- 'kernel.mm64bitphysicaladdress'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1ea5c4e3-ed70-449c-a49e-b1e3c892e981
 ---
 

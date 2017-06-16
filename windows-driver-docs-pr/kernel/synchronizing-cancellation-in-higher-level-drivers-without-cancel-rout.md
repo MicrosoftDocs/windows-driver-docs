@@ -2,12 +2,6 @@
 title: Synchronizing Cancellation in Higher-Level Drivers without Cancel Routines
 author: windows-driver-content
 description: Synchronizing Cancellation in Higher-Level Drivers without Cancel Routines
-MS-HAID:
-- 'IRPs\_cd58855c-4b95-4ce3-a6df-b1be19d0e6a8.xml'
-- 'kernel.synchronizing\_cancellation\_in\_higher\_level\_drivers\_without\_cancel\_rout'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 741d504e-7e61-4f60-a8cf-e4ea92f0654e
 ---
 

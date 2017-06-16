@@ -2,14 +2,13 @@
 title: Types of APCs
 author: windows-driver-content
 description: Types of APCs
-MS-HAID:
-- 'Synchro\_e802a373-f3d2-4523-8316-6d6a2f8026d2.xml'
-- 'kernel.types\_of\_apcs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 74ed953c-1b2a-40b9-9df3-16869b198b38
 keywords: ["asynchronous procedure calls WDK kernel", "APCs WDK kernel", "user APCs WDK kernel", "normal kernel APCs WDK kernel", "special kernel APCs WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Types of APCs

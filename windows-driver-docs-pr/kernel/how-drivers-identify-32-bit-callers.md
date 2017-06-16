@@ -2,14 +2,13 @@
 title: How Drivers Identify 32-Bit Callers
 author: windows-driver-content
 description: How Drivers Identify 32-Bit Callers
-MS-HAID:
-- 'Other\_64a02a24-bf24-47b6-a9f2-77aeca788a47.xml'
-- 'kernel.how\_drivers\_identify\_32\_bit\_callers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9bfe9024-60f1-41ad-a034-160caaaa7801
 keywords: ["32-bit I/O support WDK 64-bit , identifying 32-bit callers", "identifying 32-bit callers", "32-bit caller identifications WDK 64-bit", "file system control codes WDK 64-bit", "FSCTL WDK 64-bit", "control codes WDK 64-bit", "I/O control codes WDK kernel , 32-bit I/O in 64-bit drivers", "IOCTLs WDK kernel , 32-bit I/O in 64-bit drivers", "caller identifications WDK 64-bit"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How Drivers Identify 32-Bit Callers

@@ -2,14 +2,13 @@
 title: Object Security
 author: windows-driver-content
 description: Object Security
-MS-HAID:
-- 'Objects\_5c5ee7f9-720f-4a25-a75a-1d1aed5d56d5.xml'
-- 'kernel.object\_security'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 50c174d3-31cd-4e58-9702-64d69e76e977
 keywords: ["object security WDK kernel", "security WDK objects"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Object Security

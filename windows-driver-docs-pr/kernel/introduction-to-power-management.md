@@ -2,14 +2,13 @@
 title: Introduction to Power Management
 author: windows-driver-content
 description: Introduction to Power Management
-MS-HAID:
-- 'PwrMgmt\_0bbf0047-e8db-40da-a639-8040431782c3.xml'
-- 'kernel.introduction\_to\_power\_management'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d0cac254-d723-45f3-bef6-eb1d64b5d656
 keywords: ["power management WDK kernel , about power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Power Management

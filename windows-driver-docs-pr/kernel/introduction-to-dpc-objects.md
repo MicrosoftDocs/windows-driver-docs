@@ -2,12 +2,6 @@
 title: Introduction to DPC Objects
 author: windows-driver-content
 description: Introduction to DPC Objects
-MS-HAID:
-- 'Intrupts\_07529fa6-0954-4b27-b610-99f465d2fbf3.xml'
-- 'kernel.introduction\_to\_dpc\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ae8758f5-0e23-4db2-9eac-aab31d98247b
 ---
 

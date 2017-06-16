@@ -2,14 +2,13 @@
 title: PnP Components
 author: windows-driver-content
 description: PnP Components
-MS-HAID:
-- 'PlugPlay\_d0d066ff-b462-49b1-9aa3-45194b444ed1.xml'
-- 'kernel.pnp\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 33612da4-1ddb-40cf-a8a2-838f85b52cd6
 keywords: ["PnP WDK kernel , components", "Plug and Play WDK kernel , components", "software components WDK PnP", "PnP drivers WDK kernel", "user-mode PnP manager WDK", "kernel-mode PnP manager WDK", "PnP managers WDK", "PnP components WDK user-mode"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PnP Components

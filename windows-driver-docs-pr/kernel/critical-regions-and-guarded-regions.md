@@ -2,14 +2,13 @@
 title: Critical Regions and Guarded Regions
 author: windows-driver-content
 description: Critical Regions and Guarded Regions
-MS-HAID:
-- 'Synchro\_0de10dd5-482b-401e-b49e-3bd0343b63c2.xml'
-- 'kernel.critical\_regions\_and\_guarded\_regions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3781498a-45e9-4f24-8fd2-830eed61298c
 keywords: ["asynchronous procedure calls WDK kernel", "APCs WDK kernel", "critical regions WDK kernel", "guarded regions WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Critical Regions and Guarded Regions

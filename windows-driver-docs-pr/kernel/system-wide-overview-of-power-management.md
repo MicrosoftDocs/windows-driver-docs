@@ -2,14 +2,13 @@
 title: System-Wide Overview of Power Management
 author: windows-driver-content
 description: System-Wide Overview of Power Management
-MS-HAID:
-- 'PwrMgmt\_290d44a8-54a7-4260-ace4-1b9bad3f11c2.xml'
-- 'kernel.system\_wide\_overview\_of\_power\_management'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 16313152-3fe2-49d7-8cf1-b369e39e4130
 keywords: ["power management WDK kernel , about power management", "power management WDK kernel , system-wide overview", "software WDK power management", "Control Panel WDK power management", "system-wide power policy WDK kernel", "power policy WDK kernel", "conserving power WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # System-Wide Overview of Power Management

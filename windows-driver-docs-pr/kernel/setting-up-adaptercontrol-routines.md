@@ -2,14 +2,13 @@
 title: Setting Up AdapterControl Routines
 author: windows-driver-content
 description: Setting Up AdapterControl Routines
-MS-HAID:
-- 'ioprogdma\_804a8a77-5dae-4175-95e1-332c2721148f.xml'
-- 'kernel.setting\_up\_adaptercontrol\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0d2add25-711a-4e5d-8409-b7ce60b08858
 keywords: ["AdapterControl routines, setting up", "AdapterControl routines, writing", "adapter objects WDK kernel , writing AdapterControl routines", "DMA transfers WDK kernel , writing AdapterControl routines"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Up AdapterControl Routines

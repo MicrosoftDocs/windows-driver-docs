@@ -2,14 +2,13 @@
 title: Introduction to ERESOURCE Routines
 author: windows-driver-content
 description: Introduction to ERESOURCE Routines
-MS-HAID:
-- 'Synchro\_a5795386-5b23-48aa-ade1-de3a29a31b06.xml'
-- 'kernel.introduction\_to\_eresource\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5c7759db-aeb5-47f3-8adc-ddedb74b5cb4
 keywords: ["ERESOURCE structures", "exclusive waiters WDK kernel", "shared waiters WDK kernel", "exclusive/shared synchronization WDK kernel", "synchronization WDK kernel , exclusive/shared", "waiters WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to ERESOURCE Routines

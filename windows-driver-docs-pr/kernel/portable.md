@@ -2,14 +2,13 @@
 title: Portable
 author: windows-driver-content
 description: Portable
-MS-HAID:
-- 'Intro\_52a0d37d-1a03-467b-9921-3eaa7faae9b2.xml'
-- 'kernel.portable'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3ce16503-e375-44c1-82a7-796286c1a253
 keywords: ["portable drivers WDK kernel", "platform-dependent definitions WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Portable

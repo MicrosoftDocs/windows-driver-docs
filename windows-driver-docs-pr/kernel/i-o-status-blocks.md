@@ -2,14 +2,13 @@
 title: I/O Status Blocks
 author: windows-driver-content
 description: I/O Status Blocks
-MS-HAID:
-- 'IRPs\_210b4c52-1d63-47e9-b1d4-c7c0756892d9.xml'
-- 'kernel.i\_o\_status\_blocks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 59147bd1-6cd7-4fbe-b7bc-52e09ab88576
 keywords: ["IRPs WDK kernel , I/O status blocks", "I/O status blocks WDK kernel", "status blocks WDK kernel", "IO_STATUS_BLOCK structure", "status information WDK IRPs", "IRPs WDK kernel , status information"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # I/O Status Blocks

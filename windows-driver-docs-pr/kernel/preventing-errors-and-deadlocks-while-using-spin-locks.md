@@ -2,14 +2,13 @@
 title: Preventing Errors and Deadlocks While Using Spin Locks
 author: windows-driver-content
 description: Preventing Errors and Deadlocks While Using Spin Locks
-MS-HAID:
-- 'Synchro\_f74a900d-aad5-4473-8f46-00531c9ade89.xml'
-- 'kernel.preventing\_errors\_and\_deadlocks\_while\_using\_spin\_locks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1df563e6-7ad2-4684-9778-ffa1b845ac31
 keywords: ["deadlocks WDK kernel", "recursion WDK kernel", "nested spin lock acquisitions WDK kernel", "pageable data locking WDK kernel", "spin locks WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Preventing Errors and Deadlocks While Using Spin Locks

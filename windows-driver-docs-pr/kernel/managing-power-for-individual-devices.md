@@ -2,14 +2,13 @@
 title: Managing Power for Individual Devices
 author: windows-driver-content
 description: Managing Power for Individual Devices
-MS-HAID:
-- 'PwrMgmt\_d2931041-848b-4465-8123-34a0754ad3db.xml'
-- 'kernel.managing\_power\_for\_individual\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 95c7e900-5d51-4eb7-8780-1c40befa3599
 keywords: ["power management WDK kernel , device management", "device power management WDK kernel", "system power states WDK kernel", "conserving power WDK kernel", "change power states WDK kernel", "IRPs WDK power management", "I/O request packets WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing Power for Individual Devices

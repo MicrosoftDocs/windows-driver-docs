@@ -2,14 +2,13 @@
 title: Filtering Registry Calls
 author: windows-driver-content
 description: Filtering Registry Calls
-MS-HAID:
-- 'Other\_c567470e-ac06-4a6a-9482-abeb071dddba.xml'
-- 'kernel.filtering\_registry\_calls'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6b35c3a0-4ece-4101-b348-e71f5cccf0c8
 keywords: ["filtering registry calls WDK kernel", "registry filtering drivers WDK kernel", "RegistryCallback", "filtering registry calls WDK kernel , about filtering registry calls", "registry filtering drivers WDK kernel , about filtering registry calls"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Filtering Registry Calls

@@ -2,14 +2,13 @@
 title: Adapter Objects and DMA
 author: windows-driver-content
 description: Adapter Objects and DMA
-MS-HAID:
-- 'ioprogdma\_1549d789-a3bd-4408-ab09-78aa3b0aed13.xml'
-- 'kernel.adapter\_objects\_and\_dma'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8bc672b4-0f4d-4e0c-9904-c8d0a3f3639c
 keywords: ["adapter objects WDK kernel", "I/O WDK kernel , adapter objects", "I/O WDK kernel , DMA", "DMA transfers WDK kernel", "AdapterControl routines", "Direct Memory Access WDK kernel", "data transfers WDK kernel , adapter objects", "transferring data WDK kernel , ad"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adapter Objects and DMA

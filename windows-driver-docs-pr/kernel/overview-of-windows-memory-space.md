@@ -2,14 +2,13 @@
 title: Overview of Windows Memory Space
 author: windows-driver-content
 description: Overview of Windows Memory Space
-MS-HAID:
-- 'MemMgmt\_f16dfbb3-7a03-4055-a873-5819b431f278.xml'
-- 'kernel.overview\_of\_windows\_memory\_space'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b49a35c2-6da6-4239-a67b-542d42a5c9e4
 keywords: ["memory management WDK kernel , about memory space", "memory space WDK kernel", "physical memory WDK kernel", "virtual memory WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Windows Memory Space

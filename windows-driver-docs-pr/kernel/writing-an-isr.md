@@ -2,14 +2,13 @@
 title: Writing an ISR
 author: windows-driver-content
 description: Writing an ISR
-MS-HAID:
-- 'Intrupts\_fb7c0886-ba50-4e41-8873-dc401b57e203.xml'
-- 'kernel.writing\_an\_isr'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d696d683-e010-4a5c-ba2d-f536ab5f38b2
 keywords: ["interrupt service routines WDK kernel , writing", "ISRs WDK kernel , writing", "writing ISRs", "interrupt objects WDK kernel , writing ISRs", "I/O WDK kernel , interrupts"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing an ISR

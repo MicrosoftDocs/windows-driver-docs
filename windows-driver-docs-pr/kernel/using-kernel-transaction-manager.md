@@ -2,14 +2,13 @@
 title: Using Kernel Transaction Manager
 author: windows-driver-content
 description: Using Kernel Transaction Manager
-MS-HAID:
-- 'ktm\_dg\_bf0de23d-eaf5-44cf-8ba1-59ebef6e5af1.xml'
-- 'kernel.using\_kernel\_transaction\_manager'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b558ace9-b416-4572-ac94-58a083c9d33b
 keywords: ["Kernel Transaction Manager WDK", "KTM WDK", "transactions WDK KTM"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Kernel Transaction Manager

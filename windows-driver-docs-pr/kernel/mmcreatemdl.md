@@ -2,12 +2,6 @@
 title: Windows kernel obsolete routines
 author: windows-driver-content
 description: Windows kernel obsolete routines
-MS-HAID:
-- 'k106\_0948e076-31cf-4fda-8922-d167918c1cff.xml'
-- 'kernel.mmcreatemdl'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 876f48be-1d8f-4c65-bc84-e35c31919c47
 ---
 

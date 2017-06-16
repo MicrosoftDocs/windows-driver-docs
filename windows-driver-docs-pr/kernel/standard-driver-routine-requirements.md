@@ -2,14 +2,13 @@
 title: Standard Driver Routine Requirements
 author: windows-driver-content
 description: Standard Driver Routine Requirements
-MS-HAID:
-- 'DrvComps\_5bc157a8-bfbb-4602-b647-685b883dac84.xml'
-- 'kernel.standard\_driver\_routine\_requirements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 49b382ad-c282-41d2-b8b3-68eca4e12b9c
 keywords: ["standard driver routines WDK kernel , requirements", "driver routines WDK kernel , requirements", "routines WDK kernel , requirements"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Standard Driver Routine Requirements

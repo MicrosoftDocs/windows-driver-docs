@@ -2,14 +2,13 @@
 title: Passing Power IRPs
 author: windows-driver-content
 description: Passing Power IRPs
-MS-HAID:
-- 'PwrMgmt\_eb893e2c-73ba-4cf1-9a80-61b046867447.xml'
-- 'kernel.passing\_power\_irps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 01473eb0-ae60-4a95-9ae7-97b2b982d3d1
 keywords: ["power IRPs WDK kernel , passing", "passing IRPs down device stack WDK", "DispatchPower routine", "dispatch routines WDK power management", "PoStartNextPowerIrp"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Passing Power IRPs

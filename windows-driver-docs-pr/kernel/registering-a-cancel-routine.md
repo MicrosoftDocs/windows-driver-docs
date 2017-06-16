@@ -2,14 +2,13 @@
 title: Registering a Cancel Routine
 author: windows-driver-content
 description: Registering a Cancel Routine
-MS-HAID:
-- 'IRPs\_dd6fd87b-212d-4553-ac79-c4a54b473cd8.xml'
-- 'kernel.registering\_a\_cancel\_routine'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ebc63fb6-bf4d-4de3-9232-08d810c2f730
 keywords: ["canceling IRPs, registering Cancel routines", "Cancel routines, registering", "registering Cancel routines"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering a Cancel Routine

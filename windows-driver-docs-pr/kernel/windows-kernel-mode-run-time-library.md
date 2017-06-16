@@ -2,12 +2,6 @@
 title: Windows Kernel-Mode Run-Time Library
 author: windows-driver-content
 description: Windows Kernel-Mode Run-Time Library
-MS-HAID:
-- 'execrtl\_b773d53f-a0b9-4aa6-a25b-b5806e82b681.xml'
-- 'kernel.windows\_kernel\_mode\_run\_time\_library'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9c968014-c529-43e1-a8a6-a307c90e4162
 ---
 

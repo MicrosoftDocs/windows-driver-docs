@@ -2,14 +2,13 @@
 title: Device Extensions
 author: windows-driver-content
 description: Device Extensions
-MS-HAID:
-- 'DevObjts\_ea4ec592-b48b-4dca-9a70-7e92b3010949.xml'
-- 'kernel.device\_extensions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9ea59994-1112-4ae5-96a8-fa0670694b53
 keywords: ["device objects WDK kernel , device extensions", "device extensions WDK kernel", "extensions WDK device objects", "higher-level driver extensions WDK kernel", "lower-level driver extensions WDK kernel", "intermediate driver extensions WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Extensions

@@ -2,14 +2,13 @@
 title: Failure to Check a Driver's State
 author: windows-driver-content
 description: Failure to Check a Driver's State
-MS-HAID:
-- 'Other\_5776fac1-66a9-497a-8e47-e52737e17543.xml'
-- 'kernel.failure\_to\_check\_a\_driver\_s\_state'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 963f79f6-2282-41bd-9cf4-bd5bc02a510e
 keywords: ["reliability WDK kernel , driver state checking", "checking driver states", "driver state checking", "verifying driver states", "correct device states WDK kernel", "device states WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Failure to Check a Driver's State

@@ -2,14 +2,13 @@
 title: Points to Consider about User I/O Requests
 author: windows-driver-content
 description: Points to Consider about User I/O Requests
-MS-HAID:
-- 'IRPs\_364e8e91-1e09-4cd5-a663-80450aab1312.xml'
-- 'kernel.points\_to\_consider\_about\_user\_i\_o\_requests'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e8143055-4ad7-4e39-a2f2-64d9e79d33a0
 keywords: ["device-specific I/O control codes WDK kernel", "private I/O control codes WDK kernel", "layered driver IRP processing WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Points to Consider about User I/O Requests

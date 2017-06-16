@@ -2,14 +2,13 @@
 title: Using a Driver-Supplied Spin Lock
 author: windows-driver-content
 description: Using a Driver-Supplied Spin Lock
-MS-HAID:
-- 'IRPs\_ffbf5119-ab87-4c1a-99d4-613058598d6f.xml'
-- 'kernel.using\_a\_driver\_supplied\_spin\_lock'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e81d5c93-47d6-407c-80a2-b2d55f9eb717
 keywords: ["spin locks WDK kernel", "driver-supplied spin locks WDK kernel", "global cancel spin locks WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using a Driver-Supplied Spin Lock

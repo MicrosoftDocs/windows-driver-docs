@@ -2,9 +2,6 @@
 title: Obsolete and Reserved Kernel Programming Interfaces
 author: windows-driver-content
 description: This section includes various obsolete and reserved programming interfaces.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B7805233-C1EB-4764-889E-2A6775389ADF
 ---
 

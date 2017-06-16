@@ -2,14 +2,13 @@
 title: Using Critical Sections
 author: windows-driver-content
 description: Using Critical Sections
-MS-HAID:
-- 'Intrupts\_05e5aa40-da4e-424d-a4fd-d58ce00e2486.xml'
-- 'kernel.using\_critical\_sections'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 439ba7ef-6473-40ca-9daa-a8c61d789d97
 keywords: ["interrupt service routines WDK kernel , critical sections", "ISRs WDK kernel , critical sections", "InterruptService", "synchronization WDK kernel , interrupts"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Critical Sections

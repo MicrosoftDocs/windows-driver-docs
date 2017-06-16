@@ -2,14 +2,13 @@
 title: Implementing Plug and Play
 author: windows-driver-content
 description: Implementing Plug and Play
-MS-HAID:
-- 'PlugPlay\_77aa933f-f7f8-4f66-8fae-43a8d4ce0e08.xml'
-- 'kernel.implementing\_plug\_and\_play'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ebd3aaa2-a701-41f3-88ff-2a6bdf7bd7cb
 keywords: ["PnP WDK kernel", "Plug and Play WDK kernel", "kernel-mode drivers WDK , Plug and Play", "hardware configuration changes WDK PnP", "resource allocations WDK PnP", "hardware resource allocations WDK PnP", "automatic resource allocations WDK PnP", "dynamic resource allocations WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing Plug and Play

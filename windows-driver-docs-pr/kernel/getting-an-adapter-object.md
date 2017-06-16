@@ -2,14 +2,13 @@
 title: Getting an Adapter Object
 author: windows-driver-content
 description: Getting an Adapter Object
-MS-HAID:
-- 'ioprogdma\_8474dc6a-b9bb-4e7b-88e0-7770814f4227.xml'
-- 'kernel.getting\_an\_adapter\_object'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2af4ac28-b3c0-4e46-afb1-9c6897c67f03
 keywords: ["adapter objects WDK kernel , getting", "DEVICE_DESCRIPTION", "DMA_OPERATIONS", "DMA transfers WDK kernel , adapter objects"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Getting an Adapter Object

@@ -2,14 +2,13 @@
 title: Overview of Wait/Wake Operation
 author: windows-driver-content
 description: Overview of Wait/Wake Operation
-MS-HAID:
-- 'PwrMgmt\_fbc82a49-864b-45a2-892b-cce7bbad4181.xml'
-- 'kernel.overview\_of\_wait\_wake\_operation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 63453f7e-f656-4efc-bb44-9e2cb0232270
 keywords: ["power management WDK kernel , wake-up capabilities", "external wake signals WDK", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management", "IRP_MN_WAIT_WAKE", "wait/wake IRPs WDK power management , about wait/wake IRPs"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Wait/Wake Operation

@@ -2,14 +2,13 @@
 title: IoTimer Routines
 author: windows-driver-content
 description: IoTimer Routines
-MS-HAID:
-- 'Synchro\_94c58b61-68a2-4ea3-8aca-d3daccf4537c.xml'
-- 'kernel.iotimer\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bc69c7b5-ce63-435e-b5b4-0d65ee153d31
 keywords: ["synchronization WDK kernel , timers", "IoTimer", "device time-outs WDK kernel", "time-outs WDK kernel", "timing operations WDK kernel", "timeout device I/O operations WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IoTimer Routines

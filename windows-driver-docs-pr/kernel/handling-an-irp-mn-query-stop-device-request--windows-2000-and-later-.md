@@ -2,14 +2,13 @@
 title: Handling an IRP\_MN\_QUERY\_STOP\_DEVICE Request (Windows 2000 and later)
 author: windows-driver-content
 description: Handling an IRP\_MN\_QUERY\_STOP\_DEVICE Request (Windows 2000 and later)
-MS-HAID:
-- 'PlugPlay\_3e64454c-cfe8-4f1b-9e2f-7fefc499caa7.xml'
-- 'kernel.handling\_an\_irp\_mn\_query\_stop\_device\_request\_\_windows\_2000\_and\_later\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 668a920c-aadb-405a-9a1d-091982ca2c04
 keywords: ["IRP_MN_QUERY_STOP_DEVICE"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling an IRP\_MN\_QUERY\_STOP\_DEVICE Request (Windows 2000 and later)

@@ -2,14 +2,13 @@
 title: AdapterControl Routine Requirements
 author: windows-driver-content
 description: AdapterControl Routine Requirements
-MS-HAID:
-- 'ioprogdma\_ed4a0a71-080c-42a1-902b-f97efa1ae154.xml'
-- 'kernel.adaptercontrol\_routine\_requirements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 09ce4ad8-eb1b-4fd0-9a22-4249d09584b3
 keywords: ["AdapterControl routines, requirements", "AdapterControl routines, writing", "adapter objects WDK kernel , writing AdapterControl routines", "DMA transfers WDK kernel , writing AdapterControl routines"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AdapterControl Routine Requirements

@@ -2,14 +2,13 @@
 title: Handling a Wait/Wake IRP in a Function (FDO) or Filter Driver (Filter DO)
 author: windows-driver-content
 description: Handling a Wait/Wake IRP in a Function (FDO) or Filter Driver (Filter DO)
-MS-HAID:
-- 'PwrMgmt\_58b82716-c76d-49e1-94f1-5357c9285c8d.xml'
-- 'kernel.handling\_a\_wait\_wake\_irp\_in\_a\_function\_\_fdo\_\_or\_filter\_driver\_\_filter\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 752b6c3c-f42a-469d-8a43-0778ecbe4541
 keywords: ["receiving wait/wake IRPs", "wait/wake IRPs WDK power management , receiving", "function drivers WDK power management", "FDOs WDK power management", "filter DOs WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling a Wait/Wake IRP in a Function (FDO) or Filter Driver (Filter DO)

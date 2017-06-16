@@ -2,14 +2,13 @@
 title: DriverEntry Return Values
 author: windows-driver-content
 description: DriverEntry Return Values
-MS-HAID:
-- 'DrvComps\_79a1ccf0-924b-4923-a881-46e78b153a87.xml'
-- 'kernel.driverentry\_return\_values'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 052be2ea-375a-4495-931e-8b66972125a5
 keywords: ["DriverEntry WDK kernel , return values", "return values WDK DriverEntry routine"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DriverEntry Return Values

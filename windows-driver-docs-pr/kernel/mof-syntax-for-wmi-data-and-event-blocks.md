@@ -2,14 +2,13 @@
 title: MOF Syntax for WMI Data and Event Blocks
 author: windows-driver-content
 description: MOF Syntax for WMI Data and Event Blocks
-MS-HAID:
-- 'WMI\_00580391-3953-448c-9602-0388b214fda2.xml'
-- 'kernel.mof\_syntax\_for\_wmi\_data\_and\_event\_blocks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 247037b7-d62e-4f74-8fa4-57e74f6c412f
 keywords: ["WMI WDK kernel , event blocks", "event blocks WDK WMI", "data blocks WDK WMI", "WMI WDK kernel , data blocks", "blocks WDK WMI", "MOF files WDK WMI"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MOF Syntax for WMI Data and Event Blocks

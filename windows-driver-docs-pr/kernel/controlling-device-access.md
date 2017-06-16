@@ -2,14 +2,13 @@
 title: Controlling Device Access
 author: windows-driver-content
 description: Controlling Device Access
-MS-HAID:
-- 'DevObjts\_d63a2a9e-f2b4-4480-ada5-86e643fdf372.xml'
-- 'kernel.controlling\_device\_access'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b5e562ad-573b-4b0f-9d85-2410fda16e4e
 keywords: ["device objects WDK kernel , security", "security WDK device objects", "device access controls WDK kernel", "non-WDM driver device access WDK kernel", "security descriptors WDK device objects"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Controlling Device Access

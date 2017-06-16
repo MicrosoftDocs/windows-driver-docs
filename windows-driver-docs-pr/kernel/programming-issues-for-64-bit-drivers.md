@@ -2,14 +2,13 @@
 title: Programming Issues for 64-Bit Drivers
 author: windows-driver-content
 description: Programming Issues for 64-Bit Drivers
-MS-HAID:
-- 'Other\_f910e5d8-a732-4faa-a8d2-d4de021dc78d.xml'
-- 'kernel.programming\_issues\_for\_64\_bit\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 36794bd3-1d44-4edf-b789-a4da4165ea60
 keywords: ["64-bit WDK kernel", "kernel-mode drivers WDK , 64-bit issues", "Win32 applications WDK 64-bit", "user-mode applications WDK 64-bit"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Programming Issues for 64-Bit Drivers

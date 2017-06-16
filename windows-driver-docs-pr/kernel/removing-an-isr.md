@@ -2,14 +2,13 @@
 title: Removing an ISR
 author: windows-driver-content
 description: Removing an ISR
-MS-HAID:
-- 'Intrupts\_83dc0f3a-5906-48fa-92ee-e833fe5c2913.xml'
-- 'kernel.removing\_an\_isr'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 23d84edb-763f-4383-b05c-832b4249b604
 keywords: ["interrupt service routines WDK kernel , removing ISRs", "interrupt objects WDK kernel , removing ISRs", "ISRs WDK kernel , removing ISRs", "removing ISRs WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Removing an ISR

@@ -2,14 +2,13 @@
 title: Technique 1 Defining a "64Bit" Field
 author: windows-driver-content
 description: Technique 1 Defining a \ 0034;64Bit \ 0034; Field
-MS-HAID:
-- 'Other\_60d91b4d-7e6f-4c08-b258-328901378b90.xml'
-- 'kernel.technique\_1\_\_defining\_a\_\_64bit\_\_field'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6498e66c-145e-4f7e-a065-cbd781e142cc
 keywords: ["32-bit I/O support WDK 64-bit , 64Bit field defined", "64Bit field defined WDK kernel", "bitfields WDK 64-bit", "separate control codes WDK 64-bit", "control codes WDK 64-bit", "file system control codes WDK 64-bit", "FSCTL WDK 64-bit", "I/O control codes WDK kernel , 32-bit I/O in 64-bit drivers", "IOCTLs WDK kernel , 32-bit I/O in 64-bit drivers"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Technique 1: Defining a "64Bit" Field

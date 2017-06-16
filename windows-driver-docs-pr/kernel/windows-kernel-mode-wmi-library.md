@@ -2,12 +2,6 @@
 title: Windows Kernel-Mode WMI Library
 author: windows-driver-content
 description: Windows Kernel-Mode WMI Library
-MS-HAID:
-- 'wmilib\_f500781e-2b62-4e45-b113-26bb1787a51b.xml'
-- 'kernel.windows\_kernel\_mode\_wmi\_library'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ca981f38-8f3b-48cc-969f-ce53b85bba20
 ---
 

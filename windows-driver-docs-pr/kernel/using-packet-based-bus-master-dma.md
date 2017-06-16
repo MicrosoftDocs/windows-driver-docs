@@ -2,14 +2,13 @@
 title: Using Packet-Based Bus-Master DMA
 author: windows-driver-content
 description: Using Packet-Based Bus-Master DMA
-MS-HAID:
-- 'ioprogdma\_1d8922e5-729b-4f54-a27b-f246bcd7b2b3.xml'
-- 'kernel.using\_packet\_based\_bus\_master\_dma'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 57b37103-8ae0-4c54-b613-55b1a629d9ae
 keywords: ["bus-master DMA WDK kernel", "DMA transfers WDK kernel , bus-master DMA", "adapter objects WDK kernel , bus-master DMA"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Packet-Based Bus-Master DMA

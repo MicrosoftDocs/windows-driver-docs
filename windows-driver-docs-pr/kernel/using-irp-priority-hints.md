@@ -2,12 +2,6 @@
 title: Using IRP Priority Hints
 author: windows-driver-content
 description: Using IRP Priority Hints
-MS-HAID:
-- 'IRPs\_82a64e1c-5d84-4dd0-a611-09c53836ead4.xml'
-- 'kernel.using\_irp\_priority\_hints'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c34afff2-32f2-451b-ab16-ff048d5c3204
 ---
 

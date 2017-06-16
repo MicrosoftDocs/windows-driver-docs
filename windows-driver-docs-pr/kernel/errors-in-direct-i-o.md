@@ -2,14 +2,13 @@
 title: Errors in Direct I/O
 author: windows-driver-content
 description: Errors in Direct I/O
-MS-HAID:
-- 'Other\_673f47c0-e3b9-493c-8026-a63006ebef10.xml'
-- 'kernel.errors\_in\_direct\_i\_o'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9efc2875-3402-4e2e-871b-3cc1d8f45360
 keywords: ["reliability WDK kernel , direct I/O", "direct I/O WDK kernel", "I/O WDK kernel , direct I/O", "zero-length buffers WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Errors in Direct I/O

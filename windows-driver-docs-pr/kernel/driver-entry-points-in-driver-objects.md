@@ -2,14 +2,13 @@
 title: Driver Entry Points in Driver Objects
 author: windows-driver-content
 description: Driver Entry Points in Driver Objects
-MS-HAID:
-- 'DrvComps\_eabc0853-b414-4fc2-a510-0ce2e4ce8080.xml'
-- 'kernel.driver\_entry\_points\_in\_driver\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f004c2b3-8435-4c25-82e9-aff3911dc316
 keywords: ["driver objects WDK kernel", "standard driver routines WDK kernel , driver objects", "driver routines WDK kernel , driver objects", "routines WDK kernel , driver objects", "objects WDK driver objects", "entry points WDK kernel", "driver entry points WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Entry Points in Driver Objects

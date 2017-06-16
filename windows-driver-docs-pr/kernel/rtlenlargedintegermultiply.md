@@ -2,12 +2,6 @@
 title: Windows kernel run-time library obsolete routines
 author: windows-driver-content
 description: Windows kernel run-time library obsolete routines
-MS-HAID:
-- 'k109\_75c13e65-682a-442e-b065-b60a7c73a329.xml'
-- 'kernel.rtlenlargedintegermultiply'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cd9aa441-a7f2-42b1-8319-611bf53c995d
 ---
 

@@ -2,14 +2,13 @@
 title: Registering as a WMI Data Provider
 author: windows-driver-content
 description: Registering as a WMI Data Provider
-MS-HAID:
-- 'WMI\_c8542b58-a729-4d9f-a405-eaa017b1db42.xml'
-- 'kernel.registering\_as\_a\_wmi\_data\_provider'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a08fed24-20b6-46aa-9a52-7a22f0e89ce4
 keywords: ["WMI WDK kernel , registering with WMI", "registering WMI data providers", "data providers WDK WMI", "driver registrations WDK WMI", "event blocks WDK WMI", "blocks WDK WMI"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering as a WMI Data Provider

@@ -2,14 +2,13 @@
 title: Using PnP Device Interface Change Notification
 author: windows-driver-content
 description: Using PnP Device Interface Change Notification
-MS-HAID:
-- 'PlugPlay\_52c96b08-bae8-4f06-9493-aed27e691d0a.xml'
-- 'kernel.using\_pnp\_device\_interface\_change\_notification'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2ed3518a-601f-4e9b-b375-a9fb62c937a9
 keywords: ["notifications WDK PnP , device interface changes", "EventCategoryDeviceInterfaceChange notification", "device interface change notifications WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using PnP Device Interface Change Notification

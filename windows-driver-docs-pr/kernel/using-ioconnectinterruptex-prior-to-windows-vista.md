@@ -2,14 +2,13 @@
 title: Using IoConnectInterruptEx Prior to Windows Vista
 author: windows-driver-content
 description: Using IoConnectInterruptEx Prior to Windows Vista
-MS-HAID:
-- 'Intrupts\_49c9e529-8d6d-49c8-a24e-511c29478f22.xml'
-- 'kernel.using\_ioconnectinterruptex\_prior\_to\_windows\_vista'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a08b2869-93f8-440b-9fbe-068604c6007d
 keywords: ["IoConnectInterruptEx", "iointex.h", "line-based interrupts WDK kernel", "message-signaled interrupts WDK kernel", "CONNECT_LINE_BASED", "CONNECT_MESSAGE_BASED", "CONNECT_FULLY_SPECIFIED"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using IoConnectInterruptEx Prior to Windows Vista

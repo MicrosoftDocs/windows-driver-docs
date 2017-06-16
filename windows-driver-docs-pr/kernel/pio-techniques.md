@@ -2,12 +2,6 @@
 title: PIO Techniques
 author: windows-driver-content
 description: PIO Techniques
-MS-HAID:
-- 'ioprogpio\_ce9436ca-d4ca-4d17-be3e-8d06218c114f.xml'
-- 'kernel.pio\_techniques'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bd673e43-c864-416b-b0d0-23c4ba1b870c
 ---
 

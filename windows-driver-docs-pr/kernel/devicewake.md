@@ -2,14 +2,13 @@
 title: DeviceWake
 author: windows-driver-content
 description: DeviceWake
-MS-HAID:
-- 'PwrMgmt\_a1346131-8e8f-4cf7-8c06-662ad8986630.xml'
-- 'kernel.devicewake'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3b82c095-1ee7-41e9-991e-ac0bcf959024
 keywords: ["DeviceWake"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DeviceWake

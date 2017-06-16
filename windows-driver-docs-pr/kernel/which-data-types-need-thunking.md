@@ -2,14 +2,13 @@
 title: Which Data Types Need Thunking
 author: windows-driver-content
 description: Which Data Types Need Thunking
-MS-HAID:
-- 'Other\_fd841839-0e4d-44d9-aed7-5aff27163f85.xml'
-- 'kernel.which\_data\_types\_need\_thunking'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: af1d7986-7bf2-4587-b487-91658e7a3b19
 keywords: ["thunking WDK", "WOW64 thunking layer WDK", "32-bit I/O support WDK 64-bit , thunking", "data types WDK 64-bit", "pointer precision WDK 64-bit", "fixed-precision data types WDK 64-bit"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Which Data Types Need Thunking

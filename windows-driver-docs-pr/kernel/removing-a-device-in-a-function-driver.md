@@ -2,14 +2,13 @@
 title: Removing a Device in a Function Driver
 author: windows-driver-content
 description: Removing a Device in a Function Driver
-MS-HAID:
-- 'PlugPlay\_250edee9-f2f1-4156-874b-f83b5919c19c.xml'
-- 'kernel.removing\_a\_device\_in\_a\_function\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 46a75647-e72a-4194-be9d-070e3ac95650
 keywords: ["function drivers WDK PnP", "DispatchPnP routine"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Removing a Device in a Function Driver

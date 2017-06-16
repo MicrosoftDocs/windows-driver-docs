@@ -2,9 +2,6 @@
 title: Supporting D3cold in a Driver
 author: windows-driver-content
 description: Starting with Windows 8, the D3 (off) device power state is divided into two distinct substates, D3hot and D3cold.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: D085820E-EDAC-4353-8500-207F77D9CC1F
 ---
 

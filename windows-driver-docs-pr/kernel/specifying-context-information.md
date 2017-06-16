@@ -2,14 +2,13 @@
 title: Specifying Context Information
 author: windows-driver-content
 description: Specifying Context Information
-MS-HAID:
-- 'Other\_47aef834-2550-43f1-a73a-a1148b68ae3d.xml'
-- 'kernel.specifying\_context\_information'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7133529f-5a6c-4df1-8d03-1c79c0d98fa9
 keywords: ["filtering registry calls WDK kernel , context information", "registry filtering drivers WDK kernel , context information", "context information", "context information WDK filter registry call"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying Context Information

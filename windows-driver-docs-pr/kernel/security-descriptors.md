@@ -2,14 +2,13 @@
 title: Security Descriptors
 author: windows-driver-content
 description: Security Descriptors
-MS-HAID:
-- 'Objects\_e52fb8fa-74e5-470b-882e-eddd91206c30.xml'
-- 'kernel.security\_descriptors'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a5edd5e8-6fc7-4ab0-aebc-f0cd8e9299b6
 keywords: ["security descriptors WDK objects", "system ACL WDK objects", "SACL WDK objects", "discretionary ACL WDK objects", "DACL WDK objects", "access control lists WDK objects", "ACL WDK objects"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Security Descriptors

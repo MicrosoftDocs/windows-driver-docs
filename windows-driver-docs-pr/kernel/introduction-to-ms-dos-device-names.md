@@ -2,14 +2,13 @@
 title: Introduction to MS-DOS Device Names
 author: windows-driver-content
 description: Introduction to MS-DOS Device Names
-MS-HAID:
-- 'DevObjts\_9a0ea03a-898f-408a-9bce-e1855da47016.xml'
-- 'kernel.introduction\_to\_ms\_dos\_device\_names'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 44b2f871-56e1-46d3-aab4-c38f498d089d
 keywords: ["MS-DOS device names WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to MS-DOS Device Names

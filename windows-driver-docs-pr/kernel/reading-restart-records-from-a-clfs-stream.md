@@ -2,14 +2,13 @@
 title: Reading Restart Records from a CLFS Stream
 author: windows-driver-content
 description: Reading Restart Records from a CLFS Stream
-MS-HAID:
-- 'Clfs\_guide\_ef681a39-9ed5-4064-b0d2-421ce3bf2d33.xml'
-- 'kernel.reading\_restart\_records\_from\_a\_clfs\_stream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 310545f6-d10d-481e-829d-287b045b98cd
 keywords: ["Common Log File System WDK kernel , restart records", "CLFS WDK kernel , restart records", "restart records WDK CLFS", "reading restart records"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reading Restart Records from a CLFS Stream

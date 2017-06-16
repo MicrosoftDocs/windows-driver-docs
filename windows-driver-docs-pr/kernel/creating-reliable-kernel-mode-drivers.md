@@ -2,14 +2,13 @@
 title: Creating Reliable Kernel-Mode Drivers
 author: windows-driver-content
 description: Creating Reliable Kernel-Mode Drivers
-MS-HAID:
-- 'Other\_2afd5504-c2ad-4e83-855b-651f07fecd59.xml'
-- 'kernel.creating\_reliable\_kernel\_mode\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 31bbf1fe-dc90-43e0-a53e-eca902ec343e
 keywords: ["kernel-mode drivers WDK , reliability", "reliability WDK kernel", "reliability WDK kernel , about reliable drivers", "IRPs WDK kernel , reliability issues"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Reliable Kernel-Mode Drivers

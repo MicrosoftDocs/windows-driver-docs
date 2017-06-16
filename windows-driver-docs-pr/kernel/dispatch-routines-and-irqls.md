@@ -2,14 +2,13 @@
 title: Dispatch Routines and IRQLs
 author: windows-driver-content
 description: Dispatch Routines and IRQLs
-MS-HAID:
-- 'DrvComps\_ad832782-3e63-409b-ba57-d4451978c135.xml'
-- 'kernel.dispatch\_routines\_and\_irqls'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fe64e0f7-3906-470a-86c5-03460e652eed
 keywords: ["dispatch routines WDK kernel , IRQLs", "IRQLs WDK dispatch routines"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Dispatch Routines and IRQLs

@@ -2,14 +2,13 @@
 title: Object Names
 author: windows-driver-content
 description: Object Names
-MS-HAID:
-- 'Objects\_0efe70aa-395a-4231-a2cd-1b7ea83c4873.xml'
-- 'kernel.object\_names'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b30e7475-7f94-4993-b373-8e4a8b1bcb4c
 keywords: ["object names WDK kernel", "named objects WDK kernel", "unnamed objects WDK kernel", "object names WDK user-mode", "object handles WDK user-mode", "object handles WDK kernel", "handles WDK user-mode", "handles WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Object Names

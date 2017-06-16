@@ -2,12 +2,6 @@
 title: Windows Kernel-Mode Power Manager
 author: windows-driver-content
 description: Windows Kernel-Mode Power Manager
-MS-HAID:
-- 'pomanager\_581d22fa-9e55-450f-930a-e02e85597c53.xml'
-- 'kernel.windows\_kernel\_mode\_power\_manager'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2d39e43a-63a6-4474-a1ed-c24b4526a3f5
 ---
 

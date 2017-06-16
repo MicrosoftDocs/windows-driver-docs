@@ -2,12 +2,6 @@
 title: Windows Kernel-Mode Plug and Play Manager
 author: windows-driver-content
 description: Windows Kernel-Mode Plug and Play Manager
-MS-HAID:
-- 'pnpmanager\_49a21603-933d-4fe6-a8f0-d64cc1832121.xml'
-- 'kernel.windows\_kernel\_mode\_plug\_and\_play\_manager'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 43d06dbe-da66-4103-8be3-f27ff075a1b4
 ---
 

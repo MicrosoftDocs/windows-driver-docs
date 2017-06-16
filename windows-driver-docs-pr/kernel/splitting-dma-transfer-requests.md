@@ -2,14 +2,13 @@
 title: Splitting DMA Transfer Requests
 author: windows-driver-content
 description: Splitting DMA Transfer Requests
-MS-HAID:
-- 'ioprogdma\_1889914c-f782-4c2a-902d-8911b4b40ab2.xml'
-- 'kernel.splitting\_dma\_transfer\_requests'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7d5b1649-1021-4876-a9c0-e6b156785ef2
 keywords: ["I/O WDK kernel , splitting transfer requests", "splitting transfer requests", "transfer request splitting WDK kernel", "data transfers WDK kernel , splitting requests", "transferring data WDK kernel , splitting requests"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Splitting DMA Transfer Requests

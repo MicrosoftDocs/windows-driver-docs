@@ -2,14 +2,13 @@
 title: Notifying the File System of Possible Media Changes
 author: windows-driver-content
 description: Notifying the File System of Possible Media Changes
-MS-HAID:
-- 'Other\_c694d732-fa95-4841-8d61-2a55ee787905.xml'
-- 'kernel.notifying\_the\_file\_system\_of\_possible\_media\_changes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b1956370-ec9c-4a43-90a8-12705d28e314
 keywords: ["removable media WDK kernel , notifying of media changes", "notifications WDK removable media", "media change notifications WDK removable media"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Notifying the File System of Possible Media Changes

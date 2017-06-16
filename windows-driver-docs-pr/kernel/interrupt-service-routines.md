@@ -2,14 +2,13 @@
 title: Interrupt Service Routines
 author: windows-driver-content
 description: Interrupt Service Routines
-MS-HAID:
-- 'Intrupts\_a9c2009c-fa84-4540-9878-6524e52e3137.xml'
-- 'kernel.interrupt\_service\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d72a15be-772f-4cd4-a304-10981056d735
 keywords: ["interrupt service routines WDK kernel", "InterruptService", "ISRs WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Interrupt Service Routines

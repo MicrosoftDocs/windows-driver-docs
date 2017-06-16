@@ -2,14 +2,13 @@
 title: Implementing WMI
 author: windows-driver-content
 description: Implementing WMI
-MS-HAID:
-- 'WMI\_65ec8282-0907-42a1-b210-a4a06039c8b2.xml'
-- 'kernel.implementing\_wmi'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5c2ed322-0fc9-4004-9a5f-f4d3c6a59fe9
 keywords: ["WMI WDK kernel", "Windows Management Instrumentation WDK kernel", "extensions WDK WMI", "measurement data WDK WMI", "instrumentation data WDK WMI", "user-mode WMI WDK", "WMI WDK user-mode", "Windows Management Instrumentation WDK user-mode", "kernel-mode drivers WDK , WMI"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing WMI

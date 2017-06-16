@@ -2,14 +2,13 @@
 title: Reusing IRPs
 author: windows-driver-content
 description: Reusing IRPs
-MS-HAID:
-- 'IRPs\_2abc95ab-da31-412e-8a8e-32b68e0b4ebf.xml'
-- 'kernel.reusing\_irps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 19b09cf8-b88d-4808-9af0-038d3d02dceb
 keywords: ["IRPs WDK kernel , reusing", "reusing IRPs WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reusing IRPs

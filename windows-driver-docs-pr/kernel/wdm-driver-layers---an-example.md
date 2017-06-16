@@ -2,14 +2,13 @@
 title: WDM Driver Layers An Example
 author: windows-driver-content
 description: WDM Driver Layers An Example
-MS-HAID:
-- 'WDMIntro\_63032de9-14e4-4250-8e6e-31529284b532.xml'
-- 'kernel.wdm\_driver\_layers\_\_\_an\_example'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 64eaa850-6394-4832-b11f-ce4db7f7c37d
 keywords: ["WDM drivers WDK kernel , layered drivers", "layered drivers WDK kernel", "driver layers WDK WDM", "joysticks WDK WDM"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDM Driver Layers: An Example

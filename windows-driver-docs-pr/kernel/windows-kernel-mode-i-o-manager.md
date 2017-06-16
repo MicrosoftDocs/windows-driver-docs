@@ -2,12 +2,6 @@
 title: Windows Kernel-Mode I/O Manager
 author: windows-driver-content
 description: Windows Kernel-Mode I/O Manager
-MS-HAID:
-- 'iomanager\_c9b518f9-1a6b-4c73-bbe8-117346709f4d.xml'
-- 'kernel.windows\_kernel\_mode\_i\_o\_manager'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8652f37d-0ece-4c08-9bce-499f0fedb0dd
 ---
 

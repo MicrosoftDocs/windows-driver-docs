@@ -2,14 +2,13 @@
 title: Optional Dispatch Routines
 author: windows-driver-content
 description: Optional Dispatch Routines
-MS-HAID:
-- 'DrvComps\_a039696e-a16a-4038-a3c0-581cbc8e99a9.xml'
-- 'kernel.optional\_dispatch\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 38a3fcc9-237d-432d-85db-1594697c96a5
 keywords: ["dispatch routines WDK kernel , optional", "optional dispatch routines WDK kernel", "mass storage devices WDK dispatch routines"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Optional Dispatch Routines

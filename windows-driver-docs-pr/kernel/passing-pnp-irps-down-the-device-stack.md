@@ -2,14 +2,13 @@
 title: Passing PnP IRPs Down the Device Stack
 author: windows-driver-content
 description: Passing PnP IRPs Down the Device Stack
-MS-HAID:
-- 'PlugPlay\_c0b28671-a77f-4a15-959d-6b4dcf8bf954.xml'
-- 'kernel.passing\_pnp\_irps\_down\_the\_device\_stack'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 339ef4b4-1b4f-42ac-ab57-c53b83120f0d
 keywords: ["PnP WDK kernel , passing IRPs down device stack", "Plug and Play WDK kernel , passing IRPs down device stack", "IRPs WDK PnP", "I/O request packets WDK PnP", "passing IRPs down device stack WDK", "IoCompletion routine"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Passing PnP IRPs Down the Device Stack

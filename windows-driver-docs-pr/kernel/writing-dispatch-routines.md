@@ -2,14 +2,13 @@
 title: Writing Dispatch Routines
 author: windows-driver-content
 description: Writing Dispatch Routines
-MS-HAID:
-- 'DrvComps\_789564ee-c57a-4b5c-841f-ef40bee3c23e.xml'
-- 'kernel.writing\_dispatch\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 84eb9372-2ef7-4cc2-94af-97e3399e69e0
 keywords: ["dispatch routines WDK kernel", "standard driver routines WDK kernel , dispatch routines", "driver routines WDK kernel , dispatch routines", "routines WDK kernel , dispatch routines", "system-space memory allocations WDK kernel", "system resource storage WDK kernel", "storing system resources", "dispatch routines WDK kernel , about dispatch routines", "IRPs WDK kernel , dispatch routines", "multiple I/O function codes WDK kernel", "IRP major function codes WDK kernel", "major function codes WDK kernel", "function codes WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing Dispatch Routines

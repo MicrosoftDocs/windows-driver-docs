@@ -2,14 +2,13 @@
 title: Life Cycle of an Object
 author: windows-driver-content
 description: Life Cycle of an Object
-MS-HAID:
-- 'Objects\_c0319eb3-0f0d-4965-9172-fcdb62f1e291.xml'
-- 'kernel.life\_cycle\_of\_an\_object'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e81bfce6-27c4-4916-adc8-9c014d02bee7
 keywords: ["object life cycles WDK kernel", "life cycles WDK objects", "referencing objects", "object reference counts WDK kernel", "temporary objects WDK kernel", "permanent objects WDK kernel", "reference counts WDK objects", "freed objects WDK kernel", "object temporary status WDK kernel", "object permanent status WDK kernel", "automatic object deletions WDK kernel", "object tracking WDK kernel", "open object handles WDK kernel", "counting references WDK objects"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Life Cycle of an Object

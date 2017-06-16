@@ -2,14 +2,13 @@
 title: Defining a Callback Object
 author: windows-driver-content
 description: Defining a Callback Object
-MS-HAID:
-- 'Synchro\_e954f515-e536-4e12-8419-e7e54c4a963b.xml'
-- 'kernel.defining\_a\_callback\_object'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9717795b-dd62-4f17-b931-5ca2b1237e60
 keywords: ["callback objects WDK kernel", "registering callback notifications"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Defining a Callback Object

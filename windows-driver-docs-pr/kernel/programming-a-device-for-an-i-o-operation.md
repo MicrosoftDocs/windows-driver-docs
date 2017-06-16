@@ -2,14 +2,13 @@
 title: Programming a Device for an I/O Operation
 author: windows-driver-content
 description: Programming a Device for an I/O Operation
-MS-HAID:
-- 'Intrupts\_4e6e480f-ef75-4ef2-a1ed-72b8255f034d.xml'
-- 'kernel.programming\_a\_device\_for\_an\_i\_o\_operation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 952b07d8-81e3-40ec-8acd-be1143a7d2a2
 keywords: ["critical section routines WDK kernel", "I/O WDK kernel , device programming"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Programming a Device for an I/O Operation

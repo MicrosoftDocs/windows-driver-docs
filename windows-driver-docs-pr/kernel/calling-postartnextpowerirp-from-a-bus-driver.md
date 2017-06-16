@@ -2,14 +2,13 @@
 title: Calling PoStartNextPowerIrp from a Bus Driver
 author: windows-driver-content
 description: Calling PoStartNextPowerIrp from a Bus Driver
-MS-HAID:
-- 'PwrMgmt\_939e02f7-a71a-4e8f-a2f4-ba33e02eab10.xml'
-- 'kernel.calling\_postartnextpowerirp\_from\_a\_bus\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4e23ebe1-c939-48e1-82bf-cdb4980a5a7b
 keywords: ["bus drivers WDK power management", "power IRPs WDK kernel , PoStartNextPowerIrp", "PoStartNextPowerIrp"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Calling PoStartNextPowerIrp from a Bus Driver

@@ -2,14 +2,13 @@
 title: Supporting Asynchronous I/O
 author: windows-driver-content
 description: Supporting Asynchronous I/O
-MS-HAID:
-- 'Intro\_0a748ac1-63eb-472f-832b-8909d3631e14.xml'
-- 'kernel.supporting\_asynchronous\_i\_o'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b4baf1a9-6156-4bbf-b4d9-7205924c637f
 keywords: ["asynchronous I/O WDK kernel", "I/O WDK kernel , asynchronous mode", "status information WDK I/O requests"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Asynchronous I/O

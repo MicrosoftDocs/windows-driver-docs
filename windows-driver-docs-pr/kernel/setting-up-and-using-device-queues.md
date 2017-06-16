@@ -2,14 +2,13 @@
 title: Setting Up and Using Device Queues
 author: windows-driver-content
 description: Setting Up and Using Device Queues
-MS-HAID:
-- 'IRPs\_bbdc3d33-9e3e-4619-ba22-c9307ae26cc9.xml'
-- 'kernel.setting\_up\_and\_using\_device\_queues'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5221ffc0-0cb4-498b-9be2-4d240b5f2744
 keywords: ["device queues WDK IRPs , setting up", "device queues WDK IRPs , objects", "inserting IRPs in queue", "storing device queue objects", "supplemental IRP queues WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Up and Using Device Queues

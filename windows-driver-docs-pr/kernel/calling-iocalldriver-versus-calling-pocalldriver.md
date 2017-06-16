@@ -2,14 +2,13 @@
 title: Calling IoCallDriver versus Calling PoCallDriver
 author: windows-driver-content
 description: Calling IoCallDriver versus Calling PoCallDriver
-MS-HAID:
-- 'PwrMgmt\_aaeef4d9-83d8-4ed5-9044-b406d7abb838.xml'
-- 'kernel.calling\_iocalldriver\_versus\_calling\_pocalldriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a47e2310-e89b-4552-bbe3-d4984ae8b564
 keywords: ["PoCallDriver", "active power IRPs WDK kernel", "power IRPs WDK kernel , IoCallDriver versus PoCallDriver"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Calling IoCallDriver versus Calling PoCallDriver

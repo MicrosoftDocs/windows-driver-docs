@@ -2,14 +2,13 @@
 title: Driver Role in Power Management
 author: windows-driver-content
 description: Driver Role in Power Management
-MS-HAID:
-- 'PwrMgmt\_729c258e-20b4-4b4f-b1c2-cb6049b4b1a3.xml'
-- 'kernel.driver\_role\_in\_power\_management'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 24b55880-e767-4f18-977e-c4a93332b909
 keywords: ["power management WDK kernel , driver roles in", "system power states WDK kernel , driver roles", "device power states WDK kernel", "driver power support roles WDk kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Role in Power Management

@@ -2,14 +2,13 @@
 title: Implementing Dynamic MOF Data
 author: windows-driver-content
 description: Implementing Dynamic MOF Data
-MS-HAID:
-- 'WMI\_f455ee30-980f-42c9-981e-66daa2aedaf4.xml'
-- 'kernel.implementing\_dynamic\_mof\_data'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 408c0f64-6257-4ece-bb4d-b1850f8ae3c6
 keywords: ["WMI WDK kernel , publishing schema", "publishing WMI schema WDK", "schema publishing WDK WMI", "MOF files WDK WMI", "dyanmic MOF data WDK WMI"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing Dynamic MOF Data

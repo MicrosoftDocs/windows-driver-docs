@@ -2,14 +2,13 @@
 title: Detecting Code That Can Be Pageable
 author: windows-driver-content
 description: Detecting Code That Can Be Pageable
-MS-HAID:
-- 'MemMgmt\_58d5786e-dda3-4740-8812-939be461731f.xml'
-- 'kernel.detecting\_code\_that\_can\_be\_pageable'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5e8a021d-09c3-4e63-b5a8-7559c384ae3d
 keywords: ["pageable drivers WDK kernel , code detection", "detecting pageable code"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Detecting Code That Can Be Pageable

@@ -2,14 +2,13 @@
 title: Introduction to Controller Objects
 author: windows-driver-content
 description: Introduction to Controller Objects
-MS-HAID:
-- 'ioprogleg\_132f468c-d5d8-4d7b-8f0c-69826a164bf9.xml'
-- 'kernel.introduction\_to\_controller\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a46732a7-1e60-41d5-96e9-d5284c000af1
 keywords: ["controller objects WDK kernel , about controller objects", "ControllerControl routines, about ControllerControl routines", "overlapped I/O WDK kernel", "I/O WDK kernel , overlaps"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Controller Objects

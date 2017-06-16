@@ -2,14 +2,13 @@
 title: Device Type-Specific I/O Requests
 author: windows-driver-content
 description: Device Type-Specific I/O Requests
-MS-HAID:
-- 'IRPs\_83b8b71e-93b0-4ffe-a4bf-82917ae2f9d0.xml'
-- 'kernel.device\_type\_specific\_i\_o\_requests'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 33ea0b0a-db58-40b7-b6d3-e981acf44dfe
 keywords: ["IRPs WDK kernel , device type-specific I/O requests", "device type-specific I/O requests WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Type-Specific I/O Requests

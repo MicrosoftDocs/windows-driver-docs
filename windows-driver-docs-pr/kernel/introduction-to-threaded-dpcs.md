@@ -2,14 +2,13 @@
 title: Introduction to Threaded DPCs
 author: windows-driver-content
 description: Introduction to Threaded DPCs
-MS-HAID:
-- 'Intrupts\_c9fc3d83-5047-4f95-ac81-3bd2696fc337.xml'
-- 'kernel.introduction\_to\_threaded\_dpcs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 891a8a52-83ff-400a-9477-8edca1b9a83c
 keywords: ["threaded DPCs WDK kernel", "real-time threads WDK kernel", "preempted DPCs WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Threaded DPCs

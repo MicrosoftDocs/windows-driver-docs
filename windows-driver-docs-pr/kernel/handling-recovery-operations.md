@@ -2,14 +2,13 @@
 title: Handling Recovery Operations
 author: windows-driver-content
 description: Handling Recovery Operations
-MS-HAID:
-- 'ktm\_dg\_20d1705b-fcfe-43a5-ae2b-bb38e3c86954.xml'
-- 'kernel.handling\_recovery\_operations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 35149bb9-fd48-44d3-a9fd-0e631aa0e853
 keywords: ["transactions WDK KTM , recovering transactions", "recovering transactions WDK KTM", "transaction processing systems WDK KTM , recovering transactions", "TPS WDK KTM , recovering transactions", "log streams WDK KTM , recovering transactions", "virtual clock values WDK KTM , recovering transactions"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Recovery Operations

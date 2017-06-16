@@ -2,14 +2,13 @@
 title: How to Complete an IRP in a Dispatch Routine
 author: windows-driver-content
 description: How to Complete an IRP in a Dispatch Routine
-MS-HAID:
-- 'IRPs\_95ce4d15-44b7-44a2-b2bb-1e773c179198.xml'
-- 'kernel.how\_to\_complete\_an\_irp\_in\_a\_dispatch\_routine'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b29da791-e768-4f67-8e85-6cfbeca97220
 keywords: ["completing IRPs WDK kernel , dispatch routines", "dispatch routines WDK kernel , completing IRPs", "status information WDK IRPs", "I/O status blocks WDK kernel", "status blocks WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to Complete an IRP in a Dispatch Routine

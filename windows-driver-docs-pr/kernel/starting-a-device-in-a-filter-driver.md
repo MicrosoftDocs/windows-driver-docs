@@ -2,14 +2,13 @@
 title: Starting a Device in a Filter Driver
 author: windows-driver-content
 description: Starting a Device in a Filter Driver
-MS-HAID:
-- 'PlugPlay\_78f0a683-4efa-43f4-9032-bd9a981021ce.xml'
-- 'kernel.starting\_a\_device\_in\_a\_filter\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d7c527b6-a5fb-4c4f-a8bc-29f961d31125
 keywords: ["filter drivers WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Starting a Device in a Filter Driver

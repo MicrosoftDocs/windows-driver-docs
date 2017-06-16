@@ -2,14 +2,13 @@
 title: Providing IoTimer Context Information
 author: windows-driver-content
 description: Providing IoTimer Context Information
-MS-HAID:
-- 'Synchro\_8b6a9090-bb6d-4bcb-a591-05c18c0b5240.xml'
-- 'kernel.providing\_iotimer\_context\_information'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a92a7c3d-1602-430b-8ae1-c79bfc9ac7f9
 keywords: ["IoTimer", "IoInitializeTimer"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Providing IoTimer Context Information

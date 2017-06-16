@@ -2,14 +2,13 @@
 title: WMI Property Sheets
 author: windows-driver-content
 description: WMI Property Sheets
-MS-HAID:
-- 'WMI\_6e078239-1182-40f2-bc45-017d29916d13.xml'
-- 'kernel.wmi\_property\_sheets'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cc521aff-362a-4064-adea-f6f3cf8a1c10
 keywords: ["WMI WDK kernel , property sheets", "property sheets WDK WMI", "device property sheets WDK WMI"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WMI Property Sheets

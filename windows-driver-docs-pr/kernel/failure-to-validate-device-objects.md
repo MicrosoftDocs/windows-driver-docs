@@ -2,14 +2,13 @@
 title: Failure to Validate Device Objects
 author: windows-driver-content
 description: Failure to Validate Device Objects
-MS-HAID:
-- 'Other\_83551ffd-f3e6-4bb1-8a60-66d61fd6f8e7.xml'
-- 'kernel.failure\_to\_validate\_device\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: aa4abc20-0b87-44d7-8987-a5b2be397bb1
 keywords: ["reliability WDK kernel , device object validations", "device objects WDK kernel , validation failures", "validation failures WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Failure to Validate Device Objects

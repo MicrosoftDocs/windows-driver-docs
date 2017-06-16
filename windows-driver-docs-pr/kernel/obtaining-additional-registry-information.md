@@ -2,14 +2,13 @@
 title: Obtaining Additional Registry Information
 author: windows-driver-content
 description: Obtaining Additional Registry Information
-MS-HAID:
-- 'Other\_b54a6874-805f-4dfd-83cb-0edac1aace04.xml'
-- 'kernel.obtaining\_additional\_registry\_information'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 989acf63-3bb1-4d9a-a7a8-3eea1e2bc68a
 keywords: ["filtering registry calls WDK kernel , additional information to obtain", "registry filtering drivers WDK kernel , additional information to obtain"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Obtaining Additional Registry Information

@@ -2,12 +2,6 @@
 title: Specifying Access Rights
 author: windows-driver-content
 description: Specifying Access Rights
-MS-HAID:
-- 'SysTypes\_f1a053d0-00f5-49b9-be58-2f344728319c.xml'
-- 'kernel.access\_mask'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8ef4b4bb-5f4e-4095-b4ab-1182c0f75619
 ---
 

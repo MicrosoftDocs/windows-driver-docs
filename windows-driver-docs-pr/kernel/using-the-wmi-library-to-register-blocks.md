@@ -2,14 +2,13 @@
 title: Using the WMI Library to Register Blocks
 author: windows-driver-content
 description: Using the WMI Library to Register Blocks
-MS-HAID:
-- 'WMI\_405bc185-dffc-42ac-9657-1a0c33c02b90.xml'
-- 'kernel.using\_the\_wmi\_library\_to\_register\_blocks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1f4b773d-ca24-47f5-87e8-84c98dad9267
 keywords: ["WMI WDK kernel , registering with WMI", "registering WMI data providers", "data providers WDK WMI", "driver registrations WDK WMI", "event blocks WDK WMI", "blocks WDK WMI", "IRP_MN_REGINFO", "IRP_MN_REGINFO_EX", "registering blocks"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the WMI Library to Register Blocks

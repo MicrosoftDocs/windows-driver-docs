@@ -2,14 +2,13 @@
 title: Handling a System Set-Power IRP in a Bus Driver
 author: windows-driver-content
 description: Handling a System Set-Power IRP in a Bus Driver
-MS-HAID:
-- 'PwrMgmt\_4a00be48-e1ea-4167-92c4-08dc2b3e9dde.xml'
-- 'kernel.handling\_a\_system\_set\_power\_irp\_in\_a\_bus\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e88344bd-4223-4cd5-9428-201d46c6dbb4
 keywords: ["set-power IRPs WDK power management", "bus drivers WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling a System Set-Power IRP in a Bus Driver

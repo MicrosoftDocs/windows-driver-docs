@@ -2,12 +2,6 @@
 title: Windows Kernel-Mode Safe String Library
 author: windows-driver-content
 description: Windows Kernel-Mode Safe String Library
-MS-HAID:
-- 'safelib\_1f11be85-3233-4807-b0c1-4429b8b461d8.xml'
-- 'kernel.windows\_kernel\_mode\_safe\_string\_library'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a54cd20c-2c2d-462d-b9fc-112e99562e52
 ---
 

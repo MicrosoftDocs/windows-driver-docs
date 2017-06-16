@@ -2,12 +2,6 @@
 title: Additional Timers and Counters
 author: windows-driver-content
 description: Additional Timers and Counters
-MS-HAID:
-- 'Synchro\_09aebf4d-ab9e-48bf-89e5-27d5e1465f0a.xml'
-- 'kernel.additional\_timers\_and\_counters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d61adb40-adcd-4a8d-88f5-f217576d1147
 ---
 

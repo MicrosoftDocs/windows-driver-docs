@@ -2,14 +2,13 @@
 title: Handling IRP\_MN\_SET\_POWER for System Power States
 author: windows-driver-content
 description: Handling IRP\_MN\_SET\_POWER for System Power States
-MS-HAID:
-- 'PwrMgmt\_694616ba-6383-4e06-80cc-6688ac72dd1f.xml'
-- 'kernel.handling\_irp\_mn\_set\_power\_for\_system\_power\_states'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 21e8e8a7-ca77-445b-a49e-28a53f431a26
 keywords: ["IRP_MN_SET_POWER", "system power states WDK kernel , IRP_MN_SET_POWER", "set-power IRPs WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling IRP\_MN\_SET\_POWER for System Power States

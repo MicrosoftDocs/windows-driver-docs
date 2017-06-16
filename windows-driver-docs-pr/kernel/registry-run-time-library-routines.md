@@ -2,14 +2,13 @@
 title: Registry Run-Time Library Routines
 author: windows-driver-content
 description: Registry Run-Time Library Routines
-MS-HAID:
-- 'Other\_f136205d-573b-4de7-8c13-47249f5de658.xml'
-- 'kernel.registry\_run\_time\_library\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 53e55969-3c8e-44ab-8ba7-6abb0ddbfc24
 keywords: ["registry WDK kernel , run-time library routines", "driver registry information WDK kernel , run-time library routines", "run-time library routines WDK kernel", "RtlXxxRegistryYyy routines"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registry Run-Time Library Routines

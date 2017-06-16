@@ -2,14 +2,13 @@
 title: AddDevice Routines in Bus Drivers
 author: windows-driver-content
 description: AddDevice Routines in Bus Drivers
-MS-HAID:
-- 'DrvComps\_b93cf2cb-70a4-40d5-95f1-53acfe0dbc9b.xml'
-- 'kernel.adddevice\_routines\_in\_bus\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 70af7116-2f29-4d77-a6d5-c1e0417e6f81
 keywords: ["bus drivers WDK kernel", "AddDevice routines WDK kernel , bus drivers"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AddDevice Routines in Bus Drivers

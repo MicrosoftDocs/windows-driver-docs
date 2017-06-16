@@ -2,14 +2,13 @@
 title: Using Lookaside Lists
 author: windows-driver-content
 description: Using Lookaside Lists
-MS-HAID:
-- 'MemMgmt\_0501cdc0-3a5d-4fd3-bdb1-84f5ef70febd.xml'
-- 'kernel.using\_lookaside\_lists'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 07a75b8b-04b9-48ea-bda4-53889dd661a9
 keywords: ["memory management WDK kernel , lookaside lists", "lookaside lists WDK kernel", "fixed-size buffer allocations WDK kernel", "ExXxxLookasideList routines WDK", "entries WDK lookaside", "nonpaged lookaside lists WDK kernel", "paged lookaside lists WDK kernel", "Allocate routine WDK memory", "Free routine WDK memory"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Lookaside Lists

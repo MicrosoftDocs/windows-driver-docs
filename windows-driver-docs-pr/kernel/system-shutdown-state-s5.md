@@ -2,14 +2,13 @@
 title: System Shutdown State S5
 author: windows-driver-content
 description: System Shutdown State S5
-MS-HAID:
-- 'PwrMgmt\_a73ceed5-59d6-4b69-9525-e49e1fe09192.xml'
-- 'kernel.system\_shutdown\_state\_s5'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c08d688d-c31a-4d57-a343-406edfa35e8f
 keywords: ["S5 WDK power management", "system shutdown states WDK power management", "software resumption WDK power management", "resumption WDK power management", "hardware latency WDK power management", "system hardware context WDK power management", "hardware context WDK power management", "context WDK power management", "latency WDK power management", "system power states WDK kernel , shutdown state", "shutdown states WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # System Shutdown State S5

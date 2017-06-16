@@ -2,14 +2,13 @@
 title: Security Issues for Section Objects and Views
 author: windows-driver-content
 description: Security Issues for Section Objects and Views
-MS-HAID:
-- 'MemMgmt\_18169524-ee04-4e3e-b475-c142d0488786.xml'
-- 'kernel.security\_issues\_for\_section\_objects\_and\_views'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a2044ea1-c90c-4487-850b-d07ac55aea6d
 keywords: ["memory sections WDK kernel", "section objects WDK kernel", "views WDK memory section", "security WDK memory section", "protocols WDK memory section"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Security Issues for Section Objects and Views

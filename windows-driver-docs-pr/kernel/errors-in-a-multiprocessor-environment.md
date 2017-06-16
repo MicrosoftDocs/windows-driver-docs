@@ -2,14 +2,13 @@
 title: Errors in a Multiprocessor Environment
 author: windows-driver-content
 description: Errors in a Multiprocessor Environment
-MS-HAID:
-- 'Other\_247147ad-05cc-4eb3-bcee-7941a3aba26d.xml'
-- 'kernel.errors\_in\_a\_multiprocessor\_environment'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8a76b8d6-14d8-4709-8b15-e8b6b5094a1b
 keywords: ["reliability WDK kernel , race conditions", "race conditions WDK kernel", "reliability WDK kernel , multiprocessor environment errors", "multiprocessor environment errors WDK kernel", "locking WDK kernel", "multiple I/O request handling WDK kernel", "I/O requests WDK kernel", "thread conflicts WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Errors in a Multiprocessor Environment

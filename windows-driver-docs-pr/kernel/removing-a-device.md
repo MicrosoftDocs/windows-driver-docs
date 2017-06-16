@@ -2,14 +2,13 @@
 title: Removing a Device
 author: windows-driver-content
 description: Removing a Device
-MS-HAID:
-- 'PlugPlay\_eb802af7-b83a-4bcd-9e15-856a5e74ab0d.xml'
-- 'kernel.removing\_a\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8184987f-5c46-4dd6-aad2-3c32b14205fd
 keywords: ["PnP WDK kernel , removing devices", "Plug and Play WDK kernel , removing devices", "removing devices", "notifications WDK PnP , removing devices", "IRPs WDK PnP", "I/O request packets WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Removing a Device

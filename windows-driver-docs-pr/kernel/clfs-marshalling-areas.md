@@ -2,14 +2,13 @@
 title: CLFS Marshalling Areas
 author: windows-driver-content
 description: CLFS Marshalling Areas
-MS-HAID:
-- 'Clfs\_guide\_9bdf8072-8068-4228-9151-295f43f99466.xml'
-- 'kernel.clfs\_marshalling\_areas'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1153bcfd-43e9-43bd-b893-5ec044ea9584
 keywords: ["Common Log File System WDK kernel , marshalling areas", "CLFS WDK kernel , marshalling areas", "marshalling areas WDK CLFS", "log I/O buffers WDK CLFS", "maximum number of log I/O buffers WDK CLFS", "memory allocations WDK CLFS", "buffers WDK CLFS", "appending records WDK CLFS", "stable storage WDK CLFS", "volatile memory WDK CLFS", "storage WDK CLFS"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CLFS Marshalling Areas

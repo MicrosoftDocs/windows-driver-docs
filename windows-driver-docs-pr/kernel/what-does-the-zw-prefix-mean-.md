@@ -2,12 +2,6 @@
 title: What Does the Zw Prefix Mean
 author: windows-driver-content
 description: What Does the Zw Prefix Mean
-MS-HAID:
-- 'NtAndZw\_dcd1d844-8cf1-4b89-a727-91baf53d7e7a.xml'
-- 'kernel.what\_does\_the\_zw\_prefix\_mean\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9529cce9-9c46-4906-854d-d0aef9118a90
 ---
 

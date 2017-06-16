@@ -2,14 +2,13 @@
 title: Handling a GUID\_TARGET\_DEVICE\_REMOVE\_COMPLETE Event
 author: windows-driver-content
 description: Handling a GUID\_TARGET\_DEVICE\_REMOVE\_COMPLETE Event
-MS-HAID:
-- 'PlugPlay\_3d456e3e-6da8-497e-b764-f20e11c25124.xml'
-- 'kernel.handling\_a\_guid\_target\_device\_remove\_complete\_event'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7f20faae-b5ef-4a64-9150-bff14b04aaa4
 keywords: ["notifications WDK PnP , target device changes", "target device change notifications WDK PnP", "EventCategoryTargetDeviceChange notification", "GUID_TARGET_DEVICE_REMOVE_COMPLETE"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling a GUID\_TARGET\_DEVICE\_REMOVE\_COMPLETE Event

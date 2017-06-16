@@ -2,14 +2,13 @@
 title: Making Drivers Pageable
 author: windows-driver-content
 description: Making Drivers Pageable
-MS-HAID:
-- 'MemMgmt\_8d8b70e2-67ac-4b84-87a1-9055f67bed1f.xml'
-- 'kernel.making\_drivers\_pageable'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0b3c1e00-2416-4534-9934-bb05f91c7482
 keywords: ["memory management WDK kernel , pageable drivers", "pageable drivers WDK kernel", "pageable drivers WDK kernel , about pageable drivers", "paged out drivers WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Making Drivers Pageable

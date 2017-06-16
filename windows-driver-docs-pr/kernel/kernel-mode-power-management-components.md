@@ -2,14 +2,13 @@
 title: Kernel-Mode Power Management Components
 author: windows-driver-content
 description: Kernel-Mode Power Management Components
-MS-HAID:
-- 'PwrMgmt\_d9565219-1458-427c-8742-6c1da630aa82.xml'
-- 'kernel.kernel\_mode\_power\_management\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 50587345-9a02-4b27-99af-a40cd73154f1
 keywords: ["power management WDK kernel , components"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Kernel-Mode Power Management Components

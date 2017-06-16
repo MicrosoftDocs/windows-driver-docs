@@ -2,14 +2,13 @@
 title: WMI Architecture
 author: windows-driver-content
 description: WMI Architecture
-MS-HAID:
-- 'WMI\_5d1a87da-8272-4a83-bc5e-6a1df1a21089.xml'
-- 'kernel.wmi\_architecture'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cdc8f318-1931-426e-bd9c-da7aa6a11036
 keywords: ["WMI WDK kernel , architecture"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WMI Architecture

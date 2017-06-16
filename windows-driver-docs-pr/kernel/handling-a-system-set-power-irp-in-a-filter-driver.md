@@ -2,14 +2,13 @@
 title: Handling a System Set-Power IRP in a Filter Driver
 author: windows-driver-content
 description: Handling a System Set-Power IRP in a Filter Driver
-MS-HAID:
-- 'PwrMgmt\_eb9b80b5-5d9f-4b50-abc1-82ef8efff02c.xml'
-- 'kernel.handling\_a\_system\_set\_power\_irp\_in\_a\_filter\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a6e364fc-f173-47ce-b36b-84f802cefcc3
 keywords: ["set-power IRPs WDK power management", "filter drivers WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling a System Set-Power IRP in a Filter Driver

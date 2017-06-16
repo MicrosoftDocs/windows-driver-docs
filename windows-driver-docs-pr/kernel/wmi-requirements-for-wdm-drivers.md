@@ -2,14 +2,13 @@
 title: WMI Requirements for WDM Drivers
 author: windows-driver-content
 description: WMI Requirements for WDM Drivers
-MS-HAID:
-- 'WMI\_fa77d4c0-cd42-467d-9fa6-db77b212fb3f.xml'
-- 'kernel.wmi\_requirements\_for\_wdm\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8290e570-acd9-4047-bd0b-c1c74847f243
 keywords: ["WMI WDK kernel , WDM drivers", "WDM drivers WDK WMI", "IRPs WDK WMI", "requests WDK WMI", "WMI WDK kernel , requests", "data providers WDK WMI"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WMI Requirements for WDM Drivers

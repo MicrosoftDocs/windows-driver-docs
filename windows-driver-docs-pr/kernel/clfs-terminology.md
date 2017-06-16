@@ -2,15 +2,14 @@
 title: CLFS Terminology
 author: windows-driver-content
 description: The following list gives definitions of key terms used in the Common Log File System (CLFS) documentation.
-MS-HAID:
-- 'Clfs\_guide\_9fd4af94-c90e-4926-8177-317ed5785923.xml'
-- 'kernel.clfs\_terminology'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 Robots: noindex, nofollow
 ms.assetid: d8511c5a-0181-4c54-acdc-e8a5892bb620
 keywords: ["Common Log File System WDK kernel , terminology", "CLFS WDK kernel , terminology"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CLFS Terminology

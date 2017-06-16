@@ -2,14 +2,13 @@
 title: Additional Transactional Interfaces
 author: windows-driver-content
 description: Additional Transactional Interfaces
-MS-HAID:
-- 'ktm\_dg\_2adba2ca-2981-4b8c-92b8-fc96fcc3bda3.xml'
-- 'kernel.additional\_transactional\_interfaces'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cbd88c96-6445-436b-8e02-09dd9cf40d77
 keywords: ["transactions WDK KTM , non-KTM interfaces", "transactional interfaces WDK"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Additional Transactional Interfaces

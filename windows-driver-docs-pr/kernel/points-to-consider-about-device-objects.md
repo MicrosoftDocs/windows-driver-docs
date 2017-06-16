@@ -2,14 +2,13 @@
 title: Points to Consider About Device Objects
 author: windows-driver-content
 description: Points to Consider About Device Objects
-MS-HAID:
-- 'DevObjts\_45f2a17d-c0f7-4e6f-8a49-638bbcaa0412.xml'
-- 'kernel.points\_to\_consider\_about\_device\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4c54340b-3b4c-4c67-b28d-fac769e4feb7
 keywords: ["device objects WDK kernel , design considerations"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Points to Consider About Device Objects

@@ -2,14 +2,13 @@
 title: Starting a Device
 author: windows-driver-content
 description: Starting a Device
-MS-HAID:
-- 'PlugPlay\_365afd77-b8a9-4081-93f6-0977c055568e.xml'
-- 'kernel.starting\_a\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c52588cf-04c8-420d-a68e-a8754a65d546
 keywords: ["PnP WDK kernel , starting devices", "Plug and Play WDK kernel , starting devices", "starting PnP devices", "DispatchPnP routine", "IoCompletion routine", "failed starts WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Starting a Device

@@ -2,14 +2,13 @@
 title: Overview of Windows Components
 author: windows-driver-content
 description: Overview of Windows Components
-MS-HAID:
-- 'Intro\_0e1dc6c4-4687-4f45-8c1c-4fe36223020f.xml'
-- 'kernel.overview\_of\_windows\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b941197d-732c-4b9a-8367-46beb14c33cf
 keywords: ["Windows components WDK", "Windows NT components WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Windows Components

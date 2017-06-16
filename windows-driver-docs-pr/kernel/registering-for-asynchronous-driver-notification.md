@@ -2,14 +2,13 @@
 title: Registering for Asynchronous Driver Notification
 author: windows-driver-content
 description: Registering for Asynchronous Driver Notification
-MS-HAID:
-- 'dhp\_a86f44f2-52b7-4b2d-801f-d01f6e92e9b9.xml'
-- 'kernel.registering\_for\_asynchronous\_driver\_notification'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e1f97a65-7c82-4d7b-97ec-0293fc69fd8c
 keywords: ["driver notification WDK dynamic hardware partitioning , registering", "asynchronous notification WDK dynamic hardware partitioning", "notification WDK dynamic hardware partitioning , registering", "asynchronous driver notification WDK dynamic hardware partitioning , registering", "registering for driver notifications WDK dynamic hardware partitioning"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering for Asynchronous Driver Notification

@@ -2,14 +2,13 @@
 title: Using the Kernel Stack
 author: windows-driver-content
 description: Using the Kernel Stack
-MS-HAID:
-- 'MemMgmt\_25dfdb48-8ea6-4a52-a665-6be3a106b3dd.xml'
-- 'kernel.using\_the\_kernel\_stack'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f1df01f4-f156-4267-a4a0-c548e16c02ea
 keywords: ["memory management WDK kernel , kernel stack", "kernel-mode stack space WDK", "kernel stack space WDK"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the Kernel Stack

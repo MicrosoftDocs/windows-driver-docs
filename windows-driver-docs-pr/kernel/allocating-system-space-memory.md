@@ -2,14 +2,13 @@
 title: Allocating System-Space Memory
 author: windows-driver-content
 description: Allocating System-Space Memory
-MS-HAID:
-- 'MemMgmt\_cf3a3d2a-357c-4b21-8df1-f01e8435201c.xml'
-- 'kernel.allocating\_system\_space\_memory'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: eee425b3-6ddd-4e9d-b51d-1f2c9ea106a5
 keywords: ["memory management WDK kernel , system-allocated space", "system-allocated space WDK kernel", "allocating system-space memory", "allocating I/O buffer memory", "I/O buffer memory allocations WDK kernel", "buffer memory allocations WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating System-Space Memory

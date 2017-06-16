@@ -2,14 +2,13 @@
 title: Stopping a Device after a Failed Start (Windows 98/Me)
 author: windows-driver-content
 description: Stopping a Device after a Failed Start (Windows 98/Me)
-MS-HAID:
-- 'PlugPlay\_659fbaff-ca7f-4a79-909b-eaa47b2540c8.xml'
-- 'kernel.stopping\_a\_device\_after\_a\_failed\_start\_\_windows\_98\_me\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 373a1797-6479-4b99-b577-c74494f1774c
 keywords: ["failed starts WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stopping a Device after a Failed Start (Windows 98/Me)

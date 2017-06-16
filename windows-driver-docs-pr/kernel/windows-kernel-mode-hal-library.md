@@ -2,12 +2,6 @@
 title: Windows Kernel-Mode HAL Library
 author: windows-driver-content
 description: Windows Kernel-Mode HAL Library
-MS-HAID:
-- 'hallib\_efc3bab6-755d-4d74-b6de-387b14d3cb90.xml'
-- 'kernel.windows\_kernel\_mode\_hal\_library'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5cfdbf1b-b856-4a0c-9f56-3879482819aa
 ---
 

@@ -2,14 +2,13 @@
 title: Using NTSTATUS Values
 author: windows-driver-content
 description: Using NTSTATUS Values
-MS-HAID:
-- 'Other\_d2d035ed-32f7-41f3-b3f3-ed1316482a39.xml'
-- 'kernel.using\_ntstatus\_values'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fe823930-e3ff-4c95-a640-bb6470c95d1d
 keywords: ["NTSTATUS values WDK kernel", "driver support routines WDK kernel", "return values WDK kernel", "testing return values WDK NTSTATUS values", "success values WDK NTSTATUS values", "informational values WDK NTSTATUS values", "warnings WDK NTSTATUS values", "error values WDK NTSTATUS values", "status information WDK NTSTATUS values", "checking return values"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using NTSTATUS Values

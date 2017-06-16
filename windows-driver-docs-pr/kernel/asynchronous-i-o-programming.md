@@ -2,12 +2,6 @@
 title: Asynchronous I/O Programming
 author: windows-driver-content
 description: Asynchronous I/O Programming
-MS-HAID:
-- 'ioproggen\_a5a7342d-2ea0-4dbf-a1f7-957a33656572.xml'
-- 'kernel.asynchronous\_i\_o\_programming'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f50c98ab-3aae-43f6-be91-2ae587105767
 ---
 

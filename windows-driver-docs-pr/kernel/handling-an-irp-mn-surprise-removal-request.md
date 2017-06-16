@@ -2,14 +2,13 @@
 title: Handling an IRP\_MN\_SURPRISE\_REMOVAL Request
 author: windows-driver-content
 description: Handling an IRP\_MN\_SURPRISE\_REMOVAL Request
-MS-HAID:
-- 'PlugPlay\_067c9e84-9d0a-46c2-ab9a-169d13da4cdc.xml'
-- 'kernel.handling\_an\_irp\_mn\_surprise\_removal\_request'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 39a90617-40ad-4c10-95d3-2b618d66d70e
 keywords: ["surprise removals WDK PnP", "IRP_MN_SURPRISE_REMOVAL"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling an IRP\_MN\_SURPRISE\_REMOVAL Request

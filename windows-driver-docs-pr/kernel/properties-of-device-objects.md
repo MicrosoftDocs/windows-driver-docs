@@ -2,14 +2,13 @@
 title: Properties of Device Objects
 author: windows-driver-content
 description: Properties of Device Objects
-MS-HAID:
-- 'DevObjts\_66a0ec49-9806-46c7-8601-64d5777e1983.xml'
-- 'kernel.properties\_of\_device\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6cd31263-e725-4a62-bec9-f40feb0b66cc
 keywords: ["device objects WDK kernel , properties", "properties WDK device objects"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Properties of Device Objects

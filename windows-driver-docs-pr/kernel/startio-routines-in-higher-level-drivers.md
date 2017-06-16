@@ -2,14 +2,13 @@
 title: StartIo Routines in Higher-Level Drivers
 author: windows-driver-content
 description: StartIo Routines in Higher-Level Drivers
-MS-HAID:
-- 'IRPs\_9d507e46-e086-4c80-a9c8-1c8dc84d9eff.xml'
-- 'kernel.startio\_routines\_in\_higher\_level\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8b0e3bef-4a73-4cf8-b71a-6aedf451d648
 keywords: ["StartIo routines, higher-level drivers"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # StartIo Routines in Higher-Level Drivers

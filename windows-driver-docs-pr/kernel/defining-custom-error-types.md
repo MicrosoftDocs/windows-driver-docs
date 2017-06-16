@@ -2,14 +2,13 @@
 title: Defining Custom Error Types
 author: windows-driver-content
 description: Defining Custom Error Types
-MS-HAID:
-- 'Other\_8ed6cd03-d078-4b83-85de-daa681e4130e.xml'
-- 'kernel.defining\_custom\_error\_types'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1106b520-8737-421b-bee5-841220862b78
 keywords: ["custom error messages WDK kernel", "custom error types WDK kernel", "IO_ERR_XXX values", "templates WDK errors", "headers WDK errors", "files WDK error logs", "text files WDK error logs", "compiling error message files", "LanguageNames directive", "SeverityNames directive", "FacilityNames directive"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Defining Custom Error Types

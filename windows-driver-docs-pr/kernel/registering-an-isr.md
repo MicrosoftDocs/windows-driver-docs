@@ -2,14 +2,13 @@
 title: Registering an ISR
 author: windows-driver-content
 description: Registering an ISR
-MS-HAID:
-- 'Intrupts\_5f899ace-18ea-45a5-8c90-4ed3f8c534cd.xml'
-- 'kernel.registering\_an\_isr'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 903e5664-2193-4456-b133-bb979d700bdf
 keywords: ["interrupt service routines WDK kernel , registering ISRs", "interrupt objects WDK kernel , registering ISRs", "ISRs WDK kernel , registering ISRs", "registering ISRs WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering an ISR

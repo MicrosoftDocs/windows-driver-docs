@@ -2,14 +2,13 @@
 title: Rules for Implementing DispatchCreate, DispatchClose, and DispatchCreateClose Routines
 author: windows-driver-content
 description: Rules for Implementing DispatchCreate, DispatchClose, and DispatchCreateClose Routines
-MS-HAID:
-- 'DrvComps\_622fe6b3-863e-4bac-ac51-b2e18fd1632d.xml'
-- 'kernel.rules\_for\_implementing\_dispatchcreate\_\_dispatchclose\_\_and\_dispatchcrea'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4ce37675-92a6-41c2-b386-6570c989e56c
 keywords: ["dispatch routines WDK kernel , DispatchCreate routine", "dispatch routines WDK kernel , DispatchClose routine", "dispatch routines WDK kernel , DispatchCreateClose routine", "DispatchCreateClose routine", "DispatchClose routine", "DispatchCreate routine", "IRP_MJ_CREATE I/O function code", "IRP_MJ_CLOSE I/O function code", "create dispatch routines WDK kernel", "close dispatch routines WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Rules for Implementing DispatchCreate, DispatchClose, and DispatchCreateClose Routines

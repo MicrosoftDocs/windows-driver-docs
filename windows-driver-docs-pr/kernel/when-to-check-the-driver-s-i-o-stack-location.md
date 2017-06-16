@@ -2,14 +2,13 @@
 title: When to Check the Driver's I/O Stack Location
 author: windows-driver-content
 description: When to Check the Driver's I/O Stack Location
-MS-HAID:
-- 'DrvComps\_bb762bc4-5d2c-4d77-90ce-63522960eea9.xml'
-- 'kernel.when\_to\_check\_the\_driver\_s\_i\_o\_stack\_location'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ca084221-7b07-4db0-a987-9dd8a66d169c
 keywords: ["dispatch routines WDK kernel , I/O stack locations", "I/O stack locations WDK dispatch routines", "driver I/O stack locations WDK dispatch routines"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # When to Check the Driver's I/O Stack Location

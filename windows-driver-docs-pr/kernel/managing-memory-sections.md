@@ -2,14 +2,13 @@
 title: Managing Memory Sections
 author: windows-driver-content
 description: Managing Memory Sections
-MS-HAID:
-- 'MemMgmt\_80dc22f4-ce30-42b4-9c82-1f0e4b2bf180.xml'
-- 'kernel.managing\_memory\_sections'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 620ba31d-596f-493a-b97f-65a27d50cc9a
 keywords: ["memory sections WDK kernel", "section objects WDK kernel", "views WDK memory section", "mapping section views"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing Memory Sections

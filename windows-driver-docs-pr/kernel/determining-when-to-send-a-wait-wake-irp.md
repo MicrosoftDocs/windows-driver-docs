@@ -2,14 +2,13 @@
 title: Determining When to Send a Wait/Wake IRP
 author: windows-driver-content
 description: Determining When to Send a Wait/Wake IRP
-MS-HAID:
-- 'PwrMgmt\_bf27211d-db62-4164-a893-e711d7661c0e.xml'
-- 'kernel.determining\_when\_to\_send\_a\_wait\_wake\_irp'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a56cfccc-b44b-4ec5-836b-3a9711ef5f1f
 keywords: ["timing wait/wake IRPs WDK power management", "sending wait/wake IRPs", "wait/wake IRPs WDK power management , sending"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Determining When to Send a Wait/Wake IRP

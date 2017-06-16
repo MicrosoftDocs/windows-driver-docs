@@ -2,14 +2,13 @@
 title: Releasing Device and Controller Objects
 author: windows-driver-content
 description: Releasing Device and Controller Objects
-MS-HAID:
-- 'DrvComps\_8ef8a657-da64-4b24-b49c-cc8e4f5bb97a.xml'
-- 'kernel.releasing\_device\_and\_controller\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 35404401-d3a8-4257-b1a3-b16ebe42b181
 keywords: ["Unload routines WDK kernel , non-PnP drivers", "non-PnP Unload routine WDK kernel", "releasing devices", "releasing controller objects", "device releases WDK kernel", "controller objects WDK kernel , releasing"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Releasing Device and Controller Objects

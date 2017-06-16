@@ -2,14 +2,13 @@
 title: Enabling Message-Signaled Interrupts in the Registry
 author: windows-driver-content
 description: Enabling Message-Signaled Interrupts in the Registry
-MS-HAID:
-- 'Intrupts\_15d6e742-1b2e-4ea0-9e74-3dffaf96ab6d.xml'
-- 'kernel.enabling\_message\_signaled\_interrupts\_in\_the\_registry'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 802ad994-51e7-4aef-a0f0-865dfaf4e6ce
 keywords: ["message-signaled interrupts WDK kernel , enabling", "enabling message-signaled interrupts WDK kernel", "MSIs WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling Message-Signaled Interrupts in the Registry

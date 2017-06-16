@@ -2,14 +2,13 @@
 title: Introduction to Device Objects
 author: windows-driver-content
 description: Introduction to Device Objects
-MS-HAID:
-- 'DevObjts\_fad1bfcd-9aa1-4391-8bca-d4d363caa37e.xml'
-- 'kernel.introduction\_to\_device\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 310a2344-f3bc-4a7a-8e1e-63232ecd4cbe
 keywords: ["device objects WDK kernel , about device objects", "multiple device objects WDK kernel", "device stacks WDK kernel , about device stacks", "device extensions WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Device Objects

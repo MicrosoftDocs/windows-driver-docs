@@ -2,14 +2,13 @@
 title: Implementing an IoCompletion Routine
 author: windows-driver-content
 description: Implementing an IoCompletion Routine
-MS-HAID:
-- 'IRPs\_896c0d82-1ae6-4904-a8b1-8c3cd4701625.xml'
-- 'kernel.implementing\_an\_iocompletion\_routine'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 669860b1-5e85-4b28-a9b1-1ccf8c689b7a
 keywords: ["IoCompletion routines", "IoCompleteRequest routine", "priority boosts WDK IRPs"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing an IoCompletion Routine

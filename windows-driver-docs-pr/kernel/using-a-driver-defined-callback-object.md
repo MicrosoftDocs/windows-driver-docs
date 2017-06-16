@@ -2,14 +2,13 @@
 title: Using a Driver-Defined Callback Object
 author: windows-driver-content
 description: Using a Driver-Defined Callback Object
-MS-HAID:
-- 'Synchro\_39d2b3b2-fea9-432f-af91-9a885242e38d.xml'
-- 'kernel.using\_a\_driver\_defined\_callback\_object'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b3b32534-0641-4818-9384-65fd45f689e8
 keywords: ["callback objects WDK kernel", "driver-defined callback objects WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using a Driver-Defined Callback Object

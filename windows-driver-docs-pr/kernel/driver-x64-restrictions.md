@@ -2,12 +2,6 @@
 title: Driver x64 Restrictions
 author: windows-driver-content
 description: Driver x64 Restrictions
-MS-HAID:
-- '64bitAMD\_f8d0fea8-e14a-457b-a30c-b10f167e8d51.xml'
-- 'kernel.driver\_x64\_restrictions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 717ca559-93aa-48d6-8347-bfdf223f1aa4
 ---
 

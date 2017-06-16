@@ -2,14 +2,13 @@
 title: Creating a Superior Transaction Manager
 author: windows-driver-content
 description: Creating a Superior Transaction Manager
-MS-HAID:
-- 'ktm\_dg\_f862958e-bbef-4210-bce8-505a861d7a75.xml'
-- 'kernel.creating\_a\_superior\_transaction\_manager'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6f6bf61a-fe53-47b5-9559-f76334969af8
 keywords: ["transaction managers WDK KTM", "superior transaction managers WDK KTM", "enlistments WDK KTM , superior enlistments", "superior enlistments WDK KTM", "enlistments WDK KTM , subordinate enlistments", "subordinate enlistments WDK KTM"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Superior Transaction Manager

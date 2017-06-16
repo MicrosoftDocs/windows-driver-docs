@@ -2,14 +2,13 @@
 title: Hot Replace of Partition Units
 author: windows-driver-content
 description: Hot Replace of Partition Units
-MS-HAID:
-- 'dhp\_88d6303e-53e9-4b96-bbcc-58b47d018bf4.xml'
-- 'kernel.hot\_replace\_of\_partition\_units'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6d50dc7d-6c3b-41e5-b6eb-aead9833dd1e
 keywords: ["dynamic hardware partitioning WDK , hot replace", "hardware partitioning WDK dynamic , hot replace", "partitioning WDK dynamic hardware , hot replace", "hot replace WDK dynamic hardware partitioning"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hot Replace of Partition Units

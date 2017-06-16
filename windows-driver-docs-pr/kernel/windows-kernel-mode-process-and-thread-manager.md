@@ -2,12 +2,6 @@
 title: Windows Kernel-Mode Process and Thread Manager
 author: windows-driver-content
 description: Windows Kernel-Mode Process and Thread Manager
-MS-HAID:
-- 'ptmanager\_97c3cf3c-d277-4911-a9b9-732101c93a37.xml'
-- 'kernel.windows\_kernel\_mode\_process\_and\_thread\_manager'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4053c73e-190d-4ffe-8db2-f531d120ba81
 ---
 

@@ -2,14 +2,13 @@
 title: DispatchReadWrite Using Direct I/O
 author: windows-driver-content
 description: DispatchReadWrite Using Direct I/O
-MS-HAID:
-- 'DrvComps\_89d4a838-6bce-4679-a1d2-797ae9d98d4c.xml'
-- 'kernel.dispatchreadwrite\_using\_direct\_i\_o'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5174fe1f-aee5-4c8a-87a1-7f185ed4e242
 keywords: ["DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchReadWrite routine", "read/write dispatch routines WDK kernel", "IRP_MJ_WRITE I/O function codes", "IRP_MJ_READ I/O function codes", "data transfers WDK kernel , read/write dispatch routines", "transferring data WDK kernel , read/write dispatch routines", "direct I/O WDK kernel", "I/O WDK kernel , direct I/O"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DispatchReadWrite Using Direct I/O

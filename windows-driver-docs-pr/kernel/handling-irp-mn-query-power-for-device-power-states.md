@@ -2,14 +2,13 @@
 title: Handling IRP\_MN\_QUERY\_POWER for Device Power States
 author: windows-driver-content
 description: Handling IRP\_MN\_QUERY\_POWER for Device Power States
-MS-HAID:
-- 'PwrMgmt\_5981f51c-62a2-4f62-beb1-03c86db1b50d.xml'
-- 'kernel.handling\_irp\_mn\_query\_power\_for\_device\_power\_states'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 902619bc-068a-4613-b99d-78a243f7fee6
 keywords: ["IRP_MN_QUERY_POWER", "device power states WDK kernel", "query-power IRPs WDK power management", "power IRPs WDK kernel , device queries", "querying power state", "queuing IRPs", "device query power IRPs WDK kernel", "dispatch routines WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling IRP\_MN\_QUERY\_POWER for Device Power States

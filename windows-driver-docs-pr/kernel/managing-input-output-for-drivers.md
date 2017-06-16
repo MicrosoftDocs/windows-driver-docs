@@ -2,12 +2,6 @@
 title: Managing Input/Output for Drivers
 author: windows-driver-content
 description: Managing Input/Output for Drivers
-MS-HAID:
-- 'managingio\_4878d576-3063-4a9f-8404-04dc083b96a5.xml'
-- 'kernel.managing\_input\_output\_for\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 09f23775-8c98-4344-9f68-43297ef50849
 ---
 

@@ -2,14 +2,13 @@
 title: Setting Device Object Registry Properties During Installation
 author: windows-driver-content
 description: Setting Device Object Registry Properties During Installation
-MS-HAID:
-- 'DevObjts\_1709912f-b4e9-49e7-a140-d3034a345329.xml'
-- 'kernel.setting\_device\_object\_registry\_properties\_during\_installation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 29d40398-09b9-4e64-aa47-da229066bffd
 keywords: ["device objects WDK kernel , registry", "registry WDK device objects"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Device Object Registry Properties During Installation

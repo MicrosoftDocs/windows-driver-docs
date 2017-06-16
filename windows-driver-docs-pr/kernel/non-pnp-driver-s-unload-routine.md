@@ -2,14 +2,13 @@
 title: Non-PnP Driver's Unload Routine
 author: windows-driver-content
 description: Non-PnP Driver's Unload Routine
-MS-HAID:
-- 'DrvComps\_1336eec0-f8ad-43a9-b1f4-e0c0e7721b97.xml'
-- 'kernel.non\_pnp\_driver\_s\_unload\_routine'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5917648f-1e7e-4b39-9aa6-d6cdaac7a2cd
 keywords: ["Unload routines WDK kernel , non-PnP drivers", "non-PnP Unload routine WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Non-PnP Driver's Unload Routine

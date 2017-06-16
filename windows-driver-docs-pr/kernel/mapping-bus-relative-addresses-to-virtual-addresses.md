@@ -2,14 +2,13 @@
 title: Mapping Bus-Relative Addresses to Virtual Addresses
 author: windows-driver-content
 description: Mapping Bus-Relative Addresses to Virtual Addresses
-MS-HAID:
-- 'MemMgmt\_f64d3683-8643-4b0a-bf13-577a47532a13.xml'
-- 'kernel.mapping\_bus\_relative\_addresses\_to\_virtual\_addresses'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 16496465-8a30-4250-9d64-afd36a788ae2
 keywords: ["virtual address space mappings WDK kernel", "physical address space mappings WDK kernel", "mapping memory", "address space mappings WDK kernel", "translating address space WDK kernel", "memory management WDK kernel , mapping addresses", "bus-relative memory space WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mapping Bus-Relative Addresses to Virtual Addresses

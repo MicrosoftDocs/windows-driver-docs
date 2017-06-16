@@ -2,14 +2,13 @@
 title: Removing a Device in a Filter Driver
 author: windows-driver-content
 description: Removing a Device in a Filter Driver
-MS-HAID:
-- 'PlugPlay\_3934bef3-faad-420c-a692-c9f4295a6fda.xml'
-- 'kernel.removing\_a\_device\_in\_a\_filter\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f1166240-446d-4f37-871b-baf687e25735
 keywords: ["filter drivers WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Removing a Device in a Filter Driver

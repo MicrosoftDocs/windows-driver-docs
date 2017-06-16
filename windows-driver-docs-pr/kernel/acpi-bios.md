@@ -2,14 +2,13 @@
 title: ACPI BIOS
 author: windows-driver-content
 description: ACPI BIOS
-MS-HAID:
-- 'PwrMgmt\_20600f35-fd9e-49a5-a1cf-cbb464ea645b.xml'
-- 'kernel.acpi\_bios'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 787e82ed-e58c-461f-abb6-71ed6cba411c
 keywords: ["ACPI BIOS WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ACPI BIOS

@@ -2,14 +2,13 @@
 title: Accessing User-Space Memory
 author: windows-driver-content
 description: Accessing User-Space Memory
-MS-HAID:
-- 'MemMgmt\_c7c72969-9bb4-40ed-931e-53916cce15b3.xml'
-- 'kernel.accessing\_user\_space\_memory'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: db0b6ba2-4cec-46c1-b13f-aba4c10a2d8c
 keywords: ["memory management WDK kernel , user-space memory", "user-space memory WDK kernel", "virtual user-space memory WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing User-Space Memory

@@ -2,14 +2,13 @@
 title: SystemWake
 author: windows-driver-content
 description: SystemWake
-MS-HAID:
-- 'PwrMgmt\_ffb2cc5a-3e30-4355-a2a1-a531525edcc5.xml'
-- 'kernel.systemwake'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 77390637-bb92-4634-a407-9a409a8a8acd
 keywords: ["SystemWake"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SystemWake

@@ -2,14 +2,13 @@
 title: Releasing Driver-Allocated Resources
 author: windows-driver-content
 description: Releasing Driver-Allocated Resources
-MS-HAID:
-- 'DrvComps\_09d55cac-8c73-403c-adfe-e20a8a4db714.xml'
-- 'kernel.releasing\_driver\_allocated\_resources'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b286b4b0-54f2-4798-a77b-c08743502552
 keywords: ["Unload routines WDK kernel , non-PnP drivers", "non-PnP Unload routine WDK kernel", "releasing driver-allocated resources", "driver-allocated resource releases WDK kernel", "resource releasing WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Releasing Driver-Allocated Resources

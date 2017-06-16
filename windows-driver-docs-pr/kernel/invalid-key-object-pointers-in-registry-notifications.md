@@ -2,12 +2,6 @@
 title: Invalid Key Object Pointers in Registry Notifications
 author: windows-driver-content
 description: Invalid Key Object Pointers in Registry Notifications
-MS-HAID:
-- 'Other\_278f258c-7af1-43a3-a2ce-4b365a18eef1.xml'
-- 'kernel.invalid\_key\_object\_pointers\_in\_registry\_notifications'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 96709c34-63a7-4b4e-8588-c7e8b41b5dea
 ---
 

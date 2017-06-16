@@ -2,14 +2,13 @@
 title: Converting an Ordinary DPC to a Threaded DPC
 author: windows-driver-content
 description: Converting an Ordinary DPC to a Threaded DPC
-MS-HAID:
-- 'Intrupts\_46578055-a4e0-4c22-9bc5-419d4a6b9e7c.xml'
-- 'kernel.converting\_an\_ordinary\_dpc\_to\_a\_threaded\_dpc'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 89a7a408-e01b-4543-9775-5ef542d05b75
 keywords: ["threaded DPCs WDK kernel", "converting DPCs"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Converting an Ordinary DPC to a Threaded DPC

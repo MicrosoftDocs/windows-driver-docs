@@ -2,12 +2,6 @@
 title: Kernel-Mode Managers and Libraries
 author: windows-driver-content
 description: Kernel-Mode Managers and Libraries
-MS-HAID:
-- 'kernarch\_062ed110-cab1-41a7-a4b6-80782ce30566.xml'
-- 'kernel.kernel\_mode\_managers\_and\_libraries'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6361224b-ab7c-411f-91b5-48bf51ee634d
 ---
 

@@ -2,14 +2,13 @@
 title: Using a Handle to a Registry-Key Object
 author: windows-driver-content
 description: Using a Handle to a Registry-Key Object
-MS-HAID:
-- 'Other\_f520f796-2800-411f-93a0-9838e8424209.xml'
-- 'kernel.using\_a\_handle\_to\_a\_registry\_key\_object'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 25982249-31dc-4542-9ebb-139991619b40
 keywords: ["handle to registry-key object WDK kernel", "registry WDK kernel , object routines", "driver registry information WDK kernel , object routines", "object routines WDK kernel", "registry-key objects WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using a Handle to a Registry-Key Object

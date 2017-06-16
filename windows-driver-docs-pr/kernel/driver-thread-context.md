@@ -2,14 +2,13 @@
 title: Driver Thread Context
 author: windows-driver-content
 description: Driver Thread Context
-MS-HAID:
-- 'IRPs\_482e728f-e5e9-4717-be14-427a70c02142.xml'
-- 'kernel.driver\_thread\_context'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8795811d-a5f6-4f90-9fa0-edd4b37fd269
 keywords: ["driver thread context WDK kernel", "thread context WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Thread Context

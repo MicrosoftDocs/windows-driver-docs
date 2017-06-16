@@ -2,14 +2,13 @@
 title: Publishing a WMI Schema
 author: windows-driver-content
 description: Publishing a WMI Schema
-MS-HAID:
-- 'WMI\_b4327b55-04ff-4f3c-bdc9-c7cd0078c554.xml'
-- 'kernel.publishing\_a\_wmi\_schema'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: db2b8086-71e4-4532-a0ae-75983691a5a6
 keywords: ["WMI WDK kernel , publishing schema", "publishing WMI schema WDK", "schema publishing WDK WMI", "MOF files WDK WMI", "binary MOF WDK WMI"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Publishing a WMI Schema

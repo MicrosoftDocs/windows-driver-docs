@@ -2,14 +2,13 @@
 title: Paging an Entire Driver
 author: windows-driver-content
 description: Paging an Entire Driver
-MS-HAID:
-- 'MemMgmt\_be88433f-935c-4584-a029-71f8ecfc5d1b.xml'
-- 'kernel.paging\_an\_entire\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d861160f-e429-4ff3-9ca6-4fce4d5d6c1b
 keywords: ["pageable drivers WDK kernel , paging entire drivers", "paging entire drivers WDK", "reference counts WDK pageable drivers", "overriding pageable or nonpageable attributes WDK"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Paging an Entire Driver

@@ -2,14 +2,13 @@
 title: Driver-Defined WMI Data Items
 author: windows-driver-content
 description: Driver-Defined WMI Data Items
-MS-HAID:
-- 'WMI\_491dfc51-427e-430d-ac7e-782143aaafe3.xml'
-- 'kernel.driver\_defined\_wmi\_data\_items'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 97b64571-95ff-4d61-9fa0-5690e9f29345
 keywords: ["data types WDK WMI", "embedded classes WDK WMI", "data items WDK WMI", "WMI WDK kernel , driver-defined data items", "driver-defined data items WDK WMI", "classes WDK WMI", "WMI WDK kernel , classes"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver-Defined WMI Data Items

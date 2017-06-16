@@ -2,14 +2,13 @@
 title: Checking Flags in the Device Object
 author: windows-driver-content
 description: Checking Flags in the Device Object
-MS-HAID:
-- 'Other\_d865abba-7708-4f15-9204-d4b4eea4f9c4.xml'
-- 'kernel.checking\_flags\_in\_the\_device\_object'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f7bff7b8-bd30-4489-ab3f-ca5ad4d5c1ba
 keywords: ["removable media WDK kernel , flag checking", "flags WDK removable media", "checking device object flags", "verifying device object flags"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Checking Flags in the Device Object

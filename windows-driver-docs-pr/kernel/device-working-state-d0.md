@@ -2,14 +2,13 @@
 title: Device Working State D0
 author: windows-driver-content
 description: Device Working State D0
-MS-HAID:
-- 'PwrMgmt\_d8e8114c-5805-4518-9987-017b62089f10.xml'
-- 'kernel.device\_working\_state\_d0'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6b0ec03a-eaf1-4c96-aaae-dfe821583787
 keywords: ["device power states WDK kernel", "Dx names WDK power management", "device working state WDK power management", "continuous power WDK kernel", "delays WDK power management", "working states WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Working State D0

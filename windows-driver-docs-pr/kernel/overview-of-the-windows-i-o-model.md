@@ -2,14 +2,13 @@
 title: Overview of the Windows I/O Model
 author: windows-driver-content
 description: Overview of the Windows I/O Model
-MS-HAID:
-- 'IRPs\_d3abed72-8281-423b-9450-de46a37978c9.xml'
-- 'kernel.overview\_of\_the\_windows\_i\_o\_model'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 17a012b7-946e-4f42-8d80-e270bc26de06
 keywords: ["IRPs WDK kernel , about Windows I/O model", "Windows I/O model WDK", "I/O WDK kernel , model"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of the Windows I/O Model

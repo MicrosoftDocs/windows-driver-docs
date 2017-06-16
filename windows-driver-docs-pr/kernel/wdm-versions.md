@@ -2,14 +2,13 @@
 title: WDM Versions
 author: windows-driver-content
 description: Later versions of WDM generally support all the features available in earlier versions of WDM; that is, each new version of WDM is a superset of the previous WDM version.
-MS-HAID:
-- 'WDMIntro\_fd5f9ef9-9923-4ad1-b368-a0bd27728427.xml'
-- 'kernel.wdm\_versions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 89b24218-98d7-43da-9411-30b429f783df
 keywords: ["WDM drivers WDK kernel , versions", "versions WDK WDM", "compatibility WDK WDM", "cross-system compatibility WDK WDM"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDM Versions

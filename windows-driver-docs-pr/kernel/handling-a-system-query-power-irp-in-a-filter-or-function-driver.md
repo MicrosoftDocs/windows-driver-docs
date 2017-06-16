@@ -2,14 +2,13 @@
 title: Handling a System Query-Power IRP in a Filter or Function Driver
 author: windows-driver-content
 description: Handling a System Query-Power IRP in a Filter or Function Driver
-MS-HAID:
-- 'PwrMgmt\_64abc0ab-e4cc-43bc-9141-4162b33c3e20.xml'
-- 'kernel.handling\_a\_system\_query\_power\_irp\_in\_a\_filter\_or\_function\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 81d921d5-6db8-4858-b86e-1484781faba5
 keywords: ["query-power IRPs WDK power management", "filter drivers WDK power management", "function drivers WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling a System Query-Power IRP in a Filter or Function Driver

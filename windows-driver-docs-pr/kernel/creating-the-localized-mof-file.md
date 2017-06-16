@@ -2,14 +2,13 @@
 title: Creating the Localized MOF File
 author: windows-driver-content
 description: Creating the Localized MOF File
-MS-HAID:
-- 'WMI\_eb53b6fc-39df-4501-9d59-f206381d12af.xml'
-- 'kernel.creating\_the\_localized\_mof\_file'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1cc99e43-b09a-445d-abb6-4a3d73b6d7ed
 keywords: ["MOF files WDK WMI", "localizing MOF files", "property qualifiers WDK WMI", "amended classes WDK WMI", "multiple MOF files WDK WMI", "languages WDK WMI"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating the Localized MOF File

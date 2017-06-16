@@ -2,14 +2,13 @@
 title: Enabling Device Wake-Up
 author: windows-driver-content
 description: Enabling Device Wake-Up
-MS-HAID:
-- 'PwrMgmt\_0928caa3-0f4e-4430-abe1-6378bd0ca769.xml'
-- 'kernel.enabling\_device\_wake\_up'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1c3b9ebc-cc77-4562-9c57-56f2c9a69772
 keywords: ["IRPs WDK power management", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management", "IRP_MN_WAIT_WAKE", "IRP_MJ_POWER", "DEVICE_CAPABILITIES structure", "restoring power WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling Device Wake-Up

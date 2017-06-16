@@ -2,14 +2,13 @@
 title: Setting Up the System DMA Controller for Common-Buffer DMA
 author: windows-driver-content
 description: Setting Up the System DMA Controller for Common-Buffer DMA
-MS-HAID:
-- 'ioprogdma\_e9bfc3a8-a644-40bb-b017-d482fc7064b9.xml'
-- 'kernel.setting\_up\_the\_system\_dma\_controller\_for\_common\_buffer\_dma'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 279776e0-dead-4763-9aae-33950837c27c
 keywords: ["system DMA WDK kernel , common buffer", "common buffer DMA WDK kernel", "DMA transfers WDK kernel , common buffer", "AllocateAdapterChannel", "MapTransfer"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Up the System DMA Controller for Common-Buffer DMA

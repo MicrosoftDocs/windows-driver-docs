@@ -2,14 +2,13 @@
 title: D1Latency, D2Latency, and D3Latency
 author: windows-driver-content
 description: D1Latency, D2Latency, and D3Latency
-MS-HAID:
-- 'PwrMgmt\_e6d7f7d3-ec7d-4027-8032-e2b8ebddfbce.xml'
-- 'kernel.d1latency\_\_d2latency\_\_and\_d3latency'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6ad72b77-ec36-461c-8f4f-030d67e5a135
 keywords: ["D1Latency", "D2Latency", "D3Latency"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # D1Latency, D2Latency, and D3Latency

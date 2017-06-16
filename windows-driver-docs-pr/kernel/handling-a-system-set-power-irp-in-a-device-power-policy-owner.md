@@ -2,14 +2,13 @@
 title: Handling a System Set-Power IRP in a Device Power Policy Owner
 author: windows-driver-content
 description: Handling a System Set-Power IRP in a Device Power Policy Owner
-MS-HAID:
-- 'PwrMgmt\_5a972120-76db-4e66-95db-52446e1835d5.xml'
-- 'kernel.handling\_a\_system\_set\_power\_irp\_in\_a\_device\_power\_policy\_owner'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f6206455-142b-4f3f-ae5a-d8e79386bce3
 keywords: ["set-power IRPs WDK power management", "device power policy owners WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling a System Set-Power IRP in a Device Power Policy Owner

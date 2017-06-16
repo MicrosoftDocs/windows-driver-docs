@@ -2,14 +2,13 @@
 title: Additional Errors in Handling IRPs
 author: windows-driver-content
 description: Additional Errors in Handling IRPs
-MS-HAID:
-- 'Other\_58022006-b18a-48cc-8548-3e6c7bfcbb83.xml'
-- 'kernel.additional\_errors\_in\_handling\_irps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fb46e7a8-8181-46d3-a929-cec01fd71f20
 keywords: ["reliability WDK kernel , double-completed IRPs", "double-completed IRPs WDK kernel", "lost IRPs WDK kernel", "reliability WDK kernel , lost IRPs", "converging public IOCTL and private IOCTL paths", "reliability WDK kernel , converge public and private IOCTL paths"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Additional Errors in Handling IRPs

@@ -2,14 +2,13 @@
 title: Managing Kernel Objects
 author: windows-driver-content
 description: Managing Kernel Objects
-MS-HAID:
-- 'Objects\_f439d086-d1a8-4a76-8dba-ebcf269d4960.xml'
-- 'kernel.managing\_kernel\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d45aca94-67b7-444d-8585-713ec982e3bc
 keywords: ["kernel-mode drivers WDK , object management", "object manager WDK kernel", "object management WDK kernel", "referencing objects", "object names WDK user-mode", "object management WDK user-mode", "kernel-mode objects WDK"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing Kernel Objects

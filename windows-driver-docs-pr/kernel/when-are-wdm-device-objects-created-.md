@@ -2,14 +2,13 @@
 title: When Are WDM Device Objects Created
 author: windows-driver-content
 description: When Are WDM Device Objects Created
-MS-HAID:
-- 'DevObjts\_bfe09639-8f82-4a85-ad06-7f327ec1d4b8.xml'
-- 'kernel.when\_are\_wdm\_device\_objects\_created\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: aeb8039d-2e5d-4700-a9e5-e5ee97c6b0b1
 keywords: ["device objects WDK kernel , when created", "layered device objects WDK kernel", "functional device objects WDK kernel", "FDO WDK kernel", "physical device objects WDK kernel", "PDOs WDK kernel", "filter DOs WDK kernel", "device stacks WDK kernel , device object layers possible", "attaching device objects"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # When Are WDM Device Objects Created?

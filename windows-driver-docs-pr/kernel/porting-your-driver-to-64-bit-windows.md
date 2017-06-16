@@ -2,14 +2,13 @@
 title: Porting Your Driver to 64-Bit Windows
 author: windows-driver-content
 description: Porting Your Driver to 64-Bit Windows
-MS-HAID:
-- 'Other\_394c38ae-a3e6-45fb-87f2-c3e227cb6b7c.xml'
-- 'kernel.porting\_your\_driver\_to\_64\_bit\_windows'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f06e6aae-fc44-481c-a277-1c266d6e6d7b
 keywords: ["64-bit WDK kernel , porting drivers to", "porting drivers to 64-bit Windows", "thunking WDK", "WOW64 thunking layer WDK", "converting parameters to fixed-precision types"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Your Driver to 64-Bit Windows

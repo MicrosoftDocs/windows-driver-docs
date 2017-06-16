@@ -2,14 +2,13 @@
 title: Writing AdapterControl Routines
 author: windows-driver-content
 description: Writing AdapterControl Routines
-MS-HAID:
-- 'ioprogdma\_415b03f7-531c-4e2a-ab3e-a7b8471137d0.xml'
-- 'kernel.writing\_adaptercontrol\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a5a7501f-ba4f-441e-be07-6a1b7fac9938
 keywords: ["AdapterControl routines, writing", "adapter objects WDK kernel , writing AdapterControl routines", "DMA transfers WDK kernel , writing AdapterControl routines"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing AdapterControl Routines

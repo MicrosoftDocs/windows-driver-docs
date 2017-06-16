@@ -2,14 +2,13 @@
 title: Writing an AddDevice Routine
 author: windows-driver-content
 description: Writing an AddDevice Routine
-MS-HAID:
-- 'DrvComps\_40f27e9d-2a0a-4de0-b7a4-cdd9679815e6.xml'
-- 'kernel.writing\_an\_adddevice\_routine'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 93a272f4-888c-4cc8-b013-c6313c10a8d8
 keywords: ["standard driver routines WDK kernel , AddDevice routines", "driver routines WDK kernel , AddDevice routines", "routines WDK kernel , AddDevice routines", "AddDevice routines WDK kernel", "system-space memory allocations WDK kernel", "system resource storage WDK kernel", "storing system resources", "device objects WDK kernel , creating", "device initialization WDK kernel", "initializing devices", "AddDevice routines WDK kernel , about AddDevice routines"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing an AddDevice Routine

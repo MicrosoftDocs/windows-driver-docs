@@ -2,14 +2,13 @@
 title: Holding Incoming IRPs When A Device Is Paused
 author: windows-driver-content
 description: Holding Incoming IRPs When A Device Is Paused
-MS-HAID:
-- 'PlugPlay\_7958c76c-680d-42f3-b995-9d4444e0df8b.xml'
-- 'kernel.holding\_incoming\_irps\_when\_a\_device\_is\_paused'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4964e06b-f1b9-4421-89d1-ad79ce7d7307
 keywords: ["holding IRPs", "IRPs WDK PnP", "I/O request packets WDK PnP", "pausing PnP devices"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Holding Incoming IRPs When A Device Is Paused

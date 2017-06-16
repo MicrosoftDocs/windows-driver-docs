@@ -2,12 +2,6 @@
 title: Windows Kernel-Mode Configuration Manager
 author: windows-driver-content
 description: Windows Kernel-Mode Configuration Manager
-MS-HAID:
-- 'figmanager\_4b36a849-e9ba-4964-8024-f4f1e132f669.xml'
-- 'kernel.windows\_kernel\_mode\_configuration\_manager'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0499121b-6f0b-464f-b422-610122fb7d3b
 ---
 

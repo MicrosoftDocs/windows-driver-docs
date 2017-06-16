@@ -2,14 +2,13 @@
 title: Windows Driver Model (WDM)
 author: windows-driver-content
 description: This section describes the Windows Driver Model (WDM), and discusses types of WDM drivers, device configuration, driver layering, and WDM versioning.
-MS-HAID:
-- 'WDMIntro\_ef015643-817a-486f-8416-1c805c680c6a.xml'
-- 'kernel.windows\_driver\_model'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9e76c5a8-a19a-44cf-867a-b2246ea8eaf1
 keywords: ["kernel-mode drivers WDK , WDM drivers"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Driver Model (WDM)

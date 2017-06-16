@@ -2,14 +2,13 @@
 title: Using Scatter/Gather DMA
 author: windows-driver-content
 description: Using Scatter/Gather DMA
-MS-HAID:
-- 'ioprogdma\_3c5d54de-8c08-4f47-9a41-5da23f4444f6.xml'
-- 'kernel.using\_scatter\_gather\_dma'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dacc618f-d4d4-4c3c-a18c-baeef779e931
 keywords: ["AdapterListControl routine", "scatter/gather DMA WDK I/O", "PutScatterGatherList", "GetScatterGatherList", "DMA transfers WDK kernel , scatter/gather DMA"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Scatter/Gather DMA

@@ -2,14 +2,13 @@
 title: Introduction to Windows Drivers
 author: windows-driver-content
 description: Introduction to Windows Drivers
-MS-HAID:
-- 'Intro\_2e648864-5b29-4bff-af6e-04f3abdfdb85.xml'
-- 'kernel.introduction\_to\_windows\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 01a4b74d-df09-4cf3-ae4b-a86c62ba1763
 keywords: ["kernel-mode drivers WDK , about Windows drivers", "Windows drivers WDK", "drivers WDK , about Windows drivers", "drivers WDK"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Windows Drivers

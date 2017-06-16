@@ -2,14 +2,13 @@
 title: Handling Unsupported or Unrecognized Power IRPs
 author: windows-driver-content
 description: Handling Unsupported or Unrecognized Power IRPs
-MS-HAID:
-- 'PwrMgmt\_5ae29fd9-69ba-4d5f-87c7-d1a6730b129d.xml'
-- 'kernel.handling\_unsupported\_or\_unrecognized\_power\_irps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0664389c-f746-4025-969f-8c3b07139026
 keywords: ["power IRPs WDK kernel , unsupported", "unsupported power IRPs WDK kernel", "unrecognized power IRPs WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Unsupported or Unrecognized Power IRPs

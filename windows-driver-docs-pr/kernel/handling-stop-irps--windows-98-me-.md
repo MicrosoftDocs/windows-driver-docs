@@ -2,14 +2,13 @@
 title: Handling Stop IRPs (Windows 98/Me)
 author: windows-driver-content
 description: Handling Stop IRPs (Windows 98/Me)
-MS-HAID:
-- 'PlugPlay\_ca9f7e0a-ee44-4368-85bc-105c990eb697.xml'
-- 'kernel.handling\_stop\_irps\_\_windows\_98\_me\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 98eefb69-e321-4cc5-8b4d-79335cd8b06e
 keywords: ["stop IRPs WDK PnP", "IRPs WDK PnP", "I/O request packets WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Stop IRPs (Windows 98/Me)

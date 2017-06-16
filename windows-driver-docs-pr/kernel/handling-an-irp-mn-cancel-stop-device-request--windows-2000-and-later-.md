@@ -2,14 +2,13 @@
 title: Handling an IRP\_MN\_CANCEL\_STOP\_DEVICE Request (Windows 2000 and later)
 author: windows-driver-content
 description: Handling an IRP\_MN\_CANCEL\_STOP\_DEVICE Request (Windows 2000 and later)
-MS-HAID:
-- 'PlugPlay\_d3f26783-117a-4535-a587-998dd5cf6892.xml'
-- 'kernel.handling\_an\_irp\_mn\_cancel\_stop\_device\_request\_\_windows\_2000\_and\_later\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2e5e835f-d327-4bde-bdfd-8a71a47b0ac0
 keywords: ["IRP_MN_CANCEL_STOP_DEVICE"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling an IRP\_MN\_CANCEL\_STOP\_DEVICE Request (Windows 2000 and later)

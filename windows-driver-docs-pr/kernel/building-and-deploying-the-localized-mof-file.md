@@ -2,14 +2,13 @@
 title: Building and Deploying the Localized MOF File
 author: windows-driver-content
 description: Building and Deploying the Localized MOF File
-MS-HAID:
-- 'WMI\_567a20fc-15d1-45f2-9b39-a8144355e691.xml'
-- 'kernel.building\_and\_deploying\_the\_localized\_mof\_file'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3a741dc6-a789-44e1-9d68-cdb41b7161ed
 keywords: ["MOF files WDK WMI", "localizing MOF files", "MUI versions WDK WMI", "master MOF files WDK WMI", "languages WDK WMI"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Building and Deploying the Localized MOF File

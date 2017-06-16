@@ -2,14 +2,13 @@
 title: Stopping a Device
 author: windows-driver-content
 description: Stopping a Device
-MS-HAID:
-- 'PlugPlay\_40bd56e0-4c47-4719-ae52-657a8d0cddb7.xml'
-- 'kernel.stopping\_a\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 65a47e7b-aabd-4b55-8fa6-c3482da1cc84
 keywords: ["PnP WDK kernel , stopping devices", "Plug and Play WDK kernel , stopping devices", "stopping PnP devices", "stop IRPs WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stopping a Device

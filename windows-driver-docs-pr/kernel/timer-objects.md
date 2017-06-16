@@ -2,9 +2,6 @@
 title: Timer Objects
 author: windows-driver-content
 description: Any driver can use a timer object within a nonarbitrary thread context to time-out operations in the driver's other routines, or to schedule operations to be performed periodically.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: A4844F19-3BEC-48C0-A5BF-E17CCEEC1601
 ---
 

@@ -2,14 +2,13 @@
 title: Registering an IoCompletion Routine
 author: windows-driver-content
 description: Registering an IoCompletion Routine
-MS-HAID:
-- 'IRPs\_17b2001d-84a1-479a-a62c-a74ecc514814.xml'
-- 'kernel.registering\_an\_iocompletion\_routine'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 413d8463-b2ce-44b6-846c-f853b5cd580e
 keywords: ["IoCompletion routines", "registering IoCompletion routines"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering an IoCompletion Routine

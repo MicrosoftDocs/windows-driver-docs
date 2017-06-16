@@ -2,14 +2,13 @@
 title: Using KTM
 author: windows-driver-content
 description: Using KTM
-MS-HAID:
-- 'ktm\_dg\_5f2ac948-b94a-464e-b922-819c7c3fadd3.xml'
-- 'kernel.using\_ktm'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 79a3ec0b-7a88-43ae-843f-10c7df92def4
 keywords: ["Kernel Transaction Manager WDK , creating transaction processing systems", "KTM WDK , creating transaction processing systems", "transaction processing systems WDK KTM , creating transaction processing systems", "TPS WDK KTM , creating TPSs"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using KTM

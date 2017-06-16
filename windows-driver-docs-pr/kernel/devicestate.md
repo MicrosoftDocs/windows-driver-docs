@@ -2,14 +2,13 @@
 title: DeviceState
 author: windows-driver-content
 description: DeviceState
-MS-HAID:
-- 'PwrMgmt\_4a82cdb0-4feb-4d5a-a8f6-b7887cdae825.xml'
-- 'kernel.devicestate'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4cf650ea-cccf-411c-809f-0a01e2ceb067
 keywords: ["DeviceState"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DeviceState

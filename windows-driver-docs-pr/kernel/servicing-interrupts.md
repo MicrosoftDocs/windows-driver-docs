@@ -2,14 +2,13 @@
 title: Servicing Interrupts
 author: windows-driver-content
 description: Servicing Interrupts
-MS-HAID:
-- 'Intrupts\_7d9a5fc7-f9d2-4cf5-a0aa-786d2be3b5b2.xml'
-- 'kernel.servicing\_interrupts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c4567d35-c4ec-4bde-8d10-e613de787bf7
 keywords: ["kernel-mode drivers WDK , servicing interrupts", "servicing interrupts WDK kernel", "device interrupts WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Servicing Interrupts

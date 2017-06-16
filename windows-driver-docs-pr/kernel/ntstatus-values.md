@@ -2,14 +2,13 @@
 title: NTSTATUS Values
 author: windows-driver-content
 description: NTSTATUS Values
-MS-HAID:
-- 'Other\_796a1853-6fca-4284-a0b7-5cdfe701cab3.xml'
-- 'kernel.ntstatus\_values'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7792201b-63bb-4db5-803d-2af02893d505
 keywords: ["standard driver routines WDK kernel , NTSTATUS values"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NTSTATUS Values

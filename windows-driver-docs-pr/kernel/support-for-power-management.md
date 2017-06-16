@@ -2,14 +2,13 @@
 title: Support for Power Management
 author: windows-driver-content
 description: Support for Power Management
-MS-HAID:
-- 'PwrMgmt\_4267ae5b-3fed-4944-bd12-f1a501e6b7c6.xml'
-- 'kernel.support\_for\_power\_management'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 77e8be50-9623-4085-8d38-44db676a9a1f
 keywords: ["power management WDK kernel , support requirements", "power management WDK kernel , about power management", "PnP WDK power management", "Plug and Play WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Support for Power Management

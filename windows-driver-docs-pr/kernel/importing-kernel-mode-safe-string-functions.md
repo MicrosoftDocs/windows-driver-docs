@@ -2,14 +2,13 @@
 title: Importing Kernel-Mode Safe String Functions
 author: windows-driver-content
 description: Importing Kernel-Mode Safe String Functions
-MS-HAID:
-- 'Other\_8e1011e0-c170-4765-81ca-a4e360bc6d2b.xml'
-- 'kernel.importing\_kernel\_mode\_safe\_string\_functions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f1cee7e0-151b-4e03-bf4d-400f328083fa
 keywords: ["importing safe string functions", "inline safe string function versions WDK kernel", "library safe string function versions WDK kernel", "byte-counted functions WDK kernel", "character-counted functions WDK kernel", "safe string functions WDK"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Importing Kernel-Mode Safe String Functions

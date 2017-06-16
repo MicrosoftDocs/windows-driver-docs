@@ -2,12 +2,6 @@
 title: DMA Programming Techniques
 author: windows-driver-content
 description: DMA Programming Techniques
-MS-HAID:
-- 'ioprogdma\_d4e96d00-b513-4ec1-a534-3528355380c9.xml'
-- 'kernel.dma\_programming\_techniques'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bdd8ffa4-8f09-41ed-b0f8-8edabbe65393
 ---
 

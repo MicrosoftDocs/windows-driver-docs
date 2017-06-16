@@ -2,14 +2,13 @@
 title: Handling an IRP\_MN\_STOP\_DEVICE Request (Windows 98/Me)
 author: windows-driver-content
 description: Handling an IRP\_MN\_STOP\_DEVICE Request (Windows 98/Me)
-MS-HAID:
-- 'PlugPlay\_a56c86a7-1827-4177-9163-3d98368cfac2.xml'
-- 'kernel.handling\_an\_irp\_mn\_stop\_device\_request\_\_windows\_98\_me\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8e44561a-f494-48ce-ab61-aa47cd4e1c64
 keywords: ["IRP_MN_STOP_DEVICE"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling an IRP\_MN\_STOP\_DEVICE Request (Windows 98/Me)

@@ -2,14 +2,13 @@
 title: Determining the Correct Device Power State
 author: windows-driver-content
 description: Determining the Correct Device Power State
-MS-HAID:
-- 'PwrMgmt\_88ccf2fe-a6dc-47bf-9ac8-953c05b49bda.xml'
-- 'kernel.determining\_the\_correct\_device\_power\_state'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4acefe93-1d7a-4c12-8701-03c2a8929591
 keywords: ["DEVICE_CAPABILITIES structure", "correct device power states WDK power management", "device power states WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Determining the Correct Device Power State

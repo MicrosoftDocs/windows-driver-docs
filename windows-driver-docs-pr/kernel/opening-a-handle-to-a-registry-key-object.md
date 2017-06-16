@@ -2,14 +2,13 @@
 title: Opening a Handle to a Registry-Key Object
 author: windows-driver-content
 description: Opening a Handle to a Registry-Key Object
-MS-HAID:
-- 'Other\_ab5e2841-4c0a-449a-ae0d-c0a84b681765.xml'
-- 'kernel.opening\_a\_handle\_to\_a\_registry\_key\_object'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 451e36a1-1cc2-469e-9f54-c02fef7b1666
 keywords: ["registry WDK kernel , object routines", "driver registry information WDK kernel , object routines", "object routines WDK kernel", "registry-key objects WDK kernel", "opening handle to registry-key object", "handle to registry-key object WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Opening a Handle to a Registry-Key Object

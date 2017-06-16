@@ -2,14 +2,13 @@
 title: Transaction Notifications
 author: windows-driver-content
 description: Transaction Notifications
-MS-HAID:
-- 'ktm\_dg\_6a9a9cb5-7ecd-4a13-bf44-7e4cc933e582.xml'
-- 'kernel.transaction\_notifications'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 62169b56-e70f-4d32-a051-a7fd947dbc64
 keywords: ["notifications WDK KTM", "transactions WDK KTM , notifications", "resource managers WDK KTM , notifications", "Kernel Transaction Manager WDK , notifications", "KTM WDK , notifications", "superior transaction managers WDK KTM"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Transaction Notifications

@@ -2,14 +2,13 @@
 title: Processing WMI IRPs in a DispatchSystemControl Routine
 author: windows-driver-content
 description: Processing WMI IRPs in a DispatchSystemControl Routine
-MS-HAID:
-- 'WMI\_b27d7cc8-f2ce-473e-ab59-d7b99d303a97.xml'
-- 'kernel.processing\_wmi\_irps\_in\_a\_dispatchsystemcontrol\_routine'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9f1fc209-ee32-4270-87e5-e360ca5eca17
 keywords: ["WMI WDK kernel , requests", "requests WDK WMI", "IRPs WDK WMI", "DispatchSystemControl routine"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Processing WMI IRPs in a DispatchSystemControl Routine

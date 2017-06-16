@@ -2,14 +2,13 @@
 title: Supporting Removable Media
 author: windows-driver-content
 description: Supporting Removable Media
-MS-HAID:
-- 'Other\_b45ba369-9047-46d4-bc47-a3f727ffdf5d.xml'
-- 'kernel.supporting\_removable\_media'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f70c404c-8a38-4f53-8681-6efb52b30656
 keywords: ["removable media WDK kernel", "removable media WDK kernel , about removable-media devices", "IRPs WDK kernel , removable media", "kernel-mode drivers WDK , removable media"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Removable Media

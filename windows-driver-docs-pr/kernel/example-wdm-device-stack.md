@@ -2,14 +2,13 @@
 title: Example WDM Device Stack
 author: windows-driver-content
 description: Example WDM Device Stack
-MS-HAID:
-- 'DevObjts\_1ab87516-f8cb-4f9b-8b26-77cf986211cb.xml'
-- 'kernel.example\_wdm\_device\_stack'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1128e098-9ef4-4bc3-aa09-74df3142fb11
 keywords: ["device stacks WDK kernel , examples", "joystick WDK device stacks", "functional device objects WDK kernel", "FDO WDK kernel", "physical device objects WDK kernel", "PDOs WDK kernel", "filter DOs WDK kernel", "USB hub device stacks WDK kernel", "USB host controller device stacks WDK kernel", "PCI bus device stacks WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example WDM Device Stack

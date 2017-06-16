@@ -2,14 +2,13 @@
 title: Using the CONNECT\_LINE\_BASED Version of IoConnectInterruptEx
 author: windows-driver-content
 description: Using the CONNECT\_LINE\_BASED Version of IoConnectInterruptEx
-MS-HAID:
-- 'Intrupts\_0cbce5e2-0de3-43da-8248-04576d47fc62.xml'
-- 'kernel.using\_the\_connect\_line\_based\_version\_of\_ioconnectinterruptex'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 245be266-f76c-43f6-9ea7-2dc853b1d5e2
 keywords: ["IoConnectInterruptEx", "CONNECT_LINE_BASED", "line-based interrupts WDK kernel", "automatic interrupt detections WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the CONNECT\_LINE\_BASED Version of IoConnectInterruptEx

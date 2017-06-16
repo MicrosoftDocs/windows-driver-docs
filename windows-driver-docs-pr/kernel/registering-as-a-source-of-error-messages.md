@@ -2,14 +2,13 @@
 title: Registering as a Source of Error Messages
 author: windows-driver-content
 description: Registering as a Source of Error Messages
-MS-HAID:
-- 'Other\_fd55c784-3f8f-48ac-b162-74e6078ed604.xml'
-- 'kernel.registering\_as\_a\_source\_of\_error\_messages'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5428950c-9c28-411a-9ec0-b029ad311a00
 keywords: ["source registration WDK errors", "errors WDK kernel", "registering error message sources", "registry WDK error logs"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering as a Source of Error Messages

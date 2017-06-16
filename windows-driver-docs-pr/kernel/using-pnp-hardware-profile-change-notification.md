@@ -2,14 +2,13 @@
 title: Using PnP Hardware Profile Change Notification
 author: windows-driver-content
 description: Using PnP Hardware Profile Change Notification
-MS-HAID:
-- 'PlugPlay\_569893e2-0c06-4021-84d4-d1faa8e1cf26.xml'
-- 'kernel.using\_pnp\_hardware\_profile\_change\_notification'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 341464e4-507d-43da-88a2-5bfecd2dd02a
 keywords: ["notifications WDK PnP , hardware profile changes", "hardware profile change notifications WDK PnP", "EventCategoryHardwareProfileChange notification", "profile change notifications WDK PnP", "machine hardware profile change notifications WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using PnP Hardware Profile Change Notification

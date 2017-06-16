@@ -2,14 +2,13 @@
 title: Introduction to Standard Driver Routines
 author: windows-driver-content
 description: Introduction to Standard Driver Routines
-MS-HAID:
-- 'DrvComps\_a56fa500-3f9e-4b65-b5d6-100e66240fe8.xml'
-- 'kernel.introduction\_to\_standard\_driver\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 91aaca02-a571-4058-b5af-98277fcbcf9d
 keywords: ["standard driver routines WDK kernel , about standard driver routines", "driver routines WDK kernel , about standard driver routines", "routines WDK kernel , about standard driver routines", "IRPs WDK kernel , standard driver routines", "required standard routines WDK kernel", "optional standard routines WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Standard Driver Routines

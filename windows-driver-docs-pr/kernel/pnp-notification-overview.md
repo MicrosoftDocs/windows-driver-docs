@@ -2,14 +2,13 @@
 title: PnP Notification Overview
 author: windows-driver-content
 description: PnP Notification Overview
-MS-HAID:
-- 'PlugPlay\_289c8080-9400-4cd0-9d44-d637210e8567.xml'
-- 'kernel.pnp\_notification\_overview'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 134a1ea1-78c2-4bab-b5e9-ae21901772ea
 keywords: ["PnP WDK kernel , notifications", "Plug and Play WDK kernel , notifications", "notifications WDK PnP , about notifications", "event notifications WDK PnP", "EventCategoryDeviceInterfaceChange notification", "EventCategoryTargetDeviceChange notification", "EventCategoryHardwareProfileChange notification"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PnP Notification Overview

@@ -2,12 +2,6 @@
 title: Completing IRPs in Dispatch Routines
 author: windows-driver-content
 description: Completing IRPs in Dispatch Routines
-MS-HAID:
-- 'IRPs\_0c80f5f9-e76e-422e-8681-060b6867918b.xml'
-- 'kernel.completing\_irps\_in\_dispatch\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 279913cb-90f1-411f-a23a-38af4c99638d
 ---
 

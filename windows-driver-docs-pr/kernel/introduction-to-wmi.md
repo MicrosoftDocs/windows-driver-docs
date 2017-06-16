@@ -2,14 +2,13 @@
 title: Introduction to WMI
 author: windows-driver-content
 description: Introduction to WMI
-MS-HAID:
-- 'WMI\_cab6b8e3-0d1e-465e-b97b-e9b8f71e6bc6.xml'
-- 'kernel.introduction\_to\_wmi'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9ee0ecbb-05fc-42ab-8bad-7c647f30c82c
 keywords: ["WMI WDK kernel , about Windows Management Instrumentation"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to WMI

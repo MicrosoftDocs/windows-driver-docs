@@ -2,14 +2,13 @@
 title: The Life of an I/O Request
 author: windows-driver-content
 description: The Life of an I/O Request
-MS-HAID:
-- 'IRPs\_16db8301-5cf2-4e67-9d90-043cd05aa328.xml'
-- 'kernel.the\_life\_of\_an\_i\_o\_request'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3198e96c-3794-4736-b7e8-d2704abf1aca
 keywords: ["IRPs WDK kernel , I/O request process", "I/O requests WDK kernel", "protected subsystems WDK kernel", "subsystem I/O request process WDK kernel", "user I/O requests WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The Life of an I/O Request

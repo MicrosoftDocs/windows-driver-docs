@@ -2,14 +2,13 @@
 title: Initializing Spin Locks
 author: windows-driver-content
 description: Initializing Spin Locks
-MS-HAID:
-- 'Synchro\_f555842d-421a-4dd4-beb3-bb0e4801c2c9.xml'
-- 'kernel.initializing\_spin\_locks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7ed27e43-4406-4e64-b2c9-42b8a883efdb
 keywords: ["initializing spin locks", "spin locks WDK kernel", "KeInitializeSpinLock", "executive spin locks WDK kernel", "interrupt spin locks WDK kernel", "queued spin locks WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing Spin Locks

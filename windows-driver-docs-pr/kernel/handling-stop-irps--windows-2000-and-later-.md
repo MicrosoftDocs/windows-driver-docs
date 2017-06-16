@@ -2,14 +2,13 @@
 title: Handling Stop IRPs (Windows 2000 and Later)
 author: windows-driver-content
 description: Handling Stop IRPs (Windows 2000 and Later)
-MS-HAID:
-- 'PlugPlay\_8400d891-c21f-46e3-9c26-de2f82c7acfa.xml'
-- 'kernel.handling\_stop\_irps\_\_windows\_2000\_and\_later\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5148ca15-07f0-4a93-aa65-45b13184184b
 keywords: ["stop IRPs WDK PnP", "IRPs WDK PnP", "I/O request packets WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Stop IRPs (Windows 2000 and Later)

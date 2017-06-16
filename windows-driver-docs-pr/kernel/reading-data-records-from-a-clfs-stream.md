@@ -2,14 +2,13 @@
 title: Reading Data Records from a CLFS Stream
 author: windows-driver-content
 description: Reading Data Records from a CLFS Stream
-MS-HAID:
-- 'Clfs\_guide\_197927b6-a167-496f-9203-2c092a558e99.xml'
-- 'kernel.reading\_data\_records\_from\_a\_clfs\_stream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 46e583c5-9f12-4f05-8f11-683ac428313a
 keywords: ["Common Log File System WDK kernel , data records", "CLFS WDK kernel , data records", "data records WDK CLFS", "reading data records", "read forward WDK CLFS", "forward reading WDK CLFS", "read backward WDK CLFS", "backward reading WDK CLFS", "previous LSNs WDK CLFS", "undo-next LSNs WDK CLFS"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reading Data Records from a CLFS Stream

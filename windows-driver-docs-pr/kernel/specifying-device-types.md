@@ -2,14 +2,13 @@
 title: Specifying Device Types
 author: windows-driver-content
 description: Specifying Device Types
-MS-HAID:
-- 'DevObjts\_46146aa1-37d2-4a49-8e50-a5f16b3d15f2.xml'
-- 'kernel.specifying\_device\_types'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 32e179f9-ab11-4360-b2fd-4276c6b6b3a0
 keywords: ["device objects WDK kernel , device types", "device types WDK device objects"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying Device Types

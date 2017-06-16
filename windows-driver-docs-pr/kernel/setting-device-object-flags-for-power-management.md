@@ -2,14 +2,13 @@
 title: Setting Device Object Flags for Power Management
 author: windows-driver-content
 description: Setting Device Object Flags for Power Management
-MS-HAID:
-- 'PwrMgmt\_e5d16e16-83d3-455b-984a-0315e30dae29.xml'
-- 'kernel.setting\_device\_object\_flags\_for\_power\_management'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 58d1a3a2-c8ea-446c-b1d6-ed00411d1d75
 keywords: ["DO_POWER_PAGABLE", "DO_POWER_INRUSH", "device object flags WDK power management", "object flags WDK power management", "flags WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Device Object Flags for Power Management

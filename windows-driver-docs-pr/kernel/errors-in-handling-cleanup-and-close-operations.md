@@ -2,14 +2,13 @@
 title: Errors in Handling Cleanup and Close Operations
 author: windows-driver-content
 description: Errors in Handling Cleanup and Close Operations
-MS-HAID:
-- 'Other\_a002ad7b-1586-434a-925f-1db8ec73dc46.xml'
-- 'kernel.errors\_in\_handling\_cleanup\_and\_close\_operations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9d449974-99b1-4d38-9bbb-54938d67c23a
 keywords: ["reliability WDK kernel , errors", "DispatchClose", "DispatchCleanup", "cleanup errors WDK kernel", "close errors WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Errors in Handling Cleanup and Close Operations

@@ -2,14 +2,13 @@
 title: Specifying Exclusive Access to Device Objects
 author: windows-driver-content
 description: Specifying Exclusive Access to Device Objects
-MS-HAID:
-- 'DevObjts\_8482b40f-9993-4d39-b88b-0c02a9b3e460.xml'
-- 'kernel.specifying\_exclusive\_access\_to\_device\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b492251b-55b0-4323-a508-b395bb3da0ef
 keywords: ["exclusive access WDK device objects", "device objects WDK kernel , exclusive access", "single access WDK device objects"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying Exclusive Access to Device Objects

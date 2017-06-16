@@ -2,14 +2,13 @@
 title: Calling PoStartNextPowerIrp
 author: windows-driver-content
 description: Calling PoStartNextPowerIrp
-MS-HAID:
-- 'PwrMgmt\_a8333353-d54a-44bc-9ea6-55d2e385e7f5.xml'
-- 'kernel.calling\_postartnextpowerirp'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8b3fb578-2ac2-4a04-ac99-1cfd51b07b01
 keywords: ["power IRPs WDK kernel , PoStartNextPowerIrp", "PoStartNextPowerIrp"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Calling PoStartNextPowerIrp

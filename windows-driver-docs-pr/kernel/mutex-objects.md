@@ -2,12 +2,6 @@
 title: Mutex Objects
 author: windows-driver-content
 description: Mutex Objects
-MS-HAID:
-- 'Synchro\_d32b914d-0503-41dd-b76e-0b4a57f76235.xml'
-- 'kernel.mutex\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e2142b6d-f460-4f80-be0f-e00b5d43731c
 ---
 

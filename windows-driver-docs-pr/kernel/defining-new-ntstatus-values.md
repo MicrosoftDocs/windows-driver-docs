@@ -2,14 +2,13 @@
 title: Defining New NTSTATUS Values
 author: windows-driver-content
 description: Defining New NTSTATUS Values
-MS-HAID:
-- 'Other\_2c5642f4-2661-4b69-b503-da1e92ab0db7.xml'
-- 'kernel.defining\_new\_ntstatus\_values'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 44211ae4-6bfe-4931-b12c-e590c7aacd97
 keywords: ["NTSTATUS values WDK kernel", "custom NTSTATUS values WDK kernel", "IO_ERR_XXX values"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Defining New NTSTATUS Values

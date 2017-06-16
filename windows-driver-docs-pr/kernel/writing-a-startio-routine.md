@@ -2,14 +2,13 @@
 title: Writing a StartIo Routine
 author: windows-driver-content
 description: Writing a StartIo Routine
-MS-HAID:
-- 'IRPs\_5cab3871-b277-4e65-bca4-b6a45ba50b02.xml'
-- 'kernel.writing\_a\_startio\_routine'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b2a380ae-549c-4ca2-9c69-1e20c17ed2e6
 keywords: ["StartIo routines, about StartIo routines", "StartIo routines, writing", "starting I/O operations", "I/O operation starting WDK kernel", "IRPs WDK kernel , queuing", "queuing IRPs", "dequeuing IRPs"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing a StartIo Routine

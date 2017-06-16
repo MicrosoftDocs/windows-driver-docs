@@ -2,14 +2,13 @@
 title: Failure to Initialize Output Buffers
 author: windows-driver-content
 description: Failure to Initialize Output Buffers
-MS-HAID:
-- 'Other\_906cd032-1776-4688-9484-c05810fc6d69.xml'
-- 'kernel.failure\_to\_initialize\_output\_buffers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8c038a94-8506-44e3-ac7f-82b58d791124
 keywords: ["output buffers WDK kernel", "initializing output buffers"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Failure to Initialize Output Buffers

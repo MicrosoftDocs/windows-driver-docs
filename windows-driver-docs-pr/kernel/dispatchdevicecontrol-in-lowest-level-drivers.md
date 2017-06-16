@@ -2,14 +2,13 @@
 title: DispatchDeviceControl in Lowest-Level Drivers
 author: windows-driver-content
 description: DispatchDeviceControl in Lowest-Level Drivers
-MS-HAID:
-- 'DrvComps\_b8ae75aa-2fb0-4872-91f1-c62a39f3bedb.xml'
-- 'kernel.dispatchdevicecontrol\_in\_lowest\_level\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 51caacd3-c9e0-450e-9060-f308ab46b5a0
 keywords: ["dispatch routines WDK kernel , DispatchDeviceControl routine", "dispatch DispatchDeviceControl routine", "IRP_MJ_DEVICE_CONTROL I/O function code", "device control dispatch routines WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DispatchDeviceControl in Lowest-Level Drivers

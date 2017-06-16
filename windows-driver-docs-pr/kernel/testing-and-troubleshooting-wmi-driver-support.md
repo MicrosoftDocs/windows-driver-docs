@@ -2,12 +2,6 @@
 title: Testing and Troubleshooting WMI Driver Support
 author: windows-driver-content
 description: Testing and Troubleshooting WMI Driver Support
-MS-HAID:
-- 'WMI\_d85c0737-4570-41fc-96ca-245595559614.xml'
-- 'kernel.testing\_and\_troubleshooting\_wmi\_driver\_support'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 702f2ad7-d3bb-4268-a0c8-fe6756e840e3
 ---
 

@@ -2,14 +2,13 @@
 title: Responding to Check-Verify Requests from the File System
 author: windows-driver-content
 description: Responding to Check-Verify Requests from the File System
-MS-HAID:
-- 'Other\_5f3b70d7-d3af-48bf-bc49-a926e915617c.xml'
-- 'kernel.responding\_to\_check\_verify\_requests\_from\_the\_file\_system'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 227e65d6-d746-4b16-978d-4d42be9aeb2c
 keywords: ["removable media WDK kernel , check-verify requests", "check-verify requests WDK removable media", "media change requests WDK removable media", "checking removable media changes", "verifying removable media changes"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Responding to Check-Verify Requests from the File System

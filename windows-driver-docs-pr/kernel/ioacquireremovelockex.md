@@ -2,12 +2,6 @@
 title: Windows kernel routines reserved for system use
 author: windows-driver-content
 description: Windows kernel routines reserved for system use
-MS-HAID:
-- 'k104\_ef41454c-f115-4c3a-bb2b-72afd690e887.xml'
-- 'kernel.ioacquireremovelockex'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 78b0562a-903a-467d-9bf0-f5499ae47063
 ---
 

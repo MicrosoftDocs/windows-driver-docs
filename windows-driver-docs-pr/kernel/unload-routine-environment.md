@@ -2,14 +2,13 @@
 title: Unload Routine Environment
 author: windows-driver-content
 description: Unload Routine Environment
-MS-HAID:
-- 'DrvComps\_177a920d-f33c-412f-895b-52fb0237806d.xml'
-- 'kernel.unload\_routine\_environment'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4acf66f1-7b97-494e-9f84-14292e971542
 keywords: ["Unload routines WDK kernel , environment"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Unload Routine Environment

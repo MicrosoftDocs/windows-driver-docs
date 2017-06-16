@@ -2,14 +2,13 @@
 title: Introduction to Adapter Objects
 author: windows-driver-content
 description: Introduction to Adapter Objects
-MS-HAID:
-- 'ioprogdma\_1a9532bd-cec6-48ef-9c33-b732c8cd2135.xml'
-- 'kernel.introduction\_to\_adapter\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a1a0d516-dee0-484a-b971-c7a595fef155
 keywords: ["AdapterControl routines, about AdapterControl routines", "DMA transfers WDK kernel , adapter objects", "adapter objects WDK kernel , about adapter objects"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Adapter Objects

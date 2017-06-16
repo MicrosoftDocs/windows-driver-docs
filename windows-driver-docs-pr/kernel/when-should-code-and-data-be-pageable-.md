@@ -2,14 +2,13 @@
 title: When Should Code and Data Be Pageable
 author: windows-driver-content
 description: When Should Code and Data Be Pageable
-MS-HAID:
-- 'MemMgmt\_e95e5f54-28cc-414f-af76-8e225692c051.xml'
-- 'kernel.when\_should\_code\_and\_data\_be\_pageable\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2804f558-8c8c-43f4-b14e-8deaac9da286
 keywords: ["memory management WDK kernel , pageable drivers", "pageable drivers WDK kernel , when should be pageable", "locked-on-demand code WDK kernel", "spin locks WDK memory", "resident code WDK pageable drivers"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # When Should Code and Data Be Pageable?

@@ -2,14 +2,13 @@
 title: I/O Stack Locations
 author: windows-driver-content
 description: I/O Stack Locations
-MS-HAID:
-- 'IRPs\_0966c1a7-2239-4be3-a545-e358173f29e8.xml'
-- 'kernel.i\_o\_stack\_locations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 62c8ee00-c7cb-4aa1-90ab-b8bedbd818ee
 keywords: ["IRPs WDK kernel , I/O stack locations", "I/O stack locations WDK kernel", "stack locations WDK kernel", "layered driver I/O stack locations WDK kernel", "IRPs WDK kernel , contents", "IO_STACK_LOCATION structure"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # I/O Stack Locations

@@ -2,14 +2,13 @@
 title: Using the CONNECT\_FULLY\_SPECIFIED Version of IoConnectInterruptEx
 author: windows-driver-content
 description: Using the CONNECT\_FULLY\_SPECIFIED Version of IoConnectInterruptEx
-MS-HAID:
-- 'Intrupts\_dd9ec386-f7ea-47ee-bc23-35a90fc62453.xml'
-- 'kernel.using\_the\_connect\_fully\_specified\_version\_of\_ioconnectinterruptex'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5b75c32e-77e5-4761-b709-fedb8e33b57a
 keywords: ["IoConnectInterruptEx", "CONNECT_FULLY_SPECIFIED", "manual interrupt detections WDK kernel", "line-based interrupts WDK kernel", "message-signaled interrupts WDK kernel", "FullySpecified"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the CONNECT\_FULLY\_SPECIFIED Version of IoConnectInterruptEx

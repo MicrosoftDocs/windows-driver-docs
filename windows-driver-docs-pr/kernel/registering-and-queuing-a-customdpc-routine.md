@@ -2,14 +2,13 @@
 title: Registering and Queuing a CustomDpc Routine
 author: windows-driver-content
 description: Registering and Queuing a CustomDpc Routine
-MS-HAID:
-- 'Intrupts\_8b881e3c-cf23-4bf3-b73e-b14feb2b16b6.xml'
-- 'kernel.registering\_and\_queuing\_a\_customdpc\_routine'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7c35f8f8-a6dc-43b1-9120-701227d7b4c5
 keywords: ["CustomDpc", "registering CustomDpc routine", "queuing CustomDpc routine"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering and Queuing a CustomDpc Routine

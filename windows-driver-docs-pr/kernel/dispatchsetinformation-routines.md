@@ -2,14 +2,13 @@
 title: DispatchSetInformation Routines
 author: windows-driver-content
 description: DispatchSetInformation Routines
-MS-HAID:
-- 'DrvComps\_92a4d763-c98b-484a-b9b3-05d3955fad9e.xml'
-- 'kernel.dispatchsetinformation\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9fb56504-32a7-47b0-b731-df1dc74ce861
 keywords: ["dispatch routines WDK kernel , DispatchSetInformation routine", "DispatchSetInformation routine", "set information dispatch routines WDK kernel", "IRP_MJ_SET_INFORMATION I/O function code"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DispatchSetInformation Routines
