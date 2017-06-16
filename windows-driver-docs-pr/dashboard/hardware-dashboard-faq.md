@@ -24,7 +24,10 @@ There is no restriction on the number of certificates (both EV and Standard) ass
 ## <span id="What_agreements_need_to_be_signed_"></span><span id="what_agreements_need_to_be_signed_"></span><span id="WHAT_AGREEMENTS_NEED_TO_BE_SIGNED_"></span>What agreements need to be signed?
 
 
-The following agreements can be signed as part of the registration process, note that the only agreement required is the first one listed, the other agreements are optional unless using that feature or assets in the associated agreement:
+The following agreements can be signed as part of the registration process.
+
+> [!NOTE]
+> Signing the Windows Hardware Compatibility Program Test Agreement is a requirement for all registrations. All other agreements are optional unless you are using features or assets in the other associated agreements. 
 
 -   Windows Hardware Compatibility Program Test Agreement (ver 2.0)
 
