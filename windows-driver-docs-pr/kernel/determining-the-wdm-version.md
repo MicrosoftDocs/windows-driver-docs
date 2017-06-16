@@ -2,14 +2,13 @@
 title: Determining the WDM Version
 author: windows-driver-content
 description: Determining the WDM Version
-MS-HAID:
-- 'WDMIntro\_50d1dcbb-3e7a-4460-976c-04faf8499c94.xml'
-- 'kernel.determining\_the\_wdm\_version'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7ed288d9-6447-4b08-baf2-e7b743654ebd
 keywords: ["WDM drivers WDK kernel , versions", "versions WDK WDM", "compatibility WDK WDM", "cross-system compatibility WDK WDM"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Determining the WDM Version

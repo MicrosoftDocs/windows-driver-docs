@@ -2,14 +2,13 @@
 title: Singly and Doubly Linked Lists
 author: windows-driver-content
 description: Singly and Doubly Linked Lists
-MS-HAID:
-- 'Other\_2bab2d7d-916c-4343-b4e5-3eebc9f9ea7c.xml'
-- 'kernel.singly\_and\_doubly\_linked\_lists'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3a305f54-7866-4163-a3e4-e078d1927adc
 keywords: ["singly linked lists WDK kernel", "doubly linked lists WDK kernel", "sequenced singly linked lists WDK kernel", "SINGLE_LIST_ENTRY", "LIST_ENTRY"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Singly and Doubly Linked Lists

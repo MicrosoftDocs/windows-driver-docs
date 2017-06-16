@@ -2,14 +2,13 @@
 title: Supporting Layered Registry Filtering Drivers
 author: windows-driver-content
 description: Supporting Layered Registry Filtering Drivers
-MS-HAID:
-- 'Other\_daa13784-6d0d-4557-b93e-7ad04796512b.xml'
-- 'kernel.supporting\_layered\_registry\_filtering\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5adeecdb-c26e-4502-87b4-bfb02a4aaba8
 keywords: ["filtering registry calls WDK kernel , layered", "registry filtering drivers WDK kernel , layered", "layered registry filtering drivers WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Layered Registry Filtering Drivers

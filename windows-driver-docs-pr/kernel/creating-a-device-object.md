@@ -2,14 +2,13 @@
 title: Creating a Device Object
 author: windows-driver-content
 description: Creating a Device Object
-MS-HAID:
-- 'DevObjts\_b9518894-27cf-4cae-a3e9-9fcc1647778e.xml'
-- 'kernel.creating\_a\_device\_object'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3eda8eb2-8a83-4753-a099-2531bfb9aeeb
 keywords: ["device objects WDK kernel , creating", "non-WDM driver device objects WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Device Object

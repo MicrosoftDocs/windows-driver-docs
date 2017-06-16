@@ -2,14 +2,13 @@
 title: Using I/O Control Codes
 author: windows-driver-content
 description: Using I/O Control Codes
-MS-HAID:
-- 'IRPs\_74b2a48e-207b-47bf-bbb0-2f49577ecec7.xml'
-- 'kernel.using\_i\_o\_control\_codes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3f124ee7-bfd9-417f-ae7a-849d02a1b97a
 keywords: ["IRPs WDK kernel , I/O control codes", "I/O control codes WDK kernel", "control codes WDK IOCTLs", "IOCTLs WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using I/O Control Codes

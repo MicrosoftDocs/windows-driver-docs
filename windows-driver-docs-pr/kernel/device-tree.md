@@ -2,14 +2,13 @@
 title: Device Tree
 author: windows-driver-content
 description: Device Tree
-MS-HAID:
-- 'PlugPlay\_0937a0b2-7062-4f9a-a22e-35e28b605bff.xml'
-- 'kernel.device\_tree'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3220389a-06cc-4a43-8164-b785d1a16365
 keywords: ["devnodes WDK PnP", "nonpresent devices WDK", "PnP WDK kernel , device trees", "Plug and Play WDK kernel , device trees", "removal relations WDK PnP", "ejection relations WDK PnP", "device trees WDK PnP", "trees WDK PnP", "device nodes WDK PnP", "child devices WDK PnP", "hierarchy WDK PnP", "relationships WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Tree

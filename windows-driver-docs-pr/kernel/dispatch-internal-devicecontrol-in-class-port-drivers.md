@@ -2,14 +2,13 @@
 title: Dispatch(Internal)DeviceControl in Class/Port Drivers
 author: windows-driver-content
 description: Dispatch(Internal)DeviceControl in Class/Port Drivers
-MS-HAID:
-- 'DrvComps\_203ea684-345a-4d45-bd65-bfd03910d4a4.xml'
-- 'kernel.dispatch\_internal\_devicecontrol\_in\_class\_port\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 94f6050d-c47e-4fb2-8b7f-afadcf12e0b8
 keywords: ["dispatch routines WDK kernel , DispatchDeviceControl routine", "dispatch DispatchDeviceControl routine", "IRP_MJ_DEVICE_CONTROL I/O function code", "device control dispatch routines WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Dispatch(Internal)DeviceControl in Class/Port Drivers

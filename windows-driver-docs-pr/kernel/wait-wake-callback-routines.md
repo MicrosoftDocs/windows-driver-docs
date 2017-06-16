@@ -2,14 +2,13 @@
 title: Wait/Wake Callback Routines
 author: windows-driver-content
 description: Wait/Wake Callback Routines
-MS-HAID:
-- 'PwrMgmt\_9b60b7e9-5ca1-4ba0-b44d-fc98ff2f2b76.xml'
-- 'kernel.wait\_wake\_callback\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 55749f14-37eb-45d9-8a2c-9ebf7fb3bc75
 keywords: ["sending wait/wake IRPs", "wait/wake IRPs WDK power management , sending", "callback routines WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wait/Wake Callback Routines

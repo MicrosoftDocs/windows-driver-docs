@@ -2,14 +2,13 @@
 title: Using the CONNECT\_MESSAGE\_BASED Version of IoConnectInterruptEx
 author: windows-driver-content
 description: Using the CONNECT\_MESSAGE\_BASED Version of IoConnectInterruptEx
-MS-HAID:
-- 'Intrupts\_ffb101a6-339a-49cb-83ef-224476e936ec.xml'
-- 'kernel.using\_the\_connect\_message\_based\_version\_of\_ioconnectinterruptex'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8e06c6aa-85de-4ed2-ac0d-0179201d1272
 keywords: ["IoConnectInterruptEx", "CONNECT_MESSAGE_BASED", "message-signaled interrupts WDK kernel", "automatic interrupt detections WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the CONNECT\_MESSAGE\_BASED Version of IoConnectInterruptEx

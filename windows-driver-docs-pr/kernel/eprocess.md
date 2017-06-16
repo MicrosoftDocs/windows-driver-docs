@@ -2,12 +2,6 @@
 title: Windows kernel opaque structures
 author: windows-driver-content
 description: Windows kernel opaque structures
-MS-HAID:
-- 'kstruct\_a\_c1a54365-59f5-450e-a362-c41ea927133b.xml'
-- 'kernel.eprocess'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4053d82e-78ae-4945-ad5b-44ba41229a5d
 ---
 

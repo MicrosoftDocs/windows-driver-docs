@@ -2,12 +2,6 @@
 title: Windows Kernel-Mode Object Manager
 author: windows-driver-content
 description: Windows Kernel-Mode Object Manager
-MS-HAID:
-- 'objmgr\_35f4a6b5-8d8d-4a78-b9c4-ec2f044a7dde.xml'
-- 'kernel.windows\_kernel\_mode\_object\_manager'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f10561a3-d831-4c13-9edf-be40fb1db403
 ---
 

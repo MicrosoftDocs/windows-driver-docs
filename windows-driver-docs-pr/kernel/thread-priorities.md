@@ -2,14 +2,13 @@
 title: Thread Priorities
 author: windows-driver-content
 description: Thread Priorities
-MS-HAID:
-- 'Synchro\_0342a01a-c804-4c72-a045-f9a4d18f56f2.xml'
-- 'kernel.thread\_priorities'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 87a9641c-0569-45c1-acb8-adf5856dc60d
 keywords: ["thread objects WDK kernel", "thread priorities WDK kernel", "priorities WDK threads"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Thread Priorities

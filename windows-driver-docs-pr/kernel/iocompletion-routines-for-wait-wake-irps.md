@@ -2,14 +2,13 @@
 title: IoCompletion Routines for Wait/Wake IRPs
 author: windows-driver-content
 description: IoCompletion Routines for Wait/Wake IRPs
-MS-HAID:
-- 'PwrMgmt\_14bd319a-74a6-4c8e-a54d-cb90cde06031.xml'
-- 'kernel.iocompletion\_routines\_for\_wait\_wake\_irps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 61239398-2d37-4163-8128-7a4a0916a262
 keywords: ["receiving wait/wake IRPs", "wait/wake IRPs WDK power management , receiving", "IoCompletion routines"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IoCompletion Routines for Wait/Wake IRPs

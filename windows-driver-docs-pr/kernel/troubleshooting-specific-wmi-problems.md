@@ -2,14 +2,13 @@
 title: Troubleshooting Specific WMI Problems
 author: windows-driver-content
 description: Troubleshooting Specific WMI Problems
-MS-HAID:
-- 'WMI\_e54b5d82-8675-4c02-a3ae-941fc33e4d05.xml'
-- 'kernel.troubleshooting\_specific\_wmi\_problems'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 966191e7-aec4-4eff-b975-99a6d3eb8d02
 keywords: ["WMI WDK kernel , troubleshooting", "troubleshooting WMI problems WDK"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Troubleshooting Specific WMI Problems

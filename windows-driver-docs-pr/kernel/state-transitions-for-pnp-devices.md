@@ -2,14 +2,13 @@
 title: State Transitions for PnP Devices
 author: windows-driver-content
 description: State Transitions for PnP Devices
-MS-HAID:
-- 'PlugPlay\_7bee85d1-1618-41e0-a29d-7e3dcbe539ad.xml'
-- 'kernel.state\_transitions\_for\_pnp\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 31969515-899b-407e-ab73-f6f7f36adb85
 keywords: ["PnP WDK kernel , state transitions", "Plug and Play WDK kernel , state transitions", "state transitions WDK PnP", "device states WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # State Transitions for PnP Devices

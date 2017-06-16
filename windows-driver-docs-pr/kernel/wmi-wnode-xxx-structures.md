@@ -2,14 +2,13 @@
 title: WMI WNODE\_XXX Structures
 author: windows-driver-content
 description: WMI WNODE\_XXX Structures
-MS-HAID:
-- 'WMI\_eb0df9f1-20b7-4bdb-b866-440ed2749533.xml'
-- 'kernel.wmi\_wnode\_xxx\_structures'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9d059b9a-c129-42ba-8db6-53480003f56e
 keywords: ["WMI WDK kernel , requests", "requests WDK WMI", "IRPs WDK WMI", "WNODE_XXX structures"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WMI WNODE\_XXX Structures

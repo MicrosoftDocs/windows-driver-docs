@@ -2,14 +2,13 @@
 title: Disabling APCs
 author: windows-driver-content
 description: Disabling APCs
-MS-HAID:
-- 'Synchro\_fb5ec63e-39e6-4570-96c2-736da24eefa3.xml'
-- 'kernel.disabling\_apcs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0578df31-1467-4bad-ba62-081d61278deb
 keywords: ["asynchronous procedure calls WDK kernel", "APCs WDK kernel", "disabling APCs", "critical regions WDK kernel", "guarded regions WDK kernel", "raising current IRQLs"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Disabling APCs

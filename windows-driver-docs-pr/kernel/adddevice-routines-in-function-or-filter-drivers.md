@@ -2,14 +2,13 @@
 title: AddDevice Routines in Function or Filter Drivers
 author: windows-driver-content
 description: AddDevice Routines in Function or Filter Drivers
-MS-HAID:
-- 'DrvComps\_f213fbad-a0d7-433b-896b-60092d9545f0.xml'
-- 'kernel.adddevice\_routines\_in\_function\_or\_filter\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0a095c17-2295-46df-9908-f306f7fe9f67
 keywords: ["function drivers WDK kernel", "filter drivers WDK kernel", "AddDevice routines WDK kernel , function drivers", "AddDevice routines WDK kernel , filter drivers"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AddDevice Routines in Function or Filter Drivers

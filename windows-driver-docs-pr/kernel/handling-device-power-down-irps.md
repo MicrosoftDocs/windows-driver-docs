@@ -2,14 +2,13 @@
 title: Handling Device Power-Down IRPs
 author: windows-driver-content
 description: Handling Device Power-Down IRPs
-MS-HAID:
-- 'PwrMgmt\_b4ae91d5-55f0-4ac9-9170-ed38c57c310e.xml'
-- 'kernel.handling\_device\_power\_down\_irps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2f4591d6-5bd0-45db-b02d-cf9dd59c3888
 keywords: ["set-power IRPs WDK kernel", "device set power IRPs WDK kernel", "power IRPs WDK kernel , device changes", "power-down IRPs WDK kernel", "context information WDK power management", "shutdown power management WDK kernel", "off power WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Device Power-Down IRPs

@@ -2,14 +2,13 @@
 title: Industry Initiatives for Power Management
 author: windows-driver-content
 description: Industry Initiatives for Power Management
-MS-HAID:
-- 'PwrMgmt\_1369162b-220b-4d05-8544-687d2b016550.xml'
-- 'kernel.industry\_initiatives\_for\_power\_management'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 81754a9b-67ec-47a6-bd18-5da10a1f18f5
 keywords: ["power management WDK kernel , industry initiatives", "Advanced Configuration and Power Interface Specification WDK", "Device Class Power Management Reference Specification WDK", "hardware WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Industry Initiatives for Power Management

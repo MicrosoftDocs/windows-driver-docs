@@ -2,14 +2,13 @@
 title: Writing an Unload Routine
 author: windows-driver-content
 description: Writing an Unload Routine
-MS-HAID:
-- 'DrvComps\_dd68c184-bd08-485c-8b8b-ba0054bcba4b.xml'
-- 'kernel.writing\_an\_unload\_routine'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 578f3499-28fc-412b-bbb7-75f8023fa7c1
 keywords: ["standard driver routines WDK kernel , Unload routines", "driver routines WDK kernel , Unload routines", "routines WDK kernel , Unload routines", "Unload routines WDK kernel", "Unload routines WDK kernel , about Unload routines", "replacing drivers", "driver replacements WDK kernel", "unloading drivers", "reloading drivers WDK kernel", "driver unloading WDK kernel", "driver reloading WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing an Unload Routine

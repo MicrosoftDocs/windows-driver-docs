@@ -2,14 +2,13 @@
 title: WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3
 author: windows-driver-content
 description: WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3
-MS-HAID:
-- 'PwrMgmt\_fadf36d0-c8da-4915-b08d-ceaf5534184e.xml'
-- 'kernel.wakefromd0\_\_wakefromd1\_\_wakefromd2\_\_and\_wakefromd3'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f01aaceb-babf-42da-bc4b-1a846c84a313
 keywords: ["WakeFromD0", "WakeFromD1", "WakeFromD2", "WakeFromD3"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3

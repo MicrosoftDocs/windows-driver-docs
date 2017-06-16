@@ -2,14 +2,13 @@
 title: Using PnP Notification
 author: windows-driver-content
 description: Using PnP Notification
-MS-HAID:
-- 'PlugPlay\_bf9a5f8a-c183-4a4e-aebf-1228b8189a42.xml'
-- 'kernel.using\_pnp\_notification'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cc6c9106-37b3-473c-bbd2-89701d698fdf
 keywords: ["notifications WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using PnP Notification

@@ -2,14 +2,13 @@
 title: Writing Data Records to a CLFS Stream
 author: windows-driver-content
 description: Writing Data Records to a CLFS Stream
-MS-HAID:
-- 'Clfs\_guide\_2e30cbec-7ec2-4cbe-920d-7ed0b9fdea0f.xml'
-- 'kernel.writing\_data\_records\_to\_a\_clfs\_stream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 22bd6d39-b777-4a62-85b1-3d03a7144f7a
 keywords: ["Common Log File System WDK kernel , data records", "CLFS WDK kernel , data records", "data records WDK CLFS", "reserved space WDK CLFS", "aligned entries WDK CLFS", "writing data records", "buffers WDK CLFS"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing Data Records to a CLFS Stream

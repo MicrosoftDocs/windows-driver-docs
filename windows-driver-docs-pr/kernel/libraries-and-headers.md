@@ -2,12 +2,6 @@
 title: Libraries and Headers
 author: windows-driver-content
 description: Libraries and Headers
-MS-HAID:
-- 'NtAndZw\_44b6979e-d295-4da5-947b-b94cd540315d.xml'
-- 'kernel.libraries\_and\_headers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0d4d0273-775f-4cbb-8b7f-63b22f3ccdae
 ---
 

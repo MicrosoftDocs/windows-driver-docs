@@ -2,14 +2,13 @@
 title: Introduction to DPCs
 author: windows-driver-content
 description: Introduction to DPCs
-MS-HAID:
-- 'Intrupts\_37ac5ef2-2ec8-4676-9111-493e1001e858.xml'
-- 'kernel.introduction\_to\_dpcs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 10e8d0e7-c04a-4dca-853c-74c911f59341
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to DPCs

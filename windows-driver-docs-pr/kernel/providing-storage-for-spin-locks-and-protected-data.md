@@ -2,14 +2,13 @@
 title: Providing Storage for Spin Locks and Protected Data
 author: windows-driver-content
 description: Providing Storage for Spin Locks and Protected Data
-MS-HAID:
-- 'Synchro\_55d23c52-104e-4d09-b622-19254821e37f.xml'
-- 'kernel.providing\_storage\_for\_spin\_locks\_and\_protected\_data'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bde18474-10c3-4d9a-b120-6cbd5fc675cc
 keywords: ["storage WDK spin locks", "storing spin-lock-protected data", "spin locks WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Providing Storage for Spin Locks and Protected Data

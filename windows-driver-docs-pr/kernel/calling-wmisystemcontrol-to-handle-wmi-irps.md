@@ -2,14 +2,13 @@
 title: Calling WmiSystemControl to Handle WMI IRPs
 author: windows-driver-content
 description: Calling WmiSystemControl to Handle WMI IRPs
-MS-HAID:
-- 'WMI\_a7188d45-e69d-42e3-97a3-602666880ef3.xml'
-- 'kernel.calling\_wmisystemcontrol\_to\_handle\_wmi\_irps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a2fa53e2-6468-4c3c-8b41-9a97305abc43
 keywords: ["WMI WDK kernel , requests", "requests WDK WMI", "IRPs WDK WMI", "WmiSystemControl"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Calling WmiSystemControl to Handle WMI IRPs

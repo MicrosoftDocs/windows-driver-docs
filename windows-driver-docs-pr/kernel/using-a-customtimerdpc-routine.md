@@ -2,14 +2,13 @@
 title: Using a CustomTimerDpc Routine
 author: windows-driver-content
 description: Using a CustomTimerDpc Routine
-MS-HAID:
-- 'Synchro\_2b48d199-f49b-42b1-a788-f352bc76df86.xml'
-- 'kernel.using\_a\_customtimerdpc\_routine'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e95d01a2-4d13-40d2-aeb0-44c45e4a49f5
 keywords: ["timer objects WDK kernel , CustomTimerDpc routines", "CustomTimerDpc", "disabling timer objects", "timer objects WDK kernel , disabling", "periodic timers WDK kernel", "queuing timer objects", "timer objects WDK kernel , expirations", "timer expirations WDK kernel", "expired timers WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using a CustomTimerDpc Routine

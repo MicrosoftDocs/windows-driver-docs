@@ -2,14 +2,13 @@
 title: Alternatives to Mutex Objects
 author: windows-driver-content
 description: Alternatives to Mutex Objects
-MS-HAID:
-- 'Synchro\_3ec79760-d1c4-4c86-9893-2a7d738ec64a.xml'
-- 'kernel.alternatives\_to\_mutex\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c3b78155-426a-449d-8678-5666a7a12cbd
 keywords: ["kernel dispatcher objects WDK , mutex objects", "dispatcher objects WDK kernel , mutex objects", "mutex objects WDK kernel", "fast mutexes WDK kernel", "guarded mutexes WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Alternatives to Mutex Objects

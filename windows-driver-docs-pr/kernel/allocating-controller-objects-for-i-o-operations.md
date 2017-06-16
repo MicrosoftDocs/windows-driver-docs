@@ -2,14 +2,13 @@
 title: Allocating Controller Objects for I/O Operations
 author: windows-driver-content
 description: Allocating Controller Objects for I/O Operations
-MS-HAID:
-- 'ioprogleg\_c192b701-cb2b-4a72-9811-bbaf236bfc43.xml'
-- 'kernel.allocating\_controller\_objects\_for\_i\_o\_operations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8a5e3741-f8ea-4e27-bb7f-6c20da1d618d
 keywords: ["controller objects WDK kernel , allocating", "ControllerControl routines, controller object allocation", "IoAllocateController", "allocating controller objects"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating Controller Objects for I/O Operations

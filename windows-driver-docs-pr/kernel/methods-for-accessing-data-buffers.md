@@ -2,11 +2,13 @@
 title: Methods for Accessing Data Buffers
 author: windows-driver-content
 description: Methods for Accessing Data Buffers
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f95a0aec-65f9-44c9-8ae5-11bb4d832752
 keywords: ["I/O WDK kernel , data buffers", "data buffers WDK I/O", "buffers WDK I/O", "buffers WDK I/O , accessing", "data buffers WDK I/O , accessing", "data transfers WDK kernel , data buffer access", "transferring data WDK kernel , data buffer access"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Methods for Accessing Data Buffers

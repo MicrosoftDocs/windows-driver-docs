@@ -2,14 +2,13 @@
 title: Wait/Wake IRP Requests
 author: windows-driver-content
 description: Wait/Wake IRP Requests
-MS-HAID:
-- 'PwrMgmt\_bc274e02-bce1-4109-9cda-5f0a49636be9.xml'
-- 'kernel.wait\_wake\_irp\_requests'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c67d6dcb-f4a9-4df0-abb8-9d84fc44ec40
 keywords: ["sending wait/wake IRPs", "wake-up signal enabled WDK kernel", "wait/wake IRPs WDK power management , sending"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wait/Wake IRP Requests

@@ -2,14 +2,13 @@
 title: Understanding TPS Components
 author: windows-driver-content
 description: Understanding TPS Components
-MS-HAID:
-- 'ktm\_dg\_3b95c8dc-4434-4f08-b2d7-4e03f01c2194.xml'
-- 'kernel.understanding\_tps\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4bc962fa-8c05-4b0f-b634-9c0f435907b7
 keywords: ["transaction processing systems WDK KTM , components", "TPS WDK KTM , components", "transaction processing systems WDK KTM , scenarios", "TPS WDK KTM , scenarios", "resource managers WDK KTM , in a TPS"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Understanding TPS Components

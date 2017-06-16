@@ -2,12 +2,6 @@
 title: Windows Kernel-Mode Security Reference Monitor
 author: windows-driver-content
 description: Windows Kernel-Mode Security Reference Monitor
-MS-HAID:
-- 'secrefmon\_e40bd7cc-3c5a-49ee-b23a-a0c74438b766.xml'
-- 'kernel.windows\_kernel\_mode\_security\_reference\_monitor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 80c63d9c-cb8e-47c0-8afd-ca78dbc43327
 ---
 

@@ -2,14 +2,13 @@
 title: StartIo Routines in Lowest-Level Drivers
 author: windows-driver-content
 description: StartIo Routines in Lowest-Level Drivers
-MS-HAID:
-- 'IRPs\_a71d2049-2dd0-42d9-9186-44be83c9034b.xml'
-- 'kernel.startio\_routines\_in\_lowest\_level\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f79f8929-bcf4-46a2-bf0e-0f8fb0720dd9
 keywords: ["StartIo routines, lowest-level drivers", "I/O control requests WDK kernel", "buffered I/O WDK kernel", "direct I/O WDK kernel", "synchronization WDK IRPs"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # StartIo Routines in Lowest-Level Drivers

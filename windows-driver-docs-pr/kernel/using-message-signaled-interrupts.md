@@ -2,14 +2,13 @@
 title: Using Message-Signaled Interrupts
 author: windows-driver-content
 description: Using Message-Signaled Interrupts
-MS-HAID:
-- 'Intrupts\_8eb3b710-a51c-4eab-8afe-ca01f78acb03.xml'
-- 'kernel.using\_message\_signaled\_interrupts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5e1f8648-378f-4d5b-b936-4396d13cf002
 keywords: ["message-signaled interrupts WDK kernel , filtering", "filtering message-signaled interrupts WDK kernel", "MSIs WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Message-Signaled Interrupts

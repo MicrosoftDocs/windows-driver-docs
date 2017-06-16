@@ -2,14 +2,13 @@
 title: Device Objects and Device Stacks
 author: windows-driver-content
 description: Device Objects and Device Stacks
-MS-HAID:
-- 'DevObjts\_56cb324d-403e-4981-8b5a-c5d35d86c0b3.xml'
-- 'kernel.device\_objects\_and\_device\_stacks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6bd56072-d9a5-463b-8aad-be37c8d1a6b0
 keywords: ["kernel-mode drivers WDK , device objects", "kernel-mode drivers WDK , device stacks", "device objects WDK kernel", "device stacks WDK kernel", "DO WDK kernel", "objects WDK device objects"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Objects and Device Stacks

@@ -2,14 +2,13 @@
 title: Sample Kernel-Mode Drivers
 author: windows-driver-content
 description: Sample Kernel-Mode Drivers
-MS-HAID:
-- 'Intro\_b6edf23d-5d31-4812-9b5f-8b9bf2183bc8.xml'
-- 'kernel.sample\_kernel\_mode\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 09d08e07-e991-458f-aedf-018a0dd20af5
 keywords: ["kernel-mode drivers WDK , samples", "sample drivers WDK kernel-mode"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Kernel-Mode Drivers

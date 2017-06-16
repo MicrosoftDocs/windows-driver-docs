@@ -2,14 +2,13 @@
 title: Map Registers
 author: windows-driver-content
 description: Map Registers
-MS-HAID:
-- 'MemMgmt\_a32dda58-f30a-4bc4-b03e-fcaad6acbdee.xml'
-- 'kernel.map\_registers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0404f487-7a4f-43be-bbe0-b7da2087b8aa
 keywords: ["memory management WDK kernel , map registers", "map registers WDK kernel", "virtual address space mappings WDK kernel", "logical address space mappings WDK kernel", "physical address space mappings WDK kernel", "mapping memory", "address space mappings WDK kernel", "scatter/gather capabilities WDK kernel", "translating address space WDK kernel", "memory management WDK kernel , mapping addresses"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Map Registers

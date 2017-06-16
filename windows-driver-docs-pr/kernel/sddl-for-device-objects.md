@@ -2,14 +2,13 @@
 title: SDDL for Device Objects
 author: windows-driver-content
 description: SDDL for Device Objects
-MS-HAID:
-- 'DevObjts\_300e4be0-3585-4789-8363-650b6413200e.xml'
-- 'kernel.sddl\_for\_device\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c0e4432a-4429-4ecd-a2e5-f93a9e3caf48
 keywords: ["device objects WDK kernel , security", "security WDK device objects", "Security Descriptor Definition Language WDK device objects", "SDDL WDK device objects", "IoCreateDeviceSecure", "security descriptors WDK device objects"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SDDL for Device Objects

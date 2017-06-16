@@ -2,14 +2,13 @@
 title: Registering for Synchronous Driver Notification
 author: windows-driver-content
 description: Registering for Synchronous Driver Notification
-MS-HAID:
-- 'dhp\_4e25b67c-9322-4ef8-9349-bc1c33fe6957.xml'
-- 'kernel.registering\_for\_synchronous\_driver\_notification'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 852a2b69-c71f-4127-946e-8179954d504c
 keywords: ["driver notification WDK dynamic hardware partitioning , registering", "synchronous notification WDK dynamic hardware partitioning , registering", "notification WDK dynamic hardware partitioning , registering", "synchronous driver notification WDK dynamic hardware partitioning , registering", "registering for driver notifications WDK dynamic hardware partitioning"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering for Synchronous Driver Notification

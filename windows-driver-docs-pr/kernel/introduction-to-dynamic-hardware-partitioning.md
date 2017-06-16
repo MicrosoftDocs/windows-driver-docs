@@ -2,14 +2,13 @@
 title: Introduction to Dynamic Hardware Partitioning
 author: windows-driver-content
 description: Introduction to Dynamic Hardware Partitioning
-MS-HAID:
-- 'dhp\_4baa105c-65d5-4d39-b494-6535a808a870.xml'
-- 'kernel.introduction\_to\_dynamic\_hardware\_partitioning'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0d909c64-17c4-4f0e-85b7-4e0a6a92eeee
 keywords: ["dynamic hardware partitioning WDK , about dynamic hardware partitioning", "hardware partitioning WDK dynamic , about dynamic hardware partitioning", "partitions WDK dynamic hardware , about dynamic hardware partitioning", "hardware partitionable servers WDK", "partition units WDK dynamic hardware partitions", "statically partitionable servers WDK dynamic hardware partitioning", "dynamically partitionable servers WDK dynamic hardware partitioning", "hot add WDK dynamic hardware partitioning", "hot remove WDK dynamic hardware partitioning", "hot replace WDK dynamic hardware partitioning", "servers WDK dynamic hardware partitioning", "hardware partitions WDK"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Dynamic Hardware Partitioning

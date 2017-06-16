@@ -2,14 +2,13 @@
 title: DispatchRead, DispatchWrite, and DispatchReadWrite Routines
 author: windows-driver-content
 description: DispatchRead, DispatchWrite, and DispatchReadWrite Routines
-MS-HAID:
-- 'DrvComps\_fe700681-c72e-40bb-b89d-54c1a3bf3ec6.xml'
-- 'kernel.dispatchread\_\_dispatchwrite\_\_and\_dispatchreadwrite\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2982939a-4afb-4b21-9a96-0ac758f0fb6c
 keywords: ["DispatchRead routine", "DispatchWrite routine", "DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchWrite routine", "dispatch routines WDK kernel , DispatchRead routine", "read/write dispatch routines WDK kernel", "IRP_MJ_WRITE I/O function codes", "IRP_MJ_READ I/O function codes", "data transfers WDK kernel , read/write dispatch routines", "transferring data WDK kernel , read/write dispatch routines"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DispatchRead, DispatchWrite, and DispatchReadWrite Routines

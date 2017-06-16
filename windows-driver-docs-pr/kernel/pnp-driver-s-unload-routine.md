@@ -2,14 +2,13 @@
 title: PnP Driver's Unload Routine
 author: windows-driver-content
 description: PnP Driver's Unload Routine
-MS-HAID:
-- 'DrvComps\_bb14056f-a29d-45a7-8c73-4c9649a58daa.xml'
-- 'kernel.pnp\_driver\_s\_unload\_routine'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 71b30a84-d3c7-4674-94a6-b99f83567183
 keywords: ["Unload routines WDK kernel , PnP drivers", "PnP Unload routine WDK kernel", "Plug and Play Unload routine WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PnP Driver's Unload Routine

@@ -2,14 +2,13 @@
 title: Handling Transfers Asynchronously
 author: windows-driver-content
 description: Handling Transfers Asynchronously
-MS-HAID:
-- 'DrvComps\_2c32d5b5-ac63-48d7-99bf-bb087560d7ee.xml'
-- 'kernel.handling\_transfers\_asynchronously'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 84b231bd-54ff-4312-8e6c-cfc33e72b8cc
 keywords: ["DispatchRead routine", "DispatchWrite routine", "DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchWrite routine", "dispatch routines WDK kernel , DispatchRead routine", "read/write dispatch routines WDK kernel", "IRP_MJ_WRITE I/O function codes", "IRP_MJ_READ I/O function codes", "data transfers WDK kernel , read/write dispatch routines", "transferring data WDK kernel , read/write dispatch routines", "asynchronous transfers WDK kernel", "data transfers WDK kernel , asynchronous", "transferring data WDK kernel , asynchronous"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Transfers Asynchronously

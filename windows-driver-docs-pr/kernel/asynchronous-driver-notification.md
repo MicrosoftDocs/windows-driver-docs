@@ -2,14 +2,13 @@
 title: Asynchronous Driver Notification
 author: windows-driver-content
 description: Asynchronous Driver Notification
-MS-HAID:
-- 'dhp\_73a14c80-c4b6-42b5-959a-bf2b80e7905a.xml'
-- 'kernel.asynchronous\_driver\_notification'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a7f79de5-8958-4d85-8eea-761e04f1a52e
 keywords: ["driver notification WDK dynamic hardware partitioning , asynchronous", "asynchronous notification WDK dynamic hardware partitioning", "notification WDK dynamic hardware partitioning , asynchronous", "asynchronous driver notification WDK dynamic hardware partitioning"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Asynchronous Driver Notification

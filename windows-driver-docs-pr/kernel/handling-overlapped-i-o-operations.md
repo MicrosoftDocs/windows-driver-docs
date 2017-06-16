@@ -2,14 +2,13 @@
 title: Handling Overlapped I/O Operations
 author: windows-driver-content
 description: Handling Overlapped I/O Operations
-MS-HAID:
-- 'Intrupts\_56dec978-26c0-461e-bbf0-dc40f2eae996.xml'
-- 'kernel.handling\_overlapped\_i\_o\_operations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d13a9fa2-9f68-4c35-af79-dd3f8cec2805
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel", "DpcForIsr", "CustomDpc", "overlapped I/O WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Overlapped I/O Operations

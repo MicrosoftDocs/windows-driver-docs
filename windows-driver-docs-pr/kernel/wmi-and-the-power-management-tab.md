@@ -2,14 +2,13 @@
 title: WMI and the Power Management Tab
 author: windows-driver-content
 description: WMI and the Power Management Tab
-MS-HAID:
-- 'WMI\_5132950f-fd47-4b38-8f9f-ff044088d200.xml'
-- 'kernel.wmi\_and\_the\_power\_management\_tab'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ff270fc0-806b-4014-ba9c-9c321a10c893
 keywords: ["WMI WDK kernel , property sheets", "property sheets WDK WMI", "device property sheets WDK WMI", "power management WDK WMI", "property pages WDK WMI"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WMI and the Power Management Tab

@@ -2,14 +2,13 @@
 title: DispatchFlushBuffers Routines
 author: windows-driver-content
 description: DispatchFlushBuffers Routines
-MS-HAID:
-- 'DrvComps\_62d373ae-44ec-4935-9098-eedf656b2462.xml'
-- 'kernel.dispatchflushbuffers\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 091ce55c-e867-4ba4-aa25-5c20af45d9c2
 keywords: ["dispatch routines WDK kernel , DispatchFlushBuffers routine", "DispatchFlushBuffers routine", "IRP_MJ_FLUSH_BUFFERS I/O function code", "flush buffers dispatch routines WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DispatchFlushBuffers Routines

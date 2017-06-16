@@ -2,14 +2,13 @@
 title: Setting Up a Transfer Operation
 author: windows-driver-content
 description: Setting Up a Transfer Operation
-MS-HAID:
-- 'ioprogdma\_5df81da9-9201-4e9a-a330-30e3001decc3.xml'
-- 'kernel.setting\_up\_a\_transfer\_operation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cabac16d-b946-4b96-af2c-5fd0a0d848da
 keywords: ["bus-master DMA WDK kernel", "DMA transfers WDK kernel , bus-master DMA", "adapter objects WDK kernel , bus-master DMA", "logical address ranges WDK DMA", "addresses WDK DMA", "transfer operations WDK DMA"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Up a Transfer Operation

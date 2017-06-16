@@ -2,14 +2,13 @@
 title: Using GUIDs in Drivers
 author: windows-driver-content
 description: Using GUIDs in Drivers
-MS-HAID:
-- 'Other\_9666f8ca-914c-43a2-a397-38d6c065a78a.xml'
-- 'kernel.using\_guids\_in\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b70a2f64-dd7b-4d76-a4cf-dcb60ce0585c
 keywords: ["globally unique identifiers WDK kernel", "GUIDs WDK kernel", "identifiers WDK GUIDs", "header files WDK GUIDs", "kernel-mode drivers WDK , GUIDs"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using GUIDs in Drivers

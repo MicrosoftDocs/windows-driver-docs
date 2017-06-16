@@ -2,14 +2,13 @@
 title: Handling a Wait/Wake IRP in a Bus Driver (PDO)
 author: windows-driver-content
 description: Handling a Wait/Wake IRP in a Bus Driver (PDO)
-MS-HAID:
-- 'PwrMgmt\_76837e04-5b49-4011-ac83-6763a1e8c0e6.xml'
-- 'kernel.handling\_a\_wait\_wake\_irp\_in\_a\_bus\_driver\_\_pdo\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9583b935-26e1-49c6-827d-932762af114d
 keywords: ["receiving wait/wake IRPs", "wait/wake IRPs WDK power management , receiving", "bus drivers WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling a Wait/Wake IRP in a Bus Driver (PDO)

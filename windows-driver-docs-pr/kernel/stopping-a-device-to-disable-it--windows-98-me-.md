@@ -2,14 +2,13 @@
 title: Stopping a Device to Disable It (Windows 98/Me)
 author: windows-driver-content
 description: Stopping a Device to Disable It (Windows 98/Me)
-MS-HAID:
-- 'PlugPlay\_5fe55019-ca36-4afd-9851-35766888dd67.xml'
-- 'kernel.stopping\_a\_device\_to\_disable\_it\_\_windows\_98\_me\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2fc42fe4-ad29-4a51-9560-74b568bcd129
 keywords: ["disabling PnP devices"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stopping a Device to Disable It (Windows 98/Me)

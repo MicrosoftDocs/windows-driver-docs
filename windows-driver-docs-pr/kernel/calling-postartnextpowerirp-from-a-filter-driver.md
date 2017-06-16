@@ -2,14 +2,13 @@
 title: Calling PoStartNextPowerIrp from a Filter Driver
 author: windows-driver-content
 description: Calling PoStartNextPowerIrp from a Filter Driver
-MS-HAID:
-- 'PwrMgmt\_682274f6-0fbc-4f70-ac30-caa2b791ac32.xml'
-- 'kernel.calling\_postartnextpowerirp\_from\_a\_filter\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6005f107-8f90-4530-91c2-9f0947cacb0a
 keywords: ["power IRPs WDK kernel , PoStartNextPowerIrp", "PoStartNextPowerIrp", "filter drivers WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Calling PoStartNextPowerIrp from a Filter Driver

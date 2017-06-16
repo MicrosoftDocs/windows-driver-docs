@@ -2,14 +2,13 @@
 title: Types of Windows Drivers
 author: windows-driver-content
 description: Types of Windows Drivers
-MS-HAID:
-- 'Intro\_1ba85edd-bf42-47a7-a901-c5f1ace634b8.xml'
-- 'kernel.types\_of\_windows\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e6696c6b-2d3c-473c-9f46-576fe0c40496
 keywords: ["Windows drivers WDK , types", "drivers WDK , types", "kernel-mode drivers WDK , types", "highest-level drivers WDK", "intermediate drivers WDK kernel", "lowest-level drivers WDK"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Types of Windows Drivers

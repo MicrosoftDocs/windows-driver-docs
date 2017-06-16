@@ -2,12 +2,6 @@
 title: Synchronizing Cancellation in Driver Routines that Process IRPs
 author: windows-driver-content
 description: Synchronizing Cancellation in Driver Routines that Process IRPs
-MS-HAID:
-- 'IRPs\_a71d8710-1708-4c68-bd57-56335867457c.xml'
-- 'kernel.synchronizing\_cancellation\_in\_driver\_routines\_that\_process\_irps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0b252ebd-b9d5-4747-9a27-c1ecffdbae18
 ---
 

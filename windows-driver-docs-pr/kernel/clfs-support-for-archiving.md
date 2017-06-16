@@ -2,14 +2,13 @@
 title: CLFS Support for Archiving
 author: windows-driver-content
 description: CLFS Support for Archiving
-MS-HAID:
-- 'Clfs\_guide\_2552a2b7-adf9-4735-ab1c-e5b16776df7a.xml'
-- 'kernel.clfs\_support\_for\_archiving'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5a07d7d2-4939-48f8-bd4c-855af61034fb
 keywords: ["Common Log File System WDK kernel , archiving", "CLFS WDK kernel , archiving", "archiving WDK CLFS", "non-ephemeral logs WDK CLFS", "archive tail WDK CLFS"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CLFS Support for Archiving

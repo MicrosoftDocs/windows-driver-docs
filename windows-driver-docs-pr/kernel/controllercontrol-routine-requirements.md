@@ -2,14 +2,13 @@
 title: ControllerControl Routine Requirements
 author: windows-driver-content
 description: ControllerControl Routine Requirements
-MS-HAID:
-- 'ioprogleg\_2b0cdcd8-cb5c-4b39-a8df-cb3db90af226.xml'
-- 'kernel.controllercontrol\_routine\_requirements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b311c0b0-f7b1-4276-a165-5c658657b198
 keywords: ["controller objects WDK kernel , writing ControllerControl routines", "ControllerControl routines, writing", "ControllerControl routines, requirements"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ControllerControl Routine Requirements

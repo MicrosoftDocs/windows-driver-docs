@@ -2,14 +2,13 @@
 title: Calling PoStartNextPowerIrp from a Device Power Policy Owner
 author: windows-driver-content
 description: Calling PoStartNextPowerIrp from a Device Power Policy Owner
-MS-HAID:
-- 'PwrMgmt\_6c44287b-1795-4f14-b130-3baf26aa6e45.xml'
-- 'kernel.calling\_postartnextpowerirp\_from\_a\_device\_power\_policy\_owner'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 58576ff8-638e-4928-9a2d-337ac3f4d2d8
 keywords: ["power IRPs WDK kernel , PoStartNextPowerIrp", "PoStartNextPowerIrp", "device power policy WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Calling PoStartNextPowerIrp from a Device Power Policy Owner

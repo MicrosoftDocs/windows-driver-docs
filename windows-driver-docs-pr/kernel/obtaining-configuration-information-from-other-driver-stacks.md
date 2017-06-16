@@ -2,14 +2,13 @@
 title: Obtaining Configuration Information from Other Driver Stacks
 author: windows-driver-content
 description: Obtaining Configuration Information from Other Driver Stacks
-MS-HAID:
-- 'ioprogleg\_ef75b26b-0fd0-440f-866f-e7bfd2646f00.xml'
-- 'kernel.obtaining\_configuration\_information\_from\_other\_driver\_stacks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ca0f3d51-24c6-44df-828f-6aeb2565c1ae
 keywords: ["I/O WDK kernel , device configuration space", "device configuration space WDK I/O", "configuration space WDK I/O", "space WDK I/O", "driver stacks WDK configuration info", "BUS_INTERFACE_STANDARD"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Obtaining Configuration Information from Other Driver Stacks

@@ -2,14 +2,13 @@
 title: Introduction to Plug and Play
 author: windows-driver-content
 description: Introduction to Plug and Play
-MS-HAID:
-- 'PlugPlay\_0b214cd5-f379-43cb-80e5-d5bb9102b875.xml'
-- 'kernel.introduction\_to\_plug\_and\_play'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2ad9663b-ea47-4f7a-a382-53de3719214b
 keywords: ["PnP WDK kernel , about Plug and Play", "Plug and Play WDK kernel , about Plug and Play"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Plug and Play

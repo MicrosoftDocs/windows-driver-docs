@@ -2,14 +2,13 @@
 title: Queuing and Dequeuing IRPs
 author: windows-driver-content
 description: Queuing and Dequeuing IRPs
-MS-HAID:
-- 'IRPs\_bffcf58f-d1dd-4073-81c2-b795ea921255.xml'
-- 'kernel.queuing\_and\_dequeuing\_irps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 736107bf-4790-4562-8785-c37fbbed03d3
 keywords: ["IRPs WDK kernel , queuing", "queuing IRPs", "dequeuing IRPs", "multiple I/O request handling WDK kernel", "internal IRP queues WDK kernel", "synchronization WDK IRPs", "starting I/O operations", "I/O WDK kernel , operation starting", "StartIo routines", "cancel-safe IRP queues WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Queuing and Dequeuing IRPs

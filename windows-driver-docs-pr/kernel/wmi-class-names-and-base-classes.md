@@ -2,14 +2,13 @@
 title: WMI Class Names and Base Classes
 author: windows-driver-content
 description: WMI Class Names and Base Classes
-MS-HAID:
-- 'WMI\_f3801d44-ed43-4cb3-bcef-f8fa2ba8ff80.xml'
-- 'kernel.wmi\_class\_names\_and\_base\_classes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6c3f74a3-e596-4694-8619-db38d67e030c
 keywords: ["base classes WDK WMI", "names WDK WMI", "classes WDK WMI", "WMI WDK kernel , classes"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WMI Class Names and Base Classes

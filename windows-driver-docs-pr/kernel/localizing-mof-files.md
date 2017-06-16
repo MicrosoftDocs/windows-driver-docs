@@ -2,14 +2,13 @@
 title: Localizing MOF Files
 author: windows-driver-content
 description: Localizing MOF Files
-MS-HAID:
-- 'WMI\_15f5e4d6-0d14-476d-aa2f-bb6b0c79b69c.xml'
-- 'kernel.localizing\_mof\_files'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9ca27901-04aa-47b4-a2a7-aee071f7312a
 keywords: ["MOF files WDK WMI", "localizing MOF files"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Localizing MOF Files

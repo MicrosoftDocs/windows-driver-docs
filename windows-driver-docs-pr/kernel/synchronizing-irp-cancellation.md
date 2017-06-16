@@ -2,14 +2,13 @@
 title: Synchronizing IRP Cancellation
 author: windows-driver-content
 description: Synchronizing IRP Cancellation
-MS-HAID:
-- 'IRPs\_2f3a8c50-8b9f-48fe-8f40-9cead67f9585.xml'
-- 'kernel.synchronizing\_irp\_cancellation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a110c6ad-794d-4b8a-a89d-bceb08ea82b8
 keywords: ["canceling IRPs, synchronization", "Cancel routines, synchronization", "synchronization WDK IRPs", "cancelable IRPs WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Synchronizing IRP Cancellation

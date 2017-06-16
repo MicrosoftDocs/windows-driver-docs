@@ -2,14 +2,13 @@
 title: Stopping a Device to Rebalance Resources
 author: windows-driver-content
 description: Stopping a Device to Rebalance Resources
-MS-HAID:
-- 'PlugPlay\_fefed34a-8c59-42e6-a406-b0bc1fe7e89a.xml'
-- 'kernel.stopping\_a\_device\_to\_rebalance\_resources'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: eed28d41-8a9d-4b9e-90d7-ea4ddeeaad2d
 keywords: ["rebalancing resources WDK PnP", "resource rebalancing WDK PnP", "pausing PnP devices"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stopping a Device to Rebalance Resources

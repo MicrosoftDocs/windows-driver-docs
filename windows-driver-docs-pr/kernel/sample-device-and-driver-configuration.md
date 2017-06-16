@@ -2,14 +2,13 @@
 title: Sample Device and Driver Configuration
 author: windows-driver-content
 description: Sample Device and Driver Configuration
-MS-HAID:
-- 'WDMIntro\_847b42e8-f7ce-44b0-a34f-0cd2a6474620.xml'
-- 'kernel.sample\_device\_and\_driver\_configuration'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 803262b2-0882-46d0-9c4f-63e59eb4beaa
 keywords: ["WDM drivers WDK kernel , configurations", "WDM drivers WDK kernel , layered drivers", "layered drivers WDK kernel", "driver layers WDK WDM", "keyboards WDK kernel", "mouse WDK kernel", "hardware configurations WDK kernel", "intermediate drivers WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Device and Driver Configuration

@@ -2,14 +2,13 @@
 title: Processing an Asynchronous Driver Notification
 author: windows-driver-content
 description: Processing an Asynchronous Driver Notification
-MS-HAID:
-- 'dhp\_f1fd24f1-476e-4f30-b44a-38fd2973abe0.xml'
-- 'kernel.processing\_an\_asynchronous\_driver\_notification'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7e7ed971-5891-4b91-909a-1e140b764fed
 keywords: ["driver notification WDK dynamic hardware partitioning , processing", "asynchronous driver notification WDK dynamic hardware partitioning , processing", "registering for driver notification WDK dynamic hardware partitioning , asynchronous"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Processing an Asynchronous Driver Notification

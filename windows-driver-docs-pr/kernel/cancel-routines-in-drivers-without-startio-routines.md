@@ -2,14 +2,13 @@
 title: Cancel Routines in Drivers without StartIo Routines
 author: windows-driver-content
 description: Cancel Routines in Drivers without StartIo Routines
-MS-HAID:
-- 'IRPs\_77d55988-d632-4d10-904b-7bfe79736ff8.xml'
-- 'kernel.cancel\_routines\_in\_drivers\_without\_startio\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c6e1a05e-28ed-4f42-8678-55f01303b312
 keywords: ["canceling IRPs, StartIo routines", "Cancel routines, StartIo routines", "StartIo routines, Cancel routines"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Cancel Routines in Drivers without StartIo Routines

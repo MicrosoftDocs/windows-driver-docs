@@ -2,14 +2,13 @@
 title: Design Goals for Kernel-Mode Drivers
 author: windows-driver-content
 description: Design Goals for Kernel-Mode Drivers
-MS-HAID:
-- 'Intro\_c4d63d6b-11b5-4033-918b-48269f11e336.xml'
-- 'kernel.design\_goals\_for\_kernel\_mode\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2799556e-0359-4388-acf3-74d90eb86a0f
 keywords: ["kernel-mode drivers WDK , design goals"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Design Goals for Kernel-Mode Drivers

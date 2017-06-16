@@ -2,14 +2,13 @@
 title: Which Type of DPC Should You Use
 author: windows-driver-content
 description: Which Type of DPC Should You Use
-MS-HAID:
-- 'Intrupts\_92bb7010-416b-46b7-804a-489578227b70.xml'
-- 'kernel.which\_type\_of\_dpc\_should\_you\_use\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7a8e6d75-5573-4a94-a895-fa2f70856807
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel", "DpcForIsr", "CustomDpc"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Which Type of DPC Should You Use?

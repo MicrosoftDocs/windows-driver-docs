@@ -2,14 +2,13 @@
 title: Guidelines for Writing PnP Notification Callback Routines
 author: windows-driver-content
 description: Guidelines for Writing PnP Notification Callback Routines
-MS-HAID:
-- 'PlugPlay\_db01ab93-de66-4f81-8905-1577fbe2e833.xml'
-- 'kernel.guidelines\_for\_writing\_pnp\_notification\_callback\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2153b4c2-f60f-4ac9-8eee-66c5f3a9f414
 keywords: ["notifications WDK PnP , callback routines", "callback routines WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Guidelines for Writing PnP Notification Callback Routines

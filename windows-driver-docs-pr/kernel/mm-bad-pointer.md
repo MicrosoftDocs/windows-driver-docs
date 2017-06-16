@@ -2,9 +2,6 @@
 title: Windows kernel macros
 author: windows-driver-content
 description: Windows kernel macros
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 91366400-3307-4F13-A839-50BA85B7F73E
 ---
 

@@ -2,9 +2,6 @@
 title: Timer Accuracy
 author: windows-driver-content
 description: A system timer routine typically enables the caller to specify either an absolute or a relative expiration time for a timer.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: CA29DC02-1AEA-4A13-B2D6-8C8052E21EDB
 ---
 

@@ -2,12 +2,6 @@
 title: Windows Kernel-Mode DMA Library
 author: windows-driver-content
 description: Windows Kernel-Mode DMA Library
-MS-HAID:
-- 'dmalib\_6b1c8717-1554-46e9-9156-1afbee9380b2.xml'
-- 'kernel.windows\_kernel\_mode\_dma\_library'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: db6cc33a-474b-44a2-bd55-769ff31abae7
 ---
 

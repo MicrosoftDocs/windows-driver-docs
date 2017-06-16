@@ -2,14 +2,13 @@
 title: Using Spin Locks An Example
 author: windows-driver-content
 description: Using Spin Locks An Example
-MS-HAID:
-- 'Synchro\_ada59f10-8639-4428-96c3-fb1195d53971.xml'
-- 'kernel.using\_spin\_locks\_\_an\_example'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0f3cd7fe-d3e6-4024-9b2f-7140c6ddd1ea
 keywords: ["spin locks WDK kernel", "interrupt spin locks WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Spin Locks: An Example

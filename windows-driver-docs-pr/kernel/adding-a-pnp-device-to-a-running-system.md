@@ -2,14 +2,13 @@
 title: Adding a PnP Device to a Running System
 author: windows-driver-content
 description: Adding a PnP Device to a Running System
-MS-HAID:
-- 'PlugPlay\_25cfc70e-3b00-4416-87e0-a9f5c9341f19.xml'
-- 'kernel.adding\_a\_pnp\_device\_to\_a\_running\_system'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 73d14ba1-6cf1-44eb-8a98-8c2fe44c11bb
 keywords: ["PnP WDK kernel , adding device to running system", "Plug and Play WDK kernel , adding device to running system", "adding PnP device to running system", "enumerating PnP devices WDK PnP", "reporting PnP devices", "devnodes WDK PnP", "device nodes WDK PnP", "function drivers WDK PnP", "filter drivers WDK PnP", "AddDevice routine WDK PnP", "IRPs WDK PnP", "I/O request packets WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding a PnP Device to a Running System

@@ -2,14 +2,13 @@
 title: Starting a Device in a Bus Driver
 author: windows-driver-content
 description: Starting a Device in a Bus Driver
-MS-HAID:
-- 'PlugPlay\_c85c02bd-8649-4016-b792-1b523a5199ed.xml'
-- 'kernel.starting\_a\_device\_in\_a\_bus\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1babeabb-1866-4ca5-b5a3-380c246596e5
 keywords: ["bus drivers WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Starting a Device in a Bus Driver

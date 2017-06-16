@@ -2,14 +2,13 @@
 title: Passing IRPs down the Driver Stack
 author: windows-driver-content
 description: Passing IRPs down the Driver Stack
-MS-HAID:
-- 'IRPs\_1d986947-a261-4f64-afb9-169c63c1f7f9.xml'
-- 'kernel.passing\_irps\_down\_the\_driver\_stack'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 69d912c5-83cf-4651-b379-de6baea8ddd0
 keywords: ["IRPs WDK kernel , passing down stack", "passing IRPs down driver stack WDK", "transferring IRPs down driver stack", "I/O stack locations WDK kernel", "stack locations WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Passing IRPs down the Driver Stack

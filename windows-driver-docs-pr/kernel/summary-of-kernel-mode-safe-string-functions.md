@@ -2,14 +2,13 @@
 title: Summary of Kernel-Mode Safe String Functions
 author: windows-driver-content
 description: Summary of Kernel-Mode Safe String Functions
-MS-HAID:
-- 'Other\_411a017d-20c3-4d16-8397-c565ea976224.xml'
-- 'kernel.summary\_of\_kernel\_mode\_safe\_string\_functions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 71b67d88-2a9a-4c9d-b64c-5fd7fe7e5cda
 keywords: ["safe string functions WDK"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Summary of Kernel-Mode Safe String Functions

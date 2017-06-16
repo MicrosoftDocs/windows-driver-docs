@@ -2,14 +2,13 @@
 title: Registry Key Object Routines
 author: windows-driver-content
 description: Registry Key Object Routines
-MS-HAID:
-- 'Other\_716701e4-2217-44e0-978b-4abf3faff31a.xml'
-- 'kernel.registry\_key\_object\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9db6ff0d-8371-41bc-82c4-1bb56f5430f2
 keywords: ["registry WDK kernel , object routines", "driver registry information WDK kernel , object routines", "object routines WDK kernel", "registry-key objects WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registry Key Object Routines

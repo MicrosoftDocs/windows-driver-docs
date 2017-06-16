@@ -2,14 +2,13 @@
 title: File-Backed and Page-File-Backed Sections
 author: windows-driver-content
 description: File-Backed and Page-File-Backed Sections
-MS-HAID:
-- 'MemMgmt\_87e8805d-06df-443b-b678-ae36fe30d511.xml'
-- 'kernel.file\_backed\_and\_page\_file\_backed\_sections'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5967678a-cbc3-4db0-86d8-14ffc79f610e
 keywords: ["file-backed sections WDK kernel", "page-file-backed sections WDK kernel", "backed memory sections WDK kernel", "paged file backups WDK kernel", "temporarily shared data WDK kernel", "permanently shared data WDK kernel", "memory sections WDK kernel", "section objects WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # File-Backed and Page-File-Backed Sections

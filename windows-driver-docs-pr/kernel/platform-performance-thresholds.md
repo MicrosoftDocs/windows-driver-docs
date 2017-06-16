@@ -2,9 +2,6 @@
 title: Platform Performance Thresholds
 author: windows-driver-content
 description: There are two types of performance thresholds - static thresholds which remain fixed for the platform and dynamic thresholds that change at runtime.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4FB3AFEF-1560-4683-9D57-3029DAA50FE8
 ---
 

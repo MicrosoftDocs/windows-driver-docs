@@ -2,12 +2,6 @@
 title: Windows Kernel-Mode CLFS Library
 author: windows-driver-content
 description: Windows Kernel-Mode CLFS Library
-MS-HAID:
-- 'clfslib\_fadd322c-495a-42b2-b4f0-7f6bad92d74d.xml'
-- 'kernel.windows\_kernel\_mode\_clfs\_library'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4da3cb49-dc20-4713-813b-ff458c99ab90
 ---
 

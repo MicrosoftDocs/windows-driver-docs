@@ -2,14 +2,13 @@
 title: Technique 2 Using IoIs32bitProcess
 author: windows-driver-content
 description: Technique 2 Using IoIs32bitProcess
-MS-HAID:
-- 'Other\_47d35538-b78f-47b0-ae12-be6881df5551.xml'
-- 'kernel.technique\_2\_\_using\_iois32bitprocess'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 41e9c0e6-59dd-4e01-9c82-5aba40d8b97f
 keywords: ["32-bit I/O support WDK 64-bit , IoIs32bitProcess", "IoIs32bitProcess"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Technique 2: Using IoIs32bitProcess

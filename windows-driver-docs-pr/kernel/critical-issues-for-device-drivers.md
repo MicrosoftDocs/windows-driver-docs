@@ -2,14 +2,13 @@
 title: Critical Issues for Device Drivers
 author: windows-driver-content
 description: Critical Issues for Device Drivers
-MS-HAID:
-- 'dhp\_3a26981a-f0df-44a0-a12d-0668ac831745.xml'
-- 'kernel.critical\_issues\_for\_device\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: af09c548-02f6-448e-bdd8-7521b4ed7c96
 keywords: ["dynamic hardware partitioning WDK , critical issues", "hardware partitioning WDK dynamic , critical issues", "partitions WDK dynamic hardware , critical issues", "dynamically partitionable servers WDK dynamic hardware partitioning", "servers WDK dynamic hardware partitioning"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Critical Issues for Device Drivers

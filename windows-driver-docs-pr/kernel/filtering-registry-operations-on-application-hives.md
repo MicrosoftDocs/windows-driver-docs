@@ -2,9 +2,6 @@
 title: Filtering Registry Operations on Application Hives
 author: windows-driver-content
 description: Initial support for application hives was introduced in Windows Vista.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: A8D06E25-7CC6-476A-AB55-DAFE19954347
 ---
 

@@ -2,12 +2,6 @@
 title: Dynamically Configuring MSI-X
 author: windows-driver-content
 description: Dynamically Configuring MSI-X
-MS-HAID:
-- 'Intrupts\_d4ecc293-3a69-4f7b-8447-0a3f8a9c4970.xml'
-- 'kernel.dynamically\_configuring\_msi\_x'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 53051239-e00f-41e8-b95d-9618693e696d
 ---
 

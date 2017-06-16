@@ -2,12 +2,6 @@
 title: Dispatch Routine Functionality
 author: windows-driver-content
 description: Dispatch Routine Functionality
-MS-HAID:
-- 'DrvComps\_3f0e8810-b24b-4337-8980-e3bfd40baf3f.xml'
-- 'kernel.dispatch\_routine\_functionality'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cfc191af-2b65-465b-972e-9617a8f7d8b7
 ---
 

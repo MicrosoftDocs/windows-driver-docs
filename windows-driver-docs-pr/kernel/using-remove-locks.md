@@ -2,14 +2,13 @@
 title: Using Remove Locks
 author: windows-driver-content
 description: Using Remove Locks
-MS-HAID:
-- 'PlugPlay\_73c020b2-ef0a-4904-8eeb-2e766c04a1f4.xml'
-- 'kernel.using\_remove\_locks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 78ca7fe5-ceed-4752-bf1b-d13309097cd8
 keywords: ["remove locks WDK PnP", "lock routines WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Remove Locks

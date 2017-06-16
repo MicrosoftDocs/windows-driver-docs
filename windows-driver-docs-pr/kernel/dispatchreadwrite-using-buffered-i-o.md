@@ -2,14 +2,13 @@
 title: DispatchReadWrite Using Buffered I/O
 author: windows-driver-content
 description: DispatchReadWrite Using Buffered I/O
-MS-HAID:
-- 'DrvComps\_f2299414-b5ef-4c27-8466-8aaa7f37a5cc.xml'
-- 'kernel.dispatchreadwrite\_using\_buffered\_i\_o'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bb8ce47d-5722-4050-9492-bec154744597
 keywords: ["DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchReadWrite routine", "read/write dispatch routines WDK kernel", "IRP_MJ_WRITE I/O function codes", "IRP_MJ_READ I/O function codes", "data transfers WDK kernel , read/write dispatch routines", "transferring data WDK kernel , read/write dispatch routines", "buffered I/O WDK kernel", "I/O WDK kernel , buffered"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DispatchReadWrite Using Buffered I/O

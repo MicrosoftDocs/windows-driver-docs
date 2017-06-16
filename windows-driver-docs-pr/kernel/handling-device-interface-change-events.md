@@ -2,14 +2,13 @@
 title: Handling Device Interface Change Events
 author: windows-driver-content
 description: Handling Device Interface Change Events
-MS-HAID:
-- 'PlugPlay\_b0712033-08a2-4b43-a37a-67166217bb6d.xml'
-- 'kernel.handling\_device\_interface\_change\_events'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8966ca72-41d6-42bb-84a9-8f907a514338
 keywords: ["notifications WDK PnP , device interface changes", "EventCategoryDeviceInterfaceChange notification", "device interface change notifications WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Device Interface Change Events

@@ -2,14 +2,13 @@
 title: Creating IOCTL Requests in Drivers
 author: windows-driver-content
 description: Creating IOCTL Requests in Drivers
-MS-HAID:
-- 'IRPs\_d2135580-f59c-4d03-b746-287c571c8bae.xml'
-- 'kernel.creating\_ioctl\_requests\_in\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 155e2577-0e9a-4c0b-a25a-8516ce3de631
 keywords: ["I/O control codes WDK kernel , creating requests", "control codes WDK IOCTLs , creating requests", "IOCTLs WDK kernel , creating requests", "synchronization WDK IRPs", "embedded pointers WDK IOCTLs"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating IOCTL Requests in Drivers

@@ -2,14 +2,13 @@
 title: Introduction to Driver Objects
 author: windows-driver-content
 description: Introduction to Driver Objects
-MS-HAID:
-- 'DrvComps\_cb8046ec-d73e-45c2-865e-6fc1f9996de4.xml'
-- 'kernel.introduction\_to\_driver\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 497ee2dc-671d-408e-b228-16dc24532375
 keywords: ["driver objects WDK kernel", "standard driver routines WDK kernel , driver objects", "driver routines WDK kernel , driver objects", "routines WDK kernel , driver objects", "objects WDK driver objects"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Driver Objects

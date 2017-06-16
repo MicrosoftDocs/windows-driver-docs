@@ -2,14 +2,13 @@
 title: System Power Policy
 author: windows-driver-content
 description: System Power Policy
-MS-HAID:
-- 'PwrMgmt\_7346a77a-0a37-43e7-9bee-149c3fdd93ad.xml'
-- 'kernel.system\_power\_policy'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 98b1a777-3ac1-40c2-a902-cb5326c20621
 keywords: ["system-wide power policy WDK kernel", "power policy WDK kernel", "power supply WDK kernel", "system power policy WDK kernel", "AC power WDK kernel", "DC power WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # System Power Policy

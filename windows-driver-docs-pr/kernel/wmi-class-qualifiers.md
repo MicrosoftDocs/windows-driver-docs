@@ -2,14 +2,13 @@
 title: WMI Class Qualifiers
 author: windows-driver-content
 description: WMI Class Qualifiers
-MS-HAID:
-- 'WMI\_3dcc0f82-29e3-4479-9fae-cf56c025f7ab.xml'
-- 'kernel.wmi\_class\_qualifiers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 62a00184-59b7-496d-b523-f4adb879d402
 keywords: ["class qualifiers WDK WMI", "MOF class qualifiers WDK WMI", "embedded classes WDK WMI", "dynamic MOF qualifiers WDK WMI", "static MOF qualifiers WDK WMI", "classes WDK WMI", "WMI WDK kernel , classes"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WMI Class Qualifiers

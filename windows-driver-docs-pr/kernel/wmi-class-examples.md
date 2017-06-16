@@ -2,14 +2,13 @@
 title: WMI Class Examples
 author: windows-driver-content
 description: WMI Class Examples
-MS-HAID:
-- 'WMI\_224dad4b-d845-4ebc-befc-4a3fb26c3386.xml'
-- 'kernel.wmi\_class\_examples'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5b0ef39a-32bd-4f62-ad8f-fdab74409294
 keywords: ["classes WDK WMI", "WMI WDK kernel , classes"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WMI Class Examples

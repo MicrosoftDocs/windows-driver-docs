@@ -2,14 +2,13 @@
 title: Setting up IRPs in Intermediate Drivers
 author: windows-driver-content
 description: Setting up IRPs in Intermediate Drivers
-MS-HAID:
-- 'Other\_b2fc3316-7036-40ad-b7b7-8180acf3232a.xml'
-- 'kernel.setting\_up\_irps\_in\_intermediate\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0d04a951-a68e-4fa1-bdc6-dd92ec49deae
 keywords: ["removable media WDK kernel , intermediate driver IRPs", "intermediate driver IRPs WDK removable media"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting up IRPs in Intermediate Drivers

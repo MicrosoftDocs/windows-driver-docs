@@ -2,14 +2,13 @@
 title: When to Use Kernel-Mode KTM
 author: windows-driver-content
 description: When to Use Kernel-Mode KTM
-MS-HAID:
-- 'ktm\_dg\_70ae3c70-3c08-4beb-ac5d-e378eab1a0b5.xml'
-- 'kernel.when\_to\_use\_kernel\_mode\_ktm'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: deb3372d-19c4-4a17-b499-1da485e89276
 keywords: ["Kernel Transaction Manager WDK , when to use", "KTM WDK , when to use"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # When to Use Kernel-Mode KTM

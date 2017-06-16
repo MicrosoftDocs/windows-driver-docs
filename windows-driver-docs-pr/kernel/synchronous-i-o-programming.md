@@ -2,12 +2,6 @@
 title: Synchronous I/O Programming
 author: windows-driver-content
 description: Synchronous I/O Programming
-MS-HAID:
-- 'ioproggen\_644a90cc-1e9b-4497-82f6-b94b64daa537.xml'
-- 'kernel.synchronous\_i\_o\_programming'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ef021dd2-bd1d-4fb0-853f-014c62bda76b
 ---
 

@@ -2,14 +2,13 @@
 title: Configurable
 author: windows-driver-content
 description: Configurable
-MS-HAID:
-- 'Intro\_46a40803-b585-4d8a-9c52-ef15862304ac.xml'
-- 'kernel.configurable'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0dcdc2eb-0a27-4739-be9d-48a0382347cf
 keywords: ["hardware-configurable devices WDK kernel", "software-configurable drivers WDK kernel", "configurable devices and drivers WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configurable

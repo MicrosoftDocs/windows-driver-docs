@@ -2,9 +2,6 @@
 title: Kernel Macros, Global Variables, and Opaque Structures
 author: windows-driver-content
 description: This section describes macros, global variables, and opaque structures.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: DD8860B7-C918-4121-8C22-83E96FC3E740
 ---
 

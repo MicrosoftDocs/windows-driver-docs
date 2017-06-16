@@ -2,14 +2,13 @@
 title: Power Manager
 author: windows-driver-content
 description: Power Manager
-MS-HAID:
-- 'PwrMgmt\_cc8a6cef-5cb2-4b3f-9bcc-0d6d9d67d5d9.xml'
-- 'kernel.power\_manager'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f7727368-6edd-427b-9fb3-02f80538807b
 keywords: ["power manager WDK kernel", "usage manager WDK power management", "power IRPs WDK kernel , power manager", "system-wide power policy WDK kernel", "power policy WDK kernel", "sleep power management WDK kernel", "hibernation power management WDK kernel", "shutdown power management WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Power Manager

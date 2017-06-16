@@ -2,11 +2,13 @@
 title: Deleting a System-Allocated Timer Object
 author: windows-driver-content
 description: Starting with Windows 8.1, the ExDeleteTimer routine deletes a timer object that was created by the ExAllocateTimer routine.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7D119448-3890-4E8F-BC79-7FEB3213B693
 keywords: ["ExXxxTimer routines", "ExAllocateTimer", "ExDeleteTimer", "ExSetTimer", "ExCancelTimer", "ExTimerCallback", "ExTimerDeleteCallback", "EX_TIMER"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Deleting a System-Allocated Timer Object

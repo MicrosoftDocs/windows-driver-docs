@@ -2,14 +2,13 @@
 title: Using PnP Custom Notification
 author: windows-driver-content
 description: Using PnP Custom Notification
-MS-HAID:
-- 'PlugPlay\_ea606eae-793e-4407-bf63-b26230a46dce.xml'
-- 'kernel.using\_pnp\_custom\_notification'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: de5562f8-07a8-4f4e-ac49-58c789bd9fde
 keywords: ["notifications WDK PnP , custom", "custom notifications WDK PnP", "notifications WDK PnP , target device changes", "target device change notifications WDK PnP", "EventCategoryTargetDeviceChange notification"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using PnP Custom Notification

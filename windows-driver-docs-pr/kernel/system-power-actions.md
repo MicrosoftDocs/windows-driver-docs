@@ -2,14 +2,13 @@
 title: System Power Actions
 author: windows-driver-content
 description: System Power Actions
-MS-HAID:
-- 'PwrMgmt\_7e24a1f8-ea27-451f-81bc-97c82ddf31ce.xml'
-- 'kernel.system\_power\_actions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e8ab99d4-c18d-4ba8-bfe8-8eebb881c384
 keywords: ["system power actions WDK power management", "system power states WDK kernel , power actions", "power actions WDK power management", "POWER_ACTION"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # System Power Actions

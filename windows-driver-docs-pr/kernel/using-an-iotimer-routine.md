@@ -2,14 +2,13 @@
 title: Using an IoTimer Routine
 author: windows-driver-content
 description: Using an IoTimer Routine
-MS-HAID:
-- 'Synchro\_c8bd324e-a1d2-41d5-917e-b365d6323e2f.xml'
-- 'kernel.using\_an\_iotimer\_routine'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9de2d2ec-31c5-4a60-96bf-5da067d2d9db
 keywords: ["IoTimer"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using an IoTimer Routine

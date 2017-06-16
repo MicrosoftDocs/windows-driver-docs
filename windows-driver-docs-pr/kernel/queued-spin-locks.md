@@ -2,14 +2,13 @@
 title: Queued Spin Locks
 author: windows-driver-content
 description: Queued Spin Locks
-MS-HAID:
-- 'Synchro\_7cc46160-bbcd-416f-98ea-d41bf80516eb.xml'
-- 'kernel.queued\_spin\_locks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7ccec366-5436-4e69-9fb7-f0090cf2adcb
 keywords: ["queued spin locks WDK kernel", "first-come first-served spin locks WDK kernel", "KeAcquireInStackQueuedSpinLock"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Queued Spin Locks

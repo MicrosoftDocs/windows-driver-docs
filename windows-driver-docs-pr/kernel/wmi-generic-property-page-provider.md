@@ -2,14 +2,13 @@
 title: WMI Generic Property Page Provider
 author: windows-driver-content
 description: WMI Generic Property Page Provider
-MS-HAID:
-- 'WMI\_84c1d77e-0d39-4bca-a148-2e661a0a879b.xml'
-- 'kernel.wmi\_generic\_property\_page\_provider'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 44cfafdf-c8e2-4175-95e5-3c5d03dc206d
 keywords: ["WMI WDK kernel , property sheets", "property sheets WDK WMI", "generic property page providers WDK WMI", "property pages WDK WMI", "property qualifiers WDK WMI", "device property sheets WDK WMI"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WMI Generic Property Page Provider

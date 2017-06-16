@@ -2,14 +2,13 @@
 title: Introduction to Thread Objects
 author: windows-driver-content
 description: Introduction to Thread Objects
-MS-HAID:
-- 'Synchro\_fd6404de-4294-4be9-a9b6-1db32dd948d2.xml'
-- 'kernel.introduction\_to\_thread\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c41dd20e-07c1-432f-b012-ecc45fe44413
 keywords: ["thread objects WDK kernel", "system-process threads WDK kernel", "device-dedicated threads WDK kernel", "system worker threads WDK kernel", "worker threads WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Thread Objects

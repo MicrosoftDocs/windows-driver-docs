@@ -2,14 +2,13 @@
 title: Supporting Standard WMI Blocks
 author: windows-driver-content
 description: Supporting Standard WMI Blocks
-MS-HAID:
-- 'WMI\_ac4b1202-b5bd-4b7c-8808-67dcb7b6beee.xml'
-- 'kernel.supporting\_standard\_wmi\_blocks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ddec3afb-8274-4eff-93ef-b0a07fd7c13a
 keywords: ["WMI WDK kernel , event blocks", "event blocks WDK WMI", "data blocks WDK WMI", "WMI WDK kernel , data blocks", "blocks WDK WMI", "standard blocks WDK WMI"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Standard WMI Blocks

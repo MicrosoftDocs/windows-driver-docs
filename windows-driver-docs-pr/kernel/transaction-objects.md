@@ -2,14 +2,13 @@
 title: Transaction Objects
 author: windows-driver-content
 description: Transaction Objects
-MS-HAID:
-- 'ktm\_dg\_eaa192c2-2575-46a3-8bd8-5f1b4b999ca2.xml'
-- 'kernel.transaction\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 124105bd-70be-49b1-8ea4-af6ba1f3cf16
 keywords: ["transactions WDK KTM , objects", "transactions WDK KTM", "transactional clients WDK KTM , creating transactions", "Kernel Transaction Manager WDK , transactions", "KTM WDK , transactions", "transaction objects WDK KTM"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Transaction Objects

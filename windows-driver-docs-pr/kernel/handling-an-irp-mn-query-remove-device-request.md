@@ -2,14 +2,13 @@
 title: Handling an IRP\_MN\_QUERY\_REMOVE\_DEVICE Request
 author: windows-driver-content
 description: Handling an IRP\_MN\_QUERY\_REMOVE\_DEVICE Request
-MS-HAID:
-- 'PlugPlay\_1cec6593-154e-4921-93ac-d2302f2a92de.xml'
-- 'kernel.handling\_an\_irp\_mn\_query\_remove\_device\_request'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 30177e51-5312-4a24-972e-0c1c2d183d18
 keywords: ["IRP_MN_QUERY_REMOVE_DEVICE"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling an IRP\_MN\_QUERY\_REMOVE\_DEVICE Request

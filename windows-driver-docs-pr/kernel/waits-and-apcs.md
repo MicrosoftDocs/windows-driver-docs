@@ -2,14 +2,13 @@
 title: Waits and APCs
 author: windows-driver-content
 description: Waits and APCs
-MS-HAID:
-- 'Synchro\_c88e3997-b7c1-494d-983b-2a69b229a904.xml'
-- 'kernel.waits\_and\_apcs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b967beec-922c-4acf-a578-c476ce024fdb
 keywords: ["kernel dispatcher objects WDK , alerts", "dispatcher objects WDK kernel , alerts", "APCs WDK kernel", "alerts WDK kernel", "kernel dispatcher objects WDK , APCs", "dispatcher objects WDK kernel , APCs", "Alertable parameter", "WaitMode parameter", "kernel dispatcher objects WDK , waiting for", "dispatcher objects WDK kernel , waiting for"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Waits and APCs

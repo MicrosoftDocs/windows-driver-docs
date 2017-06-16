@@ -2,14 +2,13 @@
 title: Using MDLs
 author: windows-driver-content
 description: Using MDLs
-MS-HAID:
-- 'MemMgmt\_4f7aa6c4-4bb3-48b2-a3dc-50a27d941416.xml'
-- 'kernel.using\_mdls'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 60652eb8-cfdb-4591-88ff-cf9dc4b9743d
 keywords: ["memory management WDK kernel ,"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using MDLs

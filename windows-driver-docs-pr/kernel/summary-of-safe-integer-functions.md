@@ -2,9 +2,6 @@
 title: Summary of Kernel-Mode Safe Integer Functions
 author: windows-driver-content
 description: The following table summarizes the safe integer functions that are available to kernel-mode drivers.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3DC016FA-5434-4581-9FBB-F6A8B54AB97B
 ---
 

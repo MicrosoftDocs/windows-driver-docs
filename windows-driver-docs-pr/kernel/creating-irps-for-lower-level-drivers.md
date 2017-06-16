@@ -2,14 +2,13 @@
 title: Creating IRPs for Lower-Level Drivers
 author: windows-driver-content
 description: Creating IRPs for Lower-Level Drivers
-MS-HAID:
-- 'IRPs\_aa21cfd8-9bd3-461f-b42d-44b8b850e466.xml'
-- 'kernel.creating\_irps\_for\_lower\_level\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2d298eb1-6169-4742-80c1-200223a2d4fa
 keywords: ["IRPs WDK kernel , creating", "asynchronous requests WDK IRPs", "IRPs WDK kernel , asynchronous requests"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating IRPs for Lower-Level Drivers

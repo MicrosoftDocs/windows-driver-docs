@@ -2,14 +2,13 @@
 title: Allocating an Adapter Channel for Packet-Based DMA
 author: windows-driver-content
 description: Allocating an Adapter Channel for Packet-Based DMA
-MS-HAID:
-- 'ioprogdma\_082bb35c-130e-4156-84b5-f4c246f60840.xml'
-- 'kernel.allocating\_an\_adapter\_channel\_for\_packet\_based\_dma'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c95e4b2d-ce19-453a-bcc5-4bb37fc5d9ed
 keywords: ["system DMA WDK kernel , packet-based", "packet-based DMA WDK kernel", "DMA transfers WDK kernel , packet-based", "allocating adapter channels", "adapter channel allocations WDK kernel", "AllocateAdapterChannel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating an Adapter Channel for Packet-Based DMA

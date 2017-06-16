@@ -2,14 +2,13 @@
 title: Opening a Handle to a File
 author: windows-driver-content
 description: Opening a Handle to a File
-MS-HAID:
-- 'Other\_c81e36e0-df88-46cf-a80e-a377ee0de186.xml'
-- 'kernel.opening\_a\_handle\_to\_a\_file'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9378282a-ee29-44b6-b206-602eee94ec3b
 keywords: ["files WDK kernel", "file objects WDK kernel", "objects WDK file objects", "file handles WDK kernel", "handle to file WDK kernel", "opening handle to file"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Opening a Handle to a File

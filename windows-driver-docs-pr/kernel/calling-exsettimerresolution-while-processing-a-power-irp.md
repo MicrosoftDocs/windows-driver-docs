@@ -2,12 +2,6 @@
 title: Calling ExSetTimerResolution While Processing a Power IRP
 author: windows-driver-content
 description: Calling ExSetTimerResolution While Processing a Power IRP
-MS-HAID:
-- 'PwrMgmt\_806fcb6e-792b-4cef-9bf4-b8c0d1a30d44.xml'
-- 'kernel.calling\_exsettimerresolution\_while\_processing\_a\_power\_irp'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 999a76ab-1586-4157-bfa7-8cc5dd517c71
 ---
 

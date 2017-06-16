@@ -2,14 +2,13 @@
 title: Points to Consider for StartIo Routines
 author: windows-driver-content
 description: Points to Consider for StartIo Routines
-MS-HAID:
-- 'IRPs\_f8755ff5-94c8-496a-8c1b-4b5447343556.xml'
-- 'kernel.points\_to\_consider\_for\_startio\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 389240d0-682f-48b3-940f-c107e9f60155
 keywords: ["StartIo routines, about StartIo routines"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Points to Consider for StartIo Routines

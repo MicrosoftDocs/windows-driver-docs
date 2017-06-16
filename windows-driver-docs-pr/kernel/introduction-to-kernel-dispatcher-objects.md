@@ -2,14 +2,13 @@
 title: Introduction to Kernel Dispatcher Objects
 author: windows-driver-content
 description: Introduction to Kernel Dispatcher Objects
-MS-HAID:
-- 'Synchro\_7cd71aeb-4d52-40d0-9e61-fe0fecbaba17.xml'
-- 'kernel.introduction\_to\_kernel\_dispatcher\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: acf7b19a-55a3-4d9b-87ff-ca4df9ed3a45
 keywords: ["kernel dispatcher objects WDK , about kernel dispatcher objects", "dispatcher objects WDK kernel , about kernel dispatcher objects", "wait states WDK kernel", "Signaled state WDK kernel", "Not-Signaled state WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Kernel Dispatcher Objects

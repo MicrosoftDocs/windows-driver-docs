@@ -2,14 +2,13 @@
 title: Processing an Application Notification
 author: windows-driver-content
 description: Processing an Application Notification
-MS-HAID:
-- 'dhp\_e1097773-2f79-4f05-8ed7-2b8769b3929e.xml'
-- 'kernel.processing\_an\_application\_notification'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 475d8e37-5d31-4989-92ce-3c4a7c09d292
 keywords: ["dynamic hardware partitioning WDK , application notification", "hardware partitioning WDK dynamic , application notification", "partitions WDK dynamic hardware , application notification", "application notification WDK dynamic hardware partitioning , registering", "notification WDK dynamic hardware partitioning , application", "registering for application notifications WDK dynamic hardware partitioning", "processing application notifications WDK dynamic hardware partitioning"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Processing an Application Notification

@@ -2,14 +2,13 @@
 title: Handling a GUID\_TARGET\_DEVICE\_REMOVE\_CANCELLED Event
 author: windows-driver-content
 description: Handling a GUID\_TARGET\_DEVICE\_REMOVE\_CANCELLED Event
-MS-HAID:
-- 'PlugPlay\_494a76e2-9cc2-4d02-a757-92e3682aed84.xml'
-- 'kernel.handling\_a\_guid\_target\_device\_remove\_cancelled\_event'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 19fe012b-3ed0-4356-999b-79b1d08dfbd6
 keywords: ["notifications WDK PnP , target device changes", "target device change notifications WDK PnP", "EventCategoryTargetDeviceChange notification", "GUID_TARGET_DEVICE_REMOVE_CANCELLED"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling a GUID\_TARGET\_DEVICE\_REMOVE\_CANCELLED Event

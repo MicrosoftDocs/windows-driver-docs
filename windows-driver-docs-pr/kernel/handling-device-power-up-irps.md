@@ -2,14 +2,13 @@
 title: Handling Device Power-Up IRPs
 author: windows-driver-content
 description: Handling Device Power-Up IRPs
-MS-HAID:
-- 'PwrMgmt\_7063304a-18b0-4432-a420-3b09176c747a.xml'
-- 'kernel.handling\_device\_power\_up\_irps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8fcfd324-97f9-4fd0-8fa1-87685c6b5ec3
 keywords: ["set-power IRPs WDK kernel", "device set power IRPs WDK kernel", "power IRPs WDK kernel , device changes", "power-up IRPs WDK kernel", "startup power management WDK kernel", "restoring power WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Device Power-Up IRPs

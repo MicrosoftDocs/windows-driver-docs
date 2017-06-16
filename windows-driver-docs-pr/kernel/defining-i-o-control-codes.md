@@ -2,14 +2,13 @@
 title: Defining I/O Control Codes
 author: windows-driver-content
 description: Defining I/O Control Codes
-MS-HAID:
-- 'IRPs\_9730516f-1373-4a9a-8fa1-8021dea5439e.xml'
-- 'kernel.defining\_i\_o\_control\_codes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 967b0199-e9a0-4c8d-9130-c81436c59ca3
 keywords: ["I/O control codes WDK kernel , defining", "control codes WDK IOCTLs , defining", "IOCTLs WDK kernel , defining", "CTL_CODE macro", "IOCTLs WDK user-mode", "user-mode components WDK IOCTLs", "I/O control codes WDK user-mode", "control codes WDK user-mode", "layouts WDK IOCTLs"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Defining I/O Control Codes

@@ -2,14 +2,13 @@
 title: Defining and Exporting New GUIDs
 author: windows-driver-content
 description: Defining and Exporting New GUIDs
-MS-HAID:
-- 'Other\_2239a4ad-e0b1-41c7-815c-17649f8fc09a.xml'
-- 'kernel.defining\_and\_exporting\_new\_guids'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a7deb283-7cab-4f3c-ad96-f8085222456e
 keywords: ["globally unique identifiers WDK kernel", "GUIDs WDK kernel", "identifiers WDK GUIDs", "exporting GUIDs"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Defining and Exporting New GUIDs

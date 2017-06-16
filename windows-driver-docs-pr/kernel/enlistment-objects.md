@@ -2,14 +2,13 @@
 title: Enlistment Objects
 author: windows-driver-content
 description: Enlistment Objects
-MS-HAID:
-- 'ktm\_dg\_879774b9-771f-452c-bc3b-b15e1414bdf9.xml'
-- 'kernel.enlistment\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 80e61475-4bb7-4eaa-b9f1-ff95eac9bc77
 keywords: ["enlistments WDK KTM", "enlistments WDK KTM , objects", "resource managers WDK KTM , creating enlistments", "Kernel Transaction Manager WDK , enlistments", "KTM WDK , enlistments", "enlistment objects WDK KTM"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enlistment Objects

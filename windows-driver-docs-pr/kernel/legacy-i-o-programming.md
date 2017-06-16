@@ -2,12 +2,6 @@
 title: Legacy I/O Programming
 author: windows-driver-content
 description: Legacy I/O Programming
-MS-HAID:
-- 'ioprogleg\_4e8a4075-f45d-4b8d-b645-d9c6acf62ab2.xml'
-- 'kernel.legacy\_i\_o\_programming'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9ab9fef0-7939-40dd-9b56-9c6f5902f36a
 ---
 

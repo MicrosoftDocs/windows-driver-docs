@@ -2,14 +2,13 @@
 title: Registering and Enabling an IoTimer Routine
 author: windows-driver-content
 description: Registering and Enabling an IoTimer Routine
-MS-HAID:
-- 'Synchro\_d6dacc2a-aa72-4c5a-b95a-43e1a7a42aeb.xml'
-- 'kernel.registering\_and\_enabling\_an\_iotimer\_routine'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d06a6430-5098-492a-8114-d6f390083718
 keywords: ["IoTimer", "IoInitializeTimer", "IoStartTimer", "registering IoTimer routines"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering and Enabling an IoTimer Routine

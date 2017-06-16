@@ -2,14 +2,13 @@
 title: Using Bus-Master DMA
 author: windows-driver-content
 description: Using Bus-Master DMA
-MS-HAID:
-- 'ioprogdma\_c89ad454-5800-45f2-bc8a-738fbf5c2b69.xml'
-- 'kernel.using\_bus\_master\_dma'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 08357a55-aec2-4454-923f-6daaf1583a25
 keywords: ["AdapterControl routines, bus-master DMA", "bus-master DMA WDK kernel", "DMA transfers WDK kernel , bus-master DMA", "adapter objects WDK kernel , bus-master DMA"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Bus-Master DMA

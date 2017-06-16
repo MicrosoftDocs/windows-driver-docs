@@ -2,12 +2,6 @@
 title: Restricting Waits in Vista
 author: windows-driver-content
 description: Restricting Waits in Vista
-MS-HAID:
-- 'ioproggen\_09d71873-0a65-40be-9eb3-62ccb356b460.xml'
-- 'kernel.restricting\_waits\_in\_vista'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: edcc25d0-bcf6-48f0-832e-3f911bd42142
 ---
 

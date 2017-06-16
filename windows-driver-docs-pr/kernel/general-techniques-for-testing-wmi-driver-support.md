@@ -2,14 +2,13 @@
 title: General Techniques for Testing WMI Driver Support
 author: windows-driver-content
 description: General Techniques for Testing WMI Driver Support
-MS-HAID:
-- 'WMI\_4045d9ad-1619-4d9d-a51c-bf3494ab6598.xml'
-- 'kernel.general\_techniques\_for\_testing\_wmi\_driver\_support'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4d1a9198-2cc7-491d-a803-80f846882a6e
 keywords: ["WMI WDK kernel , testing", "testing WMI support WDK kernel", "WMI WDM provider logs WDK", "errors WDK WMI", "provider logs WDK WMI", "events WDK WMI", "WMI WDK kernel , errors"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # General Techniques for Testing WMI Driver Support

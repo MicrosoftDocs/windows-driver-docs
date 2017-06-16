@@ -2,14 +2,13 @@
 title: DispatchDeviceControl in Higher-Level Drivers
 author: windows-driver-content
 description: DispatchDeviceControl in Higher-Level Drivers
-MS-HAID:
-- 'DrvComps\_460a9a0d-c064-4772-b87b-3e478f2e6a02.xml'
-- 'kernel.dispatchdevicecontrol\_in\_higher\_level\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: baff49c4-8764-4b65-84f4-ce5e10d51ed2
 keywords: ["dispatch routines WDK kernel , DispatchDeviceControl routine", "dispatch DispatchDeviceControl routine", "IRP_MJ_DEVICE_CONTROL I/O function code", "device control dispatch routines WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DispatchDeviceControl in Higher-Level Drivers

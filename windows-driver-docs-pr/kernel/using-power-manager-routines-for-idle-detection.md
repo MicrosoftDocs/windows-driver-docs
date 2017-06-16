@@ -2,14 +2,13 @@
 title: Using Power Manager Routines for Idle Detection
 author: windows-driver-content
 description: Using Power Manager Routines for Idle Detection
-MS-HAID:
-- 'PwrMgmt\_59061bc7-f6cd-470b-9388-58ad9849d955.xml'
-- 'kernel.using\_power\_manager\_routines\_for\_idle\_detection'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6a89b2eb-d987-4722-b521-9df93153d957
 keywords: ["idle detection WDK power management", "PoRegisterDeviceForIdleDetection", "PoSetDeviceBusy", "power manager WDK kernel", "idle time-outs WDK power management", "time-outs WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Power Manager Routines for Idle Detection

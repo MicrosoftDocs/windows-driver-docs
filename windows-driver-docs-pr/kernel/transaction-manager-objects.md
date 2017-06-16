@@ -2,14 +2,13 @@
 title: Transaction Manager Objects
 author: windows-driver-content
 description: Transaction Manager Objects
-MS-HAID:
-- 'ktm\_dg\_04dc8582-4f46-4bad-9ee1-c58d89ea4cf3.xml'
-- 'kernel.transaction\_manager\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: af53cda4-e2ab-47df-9311-a4da2a2ee08d
 keywords: ["log streams WDK KTM , creating", "virtual clock values WDK KTM , in transaction manager objects", "Kernel Transaction Manager WDK , transaction managers", "transaction manager objects WDK KTM"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Transaction Manager Objects

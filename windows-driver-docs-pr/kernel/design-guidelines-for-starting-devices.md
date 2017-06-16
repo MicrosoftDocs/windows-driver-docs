@@ -2,12 +2,6 @@
 title: Design Guidelines for Starting Devices
 author: windows-driver-content
 description: Design Guidelines for Starting Devices
-MS-HAID:
-- 'PlugPlay\_1142c20d-53e9-4228-b9a7-ac325f056e33.xml'
-- 'kernel.design\_guidelines\_for\_starting\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fbdde107-f3a5-4713-a4ac-1c9bafa3c634
 ---
 

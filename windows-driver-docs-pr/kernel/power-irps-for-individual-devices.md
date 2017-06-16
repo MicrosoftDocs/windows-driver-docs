@@ -2,14 +2,13 @@
 title: Power IRPs for Individual Devices
 author: windows-driver-content
 description: Power IRPs for Individual Devices
-MS-HAID:
-- 'PwrMgmt\_2ebcd444-910e-43fa-b3be-8cd9f46dd386.xml'
-- 'kernel.power\_irps\_for\_individual\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a8d5db12-8f6b-4c65-9814-0bc3e476dd1c
 keywords: ["power IRPs WDK kernel , devices", "device power IRPs WDK kernel", "power sequence values WDK kernel", "working state returns WDK power management", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Power IRPs for Individual Devices

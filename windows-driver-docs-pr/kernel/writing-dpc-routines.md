@@ -2,14 +2,13 @@
 title: Writing DPC Routines
 author: windows-driver-content
 description: Writing DPC Routines
-MS-HAID:
-- 'Intrupts\_f8b8f4c3-71f1-41d5-8f03-dfde1c3aa336.xml'
-- 'kernel.writing\_dpc\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a0b93b71-7ee3-4626-b0b8-5dd6e19fba0d
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel", "DpcForIsr", "CustomDpc"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing DPC Routines

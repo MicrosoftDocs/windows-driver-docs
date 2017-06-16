@@ -2,14 +2,13 @@
 title: Object Handles
 author: windows-driver-content
 description: Object Handles
-MS-HAID:
-- 'Objects\_4ad3966c-de9b-4bbd-b21a-b917f6d35423.xml'
-- 'kernel.object\_handles'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: deeeb3c0-54e4-4727-ac43-6da79be515d7
 keywords: ["object handles WDK user-mode", "object handles WDK kernel", "handles WDK user-mode", "handles WDK kernel", "private object handles WDK", "shared object handles WDK"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Object Handles

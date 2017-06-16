@@ -2,14 +2,13 @@
 title: Overview of Wait/Wake IRP Completion
 author: windows-driver-content
 description: Overview of Wait/Wake IRP Completion
-MS-HAID:
-- 'PwrMgmt\_eccd551e-8753-41bd-9c50-d56582d29619.xml'
-- 'kernel.overview\_of\_wait\_wake\_irp\_completion'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a5e09fda-f722-4335-8576-7b058b2f7a21
 keywords: ["power management WDK kernel , wake-up capabilities", "external wake signals WDK", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management", "IRP_MN_WAIT_WAKE", "wait/wake IRPs WDK power management , completing"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Wait/Wake IRP Completion

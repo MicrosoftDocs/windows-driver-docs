@@ -2,14 +2,13 @@
 title: Handling Notifications
 author: windows-driver-content
 description: Handling Notifications
-MS-HAID:
-- 'Other\_ec0aa309-d6c1-474f-8a97-f54dca4bd093.xml'
-- 'kernel.handling\_notifications'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ace7f59d-fe9f-4810-91db-2cf20c9591cf
 keywords: ["filtering registry calls WDK kernel , notification options", "registry filtering drivers WDK kernel , notification options", "notifications WDK filter registry call", "filtering registry calls WDK kernel , monitoring calls", "registry filtering drivers WDK kernel , monitoring calls", "filtering registry calls WDK kernel , blocking calls", "registry filtering drivers WDK kernel , blocking calls", "filtering registry calls WDK kernel , modifying calls", "registry filtering drivers WDK kernel , modifying calls", "blocking calls WDK filter registry call", "monitoring registry calls"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Notifications

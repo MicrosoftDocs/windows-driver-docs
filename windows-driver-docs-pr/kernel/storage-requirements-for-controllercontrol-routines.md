@@ -2,14 +2,13 @@
 title: Storage Requirements for ControllerControl Routines
 author: windows-driver-content
 description: Storage Requirements for ControllerControl Routines
-MS-HAID:
-- 'ioprogleg\_e1b9045d-ce72-46ab-804d-88c5c351069a.xml'
-- 'kernel.storage\_requirements\_for\_controllercontrol\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1ee69144-5f52-4d61-ad30-02e8fbe1f91e
 keywords: ["controller objects WDK kernel , writing ControllerControl routines", "ControllerControl routines, writing", "ControllerControl routines, storage", "storage WDK controller objects"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storage Requirements for ControllerControl Routines

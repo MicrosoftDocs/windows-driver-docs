@@ -2,14 +2,13 @@
 title: System Sleeping States
 author: windows-driver-content
 description: System Sleeping States
-MS-HAID:
-- 'PwrMgmt\_62c3fe62-0434-43e7-bea2-dcf121b54ce3.xml'
-- 'kernel.system\_sleeping\_states'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2fd883b5-4e89-4ce9-b75a-b821348ac860
 keywords: ["system power states WDK kernel , sleeping states", "system sleeping states WDK power management", "sleeping states WDK power management", "S1 WDK power management", "S2 WDK power management", "S3 WDK power management", "S4 WDK power management", "software resumption WDK power management", "resumption WDK power management", "hardware latency WDK power management", "system hardware context WDK power management", "hardware context WDK power management", "context WDK power management", "latency WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # System Sleeping States

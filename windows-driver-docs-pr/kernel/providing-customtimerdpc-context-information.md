@@ -2,14 +2,13 @@
 title: Providing CustomTimerDpc Context Information
 author: windows-driver-content
 description: Providing CustomTimerDpc Context Information
-MS-HAID:
-- 'Synchro\_a370daba-10cb-4779-8516-5fd979ef9f6b.xml'
-- 'kernel.providing\_customtimerdpc\_context\_information'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b4d711fb-63d4-45c6-8054-f934741ce340
 keywords: ["timer objects WDK kernel , CustomTimerDpc routines", "CustomTimerDpc", "DeferredContext routine", "context information WDK synchronization", "timer objects WDK kernel , context information"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Providing CustomTimerDpc Context Information

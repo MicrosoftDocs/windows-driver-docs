@@ -2,14 +2,13 @@
 title: Using Packet-Based System DMA
 author: windows-driver-content
 description: Using Packet-Based System DMA
-MS-HAID:
-- 'ioprogdma\_8e133292-c76a-427f-a07f-9723671915b3.xml'
-- 'kernel.using\_packet\_based\_system\_dma'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5d175193-4a28-49fd-80b5-18f116232c6e
 keywords: ["system DMA WDK kernel , packet-based", "packet-based DMA WDK kernel", "DMA transfers WDK kernel , packet-based"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Packet-Based System DMA

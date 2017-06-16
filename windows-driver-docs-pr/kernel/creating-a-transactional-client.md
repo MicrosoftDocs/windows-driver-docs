@@ -2,14 +2,13 @@
 title: Creating a Transactional Client
 author: windows-driver-content
 description: Creating a Transactional Client
-MS-HAID:
-- 'ktm\_dg\_755be87d-466b-4273-847f-202bdbf3d39a.xml'
-- 'kernel.creating\_a\_transactional\_client'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 75d4758b-dfba-431b-9bfa-9dcb98c2a7cc
 keywords: ["transactional clients WDK KTM", "transactional clients WDK KTM , creating transactional clients"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Transactional Client

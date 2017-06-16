@@ -2,14 +2,13 @@
 title: Introduction to Cancel Routines
 author: windows-driver-content
 description: Introduction to Cancel Routines
-MS-HAID:
-- 'IRPs\_819bb2cc-7128-48e0-abac-2bac2d65e88f.xml'
-- 'kernel.introduction\_to\_cancel\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 99f7f045-2b2f-4fb3-ac1c-99ab76fa46ad
 keywords: ["canceling IRPs, about canceling IRPs", "Cancel routines, about Cancel routines", "associated IRP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Cancel Routines

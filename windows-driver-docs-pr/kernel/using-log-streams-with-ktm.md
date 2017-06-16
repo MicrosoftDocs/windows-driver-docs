@@ -2,14 +2,13 @@
 title: Using Log Streams with KTM
 author: windows-driver-content
 description: Using Log Streams with KTM
-MS-HAID:
-- 'ktm\_dg\_7eec4c22-7af0-493e-b86d-074655d59c5d.xml'
-- 'kernel.using\_log\_streams\_with\_ktm'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d7ad0e16-d1f2-4c41-b647-95b5445c2708
 keywords: ["log streams WDK KTM", "Kernel Transaction Manager WDK , log streams", "KTM WDK , log streams", "Common Log File System WDK kernel , KTM log streams", "CLFS WDK kernel , KTM log streams", "transaction managers WDK KTM , log streams", "resource managers WDK KTM , log streams"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Log Streams with KTM

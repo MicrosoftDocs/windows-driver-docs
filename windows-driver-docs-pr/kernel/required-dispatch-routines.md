@@ -2,14 +2,13 @@
 title: Required Dispatch Routines
 author: windows-driver-content
 description: Required Dispatch Routines
-MS-HAID:
-- 'DrvComps\_2ea3d04b-2c1a-4d6e-a0ad-55c87c7c5f8c.xml'
-- 'kernel.required\_dispatch\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9b760ac7-7f31-47ad-bf84-7d79c6b24ebd
 keywords: ["dispatch routines WDK kernel , required", "required dispatch routines WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Required Dispatch Routines

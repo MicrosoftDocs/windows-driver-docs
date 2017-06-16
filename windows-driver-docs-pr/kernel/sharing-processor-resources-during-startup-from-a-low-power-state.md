@@ -2,12 +2,6 @@
 title: Sharing Processor Resources During Startup from a Low-Power State
 author: windows-driver-content
 description: Sharing Processor Resources During Startup from a Low-Power State
-MS-HAID:
-- 'PwrMgmt\_c9c56c4c-3687-4820-b65f-c3ee7d548304.xml'
-- 'kernel.sharing\_processor\_resources\_during\_startup\_from\_a\_low\_power\_state'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2b2e6a1b-7c2d-4f38-9407-a417b75daa6a
 ---
 

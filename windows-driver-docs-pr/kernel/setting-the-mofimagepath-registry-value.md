@@ -2,14 +2,13 @@
 title: Setting the MofImagePath Registry Value
 author: windows-driver-content
 description: Setting the MofImagePath Registry Value
-MS-HAID:
-- 'WMI\_c765ffd4-3ee6-4a80-a646-a6751f750194.xml'
-- 'kernel.setting\_the\_mofimagepath\_registry\_value'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b8c43cd3-d4f4-4f1e-b692-8005d845d64a
 keywords: ["WMI WDK kernel , publishing schema", "publishing WMI schema WDK", "schema publishing WDK WMI", "MOF files WDK WMI", "MofImagePath"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting the MofImagePath Registry Value

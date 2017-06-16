@@ -2,14 +2,13 @@
 title: Using Neither Buffered Nor Direct I/O
 author: windows-driver-content
 description: Using Neither Buffered Nor Direct I/O
-MS-HAID:
-- 'ioproguser\_c6e8f2ab-7282-4282-b149-63300a7d97d4.xml'
-- 'kernel.using\_neither\_buffered\_nor\_direct\_i\_o'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e85af2e0-e532-47ca-918e-087e7aff859e
 keywords: ["buffers WDK I/O , neither buffered nor direct I/O", "data buffers WDK I/O , neither buffered nor direct I/O", "neither buffered nor direct I/O WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Neither Buffered Nor Direct I/O

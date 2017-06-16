@@ -2,14 +2,13 @@
 title: DispatchQueryInformation Routines
 author: windows-driver-content
 description: DispatchQueryInformation Routines
-MS-HAID:
-- 'DrvComps\_45585642-2469-4881-8352-69503e3311fd.xml'
-- 'kernel.dispatchqueryinformation\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dfcb8ad0-ae95-4dd7-b4c8-a2f3ad4b12ef
 keywords: ["dispatch routines WDK kernel , DispatchQueryInformation routine", "DispatchQueryInformation routine", "IRP_MJ_QUERY_INFORMATION I/O function code", "query information dispatch routines WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DispatchQueryInformation Routines

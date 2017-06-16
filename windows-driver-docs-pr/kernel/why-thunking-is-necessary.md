@@ -2,14 +2,13 @@
 title: Why Thunking Is Necessary
 author: windows-driver-content
 description: Why Thunking Is Necessary
-MS-HAID:
-- 'Other\_ef58e0a3-148f-44fb-ae93-8bd04a8dc735.xml'
-- 'kernel.why\_thunking\_is\_necessary'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ea73d355-56e8-4f56-b7e8-4dbddcd19124
 keywords: ["thunking WDK", "WOW64 thunking layer WDK", "32-bit I/O support WDK 64-bit , thunking", "buffer size WDK kernel", "DRIVER_DATA structure", "pointer precision WDK 64-bit", "fixed-precision data types WDK 64-bit"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Why Thunking Is Necessary

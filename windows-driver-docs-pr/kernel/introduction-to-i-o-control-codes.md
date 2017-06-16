@@ -2,14 +2,13 @@
 title: Introduction to I/O Control Codes
 author: windows-driver-content
 description: Introduction to I/O Control Codes
-MS-HAID:
-- 'IRPs\_b179b00f-b7d2-4aee-ad19-490615f38d00.xml'
-- 'kernel.introduction\_to\_i\_o\_control\_codes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8b9e09ef-56f9-42b9-9b65-04bc380f3a1e
 keywords: ["I/O control codes WDK kernel , about I/O control codes", "control codes WDK IOCTLs , about I/O control codes", "IOCTLs WDK kernel , about I/O control codes", "private IOCTLs WDK kernel", "public IOCTLs WDK kernel", "IOCTLs WDK user-mode", "user-mode components WDK IOCTLs", "I/O control codes WDK user-mode", "control codes WDK user-mode"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to I/O Control Codes

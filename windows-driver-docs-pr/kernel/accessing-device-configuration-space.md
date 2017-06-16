@@ -2,14 +2,13 @@
 title: Accessing Device Configuration Space
 author: windows-driver-content
 description: Accessing Device Configuration Space
-MS-HAID:
-- 'ioprogleg\_69386678-0483-40d8-ba00-8a574b4bd31a.xml'
-- 'kernel.accessing\_device\_configuration\_space'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 082500ae-9df2-4f8b-8be3-ff2b95067a12
 keywords: ["I/O WDK kernel , device configuration space", "device configuration space WDK I/O", "configuration space WDK I/O", "space WDK I/O", "resource information WDK I/O", "driver stacks WDK configuration info"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing Device Configuration Space

@@ -2,14 +2,13 @@
 title: DispatchReadWrite in Higher-Level Drivers
 author: windows-driver-content
 description: DispatchReadWrite in Higher-Level Drivers
-MS-HAID:
-- 'DrvComps\_d1d8c4df-319f-4c55-966a-a02d331cc12b.xml'
-- 'kernel.dispatchreadwrite\_in\_higher\_level\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d8406115-c62e-4362-8d2c-77d0414c4104
 keywords: ["DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchReadWrite routine", "read/write dispatch routines WDK kernel", "IRP_MJ_WRITE I/O function codes", "IRP_MJ_READ I/O function codes", "data transfers WDK kernel , read/write dispatch routines", "transferring data WDK kernel , read/write dispatch routines"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DispatchReadWrite in Higher-Level Drivers

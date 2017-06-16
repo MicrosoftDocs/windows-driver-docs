@@ -2,14 +2,13 @@
 title: Registering for Target Device Change Notification
 author: windows-driver-content
 description: Registering for Target Device Change Notification
-MS-HAID:
-- 'PlugPlay\_a86c8756-2611-4d1b-93fb-3847b8e6f876.xml'
-- 'kernel.registering\_for\_target\_device\_change\_notification'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5f7a9c44-c9a4-4ff8-a97d-ad2462b86af0
 keywords: ["notifications WDK PnP , target device changes", "target device change notifications WDK PnP", "EventCategoryTargetDeviceChange notification", "registering target device change notifications", "IoRegisterPlugPlayNotification"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering for Target Device Change Notification

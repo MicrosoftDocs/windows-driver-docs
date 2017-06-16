@@ -2,14 +2,13 @@
 title: Interrupt Affinity
 author: windows-driver-content
 description: Interrupt Affinity
-MS-HAID:
-- 'Intrupts\_a4e122bb-dfa5-4dbf-8bd8-81fba5b13c3b.xml'
-- 'kernel.interrupt\_affinity\_and\_priority'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e36a52d0-3a94-4017-b4a1-0b41f737523c
 keywords: ["interrupt service routines WDK kernel , affinity", "ISRs WDK kernel , affinity", "affinity policy WDK interrupts", "IRQ_DEVICE_POLICY", "processor affinity WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Interrupt Affinity

@@ -2,14 +2,13 @@
 title: Sending an Event with IoWMIWriteEvent
 author: windows-driver-content
 description: Sending an Event with IoWMIWriteEvent
-MS-HAID:
-- 'WMI\_1ec9f117-31d5-43d8-812b-aacc5bca9180.xml'
-- 'kernel.sending\_an\_event\_with\_iowmiwriteevent'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 77c1041a-340c-4c59-a30a-e946adf60a95
 keywords: ["WMI WDK kernel , event tracking", "events WDK WMI", "tracing WDK WMI", "sending WMI events", "event blocks WDK WMI", "notifications WDK WMI", "IoWMIWriteEvent", "dynamic instance names WDK WMI"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sending an Event with IoWMIWriteEvent

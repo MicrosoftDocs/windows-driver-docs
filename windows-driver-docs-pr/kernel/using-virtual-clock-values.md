@@ -2,14 +2,13 @@
 title: Using Virtual Clock Values
 author: windows-driver-content
 description: Using Virtual Clock Values
-MS-HAID:
-- 'ktm\_dg\_f988da0b-b86b-4173-ab66-37098e4e2366.xml'
-- 'kernel.using\_virtual\_clock\_values'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: de01b0f1-86b1-4e7d-af22-84dbbe3a3f83
 keywords: ["virtual clock values WDK KTM", "Kernel Transaction Manager WDK , virtual clock values", "KTM WDK , virtual clock values", "transactions WDK KTM , virtual clock values"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Virtual Clock Values

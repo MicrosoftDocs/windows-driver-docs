@@ -2,14 +2,13 @@
 title: Securing Device Objects
 author: windows-driver-content
 description: Securing Device Objects
-MS-HAID:
-- 'DevObjts\_9a1cca71-2bce-42eb-a945-9e4b8e03995f.xml'
-- 'kernel.securing\_device\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 41e86924-e1bf-4ac6-9d7b-3799ed0d796c
 keywords: ["access rights WDK device objects"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Securing Device Objects

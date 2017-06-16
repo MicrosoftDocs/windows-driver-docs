@@ -2,14 +2,13 @@
 title: Using Common Log File System
 author: windows-driver-content
 description: Using Common Log File System
-MS-HAID:
-- 'Clfs\_guide\_a4e1f837-9d72-4168-b591-07a4fc7329ed.xml'
-- 'kernel.using\_common\_log\_file\_system'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a9685648-b08c-48ca-b020-e683068f2ea2
 keywords: ["Common Log File System WDK kernel", "CLFS WDK kernel", "logging service WDK CLFS", "transactional logs WDK CLFS"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Common Log File System

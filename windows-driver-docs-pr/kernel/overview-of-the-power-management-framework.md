@@ -2,9 +2,6 @@
 title: Overview of the Power Management Framework
 author: windows-driver-content
 description: Starting with Windows 8, the run-time power management framework (PoFx) supports power and clock management at the component (or subdevice) level.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9F2D8ACD-44D5-46E0-9FC7-1B38B99450FF
 ---
 

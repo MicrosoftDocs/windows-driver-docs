@@ -2,12 +2,6 @@
 title: Improving System Startup Performance
 author: windows-driver-content
 description: Improving System Startup Performance
-MS-HAID:
-- 'PwrMgmt\_83e9db69-37fd-40f4-9d1e-fe2de8f40871.xml'
-- 'kernel.improving\_system\_startup\_performance'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9fce451c-73b3-4e3b-875d-319aaa8765ff
 ---
 

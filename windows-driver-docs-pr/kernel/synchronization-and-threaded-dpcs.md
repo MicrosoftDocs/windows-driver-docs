@@ -2,14 +2,13 @@
 title: Synchronization and Threaded DPCs
 author: windows-driver-content
 description: Synchronization and Threaded DPCs
-MS-HAID:
-- 'Intrupts\_53bebca9-82c3-44b5-ab24-80a82d5e5629.xml'
-- 'kernel.synchronization\_and\_threaded\_dpcs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b4f2c77b-226c-4229-bcbb-5eebabdc28a4
 keywords: ["threaded DPCs WDK kernel", "synchronization WDK kernel , interrupts", "queued spin locks WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Synchronization and Threaded DPCs

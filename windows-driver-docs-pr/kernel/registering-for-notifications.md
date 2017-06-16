@@ -2,14 +2,13 @@
 title: Registering for Notifications
 author: windows-driver-content
 description: Registering for Notifications
-MS-HAID:
-- 'Other\_7dd52e70-ae41-4b4e-9cbd-199bec8fa571.xml'
-- 'kernel.registering\_for\_notifications'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 06109726-77e8-49de-9486-4fa2a5aceb1c
 keywords: ["filtering registry calls WDK kernel , registering for notifications", "registry filtering drivers WDK kernel , registering for notifications", "registering filter registry call notifications", "pre-notification option WDK filter registry call", "post-notification option WDK filter registry call", "notifications WDK filter registry call"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering for Notifications

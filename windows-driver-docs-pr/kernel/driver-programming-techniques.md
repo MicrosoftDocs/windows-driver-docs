@@ -2,12 +2,6 @@
 title: Driver Programming Techniques
 author: windows-driver-content
 description: Driver Programming Techniques
-MS-HAID:
-- 'kernprog\_3f3e917a-42b3-49f3-9fbb-f5774fa7422b.xml'
-- 'kernel.driver\_programming\_techniques'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ddad49ab-fe3c-4959-8a29-a850380b978f
 ---
 

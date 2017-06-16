@@ -2,14 +2,13 @@
 title: Failure to Check the Size of Buffers
 author: windows-driver-content
 description: Failure to Check the Size of Buffers
-MS-HAID:
-- 'Other\_04db6f5e-0405-484d-97a0-57a171a1835d.xml'
-- 'kernel.failure\_to\_check\_the\_size\_of\_buffers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e9d9a5d9-19a5-4a1d-95f9-df2021c51c41
 keywords: ["buffer size WDK kernel", "input buffers WDK kernel", "output buffers WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Failure to Check the Size of Buffers

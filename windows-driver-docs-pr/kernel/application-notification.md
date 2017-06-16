@@ -2,14 +2,13 @@
 title: Application Notification
 author: windows-driver-content
 description: Application Notification
-MS-HAID:
-- 'dhp\_09dd466c-4df4-44f5-8179-24259bc6914c.xml'
-- 'kernel.application\_notification'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ca6cf2e7-e710-4c23-8440-54cdff736dc0
 keywords: ["dynamic hardware partitioning WDK , application notification", "hardware partitioning WDK dynamic , application notification", "partitions WDK dynamic hardware , application notification", "application notification WDK dynamic hardware partitioning", "notification WDK dynamic hardware partitioning , application"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Application Notification

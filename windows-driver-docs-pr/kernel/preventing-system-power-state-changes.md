@@ -2,14 +2,13 @@
 title: Preventing System Power State Changes
 author: windows-driver-content
 description: Preventing System Power State Changes
-MS-HAID:
-- 'PwrMgmt\_7cd3d623-33ac-4ea8-86ae-3fa3cc458e04.xml'
-- 'kernel.preventing\_system\_power\_state\_changes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a744dfe7-d756-45c3-8fdf-7a403f6cde36
 keywords: ["system power states WDK kernel , preventing changes", "state transitions WDK power management", "PoRegisterSystemState", "PoSetSystemState", "PoUnregisterSystemState", "working states WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Preventing System Power State Changes

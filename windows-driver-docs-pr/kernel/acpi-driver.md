@@ -2,14 +2,13 @@
 title: Acpi.sys The Windows ACPI Driver
 author: windows-driver-content
 description: The Windows ACPI driver, Acpi.sys, is an inbox component of the Windows operating system.
-MS-HAID:
-- 'PwrMgmt\_423b46a8-119b-46a4-9a85-e095fbed3026.xml'
-- 'kernel.acpi\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 38ca54e0-defe-48b2-ab00-a5f688c2eb01
 keywords: ["ACPI drivers WDK power management", "enumerators WDK power management", "PDOs WDK power management", "filter DOs WDK power management", "physical device objects WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Acpi.sys: The Windows ACPI Driver

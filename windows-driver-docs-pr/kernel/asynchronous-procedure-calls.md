@@ -2,14 +2,13 @@
 title: Asynchronous Procedure Calls
 author: windows-driver-content
 description: Asynchronous Procedure Calls
-MS-HAID:
-- 'Synchro\_9addc161-c324-4b9b-9031-e322453ce8dd.xml'
-- 'kernel.asynchronous\_procedure\_calls'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c2d45c84-9b61-41e1-9a8e-eabbc0609a0b
 keywords: ["synchronization WDK kernel , asynchronous procedure calls", "kernel APCs WDK", "thread APCs WDK"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Asynchronous Procedure Calls

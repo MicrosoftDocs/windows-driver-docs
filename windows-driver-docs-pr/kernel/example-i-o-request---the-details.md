@@ -2,14 +2,13 @@
 title: Example I/O Request - The Details
 author: windows-driver-content
 description: Example I/O Request - The Details
-MS-HAID:
-- 'IRPs\_fe82b69d-7e0a-40b6-9365-7cd917b08332.xml'
-- 'kernel.example\_i\_o\_request\_\_\_the\_details'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 480db6a1-2a13-4f1a-87ff-c3bd37aa79be
 keywords: ["I/O stack locations WDK kernel", "layered driver IRP processing WDK kernel", "stack locations WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example I/O Request - The Details

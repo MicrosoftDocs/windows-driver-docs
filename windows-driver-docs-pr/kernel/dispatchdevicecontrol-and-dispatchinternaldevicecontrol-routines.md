@@ -2,14 +2,13 @@
 title: DispatchDeviceControl and DispatchInternalDeviceControl Routines
 author: windows-driver-content
 description: DispatchDeviceControl and DispatchInternalDeviceControl Routines
-MS-HAID:
-- 'DrvComps\_7715ab36-a5d2-4fc8-be6a-1d62e7431696.xml'
-- 'kernel.dispatchdevicecontrol\_and\_dispatchinternaldevicecontrol\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0bf8868e-bc5a-4fa7-9ff6-270f7a7bc850
 keywords: ["dispatch routines WDK kernel , DispatchDeviceControl routine", "dispatch routines WDK kernel , DispatchInternalDeviceControl routine", "DispatchDeviceControl routine", "DispatchInternalDeviceControl routine", "IRP_MJ_DEVICE_CONTROL I/O function code", "IRP_MJ_INTERNAL_DEVICE_CONTROL I/O function code", "internal device control dispatch routines WDK kernel", "device control dispatch routines WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DispatchDeviceControl and DispatchInternalDeviceControl Routines

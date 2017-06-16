@@ -2,14 +2,13 @@
 title: Designing WMI Data and Event Blocks
 author: windows-driver-content
 description: Designing WMI Data and Event Blocks
-MS-HAID:
-- 'WMI\_0cad6afc-d5b2-4ebc-a4e7-8ddc92b0d461.xml'
-- 'kernel.designing\_wmi\_data\_and\_event\_blocks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3235accd-2bec-430e-ab00-1c5d0ef46045
 keywords: ["WMI WDK kernel , event blocks", "event blocks WDK WMI", "data blocks WDK WMI", "WMI WDK kernel , data blocks", "blocks WDK WMI"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Designing WMI Data and Event Blocks

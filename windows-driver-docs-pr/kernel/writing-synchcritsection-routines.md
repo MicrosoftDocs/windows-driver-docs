@@ -2,14 +2,13 @@
 title: Writing SynchCritSection Routines
 author: windows-driver-content
 description: Writing SynchCritSection Routines
-MS-HAID:
-- 'Intrupts\_39474486-0d01-42b5-9b65-9f7008b7daf6.xml'
-- 'kernel.writing\_synchcritsection\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b02e230e-48f1-43dc-b5aa-368cd7b5436f
 keywords: ["SynchCritSection", "critical section routines WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing SynchCritSection Routines

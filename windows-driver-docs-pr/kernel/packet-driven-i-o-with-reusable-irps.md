@@ -2,14 +2,13 @@
 title: Packet-Driven I/O with Reusable IRPs
 author: windows-driver-content
 description: Packet-Driven I/O with Reusable IRPs
-MS-HAID:
-- 'Intro\_3a40b890-cba9-4744-98e2-7fbe99a33861.xml'
-- 'kernel.packet\_driven\_i\_o\_with\_reusable\_irps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ff315b61-9fa3-4a20-bc3e-82db0ea3cde7
 keywords: ["I/O stack locations WDK kernel", "packet-driven I/O WDK kernel", "reusing IRPs WDK kernel", "headers WDK kernel", "I/O manager communication WDK kernel", "I/O status blocks WDK kernel", "status blocks WDK kernel", "stack locations WDK kernel", "IRPs WDK kernel , reusing"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Packet-Driven I/O with Reusable IRPs

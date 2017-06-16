@@ -2,14 +2,13 @@
 title: Writing ControllerControl Routines
 author: windows-driver-content
 description: Writing ControllerControl Routines
-MS-HAID:
-- 'ioprogleg\_aefcc614-0fc0-4a3c-bd92-fa5b53e83e4a.xml'
-- 'kernel.writing\_controllercontrolroutines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9330e0ff-c4bb-4aa6-985e-ef89791f74df
 keywords: ["controller objects WDK kernel , writing ControllerControl routines", "ControllerControl routines, writing"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing ControllerControl Routines

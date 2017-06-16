@@ -2,14 +2,13 @@
 title: Postponing PnP IRP Processing Until Lower Drivers Finish
 author: windows-driver-content
 description: Postponing PnP IRP Processing Until Lower Drivers Finish
-MS-HAID:
-- 'PlugPlay\_8f3d1983-19fd-4891-a625-e793e874d2d9.xml'
-- 'kernel.postponing\_pnp\_irp\_processing\_until\_lower\_drivers\_finish'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5bd9f3aa-30d5-4c45-afec-3e5ae0264f4a
 keywords: ["PnP WDK kernel , postponing IRP processing", "Plug and Play WDK kernel , postponing IRP processing", "IRPs WDK PnP", "I/O request packets WDK PnP", "postponing IRP processing WDK PnP", "delaying IRP processing WDK PnP", "DispatchPnP routine", "IoCompletion routine"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Postponing PnP IRP Processing Until Lower Drivers Finish

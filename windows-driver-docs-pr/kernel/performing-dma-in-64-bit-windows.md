@@ -2,14 +2,13 @@
 title: Performing DMA in 64-Bit Windows
 author: windows-driver-content
 description: Performing DMA in 64-Bit Windows
-MS-HAID:
-- 'Other\_6279194e-aa7d-404a-abbc-bec8cbeb9070.xml'
-- 'kernel.performing\_dma\_in\_64\_bit\_windows'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3ef00c05-356d-488a-8422-503d8132344d
 keywords: ["64-bit WDK kernel , porting drivers to", "porting drivers to 64-bit Windows", "DMA transfers WDK kernel , 64-bit Windows", "double-buffering WDK 64-bit", "Direct Memory Access WDK kernel", "polymorphism WDK 64-bit", "data structures WDK 64-bit", "unsigned operations WDK 64-bit", "signed operations WDK 64-bit", "pointer arithmetic WDK 64-bit"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Performing DMA in 64-Bit Windows

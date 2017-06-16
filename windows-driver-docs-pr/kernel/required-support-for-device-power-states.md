@@ -2,14 +2,13 @@
 title: Required Support for Device Power States
 author: windows-driver-content
 description: Required Support for Device Power States
-MS-HAID:
-- 'PwrMgmt\_674df749-8ab9-4490-b43d-b64926d34137.xml'
-- 'kernel.required\_support\_for\_device\_power\_states'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f7218f2a-d4ad-4b9a-af90-057801e714a2
 keywords: ["continuous power WDK kernel", "delays WDK power management", "device power states WDK kernel", "hardware WDK power management", "legacy power management WDK kernel", "class drivers WDK power management", "port drivers WDK power management"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Required Support for Device Power States

@@ -2,14 +2,13 @@
 title: Introduction to Spin Locks
 author: windows-driver-content
 description: Introduction to Spin Locks
-MS-HAID:
-- 'Synchro\_15079c31-7a74-4d63-b312-9eadaa64d790.xml'
-- 'kernel.introduction\_to\_spin\_locks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a37c0db4-ff9c-4958-a9f4-62b671458d03
 keywords: ["KSPIN_LOCK", "executive spin locks WDK kernel", "interrupt spin locks WDK kernel", "queued spin locks WDK kernel", "spin locks WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Spin Locks

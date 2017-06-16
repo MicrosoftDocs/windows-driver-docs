@@ -2,14 +2,13 @@
 title: Changes to the Number of Processors
 author: windows-driver-content
 description: Changes to the Number of Processors
-MS-HAID:
-- 'dhp\_33533681-3222-4170-a0b8-69278dbd18a8.xml'
-- 'kernel.changes\_to\_the\_number\_of\_processors'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9ced4b42-c83d-49da-8405-b95b0c0144fa
 keywords: ["dynamic hardware partitioning WDK , changing number of processors", "hardware partitioning WDK dynamic , changing number of processors", "partitions WDK dynamic hardware , changing number of processors", "active processors WDK dynamic hardware partitioning", "processor count WDK dynamic hardware partitioning", "processor affinity WDK dynamic hardware paritioning", "per-processor data structures WDK dynamic hardware partitioning"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Changes to the Number of Processors

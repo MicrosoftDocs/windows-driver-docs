@@ -2,14 +2,13 @@
 title: Hardware Resources
 author: windows-driver-content
 description: Hardware Resources
-MS-HAID:
-- 'PlugPlay\_f953cfe1-3171-41cc-9053-8668d4477d68.xml'
-- 'kernel.hardware\_resources'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c7a6997b-34f9-4dd9-b384-2321a8b5ce54
 keywords: ["resource descriptors WDK PnP", "PnP WDK kernel , hardware resources", "Plug and Play WDK kernel , hardware resources", "resource requirements lists WDK PnP", "resource lists WDK PnP", "assigned resources WDK PnP", "requirements lists WDK PnP", "registry WDK PnP", "logical configurations WDK PnP", "boot configurations WDK PnP", "forced configurations WDK PnP", "filtered configurations WDK PnP", "override configurations WDK PnP", "configuration types WDK PnP", "allocated configurations WDK PnP", "basic configurations WDK PnP", "Hardware Resources"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hardware Resources

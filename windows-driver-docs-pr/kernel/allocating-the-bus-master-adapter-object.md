@@ -2,14 +2,13 @@
 title: Allocating the Bus-Master Adapter Object
 author: windows-driver-content
 description: Allocating the Bus-Master Adapter Object
-MS-HAID:
-- 'ioprogdma\_9de237db-e9f1-4dc8-8d30-f2ec39263e5f.xml'
-- 'kernel.allocating\_the\_bus\_master\_adapter\_object'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fc80d3f8-a12e-40bd-8b0e-c6bca2f9e7de
 keywords: ["allocating bus-master adapter objects", "bus-master DMA WDK kernel", "DMA transfers WDK kernel , bus-master DMA", "adapter objects WDK kernel , bus-master DMA"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating the Bus-Master Adapter Object

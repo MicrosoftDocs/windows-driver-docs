@@ -2,14 +2,13 @@
 title: Section Objects and Views
 author: windows-driver-content
 description: Section Objects and Views
-MS-HAID:
-- 'MemMgmt\_866348b9-6415-46a0-8857-2d9d90a678b4.xml'
-- 'kernel.section\_objects\_and\_views'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9c60b761-6326-4d1a-b884-cc2acee4bedd
 keywords: ["memory management WDK kernel , section objects", "memory management WDK kernel , shared memory", "shared memory WDK kernel", "section objects WDK kernel", "memory sections WDK kernel", "sharing memory address space", "views WDK memory section"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Section Objects and Views

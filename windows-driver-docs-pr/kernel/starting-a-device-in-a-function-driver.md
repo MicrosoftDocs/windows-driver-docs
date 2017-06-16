@@ -2,14 +2,13 @@
 title: Starting a Device in a Function Driver
 author: windows-driver-content
 description: Starting a Device in a Function Driver
-MS-HAID:
-- 'PlugPlay\_46b7b4d2-063f-4748-97f3-85c7a43d346d.xml'
-- 'kernel.starting\_a\_device\_in\_a\_function\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 148a3128-9cb1-4a2c-a62e-45199476d968
 keywords: ["function drivers WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Starting a Device in a Function Driver

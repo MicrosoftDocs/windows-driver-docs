@@ -2,14 +2,13 @@
 title: Creating Controller Objects and Controller Extensions
 author: windows-driver-content
 description: Creating Controller Objects and Controller Extensions
-MS-HAID:
-- 'ioprogleg\_834d525c-cbe5-4050-ade1-2f27d0edd03c.xml'
-- 'kernel.creating\_controller\_objects\_and\_controller\_extensions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1f5bfcbc-1d8e-4ace-9539-a25e226444a6
 keywords: ["controller objects WDK kernel , creating", "IoCreateController", "controller extensions WDK I/O", "extensions WDK controller objects", "controller objects WDK kernel , extensions"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Controller Objects and Controller Extensions

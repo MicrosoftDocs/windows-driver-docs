@@ -2,12 +2,6 @@
 title: Fast Startup from a Low-Power State
 author: windows-driver-content
 description: Fast Startup from a Low-Power State
-MS-HAID:
-- 'PwrMgmt\_a2b7c47a-eb3e-403a-9ee1-11162158a16f.xml'
-- 'kernel.fast\_startup\_from\_a\_low\_power\_state'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1091571c-2e30-4ad5-b4b9-0f8633e68288
 ---
 

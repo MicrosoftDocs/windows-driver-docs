@@ -2,14 +2,13 @@
 title: Thread Objects
 author: windows-driver-content
 description: Thread Objects
-MS-HAID:
-- 'Synchro\_083f596c-5c5b-4b81-9684-31e9eab90272.xml'
-- 'kernel.thread\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 698de86b-1790-42d5-a482-82e4431ce7af
 keywords: ["kernel dispatcher objects WDK , thread objects", "dispatcher objects WDK kernel , thread objects"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Thread Objects

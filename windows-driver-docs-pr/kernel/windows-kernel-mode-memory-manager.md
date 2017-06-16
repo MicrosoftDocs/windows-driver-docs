@@ -2,12 +2,6 @@
 title: Windows Kernel-Mode Memory Manager
 author: windows-driver-content
 description: Windows Kernel-Mode Memory Manager
-MS-HAID:
-- 'memanager\_bd6f26d2-d0b4-464f-98e6-fc70e3e713d4.xml'
-- 'kernel.windows\_kernel\_mode\_memory\_manager'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ab464d5b-7bad-494e-80cd-e32ca9e9fa8d
 ---
 

@@ -2,9 +2,6 @@
 title: Surprise Wake-Up
 author: windows-driver-content
 description: A surprise wake-up is an unexpected transition to D0.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 07D3EC05-A1C9-40C5-90FC-E25B5A66B064
 ---
 

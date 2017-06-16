@@ -2,14 +2,13 @@
 title: Powering Up a Device
 author: windows-driver-content
 description: Powering Up a Device
-MS-HAID:
-- 'PwrMgmt\_e8b355e0-2c93-4d26-af82-74d50dad3eb1.xml'
-- 'kernel.powering\_up\_a\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 115cc904-922d-447e-b221-cb3e489dd08d
 keywords: ["I/O WDK power management", "device power ups WDK kernel", "powering up devices WDK kernel", "IRP_MN_SET_POWER", "working state returns WDK power management", "turning on devices WDK power management", "automatic power ups WDK kernel", "on power WDK kernel", "IRPs WDK power management", "startup power management WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Powering Up a Device

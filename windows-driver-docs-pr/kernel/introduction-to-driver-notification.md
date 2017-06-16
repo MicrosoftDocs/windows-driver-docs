@@ -2,14 +2,13 @@
 title: Introduction to Driver Notification
 author: windows-driver-content
 description: Introduction to Driver Notification
-MS-HAID:
-- 'dhp\_224da759-a4d3-47cd-8959-f5931d30e2a9.xml'
-- 'kernel.introduction\_to\_driver\_notification'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c0c09480-628a-4f12-b6a3-881cc3e12fd5
 keywords: ["driver notification WDK dynamic hardware partitioning , synchronous", "driver notification WDK dynamic hardware partitioning , asynchronous", "driver notification WDK dynamic hardware partitioning , memory notification"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Driver Notification

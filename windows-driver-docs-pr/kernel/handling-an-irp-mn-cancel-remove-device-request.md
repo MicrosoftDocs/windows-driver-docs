@@ -2,14 +2,13 @@
 title: Handling an IRP\_MN\_CANCEL\_REMOVE\_DEVICE Request
 author: windows-driver-content
 description: Handling an IRP\_MN\_CANCEL\_REMOVE\_DEVICE Request
-MS-HAID:
-- 'PlugPlay\_25cec0ab-933b-4138-9635-b477db02d698.xml'
-- 'kernel.handling\_an\_irp\_mn\_cancel\_remove\_device\_request'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3382c47d-6ac8-409e-b558-ad2f2ae83715
 keywords: ["IRP_MN_CANCEL_REMOVE_DEVICE", "spurious cancel-remove requests WDK PnP"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling an IRP\_MN\_CANCEL\_REMOVE\_DEVICE Request

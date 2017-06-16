@@ -2,14 +2,13 @@
 title: Callback Objects
 author: windows-driver-content
 description: Callback Objects
-MS-HAID:
-- 'Synchro\_28a0b6f1-b5eb-4c4e-81dd-efd4724b29a7.xml'
-- 'kernel.callback\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d6ccb064-5936-4996-a5cd-795803958b5d
 keywords: ["synchronization WDK kernel , callback objects", "callback objects WDK kernel", "objects WDK callback objects", "kernel callback mechanism WDK"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Callback Objects

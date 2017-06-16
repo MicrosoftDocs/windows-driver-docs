@@ -2,12 +2,6 @@
 title: Windows Kernel-Mode Kernel Transaction Manager
 author: windows-driver-content
 description: Windows Kernel-Mode Kernel Transaction Manager
-MS-HAID:
-- 'tranmanager\_0dbe1e99-f577-4d81-9473-ad0be7a30f66.xml'
-- 'kernel.windows\_kernel\_mode\_kernel\_transaction\_manager'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 43bf96ed-8be8-4670-a310-99cd7c7f9073
 ---
 

@@ -2,14 +2,13 @@
 title: Kernel-Mode Driver Architecture Design Guide
 author: windows-driver-content
 description: Kernel-Mode Driver Architecture Design Guide
-MS-HAID:
-- 'kerdg\_a997c77d-f70b-412d-bef9-cb87ecc0aae5.xml'
-- 'kernel.kernel\_mode\_driver\_architecture\_design\_guide'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 21c199f3-abc3-4607-a674-eb84b6c3c25a
 keywords: ["kernel-mode drivers WDK , architecture", "kernel-mode drivers WDK"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Kernel-Mode Driver Architecture Design Guide

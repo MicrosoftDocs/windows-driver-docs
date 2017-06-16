@@ -2,14 +2,13 @@
 title: Using Direct I/O with DMA
 author: windows-driver-content
 description: Using Direct I/O with DMA
-MS-HAID:
-- 'ioproguser\_305b80e1-bbd2-40bc-9d63-6d32cae4a181.xml'
-- 'kernel.using\_direct\_i\_o\_with\_dma'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0e609613-9023-4f35-a9c5-d68c8b676cfe
 keywords: ["direct I/O WDK kernel", "buffers WDK I/O , direct I/O", "data buffers WDK I/O , direct I/O", "I/O WDK kernel , direct I/O", "DMA transfers WDK kernel , direct I/O"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Direct I/O with DMA

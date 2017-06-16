@@ -2,14 +2,13 @@
 title: End-User I/O Requests and File Objects
 author: windows-driver-content
 description: End-User I/O Requests and File Objects
-MS-HAID:
-- 'IRPs\_de641ccc-cf8b-4db0-938a-b59e06dd4334.xml'
-- 'kernel.end\_user\_i\_o\_requests\_and\_file\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 69524f41-32c4-4a62-b666-6eb2e4657877
 keywords: ["IRPs WDK kernel , end-user I/O requests", "end-user I/O requests WDK kernel", "I/O requests WDK kernel", "named file objects WDK kernel", "file objects WDK kernel", "protected subsystems WDK kernel", "subsystem I/O requests WDK kernel", "user I/O requests WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # End-User I/O Requests and File Objects

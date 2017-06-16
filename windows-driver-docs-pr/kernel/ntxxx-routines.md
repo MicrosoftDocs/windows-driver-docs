@@ -2,12 +2,6 @@
 title: NtXxx Routines
 author: windows-driver-content
 description: NtXxx Routines
-MS-HAID:
-- 'ntx\_dd3fda59-bb71-40a6-ac11-7042bef4ab33.xml'
-- 'kernel.ntxxx\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 71db6fa6-d1f8-4aed-9de1-bba1f6cee1ce
 ---
 

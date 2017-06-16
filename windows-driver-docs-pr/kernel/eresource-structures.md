@@ -2,14 +2,13 @@
 title: ERESOURCE Structures
 author: windows-driver-content
 description: ERESOURCE Structures
-MS-HAID:
-- 'Synchro\_8a147033-6907-42b1-b4b4-48d0ef5ee4a5.xml'
-- 'kernel.eresource\_structures'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 202b2ef1-bbe4-4ffd-a82b-21f19c145e8d
 keywords: ["synchronization WDK kernel , ERESOURCE structures", "locking WDK kernel", "read/write locking WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ERESOURCE Structures

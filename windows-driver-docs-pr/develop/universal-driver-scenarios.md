@@ -8,7 +8,7 @@ This sample is intended to be used with Windows 10 Version 1703 and later.
 
 ## Prerequisites
 
-Before you read this section, check out the requirements and best practices for universal driver packages described in [Getting Started with Universal Windows drivers](getting-started-with-universal-drivers.md)
+Before you read this section, check out the requirements and best practices for universal driver packages described in [Getting Started with Universal Windows drivers](getting-started-with-universal-drivers.md).
 
 ## Overview
 
@@ -93,7 +93,7 @@ osrfx2_DCHU_usersvc.exe
 
 Note that the [**AddService**](../install/inf-addservice-directive.md) directive is not required to be in a separate component.  Fabrikam made this choice to improve componentization of their universal driver package.
 
-## Use a component to install software from a driver package
+## Use a component to install legacy software from a driver package
 
 Fabrikam has an executable file `osrfx2_DCHU_componentsoftware.exe` that they previously installed using a co-installer.  This legacy software displays the registry keys set by the board and is required by the OEM.  This is a GUI-based executable that only runs on Windows for desktop editions.  To install it, Fabrikam creates a separate component driver package.
 

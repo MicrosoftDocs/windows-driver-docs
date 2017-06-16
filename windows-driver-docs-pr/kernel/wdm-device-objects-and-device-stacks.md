@@ -2,14 +2,13 @@
 title: WDM Device Objects and Device Stacks
 author: windows-driver-content
 description: WDM Device Objects and Device Stacks
-MS-HAID:
-- 'DevObjts\_770efa10-d78f-4735-91e4-68851a517a34.xml'
-- 'kernel.wdm\_device\_objects\_and\_device\_stacks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1ca151b4-40f8-43e4-a9f7-e754234609ce
 keywords: ["stacks WDK , kernel-mode"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDM Device Objects and Device Stacks

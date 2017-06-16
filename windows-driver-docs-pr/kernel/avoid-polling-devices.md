@@ -2,14 +2,13 @@
 title: Avoid Polling Devices
 author: windows-driver-content
 description: Avoid Polling Devices
-MS-HAID:
-- 'ioproggen\_6eb9f74a-bb4e-4efc-8500-f02de69dd301.xml'
-- 'kernel.avoid\_polling\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c50c9c6f-c8eb-4e52-854a-3ebc4fdc874c
 keywords: ["I/O WDK kernel , device polling", "device polling WDK I/O", "polling devices WDK I/O", "loop counters WDK I/O", "counters WDK I/O"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Avoid Polling Devices

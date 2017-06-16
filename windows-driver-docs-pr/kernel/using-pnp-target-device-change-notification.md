@@ -2,14 +2,13 @@
 title: Using PnP Target Device Change Notification
 author: windows-driver-content
 description: Using PnP Target Device Change Notification
-MS-HAID:
-- 'PlugPlay\_afff3274-1331-496d-8487-3d1319816dde.xml'
-- 'kernel.using\_pnp\_target\_device\_change\_notification'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a56bda5c-e398-442d-bc90-2e63f8f7e6bf
 keywords: ["notifications WDK PnP , target device changes", "target device change notifications WDK PnP", "EventCategoryTargetDeviceChange notification"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using PnP Target Device Change Notification

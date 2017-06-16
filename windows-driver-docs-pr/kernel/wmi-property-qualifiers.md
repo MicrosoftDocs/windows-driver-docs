@@ -2,14 +2,13 @@
 title: WMI Property Qualifiers
 author: windows-driver-content
 description: WMI Property Qualifiers
-MS-HAID:
-- 'WMI\_f135291c-3891-4fc1-8b8f-bf00a04e08cd.xml'
-- 'kernel.wmi\_property\_qualifiers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e2d281b3-913c-43ad-921c-80dc8be09aa0
 keywords: ["MOF property qualifiers WDK WMI", "property qualifiers WDK WMI", "qualifiers WDK WMI", "standard MOF qualifiers WDK WMI"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WMI Property Qualifiers

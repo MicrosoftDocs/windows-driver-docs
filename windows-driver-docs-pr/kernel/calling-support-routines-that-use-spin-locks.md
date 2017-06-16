@@ -2,14 +2,13 @@
 title: Calling Support Routines That Use Spin Locks
 author: windows-driver-content
 description: Calling Support Routines That Use Spin Locks
-MS-HAID:
-- 'Synchro\_99a983bd-13d4-4516-aba0-685c72cd3707.xml'
-- 'kernel.calling\_support\_routines\_that\_use\_spin\_locks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 89cf1fd4-4f4b-4b82-9e50-e5766918c421
 keywords: ["KeAcquireSpinLock", "KeAcquireInStackQueuedSpinLock", "spin locks WDK kernel", "calling spin lock support routines WDK kernel", "executive spin locks WDK kernel", "interrupt spin locks WDK kernel", "queued spin locks WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Calling Support Routines That Use Spin Locks

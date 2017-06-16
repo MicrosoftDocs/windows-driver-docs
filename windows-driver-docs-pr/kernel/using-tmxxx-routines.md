@@ -2,14 +2,13 @@
 title: Using TmXxx Routines
 author: windows-driver-content
 description: Using TmXxx Routines
-MS-HAID:
-- 'ktm\_dg\_08129705-49d4-4786-8f6c-640664f6c9ba.xml'
-- 'kernel.using\_tmxxx\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8bc763e9-e67c-4810-9901-e5dc1a1cfd0c
 keywords: ["Kernel Transaction Manager WDK , TmXxx routines", "KTM WDK , TmXxx routines", "TmXxx routines WDK KTM"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using TmXxx Routines

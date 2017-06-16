@@ -2,14 +2,13 @@
 title: Acquire and Release Semantics
 author: windows-driver-content
 description: Acquire and Release Semantics
-MS-HAID:
-- 'Synchro\_88127404-a394-403f-a289-d61c45ab81d5.xml'
-- 'kernel.acquire\_and\_release\_semantics'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a0852881-c33f-427a-be8a-5b9edac81f9a
 keywords: ["synchronization WDK kernel , acquire semantics", "synchronization WDK kernel , release semantics", "acquire semantics WDK kernel", "release semantics WDK kernel", "semantics WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Acquire and Release Semantics

@@ -2,14 +2,13 @@
 title: Types of WDM Device Objects
 author: windows-driver-content
 description: Types of WDM Device Objects
-MS-HAID:
-- 'DevObjts\_7aaaedae-cce6-4c36-aa84-a61030ead260.xml'
-- 'kernel.types\_of\_wdm\_device\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 89cc888d-3097-4637-96d2-6b9c59878d2f
 keywords: ["functional device objects WDK kernel", "FDO WDK kernel", "physical device objects WDK kernel", "PDOs WDK kernel", "device objects WDK kernel , types", "filter DOs WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Types of WDM Device Objects

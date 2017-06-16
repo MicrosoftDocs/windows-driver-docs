@@ -2,14 +2,13 @@
 title: A Single DispatchCreateClose Routine
 author: windows-driver-content
 description: A Single DispatchCreateClose Routine
-MS-HAID:
-- 'DrvComps\_4114e826-2d0a-4210-af6d-7ecbcdaa2bc3.xml'
-- 'kernel.a\_single\_dispatchcreateclose\_routine'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6127d696-2409-49fc-9cbd-ba1b13c0c672
 keywords: ["dispatch routines WDK kernel , DispatchCreateClose routine", "DispatchCreateClose routine", "IRP_MJ_CREATE I/O function code", "IRP_MJ_CLOSE I/O function code", "create dispatch routines WDK kernel", "close dispatch routines WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # A Single DispatchCreateClose Routine

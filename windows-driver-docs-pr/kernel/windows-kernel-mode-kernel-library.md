@@ -2,12 +2,6 @@
 title: Windows Kernel-Mode Kernel Library
 author: windows-driver-content
 description: Windows Kernel-Mode Kernel Library
-MS-HAID:
-- 'kerncore\_727d93c0-cb7f-4384-b027-cf830fc91c7d.xml'
-- 'kernel.windows\_kernel\_mode\_kernel\_library'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e62264ee-5d52-4ae1-bd54-51e93c34762f
 ---
 

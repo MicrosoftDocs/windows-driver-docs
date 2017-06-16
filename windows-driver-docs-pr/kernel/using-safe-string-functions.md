@@ -2,14 +2,13 @@
 title: Using Safe String Functions
 author: windows-driver-content
 description: Using Safe String Functions
-MS-HAID:
-- 'Other\_2fe131c8-834b-4fff-a1c8-3803eeb9324c.xml'
-- 'kernel.using\_safe\_string\_functions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a84008e8-e490-4640-a734-ef55cfbdfea3
 keywords: ["safe string functions WDK", "string manipulation functions WDK", "buffers WDK safe string functions"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Safe String Functions

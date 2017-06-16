@@ -2,14 +2,13 @@
 title: Object Directories
 author: windows-driver-content
 description: Object Directories
-MS-HAID:
-- 'Objects\_50984845-672d-414b-8eaa-37008b063cb3.xml'
-- 'kernel.object\_directories'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b0e0d077-6736-4a54-b1eb-a30962442942
 keywords: ["object directories WDK kernel", "named objects WDK kernel", "directories WDK objects", "top-level object directories WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Object Directories

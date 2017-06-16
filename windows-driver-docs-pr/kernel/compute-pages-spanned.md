@@ -2,12 +2,6 @@
 title: Windows kernel obsolete macros
 author: windows-driver-content
 description: This topic summarizes the following obsolete macros
-MS-HAID:
-- 'k106\_3f869aea-159f-49c2-8984-f1066332ea80.xml'
-- 'kernel.compute\_pages\_spanned'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b102355e-f40b-438e-92ef-371814e0c074
 ---
 

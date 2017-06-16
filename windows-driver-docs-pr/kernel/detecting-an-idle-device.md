@@ -2,14 +2,13 @@
 title: Detecting an Idle Device
 author: windows-driver-content
 description: Detecting an Idle Device
-MS-HAID:
-- 'PwrMgmt\_5fc741f4-3168-4faa-b050-868e0aeb43cc.xml'
-- 'kernel.detecting\_an\_idle\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 69de45de-6c27-4ada-bd5e-369da0bd612a
 keywords: ["idle detection WDK power management", "power management WDK kernel , idle detection", "conserving power WDK kernel", "sleep power management WDK kernel", "asleep devices WDK power management", "detecting idle devices"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Detecting an Idle Device

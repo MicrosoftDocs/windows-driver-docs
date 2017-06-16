@@ -2,12 +2,6 @@
 title: Introduction to Application Notification
 author: windows-driver-content
 description: Introduction to Application Notification
-MS-HAID:
-- 'dhp\_10ab1854-aa3d-4648-8560-e358e748247b.xml'
-- 'kernel.introduction\_to\_application\_notification'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c115eb29-8bd2-40f7-b979-cff386bdc9aa
 ---
 

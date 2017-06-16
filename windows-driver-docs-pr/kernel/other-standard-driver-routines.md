@@ -2,14 +2,13 @@
 title: Other Standard Driver Routines
 author: windows-driver-content
 description: Other Standard Driver Routines
-MS-HAID:
-- 'DrvComps\_322d7480-7564-4a03-a0d6-647e50ebdef1.xml'
-- 'kernel.other\_standard\_driver\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3dada9cc-7239-47de-8940-bc4cef8be4ca
 keywords: ["driver objects WDK kernel", "standard driver routines WDK kernel , driver objects", "driver routines WDK kernel , driver objects", "routines WDK kernel , driver objects", "objects WDK driver objects"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Other Standard Driver Routines

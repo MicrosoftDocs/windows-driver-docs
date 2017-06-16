@@ -2,14 +2,13 @@
 title: DPC Objects and DPCs
 author: windows-driver-content
 description: DPC Objects and DPCs
-MS-HAID:
-- 'Intrupts\_462aafda-d2b9-42e1-9f48-549f4afabe15.xml'
-- 'kernel.dpc\_objects\_and\_dpcs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 962e6b38-afed-4711-a556-ed9cbc139a1a
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel", "interrupt service routines WDK kernel , DPCs", "ISRs WDK kernel , DPCs", "DPC objects WDK kernel", "objects WDK DPC"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DPC Objects and DPCs

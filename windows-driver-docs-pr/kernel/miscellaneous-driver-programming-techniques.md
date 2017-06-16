@@ -2,14 +2,13 @@
 title: Miscellaneous Driver Programming Techniques
 author: windows-driver-content
 description: Miscellaneous Driver Programming Techniques
-MS-HAID:
-- 'Other\_7e60f2a9-7619-4710-855e-a869fa9baf43.xml'
-- 'kernel.miscellaneous\_driver\_programming\_techniques'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6afdaecb-62f8-4909-8117-6242cd5b3765
 keywords: ["driver programming techniques WDK kernel", "kernel-mode drivers WDK , driver programming techniques"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Miscellaneous Driver Programming Techniques

@@ -2,12 +2,6 @@
 title: General I/O Programming Techniques
 author: windows-driver-content
 description: General I/O Programming Techniques
-MS-HAID:
-- 'ioproggen\_c21b0020-7393-405a-966b-009253f4945a.xml'
-- 'kernel.general\_i\_o\_programming\_techniques'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c310829f-e102-4a96-aa3e-39136b8a641b
 ---
 

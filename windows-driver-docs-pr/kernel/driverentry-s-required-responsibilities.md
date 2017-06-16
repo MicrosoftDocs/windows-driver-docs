@@ -2,14 +2,13 @@
 title: DriverEntry's Required Responsibilities
 author: windows-driver-content
 description: DriverEntry's Required Responsibilities
-MS-HAID:
-- 'DrvComps\_1769f566-ea9c-4f15-a198-71b9c2b0e342.xml'
-- 'kernel.driverentry\_s\_required\_responsibilities'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6e997875-e7b7-43e2-8398-f0574f3a5816
 keywords: ["DriverEntry WDK kernel , required responsibilities"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DriverEntry's Required Responsibilities

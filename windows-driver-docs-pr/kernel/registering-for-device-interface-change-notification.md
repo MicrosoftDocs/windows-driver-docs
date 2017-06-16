@@ -2,14 +2,13 @@
 title: Registering for Device Interface Change Notification
 author: windows-driver-content
 description: Registering for Device Interface Change Notification
-MS-HAID:
-- 'PlugPlay\_c34c39cd-8cdb-4e80-9c71-4da168de62fd.xml'
-- 'kernel.registering\_for\_device\_interface\_change\_notification'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 680e4c5c-dac6-41b1-b754-aee782145ed0
 keywords: ["notifications WDK PnP , device interface changes", "EventCategoryDeviceInterfaceChange notification", "device interface change notifications WDK PnP", "registering device interface change notifications", "IoRegisterPlugPlayNotification"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering for Device Interface Change Notification

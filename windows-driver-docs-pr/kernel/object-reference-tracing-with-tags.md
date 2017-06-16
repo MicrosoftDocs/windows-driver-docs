@@ -2,14 +2,13 @@
 title: Object Reference Tracing with Tags
 author: windows-driver-content
 description: Object Reference Tracing with Tags
-MS-HAID:
-- 'Other\_c4bc8196-00dc-4a2e-9b48-f2b2034c516c.xml'
-- 'kernel.object\_reference\_tracing\_with\_tags'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f6c3d7b2-09b1-4055-b066-cce8831efab2
 keywords: ["object referencing with tags WDK"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Object Reference Tracing with Tags

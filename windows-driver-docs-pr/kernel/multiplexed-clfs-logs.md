@@ -2,14 +2,13 @@
 title: Multiplexed CLFS Logs
 author: windows-driver-content
 description: Multiplexed CLFS Logs
-MS-HAID:
-- 'Clfs\_guide\_4605c2a8-42fd-4131-bed9-4ca2e78c4f06.xml'
-- 'kernel.multiplexed\_clfs\_logs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bbea9bdc-8bb8-4455-89c4-4735bad85ba0
 keywords: ["Common Log File System WDK kernel , multiplexed logs", "CLFS WDK kernel , multiplexed logs", "multiplexed logs WDK CLFS", "stable storage WDK CLFS", "storage WDK CLFS"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Multiplexed CLFS Logs

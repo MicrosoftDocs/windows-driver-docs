@@ -2,14 +2,13 @@
 title: Handling Transaction Operations
 author: windows-driver-content
 description: Handling Transaction Operations
-MS-HAID:
-- 'ktm\_dg\_3892cd69-c851-4e00-8bc1-eb31f2ea1124.xml'
-- 'kernel.handling\_transaction\_operations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9b82e9d6-3db2-4806-a087-1c9622dc04e2
 keywords: ["transactions WDK KTM , handling operations", "handling transaction operations WDK KTM", "transactions WDK KTM , committing transactions", "committing transactions WDK KTM", "transactions WDK KTM , rolling back transactions", "rolling back transactions WDK KTM", "transactions WDK KTM , recovering transactions", "recovering transactions WDK KTM"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Transaction Operations

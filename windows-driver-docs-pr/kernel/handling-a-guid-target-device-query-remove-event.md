@@ -2,14 +2,13 @@
 title: Handling a GUID\_TARGET\_DEVICE\_QUERY\_REMOVE Event
 author: windows-driver-content
 description: Handling a GUID\_TARGET\_DEVICE\_QUERY\_REMOVE Event
-MS-HAID:
-- 'PlugPlay\_6d425d11-d97d-416b-8259-54e14412d6df.xml'
-- 'kernel.handling\_a\_guid\_target\_device\_query\_remove\_event'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f3e867c5-f7b8-40d2-a6cc-c5cb82e0b59b
 keywords: ["notifications WDK PnP , target device changes", "target device change notifications WDK PnP", "EventCategoryTargetDeviceChange notification", "GUID_TARGET_DEVICE_QUERY_REMOVE"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling a GUID\_TARGET\_DEVICE\_QUERY\_REMOVE Event

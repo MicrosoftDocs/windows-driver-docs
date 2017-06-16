@@ -2,14 +2,13 @@
 title: Guidelines for Writing Dispatch(Internal)DeviceControl Routines
 author: windows-driver-content
 description: Guidelines for Writing Dispatch(Internal)DeviceControl Routines
-MS-HAID:
-- 'DrvComps\_f02034fa-9791-44c1-83b3-b28d0f4c57ce.xml'
-- 'kernel.guidelines\_for\_writing\_dispatch\_internal\_devicecontrol\_routines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e64ab28e-2904-41c2-a262-405bc129b9bb
 keywords: ["dispatch routines WDK kernel , DispatchDeviceControl routine", "dispatch routines WDK kernel , DispatchInternalDeviceControl routine", "DispatchDeviceControl routine", "DispatchInternalDeviceControl routine", "IRP_MJ_DEVICE_CONTROL I/O function code", "IRP_MJ_INTERNAL_DEVICE_CONTROL I/O function code", "internal device control dispatch routines WDK kernel", "device control dispatch routines WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Guidelines for Writing Dispatch(Internal)DeviceControl Routines

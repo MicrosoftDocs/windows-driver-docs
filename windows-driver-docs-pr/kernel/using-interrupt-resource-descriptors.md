@@ -2,12 +2,6 @@
 title: Using Interrupt Resource Descriptors
 author: windows-driver-content
 description: Using Interrupt Resource Descriptors
-MS-HAID:
-- 'Intrupts\_7dd96106-671f-4b63-be37-2b075244e337.xml'
-- 'kernel.using\_interrupt\_resource\_descriptors'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0e9aa9a1-c1aa-42e1-9c0b-a91a2424ad1a
 ---
 

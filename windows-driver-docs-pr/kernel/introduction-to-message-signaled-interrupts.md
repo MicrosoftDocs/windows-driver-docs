@@ -2,14 +2,13 @@
 title: Introduction to Message-Signaled Interrupts
 author: windows-driver-content
 description: Introduction to Message-Signaled Interrupts
-MS-HAID:
-- 'Intrupts\_01e129e1-2a9d-4bfb-8b7b-a1cf558b7be2.xml'
-- 'kernel.introduction\_to\_message\_signaled\_interrupts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 035207a1-762d-463e-822e-64ac4833afa4
 keywords: ["message-signaled interrupts WDK kernel", "MSIs WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Message-Signaled Interrupts

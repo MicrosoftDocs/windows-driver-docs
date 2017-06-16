@@ -2,14 +2,13 @@
 title: Implementing a Cancel Routine
 author: windows-driver-content
 description: Implementing a Cancel Routine
-MS-HAID:
-- 'IRPs\_da2e2f3f-8389-482a-9cbe-9d99491faa45.xml'
-- 'kernel.implementing\_a\_cancel\_routine'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 243b623b-317c-4084-a753-940c91c4cc50
 keywords: ["canceling IRPs, guidelines", "Cancel routines, guidelines"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing a Cancel Routine

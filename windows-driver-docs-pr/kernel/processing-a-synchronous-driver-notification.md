@@ -2,14 +2,13 @@
 title: Processing a Synchronous Driver Notification
 author: windows-driver-content
 description: Processing a Synchronous Driver Notification
-MS-HAID:
-- 'dhp\_f84970e9-b96f-47dc-96e0-fa096cd14842.xml'
-- 'kernel.processing\_a\_synchronous\_driver\_notification'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 84e4e05f-1383-4f5f-8fc0-20cd508afa3c
 keywords: ["driver notification WDK dynamic hardware partitioning , processing", "synchronous driver notification WDK dynamic hardware partitioning , processing", "registering for driver notification WDK dynamic hardware partitioning , synchronous"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Processing a Synchronous Driver Notification

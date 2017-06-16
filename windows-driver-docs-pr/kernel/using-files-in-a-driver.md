@@ -2,14 +2,13 @@
 title: Using Files In A Driver
 author: windows-driver-content
 description: Using Files In A Driver
-MS-HAID:
-- 'Other\_e2d82c31-1c65-4d34-88e2-74514e59343d.xml'
-- 'kernel.using\_files\_in\_a\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 721bf336-1d1d-4677-843d-8af04c6f434d
 keywords: ["files WDK kernel", "file objects WDK kernel", "objects WDK file objects", "file handles WDK kernel", "handle to file WDK kernel", "reading data from files", "writing data to files", "reading metadata for file", "writing metadata for file", "driver file objects WDK kernel", "multiple file objects WDK kernel", "kernel-mode drivers WDK , files"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Files In A Driver

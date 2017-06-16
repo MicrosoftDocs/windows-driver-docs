@@ -2,14 +2,13 @@
 title: Updating WMI Registration Information
 author: windows-driver-content
 description: Updating WMI Registration Information
-MS-HAID:
-- 'WMI\_03880ad4-5efe-48e5-ac0c-a47129c310c4.xml'
-- 'kernel.updating\_wmi\_registration\_information'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d24688e5-bb50-4bce-a4d4-4a3bf886f86d
 keywords: ["WMI WDK kernel , registering with WMI", "registering WMI data providers", "data providers WDK WMI", "driver registrations WDK WMI", "event blocks WDK WMI", "blocks WDK WMI", "registering blocks", "updating WMI registration information"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Updating WMI Registration Information

@@ -2,14 +2,13 @@
 title: Using Controller Objects
 author: windows-driver-content
 description: Using Controller Objects
-MS-HAID:
-- 'ioprogleg\_dafd2b97-a7c3-4610-b523-8ec8e2ea9bbe.xml'
-- 'kernel.using\_controller\_objects'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 74b6685a-018f-4cb1-9332-424631aad85c
 keywords: ["I/O WDK kernel , controller objects", "controller objects WDK kernel", "ControllerControl routines", "objects WDK controller objects", "physical device controllers WDK I/O", "device controllers WDK I/O", "synchronization"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Controller Objects

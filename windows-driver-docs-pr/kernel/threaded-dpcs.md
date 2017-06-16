@@ -2,14 +2,13 @@
 title: Threaded DPCs
 author: windows-driver-content
 description: Threaded DPCs
-MS-HAID:
-- 'Intrupts\_5da44819-957b-46f8-b23d-a35d30cdf0a2.xml'
-- 'kernel.threaded\_dpcs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 41f5ffcc-ffa9-45e4-8fe1-278b00ff04da
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Threaded DPCs
