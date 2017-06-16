@@ -71,7 +71,7 @@ This includes both EV and Standard – there is no restriction on the number of 
 </tr>
 </tbody>
 </table>
-*These agreements are optional unless using the feature or asssts in the associated agreement.
+*These agreements are optional unless you are using features or asssts in the associated agreement.
  
 
 ### <span id="How_do_I_sign_legal_agreements_"></span><span id="how_do_i_sign_legal_agreements_"></span><span id="HOW_DO_I_SIGN_LEGAL_AGREEMENTS_"></span>How do I sign legal agreements?
