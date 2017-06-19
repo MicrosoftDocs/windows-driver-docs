@@ -10,10 +10,10 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Bring up
+# Bring up guide
 
 
-**Note**  Some information in this section may apply only to Windows 10 Mobile and certain processor architectures.
+**Note**  Some topics in this section may apply only to Windows 10 Mobile and certain processor architectures.
 
  
 
