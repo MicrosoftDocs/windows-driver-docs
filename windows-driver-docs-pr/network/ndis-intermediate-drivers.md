@@ -12,7 +12,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Intermediat drivers
+# Intermediate drivers
 
 
 ## <a href="" id="ddk-ndis-intermediate-driver-ng"></a>
