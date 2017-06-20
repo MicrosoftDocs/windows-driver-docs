@@ -1,4 +1,4 @@
-# [Driver Security Guidance](driver-security-guidance.md)
+# [Driver Security Guidance](index.md)
 ## [Driver security checklist](driver-security-checklist.md)
 ## [Threat modeling for drivers](threat-modeling-for-drivers.md)
 ### [Create threat models for drivers](create-threat-models-for-drivers.md)
