@@ -32,11 +32,11 @@ Creating secure drivers requires the cooperation of the system architect (consci
 
 [Code Validation Tools](#codevalidationtools)
 
-[Using code analysis in Visual Studio to investigate driver security](#usingcodeanalysis)
+[Use code analysis in Visual Studio to investigate driver security](#use-code-analysis)
 
 [Use Static Driver Verifier to Check for Vulnerabilities](#sdv)
 
-[Using the Device Guard Readiness Tool to evaluate HVCI driver compatibility](#dgrt)
+[Using the Device Guard Readiness Tool to evaluate HVCI driver compatibility](#using-the-device-guard-readiness-tool)
 
 [Checking code with Binscope Binary Analyzer](#binscope)
 
@@ -192,7 +192,7 @@ For additional information about C and C++ secure coding, see [Secure coding res
 
 Device Guard can use hardware technology and virtualization to isolate the Code Integrity (CI) decision-making function from the rest of the Windows operating system. When using virtualization-based security to isolate Code Integrity, the only way kernel memory can become executable is through a Code Integrity verification. This means that kernel memory pages can never be Writable and Executable (W+X) and executable code cannot be directly modified.
 
-For more information, see [Using the Device Guard Readiness Tool to evaluate HVCI driver compatibility](#dgart) later in this topic
+For more information, see [Using the Device Guard Readiness Tool to evaluate HVCI driver compatibility](#using-the-device-guard-readiness-tool) later in this topic
 
 For more information about the related device fundamentals test, see [Device.DevFund.DeviceGuard](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfunddeviceguard).
 
@@ -374,7 +374,7 @@ The code analysis feature in Visual Studio to check for security vulnerabilities
 
 For more information see [Code Analysis for drivers overview](https://msdn.microsoft.com/library/windows/hardware/hh698231.aspx). For additional background on code analysis see [Visual Studio 2013 Static Code Analysis in depth](https://blogs.msdn.microsoft.com/hkamel/2013/10/24/visual-studio-2013-static-code-analysis-in-depth-what-when-and-how/)
 
-Lastly, see this walkthrough later in this topic: [Using Code Analysis in Visual Studio to Investigate Driver Security](#codeanalysis)
+Lastly, see this walkthrough later in this topic: [Use Code Analysis in Visual Studio to Investigate Driver Security](#use-code-analysis)
 
 **Static Driver Verifier**
 
@@ -390,7 +390,7 @@ Driver Verifier allows for live testing of the driver. Driver Verifier monitors 
 
 **Device Guard Readiness Tool**
 
-The Device Guard Readiness Tool is used to evaluate HVCI driver compatibility. See this walkthrough later in this topic: [Using the Device Guard Readiness Tool to Evaluate Driver HVCI compatibility](#dgrt)
+The Device Guard Readiness Tool is used to evaluate HVCI driver compatibility. See this walkthrough later in this topic: [Using the Device Guard Readiness Tool to Evaluate Driver HVCI compatibility](#using-the-device-guard-readiness-tool)
 
 **Hardware Compatibility Program Tests**
 
@@ -447,7 +447,7 @@ Although the default rules find many common issues, consider running the more ex
 
 7. Click on each warning to load the SDV Report Page and examine the information associated with the possible code vulnerability. Use the report to investigate the verification result and to identify paths in your driver that fail a SDV verification. For more information, see [Static Driver Verifier Report](https://msdn.microsoft.com/library/windows/hardware/ff552834).
 
-## <span id="UsingCodeAnalysis"></span><span id="usingcodeanalysis"></span><span id="USINGCODEANALYSIS"></span>Using code analysis in Visual Studio to investigate driver security
+## <span id="use-code-analysis"></span>Use code analysis in Visual Studio to investigate driver security
 
 
 **Security checklist item \#10:** *Follow these steps to use the code analysis feature in Visual Studio to check for vulnerabilities in your driver code.*
@@ -472,8 +472,7 @@ Click on the linked warning code to see additional information.
 
 Determine if your code needs to be changed, or if an annotation needs to be added to allow the code analysis engine to properly follow the intent of your code. For more information on code annotation, see [Using SAL Annotations to Reduce C/C++ Code Defects](https://msdn.microsoft.com/library/ms182032.aspx) and [SAL 2.0 Annotations for Windows Drivers](https://msdn.microsoft.com/windows/hardware/drivers/devtest/sal-2-annotations-for-windows-drivers).
 
-## <span id="DGRT"></span><span id="dgrt"></span>Using the Device Guard Readiness Tool to evaluate HVCI driver compatibility
-
+## <span id="using-the-device-guard-readiness-tool"></span>Using the Device Guard Readiness Tool to evaluate HVCI driver compatibility
 
 **Security checklist item \#11:** *Follow these steps to use Device Guard Readiness Tool to evaluate HVCI driver compatibility of your driver code.*
 
