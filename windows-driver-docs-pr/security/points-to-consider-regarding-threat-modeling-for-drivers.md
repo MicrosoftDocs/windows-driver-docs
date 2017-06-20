@@ -41,7 +41,7 @@ For more information, see [Microsoft Security Development Lifecycle (SDL) – Pr
 
 **Training and organizational capabilities** - Pursue software development security training to expand your ability to recognize and remediate software vulnerabilities.
 
-Microsoft makes its four core SDL Training classes available for download. [Microsoft Security Development Lifecycle Core Training classes](http://go.microsoft.com/?linkid=9708478)
+Microsoft makes its four core SDL Training classes available for download. [Microsoft Security Development Lifecycle Core Training classes](https://go.microsoft.com/?linkid=9708478)
 
 For more detailed information about SDL training, see this white paper. [Essential Software Security Training for the Microsoft SDL](https://www.microsoft.com/download/details.aspx?id=9950)
 
@@ -65,7 +65,7 @@ For more information about the SDL process, see these additional resources:
 
 -   This blog describes how to download a free copy of *The Security Development Lifecycle: SDL*, by Michael Howard and Steve Lipner. <https://blogs.msdn.microsoft.com/microsoft_press/2016/04/19/free-ebook-the-security-development-lifecycle/>
 
--   This page provides links to additional SDL publications. <https://www.microsoft.com/sdl/resources/publications.aspx>
+-   This page provides links to additional SDL publications. <https://www.microsoft.com/en-us/SDL/Resources/publications.aspx>
 
  
 

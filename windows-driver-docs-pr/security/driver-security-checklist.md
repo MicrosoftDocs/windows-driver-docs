@@ -808,15 +808,15 @@ The !sd extension displays the security descriptor at the specified address. For
 
 **Secure coding organizations**
 
-Carnegie Mellon University SEI CERT <http://www.cert.org/>
+[Carnegie Mellon University SEI CERT](http://www.cert.org/)
 
 Carnegie Mellon University SEI CERT [C Coding Standard: Rules for Developing Safe, Reliable, and Secure Systems](https://www.securecoding.cert.org/confluence/display/c/SEI+CERT+C+Coding+Standard) (2016 Edition) available as a [PDF download](http://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf).
 
-US-CERT -[Weaknesses Addressed by the CERT C Secure Coding Standard](http://cwe.mitre.org/data/definitions/734.mdl)
+CERT - [Secure Coding Professional Certification](https://www.cert.org/go/secure-coding/)
 
-US-CERT -[Secure Coding Professional Certification](http://www.cert.org/go/secure-coding/)
+CERT - [Build Security In](https://www.us-cert.gov/bsi)
 
-US-CERT - Build Security In - <https://www.us-cert.gov/bsi>
+MITRE - [Weaknesses Addressed by the CERT C Secure Coding Standard](https://cwe.mitre.org/data/definitions/734.html)
 
 **OSR**
 
