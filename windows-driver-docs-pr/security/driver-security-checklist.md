@@ -824,7 +824,7 @@ MITRE - [Weaknesses Addressed by the CERT C Secure Coding Standard](https://cwe.
 
 [You've Gotta Use Protection -- Inside Driver & Device Security](http://www.osronline.com/article.cfm?article=100)
 
-[Locking Down Drivers - A Survey of Techniques](http://www.osronline.com/article.cfm?article=357) -
+[Locking Down Drivers - A Survey of Techniques](http://www.osronline.com/article.cfm?article=357) 
 
 [Still Feeling Insecure? - IoCreateDeviceSecure( ) for Windows](http://www.osronline.com/article.cfm?article=105)
 
