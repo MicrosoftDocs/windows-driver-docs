@@ -24,6 +24,10 @@ This section contains information on enhancing driver security.
 </tr>
 </thead>
 <tbody>
+<tr class="even">
+<td align="left"><p>[Driver security checklist](driver-security-checklist.md)</p></td>
+<td align="left"><p>This topic provides a driver security checklist for driver developers.</p></td>
+</tr>
 <tr class="odd">
 <td align="left"><p>[Threat modeling for drivers](threat-modeling-for-drivers.md)</p></td>
 <td align="left"><p>Driver writers and architects should make threat modeling an integral part of the design process for any driver. This article provides guidelines for creating threat models for drivers for the Microsoft Windows family of operating systems.</p></td>
@@ -44,10 +48,7 @@ This section contains information on enhancing driver security.
 <td align="left"><p>[Driver packaging and distribution guidance](driver-packaging-and-distribution-guidance.md)</p></td>
 <td align="left"><p>Properly signing and packing and distributing your driver can help decrease the risk that the driver can be tampered with.</p></td>
 </tr>
-<tr class="even">
-<td align="left"><p>[Driver security checklist](driver-security-checklist.md)</p></td>
-<td align="left"><p>This topic provides a driver security checklist for driver developers.</p></td>
-</tr>
+
 </tbody>
 </table>
 

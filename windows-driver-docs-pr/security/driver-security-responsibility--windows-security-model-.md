@@ -74,7 +74,7 @@ The driver is considered the type owner for objects in its namespace. The namesp
 
 A user opens a device by specifying the device name. For example:
 
-``` syntax
+``` 
 \Device\Serial0
 ```
 
@@ -98,7 +98,7 @@ A non-NULL value in the **RelatedFileObject** field indicates that another handl
 
 Open requests in the following forms specify files or other objects in the device namespace:
 
-``` syntax
+``` 
 \Device\Floppy0\Readme.txt
 \Device\Mup\Server\Share\File.txt
 \Device\Serial0\
@@ -174,7 +174,6 @@ Some system-defined and many driver-defined IOCTLs are defined with FILE\_ANY\_A
 **Note**  **IoValidateDeviceIoControlAccess** is documented in the [Windows Driver Kit (WDK)](http://msdn.microsoft.com/en-US/library/windows/hardware/gg487463) and is available on Windows Server 2003 and later operating systems. Drivers that must also work for Windows 2000 and Windows XP must link to wdmsec.lib to use this routine.
 
  
-
 Upon receiving an IOCTL, a driver can call **IoValidateDeviceIoControlAccess**, specifying FILE\_READ\_ACCESS, FILE\_WRITE\_ACCESS, or both. In response, the I/O Manager checks the access rights granted to the caller. If the caller does not have the specified rights, the driver can fail the IRP with an appropriate status.
 
 A driver can also check system-wide privileges. For example, the Swenum.sys driver tests the Load/Unload Driver privilege before it forwards an IRP down the device stack. Drivers should check privileges when passing an IRP down the device stack. When the IRP is returning back up the device stack, checking privilege is unnecessary because the I/O is already complete.
