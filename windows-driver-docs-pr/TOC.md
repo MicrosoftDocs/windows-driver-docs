@@ -3,6 +3,7 @@
 # [Bring up guide](bringup/index.md)
 # [Developing, Testing, and Deploying Drivers](develop/index.md)
 # [Device and Driver Installation](install/index.md)
+# [Kernel-Mode Driver Architecture Design Guide](kernel/index.md)
 # [Windows Driver Frameworks](wdf/index.md)
 # [Windows Debugging Tools](debugger/index.md)
 # [Windows Store Device Apps](devapps/index.md)
