@@ -2,6 +2,11 @@
 title: Points to consider regarding threat modeling for drivers
 description: This topic discusses points to consider regarding threat modeling for drivers.
 ms.assetid: E763A1CB-E440-4D06-89DE-AE8B3B625D34
+ms.author: windowsdriverdev
+ms.date: 06/06/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Points to consider regarding threat modeling for drivers

@@ -2,6 +2,11 @@
 title: Of course it's a valid handle (Or is it )
 description: How to use user-mode handle safely and protect kernel handles from misuse by user-mode applications.
 ms.assetid: 758969A5-659E-41BB-9A5D-37F0C4B01FFA
+ms.author: windowsdriverdev
+ms.date: 06/06/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Of course it's a valid handle! (Or is it?)

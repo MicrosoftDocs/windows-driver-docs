@@ -2,6 +2,11 @@
 title: Windows security model what every driver writer needs to know
 description: This article provides information about writing secure kernel-mode drivers for the Microsoft Windows family of operating systems.
 ms.assetid: 10C6CFB8-91B3-4C94-8AAC-9D9A1CD71409
+ms.author: windowsdriverdev
+ms.date: 06/06/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows security model: what every driver writer needs to know

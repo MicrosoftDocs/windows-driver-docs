@@ -2,6 +2,11 @@
 title: Driver security checklist
 description: This topic provides a driver security checklist for driver developers.
 ms.assetid: 25375E02-FCA1-4E94-8D9A-AA396C909278
+ms.author: windowsdriverdev
+ms.date: 06/06/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver security checklist

@@ -2,6 +2,11 @@
 title: Driver signing guidelines for ISVs
 description: Your company's quality assurance processes are responsible for testing driver functionality during product development.
 ms.assetid: 3E14DA54-8F37-4C5F-BF26-3AB13F8457D5
+ms.author: windowsdriverdev
+ms.date: 06/06/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver signing guidelines for ISVs

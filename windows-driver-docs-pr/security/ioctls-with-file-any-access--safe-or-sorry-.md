@@ -2,6 +2,11 @@
 title: IOCTLs with FILE\_ANY\_ACCESS safe or sorry
 description: FILE\_ANY\_ACCESS authorizes the I/O Manager to send an IRP for any caller that has a handle to the device, creating a possible path for malicious users to compromise the system. What's the alternative .
 ms.assetid: FFCFA644-5ABB-4560-A10B-47BF1EAB84EA
+ms.author: windowsdriverdev
+ms.date: 06/06/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IOCTLs with FILE\_ANY\_ACCESS: safe or sorry?

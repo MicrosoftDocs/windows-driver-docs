@@ -2,6 +2,11 @@
 title: Driver security responsibility (Windows security model)
 description: This article describes driver security responsibility in the Windows security model.
 ms.assetid: 7908AC6E-93EA-4EF1-8086-701F76160DFE
+ms.author: windowsdriverdev
+ms.date: 06/06/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver security responsibility (Windows security model)

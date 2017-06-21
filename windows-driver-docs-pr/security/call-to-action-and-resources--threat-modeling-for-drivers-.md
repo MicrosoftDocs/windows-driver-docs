@@ -2,6 +2,11 @@
 title: Call to action and resources (threat modeling for drivers)
 description: This article contains call to action recommendations and resources for threat modeling for drivers.
 ms.assetid: F0DC2461-6C9A-451A-8485-407299DBEC0E
+ms.author: windowsdriverdev
+ms.date: 06/06/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Call to action and resources (threat modeling for drivers)

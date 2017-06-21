@@ -2,6 +2,11 @@
 title: Call to action and resources (Windows security model)
 description: This article contains call to action recommendations and resources for the Windows security model.
 ms.assetid: FCD98CE0-7E6E-4D6D-AF36-EA6A55160147
+ms.author: windowsdriverdev
+ms.date: 06/06/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Call to action and resources (Windows security model)

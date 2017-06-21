@@ -2,6 +2,11 @@
 title: How safe is your device namespace
 description: The I/O Manager can protect your device's namespace from unprivileged access if you set the FILE\_DEVICE\_SECURE\_OPEN device characteristic.
 ms.assetid: 1E1A77C3-C9F7-4668-B73A-BC5770D907EE
+ms.author: windowsdriverdev
+ms.date: 06/06/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How safe is your device namespace?

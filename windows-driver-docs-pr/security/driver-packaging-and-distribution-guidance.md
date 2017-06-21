@@ -2,6 +2,11 @@
 title: Driver packaging and distribution guidance
 description: Properly signing and packing and distributing your driver can help decrease the risk that the driver can be tampered with.
 ms.assetid: 9EEEA300-DE82-4228-80D4-14E61B07283B
+ms.author: windowsdriverdev
+ms.date: 06/06/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver packaging and distribution guidance

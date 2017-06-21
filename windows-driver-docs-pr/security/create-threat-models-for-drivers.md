@@ -2,6 +2,11 @@
 title: Create threat models for drivers
 description: Creating a threat model requires a thorough understanding of the driver’s design, the types of threats to which the driver might be exposed, and the consequences of a security attack that exploits a particular threat.
 ms.assetid: 1BD3E298-6265-4B9E-87FE-445366FD3636
+ms.author: windowsdriverdev
+ms.date: 06/06/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Create threat models for drivers

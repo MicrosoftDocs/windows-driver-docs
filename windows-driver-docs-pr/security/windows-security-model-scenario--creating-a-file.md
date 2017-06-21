@@ -2,6 +2,11 @@
 title: Windows security model scenario creating a file
 description: The system uses the security constructs described in the Windows security model whenever a process creates a handle to a file or object.
 ms.assetid: 3FD6079C-5080-4CD3-8A8A-2C791327A594
+ms.author: windowsdriverdev
+ms.date: 06/06/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows security model scenario: creating a file

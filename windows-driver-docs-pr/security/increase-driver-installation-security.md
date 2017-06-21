@@ -2,6 +2,11 @@
 title: Increase driver installation security
 description: Evaluate how and where the driver installs to decrease the risk of tampering. Design default settings so that users are protected out of the box and have to opt in to taking on more risk.
 ms.assetid: CD1A121D-59B5-4C21-88E9-5C3D5FE5157C
+ms.author: windowsdriverdev
+ms.date: 06/06/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Increase driver installation security

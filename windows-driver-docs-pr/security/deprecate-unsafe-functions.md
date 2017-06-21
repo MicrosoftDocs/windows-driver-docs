@@ -2,6 +2,11 @@
 title: Deprecate unsafe functions
 description: Create a process to look for and remove code vulnerabilities from your driver code.
 ms.assetid: E61A5557-EBEF-43F3-850C-0DE35F6462AA
+ms.author: windowsdriverdev
+ms.date: 06/06/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Deprecate unsafe functions
