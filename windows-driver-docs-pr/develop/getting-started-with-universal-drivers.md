@@ -15,9 +15,9 @@ Universal Windows drivers enable developers to create a single driver package th
 
 A Universal Windows driver is a driver package that contains an INF file and binaries that will install and run on Universal Windows Platform (UWP) based editions of Windows 10, such as Windows 10 for desktop editions (Home, Pro, and Enterprise), Windows 10 S, Windows 10 Mobile, Windows 10 IoT Core, Windows Server 2016, as well as other Windows 10 editions that share a common set of interfaces.
 
-A Universal INF file is an INF file that only uses the [INF syntax supported on the UWP-based editions of Windows 10](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file).
+A Universal INF file is an INF file that only uses the [subset of INF syntax](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file) that is supported on [UWP-based editions of Windows 10](windows-10-editions-for-universal-drivers.md).
 
-Any binaries referenced by the Universal INF file must use only device driver interfaces (DDI) that are included in UWP-based editions of Windows 10.  These DDIs are marked as **Universal** on the corresponding documentation reference pages.  The driver binary can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the Windows Driver Model (WDM).
+Any binaries referenced by the Universal INF file must use only device driver interfaces (DDI) that are included in [UWP-based editions of Windows 10](windows-10-editions-for-universal-drivers.md).  These DDIs are marked as **Universal** on the corresponding documentation reference pages.  The driver binary can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the Windows Driver Model (WDM).
 
 Other binaries contained in your Universal Windows driver must pass the [API validation tests](../devtest/infverif.md).
 
