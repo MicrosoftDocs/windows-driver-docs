@@ -475,7 +475,7 @@ Click on the linked warning code to see additional information.
 
 Determine if your code needs to be changed, or if an annotation needs to be added to allow the code analysis engine to properly follow the intent of your code. For more information on code annotation, see [Using SAL Annotations to Reduce C/C++ Code Defects](https://msdn.microsoft.com/library/ms182032.aspx) and [SAL 2.0 Annotations for Windows Drivers](https://msdn.microsoft.com/windows/hardware/drivers/devtest/sal-2-annotations-for-windows-drivers).
 
-## <span id="using-the-device-guard-readiness-tool"></span>Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility
+## <span id="use-the-device-guard-readiness-tool"></span>Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility
 
 **Security checklist item \#11:** *Follow these steps to use Device Guard Readiness Tool to evaluate HVCI driver compatibility of your driver code.*
 
