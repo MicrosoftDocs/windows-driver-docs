@@ -109,7 +109,7 @@ DisplayName = %ContosoControlPanelDisplayName%
 [Strings]
 SPSVCINST_ASSOCSERVICE= 0x00000002
 ContosoControlPanelDisplayName = "Contoso Control Panel"
-CONTOSO = "Contoso Inc.
+CONTOSO = "Contoso Inc."
 ContosoGrfx.DeviceDesc = "Contoso Graphics Card"
 ContosoGrfx.SvcDesc = "Contoso Graphics Card Driver"
 ```
