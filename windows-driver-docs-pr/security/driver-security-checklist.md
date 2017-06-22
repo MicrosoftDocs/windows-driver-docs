@@ -196,34 +196,17 @@ For additional information about C and C++ secure coding, see [Secure coding res
 
 **Memory usage and Device Guard compatibility**
 
-Device Guard can use hardware technology and virtualization to isolate the Code Integrity (CI) decision-making function from the rest of the Windows operating system. When using virtualization-based security to isolate Code Integrity, the only way kernel memory can become executable is through a Code Integrity verification. This means that kernel memory pages can never be Writable and Executable (W+X) and executable code cannot be directly modified.
+Device Guard uses hardware technology and virtualization to isolate the Code Integrity (CI) decision-making function from the rest of the operating system. When using virtualization-based security to isolate Code Integrity, the only way kernel memory can become executable is through a Code Integrity verification. This means that kernel memory pages can never be Writable and Executable (W+X) and executable code cannot be directly modified. 
 
-For more information, see [Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility](#use-the-device-guard-readiness-tool) later in this topic
+To implement Device Guard, make sure your driver code does the following.
 
-For more information about the related device fundamentals test, see [Device.DevFund.DeviceGuard](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfunddeviceguard).
-
-Opt-in to NX by default
-Use NX APIs/flags for memory allocation – NonPagedPoolNx
-Do not use sections that are both writable and executable
-Do not attempt to directly modify executable system memory
-Do not use dynamic code in kernel
-Do not load data files as executable
-Section alignment must be a multiple of 0x1000 (PAGE\_SIZE). E.g. DRIVER\_ALIGNMENT=0x1000
-
-The following provides some examples of commonly-used DDIs that cause executable memory to be allocated, along with some example fixes:
-
-|                                                                                               |                                                                                                                                          |
-|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| **Code**                                                                                      | **Description**                                                                                                                          |
-| [C30029](https://msdn.microsoft.com/library/windows/hardware/dn910903.aspx)    | Calling a memory allocating function that requests executable memory                                                                     |
-| [C30030](https://msdn.microsoft.com/library/windows/hardware/dn910904.aspx ) | Calling a memory allocating function and passing a parameter that indicates executable memory                                            |
-| [C30031](https://msdn.microsoft.com/library/windows/hardware/dn910905.aspx)    | Calling a memory allocating function and passing a parameter that indicates executable memory                                            |
-| [C30032](https://msdn.microsoft.com/library/windows/hardware/dn910906.aspx)    | Calling a memory allocating function and forcing the request of executable memory through use of the POOL\_NX\_OPTOUT directive          |
-| [C30033](https://msdn.microsoft.com/library/windows/hardware/dn910907.aspx)    | Executable allocation was detected in a driver compiled with POOL\_NX\_OPTIN.                                                            |
-| [C30034](https://msdn.microsoft.com/library/windows/hardware/dn910908.aspx)    | Passing a flag value to an allocating function that could result in executable memory being allocated.                                   |
-| [C30035](https://msdn.microsoft.com/library/windows/hardware/dn910909.aspx)    | A call was made to a function that must be made from inside the initialization function (for example, DriverEntry() or DllInitialize()). |
-
- 
+- Opt-in to NX by default
+- Use NX APIs/flags for memory allocation – NonPagedPoolNx
+- Do not use sections that are both writable and executable
+- Do not attempt to directly modify executable system memory
+- Do not use dynamic code in kernel
+- Do not load data files as executable
+- Section alignment must be a multiple of 0x1000 (PAGE\_SIZE). E.g. DRIVER\_ALIGNMENT=0x1000
 
 The following list of DDIs that are not reserved for system use may be impacted:
 
@@ -285,6 +268,12 @@ The following list of DDIs that are not reserved for system use may be impacted:
 | [**WdfRegistryQueryMemory**](https://msdn.microsoft.com/library/windows/hardware/ff549920)                                             |
 
  
+For more information about using the tool, see [Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility](#use-the-device-guard-readiness-tool) later in this topic.
+
+For more information about the related device fundamentals test, see [Device.DevFund.DeviceGuard](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfunddeviceguard).
+
+For general information about Device Guard, see [Windows 10 Device Guard and Credential Guard Demystified](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/)
+
 
 ## <span id="technologyspecificcodepractices"></span>Technology specific code practices
 
@@ -496,6 +485,8 @@ OS and Hardware requirements for testing HVCI driver Device Guard compatibility
 
 To use the readiness tool to evaluate the additional requirements such as secure boot, refer to the readme.txt file included in the readiness tool download.
 
+For more information about the related device fundamentals test, see [Device.DevFund.DeviceGuard](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfunddeviceguard).
+
 **Using the tool**
 
 To use the Device Guard Readiness Tool to evaluate complete the following steps.
@@ -681,6 +672,19 @@ To use the Device Guard Readiness Tool to evaluate complete the following steps.
 </tbody>
 </table>
 
+ The following provides some examples of commonly-used DDIs that cause executable memory to be allocated, along with some example fixes:
+
+|                                                                                               |                                                                                                                                          |
+|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| **Code**                                                                                      | **Description**                                                                                                                          |
+| [C30029](https://msdn.microsoft.com/library/windows/hardware/dn910903.aspx)    | Calling a memory allocating function that requests executable memory                                                                     |
+| [C30030](https://msdn.microsoft.com/library/windows/hardware/dn910904.aspx ) | Calling a memory allocating function and passing a parameter that indicates executable memory                                            |
+| [C30031](https://msdn.microsoft.com/library/windows/hardware/dn910905.aspx)    | Calling a memory allocating function and passing a parameter that indicates executable memory                                            |
+| [C30032](https://msdn.microsoft.com/library/windows/hardware/dn910906.aspx)    | Calling a memory allocating function and forcing the request of executable memory through use of the POOL\_NX\_OPTOUT directive          |
+| [C30033](https://msdn.microsoft.com/library/windows/hardware/dn910907.aspx)    | Executable allocation was detected in a driver compiled with POOL\_NX\_OPTIN.                                                            |
+| [C30034](https://msdn.microsoft.com/library/windows/hardware/dn910908.aspx)    | Passing a flag value to an allocating function that could result in executable memory being allocated.                                   |
+| [C30035](https://msdn.microsoft.com/library/windows/hardware/dn910909.aspx)    | A call was made to a function that must be made from inside the initialization function (for example, DriverEntry() or DllInitialize()). |
+
  
 
 **Script customization**
@@ -692,6 +696,15 @@ For RS1 and RS2 – to enable HVCI and CG without UEFI Lock:
 &#39;REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f&#39; 
 &#39;REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f&#39; 
 ```
+
+**Driver Verifier compatibility checks**
+
+Use the Driver Verifier Code Integrity option flag (0x02000000) to enable extra checks that validate compliance with this feature. To enable this from the command line, use the following command.
+
+```
+verifier.exe /flags 0x02000000 /driver <driver.sys>
+```
+To choose this option if using the verifier GUI, choose Create custom settings (for code developers), choose Next, and then choose _Code integrity checks_.
 
 
 ## <span id="BinScope"></span><span id="binscope"></span><span id="BINSCOPE"></span>Check code with BinScope Binary Analyzer
