@@ -784,6 +784,26 @@
       "source_path": "windows-driver-docs-pr/network/cosa---faq.md",
       "redirect_URL": "/windows-hardware/drivers/network/cosa-overview",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/apn-database.md",
+      "redirect_URL": "/windows-hardware/drivers/network/apn-database-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/planning-your-apn-database-submission.md",
+      "redirect_URL": "/windows-hardware/drivers/network/planning-your-cosa-apn-database-submission",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/testing-your-apn-database-submission.md",
+      "redirect_URL": "/windows-hardware/drivers/network/testing-your-cosa-apn-database-submission",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/submitting-the-apn-database-update.md",
+      "redirect_URL": "/windows-hardware/drivers/network/submitting-the-cosa-apn-database-update",
+      "redirect_document_id": true
     }
   ]
 }

@@ -1,6 +1,7 @@
 ---
 title: COSA Overview
 description: COSA Overview
+ms.assetid: 45D69B8D-69C1-488B-AC52-D8DEB337F878
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
@@ -10,11 +11,11 @@ ms.technology: windows-devices
 
 # COSA Overview
 
-This topic presents frequently asked questions about COSA (Country and Operator Settings Asset), the new format MOs use in Windows 10 Version 1703 and later to provision Windows desktop devices for mobile broadband. The existing apndatabase.xml (APN database) from Windows 8, Windows 8.1, and Windows 10 versions before 1703 has been converted to COSA, which is ingestible by the new desktop provisioning framework. Note that these previous versions of Windows will continue to use the older APN database for provisioning.
+This topic presents an overview of COSA (Country and Operator Settings Asset), the new format MOs use in Windows 10 Version 1703 and later to provision Windows devices for mobile broadband. The existing apndatabase.xml (APN database) from Windows 8, Windows 8.1, and versions of Windows 10 before Windows 10, version 1703 has been converted to COSA, which is ingestible by the new provisioning framework. Note that these previous versions of Windows will continue to use the older APN database for provisioning.
 
-For a more detailed description about COSA and the APN database, see [COSA/APN database](apn-database.md).
+For more information about the older APN database, see [APN database overview](apn-database-overview.md).
 
-For more information about the submission process for COSA and the APN database, see [COSA/APN database submission](apn-database-submission.md).
+For more information about the submission process for COSA and the APN database, see [COSA/APN database submission](cosa-apn-database-submission.md).
 
 - [What are the settings that MOs can specify in COSA?](#settings)
 - [What events trigger the application of new MO settings?](#events)
@@ -25,7 +26,7 @@ For more information about the submission process for COSA and the APN database,
 
 ## <a href="" id="settings"></a> What are the settings that MOs can specify in COSA?
 
-The settings are the same as what MOs configured in apndatabase.xml, with a few exceptions. For details, see the table in [Planning your COSA/APN database submission](planning-your-apn-database-submission.md).
+The settings are the same as what MOs configured in apndatabase.xml, with a few exceptions. For details, see the table in [Planning your COSA/APN database submission](planning-your-cosa-apn-database-submission.md).
 
 ## <a href="" id="events"></a> What events trigger the application of new MO settings?
 
