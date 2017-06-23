@@ -41,7 +41,6 @@ An **AddComponent** directive must reference a named *component-install-section*
 [component-install-section]
 
 ComponentIDs=component-id[,component-id] …
-[DisplayName=name]
 [Description=description]
 ```
 
@@ -53,15 +52,9 @@ Each *component-install-section* must have at least the **ComponentIDs** entry a
 
 Specifies the component identifiers for a software component.  Component IDs work the same way that Hardware IDs do, and should follow [similar formatting](hardware-ids.md). For a software component, the system prepends the INF-supplied values with `SWC\` to create the Hardware IDs.  For example, a **ComponentIDs** value of `VID0001&PID0001` results in a hardware ID of `SWC\VID0001&PID0001`.
 
-**DisplayName**=*name*
-
-Optionally specifies a friendly name for the software component, typically for localization, expressed as a %strkey% token defined in an [INF Strings section](inf-strings-section.md).  Use this if you want to give the software component device a different display name before the software component device has its own driver installed.
-
 **Description**=*description*
 
 Optionally specifies a string that describes the software component, typically for localization, expressed as a %strkey% token defined in an [INF Strings section](inf-strings-section.md).
-
-This string gives the user more information about the software component than the **DisplayName**. For example, the **DisplayName** might be something like *DHCP Control Panel* and the Description might be something like *Manages device settings and capabilities*.
 	
 If a description string contains any %strkey% tokens, each token can represent a maximum of 511 characters. The total string, after any string token substitutions, should not exceed 1024 characters.
 
