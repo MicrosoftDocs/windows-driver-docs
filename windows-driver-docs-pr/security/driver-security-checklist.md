@@ -296,11 +296,11 @@ For about NDIS driver security, see [Security Issues for Network Drivers](https:
 
 *Display*
 
-For about display driver security, see &lt;Content Pending&gt;.
+For information about display driver security, see &lt;Content Pending&gt;.
 
 *Bluetooth*
 
-For about Bluetooth driver security, see &lt;Content Pending&gt;.
+For information about Bluetooth driver security, see &lt;Content Pending&gt;.
 
 *Printers*
 
@@ -308,7 +308,7 @@ For information related to printer driver security, see [V4 Printer Driver Secur
 
 Security Issues for Windows Image Acquisition (WIA) Drivers
 
-For more information, see [Security Issues for Windows Image Acquisition (WIA) Drivers](https://msdn.microsoft.com/windows/hardware/drivers/image/security-issues-for-wia-drivers)
+For information about WIA security, see [Security Issues for Windows Image Acquisition (WIA) Drivers](https://msdn.microsoft.com/windows/hardware/drivers/image/security-issues-for-wia-drivers)
 
 
 ## <span id="ManagingDriverAccessControl"></span><span id="managingdriveraccesscontrol"></span><span id="MANAGINGDRIVERACCESSCONTROL"></span>Managing driver access control
