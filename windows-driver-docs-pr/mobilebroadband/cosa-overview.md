@@ -24,7 +24,7 @@ For more information about the submission process for COSA and the APN database,
 - [What SIM information from modems does COSA use?](#SIMinfo)
 - [Is there an algorithm to make the best APN match?](#APNmatch)
 - [Where is the COSA database stored, and can it be visually inspected like apndatabase.xml?](#location)
-- [What happens when a device updates from Windows 10 Version 1607 (or earlier) to Windows 10, version 1703? Are custom or manually created APNs migrated? Do they still have priority over the defaults from the database?](#update)
+- [What happens when a device updates from Windows 10, version 1607 (or earlier) to Windows 10, version 1703? Are custom or manually created APNs migrated? Do they still have priority over the defaults from the database?](#update)
 
 ## <a href="" id="settings"></a> What are the settings that MOs can specify in COSA?
 
