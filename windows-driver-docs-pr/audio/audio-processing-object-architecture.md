@@ -27,7 +27,7 @@ Audio processing objects (APOs), provide software based digital signal processin
 
 **Software APOs vs. Hardware DSP**
 
-A hardware digital signal processor (DSP) is a specialized microprocessor (or a SIP block), with its architecture optimized for the operational needs of digital signal processing. There can be significant advantageous to implement audio processing in purpose built hardware vs. using a software APO. One advantage is that the CPU use and associated power consumption may be lower with a hardware implemented DSP.
+A hardware digital signal processor (DSP) is a specialized microprocessor (or a SIP block), with its architecture optimized for the operational needs of digital signal processing. There can be significant advantages to implement audio processing in purpose built hardware vs. using a software APO. One advantage is that the CPU use and associated power consumption may be lower with a hardware implemented DSP.
 
 There are other advantages and disadvantages to consider, specific your projects goals and constraints that you will want to consider before implementing a software based APO.
 
