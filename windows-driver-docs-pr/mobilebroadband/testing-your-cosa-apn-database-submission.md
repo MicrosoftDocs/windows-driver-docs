@@ -31,7 +31,7 @@ If you do not have a TAM:
 ## Test your submission for COSA
 
 > [!IMPORTANT]
-> Use this process for Windows 10 Version 1703 and later.
+> Use this process for Windows 10, version 1703 and later.
 
 After you have submitted your completed spreadsheet that contains your APN information to your TAM, Microsoft will create a provisioning package (.ppkg) file for you and return it to you so you can install and test your APN. For more information about how to install a provisioning package file, see [Apply a provisioning package](https://technet.microsoft.com/itpro/windows/deploy/provisioning-apply-package).
 

@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Submitting the COSA/APN database update
 
 >[!IMPORTANT]
-> The following steps to submit an APN update apply to both COSA, which is used for Windows 10 Version 1703 and later, and apndatabase.xml, which is used for Windows 8, Windows 8.1, and versions of Windows 10 before 1703. Microsoft will convert apndatabase.xml submissions to COSA if you are targeting Windows 10 Version 1703 or later.
+> The following steps to submit an APN update apply to both COSA, which is used for Windows 10, version 1703 and later, and apndatabase.xml, which is used for Windows 8, Windows 8.1, and versions of Windows 10 before 1703. Microsoft will convert apndatabase.xml submissions to COSA if you are targeting Windows 10, version 1703 or later.
 
 Now that you’ve tested the APN entries, it’s now time to submit them to Microsoft by following the steps in this topic.
 

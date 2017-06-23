@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # APN database overview
 
 > [!IMPORTANT] 
-> Starting in Windows 10 Version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before Version 1703 will continue to use the APN database while Windows 10 Version 1703 and later use COSA. For a list of frequently asked questions about COSA, see [COSA Overview](cosa-overview.md).
+> Starting in Windows 10, version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before version 1703 will continue to use the APN database while Windows 10, version 1703 and later use COSA. For a list of frequently asked questions about COSA, see [COSA Overview](cosa-overview.md).
 
 ## <span id="apndbcon"></span><span id="APNDBCON"></span>APN database contents
 
