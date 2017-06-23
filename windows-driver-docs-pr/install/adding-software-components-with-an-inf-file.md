@@ -104,12 +104,11 @@ AddComponent = ContosoControlPanel,, Component_Inst
 
 [Component_Inst]
 ComponentIDs = VID0001&PID0001&SID0001
-DisplayName = %ContosoControlPanelDisplayName%
 
 [Strings]
 SPSVCINST_ASSOCSERVICE= 0x00000002
 ContosoControlPanelDisplayName = "Contoso Control Panel"
-CONTOSO = "Contoso Inc.
+CONTOSO = "Contoso Inc."
 ContosoGrfx.DeviceDesc = "Contoso Graphics Card"
 ContosoGrfx.SvcDesc = "Contoso Graphics Card Driver"
 ```
