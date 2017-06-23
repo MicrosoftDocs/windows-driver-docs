@@ -46,7 +46,7 @@
 #### [TrustedCertificateList](trustedcertificatelist.md)
 ##### [TrustedCertificate (APN element)](trustedcertificate-apnxml.md)
 #### [APN example](apn-example.md)
-### [COSA Overview](cosa-overview.md)
+### [COSA overview](cosa-overview.md)
 ### [APN database overview](apn-database-overview.md)
 ### [COSA/APN database submission](cosa-apn-database-submission.md)
 #### [Planning your COSA/APN database submission](planning-your-cosa-apn-database-submission.md)

@@ -21,7 +21,7 @@ The following topics present further information about APNs, COSA, and APN datab
 
 - [APN schema definition](apn-schema-definition.md)
 - [APN elements](apn-elements.md)
-- [COSA Overview](cosa-overview.md)
+- [COSA overview](cosa-overview.md)
 - [APN database overview](apn-database-overview.md)
 - [COSA/APN database submission](cosa-apn-database-submission.md)
 

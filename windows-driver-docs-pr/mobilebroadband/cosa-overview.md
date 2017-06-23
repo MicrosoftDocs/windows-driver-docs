@@ -1,6 +1,6 @@
 ---
-title: COSA Overview
-description: COSA Overview
+title: COSA overview
+description: COSA overview
 ms.assetid: 45D69B8D-69C1-488B-AC52-D8DEB337F878
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# COSA Overview
+# COSA overview
 
 This topic presents an overview of COSA (Country and Operator Settings Asset), the new format MOs use in Windows 10, version 1703 and later to provision Windows devices for mobile broadband. The existing apndatabase.xml (APN database) from Windows 8, Windows 8.1, and versions of Windows 10 before Windows 10, version 1703 has been converted to COSA, which is ingestible by the new provisioning framework. Note that these previous versions of Windows will continue to use the older APN database for provisioning.
 
