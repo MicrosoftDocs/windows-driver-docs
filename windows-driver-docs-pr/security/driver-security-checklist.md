@@ -605,7 +605,7 @@ To use the Device Guard Readiness Tool to evaluate complete the following steps.
             Execute-Write Section Count:            0
             Section Alignment Failures:             0
             Unsupported Relocs Count:               0
-            IAT in Executable Section Count:          0
+            IAT in Executable Section Count:        0
     ```
 
 
@@ -641,7 +641,7 @@ To use the Device Guard Readiness Tool to evaluate complete the following steps.
 <tr class="even">
 <td align="left"><p>Execute Page Mapping</p></td>
 <td align="left"><p>The caller specified an executable memory descriptor list (MDL) mapping.</p>
-<p> Make sure that the mask that is used contains MdlMappingNoExecute. For more informatrion ,see [MmGetSystemAddressForMdlSafe](https://msdn.microsoft.com/en-us/library/windows/hardware/ff554559.aspx)</p>
+<p> Make sure that the mask that is used contains MdlMappingNoExecute. For more information, see [MmGetSystemAddressForMdlSafe](https://msdn.microsoft.com/en-us/library/windows/hardware/ff554559.aspx)</p>
 </td>
 </tr>
 
@@ -661,14 +661,14 @@ To use the Device Guard Readiness Tool to evaluate complete the following steps.
 <tr class="odd">
 <td align="left"><p>Unsupported Relocs</p></td>
 <td align="left"><p>Passing a flag value to an allocating function that could result in executable memory being allocated. A call to a function that results in possible allocation of executable nonpaged pool has been found. There are parameters used that indicate the resulting allocation may actually be non-executable, but it is determined that this is unlikely and executable memory has been allocated. This is most common with a function that takes optional allocating functions as a parameter.</p>
-<p>This error is simimar to the [C30034](https://msdn.microsoft.com/library/windows/hardware/dn910908.aspx) static code analysis warning.</p></td>
+<p>This error is similar to the [C30034](https://msdn.microsoft.com/library/windows/hardware/dn910908.aspx) static code analysis warning.</p></td>
 </tr>
 
 <tr class="even">
 <td align="left"><p>IAT in Executable Section</p></td>
 <td align="left"><p>The import address table (IAT), should not be an executable section of memory.</p>
 <p> A call was made to a function that must be made from inside the initialization function (for example, DriverEntry() or DllInitialize()). To fix this, move the call inside of the initialization function.</p>
-<p>This driver verifier error is simimar to the [C30035](https://msdn.microsoft.com/library/windows/hardware/dn910909.aspx) static code analysis warning.</p></td>
+<p>This driver verifier error is similar to the [C30035](https://msdn.microsoft.com/library/windows/hardware/dn910909.aspx) static code analysis warning.</p></td>
 </tr>
 
 </tbody>
