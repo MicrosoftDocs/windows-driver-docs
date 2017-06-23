@@ -273,6 +273,7 @@ For more information about using the tool, see [Use the Device Guard Readiness T
 For more information about the related device fundamentals test, see [Device.DevFund.DeviceGuard](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfunddeviceguard).
 
 For general information about Device Guard, see [Windows 10 Device Guard and Credential Guard Demystified](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/)
+and [Device Guard deployment guide](https://docs.microsoft.com/en-us/windows/device-security/device-guard/device-guard-deployment-guide)
 
 
 ## <span id="technologyspecificcodepractices"></span>Technology specific code practices
@@ -607,9 +608,9 @@ To use the Device Guard Readiness Tool to evaluate complete the following steps.
             IAT in Executable Section Count:          0
     ```
 
+
     Use the following table to interpret the output to determine what driver code changes are needed to fix the different types of HVCI incompatibilities.
 
-&lt;TBD&gt; FINAL CONTENT PENDING &lt;/TBD&gt;
 
 <table>
 <colgroup>
@@ -617,75 +618,63 @@ To use the Device Guard Readiness Tool to evaluate complete the following steps.
 <col width="50%" />
 </colgroup>
 <tbody>
+
 <tr class="odd">
 <td align="left"><strong>Warning</strong></td>
 <td align="left"><strong>Redemption</strong></td>
 </tr>
+
 <tr class="even">
-<td align="left"><p>Execute Pool Type</p>
-<p>VfCheckNxPoolType?</p>
-<p>VRF_RUNTIME_DATA_EXECUTE_POOL_TYPES</p></td>
-<td align="left"><p>The caller specified an executable pool type</p>
-<p>Be sure that all pool (non-paged pools?) types contain the NX flag.</p></td>
+<td align="left"><p>Execute Pool Type</p></td>
+<td align="left"><p>The caller specified an executable pool type. Calling a memory allocating function that requests executable memory.</p>
+<p>Be sure that all pool types contain a non executable NX flag.</p>
+</td>
 </tr>
+
 <tr class="odd">
-<td align="left"><p>Execute Page Protection</p>
-<p>VfCheckNxPageProtection</p>
-<p>VRF_RUNTIME_DATA_EXECUTE_PAGE_PROTECTIONS</p></td>
+<td align="left"><p>Execute Page Protection</p></td>
 <td align="left"><p>The caller specified an executable page protection.</p>
-<p>Specify non executable page protection, by ________(?).</p></td>
+<p>Specify a "no execute" page protection mask.</p>
+</td>
 </tr>
+
 <tr class="even">
-<td align="left"><p>Execute Page Mapping</p>
-<p>VfCheckPagePriority</p>
-<p>ExecutePageMappings</p>
-<p>VRF_RUNTIME_DATA_EXECUTE_PAGE_MAPPINGS</p></td>
+<td align="left"><p>Execute Page Mapping</p></td>
 <td align="left"><p>The caller specified an executable memory descriptor list (MDL) mapping.</p>
-<p>Do this to properly define and allocate a non executable MDL _____?</p>
-<p>Maybe we should update https://msdn.microsoft.com/library/windows/hardware/ff565421(v=vs.85).aspx Using MDL</p></td>
+<p> Make sure that the mask that is used contains MdlMappingNoExecute. For more informatrion ,see [MmGetSystemAddressForMdlSafe](https://msdn.microsoft.com/en-us/library/windows/hardware/ff554559.aspx)</p>
+</td>
 </tr>
+
 <tr class="odd">
-<td align="left"><p>Execute-Write Section</p>
-<p>VfCheckImageCompliance</p>
-<p>ExecuteWriteSections</p>
-<p>VRF_RUNTIME_DATA_EXECUTE_WRITE_SECTIONS</p></td>
+<td align="left"><p>Execute-Write Section</p></td>
 <td align="left"><p>The image contains an executable and writable section.</p>
-<p>Do this to fix this issue ______________</p></td>
+</td>
 </tr>
+
 <tr class="even">
 <td align="left"><p>Section Alignment Failures</p>
-<p>VfCheckImageCompliance</p>
-<p>SectionAlignmentFailures</p>
-<p>VRF_RUNTIME_DATA_SECTION_ALIGNMENT_FAILURES</p></td>
+</td>
 <td align="left"><p>The image contains a section that is not page aligned.</p>
 <p>Section Alignment must be a multiple of 0x1000 (PAGE_SIZE). E.g. DRIVER_ALIGNMENT=0x1000</p></td>
 </tr>
+
 <tr class="odd">
 <td align="left"><p>Unsupported Relocs</p></td>
-<td align="left"><p></p></td>
+<td align="left"><p>Passing a flag value to an allocating function that could result in executable memory being allocated. A call to a function that results in possible allocation of executable nonpaged pool has been found. There are parameters used that indicate the resulting allocation may actually be non-executable, but it is determined that this is unlikely and executable memory has been allocated. This is most common with a function that takes optional allocating functions as a parameter.</p>
+<p>This error is simimar to the [C30034](https://msdn.microsoft.com/library/windows/hardware/dn910908.aspx) static code analysis warning.</p></td>
 </tr>
+
 <tr class="even">
 <td align="left"><p>IAT in Executable Section</p></td>
 <td align="left"><p>The import address table (IAT), should not be an executable section of memory.</p>
-<p>Make this compiler option / code (?)change to fix this __________________.</p></td>
+<p> A call was made to a function that must be made from inside the initialization function (for example, DriverEntry() or DllInitialize()). To fix this, move the call inside of the initialization function.</p>
+<p>This driver verifier error is simimar to the [C30035](https://msdn.microsoft.com/library/windows/hardware/dn910909.aspx) static code analysis warning.</p></td>
 </tr>
+
 </tbody>
 </table>
 
- The following provides some examples of commonly-used DDIs that cause executable memory to be allocated, along with some example fixes:
 
-|                                                                                               |                                                                                                                                          |
-|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| **Code**                                                                                      | **Description**                                                                                                                          |
-| [C30029](https://msdn.microsoft.com/library/windows/hardware/dn910903.aspx)    | Calling a memory allocating function that requests executable memory                                                                     |
-| [C30030](https://msdn.microsoft.com/library/windows/hardware/dn910904.aspx ) | Calling a memory allocating function and passing a parameter that indicates executable memory                                            |
-| [C30031](https://msdn.microsoft.com/library/windows/hardware/dn910905.aspx)    | Calling a memory allocating function and passing a parameter that indicates executable memory                                            |
-| [C30032](https://msdn.microsoft.com/library/windows/hardware/dn910906.aspx)    | Calling a memory allocating function and forcing the request of executable memory through use of the POOL\_NX\_OPTOUT directive          |
-| [C30033](https://msdn.microsoft.com/library/windows/hardware/dn910907.aspx)    | Executable allocation was detected in a driver compiled with POOL\_NX\_OPTIN.                                                            |
-| [C30034](https://msdn.microsoft.com/library/windows/hardware/dn910908.aspx)    | Passing a flag value to an allocating function that could result in executable memory being allocated.                                   |
-| [C30035](https://msdn.microsoft.com/library/windows/hardware/dn910909.aspx)    | A call was made to a function that must be made from inside the initialization function (for example, DriverEntry() or DllInitialize()). |
-
- 
 
 **Script customization**
 
@@ -705,6 +694,12 @@ Use the Driver Verifier Code Integrity option flag (0x02000000) to enable extra 
 verifier.exe /flags 0x02000000 /driver <driver.sys>
 ```
 To choose this option if using the verifier GUI, choose Create custom settings (for code developers), choose Next, and then choose _Code integrity checks_.
+
+You can use the verifier command line /query option to display the current driver verifier information.
+
+```
+verifier /query 
+```
 
 
 ## <span id="BinScope"></span><span id="binscope"></span><span id="BINSCOPE"></span>Check code with BinScope Binary Analyzer
