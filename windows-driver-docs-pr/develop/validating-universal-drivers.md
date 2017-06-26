@@ -11,7 +11,7 @@ ms.technology: windows-devices
 
 # Validating Universal Windows drivers
 
-You can use the ApiValidator.exe tool to verify that the APIs that your driver calls are valid for a Universal Windows driver. The tool returns an error if your driver calls an API that is outside the set of valid APIs for Universal Windows drivers. This tool is part of the Windows Driver Kit (WDK) for Windows 10.
+You can use the ApiValidator.exe tool to verify that the APIs that your binaries call are valid for a Universal Windows driver. The tool returns an error if your binaries call an API that is outside the set of valid APIs for Universal Windows drivers. This tool is part of the Windows Driver Kit (WDK) for Windows 10.
 
 ## <span id="Running_ApiValidator_in_Visual_Studio"></span><span id="running_apivalidator_in_visual_studio"></span><span id="RUNNING_APIVALIDATOR_IN_VISUAL_STUDIO"></span>Running ApiValidator in Visual Studio
 
@@ -37,7 +37,7 @@ Error   10  error MSB3721: The command ""C:\Program Files (x86)\Windows Kits\10\
 
 **Fixing validation errors**
 
-1.  If you switched a legacy desktop driver to universal, verify that you are including the correct libraries. Right click the project and choose properties. Navigate to **Linker-&gt;Input**. The **Additional Dependencies** should contain:
+1.  If you switched a legacy desktop UMDF driver project to universal, verify that you are including the correct libraries when building your binaries. Right click the project and choose properties. Navigate to **Linker-&gt;Input**. The **Additional Dependencies** should contain:
 
     ```
     %AdditionalDependencies);$(SDK_LIB_PATH)\OneCoreUAP.lib

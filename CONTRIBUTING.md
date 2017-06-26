@@ -38,7 +38,7 @@ For more info, see [Fork a Repo](https://help.github.com/articles/fork-a-repo/).
 
 ## Using issues to provide feedback on Windows driver documentation
 
-To provide feedback rather than directly modifying actual documentation pages, [create an issue](https://github.com/MicrosoftDocs/windows-driver-docs/issues).
+If you would like to provide feedback rather than suggesting a change to documentation, [create an issue](https://github.com/MicrosoftDocs/windows-driver-docs/issues).
 
 Be sure to include the topic title and the URL for the page.
 
@@ -47,4 +47,3 @@ Be sure to include the topic title and the URL for the page.
 You can use your favorite text editor to edit Markdown.  We recommend [Visual Studio Code](https://code.visualstudio.com/), a free lightweight open source editor from Microsoft.
 
 You can learn the basics of Markdown in just a few minutes.  To get started, check out [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
-

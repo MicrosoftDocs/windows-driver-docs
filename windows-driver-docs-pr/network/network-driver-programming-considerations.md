@@ -30,7 +30,6 @@ This section includes the following topics:
 -   [Packet Structures in Network Drivers](packet-structures-in-network-drivers.md)
 -   [Using Shared Memory in Network Drivers](using-shared-memory-in-network-drivers.md)
 -   [Asynchronous I/O and Completion Functions in Network Drivers](asynchronous-i-o-and-completion-functions-in-network-drivers.md)
--   [NDIS Versions in Network Drivers](ndis-versions-in-network-drivers.md)
 -   [Security Issues for Network Drivers](security-issues-for-network-drivers.md)
 
  
