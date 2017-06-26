@@ -660,15 +660,16 @@ To use the Device Guard Readiness Tool to evaluate complete the following steps.
 
 <tr class="odd">
 <td align="left"><p>Unsupported Relocs</p></td>
-<td align="left"><p>Passing a flag value to an allocating function that could result in executable memory being allocated. A call to a function that results in possible allocation of executable nonpaged pool has been found. There are parameters used that indicate the resulting allocation may actually be non-executable, but it is determined that this is unlikely and executable memory has been allocated. This is most common with a function that takes optional allocating functions as a parameter.</p>
-<p>This error is similar to the [C30034](https://msdn.microsoft.com/library/windows/hardware/dn910908.aspx) static code analysis warning.</p></td>
+<td align="left"><p>In Windows 10 version 1507 through version 1607, because of the use of Address Space Layout Randomization (ASLR) an issue can arise with address alignment and memory relocation.  The operating system needs to relocate the address from where the linker set its default base address to the actual location that ASLR assigned. This relocation cannot straddle a page boundary.  For example, consider a 64-bit address value that starts at offset 0x3FFC in a page. It’s address value overlaps over to the next page at offset 0x0003. This type of overlapping relocs is not supported prior to Windows 10 version 1703.</p>
+</td>
 </tr>
 
 <tr class="even">
 <td align="left"><p>IAT in Executable Section</p></td>
 <td align="left"><p>The import address table (IAT), should not be an executable section of memory.</p>
-<p> A call was made to a function that must be made from inside the initialization function (for example, DriverEntry() or DllInitialize()). To fix this, move the call inside of the initialization function.</p>
-<p>This driver verifier error is similar to the [C30035](https://msdn.microsoft.com/library/windows/hardware/dn910909.aspx) static code analysis warning.</p></td>
+<p>This situation occurs when the IAT, is located in a Read and Execute (RX) only section of memory. This means that the OS will not be able to write to the IAT to set the correct addresses for where the referenced DLL. </p>
+<p> This can occur when a call was made to a function that must be made from inside the initialization function (for example, DriverEntry() or DllInitialize()). To fix this, move the call inside of the initialization function.</p>
+</td>
 </tr>
 
 </tbody>
