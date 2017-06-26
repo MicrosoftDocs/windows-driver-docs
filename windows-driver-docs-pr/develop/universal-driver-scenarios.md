@@ -44,7 +44,7 @@ HKR, OSR, "OperatingMode",, "Default" ; FLG_ADDREG_TYPE_SZ
 HKR, OSR, "OperatingParams",, "None" ; FLG_ADDREG_TYPE_SZ
 ```
 
-In [`osrfx2_DCHU_extension.inx`], Contoso overrides the **OperatingParams** registry key and adds **OperatingExceptions**:
+In [`osrfx2_DCHU_extension.inx`], Contoso overrides the **OperatingParams** registry value and adds **OperatingExceptions**:
 
 ```
 [OsrUsbFx2Extension_AddReg]
