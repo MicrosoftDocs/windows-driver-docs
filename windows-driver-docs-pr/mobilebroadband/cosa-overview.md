@@ -11,11 +11,17 @@ ms.technology: windows-devices
 
 # COSA overview
 
-This topic presents an overview of COSA (Country and Operator Settings Asset), the new format MOs use in Windows 10, version 1703 and later to provision Windows devices for mobile broadband. The existing apndatabase.xml (APN database) from Windows 8, Windows 8.1, and versions of Windows 10 before Windows 10, version 1703 has been converted to COSA, which is ingestible by the new provisioning framework. Note that these previous versions of Windows will continue to use the older APN database for provisioning.
+This topic presents an overview of COSA (Country and Operator Settings Asset), the new format MOs use in Windows 10, version 1703 and later to provision Windows devices for mobile broadband. The existing apndatabase.xml (APN database) from Windows 8, Windows 8.1, and versions of Windows 10 before Windows 10, version 1703 has been converted to COSA, which is ingestible by the new provisioning framework. Note that these previous versions of Windows will continue to use the older APN database for provisioning desktop devices.
 
 For more information about the older APN database, see [APN database overview](apn-database-overview.md).
 
 For more information about the submission process for COSA and the APN database, see [COSA/APN database submission](cosa-apn-database-submission.md).
+
+## Differences between Windows Desktop COSA and Onecore COSA
+
+In Windows 10, version 1703, COSA was available on Windows desktop devices and contained data-only provisioning settings for MOs. Starting in Windows 10, version 1709, COSA is part of Onecore and contains additional settings such as voice call settings, messaging settings, and VoLTE (Voice over LTE) settings.
+
+For more information about the settings in COSA, see the tables in [Planning your COSA/APN database submission](planning-your-cosa-apn-database-submission.md).
 
 ## FAQ
 
