@@ -172,7 +172,7 @@ NdisGetRssProcessorInformation(NetAdapterWdmGetNdisHandle(NetAdapter), . . .);
 
 See [Debugging NetAdapterCx Client Drivers](debugging-netadaptercx-client-drivers.md).
 
-The !ndiskd.netadapter debugger extension shows similar results to what [**!ndiskd.miniport**](https://msdn.microsoft.com/library/windows/hardware/ff564142) shows for an NDIS 6 driver.
+The [!ndiskd.netadapter](../debugger/-ndiskd-netadapter.md) debugger extension shows similar results to what **!ndiskd.miniport** shows for an NDIS 6 driver.
 
 ## Conclusion
 
