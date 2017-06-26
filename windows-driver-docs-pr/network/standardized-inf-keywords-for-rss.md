@@ -127,6 +127,8 @@ The number of the processor group for the processor number that is specified in 
 <a href="" id="---------numanodeid"></a> **\*NumaNodeId**  
 The preferred NUMA node that is used for the memory allocations of the network adapter. Also, the operating system attempts to use the CPUs from the preferred NUMA node first for RSS.
 
+A driver for a PCI expansion card should not specify the NUMA node ID statically in its INF, since the closest node depends on which PCI slot the card is plugged into.  Only specify **\*NumaNodeId** if the network adapter is integrated into the system, the NUMA node is known in advance, and the node cannot be determined at runtime by querying ACPI.
+
 **Note**  If this keyword is present and its value is less than the number of NUMA nodes in the computer, NDIS uses this value in the **PreferredNumaNode** member in the [**NDIS\_RSS\_PROCESSOR\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567274) structure.
 
  
@@ -143,9 +145,23 @@ The maximum number of RSS processors.
 
 <a href="" id="---------rssmaxprocnumber"></a> **\*RssMaxProcNumber**  
 The maximum processor number of the RSS interface.
+If **\*RssMaxProcNumber** is specified, then **\*RssMaxProcGroup** should also be specified.
 
-<a href="" id="---------numrssqueues"></a> **\*NumRSSQueues**  
-The maximum number of the RSS queues that the device should use and advertise in the [**NDIS\_RECEIVE\_SCALE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff567220) structure.
+<a href="" id="---------rssmaxprocnumber"></a> **\*RssMaxProcNumber**  
+The maximum processor number of the RSS interface.
+If **\*RssMaxProcNumber** is specified, then **\*RssMaxProcGroup** should also be specified.
+
+<a href="" id="---------rssmaxprocgroup"></a> **\*RssMaxProcGroup**
+The maximum processor group of the RSS interface.
+
+**\*RssBaseProcGroup** together with **\*RssBaseProcNumber** form a PROCESSOR_NUMBER structure that identifies the smallest processor number that can be used with RSS.
+**\*RssMaxProcGroup** together with **\*RssMaxProcNumber** form a PROCESSOR_NUMBER structure that identifies the maximum processor number that can be used with RSS.
+
+For example, suppose **\*RssBaseProcGroup** is set to 1, **\*RssBaseProcNumber** is set to 16, **\*RssMaxProcGroup** is set to 3, and **\*RssMaxProcNumber** is set to 8.
+Using <group>:<processor> notation, the base processor is 1:16 and the max processor is 3:8.
+Then processors 0:0, 0:32, 1:0, and 1:15 will not be considered candidates for RSS, because they are below the base processor number.
+Processors 1:16, 1:31, 2:0, 2:63, 3:0, and 3:8 will all be considered candidates for RSS, because they fall in the range 1:16 through 3:8.
+Processors 3:9, 3:31, and 4:0 will not be considered candidates for RSS, because they are beyond the maximum processor number.
 
 NDIS 6.20 added support for the **\*RssBaseProcGroup**, **\*NumaNodeId**, **\*RssBaseProcNumber**, and **\*MaxRssProcessors** keywords.
 
@@ -205,7 +221,7 @@ The following table describes all of the RSS keywords that can be edited.
 <td align="left"><p><strong>*NumaNodeId</strong></p></td>
 <td align="left"><p>Preferred NUMA node</p></td>
 <td align="left"><p>Int</p></td>
-<td align="left"><p>65535 (Default)</p></td>
+<td align="left"><p>65535 (Any node)</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>System specific - cannot exceed 65534</p></td>
 </tr>
@@ -233,8 +249,8 @@ The following table describes all of the RSS keywords that can be edited.
 <td align="left"><p><strong>*RssMaxProcNumber</strong></p></td>
 <td align="left"><p>Maximum RSS Processor Number</p></td>
 <td align="left"><p>Int</p></td>
-<td align="left"><p>0</p></td>
 <td align="left"><p>MAXIMUM_PROC_PER_GROUP-1 (Default)</p></td>
+<td align="left"><p>0</p></td>
 <td align="left"><p>MAXIMUM_PROC_PER_GROUP-1</p></td>
 </tr>
 <tr class="even">
@@ -262,9 +278,9 @@ The following table describes all of the RSS keywords that can be edited.
 
  
 
-**Note**  The default value for **\*NumaNodeId** (65535) means the NUMA node identifier is not defined.
+**Note**  The default value for **\*NumaNodeId** (65535) means the network adapter is agnostic to NUMA node, and NDIS should not attempt to prefer any node over another.
+If the **\*NumaNodeId** keyword is not present, then NDIS automatically selects the closest node based on hints from ACPI.
 
- 
 
 For more information about standardized INF keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
 
