@@ -137,11 +137,17 @@ Validate device objects. For more information, see [Failure to Validate Device O
 Validate all values that are associated with an IRP, such as buffer addresses and lengths. The following topics provide information about validating IRP input values.
 
 [DispatchReadWrite Using Buffered I/O](https://msdn.microsoft.com/library/windows/hardware/ff543388)
+
 [Errors in Buffered I/O](https://msdn.microsoft.com/library/windows/hardware/ff544293)
+
 [DispatchReadWrite Using Direct I/O](https://msdn.microsoft.com/library/windows/hardware/ff543393)
+
 [Errors in Direct I/O](https://msdn.microsoft.com/library/windows/hardware/ff544300)
+
 [Security Issues for I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff563700)
+
 [Errors in Referencing User-Space Addresses](https://msdn.microsoft.com/library/windows/hardware/ff544308)
+
 **Handle IRP completion operations properly**
 
 A driver must never complete an IRP with a status value of STATUS\_SUCCESS unless it actually supports and processes the IRP. For information about the correct ways to handle IRP completion operations, see [Completing IRPs](https://msdn.microsoft.com/library/windows/hardware/ff542018).
@@ -161,8 +167,11 @@ One way to avoid the synchronization problems that are associated with cancel op
 Be sure that you understand the difference between [**IRP\_MJ\_CLEANUP**](https://msdn.microsoft.com/library/windows/hardware/ff550718) and [**IRP\_MJ\_CLOSE**](https://msdn.microsoft.com/library/windows/hardware/ff550720) requests. Cleanup requests arrive after an application closes all handles on a file object, but sometimes before all I/O requests have completed. Close requests arrive after all I/O requests for the file object have been completed or canceled. For more information, see the following topics:
 
 [DispatchCreate, DispatchClose, and DispatchCreateClose Routines](https://msdn.microsoft.com/library/windows/hardware/ff543279)
+
 [DispatchCleanup Routines](https://msdn.microsoft.com/library/windows/hardware/ff543242)
+
 [Errors in Handling Cleanup and Close Operations](https://msdn.microsoft.com/library/windows/hardware/ff544304)
+
 For more information about handling IRPs correctly, see [Additional Errors in Handling IRPs](https://msdn.microsoft.com/library/windows/hardware/ff540543).
 
 **Other security issues**
