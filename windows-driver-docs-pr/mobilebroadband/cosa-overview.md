@@ -32,11 +32,11 @@ For more information about the settings in COSA, see the tables in [Planning you
 - [Where is the COSA database stored, and can it be visually inspected like apndatabase.xml?](#location)
 - [What happens when a device updates from Windows 10, version 1607 (or earlier) to Windows 10, version 1703? Are custom or manually created APNs migrated? Do they still have priority over the defaults from the database?](#update)
 
-## <a href="" id="settings"></a> What are the settings that MOs can specify in COSA?
+### <a href="" id="settings"></a> What are the settings that MOs can specify in COSA?
 
 The settings are largely the same as what MOs configured in apndatabase.xml, with a few exceptions and new additions. For details, see the tables in [Planning your COSA/APN database submission](planning-your-cosa-apn-database-submission.md).
 
-## <a href="" id="events"></a> What events trigger the application of new MO settings?
+### <a href="" id="events"></a> What events trigger the application of new MO settings?
 
 Three events trigger the Windows provisioning engine to look for a change in settings: 
 
@@ -44,21 +44,21 @@ Three events trigger the Windows provisioning engine to look for a change in set
 2.	Reconfiguration of an eSIM (change in ICCID)
 3.	When the device boots
 
-## <a href="" id="SIMinfo"></a> What SIM information from modems does COSA use?
+### <a href="" id="SIMinfo"></a> What SIM information from modems does COSA use?
 
 For MO/MVNO discovery, Windows tries to make the best match for an available profile in the COSA database using SPN from the SIM in the modem.
 
-## <a href="" id="APNmatch"></a> Is there an algorithm to make the best APN match?
+### <a href="" id="APNmatch"></a> Is there an algorithm to make the best APN match?
 
 In versions of Windows before Windows 10, version 1703, MOs could specify an auto-connect order. Windows 10, version 1703 and later continue to use a round-robin approach through all available APNs, but there is no longer a specific order that the algorithm uses.
 
-## <a href="" id="location"></a> Where is the COSA database stored, and can it be visually inspected like apndatabase.xml?
+### <a href="" id="location"></a> Where is the COSA database stored, and can it be visually inspected like apndatabase.xml?
 
 COSA is in the format of a Windows 10 provisioning package (.ppkg). It is in the Windows\Provisioning\COSA\Microsoft folder. You can use a third-party tool, such as 7-Zip File Manager ([www.7-Zip.org](https://go.microsoft.com/fwlink/p/?linkid=844795)), to visually inspect its contents.
 
 Note that OEM extensions to COSA, if specified in the device image, are in the COSA\OEM folder. For more information, see [Customize the Country and Operator Settings Asset](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/customize-cosa).
 
-## <a href="" id="update"></a> What happens when a device updates from Windows 10, version 1607 or earlier to Windows 10, version 1703 or later? Are custom or manually created APNs migrated? Do they still have priority over the defaults from the database?
+### <a href="" id="update"></a> What happens when a device updates from Windows 10, version 1607 or earlier to Windows 10, version 1703 or later? Are custom or manually created APNs migrated? Do they still have priority over the defaults from the database?
 
 COSA replaces apndatabase.xml after the upgrade. If an APN was provisioned in the previous version, whether custom, manual, or device-provisioned via the database, it is migrated as a part of the upgrade to version 1703 and the device continues to use it for connectivity without requiring any additional action. Manually provisioned APNs still have priority over the defaults from the database just as they did in version 1607 and earlier.
 
