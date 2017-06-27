@@ -295,8 +295,11 @@ and [Device Guard deployment guide](https://docs.microsoft.com/en-us/windows/dev
 For more information, about file system driver security see the following topics.
 
 [Security Considerations for File Systems](https://msdn.microsoft.com/windows/hardware/drivers/ifs/security-considerations-for-file-systems)
+
 [File System Security Issues](https://msdn.microsoft.com/windows/hardware/drivers/ifs/file-system-security-issues)
+
 [Security Features for File Systems](https://msdn.microsoft.com/windows/hardware/drivers/ifs/security-features-for-file-systems)
+
 [Security Considerations for File System Filter Drivers](https://msdn.microsoft.com/windows/hardware/drivers/ifs/security-considerations-for-file-system-filter-drivers)
 
 *NDIS - Networking*
@@ -463,7 +466,9 @@ For more information, see [How to run Code Analysis for drivers](https://msdn.mi
 
 1. Open the driver solution in Visual Studio.
 
-To become familiar with code analysis, you can use one of the sample drivers - for example the featured toaster sample. <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured>
+To become familiar with code analysis, you can use one of the sample drivers - for example the featured toaster sample.
+
+ <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured>
 
 2. In Visual Studio, for each project in the solution change the project properties to use the desired rule set. For example: Project &gt;&gt; Properties &gt;&gt; Code Analysis &gt;&gt; General, select *Recommended driver rules*.
 
