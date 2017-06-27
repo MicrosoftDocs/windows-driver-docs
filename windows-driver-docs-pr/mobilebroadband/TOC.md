@@ -50,6 +50,7 @@
 ### [APN database overview](apn-database-overview.md)
 ### [COSA/APN database submission](cosa-apn-database-submission.md)
 #### [Planning your COSA/APN database submission](planning-your-cosa-apn-database-submission.md)
+#### [Planning your Onecore COSA submission](planning-your-onecore-cosa-submission.md)
 #### [Testing your COSA/APN database submission](testing-your-cosa-apn-database-submission.md)
 #### [Submitting the COSA/APN database update](submitting-the-cosa-apn-database-update.md)
 ## [Service metadata](service-metadata.md)
