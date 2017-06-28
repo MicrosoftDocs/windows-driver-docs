@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Adds, deletes, displays, and changes the order of filter drivers for a device setup class. Valid only on the local computer.
 
-``` syntax
+```
     devcon classfilter class {upper | lower} [ = | @driver | -driver | +driver | !driver ]...
 
    

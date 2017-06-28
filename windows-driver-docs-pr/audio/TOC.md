@@ -126,6 +126,7 @@
 ##### [Obtaining an HDAUDIO_BUS_INTERFACE_V2 DDI Object](obtaining-an-hdaudio-bus-interface-v2-ddi-object.md)
 ##### [Obtaining an HDAUDIO_BUS_INTERFACE_BDL DDI Object](obtaining-an-hdaudio-bus-interface-bdl-ddi-object.md)
 # [WDM Audio Support in Different Versions of Windows](wdm-audio-support-in-different-versions-of-windows.md)
+## [Implementing Audio Module Communication](implementing-audio-module-communication.md)
 ## [Low Latency Audio](low-latency-audio.md)
 ## [Voice Activation](voice-activation.md)
 ## [Audio Hardware Resource Management](audio-hardware-resource-management.md)

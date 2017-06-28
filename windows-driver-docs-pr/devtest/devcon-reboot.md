@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Stops and then starts the operating system. Valid only on the local computer.
 
-``` syntax
+```
     devcon reboot 
 
    

@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Displays the hardware IDs, compatible IDs, and device instance IDs of the specified devices. Valid on local and remote computers.
 
-``` syntax
+```
     devcon [/m:\\computer] hwids {* | ID [ID ...] | =class [ID [ID ...]]} 
 
    

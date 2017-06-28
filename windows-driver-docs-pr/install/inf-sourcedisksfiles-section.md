@@ -24,7 +24,7 @@ The **SourceDisksFiles** section names the source files that are used during ins
 
 In order for a driver file or an application file to be included as part of a signed [driver package](driver-packages.md), the file must have a corresponding INF **SourceDisksFiles** section entry and a corresponding [**INF CopyFiles directive**](inf-copyfiles-directive.md).
 
-``` syntax
+```
 [SourceDisksFiles] | 
 [SourceDisksFiles.x86] | 
 [SourceDisksFiles.ia64] | (Windows XP and later versions of Windows)

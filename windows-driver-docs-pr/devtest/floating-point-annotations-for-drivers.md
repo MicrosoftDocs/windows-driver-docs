@@ -68,7 +68,7 @@ KeSaveFloatingPointState (
 
 In the following example, the \_Kernel\_float\_used\_ annotation suppresses warnings about the use of the floating-point state. The annotation also causes the code analysis tools to confirm that any calls to MyDoesFloatingPoint occur in a safe floating-point context.
 
-``` syntax
+```
 _Kernel_float_used_
 void
     MyDoesFloatingPoint(arguments);

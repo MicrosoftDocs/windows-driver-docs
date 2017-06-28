@@ -22,6 +22,9 @@
       - name: Windows Driver Frameworks
         tocHref: /windows-hardware/drivers/wdf/
         topicHref: /windows-hardware/drivers/wdf/index
+      - name: Windows Debugging Tools
+        tocHref: /windows-hardware/drivers/debugger/
+        topicHref: /windows-hardware/drivers/debugger/index
       - name: Device and Driver Technologies
         tocHref: /windows-hardware/drivers/device-and-driver-technologies/
         topicHref: /windows-hardware/drivers/device-and-driver-technologies
@@ -83,6 +86,9 @@
           - name: Multifunction
             tocHref: /windows-hardware/drivers/multifunction/
             topicHref: /windows-hardware/drivers/multifunction/index
+          - name: NetCx
+            tocHref: /windows-hardware/drivers/netcx/
+            topicHref: /windows-hardware/drivers/netcx/index
           - name: Network
             tocHref: /windows-hardware/drivers/network/
             topicHref: /windows-hardware/drivers/network/index

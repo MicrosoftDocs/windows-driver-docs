@@ -26,7 +26,7 @@ The **/Replace** switch of the Enhanced Storage Certificate Management tool repl
 
  
 
-``` syntax
+```
     EhStorCertMgrCmd 
     /Replace 
     -Volume:

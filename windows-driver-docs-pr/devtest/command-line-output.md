@@ -21,7 +21,7 @@ For example, the following illustration shows the command-line output from a com
 
 In this verification, SDV found four defects, one for each rule that it verified.
 
-``` syntax
+```
 C:\Program Files (x86)\Windows Kits\8.0\Tools\sdv\samples\fail_drivers\wdm\fail_driver1>msbuild fail_driver1.vcxproj /t:sdv /p:inputs="/check=config.sdv" /p:configuration="Win8 beta release" /p:platform=win32
 Microsoft (R) Build Engine version 4.0.30319.17369
 [Microsoft .NET Framework, version 4.0.30319.17369]

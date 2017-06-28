@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Lists the resources allocated to the specified devices. Resources are assignable and addressable bus paths, such as DMA channels, I/O ports, IRQ, and memory addresses. Valid on local and remote computers.
 
-``` syntax
+```
     devcon [/m:\\computer] resources {* | ID [ID ...] | =class [ID [ID...]]} 
 
    

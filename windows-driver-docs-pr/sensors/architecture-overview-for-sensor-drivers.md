@@ -21,13 +21,13 @@ A sensor driver uses a special **class extension** object. The sensor class exte
 
 For more information about the class extension object, see [About the Sensor Class Extension](about-the-sensor-class-extension.md).
 
-**Important**  Sensor drivers must be free threaded and thread safe.
+**Important**  Sensor drivers must be free threaded and thread safe.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 --------------------

@@ -79,25 +79,3 @@ Starting with Windows Vista, all 64-bit versions of Windows require driver code 
 
 <span id="Problems_installing_the_driver__general_"></span><span id="problems_installing_the_driver__general_"></span><span id="PROBLEMS_INSTALLING_THE_DRIVER__GENERAL_"></span>**Problems installing the driver (general)**  
 The WDK can deploy and install a driver package on a test computer, but only if the driver has all the necessary components for installation, such as an INF file. See [Driver Packages](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff544840) more information. Make sure you can install the driver outside of Visual Studio and the WDK. For example, use the Device Console utility, [Devcon](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff544707) to test whether you can install the driver. Make sure the device (if you have one) is connected to the target computer. For more information, see [Device and Driver Installation](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff549731) and [Creating a Driver Package](creating-a-driver-package.md).
-
-## <span id="related_topics"></span>Related topics
-
-
-* [Provision a computer for driver deployment and testing (WDK 10)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909)
-* [Troubleshooting Configuration of Driver Deployment, Testing and Debugging](troubleshooting-configuration-of-driver-deployment--testing-and-debugging.md)
-* [Signing a Driver During Development and Testing](signing-a-driver-during-development-and-testing.md)
-* [Deployment Properties for Driver Projects](deployment-properties-for-driver-projects.md)
-* [Driver Verifier Properties for Driver Projects](driver-verifier-properties-for--driver-projects.md)
-* [KMDF Verifier Properties for Driver Package Projects](kmdf-verifier-properties-for-driver-package-projects.md)
-* [UMDF Verifier Properties for Driver Package Projects](umdf-verifier-properties-for-driver-package-projects.md)
-* [How to create a custom driver installation script](create-a-custom-driver-installation-script.md)
-* [Inf2Cat Properties for Driver Package Projects](inf2cat-properties-for-driver-package-projects.md)
- 
-
- 
-
-
-
-
-
-

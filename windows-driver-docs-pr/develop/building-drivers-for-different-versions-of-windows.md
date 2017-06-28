@@ -33,7 +33,7 @@ If you are [writing drivers for different versions of Windows](https://msdn.micr
 
     **Using MSBuild:**
 
-    ``` syntax
+    ```
     msbuild /p:KernelBufferOverflowLib="C:\Program Files (x86)\Windows Kits\8.1\Lib\win8\km\x64\BufferOverflowK.lib" /p:platform=x64 /p:Configuration="Win8 Release" myDriver.sln
     ```
 

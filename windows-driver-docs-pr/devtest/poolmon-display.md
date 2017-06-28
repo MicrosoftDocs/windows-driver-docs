@@ -89,7 +89,7 @@ The following table describes the columns in the PoolMon display.
 
 The following sample PoolMon output is sorted by number of allocations. (To sort your display this way, start PoolMon with the **/a** parameter.)
 
-``` syntax
+```
  Memory:  260620K Avail:   96364K  PageFlts:     0   InRam Krnl: 1916K P:17856K
  Commit: 203500K Limit: 640916K Peak: 260632K            Pool N: 8332K P:27220K
  System pool information

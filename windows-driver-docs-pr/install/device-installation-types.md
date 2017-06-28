@@ -23,7 +23,7 @@ Windows uses INF files to install a driver package on a computer or device. All 
 ## INF files for universal and mobile driver packages
 
 
-If you are building a universal or mobile driver package, you must supply a universal INF file. Universal INFs contain only the subset of INF sections and directives that are required to install and configure a device. These directives can be performed on an offline system, without any runtime operations. For more information, see [Using a Universal INF File](using-a-configurable-inf-file.md).
+If you are building a universal or mobile driver package, you must supply a universal INF file. Universal INFs contain only the subset of INF sections and directives that are required to install and configure a device. These directives can be performed on an offline system, without any runtime operations. For more information, see [Using a Universal INF File](using-a-universal-inf-file.md).
 
 ## INF files for desktop driver packages
 

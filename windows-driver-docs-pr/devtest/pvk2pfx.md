@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Pvk2Pfx (Pvk2Pfx.exe) is a command-line tool copies public key and private key information contained in .spc, .cer, and .pvk files to a Personal Information Exchange (.pfx) file.
 
-``` syntax
+```
     pvk2pfx /pvk 
     pvkfilename.pvk [/pi pvkpassword] /spc spcfilename.ext [/pfx pfxfilename.pfx [/po pfxpassword] [/f]]
 ```
@@ -59,7 +59,7 @@ A 32-bit version of the Pvk2Pfx tool is located in the bin\\x86 folder of the WD
 
 The following command generates the .pfx file Mypfxfile.pfx from Mypvkfile.pvk and Myspcfile.spc. The command supplies the password mypassword for the .pvk file, which becomes the password for the .pfx file Mypfxfile.pfx. If there is an existing file named Mypfxfile.pfx, the **-f** switch configures the Pvk2Pfx tool to replace the existing file with a new file.
 
-``` syntax
+```
 pvk2pfx -pvk mypvkfile.pvk -pi mypassword -spc myspcfile.spc -pfx mypfxfile.pfx -f
 ```
 

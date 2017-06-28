@@ -29,7 +29,7 @@ When you have a kernel debugger connected to a test computer running [Driver Ver
 
 As with any bug check that occurs, once you have control of the debugger, the best first step is to run the [**!analyze -v**](https://msdn.microsoft.com/library/windows/hardware/ff562112) command.
 
-``` syntax
+```
 kd> !analyze -v
 Connected to Windows 8 9600 x86 compatible target
 Loading Kernel Symbols
@@ -80,7 +80,7 @@ Specify [Pool Tracking](pool-tracking.md) (**verifier /flags 0x8**). The Pool Tr
 
 For this particular bug check, the information provided in parameter 4 (Arg4) is the most important. Arg4 shows number of allocations that weren’t freed. The output of the [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) command also shows the [**!verifier**](https://msdn.microsoft.com/library/windows/hardware/ff565591) debugger extension command that you can use to display what those allocations were. The full output of **!verifier 3 MyDriver.sys** command is shown in the following example:
 
-``` syntax
+```
 kd> !verifier 3 Mydriver.sys
 
 Verify Flags Level 0x000209bb
@@ -162,7 +162,7 @@ Of the tags displayed, only one (for the allocation at address 0x8645a000) was s
 
 When symbols are loaded for the driver, if those symbols contain the line number information, you can use the **ln** *CallerAddress* command to show the line where the call was made. This output will also show the offset in the function that made the allocation.
 
-``` syntax
+```
 kd> ln 0x9a3bf6ac  
 d:\coding\wdmdrivers\mydriver\handleioctl.c(50)+0x15
 (9a3bf660)   MyDriver!DeviceControlDispatch+0x4c   |  (9a3bf6d0)   MyDriver!DeviceControlDispatch
@@ -182,7 +182,7 @@ Driver Verifier also keeps a circular log of all memory allocations made in kern
 
 This log can be accessed by using the command **!verifier 0x80** *AddressOfPoolAllocation*. Note that this will list all of the allocations and frees in the log for this particular address. To cancel or stop display of the log history, use the keyboard shortcuts: **Ctrl + Break** with WinDbg and **Ctrl + C** with KD.
 
-``` syntax
+```
 kd> !verifier 0x80 0x982a8fe0
 
 Log of recent kernel pool Allocate and Free operations:

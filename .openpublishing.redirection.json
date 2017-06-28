@@ -736,27 +736,48 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows-driver-docs-pr/sensors/architecture-overview",
+      "source_path": "windows-driver-docs-pr/sensors/architecture-overview.md",
       "redirect_URL": "/windows-hardware/drivers/sensors/architecture-overview-for-sensor-drivers ",
       "redirect_document_id": true
     },
     {
-      "source_path": "windows-driver-docs-pr/display/performing-copp-operations2",
+      "source_path": "windows-driver-docs-pr/display/performing-copp-operations2.md",
       "redirect_URL": "/windows-hardware/drivers/display/performing-copp-operations-example ",
       "redirect_document_id": true
     },
     {
-      "source_path": "windows-driver-docs-pr/dashboard/walkthrough--how-to-get-a-driver-signed-by-microsoft-for-multiple-versions-of-windows",
+      "source_path": "windows-driver-docs-pr/dashboard/walkthrough--how-to-get-a-driver-signed-by-microsoft-for-multiple-versions-of-windows.md",
       "redirect_URL": "/windows-hardware/drivers/dashboard/get-drivers-signed-by-microsoft-for-multiple-windows-versions",
       "redirect_document_id": true
     },
     {
-      "source_path": "windows-driver-docs-pr/nfc/p2p-rf-data-exchagne-sequence",
+      "source_path": "windows-driver-docs-pr/nfc/p2p-rf-data-exchagne-sequence.md",
       "redirect_URL": "/windows-hardware/drivers/nfc/p2p-rf-data-exchange-sequence",
       "redirect_document_id": true
-    },{
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/using-a-configurable-inf-file.md",
+      "redirect_URL": "/windows-hardware/drivers/install/using-a-universal-inf-file",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/creating-an-extensible-inf-file.md",
+      "redirect_URL": "/windows-hardware/drivers/install/using-an-extension-inf-file",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/nfc/tag-rf-data-exchagne-sequence.md",
       "redirect_URL": "/windows-hardware/drivers/nfc/tag-rf-data-exchange-sequence",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/Windows10SDriverGuidelines.md",
+      "redirect_URL": "/windows-hardware/drivers/install/Windows10SDriverRequirements",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-versions-in-network-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/network/overview-of-ndis-versions",
       "redirect_document_id": true
     }
   ]

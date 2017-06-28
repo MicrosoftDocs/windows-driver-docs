@@ -459,7 +459,7 @@ You must install the manifest on the target system so that event consumers (for 
 
 For example, to install the manifest for the Evntdrv.sys sample driver, open a Command Prompt windows with elevated privileges (**Run as administrator**) navigate to the directory where the evntdrv.xml file is located and enter the following command:
 
-``` syntax
+```
 Wevtutil.exe im evntdrv.xml
 ```
 

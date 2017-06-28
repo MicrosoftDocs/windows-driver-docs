@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Finds all devices on the computer, including devices that were once attached to the computer but have been detached or moved. (These are known as nonpresent devices or *phantom* devices.) The **DevCon FindAll** operation also finds devices that are enumerated differently as a result of a BIOS change. Valid on local and remote computers.
 
-``` syntax
+```
     devcon [/m:\\computer] findall {* | ID [ID ...] | =class [ID [ID ...]]} 
 
    

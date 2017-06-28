@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 An INF file must have at least one **Strings** section to define every %*strkey*% token specified elsewhere in that INF.
 
-``` syntax
+```
 [Strings] | 
 [Strings.LanguageID] ...
  

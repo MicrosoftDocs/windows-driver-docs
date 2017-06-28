@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Writing Class Installers and Co-Installers
 
 
-**Note**  Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-configurable-inf-file.md).
+**Note**  Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 

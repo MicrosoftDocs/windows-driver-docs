@@ -125,7 +125,7 @@ Most of the issues found with Systematic low resources simulation result in bug 
 
 -   From the debugger command prompt, type the following command:
 
-    ``` syntax
+    ```
     !verifier 0x800
     ```
 

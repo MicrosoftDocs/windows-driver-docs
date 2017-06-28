@@ -49,7 +49,7 @@ Drivers typically complete I/O requests in their [*EvtInterruptWorkItem*](https:
 
 The following code example demonstrates how a driver using passive-level interrupts might schedule a [*EvtInterruptWorkItem*](https://msdn.microsoft.com/library/windows/hardware/hh406422) callback from within its [*EvtInterruptIsr*](https://msdn.microsoft.com/library/windows/hardware/ff541735) function.
 
-``` syntax
+```
 BOOLEAN
 
 EvtInterruptIsr(
