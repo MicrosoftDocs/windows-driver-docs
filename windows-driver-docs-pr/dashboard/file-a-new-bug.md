@@ -153,8 +153,8 @@ You can create a new bug online, and then submit it to be filed with Microsoft.
       3. Connect the flash drive to the problem system when booted to OOBE or Windows PE.
       4. Press Shift+F10 on the keyboard to get to a command prompt.
       5. Change directory to the location on the USB Flash Drive that UCSLogTool was copied to.
-      6. Run the following script manually to collect the General Windows log collection: `UCSLogTool\WINDOWS_LOG\GetLogs.cmd`
-      7. g)	After the tool collects the data, copy the data onto the flash drive and attach to the bug in a ZIP file format.
+      6. Run the following script manually to collect the General Windows log collection: `UCSLogTool\WINDOWS_LOG\GetLogs.cmd LOGDIR`
+      7. After the tool collects the data, copy the data onto the flash drive and attach to the bug in a ZIP file format.
 
       We recommend submitting a memory dump file when the problem system is in a non-responsive state. This file will help Microsoft investigate the issue you are encountering.
       
