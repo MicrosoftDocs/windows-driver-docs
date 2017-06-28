@@ -868,7 +868,10 @@ Review these driver samples to review examples of driver projects that illustrat
 
 *24 deadly sins of software security : programming flaws and how to fix them* by Michael Howard, David LeBlanc and John Viega
 
-*The art of software security assessment : identifying and preventing software vulnerabilities* by Mark Dowd, John McDonald and Justin Schuh
+*The art of software security assessment : identifying and preventing software vulnerabilities*, Mark Dowd, John McDonald and Justin Schuh
+
+*Writing Secure Software Second Edition*, Michael Howard and David LeBlanc
+
 
 **Training**
 

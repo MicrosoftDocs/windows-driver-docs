@@ -62,9 +62,9 @@ For information about specific points at which kernel-mode drivers might be vuln
 ## <span id="Resources"></span><span id="resources"></span><span id="RESOURCES"></span>Resources
 
 
--   *24 Deadly Sins of Software Security : Programming Flaws and How to Fix Them*, by Michael Howard, David LeBlanc and John Viega
--   *Writing Secure Software*The art of software security assessment : identifying and preventing software vulnerabilities by Mark Dowd, John McDonald and Justin Schuh
--   *Writing Secure Software* Second Edition, by Michael Howard and David LeBlanc
+-   *24 Deadly Sins of Software Security : Programming Flaws and How to Fix Them*, Michael Howard, David LeBlanc and John Viega
+-   *The art of software security assessment : identifying and preventing software vulnerabilities*, Mark Dowd, John McDonald and Justin Schuh
+-   *Writing Secure Software Second Edition*, Michael Howard and David LeBlanc
 
  
 
