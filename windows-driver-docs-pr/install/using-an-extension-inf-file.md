@@ -40,7 +40,7 @@ To illustrate, consider a hypothetical device for which there are four extension
 From the latter two, both are selected, because they have unique **ExtensionId** values. In this example, the system applies the primary INF for the device, and then applies three extension INFs for that device.
 
 Note that extension INF files are always processed after the primary INF, but that there is no determined processing ordering in cases where more than one extension INF is available.
-Example: A primary INF (V1) withh extension A and B are installed on a device. An update to the primary INF (V2) is published. When installed on the system, primary INF V2 will be installed. Then, extensions A and B will be re-applied in no definite order.
+Example: A primary INF (V1) with extension A and B are installed on a device. An update to the primary INF (V2) is published. When installed on the system, primary INF V2 will be installed. Then, extensions A and B will be re-applied in no definite order.
 
 ## Creating an extension INF
 
