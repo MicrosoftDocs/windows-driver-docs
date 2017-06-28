@@ -16,6 +16,11 @@ The [Windows Certified Products List](http://sysdev.microsoft.com/hardware/lpl/)
 
 You can find devices and systems by filtering the list or by running a search for a specific product name.
 
+
+> [!IMPORTANT]
+> The Windows Certified Products List only exists on the legacy dashboard, and does not include submissions made through the Windows Hardware Dev Center Dashboard. 
+
+
 ### <span id="To_find_a_product_by_searching"></span><span id="to_find_a_product_by_searching"></span><span id="TO_FIND_A_PRODUCT_BY_SEARCHING"></span>To find a product by searching
 
 To find a product by searching (in this case, Arc Mouse), follow these steps:
@@ -28,12 +33,12 @@ To find a product by searching (in this case, Arc Mouse), follow these steps:
 
 4.  Click the product name to get further details about the product. The list of details includes the product name, company, compatibility status, product type, and certification status.
 
-**Note**  
-Search is limited to **Product Name** and **Company**.
+> [!Note]  
+> Search is limited to **Product Name** and **Company**.
 
-Search will run an AND operation on any word entered in the **Search** box.
+> Search will run an AND operation on any word entered in the **Search** box.
 
-Search treats multiple words enclosed in quotation marks as one search string.
+> Search treats multiple words enclosed in quotation marks as one search string.
 
  
 
@@ -66,10 +71,6 @@ The details page of a product contains links to the Windows Certification Verifi
 To view a Windows Certification Verification Report:
 
 -   On the Details page of a product, click any of the links in the **Verification report** section. The Certification Verification Report will open in PDF format.
-
-### <span id="To_get_listed_on_the_Windows_Certified_Products_List"></span><span id="to_get_listed_on_the_windows_certified_products_list"></span><span id="TO_GET_LISTED_ON_THE_WINDOWS_CERTIFIED_PRODUCTS_LIST"></span>To get listed on the Windows Certified Products List
-
-The only way for vendors to ensure a listing on the Windows Certified Products List is to submit their products to the Hardware Dev Center Dashboard for certification. For more information, see [Hardware Certification Submissions](https://msdn.microsoft.com/library/windows/hardware/br230796.aspx).
 
  
 
