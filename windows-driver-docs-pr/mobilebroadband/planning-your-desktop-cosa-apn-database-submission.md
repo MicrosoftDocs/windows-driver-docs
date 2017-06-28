@@ -43,7 +43,7 @@ The following table describes which tables to see for explanations for each entr
 | Windows 8, Windows 8.1, and versions of Windows 10 before Windows 10, version 1703 | APN database | [APN database only](#apn-database-only) and [APN database and COSA](#apn-database-and-cosa) |
 | Windows 10, version 1703 and later | COSA | [APN database and COSA](#apn-database-and-cosa) and [COSA only](#cosa-only) |
 
-### APN database only
+## APN database-only settings
 
 The following entries in the spreadsheet apply to the APN database only. These entries will be used if you are targeting Windows 8, Windows 8.1, or versions of Windows 10 before Windows 10, version 1703.
 
@@ -59,9 +59,9 @@ The following entries in the spreadsheet apply to the APN database only. These e
 | Connection Information – Connect Flag | A yes or no value describing if the APN is provisioning or purchase. | Required | Possible values: <ul><li>**Y** – if the APN is provisioning or purchase</li><li>**N** – if the APN is not provisioning or purchase</li></ul> <p>If **Connect Flag** entry is **Y**, the **Purchase Flag** entry must be **N**.</p> |
 | Connection Information – Auto-Connect Order | Windows tries connections to the APNs provided by the operator and marked as “auto-connect” in the APN database until it successfully connects to the mobile network. If all auto-connect attempts fail, Windows will show a prompt allowing the user to pick an APN or enter a custom APN. | Optional | If you have more than one access string for an operator, this entry must start with 1. This is needed for Windows to try several APN entries that share either an IMSI range, ICCID range, CDMA provider ID, or CDMA provider name when the user tries to connect. |
 
-### APN database and COSA
+## APN database and desktop COSA settings
 
-The following entries apply to both APN database and COSA. All entries for COSA in this table are supported in Windows 10, version 1703 and later.
+The following entries apply to both APN database and desktop COSA. All entries for COSA in this table are supported in Windows 10, version 1703 and later.
 
 | Entry name | Description | Optional or required | Notes |
 | --- | --- | --- | --- |
@@ -83,9 +83,9 @@ The following entries apply to both APN database and COSA. All entries for COSA 
 | Auth Protocol | Specifies the authentication protocol to be used for activating a Packet Data Protocol (PDP) context. | Optional | Possible values: <ul><li>**NONE** – No authentication protocol is required</li><li>**PAP** – PAP authentication is required.</li><li>**CHAP** – CHAP authentication is required.</li><li>**MsCHAPV2** –MSCHAPv2 is authentication is required.</li></ul> <p>This entry is only supported on Windows 8.1 and versions of Windows 10 before Windows 10, version 1703.</p> |
 | Compression | Specifies if compression will be used at the data link for header and data transfer. | Optional | Possible values: <ul><li>**ENABLE** – Compression is enabled</li><li>**DISABLE** – Compression is not enabled</li></ul> <p>This entry is only supported on Windows 8.1 and versions of Windows 10 before Windows 10, version 1703.</p> |
 
-### COSA only
+## Desktop COSA-only settings
 
-The following entries apply to COSA only. These entries will be used if you are targeting Windows 10, version 1703 and later.
+The following entries apply to desktop COSA only. These entries will be used if you are targeting Windows 10, version 1703 and later.
 
 | Entry name | Description | Optional or required | Notes | Supported Windows versions |
 | --- | --- | --- | --- | --- |
