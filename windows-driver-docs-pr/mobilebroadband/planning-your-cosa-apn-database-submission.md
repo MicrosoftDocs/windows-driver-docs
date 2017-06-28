@@ -1,6 +1,6 @@
 ---
-title: Planning your COSA/APN database submission
-description: Planning your COSA/APN database submission
+title: Planning your desktop COSA/APN database submission
+description: Planning your desktop COSA/APN database submission
 ms.assetid: 7e974914-c3e5-409e-b0bf-28d6885585b3
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -9,13 +9,12 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Planning your COSA/APN database submission
-
-
-Use the sections in this topic when you are planning to add a new APN to the baseline COSA/APN database that ships with Windows, or update an existing one.
+# Planning your desktop COSA/APN database submission
 
 > [!IMPORTANT] 
-> Starting in Windows 10, version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before version 1703 will continue to use the APN database while Windows 10, version 1703 and later use COSA. For a list of frequently asked questions about COSA, see [COSA overview](cosa-overview.md).
+> Starting in Windows 10, version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before version 1703 will continue to use the APN database while Windows 10, version 1703 and later use COSA. For more information about COSA, see [COSA overview](cosa-overview.md).
+
+Use the sections in this topic when you are planning to add a new APN to the baseline COSA/APN database that ships with Windows desktop devices, or update an existing one. If you are submitting for Onecore COSA, see [Planning your Onecore COSA submission](planning-your-onecore-cosa-submission.md).
 
 ## The APN update process
 
@@ -42,7 +41,7 @@ The following table describes which tables to see for explanations for each entr
 | Target Windows version | Applicable profile | Table for explanation |
 | --- | --- | --- |
 | Windows 8, Windows 8.1, and versions of Windows 10 before Windows 10, version 1703 | APN database | [APN database only](#apn-database-only) and [APN database and COSA](#apn-database-and-cosa) |
-| Windows 10, version 1703 and later | COSA | [APN database and COSA](#apn-database-and-cosa) and [COSA only](#cosa-only)
+| Windows 10, version 1703 and later | COSA | [APN database and COSA](#apn-database-and-cosa) and [COSA only](#cosa-only) |
 
 ### APN database only
 
