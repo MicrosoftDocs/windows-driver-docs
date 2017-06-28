@@ -13,7 +13,9 @@ ms.technology: windows-devices
 
 Use the topics in this section to make a submission to Microsoft to either add a new APN to the baseline COSA or APN database that ships with Windows, or update an existing APN:
 
--   [Planning your COSA/APN database submission](planning-your-cosa-apn-database-submission.md)
+-   [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md)
+
+-   [Planning your Onecore COSA submission](planning-your-onecore-cosa-submission.md)
 
 -   [Testing Your COSA/APN database submission](testing-your-cosa-apn-database-submission.md)
 

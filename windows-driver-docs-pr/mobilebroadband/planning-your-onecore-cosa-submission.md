@@ -11,7 +11,7 @@ ms.technology: windows-devices
 
 # Planning your Onecore COSA submission
 
-Use this topic when you are planning to add a new APN to the baseline COSA database that ships with Windows Onecore platform devices, or update an existing one. If you are submitting for desktop COSA, see [Planning your COSA/APN database submission](planning-your-cosa-apn-database-submission.md).
+Use this topic when you are planning to add a new APN to the baseline COSA database that ships with Windows Onecore platform devices, or update an existing one. Onecore COSA is available starting in Windows 10, version 1709. If you are submitting for desktop COSA, see [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
 
 Submitting a new APN or an APN update for Onecore COSA follows the same procedure as desktop COSA, but there are many more settings available for MOs to customize in Onecore COSA than desktop COSA, which focused only on data-only settings. The tables in this topic describe all available settings for Onecore COSA.
 

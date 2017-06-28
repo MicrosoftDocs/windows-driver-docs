@@ -21,7 +21,7 @@ For more information about the submission process for COSA and the APN database,
 
 In Windows 10, version 1703, COSA was available on Windows desktop devices and contained data-only provisioning settings for MOs. Starting in Windows 10, version 1709, COSA is also part of Onecore. This version of COSA for Onecore platforms contains additional settings such as voice call settings, messaging settings, and VoLTE (Voice over LTE) settings.
 
-For more information about the settings in desktop COSA, see the tables in [Planning your COSA/APN database submission](planning-your-cosa-apn-database-submission.md).
+For more information about the settings in desktop COSA, see the tables in [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
 
 For more information about the settings in Onecore COSA, see [Planning your Onecore COSA submission](planning-your-onecore-cosa-submission.md).
 
@@ -36,7 +36,7 @@ For more information about the settings in Onecore COSA, see [Planning your Onec
 
 ### <a href="" id="settings"></a> What are the settings that MOs can specify in COSA?
 
-The settings are largely the same as what MOs configured in apndatabase.xml, with a few exceptions and new additions. For details, see the tables in [Planning your COSA/APN database submission](planning-your-cosa-apn-database-submission.md).
+The settings are largely the same as what MOs configured in apndatabase.xml, with a few exceptions and new additions. For details, see the tables in [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
 
 ### <a href="" id="events"></a> What events trigger the application of new MO settings?
 
