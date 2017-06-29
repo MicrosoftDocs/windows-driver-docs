@@ -45,49 +45,49 @@ The following table describes which tables to see for explanations for each entr
 
 ## APN database-only settings
 
-The following entries in the spreadsheet apply to the APN database only. These entries will be used if you are targeting Windows 8, Windows 8.1, or versions of Windows 10 before Windows 10, version 1703.
+The following settings in the spreadsheet apply to the APN database only. These entries will be used if you are targeting Windows 8, Windows 8.1, or versions of Windows 10 before Windows 10, version 1703.
 
-| Entry name | Description | Optional or required | Notes |
+| Setting name | Description | Optional or required | Notes |
 | --- | --- | --- | --- |
 | CDMA Provider ID | A 5-digit number that should match the CDMA provider ID (also called SID) reported by your device. | Optional |  |
-| CDMA Provider Name | A string of no more than 36 characters that should match the CDMA provider name reported by your device. This entry is case sensitive. | Optional |  |
+| CDMA Provider Name | A string of no more than 36 characters that should match the CDMA provider name reported by your device. This setting is case sensitive. | Optional |  |
 | Cert Issuer Name | The Cert Issuer Name of your signing certificate used for operator XML provisioning. | Optional | If specified, you must also specify the Cert Subject Name and Carrier GUID. |
 | Cert Subject Name | The Cert Subject Name of your signing certificate used for operator XML provisioning. | Optional | If specified, you must also specify the Cert Issuer Name and Carrier GUID. |
 | Carrier GUID | The self-assigned GUID that is used in future operator XML provisioning packages. | Optional | If specified, you must also specify the Cert Subject Name and Cert Issuer Name. |
-| GSM Provider Name | A string of no more than 36 characters that should match the GSM provider name reported by your device. This entry is case sensitive. | Optional | This entry is only supported on Windows 8.1 and versions of Windows 10 before Windows 10, version 1703. |
-| Connection Information – Purchase Flag | A yes or no value describing if the APN is provisioning or purchase. | Required | Possible values: <ul><li>**Y** – if the APN is provisioning or purchase</li><li>**N** – if the APN is not provisioning or purchase</li></ul> <p>If **Purchase Flag** entry is **Y**, the **Connect Flag** entry must be **N**.</p> |
-| Connection Information – Connect Flag | A yes or no value describing if the APN is provisioning or purchase. | Required | Possible values: <ul><li>**Y** – if the APN is provisioning or purchase</li><li>**N** – if the APN is not provisioning or purchase</li></ul> <p>If **Connect Flag** entry is **Y**, the **Purchase Flag** entry must be **N**.</p> |
-| Connection Information – Auto-Connect Order | Windows tries connections to the APNs provided by the operator and marked as “auto-connect” in the APN database until it successfully connects to the mobile network. If all auto-connect attempts fail, Windows will show a prompt allowing the user to pick an APN or enter a custom APN. | Optional | If you have more than one access string for an operator, this entry must start with 1. This is needed for Windows to try several APN entries that share either an IMSI range, ICCID range, CDMA provider ID, or CDMA provider name when the user tries to connect. |
+| GSM Provider Name | A string of no more than 36 characters that should match the GSM provider name reported by your device. This setting is case sensitive. | Optional | This setting is only supported on Windows 8.1 and versions of Windows 10 before Windows 10, version 1703. |
+| Connection Information – Purchase Flag | A yes or no value describing if the APN is provisioning or purchase. | Required | Possible values: <ul><li>**Y** – if the APN is provisioning or purchase</li><li>**N** – if the APN is not provisioning or purchase</li></ul> <p>If **Purchase Flag** setting is **Y**, the **Connect Flag** setting must be **N**.</p> |
+| Connection Information – Connect Flag | A yes or no value describing if the APN is provisioning or purchase. | Required | Possible values: <ul><li>**Y** – if the APN is provisioning or purchase</li><li>**N** – if the APN is not provisioning or purchase</li></ul> <p>If **Connect Flag** setting is **Y**, the **Purchase Flag** setting must be **N**.</p> |
+| Connection Information – Auto-Connect Order | Windows tries connections to the APNs provided by the operator and marked as “auto-connect” in the APN database until it successfully connects to the mobile network. If all auto-connect attempts fail, Windows will show a prompt allowing the user to pick an APN or enter a custom APN. | Optional | If you have more than one access string for an operator, this setting must start with 1. This is needed for Windows to try several APN entries that share either an IMSI range, ICCID range, CDMA provider ID, or CDMA provider name when the user tries to connect. |
 
 ## APN database and desktop COSA settings
 
 The following entries apply to both APN database and desktop COSA. All entries for COSA in this table are supported in Windows 10, version 1703 and later.
 
-| Entry name | Description | Optional or required | Notes |
+| Setting name | Description | Optional or required | Notes |
 | --- | --- | --- | --- |
 | Update Type | Describes whether the APN Database entry is new or modified. | Required | Possible values: <ul><li>**Add** – A new entry</li><li>**Change** – Update an existing entry</li><li>**Keep** – Do not change the entry</li><li>**Delete** – Delete the entry</li></ul> |
 | Country/Region | The country or region for the APN entry. | Required | We might change this entry to match how Windows refers to a particular country or region. |
 | Operator | The name of the operator. You do not need to include the country or region in this field. | Required | Ensure you use the same spelling and capitalization each time you submit an update for your APN entries. |
 | MCC | A 3-digit MCC value used for GSM IMSI submissions. | Required for GSM providers |  |
 | MNC | A 2- or 3-digit MNC value used for GSM IMSI submissions. | Required for GSM providers |  |
-| IMSI Range - Start | A 15-digit number that includes the MCC+MNC at the start of the number. | Optional | The number should end in 00. <p>If this entry and the **IMSI Range - End** entry is left blank but the **MCC** and **MNC** entries are specified, the entire MCC+MNC range is covered.</p> |
-| IMSI Range - End | A 15-digit number that includes the MCC+MNC at the start of the number. | Optional | The number should end in 99. <p>If this entry and the **IMSI Range - Start** entry is left blank but the **MCC** and **MNC** entries are specified, the entire MCC+MNC range is covered.</p> |
+| IMSI Range - Start | A 15-digit number that includes the MCC+MNC at the start of the number. | Optional | The number should end in 00. <p>If this setting and the **IMSI Range - End** setting is left blank but the **MCC** and **MNC** entries are specified, the entire MCC+MNC range is covered.</p> |
+| IMSI Range - End | A 15-digit number that includes the MCC+MNC at the start of the number. | Optional | The number should end in 99. <p>If this setting and the **IMSI Range - Start** setting is left blank but the **MCC** and **MNC** entries are specified, the entire MCC+MNC range is covered.</p> |
 | ICCID Range - Start | A 19- or 20-digit number that starts with 89 (the ICCID issuer identifier number). | Optional | The number should end in 00. |
 | ICCID Range - End | A 19- or 20-digit number that starts with 89 (the ICCID issuer identifier number). | Optional | The number should end in 99. |
 | Account Experience URL | Used by Windows Connection Manager if the user does not have an active plan and tries to connect to your network. | Optional | Helps improve the plan acquisition experience. |
 | Connection Information – Friendly Name | A name for this APN entry that is understandable and meaningful to subscribers. | Optional | Appears in the Windows Connection Manager in cases where Windows cannot automatically connect to the network. |
 | Connection Information – Access String | For GSM networks, this is an APN such as data.contoso.com. For CDMA networks, this is an access string that includes a special dial code such as #777 or an Network Access Identifier such as example@contoso.com. | Required |  |
 | IP Type | A string specifying the network protocol of the connection. | Optional | Available values are: <ul><li>IPv4</li><li>IPv6</li><li>IPv4v6</li></ul> <p>If left blank, defaults to "IPv4."</p> |
-| Connection Information – User Name | The user name used to connect to your APN. This entry is case sensitive. | Optional |  |
-| Connection Information - Password | The password used to connect to your APN. This entry is case sensitive. | Optional |  |
-| Auth Protocol | Specifies the authentication protocol to be used for activating a Packet Data Protocol (PDP) context. | Optional | Possible values: <ul><li>**NONE** – No authentication protocol is required</li><li>**PAP** – PAP authentication is required.</li><li>**CHAP** – CHAP authentication is required.</li><li>**MsCHAPV2** –MSCHAPv2 is authentication is required.</li></ul> <p>This entry is only supported on Windows 8.1 and versions of Windows 10 before Windows 10, version 1703.</p> |
-| Compression | Specifies if compression will be used at the data link for header and data transfer. | Optional | Possible values: <ul><li>**ENABLE** – Compression is enabled</li><li>**DISABLE** – Compression is not enabled</li></ul> <p>This entry is only supported on Windows 8.1 and versions of Windows 10 before Windows 10, version 1703.</p> |
+| Connection Information – User Name | The user name used to connect to your APN. This setting is case sensitive. | Optional |  |
+| Connection Information - Password | The password used to connect to your APN. This setting is case sensitive. | Optional |  |
+| Auth Protocol | Specifies the authentication protocol to be used for activating a Packet Data Protocol (PDP) context. | Optional | Possible values: <ul><li>**NONE** – No authentication protocol is required</li><li>**PAP** – PAP authentication is required.</li><li>**CHAP** – CHAP authentication is required.</li><li>**MsCHAPV2** –MSCHAPv2 is authentication is required.</li></ul> <p>This setting is only supported on Windows 8.1 and versions of Windows 10 before Windows 10, version 1703.</p> |
+| Compression | Specifies if compression will be used at the data link for header and data transfer. | Optional | Possible values: <ul><li>**ENABLE** – Compression is enabled</li><li>**DISABLE** – Compression is not enabled</li></ul> <p>This setting is only supported on Windows 8.1 and versions of Windows 10 before Windows 10, version 1703.</p> |
 
 ## Desktop COSA-only settings
 
-The following entries apply to desktop COSA only. These entries will be used if you are targeting Windows 10, version 1703 and later.
+The following settings apply to desktop COSA only. These entries will be used if you are targeting Windows 10, version 1703 and later.
 
-| Entry name | Description | Optional or required | Notes | Supported Windows versions |
+| Setting name | Description | Optional or required | Notes | Supported Windows versions |
 | --- | --- | --- | --- | --- |
 | Data Marketplace support | A true/false string describing whether the profile is supported by the data marketplace. | Optional | If left blank, defaults to "false." | Windows 10, version 1703 and later |
 | SPN | An identifier string for the Service Provider Name (SPN) | Optional | Helps to identify the MO/MVNO's network. If left blank, defaults to empty string and does nothing. | Windows 10, version 1703 and later |
