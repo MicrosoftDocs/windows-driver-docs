@@ -1,14 +1,14 @@
 #Run the Tests
 ##Description of the Tests and Configuration File
 The data-driven SysFund tests live at <unzipped EWDK root>\Program Files\Windows Kits\10\Testing\Tests\Additional Tests\x64\DevFund\DataDriven.  The data-driven test suite consists of the following files:
-    •	Two test DLL’s which use the XML configuration file WDTFTest.xml:
-        o	Sysfund_PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven.dll
-        o	Sysfund_Sleep_With_IO_BeforeAndAfter_DataDriven.dll
-    •	Two utility DLL’s which use the XML configuration file WDTFTest.xml:
-        o	Utility_DeviceStatusCheck_DataDriven.dll
-        o	Utility_EnableDisableDriverVerifier_DataDriven.dll
-    •	The XML configuration file:
-        o	WDTFTest.xml
+    -	Two test DLL’s which use the XML configuration file WDTFTest.xml:
+        *	Sysfund_PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven.dll
+        *	Sysfund_Sleep_With_IO_BeforeAndAfter_DataDriven.dll
+    -	Two utility DLL’s which use the XML configuration file WDTFTest.xml:
+        *	Utility_DeviceStatusCheck_DataDriven.dll
+        *	Utility_EnableDisableDriverVerifier_DataDriven.dll
+    -	The XML configuration file:
+        *	WDTFTest.xml
 
 **System - PNP (disable and enable) with IO Before and After (Reliability)**
 Binary: Sysfund_PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven.dll
