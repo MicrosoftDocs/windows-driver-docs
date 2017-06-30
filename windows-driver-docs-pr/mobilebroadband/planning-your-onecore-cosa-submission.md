@@ -21,20 +21,20 @@ Submitting a new APN or an APN update for Onecore COSA follows the same procedur
 
 | Setting name | Description | Optional or required | Notes |
 | --- | --- | --- | --- |
-| BrandingFlags | A string that modifies the branding string and logo, if available, in the calling experience. | | |
+| Branding Flags | A string that modifies the branding string and logo, if available, in the calling experience. | | |
 
 ### PhoneSettings
 
 | Setting name | Description | Optional or required | Notes |
 | --- | --- | --- | --- |
-| AssistedDialSetting | The default state for international assist. | | |
-| ContinuousDTMFEnabled | Enables DTMF tone duration for as long as the user presses a dialpad key. | | When disabled, a fixed length tone is emitted regardless of how long the user presses the dialpad key. |
-| CallIDMatch | Sets the global fallback for the number of digits that the OS will try to match against a contact for Caller ID. | | |
-| ShowLongTones | Shows the Long Tones UI | | Default is 0 on GSM and 1 for CDMA devices. |
-| HideCallForwarding | Hides the Call Forwarding UI. | | Default is 0, always shown. |
-| UseOKForUssdDialogs | USSD Diaglog Button text. |  | Default behavior shows "close", 1 uses "OK". |
-| VoLTEAudioQualityString | VoLTE call audio quality indicator text. | | Minimum length = 0, maximum length = 10. |
-| DisableVoicemailPhoneNumberDisplay | Disables the display of the phone number below the Voicemail label in call progress dialog. | | Default is false. |
+| Assisted Dial Setting | The default state for international assist. | | |
+| Continuous DTMF Enabled | Enables DTMF tone duration for as long as the user presses a dialpad key. | | When disabled, a fixed length tone is emitted regardless of how long the user presses the dialpad key. |
+| Call ID Match | Sets the global fallback for the number of digits that the OS will try to match against a contact for Caller ID. | | |
+| Show Long Tones | Shows the Long Tones UI | | Default is 0 on GSM and 1 for CDMA devices. |
+| Hide Call Forwarding | Hides the Call Forwarding UI. | | Default is 0, always shown. |
+| Use OK For Ussd Dialogs | USSD Diaglog Button text. |  | Default behavior shows "close", 1 shows "OK". |
+| VoLTE Audio Quality String | VoLTE call audio quality indicator text. | | Minimum length = 0, maximum length = 10. |
+| Disable Voicemail Phone Number Display | Disables the display of the phone number below the Voicemail label in call progress dialog. | | Default is false. |
 
 ### CallIDMatchOverrides
 
