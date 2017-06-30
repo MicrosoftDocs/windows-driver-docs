@@ -675,6 +675,68 @@ To use the Device Guard Readiness Tool to evaluate complete the following steps.
 <tr class="odd">
 <td align="left"><p>Unsupported Relocs</p></td>
 <td align="left"><p>In Windows 10 version 1507 through version 1607, because of the use of Address Space Layout Randomization (ASLR) an issue can arise with address alignment and memory relocation.  The operating system needs to relocate the address from where the linker set its default base address to the actual location that ASLR assigned. This relocation cannot straddle a page boundary.  For example, consider a 64-bit address value that starts at offset 0x3FFC in a page. It’s address value overlaps over to the next page at offset 0x0003. This type of overlapping relocs is not supported prior to Windows 10 version 1703.</p>
+<p>This situation can occur when a global struct type variable initializer has a misaligned pointer to another global, laid out in such a way that the linker cannot move the variable to avoid the straddling relocation. The linker will attempt to move the variable, but there are situations where it may not be able to do so, for example with large misaligned structs or large arrays of misaligned structs. Where appropriate, modules should be assembled using the [/Gy (COMDAT)](https://docs.microsoft.com/en-us/cpp/build/reference/gy-enable-function-level-linking) option to allow the linker to align module code as much as possible.</p>
+
+
+
+```
+#include <pshpack1.h>
+
+typedef struct _BAD_STRUCT {
+      USHORT Value;
+      CONST CHAR *String;
+} BAD_STRUCT, * PBAD_STRUCT;
+
+#include <poppack.h>
+
+#define BAD_INITIALIZER0 { 0, "BAD_STRING" },
+#define BAD_INITIALIZER1 \
+      BAD_INITIALIZER0      \
+      BAD_INITIALIZER0      \
+      BAD_INITIALIZER0      \
+      BAD_INITIALIZER0      \
+      BAD_INITIALIZER0      \
+      BAD_INITIALIZER0      \
+      BAD_INITIALIZER0      \
+      BAD_INITIALIZER0      
+
+#define BAD_INITIALIZER2 \
+      BAD_INITIALIZER1      \
+      BAD_INITIALIZER1      \
+      BAD_INITIALIZER1      \
+      BAD_INITIALIZER1      \
+      BAD_INITIALIZER1      \
+      BAD_INITIALIZER1      \
+      BAD_INITIALIZER1      \
+      BAD_INITIALIZER1      
+
+#define BAD_INITIALIZER3 \
+      BAD_INITIALIZER2      \
+      BAD_INITIALIZER2      \
+      BAD_INITIALIZER2      \
+      BAD_INITIALIZER2      \
+      BAD_INITIALIZER2      \
+      BAD_INITIALIZER2      \
+      BAD_INITIALIZER2      \
+      BAD_INITIALIZER2      
+
+#define BAD_INITIALIZER4 \
+      BAD_INITIALIZER3      \
+      BAD_INITIALIZER3      \
+      BAD_INITIALIZER3      \
+      BAD_INITIALIZER3      \
+      BAD_INITIALIZER3      \
+      BAD_INITIALIZER3      \
+      BAD_INITIALIZER3      \
+      BAD_INITIALIZER3      
+
+BAD_STRUCT MayHaveStraddleRelocations[4096] = { // as a global variable
+      BAD_INITIALIZER4
+};
+
+```
+<p>There are other situations involving the use of assembler code, where this issue can also occur.</p>
+
 </td>
 </tr>
 
@@ -733,7 +795,7 @@ Follow these steps to validate that the code you are shipping has includes commo
 
 3. Use the MSI file to install BinScope on the target test machine that contains the compiled code you wish to validate.
 
-4. Open a command prompt window and execute the following command to examine a compiled driver binary. Update the path to point to your complied driver .sys file
+4. Open a command prompt window and execute the following command to examine a compiled driver binary. Update the path to point to your complied driver .sys file.
 
 ```
 C:\Program Files\Microsoft BinScope 2014>binscope "C:\Samples\KMDF_Echo_Driver\echo.sys" /verbose /html /logfile c:\mylog.htm 
