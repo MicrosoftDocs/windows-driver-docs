@@ -44,13 +44,15 @@ HKR, OSR, "OperatingMode",, "Default" ; FLG_ADDREG_TYPE_SZ
 HKR, OSR, "OperatingParams",, "None" ; FLG_ADDREG_TYPE_SZ
 ```
 
-In [`osrfx2_DCHU_extension.inx`], Contoso overrides the **OperatingParams** registry key and adds **OperatingExceptions**:
+In [`osrfx2_DCHU_extension.inx`], Contoso overrides the **OperatingParams** registry value and adds **OperatingExceptions**:
 
 ```
 [OsrUsbFx2Extension_AddReg]
 HKR, OSR, "OperatingParams",, "-Extended"
 HKR, OSR, "OperatingExceptions",, "x86"	
 ```
+
+Note that extensions are always processed after the primary INF in no definite order. If a primary INF is updated to a newer version, then the extensions will still be re-applied after the new primary INF is installed.
 
 ## Use a component to install a service from a driver package
 

@@ -24,52 +24,57 @@ Debugging over a USB 3.0 cable requires the following hardware:
 ## <span id="setting_up_the_computer_usb3_manual"></span><span id="SETTING_UP_THE_COMPUTER_USB3_MANUAL"></span>Setting Up the Target Computer
 
 
-On the target computer, launch the UsbView tool. The UsbView tool is included in Debugging Tools for Windows.
-In UsbView, locate all of the xHCI host controllers.
-In UsbView, expand the nodes of the xHCI host controllers. Look for an indication that a port on the host controller supports debugging.
+1.  On the target computer, launch the UsbView tool. The UsbView tool is included in Debugging Tools for Windows.
+2.  In UsbView, locate all of the xHCI host controllers.
+3.  In UsbView, expand the nodes of the xHCI host controllers. Look for an indication that a port on the host controller supports debugging.
 
-```
-[Port1] 
+    ```
+    [Port1] 
 
-Is Port User Connectable:         yes
-Is Port Debug Capable:            yes
-Companion Port Number:            3
-Companion Hub Symbolic Link Name: USB#ROOT_HUB30#5&32bab638&0&0#{...}
-Protocols Supported:
- USB 1.1:                         no
- USB 2.0:                         no
- USB 3.0:                         yes
-```
+    Is Port User Connectable:         yes
+    Is Port Debug Capable:            yes
+    Companion Port Number:            3
+    Companion Hub Symbolic Link Name: USB#ROOT_HUB30#5&32bab638&0&0#{...}
+    Protocols Supported:
+     USB 1.1:                         no
+     USB 2.0:                         no
+     USB 3.0:                         yes
+    ```
 
-Make a note of the bus, device, and function numbers for the xHCI controller that you intend to use for debugging. UsbView displays these number. In the following example, the bus number is 48, the device number is 0, and the function number is 0.
+4.  Make a note of the bus, device, and function numbers for the xHCI controller that you intend to use for debugging. UsbView displays these number. In the following example, the bus number is 48, the device number is 0, and the function number is 0.
 
-```
-USB xHCI Compliant Host Controller
-...
-DriverKey: {36fc9e60-c465-11cf-8056-444553540000}\0020
-...
-Bus.Device.Function (in decimal): 48.0.0
-```
+    ```
+    USB xHCI Compliant Host Controller
+    ...
+    DriverKey: {36fc9e60-c465-11cf-8056-444553540000}\0020
+    ...
+    Bus.Device.Function (in decimal): 48.0.0
+    ```
 
-After you have identified an xHCI controller that supports debugging, the next step is to locate the physical USB connector that is associated with a port on the xHCI controller. To find the physical connector, plug any USB 3.0 device into any USB connector on the target computer. Refresh UsbView to see where your device is located. If UsbView shows your device connected to your chosen xHCI host controller, then you have found a physical USB connector that you can use for USB 3.0 debugging.
-On the target computer, open a Command Prompt window as Administrator, and enter these commands:
+5.  After you have identified an xHCI controller that supports debugging, the next step is to locate the physical USB connector that is associated with a port on the xHCI controller. To find the physical connector, plug any USB 3.0 device into any USB connector on the target computer. Refresh UsbView to see where your device is located. If UsbView shows your device connected to your chosen xHCI host controller, then you have found a physical USB connector that you can use for USB 3.0 debugging.
 
-**bcdedit /debug on**
-**bcdedit /dbgsettings usb targetname:***TargetName*
-where *TargetName* is a name that you create for the target computer. Note that *TargetName* does not have to be the official name of the target computer; it can be any string that you create as long as it meets these restrictions:
+6.  On the target computer, open a Command Prompt window as Administrator, and enter these commands:
 
--   The maximum length of the string is 24 characters.
--   The only characters in the string are the hyphen (-), the underscore(\_), the digits 0 through 9, and the letters A through Z (upper or lower case).
+    -   **bcdedit /debug on**
+    -   **bcdedit /dbgsettings usb targetname:***TargetName*
 
-If you have more than one USB host controller on the target computer, enter this command:
+    where *TargetName* is a name that you create for the target computer. Note that *TargetName* does not have to be the official name of the target computer; it can be any string that you create as long as it meets these restrictions:
 
-**bcdedit /set "{dbgsettings}" busparams** *b.d.f*
-where *b*, *d*, and *f* are the bus, device, and function numbers for the USB host controller that you intend to use for debugging. The bus, device, and function numbers must be in decimal format.
+    -   The maximum length of the string is 24 characters.
+    -   The only characters in the string are the hyphen (-), the underscore(\_), the digits 0 through 9, and the letters A through Z (upper or lower case).
 
-Example:
+7.  If you have more than one USB host controller on the target computer, enter this command:
 
-**bcdedit /set "{dbgsettings}" busparams 48.0.0**
-Reboot the target computer.
+    **bcdedit /set "{dbgsettings}" busparams** *b.d.f*
+
+    where *b*, *d*, and *f* are the bus, device, and function numbers for the USB host controller that you intend to use for debugging. The bus, device, and function numbers must be in decimal format.
+
+    Example:
+
+    **bcdedit /set "{dbgsettings}" busparams 48.0.0**
+
+8.  Reboot the target computer.
+
 ## <span id="Starting_a_Debugging_Session_for_the_First_Time"></span><span id="starting_a_debugging_session_for_the_first_time"></span><span id="STARTING_A_DEBUGGING_SESSION_FOR_THE_FIRST_TIME"></span>Starting a Debugging Session for the First Time
 
 
