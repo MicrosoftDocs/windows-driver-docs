@@ -52,6 +52,8 @@ HKR, OSR, "OperatingParams",, "-Extended"
 HKR, OSR, "OperatingExceptions",, "x86"	
 ```
 
+Note that extensions are always processed after the primary INF in no definite order. If a primary INF is updated to a newer version, then the extensions will still be re-applied after the new primary INF is installed.
+
 ## Use a component to install a service from a driver package
 
 Fabrikam requires the LEDs on the OSR board to be treated as a child device of the main board.  They control these lights using a Win32 service.
