@@ -1,3 +1,4 @@
+#Configure the Machine for Testing
 The steps required to install WDTF and TAEF, copy the data-driven tests, configure the machine, and run the tests are outlined below.
 
 **Step 1**: Obtain the packages and files from the latest [EWDK] (https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/installing-the-enterprise-wdk) by accepting the licensing terms and saving the EWDK zip file to the machine on which the tests will run.  Unzip the EWDK.
