@@ -17,14 +17,6 @@ For more information about the older APN database, see [APN database overview](a
 
 For more information about the submission process for COSA and the APN database, see [COSA/APN database submission](cosa-apn-database-submission.md).
 
-## Differences between Windows desktop COSA and Onecore COSA
-
-In Windows 10, version 1703, COSA was available on Windows desktop devices and contained data-only provisioning settings for MOs. Starting in Windows 10, version 1709, COSA is also part of Onecore. This version of COSA for Onecore platforms contains additional settings such as voice call settings, messaging settings, and VoLTE (Voice over LTE) settings.
-
-For more information about the settings in desktop COSA, see the tables in [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
-
-For more information about the settings in Onecore COSA, see [Planning your Onecore COSA submission](planning-your-onecore-cosa-submission.md).
-
 ## FAQ
 
 - [What are the settings that MOs can specify in COSA?](#settings)
