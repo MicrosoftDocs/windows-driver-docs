@@ -743,8 +743,8 @@ BAD_STRUCT MayHaveStraddleRelocations[4096] = { // as a global variable
 <tr class="even">
 <td align="left"><p>IAT in Executable Section</p></td>
 <td align="left"><p>The import address table (IAT), should not be an executable section of memory.</p>
-<p>This situation occurs when the IAT, is located in a Read and Execute (RX) only section of memory. This means that the OS will not be able to write to the IAT to set the correct addresses for where the referenced DLL. </p>
-<p> This can occur when a call was made to a function that must be made from inside the initialization function (for example, DriverEntry() or DllInitialize()). To fix this, move the call inside of the initialization function.</p>
+<p>This issue occurs when the IAT, is located in a Read and Execute (RX) only section of memory. This means that the OS will not be able to write to the IAT to set the correct addresses for where the referenced DLL. </p>
+<p> One way that this can occur is when using the [/MERGE (Combine Sections)](https://docs.microsoft.com/en-us/cpp/build/reference/merge-combine-sections) option in code linking. For example if .rdata (Read-only initialized data) is merged with .text data (Executable code), it is possible that the IAT may end up in an executable section of memory.  </p>
 </td>
 </tr>
 
