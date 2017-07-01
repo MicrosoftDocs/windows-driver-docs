@@ -18,6 +18,7 @@ Submitting a new APN or an APN update for Onecore COSA follows the same procedur
 In this section:
 
 - [Onecore COSA calling settings](onecore-cosa-calling-settings.md)
+- [Onecore COSA messaging settings](onecore-cosa-messaging-settings.md)
 
 **TBD MOVE THIS TO COSA OVERVIEW**
 
