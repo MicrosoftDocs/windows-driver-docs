@@ -726,3 +726,6 @@
 ### [Troubleshooting the metadata authoring wizards](troubleshooting.md)
 ### [XML reference](xml-reference.md)
 ### [Additional resources](additional-resources.md)
+# [Data-Driven System Fundamentals Tests](data-driven-system-fundamentals-tests.md)
+## [Configure the Machine for Testing](configure-the-machine-for-testing.md)
+## [Run the Tests](run-the-tests.md)
