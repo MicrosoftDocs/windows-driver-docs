@@ -38,7 +38,8 @@ Include=netvwifibus.inf
 Needs=VWiFiBus.PnPFilterRegistration.HW
 ```
 
-**Important** For Windows 10, the section [VWiFiBus.PnPFilterRegistration] was renamed to [VWiFiBus.PnPFilterRegistration.HW], as reflected above.
+> [!IMPORTANT]
+> Starting in Windows 10, the **VWiFiBus.PnPFilterRegistration** entry has been renamed to **VWiFiBus.PnPFilterRegistration.HW**.
 
 For more information about the Ndi key, see [Creating the Ndi Key](add-registry-sections-in-a-network-inf-file.md#ddk-creating-the-ndi-key-ng).
 
