@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x12B FAULTY\_HARDWARE\_CORRUPTED\_PAGE
-description: The FAULTY\_HARDWARE\_CORRUPTED\_PAGE bug check has a value of 0x00000128. This bug check indicates that a single-bit error was found in this page. This is a hardware memory error.
+description: The FAULTY\_HARDWARE\_CORRUPTED\_PAGE bug check has a value of 0x0000012B. This bug check indicates that a single-bit error was found in this page. This is a hardware memory error.
 ms.assetid: caa57d76-946f-4394-bfcf-1dbf3813a55b
 keywords: ["Bug Check 0x12B FAULTY_HARDWARE_CORRUPTED_PAGE", "FAULTY_HARDWARE_CORRUPTED_PAGE"]
 ms.author: windowsdriverdev
@@ -19,7 +19,7 @@ api_type:
 # Bug Check 0x12B: FAULTY\_HARDWARE\_CORRUPTED\_PAGE
 
 
-The FAULTY\_HARDWARE\_CORRUPTED\_PAGE bug check has a value of 0x00000128. This bug check indicates that a single-bit error was found in this page. This is a hardware memory error.
+The FAULTY\_HARDWARE\_CORRUPTED\_PAGE bug check has a value of 0x0000012B. This bug check indicates that a single-bit error was found in this page. This is a hardware memory error.
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
