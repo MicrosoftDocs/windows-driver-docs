@@ -6,7 +6,9 @@ An Audio Module	is a distinct piece of audio processing logic performing a relat
 
 Starting in Windows 10, release 1703, there are both  APIs and DDIs to support communication from  Universal Windows Platform (UWP) apps and kernel mode device drivers.
 
-This topic provides information on Implementing Audio Module Communication in the kernel device driver. For information on creating an UWP Hardware Support Application (HSA), see [Hardware access for Universal Windows Platform apps](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-access-for-universal-windows-platform-apps).
+This topic provides information on Implementing Audio Module Communication in the kernel device driver. 
+
+For information on how to send commands and receive change notifications from audio device modules using a UWP app, see [Configure and query audio device modules](https://msdn.microsoft.com/windows/hardware/drivers/audio/configure-and-query-audiodevicemodules).
 
 # Why Use Audio Modules?
 
