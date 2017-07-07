@@ -1,14 +1,25 @@
+---
+title: Implementing Audio Module Communication
+description: An Audio Module is a distinct piece of audio processing logic performing a relatively atomic function.
+ms.author: windowsdriverdev
+ms.date: 07/07/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+---
+
 Implementing Audio Module Communication
 ========================================================================================
-# Overview
 
 An Audio Module	is a distinct piece of audio processing logic performing a relatively atomic function. An audio module may reside in the audio driver or in audio DSP. An example audio module would be DSP-based audio processing.
 
 Starting in Windows 10, release 1703, there are both  APIs and DDIs to support communication from  Universal Windows Platform (UWP) apps and kernel mode device drivers.
 
-This topic provides information on Implementing Audio Module Communication in the kernel device driver. For information on creating an UWP Hardware Support Application (HSA), see [Hardware access for Universal Windows Platform apps](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-access-for-universal-windows-platform-apps).
+This topic provides information on Implementing Audio Module Communication in the kernel device driver. 
 
-# Why Use Audio Modules?
+For information on how to send commands and receive change notifications from audio device modules using a UWP app, see [Configure and query audio device modules](https://docs.microsoft.com/windows-hardware/drivers/audio/configure-and-query-audiodevicemodules).
+
+## Why Use Audio Modules?
 
 OEMs typically bundle a configuration application on their system that allows the customer to control aspects of this audio system and tune it to their preference. The audio subsystem can contain various components such as on-host audio processing objects, hardware DSP processing, and specialized hardware such as a smart amp (all in addition to the audio codec itself). In most cases these components are created and sold by different vendors. Historically, IHVs have created their own private APIs to integrate with one another and send information between the individual components. Existing WIN32 configuration applications then would leverage these private APIs.
 
