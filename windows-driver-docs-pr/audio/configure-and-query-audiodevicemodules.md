@@ -1,6 +1,5 @@
 ---
-author: drewbat
-Description: This article shows how to send commands and recieve change notifications from audio device modules. from a Universal Windows Platform (UWP) app.
+Description: This article shows how to send commands and receive change notifications from audio device modules. from a Universal Windows Platform (UWP) app.
 ms.assetid: AA053196-F331-4CBE-B032-4E9CBEAC699C
 title: Configure and query audio device modules
 label: Configure and query audio device modules
