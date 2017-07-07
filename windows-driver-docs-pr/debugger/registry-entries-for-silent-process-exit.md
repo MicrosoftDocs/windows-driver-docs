@@ -78,7 +78,7 @@ You can specify a monitor process by entering a process name, along with command
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | %e       | ID of the exiting process. This is the monitored process that exited silently.                                                                                                                               |
 | %i       | ID of the initiating process. In the case of self termination, this is the same as the exiting process. In the case of cross-process termination, this is the ID of the process that caused the termination. |
-| %t       | ID of the initiating thread. This is the tread that caused the termination.                                                                                                                                  |
+| %t       | ID of the initiating thread. This is the thread that caused the termination.                                                                                                                                  |
 | %c       | The status code passed to **ExitThread** or **TerminateThread** .                                                                                                                                            |
 
  
