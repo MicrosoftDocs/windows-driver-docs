@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Device Manager Problem Codes
 
 
-The Device Manager marks a device with a yellow exclamation mark (!) when the device has a problem. The problem codes are in the form CM\_PROB\_*XXX* and are defined in the header file cfg.h. The most important are explained here, together with their mapping to the [Device Node Status Flags](device-node-status-flags.md).
+The Device Manager marks a device with a yellow exclamation mark (!) when the device has a problem. The problem codes are in the form CM\_PROB\_*XXX* and are defined in the header file cfg.h. The most important are explained here, together with their mapping to the [Device Node Status Flags](device-node-status-flags.md). For a more comprehensive list, please see [Device Manager Error Messages](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/device-manager-error-messages).
 
 <span id="Code_1__CM_PROB_NOT_CONFIGURED_"></span><span id="code_1__cm_prob_not_configured_"></span><span id="CODE_1__CM_PROB_NOT_CONFIGURED_"></span>**Code 1 (CM\_PROB\_NOT\_CONFIGURED)**  
 Indicates that the device is not installed and was not installed previously. (Corresponds to DNF\_NOT\_CONFIGURED.)
