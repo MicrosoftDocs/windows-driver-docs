@@ -65,13 +65,13 @@ Creating secure drivers requires the cooperation of the system architect (consci
 
  Drivers live in the windows kernel, and having an issue when executing in kernel exposes the entire operating system. If any other option is available, it likley will be lower cost and have less associated risk than a kernel driver.
 
-For more information about the built in Windows drivers see [Do you need to write a driver?](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/do-you-need-to-write-a-driver-)
+For more information about the built in Windows drivers, see [Do you need to write a driver?](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/do-you-need-to-write-a-driver-).
 
-For information on if you can uses a safter user mode framework driver (UMDF), see [Choosing a driver model](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/choosing-a-driver-model)
+For information on if you can use the lower risk user mode framework driver (UMDF), see [Choosing a driver model](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/choosing-a-driver-model).
 
-For information on using background tasks, see  [Support your app with background tasks](https://docs.microsoft.com/windows/uwp/launch-resume/support-your-app-with-background-tasks)
+For information on using background tasks, see  [Support your app with background tasks](https://docs.microsoft.com/windows/uwp/launch-resume/support-your-app-with-background-tasks).
 
-For information on Windows Services, see [Services](https://msdn.microsoft.com/en-us/library/windows/desktop/ms685141(v=vs.85).aspx)
+For information on Windows Services, see [Services](https://msdn.microsoft.com/en-us/library/windows/desktop/ms685141(v=vs.85).aspx).
 
 
 ## <span id="controlsoftwareonly"></span>Control access to software only drivers
@@ -80,7 +80,7 @@ For information on Windows Services, see [Services](https://msdn.microsoft.com/e
 
 Software only kernel drivers may not use PnP to become associated with specific hardware IDs. Software only kernel drivers contain addtional risk and must be limited to run on specific hardware.
 
-Code signed by a trusted SPC or WHQL signature must not facilitate bypass of Windows Code Integrity and security technologies.  Before code is signed by a trusted SPC or WHQL signature, first ensure it complies with guidance from both (Device.DevFund.Reliability.BasicSecurity)[https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1703/device-devfund#device.devfund.reliability] and Creating Reliable Kernel-Mode Drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/creating-reliable-kernel-mode-drivers). In addtion the code must not contain any dangerous behaviors, described below.  
+Code signed by a trusted SPC (Sofware Publishers Certificate) or WHQL (Windows Hardware Quality Labs) signature must not facilitate bypass of Windows Code Integrity and security technologies.  Before code is signed by a trusted SPC or WHQL signature, first ensure it complies with guidance from both (Device.DevFund.Reliability.BasicSecurity)[https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1703/device-devfund#device.devfund.reliability] and Creating Reliable Kernel-Mode Drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/creating-reliable-kernel-mode-drivers). In addtion the code must not contain any dangerous behaviors, described below.  For more information about driver signing, see [Release driver signing](#releasedriversigning), later in this topic.
 
 **Examples of dangerous behavior include**
 - Providing the ability to map arbitrary kernel, physical, or device memory to user mode
@@ -107,14 +107,19 @@ This topic provides driver specific guidance for creating a light weight threat 
 
 Security Development Lifecycle (SDL) best practices and associated tools can be used by IHVs and OEMs to improve the security of their products. For more information see [SDL recommendations for OEMs](https://msdn.microsoft.com/windows/hardware/drivers/bringup/security-overview#sdl).
 
+
 ## <span id="DriverSecurityCodePractices"></span><span id="driversecuritycodepractices"></span><span id="DRIVERSECURITYCODEPRACTICES"></span>Driver security code practices
 
+**Security checklist item \#4:** *Review your code and remove any known code vulnerabilities.*
 
 The core activity of creating secure drivers is identifying areas in the code that need to be changed to avoid known software vulnerabilities. Many of these known software vulnerabilities deal with keeping strict track of the use of memory to avoid issues with others overwriting or otherwise comprising the memory locations that your driver uses.
 
-The [Code Validation Tools](#codevalidationtools) section of this topics describes tools that can be used to help locate known software vulnerabilities.
+**Code review**
 
-**Security checklist item \#4:** *Review your code and remove any known code vulnerabilities.*
+Seek out knowledgeable code review to look for issues, that you may have missed. A second set of eyes will often see issues that you may have missed.
+
+The [Code Validation Tools](#codevalidationtools) section of this topics describes software tools that can be used to help locate known software vulnerabilities.
+
 
 **Memory buffers**
 
@@ -134,21 +139,39 @@ For more information about working with buffers and using [**ProbeForRead**](htt
 
 **Referencing user-space addresses**
 
-Validate any address in user space before trying to use it, using APIs such as [**ProbeForRead**](https://msdn.microsoft.com/library/windows/hardware/ff559876) and [**ProbeForWrite**](https://msdn.microsoft.com/library/windows/hardware/ff559879) when appropriate. For more information, see [Errors in Referencing User-Space Addresses](https://msdn.microsoft.com/library/windows/hardware/ff544308).
+Validate any address in user space before trying to use it, using APIs such as [**ProbeForRead**](https://msdn.microsoft.com/library/windows/hardware/ff559876) and [**ProbeForWrite**](https://msdn.microsoft.com/library/windows/hardware/ff559879) when appropriate. 
 
-Pointers Embedded in Buffered I/O Requests Drivers must validate pointers. For more information, see [Errors in Referencing User-Space Addresses](https://msdn.microsoft.com/library/windows/hardware/ff544308).
+**Use the appropriate method for accessing  data buffers in IOCTL**
+One of the primary responsibilities of driver stacks is transferring data between user-mode applications and a system's devices. There are three methods for accessing data buffers. 
 
-**Errors in direct I/O**
+|IOCTL Buffer Type | Summary                                    | For more information |  
+|------------------|--------------------------------------------|-------------------------------------------------------------------------|
+| METHOD_BUFFERED  |Recommended for most situtations            | [Using Buffered I/O](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-buffered-i-o)
+| METHOD_IN_DIRECT or METHOD_OUT_DIRECT |Used in some high speed HW I/O    |[Using Direct I/O](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-direct-i-o) |
+| METHOD_NEITHER |Avoid if possible |[Using Neither Buffered Nor Direct I/O](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-neither-buffered-nor-direct-i-o)|
 
-Handle zero-length buffers correctly. For more information, see [Errors in Direct I/O](https://msdn.microsoft.com/library/windows/hardware/ff544300).
+In general buffered I/O is recomended as it provides the most secure buffering methods. Even when using buffered I/O there are risks such as emedded pointers that must be mitigated.
 
-**Errors in buffered I/O**
+For more information about the working with buffers in IOCTLs, see [Methods for Accessing Data Buffers](https://docs.microsoft.com/windows-hardware/drivers/kernel/methods-for-accessing-data-buffers)
+
+**Errors in use of IOCTL buffered I/O**
+
+Pointers embedded in buffered I/O requests must validate pointers. For more information, see [Errors in Referencing User-Space Addresses](https://msdn.microsoft.com/library/windows/hardware/ff544308).
 
 Check the size of IOCTL related buffers. For more information, see [Failure to Check the Size of Buffers](https://msdn.microsoft.com/library/windows/hardware/ff545679).
+ 
+
+
+**Errors in buffered I/O**
 
 Properly initialize output buffers. For more information, see [Failure to Initialize Output Buffers](https://msdn.microsoft.com/library/windows/hardware/ff545693).
 
 Properly validate variable-length buffers. For more information, see [Failure to Validate Variable-Length Buffers](https://msdn.microsoft.com/library/windows/hardware/ff545709).
+
+
+**Errors in direct I/O**
+
+Handle zero-length buffers correctly. For more information, see [Errors in Direct I/O](https://msdn.microsoft.com/library/windows/hardware/ff544300).
 
 **Driver code must make correct use of memory**
 
@@ -990,6 +1013,7 @@ Online training is available from a variety of sources. For example this course 
 This video from WinHec provides an overview of Windows 10 security features. [Windows 10 - The Safest and Most Secure Version of Windows](https://channel9.msdn.com/Events/WinHEC/WinHEC-December-2016/Windows-10-The-Safest-and-Most-Secure-Version-of-Windows)
 
  
+
 ## <span id="keytakeaways"></span>Key takeaways
 
 Driver security is a complex undertaking containing many elements, but here are a few key points to consider.
@@ -1002,12 +1026,11 @@ Driver security is a complex undertaking containing many elements, but here are 
 
     b.	Further restrict individual IOCTL’s 
 
--	Create a threat model to identify attack vectors and consider if anything can be restricted further
--	When not sure use METHOD_BUFFERED as an IOCTL buffering method 
--	Be careful around embedded pointers being passed in from usermode, they need to be probed, accessed within try except, and they are prone to time of check time of use (ToCToU) issues unless the value of the buffer is captured and compared
--   Use code scanning utilities to look for known code vulnerabilities and remediate any identified issues
--   Seek out knowledgeable code review to look for issues, that you may have missed
--	Use driver verifier and test your driver with multiple inputs including corner cases
+-	Create a threat model to identify attack vectors and consider if anything can be restricted further.
+-	Be careful around embedded pointers being passed in from usermode, they need to be probed, accessed within try except, and they are prone to time of check time of use (ToCToU) issues unless the value of the buffer is captured and compared.
+-	When not sure use METHOD_BUFFERED as an IOCTL buffering method.-   Use code scanning utilities to look for known code vulnerabilities and remediate any identified issues.
+-   Seek out knowledgeable code review to look for issues, that you may have missed.
+-	Use driver verifier and test your driver with multiple inputs including corner cases.
 
  
 
