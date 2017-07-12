@@ -137,11 +137,9 @@ For more information, see [Failure to Validate Variable-Length Buffers](https://
 
 For more information about working with buffers and using [**ProbeForRead**](https://msdn.microsoft.com/library/windows/hardware/ff559876) and [**ProbeForWrite**](https://msdn.microsoft.com/library/windows/hardware/ff559879) to validate the address of a buffer, see [Buffer Handling](https://msdn.microsoft.com/library/windows/hardware/ff539004).
 
-**Referencing user-space addresses**
 
-Validate any address in user space before trying to use it, using APIs such as [**ProbeForRead**](https://msdn.microsoft.com/library/windows/hardware/ff559876) and [**ProbeForWrite**](https://msdn.microsoft.com/library/windows/hardware/ff559879) when appropriate. 
+**Use the appropriate method for accessing  data buffers with IOCTLs**
 
-**Use the appropriate method for accessing  data buffers in IOCTL**
 One of the primary responsibilities of driver stacks is transferring data between user-mode applications and a system's devices. There are three methods for accessing data buffers. 
 
 |IOCTL Buffer Type | Summary                                    | For more information |  
@@ -150,28 +148,26 @@ One of the primary responsibilities of driver stacks is transferring data betwee
 | METHOD_IN_DIRECT or METHOD_OUT_DIRECT |Used in some high speed HW I/O    |[Using Direct I/O](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-direct-i-o) |
 | METHOD_NEITHER |Avoid if possible |[Using Neither Buffered Nor Direct I/O](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-neither-buffered-nor-direct-i-o)|
 
-In general buffered I/O is recomended as it provides the most secure buffering methods. Even when using buffered I/O there are risks such as emedded pointers that must be mitigated.
+In general buffered I/O is recomended as it provides the most secure buffering methods. But, even when using buffered I/O there are risks such as embedded pointers that must be mitigated.
 
 For more information about the working with buffers in IOCTLs, see [Methods for Accessing Data Buffers](https://docs.microsoft.com/windows-hardware/drivers/kernel/methods-for-accessing-data-buffers)
 
 **Errors in use of IOCTL buffered I/O**
 
-Pointers embedded in buffered I/O requests must validate pointers. For more information, see [Errors in Referencing User-Space Addresses](https://msdn.microsoft.com/library/windows/hardware/ff544308).
-
 Check the size of IOCTL related buffers. For more information, see [Failure to Check the Size of Buffers](https://msdn.microsoft.com/library/windows/hardware/ff545679).
  
-
-
-**Errors in buffered I/O**
-
 Properly initialize output buffers. For more information, see [Failure to Initialize Output Buffers](https://msdn.microsoft.com/library/windows/hardware/ff545693).
 
 Properly validate variable-length buffers. For more information, see [Failure to Validate Variable-Length Buffers](https://msdn.microsoft.com/library/windows/hardware/ff545709).
 
-
-**Errors in direct I/O**
+**Errors in IOCTL direct I/O**
 
 Handle zero-length buffers correctly. For more information, see [Errors in Direct I/O](https://msdn.microsoft.com/library/windows/hardware/ff544300).
+
+**Errors in referencing user-space addresses**
+Pointers embedded in buffered I/O requests must be validated. For more information, see [Errors in Referencing User-Space Addresses](https://msdn.microsoft.com/library/windows/hardware/ff544308).
+
+Validate any address in user space before trying to use it, using APIs such as [**ProbeForRead**](https://msdn.microsoft.com/library/windows/hardware/ff559876) and [**ProbeForWrite**](https://msdn.microsoft.com/library/windows/hardware/ff559879) when appropriate. 
 
 **Driver code must make correct use of memory**
 
@@ -381,7 +377,7 @@ For information about Bluetooth driver security, see &lt;Content Pending&gt;.
 
 For information related to printer driver security, see [V4 Printer Driver Security Considerations](https://msdn.microsoft.com/library/windows/hardware/jj863679).
 
-Security Issues for Windows Image Acquisition (WIA) Drivers
+*Security Issues for Windows Image Acquisition (WIA) Drivers*
 
 For information about WIA security, see [Security Issues for Windows Image Acquisition (WIA) Drivers](https://msdn.microsoft.com/windows/hardware/drivers/image/security-issues-for-wia-drivers)
 
@@ -401,11 +397,13 @@ For more information, review these topics.
 
 [Controlling Device Access in KMDF Drivers](https://msdn.microsoft.com/windows/hardware/drivers/wdf/controlling-device-access-in-kmdf-drivers)
 
+[SDDL for Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff563667)
+
+[SID Strings](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379602(v=vs.85).aspx)
+
 [Controlling Device Access](https://msdn.microsoft.com/library/windows/hardware/ff542063)
 
 [Controlling Device Namespace Access](https://msdn.microsoft.com/library/windows/hardware/ff542068)
-
-[SDDL for Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff563667)
 
 "Names, Security Descriptors and Device Classes " on page 6 of the *January February 2017 The NT Insider Newsletter* published by [OSR](http://www.osr.com).
 
