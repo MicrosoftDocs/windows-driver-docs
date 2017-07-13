@@ -61,24 +61,26 @@ Creating secure drivers requires the cooperation of the system architect (consci
 
 ## <span id="confirmkernel"></span>Confirm that a kernel driver is required
 
-**Security checklist item \#1:** *Confirm that a kernel driver is required and that a lower risk approach such as Windows service or app is not a better approach.*
+**Security checklist item \#1:** *Confirm that a kernel driver is required and that a lower risk approach such as Windows service or app is not a better option.*
 
- Drivers live in the windows kernel, and having an issue when executing in kernel exposes the entire operating system. If any other option is available, it likley will be lower cost and have less associated risk than a kernel driver.
+ Drivers live in the windows kernel, and having an issue when executing in kernel exposes the entire operating system. If any other option is available, it likley will be lower cost and have less associated risk than creating a new kernel driver.
 
-For more information about the built in Windows drivers, see [Do you need to write a driver?](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/do-you-need-to-write-a-driver-).
+For more information about using the built in Windows drivers, see [Do you need to write a driver?](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/do-you-need-to-write-a-driver-).
 
-For information on if you can use the lower risk user mode framework driver (UMDF), see [Choosing a driver model](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/choosing-a-driver-model).
+For information on using the lower risk user mode framework driver (UMDF), see [Choosing a driver model](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/choosing-a-driver-model).
 
 For information on using background tasks, see  [Support your app with background tasks](https://docs.microsoft.com/windows/uwp/launch-resume/support-your-app-with-background-tasks).
 
-For information on Windows Services, see [Services](https://msdn.microsoft.com/en-us/library/windows/desktop/ms685141(v=vs.85).aspx).
+For information on using Windows Services, see [Services](https://msdn.microsoft.com/en-us/library/windows/desktop/ms685141(v=vs.85).aspx).
 
 
 ## <span id="controlsoftwareonly"></span>Control access to software only drivers
 
 **Security checklist item \#2:** *If a software only driver is going to be created addtional access control must be implemented.*
 
-Software only kernel drivers may not use PnP to become associated with specific hardware IDs. Software only kernel drivers contain addtional risk and must be limited to run on specific hardware.
+Software only kernel drivers may not use PnP to become associated with specific hardware IDs and may be able to run on any PC. Such a driver could be used for purposes that they were not originally intended, creating an attack vector. 
+
+Because software only kernel drivers contain additional risk, they must be limited to run on specific hardware. For example, by use of a unique plug-and-play ID to enable creation of a PnP driver, or by checking the SMBIOS table for the presence of specific hardware.
 
 Code signed by a trusted SPC (Sofware Publishers Certificate) or WHQL (Windows Hardware Quality Labs) signature must not facilitate bypass of Windows code integrity and security technologies.  Before code is signed by a trusted SPC or WHQL signature, first ensure it complies with guidance from both [Device.DevFund.Reliability.BasicSecurity](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1703/device-devfund#device.devfund.reliability) and [Creating Reliable Kernel-Mode Drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/creating-reliable-kernel-mode-drivers). In addition the code must not contain any dangerous behaviors, described below.  For more information about driver signing, see [Release driver signing](#releasedriversigning), later in this topic.
 
