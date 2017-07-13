@@ -1,0 +1,46 @@
+---
+title: Paging an Entire Driver
+author: windows-driver-content
+description: Paging an Entire Driver
+ms.assetid: d861160f-e429-4ff3-9ca6-4fce4d5d6c1b
+keywords: ["pageable drivers WDK kernel , paging entire drivers", "paging entire drivers WDK", "reference counts WDK pageable drivers", "overriding pageable or nonpageable attributes WDK"]
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+---
+
+# Paging an Entire Driver
+
+
+## <a href="" id="ddk-paging-an-entire-driver-kg"></a>
+
+
+A driver that uses the **MmLockPagable*Xxx*** support routines and specifies paged and discardable sections consists of nonpaged sections, paged sections, and an INIT section that is discarded after driver initialization.
+
+After a device driver connects interrupts for the devices it manages, the driver's interrupt handling path must be resident in system space. The interrupt-handling code must be part of the driver section that cannot be paged out, in case an interrupt occurs.
+
+Two additional memory manager routines, [**MmPageEntireDriver**](https://msdn.microsoft.com/library/windows/hardware/ff554650) and [**MmResetDriverPaging**](https://msdn.microsoft.com/library/windows/hardware/ff554680), can be used to override the pageable or nonpageable attributes of all sections that make up a driver image. These routines enable a driver to be paged out in its entirety when the device it manages is not being used and cannot generate interrupts.
+
+Examples of system drivers that are completely pageable are the win32k.sys driver, the serial driver, the mailslot driver, the beep driver and the null driver.
+
+A serial driver is typically used intermittently. Until a port it manages is opened, a serial driver can be paged out completely. As soon as a port is opened, the parts of the serial driver that must be memory-resident must be brought into nonpaged system space. Other parts of the driver can remain pageable.
+
+A driver that can be completely paged out should call **MmPageEntireDriver** during driver initialization before interrupts are connected.
+
+When a device managed by a paged-out driver receives an open request, the driver is paged in. Then, the driver must call [**MmResetDriverPaging**](https://msdn.microsoft.com/library/windows/hardware/ff554680) before it connects to interrupts. Calling **MmResetDriverPaging** causes the memory manager to treat the driver's sections according to the attributes acquired during compilation and linkage. Any section that is nonpaged, such as a text section, will be paged into nonpaged system memory; pageable sections will be paged in as they are referenced.
+
+Such a driver must keep a reference count of open handles to its devices. The driver increments the count at each open request for any device and decrements the count at each close request. When the count reaches zero, the driver should disconnect interrupts and then call **MmPageEntireDriver**. If a driver manages more than one device, the count must be zero for all such devices before the driver can call **MmPageEntireDriver**.
+
+It is the driver's responsibility to do whatever synchronization is necessary when changing the reference count, and to prevent the reference count from changing while the pageable state of the driver is changing. That is, in SMP computers, the driver must make sure that **MmPageEntireDriver** cannot be in progress on one processor, while on another processor, an open call is causing interrupts to be connected and the reference count to be incremented.
+
+ 
+
+ 
+
+
+--------------------
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Paging%20an%20Entire%20Driver%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+

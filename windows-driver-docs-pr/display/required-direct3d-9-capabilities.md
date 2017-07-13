@@ -168,13 +168,13 @@ For applications to fully access the features of Microsoft Direct3D versions 9\_
 </tbody>
 </table>
 
- 
+ 
 
-**Note**  These requirements also apply:
+**Note**  These requirements also apply:
 -   The driver must also set the **TextureCaps** member to a value of D3DPTEXTURECAPS\_NONPOW2CONDITIONAL and D3DPTEXTURECAPS\_POW2, or to neither.
 -   When the driver responds to an event, where [**D3DDDIARG\_CREATEQUERY**](https://msdn.microsoft.com/library/windows/hardware/ff542958).**QueryType** is D3DDDIQUERYTYPE\_EVENT, it must always set the event's **BOOL** value to **TRUE** when responding. See [*CreateQuery*](https://msdn.microsoft.com/library/windows/hardware/ff540673) and **D3DDDIARG\_CREATEQUERY**.
 
- 
+ 
 
 ## <span id="Minimum_capabilities_for_Direct3D_level_9_2"></span><span id="minimum_capabilities_for_direct3d_level_9_2"></span><span id="MINIMUM_CAPABILITIES_FOR_DIRECT3D_LEVEL_9_2"></span>Minimum capabilities for Direct3D level 9\_2
 
@@ -244,12 +244,12 @@ These capabilities must be set in addition to those listed for Direct3D level 9\
 </tbody>
 </table>
 
- 
+ 
 
-**Note**  This requirement also applies:
+**Note**  This requirement also applies:
 -   When the driver responds to a *z*-testing query, where [**D3DDDIARG\_CREATEQUERY**](https://msdn.microsoft.com/library/windows/hardware/ff542958).**QueryType** is D3DDDIQUERYTYPE\_OCCLUSION, it must always set the query's **UINT** value to a non-zero value when responding. See [*CreateQuery*](https://msdn.microsoft.com/library/windows/hardware/ff540673) and **D3DDDIARG\_CREATEQUERY**.
 
- 
+ 
 
 ## <span id="Minimum_capabilities_for_Direct3D_level_9_3"></span><span id="minimum_capabilities_for_direct3d_level_9_3"></span><span id="MINIMUM_CAPABILITIES_FOR_DIRECT3D_LEVEL_9_3"></span>Minimum capabilities for Direct3D level 9\_3
 
@@ -320,15 +320,15 @@ These capabilities must be set in addition to those listed for Direct3D levels 9
 </tbody>
 </table>
 
- 
+ 
 
-**Note**  The **VertexShaderVersion** value of D3DVS\_VERSION(3,0) guarantees instancing support. Direct3D 10Level 9 does not expose Shader Model 3.0.
+**Note**  The **VertexShaderVersion** value of D3DVS\_VERSION(3,0) guarantees instancing support. Direct3D 10Level 9 does not expose Shader Model 3.0.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Required%20Direct3D%209%20capabilities%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 

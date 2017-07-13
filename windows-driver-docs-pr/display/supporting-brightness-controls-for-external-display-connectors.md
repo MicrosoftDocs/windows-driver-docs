@@ -13,7 +13,9 @@ This feature does not support the ability to control the individual panel bright
 ### General Requirements
 
 A new DWORD registry value will be added: “BrightnessControl”.
-Registry Path: HKLM\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4D36E96E-E325-11CE-BFC1-08002BE10318}
+Registry Path: HKLM\SYSTEM\CurrentControlSet\Control\Class\{4D36E96E-E325-11CE-BFC1-08002BE10318}\XXXX
+Where XXXX is for the targeted individual display.  
+
 
 *	The first bit in this registry value defines the non-internal monitor brightness control support.
 *	The second bit defines an ACPI override that forces ACPI brightness to be used.

@@ -99,7 +99,7 @@ The following table shows several commonly used *dirids*, and the directories th
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>13</strong></p></td>
-<td align="left"><p>Driver package's <a href=https://msdn.microsoft.com/en-us/windows/hardware/drivers/install/driver-store>Driver Store</a> directory.</p>
+<td align="left"><p>Driver package's <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/install/driver-store">Driver Store</a> directory.</p>
 <p>For Windows 8.1 and later versions of Windows, specifies the path to the Driver Store directory where the driver package was imported.</p></td>
 </tr>
 <tr class="even">
@@ -142,7 +142,7 @@ The following table shows several commonly used *dirids*, and the directories th
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>51</strong></p></td>
-<td align="left"><p>Spool directory (<em>not</em> used for installing printer drivers − see <a href=https://msdn.microsoft.com/library/windows/hardware/ff560821>Printer Dirids</a>)</p></td>
+<td align="left"><p>Spool directory (<em>not</em> used for installing printer drivers − see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560821">Printer Dirids</a>)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>52</strong></p></td>

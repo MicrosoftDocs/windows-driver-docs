@@ -39,6 +39,9 @@ To illustrate, consider a hypothetical device for which there are four extension
 
 From the latter two, both are selected, because they have unique **ExtensionId** values. In this example, the system applies the primary INF for the device, and then applies three extension INFs for that device.
 
+Note that extension INF files are always processed after the primary INF, but that there is no determined processing ordering in cases where more than one extension INF is available.
+Example: A primary INF (V1) with extension A and B are installed on a device. An update to the primary INF (V2) is published. When installed on the system, primary INF V2 will be installed. Then, extensions A and B will be re-applied in no definite order.
+
 ## Creating an extension INF
 
 Here are the entries you need to define an INF as an extension INF.
@@ -55,7 +58,7 @@ Here are the entries you need to define an INF as an extension INF.
 2.  Provide an **ExtensionId** entry in the [**\[Version\]**](inf-version-section.md) section. Generate a new GUID for the initial version of an extension INF, or reuse the last GUID for subsequent updates of the initial extension INF.
 
     ```
-    ExtensionId = {028b4317-f2e4-4fb2-80af-aaac8c07e98e} ; Example GUID
+    ExtensionId = {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz} ; replace with your own GUID
     ```
 
 3.  If you are updating an extension INF, keep the **ExtensionId** the same and increment the version or date (or both) specified by the [**DriverVer**](inf-driverver-directive.md) directive. For a given **ExtensionId** value, PnP selects the INF with the highest **DriverVer**.
