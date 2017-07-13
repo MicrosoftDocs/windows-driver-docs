@@ -12,14 +12,22 @@ ms.technology: windows-devices
 # Create a partner settings app
 
 
-OEMs and mobile operators can expose custom settings for hardware components that they add to a device to differentiate it from other devices, such as speakers, sensors, or microphones. These settings appear in the **Extras** page of the **Settings** application, along with other system settings provided by the operating system. To add custom settings, partners create an partner settings app.
+OEMs and mobile operators can expose custom settings for hardware components that they add to a device to differentiate it from other devices, such as speakers, sensors, or microphones. The custom settings are displayed to the user as one of up to five additional links in one of the level two pages in the Settings app. For example, in the **Devices** tab of the **Settings** app, the following level two pages can have up to five additional links to custom settings apps: **Printers & scanners**, **Connected devices**, **Bluetooth**, **Mouse**, **Touchpad**, **Typing**, **Pen and Windows Ink**, **AutoPlay**, and **USB**. 
+
+![Devices list in Settings app](images/devices-list-in-settings.png)
+
+You can find a list of all level two pages in the [Launch the Windows Settings app](https://msdn.microsoft.com/en-us/windows/uwp/launch-resume/launch-settings-app) topic.
+
+**Important**: All links must be relevant to the page they are placed on.
+
+In addition to the five links, you are also allowed to add up to five search terms on each page. Search terms must be relevant to the content on the page. For the best experience, use specific phrases for your terms as my general one word terms may lead to your links not displaying as relevant in search. For example, if you have a “Fabricam multipen” device, create a search phrase like “set up fabricam mulitipen” instead of a generic search term like “pen”.
 
 ## <span id="Characteristics_of_partner_settings_app"></span><span id="characteristics_of_partner_settings_app"></span><span id="CHARACTERISTICS_OF_PARTNER_SETTINGS_APP"></span>Characteristics of partner settings app
 
 
 Partner settings apps have the following characteristics:
 
--   They are Universal Windows Platform (UWP) apps, or, in the case of Windows Phone, they can also be Microsoft Silverlight apps on Windows Phone .
+-   They are Universal Windows Platform (UWP) apps, or, in the case of Windows Phone, they can also be Windows Phone Silverlight apps.
 
 -   Users can uninstall them directly just like any other application. They can be upgraded by updating the settings application in the Store like any other Windows app.
 
@@ -27,66 +35,32 @@ Partner settings apps have the following characteristics:
 
 -   They are published to a hidden location in the Store that users cannot browse to or find by using search.
 
--   They can have their own tile but cannot be pinned to the Start menu.
-
 ## <span id="Creating_system_settings_applications"></span><span id="creating_system_settings_applications"></span><span id="CREATING_SYSTEM_SETTINGS_APPLICATIONS"></span>Creating system settings applications
 
 
-Settings applications are Windows apps and should therefore conform to all programming guidelines for Windows apps (see [Guidelines for Windows Runtime apps)](https://msdn.microsoft.com/library/windows/apps/hh465424.aspx):
+Settings applications are Windows Universal apps and should therefore conform to all programming guidelines for Windows Universal apps (see [Guidelines for Universal Windows Platform (UWP) apps)](https://msdn.microsoft.com/en-us/library/windows/apps/hh465424.aspx):
 
-1.  Use the Windows Software Development Kit (SDK) to create a Windows app. For more information on creating a Windows app, see [Build a Universal Windows app](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx). This application will be the system settings application. If you're writing a settings app targeting the phone, you can also create a Silverlight app on Windows Phone .
-2.  Declare the settings app capability in the application manifest, as in this xml: `    xmlns:rescap=http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities`
-3.  Add the extension to the application manifest, as in the following xml. Note that the rescap declaration needs to be part of the Package node.
-
-    ```
-    <Package
-      xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
-      xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
-      xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-      xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
-      IgnorableNamespaces="uap mp rescap">
-    ```
-
-    Add the following extension element to you application manifest:
+1.  Use the Windows Software Development Kit (SDK) to create a Windows Universal app. For more information on creating a Windows Universal app, see [Build UWP apps with Visual Studio](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/dn609832.aspx). This application will be the system settings application. If you're writing a settings app targeting a phone, you can also create a Windows Phone Silverlight app. 
+2.  Declare the settings app capability and the SettingPageUri to describe the page that your application link is listed. Also add the AppActivationMode setting to point to the link. Do this in the application manifest: `xmlns:rescap=http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities`
 
     ```
     <Extensions>
-         <rescap:Extension Category="windows.settingsApp">
-         <rescap:SettingsApp Category="extras"/>
-         </rescap:Extension>
+      <rescap:Extension Category="windows.settingsApp">
+        <rescap:SettingsApp SettingsPageUri="ms-settings:l2pageuri">
+          <rescap:AppLinks>
+            <rescap:Link AppActivationMode ="uri://yourapp#deeplink" DisplayName="Link 1 Title" />
+	          <rescap:Link AppActivationMode ="uri://yourapp#deeplink" DisplayName="Link 2 Title" />
+	          <rescap:SearchTerms>
+	            <rescap:Term>setup foo</rescap:Term>
+	            <rescap:Term>disable foo</rescap:Term>
+	          </rescap:SearchTerms>
+	        </rescap:AppLinks>
+	      </rescap:SettingsApp>
+	    </rescap:Extension>
     </Extensions>
     ```
 
-    The extension element needs to be added inside of the application node, as in the following example.
-
-    ```
-    <Applications>
-        <Application Id="App"
-          Executable="$targetnametoken$.exe"
-          EntryPoint="PhoneNumber.App">
-          <uap:VisualElements
-            DisplayName="PhoneNumber"
-            Square150x150Logo="Assets\Square150x150Logo.png"
-            Square44x44Logo="Assets\Square44x44Logo.png"
-            Description="PhoneNumber"
-            BackgroundColor="transparent">
-            <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
-            <uap:SplashScreen Image="Assets\SplashScreen.png" />
-          </uap:VisualElements>
-         <Extensions>
-            <rescap:Extension Category="windows.settingsApp">
-              <rescap:SettingsApp Category="extras"/>
-            </rescap:Extension>
-          </Extensions>
-        </Application>
-      </Applications>
-    ```
-
-    **Note**  If a settings application is detected by the operating system when the system boots up, a custom settings category called **Extras** is created at the bottom of the settings page. This category name cannot be changed, and all settings apps not created by Microsoft will populate this same category.
-
-     
-
-4.  Configure the system settings application as a preinstalled application by submitting the application to Windows Dev Center to sign the .appx and obtain a license file, and then include the application in a device image using Windows Imaging and Configuration Designer (ICD). For more information about creating a preinstalled application, see [Preinstalled apps](https://msdn.microsoft.com/library/windows/hardware/mt269740). For more information about Windows ICD, including how to download and install it, see [Getting started with Windows ICD](https://msdn.microsoft.com/library/windows/hardware/dn916112.aspx). To learn how to add an application to the an image using Windows ICD, see the **To add an app** section of the [Configure customizations using Windows ICD](https://msdn.microsoft.com/library/windows/hardware/dn916109.aspx) topic.
+3.  Configure the system settings application as a preinstalled application by submitting the application to Windows Dev Center to sign the .appx and obtain a license file, and then include the application in the device image.
 
 ## <span id="Updated_system_settings_applications"></span><span id="updated_system_settings_applications"></span><span id="UPDATED_SYSTEM_SETTINGS_APPLICATIONS"></span>Updated system settings applications
 
@@ -98,7 +72,7 @@ Because a system settings application does not appear in the application list on
 ## <span id="What_happens_to_legacy_Control_Panel_or_system_settings_apps_when_the_OS_upgrades_to_Windows_10_"></span><span id="what_happens_to_legacy_control_panel_or_system_settings_apps_when_the_os_upgrades_to_windows_10_"></span><span id="WHAT_HAPPENS_TO_LEGACY_CONTROL_PANEL_OR_SYSTEM_SETTINGS_APPS_WHEN_THE_OS_UPGRADES_TO_WINDOWS_10_"></span>What happens to legacy Control Panel or system settings apps when the OS upgrades to Windows 10?
 
 
-If your Control Panel application was written for Windows 7, Windows 8, or Windows 8.1, it will continue to work in the legacy Control Panel, but it will not support any of the features of the Windows 10 system settings app. Likewise, if your legacy system settings app was written for Windows 8 or Windows 8.1, it will continue to work but it will not support any of the features of the Windows 10 system settings app. Legacy apps cannot display in the Windows 10 system settings app.
+If your Control Panel application was written for Windows 7, Windows 8, or Windows 8.1, it will continue to work in the legacy Control Panel, but it will not support any of the features of the Windows 10 system settings app. Likewise, if your legacy system settings app was written for Windows 8 or Windows 8.1, it will continue to work but it will not support any of the features of the Windows 10 system settings app. Legacy apps cannot display in the Windows 10 system settings app. All UWP apps in the Windows 10 settings app must be preinstalled on the machine. Control Panel is deprecated and will be removed in an upcoming release.
 
  
 
