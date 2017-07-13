@@ -36,7 +36,7 @@ This topic describes,
 
 **Last Updated**
 
--   June 2017
+-   August 2017
 
 **Windows version**
 
