@@ -1474,6 +1474,7 @@
 #### [NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS](ndis-status-wwan-device-service-supported-commands.md)
 #### [NDIS_STATUS_WWAN_DEVICE_SLOT_MAPPINGS](ndis-status-wwan-device-slot-mappings.md)
 #### [NDIS_STATUS_WWAN_IP_ADDRESS_STATE](ndis-status-wwan-ip-address-state.md)
+#### [NDIS_STATUS_WWAN_MODEM_CONFIG_INFO](ndis-status-wwan-modem-config-info.md)
 #### [NDIS_STATUS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS](ndis-status-wwan-preferred-multicarrier-providers.md)
 #### [NDIS_STATUS_WWAN_PRESHUTDOWN_STATE](ndis-status-wwan-preshutdown-state.md)
 #### [NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLETE](ndis-status-wwan-set-home-provider-complete.md)
