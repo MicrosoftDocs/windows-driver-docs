@@ -41,6 +41,8 @@ This section NDIS status notifications for Mobile Broadband (MB) miniport driver
 
 [**NDIS\_STATUS\_WWAN\_HOME\_PROVIDER**](https://msdn.microsoft.com/library/windows/hardware/ff567848)
 
+[**NDIS_STATUS_WWAN_MODEM_CONFIG_INFO**](ndis-status-wwan-modem-config-info.md)
+
 [**NDIS\_STATUS\_WWAN\_PACKET\_SERVICE**](https://msdn.microsoft.com/library/windows/hardware/ff567850)
 
 [**NDIS\_STATUS\_WWAN\_PIN\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567851)
