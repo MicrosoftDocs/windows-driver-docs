@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # MakeCert Test Certificate
 
 
-A MakeCert test certificate is an [X.509 digital certificate](digital-certificates.md) that is created by using the command-line [CryptoAPI](http://go.microsoft.com/fwlink/p/?linkid=136391)[**MakeCert**](https://msdn.microsoft.com/library/windows/hardware/ff548309) tool. A MakeCert test certificate is a self-signed root certificate that can be used to test-sign a [driver package's](driver-packages.md) [catalog file](catalog-files.md) or to test-sign a driver file by embedding a signature in the driver file.
+A MakeCert test certificate is an [X.509 digital certificate](digital-certificates.md) that is created by using the command-line [CryptoAPI](http://go.microsoft.com/fwlink/p/?linkid=136391) [**MakeCert**](https://msdn.microsoft.com/library/windows/hardware/ff548309) tool. A MakeCert test certificate is a self-signed root certificate that can be used to test-sign a [driver package's](driver-packages.md) [catalog file](catalog-files.md) or to test-sign a driver file by embedding a signature in the driver file.
 
 To create a MakeCert test certificate, use the [**MakeCert**](https://msdn.microsoft.com/library/windows/hardware/ff548309) tool as follows:
 

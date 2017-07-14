@@ -62,9 +62,9 @@ The following is a list of RX operations and offloads.
 </tr>
 <tr class="odd">
 <td align="left"><p>Rx decap</p></td>
-<td align="left"><p>Replace the 802.3 header with a generic 802.11 header.</p></td>
+<td align="left"><p>If WDI is expecting an 802.3 header, replace the 802.11 header with an 802.3 header before submitting to WDI.</p></td>
 <td align="left"><p>Target/TAL</p></td>
-<td align="left"><p>During A-MSDU deaggregation, the non-initial MSDUs of the A-MSDU need their 802.3 header replaced by a generic 802.11 header.</p></td>
+<td align="left"><p>If WDI is expecting an 802.11 header, decap is not required as the header has already been filled by the peer.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Rx reordering logic</p></td>

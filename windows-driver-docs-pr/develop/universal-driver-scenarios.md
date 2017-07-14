@@ -44,13 +44,15 @@ HKR, OSR, "OperatingMode",, "Default" ; FLG_ADDREG_TYPE_SZ
 HKR, OSR, "OperatingParams",, "None" ; FLG_ADDREG_TYPE_SZ
 ```
 
-In [`osrfx2_DCHU_extension.inx`], Contoso overrides the **OperatingParams** registry key and adds **OperatingExceptions**:
+In [`osrfx2_DCHU_extension.inx`], Contoso overrides the **OperatingParams** registry value and adds **OperatingExceptions**:
 
 ```
 [OsrUsbFx2Extension_AddReg]
 HKR, OSR, "OperatingParams",, "-Extended"
 HKR, OSR, "OperatingExceptions",, "x86"	
 ```
+
+Note that extensions are always processed after the primary INF in no definite order. If a primary INF is updated to a newer version, then the extensions will still be re-applied after the new primary INF is installed.
 
 ## Use a component to install a service from a driver package
 
@@ -93,7 +95,7 @@ osrfx2_DCHU_usersvc.exe
 
 Note that the [**AddService**](../install/inf-addservice-directive.md) directive is not required to be in a separate component.  Fabrikam made this choice to improve componentization of their universal driver package.
 
-## Use a component to install software from a driver package
+## Use a component to install legacy software from a driver package
 
 Fabrikam has an executable file `osrfx2_DCHU_componentsoftware.exe` that they previously installed using a co-installer.  This legacy software displays the registry keys set by the board and is required by the OEM.  This is a GUI-based executable that only runs on Windows for desktop editions.  To install it, Fabrikam creates a separate component driver package.
 
