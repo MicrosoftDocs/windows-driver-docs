@@ -41,8 +41,8 @@ The default Solution build configuration is **Debug** and **Win32**. In versions
 1.  Ensure that you have the same version of SDK and WDK installed on your computer.
 2.  Open the driver project or solution in Visual Studio.
 3.  Right-click the solution in the **Solutions Explorer** and select **Configuration Manager**.
-4.  From the **Configuration Manager**, select the Active Solution Configuration (for example, **Debug** or **Release**) and the Active Solution Platform (for example, **Win32**) that correspond to the type of build you are interested in.
-5.  Select the target operating system for which to build the driver. Navigate to the project properties in **Driver &gt; General**, and set the **TargetVersion** property.
+4.  From the **Configuration Manager**, select the **Active solution configuration** (for example, **Debug** or **Release**) and the **Active solution platform** (for example, **Win32**) that correspond to the type of build you are interested in.
+5.  Right click the Avshws project and select **Properties**.  Navigate to **Driver Settings > General**, and set **Target OS Version** and **Target Platform**.
 6.  Configure the project properties for your driver or driver package. You can set properties for deployment, driver signing, or other tasks. For more information, see [Configuring project properties for your driver and driver package](#configure_project_props).
 7.  From the **Build** menu, click **Build Solution** (**Ctrl+Shift+B**).
 

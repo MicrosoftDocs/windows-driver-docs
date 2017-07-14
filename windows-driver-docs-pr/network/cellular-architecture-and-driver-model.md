@@ -14,16 +14,6 @@ ms.technology: windows-devices
 
 The cellular architecture for Windows 10 contains elements from both Windows 8.1 and Windows Phone 8.1. Below are the Windows 8.1 and Windows Phone 8.1 cellular architecture diagrams for comparison, along with the new Windows 10 architecture diagram and the cellular components that must be implemented.
 
-## Windows 8.1 architecture:
-
-
-![windows 8.1 cellular architecture](images/win81-cellular-architecture.png)
-
-## Windows Phone 8.1 architecture:
-
-
-![windows phone 8.1 cellular architecture](images/winphone81-cellular-architecture.png)
-
 ## Windows 10 architecture:
 
 
@@ -42,6 +32,16 @@ For Windows 10 for desktop editions, the following is required.
 For Windows 10 Mobile, the following is required:
 
 -   Implement an IHV RIL (Radio Interface Layer) and Mobile Broadband NDIS driver for your modem hardware.
+## Windows 8.1 architecture:
+
+
+![windows 8.1 cellular architecture](images/win81-cellular-architecture.png)
+
+## Windows Phone 8.1 architecture:
+
+
+![windows phone 8.1 cellular architecture](images/winphone81-cellular-architecture.png)
+
 
 ## Related topics
 
