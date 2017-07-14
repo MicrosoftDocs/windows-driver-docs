@@ -1,6 +1,6 @@
 ---
-title: Driver security responsibility (Windows security model)
-description: This article describes driver security responsibility in the Windows security model.
+title:  Controlling driver access
+description: This article describes steps you can take to help control access to your driver.
 ms.assetid: 7908AC6E-93EA-4EF1-8086-701F76160DFE
 ms.author: windowsdriverdev
 ms.date: 06/06/2017
@@ -9,14 +9,14 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Driver security responsibility (Windows security model)
+# Controlling driver access
 
 
 **Last updated:**
 
--   July 7, 2004
+-   July 14, 2017
 
-This article describes driver security responsibility in the Windows security model.
+This article describes steps you can take to help control access to your driver.
 
 The drivers for a device are responsible for ensuring that unauthorized users do not have access to the device. Ensuring device security involves the following:
 
@@ -174,14 +174,11 @@ When defining an IOCTL for user-mode callers, a driver should always specify a r
 
 The I/O Manager checks access rights for all IRPs that contain IOCTLs. Rights granted to the caller are stored in the object handle, which is opaque to drivers. If the caller has insufficient rights, the I/O Manager does not send the IOCTL to the device stack.
 
-Some system-defined and many driver-defined IOCTLs are defined with FILE\_ANY\_ACCESS as the required access value. To tighten security when such IOCTLs are sent by user-mode callers, a driver can use the **IoValidateDeviceIoControlAccess** function. This function allows a driver to check access rights.
+Some system-defined and many driver-defined IOCTLs are defined with FILE\_ANY\_ACCESS as the required access value. To tighten security when such IOCTLs are sent by user-mode callers, a driver can use the [IoValidateDeviceIoControlAccess routine](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550418.aspx) function. This function allows a driver to check access rights. Link to wdmsec.lib to use the [IoValidateDeviceIoControlAccess routine](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550418.aspx) routine.
 
-**Note**  **IoValidateDeviceIoControlAccess** is documented in the [Windows Driver Kit (WDK)](http://msdn.microsoft.com/en-US/library/windows/hardware/gg487463) and is available on Windows Server 2003 and later operating systems. Drivers that must also work for Windows 2000 and Windows XP must link to wdmsec.lib to use this routine.
+ Upon receiving an IOCTL, a driver can call [IoValidateDeviceIoControlAccess routine](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550418.aspx), specifying FILE\_READ\_ACCESS, FILE\_WRITE\_ACCESS, or both. In response, the I/O Manager checks the access rights granted to the caller. If the caller does not have the specified rights, the driver can fail the IRP with an appropriate status.
 
- 
-Upon receiving an IOCTL, a driver can call **IoValidateDeviceIoControlAccess**, specifying FILE\_READ\_ACCESS, FILE\_WRITE\_ACCESS, or both. In response, the I/O Manager checks the access rights granted to the caller. If the caller does not have the specified rights, the driver can fail the IRP with an appropriate status.
-
-A driver can also check system-wide privileges. For example, the Swenum.sys driver tests the Load/Unload Driver privilege before it forwards an IRP down the device stack. Drivers should check privileges when passing an IRP down the device stack. When the IRP is returning back up the device stack, checking privilege is unnecessary because the I/O is already complete.
+A driver can also check system-wide privileges. For example, a driver can test the Load/Unload Driver privilege before it forwards an IRP down the device stack. Drivers should check privileges when passing an IRP down the device stack. When the IRP is returning back up the device stack, checking privilege is not effective because the I/O is already complete.
 
  
 

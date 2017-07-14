@@ -64,14 +64,13 @@ Creating secure drivers requires the cooperation of the system architect (consci
 **Security checklist item \#1:** *Confirm that a kernel driver is required and that a lower risk approach such as Windows service or app is not a better option.*
 
  Drivers live in the windows kernel, and having an issue when executing in kernel exposes the entire operating system. If any other option is available, it likely will be lower cost and have less associated risk than creating a new kernel driver.
-
 For more information about using the built in Windows drivers, see [Do you need to write a driver?](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/do-you-need-to-write-a-driver-).
 
 For information on using the lower risk user mode framework driver (UMDF), see [Choosing a driver model](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/choosing-a-driver-model).
 
 For information on using background tasks, see  [Support your app with background tasks](https://docs.microsoft.com/windows/uwp/launch-resume/support-your-app-with-background-tasks).
 
-For information on using Windows Services, see [Services](https://msdn.microsoft.com/en-us/library/windows/desktop/ms685141(v=vs.85).aspx).
+For information on using Windows Services, see [Services](https://msdn.microsoft.com/en-us/library/windows/desktop/ms685141.aspx).
 
 
 ## <span id="controlsoftwareonly"></span>Control access to software only drivers
@@ -260,8 +259,8 @@ In addition to the possible vulnerabilities covered here, this topic provides ad
 
 For additional information about C and C++ secure coding, see [Secure coding resources](#securecodingresources) and the end of this topic.
 
-## <span id="DGC"></span><span id="dgc"></span>Device Guard compatibility
 
+## <span id="DGC"></span><span id="dgc"></span>Device Guard compatibility
 
 **Security checklist item \#5:** *Validate that your driver uses memory so that is Device Guard Compatible.*
 
@@ -400,21 +399,51 @@ For more information, review these topics.
 
 [Controlling Device Access in KMDF Drivers](https://msdn.microsoft.com/windows/hardware/drivers/wdf/controlling-device-access-in-kmdf-drivers)
 
-[SDDL for Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff563667)
-
-[SID Strings](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379602(v=vs.85).aspx)
-
 [Controlling Device Access](https://msdn.microsoft.com/library/windows/hardware/ff542063)
 
 [Controlling Device Namespace Access](https://msdn.microsoft.com/library/windows/hardware/ff542068)
 
 "Names, Security Descriptors and Device Classes " on page 6 of the *January February 2017 The NT Insider Newsletter* published by [OSR](http://www.osr.com).
 
+**Security Identifiers (SIDs) Risk Hierarchy** 
+
+The following section describes the risk hierarchy of the common security identifiers (SIDs) used in driver code. For general information about SDDL, see [SDDL for Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff563667), [SID Strings](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379602.aspx) and [SDDL String Syntax](https://msdn.microsoft.com/en-us/library/cc230374.aspx). 
+
+It is important to understand that if lower privilege callers are allowed to access the kernel code risk is increased. In this summary diagram, the risk increases as you allow lower privilege SIDs access to your driver functionality.
+
+```
+SY (System)
+\/
+BA (Built-in Administrators)
+\/
+LS (Local Service)
+\/
+AU (Authenticated User)
+```
+
+Following the general least privilege security principle, configure only the minimum level of access that is required for your driver to function.
+
+
+
+**Granular IOCTL Security Control**
+
+To tighten security when such IOCTLs are sent by user-mode callers, the driver code should include the [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550418.aspx) function. This function allows a driver to check access rights. Upon receiving an IOCTL, a driver can call [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550418.aspx), specifying FILE_READ_ACCESS, FILE_WRITE_ACCESS, or both. For more information see the following topics:
+
+[Define and handle IOCTLs securely](https://msdn.microsoft.com/en-us/library/windows/hardware/dn613909.aspx#define_and_handle_ioctls_securely)
+
+[IoValidateDeviceIoControlAccess routine](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550418.aspx)
+
+[WdmlibIoValidateDeviceIoControlAccess function](https://msdn.microsoft.com/en-us/library/windows/hardware/mt800806.aspx)
+
+[Defining I/O Control Codes](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/defining-i-o-control-codes)
+
+
 **Additional general Windows security model information**
 
 [Windows security model: what every driver writer needs to know](windows-security-model--what-every-driver-writer-needs-to-know.md)
 
 [Windows security model scenario: creating a file](windows-security-model-scenario--creating-a-file.md)
+
 
 
 ## <span id="enhancedeviceinstallationsecurity"></span>Enhance device installation security
