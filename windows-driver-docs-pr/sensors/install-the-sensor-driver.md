@@ -177,12 +177,13 @@ Before you install the sample sensor driver, you must turn on testsigning. Perfo
 
 1. In the Command prompt window, enter the following command to see whether testsigning is already turned on.
 **bcdedit /enum**
-2. If you see a listing similar to the following, showing an entry for testsigning, with its value set to  yes  then skip to **Step 5**.
+2. If you see a listing similar to the following, showing an entry for testsigning, with its value set to `yes` then skip to **Step 5**.
 ![command prompt window showing testsigning set to yes.](images/testsigning.png)
 
 3. If you need to turn on test signing, then enter the following command:
 **bcdedit /set testsigning on**
-4. Repeat **Step 1** (in this exercise) to verify that the value of the testsigning system variable is now set to  yes  in the Windows Boot Loader list.
+
+4. Repeat **Step 1** (in this exercise) to verify that the value of the testsigning system variable is now set to 'yes' in the Windows Boot Loader list.
 
 5. Restart the Sharks Cove. As the board restarts, hold the Volume-up button for about 2 seconds, to enter system setup (UEFI) window.
 
