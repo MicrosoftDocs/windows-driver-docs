@@ -15,7 +15,7 @@ This topic introduces Network Driver Interface Specification (NDIS) 6.80 and des
 
 NDIS 6.80 is a minor version update to NDIS 6.70 for miniport, protocol, filter, and intermediate drivers. For more information about porting NDIS 6.x drivers to NDIS 6.80, see [Porting NDIS 6.x drivers to NDIS 6.80](porting-ndis-6-x-drivers-to-ndis-6-70.md).
 
-For NIC drivers, the NetAdapter class extension (NetAdapterCx) has been updated from version 1.0 in NDIS 6.70 to version 1.1 in NDIS 6.80. For more information about the NetAdapterCx, see [NetAdapterCx](../netcx/index.md).
+For NIC drivers, the NetAdapter class extension (NetAdapterCx) has been updated TBD TBD TBD in NDIS 6.80. For more information about the NetAdapterCx, see [NetAdapterCx](../netcx/index.md).
 
 ## Feature updates
 
@@ -65,5 +65,15 @@ For more information about NetAdapterCx data structures, see [NetAdapterCx](../n
 #### New data structures
 
 The following data structures are new in NDIS 6.80.
+
+- [NDIS_STATUS_WWAN_MODEM_CONFIG_INFO](TBD)
+- [OID_WWAN_MODEM_CONFIG_INFO](TBD)
+
+#### Updated data structures
+
+The following data structures were updated in NDIS 6.80.
+
+- [NDIS_NET_BUFFER_LIST_INFO](https://msdn.microsoft.com/library/windows/hardware/ff566569)
+- [NdisMRegisterScatterGatherDma](https://msdn.microsoft.com/library/windows/hardware/ff563659)
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
