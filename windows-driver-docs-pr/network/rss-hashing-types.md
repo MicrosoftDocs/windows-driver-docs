@@ -43,16 +43,16 @@ A NIC must support one of the combinations from the IPv4 set. The other sets and
 
 In general, if the NIC cannot interpret the received data correctly, it must not compute the hash value. For example, if the NIC only supports IPv4 and it receives an IPv6 packet, which it cannot interpret correctly, it must not compute the hash value. If the NIC receives a packet for a transport type that it does not support, it must not compute the hash value. For example, if the NIC receives a UDP packet when it is supposed to be calculating hash values for TCP packets, it must not compute the hash value. In this case, the packet is processed as in the non-RSS case. For more information about the non-RSS receive processing, see [Non-RSS Receive Processing](non-rss-receive-processing.md).
 
-## IPv4 hash type combinations | TEST
+## IPv4 hash type combinations
 
 The valid hash type combinations in the IPv4 set are:
 
 - [NDIS_HASH_IPV4](#ndishashipv4)
 - [NDIS_HASH_TCP_IPV4](#ndishashtcpipv4)
 - [NDIS_HASH_UDP_IPV4](#ndishashudpipv4)
-- [NDIS_HASH_TCP_IPV4 | NDIS_HASH_IPV4](#ndishashtcpipv4-ndishashipv4)
-- [NDIS_HASH_UDP_IPV4 | NDIS_HASH_IPV4](#ndishashudpipv4-ndishashipv4)
-- [NDIS_HASH_TCP_IPV4 | NDIS_HASH_UDP_IPV4 | NDIS_HASH_IV4](#ndishashtcpipv4-ndishashudpipv4-ndishashipv4)
+- [NDIS_HASH_TCP_IPV4 | NDIS_HASH_IPV4](#ndishashtcpipv4--ndishashipv4)
+- [NDIS_HASH_UDP_IPV4 | NDIS_HASH_IPV4](#ndishashudpipv4--ndishashipv4)
+- [NDIS_HASH_TCP_IPV4 | NDIS_HASH_UDP_IPV4 | NDIS_HASH_IV4](#ndishashtcpipv4--ndishashudpipv4--ndishashipv4)
 
 ### NDIS_HASH_IPV4  
 
@@ -109,9 +109,9 @@ The valid hash type combinations in the IPv6 set are:
 - [NDIS_HASH_IPV6](#ndishashipv6)
 - [NDIS_HASH_TCP_IPV6](#ndishashtcpipv6)
 - [NDIS_HASH_UDP_IPV6](#ndishashudpipv6)
-- [NDIS_HASH_TCP_IPV6 | NDIS_HASH_IPV6](#ndishashtcpipv6-ndishashipv6)
-- [NDIS_HASH_UDP_IPV6 | NDIS_HASH_IPV6](#ndishashudpipv6-ndishashipv6)
-- [NDIS_HASH_TCP_IPV6 | NDIS_HASH_UDP_IPV6 | NDIS_HASH_IPV6](#ndishashtcpipv6-ndishashudpipv6-ndishashipv6)
+- [NDIS_HASH_TCP_IPV6 | NDIS_HASH_IPV6](#ndishashtcpipv6--ndishashipv6)
+- [NDIS_HASH_UDP_IPV6 | NDIS_HASH_IPV6](#ndishashudpipv6--ndishashipv6)
+- [NDIS_HASH_TCP_IPV6 | NDIS_HASH_UDP_IPV6 | NDIS_HASH_IPV6](#ndishashtcpipv6--ndishashudpipv6--ndishashipv6)
 
 ### NDIS_HASH_IPV6
 
@@ -161,9 +161,9 @@ The valid combinations in the IPv6 with extension headers set are:
 - [NDIS_HASH_IPV6_EX](#ndishashipv6ex)
 - [NDIS_HASH_TCP_IPV6_EX](#ndishashtcpipv6ex)
 - [NDIS_HASH_UDP_IPV6_EX](#ndishashudpipv6ex)
-- [NDIS_HASH_TCP_IPV6_EX | NDIS_HASH_IPV6_EX](#ndishashtcpipv6ex-ndishashipv6ex)
-- [NDIS_HASH_UDP_IPV6_EX | NDIS_HASH_IPV6_EX](#ndishashudpipv6ex-ndishashipv6ex)
-- [NDIS_HASH_TCP_IPV6_EX | NDIS_HASH_UDP_IPV6_EX | NDIS_HASH_IPV6_EX](#ndishashtcpipv6ex-ndishashudpipv6ex-ndishashipv6ex)
+- [NDIS_HASH_TCP_IPV6_EX | NDIS_HASH_IPV6_EX](#ndishashtcpipv6ex--ndishashipv6ex)
+- [NDIS_HASH_UDP_IPV6_EX | NDIS_HASH_IPV6_EX](#ndishashudpipv6ex--ndishashipv6ex)
+- [NDIS_HASH_TCP_IPV6_EX | NDIS_HASH_UDP_IPV6_EX | NDIS_HASH_IPV6_EX](#ndishashtcpipv6ex--ndishashudpipv6ex--ndishashipv6ex)
 
 ### NDIS_HASH_IPV6_EX  
 
