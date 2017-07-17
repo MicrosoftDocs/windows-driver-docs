@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Retrieves the strings that are currently assigned to the adapter configuration object, creates a WDFSTRING object for each string, and adds each string object to a specified collection object.
+Returns a WDFCOLLECTION of at least one WDFSTRING object corresponding to the string or strings that are currently assigned to the specified registry value name in the device's software key.
 
 Syntax
 ------
