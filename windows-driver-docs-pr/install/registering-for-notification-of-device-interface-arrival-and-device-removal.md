@@ -29,8 +29,7 @@ Typically, a user-mode component calls [**CM\_Register\_Notification**](https://
 
 5.  Use this table as you implement your device handle notification callback.
 
-    [!div class="mx-tableFixed"]
-
+    <div class="mx-tableFixed">
     <table>
     <colgroup>
     <col width="50%" />
@@ -64,7 +63,7 @@ Typically, a user-mode component calls [**CM\_Register\_Notification**](https://
     </tr>
     </tbody>
     </table>
-
+    </div>
      
 
 6.  Once you are finished with the device, call [**CM\_Unregister\_Notification**](https://msdn.microsoft.com/library/windows/hardware/hh780228) to unregister the interface notification callback that you registered in step 1.
