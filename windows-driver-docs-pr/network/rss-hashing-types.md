@@ -43,7 +43,7 @@ A NIC must support one of the combinations from the IPv4 set. The other sets and
 
 In general, if the NIC cannot interpret the received data correctly, it must not compute the hash value. For example, if the NIC only supports IPv4 and it receives an IPv6 packet, which it cannot interpret correctly, it must not compute the hash value. If the NIC receives a packet for a transport type that it does not support, it must not compute the hash value. For example, if the NIC receives a UDP packet when it is supposed to be calculating hash values for TCP packets, it must not compute the hash value. In this case, the packet is processed as in the non-RSS case. For more information about the non-RSS receive processing, see [Non-RSS Receive Processing](non-rss-receive-processing.md).
 
-## IPv4 hash type combinations
+## IPv4 hash type combinations | TEST
 
 The valid hash type combinations in the IPv4 set are:
 
@@ -90,15 +90,15 @@ The NIC should compute the hash value over the following fields:
 - Source UDP Port
 - Destination UDP Port
 
-### NDIS_HASH_TCP_IPV4 \| NDIS_HASH_IPV4
+### NDIS_HASH_TCP_IPV4 | NDIS_HASH_IPV4
 
 If this flag combination is set, the NIC should perform the hash calculations as specified for the NDIS_HASH_TCP_IPV4 case. However, if the packet does not contain a TCP header, the NIC should compute the hash value as specified for the NDIS_HASH_IPV4 case.
 
-### NDIS_HASH_UDP_IPV4 \| NDIS_HASH_IPV4
+### NDIS_HASH_UDP_IPV4 | NDIS_HASH_IPV4
 
 If this flag combination is set, the NIC should perform the hash calculations as specified for the NDIS_HASH_TCP_IPV4 case. However, if the packet does not contain a UDP header, the NIC should compute the hash value as specified for the NDIS_HASH_IPV4 case.
 
-### NDIS_HASH_TCP_IPV4 \| NDIS_HASH_UDP_IPV4 \| NDIS_HASH_IPV4
+### NDIS_HASH_TCP_IPV4 | NDIS_HASH_UDP_IPV4 | NDIS_HASH_IPV4
 
 If this flag combination is set, the NIC should perform the hash calculation as specified by the transport in the packet. However, if the packet does not contain a TCP or UDP header, the NIC should compute the hash value as specified for the NDIS_HASH_IPV4 case.
 
