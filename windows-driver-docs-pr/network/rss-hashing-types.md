@@ -50,9 +50,9 @@ The valid hash type combinations in the IPv4 set are:
 - [NDIS_HASH_IPV4](#ndishashipv4)
 - [NDIS_HASH_TCP_IPV4](#ndishashtcpipv4)
 - [NDIS_HASH_UDP_IPV4](#ndishashudpipv4)
-- [NDIS_HASH_TCP_IPV4 | NDIS_HASH_IPV4](#ndishashtcpipv4-ndishashipv4)
-- [NDIS_HASH_UDP_IPV4 | NDIS_HASH_IPV4](#ndishashudpipv4-ndishashipv4)
-- [NDIS_HASH_TCP_IPV4 | NDIS_HASH_UDP_IPV4 | NDIS_HASH_IPV4](#ndishashtcpipv4-ndishashudpipv4-ndishashipv4)
+- [NDIS_HASH_TCP_IPV4 | NDIS_HASH_IPV4](#ndishashtcpipv4\-ndishashipv4)
+- [NDIS_HASH_UDP_IPV4 | NDIS_HASH_IPV4](#ndishashudpipv4\-ndishashipv4)
+- [NDIS_HASH_TCP_IPV4 | NDIS_HASH_UDP_IPV4 | NDIS_HASH_IV4](#ndishashtcpipv4\-ndishashudpipv4\-ndishashipv4)
 
 ### NDIS_HASH_IPV4  
 
