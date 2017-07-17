@@ -29,6 +29,8 @@ Typically, a user-mode component calls [**CM\_Register\_Notification**](https://
 
 5.  Use this table as you implement your device handle notification callback.
 
+    [!div class="mx-tableFixed"]
+
     <table>
     <colgroup>
     <col width="50%" />
