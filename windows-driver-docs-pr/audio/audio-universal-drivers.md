@@ -95,7 +95,7 @@ To create a smoother and more reliable install experience and to better support 
 
 This diagram summarizes a componentized audio installation.
 
-![The componentized audio stack showing dsp driver, codec and APOs](/images/audio-componentized-stack-diagram.png "Componentized Audio Stack Diagram")
+![The componentized audio stack showing DSP driver codec and APOs](images/audio-componentized-stack-diagram.png)
 
 A separate extension INF file is used for each software component. for more information, see 
 [Using an Extension INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file).
@@ -223,7 +223,7 @@ Follow these steps to install the driver using the PnpUtil on the target system.
 
 5. Locate an MP3 or other audio file on the target computer and double-click to play it. Then in the Sound dialog box, verify that there is activity in the volume level indicator associated with the Microsoft Virtual Audio Device (WDM) - Sysvad Sample driver.
 
-## <span id="building_the_sysvad_universal_audio_sample_for_windows_10_mobile"></span>>Building the Sysvad Universal Audio Sample for Windows 10 Mobile
+## <span id="building_the_sysvad_universal_audio_sample_for_windows_10_mobile"></span>Building the Sysvad Universal Audio Sample for Windows 10 Mobile
 
 
 Complete the following steps to build the sysvad sample for Windows 10 Mobile.
