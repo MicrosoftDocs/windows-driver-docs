@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Driver security checklist
 
 
-This topic provides a driver security checklist for driver developers.
+This topic provides a driver security checklist for driver developers. By following the guidance provided in the checklist, you can reduce risk that your driver will be compromised.
 
 ## <span id="Driver_Security_Overview"></span><span id="driver_security_overview"></span><span id="DRIVER_SECURITY_OVERVIEW"></span>Driver security overview
 
@@ -23,23 +23,25 @@ However, after a driver is released, there are attackers who attempt to probe an
 
 Creating secure drivers requires the cooperation of the system architect (consciously thinking of potential threats to the driver), the developer implementing the code (defensively coding common operations that can be the source of exploits), and the test team (pro-actively attempting to find weakness and vulnerabilities). By properly coordinating all of these activities, the security of the driver will be dramatically enhanced.
 
+In addition to avoiding the issues associated with a driver being attacked, many of the steps described, such as more precise use of kernel memory, will increase the reliability of your driver. This will reduce support costs and increase customer satisfaction with your product. 
+
 **Security checklist:** *Complete the security task described in each of these topics.*
 
 [Confirm that a kernel driver is required](#confirmkernel)
 
 [Control access to software only drivers](#controlsoftwareonly)
 
-[Threat analysis and threat model creation](#threatanalysis)
+[Perform threat analysis](#threatanalysis)
 
-[Driver security code practices](#driversecuritycodepractices)
+[Follow driver security code practices](#driversecuritycodepractices)
 
-[Device Guard compatibility](#dgc)
+[Validate Device Guard compatibility](#dgc)
 
-[Technology specific code practices](#technologyspecificcodepractices)
+[Follow technology specific code practices](#technologyspecificcodepractices)
 
-[Managing driver access control](#managingdriveraccesscontrol)
+[Manage driver access control](#managingdriveraccesscontrol)
 
-[Code validation tools](#codevalidationtools)
+[Use code validation tools](#codevalidationtools)
 
 [Use code analysis in Visual Studio to investigate driver security](#use-code-analysis)
 
@@ -49,21 +51,21 @@ Creating secure drivers requires the cooperation of the system architect (consci
 
 [Check code with Binscope Binary Analyzer](#binscope)
 
-[Debugger techniques and extensions](#debugger)
+[Review debugger techniques and extensions](#debugger)
 
 [Enhance device installation security](#enhancedeviceinstallationsecurity)
 
-[Release driver signing](#releasedriversigning)
+[Execute proper release driver signing](#releasedriversigning)
 
-[Secure coding resources](#securecodingresources)
+[Review secure coding resources](#securecodingresources)
 
-[Key takeaways](#keytakeaways)
+[Summary of key takeaways](#keytakeaways)
 
 ## <span id="confirmkernel"></span>Confirm that a kernel driver is required
 
 **Security checklist item \#1:** *Confirm that a kernel driver is required and that a lower risk approach such as Windows service or app is not a better option.*
 
- Drivers live in the windows kernel, and having an issue when executing in kernel exposes the entire operating system. If any other option is available, it likely will be lower cost and have less associated risk than creating a new kernel driver.
+ Drivers live in the Windows kernel, and having an issue when executing in kernel exposes the entire operating system. If any other option is available, it likely will be lower cost and have less associated risk than creating a new kernel driver.
 For more information about using the built in Windows drivers, see [Do you need to write a driver?](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/do-you-need-to-write-a-driver-).
 
 For information on using the lower risk user mode framework driver (UMDF), see [Choosing a driver model](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/choosing-a-driver-model).
@@ -96,7 +98,7 @@ Kernel driver code that is used for development, testing, or manufacturing might
 For example, imagine OEM Fabrikam wants to distribute a driver that enables an overclocking utility for their systems.  However, if this software only driver were to execute on a system from a different OEM, system instability or damage might result.  Fabrikam’s systems should include a unique plug-and-play ID to enable creation of a PnP driver, which is also updatable via Windows Update.  If this is not possible, and Fabrikam authors a Legacy driver, that driver should find another method to verify it is executing on a Fabrikam system, for example by examination of the SMBIOS table, prior to enabling any capabilities. 
 
 
-## <span id="ThreatAnalysis"></span><span id="threatanalysis"></span><span id="THREATANALYSIS"></span>Threat analysis and threat model creation
+## <span id="ThreatAnalysis"></span><span id="threatanalysis"></span><span id="THREATANALYSIS"></span>Perform threat analysis
 
 
 **Security checklist item \#3:** *Either modify an existing driver threat model or create a custom threat model for your driver.*
@@ -110,7 +112,7 @@ This topic provides driver specific guidance for creating a light weight threat 
 Security Development Lifecycle (SDL) best practices and associated tools can be used by IHVs and OEMs to improve the security of their products. For more information see [SDL recommendations for OEMs](https://msdn.microsoft.com/windows/hardware/drivers/bringup/security-overview#sdl).
 
 
-## <span id="DriverSecurityCodePractices"></span><span id="driversecuritycodepractices"></span><span id="DRIVERSECURITYCODEPRACTICES"></span>Driver security code practices
+## <span id="DriverSecurityCodePractices"></span><span id="driversecuritycodepractices"></span><span id="DRIVERSECURITYCODEPRACTICES"></span>Follow driver security code practices
 
 **Security checklist item \#4:** *Review your code and remove any known code vulnerabilities.*
 
@@ -260,7 +262,7 @@ In addition to the possible vulnerabilities covered here, this topic provides ad
 For additional information about C and C++ secure coding, see [Secure coding resources](#securecodingresources) and the end of this topic.
 
 
-## <span id="DGC"></span><span id="dgc"></span>Device Guard compatibility
+## <span id="DGC"></span><span id="dgc"></span>Validate Device Guard compatibility
 
 **Security checklist item \#5:** *Validate that your driver uses memory so that is Device Guard Compatible.*
 
@@ -346,7 +348,7 @@ For general information about Device Guard, see [Windows 10 Device Guard and Cre
 and [Device Guard deployment guide](https://docs.microsoft.com/en-us/windows/device-security/device-guard/device-guard-deployment-guide)
 
 
-## <span id="technologyspecificcodepractices"></span>Technology specific code practices
+## <span id="technologyspecificcodepractices"></span>Follow technology specific code practices
 
 
 **Security checklist item \#6:** *Review the following technology specific guidance for your driver.*
@@ -384,7 +386,7 @@ For information related to printer driver security, see [V4 Printer Driver Secur
 For information about WIA security, see [Security Issues for Windows Image Acquisition (WIA) Drivers](https://msdn.microsoft.com/windows/hardware/drivers/image/security-issues-for-wia-drivers)
 
 
-## <span id="ManagingDriverAccessControl"></span><span id="managingdriveraccesscontrol"></span><span id="MANAGINGDRIVERACCESSCONTROL"></span>Managing driver access control
+## <span id="ManagingDriverAccessControl"></span><span id="managingdriveraccesscontrol"></span><span id="MANAGINGDRIVERACCESSCONTROL"></span>Manage driver access control
 
 **Security checklist item \#7:** *Review your driver to make sure that your are properly controlling access.*
 
@@ -467,7 +469,7 @@ For more information, review these topics.
 Before you release a driver package to the public, we recommend that you submit the package for certification. For more information, see [Test for performance and compatibility](https://msdn.microsoft.com/windows/hardware/commercialize/test/index), [Get started with the Hardware program](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/get-started-with-the-hardware-dashboard), [Hardware Dashboard Services](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/dashboard-services), and [Attestation signing a kernel driver for public release](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/attestation-signing-a-kernel-driver-for-public-release).
 
 
-## <span id="CodeValidationTools"></span><span id="codevalidationtools"></span><span id="CODEVALIDATIONTOOLS"></span>Code validation tools
+## <span id="CodeValidationTools"></span><span id="codevalidationtools"></span><span id="CODEVALIDATIONTOOLS"></span>Use code validation tools
 
 **Security checklist item \#10:** *Use these tools to help validate that your code follows security recommendations and to probe for to look for gaps that were missed in your development process.*
 
@@ -953,7 +955,7 @@ All Scanned Items
 • C:\Samples\KMDF_Echo_Driver\echo.sys
 ```
 
-## <span id="Debugger"></span><span id="debugger"></span><span id="DEBUGGER"></span>Debugger techniques and extensions
+## <span id="Debugger"></span><span id="debugger"></span><span id="DEBUGGER"></span>Review debugger techniques and extensions
 
 
 **Security checklist item \#15:** *Review these debugger tools and consider their use in your development debugging workflow.*
@@ -978,7 +980,8 @@ The !sid extension displays the security identifier (SID) at the specified addre
 
 The !sd extension displays the security descriptor at the specified address. For more information, see [**!sd**](https://msdn.microsoft.com/library/windows/hardware/ff564930).
 
-## <span id="SecureCodingResources"></span><span id="securecodingresources"></span><span id="SECURECODINGRESOURCES"></span>Secure coding resources
+
+## <span id="SecureCodingResources"></span><span id="securecodingresources"></span><span id="SECURECODINGRESOURCES"></span>Review secure coding resources
 
 
 **Security checklist item \#16:** *Review these resources to expand your understanding of secure coding best practices that are applicable to driver developers.*
@@ -1044,7 +1047,7 @@ This video from WinHec provides an overview of Windows 10 security features. [Wi
 
  
 
-## <span id="keytakeaways"></span>Key takeaways
+## <span id="keytakeaways"></span>Summary of key takeaways
 
 Driver security is a complex undertaking containing many elements, but here are a few key points to consider.
 
