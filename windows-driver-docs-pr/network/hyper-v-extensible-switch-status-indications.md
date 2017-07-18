@@ -3,6 +3,11 @@ title: Hyper-V Extensible Switch Status Indications
 author: windows-driver-content
 description: Hyper-V Extensible Switch Status Indications
 ms.assetid: ADF6622F-93E1-4A0D-AB54-A99F7D33EBA0
+ms.author: windowsdriverdev 
+ms.date: 0718/2017 
+ms.topic: article 
+ms.prod: windows-hardware 
+ms.technology: windows-devices 
 ---
 
 # Hyper-V Extensible Switch Status Indications

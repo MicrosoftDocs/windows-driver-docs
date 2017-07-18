@@ -3,6 +3,11 @@ title: Hyper-V Extensible Switch Macros
 author: windows-driver-content
 description: Hyper-V Extensible Switch Macros
 ms.assetid: 6998518C-3989-46DD-BD69-3826994FD6A2
+ms.author: windowsdriverdev 
+ms.date: 0718/2017 
+ms.topic: article 
+ms.prod: windows-hardware 
+ms.technology: windows-devices 
 ---
 
 # Hyper-V Extensible Switch Macros

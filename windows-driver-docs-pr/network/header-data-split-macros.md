@@ -3,6 +3,11 @@ title: Header-Data Split Macros
 author: windows-driver-content
 description: Header-Data Split Macros
 ms.assetid: bc761c1f-e584-4a32-9e12-3430b49d88e1
+ms.author: windowsdriverdev 
+ms.date: 0718/2017 
+ms.topic: article 
+ms.prod: windows-hardware 
+ms.technology: windows-devices 
 ---
 
 # Header-Data Split Macros

@@ -3,6 +3,11 @@ title: MB NDIS Status Notifications
 author: windows-driver-content
 description: MB NDIS Status Notifications
 ms.assetid: 97538f74-f602-4d38-a5a8-e52eb3194fb9
+ms.author: windowsdriverdev 
+ms.date: 0718/2017 
+ms.topic: article 
+ms.prod: windows-hardware 
+ms.technology: windows-devices 
 ---
 
 # MB NDIS Status Notifications
