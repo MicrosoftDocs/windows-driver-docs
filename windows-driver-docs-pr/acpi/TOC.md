@@ -17,4 +17,12 @@
 ### [Enumerating Child Devices and Control Methods](enumerating-child-devices-and-control-methods.md)
 #### [Sending an IOCTL_ACPI_ENUM_CHILDREN Request](sending-an-ioctl-acpi-enum-children-request.md)
 ### [Control Method Macros](control-method-macros.md)
-
+#### [ACPI_METHOD_SET_ARGUMENT_INTEGER](acpi-method-set-argument-integer.md)
+#### [ACPI_METHOD_SET_ARGUMENT_STRING](acpi-method-set-argument-string.md)
+#### [ACPI_METHOD_SET_ARGUMENT_BUFFER](acpi-method-set-argument-buffer.md)
+#### [ACPI_ENUM_CHILD_NEXT](acpi-enum-child-next.md)
+#### [ACPI_ENUM_CHILD_LENGTH_FROM_CHILD](acpi-enum-child-length-from-child.md)
+#### [ACPI_METHOD_ARGUMENT_LENGTH](acpi-method-argument-length.md)
+#### [ACPI_METHOD_ARGUMENT_LENGTH_FROM_ARGUMENT](acpi-method-argument-length-from-argument.md)
+#### [ACPI_METHOD_NEXT_ARGUMENT](acpi-method-next-argument.md)
+#### [ACPI_MANIPULATE_LOCK_BUFFER](acpi-manipulate-lock-buffer.md)
