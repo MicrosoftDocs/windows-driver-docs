@@ -33,13 +33,19 @@ In addition to avoiding the issues associated with a driver being attacked, many
 
 [Perform threat analysis](#threatanalysis)
 
-[Follow driver security code practices](#driversecuritycodepractices)
+[Follow driver secure coding guidelines](#driversecuritycodepractices)
 
 [Validate Device Guard compatibility](#dgc)
 
-[Follow technology specific code practices](#technologyspecificcodepractices)
+[Follow technology specific code best practices](#technologyspecificcodepractices)
+
+[Perform peer code review](#peercodereview)
 
 [Manage driver access control](#managingdriveraccesscontrol)
+
+[Enhance device installation security](#enhancedeviceinstallationsecurity)
+
+[Execute proper release driver signing](#releasedriversigning)
 
 [Use code validation tools](#codevalidationtools)
 
@@ -52,10 +58,6 @@ In addition to avoiding the issues associated with a driver being attacked, many
 [Check code with Binscope Binary Analyzer](#binscope)
 
 [Review debugger techniques and extensions](#debugger)
-
-[Enhance device installation security](#enhancedeviceinstallationsecurity)
-
-[Execute proper release driver signing](#releasedriversigning)
 
 [Review secure coding resources](#securecodingresources)
 
@@ -85,10 +87,11 @@ Because software only kernel drivers contain additional risk, they must be limit
 
 Code signed by a trusted SPC (Software Publishers Certificate) or WHQL (Windows Hardware Quality Labs) signature must not facilitate bypass of Windows code integrity and security technologies.  Before code is signed by a trusted SPC or WHQL signature, first ensure it complies with guidance from both [Device.DevFund.Reliability.BasicSecurity](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1703/device-devfund#device.devfund.reliability) and [Creating Reliable Kernel-Mode Drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/creating-reliable-kernel-mode-drivers). In addition the code must not contain any dangerous behaviors, described below.  For more information about driver signing, see [Release driver signing](#releasedriversigning), later in this topic.
 
-**Examples of dangerous behavior include**
-- Providing the ability to map arbitrary kernel, physical, or device memory to user mode
+Examples of dangerous behavior include the following.
+
+- Providing the ability to map arbitrary kernel, physical, or device memory to user mode.
 - Providing the ability to read or write arbitrary kernel, physical or device memory, including Port I/O (input, output).
-- Providing access to storage that bypasses Windows access control 
+- Providing access to storage that bypasses Windows access control. 
 - Providing the ability to modify hardware or firmware the driver was not designed to manage.  
 
 _Development, testing, and manufacturing kernel driver code_ 
@@ -112,15 +115,11 @@ This topic provides driver specific guidance for creating a light weight threat 
 Security Development Lifecycle (SDL) best practices and associated tools can be used by IHVs and OEMs to improve the security of their products. For more information see [SDL recommendations for OEMs](https://msdn.microsoft.com/windows/hardware/drivers/bringup/security-overview#sdl).
 
 
-## <span id="DriverSecurityCodePractices"></span><span id="driversecuritycodepractices"></span><span id="DRIVERSECURITYCODEPRACTICES"></span>Follow driver security code practices
+## <span id="DriverSecurityCodePractices"></span><span id="driversecuritycodepractices"></span><span id="DRIVERSECURITYCODEPRACTICES"></span>Follow driver secure coding guidelines
 
 **Security checklist item \#4:** *Review your code and remove any known code vulnerabilities.*
 
 The core activity of creating secure drivers is identifying areas in the code that need to be changed to avoid known software vulnerabilities. Many of these known software vulnerabilities deal with keeping strict track of the use of memory to avoid issues with others overwriting or otherwise comprising the memory locations that your driver uses.
-
-**Code review**
-
-Seek out knowledgeable code review to look for issues, that you may have missed. A second set of eyes will often see issues that you may have missed.
 
 The [Code Validation Tools](#codevalidationtools) section of this topics describes software tools that can be used to help locate known software vulnerabilities.
 
@@ -348,7 +347,7 @@ For general information about Device Guard, see [Windows 10 Device Guard and Cre
 and [Device Guard deployment guide](https://docs.microsoft.com/en-us/windows/device-security/device-guard/device-guard-deployment-guide)
 
 
-## <span id="technologyspecificcodepractices"></span>Follow technology specific code practices
+## <span id="technologyspecificcodepractices"></span>Follow technology specific code best practices
 
 
 **Security checklist item \#6:** *Review the following technology specific guidance for your driver.*
@@ -386,9 +385,20 @@ For information related to printer driver security, see [V4 Printer Driver Secur
 For information about WIA security, see [Security Issues for Windows Image Acquisition (WIA) Drivers](https://msdn.microsoft.com/windows/hardware/drivers/image/security-issues-for-wia-drivers)
 
 
+## <span id="peercodereview"></span>Perform peer code review
+
+**Security checklist item \#7:** *Perform code review, to look for issues not surfaced by the other tools and processes*
+
+Seek out knowledgeable code review to look for issues, that you may have missed. A second set of eyes will often see issues that you may have overlooked.
+
+If you don't have suitable staff to review you code internally, consider engaging outside help for this purpose.
+
+
+
+
 ## <span id="ManagingDriverAccessControl"></span><span id="managingdriveraccesscontrol"></span><span id="MANAGINGDRIVERACCESSCONTROL"></span>Manage driver access control
 
-**Security checklist item \#7:** *Review your driver to make sure that your are properly controlling access.*
+**Security checklist item \#8:** *Review your driver to make sure that your are properly controlling access.*
 
 **Managing Driver Access Control**
 
@@ -425,8 +435,6 @@ AU (Authenticated User)
 
 Following the general least privilege security principle, configure only the minimum level of access that is required for your driver to function.
 
-
-
 **Granular IOCTL Security Control**
 
 To tighten security when such IOCTLs are sent by user-mode callers, the driver code should include the [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550418.aspx) function. This function allows a driver to check access rights. Upon receiving an IOCTL, a driver can call [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550418.aspx), specifying FILE_READ_ACCESS, FILE_WRITE_ACCESS, or both. For more information see the following topics:
@@ -450,7 +458,7 @@ To tighten security when such IOCTLs are sent by user-mode callers, the driver c
 
 ## <span id="enhancedeviceinstallationsecurity"></span>Enhance device installation security
 
-**Security checklist item \#8:** *Review driver inf creation and installation guidance to make sure you are following best practices.*
+**Security checklist item \#9:** *Review driver inf creation and installation guidance to make sure you are following best practices.*
 
 For more information, review these topics.
 
@@ -461,17 +469,18 @@ For more information, review these topics.
 [Using Device Installation Functions](https://msdn.microsoft.com/windows/hardware/drivers/install/using-device-installation-functions)
 
 [Device and Driver Installation Advanced Topics](https://msdn.microsoft.com/windows/hardware/drivers/install/device-and-driver-installation-advanced-topics)
-## <span id="ReleaseDriverSigning"></span><span id="releasedriversigning"></span><span id="RELEASEDRIVERSIGNING"></span>Release driver signing
 
 
-**Security checklist item \#9:** *Use the Windows partner portal to sign your driver for distribution.*
+## <span id="ReleaseDriverSigning"></span><span id="releasedriversigning"></span><span id="RELEASEDRIVERSIGNING"></span>Execute proper release driver signing
+
+**Security checklist item \#10:** *Use the Windows partner portal to properly sign your driver for distribution.*
 
 Before you release a driver package to the public, we recommend that you submit the package for certification. For more information, see [Test for performance and compatibility](https://msdn.microsoft.com/windows/hardware/commercialize/test/index), [Get started with the Hardware program](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/get-started-with-the-hardware-dashboard), [Hardware Dashboard Services](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/dashboard-services), and [Attestation signing a kernel driver for public release](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/attestation-signing-a-kernel-driver-for-public-release).
 
 
 ## <span id="CodeValidationTools"></span><span id="codevalidationtools"></span><span id="CODEVALIDATIONTOOLS"></span>Use code validation tools
 
-**Security checklist item \#10:** *Use these tools to help validate that your code follows security recommendations and to probe for to look for gaps that were missed in your development process.*
+**Security checklist item \#11:** *Use these tools to help validate that your code follows security recommendations and to probe for to look for gaps that were missed in your development process.*
 
 **Code analysis for drivers**
 
@@ -525,35 +534,8 @@ For more information, see [New Version of BinScope Binary Analyzer](https://blog
 
 Consider the development of custom domain specific security tests. To develop additional tests gather input from the original designers of the software, as well as unrelated development resources familiar with the specific type of driver being developed, and one or more people familiar with security intrusion analysis and prevention.
 
-## <span id="SDV"></span><span id="sdv"></span>Use Static Driver Verifier to check for vulnerabilities
-
-
-**Security checklist item \#11:** *Follow these steps to use Static Driver Verifier (SDV) in Visual Studio to check for vulnerabilities in your driver code.*
-
-For more information, see [Static Driver Verifier](https://msdn.microsoft.com/windows/hardware/drivers/devtest/static-driver-verifier). Note that only certain types of drivers are supported by SDV. For more information about the drivers that SDV can verify, see [Supported Drivers](https://msdn.microsoft.com/windows/hardware/drivers/devtest/supported-drivers).
-
-1. Open the targeted driver solution in Visual Studio.
-
-To become familiar with SDV, you can use one of the sample drivers - for example the featured toaster sample. <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured>
-
-1. In Visual Studio, change the build type to *Release*. Static driver verifier requires that the build type is release, not debug.
-
-2. In Visual Studio, select Build &gt;&gt; Build Solution.
-
-3. In Visual Studio, select Driver &gt;&gt; Launch Static Driver Verifier.
-
-4. In SDV, on the "Rules" tab select *Default* in the pull down under Rule Sets.
-
-Although the default rules find many common issues, consider running the more extensive *All driver rules* rule set as well.
-
-5. In the "Main" tab of SDV, click *Start*.
-
-6. When SDV is complete, review any warnings in the output. The *Main* tab displays the total number of defects found.
-
-7. Click on each warning to load the SDV Report Page and examine the information associated with the possible code vulnerability. Use the report to investigate the verification result and to identify paths in your driver that fail a SDV verification. For more information, see [Static Driver Verifier Report](https://msdn.microsoft.com/library/windows/hardware/ff552834).
 
 ## <span id="use-code-analysis"></span>Use code analysis in Visual Studio to investigate driver security
-
 
 **Security checklist item \#12:** *Follow these steps to use the code analysis feature in Visual Studio to check for vulnerabilities in your driver code.*
 
@@ -579,9 +561,39 @@ Click on the linked warning code to see additional information.
 
 Determine if your code needs to be changed, or if an annotation needs to be added to allow the code analysis engine to properly follow the intent of your code. For more information on code annotation, see [Using SAL Annotations to Reduce C/C++ Code Defects](https://msdn.microsoft.com/library/ms182032.aspx) and [SAL 2.0 Annotations for Windows Drivers](https://msdn.microsoft.com/windows/hardware/drivers/devtest/sal-2-annotations-for-windows-drivers).
 
+
+
+
+## <span id="SDV"></span><span id="sdv"></span>Use Static Driver Verifier to check for vulnerabilities
+
+**Security checklist item \#13:** *Follow these steps to use Static Driver Verifier (SDV) in Visual Studio to check for vulnerabilities in your driver code.*
+
+For more information, see [Static Driver Verifier](https://msdn.microsoft.com/windows/hardware/drivers/devtest/static-driver-verifier). Note that only certain types of drivers are supported by SDV. For more information about the drivers that SDV can verify, see [Supported Drivers](https://msdn.microsoft.com/windows/hardware/drivers/devtest/supported-drivers).
+
+1. Open the targeted driver solution in Visual Studio.
+
+To become familiar with SDV, you can use one of the sample drivers - for example the featured toaster sample. <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured>
+
+1. In Visual Studio, change the build type to *Release*. Static driver verifier requires that the build type is release, not debug.
+
+2. In Visual Studio, select Build &gt;&gt; Build Solution.
+
+3. In Visual Studio, select Driver &gt;&gt; Launch Static Driver Verifier.
+
+4. In SDV, on the "Rules" tab select *Default* in the pull down under Rule Sets.
+
+Although the default rules find many common issues, consider running the more extensive *All driver rules* rule set as well.
+
+5. In the "Main" tab of SDV, click *Start*.
+
+6. When SDV is complete, review any warnings in the output. The *Main* tab displays the total number of defects found.
+
+7. Click on each warning to load the SDV Report Page and examine the information associated with the possible code vulnerability. Use the report to investigate the verification result and to identify paths in your driver that fail a SDV verification. For more information, see [Static Driver Verifier Report](https://msdn.microsoft.com/library/windows/hardware/ff552834).
+
+
 ## <span id="use-the-device-guard-readiness-tool"></span>Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility
 
-**Security checklist item \#13:** *Follow these steps to use Device Guard Readiness Tool to evaluate HVCI driver compatibility of your driver code.*
+**Security checklist item \#14:** *Follow these steps to use Device Guard Readiness Tool to evaluate HVCI driver compatibility of your driver code.*
 
 **Overview**
 
@@ -876,7 +888,7 @@ verifier /query
 
 ## <span id="BinScope"></span><span id="binscope"></span><span id="BINSCOPE"></span>Check code with BinScope Binary Analyzer
 
-**Security checklist item \#14:** *Follow these steps to use BinScope to double check compile and build options are configured to minimize known security issues.*
+**Security checklist item \#15:** *Follow these steps to use BinScope to double check compile and build options are configured to minimize known security issues.*
 
 Use BinScope to examine application binary files to identify coding and building practices that can potentially render the application vulnerable to attack or to being used as an attack vector.
 
@@ -958,7 +970,7 @@ All Scanned Items
 ## <span id="Debugger"></span><span id="debugger"></span><span id="DEBUGGER"></span>Review debugger techniques and extensions
 
 
-**Security checklist item \#15:** *Review these debugger tools and consider their use in your development debugging workflow.*
+**Security checklist item \#16:** *Review these debugger tools and consider their use in your development debugging workflow.*
 
 **!exploitable Crash Analyzer**
 
@@ -984,7 +996,7 @@ The !sd extension displays the security descriptor at the specified address. For
 ## <span id="SecureCodingResources"></span><span id="securecodingresources"></span><span id="SECURECODINGRESOURCES"></span>Review secure coding resources
 
 
-**Security checklist item \#16:** *Review these resources to expand your understanding of secure coding best practices that are applicable to driver developers.*
+**Security checklist item \#17:** *Review these resources to expand your understanding of secure coding best practices that are applicable to driver developers.*
 
 *Review these resources to learn more about driver security*
 
@@ -997,8 +1009,6 @@ The !sd extension displays the security descriptor at the specified address. For
 [Carnegie Mellon University SEI CERT](http://www.cert.org/)
 
 Carnegie Mellon University SEI CERT [C Coding Standard: Rules for Developing Safe, Reliable, and Secure Systems](https://www.securecoding.cert.org/confluence/display/c/SEI+CERT+C+Coding+Standard) (2016 Edition) available as a [PDF download](http://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf).
-
-CERT - [Secure Coding Professional Certification](https://www.cert.org/go/secure-coding/)
 
 CERT - [Build Security In](https://www.us-cert.gov/bsi)
 
@@ -1037,15 +1047,18 @@ Review these driver samples to review examples of driver projects that illustrat
 
 **Training**
 
-Classroom training is available from [OSR](http://www.osr.com) and [Windows Internals](http://www.windows-internals.com/pages/training-services/windows-internals/).
+Windows driver classroom training is available from vendors such as the following.
 
-Online training is available from a variety of sources. For example this course is available from coursera. [https://www.coursera.org/learn/software-security](https://www.coursera.org/learn/software-security#faqs)
+- [OSR](https://www.osr.com) 
+- [Winsider](https://www.windows-internals.com/)
+- [Azius](https://www.azius.com)
 
-**Windows 10 Security Feature Updates**
+Secure coding online training is available from a variety of sources. For example this course is available from coursera. [https://www.coursera.org/learn/software-security](https://www.coursera.org/learn/software-security#faqs)
 
-This video from WinHec provides an overview of Windows 10 security features. [Windows 10 - The Safest and Most Secure Version of Windows](https://channel9.msdn.com/Events/WinHEC/WinHEC-December-2016/Windows-10-The-Safest-and-Most-Secure-Version-of-Windows)
+**Professional Certification**
 
- 
+ CERT offers a [Secure Coding Professional Certification](https://www.cert.org/go/secure-coding/)
+
 
 ## <span id="keytakeaways"></span>Summary of key takeaways
 
