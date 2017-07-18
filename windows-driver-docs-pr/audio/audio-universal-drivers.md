@@ -97,18 +97,18 @@ This diagram summarizes a componentized audio installation.
 
 ![The componentized audio stack showing DSP driver codec and APOs](images/audio-componentized-stack-diagram.png)
 
-A separate extension INF file is used for each software component. for more information, see 
+A separate extension INF file is used for each software component. For more information, see 
 [Using an Extension INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file).
 
 An extension INF file must be a universal INF file. For more information, see [Using a Universal INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file).
 
-For general information about adding software using INF files, see [Adding Software Components with an INF file](https://docs.microsoft.com/windows-hardware/drivers/install/adding-software-components-with-an-inf-file).
+For information about adding software using INF files, see [Adding Software Components with an INF file](https://docs.microsoft.com/windows-hardware/drivers/install/adding-software-components-with-an-inf-file).
 
 
 
 ### SYSVAD  componentized INF files
 
-To see an example of componentized INF files examine the [sysvad/TabletAudioSample](https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad/TabletAudioSample), available on Github. 
+To see an example of componentized INF files examine the [sysvad/TabletAudioSample](https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad/TabletAudioSample), on Github. 
 
 | File name                              | Description                                                                                |
 |----------------------------------------|--------------------------------------------------------------------------------|
