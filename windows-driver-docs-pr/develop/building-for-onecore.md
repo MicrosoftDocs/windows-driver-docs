@@ -1,6 +1,6 @@
 # Building for OneCore
 
-If you are building user-mode code for Windows 7 and later, including [OneCore](../get-started/what-s-new-in-windows.md) SKUs, you can generate a single binary that works on all of these operating systems.
+If you are building user-mode code for Windows 7 and later, including [OneCore](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows) SKUs, you can generate a single binary that works on all of these operating systems.
 To do so, link to `onecore_downlevel.lib`.
 Some APIs will compile fine but result in stub behavior (including on desktop?).  Some APIs that do not exist on OneCore (for example MessageBox) result in no-op wrappers.
 
