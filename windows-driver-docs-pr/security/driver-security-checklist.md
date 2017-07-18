@@ -547,9 +547,7 @@ To become familiar with code analysis, you can use one of the sample drivers - f
 
  <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured>
 
-2. In Visual Studio, for each project in the solution change the project properties to use the desired rule set. For example: Project &gt;&gt; Properties &gt;&gt; Code Analysis &gt;&gt; General, select *Recommended driver rules*.
-
-In addition to using recommenced driver rules, use the *Recommended native rules* tool set as well.
+2. In Visual Studio, for each project in the solution change the project properties to use the desired rule set. For example: Project &gt;&gt; Properties &gt;&gt; Code Analysis &gt;&gt; General, select *Recommended driver rules*. In addition to using the recommenced driver rules, use the *Recommended native rules* rule set.
 
 3. Select Build &gt;&gt; Run Code Analysis on Solution.
 
