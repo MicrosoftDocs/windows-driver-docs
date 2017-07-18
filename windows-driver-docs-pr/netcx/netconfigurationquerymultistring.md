@@ -36,7 +36,7 @@ Parameters
 Handle to a NETCONFIGURATION object that represents an opened registry key.
 
 *ValueName* [in]  
-A pointer to a **UNICODE_STRING** structure that contains a value name.
+A pointer to a **UNICODE_STRING** structure that contains a value name in the device's software key.
 
 *StringsAttributes* [in, optional]  
 A pointer to a [**WDF_OBJECT_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure that contains driver-supplied attributes for the new WDFSTRING objects. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
