@@ -1,5 +1,5 @@
 ---
-title: ACPI\_ENUM\_CHILD\_NEXT macro
+title: ACPI_ENUM_CHILD_NEXT macro
 author: windows-driver-content
 description: The ACPI\_ENUM\_CHILD\_NEXT macro calculates a pointer to the next ACPI\_ENUM\_CHILD structure in an array of variable length ACPI\_ENUM\_CHILD structures.
 ms.assetid: 1ff37770-b0ea-4275-9568-611ec125a0b6

@@ -1,5 +1,5 @@
 ---
-title: ACPI\_METHOD\_ARGUMENT\_LENGTH\_FROM\_ARGUMENT macro
+title: ACPI_METHOD_ARGUMENT_LENGTH_FROM_ARGUMENT macro
 author: windows-driver-content
 description: The ACPI\_METHOD\_ARGUMENT\_LENGTH\_FROM\_ARGUMENT macro calculates the size, in bytes, of the data that is contained in the Data array of an ACPI\_METHOD\_ARGUMENT structure.
 ms.assetid: 46fe0382-1496-49eb-988d-2007885d2210

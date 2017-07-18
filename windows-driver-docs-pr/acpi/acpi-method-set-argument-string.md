@@ -1,5 +1,5 @@
 ---
-title: ACPI\_METHOD\_SET\_ARGUMENT\_STRING macro
+title: ACPI_METHOD_SET_ARGUMENT_STRING macro
 author: windows-driver-content
 description: The ACPI\_METHOD\_SET\_ARGUMENT\_STRING macro sets the members of an ACPI\_METHOD\_ARGUMENT structure for a string value.
 ms.assetid: e0c037a9-65b6-4d6a-9ed6-d9296c14df07

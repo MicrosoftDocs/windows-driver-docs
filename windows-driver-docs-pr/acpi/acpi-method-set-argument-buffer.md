@@ -1,5 +1,5 @@
 ---
-title: ACPI\_METHOD\_SET\_ARGUMENT\_BUFFER macro
+title: ACPI_METHOD_SET_ARGUMENT_BUFFER macro
 author: windows-driver-content
 description: The ACPI\_METHOD\_SET\_ARGUMENT\_BUFFER macro sets the members of an ACPI\_METHOD\_ARGUMENT structure for custom data that is supplied in a data buffer.
 ms.assetid: 1f335814-fa9f-45c6-b970-10884e971ec1
