@@ -135,7 +135,9 @@ Defines subscriber information on the mobile operator network. There are two dif
 [**Branding**](https://msdn.microsoft.com/library/windows/apps/hh868446)
 
 > [!IMPORTANT]
-> Starting in Windows 10, version 1709, the following branding fields have been replaced by fields in the COSA database. **Logo** has been replaced by **Branding Icon** in COSA, while **Name** has been replaced by **Branding Name** in COSA. **Logo** and **Name** will no longer be considered when provisioning in Windows 10, version 1709 and later. Instead, you should change **Branding Icon** and **Branding Name** in COSA.  
+> Starting in Windows 10, version 1709, branding fields provisioned by the ProvisioningAgent API have been replaced by branding fields in the COSA database. **Logo** has been replaced by **Branding Icon** in COSA, and **Name** has been replaced by **Branding Name** in COSA.
+>
+> **Logo** and **Name** will no longer be considered when provisioning in Windows 10, version 1709 and later. The ProvisioningAgent API will not throw an error if they are used, but you should change **Branding Icon** and **Branding Name** in COSA instead.  
 >
 > For more information about **Branding Icon** and **Branding Name**, see [Planning your desktop COSA/APN database submission (Desktop COSA-only settings)](planning-your-desktop-cosa-apn-database-submission.md#desktop-cosa-only-settings).
 
