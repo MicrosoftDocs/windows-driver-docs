@@ -1,30 +1,39 @@
+---
+ms.assetid: ee46801a-4fa5-465a-aa81-5e76eb83d315
+title: Building for OneCore
+description: You can build a single binary that targets pre-Windows 10 and OneCore SKUs.
+ms.author: windowsdriverdev
+ms.date: 07/19/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+---
+
 # Building for OneCore
 
 If you are building user-mode code for Windows 7 and later, including [OneCore](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows) SKUs, you can generate a single binary that works on all of these operating systems.
-To do so, link to `onecore_downlevel.lib`.
-Some APIs will compile fine but result in stub behavior (including on desktop?).  Some APIs that do not exist on OneCore (for example MessageBox) result in no-op wrappers.
+To do so, link to `onecore_downlevel.lib` or `onecoreuap_downlevel.lib`.
+When you use this downlevel option, a subset of APIs compile fine but return immediately on non-Desktop OneCore SKUs.  For example, the [**MessageBox**](https://msdn.microsoft.com/library/windows/desktop/ms645505) function returns ERROR_CALL_NOT_IMPLEMENTED on non-Desktop OneCore SKUs.  The documentation for these APIs describes this behavior, including applicable error codes, in the Requirements section of the page.
+<!--Link to list of apis with stub functionality, include example screenshot-->
 
-If you want your user mode binary to run only on Windows 10 and later, including OneCore SKUs, link instead to onecore.lib.  You will get a slight load time performance boost.
+If you are building user-mode code for only Windows 10 and later, including OneCore SKUs, link instead to `onecoreuap.lib` or `onecore.lib`.  You will get a slight load time performance boost.
 
-User-mode code might include: UMDF driver, user-mode DLLs, NT service, console app
+## Recommended actions
 
-The Windows kernel is unchanged in OneCore SKUs, so you don't need to do any special linking if you are building a kernel-mode driver.
+Use the [ApiValidator](validating-universal-drivers.md) tool in the WDK to verify that the built binary will load and run on non-Desktop OneCore SKUs.  This tool runs automatically when you build a driver in Visual Studio.
 
-The ApiValidator tool in the WDK validates for compiler errors?
+Use runtime testing to verify that your user-mode code runs as you expect on non-Desktop OneCore SKUs.  Note that stubbed APIs may generate different error codes.
 
-You are still restricted to the same subset
+See [Getting Started with Universal Windows drivers](getting-started-with-universal-drivers.md).
+<!--link back from best practices?-->
 
-Link to list of apis with stub functionality
+|Library|Scenario|
+|-|-|
+|onecore.lib|For building a binary to run on the latest OS version, targeting all SKUs|
+|onecoreuap.lib|For building a binary to run on the latest OS version, targeting those SKUs with UWP support (Desktop, IoT, Hololens, but not Nanoserver)|
+|onecore_downlevel.lib|For building a binary to run on Windows 7 and later, targeting all SKUs|
+|onecoreuap_downlevel.lib|For building a binary to run on Windows 7 and later, targeting those SKUs with UWP support (Desktop, IoT, Hololens, but not Nanoserver)|
 
-when to link to onecoreuap.lib vs. onecore.lib
+The first two choices are recommended due to improved performance, but note that the resulting binaries will not run on operating systems earlier than Windows 10.
 
-See the requirements block sections of documentation pages to learn which APIs have stubbed behavior when linked to using `onecore_downlevel.lib`.  Also, use runtime testing to verify that your user-mode code runs as you expect on OneCore-based SKUs.
-Note that stubbed APIs may generate different error codes.
-
-Related to U category of DCHU (cross-link)
-
-Recommended actions
-
-when building a UMDF driver for 7+, link to onecore_downlevel.  and choose target platform=universal?
-
-See [Validating Universal Windows drivers](validating-universal-drivers.md).
+<!--API BOILERPLATE: Compiles using onecore_downlevel.lib, but always returns ERROR_CALL_NOT_IMPLEMENTED on non-Desktop OneCore SKUs.-->
