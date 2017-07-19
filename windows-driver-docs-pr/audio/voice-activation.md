@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Voice Activation
 
 
-Cortana, the personal assistant technology introduced on Windows Phone 8.1, is now supported on Windows 10 devices. The Windows speech platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation. Voice activation is a feature that enables users to invoke a speech recognition engine from various device power states by saying a specific phrase - "Hey Cortana". To create hardware that supports voice activation technology, review the information in this topic.
+Cortana, the personal assistant technology introduced on Windows Phone 8.1, is supported on Windows 10 devices. The Windows speech platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation. Voice activation is a feature that enables users to invoke a speech recognition engine from various device power states by saying a specific phrase - "Hey Cortana". To create hardware that supports voice activation technology, review the information in this topic.
 
 **Note**  
 Implementing voice activation is a significant project and is a task completed by SoC vendors. OEMs can contact their SoC vendor for information on their SoC's implementation of voice activation.
@@ -46,6 +46,11 @@ The term *Keyword Detection*, describes the detection of the keyword by either h
 *Keyword only* activation occurs when only the Cortana keyword is said, Cortana starts and plays the EarCon sound to indicate that it has entered listening mode.
 
 A *chained command* describes the ability of issuing a command immediately following the keyword (like “Hey Cortana, call John”) and have Cortana start (if not already started) and follow the command (starting a phone call with John).
+
+This diagram illustrates chained and keyword only activation.
+
+![chained and keyword activation diagram showing audio buffer and time sequence](images/audio-chained-keyword-activation.png)
+
 
 The *Software Keyword Spotter* is the software voice activation software detection of keyword when device is powered on in the absence of hardware keyword detection. Hardware keyword detection might be absent because it is not available on device or because it is turned off. 
 
@@ -250,7 +255,7 @@ Audio is processed in a unique way for voice activation training. The following 
 
 This diagram provides an overview of the keyword recognition system.
 
-![keyword recognition system including cortana the speech runtime and the voice activation manager](images/audio-voice-activation-and-speaker-id.png)
+![keyword recognition system including cortana the speech runtime and the voice activation manager](images/audio-simple-voice-recon-diagram1.png)
 
 ## <span id="Keyword_Recognition__Sequence_Diagrams"></span><span id="keyword_recognition__sequence_diagrams"></span><span id="KEYWORD_RECOGNITION__SEQUENCE_DIAGRAMS"></span>Keyword Recognition Sequence Diagrams
 
