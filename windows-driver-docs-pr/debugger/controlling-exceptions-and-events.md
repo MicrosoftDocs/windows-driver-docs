@@ -58,9 +58,9 @@ You can control the break status and handling status by doing one of the followi
 
 -   Use the [**SXE**](sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md), **SXD**, **SXN**, or **SXI** command in the [Debugger Command window](debugger-command-window.md).
 
--   (CDB only) Use the **-x**, **-xe**, **-xd**, **-xn**, or **-xi** option on the CDB [**command line**](cdb-command-line-options.md).
+-   (CDB and NTSD) Use the **-x**, **-xe**, **-xd**, **-xn**, or **-xi** option on the [**command line**](cdb-command-line-options.md).
 
--   (CDB only) Use the **sxe** or **sxd** keyword in the [Tools.ini](configuring-tools-ini.md) file.
+-   (CDB, NTSD, and KD) Use the **sxe** or **sxd** keyword in the [Tools.ini](configuring-tools-ini.md) file.
 
 -   (WinDbg only) Click [Event Filters](debug---event-filters.md) on the **Debug** menu to open the **Event Filters** dialog box, and then choose the options that you want.
 
