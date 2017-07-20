@@ -18,21 +18,26 @@ When you use this downlevel option, a subset of APIs compile fine but return imm
 
 If you are building user-mode code for only Windows 10 and later, including OneCore SKUs, link instead to `onecoreuap.lib` or `onecore.lib`.  You will get a slight load time performance boost.
 
+The following table describes when to link to each option.
+
+|Library|Scenario|
+|-|-|
+|onecore.lib|For building a binary to run on the latest OS version, targeting all SKUs, but with no UWP support|
+|onecoreuap.lib|For building a binary to run on the latest OS version, targeting SKUs with UWP support (Desktop, IoT, HoloLens, but not Nano Server)|
+|onecore_downlevel.lib|For building a binary to run on Windows 7 and later, targeting all SKUs, but with no UWP support|
+|onecoreuap_downlevel.lib|For building a binary to run on Windows 7 and later, targeting those SKUs with UWP support (Desktop, IoT, HoloLens, but not Nano Server)|
+
+To change specified libraries in a Visual Studio project, choose project properties and navigate to **Linker->Input**.  The **Additional Dependencies** should contain:
+
+    ```
+    %AdditionalDependencies);$(SDK_LIB_PATH)\<filename>.lib
+    ```
+
 ## Recommended actions
 
 Use the [ApiValidator](validating-universal-drivers.md) tool in the WDK to verify that the built binary will load and run on non-Desktop OneCore SKUs.  This tool runs automatically when you build a driver in Visual Studio.
 
 Use runtime testing to verify that your user-mode code runs as you expect on non-Desktop OneCore SKUs.  Note that stubbed APIs may generate different error codes.
-
-See [Getting Started with Universal Windows drivers](getting-started-with-universal-drivers.md).
-<!--link back from best practices?-->
-
-|Library|Scenario|
-|-|-|
-|onecore.lib|For building a binary to run on the latest OS version, targeting all SKUs|
-|onecoreuap.lib|For building a binary to run on the latest OS version, targeting those SKUs with UWP support (Desktop, IoT, Hololens, but not Nanoserver)|
-|onecore_downlevel.lib|For building a binary to run on Windows 7 and later, targeting all SKUs|
-|onecoreuap_downlevel.lib|For building a binary to run on Windows 7 and later, targeting those SKUs with UWP support (Desktop, IoT, Hololens, but not Nanoserver)|
 
 The first two choices are recommended due to improved performance, but note that the resulting binaries will not run on operating systems earlier than Windows 10.
 
