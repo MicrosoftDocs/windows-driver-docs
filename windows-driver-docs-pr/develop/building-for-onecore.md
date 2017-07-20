@@ -17,7 +17,7 @@ When you use Visual Studio to build user-mode code for Windows 10, you can custo
 
 * Does your project have any [UWP](https://docs.microsoft.com/windows/uwp/get-started/whats-a-uwp) dependencies?
 
-By default, when you create a new UMDF v2 driver project, Visual Studio links to `OneCoreUAP.lib`.  This is the correct choice if your binary only needs to run on the most recent version of Windows, and it permits addition of UWP functionality.
+By default, when you create a new UMDF v2 driver project, Visual Studio links to `OneCoreUAP.lib`.  This results in a binary that runs on the most recent version of Windows, and it permits addition of UWP functionality.
 
 However, depending on your requirements, you might choose instead to link to one of the following:
 
@@ -25,10 +25,12 @@ However, depending on your requirements, you might choose instead to link to one
 |-|-|
 |`OneCore.lib`|All editions of latest OS version, no UWP support|
 |`OneCoreUAP.lib`|UWP editions (Desktop, IoT, HoloLens, but not Nano Server) of latest OS version|
-|`OneCore_downlevel.lib`|All editions of Windows 7 and later, but no UWP support|
-|`OneCoreUAP_downlevel.lib`|UWP editions (Desktop, IoT, HoloLens, but not Nano Server) of Windows 7 and later|
+|`OneCore_downlevel.lib`|Windows 7 and later, all editions of Windows 10, no UWP support|
+|`OneCoreUAP_downlevel.lib`|Windows 7 and later, UWP editions (Desktop, IoT, HoloLens, but not Nano Server) of Windows 10|
 
-When you use a downlevel option, a subset of APIs compile fine but return immediately on non-Desktop OneCore editions (for example Mobile or IoT).  For example, the [**MessageBox**](https://msdn.microsoft.com/library/windows/desktop/ms645505) function returns ERROR_CALL_NOT_IMPLEMENTED on non-Desktop OneCore editions.  The documentation for these APIs describes this behavior, including applicable error codes, in the Requirements section of the page.
+When you use a downlevel option, a subset of APIs compile fine but return immediately on non-Desktop OneCore editions (for example Mobile or IoT).
+
+For example, the [**MessageBox**](https://msdn.microsoft.com/library/windows/desktop/ms645505) function returns ERROR_CALL_NOT_IMPLEMENTED on non-Desktop OneCore editions.  The documentation for these APIs describes this behavior, including applicable error codes, in the Requirements section of the page.
 <!--Link to list of apis with stub functionality, include example screenshot-->
 
 If you link to `OneCoreUAP.lib` or `OneCore.lib`, you will get a slight load time performance boost over the downlevel options.
@@ -37,11 +39,13 @@ To change linker options in Visual Studio, choose project properties and navigat
 
 ## Recommended actions
 
-Use the [ApiValidator](validating-universal-drivers.md) tool in the WDK to verify that the built binary will load and run on non-Desktop OneCore editions.  This tool runs automatically when you build a driver in Visual Studio.
+Review the linker options above and update your Visual Studio project accordingly.
+
+Use the [ApiValidator](validating-universal-drivers.md) tool in the WDK.  This tool runs automatically when you build a driver in Visual Studio.
 
 Use runtime testing to verify that your user-mode code runs as you expect on non-Desktop OneCore editions.  Note that stubbed APIs may generate different error codes.
 
-Related
+See also
 ---
 [OneCore](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows)
 
