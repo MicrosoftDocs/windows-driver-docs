@@ -11,29 +11,29 @@ ms.technology: windows-devices
 
 # Building for OneCore
 
-When you use Visual Studio to build user-mode code for Windows 10, you can customize linker options to target specific versions of Windows.  To build a binary that works on the desired platforms, consider the following factors:
+When you use Visual Studio to build user-mode code for Windows 10, you can customize linker options to target specific versions of Windows.  Consider the following factors:
 
 * Should the built binary run on only the most recent version of Windows?  Or should it run on *downlevel* versions, meaning Windows 7 and later?  
 
-* Does your project have any UWP dependencies?
+* Does your project have any [UWP](https://docs.microsoft.com/windows/uwp/get-started/whats-a-uwp) dependencies?
 
-By default, when you create a new UMDF v2 driver project, Visual Studio links to `OneCoreUAP.lib`.  This is the correct choice if your binary only needs to run on the most recent version of Windows, and it also permits addition of UWP functionality.
+By default, when you create a new UMDF v2 driver project, Visual Studio links to `OneCoreUAP.lib`.  This is the correct choice if your binary only needs to run on the most recent version of Windows, and it permits addition of UWP functionality.
 
-If your answers to the questions above are different, however, you can change the default to link to one of the following libraries:
+However, depending on your requirements, you might choose instead to link to one of the following:
 
 |Library|Scenario|
 |-|-|
-|onecore.lib|For building a binary to run on the latest OS version, targeting all SKUs, but with no UWP support|
-|onecoreuap.lib|For building a binary to run on the latest OS version, targeting SKUs with UWP support (Desktop, IoT, HoloLens, but not Nano Server)|
-|onecore_downlevel.lib|For building a binary to run on Windows 7 and later, targeting all SKUs, but with no UWP support|
-|onecoreuap_downlevel.lib|For building a binary to run on Windows 7 and later, targeting those SKUs with UWP support (Desktop, IoT, HoloLens, but not Nano Server)|
+|`OneCore.lib`|All SKUs of latest OS version, no UWP support|
+|`OneCoreUAP.lib`|UWP SKUs (Desktop, IoT, HoloLens, but not Nano Server) of latest OS version|
+|`OneCore_downlevel.lib`|All SKUs of Windows 7 and later, but no UWP support|
+|`OneCoreUAP_downlevel.lib`|UWP SKUs (Desktop, IoT, HoloLens, but not Nano Server) of Windows 7 and later|
 
 When you use a downlevel option, a subset of APIs compile fine but return immediately on non-Desktop OneCore SKUs (for example Mobile or IoT).  For example, the [**MessageBox**](https://msdn.microsoft.com/library/windows/desktop/ms645505) function returns ERROR_CALL_NOT_IMPLEMENTED on non-Desktop OneCore SKUs.  The documentation for these APIs describes this behavior, including applicable error codes, in the Requirements section of the page.
 <!--Link to list of apis with stub functionality, include example screenshot-->
 
-If you link to `onecoreuap.lib` or `onecore.lib`, you will get a slight load time performance boost over the downlevel options.
+If you link to `OneCoreUAP.lib` or `OneCore.lib`, you will get a slight load time performance boost over the downlevel options.
 
-To change specified libraries in a Visual Studio project, choose project properties and navigate to **Linker->Input->Additional Dependencies**.
+To change linker options in Visual Studio, choose project properties and navigate to **Linker->Input->Additional Dependencies**.
 
 ## Recommended actions
 
