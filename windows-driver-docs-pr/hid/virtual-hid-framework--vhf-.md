@@ -76,26 +76,26 @@ This procedure describes how to write a simple HID source driver that reports he
 2.  Link to Vhflkm.lib, included in the WDK.
 3.  Create a HID Report Descriptor that your device wants to report to the operating system. In this example, the HID Report Descriptor describes the headset buttons. The report specifies a HID Input Report, size 8 bits (1 byte). The first three bits are for the headset middle, volume-up, and volume-down buttons. The remaining bits are unused.
 
-    ```
-    UCHAR HeadSetReportDescriptor[] = {
-        0x05, 0x01,         // USAGE_PAGE (Generic Desktop Controls)
-        0x09, 0x0D,         // USAGE (Portable Device Buttons)
-        0xA1, 0x01,         // COLLECTION (Application)
-        0x85, 0x01,         //   REPORT_ID (1)
-        0x05, 0x09,         //   USAGE_PAGE (Button Page)
-        0x09, 0x01,         //   USAGE (Button 1 - HeadSet : middle button)
-        0x09, 0x02,         //   USAGE (Button 2 - HeadSet : volume up button)
-        0x09, 0x03,         //   USAGE (Button 3 - HeadSet : volume down button)
-        0x15, 0x00,         //   LOGICAL_MINIMUM (0)
-        0x25, 0x01,         //   LOGICAL_MAXIMUM (1)
-        0x75, 0x01,         //   REPORT_SIZE (1)
-        0x95, 0x03,         //   REPORT_COUNT (3)
-        0x81, 0x02,         //   INPUT (Data,Var,Abs)
-        0x95, 0x05,         //   REPORT_COUNT (5)
-        0x81, 0x03,         //   INPUT (Cnst,Var,Abs)
-        0xC0,               // END_COLLECTION
-    };
-    ```
+```
+UCHAR HeadSetReportDescriptor[] = {
+    0x05, 0x01,         // USAGE_PAGE (Generic Desktop Controls)
+    0x09, 0x0D,         // USAGE (Portable Device Buttons)
+    0xA1, 0x01,         // COLLECTION (Application)
+    0x85, 0x01,         //   REPORT_ID (1)
+    0x05, 0x09,         //   USAGE_PAGE (Button Page)
+    0x09, 0x01,         //   USAGE (Button 1 - HeadSet : middle button)
+    0x09, 0x02,         //   USAGE (Button 2 - HeadSet : volume up button)
+    0x09, 0x03,         //   USAGE (Button 3 - HeadSet : volume down button)
+    0x15, 0x00,         //   LOGICAL_MINIMUM (0)
+    0x25, 0x01,         //   LOGICAL_MAXIMUM (1)
+    0x75, 0x01,         //   REPORT_SIZE (1)
+    0x95, 0x03,         //   REPORT_COUNT (3)
+    0x81, 0x02,         //   INPUT (Data,Var,Abs)
+    0x95, 0x05,         //   REPORT_COUNT (5)
+    0x81, 0x03,         //   INPUT (Cnst,Var,Abs)
+    0xC0,               // END_COLLECTION
+};
+```
 
 ## <a href="" id="create-a-virtual-hid-device-"></a>Create a virtual HID device
 
@@ -195,29 +195,29 @@ Typically, a HID device sends information about state changes by sending input r
 
 The HID source driver can submit input reports by implementing the buffering policy for pending reports. To avoid duplicate buffering, the HID source driver can implement the [*EvtVhfReadyForNextReadReport*](https://msdn.microsoft.com/library/windows/hardware/dn897135) callback function and keep track of whether VHF invoked this callback. If it was previously invoked, the HID source driver can call [**VhfReadReportSubmit**](https://msdn.microsoft.com/library/windows/hardware/dn925040) to submit a report. It must wait for *EvtVhfReadyForNextReadReport* to get invoked before it can call **VhfReadReportSubmit** again.
 
-    ```
-    VOID
-    MY_SubmitReadReport(
-        PMY_CONTEXT  Context,
-        BUTTON_TYPE  ButtonType,
-        BUTTON_STATE ButtonState
-        )
-    {
-        PDEVICE_CONTEXT deviceContext = (PDEVICE_CONTEXT)(Context);
+```
+VOID
+MY_SubmitReadReport(
+    PMY_CONTEXT  Context,
+    BUTTON_TYPE  ButtonType,
+    BUTTON_STATE ButtonState
+    )
+{
+    PDEVICE_CONTEXT deviceContext = (PDEVICE_CONTEXT)(Context);
 
-        if (ButtonState == ButtonStateUp) {
-            deviceContext->VhfHidReport.ReportBuffer[0] &= ~(0x01 << ButtonType);
-        } else {
-            deviceContext->VhfHidReport.ReportBuffer[0] |=  (0x01 << ButtonType);
-        }
-
-        status = VhfSubmitReadReport(deviceContext->VhfHandle, &deviceContext->VhfHidReport);
-
-        if (!NT_SUCCESS(status)) {
-            TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE,"VhfSubmitReadReport failed %!STATUS!", status);
-        }
+    if (ButtonState == ButtonStateUp) {
+        deviceContext->VhfHidReport.ReportBuffer[0] &= ~(0x01 << ButtonType);
+    } else {
+        deviceContext->VhfHidReport.ReportBuffer[0] |=  (0x01 << ButtonType);
     }
-    ```
+
+    status = VhfSubmitReadReport(deviceContext->VhfHandle, &deviceContext->VhfHidReport);
+
+    if (!NT_SUCCESS(status)) {
+        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE,"VhfSubmitReadReport failed %!STATUS!", status);
+    }
+}
+```
 
 ## Delete the virtual HID device
 
