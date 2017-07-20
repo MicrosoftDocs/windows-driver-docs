@@ -127,7 +127,7 @@ Audio endpoint graph building occurs normally. The graph is prepared to handle f
 
 **Theory of Operation**
 
-The driver exposes a KS filter for its capture device as usual. This filter supports several KS properties and a KS event to configure, enable and signal a detection event. The filter also includes an additional pin factory identified as a keyword detector pin. This pin is used to stream audio from the keyword detector.
+The driver exposes a KS filter for its capture device as usual. This filter supports several KS properties and a KS event to configure, enable and signal a detection event. The filter also includes an additional pin factory identified as a keyword spotter (KWS) pin. This pin is used to stream audio from the keyword spotter.
 
 The properties are:
 
@@ -360,13 +360,9 @@ Wake On Voice (WoV) enables the user to activate and query a speech recognition 
 
 This feature allows for the device to be always listening for the user’s voice while the device is in a low power state, including when the screen is off and the device is idle. It does this by using a listening mode, which is lower power when compared to the much higher power usage seen during normal microphone recording. The low power speech recognition allows a user to simply say a pre-defined key phrase like "Hey Cortana", followed by a chained speech phrase like "when’s my next appointment" to invoke speech in a hands-free manner. This will work regardless of whether the device is in use or idle with the screen off.
 
-If the device does not support wake on voice with chained commands, after saying the keyword, the speech experience should be launched with a short delay (<=250mS), at which point the user can say the desired search phrase as they normally would.
-
 The audio stack is responsible for communicating the wake data (speaker ID, keyword trigger, confidence level) as well as notifying interested clients that the keyword has been detected.
 
- 
-
- 
+  
 
 
 --------------------
