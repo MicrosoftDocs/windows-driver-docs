@@ -1,6 +1,6 @@
 ---
 title: Driver security checklist
-description: This topic provides a driver security checklist for driver developers.
+description: This article provides a driver security checklist for driver developers.
 ms.assetid: 25375E02-FCA1-4E94-8D9A-AA396C909278
 ms.author: windowsdriverdev
 ms.date: 06/06/2017
@@ -12,18 +12,18 @@ ms.technology: windows-devices
 # Driver security checklist
 
 
-This topic provides a driver security checklist for driver developers. By following the guidance provided in the checklist, you can reduce risk that your driver will be compromised.
+This article provides a driver security checklist for driver developers to help reduce the risk of drivers being compromised.
 
 ## <span id="Driver_Security_Overview"></span><span id="driver_security_overview"></span><span id="DRIVER_SECURITY_OVERVIEW"></span>Driver security overview
 
 
-Anything an attacker can do that causes a driver to malfunction in such a way that it causes the system to crash or become unusable is a security flaw. In addition, vulnerabilities in driver code can allow an attacker to gain access to kernel creating an avenue to compromise the entire OS. When most developers are working on their driver, their focus is on getting the driver to work properly and not whether a malicious attacker will attempt to exploit holes within their code.
+A security flaw is any flaw that allows an attacker to cause a driver to malfunction in such a way that it causes the system to crash or become unusable. In addition, vulnerabilities in driver code can allow an attacker to gain access to the kernel, creating an possibility of compromising the entire OS. When most developers are working on their driver, their focus is on getting the driver to work properly, and not on whether a malicious attacker will attempt to exploit vulnerabilities within their code.
 
-However, after a driver is released, there are attackers who attempt to probe and identify security weaknesses. Developers must consider these issues during the design and implementation phase in order to minimize the likelihood that such vulnerabilities exist. The goal is to eliminate all known security gaps before the driver is released.
+After a driver is released, however, attackers can attempt to probe and identify security flaws. Developers must consider these issues during the design and implementation phase in order to minimize the likelihood of such vulnerabilities. The goal is to eliminate all known security flaws before the driver is released.
 
-Creating secure drivers requires the cooperation of the system architect (consciously thinking of potential threats to the driver), the developer implementing the code (defensively coding common operations that can be the source of exploits), and the test team (pro-actively attempting to find weakness and vulnerabilities). By properly coordinating all of these activities, the security of the driver will be dramatically enhanced.
+Creating more secure drivers requires the cooperation of the system architect (consciously thinking of potential threats to the driver), the developer implementing the code (defensively coding common operations that can be the source of exploits), and the test team (proactively attempting to find weakness and vulnerabilities). By properly coordinating all of these activities, the security of the driver is dramatically enhanced.
 
-In addition to avoiding the issues associated with a driver being attacked, many of the steps described, such as more precise use of kernel memory, will increase the reliability of your driver. This will reduce support costs and increase customer satisfaction with your product. 
+In addition to avoiding the issues associated with a driver being attacked, many of the steps described, such as more precise use of kernel memory, will increase the reliability of your driver. This will reduce support costs and increase customer satisfaction with your product. Completing the tasks in the checklist below will help to achieve all these goals.
 
 **Security checklist:** *Complete the security task described in each of these topics.*
 
@@ -65,9 +65,9 @@ In addition to avoiding the issues associated with a driver being attacked, many
 
 ## <span id="confirmkernel"></span>Confirm that a kernel driver is required
 
-**Security checklist item \#1:** *Confirm that a kernel driver is required and that a lower risk approach such as Windows service or app is not a better option.*
+**Security checklist item \#1:** *Confirm that a kernel driver is required and that a lower risk approach, such as Windows service or app, is not a better option.*
 
- Drivers live in the Windows kernel, and having an issue when executing in kernel exposes the entire operating system. If any other option is available, it likely will be lower cost and have less associated risk than creating a new kernel driver.
+Drivers live in the Windows kernel, and having an issue when executing in kernel exposes the entire operating system. If any other option is available, it likely will be lower cost and have less associated risk than creating a new kernel driver.
 For more information about using the built in Windows drivers, see [Do you need to write a driver?](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/do-you-need-to-write-a-driver-).
 
 For information on using the lower risk user mode framework driver (UMDF), see [Choosing a driver model](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/choosing-a-driver-model).
@@ -79,26 +79,26 @@ For information on using Windows Services, see [Services](https://msdn.microsoft
 
 ## <span id="controlsoftwareonly"></span>Control access to software only drivers
 
-**Security checklist item \#2:** *If a software only driver is going to be created additional access control must be implemented.*
+**Security checklist item \#2:** *If a software-only driver is going to be created, additional access control must be implemented.*
 
-Software only kernel drivers may not use PnP to become associated with specific hardware IDs and may be able to run on any PC. Such a driver could be used for purposes that they were not originally intended, creating an attack vector. 
+Software-only kernel drivers may not use plug-and-play (PnP) to become associated with specific hardware IDs, and may be able to run on any PC. Such a driver could be used for purposes other than the one originally intended, creating an attack vector. 
 
-Because software only kernel drivers contain additional risk, they must be limited to run on specific hardware. For example, by use of a unique plug-and-play ID to enable creation of a PnP driver, or by checking the SMBIOS table for the presence of specific hardware.
+Because software-only kernel drivers contain additional risk, they must be limited to run on specific hardware (for example, by using a unique PnP ID to enable creation of a PnP driver, or by checking the SMBIOS table for the presence of specific hardware).
 
-Code signed by a trusted SPC (Software Publishers Certificate) or WHQL (Windows Hardware Quality Labs) signature must not facilitate bypass of Windows code integrity and security technologies.  Before code is signed by a trusted SPC or WHQL signature, first ensure it complies with guidance from both [Device.DevFund.Reliability.BasicSecurity](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1703/device-devfund#device.devfund.reliability) and [Creating Reliable Kernel-Mode Drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/creating-reliable-kernel-mode-drivers). In addition the code must not contain any dangerous behaviors, described below.  For more information about driver signing, see [Release driver signing](#releasedriversigning), later in this topic.
+Code signed by a trusted Software Publishers Certificate (SPC) or Windows Hardware Quality Labs (WHQL) signature must not facilitate bypass of Windows code integrity and security technologies.  Before code is signed by a trusted SPC or WHQL signature, first ensure it complies with guidance from both [Device.DevFund.Reliability.BasicSecurity](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1703/device-devfund#device.devfund.reliability) and [Creating Reliable Kernel-Mode Drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/creating-reliable-kernel-mode-drivers). In addition the code must not contain any dangerous behaviors, described below.  For more information about driver signing, see [Release driver signing](#releasedriversigning) later in this article.
 
-Examples of dangerous behavior include the following.
+Examples of dangerous behavior include the following:
 
 - Providing the ability to map arbitrary kernel, physical, or device memory to user mode.
-- Providing the ability to read or write arbitrary kernel, physical or device memory, including Port I/O (input, output).
+- Providing the ability to read or write arbitrary kernel, physical or device memory, including Port input/output (I/O).
 - Providing access to storage that bypasses Windows access control. 
-- Providing the ability to modify hardware or firmware the driver was not designed to manage.  
+- Providing the ability to modify hardware or firmware that the driver was not designed to manage.  
 
 _Development, testing, and manufacturing kernel driver code_ 
 
-Kernel driver code that is used for development, testing, or manufacturing might include dangerous capabilities that pose a security risk.  This dangerous code should never be signed with a certificate that is trusted by Windows.  The correct mechanism for executing dangerous driver code is to disable UEFI Secure Boot, enable the BCD “TESTSIGNING”, and sign the development/test/manufacturing code using an untrusted certificate - generated by makecert.exe for example.
+Kernel driver code that is used for development, testing, or manufacturing might include dangerous capabilities that pose a security risk.  This dangerous code should never be signed with a certificate that is trusted by Windows.  The correct mechanism for executing dangerous driver code is to disable UEFI Secure Boot, enable the BCD “TESTSIGNING”, and sign the development, test, and manufacturing code using an untrusted certificate (for example, one generated by makecert.exe).
 
-For example, imagine OEM Fabrikam wants to distribute a driver that enables an overclocking utility for their systems.  However, if this software only driver were to execute on a system from a different OEM, system instability or damage might result.  Fabrikam’s systems should include a unique plug-and-play ID to enable creation of a PnP driver, which is also updatable via Windows Update.  If this is not possible, and Fabrikam authors a Legacy driver, that driver should find another method to verify it is executing on a Fabrikam system, for example by examination of the SMBIOS table, prior to enabling any capabilities. 
+For example, imagine OEM Fabrikam wants to distribute a driver that enables an overclocking utility for their systems.  If this software-only driver were to execute on a system from a different OEM, system instability or damage might result.  Fabrikam’s systems should include a unique PnP ID to enable creation of a PnP driver that is also updatable through Windows Update.  If this is not possible, and Fabrikam authors a Legacy driver, that driver should find another method to verify that it is executing on a Fabrikam system (for example, by examination of the SMBIOS table prior to enabling any capabilities). 
 
 
 ## <span id="ThreatAnalysis"></span><span id="threatanalysis"></span><span id="THREATANALYSIS"></span>Perform threat analysis
@@ -108,7 +108,7 @@ For example, imagine OEM Fabrikam wants to distribute a driver that enables an o
 
 In considering security, a common methodology is to create specific threat models that attempt to describe the types of attacks that are possible. This technique is useful when designing a driver because it forces the developer to consider the potential attack vectors against a driver in advance. Having identified potential threats, a driver developer can then consider means of defending against these threats in order to bolster the overall security of the driver component.
 
-This topic provides driver specific guidance for creating a light weight threat model - [Threat modeling for drivers](threat-modeling-for-drivers.md). That topic shows an example driver threat model diagram that can be used as a starting point for your driver.
+This article provides driver specific guidance for creating a lightweight threat model: [Threat modeling for drivers](threat-modeling-for-drivers.md). The article provides an example driver threat model diagram that can be used as a starting point for your driver.
 
 ![sample data flow diagram for hypothetical kernel-mode driver](images/sampledataflowdiagramkernelmodedriver.gif)
 
@@ -121,29 +121,21 @@ Security Development Lifecycle (SDL) best practices and associated tools can be 
 
 The core activity of creating secure drivers is identifying areas in the code that need to be changed to avoid known software vulnerabilities. Many of these known software vulnerabilities deal with keeping strict track of the use of memory to avoid issues with others overwriting or otherwise comprising the memory locations that your driver uses.
 
-The [Code Validation Tools](#codevalidationtools) section of this topics describes software tools that can be used to help locate known software vulnerabilities.
+The [Code Validation Tools](#codevalidationtools) section of this article describes software tools that can be used to help locate known software vulnerabilities.
 
 
 **Memory buffers**
 
-Always check the sizes of the input and output buffers to ensure that the buffers can hold all the requested data.
+- Always check the sizes of the input and output buffers to ensure that the buffers can hold all the requested data. For more information, see [Failure to Check the Size of Buffers](https://msdn.microsoft.com/library/windows/hardware/ff545679).
 
-For more information, see [Failure to Check the Size of Buffers](https://msdn.microsoft.com/library/windows/hardware/ff545679)
+- Properly initialize all output buffers with zeros before returning them to the caller. For more information, see [Failure to Initialize Output Buffers](https://msdn.microsoft.com/library/windows/hardware/ff545693).
 
-Properly initialize all output buffers with zeros before returning them to the caller.
-
-For more information, see [Failure to Initialize Output Buffers](https://msdn.microsoft.com/library/windows/hardware/ff545693)
-
-Validate variable-length buffers
-
-For more information, see [Failure to Validate Variable-Length Buffers](https://msdn.microsoft.com/library/windows/hardware/ff545709).
-
-For more information about working with buffers and using [**ProbeForRead**](https://msdn.microsoft.com/library/windows/hardware/ff559876) and [**ProbeForWrite**](https://msdn.microsoft.com/library/windows/hardware/ff559879) to validate the address of a buffer, see [Buffer Handling](https://msdn.microsoft.com/library/windows/hardware/ff539004).
+- Validate variable-length buffers. For more information, see [Failure to Validate Variable-Length Buffers](https://msdn.microsoft.com/library/windows/hardware/ff545709). For more information about working with buffers and using [**ProbeForRead**](https://msdn.microsoft.com/library/windows/hardware/ff559876) and [**ProbeForWrite**](https://msdn.microsoft.com/library/windows/hardware/ff559879) to validate the address of a buffer, see [Buffer Handling](https://msdn.microsoft.com/library/windows/hardware/ff539004).
 
 
 **Use the appropriate method for accessing  data buffers with IOCTLs**
 
-One of the primary responsibilities of driver stacks is transferring data between user-mode applications and a system's devices. There are three methods for accessing data buffers. 
+One of the primary responsibilities of driver stacks is transferring data between user-mode applications and a system's devices. The three methods for accessing data buffers are shown in the following table. 
 
 |IOCTL Buffer Type | Summary                                    | For more information |  
 |------------------|--------------------------------------------|-------------------------------------------------------------------------|
@@ -151,52 +143,52 @@ One of the primary responsibilities of driver stacks is transferring data betwee
 | METHOD_IN_DIRECT or METHOD_OUT_DIRECT |Used in some high speed HW I/O    |[Using Direct I/O](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-direct-i-o) |
 | METHOD_NEITHER |Avoid if possible |[Using Neither Buffered Nor Direct I/O](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-neither-buffered-nor-direct-i-o)|
 
-In general buffered I/O is recomended as it provides the most secure buffering methods. But, even when using buffered I/O there are risks such as embedded pointers that must be mitigated.
+In general buffered I/O is recomended as it provides the most secure buffering methods. But even when using buffered I/O there are risks, such as embedded pointers that must be mitigated.
 
-For more information about the working with buffers in IOCTLs, see [Methods for Accessing Data Buffers](https://docs.microsoft.com/windows-hardware/drivers/kernel/methods-for-accessing-data-buffers)
+For more information about working with buffers in IOCTLs, see [Methods for Accessing Data Buffers](https://docs.microsoft.com/windows-hardware/drivers/kernel/methods-for-accessing-data-buffers).
 
 **Errors in use of IOCTL buffered I/O**
 
-Check the size of IOCTL related buffers. For more information, see [Failure to Check the Size of Buffers](https://msdn.microsoft.com/library/windows/hardware/ff545679).
+- Check the size of IOCTL related buffers. For more information, see [Failure to Check the Size of Buffers](https://msdn.microsoft.com/library/windows/hardware/ff545679).
  
-Properly initialize output buffers. For more information, see [Failure to Initialize Output Buffers](https://msdn.microsoft.com/library/windows/hardware/ff545693).
+- Properly initialize output buffers. For more information, see [Failure to Initialize Output Buffers](https://msdn.microsoft.com/library/windows/hardware/ff545693).
 
-Properly validate variable-length buffers. For more information, see [Failure to Validate Variable-Length Buffers](https://msdn.microsoft.com/library/windows/hardware/ff545709).
+- Properly validate variable-length buffers. For more information, see [Failure to Validate Variable-Length Buffers](https://msdn.microsoft.com/library/windows/hardware/ff545709).
 
 **Errors in IOCTL direct I/O**
 
 Handle zero-length buffers correctly. For more information, see [Errors in Direct I/O](https://msdn.microsoft.com/library/windows/hardware/ff544300).
 
 **Errors in referencing user-space addresses**
-Pointers embedded in buffered I/O requests must be validated. For more information, see [Errors in Referencing User-Space Addresses](https://msdn.microsoft.com/library/windows/hardware/ff544308).
+- Validate pointers embedded in buffered I/O requests. For more information, see [Errors in Referencing User-Space Addresses](https://msdn.microsoft.com/library/windows/hardware/ff544308).
 
-Validate any address in user space before trying to use it, using APIs such as [**ProbeForRead**](https://msdn.microsoft.com/library/windows/hardware/ff559876) and [**ProbeForWrite**](https://msdn.microsoft.com/library/windows/hardware/ff559879) when appropriate. 
+- Validate any address in the user space before trying to use it, using APIs such as [**ProbeForRead**](https://msdn.microsoft.com/library/windows/hardware/ff559876) and [**ProbeForWrite**](https://msdn.microsoft.com/library/windows/hardware/ff559879) when appropriate. 
 
 **Driver code must make correct use of memory**
 
-All driver pool allocations must be in NX pool. Using non-executable memory pools, it is inherently more secure as compared to executable non-paged (NP) pool, and provides better protection against overflow attacks. For more information about the related device fundamentals test, see [Device.DevFund.Memory.NXPool](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundmemory).
+- All driver pool allocations must be in non-executable (NX) pool. Using NX memory pools is inherently more secure than using executable non-paged (NP) pools, and provides better protection against overflow attacks. For more information about the related device fundamentals test, see [Device.DevFund.Memory.NXPool](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundmemory).
 
-Device driver must properly handle various user-mode as well as kernel to kernel I/O requests. For more information about the related device fundamentals test, see [Device.DevFund.Reliability.BasicSecurity](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundreliability).
+- Device drivers must properly handle various user-mode, as well as kernel to kernel I/O, requests. For more information about the related device fundamentals test, see [Device.DevFund.Reliability.BasicSecurity](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundreliability).
 
 To allow drivers to support HVCI virtualization, there are additional memory requirements. For more information, see [Device Guard Compatibility](#dgc) later in this topic.
 
 **Handles**
 
-Validate handles passed between user-mode and kernel-mode memory. For more information, see [Handle Management](https://msdn.microsoft.com/library/windows/hardware/ff547382).
+- Validate handles passed between user-mode and kernel-mode memory. For more information, see [Handle Management](https://msdn.microsoft.com/library/windows/hardware/ff547382).
 
-Validate object handles. For more information, see [Failure to Validate Object Handles](https://msdn.microsoft.com/library/windows/hardware/ff545703).
+- Validate object handles. For more information, see [Failure to Validate Object Handles](https://msdn.microsoft.com/library/windows/hardware/ff545703).
 
 **Device objects**
 
-Secure device objects. For more information, see [Securing Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff563688).
+- Secure device objects. For more information, see [Securing Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff563688).
 
-Validate device objects. For more information, see [Failure to Validate Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff545700).
+- Validate device objects. For more information, see [Failure to Validate Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff545700).
 
 **IRP**
 
 **Validate IRP input values**
 
-Validate all values that are associated with an IRP, such as buffer addresses and lengths. The following topics provide information about validating IRP input values.
+Validate all values that are associated with an IRP, such as buffer addresses and lengths. The following articles provide information about validating IRP input values:
 
 [DispatchReadWrite Using Buffered I/O](https://msdn.microsoft.com/library/windows/hardware/ff543388)
 
@@ -216,7 +208,7 @@ A driver must never complete an IRP with a status value of STATUS\_SUCCESS unles
 
 **Manage driver IRP pending state**
 
-The driver should mark the IRP pending before it saves the IRP and should include both the call to [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422) and the assignment in an interlocked sequence. For more information, see [Failure to Check a Driver's State](https://msdn.microsoft.com/library/windows/hardware/ff545672).
+The driver should mark the IRP pending before it saves the IRP, and should include both the call to [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422) and the assignment in an interlocked sequence. For more information, see [Failure to Check a Driver's State](https://msdn.microsoft.com/library/windows/hardware/ff545672).
 
 **Handle IRP cancellation operations properly**
 
@@ -226,7 +218,7 @@ One way to avoid the synchronization problems that are associated with cancel op
 
 **Handle IRP cleanup and close operations properly**
 
-Be sure that you understand the difference between [**IRP\_MJ\_CLEANUP**](https://msdn.microsoft.com/library/windows/hardware/ff550718) and [**IRP\_MJ\_CLOSE**](https://msdn.microsoft.com/library/windows/hardware/ff550720) requests. Cleanup requests arrive after an application closes all handles on a file object, but sometimes before all I/O requests have completed. Close requests arrive after all I/O requests for the file object have been completed or canceled. For more information, see the following topics:
+Be sure that you understand the difference between [**IRP\_MJ\_CLEANUP**](https://msdn.microsoft.com/library/windows/hardware/ff550718) and [**IRP\_MJ\_CLOSE**](https://msdn.microsoft.com/library/windows/hardware/ff550720) requests. Cleanup requests arrive after an application closes all handles on a file object, but sometimes before all I/O requests have completed. Close requests arrive after all I/O requests for the file object have been completed or canceled. For more information, see the following articles:
 
 [DispatchCreate, DispatchClose, and DispatchCreateClose Routines](https://msdn.microsoft.com/library/windows/hardware/ff543279)
 
@@ -238,46 +230,46 @@ For more information about handling IRPs correctly, see [Additional Errors in Ha
 
 **Other security issues**
 
-Properly handle the cleanup and close sequence of operations. For more information, see [Errors in Handling Cleanup and Close Operations](https://msdn.microsoft.com/library/windows/hardware/ff544304).
+- Properly handle the cleanup and close sequence of operations. For more information, see [Errors in Handling Cleanup and Close Operations](https://msdn.microsoft.com/library/windows/hardware/ff544304).
 
-Use a lock or an interlocked sequence to prevent race conditions. For more information, see [Errors in a Multiprocessor Environment](https://msdn.microsoft.com/library/windows/hardware/ff544288).
+- Use a lock or an interlocked sequence to prevent race conditions. For more information, see [Errors in a Multiprocessor Environment](https://msdn.microsoft.com/library/windows/hardware/ff544288).
 
-Device driver must properly handle various user-mode as well as kernel to kernel I/O requests. For more information, see [Device.DevFund.Reliability.BasicSecurity](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundreliability).
+- Ensure that device drivers properly handle various user-mode as well as kernel to kernel I/O requests. For more information, see [Device.DevFund.Reliability.BasicSecurity](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundreliability).
 
-No TDI filters or LSPs are installed by the driver or associated software packages during installation or usage. For more information about the related driver fundamentals test, see [Device.DevFund.Security](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundsecurity).
+- Ensure that no TDI filters or LSPs are installed by the driver or associated software packages during installation or usage. For more information about the related driver fundamentals test, see [Device.DevFund.Security](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundsecurity).
 
 **Use safe functions**
 
--   Use safe string functions. For more information, see [Using Safe String Functions](https://msdn.microsoft.com/library/windows/hardware/ff565508).
+- Use safe string functions. For more information, see [Using Safe String Functions](https://msdn.microsoft.com/library/windows/hardware/ff565508).
 
--   Use safe arithmetic functions. For more information, see [Arithmetic Functions](https://msdn.microsoft.com/library/windows/hardware/hh406348) in [Safe Integer Library Routines](https://msdn.microsoft.com/library/windows/hardware/hh406570)
+- Use safe arithmetic functions. For more information, see [Arithmetic Functions](https://msdn.microsoft.com/library/windows/hardware/hh406348) in [Safe Integer Library Routines](https://msdn.microsoft.com/library/windows/hardware/hh406570)
 
--   Use safe conversion functions. For more information, see [Conversion Functions](https://msdn.microsoft.com/library/windows/hardware/hh450942) in [Safe Integer Library Routines](https://msdn.microsoft.com/library/windows/hardware/hh406570)
+- Use safe conversion functions. For more information, see [Conversion Functions](https://msdn.microsoft.com/library/windows/hardware/hh450942) in [Safe Integer Library Routines](https://msdn.microsoft.com/library/windows/hardware/hh406570)
 
 **Additional code vulnerabilities**
 
-In addition to the possible vulnerabilities covered here, this topic provides additional information about enhancing the security of kernel mode driver code - [Creating Reliable Kernel-Mode Drivers](https://msdn.microsoft.com/library/windows/hardware/ff542904).
+In addition to the possible vulnerabilities covered here, this article provides additional information about enhancing the security of kernel mode driver code: [Creating Reliable Kernel-Mode Drivers](https://msdn.microsoft.com/library/windows/hardware/ff542904).
 
-For additional information about C and C++ secure coding, see [Secure coding resources](#securecodingresources) and the end of this topic.
+For additional information about C and C++ secure coding, see [Secure coding resources](#securecodingresources) and the end of this article.
 
 
 ## <span id="DGC"></span><span id="dgc"></span>Validate Device Guard compatibility
 
-**Security checklist item \#5:** *Validate that your driver uses memory so that is Device Guard Compatible.*
+**Security checklist item \#5:** *Validate that your driver uses memory so that it is Device Guard compatible.*
 
 **Memory usage and Device Guard compatibility**
 
-Device Guard uses hardware technology and virtualization to isolate the Code Integrity (CI) decision-making function from the rest of the operating system. When using virtualization-based security to isolate Code Integrity, the only way kernel memory can become executable is through a Code Integrity verification. This means that kernel memory pages can never be Writable and Executable (W+X) and executable code cannot be directly modified. 
+Device Guard uses hardware technology and virtualization to isolate the Code Integrity (CI) decision-making function from the rest of the operating system. When using virtualization-based security to isolate CI, the only way kernel memory can become executable is through a CI verification. This means that kernel memory pages can never be Writable and Executable (W+X) and executable code cannot be directly modified. 
 
-To implement Device Guard, make sure your driver code does the following.
+To implement Device Guard, make sure your driver code does the following:
 
-- Opt-in to NX by default
-- Use NX APIs/flags for memory allocation – NonPagedPoolNx
-- Do not use sections that are both writable and executable
-- Do not attempt to directly modify executable system memory
-- Do not use dynamic code in kernel
-- Do not load data files as executable
-- Section alignment must be a multiple of 0x1000 (PAGE\_SIZE). E.g. DRIVER\_ALIGNMENT=0x1000
+- Opts in to NX by default
+- Uses NX APIs/flags for memory allocation (NonPagedPoolNx)
+- Does not use sections that are both writable and executable
+- Does not attempt to directly modify executable system memory
+- Does not use dynamic code in kernel
+- Does not load data files as executable
+- Section alignment is a multiple of 0x1000 (PAGE\_SIZE). E.g. DRIVER\_ALIGNMENT=0x1000
 
 The following list of DDIs that are not reserved for system use may be impacted:
 
@@ -339,22 +331,22 @@ The following list of DDIs that are not reserved for system use may be impacted:
 | [**WdfRegistryQueryMemory**](https://msdn.microsoft.com/library/windows/hardware/ff549920)                                             |
 
  
-For more information about using the tool, see [Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility](#use-the-device-guard-readiness-tool) later in this topic.
+For more information about using the tool, see [Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility](#use-the-device-guard-readiness-tool) later in this article.
 
 For more information about the related device fundamentals test, see [Device.DevFund.DeviceGuard](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfunddeviceguard).
 
 For general information about Device Guard, see [Windows 10 Device Guard and Credential Guard Demystified](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/)
-and [Device Guard deployment guide](https://docs.microsoft.com/en-us/windows/device-security/device-guard/device-guard-deployment-guide)
+and [Device Guard deployment guide](https://docs.microsoft.com/en-us/windows/device-security/device-guard/device-guard-deployment-guide).
 
 
-## <span id="technologyspecificcodepractices"></span>Follow technology specific code best practices
+## <span id="technologyspecificcodepractices"></span>Follow technology-specific code best practices
 
 
-**Security checklist item \#6:** *Review the following technology specific guidance for your driver.*
+**Security checklist item \#6:** *Review the following technology-specific guidance for your driver.*
 
 *File Systems*
 
-For more information, about file system driver security see the following topics.
+For more information, about file system driver security see the following articles:
 
 [Security Considerations for File Systems](https://msdn.microsoft.com/windows/hardware/drivers/ifs/security-considerations-for-file-systems)
 
@@ -366,7 +358,7 @@ For more information, about file system driver security see the following topics
 
 *NDIS - Networking*
 
-For about NDIS driver security, see [Security Issues for Network Drivers](https://msdn.microsoft.com/windows/hardware/drivers/network/security-issues-for-network-drivers)
+For information about NDIS driver security, see [Security Issues for Network Drivers](https://msdn.microsoft.com/windows/hardware/drivers/network/security-issues-for-network-drivers).
 
 *Display*
 
@@ -382,14 +374,14 @@ For information related to printer driver security, see [V4 Printer Driver Secur
 
 *Security Issues for Windows Image Acquisition (WIA) Drivers*
 
-For information about WIA security, see [Security Issues for Windows Image Acquisition (WIA) Drivers](https://msdn.microsoft.com/windows/hardware/drivers/image/security-issues-for-wia-drivers)
+For information about WIA security, see [Security Issues for Windows Image Acquisition (WIA) Drivers](https://msdn.microsoft.com/windows/hardware/drivers/image/security-issues-for-wia-drivers).
 
 
 ## <span id="peercodereview"></span>Perform peer code review
 
-**Security checklist item \#7:** *Perform code review, to look for issues not surfaced by the other tools and processes*
+**Security checklist item \#7:** *Perform peer code review, to look for issues not surfaced by the other tools and processes*
 
-Seek out knowledgeable code review to look for issues, that you may have missed. A second set of eyes will often see issues that you may have overlooked.
+Seek out knowledgeable code reviewers to look for issues that you may have missed. A second set of eyes will often see issues that you may have overlooked.
 
 If you don't have suitable staff to review you code internally, consider engaging outside help for this purpose.
 
@@ -400,14 +392,14 @@ If you don't have suitable staff to review you code internally, consider engagin
 
 **Security checklist item \#8:** *Review your driver to make sure that your are properly controlling access.*
 
-**Managing Driver Access Control**
+**Managing driver access control**
 
 Drivers must help to prevent users from inappropriately accessing a computer's devices and files. To prevent unauthorized access to devices and files, you must:
 
 -   Name device objects only when necessary.
 -   Provide security descriptors for device objects and interfaces.
 
-For more information, review these topics.
+For more information, see the following articles:
 
 [Controlling Device Access in KMDF Drivers](https://msdn.microsoft.com/windows/hardware/drivers/wdf/controlling-device-access-in-kmdf-drivers)
 
@@ -417,11 +409,11 @@ For more information, review these topics.
 
 "Names, Security Descriptors and Device Classes " on page 6 of the *January February 2017 The NT Insider Newsletter* published by [OSR](http://www.osr.com).
 
-**Security Identifiers (SIDs) Risk Hierarchy** 
+**Security Identifiers (SIDs) risk hierarchy** 
 
-The following section describes the risk hierarchy of the common security identifiers (SIDs) used in driver code. For general information about SDDL, see [SDDL for Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff563667), [SID Strings](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379602.aspx) and [SDDL String Syntax](https://msdn.microsoft.com/en-us/library/cc230374.aspx). 
+The following section describes the risk hierarchy of the common SIDs used in driver code. For general information about SDDL, see [SDDL for Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff563667), [SID Strings](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379602.aspx), and [SDDL String Syntax](https://msdn.microsoft.com/en-us/library/cc230374.aspx). 
 
-It is important to understand that if lower privilege callers are allowed to access the kernel code risk is increased. In this summary diagram, the risk increases as you allow lower privilege SIDs access to your driver functionality.
+It is important to understand that if lower privilege callers are allowed to access the kernel, code risk is increased. In this summary diagram, the risk increases as you allow lower privilege SIDs access to your driver functionality.
 
 ```
 SY (System)
@@ -435,9 +427,9 @@ AU (Authenticated User)
 
 Following the general least privilege security principle, configure only the minimum level of access that is required for your driver to function.
 
-**Granular IOCTL Security Control**
+**Granular IOCTL security control**
 
-To tighten security when such IOCTLs are sent by user-mode callers, the driver code should include the [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550418.aspx) function. This function allows a driver to check access rights. Upon receiving an IOCTL, a driver can call [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550418.aspx), specifying FILE_READ_ACCESS, FILE_WRITE_ACCESS, or both. For more information see the following topics:
+To tighten security when such IOCTLs are sent by user-mode callers, the driver code should include the [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550418.aspx) function. This function allows a driver to check access rights. Upon receiving an IOCTL, a driver can call [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550418.aspx), specifying FILE_READ_ACCESS, FILE_WRITE_ACCESS, or both. For more information, see the following articles:
 
 [Define and handle IOCTLs securely](https://msdn.microsoft.com/en-us/library/windows/hardware/dn613909.aspx#define_and_handle_ioctls_securely)
 
@@ -460,7 +452,7 @@ To tighten security when such IOCTLs are sent by user-mode callers, the driver c
 
 **Security checklist item \#9:** *Review driver inf creation and installation guidance to make sure you are following best practices.*
 
-For more information, review these topics.
+For more information, see the following articles:
 
 [Creating Secure Device Installations](https://msdn.microsoft.com/windows/hardware/drivers/install/creating-secure-device-installations)
 
@@ -480,23 +472,23 @@ Before you release a driver package to the public, we recommend that you submit 
 
 ## <span id="CodeValidationTools"></span><span id="codevalidationtools"></span><span id="CODEVALIDATIONTOOLS"></span>Use code validation tools
 
-**Security checklist item \#11:** *Use these tools to help validate that your code follows security recommendations and to probe for to look for gaps that were missed in your development process.*
+**Security checklist item \#11:** *Use these tools to help validate that your code follows security recommendations and to probe for gaps that were missed in your development process.*
 
 **Code analysis for drivers**
 
-The code analysis feature in Visual Studio to check for security vulnerabilities in your code. The Windows Driver Kit installs rule sets that are designed to check for issues in native driver code.
+Use the code analysis feature in Visual Studio to check for security vulnerabilities in your code. The Windows Driver Kit (WDK) installs rule sets that are designed to check for issues in native driver code.
 
-For more information see [Code Analysis for drivers overview](https://msdn.microsoft.com/library/windows/hardware/hh698231.aspx). For additional background on code analysis see [Visual Studio 2013 Static Code Analysis in depth](https://blogs.msdn.microsoft.com/hkamel/2013/10/24/visual-studio-2013-static-code-analysis-in-depth-what-when-and-how/)
+For more information, see [Code Analysis for drivers overview](https://msdn.microsoft.com/library/windows/hardware/hh698231.aspx). For additional background on code analysis, see [Visual Studio 2013 Static Code Analysis in depth](https://blogs.msdn.microsoft.com/hkamel/2013/10/24/visual-studio-2013-static-code-analysis-in-depth-what-when-and-how/).
 
-Lastly, see this walkthrough later in this topic: [Use Code Analysis in Visual Studio to Investigate Driver Security](#use-code-analysis)
+Also see the walkthrough later in this article: [Use Code Analysis in Visual Studio to Investigate Driver Security](#use-code-analysis).
 
 **Static Driver Verifier**
 
-Static Driver Verifier (SDV) uses a set of interface rules and a model of the operating system to determine if the driver interacts correctly with the Windows operating system. SDV finds defects in driver code that could point to potential bugs in drivers.
+Static Driver Verifier (SDV) uses a set of interface rules and a model of the operating system to determine whether the driver interacts correctly with the Windows operating system. SDV finds defects in driver code that could point to potential bugs in drivers.
 
-For more information [Introducing Static Driver Verifier](https://msdn.microsoft.com/windows/hardware/drivers/devtest/introducing-static-driver-verifier)
+For more information, see [Introducing Static Driver Verifier](https://msdn.microsoft.com/windows/hardware/drivers/devtest/introducing-static-driver-verifier)
 
-See this walkthrough later in this topic, [Use Static Driver Verifier to Check for Vulnerabilities](#sdv)
+Also see this walkthrough later in this article: [Use Static Driver Verifier to Check for Vulnerabilities](#sdv).
 
 **Driver Verifier**
 
@@ -504,35 +496,35 @@ Driver Verifier allows for live testing of the driver. Driver Verifier monitors 
 
 **Device Guard Readiness Tool**
 
-The Device Guard Readiness Tool is used to evaluate HVCI driver compatibility. See this walkthrough later in this topic: [Use the Device Guard Readiness Tool to Evaluate Driver HVCI compatibility](#use-the-device-guard-readiness-tool)
+The Device Guard Readiness Tool is used to evaluate HVCI driver compatibility. See the walkthrough later in this article: [Use the Device Guard Readiness Tool to Evaluate Driver HVCI compatibility](#use-the-device-guard-readiness-tool).
 
 **Hardware compatibility program tests**
 
 The hardware compatibility program tests can be used on the command line to exercise driver code and probe for weakness. The Device Fundamentals tests can be used on the command line to exercise driver code and probe for weakness. For general information about the device fundamentals tests and the hardware compatibility program, see [Hardware Compatibility Specifications for Windows 10, version 1607](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/index).
 
-The following tests are examples of tests that may be useful to check driver code for some behaviors associated with code vulnerabilities.
+The following tests are examples of tests that may be useful to check driver code for some behaviors associated with code vulnerabilities:
 
-Device driver must properly handle various user-mode as well as kernel to kernel I/O requests. For more information, see [Device.DevFund.Reliability.BasicSecurity](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundreliability)
+- Device driver must properly handle various user-mode, as well as kernel to kernel I/O, requests. For more information, see [Device.DevFund.Reliability.BasicSecurity](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundreliability)
 
-The Device Fundamentals Penetration tests perform various forms of input attacks, which are a critical component of security testing. Attack and Penetration testing can help identify vulnerabilities in software interfaces. Some basic fuzz testing as well as the IoSpy and IoAttack utilities are included. For more information, see [Penetration Tests (Device Fundamentals)](https://msdn.microsoft.com/windows/hardware/drivers/devtest/penetration-tests--device-fundamentals-) and [How to Perform Fuzz Tests with IoSpy and IoAttack](https://msdn.microsoft.com/windows/hardware/drivers/devtest/how-to-perform-fuzz-tests-with-iospy-and-ioattack).
+- The Device Fundamentals Penetration tests perform various forms of input attacks, which are a critical component of security testing. Attack and Penetration testing can help identify vulnerabilities in software interfaces. Some basic fuzz testing, as well as the IoSpy and IoAttack utilities, are included. For more information, see [Penetration Tests (Device Fundamentals)](https://msdn.microsoft.com/windows/hardware/drivers/devtest/penetration-tests--device-fundamentals-) and [How to Perform Fuzz Tests with IoSpy and IoAttack](https://msdn.microsoft.com/windows/hardware/drivers/devtest/how-to-perform-fuzz-tests-with-iospy-and-ioattack).
 
-The CHAOS (Concurrent Hardware and Operating System) tests run various PnP driver tests, device driver fuzz tests, and power system tests concurrently. For more information, see [CHAOS Tests (Device Fundamentals)](https://msdn.microsoft.com/windows/hardware/drivers/devtest/chaos-tests--device-fundamentals-).
+- The CHAOS (Concurrent Hardware and Operating System) tests run various PnP driver tests, device driver fuzz tests, and power system tests concurrently. For more information, see [CHAOS Tests (Device Fundamentals)](https://msdn.microsoft.com/windows/hardware/drivers/devtest/chaos-tests--device-fundamentals-).
 
-Device Path Exerciser runs as part of Device.DevFund.Reliability.BasicSecurity. For more information see [Device.DevFund.Reliability](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund).
+- Device Path Exerciser runs as part of Device.DevFund.Reliability.BasicSecurity. For more information see [Device.DevFund.Reliability](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund).
 
-All driver pool allocations must be in NX pool. Using non-executable memory pools, it is inherently more secure as compared to executable non-paged (NP) pool, and provides better protection against overflow attacks. For more information see [DevFund.Memory.NXPool](https://msdn.microsoft.com/ie/dn932575#device-devfund-memory-nxpool).
+- All driver pool allocations must be in NX pool. Using non-executable memory pools is inherently more secure than executable non-paged (NP) pools, and provides better protection against overflow attacks. For more information, see [DevFund.Memory.NXPool](https://msdn.microsoft.com/ie/dn932575#device-devfund-memory-nxpool).
 
-Use the [Device.DevFund.DeviceGuard](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#device-devfund-deviceguard) test, along with the other tools described in this topic, to confirm that your driver is device guard compatible.
+- Use the [Device.DevFund.DeviceGuard](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#device-devfund-deviceguard) test, along with the other tools described in this article, to confirm that your driver is Device Guard compatible.
 
 **BinScope Binary Analyzer**
 
-See this walkthrough later in this topic: [Check code with Binscope Analyzer](#binscope)
+See the walkthrough later in this article: [Check code with Binscope Analyzer](#binscope).
 
 For more information, see [New Version of BinScope Binary Analyzer](https://blogs.microsoft.com/microsoftsecure/2014/11/20/new-binscope-released/) and the user and getting started guides that are included with the tool download.
 
-**Custom and domain specific test tools**
+**Custom and domain-specific test tools**
 
-Consider the development of custom domain specific security tests. To develop additional tests gather input from the original designers of the software, as well as unrelated development resources familiar with the specific type of driver being developed, and one or more people familiar with security intrusion analysis and prevention.
+Consider the development of custom domain-specific security tests. To develop additional tests, gather input from the original designers of the software, as well as unrelated development resources familiar with the specific type of driver being developed, and one or more people familiar with security intrusion analysis and prevention.
 
 
 ## <span id="use-code-analysis"></span>Use code analysis in Visual Studio to investigate driver security
@@ -543,21 +535,19 @@ For more information, see [How to run Code Analysis for drivers](https://msdn.mi
 
 1. Open the driver solution in Visual Studio.
 
-To become familiar with code analysis, you can use one of the sample drivers - for example the featured toaster sample.
-
- <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured>
+To become familiar with code analysis, you can use one of the sample drivers (for example, the featured toaster sample: <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured>).
 
 2. In Visual Studio, for each project in the solution change the project properties to use the desired rule set. For example: Project &gt;&gt; Properties &gt;&gt; Code Analysis &gt;&gt; General, select *Recommended driver rules*. In addition to using the recommenced driver rules, use the *Recommended native rules* rule set.
 
 3. Select Build &gt;&gt; Run Code Analysis on Solution.
 
-4. View warnings in **Error List** tab of build output window in Visual Studio.
+4. View warnings in the **Error List** tab of the build output window in Visual Studio.
 
 Click on the description for each warning to see the problematic area in your code.
 
 Click on the linked warning code to see additional information.
 
-Determine if your code needs to be changed, or if an annotation needs to be added to allow the code analysis engine to properly follow the intent of your code. For more information on code annotation, see [Using SAL Annotations to Reduce C/C++ Code Defects](https://msdn.microsoft.com/library/ms182032.aspx) and [SAL 2.0 Annotations for Windows Drivers](https://msdn.microsoft.com/windows/hardware/drivers/devtest/sal-2-annotations-for-windows-drivers).
+Determine whether your code needs to be changed, or whether an annotation needs to be added to allow the code analysis engine to properly follow the intent of your code. For more information on code annotation, see [Using SAL Annotations to Reduce C/C++ Code Defects](https://msdn.microsoft.com/library/ms182032.aspx) and [SAL 2.0 Annotations for Windows Drivers](https://msdn.microsoft.com/windows/hardware/drivers/devtest/sal-2-annotations-for-windows-drivers).
 
 
 
@@ -570,19 +560,19 @@ For more information, see [Static Driver Verifier](https://msdn.microsoft.com/wi
 
 1. Open the targeted driver solution in Visual Studio.
 
-To become familiar with SDV, you can use one of the sample drivers - for example the featured toaster sample. <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured>
+To become familiar with SDV, you can use one of the sample drivers (for example, the featured toaster sample: <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured>).
 
-1. In Visual Studio, change the build type to *Release*. Static driver verifier requires that the build type is release, not debug.
+1. In Visual Studio, change the build type to *Release*. Static Driver Verifier requires that the build type is release, not debug.
 
 2. In Visual Studio, select Build &gt;&gt; Build Solution.
 
 3. In Visual Studio, select Driver &gt;&gt; Launch Static Driver Verifier.
 
-4. In SDV, on the "Rules" tab select *Default* in the pull down under Rule Sets.
+4. In SDV, on the *Rules* tab, select *Default* under *Rule Sets*.
 
 Although the default rules find many common issues, consider running the more extensive *All driver rules* rule set as well.
 
-5. In the "Main" tab of SDV, click *Start*.
+5. On the *Main* tab of SDV, click *Start*.
 
 6. When SDV is complete, review any warnings in the output. The *Main* tab displays the total number of defects found.
 
@@ -597,19 +587,19 @@ Although the default rules find many common issues, consider running the more ex
 
 The Device Guard Readiness tool is designed to check a number of requirements for creating a PC that supports a variety of security enhancement features. This section describes how to use the tool to evaluate the ability of a driver to run in a Hypervisor Code Integrity (HVCI) environment.
 
-OS and Hardware requirements for testing HVCI driver Device Guard compatibility
+OS and Hardware requirements for testing HVCI driver Device Guard compatibility:
 
-1. Windows SKUs: Available only on these Windows SKUs - Enterprise, Server and Enterprise IoT
+1. Windows: Available only on Windows 10 Enterprise, Windows Server, and Windows 10 IoT Enterprise
 
 2. Hardware: Recent hardware that supports virtualization extension with SLAT.
 
-To use the readiness tool to evaluate the additional requirements such as secure boot, refer to the readme.txt file included in the readiness tool download.
+To use the readiness tool to evaluate the additional requirements, such as secure boot, refer to the readme.txt file included in the readiness tool download.
 
 For more information about the related device fundamentals test, see [Device.DevFund.DeviceGuard](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfunddeviceguard).
 
 **Using the tool**
 
-To use the Device Guard Readiness Tool to evaluate complete the following steps.
+To use Device Guard Readiness Tool to evaluate, complete the following steps:
 
 -   **Prepare the test PC**
 
@@ -635,7 +625,7 @@ To use the Device Guard Readiness Tool to evaluate complete the following steps.
 
     Install the desired test driver(s) on the target test PC.
 
-    **Important**  After you have tested the development driver and worked through any code issues, retest the final production driver. In addition use the HLK to test the driver. For more information, see [HyperVisor Code Integrity Readiness Test](https://msdn.microsoft.com/library/windows/hardware/dn955152).
+    **Important**  After you have tested the development driver and worked through any code issues, retest the final production driver. In addition, use the HLK to test the driver. For more information, see [HyperVisor Code Integrity Readiness Test](https://msdn.microsoft.com/library/windows/hardware/dn955152).
 
      
 
@@ -646,13 +636,13 @@ To use the Device Guard Readiness Tool to evaluate complete the following steps.
 
      
 
-    1. Download the tool from here: [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337)
+    1. Download the tool from here: [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
     2. Unzip the tool on the target test machine.
 
 -   **Configure PowerShell to allow for the execution of unsigned scripts.**
 
-    The readiness tool is a PowerShell script. To work with the readiness tool script open an Administrator PowerShell script.
+    The Readiness Tool is a PowerShell script. To work with the Readiness Tool script, open an Administrator PowerShell script.
 
     If Execution-Policy is not already set to allow running script, then you should manually set it as shown here.
 
@@ -662,9 +652,9 @@ To use the Device Guard Readiness Tool to evaluate complete the following steps.
 
 -   **Run the readiness tool to enable HVCI**
 
-    1. In Powershell, move to the directory that you unzipped the readiness tool into.
+    1. In Powershell, locate the directory into which you unzipped the Readiness Tool.
 
-    2. Run the readiness tool to enable HVCI.
+    2. Run the Readiness Tool to enable HVCI.
 
     ```
     DG_Readiness_Tool.ps1 -Enable HVCI
@@ -674,7 +664,7 @@ To use the Device Guard Readiness Tool to evaluate complete the following steps.
 
 -   **Run the script to evaluate HVCI capability**
 
-    1. Run the readiness tool to evaluate the ability of the drivers to support HVCI.
+    1. Run the Readiness Tool to evaluate the ability of the drivers to support HVCI.
 
     ```
     DG_Readiness_Tool.ps1 -Capable HVCI
@@ -692,9 +682,9 @@ To use the Device Guard Readiness Tool to evaluate complete the following steps.
 
      
 
-    In addition to the output to the screen, by default the log file with detailed output is located at C:\\DGLogs
+    In addition to the output to the screen, by default, the log file with detailed output is located at C:\\DGLogs
 
-    There are five sections in the output of the device guard readiness tool output. Step 1 contains the is the driver compatibility information.
+    There are five steps (or sections) in the output of the Device Guard Readiness Tool. Step 1 contains the is the driver compatibility information.
 
     ```
      ====================== Step 1 Driver Compat ====================== 
@@ -728,7 +718,7 @@ To use the Device Guard Readiness Tool to evaluate complete the following steps.
     ```
 
 
-    Use the following table to interpret the output to determine what driver code changes are needed to fix the different types of HVCI incompatibilities.
+    Use the following table to interpret the output and determine what driver code changes are needed to fix the different types of HVCI incompatibilities.
 
 
 <table>
@@ -779,8 +769,8 @@ To use the Device Guard Readiness Tool to evaluate complete the following steps.
 
 <tr class="odd">
 <td align="left"><p>Unsupported Relocs</p></td>
-<td align="left"><p>In Windows 10 version 1507 through version 1607, because of the use of Address Space Layout Randomization (ASLR) an issue can arise with address alignment and memory relocation.  The operating system needs to relocate the address from where the linker set its default base address to the actual location that ASLR assigned. This relocation cannot straddle a page boundary.  For example, consider a 64-bit address value that starts at offset 0x3FFC in a page. It’s address value overlaps over to the next page at offset 0x0003. This type of overlapping relocs is not supported prior to Windows 10 version 1703.</p>
-<p>This situation can occur when a global struct type variable initializer has a misaligned pointer to another global, laid out in such a way that the linker cannot move the variable to avoid the straddling relocation. The linker will attempt to move the variable, but there are situations where it may not be able to do so, for example with large misaligned structs or large arrays of misaligned structs. Where appropriate, modules should be assembled using the [/Gy (COMDAT)](https://docs.microsoft.com/en-us/cpp/build/reference/gy-enable-function-level-linking) option to allow the linker to align module code as much as possible.</p>
+<td align="left"><p>In Windows 10, version 1507 through Windows 10, version 1607, because of the use of Address Space Layout Randomization (ASLR) an issue can arise with address alignment and memory relocation.  The operating system needs to relocate the address from where the linker set its default base address to the actual location that ASLR assigned. This relocation cannot straddle a page boundary.  For example, consider a 64-bit address value that starts at offset 0x3FFC in a page. It’s address value overlaps over to the next page at offset 0x0003. This type of overlapping relocs is not supported prior to Windows 10, version 1703.</p>
+<p>This situation can occur when a global struct type variable initializer has a misaligned pointer to another global, laid out in such a way that the linker cannot move the variable to avoid the straddling relocation. The linker will attempt to move the variable, but there are situations where it may not be able to do so (for example with large misaligned structs or large arrays of misaligned structs). Where appropriate, modules should be assembled using the [/Gy (COMDAT)](https://docs.microsoft.com/en-us/cpp/build/reference/gy-enable-function-level-linking) option to allow the linker to align module code as much as possible.</p>
 
 
 
@@ -860,7 +850,7 @@ BAD_STRUCT MayHaveStraddleRelocations[4096] = { // as a global variable
 
 **Script customization**
 
-Below is the list of Regkeys and its values for customization of the script to Device Guard and Credential Guard without UEFI Lock.
+Below is the list of Regkeys and their values for customization of the script to Device Guard and Credential Guard without UEFI Lock.
 
 ```
 For RS1 and RS2 – to enable HVCI and CG without UEFI Lock:
@@ -875,7 +865,7 @@ Use the Driver Verifier code integrity option flag (0x02000000) to enable extra 
 ```
 verifier.exe /flags 0x02000000 /driver <driver.sys>
 ```
-To choose this option if using the verifier GUI, choose Create custom settings (for code developers), choose Next, and then choose _Code integrity checks_.
+To choose this option if using the verifier GUI, select *Create custom settings* (for code developers), select *Next*, and then select _Code integrity checks_.
 
 You can use the verifier command line /query option to display the current driver verifier information.
 
@@ -886,15 +876,15 @@ verifier /query
 
 ## <span id="BinScope"></span><span id="binscope"></span><span id="BINSCOPE"></span>Check code with BinScope Binary Analyzer
 
-**Security checklist item \#15:** *Follow these steps to use BinScope to double check compile and build options are configured to minimize known security issues.*
+**Security checklist item \#15:** *Follow these steps to use BinScope to double check that compile and build options are configured to minimize known security issues.*
 
 Use BinScope to examine application binary files to identify coding and building practices that can potentially render the application vulnerable to attack or to being used as an attack vector.
 
-For more information, see this [BinScope Binary Analyzer TechNet Video](https://technet.microsoft.com/video/binscope-binary-analyzer.aspx) and the word documents available as part of the tool download.
+For more information, see [BinScope Binary Analyzer TechNet Video](https://technet.microsoft.com/video/binscope-binary-analyzer.aspx) and the word documents available as part of the tool download.
 
-Follow these steps to validate that the code you are shipping has includes common security compile options properly configured.
+Follow these steps to validate that the code you are shipping has includes common security compile options properly configured:
 
-1. Download BinScope Analyzer and related documents from here: <https://www.microsoft.com/download/details.aspx?id=44995>
+1. Download BinScope Analyzer and related documents from here: <https://www.microsoft.com/download/details.aspx?id=44995>.
 
 2. Review the *BinScope Getting Started Guide* that you downloaded.
 
@@ -972,11 +962,11 @@ All Scanned Items
 
 **!exploitable Crash Analyzer**
 
-The !exploitable Crash Analyzer is a Windows debugger extensions that parses crash logs looking for unique issues. It also examines the type of crash and tries to determine if the error is something that could be exploited by a malicious hacker.
+The !exploitable Crash Analyzer is a Windows debugger extensions that parses crash logs looking for unique issues. It also examines the type of crash and tries to determine whether the error is something that could be exploited by a malicious hacker.
 
-Microsoft Security Engineering Center (MSEC), created the !exploitable crash analyzer. You can download the from codeplex. <http://msecdbg.codeplex.com/>
+Microsoft Security Engineering Center (MSEC), created the !exploitable Crash Analyzer. You can download the from codeplex: <http://msecdbg.codeplex.com/>.
 
-For more information, see this blog post: [!Exploitable crash analyzer version 1.6](https://blogs.microsoft.com/microsoftsecure/2013/06/13/exploitable-crash-analyzer-version-1-6/) and this Channel 9 video [!exploitable Crash Analyzer](https://channel9.msdn.com/blogs/pdcnews/bang-exploitable-security-analyzer).
+For more information, see [!Exploitable crash analyzer version 1.6](https://blogs.microsoft.com/microsoftsecure/2013/06/13/exploitable-crash-analyzer-version-1-6/) and the Channel 9 video [!exploitable Crash Analyzer](https://channel9.msdn.com/blogs/pdcnews/bang-exploitable-security-analyzer).
 
 **Security related debugger commands**
 
@@ -994,7 +984,7 @@ The !sd extension displays the security descriptor at the specified address. For
 ## <span id="SecureCodingResources"></span><span id="securecodingresources"></span><span id="SECURECODINGRESOURCES"></span>Review secure coding resources
 
 
-**Security checklist item \#17:** *Review these resources to expand your understanding of secure coding best practices that are applicable to driver developers.*
+**Security checklist item \#17:** *Review these resources to expand your understanding of the secure coding best practices that are applicable to driver developers.*
 
 *Review these resources to learn more about driver security*
 
@@ -1045,13 +1035,13 @@ Review these driver samples to review examples of driver projects that illustrat
 
 **Training**
 
-Windows driver classroom training is available from vendors such as the following.
+Windows driver classroom training is available from vendors such as the following:
 
 - [OSR](https://www.osr.com) 
 - [Winsider](https://www.windows-internals.com/)
 - [Azius](https://www.azius.com)
 
-Secure coding online training is available from a variety of sources. For example this course is available from coursera. [https://www.coursera.org/learn/software-security](https://www.coursera.org/learn/software-security#faqs)
+Secure coding online training is available from a variety of sources. For example, this course is available from coursera. [https://www.coursera.org/learn/software-security](https://www.coursera.org/learn/software-security#faqs)
 
 **Professional Certification**
 
@@ -1060,9 +1050,9 @@ Secure coding online training is available from a variety of sources. For exampl
 
 ## <span id="keytakeaways"></span>Summary of key takeaways
 
-Driver security is a complex undertaking containing many elements, but here are a few key points to consider.
+Driver security is a complex undertaking containing many elements, but here are a few key points to consider:
 
--   Drivers live in the windows kernel, and having an issue when executing in kernel exposes the entire operating system. Because of this, pay close attention to driver security and design with security as top of mind.
+-   Drivers live in the windows kernel, and having an issue when executing in kernel exposes the entire operating system. Because of this, pay close attention to driver security and design with security in mind.
 
 -   Apply the principle of least privilege:
 
@@ -1070,16 +1060,16 @@ Driver security is a complex undertaking containing many elements, but here are 
 
     b.	Further restrict individual IOCTL’s 
 
--	Create a threat model to identify attack vectors and consider if anything can be restricted further.
--	Be careful around embedded pointers being passed in from usermode, they need to be probed, accessed within try except, and they are prone to time of check time of use (ToCToU) issues unless the value of the buffer is captured and compared.
--	When not sure use METHOD_BUFFERED as an IOCTL buffering method.
+-	Create a threat model to identify attack vectors and consider whether anything can be restricted further.
+-	Be careful with regard to embedded pointers being passed in from usermode. They need to be probed, accessed within try except, and they are prone to time of check time of use (ToCToU) issues unless the value of the buffer is captured and compared.
+-	If you're unsure, use METHOD_BUFFERED as an IOCTL buffering method.
 -   Use code scanning utilities to look for known code vulnerabilities and remediate any identified issues.
--   Seek out knowledgeable code review to look for issues, that you may have missed.
--	Use driver verifier and test your driver with multiple inputs including corner cases.
+-   Seek out knowledgeable code reviewers to look for issues that you may have missed.
+-	Use driver verifiers and test your driver with multiple inputs, including corner cases.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[hw_design\hw_design]:%20Driver%20security%20checklist%20%20RELEASE:%20%286/16/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this article to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[hw_design\hw_design]:%20Driver%20security%20checklist%20%20RELEASE:%20%286/16/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 
