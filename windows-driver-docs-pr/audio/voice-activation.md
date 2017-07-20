@@ -60,9 +60,28 @@ The "Learn my voice" feature allows the user to train Cortana to recognize their
 
 ![cortana desktop settings for hw keyword spotter wake on voice](images/audio-voice-activation-settings-2017.png)
 
-When voice activation is paired with "Learn my voice", where the two algorithms will work together to reduce false activations. This is especially valuable for the meeting room scenario, where one person says "Hey Cortana" in a room full of devices.
+When voice activation is paired with "Learn my voice", the two algorithms will work together to reduce false activations. This is especially valuable for the meeting room scenario, where one person says "Hey Cortana" in a room full of devices.
 
 Voice activation is powered by a keyword spotter (KWS) which reacts if the key phrase is detected. If the KWS is to wake the device from a low powered state, the solution is known as Wake on Voice (WoV). For more information, see [Wake on Voice](#wake_on_voice).
+
+
+## <span id="glossary_of_terms"></span><span id="Glossary_Of_Terms"></span>Glossary of Terms
+
+This glossary summarizes terms related to voice activation.
+|                      |                                                                                                                                                           |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Staged Command        | Example: Hey Cortana <pause, wait for earcon> What’s the weather? This is sometimes referred to as “Two-shot command” or “Keyword-only” |
+|Chained Command        | Example: Hey Cortana what’s the weather? This is sometimes referred to as a “One-shot command” |
+| Voice Activation      | The scenario of providing keyword detection of a predefined activation keyphrase. For example, "Hey Cortana" is the Microsoft Voice Activation scenario. |
+|WoV                    | Wake-on-Voice – Technology that enables Voice Activation from a screen off, lower power state, to a screen on full power state. |
+|WoV from Modern Standby| Wake-on-Voice from a Modern Standby (S0ix) screen off state to a screen on full power (S0) state. |
+|Modern Standby |Windows Low Power Idle infrastructure - successor to Connected Standby (CS) in Windows 10. The first state of modern standby is when the screen is off. The deepest sleep state is when in DRIPS/Resiliency. For more information, see [Modern Standby](https://msdn.microsoft.com/en-us/library/windows/hardware/mt282515(v=vs.85).aspx)   |
+|KWS                    |Keyword spotter – the algorithm that provides the detection of “Hey Cortana” |
+| SW KWS                |Software keyword spotter – an implementation of KWS that runs on the host (CPU). For "Hey Cortana", SW KWS is included as part of Windows. |
+| HW KWS                | Hardware-offloaded keyword spotter – an implementation of KWS that runs offloaded on hardware. |
+|Burst Buffer           | A circular buffer used to store PCM data that can be ‘bursted up’ in the event of a KWS detection, so that all audio that triggered a KWS detection is included. |
+|Keyword Detector OEM Adapter |A driver-level shim that enables the WoV-enabled HW to communicate with Windows and the Cortana stack. |
+|Model | The acoustic model data file used by the KWS algorithm. The data file is static. Models are localized, one per locale.|
 
 ## <span id="Implementing_Voice_Activation"></span><span id="implementing_voice_activation"></span><span id="IMPLEMENTING_VOICE_ACTIVATION"></span>Integrating a Hardware Keyword Spotter
 
@@ -79,6 +98,8 @@ To implement a hardware keyword spotter (HW KWS) SoC vendors must complete the f
     -   [PKEY\_EFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming](https://msdn.microsoft.com/library/windows/hardware/mt244264)
 -   Review the hardware recommendations in [Cortana Device Recommendation](https://msdn.microsoft.com/library/windows/hardware/dn957008). This topic provides guidance and recommendations for the design and development of audio input devices intended for use with Microsoft’s Speech Platform.
 -   Review the hardware recommendation [Cortana Device Test Setup](https://msdn.microsoft.com/library/windows/hardware/dn957009). This topic provides test guidance of audio input devices intended for use with Microsoft’s Speech Platform.
+-	Support both staged and chained commands.
+-	Support “Hey Cortana” for each of the supported Cortana locales. 
 -   Optionally design any custom APOs to enhance the audio capture process. For more information, see [Windows Audio Processing Objects](windows-audio-processing-objects.md).
 
 ## <span id="Sample_Code_Overview"></span><span id="sample_code_overview"></span><span id="SAMPLE_CODE_OVERVIEW"></span>Sample Code Overview
