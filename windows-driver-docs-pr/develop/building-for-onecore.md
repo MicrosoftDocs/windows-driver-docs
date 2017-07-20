@@ -11,14 +11,15 @@ ms.technology: windows-devices
 
 # Building for OneCore
 
-If you are building user-mode code for Windows 7 and later, including [OneCore](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows) SKUs, you can generate a single binary that works on all of these operating systems.
-To do so, link to `onecore_downlevel.lib` or `onecoreuap_downlevel.lib`.
-When you use this downlevel option, a subset of APIs compile fine but return immediately on non-Desktop OneCore SKUs.  For example, the [**MessageBox**](https://msdn.microsoft.com/library/windows/desktop/ms645505) function returns ERROR_CALL_NOT_IMPLEMENTED on non-Desktop OneCore SKUs.  The documentation for these APIs describes this behavior, including applicable error codes, in the Requirements section of the page.
-<!--Link to list of apis with stub functionality, include example screenshot-->
+When you use Visual Studio to build user-mode code for Windows 10, you can customize linker options to target specific versions of Windows.  To build a binary that works on the desired platforms, consider the following factors:
 
-If you are building user-mode code for only Windows 10 and later, including OneCore SKUs, link instead to `onecoreuap.lib` or `onecore.lib`.  You will get a slight load time performance boost.
+* Should the built binary run on only the most recent version of Windows?  Or should it run on *downlevel* versions, meaning Windows 7 and later?  
 
-The following table describes when to link to each option.
+* Does your project have any UWP dependencies?
+
+By default, when you create a new UMDF v2 driver project, Visual Studio links to `OneCoreUAP.lib`.  This is the correct choice if your binary only needs to run on the most recent version of Windows, and it also permits addition of UWP functionality.
+
+If your answers to the questions above are different, however, you can change the default to link to one of the following libraries:
 
 |Library|Scenario|
 |-|-|
@@ -27,11 +28,12 @@ The following table describes when to link to each option.
 |onecore_downlevel.lib|For building a binary to run on Windows 7 and later, targeting all SKUs, but with no UWP support|
 |onecoreuap_downlevel.lib|For building a binary to run on Windows 7 and later, targeting those SKUs with UWP support (Desktop, IoT, HoloLens, but not Nano Server)|
 
-To change specified libraries in a Visual Studio project, choose project properties and navigate to **Linker->Input**.  The **Additional Dependencies** should contain:
+When you use a downlevel option, a subset of APIs compile fine but return immediately on non-Desktop OneCore SKUs (for example Mobile or IoT).  For example, the [**MessageBox**](https://msdn.microsoft.com/library/windows/desktop/ms645505) function returns ERROR_CALL_NOT_IMPLEMENTED on non-Desktop OneCore SKUs.  The documentation for these APIs describes this behavior, including applicable error codes, in the Requirements section of the page.
+<!--Link to list of apis with stub functionality, include example screenshot-->
 
-    ```
-    %AdditionalDependencies);$(SDK_LIB_PATH)\<filename>.lib
-    ```
+If you link to `onecoreuap.lib` or `onecore.lib`, you will get a slight load time performance boost over the downlevel options.
+
+To change specified libraries in a Visual Studio project, choose project properties and navigate to **Linker->Input->Additional Dependencies**.
 
 ## Recommended actions
 
@@ -39,6 +41,8 @@ Use the [ApiValidator](validating-universal-drivers.md) tool in the WDK to verif
 
 Use runtime testing to verify that your user-mode code runs as you expect on non-Desktop OneCore SKUs.  Note that stubbed APIs may generate different error codes.
 
-The first two choices are recommended due to improved performance, but note that the resulting binaries will not run on operating systems earlier than Windows 10.
+Related
+---
+[OneCore](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows)
 
 <!--API BOILERPLATE: Compiles using onecore_downlevel.lib, but always returns ERROR_CALL_NOT_IMPLEMENTED on non-Desktop OneCore SKUs.-->
