@@ -1002,9 +1002,14 @@ CERT - [Build Security In](https://www.us-cert.gov/bsi)
 
 MITRE - [Weaknesses Addressed by the CERT C Secure Coding Standard](https://cwe.mitre.org/data/definitions/734.html)
 
+Building Security In Maturity Model (BSIMM) - [https://www.bsimm.com/](https://www.bsimm.com/)
+
+SAFECode - [https://www.safecode.org/](https://www.safecode.org/)
+
+
 **OSR**
 
-[OSR](http://www.osr.com) provides driver development training and consulting services.
+[OSR](http://www.osr.com) provides driver development training and consulting services. These articles from the OSR newsletter highlight driver security issues.
 
 [You've Gotta Use Protection -- Inside Driver & Device Security](http://www.osronline.com/article.cfm?article=100)
 
@@ -1044,6 +1049,10 @@ Windows driver classroom training is available from vendors such as the followin
 Secure coding online training is available from a variety of sources. For example, this course is available from coursera:
 
  [https://www.coursera.org/learn/software-security](https://www.coursera.org/learn/software-security#faqs).
+
+SAFECode offers free training as well:
+
+[SAFECode/training](https://training.safecode.org/)
 
 **Professional Certification**
 
