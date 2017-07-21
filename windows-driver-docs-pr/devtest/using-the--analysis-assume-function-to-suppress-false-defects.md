@@ -1,6 +1,6 @@
 ---
-title: Using the \_analysis\_assume Function to Suppress False Defects
-description: Using the \_analysis\_assume Function to Suppress False Defects
+title: Using the _analysis_assume Function to Suppress False Defects
+description: Using the _analysis_assume Function to Suppress False Defects
 ms.assetid: eb71a664-ada5-44e3-b75d-b1a7348b115f
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

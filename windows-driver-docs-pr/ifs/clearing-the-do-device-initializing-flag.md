@@ -1,7 +1,7 @@
 ---
-title: Clearing the DO\_DEVICE\_INITIALIZING Flag
+title: Clearing the DO_DEVICE_INITIALIZING Flag
 author: windows-driver-content
-description: Clearing the DO\_DEVICE\_INITIALIZING Flag
+description: Clearing the DO_DEVICE_INITIALIZING Flag
 ms.assetid: 1c1cca60-bb95-4a8d-9e17-4db54983bbb0
 keywords:
 - filter drivers WDK file system , attaching filters

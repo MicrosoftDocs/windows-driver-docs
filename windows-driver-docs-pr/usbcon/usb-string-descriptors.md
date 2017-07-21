@@ -33,7 +33,7 @@ UsbBuildGetDescriptorRequest(
     USB_STRING_DESCRIPTOR_TYPE,
     i, // index of string descriptor
     langID, // language ID of string.
-    &amp;USD, // points to a USB_STRING_DESCRIPTOR.
+    &USD, // points to a USB_STRING_DESCRIPTOR.
     NULL,
     sizeof(USB_STRING_DESCRIPTOR),
     NULL

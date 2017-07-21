@@ -1,19 +1,15 @@
 ---
-title: OID\_WDI\_SET\_NEIGHBOR\_REPORT\_ENTRIES
-description: OID\_WDI\_SET\_NEIGHBOR\_REPORT\_ENTRIES sends the list of neighbor reports received from the AP to the LE. This is sent as soon as the UE receives the neighbor report from the currently connected AP.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+title: OID_WDI_SET_NEIGHBOR_REPORT_ENTRIES
+author: windows-driver-content
+description: OID_WDI_SET_NEIGHBOR_REPORT_ENTRIES sends the list of neighbor reports received from the AP to the LE. This is sent as soon as the UE receives the neighbor report from the currently connected AP.
 ms.assetid: F77FDA4A-3029-4F6E-A82E-B318543484FF
-keywords: ["OID_WDI_SET_NEIGHBOR_REPORT_ENTRIES Network Drivers Starting with Windows Vista"]
-topic_type:
-- apiref
-api_name:
-- OID_WDI_SET_NEIGHBOR_REPORT_ENTRIES
-api_location:
-- dot11wdi.h
-api_type:
-- HeaderDef
+ms.author: windowsdriverdev 
+ms.date: 0718/2017 
+ms.topic: article 
+ms.prod: windows-hardware 
+ms.technology: windows-devices 
+keywords:
+ - OID_WDI_SET_NEIGHBOR_REPORT_ENTRIES Network Drivers Starting with Windows Vista
 ---
 
 # OID\_WDI\_SET\_NEIGHBOR\_REPORT\_ENTRIES
@@ -68,8 +64,8 @@ Requirements
 
  
 
+
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_WDI_SET_NEIGHBOR_REPORT_ENTRIES%20%20RELEASE:%20%286/30/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

@@ -32,9 +32,9 @@ UNICODE_STRING DeviceName;
 UNICODE_STRING DosDeviceName;
 NTSTATUS status;
 
-RtlInitUnicodeString(&amp;DeviceName, L"\\Device\\DeviceName");
-RtlInitUnicodeString(&amp;DosDeviceName, L"\\DosDevices\\DosDeviceName");
-status = IoCreateSymbolicLink(&amp;DosDeviceName, &amp;DeviceName);
+RtlInitUnicodeString(&DeviceName, L"\\Device\\DeviceName");
+RtlInitUnicodeString(&DosDeviceName, L"\\DosDevices\\DosDeviceName");
+status = IoCreateSymbolicLink(&DosDeviceName, &DeviceName);
 if (!NT_SUCCESS(status)) {
   /* Symbolic link creation failed.  Handle error appropriately. */
 }

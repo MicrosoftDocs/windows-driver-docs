@@ -1,6 +1,6 @@
 ---
 title: usbkd.usbtt
-description: The usbkd.usbtt command displays information from a USBPORT \_TRANSACTION\_TRANSLATOR structure.
+description: The usbkd.usbtt command displays information from a USBPORT _TRANSACTION_TRANSLATOR structure.
 ms.assetid: 4D599BCE-C6C3-42B3-BDCE-EE9E47FA6AB7
 keywords: ["usbkd.usbtt Windows Debugging"]
 ms.author: windowsdriverdev

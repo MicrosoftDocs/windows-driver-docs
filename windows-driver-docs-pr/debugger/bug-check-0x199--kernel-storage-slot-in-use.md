@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x199 KERNEL\_STORAGE\_SLOT\_IN\_USE
-description: The KERNEL\_STORAGE\_SLOT\_IN\_USE bug check has a value of 0x00000199. This indicates that the storage slot cannot be freed because there is an object using it.
+title: Bug Check 0x199 KERNEL_STORAGE_SLOT_IN_USE
+description: The KERNEL_STORAGE_SLOT_IN_USE bug check has a value of 0x00000199. This indicates that the storage slot cannot be freed because there is an object using it.
 ms.assetid: 5C561976-DD3C-4593-AAF0-F46618242D28
 keywords: ["Bug Check 0x199 KERNEL_STORAGE_SLOT_IN_USE", "KERNEL_STORAGE_SLOT_IN_USE"]
 ms.author: windowsdriverdev

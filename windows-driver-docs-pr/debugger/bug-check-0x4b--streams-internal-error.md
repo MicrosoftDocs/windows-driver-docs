@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x4B STREAMS\_INTERNAL\_ERROR
-description: The STREAMS\_INTERNAL\_ERROR bug check has a value of 0x0000004B.This bug check appears very infrequently.
+title: Bug Check 0x4B STREAMS_INTERNAL_ERROR
+description: The STREAMS_INTERNAL_ERROR bug check has a value of 0x0000004B.This bug check appears very infrequently.
 ms.assetid: 6c1222c7-448c-4a99-be30-cf2c43c41cb9
 keywords: ["Bug Check 0x4B STREAMS_INTERNAL_ERROR", "STREAMS_INTERNAL_ERROR"]
 ms.author: windowsdriverdev

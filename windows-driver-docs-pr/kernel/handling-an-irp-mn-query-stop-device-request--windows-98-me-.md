@@ -1,7 +1,7 @@
 ---
-title: Handling an IRP\_MN\_QUERY\_STOP\_DEVICE Request (Windows 98/Me)
+title: Handling an IRP_MN_QUERY_STOP_DEVICE Request (Windows 98/Me)
 author: windows-driver-content
-description: Handling an IRP\_MN\_QUERY\_STOP\_DEVICE Request (Windows 98/Me)
+description: Handling an IRP_MN_QUERY_STOP_DEVICE Request (Windows 98/Me)
 ms.assetid: 2a12af98-c5ed-4a24-b957-b363683cc491
 keywords: ["IRP_MN_QUERY_STOP_DEVICE"]
 ms.author: windowsdriverdev

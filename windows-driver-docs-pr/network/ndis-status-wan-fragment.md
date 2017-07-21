@@ -1,22 +1,15 @@
 ---
-title: NDIS\_STATUS\_WAN\_FRAGMENT
-description: The NDIS\_STATUS\_WAN\_FRAGMENT status indicates that a WAN-capable miniport driver has received a partial packet from a remote node.
-MS-HAID:
-- 'ndis\_status\_indications\_ref\_7fc287e3-d1c6-4b38-b601-be9f28c6ab82.xml'
-- 'netvista.ndis\_status\_wan\_fragment'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+title: NDIS_STATUS_WAN_FRAGMENT
+author: windows-driver-content
+description: The NDIS_STATUS_WAN_FRAGMENT status indicates that a WAN-capable miniport driver has received a partial packet from a remote node.
 ms.assetid: 1ac00110-8b97-4905-b409-454e3d9a09e0
-keywords: ["NDIS_STATUS_WAN_FRAGMENT Network Drivers Starting with Windows Vista"]
-topic_type:
-- apiref
-api_name:
-- NDIS_STATUS_WAN_FRAGMENT
-api_location:
-- Ndis.h
-api_type:
-- HeaderDef
+ms.author: windowsdriverdev 
+ms.date: 0718/2017 
+ms.topic: article 
+ms.prod: windows-hardware 
+ms.technology: windows-devices 
+keywords:
+ - NDIS_STATUS_WAN_FRAGMENT Network Drivers Starting with Windows Vista
 ---
 
 # NDIS\_STATUS\_WAN\_FRAGMENT
@@ -66,9 +59,8 @@ Requirements
 
  
 
+
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20NDIS_STATUS_WAN_FRAGMENT%20%20RELEASE:%20%287/5/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
 
 

@@ -277,7 +277,7 @@ DDIOnGetProperties(sensorID, CRI, CS[], LDA)
 ```ManagedCPlusPlus
 DDIOnGetDatafields(sensorID, datafields[])
 {
-    if (((false == flagCRI) &amp;&amp; (0 == subscriberCount)) || (false == initalDataReceived))
+    if (((false == flagCRI) && (0 == subscriberCount)) || (false == initalDataReceived))
     {
         //poll sensorID device for data
         DriverUpdateDatafields(sensorID)

@@ -1,7 +1,7 @@
 ---
-title: Selective Opt-Out POOL\_NX\_OPTOUT
+title: Selective Opt-Out POOL_NX_OPTOUT
 author: windows-driver-content
-description: You can globally enable one of the no-execute (NX) pool opt-in mechanisms for a set of driver source files, and then override this opt-in mechanism for one or more selected source files with POOL\_NX\_OPTOUT.
+description: You can globally enable one of the no-execute (NX) pool opt-in mechanisms for a set of driver source files, and then override this opt-in mechanism for one or more selected source files with POOL_NX_OPTOUT.
 ms.assetid: 15AA7CFA-5BEC-4E45-B222-0DE2D620E099
 ---
 

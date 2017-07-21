@@ -1,7 +1,7 @@
 ---
-title: Propagating the FILE\_DEVICE\_SECURE\_OPEN Flag
+title: Propagating the FILE_DEVICE_SECURE_OPEN Flag
 author: windows-driver-content
-description: Propagating the FILE\_DEVICE\_SECURE\_OPEN Flag
+description: Propagating the FILE_DEVICE_SECURE_OPEN Flag
 ms.assetid: cbc254ab-3ac6-44aa-bb16-16d701d5ada7
 keywords:
 - filter drivers WDK file system , attaching filters

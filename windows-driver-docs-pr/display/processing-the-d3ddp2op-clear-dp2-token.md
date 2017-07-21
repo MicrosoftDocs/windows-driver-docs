@@ -1,6 +1,6 @@
 ---
-title: Processing the D3DDP2OP\_CLEAR DP2 Token
-description: Processing the D3DDP2OP\_CLEAR DP2 Token
+title: Processing the D3DDP2OP_CLEAR DP2 Token
+description: Processing the D3DDP2OP_CLEAR DP2 Token
 ms.assetid: ec027f44-bdd5-4d5a-8c47-1ac6a0c1cb6e
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , pure devices, D3DDP2OP_CLEAR DP2 token processing

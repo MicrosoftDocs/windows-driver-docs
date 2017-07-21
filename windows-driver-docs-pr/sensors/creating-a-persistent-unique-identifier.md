@@ -36,7 +36,7 @@ HRESULT CMyDevice::GetUniqueID(__in IWDFDevice* pWdfDevice,
     {
         // Create the property store for this device or
         // retrieve the existing one.
-        hr = pWdfDevice->RetrieveDevicePropertyStore(NULL, WdfPropertyStoreCreateIfMissing, &amp;spPropStore, NULL);
+        hr = pWdfDevice->RetrieveDevicePropertyStore(NULL, WdfPropertyStoreCreateIfMissing, &spPropStore, NULL);
     }
 
     if(SUCCEEDED(hr))
@@ -46,30 +46,30 @@ HRESULT CMyDevice::GetUniqueID(__in IWDFDevice* pWdfDevice,
         PROPVARIANT vID;
 
         // Try to get the PUID value previously stored as a string.
-        hr = spPropStore->GetNamedValue(wszSensorID, &amp;vID);
+        hr = spPropStore->GetNamedValue(wszSensorID, &vID);
         if (SUCCEEDED(hr))
         {
             // Convert the PUID string to a GUID.
-            hr = ::CLSIDFromString(vID.bstrVal, &amp;idGuid);
+            hr = ::CLSIDFromString(vID.bstrVal, &idGuid);
         }
         else
         {
             // There was no value in the store, so create a new value.
-            hr = ::CoCreateGuid(&amp;idGuid);
+            hr = ::CoCreateGuid(&idGuid);
 
             if (SUCCEEDED(hr))
             {
                 // Convert the GUID to a string.
                 LPOLESTR lpszGUID = NULL;
-                hr = ::StringFromCLSID(idGuid, &amp;lpszGUID);
+                hr = ::StringFromCLSID(idGuid, &lpszGUID);
                 if (SUCCEEDED(hr))
                 {
                     // Put the new value into the property store.
-                    PropVariantInit(&amp;vID);
+                    PropVariantInit(&vID);
                     vID.vt = VT_LPWSTR;
                     vID.pwszVal = lpszGUID;
-                    hr = spPropStore->SetNamedValue(wszSensorID, &amp;vID);
-                    PropVariantClear(&amp;vID);
+                    hr = spPropStore->SetNamedValue(wszSensorID, &vID);
+                    PropVariantClear(&vID);
                 }
             }
         }

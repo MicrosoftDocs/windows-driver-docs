@@ -1,7 +1,7 @@
 ---
-title: EFI\_USBFN\_IO\_PROTOCOL.GetDeviceInfo
+title: EFI_USBFN_IO_PROTOCOL.GetDeviceInfo
 author: windows-driver-content
-description: EFI\_USBFN\_IO\_PROTOCOL.GetDeviceInfo
+description: EFI_USBFN_IO_PROTOCOL.GetDeviceInfo
 ms.assetid: b72f6ba1-7704-4661-8855-1ff88bd08e5a
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
