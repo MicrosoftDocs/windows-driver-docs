@@ -1,5 +1,5 @@
 ---
-title: DevCon Dp\_enum
+title: DevCon Dp_enum
 description: Lists the third-party (OEM) driver packages in the driver store on the local computer.
 ms.assetid: 974b34db-ac83-4d92-87d2-067c15492046
 keywords:

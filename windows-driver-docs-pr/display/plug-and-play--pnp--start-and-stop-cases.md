@@ -31,7 +31,7 @@ All Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers m
 <td align="left">8</td>
 </tr>
 <tr class="odd">
-<td align="left">Driver implementation Full graphics and Display only</td>
+<td align="left">Driver implementation-Full graphics and Display only</td>
 <td align="left">Mandatory</td>
 </tr>
 <tr class="even">

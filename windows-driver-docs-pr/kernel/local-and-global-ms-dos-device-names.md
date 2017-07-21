@@ -47,15 +47,15 @@ NTSTATUS status;
 if (IoIsWdmVersionAvailable(1, 0x10)) {
     // We&#39;re on Windows 2000 or later, so we use \DosDevices\Global.
  
-    RtlInitUnicodeString(&amp;symbolicLinkName, L"\\DosDevices\\Global\\SymbolicLinkName");
+    RtlInitUnicodeString(&symbolicLinkName, L"\\DosDevices\\Global\\SymbolicLinkName");
 
 } else {
     // Windows 98/Me.  We just use DosDevices.
  
-    RtlInitUnicodeString(&amp;symbolicLinkName, L"\\DosDevices\\SymbolicLinkName");
+    RtlInitUnicodeString(&symbolicLinkName, L"\\DosDevices\\SymbolicLinkName");
 }
 
-status = IoCreateSymbolicLink(&amp;symbolicLinkName, &amp;deviceName);
+status = IoCreateSymbolicLink(&symbolicLinkName, &deviceName);
 if (!NT_SUCCESS(status)) {
   /* Symbolic link creation failed.  Handle error appropriately. */
 }

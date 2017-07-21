@@ -1,7 +1,7 @@
 ---
-title: EFI\_USB\_SUPERSPEED\_ENDPOINT\_DESCRIPTOR
+title: EFI_USB_SUPERSPEED_ENDPOINT_DESCRIPTOR
 author: windows-driver-content
-description: EFI\_USB\_SUPERSPEED\_ENDPOINT\_DESCRIPTOR
+description: EFI_USB_SUPERSPEED_ENDPOINT_DESCRIPTOR
 ms.assetid: 3254C0F1-85C2-472B-938A-F71645703540
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

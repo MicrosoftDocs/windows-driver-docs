@@ -1,7 +1,7 @@
 ---
-title: Handling an IRP\_MN\_QUERY\_REMOVE\_DEVICE Request
+title: Handling an IRP_MN_QUERY_REMOVE_DEVICE Request
 author: windows-driver-content
-description: Handling an IRP\_MN\_QUERY\_REMOVE\_DEVICE Request
+description: Handling an IRP_MN_QUERY_REMOVE_DEVICE Request
 ms.assetid: 30177e51-5312-4a24-972e-0c1c2d183d18
 keywords: ["IRP_MN_QUERY_REMOVE_DEVICE"]
 ms.author: windowsdriverdev

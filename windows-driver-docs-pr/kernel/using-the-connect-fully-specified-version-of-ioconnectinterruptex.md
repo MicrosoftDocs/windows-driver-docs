@@ -1,7 +1,7 @@
 ---
-title: Using the CONNECT\_FULLY\_SPECIFIED Version of IoConnectInterruptEx
+title: Using the CONNECT_FULLY_SPECIFIED Version of IoConnectInterruptEx
 author: windows-driver-content
-description: Using the CONNECT\_FULLY\_SPECIFIED Version of IoConnectInterruptEx
+description: Using the CONNECT_FULLY_SPECIFIED Version of IoConnectInterruptEx
 ms.assetid: 5b75c32e-77e5-4761-b709-fedb8e33b57a
 keywords: ["IoConnectInterruptEx", "CONNECT_FULLY_SPECIFIED", "manual interrupt detections WDK kernel", "line-based interrupts WDK kernel", "message-signaled interrupts WDK kernel", "FullySpecified"]
 ms.author: windowsdriverdev
@@ -63,8 +63,8 @@ The **u.Interrupt** member of **CM\_PARTIAL\_RESOURCE\_DESCRIPTOR** contains the
 </tr>
 <tr class="even">
 <td><p><strong>InterruptMode</strong></p></td>
-<td><p><strong>Flags</strong> &amp; CM_RESOURCE_INTERRUPT_LATCHED</p></td>
-<td><p><strong>Flags</strong> &amp; CM_RESOURCE_INTERRUPT_LATCHED</p></td>
+<td><p><strong>Flags</strong> & CM_RESOURCE_INTERRUPT_LATCHED</p></td>
+<td><p><strong>Flags</strong> & CM_RESOURCE_INTERRUPT_LATCHED</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ProcessorEnableMask</strong></p></td>
@@ -90,16 +90,16 @@ IO_CONNECT_INTERRUPT_PARAMETERS params;
 // PhysicalDeviceObject is a pointer to the device&#39;s PDO. 
 // ServiceContext is a pointer to driver-specified context for the ISR.
 
-RtlZeroMemory( &amp;params, sizeof(IO_CONNECT_INTERRUPT_PARAMETERS) );
+RtlZeroMemory( &params, sizeof(IO_CONNECT_INTERRUPT_PARAMETERS) );
 params.Version = CONNECT_FULLY_SPECIFIED;
 params.FullySpecified.PhysicalDeviceObject = PhysicalDeviceObject;
-params.FullySpecified.InterruptObject = &amp;devExt->IntObj;
+params.FullySpecified.InterruptObject = &devExt->IntObj;
 params.FullySpecified.ServiceRoutine = deviceInterruptService;
 params.FullySpecified.ServiceContext = ServiceContext;
 params.FullySpecified.FloatingSave = FALSE;
 params.FullySpecified.SpinLock = NULL;
 
-if (IntResource->Flags &amp; CM_RESOURCE_INTERRUPT_MESSAGE) {
+if (IntResource->Flags & CM_RESOURCE_INTERRUPT_MESSAGE) {
     // The resource is for a message-signaled interrupt. Use the u.MessageInterrupt.Translated member of IntResource.
  
     params.FullySpecified.Vector = IntResource->u.MessageInterrupt.Translated.Vector;
@@ -115,10 +115,10 @@ if (IntResource->Flags &amp; CM_RESOURCE_INTERRUPT_MESSAGE) {
     params.FullySpecified.ProcessorEnableMask = IntResource->u.Interrupt.Affinity;
 }
 
-params.FullySpecified.InterruptMode = (IntResource->Flags &amp; CM_RESOURCE_INTERRUPT_LATCHED ? Latched : LevelSensitive);
+params.FullySpecified.InterruptMode = (IntResource->Flags & CM_RESOURCE_INTERRUPT_LATCHED ? Latched : LevelSensitive);
 params.FullySpecified.ShareVector = (BOOLEAN)(IntResource->ShareDisposition == CmResourceShareShared);
 
-status = IoConnectInterruptEx(&amp;params);
+status = IoConnectInterruptEx(&params);
 
 if (!NT_SUCCESS(status)) {
     ...

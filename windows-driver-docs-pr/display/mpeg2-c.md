@@ -1,6 +1,6 @@
 ---
-title: MPEG2\_C
-description: MPEG2\_C
+title: MPEG2_C
+description: MPEG2_C
 ms.assetid: 610ca80d-b29a-4c30-98df-8df8fe825157
 keywords:
 - MPEG2_C restricted profile WDK DirectX VA

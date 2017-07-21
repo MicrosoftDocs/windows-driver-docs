@@ -1,6 +1,6 @@
 ---
-title: Handling the OID\_SWITCH\_NIC\_SAVE\_COMPLETE Request
-description: Handling the OID\_SWITCH\_NIC\_SAVE\_COMPLETE Request
+title: Handling the OID_SWITCH_NIC_SAVE_COMPLETE Request
+description: Handling the OID_SWITCH_NIC_SAVE_COMPLETE Request
 ms.assetid: 5EE5F4ED-E0FC-458E-B9E1-23C20B3BC597
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

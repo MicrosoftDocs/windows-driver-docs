@@ -1,6 +1,6 @@
 ---
 title: C28169
-description: Warning C28169 The dispatch function does not have any \_Dispatch\_type\_ annotations.
+description: Warning C28169 The dispatch function does not have any _Dispatch_type_ annotations.
 ms.assetid: ce33993f-f967-43b0-89fb-d8553517aae3
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

@@ -18,6 +18,7 @@
         "Search.Product": "eADQiWindows 10XVcnh",
         "uhfHeaderId": "MSDocsHeader-WinHW",
         "breadcrumb_path": "/windows-hardware/drivers/breadcrumbs/toc.json",
+        "searchScope": ["Drivers"],
         "contributors_to_exclude": ["barrygolden", "PageWriter-MSFT", "tedhudek"]
     },
     "externalReference": [

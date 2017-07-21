@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0xA0 INTERNAL\_POWER\_ERROR
-description: The INTERNAL\_POWER\_ERROR bug check has a value of 0x000000A0. This bug check indicates that the power policy manager experienced a fatal error.
+title: Bug Check 0xA0 INTERNAL_POWER_ERROR
+description: The INTERNAL_POWER_ERROR bug check has a value of 0x000000A0. This bug check indicates that the power policy manager experienced a fatal error.
 ms.assetid: a763e865-8591-4ed3-b3cd-1cdaecad6e97
 keywords: ["Bug Check 0xA0 INTERNAL_POWER_ERROR", "INTERNAL_POWER_ERROR"]
 ms.author: windowsdriverdev

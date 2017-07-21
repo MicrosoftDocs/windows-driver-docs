@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x3F NO\_MORE\_SYSTEM\_PTES
-description: The NO\_MORE\_SYSTEM\_PTES bug check has a value of 0x0000003F. This is the result of a system which has performed too many I/O actions.
+title: Bug Check 0x3F NO_MORE_SYSTEM_PTES
+description: The NO_MORE_SYSTEM_PTES bug check has a value of 0x0000003F. This is the result of a system which has performed too many I/O actions.
 ms.assetid: b8164ec3-87c3-4629-ab70-6addbf368b76
 keywords: ["Bug Check 0x3F NO_MORE_SYSTEM_PTES", "NO_MORE_SYSTEM_PTES"]
 ms.author: windowsdriverdev

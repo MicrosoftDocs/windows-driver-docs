@@ -1,6 +1,6 @@
 ---
 title: Use __sdv_save_request and __sdv_retrieve_request for Deferred Procedure Calls
-description: Using \_\_sdv\_save\_request and \_\_sdv\_retrieve\_request for Deferred Procedure Calls
+description: Using __sdv_save_request and __sdv_retrieve_request for Deferred Procedure Calls
 ms.assetid: 14d3a022-3e74-4526-9bf5-fee1ce36ac9e
 keywords:
 - __sdv_save_request

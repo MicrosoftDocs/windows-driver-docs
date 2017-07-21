@@ -26,7 +26,7 @@ These code snippets highlight some of the important sections of the sensor drive
 ```ManagedCPlusPlus
 // Create WDFOBJECT for the sensor
     WDF_OBJECT_ATTRIBUTES sensorAttributes;
-    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&amp;sensorAttributes, ADXL345AccDevice);
+    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&sensorAttributes, ADXL345AccDevice);
 ```
 
 The preceding code creates a sensor object and assigns the appropriate device context to it.
@@ -35,7 +35,7 @@ The preceding code creates a sensor object and assigns the appropriate device co
 ```ManagedCPlusPlus
 // Register sensor instance with clx
     SENSOROBJECT SensorInstance = NULL;
-    NTSTATUS Status = SensorsCxSensorCreate(Device, &amp;sensorAttributes, &amp;SensorInstance);
+    NTSTATUS Status = SensorsCxSensorCreate(Device, &sensorAttributes, &SensorInstance);
 ```
 
 The preceding code registers the sensor instance with the sensor class extension. A sensor instance is created instead of a device instance, to allow for the scenario where you have multiple sensors within the same chip.
@@ -44,9 +44,9 @@ The preceding code registers the sensor instance with the sensor class extension
 ```ManagedCPlusPlus
 // Initialize sensor instance with clx
     SENSOR_CONFIG SensorConfig;
-    SENSOR_CONFIG_INIT(&amp;SensorConfig);
+    SENSOR_CONFIG_INIT(&SensorConfig);
     SensorConfig.pEnumerationList = pAccDevice->m_pEnumerationProperties;
-    Status = SensorsCxSensorInitialize(SensorInstance, &amp;SensorConfig);
+    Status = SensorsCxSensorInitialize(SensorInstance, &SensorConfig);
 ```
 
 The preceding code uses the sensor class extension to initialize the sensor instance.
@@ -77,7 +77,7 @@ The preceding code is used to acquire a lock for the I2C bus.
    For (DWORD i = 0; i < ARRAYSIZE(g_ConfigurationSettings); i++)
    {
        REGISTER_SETTING setting = g_ConfigurationSettings[i];
-       Status = I2CSensorWriteRegister(m_I2CIoTarget, setting.Register, &amp;setting.Value, sizeof(setting.Value));
+       Status = I2CSensorWriteRegister(m_I2CIoTarget, setting.Register, &setting.Value, sizeof(setting.Value));
        if (!NT_SUCCESS(Status))
        {
            TraceError("ACC %!FUNC! I2CSensorReadRegister from 0x%02x failed! %!STATUS!", setting.Register, Status); 
@@ -95,7 +95,7 @@ The For-loop is used to write the default configuration settings to the device r
 // Release the I2C bus lock
    WdfWaitLockRelease(pAccDevice->m_I2CWaitLock);
         
-   InitPropVariantFromUInt32(SensorState_Idle, &amp;(m_pSensorProperties->List[SENSOR_PROPERTY_STATE].Value));
+   InitPropVariantFromUInt32(SensorState_Idle, &(m_pSensorProperties->List[SENSOR_PROPERTY_STATE].Value));
    m_PoweredOn = true;
 ```
 
@@ -115,16 +115,16 @@ WdfWaitLockAcquire(pAccDevice->m_I2CWaitLock, NULL);
 ```ManagedCPlusPlus
 // Set accelerometer to measurement mode
    REGISTER_SETTING RegisterSetting = { ADXL345_POWER_CTL, ADXL345_POWER_CTL_MEASURE };
-   Status = I2CSensorWriteRegister(pAccDevice->m_I2CIoTarget, RegisterSetting.Register, &amp;RegisterSetting.Value, sizeof(RegisterSetting.Value));
+   Status = I2CSensorWriteRegister(pAccDevice->m_I2CIoTarget, RegisterSetting.Register, &RegisterSetting.Value, sizeof(RegisterSetting.Value));
 ```
 
-In the preceding code, the I2C connection is used to set the accelerometer to  measure mode  to make it ready for reading sensor values. See the *adxl345.h* header file for the definitions of ADXL345\_POWER\_CTL, ADXL345\_POWER\_CTL\_MEASURE and some other constants used in the sample sensor driver.
+In the preceding code, the I2C connection is used to set the accelerometer to *measure mode* to make it ready for reading sensor values. See the *adxl345.h* header file for the definitions of ADXL345\_POWER\_CTL, ADXL345\_POWER\_CTL\_MEASURE and some other constants used in the sample sensor driver.
 
 4. Find the following code:
 ```ManagedCPlusPlus
 // Enable interrupts
    RegisterSetting = { ADXL345_INT_ENABLE, ADXL345_INT_ACTIVITY };
-   Status = I2CSensorWriteRegister(pAccDevice->m_I2CIoTarget, RegisterSetting.Register, &amp;RegisterSetting.Value, sizeof(RegisterSetting.Value));
+   Status = I2CSensorWriteRegister(pAccDevice->m_I2CIoTarget, RegisterSetting.Register, &RegisterSetting.Value, sizeof(RegisterSetting.Value));
    WdfWaitLockRelease(pAccDevice->m_I2CWaitLock);
 ```
 
@@ -138,7 +138,7 @@ The *RegisterSetting* parameter enables interrupts for the sensor. WdfWaitLockRe
 // Disable interrupts   
    REGISTER_SETTING RegisterSetting = { ADXL345_INT_ENABLE, 0 };
    WdfWaitLockAcquire(pAccDevice->m_I2CWaitLock, NULL);
-   Status = I2CSensorWriteRegister(pAccDevice->m_I2CIoTarget, RegisterSetting.Register, &amp;RegisterSetting.Value, sizeof(RegisterSetting.Value));
+   Status = I2CSensorWriteRegister(pAccDevice->m_I2CIoTarget, RegisterSetting.Register, &RegisterSetting.Value, sizeof(RegisterSetting.Value));
 ```
 
 In the preceding code, the *RegisterSetting* parameter captures a register address and configuration code. In this case RegisterSetting.Register is the address of an interrupt enable register, while RegisterSetting.Value configures the register to stop the device from issuing interrupts.
@@ -147,14 +147,14 @@ In the preceding code, the *RegisterSetting* parameter captures a register addre
 ```ManagedCPlusPlus
 // Clear any stale interrupts
    RegisterSetting = { ADXL345_INT_SOURCE, 0 };
-   Status = I2CSensorWriteRegister(pAccDevice->m_I2CIoTarget, RegisterSetting.Register, &amp;RegisterSetting.Value, sizeof(RegisterSetting.Value));
+   Status = I2CSensorWriteRegister(pAccDevice->m_I2CIoTarget, RegisterSetting.Register, &RegisterSetting.Value, sizeof(RegisterSetting.Value));
 ```
 
 3. Find the following code, which sets the device to standby mode. This setting stops the device activity:
 ```ManagedCPlusPlus
 // Set accelerometer to standby
    RegisterSetting = { ADXL345_POWER_CTL, ADXL345_POWER_CTL_STANDBY };
-   Status = I2CSensorWriteRegister(pAccDevice->m_I2CIoTarget, RegisterSetting.Register, &amp;RegisterSetting.Value, sizeof(RegisterSetting.Value));
+   Status = I2CSensorWriteRegister(pAccDevice->m_I2CIoTarget, RegisterSetting.Register, &RegisterSetting.Value, sizeof(RegisterSetting.Value));
 ```
 
 ## Disconnect hardware resources

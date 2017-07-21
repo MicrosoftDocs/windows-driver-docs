@@ -1,7 +1,7 @@
 ---
-title: IRP\_MJ\_QUERY\_SECURITY and IRP\_MJ\_SET\_SECURITY
+title: IRP_MJ_QUERY_SECURITY and IRP_MJ_SET_SECURITY
 author: windows-driver-content
-description: IRP\_MJ\_QUERY\_SECURITY and IRP\_MJ\_SET\_SECURITY
+description: IRP_MJ_QUERY_SECURITY and IRP_MJ_SET_SECURITY
 ms.assetid: 64216496-55f0-4ad4-b475-341ed9eb6886
 keywords:
 - IRP_MJ_QUERY_SECURITY

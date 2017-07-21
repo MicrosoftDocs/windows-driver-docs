@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x115 AGP\_INTERNAL
-description: The AGP\_INTERNAL bug check has a value of 0x00000115. This indicates that the accelerated graphics port (AGP) driver has detected a violation.This bug check appears very infrequently.
+title: Bug Check 0x115 AGP_INTERNAL
+description: The AGP_INTERNAL bug check has a value of 0x00000115. This indicates that the accelerated graphics port (AGP) driver has detected a violation.This bug check appears very infrequently.
 ms.assetid: 5fc7e627-ca37-4fb3-a80b-24a9ef265cc5
 keywords: ["Bug Check 0x115 AGP_INTERNAL", "AGP_INTERNAL"]
 ms.author: windowsdriverdev

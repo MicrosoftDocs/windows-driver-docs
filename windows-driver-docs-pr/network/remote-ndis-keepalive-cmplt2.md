@@ -1,6 +1,6 @@
 ---
-title: REMOTE\_NDIS\_KEEPALIVE\_CMPLT
-description: REMOTE\_NDIS\_KEEPALIVE\_CMPLT
+title: REMOTE_NDIS_KEEPALIVE_CMPLT
+description: REMOTE_NDIS_KEEPALIVE_CMPLT
 ms.assetid: 07267e90-a0e5-41ac-8c0b-fca27f617e23
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
