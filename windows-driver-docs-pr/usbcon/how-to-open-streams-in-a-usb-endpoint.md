@@ -264,8 +264,8 @@ NTSTATUS
     status = WdfUsbTargetDeviceCreateUrb (
         deviceContext->UsbDevice,
         NULL,
-        &amp;urbMemory,
-        &amp;urb);
+        &urbMemory,
+        &urb);
 
     if (status != STATUS_SUCCESS)
     {

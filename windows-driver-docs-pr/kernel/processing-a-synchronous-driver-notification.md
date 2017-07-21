@@ -95,7 +95,7 @@ VOID
       // Get the current processor count and affinity
       ProcessorCount =
         KeQueryActiveProcessorCount(
-          &amp;ActiveProcessors
+          &ActiveProcessors
           );
 
       // Adjust any resource allocations that are based

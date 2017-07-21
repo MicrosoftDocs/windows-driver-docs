@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x127 PAGE\_NOT\_ZERO
-description: The PAGE\_NOT\_ZERO bug check has a value of 0x00000127.
+title: Bug Check 0x127 PAGE_NOT_ZERO
+description: The PAGE_NOT_ZERO bug check has a value of 0x00000127.
 ms.assetid: b6485307-191d-401a-8f2e-7f4a54a630f9
 keywords: ["Bug Check 0x127 PAGE_NOT_ZERO", "PAGE_NOT_ZERO"]
 ms.author: windowsdriverdev

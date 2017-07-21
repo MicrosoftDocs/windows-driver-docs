@@ -1,6 +1,6 @@
 ---
-title: NET\_BUFFER Architecture
-description: NET\_BUFFER Architecture
+title: NET_BUFFER Architecture
+description: NET_BUFFER Architecture
 ms.assetid: 97cddcd1-7242-4cc5-9af9-fe82a2ef995f
 keywords:
 - NET_BUFFER

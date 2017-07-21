@@ -98,11 +98,11 @@ UsbEvtReaderCompletionRoutine(
 
     WdfObjectReference(pRcb->DataWdfMemory);
 
-    ExInterlockedInsertTailList(&amp;pRcbPool->ListHead,
-                                &amp;pRcb->Link,
-                                &amp;pRcbPool->ListSpinLock);
+    ExInterlockedInsertTailList(&pRcbPool->ListHead,
+                                &pRcb->Link,
+                                &pRcbPool->ListSpinLock);
 
-    if (InterlockedExchange(&amp;pRcbPool->NotificationEnabled, FALSE) == TRUE)
+    if (InterlockedExchange(&pRcbPool->NotificationEnabled, FALSE) == TRUE)
     {
         NetRxQueueNotifyMoreReceivedPacketsAvailable(pRcbPool->RxQueue);
     }

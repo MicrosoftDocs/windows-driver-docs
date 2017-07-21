@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x2D SCSI\_DISK\_DRIVER\_INTERNAL
-description: The SCSI\_DISK\_DRIVER\_INTERNAL bug check has a value of 0x0000002D.This bug check appears very infrequently.
+title: Bug Check 0x2D SCSI_DISK_DRIVER_INTERNAL
+description: The SCSI_DISK_DRIVER_INTERNAL bug check has a value of 0x0000002D.This bug check appears very infrequently.
 ms.assetid: 36956b1b-94e9-42c1-a8e2-09324ea15eca
 keywords: ["Bug Check 0x2D SCSI_DISK_DRIVER_INTERNAL", "SCSI_DISK_DRIVER_INTERNAL"]
 ms.author: windowsdriverdev

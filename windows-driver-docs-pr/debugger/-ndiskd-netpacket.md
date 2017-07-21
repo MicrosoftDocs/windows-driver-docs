@@ -1,6 +1,6 @@
 ---
 title: ndiskd.netpacket
-description: The ndiskd.netpacket extension displays information about a NET\_PACKET structure.
+description: The ndiskd.netpacket extension displays information about a NET_PACKET structure.
 ms.assetid: 304BA2CF-B6BC-452C-8543-9B872054AA9E
 keywords: ["ndiskd.netpacket Windows Debugging"]
 ms.author: windowsdriverdev

@@ -70,7 +70,7 @@ status = RtlWriteRegistryValue(RTL_REGISTRY_ABSOLUTE,
                                (PWCSTR)L"\\Registry\\Machine\\System\\KeyName",
                                (PWCSTR)L"ValueName",
                                REG_DWORD,
-                               &amp;data,
+                               &data,
                                sizeof(ULONG));
 ```
 

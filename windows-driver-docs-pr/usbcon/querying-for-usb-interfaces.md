@@ -46,7 +46,7 @@ To get a bus driver interface, the client driver must send an [**IRP\_MN\_QUERY\
 
 4.  Initialize the IRP stack with the appropriate interface GUID, the size of the interface, and the version of the interface.
     ```
-    irpstack->Parameters.QueryInterface.InterfaceType = &amp;USB_BUS_INTERFACE_USBDI_GUID;
+    irpstack->Parameters.QueryInterface.InterfaceType = &USB_BUS_INTERFACE_USBDI_GUID;
     irpstack->Parameters.QueryInterface.Size = sizeof(USB_BUS_INTERFACE_USBDI_V0);
     irpstack->Parameters.QueryInterface.Version = USB_BUSIF_USBDI_VERSION_0;
     ntStatus = IoCallDriver(PDO that the client passes URBs to, irp);

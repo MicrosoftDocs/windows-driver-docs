@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x125 NMR\_INVALID\_STATE
-description: The NMR\_INVALID\_STATE bug check has a value of 0x00000125. This indicates that NMR (network module registrar) has detected an invalid state. See parameter 1 for the state type.
+title: Bug Check 0x125 NMR_INVALID_STATE
+description: The NMR_INVALID_STATE bug check has a value of 0x00000125. This indicates that NMR (network module registrar) has detected an invalid state. See parameter 1 for the state type.
 ms.assetid: DD80FC61-8211-46A0-9D44-CF1E729B12D4
 keywords: ["Bug Check 0x125 NMR_INVALID_STATE", "NMR_INVALID_STATE"]
 ms.author: windowsdriverdev

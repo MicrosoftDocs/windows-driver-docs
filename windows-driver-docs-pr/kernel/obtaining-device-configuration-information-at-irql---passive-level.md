@@ -1,7 +1,7 @@
 ---
-title: Obtaining Device Configuration Information at IRQL PASSIVE\_LEVEL
+title: Obtaining Device Configuration Information at IRQL PASSIVE_LEVEL
 author: windows-driver-content
-description: Obtaining Device Configuration Information at IRQL PASSIVE\_LEVEL
+description: Obtaining Device Configuration Information at IRQL PASSIVE_LEVEL
 ms.assetid: 672fb3d8-6e64-425b-a035-8f8ecfd624f1
 keywords: ["I/O WDK kernel , device configuration space", "device configuration space WDK I/O", "configuration space WDK I/O", "space WDK I/O", "PASSIVE_LEVEL WDK", "driver stacks WDK configuration info"]
 ms.author: windowsdriverdev
@@ -39,15 +39,15 @@ ReadWriteConfigSpace(
     PDEVICE_OBJECT targetObject;
 
     PAGED_CODE();
-    KeInitializeEvent(&amp;event, NotificationEvent, FALSE);
+    KeInitializeEvent(&event, NotificationEvent, FALSE);
     targetObject = IoGetAttachedDeviceReference(DeviceObject);
     irp = IoBuildSynchronousFsdRequest(IRP_MJ_PNP,
                                        targetObject,
                                        NULL,
                                        0,
                                        NULL,
-                                       &amp;event,
-                                       &amp;ioStatusBlock);
+                                       &event,
+                                       &ioStatusBlock);
     if (irp == NULL) {
         status = STATUS_INSUFFICIENT_RESOURCES;
         goto End;
@@ -68,7 +68,7 @@ ReadWriteConfigSpace(
     irp->IoStatus.Status = STATUS_NOT_SUPPORTED;
     status = IoCallDriver(targetObject, irp);
     if (status == STATUS_PENDING) {
-        KeWaitForSingleObject(&amp;event, Executive, KernelMode, FALSE, NULL);
+        KeWaitForSingleObject(&event, Executive, KernelMode, FALSE, NULL);
         status = ioStatusBlock.Status;
     }
 End:

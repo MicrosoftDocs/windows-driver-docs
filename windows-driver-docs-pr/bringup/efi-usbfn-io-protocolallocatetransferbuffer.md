@@ -1,7 +1,7 @@
 ---
-title: EFI\_USBFN\_IO\_PROTOCOL.AllocateTransferBuffer
+title: EFI_USBFN_IO_PROTOCOL.AllocateTransferBuffer
 author: windows-driver-content
-description: EFI\_USBFN\_IO\_PROTOCOL.AllocateTransferBuffer
+description: EFI_USBFN_IO_PROTOCOL.AllocateTransferBuffer
 ms.assetid: dbaa4f18-97b5-4867-9e03-de19b2253722
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

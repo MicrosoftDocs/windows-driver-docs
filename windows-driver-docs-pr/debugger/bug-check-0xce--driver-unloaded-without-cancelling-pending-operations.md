@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0xCE DRIVER\_UNLOADED\_WITHOUT\_CANCELLING\_PENDING\_OPERATIONS
-description: The DRIVER\_UNLOADED\_WITHOUT\_CANCELLING\_PENDING\_OPERATIONS bug check has a value of 0x000000CE. This indicates that a driver failed to cancel pending operations before unloading.
+title: Bug Check 0xCE DRIVER_UNLOADED_WITHOUT_CANCELLING_PENDING_OPERATIONS
+description: The DRIVER_UNLOADED_WITHOUT_CANCELLING_PENDING_OPERATIONS bug check has a value of 0x000000CE. This indicates that a driver failed to cancel pending operations before unloading.
 ms.assetid: ade0d20d-25f0-45ad-a099-31f3521b91cd
 keywords: ["Bug Check 0xCE DRIVER_UNLOADED_WITHOUT_CANCELLING_PENDING_OPERATIONS", "DRIVER_UNLOADED_WITHOUT_CANCELLING_PENDING_OPERATIONS"]
 ms.author: windowsdriverdev

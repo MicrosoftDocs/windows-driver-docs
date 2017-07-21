@@ -81,13 +81,13 @@ for (int n = 0; n < 1; n++)
     UNICODE_STRING     RegistryKeyName;
     OBJECT_ATTRIBUTES  ObjectAttributes;
 
-    RtlInitUnicodeString(&amp;RegistryKeyName, L"\\Registry\\Machine\\Software\\MyCompany\\MyApp");
-    InitializeObjectAttributes(&amp;ObjectAttributes, 
-                               &amp;RegistryKeyName,
+    RtlInitUnicodeString(&RegistryKeyName, L"\\Registry\\Machine\\Software\\MyCompany\\MyApp");
+    InitializeObjectAttributes(&ObjectAttributes, 
+                               &RegistryKeyName,
                                OBJ_CASE_INSENSITIVE | OBJ_KERNEL_HANDLE,
                                NULL,    // handle
                                NULL);
-    status = ZwOpenKey(&amp;handleRegKey, KEY_READ, &amp;ObjectAttributes);
+    status = ZwOpenKey(&handleRegKey, KEY_READ, &ObjectAttributes);
 
     // If the driver cannot open the key, the driver cannot continue. 
     // In this situation, the driver was probably set up incorrectly 
@@ -103,15 +103,15 @@ for (int n = 0; n < 1; n++)
     ULONG                        ulKeyInfoSizeNeeded = 0;
 
     // The driver requires the following value.
-    RtlInitUnicodeString(&amp;ValueName, L"FrameLocation");
+    RtlInitUnicodeString(&ValueName, L"FrameLocation");
 
     // Determine the required size of keyInfo.
     status = ZwQueryValueKey( handleRegKey,
-                              &amp;ValueName,
+                              &ValueName,
                               KeyValueFullInformation,
                               pKeyInfo,
                               ulKeyInfoSize,
-                              &amp;ulKeyInfoSizeNeeded );
+                              &ulKeyInfoSizeNeeded );
 
     // The driver expects one of the following errors.
     if( (status == STATUS_BUFFER_TOO_SMALL) || (status == STATUS_BUFFER_OVERFLOW) )
@@ -127,11 +127,11 @@ for (int n = 0; n < 1; n++)
 
         // Get the key data.
         status = ZwQueryValueKey( handleRegKey,
-                                  &amp;ValueName,
+                                  &ValueName,
                                   KeyValueFullInformation,
                                   pKeyInfo,
                                   ulKeyInfoSize,
-                                  &amp;ulKeyInfoSizeNeeded );
+                                  &ulKeyInfoSizeNeeded );
         if( (status != STATUS_SUCCESS) || (ulKeyInfoSizeNeeded != ulKeyInfoSize) || (NULL == pKeyInfo) )
         {
             break;
