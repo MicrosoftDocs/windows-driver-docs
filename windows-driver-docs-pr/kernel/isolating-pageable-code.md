@@ -24,7 +24,7 @@ For example, consider the following fragment:
 ```
 //  PAGED_CODE(); 
  
-KeInitializeEvent( &amp;event, NotificationEvent, FALSE ); 
+KeInitializeEvent( &event, NotificationEvent, FALSE ); 
 irp = IoBuildDeviceIoControlRequest( IRP_MJ_DEVICE_CONTROL, 
                                      DeviceObject, 
                                      (PVOID) NULL, 
@@ -32,15 +32,15 @@ irp = IoBuildDeviceIoControlRequest( IRP_MJ_DEVICE_CONTROL,
                                      (PVOID) NULL, 
                                      0, 
                                      FALSE, 
-                                     &amp;event, 
-                                     &amp;ioStatus ); 
+                                     &event, 
+                                     &ioStatus ); 
 if (irp) { 
    irpSp = IoGetNextIrpStackLocation( irp ); 
    irpSp->MajorFunction = IRP_MJ_FILE_SYSTEM_CONTROL; 
    irpSp->MinorFunction = IRP_MN_LOAD_FILE_SYSTEM; 
    status = IoCallDriver( DeviceObject, irp ); 
    if (status == STATUS_PENDING) { 
-   (VOID) KeWaitForSingleObject( &amp;event, 
+   (VOID) KeWaitForSingleObject( &event, 
                                  Executive, 
                                  KernelMode, 
                                  FALSE, 
@@ -49,18 +49,18 @@ if (irp) {
 } 
 
 SPINLOCKUSE ! 
-KeAcquireSpinLock( &amp;IopDatabaseLock, &amp;irql ); 
+KeAcquireSpinLock( &IopDatabaseLock, &irql ); 
 // Code inside spin lock ...
 
 DeviceObject->ReferenceCount--; 
  
-if (!DeviceObject->ReferenceCount &amp;&amp; !DeviceObject->AttachedDevice) { 
+if (!DeviceObject->ReferenceCount && !DeviceObject->AttachedDevice) { 
    //Unload the driver
    .
    .
    . 
 } else { 
-   KeReleaseSpinLock( &amp;IopDatabaseLock, irql ); 
+   KeReleaseSpinLock( &IopDatabaseLock, irql ); 
 } 
 ```
 

@@ -108,7 +108,7 @@ Within a USB configuration, the number of interfaces and their alternate setting
     ntStatus = WdfUsbTargetDeviceRetrieveConfigDescriptor (
         UsbDevice, 
         NULL,
-        &amp;sizeConfigDesc);
+        &sizeConfigDesc);
 
     if (sizeConfigDesc == 0)
     {
@@ -136,7 +136,7 @@ Within a USB configuration, the number of interfaces and their alternate setting
     ntStatus = WdfUsbTargetDeviceRetrieveConfigDescriptor (
         UsbDevice, 
         fullConfigDesc,
-        &amp;sizeConfigDesc);
+        &sizeConfigDesc);
 
     if (!NT_SUCCESS(ntStatus))
     {           
@@ -184,7 +184,7 @@ NTSTATUS FX3_RetrieveConfigurationDescriptor (
 
     PAGED_CODE();
 
-    RtlZeroMemory (&amp;configDesc, sizeof(USB_CONFIGURATION_DESCRIPTOR));
+    RtlZeroMemory (&configDesc, sizeof(USB_CONFIGURATION_DESCRIPTOR));
     *ConfigDescriptor = NULL;
 
     // Allocate an URB for the get-descriptor request. 
@@ -195,8 +195,8 @@ NTSTATUS FX3_RetrieveConfigurationDescriptor (
     ntStatus = WdfUsbTargetDeviceCreateUrb (
         UsbDevice,
         NULL,
-        &amp;urbMemory,
-        &amp;urb);
+        &urbMemory,
+        &urb);
 
     if (!NT_SUCCESS (ntStatus))
     {
@@ -213,7 +213,7 @@ NTSTATUS FX3_RetrieveConfigurationDescriptor (
         USB_CONFIGURATION_DESCRIPTOR_TYPE,                          // Type of descriptor
         *ConfigurationIndex,                                        // Index of the configuration
         0,                                                          // Not used for configuration descriptors
-        &amp;configDesc,                                                // Points to a USB_CONFIGURATION_DESCRIPTOR structure
+        &configDesc,                                                // Points to a USB_CONFIGURATION_DESCRIPTOR structure
         NULL,                                                       // Not required because we are providing a buffer not MDL
         sizeof(USB_CONFIGURATION_DESCRIPTOR),                       // Size of the USB_CONFIGURATION_DESCRIPTOR structure.
         NULL                                                        // Reserved.

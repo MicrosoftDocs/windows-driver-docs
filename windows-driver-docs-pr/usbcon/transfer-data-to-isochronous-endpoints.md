@@ -383,7 +383,7 @@ NTSTATUS CreateIsochURB  ( PDEVICE_OBJECT         DeviceObject,
     // Allocate an isochronous URB for the transfer
     ntStatus = USBD_IsochUrbAllocate (deviceExtension->UsbdHandle, 
         numberOfPackets, 
-        &amp;Urb);
+        &Urb);
 
     if (!NT_SUCCESS(ntStatus)) 
     {

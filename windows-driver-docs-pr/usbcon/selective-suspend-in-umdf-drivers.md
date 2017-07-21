@@ -100,7 +100,7 @@ hr = m_FxDevice->CreateIoQueue(
                                DispatchType,
                                PowerManaged,
                                FALSE,
-                               &amp;fxQueue
+                               &fxQueue
                                );
 ```
 
@@ -177,7 +177,7 @@ A UMDF USB driver can enable USB selective suspend either at runtime or during i
     BOOL AutoSuspend = TRUE;
     hr = m_pIUsbTargetDevice->SetPowerPolicy( AUTO_SUSPEND,
                                               sizeof(BOOL),
-                                             (PVOID) &amp;AutoSuspend );
+                                             (PVOID) &AutoSuspend );
     ```
 
 -   To enable support during installation, the INF includes an AddReg directive that adds the DefaultIdleState value to the device’s hardware key and sets the value to 1. For example:
@@ -201,7 +201,7 @@ By default, WinUSB suspends the device after 5 seconds if no transfers are pendi
     value = 10 * 1000;
     hr = m_pIUsbTargetDevice->SetPowerPolicy( SUSPEND_DELAY,
                                               sizeof(ULONG),
-                                             (PVOID) &amp;value );
+                                             (PVOID) &value );
     ```
 
 **To provide user control of USB selective suspend**
