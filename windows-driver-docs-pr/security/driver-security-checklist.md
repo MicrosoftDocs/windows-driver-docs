@@ -135,7 +135,7 @@ The [Code Validation Tools](#codevalidationtools) section of this article descri
 
 **Use the appropriate method for accessing  data buffers with IOCTLs**
 
-One of the primary responsibilities of driver stacks is transferring data between user-mode applications and a system's devices. The three methods for accessing data buffers are shown in the following table. 
+One of the primary responsibilities of a Windows driver is transferring data between user-mode applications and a system's devices. The three methods for accessing data buffers are shown in the following table. 
 
 |IOCTL Buffer Type | Summary                                    | For more information |  
 |------------------|--------------------------------------------|-------------------------------------------------------------------------|
@@ -533,9 +533,9 @@ Consider the development of custom domain-specific security tests. To develop ad
 
 For more information, see [How to run Code Analysis for drivers](https://msdn.microsoft.com/windows/hardware/drivers/devtest/how-to-run-code-analysis-for-drivers).
 
-1. Open the driver solution in Visual Studio.
-
 To become familiar with code analysis, you can use one of the sample drivers (for example, the featured toaster sample: <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured>).
+
+1. Open the driver solution in Visual Studio.
 
 2. In Visual Studio, for each project in the solution change the project properties to use the desired rule set. For example: Project &gt;&gt; Properties &gt;&gt; Code Analysis &gt;&gt; General, select *Recommended driver rules*. In addition to using the recommenced driver rules, use the *Recommended native rules* rule set.
 
@@ -558,25 +558,25 @@ Determine whether your code needs to be changed, or whether an annotation needs 
 
 For more information, see [Static Driver Verifier](https://msdn.microsoft.com/windows/hardware/drivers/devtest/static-driver-verifier). Note that only certain types of drivers are supported by SDV. For more information about the drivers that SDV can verify, see [Supported Drivers](https://msdn.microsoft.com/windows/hardware/drivers/devtest/supported-drivers).
 
-1. Open the targeted driver solution in Visual Studio.
-
 To become familiar with SDV, you can use one of the sample drivers (for example, the featured toaster sample: <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured>).
 
-1. In Visual Studio, change the build type to *Release*. Static Driver Verifier requires that the build type is release, not debug.
+1. Open the targeted driver solution in Visual Studio.
 
-2. In Visual Studio, select Build &gt;&gt; Build Solution.
+2. In Visual Studio, change the build type to *Release*. Static Driver Verifier requires that the build type is release, not debug.
 
-3. In Visual Studio, select Driver &gt;&gt; Launch Static Driver Verifier.
+3. In Visual Studio, select Build &gt;&gt; Build Solution.
 
-4. In SDV, on the *Rules* tab, select *Default* under *Rule Sets*.
+4. In Visual Studio, select Driver &gt;&gt; Launch Static Driver Verifier.
+
+5. In SDV, on the *Rules* tab, select *Default* under *Rule Sets*.
 
 Although the default rules find many common issues, consider running the more extensive *All driver rules* rule set as well.
 
-5. On the *Main* tab of SDV, click *Start*.
+6. On the *Main* tab of SDV, click *Start*.
 
-6. When SDV is complete, review any warnings in the output. The *Main* tab displays the total number of defects found.
+7. When SDV is complete, review any warnings in the output. The *Main* tab displays the total number of defects found.
 
-7. Click on each warning to load the SDV Report Page and examine the information associated with the possible code vulnerability. Use the report to investigate the verification result and to identify paths in your driver that fail a SDV verification. For more information, see [Static Driver Verifier Report](https://msdn.microsoft.com/library/windows/hardware/ff552834).
+8. Click on each warning to load the SDV Report Page and examine the information associated with the possible code vulnerability. Use the report to investigate the verification result and to identify paths in your driver that fail a SDV verification. For more information, see [Static Driver Verifier Report](https://msdn.microsoft.com/library/windows/hardware/ff552834).
 
 
 ## <span id="use-the-device-guard-readiness-tool"></span>Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility
@@ -599,7 +599,7 @@ For more information about the related device fundamentals test, see [Device.Dev
 
 **Using the tool**
 
-To use Device Guard Readiness Tool to evaluate, complete the following steps:
+To use Device Guard Readiness Tool, complete the following steps:
 
 -   **Prepare the test PC**
 
@@ -882,7 +882,7 @@ Use BinScope to examine application binary files to identify coding and building
 
 For more information, see [BinScope Binary Analyzer TechNet Video](https://technet.microsoft.com/video/binscope-binary-analyzer.aspx) and the word documents available as part of the tool download.
 
-Follow these steps to validate that the code you are shipping has includes common security compile options properly configured:
+Follow these steps to validate that the security compile options are properly configured in the code that you are shipping:
 
 1. Download BinScope Analyzer and related documents from here: <https://www.microsoft.com/download/details.aspx?id=44995>.
 
@@ -1041,11 +1041,13 @@ Windows driver classroom training is available from vendors such as the followin
 - [Winsider](https://www.windows-internals.com/)
 - [Azius](https://www.azius.com)
 
-Secure coding online training is available from a variety of sources. For example, this course is available from coursera. [https://www.coursera.org/learn/software-security](https://www.coursera.org/learn/software-security#faqs)
+Secure coding online training is available from a variety of sources. For example, this course is available from coursera:
+
+ [https://www.coursera.org/learn/software-security](https://www.coursera.org/learn/software-security#faqs).
 
 **Professional Certification**
 
- CERT offers a [Secure Coding Professional Certification](https://www.cert.org/go/secure-coding/)
+ CERT offers a [Secure Coding Professional Certification](https://www.cert.org/go/secure-coding/).
 
 
 ## <span id="keytakeaways"></span>Summary of key takeaways
