@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x1E KMODE\_EXCEPTION\_NOT\_HANDLED
-description: The KMODE\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000001E. This indicates that a kernel-mode program generated an exception which the error handler did not catch.
+title: Bug Check 0x1E KMODE_EXCEPTION_NOT_HANDLED
+description: The KMODE_EXCEPTION_NOT_HANDLED bug check has a value of 0x0000001E. This indicates that a kernel-mode program generated an exception which the error handler did not catch.
 ms.assetid: 4a30b770-b2c4-4fdd-b431-95f2b40ef5f7
 keywords: ["Bug Check 0x1E KMODE_EXCEPTION_NOT_HANDLED", "KMODE_EXCEPTION_NOT_HANDLED"]
 ms.author: windowsdriverdev

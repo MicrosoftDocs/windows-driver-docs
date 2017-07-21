@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_P2P\_ACTION\_FRAME\_DEVICE\_CONTEXT
+title: WDI_TLV_P2P_ACTION_FRAME_DEVICE_CONTEXT
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_ACTION\_FRAME\_DEVICE\_CONTEXT is an unused TLV.
+description: WDI_TLV_P2P_ACTION_FRAME_DEVICE_CONTEXT is an unused TLV.
 ms.assetid: 7CF83378-BBCA-4A51-ACDE-8F52FC825C5D
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

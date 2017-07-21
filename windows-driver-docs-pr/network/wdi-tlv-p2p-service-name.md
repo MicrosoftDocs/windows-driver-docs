@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_P2P\_SERVICE\_NAME
+title: WDI_TLV_P2P_SERVICE_NAME
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_SERVICE\_NAME is a TLV that contains the name of a service.
+description: WDI_TLV_P2P_SERVICE_NAME is a TLV that contains the name of a service.
 ms.assetid: 6394F781-BFE7-4009-8F5E-72D7C8CCF036
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

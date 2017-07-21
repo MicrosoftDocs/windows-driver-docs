@@ -1,7 +1,7 @@
 ---
-title: SIO\_WSK\_REGISTER\_EXTENSION
+title: SIO_WSK_REGISTER_EXTENSION
 author: windows-driver-content
-description: SIO\_WSK\_REGISTER\_EXTENSION
+description: SIO_WSK_REGISTER_EXTENSION
 ms.assetid: e7fd6d68-85e8-4c5f-b67f-2193d200130d
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

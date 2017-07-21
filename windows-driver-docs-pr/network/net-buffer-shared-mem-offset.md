@@ -1,7 +1,7 @@
 ---
-title: NET\_BUFFER\_SHARED\_MEM\_OFFSET macro
+title: NET_BUFFER_SHARED_MEM_OFFSET macro
 author: windows-driver-content
-description: The NET\_BUFFER\_SHARED\_MEM\_OFFSET macro gets the shared memory offset from a NET\_BUFFER\_SHARED\_MEMORY structure.
+description: The NET_BUFFER_SHARED_MEM_OFFSET macro gets the shared memory offset from a NET_BUFFER_SHARED_MEMORY structure.
 ms.assetid: 7610238b-631b-414d-85ca-6b90c320dfbf
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_GET
+title: WDI_TLV_PM_PROTOCOL_OFFLOAD_GET
 author: windows-driver-content
-description: WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_GET is a TLV that contains a protocol offload ID for OID\_WDI\_GET\_PM\_PROTOCOL\_OFFLOAD.
+description: WDI_TLV_PM_PROTOCOL_OFFLOAD_GET is a TLV that contains a protocol offload ID for OID_WDI_GET_PM_PROTOCOL_OFFLOAD.
 ms.assetid: 71BBAA8F-0EE3-4315-AEB1-E9FD394218AD
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

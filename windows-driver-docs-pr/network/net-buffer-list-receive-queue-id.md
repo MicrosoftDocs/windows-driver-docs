@@ -1,7 +1,7 @@
 ---
-title: NET\_BUFFER\_LIST\_RECEIVE\_QUEUE\_ID macro
+title: NET_BUFFER_LIST_RECEIVE_QUEUE_ID macro
 author: windows-driver-content
-description: The NET\_BUFFER\_LIST\_RECEIVE\_QUEUE\_ID macro sets or gets the identifier of a virtual machine queue (VMQ) or single root I/O virtualization (SR-IOV) receive queue identifier within the out-of-band (OOB) data of a NET\_BUFFER\_LIST structure.
+description: The NET_BUFFER_LIST_RECEIVE_QUEUE_ID macro sets or gets the identifier of a virtual machine queue (VMQ) or single root I/O virtualization (SR-IOV) receive queue identifier within the out-of-band (OOB) data of a NET_BUFFER_LIST structure.
 ms.assetid: d205bb23-2e25-4643-baa9-19856de37eb1
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

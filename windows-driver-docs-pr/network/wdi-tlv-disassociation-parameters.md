@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_DISASSOCIATION\_PARAMETERS
+title: WDI_TLV_DISASSOCIATION_PARAMETERS
 author: windows-driver-content
-description: WDI\_TLV\_DISASSOCIATION\_PARAMETERS is an unused TLV.
+description: WDI_TLV_DISASSOCIATION_PARAMETERS is an unused TLV.
 ms.assetid: F056B5B3-900C-4D00-9330-F1FD8FA0993F
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

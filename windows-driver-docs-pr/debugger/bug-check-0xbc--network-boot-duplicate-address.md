@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0xBC NETWORK\_BOOT\_DUPLICATE\_ADDRESS
-description: The NETWORK\_BOOT\_DUPLICATE\_ADDRESS bug check has a value of 0x000000BC. This indicates that a duplicate IP address was assigned to this machine while booting off a network.
+title: Bug Check 0xBC NETWORK_BOOT_DUPLICATE_ADDRESS
+description: The NETWORK_BOOT_DUPLICATE_ADDRESS bug check has a value of 0x000000BC. This indicates that a duplicate IP address was assigned to this machine while booting off a network.
 ms.assetid: 54c45e73-7054-4dba-abe4-91f5f5a064a4
 keywords: ["Bug Check 0xBC NETWORK_BOOT_DUPLICATE_ADDRESS", "NETWORK_BOOT_DUPLICATE_ADDRESS"]
 ms.author: windowsdriverdev

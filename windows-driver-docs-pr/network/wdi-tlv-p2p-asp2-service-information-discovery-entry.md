@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_P2P\_ASP2\_SERVICE\_INFORMATION\_DISCOVERY\_ENTRY
+title: WDI_TLV_P2P_ASP2_SERVICE_INFORMATION_DISCOVERY_ENTRY
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_ASP2\_SERVICE\_INFORMATION\_DISCOVERY\_ENTRY is a TLV that contains an ASP2 Service Information Discovery Entry.
+description: WDI_TLV_P2P_ASP2_SERVICE_INFORMATION_DISCOVERY_ENTRY is a TLV that contains an ASP2 Service Information Discovery Entry.
 ms.assetid: 67F1CDE2-8003-44D3-B338-FE7C5EA48C29
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

@@ -1,7 +1,7 @@
 ---
-title: EFI\_USBFN\_IO\_PROTOCOL.Transfer
+title: EFI_USBFN_IO_PROTOCOL.Transfer
 author: windows-driver-content
-description: EFI\_USBFN\_IO\_PROTOCOL.Transfer
+description: EFI_USBFN_IO_PROTOCOL.Transfer
 ms.assetid: 0585de75-9268-4964-8c5f-dcc3338e5287
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

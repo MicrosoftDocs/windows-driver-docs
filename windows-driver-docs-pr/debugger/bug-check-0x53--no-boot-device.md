@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x53 NO\_BOOT\_DEVICE
-description: The NO\_BOOT\_DEVICE bug check has a value of 0x00000053.This bug check appears very infrequently.
+title: Bug Check 0x53 NO_BOOT_DEVICE
+description: The NO_BOOT_DEVICE bug check has a value of 0x00000053.This bug check appears very infrequently.
 ms.assetid: 4713be6e-fcf4-4fcc-8a50-76af9fd1d5af
 keywords: ["Bug Check 0x53 NO_BOOT_DEVICE", "NO_BOOT_DEVICE"]
 ms.author: windowsdriverdev

@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_P2P\_SERVICE\_TRANSACTION\_ID
+title: WDI_TLV_P2P_SERVICE_TRANSACTION_ID
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_SERVICE\_TRANSACTION\_ID is a TLV that contains the Service transaction ID to be used for the ANQP query request.
+description: WDI_TLV_P2P_SERVICE_TRANSACTION_ID is a TLV that contains the Service transaction ID to be used for the ANQP query request.
 ms.assetid: 93CBE158-4595-40FC-A574-B818B2324DBF
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

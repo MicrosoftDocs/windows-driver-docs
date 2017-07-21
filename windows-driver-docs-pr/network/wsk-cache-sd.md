@@ -1,7 +1,7 @@
 ---
-title: WSK\_CACHE\_SD
+title: WSK_CACHE_SD
 author: windows-driver-content
-description: WSK\_CACHE\_SD
+description: WSK_CACHE_SD
 ms.assetid: 60a4c7f9-d7e3-4378-b22b-93c69a9b8a37
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

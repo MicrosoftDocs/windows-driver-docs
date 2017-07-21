@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0xF9 DRIVER\_RETURNED\_STATUS\_REPARSE\_FOR\_VOLUME\_OPEN
-description: The DRIVER\_RETURNED\_STATUS\_REPARSE\_FOR\_VOLUME\_OPEN bug check that indicates that a driver returned STATUS\_REPARSE to an IRP\_MJ\_CREATE request with no trailing names.
+title: Bug Check 0xF9 DRIVER_RETURNED_STATUS_REPARSE_FOR_VOLUME_OPEN
+description: The DRIVER_RETURNED_STATUS_REPARSE_FOR_VOLUME_OPEN bug check that indicates that a driver returned STATUS_REPARSE to an IRP_MJ_CREATE request with no trailing names.
 ms.assetid: 60eeb24a-accf-4db8-ba5b-1738a9aa4b46
 keywords: ["Bug Check 0xF9 DRIVER_RETURNED_STATUS_REPARSE_FOR_VOLUME_OPEN", "DRIVER_RETURNED_STATUS_REPARSE_FOR_VOLUME_OPEN"]
 ms.author: windowsdriverdev

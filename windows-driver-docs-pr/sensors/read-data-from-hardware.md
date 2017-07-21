@@ -26,7 +26,7 @@ Typically the “top end” of the sensor driver is designed to be accessible to
 // Read the Interrupt source
    BYTE IntSrcBuffer = 0;
    WdfWaitLockAcquire(pAccDevice->m_I2CWaitLock, NULL);
-   Status = I2CSensorReadRegister(pAccDevice->m_I2CIoTarget, ADXL345_INT_SOURCE, &amp;IntSrcBuffer, sizeof(IntSrcBuffer));
+   Status = I2CSensorReadRegister(pAccDevice->m_I2CIoTarget, ADXL345_INT_SOURCE, &IntSrcBuffer, sizeof(IntSrcBuffer));
    WdfWaitLockRelease(pAccDevice->m_I2CWaitLock);
 ```
 
@@ -61,7 +61,7 @@ The sample sensor driver uses **GetData** to retrieve the sensor instance, acqui
 // Read the device data
    BYTE DataBuffer[ADXL345_DATA_REPORT_SIZE_BYTES];
    WdfWaitLockAcquire(m_I2CWaitLock, NULL);
-   Status = I2CSensorReadRegister(m_I2CIoTarget, ADXL345_DATA_X0, &amp;DataBuffer[0], sizeof(DataBuffer));
+   Status = I2CSensorReadRegister(m_I2CIoTarget, ADXL345_DATA_X0, &DataBuffer[0], sizeof(DataBuffer));
    WdfWaitLockRelease(m_I2CWaitLock);
 ```
 
@@ -71,8 +71,8 @@ The preceding code sets aside a buffer of size *DataBuffer*, and reads the devic
 ```ManagedCPlusPlus
 // Add timestamp
    FILETIME Timestamp = {};
-   GetSystemTimeAsFileTime(&amp;Timestamp);
-   InitPropVariantFromFileTime(&amp;Timestamp, &amp;(m_pSensorData->List[SENSOR_DATA_TIMESTAMP].Value));
+   GetSystemTimeAsFileTime(&Timestamp);
+   InitPropVariantFromFileTime(&Timestamp, &(m_pSensorData->List[SENSOR_DATA_TIMESTAMP].Value));
 
    SensorsCxSensorDataReady(m_SensorInstance, m_pSensorData);
 ```

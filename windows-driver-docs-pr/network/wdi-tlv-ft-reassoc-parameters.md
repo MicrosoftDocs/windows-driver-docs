@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_FT\_REASSOC\_PARAMETERS
+title: WDI_TLV_FT_REASSOC_PARAMETERS
 author: windows-driver-content
-description: WDI\_TLV\_FT\_REASSOC\_PARAMETERS is a TLV that contains reassociation parameters for Fast Transition.
+description: WDI_TLV_FT_REASSOC_PARAMETERS is a TLV that contains reassociation parameters for Fast Transition.
 ms.assetid: 36F260FF-E80A-4EFF-B009-B06446229470
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

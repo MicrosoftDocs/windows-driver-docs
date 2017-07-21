@@ -1,7 +1,7 @@
 ---
-title: NET\_BUFFER\_LIST\_GET\_HASH\_FUNCTION macro
+title: NET_BUFFER_LIST_GET_HASH_FUNCTION macro
 author: windows-driver-content
-description: The NET\_BUFFER\_LIST\_GET\_HASH\_FUNCTION macro gets the hash function information from a NET\_BUFFER\_LIST structure. Version Information Windows VistaSupported. NDIS 6.0 driversSupported.
+description: The NET_BUFFER_LIST_GET_HASH_FUNCTION macro gets the hash function information from a NET_BUFFER_LIST structure. Version Information Windows VistaSupported. NDIS 6.0 driversSupported.
 ms.assetid: bb80344c-8f82-4446-9f6f-8c2d4cabfd5a
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

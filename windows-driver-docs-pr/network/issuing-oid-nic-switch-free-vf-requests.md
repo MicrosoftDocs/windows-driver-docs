@@ -1,6 +1,6 @@
 ---
-title: Issuing OID\_NIC\_SWITCH\_FREE\_VF Requests
-description: Issuing OID\_NIC\_SWITCH\_FREE\_VF Requests
+title: Issuing OID_NIC_SWITCH_FREE_VF Requests
+description: Issuing OID_NIC_SWITCH_FREE_VF Requests
 ms.assetid: D9A8548C-02D8-4537-9053-6B262004CBC4
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

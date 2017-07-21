@@ -62,7 +62,7 @@ VOID MyFreeMdl(PMDL Mdl)
     for (currentMdl = Mdl; currentMdl != NULL; currentMdl = nextMdl) 
     {
         nextMdl = currentMdl->Next;
-        if (currentMdl->MdlFlags &amp; MDL_PAGES_LOCKED) 
+        if (currentMdl->MdlFlags & MDL_PAGES_LOCKED) 
         {
             MmUnlockPages(currentMdl);
         }

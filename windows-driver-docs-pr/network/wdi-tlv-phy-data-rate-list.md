@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_PHY\_DATA\_RATE\_LIST
+title: WDI_TLV_PHY_DATA_RATE_LIST
 author: windows-driver-content
-description: WDI\_TLV\_PHY\_DATA\_RATE\_LIST is a TLV that contains a list of data rates.
+description: WDI_TLV_PHY_DATA_RATE_LIST is a TLV that contains a list of data rates.
 ms.assetid: FFD28866-4983-4C0B-A74D-4EF9A819571E
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

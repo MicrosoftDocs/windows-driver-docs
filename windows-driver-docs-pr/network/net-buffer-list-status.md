@@ -1,7 +1,7 @@
 ---
-title: NET\_BUFFER\_LIST\_STATUS macro
+title: NET_BUFFER_LIST_STATUS macro
 author: windows-driver-content
-description: NET\_BUFFER\_LIST\_STATUS is a macro that NDIS drivers use to access the StatusCode member of a NET\_BUFFER\_LIST structure.
+description: NET_BUFFER_LIST_STATUS is a macro that NDIS drivers use to access the StatusCode member of a NET_BUFFER_LIST structure.
 ms.assetid: 0101c6f1-4690-4d53-a28d-d13995dc2691
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

@@ -1,7 +1,7 @@
 ---
-title: NDIS\_RSS\_HASH\_TYPE\_FROM\_HASH\_INFO macro
+title: NDIS_RSS_HASH_TYPE_FROM_HASH_INFO macro
 author: windows-driver-content
-description: The NDIS\_RSS\_HASH\_TYPE\_FROM\_HASH\_INFO macro gets the hash type from the hash information. Version Information Windows VistaSupported. NDIS 6.0 driversSupported.
+description: The NDIS_RSS_HASH_TYPE_FROM_HASH_INFO macro gets the hash type from the hash information. Version Information Windows VistaSupported. NDIS 6.0 driversSupported.
 ms.assetid: 927fd4bf-60fa-4779-a6ec-73e577b43a95
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

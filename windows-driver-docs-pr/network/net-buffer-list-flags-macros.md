@@ -1,7 +1,7 @@
 ---
-title: NET\_BUFFER\_LIST Flags Macros
+title: NET_BUFFER_LIST Flags Macros
 author: windows-driver-content
-description: NET\_BUFFER\_LIST Flags Macros
+description: NET_BUFFER_LIST Flags Macros
 ms.assetid: c224f97f-bd9c-437e-86ec-223b8d85c49a
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

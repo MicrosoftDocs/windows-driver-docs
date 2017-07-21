@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_IHV\_NON\_WDI\_OIDS\_LIST
+title: WDI_TLV_IHV_NON_WDI_OIDS_LIST
 author: windows-driver-content
-description: WDI\_TLV\_IHV\_NON\_WDI\_OIDS\_LIST is a TLV that contains a list of non-WDI OIDs that the adapter wants to advertise to the operating system.
+description: WDI_TLV_IHV_NON_WDI_OIDS_LIST is a TLV that contains a list of non-WDI OIDs that the adapter wants to advertise to the operating system.
 ms.assetid: 84929276-F098-4C24-A499-E252D5FB71A6
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

@@ -1,6 +1,6 @@
 ---
-title: REMOTE\_NDIS\_RESET\_MSG
-description: REMOTE\_NDIS\_RESET\_MSG
+title: REMOTE_NDIS_RESET_MSG
+description: REMOTE_NDIS_RESET_MSG
 ms.assetid: 9cd848c9-85f9-4bc5-bd54-2936270889d4
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_P2P\_PROVISION\_DISCOVERY\_RESPONSE\_INFO
+title: WDI_TLV_P2P_PROVISION_DISCOVERY_RESPONSE_INFO
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_PROVISION\_DISCOVERY\_RESPONSE\_INFO is a TLV that contains Wi-Fi Direct Provision Discovery Response information.
+description: WDI_TLV_P2P_PROVISION_DISCOVERY_RESPONSE_INFO is a TLV that contains Wi-Fi Direct Provision Discovery Response information.
 ms.assetid: EB7C4A5C-27D8-4A84-BC91-0DED51FB74C2
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

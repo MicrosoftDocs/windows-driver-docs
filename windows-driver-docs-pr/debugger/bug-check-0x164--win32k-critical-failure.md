@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x164 WIN32K\_CRITICAL\_FAILURE
-description: The WIN32K\_CRITICAL\_FAILURE bug check has a value of 0x00000164. This indicates that Win32k has encountered a critical failure.
+title: Bug Check 0x164 WIN32K_CRITICAL_FAILURE
+description: The WIN32K_CRITICAL_FAILURE bug check has a value of 0x00000164. This indicates that Win32k has encountered a critical failure.
 ms.assetid: 6274C852-53DA-4E01-B2A6-D7485501BE50
 keywords: ["Bug Check 0x164 WIN32K_CRITICAL_FAILURE", "WIN32K_CRITICAL_FAILURE"]
 ms.author: windowsdriverdev

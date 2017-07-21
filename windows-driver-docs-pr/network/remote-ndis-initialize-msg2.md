@@ -1,6 +1,6 @@
 ---
-title: REMOTE\_NDIS\_INITIALIZE\_MSG
-description: REMOTE\_NDIS\_INITIALIZE\_MSG
+title: REMOTE_NDIS_INITIALIZE_MSG
+description: REMOTE_NDIS_INITIALIZE_MSG
 ms.assetid: bc63390a-85b3-4df2-953d-7dc9fb01a787
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

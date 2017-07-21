@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0xBA SESSION\_HAS\_VALID\_VIEWS\_ON\_EXIT
-description: The SESSION\_HAS\_VALID\_VIEWS\_ON\_EXIT bug check has a value of 0x000000BA. This indicates that a session driver still had mapped views when the session unloaded.
+title: Bug Check 0xBA SESSION_HAS_VALID_VIEWS_ON_EXIT
+description: The SESSION_HAS_VALID_VIEWS_ON_EXIT bug check has a value of 0x000000BA. This indicates that a session driver still had mapped views when the session unloaded.
 ms.assetid: e0ef7d0e-8a3e-41ca-b0c1-c0f0bb298ef1
 keywords: ["Bug Check 0xBA SESSION_HAS_VALID_VIEWS_ON_EXIT", "SESSION_HAS_VALID_VIEWS_ON_EXIT"]
 ms.author: windowsdriverdev

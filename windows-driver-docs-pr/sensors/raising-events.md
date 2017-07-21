@@ -105,7 +105,7 @@ HRESULT CSampleEvents::Initialize(ISensorClassExtension *pSensorCXT, CSensorDdi*
     {
         m_hEventThread = ::CreateThread(NULL,   // Cannot be inherited by child process
                      0,                                       // Default stack size
-                     &amp;CSampleEvents::_EventThreadProc,     // Thread proc
+                     &CSampleEvents::_EventThreadProc,     // Thread proc
                      (LPVOID)this,                            // Thread proc argument
                      0,                                       // Starting state = running
                      NULL);                                   // No thread identifier
@@ -157,7 +157,7 @@ HRESULT CSampleEvents::PostStateEvent()
     if (SUCCEEDED(hr))
     {
         SensorState st;  
-        hr = m_pDdi->GetSensorState(&amp;st);
+        hr = m_pDdi->GetSensorState(&st);
 
         if (SUCCEEDED(hr))
         {
@@ -225,7 +225,7 @@ DWORD WINAPI CSampleEvents::_EventThreadProc(__in LPVOID pvData)
             if(SUCCEEDED(hr))
             {            
                 // Use the Ddi class to create the key collection.
-                hr = pThis->m_pDdi->OnGetSupportedDataFields(g_wszSensorID, &amp;spKeys);
+                hr = pThis->m_pDdi->OnGetSupportedDataFields(g_wszSensorID, &spKeys);
             }
 
             if(SUCCEEDED(hr))
@@ -239,7 +239,7 @@ DWORD WINAPI CSampleEvents::_EventThreadProc(__in LPVOID pvData)
                 // This sample does not do so, therefore this is a safe thing to do
                 // in this code.
                 hr = pThis->m_pDdi->OnGetDataFields(spTemp, g_wszSensorID, spKeys, 
-                                                              &amp;spEventParams);
+                                                              &spEventParams);
             }
 
             if(SUCCEEDED(hr))

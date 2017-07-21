@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_ADDITIONAL\_PROBE\_REQUEST\_DEFAULT\_IES
+title: WDI_TLV_ADDITIONAL_PROBE_REQUEST_DEFAULT_IES
 author: windows-driver-content
-description: WDI\_TLV\_ADDITIONAL\_PROBE\_REQUEST\_DEFAULT\_IES is a TLV that contains additional probe request IEs.
+description: WDI_TLV_ADDITIONAL_PROBE_REQUEST_DEFAULT_IES is a TLV that contains additional probe request IEs.
 ms.assetid: E364B1BC-5A78-42C8-B04D-31BD21141477
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

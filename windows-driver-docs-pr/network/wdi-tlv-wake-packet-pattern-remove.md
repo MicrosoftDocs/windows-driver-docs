@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_WAKE\_PACKET\_PATTERN\_REMOVE
+title: WDI_TLV_WAKE_PACKET_PATTERN_REMOVE
 author: windows-driver-content
-description: WDI\_TLV\_WAKE\_PACKET\_PATTERN\_REMOVE is a TLV that contains the wake packet pattern ID to be removed with OID\_WDI\_SET\_REMOVE\_WOL\_PATTERN.
+description: WDI_TLV_WAKE_PACKET_PATTERN_REMOVE is a TLV that contains the wake packet pattern ID to be removed with OID_WDI_SET_REMOVE_WOL_PATTERN.
 ms.assetid: 69C87D35-AE6B-4F69-B099-A55B65EDAC58
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

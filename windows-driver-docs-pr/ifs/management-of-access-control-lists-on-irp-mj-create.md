@@ -1,7 +1,7 @@
 ---
-title: Management of Access Control Lists on IRP\_MJ\_CREATE
+title: Management of Access Control Lists on IRP_MJ_CREATE
 author: windows-driver-content
-description: Management of Access Control Lists on IRP\_MJ\_CREATE
+description: Management of Access Control Lists on IRP_MJ_CREATE
 ms.assetid: 07b35931-8e20-4789-b2ef-14c6195b817f
 keywords:
 - IRP_MJ_CREATE

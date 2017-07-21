@@ -1,7 +1,7 @@
 ---
-title: EFI\_BATTERY\_CHARGING\_COMPLETION\_TOKEN
+title: EFI_BATTERY_CHARGING_COMPLETION_TOKEN
 author: windows-driver-content
-description: EFI\_BATTERY\_CHARGING\_COMPLETION\_TOKEN
+description: EFI_BATTERY_CHARGING_COMPLETION_TOKEN
 ms.assetid: 1151643e-8b22-4034-b043-ac4d44c01082
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

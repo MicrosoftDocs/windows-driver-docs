@@ -36,12 +36,12 @@ An application can include activity ID GUIDs by calling [**EventActivityIdContro
 This example code shows how an application can set an activity ID GUID and send it to the ETW provider, a UMDF driver.
 
 ```
-EventActivityIdControl(EVENT_ACTIVITY_CTRL_CREATE_ID, &amp;activityIdStruct.ActivityId); 
-EventActivityIdControl(EVENT_ACTIVITY_CTRL_SET_ID,    &amp;activityIdStruct.ActivityId); 
+EventActivityIdControl(EVENT_ACTIVITY_CTRL_CREATE_ID, &activityIdStruct.ActivityId); 
+EventActivityIdControl(EVENT_ACTIVITY_CTRL_SET_ID,    &activityIdStruct.ActivityId); 
                 
 if (!DeviceIoControl(hRead,
                      IOCTL_OSRUSBFX2_SET_ACTIVITY_ID,
-                     &amp;activityIdStruct,         // Ptr to InBuffer
+                     &activityIdStruct,         // Ptr to InBuffer
                      sizeof(activityIdStruct),  // Length of InBuffer
                      NULL,                      // Ptr to OutBuffer
                      0,                         // Length of OutBuffer
@@ -54,7 +54,7 @@ if (!DeviceIoControl(hRead,
 
 ...
 
-success = ReadFile(hRead, pinBuf, G_ReadLen, (PULONG) &amp;nBytesRead, NULL);
+success = ReadFile(hRead, pinBuf, G_ReadLen, (PULONG) &nBytesRead, NULL);
 
 if(success == 0) 
 {
@@ -126,15 +126,15 @@ Return Value:
             }
             else
             {
-                FxRequest->GetInputMemory(&amp;memory );
+                FxRequest->GetInputMemory(&memory );
             }
 
             if (SUCCEEDED(hr)) 
             {
-                buffer = memory->GetDataBuffer(&amp;bigBufferCb);
+                buffer = memory->GetDataBuffer(&bigBufferCb);
                 memory->Release();
 
-                m_Device->SetActivityId(&amp;((PUMDF_ACTIVITY_ID)buffer)->ActivityId);
+                m_Device->SetActivityId(&((PUMDF_ACTIVITY_ID)buffer)->ActivityId);
                 hr = S_OK;
             }
 
@@ -148,7 +148,7 @@ VOID
         LPCGUID ActivityId
         )
     {
-        CopyMemory(&amp;m_ActivityId, ActivityId, sizeof(m_ActivityId));
+        CopyMemory(&m_ActivityId, ActivityId, sizeof(m_ActivityId));
     }
 
 
@@ -173,11 +173,11 @@ CMyReadWriteQueue::ForwardFormattedRequest(
 ...
     if (FAILED(hrSend))
     {
-        contextHr = pRequest->RetrieveContext((void**)&amp;pRequestContext);
+        contextHr = pRequest->RetrieveContext((void**)&pRequestContext);
 
         if (SUCCEEDED(contextHr)) {
 
-            EventActivityIdControl(EVENT_ACTIVITY_CTRL_SET_ID, &amp;pRequestContext->ActivityId);
+            EventActivityIdControl(EVENT_ACTIVITY_CTRL_SET_ID, &pRequestContext->ActivityId);
 
             if (pRequestContext->RequestType == RequestTypeRead)
             {

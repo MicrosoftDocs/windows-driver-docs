@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_FT\_R0KHID
+title: WDI_TLV_FT_R0KHID
 author: windows-driver-content
-description: WDI\_TLV\_FT\_R0KHID is an unused TLV.
+description: WDI_TLV_FT_R0KHID is an unused TLV.
 ms.assetid: A9E8B09E-8EB8-4832-8F3D-148C2F0DF6BE
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

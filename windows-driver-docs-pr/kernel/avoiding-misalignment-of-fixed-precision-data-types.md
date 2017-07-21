@@ -74,8 +74,8 @@ case IOCTL_SETTIME: {
 #if _WIN64
     IOCTL_PARAMETERS2 LocalParams2;
 
-    RtlCopyMemory(&amp;LocalParams2, p, sizeof(IOCTL_PARAMETERS2));
-    p = &amp;LocalParams2;
+    RtlCopyMemory(&LocalParams2, p, sizeof(IOCTL_PARAMETERS2));
+    p = &LocalParams2;
 #endif
 
     status = DoSomeWork(p->DeviceTime);
@@ -91,12 +91,12 @@ case IOCTL_SETTIME: {
 #if _WIN64
     IOCTL_PARAMETERS2 LocalParams2;
 
-    if ( (ULONG_PTR)p &amp; (TYPE_ALIGNMENT(IOCTL_PARAMETERS2)-1)) {
+    if ( (ULONG_PTR)p & (TYPE_ALIGNMENT(IOCTL_PARAMETERS2)-1)) {
         // The buffer contents are not correctly aligned for this 
         // platform, so copy them into a properly aligned local 
         // buffer.
-        RtlCopyMemory(&amp;LocalParams2, p, sizeof(IOCTL_PARAMETERS2));
-        p = &amp;LocalParams2;
+        RtlCopyMemory(&LocalParams2, p, sizeof(IOCTL_PARAMETERS2));
+        p = &LocalParams2;
     }
 #endif
 

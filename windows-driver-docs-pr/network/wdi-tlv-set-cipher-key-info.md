@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_SET\_CIPHER\_KEY\_INFO
+title: WDI_TLV_SET_CIPHER_KEY_INFO
 author: windows-driver-content
-description: WDI\_TLV\_SET\_CIPHER\_KEY\_INFO is a TLV that contains cipher key mapping key information for OID\_WDI\_SET\_ADD\_CIPHER\_KEYS.
+description: WDI_TLV_SET_CIPHER_KEY_INFO is a TLV that contains cipher key mapping key information for OID_WDI_SET_ADD_CIPHER_KEYS.
 ms.assetid: 6352284A-73CD-4B15-A057-80D0C8518CD5
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 
