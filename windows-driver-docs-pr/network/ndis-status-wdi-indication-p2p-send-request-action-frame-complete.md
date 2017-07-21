@@ -1,7 +1,7 @@
 ---
-title: NDIS\_STATUS\_WDI\_INDICATION\_P2P\_SEND\_REQUEST\_ACTION\_FRAME\_COMPLETE
+title: NDIS_STATUS_WDI_INDICATION_P2P_SEND_REQUEST_ACTION_FRAME_COMPLETE
 author: windows-driver-content
-description: Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_P2P\_SEND\_REQUEST\_ACTION\_FRAME\_COMPLETE to indicate information about the Request Action frame sent by OID\_WDI\_TASK\_P2P\_SEND\_REQUEST\_ACTION\_FRAME.
+description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_P2P_SEND_REQUEST_ACTION_FRAME_COMPLETE to indicate information about the Request Action frame sent by OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME.
 ms.assetid: 4c67b512-456f-48ed-bd1c-71a32bcf85f0
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

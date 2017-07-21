@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0xDEADDEAD MANUALLY\_INITIATED\_CRASH1
-description: The MANUALLY\_INITIATED\_CRASH1 bug check has a value of 0xDEADDEAD. This indicates that the user deliberately initiated a crash dump from either the kernel debugger or the keyboard.
+title: Bug Check 0xDEADDEAD MANUALLY_INITIATED_CRASH1
+description: The MANUALLY_INITIATED_CRASH1 bug check has a value of 0xDEADDEAD. This indicates that the user deliberately initiated a crash dump from either the kernel debugger or the keyboard.
 ms.assetid: b7439fc7-3146-48c9-b44e-dddea2d84769
 keywords: ["Bug Check 0xDEADDEAD MANUALLY_INITIATED_CRASH1", "MANUALLY_INITIATED_CRASH1"]
 ms.author: windowsdriverdev

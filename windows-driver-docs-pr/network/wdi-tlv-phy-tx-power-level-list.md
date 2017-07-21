@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_PHY\_TX\_POWER\_LEVEL\_LIST
+title: WDI_TLV_PHY_TX_POWER_LEVEL_LIST
 author: windows-driver-content
-description: WDI\_TLV\_PHY\_TX\_POWER\_LEVEL\_LIST is a TLV that contains a list of power levels.
+description: WDI_TLV_PHY_TX_POWER_LEVEL_LIST is a TLV that contains a list of power levels.
 ms.assetid: DDBF9BBA-9700-4FD2-9521-6D0970E99893
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0xBFF BC\_BTHMINI\_VERIFIER\_FAULT
-description: The BC\_BTHMINI\_VERIFIER\_FAULT bug check has a value of 0x00000BFF. This indicates that The Bluetooth miniport extensible driver verifier has caught a violation.
+title: Bug Check 0xBFF BC_BTHMINI_VERIFIER_FAULT
+description: The BC_BTHMINI_VERIFIER_FAULT bug check has a value of 0x00000BFF. This indicates that The Bluetooth miniport extensible driver verifier has caught a violation.
 ms.assetid: 4BB54209-89EA-455D-B850-CC2A96A43C87
 keywords: ["Bug Check 0xBFF BC_BTHMINI_VERIFIER_FAULT", "BC_BTHMINI_VERIFIER_FAULT"]
 ms.author: windowsdriverdev

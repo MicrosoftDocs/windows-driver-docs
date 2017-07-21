@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_UNICAST\_CIPHER\_ALGO\_LIST
+title: WDI_TLV_UNICAST_CIPHER_ALGO_LIST
 author: windows-driver-content
-description: WDI\_TLV\_UNICAST\_CIPHER\_ALGO\_LIST is a TLV that contains a list of unicast cipher algorithms.
+description: WDI_TLV_UNICAST_CIPHER_ALGO_LIST is a TLV that contains a list of unicast cipher algorithms.
 ms.assetid: 67FAEE8A-1CD6-4430-92C1-84E9F43BEF63
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

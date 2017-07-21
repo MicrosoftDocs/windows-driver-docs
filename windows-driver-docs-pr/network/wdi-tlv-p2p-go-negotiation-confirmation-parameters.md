@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_P2P\_GO\_NEGOTIATION\_CONFIRMATION\_PARAMETERS
+title: WDI_TLV_P2P_GO_NEGOTIATION_CONFIRMATION_PARAMETERS
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_GO\_NEGOTIATION\_CONFIRMATION\_PARAMETERS is a TLV that contains incoming GO Negotiation Confirmation parameters.
+description: WDI_TLV_P2P_GO_NEGOTIATION_CONFIRMATION_PARAMETERS is a TLV that contains incoming GO Negotiation Confirmation parameters.
 ms.assetid: 69A20B64-C2B9-4C96-8119-EE64E80201EB
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

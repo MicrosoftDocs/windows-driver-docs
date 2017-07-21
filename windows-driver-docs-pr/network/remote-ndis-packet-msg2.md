@@ -1,6 +1,6 @@
 ---
-title: REMOTE\_NDIS\_PACKET\_MSG
-description: REMOTE\_NDIS\_PACKET\_MSG
+title: REMOTE_NDIS_PACKET_MSG
+description: REMOTE_NDIS_PACKET_MSG
 ms.assetid: 334b0f74-7cc2-466b-9e12-5fac60911606
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

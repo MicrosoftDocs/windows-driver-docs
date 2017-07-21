@@ -1,7 +1,7 @@
 ---
-title: NDIS\_STATUS\_PD\_CURRENT\_CONFIG
+title: NDIS_STATUS_PD_CURRENT_CONFIG
 author: windows-driver-content
-description: This status indication is a notification that the NDIS\_PD\_CONFIG structure has changed.
+description: This status indication is a notification that the NDIS_PD_CONFIG structure has changed.
 ms.assetid: 0B63E85E-36A8-4DC4-A060-C40DCB6BE454
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

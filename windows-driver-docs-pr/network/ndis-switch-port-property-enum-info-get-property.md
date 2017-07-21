@@ -1,7 +1,7 @@
 ---
-title: NDIS\_SWITCH\_PORT\_PROPERTY\_ENUM\_INFO\_GET\_PROPERTY macro
+title: NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO_GET_PROPERTY macro
 author: windows-driver-content
-description: Hyper-V extensible switch extensions use the NDIS\_SWITCH\_PORT\_PROPERTY\_ENUM\_INFO\_GET\_PROPERTY macro to access the port property buffer that is specified by an NDIS\_SWITCH\_PORT\_PROPERTY\_ENUM\_INFO structure.
+description: Hyper-V extensible switch extensions use the NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO_GET_PROPERTY macro to access the port property buffer that is specified by an NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO structure.
 ms.assetid: 76E08A71-E030-4814-AE4D-D55974968F3A
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

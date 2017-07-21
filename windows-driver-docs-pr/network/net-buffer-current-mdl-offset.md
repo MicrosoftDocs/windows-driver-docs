@@ -1,7 +1,7 @@
 ---
-title: NET\_BUFFER\_CURRENT\_MDL\_OFFSET macro
+title: NET_BUFFER_CURRENT_MDL_OFFSET macro
 author: windows-driver-content
-description: NET\_BUFFER\_CURRENT\_MDL\_OFFSET is a macro that NDIS drivers use to get the CurrentMdlOffset member of a NET\_BUFFER structure.
+description: NET_BUFFER_CURRENT_MDL_OFFSET is a macro that NDIS drivers use to get the CurrentMdlOffset member of a NET_BUFFER structure.
 ms.assetid: 49b14d42-584f-40de-8ba7-d0a74800886a
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

@@ -1,7 +1,7 @@
 ---
 title: NdisTestNblFlags macro
 author: windows-driver-content
-description: The NdisTestNblFlags macro tests the setting of a set of flags in a NET\_BUFFER\_LIST structure.
+description: The NdisTestNblFlags macro tests the setting of a set of flags in a NET_BUFFER_LIST structure.
 ms.assetid: adddae72-11ff-44f0-ac90-5792e0203b64
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

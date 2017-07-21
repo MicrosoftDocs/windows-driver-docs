@@ -1,7 +1,7 @@
 ---
-title: NDIS\_STATUS\_QOS\_OPERATIONAL\_PARAMETERS\_CHANGE
+title: NDIS_STATUS_QOS_OPERATIONAL_PARAMETERS_CHANGE
 author: windows-driver-content
-description: The miniport driver that supports NDIS Quality of Service (QoS) issues an NDIS\_STATUS\_QOS\_OPERATIONAL\_PARAMETERS\_CHANGE status indication when its operational NDIS QoS parameters are either resolved for the first time or changed later.
+description: The miniport driver that supports NDIS Quality of Service (QoS) issues an NDIS_STATUS_QOS_OPERATIONAL_PARAMETERS_CHANGE status indication when its operational NDIS QoS parameters are either resolved for the first time or changed later.
 ms.assetid: 15D2B139-1AEA-4252-8599-0EA4ED2E3733
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

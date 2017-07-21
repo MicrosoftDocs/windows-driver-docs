@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_NETWORK\_OFFLOAD\_CHANNELS
+title: WDI_TLV_NETWORK_OFFLOAD_CHANNELS
 author: windows-driver-content
-description: WDI\_TLV\_NETWORK\_OFFLOAD\_CHANNELS is an unused TLV.
+description: WDI_TLV_NETWORK_OFFLOAD_CHANNELS is an unused TLV.
 ms.assetid: D1F376FE-4DA8-4154-B9C4-14BCABDE4D74
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

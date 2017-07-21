@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_CHECKSUM\_OFFLOAD\_CAPABILITIES
+title: WDI_TLV_CHECKSUM_OFFLOAD_CAPABILITIES
 author: windows-driver-content
-description: WDI\_TLV\_CHECKSUM\_OFFLOAD\_CAPABILITIES is a TLV that contains checksum offload capabilities for IPv4 and IPv6.
+description: WDI_TLV_CHECKSUM_OFFLOAD_CAPABILITIES is a TLV that contains checksum offload capabilities for IPv4 and IPv6.
 ms.assetid: 400D532F-CAAA-40F9-8001-EE460D4C89F9
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

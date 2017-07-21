@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_IPv6NS
+title: WDI_TLV_PM_PROTOCOL_OFFLOAD_IPv6NS
 author: windows-driver-content
-description: WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_IPv6NS is a TLV that contains IPv6 NS protocol offload parameters.
+description: WDI_TLV_PM_PROTOCOL_OFFLOAD_IPv6NS is a TLV that contains IPv6 NS protocol offload parameters.
 ms.assetid: 0385449B-82C6-44B4-BBD3-A708ADE54AC4
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

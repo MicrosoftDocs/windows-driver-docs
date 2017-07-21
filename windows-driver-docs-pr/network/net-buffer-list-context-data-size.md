@@ -1,7 +1,7 @@
 ---
-title: NET\_BUFFER\_LIST\_CONTEXT\_DATA\_SIZE macro
+title: NET_BUFFER_LIST_CONTEXT_DATA_SIZE macro
 author: windows-driver-content
-description: NET\_BUFFER\_LIST\_CONTEXT\_DATA\_SIZE is a macro that NDIS drivers use to get the size of the NET\_BUFFER\_LIST\_CONTEXT data buffer that is associated with a NET\_BUFFER\_LIST structure.
+description: NET_BUFFER_LIST_CONTEXT_DATA_SIZE is a macro that NDIS drivers use to get the size of the NET_BUFFER_LIST_CONTEXT data buffer that is associated with a NET_BUFFER_LIST structure.
 ms.assetid: 28966e3d-db1d-4caf-b7e2-b79e97ed25cb
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

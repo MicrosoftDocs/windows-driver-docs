@@ -1,6 +1,6 @@
 ---
-title: Privately Defined Display-Miniport Driver IOCTL\_VIDEO\_XXX Requests
-description: Privately Defined Display-Miniport Driver IOCTL\_VIDEO\_XXX Requests
+title: Privately Defined Display-Miniport Driver IOCTL_VIDEO_XXX Requests
+description: Privately Defined Display-Miniport Driver IOCTL_VIDEO_XXX Requests
 ms.assetid: 45d8c9bc-993c-4fd3-949d-dfb30bb685d7
 keywords:
 - video miniport drivers WDK Windows 2000 , processing requests

@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_PHY\_TYPE
+title: WDI_TLV_PHY_TYPE
 author: windows-driver-content
-description: WDI\_TLV\_PHY\_TYPE is a TLV that contains a PHY type.
+description: WDI_TLV_PHY_TYPE is a TLV that contains a PHY type.
 ms.assetid: 0CEC5B02-EA75-4B04-84AE-6079A294F542
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

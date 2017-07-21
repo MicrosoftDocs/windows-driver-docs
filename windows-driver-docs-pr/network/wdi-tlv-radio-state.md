@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_RADIO\_STATE
+title: WDI_TLV_RADIO_STATE
 author: windows-driver-content
-description: WDI\_TLV\_RADIO\_STATE is a TLV that contains the state of the radio in hardware and software.
+description: WDI_TLV_RADIO_STATE is a TLV that contains the state of the radio in hardware and software.
 ms.assetid: 0DAE1D0A-4EEC-4054-A67C-EC3B5EDF77A5
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

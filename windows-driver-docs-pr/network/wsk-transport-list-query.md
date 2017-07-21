@@ -1,7 +1,7 @@
 ---
-title: WSK\_TRANSPORT\_LIST\_QUERY
+title: WSK_TRANSPORT_LIST_QUERY
 author: windows-driver-content
-description: WSK\_TRANSPORT\_LIST\_QUERY
+description: WSK_TRANSPORT_LIST_QUERY
 ms.assetid: feb6aed2-fac9-4d3f-a36b-f721c737aacf
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

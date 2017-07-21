@@ -1,7 +1,7 @@
 ---
 title: NdisClearNblFlag macro
 author: windows-driver-content
-description: The NdisClearNblFlag macro clears a flag in a NET\_BUFFER\_LIST structure.
+description: The NdisClearNblFlag macro clears a flag in a NET_BUFFER_LIST structure.
 ms.assetid: a9f85e1c-b96e-4e2b-b0f6-ef2676ac2ef5
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

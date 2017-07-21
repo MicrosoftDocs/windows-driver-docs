@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_FT\_RSNIE
+title: WDI_TLV_FT_RSNIE
 author: windows-driver-content
-description: WDI\_TLV\_FT\_RSNIE is a TLV that contains the Fast Transition RSN IE byte blob.
+description: WDI_TLV_FT_RSNIE is a TLV that contains the Fast Transition RSN IE byte blob.
 ms.assetid: 1EB22517-472C-461D-A32F-175E4281FFF0
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

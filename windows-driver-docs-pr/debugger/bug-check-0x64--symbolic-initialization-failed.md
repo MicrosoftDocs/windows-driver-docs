@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x64 SYMBOLIC\_INITIALIZATION\_FAILED
-description: The SYMBOLIC\_INITIALIZATION\_FAILED bug check has a value of 0x00000064.This bug check appears very infrequently.
+title: Bug Check 0x64 SYMBOLIC_INITIALIZATION_FAILED
+description: The SYMBOLIC_INITIALIZATION_FAILED bug check has a value of 0x00000064.This bug check appears very infrequently.
 ms.assetid: 0f4fa80b-a04b-4482-952d-8f124d185b41
 keywords: ["Bug Check 0x64 SYMBOLIC_INITIALIZATION_FAILED", "SYMBOLIC_INITIALIZATION_FAILED"]
 ms.author: windowsdriverdev

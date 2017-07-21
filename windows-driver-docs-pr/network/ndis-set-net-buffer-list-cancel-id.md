@@ -1,7 +1,7 @@
 ---
-title: NDIS\_SET\_NET\_BUFFER\_LIST\_CANCEL\_ID macro
+title: NDIS_SET_NET_BUFFER_LIST_CANCEL_ID macro
 author: windows-driver-content
-description: The NDIS\_SET\_NET\_BUFFER\_LIST\_CANCEL\_ID macro marks a NET\_BUFFER\_LIST structure with a cancellation identifier that a driver can later use to cancel the pending transmission of the associated data.
+description: The NDIS_SET_NET_BUFFER_LIST_CANCEL_ID macro marks a NET_BUFFER_LIST structure with a cancellation identifier that a driver can later use to cancel the pending transmission of the associated data.
 ms.assetid: bf68accb-5062-42e7-97e4-c2a3210f60b2
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

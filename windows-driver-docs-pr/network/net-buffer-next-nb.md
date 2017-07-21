@@ -1,7 +1,7 @@
 ---
-title: NET\_BUFFER\_NEXT\_NB macro
+title: NET_BUFFER_NEXT_NB macro
 author: windows-driver-content
-description: NET\_BUFFER\_NEXT\_NB is a macro that NDIS drivers use to get a pointer to the next NET\_BUFFER structure in a linked list of NET\_BUFFER structures.
+description: NET_BUFFER_NEXT_NB is a macro that NDIS drivers use to get a pointer to the next NET_BUFFER structure in a linked list of NET_BUFFER structures.
 ms.assetid: 2c9bf3eb-4aa9-4983-91a8-c78f100b2d5f
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

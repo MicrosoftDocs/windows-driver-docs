@@ -1,7 +1,7 @@
 ---
-title: NDIS\_STATUS\_WDI\_INDICATION\_ASSOCIATION\_RESULT
+title: NDIS_STATUS_WDI_INDICATION_ASSOCIATION_RESULT
 author: windows-driver-content
-description: Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_ASSOCIATION\_RESULT to indicate association results.
+description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_ASSOCIATION_RESULT to indicate association results.
 ms.assetid: dc025aec-30f4-4a78-b449-acc49d13b507
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

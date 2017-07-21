@@ -1,7 +1,7 @@
 ---
-title: NDIS\_STATUS\_WDI\_INDICATION\_ACTION\_FRAME\_RECEIVED
+title: NDIS_STATUS_WDI_INDICATION_ACTION_FRAME_RECEIVED
 author: windows-driver-content
-description: Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_ACTION\_FRAME\_RECEIVED to indicate that an Action Frame has been received.
+description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_ACTION_FRAME_RECEIVED to indicate that an Action Frame has been received.
 ms.assetid: C1F6EB50-C11F-428F-BF51-5C89A59CBF76
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

@@ -1,6 +1,6 @@
 ---
-title: REMOTE\_NDIS\_HALT\_MSG
-description: REMOTE\_NDIS\_HALT\_MSG
+title: REMOTE_NDIS_HALT_MSG
+description: REMOTE_NDIS_HALT_MSG
 ms.assetid: 2e3a15fb-457d-4e81-b5ed-8d77e8e77901
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

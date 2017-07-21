@@ -1,7 +1,7 @@
 ---
-title: NDIS\_LOWER\_IRQL macro
+title: NDIS_LOWER_IRQL macro
 author: windows-driver-content
-description: The NDIS\_LOWER\_IRQL macro sets the IRQL on the current processor to the specified value.
+description: The NDIS_LOWER_IRQL macro sets the IRQL on the current processor to the specified value.
 ms.assetid: fd6b57a1-cd6f-4d30-b2b6-0c9842706855
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

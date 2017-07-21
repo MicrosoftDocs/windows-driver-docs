@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_HOTSPOT\_DOMAIN\_PARTNER
+title: WDI_TLV_HOTSPOT_DOMAIN_PARTNER
 author: windows-driver-content
-description: WDI\_TLV\_HOTSPOT\_DOMAIN\_PARTNER is an unused TLV.
+description: WDI_TLV_HOTSPOT_DOMAIN_PARTNER is an unused TLV.
 ms.assetid: A2613190-2DE8-4B38-80F2-09F91A41656F
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

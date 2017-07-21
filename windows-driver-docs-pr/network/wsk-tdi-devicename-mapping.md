@@ -1,7 +1,7 @@
 ---
-title: WSK\_TDI\_DEVICENAME\_MAPPING
+title: WSK_TDI_DEVICENAME_MAPPING
 author: windows-driver-content
-description: WSK\_TDI\_DEVICENAME\_MAPPING
+description: WSK_TDI_DEVICENAME_MAPPING
 ms.assetid: 7636fa80-3908-4808-8fb8-6227ec6e023b
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

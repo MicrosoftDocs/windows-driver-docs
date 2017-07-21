@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_BAND\_INFO
+title: WDI_TLV_BAND_INFO
 author: windows-driver-content
-description: WDI\_TLV\_BAND\_INFO is a TLV that contains band information.
+description: WDI_TLV_BAND_INFO is a TLV that contains band information.
 ms.assetid: 37F1CE39-5471-489A-8DA2-F058B631B31F
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

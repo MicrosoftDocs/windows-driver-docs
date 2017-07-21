@@ -1,7 +1,7 @@
 ---
-title: IRP\_MJ\_SET\_INFORMATION
+title: IRP_MJ_SET_INFORMATION
 author: windows-driver-content
-description: IRP\_MJ\_SET\_INFORMATION
+description: IRP_MJ_SET_INFORMATION
 ms.assetid: 2a6c837c-85c9-46d8-85d8-d779f22be54e
 keywords:
 - IRP_MJ_SET_INFORMATION

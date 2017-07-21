@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_P2P\_PERSISTENT\_GROUP\_ID
+title: WDI_TLV_P2P_PERSISTENT_GROUP_ID
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_PERSISTENT\_GROUP\_ID is a TLV that contains a Group ID of a Persistent Group to be used for a connection.
+description: WDI_TLV_P2P_PERSISTENT_GROUP_ID is a TLV that contains a Group ID of a Persistent Group to be used for a connection.
 ms.assetid: 0C759D34-3197-4CAB-A691-187BC3457C04
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_P2P\_CONFIG\_METHODS
+title: WDI_TLV_P2P_CONFIG_METHODS
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_CONFIG\_METHODS is a TLV that contains Wi-Fi Direct configuration methods.
+description: WDI_TLV_P2P_CONFIG_METHODS is a TLV that contains Wi-Fi Direct configuration methods.
 ms.assetid: 95F81FBB-CF78-47EC-8DB3-90F639C30865
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

@@ -1,7 +1,7 @@
 ---
-title: NET\_BUFFER\_PROTOCOL\_RESERVED macro
+title: NET_BUFFER_PROTOCOL_RESERVED macro
 author: windows-driver-content
-description: NET\_BUFFER\_PROTOCOL\_RESERVED is a macro that NDIS drivers use to get the ProtocolReserved member of a NET\_BUFFER structure.
+description: NET_BUFFER_PROTOCOL_RESERVED is a macro that NDIS drivers use to get the ProtocolReserved member of a NET_BUFFER structure.
 ms.assetid: ab46cce0-c77f-4e08-9522-6a6674d557e8
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

@@ -1,6 +1,6 @@
 ---
-title: REMOTE\_NDIS\_QUERY\_MSG
-description: REMOTE\_NDIS\_QUERY\_MSG
+title: REMOTE_NDIS_QUERY_MSG
+description: REMOTE_NDIS_QUERY_MSG
 ms.assetid: 36da5e67-384b-4d3c-93e6-5c09a9bc7cf6
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

@@ -1,7 +1,7 @@
 ---
-title: NDIS\_STATUS\_PACKET\_FILTER
+title: NDIS_STATUS_PACKET_FILTER
 author: windows-driver-content
-description: The NDIS\_STATUS\_PACKET\_FILTER status indicates a packet filter change to overlying drivers.
+description: The NDIS_STATUS_PACKET_FILTER status indicates a packet filter change to overlying drivers.
 ms.assetid: 7633772a-cd3d-4030-b97a-9d503341fdeb
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

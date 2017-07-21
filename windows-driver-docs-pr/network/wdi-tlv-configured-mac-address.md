@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_CONFIGURED\_MAC\_ADDRESS
+title: WDI_TLV_CONFIGURED_MAC_ADDRESS
 author: windows-driver-content
-description: WDI\_TLV\_CONFIGURED\_MAC\_ADDRESS is a TLV that contains a custom MAC address.
+description: WDI_TLV_CONFIGURED_MAC_ADDRESS is a TLV that contains a custom MAC address.
 ms.assetid: 2AB4AFF3-70E9-4E4B-885D-2578A5810A38
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

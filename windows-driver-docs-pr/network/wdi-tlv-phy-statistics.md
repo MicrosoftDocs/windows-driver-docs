@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_PHY\_STATISTICS
+title: WDI_TLV_PHY_STATISTICS
 author: windows-driver-content
-description: WDI\_TLV\_PHY\_STATISTICS is a TLV that contains per-PHY statistics for OID\_WDI\_GET\_STATISTICS.
+description: WDI_TLV_PHY_STATISTICS is a TLV that contains per-PHY statistics for OID_WDI_GET_STATISTICS.
 ms.assetid: 2F27FF4E-54AC-4518-AEB0-3518FBC8BE0F
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

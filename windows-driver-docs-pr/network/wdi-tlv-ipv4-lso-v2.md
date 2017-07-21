@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_IPV4\_LSO\_V2 (0xD3)
+title: WDI_TLV_IPV4_LSO_V2 (0xD3)
 author: windows-driver-content
-description: WDI\_TLV\_IPV4\_LSO\_V2 is a TLV that contains Large Send Offload V2 parameters for IPv4.
+description: WDI_TLV_IPV4_LSO_V2 is a TLV that contains Large Send Offload V2 parameters for IPv4.
 ms.assetid: 912D5F1B-260F-43B3-93F6-3C38E9D7F1E5
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

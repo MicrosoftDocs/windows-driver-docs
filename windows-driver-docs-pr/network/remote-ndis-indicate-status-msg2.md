@@ -1,6 +1,6 @@
 ---
-title: REMOTE\_NDIS\_INDICATE\_STATUS\_MSG
-description: REMOTE\_NDIS\_INDICATE\_STATUS\_MSG
+title: REMOTE_NDIS_INDICATE_STATUS_MSG
+description: REMOTE_NDIS_INDICATE_STATUS_MSG
 ms.assetid: 1858ac41-30d2-4ae0-86ba-ebdf6dc90d5a
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

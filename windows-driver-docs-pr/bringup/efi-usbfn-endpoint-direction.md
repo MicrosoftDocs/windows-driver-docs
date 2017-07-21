@@ -1,7 +1,7 @@
 ---
-title: EFI\_USBFN\_ENDPOINT\_DIRECTION
+title: EFI_USBFN_ENDPOINT_DIRECTION
 author: windows-driver-content
-description: EFI\_USBFN\_ENDPOINT\_DIRECTION
+description: EFI_USBFN_ENDPOINT_DIRECTION
 ms.assetid: 910f7ab5-b4c0-4385-9306-37d863d19bf7
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

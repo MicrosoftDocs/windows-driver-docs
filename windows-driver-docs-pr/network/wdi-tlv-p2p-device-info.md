@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_P2P\_DEVICE\_INFO
+title: WDI_TLV_P2P_DEVICE_INFO
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_DEVICE\_INFO is a TLV that contains Wi-Fi Direct device information.
+description: WDI_TLV_P2P_DEVICE_INFO is a TLV that contains Wi-Fi Direct device information.
 ms.assetid: 6B68F334-4C21-4088-AD47-9EB41F9A1CB8
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 
