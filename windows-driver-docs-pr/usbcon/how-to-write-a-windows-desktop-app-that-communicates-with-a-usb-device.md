@@ -229,7 +229,7 @@ Return value:
     //
     // Enumerate all devices exposing the interface
     //
-    deviceInfo = SetupDiGetClassDevs(&amp;GUID_DEVINTERFACE_USBApplication1,
+    deviceInfo = SetupDiGetClassDevs(&GUID_DEVINTERFACE_USBApplication1,
                                      NULL,
                                      NULL,
                                      DIGCF_PRESENT | DIGCF_DEVICEINTERFACE);
@@ -247,16 +247,16 @@ Return value:
     //
     bResult = SetupDiEnumDeviceInterfaces(deviceInfo,
                                           NULL,
-                                          &amp;GUID_DEVINTERFACE_USBApplication1,
+                                          &GUID_DEVINTERFACE_USBApplication1,
                                           0,
-                                          &amp;interfaceData);
+                                          &interfaceData);
 
     if (FALSE == bResult) {
 
         //
         // We would see this error if no devices were found
         //
-        if (ERROR_NO_MORE_ITEMS == GetLastError() &amp;&amp;
+        if (ERROR_NO_MORE_ITEMS == GetLastError() &&
             NULL != FailureDeviceNotFound) {
 
             *FailureDeviceNotFound = TRUE;
@@ -272,13 +272,13 @@ Return value:
     // We expect to get a failure with insufficient buffer
     //
     bResult = SetupDiGetDeviceInterfaceDetail(deviceInfo,
-                                              &amp;interfaceData,
+                                              &interfaceData,
                                               NULL,
                                               0,
-                                              &amp;requiredLength,
+                                              &requiredLength,
                                               NULL);
 
-    if (FALSE == bResult &amp;&amp; ERROR_INSUFFICIENT_BUFFER != GetLastError()) {
+    if (FALSE == bResult && ERROR_INSUFFICIENT_BUFFER != GetLastError()) {
 
         hr = HRESULT_FROM_WIN32(GetLastError());
         SetupDiDestroyDeviceInfoList(deviceInfo);
@@ -305,10 +305,10 @@ Return value:
     // Get the interface&#39;s path string
     //
     bResult = SetupDiGetDeviceInterfaceDetail(deviceInfo,
-                                              &amp;interfaceData,
+                                              &interfaceData,
                                               detailData,
                                               length,
-                                              &amp;requiredLength,
+                                              &requiredLength,
                                               NULL);
 
     if(FALSE == bResult)
@@ -424,7 +424,7 @@ Return value:
     }
 
     bResult = WinUsb_Initialize(DeviceData->DeviceHandle,
-                                &amp;DeviceData->WinusbHandle);
+                                &DeviceData->WinusbHandle);
 
     if (FALSE == bResult) {
 

@@ -86,7 +86,7 @@ else
     }
     else
     {
-        RtlCopyMemory(&amp;LocalParam, params, sizeof(IOCTL_PARAMETERS));
+        RtlCopyMemory(&LocalParam, params, sizeof(IOCTL_PARAMETERS));
 
         /* Handle the IOCTL here. */
         ...

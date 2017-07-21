@@ -117,17 +117,17 @@ Here is the summary of the sequence in which the client driver retrieves a WDFDE
 
         ...
         
-        WdfDeviceInitSetPnpPowerEventCallbacks(WdfDeviceInit, &amp;wdfPnpPowerCallbacks);
+        WdfDeviceInitSetPnpPowerEventCallbacks(WdfDeviceInit, &wdfPnpPowerCallbacks);
 
-        WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&amp;wdfRequestAttributes, REQUEST_CONTEXT);
-        WdfDeviceInitSetRequestAttributes(WdfDeviceInit, &amp;wdfRequestAttributes);
+        WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&wdfRequestAttributes, REQUEST_CONTEXT);
+        WdfDeviceInitSetRequestAttributes(WdfDeviceInit, &wdfRequestAttributes);
 
 
         // To distinguish I/O sent to GUID_DEVINTERFACE_USB_HOST_CONTROLLER, we will enable
         // enable interface reference strings by calling WdfDeviceInitSetFileObjectConfig
         // with FileObjectClass WdfFileObjectWdfXxx.
 
-        WDF_FILEOBJECT_CONFIG_INIT(&amp;fileConfig,
+        WDF_FILEOBJECT_CONFIG_INIT(&fileConfig,
                                     WDF_NO_EVENT_CALLBACK,
                                     WDF_NO_EVENT_CALLBACK,
                                     WDF_NO_EVENT_CALLBACK // No cleanup callback function
@@ -136,7 +136,7 @@ Here is the summary of the sequence in which the client driver retrieves a WDFDE
         ...
 
         WdfDeviceInitSetFileObjectConfig(WdfDeviceInit,
-                                            &amp;fileConfig,
+                                            &fileConfig,
                                             WDF_NO_OBJECT_ATTRIBUTES);
 
         ...
@@ -147,7 +147,7 @@ Here is the summary of the sequence in which the client driver retrieves a WDFDE
 
         ...
 
-        WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&amp;wdfDeviceAttributes, WDFDEVICE_CONTEXT);
+        WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&wdfDeviceAttributes, WDFDEVICE_CONTEXT);
         wdfDeviceAttributes.EvtCleanupCallback = _ControllerWdfEvtCleanupCallback;
 
 
@@ -159,14 +159,14 @@ Here is the summary of the sequence in which the client driver retrieves a WDFDE
 
         for (instanceNumber = 0; instanceNumber < ULONG_MAX; instanceNumber++) {
 
-            status = RtlUnicodeStringPrintf(&amp;uniDeviceName,
+            status = RtlUnicodeStringPrintf(&uniDeviceName,
                                             L"%ws%d",
                                             BASE_DEVICE_NAME,
                                             instanceNumber);
 
             ...
 
-            status = WdfDeviceInitAssignName(*WdfDeviceInit, &amp;uniDeviceName);
+            status = WdfDeviceInitAssignName(*WdfDeviceInit, &uniDeviceName);
 
             ...
 
@@ -198,45 +198,45 @@ Here is the summary of the sequence in which the client driver retrieves a WDFDE
 
 
         // Create the symbolic link (also for compatibility).
-        status = RtlUnicodeStringPrintf(&amp;uniSymLinkName,
+        status = RtlUnicodeStringPrintf(&uniSymLinkName,
                                         L"%ws%d",
                                         BASE_SYMBOLIC_LINK_NAME,
                                         instanceNumber);
         ...
 
-        status = WdfDeviceCreateSymbolicLink(*WdfDevice, &amp;uniSymLinkName);
+        status = WdfDeviceCreateSymbolicLink(*WdfDevice, &uniSymLinkName);
 
         ...
 
         // Create the device interface.
 
-        RtlInitUnicodeString(&amp;refString,
+        RtlInitUnicodeString(&refString,
                              USB_HOST_DEVINTERFACE_REF_STRING);
 
         status = WdfDeviceCreateDeviceInterface(wdfDevice,
-                                                (LPGUID)&amp;GUID_DEVINTERFACE_USB_HOST_CONTROLLER,
-                                                &amp;refString);
+                                                (LPGUID)&GUID_DEVINTERFACE_USB_HOST_CONTROLLER,
+                                                &refString);
 
         ...
 
-        UDECX_WDF_DEVICE_CONFIG_INIT(&amp;controllerConfig, Controller_EvtUdecxWdfDeviceQueryUsbCapability);
+        UDECX_WDF_DEVICE_CONFIG_INIT(&controllerConfig, Controller_EvtUdecxWdfDeviceQueryUsbCapability);
 
         status = UdecxWdfDeviceAddUsbDeviceEmulation(wdfDevice,
-                                                   &amp;controllerConfig);
+                                                   &controllerConfig);
 
 
         // Create default queue. It only supports USB controller IOCTLs. (USB I/O will come through
         // in separate USB device queues.)
         // Shown later in this topic.   
 
-        WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE(&amp;defaultQueueConfig, WdfIoQueueDispatchSequential);
+        WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE(&defaultQueueConfig, WdfIoQueueDispatchSequential);
         defaultQueueConfig.EvtIoDeviceControl = ControllerEvtIoDeviceControl;
         defaultQueueConfig.PowerManaged = WdfFalse;
 
         status = WdfIoQueueCreate(wdfDevice,
-                                  &amp;defaultQueueConfig,
+                                  &defaultQueueConfig,
                                   WDF_NO_OBJECT_ATTRIBUTES,
-                                  &amp;pControllerContext->DefaultQueue);
+                                  &pControllerContext->DefaultQueue);
 
         ...
 
@@ -333,7 +333,7 @@ Controller_EvtControllerQueryUsbCapability(
     *ResultLength = 0;
 
     if (RtlCompareMemory(CapabilityType,
-                         &amp;GUID_USB_CAPABILITY_CHAINED_MDLS,
+                         &GUID_USB_CAPABILITY_CHAINED_MDLS,
                          sizeof(GUID)) == sizeof(GUID)) {
 
         //
@@ -464,7 +464,7 @@ Usb_Initialize(
 
     // State changed callbacks
 
-    UDECX_USB_DEVICE_CALLBACKS_INIT(&amp;callbacks);
+    UDECX_USB_DEVICE_CALLBACKS_INIT(&callbacks);
 #ifndef SIMPLEENDPOINTS
     callbacks.EvtUsbDeviceDefaultEndpointAdd = UsbDevice_EvtUsbDeviceDefaultEndpointAdd;
     callbacks.EvtUsbDeviceEndpointAdd = UsbDevice_EvtUsbDeviceEndpointAdd;
@@ -474,7 +474,7 @@ Usb_Initialize(
     callbacks.EvtUsbDeviceLinkPowerExit = UsbDevice_EvtUsbDeviceLinkPowerExit;
     callbacks.EvtUsbDeviceSetFunctionSuspendAndWake = UsbDevice_EvtUsbDeviceSetFunctionSuspendAndWake;
 
-    UdecxUsbDeviceInitSetStateChangeCallbacks(usbContext->UdecxUsbDeviceInit, &amp;callbacks);
+    UdecxUsbDeviceInitSetStateChangeCallbacks(usbContext->UdecxUsbDeviceInit, &callbacks);
 
 
     // Set required attributes.
@@ -527,7 +527,7 @@ Usb_Initialize(
     }
 
     status = UdecxUsbDeviceInitAddStringDescriptor(usbContext->UdecxUsbDeviceInit,
-                                                 &amp;g_ManufacturerStringEnUs,
+                                                 &g_ManufacturerStringEnUs,
                                                  g_ManufacturerIndex,
                                                  US_ENGLISH);
 
@@ -536,11 +536,11 @@ Usb_Initialize(
         goto exit;
     }
 
-    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&amp;attributes, UDECX_USBDEVICE_CONTEXT);
+    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&attributes, UDECX_USBDEVICE_CONTEXT);
 
-    status = UdecxUsbDeviceCreate(&amp;usbContext->UdecxUsbDeviceInit,
-                                &amp;attributes,
-                                &amp;usbContext->UdecxUsbDevice);
+    status = UdecxUsbDeviceCreate(&usbContext->UdecxUsbDeviceInit,
+                                &attributes,
+                                &usbContext->UdecxUsbDevice);
 
     if (!NT_SUCCESS(status)) {
 
@@ -560,13 +560,13 @@ Usb_Initialize(
 
 #endif
 
-    UDECX_USB_DEVICE_PLUG_IN_OPTIONS_INIT(&amp;pluginOptions);
+    UDECX_USB_DEVICE_PLUG_IN_OPTIONS_INIT(&pluginOptions);
 #ifdef USB30
     pluginOptions.Usb30PortNumber = 2;
 #else
     pluginOptions.Usb20PortNumber = 1;
 #endif
-    status = UdecxUsbDevicePlugIn(usbContext->UdecxUsbDevice, &amp;pluginOptions);
+    status = UdecxUsbDevicePlugIn(usbContext->UdecxUsbDevice, &pluginOptions);
 
 exit:
 
@@ -651,14 +651,14 @@ UsbCreateControlEndpoint(
     pUsbContext = WdfDeviceGetUsbContext(WdfDevice);
     endpointInit = NULL;
 
-    WDF_IO_QUEUE_CONFIG_INIT(&amp;queueConfig, WdfIoQueueDispatchSequential);
+    WDF_IO_QUEUE_CONFIG_INIT(&queueConfig, WdfIoQueueDispatchSequential);
 
     queueConfig.EvtIoInternalDeviceControl = IoEvtControlUrb;
 
     status = WdfIoQueueCreate (Device,
-                               &amp;queueConfig,
+                               &queueConfig,
                                WDF_NO_OBJECT_ATTRIBUTES,
-                               &amp;controlQueue);
+                               &controlQueue);
 
 
     if (!NT_SUCCESS(status)) {
@@ -676,15 +676,15 @@ UsbCreateControlEndpoint(
 
     UdecxUsbEndpointInitSetEndpointAddress(endpointInit, USB_DEFAULT_ENDPOINT_ADDRESS);
 
-    UDECX_USB_ENDPOINT_CALLBACKS_INIT(&amp;callbacks, UsbEndpointReset);
-    UdecxUsbEndpointInitSetCallbacks(endpointInit, &amp;callbacks);
+    UDECX_USB_ENDPOINT_CALLBACKS_INIT(&callbacks, UsbEndpointReset);
+    UdecxUsbEndpointInitSetCallbacks(endpointInit, &callbacks);
 
     callbacks.EvtUsbEndpointStart = UsbEndpointEvtStart;
     callbacks.EvtUsbEndpointPurge = UsEndpointEvtPurge;
 
-    status = UdecxUsbEndpointCreate(&amp;endpointInit,
+    status = UdecxUsbEndpointCreate(&endpointInit,
         WDF_NO_OBJECT_ATTRIBUTES,
-        &amp;pUsbContext->UdecxUsbControlEndpoint);
+        &pUsbContext->UdecxUsbControlEndpoint);
 
     if (!NT_SUCCESS(status)) {
         goto exit;
@@ -753,14 +753,14 @@ UsbDevice_EvtUsbDeviceDefaultEndpointAdd(
 
     deviceContext = UdecxDeviceGetContext(UdecxUsbDevice);
 
-    WDF_IO_QUEUE_CONFIG_INIT(&amp;queueConfig, WdfIoQueueDispatchSequential);
+    WDF_IO_QUEUE_CONFIG_INIT(&queueConfig, WdfIoQueueDispatchSequential);
 
     queueConfig.EvtIoInternalDeviceControl = IoEvtControlUrb;
 
     status = WdfIoQueueCreate (deviceContext->WdfDevice,
-                               &amp;queueConfig,
+                               &queueConfig,
                                WDF_NO_OBJECT_ATTRIBUTES,
-                               &amp;controlQueue);
+                               &controlQueue);
 
     if (!NT_SUCCESS(status)) {
 
@@ -769,12 +769,12 @@ UsbDevice_EvtUsbDeviceDefaultEndpointAdd(
 
     UdecxUsbEndpointInitSetEndpointAddress(UdecxUsbEndpointInit, USB_DEFAULT_DEVICE_ADDRESS);
 
-    UDECX_USB_ENDPOINT_CALLBACKS_INIT(&amp;callbacks, UsbEndpointReset);
-    UdecxUsbEndpointInitSetCallbacks(UdecxUsbEndpointInit, &amp;callbacks);
+    UDECX_USB_ENDPOINT_CALLBACKS_INIT(&callbacks, UsbEndpointReset);
+    UdecxUsbEndpointInitSetCallbacks(UdecxUsbEndpointInit, &callbacks);
 
     status = UdecxUsbEndpointCreate(UdecxUsbEndpointInit,
         WDF_NO_OBJECT_ATTRIBUTES,
-        &amp;deviceContext->UdecxUsbControlEndpoint);
+        &deviceContext->UdecxUsbControlEndpoint);
 
     if (!NT_SUCCESS(status)) {
         goto exit;

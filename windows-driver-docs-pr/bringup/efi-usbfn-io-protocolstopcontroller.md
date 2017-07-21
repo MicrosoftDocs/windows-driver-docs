@@ -1,7 +1,7 @@
 ---
-title: EFI\_USBFN\_IO\_PROTOCOL.StopController
+title: EFI_USBFN_IO_PROTOCOL.StopController
 author: windows-driver-content
-description: EFI\_USBFN\_IO\_PROTOCOL.StopController
+description: EFI_USBFN_IO_PROTOCOL.StopController
 ms.assetid: 531fd280-bcb1-4b6f-a2fa-9052318171b3
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

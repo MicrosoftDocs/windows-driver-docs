@@ -1,7 +1,7 @@
 ---
-title: WMI WNODE\_XXX Structures
+title: WMI WNODE_XXX Structures
 author: windows-driver-content
-description: WMI WNODE\_XXX Structures
+description: WMI WNODE_XXX Structures
 ms.assetid: 9d059b9a-c129-42ba-8db6-53480003f56e
 keywords: ["WMI WDK kernel , requests", "requests WDK WMI", "IRPs WDK WMI", "WNODE_XXX structures"]
 ms.author: windowsdriverdev

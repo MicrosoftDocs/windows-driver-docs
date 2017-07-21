@@ -26,7 +26,7 @@ Specifically, whenever a driver changes global or file object data, it must use 
 In the following code snippet, a race condition could occur when the driver accesses the global data at **Data.LpcInfo**:
 
 ```
-   PLPC_INFO pLpcInfo = &amp;Data.LpcInfo; //Pointer to global data
+   PLPC_INFO pLpcInfo = &Data.LpcInfo; //Pointer to global data
    ...
    ...
    // This saved pointer may be overwritten by another thread.
@@ -43,7 +43,7 @@ The following example attempts to reallocate a file-specific buffer (**Endpoint-
 ```
    Endpoint = FileObject->FsContext;
 
-    if ( Endpoint->LocalAddress != NULL &amp;&amp;
+    if ( Endpoint->LocalAddress != NULL &&
          Endpoint->LocalAddressLength <
                    ListenEndpoint->LocalAddressLength ) {
 

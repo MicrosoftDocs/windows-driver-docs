@@ -1,6 +1,6 @@
 ---
 title: ndiskd.netrb
-description: The ndiskd.netrb extension displays information about a NET\_RING\_BUFFER structure.
+description: The ndiskd.netrb extension displays information about a NET_RING_BUFFER structure.
 ms.assetid: 2D749E7E-00A5-422B-B785-B8DB3393A74F
 keywords: ["ndiskd.netrb Windows Debugging"]
 ms.author: windowsdriverdev

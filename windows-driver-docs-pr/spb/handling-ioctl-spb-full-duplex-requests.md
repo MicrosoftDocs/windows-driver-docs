@@ -1,5 +1,5 @@
 ---
-title: Handling IOCTL\_SPB\_FULL\_DUPLEX Requests
+title: Handling IOCTL_SPB_FULL_DUPLEX Requests
 author: windows-driver-content
 description: Some buses, such as SPI, enable read and write transfers to simultaneously occur between the bus controller and a device on the bus.
 ms.assetid: B200461F-9F9C-43A7-BA78-0864FD58C64E

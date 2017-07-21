@@ -62,7 +62,7 @@ typedef struct {
 void
 PushXxxEntry(PSINGLE_LIST_ENTRY ListHead, PXXX_ENTRY Entry)
 {
-    PushEntryList(ListHead, &amp;(Entry->SingleListEntry));
+    PushEntryList(ListHead, &(Entry->SingleListEntry));
 }
 
 PXXX_ENTRY

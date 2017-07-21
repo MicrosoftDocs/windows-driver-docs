@@ -45,12 +45,12 @@ UNICODE_STRING ValueName;
 ULONG Value = 109; // This is the value we&#39;re setting the key to.
 NTSTATUS status;
 
-RtlInitUnicodeString(&amp;ValueName, L"Value");
+RtlInitUnicodeString(&ValueName, L"Value");
 
-status = IoOpenDeviceRegistryKey(pDeviceObject, PLUGPLAY_REGKEY_DEVICE, KEY_READ, &amp;handle);
+status = IoOpenDeviceRegistryKey(pDeviceObject, PLUGPLAY_REGKEY_DEVICE, KEY_READ, &handle);
 
 if (NTSUCCESS(status)) {
-  status = ZwSetValueKey(handle, ValueName, 0, REG_DWORD, &amp;Value, sizeof(ULONG));
+  status = ZwSetValueKey(handle, ValueName, 0, REG_DWORD, &Value, sizeof(ULONG));
   if (NTSUCCESS(status) {
     ZwClose(handle);
   } else {

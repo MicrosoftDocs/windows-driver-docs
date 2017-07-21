@@ -1,6 +1,6 @@
 ---
-title: usbkd.hub2\_info\_from\_fdo
-description: The usbkd.hub2\_info\_from\_fdo command displays information about a USB hub.
+title: usbkd.hub2_info_from_fdo
+description: The usbkd.hub2_info_from_fdo command displays information about a USB hub.
 ms.assetid: BB40AEDD-9FDF-43BE-A741-56D06BE2965C
 keywords: ["usbkd.hub2_info_from_fdo Windows Debugging"]
 ms.author: windowsdriverdev

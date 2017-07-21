@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x11A EM\_INITIALIZATION\_FAILURE
-description: The EM\_INITIALIZATION\_FAILURE bug check has a value of 0x0000011A.This bug check appears very infrequently.
+title: Bug Check 0x11A EM_INITIALIZATION_FAILURE
+description: The EM_INITIALIZATION_FAILURE bug check has a value of 0x0000011A.This bug check appears very infrequently.
 ms.assetid: 322789f5-0564-4518-89a6-2c6cc9aa9020
 keywords: ["Bug Check 0x11A EM_INITIALIZATION_FAILURE", "EM_INITIALIZATION_FAILURE"]
 ms.author: windowsdriverdev

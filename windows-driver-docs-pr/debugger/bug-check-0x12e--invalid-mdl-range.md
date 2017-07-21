@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x12E INVALID\_MDL\_RANGE
-description: The INVALID\_MDL\_RANGE bug check has a value of 0x0000012E.
+title: Bug Check 0x12E INVALID_MDL_RANGE
+description: The INVALID_MDL_RANGE bug check has a value of 0x0000012E.
 ms.assetid: 911192DC-17B8-4D75-A96E-2E310B30348F
 keywords: ["Bug Check 0x12E INVALID_MDL_RANGE", "INVALID_MDL_RANGE"]
 ms.author: windowsdriverdev
