@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Returns a WDFCOLLECTION of at least one WDFSTRING object corresponding to the string or strings that are currently assigned to the specified registry value name in the device's software key.
+Retrieves the MultiString-valued registry entry associated with a value name in the specified configuration object.
 
 Syntax
 ------
@@ -42,12 +42,12 @@ A pointer to a **UNICODE_STRING** structure that contains a value name in the de
 A pointer to a [**WDF_OBJECT_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure that contains driver-supplied attributes for the new WDFSTRING objects. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
 *Collection* [in, out]  
-A handle to a driver-supplied collection object.
+A handle to a driver-supplied collection object.  If the method succeeds, contains a WDFSTRING object for each string assigned to *ValueName*.
 
 Return value
 ------------
 
-The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+The method returns STATUS_SUCCESS if the operation succeeds.  If the registry value is NULL, **NetConfigurationQueryMultiString** returns STATUS_OBJECT_NAME_NOT_FOUND.
 
 Remarks
 -------
