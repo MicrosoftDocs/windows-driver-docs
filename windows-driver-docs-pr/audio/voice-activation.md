@@ -246,24 +246,24 @@ Audio is processed in a unique way for voice activation training. The following 
 <td align="left"><strong>Voice Recognition</strong></td>
 </tr>
 <tr class="even">
-<td align="left">Mode</td>
+<td align="left"><strong>Mode</strong></td>
 <td align="left">Raw</td>
-<td align="left">Speech</td>
+<td align="left">Raw or Speech</td>
 </tr>
 <tr class="odd">
-<td align="left">Pin</td>
+<td align="left"><strong>Pin</strong></td>
 <td align="left">Normal</td>
 <td align="left">KWS</td>
 </tr>
 <tr class="even">
-<td align="left">Audio Format</td>
+<td align="left"><strong>Audio Format</strong></td>
 <td align="left">32-bit float (Type = Audio, Subtype = IEEE_FLOAT, Sampling Rate = 16 kHz, bits = 32)</td>
 <td align="left">Managed by OS audio stack</td>
 </tr>
 <tr class="odd">
-<td align="left">Mic</td>
+<td align="left"><strong>Mic</strong></td>
 <td align="left">Mic 0</td>
-<td align="left">All mics in array</td>
+<td align="left">All mics in array, or mono</td>
 </tr>
 </tbody>
 </table>
