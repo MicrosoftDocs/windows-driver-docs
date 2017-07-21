@@ -53,22 +53,22 @@ Status =
   IoRegisterPlugPlayNotification(
     EventCategoryDeviceInterfaceChange,
     0,
-    &amp;GUID_DEVICE_PROCESSOR,
+    &GUID_DEVICE_PROCESSOR,
     DriverObject,
     AsyncProcessorCallback,
     NULL,
-    &amp;ProcessorNotificationEntry
+    &ProcessorNotificationEntry
     );
 
 Status =
   IoRegisterPlugPlayNotification(
     EventCategoryDeviceInterfaceChange,
     0,
-    &amp;GUID_DEVICE_MEMORY,
+    &GUID_DEVICE_MEMORY,
     DriverObject,
     AsyncMemoryCallback,
     NULL,
-    &amp;MemoryNotificationEntry
+    &MemoryNotificationEntry
     );
 ```
 

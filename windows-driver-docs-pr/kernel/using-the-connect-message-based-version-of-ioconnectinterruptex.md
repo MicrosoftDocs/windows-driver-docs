@@ -39,7 +39,7 @@ IO_CONNECT_INTERRUPT_PARAMETERS params;
 // PhysicalDeviceObject is a pointer to the device&#39;s PDO. 
 // ServiceContext is a pointer to driver-specified context for the ISR.
 
-RtlZeroMemory( &amp;params, sizeof(IO_CONNECT_INTERRUPT_PARAMETERS) );
+RtlZeroMemory( &params, sizeof(IO_CONNECT_INTERRUPT_PARAMETERS) );
 params.Version = CONNECT_MESSAGE_BASED;
 params.MessageBased.PhysicalDeviceObject = PhysicalDeviceObject;
 params.MessageBased.MessageServiceRoutine = deviceInterruptMessageService;
@@ -49,7 +49,7 @@ params.MessageBased.SynchronizeIrql = 0;
 params.MessageBased.FloatingSave = FALSE;
 params.MessageBased.FallBackServiceRoutine = deviceInterruptService;
 
-status = IoConnectInterruptEx(&amp;params);
+status = IoConnectInterruptEx(&params);
 
 if (NT_SUCCESS(status)) {
     // We record the type of ISR registered.

@@ -39,15 +39,15 @@ ReadWriteConfigSpace(
     PDEVICE_OBJECT targetObject;
 
     PAGED_CODE();
-    KeInitializeEvent(&amp;event, NotificationEvent, FALSE);
+    KeInitializeEvent(&event, NotificationEvent, FALSE);
     targetObject = IoGetAttachedDeviceReference(DeviceObject);
     irp = IoBuildSynchronousFsdRequest(IRP_MJ_PNP,
                                        targetObject,
                                        NULL,
                                        0,
                                        NULL,
-                                       &amp;event,
-                                       &amp;ioStatusBlock);
+                                       &event,
+                                       &ioStatusBlock);
     if (irp == NULL) {
         status = STATUS_INSUFFICIENT_RESOURCES;
         goto End;
@@ -68,7 +68,7 @@ ReadWriteConfigSpace(
     irp->IoStatus.Status = STATUS_NOT_SUPPORTED;
     status = IoCallDriver(targetObject, irp);
     if (status == STATUS_PENDING) {
-        KeWaitForSingleObject(&amp;event, Executive, KernelMode, FALSE, NULL);
+        KeWaitForSingleObject(&event, Executive, KernelMode, FALSE, NULL);
         status = ioStatusBlock.Status;
     }
 End:
