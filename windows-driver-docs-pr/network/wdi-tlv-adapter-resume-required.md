@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_ADAPTER\_RESUME\_REQUIRED
+title: WDI_TLV_ADAPTER_RESUME_REQUIRED
 author: windows-driver-content
-description: WDI\_TLV\_ADAPTER\_RESUME\_REQUIRED is a TLV that specifies if adapter resume is required.
+description: WDI_TLV_ADAPTER_RESUME_REQUIRED is a TLV that specifies if adapter resume is required.
 ms.assetid: 341B871A-F789-447E-A74C-3274B6B8B14A
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

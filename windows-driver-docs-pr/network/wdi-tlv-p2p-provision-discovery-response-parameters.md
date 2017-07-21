@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_P2P\_PROVISION\_DISCOVERY\_RESPONSE\_PARAMETERS
+title: WDI_TLV_P2P_PROVISION_DISCOVERY_RESPONSE_PARAMETERS
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_PROVISION\_DISCOVERY\_RESPONSE\_PARAMETERS is a TLV that contains provision discovery response parameters.
+description: WDI_TLV_P2P_PROVISION_DISCOVERY_RESPONSE_PARAMETERS is a TLV that contains provision discovery response parameters.
 ms.assetid: 0732C370-108E-4C9A-AF13-2B7D54AEB984
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_CHANNEL\_WIDTH\_LIST
+title: WDI_TLV_CHANNEL_WIDTH_LIST
 author: windows-driver-content
-description: WDI\_TLV\_CHANNEL\_WIDTH\_LIST is a TLV that contains a list of channel widths.
+description: WDI_TLV_CHANNEL_WIDTH_LIST is a TLV that contains a list of channel widths.
 ms.assetid: 9869157D-2E71-4F08-92D0-A4FFA085ACE7
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

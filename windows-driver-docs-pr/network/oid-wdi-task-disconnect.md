@@ -1,7 +1,7 @@
 ---
-title: OID\_WDI\_TASK\_DISCONNECT
+title: OID_WDI_TASK_DISCONNECT
 author: windows-driver-content
-description: OID\_WDI\_TASK\_DISCONNECT is used to terminate a connection with a peer.
+description: OID_WDI_TASK_DISCONNECT is used to terminate a connection with a peer.
 ms.assetid: 03566fbd-5043-4166-bd33-0ed48f85f370
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

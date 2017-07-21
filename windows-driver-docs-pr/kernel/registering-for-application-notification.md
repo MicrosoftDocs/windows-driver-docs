@@ -39,7 +39,7 @@ HDEVNOTIFY MemoryNotifyHandle;
 
 // Initialize the filter for processor event notification
 ZeroMemory(
-  &amp;ProcessorFilter,
+  &ProcessorFilter,
   sizeof(ProcessorFilter)
   );
 ProcessorFilter.dbcc_size =
@@ -54,13 +54,13 @@ ProcessorFilter.dbcc_classguid =
 ProcessorNotifyHandle =
   RegisterDeviceNotification(
     hWnd,
-    &amp;ProcessorFilter,
+    &ProcessorFilter,
     DEVICE_NOTIFY_WINDOW_HANDLE
     );
 
 // Initialize the filter for memory event notification
 ZeroMemory(
-  &amp;MemoryFilter,
+  &MemoryFilter,
   sizeof(MemoryFilter)
   );
 MemoryFilter.dbcc_size =
@@ -75,7 +75,7 @@ MemoryFilter.dbcc_classguid =
 MemoryNotifyHandle =
   RegisterDeviceNotification(
     hWnd,
-    &amp;MemoryFilter,
+    &MemoryFilter,
     DEVICE_NOTIFY_WINDOW_HANDLE
     );
 ```

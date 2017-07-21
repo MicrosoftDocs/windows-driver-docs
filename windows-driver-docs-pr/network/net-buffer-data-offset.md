@@ -1,7 +1,7 @@
 ---
-title: NET\_BUFFER\_DATA\_OFFSET macro
+title: NET_BUFFER_DATA_OFFSET macro
 author: windows-driver-content
-description: NET\_BUFFER\_DATA\_OFFSET is a macro that NDIS drivers use to get the current offset from the beginning of the data space to the start of the used data space in a NET\_BUFFER structure.
+description: NET_BUFFER_DATA_OFFSET is a macro that NDIS drivers use to get the current offset from the beginning of the data space to the start of the used data space in a NET_BUFFER structure.
 ms.assetid: 08c2238e-5583-4c09-b8ee-d40335a33c28
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

@@ -1,7 +1,7 @@
 ---
-title: NDIS\_STATUS\_WWAN\_DEVICE\_CAPS\_EX
+title: NDIS_STATUS_WWAN_DEVICE_CAPS_EX
 author: windows-driver-content
-description: Miniport drivers use the NDIS\_STATUS\_WWAN\_DEVICE\_CAPS\_EX notification to inform the MB service about the completion of a previous OID\_WWAN\_DEVICE\_CAPS\_EX query request.
+description: Miniport drivers use the NDIS_STATUS_WWAN_DEVICE_CAPS_EX notification to inform the MB service about the completion of a previous OID_WWAN_DEVICE_CAPS_EX query request.
 ms.assetid: 7E596CB0-2A08-45E4-9932-5E951B880D62
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

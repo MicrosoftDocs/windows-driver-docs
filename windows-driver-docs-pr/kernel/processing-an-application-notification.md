@@ -109,8 +109,8 @@ OnDeviceChange(
         // Get the current process and system affinity masks
         GetProcessAffinityMask(
           ProcessHandle,
-          &amp;ProcessAffinityMask,
-          &amp;SystemAffinityMask
+          &ProcessAffinityMask,
+          &SystemAffinityMask
           );
 
         // Get a mask of any change to the set of processors
@@ -140,7 +140,7 @@ OnDeviceChange(
                  ))
       {
         // Get the current memory status
-        GlobalMemoryStatusEx(&amp;MemoryStatus);
+        GlobalMemoryStatusEx(&MemoryStatus);
 
         // Note: MemoryStatus.ullTotalPhys contains
         // the amount of physical memory in the
@@ -198,8 +198,8 @@ CAppWnd::OnDeviceChange(
         // Get the current process and system affinity masks
         GetProcessAffinityMask(
           ProcessHandle,
-          &amp;ProcessAffinityMask,
-          &amp;SystemAffinityMask
+          &ProcessAffinityMask,
+          &SystemAffinityMask
           );
 
         // Get a mask of any change to the set of processors
@@ -227,7 +227,7 @@ CAppWnd::OnDeviceChange(
                  ))
       {
         // Get the current memory status
-        GlobalMemoryStatusEx(&amp;MemoryStatus);
+        GlobalMemoryStatusEx(&MemoryStatus);
 
         // Note: MemoryStatus.ullTotalPhys contains
         // the amount of physical memory in the

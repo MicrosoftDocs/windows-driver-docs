@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_DEFAULT\_TX\_KEY\_ID\_PARAMETERS
+title: WDI_TLV_DEFAULT_TX_KEY_ID_PARAMETERS
 author: windows-driver-content
-description: WDI\_TLV\_DEFAULT\_TX\_KEY\_ID\_PARAMETERS is a TLV that contains the default key ID for packet transmission on a port for OID\_WDI\_SET\_DEFAULT\_KEY\_ID.
+description: WDI_TLV_DEFAULT_TX_KEY_ID_PARAMETERS is a TLV that contains the default key ID for packet transmission on a port for OID_WDI_SET_DEFAULT_KEY_ID.
 ms.assetid: 24E7E758-FEED-4D2A-BAA8-6DBC08726FBA
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

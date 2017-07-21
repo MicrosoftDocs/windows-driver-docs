@@ -1,7 +1,7 @@
 ---
-title: NDIS\_STATUS\_MEDIA\_BUSY
+title: NDIS_STATUS_MEDIA_BUSY
 author: windows-driver-content
-description: The NDIS\_STATUS\_MEDIA\_BUSY status indicates that the IRDA media is busy.
+description: The NDIS_STATUS_MEDIA_BUSY status indicates that the IRDA media is busy.
 ms.assetid: 3b38987a-78f1-4036-8d48-c8792d273fdf
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

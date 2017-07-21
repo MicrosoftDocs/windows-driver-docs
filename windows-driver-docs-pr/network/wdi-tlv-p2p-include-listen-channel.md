@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_P2P\_INCLUDE\_LISTEN\_CHANNEL
+title: WDI_TLV_P2P_INCLUDE_LISTEN_CHANNEL
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_INCLUDE\_LISTEN\_CHANNEL is a TLV that specifies whether the probe request should include the Listen Channel attribute during discovery.
+description: WDI_TLV_P2P_INCLUDE_LISTEN_CHANNEL is a TLV that specifies whether the probe request should include the Listen Channel attribute during discovery.
 ms.assetid: 75662669-102A-4186-951C-58D1B36D1686
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

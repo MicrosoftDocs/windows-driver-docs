@@ -1,7 +1,7 @@
 ---
-title: SIO\_WSK\_QUERY\_IDEAL\_SEND\_BACKLOG
+title: SIO_WSK_QUERY_IDEAL_SEND_BACKLOG
 author: windows-driver-content
-description: SIO\_WSK\_QUERY\_IDEAL\_SEND\_BACKLOG
+description: SIO_WSK_QUERY_IDEAL_SEND_BACKLOG
 ms.assetid: 8d05b1dc-9dbf-4726-9eaf-721d1fb8282e
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

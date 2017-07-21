@@ -1,6 +1,6 @@
 ---
-title: REMOTE\_NDIS\_QUERY\_CMPLT
-description: REMOTE\_NDIS\_QUERY\_CMPLT
+title: REMOTE_NDIS_QUERY_CMPLT
+description: REMOTE_NDIS_QUERY_CMPLT
 ms.assetid: a6c04c62-b241-49d8-98ca-3877eb378247
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

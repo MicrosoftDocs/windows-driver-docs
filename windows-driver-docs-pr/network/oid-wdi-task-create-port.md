@@ -1,7 +1,7 @@
 ---
-title: OID\_WDI\_TASK\_CREATE\_PORT
+title: OID_WDI_TASK_CREATE_PORT
 author: windows-driver-content
-description: OID\_WDI\_TASK\_CREATE\_PORT requests that a new 802.11 entity is created by the IHV component.
+description: OID_WDI_TASK_CREATE_PORT requests that a new 802.11 entity is created by the IHV component.
 ms.assetid: e1a03a97-608f-42af-bd39-37a7eb9ad5b7
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

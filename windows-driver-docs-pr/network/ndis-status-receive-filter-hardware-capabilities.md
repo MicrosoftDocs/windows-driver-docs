@@ -1,7 +1,7 @@
 ---
-title: NDIS\_STATUS\_RECEIVE\_FILTER\_HARDWARE\_CAPABILITIES
+title: NDIS_STATUS_RECEIVE_FILTER_HARDWARE_CAPABILITIES
 author: windows-driver-content
-description: The miniport driver issues an NDIS\_STATUS\_RECEIVE\_FILTER\_HARDWARE\_CAPABILITIES status indication when its hardware receive filtering capabilities change.
+description: The miniport driver issues an NDIS_STATUS_RECEIVE_FILTER_HARDWARE_CAPABILITIES status indication when its hardware receive filtering capabilities change.
 ms.assetid: 12F7A736-D85A-4BB6-89E6-55195B76C29F
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

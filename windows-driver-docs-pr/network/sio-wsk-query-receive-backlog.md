@@ -1,7 +1,7 @@
 ---
-title: SIO\_WSK\_QUERY\_RECEIVE\_BACKLOG
+title: SIO_WSK_QUERY_RECEIVE_BACKLOG
 author: windows-driver-content
-description: SIO\_WSK\_QUERY\_RECEIVE\_BACKLOG
+description: SIO_WSK_QUERY_RECEIVE_BACKLOG
 ms.assetid: 5924c6ae-fa9d-4a8c-acbe-65ca0664ad74
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

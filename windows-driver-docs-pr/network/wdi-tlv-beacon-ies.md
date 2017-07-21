@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_BEACON\_IES
+title: WDI_TLV_BEACON_IES
 author: windows-driver-content
-description: WDI\_TLV\_BEACON\_IES is a TLV that contains beacon IEs from an association.
+description: WDI_TLV_BEACON_IES is a TLV that contains beacon IEs from an association.
 ms.assetid: A3E70310-2130-4248-B730-2DEF41C25993
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

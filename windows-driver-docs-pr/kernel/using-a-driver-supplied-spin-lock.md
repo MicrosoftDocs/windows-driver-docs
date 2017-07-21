@@ -42,8 +42,8 @@ typedef struct {
 
 VOID InitDeviceContext(DEVICE_CONTEXT *deviceContext)
 {
-    InitializeListHead(&amp;deviceContext->irpQueue);
-    KeInitializeSpinLock(&amp;deviceContext->irpQueueSpinLock);
+    InitializeListHead(&deviceContext->irpQueue);
+    KeInitializeSpinLock(&deviceContext->irpQueueSpinLock);
 }
 ```
 
@@ -56,14 +56,14 @@ NTSTATUS QueueIrp(DEVICE_CONTEXT *deviceContext, PIRP Irp)
    KIRQL  oldIrql;
    NTSTATUS  status;
 
-   KeAcquireSpinLock(&amp;deviceContext->irpQueueSpinLock, &amp;oldIrql);
+   KeAcquireSpinLock(&deviceContext->irpQueueSpinLock, &oldIrql);
 
    // Queue the IRP and call IoMarkIrpPending to indicate
    // that the IRP may complete on a different thread.
    // N.B. It is okay to call these inside the spin lock
    // because they are macros, not functions.
    IoMarkIrpPending(Irp);
-   InsertTailList(&amp;deviceContext->irpQueue, &amp;Irp->Tail.Overlay.ListEntry);
+   InsertTailList(&deviceContext->irpQueue, &Irp->Tail.Overlay.ListEntry);
 
    // Must set a Cancel routine before checking the Cancel flag.
    oldCancelRoutine = IoSetCancelRoutine(Irp, IrpCancelRoutine);
@@ -75,9 +75,9 @@ NTSTATUS QueueIrp(DEVICE_CONTEXT *deviceContext, PIRP Irp)
       if (oldCancelRoutine) {
          // The cancel routine was NOT called.  
          // So dequeue the IRP now and complete it after releasing the spin lock.
-         RemoveEntryList(&amp;Irp->Tail.Overlay.ListEntry);
+         RemoveEntryList(&Irp->Tail.Overlay.ListEntry);
          // Drop the lock before completing the request.
-         KeReleaseSpinLock(&amp;deviceContext->irpQueueSpinLock, oldIrql);
+         KeReleaseSpinLock(&deviceContext->irpQueueSpinLock, oldIrql);
          Irp->IoStatus.Status = STATUS_CANCELLED; 
          Irp->IoStatus.Information = 0;
          IoCompleteRequest(Irp, IO_NO_INCREMENT);
@@ -92,7 +92,7 @@ NTSTATUS QueueIrp(DEVICE_CONTEXT *deviceContext, PIRP Irp)
       }
    }
 
-   KeReleaseSpinLock(&amp;deviceContext->irpQueueSpinLock, oldIrql);
+   KeReleaseSpinLock(&deviceContext->irpQueueSpinLock, oldIrql);
 
    // Because the driver called IoMarkIrpPending while it held the IRP,
    // it must return STATUS_PENDING from its dispatch routine.
@@ -118,11 +118,11 @@ PIRP DequeueIrp(DEVICE_CONTEXT *deviceContext)
    KIRQL oldIrql;
    PIRP nextIrp = NULL;
 
-   KeAcquireSpinLock(&amp;deviceContext->irpQueueSpinLock, &amp;oldIrql);
+   KeAcquireSpinLock(&deviceContext->irpQueueSpinLock, &oldIrql);
 
-   while (!nextIrp &amp;&amp; !IsListEmpty(&amp;deviceContext->irpQueue)) {
+   while (!nextIrp && !IsListEmpty(&deviceContext->irpQueue)) {
       PDRIVER_CANCEL oldCancelRoutine;
-      PLIST_ENTRY listEntry = RemoveHeadList(&amp;deviceContext->irpQueue);
+      PLIST_ENTRY listEntry = RemoveHeadList(&deviceContext->irpQueue);
 
       // Get the next IRP off the queue.
       nextIrp = CONTAINING_RECORD(listEntry, IRP, Tail.Overlay.ListEntry);
@@ -144,12 +144,12 @@ PIRP DequeueIrp(DEVICE_CONTEXT *deviceContext)
          // Also, the Cancel routine will try to dequeue the IRP, so make 
          // the IRP&#39;s ListEntry point to itself.
          ASSERT(nextIrp->Cancel);
-         InitializeListHead(&amp;nextIrp->Tail.Overlay.ListEntry);
+         InitializeListHead(&nextIrp->Tail.Overlay.ListEntry);
          nextIrp = NULL;
       }
    }
 
-   KeReleaseSpinLock(&amp;deviceContext->irpQueueSpinLock, oldIrql);
+   KeReleaseSpinLock(&deviceContext->irpQueueSpinLock, oldIrql);
 
    return nextIrp;
 }
@@ -176,11 +176,11 @@ VOID IrpCancelRoutine(IN PDEVICE_OBJECT DeviceObject, IN PIRP Irp)
    // the dequeue is safe and only the cancel routine will complete the IRP. Hold the spin lock for the IRP
    // queue while we do this.
 
-   KeAcquireSpinLock(&amp;deviceContext->irpQueueSpinLock, &amp;oldIrql);
+   KeAcquireSpinLock(&deviceContext->irpQueueSpinLock, &oldIrql);
 
-   RemoveEntryList(&amp;Irp->Tail.Overlay.ListEntry);
+   RemoveEntryList(&Irp->Tail.Overlay.ListEntry);
 
-   KeReleaseSpinLock(&amp;deviceContext->irpQueueSpinLock, oldIrql);
+   KeReleaseSpinLock(&deviceContext->irpQueueSpinLock, oldIrql);
 
    // Complete the IRP. This is a call outside the driver, so all spin locks must be released by this point.
    Irp->IoStatus.Status = STATUS_CANCELLED;

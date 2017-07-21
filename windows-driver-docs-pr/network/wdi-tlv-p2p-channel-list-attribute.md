@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_P2P\_CHANNEL\_LIST\_ATTRIBUTE
+title: WDI_TLV_P2P_CHANNEL_LIST_ATTRIBUTE
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_CHANNEL\_LIST\_ATTRIBUTE is a TLV that contains channel list attributes.
+description: WDI_TLV_P2P_CHANNEL_LIST_ATTRIBUTE is a TLV that contains channel list attributes.
 ms.assetid: 2378AC49-1530-45E2-A7C8-FEAF5E6CDBE5
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

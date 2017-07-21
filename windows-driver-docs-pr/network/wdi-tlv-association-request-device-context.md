@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_ASSOCIATION\_REQUEST\_DEVICE\_CONTEXT
+title: WDI_TLV_ASSOCIATION_REQUEST_DEVICE_CONTEXT
 author: windows-driver-content
-description: WDI\_TLV\_ASSOCIATION\_REQUEST\_DEVICE\_CONTEXT is a TLV that contains vendor-specific information that is passed down to the port if the host decides to send a response to a incoming association request.
+description: WDI_TLV_ASSOCIATION_REQUEST_DEVICE_CONTEXT is a TLV that contains vendor-specific information that is passed down to the port if the host decides to send a response to a incoming association request.
 ms.assetid: 5C684769-77A0-446D-81F6-A90E54806A1F
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

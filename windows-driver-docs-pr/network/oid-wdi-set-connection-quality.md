@@ -1,7 +1,7 @@
 ---
-title: OID\_WDI\_SET\_CONNECTION\_QUALITY
+title: OID_WDI_SET_CONNECTION_QUALITY
 author: windows-driver-content
-description: OID\_WDI\_SET\_CONNECTION\_QUALITY provides a hint to the IHV component to enforce connection quality for a given virtualized port. This hint allows the port to optimize channel usage in different scenarios.
+description: OID_WDI_SET_CONNECTION_QUALITY provides a hint to the IHV component to enforce connection quality for a given virtualized port. This hint allows the port to optimize channel usage in different scenarios.
 ms.assetid: 753e25c5-44b5-4afa-8769-49f693472aa9
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_P2P\_SEND\_ACTION\_FRAME\_RESULT
+title: WDI_TLV_P2P_SEND_ACTION_FRAME_RESULT
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_SEND\_ACTION\_FRAME\_RESULT is a TLV that contains information about an Action Frame that was sent to a peer.
+description: WDI_TLV_P2P_SEND_ACTION_FRAME_RESULT is a TLV that contains information about an Action Frame that was sent to a peer.
 ms.assetid: DA469DF2-4C59-495C-A4B5-DC7B3B157566
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

@@ -1,7 +1,7 @@
 ---
-title: WSK\_SET\_STATIC\_EVENT\_CALLBACKS
+title: WSK_SET_STATIC_EVENT_CALLBACKS
 author: windows-driver-content
-description: WSK\_SET\_STATIC\_EVENT\_CALLBACKS
+description: WSK_SET_STATIC_EVENT_CALLBACKS
 ms.assetid: fa95bc7d-c7b2-4cca-a419-ef5eb2520976
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

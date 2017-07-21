@@ -1,6 +1,6 @@
 ---
-title: NET\_BUFFER Data Packaging
-description: NET\_BUFFER Data Packaging
+title: NET_BUFFER Data Packaging
+description: NET_BUFFER Data Packaging
 ms.assetid: f0d539ab-c6ed-4cd9-9891-ef4235016d50
 keywords:
 - NDIS WDK , sending and receiving data

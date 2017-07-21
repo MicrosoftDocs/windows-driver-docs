@@ -126,7 +126,7 @@ HRESULT
 
        result = WinUsb_QueryInterfaceSettings(DeviceData->WinusbHandle,
               0,
-              &amp;usbInterface);
+              &usbInterface);
 
        if (result == FALSE)
        {
@@ -142,7 +142,7 @@ HRESULT
                      DeviceData->WinusbHandle,
                      1,
                      (UCHAR) i,
-                     &amp;pipe);
+                     &pipe);
 
               if (result == FALSE)
               {
@@ -152,7 +152,7 @@ HRESULT
                      return hr;
               }
 
-              if ((pipe.PipeType == UsbdPipeTypeIsochronous) &amp;&amp; (!(pipe.PipeId == 0x80)))
+              if ((pipe.PipeType == UsbdPipeTypeIsochronous) && (!(pipe.PipeId == 0x80)))
               {
                      DeviceData->IsochOutPipe = pipe.PipeId;
               }
@@ -210,7 +210,7 @@ typedef struct _DEVICE_DATA {
 
 ...
 
-if ((pipe.PipeType == UsbdPipeTypeIsochronous) &amp;&amp; (!(pipe.PipeId == 0x80)))
+if ((pipe.PipeType == UsbdPipeTypeIsochronous) && (!(pipe.PipeId == 0x80)))
 {
        DeviceData->IsochOutPipe = pipe.PipeId;
 
@@ -346,7 +346,7 @@ VOID
         DeviceData->IsochOutPipe,
         writeBuffer,
         totalTransferSize,
-        &amp;isochWriteBufferHandle);
+        &isochWriteBufferHandle);
 
     if (!result)
     {
@@ -356,8 +356,8 @@ VOID
 
     result = WinUsb_GetCurrentFrameNumber(
                 DeviceData->WinusbHandle,
-                &amp;frameNumber,
-                &amp;timeStamp);
+                &frameNumber,
+                &timeStamp);
 
     if (!result)
     {
@@ -377,7 +377,7 @@ VOID
                 DeviceData->IsochOutTransferSize * i,
                 DeviceData->IsochOutTransferSize,
                 (i == 0) ? FALSE : TRUE,
-                &amp;overlapped[i]);
+                &overlapped[i]);
 
             printf(_T("Write transfer sent by using ASAP flag.\n"));
         }
@@ -390,8 +390,8 @@ VOID
                 isochWriteBufferHandle,
                 i * DeviceData->IsochOutTransferSize,
                 DeviceData->IsochOutTransferSize,
-                &amp;startFrame,
-                &amp;overlapped[i]);
+                &startFrame,
+                &overlapped[i]);
 
             printf("Next transfer frame %d.\n", startFrame);
 
@@ -412,8 +412,8 @@ VOID
     {
         result = WinUsb_GetOverlappedResult(
             DeviceData->WinusbHandle,
-            &amp;overlapped[i],
-            &amp;numBytes,
+            &overlapped[i],
+            &numBytes,
             TRUE);
 
         if (!result)
@@ -554,7 +554,7 @@ VOID
         DeviceData->IsochInPipe,
         readBuffer,
         DeviceData->IsochInTransferSize * ISOCH_TRANSFER_COUNT,
-        &amp;isochReadBufferHandle);
+        &isochReadBufferHandle);
 
     if (!result)
     {
@@ -564,8 +564,8 @@ VOID
             
     result = WinUsb_GetCurrentFrameNumber(
                 DeviceData->WinusbHandle,
-                &amp;frameNumber,
-                &amp;timeStamp);
+                &frameNumber,
+                &timeStamp);
 
     if (!result)
     {
@@ -585,8 +585,8 @@ VOID
                 DeviceData->IsochInTransferSize,
                 (i == 0) ? FALSE : TRUE,
                 DeviceData->IsochInPacketCount,
-                &amp;isochPackets[i * DeviceData->IsochInPacketCount],
-                &amp;overlapped[i]);
+                &isochPackets[i * DeviceData->IsochInPacketCount],
+                &overlapped[i]);
 
             printf(_T("Read transfer sent by using ASAP flag.\n"));
 
@@ -600,10 +600,10 @@ VOID
                 isochReadBufferHandle,
                 DeviceData->IsochInTransferSize * i,
                 DeviceData->IsochInTransferSize,
-                &amp;startFrame,
+                &startFrame,
                 DeviceData->IsochInPacketCount,
-                &amp;isochPackets[i * DeviceData->IsochInPacketCount],
-                &amp;overlapped[i]);
+                &isochPackets[i * DeviceData->IsochInPacketCount],
+                &overlapped[i]);
 
             printf("Next transfer frame %d.\n", startFrame);
 
@@ -624,8 +624,8 @@ VOID
     {
         result = WinUsb_GetOverlappedResult(
             DeviceData->WinusbHandle,
-            &amp;overlapped[i],
-            &amp;numBytes,
+            &overlapped[i],
+            &numBytes,
             TRUE);
 
         if (!result)

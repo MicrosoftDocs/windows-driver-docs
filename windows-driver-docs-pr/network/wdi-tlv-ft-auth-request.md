@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_FT\_AUTH\_REQUEST
+title: WDI_TLV_FT_AUTH_REQUEST
 author: windows-driver-content
-description: WDI\_TLV\_FT\_AUTH\_REQUEST is a TLV that contains the Fast Transition authentication request byte blob.
+description: WDI_TLV_FT_AUTH_REQUEST is a TLV that contains the Fast Transition authentication request byte blob.
 ms.assetid: 4107314E-3C0A-4610-A4FB-BCBDBD1A8E65
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

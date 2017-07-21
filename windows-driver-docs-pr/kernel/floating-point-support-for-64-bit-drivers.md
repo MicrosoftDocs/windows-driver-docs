@@ -105,22 +105,22 @@ DriverEntry (
     //
 
     EnabledFeatures = RtlGetEnabledExtendedFeatures(-1);
-    if ((EnabledFeatures &amp; XSTATE_MASK_GSSE) == 0) {
+    if ((EnabledFeatures & XSTATE_MASK_GSSE) == 0) {
         Status = STATUS_FAILED_DRIVER_ENTRY;
         goto exit;
     }
 
-    Status = KeSaveExtendedProcessorState(XSTATE_MASK_GSSE, &amp;SaveState);
+    Status = KeSaveExtendedProcessorState(XSTATE_MASK_GSSE, &SaveState);
 
     if (!NT_SUCCESS(Status)) {
         goto exit;
     }
 
     __try {
-        SetYmmValues(&amp;RegisterValues);
+        SetYmmValues(&RegisterValues);
     }
     __finally {
-        KeRestoreExtendedProcessorState(&amp;SaveState);
+        KeRestoreExtendedProcessorState(&SaveState);
     }
 
 exit:

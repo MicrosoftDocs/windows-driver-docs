@@ -100,17 +100,17 @@ DriverEntry(
     // Register a cleanup callback so that we can call WPP_CLEANUP when
     // the framework driver object is deleted during driver unload.
     //
-    WDF_OBJECT_ATTRIBUTES_INIT(&amp;attributes);
+    WDF_OBJECT_ATTRIBUTES_INIT(&attributes);
     attributes.EvtCleanupCallback = MyUSBDriver_EvtDriverContextCleanup;
 
-    WDF_DRIVER_CONFIG_INIT(&amp;config,
+    WDF_DRIVER_CONFIG_INIT(&config,
                            MyUSBDriver_EvtDeviceAdd
                            );
 
     status = WdfDriverCreate(DriverObject,
                              RegistryPath,
-                             &amp;attributes,
-                             &amp;config,
+                             &attributes,
+                             &config,
                              WDF_NO_HANDLE
                              );
 
@@ -228,13 +228,13 @@ MyUSBDriver_CreateDevice(
 
     PAGED_CODE();
 
-    WDF_PNPPOWER_EVENT_CALLBACKS_INIT(&amp;pnpPowerCallbacks);
+    WDF_PNPPOWER_EVENT_CALLBACKS_INIT(&pnpPowerCallbacks);
     pnpPowerCallbacks.EvtDevicePrepareHardware = MyUSBDriver_EvtDevicePrepareHardware;
-    WdfDeviceInitSetPnpPowerEventCallbacks(DeviceInit, &amp;pnpPowerCallbacks);
+    WdfDeviceInitSetPnpPowerEventCallbacks(DeviceInit, &pnpPowerCallbacks);
 
-    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&amp;deviceAttributes, DEVICE_CONTEXT);
+    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&deviceAttributes, DEVICE_CONTEXT);
 
-    status = WdfDeviceCreate(&amp;DeviceInit, &amp;deviceAttributes, &amp;device);
+    status = WdfDeviceCreate(&DeviceInit, &deviceAttributes, &device);
 
     if (NT_SUCCESS(status)) {
         //
@@ -253,7 +253,7 @@ MyUSBDriver_CreateDevice(
         //
         status = WdfDeviceCreateDeviceInterface(
             device,
-            &amp;GUID_DEVINTERFACE_MyUSBDriver_,
+            &GUID_DEVINTERFACE_MyUSBDriver_,
             NULL // ReferenceString
             );
 
@@ -389,14 +389,14 @@ MyUSBDriver_EvtDevicePrepareHardware(
         // It also implies that we conform to rules mentioned in MSDN
         // documentation for WdfUsbTargetDeviceCreateWithParameters.
         //
-        WDF_USB_DEVICE_CREATE_CONFIG_INIT(&amp;createParams,
+        WDF_USB_DEVICE_CREATE_CONFIG_INIT(&createParams,
                                          USBD_CLIENT_CONTRACT_VERSION_602
                                          );
 
         status = WdfUsbTargetDeviceCreateWithParameters(Device,
-                                                    &amp;createParams,
+                                                    &createParams,
                                                     WDF_NO_OBJECT_ATTRIBUTES,
-                                                    &amp;pDeviceContext->UsbDevice
+                                                    &pDeviceContext->UsbDevice
                                                     );
 
         if (!NT_SUCCESS(status)) {
@@ -409,13 +409,13 @@ MyUSBDriver_EvtDevicePrepareHardware(
         // Select the first configuration of the device, using the first alternate
         // setting of each interface
         //
-        WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_MULTIPLE_INTERFACES(&amp;configParams,
+        WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_MULTIPLE_INTERFACES(&configParams,
                                                                      0,
                                                                      NULL
                                                                      );
         status = WdfUsbTargetDeviceSelectConfig(pDeviceContext->UsbDevice,
                                                 WDF_NO_OBJECT_ATTRIBUTES,
-                                                &amp;configParams
+                                                &configParams
                                                 );
 
         if (!NT_SUCCESS(status)) {
@@ -538,7 +538,7 @@ MyUSBDriver_QueueInitialize(
     // other queues get dispatched here.
     //
     WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE(
-         &amp;queueConfig,
+         &queueConfig,
         WdfIoQueueDispatchParallel
         );
 
@@ -546,9 +546,9 @@ MyUSBDriver_QueueInitialize(
 
     status = WdfIoQueueCreate(
                  Device,
-                 &amp;queueConfig,
+                 &queueConfig,
                  WDF_NO_OBJECT_ATTRIBUTES,
-                 &amp;queue
+                 &queue
                  );
 
     if( !NT_SUCCESS(status) ) {

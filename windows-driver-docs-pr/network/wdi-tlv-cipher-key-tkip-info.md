@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_CIPHER\_KEY\_TKIP\_INFO
+title: WDI_TLV_CIPHER_KEY_TKIP_INFO
 author: windows-driver-content
-description: WDI\_TLV\_CIPHER\_KEY\_TKIP\_INFO is a TLV that contains TKIP information.
+description: WDI_TLV_CIPHER_KEY_TKIP_INFO is a TLV that contains TKIP information.
 ms.assetid: 330A93F5-43E7-4A4A-A6BD-EF276D6F09A1
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

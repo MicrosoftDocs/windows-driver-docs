@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_P2P\_ADVERTISEMENT\_ID
+title: WDI_TLV_P2P_ADVERTISEMENT_ID
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_ADVERTISEMENT\_ID is a TLV that contains an ID that uniquely identifies a service instance.
+description: WDI_TLV_P2P_ADVERTISEMENT_ID is a TLV that contains an ID that uniquely identifies a service instance.
 ms.assetid: 04F8200C-54A3-4B2F-9EDF-15E2BBB19201
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

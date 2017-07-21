@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x5 INVALID\_PROCESS\_ATTACH\_ATTEMPT
-description: The INVALID\_PROCESS\_ATTACH\_ATTEMPT bug check has a value of 0x00000005.
+title: Bug Check 0x5 INVALID_PROCESS_ATTACH_ATTEMPT
+description: The INVALID_PROCESS_ATTACH_ATTEMPT bug check has a value of 0x00000005.
 ms.assetid: 72efb88f-1bf7-4552-b44e-4ecb04754b7d
 keywords: ["Bug Check 0x5 INVALID_PROCESS_ATTACH_ATTEMPT", "INVALID_PROCESS_ATTACH_ATTEMPT"]
 ms.author: windowsdriverdev

@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_ALLOWED\_BSSIDS\_LIST
+title: WDI_TLV_ALLOWED_BSSIDS_LIST
 author: windows-driver-content
-description: WDI\_TLV\_ALLOWED\_BSSIDS\_LIST is a TLV that contains a list of BSSIDs that are allowed to be used for association.
+description: WDI_TLV_ALLOWED_BSSIDS_LIST is a TLV that contains a list of BSSIDs that are allowed to be used for association.
 ms.assetid: A53C5EB2-1D77-4380-86C7-291D2BF4FCFC
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

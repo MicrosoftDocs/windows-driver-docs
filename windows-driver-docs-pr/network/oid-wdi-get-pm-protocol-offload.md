@@ -1,7 +1,7 @@
 ---
-title: OID\_WDI\_GET\_PM\_PROTOCOL\_OFFLOAD
+title: OID_WDI_GET_PM_PROTOCOL_OFFLOAD
 author: windows-driver-content
-description: OID\_WDI\_GET\_PM\_PROTOCOL\_OFFLOAD requests a list of protocol offloads for power management.
+description: OID_WDI_GET_PM_PROTOCOL_OFFLOAD requests a list of protocol offloads for power management.
 ms.assetid: ed7604fa-666c-4aa1-9041-ed56d282c29b
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

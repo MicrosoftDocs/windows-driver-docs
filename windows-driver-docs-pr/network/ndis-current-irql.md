@@ -1,7 +1,7 @@
 ---
-title: NDIS\_CURRENT\_IRQL macro
+title: NDIS_CURRENT_IRQL macro
 author: windows-driver-content
-description: The NDIS\_CURRENT\_IRQL macro returns the current interrupt request level (IRQL).
+description: The NDIS_CURRENT_IRQL macro returns the current interrupt request level (IRQL).
 ms.assetid: 002c751c-6106-47bc-ab11-610fbcd84ffa
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

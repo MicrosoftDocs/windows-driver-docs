@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_P2P\_LISTEN\_STATE
+title: WDI_TLV_P2P_LISTEN_STATE
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_LISTEN\_STATE is a TLV that contains a Wi-Fi Direct listen state.
+description: WDI_TLV_P2P_LISTEN_STATE is a TLV that contains a Wi-Fi Direct listen state.
 ms.assetid: 66BDF96A-2B9D-4188-AFC8-465786924B47
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

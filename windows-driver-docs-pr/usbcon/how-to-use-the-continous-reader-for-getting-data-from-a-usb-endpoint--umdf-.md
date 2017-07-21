@@ -92,7 +92,7 @@ Instructions
         pipeContext = GetPipeContext (Pipe);
 
         WDF_USB_CONTINUOUS_READER_CONFIG_INIT(  
-            &amp;readerConfig,  
+            &readerConfig,  
             FX3EvtReadComplete,  
             pDeviceContext,  
             pipeContext->MaxPacketSize);  
@@ -102,7 +102,7 @@ Instructions
 
         status = WdfUsbTargetPipeConfigContinuousReader(  
             Pipe,  
-            &amp;readerConfig);  
+            &readerConfig);  
 
         if (!NT_SUCCESS (status))
         {
@@ -304,21 +304,21 @@ HRESULT CDeviceCallback::ConfigureContinuousReader (IWDFUsbTargetPipe* pFxPipe)
     // Set up the continuous reader to read from the target pipe object.
 
     //Get a pointer to the target pipe2 object.
-    hr = pFxPipe->QueryInterface(IID_PPV_ARGS(&amp;pFxUsbPipe2));
+    hr = pFxPipe->QueryInterface(IID_PPV_ARGS(&pFxUsbPipe2));
     if (FAILED(hr))
     {   
         goto ConfigureContinuousReaderExit;
     }
 
     //Get a pointer to the completion callback.
-    hr = QueryInterface(IID_PPV_ARGS(&amp;pOnCompletionCallback));
+    hr = QueryInterface(IID_PPV_ARGS(&pOnCompletionCallback));
     if (FAILED(hr))
     {   
         goto ConfigureContinuousReaderExit;
     }
 
     //Get a pointer to the failure callback.
-    hr = QueryInterface(IID_PPV_ARGS(&amp;pOnFailureCallback));
+    hr = QueryInterface(IID_PPV_ARGS(&pOnFailureCallback));
     if (FAILED(hr))
     {   
         goto ConfigureContinuousReaderExit;
@@ -419,15 +419,15 @@ The following example code shows how to get a pointer to the IWDFIoTargetStateMa
 
     for (UCHAR index = 0; index < NumEndpoints; index++)
     {
-        hr = pFxInterface->RetrieveUsbPipeObject(index, &amp;pFxPipe);
+        hr = pFxInterface->RetrieveUsbPipeObject(index, &pFxPipe);
 
-        if (SUCCEEDED (hr) &amp;&amp; pFxPipe)
+        if (SUCCEEDED (hr) && pFxPipe)
         {
-            if ((pFxPipe->IsInEndPoint()) &amp;&amp; (pFxPipe->GetType()==UsbdPipeTypeInterrupt))
+            if ((pFxPipe->IsInEndPoint()) && (pFxPipe->GetType()==UsbdPipeTypeInterrupt))
             {
                 //Pipe is for an interrupt IN endpoint.
 
-                hr = pFxPipe->QueryInterface(IID_PPV_ARGS(&amp;m_pFxIoTargetInterruptPipeStateMgmt));
+                hr = pFxPipe->QueryInterface(IID_PPV_ARGS(&m_pFxIoTargetInterruptPipeStateMgmt));
 
                 if (m_pFxIoTargetInterruptPipeStateMgmt)
                 {               
@@ -616,7 +616,7 @@ The following example code shows how to get data from the buffer returned by [**
 
     if (pBuff)
     {
-        CopyMemory(&amp;CurrentData, pBuff, sizeof(CurrentData));
+        CopyMemory(&CurrentData, pBuff, sizeof(CurrentData));
         sprintf_s(data, 20, "%d\n", CurrentData);
         OutputDebugString(data);
         pBuff = NULL;

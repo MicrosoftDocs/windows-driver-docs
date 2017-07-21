@@ -1,6 +1,6 @@
 ---
-title: usb3kd.device\_info\_from\_pdo
-description: The usb3kd.device\_info\_from\_pdo command displays information about a USB device in the USB 3.0 tree.
+title: usb3kd.device_info_from_pdo
+description: The usb3kd.device_info_from_pdo command displays information about a USB device in the USB 3.0 tree.
 ms.assetid: 74FD68E6-78DF-452F-80C2-91A37877DE52
 keywords: ["usb3kd.device_info_from_pdo Windows Debugging"]
 ms.author: windowsdriverdev

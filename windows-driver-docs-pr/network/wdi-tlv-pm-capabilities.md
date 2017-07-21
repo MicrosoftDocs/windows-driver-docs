@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_PM\_CAPABILITIES (0x42)
+title: WDI_TLV_PM_CAPABILITIES (0x42)
 author: windows-driver-content
-description: WDI\_TLV\_PM\_CAPABILITIES is a TLV that contains power management capabilities.
+description: WDI_TLV_PM_CAPABILITIES is a TLV that contains power management capabilities.
 ms.assetid: DE8A5333-BE2B-4CBB-8C75-45ABBE35A635
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

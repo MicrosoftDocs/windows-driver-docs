@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_CHANNEL\_INFO\_LIST
+title: WDI_TLV_CHANNEL_INFO_LIST
 author: windows-driver-content
-description: WDI\_TLV\_CHANNEL\_INFO\_LIST is a TLV that contains a list of channels.
+description: WDI_TLV_CHANNEL_INFO_LIST is a TLV that contains a list of channels.
 ms.assetid: D1B82F4F-6722-4D54-B6FF-B7F1309F8C0E
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

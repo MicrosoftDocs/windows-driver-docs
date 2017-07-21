@@ -70,13 +70,13 @@ VOID  RegisterCompositeDriver(PPARENT_FDO_EXT parentFdoExt)
 
     buffer = NULL;  
 
-    COMPOSITE_DRIVER_CAPABILITIES_INIT(&amp;capabilities);  
+    COMPOSITE_DRIVER_CAPABILITIES_INIT(&capabilities);  
     capabilities.CapabilityFunctionSuspend = 1;  
 
     USBD_BuildRegisterCompositeDriver(parentFdoExt->usbdHandle,  
         capabilities,  
         parentFdoExt->numFunctions,  
-        &amp;registerInfo);  
+        &registerInfo);  
 
     irp = IoAllocateIrp(parentFdoExt->topDevObj->StackSize, FALSE);  
 
@@ -104,7 +104,7 @@ VOID  RegisterCompositeDriver(PPARENT_FDO_EXT parentFdoExt)
     nextSp->Parameters.DeviceIoControl.IoControlCode = IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DRIVER;  
 
     //Set the input buffer in Argument1      
-    nextSp->Parameters.Others.Argument1 = &amp;registerInfo;  
+    nextSp->Parameters.Others.Argument1 = &registerInfo;  
 
     //Set the output buffer in SystemBuffer field for USBD_FUNCTION_HANDLE.      
     irp->AssociatedIrp.SystemBuffer = buffer;  

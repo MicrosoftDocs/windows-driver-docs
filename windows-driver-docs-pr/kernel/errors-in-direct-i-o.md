@@ -44,7 +44,7 @@ Direct I/O involves double-mapping the user's address space to a system address 
     //
     PortName[Size / sizeof(WCHAR) - 1] = UNICODE_NULL;
 
-    RtlInitUnicodeString(&amp;AdapterName, PortName);
+    RtlInitUnicodeString(&AdapterName, PortName);
     ```
 
     Because the buffer might not be correctly formed, the code attempts to force a Unicode **NULL** as the last buffer character. However, if the underlying physical memory is doubly mapped to both a user- and a kernel-mode address, another thread in the process can overwrite the buffer as soon as this write operation completes.

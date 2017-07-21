@@ -1,7 +1,7 @@
 ---
-title: OID\_WDI\_SET\_REMOVE\_WOL\_PATTERN
+title: OID_WDI_SET_REMOVE_WOL_PATTERN
 author: windows-driver-content
-description: OID\_WDI\_SET\_REMOVE\_WOL\_PATTERN removes a wake-on-LAN (WOL) pattern from the firmware.
+description: OID_WDI_SET_REMOVE_WOL_PATTERN removes a wake-on-LAN (WOL) pattern from the firmware.
 ms.assetid: 9fb03747-b585-4c73-b004-1bdc2a995e9d
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

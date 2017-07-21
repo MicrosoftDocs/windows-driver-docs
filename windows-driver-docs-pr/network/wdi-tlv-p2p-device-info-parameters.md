@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_P2P\_DEVICE\_INFO\_PARAMETERS
+title: WDI_TLV_P2P_DEVICE_INFO_PARAMETERS
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_DEVICE\_INFO\_PARAMETERS is a TLV that contains Wi-Fi Direct device information parameters.
+description: WDI_TLV_P2P_DEVICE_INFO_PARAMETERS is a TLV that contains Wi-Fi Direct device information parameters.
 ms.assetid: A0B1AC85-5F99-4674-A1C4-E25554BDD89F
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

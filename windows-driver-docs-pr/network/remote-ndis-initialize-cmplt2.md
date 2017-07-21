@@ -1,6 +1,6 @@
 ---
-title: REMOTE\_NDIS\_INITIALIZE\_CMPLT
-description: REMOTE\_NDIS\_INITIALIZE\_CMPLT
+title: REMOTE_NDIS_INITIALIZE_CMPLT
+description: REMOTE_NDIS_INITIALIZE_CMPLT
 ms.assetid: 1e8cf7f0-0c18-415f-bc2c-9758b9ea51d2
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

@@ -1,7 +1,7 @@
 ---
-title: OID\_WDI\_SET\_PRIVACY\_EXEMPTION\_LIST
+title: OID_WDI_SET_PRIVACY_EXEMPTION_LIST
 author: windows-driver-content
-description: OID\_WDI\_SET\_PRIVACY\_EXEMPTION\_LIST is used by the host to provide the list of exemptions for packet description. The adapter applies these exemptions to packets it receives that match the IEEE EtherType value specified for the exemption.
+description: OID_WDI_SET_PRIVACY_EXEMPTION_LIST is used by the host to provide the list of exemptions for packet description. The adapter applies these exemptions to packets it receives that match the IEEE EtherType value specified for the exemption.
 ms.assetid: 409ac8c5-0bf7-4ae9-b709-5c2cfa1f8b7f
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

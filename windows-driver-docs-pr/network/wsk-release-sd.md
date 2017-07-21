@@ -1,7 +1,7 @@
 ---
-title: WSK\_RELEASE\_SD
+title: WSK_RELEASE_SD
 author: windows-driver-content
-description: WSK\_RELEASE\_SD
+description: WSK_RELEASE_SD
 ms.assetid: de8cc759-c778-464e-9e19-984ea20c0d29
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

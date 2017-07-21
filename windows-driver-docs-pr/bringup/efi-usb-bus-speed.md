@@ -1,7 +1,7 @@
 ---
-title: EFI\_USB\_BUS\_SPEED
+title: EFI_USB_BUS_SPEED
 author: windows-driver-content
-description: EFI\_USB\_BUS\_SPEED
+description: EFI_USB_BUS_SPEED
 ms.assetid: 2888cff6-db12-47ea-866f-de218e2b08e5
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
