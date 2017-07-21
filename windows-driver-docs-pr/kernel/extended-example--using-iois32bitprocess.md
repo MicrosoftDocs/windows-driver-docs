@@ -103,7 +103,7 @@ TestdrvFsControl (
             FsRtlCompleteRequest( Irp, STATUS_INVALID_PARAMETER );
             return STATUS_INVALID_PARAMETER;
         }
-        Buffer = &amp;LocalBuffer;
+        Buffer = &LocalBuffer;
         Buffer32 = Irp->AssociatedIrp.SystemBuffer;
         Buffer->Handle = (HANDLE)Buffer32->Handle;
         Buffer->Key = Buffer32->Key;

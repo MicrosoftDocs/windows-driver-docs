@@ -178,7 +178,7 @@ NTSTATUS SelectConfiguration (PDEVICE_OBJECT DeviceObject,
         deviceExtension->UsbdHandle, 
         ConfigurationDescriptor, 
         interfaceList,
-        &amp;urb);
+        &urb);
 
     if(!NT_SUCCESS(ntStatus)) 
     {
@@ -221,11 +221,11 @@ NTSTATUS SelectConfiguration (PDEVICE_OBJECT DeviceObject,
             {
                 deviceExtension->InterruptPipe = pipeHandle;
             }
-            if (Interface->Pipes[i].PipeType == UsbdPipeTypeBulk &amp;&amp; USB_ENDPOINT_DIRECTION_IN (Interface->Pipes[i].EndpointAddress))
+            if (Interface->Pipes[i].PipeType == UsbdPipeTypeBulk && USB_ENDPOINT_DIRECTION_IN (Interface->Pipes[i].EndpointAddress))
             {
                 deviceExtension->BulkInPipe = pipeHandle;
             }
-            if (Interface->Pipes[i].PipeType == UsbdPipeTypeBulk &amp;&amp; USB_ENDPOINT_DIRECTION_OUT (Interface->Pipes[i].EndpointAddress))
+            if (Interface->Pipes[i].PipeType == UsbdPipeTypeBulk && USB_ENDPOINT_DIRECTION_OUT (Interface->Pipes[i].EndpointAddress))
             {
                 deviceExtension->BulkOutPipe = pipeHandle;
             }
@@ -280,7 +280,7 @@ To disable a USB device, create and submit a select-configuration request with a
 ```ManagedCPlusPlus
 URB Urb;
 UsbBuildSelectConfigurationRequest(
-  &amp;Urb,
+  &Urb,
   sizeof(_URB_SELECT_CONFIGURATION),
   NULL
 );

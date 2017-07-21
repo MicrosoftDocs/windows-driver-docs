@@ -88,12 +88,12 @@ NTSTATUS SubmitUrbSync( PDEVICE_EXTENSION DeviceExtension,
     // USBD_SelectConfigUrbAllocateAndBuild, or USBD_SelectInterfaceUrbAllocateAndBuild.
     USBD_AssignUrbToIoStackLocation (DeviceExtension->UsbdHandle, nextStack, Urb);
 
-    KeInitializeEvent(&amp;kEvent, NotificationEvent, FALSE);
+    KeInitializeEvent(&kEvent, NotificationEvent, FALSE);
 
     ntStatus = IoSetCompletionRoutineEx ( DeviceExtension->NextDeviceObject,  
         Irp,  
         SyncCompletionRoutine,  
-        (PVOID) &amp;kEvent,  
+        (PVOID) &kEvent,  
         TRUE, 
         TRUE, 
         TRUE);
@@ -108,7 +108,7 @@ NTSTATUS SubmitUrbSync( PDEVICE_EXTENSION DeviceExtension,
 
     if (ntStatus == STATUS_PENDING) 
     {
-        KeWaitForSingleObject ( &amp;kEvent,
+        KeWaitForSingleObject ( &kEvent,
             Executive,
             KernelMode,
             FALSE,

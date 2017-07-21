@@ -34,7 +34,7 @@ Atomic operations, such as those that the **Interlocked*Xxx*** routines perform,
 For example, the [**InterlockedIncrementAcquire**](https://msdn.microsoft.com/library/windows/hardware/ff547916) routine uses acquire semantics to increment a variable. If you rewrote the preceding code example as follows:
 
 ```
- InterlockedIncrementAcquire(&amp;a);
+ InterlockedIncrementAcquire(&a);
  b++;
  c++;
 ```
@@ -46,7 +46,7 @@ Likewise, the [**InterlockedIncrementRelease**](https://msdn.microsoft.com/libra
 ```
  a++;
  b++;
- InterlockedIncrementRelease(&amp;c);
+ InterlockedIncrementRelease(&c);
 ```
 
 other processors would always see the increments of `a` and `b` before the increment of `c`.

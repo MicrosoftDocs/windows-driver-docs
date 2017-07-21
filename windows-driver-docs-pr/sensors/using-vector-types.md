@@ -39,12 +39,12 @@ responseCurve[8] = 90; responseCurve[9] = 150;
 
 // Create the buffer.
 PROPVARIANT pvCurve = {0};
-InitPropVariantFromBuffer(responseCurve, 10 * sizeof (UINT), &amp;pvCurve);
+InitPropVariantFromBuffer(responseCurve, 10 * sizeof (UINT), &pvCurve);
 
 // Add the values to the IPortableDeviceValues object.
-hr = m_pSensorProperties->SetValue(SENSOR_PROPERTY_LIGHT_RESPONSE_CURVE, &amp;pvCurve);
+hr = m_pSensorProperties->SetValue(SENSOR_PROPERTY_LIGHT_RESPONSE_CURVE, &pvCurve);
 
-PropVariantClear(&amp;pvCurve);
+PropVariantClear(&pvCurve);
 
 ```
 
