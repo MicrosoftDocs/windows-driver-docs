@@ -200,7 +200,6 @@ Validate all values that are associated with an IRP, such as buffer addresses an
 
 [Security Issues for I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff563700)
 
-[Errors in Referencing User-Space Addresses](https://msdn.microsoft.com/library/windows/hardware/ff544308)
 
 **Handle IRP completion operations properly**
 
