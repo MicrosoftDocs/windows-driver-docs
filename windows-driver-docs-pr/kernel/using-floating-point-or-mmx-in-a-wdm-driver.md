@@ -50,10 +50,10 @@ DoFloatingPointCalculation(
     LARGE_INTEGER Frequency;
 
     Duration = 1000000.0;
-    DbgPrint("%I64x\n", *(LONGLONG*)&amp;Duration);
-    KeQueryPerformanceCounter(&amp;Frequency);
+    DbgPrint("%I64x\n", *(LONGLONG*)&Duration);
+    KeQueryPerformanceCounter(&Frequency);
     Duration /= (double)Frequency.QuadPart;
-    DbgPrint("%I64x\n", *(LONGLONG*)&amp;Duration);
+    DbgPrint("%I64x\n", *(LONGLONG*)&Duration);
 }
 
 NTSTATUS
@@ -66,7 +66,7 @@ DriverEntry(
     XSTATE_SAVE SaveState;
     NTSTATUS Status;
 
-    Status = KeSaveExtendedProcessorState(XSTATE_MASK_LEGACY, &amp;SaveState);
+    Status = KeSaveExtendedProcessorState(XSTATE_MASK_LEGACY, &SaveState);
     if (!NT_SUCCESS(Status)) {
         goto exit;
     }
@@ -75,7 +75,7 @@ DriverEntry(
         DoFloatingPointCalculation();
     }
     __finally {
-        KeRestoreExtendedProcessorState(&amp;SaveState);
+        KeRestoreExtendedProcessorState(&SaveState);
     }
 
 exit:

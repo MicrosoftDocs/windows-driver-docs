@@ -167,12 +167,12 @@ NTSTATUS
     // Enumerate the pipes and get pipe information for each pipe.
     for (i = 0; i < pDeviceContext->NumberConfiguredPipes; i++) 
     {
-        WDF_USB_PIPE_INFORMATION_INIT(&amp;pipeInfo); 
+        WDF_USB_PIPE_INFORMATION_INIT(&pipeInfo); 
 
         pipe =  WdfUsbInterfaceGetConfiguredPipe(
             pDeviceContext->UsbInterface,  
             i, 
-            &amp;pipeInfo); 
+            &pipeInfo); 
 
         if (pipe == NULL)
         {
@@ -186,7 +186,7 @@ NTSTATUS
         // Use the endpoint as an IN bulk endpoint.
         // Store the maximum packet size.
 
-        if ((WdfUsbPipeTypeBulk == pipeInfo.PipeType) &amp;&amp;
+        if ((WdfUsbPipeTypeBulk == pipeInfo.PipeType) &&
             WdfUsbTargetPipeIsInEndpoint (pipe))
         {
 
@@ -197,7 +197,7 @@ NTSTATUS
                 Device,
                 pipe);
 
-            if ((pipeContext->IsStreamsCapable) &amp;&amp;
+            if ((pipeContext->IsStreamsCapable) &&
                 (pipeContext->MaxStreamsSupported > 0))
             {           
                 status = OpenStreams (
@@ -230,7 +230,7 @@ NTSTATUS
             continue;
         }
 
-        if ((WdfUsbPipeTypeBulk == pipeInfo.PipeType) &amp;&amp;
+        if ((WdfUsbPipeTypeBulk == pipeInfo.PipeType) &&
             WdfUsbTargetPipeIsOutEndpoint (pipe))
         {
             // Check if this is a streams IN endpoint. If it is,
@@ -240,7 +240,7 @@ NTSTATUS
                 Device,
                 pipe);
 
-            if ((pipeContext->IsStreamsCapable) &amp;&amp;
+            if ((pipeContext->IsStreamsCapable) &&
                 (pipeContext->MaxStreamsSupported > 0))
             {           
                 status = OpenStreams (
@@ -273,7 +273,7 @@ NTSTATUS
             continue;
         }
 
-        if ((WdfUsbPipeTypeInterrupt == pipeInfo.PipeType) &amp;&amp;
+        if ((WdfUsbPipeTypeInterrupt == pipeInfo.PipeType) &&
             WdfUsbTargetPipeIsInEndpoint (pipe))
         {
             pDeviceContext->InterruptPipe = pipe;
@@ -348,8 +348,8 @@ VOID RetrieveStreamInfoFromEndpointDesc (
     // Get the configuration descriptor of the currently selected configuration
     status = FX3RetrieveConfigurationDescriptor (
         deviceContext->UsbDevice,
-        &amp;deviceContext->ConfigurationNumber,
-        &amp;configDescriptor);
+        &deviceContext->ConfigurationNumber,
+        &configDescriptor);
 
     if (!NT_SUCCESS (status))
     {
@@ -371,8 +371,8 @@ VOID RetrieveStreamInfoFromEndpointDesc (
     }
 
     // Get the Endpoint Address of the pipe
-    WDF_USB_PIPE_INFORMATION_INIT(&amp;pipeInfo);  
-    WdfUsbTargetPipeGetInformation (Pipe, &amp;pipeInfo);
+    WDF_USB_PIPE_INFORMATION_INIT(&pipeInfo);  
+    WdfUsbTargetPipeGetInformation (Pipe, &pipeInfo);
 
 
     // Parse the ConfigurationDescriptor (including all Interface and
@@ -607,7 +607,7 @@ HRESULT  CMyDevice::CreateUsbIoTargets()
   
         WUDF_TEST_DRIVER_ASSERT(1 == NumInterfaces);  
           
-        hr = pIUsbTargetDevice->RetrieveUsbInterface(0, &amp;pIUsbInterface);  
+        hr = pIUsbTargetDevice->RetrieveUsbInterface(0, &pIUsbInterface);  
         if (FAILED(hr))  
         {  
             TraceEvents(TRACE_LEVEL_ERROR,   
@@ -646,7 +646,7 @@ HRESULT  CMyDevice::CreateUsbIoTargets()
         for (UCHAR PipeIndex = 0; PipeIndex < NumEndPoints; PipeIndex++)  
         {  
             hr = pIUsbInterface->RetrieveUsbPipeObject(PipeIndex,   
-                                                  &amp;pIUsbPipe);  
+                                                  &pIUsbPipe);  
   
             if (FAILED(hr))  
             {  
@@ -674,7 +674,7 @@ HRESULT  CMyDevice::CreateUsbIoTargets()
                         pIUsbPipe->DeleteWdfObject();  
                     }                        
                 }  
-                else if ( pIUsbPipe->IsOutEndPoint() &amp;&amp; (UsbdPipeTypeBulk == pIUsbPipe->GetType()) )  
+                else if ( pIUsbPipe->IsOutEndPoint() && (UsbdPipeTypeBulk == pIUsbPipe->GetType()) )  
                 {  
                     m_pIUsbOutputPipe = pIUsbPipe;  
                 }  

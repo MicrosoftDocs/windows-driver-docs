@@ -58,7 +58,7 @@ There are three different types of debugger extension DLLs:
 
 The DbgEng API can be used to create extensions or stand-alone applications. The WdbgExts API contains a subset of the functionality of the debugger engine API and can be used only by extensions.
 
-All debugger extensions should be compiled and built by using the Build utility. The Build utility is included in the Windows Driver Kit (WDK).
+All debugger extensions should be compiled and built using Visual Studio.
 
 Extension code samples are installed as part of the Debugging Tools for Windows package if you perform a custom installation and select the **SDK** component and all its subcomponents. They can be found in the sdk\\samples subdirectory of the Debugging Tools for Windows installation directory.
 

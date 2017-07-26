@@ -1,6 +1,6 @@
 ---
-title: NET\_BUFFER\_LIST Structure
-description: NET\_BUFFER\_LIST Structure
+title: NET_BUFFER_LIST Structure
+description: NET_BUFFER_LIST Structure
 ms.assetid: f7f19e48-cb63-458d-b175-6f99080e4cdf
 keywords:
 - NET_BUFFER_LIST

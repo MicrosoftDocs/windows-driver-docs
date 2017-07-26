@@ -61,7 +61,7 @@ Typically, the client creates a queue for regular (sequential) OIDs, and may opt
     NET_REQUEST_QUEUE_CONFIG config;
 
     // Initialize the Queue Config
-    NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_SEQUENTIAL(&amp;config,
+    NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_SEQUENTIAL(&config,
                                                      AdapterContext->GetNetAdapter());
 
     //
@@ -79,7 +79,7 @@ Typically, the client creates a queue for regular (sequential) OIDs, and may opt
     //
     // Create the default NETREQUESTQUEUE
     //
-    status = NetRequestQueueCreate(&amp;config,
+    status = NetRequestQueueCreate(&config,
                                    WDF_NO_OBJECT_ATTRIBUTES,
                                    NULL);
 

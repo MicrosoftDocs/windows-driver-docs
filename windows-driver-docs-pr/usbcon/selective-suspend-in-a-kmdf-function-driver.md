@@ -108,11 +108,11 @@ NTSTATUS    status = STATUS_SUCCESS;
 //
 // Initialize the idle policy structure.
 //
-WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT(&amp;idleSettings, 
+WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT(&idleSettings, 
      IdleUsbSelectiveSuspend);
 idleSettings.IdleTimeout = 10000; // 10 sec
 
-status = WdfDeviceAssignS0IdleSettings(Device, &amp;idleSettings);
+status = WdfDeviceAssignS0IdleSettings(Device, &idleSettings);
 if ( !NT_SUCCESS(status)) {
      TraceEvents(TRACE_LEVEL_ERROR, DBG_PNP,
                  "WdfDeviceSetPowerPolicyS0IdlePolicy failed %x\n", 
@@ -172,12 +172,12 @@ The following example from the Osrusbfx2 KMDF sample shows how to call this meth
 // capabilites such as speed, power, etc.
 //
 
-WDF_USB_DEVICE_INFORMATION_INIT(&amp;deviceInfo);
+WDF_USB_DEVICE_INFORMATION_INIT(&deviceInfo);
 
 status = WdfUsbTargetDeviceRetrieveInformation(
                             pDeviceContext->UsbDevice,
-                            &amp;deviceInfo);
-waitWakeEnable = deviceInfo.Traits &amp; WDF_USB_DEVICE_TRAIT_REMOTE_WAKE_CAPABLE;
+                            &deviceInfo);
+waitWakeEnable = deviceInfo.Traits & WDF_USB_DEVICE_TRAIT_REMOTE_WAKE_CAPABLE;
 ```
 
 ### Enabling remote wakeup
@@ -194,8 +194,8 @@ The following code snippet from the Osrusbfx2 sample shows how to initialize wak
 ```
 WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS wakeSettings;
 
-WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS_INIT(&amp;wakeSettings);
-status = WdfDeviceAssignSxWakeSettings(Device, &amp;wakeSettings);
+WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS_INIT(&wakeSettings);
+status = WdfDeviceAssignSxWakeSettings(Device, &wakeSettings);
 if (!NT_SUCCESS(status)) {
     return status;
 }

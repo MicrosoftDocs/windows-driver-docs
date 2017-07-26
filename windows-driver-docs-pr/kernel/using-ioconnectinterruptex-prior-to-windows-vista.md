@@ -30,12 +30,12 @@ IO_CONNECT_INTERRUPT_PARAMETERS params;
 // deviceExtension is a pointer to the driver&#39;s device extension. 
 //     deviceExtension->MessageUsed is a BOOLEAN.
 
-RtlZeroMemory( &amp;params, sizeof(IO_CONNECT_INTERRUPT_PARAMETERS) );
+RtlZeroMemory( &params, sizeof(IO_CONNECT_INTERRUPT_PARAMETERS) );
 params.Version = CONNECT_MESSAGE_BASED;
 
 // Set members of params.MessageBased here.
 
-status = IoConnectInterruptEx(&amp;params);
+status = IoConnectInterruptEx(&params);
 
 if ( NT_SUCCESS(status) ) {
     // Operation succeeded. We are running on Windows Vista.
@@ -47,7 +47,7 @@ if ( NT_SUCCESS(status) ) {
  
         // Set members of params.FullySpecified here.
  
-        status = IoConnectInterruptEx(&amp;params);
+        status = IoConnectInterruptEx(&params);
     } else {
         // Other error.
     }

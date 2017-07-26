@@ -1,7 +1,7 @@
 ---
-title: Using the CONNECT\_MESSAGE\_BASED Version of IoConnectInterruptEx
+title: Using the CONNECT_MESSAGE_BASED Version of IoConnectInterruptEx
 author: windows-driver-content
-description: Using the CONNECT\_MESSAGE\_BASED Version of IoConnectInterruptEx
+description: Using the CONNECT_MESSAGE_BASED Version of IoConnectInterruptEx
 ms.assetid: 8e06c6aa-85de-4ed2-ac0d-0179201d1272
 keywords: ["IoConnectInterruptEx", "CONNECT_MESSAGE_BASED", "message-signaled interrupts WDK kernel", "automatic interrupt detections WDK kernel"]
 ms.author: windowsdriverdev
@@ -39,7 +39,7 @@ IO_CONNECT_INTERRUPT_PARAMETERS params;
 // PhysicalDeviceObject is a pointer to the device&#39;s PDO. 
 // ServiceContext is a pointer to driver-specified context for the ISR.
 
-RtlZeroMemory( &amp;params, sizeof(IO_CONNECT_INTERRUPT_PARAMETERS) );
+RtlZeroMemory( &params, sizeof(IO_CONNECT_INTERRUPT_PARAMETERS) );
 params.Version = CONNECT_MESSAGE_BASED;
 params.MessageBased.PhysicalDeviceObject = PhysicalDeviceObject;
 params.MessageBased.MessageServiceRoutine = deviceInterruptMessageService;
@@ -49,7 +49,7 @@ params.MessageBased.SynchronizeIrql = 0;
 params.MessageBased.FloatingSave = FALSE;
 params.MessageBased.FallBackServiceRoutine = deviceInterruptService;
 
-status = IoConnectInterruptEx(&amp;params);
+status = IoConnectInterruptEx(&params);
 
 if (NT_SUCCESS(status)) {
     // We record the type of ISR registered.

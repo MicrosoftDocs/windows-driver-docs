@@ -1,6 +1,6 @@
 ---
-title: Handling an OID\_PNP\_SET\_POWER OID
-description: Handling an OID\_PNP\_SET\_POWER OID
+title: Handling an OID_PNP_SET_POWER OID
+description: Handling an OID_PNP_SET_POWER OID
 ms.assetid: 6140c772-57ba-47d3-b294-a2e2b2e3ccc7
 keywords:
 - OID_PNP_SET_POWER_OID

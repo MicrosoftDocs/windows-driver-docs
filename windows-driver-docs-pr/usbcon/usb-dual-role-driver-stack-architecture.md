@@ -146,7 +146,7 @@ Device(URS0)
 {
     //
     // Replace with your own hardware ID. Microsoft will add it to the inbox INF,
-    // or you may choose to author a custom INF that uses Needs &amp; Includes directives
+    // or you may choose to author a custom INF that uses Needs & Includes directives
     // to include sections from the inbox INF.
     //
     Name(_HID, "ABCD1234")

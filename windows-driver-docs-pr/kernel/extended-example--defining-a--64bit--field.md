@@ -69,7 +69,7 @@ TestdrvDeviceControl(
                sizeof(IOCTL_PARAMETERS)) {
             status = STATUS_INVALID_PARAMETER;
         } else {
-            RtlCopyMemory(&amp;LocalParam,  params, 
+            RtlCopyMemory(&LocalParam,  params, 
               sizeof(IOCTL_PARAMETERS));
             /* Handle the ioctl here */
             status = STATUS_SUCCESS;
@@ -185,7 +185,7 @@ TestdrvDeviceControl(
             sizeof(IOCTL_PARAMETERS)) {
             status = STATUS_INVALID_PARAMETER;
         } else {
-            RtlCopyMemory(&amp;LocalParam, params, 
+            RtlCopyMemory(&LocalParam, params, 
                 sizeof(IOCTL_PARAMETERS));
             /* Handle the ioctl here */
             status = STATUS_SUCCESS;

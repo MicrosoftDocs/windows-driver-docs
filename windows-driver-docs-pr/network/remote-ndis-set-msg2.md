@@ -1,6 +1,6 @@
 ---
-title: REMOTE\_NDIS\_SET\_MSG
-description: REMOTE\_NDIS\_SET\_MSG
+title: REMOTE_NDIS_SET_MSG
+description: REMOTE_NDIS_SET_MSG
 ms.assetid: 28672557-bf29-480f-8f33-535dd70d3631
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

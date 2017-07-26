@@ -1,6 +1,6 @@
 ---
-title: usb3kd.xhci\_eventring
-description: The usb3kd.xhci\_eventring extension displays information about the event ring data structure associated with a USB 3.0 host controller.
+title: usb3kd.xhci_eventring
+description: The usb3kd.xhci_eventring extension displays information about the event ring data structure associated with a USB 3.0 host controller.
 ms.assetid: D3A40372-5473-48B0-94C7-5D3B80801F16
 keywords: ["usb3kd.xhci_eventring Windows Debugging"]
 ms.author: windowsdriverdev

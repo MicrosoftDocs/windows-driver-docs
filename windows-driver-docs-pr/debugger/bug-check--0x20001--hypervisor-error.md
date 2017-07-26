@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x20001 HYPERVISOR\_ERROR
-description: The HYPERVISOR\_ERROR bug check has a value of 0x00020001. This indicates that the hypervisor has encountered a fatal error.
+title: Bug Check 0x20001 HYPERVISOR_ERROR
+description: The HYPERVISOR_ERROR bug check has a value of 0x00020001. This indicates that the hypervisor has encountered a fatal error.
 ms.assetid: 5F62DEEA-D192-46ED-827C-021A749D7091
 keywords: ["Bug Check 0x20001 HYPERVISOR_ERROR", "HYPERVISOR_ERROR"]
 ms.author: windowsdriverdev

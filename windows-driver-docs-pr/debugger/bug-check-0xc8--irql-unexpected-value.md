@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0xC8 IRQL\_UNEXPECTED\_VALUE
-description: The IRQL\_UNEXPECTED\_VALUE bug check has a value of 0x000000C8. This indicates that the processor's IRQL is not what it should be at this time.
+title: Bug Check 0xC8 IRQL_UNEXPECTED_VALUE
+description: The IRQL_UNEXPECTED_VALUE bug check has a value of 0x000000C8. This indicates that the processor's IRQL is not what it should be at this time.
 ms.assetid: eff166ab-e245-48ea-ab9e-9bb722814acf
 keywords: ["Bug Check 0xC8 IRQL_UNEXPECTED_VALUE", "IRQL_UNEXPECTED_VALUE"]
 ms.author: windowsdriverdev

@@ -30,11 +30,11 @@ For example, in the following code snippet, the driver has been passed the handl
                       0,
                       NULL,
                       KernelMode,
-                      &amp;fileObject,
+                      &fileObject,
                       NULL);
 
    if (NT_SUCCESS(status)) {
-       if ( (fileObject->DeviceObject == DeviceObject) &amp;&amp;
+       if ( (fileObject->DeviceObject == DeviceObject) &&
             (fileObject->FsContext2 == TRANSPORT_SOCK) ) {
 ```
 
@@ -49,7 +49,7 @@ Even if all the parameters for the call to **ObReferenceObjectByHandle** are cor
                              DesiredAccess,
                              *IoFileObjectType,
                              Irp->RequestorMode,
-                             (PVOID *)&amp;AcpEndpointFileObject,
+                             (PVOID *)&AcpEndpointFileObject,
                              NULL);
 
    if ( !NT_SUCCESS(status) ) {
