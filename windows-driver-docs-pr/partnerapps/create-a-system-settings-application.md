@@ -11,23 +11,31 @@ ms.technology: windows-devices
 
 # Create a partner settings app
 
+OEMs and mobile operators can expose custom settings for hardware components that they add to a device to differentiate it from other devices, such as speakers, sensors, or microphones. Up to five of these settings appear as additional links in one of the Settings app's level two pages. 
 
-OEMs and mobile operators can expose custom settings for hardware components that they add to a device to differentiate it from other devices, such as speakers, sensors, or microphones. The custom settings are displayed to the user as one of up to five additional links in one of the level two pages in the Settings app. For example, in the **Devices** tab of the **Settings** app, the following level two pages can have up to five additional links to custom settings apps: **Printers & scanners**, **Connected devices**, **Bluetooth**, **Mouse**, **Touchpad**, **Typing**, **Pen and Windows Ink**, **AutoPlay**, and **USB**. 
+For example, in the **Devices** tab of the **Settings** app, the following pages can have up to five additional links to custom settings apps: 
+* Printers & scanners 
+* Connected devices 
+* Bluetooth 
+* Mouse
+* Touchpad
+* Typing
+* Pen and Windows Ink
+* AutoPlay
+* USB 
 
 ![Devices list in Settings app](images/devices-list-in-settings.png)
 
-You can find a list of all level two pages in the [Launch the Windows Settings app](https://msdn.microsoft.com/en-us/windows/uwp/launch-resume/launch-settings-app) topic.
+You can find a list of all level two pages in the [Launch the Windows Settings app](https://msdn.microsoft.com/en-us/windows/uwp/launch-resume/launch-settings-app) topic. It is important to note that all links must relevant to the page they are placed on.
 
-**Important**: All links must be relevant to the page they are placed on.
-
-In addition to the five links, you are also allowed to add up to five search terms on each page. Search terms must be relevant to the content on the page. For the best experience, use specific phrases for your terms as my general one word terms may lead to your links not displaying as relevant in search. For example, if you have a “Fabricam multipen” device, create a search phrase like “set up fabricam mulitipen” instead of a generic search term like “pen”.
+In addition to the five links, you are able to add up to five search terms on each page. Search terms must be relevant to the content on the page. For the best experience, use specific phrases for your terms, as general and one-word terms may cause your links to not be displayed in relevant searchs. For example, if you have a “Fabricam multipen” device, create a search phrase like “set up fabricam mulitipen” instead of a generic search term such as “pen”.
 
 ## <span id="Characteristics_of_partner_settings_app"></span><span id="characteristics_of_partner_settings_app"></span><span id="CHARACTERISTICS_OF_PARTNER_SETTINGS_APP"></span>Characteristics of partner settings app
 
 
 Partner settings apps have the following characteristics:
 
--   They are Universal Windows Platform (UWP) apps, or, in the case of Windows Phone, they can also be Windows Phone Silverlight apps.
+-   They are Universal Windows Platform (UWP) apps, or, in the case of Windows Phone, can also be Windows Phone Silverlight apps.
 
 -   Users can uninstall them directly just like any other application. They can be upgraded by updating the settings application in the Store like any other Windows app.
 
@@ -38,9 +46,9 @@ Partner settings apps have the following characteristics:
 ## <span id="Creating_system_settings_applications"></span><span id="creating_system_settings_applications"></span><span id="CREATING_SYSTEM_SETTINGS_APPLICATIONS"></span>Creating system settings applications
 
 
-Settings applications are Windows Universal apps and should therefore conform to all programming guidelines for Windows Universal apps (see [Guidelines for Universal Windows Platform (UWP) apps)](https://msdn.microsoft.com/en-us/library/windows/apps/hh465424.aspx):
+Settings applications are Windows Universal apps and should therefore conform to all programming guidelines for Windows Universal apps (see [Guidelines for Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/en-us/library/windows/apps/hh465424.aspx) for more information):
 
-1.  Use the Windows Software Development Kit (SDK) to create a Windows Universal app. For more information on creating a Windows Universal app, see [Build UWP apps with Visual Studio](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/dn609832.aspx). This application will be the system settings application. If you're writing a settings app targeting a phone, you can also create a Windows Phone Silverlight app. 
+1.  Use the Windows Software Development Kit (SDK) to create a Windows Universal app. For more information on creating a Windows Universal app, see [Build UWP apps with Visual Studio](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/dn609832.aspx). This application will be a system settings application. If you're writing a settings app targeting Windows Phone, you can also create a Windows Phone Silverlight app. 
 2.  Declare the settings app capability and the SettingPageUri to describe the page that your application link is listed. Also add the AppActivationMode setting to point to the link. Do this in the application manifest: `xmlns:rescap=http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities`
 
     ```
@@ -67,7 +75,7 @@ Settings applications are Windows Universal apps and should therefore conform to
 
 Settings applications follow the typical process for any Windows app. Partners can submit updates to system settings applications to the Store. After an update is submitted, customers who have the system settings application installed are notified of the update and can install the update through the Store.
 
-Because a system settings application does not appear in the application list on devices, users might be confused when they are notified of an update for the application on the Store. To help avoid confusion, Microsoft recommends providing some context for users by specifying in the Store description for the application that it provides system-level settings that appear in **Settings** on the device.
+Because system settings applications don't appear in devices' application list, users might be confused when they are notified of an update for the application on the Store. To help avoid confusion, Microsoft recommends providing some context for users by specifying in the Store description for the application that it provides system-level settings that appear in **Settings** on the device.
 
 ## <span id="What_happens_to_legacy_Control_Panel_or_system_settings_apps_when_the_OS_upgrades_to_Windows_10_"></span><span id="what_happens_to_legacy_control_panel_or_system_settings_apps_when_the_os_upgrades_to_windows_10_"></span><span id="WHAT_HAPPENS_TO_LEGACY_CONTROL_PANEL_OR_SYSTEM_SETTINGS_APPS_WHEN_THE_OS_UPGRADES_TO_WINDOWS_10_"></span>What happens to legacy Control Panel or system settings apps when the OS upgrades to Windows 10?
 
