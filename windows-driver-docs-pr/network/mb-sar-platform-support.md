@@ -102,8 +102,8 @@ MBIM_MS_SAR_CONFIG_STATE describes the possible states for SAR backoff for the a
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
-| 0 | 4 | SARAntennaIndex | UINT32 | An antenna index that corresponds to the SARBackOffIndex field in the MBIM_MS_SAR_CONFIG_STATE table. It corresponds to the antenna number and is left to OEM implementation to index each antenna on the device. If this value is set to 0xFFFFFFFFF, the SARBackOffIndex should be applied to all antennas. |
-| 4 | 4 | SARBAckOffIndex | UINT32 | A back off index that corresponds to the back off table that is defined by OEM or modem vendor. The table has individual bands and associated back off parameters. |
+| 0 | 4 | SARAntennaIndex | UINT32 | An antenna index that corresponds to the **SARBackOffIndex** field in this table. It corresponds to the antenna number and is left to OEM implementation to index each antenna on the device. Any index is valid for this value. If this value is set to **0xFFFFFFFF** in a *Set* command, the **SARBackOffIndex** should be applied to all antennas. If this value is set to **0xFFFFFFFF** in response, it indicates that **SARBackOffIndex** is applied to all antennas. |
+| 4 | 4 | SARBAckOffIndex | UINT32 | A back off index that corresponds to the back off table that is defined by the OEM or modem vendor. The table has individual bands and associated back off parameters. |
 
 ##### Response
 
