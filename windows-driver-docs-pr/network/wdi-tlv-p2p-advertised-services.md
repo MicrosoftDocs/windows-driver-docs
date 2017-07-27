@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_P2P\_ADVERTISED\_SERVICES
+title: WDI_TLV_P2P_ADVERTISED_SERVICES
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_ADVERTISED\_SERVICES is a TLV that contains a list of advertised services.
+description: WDI_TLV_P2P_ADVERTISED_SERVICES is a TLV that contains a list of advertised services.
 ms.assetid: C210DDF3-0349-4108-82EC-1823F562E5D7
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

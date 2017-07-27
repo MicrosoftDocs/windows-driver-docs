@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_RECEIVE\_COALESCE\_OFFLOAD\_CAPABILITIES
+title: WDI_TLV_RECEIVE_COALESCE_OFFLOAD_CAPABILITIES
 author: windows-driver-content
-description: WDI\_TLV\_RECEIVE\_COALESCE\_OFFLOAD\_CAPABILITIES is a TLV that contains Rx coalesce offload capabilities.
+description: WDI_TLV_RECEIVE_COALESCE_OFFLOAD_CAPABILITIES is a TLV that contains Rx coalesce offload capabilities.
 ms.assetid: AF13B304-3E94-42EE-8BBB-107F5F238758
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

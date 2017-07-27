@@ -1,7 +1,7 @@
 ---
-title: Sending IRP\_MN\_QUERY\_POWER or IRP\_MN\_SET\_POWER for Device Power States
+title: Sending IRP_MN_QUERY_POWER or IRP_MN_SET_POWER for Device Power States
 author: windows-driver-content
-description: Sending IRP\_MN\_QUERY\_POWER or IRP\_MN\_SET\_POWER for Device Power States
+description: Sending IRP_MN_QUERY_POWER or IRP_MN_SET_POWER for Device Power States
 ms.assetid: 58f65138-abb9-4bb8-bf9b-14f17347e309
 keywords: ["IRP_MN_SET_POWER", "IRP_MN_QUERY_POWER", "device power states WDK kernel", "query-power IRPs WDK power management", "power IRPs WDK kernel , device queries", "querying power state", "queuing IRPs", "device query power IRPs WDK kernel", "sending power state IRPs", "set-power IRPs WDK kernel", "device set power IRPs WDK kernel"]
 ms.author: windowsdriverdev

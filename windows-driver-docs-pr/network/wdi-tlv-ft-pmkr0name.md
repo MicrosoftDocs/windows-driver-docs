@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_FT\_PMKR0NAME
+title: WDI_TLV_FT_PMKR0NAME
 author: windows-driver-content
-description: WDI\_TLV\_FT\_PMKR0NAME is a TLV that contains a PMKR0Name or PMKR1Name (802.11r).
+description: WDI_TLV_FT_PMKR0NAME is a TLV that contains a PMKR0Name or PMKR1Name (802.11r).
 ms.assetid: F280FB10-D6CD-4410-8F3C-CD114F62B091
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

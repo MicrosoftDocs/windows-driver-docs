@@ -1,7 +1,7 @@
 ---
-title: NDIS\_STATUS\_WWAN\_SLOT\_INFO
+title: NDIS_STATUS_WWAN_SLOT_INFO
 author: windows-driver-content
-description: Miniport drivers use the NDIS\_STATUS\_WWAN\_SLOT\_INFO notification to inform the MB service about the completion of a previous OID\_WWAN\_SLOT\_INFO query request.
+description: Miniport drivers use the NDIS_STATUS_WWAN_SLOT_INFO notification to inform the MB service about the completion of a previous OID_WWAN_SLOT_INFO query request.
 ms.assetid: FA1E16E4-56A3-4401-875F-D75DD01FE75D
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

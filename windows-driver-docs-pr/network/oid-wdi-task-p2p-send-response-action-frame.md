@@ -1,7 +1,7 @@
 ---
-title: OID\_WDI\_TASK\_P2P\_SEND\_RESPONSE\_ACTION\_FRAME
+title: OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME
 author: windows-driver-content
-description: OID\_WDI\_TASK\_P2P\_SEND\_RESPONSE\_ACTION\_FRAME is issued to the IHV component to send a Wi-Fi Direct Public Action Frame Request to a peer.
+description: OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME is issued to the IHV component to send a Wi-Fi Direct Public Action Frame Request to a peer.
 ms.assetid: 5cb57f20-ef9d-4e79-9b4b-8cf939221d47
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

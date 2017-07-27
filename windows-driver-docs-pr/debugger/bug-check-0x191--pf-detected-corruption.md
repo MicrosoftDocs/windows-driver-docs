@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x191 PF\_DETECTED\_CORRUPTION
-description: The PF\_DETECTED\_CORRUPTION bug check has a value of 0x00000191.
+title: Bug Check 0x191 PF_DETECTED_CORRUPTION
+description: The PF_DETECTED_CORRUPTION bug check has a value of 0x00000191.
 ms.assetid: 570D22A7-E3EB-4A53-9188-640907FF39A5
 keywords: ["Bug Check 0x191 PF_DETECTED_CORRUPTION", "PF_DETECTED_CORRUPTION"]
 ms.author: windowsdriverdev

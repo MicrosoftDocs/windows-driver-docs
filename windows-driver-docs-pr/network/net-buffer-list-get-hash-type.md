@@ -1,7 +1,7 @@
 ---
-title: NET\_BUFFER\_LIST\_GET\_HASH\_TYPE macro
+title: NET_BUFFER_LIST_GET_HASH_TYPE macro
 author: windows-driver-content
-description: The NET\_BUFFER\_LIST\_GET\_HASH\_TYPE macro gets the hash type information from a NET\_BUFFER\_LIST structure. Version Information Windows VistaSupported. NDIS 6.0 driversSupported.
+description: The NET_BUFFER_LIST_GET_HASH_TYPE macro gets the hash type information from a NET_BUFFER_LIST structure. Version Information Windows VistaSupported. NDIS 6.0 driversSupported.
 ms.assetid: 96a6e299-f3f4-456d-be5e-1c4e6ec98aa4
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

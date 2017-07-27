@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_GET\_AUTO\_POWER\_SAVE
+title: WDI_TLV_GET_AUTO_POWER_SAVE
 author: windows-driver-content
-description: WDI\_TLV\_GET\_AUTO\_POWER\_SAVE is a TLV that contains auto power save information for OID\_WDI\_GET\_AUTO\_POWER\_SAVE.
+description: WDI_TLV_GET_AUTO_POWER_SAVE is a TLV that contains auto power save information for OID_WDI_GET_AUTO_POWER_SAVE.
 ms.assetid: E57AD1CE-A252-4BB5-B983-11D3E46B7EC1
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

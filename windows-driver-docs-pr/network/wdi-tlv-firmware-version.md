@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_FIRMWARE\_VERSION
+title: WDI_TLV_FIRMWARE_VERSION
 author: windows-driver-content
-description: WDI\_TLV\_FIRMWARE\_VERSION is a TLV that contains the firmware version.
+description: WDI_TLV_FIRMWARE_VERSION is a TLV that contains the firmware version.
 ms.assetid: 31E61ACA-AF2F-4E5D-9448-363630A27E39
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

@@ -1,7 +1,7 @@
 ---
-title: OID\_WDI\_TASK\_START\_AP
+title: OID_WDI_TASK_START_AP
 author: windows-driver-content
-description: OID\_WDI\_TASK\_START\_AP requests that the IHV component configures a port to start a Wi-Fi Direct Group Owner on the specified port.
+description: OID_WDI_TASK_START_AP requests that the IHV component configures a port to start a Wi-Fi Direct Group Owner on the specified port.
 ms.assetid: 647b039b-eb9a-43e7-9027-15a55df62c79
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_EXTRA\_ASSOCIATION\_REQUEST\_IES
+title: WDI_TLV_EXTRA_ASSOCIATION_REQUEST_IES
 author: windows-driver-content
-description: WDI\_TLV\_EXTRA\_ASSOCIATION\_REQUEST\_IES is a TLV that contains Information Elements (IEs) that must be included in association requests sent by the port.
+description: WDI_TLV_EXTRA_ASSOCIATION_REQUEST_IES is a TLV that contains Information Elements (IEs) that must be included in association requests sent by the port.
 ms.assetid: 2275B8F2-1FE4-4518-AD67-E9A65F2F37DA
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

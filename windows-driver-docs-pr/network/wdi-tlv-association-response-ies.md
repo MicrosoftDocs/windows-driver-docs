@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_ASSOCIATION\_RESPONSE\_IES
+title: WDI_TLV_ASSOCIATION_RESPONSE_IES
 author: windows-driver-content
-description: WDI\_TLV\_ASSOCIATION\_RESPONSE\_IES is an unused TLV.
+description: WDI_TLV_ASSOCIATION_RESPONSE_IES is an unused TLV.
 ms.assetid: 3882FFB2-D77B-4433-BFD2-F55A91C58985
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

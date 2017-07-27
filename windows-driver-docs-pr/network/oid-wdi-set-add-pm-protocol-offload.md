@@ -1,7 +1,7 @@
 ---
-title: OID\_WDI\_SET\_ADD\_PM\_PROTOCOL\_OFFLOAD
+title: OID_WDI_SET_ADD_PM_PROTOCOL_OFFLOAD
 author: windows-driver-content
-description: OID\_WDI\_SET\_ADD\_PM\_PROTOCOL\_OFFLOAD adds a list of one or more protocol offloads for power management.
+description: OID_WDI_SET_ADD_PM_PROTOCOL_OFFLOAD adds a list of one or more protocol offloads for power management.
 ms.assetid: 50c69dd4-352d-484f-81c1-a4c9587ab368
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

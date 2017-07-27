@@ -1,7 +1,7 @@
 ---
-title: OID\_WDI\_GET\_STATISTICS
+title: OID_WDI_GET_STATISTICS
 author: windows-driver-content
-description: OID\_WDI\_GET\_STATISTICS requests that the IHV component returns MAC and PHY layer statistics.
+description: OID_WDI_GET_STATISTICS requests that the IHV component returns MAC and PHY layer statistics.
 ms.assetid: 55c36869-ce85-42fe-877b-07aefb669b56
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

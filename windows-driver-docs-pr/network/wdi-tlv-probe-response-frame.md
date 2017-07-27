@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_PROBE\_RESPONSE\_FRAME
+title: WDI_TLV_PROBE_RESPONSE_FRAME
 author: windows-driver-content
-description: WDI\_TLV\_PROBE\_RESPONSE\_FRAME is a TLV that contains a probe response frame.
+description: WDI_TLV_PROBE_RESPONSE_FRAME is a TLV that contains a probe response frame.
 ms.assetid: 600019AB-55D2-4EE1-9500-0AFCB07C3AB2
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

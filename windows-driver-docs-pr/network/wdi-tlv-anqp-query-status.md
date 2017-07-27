@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_ANQP\_QUERY\_STATUS
+title: WDI_TLV_ANQP_QUERY_STATUS
 author: windows-driver-content
-description: WDI\_TLV\_ANQP\_QUERY\_STATUS is an unused TLV.
+description: WDI_TLV_ANQP_QUERY_STATUS is an unused TLV.
 ms.assetid: C1843AC2-C12E-4F11-B36C-66D75CAA12CD
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

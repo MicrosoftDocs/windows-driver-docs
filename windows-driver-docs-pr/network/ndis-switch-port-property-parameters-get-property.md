@@ -1,7 +1,7 @@
 ---
-title: NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS\_GET\_PROPERTY macro
+title: NDIS_SWITCH_PORT_PROPERTY_PARAMETERS_GET_PROPERTY macro
 author: windows-driver-content
-description: Hyper-V extensible switch extensions use the NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS\_GET\_PROPERTY macro to access the port property buffer inside an NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS structure.
+description: Hyper-V extensible switch extensions use the NDIS_SWITCH_PORT_PROPERTY_PARAMETERS_GET_PROPERTY macro to access the port property buffer inside an NDIS_SWITCH_PORT_PROPERTY_PARAMETERS structure.
 ms.assetid: 51E84480-1858-4B7A-BB4E-A2EA72149271
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

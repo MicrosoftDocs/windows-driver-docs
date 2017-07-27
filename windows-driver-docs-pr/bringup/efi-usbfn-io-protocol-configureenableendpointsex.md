@@ -1,7 +1,7 @@
 ---
-title: EFI\_USBFN\_IO\_PROTOCOL.ConfigureEnableEndpointsEx
+title: EFI_USBFN_IO_PROTOCOL.ConfigureEnableEndpointsEx
 author: windows-driver-content
-description: EFI\_USBFN\_IO\_PROTOCOL.ConfigureEnableEndpointsEx
+description: EFI_USBFN_IO_PROTOCOL.ConfigureEnableEndpointsEx
 ms.assetid: 54DE0D7F-788F-49C3-AF5C-7EDAA0D09D20
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x140 STORAGE\_DEVICE\_ABNORMALITY\_DETECTED
-description: The STORAGE\_DEVICE\_ABNORMALITY\_DETECTED bug check has a value of 0x00000140 that indicates that the storage driver stack encountered a failure to respond.
+title: Bug Check 0x140 STORAGE_DEVICE_ABNORMALITY_DETECTED
+description: The STORAGE_DEVICE_ABNORMALITY_DETECTED bug check has a value of 0x00000140 that indicates that the storage driver stack encountered a failure to respond.
 ms.assetid: 7D0C8F15-EC9C-47A5-9EF4-3FB8E21CAD9A
 keywords: ["Bug Check 0x140 STORAGE_DEVICE_ABNORMALITY_DETECTED", "STORAGE_DEVICE_ABNORMALITY_DETECTED"]
 ms.author: windowsdriverdev

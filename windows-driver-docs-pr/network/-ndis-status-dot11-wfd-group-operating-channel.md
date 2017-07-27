@@ -1,5 +1,5 @@
 ---
-title: NDIS\_STATUS\_DOT11\_WFD\_GROUP\_OPERATING\_CHANNEL
+title: NDIS_STATUS_DOT11_WFD_GROUP_OPERATING_CHANNEL
 author: windows-driver-content
 ms.assetid: CAEFF142-3A87-4824-A0B1-73809B64BA85
 description: 

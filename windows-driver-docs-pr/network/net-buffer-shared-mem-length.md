@@ -1,7 +1,7 @@
 ---
-title: NET\_BUFFER\_SHARED\_MEM\_LENGTH macro
+title: NET_BUFFER_SHARED_MEM_LENGTH macro
 author: windows-driver-content
-description: The NET\_BUFFER\_SHARED\_MEM\_LENGTH macro gets the shared memory offset from a NET\_BUFFER\_SHARED\_MEMORY structure.
+description: The NET_BUFFER_SHARED_MEM_LENGTH macro gets the shared memory offset from a NET_BUFFER_SHARED_MEMORY structure.
 ms.assetid: 651143e7-9198-4cc6-92a8-d5247f6e32f9
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

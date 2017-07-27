@@ -1,7 +1,7 @@
 ---
-title: NDIS\_STATUS\_WDI\_INDICATION\_NLO\_DISCOVERY
+title: NDIS_STATUS_WDI_INDICATION_NLO_DISCOVERY
 author: windows-driver-content
-description: Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_NLO\_DISCOVERY to indicate Network List Offload (NLO) discovery.
+description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_NLO_DISCOVERY to indicate Network List Offload (NLO) discovery.
 ms.assetid: 1a789bd8-8601-45f3-a9bf-5220c20379cb
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

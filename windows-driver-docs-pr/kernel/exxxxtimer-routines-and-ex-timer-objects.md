@@ -1,5 +1,5 @@
 ---
-title: ExXxxTimer Routines and EX\_TIMER Objects
+title: ExXxxTimer Routines and EX_TIMER Objects
 author: windows-driver-content
 description: Starting with Windows 8.1, a comprehensive set of ExXxxTimer routines is available to manage timers.
 ms.assetid: 5F2622F5-4D1A-48F4-9FF5-27DEC6109266

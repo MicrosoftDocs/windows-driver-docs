@@ -1,7 +1,7 @@
 ---
-title: OID\_WDI\_SET\_P2P\_START\_BACKGROUND\_DISCOVERY
+title: OID_WDI_SET_P2P_START_BACKGROUND_DISCOVERY
 author: windows-driver-content
-description: OID\_WDI\_SET\_P2P\_START\_BACKGROUND\_DISCOVERY instructs the adapter to periodically perform Wi-Fi Direct discovery in the background
+description: OID_WDI_SET_P2P_START_BACKGROUND_DISCOVERY instructs the adapter to periodically perform Wi-Fi Direct discovery in the background
 ms.assetid: DF58B71D-7D45-4E0D-963F-A70471363DF5
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

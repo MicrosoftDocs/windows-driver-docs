@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_PHY\_SUPPORTED\_RX\_DATA\_RATES\_LIST
+title: WDI_TLV_PHY_SUPPORTED_RX_DATA_RATES_LIST
 author: windows-driver-content
-description: WDI\_TLV\_PHY\_SUPPORTED\_RX\_DATA\_RATES\_LIST is an unused TLV.
+description: WDI_TLV_PHY_SUPPORTED_RX_DATA_RATES_LIST is an unused TLV.
 ms.assetid: B034CBE0-EAC2-4EBE-BF7D-A5D05E792AD0
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

@@ -1,7 +1,7 @@
 ---
-title: NDIS\_NBL\_GET\_MEDIA\_SPECIFIC\_INFO macro
+title: NDIS_NBL_GET_MEDIA_SPECIFIC_INFO macro
 author: windows-driver-content
-description: The NDIS\_NBL\_GET\_MEDIA\_SPECIFIC\_INFO macro gets a media-specific information data structure from a linked list of such structures that are associated with a NET\_BUFFER\_LIST structure.
+description: The NDIS_NBL_GET_MEDIA_SPECIFIC_INFO macro gets a media-specific information data structure from a linked list of such structures that are associated with a NET_BUFFER_LIST structure.
 ms.assetid: 44054921-4ddc-4102-9840-bb069b59d2ae
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

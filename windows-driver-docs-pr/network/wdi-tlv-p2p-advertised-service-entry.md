@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_P2P\_ADVERTISED\_SERVICE\_ENTRY
+title: WDI_TLV_P2P_ADVERTISED_SERVICE_ENTRY
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_ADVERTISED\_SERVICE\_ENTRY is a TLV that contains an advertised service entry.
+description: WDI_TLV_P2P_ADVERTISED_SERVICE_ENTRY is a TLV that contains an advertised service entry.
 ms.assetid: C9BBA5D4-EC51-4D03-B997-A95B3168E64F
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

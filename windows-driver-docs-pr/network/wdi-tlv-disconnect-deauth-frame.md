@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_DISCONNECT\_DEAUTH\_FRAME
+title: WDI_TLV_DISCONNECT_DEAUTH_FRAME
 author: windows-driver-content
-description: WDI\_TLV\_DISCONNECT\_DEAUTH\_FRAME is a TLV that contains the received deauthentication frame.
+description: WDI_TLV_DISCONNECT_DEAUTH_FRAME is a TLV that contains the received deauthentication frame.
 ms.assetid: 394B83C7-D001-4816-BC38-42325469863C
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

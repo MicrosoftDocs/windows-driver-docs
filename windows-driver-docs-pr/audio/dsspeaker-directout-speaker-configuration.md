@@ -1,6 +1,6 @@
 ---
-title: DSSPEAKER\_DIRECTOUT Speaker Configuration
-description: DSSPEAKER\_DIRECTOUT Speaker Configuration
+title: DSSPEAKER_DIRECTOUT Speaker Configuration
+description: DSSPEAKER_DIRECTOUT Speaker Configuration
 ms.assetid: a4198fb7-157f-40e3-8cca-5a9e392087d2
 keywords:
 - DSSPEAKER_DIRECTOUT speaker configuration WDK audio

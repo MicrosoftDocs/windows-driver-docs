@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x138 GPIO\_CONTROLLER\_DRIVER\_ERROR
-description: The GPIO\_CONTROLLER\_DRIVER\_ERROR bug check has a value of 0x00000138. This bug check indicates that the GPIO class extension driver encountered a fatal error.
+title: Bug Check 0x138 GPIO_CONTROLLER_DRIVER_ERROR
+description: The GPIO_CONTROLLER_DRIVER_ERROR bug check has a value of 0x00000138. This bug check indicates that the GPIO class extension driver encountered a fatal error.
 ms.assetid: 4025D968-10F9-4F2F-953F-914A4BE7D883
 keywords: ["Bug Check 0x138 GPIO_CONTROLLER_DRIVER_ERROR", "GPIO_CONTROLLER_DRIVER_ERROR"]
 ms.author: windowsdriverdev

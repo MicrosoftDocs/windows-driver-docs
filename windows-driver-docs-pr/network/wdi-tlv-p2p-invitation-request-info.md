@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_P2P\_INVITATION\_REQUEST\_INFO
+title: WDI_TLV_P2P_INVITATION_REQUEST_INFO
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_INVITATION\_REQUEST\_INFO is a TLV that contains Wi-Fi Direct Invitation Request information.
+description: WDI_TLV_P2P_INVITATION_REQUEST_INFO is a TLV that contains Wi-Fi Direct Invitation Request information.
 ms.assetid: 055B0F6D-2B68-495D-8253-2D213D699383
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

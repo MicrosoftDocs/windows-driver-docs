@@ -1,7 +1,7 @@
 ---
 title: NdisSetNblFlag macro
 author: windows-driver-content
-description: The NdisSetNblFlag macro sets a flag in a NET\_BUFFER\_LIST structure.
+description: The NdisSetNblFlag macro sets a flag in a NET_BUFFER_LIST structure.
 ms.assetid: 0a92b689-fe82-4ac6-a674-5e249dd8e1f1
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

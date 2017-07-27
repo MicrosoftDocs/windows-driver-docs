@@ -1,7 +1,7 @@
 ---
-title: Using the CONNECT\_MESSAGE\_BASED Version of IoConnectInterruptEx
+title: Using the CONNECT_MESSAGE_BASED Version of IoConnectInterruptEx
 author: windows-driver-content
-description: Using the CONNECT\_MESSAGE\_BASED Version of IoConnectInterruptEx
+description: Using the CONNECT_MESSAGE_BASED Version of IoConnectInterruptEx
 ms.assetid: 8e06c6aa-85de-4ed2-ac0d-0179201d1272
 keywords: ["IoConnectInterruptEx", "CONNECT_MESSAGE_BASED", "message-signaled interrupts WDK kernel", "automatic interrupt detections WDK kernel"]
 ms.author: windowsdriverdev

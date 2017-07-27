@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_CIPHER\_KEY\_CCMP\_KEY
+title: WDI_TLV_CIPHER_KEY_CCMP_KEY
 author: windows-driver-content
-description: WDI\_TLV\_CIPHER\_KEY\_CCMP\_KEY is a TLV that contains CCMP cipher algorithm key data for OID\_WDI\_SET\_ADD\_CIPHER\_KEY.
+description: WDI_TLV_CIPHER_KEY_CCMP_KEY is a TLV that contains CCMP cipher algorithm key data for OID_WDI_SET_ADD_CIPHER_KEY.
 ms.assetid: A4754EAC-AA54-45CC-A7C5-B78A2757E012
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 

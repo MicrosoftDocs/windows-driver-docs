@@ -1,7 +1,7 @@
 ---
-title: WDI\_TLV\_P2P\_DISCOVERY\_CHANNEL\_SETTINGS
+title: WDI_TLV_P2P_DISCOVERY_CHANNEL_SETTINGS
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_DISCOVERY\_CHANNEL\_SETTINGS is a TLV that contains Wi-Fi Direct discovery channel settings.
+description: WDI_TLV_P2P_DISCOVERY_CHANNEL_SETTINGS is a TLV that contains Wi-Fi Direct discovery channel settings.
 ms.assetid: 50BD3F70-4C12-4984-8E3F-AEC9F5C3CDCA
 ms.author: windowsdriverdev 
 ms.date: 0718/2017 
