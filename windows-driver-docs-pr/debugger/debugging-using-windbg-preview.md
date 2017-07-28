@@ -8,26 +8,37 @@ description: This section describes how to perform basic debugging tasks using t
 Welcome to the WinDbg Preview. This next gen debugger is being developed with the debugger communiyt in mind. Use the feedback button to provide feedback.
 
 For the latest news, refer to the team blog, located here.
+[https://blogs.msdn.microsoft.com/windbg/](https://blogs.msdn.microsoft.com/windbg/)
 
 This section describes how to perform basic debugging tasks using the WinDbg debugger.
 
-Details are given in the following topics:
+Review these topics to install and configure.
 
 - [WinDbg Preview Installation](windbg-install-preview.md)
 - [WinDbg Preview Setup – settings and workspaces](windbg-setup-preview.md)
 - [Coexisting with the classic WinDbg debugger](windbg-coexist-preview.md)
+
+These topics describe how to get connected to the environment that you want to debug. 
+
 - [Debugging a User-Mode Process Using WinDbg](windbg-user-mode-preview.md)
 -  (debugging-a-user-mode-process-using-windbg.md)
 - [Attaching to a kernel process.md](windbg-kernel-mode-preview.md)
 -   [Live Kernel-Mode Debugging Using WinDbg](performing-kernel-mode-debugging-using-windbg.md)
+
+These topics describe how to compelte common tasks, organized by the menu tabs.
+
 - [View](windbg-view-preview.md)
-- [Breakpoints](windbg-breakpoints-preview)
+- [Breakpoints](windbg-breakpoints-preview.md)
 -   [Setting Breakpoints in WinDbg](setting-breakpoints-in-windbg.md)
-- [Data Model](windbg-data-model-preview)
+- [Data Model](windbg-data-model-preview.md)
 - [Scripting](windbg-scripting-preview.md)
 - [Logs](windbg-logs-preview.md)
 -   [Keeping a Log File in WinDbg](keeping-a-log-file-in-windbg.md)
 
+
+************************************
+TBD - Possible post release content
+************************************
 
 -   [Opening a Dump File Using WinDbg](opening-a-crash-dump-file-using-windbg.md)
 -   [Ending a Debugging Session in WinDbg](ending-a-debugging-session-in-windbg.md)
