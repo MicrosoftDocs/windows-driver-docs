@@ -18,15 +18,7 @@ By default, Device Manager shows the state of every device on a computer. In som
 
 To hide a device in Device Manager, you can mark the device as a *hidden device*. Typically, Device Manager does not display hidden devices. (Note, however, that users can override this setting and display all devices within Device Manager, even hidden ones. For more information about how to override this setting, see [Viewing Hidden Devices](https://msdn.microsoft.com/library/windows/hardware/ff553955).)
 
-There are three ways to mark your device as hidden: during installation, within the device's driver, or by using the ACPI BIOS.
-
-### Hiding Devices During Installation
-
-There are two ways to mark a device as hidden within its INF file:
-
--   The device's INF file can specify a pre-existing device setup class that is marked as **NoDisplayClass** in the INF file. Some device setup classes that are included with the operating system, such as printers, are marked as **NoDisplayClass**.
-
--   You can also create a new custom device setup class in the device's INF file. To mark the class as **NoDisplayClass**, include a **ClassInstall32**[**INF AddReg section**](https://msdn.microsoft.com/library/windows/hardware/ff546320) in the INF file. Use this section to set the **NoDisplayClass** registry key to 1.
+There are two ways to mark your device as hidden: within the device's driver or by using the ACPI BIOS.
 
 ### Hiding Devices from Within a Driver
 
