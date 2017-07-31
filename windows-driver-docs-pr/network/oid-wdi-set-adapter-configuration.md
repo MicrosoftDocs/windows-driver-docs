@@ -4,7 +4,7 @@ author: windows-driver-content
 description: OID_WDI_SET_ADAPTER_CONFIGURATION configures the adapter. It is an optional property and can only be sent before any ports are created.
 ms.assetid: d1c37943-4755-4b9e-ab9c-9378aeca9c03
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

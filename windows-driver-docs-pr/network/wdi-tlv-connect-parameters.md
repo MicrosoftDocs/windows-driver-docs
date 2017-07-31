@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_CONNECT_PARAMETERS is a TLV that contains parameters for OID_WDI_TASK_CONNECT and OID_WDI_TASK_ROAM.
 ms.assetid: 6B2B4E5D-4BF9-4803-A373-FDF64AD3C99B
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

@@ -4,7 +4,7 @@ author: windows-driver-content
 description: Hyper-V extensible switch extensions use the NDIS_SWITCH_PORT_DESTINATION_AT_ARRAY_INDEX macro to access an NDIS_SWITCH_PORT_DESTINATION element inside an NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY structure.
 ms.assetid: 2FD94E64-1E15-426D-822A-B6F5FC035C92
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

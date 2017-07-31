@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WSK_TDI_DEVICENAME_MAPPING
 ms.assetid: 7636fa80-3908-4808-8fb8-6227ec6e023b
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

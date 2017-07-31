@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_NEXT_DIALOG_TOKEN is a TLV that contains the dialog token to be used in the next Action frame.
 ms.assetid: B11331CB-50D3-4A3B-93A5-359ABD918E70
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

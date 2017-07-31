@@ -4,7 +4,7 @@ author: windows-driver-content
 description: OID_WDI_TASK_ROAM requests that the adapter tries to roam from the currently connected AP to a new one.
 ms.assetid: 22976d21-9212-4915-ab7a-fcc15d228db1
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

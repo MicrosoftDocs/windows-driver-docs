@@ -4,7 +4,7 @@ author: windows-driver-content
 description: The NET_BUFFER_LIST_RECEIVE_FILTER_ID macro gets a receive filter identifier from the out-of-band (OOB) data in a NET_BUFFER_LIST structure.
 ms.assetid: 70ae6dc6-ae4d-4bef-adda-924b39547fa7
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_PHY_INFO is a TLV that contains PHY information.
 ms.assetid: 3A363FDC-FE79-42C4-AD19-A6B960857CBD
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

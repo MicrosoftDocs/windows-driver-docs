@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_P2P_CHANNEL_NUMBER is a TLV that contains Wi-Fi Direct channel number information.
 ms.assetid: CE17143E-5DA1-4F5B-A2E0-2BD480030129
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

@@ -4,7 +4,7 @@ author: windows-driver-content
 description: NET_BUFFER_LIST_STATUS is a macro that NDIS drivers use to access the StatusCode member of a NET_BUFFER_LIST structure.
 ms.assetid: 0101c6f1-4690-4d53-a28d-d13995dc2691
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

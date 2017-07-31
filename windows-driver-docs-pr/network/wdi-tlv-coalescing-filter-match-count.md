@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_COALESCING_FILTER_MATCH_COUNT is a TLV that contains the number of packets that have matched receive filters on the network port.
 ms.assetid: 9B9A1ED9-B842-4788-94C9-829876EB5D73
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

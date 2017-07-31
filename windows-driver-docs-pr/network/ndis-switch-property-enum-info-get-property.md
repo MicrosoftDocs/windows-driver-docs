@@ -4,7 +4,7 @@ author: windows-driver-content
 description: Hyper-V extensible switch extensions use the NDIS_SWITCH_PROPERTY_ENUM_INFO_GET_PROPERTY macro to access the extensible switch property buffer that is specified by an NDIS_SWITCH_PROPERTY_ENUM_INFO structure.
 ms.assetid: D158A9FB-8646-40FD-9C2F-98BFB30A6125
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

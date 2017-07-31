@@ -4,7 +4,7 @@ author: windows-driver-content
 description: SIO_WSK_QUERY_IDEAL_SEND_BACKLOG
 ms.assetid: 8d05b1dc-9dbf-4726-9eaf-721d1fb8282e
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

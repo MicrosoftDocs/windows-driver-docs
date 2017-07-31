@@ -4,7 +4,7 @@ author: windows-driver-content
 description: NDIS NET_BUFFER Send and Receive Macros
 ms.assetid: f1117ac8-a9f4-466a-b9f1-ae729a6c9acc
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

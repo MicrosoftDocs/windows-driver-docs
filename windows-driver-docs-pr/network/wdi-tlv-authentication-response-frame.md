@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_ASSOCIATION_RESPONSE_FRAME is a TLV that contains an authentication response frame.
 ms.assetid: 0BD8BDD9-7D51-413F-8740-FD49F71249B1
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 
