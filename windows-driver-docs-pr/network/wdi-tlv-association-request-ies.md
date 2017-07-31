@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_ASSOCIATION_REQUEST_IES is an unused TLV.
 ms.assetid: 7D057406-7017-46F8-80DD-857F38AFF5D5
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

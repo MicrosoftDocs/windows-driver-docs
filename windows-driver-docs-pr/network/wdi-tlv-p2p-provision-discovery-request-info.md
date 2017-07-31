@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_P2P_PROVISION_DISCOVERY_REQUEST_INFO is a TLV that contains Wi-Fi Direct Provision Discovery Request information.
 ms.assetid: C71F2FA9-2255-45E9-83CD-FA8DBEF5EA74
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

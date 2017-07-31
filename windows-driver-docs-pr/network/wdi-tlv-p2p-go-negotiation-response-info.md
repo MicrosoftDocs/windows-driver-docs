@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_P2P_GO_NEGOTIATION_RESPONSE_INFO is a TLV that contains Wi-Fi Direct Group Owner negotiation response information.
 ms.assetid: A0BB2CF6-4168-4973-92D0-EFF9F596F1BE
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

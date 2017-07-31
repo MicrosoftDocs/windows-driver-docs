@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WSK Client Control Operations
 ms.assetid: aa1159f5-defd-440e-9628-906a246c11df
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

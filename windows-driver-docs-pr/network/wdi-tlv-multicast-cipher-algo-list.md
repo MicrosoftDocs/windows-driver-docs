@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_MULTICAST_CIPHER_ALGO_LIST is a TLV that contains a list of multicast cipher algorithms.
 ms.assetid: 55CDD295-6BDA-4F3A-B01F-FC9D5FB38355
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

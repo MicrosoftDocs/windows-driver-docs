@@ -4,7 +4,7 @@ author: windows-driver-content
 description: Hyper-V extensible switch extensions use the NET_BUFFER_LIST_SWITCH_FORWARDING_DETAIL macro to access the NDIS_SWITCH_FORWARDING_DETAIL_NET_BUFFER_LIST_INFO union in the extensible switch context area in a NET_BUFFER_LIST structure.
 ms.assetid: 8E6BE3AA-C4FD-40D8-AF13-5C7D0E7B8080
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

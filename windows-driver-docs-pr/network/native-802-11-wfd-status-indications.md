@@ -4,7 +4,7 @@ author: windows-driver-content
 description: This section lists NDIS status notifications for Wi-Fi Direct (WFD) miniport drivers
 ms.assetid: D0D18181-06B2-4554-A4D3-75B7778BEB04
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

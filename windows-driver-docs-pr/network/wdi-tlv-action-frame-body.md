@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_ACTION_FRAME_BODY is a TLV that contains the body of an Action Frame.
 ms.assetid: 272782A9-F92E-4F32-A92B-B18EBE7C1803
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

@@ -4,7 +4,7 @@ author: windows-driver-content
 description: OID_WDI_GET_NEXT_ACTION_FRAME_DIALOG_TOKEN requests the DialogToken to be used in the next Action frame.
 ms.assetid: EB5F6077-1566-41AE-B414-9ECF24BAE982
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 
