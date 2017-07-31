@@ -4,7 +4,7 @@ author: windows-driver-content
 description: Hyper-V extensible switch extensions use the NDIS_SWITCH_PROPERTY_CUSTOM_GET_BUFFER macro to access the custom extensible switch property buffer inside an NDIS_SWITCH_PROPERTY_CUSTOM structure.
 ms.assetid: 40D17048-0014-4FFE-8FEA-73E94CC7AD32
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

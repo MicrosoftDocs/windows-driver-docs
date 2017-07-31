@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_INDICATION_STOP_AP is a TLV that contains the reason for a Stop AP indication.
 ms.assetid: 49FA6AF6-68BE-437B-9715-5090F52F0109
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

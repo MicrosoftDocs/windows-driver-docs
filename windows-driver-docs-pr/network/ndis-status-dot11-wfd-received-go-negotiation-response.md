@@ -4,7 +4,7 @@ author: windows-driver-content
 ms.assetid: BBC795A2-719E-4519-BBA3-0E9B557771FB
 description: 
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

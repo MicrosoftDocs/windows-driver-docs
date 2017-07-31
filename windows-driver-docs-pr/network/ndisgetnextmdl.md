@@ -4,7 +4,7 @@ author: windows-driver-content
 description: The NdisGetNextMdl macro retrieves the next MDL in an MDL chain, given a pointer to the current MDL.
 ms.assetid: 5b59ca7c-0998-4d53-9553-4946ef85327c
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

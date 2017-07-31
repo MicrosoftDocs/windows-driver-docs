@@ -4,7 +4,7 @@ author: windows-driver-content
 description: NET_BUFFER_LIST_FLAGS is a macro that NDIS drivers use to get the flags associated with a NET_BUFFER_LIST structure.
 ms.assetid: 2ad9b515-4bce-463c-893f-047554e9cbd0
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

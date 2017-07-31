@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_BSS_ENTRY is a TLV that contains BSS entry information.
 ms.assetid: 1D3AAB94-9FCE-4243-994A-7195440DDFCA
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

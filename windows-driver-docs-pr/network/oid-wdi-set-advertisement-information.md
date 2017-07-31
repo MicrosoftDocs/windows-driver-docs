@@ -4,7 +4,7 @@ author: windows-driver-content
 description: OID_WDI_SET_ADVERTISEMENT_INFORMATION configures the Information Elements (IEs) and other advertisement settings to be included in the probe request, probe response, and beacons sent by the specified port.
 ms.assetid: efa1fc93-2cc8-4d14-be5f-d099ef3c371e
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

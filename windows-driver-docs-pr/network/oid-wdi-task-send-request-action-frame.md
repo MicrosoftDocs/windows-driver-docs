@@ -4,7 +4,7 @@ author: windows-driver-content
 description: OID_WDI_TASK_SEND_REQUEST_ACTION_FRAME requests that the device sends an Action Frame Request to another device.
 ms.assetid: CAC86B50-BE85-4650-B6D3-738B4E960587
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

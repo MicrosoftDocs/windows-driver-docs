@@ -4,7 +4,7 @@ author: windows-driver-content
 description: SR-IOV Macros
 ms.assetid: 5B6B95F4-3F6E-4EE7-87AF-E4264FE95A92
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

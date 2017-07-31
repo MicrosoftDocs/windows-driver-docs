@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_SET_CLEAR_RECEIVE_COALESCING is a TLV that contains a filter ID for OID_WDI_SET_CLEAR_RECEIVE_COALESCING.
 ms.assetid: 4AF7A1A4-A1B4-48AD-9989-B9E317F93459
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

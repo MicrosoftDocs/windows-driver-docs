@@ -4,7 +4,7 @@ author: windows-driver-content
 description: OID_WDI_IHV_REQUEST is used to forward information that an IHV extensibility module has sent to the miniport.
 ms.assetid: d5639def-ddde-4972-b331-46c0f768d155
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

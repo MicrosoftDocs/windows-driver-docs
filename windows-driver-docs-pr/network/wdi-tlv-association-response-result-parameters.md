@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_ASSOCIATION_RESPONSE_RESULT_PARAMETERS is a TLV that contains association response result parameters.
 ms.assetid: 8BF2C8B4-207E-479A-9903-3FCDEED5BA2C
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

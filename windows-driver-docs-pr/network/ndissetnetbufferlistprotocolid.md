@@ -4,7 +4,7 @@ author: windows-driver-content
 description: The NdisSetNetBufferListProtocolId macro sets the protocol identifier in the NetBufferListInfo member of a NET_BUFFER_LIST structure.
 ms.assetid: e143c914-cfb0-4c06-9da7-a2f5ef09afe2
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

@@ -4,7 +4,7 @@ author: windows-driver-content
 description: The NDIS_CURRENT_PROCESSOR_NUMBER macro returns the system-assigned number of the current processor that the caller is running on.
 ms.assetid: 83a9861c-f8c1-404b-baa3-c5e9f3d760bb
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

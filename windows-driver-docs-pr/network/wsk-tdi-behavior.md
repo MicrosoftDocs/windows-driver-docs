@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WSK_TDI_BEHAVIOR
 ms.assetid: 84e4c8c3-2c31-4db5-bb25-309c6bb176ff
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 
