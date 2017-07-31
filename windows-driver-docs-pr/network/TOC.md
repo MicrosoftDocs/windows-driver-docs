@@ -2425,7 +2425,7 @@
 ### [Remote NDIS Device Control](remote-ndis-device-control.md)
 ### [Remote NDIS INF Template](remote-ndis-inf-template.md)
 ### [Types of Remote NDIS Devices](types-of-remote-ndis-devices.md)
-## [Remote NDIS Communication](remote-ndis--rndis-.md)
+## [Remote NDIS Communication](remote-ndis-communication.md)
 ### [Remote NDIS Control Messages](remote-ndis-control-messages.md)
 #### [REMOTE_NDIS_INITIALIZE_MSG](remote-ndis-initialize-msg.md)
 #### [REMOTE_NDIS_INITIALIZE_CMPLT](remote-ndis-initialize-cmplt.md)
