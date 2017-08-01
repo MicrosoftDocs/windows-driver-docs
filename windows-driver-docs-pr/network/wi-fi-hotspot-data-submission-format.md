@@ -10,6 +10,9 @@ ms.technology: windows-devices
 
 # Wi-Fi Hotspot Data Submission Format
 
+> [!IMPORTANT]
+> Starting in Windows 10, version 1709, the Wi-Fi Hotspot Offloading feature is deprecated and should not be used. 
+
 Hotspot data submitted to the discovery service must be in JavaScript Object Notation (JSON) and must use the following elements.
 
 | Element | Type | Description |

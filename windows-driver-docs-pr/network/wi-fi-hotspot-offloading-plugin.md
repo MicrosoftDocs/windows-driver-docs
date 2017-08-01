@@ -10,6 +10,9 @@ ms.technology: windows-devices
 
 # Wi-Fi Hotspot Offloading Plugin
 
+> [!IMPORTANT]
+> Starting in Windows 10, version 1709, the Wi-Fi Hotspot Offloading feature is deprecated and should not be used. 
+
 To enable Wi-Fi offloading, create and install a hotspot plugin. This topic discusses a few of the issues to consider when developing a hotspot plugin. It also provides a general description of the plugin APIs to be implemented as part of the plugin package.
 
 ## Planning the plugin
