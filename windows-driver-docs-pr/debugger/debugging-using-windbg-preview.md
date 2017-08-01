@@ -7,7 +7,7 @@ description: This section describes how to perform basic debugging tasks using t
 
 Welcome to the WinDbg Preview. This next gen debugger is being developed with the debugger communiyt in mind. Use the feedback button to provide feedback.
 
-For the latest news, refer to the team blog, located here.
+For the latest news, refer to the debugger tools team blog, located here.
 [https://blogs.msdn.microsoft.com/windbg/](https://blogs.msdn.microsoft.com/windbg/)
 
 This section describes how to perform basic debugging tasks using the WinDbg debugger.
@@ -25,7 +25,7 @@ These topics describe how to get connected to the environment that you want to d
 - [Attaching to a kernel process.md](windbg-kernel-mode-preview.md)
 -   [Live Kernel-Mode Debugging Using WinDbg](performing-kernel-mode-debugging-using-windbg.md)
 
-These topics describe how to compelte common tasks, organized by the menu tabs.
+These topics describe how to complete common tasks, organized by the menu tabs.
 
 - [View](windbg-view-preview.md)
 - [Breakpoints](windbg-breakpoints-preview.md)
@@ -36,8 +36,91 @@ These topics describe how to compelte common tasks, organized by the menu tabs.
 -   [Keeping a Log File in WinDbg](keeping-a-log-file-in-windbg.md)
 
 
+# Providing Feedback
+
+Your feedback will guide the debugger tool development effort going forward. 
+
+- If you have feedback such as a feature that you really want to see, use the Feedback Hub.
+- If you see a bug or unexpected behavior - Send-a-frown, and/or use the Feedback Hub and check the “This is a bug” check box.
+- If you really like a feature  -  hit send-a-smile and tell us!
+- TBD >> newsgroup - use the existing one?
+
+
+# Features of the next generation debugger
+
+The WinDbg Preview is the next generation debugger with a contemporary interface. The UI has been completely rewritten using the Microsoft Windows Presentation Foundation (WPF). For more information, see 
+[XAML Overview (WPF)](https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/xaml-overview-wpf). 
+
+![Screen shot of main screen in debugger](/images/windbgx-main-menu.png)
+
+### Backwards Compatability 
+
+Because the underling debugger engine is the same, all of the previous debugger commands and debugger extensions continue to work.
+
+### General Features
+
+- **Easier Connection Setup and Recall** - The WinDbg Preview includes the ability to recall previous session configuration information.
+- **Update notifications** - When new updates are available, a banner will be displayed notifying you that an update is available.
+- **In product feedback channel** - Your feedback will guide the development effort going forward. For more information, see [Providing Feedback](#providing-feedback)
+- **Dump file processor detection** -Auto-detect dump processor architecture for managed dumps.
+- TBD >> **UI Extensibility** - The UI can be extended to add new windows and functionality to WinDbg Preview.  
+- **Performance Improvments** Windows now load asynchronously and can be canceled - When you run another command, WinDbgNext will stop the loading of your locals, watch, or other windows.
+
+
+### View  
+
+- **Disassembly Window Improvements** - The disassembly window is also improved, the highlight of the current instruction remains where it is when you scroll. 
+- **Memory Window Improvements** - The memory window has highlighting and improved scrolling.
+- **Data model visualization** - The locals and watch windows are both based off of the data model that is used by the dx command. This means the locals and watch windows will benefit from any NatVis or JavaScript extensions you have loaded, and can even support full LINQ queries, just like the dx command. 
+
+For more information, see [View](windbg-view-preview.md).
+
+![Screen shot of view screen in debugger](/images/windbgx-view-menu.png)
+
+
+### Command, memory and source windows  
+
+- **Command window** - The command window provides easy access to toggle DML and clear the debugger command window. All current debugger commands are compatible with and continue to work in WinDbg Preview.
+- **Memory Window** - The memory Window
+- **Source Window** - 
+![Screen shot of other windows in debugger](/images/windbgx-other-windows-menu.png)
+
+
+### Breakpoints 
+
+- **Enable/Disable Breakpoints** - The breakpoints window shows all your current breakpoints and provides easy access to enabling and disabling them. 
+- **Hit Count** - The breakpoint window keep a running total of each time the breakpoint is hit.
+
+For more information, see [Breakpoints](windbg-breakpoints-preview.md).
+
+![Screen shot of breakpoint screen in debugger](/images/windbgx-breakpoint-menu.png)
+
+
+### Data Model 
+
+- **Built in data model support** - WinDbg Preview is written with built in data model support and the data model is available through out the debugger.
+- **Model window** - The model window gives you an expandable and browsable version of ‘dx’ and ‘dx -g’, letting you create powerful tables on-top of your NatVis, JavaScript, and LINQ queries. 
+
+For more information, see  [Data Model](windbg-data-model-preview.md)
+.
+
+### Scripting  
+
+- **Script development UI** - A lot of people have taken advantage of JavaScript and NatVis support in WinDbg, adn there is now a scripting window to make that process easier, with error highlighting, Intellisense abd debugging. 
+
+For more information, see [Scripting](windbg-scripting-preview.md).
+
+
+### Logs  
+
+- **1** -
+- **2** -
+
+For more information, see [Logs](windbg-logs-preview.md)
+
+
 ************************************
-TBD - Possible post release content
+>> TBD - Possible post August release content
 ************************************
 
 -   [Opening a Dump File Using WinDbg](opening-a-crash-dump-file-using-windbg.md)
