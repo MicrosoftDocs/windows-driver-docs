@@ -1,7 +1,7 @@
 ---
-title: '\ UndefinePrefix Preprocessor Directive'
+title: '#UndefinePrefix Preprocessor Directive'
 author: windows-driver-content
-description: '\ UndefinePrefix Preprocessor Directive'
+description: '#UndefinePrefix Preprocessor Directive'
 ms.assetid: 7c99c2cf-6609-4fec-ae21-1477699ba5c8
 keywords:
 - preprocessor directives WDK GDL , keywords

@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_P2P_GROUP_ID is a TLV that contains the Group ID for Wi-Fi Direct GO.
 ms.assetid: 5DF5E7AA-4A5A-4AF5-90E6-40791C8DBB56
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

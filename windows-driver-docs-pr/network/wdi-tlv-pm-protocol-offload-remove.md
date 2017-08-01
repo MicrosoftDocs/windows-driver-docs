@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_PM_PROTOCOL_OFFLOAD_REMOVE is a TLV that contains the protocol offload ID to be removed with OID_WDI_SET_REMOVE_PM_PROTOCOL_OFFLOAD.
 ms.assetid: BD74C9F7-6370-41D5-841F-6949D7748E30
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

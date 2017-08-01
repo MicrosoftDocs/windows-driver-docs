@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_P2P_SERVICE_NAME_HASH is a TLV that contains the hash of a service name.
 ms.assetid: C6204FA9-BDCB-4BF7-8590-FA019B0E41EC
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

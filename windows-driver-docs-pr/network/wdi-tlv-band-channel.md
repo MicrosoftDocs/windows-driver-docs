@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_BAND_CHANNEL is a TLV that contains the channels to scan for a specified band.
 ms.assetid: CC3142BE-45CC-4064-A203-ADAF5BE05C01
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

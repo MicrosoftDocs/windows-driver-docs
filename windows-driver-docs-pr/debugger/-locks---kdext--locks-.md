@@ -1,5 +1,5 @@
 ---
-title: locks ( kdext\ .locks)
+title: !locks (!kdext*.locks)
 description: The locks extension in Kdextx86.dll and Kdexts.dll displays information about kernel ERESOURCE locks.
 ms.assetid: c1be6c6c-0028-459f-9c92-61df52cbc4b6
 keywords: ["kdext .locks extension", "ERESOURCE locks", "deadlocks", "locks ( kdext .locks) Windows Debugging"]

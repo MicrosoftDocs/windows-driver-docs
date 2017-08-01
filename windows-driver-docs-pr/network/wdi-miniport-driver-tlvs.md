@@ -4,7 +4,7 @@ author: windows-driver-content
 description: This section contains WDI TLVs (Type-Length-Value).
 ms.assetid: BAE1E159-F0CB-4A74-9E35-4361C94518E6
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

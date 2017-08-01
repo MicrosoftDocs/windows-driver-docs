@@ -4,7 +4,7 @@ author: windows-driver-content
 ms.assetid: C919BACF-A8E5-4D97-BDC9-DCBFF914C3C8
 description: 
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

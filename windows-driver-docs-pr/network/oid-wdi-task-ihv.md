@@ -4,7 +4,7 @@ author: windows-driver-content
 description: OID_WDI_TASK_IHV is used to start an IHV-initiated task.
 ms.assetid: 2F18A92D-D658-4454-874F-7DC3B6F8F453
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

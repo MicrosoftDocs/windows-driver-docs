@@ -4,7 +4,7 @@ author: windows-driver-content
 description: OID_WDI_GET_RECEIVE_COALESCING_MATCH_COUNT requests the number of packets that have matched receive filters on the network port.
 ms.assetid: 45b68057-d62a-4b77-9634-dfbed2817f23
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 
