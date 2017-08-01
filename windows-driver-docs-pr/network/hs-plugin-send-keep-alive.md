@@ -14,6 +14,8 @@ ms.technology: windows-devices
 
 # HS\_PLUGIN\_SEND\_KEEP\_ALIVE function
 
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+
 
 The **HS\_PLUGIN\_SEND\_KEEP\_ALIVE** function is called by the host to send a network connection keep-alive message. It will be called at the frequency specified in the **dwKeepAliveTimeMins** member of the plugin's [**HS\_PLUGIN\_PROFILE**](hs-plugin-profile.md) structure.
 

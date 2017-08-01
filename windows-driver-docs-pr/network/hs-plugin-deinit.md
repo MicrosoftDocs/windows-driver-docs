@@ -14,6 +14,8 @@ ms.technology: windows-devices
 
 # HS\_PLUGIN\_DEINIT function
 
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+
 
 The **HS\_PLUGIN\_DEINIT** function is called by the host to notify the plugin that it will be unloaded.
 

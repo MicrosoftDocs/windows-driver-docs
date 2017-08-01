@@ -14,6 +14,8 @@ ms.technology: windows-devices
 
 # HS\_PLUGIN\_START\_POST\_CONNECT\_AUTH function
 
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+
 
 The **HS\_PLUGIN\_START\_POST\_CONNECT\_AUTH** function is called to perform any post-connect authentication required to authenticate the device over the network.
 

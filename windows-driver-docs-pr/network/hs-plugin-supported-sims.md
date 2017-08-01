@@ -15,6 +15,8 @@ ms.technology: windows-devices
 
 # HS\_PLUGIN\_SUPPORTED\_SIMS structure
 
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+
 
 The **HS\_PLUGIN\_SUPPORTED\_SIMS** structure contains the list of supported SIM configurations. This list must be supplied if the hotspot plugin requires HTTP or EAP authentication for any of its networks.
 

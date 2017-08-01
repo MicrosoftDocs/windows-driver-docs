@@ -14,6 +14,8 @@ ms.technology: windows-devices
 
 # HS\_PLUGIN\_QUERY\_CELLULAR\_EXCEPTION\_HOSTS function
 
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+
 
 The **HS\_PLUGIN\_QUERY\_CELLULAR\_EXCEPTION\_HOSTS** function queries the list of hosts that the plugin will need to connect to over cellular as part of its authentication process.
 

@@ -15,6 +15,8 @@ ms.technology: windows-devices
 
 # HS\_SIM\_IDENTITY structure
 
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+
 
 The **HS\_SIM\_IDENTITY** structure contains SIM identification information required for EAP-SIM or EAP-AKA authentication.
 

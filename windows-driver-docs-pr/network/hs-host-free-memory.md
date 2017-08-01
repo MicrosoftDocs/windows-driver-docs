@@ -14,6 +14,8 @@ ms.technology: windows-devices
 
 # HS\_HOST\_FREE\_MEMORY function
 
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+
 
 The **HS\_HOST\_FREE\_MEMORY** function frees any memory that was allocated earlier by a call to [**HS\_HOST\_ALLOCATE\_MEMORY**](hs-host-allocate-memory.md).
 

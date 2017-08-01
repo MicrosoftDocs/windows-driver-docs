@@ -12,8 +12,7 @@ ms.technology: windows-devices
 
 # Wi-Fi Hotspot Offloading Reference
 
-> [!IMPORTANT]
-> Starting in Windows 10, version 1709, the Wi-Fi Hotspot Offloading feature is deprecated and should not be used. 
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
 
 This section contains descriptions of the Wi-Fi Hotspot Offloading programming elements and related information.
 

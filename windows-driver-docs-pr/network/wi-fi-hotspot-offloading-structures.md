@@ -12,6 +12,7 @@ ms.technology: windows-devices
 
 # Wi-Fi Hotspot Offloading Structures
 
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
 
 This section describes the data structures for the Wi-Fi Hotspot Offloading framework.
 

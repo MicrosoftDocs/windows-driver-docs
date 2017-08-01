@@ -15,6 +15,8 @@ ms.technology: windows-devices
 
 # HS\_SIM\_DATA structure
 
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+
 
 The **HS\_SIM\_DATA** structure contains information stored in the SIM card.
 
