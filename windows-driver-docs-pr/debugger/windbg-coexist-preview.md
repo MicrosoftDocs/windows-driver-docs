@@ -1,6 +1,6 @@
 ---
 title: WinDbg Preview Installation 
-description: This section describes how to have the WinDbg preview coexist with the clasic WinDbg debugger.
+description: This section describes how to have the WinDbg preview coexist with the classic WinDbg debugger.
 ms.author: windowsdriverdev
 ms.date: 07/28/2017
 ms.topic: article
@@ -11,9 +11,9 @@ ms.technology: windows-devices
 # WinDbg Preview - Debugger coexistance  
 
 
-This section describes how to have the WinDbg preview coexist with the clasic WinDbg debugger.
+This section describes how to have the WinDbg preview coexist with the classic WinDbg debugger.
 
-TBD
+*Additional content pending*
  
 
  

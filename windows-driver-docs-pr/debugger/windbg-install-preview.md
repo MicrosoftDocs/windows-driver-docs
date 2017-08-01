@@ -1,6 +1,6 @@
 ---
 title: WinDbg Preview Installation 
-description: This section describes how to install the WinDbg preview debugger.
+description: This section describes how to install the WinDbg Preview debugger.
 ms.author: windowsdriverdev
 ms.date: 07/28/2017
 ms.topic: article
@@ -10,11 +10,13 @@ ms.technology: windows-devices
 
 # WinDbg Preview Installation 
 
+This section describes how to install the WinDbg Preview debugger.
 
-This section describes how to perform basic debugging tasks using the WinDbg debugger.
+The WinDbg Preview debugger is available in the Windows Store. To install it, open the Windows Store and search for "Window Debugger Preview" Once the app is a located click to download and install it.
 
-TBD
- 
+
+*Additional content pending*
+
 
  
 

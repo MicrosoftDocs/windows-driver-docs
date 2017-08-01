@@ -5,14 +5,12 @@ description: This section describes how to perform basic debugging tasks using t
 
 # Debugging Using WinDbg Preview
 
-Welcome to the WinDbg Preview. This next gen debugger is being developed with the debugger communiyt in mind. Use the feedback button to provide feedback.
+Welcome to the WinDbg Preview. This next gen debugger is being developed with the debugger community in mind. For information on providing feedback to shape the future of WinDbg , see [Providing feedback](#providingfeedback).
 
 For the latest news, refer to the debugger tools team blog, located here.
 [https://blogs.msdn.microsoft.com/windbg/](https://blogs.msdn.microsoft.com/windbg/)
 
-This section describes how to perform basic debugging tasks using the WinDbg debugger.
-
-Review these topics to install and configure.
+Review these topics to install and configure WinDbg Preview.
 
 - [WinDbg Preview Installation](windbg-install-preview.md)
 - [WinDbg Preview Setup – settings and workspaces](windbg-setup-preview.md)
@@ -21,22 +19,19 @@ Review these topics to install and configure.
 These topics describe how to get connected to the environment that you want to debug. 
 
 - [Debugging a User-Mode Process Using WinDbg](windbg-user-mode-preview.md)
--  (debugging-a-user-mode-process-using-windbg.md)
-- [Attaching to a kernel process.md](windbg-kernel-mode-preview.md)
--   [Live Kernel-Mode Debugging Using WinDbg](performing-kernel-mode-debugging-using-windbg.md)
+- [Starting a kernel mode session ](windbg-kernel-mode-preview.md)
 
 These topics describe how to complete common tasks, organized by the menu tabs.
 
+- [File](windbg-file-preview.md)
+- [Home](windbg-home-preview.md)
 - [View](windbg-view-preview.md)
 - [Breakpoints](windbg-breakpoints-preview.md)
--   [Setting Breakpoints in WinDbg](setting-breakpoints-in-windbg.md)
 - [Data Model](windbg-data-model-preview.md)
 - [Scripting](windbg-scripting-preview.md)
-- [Logs](windbg-logs-preview.md)
--   [Keeping a Log File in WinDbg](keeping-a-log-file-in-windbg.md)
 
 
-# Providing Feedback
+# <span id="providingfeedback"></span>Providing feedback
 
 Your feedback will guide the debugger tool development effort going forward. 
 
@@ -44,6 +39,8 @@ Your feedback will guide the debugger tool development effort going forward.
 - If you see a bug or unexpected behavior - Send-a-frown, and/or use the Feedback Hub and check the “This is a bug” check box.
 - If you really like a feature  -  hit send-a-smile and tell us!
 - TBD >> newsgroup - use the existing one?
+
+![Screen shot of feedback hub showing feedback options including the add new feedback button](/images/windbgx-feedback-menu.png)
 
 
 # Features of the next generation debugger
@@ -64,32 +61,32 @@ Because the underling debugger engine is the same, all of the previous debugger 
 - **In product feedback channel** - Your feedback will guide the development effort going forward. For more information, see [Providing Feedback](#providing-feedback)
 - **Dump file processor detection** -Auto-detect dump processor architecture for managed dumps.
 - TBD >> **UI Extensibility** - The UI can be extended to add new windows and functionality to WinDbg Preview.  
-- **Performance Improvments** Windows now load asynchronously and can be canceled - When you run another command, WinDbgNext will stop the loading of your locals, watch, or other windows.
+- **Performance Improvements** Windows now load asynchronously and can be canceled - When you run another command, WinDbg Preview will stop the loading of your locals, watch, or other windows.
 
 
 ### View  
 
 - **Disassembly Window Improvements** - The disassembly window is also improved, the highlight of the current instruction remains where it is when you scroll. 
-- **Memory Window Improvements** - The memory window has highlighting and improved scrolling.
-- **Data model visualization** - The locals and watch windows are both based off of the data model that is used by the dx command. This means the locals and watch windows will benefit from any NatVis or JavaScript extensions you have loaded, and can even support full LINQ queries, just like the dx command. 
+- **Memory window improvements** - The memory window has highlighting and improved scrolling.
+- **Locals and watch data model visualization** - The locals and watch windows are both based off of the data model that is used by the dx command. This means the locals and watch windows will benefit from any NatVis or JavaScript extensions you have loaded, and can even support full LINQ queries, just like the dx command. 
+- **Logs** - This is a under the covers log of the WinDbg Preview internals. It can be viewed for troubleshooting or to monitor long running processes. You can continue to create a command log, using the .logopen command. For more information on that, see [Keeping a Log File in WinDbg](keeping-a-log-file-in-windbg.md).
 
-For more information, see [View](windbg-view-preview.md).
+For more information, see [WinDbg Preview View Menu ](windbg-view-preview.md).
 
 ![Screen shot of view screen in debugger](/images/windbgx-view-menu.png)
 
 
-### Command, memory and source windows  
+### Command, and source windows  
 
-- **Command window** - The command window provides easy access to toggle DML and clear the debugger command window. All current debugger commands are compatible with and continue to work in WinDbg Preview.
-- **Memory Window** - The memory Window
-- **Source Window** - 
-![Screen shot of other windows in debugger](/images/windbgx-other-windows-menu.png)
+- **Command window** - Use the command window provides easy access to toggle DML and clear the debugger command window. All current debugger commands are compatible with and continue to work in WinDbg Preview.
+- **Source window** - Use the source windows to work with source code files. 
+![Screen shot of other windows in debugger](/images/windbgx-source-windows-menu.png)
 
 
 ### Breakpoints 
 
-- **Enable/Disable Breakpoints** - The breakpoints window shows all your current breakpoints and provides easy access to enabling and disabling them. 
-- **Hit Count** - The breakpoint window keep a running total of each time the breakpoint is hit.
+- **Enable/Disable breakpoints** - The breakpoints window shows all your current breakpoints and provides easy access to enabling and disabling them. 
+- **Hit count** - The breakpoint window keep a running total of each time the breakpoint is hit.
 
 For more information, see [Breakpoints](windbg-breakpoints-preview.md).
 
@@ -101,27 +98,19 @@ For more information, see [Breakpoints](windbg-breakpoints-preview.md).
 - **Built in data model support** - WinDbg Preview is written with built in data model support and the data model is available through out the debugger.
 - **Model window** - The model window gives you an expandable and browsable version of ‘dx’ and ‘dx -g’, letting you create powerful tables on-top of your NatVis, JavaScript, and LINQ queries. 
 
-For more information, see  [Data Model](windbg-data-model-preview.md)
-.
+For more information, see  [WinDbg Preview Data Model Menu](windbg-data-model-preview.md).
 
 ### Scripting  
 
-- **Script development UI** - A lot of people have taken advantage of JavaScript and NatVis support in WinDbg, adn there is now a scripting window to make that process easier, with error highlighting, Intellisense abd debugging. 
+- **Script development UI** - A lot of people have taken advantage of JavaScript and NatVis support in WinDbg, and there is now a scripting window to make that process easier, with error highlighting, Intellisense abd debugging. 
 
-For more information, see [Scripting](windbg-scripting-preview.md).
-
-
-### Logs  
-
-- **1** -
-- **2** -
-
-For more information, see [Logs](windbg-logs-preview.md)
+For more information, see [WinDbg Preview Scripting Menu](windbg-scripting-preview.md).
 
 
-************************************
+
+*********************************************
 >> TBD - Possible post August release content
-************************************
+*********************************************
 
 -   [Opening a Dump File Using WinDbg](opening-a-crash-dump-file-using-windbg.md)
 -   [Ending a Debugging Session in WinDbg](ending-a-debugging-session-in-windbg.md)
@@ -130,10 +119,7 @@ For more information, see [Logs](windbg-logs-preview.md)
 -   [Entering Debugger Commands in WinDbg](debugger-command-window.md)
 -   [Using the Command Browser Window in WinDbg](command-browser-window.md)
 
-View
--   [Viewing the Call Stack in WinDbg](calls-window.md)
 
--   [Viewing and Editing Registers in WinDbg](registers-window.md)
  
 
  

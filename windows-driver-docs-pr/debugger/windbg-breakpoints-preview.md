@@ -12,8 +12,10 @@ ms.technology: windows-devices
 
 This section describes how to set and clear breakpoints using the WinDbg preview debugger.
 
-TBD
- 
+The process is similar to previous versions fo WinDbg. For more information about setting breakpoints, see [Setting Breakpoints in WinDbg](setting-breakpoints-in-windbg.md).
+
+
+*Additional content pending*
 
  
 

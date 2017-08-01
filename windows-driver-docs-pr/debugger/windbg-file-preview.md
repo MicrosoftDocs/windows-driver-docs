@@ -1,19 +1,22 @@
 ---
-title: WinDbg Preview - Logs
-description: This section describes how to work with logs in the WinDbg preview debugger.
+title: WinDbg Preview - Scripting 
+description: This section describes how to use the file menu in the WinDbg preview debugger.
 ms.author: windowsdriverdev
-ms.date: 07/28/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# WinDbg Preview - Logs 
+# WinDbg Preview - File Menu 
 
 
-This section describes how to to work with logs in the WinDbg Preview debugger.
+This section describes how to how to file menu.
 
-TBD
+
+
+*Additional content pending*
+
  
 
  

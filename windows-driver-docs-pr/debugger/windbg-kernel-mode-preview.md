@@ -1,23 +1,23 @@
 ---
-title: WinDbg Preview - Scripting 
-description: This section describes how to use scripting in the WinDbg preview debugger.
+title: WinDbg Preview Installation 
+description: This section describes how to how to start a kernel mode session with WinDbg Preview.
 ms.author: windowsdriverdev
-ms.date: 07/28/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# WinDbg Preview - Scripting 
+# WinDbg Preview - Starting a kernel mode session 
 
+This topic describes how to start a kernel mode session with WinDbg Preview.
 
-This section describes how to how to use scripting.
+The process is very similar to how it has been done with previous versions of WinDbg.
 
+If you are not familiar with setting up a kernel mode session, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md) 
 
 
 *Additional content pending*
-
- 
 
  
 

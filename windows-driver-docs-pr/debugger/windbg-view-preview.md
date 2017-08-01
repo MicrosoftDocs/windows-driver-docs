@@ -10,10 +10,39 @@ ms.technology: windows-devices
 
 # WinDbg Preview View Menu 
 
+This section describes how work with the view menu in WinDbg Preview.
 
-This section describes how work with the view menu.
+## Disassembly
+The disassembly window is also improved, the highlight of the current instruction remains where it is when you scroll. 
 
-TBD
+## Memory
+
+The memory window has highlighting and improved scrolling.
+
+## Locals
+
+## Watch 
+
+The locals and watch windows are both based off of the data model that is used by the dx command. This means the locals and watch windows will benefit from any NatVis or JavaScript extensions you have loaded, and can even support full LINQ queries, just like the dx command. 
+
+## Logs
+
+ This is a under the covers log of the WinDbg Preview internals. It can be viewed for troubleshooting or to monitor long running processes. You can continue to create a command log, using the .logopen command. For more information on that, see [Keeping a Log File in WinDbg](keeping-a-log-file-in-windbg.md).
+
+
+![Screen shot of view screen in debugger](/images/windbgx-view-menu.png)
+
+
+View
+-   [Viewing the Call Stack in WinDbg](calls-window.md)
+
+-   [Viewing and Editing Registers in WinDbg](registers-window.md)
+
+
+
+
+*Additional content pending*
+
  
 
  

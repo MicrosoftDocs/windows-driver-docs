@@ -1,6 +1,6 @@
 ---
 title: WinDbg Preview - Scripting 
-description: This section describes how to use scripting in the WinDbg preview debugger.
+description: This section describes how to use the home menu in the WinDbg preview debugger.
 ms.author: windowsdriverdev
 ms.date: 07/28/2017
 ms.topic: article
@@ -8,11 +8,10 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# WinDbg Preview - Scripting 
+# WinDbg Preview - Home Menu 
 
 
-This section describes how to how to use scripting.
-
+This section describes how to use the home menu.
 
 
 *Additional content pending*

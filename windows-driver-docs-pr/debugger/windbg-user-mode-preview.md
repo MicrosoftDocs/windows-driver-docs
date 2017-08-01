@@ -1,22 +1,20 @@
 ---
-title: WinDbg Preview - Scripting 
-description: This section describes how to use scripting in the WinDbg preview debugger.
+title: WinDbg Preview Installation 
+description: This section describes how to start a user mode session with the WinDbg preview debugger.
 ms.author: windowsdriverdev
-ms.date: 07/28/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# WinDbg Preview - Scripting 
+# WinDbg Preview - Start a user mode session  
 
+This section describes how to start a user mode session with the WinDbg preview debugger.
 
-This section describes how to how to use scripting.
+[See](debugging-a-user-mode-process-using-windbg.md)
 
-
-
-*Additional content pending*
-
+TBD
  
 
  
