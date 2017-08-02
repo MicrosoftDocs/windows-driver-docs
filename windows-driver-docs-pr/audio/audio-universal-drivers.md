@@ -117,10 +117,10 @@ To see an example of componentized INF files examine the [sysvad/TabletAudioSamp
 
 The traditional INF files continue to be available in the SYSVAD sample.
 
-| File name                              | Description                                                                    |
-|----------------------------------------|--------------------------------------------------------------------------------|
-| tabletaudiosample.inf                  | A desktop monolitic INF file that contains all of the information needed to install the driver. |
-| ComponentizedAudioSample.inf           | A phone monolitic INF file that contains all of the information needed to install the driver.   |
+| File name                      | Description                                                                    |
+|--------------------------------|--------------------------------------------------------------------------------|
+| tabletaudiosample.inf          | A desktop monolitic INF file that contains all of the information needed to install the driver. |
+| phoneaudiosample.inf           | A phone monolitic INF file that contains all of the information needed to install the driver.   |
 
 
 
