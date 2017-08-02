@@ -88,8 +88,7 @@ Follow this process to convert an existing audio driver to a Universal Windows d
 
 To create a smoother and more reliable install experience and to better support component servicing, divide the driver installation process into the following components.
 
-- Hardware DSP Driver
-- Codec
+- DSP and Codec
 - APO
 - OEM Customizations
 
