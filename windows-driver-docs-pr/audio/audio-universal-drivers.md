@@ -92,6 +92,8 @@ To create a smoother and more reliable install experience and to better support 
 - APO
 - OEM Customizations
 
+Optionally, separate INF files can be used for the DSP and Codec.
+
 This diagram summarizes a componentized audio installation.
 
 ![The componentized audio stack showing DSP driver codec and APOs](images/audio-componentized-stack-diagram.png)
