@@ -1,18 +1,18 @@
 ---
-title: WinDbg Preview - Breakpoints
-description: This section describes how to set and clear breakpoints using the WinDbg preview debugger.
+title: WinDbg Preview - keyboard shortcuts
+description: This section provides the keyboard shortcuts for the WinDbg preview debugger.
 ms.author: windowsdriverdev
-ms.date: 07/28/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# WinDbg Preview Breakpoints
+# WinDbg Preview keyboard shortcuts 
 
-This section describes how to set and clear breakpoints using the WinDbg preview debugger.
+This section summarizes the keyboard shortcuts for the  WinDbg preview debugger.
 
-The process is similar to previous versions of WinDbg. For more information about setting breakpoints, see [Setting Breakpoints in WinDbg](setting-breakpoints-in-windbg.md).
+.
 
 
 *Additional content pending*

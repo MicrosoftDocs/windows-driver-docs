@@ -12,9 +12,11 @@ For the latest news, refer to the debugger tools team blog, located here.
 
 Review these topics to install and configure WinDbg Preview.
 
-- [WinDbg Preview Installation](windbg-install-preview.md)
-- [WinDbg Preview Setup – settings and workspaces](windbg-setup-preview.md)
+- [WinDbg Preview - installation](windbg-install-preview.md)
+- [WinDbg Preview – settings and workspaces](windbg-setup-preview.md)
+- [WinDbg Preview – keyboard shortcuts](windbg-keyboard-shortcuts-preview.md)
 - [Coexisting with the classic WinDbg debugger](windbg-coexist-preview.md)
+
 
 These topics describe how to get connected to the environment that you want to debug. 
 
