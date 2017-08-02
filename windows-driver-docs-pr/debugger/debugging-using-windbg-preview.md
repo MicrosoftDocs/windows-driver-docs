@@ -31,7 +31,7 @@ These topics describe how to complete common tasks, organized by the menu tabs.
 - [Scripting](windbg-scripting-preview.md)
 
 
-# <span id="providingfeedback"></span>Providing feedback
+## <span id="providingfeedback"></span>Providing feedback
 
 Your feedback will guide the debugger tool development effort going forward. 
 
@@ -43,7 +43,7 @@ Your feedback will guide the debugger tool development effort going forward.
 ![Screen shot of feedback hub showing feedback options including the add new feedback button](images/windbgx-feedback.png)
 
 
-# Features of the next generation debugger
+## Features of the next generation debugger
 
 The WinDbg Preview is the next generation debugger with a contemporary interface. The UI has been completely rewritten using the Microsoft Windows Presentation Foundation (WPF). For more information, see 
 [XAML Overview (WPF)](https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/xaml-overview-wpf). 
@@ -67,7 +67,6 @@ Because the underling debugger engine is the same, all of the previous debugger 
 - **Update notifications** - When new updates are available, a banner will be displayed notifying you that an update is available.
 - **In product feedback channel** - Your feedback will guide the development effort going forward. For more information, see [Providing Feedback](#providing-feedback)
 - **Dump file processor detection** -Auto-detect dump processor architecture for managed dumps.
-- TBD >> **UI Extensibility** - The UI can be extended to add new windows and functionality to WinDbg Preview.  
 - **Performance Improvements** Windows now load asynchronously and can be canceled - When you run another command, WinDbg Preview will stop the loading of your locals, watch, or other windows.
 
 
