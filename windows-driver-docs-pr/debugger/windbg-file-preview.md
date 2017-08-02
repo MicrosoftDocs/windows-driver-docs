@@ -1,5 +1,5 @@
 ---
-title: WinDbg Preview - Scripting 
+title: WinDbg Preview - File Menu
 description: This section describes how to use the file menu in the WinDbg preview debugger.
 ms.author: windowsdriverdev
 ms.date: 07/31/2017
@@ -11,9 +11,9 @@ ms.technology: windows-devices
 # WinDbg Preview - File Menu 
 
 
-This section describes how to how to file menu.
+This section describes how to how to use the file menu.
 
-
+For more information on working settings an wordspaces see [WinDbg Preview Setup – settings and workspaces](windbg-setup-preview.md).
 
 *Additional content pending*
 

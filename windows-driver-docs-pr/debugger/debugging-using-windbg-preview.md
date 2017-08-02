@@ -18,7 +18,7 @@ Review these topics to install and configure WinDbg Preview.
 
 These topics describe how to get connected to the environment that you want to debug. 
 
-- [Debugging a User-Mode Process Using WinDbg](windbg-user-mode-preview.md)
+- [Starting a user-mode process using WinDbg Preview](windbg-user-mode-preview.md)
 - [Starting a kernel mode session ](windbg-kernel-mode-preview.md)
 
 These topics describe how to complete common tasks, organized by the menu tabs.
@@ -40,7 +40,7 @@ Your feedback will guide the debugger tool development effort going forward.
 - If you really like a feature  -  hit send-a-smile and tell us!
 - TBD >> newsgroup - use the existing one?
 
-![Screen shot of feedback hub showing feedback options including the add new feedback button](/images/windbgx-feedback-menu.png)
+![Screen shot of feedback hub showing feedback options including the add new feedback button](images/windbgx-feedback.png)
 
 
 # Features of the next generation debugger
@@ -48,9 +48,10 @@ Your feedback will guide the debugger tool development effort going forward.
 The WinDbg Preview is the next generation debugger with a contemporary interface. The UI has been completely rewritten using the Microsoft Windows Presentation Foundation (WPF). For more information, see 
 [XAML Overview (WPF)](https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/xaml-overview-wpf). 
 
-![Screen shot of main screen in debugger](/images/windbgx-main-menu.png)
+![Screen shot of main screen in debugger](images/windbgx-main-menu.png)
 
-### Backwards Compatability 
+
+### Backwards Compatibility 
 
 Because the underling debugger engine is the same, all of the previous debugger commands and debugger extensions continue to work.
 
@@ -73,14 +74,14 @@ Because the underling debugger engine is the same, all of the previous debugger 
 
 For more information, see [WinDbg Preview View Menu ](windbg-view-preview.md).
 
-![Screen shot of view screen in debugger](/images/windbgx-view-menu.png)
+![Screen shot of view screen in debugger](images/windbgx-view-menu.png)
 
 
 ### Command, and source windows  
 
 - **Command window** - Use the command window provides easy access to toggle DML and clear the debugger command window. All current debugger commands are compatible with and continue to work in WinDbg Preview.
 - **Source window** - Use the source windows to work with source code files. 
-![Screen shot of other windows in debugger](/images/windbgx-source-windows-menu.png)
+![Screen shot of other windows in debugger](images/windbgx-source-windows-menu.png)
 
 
 ### Breakpoints 
@@ -90,7 +91,7 @@ For more information, see [WinDbg Preview View Menu ](windbg-view-preview.md).
 
 For more information, see [Breakpoints](windbg-breakpoints-preview.md).
 
-![Screen shot of breakpoint screen in debugger](/images/windbgx-breakpoint-menu.png)
+![Screen shot of breakpoint screen in debugger](images/windbgx-breakpoint-menu.png)
 
 
 ### Data Model 
@@ -102,9 +103,10 @@ For more information, see  [WinDbg Preview Data Model Menu](windbg-data-model-pr
 
 ### Scripting  
 
-- **Script development UI** - A lot of people have taken advantage of JavaScript and NatVis support in WinDbg, and there is now a scripting window to make that process easier, with error highlighting, Intellisense abd debugging. 
+- **Script development UI** - There is now a purpose built scripting window to make developing JavaScript and NatVis scripts easier, with error highlighting, Intellisense abd debugging. 
 
 For more information, see [WinDbg Preview Scripting Menu](windbg-scripting-preview.md).
+
 
 
 
