@@ -12,10 +12,86 @@ ms.technology: windows-devices
 
 This section summarizes the keyboard shortcuts for the  WinDbg preview debugger.
 
-.
+### Flow control
 
+| Keystroke     | Description             |
+| ------------- |-------------------------|
+ F5	| Continue 
+F10		| Step over 
+F11		| Step Into
+Shift+F11 	| 	Step out
+F7		| Run to line
+Ctrl+Shift+I 	| 	Set instruction pointer to highlithed line
+Ctrl+Break or Alt+Del 	|  	Break
+Ctrl+Shift+F5 	| 	Restart
+Shift+F5  	| 	Stop debugging
+Alt+H,D		| Detach
 
-*Additional content pending*
+### Setup
+
+| Keystroke     | Description             |
+| ------------- |-------------------------|
+F6		|   Attach to process
+Ctrl+R		|   	Connect to remote
+Ctrl+D		|   	Open dump file
+Ctrl+K		|   	Attach to kernel debugger
+Ctrl+E		|   	Launch process
+Ctrl+P		|   	Launch app package
+
+### Breakpoints 		
+
+| Keystroke     | Description             |
+| ------------- |-------------------------|  
+F9			|  Toggle breakpoint on highlighted line
+Ctrl+Alt+K		|  	Toggle initial break
+Alt+B,A			|  Add breakpoint
+
+### Windowing
+
+| Keystroke     | Description             |
+| ------------- |-------------------------|
+Ctrl+Tab		|   	Open window changer
+Ctrl+1		|   	Open/focus on command window
+Ctrl+2		|   	Open/focus on watch window
+Ctrl+3		|   	Open/focus on locals window
+Ctrl+4		|   	Open/focus on registers window
+Ctrl+5		|   	Open/focus on memory window
+Ctrl+6		|   	Open/focus on stack window
+Ctrl+7		|   	Open/focus on disassembly window
+Ctrl+8		|   	Open/focus on breakpoints window
+Ctrl+9		|   	Open/focus on thread window
+
+### Model window
+
+| Keystroke     | Description             |
+| ------------- |-------------------------|
+Alt+O,C			|   New model query window
+Alt+O,E			|   Explore data model
+Alt+O,Q			|   Change model query
+Alt+O,G			|   Display as grid
+Alt+O,H			|   Display as hierarchy
+
+### Scripting
+
+| Keystroke     | Description             |
+| ------------- |-------------------------|
+Alt+S,N			|   New script
+Ctrl+Shift+O		|   	Open script
+Ctrl+Shift+Enter		|   	Execute script
+Ctrl+S		|   	Save script
+Alt+S,U		|   	Unlink script
+
+### Stack navigation
+| Keystroke     | Description             |
+| ------------- |-------------------------|
+Ctrl+↑ / ↓			|   Move up/down a stack frame
+
+### Help 
+| Keystroke     | Description             |
+| ------------- |-------------------------|
+F1		|   	Open help file
+Shift+F1		|   	Search selection on MSDN (source window)
+
 
  
 
