@@ -61,15 +61,6 @@ Ctrl+7		|   	Open/focus on disassembly window
 Ctrl+8		|   	Open/focus on breakpoints window
 Ctrl+9		|   	Open/focus on thread window
 
-### Model window
-
-| Keystroke     | Description             |
-| ------------- |-------------------------|
-Alt+O,C			|   New model query window
-Alt+O,E			|   Explore data model
-Alt+O,Q			|   Change model query
-Alt+O,G			|   Display as grid
-Alt+O,H			|   Display as hierarchy
 
 ### Scripting
 
@@ -80,6 +71,16 @@ Ctrl+Shift+O		|   	Open script
 Ctrl+Shift+Enter		|   	Execute script
 Ctrl+S		|   	Save script
 Alt+S,U		|   	Unlink script
+
+### Model window
+
+| Keystroke     | Description             |
+| ------------- |-------------------------|
+Alt+O,C			|   New model query window
+Alt+O,E			|   Explore data model
+Alt+O,Q			|   Change model query
+Alt+O,G			|   Display as grid
+Alt+O,H			|   Display as hierarchy
 
 ### Stack navigation
 | Keystroke     | Description             |

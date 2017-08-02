@@ -17,7 +17,6 @@ Review these topics to install and configure WinDbg Preview.
 - [WinDbg Preview – keyboard shortcuts](windbg-keyboard-shortcuts-preview.md)
 - [Coexisting with the classic WinDbg debugger](windbg-coexist-preview.md)
 
-
 These topics describe how to get connected to the environment that you want to debug. 
 
 - [Starting a user-mode process using WinDbg Preview](windbg-user-mode-preview.md)
@@ -38,9 +37,8 @@ These topics describe how to complete common tasks, organized by the menu tabs.
 Your feedback will guide the debugger tool development effort going forward. 
 
 - If you have feedback such as a feature that you really want to see, use the Feedback Hub.
-- If you see a bug or unexpected behavior - Send-a-frown, and/or use the Feedback Hub and check the “This is a bug” check box.
-- If you really like a feature  -  hit send-a-smile and tell us!
-- TBD >> newsgroup - use the existing one?
+- If you see a bug or unexpected behavior - use the Feedback Hub and check the “This is a bug” check box.
+- TBD >> newsgroup - use the existing WINDBG?
 
 ![Screen shot of feedback hub showing feedback options including the add new feedback button](images/windbgx-feedback.png)
 
