@@ -4,7 +4,7 @@ author: windows-driver-content
 description: SO_WSK_EVENT_CALLBACK
 ms.assetid: cb697103-20ef-4667-8823-060a68d904c8
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

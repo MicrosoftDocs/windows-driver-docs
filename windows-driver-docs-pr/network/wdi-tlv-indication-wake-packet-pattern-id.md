@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_INDICATION_WAKE_PACKET_PATTERN_ID is a TLV that contains the ID of the pattern that matches a wake packet.
 ms.assetid: 3E1D4CC4-0369-4C1F-94C6-AFC34C861E0D
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

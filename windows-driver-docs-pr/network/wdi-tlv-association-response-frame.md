@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_ASSOCIATION_RESPONSE_FRAME is a TLV that contains the received association response.
 ms.assetid: FA71F8CA-BA22-4EF2-8DF4-2A08C83A54A7
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

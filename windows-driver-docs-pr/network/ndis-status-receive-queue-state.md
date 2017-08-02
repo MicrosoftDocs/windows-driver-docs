@@ -4,7 +4,7 @@ author: windows-driver-content
 description: The NDIS_STATUS_RECEIVE_QUEUE_STATE status indicates to overlying drivers that the queue state of a virtual machine queue (VMQ) receive queue has changed.
 ms.assetid: 59b42de9-6aa5-445e-a39a-de2421c945ea
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

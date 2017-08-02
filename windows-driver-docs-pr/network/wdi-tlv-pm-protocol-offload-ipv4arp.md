@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_PM_PROTOCOL_OFFLOAD_IPv4ARP is a TLV that contains IPv4 ARP protocol offload parameters.
 ms.assetid: 03894B22-3D4B-4262-893A-660FC88AA93D
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

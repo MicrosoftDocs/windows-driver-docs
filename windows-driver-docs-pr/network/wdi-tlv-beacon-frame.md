@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_BEACON_FRAME is a TLV that contains a beacon frame.
 ms.assetid: 4022B721-B56E-482C-8F97-C4F7820CF6D1
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

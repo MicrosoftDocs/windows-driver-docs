@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_CHANNEL_INFO_LIST is a TLV that contains a list of channels.
 ms.assetid: D1B82F4F-6722-4D54-B6FF-B7F1309F8C0E
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

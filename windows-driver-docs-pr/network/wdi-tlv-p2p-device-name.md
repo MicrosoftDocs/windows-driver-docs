@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_P2P_DEVICE_NAME is a TLV that contains a device name.
 ms.assetid: 7FB04079-7F82-4D7B-95BA-45B5832B36C0
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

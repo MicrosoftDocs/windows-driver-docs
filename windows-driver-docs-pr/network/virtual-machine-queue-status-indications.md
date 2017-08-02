@@ -4,7 +4,7 @@ author: windows-driver-content
 description: VMQ Status Indications
 ms.assetid: 26f903b2-864b-48cf-b0ee-2761cb69d10b
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_PM_PROTOCOL_OFFLOAD_80211RSN_REKEY is a TLV that contains RSN Rekey protocol offload parameters.
 ms.assetid: 4FDB56EA-444B-4EA2-B8D1-5E740734EEED
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

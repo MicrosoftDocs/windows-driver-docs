@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_FT_INITIAL_ASSOC_PARAMETERS is a TLV that contains initial association parameters for Fast Transition.
 ms.assetid: 3A91AC2F-5654-488D-89A5-36A0AC71A836
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

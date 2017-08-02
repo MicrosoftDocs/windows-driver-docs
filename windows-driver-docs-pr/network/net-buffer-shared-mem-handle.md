@@ -4,7 +4,7 @@ author: windows-driver-content
 description: The NET_BUFFER_SHARED_MEM_HANDLE macro gets the shared memory handle from a NET_BUFFER_SHARED_MEMORY structure.
 ms.assetid: 4bec976b-2cee-405d-889b-b0a3e293840e
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 
