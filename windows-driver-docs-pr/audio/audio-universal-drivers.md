@@ -92,8 +92,6 @@ To create a smoother and more reliable install experience and to better support 
 - APO
 - OEM Customizations
 
-
-
 This diagram summarizes a componentized audio installation.
 
 ![The componentized audio stack showing DSP driver codec and APOs](images/audio-componentized-stack-diagram.png)
@@ -114,7 +112,7 @@ To see an example of componentized INF files examine the [sysvad/TabletAudioSamp
 |----------------------------------------|--------------------------------------------------------------------------------|
 | ComponentizedAudioSample.inf           | The base componentized sample audio INF file.                                  |
 | ComponentizedAudioSampleExtension.inf  | The extension driver for the sysvad base with additional OEM customizations.   |
-| ComponentizedApoSample.inf             | An APO sample extension INF file.                                               |
+| ComponentizedApoSample.inf             | An APO sample extension INF file.                                              |
 
 The traditional INF files continue to be available in the SYSVAD sample.
 
