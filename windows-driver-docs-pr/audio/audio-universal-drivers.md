@@ -105,17 +105,22 @@ An extension INF file must be a universal INF file. For more information, see [U
 For information about adding software using INF files, see [Adding Software Components with an INF file](https://docs.microsoft.com/windows-hardware/drivers/install/adding-software-components-with-an-inf-file).
 
 
-
 ### SYSVAD  componentized INF files
 
 To see an example of componentized INF files examine the [sysvad/TabletAudioSample](https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad/TabletAudioSample), on Github. 
 
-| File name                              | Description                                                                                |
+| File name                              | Description                                                                    |
 |----------------------------------------|--------------------------------------------------------------------------------|
-| tabletaudiosample.inf                  | A traditional INF file that contains information needed to install the driver. |
-| ComponentizedAudioSample.inf           | An example componentized sample audio INF file.                                |
-| ComponentizedApoSample.inf             | An APO sample extension INF file                                               |
-| ComponentizedAudioSampleExtension.inf  | An example audio extension INF file                                            |
+| ComponentizedAudioSample.inf           | The base componentized sample audio INF file.                                  |
+| ComponentizedAudioSampleExtension.inf  | The extension driver for the sysvad base with additional OEM customizations.   |
+| ComponentizedApoSample.inf             | An APO sample extension INF file.                                               |
+
+The traditional INF files continue to be available in the SYSVAD sample.
+
+| File name                              | Description                                                                    |
+|----------------------------------------|--------------------------------------------------------------------------------|
+| tabletaudiosample.inf                  | A desktop monolitic INF file that contains all of the information needed to install the driver. |
+| ComponentizedAudioSample.inf           | A phone monolitic INF file that contains all of the information needed to install the driver.   |
 
 
 
@@ -168,7 +173,7 @@ To allow the latest driver to be used, be sure and update the date and version, 
 
 ### APO driver registry key
 
-For third party-defined audio driver/APO registry keys, use the HKR with the exception of HKLM\System\CurrentControlSet <TBD> That is used to store .... </TBD>. 
+For third party-defined audio driver/APO registry keys, use the HKR with the exception of HKLM\System\CurrentControlSet. 
  
 
 ### Use a Windows Service to facilitate UWP <-> APO communication
