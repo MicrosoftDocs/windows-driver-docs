@@ -1,6 +1,6 @@
 ---
-title: xhci\_findowner
-description: The usb3kd.xhci\_findowner command finds the owner a common buffer.
+title: xhci_findowner
+description: The usb3kd.xhci_findowner command finds the owner a common buffer.
 ms.assetid: 6AA3E41C-5838-4425-B1CE-37A13E8F755E
 keywords: ["xhci_findowner Windows Debugging"]
 ms.author: windowsdriverdev

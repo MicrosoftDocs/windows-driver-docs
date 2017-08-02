@@ -1,6 +1,6 @@
 ---
-title: Using the DECLARE\_API Macro
-description: Using the DECLARE\_API Macro
+title: Using the DECLARE_API Macro
+description: Using the DECLARE_API Macro
 ms.assetid: 469f5ae4-2da8-4bbe-b5c0-75fcef227ba5
 keywords: ["WdbgExts extensions, DECLARE_API macro", "DECLARE_API macro (WdbgExts)"]
 ms.author: windowsdriverdev

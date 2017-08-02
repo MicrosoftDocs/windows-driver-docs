@@ -1,7 +1,7 @@
 ---
-title: EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.Write
+title: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Write
 author: windows-driver-content
-description: EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.Write
+description: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Write
 ms.assetid: 55475573-e904-4adc-91cf-62afe9e67927
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

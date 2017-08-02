@@ -91,7 +91,7 @@ BOOL GetUSBDeviceSpeed(WINUSB_INTERFACE_HANDLE hDeviceHandle, UCHAR* pDeviceSpee
 
     ULONG length = sizeof(UCHAR);
 
-    bResult = WinUsb_QueryDeviceInformation(hDeviceHandle, DEVICE_SPEED, &amp;length, pDeviceSpeed);
+    bResult = WinUsb_QueryDeviceInformation(hDeviceHandle, DEVICE_SPEED, &length, pDeviceSpeed);
     if(!bResult)
     {
         printf("Error getting device speed: %d.\n", GetLastError());
@@ -138,19 +138,19 @@ BOOL QueryDeviceEndpoints (WINUSB_INTERFACE_HANDLE hDeviceHandle, PIPE_ID* pipei
     BOOL bResult = TRUE;
 
     USB_INTERFACE_DESCRIPTOR InterfaceDescriptor;
-    ZeroMemory(&amp;InterfaceDescriptor, sizeof(USB_INTERFACE_DESCRIPTOR));
+    ZeroMemory(&InterfaceDescriptor, sizeof(USB_INTERFACE_DESCRIPTOR));
 
     WINUSB_PIPE_INFORMATION  Pipe;
-    ZeroMemory(&amp;Pipe, sizeof(WINUSB_PIPE_INFORMATION));
+    ZeroMemory(&Pipe, sizeof(WINUSB_PIPE_INFORMATION));
 
     
-    bResult = WinUsb_QueryInterfaceSettings(hDeviceHandle, 0, &amp;InterfaceDescriptor);
+    bResult = WinUsb_QueryInterfaceSettings(hDeviceHandle, 0, &InterfaceDescriptor);
 
     if (bResult)
     {
         for (int index = 0; index < InterfaceDescriptor.bNumEndpoints; index++)
         {
-            bResult = WinUsb_QueryPipe(hDeviceHandle, 0, index, &amp;Pipe);
+            bResult = WinUsb_QueryPipe(hDeviceHandle, 0, index, &Pipe);
 
             if (bResult)
             {
@@ -231,7 +231,7 @@ BOOL SendDatatoDefaultEndpoint(WINUSB_INTERFACE_HANDLE hDeviceHandle)
     UCHAR bars = 0;
 
     WINUSB_SETUP_PACKET SetupPacket;
-    ZeroMemory(&amp;SetupPacket, sizeof(WINUSB_SETUP_PACKET));
+    ZeroMemory(&SetupPacket, sizeof(WINUSB_SETUP_PACKET));
     ULONG cbSent = 0;
 
     //Set bits to light alternate bars
@@ -247,7 +247,7 @@ BOOL SendDatatoDefaultEndpoint(WINUSB_INTERFACE_HANDLE hDeviceHandle)
     SetupPacket.Index = 0; 
     SetupPacket.Length = sizeof(UCHAR);
 
-    bResult = WinUsb_ControlTransfer(hDeviceHandle, SetupPacket, &amp;bars, sizeof(UCHAR), &amp;cbSent, 0);
+    bResult = WinUsb_ControlTransfer(hDeviceHandle, SetupPacket, &bars, sizeof(UCHAR), &cbSent, 0);
     if(!bResult)
     {
         goto done;
@@ -292,7 +292,7 @@ BOOL WriteToBulkEndpoint(WINUSB_INTERFACE_HANDLE hDeviceHandle, UCHAR* pID, ULON
     ULONG cbSize = strlen(szBuffer);
     ULONG cbSent = 0;
 
-    bResult = WinUsb_WritePipe(hDeviceHandle, *pID, szBuffer, cbSize, &amp;cbSent, 0);
+    bResult = WinUsb_WritePipe(hDeviceHandle, *pID, szBuffer, cbSize, &cbSent, 0);
     if(!bResult)
     {
         goto done;
@@ -329,7 +329,7 @@ BOOL ReadFromBulkEndpoint(WINUSB_INTERFACE_HANDLE hDeviceHandle, UCHAR* pID, ULO
     
     ULONG cbRead = 0;
 
-    bResult = WinUsb_ReadPipe(hDeviceHandle, *pID, szBuffer, cbSize, &amp;cbRead, 0);
+    bResult = WinUsb_ReadPipe(hDeviceHandle, *pID, szBuffer, cbSize, &cbRead, 0);
     if(!bResult)
     {
         goto done;
@@ -374,25 +374,25 @@ int _tmain(int argc, _TCHAR* argv[])
     UCHAR DeviceSpeed;
     ULONG cbSize = 0;
 
-    bResult = GetDeviceHandle(guidDeviceInterface, &amp;hDeviceHandle);
+    bResult = GetDeviceHandle(guidDeviceInterface, &hDeviceHandle);
     if(!bResult)
     {
         goto done;
     }
 
-    bResult = GetWinUSBHandle(hDeviceHandle, &amp;hWinUSBHandle);
+    bResult = GetWinUSBHandle(hDeviceHandle, &hWinUSBHandle);
     if(!bResult)
     {
         goto done;
     }
 
-    bResult = GetUSBDeviceSpeed(hWinUSBHandle, &amp;DeviceSpeed);
+    bResult = GetUSBDeviceSpeed(hWinUSBHandle, &DeviceSpeed);
     if(!bResult)
     {
         goto done;
     }
 
-    bResult = QueryDeviceEndpoints(hWinUSBHandle, &amp;PipeID);
+    bResult = QueryDeviceEndpoints(hWinUSBHandle, &PipeID);
     if(!bResult)
     {
         goto done;
@@ -404,13 +404,13 @@ int _tmain(int argc, _TCHAR* argv[])
         goto done;
     }
 
-    bResult = WriteToBulkEndpoint(hWinUSBHandle, &amp;PipeID.PipeOutId, &amp;cbSize);
+    bResult = WriteToBulkEndpoint(hWinUSBHandle, &PipeID.PipeOutId, &cbSize);
     if(!bResult)
     {
         goto done;
     }
 
-    bResult = ReadFromBulkEndpoint(hWinUSBHandle, &amp;PipeID.PipeInId, cbSize);
+    bResult = ReadFromBulkEndpoint(hWinUSBHandle, &PipeID.PipeInId, cbSize);
     if(!bResult)
     {
         goto done;

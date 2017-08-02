@@ -1,7 +1,7 @@
 ---
-title: Handling SRB\_FUNCTION\_RESET\_BUS
+title: Handling SRB_FUNCTION_RESET_BUS
 author: windows-driver-content
-description: Handling SRB\_FUNCTION\_RESET\_BUS
+description: Handling SRB_FUNCTION_RESET_BUS
 ms.assetid: 285cbd5c-e364-4f0f-9020-0bc6f3d45cac
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiStartIo

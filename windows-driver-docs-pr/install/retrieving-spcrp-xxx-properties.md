@@ -1,6 +1,6 @@
 ---
-title: Retrieving SPCRP\_Xxx Properties
-description: Retrieving SPCRP\_Xxx Properties
+title: Retrieving SPCRP_Xxx Properties
+description: Retrieving SPCRP_Xxx Properties
 ms.assetid: a5d52da9-a593-42bd-aeaf-8ab203bc3d21
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

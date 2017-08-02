@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0xE6 DRIVER\_VERIFIER\_DMA\_VIOLATION
-description: The DRIVER\_VERIFIER\_DMA\_VIOLATION bug check has a value of 0x000000E6. This is the bug check code for all Driver Verifier DMA Verification violations.
+title: Bug Check 0xE6 DRIVER_VERIFIER_DMA_VIOLATION
+description: The DRIVER_VERIFIER_DMA_VIOLATION bug check has a value of 0x000000E6. This is the bug check code for all Driver Verifier DMA Verification violations.
 ms.assetid: badf8948-356c-4728-b34e-02f1638630a6
 keywords: ["Bug Check 0xE6 DRIVER_VERIFIER_DMA_VIOLATION", "DRIVER_VERIFIER_DMA_VIOLATION"]
 ms.author: windowsdriverdev

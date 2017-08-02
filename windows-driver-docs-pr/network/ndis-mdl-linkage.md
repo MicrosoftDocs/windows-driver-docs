@@ -1,22 +1,15 @@
 ---
-title: NDIS\_MDL\_LINKAGE macro
-description: The NDIS\_MDL\_LINKAGE macro retrieves a pointer to the next MDL that is associated with the specified MDL.
-MS-HAID:
-- 'ndis\_mdl\_ref\_8381caf2-d24b-4aa7-b557-8befbc85793a.xml'
-- 'netvista.ndis\_mdl\_linkage'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+title: NDIS_MDL_LINKAGE macro
+author: windows-driver-content
+description: The NDIS_MDL_LINKAGE macro retrieves a pointer to the next MDL that is associated with the specified MDL.
 ms.assetid: 3d5a91cb-cb26-49fb-b510-75fc95f7f46b
-keywords: ["NDIS_MDL_LINKAGE macro Network Drivers Starting with Windows Vista"]
-topic_type:
-- apiref
-api_name:
-- NDIS_MDL_LINKAGE
-api_location:
-- Ndis.h
-api_type:
-- HeaderDef
+ms.author: windowsdriverdev 
+ms.date: 07/18/2017 
+ms.topic: article 
+ms.prod: windows-hardware 
+ms.technology: windows-devices 
+keywords:
+ - NDIS_MDL_LINKAGE macro Network Drivers Starting with Windows Vista
 ---
 
 # NDIS\_MDL\_LINKAGE macro
@@ -86,9 +79,8 @@ Requirements
 
  
 
+
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20NDIS_MDL_LINKAGE%20macro%20%20RELEASE:%20%287/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
 
 

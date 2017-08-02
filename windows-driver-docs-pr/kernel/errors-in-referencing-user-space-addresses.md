@@ -84,7 +84,7 @@ Often drivers embed pointers within buffered requests, as in the following examp
    ...
    // If the arg pointer is not valid, the following
    // statement can corrupt the system:
-   RtlMoveMemory(arg, &amp;info, sizeof(info));
+   RtlMoveMemory(arg, &info, sizeof(info));
 ```
 
 In this example, the driver should validate the embedded pointer by using the **Probe*Xxx*** routines enclosed in a **try/except** block in the same way as for the METHOD\_NEITHER IOCTLs described earlier. Although embedding a pointer allows a driver to return extra information, a driver can more efficiently achieve the same result by using a relative offset or a variable length buffer.

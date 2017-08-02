@@ -74,10 +74,10 @@ What happens if your resource manager reports an error for one of the client's c
 The following pseudocode shows an example of a more detailed sequence of a client's transactional operations.
 
 ```
-    ZwCreateTransaction (&amp;TransactionHandle, ...);
+    ZwCreateTransaction (&TransactionHandle, ...);
     ZwQueryInformationTransaction (TransactionHandle, ...);
-    CreateDataObject (TransactionID, &amp;DataHandle);
-    Status = ReadData (DataHandle, &amp;Data1);
+    CreateDataObject (TransactionID, &DataHandle);
+    Status = ReadData (DataHandle, &Data1);
     if (Status == Error) goto ErrorRollback;
     Status = WriteData (DataHandle, Data2);
     if (Status == Error) goto ErrorRollback;
@@ -113,15 +113,15 @@ The following pseudocode shows how a client might create a single transaction th
 In this example, the client reads data from the first database and writes it to the second database. Then, the client reads data from the second database and writes it to the first database. (The first resource manager exports functions that begin with **Rm1**, and the second resource manager exports functions that begin with **Rm2**.)
 
 ```
-    ZwCreateTransaction (&amp;TransactionHandle, ...);
+    ZwCreateTransaction (&TransactionHandle, ...);
     ZwQueryInformationTransaction (TransactionHandle, ...);
-    Rm1CreateDataObject (TransactionID, &amp;Rm1DataHandle);
-    Rm2CreateDataObject (TransactionID, &amp;Rm2DataHandle);
-    Status = Rm1ReadData (Rm1DataHandle, &amp;Rm1Data);
+    Rm1CreateDataObject (TransactionID, &Rm1DataHandle);
+    Rm2CreateDataObject (TransactionID, &Rm2DataHandle);
+    Status = Rm1ReadData (Rm1DataHandle, &Rm1Data);
     if (Status == Error) goto ErrorRollback;
     Status = Rm2WriteData (Rm2DataHandle, Rm1Data);
     if (Status == Error) goto ErrorRollback;
-    Status = Rm2ReadData (Rm2DataHandle, &amp;Rm2Data);
+    Status = Rm2ReadData (Rm2DataHandle, &Rm2Data);
     if (Status == Error) goto ErrorRollback;
     Status = Rm1WriteData (Rm1DataHandle, Rm2Data);
     if (Status == Error) goto ErrorRollback;

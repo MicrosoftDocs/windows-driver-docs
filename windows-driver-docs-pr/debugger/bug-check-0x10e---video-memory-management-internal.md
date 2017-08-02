@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x10E VIDEO\_MEMORY\_MANAGEMENT\_INTERNAL
-description: The VIDEO\_MEMORY\_MANAGEMENT\_INTERNAL bug check has a value of 0x0000010E. This indicates that the video memory manager has encountered a condition that it is unable to recover from.
+title: Bug Check 0x10E VIDEO_MEMORY_MANAGEMENT_INTERNAL
+description: The VIDEO_MEMORY_MANAGEMENT_INTERNAL bug check has a value of 0x0000010E. This indicates that the video memory manager has encountered a condition that it is unable to recover from.
 ms.assetid: 2fb29098-084c-462a-bb06-789e73924d16
 keywords: ["Bug Check 0x10E VIDEO_MEMORY_MANAGEMENT_INTERNAL", "VIDEO_MEMORY_MANAGEMENT_INTERNAL"]
 ms.author: windowsdriverdev

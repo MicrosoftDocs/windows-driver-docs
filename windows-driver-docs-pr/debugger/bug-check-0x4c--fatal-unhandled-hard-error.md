@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x4C FATAL\_UNHANDLED\_HARD\_ERROR
-description: The FATAL\_UNHANDLED\_HARD\_ERROR bug check has a value of 0x0000004C.This bug check appears very infrequently.
+title: Bug Check 0x4C FATAL_UNHANDLED_HARD_ERROR
+description: The FATAL_UNHANDLED_HARD_ERROR bug check has a value of 0x0000004C.This bug check appears very infrequently.
 ms.assetid: 39ecd06b-1522-4b87-bfd8-a0022e3a6861
 keywords: ["Bug Check 0x4C FATAL_UNHANDLED_HARD_ERROR", "FATAL_UNHANDLED_HARD_ERROR"]
 ms.author: windowsdriverdev

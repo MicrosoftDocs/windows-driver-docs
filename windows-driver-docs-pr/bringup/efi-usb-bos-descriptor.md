@@ -1,7 +1,7 @@
 ---
-title: EFI\_USB\_BOS\_DESCRIPTOR
+title: EFI_USB_BOS_DESCRIPTOR
 author: windows-driver-content
-description: EFI\_USB\_BOS\_DESCRIPTOR
+description: EFI_USB_BOS_DESCRIPTOR
 ms.assetid: A12E3678-E5B6-4AB0-8F28-FCDA57C9D397
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

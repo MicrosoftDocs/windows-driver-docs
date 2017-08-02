@@ -1,22 +1,15 @@
 ---
-title: NDIS\_STATUS\_TASK\_OFFLOAD\_HARDWARE\_CAPABILITIES
-description: NDIS miniport drivers and MUX intermediate drivers use the NDIS\_STATUS\_TASK\_OFFLOAD\_HARDWARE\_CAPABILITIES status indication to notify NDIS and overlying drivers that there has been change in the task offload hardware capabilities of the underlying NIC.
-MS-HAID:
-- 'tcpip\_offload\_ref\_422ec94d-a7e7-42e1-98cc-5f5477a0ce18.xml'
-- 'netvista.ndis\_status\_task\_offload\_hardware\_capabilities'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+title: NDIS_STATUS_TASK_OFFLOAD_HARDWARE_CAPABILITIES
+author: windows-driver-content
+description: NDIS miniport drivers and MUX intermediate drivers use the NDIS_STATUS_TASK_OFFLOAD_HARDWARE_CAPABILITIES status indication to notify NDIS and overlying drivers that there has been change in the task offload hardware capabilities of the underlying NIC.
 ms.assetid: 9ac8f4c9-66f4-4889-932b-a51381c54734
-keywords: ["NDIS_STATUS_TASK_OFFLOAD_HARDWARE_CAPABILITIES Network Drivers Starting with Windows Vista"]
-topic_type:
-- apiref
-api_name:
-- NDIS_STATUS_TASK_OFFLOAD_HARDWARE_CAPABILITIES
-api_location:
-- ndis.h
-api_type:
-- HeaderDef
+ms.author: windowsdriverdev 
+ms.date: 07/18/2017 
+ms.topic: article 
+ms.prod: windows-hardware 
+ms.technology: windows-devices 
+keywords:
+ - NDIS_STATUS_TASK_OFFLOAD_HARDWARE_CAPABILITIES Network Drivers Starting with Windows Vista
 ---
 
 # NDIS\_STATUS\_TASK\_OFFLOAD\_HARDWARE\_CAPABILITIES
@@ -68,9 +61,8 @@ Requirements
 
  
 
+
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20NDIS_STATUS_TASK_OFFLOAD_HARDWARE_CAPABILITIES%20%20RELEASE:%20%287/5/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
 
 

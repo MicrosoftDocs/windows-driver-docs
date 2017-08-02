@@ -32,7 +32,7 @@ You should understand how the sensor class extension uses some data types as met
 <tr class="odd">
 <td><p>[IWDFFile](https://msdn.microsoft.com/library/windows/hardware/ff558912)</p></td>
 <td><p>pClientFile</p></td>
-<td><p>This UMDF COM interface represents a file object that the platform associates with a client application. Although sensor method calls always supply this type as a valid interface pointer, it is intended to be used as an ID for the application. The address that the pointer contains is a unique number that can identify the client application. Be aware that this value is distinct from the address of the pointer itself. Do not use the address-of operator (&amp;) to retrieve an ID. Use the pointer itself.</p>
+<td><p>This UMDF COM interface represents a file object that the platform associates with a client application. Although sensor method calls always supply this type as a valid interface pointer, it is intended to be used as an ID for the application. The address that the pointer contains is a unique number that can identify the client application. Be aware that this value is distinct from the address of the pointer itself. Do not use the address-of operator (&) to retrieve an ID. Use the pointer itself.</p>
 <p>If you choose to use this pointer to access the underlying object, remember to call AddRef through the pointer initially, and to call Release when you have finished.</p></td>
 </tr>
 <tr class="even">

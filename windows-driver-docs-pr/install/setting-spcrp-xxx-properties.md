@@ -1,6 +1,6 @@
 ---
-title: Setting SPCRP\_Xxx Properties
-description: Setting SPCRP\_Xxx Properties
+title: Setting SPCRP_Xxx Properties
+description: Setting SPCRP_Xxx Properties
 ms.assetid: efb0d02e-ec4c-4c1b-900b-c81f504d2919
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

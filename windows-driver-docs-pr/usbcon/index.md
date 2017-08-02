@@ -72,7 +72,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 [Windows Store apps for USB devices](http://channel9.msdn.com/Events/Build/2013/3-924a)
 [Understanding USB 3.0 in Windows 8](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-256T)
 [Building great USB 3.0 devices](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-773T)
-[USB Debugging Innovations in Windows 8 (Part I, II, &amp; III)](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-258P)
+[USB Debugging Innovations in Windows 8 (Part I, II, & III)](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-258P)
 <p><strong>USB hardware for learning</strong></p>
 [MUTT devices](microsoft-usb-test-tool--mutt--devices.md)
 <p>MUTT and SuperMUTT devices and the accompanying software package are integrated into the HCK suite of USB tests. They provide automated testing that can be used during the development cycle of USB controllers, devices and systems, especially stress testing.</p>

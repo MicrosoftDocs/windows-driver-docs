@@ -45,7 +45,7 @@ NTSTATUS  DriverEntry(
   CallbackRegistrationHandle =
     KeRegisterProcessorChangeCallback(
       SyncProcessorCallback,
-      &amp;CallbackStatus,
+      &CallbackStatus,
       KE_PROCESSOR_CHANGE_ADD_EXISTING
       );
 

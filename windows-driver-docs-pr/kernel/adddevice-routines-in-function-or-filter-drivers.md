@@ -56,7 +56,7 @@ An [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) r
 9.  Clear the DO\_DEVICE\_INITIALIZING flag in the FDO or filter DO with a statement like the following:
 
     ```
-    FunctionalDeviceObject->Flags &amp;= ~DO_DEVICE_INITIALIZING;
+    FunctionalDeviceObject->Flags &= ~DO_DEVICE_INITIALIZING;
     ```
 
 10. Be prepared to handle PnP IRPs for the device (such as [**IRP\_MN\_QUERY\_RESOURCE\_REQUIREMENTS**](https://msdn.microsoft.com/library/windows/hardware/ff551715) and **IRP\_MN\_START\_DEVICE**).

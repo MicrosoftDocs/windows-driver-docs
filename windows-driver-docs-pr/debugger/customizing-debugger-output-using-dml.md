@@ -48,7 +48,7 @@ DML content roughly follows the XML/HTML rules for special characters. The chara
 would be converted to the following DML.
 
 ```
-&quot;Alice &amp; Bob think 3 &lt 4&quot;
+&quot;Alice & Bob think 3 &lt 4&quot;
 ```
 
 **C programming language formatting characters**

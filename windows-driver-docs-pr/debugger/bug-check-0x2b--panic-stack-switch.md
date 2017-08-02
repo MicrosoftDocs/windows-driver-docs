@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x2B PANIC\_STACK\_SWITCH
-description: The PANIC\_STACK\_SWITCH bug check has a value of 0x0000002B. This indicates that the kernel mode stack was overrun.
+title: Bug Check 0x2B PANIC_STACK_SWITCH
+description: The PANIC_STACK_SWITCH bug check has a value of 0x0000002B. This indicates that the kernel mode stack was overrun.
 ms.assetid: 0ab28a16-979d-4b40-812a-a31fac3f6be8
 keywords: ["Bug Check 0x2B PANIC_STACK_SWITCH", "PANIC_STACK_SWITCH"]
 ms.author: windowsdriverdev

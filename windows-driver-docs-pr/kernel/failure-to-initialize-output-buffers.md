@@ -37,7 +37,7 @@ In the following example, a driver returns garbage in unused bytes.
                         DevicePropertyDriverKeyName,
                         length,
                         outputBuffer->DriverKeyName,
-                        &amp;length);
+                        &length);
 
          outputBuffer->ActualLength =
                         length + sizeof(GET_NAME);

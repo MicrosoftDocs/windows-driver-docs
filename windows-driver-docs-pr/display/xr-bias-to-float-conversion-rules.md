@@ -1,6 +1,6 @@
 ---
-title: XR\_BIAS to Float Conversion Rules
-description: XR\_BIAS to Float Conversion Rules
+title: XR_BIAS to Float Conversion Rules
+description: XR_BIAS to Float Conversion Rules
 ms.assetid: fef4a1cb-6567-4d8f-aa8a-ceed00eefec8
 keywords:
 - Direct3D version 10.1 WDK Windows 7 display , converting XR_BIAS to float

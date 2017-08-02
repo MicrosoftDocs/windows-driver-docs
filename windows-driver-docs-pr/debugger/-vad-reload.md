@@ -1,6 +1,6 @@
 ---
-title: vad\_reload
-description: The vad\_reload extension reloads the user-mode modules for a specified process by using the virtual address descriptors (VADs) of that process.
+title: vad_reload
+description: The vad_reload extension reloads the user-mode modules for a specified process by using the virtual address descriptors (VADs) of that process.
 ms.assetid: B5500227-DDC5-43aa-987B-EB02C59B3AC6
 keywords: ["vad_reload Windows Debugging"]
 ms.author: windowsdriverdev
