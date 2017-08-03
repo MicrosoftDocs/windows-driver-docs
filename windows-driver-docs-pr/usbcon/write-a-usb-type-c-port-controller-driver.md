@@ -17,22 +17,6 @@ In Windows 10, version 1703, the USB Type-C architecture has been improved to su
 
 ![usb connector manager](images/tcpci-arch.png)
 
-**Anch comment: In general this section is very confusing for me because we have various components that do not map 1:1 to the official PD or TCPC specs. I have gotten very very confused trying to figure out how to word this section for accuracy. I highly recommend completely abstracting how UcmTcpciCx works to say that the UcmTcpciCx driver stack (UcmTcpciCx + UcmTcpciCx client driver) is analogous to the TCPM and leaving it at that. **
-
-The Device Policy Manager (DPM) implements the PD state machines. This includes: 
-
-* PD messaging protocol sequences. For example, negotiating an initial power contract, alternate mode discovery, power contract updates, etc. 
-
-* PD receiver and transmitter state machines. This includes managing the message ID counter, message retries, etc. 
-
-The Device Policy Manager expects to receive cable-detection events and PD-messaging events from the port manager.
-
-The Port Manager implements the USB Type-C state machine logic. It is analogous to the TCPM (Type-C Port Manager) as described in the TCPCI specification. It processes alerts received from the port controller interface. It also handles events related to the execution of the state machine. When the port manager receives events relevant to PD messaging, they are forwarded to DPM. It sends its requests and those received from DPM to the port controller interface. 
-
-The port manager interfaces with UcmCx to report USB Type-C-specific connector updates. 
-
-**Anch comment: End of confusing section**
-
 The UcmTcpciCx class extension is itself a client driver of UcmCx. The policy decisions about power contracts, data roles, are made in UcmCx and forwarded to UcmTcpciCx. UcmTcpciCx implements those policies and manages the Type-C and PD state machines, by using the port controller interface provided by your UcmTcpciCx client driver. 
 
 **Summary**
@@ -63,9 +47,7 @@ Applies to:
 
 **UcmTcpciCx client driver template**
 
-[UcmTcpciCx Client Driver Template](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmTcpciCxClientSample)
-
-*Need to edit UcmTcpciCxClientSample path to clearly emphasize that it isn't a sample driver that works with existing hardware, and is instead a template*
+[UcmTcpciCx client driver template](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmTcpciCxClientSample)
 
 ## Before you begin...
 
