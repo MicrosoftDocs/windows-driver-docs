@@ -85,16 +85,6 @@ Alt+S,U		|   	Unlink script
 | ------------- |-------------------------|
 Ctrl+↑ / ↓			|   Move up/down a stack frame
 
-### Model window
-
-| Keystroke     | Description             |
-| ------------- |-------------------------|
-Alt+O,C			|   New model query window
-Alt+O,E			|   Explore data model
-Alt+O,Q			|   Change model query
-Alt+O,G			|   Display as grid
-Alt+O,H			|   Display as hierarchy
-
 
 ### Help 
 | Keystroke     | Description             |
