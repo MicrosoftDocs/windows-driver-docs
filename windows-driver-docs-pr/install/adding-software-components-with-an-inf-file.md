@@ -21,13 +21,13 @@ This page provides guidelines for the use of software components.
 
 ## Getting started
 
-A software component is a separate, standalone driver package that references one or more software modules.  The referenced software enhances the value of the device, but is not necessary for basic device functionality and has no associated function driver service.  
+A software component is a separate, standalone driver package that can reference one or more software modules.  The referenced software enhances the value of the device, but is not necessary for basic device functionality and has no associated function driver service.  
 
 An [extension INF file](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-an-extension-inf-file) references one or more software components by specifying the [INF AddComponent Directive](inf-addcomponent-directive.md) one or more times in the [INF DDInstall.Components](inf-ddinstall-components-section.md) section.
 
 Adding components is only supported when used in an extension INF file.
 
-More than one driver packages can reference the same software component. 
+More than one driver package can reference the same software component. 
 
 For each software component referenced in an extension INF file, the system creates a virtual child device.
 
