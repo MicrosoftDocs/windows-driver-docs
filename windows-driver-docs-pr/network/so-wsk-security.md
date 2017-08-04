@@ -1,10 +1,10 @@
 ---
-title: SO\_WSK\_SECURITY
+title: SO_WSK_SECURITY
 author: windows-driver-content
-description: SO\_WSK\_SECURITY
+description: SO_WSK_SECURITY
 ms.assetid: 169680ba-6486-48fe-89d7-dcd4e5930605
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

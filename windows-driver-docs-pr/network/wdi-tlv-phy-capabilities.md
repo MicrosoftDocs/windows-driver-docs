@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_PHY\_CAPABILITIES
+title: WDI_TLV_PHY_CAPABILITIES
 author: windows-driver-content
-description: WDI\_TLV\_PHY\_CAPABILITIES is a TLV that contains PHY capabilities.
+description: WDI_TLV_PHY_CAPABILITIES is a TLV that contains PHY capabilities.
 ms.assetid: 8F482ED6-6594-4DB5-B53B-4424DAD32D36
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

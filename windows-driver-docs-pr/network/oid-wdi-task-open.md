@@ -1,10 +1,10 @@
 ---
-title: OID\_WDI\_TASK\_OPEN
+title: OID_WDI_TASK_OPEN
 author: windows-driver-content
-description: OID\_WDI\_TASK\_OPEN requests that the IHV component initializes the adapter.
+description: OID_WDI_TASK_OPEN requests that the IHV component initializes the adapter.
 ms.assetid: f4a77e08-1a1e-4d75-a559-a5cb01d825ee
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

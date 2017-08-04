@@ -1,10 +1,10 @@
 ---
-title: NET\_BUFFER\_LIST\_INFO macro
+title: NET_BUFFER_LIST_INFO macro
 author: windows-driver-content
-description: NET\_BUFFER\_LIST\_INFO is a macro that NDIS drivers use to get and set information that applies to all the NET\_BUFFER structures in a NET\_BUFFER\_LIST structure.
+description: NET_BUFFER_LIST_INFO is a macro that NDIS drivers use to get and set information that applies to all the NET_BUFFER structures in a NET_BUFFER_LIST structure.
 ms.assetid: 3ee2e7b5-1592-4913-a39d-44b815398c76
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

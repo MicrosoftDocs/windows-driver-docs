@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_OPERATION\_MODE
+title: WDI_TLV_OPERATION_MODE
 author: windows-driver-content
-description: WDI\_TLV\_OPERATION\_MODE is a TLV that contains the desired operation mode.
+description: WDI_TLV_OPERATION_MODE is a TLV that contains the desired operation mode.
 ms.assetid: CF5D9148-E50B-4F39-B37C-2495DE9A1488
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

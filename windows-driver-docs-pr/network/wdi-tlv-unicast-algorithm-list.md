@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_UNICAST\_ALGORITHM\_LIST
+title: WDI_TLV_UNICAST_ALGORITHM_LIST
 author: windows-driver-content
-description: WDI\_TLV\_UNICAST\_ALGORITHM\_LIST is a TLV that contains an array of unicast data algorithm pairs.
+description: WDI_TLV_UNICAST_ALGORITHM_LIST is a TLV that contains an array of unicast data algorithm pairs.
 ms.assetid: E216BE6A-5425-498F-ABDE-1229170DA5DB
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

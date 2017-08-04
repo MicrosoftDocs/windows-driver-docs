@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_BSS\_SELECTION\_PARAMETERS
+title: WDI_TLV_BSS_SELECTION_PARAMETERS
 author: windows-driver-content
-description: WDI\_TLV\_BSS\_SELECTION\_PARAMETERS is a TLV that contains WDI\_BSS\_SELECTION\_FLAGS that are used by host for BSS selection.
+description: WDI_TLV_BSS_SELECTION_PARAMETERS is a TLV that contains WDI_BSS_SELECTION_FLAGS that are used by host for BSS selection.
 ms.assetid: 5EDA0FAC-DF2E-437B-BB4F-F69468CE856E
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

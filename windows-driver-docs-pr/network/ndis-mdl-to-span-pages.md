@@ -1,10 +1,10 @@
 ---
-title: NDIS\_MDL\_TO\_SPAN\_PAGES macro
+title: NDIS_MDL_TO_SPAN_PAGES macro
 author: windows-driver-content
-description: The NDIS\_MDL\_TO\_SPAN\_PAGES macro retrieves the number of physical pages of memory that are being used to back a given MDL.
+description: The NDIS_MDL_TO_SPAN_PAGES macro retrieves the number of physical pages of memory that are being used to back a given MDL.
 ms.assetid: 8c9df989-4a5f-4ec1-9544-29b59517a502
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

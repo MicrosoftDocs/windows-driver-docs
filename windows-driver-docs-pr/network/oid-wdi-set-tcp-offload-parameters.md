@@ -1,10 +1,10 @@
 ---
-title: OID\_WDI\_SET\_TCP\_OFFLOAD\_PARAMETERS
+title: OID_WDI_SET_TCP_OFFLOAD_PARAMETERS
 author: windows-driver-content
-description: OID\_WDI\_SET\_TCP\_OFFLOAD\_PARAMETERS is sent down to the device from the OS to set the TCP offload parameters.
+description: OID_WDI_SET_TCP_OFFLOAD_PARAMETERS is sent down to the device from the OS to set the TCP offload parameters.
 ms.assetid: B615066B-3871-4445-8397-B41CB66EEF35
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

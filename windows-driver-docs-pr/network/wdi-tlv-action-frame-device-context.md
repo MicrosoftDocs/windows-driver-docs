@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_ACTION\_FRAME\_DEVICE\_CONTEXT
+title: WDI_TLV_ACTION_FRAME_DEVICE_CONTEXT
 author: windows-driver-content
-description: WDI\_TLV\_ACTION\_FRAME\_DEVICE\_CONTEXT is a TLV that contains an Action Frame device context.
+description: WDI_TLV_ACTION_FRAME_DEVICE_CONTEXT is a TLV that contains an Action Frame device context.
 ms.assetid: D8AF374A-0AD0-4856-B05C-B8E3A3F1572B
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

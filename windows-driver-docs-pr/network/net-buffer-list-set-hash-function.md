@@ -1,10 +1,10 @@
 ---
-title: NET\_BUFFER\_LIST\_SET\_HASH\_FUNCTION macro
+title: NET_BUFFER_LIST_SET_HASH_FUNCTION macro
 author: windows-driver-content
-description: The NET\_BUFFER\_LIST\_SET\_HASH\_FUNCTION macro sets the hash function information in a NET\_BUFFER\_LIST structure. Version InformationWindows VistaSupported. NDIS 6.0 driversSupported.
+description: The NET_BUFFER_LIST_SET_HASH_FUNCTION macro sets the hash function information in a NET_BUFFER_LIST structure. Version InformationWindows VistaSupported. NDIS 6.0 driversSupported.
 ms.assetid: 01257316-b037-4e7a-8084-d2cc8ad2a55a
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

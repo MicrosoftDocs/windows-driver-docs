@@ -1,10 +1,10 @@
 ---
-title: SIO\_WSK\_SET\_SENDTO\_ADDRESS
+title: SIO_WSK_SET_SENDTO_ADDRESS
 author: windows-driver-content
-description: SIO\_WSK\_SET\_SENDTO\_ADDRESS
+description: SIO_WSK_SET_SENDTO_ADDRESS
 ms.assetid: 2dd149d2-adc6-4e03-92de-ed76aa048886
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

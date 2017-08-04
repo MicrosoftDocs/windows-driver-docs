@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_ETHERTYPE\_ENCAP\_TABLE
+title: WDI_TLV_ETHERTYPE_ENCAP_TABLE
 author: windows-driver-content
-description: WDI\_TLV\_ETHERTYPE\_ENCAP\_TABLE is a TLV that contains the Ethertype encapsulations for the association.
+description: WDI_TLV_ETHERTYPE_ENCAP_TABLE is a TLV that contains the Ethertype encapsulations for the association.
 ms.assetid: BAAC7E5B-F13F-4AC8-A3F9-76197F92C7E3
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

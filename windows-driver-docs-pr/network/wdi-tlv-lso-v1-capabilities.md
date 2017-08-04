@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_LSO\_V1\_CAPABILITIES (0xCC)
+title: WDI_TLV_LSO_V1_CAPABILITIES (0xCC)
 author: windows-driver-content
-description: WDI\_TLV\_LSO\_V1\_CAPABILITIES is a TLV that contains Large Send Offload V1 capabilities.
+description: WDI_TLV_LSO_V1_CAPABILITIES is a TLV that contains Large Send Offload V1 capabilities.
 ms.assetid: 22C5778A-F551-4931-A19C-7AA399221B3D
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

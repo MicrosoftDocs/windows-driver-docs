@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x159 HAL\_ILLEGAL\_IOMMU\_PAGE\_FAULT
-description: The HAL\_ILLEGAL\_IOMMU\_PAGE\_FAULT bug check has a value of 0x00000159.
+title: Bug Check 0x159 HAL_ILLEGAL_IOMMU_PAGE_FAULT
+description: The HAL_ILLEGAL_IOMMU_PAGE_FAULT bug check has a value of 0x00000159.
 ms.assetid: 2431EDC4-53B3-4E17-86D8-3B6911B21C98
 keywords: ["Bug Check 0x159 HAL_ILLEGAL_IOMMU_PAGE_FAULT", "HAL_ILLEGAL_IOMMU_PAGE_FAULT"]
 ms.author: windowsdriverdev

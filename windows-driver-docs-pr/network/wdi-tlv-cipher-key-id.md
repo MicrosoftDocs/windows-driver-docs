@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_CIPHER\_KEY\_ID
+title: WDI_TLV_CIPHER_KEY_ID
 author: windows-driver-content
-description: WDI\_TLV\_CIPHER\_KEY\_ID is a TLV that contains a cipher key ID for OID\_WDI\_SET\_ADD\_CIPHER\_KEYS and OID\_WDI\_SET\_DELETE\_CIPHER\_KEYS.
+description: WDI_TLV_CIPHER_KEY_ID is a TLV that contains a cipher key ID for OID_WDI_SET_ADD_CIPHER_KEYS and OID_WDI_SET_DELETE_CIPHER_KEYS.
 ms.assetid: 24076B2A-FAC2-4509-9F1C-7F2AF57883CF
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

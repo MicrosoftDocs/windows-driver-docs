@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_SCAN\_DWELL\_TIME
+title: WDI_TLV_SCAN_DWELL_TIME
 author: windows-driver-content
-description: WDI\_TLV\_SCAN\_DWELL\_TIME is a TLV that contains scanning dwell time settings.
+description: WDI_TLV_SCAN_DWELL_TIME is a TLV that contains scanning dwell time settings.
 ms.assetid: A0C597E7-879C-43CC-BB86-4908AC31828F
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

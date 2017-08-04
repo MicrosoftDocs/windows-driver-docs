@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_P2P\_DISCOVERED\_SERVICE\_ENTRY
+title: WDI_TLV_P2P_DISCOVERED_SERVICE_ENTRY
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_DISCOVERED\_SERVICE\_ENTRY is a TLV that contains a discovered service entry.
+description: WDI_TLV_P2P_DISCOVERED_SERVICE_ENTRY is a TLV that contains a discovered service entry.
 ms.assetid: B8D453FF-49CA-4106-97DA-008893760E92
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

@@ -784,6 +784,86 @@
       "source_path": "windows-driver-docs-pr/network/ndis-versions-in-network-drivers.md",
       "redirect_URL": "/windows-hardware/drivers/network/overview-of-ndis-versions",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis--rndis.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-communication",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-control-messages2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-control-messages",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-initialize-msg2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-initialize-msg",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-initialize-cmplt2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-initialize-cmplt",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-halt-msg2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-halt-msg",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-query-msg2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-query-msg",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-query-cmplt2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-query-cmplt",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-set-msg2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-set-msg",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-set-cmplt2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-set-cmplt",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-reset-msg2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-reset-msg",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-reset-cmplt2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-reset-cmplt",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-indicate-status-msg2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-indicate-status-msg",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-keepalive-msg2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-keepalive-msg",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-keepalive-cmplt2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-keepalive-cmplt",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-data-message2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-data-message",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-packet-msg2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-packet-msg",
+      "redirect_document_id": true
     }
   ]
 }

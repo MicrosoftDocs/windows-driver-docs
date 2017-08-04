@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0xBD INVALID\_HIBERNATED\_STATE
-description: The INVALID\_HIBERNATED\_STATE bug check has a value of 0x000000BD.
+title: Bug Check 0xBD INVALID_HIBERNATED_STATE
+description: The INVALID_HIBERNATED_STATE bug check has a value of 0x000000BD.
 ms.assetid: DB386A20-EE6F-4E2B-8FFD-51CCE0A8AEAC
 keywords: ["Bug Check 0xBD INVALID_HIBERNATED_STATE", "INVALID_HIBERNATED_STATE"]
 ms.author: windowsdriverdev

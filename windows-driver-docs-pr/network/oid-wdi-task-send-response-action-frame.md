@@ -1,10 +1,10 @@
 ---
-title: OID\_WDI\_TASK\_SEND\_RESPONSE\_ACTION\_FRAME
+title: OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME
 author: windows-driver-content
-description: OID\_WDI\_TASK\_SEND\_RESPONSE\_ACTION\_FRAME requests that the IHV component sends Response Action Frames.
+description: OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME requests that the IHV component sends Response Action Frames.
 ms.assetid: DA2FF006-BA81-48B9-8AAD-694818E78AEF
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

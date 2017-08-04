@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_P2P\_INSTANCE\_NAME\_HASH
+title: WDI_TLV_P2P_INSTANCE_NAME_HASH
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_INSTANCE\_NAME\_HASH is a TLV that contains the hash of \ 0034;Instance Name, Service Type \ 0034;.
+description: WDI_TLV_P2P_INSTANCE_NAME_HASH is a TLV that contains the hash of \ 0034;Instance Name, Service Type \ 0034;.
 ms.assetid: A29D0339-93A8-43EB-8C22-DD7A7DC2147C
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

@@ -1,10 +1,10 @@
 ---
-title: NDIS\_RSS\_HASH\_INFO\_FROM\_TYPE\_AND\_FUNC macro
+title: NDIS_RSS_HASH_INFO_FROM_TYPE_AND_FUNC macro
 author: windows-driver-content
-description: The NDIS\_RSS\_HASH\_INFO\_FROM\_TYPE\_AND\_FUNC macro combines a hash type and hash function into hash information and sets the HashInformation member in the NDIS\_RECEIVE\_SCALE\_PARAMETERS structure.
+description: The NDIS_RSS_HASH_INFO_FROM_TYPE_AND_FUNC macro combines a hash type and hash function into hash information and sets the HashInformation member in the NDIS_RECEIVE_SCALE_PARAMETERS structure.
 ms.assetid: c29e3963-d8d0-459d-89ca-1d1a4cf4921f
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

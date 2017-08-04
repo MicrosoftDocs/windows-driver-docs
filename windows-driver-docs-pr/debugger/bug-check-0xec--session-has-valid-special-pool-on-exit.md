@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0xEC SESSION\_HAS\_VALID\_SPECIAL\_POOL\_ON\_EXIT
-description: The SESSION\_HAS\_VALID\_SPECIAL\_POOL\_ON\_EXIT bug check has a value of 0x000000EC. This indicates that a session unload occurred while a session driver still held memory.
+title: Bug Check 0xEC SESSION_HAS_VALID_SPECIAL_POOL_ON_EXIT
+description: The SESSION_HAS_VALID_SPECIAL_POOL_ON_EXIT bug check has a value of 0x000000EC. This indicates that a session unload occurred while a session driver still held memory.
 ms.assetid: 0100684b-cde6-4f15-93da-78d200fa2f80
 keywords: ["Bug Check 0xEC SESSION_HAS_VALID_SPECIAL_POOL_ON_EXIT", "SESSION_HAS_VALID_SPECIAL_POOL_ON_EXIT"]
 ms.author: windowsdriverdev

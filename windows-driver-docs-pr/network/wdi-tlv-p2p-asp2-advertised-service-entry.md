@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_P2P\_ASP2\_ADVERTISED\_SERVICE\_ENTRY
+title: WDI_TLV_P2P_ASP2_ADVERTISED_SERVICE_ENTRY
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_ASP2\_ADVERTISED\_SERVICE\_ENTRY is a TLV that contains an ASP2 Advertised Service Entry.
+description: WDI_TLV_P2P_ASP2_ADVERTISED_SERVICE_ENTRY is a TLV that contains an ASP2 Advertised Service Entry.
 ms.assetid: CF7ED750-1987-4784-9E61-516EBBA22B9B
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

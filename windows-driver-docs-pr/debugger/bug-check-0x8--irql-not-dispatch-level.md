@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x8 IRQL\_NOT\_DISPATCH\_LEVEL
-description: The IRQL\_NOT\_DISPATCH\_LEVEL bug check has a value of 0x00000008.This bug check appears very infrequently.
+title: Bug Check 0x8 IRQL_NOT_DISPATCH_LEVEL
+description: The IRQL_NOT_DISPATCH_LEVEL bug check has a value of 0x00000008.This bug check appears very infrequently.
 ms.assetid: e37a2fa2-2a0c-4259-91cc-bb8ccd411189
 keywords: ["Bug Check 0x8 IRQL_NOT_DISPATCH_LEVEL", "IRQL_NOT_DISPATCH_LEVEL"]
 ms.author: windowsdriverdev

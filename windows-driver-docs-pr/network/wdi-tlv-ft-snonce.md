@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_FT\_SNONCE
+title: WDI_TLV_FT_SNONCE
 author: windows-driver-content
-description: WDI\_TLV\_FT\_SNONCE is an unused TLV.
+description: WDI_TLV_FT_SNONCE is an unused TLV.
 ms.assetid: 43702677-C19B-4185-AFCD-9D8BF0CA31F9
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

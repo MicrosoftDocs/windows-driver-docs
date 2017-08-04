@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x6 INVALID\_PROCESS\_DETACH\_ATTEMPT
-description: The INVALID\_PROCESS\_DETACH\_ATTEMPT bug check has a value of 0x00000006. This bug check appears very infrequently.
+title: Bug Check 0x6 INVALID_PROCESS_DETACH_ATTEMPT
+description: The INVALID_PROCESS_DETACH_ATTEMPT bug check has a value of 0x00000006. This bug check appears very infrequently.
 ms.assetid: f468b348-6576-4430-aa8f-b6100a689fee
 keywords: ["Bug Check 0x6 INVALID_PROCESS_DETACH_ATTEMPT", "INVALID_PROCESS_DETACH_ATTEMPT"]
 ms.author: windowsdriverdev

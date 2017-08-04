@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_AP\_BAND\_CHANNEL
+title: WDI_TLV_AP_BAND_CHANNEL
 author: windows-driver-content
-description: WDI\_TLV\_AP\_BAND\_CHANNEL is a TLV that specifies access point band and channel information.
+description: WDI_TLV_AP_BAND_CHANNEL is a TLV that specifies access point band and channel information.
 ms.assetid: 5659CFA1-7FA9-490D-83DE-A56A895602A0
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

@@ -1,10 +1,10 @@
 ---
-title: NET\_BUFFER\_SHARED\_MEM\_FLAGS macro
+title: NET_BUFFER_SHARED_MEM_FLAGS macro
 author: windows-driver-content
-description: The NET\_BUFFER\_SHARED\_MEM\_FLAGS macro gets the shared memory flags from a NET\_BUFFER\_SHARED\_MEMORY structure.
+description: The NET_BUFFER_SHARED_MEM_FLAGS macro gets the shared memory flags from a NET_BUFFER_SHARED_MEMORY structure.
 ms.assetid: b9018846-d085-48bc-991b-4f6986cd820c
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_SEND\_ACTION\_FRAME\_REQUEST\_PARAMETERS
+title: WDI_TLV_SEND_ACTION_FRAME_REQUEST_PARAMETERS
 author: windows-driver-content
-description: WDI\_TLV\_SEND\_ACTION\_FRAME\_REQUEST\_PARAMETERS is a TLV that contains parameters for OID\_WDI\_TASK\_SEND\_REQUEST\_ACTION\_FRAME.
+description: WDI_TLV_SEND_ACTION_FRAME_REQUEST_PARAMETERS is a TLV that contains parameters for OID_WDI_TASK_SEND_REQUEST_ACTION_FRAME.
 ms.assetid: 92629752-A94B-442A-97E9-D8E1C7924855
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

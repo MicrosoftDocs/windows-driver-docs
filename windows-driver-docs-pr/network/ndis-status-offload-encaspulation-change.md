@@ -1,10 +1,10 @@
 ---
-title: NDIS\_STATUS\_OFFLOAD\_ENCASPULATION\_CHANGE
+title: NDIS_STATUS_OFFLOAD_ENCASPULATION_CHANGE
 author: windows-driver-content
-description: Miniport drivers use the NDIS\_STATUS\_OFFLOAD\_ENCASPULATION\_CHANGE status indication to notify NDIS and overlying drivers that there has been change in the encapsulation settings.
+description: Miniport drivers use the NDIS_STATUS_OFFLOAD_ENCASPULATION_CHANGE status indication to notify NDIS and overlying drivers that there has been change in the encapsulation settings.
 ms.assetid: 2db2a42e-85a2-41a6-b6ab-13b493057648
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

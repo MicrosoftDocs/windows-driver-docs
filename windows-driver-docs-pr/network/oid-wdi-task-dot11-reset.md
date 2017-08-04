@@ -1,10 +1,10 @@
 ---
-title: OID\_WDI\_TASK\_DOT11\_RESET
+title: OID_WDI_TASK_DOT11_RESET
 author: windows-driver-content
-description: OID\_WDI\_TASK\_DOT11\_RESET requests that the IHV component resets the MAC and PHY state on a specified port.
+description: OID_WDI_TASK_DOT11_RESET requests that the IHV component resets the MAC and PHY state on a specified port.
 ms.assetid: 5fcac1da-0776-47a5-87b7-8e831f968f7c
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

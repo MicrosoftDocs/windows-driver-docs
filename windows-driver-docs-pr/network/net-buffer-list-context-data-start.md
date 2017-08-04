@@ -1,10 +1,10 @@
 ---
-title: NET\_BUFFER\_LIST\_CONTEXT\_DATA\_START macro
+title: NET_BUFFER_LIST_CONTEXT_DATA_START macro
 author: windows-driver-content
-description: NET\_BUFFER\_LIST\_CONTEXT\_DATA\_START is a macro that NDIS drivers use to get a pointer to the NET\_BUFFER\_LIST\_CONTEXT context space that is associated with a NET\_BUFFER\_LIST structure.
+description: NET_BUFFER_LIST_CONTEXT_DATA_START is a macro that NDIS drivers use to get a pointer to the NET_BUFFER_LIST_CONTEXT context space that is associated with a NET_BUFFER_LIST structure.
 ms.assetid: 165dc176-61fc-41d0-9342-803b45ad3bc1
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

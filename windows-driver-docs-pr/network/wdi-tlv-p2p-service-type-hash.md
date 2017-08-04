@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_P2P\_SERVICE\_TYPE\_HASH
+title: WDI_TLV_P2P_SERVICE_TYPE_HASH
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_SERVICE\_TYPE\_HASH is a TLV that contains the hash of Service Type.
+description: WDI_TLV_P2P_SERVICE_TYPE_HASH is a TLV that contains the hash of Service Type.
 ms.assetid: A475C2E3-F558-47EC-9708-87887AE2D8AF
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

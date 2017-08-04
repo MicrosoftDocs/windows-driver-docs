@@ -1,10 +1,10 @@
 ---
-title: OID\_WDI\_SET\_NETWORK\_LIST\_OFFLOAD
+title: OID_WDI_SET_NETWORK_LIST_OFFLOAD
 author: windows-driver-content
-description: OID\_WDI\_SET\_NETWORK\_LIST\_OFFLOAD sets a list of preferred SSIDs for the firmware to scan for APs.
+description: OID_WDI_SET_NETWORK_LIST_OFFLOAD sets a list of preferred SSIDs for the firmware to scan for APs.
 ms.assetid: 2df9ee2b-78df-4f92-9b40-5945ecc81c7e
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

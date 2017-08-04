@@ -1,10 +1,10 @@
 ---
-title: NET\_BUFFER\_LIST\_NBL\_FLAGS macro
+title: NET_BUFFER_LIST_NBL_FLAGS macro
 author: windows-driver-content
-description: The NET\_BUFFER\_LIST\_NBL\_FLAGS macro retrieves the NblFlags member of a NET\_BUFFER\_LIST structure.
+description: The NET_BUFFER_LIST_NBL_FLAGS macro retrieves the NblFlags member of a NET_BUFFER_LIST structure.
 ms.assetid: 3ae4336d-4b62-476e-9b20-bf41fc308dc4
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

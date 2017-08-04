@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_SSID\_OFFLOAD
+title: WDI_TLV_SSID_OFFLOAD
 author: windows-driver-content
-description: WDI\_TLV\_SSID\_OFFLOAD is a TLV that contains an SSID and hints about the SSID.
+description: WDI_TLV_SSID_OFFLOAD is a TLV that contains an SSID and hints about the SSID.
 ms.assetid: 6CF08BEB-8CEE-4C07-B63B-7FAC7AEAB24F
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

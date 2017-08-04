@@ -1,10 +1,10 @@
 ---
-title: NDIS\_SWITCH\_PORT\_PROPERTY\_ENUM\_INFO\_GET\_NEXT macro
+title: NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO_GET_NEXT macro
 author: windows-driver-content
-description: Hyper-V extensible switch extensions use the NDIS\_SWITCH\_PORT\_PROPERTY\_ENUM\_INFO\_GET\_NEXT macro to access the next NDIS\_SWITCH\_PORT\_PROPERTY\_ENUM\_INFO element that follows an NDIS\_SWITCH\_PORT\_PROPERTY\_ENUM\_INFO structure in the array that is specified by an NDIS\_SWITCH\_PORT\_PROPERTY\_ENUM\_PARAMETERS structure.
+description: Hyper-V extensible switch extensions use the NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO_GET_NEXT macro to access the next NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO element that follows an NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO structure in the array that is specified by an NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS structure.
 ms.assetid: 103DE1CC-08DA-4F79-9F20-BA15C5245080
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

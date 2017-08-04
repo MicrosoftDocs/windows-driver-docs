@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_PMKID
+title: WDI_TLV_PMKID
 author: windows-driver-content
-description: WDI\_TLV\_PMKID is a TLV that contains a PMKID value.
+description: WDI_TLV_PMKID is a TLV that contains a PMKID value.
 ms.assetid: 6873928B-7843-434F-AB80-6A7895D751A4
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

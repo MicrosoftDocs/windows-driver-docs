@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_MULTICAST\_DATA\_ALGORITHM\_LIST
+title: WDI_TLV_MULTICAST_DATA_ALGORITHM_LIST
 author: windows-driver-content
-description: WDI\_TLV\_MULTICAST\_DATA\_ALGORITHM\_LIST is a TLV that contains an array of multicast data algorithm pairs.
+description: WDI_TLV_MULTICAST_DATA_ALGORITHM_LIST is a TLV that contains an array of multicast data algorithm pairs.
 ms.assetid: BF07170E-CF4E-4E93-85E1-3276E414BDD9
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_DELETE\_PEER\_STATE\_PARAMETERS
+title: WDI_TLV_DELETE_PEER_STATE_PARAMETERS
 author: windows-driver-content
-description: WDI\_TLV\_DELETE\_PEER\_STATE\_PARAMETERS is an unused TLV.
+description: WDI_TLV_DELETE_PEER_STATE_PARAMETERS is an unused TLV.
 ms.assetid: 784FC7E3-8922-44D1-B46D-BEC6CE7EF3EF
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

@@ -1,10 +1,10 @@
 ---
-title: NET\_BUFFER\_DATA\_PHYSICAL\_ADDRESS macro
+title: NET_BUFFER_DATA_PHYSICAL_ADDRESS macro
 author: windows-driver-content
-description: The NET\_BUFFER\_DATA\_PHYSICAL\_ADDRESS macro retrieves the DataPhysicalAddress member of a NET\_BUFFER structure.
+description: The NET_BUFFER_DATA_PHYSICAL_ADDRESS macro retrieves the DataPhysicalAddress member of a NET_BUFFER structure.
 ms.assetid: da9971ec-38ce-4489-a11a-886aab9c6e6c
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

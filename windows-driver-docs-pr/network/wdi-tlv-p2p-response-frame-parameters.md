@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_P2P\_RESPONSE\_FRAME\_PARAMETERS
+title: WDI_TLV_P2P_RESPONSE_FRAME_PARAMETERS
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_RESPONSE\_FRAME\_PARAMETERS is an unused TLV.
+description: WDI_TLV_P2P_RESPONSE_FRAME_PARAMETERS is an unused TLV.
 ms.assetid: DA2F2BA8-4F30-4F10-8A0C-6A950CB933EE
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

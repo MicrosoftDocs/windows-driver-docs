@@ -1,10 +1,10 @@
 ---
-title: OID\_WDI\_SET\_POWER\_STATE
+title: OID_WDI_SET_POWER_STATE
 author: windows-driver-content
-description: OID\_WDI\_SET\_POWER\_STATE sets the power state of the device.
+description: OID_WDI_SET_POWER_STATE sets the power state of the device.
 ms.assetid: f1453ace-5e36-464e-96f0-e578890cdf3f
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

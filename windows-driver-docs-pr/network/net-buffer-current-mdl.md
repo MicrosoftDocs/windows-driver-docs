@@ -1,10 +1,10 @@
 ---
-title: NET\_BUFFER\_CURRENT\_MDL macro
+title: NET_BUFFER_CURRENT_MDL macro
 author: windows-driver-content
-description: NET\_BUFFER\_CURRENT\_MDL is a macro that NDIS drivers use to get the CurrentMdl member of a NET\_BUFFER\_DATA structure in a NET\_BUFFER structure.
+description: NET_BUFFER_CURRENT_MDL is a macro that NDIS drivers use to get the CurrentMdl member of a NET_BUFFER_DATA structure in a NET_BUFFER structure.
 ms.assetid: c2fc283f-13b7-4c04-96c2-4bc1ea811a17
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

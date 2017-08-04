@@ -1,6 +1,6 @@
 ---
 title: C28617
-description: Warning C28617 Avoid using the return value of \_beginthread(). Use \_beginthreadex() instead.
+description: Warning C28617 Avoid using the return value of _beginthread(). Use _beginthreadex() instead.
 ms.assetid: b0de0809-1583-4c1d-ad70-c3e27afc3e6d
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

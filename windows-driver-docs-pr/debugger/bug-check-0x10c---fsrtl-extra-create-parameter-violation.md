@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x10C FSRTL\_EXTRA\_CREATE\_PARAMETER\_VIOLATION
-description: The FSRTL\_EXTRA\_CREATE\_PARAMETER\_VIOLATION bug check has a value of 0x0000010C that indicates that a violation was detected in the FsRtl ECP package.
+title: Bug Check 0x10C FSRTL_EXTRA_CREATE_PARAMETER_VIOLATION
+description: The FSRTL_EXTRA_CREATE_PARAMETER_VIOLATION bug check has a value of 0x0000010C that indicates that a violation was detected in the FsRtl ECP package.
 ms.assetid: b702b182-696a-4233-8bd0-23a52ab2ddc4
 keywords: ["Bug Check 0x10C FSRTL_EXTRA_CREATE_PARAMETER_VIOLATION", "FSRTL_EXTRA_CREATE_PARAMETER_VIOLATION"]
 ms.author: windowsdriverdev

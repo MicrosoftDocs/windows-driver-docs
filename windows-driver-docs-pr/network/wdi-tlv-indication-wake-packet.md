@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_INDICATION\_WAKE\_PACKET
+title: WDI_TLV_INDICATION_WAKE_PACKET
 author: windows-driver-content
-description: WDI\_TLV\_INDICATION\_WAKE\_PACKET is a TLV that contains a wake packet for NDIS\_STATUS\_WDI\_INDICATION\_WAKE\_REASON. When the wake reason is WDI\_WAKE\_REASON\_CODE PACKET, the status must include the wake packet encapsulated in a WDI\_TLV\_INDICATION\_WAKE\_PACKET.
+description: WDI_TLV_INDICATION_WAKE_PACKET is a TLV that contains a wake packet for NDIS_STATUS_WDI_INDICATION_WAKE_REASON. When the wake reason is WDI_WAKE_REASON_CODE PACKET, the status must include the wake packet encapsulated in a WDI_TLV_INDICATION_WAKE_PACKET.
 ms.assetid: 3C566FED-4594-403F-93D4-1CA6F2F655F9
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_OPERATING\_CLASS
+title: WDI_TLV_OPERATING_CLASS
 author: windows-driver-content
-description: WDI\_TLV\_OPERATING\_CLASS is a TLV that contains the frequency band for a channel.
+description: WDI_TLV_OPERATING_CLASS is a TLV that contains the frequency band for a channel.
 ms.assetid: 58F2D174-EB47-4163-AFFD-C119E5E7CE53
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 
