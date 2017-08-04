@@ -38,7 +38,7 @@ Use the *Update debugger* option on the Home menu to check for updates.
 
 ## Command line startup options
 
-For information on the startup parameters for WinDbg Preview, see [WinDbg Command-Line Options](windbg-command-line-options).
+For information on the startup parameters for WinDbg Preview, see [WinDbg Command-Line Options](windbg-command-line-options.md).
 
 >> TBD need to list supported options. 
 

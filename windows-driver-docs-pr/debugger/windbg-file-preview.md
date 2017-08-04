@@ -24,19 +24,19 @@ Use *Save workspace* to save the current workspace. Do this when TBD.
 
 ## Open source file
 
-Use *Open source file* to open a source file. Do this when TBD.
+Use *Open source file* to open a source file. Do this when TBD. For more information on working with source files, see [Source Code Debugging in WinDbg](source-window.md)
 
 
 ## Open script
+
 Use *Open script file* to open a script file. 
-For more information on working with scripts see [WinDbg Preview Scripting Menu](windbg-scripting-preview.md).
+For more information on working with scripts see [WinDbg Preview - Scripting Menu](windbg-scripting-preview.md).
 
 
 
 ## Settings
-Use *Open source file* to open a source file. Do this when TBD.
 
-For more information on working settings an workspaces see [WinDbg Preview Setup – settings and workspaces](windbg-setup-preview.md).
+Use the settings menu to set the source and symbol path as well as choose the light and dark theme for the debugger. For more information on settings see [WinDbg Preview Setup – settings and workspaces](windbg-setup-preview.md).
 
 
 ## About

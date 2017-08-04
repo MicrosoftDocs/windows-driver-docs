@@ -104,16 +104,16 @@ For more information, see [Breakpoints](windbg-breakpoints-preview.md).
 - **Built in data model support** - WinDbg Preview is written with built in data model support and the data model is available through out the debugger.
 - **Model window** - The model window gives you an expandable and browsable version of ‘dx’ and ‘dx -g’, letting you create powerful tables on-top of your NatVis, JavaScript, and LINQ queries. 
 
-For more information, see  [WinDbg Preview Data Model Menu](windbg-data-model-preview.md).
+For more information, see  [WinDbg Preview - Data Model Menu](windbg-data-model-preview.md).
 
 ![Screen shot of data model menu in debugger](images/windbgx-data-model-menu.png)
 
 
 ### Scripting  
 
-- **Script development UI** - There is now a purpose built scripting window to make developing JavaScript and NatVis scripts easier, with error highlighting, Intellisense abd debugging. 
+- **Script development UI** - There is now a purpose built scripting window to make developing JavaScript and NatVis scripts easier, with error highlighting, IntelliSense and debugging capabilities. 
 
-For more information, see [WinDbg Preview Scripting Menu](windbg-scripting-preview.md).
+For more information, see [WinDbg Preview - Scripting Menu](windbg-scripting-preview.md).
 
 ![Screen shot of scripting menu in debugger](images/windbgx-scripting-menu.png)
 

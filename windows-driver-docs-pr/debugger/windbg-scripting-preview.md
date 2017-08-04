@@ -1,5 +1,5 @@
 ---
-title: WinDbg Preview - Scripting 
+title: WinDbg Preview - Scripting Menu
 description: This section describes how to use scripting in the WinDbg preview debugger.
 ms.author: windowsdriverdev
 ms.date: 08/04/2017
@@ -8,7 +8,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# WinDbg Preview - Scripting 
+# WinDbg Preview - Scripting Menu
 
 
 This section describes how to how to use scripting.
