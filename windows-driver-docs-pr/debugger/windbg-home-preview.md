@@ -10,8 +10,26 @@ ms.technology: windows-devices
 
 # WinDbg Preview - Home Menu 
 
+This section describes how to work with the home menu.
 
-This section describes how to use the home menu.
+## Flow Control
+
+Use the *Flow Control* options to break into a connected debugging target, resume code execution on the target and step in to and out of code.
+
+## End
+
+Use *End* options to restart, detach and stop debugging.
+
+## Source Mode
+
+Use *Source Mode* to toggle between source code and assembly views.
+
+## Help (Support)
+
+Use *Help* options to do the following:
+- Review Help
+- Update Debugger 
+- Send Feedback For more information on sending feedback, see [Providing feedback](debugging-using-windbg-preview.md#providingfeedback). 
 
 
 *Additional content pending*
