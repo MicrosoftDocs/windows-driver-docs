@@ -49,7 +49,7 @@ You can use /? to list additional command line options.
 
 ## See Also
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview)
+[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
 
 
 *Additional content pending*

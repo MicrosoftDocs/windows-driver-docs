@@ -45,7 +45,7 @@ View
 
 ## See Also
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview)
+[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
 
  
 

@@ -23,7 +23,7 @@ If you are not familiar with setting up a debugger kernel mode session, see [Get
 
 ## See Also
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview)
+[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
  
 
 
