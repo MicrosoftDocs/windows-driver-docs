@@ -12,3 +12,12 @@ We recommend providing a UMDF driver that does the following:
 
 For information about updating chassis-mounted devices, see [Windows UEFI firmware update platform](../bringup/windows-uefi-firmware-update-platform.md)
 
+<!--crunch history before merging to master
+I'm not quite clear on the scope of what they'll need to provide.
+
+They're going to provide an extensible INF (that specifies AddComponent), and (ideally) UMDF code that checks the firmware version and schedules an event for the actual update.
+
+Does this mean it's actually a full driver package they'll submit?  And is the updated firmware code encapulated in there in some form?
+
+
+-->
