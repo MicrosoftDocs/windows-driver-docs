@@ -24,17 +24,16 @@ All three options are described next.
 
 Use this option to starts an executable and attach to it.
 
+Browse to the desired executable in the provided file dialog and open it. 
+
 ## Launch Executable (advanced)
 
-Use this option to start an executable and attach to it it using a set of dialog boxes with advanced options. Speficy the following options
-- Path to the executable, such as C:\Windows\notepad.exe
+Use this option to start an executable and attach to it it using a set of dialog boxes with advanced options. 
+
+Specify the following options:
+- Path to the executable, such as *C:\Windows\notepad.exe*
 - Optional arguments to provide to the executable when launched
 - Optional start directory location
-- Checkbox to control if a trace is taken
-- Trace output directory used when a trace is taken
-- Advanced tracing options. For more information about tracing options, see [TBD]() 
-
->> ETW Trace options???
 
 ![Launch Executable (advanced) dialog box with advanced options](images/windbgx-launch-executable-advanced.png)
 

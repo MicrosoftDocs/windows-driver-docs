@@ -14,18 +14,57 @@ This section describes how to setup and configure the WinDbg Preview debugger.
 
 ## Settings
 
-Use the settings menu to set the source and symbol path. 
+Use the settings menu to set the source and symbol path as well as choose the light and dark theme for the debugger. 
 
 ![Screen shot of feedback hub showing feedback options including the add new feedback button](images/windbgx-settings-menu.png)
 
-For more information see [Accessing Symbols for Debugging](accessing-symbols-for-debugging.md) and [Source Code Debugging in WinDbg](source-window.md).
+For more information on setting the paths, see [Accessing Symbols for Debugging](accessing-symbols-for-debugging.md) and [Source Code Debugging in WinDbg](source-window.md).
 
 ## Workspace
 
-The workspace feature saves configuration information in the target connection information.
+The workspace feature saves configuration information in the target connection information file.
 
->> TBD correct? 
->> TBD Follow up on this
+When you change settings TBD TBD.
+
+The workspace and target connection information is stored in XML format. 
+
+The following file, shows an example workspace configuration file.
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<TargetConfig Name="C:\paint.dmp" LastUsed="2017-08-03T21:34:20.1013837Z">
+  <EngineConfig />
+  <EngineOptions>
+    <Property name="FinalBreak" value="true" />
+    <Property name="SourceDebugging" value="true" />
+    <Property name="DebugChildProcesses" value="false" />
+    <Property name="Noninvasive" value="false" />
+    <Property name="NoDebugHeap" value="false" />
+    <Property name="Verbose" value="false" />
+    <Property name="SymbolOptionsOverride" value="0" />
+    <Property name="ShouldOverrideSymbolOptions" value="false" />
+    <Property name="SymOptExactSymbols" value="false" />
+    <Property name="SymOptFailCriticalErrors" value="false" />
+    <Property name="SymOptIgnoreCvRec" value="false" />
+    <Property name="SymOptIgnoreNtSympath" value="false" />
+    <Property name="SymOptNoCpp" value="false" />
+    <Property name="SymOptNoUnqualifiedLoads" value="false" />
+    <Property name="SymOptAutoPublics" value="false" />
+    <Property name="SymOptDebug" value="false" />
+    <Property name="Elevate" value="false" />
+    <Property name="Restartable" value="true" />
+    <Property name="UseImplicitCommandLine" value="false" />
+  </EngineOptions>
+  <TargetOptions>
+    <Option name="OpenDump">
+      <Property name="DumpPath" value="C:\paint.dmp" />
+    </Option>
+  </TargetOptions>
+</TargetConfig>
+
+```
+
+Note that this file format will continue to evolve as more featured are added to WinDbg Preview.
 
 *Additional content pending*
 
