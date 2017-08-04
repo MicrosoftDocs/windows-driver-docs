@@ -29,7 +29,7 @@ WinDbg Preview installs to %localappdata%\dbg\UI\WinDbgX.exe. If you're trying t
 
 You can XCopy the binaries from \\dbg\dbgx\build\[version] or \\dbg\dbgx\slow\[version] to the location of your choice, such as a thumb drive for portable use.
 
->> TBD
+>> TBD - need to confirm this is accurate.
 
 ## Checking for updates
 
@@ -40,11 +40,16 @@ Use the *Update debugger* option on the Home menu to check for updates.
 
 For information on the startup parameters for WinDbg Preview, see [WinDbg Command-Line Options](windbg-command-line-options).
 
->> TBD need to determine if all options are supported. 
+>> TBD need to list supported options. 
 
 You can use /? to list additional command line options.
 
 ![Screen shot of command line help output listing about 50 options](images/windbgx-start-up-options.png)
+
+
+## See Also
+
+[Debugging Using WinDbg Preview](debugging-using-windbg-preview)
 
 
 *Additional content pending*
