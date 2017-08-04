@@ -10,10 +10,22 @@ ms.technology: windows-devices
 
 # WinDbg Preview - Setup
 
-
 This section describes how to setup and configure the WinDbg Preview debugger.
 
+## Settings
 
+Use the settings menu to set the source and symbol path. 
+
+![Screen shot of feedback hub showing feedback options including the add new feedback button](images/windbgx-settings-menu.png)
+
+For more information see [Accessing Symbols for Debugging](accessing-symbols-for-debugging.md) and [Source Code Debugging in WinDbg](source-window.md).
+
+## Workspace
+
+The workspace feature saves configuration information in the target connection information.
+
+>> TBD correct? 
+>> TBD Follow up on this
 
 *Additional content pending*
 

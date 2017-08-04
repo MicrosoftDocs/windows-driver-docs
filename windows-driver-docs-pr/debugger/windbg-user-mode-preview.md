@@ -14,8 +14,42 @@ This section describes how to start a user mode session with the WinDbg preview 
 
 [See](debugging-a-user-mode-process-using-windbg.md)
 
-TBD
- 
+Select *File*, *Start debugging*, and select either of these three options:
+
+- *Launch Executable* - Starts an executable and attaches to it by browsing for the target.
+- *Launch Executable (advanced)* - Starts an executable and attaches to it using a set of dialog boxes with advanced options.
+- *Attach to a process* - Attaches to an existing process.
+
+All three options are described next.
+
+### Launch Executable
+
+Use this option to starts an executable and attach to it.
+
+### Launch Executable (advanced)
+
+Use this option to start an executable and attach to it it using a set of dialog boxes with advanced options. Speficy the following options
+- Path to the executable, such as C:\Windows\notepad.exe
+- Optional arguments to provide to the executable when launched
+- Optional start directory location
+- Checkbox to control if a trace is taken
+- Trace output directory used when a trace is taken
+- Advanced tracing options. For more information about tracing options, see [TBD]() 
+
+>> ETW Trace options???
+
+
+![Launch Executable (advanced) dialog box with advanced options](images/windbgx-launch-executable-advanced.png)
+
+### Attach to a process
+
+Use this option to attach to an existing process.
+
+![Launch Executable (advanced) dialog box with advanced options](images/windbgx-launch-executable-advanced.png)
+
+
+
+*Additional content pending* 
 
  
 

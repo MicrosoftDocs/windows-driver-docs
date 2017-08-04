@@ -14,7 +14,7 @@ This topic describes how to start a kernel mode session with WinDbg Preview.
 
 The process is very similar to how it has been done with previous versions of WinDbg.
 
-If you are not familiar with setting up a kernel mode session, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md) 
+If you are not familiar with setting up a debugger kernel mode session, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md) 
 
 
 *Additional content pending*
