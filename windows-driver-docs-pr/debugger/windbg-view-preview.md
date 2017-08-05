@@ -12,32 +12,51 @@ ms.technology: windows-devices
 
 This section describes how work with the view menu in WinDbg Preview.
 
-## Disassembly
-The disassembly window is also improved, the highlight of the current instruction remains where it is when you scroll. 
+![View menu in debugger](/images/windbgx-view-menu.png)
+
+The view menu will open a new Window for each item, or bring focus to the existing Window, if one is already open.
+
+## Command 
+The command Window allows you to enter debugger commands. For more information about debugger commands, see [Debugger Commands](debugger-commands.md).
+
+## Watch 
+
+The watch Window allows you to 
+
+The locals and watch windows are both based off of the data model that is used by the dx command. This means the locals and watch windows will benefit from any NatVis or JavaScript extensions you have loaded, and support full LINQ queries, just like the dx command. 
+
+## Locals
+The Locals window displays information about all of the local variables in the current scope.
+
+## Registers
+
+Registers displays the contents of the processors registers when they are available. For more information about registers, see [Registers](registers) and [Viewing and Editing Registers in WinDbg](registers-window.md).
 
 ## Memory
 
 The memory window has highlighting and improved scrolling.
 
-## Locals
+## Stack 
 
-## Watch 
+The stack Window also provides highlighting. 
 
-The locals and watch windows are both based off of the data model that is used by the dx command. This means the locals and watch windows will benefit from any NatVis or JavaScript extensions you have loaded, and can even support full LINQ queries, just like the dx command. 
+TBD - - For more information, see [Viewing the Call Stack in WinDbg](calls-window.md).
+
+## Disassembly
+The disassembly window is also improved, the highlight of the current instruction remains where it is when you scroll. 
+
+## Threads
+
+
+## Breakpoints
 
 ## Logs
 
- This is a under the covers log of the WinDbg Preview internals. It can be viewed for troubleshooting or to monitor long running processes. You can continue to create a command log, using the .logopen command. For more information on that, see [Keeping a Log File in WinDbg](keeping-a-log-file-in-windbg.md).
+ This is a under the covers log of the WinDbg Preview internals. It can be viewed for troubleshooting or to monitor long running processes. 
+ 
+ You can continue to create a command log, using the .logopen command. For more information on that, see [Keeping a Log File in WinDbg](keeping-a-log-file-in-windbg.md).
 
-
-![Screen shot of view screen in debugger](/images/windbgx-view-menu.png)
-
-
-View
--   [Viewing the Call Stack in WinDbg](calls-window.md)
-
--   [Viewing and Editing Registers in WinDbg](registers-window.md)
-
+## Reset Windows
 
 
 

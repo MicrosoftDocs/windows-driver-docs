@@ -2,7 +2,7 @@
 title: WinDbg Preview - Scripting 
 description: This section describes how to use the home menu in the WinDbg preview debugger.
 ms.author: windowsdriverdev
-ms.date: 07/28/2017
+ms.date: 08/04/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -10,7 +10,9 @@ ms.technology: windows-devices
 
 # WinDbg Preview - Home Menu 
 
-This section describes how to work with the home menu.
+This topic describes how to work with the home menu.
+
+![View menu in debugger](/images/windbgx-home-menu.png)
 
 ## Flow Control
 
@@ -18,7 +20,7 @@ Use the *Flow Control* options to break into a connected debugging target, resum
 
 ## End
 
-Use *End* options to restart, detach and stop debugging.
+Use the *End* options to restart, detach and stop debugging.
 
 ## Source Mode
 
@@ -29,10 +31,7 @@ Use *Source Mode* to toggle between source code and assembly views.
 Use *Help* options to do the following:
 - Review Help
 - Update Debugger 
-- Send Feedback For more information on sending feedback, see [Providing feedback](debugging-using-windbg-preview.md#providingfeedback). 
-
-
-*Additional content pending*
+- Send Feedback (For more information on sending feedbackto improve WinDbg, see [Providing feedback](debugging-using-windbg-preview.md#providingfeedback).) 
 
  
 ## See Also

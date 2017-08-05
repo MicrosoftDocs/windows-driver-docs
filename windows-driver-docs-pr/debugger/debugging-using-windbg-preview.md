@@ -79,14 +79,15 @@ Because the underling debugger engine is the same, all of the previous debugger 
 
 For more information, see [WinDbg Preview View Menu ](windbg-view-preview.md).
 
-![Screen shot of view screen in debugger](images/windbgx-view-menu.png)
+![View menu in debugger](images/windbgx-view-menu.png)
 
 
 ### Command, and source windows  
 
 - **Command window** - Use the command window provides easy access to toggle DML and clear the debugger command window. All current debugger commands are compatible with and continue to work in WinDbg Preview.
-- **Source window** - Use the source windows to work with source code files. 
-![Screen shot of other windows in debugger](images/windbgx-source-windows-menu.png)
+- **Source window** - Use the source windows to work with source code files.
+
+![Source code window in debugger](images/windbgx-source-windows-menu.png)
 
 
 ### Breakpoints 
@@ -96,7 +97,7 @@ For more information, see [WinDbg Preview View Menu ](windbg-view-preview.md).
 
 For more information, see [Breakpoints](windbg-breakpoints-preview.md).
 
-![Screen shot of breakpoint menu in debugger](images/windbgx-breakpoint-menu.png)
+![Breakpoint menu in debugger](images/windbgx-breakpoint-menu.png)
 
 
 ### Data model 
