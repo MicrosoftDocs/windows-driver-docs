@@ -33,9 +33,9 @@ For each software component referenced in an extension INF file, the system crea
 
 Virtual device children can be updated independently just like any other device, as long as the parent device is started.  We recommend separating functionality into as many different groupings as makes sense from a servicing perspective, and then creating one software component for each grouping.
 
-You'll provide an INF file for each software component.  A software component INF can perform all INF operations except specifying a function driver service.  A software component INF can specify Win32 user services.
+You'll provide an INF file for each software component.  A component INF can perform all INF operations except specifying a function driver service.  A component INF can specify Win32 user services.
 
-To install software, each software package INF in turn specifies the [**AddSoftware** directive](inf-addsoftware-directive.md) one or more times in its [*DDInstall*.**Software**](inf-ddinstall-software-section.md) section.
+To install software, each component INF in turn specifies the [**AddSoftware** directive](inf-addsoftware-directive.md) one or more times in its [*DDInstall*.**Software**](inf-ddinstall-software-section.md) section.
 
 ## Accessing a device from a software component
 
