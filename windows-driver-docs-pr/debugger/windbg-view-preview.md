@@ -30,7 +30,7 @@ The Locals window displays information about all of the local variables in the c
 
 ## Registers
 
-Registers displays the contents of the processors registers when they are available. For more information about registers, see [Registers](registers) and [Viewing and Editing Registers in WinDbg](registers-window.md).
+Registers displays the contents of the processors registers when they are available. For more information about registers, see [Registers](registers.md) and [Viewing and Editing Registers in WinDbg](registers-window.md).
 
 ## Memory
 
