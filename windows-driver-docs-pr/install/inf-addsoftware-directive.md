@@ -9,7 +9,7 @@ ms.technology: windows-devices
 
 # INF AddSoftware Directive
 
-Each **AddSoftware** directive describes the installation of standalone software.  Use this directive in an INF file for a [software component](adding-software-components-with-an-inf-file.md).  This directive is supported for Windows 10 Version 1703 and later.
+Each **AddSoftware** directive describes the installation of standalone software.  Use this directive in an INF file of the SoftwareComponent setup class. For more details on Software Components, see [Adding Software Components with an INF file](adding-software-components-with-an-inf-file.md).  This directive is supported for Windows 10 Version 1703 and later.
 
 Valid installation types depend on the [target platform](../develop/windows-10-editions-for-universal-drivers.md). For example, Desktop supports MSI installers and setup EXEs.
 
