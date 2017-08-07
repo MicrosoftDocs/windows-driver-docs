@@ -18,7 +18,7 @@ The process is very similar to how it has been done with previous versions of Wi
 
 The *Paste* tab allows you to paste in custom connection strings.
 
-If you are not familiar with setting up a debugger kernel mode session, see [Getting Started with WinDbg (Kernel-Mode)].(getting-started-with-windbg--kernel-mode-.md) 
+If you are not familiar with setting up a debugger kernel mode session, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md) 
 
 
 ## See Also
