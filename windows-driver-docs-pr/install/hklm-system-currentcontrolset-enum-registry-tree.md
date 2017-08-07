@@ -1,6 +1,6 @@
 ---
-title: HKLM\\SYSTEM\\CurrentControlSet\\Enum Registry Tree
-description: HKLM\\SYSTEM\\CurrentControlSet\\Enum Registry Tree
+title: HKLM\SYSTEM\CurrentControlSet\Enum Registry Tree
+description: HKLM\SYSTEM\CurrentControlSet\Enum Registry Tree
 ms.assetid: 9de3ca54-d23f-4ee6-a638-27e52a60dfdd
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

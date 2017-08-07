@@ -4,7 +4,7 @@ author: windows-driver-content
 description: The NDIS_RAISE_IRQL_TO_DISPATCH macro raises the current IRQL to DISPATCH_LEVEL on the current processor.
 ms.assetid: 37e78374-8ac1-4aa4-9a53-bce3a3411064
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

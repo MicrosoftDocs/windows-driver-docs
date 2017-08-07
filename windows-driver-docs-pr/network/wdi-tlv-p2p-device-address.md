@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_P2P_DEVICE_ADDRESS is a TLV that contains the device address of the Group Owner.
 ms.assetid: EAC1972E-3D9B-4248-BAC3-3C2EB15D6817
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

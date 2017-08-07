@@ -4,7 +4,7 @@ author: windows-driver-content
 description: The NDIS_STATUS_WAN_LINE_DOWN status indicates that a WAN-capable miniport driver has lost an established connection with a remote node.
 ms.assetid: 85904e2f-ae34-4cca-a5b9-2ec4b342672a
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

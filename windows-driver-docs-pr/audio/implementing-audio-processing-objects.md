@@ -241,20 +241,6 @@ Implement the following interfaces and methods for the COM component:
 -   [IAudioProcessingObjectRT](https://msdn.microsoft.com/library/windows/hardware/ff536505). The required method for this interface is [**APOProcess**](https://msdn.microsoft.com/library/windows/hardware/ff536506) and it is the method that implements the DSP algorithm.
 -   [IAudioSystemEffects](https://msdn.microsoft.com/library/windows/hardware/ff536514). This interface makes the audio engine recognize a DLL as an APO.
 
-## <span id="Enabling_the_Use_of_Unsigned_APOs"></span><span id="enabling_the_use_of_unsigned_apos"></span><span id="ENABLING_THE_USE_OF_UNSIGNED_APOS"></span>Enabling the Use of Unsigned APOs
-
-
-****
-
-The audio engine does not load unsigned APOs into the audio processing graph. So while you are testing your APO, you must disable the protected process for Audiodg.exe. To disable the protected process, set the value of the **DisableProtectedAudioDG** registry key to '1'. The following registry excerpt shows this.
-
-```
-...
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Audio
- "DisableProtectedAudioDG" = dword:00000001
-...
-```
-
 ## <span id="Working_with_Visual_Studio_and_APOs"></span><span id="working_with_visual_studio_and_apos"></span><span id="WORKING_WITH_VISUAL_STUDIO_AND_APOS"></span>Working with Visual Studio and APOs
 
 

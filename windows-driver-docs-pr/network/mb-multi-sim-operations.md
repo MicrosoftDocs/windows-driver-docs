@@ -16,7 +16,7 @@ Traditionally, non-phone Windows devices have not been configured for multi-SIM 
 
 Most typical multi-SIM phone devices have dual SIM slots but are limited to one primary SIM card supporting data while the other only supports voice features. Such a limitation does not exist in the non-phone PC model as all SIM cards are used for data connection.
 
-While the framework defined in this specification can theoretically support an unbounded number of modems and SIM cards, Windows 10 Version 1703 and later supports only the dual-SIM/single-active scenario end to end. 
+While the framework defined in this specification can theoretically support an unbounded number of modems and SIM cards, Windows 10, version 1703 and later supports only the dual-SIM/single-active scenario end to end. 
 
 ## NDIS Modem Interface Specification
 
@@ -92,7 +92,7 @@ To query the status of a particular slot on the modem, the host uses [OID_WWAN_S
 
 ## Per-device and Per-executor Commands
 
-With the addition of the executor concept to non-Windows Mobile devices in Windows 10 Version 1703 and later, OIDs are now split into two categories: per-device OIDs and per-executor OIDs. The table below explains which OIDs fall into which category.
+With the addition of the executor concept to non-Windows Mobile devices in Windows 10, version 1703 and later, OIDs are now split into two categories: per-device OIDs and per-executor OIDs. The table below explains which OIDs fall into which category.
 
 | Per-device or Per-executor| OID name |
 | --- | --- |
@@ -166,10 +166,10 @@ The following CIDs are defined for **UUID_MS_BasicConnect**:
 
 | CID | Command Code | Minimum OS Version |
 | --- | --- | --- |
-| MBIM_CID_MS_SYS_CAPS | 5 | Windows 10 Version 1703 |
-| MBIM_CID_MS_DEVICE_CAPS_V2 | 6 | Windows 10 Version 1703 |
-| MBIM_CID_MS_DEVICE_SLOT_MAPPINGS | 7 | Windows 10 Version 1703 |
-| MBIM_CID_MS_SLOT_INFO_STATUS | 8 | Windows 10 Version 1703 |
+| MBIM_CID_MS_SYS_CAPS | 5 | Windows 10, version 1703 |
+| MBIM_CID_MS_DEVICE_CAPS_V2 | 6 | Windows 10, version 1703 |
+| MBIM_CID_MS_DEVICE_SLOT_MAPPINGS | 7 | Windows 10, version 1703 |
+| MBIM_CID_MS_SLOT_INFO_STATUS | 8 | Windows 10, version 1703 |
 
 All offsets in the CID sections below are calculated from the beginning of the InformationBuffer MBIM_COMMAND_MSG.
 

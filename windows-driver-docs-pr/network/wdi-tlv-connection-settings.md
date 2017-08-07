@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_CONNECTION_SETTINGS is a TLV that contains connection settings for OID_WDI_TASK_CONNECT.
 ms.assetid: E08E895D-BFD6-496E-82FE-881FDDB0B88E
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

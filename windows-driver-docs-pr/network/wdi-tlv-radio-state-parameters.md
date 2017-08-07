@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_RADIO_STATE_PARAMETERS is a TLV that contains radio state parameters for OID_WDI_TASK_SET_RADIO_STATE.
 ms.assetid: D977DF8A-146C-4921-AE7C-5FBEC7FBA4C8
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

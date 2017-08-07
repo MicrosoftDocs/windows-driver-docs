@@ -4,7 +4,7 @@ author: windows-driver-content
 description: NDIS Interrupt and Synchronization Macros
 ms.assetid: ffe9d64d-eb0f-4376-bb94-65a11aeeea02
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

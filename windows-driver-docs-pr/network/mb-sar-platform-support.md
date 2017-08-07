@@ -16,7 +16,7 @@ Traditionally, OEMs have implemented proprietary solutions for Selective Absorpt
 2.	Windows provides a platform standard interface and reduces the proprietary implementation from OEMs.
 3.	Services in the platform that want to take advantage of SAR can retrieve the information from the modem.
 
-Starting in Windows 10 Version 1703, Windows supports passing through SAR configuration and modem transmission status. Windows will continue to leave the SAR business logic to IHVs and OEMs to use as a self-differentiating factor but will provide an interface to streamline the platform. Two new NDIS OIDs and two new MBIM CIDs have been defined to support this interface. Devices that want to take advantage of OS support must implement both commands.
+Starting in Windows 10, version 1703, Windows supports passing through SAR configuration and modem transmission status. Windows will continue to leave the SAR business logic to IHVs and OEMs to use as a self-differentiating factor but will provide an interface to streamline the platform. Two new NDIS OIDs and two new MBIM CIDs have been defined to support this interface. Devices that want to take advantage of OS support must implement both commands.
 
 This feature is supported by adding in two new OIDs and CIDs. For IHV partners that implement MBIM, only the CID version needs to be supported.
 
@@ -32,8 +32,8 @@ UUID Value = **68223D04-9F6C-4E0F-822D-28441FB72340**
 
 | CID | Minimum OS Version |
 | --- | --- |
-| MBIM_CID_MS_SAR_CONFIG | Windows 10 Version 1703 |
-| MBIM_CID_MS_TRANSMISSION_STATUS | Windows 10 Version 1703 |
+| MBIM_CID_MS_SAR_CONFIG | Windows 10, version 1703 |
+| MBIM_CID_MS_TRANSMISSION_STATUS | Windows 10, version 1703 |
 
 ### MBIM_CID_MS_SAR_CONFIG
 
@@ -102,8 +102,8 @@ MBIM_MS_SAR_CONFIG_STATE describes the possible states for SAR backoff for the a
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
-| 0 | 4 | SARAntennaIndex | UINT32 | An antenna index that corresponds to the SARBackOffIndex field in the MBIM_MS_SAR_CONFIG_STATE table. It corresponds to the antenna number and is left to OEM implementation to index each antenna on the device. If this value is set to 0xFFFFFFFFF, the SARBackOffIndex should be applied to all antennas. |
-| 4 | 4 | SARBAckOffIndex | UINT32 | A back off index that corresponds to the back off table that is defined by OEM or modem vendor. The table has individual bands and associated back off parameters. |
+| 0 | 4 | SARAntennaIndex | UINT32 | An antenna index that corresponds to the **SARBackOffIndex** field in this table. It corresponds to the antenna number and is left to OEM implementation to index each antenna on the device. Any index is valid for this value. If this value is set to **0xFFFFFFFF** in a *Set* command, the **SARBackOffIndex** should be applied to all antennas. If this value is set to **0xFFFFFFFF** in response, it indicates that **SARBackOffIndex** is applied to all antennas. |
+| 4 | 4 | SARBAckOffIndex | UINT32 | A back off index that corresponds to the back off table that is defined by the OEM or modem vendor. The table has individual bands and associated back off parameters. |
 
 ##### Response
 

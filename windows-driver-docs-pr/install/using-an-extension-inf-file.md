@@ -83,7 +83,7 @@ Signature   = "$WINDOWS NT$"
 Class       = Extension
 ClassGuid   = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
 Provider    = %CONTOSO%
-ExtensionId = {028b4317-f2e4-4fb2-80af-82ac8c07e98e}
+ExtensionId = {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz} ; replace with your own GUID
 DriverVer   = 05/28/2013,1.0.0.0
 CatalogFile = delta.cat
 
@@ -120,7 +120,7 @@ Signature   = "$WINDOWS NT$"
 Class       = Extension
 ClassGuid   = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
 Provider    = %CONTOSO%
-ExtensionId = {2485f42e-81f0-43d8-bb48-01f3007c43f1}
+ExtensionId = {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz} ; replace with your own GUID
 DriverVer   = 05/28/2013,1.0.0.0
 CatalogFile = delta.cat
 

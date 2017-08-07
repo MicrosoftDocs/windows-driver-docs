@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_P2P_ADVERTISED_PREFIX_ENTRY is a TLV that contains a Wi-Fi Direct advertised prefix entry.
 ms.assetid: 484A7784-EDD5-46F0-91E0-060D23ADC0BD
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

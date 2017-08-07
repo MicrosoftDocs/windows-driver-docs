@@ -4,7 +4,7 @@ author: windows-driver-content
 description: The NDIS_STATUS_MEDIA_DISCONNECT status indicates that the status of a network connection has changed from connected to disconnected.
 ms.assetid: 490853ca-c849-4b2b-9639-4be670616101
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

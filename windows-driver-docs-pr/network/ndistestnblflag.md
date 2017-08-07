@@ -4,7 +4,7 @@ author: windows-driver-content
 description: The NdisTestNblFlag macro retrieves the current setting of a flag in a NET_BUFFER_LIST structure.
 ms.assetid: 098e5ab4-82af-423a-82ce-65be7e6d853c
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

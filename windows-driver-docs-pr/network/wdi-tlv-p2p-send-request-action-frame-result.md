@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_P2P_SEND_REQUEST_ACTION_FRAME_RESULT is an unused TLV.
 ms.assetid: F819A33C-C9C7-4208-B236-338BDFEA7764
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

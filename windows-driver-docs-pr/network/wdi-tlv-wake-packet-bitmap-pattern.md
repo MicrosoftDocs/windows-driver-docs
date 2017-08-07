@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_WAKE_PACKET_BITMAP_PATTERN is a TLV that contains a wake-on-LAN pattern.
 ms.assetid: 5BE0F668-A3B4-4ECF-B963-EC4DD1B1A8AE
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

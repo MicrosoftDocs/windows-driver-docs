@@ -4,7 +4,7 @@ author: windows-driver-content
 description: The NDIS_STATUS_WAN_LINE_UP status indicates that a WAN-capable miniport driver has established a connection with a remote node.
 ms.assetid: 1eb9d934-871a-4d95-b04f-d0b174716c98
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

@@ -4,7 +4,7 @@ author: windows-driver-content
 description: NET_BUFFER_LIST Flags Macros
 ms.assetid: c224f97f-bd9c-437e-86ec-223b8d85c49a
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices

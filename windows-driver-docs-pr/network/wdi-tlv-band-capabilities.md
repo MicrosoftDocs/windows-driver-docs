@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_BAND_CAPABILITIES is a TLV that contains the capabilities of a band.
 ms.assetid: ABD198FE-8E81-4AF3-BB3D-D78AEB75782F
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 
