@@ -2954,7 +2954,7 @@
 ### [OID_DOT11_WFD_START_GO_REQUEST](oid-dot11-wfd-start-go-request)
 ### [OID_DOT11_WFD_STOP_DISCOVERY](oid-dot11-wfd-stop-discovery)
 ### [OID_DOT11_WPS_ENABLED](oid-dot11-wps-enabled)
-## [Ws2def.h](ws2def.h)
+## [Ws2def.h](ws2def-h)
 ### [AF_INET](af-inet)
 ### [AF_INET6](af-inet6)
 ### [SIO_ADDRESS_LIST_CHANGE](sio-address-list-change)
