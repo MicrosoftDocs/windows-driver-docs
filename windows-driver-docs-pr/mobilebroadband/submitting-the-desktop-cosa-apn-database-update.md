@@ -1,6 +1,6 @@
 ---
-title: Submitting the COSA/APN database update
-description: Submitting the COSA/APN database update
+title: Submitting the desktop COSA/APN database update
+description: Submitting the desktop COSA/APN database update
 ms.assetid: 1ad1be32-74c9-4f84-b680-9124135a3b66
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -9,10 +9,10 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Submitting the COSA/APN database update
+# Submitting the desktop COSA/APN database update
 
 >[!IMPORTANT]
-> The following steps to submit an APN update apply to both COSA, which is used for Windows 10, version 1703 and later, and apndatabase.xml, which is used for Windows 8, Windows 8.1, and versions of Windows 10 before 1703. Microsoft will convert apndatabase.xml submissions to COSA if you are targeting Windows 10, version 1703 or later.
+> The following steps to submit an APN update apply to both desktop COSA, which is used for Windows 10, version 1703 and later, and apndatabase.xml, which is used for Windows 8, Windows 8.1, and versions of Windows 10 before 1703. Microsoft will convert apndatabase.xml submissions to COSA if you are targeting Windows 10, version 1703 or later.
 
 Now that you’ve tested the APN entries, it’s now time to submit them to Microsoft by following the steps in this topic.
 
