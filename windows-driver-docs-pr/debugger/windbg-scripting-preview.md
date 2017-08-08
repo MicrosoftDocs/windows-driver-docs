@@ -16,6 +16,9 @@ This section describes how to how to use scripting.
 ![Screen shot of scripting menu in debugger](images/windbgx-scripting-menu.png)
 
 
+![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
+](images/windbgx-prelim-important-note.png)
+
 *Additional content pending*
 
  

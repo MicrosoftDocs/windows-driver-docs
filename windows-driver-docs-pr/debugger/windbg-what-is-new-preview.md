@@ -1,42 +1,25 @@
 ---
-title: WinDbg Preview - Scripting 
-description: This section describes how to use the home menu in the WinDbg preview debugger.
+title: WinDbg Preview - What's New 
+description: This topic provides inofmration on what's new in WinDbg preview debugger.
 ms.author: windowsdriverdev
-ms.date: 08/04/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# WinDbg Preview - Home Menu 
 
-This topic describes how to work with the home menu.
+# WinDbg Preview - What's New
 
-![View menu in debugger](/images/windbgx-home-menu.png)
+This topic provides information on what's new in the WinDbg Preview debugger.
 
 
 ![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
 ](images/windbgx-prelim-important-note.png)
 
 
-## Flow Control
-
-Use the *Flow Control* options to break into a connected debugging target, resume code execution on the target and step in to and out of code.
-
-## End
-
-Use the *End* options to restart, detach and stop debugging.
-
-## Source Mode
-
-Use *Source Mode* to toggle between source code and assembly views.
-
-## Help (Support)
-
-Use *Help* options to do the following:
-- Review Help
-- Update Debugger 
-- Send Feedback (For more information on sending feedbackto improve WinDbg, see [Providing feedback](debugging-using-windbg-preview.md#providingfeedback).) 
+## Preliminary Release 
+We will provide information on the latest features when the WinDbg Preview is available.
 
  
 ## See Also

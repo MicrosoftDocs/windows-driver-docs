@@ -8,11 +8,16 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
+
+<h2 style="background-color:rgb(255,0,0)">
+This documentation is preliminary and is subject to change.(255,0,0)
+</h2>
+
 # WinDbg Preview View Menu 
 
 This section describes how work with the view menu in WinDbg Preview.
 
-![View menu in debugger](/images/windbgx-view-menu.png)
+![View menu in debugger](images/windbgx-view-menu.png)
 
 The view menu will open a new Window for each item, or bring focus to the existing Window, if one is already open.
 
@@ -36,6 +41,8 @@ Registers displays the contents of the processors registers when they are availa
 
 The memory window has highlighting and improved scrolling.
 
+![Memory menu in debugger](images/windbgx-memory.png)
+
 ## Stack 
 
 The stack Window also provides highlighting. 
@@ -44,6 +51,7 @@ TBD - - For more information, see [Viewing the Call Stack in WinDbg](calls-windo
 
 ## Disassembly
 The disassembly window is also improved, the highlight of the current instruction remains where it is when you scroll. 
+
 
 ## Threads
 

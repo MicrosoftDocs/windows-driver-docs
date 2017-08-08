@@ -2,13 +2,18 @@
 title: WinDbg Preview Installation and Startup Options
 description: This section describes how to install the WinDbg Preview debugger.
 ms.author: windowsdriverdev
-ms.date: 07/28/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# WinDbg Preview Installation and Startup Options
+# WinDbg Preview installation and command line startup options
+
+
+![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
+](images/windbgx-prelim-important-note.png)
+
 
 ## Installation
 
@@ -21,20 +26,25 @@ To install it, open the Windows Store and search for "Window Debugger Preview".
 Once the app is a located click to download and install it.
 
 
+## Creating a portable copy of WinDbg Preview
+
+You can XCopy the binaries from \\dbg\dbgx\build\[version] or \\dbg\dbgx\slow\[version] to the location of your choice, such as a thumb drive for portable use.
+
+>> TBD - need to test and confirm this supported.
+
+
 ## Installation Location
 
 >> TBD Need to validate this with final store app distribution.
 
 WinDbg Preview installs to %localappdata%\dbg\UI\WinDbgX.exe. If you're trying to copy an extension so that you can easily load it, you can copy the extension to %localappdata%\dbg\EngineExtensions\ for 64-bit extensions, or %localappdata%\dbg\EngineExtensions32 for 32-bit extensions. 
 
-You can XCopy the binaries from \\dbg\dbgx\build\[version] or \\dbg\dbgx\slow\[version] to the location of your choice, such as a thumb drive for portable use.
-
->> TBD - need to confirm this is accurate.
 
 ## Checking for updates
 
-Use the *Update debugger* option on the Home menu to check for updates.
+Open the Store app and click on *Check for Updates* to check for updates.
 
+>> TBD - need to test and confirm this supported.
 
 ## Command line startup options
 

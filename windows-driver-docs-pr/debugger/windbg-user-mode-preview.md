@@ -12,6 +12,9 @@ ms.technology: windows-devices
 
 This section describes how to start a user mode session with the WinDbg preview debugger.
 
+![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
+](images/windbgx-prelim-important-note.png)
+
 Select *File*, *Start debugging*, and select either of these three options:
 
 - *Launch Executable* - Starts an executable and attaches to it by browsing for the target.

@@ -12,6 +12,10 @@ ms.technology: windows-devices
 
 This section describes how to setup and configure the WinDbg Preview debugger.
 
+![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
+](images/windbgx-prelim-important-note.png)
+
+
 ## Settings
 
 Use the settings menu to set the source and symbol path as well as choose the light and dark theme for the debugger. 
