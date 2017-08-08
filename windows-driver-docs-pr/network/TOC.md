@@ -2743,6 +2743,7 @@
 ### [OID_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS](oid-wwan-enumerate-device-service-commands.md)
 ### [OID_WWAN_ENUMERATE_DEVICE_SERVICES](oid-wwan-enumerate-device-services.md)
 ### [OID_WWAN_HOME_PROVIDER](oid-wwan-home-provider.md)
+### [OID_WWAN_MODEM_CONFIG_INFO](oid-wwan-modem-config-info.md)
 ### [OID_WWAN_NETWORK_IDLE_HINT](oid-wwan-network-idle-hint.md)
 ### [OID_WWAN_PACKET_SERVICE](oid-wwan-packet-service.md)
 ### [OID_WWAN_PIN](oid-wwan-pin.md)
