@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_WWAN_RADIO_STATE Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_WWAN_RADIO_STATE Network Drivers Starting with Windows Vista
 ---
 
 # OID\_WWAN\_RADIO\_STATE
@@ -17,9 +17,9 @@ keywords:
 
 OID\_WWAN\_RADIO\_STATE sets or returns information about a MB device's radio power state.
 
-Miniport drivers must process set and query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_RADIO\_STATE**](ndis-status-wwan-radio-state.md) status notification containing an [**NDIS\_WWAN\_RADIO\_STATE**](ndis-wwan-radio-state.md) structure that indicates the MB device's current radio power state regardless of completing set or query requests.
+Miniport drivers must process set and query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_RADIO\_STATE**](ndis-status-wwan-radio-state.md) status notification containing an [**NDIS\_WWAN\_RADIO\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567915) structure that indicates the MB device's current radio power state regardless of completing set or query requests.
 
-Callers requesting to set the MB device's radio power state provide an [**NDIS\_WWAN\_SET\_RADIO\_STATE**](ndis-wwan-set-radio-state.md) structure to the miniport driver with the appropriate information.
+Callers requesting to set the MB device's radio power state provide an [**NDIS\_WWAN\_SET\_RADIO\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567925) structure to the miniport driver with the appropriate information.
 
 Remarks
 -------
@@ -28,7 +28,7 @@ For more information about using this OID, see [WWAN Radio Power State Operation
 
 Miniport drivers should not access the provider network, or the Subscriber Identity Module (SIM card), when processing query or set operations.
 
-Miniport drivers must retain software radio power states across system restart or device removal and reinsertion. Miniport drivers should store the device's software radio information and use it for setting the device software radio power state immediately on each restart or reinsertion of device. The effective radio power state of the device is decided based on combination of software and hardware radio power state as per the table in [**WWAN\_RADIO\_STATE**](wwan-radio-state.md).
+Miniport drivers must retain software radio power states across system restart or device removal and reinsertion. Miniport drivers should store the device's software radio information and use it for setting the device software radio power state immediately on each restart or reinsertion of device. The effective radio power state of the device is decided based on combination of software and hardware radio power state as per the table in [**WWAN\_RADIO\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff571225).
 
 If the value is *WwanRadioOn*, miniport drivers must turn on the radio power and set the **RadioState.SwRadioState** member of the WWAN\_RADIO\_STATE structure to *WwanRadioOn*. If the **RadioState.HwRadioState** member was *WwanRadioOff*, miniport drivers should cache this power state information and ensure to physically turn on the radio power state when **RadioState.HwRadioState** changes to *WwanRadioOn*.
 
@@ -108,15 +108,15 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_RADIO\_STATE**](ndis-wwan-radio-state.md)
+[**NDIS\_WWAN\_RADIO\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567915)
 
-[**NDIS\_WWAN\_SET\_RADIO\_STATE**](ndis-wwan-set-radio-state.md)
+[**NDIS\_WWAN\_SET\_RADIO\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567925)
 
 [**NDIS\_STATUS\_WWAN\_RADIO\_STATE**](ndis-status-wwan-radio-state.md)
 
 [WWAN Radio Power State Operations](https://msdn.microsoft.com/library/windows/hardware/ff559107)
 
-[**WWAN\_RADIO\_STATE**](wwan-radio-state.md)
+[**WWAN\_RADIO\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff571225)
 
  
 
@@ -124,6 +124,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_WWAN_RADIO_STATE%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_WWAN_RADIO_STATE%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

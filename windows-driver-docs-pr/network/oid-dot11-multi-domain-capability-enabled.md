@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_DOT11_MULTI_DOMAIN_CAPABILITY_ENABLED Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_DOT11_MULTI_DOMAIN_CAPABILITY_ENABLED Network Drivers Starting with Windows Vista
 ---
 
 # OID\_DOT11\_MULTI\_DOMAIN\_CAPABILITY\_ENABLED
@@ -47,17 +47,17 @@ If the **dot11MultiDomainCapabilityEnabled** MIB object is **FALSE**, the 802.11
 
 The miniport driver fails a set or query of OID\_DOT11\_MULTI\_DOMAIN\_CAPABILITY\_ENABLED under the following conditions:
 
--   If the **dot11MultiDomainCapabilityImplemented** MIB object is **FALSE**, the 802.11 station does not support multiple regulatory domains. In this situation, the miniport driver must return NDIS\_STATUS\_BAD\_VERSION from its [*MiniportOidRequest*](miniportoidrequest.md) function.
+-   If the **dot11MultiDomainCapabilityImplemented** MIB object is **FALSE**, the 802.11 station does not support multiple regulatory domains. In this situation, the miniport driver must return NDIS\_STATUS\_BAD\_VERSION from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
 
     For more information about the **dot11MultiDomainCapabilityImplemented** MIB object, see [OID\_DOT11\_MULTI\_DOMAIN\_CAPABILITY\_IMPLEMENTED](oid-dot11-multi-domain-capability-implemented.md).
 
--   If the **dot11MultiDomainCapabilityImplemented** MIB object is **TRUE** and the 802.11 station does not support a default regulatory domain, it must fail the set request if the specified value of the **dot11MultiDomainCapabilityEnabled** MIB object is **FALSE**. The miniport driver must return NDIS\_STATUS\_INVALID\_DATA from its [*MiniportOidRequest*](miniportoidrequest.md) function.
+-   If the **dot11MultiDomainCapabilityImplemented** MIB object is **TRUE** and the 802.11 station does not support a default regulatory domain, it must fail the set request if the specified value of the **dot11MultiDomainCapabilityEnabled** MIB object is **FALSE**. The miniport driver must return NDIS\_STATUS\_INVALID\_DATA from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
 
--   If the 802.11 has not completed an explicit scan initiated through a set of [OID\_DOT11\_SCAN\_REQUEST](oid-dot11-scan-request.md), the miniport driver must return NDIS\_STATUS\_DOT11\_MEDIA\_IN\_USE from its [*MiniportOidRequest*](miniportoidrequest.md) function.
+-   If the 802.11 has not completed an explicit scan initiated through a set of [OID\_DOT11\_SCAN\_REQUEST](oid-dot11-scan-request.md), the miniport driver must return NDIS\_STATUS\_DOT11\_MEDIA\_IN\_USE from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
 
 The default value for the **dot11MultiDomainCapabilityEnabled** MIB object is **FALSE**. The miniport driver must set this MIB object to this default when one of the following occurs:
 
--   The miniport driver initializes the current PHY type through its [*MiniportInitializeEx*](miniportinitializeex.md) function.
+-   The miniport driver initializes the current PHY type through its [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function.
 
 -   A method request of [OID\_DOT11\_RESET\_REQUEST](oid-dot11-reset-request.md) is made to reset the MAC layer of the 802.11 station and the **bSetDefaultMIB** member of the DOT11\_RESET\_REQUEST structure is **TRUE**.
 
@@ -100,6 +100,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_MULTI_DOMAIN_CAPABILITY_ENABLED%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_MULTI_DOMAIN_CAPABILITY_ENABLED%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

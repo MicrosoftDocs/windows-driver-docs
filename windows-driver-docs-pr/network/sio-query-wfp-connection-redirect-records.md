@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - SIO_QUERY_WFP_CONNECTION_REDIRECT_RECORDS control code Network Drivers Starting with Windows Vista
+keywords: 
+ -SIO_QUERY_WFP_CONNECTION_REDIRECT_RECORDS control code Network Drivers Starting with Windows Vista
 ---
 
 # SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_RECORDS control code
@@ -25,7 +25,7 @@ A WFP redirect record is a buffer of opaque data that WFP must set on an outboun
 
 For more information about redirection, see [Using Bind or Connect Redirection](https://msdn.microsoft.com/library/windows/hardware/ff571005).
 
-To query the redirect record for the redirected connection, a Winsock client calls the [**WskControlSocket**](wskcontrolsocket.md) function with the following parameters.
+To query the redirect record for the redirected connection, a Winsock client calls the [**WskControlSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571127) function with the following parameters.
 
 <table>
 <colgroup>
@@ -82,8 +82,8 @@ To query the redirect record for the redirected connection, a Winsock client cal
 
 The caller can perform this query in either of the following ways:
 
--   It can set the *OutputBuffer* to a large buffer approximately 1 KB in size. If the output buffer size is not large enough, [**WskControlSocket**](wskcontrolsocket.md) will return a **STATUS\_BUFFER\_TOO\_SMALL** and *OutputSizeReturned* will contain the required size of the buffer. A larger buffer can then be allocated and **WskControlSocket** called again with the **SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_RECORDS** request and *OutputBuffer* set to the larger buffer.
--   Or it can set the *OutputSize* parameter to 0 and the *OutputBuffer* to NULL and then call [**WskControlSocket**](wskcontrolsocket.md). Upon completion, the **WskControlSocket** function retrieves the output buffer size, in bytes, in the *OutputSizeReturned* parameter. An appropriately sized buffer can then be allocated and **WskControlSocket** called again with the **SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_RECORDS** request and *OutputBuffer* set to the buffer.
+-   It can set the *OutputBuffer* to a large buffer approximately 1 KB in size. If the output buffer size is not large enough, [**WskControlSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571127) will return a **STATUS\_BUFFER\_TOO\_SMALL** and *OutputSizeReturned* will contain the required size of the buffer. A larger buffer can then be allocated and **WskControlSocket** called again with the **SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_RECORDS** request and *OutputBuffer* set to the larger buffer.
+-   Or it can set the *OutputSize* parameter to 0 and the *OutputBuffer* to NULL and then call [**WskControlSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571127). Upon completion, the **WskControlSocket** function retrieves the output buffer size, in bytes, in the *OutputSizeReturned* parameter. An appropriately sized buffer can then be allocated and **WskControlSocket** called again with the **SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_RECORDS** request and *OutputBuffer* set to the buffer.
 
 **Note**  It is also possible to perform this query in a user-mode application by using [**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_RECORDS (SDK)**](https://msdn.microsoft.com/library/windows/desktop/hh859713).
 
@@ -142,6 +142,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20SIO_QUERY_WFP_CONNECTION_REDIRECT_RECORDS%20control%20code%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20SIO_QUERY_WFP_CONNECTION_REDIRECT_RECORDS%20control%20code%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

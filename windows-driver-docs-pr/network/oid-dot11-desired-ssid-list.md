@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_DOT11_DESIRED_SSID_LIST Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_DOT11_DESIRED_SSID_LIST Network Drivers Starting with Windows Vista
 ---
 
 # OID\_DOT11\_DESIRED\_SSID\_LIST
@@ -40,7 +40,7 @@ The data type for OID\_DOT11\_DESIRED\_SSID\_LIST is the DOT11\_SSID\_LIST struc
 This structure includes the following members:
 
 <a href="" id="header"></a>**Header**  
-The type, revision, and size of the DOT11\_SSID\_LIST structure. This member is formatted as an [**NDIS\_OBJECT\_HEADER**](ndis-object-header.md) structure.
+The type, revision, and size of the DOT11\_SSID\_LIST structure. This member is formatted as an [**NDIS\_OBJECT\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566588) structure.
 
 The miniport driver must set the members of **Header** to the following values:
 
@@ -53,7 +53,7 @@ This member must be set to DOT11\_SSID\_LIST\_REVISION\_1.
 <a href="" id="size"></a>**Size**  
 This member must be set to sizeof(DOT11\_SSID\_LIST).
 
-For more information about these members, see [**NDIS\_OBJECT\_HEADER**](ndis-object-header.md).
+For more information about these members, see [**NDIS\_OBJECT\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566588).
 
 <a href="" id="unumofentries"></a>**uNumOfEntries**  
 Number of entries in the **SSIDs** array. A zero value for this member indicates an empty desired SSID list.
@@ -62,25 +62,25 @@ Number of entries in the **SSIDs** array. A zero value for this member indicates
 Maximum number of entries that the **SSIDs** array can contain.
 
 <a href="" id="ssids"></a>**SSIDs**  
-The list of desired SSIDs, with each entry formatted as a [**DOT11\_SSID**](dot11-ssid.md) structure.
+The list of desired SSIDs, with each entry formatted as a [**DOT11\_SSID**](https://msdn.microsoft.com/library/windows/hardware/ff548773) structure.
 
 The operating system will define a desired SSID list containing a single SSID. However, a service developed by the independent hardware vendor (IHV) can define a list containing one or more SSIDs.
 
-An SSID with the **uSSIDLength** member of the [**DOT11\_SSID**](dot11-ssid.md) structure set to zero is a wildcard SSID. The wildcard SSID matches any SSID.
+An SSID with the **uSSIDLength** member of the [**DOT11\_SSID**](https://msdn.microsoft.com/library/windows/hardware/ff548773) structure set to zero is a wildcard SSID. The wildcard SSID matches any SSID.
 
-A desired SSID list containing a wildcard SSID cannot contain other SSIDs. When OID\_DOT11\_DESIRED\_SSID\_LIST is set, the miniport driver must fail the request by returning NDIS\_STATUS\_INVALID\_DATA from its [*MiniportOidRequest*](miniportoidrequest.md) function if the **SSIDs** array contains a wildcard SSID and **uNumOfEntries** is greater than one.
+A desired SSID list containing a wildcard SSID cannot contain other SSIDs. When OID\_DOT11\_DESIRED\_SSID\_LIST is set, the miniport driver must fail the request by returning NDIS\_STATUS\_INVALID\_DATA from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function if the **SSIDs** array contains a wildcard SSID and **uNumOfEntries** is greater than one.
 
 After the [OID\_DOT11\_CONNECT\_REQUEST](oid-dot11-connect-request.md) OID is set, the 802.11 station performs a connection operation to a BSS network only if the SSID of the BSS is in the desired SSID list. If the desired SSID list contains a wildcard SSID, the 802.11 station can connect to any BSS network. The 802.11 station cannot connect to any BSS if its desired SSID list is empty. For more information about connecting to a BSS network, see [Connection Operations](https://msdn.microsoft.com/library/windows/hardware/ff545185).
 
-When OID\_DOT11\_DESIRED\_SSID\_LIST is set, the miniport driver should ensure that the value of the **InformationBufferLength** member of the [*MiniportOidRequest*](miniportoidrequest.md) function's OidRequest parameter is at least the value returned by the following formula:
+When OID\_DOT11\_DESIRED\_SSID\_LIST is set, the miniport driver should ensure that the value of the **InformationBufferLength** member of the [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function's OidRequest parameter is at least the value returned by the following formula:
 
 ```
  FIELD_OFFSET(DOT11_SSID_LIST, SSIDs) + uNumOfEntries * sizeof(DOT11_SSID))
 ```
 
-When OID\_DOT11\_DESIRED\_SSID\_LIST is set, the miniport driver must fail the set request if the **uNumOfEntries** member has a value greater than the value of **uDesiredSSIDListSize** that the driver previously returned through a query of [OID\_DOT11\_EXTSTA\_CAPABILITY](oid-dot11-extsta-capability.md). In this situation, the miniport driver must return NDIS\_STATUS\_INVALID\_LENGTH from its [*MiniportOidRequest*](miniportoidrequest.md) function.
+When OID\_DOT11\_DESIRED\_SSID\_LIST is set, the miniport driver must fail the set request if the **uNumOfEntries** member has a value greater than the value of **uDesiredSSIDListSize** that the driver previously returned through a query of [OID\_DOT11\_EXTSTA\_CAPABILITY](oid-dot11-extsta-capability.md). In this situation, the miniport driver must return NDIS\_STATUS\_INVALID\_LENGTH from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
 
-When OID\_DOT11\_DESIRED\_SSID\_LIST is queried, the miniport driver must verify that the **InformationBuffer** member of the [*MiniportOidRequest*](miniportoidrequest.md) function's *OidRequest* parameter is large enough to return the entire DOT11\_SSID\_LIST structure, including all entries in the **SSIDs** array. The value of the **InformationBufferLength** member of the *OidRequest* parameter determines what the miniport driver must do, as the following list shows:
+When OID\_DOT11\_DESIRED\_SSID\_LIST is queried, the miniport driver must verify that the **InformationBuffer** member of the [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function's *OidRequest* parameter is large enough to return the entire DOT11\_SSID\_LIST structure, including all entries in the **SSIDs** array. The value of the **InformationBufferLength** member of the *OidRequest* parameter determines what the miniport driver must do, as the following list shows:
 
 -   If the value of the **InformationBufferLength** member is less than the length, in bytes, of the entire DOT11\_SSID\_LIST structure, the miniport driver must do the following:
 
@@ -90,7 +90,7 @@ When OID\_DOT11\_DESIRED\_SSID\_LIST is queried, the miniport driver must verify
 
     -   For the *OidRequest* parameter, set the **BytesWritten** member to zero and the **BytesNeeded** member to the length, in bytes, of the entire DOT11\_SSID\_LIST structure.
 
-    -   Fail the query request by returning NDIS\_STATUS\_BUFFER\_OVERFLOW from its [*MiniportOidRequest*](miniportoidrequest.md) function.
+    -   Fail the query request by returning NDIS\_STATUS\_BUFFER\_OVERFLOW from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
 
 -   If the value of the **InformationBufferLength** member is greater than or equal to than the length, in bytes, of the entire DOT11\_SSID\_LIST structure, the miniport driver must do the following to complete a successful query request:
 
@@ -98,11 +98,11 @@ When OID\_DOT11\_DESIRED\_SSID\_LIST is queried, the miniport driver must verify
 
     -   For the *OidRequest* parameter, set the **BytesNeeded** member to zero and the **BytesWritten** member to the length, in bytes, of the entire DOT11\_SSID\_LIST structure. The miniport driver must also copy the entire DOT11\_SSID\_LIST structure to the **InformationBuffer** member.
 
-    -   Return NDIS\_STATUS\_SUCCESS from its [*MiniportOidRequest*](miniportoidrequest.md) function.
+    -   Return NDIS\_STATUS\_SUCCESS from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
 
 The default for the **msDot11DesiredSSIDList** MIB object is an empty list with **uNumEntries** set to zero. The miniport driver must set this MIB object to its default whenever the following occurs:
 
--   The miniport driver's [*MiniportInitializeEx*](miniportinitializeex.md) function is called.
+-   The miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function is called.
 
 -   A method request of [OID\_DOT11\_RESET\_REQUEST](oid-dot11-reset-request.md) is made to reset the media access control (MAC) layer of the 802.11 station and the **bSetDefaultMIB** member of the DOT11\_RESET\_REQUEST structure is **TRUE**.
 
@@ -137,6 +137,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_DESIRED_SSID_LIST%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_DESIRED_SSID_LIST%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

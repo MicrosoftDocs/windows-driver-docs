@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_WWAN_VISIBLE_PROVIDERS Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_WWAN_VISIBLE_PROVIDERS Network Drivers Starting with Windows Vista
 ---
 
 # OID\_WWAN\_VISIBLE\_PROVIDERS
@@ -19,7 +19,7 @@ OID\_WWAN\_VISIBLE\_PROVIDERS returns a list of network providers currently visi
 
 Set requests are not supported.
 
-Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_VISIBLE\_PROVIDERS**](ndis-status-wwan-visible-providers.md) status notification containing an [**NDIS\_WWAN\_VISIBLE\_PROVIDERS**](ndis-wwan-visible-providers.md) structure to provide information about visible network providers when completing query requests.
+Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_VISIBLE\_PROVIDERS**](ndis-status-wwan-visible-providers.md) status notification containing an [**NDIS\_WWAN\_VISIBLE\_PROVIDERS**](https://msdn.microsoft.com/library/windows/hardware/ff567948) structure to provide information about visible network providers when completing query requests.
 
 *Query* requests specify NDIS\_WWAN\_GET\_VISIBLE\_PROVIDERS structure as input. When the **Action** member in WWAN\_GET\_VISIBLE\_PROVIDERS is set to WWAN\_GET\_VISIBLE\_PROVIDERS\_ALL the miniport should return all visible providers. When the **Action** member in WWAN\_GET\_VISIBLE\_PROVIDERS is set to WWAN\_GET\_VISIBLE\_PROVIDERS\_MULTICARRIER the miniport should only return visible multi-carrier providers that can be set as the home provider.
 
@@ -65,7 +65,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_VISIBLE\_PROVIDERS**](ndis-wwan-visible-providers.md)
+[**NDIS\_WWAN\_VISIBLE\_PROVIDERS**](https://msdn.microsoft.com/library/windows/hardware/ff567948)
 
 [**NDIS\_STATUS\_WWAN\_VISIBLE\_PROVIDERS**](ndis-status-wwan-visible-providers.md)
 
@@ -77,6 +77,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_WWAN_VISIBLE_PROVIDERS%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_WWAN_VISIBLE_PROVIDERS%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

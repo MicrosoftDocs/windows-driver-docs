@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_SWITCH_PROPERTY_ENUM Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_SWITCH_PROPERTY_ENUM Network Drivers Starting with Windows Vista
 ---
 
 # OID\_SWITCH\_PROPERTY\_ENUM
@@ -17,13 +17,13 @@ keywords:
 
 The Hyper-V extensible switch extension issues an object identifier (OID) method request of OID\_SWITCH\_PROPERTY\_ENUM to obtain an array. This array contains the provisioned switch policies that match the specified criteria. Each element in the array specifies the properties of an extensible switch policy.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](ndis-oid-request.md) structure contains a pointer to a buffer. This buffer contains the following data:
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to a buffer. This buffer contains the following data:
 
--   An [**NDIS\_SWITCH\_PROPERTY\_ENUM\_PARAMETERS**](ndis-switch-property-enum-parameters.md) structure that specifies the parameters for the extensible switch policy enumeration.
+-   An [**NDIS\_SWITCH\_PROPERTY\_ENUM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598253) structure that specifies the parameters for the extensible switch policy enumeration.
 
--   An array of [**NDIS\_SWITCH\_PROPERTY\_ENUM\_INFO**](ndis-switch-property-enum-info.md) structures. Each of these structures contains information about an extensible switch policy.
+-   An array of [**NDIS\_SWITCH\_PROPERTY\_ENUM\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh598250) structures. Each of these structures contains information about an extensible switch policy.
 
-    **Note**  If the extension has not been provisioned with instances of the specified extensible switch policy, the extension sets the **NumProperties** member of the [**NDIS\_SWITCH\_PROPERTY\_ENUM\_PARAMETERS**](ndis-switch-property-enum-parameters.md) structure to zero and no [**NDIS\_SWITCH\_PROPERTY\_ENUM\_INFO**](ndis-switch-property-enum-info.md) structures are returned.
+    **Note**  If the extension has not been provisioned with instances of the specified extensible switch policy, the extension sets the **NumProperties** member of the [**NDIS\_SWITCH\_PROPERTY\_ENUM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598253) structure to zero and no [**NDIS\_SWITCH\_PROPERTY\_ENUM\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh598250) structures are returned.
 
      
 
@@ -34,7 +34,7 @@ The OID\_SWITCH\_PROPERTY\_ENUM OID must only be issued when the Hyper-V extensi
 
 Unlike OID query requests of [OID\_SWITCH\_PORT\_PROPERTY\_ENUM](oid-switch-port-property-enum.md), the extension does not have to call any *ReferenceSwitchXxx* or *DereferenceSwitchXxx* functions when it issues the OID\_SWITCH\_PROPERTY\_ENUM request down the extensible switch driver stack.
 
-**Note**  If the extension receives the OID method request of OID\_SWITCH\_PROPERTY\_ENUM, it must not complete the OID request. Instead, it must call [**NdisFOidRequest**](ndisfoidrequest.md) to forward the OID request down the extensible switch driver stack.
+**Note**  If the extension receives the OID method request of OID\_SWITCH\_PROPERTY\_ENUM, it must not complete the OID request. Instead, it must call [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830) to forward the OID request down the extensible switch driver stack.
 
  
 
@@ -60,7 +60,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The length of the information buffer is too small to return the [<strong>NDIS_SWITCH_PROPERTY_ENUM_PARAMETERS</strong>](ndis-switch-property-enum-parameters.md) structure and its array of [<strong>NDIS_SWITCH_PROPERTY_ENUM_INFO</strong>](ndis-switch-property-enum-info.md) elements. The underlying miniport edge of the extensible switch sets the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](ndis-oid-request.md) structure to the minimum buffer size that is required.</p></td>
+<td><p>The length of the information buffer is too small to return the [<strong>NDIS_SWITCH_PROPERTY_ENUM_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh598253) structure and its array of [<strong>NDIS_SWITCH_PROPERTY_ENUM_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/hh598250) elements. The underlying miniport edge of the extensible switch sets the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -95,11 +95,11 @@ Requirements
 
 
 ****
-[**NDIS\_OID\_REQUEST**](ndis-oid-request.md)
+[**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)
 
-[**NDIS\_SWITCH\_PROPERTY\_ENUM\_INFO**](ndis-switch-property-enum-info.md)
+[**NDIS\_SWITCH\_PROPERTY\_ENUM\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh598250)
 
-[**NDIS\_SWITCH\_PROPERTY\_ENUM\_PARAMETERS**](ndis-switch-property-enum-parameters.md)
+[**NDIS\_SWITCH\_PROPERTY\_ENUM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598253)
 
 [Querying the Hyper-V Extensible Switch Configuration](https://msdn.microsoft.com/library/windows/hardware/hh598293)
 
@@ -109,6 +109,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_SWITCH_PROPERTY_ENUM%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_SWITCH_PROPERTY_ENUM%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

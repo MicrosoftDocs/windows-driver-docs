@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_DOT11_ENABLED_UNICAST_CIPHER_ALGORITHM Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_DOT11_ENABLED_UNICAST_CIPHER_ALGORITHM Network Drivers Starting with Windows Vista
 ---
 
 # OID\_DOT11\_ENABLED\_UNICAST\_CIPHER\_ALGORITHM
@@ -30,15 +30,15 @@ Support for OID\_DOT11\_ENABLED\_UNICAST\_CIPHER\_ALGORITHM is mandatory if the 
 
  
 
-The data type for this OID is the [**DOT11\_CIPHER\_ALGORITHM\_LIST**](dot11-cipher-algorithm-list.md) structure.
+The data type for this OID is the [**DOT11\_CIPHER\_ALGORITHM\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff547673) structure.
 
 When OID\_DOT11\_ENABLED\_UNICAST\_CIPHER\_ALGORITHM is set, the miniport driver must do the following:
 
--   The **msDot11EnabledUnicastCipherAlgo** MIB object must always contain at least one entry. If the **uNumOfEntries** member of the DOT11\_CIPHER\_ALGORITHM\_LIST structure is set to zero, the miniport driver must fail the set request by returning NDIS\_STATUS\_INVALID\_DATA from its [*MiniportOidRequest*](miniportoidrequest.md) function.
+-   The **msDot11EnabledUnicastCipherAlgo** MIB object must always contain at least one entry. If the **uNumOfEntries** member of the DOT11\_CIPHER\_ALGORITHM\_LIST structure is set to zero, the miniport driver must fail the set request by returning NDIS\_STATUS\_INVALID\_DATA from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
 
 -   If the 802.11 station does not support a specified unicast cipher algorithm, return NDIS\_STATUS\_INVALID\_DATA from its *MiniportOidRequest* function.
 
--   If the 802.11 station does not support any of the specified unicast cipher algorithms for any of the enabled authentication algorithms defined by the ExtSTA **msDot11EnabledAuthAlgo** MIB object, return NDIS\_STATUS\_INVALID\_DATA from its [*MiniportOidRequest*](miniportoidrequest.md) function.
+-   If the 802.11 station does not support any of the specified unicast cipher algorithms for any of the enabled authentication algorithms defined by the ExtSTA **msDot11EnabledAuthAlgo** MIB object, return NDIS\_STATUS\_INVALID\_DATA from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
 
     For more information about the **msDot11EnabledAuthAlgo** MIB object, see [OID\_DOT11\_ENABLED\_AUTHENTICATION\_ALGORITHM](oid-dot11-enabled-authentication-algorithm.md).
 
@@ -46,7 +46,7 @@ When OID\_DOT11\_ENABLED\_UNICAST\_CIPHER\_ALGORITHM is set, the miniport driver
 
 -   Disable all supported unicast cipher algorithms that are not in the specified list.
 
--   Ensure that the value of the **InformationBufferLength** member of the [*MiniportOidRequest*](miniportoidrequest.md) function's OidRequest parameter is at least the value returned by the following formula:
+-   Ensure that the value of the **InformationBufferLength** member of the [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function's OidRequest parameter is at least the value returned by the following formula:
 
     ```
      FIELD_OFFSET(DOT11_CIPHER_ALGORITHM_LIST, AlgorithmIds) + uNumOfEntries * sizeof(DOT11_CIPHER_ALGORITHM))
@@ -62,11 +62,11 @@ When OID\_DOT11\_ENABLED\_UNICAST\_CIPHER\_ALGORITHM is queried, the miniport dr
 
 -   The miniport driver cannot return an empty list of unicast cipher algorithms. If the 802.11 station has not enabled any unicast cipher algorithms, the miniport driver must return a list containing **DOT11\_CIPHER\_ALGO\_NONE**.
 
-The default value for the **msDot11EnabledUnicastCipherAlgo** MIB object is the list of unicast ciphers supported by the authentication algorithms specified by the **msDot11EnabledAuthAlgo** MIB object. The default unicast cipher list must be ordered by preference. For more information about cipher preference, see [**DOT11\_CIPHER\_ALGORITHM**](dot11-cipher-algorithm.md).
+The default value for the **msDot11EnabledUnicastCipherAlgo** MIB object is the list of unicast ciphers supported by the authentication algorithms specified by the **msDot11EnabledAuthAlgo** MIB object. The default unicast cipher list must be ordered by preference. For more information about cipher preference, see [**DOT11\_CIPHER\_ALGORITHM**](https://msdn.microsoft.com/library/windows/hardware/ff547672).
 
 The miniport driver must set the **msDot11EnabledUnicastCipherAlgo** MIB object to the default multicast cipher whenever the following occurs:
 
--   The miniport driver's [*MiniportInitializeEx*](miniportinitializeex.md) function is called.
+-   The miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function is called.
 
 -   A method request of [OID\_DOT11\_RESET\_REQUEST](oid-dot11-reset-request.md) is made to reset the media access control (MAC) layer of the 802.11 station and the **bSetDefaultMIB** member of the DOT11\_RESET\_REQUEST structure is **TRUE**.
 
@@ -107,6 +107,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_ENABLED_UNICAST_CIPHER_ALGORITHM%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_ENABLED_UNICAST_CIPHER_ALGORITHM%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
