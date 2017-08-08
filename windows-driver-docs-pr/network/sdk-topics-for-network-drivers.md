@@ -13,7 +13,7 @@ ms.technology: windows-devices
 
 # SDK Topics for Network Drivers
 
-This section contains topics for Windows networking device drivers starting with Windows Vista, as well as topics that are shared between network drivers and the user mode network applications that interact with them. The header files that contain the topics defined in this section are included in the Windows Software Development Kit (SDK).
+This section contains SDK topics for Windows networking device drivers starting with Windows Vista. These topics may also be shared with the user mode applications that interact with network drivers. The header files that contain the topics defined in this section are included in the Windows Software Development Kit (SDK).
 
 > [!IMPORTANT]
 > This section's header topics contains pages for definitions, macros, OIDs, status indications, and other data structures that are not part of network driver reference (structures, enumerations, functions, and callbacks). 

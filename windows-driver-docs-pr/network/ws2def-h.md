@@ -14,7 +14,9 @@ ms.technology: windows-devices
 
 # Ws2def.h
 
-This section contains network driver topics for the Ws2def.h header. The Ws2def.h header contains definitions for the Winsock2 specification. It is included in Winsock2.h. User mode applications should include Winsock2.h rather than including Ws2def.h directly. Ws2def.h cannot be included by a module that also includes Winsock.h.
+This section contains network driver topics for the Ws2def.h header. These topics may also be shared with the user mode applications that interact with network drivers.
+
+The Ws2def.h header contains definitions for the Winsock2 specification. It is included in Winsock2.h. User mode applications should include Winsock2.h rather than including Ws2def.h directly. Ws2def.h cannot be included by a module that also includes Winsock.h.
 
 > [!IMPORTANT]
 > This section's topics contains pages for definitions, macros, OIDs, status indications, and other data structures that are not part of network driver reference (structures, enumerations, functions, and callbacks). 

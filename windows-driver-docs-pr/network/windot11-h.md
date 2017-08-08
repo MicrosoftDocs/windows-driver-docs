@@ -14,7 +14,9 @@ ms.technology: windows-devices
 
 # Windot11.h
 
-This section contains network driver topics for the Windot11.h header. The Windot11.h header contains definitions for Native 802.11 miniport driver specifications.
+This section contains network driver topics for the Windot11.h header. These topics may also be shared with the user mode applications that interact with network drivers.
+
+The Windot11.h header contains definitions for Native 802.11 miniport driver specifications.
 
 > [!IMPORTANT]
 > This section's topics contains pages for definitions, macros, OIDs, status indications, and other data structures that are not part of network driver reference (structures, enumerations, functions, and callbacks). 

@@ -14,7 +14,9 @@ ms.technology: windows-devices
 
 # Mstcpip.h
 
-This section contains network driver topics for the Mstcpip.h header. The Mstcpip.h header contains definitions for Microsoft-specific extensions to the core Winsock definitions.
+This section contains network driver topics for the Mstcpip.h header. These topics may also be shared with the user mode applications that interact with network drivers.
+
+The Mstcpip.h header contains definitions for Microsoft-specific extensions to the core Winsock definitions.
 
 ## In this section
 

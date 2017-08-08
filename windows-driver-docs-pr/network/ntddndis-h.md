@@ -15,7 +15,9 @@ ms.technology: windows-devices
 # Ntddndis.h
 
 
-This section contains network driver topics for the Ntddndis.h header. The Ntddndis.h header contains definitions for constants and types for interfacing with network drivers.
+This section contains network driver topics for the Ntddndis.h header. These topics may also be shared with the user mode applications that interact with network drivers.
+
+The Ntddndis.h header contains definitions for constants and types for interfacing with network drivers.
 
 > [!IMPORTANT]
 > This section's topics contains pages for definitions, macros, OIDs, status indications, and other data structures that are not part of network driver reference (structures, enumerations, functions, and callbacks). 
