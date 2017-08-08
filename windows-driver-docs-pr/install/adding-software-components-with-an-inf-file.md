@@ -21,19 +21,21 @@ This page provides guidelines for the use of software components.
 
 ## Getting started
 
-A software component is a separate, standalone driver package that references one or more software modules.  The referenced software enhances the value of the device, but is not necessary for basic device functionality and has no associated function driver service.  
+A software component is a separate, standalone driver package that can install one or more software modules.  The installed software enhances the value of the device, but is not necessary for basic device functionality and has no associated function driver service.  
 
-The core driver package references one or more software components by specifying the [INF AddComponent Directive](inf-addcomponent-directive.md) one or more times in the [INF DDInstall.Components](inf-ddinstall-components-section.md) section.
+An [extension INF file](using-an-extension-inf-file.md) references one or more software components by specifying the [INF AddComponent Directive](inf-addcomponent-directive.md) one or more times in the [INF DDInstall.Components](inf-ddinstall-components-section.md) section.
 
-More than one core driver package can reference the same software component. 
+**Note**: You should only specify the [INF AddComponent Directive](inf-addcomponent-directive.md) in an extension INF file.
 
-For each software component referenced in a core driver package INF file, the system creates a virtual child device.
+More than one driver package can reference the same software component. 
+
+For each software component referenced in an extension INF file, the system creates a virtual child device.
 
 Virtual device children can be updated independently just like any other device, as long as the parent device is started.  We recommend separating functionality into as many different groupings as makes sense from a servicing perspective, and then creating one software component for each grouping.
 
-You'll provide an INF file for each software component.  A software component INF can perform all INF operations except specifying a function driver service.  A software component INF can specify Win32 user services.
+You'll provide an INF file for each software component.  A component INF can perform all INF operations except specifying a function driver service.  A component INF can specify Win32 user services.
 
-To install software, each software package INF in turn specifies the [**AddSoftware** directive](inf-addsoftware-directive.md) one or more times in its [*DDInstall*.**Software**](inf-ddinstall-software-section.md) section.
+To install software, each component INF in turn specifies the [**AddSoftware** directive](inf-addsoftware-directive.md) one or more times in its [*DDInstall*.**Software**](inf-ddinstall-software-section.md) section.
 
 ## Accessing a device from a software component
 
@@ -62,20 +64,12 @@ The following example shows how you might use a software component to install a 
 ```
 [Version]
 Signature   = "$WINDOWS NT$"
-Class       = Display
-ClassGUID   = {4D36E968-E325-11CE-BFC1-08002BE10318}
+Class       = Extension
+ClassGuid   = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+ExtensionId = {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz} ; replace with your own GUID
 Provider    = %CONTOSO%
 DriverVer   = 06/21/2006,1.0.0.0
 CatalogFile = ContosoGrfx.cat
-
-[DestinationDirs]
-DefaultDestDir = 12
-
-[SourceDisksNames]
-1 = %Disk%,,,""
-
-[SourceDisksFiles]
-ContosoGrfx.sys  = 1 
 
 [Manufacturer]
 %CONTOSO%=Contoso,NTx86
@@ -84,20 +78,7 @@ ContosoGrfx.sys  = 1
 %ContosoGrfx.DeviceDesc%=ContosoGrfx, PCI\VEN0001&DEV0001
 
 [ContosoGrfx.NT]
-CopyFiles=ContosoGrfx.NT.Copy
-
-[ContosoGrfx.NT.Copy]
-ContosoGrfx.sys
-
-[ContosoGrfx.NT.Services]
-AddService = ContosoSvc, %SPSVCINST_ASSOCSERVICE%, Service_Inst
-
-[Service_Inst]
-DisplayName = %ContosoGrfx.SvcDesc%
-ServiceType = 1      ; SERVICE_KERNEL_DRIVER
-StartType = 3        ; SERVICE_DEMAND_START
-ErrorControl = 1     ; SERVICE_ERROR_NORMAL
-ServiceBinary = %12%\ContosoGrfx.sys
+;empty
 
 [ContosoGrfx.NT.Components]
 AddComponent = ContosoControlPanel,, Component_Inst
@@ -106,11 +87,8 @@ AddComponent = ContosoControlPanel,, Component_Inst
 ComponentIDs = VID0001&PID0001&SID0001
 
 [Strings]
-SPSVCINST_ASSOCSERVICE= 0x00000002
-ContosoControlPanelDisplayName = "Contoso Control Panel"
 CONTOSO = "Contoso Inc."
-ContosoGrfx.DeviceDesc = "Contoso Graphics Card"
-ContosoGrfx.SvcDesc = "Contoso Graphics Card Driver"
+ContosoGrfx.DeviceDesc = "Contoso Graphics Card Extension"
 ```
 
 ### Software component INF file

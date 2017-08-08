@@ -53,7 +53,7 @@ The host computer can be the same physical computer that is running the virtual 
 ## <span id="Starting_the_Debugging_Session"></span><span id="starting_the_debugging_session"></span><span id="STARTING_THE_DEBUGGING_SESSION"></span>Starting the Debugging Session
 
 
-1.  On the host computer, in Visual Studio, on the **Tools** menu, choose **Attach to Process**.
+1.  On the host computer, in Visual Studio, on the **Debug** menu, choose **Attach to Process**.
 2.  For **Transport**, choose **Windows Kernel Mode Debugger**.
 3.  For **Qualifier**, select the name of the physical computer that is running the target virtual machine.
 4.  Click **Attach**.
