@@ -23,7 +23,7 @@ Query requests specify [**NDIS\_WWAN\_GET\_SLOT\_INFO**](https://msdn.microsoft.
 
 The following diagram illustrates a query request.
 
-![slot status query](images/multi-sim-9-slotstatusquery.png)
+![slot status query](images/multi-SIM_9_slotStatusQuery.png)
 
 Set requests are not applicable.
 
