@@ -15,9 +15,9 @@ Use the topics in this section to make a submission to Microsoft to either add a
 
 -   [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md)
 
--   [Testing Your COSA/APN database submission](testing-your-cosa-apn-database-submission.md)
+-   [Testing your desktop COSA/APN database submission](testing-your-desktop-cosa-apn-database-submission.md)
 
--   [Submitting the COSA/APN database update](submitting-the-cosa-apn-database-update.md)
+-   [Submitting the desktop COSA/APN database update](submitting-the-desktop-cosa-apn-database-update.md)
 
 For more information about COSA, see [COSA overview](cosa-overview.md). For more information about APN database, see [APN database overview](apn-database-overview.md). 
 
