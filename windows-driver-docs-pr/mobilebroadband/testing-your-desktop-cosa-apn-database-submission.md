@@ -28,17 +28,40 @@ If you do not have a TAM:
 > [!NOTE] 
 > You will need to provide a credit card to open the incident, but you will not be charged. 
 
-## Test your submission for COSA
+## Test your submission for desktop COSA
 
-> [!IMPORTANT]
-> Use this process for Windows 10, version 1703 and later.
+Use this process for Windows 10, version 1703 and later.
 
-After you have submitted your completed spreadsheet that contains your APN information to your TAM, Microsoft will create a provisioning package (.ppkg) file for you and return it to you so you can install and test your APN. For more information about how to install a provisioning package file, see [Apply a provisioning package](https://technet.microsoft.com/itpro/windows/deploy/provisioning-apply-package).
+After you have submitted your completed spreadsheet that contains your APN information to your TAM, Microsoft will create a provisioning package (.ppkg) file for you and return it to you so you can install and test your APN. 
+
+For more information about how to install a provisioning package file, see [Apply a provisioning package](https://technet.microsoft.com/itpro/windows/deploy/provisioning-apply-package).
+
+### Modify the local COSA database (desktop COSA)
+
+Follow these steps to test the updated COSA Provisioning Package (PPKG) you received from Microsoft after completing your APN information spreadsheet and submitting it to your TAM. 
+
+> [!WARNING]
+> Create a backup of the original provisioning package before performing the following actions. The original provisioning package is located here: `%systemroot%\Provisioning\Cosa\Microsoft\Microsoft.Windows.Cosa.Desktop.Client.ppkg`.
+
+1. From an elevated command prompt window, type `cd %systemroot%\Provisioning\Cosa\Microsoft` and press Enter.
+2. Type `takeown /f .\Microsoft.Windows.Cosa.Desktop.Client.ppkg`, then press Enter.
+3. Type `icacls .\Microsoft.Windows.Cosa.Desktop.Client.ppkg /grant %username%:F`, then press Enter.
+4. Replace the original PPKG with the updated **Microsoft.Windows.Cosa.Desktop.Client.ppkg** received from Microsoft in this location: `%systemroot%\Provisioning\Cosa\Microsoft`.
+5. Restart the device under test (DUT).
+   1. This is required for the provisioning to take effect and load the updated desktop COSA provisioning package (Microsoft.Windows.Cosa.Desktop.Client.ppkg).
+6. Insert the SIM for validation.
+
+Once validation of the new provisioning package (PPKG) received from Microsoft has completed, you can restore the original PPKG with the following steps.
+
+1. Replace the updated **Microsoft.Windows.Cosa.Desktop.Client.ppkg** received from Microsoft with the original PPKG (from the backup) in this location: `%systemroot%\Provisioning\Cosa\Microsoft`.
+2. Go to this location: `C:\ProgramData\Microsoft\Provisioning`.
+3. Delete the folder called **{c8a326e4-f518-4f14-b543-97a57e1a975e}** along with all its subfolders and contents.
+   1. This removes the cache of the updated PPKG (the one received from Microsoft for validation).
+4. Insert the SIM for provisioning to take effect (reading the original PPKG).
 
 ## Test your submission for the APN database (apndatabase.xml)
 
-> [!IMPORTANT]
-> Use this process for Windows 8, Windows 8.1, and versions of Windows 10 before 1703.
+Use this process for Windows 8, Windows 8.1, and versions of Windows 10 before Windows 10, version 1703.
 
 There are two ways that you can ensure that the APN entries work before submitting them to Microsoft:
 
