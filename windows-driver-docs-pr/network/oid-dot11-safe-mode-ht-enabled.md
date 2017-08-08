@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_DOT11_SAFE_MODE_HT_ENABLED Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_DOT11_SAFE_MODE_HT_ENABLED Network Drivers Starting with Windows Vista
 ---
 
 # OID\_DOT11\_SAFE\_MODE\_HT\_ENABLED
@@ -25,9 +25,9 @@ The data type for this OID is a Boolean value.
 
 The miniport driver must fail a set request with error code **NDIS\_STATUS\_INVALID\_STATE** if the 802.11 station is in any state except the initialization (INIT) state.
 
-When this OID is queried, if the extensible station is in the INIT state, the miniport driver must complete the request if the NIC set the **bSafeModeImplemented** member of the [**DOT11\_EXTSTA\_ATTRIBUTES**](dot11-extsta-attributes.md) structure to **TRUE**. Otherwise, the miniport driver should fail the set request.
+When this OID is queried, if the extensible station is in the INIT state, the miniport driver must complete the request if the NIC set the **bSafeModeImplemented** member of the [**DOT11\_EXTSTA\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff547688) structure to **TRUE**. Otherwise, the miniport driver should fail the set request.
 
-This OID is set only if the NIC implements the 802.11n safe mode of operation, as indicated by the value of the **bSafeModeImplemented** member of [**DOT11\_EXTSTA\_ATTRIBUTES**](dot11-extsta-attributes.md).
+This OID is set only if the NIC implements the 802.11n safe mode of operation, as indicated by the value of the **bSafeModeImplemented** member of [**DOT11\_EXTSTA\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff547688).
 
 If this OID is not set, its default value is used.
 
@@ -41,8 +41,8 @@ The NIC must not use traffic specification (TSPEC) in safe mode.
 
 When processing an OID\_DOT11\_SAFE\_MODE\_HT\_ENABLED OID request, the miniport should do the following:
 
--   Indicate that QoS is in use on the network by setting the **ucActiveQoSProtocol** member of the [**DOT11\_ASSOCIATION\_COMPLETION\_PARAMETERS**](dot11-association-completion-parameters.md) structure to one of the flag values listed in the **ucActiveQoSProtocolmember description**.
--   In the case of an 802.11g association, the miniport should not use QoS. The **ucActiveQoSProtocol** member of [**DOT11\_ASSOCIATION\_COMPLETION\_PARAMETERS**](dot11-association-completion-parameters.md) should be set to zero on association completion.
+-   Indicate that QoS is in use on the network by setting the **ucActiveQoSProtocol** member of the [**DOT11\_ASSOCIATION\_COMPLETION\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff547647) structure to one of the flag values listed in the **ucActiveQoSProtocolmember description**.
+-   In the case of an 802.11g association, the miniport should not use QoS. The **ucActiveQoSProtocol** member of [**DOT11\_ASSOCIATION\_COMPLETION\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff547647) should be set to zero on association completion.
 -   On the TX path, the miniport should extend the 802.11 header with QoS priority-received in-frame OOB data, based on the condition that WMM was negotiated on the current association.
 -   On the RX path, the miniport should not strip the QoS flag from the 802.11 header when operating in safe mode.
 -   Pass the QoS data in the 802.11 frame as-is to the Nwifi driver.
@@ -80,7 +80,7 @@ Requirements
 ## See also
 
 
-[**DOT11\_EXTSTA\_ATTRIBUTES**](dot11-extsta-attributes.md)
+[**DOT11\_EXTSTA\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff547688)
 
 [OID\_DOT11\_SAFE\_MODE\_ENABLED](oid-dot11-safe-mode-enabled.md)
 
@@ -92,6 +92,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_SAFE_MODE_HT_ENABLED%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_SAFE_MODE_HT_ENABLED%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

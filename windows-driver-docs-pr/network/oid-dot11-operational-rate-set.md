@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_DOT11_OPERATIONAL_RATE_SET Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_DOT11_OPERATIONAL_RATE_SET Network Drivers Starting with Windows Vista
 ---
 
 # OID\_DOT11\_OPERATIONAL\_RATE\_SET
@@ -23,7 +23,7 @@ When set, the OID\_DOT11\_OPERATIONAL\_RATE\_SET object identifier (OID) request
 
 When queried, this OID requests that the miniport driver return the set of operational data rates.
 
-The data type for OID\_DOT11\_OPERATIONAL\_RATE\_SET is the [**DOT11\_RATE\_SET**](dot11-rate-set.md) structure, based on the IEEE 802.11 **dot11OperationalRateSet** management information base (MIB) object.
+The data type for OID\_DOT11\_OPERATIONAL\_RATE\_SET is the [**DOT11\_RATE\_SET**](https://msdn.microsoft.com/library/windows/hardware/ff548759) structure, based on the IEEE 802.11 **dot11OperationalRateSet** management information base (MIB) object.
 
 The operational rate set of the 802.11 station defines the rates at which the station can transmit data. The 802.11 station specifies the rates it supports in the Supported Rates information element (IE) of various 802.11 management frames, such as Beacon and Probe Response frames. For more information about the Supported Rates IE, refer to Clause 8.4.2.3 of the IEEE 802.11-2012 standard.
 
@@ -68,6 +68,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_OPERATIONAL_RATE_SET%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_OPERATIONAL_RATE_SET%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

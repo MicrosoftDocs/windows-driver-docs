@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_GEN_CURRENT_PACKET_FILTER Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_GEN_CURRENT_PACKET_FILTER Network Drivers Starting with Windows Vista
 ---
 
 # OID\_GEN\_CURRENT\_PACKET\_FILTER
@@ -81,19 +81,19 @@ SMT packets that an FDDI NIC receives.
 <a href="" id="ndis-packet-type-source-routing"></a>NDIS\_PACKET\_TYPE\_SOURCE\_ROUTING  
 All source routing packets. If the protocol driver sets this bit, the NDIS library attempts to act as a source routing bridge.
 
-For miniport adapters whose media type is **NdisMedium802\_3** or **NdisMedium802\_5**, NDIS disables packet reception, along with multicast and functional addresses during a call to the [**NdisOpenAdapterEx**](ndisopenadapterex.md) function.
+For miniport adapters whose media type is **NdisMedium802\_3** or **NdisMedium802\_5**, NDIS disables packet reception, along with multicast and functional addresses during a call to the [**NdisOpenAdapterEx**](https://msdn.microsoft.com/library/windows/hardware/ff563715) function.
 
-For miniport adapters with all other media types, the protocol driver can begin receiving packets at any time during the [**NdisOpenAdapterEx**](ndisopenadapterex.md) call. Note that the protocol can even receive packets before **NdisOpenAdapterEx** returns. In general, packet filtering is best effort, and protocol drivers must be prepared to handle receive indications even when the packet filter is zero.
+For miniport adapters with all other media types, the protocol driver can begin receiving packets at any time during the [**NdisOpenAdapterEx**](https://msdn.microsoft.com/library/windows/hardware/ff563715) call. Note that the protocol can even receive packets before **NdisOpenAdapterEx** returns. In general, packet filtering is best effort, and protocol drivers must be prepared to handle receive indications even when the packet filter is zero.
 
 For a query, NDIS returns the binding filters that are combined using the OR operator.
 
 For a set, the specified packet filter replaces the previous packet filter for the binding. If the miniport driver previously enabled a packet type but the protocol driver does not specify that type in a new filter, the protocol driver will not receive packets of this type.
 
-For miniport adapters whose media type is **NdisMedium802\_3** or **NdisMedium802\_5**, if the miniport driver does not set a bit for a particular packet type in response to this query, the protocol driver will not receive packets of that type. Consequently, a protocol driver can disable packet reception by calling the [**NdisOidRequest**](ndisoidrequest.md) or [**NdisCoOidRequest**](ndiscooidrequest.md) function using a filter of zero.
+For miniport adapters whose media type is **NdisMedium802\_3** or **NdisMedium802\_5**, if the miniport driver does not set a bit for a particular packet type in response to this query, the protocol driver will not receive packets of that type. Consequently, a protocol driver can disable packet reception by calling the [**NdisOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff563710) or [**NdisCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561711) function using a filter of zero.
 
 For miniport adapters with all other media types, NDIS does not check the packet type. For these media types, a protocol driver cannot disable packet reception by specifying a filter of zero.
 
-When a miniport driver's [*MiniportInitializeEx*](miniportinitializeex.md) function is called, the miniport driver's packet filter should be set to zero. When the packet filter is zero, receive indications are disabled. After a miniport driver's *MiniportInitializeEx* function has returned, a protocol driver can set OID\_GEN\_CURRENT\_PACKET\_FILTER to a nonzero value, thereby enabling the miniport driver to indicate received packets to that protocol.
+When a miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function is called, the miniport driver's packet filter should be set to zero. When the packet filter is zero, receive indications are disabled. After a miniport driver's *MiniportInitializeEx* function has returned, a protocol driver can set OID\_GEN\_CURRENT\_PACKET\_FILTER to a nonzero value, thereby enabling the miniport driver to indicate received packets to that protocol.
 
 If promiscuous mode is enabled with the NDIS\_PACKET\_TYPE\_PROMISCUOUS bit, the protocol driver continues to receive packets even if the sending network node does not direct them to it. NDIS then sends the protocol driver all packets the NIC receives.
 
@@ -198,13 +198,13 @@ Requirements
 ## See also
 
 
-[*MiniportInitializeEx*](miniportinitializeex.md)
+[*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389)
 
-[**NdisCoOidRequest**](ndiscooidrequest.md)
+[**NdisCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561711)
 
-[**NdisOidRequest**](ndisoidrequest.md)
+[**NdisOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff563710)
 
-[**NdisOpenAdapterEx**](ndisopenadapterex.md)
+[**NdisOpenAdapterEx**](https://msdn.microsoft.com/library/windows/hardware/ff563715)
 
  
 
@@ -212,6 +212,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_GEN_CURRENT_PACKET_FILTER%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_GEN_CURRENT_PACKET_FILTER%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

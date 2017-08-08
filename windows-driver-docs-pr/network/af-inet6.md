@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - AF_INET6 Network Drivers Starting with Windows Vista
+keywords: 
+ -AF_INET6 Network Drivers Starting with Windows Vista
 ---
 
 # AF\_INET6
@@ -19,7 +19,7 @@ The AF\_INET6 address family is the address family for IPv6.
 
 ### Socket Address Structure
 
-An IPv6 transport address is specified with the [**SOCKADDR\_IN6**](sockaddr-in6.md) structure.
+An IPv6 transport address is specified with the [**SOCKADDR\_IN6**](https://msdn.microsoft.com/library/windows/hardware/ff570824) structure.
 
 ### Socket Types
 
@@ -34,7 +34,7 @@ Supports unreliable connectionless datagram communication.
 <a href="" id="sock-raw"></a>SOCK\_RAW  
 Supports raw access to the transport protocol.
 
-A WSK application specifies a socket type when it calls the [**WskSocket**](wsksocket.md) function or the [**WskSocketConnect**](wsksocketconnect.md) function to create a new socket.
+A WSK application specifies a socket type when it calls the [**WskSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571149) function or the [**WskSocketConnect**](https://msdn.microsoft.com/library/windows/hardware/ff571150) function to create a new socket.
 
 ### Protocols
 
@@ -129,9 +129,9 @@ Raw IP packets
 
 Additional protocols are supported through the use of raw sockets.
 
-A WSK application specifies a protocol when it calls the [**WskSocket**](wsksocket.md) function or the [**WskSocketConnect**](wsksocketconnect.md) function to create a new socket.
+A WSK application specifies a protocol when it calls the [**WskSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571149) function or the [**WskSocketConnect**](https://msdn.microsoft.com/library/windows/hardware/ff571150) function to create a new socket.
 
-A WSK application also specifies a protocol (as the *Level* parameter) when it calls the [**WskControlSocket**](wskcontrolsocket.md) function to set or retrieve transport protocol level or network protocol level socket options.
+A WSK application also specifies a protocol (as the *Level* parameter) when it calls the [**WskControlSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571127) function to set or retrieve transport protocol level or network protocol level socket options.
 
 ### Combinations
 
@@ -176,6 +176,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20AF_INET6%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20AF_INET6%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

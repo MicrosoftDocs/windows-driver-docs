@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_DOT11_RESET_REQUEST Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_DOT11_RESET_REQUEST Network Drivers Starting with Windows Vista
 ---
 
 # OID\_DOT11\_RESET\_REQUEST
@@ -19,7 +19,7 @@ keywords:
 
  
 
-When a method request of the OID\_DOT11\_RESET\_REQUEST OID is made, the miniport driver must reset the specified IEEE layers of the 802.11 station and transition to the initialization (INIT) state of the current operation mode. For more information about the method request type, see [**NDIS\_OID\_REQUEST**](ndis-oid-request.md).
+When a method request of the OID\_DOT11\_RESET\_REQUEST OID is made, the miniport driver must reset the specified IEEE layers of the 802.11 station and transition to the initialization (INIT) state of the current operation mode. For more information about the method request type, see [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710).
 
 The data type for this OID is the DOT11\_RESET\_REQUEST structure.
 
@@ -60,9 +60,9 @@ The 802.11 station resets the specified IEEE layers and resets the 802.11 manage
 
 The Native 802.11 miniport driver must follow these guidelines when it resets the 802.11 MIB objects to their default values:
 
--   In a call to the [**NdisMSetMiniportAttributes**](ndismsetminiportattributes.md) function, if the Native 802.11 miniport driver sets *MiniportAttributes-*&gt; **Native\_802\_11\_Attributes**-&gt; **Header-**&gt; **Revision** to NDIS\_MINIPORT\_ADAPTER\_802\_11\_ATTRIBUTES\_REVISION\_1, the driver must always reset the 802.11 MIB objects to their default value regardless of the value of the **bSetDefaultMIB** member.
+-   In a call to the [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) function, if the Native 802.11 miniport driver sets *MiniportAttributes-*&gt; **Native\_802\_11\_Attributes**-&gt; **Header-**&gt; **Revision** to NDIS\_MINIPORT\_ADAPTER\_802\_11\_ATTRIBUTES\_REVISION\_1, the driver must always reset the 802.11 MIB objects to their default value regardless of the value of the **bSetDefaultMIB** member.
 
--   In a call to the [**NdisMSetMiniportAttributes**](ndismsetminiportattributes.md) function, if the Native 802.11 miniport driver sets *MiniportAttributes-*&gt; **Native\_802\_11\_Attributes**-&gt; **Header-**&gt; **Revision** to a higher revision number, the driver should reset the 802.11 MIB objects to their default value only when the value of the **bSetDefaultMIB** member is set to **TRUE**.
+-   In a call to the [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) function, if the Native 802.11 miniport driver sets *MiniportAttributes-*&gt; **Native\_802\_11\_Attributes**-&gt; **Header-**&gt; **Revision** to a higher revision number, the driver should reset the 802.11 MIB objects to their default value only when the value of the **bSetDefaultMIB** member is set to **TRUE**.
 
     If this member is **FALSE**, the 802.11 station resets the specified IEEE layers but retains the current values of the 802.11 MIB objects.
 
@@ -70,11 +70,11 @@ When the method request of OID\_DOT11\_RESET\_REQUEST is made, the miniport driv
 
 -   Wait for the reset operation to complete before completing the set request.
 
--   Initiate the reset operation and complete the set request. In this situation, the miniport driver must return NDIS\_STATUS\_PENDING from its [*MiniportOidRequest*](miniportoidrequest.md) function after initiating the reset operation. After the reset operation has finished, the miniport driver completes the set request by calling [**NdisMRequestComplete**](ndismoidrequestcomplete.md).
+-   Initiate the reset operation and complete the set request. In this situation, the miniport driver must return NDIS\_STATUS\_PENDING from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function after initiating the reset operation. After the reset operation has finished, the miniport driver completes the set request by calling [**NdisMRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563622).
 
 When the method request of OID\_DOT11\_RESET\_REQUEST is made, the miniport driver must do the following regardless of the value of **dot11ResetType**:
 
--   Fail the query request if the value of the **InformationBufferLength** member of the [*MiniportOidRequest*](miniportoidrequest.md) function is less than the length, in bytes, of the [**DOT11\_STATUS\_INDICATION**](dot11-status-indication.md) structure. In this situation, the miniport driver returns NDIS\_STATUS\_BUFFER\_OVERFLOW from the *MiniportOidRequest* function.
+-   Fail the query request if the value of the **InformationBufferLength** member of the [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function is less than the length, in bytes, of the [**DOT11\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff548782) structure. In this situation, the miniport driver returns NDIS\_STATUS\_BUFFER\_OVERFLOW from the *MiniportOidRequest* function.
 
 -   Disconnect from the basic service set (BSS) network if the miniport driver is operating in ExtSTA mode and the 802.11 station is connected to the BSS network. If the 802.11 station connected to an infrastructure BSS, it must send an 802.11 Disassociation frame.
 
@@ -88,7 +88,7 @@ When the method request of OID\_DOT11\_RESET\_REQUEST is made, the miniport driv
 
     If the 802.11 station is performing an explicit scan operation initiated through a set request of [OID\_DOT11\_SCAN\_REQUEST](oid-dot11-scan-request.md), the miniport driver must make the [NDIS\_STATUS\_DOT11\_SCAN\_CONFIRM](ndis-status-dot11-scan-confirm.md) indication before it completes the method request of DOT11\_RESET\_REQUEST.
 
--   Clear its transmit and receive queues. If transmit packets are pending, the miniport driver must call [**NdisMSendNetBufferListsComplete**](ndismsendnetbufferlistscomplete.md) for each packet in the transmit queue. When it calls **NdisMSendNetBufferListsComplete**, the miniport driver must set the **Status** member of each NET\_BUFFER\_LIST structure that is specified by the *NetBufferLists* parameter to NDIS\_STATUS\_RESET\_IN\_PROGRESS.
+-   Clear its transmit and receive queues. If transmit packets are pending, the miniport driver must call [**NdisMSendNetBufferListsComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563668) for each packet in the transmit queue. When it calls **NdisMSendNetBufferListsComplete**, the miniport driver must set the **Status** member of each NET\_BUFFER\_LIST structure that is specified by the *NetBufferLists* parameter to NDIS\_STATUS\_RESET\_IN\_PROGRESS.
 
 -   Retain the current power state of the 802.11 station as specified through the Native 802.11 Operational **msDot11NICPowerState** MIB object. For more information about this MIB object, see [OID\_DOT11\_NIC\_POWER\_STATE](oid-dot11-nic-power-state.md).
 
@@ -136,13 +136,13 @@ The 802.11 station must do the following when it resets the PHY layer:
 
 -   If **bSetDefaultMIB** is set to **TRUE**, set the standard 802.11 MIB objects for the PHY layer to the default values. The station must set the MIB objects pertaining to all of the supported PHY types to their default values.
 
-When the reset operation is complete, the miniport driver must return a [**DOT11\_STATUS\_INDICATION**](dot11-status-indication.md) structure to confirm the reset operation. The miniport driver does this by:
+When the reset operation is complete, the miniport driver must return a [**DOT11\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff548782) structure to confirm the reset operation. The miniport driver does this by:
 
--   Formatting the **InformationBuffer** member of the *OidRequest* parameter as a [**DOT11\_STATUS\_INDICATION**](dot11-status-indication.md) structure.
+-   Formatting the **InformationBuffer** member of the *OidRequest* parameter as a [**DOT11\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff548782) structure.
 
     The miniport driver sets the **uStatusType** member of the DOT11\_STATUS\_INDICATION structure to DOT11\_STATUS\_RESET\_CONFIRM.
 
-    The miniport driver sets the **ndisStatus** member of the [**DOT11\_STATUS\_INDICATION**](dot11-status-indication.md) structure to NDIS\_STATUS\_SUCCESS if the reset operation completed successfully. If the reset operation failed, the miniport driver sets this member to the appropriate NDIS\_STATUS value.
+    The miniport driver sets the **ndisStatus** member of the [**DOT11\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff548782) structure to NDIS\_STATUS\_SUCCESS if the reset operation completed successfully. If the reset operation failed, the miniport driver sets this member to the appropriate NDIS\_STATUS value.
 
 -   Setting the value of the **BytesRead** member of the *OidRequest* parameter to the size of the DOT11\_RESET\_REQUEST structure.
 
@@ -194,6 +194,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_RESET_REQUEST%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_RESET_REQUEST%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

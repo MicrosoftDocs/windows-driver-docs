@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_SWITCH_NIC_RESTORE Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_SWITCH_NIC_RESTORE Network Drivers Starting with Windows Vista
 ---
 
 # OID\_SWITCH\_NIC\_RESTORE
@@ -17,24 +17,24 @@ keywords:
 
 The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID\_SWITCH\_NIC\_RESTORE to notify the extensible switch extension about run-time data that can be restored for an extensible switch port and its network adapter connection.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](ndis-oid-request.md) structure contains a pointer to an [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](ndis-switch-nic-save-state.md) structure. This structure is allocated by the protocol edge of the extensible switch.
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/hh598216) structure. This structure is allocated by the protocol edge of the extensible switch.
 
 Remarks
 -------
 
-When it receives the OID set request of OID\_SWITCH\_NIC\_RESTORE, the extensible switch extension must first determine whether it owns the run-time data. The extension does this by comparing the value of the **ExtensionId** member of the [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](ndis-switch-nic-save-state.md) structure to the GUID value that the extension uses to identify itself.
+When it receives the OID set request of OID\_SWITCH\_NIC\_RESTORE, the extensible switch extension must first determine whether it owns the run-time data. The extension does this by comparing the value of the **ExtensionId** member of the [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/hh598216) structure to the GUID value that the extension uses to identify itself.
 
 If the extension owns the run-time data for an extensible switch port, it restores this data in the following way:
 
 1.  The extension copies the run-time data in the **SaveData** member to extension-allocated storage.
 
-    **Note**  The value of the **PortId** member of the [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](ndis-switch-nic-save-state.md) structure may be different from the **PortId** value at the time that the run-time data was saved. This can occur if run-time data was saved during a Live Migration from one host to another. However, the configuration of the extensible switch port is retained during the Live Migration. This enables the extension to restore the run-time data to the extensible switch port by using the new **PortId** value.
+    **Note**  The value of the **PortId** member of the [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/hh598216) structure may be different from the **PortId** value at the time that the run-time data was saved. This can occur if run-time data was saved during a Live Migration from one host to another. However, the configuration of the extensible switch port is retained during the Live Migration. This enables the extension to restore the run-time data to the extensible switch port by using the new **PortId** value.
 
      
 
 2.  The extension completes the OID set request with NDIS\_STATUS\_SUCCESS.
 
-If the extension does not own the specified run-time data, the extension calls [**NdisFOidRequest**](ndisfoidrequest.md) to forward this OID set request to underlying extensions in the extensible switch driver stack. In this case, the extension must not modify the [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](ndis-switch-nic-save-state.md) structure that is associated with the OID request.
+If the extension does not own the specified run-time data, the extension calls [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830) to forward this OID set request to underlying extensions in the extensible switch driver stack. In this case, the extension must not modify the [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/hh598216) structure that is associated with the OID request.
 
 If the OID\_SWITCH\_NIC\_RESTORE set request is received by the miniport edge of the extensible switch, it completes the OID request with NDIS\_STATUS\_SUCCESS. This notifies the protocol edge of the extensible switch that no extension owns the run-time data.
 
@@ -97,11 +97,11 @@ Requirements
 
 
 ****
-[**NDIS\_OID\_REQUEST**](ndis-oid-request.md)
+[**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)
 
-[**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](ndis-switch-nic-save-state.md)
+[**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/hh598216)
 
-[**NdisFOidRequest**](ndisfoidrequest.md)
+[**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830)
 
  
 
@@ -109,6 +109,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_SWITCH_NIC_RESTORE%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_SWITCH_NIC_RESTORE%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

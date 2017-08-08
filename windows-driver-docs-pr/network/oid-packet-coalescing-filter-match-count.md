@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_PACKET_COALESCING_FILTER_MATCH_COUNT Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_PACKET_COALESCING_FILTER_MATCH_COUNT Network Drivers Starting with Windows Vista
 ---
 
 # OID\_PACKET\_COALESCING\_FILTER\_MATCH\_COUNT
@@ -17,7 +17,7 @@ keywords:
 
 NDIS issues an OID query request of OID\_PACKET\_COALESCING\_FILTER\_MATCH\_COUNT to obtain the number of packets that were cached, or *coalesced*, on the network adapter. The network adapter coalesces received packets if the adapter is enabled for [NDIS packet coalescing](https://msdn.microsoft.com/library/windows/hardware/hh451601) and the packet matches a receive filter.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](ndis-oid-request.md) structure contains a pointer to a caller-allocated ULONG64 variable. Before a successful return from the query request, the driver updates the ULONG64 variable with the number of packets that have matched receive filters on the network adapter.
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to a caller-allocated ULONG64 variable. Before a successful return from the query request, the driver updates the ULONG64 variable with the number of packets that have matched receive filters on the network adapter.
 
 Remarks
 -------
@@ -36,9 +36,9 @@ The miniport driver must not clear the counter after it handles the OID query re
 
 -   The miniport driver handles an OID set request of [OID\_PNP\_SET\_POWER](oid-pnp-set-power.md) to resume to a full-power state of NdisDeviceStateD0.
 
--   NDIS calls the miniport driver's [*MiniportResetEx*](miniportresetex.md) function to reset the underlying network adapter.
+-   NDIS calls the miniport driver's [*MiniportResetEx*](https://msdn.microsoft.com/library/windows/hardware/ff559432) function to reset the underlying network adapter.
 
-For more information about packet coalescing, see [NDIS Packet Coalescing](ndis-receive-filters.md).
+For more information about packet coalescing, see [NDIS Packet Coalescing](https://msdn.microsoft.com/library/windows/hardware/hh205393).
 
 ### Return status codes
 
@@ -48,7 +48,7 @@ The miniport driver returns one of the following status codes for the OID method
 The OID request completed successfully.
 
 <a href="" id="ndis-status-invalid-length"></a>NDIS\_STATUS\_INVALID\_LENGTH  
-The information buffer was too short. The driver sets the **DATA.SET\_INFORMATION.BytesNeeded** member in the [**NDIS\_OID\_REQUEST**](ndis-oid-request.md) structure to the minimum buffer size that is required.
+The information buffer was too short. The driver sets the **DATA.SET\_INFORMATION.BytesNeeded** member in the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.
 
 <a href="" id="ndis-status-failure"></a>NDIS\_STATUS\_FAILURE  
 The request failed for other reasons.
@@ -76,9 +76,9 @@ Requirements
 ## See also
 
 
-[*MiniportResetEx*](miniportresetex.md)
+[*MiniportResetEx*](https://msdn.microsoft.com/library/windows/hardware/ff559432)
 
-[**NDIS\_OID\_REQUEST**](ndis-oid-request.md)
+[**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)
 
 [OID\_PNP\_SET\_POWER](oid-pnp-set-power.md)
 
@@ -90,6 +90,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_PACKET_COALESCING_FILTER_MATCH_COUNT%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_PACKET_COALESCING_FILTER_MATCH_COUNT%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

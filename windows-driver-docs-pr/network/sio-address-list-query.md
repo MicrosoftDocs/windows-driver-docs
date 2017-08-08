@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - SIO_ADDRESS_LIST_QUERY Network Drivers Starting with Windows Vista
+keywords: 
+ -SIO_ADDRESS_LIST_QUERY Network Drivers Starting with Windows Vista
 ---
 
 # SIO\_ADDRESS\_LIST\_QUERY
@@ -17,7 +17,7 @@ keywords:
 
 The SIO\_ADDRESS\_LIST\_QUERY socket I/O control operation allows a WSK application to query the current list of local transport addresses for a socket's address family. This socket I/O control operation applies to all socket types.
 
-To query the current list of local transport addresses for a socket's address family, a WSK application calls the [**WskControlSocket**](wskcontrolsocket.md) function with the following parameters.
+To query the current list of local transport addresses for a socket's address family, a WSK application calls the [**WskControlSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571127) function with the following parameters.
 
 <table>
 <colgroup>
@@ -70,7 +70,7 @@ To query the current list of local transport addresses for a socket's address fa
 
 A WSK application does not specify a pointer to an IRP when calling the **WskControlSocket** function to query the current list of local transport addresses for a socket's address family.
 
-If the call to the **WskControlSocket** function succeeds, the output buffer contains a [**SOCKET\_ADDRESS\_LIST**](socket-address-list.md) structure followed by the SOCKADDR structures for each of the local transport addresses for the socket's address family.
+If the call to the **WskControlSocket** function succeeds, the output buffer contains a [**SOCKET\_ADDRESS\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff570826) structure followed by the SOCKADDR structures for each of the local transport addresses for the socket's address family.
 
 If the **WskControlSocket** function returns STATUS\_BUFFER\_OVERFLOW, the variable that is pointed to by the *OutputSizeReturned* parameter contains the output buffer size, in bytes, that is required to contain the complete list of local transport addresses for the socket's address family.
 
@@ -102,6 +102,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20SIO_ADDRESS_LIST_QUERY%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20SIO_ADDRESS_LIST_QUERY%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -2484,7 +2484,7 @@
 ## [Ntddndis.h](ntddndis-h)
 ### [GUID_NDIS_GEN_PCI_DEVICE_CUSTOM_PROPERTIES](guid-ndis-gen-pci-device-custom-properties)
 ### [NDIS_DECLARE_SWITCH_NET_BUFFER_LIST_CONTEXT_TYPE ](ndis-declare-switch-net-buffer-list-context-type)
-### [NDIS_ISOLATION_PARAMETERS structure](ndis-isolation-parameters)
+### [NDIS_ISOLATION_PARAMETERS](ndis-isolation-parameters-get-first-routing-domain-entry)
 ### [NDIS_MAKE_NET_LUID macro](ndis-make-net-luid)
 ### [NDIS_ROUTING_DOMAIN_ENTRY_GET_FIRST_ISOLATION_ENTRY macro](ndis-routing-domain-entry-get-first-isolation-entry)
 ### [NDIS_ROUTING_DOMAIN_ENTRY_GET_NEXT macro](ndis-routing-domain-entry-get-next)

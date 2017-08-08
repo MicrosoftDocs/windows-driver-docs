@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_DOT11_CIPHER_KEY_MAPPING_KEY Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_DOT11_CIPHER_KEY_MAPPING_KEY Network Drivers Starting with Windows Vista
 ---
 
 # OID\_DOT11\_CIPHER\_KEY\_MAPPING\_KEY
@@ -27,10 +27,10 @@ The 802.11 station uses key-mapping keys for data encryption and decryption betw
 
  
 
-The data type for this OID is the [**DOT11\_BYTE\_ARRAY**](dot11-byte-array.md) structure. The miniport driver sets the members of this structure as follows:
+The data type for this OID is the [**DOT11\_BYTE\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/ff547670) structure. The miniport driver sets the members of this structure as follows:
 
 <a href="" id="header"></a>**Header**  
-The type and size of the DOT11\_BYTE\_ARRAY structure and the revision of the [**DOT11\_CIPHER\_KEY\_MAPPING\_KEY\_VALUE**](dot11-cipher-key-mapping-key-value.md) structures that follows it. This member is formatted as an [**NDIS\_OBJECT\_HEADER**](ndis-object-header.md) structure.
+The type and size of the DOT11\_BYTE\_ARRAY structure and the revision of the [**DOT11\_CIPHER\_KEY\_MAPPING\_KEY\_VALUE**](https://msdn.microsoft.com/library/windows/hardware/ff547675) structures that follows it. This member is formatted as an [**NDIS\_OBJECT\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566588) structure.
 
 The miniport driver must set the members of **Header** to the following values:
 
@@ -43,7 +43,7 @@ This member must be set to DOT11\_CIPHER\_KEY\_MAPPING\_KEY\_VALUE\_BYTE\_ARRAY\
 <a href="" id="size"></a>**Size**  
 This member must be set to sizeof(DOT11\_BYTE\_ARRAY).
 
-For more information about these members, see [**NDIS\_OBJECT\_HEADER**](ndis-object-header.md).
+For more information about these members, see [**NDIS\_OBJECT\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566588).
 
 <a href="" id="unumofbytes"></a>**uNumOfBytes**  
 Number of bytes within the **ucBuffer** array pertaining to the set request.
@@ -54,22 +54,22 @@ Total number of bytes within the **ucBuffer** array. This value must be greater 
 <a href="" id="ucbuffer"></a>**ucBuffer**  
 The list of key-mapping keys.
 
-Each element in the list of key-mapping keys is formatted as a variable-length [**DOT11\_CIPHER\_KEY\_MAPPING\_KEY\_VALUE**](dot11-cipher-key-mapping-key-value.md) structure. There must not be padding between key entries within the **ucBuffer** array.
+Each element in the list of key-mapping keys is formatted as a variable-length [**DOT11\_CIPHER\_KEY\_MAPPING\_KEY\_VALUE**](https://msdn.microsoft.com/library/windows/hardware/ff547675) structure. There must not be padding between key entries within the **ucBuffer** array.
 
 When the OID\_DOT11\_CIPHER\_KEY\_MAPPING\_KEY OID is set, the miniport driver must do the following:
 
--   If the 802.11 station does not support key-mapping keys, fail the set request by returning NDIS\_STATUS\_INVALID\_DATA from its [*MiniportOidRequest*](miniportoidrequest.md) function.
+-   If the 802.11 station does not support key-mapping keys, fail the set request by returning NDIS\_STATUS\_INVALID\_DATA from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
 
--   Follow these guidelines when validating the members of the [**DOT11\_CIPHER\_KEY\_MAPPING\_KEY\_VALUE**](dot11-cipher-key-mapping-key-value.md) structure in the following ways:
-    -   If the 802.11 station does not support the cipher algorithm specified by the **AlgorithmId** member, fail the set request by returning NDIS\_STATUS\_INVALID\_DATA from its [*MiniportOidRequest*](miniportoidrequest.md) function.
-    -   If the **bDelete** member of the [**DOT11\_CIPHER\_KEY\_MAPPING\_KEY\_VALUE**](dot11-cipher-key-mapping-key-value.md) structure is set to **TRUE**, delete the key material for the key referenced by the **PeerMacAddr** and **Direction** members. If the driver had previously deleted the specified key, it must accept the set request by returning NDIS\_STATUS\_SUCCESS from its [*MiniportOidRequest*](miniportoidrequest.md) function.
+-   Follow these guidelines when validating the members of the [**DOT11\_CIPHER\_KEY\_MAPPING\_KEY\_VALUE**](https://msdn.microsoft.com/library/windows/hardware/ff547675) structure in the following ways:
+    -   If the 802.11 station does not support the cipher algorithm specified by the **AlgorithmId** member, fail the set request by returning NDIS\_STATUS\_INVALID\_DATA from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
+    -   If the **bDelete** member of the [**DOT11\_CIPHER\_KEY\_MAPPING\_KEY\_VALUE**](https://msdn.microsoft.com/library/windows/hardware/ff547675) structure is set to **TRUE**, delete the key material for the key referenced by the **PeerMacAddr** and **Direction** members. If the driver had previously deleted the specified key, it must accept the set request by returning NDIS\_STATUS\_SUCCESS from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
 -   When modifying TKIP keys, synchronize the key update with the packet-processing path of the 802.11 station.
 
     For example, the miniport driver must avoid situations in which the packet payload was decrypted using the old cipher key and verified using the new message integrity code (MIC) key.
 
 The 802.11 station must clear its key-mapping keys if the following conditions are met:
 
--   The miniport driver's [*MiniportInitializeEx*](miniportinitializeex.md) function is called.
+-   The miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function is called.
 
 -   A method request of [OID\_DOT11\_RESET\_REQUEST](oid-dot11-reset-request.md) is made to reset the MAC layer of the 802.11 station.
 
@@ -104,6 +104,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_CIPHER_KEY_MAPPING_KEY%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_CIPHER_KEY_MAPPING_KEY%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

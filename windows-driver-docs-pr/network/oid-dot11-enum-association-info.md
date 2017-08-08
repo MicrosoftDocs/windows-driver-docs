@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_DOT11_ENUM_ASSOCIATION_INFO Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_DOT11_ENUM_ASSOCIATION_INFO Network Drivers Starting with Windows Vista
 ---
 
 # OID\_DOT11\_ENUM\_ASSOCIATION\_INFO
@@ -36,7 +36,7 @@ The data type for this OID is the DOT11\_ASSOCIATION\_INFO\_LIST structure.
 This structure includes the following members:
 
 <a href="" id="header"></a>**Header**  
-The type, revision, and size of the DOT11\_ASSOCIATION\_INFO\_LIST structure. This member is formatted as an [**NDIS\_OBJECT\_HEADER**](ndis-object-header.md) structure.
+The type, revision, and size of the DOT11\_ASSOCIATION\_INFO\_LIST structure. This member is formatted as an [**NDIS\_OBJECT\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566588) structure.
 
 The miniport driver must set the members of **Header** to the following values:
 
@@ -49,7 +49,7 @@ This member must be set to DOT11\_ASSOCIATION\_INFO\_LIST\_REVISION\_1.
 <a href="" id="size"></a>**Size**  
 This member must be set to sizeof(DOT11\_ASSOCIATION\_INFO\_LIST).
 
-For more information about these members, see [**NDIS\_OBJECT\_HEADER**](ndis-object-header.md).
+For more information about these members, see [**NDIS\_OBJECT\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566588).
 
 <a href="" id="unumofentries"></a>**uNumOfEntries**  
 Number of entries in the **dot11AssocInfo** array. A zero value for this member indicates an empty list.
@@ -111,17 +111,17 @@ The 802.11 Association ID field from the Association or Reassociation Response f
 If the desired BSS type is **dot11\_BSS\_type\_independent**, the miniport driver must set this member to zero.
 
 <a href="" id="dot11associationstate"></a>**dot11AssociationState**  
-The 802.11 authentication and association state of the peer. This member can have one of the values of the [**DOT11\_ASSOCIATION\_STATE**](dot11-association-state.md) enumeration.
+The 802.11 authentication and association state of the peer. This member can have one of the values of the [**DOT11\_ASSOCIATION\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff547650) enumeration.
 
 If the desired BSS type is **dot11\_BSS\_type\_independent**, the miniport driver must not set this member to **dot11\_assoc\_state\_auth\_assoc**. Since the 802.11 authentication procedure is optional for IBSSs, the miniport driver might set this member to **dot11\_assoc\_state\_unauth\_unassoc** even though it is connected to an IBSS network.
 
 <a href="" id="dot11powermode"></a>**dot11PowerMode**  
-Power management mode of the peer. For more information about this structure, see [**DOT11\_POWER\_MODE**](dot11-power-mode.md).
+Power management mode of the peer. For more information about this structure, see [**DOT11\_POWER\_MODE**](https://msdn.microsoft.com/library/windows/hardware/ff548755).
 
 If the desired BSS type is **dot11\_BSS\_type\_infrastructure**, the miniport driver must set this member to **dot11\_power\_mode\_active**.
 
 <a href="" id="liassociationuptime"></a>**liAssociationUpTime**  
-The timestamp when the 802.11 association procedure successfully completed. The miniport driver calls [**NdisGetCurrentSystemTime**](ndisgetcurrentsystemtime.md) to get the timestamp of the association completion.
+The timestamp when the 802.11 association procedure successfully completed. The miniport driver calls [**NdisGetCurrentSystemTime**](https://msdn.microsoft.com/library/windows/hardware/ff562629) to get the timestamp of the association completion.
 
 If the desired BSS type is **dot11\_BSS\_type\_independent**, the miniport driver must set this member to zero.
 
@@ -141,7 +141,7 @@ If the desired BSS type is **dot11\_BSS\_type\_infrastructure**, the association
 
 If the desired BSS type is **dot11\_BSS\_type\_independent**, the association information list must contain DOT11\_ASSOCIATION\_INFO\_EX data for every peer station in the IBSS with which the 802.11 station has connected.
 
-When OID\_DOT11\_ASSOCIATION\_INFO is queried, the miniport driver must verify that the **InformationBuffer** member of the [*MiniportOidRequest*](miniportoidrequest.md) function's *OidRequest* parameter is large enough to return the entire DOT11\_ASSOCIATION\_INFO\_LIST structure, including all entries in the **dot11AssocInfo** array. The value of the **InformationBufferLength** member of the *OidRequest* parameter determines what the miniport driver must do, as the following list shows:
+When OID\_DOT11\_ASSOCIATION\_INFO is queried, the miniport driver must verify that the **InformationBuffer** member of the [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function's *OidRequest* parameter is large enough to return the entire DOT11\_ASSOCIATION\_INFO\_LIST structure, including all entries in the **dot11AssocInfo** array. The value of the **InformationBufferLength** member of the *OidRequest* parameter determines what the miniport driver must do, as the following list shows:
 
 -   If the value of the **InformationBufferLength** member is less than the length, in bytes, of the entire DOT11\_ASSOCIATION\_INFO\_LIST structure, the miniport driver must do the following:
 
@@ -151,7 +151,7 @@ When OID\_DOT11\_ASSOCIATION\_INFO is queried, the miniport driver must verify t
 
         For the *OidRequest* parameter, set the **BytesWritten** member to zero and the **BytesNeeded** member to the length, in bytes, of the entire DOT11\_ASSOCIATION\_INFO\_LIST structure.
 
-    -   Fail the query request by returning NDIS\_STATUS\_BUFFER\_OVERFLOW from its [*MiniportOidRequest*](miniportoidrequest.md) function.
+    -   Fail the query request by returning NDIS\_STATUS\_BUFFER\_OVERFLOW from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
 
 -   If the value of the **InformationBufferLength** member is greater than or equal to than the length, in bytes, of the entire DOT11\_ASSOCIATION\_INFO\_LIST structure, the miniport driver must do the following to complete a successful query request:
 
@@ -159,7 +159,7 @@ When OID\_DOT11\_ASSOCIATION\_INFO is queried, the miniport driver must verify t
 
     -   For the *OidRequest* parameter, set the **BytesNeeded** member to zero and the **BytesWritten** member to the length, in bytes, of the entire DOT11\_ASSOCIATION\_INFO\_LIST structure. The miniport driver must also copy the entire DOT11\_ASSOCIATION\_INFO\_LIST structure to the **InformationBuffer** member.
 
-    -   Return NDIS\_STATUS\_SUCCESS from its [*MiniportOidRequest*](miniportoidrequest.md) function.
+    -   Return NDIS\_STATUS\_SUCCESS from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
 
 Requirements
 ------------
@@ -192,6 +192,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_ENUM_ASSOCIATION_INFO%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_ENUM_ASSOCIATION_INFO%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

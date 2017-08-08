@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_GEN_NETWORK_LAYER_ADDRESSES Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_GEN_NETWORK_LAYER_ADDRESSES Network Drivers Starting with Windows Vista
 ---
 
 # OID\_GEN\_NETWORK\_LAYER\_ADDRESSES
@@ -37,7 +37,7 @@ Optional.
 Remarks
 -------
 
-A bound instance is the binding between the calling transport and a driver set up by a call to [**NdisOpenAdapterEx**](ndisopenadapterex.md). Transports use TRANSPORT\_ADDRESS and TA\_ADDRESS structures to notify underlying miniport drivers and other layered drivers about the list of network-layer addresses. Miniport drivers and other layered drivers use compatible NETWORK\_ADDRESS\_LIST and NETWORK\_ADDRESS structures, defined as follows, to set the list of network-layer addresses on a bound interface.
+A bound instance is the binding between the calling transport and a driver set up by a call to [**NdisOpenAdapterEx**](https://msdn.microsoft.com/library/windows/hardware/ff563715). Transports use TRANSPORT\_ADDRESS and TA\_ADDRESS structures to notify underlying miniport drivers and other layered drivers about the list of network-layer addresses. Miniport drivers and other layered drivers use compatible NETWORK\_ADDRESS\_LIST and NETWORK\_ADDRESS structures, defined as follows, to set the list of network-layer addresses on a bound interface.
 
 ```
 typedef struct _NETWORK_ADDRESS_LIST {
@@ -89,7 +89,7 @@ Specifies the protocol type that sends this OID and this network-layer address. 
 <a href="" id="address"></a>**Address**  
 Array of bytes that specify this network-layer address. The **AddressLength** member specifies the number of bytes in this array.
 
-The transport can call the [**NdisOidRequest**](ndisoidrequest.md) function and can pass an [**NDIS\_OID\_REQUEST**](ndis-oid-request.md) structure that is filled with the OID\_GEN\_NETWORK\_LAYER\_ADDRESSES code. This call notifies a bound instance of a change in the addresses that are associated with that instance. In this call, the transport also passes the bound instance in the *NdisBindingHandle* parameter. The bound instance is the binding set up between the transport and the underlying miniport driver or other layered driver. For this call, the transport should fill the **InformationBuffer** member of NDIS\_OID\_REQUEST with a pointer to a TRANSPORT\_ADDRESS structure. TRANSPORT\_ADDRESS corresponds to a NETWORK\_ADDRESS\_LIST structure and should contain the list of network-layer addresses.
+The transport can call the [**NdisOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff563710) function and can pass an [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure that is filled with the OID\_GEN\_NETWORK\_LAYER\_ADDRESSES code. This call notifies a bound instance of a change in the addresses that are associated with that instance. In this call, the transport also passes the bound instance in the *NdisBindingHandle* parameter. The bound instance is the binding set up between the transport and the underlying miniport driver or other layered driver. For this call, the transport should fill the **InformationBuffer** member of NDIS\_OID\_REQUEST with a pointer to a TRANSPORT\_ADDRESS structure. TRANSPORT\_ADDRESS corresponds to a NETWORK\_ADDRESS\_LIST structure and should contain the list of network-layer addresses.
 
 Suppose a transport passes addresses through an intermediate driver down to an underlying miniport driver. If the intermediate driver also requires the addresses, it should take note of them before passing them on to the underlying miniport driver. An underlying miniport driver, especially an old driver, can return a status value of NDIS\_STATUS\_NOT\_SUPPORTED or NDIS\_STATUS\_SUCCESS. The underlying miniport driver propagates the status of the operation back up towards the transport. If the intermediate driver must continue receiving address notifications, and if it is necessary, the intermediate driver should change the status to NDIS\_STATUS\_SUCCESS.Otherwise, the transport might interpret NDIS\_STATUS\_NOT\_SUPPORTED as an indication that the underlying miniport driver does not require that the transport issue additional address updates. If NDIS\_STATUS\_SUCCESS is returned, transports are obligated to continue notifying underlying drivers of any change in associated addresses, including addition and deletion of addresses.
 
@@ -114,11 +114,11 @@ Requirements
 ## See also
 
 
-[**NDIS\_OID\_REQUEST**](ndis-oid-request.md)
+[**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)
 
-[**NdisOidRequest**](ndisoidrequest.md)
+[**NdisOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff563710)
 
-[**NdisOpenAdapterEx**](ndisopenadapterex.md)
+[**NdisOpenAdapterEx**](https://msdn.microsoft.com/library/windows/hardware/ff563715)
 
  
 
@@ -126,6 +126,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_GEN_NETWORK_LAYER_ADDRESSES%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_GEN_NETWORK_LAYER_ADDRESSES%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

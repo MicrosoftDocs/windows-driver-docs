@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_WWAN_DEVICE_CAPS Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_WWAN_DEVICE_CAPS Network Drivers Starting with Windows Vista
 ---
 
 # OID\_WWAN\_DEVICE\_CAPS
@@ -19,12 +19,12 @@ OID\_WWAN\_DEVICE\_CAPS returns the capabilities of the MB device, including the
 
 Set requests are not supported.
 
-Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_DEVICE\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff567845) status notification containing a [**NDIS\_WWAN\_DEVICE\_CAPS**](ndis-wwan-device-caps.md) structure that indicates the capabilities of the MB device when completing query requests.
+Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_DEVICE\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff567845) status notification containing a [**NDIS\_WWAN\_DEVICE\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff567907) structure that indicates the capabilities of the MB device when completing query requests.
 
 Remarks
 -------
 
-Starting with Windows 8, the MB driver model has been updated to version 2.0. Windows 8 miniport drivers should set the **Header.Revision** member of the [**NDIS\_WWAN\_DEVICE\_CAPS**](ndis-wwan-device-caps.md) structure to **NDIS\_WWAN\_DEVICE\_CAPS\_REVISION\_2** for *query* requests. Windows 7 miniport drivers should set the **Header.Revision** member of the **NDIS\_WWAN\_DEVICE\_CAPS** structure to **NDIS\_WWAN\_DEVICE\_CAPS\_REVISION\_1** for *query* requests.
+Starting with Windows 8, the MB driver model has been updated to version 2.0. Windows 8 miniport drivers should set the **Header.Revision** member of the [**NDIS\_WWAN\_DEVICE\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff567907) structure to **NDIS\_WWAN\_DEVICE\_CAPS\_REVISION\_2** for *query* requests. Windows 7 miniport drivers should set the **Header.Revision** member of the **NDIS\_WWAN\_DEVICE\_CAPS** structure to **NDIS\_WWAN\_DEVICE\_CAPS\_REVISION\_1** for *query* requests.
 
 For more information about using this OID, see [WWAN Driver Initialization Procedure](https://msdn.microsoft.com/library/windows/hardware/ff557186).
 
@@ -314,7 +314,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_DEVICE\_CAPS**](ndis-wwan-device-caps.md)
+[**NDIS\_WWAN\_DEVICE\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff567907)
 
 [WWAN Driver Initialization Procedure](https://msdn.microsoft.com/library/windows/hardware/ff557186)
 
@@ -324,6 +324,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_WWAN_DEVICE_CAPS%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_WWAN_DEVICE_CAPS%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

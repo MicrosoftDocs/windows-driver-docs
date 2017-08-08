@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_SWITCH_PORT_PROPERTY_UPDATE Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_SWITCH_PORT_PROPERTY_UPDATE Network Drivers Starting with Windows Vista
 ---
 
 # OID\_SWITCH\_PORT\_PROPERTY\_UPDATE
@@ -17,16 +17,16 @@ keywords:
 
 The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID\_SWITCH\_PORT\_PROPERTY\_UPDATE to notify extensible switch extensions about the update of a property for an extensible switch port policy.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](ndis-oid-request.md) structure contains a pointer to a buffer. This buffer contains the following data:
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to a buffer. This buffer contains the following data:
 
--   An [**NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS**](ndis-switch-port-property-parameters.md) structure that specifies the identification and type of a port property.
+-   An [**NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598238) structure that specifies the identification and type of a port property.
 
--   A property buffer that contains the parameters for a port policy. The property buffer contains a structure that is based on the **PropertyType** member of the [**NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS**](ndis-switch-port-property-parameters.md) structure. For example, if the **PropertyType** member is set to **NdisSwitchPortPropertyTypeVlan**, the property buffer contains an [**NDIS\_SWITCH\_PORT\_PROPERTY\_VLAN**](ndis-switch-port-property-vlan.md) structure.
+-   A property buffer that contains the parameters for a port policy. The property buffer contains a structure that is based on the **PropertyType** member of the [**NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598238) structure. For example, if the **PropertyType** member is set to **NdisSwitchPortPropertyTypeVlan**, the property buffer contains an [**NDIS\_SWITCH\_PORT\_PROPERTY\_VLAN**](https://msdn.microsoft.com/library/windows/hardware/hh598243) structure.
 
 Remarks
 -------
 
-A forwarding extension can handle the OID set request of OID\_SWITCH\_PORT\_PROPERTY\_UPDATE. All other types of extensions must call [**NdisFOidRequest**](ndisfoidrequest.md) to forward the OID request to the next extension in the extensible switch driver stack.
+A forwarding extension can handle the OID set request of OID\_SWITCH\_PORT\_PROPERTY\_UPDATE. All other types of extensions must call [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830) to forward the OID request to the next extension in the extensible switch driver stack.
 
 The extension can veto the update of the port property by returning NDIS\_STATUS\_DATA\_NOT\_ACCEPTED for the OID request. For example, if an extension cannot allocate resources to enforce its updated policies on the port, it should veto the update request.
 
@@ -56,7 +56,7 @@ If the forwarding extension completes the OID set request of OID\_SWITCH\_PORT\_
 <tbody>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The length of the information buffer is too small to process the [<strong>NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</strong>](ndis-switch-port-property-parameters.md) structure and the data in the structure's property buffer. The extension sets the <strong>DATA.SET_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](ndis-oid-request.md) structure to the minimum buffer size that is required.</p></td>
+<td><p>The length of the information buffer is too small to process the [<strong>NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh598238) structure and the data in the structure's property buffer. The extension sets the <strong>DATA.SET_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_DATA_NOT_ACCEPTED</p></td>
@@ -122,15 +122,15 @@ Requirements
 
 
 ****
-[**NDIS\_OID\_REQUEST**](ndis-oid-request.md)
+[**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)
 
-[**NDIS\_SWITCH\_PORT\_PROPERTY\_CUSTOM**](ndis-switch-port-property-custom.md)
+[**NDIS\_SWITCH\_PORT\_PROPERTY\_CUSTOM**](https://msdn.microsoft.com/library/windows/hardware/hh598230)
 
-[**NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS**](ndis-switch-port-property-parameters.md)
+[**NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598238)
 
-[**NDIS\_SWITCH\_PORT\_PROPERTY\_VLAN**](ndis-switch-port-property-vlan.md)
+[**NDIS\_SWITCH\_PORT\_PROPERTY\_VLAN**](https://msdn.microsoft.com/library/windows/hardware/hh598243)
 
-[**NdisFOidRequest**](ndisfoidrequest.md)
+[**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830)
 
  
 
@@ -138,6 +138,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_SWITCH_PORT_PROPERTY_UPDATE%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_SWITCH_PORT_PROPERTY_UPDATE%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

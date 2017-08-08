@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_WWAN_HOME_PROVIDER Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_WWAN_HOME_PROVIDER Network Drivers Starting with Windows Vista
 ---
 
 # OID\_WWAN\_HOME\_PROVIDER
@@ -19,7 +19,7 @@ OID\_WWAN\_HOME\_PROVIDER is used to set and retrieve information about the home
 
 Windows 8 supports both *set* and *query* requests. Windows 7 supports only *query* requests.
 
-Miniport drivers must process both *set* and *query* requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request and later sending a [**NDIS\_STATUS\_WWAN\_HOME\_PROVIDER**](ndis-status-wwan-home-provider.md) status notification, for a *query*, or NDIS\_STATUS\_WWAN\_SET\_HOME\_PROVIDER\_COMPLETE status notification, for *set*, containing an [**NDIS\_WWAN\_HOME\_PROVIDER**](ndis-wwan-home-provider.md) structure to return information about the home network provider with the **Provider.ProviderState** member of the NDIS\_WWAN\_HOME\_PROVIDER structure set to WWAN\_PROVIDER\_STATE\_HOME.
+Miniport drivers must process both *set* and *query* requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request and later sending a [**NDIS\_STATUS\_WWAN\_HOME\_PROVIDER**](ndis-status-wwan-home-provider.md) status notification, for a *query*, or NDIS\_STATUS\_WWAN\_SET\_HOME\_PROVIDER\_COMPLETE status notification, for *set*, containing an [**NDIS\_WWAN\_HOME\_PROVIDER**](https://msdn.microsoft.com/library/windows/hardware/ff567909) structure to return information about the home network provider with the **Provider.ProviderState** member of the NDIS\_WWAN\_HOME\_PROVIDER structure set to WWAN\_PROVIDER\_STATE\_HOME.
 
 *Set* operations are only required to be supported by multi-carrier capable devices. The MB service will only *set* the home provider to multi-carrier providers reported by the miniport via OID\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS or OID\_WWAN\_VISIBLE\_PROVIDERS. *Set* operations have an input buffer of NDIS\_WWAN\_SET\_HOME\_PROVIDER.
 
@@ -63,7 +63,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_HOME\_PROVIDER**](ndis-wwan-home-provider.md)
+[**NDIS\_WWAN\_HOME\_PROVIDER**](https://msdn.microsoft.com/library/windows/hardware/ff567909)
 
 [**NDIS\_STATUS\_WWAN\_HOME\_PROVIDER**](ndis-status-wwan-home-provider.md)
 
@@ -75,6 +75,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_WWAN_HOME_PROVIDER%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_WWAN_HOME_PROVIDER%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_GEN_MEDIA_SUPPORTED Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_GEN_MEDIA_SUPPORTED Network Drivers Starting with Windows Vista
 ---
 
 # OID\_GEN\_MEDIA\_SUPPORTED
@@ -89,7 +89,7 @@ ARCNET (878.2). This media type is not supported on Windows Vista and later vers
 ATM. This media type is not supported for NDIS 6.0 and later drivers.
 
 <a href="" id="ndismediumnative802-11"></a>**NdisMediumNative802\_11**  
-Native 802.11. This media type is used by miniport drivers that conform to the Native 802.11 interface. For more information about this interface, see [Native 802.11 Wireless LAN Miniport Drivers](native-802-11-miniport-drivers.md).
+Native 802.11. This media type is used by miniport drivers that conform to the Native 802.11 interface. For more information about this interface, see [Native 802.11 Wireless LAN Miniport Drivers](https://msdn.microsoft.com/library/windows/hardware/ff560648).
 
 <a href="" id="ndismediumwirelesswan"></a>**NdisMediumWirelessWan**  
 Various types of **NdisWireless***Xxx* media. This media type is not available for use beginning with Windows Vista and later versions of Windows.
@@ -124,9 +124,9 @@ For more information about NDIS 5.X WLAN miniport drivers, see [802.11 Wireless 
 
 NDIS 6.0 and later miniport drivers that support the WLAN media transfer packets that appear to the operating system and to NDIS as IEEE 802.11 packets. These NDIS drivers must provide support for WLAN networks as Native 802.11 miniport drivers. Such drivers declare their medium as **NdisMediumNative802\_11**.
 
-For more information about Native 802.11 miniport drivers, see [Native 802.11 Wireless LAN Miniport Drivers](native-802-11-miniport-drivers.md).
+For more information about Native 802.11 miniport drivers, see [Native 802.11 Wireless LAN Miniport Drivers](https://msdn.microsoft.com/library/windows/hardware/ff560648).
 
-If the underlying miniport driver returns **NULL** for this query, or if an experimental media type is used, the driver must indicate receive operations using the [**NdisMIndicateReceiveNetBufferLists**](ndismindicatereceivenetbufferlists.md) function. Any protocol that is bound to such an underlying miniport driver receives all such indications, that is, the protocol driver cannot filter receive operations with [OID\_GEN\_CURRENT\_PACKET\_FILTER](oid-gen-current-packet-filter.md).
+If the underlying miniport driver returns **NULL** for this query, or if an experimental media type is used, the driver must indicate receive operations using the [**NdisMIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563598) function. Any protocol that is bound to such an underlying miniport driver receives all such indications, that is, the protocol driver cannot filter receive operations with [OID\_GEN\_CURRENT\_PACKET\_FILTER](oid-gen-current-packet-filter.md).
 
 Requirements
 ------------
@@ -147,7 +147,7 @@ Requirements
 ## See also
 
 
-[**NdisMIndicateReceiveNetBufferLists**](ndismindicatereceivenetbufferlists.md)
+[**NdisMIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563598)
 
 [OID\_GEN\_CURRENT\_PACKET\_FILTER](oid-gen-current-packet-filter.md)
 
@@ -159,6 +159,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_GEN_MEDIA_SUPPORTED%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_GEN_MEDIA_SUPPORTED%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

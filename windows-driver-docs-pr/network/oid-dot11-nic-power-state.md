@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_DOT11_NIC_POWER_STATE Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_DOT11_NIC_POWER_STATE Network Drivers Starting with Windows Vista
 ---
 
 # OID\_DOT11\_NIC\_POWER\_STATE
@@ -29,15 +29,15 @@ The miniport driver must retain the value of the **msDot11NICPowerState** MIB ob
 
 -   Resets of the 802.11 station through a method request of [OID\_DOT11\_RESET\_REQUEST](oid-dot11-reset-request.md).
 
--   Resets of the miniport driver through a call to the driver's [*MiniportResetEx*](miniportresetex.md) function.
+-   Resets of the miniport driver through a call to the driver's [*MiniportResetEx*](https://msdn.microsoft.com/library/windows/hardware/ff559432) function.
 
--   Calls to the miniport driver's [*MiniportHaltEx*](miniporthaltex.md) or [*MiniportShutdownEx*](miniportshutdownex.md) function. The driver must restore the value of the **msDot11NICPowerState** MIB object and the power state of the current PHY type whenever the driver's [*MiniportInitializeEx*](miniportinitializeex.md) function is called.
+-   Calls to the miniport driver's [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff559388) or [*MiniportShutdownEx*](https://msdn.microsoft.com/library/windows/hardware/ff559449) function. The driver must restore the value of the **msDot11NICPowerState** MIB object and the power state of the current PHY type whenever the driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function is called.
 
 The data type for OID\_DOT11\_NIC\_POWER\_STATE is a BOOLEAN value. A value of **TRUE** indicates that the PHY is turned on. In response to a value of **FALSE**, the miniport driver can either turn off the radio only for the current PHY, or it can turn off the radios for all supported PHYs.
 
 After OID\_DOT11\_NIC\_POWER\_STATE is set, the 802.11 station must do the following:
 
--   If the 802.11 station is performing an explicit scan operation initiated through a set of [OID\_DOT11\_SCAN\_REQUEST](oid-dot11-scan-request.md), fail the set request by returning NDIS\_STATUS\_DOT11\_MEDIA\_IN\_USE from its [*MiniportOidRequest*](miniportoidrequest.md) function.
+-   If the 802.11 station is performing an explicit scan operation initiated through a set of [OID\_DOT11\_SCAN\_REQUEST](oid-dot11-scan-request.md), fail the set request by returning NDIS\_STATUS\_DOT11\_MEDIA\_IN\_USE from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
 
 -   After all PHYs that use the radio are turned off, turn off the radio.
 
@@ -91,6 +91,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_NIC_POWER_STATE%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_NIC_POWER_STATE%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

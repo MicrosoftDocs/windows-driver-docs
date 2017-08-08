@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_DOT11_SUPPORTED_DSSS_CHANNEL_LIST Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_DOT11_SUPPORTED_DSSS_CHANNEL_LIST Network Drivers Starting with Windows Vista
 ---
 
 # OID\_DOT11\_SUPPORTED\_DSSS\_CHANNEL\_LIST
@@ -21,7 +21,7 @@ keywords:
 
 When queried, the OID\_DOT11\_SUPPORTED\_DSSS\_CHANNEL\_LIST OID requests that the miniport driver returns the list of frequency channels that the 802.11 station can operate with.
 
-The data type for this OID is the [**DOT11\_SUPPORTED\_DSSS\_CHANNEL\_LIST**](dot11-supported-dsss-channel-list.md) structure.
+The data type for this OID is the [**DOT11\_SUPPORTED\_DSSS\_CHANNEL\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff548796) structure.
 
 You can use this OID to indicate to the operating system any frequency channels that should be scanned for conformance with performance specifications. The operating system does not use these OIDs during routine operation of the 802.11 station.
 
@@ -35,7 +35,7 @@ The OID MIB object is only valid for the following PHY types:
 
 -   High-throughput (HT) 802.11n PHY when operating in the 2.4-GHz band.
 
-If the current PHY type is not set to **dot11\_phy\_type\_dsss**, **dot11\_phy\_type\_hrdsss**, **dot11\_phy\_type\_erp**, or **dot11\_phy\_type\_ht**, the miniport driver must fail the query request by returning NDIS\_STATUS\_INVALID\_DATA from its [*MiniportOidRequest*](miniportoidrequest.md) function.
+If the current PHY type is not set to **dot11\_phy\_type\_dsss**, **dot11\_phy\_type\_hrdsss**, **dot11\_phy\_type\_erp**, or **dot11\_phy\_type\_ht**, the miniport driver must fail the query request by returning NDIS\_STATUS\_INVALID\_DATA from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
 
 Support for this OID is optional, unless the station reports to the operating system that it supports one or more of the **dot11\_phy\_type\_dsss**, **dot11\_phy\_type\_hrdsss**, and **dot11\_phy\_type\_erp** PHY types. In this case support for this OID is mandatory.
 
@@ -74,6 +74,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_SUPPORTED_DSSS_CHANNEL_LIST%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_SUPPORTED_DSSS_CHANNEL_LIST%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

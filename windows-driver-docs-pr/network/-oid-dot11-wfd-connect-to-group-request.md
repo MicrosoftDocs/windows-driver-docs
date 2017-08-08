@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_DOT11_WFD_CONNECT_TO_GROUP_REQUEST Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_DOT11_WFD_CONNECT_TO_GROUP_REQUEST Network Drivers Starting with Windows Vista
 ---
 
 #  OID\_DOT11\_WFD\_CONNECT\_TO\_GROUP\_REQUEST
@@ -25,7 +25,7 @@ No data is associated with this OID.
 
 If the connection operation completes successfully, the miniport driver must transition to the WFD client operational (OP) state. The miniport driver must remain in the WFD client OP state until either a method request of [OID\_DOT11\_RESET\_REQUEST](oid-dot11-reset-request.md) or set request of [OID\_DOT11\_WFD\_DISCONNECT\_FROM\_GROUP\_REQUEST](oid-dot11-wfd-disconnect-from-group-request.md) is made. For more information about this state, see [Extensible Station Operating States](https://msdn.microsoft.com/library/windows/hardware/ff549883).
 
-When OID\_DOT11\_WFD\_CONNECT\_TO\_GROUP\_REQUEST is set, the miniport driver must fail the request by returning **NDIS\_STATUS\_POWER\_STATE\_INVALID** from its [*MiniportOidRequest*](miniportoidrequest.md) function if any of the following are true:
+When OID\_DOT11\_WFD\_CONNECT\_TO\_GROUP\_REQUEST is set, the miniport driver must fail the request by returning **NDIS\_STATUS\_POWER\_STATE\_INVALID** from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function if any of the following are true:
 
 -   All of the PHYs specified through the ExtSTA *msDot11DesiredPhyList* MIB object are turned off through sets of [OID\_DOT11\_NIC\_POWER\_STATE](oid-dot11-nic-power-state.md). For more information about this MIB object, see [OID\_DOT11\_DESIRED\_PHY\_LIST](oid-dot11-desired-phy-list.md).
 
@@ -37,7 +37,7 @@ When OID\_DOT11\_WFD\_CONNECT\_TO\_GROUP\_REQUEST is set, the miniport driver ca
 
 -   Wait for the connection operation to complete before completing the set request.
 
--   Initiate the connection operation and complete the set request. In this situation, the miniport driver must return **NDIS\_STATUS\_PENDING** from its [*MiniportOidRequest*](miniportoidrequest.md) function after initiating the connection operation. After the reset operation has finished, the miniport driver completes the set request by calling [**NdisMRequestComplete**](ndismoidrequestcomplete.md).
+-   Initiate the connection operation and complete the set request. In this situation, the miniport driver must return **NDIS\_STATUS\_PENDING** from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function after initiating the connection operation. After the reset operation has finished, the miniport driver completes the set request by calling [**NdisMRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563622).
 
 Requirements
 ------------
@@ -74,6 +74,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20%20OID_DOT11_WFD_CONNECT_TO_GROUP_REQUEST%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20%20OID_DOT11_WFD_CONNECT_TO_GROUP_REQUEST%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

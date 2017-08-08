@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_DOT11_MULTICAST_LIST Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_DOT11_MULTICAST_LIST Network Drivers Starting with Windows Vista
 ---
 
 # OID\_DOT11\_MULTICAST\_LIST
@@ -23,9 +23,9 @@ When set, the OID\_DOT11\_MULTICAST\_LIST object identifier (OID) requests that 
 
 When queried, this OID requests that the miniport driver return its list of multicast addresses.
 
-The data type for OID\_DOT11\_MULTICAST\_LIST is the [**DOT11\_MAC\_ADDRESS**](dot11-mac-address.md) structure.
+The data type for OID\_DOT11\_MULTICAST\_LIST is the [**DOT11\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff548681) structure.
 
-The miniport driver can determine the number of media access control (MAC) addresses in the multicast address list from the **InformationBufferLength** member of the [*MiniportOidRequest*](miniportoidrequest.md) function's *OidRequest* parameter:
+The miniport driver can determine the number of media access control (MAC) addresses in the multicast address list from the **InformationBufferLength** member of the [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function's *OidRequest* parameter:
 
 ```
  NumOfMulticastAddresses = (InformationBufferLength / sizeof(DOT11_MAC_ADDRESS)
@@ -37,11 +37,11 @@ For more information about 802.11 packet filters, see [OID\_GEN\_CURRENT\_PACKET
 
 The miniport driver must clear its multicast address list and disable multicast address filtering on the 802.11 station if any of the following occur:
 
--   The miniport driver's [*MiniportInitializeEx*](miniportinitializeex.md) function is called.
+-   The miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function is called.
 
 -   A method request of [OID\_DOT11\_RESET\_REQUEST](oid-dot11-reset-request.md) is made to reset the MAC layer of the 802.11 station.
 
-The miniport driver must retain its current multicast address list following a call to its [*MiniportResetEx*](miniportresetex.md) function. The miniport driver must also enable multicast filtering on the 802.11 station if the multicast address list contains one or more MAC addresses.
+The miniport driver must retain its current multicast address list following a call to its [*MiniportResetEx*](https://msdn.microsoft.com/library/windows/hardware/ff559432) function. The miniport driver must also enable multicast filtering on the 802.11 station if the multicast address list contains one or more MAC addresses.
 
 Requirements
 ------------
@@ -74,6 +74,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_MULTICAST_LIST%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_MULTICAST_LIST%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

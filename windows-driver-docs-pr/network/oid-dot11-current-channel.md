@@ -8,8 +8,8 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-keywords:
- - OID_DOT11_CURRENT_CHANNEL Network Drivers Starting with Windows Vista
+keywords: 
+ -OID_DOT11_CURRENT_CHANNEL Network Drivers Starting with Windows Vista
 ---
 
 # OID\_DOT11\_CURRENT\_CHANNEL
@@ -43,7 +43,7 @@ This OID is valid only for the following PHY types:
 -   High-Throughput (HT) PHY (**dot11\_phy\_type\_ht**).
 -   Very High-Throughput (VHT) PHY (**dot11\_phy\_type\_vht**).
 
-If the current PHY type is not set to one of these valid PHY types, the miniport driver must fail the query request by returning NDIS\_STATUS\_INVALID\_DATA from its [*MiniportOidRequest*](miniportoidrequest.md) function.
+If the current PHY type is not set to one of these valid PHY types, the miniport driver must fail the query request by returning NDIS\_STATUS\_INVALID\_DATA from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
 
 **Note**  Support for OID\_DOT11\_CURRENT\_CHANNEL is mandatory if the NIC supports any of these valid PHY types. For more information about how the miniport driver specifies its list of supported PHY types, see [OID\_DOT11\_SUPPORTED\_PHY\_TYPES](oid-dot11-supported-phy-types.md).
 
@@ -51,19 +51,19 @@ If the current PHY type is not set to one of these valid PHY types, the miniport
 
 If the miniport driver is operating in the Extensible Station (ExtSTA) mode, the miniport driver fails a set request of OID\_DOT11\_CURRENT\_CHANNEL under the following conditions:
 
--   If the NIC is in a powered-off state, the miniport driver must fail the request by returning NDIS\_STATUS\_POWER\_STATE\_INVALID from its [*MiniportOidRequest*](miniportoidrequest.md) function. For more information about power states, see [OID\_DOT11\_NIC\_POWER\_STATE](oid-dot11-nic-power-state.md).
+-   If the NIC is in a powered-off state, the miniport driver must fail the request by returning NDIS\_STATUS\_POWER\_STATE\_INVALID from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function. For more information about power states, see [OID\_DOT11\_NIC\_POWER\_STATE](oid-dot11-nic-power-state.md).
 
--   If the 802.11 station is performing a scan request, the miniport driver can fail the set request by returning NDIS\_STATUS\_DOT11\_MEDIA\_IN\_USE from its [*MiniportOidRequest*](miniportoidrequest.md) function. For more information about scan requests, see [OID\_DOT11\_SCAN\_REQUEST](oid-dot11-scan-request.md).
+-   If the 802.11 station is performing a scan request, the miniport driver can fail the set request by returning NDIS\_STATUS\_DOT11\_MEDIA\_IN\_USE from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function. For more information about scan requests, see [OID\_DOT11\_SCAN\_REQUEST](oid-dot11-scan-request.md).
 
     The miniport driver can fail the set request if the 802.11 station is unable to change channels while performing the scan request.
 
--   If the miniport driver has enabled automatic PHY configuration, it can fail the set request if the 802.11 station manages the PHY-layer configuration. In this situation, the driver returns NDIS\_STATUS\_DOT11\_AUTO\_CONFIG\_ENABLED from its [*MiniportOidRequest*](miniportoidrequest.md) function.
+-   If the miniport driver has enabled automatic PHY configuration, it can fail the set request if the 802.11 station manages the PHY-layer configuration. In this situation, the driver returns NDIS\_STATUS\_DOT11\_AUTO\_CONFIG\_ENABLED from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
 
     For more information about automatic PHY configuration, see [OID\_DOT11\_AUTO\_CONFIG\_ENABLED](oid-dot11-auto-config-enabled.md).
 
 If the miniport driver is operating in Extensible Station (ExtSTA) mode, the current PHY type is determined through the ExtSTA **msDot11CurrentPhyID** MIB object. This MIB object specifies the index of the current PHY type within the 802.11 station's list of supported PHY types. For more information about **msDot11CurrentPhyID**, see [OID\_DOT11\_CURRENT\_PHY\_ID](oid-dot11-current-phy-id.md).
 
-If the miniport driver is in Extensible Access Point (ExtAP) mode, the driver is responsible for implementing regulatory domain support in the NIC. The driver should therefore treat any channel or frequency set by the operating system in OID\_DOT11\_CURRENT\_CHANNEL or [OID\_DOT11\_CURRENT\_FREQUENCY](oid-dot11-current-frequency.md) to be only a suggestion. In response to query calls to these OIDs, the driver should return the actual channel or frequency values that the NIC is using. Whenever the driver adopts a channel or frequency, or it has started an AP, it should call the [**NdisMIndicateStatusEx**](ndismindicatestatusex.md) function to make a [**DOT11\_PHY\_FREQUENCY\_ADOPTED\_PARAMETERS**](dot11-phy-frequency-adopted-parameters.md) indication to the operating system.
+If the miniport driver is in Extensible Access Point (ExtAP) mode, the driver is responsible for implementing regulatory domain support in the NIC. The driver should therefore treat any channel or frequency set by the operating system in OID\_DOT11\_CURRENT\_CHANNEL or [OID\_DOT11\_CURRENT\_FREQUENCY](oid-dot11-current-frequency.md) to be only a suggestion. In response to query calls to these OIDs, the driver should return the actual channel or frequency values that the NIC is using. Whenever the driver adopts a channel or frequency, or it has started an AP, it should call the [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600) function to make a [**DOT11\_PHY\_FREQUENCY\_ADOPTED\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff548735) indication to the operating system.
 
 If the miniport driver supports the functionality of multiple MAC entities through [virtualization](https://msdn.microsoft.com/library/windows/hardware/ff571041), the driver should not return NDIS\_STATUS\_DOT11\_MEDIA\_IN\_USE if the medium is blocked by another MAC.
 
@@ -71,12 +71,12 @@ When the PHY is operating in 802.11n or 802.11ac mode, the miniport driver must 
 
 -   Packet receive indications. For more information, see [Media-Specific OOB Data for Received 802.11 Packets](https://msdn.microsoft.com/library/windows/hardware/ff559169).
 
--   [Native 802.11 status indications](https://msdn.microsoft.com/library/windows/hardware/ff560685) that report channel information, such as [**DOT11\_PHY\_FREQUENCY\_ADOPTED\_PARAMETERS**](dot11-phy-frequency-adopted-parameters.md).
+-   [Native 802.11 status indications](https://msdn.microsoft.com/library/windows/hardware/ff560685) that report channel information, such as [**DOT11\_PHY\_FREQUENCY\_ADOPTED\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff548735).
 -   Query requests of OID\_DOT11\_CURRENT\_CHANNEL.
 
 -   Query requests of [OID\_DOT11\_ENUM\_BSS\_LIST](oid-dot11-enum-bss-list.md).
 
-    In this case, the miniport driver reports the primary channel in the **PhySpecificInfo** member of the [**DOT11\_BSS\_ENTRY**](dot11-bss-entry.md) structure. The driver returns this structure when it completes the query request of OID\_DOT11\_ENUM\_BSS\_LIST.
+    In this case, the miniport driver reports the primary channel in the **PhySpecificInfo** member of the [**DOT11\_BSS\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff547665) structure. The driver returns this structure when it completes the query request of OID\_DOT11\_ENUM\_BSS\_LIST.
 
 For more information about 802.11ac 20/40/80/160/80+80 MHz mode, refer to the [IEEE P802.11ac standard (under development)](http://www.ieee802.org/11/Reports/tgac_update.md).
 
@@ -119,6 +119,6 @@ Requirements
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_CURRENT_CHANNEL%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_DOT11_CURRENT_CHANNEL%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
