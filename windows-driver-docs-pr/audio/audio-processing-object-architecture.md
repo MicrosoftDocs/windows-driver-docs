@@ -122,8 +122,6 @@ This diagram shows the possible locations for stream (SFX), mode (MFX) and endpo
 
 It is possible to configure multiple APO based effects to work with different applications.
 
-**Software Mode Effects and Hardware Endpoint Effects for Render and Capture**
-
 This diagram illustrates how multiple applications can access multiple combinations of stream, mode and endpoint APO effects. All of the APOs are COM based and run in user mode. In this scenario, none of the effects are running in hardware or in kernel mode.
 
 ![diagram showing how multiple applications can access multiple combinations of stream, mode and endpoint apo effects](images/audio-apo-software-effects-1.png)
