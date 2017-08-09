@@ -7,6 +7,8 @@ description: This section describes how to perform basic debugging tasks using t
 This documentation is preliminary and is subject to change.
 </h3>
 
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
 # Debugging Using WinDbg Preview
 
 Welcome to the WinDbg Preview. This next gen debugger is being developed with the debugger community in mind. For information on providing feedback to shape the future of WinDbg , see [Providing feedback](#providingfeedback).
