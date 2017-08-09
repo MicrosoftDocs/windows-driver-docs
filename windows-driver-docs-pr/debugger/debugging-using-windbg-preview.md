@@ -3,11 +3,16 @@ title: Debugging Using WinDbg Preview
 description: This section describes how to perform basic debugging tasks using the WinDbg preview debugger.
 ---
 
+Note: Testing disclaimer headers
+
 <h3 style="background-color:rgb(255,0,0)">
 This documentation is preliminary and is subject to change.
 </h3>
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
+](images/windbgx-prelim-important-note.png)
 
 # Debugging Using WinDbg Preview
 
@@ -18,8 +23,6 @@ For information on what's new in the current release, see [WinDbg Preview - What
 For the latest news, from the debugger dev team, refer to the debugger tools team blog.
 [https://blogs.msdn.microsoft.com/windbg/](https://blogs.msdn.microsoft.com/windbg/)
 
-![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
-](images/windbgx-prelim-important-note.png)
 
 Review these topics to install and configure WinDbg Preview.
 
