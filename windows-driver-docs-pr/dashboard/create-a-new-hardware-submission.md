@@ -31,7 +31,7 @@ For information about creating and digitally signing an **.hckx** file, see the 
 3.  Either drag and drop, or browse to the **.hlkx/.hckx** file that you want to submit. The file will begin to upload.
     ![screenshot that shows the driver name field](images/drivers-name.png)
 
-4. If you wish to test a driver prior to release, you can select the checkbox marked "perform test-signing only". Test-signed drivers follow the same process as regularly signed ones and have similar analytics capabilities. Note that test signed drivers are not distributed through Windows Update, but can be downloaded from the hardware submission site.
+4. If you wish to test a driver prior to release, you can select the checkbox marked "perform test-signing only". Test-signed drivers are similar to regularly signed ones, but do not require HLK testing. Note that test signed drivers are not distributed through Windows Update, but can be downloaded from the hardware submission site.
 
 5.  Select any applicable additional certifications if available. This option allows you to specify which down-level operating system signatures should be included with your driver. Available certifications vary depending on your driver submission package, so there may not be any certifications listed.
 
