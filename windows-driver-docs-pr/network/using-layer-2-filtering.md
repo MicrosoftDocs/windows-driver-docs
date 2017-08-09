@@ -47,13 +47,13 @@ By default, a callout driver can only classify network buffer lists individually
 
 > [!WARNING]
 > However, if a callout driver does set the **FWP_CALLOUT_FLAG_ALLOW_L2_BATCH_CLASSIFY** flag, it cannot use the following functions to modify NET_BUFFER_LISTs.
-
-- [FwpsReferenceNetBufferList0](https://msdn.microsoft.com/library/windows/hardware/ff551206)
-- [FwpsDereferenceNetBufferList0](https://msdn.microsoft.com/library/windows/hardware/ff551159)
-- [FwpsAllocateCloneNetBufferList0](https://msdn.microsoft.com/library/windows/hardware/ff551134)
-- [FwpsFreeCloneNetBufferList0](https://msdn.microsoft.com/library/windows/hardware/ff551170)
-
-With this flag set, **FwpsAllocateCloneNetBufferList0** will always return an **INVALID_PARAMETER** error. This may unexpectedly cause a 3rd party callout driver to fail to manage the reference count of NET\_BUFFER\_LISTs, causing send and receive operations to stop.
+> 
+> - [FwpsReferenceNetBufferList0](https://msdn.microsoft.com/library/windows/hardware/ff551206)
+> - [FwpsDereferenceNetBufferList0](https://msdn.microsoft.com/library/windows/hardware/ff551159)
+> - [FwpsAllocateCloneNetBufferList0](https://msdn.microsoft.com/library/windows/hardware/ff551134)
+> - [FwpsFreeCloneNetBufferList0](https://msdn.microsoft.com/library/windows/hardware/ff551170)
+>
+> With this flag set, **FwpsAllocateCloneNetBufferList0** will always return an **INVALID_PARAMETER** error. This may unexpectedly cause a 3rd party callout driver to fail to manage the reference count of NET\_BUFFER\_LISTs, causing send and receive operations to stop.
 
 ## WFP Layer 2 Layers and Fields
 
