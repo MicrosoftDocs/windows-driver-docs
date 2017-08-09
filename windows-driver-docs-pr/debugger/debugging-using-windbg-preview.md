@@ -3,6 +3,10 @@ title: Debugging Using WinDbg Preview
 description: This section describes how to perform basic debugging tasks using the WinDbg preview debugger.
 ---
 
+<h3 style="background-color:rgb(255,0,0)">
+This documentation is preliminary and is subject to change.
+</h3>
+
 # Debugging Using WinDbg Preview
 
 Welcome to the WinDbg Preview. This next gen debugger is being developed with the debugger community in mind. For information on providing feedback to shape the future of WinDbg , see [Providing feedback](#providingfeedback).
@@ -20,7 +24,7 @@ Review these topics to install and configure WinDbg Preview.
 - [WinDbg Preview - installation](windbg-install-preview.md)
 - [WinDbg Preview – settings and workspaces](windbg-setup-preview.md)
 - [WinDbg Preview – keyboard shortcuts](windbg-keyboard-shortcuts-preview.md)
-- TBD - Will likley remove this [Coexisting with the classic WinDbg debugger](windbg-coexist-preview.md)
+>>> TBD - Will likely remove this unless we have useful tips to share --- [Coexisting with the classic WinDbg debugger](windbg-coexist-preview.md)
 
 These topics describe how to get connected to the environment that you want to debug. 
 
@@ -46,6 +50,8 @@ Your feedback will guide the debugger tool development effort going forward.
 
 
 ![Screen shot of feedback hub showing feedback options including the add new feedback button](images/windbgx-feedback.png)
+
+>>> TBD Need to update update graphic for external feedback experience  and make sure there is a  “This is a bug” check box.
 
 
 ## Features of the next generation debugger

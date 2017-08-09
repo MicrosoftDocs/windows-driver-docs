@@ -9,9 +9,9 @@ ms.technology: windows-devices
 ---
 
 
-<h2 style="background-color:rgb(255,0,0)">
-This documentation is preliminary and is subject to change.(255,0,0)
-</h2>
+<h3 style="background-color:rgb(255,0,0)">
+This documentation is preliminary and is subject to change.
+</h3>
 
 # WinDbg Preview View Menu 
 
@@ -26,7 +26,7 @@ The command Window allows you to enter debugger commands. For more information a
 
 ## Watch 
 
-The watch Window allows you to 
+The watch Window allows you to watch local variables and registers. 
 
 The locals and watch windows are both based off of the data model that is used by the dx command. This means the locals and watch windows will benefit from any NatVis or JavaScript extensions you have loaded, and support full LINQ queries, just like the dx command. 
 
@@ -39,9 +39,9 @@ Registers displays the contents of the processors registers when they are availa
 
 ## Memory
 
-The memory window has highlighting and improved scrolling.
+The memory window .
 
-![Memory menu in debugger](images/windbgx-memory.png)
+![Memory menu in debugger](images/windbgx-memory-preview.png)
 
 ## Stack 
 
@@ -50,7 +50,7 @@ The stack Window also provides highlighting.
 TBD - - For more information, see [Viewing the Call Stack in WinDbg](calls-window.md).
 
 ## Disassembly
-The disassembly window is also improved, the highlight of the current instruction remains where it is when you scroll. 
+The disassembly window highlights the current instruction remains where it is when you scroll. 
 
 
 ## Threads
@@ -66,7 +66,7 @@ The disassembly window is also improved, the highlight of the current instructio
 
 ## Reset Windows
 
-
+Use this function to reset the 
 
 *Additional content pending*
 
