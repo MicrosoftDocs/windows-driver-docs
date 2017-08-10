@@ -53,7 +53,7 @@ You can run Driver Verifier on multiple drivers simultaneously, or on one driver
 <li>Running Driver Verifier could cause the computer to crash.</li>
 <li>You should only run Driver Verifier on computers you are using for testing and debugging.</li>
 <li>You must be in the Administrators group on the computer to use Driver Verifier.</li>
-<li>Driver verifier is not included in Windows 10 S. We recommend testing driver behavior Windows 10 instead.</li>
+<li>Driver verifier is not included in Windows 10 S. We recommend testing driver behavior in Windows 10 instead.</li>
 </ul>
 </div>
 <div>
