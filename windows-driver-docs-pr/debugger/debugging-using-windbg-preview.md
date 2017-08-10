@@ -3,13 +3,21 @@ title: Debugging Using WinDbg Preview
 description: This section describes how to perform basic debugging tasks using the WinDbg preview debugger.
 ---
 
-Note: Testing disclaimer headers
+> Note: Testing disclaimer headers
 
-<h3 style="background-color:rgb(255,0,0)">
-This documentation is preliminary and is subject to change.
-</h3>
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+> [!NOTE]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. 
+>
+
+---
+**Important** Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. 
+
+---
+
 
 ![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
 ](images/windbgx-prelim-important-note.png)
@@ -30,7 +38,7 @@ Review these topics to install and configure WinDbg Preview.
 - [WinDbg Preview – settings and workspaces](windbg-setup-preview.md)
 - [WinDbg Preview – keyboard shortcuts](windbg-keyboard-shortcuts-preview.md)
 
->>> TBD - Will likely remove this unless we have useful tips to share. 
+> TBD - Will likely remove this unless we have useful tips to share. 
 - [Coexisting with the classic WinDbg debugger](windbg-coexist-preview.md)
 
 These topics describe how to get connected to the environment that you want to debug. 
@@ -58,7 +66,8 @@ Your feedback will guide the debugger tool development effort going forward.
 
 ![Screen shot of feedback hub showing feedback options including the add new feedback button](images/windbgx-feedback.png)
 
->>> TBD Need to update update graphic for external feedback experience  and make sure there is a  “This is a bug” check box.
+
+> TBD Need to update update graphic for external feedback experience  and make sure there is a  “This is a bug” check box.
 
 
 ## Features of the next generation debugger
@@ -67,7 +76,7 @@ The WinDbg Preview is the next generation debugger with a contemporary interface
 
 The UI has been completely rewritten using the Microsoft Windows Presentation Foundation (WPF)and Microsoft Extensibility Framework (MEF).  WinDbgNext is built on top of the debugger engine - dbgeng, and is structured to be highly componentized, with very low coupling between components. Components are composed primarily using MEF. The async/await pattern (Task Asynchronous Pattern) is used extensively for asynchronous queries to the debugger with a simple threading model. 
 
->>> TBD I think the debugger user may be interested in a few sentences in the technology design choices that were made.
+> TBD I think the debugger user may be interested in a few sentences in the technology design choices that were made.
 
 ![Main screen in debugger](images/windbgx-main-menu.png)
 

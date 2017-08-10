@@ -38,23 +38,25 @@ In addition to the target connection information, the following settings are sto
 
 Setting | Default | Description
 --- | --- | ---
-FinalBreak |true | Final Break
-SourceDebugging |true  | TBD
-DebugChildProcesses | false| TBD 
-Noninvasive | false  |  TBD
-NoDebugHeap | false  |  TBD
-Verbose | false  | When verbose mode is turned on, some display commands (such as register dumping) produce more detailed output.
-Elevate | false | TBD 
-Restartable | true |  TBD
-UseImplicitCommandLine | false | TBD 
+FinalBreak |true | If true, ignores the final breakpoint (-g command-line option).
+SourceDebugging |true  | Toggles between source or assembly mode.
+DebugChildProcesses | false| (User mode only) If true will debug child processes launched by the target application. (-o command-line option).
+Noninvasive | false  |  Specifies non-invasive attach (-pv command-line option).
+NoDebugHeap | false  |  Specifies the debug heap should not be used (-hd command-line option).
+Verbose | false  | When verbose mode is turned on, some display commands (such as register dumping) produce more detailed output. (-v command-line option).
+Elevate | true |  Must always be set to true.
+Restartable | true |  Must always be set to true.
+UseImplicitCommandLine | false | Use implicit command-line (-cimp command-line option). This starts with an implicit command line instead of an explicit process to run.
+
+For more information about the command line options, see [WinDbg Command-Line Options](windbg-command-line-options.md).
 
 
 #### Symbol Settings 
 
 Setting | Default | Description
 --- | --- | ---
-SymbolOptionsOverride | 0 | TBD 
-ShouldOverrideSymbolOptions | false | TBD 
+SymbolOptionsOverride | 0 | An explicit symbol option mask, in the form of a single hex number.
+ShouldOverrideSymbolOptions | false | If set to *true* override all of the symbol options listed below with the provided  symbol option mask, described  above.
 SymOptExactSymbols | false | This option causes the debugger to perform a strict evaluation of all symbol files.
 SymOptFailCriticalErrors | false | This symbol option causes file access error dialog boxes to be suppressed.
 SymOptIgnoreCvRec | false | This option causes the symbol handler to ignore the CV record in the loaded image header when searching for symbols. 
