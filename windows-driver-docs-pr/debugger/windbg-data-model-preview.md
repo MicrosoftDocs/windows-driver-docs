@@ -2,7 +2,7 @@
 title: WinDbg Preview - Data Model 
 description: This section describes how to work with the data model menu in the WinDbg preview debugger.
 ms.author: windowsdriverdev
-ms.date: 07/28/2017
+ms.date: 08/10/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -11,48 +11,60 @@ ms.technology: windows-devices
 ![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
 ](images/windbgx-prelim-important-note.png)
 
-# WinDbg Preview - Data Model 
+## WinDbg Preview - Data Model 
 
-This section describes how to work with the data model menu in the WinDbg preview debugger.
+This section describes how to work with the data model menu in the WinDbg Preview debugger.
 
 ![Screen shot of data model menu in debugger](images/windbgx-data-model-menu.png)
 
 
-## New Model Query
+### New Model Query
 
-Use the New Model Query dialog to create a new model query using the dx command.
+Use the New Model Query dialog to create a new model query.
 
-For example provide this string to examine the settings debugger objects. 
+For example, specify `Debugger.Sessions` to examine the debugger sessions objects. 
+
+![New data model query dialog box](images/windbgx-data-model-new-model-dialog.png)
+
+For general information about the debugger objects refer to [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md).
+
+Use LINQ queries to dig deeper into the session. This query shows the top 5 processes running the most threads. 
 
 ```
-dx -r1 Debugger.Settings
+Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.ThreadCount),5
 ```
-
-![New data model query dialog box](images/windbgx-new-data-model-dialog.png)
-
-
-## Data Model Explore
-
-Use the data model explore to browse the data model objects.
+![Data model explore window showing process and threads](images/windbgx-data-model-process-threads.png)
 
 
-![Data model explore window](images/windbgx-data-model-explore-window.png)
+### Data Model Explore
+
+Use the data model explore to browse the data model objects. The data model explore window uses the current data object query. 
+
+![Data model explore window showing debug object settings](images/windbgx-data-model-explore-window.png)
 
 
-## Change Query
+### Change Query
 
 Use change query to change the query that is used in data model explore.
 
->>> TBD or something like that -- need to check
+
+### Display Mode
+
+Use display mode to toggle between grid and hierarchy display mode.
+
+Grid mode can be useful to dig down in the objects. For example this query shows the devices in the plug and play device tree grouped by the name of the physical device object's driver.
+
+>>> TBD  - Happy to replace this with a handles or module example, if you provide the query string.
 
 
-## Display Mode
+```
+Debugger.Sessions.First().Devices.DeviceTree.Flatten(n => n.Children).GroupBy(n => n.PhysicalDeviceObject->Driver->DriverName.ToDisplayString()) 
+```
 
-Use display mode to toggle between grid and hierarchy.
+![Data model explore window showing plug and play device tree in a grid view](images/windbgx-data-model-pnp-device.png)
 
+When you click on any underlined item a new tab is opened and a query is run to display that information.
 
-
-*Additional content pending*
 
  
 ## See Also

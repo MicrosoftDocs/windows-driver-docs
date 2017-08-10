@@ -29,7 +29,9 @@ Review these topics to install and configure WinDbg Preview.
 - [WinDbg Preview - installation](windbg-install-preview.md)
 - [WinDbg Preview – settings and workspaces](windbg-setup-preview.md)
 - [WinDbg Preview – keyboard shortcuts](windbg-keyboard-shortcuts-preview.md)
->>> TBD - Will likely remove this unless we have useful tips to share --- [Coexisting with the classic WinDbg debugger](windbg-coexist-preview.md)
+
+>>> TBD - Will likely remove this unless we have useful tips to share. 
+- [Coexisting with the classic WinDbg debugger](windbg-coexist-preview.md)
 
 These topics describe how to get connected to the environment that you want to debug. 
 
@@ -61,8 +63,11 @@ Your feedback will guide the debugger tool development effort going forward.
 
 ## Features of the next generation debugger
 
-The WinDbg Preview is the next generation debugger with a contemporary interface. The UI has been completely rewritten using the Microsoft Windows Presentation Foundation (WPF). For more information, see 
-[XAML Overview (WPF)](https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/xaml-overview-wpf). 
+The WinDbg Preview is the next generation debugger with a contemporary interface. Windows now load asynchronously and can be canceled - When you run another command, WinDbgNext will stop the loading of your locals, watch, or other windows. 
+
+The UI has been completely rewritten using the Microsoft Windows Presentation Foundation (WPF)and Microsoft Extensibility Framework (MEF).  WinDbgNext is built on top of the debugger engine - dbgeng, and is structured to be highly componentized, with very low coupling between components. Components are composed primarily using MEF. The async/await pattern (Task Asynchronous Pattern) is used extensively for asynchronous queries to the debugger with a simple threading model. 
+
+>>> TBD I think the debugger user may be interested in a few sentences in the technology design choices that were made.
 
 ![Main screen in debugger](images/windbgx-main-menu.png)
 
@@ -94,7 +99,7 @@ Because the underling debugger engine is the same, all of the previous debugger 
 
 **Note** You can continue to create a *command* log, using the .logopen command. For more information on that, see [Keeping a Log File in WinDbg](keeping-a-log-file-in-windbg.md).
 
-For more information, see [WinDbg Preview - View](windbg-view-preview.md).
+For more information, see [WinDbg Preview - View menu](windbg-view-preview.md).
 
 ![View menu in debugger](images/windbgx-view-menu.png)
 
@@ -122,7 +127,7 @@ For more information, see [Breakpoints](windbg-breakpoints-preview.md).
 - **Built in data model support** - WinDbg Preview is written with built in data model support and the data model is available through out the debugger.
 - **Model window** - The model window gives you an expandable and browsable version of ‘dx’ and ‘dx -g’, letting you create powerful tables on-top of your NatVis, JavaScript, and LINQ queries. 
 
-For more information, see  [WinDbg Preview - Data Model](windbg-data-model-preview.md).
+For more information, see  [WinDbg Preview - Data model](windbg-data-model-preview.md).
 
 ![Screen shot of data model menu in debugger](images/windbgx-data-model-menu.png)
 
@@ -133,7 +138,7 @@ For more information, see  [WinDbg Preview - Data Model](windbg-data-model-previ
 
 >>> TBD Need to follow up on  and debugging capabilities via command line. 
 
-For more information, see [WinDbg Preview - Scripting Menu](windbg-scripting-preview.md).
+For more information, see [WinDbg Preview - Scripting](windbg-scripting-preview.md).
 
 ![Screen shot of scripting menu in debugger](images/windbgx-scripting-menu.png)
 
