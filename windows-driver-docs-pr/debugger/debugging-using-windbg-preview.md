@@ -94,7 +94,7 @@ Because the underling debugger engine is the same, all of the previous debugger 
 
 **Note** You can continue to create a *command* log, using the .logopen command. For more information on that, see [Keeping a Log File in WinDbg](keeping-a-log-file-in-windbg.md).
 
-For more information, see [WinDbg Preview View Menu ](windbg-view-preview.md).
+For more information, see [WinDbg Preview - View](windbg-view-preview.md).
 
 ![View menu in debugger](images/windbgx-view-menu.png)
 
@@ -122,7 +122,7 @@ For more information, see [Breakpoints](windbg-breakpoints-preview.md).
 - **Built in data model support** - WinDbg Preview is written with built in data model support and the data model is available through out the debugger.
 - **Model window** - The model window gives you an expandable and browsable version of ‘dx’ and ‘dx -g’, letting you create powerful tables on-top of your NatVis, JavaScript, and LINQ queries. 
 
-For more information, see  [WinDbg Preview - Data Model Menu](windbg-data-model-preview.md).
+For more information, see  [WinDbg Preview - Data Model](windbg-data-model-preview.md).
 
 ![Screen shot of data model menu in debugger](images/windbgx-data-model-menu.png)
 
