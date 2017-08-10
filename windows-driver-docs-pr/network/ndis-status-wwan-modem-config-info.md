@@ -48,7 +48,7 @@ Requirements
 ## See also
 
 
-[OID_WWAN_MODEM_CONFIG_INFO](TBD)
+[OID_WWAN_MODEM_CONFIG_INFO](oid-wwan-modem-config-info.md)
 
 [**NDIS_WWAN_MODEM_CONFIG_INFO**](TBD)
  
