@@ -34,7 +34,6 @@ For the latest information about 3D printing in Windows 10, see the following r
 -   [3D Builder app](http://go.microsoft.com/fwlink/p/?LinkId=627556)
 -   [3D Builder user's guide](http://go.microsoft.com/fwlink/p/?LinkId=627557)
 -   [Channel 9 3D printing blog](http://go.microsoft.com/fwlink/p/?LinkId=624519)
--   [Join the 3D Builder community](http://go.microsoft.com/fwlink/p/?LinkId=624526)
 
 Download the [Windows 3D Printing SDK](http://go.microsoft.com/fwlink/p/?LinkId=394375) to start developing drivers for printing to a 3D printer.
 
