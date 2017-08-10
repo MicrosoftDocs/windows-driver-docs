@@ -1462,6 +1462,7 @@
 ### [MB Network Blacklist Operations](mb-network-blacklist-operations.md)
 ### [MB LTE Attach Operations](mb-lte-attach-operations.md)
 ### [MB SAR Platform Support](mb-sar-platform-support.md)
+### [MB eSIM Guide](mb-esim-guide.md)
 ### [MB NDIS Status Notifications](mb-ndis-status-notifications.md)
 #### [NDIS_STATUS_WWAN_AUTH_RESPONSE](ndis-status-wwan-auth-response.md)
 #### [NDIS_STATUS_WWAN_DEVICE_CAPS](ndis-status-wwan-device-caps.md)
