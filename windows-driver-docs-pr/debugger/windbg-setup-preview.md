@@ -32,7 +32,7 @@ The options in workspaces are saved upon closing the debugger or can be manually
 
 Workspaces are automatically loaded when launching from the recent targets list, or can be manually loaded in the file menu. 
 
-In addition to the target connection information, the following settings are storred in the workspaces file.
+In addition to the target connection information, the following settings are stored in the workspaces file.
 
 #### General Settings 
 
@@ -46,7 +46,7 @@ NoDebugHeap | false  |  Specifies the debug heap should not be used (-hd command
 Verbose | false  | When verbose mode is turned on, some display commands (such as register dumping) produce more detailed output. (-v command-line option).
 Elevate | true |  Must always be set to true.
 Restartable | true |  Must always be set to true.
-UseImplicitCommandLine | false | Use implicit command-line (-cimp command-line option). This starts with an implicit command line instead of an explicit process to run.
+UseImplicitCommandLine | false | Use implicit command-line (-cimp command-line option). This starts teh debugger with an implicit command line instead of an explicit process to run.
 
 For more information about the command line options, see [WinDbg Command-Line Options](windbg-command-line-options.md).
 
