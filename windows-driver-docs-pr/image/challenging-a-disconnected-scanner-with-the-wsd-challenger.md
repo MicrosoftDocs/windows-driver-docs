@@ -12,6 +12,7 @@ ms.technology: windows-devices
 
 # Challenging a Disconnected Scanner with the WSD Challenger
 
+**Important** WSD Challenger has been deprecated and will be removed from Windows in 2018.
 
 A web services scanner driver can challenge a disconnected scanner to reestablish communication with the device when the scanner comes back online. To challenge a disconnected scanner, the driver uses the WSD Challenger DLL (*WSDCHNGR.DLL*) that is provided with Windows Vista. The Windows Image Acquisition (WIA) Service also uses *WSDCHNGR.DLL* to actively monitor all WSDScan scanner devices and enable drivers to respond to a challenge following a device communication failure.
 
