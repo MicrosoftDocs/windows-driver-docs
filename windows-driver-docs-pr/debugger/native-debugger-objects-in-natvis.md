@@ -25,7 +25,7 @@ Native debugger objects represent various constructs and behaviors of the debugg
 -   State
 -   Settings
 
-You can use the dx command and LINQ to interact with the debugger objects. For more informaton, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md) and [Using LINQ With the debugger objects](using-linq-with-the-debugger-objects).
+You can use the dx command and LINQ to interact with the debugger objects. For more informaton, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md) and [Using LINQ With the debugger objects](using-linq-with-the-debugger-objects.md).
 
 You can also work with debugger objects using JavaScript. For more information about that see, 
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md).
@@ -104,7 +104,7 @@ MyDog     : {Age = 8 years. Weight = 30 pounds.} [Type: CDog]
 
 [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md)
 
-[Using LINQ With the debugger objects](using-linq-with-the-debugger-objects)
+[Using LINQ With the debugger objects](using-linq-with-the-debugger-objects.md)
 
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
 
