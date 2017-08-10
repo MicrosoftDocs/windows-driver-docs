@@ -28,6 +28,10 @@ For more information on setting the paths, see [Accessing Symbols for Debugging]
 
 Workspaces allows you to save configuration information in the target connection information file.
 
+The options in workspaces are saved upon closing the debugger or can be manually saved using *File* -> *Save Workspace*. 
+
+Workspaces are automatically loaded when launching from the recent targets list, or can be manually loaded in the file menu. 
+
 In addition to the target connection information, the following settings are storred in the workspaces file.
 
 #### General Settings 
@@ -60,7 +64,15 @@ SymOptNoUnqualifiedLoads | false | This symbol option disables the symbol handle
 SymOptAutoPublics | false | This symbol option causes DbgHelp to search the public symbol table in a .pdb file only as a last resort. If any matches are found when searching the private symbol data, the public symbols will not be searched. This improves symbol search speed. 
 SymOptDebug | false | This symbol option turns on noisy symbol loading. This instructs the debugger to display information about its search for symbols.
 
-For more information on symbol options, see [Symbol Options](symbol-options.md)
+For more information on symbol options, see [Symbol Options](symbol-options.md).
+
+
+#### Window layout settings
+
+ Window layout is saved globally and are not saved in the workspaces file. 
+
+
+#### Workspaces XML file
 
 The workspace and target connection information is stored in XML format. 
 
@@ -100,9 +112,8 @@ The following file, shows an example workspaces configuration file.
 
 ```
 
-Note that this file format will continue to evolve as more featured are added to WinDbg Preview.
+Note that this file format will continue to evolve as more featured are added to the WinDbg Preview debugger.
 
-*Additional content pending*
 
  
 ## See Also
