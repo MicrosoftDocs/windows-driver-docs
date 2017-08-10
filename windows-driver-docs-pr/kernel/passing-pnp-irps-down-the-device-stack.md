@@ -19,6 +19,8 @@ ms.technology: windows-devices
 
 The PnP manager uses IRPs to direct drivers to start, stop, and remove devices and to query drivers about their devices. All PnP IRPs have the major function code [**IRP\_MJ\_PNP**](https://msdn.microsoft.com/library/windows/hardware/ff550772), and all PnP drivers must provide a [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine to service this function code. The PnP manager initializes **Irp-&gt;IoStatus.Status** to STATUS\_NOT\_SUPPORTED when it sends an IRP. For more information, see [DispatchPnP Routines](dispatchpnp-routines.md).
 
+For a list of minor PnP IRPs, see [Plug and Play Minor IRPs](plug-and-play-minor-irps.md).
+
 All drivers for a device must have the opportunity to respond to a PnP IRP unless a driver in the stack fails the IRP. (See the following figure.)
 
 ![diagram illustrating passing a plug and play irp down the device stack](images/passpnp.png)

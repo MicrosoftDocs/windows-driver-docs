@@ -33,7 +33,7 @@ Drivers that support power management must conform to certain rules pertaining t
 
 The sections that follow describe how drivers should perform these tasks.
 
- 
+For a list of power management IRPs, see [Power Management Minor IRPs](power-management-minor-irps.md) .
 
  
 
