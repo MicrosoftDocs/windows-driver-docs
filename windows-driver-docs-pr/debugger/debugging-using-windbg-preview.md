@@ -34,16 +34,16 @@ Review these topics to install and configure WinDbg Preview.
 These topics describe how to get connected to the environment that you want to debug. 
 
 - [Starting a user-mode process using WinDbg Preview](windbg-user-mode-preview.md)
-- [Starting a kernel mode session ](windbg-kernel-mode-preview.md)
+- [Starting a kernel mode session using WinDbg Preview](windbg-kernel-mode-preview.md)
 
 These topics describe how to complete common tasks, organized by the menu tabs.
 
-- [File](windbg-file-preview.md)
-- [Home](windbg-home-preview.md)
-- [View](windbg-view-preview.md)
-- [Breakpoints](windbg-breakpoints-preview.md)
-- [Data Model](windbg-data-model-preview.md)
-- [Scripting](windbg-scripting-preview.md)
+- [WinDbg Preview - File menu](windbg-file-preview.md)
+- [WinDbg Preview - Home menu](windbg-home-preview.md)
+- [WinDbg Preview - View menu](windbg-view-preview.md)
+- [WinDbg Preview - Breakpoints](windbg-breakpoints-preview.md)
+- [WinDbg Preview - Data model](windbg-data-model-preview.md)
+- [WinDbg Preview - Scripting](windbg-scripting-preview.md)
 
 
 ## <span id="providingfeedback"></span>Providing feedback
