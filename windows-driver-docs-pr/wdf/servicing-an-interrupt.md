@@ -32,7 +32,7 @@ Servicing an interrupt consists of two, and sometimes three, steps:
 
 When a device generates a hardware interrupt, the framework calls the driver's interrupt service routine (ISR), which framework-based drivers implement as an [*EvtInterruptIsr*](https://msdn.microsoft.com/library/windows/hardware/ff541735) callback function.
 
-The DIRQL, must quickly save interrupt information, such as register contents, that will be lost if another interrupt occurs.
+The [*EvtInterruptIsr*](https://msdn.microsoft.com/library/windows/hardware/ff541735) callback function, which runs at the device's DIRQL, must quickly save interrupt information, such as register contents, that will be lost if another interrupt occurs.
 
 Typically, the [*EvtInterruptIsr*](https://msdn.microsoft.com/library/windows/hardware/ff541735) callback function schedules a deferred procedure call (DPC) to process the saved information later at a lower IRQL (DISPATCH\_LEVEL). Framework-based drivers implement DPC routines as [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) or [*EvtDpcFunc*](https://msdn.microsoft.com/library/windows/hardware/ff541683) callback functions.
 

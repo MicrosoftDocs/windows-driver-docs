@@ -109,7 +109,7 @@ i. If both are specified, Windows will concatenate them into "MANUFACTURER MODEL
 
 ii. If only one of these fails, Windows will use the value from the other key as the queue name.
 
-**The Add Printer Wizard**. The driver name will continue to be the only identifier available to users choosing a driver in the **Add Printer Wizard**. TCP/IP-based devices should implement the [Port Monitor MIB (PWG 5107.1-2005)](http://www.pwg.org/standards.mdl) to support TCP/IP auto-detection. Existing devices that are added to a print class driver using a hardware ID (HWID) mapping may additionally use a device-specific model name.
+**The Add Printer Wizard**. The driver name will continue to be the only identifier available to users choosing a driver in the **Add Printer Wizard**. TCP/IP-based devices should implement the [Port Monitor MIB (PWG 5107.1-2005)](http://www.pwg.org/standards.html) to support TCP/IP auto-detection. Existing devices that are added to a print class driver using a hardware ID (HWID) mapping may additionally use a device-specific model name.
 
 ## Changing Ports and Dealing with Printer Devnodes
 
@@ -182,7 +182,7 @@ c. CompatibleID lines: "Print Class Driver name" = INSTALL\_SECTION,,1284\_CID\_
 ## Related topics
 [How to Implement Compatible IDs in Printing Devices](http://msdn.microsoft.com/library/windows/hardware/gg463313.aspx)  
 [How Windows Ranks Drivers](http://msdn.microsoft.com/library/windows/hardware/ff546225.aspx)  
-[Port Monitor MIB (PWG 5107.1-2005)](http://www.pwg.org/standards.mdl)  
+[Port Monitor MIB (PWG 5107.1-2005)](http://www.pwg.org/standards.html)  
 
 --------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20V4%20Driver%20Setup%20Concepts%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
