@@ -41,7 +41,7 @@ You can run Driver Verifier on multiple drivers simultaneously, or on one driver
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>You don't need to. Driver Verifier (Verifier.exe) is included in every version of Windows, starting with Windows 2000 (in the %windir%\system32 directory). There isn't a separate Driver Verifier download package.</p>
+<td align="left"><p>You don't need to. Driver Verifier (Verifier.exe) is included in every version of Windows after Windows 2000 (in the %windir%\system32 directory), except for Windows 10 S. There isn't a separate Driver Verifier download package.</p>
 <ul>
 <li>Open a <strong>Command Prompt</strong> window (<strong>Run as administrator</strong>).</li>
 <li>Type <strong>verifier</strong> to open the Driver Verifier Manager, or type <strong>verifier /?</strong> to view command line options. See [<strong>Driver Verifier Command Syntax</strong>](verifier-command-line.md) for more information.</li>
@@ -53,6 +53,7 @@ You can run Driver Verifier on multiple drivers simultaneously, or on one driver
 <li>Running Driver Verifier could cause the computer to crash.</li>
 <li>You should only run Driver Verifier on computers you are using for testing and debugging.</li>
 <li>You must be in the Administrators group on the computer to use Driver Verifier.</li>
+<li>Driver verifier is not included in Windows 10 S. We recommend testing driver behavior Windows 10 instead.</li>
 </ul>
 </div>
 <div>
