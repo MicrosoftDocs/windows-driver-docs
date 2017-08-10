@@ -8,11 +8,57 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
+![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
+](images/windbgx-prelim-important-note.png)
+
 # WinDbg Preview - Data Model 
 
 This section describes how to work with the data model menu in the WinDbg preview debugger.
 
-TBD
+![Screen shot of data model menu in debugger](images/windbgx-data-model-menu.png)
+
+
+## New Model Query
+
+Use the New Model Query dialog to create a new model query using the dx command.
+
+For example provide this string to examine the settings debugger objects. 
+
+```
+dx -r1 Debugger.Settings
+```
+
+![New data model query dialog box](images/windbgx-new-data-model-dialog.png)
+
+
+## Data Model Explore
+
+Use the data model explore to browse the data model objects.
+
+
+![Data model explore window](images/windbgx-data-model-explore-window.png)
+
+
+## Change Query
+
+Use change query to change the query that is used in data model explore.
+
+>>> TBD or something like that -- need to check
+
+
+## Display Mode
+
+Use display mode to toggle between grid and hierarchy.
+
+
+
+*Additional content pending*
+
+ 
+## See Also
+
+[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+ 
  
 
  

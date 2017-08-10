@@ -2,18 +2,20 @@
 title: WinDbg Preview - Setup
 description: This section describes how to setup the WinDbg preview debugger.
 ms.author: windowsdriverdev
-ms.date: 07/28/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
+![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
+](images/windbgx-prelim-important-note.png)
+
 # WinDbg Preview - Setup
 
 This section describes how to setup and configure the WinDbg Preview debugger.
 
-![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
-](images/windbgx-prelim-important-note.png)
+
 
 
 ## Settings

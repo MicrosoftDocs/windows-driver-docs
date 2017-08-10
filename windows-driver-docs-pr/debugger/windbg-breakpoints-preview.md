@@ -8,9 +8,18 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
+<h4 style="background-color:rgb(255,0,0)">
+This documentation is preliminary and is subject to change.
+</h4>
+
 # WinDbg Preview Breakpoints
 
 This section describes how to set and clear breakpoints using the WinDbg preview debugger.
+
+Use the breakpoints window to view, set and clear breakpoints.
+
+![ Disassembly window in debugger](images/windbgx-breakpoints-window.png)
+
 
 The process is similar to previous versions of WinDbg. For more information about setting breakpoints, see [Setting Breakpoints in WinDbg](setting-breakpoints-in-windbg.md).
 

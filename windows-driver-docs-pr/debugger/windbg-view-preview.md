@@ -2,16 +2,16 @@
 title: WinDbg Preview - View Menu 
 description: This section describes how work with the view menu.
 ms.author: windowsdriverdev
-ms.date: 07/28/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
 
-<h3 style="background-color:rgb(255,0,0)">
+<h4 style="background-color:rgb(255,0,0)">
 This documentation is preliminary and is subject to change.
-</h3>
+</h4>
 
 # WinDbg Preview View Menu 
 
@@ -28,7 +28,7 @@ The command Window allows you to enter debugger commands. For more information a
 
 The watch Window allows you to watch local variables and registers. 
 
-The locals and watch windows are both based off of the data model that is used by the dx command. This means the locals and watch windows will benefit from any NatVis or JavaScript extensions you have loaded, and support full LINQ queries, just like the dx command. 
+The locals and watch windows are both based off of the data model that is used by the dx command. This means the locals and watch windows will benefit from any NatVis or JavaScript extensions you have loaded, and support full LINQ queries, just like the dx command. For more information about the data model, see [WinDbg Preview - Data Model](windbg-data-model-preview.md).
 
 ## Locals
 The locals window displays information about all of the local variables in the current scope. 
@@ -41,20 +41,12 @@ Registers displays the contents of the processors registers when they are availa
 
 ## Memory
 
-Use the memory window to display memory locations. In addition to providing a memory address, you can use the  Pseudo-Register values such as $scopeip and $eventip to examine memory. Pre-append the @ symbol to use the pseudo-register values in the memory window, for example:
-
-```
-@$scopeip
-```
-
-For more information, see [Pseudo-Register Syntax](pseudo-register-syntax.md)
+Use the memory window to display memory locations. In addition to providing a memory address, you can use the  Pseudo-Register values such as $scopeip and $eventip to examine memory. Pre-append the @ symbol to use the pseudo-register values in the memory window, for example, `@$scopeip`. For more information, see [Pseudo-Register Syntax](pseudo-register-syntax.md)
 
 
 ## Stack 
 
-Use the stack Window to view teh current call stack. The stack window provides basic highlighting. 
-
-TBD - - For more information, see [Viewing the Call Stack in WinDbg](calls-window.md).
+Use the stack Window to view the current call stack. The stack window provides basic highlighting. 
 
 ## Disassembly
 

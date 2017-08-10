@@ -15,13 +15,14 @@ This section describes how to start a user mode session with the WinDbg preview 
 ![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
 ](images/windbgx-prelim-important-note.png)
 
-Select *File*, *Start debugging*, and select either of these three options:
+Select *File*, *Start debugging*, and select either of these four options:
 
 - *Launch Executable* - Starts an executable and attaches to it by browsing for the target.
 - *Launch Executable (advanced)* - Starts an executable and attaches to it using a set of dialog boxes with advanced options.
 - *Attach to a process* - Attaches to an existing process.
+- *Launch App Package* - Launches and attaches to an app package.
 
-All three options are described next.
+All four options are described here.
 
 
 ## Launch Executable
@@ -53,6 +54,12 @@ Use the pull down dialog on the *Attach* button to select *non-invasive attach*.
 
 ![Launch Executable (advanced) dialog box with advanced options](images/windbgx-attach-to-a-process.png)
 
+
+## Launch App Package
+
+Use this option to launch and attach to an app package. Use the search box to locate a specific app or background task.
+
+![Launch App Package Applications tab showing cal in the search box with three apps listed](images/windbgx-launch-app-package.png)
 
 
 ## See Also
