@@ -276,6 +276,8 @@
 ## [JavaScript Debugger Scripting](javascript-debugger-scripting.md)
 ### [JavaScript Debugger Example Scripts](javascript-debugger-example-scripts.md)
 ### [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md)
+## [Native Debugger Objects in NatVis](native-debugger-objects-in-natvis.md)
+## [Using LINQ With the debugger objects](using-linq-with-the-debugger-objects.md)
 ## [Glossary](glossary.md)
 ### [A](a.md)
 ### [B](b.md)
