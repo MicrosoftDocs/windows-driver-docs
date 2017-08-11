@@ -89,7 +89,7 @@ Display command line help.
 <span id="_______dx_-h______"></span><span id="_______DX_-H______"></span> **dx** {**-h**}   
 Displays help for objects available in the debugger.
 
-**Command line usage example**
+## Command line usage example
 
 The .dx settings command can be used to display information about the Debug Settings object. For more information about the debug settings objects, see [**.settings**](-settings--set-debug-settings-.md) .
 ```
@@ -192,7 +192,7 @@ Debugger.State   [State pertaining to the current execution of the debugger (e.g
     UserVariables     [User variables which are maintained by the debugger and can be referenced by a pseudo-register prefix of @$]
 ```
 
-**Working around symbol file limitations with casting**
+## Working around symbol file limitations with casting
 
 When displaying information about various Windows system variables, there are times where not all of the type information is available in the public symbols. This example illustrates this situation.
 
@@ -224,17 +224,13 @@ dx (nt!_EPROCESS *)&nt!PsIdleProcess
 
 The dx command does not support switching expression evaluators with the @@ MASM syntax. For more information about expression evaluators, see [Evaluating Expressions](evaluating-expressions.md).
 
-### Using LINQ With the debugger objects
+## Using LINQ With the debugger objects
 
-LINQ syntax can be used with the debugger objects to search and manipulate data. LINQ is conceptually similar to the Structured Query Language (SQL) that is used to query databases. You can use a number of LINQ methods to search, filter and parse debug data. 
+LINQ syntax can be used with the debugger objects to search and manipulate data. LINQ is conceptually similar to the Structured Query Language (SQL) that is used to query databases. You can use a number of LINQ methods to search, filter and parse debug data. For information us using LINQ with the debugger objects, see [Using LINQ With the debugger objects](using-linq-with-the-debugger-objects.md).
 
-For information us using LINQ with the debugger objects, see [Using LINQ With the debugger objects](using-linq-with-the-debugger-objects.md).
-
-### Using debugger objects with NatVis
+## Using debugger objects with NatVis and JavaScript
 
 For information about using debugger objects with NatVis, see [Native Debugger Objects in NatVis](native-debugger-objects-in-natvis.md).
-
-### Using debugger objects with JavaScript
 
 For information about using debugger objects with JavaScript, see [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md).
 

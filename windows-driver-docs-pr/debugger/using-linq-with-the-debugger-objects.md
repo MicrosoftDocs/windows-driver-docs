@@ -17,7 +17,7 @@ LINQ syntax can be used with the debugger objects to search and manipulate data.
 
 [Getting Started with LINQ in C#](https://msdn.microsoft.com/library/bb397933.aspx)
 
-**Native debugger objects**
+## Native debugger objects
 
 Native debugger objects represent various constructs and behaviors of the debugger environment. Example debugger objects include the following.
 
@@ -33,12 +33,12 @@ Native debugger objects represent various constructs and behaviors of the debugg
 
 You can work with the debugger objects with NatVis. For more information see [Native Debugger Objects in NatVis](native-debugger-objects-in-natvis.md). For information about using debugger objects with JavaScript, see [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md)
 
-**Dx command**
+## Dx command
 
 The examples shown here use the dx command, for more information about working with the dx command, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md).
 
 
-**Function Objects (Lambda Expressions)**
+## Function Objects (Lambda Expressions)
 
 Many of the methods that are used to query data are based on the concept of repeatedly running a user provided function across objects in a collection. To support the ability to query and manipulate data in the debugger, the dx command supports lambda expressions using the equivalent C# syntax. A lambda expression is defined by usage of the =&gt; operator as follows:
 
@@ -63,7 +63,7 @@ kd> dx ((x, y) => (x + y))("Hello", "World")
 ((x, y) => (x + y))("Hello", "World") : HelloWorld
 ```
 
-**Debugger Objects Examples**
+## Debugger Objects Examples
 
 Debugger objects are projected into a namespace rooted at "Debugger". Processes, modules, threads, stacks, stack frames, and local variables are all available to be used in a LINQ query.
 
@@ -110,7 +110,7 @@ Debugger.Sessions.First().Devices.DeviceTree.Flatten(n => n.Children).GroupBy(n 
          ...  
 ```
 
-**Tab Auto Completion**
+## Dx Command Tab Auto Completion
 
 Contextual TAB key auto completion is aware of the LINQ query methods and will work for parameters of lambdas.
 
@@ -158,7 +158,7 @@ Debugger.Sessions.First().Processes.Select(p => new {Name = p.Name, ThreadCount 
         Name             : svchost.exe
 ```
 
-**User Defined Variables**
+## User Defined Variables
 
 A user defined variable can be defined by prefixing the variable name with @$. A user defined variable can be assigned to anything dx can utilize, for example, lambdas, the results of LINQ queries, etc.
 
@@ -199,7 +199,7 @@ kd> dx -r2 @$mySessionVar
         Devices     
 ```
 
-**User Defined Variables - Anonymous Types**
+## User Defined Variables - Anonymous Types
 
 This creation of dynamic objects is done using the C# anonymous type syntax (new { ... }). For more information see about anonymous types, see [Anonymous Types (C# Programming Guide)](https://msdn.microsoft.com/library/bb397696.aspx). This example create an anonymous type with an integer and string value.
 
@@ -210,7 +210,7 @@ new { MyInt = 42, MyString = "Hello World" } :
     MyString         : Hello World
 ```
 
-**System Defined Variables**
+## System Defined Variables
 
 The following system defined variables can be used in any LINQ dx query.
 
@@ -237,7 +237,7 @@ kd> dx -r1 @$curprocess.Threads
      ...
 ```
 
-**Supported LINQ Syntax - Query Methods**
+## Supported LINQ Syntax - Query Methods
 
 Any object which dx defines as iterable (be that a native array, a type which has NatVis written describing it as a container, or a debugger extension object) has a series of LINQ (or LINQ equivalent) methods projected onto it. Those query methods are described below. The signatures of the arguments to the query methods are listed after all of the query methods.
 
@@ -376,7 +376,7 @@ Other Methods
 
  
 
-**Supported LINQ Syntax - String Manipulation**
+## Supported LINQ Syntax - String Manipulation
 
 All string objects have the following methods projected into them, so that they are available for use:
 
@@ -438,7 +438,7 @@ kd> dx (10).ToDisplayString("b")
 (10).ToDisplayString("b")  : 0y1010
 ```
 
-## <span id="Debugging_Plug_and_Play"></span><span id="debugging_plug_and_play"></span><span id="DEBUGGING_PLUG_AND_PLAY"></span>Debugging Plug and Play
+## <span id="Debugging_Plug_and_Play"></span><span id="debugging_plug_and_play"></span><span id="DEBUGGING_PLUG_AND_PLAY"></span>Debugging Plug and Play Example
 
 
 This section illustrates how the built in debugger objects used with LINQ queries, can be used to debug plug and play objects.
