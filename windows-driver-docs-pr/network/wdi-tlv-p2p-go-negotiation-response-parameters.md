@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_P2P_GO_NEGOTIATION_RESPONSE_PARAMETERS is a TLV that contains incoming GO Negotiation Response parameters.
 ms.assetid: 78C9B274-FAF0-4B2E-98A9-865A65105DA1
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

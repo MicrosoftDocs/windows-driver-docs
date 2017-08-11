@@ -4,7 +4,7 @@ author: windows-driver-content
 description: OID_WDI_ABORT_TASK is a property that is sent down to cancel a specific pending task.
 ms.assetid: 0E454DC9-1CED-497F-90A8-7065883BB945
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

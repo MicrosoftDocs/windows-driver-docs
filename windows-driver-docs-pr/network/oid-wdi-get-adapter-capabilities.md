@@ -4,7 +4,7 @@ author: windows-driver-content
 description: OID_WDI_GET_ADAPTER_CAPABILITIES is a read-only property that is issued from the host to the adapter during initialization and requests the adapter’s capabilities.
 ms.assetid: e79deb29-bc0b-472e-b549-86bf71fe66ff
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

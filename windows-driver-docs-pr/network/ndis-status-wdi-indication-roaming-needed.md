@@ -4,7 +4,7 @@ author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_DISASSOCIATION to indicate that the host should try to find a better peer to connect to.
 ms.assetid: 25f920e9-af87-48ad-be64-aa3ebfe2db5f
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

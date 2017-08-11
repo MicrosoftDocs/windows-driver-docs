@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_START_AP_PARAMETERS is a TLV that contains the parameters for OID_WDI_TASK_START_AP.
 ms.assetid: 6791754C-9786-4BE4-9915-7333E4E0AFB8
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

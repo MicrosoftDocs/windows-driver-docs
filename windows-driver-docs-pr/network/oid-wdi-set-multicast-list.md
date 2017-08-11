@@ -4,7 +4,7 @@ author: windows-driver-content
 description: OID_WDI_SET_MULTICAST_LIST specifies the multicast address list for a given port. This command can be set at any time.
 ms.assetid: dee41a49-2be2-4364-877c-b2b3bf29e78d
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

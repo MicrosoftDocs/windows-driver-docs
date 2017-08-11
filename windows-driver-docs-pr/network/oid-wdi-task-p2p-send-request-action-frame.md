@@ -4,7 +4,7 @@ author: windows-driver-content
 description: OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME is issued to the device to send a Wi-Fi Direct Public Action Frame Request.
 ms.assetid: bd8a746e-7d47-44c1-ad05-a452ce00749f
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

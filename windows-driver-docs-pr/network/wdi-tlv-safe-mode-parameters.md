@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_SAFE_MODE_PARAMETERS is an unused TLV.
 ms.assetid: 64B79454-174E-4FAF-9400-5AEF9F1D7400
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

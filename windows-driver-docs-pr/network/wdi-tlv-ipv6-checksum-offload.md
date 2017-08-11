@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_IPV6_CHECKSUM_OFFLOAD is a TLV that contains checksum offload capabilities for IPv6.
 ms.assetid: 878471F5-8118-4D0A-87BC-E44DE7A713DF
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

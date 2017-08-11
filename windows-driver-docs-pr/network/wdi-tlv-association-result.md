@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WDI_TLV_ASSOCIATION_RESULT is a TLV that contains the results of an association.
 ms.assetid: E0059A7A-0D20-403E-9A46-9633396A87C4
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 
