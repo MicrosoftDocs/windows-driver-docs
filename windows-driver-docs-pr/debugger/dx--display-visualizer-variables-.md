@@ -4,7 +4,7 @@ description: The dx command displays a C++ expression using the NatVis extension
 ms.assetid: 93047911-5195-4FB9-A015-5349084EDC0A
 keywords: ["dx (Display Debugger Object Model Expression) Windows Debugging"]
 ms.author: windowsdriverdev
-ms.date: 05/23/2017
+ms.date: 08/10/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -241,7 +241,8 @@ For information about using debugger objects with JavaScript, see [Native Debugg
 
 [Native Debugger Objects in NatVis](native-debugger-objects-in-natvis.md)
 
- 
+[Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
+
 ---
  
 

@@ -1,7 +1,7 @@
 ---
 title: Using LINQ With the debugger objects
 description: Using LINQ With the debugger objects. LINQ syntax can be used with the debugger objects to search and manipulate data.
-keywords: ["dx (Display Debugger Object Model Expression) Windows Debugging"]
+keywords: ["Using LINQ With the debugger objects"]
 ms.author: windowsdriverdev
 ms.date: 08/10/2017
 ms.topic: article
@@ -199,7 +199,7 @@ kd> dx -r2 @$mySessionVar
         Devices     
 ```
 
-## User Defined Variables - Anonymous Types
+**User Defined Variables - Anonymous Types**
 
 This creation of dynamic objects is done using the C# anonymous type syntax (new { ... }). For more information see about anonymous types, see [Anonymous Types (C# Programming Guide)](https://msdn.microsoft.com/library/bb397696.aspx). This example create an anonymous type with an integer and string value.
 
