@@ -18,7 +18,7 @@ Device Guard is one of Windows security features that is a combination of enterp
 
 Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
 
-Device Guard and Credential Guard are optional features, that when implemented and enabled, reduce the available attack surface by requiring additional protectors.
+Device Guard and Credential Guard are optional features, that when implemented and enabled, reduce the exposed attack surface to malware by requiring additional protectors be enabled on the device.
 
 ## Related resources
 

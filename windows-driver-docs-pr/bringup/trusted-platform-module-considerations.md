@@ -14,7 +14,9 @@ ms.technology: windows-devices
 
 New devices with TPM 2.0 should use SHA256 for all PCR banks. This may not be compatible with downlevel operating systems.
 
-TPM 2.0 is **not** usable in legacy boot mode (with CSM enabled) for anything besides BitLocker.  There is no legacy BIOS interface to TPM 2.0. If installing Windows 7 on current hardware, you should install in x64 UEFI mode so that you can receive some benefit from the TPM 2.0 (BitLocker only). After you upgrade to later operating system (Win8 and later), depending on the firmware installed on the system, you may have the ability to enable Secure Boot. If you install a Windows operating system in legacy BIOS mode on existing hardware, you cannot receive the full benefits of TPM 2.0 or Secure Boot.
+There is no legacy BIOS interface to TPM 2.0. Though in these scenarios TPM 2.0 can be utilized by Bitlocker.  If installing Windows 7 on current hardware, you should install in x64 UEFI boot mode (though you will still need a CSM due to Windows 7 boot requirements) so that you can receive some benefit from TPM 2.0.  
+
+After you upgrade to later operating system (Win8 and later), depending on the firmware installed on the system, you may have the ability to enable Secure Boot. If you install a Windows operating system in legacy BIOS mode on existing hardware, you cannot receive the full benefits of TPM 2.0 or Secure Boot.
 
 ## Related resources
 

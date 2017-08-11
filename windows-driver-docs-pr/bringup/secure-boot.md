@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Secure Boot
 
 
-Secure Boot is a security standard developed by members of the PC industry to help make sure that your PC boots using only software that is trusted by the PC manufacturer.
+Secure Boot is a process to ensure that your PC boots using only software that is trusted by the PC manufacturer. Secure Boot is not exclusive to Microsoft and is defined in UEFI specification documents, though Microsoft does have specific requirements defined in the links included below. 
 
 When the PC starts, the firmware checks the signature of each piece of boot software, including firmware drivers (Option ROMs) and the operating system. If the signatures are good, the PC boots, and the firmware gives control to the operating system.
 
