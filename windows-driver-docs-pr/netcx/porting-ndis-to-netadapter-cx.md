@@ -1,4 +1,4 @@
-# Porting NDIS miniport drivers to NetAdapter class extension
+# Porting NDIS miniport drivers to the NetAdapter class extension
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
