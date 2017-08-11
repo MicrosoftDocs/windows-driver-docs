@@ -12,6 +12,7 @@ ms.technology: windows-devices
 
 # Macro Example to Filter Error Codes
 
+**Important** WSD Challenger has been deprecated and will be removed from Windows in 2018.
 
 The following macro example filters communication failure error codes.
 
@@ -26,8 +27,6 @@ The following macro example filters communication failure error codes.
     ((HRESULT_FROM_WIN32(ERROR_TIMEOUT)) == hr) || \
     ((HRESULT_FROM_WIN32(ERROR_WINHTTP_NAME_NOT_RESOLVED)) == hr))
 ```
-
- 
 
  
 
