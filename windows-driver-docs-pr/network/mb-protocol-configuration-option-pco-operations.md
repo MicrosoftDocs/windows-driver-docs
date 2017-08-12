@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 ## Overview
 
-Mobile Operators such as Verizon have requested that Windows manage the cellular data connection based on operator specific Protocol Configuration Option (PCO) elements that are received from the network.
+Some Mobile Operators, such as Verizon, have requested that Windows manage cellular data connections based on operator specific Protocol Configuration Option (PCO) elements that are received from the network.
 
 The NDIS definitions for PCO values are meant to be generic, for potentially receiving full PCO values from the modem and network in the future. As of Windows 10, version 1709, however, modems are only able to pass up operator specific PCO elements to the OS. This topic defines the behavior of the current operator specific-only PCO implementation.
 
