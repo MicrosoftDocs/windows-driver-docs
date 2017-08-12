@@ -55,12 +55,65 @@ The following diagram illustrates the modem’s reset flow when one of these sce
 
 ## NDIS interface to the modem
 
-For querying the status and payload of a PCO value the modem received from the operator network, see [OID_WWAN_PCO](oid-wwan-pco.md).
+For querying the status and payload of a PCO value the modem received from the operator network, see [OID_WWAN_PCO](oid-wwan-pco.md). **OID_WWAN_PCO** uses the [**NDIS_WWAN_PCO_STATUS**](TBD) structure, which in turn contains a [**WWAN_PCO_VALUE**](TBD) structure representing the PCO information payload from the network.
 
 For the status notification sent by a modem miniport driver to inform the OS of the current PCO state in the modem, see [NDIS_STATUS_WWAN_PCO_STATUS](ndis-status-wwan-pco-status.md).
 
 ## MB CID to the modem
 
+UUID = **MBB_UUID_BASIC_CONNECT_EXT_CONSTANT**
 
+UUID Value = **3d01dcc5-fef5-4d05-9d3a-bef7058e9aaf**
+
+The following CIDs are defined for PCO:
+
+| CID | Minimum OS Version |
+| --- | --- |
+| MBIM_CID_PCO | Windows 10, version 1709 |
+
+### MBIM_CID_PCO
+
+This command is used to query the PCO data cached in modem from the mobile operator network.
+
+#### Query
+
+The InformationBuffer contains an **MBIM_PCO_VALUE** in which the only relevant field is *SessionId*. *SessionId* is reserved for future use and will always be 0 in Windows 10, version 1709. The *SessionId* in a query indicates which IP data stream’s PCO value is to be returned by the function. 
+
+#### Set
+
+Not applicable.
+
+#### Unsolicited Event
+
+Unsolicited events contain an MBIM_PCO_VALUE and are sent when a new PCO value has arrived on an activated connection.
+
+#### Parameters
+
+|  | Set | Query | Notification |
+| --- | --- | --- | --- |
+| Command | Not applicable | MBIM_PCO_VALUE | Not applicable |
+| Response | Not applicable | MBIM_PCO_VALUE | MBIM_PCO_VALUE |
+
+#### Data Structures
+
+#### MBIM_PCO_TYPE
+
+| Type | Value | Description |
+| --- | --- | --- |
+| MBIMPcoTypeComplete | 0 | Specifies that the complete PCO structure will be passed up as received from the network and the header realistically reflects the protocol in octet 3 of the PCO structure, defined in the 3GPP TS24.008 spec. |
+| MBIMPcoTypePartial | 1 | Specifies that the modem will only be passing up a subset of PCO structures that it received from the network. The header matches the PCO structure defined in the 3GPP TS24.008 spec, but the “Configuration protocol” of octet 3 may not be valid. |
+
+#### MBIM_PCO_VALUE
+
+| Offset | Size | Field | Type | Description |
+| --- | --- | --- | --- | --- |
+| 0 | 4 | SessionId | UINT32 | The SessionId in a query indicates which IP data stream’s PCO value is to be returned by the function. |
+| 4 | 4 | PcoDataSize | UINT32 | The length of PcoData, from 0 to 256. This value will be 0 in a query. |
+| 8 | 4 | PcoDataType | UINT32 | The PCO data type. For more info, see [MBIM_PCO_TYPE](#mbimpcotype). |
+| 12 | | PcoDataBuffer | DATABUFFER | The PCO structure from the 3GPP TS24.008 spec. |
+
+#### Status Codes
+
+This CID only uses Generic Status Codes.
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Slicer%20settings%20%20RELEASE:%20%289/2/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

@@ -171,7 +171,7 @@ The following CIDs are defined for **UUID_MS_BasicConnect**:
 | MBIM_CID_MS_DEVICE_SLOT_MAPPINGS | 7 | Windows 10, version 1703 |
 | MBIM_CID_MS_SLOT_INFO_STATUS | 8 | Windows 10, version 1703 |
 
-All offsets in the CID sections below are calculated from the beginning of the InformationBuffer MBIM_COMMAND_MSG.
+All offsets in the following CID sections are calculated from the beginning of the InformationBuffer MBIM_COMMAND_MSG.
 
 ### MBIM_CID_MS_SYS_CAPS
 
