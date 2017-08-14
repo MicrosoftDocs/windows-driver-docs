@@ -1461,7 +1461,7 @@
 ### [MB Provisioned Context Operations](mb-provisioned-context-operations.md)
 ### [MB Network Blacklist Operations](mb-network-blacklist-operations.md)
 ### [MB LTE Attach Operations](mb-lte-attach-operations.md)
-### [MB Protocol Configuration Option (PCO) Operations](mb-protocol-configuration-option-pco-operations.md)
+### [MB Protocol Configuration Operations (PCO)](mb-protocol-configuration-operations--pco-.md)
 ### [MB SAR Platform Support](mb-sar-platform-support.md)
 ### [MB eSIM Guide](mb-esim-guide.md)
 ### [MB NDIS Status Notifications](mb-ndis-status-notifications.md)

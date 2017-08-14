@@ -1,9 +1,9 @@
 ---
-title: MB Protocol Configuration Option (PCO) Operations
-description: MB Protocol Configuration Option (PCO) Operations
+title: MB Protocol Configuration Operations (PCO)
+description: MB Protocol Configuration Operations (PCO)
 ms.assetid: 682C507C-5B2C-45E3-99D2-EEC68F8FC715
 keywords:
-- MB PCO operations, Mobile Broadband PCO operations, MB Protocol Configuration Option, Mobile Broadband Protocol Configuration Option, WDK network drivers, MBB miniport drivers
+- MB PCO operations, Mobile Broadband PCO operations, MB Protocol Configuration Operations, Mobile Broadband Protocol Configuration Operations, WDK network drivers, MBB miniport drivers
 ms.author: windowsdriverdev
 ms.date: 08/10/2017
 ms.topic: article
@@ -11,13 +11,13 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# MB Protocol Configuration Option (PCO) Operations
+# MB Protocol Configuration Operations (PCO)
 
 ## Overview
 
-Some Mobile Operators, such as Verizon, have requested that Windows manage cellular data connections based on operator specific Protocol Configuration Option (PCO) elements that are received from the network.
+Some Mobile Operators, such as Verizon, have requested that Windows manage cellular data connections based on operator specific Protocol Configuration Operation (PCO) elements that are received from the network.
 
-The NDIS definitions for PCO values are meant to be generic, for potentially receiving full PCO values from the modem and network in the future. As of Windows 10, version 1709, however, modems are only able to pass up operator specific PCO elements to the OS. This topic defines the behavior of the current operator specific-only PCO implementation.
+The NDIS definitions for PCO values are meant to be generic, for potentially receiving full PCO values from the modem and network in the future. As of Windows 10, version 1709, however, some modems are only able to pass up operator specific PCO elements to the OS. This topic defines the behavior of the current operator specific-only PCO implementation.
 
 There are three scenarios where the PCO value will be passed to the host:
 1.	When a new PCO value has arrived on an activated connection
@@ -42,7 +42,7 @@ When Connected Standby is enabled, the modem shouldn’t notify the OS when it r
 
 ## Resetting the modem based on PCO values
 
-Based on a requirement from VZW, the modem will be reset in the following scenarios:
+Based on PCO values received from the network, the modem will be reset in the following scenarios:
 
 1.	The user completed self-activation after receiving PCO = 5 from the network. A new PCO value (3, 0 or anything Mobile Operator App can recognize) will be sent to the OS and the OS will pass it to Mobile Operator App.
 2.	The user added more credit to his or her account after receiving PCO = 3. A new PCO value (0, or anything Mobile Operator App can recognize) will be sent to the OS and the OS will pass it to Mobile Operator App.
