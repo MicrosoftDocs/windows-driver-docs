@@ -49,7 +49,7 @@ Based on PCO values received from the network, the modem will be reset in the fo
 
 The host is not aware of the modem being reset, so the activated connections from the host will not be deactivated and the modem should automatically re-establish connection with those PDN after resetting. Upon establishing connection and receiving a new incoming PCO value from the network, the modem will provide an unsolicited [NDIS_STATUS_WWAN_PCO_STATUS](ndis-status-wwan-pco-status.md) notification to the host.
 
-The following diagram illustrates the modem’s reset flow when one of these scenarios occurs:
+The following diagram illustrates the modem’s reset flow when one of these scenarios occurs, with Verizon Wireless as the example MO:
 
 ![MB modem reset based on PCO values](images/mb_PCO_modem_reset.png "MB modem reset based on PCO values")
 
