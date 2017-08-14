@@ -27,6 +27,8 @@ The following sections describe how to use *WSDScan.sys* to install a WIA driver
 
 [Challenging a Disconnected Scanner with WSD](challenging-a-disconnected-scanner-with-the-wsd-challenger.md)
 
+**Important** WSD Challenger has been deprecated and will be removed from Windows in 2018.
+
 Although WDP for scanners is well suited for a home office or small office environment, it cannot conveniently handle more than a few users. In Windows Server 2008 R2, the operating system supports WSD Distributed Scan Management. This feature augments WDP with a new WSD protocol to enable IT administrators to provide scanning services to large organizations. A web services scanner device that supports WSD Distributed Scan Management must implement the following two web services protocols:
 
 -   The WSD Enterprise Scan Web Service (EWS) protocol, which is a subset of WDP.
