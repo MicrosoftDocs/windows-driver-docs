@@ -61,9 +61,9 @@ For the status notification sent by a modem miniport driver to inform the OS of 
 
 ## MB CID to the modem
 
-UUID = **MBB_UUID_BASIC_CONNECT_EXT_CONSTANT**
+Service = **MBB_UUID_BASIC_CONNECT_EXT_CONSTANT**
 
-UUID Value = **3d01dcc5-fef5-4d05-9d3a-bef7058e9aaf**
+Service UUID = **3d01dcc5-fef5-4d05-9d3a-bef7058e9aaf**
 
 The following CIDs are defined for PCO:
 
@@ -96,14 +96,14 @@ Unsolicited events contain an MBIM_PCO_VALUE and are sent when a new PCO value h
 
 #### Data Structures
 
-#### MBIM_PCO_TYPE
+##### MBIM_PCO_TYPE
 
 | Type | Value | Description |
 | --- | --- | --- |
 | MBIMPcoTypeComplete | 0 | Specifies that the complete PCO structure will be passed up as received from the network and the header realistically reflects the protocol in octet 3 of the PCO structure, defined in the 3GPP TS24.008 spec. |
 | MBIMPcoTypePartial | 1 | Specifies that the modem will only be passing up a subset of PCO structures that it received from the network. The header matches the PCO structure defined in the 3GPP TS24.008 spec, but the “Configuration protocol” of octet 3 may not be valid. |
 
-#### MBIM_PCO_VALUE
+##### MBIM_PCO_VALUE
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |

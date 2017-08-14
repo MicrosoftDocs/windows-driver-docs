@@ -1463,6 +1463,7 @@
 ### [MB LTE Attach Operations](mb-lte-attach-operations.md)
 ### [MB Protocol Configuration Operations (PCO)](mb-protocol-configuration-operations--pco-.md)
 ### [MB SAR Platform Support](mb-sar-platform-support.md)
+### [MB base stations information query support](mb-base-stations-information-query-support.md)
 ### [MB eSIM Guide](mb-esim-guide.md)
 ### [MB NDIS Status Notifications](mb-ndis-status-notifications.md)
 #### [NDIS_STATUS_WWAN_AUTH_RESPONSE](ndis-status-wwan-auth-response.md)

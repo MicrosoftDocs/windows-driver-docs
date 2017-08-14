@@ -66,6 +66,8 @@ This section includes the following topics:
 
 [MB SAR Platform Support](mb-sar-platform-support.md)
 
+[MB base stations information query support](mb-base-stations-information-query-support.md)
+
 [Supplemental MB Documentation](supplemental-mb-documentation.md)
 
 ## Related topics
