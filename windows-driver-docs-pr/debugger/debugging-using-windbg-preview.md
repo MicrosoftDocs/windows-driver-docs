@@ -13,7 +13,7 @@ Welcome to the WinDbg Preview. This next gen debugger is being developed with th
 
 For information on what's new in the current release, see [WinDbg Preview - What's New](windbg-what-is-new-preview.md).
 
-For the latest news, from the debugger dev team, refer to the debugger tools team blog.
+For the latest news, tips, and tricks from the debugger dev team, refer to the debugger tools team blog.
 [https://blogs.msdn.microsoft.com/windbg/](https://blogs.msdn.microsoft.com/windbg/)
 
 
