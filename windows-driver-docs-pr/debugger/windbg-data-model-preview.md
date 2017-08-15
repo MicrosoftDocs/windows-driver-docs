@@ -21,7 +21,7 @@ This section describes how to work with the data model menu in the WinDbg Previe
 
 ### New Model Query
 
-Use the New Model Query dialog to create a new model query.
+Use the New Model Query dialog to create a new model query. You can put anything here you'd put into a normal `dx` command
 
 For example, specify `Debugger.Sessions` to examine the debugger sessions objects. 
 
@@ -37,21 +37,21 @@ Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount
 ![Data model explore window showing process and threads](images/windbgx-data-model-process-threads.png)
 
 
-### Data Model Explore
+### Data Model Explorer
 
-Use the data model explore to browse the data model objects. The data model explore window uses the current data object query. 
+Use the data model explorer to quickly browse every data model object in the `Debugger` namespace.
 
-![Data model explore window showing debug object settings](images/windbgx-data-model-explore-window.png)
+![Data model explorer window showing debug object sessions](images/windbgx-data-model-explore-window.png)
 
 
 ### Change Query
 
-Use change query to change the query that is used in data model explore.
+Use change query to change the query that is used in the active data model window.
 
 
 ### Display Mode
 
-Use display mode to toggle between grid and hierarchy display mode.
+Use display mode to toggle between grid and hierarchy display mode. You can right-click column headers to hide or show more columns.
 
 Grid mode can be useful to dig down in the objects. For example this query shows the devices in the plug and play device tree grouped by the name of the physical device object's driver.
 
