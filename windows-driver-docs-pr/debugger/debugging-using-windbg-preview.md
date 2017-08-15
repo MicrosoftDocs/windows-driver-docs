@@ -3,24 +3,9 @@ title: Debugging Using WinDbg Preview
 description: This section describes how to perform basic debugging tasks using the WinDbg preview debugger.
 ---
 
-> Note: Testing disclaimer headers
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
->
-
-> [!NOTE]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. 
->
-
----
-**Important** Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. 
-
----
-
-
 ![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
 ](images/windbgx-prelim-important-note.png)
+
 
 # Debugging Using WinDbg Preview
 
@@ -66,7 +51,6 @@ Your feedback will guide the debugger tool development effort going forward.
 
 ![Screen shot of feedback hub showing feedback options including the add new feedback button](images/windbgx-feedback.png)
 
-
 > TBD Need to update update graphic for external feedback experience  and make sure there is a  “This is a bug” check box.
 
 
@@ -76,7 +60,7 @@ The WinDbg Preview is the next generation debugger with a contemporary interface
 
 The UI has been completely rewritten using the Microsoft Windows Presentation Foundation (WPF)and Microsoft Extensibility Framework (MEF).  WinDbgNext is built on top of the debugger engine - dbgeng, and is structured to be highly componentized, with very low coupling between components. Components are composed primarily using MEF. The async/await pattern (Task Asynchronous Pattern) is used extensively for asynchronous queries to the debugger with a simple threading model. 
 
-> TBD I think the debugger user may be interested in a few sentences in the technology design choices that were made.
+> TBD I think the debugger user may be interested in a few sentences in the technology design choices that were made, but let me know if this text looks OK.
 
 ![Main screen in debugger](images/windbgx-main-menu.png)
 

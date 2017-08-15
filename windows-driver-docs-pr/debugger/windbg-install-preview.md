@@ -8,11 +8,11 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# WinDbg Preview installation and command line startup options
-
 
 ![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
 ](images/windbgx-prelim-important-note.png)
+
+# WinDbg Preview installation and command line startup options
 
 
 ## Installation
@@ -45,6 +45,7 @@ WinDbg Preview installs to %localappdata%\dbg\UI\WinDbgX.exe. If you're trying t
 Open the Store app and click on *Check for Updates* to check for updates.
 
 >> TBD - need to test and confirm this supported.
+
 
 ## Command line startup options
 

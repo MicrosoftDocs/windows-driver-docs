@@ -8,15 +8,14 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
+![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
+](images/windbgx-prelim-important-note.png)
+
 # WinDbg Preview - Home Menu 
 
 This topic describes how to work with the home menu.
 
 ![View menu in debugger](/images/windbgx-home-menu.png)
-
-
-![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
-](images/windbgx-prelim-important-note.png)
 
 
 ## Flow Control
@@ -35,8 +34,7 @@ Use *Source Mode* to toggle between source code and assembly views.
 
 Use *Help* options to do the following:
 - Review Help
-- Update Debugger 
-- Send Feedback (For more information on sending feedbackto improve WinDbg, see [Providing feedback](debugging-using-windbg-preview.md#providingfeedback).) 
+- Send Feedback (For more information on sending feedback to improve WinDbg, see [Providing feedback](debugging-using-windbg-preview.md#providingfeedback).) 
 
  
 ## See Also

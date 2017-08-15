@@ -8,9 +8,9 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-<h4 style="background-color:rgb(255,0,0)">
-This documentation is preliminary and is subject to change.
-</h4>
+
+![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
+](images/windbgx-prelim-important-note.png)
 
 # WinDbg Preview Breakpoints
 

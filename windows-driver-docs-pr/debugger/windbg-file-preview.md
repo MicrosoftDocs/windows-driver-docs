@@ -8,6 +8,9 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
+![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
+](images/windbgx-prelim-important-note.png)
+
 # WinDbg Preview - File Menu 
 
 This topic describes how to how to use the file menu.
@@ -42,7 +45,6 @@ Use *Open source file* to open a source file. Do this when you want to work with
 
 Use *Open script* to open an existing Java or NatVis script. 
 For more information on working with scripts see [WinDbg Preview - Scripting Menu](windbg-scripting-preview.md).
->> TBD - need to test behavior
 
 ### Settings
 
@@ -52,6 +54,7 @@ Use the settings menu to set the source and symbol path as well as choose the li
 ### About
 Use *About* to display build version information for the debugger. You can use also use this screen to view the Microsoft privacy statement.
 
+---
  
 ## See Also
 
