@@ -58,7 +58,7 @@ Use the pull down dialog on the *Attach* button to select *non-invasive attach*.
 
 ## Launch App Package
 
-Use this option to launch and attach to an app package. Use the search box to locate a specific app or background task.
+Use this option to launch and attach to an app package. Use the search box to locate a specific app or background task. Use the Package Details button to display information about the package.
 
 ![Launch App Package Applications tab showing cal in the search box with three apps listed](images/windbgx-launch-app-package.png)
 
