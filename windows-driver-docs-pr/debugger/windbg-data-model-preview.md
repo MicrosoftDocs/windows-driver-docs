@@ -21,7 +21,7 @@ This section describes how to work with the data model menu in the WinDbg Previe
 
 ### New Model Query
 
-Use the New Model Query dialog to create a new model query. You can put anything here you'd put into a normal `dx` command
+Use the New Model Query dialog to create a new model query. You can put anything here you'd put into a normal `dx` command.
 
 For example, specify `Debugger.Sessions` to examine the debugger sessions objects. 
 
@@ -54,9 +54,6 @@ Use change query to change the query that is used in the active data model windo
 Use display mode to toggle between grid and hierarchy display mode. You can right-click column headers to hide or show more columns.
 
 Grid mode can be useful to dig down in the objects. For example this query shows the devices in the plug and play device tree grouped by the name of the physical device object's driver.
-
->>> TBD  - Happy to replace this with a handles or module example, if you provide the query string.
-
 
 ```
 Debugger.Sessions.First().Devices.DeviceTree.Flatten(n => n.Children).GroupBy(n => n.PhysicalDeviceObject->Driver->DriverName.ToDisplayString()) 
