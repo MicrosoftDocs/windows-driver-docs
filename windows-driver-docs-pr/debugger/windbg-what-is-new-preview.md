@@ -19,7 +19,7 @@ This topic provides information on what's new in the WinDbg Preview debugger.
 
 
 ## Preliminary Release 
-We will provide information on the latest features when they area available.
+We will provide information on the latest features when they are available.
 
 
 ---
