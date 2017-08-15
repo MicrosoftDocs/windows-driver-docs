@@ -56,7 +56,7 @@ Use the New Script > NatVis to open the following blank NatVis template.
 </AutoVisualizer>
 ```
 
-For more information about working with NatVis, see [Debugger Objects in NatVis](debugger/native-debugger-objects-in-natvis).
+For more information about working with NatVis, see [Debugger Objects in NatVis](native-debugger-objects-in-natvis.md).
 
  
 ---
