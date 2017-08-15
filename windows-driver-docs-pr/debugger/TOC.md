@@ -24,6 +24,7 @@
 ## [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md)
 ## [Debug Drivers - Step by Step Lab (Sysvad Kernel-Mode)](debug-universal-drivers--kernel-mode-.md)
 # [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+## [WinDbg Preview - What's New](windbg-what-is-new-preview.md)
 ## [WinDbg Preview - installation](windbg-install-preview.md)
 ### [Coexisting with the classic WinDbg debugger](windbg-coexist-preview.md)
 ## [WinDbg Preview – settings and workspaces](windbg-setup-preview.md)

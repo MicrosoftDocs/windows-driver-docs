@@ -2,11 +2,15 @@
 title: WinDbg Preview - What's New 
 description: This topic provides inofmration on what's new in WinDbg preview debugger.
 ms.author: windowsdriverdev
-ms.date: 08/07/2017
+ms.date: 08/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
+
+> [!NOTE]
+> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
+>
 
 
 # WinDbg Preview - What's New
@@ -14,13 +18,11 @@ ms.technology: windows-devices
 This topic provides information on what's new in the WinDbg Preview debugger.
 
 
-![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
-](images/windbgx-prelim-important-note.png)
-
-
 ## Preliminary Release 
-We will provide information on the latest features when the WinDbg Preview is available.
+We will provide information on the latest features when they area available.
 
+
+---
  
 ## See Also
 
