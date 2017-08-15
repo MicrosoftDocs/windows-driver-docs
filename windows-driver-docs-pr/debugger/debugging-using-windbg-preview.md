@@ -4,7 +4,7 @@ description: This section describes how to perform basic debugging tasks using t
 ---
 
 > [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentaion. 
+> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
 >
 
 
