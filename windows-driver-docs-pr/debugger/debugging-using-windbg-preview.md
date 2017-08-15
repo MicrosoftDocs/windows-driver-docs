@@ -8,7 +8,7 @@ description: This section describes how to perform basic debugging tasks using t
 >
 
 
-# Debugging Using WinDbg Preview
+# Debugging Using WinDbg Preview 
 
 ![Small logo on windbg preview](images/windbgx-preview-logo.png)
 
@@ -46,12 +46,8 @@ These topics describe how to complete common tasks, organized by the menu tabs.
 Your feedback will guide the debugger tool development effort going forward. 
 
 - If you have feedback such as a feature that you really want to see, use the Feedback Hub.
-- If you see a bug or unexpected behavior - use the Feedback Hub and check the “This is a bug” check box.
-
 
 ![Screen shot of feedback hub showing feedback options including the add new feedback button](images/windbgx-feedback.png)
-
-> TBD Need to update update graphic for external feedback experience  and make sure there is a  “This is a bug” check box.
 
 
 ## Features of the next generation debugger
