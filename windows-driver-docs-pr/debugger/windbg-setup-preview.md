@@ -2,7 +2,7 @@
 title: WinDbg Preview - Settings and workspaces
 description: This section describes how to setup the WinDbg preview debugger.
 ms.author: windowsdriverdev
-ms.date: 08/09/2017
+ms.date: 08/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -28,18 +28,18 @@ Once the app is a located, click on it to download and install.
 
 ## Creating a portable copy of WinDbg Preview
 
-You can XCopy the binaries from \\dbg\dbgx\build\[version] or \\dbg\dbgx\slow\[version] to the location of your choice, such as a thumb drive for portable use.
+You can XCopy the binaries from C:\Program Files\WindowsApps\Microsoft.WinDbg_Version_bit_id\ to the location of your choice, such as a thumb drive for portable use.
 
->> TBD - need to test and confirm this supported.
+>> TBD - Need to test and confirm this supported.
 
 
 ## Installation Location
 
->> TBD Need to validate that we support thisibution.
-
 WinDbg Preview installs to C:\Program Files\WindowsApps\Microsoft.WinDbg_Version_bit_id. Where the bit will be 32 bit or 64 bit and the id will be a unique identifier for the app.
 
 If you're trying to copy an extension so that you can easily load it, you can copy the extension to C:\Program Files\WindowsApps\Microsoft.WinDbg_Version_bit_id\dbg\EngineExtensions\ for 64-bit extensions, or C:\Program Files\WindowsApps\Microsoft.WinDbg_Version_bit_id\dbg\EngineExtensions32 for 32-bit extensions. 
+
+>> TBD - Need to confirm that we support this.
 
 
 ## Checking for updates
@@ -61,6 +61,8 @@ You can use /? to list additional command line options.
 ## Debugger coexistence  
 
 This section describes how to have the WinDbg preview coexist with the classic WinDbg debugger.
+
+>> TBD - we seemed to get a questions on this, will we support the ability to launch either version externally?
 
 You can work with WinDbg preview coexist with the classic WinDbg debugger on the same machine.
 

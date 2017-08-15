@@ -8,9 +8,8 @@ description: This section describes how to perform basic debugging tasks using t
 >
 
 
-# Debugging Using WinDbg Preview 
+# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Debugging Using WinDbg Preview 
 
-![Small logo on windbg preview](images/windbgx-preview-logo.png)
 
 Welcome to the WinDbg Preview. This next gen debugger is being developed with the debugger community in mind. For information on providing feedback to shape the future of WinDbg , see [Providing feedback](#providingfeedback).
 
@@ -116,7 +115,7 @@ For more information, see [Breakpoints](windbg-breakpoints-preview.md).
 - **Built in data model support** - WinDbg Preview is written with built in data model support and the data model is available through out the debugger.
 - **Model window** - The model window gives you an expandable and browsable version of ‘dx’ and ‘dx -g’, letting you create powerful tables on-top of your NatVis, JavaScript, and LINQ queries. 
 
-For more information, see  [WinDbg Preview - Data model](windbg-data-model-preview.md).
+For more information, see [WinDbg Preview - Data model](windbg-data-model-preview.md).
 
 ![Screen shot of data model menu in debugger](images/windbgx-data-model-menu.png)
 
