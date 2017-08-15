@@ -130,12 +130,9 @@ For more information, see  [WinDbg Preview - Data model](windbg-data-model-previ
 
 - **Script development UI** - There is now a purpose built scripting window to make developing JavaScript and NatVis scripts easier, with error highlighting and IntelliSense.
 
->>> TBD Need to follow up on  and debugging capabilities via command line. 
-
 For more information, see [WinDbg Preview - Scripting](windbg-scripting-preview.md).
 
 ![Screen shot of scripting menu in debugger](images/windbgx-scripting-menu.png)
-
 
 
  

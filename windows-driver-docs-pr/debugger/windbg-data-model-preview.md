@@ -67,6 +67,7 @@ Debugger.Sessions.First().Devices.DeviceTree.Flatten(n => n.Children).GroupBy(n 
 When you click on any underlined item a new tab is opened and a query is run to display that information.
 
 
+---
  
 ## See Also
 

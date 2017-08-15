@@ -8,12 +8,13 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
+> [!NOTE]
+> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
+>
+
 # WinDbg Preview - Start a user mode session  
 
 This section describes how to start a user mode session with the WinDbg preview debugger.
-
-![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
-](images/windbgx-prelim-important-note.png)
 
 Select *File*, *Start debugging*, and select either of these four options:
 
@@ -61,6 +62,8 @@ Use this option to launch and attach to an app package. Use the search box to lo
 
 ![Launch App Package Applications tab showing cal in the search box with three apps listed](images/windbgx-launch-app-package.png)
 
+
+---
 
 ## See Also
 

@@ -8,12 +8,14 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
+
+> [!NOTE]
+> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
+>
+
 # WinDbg Preview keyboard shortcuts 
 
 This section summarizes the keyboard shortcuts for the  WinDbg preview debugger.
-
-![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
-](images/windbgx-prelim-important-note.png)
 
 All of the ribbon menu options are available using the **Alt +** the first letter of the option. For example **Alt + H** to go to the home menu, **Alt + H + P** to view help.
 

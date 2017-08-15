@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 This topic describes how to work with the home menu.
 
-![View menu in debugger](/images/windbgx-home-menu.png)
+![View menu in debugger](images/windbgx-home-menu.png)
 
 
 ## Flow Control
