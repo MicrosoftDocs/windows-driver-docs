@@ -9,8 +9,9 @@ ms.technology: windows-devices
 ---
 
 
-![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
-](images/windbgx-prelim-important-note.png)
+> [!NOTE]
+> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
+>
 
 # WinDbg Preview Breakpoints
 

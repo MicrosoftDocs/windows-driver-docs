@@ -8,8 +8,9 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-![Important note - This information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
-](images/windbgx-prelim-important-note.png)
+> [!NOTE]
+> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
+>
 
 
 # WinDbg Preview - Scripting Menu
@@ -27,7 +28,6 @@ The WinDbg Preview script window features basic syntax highlighting, auto-correc
 - Unlink a script
 - Load the JavaScript Provider
 
-> TBD it looks like the script provider is always loaded?
 
 ## JavaScript Scripting 
 
