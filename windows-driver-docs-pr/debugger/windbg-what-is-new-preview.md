@@ -18,8 +18,11 @@ ms.technology: windows-devices
 This topic provides information on what's new in the WinDbg Preview debugger.
 
 
-## Preliminary Release 
-We will provide information on the latest features when they are available.
+## Intial Release 
+For information on the intial set of features available in WinDbg Preview, [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md).
+
+## Future Releases 
+We will provide information on the latest features when they are available in this topic in the future.
 
 
 ---

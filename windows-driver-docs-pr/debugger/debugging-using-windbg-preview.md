@@ -56,9 +56,9 @@ Your feedback will guide the debugger tool development effort going forward.
 
 The WinDbg Preview is the next generation debugger with a contemporary interface. Windows now load asynchronously and can be canceled - When you run another command, WinDbgNext will stop the loading of your locals, watch, or other windows. 
 
-The UI has been completely rewritten using the Microsoft Windows Presentation Foundation (WPF)and Microsoft Extensibility Framework (MEF).  WinDbgNext is built on top of the debugger engine - dbgeng, and is structured to be highly componentized, with very low coupling between components. Components are composed primarily using MEF. The async/await pattern (Task Asynchronous Pattern) is used extensively for asynchronous queries to the debugger with a simple threading model. 
+The UI has been completely rewritten using the Microsoft Windows Presentation Foundation (WPF) and Microsoft Extensibility Framework (MEF).  WinDbgNext is built on top of the debugger engine - dbgeng, and is structured to be highly componentized, with very low coupling between components. Components are composed primarily using MEF. The async/await pattern (Task Asynchronous Pattern) is used extensively for asynchronous queries to the debugger with a simple threading model. 
 
-> TBD I think the debugger user may be interested in a few sentences in the technology design choices that were made, but let me know if this text looks OK.
+> TBD I think the debugger user may be interested in a few sentences in the technology design choices that were made, but let me know if this text looks OK, we can pull it.
 
 ![Main screen in debugger](images/windbgx-main-menu.png)
 
