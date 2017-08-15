@@ -60,21 +60,9 @@ You can use /? to list additional command line options.
 
 ## Debugger coexistence  
 
-This section describes how to have the WinDbg preview coexist with the classic WinDbg debugger.
+The WinDbg preview coexists with the classic WinDbg debugger on the same machine, so you can work with both versions at the same time. 
 
->> TBD - we seemed to get a questions on this, will we support the ability to launch either version externally?
-
-You can work with WinDbg preview coexist with the classic WinDbg debugger on the same machine.
-
-To start the classic debugger, use the *-noredirect* option  when launching WinDbg.exe.
-
->> TBD will we support a reg key like this at launch?
-
-To switch use to the classic debugger as the default set this RegKey to a value of 1.
-
- ```
- \\dbg\dbgx\DisableWinDbgNextRedirect.reg
- ```
+>> TBD - Is this a safe statement?
 
 
 ## See Also

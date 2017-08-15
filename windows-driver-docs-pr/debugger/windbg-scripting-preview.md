@@ -30,7 +30,7 @@ The WinDbg Preview script window features basic syntax highlighting, auto-correc
 
 ## JavaScript Scripting 
 
-To start using JavaScript, you must first be debugging a target. When you're ready to start working on your JavaScript, click "Load JavaScript Provider". After taht you can create a new JavaScript, by picking between these two types of script templates.
+To start using JavaScript, you must first be debugging a target. When you're ready to start working on your JavaScript, click "Load JavaScript Provider". After that you can create a new JavaScript, by picking between these two types of script templates.
 
 - **Extension Script** - A script which is designed to act as an extension to the debugger.  It manipulates the object model of the debugger and provides continued functionality.  No action happens upon hitting the <i>Execute</i> button on the ribbon.
 
@@ -46,7 +46,7 @@ For more information about working with JavaScript, see these topics:
 
 ## NatVis Scripting 
 
-Use the New Script > NatVis to open the following blank NatVis template.
+Use **New Script** > **NatVis** to open the following blank NatVis template.
 
 ```
 <AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
