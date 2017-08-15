@@ -24,9 +24,6 @@ Review these topics to install and configure WinDbg Preview.
 - [WinDbg Preview – settings and workspaces](windbg-setup-preview.md)
 - [WinDbg Preview – keyboard shortcuts](windbg-keyboard-shortcuts-preview.md)
 
-> TBD - Will likely remove this unless we have useful tips to share. 
-- [Coexisting with the classic WinDbg debugger](windbg-coexist-preview.md)
-
 These topics describe how to get connected to the environment that you want to debug. 
 
 - [Starting a user-mode process using WinDbg Preview](windbg-user-mode-preview.md)

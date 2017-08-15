@@ -26,7 +26,6 @@
 # [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
 ## [WinDbg Preview - What's New](windbg-what-is-new-preview.md)
 ## [WinDbg Preview - installation](windbg-install-preview.md)
-### [Coexisting with the classic WinDbg debugger](windbg-coexist-preview.md)
 ## [WinDbg Preview – settings and workspaces](windbg-setup-preview.md)
 ## [WinDbg Preview – keyboard shortcuts](windbg-keyboard-shortcuts-preview.md)
 ## [Starting a user-mode process using WinDbg Preview](windbg-user-mode-preview.md)
