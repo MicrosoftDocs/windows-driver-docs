@@ -10,6 +10,8 @@ description: This section describes how to perform basic debugging tasks using t
 
 # Debugging Using WinDbg Preview
 
+![Small logo on windbg preview](images/windbgx-preview-logo.png)
+
 Welcome to the WinDbg Preview. This next gen debugger is being developed with the debugger community in mind. For information on providing feedback to shape the future of WinDbg , see [Providing feedback](#providingfeedback).
 
 For information on what's new in the current release, see [WinDbg Preview - What's New](windbg-what-is-new-preview.md).
