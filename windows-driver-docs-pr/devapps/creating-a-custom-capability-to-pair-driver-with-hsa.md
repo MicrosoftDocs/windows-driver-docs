@@ -87,6 +87,8 @@ Status = WdfDeviceAssignInterfaceProperty(
 
 ```
 
+For an example of the driver code shown immediately above, see the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).
+
 ## Preparing the Signed Custom Capability Descriptor (SCCD) file
 
 A Signed Custom Capability Descriptor (SCCD) file is a signed XML file authorizing the use of one or more custom capabilities.  The owner of the driver or RPC endpoint grants the custom capability to the app developer by providing this file.
@@ -150,3 +152,4 @@ The following diagram summarizes the sequence described above:
 
 * [App capability declarations](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations)
 * [Custom Capability sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomCapability)
+* [Getting Started with Universal Windows drivers](../develop/getting-started-with-universal-drivers.md)
