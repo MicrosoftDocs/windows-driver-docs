@@ -86,17 +86,12 @@ For more information, see [WinDbg Preview - View menu](windbg-view-preview.md).
 - **Command window** - Use the command window provides easy access to toggle DML and clear the debugger command window. All current debugger commands are compatible with and continue to work in WinDbg Preview.
 - **Source window** - Use the source windows to work with source code files.
 
-![Source code window in debugger](images/windbgx-source-windows-menu.png)
-
-
 ### Enhanced breakpoint tracking  
 
 - **Enable/Disable breakpoints** - The breakpoints window shows all your current breakpoints and provides easy access to enabling and disabling them. 
 - **Hit count** - The breakpoint window keep a running total of each time the breakpoint is hit.
 
 For more information, see [Breakpoints](windbg-breakpoints-preview.md).
-
-![Breakpoint menu in debugger](images/windbgx-breakpoint-menu.png)
 
 
 ### Enhanced data model support
