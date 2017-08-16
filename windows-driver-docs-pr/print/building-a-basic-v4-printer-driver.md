@@ -64,42 +64,60 @@ Notice from the preceding table that one of the files that is created is an INF 
 ## Complete the INF file
 
 
-Configure the \[Version\] section
+### Configure the \[Version\] section
+
 
 1. Check and make sure that you see this line:
 
 **ClassVer**=4.0
+
 2. Check and make sure that you see this line:
 
 **Signature**=”$WINDOWS NT$”
-Configure the \[SourceDiskFiles\] section
+
+### Configure the \[SourceDiskFiles\] section
+
 
 Type the following lines:
 
+```Text
 MyV4PrinterDriver.gpd=1
 MyV4PrinterDriver-manifest.ini=1
 MyV4PrinterDriverRenderFilter-PipelineConfig.xml=1
 MyV4PrintDriverRenderFilter.dll=1
-Create a section called \[DriverInstall\] at the bottom of the INF file, and configure it
+```
+
+### Create a section called \[DriverInstall\] at the bottom of the INF file, and configure it
+
 
 Type the following line in the newly created \[DriverInstall\] section:
 
 **CopyFiles**=DriverFiles
-Create a section called \[DriverFiles\] at the bottom of the INF file, and configure it
+
+### Create a section called \[DriverFiles\] at the bottom of the INF file, and configure it
+
 
 Type the following lines in the newly created \[DriverFiles\] section:
 
+```Text
 MyV4PrinterDriver.gpd
 MyV4PrinterDriver-manifest.ini
 MyV4PrinterDriverRenderFilter-PipelineConfig.xml
 MyV4PrintDriverRenderFilter.dll
-Configure the \[Standard.NT$ARCH$\] section
+```
+
+### Configure the \[Standard.NT$ARCH$\] section
+
 
 Type the following lines to target a particular printer model. For example, if the model of your printer is Fabrikam1234, then you would type the following:
 
+```Text
 “Model name”=DriverInstall, USBPRINT\\Fabrikam1234
 “Model name”=DriverInstall, WSDPRINT\\Fabrikam1234
-Add **PrinterDriverID** to the INF file
+```
+
+### Add **PrinterDriverID** to the INF file
+
 
 1. In Visual Studio, in the Solution Explorer, expand the *MyV4PrinterDriver Package* node.
 
@@ -108,15 +126,21 @@ Add **PrinterDriverID** to the INF file
 3. In the INF file, in the \[Standard.NT$ARCH$\] section, type the following line:
 
 “Model name”=DriverInstall,
+
 And then after the comma, paste the GUID that you copied in the preceding step. The completed \[Standard.NT$ARCH$\] section should like the following:
+
+```Text
 “Model name”=DriverInstall, USBPRINT\\Fabrikam1234
 “Model name”=DriverInstall, WSDPRINT\\Fabrikam1234
 “Model name”=DriverInstall, {GUID}
-Configure the \[String\] section
+```
+
+### Configure the \[String\] section
 
 1. Type the following, to provide a manufacturer’s name for the target printer. For example, if your company’s name is My Company, you would type the following:
 
 **ManufacturerName** = “My Company”
+
 2. Save the INF file.
 
 When you complete the INF file, it should look like the following. Note that in place of the *{GUID}* entry that is shown in this sample INF file, your INF file should contain the GUID that you retrieved using the steps in the preceding *Add PrinterDriverID to the INF file* section.
@@ -168,11 +192,11 @@ DiskName="MyV4PrinterDriver Installation Disk"
 ## Configure driver solution for debugging and deployment
 
 
-1. In the Solution Explorer, right-click MyV4PrinterDriver Package, then click Properties.
+1. In the Solution Explorer, right-click *MyV4PrinterDriver Package*, then click **Properties**.
 
-2. In the MyV4PrinterDriver Package Property Pages window, expand Configuration Properties in the left pane.
+2. In the **MyV4PrinterDriver Package Property Pages** window, expand **Configuration Properties** in the left pane.
 
-3. Expand Driver Install, then click Deployment do the following in the right pane:
+3. Expand **Driver Install**, then click **Deployment** do the following in the right pane:
 
 -   Click **Enable deployment**
 -   Check **Remove previous driver versions before deployment**
@@ -184,7 +208,7 @@ DiskName="MyV4PrinterDriver Installation Disk"
 ## Configure Driver Signing
 
 
-1. In the Solution Explorer, right-click MyV4PrinterDriver Package, then click **Properties.**
+1. In the Solution Explorer, right-click *MyV4PrinterDriver Package*, then click **Properties**.
 
 2. In the **MyV4PrinterDriver Package Property Pages** window, expand **Configuration Properties** in the left pane.
 
