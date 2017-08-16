@@ -36,6 +36,8 @@ To start using JavaScript, you must first be debugging a target. When you're rea
 
 - **Imperative Script** - A script which is designed to perform an action each and every time the <i>Execute</i> button is clicked on the ribbon. Such a script does not generally modify the object model of the debugger.
 
+When you succesfully load a JavaScript and green check box will appear on the script title bar. If there are errors in the script, a red x will be displayed. 
+
 For more information about working with JavaScript, see these topics:
 
 [JavaScript Debugger Scripting](javascript-debugger-scripting.md)
