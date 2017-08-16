@@ -55,8 +55,6 @@ The WinDbg Preview is the next generation debugger with a contemporary interface
 
 The UI has been completely rewritten using the Microsoft Windows Presentation Foundation (WPF) and Microsoft Extensibility Framework (MEF).  WinDbgNext is built on top of the debugger engine - dbgeng, and is structured to be highly componentized, with very low coupling between components. Components are composed primarily using MEF. The async/await pattern (Task Asynchronous Pattern) is used extensively for asynchronous queries to the debugger with a simple threading model. 
 
-> TBD I think the debugger user may be interested in a few sentences in the technology design choices that were made, but let me know if this text looks OK, we can pull it.
-
 ![Main screen in debugger](images/windbgx-main-menu.png)
 
 
@@ -64,35 +62,26 @@ The UI has been completely rewritten using the Microsoft Windows Presentation Fo
 
 Because the underling debugger engine is the same, all of the previous debugger commands and debugger extensions continue to work.
 
-### Start debugging
-
+### General features
 - **Easier Connection Setup and Recall** - The WinDbg Preview includes the ability to recall previous session configuration information.
 
 ![Screen shot of main screen in debugger](images/windbgx-start-debugging-menu.png)
-
-
-### General features
 
 - **In product feedback channel** - Your feedback will guide the development effort going forward. For more information, see [Providing Feedback](#providing-feedback)
 - **Dump file processor detection** -Auto-detect dump processor architecture for managed dumps.
 - **Performance Improvements** Windows now load asynchronously and can be canceled - When you run another command, WinDbg Preview will stop the loading of your locals, watch, or other windows.
 
 
-### View menu
+### Windowing improvements
 
 - **Disassembly Window Improvements** - The disassembly window is also improved, the highlight of the current instruction remains where it is when you scroll. 
 - **Memory window improvements** - The memory window has highlighting and improved scrolling.
 - **Locals and watch data model visualization** - The locals and watch windows are both based off of the data model that is used by the dx command. This means the locals and watch windows will benefit from any NatVis or JavaScript extensions you have loaded, and can even support full LINQ queries, just like the dx command. 
 - **Logs** - This is a under the covers log of the WinDbg Preview internals. It can be viewed for troubleshooting or to monitor long running processes. 
 
-**Note** You can continue to create a *command* log, using the .logopen command. For more information on that, see [Keeping a Log File in WinDbg](keeping-a-log-file-in-windbg.md).
-
 For more information, see [WinDbg Preview - View menu](windbg-view-preview.md).
 
 ![View menu in debugger](images/windbgx-view-menu.png)
-
-
-### Command, and source windows  
 
 - **Command window** - Use the command window provides easy access to toggle DML and clear the debugger command window. All current debugger commands are compatible with and continue to work in WinDbg Preview.
 - **Source window** - Use the source windows to work with source code files.
@@ -100,7 +89,7 @@ For more information, see [WinDbg Preview - View menu](windbg-view-preview.md).
 ![Source code window in debugger](images/windbgx-source-windows-menu.png)
 
 
-### Breakpoints 
+### Enhanced breakpoint tracking  
 
 - **Enable/Disable breakpoints** - The breakpoints window shows all your current breakpoints and provides easy access to enabling and disabling them. 
 - **Hit count** - The breakpoint window keep a running total of each time the breakpoint is hit.
@@ -110,7 +99,7 @@ For more information, see [Breakpoints](windbg-breakpoints-preview.md).
 ![Breakpoint menu in debugger](images/windbgx-breakpoint-menu.png)
 
 
-### Data model 
+### Enhanced data model support
 
 - **Built in data model support** - WinDbg Preview is written with built in data model support and the data model is available through out the debugger.
 - **Model window** - The model window gives you an expandable and browsable version of ‘dx’ and ‘dx -g’, letting you create powerful tables on-top of your NatVis, JavaScript, and LINQ queries. 
@@ -120,7 +109,7 @@ For more information, see [WinDbg Preview - Data model](windbg-data-model-previe
 ![Screen shot of data model menu in debugger](images/windbgx-data-model-menu.png)
 
 
-### Scripting  
+### New Scripting development UI 
 
 - **Script development UI** - There is now a purpose built scripting window to make developing JavaScript and NatVis scripts easier, with error highlighting and IntelliSense.
 

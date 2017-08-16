@@ -1,8 +1,8 @@
 ---
-title: WinDbg Preview Installation 
+title: WinDbg Preview - Starting a kernel mode session  
 description: This section describes how to how to start a kernel mode session with WinDbg Preview.
 ms.author: windowsdriverdev
-ms.date: 07/31/2017
+ms.date: 08/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
