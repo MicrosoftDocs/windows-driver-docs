@@ -12,7 +12,7 @@ ms.technology: windows-devices
 > The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
 >
 
-# WinDbg Preview View Menu 
+# WinDbg Preview - View Menu 
 
 This section describes how work with the view menu in WinDbg Preview.
 
@@ -61,7 +61,7 @@ The thread window highlights the current thread.
 
 ## Breakpoints
 
-Use the breakpoints window to view, set and clear breakpoints.
+Use the breakpoints window to view, enable and clear breakpoints.
 
 ![ Disassembly window in debugger](images/windbgx-breakpoints-window.png)
 

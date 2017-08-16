@@ -21,14 +21,14 @@ For the latest news, tips, and tricks from the debugger dev team, refer to the d
 
 Review these topics to install and configure WinDbg Preview.
 
-- [WinDbg Preview - installation](windbg-install-preview.md)
-- [WinDbg Preview – settings and workspaces](windbg-setup-preview.md)
-- [WinDbg Preview – keyboard shortcuts](windbg-keyboard-shortcuts-preview.md)
+- [WinDbg Preview - Installation](windbg-install-preview.md)
+- [WinDbg Preview – Settings and workspaces](windbg-setup-preview.md)
+- [WinDbg Preview – Keyboard shortcuts](windbg-keyboard-shortcuts-preview.md)
 
 These topics describe how to get connected to the environment that you want to debug. 
 
-- [Starting a user-mode process using WinDbg Preview](windbg-user-mode-preview.md)
-- [Starting a kernel mode session using WinDbg Preview](windbg-kernel-mode-preview.md)
+- [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md)
+- [WinDbg Preview - Start a kernel mode session](windbg-kernel-mode-preview.md)
 
 These topics describe how to complete common tasks, organized by the menu tabs.
 

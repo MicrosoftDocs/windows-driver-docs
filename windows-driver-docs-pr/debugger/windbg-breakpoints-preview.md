@@ -13,16 +13,26 @@ ms.technology: windows-devices
 > The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
 >
 
-# WinDbg Preview Breakpoints
+# WinDbg Preview - Breakpoints
 
-This section describes how to set and clear breakpoints using the WinDbg preview debugger.
+This section describes how to work with breakpoints using the WinDbg preview debugger.
 
-Use the breakpoints window to view, set and clear breakpoints.
+## Breakpoints Menu
 
-![ Disassembly window in debugger](images/windbgx-breakpoint-menu.png)
+Use the breakpoints menu to create new and remove existing breakpoints as well as toggle the initial breakpoint.
+
+![Breakpoint menu in debugger](images/windbgx-breakpoints-menu.png)
+
+## Breakpoints Window
+
+Use the breakpoints window, located on the View menu, to view, set and clear breakpoints.
+
+![Breakpoint menu in debugger](images/windbgx-breakpoints-window.png)
+
+The breakpoint window keep a running total of each time the breakpoint is hit.
 
 
-The process is similar to previous versions of WinDbg. For more information about setting breakpoints, see [Setting Breakpoints in WinDbg](setting-breakpoints-in-windbg.md).
+The general process of working with breakpoints is similar to previous versions of WinDbg. For more information about setting breakpoints, see [Setting Breakpoints in WinDbg](setting-breakpoints-in-windbg.md).
 
  
 

@@ -1,5 +1,5 @@
 ---
-title: WinDbg Preview Installation 
+title: WinDbg Preview - Start a user mode session
 description: This section describes how to start a user mode session with the WinDbg preview debugger.
 ms.author: windowsdriverdev
 ms.date: 08/04/2017
