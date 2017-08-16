@@ -19,21 +19,21 @@ ms.technology: windows-devices
 
 Drivers that support power management must conform to certain rules pertaining to:
 
-[Calling IoCallDriver versus calling PoCallDriver](calling-iocalldriver-versus-calling-pocalldriver.md) to pass power IRPs
+* [Calling IoCallDriver versus calling PoCallDriver](calling-iocalldriver-versus-calling-pocalldriver.md) to pass power IRPs
 
-[Calling PoStartNextPowerIrp](calling-postartnextpowerirp.md) to start the next power IRP
+* [Calling PoStartNextPowerIrp](calling-postartnextpowerirp.md) to start the next power IRP
 
-[Passing power IRPs](passing-power-irps.md) down to the next-lower driver
+* [Passing power IRPs](passing-power-irps.md) down to the next-lower driver
 
-[Queuing I/O requests while a device is sleeping](queuing-i-o-requests-while-a-device-is-sleeping.md)
+* [Queuing I/O requests while a device is sleeping](queuing-i-o-requests-while-a-device-is-sleeping.md)
 
-[Handling unsupported or unrecognized power IRPs](handling-unsupported-or-unrecognized-power-irps.md)
+* [Handling unsupported or unrecognized power IRPs](handling-unsupported-or-unrecognized-power-irps.md)
 
-[Calling ExSetTimerResolution while processing a power IRP](calling-exsettimerresolution-while-processing-a-power-irp.md)
+* [Calling ExSetTimerResolution while processing a power IRP](calling-exsettimerresolution-while-processing-a-power-irp.md)
 
 The sections that follow describe how drivers should perform these tasks.
 
- 
+For a list of power management IRPs, see [Power Management Minor IRPs](power-management-minor-irps.md).
 
  
 
