@@ -13,7 +13,7 @@ ms.technology: windows-devices
 >
 
 
-# WinDbg Preview - Scripting Menu
+# WinDbg Preview - Scripting 
 
 This section describes how to how to use scripting.
 

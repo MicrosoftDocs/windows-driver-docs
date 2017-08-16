@@ -24,7 +24,7 @@ You can use the right click menu to pin workspace files as well as edit them in 
 
 ![Workspace file right click menu showing open rename edit in notepad pin and remove from list as well as clear unpinned targets](images/windbgx-workspace-right-click.png)
 
-For more information on working settings an workspaces see [WinDbg Preview Setup – settings and workspaces](windbg-setup-preview.md).
+For more information on working settings an workspaces see [WinDbg Preview Setup – Settings and workspaces](windbg-setup-preview.md).
 
 
 ### Save workspace

@@ -12,7 +12,7 @@ ms.technology: windows-devices
 > The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
 >
 
-# WinDbg Preview installation and command line startup options
+# WinDbg Preview - Installation and command line startup options
 
 
 ## Installation
