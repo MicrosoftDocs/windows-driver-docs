@@ -1095,8 +1095,6 @@
 ### [Commands](commands.md)
 #### [ENTER (Repeat Last Command)](enter--repeat-last-command-.md)
 #### [$<, $><, $$<, $$><, $$ >a< (Run Script File)](-----------------------a---run-script-file-.md)
-#### [Dollar Sign greater and less than (Run Script File)](-----------------------a---run-script-file-.md)
-#### [$ <, $ ><, $$ <, $$ ><, $$ >a< (Run Script File)](-----------------------a---run-script-file-.md)
 #### [? (Command Help)](---command-help-.md)
 #### [? (Evaluate Expression)](---evaluate-expression-.md)
 #### [?? (Evaluate C++ Expression)](----evaluate-c---expression-.md)
