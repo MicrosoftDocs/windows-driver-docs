@@ -2,7 +2,7 @@
 title: WinDbg Preview - Scripting Menu
 description: This section describes how to use scripting in the WinDbg preview debugger.
 ms.author: windowsdriverdev
-ms.date: 08/04/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -19,7 +19,9 @@ This section describes how to how to use scripting.
 
 ![Screen shot of scripting menu in debugger](images/windbgx-javascript-new-script.png)
 
-The WinDbg Preview script window features basic syntax highlighting, auto-correct, and error recognition. Use the ribbon buttons to:
+The WinDbg Preview script window features basic syntax highlighting, auto-correct, and error recognition. 
+
+Use the ribbon buttons to:
 - Create a new script 
 - Open an existing script
 - Execute a script

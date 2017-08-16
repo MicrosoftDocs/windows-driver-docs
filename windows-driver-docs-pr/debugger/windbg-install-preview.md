@@ -37,7 +37,10 @@ Once the app is a located, click on it to download and install.
 
 ## Installation Location
 
-WinDbg Preview installs to C:\Program Files\WindowsApps\Microsoft.WinDbg_Version_bit_id. Where the bit will be 32 bit or 64 bit and the id will be a unique identifier for the app.
+WinDbg Preview installs to:
+```C:\Program Files\WindowsApps\Microsoft.WinDbg_Version_bit_id```
+
+ Where the *bit* will be 32 bit or 64 bit and the *id* will be a unique identifier for the app.
 
 
 ## Command line startup options
@@ -52,8 +55,6 @@ You can use /? to list additional command line options.
 ## Debugger coexistence  
 
 The WinDbg preview coexists with the classic WinDbg debugger on the same machine, so you can work with both versions at the same time. 
-
->> TBD - Is this a safe statement?
 
 
 ---

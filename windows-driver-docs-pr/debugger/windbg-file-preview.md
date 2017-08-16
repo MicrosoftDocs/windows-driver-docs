@@ -36,7 +36,6 @@ The default location for workspace files is:
 ```
 C:\Users\*UserName*\AppData\Local\DBG\targets
 ```
-> TBD Need to validate this path for external version.
 
 ### Open source file
 
