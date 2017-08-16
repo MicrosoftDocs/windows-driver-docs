@@ -30,8 +30,8 @@ To associate the UWP app with your device, you'll need to create a Custom Capabi
 ## In this Section
 |Topic|Description|
 |-----|-----------|
-|[Custom Capabilities for Universal Windows Platform Apps](custom-capabilities-for-universal-windows-platform-apps.md)| This section goes over what Custom Capabilities are and how they can be used in UWP Apps.|
-|[Developing a Universal Windows Platform app with Custom Capabilities](developing-a-universal-windows-platform-app-with-custom-capabilities.md)| This section goes over how to use Custom Capabilities in developing UWP Apps.|
+|[Creating a custom capability to pair a driver with a Hardware Support App (HSA)](creating-a-custom-capability-to-pair-driver-with-hsa.md)| This section goes over what Custom Capabilities are and how they can be used in UWP Apps.|
+|[Using a custom capability to pair a Hardware Support App (HSA) with a driver](using-a-custom-capability-to-pair-hsa-with-driver.md)| This section goes over how to use Custom Capabilities in developing UWP Apps.|
 |[FAQ on Custom Capabilities](FAQ-on-custom-capabilities.md)| This Section goes over some of the frequently asked question about Custom Capabilities.|
 
 ## See Also
