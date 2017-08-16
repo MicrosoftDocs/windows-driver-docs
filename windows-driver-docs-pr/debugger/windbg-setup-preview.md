@@ -45,8 +45,8 @@ DebugChildProcesses | false| (User mode only) If true will debug child processes
 Noninvasive | false  |  Specifies non-invasive attach (-pv command-line option).
 NoDebugHeap | false  |  Specifies the debug heap should not be used (-hd command-line option).
 Verbose | false  | When verbose mode is turned on, some display commands (such as register dumping) produce more detailed output. (-v command-line option).
-Elevate | true |  Must always be set to true.
-Restartable | true |  Must always be set to true.
+Elevate | - |  Used internally by WinDbg - Do not modify.
+Restartable | - |  Used internally by WinDbg - Do not modify.
 UseImplicitCommandLine | false | Use implicit command-line (-cimp command-line option). This starts teh debugger with an implicit command line instead of an explicit process to run.
 
 For more information about the command line options, see [WinDbg Command-Line Options](windbg-command-line-options.md).
