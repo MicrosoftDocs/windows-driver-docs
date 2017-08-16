@@ -53,23 +53,27 @@ Use change query to change the query that is used in the active data model windo
 
 Use display mode to toggle between grid and hierarchy display mode. You can right-click column headers to hide or show more columns.
 
-Grid mode can be useful to dig down in the objects. For example this query shows the devices in the plug and play device tree grouped by the name of the physical device object's driver.
+Grid mode can be useful to dig down in the objects. For example, here is the previous top threads query in grid view. 
+
+![Data model explore window showing top threads](images/windbgx-data-model-process-threads-grid.png)
+
+When you click on any underlined item a new tab is opened and a query is run to display that information.
+
+
+This query shows the devices in the plug and play device tree grouped by the name of the physical device object's driver.
 
 ```
 Debugger.Sessions.First().Devices.DeviceTree.Flatten(n => n.Children).GroupBy(n => n.PhysicalDeviceObject->Driver->DriverName.ToDisplayString()) 
 ```
-
 ![Data model explore window showing plug and play device tree in a grid view](images/windbgx-data-model-pnp-device.png)
-
-When you click on any underlined item a new tab is opened and a query is run to display that information.
-
 
 ---
  
 ## See Also
 
+[dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md)
+
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
- 
  
 
  
