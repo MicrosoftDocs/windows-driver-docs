@@ -18,18 +18,27 @@ This topic describes how to how to use the file menu.
 
 ### Start debugging
 
-Use *Start debugging* to configure new and open existing debugger sessions. Session connection information is stored in workspace configuration files. Workspace files are stored with a .debugTarget file extension.
+When you first open the file menu, you'll see *Start debugging* and your recent debugger targets. Use *Start debugging* to configure new and open previous debugger sessions.
 
-You can use the right click menu to pin workspace files as well as edit them in notepad.
+#### Recent
+
+The recent list contains a list of your recent workspaces and debugger connections. For more information on working settings an workspaces see [WinDbg Preview Setup – Settings and workspaces](windbg-setup-preview.md).
+
+You can use the right click menu to manage your workspaces, like pinning, renaming and moving them. As well as editing them in notepad.
 
 ![Workspace file right click menu showing open rename edit in notepad pin and remove from list as well as clear unpinned targets](images/windbgx-workspace-right-click.png)
 
-For more information on working settings an workspaces see [WinDbg Preview Setup – Settings and workspaces](windbg-setup-preview.md).
+#### Start a new session
+
+Use the other tabs in the *Start debugging* section to start a new debugger session, like attaching or launching a process. For more information on starting a new session see [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md)
+and [WinDbg Preview - Start a kernel mode session](windbg-kernel-mode-preview.md)
 
 
 ### Save workspace
 
-Use *Save workspace* to save the current workspace. 
+Use *Save workspace* to save the current workspace.
+
+Session connection information is stored in workspace configuration files. Workspace files are stored with a .debugTarget file extension. 
 
 The default location for workspace files is: 
 
@@ -44,8 +53,7 @@ Use *Open source file* to open a source file. Do this when you want to work with
 
 ### Open script
 
-Use *Open script* to open an existing Java or NatVis script. 
-For more information on working with scripts see [WinDbg Preview - Scripting Menu](windbg-scripting-preview.md).
+Use *Open script* to open an existing Javascript or NatVis script. For more information on working with scripts see [WinDbg Preview - Scripting Menu](windbg-scripting-preview.md).
 
 ### Settings
 

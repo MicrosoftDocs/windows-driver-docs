@@ -21,19 +21,19 @@ This topic describes how to work with the home menu.
 
 ## Flow Control
 
-Use the *Flow Control* options to break into a connected debugging target, resume code execution on the target and step in to and out of code.
+Use the *Flow Control* buttons to break into a connected debugging target, resume code execution on the target and step in to and out of code.
 
 ## End
 
-Use the *End* options to restart, detach and stop debugging.
+Use the *End* buttons to restart, detach and stop debugging.
 
 ## Source Mode
 
-Use *Source Mode* to toggle between source code and assembly views.
+Use *Source Mode* buttons to toggle between source code and assembly views.
 
 ## Help (Support)
 
-Use *Help* options to do the following:
+Use *Help* buttons to do the following:
 - Review Help
 - Send Feedback (For more information on sending feedback to improve WinDbg, see [Providing feedback](debugging-using-windbg-preview.md#providingfeedback).) 
 

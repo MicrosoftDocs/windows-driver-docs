@@ -36,6 +36,8 @@ Workspaces are automatically loaded when launching from the recent targets list,
 In addition to the target connection information, the following settings are stored in the workspaces file.
 
 #### General Settings 
+> [!NOTE]
+> This list and format isn't final and is subject to change.
 
 Setting | Default | Description
 --- | --- | ---

@@ -18,7 +18,10 @@ ms.technology: windows-devices
 
 This topic describes how to start a kernel mode session with WinDbg Preview.
 
-The process is very similar to how it has been done with previous versions of WinDbg.
+The process is very similar to how it has been done with previous versions of WinDbg. Select the tab for the type of transport you're using, fill in the required fields, and click OK.
+
+> [!NOTE]
+> Local kernel debugging requires WinDbg Preview to be launched elevated.
 
 ![Start debugging attach to kernel menu showing Net tab](images/windbgx-attach-to-kernel.png)
 

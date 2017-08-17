@@ -30,7 +30,7 @@ The watch Window allows you to watch local variables and registers.
 The locals and watch windows are both based off of the data model that is used by the dx command. This means the locals and watch windows will benefit from any NatVis or JavaScript extensions you have loaded, and support full LINQ queries, just like the dx command. For more information about the data model, see [WinDbg Preview - Data Model](windbg-data-model-preview.md).
 
 ## Locals
-The locals window displays information about all of the local variables in the current scope. 
+The locals window displays information about all of the local variables in the current scope. The locals window will highlight values that have changed during the previous code execution.
 
 ![Locals window in debugger](images/windbgx-locals-window.png)
 
@@ -45,7 +45,7 @@ Use the memory window to display memory locations. In addition to providing a me
 
 ## Stack 
 
-Use the stack Window to view the current call stack. The stack window provides basic highlighting. 
+Use the stack Window to view the current call stack. The stack window provides basic highlighting of the current frame. 
 
 ## Disassembly
 

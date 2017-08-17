@@ -15,11 +15,11 @@ ms.technology: windows-devices
 
 # WinDbg Preview - Scripting 
 
-This section describes how to how to use scripting.
+This section describes how to how to use the scripting support in the WinDbg Preview.
 
 ![Screen shot of scripting menu in debugger](images/windbgx-javascript-new-script.png)
 
-The WinDbg Preview script window features basic syntax highlighting, auto-correct, and error recognition. 
+The WinDbg Preview script window features basic syntax highlighting, intellisense, and error recognition. 
 
 Use the ribbon buttons to:
 - Create a new script 
@@ -29,6 +29,7 @@ Use the ribbon buttons to:
 - Unlink a script
 - Load the JavaScript Provider
 
+You can also automatically execute scripts by right-clicking in the script window and selecting *Execute Script on Save*. When you succesfully load a script and green check box will appear on the script title bar. If there are errors in the script, a red x will be displayed.
 
 ## JavaScript Scripting 
 
@@ -37,8 +38,6 @@ To start using JavaScript, you must first be debugging a target. When you're rea
 - **Extension Script** - A script which is designed to act as an extension to the debugger.  It manipulates the object model of the debugger and provides continued functionality.  No action happens upon hitting the <i>Execute</i> button on the ribbon.
 
 - **Imperative Script** - A script which is designed to perform an action each and every time the <i>Execute</i> button is clicked on the ribbon. Such a script does not generally modify the object model of the debugger.
-
-When you succesfully load a JavaScript and green check box will appear on the script title bar. If there are errors in the script, a red x will be displayed. 
 
 For more information about working with JavaScript, see these topics:
 
