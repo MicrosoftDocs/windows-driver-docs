@@ -26,6 +26,7 @@
 # [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
 ## [WinDbg Preview - What's New](windbg-what-is-new-preview.md)
 ## [WinDbg Preview - Installation](windbg-install-preview.md)
+## [WinDbg Preview - Command line startup options](windbg-command-line-preview.md)
 ## [WinDbg Preview – Settings and workspaces](windbg-setup-preview.md)
 ## [WinDbg Preview – Keyboard shortcuts](windbg-keyboard-shortcuts-preview.md)
 ## [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md)
