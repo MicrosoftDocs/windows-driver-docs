@@ -29,7 +29,7 @@ Use the ribbon buttons to:
 - Unlink a script
 - Load the JavaScript Provider
 
-You can also automatically execute scripts by right-clicking in the script window and selecting *Execute Script on Save*. When you succesfully load a script and green check box will appear on the script title bar. If there are errors in the script, a red x will be displayed.
+You can also automatically execute scripts by right-clicking in the script window and selecting *Execute Script on Save*. When you successfully load a script, a green check box will appear on the script title bar. If there are errors in the script, a red x will be displayed.
 
 ## JavaScript Scripting 
 

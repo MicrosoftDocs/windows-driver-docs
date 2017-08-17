@@ -61,10 +61,6 @@ Here's some of the most notable things that have changed or are new.
 ![Main screen in debugger](images/windbgx-main-menu.png)
 
 
-### Backwards compatibility 
-
-Because the underling debugger engine is the same, all of the previous debugger commands and debugger extensions continue to work.
-
 ### General features
 - **Easier Connection Setup and Recall** - The WinDbg Preview includes the ability to recall previous session configuration information.
 
@@ -114,6 +110,11 @@ For more information, see [WinDbg Preview - Data model](windbg-data-model-previe
 For more information, see [WinDbg Preview - Scripting](windbg-scripting-preview.md).
 
 ![Screen shot of scripting menu in debugger](images/windbgx-scripting-menu.png)
+
+
+### Backwards compatibility 
+
+Because the underling debugger engine is the same, all of the previous debugger commands and debugger extensions continue to work.
 
 
 --- 
