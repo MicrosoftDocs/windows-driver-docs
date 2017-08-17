@@ -21,7 +21,7 @@ api_type:
 
 The INVALID\_PROCESS\_DETACH\_ATTEMPT bug check has a value of 0x00000006.
 
-This bug check appears very infrequently.
+This bug check appears very infrequently. This bug check can be caused by calling the KeStackAttachProcess and subsequently calling KeUnstackDetachProcess in a LOAD_IMAGE_NOTIFY_ROUTINE callback. The callback for LOAD_IMAGE_NOTIFY_ROUTINE runs in a thread of the process the image is being loaded into.
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
