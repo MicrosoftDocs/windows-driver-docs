@@ -11,15 +11,24 @@ ms.technology: windows-devices
 
 # Using an Extension INF File
 
-Starting in Windows 10, you can extend a driver package INF file's functionality by providing an additional INF file called an extension INF.  In one common scenario, a device manufacturer (IHV) provides a base driver and a primary INF, and then a system builder (OEM) provides an extension INF that supplements and in some cases overrides the configuration and settings of the primary INF.
+Starting in Windows 10, you can extend a driver package INF file's functionality by providing an additional INF file called an extension INF.  An extension INF:
 
-The extension INF might modify some of the settings, such as customizing the device friendly name, modifying a hardware configuration setting, or adding a filter driver.
+* Augments functionality provided by a primary INF.
+* Enhances the value of the device, but is not necessary for the base driver to work.
+* Must be a [universal INF file](../install/using-a-universal-inf-file.md).
+* Can be updated independently from the primary INF.
 
-Primary and extension INFs for the same device can be updated independently by different organizations.
+Typical scenarios where you might want to use an extension INF include:
 
-You can associate multiple extension INFs with the same device.
+* Modifying settings provided in a primary INF, such as customizing the device friendly name or modifying a hardware configuration setting.
+* Adding a proprietary filter driver.
+* Creating one or more software components by specifying the [INF AddComponent directive](inf-addcomponent-directive.md).
 
-An extension INF must be a [universal INF file](../install/using-a-universal-inf-file.md).
+In the following diagram, two different organizations have created two separate driver packages, which are shown in the dotted lines.  The first contains just an extension INF, and the second contains a component INF and a legacy software module.  The diagram also shows how an extension INF can reference a component INF, which can in turn reference software modules to install.
+
+![Extension and Component INF Hierarchy](images/extension-component-inf-hierarchy.png)
+
+You can find an [example of an extension INF](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx) in the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).
 
 ## How extension INF and primary INF work together
 
@@ -46,7 +55,7 @@ Example: A primary INF (V1) with extension A and B are installed on a device. An
 
 Here are the entries you need to define an INF as an extension INF.
 
-1.  Specify these values for **Class** and **ClassGuid** in the [**Version**](inf-version-section.md) section.
+1.  Specify these values for **Class** and **ClassGuid** in the [**Version**](inf-version-section.md) section. For more info on setup classes, see [System-Defined Device Setup Classes Available to Vendors](https://msdn.microsoft.com/library/windows/hardware/ff553426).
 
     ```
     [Version]
@@ -73,9 +82,11 @@ Here are the entries you need to define an INF as an extension INF.
 5.  Optionally, provide a **TargetComputers** section if you want to constrain which computers this INF can be installed on.  You might do this if you are using extension INFs with less specific hardware IDs or compatible IDs that are applicable to a large number of devices.
 6.  Do not define a service with `SPSVCINST_ASSOCSERVICE`.  However, an extension INF can define other services, such as a filter driver for the device.  For more info about specifying services, see [**INF AddService Directive**](inf-addservice-directive.md).
 
+The driver validation and submission process is the same for extension INFs as for regular INFs. For more info, see [Windows HLK Getting Started](https://msdn.microsoft.com/library/windows/hardware/dn915002).
+
 ## Example 1: Using an extension INF to set the device friendly name
 
-The following snippet is a complete extension INF that shows how to set the device friendly name.
+In one common scenario, a device manufacturer (IHV) provides a base driver and a primary INF, and then a system builder (OEM) provides an extension INF that supplements and in some cases overrides the configuration and settings of the primary INF.  The following snippet is a complete extension INF that shows how to set the device friendly name.
 
 ```
 [Version]
@@ -107,7 +118,7 @@ CONTOSO              = "Contoso"
 Device.ExtensionDesc = "Sample Device Extension"
 ```
 
-## Example 2: Filter Drivers
+## Example 2: Using an extension INF to install a filter driver
 
 
 You can also use an extension INF to install a filter driver for a device that uses system-supplied device drivers. The extension INF specifies the hardware ID of the device, and provides the service and filter driver settings.
@@ -172,13 +183,3 @@ FilterSample.ServiceDesc = "Sample Upper Filter"
 [Using a Universal INF File](using-a-universal-inf-file.md)
 
 [Getting Started with Universal Drivers](../develop/getting-started-with-universal-drivers.md)
-
- 
-
- 
-
-
-
-
-
-

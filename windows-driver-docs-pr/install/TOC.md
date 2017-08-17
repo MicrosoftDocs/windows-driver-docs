@@ -281,7 +281,7 @@
 ### [Updating Driver Files](updating-driver-files.md)
 ## [Device and Driver Installation Advanced Topics](device-and-driver-installation-advanced-topics.md)
 ### [Creating Secure Device Installations](creating-secure-device-installations.md)
-### [Adding Software Components with an INF File](adding-software-components-with-an-inf-file.md)
+### [Using a Component INF File](using-a-component-inf-file.md)
 ### [Device Identification and Properties](device-identification-and-properties.md)
 #### [Device Identification](device-identification.md)
 ##### [Device Identification Strings](device-identification-strings.md)

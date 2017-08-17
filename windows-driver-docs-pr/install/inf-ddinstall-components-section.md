@@ -50,6 +50,6 @@ DisplayName = %ContosoControlPanelDisplayName%
 
 ## See also
 
-[Adding Software Components with an INF file](adding-software-components-with-an-inf-file.md)
+[Using a Component INF File](using-a-component-inf-file.md)
 
 [INF AddComponent Directive](inf-addcomponent-directive.md)

@@ -54,6 +54,6 @@ SoftwareVersion = 1.0.0.0
 
 ## See also
 
-[Adding Software Components with an INF file](adding-software-components-with-an-inf-file.md).
+[Using a Component INF File](using-a-component-inf-file.md).
 
 [INF AddSoftware Directive](inf-addsoftware-directive.md)
