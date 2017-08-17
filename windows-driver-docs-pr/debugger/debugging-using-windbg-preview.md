@@ -1,6 +1,11 @@
 ---
 title: Debugging Using WinDbg Preview
 description: This section describes how to perform basic debugging tasks using the WinDbg preview debugger.
+ms.author: windowsdriverdev
+ms.date: 08/17/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 > [!NOTE]
@@ -10,7 +15,7 @@ description: This section describes how to perform basic debugging tasks using t
 
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Debugging Using WinDbg Preview 
 
-WinDbg Preview is a brand new version of WinDbg with more modern visuals, more performant windows, a full-fledged scripting experience, built with the easily extensible debugger data model front and center. WinDbg Preview is using the same underlying engine as WinDbg today, so all the commands, extensions, and workflows you're used to will still work perfectly fine.
+WinDbg Preview is a brand new version of WinDbg with more modern visuals, more performant windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. WinDbg Preview is using the same underlying engine as WinDbg today, so all the commands, extensions, and workflows you're used to will still work as they did before.
 
 For information on what's new in the most recent release, see [WinDbg Preview - What's New](windbg-what-is-new-preview.md).
 
@@ -20,23 +25,24 @@ For the latest news, tips, and tricks from the debugger dev team, refer to the d
 
 Review these topics to install and configure WinDbg Preview.
 
-- [WinDbg Preview - Installation](windbg-install-preview.md)
+- [WinDbg Preview – Installation](windbg-install-preview.md)
+- [WinDbg Preview – Command line startup options](windbg-command-line-preview.md)
 - [WinDbg Preview – Settings and workspaces](windbg-setup-preview.md)
 - [WinDbg Preview – Keyboard shortcuts](windbg-keyboard-shortcuts-preview.md)
 
 These topics describe how to get connected to the environment that you want to debug. 
 
-- [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md)
-- [WinDbg Preview - Start a kernel mode session](windbg-kernel-mode-preview.md)
+- [WinDbg Preview – Start a user-mode session](windbg-user-mode-preview.md)
+- [WinDbg Preview – Start a kernel mode session](windbg-kernel-mode-preview.md)
 
 These topics describe some common tasks, organized by the menu tabs.
 
-- [WinDbg Preview - File menu](windbg-file-preview.md)
-- [WinDbg Preview - Home menu](windbg-home-preview.md)
-- [WinDbg Preview - View menu](windbg-view-preview.md)
-- [WinDbg Preview - Breakpoints](windbg-breakpoints-preview.md)
-- [WinDbg Preview - Data model](windbg-data-model-preview.md)
-- [WinDbg Preview - Scripting](windbg-scripting-preview.md)
+- [WinDbg Preview – File menu](windbg-file-preview.md)
+- [WinDbg Preview – Home menu](windbg-home-preview.md)
+- [WinDbg Preview – View menu](windbg-view-preview.md)
+- [WinDbg Preview – Breakpoints](windbg-breakpoints-preview.md)
+- [WinDbg Preview – Data model](windbg-data-model-preview.md)
+- [WinDbg Preview – Scripting](windbg-scripting-preview.md)
 
 
 ## <span id="providingfeedback"></span>Providing feedback
@@ -49,8 +55,6 @@ Your feedback will help guide WinDbg's development going forward.
 
 
 ## Major Features of WinDbg Preview
-
-WinDbg Preview is a brand new version of WinDbg with more modern visuals, more performant windows, a full-fledged scripting experience, built with the easily extensible debugger data model front and center. WinDbg Preview is using the same underlying engine as WinDbg today, so all the commands, extensions, and workflows you're used to will still work perfectly fine.
 
 Here's some of the most notable things that have changed or are new.
 

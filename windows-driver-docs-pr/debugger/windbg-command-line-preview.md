@@ -14,11 +14,6 @@ ms.technology: windows-devices
 
 # WinDbg Preview - Command line startup options
 
-
-You can use /? to list the supported command line options.
-
-![Screen shot of command line help output listing about 50 options](images/windbgx-start-up-options.png)
-
 This following tables summarizes the available command line options.
 
 
@@ -75,8 +70,13 @@ Option | Description
 |
 
 
-
 For general information on the startup parameters, see [WinDbg Command-Line Options](windbg-command-line-options.md).
+
+
+You can use /? to list the supported command line options.
+
+![Screen shot of command line help output listing about 50 options](images/windbgx-start-up-options.png)
+
 
 
 ---
