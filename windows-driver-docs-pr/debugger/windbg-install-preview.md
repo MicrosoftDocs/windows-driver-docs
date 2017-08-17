@@ -45,11 +45,68 @@ WinDbg Preview installs to:
 
 ## Command line startup options
 
-For information on the startup parameters for WinDbg Preview, see [WinDbg Command-Line Options](windbg-command-line-options.md).
-
-You can use /? to list additional command line options.
+You can use /? to list the supported command line options.
 
 ![Screen shot of command line help output listing about 50 options](images/windbgx-start-up-options.png)
+
+This following tables summarizes the available command line options.
+
+
+**General Options**
+
+Option | Description
+|------ | -----------|
+? | Displays a summary of commands available.
+
+
+**Kernel Options**
+
+Option | Description
+|------ | -----------|
+k | Starts a kernel debugging session. 
+d | After a reboot, the debugger will break into the target computer as soon as a kernel module is loaded.
+kqm | Starts KD in quiet mode. 
+kl | Starts a kernel debugging session on the same machine as the debugger. 
+kx | Starts a kernel debugging session using an EXDI driver.
+ 
+
+**User Mode Options**
+
+Option | Description
+|------ | -----------|
+o | Debugs all processes launched by the target application (child processes). 
+g | Ignores the initial breakpoint in target application. 
+G |Ignores the final breakpoint in target application. 
+pv | Specifies that the debugger should attach to the target process noninvasively.
+cimp | Specifies that any processes created will use an implicit command-line set by the server instead of a user-given command-line string from the client. 
+
+
+**Target Options**
+
+Option | Description
+|------ | -----------|
+premote | Connects to a process server (dbgsrv) that is already running. 
+p| Specifies the decimal process ID to be debugged.
+tid | Specifies the thread ID of a thread to be resumed when the debugging session is started. 
+psn | Specifies the name of the service contained in the process to be debugged. This is used to debug a process that is already running.
+pn | Specifies the name of the process to be debugged.
+z | Specifies the name of a crash dump file to debug. 
+remote | Connects to a debugging server that is already running
+
+**Symbol Options**
+(Content Pending)
+
+Option | Description
+|------ | -----------|
+|
+|
+| 
+|
+|
+
+
+
+For general information on the startup parameters, see [WinDbg Command-Line Options](windbg-command-line-options.md).
 
 
 ## Debugger coexistence  
