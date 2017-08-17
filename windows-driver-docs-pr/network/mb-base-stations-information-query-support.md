@@ -333,6 +333,7 @@ This event is sent if the value of *Location Area Code*/*Tracking Area Code* cha
 ### MBIM_LOCATION_INFO
 
 | Offset | Size | Field | Type | Description |
+| --- | --- | --- | --- | --- |
 | 0 | 4 | LocationAreaCode | UINT32 | The GSM/UMTS area code of the current location. Return 0xffffffff when the current system type is not applicable. |
 | 4 | 4 | TrackingAreaCode | UINT32 | The LTE tracking area code of the current location. Return 0xffffffff when the current system type is not applicable. |
 | 8 | 4 | CellID | UINT32 | The ID of the cellular tower. Return 0xffffffff when *CellID* is not available. |
