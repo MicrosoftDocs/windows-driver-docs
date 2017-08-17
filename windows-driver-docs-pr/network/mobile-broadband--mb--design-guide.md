@@ -64,6 +64,8 @@ This section includes the following topics:
 
 [MB Protocol Configuration Operations (PCO)](mb-protocol-configuration-operations--pco-.md)
 
+[MB UICC reset and modem reset operations](mb-uicc-reset-and-modem-reset-operations.md)
+
 [MB SAR Platform Support](mb-sar-platform-support.md)
 
 [MB base stations information query support](mb-base-stations-information-query-support.md)
