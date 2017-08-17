@@ -59,7 +59,6 @@ bool didSucceed(LONG status) {
 		break;
 	case ERROR_ACCESS_DENIED: // 5L
 		log("Access denied");
-		std::cout << "Access denied" << std::endl;
 		break;
 	case ERROR_GEN_FAILURE: // 31L
 		log("General failure");
@@ -71,7 +70,7 @@ bool didSucceed(LONG status) {
 	return false;
 }
 
-// Gets the main display, which has a source position of (0,0)
+// Gets the main display, which may have a source position of (0,0)
 // Assumes that the passed in arrays were initialized via a successful
 // QueryDisplayConfig call.
 // Returns NULL if main display not found.
