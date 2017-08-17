@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 OID_WWAN_PCO reports the status and the payload of a PCO value that the modem has received from the operator network. The PCO value that is returned from the modem corresponds to the PDN that the port number specifies in the OID request structure.
 
-For query requests, the modem first responds with NDIS_STATUS_INDICATION_REQUIRED when it receives this OID. An [NDIS_STATUS_WWAN_PCO_STATUS](ndis-status-wwan-pco-status.md) notification will be returned containing an [NDIS_WWAN_PCO_STATUS](TBD) structure when the query request is completed. **NDIS_WWAN_PCO_STATUS**, in turn, contains the PCO status and a [WWAN_PCO_VALUE](TBD) structure that contains the PCO value.
+For query requests, the modem first responds with NDIS_STATUS_INDICATION_REQUIRED when it receives this OID. An [NDIS_STATUS_WWAN_PCO_STATUS](ndis-status-wwan-pco-status.md) notification will be returned containing an [NDIS_WWAN_PCO_STATUS](TBD) structure when the query request is completed. **NDIS_WWAN_PCO_STATUS**, in turn, contains the PCO status and a [WWAN_PCO_VALUE](TBD) structure that represents the PCO value.
 
 Set requests are not applicable.
 

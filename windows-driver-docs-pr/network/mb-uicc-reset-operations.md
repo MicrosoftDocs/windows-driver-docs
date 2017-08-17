@@ -17,14 +17,14 @@ This section defines MBIM CID commands and data structures, as well as NDIS OID 
 
 ## MBIM_CID_MS_UICC_RESET
 
-The host sends MBIM_CID_MS_UICC_RESET to the MBIM function to reset the UICC or to query the pass-through state of the function.
+The host sends MBIM_CID_MS_UICC_RESET to the MBIM function to reset the UICC or to query the passthrough state of the function.
 
-When the host requests that the function reset the UICC, it specifies a pass-through action.
+When the host requests that the function reset the UICC, it specifies a passthrough action.
 
-- If the host specifies the MBIMMsUICCPassThroughEnable pass-through action, the function resets the UICC and, upon UICC power up, treats the UICC as if it were in a pass-through mode that allows communication between host and UICC (even if the UICC has no Telecom UICC file system). The function does not send any APDUs to the card and does not interfere at any time with the communication between host and UICC.
-- If the host specifies the MBIMMsUICCPassThroughDisable pass-through action, the function resets the UICC and, upon UICC power up, treats the UICC as a regular telecom UICC and expects a Telecom UICC file system to be present on the UICC.
+- If the host specifies the MBIMMsUICCPassThroughEnable passthrough action, the function resets the UICC and, upon UICC power up, treats the UICC as if it were in a passthrough mode that allows communication between host and UICC (even if the UICC has no Telecom UICC file system). The function does not send any APDUs to the card and does not interfere at any time with the communication between host and UICC.
+- If the host specifies the MBIMMsUICCPassThroughDisable passthrough action, the function resets the UICC and, upon UICC power up, treats the UICC as a regular telecom UICC and expects a Telecom UICC file system to be present on the UICC.
 
-When the host queries the function to determine the pass-through status, if the function responds with the MBIMMsUICCPassThroughEnabled status, it means that pass-through mode is enabled. If the function responds with the MBIMMsUICCPassThroughDisabled status, it means that pass-through mode is disabled.
+When the host queries the function to determine the passthrough status, if the function responds with the MBIMMsUICCPassThroughEnabled status, it means that passthrough mode is enabled. If the function responds with the MBIMMsUICCPassThroughDisabled status, it means that passthrough mode is disabled.
 
 Service name: Microsoft Low-Level UICC Access
 
@@ -51,7 +51,7 @@ The InformationBuffer shall be null and InformationBufferLength shall be zero.
 
 #### MBIM_SET_MS_UICC_RESET
 
-The MBIM_SET_MS_UICC_RESET structure contains the pass-through action specified by the host.
+The MBIM_SET_MS_UICC_RESET structure contains the passthrough action specified by the host.
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
@@ -59,7 +59,7 @@ The MBIM_SET_MS_UICC_RESET structure contains the pass-through action specified 
 
 #### MBIM_MS_UICC_PASSTHROUGH_ACTION
 
-The MBIM_MS_UICC_PASSTHROUGH_ACTION enumeration defines the types of pass-through actions the host can specify to the MBIM function.
+The MBIM_MS_UICC_PASSTHROUGH_ACTION enumeration defines the types of passthrough actions the host can specify to the MBIM function.
 
 | Types | Value |
 | --- | --- |
@@ -70,7 +70,7 @@ The MBIM_MS_UICC_PASSTHROUGH_ACTION enumeration defines the types of pass-throug
 
 #### MBIM_MS_UICC_RESET_INFO
 
-The MBIM_MS_UICC_RESET_INFO structure contains the pass-through status of the MBIM function.
+The MBIM_MS_UICC_RESET_INFO structure contains the passthrough status of the MBIM function.
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
@@ -78,7 +78,7 @@ The MBIM_MS_UICC_RESET_INFO structure contains the pass-through status of the MB
 
 #### MBIM_MS_UICC_PASSTHROUGH_STATUS
 
-The MBIM_MS_UICC_PASSTHROUGH_STATUS enumeration defines the types of pass-through status the MBIM function specifies to the host.
+The MBIM_MS_UICC_PASSTHROUGH_STATUS enumeration defines the types of passthrough status the MBIM function specifies to the host.
 
 | Types | Value |
 | --- | --- |
@@ -102,12 +102,16 @@ Not applicable.
 
 The NDIS equivalent for MBIM_CID_MS_UICC_RESET is [OID_WWAN_UICC_RESET](oid-wwan-uicc-reset.md). 
 
-For Set requests, OID_WWAN_UICC_RESET uses the [NDIS_WWAN_]
+For Set requests, OID_WWAN_UICC_RESET uses the [NDIS_WWAN_SET_UICC_RESET](TBD) structure, which in turn contains a [WWAN_UICC_RESET](TBD) structure that represents the passthrough action the host specifies for the UICC after it resets.
+
+For responses to Query requests for the passthrough status, the modem miniport driver uses the [NDIS_WWAN_UICC_RESET_INFO](TBD) structure, which in turn contains a [WWAN_UICC_RESET_INFO](TBD) structure that represents the passthrough status of the UICC.
 
 ## Related topics
 
 [MB UICC reset and modem reset operations](mb-uicc-reset-and-modem-reset-operations.md)
 
 [MB modem reset operations](mb-modem-reset-operations.md)
+
+[OID_WWAN_UICC_RESET](oid-wwan-uicc-reset.md)
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Slicer%20settings%20%20RELEASE:%20%289/2/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
