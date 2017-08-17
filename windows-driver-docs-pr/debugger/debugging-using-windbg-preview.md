@@ -10,10 +10,9 @@ description: This section describes how to perform basic debugging tasks using t
 
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Debugging Using WinDbg Preview 
 
+WinDbg Preview is a brand new version of WinDbg with more modern visuals, more performant windows, a full-fledged scripting experience, built with the easily extensible debugger data model front and center. WinDbg Preview is using the same underlying engine as WinDbg today, so all the commands, extensions, and workflows you're used to will still work perfectly fine.
 
-Welcome to the WinDbg Preview. This next gen debugger is being developed with the debugger community in mind. For information on providing feedback to shape the future of WinDbg , see [Providing feedback](#providingfeedback).
-
-For information on what's new in the current release, see [WinDbg Preview - What's New](windbg-what-is-new-preview.md).
+For information on what's new in the most recent release, see [WinDbg Preview - What's New](windbg-what-is-new-preview.md).
 
 For the latest news, tips, and tricks from the debugger dev team, refer to the debugger tools team blog.
 [https://blogs.msdn.microsoft.com/windbg/](https://blogs.msdn.microsoft.com/windbg/)
@@ -30,7 +29,7 @@ These topics describe how to get connected to the environment that you want to d
 - [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md)
 - [WinDbg Preview - Start a kernel mode session](windbg-kernel-mode-preview.md)
 
-These topics describe how to complete common tasks, organized by the menu tabs.
+These topics describe some common tasks, organized by the menu tabs.
 
 - [WinDbg Preview - File menu](windbg-file-preview.md)
 - [WinDbg Preview - Home menu](windbg-home-preview.md)
@@ -42,18 +41,18 @@ These topics describe how to complete common tasks, organized by the menu tabs.
 
 ## <span id="providingfeedback"></span>Providing feedback
 
-Your feedback will guide the debugger tool development effort going forward. 
+Your feedback will help guide WinDbg's development going forward. 
 
-- If you have feedback such as a feature that you really want to see, use the Feedback Hub.
+- If you have feedback such as a feature that you really want to see or a bug that makes something difficult, use the Feedback Hub.
 
 ![Screen shot of feedback hub showing feedback options including the add new feedback button](images/windbgx-feedback.png)
 
 
-## Features of the next generation debugger
+## Major Features of WinDbg Preview
 
-The WinDbg Preview is the next generation debugger with a contemporary interface. Windows now load asynchronously and can be canceled - When you run another command, WinDbgNext will stop the loading of your locals, watch, or other windows. 
+WinDbg Preview is a brand new version of WinDbg with more modern visuals, more performant windows, a full-fledged scripting experience, built with the easily extensible debugger data model front and center. WinDbg Preview is using the same underlying engine as WinDbg today, so all the commands, extensions, and workflows you're used to will still work perfectly fine.
 
-The UI has been completely rewritten using the Microsoft Windows Presentation Foundation (WPF) and Microsoft Extensibility Framework (MEF).  WinDbgNext is built on top of the debugger engine - dbgeng, and is structured to be highly componentized, with very low coupling between components. Components are composed primarily using MEF. The async/await pattern (Task Asynchronous Pattern) is used extensively for asynchronous queries to the debugger with a simple threading model. 
+Here's some of the most notable things that have changed or are new.
 
 ![Main screen in debugger](images/windbgx-main-menu.png)
 
@@ -67,8 +66,8 @@ Because the underling debugger engine is the same, all of the previous debugger 
 
 ![Screen shot of main screen in debugger](images/windbgx-start-debugging-menu.png)
 
-- **In product feedback channel** - Your feedback will guide the development effort going forward. For more information, see [Providing Feedback](#providing-feedback)
-- **Dump file processor detection** -Auto-detect dump processor architecture for managed dumps.
+- **Easy feedback channel** - Your feedback will guide the development effort going forward. For more information, see [Providing Feedback](#providing-feedback)
+- **Dump file processor detection** -Auto-detects processor architecture for easier managed debugging.
 - **Performance Improvements** Windows now load asynchronously and can be canceled - When you run another command, WinDbg Preview will stop the loading of your locals, watch, or other windows.
 
 
@@ -84,7 +83,7 @@ For more information, see [WinDbg Preview - View menu](windbg-view-preview.md).
 ![View menu in debugger](images/windbgx-view-menu.png)
 
 - **Command window** - Use the command window provides easy access to toggle DML and clear the debugger command window. All current debugger commands are compatible with and continue to work in WinDbg Preview.
-- **Source window** - Use the source windows to work with source code files.
+- **Source window** - Use the source windows to work with source code files, the new source windows should look more similar to the source windows you're used to seeing in every other modern editor.
 
 ### Enhanced breakpoint tracking  
 

@@ -35,7 +35,7 @@ Browse to the desired executable in the provided file dialog and open it.
 
 ## Launch Executable (advanced)
 
-Use this option to start an executable and attach to it it using a set of dialog boxes with advanced options. 
+Use this option to start an executable and attach to it it using a set of text boxes with advanced options. 
 
 Specify the following options:
 - Path to the executable, such as *C:\Windows\notepad.exe*
@@ -50,6 +50,9 @@ Specify the following options:
 Use this option to attach to an existing process.
 
 Select *Show process from all users* to show additional processes.
+
+> [!NOTE]
+> Items with a UAC shield will need the debugger to be elevated to attach.
 
 Use the pull down dialog on the *Attach* button to select *non-invasive attach*.
 
