@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Debugging Using WinDbg Preview 
 
-WinDbg Preview is a brand new version of WinDbg with more modern visuals, more performant windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. WinDbg Preview is using the same underlying engine as WinDbg today, so all the commands, extensions, and workflows you're used to will still work as they did before.
+WinDbg Preview is a brand-new version of WinDbg with more modern visuals, more performant windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. WinDbg Preview is using the same underlying engine as WinDbg today, so all the commands, extensions, and workflows you're used to will still work as they did before.
 
 For information on what's new in the most recent release, see [WinDbg Preview - What's New](windbg-what-is-new-preview.md).
 
@@ -88,7 +88,7 @@ For more information, see [WinDbg Preview - View menu](windbg-view-preview.md).
 ### Enhanced breakpoint tracking  
 
 - **Enable/Disable breakpoints** - The breakpoints window shows all your current breakpoints and provides easy access to enabling and disabling them. 
-- **Hit count** - The breakpoint window keep a running total of each time the breakpoint is hit.
+- **Hit count** - The breakpoint window keeps a running total of each time the breakpoint is hit.
 
 For more information, see [Breakpoints](windbg-breakpoints-preview.md).
 

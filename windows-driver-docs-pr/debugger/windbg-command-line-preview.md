@@ -14,8 +14,19 @@ ms.technology: windows-devices
 
 # WinDbg Preview - Command line startup options
 
+## Starting WinDbg Preview
+
+After WinDbg Preview is installed, the WinDbgX.exe is available to run from any path location. This capability is facilitated using AppExecutionAlias.
+
+
+## Command line startup options
+
+
 This following tables summarizes the available command line options.
 
+```
+WinDbgX [options]
+```
 
 **General Options**
 

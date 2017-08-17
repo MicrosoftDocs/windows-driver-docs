@@ -31,7 +31,7 @@ F10		| Step over
 F11		| Step Into
 Shift+F11 	| 	Step out
 F7		| Run to line
-Ctrl+Shift+I 	| 	Set instruction pointer to highlithed line
+Ctrl+Shift+I 	| 	Set instruction pointer to highlighted line
 Ctrl+Break or Alt+Del 	|  	Break
 Ctrl+Shift+F5 	| 	Restart
 Shift+F5  	| 	Stop debugging

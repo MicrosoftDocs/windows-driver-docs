@@ -19,7 +19,7 @@ This section describes how to how to use the scripting support in the WinDbg Pre
 
 ![Screen shot of scripting menu in debugger](images/windbgx-javascript-new-script.png)
 
-The WinDbg Preview script window features basic syntax highlighting, intellisense, and error recognition. 
+The WinDbg Preview script window features basic syntax highlighting, IntelliSense, and error recognition. 
 
 Use the ribbon buttons to:
 - Create a new script 

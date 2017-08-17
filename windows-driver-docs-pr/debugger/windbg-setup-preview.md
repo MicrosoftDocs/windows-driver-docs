@@ -2,7 +2,7 @@
 title: WinDbg Preview - Settings and workspaces
 description: This section describes how to setup the WinDbg preview debugger.
 ms.author: windowsdriverdev
-ms.date: 08/15/2017
+ms.date: 08/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,7 +31,7 @@ Workspaces allows you to save configuration information in the target connection
 
 The options in workspaces are saved upon closing the debugger or can be manually saved using *File* -> *Save Workspace*. 
 
-Workspaces are automatically loaded when launching from the recent targets list, or can be manually loaded in the file menu. 
+Workspaces are automatically loaded when launching from the recent targets list or they can be manually loaded in the file menu. 
 
 In addition to the target connection information, the following settings are stored in the workspaces file.
 
