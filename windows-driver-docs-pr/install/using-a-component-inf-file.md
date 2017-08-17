@@ -24,15 +24,17 @@ This page provides guidelines for the use of software components.
 
 To create components, an [extension INF file](using-an-extension-inf-file.md) specifies the [INF AddComponent Directive](inf-addcomponent-directive.md) one or more times in the [INF DDInstall.Components](inf-ddinstall-components-section.md) section.  For each software component referenced in an extension INF file, the system creates a virtual software-enumerated child device.  More than one driver package can reference the same software component. 
 
+
 Virtual device children can be updated independently just like any other device, as long as the parent device is started.  We recommend separating functionality into as many different groupings as makes sense from a servicing perspective, and then creating one software component for each grouping.
 
 You'll provide an INF file for each software component.  A component INF:
 
-    * Must be a [universal INF file](../install/using-a-universal-inf-file.md).
-    * Can specify Win32 user services using the [AddService directive](inf-addservice-directive.md).
-    * Can install software modules by specifying the the [**AddSoftware** directive](inf-addsoftware-directive.md) one or more times.
-    * Can install software using the [INF AddReg directive](inf-addreg-directive.md) and the [INF CopyFiles directive](inf-copyfiles-directive.md).
-    * Cannot specify a function driver service.
+* Must be a [universal INF file](../install/using-a-universal-inf-file.md).
+* Can specify Win32 user services using the [AddService directive](inf-addservice-directive.md).
+* Can install software modules by specifying the the [**AddSoftware** directive](inf-addsoftware-directive.md) one or more times.
+* Can install software using the [INF AddReg directive](inf-addreg-directive.md) and the [INF CopyFiles directive](inf-copyfiles-directive.md).
+* Cannot specify a function driver service.
+* Can be uninstalled by the user idependently of the parent device.
 
 You can find an [example of an component INF](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_component/osrfx2_DCHU_component/osrfx2_DCHU_component.inx) in the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).
 
