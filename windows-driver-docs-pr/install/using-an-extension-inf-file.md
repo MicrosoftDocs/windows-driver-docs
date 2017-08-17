@@ -22,7 +22,7 @@ Typical scenarios where you might want to use an extension INF include:
 
 * Modifying settings provided in a primary INF, such as customizing the device friendly name or modifying a hardware configuration setting.
 * Adding a proprietary filter driver.
-* Creating one or more software components by specifying the [INF AddComponent directive](inf-addcomponent-directive.md).
+* Creating one or more software components by specifying the [INF AddComponent directive](inf-addcomponent-directive.md) and providing a [component INF file](using-a-component-inf-file.md).
 
 In the following diagram, two different organizations have created two separate driver packages, which are shown in the dotted lines.  The first contains just an extension INF, and the second contains a component INF and a legacy software module.  The diagram also shows how an extension INF can reference a component INF, which can in turn reference software modules to install.
 
