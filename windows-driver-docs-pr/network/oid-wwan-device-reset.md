@@ -19,6 +19,8 @@ Modem miniport drivers must process query requests asynchronously, initially ret
 
 For Set requests, OID_WWAN_DEVICE_RESET uses the [NDIS_WWAN_SET_DEVICE_RESET](TBD) structure.
 
+Unsolicited events are not applicable.
+
 ## Requirements
 
 | | |

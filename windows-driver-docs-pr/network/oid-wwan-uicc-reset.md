@@ -19,6 +19,8 @@ Modem miniport drivers must process query requests asynchronously, initially ret
 
 For set requests, OID_WWAN_UICC_RESET uses the [NDIS_WWAN_SET_UICC_RESET](TBD) structure, which in turn contains a [WWAN_SET_UICC_RESET](TBD) structure that represents the passthrough action the host specifies for the miniport adapter after it resets the UICC. After reset is complete, the miniport adapter responds with the **NDIS_STATUS_WWAN_UICC_RESET_INFO** notification, which in turn contains a [NDIS_WWAN_UICC_RESET_INFO](TBD) structure, to indicate its passthrough status.
 
+Unsolicited events are not applicable.
+
 For more info about passthrough actions and passthrough status, see [MB UICC reset operations](mb-uicc-reset-operations.md).
 
 ## Requirements
