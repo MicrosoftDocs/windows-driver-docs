@@ -149,7 +149,7 @@ Controls whether the settings for Driver Verifier are enabled after a reboot. To
 </tr>
 <tr class="even">
 <td align="left"><p><span id="resetonunusualshutdown"></span><span id="RESETONUNUSUALSHUTDOWN"></span><strong>resetonunusualshutdown</strong></p></td>
-<td align="left"><p>Driver Verifier will persist until an unusual shutdown occurs. Its abbrevation, <strong>'rous'</strong>, can be used.
+<td align="left"><p>(Introduced in Windows 10, build 1709) Driver Verifier will persist until an unusual shutdown occurs. Its abbrevation, <strong>'rous'</strong>, can be used.
 </p></td>
 </tr>
 </tbody>
