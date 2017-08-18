@@ -21,10 +21,10 @@ The host sends MBIM_CID_MS_UICC_RESET to the MBIM function to reset the UICC or 
 
 When the host requests that the function reset the UICC, it specifies a passthrough action.
 
-- If the host specifies the MBIMMsUICCPassThroughEnable passthrough action, the function resets the UICC and, upon UICC power up, treats the UICC as if it were in a passthrough mode that allows communication between host and UICC (even if the UICC has no Telecom UICC file system). The function does not send any APDUs to the card and does not interfere at any time with the communication between host and UICC.
-- If the host specifies the MBIMMsUICCPassThroughDisable passthrough action, the function resets the UICC and, upon UICC power up, treats the UICC as a regular telecom UICC and expects a Telecom UICC file system to be present on the UICC.
+- If the host specifies the *MBIMMsUICCPassThroughEnable* passthrough action, the function resets the UICC and, upon UICC power up, treats the UICC as if it were in a passthrough mode that enables communication between the host and UICC (even if the UICC has no Telecom UICC file system). The function does not send any APDUs to the card and does not interfere at any time with the communication between the host and the UICC.
+- If the host specifies the *MBIMMsUICCPassThroughDisable* passthrough action, the function resets the UICC and, upon UICC power up, treats the UICC as a regular Telecom UICC and expects a Telecom UICC file system to be present on the UICC.
 
-When the host queries the function to determine the passthrough status, if the function responds with the MBIMMsUICCPassThroughEnabled status, it means that passthrough mode is enabled. If the function responds with the MBIMMsUICCPassThroughDisabled status, it means that passthrough mode is disabled.
+When the host queries the function to determine the passthrough status, if the function responds with the *MBIMMsUICCPassThroughEnabled* status, it means that passthrough mode is enabled. If the function responds with the *MBIMMsUICCPassThroughDisabled* status, it means that passthrough mode is disabled.
 
 Service name: Microsoft Low-Level UICC Access
 
@@ -101,10 +101,6 @@ Not applicable.
 ## OID_WWAN_UICC_RESET
 
 The NDIS equivalent for MBIM_CID_MS_UICC_RESET is [OID_WWAN_UICC_RESET](oid-wwan-uicc-reset.md). 
-
-For Set requests, OID_WWAN_UICC_RESET uses the [NDIS_WWAN_SET_UICC_RESET](TBD) structure, which in turn contains a [WWAN_SET_UICC_RESET](TBD) structure that represents the passthrough action the host specifies for the UICC after it resets.
-
-For responses to Query requests for the passthrough status, the modem miniport driver uses the [NDIS_WWAN_UICC_RESET_INFO](TBD) structure, which in turn contains a [WWAN_UICC_RESET_INFO](TBD) structure that represents the passthrough status of the UICC.
 
 ## Related topics
 
