@@ -25,7 +25,7 @@ The framework provides several object methods that enable your driver to obtain 
 To obtain WDM information about a driver and its devices, the driver can call the following methods:
 
 <a href="" id="wdffdoinitwdmgetphysicaldevice"></a>[**WdfFdoInitWdmGetPhysicalDevice**](https://msdn.microsoft.com/library/windows/hardware/ff547281)  
-Retrieves the physical device object (PDO). A driver can call this method before the driver has created a framework device object for the device.
+Retrieves the [**DEVICE_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147) structure that represents a device's physical device object (PDO). A driver can call this method before the driver has created a framework device object for the device.
 
 <a href="" id="wdfdevicewdmgetphysicaldevice"></a>[**WdfDeviceWdmGetPhysicalDevice**](https://msdn.microsoft.com/library/windows/hardware/ff546946)  
 Retrieves the WDM DEVICE\_OBJECT structure that represents a device's PDO. A driver can call this method after it has created a framework device object for the device.
