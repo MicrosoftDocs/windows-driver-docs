@@ -1094,7 +1094,7 @@
 #### [.while](-while.md)
 ### [Commands](commands.md)
 #### [ENTER (Repeat Last Command)](enter--repeat-last-command-.md)
-#### [$&lt;, $&gt;&lt;, $$&lt;, $$&gt;&lt;, $$&gt;a&lt; (Run Script File)](-----------------------a---run-script-file-.md)
+#### [$<, $><, $$<, $$><, $$ >a< (Run Script File)](-----------------------a---run-script-file-.md)
 #### [? (Command Help)](---command-help-.md)
 #### [? (Evaluate Expression)](---evaluate-expression-.md)
 #### [?? (Evaluate C++ Expression)](----evaluate-c---expression-.md)
