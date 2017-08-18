@@ -34,7 +34,7 @@ You'll provide an INF file for each software component.  A component INF:
 * Can install software modules by specifying the the [**AddSoftware** directive](inf-addsoftware-directive.md) one or more times.
 * Can install software using the [INF AddReg directive](inf-addreg-directive.md) and the [INF CopyFiles directive](inf-copyfiles-directive.md).
 * Cannot specify a function driver service.
-* Can be uninstalled by the user idependently of the parent device.
+* Can be uninstalled by the user independently from the parent device.
 
 You can find an [example of an component INF](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_component/osrfx2_DCHU_component/osrfx2_DCHU_component.inx) in the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).
 

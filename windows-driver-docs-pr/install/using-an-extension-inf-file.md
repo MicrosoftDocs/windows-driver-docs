@@ -21,7 +21,6 @@ Starting in Windows 10, you can extend a driver package INF file's functionalit
 Typical scenarios where you might want to use an extension INF include:
 
 * Modifying settings provided in a primary INF, such as customizing the device friendly name or modifying a hardware configuration setting.
-* 
 * Creating one or more software components by specifying the [INF AddComponent directive](inf-addcomponent-directive.md) and providing a [component INF file](using-a-component-inf-file.md).
 
 You can find sample code for these three scenarios in the examples below on this page.
