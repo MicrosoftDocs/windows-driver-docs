@@ -13,11 +13,11 @@ ms.technology: windows-devices
 
 # OID_WWAN_UICC_RESET
 
-OID_WWAN_UICC_RESET is sent by the mobile broadband host to a modem miniport driver instance to reset its UICC smart card, or query the passthrough state of the driver instance's UICC.
+OID_WWAN_UICC_RESET is sent by the mobile broadband host to a modem miniport driver instance to reset its UICC smart card and specify the UICC's passthrough status after reset, or query the passthrough state of the driver instance's UICC.
 
 For query requests, the miniport driver responds with the [NDIS_WWAN_UICC_RESET_INFO](TBD) structure, which in turn contains a [WWAN_UICC_RESET_INFO](TBD) structure that represents the passthrough status of the driver instance's UICC.
 
-For Set requests, OID_WWAN_UICC_RESET uses the [NDIS_WWAN_SET_UICC_RESET](TBD) structure, which in turn contains a [WWAN_UICC_RESET](TBD) structure that represents the passthrough action the host specifies for the UICC after it resets.
+For Set requests, OID_WWAN_UICC_RESET uses the [NDIS_WWAN_SET_UICC_RESET](TBD) structure, which in turn contains a [WWAN_SET_UICC_RESET](TBD) structure that represents the passthrough action the host specifies for the UICC after it resets.
 
 ## Requirements
 
@@ -34,7 +34,7 @@ For Set requests, OID_WWAN_UICC_RESET uses the [NDIS_WWAN_SET_UICC_RESET](TBD) s
 
 [NDIS_WWAN_SET_UICC_RESET](TBD)
 
-[WWAN_UICC_RESET](TBD)
+[WWAN_SET_UICC_RESET](TBD)
 
 [MB UICC reset operations](mb-uicc-reset-operations.md)
 

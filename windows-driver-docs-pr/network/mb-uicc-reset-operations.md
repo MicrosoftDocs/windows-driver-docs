@@ -102,7 +102,7 @@ Not applicable.
 
 The NDIS equivalent for MBIM_CID_MS_UICC_RESET is [OID_WWAN_UICC_RESET](oid-wwan-uicc-reset.md). 
 
-For Set requests, OID_WWAN_UICC_RESET uses the [NDIS_WWAN_SET_UICC_RESET](TBD) structure, which in turn contains a [WWAN_UICC_RESET](TBD) structure that represents the passthrough action the host specifies for the UICC after it resets.
+For Set requests, OID_WWAN_UICC_RESET uses the [NDIS_WWAN_SET_UICC_RESET](TBD) structure, which in turn contains a [WWAN_SET_UICC_RESET](TBD) structure that represents the passthrough action the host specifies for the UICC after it resets.
 
 For responses to Query requests for the passthrough status, the modem miniport driver uses the [NDIS_WWAN_UICC_RESET_INFO](TBD) structure, which in turn contains a [WWAN_UICC_RESET_INFO](TBD) structure that represents the passthrough status of the UICC.
 
