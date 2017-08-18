@@ -26,11 +26,9 @@ When the host requests that the function reset the UICC, it specifies a passthro
 
 When the host queries the function to determine the passthrough status, if the function responds with the *MBIMMsUICCPassThroughEnabled* status, it means that passthrough mode is enabled. If the function responds with the *MBIMMsUICCPassThroughDisabled* status, it means that passthrough mode is disabled.
 
-Service name: Microsoft Low-Level UICC Access
-
-Service UUID: **UUID_MS_UICC_LOW_LEVEL**
-
-Service UUID Value: **C2F6588E-F037-4BC9-8665-F4D44BD09367**
+| Service name | UUID | UUID value |
+| --- | --- | --- |
+| Microsoft Low-Level UICC Access | UUID_MS_UICC_LOW_LEVEL | C2F6588E-F037-4BC9-8665-F4D44BD09367 |
 
 | CID | Command code | Set | Query | Notify |
 | --- | --- | --- | --- | --- |
@@ -45,7 +43,7 @@ Service UUID Value: **C2F6588E-F037-4BC9-8665-F4D44BD09367**
 
 ### Query
 
-The InformationBuffer shall be null and InformationBufferLength shall be zero.
+The InformationBuffer shall be null and *InformationBufferLength* shall be zero.
 
 ### Set
 

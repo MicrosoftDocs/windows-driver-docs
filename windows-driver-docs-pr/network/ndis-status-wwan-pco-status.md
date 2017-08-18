@@ -44,7 +44,7 @@ This notification uses the [NDIS_WWAN_PCO_STATUS](TBD) structure.
 
 [OID_WWAN_PCO](oid-wwan-pco.md)
 
-[**NDIS_WWAN_PCO_STATUS**](TBD)
+[NDIS_WWAN_PCO_STATUS](TBD)
 
 [WWAN_PCO_VALUE](TBD)
 

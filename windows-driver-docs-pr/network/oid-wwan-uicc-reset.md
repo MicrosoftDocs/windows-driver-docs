@@ -13,11 +13,11 @@ ms.technology: windows-devices
 
 # OID_WWAN_UICC_RESET
 
-OID_WWAN_UICC_RESET is sent by the mobile broadband host to a modem miniport adapter to reset its UICC smart card and specify the UICC's passthrough status after reset, or query the passthrough state of the adapter.
+OID_WWAN_UICC_RESET is sent by the mobile broadband host to a modem miniport adapter to reset a UICC smart card and specify the UICC's passthrough status after reset, or query the passthrough state of the adapter.
 
-For query requests, the miniport adapter responds with the [NDIS_WWAN_UICC_RESET_INFO](TBD) structure, which in turn contains a [WWAN_UICC_RESET_INFO](TBD) structure that represents the passthrough status of the adapter.
+Modem miniport drivers must process query requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request before later sending an [NDIS_STATUS_WWAN_UICC_RESET_INFO](ndis-status-wwan-uicc-reset-info.md) notification containing a [NDIS_WWAN_UICC_RESET_INFO](TBD) structure, which in turn contains a [WWAN_UICC_RESET_INFO](TBD) structure that represents the passthrough status of the adapter.
 
-For Set requests, OID_WWAN_UICC_RESET uses the [NDIS_WWAN_SET_UICC_RESET](TBD) structure, which in turn contains a [WWAN_SET_UICC_RESET](TBD) structure that represents the passthrough action the host specifies for the miniport adapter after it resets the UICC. After reset is complete, the miniport adapter responds with **NDIS_WWAN_UICC_RESET_INFO** to indicate its passthrough status.
+For set requests, OID_WWAN_UICC_RESET uses the [NDIS_WWAN_SET_UICC_RESET](TBD) structure, which in turn contains a [WWAN_SET_UICC_RESET](TBD) structure that represents the passthrough action the host specifies for the miniport adapter after it resets the UICC. After reset is complete, the miniport adapter responds with the **NDIS_STATUS_WWAN_UICC_RESET_INFO** notification, which in turn contains a [NDIS_WWAN_UICC_RESET_INFO](TBD) structure, to indicate its passthrough status.
 
 For more info about passthrough actions and passthrough status, see [MB UICC reset operations](mb-uicc-reset-operations.md).
 
@@ -37,6 +37,8 @@ For more info about passthrough actions and passthrough status, see [MB UICC res
 [NDIS_WWAN_SET_UICC_RESET](TBD)
 
 [WWAN_SET_UICC_RESET](TBD)
+
+[NDIS_STATUS_WWAN_UICC_RESET_INFO](ndis-status-wwan-uicc-reset-info.md)
 
 [MB UICC reset operations](mb-uicc-reset-operations.md)
 
