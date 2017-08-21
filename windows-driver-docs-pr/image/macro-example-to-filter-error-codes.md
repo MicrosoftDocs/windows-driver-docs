@@ -12,7 +12,8 @@ ms.technology: windows-devices
 
 # Macro Example to Filter Error Codes
 
-**Important** WSD Challenger has been deprecated and will be removed from Windows in 2018.
+> [!IMPORTANT]  
+> WSD Challenger functionality has been deprecated and all WSD Challenger-related documentation will be removed in 2018.
 
 The following macro example filters communication failure error codes.
 
