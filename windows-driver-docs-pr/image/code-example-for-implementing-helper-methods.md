@@ -12,7 +12,8 @@ ms.technology: windows-devices
 
 # Code Example for Implementing Helper Methods
 
-**Important** WSD Challenger has been deprecated and will be removed from Windows in 2018.
+> [!IMPORTANT]  
+> WSD Challenger functionality has been deprecated and all WSD Challenger-related documentation will be removed in 2018.
 
 The following code example shows the implementation of the helper methods that are used to initialize the WSD Challenge interface and register the device challenge.
 
