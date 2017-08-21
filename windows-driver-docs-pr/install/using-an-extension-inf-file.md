@@ -11,15 +11,23 @@ ms.technology: windows-devices
 
 # Using an Extension INF File
 
-Starting in Windows 10, you can extend a driver package INF file's functionality by providing an additional INF file called an extension INF.  In one common scenario, a device manufacturer (IHV) provides a base driver and a primary INF, and then a system builder (OEM) provides an extension INF that supplements and in some cases overrides the configuration and settings of the primary INF.
+Starting in Windows 10, you can extend a driver package INF file's functionality by providing an additional INF file called an extension INF.  An extension INF:
 
-The extension INF might modify some of the settings, such as customizing the device friendly name, modifying a hardware configuration setting, or adding a filter driver.
+* Augments functionality provided by a primary INF.
+* Enhances the value of the device, but is not necessary for the base driver to work.
+* Must be a [universal INF file](../install/using-a-universal-inf-file.md).
+* Can be updated independently from the primary INF.
 
-Primary and extension INFs for the same device can be updated independently by different organizations.
+Typical scenarios where you might want to use an extension INF include:
 
-You can associate multiple extension INFs with the same device.
+* Modifying settings provided in a primary INF, such as customizing the device friendly name or modifying a hardware configuration setting.
+* Creating one or more software components by specifying the [INF AddComponent directive](inf-addcomponent-directive.md) and providing a [component INF file](using-a-component-inf-file.md).
 
-An extension INF must be a [universal INF file](../install/using-a-universal-inf-file.md).
+You can find sample code for these three scenarios in the examples below on this page.
+
+In the following diagram, two different organizations have created two separate driver packages, which are shown in the dotted lines.  The first contains just an extension INF, and the second contains a component INF and a legacy software module.  The diagram also shows how an extension INF can reference a component INF, which can in turn reference software modules to install.
+
+![Extension and Component INF Hierarchy](images/extension-component-inf-hierarchy.png)
 
 ## How extension INF and primary INF work together
 
@@ -46,7 +54,7 @@ Example: A primary INF (V1) with extension A and B are installed on a device. An
 
 Here are the entries you need to define an INF as an extension INF.
 
-1.  Specify these values for **Class** and **ClassGuid** in the [**Version**](inf-version-section.md) section.
+1.  Specify these values for **Class** and **ClassGuid** in the [**Version**](inf-version-section.md) section. For more info on setup classes, see [System-Defined Device Setup Classes Available to Vendors](https://msdn.microsoft.com/library/windows/hardware/ff553426).
 
     ```
     [Version]
@@ -73,9 +81,11 @@ Here are the entries you need to define an INF as an extension INF.
 5.  Optionally, provide a **TargetComputers** section if you want to constrain which computers this INF can be installed on.  You might do this if you are using extension INFs with less specific hardware IDs or compatible IDs that are applicable to a large number of devices.
 6.  Do not define a service with `SPSVCINST_ASSOCSERVICE`.  However, an extension INF can define other services, such as a filter driver for the device.  For more info about specifying services, see [**INF AddService Directive**](inf-addservice-directive.md).
 
+The driver validation and submission process is the same for extension INFs as for regular INFs. For more info, see [Windows HLK Getting Started](https://msdn.microsoft.com/library/windows/hardware/dn915002).
+
 ## Example 1: Using an extension INF to set the device friendly name
 
-The following snippet is a complete extension INF that shows how to set the device friendly name.
+In one common scenario, a device manufacturer (IHV) provides a base driver and a primary INF, and then a system builder (OEM) provides an extension INF that supplements and in some cases overrides the configuration and settings of the primary INF.  The following snippet is a complete extension INF that shows how to set the device friendly name.
 
 ```
 [Version]
@@ -107,8 +117,95 @@ CONTOSO              = "Contoso"
 Device.ExtensionDesc = "Sample Device Extension"
 ```
 
-## Example 2: Filter Drivers
+## Example 2: Using an extension INF to install additional software
 
+The following snippet is a complete extension INF that is included the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).  This example uses [INF AddComponent directive](inf-addcomponent-directive.md) to create components that install a service and an executable.  For more info about what you can do in a component INF, see [Using a Component INF File](using-a-component-inf-file.md).
+
+To access this file online, see [`osrfx2_DCHU_extension.inx`](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx).
+
+```
+;/*++
+;
+;Copyright (c) Microsoft Corporation.  All rights reserved.
+;
+;   THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
+;   KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+;   IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR
+;   PURPOSE.
+;
+;Module Name:
+;
+;    osrfx2_DCHU_extension.INF
+;
+;Abstract:
+;
+;    Extension inf for the OSR FX2 Learning Kit
+;
+;--*/
+
+[Version]
+Signature = "$WINDOWS NT$"
+Class = Extension
+ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+Provider = %ManufacturerName%
+ExtensionId = {3846ad8c-dd27-433d-ab89-453654cd542a}
+CatalogFile = osrfx2_DCHU_extension.cat
+DriverVer = 05/16/2017,15.14.36.721
+
+[Manufacturer]
+%ManufacturerName% = OsrFx2Extension, NT$ARCH$
+
+[OsrFx2Extension.NT$ARCH$]
+%OsrFx2.ExtensionDesc% = OsrFx2Extension_Install, USB\Vid_045e&Pid_94aa&mi_00
+%OsrFx2.ExtensionDesc% = OsrFx2Extension_Install, USB\Vid_0547&PID_1002
+
+[OsrFx2Extension_Install.NT]
+CopyInf=osrfx2_DCHU_usersvc.inf
+
+[OsrFx2Extension_Install.NT.HW]
+AddReg = OsrFx2Extension_AddReg
+AddReg = OsrFx2Extension_COMAddReg
+
+[OsrFx2Extension_AddReg]
+HKR, OSR, "OperatingParams",, "-Extended"
+HKR, OSR, "OperatingExceptions",, "x86"
+
+; Add all registry keys to successfully register the
+; In-Process ATL COM Server MSFT Sample.
+[OsrFx2Extension_COMAddReg]
+HKCR,AppID\ATLDllCOMServer.DLL,AppID,,"{9DD18FED-55F6-4741-AF25-798B90C4AED5}"
+HKCR,AppID\{9DD18FED-55F6-4741-AF25-798B90C4AED5},,,"ATLDllCOMServer"
+HKCR,ATLDllCOMServer.SimpleObject,,,"SimpleObject Class"
+HKCR,ATLDllCOMServer.SimpleObject\CLSID,,,"{92FCF37F-F6C7-4F8A-AA09-1A14BA118084}"
+HKCR,ATLDllCOMServer.SimpleObject\CurVer,,,"ATLDllCOMServer.SimpleObject.1"
+HKCR,ATLDllCOMServer.SimpleObject.1,,,"SimpleObject Class"
+HKCR,ATLDllCOMServer.SimpleObject.1\CLSID,,,"{92FCF37F-F6C7-4F8A-AA09-1A14BA118084}"
+HKCR,CLSID\{92FCF37F-F6C7-4F8A-AA09-1A14BA118084},,,"SimpleObject Class"
+HKCR,CLSID\{92FCF37F-F6C7-4F8A-AA09-1A14BA118084}\InprocServer32,,%REG_EXPAND_SZ%,"%%SystemRoot%%\System32\ATLDllCOMServer.dll"
+HKCR,CLSID\{92FCF37F-F6C7-4F8A-AA09-1A14BA118084}\InprocServer32,ThreadingModel,,"Apartment"
+HKCR,CLSID\{92FCF37F-F6C7-4F8A-AA09-1A14BA118084}\ProgID,,,"ATLDllCOMServer.SimpleObject.1"
+HKCR,CLSID\{92FCF37F-F6C7-4F8A-AA09-1A14BA118084}\Programmable,,%FLG_ADDREG_KEYONLY%
+HKCR,CLSID\{92FCF37F-F6C7-4F8A-AA09-1A14BA118084}\TypeLib,,,"{9B23EFED-A0C1-46B6-A903-218206447F3E}"
+HKCR,CLSID\{92FCF37F-F6C7-4F8A-AA09-1A14BA118084}\VersionIndependentProgID,,,"ATLDllCOMServer.SimpleObject"
+
+[OsrFx2Extension_Install.NT.Components]
+AddComponent = osrfx2_DCHU_component,,OsrFx2Extension_ComponentInstall
+AddComponent = osrfx2_DCHU_usersvc,,OsrFx2Extension_ComponentInstall_UserSvc
+
+[OsrFx2Extension_ComponentInstall]
+ComponentIds=VID_045e&PID_94ab
+
+[OsrFx2Extension_ComponentInstall_UserSvc]
+ComponentIds=VID_045e&PID_94ac
+
+[Strings]
+ManufacturerName = "Contoso"
+OsrFx2.ExtensionDesc = "OsrFx2 DCHU Device Extension"
+REG_EXPAND_SZ = 0x00020000
+FLG_ADDREG_KEYONLY = 0x00000010
+```
+
+## Example 3: Using an extension INF to install a filter driver
 
 You can also use an extension INF to install a filter driver for a device that uses system-supplied device drivers. The extension INF specifies the hardware ID of the device, and provides the service and filter driver settings.
 
@@ -169,16 +266,6 @@ FilterSample.ServiceDesc = "Sample Upper Filter"
 
 ## Related topics
 
-[Using a Universal INF File](using-a-universal-inf-file.md)
-
-[Getting Started with Universal Drivers](../develop/getting-started-with-universal-drivers.md)
-
- 
-
- 
-
-
-
-
-
-
+* [Using a Universal INF File](using-a-universal-inf-file.md)
+* [Getting Started with Universal Drivers](../develop/getting-started-with-universal-drivers.md)
+* [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU)
