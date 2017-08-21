@@ -52,11 +52,11 @@ Not applicable.
 
 ### Status codes
 
-The following status codes are applicable.
+The following status codes are applicable. Status is returned as an asynchronous response to a set operation after reset is complete.
 
 | Status code | Description |
 | --- | --- |
-| MBIM_STATUS_SUCCESS | Basic MBIM status as defined for all commands. |
+| MBIM_STATUS_SUCCESS | The operation succeeded. |
 | MBIM_STATUS_BUSY | The device is busy. |
 | MBIM_STATUS_FAILURE | The operation failed. |
 | MBIM_STATUS_NO_DEVICE_SUPPORT | The device does not support this operation. |
