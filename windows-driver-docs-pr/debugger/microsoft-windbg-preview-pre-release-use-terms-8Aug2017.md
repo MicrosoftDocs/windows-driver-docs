@@ -1,6 +1,6 @@
 ---
-title: Microsoft WinDbg Preview - Pre-Release Use Terms_8Aug2017
-description: Microsoft WinDbg Preview - Pre-Release Use Terms_8Aug2017
+title: WinDbg Preview - Software License Terms
+description: WinDbg Preview - Software License Terms
 ms.assetid: ECDF9741-F8F6-498B-8033-8CB392021BB8
 ms.author: windowsdriverdev
 ms.date: 08/18/2017
@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Microsoft WinDbg Preview - Pre-Release Use Terms_8Aug2017
+# WinDbg Preview - Software License Terms
 
 ## MICROSOFT SOFTWARE LICENSE TERMS
 ## MICROSOFT WINDBG PREVIEW
