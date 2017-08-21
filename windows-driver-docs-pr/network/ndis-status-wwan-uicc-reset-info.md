@@ -26,11 +26,11 @@ This notification uses the [NDIS_WWAN_UICC_RESET_INFO](TBD) structure.
 | | |
 | --- | --- |
 | Version | Windows 10, version 1709 |
-| Header | Ntddndis.h (include Ndis.h) |
+| Header | Ndis.h |
 
 ## See also
 
-[OID_WWAN_UICC_REST](oid-wwan-uicc-reset.md)
+[OID_WWAN_UICC_RESET](oid-wwan-uicc-reset.md)
 
 [NDIS_WWAN_UICC_RESET_INFO](TBD)
 

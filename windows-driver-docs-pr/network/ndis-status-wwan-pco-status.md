@@ -38,7 +38,7 @@ This notification uses the [NDIS_WWAN_PCO_STATUS](TBD) structure.
 | | |
 | --- | --- |
 | Version | Windows 10, version 1709 |
-| Header | Ntddndis.h (include Ndis.h) |
+| Header | Ndis.h |
 
 ## See also
 
