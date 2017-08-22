@@ -45,7 +45,8 @@ There are five main steps to the Hardware Program registration.
 
 3.  Sign and upload a file
     > [!NOTE]
-    > The following three steps no longer need to be completed within the same browser session. If you close and reopen your web browser, you no longer need to start over.
+    > The following three steps no longer need to be completed within the same browser session.
+    
     1. Download the provided signable file.
     2. Sign the file with signtool.exe and your code signing certificate.
     3. Upload the signed file. Your company name and ID number is extracted from the signed file.
