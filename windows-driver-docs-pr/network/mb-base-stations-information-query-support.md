@@ -283,7 +283,7 @@ The MBIM_CDMA_MRL_INFO data structure is designed for the CDMA2000 network type.
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
-| 0 | 4 | ServingCellFlag | UINT32 | UINT32	Indicates whether this is a serving cell. A value of 1 indicates a serving cell, while a value of 0 indicates a neighboring cell. There may be more than one serving cell at a time (notably while in a call). |
+| 0 | 4 | ServingCellFlag | UINT32 | Indicates whether this is a serving cell. A value of 1 indicates a serving cell, while a value of 0 indicates a neighboring cell. There may be more than one serving cell at a time (notably while in a call). |
 | 4 | 4 | NID | UINT32 | The Network ID (0-65535). Use 0xFFFFFFFF when this information is not available. |
 | 8 | 4 | SID | UINT32 | The System ID (0-32767). Use 0xFFFFFFFF when this information is not available. |
 | 12 | 4 | BaseStationId | UINT32 | The Base Station ID (0-65535). Use 0xFFFFFFFF when this information is not available. |
