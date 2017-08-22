@@ -97,12 +97,12 @@ The MBIM_GSM_SERVING_CELL_INFO structure contains information about the GSM serv
 | --- | --- | --- | --- | --- |
 | 0 | 4 | ProviderIdOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to a numeric (0-9) string called *ProviderId* that represents the network provider identity. This string is a concatenation of a three-digit Mobile Country Code (MCC) and a two or three-digit Mobile Network Code (MNC). This member can be NULL when no *ProviderId* information is returned. |
 | 4 | 4 | ProviderIdSize | SIZE(0..12) | The size used for *ProviderId*. |
-| 8 | 4 | LocationAreaCode | UINT32 | The Location Area Code (0..65535). Use 0xffffffff when this information is not available. |
-| 12 | 4 | CellID | UINT32 | The Cell ID (0..65535). Use 0xffffffff when this information is not available. |
-| 16 | 4 | TimingAdvance | UINT32 | The Timing Advance (0..255) in bit periods, where a bit period is 48/13µs. Use 0xffffffff when this information is not available. |
-| 20 | 4 | ARFCN | UINT32 | The Absolute Radio Frequency Channel Number of the serving cell (0..1023). Use 0xffffffff when this information is not available. |
-| 24 | 4 | BaseStationId | UINT32 | The Base Station ID - the base station color code and the network identity code. Use 0xffffffff when this information is not available. |
-| 28 | 4 | RxLevel | UINT32 | The received signal strength of the serving cell (0..63), where <p>`X = 0, if RSS < -110 dBm`</p><p>`X = 63, if RSS > -47 dBm`</p><p>`X = integer [RSS + 110], if -110 <= RSS <= -47`</p> Use 0xffffffff when this information is not available. |
+| 8 | 4 | LocationAreaCode | UINT32 | The Location Area Code (0..65535). Use 0xFFFFFFFF when this information is not available. |
+| 12 | 4 | CellID | UINT32 | The Cell ID (0..65535). Use 0xFFFFFFFF when this information is not available. |
+| 16 | 4 | TimingAdvance | UINT32 | The Timing Advance (0..255) in bit periods, where a bit period is 48/13µs. Use 0xFFFFFFFF when this information is not available. |
+| 20 | 4 | ARFCN | UINT32 | The Absolute Radio Frequency Channel Number of the serving cell (0..1023). Use 0xFFFFFFFF when this information is not available. |
+| 24 | 4 | BaseStationId | UINT32 | The Base Station ID - the base station color code and the network identity code. Use 0xFFFFFFFF when this information is not available. |
+| 28 | 4 | RxLevel | UINT32 | The received signal strength of the serving cell (0..63), where <p>`X = 0, if RSS < -110 dBm`</p><p>`X = 63, if RSS > -47 dBm`</p><p>`X = integer [RSS + 110], if -110 <= RSS <= -47`</p> Use 0xFFFFFFFF when this information is not available. |
 | 32 |   | DataBuffer | DATABUFFER | The data buffer containing *ProviderId*. |
 
 ##### MBIM_GSM_NMR
@@ -122,11 +122,11 @@ The MBIM_GSM_NMR_INFO structure contains information about a neighboring GSM cel
 | --- | --- | --- | --- | --- |
 | 0 | 4 | ProviderIdOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to a numeric (0-9) string called *ProviderId* that represents the network provider identity. This string is a concatenation of a three-digit Mobile Country Code (MCC) and a two or three-digit Mobile Network Code (MNC). This member can be NULL when no *ProviderId* information is returned. |
 | 4 | 4 | ProviderIdSize | SIZE(0..12) | The size used for *ProviderId*. |
-| 8 | 4 | LocationAreaCode | UINT32 | The Location Area Code (0..65535). Use 0xffffffff when this information is not available. |
-| 12 | 4 | CellID | UINT32 | The Cell ID (0..65535). Use 0xffffffff when this information is not available. |
-| 16 | 4 | ARFCN | UINT32 | The Absolute Radio Frequency Channel Number of the serving cell (0..1023). Use 0xffffffff when this information is not available. |
-| 20 | 4 | BaseStationId | UINT32 | The radio base station ID of the serving cell (0..63). Use 0xffffffff when this information is not available. |
-| 24 | 4 | RxLevel | UINT32 | The received signal strength of the serving cell (0..63), where <p>`X = 0, if RSS < -110 dBm`</p><p>`X = 63, if RSS > -47 dBm`</p><p>`X = integer [RSS + 110], if -110 <= RSS <= -47`</p> Use 0xffffffff when this information is not available. |
+| 8 | 4 | LocationAreaCode | UINT32 | The Location Area Code (0..65535). Use 0xFFFFFFFF when this information is not available. |
+| 12 | 4 | CellID | UINT32 | The Cell ID (0..65535). Use 0xFFFFFFFF when this information is not available. |
+| 16 | 4 | ARFCN | UINT32 | The Absolute Radio Frequency Channel Number of the serving cell (0..1023). Use 0xFFFFFFFF when this information is not available. |
+| 20 | 4 | BaseStationId | UINT32 | The radio base station ID of the serving cell (0..63). Use 0xFFFFFFFF when this information is not available. |
+| 24 | 4 | RxLevel | UINT32 | The received signal strength of the serving cell (0..63), where <p>`X = 0, if RSS < -110 dBm`</p><p>`X = 63, if RSS > -47 dBm`</p><p>`X = integer [RSS + 110], if -110 <= RSS <= -47`</p> Use 0xFFFFFFFF when this information is not available. |
 | 28 |   | DataBuffer | DATABUFFER | The data buffer containing *ProviderId*. |
 
 #### UMTS cell data structures
@@ -139,16 +139,16 @@ The MBIM_UMTS_SERVING_CELL_INFO structure contains information about the UMTS se
 | --- | --- | --- | --- | --- |
 | 0 | 4 | ProviderIdOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to a numeric (0-9) string called *ProviderId* that represents the network provider identity. This string is a concatenation of a three-digit Mobile Country Code (MCC) and a two or three-digit Mobile Network Code (MNC). This member can be NULL when no *ProviderId* information is returned. |
 | 4 | 4 | ProviderIdSize | SIZE(0..12) | The size used for *ProviderId*. |
-| 8 | 4 | LocationAreaCode | UINT32 | The Location Area Code (0..65535). Use 0xffffffff when this information is not available. |
-| 12 | 4 | CellID | UINT32 | The Cell ID (0..268435455). Use 0xffffffff when this information is not available. |
-| 16 | 4 | FrequencyInfoUL | UINT32 | The Frequency Info Uplink (0..16383). Use 0xffffffff when this information is not available. |
-| 20 | 4 | FrequencyInfoDL | UINT32 | The Frequency Info Downlink (0..16383). Use 0xffffffff when this information is not available. |
-| 24 | 4 | FrequencyInfoNT | UINT32 | The Frequency Info for TDD (0..16383). Use 0xffffffff when this information is not available. |
-| 28 | 4 | UARFCN | UINT32 | The UTRA Absolute Radio Frequency Channel Number for the serving cell (0..16383). Use 0xffffffff when this information is not available. |
-| 32 | 4 | PrimaryScramblingCode | UINT32 | The Primary Scrambling Code of the serving cell (0..511). Use 0xffffffff when this information is not available. |
+| 8 | 4 | LocationAreaCode | UINT32 | The Location Area Code (0..65535). Use 0xFFFFFFFF when this information is not available. |
+| 12 | 4 | CellID | UINT32 | The Cell ID (0..268435455). Use 0xFFFFFFFF when this information is not available. |
+| 16 | 4 | FrequencyInfoUL | UINT32 | The Frequency Info Uplink (0..16383). Use 0xFFFFFFFF when this information is not available. |
+| 20 | 4 | FrequencyInfoDL | UINT32 | The Frequency Info Downlink (0..16383). Use 0xFFFFFFFF when this information is not available. |
+| 24 | 4 | FrequencyInfoNT | UINT32 | The Frequency Info for TDD (0..16383). Use 0xFFFFFFFF when this information is not available. |
+| 28 | 4 | UARFCN | UINT32 | The UTRA Absolute Radio Frequency Channel Number for the serving cell (0..16383). Use 0xFFFFFFFF when this information is not available. |
+| 32 | 4 | PrimaryScramblingCode | UINT32 | The Primary Scrambling Code of the serving cell (0..511). Use 0xFFFFFFFF when this information is not available. |
 | 36 | 4 | RSCP | INT32 | The Received Signal Code Power of  the serving cell. The range is (-120 .. -25), in units of 1dBm. Use 0 when this information is not available. |
 | 40 | 4 | ECNO | INT32 | The signal to noise ratio of the serving cell; the ratio of the received energy per PN chip for the CPICH to the total received. The range is (-50..0), in units of 1dBm. Use 1 when this information is not available. |
-| 44 | 4 | PathLoss | UINT32 | The path loss of the serving cell (46..173). Use 0xffffffff when this information is not available. |
+| 44 | 4 | PathLoss | UINT32 | The path loss of the serving cell (46..173). Use 0xFFFFFFFF when this information is not available. |
 | 48 |   | DataBuffer | DATABUFFER | The data buffer containing *ProviderId*. |
 
 ##### MBIM_UMTS_MRL
@@ -168,13 +168,13 @@ The MBIM_UMTS_MRL_INFO structure contains information about a neighboring UMTS c
 | --- | --- | --- | --- | --- |
 | 0 | 4 | ProviderIdOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to a numeric (0-9) string called *ProviderId* that represents the network provider identity. This string is a concatenation of a three-digit Mobile Country Code (MCC) and a two or three-digit Mobile Network Code (MNC). This member can be NULL when no *ProviderId* information is returned. |
 | 4 | 4 | ProviderIdSize | SIZE(0..12) | The size used for *ProviderId*. |
-| 8 | 4 | LocationAreaCode | UINT32 | The Location Area Code (0..65535). Use 0xffffffff when this information is not available. |
-| 12 | 4 | CellID | UINT32 | The Cell ID (0..268435455). Use 0xffffffff when this information is not available. |
-| 16 | 4 | UARFCN | UINT32 | The UTRA Absolute Radio Frequency Channel Number for the serving cell (0..16383). Use 0xffffffff when this information is not available. |
-| 20 | 4 | PrimaryScramblingCode | UINT32 | The Primary Scrambling Code of the serving cell (0..511). Use 0xffffffff when this information is not available. |
-| 24 | 4 | RSCP | INT32 | The Received Signal Code Power of  the serving cell. The range is (-120 .. -25), in units of 1dBm. Use 0xffffffff when this information is not available. |
+| 8 | 4 | LocationAreaCode | UINT32 | The Location Area Code (0..65535). Use 0xFFFFFFFF when this information is not available. |
+| 12 | 4 | CellID | UINT32 | The Cell ID (0..268435455). Use 0xFFFFFFFF when this information is not available. |
+| 16 | 4 | UARFCN | UINT32 | The UTRA Absolute Radio Frequency Channel Number for the serving cell (0..16383). Use 0xFFFFFFFF when this information is not available. |
+| 20 | 4 | PrimaryScramblingCode | UINT32 | The Primary Scrambling Code of the serving cell (0..511). Use 0xFFFFFFFF when this information is not available. |
+| 24 | 4 | RSCP | INT32 | The Received Signal Code Power of  the serving cell. The range is (-120 .. -25), in units of 1dBm. Use 0xFFFFFFFF when this information is not available. |
 | 28 | 4 | ECNO | INT32 | The signal to noise ratio of the serving cell; the ratio of the received energy per PN chip for the CPICH to the total received. The range is (-50..0), in units of 1dBm. Use 1 when this information is not available. |
-| 32 | 4 | PathLoss | UINT32 | The path loss of the serving cell (46..173). Use 0xffffffff when this information is not available. |
+| 32 | 4 | PathLoss | UINT32 | The path loss of the serving cell (46..173). Use 0xFFFFFFFF when this information is not available. |
 | 36 |   | DataBuffer | DATABUFFER | The data buffer containing *ProviderId*. |
 
 #### TDSCDMA cell data structures
@@ -187,13 +187,13 @@ The MBIM_TDSCDMA_SERVING_CELL_INFO structure contains information about the TDSC
 | --- | --- | --- | --- | --- |
 | 0 | 4 | ProviderIdOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to a numeric (0-9) string called *ProviderId* that represents the network provider identity. This string is a concatenation of a three-digit Mobile Country Code (MCC) and a two or three-digit Mobile Network Code (MNC). This member can be NULL when no *ProviderId* information is returned. |
 | 4 | 4 | ProviderIdSize | SIZE(0..12) | The size used for *ProviderId*. |
-| 8 | 4 | LocationAreaCode | UINT32 | The Location Area Code (0..65535). Use 0xffffffff when this information is not available. |
-| 12 | 4 | CellID | UINT32 | The Cell ID (0..268435455). Use 0xffffffff when this information is not available. |
-| 16 | 4 | UARFCN | UINT32 | The UTRA Absolute Radio Frequency Channel Number for the serving cell (0..16383). Use 0xffffffff when this information is not available. |
-| 20 | 4 | CellParameterID | UINT32 | The Cell parameter ID (0..127). Use 0xffffffff when this information is not available. |
-| 24 | 4 | TimingAdvance | UINT32 | The Timing Advance (0..1023). This member is the same value for all timeslots. Use 0xffffffff when this information is not available. |
-| 28 | 4 | RSCP | INT32 | The Received Signal Code Power of  the serving cell. The range is (-120 .. -25), in units of 1dBm in Q8 L3 filtered. Use 0xffffffff when this information is not available. |
-| 32 | 4 | PathLoss | UINT32 | The path loss of the serving cell (46..158). Use 0xffffffff when this information is not available. |
+| 8 | 4 | LocationAreaCode | UINT32 | The Location Area Code (0..65535). Use 0xFFFFFFFF when this information is not available. |
+| 12 | 4 | CellID | UINT32 | The Cell ID (0..268435455). Use 0xFFFFFFFF when this information is not available. |
+| 16 | 4 | UARFCN | UINT32 | The UTRA Absolute Radio Frequency Channel Number for the serving cell (0..16383). Use 0xFFFFFFFF when this information is not available. |
+| 20 | 4 | CellParameterID | UINT32 | The Cell parameter ID (0..127). Use 0xFFFFFFFF when this information is not available. |
+| 24 | 4 | TimingAdvance | UINT32 | The Timing Advance (0..1023). This member is the same value for all timeslots. Use 0xFFFFFFFF when this information is not available. |
+| 28 | 4 | RSCP | INT32 | The Received Signal Code Power of  the serving cell. The range is (-120 .. -25), in units of 1dBm in Q8 L3 filtered. Use 0xFFFFFFFF when this information is not available. |
+| 32 | 4 | PathLoss | UINT32 | The path loss of the serving cell (46..158). Use 0xFFFFFFFF when this information is not available. |
 | 36 |   | DataBuffer | DATABUFFER | The data buffer containing *ProviderId*. |
 
 ##### MBIM_TDSCDMA_MRL
@@ -213,13 +213,13 @@ The MBIM_TDSCDMA_MRL_INFO structure contains information about a neighboring TDS
 | --- | --- | --- | --- | --- |
 | 0 | 4 | ProviderIdOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to a numeric (0-9) string called *ProviderId* that represents the network provider identity. This string is a concatenation of a three-digit Mobile Country Code (MCC) and a two or three-digit Mobile Network Code (MNC). This member can be NULL when no *ProviderId* information is returned. |
 | 4 | 4 | ProviderIdSize | SIZE(0..12) | The size used for *ProviderId*. |
-| 8 | 4 | LocationAreaCode | UINT32 | The Location Area Code (0..65535). Use 0xffffffff when this information is not available. |
-| 12 | 4 | CellID | UINT32 | The Cell ID (0..268435455). Use 0xffffffff when this information is not available. |
-| 16 | 4 | UARFCN | UINT32 | The UTRA Absolute Radio Frequency Channel Number for the serving cell (0..16383). Use 0xffffffff when this information is not available. |
-| 20 | 4 | CellParameterID | UINT32 | The Cell parameter ID (0..127). Use 0xffffffff when this information is not available. |
-| 24 | 4 | TimingAdvance | UINT32 | The Timing Advance (0..1023). This member is the same value for all timeslots. Use 0xffffffff when this information is not available. |
-| 28 | 4 | RSCP | INT32 | The Received Signal Code Power of  the serving cell. The range is (-120 .. -25), in units of 1dBm in Q8 L3 filtered. Use 0xffffffff when this information is not available. |
-| 32 | 4 | PathLoss | UINT32 | The path loss of the serving cell (46..158). Use 0xffffffff when this information is not available. |
+| 8 | 4 | LocationAreaCode | UINT32 | The Location Area Code (0..65535). Use 0xFFFFFFFF when this information is not available. |
+| 12 | 4 | CellID | UINT32 | The Cell ID (0..268435455). Use 0xFFFFFFFF when this information is not available. |
+| 16 | 4 | UARFCN | UINT32 | The UTRA Absolute Radio Frequency Channel Number for the serving cell (0..16383). Use 0xFFFFFFFF when this information is not available. |
+| 20 | 4 | CellParameterID | UINT32 | The Cell parameter ID (0..127). Use 0xFFFFFFFF when this information is not available. |
+| 24 | 4 | TimingAdvance | UINT32 | The Timing Advance (0..1023). This member is the same value for all timeslots. Use 0xFFFFFFFF when this information is not available. |
+| 28 | 4 | RSCP | INT32 | The Received Signal Code Power of  the serving cell. The range is (-120 .. -25), in units of 1dBm in Q8 L3 filtered. Use 0xFFFFFFFF when this information is not available. |
+| 32 | 4 | PathLoss | UINT32 | The path loss of the serving cell (46..158). Use 0xFFFFFFFF when this information is not available. |
 | 36 |   | DataBuffer | DATABUFFER | The data buffer containing *ProviderId*. |
 
 #### LTE cell data structures
@@ -232,13 +232,13 @@ The MBIM_LTE_SERVING_CELL_INFO structure contains information about the LTE serv
 | --- | --- | --- | --- | --- |
 | 0 | 4 | ProviderIdOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to a numeric (0-9) string called *ProviderId* that represents the network provider identity. This string is a concatenation of a three-digit Mobile Country Code (MCC) and a two or three-digit Mobile Network Code (MNC). This member can be NULL when no *ProviderId* information is returned. |
 | 4 | 4 | ProviderIdSize | SIZE(0..12) | The size used for *ProviderId*. |
-| 8 | 4 | CellID | UINT32 | The Cell ID (0..268435455). Use 0xffffffff when this information is not available. |
-| 12 | 4 | EARFCN | UINT32 | The Radio Frequency Channel Number of the serving cell (0..65535). Use 0xffffffff when this information is not available. |
-| 16 | 4 | PhysicalCellID | UINT32 | The Physical Cell ID (0..503). Use 0xffffffff when this information is not available. |
-| 20 | 4 | TAC | UINT32 | The Tracking Area Code (0..65535). Use 0xffffffff when this information is not available. |
-| 24 | 4 | RSRP | INT32 | The Average Reference Signal Received Power. The range is (-20..-44), in units of 1dBm. Use 0xffffffff when this information is not available. |
-| 28 | 4 | RSRQ | INT32 | The Average Reference Signal Received Quality. The range is (-20..-3), in units of 1dBm. Use 0xffffffff when this information is not available. |
-| 32 | 4 | TimingAdvance | UINT32 | The Timing Advance (0..255). Use 0xffffffff when this information is not available. |
+| 8 | 4 | CellID | UINT32 | The Cell ID (0..268435455). Use 0xFFFFFFFF when this information is not available. |
+| 12 | 4 | EARFCN | UINT32 | The Radio Frequency Channel Number of the serving cell (0..65535). Use 0xFFFFFFFF when this information is not available. |
+| 16 | 4 | PhysicalCellID | UINT32 | The Physical Cell ID (0..503). Use 0xFFFFFFFF when this information is not available. |
+| 20 | 4 | TAC | UINT32 | The Tracking Area Code (0..65535). Use 0xFFFFFFFF when this information is not available. |
+| 24 | 4 | RSRP | INT32 | The Average Reference Signal Received Power. The range is (-20..-44), in units of 1dBm. Use 0xFFFFFFFF when this information is not available. |
+| 28 | 4 | RSRQ | INT32 | The Average Reference Signal Received Quality. The range is (-20..-3), in units of 1dBm. Use 0xFFFFFFFF when this information is not available. |
+| 32 | 4 | TimingAdvance | UINT32 | The Timing Advance (0..255). Use 0xFFFFFFFF when this information is not available. |
 | 36 |   | DataBuffer | DATABUFFER | The data buffer containing *ProviderId*. |
 
 ##### MBIM_LTE_MRL
@@ -258,12 +258,12 @@ The MBIM_LTE_MRL_INFO structure contains information about a neighboring LTE cel
 | --- | --- | --- | --- | --- |
 | 0 | 4 | ProviderIdOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to a numeric (0-9) string called *ProviderId* that represents the network provider identity. This string is a concatenation of a three-digit Mobile Country Code (MCC) and a two or three-digit Mobile Network Code (MNC). This member can be NULL when no *ProviderId* information is returned. |
 | 4 | 4 | ProviderIdSize | SIZE(0..12) | The size used for *ProviderId*. |
-| 8 | 4 | CellID | UINT32 | The Cell ID (0..268435455). Use 0xffffffff when this information is not available. |
-| 12 | 4 | EARFCN | UINT32 | The Radio Frequency Channel Number of the serving cell (0..65535). Use 0xffffffff when this information is not available. |
-| 16 | 4 | PhysicalCellID | UINT32 | The Physical Cell ID (0..503). Use 0xffffffff when this information is not available. |
-| 20 | 4 | TAC | UINT32 | The Tracking Area Code (0..65535). Use 0xffffffff when this information is not available. |
-| 24 | 4 | RSRP | INT32 | The Average Reference Signal Received Power. The range is (-20..-44), in units of 1dBm. Use 0xffffffff when this information is not available. |
-| 28 | 4 | RSRQ | INT32 | The Average Reference Signal Received Quality. The range is (-20..-3), in units of 1dBm. Use 0xffffffff when this information is not available. |
+| 8 | 4 | CellID | UINT32 | The Cell ID (0..268435455). Use 0xFFFFFFFF when this information is not available. |
+| 12 | 4 | EARFCN | UINT32 | The Radio Frequency Channel Number of the serving cell (0..65535). Use 0xFFFFFFFF when this information is not available. |
+| 16 | 4 | PhysicalCellID | UINT32 | The Physical Cell ID (0..503). Use 0xFFFFFFFF when this information is not available. |
+| 20 | 4 | TAC | UINT32 | The Tracking Area Code (0..65535). Use 0xFFFFFFFF when this information is not available. |
+| 24 | 4 | RSRP | INT32 | The Average Reference Signal Received Power. The range is (-20..-44), in units of 1dBm. Use 0xFFFFFFFF when this information is not available. |
+| 28 | 4 | RSRQ | INT32 | The Average Reference Signal Received Quality. The range is (-20..-3), in units of 1dBm. Use 0xFFFFFFFF when this information is not available. |
 | 32 |   | DataBuffer | DATABUFFER | The data buffer containing *ProviderId*. |
 
 #### CDMA cell data structures
@@ -284,14 +284,14 @@ The MBIM_CDMA_MRL_INFO data structure is designed for the CDMA2000 network type.
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
 | 0 | 4 | ServingCellFlag | UINT32 | UINT32	Indicates whether this is a serving cell. A value of 1 indicates a serving cell, while a value of 0 indicates a neighboring cell. There may be more than one serving cell at a time (notably while in a call). |
-| 4 | 4 | NID | UINT32 | The Network ID (0..65535). Use 0xffffffff when this information is not available. |
-| 8 | 4 | SID | UINT32 | The System ID (0..32767). Use 0xffffffff when this information is not available. |
-| 12 | 4 | BaseStationId | UINT32 | The Base Station ID (0..65535). Use 0xffffffff when this information is not available. |
-| 16 | 4 | BaseLatitude | UINT32 | The Base Station Latitude (0..4194303). This is encoded in units of 0.25 seconds, expressed in two’s complement representation within the low 22 bits of the DWORD. As a signed value, North latitudes are positive. Use 0xffffffff when this information is not available. |
-| 20 | 4 | BaseLongitude | UINT32 | The Base Station Longitude (0..8388607). This is encoded in units of 0.25 seconds, expressed in two’s complement representation within the low 23 bits of the DWORD. As a signed value, East longitudes are positive. Use 0xffffffff when this information is not available. |
-| 24 | 4 | RefPN | UINT32 | The Base Station PN Number (0..511). Use 0xffffffff when this information is not available. |
-| 28 | 4 | GPSSeconds | UINT32 | The GPS seconds, or the time at which this arrived from the base station. Use 0xffffffff when this information is not available. |
-| 32 | 4 | PilotStrength | UINT32 | The Signal strength of the pilot (0..63). Use 0xffffffff when this information is not available. |
+| 4 | 4 | NID | UINT32 | The Network ID (0..65535). Use 0xFFFFFFFF when this information is not available. |
+| 8 | 4 | SID | UINT32 | The System ID (0..32767). Use 0xFFFFFFFF when this information is not available. |
+| 12 | 4 | BaseStationId | UINT32 | The Base Station ID (0..65535). Use 0xFFFFFFFF when this information is not available. |
+| 16 | 4 | BaseLatitude | UINT32 | The Base Station Latitude (0..4194303). This is encoded in units of 0.25 seconds, expressed in two’s complement representation within the low 22 bits of the DWORD. As a signed value, North latitudes are positive. Use 0xFFFFFFFF when this information is not available. |
+| 20 | 4 | BaseLongitude | UINT32 | The Base Station Longitude (0..8388607). This is encoded in units of 0.25 seconds, expressed in two’s complement representation within the low 23 bits of the DWORD. As a signed value, East longitudes are positive. Use 0xFFFFFFFF when this information is not available. |
+| 24 | 4 | RefPN | UINT32 | The Base Station PN Number (0..511). Use 0xFFFFFFFF when this information is not available. |
+| 28 | 4 | GPSSeconds | UINT32 | The GPS seconds, or the time at which this arrived from the base station. Use 0xFFFFFFFF when this information is not available. |
+| 32 | 4 | PilotStrength | UINT32 | The Signal strength of the pilot (0..63). Use 0xFFFFFFFF when this information is not available. |
 
 ### Unsolicited Event
 
@@ -330,9 +330,9 @@ Not applicable.
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
-| 0 | 4 | LocationAreaCode | UINT32 | The GSM/UMTS area code of the current location. Return 0xffffffff when the current system type is not applicable. |
-| 4 | 4 | TrackingAreaCode | UINT32 | The LTE tracking area code of the current location. Return 0xffffffff when the current system type is not applicable. |
-| 8 | 4 | CellID | UINT32 | The ID of the cellular tower. Return 0xffffffff when *CellID* is not available. |
+| 0 | 4 | LocationAreaCode | UINT32 | The GSM/UMTS area code of the current location. Return 0xFFFFFFFF when the current system type is not applicable. |
+| 4 | 4 | TrackingAreaCode | UINT32 | The LTE tracking area code of the current location. Return 0xFFFFFFFF when the current system type is not applicable. |
+| 8 | 4 | CellID | UINT32 | The ID of the cellular tower. Return 0xFFFFFFFF when *CellID* is not available. |
 
 ### Unsolicited Events
 
