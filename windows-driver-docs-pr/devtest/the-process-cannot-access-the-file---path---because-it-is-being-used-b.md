@@ -1,6 +1,6 @@
 ---
 title: Process cannot access file Path because it is being used by another process
-description: The process cannot access the file \ 0034; Path \ 0034; because it is being used by another process
+description: The process cannot access the file path because it is being used by another process.
 ms.assetid: 3fd89733-e520-4736-a882-b16e0ecfef95
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
