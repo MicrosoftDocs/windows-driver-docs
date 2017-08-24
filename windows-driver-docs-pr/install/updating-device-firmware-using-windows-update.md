@@ -91,7 +91,7 @@ To update firmware for devices that use a Microsoft-supplied driver, you need to
     HKR,,FirmwareFilename,,"%13%\firmware_payload.bin"
     ```
 
-PnP resolves this location when it installs the device.  The driver can then open this registry key to determine the location of the payload.
+    PnP resolves this location when it installs the device.  The driver can then open this registry key to determine the location of the payload.
 
 * Firmware update drivers should use:
 
@@ -100,7 +100,7 @@ PnP resolves this location when it installs the device.  The driver can then ope
     ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
     ```
 
-* If another device needs to be located, the firmware driver should locate the device by walking the device tree relative to itself, not by enumerating all devices for a match.  There may be multiple instances of the device, and the driver should only touch the one to which it is attached.
+* If another device node needs to be located, the firmware driver should locate the device node by walking the device tree relative to itself, not by enumerating all device nodes for a match.  There may be multiple instances of the device, and the driver should only touch the one to which it is attached.
 
 * The driver should be robust to multiple instances of the device being on the system, possibly with multiple different firmware versions.  For example, there may be one instance of the device that has been connected and updated several times; a brand new device may then be plugged in which is several firmware versions old.  This means that state (such as current version) must be stored against the device, and not in a global location.
 
