@@ -1,6 +1,6 @@
 ---
 title: How to display printer status in a Windows Store device app
-description: This topic uses the C\ version of the Print settings and print notifications sample to demonstrate how to query the printer status and display it.
+description: This topic uses the C# version of the Print settings and print notifications sample to demonstrate how to query the printer status and display it.
 ms.assetid: 91AD1B3B-0D0B-4FB6-8A0F-4943143D8FCE
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

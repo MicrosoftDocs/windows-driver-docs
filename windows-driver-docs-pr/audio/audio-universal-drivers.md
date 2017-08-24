@@ -103,7 +103,7 @@ A separate extension INF file is used for each software component. For more info
 
 An extension INF file must be a universal INF file. For more information, see [Using a Universal INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file).
 
-For information about adding software using INF files, see [Adding Software Components with an INF file](https://docs.microsoft.com/windows-hardware/drivers/install/adding-software-components-with-an-inf-file).
+For information about adding software using INF files, see [Using a Component INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-component-inf-file).
 
 
 ### SYSVAD  componentized INF files

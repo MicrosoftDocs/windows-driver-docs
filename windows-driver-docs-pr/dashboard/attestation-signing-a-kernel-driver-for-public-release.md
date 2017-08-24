@@ -13,10 +13,6 @@ ms.technology: windows-devices
 
 
 This topic describes how to sign a driver using attestation signing.
-
-> [!IMPORTANT]
-> You must still use [Hardware Dev Center (Sysdev)](dashboard-services.md) to sign a driver using attestation signing until driver signing is available through the new Windows Hardware Dev Center dashboard.
-
  
 
 > [!Note]  

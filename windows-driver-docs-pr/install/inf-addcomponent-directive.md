@@ -60,7 +60,7 @@ If a description string contains any %strkey% tokens, each token can represent a
 
 ## See Also
 
-[Adding Software Components with an INF file](adding-software-components-with-an-inf-file.md).
+[Using a Component INF File](using-a-component-inf-file.md).
 
 [*DDInstall*.**Components**](inf-ddinstall-components-section.md)
 

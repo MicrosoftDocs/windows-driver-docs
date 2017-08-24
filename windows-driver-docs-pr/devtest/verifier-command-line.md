@@ -147,6 +147,11 @@ Controls whether the settings for Driver Verifier are enabled after a reboot. To
 <td align="left"><p><span id="oneboot"></span><span id="ONEBOOT"></span><strong>oneboot</strong></p></td>
 <td align="left"><p>Only enables the Driver Verifier settings for the next time the computer starts. Driver Verifier is disabled for subsequent reboots.</p></td>
 </tr>
+<tr class="even">
+<td align="left"><p><span id="resetonunusualshutdown"></span><span id="RESETONUNUSUALSHUTDOWN"></span><strong>resetonunusualshutdown</strong></p></td>
+<td align="left"><p>(Introduced in Windows 10, build 1709) Driver Verifier will persist until an unusual shutdown occurs. Its abbrevation, <strong>'rous'</strong>, can be used.
+</p></td>
+</tr>
 </tbody>
 </table>
 
