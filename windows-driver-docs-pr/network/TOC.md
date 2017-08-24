@@ -1473,7 +1473,7 @@
 #### [MB modem reset operations](mb-modem-reset-operations.md)
 ### [MB SAR Platform Support](mb-sar-platform-support.md)
 ### [MB base stations information query support](mb-base-stations-information-query-support.md)
-### [MB eSIM Guide](mb-esim-guide.md)
+### [MB eSIM MBIM ready state guidance](mb-esim-mbim-ready-state-guidance.md)
 ### [MB NDIS Status Notifications](mb-ndis-status-notifications.md)
 #### [NDIS_STATUS_WWAN_AUTH_RESPONSE](ndis-status-wwan-auth-response.md)
 #### [NDIS_STATUS_WWAN_BASE_STATIONS_INFO](ndis-status-wwan-base-stations-info.md)

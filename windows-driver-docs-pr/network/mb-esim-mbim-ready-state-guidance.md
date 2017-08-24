@@ -1,6 +1,6 @@
 ---
-title: MB eSIM Guide
-description: MB eSIM Guide
+title: MB eSIM MBIM ready state guidance
+description: MB eSIM MBIM ready state guidance
 ms.assetid: E7EB5E6D-1858-4B94-AF91-05333CC93D8B
 ms.author: windowsdriverdev
 ms.date: 08/10/2017
@@ -9,11 +9,9 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# MB eSIM Guide
+# MB eSIM MBIM ready state guidance
 
-The MB eSIM guide contains topics providing guidance for eSIM operations and scenarios.
-
-This section includes the following topics:
+Th
 
 
 

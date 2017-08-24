@@ -385,7 +385,7 @@ The following MBIM_MS_SLOT_INFO structure shall be used in the InformationBuffer
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
 | 0 | 4 | SlotIndex | UINT32 | The index of the slot. |
-| 4 | 4 | State | MBIM_MS_UICC_SLOT_STATE | THe state of the slot and card (if applicable). |
+| 4 | 4 | State | MBIM_MS_UICC_SLOT_STATE | The state of the slot and card (if applicable). |
 
 The following MBIM_MS_UICCSLOT_STATE structure describes the possible states of the slot.
 

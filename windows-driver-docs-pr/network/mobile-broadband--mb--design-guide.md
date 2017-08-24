@@ -70,6 +70,10 @@ This section includes the following topics:
 
 [MB base stations information query support](mb-base-stations-information-query-support.md)
 
+[MB eSIM MBIM ready state guidance](mb-esim-mbim-ready-state-guidance.md)
+
+[MB NDIS Status Notifications](mb-ndis-status-notifications.md)
+
 [Supplemental MB Documentation](supplemental-mb-documentation.md)
 
 ## Related topics
