@@ -48,11 +48,11 @@ Submit your firmware update package as a separate driver submission.
 
 The existing function driver can implement the firmware update mechanism (in this case, “firmware update driver” and the device’s function driver are one and the same).
 
-*image*
+![Using Windows Update to deliver firmware update via existing function driver](images/single-devnode.png)
 
 Alternatively, if you want to be able to update the functional driver and the firmware update driver separately, create a second device node, on which a custom driver can be installed to update the firmware.
 
-*image*
+![Using Windows Update to deliver firmware update via separate device node](images/two-devnodes.png)
 
 There are a couple ways to create a second device node.  Certain device types have the ability to expose a second device node on one physical device, such as USB.  You can use this functionality to create a device node targetable by WU, and install the firmware update driver on it.  Many device types, however, do not allow a single physical device to enumerate more than one device node.
 
@@ -69,7 +69,9 @@ AddComponent=ComponentName,,AddComponentSection
 ComponentIDs = ComponentDeviceId
 ```
 
-In the above INF sample, `ComponentIDs = ComponentDeviceId` indicates that the child device will have a hardware ID `SWC\ComponentDeviceId`.
+In the above INF sample, `ComponentIDs = ComponentDeviceId` indicates that the child device will have a hardware ID `SWC\ComponentDeviceId`.  When installed, this INF will create the following device hierarchy:
+
+![Parent device, primary device, AddComponent device](images/component-device-hierarchy.png)
 
 Then for future firmware updates, the firmware update driver source code likely stays the same, but update the INF and firmware binary file.
 In this case, the functional and firmware device nodes must have different hardware IDs in order to be targeted independently.
