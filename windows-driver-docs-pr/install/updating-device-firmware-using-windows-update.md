@@ -13,7 +13,7 @@ ms.technology: windows-devices
 
 This topic describes how to update a removable device's firmware using the Windows Update (WU) service.  For information about updating firmware for chassis-mounted devices, see [Windows UEFI firmware update platform](../bringup/windows-uefi-firmware-update-platform.md).
 
-To do this, you'll provide an update mechanism, implemented as a device driver, that includes the firmware payload.  If your device uses an vendor-supplied driver, you have the option of adding the firmware update logic and payload to your existing function driver, or providing a separate UMDF firmware update driver package.  If your device uses a Microsoft-supplied driver, you must provide a separate UMDF firmware update driver package.  In both cases, the firmware update driver package must be universal.  For more info about universal drivers, see [Getting Started with Universal Windows drivers](../develop/getting-started-with-universal-drivers.md).
+To do this, you'll provide an update mechanism, implemented as a device driver, that includes the firmware payload.  If your device uses an vendor-supplied driver, you have the option of adding the firmware update logic and payload to your existing function driver, or providing a separate firmware update driver package.  If your device uses a Microsoft-supplied driver, you must provide a separate firmware update driver package.  In both cases, the firmware update driver package must be universal.  For more info about universal drivers, see [Getting Started with Universal Windows drivers](../develop/getting-started-with-universal-drivers.md).  The driver binary can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the Windows Driver Model. 
 
 Because WU cannot execute software, the firmware update driver must hand the firmware to PnP for installation.
 
@@ -56,7 +56,7 @@ Alternatively, if you want to update the function driver and the firmware update
 
 In this case, the function and firmware device nodes must have different hardware IDs in order to be targeted independently.
 
-There are a couple ways to create a second device node.  Certain device types have the ability to expose a second device node on one physical device, such as USB.  You can use this functionality to create a device node targetable by WU, and install a UMDF firmware update driver on it.  Many device types, however, do not allow a single physical device to enumerate more than one device node.
+There are a couple ways to create a second device node.  Certain device types have the ability to expose a second device node on one physical device, such as USB.  You can use this functionality to create a device node targetable by WU, and install a firmware update driver on it.  Many device types, however, do not allow a single physical device to enumerate more than one device node.
 
 In this case, use an extension INF that specifies the [AddComponent](../install/inf-addcomponent-directive.md) directive to create a device node that can be targeted by Windows Update and install the firmware update driver on it.  The following snippet from an INF file shows how you can do this:
 
