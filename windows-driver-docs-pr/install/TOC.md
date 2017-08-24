@@ -282,6 +282,7 @@
 ## [Device and Driver Installation Advanced Topics](device-and-driver-installation-advanced-topics.md)
 ### [Creating Secure Device Installations](creating-secure-device-installations.md)
 ### [Using a Component INF File](using-a-component-inf-file.md)
+### [Pairing a driver with a Universal Windows Platform (UWP) app](pairing-app-and-driver-versions.md)
 ### [Device Identification and Properties](device-identification-and-properties.md)
 #### [Device Identification](device-identification.md)
 ##### [Device Identification Strings](device-identification-strings.md)
