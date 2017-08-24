@@ -15,10 +15,6 @@ This topic describes how to update a removeable device's firmware using the Wind
 
 To update the device's firmware using WU, you'll provide an update mechanism, implemented as a device driver, that includes the firmware payload.  If your device uses a Microsoft-supplied ("inbox") driver, you'll provide a separate firmware update driver package.  If your device uses an vendor-supplied ("custom") driver, you have the option of adding the firmware update logic and payload to your existing function driver, or providing a separate firmware update driver package.  In both cases, the firmware update driver package must be universal.
 
-
-
-create an additional physical device object (PDO). You can do this by providing an extension INF file that specifies the [AddComponent](../install/inf-addcomponent-directive.md) directive.
-
 Because WU does have any ability to execute software, the client must hand the firmware to PnP for installation.
 
 It is important to note that Windows Update does not have any ability to invoke or execute software; it simply transmits data between the server and client, and the client hands the resulting data to other Windows components.
@@ -58,7 +54,7 @@ Alternatively, if you want to be able to update the functional driver and the fi
 
 There are a couple ways to create a second device node.  Certain device types have the ability to expose a second devnode on one physical device, such as USB.  This can be leveraged to create a devnode targetable by WU, and have the firmware update driver installed on it.  Many device types, however, do not allow a single physical device to enumerate multiple devnodes.
 
-Otherwise, use an extension INF that specifies the AddComponent directive to create a devnode that can be targeted by Windows Update and have a firmware update driver installed on it.
+Otherwise, use an extension INF that specifies the [AddComponent](../install/inf-addcomponent-directive.md) directive to create a devnode that can be targeted by Windows Update and have a firmware update driver installed on it.
 
 ```
 [Manufacturer]
