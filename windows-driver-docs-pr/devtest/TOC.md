@@ -11,6 +11,7 @@
 ## [InfVerif](infverif.md)
 ### [Running InfVerif from the command line](running-infverif-from-the-command-line.md)
 ### [INF Validation Errors and Warnings](inf-validation-errors-and-warnings.md)
+## [Reg2inf](reg2inf.md)
 # [Tools for Changing Boot Options for Driver Testing and Debugging](boot-options-for-driver-testing-and-debugging.md)
 ## [Introduction to Boot Options](introduction-to-boot-options.md)
 ### [Boot Options in a Boot.ini File](boot-options-in-a-boot-ini-file.md)
