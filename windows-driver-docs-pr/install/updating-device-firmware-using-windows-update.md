@@ -15,7 +15,7 @@ This topic describes how to update a removable device's firmware using the Windo
 
 To do this, you'll provide an update mechanism, implemented as a device driver, that includes the firmware payload.  If your device uses a vendor-supplied driver, you have the option of adding the firmware update logic and payload to your existing function driver, or providing a separate firmware update driver package.  If your device uses a Microsoft-supplied driver, you must provide a separate firmware update driver package.  In both cases, the firmware update driver package must be universal.  For more info about universal drivers, see [Getting Started with Universal Windows drivers](../develop/getting-started-with-universal-drivers.md).  The driver binary can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the Windows Driver Model. 
 
-Because WU cannot execute software, the firmware update driver must hand the firmware to PnP for installation.
+Because WU cannot execute software, the firmware update driver must hand the firmware to Plug and Play (PnP) for installation.
 
 ## Firmware update driver actions
 
@@ -71,7 +71,7 @@ AddComponent=ComponentName,,AddComponentSection
 ComponentIDs = ComponentDeviceId
 ```
 
-In the above INF sample, `ComponentIDs = ComponentDeviceId` indicates that the child device will have a hardware ID `SWC\ComponentDeviceId`.  When installed, this INF will create the following device hierarchy:
+In the above INF sample, `ComponentIDs = ComponentDeviceId` indicates that the child device will have a hardware ID of `SWC\ComponentDeviceId`.  When installed, this INF creates the following device hierarchy:
 
 ![Parent device, primary device, AddComponent device](images/component-device-hierarchy.png)
 
@@ -83,7 +83,7 @@ To update firmware for devices that use a Microsoft-supplied driver, you need to
 
 ## Best practices
 
-* In your firmware update driver INF, specify [DIRID 13](using-dirids.md), to cause PnP to leave the files in the driver package in the DriverStore:
+* In your firmware update driver INF, specify [DIRID 13](using-dirids.md) to cause PnP to leave the files in the driver package in the DriverStore:
 
     ```
     [Firmware_AddReg]
@@ -93,7 +93,7 @@ To update firmware for devices that use a Microsoft-supplied driver, you need to
 
     PnP resolves this location when it installs the device.  The driver can then open this registry key to determine the location of the payload.
 
-* Firmware update drivers should use:
+* Firmware update drivers should specify the following INF entries:
 
     ```
     Class=Firmware
