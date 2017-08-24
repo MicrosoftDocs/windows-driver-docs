@@ -11,29 +11,27 @@ ms.technology: windows-devices
 
 # Updating Device Firmware using Windows Update
 
-This topic describes how to update a removeable device's firmware using the Windows Update (WU) service.  For information about updating firmware for chassis-mounted devices, see [Windows UEFI firmware update platform](../bringup/windows-uefi-firmware-update-platform.md)
+This topic describes how to update a removable device's firmware using the Windows Update (WU) service.  For information about updating firmware for chassis-mounted devices, see [Windows UEFI firmware update platform](../bringup/windows-uefi-firmware-update-platform.md).
 
-To update the device's firmware using WU, you'll provide an update mechanism, implemented as a device driver, that includes the firmware payload.  If your device uses a Microsoft-supplied ("inbox") driver, you'll provide a separate firmware update driver package.  If your device uses an vendor-supplied ("custom") driver, you have the option of adding the firmware update logic and payload to your existing function driver, or providing a separate firmware update driver package.  In both cases, the firmware update driver package must be universal.
+To do this, you'll provide an update mechanism, implemented as a device driver, that includes the firmware payload.  If your device uses a Microsoft-supplied ("inbox") driver, provide a separate firmware update driver package.  If your device uses an vendor-supplied ("custom") driver, you have the option of adding the firmware update logic and payload to your existing function driver, or providing a separate firmware update driver package.  In both cases, the firmware update driver package must be universal.
 
-Because WU does have any ability to execute software, the client must hand the firmware to PnP for installation.
-
-It is important to note that Windows Update does not have any ability to invoke or execute software; it simply transmits data between the server and client, and the client hands the resulting data to other Windows components.
+Because WU cannot execute software, the firmware update driver must hand the firmware to PnP for installation.
 
 ## Firmware update driver
 
 Typically, the firmware update driver is a lightweight device driver that does the following:
 
-At device start:
+* At device start:
 
-1. Identify the device it is attached to.
-2. Determine whether the driver has a newer firmware payload than is installed on the device.
-3. If a firmware update is necessary, set an event timer to schedule the update.
-4. Otherwise, do nothing until the driver is started again.
+    1. Identify the device to which it is attached.
+    2. Determine whether the driver has a firmware version that is more recent than the version on the device.
+    3. If a firmware update is necessary, set an event timer to schedule the update.
+    4. Otherwise, do nothing until the driver is started again.
 
-During system runtime:
+* During system runtime:
 
-1. If an update is queued, wait for a set of conditions to occur to perform the update.
-2. When conditions are met, perform the firmware update on the device.
+    1. If an update is queued, wait for a set of conditions to be met.
+    2. When conditions are met, perform the firmware update on the device.
 
 Typically, the firmware update driver package contains the following:
 
@@ -47,14 +45,16 @@ Submit your firmware update package as a separate driver submission.
 ## Custom driver
 
 The existing function driver can implement the firmware update mechanism (in this case, “firmware update driver” and the device’s function driver are one and the same).
+
 *image*
 
 Alternatively, if you want to be able to update the functional driver and the firmware update driver separately, create a second device node, on which a custom driver can be installed to update the firmware.
+
 *image*
 
-There are a couple ways to create a second device node.  Certain device types have the ability to expose a second devnode on one physical device, such as USB.  This can be leveraged to create a devnode targetable by WU, and have the firmware update driver installed on it.  Many device types, however, do not allow a single physical device to enumerate multiple devnodes.
+There are a couple ways to create a second device node.  Certain device types have the ability to expose a second devnode on one physical device, such as USB.  You can use this functionality to create a devnode targetable by WU, and install the firmware update driver on it.  Many device types, however, do not allow a single physical device to enumerate multiple devnodes.
 
-Otherwise, use an extension INF that specifies the [AddComponent](../install/inf-addcomponent-directive.md) directive to create a devnode that can be targeted by Windows Update and have a firmware update driver installed on it.
+In this case, use an extension INF that specifies the [AddComponent](../install/inf-addcomponent-directive.md) directive to create a device node that can be targeted by Windows Update and install the firmware update driver on it.  The following snippet from an INF file shows how you can do this:
 
 ```
 [Manufacturer]
@@ -67,7 +67,8 @@ AddComponent=ComponentName,,AddComponentSection
 ComponentIDs = ComponentDeviceId
 ```
 
-In the above INF sample, “ComponentIDs = ComponentDeviceId” indicates that the child device will have a hardware ID “SWC\ComponentDeviceId”.  When installed, this INF will create the following device hierarchy:
+In the above INF sample, `ComponentIDs = ComponentDeviceId` indicates that the child device will have a hardware ID `SWC\ComponentDeviceId`.  When installed, this INF will create the following device hierarchy:
+
 *image*
 
 Then for future firmware updates, the firmware update driver source code likely stays the same, but update the INF and firmware binary file.
