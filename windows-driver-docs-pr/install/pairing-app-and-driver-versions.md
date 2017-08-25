@@ -37,3 +37,4 @@ In addition to matching the most recent app and driver versions, the system also
 * [uap5:DriverDependency](/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverdependency?branch=lahugh-rs3)
 * [uap5:DriverConstraint](https://review.docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverconstraint?branch=lahugh-rs3)
 * [INF AddSoftware Directive](inf-addsoftware-directive.md)
+* [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md)
