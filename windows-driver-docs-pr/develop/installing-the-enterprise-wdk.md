@@ -37,9 +37,9 @@ Basic MSBuild commands for projects and solutions:
 
 To create a desktop shortcut:
 
-%comspec% /k pushd *<drive\dir>* && LaunchBuildEnv.cmd
+%comspec% /k pushd `<drive\dir>` && LaunchBuildEnv.cmd
 
-Where *<drive\dir>* is the location that the files were extracted to, for example, d:\ewdk
+Where `<drive\dir>` is the location that the files were extracted to, for example, d:\ewdk
 
 %comspec% /k pushd "d:\ewdk" && LaunchBuildEnv.cmd
 
