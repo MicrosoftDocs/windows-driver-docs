@@ -1,3 +1,4 @@
+
 ---
 ms.assetid: E109BD80-F9CB-4F1F-A6FD-1142E27EC6AD
 title: Getting Started with Universal Windows drivers
@@ -44,7 +45,11 @@ The following are required when writing a universal driver package:
 ## Best Practices
 
 Use the following best practices:
-
+* If you are using the WDK with Visual Studio, set the Target Platform value in the driver project properties to "Universal". This will automatically pull in the correct libraries, as well as running the Universal INF validation and APIValidator as a part of build.  To do this,
+    1. open your driver project properties
+    2. Select the "Driver Settings" properties
+    3. Set the "Target Platform" to "Universal", using the dropdown.
+    
 *  If your INF performs any custom setup actions that depend on the target platform, consider separating them out into an extension INF.  You can update an extension INF independently from the primary driver package to improve robustness and servicing.  See [Using an Extension INF File](../install/using-an-extension-inf-file.md).
 *  If you would like to provide an application that works with your device, please provide a UWP app.  For details, see [Hardware access for Universal Windows Platform apps](../devapps/hardware-access-for-universal-windows-platform-apps.md).  In Windows 10, version 1703, the OEM needs to pre-load such an app using [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).  Alternatively, users can manually download the app from the Windows Store.
 *  In [**INF DestinationDirs Section**](../install/inf-destinationdirs-section.md), set the destination directories to 13 to make the driver run from the Driver Store.  This will not work for some devices.
