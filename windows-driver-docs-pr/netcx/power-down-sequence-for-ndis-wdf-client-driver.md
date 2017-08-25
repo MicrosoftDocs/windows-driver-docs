@@ -1,8 +1,17 @@
 ---
-title: Power-Down Sequence for an Network Adapter WDF Client Driver
+title: Power-down sequence for a Network Adapter WDF client driver
+description: Power-down sequence for a Network Adapter WDF client driver
+ms.assetid: 9E16172C-9E45-4ED7-B6D2-7539DF4718B5
+keywords:
+- Power-down sequence for a Network Adapter WDF client driver
+ms.author: windowsdriverdev
+ms.date: 06/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Power-Down Sequence for a Network Adapter WDF Client Driver
+# Power-down sequence for a Network Adapter WDF client driver
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 

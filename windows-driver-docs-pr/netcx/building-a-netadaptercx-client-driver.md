@@ -1,8 +1,17 @@
 ---
-title: Building a NetAdapterCx Client Driver
+title: Building a NetAdapterCx client driver
+description: Building a NetAdapterCx client driver
+ms.assetid: 0A6957B4-E63A-4687-B31E-064AE3A34936
+keywords:
+- building a NetAdapterCx client driver, building a NIC driver
+ms.author: windowsdriverdev
+ms.date: 06/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Building a NetAdapterCx Client Driver
+# Building a NetAdapterCx client driver
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 

@@ -1,8 +1,17 @@
 ---
-title: Handling Control Requests
+title: Handling control requests
+description: Handling control requests
+ms.assetid: D2096548-E3E2-4EB6-B3F2-C5AF45E8F4D5
+keywords:
+- NetAdapterCx handling control requests, NetCx handling control requests
+ms.author: windowsdriverdev
+ms.date: 06/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Handling Control Requests
+# Handling control requests
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 

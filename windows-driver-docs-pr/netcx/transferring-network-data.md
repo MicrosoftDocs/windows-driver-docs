@@ -1,8 +1,17 @@
 ---
-title: Transferring Network Data
+title: Transferring network data
+description: Transferring network data
+ms.assetid: D2AC8269-F2D5-4FDC-A59E-6A35DBB18FF0
+keywords:
+- NetAdapterCx transferring network data, NetCx transferring network data
+ms.author: windowsdriverdev
+ms.date: 06/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Transferring Network Data
+# Transferring network data
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 

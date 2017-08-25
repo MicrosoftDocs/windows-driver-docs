@@ -1,8 +1,17 @@
 ---
-title: Network Adapter WDF Class Extension (Cx) Limitations
+title: Network Adapter WDF Class Extension (Cx) limitations
+description: Network Adapter WDF Class Extension (Cx) limitations
+ms.assetid: 2333F2D9-A369-4124-9365-ABC49E8B5595
+keywords:
+- Network Adapter WDF Class Extension (Cx) limitations, NetAdapterCx limitations, NetCx limitations
+ms.author: windowsdriverdev
+ms.date: 06/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Network Adapter WDF Class Extension (Cx) Limitations
+# Network Adapter WDF Class Extension (Cx) limitations
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 

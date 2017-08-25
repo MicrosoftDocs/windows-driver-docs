@@ -1,8 +1,17 @@
 ---
-title: Device Initialization
+title: Device initialization
+description: Device initialization
+ms.assetid: EBBEF0FB-6CDB-4899-AAE9-71812EE20AFB
+keywords:
+- NetAdapterCx device initialization, NetCx device initialization
+ms.author: windowsdriverdev
+ms.date: 06/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Device Initialization
+# Device initialization
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 

@@ -2,6 +2,8 @@
 title: What's new in NetAdapterCx
 description: This topic highlights new features in the Network Adapter WDF Class Extension (NetAdapterCx).
 ms.assetid: 14847DED-FC24-4020-8526-D5F3A85882EB
+keywords:
+- What's new Network Adapter Class Extension, what's new NetAdapterCx, what's new Netcx
 ms.author: windowsdriverdev
 ms.date: 08/11/2017
 ms.topic: article
@@ -17,7 +19,11 @@ This topic highlights new features for the Network Adapter WDF Class Extension (
 
 In Windows 10, version 1709, NetAdapterCx was updated from version 1.0 to version 1.1. The following changes were introduced in version 1.1:
 
-- NetAdapter link layer capabilities
+- TO DO fill in after writing DDI changes
+
+The following APIs were also updated in version 1.1:
+
+- 
 
 ## Windows 10, version 1703
 

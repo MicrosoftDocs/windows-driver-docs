@@ -1,8 +1,17 @@
 ---
-title: Summary of Objects
+title: Summary of objects
+description: Summary of objects
+ms.assetid: 1635C737-42C6-4957-A3E0-1184A5545441
+keywords:
+- NetAdapterCx summary of objects, NetCx summary of objects
+ms.author: windowsdriverdev
+ms.date: 06/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Summary of Objects
+# Summary of objects
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
