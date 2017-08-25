@@ -12,24 +12,13 @@ ms.technology: windows-devices
 # Installing the Enterprise WDK 10
 The current Windows Driver Kit (WDK) is optimized for individual developers using a state-based installation. Organizations with many developers using the WDK assume a high cost of individual installations of Visual Studio 2015 and the WDK.  To address this, the Enterprise Windows Driver Kit (Enterprise WDK) is a command-line build environment that is file-based, rather than machine based.  Once you create the environment file structure, you can have it consumed by version control software or you can zip the files and copy as needed. A .zip file created with the Enterprise WDK contains all the necessary compilers, linkers, build tools, headers and libs to build Visual Studio-based driver projects.
 
-The Enterprise WDK contains the necessary elements to build drivers and basic Win32 test applications, and is based on Visual Studio 2015 Enterprise, WDK, and the standalone Windows Software Development Kit (SDK). Use your favorite code editor to modify source code and project files. Because it's a command-line, the Enterprise WDK does lack some of the features incorporated into Visual Studio, such as testing and driver deployment. 
-
+The Enterprise WDK contains the necessary elements to build drivers and basic Win32 test applications. Use your favorite code editor to modify source code and project files. Because it's a command-line, the Enterprise WDK does lack some of the features incorporated into Visual Studio, such as testing and driver deployment. 
 
 ## Enterprise WDK 1703 Prerequisites
-*	Visual Studio build tools, C/C++ compiler, linker and libs for Visual Studio build 14.0.25431.01 (VS 2015 Update 3)  
-  *	Note that the Enterprise WDK does not include the IDE, devenv.exe.
-*	Windows SDK build 10.1.15063.137
 *	.NET Framework 4.6 SDK build 4.6.01586
-*	Windows Driver Development Kit build 10.1.15063.0
 
 ## Enterprise WDK 1607 Prerequisites
-*	Visual Studio build tools, C/C++ compiler, linker and libs for Visual Studio build 14.00.24720.0 (VS 2015 Update 1)  
-  *	Note that the Enterprise WDK does not include the IDE, devenv.exe.
-*	Windows SDK build 10586.13
 *	.NET Framework 4.6 SDK build 10586.13
-*	Windows Driver Development Kit build 10586
-
-
 
 ## Installation Instructions
 1.	Download one of the following: 
@@ -48,9 +37,9 @@ Basic MSBuild commands for projects and solutions:
 
 To create a desktop shortcut:
 
-%comspec% /k pushd "<drive\dir>" && LaunchBuildEnv.cmd
+%comspec% /k pushd `<drive\dir>` && LaunchBuildEnv.cmd
 
-Where drive\dir is the location that the files were extracted to, for example, d:\ewdk
+Where `<drive\dir>` is the location that the files were extracted to, for example, d:\ewdk
 
 %comspec% /k pushd "d:\ewdk" && LaunchBuildEnv.cmd
 
