@@ -1,5 +1,5 @@
 ---
-title: Power-Up Sequence for an Network Adapter WDF Client Driver
+title: Power-Up Sequence for a Network Adapter WDF Client Driver
 ---
 
 # Power-Up Sequence for an Network Adapter WDF Client Driver

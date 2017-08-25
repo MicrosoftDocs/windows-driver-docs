@@ -2,7 +2,7 @@
 title: Power-Down Sequence for an Network Adapter WDF Client Driver
 ---
 
-# Power-Down Sequence for an Network Adapter WDF Client Driver
+# Power-Down Sequence for a Network Adapter WDF Client Driver
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
