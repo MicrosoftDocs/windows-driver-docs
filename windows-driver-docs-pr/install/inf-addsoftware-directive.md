@@ -56,6 +56,8 @@ SoftwareType=type-code
 
 The **SoftwareType** entry is required.  If **SoftwareType** is set to 1, **SoftwareBinary** and **SoftwareVersion** are also required, but arguments and flags are optional. If **SoftwareType** is set to 2, **SoftwareID** is required, and flags are optional.
 
+Any software installed using **AddSoftware** must be installed silently (or quietly). In other words, no user interface can be shown to the user during installation.    
+
 ## Software-Install Section Entries and Values
 
 **SoftwareType**=*type-code*
