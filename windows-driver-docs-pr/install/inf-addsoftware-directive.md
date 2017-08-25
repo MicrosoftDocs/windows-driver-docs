@@ -55,6 +55,8 @@ SoftwareVersion=w.x.y.z
 
 The **SoftwareType** and **SoftwareVersion** entries are required.  If **SoftwareType** is set to 1, the **SoftwareBinary** entry is also required.  Other entries are optional.
 
+Any software installed using **AddSoftware** must be installed silently (or quietly). In other words, no user interface can be shown to the user during installation.    
+
 ## Software-Install Section Entries and Values
 
 **SoftwareType**=*type-code*
