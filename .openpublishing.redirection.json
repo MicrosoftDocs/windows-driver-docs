@@ -865,7 +865,7 @@
       "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-packet-msg",
       "redirect_document_id": true
     },
-        {
+    {
       "source_path": "windows-driver-docs-pr/devapps/custom-capabilities-for-universal-windows-platform-apps.md",
       "redirect_URL": "/windows-hardware/drivers/devapps/creating-a-custom-capability-to-pair-driver-with-hsa",
       "redirect_document_id": true
@@ -875,9 +875,14 @@
       "redirect_URL": "/windows-hardware/drivers/devapps/using-a-custom-capability-to-pair-hsa-with-driver",
       "redirect_document_id": true
     },
-        {
+    {
       "source_path": "windows-driver-docs-pr/install/adding-software-components-with-an-inf-file.md",
       "redirect_URL": "/windows-hardware/drivers/install/using-a-component-inf-file",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/netpowersettingsgetenabledprotocoloffloads.md",
+      "redirect_URL": "/windows-hardware/drivers/netcx/netpowersettingsgetenabledprotocoloffloadflags",
       "redirect_document_id": true
     }
   ]

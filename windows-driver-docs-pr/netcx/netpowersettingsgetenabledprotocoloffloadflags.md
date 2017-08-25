@@ -1,9 +1,9 @@
 ---
-title: NetPowerSettingsGetEnabledProtocolOffloads method
+title: NetPowerSettingsGetEnabledProtocolOffloadFlags method
 topic_type:
 - apiref
 api_name:
-- NetPowerSettingsGetEnabledProtocolOffloads
+- NetPowerSettingsGetEnabledProtocolOffloadFlags
 api_location:
 - NetAdapterCxStub.lib
 - NetAdapterCxStub.dll
@@ -11,7 +11,7 @@ api_type:
 - LibDef
 ---
 
-# NetPowerSettingsGetEnabledProtocolOffloads method
+# NetPowerSettingsGetEnabledProtocolOffloadFlags method
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
@@ -22,7 +22,7 @@ Syntax
 ------
 
 ```cpp
-ULONG NetPowerSettingsGetEnabledProtocolOffloads(
+ULONG NetPowerSettingsGetEnabledProtocolOffloadFlags(
   _In_ NETPOWERSETTINGS NetPowerSettings
 );
 ```
@@ -41,7 +41,11 @@ A ULONG value that contains a bitwise **OR** of [**NET_ADAPTER_PROTOCOL_OFFLOADS
 Remarks
 -------
 
-The client driver must only call **NetPowerSettingsGetEnabledProtocolOffloads** during a power transition, typically from its [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function.  Otherwise, the call results in a system bugcheck.
+The client driver must only call **NetPowerSettingsGetEnabledProtocolOffloadFlags** during a power transition, typically from its [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function.  Otherwise, the call results in a system bugcheck.
+
+In NetAdapterCx 1.0, this method was called **NetPowerSettingsGetEnabledProtocolOffloads**. It was renamed to **NetPowerSettingsGetEnabledProtocolOffloadFlags** in NetAdapterCx 1.1, which is included in Windows 10, version 1709 and later.
+
+In NetAdapterCx 1.1, this method's required IRQL level was changed from DISPATCH_LEVEL to PASSIVE_LEVEL.
 
 Requirements
 ------------
@@ -62,7 +66,7 @@ Requirements
 </tr>
 <tr class="odd">
 <td align="left"><p>Minimum NetAdapterCx version</p></td>
-<td align="left"><p>1.0</p></td>
+<td align="left"><p>1.1</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Header</p></td>
@@ -74,15 +78,10 @@ Requirements
 </tr>
 <tr class="even">
 <td align="left"><p>IRQL</p></td>
-<td align="left"><p>DISPATCH_LEVEL</p></td>
+<td align="left"><p>PASSIVE_LEVEL</p></td>
 </tr>
 </tbody>
 </table>
-
-## See also
-
-
-[**NetPowerSettingsGetEnabledProtocolOffloads**](netpowersettingsgetenabledprotocoloffloads.md)
 
  
 

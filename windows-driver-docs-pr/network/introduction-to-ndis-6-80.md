@@ -15,7 +15,7 @@ This topic introduces Network Driver Interface Specification (NDIS) 6.80 and des
 
 NDIS 6.80 is a minor version update to NDIS 6.70 for miniport, protocol, filter, and intermediate drivers. For more information about porting NDIS 6.x drivers to NDIS 6.80, see [Porting NDIS 6.x drivers to NDIS 6.80](porting-ndis-6-x-drivers-to-ndis-6-70.md).
 
-For NIC drivers, the NetAdapter class extension (NetAdapterCx) has been updated from version 1.0 to version 1.1 in Windows 10, version 1709. For more information about the NetAdapterCx, see [NetAdapterCx](../netcx/index.md). For more information about the changes from NetAdapterCx 1.0 to NetAdapterCx 1.1, see [What's new in the NetAdapterCx](../netcx/whats-new-in-the-netadaptercx.md) 
+For NIC drivers, the NetAdapter class extension (NetAdapterCx) has been updated from version 1.0 to version 1.1 in Windows 10, version 1709. For more information about the NetAdapterCx, see [NetAdapterCx](../netcx/index.md). For more information about the changes from NetAdapterCx 1.0 to NetAdapterCx 1.1, see [What's new in NetAdapterCx](../netcx/whats-new-in-netadaptercx.md) 
 
 ## Feature updates
 
