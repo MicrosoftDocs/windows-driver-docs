@@ -97,3 +97,4 @@ When the target machine is in Developer Mode, you can try the following steps to
 * [Enable your device for development](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
 * [Custom Capability sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomCapability)
 * [Getting Started with Universal Windows drivers](../develop/getting-started-with-universal-drivers.md)
+* [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md)
