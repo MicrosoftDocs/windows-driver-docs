@@ -17,7 +17,15 @@ This topic introduces version 1.1 of the WDF Network Adapter Class Extension (Ne
 
 ## Feature updates
 
+NetAdapterCx 1.1 features advancements in performance over version 1.0, as well several other new features.
 
+### Better context management 
+
+In version 1.0, NetAdapterCx had one packet context per queue, which limited client drivers' usability. For example, if you were using the DMA IO Helper for your transmit queue, that was the only packet context available to you. In version 1.1, however, you can now allocate as many packet contexts as you need. Each driver subsystem can now use a different context, creating flexibility and improving componentization.
+
+### Finer link layer address control
+
+Two new methods, [NetAdapterSetPermanentLinkLayerAddress] and [NetAdapterSetCurrentLinkLayerAddress], have been added in NetAdapter 1.1 to allow NIC client drivers to more easily set these separate addresses with dedicated methods. Previously, in version 1.0, this functionality was embedded in the [NetAdapterSetLinkLayerCapabilities](netadaptersetlinklayercapabilities.md) method and required additional complexity in allocating and initializing that method's [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md) structure.
 
 ## API changes
 
