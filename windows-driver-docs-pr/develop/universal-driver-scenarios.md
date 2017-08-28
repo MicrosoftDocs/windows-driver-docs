@@ -56,7 +56,7 @@ Note that extensions are always processed after the primary INF in no definite o
 
 ## Install a service from an INF file
 
-Fabrikam uses a Win32 service to control the the LEDs on the OSR board. They view this component as part of the core functionality of the device, so they include it as part of their base INF ([`osrfx2_DCHU_base.inx`]). This user-mode service (usersvc) can be added and started declaratively by specifiying the [**AddService**](../install/inf-addservice-directive.md) directive in the INF file :
+Fabrikam uses a Win32 service to control the the LEDs on the OSR board. They view this component as part of the core functionality of the device, so they include it as part of their base INF ([`osrfx2_DCHU_base.inx`]).  This user-mode service (usersvc) can be added and started declaratively by specifying the [**AddService**](../install/inf-addservice-directive.md) directive in the INF file:
 
 ```
 [OsrFx2_Install.NT]
@@ -137,7 +137,7 @@ The new app (not included in the DCHU sample) is secure and can be updated easil
 
 ## Registering a COM component in an INF file
 
-Fabrikam needs to register a COM component without using a co-installer. In order to accomplish this in a universal INF file, they use the [reg2inf tool](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/reg2inf) distributed in the WDK. After building their COM server project (taken from the [In-process ATL COM server sample](https://code.msdn.microsoft.com/ATLDllCOMServer-b52a7d5d)), they provide the COM .dll as an input to the reg2inf tool. The tool then generates the following INF directives that Fabrikam includes in their base INF ([`osrfx2_DCHU_base.inx`]):
+Fabrikam needs to register a COM component without using a co-installer.  In order to accomplish this in a universal INF file, they use the [Reg2inf tool](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/reg2inf) distributed in the WDK.  After building their COM server project (taken from the [In-process ATL COM server sample](https://code.msdn.microsoft.com/ATLDllCOMServer-b52a7d5d)), they provide the COM .dll as an input to the Reg2inf tool.  The tool then generates the following INF directives that Fabrikam includes in their base INF ([`osrfx2_DCHU_base.inx`]):
 
 ```
 ; Add all registry keys to successfully register the
@@ -157,23 +157,22 @@ HKCR,CLSID\{92FCF37F-F6C7-4F8A-AA09-1A14BA118084}\ProgID,,,"ATLDllCOMServer.Simp
 HKCR,CLSID\{92FCF37F-F6C7-4F8A-AA09-1A14BA118084}\Programmable,,%FLG_ADDREG_KEYONLY%
 HKCR,CLSID\{92FCF37F-F6C7-4F8A-AA09-1A14BA118084}\TypeLib,,,"{9B23EFED-A0C1-46B6-A903-218206447F3E}"
 HKCR,CLSID\{92FCF37F-F6C7-4F8A-AA09-1A14BA118084}\VersionIndependentProgID,,,"ATLDllCOMServer.SimpleObject"
-
 ```
 
 ## Tightly coupling multiple INF files
 
-Ideally, there should be strong versioning contracts between base, extensions and components. There are servicing advantages in having these three packages serviced independently, but there are scenarios where they need to be tightly coupled due to poor versioning contracts. The sample includes an example of how to package an extensions and components separately (loosely coupled files under  [DCHU_Sample\osrfx2_DCHU_extension_loose](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_loose)) or together (tightly coupled files under [DCHU_Sample\osrfx2_DCHU_extension_tight](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_tight)). When the extension and component are tightly coupled, the extension INF is responsible of enabling the installation of the component INF. This is demonstrated in [DCHU_Sample\osrfx2_DCHU_extension_tight\osrfx2_DCHU_extension\osrfx2_DCHU_extension.inx](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_tight/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx) by using the [CopyINF directive](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-copyinf-directive):
+Ideally, there should be strong versioning contracts between base, extensions and components.  There are servicing advantages in having these three packages serviced independently, but there are scenarios where they need to be bundled in a single driver package ("tightly coupled") due to poor versioning contracts.  The sample includes an example of how to package an extensions and components separately ("loosely coupled" files under  [DCHU_Sample\osrfx2_DCHU_extension_loose](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_loose)) or together (tightly coupled files under [DCHU_Sample\osrfx2_DCHU_extension_tight](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_tight)).  When the extension and component are tightly coupled, the extension INF is responsible for enabling the installation of the component INF.  This is demonstrated in [DCHU_Sample\osrfx2_DCHU_extension_tight\osrfx2_DCHU_extension\osrfx2_DCHU_extension.inx](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_tight/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx) by using the [CopyINF directive](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-copyinf-directive):
 
 ```
 [OsrFx2Extension_Install.NT]
 CopyInf=osrfx2_DCHU_component.inf
 ```
 
-This directive can also be used to coordinate installation of INF files in multifunction devices. For more details, see [Copying INF files](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/copying-inf-files). 
+This directive can also be used to coordinate installation of INF files in multifunction devices.  For more details, see [Copying INF files](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/copying-inf-files). 
 
 ## Run from the driver store
 
-To make it easier to update the driver, Fabrikam specifies the [Driver Store](../install/driver-store.md) as the destination to copy the driver files by using [DirId 13](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-dirids) where possible. Here is an example from [`osrfx2_DCHU_base.inx`]:
+To make it easier to update the driver, Fabrikam specifies the [Driver Store](../install/driver-store.md) as the destination to copy the driver files by using [DirId 13](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-dirids) where possible.  Here is an example from [`osrfx2_DCHU_base.inx`]:
 
 ```
 [DestinationDirs]
@@ -184,11 +183,11 @@ Using a destination directory value of 13 can result in improved stability durin
 
 ## Summary
 
-The following diagram shows the driver packages that Fabrikam and Contoso created for their Universal Windows Driver.  In the loosely coupled example, they will make three submissions on the [Windows Hardware Dev Center dashboard](https://developer.microsoft.com/dashboard/Registration/Hardware), in the tightly coupled example, they will make two submissions.
+The following diagram shows the driver packages that Fabrikam and Contoso created for their Universal Windows Driver.  In the loosely coupled example, they will make three separate submissions on the [Windows Hardware Dev Center dashboard](https://developer.microsoft.com/dashboard/Registration/Hardware).  In the tightly coupled example, they will make two submissions.
 
 ![Extension, primary, and component driver packages](images/universal-scenarios.png)
 
-Note that the component INF will match on the component hardware ID, whereas the base and extensions will match on the board's HWID. 
+Note that the component INF will match on the component hardware ID, whereas the base and extensions will match on the board's hardware ID.
 
 ## See also
 
