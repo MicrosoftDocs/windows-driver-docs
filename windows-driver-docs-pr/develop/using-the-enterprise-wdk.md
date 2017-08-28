@@ -25,6 +25,9 @@ The Enterprise WDK contains the necessary elements to build drivers and basic Wi
 
 ## Getting Started
 
+> [!NOTE] 
+> In current [Windows 10 Insider Preview](https://insider.windows.com/) builds, the Enterprise WDK is ISO-based.  To get started, download and mount the ISO, then run `LaunchBuildEnv`.
+
 1.	Download one of the following: 
  * [Enterprise WDK 1703](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1703) 
  * [Enterprise WDK 1607](https://developer.microsoft.com/en-us/windows/hardware/license-terms-enterprise-wdk)
@@ -51,11 +54,3 @@ Where `<drive\dir>` is the location that the files were extracted to, for exampl
 ## See Also
 
 [ MSBuild Reference](https://msdn.microsoft.com/en-us/library/0k6kkbsd.aspx)
-
-
-
-
-
-
-
-
