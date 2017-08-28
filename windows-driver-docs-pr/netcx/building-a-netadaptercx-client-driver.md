@@ -26,6 +26,7 @@ Use the following steps to create a new NetAdapter client driver in Visual Studi
 5. In the **Configuration Properties > Driver Settings > Network Adapter Driver** dialog box, select **Network Adapter Major Version** and **Network Adapter Minor Version**.
     1. For the latest major and minor version of the Network Adapter Class Extension, see [What's new in NetAdapterCx](whats-new-in-netadaptercx.md).
 6. Add the following header to every source file (or to your common/precompiled header):
+
 ```cpp
 #include <ntddk.h>
 #include <wdf.h>
