@@ -1,6 +1,6 @@
 ---
-title: Porting NDIS miniport drivers to the NetAdapter class extension
-description: Porting NDIS miniport drivers to the NetAdapter class extension
+title: Porting NDIS miniport drivers to NetAdapterCx
+description: Porting NDIS miniport drivers to NetAdapterCx
 ms.assetid: F5C798C6-B746-43CB-BF63-DBA7DD0975ED
 keywords:
 - Porting miniport drivers to the Network Adapter Class Extension, porting to the Network Adapter WDF Class Extension, porting NDIS 6.x to NetAdapterCx
@@ -11,11 +11,11 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Porting NDIS miniport drivers to the NetAdapter class extension
+# Porting NDIS miniport drivers to NetAdapterCx
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-This page describes how to convert an NDIS 6.x miniport driver into a Windows Driver Framework (WDF) networking client driver.
+This page describes how to convert an NDIS 6.x miniport driver into a NetAdapterCx client driver.
 
 For general information about WDF, please review the [WDF Driver Development Guide](../wdf/index.md).
 
@@ -80,7 +80,7 @@ If it is set, remove the **WdfDriverInitNoDispatchOverride** flag from the call 
 
 Next, you'll distribute code from *MiniportInitializeEx* into the appropriate WDF event callback handlers, several of which are optional. For details on the callback sequence, see [Power-Up Sequence for an Network Adapter WDF Client Driver](power-up-sequence-for-ndis-wdf-client-driver.md).
 
-For info on the callbacks you'll need to provide, see [Device Initialization](device-initialization.md).
+For info on the callbacks you'll need to provide, see [Device initialization](device-initialization.md).
  
 [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) is where the client calls the methods equivalent to [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672). However, instead of calling one routine with a generic [**NDIS_MINIPORT_ADAPTER_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565920) structure, the client driver calls different functions to set different types of capabilities. For more info, see the Remarks section of [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md).
 
@@ -94,13 +94,13 @@ The other option is to break apart your OID handler's switch statement and provi
 
 If you used the [**Direct OID Request Interface in NDIS 6.1**](../network/direct-oid-request-interface-in-ndis-6-1.md), replace it with a parallel WDF queue. Similarly, the regular (serial) request interface in NDIS should become a sequential WDF queue.
 
-For info on registering handlers for OIDs, see [Handling Control Requests](handling-control-requests.md).
+For info on registering handlers for OIDs, see [Handling control requests](handling-control-requests.md).
 
 ## Reading configuration from the registry
 
 Next, replace calls to [**NdisOpenConfigurationEx**](https://msdn.microsoft.com/library/windows/hardware/ff563717) and related functions with the `NetConfiguration*` methods. The `NetConfiguration*` methods are similar to the `Ndis*Configuration*` functions, and you won't need to restructure your code.
 
-For more info, see [Accessing Configuration Information](accessing-configuration-information.md).
+For more info, see [Accessing configuration information](accessing-configuration-information.md).
 
 ## Receiving I/O control codes (IOTCLs) from user mode
 
@@ -132,15 +132,15 @@ In contrast, a WDF client performs one-time initialization tasks in event callba
 
 To summarize, in WDF, you put your "go to D0" code in one place, instead of two.
 
-For details on the callback sequence, see [Power-Up Sequence for an Network Adapter WDF Client Driver](power-up-sequence-for-ndis-wdf-client-driver.md).
+For details on the callback sequence, see [Power-Up sequence for a NetAdapterCx client driver](power-up-sequence-for-ndis-wdf-client-driver.md).
 
 ## Querying and setting power management capabilities
 
 Similarly, a WDF client driver does not receive [**OID_PM_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff569768) to query or set power management hardware capabilities of the network adapter.
 
-Instead, the driver queries the necessary wake-on-LAN (WoL) configuration from the NETPOWERSETTINGS object. For more info, see [Configuring Power Management](configuring-power-management.md).
+Instead, the driver queries the necessary wake-on-LAN (WoL) configuration from the NETPOWERSETTINGS object. For more info, see [Configuring power management](configuring-power-management.md).
 
-The actual flags you get back have the same semantics as they do for an NDIS 6 miniport, so you don't need to make deep changes to the logic. The main difference is that you can now query these flags during the power-down sequence. See [Power-Down Sequence for an Network Adapter WDF Client Driver](power-down-sequence-for-ndis-wdf-client-driver.md).
+The actual flags you get back have the same semantics as they do for an NDIS 6 miniport, so you don't need to make deep changes to the logic. The main difference is that you can now query these flags during the power-down sequence. See [Power-down sequence for a NetAdapterCx client driver](power-down-sequence-for-ndis-wdf-client-driver.md).
 
 Once you've moved this code around, you can delete your OID handlers for [*OID_PNP_SET_POWER*](https://msdn.microsoft.com/library/windows/hardware/ff569780) and [*OID_PM_PARAMETERS*](https://msdn.microsoft.com/library/windows/hardware/ff569768).
 
@@ -154,7 +154,7 @@ The data path programming model has changed significantly. Here are some key dif
 * Instead of NET_BUFFER_LIST and NET_BUFFER pools, NetAdapterCx introduces a ring buffer that is comprised of net packets, which map to NDIS as follows:
   * A [**NET_PACKET**](net-packet.md) is similar to a NET_BUFFER_LIST + NET_BUFFER.
   * A [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) is similar to a memory descriptor list (MDL). Each [**NET_PACKET**](net-packet.md) has one or more of these.
-  * For details on the replacement structures and how to use them, see [Transferring Network Data](transferring-network-data.md).
+  * For details on the replacement structures and how to use them, see [Transferring network data](transferring-network-data.md).
 * In NDIS 6.x, the miniport needs to handle start and pause semantics. In the NetAdapterCx model, this is no longer the case.
 * The [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) callback is similar to [**MINIPORT_RETURN_NET_BUFFER_LISTS**](https://msdn.microsoft.com/library/windows/hardware/ff559437) in NDIS 6.x.
 * The [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) callback is similar to [**MINIPORT_SEND_NET_BUFFER_LISTS**](https://msdn.microsoft.com/library/windows/hardware/ff559440) in NDIS 6.x.
@@ -173,7 +173,7 @@ You can delete *MiniportShutdownEx*, *MiniportResetEx* and *MiniportCheckForHang
 
 Most `NdisXxx` functions can be replaced with a WDF equivalent. In general, you should find that you need very little functionality that is imported from `NDIS.SYS`.
 
-For a list of function equivalents, see [NDIS-WDF Function Equivalents](ndis-wdf-function-equivalents.md).
+For a list of function equivalents, see [NDIS-WDF function equivalents](ndis-wdf-function-equivalents.md).
 
 For functions with no WDF equivalent, the client can call [**NetAdapterWdmGetNdisHandle**](netadapterwdmgetndishandle.md) to retrieve an NDIS_HANDLE for use with NDIS functions. For example:
 
@@ -183,7 +183,7 @@ NdisGetRssProcessorInformation(NetAdapterWdmGetNdisHandle(NetAdapter), . . .);
 
 ## Debugging
 
-See [Debugging NetAdapterCx Client Drivers](debugging-netadaptercx-client-drivers.md).
+See [Debugging a NetAdapterCx client driver](debugging-netadaptercx-client-drivers.md).
 
 The [!ndiskd.netadapter](../debugger/-ndiskd-netadapter.md) debugger extension shows similar results to what **!ndiskd.miniport** shows for an NDIS 6 driver.
 

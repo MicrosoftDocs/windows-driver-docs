@@ -1,6 +1,6 @@
 ---
-title: Debugging NetAdapterCx client drivers
-description: Debugging NetAdapterCx client drivers
+title: Debugging a NetAdapterCx client driver
+description: Debugging a NetAdapterCx client driver
 ms.assetid: EE8EA3DA-33E7-4EED-B991-38A21CAA699E
 keywords:
 - debugging NetAdapterCx client drivers, debugging NetAdapterCx client drivers
@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Debugging NetAdapterCx client drivers
+# Debugging a NetAdapterCx client driver
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 

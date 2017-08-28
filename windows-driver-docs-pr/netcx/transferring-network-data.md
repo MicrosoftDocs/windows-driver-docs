@@ -15,13 +15,13 @@ ms.technology: windows-devices
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-To watch a video that introduces the data path model in NetAdapterCx, see [Network Adapter Class Extension: Data Path](https://aka.ms/netadapter/video3).
+To watch a video that introduces the data path model in NetAdapterCx, see the [Network Adapter Class Extension: Data Path](https://aka.ms/netadapter/video3) video on Channel 9.
 
-In the NetAdapterCx model, network data requests are stored in WDF queues.  Each queue is associated with a ring buffer, which contains a group of packets and pointers to indicate where in the ring to read and write next.
+In the NetAdapterCx model, network data requests are stored in WDF queues. Each queue is associated with a ring buffer, which contains a group of packets and pointers to indicate where in the ring to read and write next.
 
 ## Creating transmit and receive queues
 
-When your client driver calls [**NET_ADAPTER_CONFIG_INIT**](net-adapter-config-init.md), typically from its [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693) event callback function, it provides two queue creation callbacks: [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](evt-net-adapter-create-txqueue.md) and [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md).  The client creates transmit and receive queues in these callbacks.
+When your client driver calls [**NET_ADAPTER_CONFIG_INIT**](net-adapter-config-init.md), typically from its [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693) event callback function, it provides two queue creation callbacks: [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](evt-net-adapter-create-txqueue.md) and [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md). The client creates transmit and receive queues in these callbacks.
 
 For example, the client creates a transmit queue by calling [**NetTxQueueCreate**](nettxqueuecreate.md) as follows:
 
