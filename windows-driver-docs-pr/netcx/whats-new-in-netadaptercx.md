@@ -15,6 +15,8 @@ ms.technology: windows-devices
 
 This section highlights new features for the Network Adapter WDF Class Extension (NetAdapterCx). Use the following topics to learn more about the changes in each version of NetAdapterCx.
 
+As of Windows 10, version 1709, the current version of NetAdapterCx is 1.1.
+
 - [Introduction to NetAdapterCx 1.1](introduction-to-netadaptercx-1-1.md)
 
 Windows OS support for NetAdapterCx versions are described in the following table.
