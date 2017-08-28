@@ -884,6 +884,11 @@
       "source_path": "windows-driver-docs-pr/netcx/netpowersettingsgetenabledprotocoloffloads.md",
       "redirect_URL": "/windows-hardware/drivers/netcx/netpowersettingsgetenabledprotocoloffloadflags",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/develop/installing-the-enterprise-wdk.md",
+      "redirect_URL": "/windows-hardware/drivers/develop/using-the-enterprise-wdk",
+      "redirect_document_id": true
     }
   ]
 }

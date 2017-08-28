@@ -12,6 +12,8 @@ ms.technology: windows-devices
 
 # Setting and retrieving the geolocation properties
 
+> [!IMPORTANT] 
+> This documentation and the geolocation driver sample for Windows 8.1 has been deprecated.
 
 When an application retrieves a particular property value, a corresponding property-retrieval method is called in the sample driver. For the simulated sensor, this would be **CGeolocation::GetPropertyValuesForGeolocationObject**. The Sensor API will pass the property keys for the properties requested by the application and the driver bundles the property values in an **IPortableDeviceValues** object which it returns to the API.
 

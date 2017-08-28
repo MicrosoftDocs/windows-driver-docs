@@ -12,6 +12,8 @@ ms.technology: windows-devices
 
 # The radio-manager file list
 
+> [!IMPORTANT] 
+> This documentation and the geolocation driver sample for Windows 8.1 has been deprecated.
 
 The following table describes the files that are found in the radio manager DLL.
 
