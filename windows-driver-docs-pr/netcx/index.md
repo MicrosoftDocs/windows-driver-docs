@@ -29,7 +29,7 @@ With the NetAdapterCx model, conversely, you write a real WDF driver for your NI
 
 To watch a video that discusses the benefits of using NetAdapterCx, see the [Network Adapter Class Extension: Overview](https://aka.ms/netadapter/video1) video on Channel 9.
 
-To learn how to port an NDIS 6.x miniport driver to the NetAdapterCx NIC driver model, see [Porting NDIS miniport drivers to NetAdapterCx](porting-ndis-to-netadapter-cx.md).
+To learn how to port an NDIS 6.x miniport driver to the NetAdapterCx NIC driver model, see [Porting NDIS miniport drivers to NetAdapterCx](porting-ndis-miniport-drivers-to-netadaptercx.md).
 
 To start working right away with driver samples on GitHub, clone our [NetAdapter-Cx-Driver-Samples](https://github.com/Microsoft/NetAdapter-Cx-Driver-Samples) repo.
 
@@ -44,16 +44,16 @@ To watch a video that discusses the future roadmap and collaboration opportuniti
 This section contains the following topics:
 
 * [What's new in NetAdapterCx](whats-new-in-netadaptercx.md)
-* [Porting NDIS miniport drivers to NetAdapterCx](porting-ndis-to-netadapter-cx.md)
+* [Porting NDIS miniport drivers to NetAdapterCx](porting-ndis-miniport-drivers-to-netadaptercx.md)
 * [Building a NetAdapterCx client driver](building-a-netadaptercx-client-driver.md)
 * [Device initialization](device-initialization.md)
 * [Accessing configuration information](accessing-configuration-information.md)
 * [Transferring network data](transferring-network-data.md)
 * [Handling control requests](handling-control-requests.md)
-* [Debugging a NetAdapterCx client driver](debugging-netadaptercx-client-drivers.md)
+* [Debugging a NetAdapterCx client driver](debugging-a-netadaptercx-client-driver.md)
 * [Configuring power management](configuring-power-management.md)
 * [NDIS-WDF function equivalents](ndis-wdf-function-equivalents.md)
 * [Summary of objects](summary-of-objects.md)
-* [Power-up sequence for a NetAdapterCx client driver](power-up-sequence-for-ndis-wdf-client-driver.md)
-* [Power-down sequence for a NetAdapterCx client driver](power-down-sequence-for-ndis-wdf-client-driver.md)
-* [NetAdapterCx limitations](class-extension--net--limitations.md)
+* [Power-up sequence for a NetAdapterCx client driver](power-up-sequence-for-a-netadaptercx-client-driver.md)
+* [Power-down sequence for a NetAdapterCx client driver](power-down-sequence-for-a-netadaptercx-client-driver.md)
+* [NetAdapterCx limitations](netadaptercx-limitations.md)

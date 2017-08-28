@@ -78,7 +78,7 @@ If it is set, remove the **WdfDriverInitNoDispatchOverride** flag from the call 
 
 ## Device initialization
 
-Next, you'll distribute code from *MiniportInitializeEx* into the appropriate WDF event callback handlers, several of which are optional. For details on the callback sequence, see [Power-Up Sequence for an Network Adapter WDF Client Driver](power-up-sequence-for-ndis-wdf-client-driver.md).
+Next, you'll distribute code from *MiniportInitializeEx* into the appropriate WDF event callback handlers, several of which are optional. For details on the callback sequence, see [Power-Up Sequence for an Network Adapter WDF Client Driver](power-up-sequence-for-a-netadaptercx-client-driver.md).
 
 For info on the callbacks you'll need to provide, see [Device initialization](device-initialization.md).
  
@@ -132,7 +132,7 @@ In contrast, a WDF client performs one-time initialization tasks in event callba
 
 To summarize, in WDF, you put your "go to D0" code in one place, instead of two.
 
-For details on the callback sequence, see [Power-Up sequence for a NetAdapterCx client driver](power-up-sequence-for-ndis-wdf-client-driver.md).
+For details on the callback sequence, see [Power-Up sequence for a NetAdapterCx client driver](power-up-sequence-for-a-netadaptercx-client-driver.md).
 
 ## Querying and setting power management capabilities
 
@@ -140,7 +140,7 @@ Similarly, a WDF client driver does not receive [**OID_PM_PARAMETERS**](https://
 
 Instead, the driver queries the necessary wake-on-LAN (WoL) configuration from the NETPOWERSETTINGS object. For more info, see [Configuring power management](configuring-power-management.md).
 
-The actual flags you get back have the same semantics as they do for an NDIS 6 miniport, so you don't need to make deep changes to the logic. The main difference is that you can now query these flags during the power-down sequence. See [Power-down sequence for a NetAdapterCx client driver](power-down-sequence-for-ndis-wdf-client-driver.md).
+The actual flags you get back have the same semantics as they do for an NDIS 6 miniport, so you don't need to make deep changes to the logic. The main difference is that you can now query these flags during the power-down sequence. See [Power-down sequence for a NetAdapterCx client driver](power-down-sequence-for-a-netadaptercx-client-driver.md).
 
 Once you've moved this code around, you can delete your OID handlers for [*OID_PNP_SET_POWER*](https://msdn.microsoft.com/library/windows/hardware/ff569780) and [*OID_PM_PARAMETERS*](https://msdn.microsoft.com/library/windows/hardware/ff569768).
 
@@ -183,7 +183,7 @@ NdisGetRssProcessorInformation(NetAdapterWdmGetNdisHandle(NetAdapter), . . .);
 
 ## Debugging
 
-See [Debugging a NetAdapterCx client driver](debugging-netadaptercx-client-drivers.md).
+See [Debugging a NetAdapterCx client driver](debugging-a-netadaptercx-client-driver.md).
 
 The [!ndiskd.netadapter](../debugger/-ndiskd-netadapter.md) debugger extension shows similar results to what **!ndiskd.miniport** shows for an NDIS 6 driver.
 

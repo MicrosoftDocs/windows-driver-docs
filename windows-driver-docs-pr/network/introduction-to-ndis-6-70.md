@@ -52,7 +52,7 @@ In addition, an NDIS 6.70 driver must be compliant with the following requiremen
 
 ### NIC drivers
 
-For more information about compiling a NIC driver with the NetAdapterCx, see [Porting NDIS miniport drivers to NetAdapter Class Extension (Compilation settings)](../netcx/porting-ndis-to-netadapter-cx.md#compilation-settings).
+For more information about compiling a NIC driver with the NetAdapterCx, see [Porting NDIS miniport drivers to NetAdapterCx (Compilation settings)](../netcx/porting-ndis-miniport-drivers-to-netadaptercx.md#compilation-settings).
 
 ### Miniport, protocol, and filter drivers
 
