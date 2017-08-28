@@ -18,6 +18,8 @@ ms.technology: windows-devices
 
 # Supporting radio management
 
+> [!IMPORTANT] 
+> This documentation and the geolocation driver sample for Windows 8.1 has been deprecated.
 
 When the user chooses the Wireless option in PC settings on their Windows 8 laptop, notebook, or tablet, they can turn any connected wireless devices on or off. These wireless devices may include a Wi-Fi antennae or a GPS device. The internal linkage between PC settings and a given wireless device is the [Radio Management API](https://msdn.microsoft.com/library/windows/hardware/hh406615) and a corresponding Radio Management DLL for the given device.
 

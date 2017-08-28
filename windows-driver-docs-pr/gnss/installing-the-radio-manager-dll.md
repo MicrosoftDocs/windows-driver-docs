@@ -12,6 +12,8 @@ ms.technology: windows-devices
 
 # Installing the radio manager DLL
 
+> [!IMPORTANT] 
+> This documentation and the geolocation driver sample for Windows 8.1 has been deprecated.
 
 To install the radio manager DLL, you’ll need to follow the steps below.
 
