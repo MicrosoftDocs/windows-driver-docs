@@ -12,7 +12,8 @@ ms.technology: windows-devices
 
 # Code Example for Challenging a Potentially Disconnected Device
 
-**Important** WSD Challenger has been deprecated and will be removed from Windows in 2018.
+> [!IMPORTANT]  
+> WSD Challenger functionality has been deprecated and all WSD Challenger-related documentation will be removed in 2018.
 
 The following code example shows a call to the **RegisterDeviceToChallenge** function (which is listed in the code example in [Sample Code for Implementing Helper Methods](code-example-for-implementing-helper-methods.md)) to challenge a potentially disconnected device.
 

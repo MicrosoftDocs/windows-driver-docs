@@ -1,7 +1,7 @@
 ---
 title: How To Implement Extended Camera Control Properties
 author: windows-driver-content
-description: The camera driver should implement extended camera control properties as individual property sets \ 8212;that is, each property should be implemented as a single property set.
+description: Implementing extended camera control properties for a camera driver.
 ms.assetid: BF5B2F1F-AC1D-4ED1-B1FC-64E8FA1218DA
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
