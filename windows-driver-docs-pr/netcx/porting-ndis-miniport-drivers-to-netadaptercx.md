@@ -28,39 +28,38 @@ Open your existing NDIS miniport driver project in Visual Studio and use the fol
   * If your converted driver will still call NDIS APIs, continue to link against `ndis.lib`.
 3. Remove NDIS preprocessor macros, like `NDIS650_MINIPORT=1`.
 4. Add the following headers to every source file (or to your common/precompiled header):
-
-```cpp
-#include <ntddk.h>
-#include <wdf.h>
-#include <netadaptercx.h>
-```
-
+  
+  ```cpp
+  #include <ntddk.h>
+  #include <wdf.h>
+  #include <netadaptercx.h>
+  ```
+  
 5. Add [standard WDF decorations](../wdf/specifying-wdf-directives-in-inf-files.md) to your INF:
+  
+  ```Inf
+  [Yourdriver.Wdf]
+  KmdfService = Yourdriverservice, Yourdriver.wdfsect
 
-```Inf
-[Yourdriver.Wdf]
-KmdfService = Yourdriverservice, Yourdriver.wdfsect
-
-[Yourdriver.wdfsect]
-KmdfLibraryVersion = <insert here>
-```
-
+  [Yourdriver.wdfsect]
+  KmdfLibraryVersion = <insert here>
+  ```
 6. Add new required networking keywords to the NT section of your INF.
 
-```cpp
-[Device.NT]
-CopyFiles=Drivers_Dir
-; Existing network keywords
-*IfType       = 6
-*MediaType     = 0
-*PhysicalMediaType = 14
-; New network keywords
-*IfConnectorPresent = 0 ; BOOLEAN
-*ConnectionType   = 1 ; NET_IF_CONNECTION_TYPE
-*DirectionType   = 0 ; NET_IF_DIRECTION_TYPE
-*AccessType     = 2 ; NET_IF_ACCESS_TYPE
-*HardwareLoopback  = 0 ; BOOLEAN
-```
+  ```cpp
+  [Device.NT]
+  CopyFiles=Drivers_Dir
+  ; Existing network keywords
+  *IfType       = 6
+  *MediaType     = 0
+  *PhysicalMediaType = 14
+  ; New network keywords
+  *IfConnectorPresent = 0 ; BOOLEAN
+  *ConnectionType   = 1 ; NET_IF_CONNECTION_TYPE
+  *DirectionType   = 0 ; NET_IF_DIRECTION_TYPE
+  *AccessType     = 2 ; NET_IF_ACCESS_TYPE
+  *HardwareLoopback  = 0 ; BOOLEAN
+  ```
 
 ## Driver initialization
 
