@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Debugger Objects in NatVis
+# Native Debugger Objects in NatVis
 
 ## Overview
 
