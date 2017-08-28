@@ -153,3 +153,4 @@ The following diagram summarizes the sequence described above:
 * [App capability declarations](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations)
 * [Custom Capability sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomCapability)
 * [Getting Started with Universal Windows drivers](../develop/getting-started-with-universal-drivers.md)
+* [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md)

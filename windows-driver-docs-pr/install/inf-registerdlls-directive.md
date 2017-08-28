@@ -20,9 +20,7 @@ ms.technology: windows-devices
 # INF RegisterDlls Directive
 
 
-**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
-
- 
+**Note**  If you are building a universal or mobile driver package, this directive is not valid. You can use the [Reg2inf tool](../devtest/reg2inf.md) to convert existing [INF RegisterDlls directives](../install/inf-registerdlls-directive.md) into [INF AddReg directives](../install/inf-addreg-directive.md) in order to make a driver package universal.  For more info, see [Using a Universal INF File](using-a-universal-inf-file.md).
 
 A **RegisterDlls** directive references one or more INF sections used to specify files that are OLE controls and require self-registration.
 

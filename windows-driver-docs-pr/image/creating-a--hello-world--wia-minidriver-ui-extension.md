@@ -1,7 +1,7 @@
 ---
 title: Creating a "Hello World" WIA Minidriver UI Extension
 author: windows-driver-content
-description: Creating a \ 0034;Hello World \ 0034; WIA Minidriver UI Extension
+description: Creating a "Hello World" WIA Minidriver UI Extension
 ms.assetid: 8de1f8ca-f618-44d7-b6dd-c02cdee8a556
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
