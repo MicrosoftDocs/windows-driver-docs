@@ -16,7 +16,7 @@ If you want to include user-mode software for use with a device on Windows 10, y
 |[Hardware support apps (HSA)](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md) | Device add-on software packaged as a UWP app that is delivered and serviced from the Windows Store.  Recommended approach. |
 |Software components|Device add-on software is an MSI or EXE binary, a Win32 service, or software installed using AddReg and CopyFiles.  Referenced binary only runs on desktop editions (Home, Pro, and Enterprise).  The referenced binary will not run on Windows 10S.|
 
-A software component is a separate, standalone driver package that can install one or more software modules.  The installed software enhances the value of the device, but is not necessary for basic device functionality and has no associated function driver service.  
+A software component is a separate, standalone driver package that can install one or more software modules.  The installed software enhances the value of the device, but is not necessary for basic device functionality and does not require an associated function driver service.  
 
 This page provides guidelines for the use of software components.
 
