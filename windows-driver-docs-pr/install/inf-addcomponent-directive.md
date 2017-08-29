@@ -46,7 +46,7 @@ ComponentIDs=component-id[,component-id] …
 
 Each *component-install-section* must have at least the **ComponentIDs** entry as shown here. However, the remaining entries are optional.
 
-Note that **ComponentIDs** are [HardwareIDs](hardware-ids.md), which means they are arbitrary strings defined by the hardware developer.  To ensure uniqueness of these IDs, in most cases, we recommend following the identifier schema used for [PCI devices](identifiers-for-pci-devices.md).  It is possible that a vendor might want to use a different schema, but that depends on the scenario. 
+Note that **ComponentIDs** are [HardwareIDs](hardware-ids.md), which means they are strings defined by the hardware developer.  To ensure uniqueness of these IDs, in most cases, we recommend following the identifier schema used for [PCI devices](identifiers-for-pci-devices.md).  It is possible that a vendor might want to use a different schema, but that depends on the scenario. 
 
 ## Component-Install Section Entries and Values
 	
