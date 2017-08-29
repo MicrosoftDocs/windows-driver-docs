@@ -24,7 +24,7 @@ Fabrikam removes the non-universal sections and directives and uses the [InfVeri
 
 ## Use extension INFs to componentize a driver package
 
-Next, Fabrikam separates customizations that are specific to OEM partners (such as Contoso) from the primary driver package into an [extension INF](../install/using-an-extension-inf-file.md).
+Next, Fabrikam separates customizations that are specific to OEM partners (such as Contoso) from the base driver package into an [extension INF](../install/using-an-extension-inf-file.md).
 
 The following snippet, updated from [`osrfx2_DCHU_extension.inx`], specifies the `Extension` class and identifies Contoso as the provider since they will own the extension driver package:
 
@@ -52,7 +52,7 @@ HKR, OSR, "OperatingParams",, "-Extended"
 HKR, OSR, "OperatingExceptions",, "x86"	
 ```
 
-Note that extensions are always processed after the primary INF in no definite order. If a primary INF is updated to a newer version, then the extensions will still be re-applied after the new primary INF is installed.
+Note that extensions are always processed after the base INF in no definite order. If a base INF is updated to a newer version, then the extensions will still be re-applied after the new base INF is installed.
 
 ## Install a service from an INF file
 
@@ -116,7 +116,7 @@ Note that the component driver package is only distributed on Desktop SKUs due t
 
 Fabrikam would like to provide a GUI-based companion app as part of the universal driver package.  Because Win32-based companion applications cannot be part of a universal driver package, they port their Win32 app to the Universal Windows Platform (UWP) and [pair the app with the device](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-access-for-universal-windows-platform-apps).
 
-The following snippet from [`osrfx2_DCHU_base/device.c`](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_base/device.c) shows how the primary driver package adds a custom capability to the device interface instance:
+The following snippet from [`osrfx2_DCHU_base/device.c`](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_base/device.c) shows how the base driver package adds a custom capability to the device interface instance:
 
 ```cpp
     WDF_DEVICE_INTERFACE_PROPERTY_DATA PropertyData = { 0 };
@@ -190,7 +190,7 @@ Using a destination directory value of 13 can result in improved stability durin
 
 The following diagram shows the driver packages that Fabrikam and Contoso created for their Universal Windows Driver.  In the loosely coupled example, they will make three separate submissions on the [Windows Hardware Dev Center dashboard](https://developer.microsoft.com/dashboard/Registration/Hardware): one for the base, one for the extension, and one for the component.  In the tightly coupled example, they will make two submissions: base and extension/component.
 
-![Extension, primary, and component driver packages](images/universal-scenarios.png)
+![Extension, base, and component driver packages](images/universal-scenarios.png)
 
 Note that the component INF will match on the component hardware ID, whereas the base and extensions will match on the board's hardware ID.
 

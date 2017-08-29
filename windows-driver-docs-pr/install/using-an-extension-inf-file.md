@@ -13,16 +13,16 @@ ms.technology: windows-devices
 
 Prior to Windows 10, Windows selected a single driver package to install for a given device.  This resulted in large, complex driver packages that included code for all scenarios and configurations, and each minor update required an update to the entire driver package.  Starting in Windows 10, you can split INF functionality into multiple components, each of which can be serviced independently.  To extend a driver package INF file's functionality, provide an extension INF in a separate driver package.  An extension INF:
 
-* Can be provided by a different company and updated independently from the primary INF.
-* Looks the same as a primary INF, but can extend the base INF for customization or specialization.
+* Can be provided by a different company and updated independently from the base INF.
+* Looks the same as a base INF, but can extend the base INF for customization or specialization.
 * Enhances the value of the device, but is not necessary for the base driver to work.
 * Must be a [universal INF file](../install/using-a-universal-inf-file.md).
 
-Every device must have one primary INF, and can optionally have one or more extension INFs associated with it.
+Every device must have one base INF, and can optionally have one or more extension INFs associated with it.
 
 Typical scenarios where you might use an extension INF include:
 
-* Modifying settings provided in a primary INF, such as customizing the device friendly name or modifying a hardware configuration setting.
+* Modifying settings provided in a base INF, such as customizing the device friendly name or modifying a hardware configuration setting.
 * Creating one or more software components by specifying the [INF AddComponent directive](inf-addcomponent-directive.md) and providing a [component INF file](using-a-component-inf-file.md).
 
 You can find sample code for these scenarios in the examples below on this page.  Also see [Universal Driver Scenarios](../develop/universal-driver-scenarios.md), which describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) uses extension INFs.
@@ -31,9 +31,9 @@ In the following diagram, two different companies have created separate driver p
 
 ![Extension and Component INF Hierarchy](images/extension-component-inf-hierarchy.png)
 
-## How extension INF and primary INF work together
+## How extension INF and base INF work together
 
-Settings in an extension INF are applied after settings in a primary INF. As a result, if an extension INF and a primary INF specify the same setting, the version in the extension INF is applied. Similarly, if the primary INF changes, the extension INF remains and is applied over the new primary INF.
+Settings in an extension INF are applied after settings in a base INF. As a result, if an extension INF and a base INF specify the same setting, the version in the extension INF is applied. Similarly, if the base INF changes, the extension INF remains and is applied over the new base INF.
 
 ## Specifying ExtensionId
 
@@ -41,7 +41,7 @@ The system identifies possible extension INFs for a specific device by matching 
 
 When you write an extension INF, you generate a special GUID called the **ExtensionId**, which is an entry in the INF's **\[Version\]** section.
 
-For each extension INF that specifies a unique **ExtensionId** value, the system selects only one and applies its settings over those of the primary INF.
+For each extension INF that specifies a unique **ExtensionId** value, the system selects only one and applies its settings over those of the base INF.
 
 Driver date and driver version are the tiebreakers, in that order, between multiple extension INFs with the same **ExtensionId**.
 
@@ -56,9 +56,9 @@ First, the system selects the driver with the most recent version and highest ra
 
 Next, the system processes the available extension INFs.  Two have **ExtensionId** value `{B}`, and one has **ExtensionId** value `{A}`.  From the first two, let's say that driver date is the same.  The next tiebreaker is driver version, so the system selects the extension INF with v2.0.
 
-The extension INF with the unique **ExtensionId** value is also selected.  The system applies the primary INF for the device, and then applies the two extension INFs.
+The extension INF with the unique **ExtensionId** value is also selected.  The system applies the base INF for the device, and then applies the two extension INFs.
 
-Note that extension INF files are always applied after the primary INF, but that there is no determined order in which the extension INFs are applied.
+Note that extension INF files are always applied after the base INF, but that there is no determined order in which the extension INFs are applied.
 
 ## Creating an extension INF
 
@@ -81,7 +81,7 @@ Here are the entries you need to define an INF as an extension INF.
 
 3.  If you are updating an extension INF, keep the **ExtensionId** the same and increment the version or date (or both) specified by the [**DriverVer**](inf-driverver-directive.md) directive. For a given **ExtensionId** value, PnP selects the INF with the highest **DriverVer**.
 
-4.  In the [**INF Models section**](inf-models-section.md), specify one or more hardware and compatible IDs that match those of the target device.  Note that these hardware and compatible IDs do not need to match those of the primary INF.  Typically, an extension INF lists a more specific hardware ID than the primary INF, with the goal of further specializing a specific driver configuration.  However, the extension INF might list the same hardware ID as the primary INF, for instance if the device is already very narrowly targeted, or if the primary INF already lists the most specific hardware ID.  In some cases, the extension INF might provide a less specific device ID, like a compatible ID, in order to customize a setting across a broader set of devices.
+4.  In the [**INF Models section**](inf-models-section.md), specify one or more hardware and compatible IDs that match those of the target device.  Note that these hardware and compatible IDs do not need to match those of the base INF.  Typically, an extension INF lists a more specific hardware ID than the base INF, with the goal of further specializing a specific driver configuration.  However, the extension INF might list the same hardware ID as the base INF, for instance if the device is already very narrowly targeted, or if the base INF already lists the most specific hardware ID.  In some cases, the extension INF might provide a less specific device ID, like a compatible ID, in order to customize a setting across a broader set of devices.
 
     ```
     [DeviceExtensions.NTamd64]
@@ -95,7 +95,7 @@ The driver validation and submission process is the same for extension INFs as f
 
 ## Example 1: Using an extension INF to set the device friendly name
 
-In one common scenario, a device manufacturer (IHV) provides a base driver and a primary INF, and then a system builder (OEM) provides an extension INF that supplements and in some cases overrides the configuration and settings of the primary INF.  The following snippet is a complete extension INF that shows how to set the device friendly name.
+In one common scenario, a device manufacturer (IHV) provides a base driver and a base INF, and then a system builder (OEM) provides an extension INF that supplements and in some cases overrides the configuration and settings of the base INF.  The following snippet is a complete extension INF that shows how to set the device friendly name.
 
 ```
 [Version]
