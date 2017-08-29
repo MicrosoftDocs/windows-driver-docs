@@ -161,7 +161,12 @@ HKCR,CLSID\{92FCF37F-F6C7-4F8A-AA09-1A14BA118084}\VersionIndependentProgID,,,"AT
 
 ## Tightly coupling multiple INF files
 
-Ideally, there should be strong versioning contracts between base, extensions and components.  There are servicing advantages in having these three packages serviced independently, but there are scenarios where they need to be bundled in a single driver package ("tightly coupled") due to poor versioning contracts.  The sample includes an example of how to package an extensions and components separately ("loosely coupled" files under  [DCHU_Sample\osrfx2_DCHU_extension_loose](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_loose)) or together (tightly coupled files under [DCHU_Sample\osrfx2_DCHU_extension_tight](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_tight)).  When the extension and component are tightly coupled, the extension INF is responsible for enabling the installation of the component INF.  This is demonstrated in [DCHU_Sample\osrfx2_DCHU_extension_tight\osrfx2_DCHU_extension\osrfx2_DCHU_extension.inx](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_tight/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx) by using the [CopyINF directive](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-copyinf-directive):
+Ideally, there should be strong versioning contracts between base, extensions and components.  There are servicing advantages in having these three packages serviced independently (the "loosely coupled" scenario), but there are scenarios where they need to be bundled in a single driver package ("tightly coupled") due to poor versioning contracts.  The sample includes examples of both scenarios:
+
+ * [DCHU_Sample\osrfx2_DCHU_extension_loose](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_loose)
+ * [DCHU_Sample\osrfx2_DCHU_extension_tight](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_tight)
+ 
+ When the extension and component are in the same driver package ("tightly coupled"), the extension INF specifies the [CopyINF directive](../install/inf-copyinf-directive.md) to cause the component INF to be copied to the target system.  This is demonstrated in [DCHU_Sample\osrfx2_DCHU_extension_tight\osrfx2_DCHU_extension\osrfx2_DCHU_extension.inx](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_tight/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx):
 
 ```
 [OsrFx2Extension_Install.NT]
@@ -183,7 +188,7 @@ Using a destination directory value of 13 can result in improved stability durin
 
 ## Summary
 
-The following diagram shows the driver packages that Fabrikam and Contoso created for their Universal Windows Driver.  In the loosely coupled example, they will make three separate submissions on the [Windows Hardware Dev Center dashboard](https://developer.microsoft.com/dashboard/Registration/Hardware).  In the tightly coupled example, they will make two submissions.
+The following diagram shows the driver packages that Fabrikam and Contoso created for their Universal Windows Driver.  In the loosely coupled example, they will make three separate submissions on the [Windows Hardware Dev Center dashboard](https://developer.microsoft.com/dashboard/Registration/Hardware): one for the base, one for the extension, and one for the component.  In the tightly coupled example, they will make two submissions: base and extension/component.
 
 ![Extension, primary, and component driver packages](images/universal-scenarios.png)
 

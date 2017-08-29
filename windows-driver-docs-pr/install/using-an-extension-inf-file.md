@@ -11,21 +11,23 @@ ms.technology: windows-devices
 
 # Using an Extension INF File
 
-Starting in Windows 10, you can extend a driver package INF file's functionality by providing an additional INF file called an extension INF.  An extension INF:
+Prior to Windows 10, Windows selected a single driver package to install for a given device.  This resulted in large, complex driver packages that included code for all scenarios and configurations, and each minor update required an update to the entire driver package.  Starting in Windows 10, you can split INF functionality into multiple components, each of which can be serviced independently.  To extend a driver package INF file's functionality, provide an extension INF in a separate driver package.  An extension INF:
 
-* Augments functionality provided by a primary INF.
+* Can be provided by a different company and updated independently from the primary INF.
+* Looks the same as a primary INF, but can extend the base INF for customization or specialization.
 * Enhances the value of the device, but is not necessary for the base driver to work.
 * Must be a [universal INF file](../install/using-a-universal-inf-file.md).
-* Can be updated independently from the primary INF.
 
-Typical scenarios where you might want to use an extension INF include:
+Every device must have one primary INF, and can optionally have one or more extension INFs associated with it.
+
+Typical scenarios where you might use an extension INF include:
 
 * Modifying settings provided in a primary INF, such as customizing the device friendly name or modifying a hardware configuration setting.
 * Creating one or more software components by specifying the [INF AddComponent directive](inf-addcomponent-directive.md) and providing a [component INF file](using-a-component-inf-file.md).
 
-You can find sample code for these three scenarios in the examples below on this page.
+You can find sample code for these scenarios in the examples below on this page.  Also see [Universal Driver Scenarios](../develop/universal-driver-scenarios.md), which describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) uses extension INFs.
 
-In the following diagram, two different organizations have created two separate driver packages, which are shown in the dotted lines.  The first contains just an extension INF, and the second contains a component INF and a legacy software module.  The diagram also shows how an extension INF can reference a component INF, which can in turn reference software modules to install.
+In the following diagram, two different companies have created separate driver packages for the same device, which are shown in the dotted lines.  The first contains just an extension INF, and the second contains a component INF and a legacy software module.  The diagram also shows how an extension INF can reference a component INF, which can in turn reference software modules to install.
 
 ![Extension and Component INF Hierarchy](images/extension-component-inf-hierarchy.png)
 
@@ -39,16 +41,24 @@ The system identifies possible extension INFs for a specific device by matching 
 
 When you write an extension INF, you generate a special GUID called the **ExtensionId**, which is an entry in the INF's **\[Version\]** section.
 
-For each possible extension INF that specifies a unique **ExtensionId** value, the system selects only one and applies its settings over those of the primary INF.
+For each extension INF that specifies a unique **ExtensionId** value, the system selects only one and applies its settings over those of the primary INF.
 
 Driver date and driver version are the tiebreakers, in that order, between multiple extension INFs with the same **ExtensionId**.
 
-To illustrate, consider a hypothetical device for which there are four extension INFs. Two extension INFs have the same **ExtensionId** value, and two have unique **ExtensionId** values. From the first two, the one with the most recent driver date is selected. If driver date is the same, driver version is the next tiebreaker.
+To illustrate, consider the following scenario that includes a hypothetical device for which there are three extension INFs:
 
-From the latter two, both are selected, because they have unique **ExtensionId** values. In this example, the system applies the primary INF for the device, and then applies three extension INFs for that device.
+![xxx](images/extension-base-inf-example.png)
 
-Note that extension INF files are always processed after the primary INF, but that there is no determined processing ordering in cases where more than one extension INF is available.
-Example: A primary INF (V1) with extension A and B are installed on a device. An update to the primary INF (V2) is published. When installed on the system, primary INF V2 will be installed. Then, extensions A and B will be re-applied in no definite order.
+
+The **ExtensionId** values are shown in curly brackets, and each driver's [rank](how-setup-ranks-drivers--windows-vista-and-later-.md) is shown in the banner ribbons.
+
+First, the system selects the driver with the most recent version and highest rank.
+
+Next, the system processes the available extension INFs.  Two have **ExtensionId** value `{B}`, and one has **ExtensionId** value `{A}`.  From the first two, let's say that driver date is the same.  The next tiebreaker is driver version, so the system selects the extension INF with v2.0.
+
+The extension INF with the unique **ExtensionId** value is also selected.  The system applies the primary INF for the device, and then applies the two extension INFs.
+
+Note that extension INF files are always applied after the primary INF, but that there is no determined order in which the extension INFs are applied.
 
 ## Creating an extension INF
 
@@ -121,7 +131,7 @@ Device.ExtensionDesc = "Sample Device Extension"
 
 The following snippet is a complete extension INF that is included the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).  This example uses [INF AddComponent directive](inf-addcomponent-directive.md) to create components that install a service and an executable.  For more info about what you can do in a component INF, see [Using a Component INF File](using-a-component-inf-file.md).
 
-To access this file online, see [`osrfx2_DCHU_extension.inx`](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx).
+To access this file online, see [`osrfx2_DCHU_extension.inx`](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_loose/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx).
 
 ```
 ;/*++
@@ -266,6 +276,7 @@ FilterSample.ServiceDesc = "Sample Upper Filter"
 
 ## Related topics
 
+* [Universal Driver Scenarios](../develop/universal-driver-scenarios.md)
 * [Using a Universal INF File](using-a-universal-inf-file.md)
 * [Getting Started with Universal Drivers](../develop/getting-started-with-universal-drivers.md)
 * [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU)
