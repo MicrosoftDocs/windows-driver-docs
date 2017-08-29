@@ -37,18 +37,15 @@ Settings in an extension INF are applied after settings in a base INF. As a resu
 
 ## Specifying ExtensionId
 
-The system identifies possible extension INFs for a specific device by matching the hardware ID and compatible IDs of the device to those specified in the [**Manufacturer**](inf-manufacturer-section.md) section of the extension INF.
-
 When you write an extension INF, you generate a special GUID called the **ExtensionId**, which is an entry in the INF's **\[Version\]** section.
 
-For each extension INF that specifies a unique **ExtensionId** value, the system selects only one and applies its settings over those of the base INF.
+The system identifies possible extension INFs for a specific device by matching the hardware ID and compatible IDs of the device to those specified in an extension INF in a [**Models**](inf-models-section.md) section that applies to that system.
 
-Driver date and driver version are the tiebreakers, in that order, between multiple extension INFs with the same **ExtensionId**.
+Among all possible extension INFs that specify the same **ExtensionId** value, the system selects only one to install and applies its settings over those of the base INF.  The driver date and driver version specified in the INF are used, in that order, to choose the single INF between multiple extension INFs with the same **ExtensionId**.
 
 To illustrate, consider the following scenario that includes a hypothetical device for which there are three extension INFs:
 
-![xxx](images/extension-base-inf-example.png)
-
+![Diagram showing how base INF and extension INFs are selected](images/extension-base-inf-example.png)
 
 The **ExtensionId** values are shown in curly brackets, and each driver's [rank](how-setup-ranks-drivers--windows-vista-and-later-.md) is shown in the banner ribbons.
 
@@ -56,7 +53,7 @@ First, the system selects the driver with the most recent version and highest ra
 
 Next, the system processes the available extension INFs.  Two have **ExtensionId** value `{B}`, and one has **ExtensionId** value `{A}`.  From the first two, let's say that driver date is the same.  The next tiebreaker is driver version, so the system selects the extension INF with v2.0.
 
-The extension INF with the unique **ExtensionId** value is also selected.  The system applies the base INF for the device, and then applies the two extension INFs.
+The extension INF with the unique **ExtensionId** value is also selected.  The system applies the base INF for the device, and then applies the two extension INFs for that device.
 
 Note that extension INF files are always applied after the base INF, but that there is no determined order in which the extension INFs are applied.
 
