@@ -46,6 +46,8 @@ ComponentIDs=component-id[,component-id] …
 
 Each *component-install-section* must have at least the **ComponentIDs** entry as shown here. However, the remaining entries are optional.
 
+Note that **ComponentIDs** are [HardwareIDs](https://docs.microsoft.com/en-ca/windows-hardware/drivers/install/hardware-ids), which means they are arbitrary strings defined by the hardware developper. To ensure uniqueness of these IDs, in most cases, we recommend following the identifier schema used for [PCI devices](https://docs.microsoft.com/en-ca/windows-hardware/drivers/install/identifiers-for-pci-devices). It is possible that a vendor might want to use a different schema, but that depends on the scenario. 
+
 ## Component-Install Section Entries and Values
 	
 **ComponentIDs**=*id1[, id2] … [, idN]*
