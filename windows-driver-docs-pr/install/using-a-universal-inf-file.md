@@ -71,7 +71,7 @@ The following directives are valid with some caveats:
     -   11 (corresponds to %WINDIR%\\System32)
     -   12 (corresponds to %WINDIR%\\System32\\Drivers)
     -   13 (corresponds to the directory under %WINDIR%\\System32\\DriverStore\\FileRepository where the driver is stored)  
-        **Note:** Value 13 may not be valid on all SKUs
+        	**Note:** This location is only valid on Windows 10 products for a limited subset of device installation scenarios. Please consult guidance and samples for your specific device class for more details.
     -   10,SysWOW64 (corresponds to %WINDIR%\\SysWOW64)
 
 ## See Also
