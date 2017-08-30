@@ -159,5 +159,3 @@
 #### [NET_REQUEST_QUEUE_TYPE](net-request-queue-type.md)
 ### [NetAdapterCx macros](netadaptercx-macros.md)
 #### [NET_PACKET_DECLARE_CONTEXT_TYPE_WITH_NAME](net-packet-declare-context-type-with-name.md)
-### [NetAdapterCx typedefs](netadaptercx-typedefs.md)
-#### [NET_ADAPTER_LINK_LAYER_ADDRESS](net-adapter-link-layer-address.md)

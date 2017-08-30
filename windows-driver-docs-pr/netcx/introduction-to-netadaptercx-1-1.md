@@ -25,7 +25,7 @@ In version 1.0, NetAdapterCx had one packet context per queue, which limited cli
 
 ### Finer link layer address control
 
-Two new methods, [NetAdapterSetPermanentLinkLayerAddress] and [NetAdapterSetCurrentLinkLayerAddress], have been added in NetAdapter 1.1 to allow NIC client drivers to more easily set these separate addresses with dedicated methods. Previously, in version 1.0, this functionality was embedded in the [NetAdapterSetLinkLayerCapabilities](netadaptersetlinklayercapabilities.md) method and required additional complexity in allocating and initializing that method's [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md) structure.
+Two new methods, [NetAdapterSetPermanentLinkLayerAddress](netadaptersetpermanentlinklayeraddress.md) and [NetAdapterSetCurrentLinkLayerAddress](netadaptersetcurrentlinklayeraddress.md), have been added in NetAdapter 1.1 to allow NIC client drivers to more easily set these separate addresses with dedicated methods. Previously, in version 1.0, this functionality was embedded in the [NetAdapterSetLinkLayerCapabilities](netadaptersetlinklayercapabilities.md) method and required additional complexity in allocating and initializing that method's [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md) structure.
 
 ## API changes
 
@@ -33,7 +33,6 @@ Two new methods, [NetAdapterSetPermanentLinkLayerAddress] and [NetAdapterSetCurr
 
 The following APIs are new in NetAdapterCx 1.1.
 
-- [NET_ADAPTER_LINK_LAYER_ADDRESS](net-adapter-link-layer-address.md)
 - [NET_ADAPTER_LINK_LAYER_ADDRESS_INIT](net-adapter-link-layer-address-init.md)
 - [NetAdapterSetPermanentLinkLayerAddress](netadaptersetpermanentlinklayeraddress.md)
 - [NetAdapterSetCurrentLinkLayerAddress](netadaptersetcurrentlinklayeraddress.md)

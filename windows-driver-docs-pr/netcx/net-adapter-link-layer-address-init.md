@@ -28,7 +28,7 @@ FORCEINLINE VOID NET_ADAPTER_LINK_LAYER_ADDRESS_INIT(
 ## Parameters
 
 *LinkLayerAddress* [out]  
-A pointer to the driver-allocated [NET_ADAPTER_LINK_LAYER_ADDRESS](net-adapter-link-layer-address.md) to be initialized.
+A pointer to the driver-allocated NET_ADAPTER_LINK_LAYER_ADDRESS to be initialized.
 
 *Length* [in]  
 The length of the link layer address, in bytes.
@@ -48,11 +48,8 @@ This method does not return a value.
 
 |     |     |
 | --- | --- |
-| Target platform | Universal |
 | Minimum supported client | Windows 10, version 1709 |
 | Minimum supported server | Windows Server 2016 |
-| Minimum KMDF version | ? |
-| Minimum NetAdapterCx version | 1.1 |
 | Header | NetAdapter.h (include NetAdapterCx.h) |
 | IRQL | PASSIVE_LEVEL |
 

@@ -30,7 +30,7 @@ VOID FORCEINLINE NetAdapterSetCurrentLinkLayerAddress(
 The network adapter object that the driver created in a prior call to [NetAdapterCreate](netadaptercreate.md).
 
 *LinkLayerAddress*  
-A [NET_ADAPTER_LINK_LAYER_ADDRESS](net-adapter-link-layer-address.md) object that the driver initialized in a prior call to [NET_ADAPTER_LINK_LAYER_ADDRESS_INIT](net-adapter-link-layer-address-init.md).
+A NET_ADAPTER_LINK_LAYER_ADDRESS object that the driver initialized in a prior call to [NET_ADAPTER_LINK_LAYER_ADDRESS_INIT](net-adapter-link-layer-address-init.md).
 
 ## Return value
 
@@ -41,9 +41,7 @@ This method does not return a value.
 |     |     |
 | --- | --- |
 | Target platform | Universal |
-| Minimum supported client | Windows 10, version 1709 |
-| Minimum supported server | Windows Server 2016 |
-| Minimum KMDF version | ? |
+| Minimum KMDF version | 1.23 |
 | Minimum NetAdapterCx version | 1.1 |
 | Header | Netadapter.h (include NetAdapterCx.h) |
 | IRQL | PASSIVE_LEVEL |
