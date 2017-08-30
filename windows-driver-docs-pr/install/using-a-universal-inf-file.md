@@ -71,10 +71,10 @@ The following directives are valid with some caveats:
     -   11 (corresponds to %WINDIR%\\System32)
     -   12 (corresponds to %WINDIR%\\System32\\Drivers)
     -   13 (corresponds to the directory under %WINDIR%\\System32\\DriverStore\\FileRepository where the driver is stored)  
-        	**Note:** destination directory 13 is only valid on Windows 10 products for a limited subset of device installation scenarios. Please consult guidance and samples for your specific device class for more details.
+        	**Note:** 13 is only valid on Windows 10 products for a limited subset of device installation scenarios. Please consult guidance and samples for your specific device class for more details.
     -   10,SysWOW64 (corresponds to %WINDIR%\\SysWOW64)
-	-   10,*vendor-specific directory name*  
-			**Note:** In Windows 10 Fall Creators Update, destination directory 10,*vendor-specific directory name* is valid in a universal INF as measured using the [InfVerif](../devtest/infverif.md) tool.  In later releases, DIRID 10 may not be supported.  We recommend moving to destination directory 13.
+	-   10,*vendor-specific subdirectory name*  
+			**Note:** In Windows 10 Fall Creators Update, using DIRID 10 with a vendor-specific subdirectory name is valid in a universal INF as measured using the [InfVerif](../devtest/infverif.md) tool.  In later releases, this value may not be supported.  We recommend moving to DIRID 13.
 
 ## See Also
 
