@@ -33,10 +33,10 @@ Two new methods, [NetAdapterSetPermanentLinkLayerAddress] and [NetAdapterSetCurr
 
 The following APIs are new in NetAdapterCx 1.1.
 
-- [NET_ADAPTER_LINK_LAYER_ADDRESS]
-- [NET_ADAPTER_LINK_LAYER_ADDRESS_INIT]
-- [NetAdapterSetPermanentLinkLayerAddress]
-- [NetAdapterSetCurrentLinkLayerAddress]
+- [NET_ADAPTER_LINK_LAYER_ADDRESS](net-adapter-link-layer-address.md)
+- [NET_ADAPTER_LINK_LAYER_ADDRESS_INIT](net-adapter-link-layer-address-init.md)
+- [NetAdapterSetPermanentLinkLayerAddress](netadaptersetpermanentlinklayeraddress.md)
+- [NetAdapterSetCurrentLinkLayerAddress](netadaptersetcurrentlinklayeraddress.md)
 - [NET_PACKET_CONTEXT_TOKEN]
 - [NET_PACKET_CONTEXT_ATTRIBUTES]
 - [NET_PACKET_DECLARE_CASTING_FUNCTION_FROM_TOKEN]
@@ -95,5 +95,7 @@ The following APIs were removed in NetAdapterCx 1.1. Many of them were replaced 
 If you are porting an NDIS 6.x miniport driver to NetAdapter 1.1, first follow the compilation steps on [Porting NDIS miniport drivers to NetAdapterCx](porting-ndis-miniport-drivers-to-netadaptercx.md). Then, in the **Configuration Properties > Driver Settings > Network Adapter Driver** dialog box, set **Network Adapter Major Version** to **1** and **Network Adapter Minor Version** to **1**.
 
 If you are porting a NetAdapterCx client driver from an earlier version of NetAdapterCx, in the **Configuration Properties > Driver Settings > Network Adapter Driver** dialog box, set **Network Adapter Major Version** to **1** and **Network Adapter Minor Version** to **1**.
+
+If you are writing a new NetAdapterCx client driver, follow the steps on [Building a NetAdapterCx client driver](building-a-netadaptercx-client-driver.md) and, in Step 5, set **Network Adapter Major Version** to **1** and **Network Adapter Minor Version** to **1**.
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
