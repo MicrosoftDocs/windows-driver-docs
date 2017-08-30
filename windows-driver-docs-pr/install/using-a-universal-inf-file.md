@@ -71,22 +71,10 @@ The following directives are valid with some caveats:
     -   11 (corresponds to %WINDIR%\\System32)
     -   12 (corresponds to %WINDIR%\\System32\\Drivers)
     -   13 (corresponds to the directory under %WINDIR%\\System32\\DriverStore\\FileRepository where the driver is stored)  
-        **Note:** This location may not be valid on all SKUs
+        **Note:** Value 13 may not be valid on all SKUs
     -   10,SysWOW64 (corresponds to %WINDIR%\\SysWOW64)
 
-## Related topics
+## See Also
 
-
-[Installing a Universal Windows driver](https://msdn.microsoft.com/windows-drivers/develop/installing_a_universal_driver)
-
-[InfVerif](https://msdn.microsoft.com/library/windows/hardware/dn929319)
-
- 
-
- 
-
-
-
-
-
-
+* [Installing a Universal Windows driver](https://msdn.microsoft.com/windows-drivers/develop/installing_a_universal_driver)
+* [InfVerif](https://msdn.microsoft.com/library/windows/hardware/dn929319)
