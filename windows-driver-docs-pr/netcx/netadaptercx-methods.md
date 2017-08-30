@@ -15,9 +15,15 @@ ms.technology: windows-devices
 
 This section contains methods for Network Adapter WDF Class Extension (NetAdapterCx) client drivers.
 
+### Initialize or add methods
+
+The following methods are used to initialize structures or add handlers to a NetAdapterCx client driver.
+
 [NET_ADAPTER_CONFIG_INIT method](net-adapter-config-init.md)
 
 [NET_ADAPTER_DATAPATH_CAPABILITIES_INIT method](net-adapter-datapath-capabilities-init.md)
+
+[NET_ADAPTER_LINK_LAYER_ADDRESS_INIT](net-adapter-link-layer-address-init.md)
 
 [NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT_NO_PHYSICAL_ADDRESS](net-adapter-link-layer-capabilities-init-no-physical-address.md)
 
@@ -59,6 +65,10 @@ This section contains methods for Network Adapter WDF Class Extension (NetAdapte
 
 [NET_TXQUEUE_CONFIG_INIT method](net-txqueue-config-init.md)
 
+### All other methods
+
+The following methods are used for all other functionality in a NetAdapterCx client driver other than initializing a structure or adding a handler.
+
 [NetAdapterCreate method](netadaptercreate.md)
 
 [NetAdapterDeviceInitConfig method](netadapterdeviceinitconfig.md)
@@ -71,6 +81,8 @@ This section contains methods for Network Adapter WDF Class Extension (NetAdapte
 
 [NetAdapterOpenConfiguration method](netadapteropenconfiguration.md)
 
+[NetAdapterSetCurrentLinkLayerAddress method](netadaptersetcurrentlinklayeraddress.md)
+
 [NetAdapterSetCurrentLinkState method](netadaptersetcurrentlinkstate.md)
 
 [NetAdapterSetDataPathCapabilities method](netadaptersetdatapathcapabilities.md)
@@ -78,6 +90,8 @@ This section contains methods for Network Adapter WDF Class Extension (NetAdapte
 [NetAdapterSetLinkLayerCapabilities method](netadaptersetlinklayercapabilities.md)
 
 [NetAdapterSetLinkLayerMtuSize method](netadaptersetlinklayermtusize.md)
+
+[NetAdapterSetPermanentLinkLayerAddress method](netadaptersetpermanentlinklayeraddress.md)
 
 [NetAdapterSetPowerCapabilities method](netadaptersetpowercapabilities.md)
 

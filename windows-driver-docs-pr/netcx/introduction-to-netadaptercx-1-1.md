@@ -33,9 +33,9 @@ Two new methods, [NetAdapterSetPermanentLinkLayerAddress](netadaptersetpermanent
 
 The following APIs are new in NetAdapterCx 1.1.
 
-- [NET_ADAPTER_LINK_LAYER_ADDRESS_INIT](net-adapter-link-layer-address-init.md)
-- [NetAdapterSetPermanentLinkLayerAddress](netadaptersetpermanentlinklayeraddress.md)
-- [NetAdapterSetCurrentLinkLayerAddress](netadaptersetcurrentlinklayeraddress.md)
+- [NET_ADAPTER_LINK_LAYER_ADDRESS_INIT method](net-adapter-link-layer-address-init.md)
+- [NetAdapterSetPermanentLinkLayerAddress method](netadaptersetpermanentlinklayeraddress.md)
+- [NetAdapterSetCurrentLinkLayerAddress method](netadaptersetcurrentlinklayeraddress.md)
 - [NET_PACKET_CONTEXT_TOKEN]
 - [NET_PACKET_CONTEXT_ATTRIBUTES]
 - [NET_PACKET_DECLARE_CASTING_FUNCTION_FROM_TOKEN]
