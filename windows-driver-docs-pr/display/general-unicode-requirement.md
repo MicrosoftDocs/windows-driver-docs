@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # General Unicode requirement in INF files
 
 
-INF files should be saved and encoded as Unicode; they must not be ANSI.
+INF files should be saved and encoded as Unicode (UTF-16); they must not be ANSI or UTF-8.
 
 **To check for Unicode in INF files**
 
