@@ -1,10 +1,10 @@
 ---
-title: OID\_WDI\_SET\_RECEIVE\_COALESCING
+title: OID_WDI_SET_RECEIVE_COALESCING
 author: windows-driver-content
-description: OID\_WDI\_SET\_RECEIVE\_COALESCING is used by the host to add a packet filter for packet coalescing.
+description: OID_WDI_SET_RECEIVE_COALESCING is used by the host to add a packet filter for packet coalescing.
 ms.assetid: c8856813-0d81-4735-95cc-d9b5dc6ede87
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

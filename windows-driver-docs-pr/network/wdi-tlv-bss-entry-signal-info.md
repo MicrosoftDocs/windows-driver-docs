@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_BSS\_ENTRY\_SIGNAL\_INFO
+title: WDI_TLV_BSS_ENTRY_SIGNAL_INFO
 author: windows-driver-content
-description: WDI\_TLV\_BSS\_ENTRY\_SIGNAL\_INFO is a TLV that contains signal information for a BSS entry.
+description: WDI_TLV_BSS_ENTRY_SIGNAL_INFO is a TLV that contains signal information for a BSS entry.
 ms.assetid: 4410F447-5226-4DF4-923D-11D10D0159CC
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

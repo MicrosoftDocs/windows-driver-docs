@@ -1,10 +1,10 @@
 ---
-title: NDIS\_STATUS\_LINK\_SPEED\_CHANGE
+title: NDIS_STATUS_LINK_SPEED_CHANGE
 author: windows-driver-content
-description: The NDIS\_STATUS\_LINK\_SPEED\_CHANGE status indicates a link speed change.
+description: The NDIS_STATUS_LINK_SPEED_CHANGE status indicates a link speed change.
 ms.assetid: 084e43c9-598c-4c30-8004-2d1876a1cddd
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

@@ -1,10 +1,10 @@
 ---
-title: NET\_BUFFER\_LIST\_SET\_HASH\_VALUE macro
+title: NET_BUFFER_LIST_SET_HASH_VALUE macro
 author: windows-driver-content
-description: The NET\_BUFFER\_LIST\_SET\_HASH\_VALUE macro sets the hash value information in a NET\_BUFFER\_LIST structure. Version InformationWindows VistaSupported. NDIS 6.0 driversSupported.
+description: The NET_BUFFER_LIST_SET_HASH_VALUE macro sets the hash value information in a NET_BUFFER_LIST structure. Version InformationWindows VistaSupported. NDIS 6.0 driversSupported.
 ms.assetid: cca681ab-7867-40e3-beab-ad001fb0dd39
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

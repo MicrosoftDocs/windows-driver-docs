@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_ADDITIONAL\_IES
+title: WDI_TLV_ADDITIONAL_IES
 author: windows-driver-content
-description: WDI\_TLV\_ADDITIONAL\_IES is a TLV that contains additional Information Element (IE) settings.
+description: WDI_TLV_ADDITIONAL_IES is a TLV that contains additional Information Element (IE) settings.
 ms.assetid: B9094E9D-894F-4B23-B4DA-126F87E908C9
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

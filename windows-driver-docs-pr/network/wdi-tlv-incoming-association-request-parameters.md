@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_INCOMING\_ASSOCIATION\_REQUEST\_PARAMETERS
+title: WDI_TLV_INCOMING_ASSOCIATION_REQUEST_PARAMETERS
 author: windows-driver-content
-description: WDI\_TLV\_INCOMING\_ASSOCIATION\_REQUEST\_PARAMETERS is a TLV that contains association request parameters.
+description: WDI_TLV_INCOMING_ASSOCIATION_REQUEST_PARAMETERS is a TLV that contains association request parameters.
 ms.assetid: DC3439A2-2221-4489-AB38-3752624EA4B2
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

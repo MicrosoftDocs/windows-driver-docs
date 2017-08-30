@@ -169,9 +169,9 @@ EvtDevicePrepareHardware(
     //
     // Initialize UCM Manager
     //
-    UCM_MANAGER_CONFIG_INIT(&amp;ucmCfg);
+    UCM_MANAGER_CONFIG_INIT(&ucmCfg);
 
-    status = UcmInitializeDevice(Device, &amp;ucmCfg);
+    status = UcmInitializeDevice(Device, &ucmCfg);
     if (!NT_SUCCESS(status))
     {
         TRACE_ERROR(
@@ -185,23 +185,23 @@ EvtDevicePrepareHardware(
     //
     // Create a USB Type-C connector #0 with PD
     //
-    UCM_CONNECTOR_CONFIG_INIT(&amp;connCfg, 0);
+    UCM_CONNECTOR_CONFIG_INIT(&connCfg, 0);
 
     UCM_CONNECTOR_TYPEC_CONFIG_INIT(
-        &amp;typeCConfig,
+        &typeCConfig,
         UcmTypeCOperatingModeDrp,
         UcmTypeCCurrentDefaultUsb | UcmTypeCCurrent1500mA | UcmTypeCCurrent3000mA);
 
     typeCConfig.EvtSetDataRole = EvtSetDataRole;
 
-    UCM_CONNECTOR_PD_CONFIG_INIT(&amp;pdConfig, UcmPowerRoleSink | UcmPowerRoleSource);
+    UCM_CONNECTOR_PD_CONFIG_INIT(&pdConfig, UcmPowerRoleSink | UcmPowerRoleSource);
 
-    connCfg.TypeCConfig = &amp;typeCConfig;
-    connCfg.PdConfig = &amp;pdConfig;
+    connCfg.TypeCConfig = &typeCConfig;
+    connCfg.PdConfig = &pdConfig;
 
-    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&amp;attr, CONNECTOR_CONTEXT);
+    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&attr, CONNECTOR_CONTEXT);
 
-    status = UcmConnectorCreate(Device, &amp;connCfg, &amp;attr, &amp;devCtx->Connector);
+    status = UcmConnectorCreate(Device, &connCfg, &attr, &devCtx->Connector);
     if (!NT_SUCCESS(status))
     {
         TRACE_ERROR(
@@ -212,7 +212,7 @@ EvtDevicePrepareHardware(
 
     connCtx = GetConnectorContext(devCtx->Connector);
 
-    UcmEventInitialize(&amp;connCtx->EventSetDataRole);
+    UcmEventInitialize(&connCtx->EventSetDataRole);
 
     TRACE_INFO("UcmConnectorCreate() succeeded.");
 
@@ -234,13 +234,13 @@ The UCM class extension also notifies the USB role-switch drivers (URS). Based o
         UCM_CONNECTOR_TYPEC_ATTACH_PARAMS attachParams;
 
         UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT(
-            &amp;attachParams,
+            &attachParams,
             UcmTypeCPortStateDfp);
         attachParams.CurrentAdvertisement = UcmTypeCCurrent1500mA;
 
         status = UcmConnectorTypeCAttach(
                     Connector,
-                    &amp;attachParams);
+                    &attachParams);
         if (!NT_SUCCESS(status))
         {
             TRACE_ERROR(

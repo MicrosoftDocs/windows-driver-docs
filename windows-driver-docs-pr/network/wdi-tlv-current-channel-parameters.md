@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_CURRENT\_CHANNEL\_PARAMETERS
+title: WDI_TLV_CURRENT_CHANNEL_PARAMETERS
 author: windows-driver-content
-description: WDI\_TLV\_CURRENT\_CHANNEL\_PARAMETERS is an unused TLV.
+description: WDI_TLV_CURRENT_CHANNEL_PARAMETERS is an unused TLV.
 ms.assetid: C2447497-0C71-4EF8-B8AE-A7C34DF42405
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

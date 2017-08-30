@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_BSSID
+title: WDI_TLV_BSSID
 author: windows-driver-content
-description: WDI\_TLV\_BSSID is a TLV that contains the BSSID of a BSS.
+description: WDI_TLV_BSSID is a TLV that contains the BSSID of a BSS.
 ms.assetid: 0B3AB317-D1E7-4E61-9F6E-C3134B5A3984
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

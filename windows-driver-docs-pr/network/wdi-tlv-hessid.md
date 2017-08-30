@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_HESSID
+title: WDI_TLV_HESSID
 author: windows-driver-content
-description: WDI\_TLV\_HESSID is a TLV that contains a list of HESSIDs.
+description: WDI_TLV_HESSID is a TLV that contains a list of HESSIDs.
 ms.assetid: 630A1824-7722-4B03-8073-EFC44E142400
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

@@ -1,6 +1,6 @@
 ---
 title: C28170
-description: Warning C28170 The function has been declared to be in a paged segment, but neither PAGED\_CODE nor PAGED\_CODE\_LOCKED was found.
+description: Warning C28170 The function has been declared to be in a paged segment, but neither PAGED_CODE nor PAGED_CODE_LOCKED was found.
 ms.assetid: 9efffcc8-54b6-46f8-b037-53c66a8eace2
 keywords:
 - warnings listed WDK PREfast for Drivers

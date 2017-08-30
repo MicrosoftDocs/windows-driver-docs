@@ -116,13 +116,13 @@ ms.technology: windows-devices
 
     ```
     UINT_PTR a; ULONG b;
-    a = a &amp; ~(b - 1); 
+    a = a & ~(b - 1); 
     ```
 
     The problem is that ~(b−1) produces 0x0000 0000 *xxxx xxxx* and not 0xFFFF FFFF *xxxx xxxx*. The compiler will not detect this. To fix this, change the code as follows:
 
     ```
-    a = a &amp; ~((UINT_PTR)b - 1);
+    a = a & ~((UINT_PTR)b - 1);
     ```
 
 -   Be careful when computing buffer sizes.
@@ -196,7 +196,7 @@ ms.technology: windows-devices
       //
       // This call causes memory corruption.
       //
-      GetBufferAddress((PULONG *)&amp;bufAddress);
+      GetBufferAddress((PULONG *)&bufAddress);
     }
     ```
 
@@ -313,7 +313,7 @@ ms.technology: windows-devices
     ```
     void SetPointer(void *p) {
         struct Buffer s;
-        *(UNALIGNED void *)&amp;s.ptr = p;
+        *(UNALIGNED void *)&s.ptr = p;
     }
     ```
 

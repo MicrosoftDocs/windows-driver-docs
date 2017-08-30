@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_PORT\_ATTRIBUTES
+title: WDI_TLV_PORT_ATTRIBUTES
 author: windows-driver-content
-description: WDI\_TLV\_PORT\_ATTRIBUTES is a TLV that contains port attributes.
+description: WDI_TLV_PORT_ATTRIBUTES is a TLV that contains port attributes.
 ms.assetid: F5A0BC8D-1B86-41C2-A530-860E15775695
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

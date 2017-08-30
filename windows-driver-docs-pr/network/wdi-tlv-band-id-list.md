@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_BAND\_ID\_LIST
+title: WDI_TLV_BAND_ID_LIST
 author: windows-driver-content
-description: WDI\_TLV\_BAND\_ID\_LIST is a TLV that contains a list of band IDs.
+description: WDI_TLV_BAND_ID_LIST is a TLV that contains a list of band IDs.
 ms.assetid: 415EF9E3-9441-420D-AC8A-0F819369E20E
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

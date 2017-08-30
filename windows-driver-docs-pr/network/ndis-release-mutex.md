@@ -1,10 +1,10 @@
 ---
-title: NDIS\_RELEASE\_MUTEX macro
+title: NDIS_RELEASE_MUTEX macro
 author: windows-driver-content
-description: The NDIS\_RELEASE\_MUTEX macro releases the specified mutex object.
+description: The NDIS_RELEASE_MUTEX macro releases the specified mutex object.
 ms.assetid: 0358f584-c1a2-4462-8294-09504eb18b17
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

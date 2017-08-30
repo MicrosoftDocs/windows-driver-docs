@@ -1,10 +1,10 @@
 ---
-title: OID\_WDI\_GET\_BSS\_ENTRY\_LIST
+title: OID_WDI_GET_BSS_ENTRY_LIST
 author: windows-driver-content
-description: OID\_WDI\_GET\_BSS\_ENTRY\_LIST is used to ask the adapter to indicate the list of BSS networks that have been cached by the port.
+description: OID_WDI_GET_BSS_ENTRY_LIST is used to ask the adapter to indicate the list of BSS networks that have been cached by the port.
 ms.assetid: 0eaa2b3a-6a1f-49e1-9556-81691892e666
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

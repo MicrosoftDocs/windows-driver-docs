@@ -112,8 +112,8 @@ Drivers can use [**IoValidateDeviceIoControlAccess**](https://msdn.microsoft.com
 The following macros are useful for extracting the 16-bit *DeviceType* and 2-bit *TransferType* fields from an IOCTL code:
 
 ```
-#define DEVICE_TYPE_FROM_CTL_CODE(ctrlCode)   (((ULONG)(ctrlCode &amp; 0xffff0000)) >> 16)
-#define METHOD_FROM_CTL_CODE(ctrlCode)        ((ULONG)(ctrlCode &amp; 3))
+#define DEVICE_TYPE_FROM_CTL_CODE(ctrlCode)   (((ULONG)(ctrlCode & 0xffff0000)) >> 16)
+#define METHOD_FROM_CTL_CODE(ctrlCode)        ((ULONG)(ctrlCode & 3))
 ```
 
 These macros are defined in Wdm.h and Ntddk.h.

@@ -1,7 +1,7 @@
 ---
-title: EFI\_USBFN\_IO\_PROTOCOL.DetectPort
+title: EFI_USBFN_IO_PROTOCOL.DetectPort
 author: windows-driver-content
-description: EFI\_USBFN\_IO\_PROTOCOL.DetectPort
+description: EFI_USBFN_IO_PROTOCOL.DetectPort
 ms.assetid: 66f7500e-e075-495b-9ce0-aed2aa11f66a
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

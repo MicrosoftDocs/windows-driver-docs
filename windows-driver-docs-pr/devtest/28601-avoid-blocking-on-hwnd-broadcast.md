@@ -1,6 +1,6 @@
 ---
 title: C28601
-description: Warning C28601 Avoid blocking on HWND\_BROADCAST.
+description: Warning C28601 Avoid blocking on HWND_BROADCAST.
 ms.assetid: 51fc27da-012a-4cf3-adbf-bd7f7c497b01
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

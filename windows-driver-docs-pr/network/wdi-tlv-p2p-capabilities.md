@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_P2P\_CAPABILITIES
+title: WDI_TLV_P2P_CAPABILITIES
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_CAPABILITIES is a TLV that contains Wi-Fi Direct capabilities.
+description: WDI_TLV_P2P_CAPABILITIES is a TLV that contains Wi-Fi Direct capabilities.
 ms.assetid: 3BE13A87-ECA2-4204-87F1-2BE393F33D4C
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

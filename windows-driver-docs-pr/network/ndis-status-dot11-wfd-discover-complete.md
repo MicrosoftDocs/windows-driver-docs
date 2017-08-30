@@ -1,10 +1,10 @@
 ---
-title: NDIS\_STATUS\_DOT11\_WFD\_DISCOVER\_COMPLETE
+title: NDIS_STATUS_DOT11_WFD_DISCOVER_COMPLETE
 author: windows-driver-content
-description: NDIS\_STATUS\_DOT11\_WFD\_DISCOVER\_COMPLETE
+description: NDIS_STATUS_DOT11_WFD_DISCOVER_COMPLETE
 ms.assetid: 82836F84-BA52-4705-B077-E19D03321E24
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

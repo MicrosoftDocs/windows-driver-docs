@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_POWER\_MANAGMENT\_CAPABILITIES
+title: WDI_TLV_POWER_MANAGMENT_CAPABILITIES
 author: windows-driver-content
-description: WDI\_TLV\_POWER\_MANAGMENT\_CAPABILITIES is an unused TLV.
+description: WDI_TLV_POWER_MANAGMENT_CAPABILITIES is an unused TLV.
 ms.assetid: 6DD19576-4762-4460-8134-45D4270D9FAE
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

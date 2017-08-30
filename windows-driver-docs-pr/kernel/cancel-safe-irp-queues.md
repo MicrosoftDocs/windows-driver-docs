@@ -149,13 +149,13 @@ Alternatively, the driver could queue and dequeue specific IRPs. The routines us
 
 ```
     IO_CSQ_IRP_CONTEXT ParticularIrpInQueue;
-    IoCsqInsertIrp(IoCsq, Irp, &amp;ParticularIrpInQueue);
+    IoCsqInsertIrp(IoCsq, Irp, &ParticularIrpInQueue);
 ```
 
 The driver can then dequeue the same IRP by using the **IO\_CSQ\_IRP\_CONTEXT** value.
 
 ```
-    IoCsqRemoveIrp(IoCsq, Irp, &amp;ParticularIrpInQueue);
+    IoCsqRemoveIrp(IoCsq, Irp, &ParticularIrpInQueue);
 ```
 
 The driver might also be required to remove IRPs from the queue based on a particular criterion. For example, the driver might associate a priority with each IRP, such that higher priority IRPs get dequeued first. The driver might pass a *PeekContext* value to [**IoCsqRemoveNextIrp**](https://msdn.microsoft.com/library/windows/hardware/ff549072), which the system passes back to the driver when it requests the next IRP in the queue.

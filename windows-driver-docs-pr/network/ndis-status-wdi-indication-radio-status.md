@@ -1,10 +1,10 @@
 ---
-title: NDIS\_STATUS\_WDI\_INDICATION\_RADIO\_STATUS
+title: NDIS_STATUS_WDI_INDICATION_RADIO_STATUS
 author: windows-driver-content
-description: Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_RADIO\_STATUS to indicate changes in the adapter's radio state.
+description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_RADIO_STATUS to indicate changes in the adapter's radio state.
 ms.assetid: c2f90a52-ce55-4819-a66a-cfcc591cb3e9
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

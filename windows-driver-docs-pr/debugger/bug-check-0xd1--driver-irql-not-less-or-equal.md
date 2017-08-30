@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0xD1 DRIVER\_IRQL\_NOT\_LESS\_OR\_EQUAL
-description: The DRIVER\_IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x000000D1. This indicates that a kernel-mode driver attempted to access pageable memory at a process IRQL that was too high.
+title: Bug Check 0xD1 DRIVER_IRQL_NOT_LESS_OR_EQUAL
+description: The DRIVER_IRQL_NOT_LESS_OR_EQUAL bug check has a value of 0x000000D1. This indicates that a kernel-mode driver attempted to access pageable memory at a process IRQL that was too high.
 ms.assetid: 26cfd881-cc6e-4cc3-b464-e67d75700b96
 keywords: ["Bug Check 0xD1 DRIVER_IRQL_NOT_LESS_OR_EQUAL", "DRIVER_IRQL_NOT_LESS_OR_EQUAL"]
 ms.author: windowsdriverdev

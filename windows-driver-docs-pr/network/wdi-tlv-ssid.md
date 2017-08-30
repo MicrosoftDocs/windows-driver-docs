@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_SSID
+title: WDI_TLV_SSID
 author: windows-driver-content
-description: WDI\_TLV\_SSID is a TLV that contains an SSID.
+description: WDI_TLV_SSID is a TLV that contains an SSID.
 ms.assetid: 31391E25-B507-4652-9D70-9DA0D6245CA8
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

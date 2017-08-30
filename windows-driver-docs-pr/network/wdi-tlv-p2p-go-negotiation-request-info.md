@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_P2P\_GO\_NEGOTIATION\_REQUEST\_INFO
+title: WDI_TLV_P2P_GO_NEGOTIATION_REQUEST_INFO
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_GO\_NEGOTIATION\_REQUEST\_INFO is a TLV that contains Wi-Fi Direct Group Owner negotiation request information.
+description: WDI_TLV_P2P_GO_NEGOTIATION_REQUEST_INFO is a TLV that contains Wi-Fi Direct Group Owner negotiation request information.
 ms.assetid: 4F505DF1-8D02-4421-956F-B7E1AF99D367
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

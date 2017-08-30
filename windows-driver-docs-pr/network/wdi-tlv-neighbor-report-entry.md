@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_NEIGHBOR\_REPORT\_ENTRY
+title: WDI_TLV_NEIGHBOR_REPORT_ENTRY
 author: windows-driver-content
-description: WDI\_TLV\_NEIGHBOR\_REPORT\_ENTRY is a TLV that contains a neighbor report.
+description: WDI_TLV_NEIGHBOR_REPORT_ENTRY is a TLV that contains a neighbor report.
 ms.assetid: 23A0AA84-3EDA-4D6F-9140-2361C0CF55AA
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

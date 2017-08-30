@@ -1,10 +1,10 @@
 ---
-title: NET\_BUFFER\_FIRST\_MDL macro
+title: NET_BUFFER_FIRST_MDL macro
 author: windows-driver-content
-description: NET\_BUFFER\_FIRST\_MDL is a macro that NDIS drivers use to get the first MDL in a NET\_BUFFER structure.
+description: NET_BUFFER_FIRST_MDL is a macro that NDIS drivers use to get the first MDL in a NET_BUFFER structure.
 ms.assetid: d62c7183-ef28-408a-b862-6a2d97026b35
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

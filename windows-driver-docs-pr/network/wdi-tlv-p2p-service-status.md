@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_P2P\_SERVICE\_STATUS
+title: WDI_TLV_P2P_SERVICE_STATUS
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_SERVICE\_STATUS is a TLV that contains the Service Status of a service.
+description: WDI_TLV_P2P_SERVICE_STATUS is a TLV that contains the Service Status of a service.
 ms.assetid: C7001661-8496-4C5B-9AD2-EF92332AF377
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

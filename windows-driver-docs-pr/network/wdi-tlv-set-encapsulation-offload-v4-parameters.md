@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V4\_PARAMETERS
+title: WDI_TLV_SET_ENCAPSULATION_OFFLOAD_V4_PARAMETERS
 author: windows-driver-content
-description: WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V4\_PARAMETERS is a TLV that is used by OID\_WDI\_SET\_ENCAPSULATION\_OFFLOAD to indicate if IPv4 offloading should be started.
+description: WDI_TLV_SET_ENCAPSULATION_OFFLOAD_V4_PARAMETERS is a TLV that is used by OID_WDI_SET_ENCAPSULATION_OFFLOAD to indicate if IPv4 offloading should be started.
 ms.assetid: DC474D05-BF41-48F4-90CC-96C3B7F41ED0
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

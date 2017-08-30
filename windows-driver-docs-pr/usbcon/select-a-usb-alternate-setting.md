@@ -106,16 +106,16 @@ NTSTATUS  FX3SelectInterfaceSetting(
         goto Exit;
     }
 
-    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&amp;pipeAttributes, PIPE_CONTEXT);  
+    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&pipeAttributes, PIPE_CONTEXT);  
 
     pipeAttributes.EvtCleanupCallback = FX3EvtPipeContextCleanup;
 
-    WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_SETTING (&amp;settingParams, SettingIndex);
+    WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_SETTING (&settingParams, SettingIndex);
 
     status = WdfUsbInterfaceSelectSetting (
         pDeviceContext->UsbInterface,
-        &amp;pipeAttributes,
-        &amp;settingParams);
+        &pipeAttributes,
+        &settingParams);
 
     if (status != STATUS_SUCCESS)
     {

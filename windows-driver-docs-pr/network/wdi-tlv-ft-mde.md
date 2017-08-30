@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_FT\_MDE
+title: WDI_TLV_FT_MDE
 author: windows-driver-content
-description: WDI\_TLV\_FT\_MDE is a TLV that contains the MDIE of a BSS entry.
+description: WDI_TLV_FT_MDE is a TLV that contains the MDIE of a BSS entry.
 ms.assetid: 2D075487-9B1E-4DEE-B3C3-3208C1CBAB64
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

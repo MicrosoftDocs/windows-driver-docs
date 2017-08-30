@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_STATION\_ATTRIBUTES
+title: WDI_TLV_STATION_ATTRIBUTES
 author: windows-driver-content
-description: WDI\_TLV\_STATION\_ATTRIBUTES is a TLV that contains the attributes of a station.
+description: WDI_TLV_STATION_ATTRIBUTES is a TLV that contains the attributes of a station.
 ms.assetid: CB15D3A4-5B42-44ED-A8A8-3E7F09B65F8B
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

@@ -75,22 +75,22 @@ The following table describes a subset of the SDL practices that are most useful
 <td><p>Driver</p></td>
 </tr>
 <tr class="even">
-<td><p>[FxCop](http://go.microsoft.com/fwlink/p/?LinkId=190283)</p></td>
+<td><p>FxCop</p></td>
 <td><p>FxCop is a static analyzer. It analyzes managed-code assemblies and reports information about the assemblies such as possible design, localization, performance, and security improvements.</p></td>
 <td><p>Partner apps</p></td>
 </tr>
 <tr class="odd">
-<td><p>[BinScope](http://go.microsoft.com/fwlink/p/?LinkId=190284)</p></td>
+<td><p>BinScope</p></td>
 <td><p>The BinScope Binary Analyzer is a verification tool that analyzes binaries to ensure that they have been built in compliance with the SDL requirements and recommendations. BinScope checks that SDL-required compiler/linker flags are being set, strong-named assemblies are in use, up-to-date build tools are in place, and the latest good ATL headers are being used. BinScope also reports on dangerous constructs that are prohibited by SDL.</p></td>
 <td><p>Drivers and partner applications</p></td>
 </tr>
 <tr class="even">
-<td><p>[MiniFuzz](http://go.microsoft.com/fwlink/p/?LinkId=190286)</p></td>
+<td><p>MiniFuzz</p></td>
 <td><p>The MiniFuzz File Fuzzer is a basic testing tool designed to help detect issues that may expose security vulnerabilities in file-handling code. This tool could be helpful for developers that parse files in their apps.</p></td>
 <td><p>Drivers and partner applications</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Banned.h](http://go.microsoft.com/fwlink/p/?LinkId=190287)</p></td>
+<td><p>Banned.h</p></td>
 <td><p>The banned.h header file is a sanitizing resource that supports the SDL requirement to remove banned functions from code. It lists all banned APIs and allows any developer to locate them in code.</p></td>
 <td><p>Drivers and partner applications</p></td>
 </tr>
@@ -100,10 +100,6 @@ The following table describes a subset of the SDL practices that are most useful
  
 
  
-
- 
-
-
 --------------------
 
 

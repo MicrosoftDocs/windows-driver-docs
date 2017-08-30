@@ -1,10 +1,10 @@
 ---
-title: NDIS\_STATUS\_RESET\_END
+title: NDIS_STATUS_RESET_END
 author: windows-driver-content
-description: The NDIS\_STATUS\_RESET\_END status indicates that a miniport adapter reset operation is complete.
+description: The NDIS_STATUS_RESET_END status indicates that a miniport adapter reset operation is complete.
 ms.assetid: 09ced263-9e4b-45e3-ae5e-db033a03b5b6
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

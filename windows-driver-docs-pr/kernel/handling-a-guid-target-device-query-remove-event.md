@@ -1,7 +1,7 @@
 ---
-title: Handling a GUID\_TARGET\_DEVICE\_QUERY\_REMOVE Event
+title: Handling a GUID_TARGET_DEVICE_QUERY_REMOVE Event
 author: windows-driver-content
-description: Handling a GUID\_TARGET\_DEVICE\_QUERY\_REMOVE Event
+description: Handling a GUID_TARGET_DEVICE_QUERY_REMOVE Event
 ms.assetid: f3e867c5-f7b8-40d2-a6cc-c5cb82e0b59b
 keywords: ["notifications WDK PnP , target device changes", "target device change notifications WDK PnP", "EventCategoryTargetDeviceChange notification", "GUID_TARGET_DEVICE_QUERY_REMOVE"]
 ms.author: windowsdriverdev

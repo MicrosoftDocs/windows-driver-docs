@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_CANCEL\_PARAMETERS
+title: WDI_TLV_CANCEL_PARAMETERS
 author: windows-driver-content
-description: WDI\_TLV\_CANCEL\_PARAMETERS is a TLV that contains parameters for OID\_WDI\_ABORT\_TASK.
+description: WDI_TLV_CANCEL_PARAMETERS is a TLV that contains parameters for OID_WDI_ABORT_TASK.
 ms.assetid: 7C071743-5DF9-4CA8-873A-64B06C94388F
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

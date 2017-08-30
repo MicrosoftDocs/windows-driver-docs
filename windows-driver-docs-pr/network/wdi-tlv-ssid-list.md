@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_SSID\_LIST
+title: WDI_TLV_SSID_LIST
 author: windows-driver-content
-description: WDI\_TLV\_SSID\_LIST is an unused TLV.
+description: WDI_TLV_SSID_LIST is an unused TLV.
 ms.assetid: 931EEA38-C380-4647-AAE6-25A7CFE39101
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

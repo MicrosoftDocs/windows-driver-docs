@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_P2P\_SEND\_REQUEST\_ACTION\_FRAME\_RESULT
+title: WDI_TLV_P2P_SEND_REQUEST_ACTION_FRAME_RESULT
 author: windows-driver-content
-description: WDI\_TLV\_P2P\_SEND\_REQUEST\_ACTION\_FRAME\_RESULT is an unused TLV.
+description: WDI_TLV_P2P_SEND_REQUEST_ACTION_FRAME_RESULT is an unused TLV.
 ms.assetid: F819A33C-C9C7-4208-B236-338BDFEA7764
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

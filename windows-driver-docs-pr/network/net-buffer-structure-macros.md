@@ -1,10 +1,10 @@
 ---
-title: NET\_BUFFER Structure Macros
+title: NET_BUFFER Structure Macros
 author: windows-driver-content
-description: NET\_BUFFER Structure Macros
+description: NET_BUFFER Structure Macros
 ms.assetid: a996ee50-076c-4c83-927b-3e9775c60c62
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

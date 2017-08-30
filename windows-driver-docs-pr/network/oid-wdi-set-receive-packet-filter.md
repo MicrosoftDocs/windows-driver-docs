@@ -1,10 +1,10 @@
 ---
-title: OID\_WDI\_SET\_RECEIVE\_PACKET\_FILTER
+title: OID_WDI_SET_RECEIVE_PACKET_FILTER
 author: windows-driver-content
-description: OID\_WDI\_SET\_RECEIVE\_PACKET\_FILTER defines a bitmask filter for data packets to be indicated for a given virtualized port.
+description: OID_WDI_SET_RECEIVE_PACKET_FILTER defines a bitmask filter for data packets to be indicated for a given virtualized port.
 ms.assetid: 180efda5-3ca2-40f8-89d1-098a53f33844
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

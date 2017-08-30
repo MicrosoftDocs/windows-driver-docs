@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_BANDID
+title: WDI_TLV_BANDID
 author: windows-driver-content
-description: WDI\_TLV\_BANDID is a TLV that contains a band ID.
+description: WDI_TLV_BANDID is a TLV that contains a band ID.
 ms.assetid: 1D0CBFED-C460-447B-BB03-CEAE57EE09F2
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

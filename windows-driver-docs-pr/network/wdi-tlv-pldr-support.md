@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_PLDR\_SUPPORT
+title: WDI_TLV_PLDR_SUPPORT
 author: windows-driver-content
-description: WDI\_TLV\_PLDR\_SUPPORT is a TLV that specifies if PLDR (Platform Level Reset) is supported.
+description: WDI_TLV_PLDR_SUPPORT is a TLV that specifies if PLDR (Platform Level Reset) is supported.
 ms.assetid: BC1BE1A7-AA2D-4D11-A75A-EC0143343F33
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

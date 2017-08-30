@@ -1,7 +1,7 @@
 ---
-title: Obtaining Device Configuration Information at IRQL DISPATCH\_LEVEL
+title: Obtaining Device Configuration Information at IRQL DISPATCH_LEVEL
 author: windows-driver-content
-description: Obtaining Device Configuration Information at IRQL DISPATCH\_LEVEL
+description: Obtaining Device Configuration Information at IRQL DISPATCH_LEVEL
 ms.assetid: e168a12b-f32e-4b8d-8768-dc622b37b421
 keywords: ["I/O WDK kernel , device configuration space", "device configuration space WDK I/O", "configuration space WDK I/O", "space WDK I/O", "DISPATCH_LEVEL WDK", "BUS_INTERFACE_STANDARD", "driver stacks WDK configuration info"]
 ms.author: windowsdriverdev
@@ -55,22 +55,22 @@ Return Value:
     PDEVICE_OBJECT targetObject;
 
     Bus_KdPrint(("GetPciBusInterfaceStandard entered.\n"));
-    KeInitializeEvent(&amp;event, NotificationEvent, FALSE);
+    KeInitializeEvent(&event, NotificationEvent, FALSE);
     targetObject = IoGetAttachedDeviceReference(DeviceObject);
     irp = IoBuildSynchronousFsdRequest(IRP_MJ_PNP,
                                        targetObject,
                                        NULL,
                                        0,
                                        NULL,
-                                       &amp;event,
-                                       &amp;ioStatusBlock);
+                                       &event,
+                                       &ioStatusBlock);
     if (irp == NULL) {
         status = STATUS_INSUFFICIENT_RESOURCES;
         goto End;
     }
     irpStack = IoGetNextIrpStackLocation( irp );
     irpStack->MinorFunction = IRP_MN_QUERY_INTERFACE;
-    irpStack->Parameters.QueryInterface.InterfaceType = (LPGUID)&amp;GUID_BUS_INTERFACE_STANDARD;
+    irpStack->Parameters.QueryInterface.InterfaceType = (LPGUID)&GUID_BUS_INTERFACE_STANDARD;
     irpStack->Parameters.QueryInterface.Size = sizeof(BUS_INTERFACE_STANDARD);
     irpStack->Parameters.QueryInterface.Version = 1;
     irpStack->Parameters.QueryInterface.Interface = (PINTERFACE)BusInterfaceStandard;
@@ -81,7 +81,7 @@ Return Value:
     irp->IoStatus.Status = STATUS_NOT_SUPPORTED;
     status = IoCallDriver(targetObject, irp);
     if (status == STATUS_PENDING) {
-        KeWaitForSingleObject(&amp;event, Executive, KernelMode, FALSE, NULL);
+        KeWaitForSingleObject(&event, Executive, KernelMode, FALSE, NULL);
         status = ioStatusBlock.Status;
     }
 End:
@@ -122,20 +122,20 @@ Note, that if all that is needed are bus, function, and device numbers, it is us
     IoGetDeviceProperty(PhysicalDeviceObject,
                         DevicePropertyBusNumber,
                         sizeof(ULONG),
-                        (PVOID)&amp;BusNumber,
-                        &amp;length);
+                        (PVOID)&BusNumber,
+                        &length);
 
     // Get the DevicePropertyAddress
     IoGetDeviceProperty(PhysicalDeviceObject,
                         DevicePropertyAddress,
                         sizeof(ULONG),
-                        (PVOID)&amp;propertyAddress,
-                        &amp;length);
+                        (PVOID)&propertyAddress,
+                        &length);
 
     // For PCI, the DevicePropertyAddress has device number 
     // in the high word and the function number in the low word. 
-    FunctionNumber = (USHORT)((propertyAddress) &amp; 0x0000FFFF);
-    DeviceNumber = (USHORT)(((propertyAddress) >> 16) &amp; 0x0000FFFF);
+    FunctionNumber = (USHORT)((propertyAddress) & 0x0000FFFF);
+    DeviceNumber = (USHORT)(((propertyAddress) >> 16) & 0x0000FFFF);
 ```
 
  

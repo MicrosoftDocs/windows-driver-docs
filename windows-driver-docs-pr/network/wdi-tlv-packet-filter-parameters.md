@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_PACKET\_FILTER\_PARAMETERS
+title: WDI_TLV_PACKET_FILTER_PARAMETERS
 author: windows-driver-content
-description: WDI\_TLV\_PACKET\_FILTER\_PARAMETERS is a TLV that contains packet filter parameters for OID\_WDI\_SET\_RECEIVE\_PACKET\_FILTER.
+description: WDI_TLV_PACKET_FILTER_PARAMETERS is a TLV that contains packet filter parameters for OID_WDI_SET_RECEIVE_PACKET_FILTER.
 ms.assetid: 5B26DA60-BC5D-4CC5-A620-C076CECF22C0
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

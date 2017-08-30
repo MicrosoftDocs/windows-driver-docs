@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_WAKE\_PACKET\_IPv4\_TCP\_SYNC
+title: WDI_TLV_WAKE_PACKET_IPv4_TCP_SYNC
 author: windows-driver-content
-description: WDI\_TLV\_WAKE\_PACKET\_IPv4\_TCP\_SYNC is a TLV that contains wake-on-LAN IPv4 TCP sync packet information.
+description: WDI_TLV_WAKE_PACKET_IPv4_TCP_SYNC is a TLV that contains wake-on-LAN IPv4 TCP sync packet information.
 ms.assetid: C1237747-721C-4E44-B2BA-1B93E81174A8
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

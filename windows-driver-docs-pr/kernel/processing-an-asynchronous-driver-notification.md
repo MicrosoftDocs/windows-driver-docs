@@ -37,14 +37,14 @@ NTSTATUS
   // Verify that this notification is about a processor
   // that is being added to the hardware partition.
   if (IsEqualGUID(
-        &amp;Notification->Event,
-        &amp;GUID_DEVICE_INTERFACE_ARRIVAL
+        &Notification->Event,
+        &GUID_DEVICE_INTERFACE_ARRIVAL
         ))
   {
     // Get the current processor count and affinity
     ProcessorCount =
       KeQueryActiveProcessorCount(
-        &amp;ActiveProcessors
+        &ActiveProcessors
         );
 
     // Adjust any resource allocations that are based
@@ -90,8 +90,8 @@ NTSTATUS
   // Verify that this notification is about memory
   // that is being added to the hardware partition.
   if (IsEqualGUID(
-        &amp;Notification->Event,
-        &amp;GUID_DEVICE_INTERFACE_ARRIVAL
+        &Notification->Event,
+        &GUID_DEVICE_INTERFACE_ARRIVAL
         ))
   {
     // Increase the size of any memory buffers

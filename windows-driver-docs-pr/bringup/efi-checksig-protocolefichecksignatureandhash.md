@@ -1,7 +1,7 @@
 ---
-title: EFI\_CHECKSIG\_PROTOCOL.EfiCheckSignatureAndHash
+title: EFI_CHECKSIG_PROTOCOL.EfiCheckSignatureAndHash
 author: windows-driver-content
-description: EFI\_CHECKSIG\_PROTOCOL.EfiCheckSignatureAndHash
+description: EFI_CHECKSIG_PROTOCOL.EfiCheckSignatureAndHash
 ms.assetid: 7c6d1756-a3db-4754-9edb-af6ba1ecf65b
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

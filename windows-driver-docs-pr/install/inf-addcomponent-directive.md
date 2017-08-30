@@ -9,7 +9,7 @@ ms.technology: windows-devices
 
 # INF AddComponent Directive
 
-An **AddComponent** directive is used within an [**INF *DDInstall*.Components**](inf-ddinstall-components-section.md) section.  It creates a virtual child device for the software component under the current device.  This directive is supported for Windows 10 Version 1703 and later.
+An **AddComponent** directive is used within an [**INF *DDInstall*.Components**](inf-ddinstall-components-section.md) section of an [extension INF file](using-an-extension-inf-file.md).  It creates a virtual child device for the software component under the current device. This directive is supported for Windows 10 version 1703 and later. 
 
 ```
 [DDInstall.Components]
@@ -46,6 +46,8 @@ ComponentIDs=component-id[,component-id] …
 
 Each *component-install-section* must have at least the **ComponentIDs** entry as shown here. However, the remaining entries are optional.
 
+Note that **ComponentIDs** are [HardwareIDs](hardware-ids.md), which means they are strings defined by the hardware developer.  To ensure uniqueness of these IDs, in most cases, we recommend following the identifier schema used for [PCI devices](identifiers-for-pci-devices.md).  It is possible that a vendor might want to use a different schema, but that depends on the scenario. 
+
 ## Component-Install Section Entries and Values
 	
 **ComponentIDs**=*id1[, id2] … [, idN]*
@@ -60,7 +62,7 @@ If a description string contains any %strkey% tokens, each token can represent a
 
 ## See Also
 
-[Adding Software Components with an INF file](adding-software-components-with-an-inf-file.md).
+[Using a Component INF File](using-a-component-inf-file.md).
 
 [*DDInstall*.**Components**](inf-ddinstall-components-section.md)
 

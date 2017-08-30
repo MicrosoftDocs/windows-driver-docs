@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_INTERFACE\_ATTRIBUTES
+title: WDI_TLV_INTERFACE_ATTRIBUTES
 author: windows-driver-content
-description: WDI\_TLV\_INTERFACE\_ATTRIBUTES is a TLV that contains the attributes of an interface.
+description: WDI_TLV_INTERFACE_ATTRIBUTES is a TLV that contains the attributes of an interface.
 ms.assetid: A36AC0A7-6F5B-4461-841D-3B4C19BD49EB
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

@@ -1,10 +1,10 @@
 ---
-title: OID\_WDI\_GET\_AUTO\_POWER\_SAVE
+title: OID_WDI_GET_AUTO_POWER_SAVE
 author: windows-driver-content
-description: OID\_WDI\_GET\_AUTO\_POWER\_SAVE gets the power save state of the port.
+description: OID_WDI_GET_AUTO_POWER_SAVE gets the power save state of the port.
 ms.assetid: b7a14348-66ad-4728-986d-05145eb49b27
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

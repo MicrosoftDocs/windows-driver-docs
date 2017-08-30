@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0xC9 DRIVER\_VERIFIER\_IOMANAGER\_VIOLATION
-description: The DRIVER\_VERIFIER\_IOMANAGER\_VIOLATION bug check has a value of 0x000000C9. This is the bug check code for all Driver Verifier I/O Verification violations.
+title: Bug Check 0xC9 DRIVER_VERIFIER_IOMANAGER_VIOLATION
+description: The DRIVER_VERIFIER_IOMANAGER_VIOLATION bug check has a value of 0x000000C9. This is the bug check code for all Driver Verifier I/O Verification violations.
 ms.assetid: dcafb0df-cbc1-44f4-8ec4-976df0842f0c
 keywords: ["Bug Check 0xC9 DRIVER_VERIFIER_IOMANAGER_VIOLATION", "DRIVER_VERIFIER_IOMANAGER_VIOLATION"]
 ms.author: windowsdriverdev
@@ -108,6 +108,27 @@ When Driver Verifier is active and **I/O Verification** is selected, various I/O
 <td align="left"><p>I/O control code</p></td>
 <td align="left"><p>Exception status code</p></td>
 <td align="left"><p>The driver passed <strong>IoBuildDeviceIoControlRequest</strong> an invalid buffer.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x10</p></td>
+<td align="left"><p>Current IRQL</p></td>
+<td align="left"><p>Reserved</p></td>
+<td align="left"><p>Reserved</p></td>
+<td align="left"><p>IoCallDriver was called above DISPATCH_LEVEL.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x11</p></td>
+<td align="left"><p>Driver fast I/O dispatch routine address</p></td>
+<td align="left"><p>IRQL before calling driver dispatch routine</p></td>
+<td align="left"><p>Current IRQL</p></td>
+<td align="left"><p>IoCallDriver was called above DISPATCH_LEVEL.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x12</p></td>
+<td align="left"><p>Driver dispatch routine address</p></td>
+<td align="left"><p>IRQL before calling driver dispatch routine</p></td>
+<td align="left"><p>Current IRQL</p></td>
+<td align="left"><p>IoCallDriver was called above DISPATCH_LEVEL.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x0A</p></td>

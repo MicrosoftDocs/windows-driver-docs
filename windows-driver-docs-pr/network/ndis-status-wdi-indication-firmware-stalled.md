@@ -1,10 +1,10 @@
 ---
-title: NDIS\_STATUS\_WDI\_INDICATION\_FIRMWARE\_STALLED
+title: NDIS_STATUS_WDI_INDICATION_FIRMWARE_STALLED
 author: windows-driver-content
-description: NDIS\_STATUS\_WDI\_INDICATION\_FIRMWARE\_STALLED is used to indicate that the firmware stalled.
+description: NDIS_STATUS_WDI_INDICATION_FIRMWARE_STALLED is used to indicate that the firmware stalled.
 ms.assetid: 0A0E1446-4FDD-4FB2-8CA7-04FBF5D6DDD1
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

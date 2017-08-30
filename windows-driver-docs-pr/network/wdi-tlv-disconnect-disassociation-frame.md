@@ -1,10 +1,10 @@
 ---
-title: WDI\_TLV\_DISCONNECT\_DISASSOCIATION\_FRAME
+title: WDI_TLV_DISCONNECT_DISASSOCIATION_FRAME
 author: windows-driver-content
-description: WDI\_TLV\_DISCONNECT\_DISASSOCIATION\_FRAME is a TLV that contains the received disassociation frame.
+description: WDI_TLV_DISCONNECT_DISASSOCIATION_FRAME is a TLV that contains the received disassociation frame.
 ms.assetid: 0AE2A543-DA01-4CFB-853D-2511AB18F92C
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

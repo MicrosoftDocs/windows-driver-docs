@@ -1,10 +1,10 @@
 ---
-title: OID\_WDI\_TASK\_SEND\_AP\_ASSOCIATION\_RESPONSE
+title: OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE
 author: windows-driver-content
-description: OID\_WDI\_TASK\_SEND\_AP\_ASSOCIATION\_RESPONSE requests that the IHV component sends an Association Response to a peer device that has recently sent an association request.
+description: OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE requests that the IHV component sends an Association Response to a peer device that has recently sent an association request.
 ms.assetid: 8d19b009-db81-4b5e-ac63-5e6c5ad9727d
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 

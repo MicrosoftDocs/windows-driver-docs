@@ -1,10 +1,10 @@
 ---
-title: NDIS\_SWITCH\_PORT\_PROPERTY\_CUSTOM\_GET\_BUFFER macro
+title: NDIS_SWITCH_PORT_PROPERTY_CUSTOM_GET_BUFFER macro
 author: windows-driver-content
-description: Hyper-V extensible switch extensions use the NDIS\_SWITCH\_PORT\_PROPERTY\_CUSTOM\_GET\_BUFFER macro to access the custom port property buffer inside an NDIS\_SWITCH\_PORT\_PROPERTY\_CUSTOM structure.
+description: Hyper-V extensible switch extensions use the NDIS_SWITCH_PORT_PROPERTY_CUSTOM_GET_BUFFER macro to access the custom port property buffer inside an NDIS_SWITCH_PORT_PROPERTY_CUSTOM structure.
 ms.assetid: 6271BE89-F5C3-41F5-A9C2-B6AE69273F70
 ms.author: windowsdriverdev 
-ms.date: 0718/2017 
+ms.date: 07/18/2017 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 
