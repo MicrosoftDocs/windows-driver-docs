@@ -22,16 +22,18 @@ This page provides guidelines for the use of software components.
 
 ## Getting started
 
-To create components, an [extension INF file](using-an-extension-inf-file.md) specifies the [INF AddComponent Directive](inf-addcomponent-directive.md) one or more times in the [INF DDInstall.Components](inf-ddinstall-components-section.md) section.  For each software component referenced in an extension INF file, the system creates a virtual software-enumerated child device.  More than one driver package can reference the same software component. 
+To create components, an [extension INF file](using-an-extension-inf-file.md) specifies the [INF AddComponent directive](inf-addcomponent-directive.md) one or more times in the [INF DDInstall.Components](inf-ddinstall-components-section.md) section.  For each software component referenced in an extension INF file, the system creates a virtual software-enumerated child device.  More than one driver package can reference the same software component. 
 
 Virtual device children can be updated independently just like any other device, as long as the parent device is started.  We recommend separating functionality into as many different groupings as makes sense from a servicing perspective, and then creating one software component for each grouping.
 
 You'll provide an INF file for each software component.
 
-If you wish to leverage the [**AddSoftware** directive](inf-addsoftware-directive.md) to install software modules, you must write a component INF which:
+If your software component INF specifies the [**AddSoftware** directive](inf-addsoftware-directive.md), the component INF:
+
 * Must be a [universal INF file](../install/using-a-universal-inf-file.md).
-* Must specify the **SoftwareComponent** setup class if the INF specifies the [AddSoftware directive](inf-addsoftware-directive.md).
-* Can install software modules by specifying the [**AddSoftware** directive](inf-addsoftware-directive.md) one or more times.
+* Must specify the **SoftwareComponent** setup class.
+
+You can specify the [**AddSoftware** directive](inf-addsoftware-directive.md) one or more times.
 
 Additionally, any INF (component or not) matching on a software component device:
 
