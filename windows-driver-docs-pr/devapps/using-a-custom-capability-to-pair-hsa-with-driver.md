@@ -31,9 +31,9 @@ To create a Windows Store account, go to the [Windows Store apps sign up page](h
 
 ## Choosing a programming language for the app
 
-If your app will communicate with a driver, you can use [Windows.Devices.Custom](/uwp/api/windows.devices.custom), which is a WinRT API, and thus available in JavaScript, C#, and C++.
+If your app will communicate with a driver, you can use [Windows.Devices.Custom](https://docs.microsoft.com/uwp/api/windows.devices.custom), which is part of the WinRT API, and therefore available in JavaScript, C#, and C++.
 
-If your app will communicate with an NT service, then you need to use the RPC APIs.  Because RPC APIs are Win32 APIs that are not available in WinRT, you need to either use C++, or wrap the RPC calls using .NET interop (pinvoke).  For more info, see [Calling Native Functions from Managed Code](/dotnet/calling-native-functions-from-managed-code).
+If your app will communicate with an NT service, then you need to use the RPC APIs.  Because RPC APIs are Win32 APIs that are not available in WinRT, you need to either use C++, or wrap the RPC calls using .NET interop (PInvoke).  For more info, see [Calling Native Functions from Managed Code](https://docs.microsoft.com/cpp/dotnet/calling-native-functions-from-managed-code).
 
 ## Contact the custom capability owner
 
