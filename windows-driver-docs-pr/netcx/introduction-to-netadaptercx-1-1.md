@@ -62,7 +62,6 @@ The following APIs and data structures were updated in NetAdapterCx 1.1.
 - [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md)
 - [NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT method](net-adapter-link-layer-capabilities-init.md)
 - [NET_ADAPTER_CONFIG](net-adapter-config.md)
-- [NET_ADAPTER_CONFIG_INIT method](net-adapter-config-init.md)
 - [NetAdapterDriverWdmGetHandle method](netadapterdriverwdmgethandle.md)
 - [NetConfigurationQueryLinkLayerAddress method](netconfigurationquerylinklayeraddress.md)
 - [NetPowerSettingsGetWakePatternCount method](netpowersettingsgetwakepatterncount.md)
@@ -85,6 +84,7 @@ The following APIs and data structures were updated in NetAdapterCx 1.1.
 
 The following APIs and data structures were removed in NetAdapterCx 1.1. Many of them were replaced with a different API or data structure. See each topic for details.
 
+- [NET_ADAPTER_DRIVER_TYPE](net-adapter-driver-type.md)
 - [NET_ADAPTER_PHYSICAL_ADDRESS](net-adapter-physical-address.md)
 - [NET_ADAPTER_PHYSICAL_ADDRESS_INIT](net-adapter-physical-address-init.md)
 - [NET_ADAPTER_LINK_LAYER_CAPABILITIES_NO_PHYSICAL_ADDRESS](net-adapter-link-layer-capabilities-init-no-physical-address.md)

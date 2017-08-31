@@ -51,7 +51,7 @@ The client driver passes an initialized **NET_ADAPTER_LINK_LAYER_CAPABILITIES** 
 
 Call [**NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT**](net-adapter-link-layer-capabilities-init.md) to initialize this structure.
 
-In NetAdapterCx version 1.1, the **PhysicalAddress** member that existed in version 1.0 was removed from this structure. Link layer addresses are now initialized with the [NET_ADAPTER_LINK_LAYER_ADDRESS_INIT](net-adapter-link-layer-address-init.md) method and set with the [NetAdapterSetCurrentLinkLayerAddress](netadaptersetcurrentlinklayeraddress.md) method or the [NetAdapterSetPermanentLinkLayerAddress](netadaptersetpermanentlinklayeraddress.md), depending on the type of address.
+In NetAdapterCx version 1.1, the **PhysicalAddress** member from version 1.0 was removed from this structure. Link layer addresses are now initialized with the [NET_ADAPTER_LINK_LAYER_ADDRESS_INIT](net-adapter-link-layer-address-init.md) method and set with the [NetAdapterSetCurrentLinkLayerAddress](netadaptersetcurrentlinklayeraddress.md) method or the [NetAdapterSetPermanentLinkLayerAddress](netadaptersetpermanentlinklayeraddress.md), depending on the type of address.
 
 Requirements
 ------------

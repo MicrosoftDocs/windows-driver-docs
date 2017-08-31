@@ -48,7 +48,7 @@ Remarks
 -----
 The client driver obtains a handle to a NETCONFIGURATION object by calling  [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) or [**NetConfigurationOpenSubConfiguration**](netconfigurationopensubconfiguration.md).
 
-In NetAdapterCx 1.0, this method was called **NetConfigurationQueryNetworkAddress**. It was renamed to **NetConfigurationQueryLinkLayerAddress** in NetAdapterCx 1.1, which is included in Windows 10, version 1709 and later.
+In NetAdapterCx 1.0, this method was called **NetConfigurationQueryNetworkAddress**. It was renamed to **NetConfigurationQueryLinkLayerAddress** in NetAdapterCx 1.1.
 
 Requirements
 ------------

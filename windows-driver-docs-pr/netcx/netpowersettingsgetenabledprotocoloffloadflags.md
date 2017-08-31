@@ -43,7 +43,7 @@ Remarks
 
 The client driver must only call **NetPowerSettingsGetEnabledProtocolOffloadFlags** during a power transition, typically from its [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function.  Otherwise, the call results in a system bugcheck.
 
-In NetAdapterCx 1.0, this method was called **NetPowerSettingsGetEnabledProtocolOffloads**. It was renamed to **NetPowerSettingsGetEnabledProtocolOffloadFlags** in NetAdapterCx 1.1, which is included in Windows 10, version 1709 and later.
+In NetAdapterCx 1.0, this method was called **NetPowerSettingsGetEnabledProtocolOffloads**. It was renamed to **NetPowerSettingsGetEnabledProtocolOffloadFlags** in NetAdapterCx 1.1.
 
 In NetAdapterCx 1.1, this method's required IRQL level was changed from DISPATCH_LEVEL to PASSIVE_LEVEL.
 
@@ -62,7 +62,7 @@ Requirements
 </tr>
 <tr class="even">
 <td align="left"><p>Minimum KMDF version</p></td>
-<td align="left"><p>1.21</p></td>
+<td align="left"><p>1.23</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Minimum NetAdapterCx version</p></td>
