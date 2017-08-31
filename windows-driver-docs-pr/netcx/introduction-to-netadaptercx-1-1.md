@@ -46,7 +46,6 @@ The following APIs and data structures are new in NetAdapterCx 1.1.
 - [NET_RXQUEUE_GET_PACKET_CONTEXT_TOKEN]
 - [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG]
 - [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT]
-- [NetRxQueueQueryAllocatorCacheEnabled]
 - [NetRxQueueGetPacketContextToken]
 - [NetRxQueueInitAddPacketContextAttributes]
 - [NetRxQueueInitSetDmaAllocatorConfig]
@@ -62,6 +61,7 @@ The following APIs and data structures were updated in NetAdapterCx 1.1.
 - [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md)
 - [NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT method](net-adapter-link-layer-capabilities-init.md)
 - [NET_ADAPTER_CONFIG](net-adapter-config.md)
+- [NET_PACKET_FRAGMENT](net-packet-fragment.md)
 - [NetAdapterDriverWdmGetHandle method](netadapterdriverwdmgethandle.md)
 - [NetConfigurationQueryLinkLayerAddress method](netconfigurationquerylinklayeraddress.md)
 - [NetPowerSettingsGetWakePatternCount method](netpowersettingsgetwakepatterncount.md)
@@ -75,6 +75,7 @@ The following APIs and data structures were updated in NetAdapterCx 1.1.
 - [NetPowerSettingsGetProtocolOffloadCountForType method](netpowersettingsgetprotocoloffloadcountfortype.md)
 - [NetPowerSettingsGetProtocolOffload method](netpowersettingsgetprotocoloffload.md)
 - [NetPowerSettingsIsProtocolOffloadEnabled method](netpowersettingsisprotocoloffloadenabled.md)
+- [NetRxQueueQueryAllocatorCacheEnabled](netrxqueuequeryallocatorcacheenabled.md)
 - [EVT_RXQUEUE_SET_NOTIFICATION_ENABLED](evt-rxqueue-set-notification-enabled.md)
 - [NET_RXQUEUE_CONFIG](net-rxqueue-config.md)
 - [EVT_TXQUEUE_SET_NOTIFICATION_ENABLED](evt-txqueue-set-notification-enabled.md)
@@ -88,7 +89,6 @@ The following APIs and data structures were removed in NetAdapterCx 1.1. Many of
 - [NET_ADAPTER_PHYSICAL_ADDRESS](net-adapter-physical-address.md)
 - [NET_ADAPTER_PHYSICAL_ADDRESS_INIT](net-adapter-physical-address-init.md)
 - [NET_ADAPTER_LINK_LAYER_CAPABILITIES_NO_PHYSICAL_ADDRESS](net-adapter-link-layer-capabilities-init-no-physical-address.md)
-- [NetRxQueueConfigureDmaAllocator](netrxqueueconfiguredmaallocator.md)
 
 ## Compiling a NetAdapterCx 1.1 client driver
 

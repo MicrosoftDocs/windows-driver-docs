@@ -1,9 +1,9 @@
 ---
-title: NetRxQueueConfigureDmaAllocator method
+title: NetRxQueueQueryAllocatorCacheEnabled method
 topic_type:
 - apiref
 api_name:
-- NetRxQueueConfigureDmaAllocator
+- NetRxQueueQueryAllocatorCacheEnabled
 api_location:
 - NetAdapterCxStub.lib
 - NetAdapterCxStub.dll
@@ -11,19 +11,19 @@ api_type:
 - LibDef
 ---
 
-# NetRxQueueConfigureDmaAllocator method
+# NetRxQueueQueryAllocatorCacheEnabled method
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Associates a WDFDMAENABLER object with a receive queue.
+The NetRxQueueQueryAllocatorCacheEnabled method queries whether DMA allocator cache is enabled.
 
 Syntax
 ------
 
 ```cpp
-NTSTATUS NetRxQueueConfigureDmaAllocator(
-  _In_ NETRXQUEUE    RxQueue,
-  _In_ WDFDMAENABLER Enabler
+NTSTATUS FORCEINLINE NetRxQueueQueryAllocatorCacheEnabled(
+  _In_  NETRXQUEUE  RxQueue,
+  _Out_ PBOOLEAN    CacheEnabled
 );
 ```
 
@@ -33,8 +33,8 @@ Parameters
 *RxQueue* [in]  
 The receive queue object that the client driver obtained from a previous call to [**NetRxQueueCreate**](netrxqueuecreate.md).
 
-*Enabler* [in]  
-A handle to a DMA enabler object that the client driver obtained from a previous call to [**WdfDmaEnablerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff546983).
+*CacheEnabled* [out]  
+A pointer to a boolean value indicating whether DMA cache is enabled or not.
 
 Return value
 ------------
@@ -48,11 +48,13 @@ The client driver can choose to let NetAdapterCx manage the receive buffer.  To 
 
   1.  Set the **AllocationSize** and **AlignmentRequirement** members of [**NET_RXQUEUE_CONFIG**](net-rxqueue-config.md).
   2.  Call [**WdfDmaEnablerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff546983), typically from the [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md) event callback function.
-  3.  Call **NetRxQueueConfigureDmaAllocator** with the initialized WDFDMAENABLER.
+  3.  Call **NetRxQueueQueryAllocatorCacheEnabled** with the initialized WDFDMAENABLER.
 
 NetAdapterCx uses the queue's DMA enabler to allocate pre-mapped buffers for each packet in the queue's [**NET_RING_BUFFER**](net-ring-buffer.md) structure, and updates the **VirtualAddress** and **DmaLogicalAddress** members of each [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) to point to each premapped buffer.
 
 The client driver retrieves a pointer to the ring buffer by calling [**NetTxQueueGetRingBuffer**](nettxqueuegetringbuffer.md) or [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md).
+
+In NetAdapterCx 1.0, this method was called **NetRxQueueConfigureDmaAllocator**. It was renamed to **NetRxQueueQueryAllocatorCacheEnabled** in NetAdapterCx 1.1.
 
 Requirements
 ------------
@@ -69,15 +71,15 @@ Requirements
 </tr>
 <tr class="even">
 <td align="left"><p>Minimum KMDF version</p></td>
-<td align="left"><p>1.21</p></td>
+<td align="left"><p>1.23</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Minimum NetAdapterCx version</p></td>
-<td align="left"><p>1.0</p></td>
+<td align="left"><p>1.1</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Header</p></td>
-<td align="left">NetRxQueue.h</td>
+<td align="left">NetRxQueue.h (include NetAdapterCx.h)</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Library</p></td>

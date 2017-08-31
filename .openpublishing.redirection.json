@@ -919,6 +919,11 @@
       "source_path": "windows-driver-docs-pr/netcx/netconfigurationquerynetworkaddress.md",
       "redirect_URL": "/windows-hardware/drivers/netcx/netconfigurationquerylinklayeraddress",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/netrxqueueconfiguredmaallocator.md",
+      "redirect_URL": "/windows-hardware/drivers/netcx/netrxqueuequeryallocatorcacheenabled",
+      "redirect_document_id": true
     }
   ]
 }

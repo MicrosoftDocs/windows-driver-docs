@@ -94,7 +94,7 @@ EvtAdapterCreateRxQueue(
 
     // Specify that the OS use a WDFDMAENABLER to allocate the receive buffers
 
-    status = NetRxQueueConfigureDmaAllocator(
+    status = NetRxQueueQueryAllocatorCacheEnabled(
         adapter->RxQueue,
         adapter->DmaEnabler);
 

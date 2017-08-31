@@ -22,7 +22,7 @@ Syntax
 ```cpp
 EVT_RXQUEUE_SET_NOTIFICATION_ENABLED EvtRxqueueSetNotificationEnabled;
 
-NTSTATUS EvtRxqueueSetNotificationEnabled(
+VOID EvtRxqueueSetNotificationEnabled(
   _In_ NETRXQUEUE RxQueue,
   _In_ BOOLEAN    NotificationEnabled
 )
@@ -30,8 +30,6 @@ NTSTATUS EvtRxqueueSetNotificationEnabled(
 
 typedef EVT_RXQUEUE_SET_NOTIFICATION_ENABLED PFN_RXQUEUE_SET_NOTIFICATION_ENABLED;
 ```
-
-Register this callback function in [**NET_RXQUEUE_CONFIG_INIT**](net-rxqueue-config-init.md) before calling [**NetRxQueueCreate**](netrxqueuecreate.md).
 
 Parameters
 ----------
@@ -49,6 +47,8 @@ If the operation is successful, the callback function returns STATUS_SUCCESS. Ot
 
 Remarks
 -------
+
+Register this callback function in [**NET_RXQUEUE_CONFIG_INIT**](net-rxqueue-config-init.md) before calling [**NetRxQueueCreate**](netrxqueuecreate.md).
 
 For a PCI NIC, enabling receive queue notification typically means enabling the receive queue's hardware interrupt.  When the hardware interrupt fires, the client calls [**NetRxQueueNotifyMoreReceivedPacketsAvailable**](netrxqueuenotifymorereceivedpacketsavailable.md) from its DPC.
 
