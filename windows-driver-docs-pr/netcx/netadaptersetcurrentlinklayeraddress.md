@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # NetAdapterSetCurrentLinkLayerAddress method
 
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
 The NetAdapterSetCurrentLinkLayerAddress method sets the current link layer address for the network adapter.
 
 ## Syntax

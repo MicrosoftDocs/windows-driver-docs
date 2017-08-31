@@ -113,7 +113,7 @@ The following methods are used for all other functionality in a NetAdapterCx cli
 
 [NetConfigurationQueryMultiString method](netconfigurationquerymultistring.md)
 
-[NetConfigurationQueryNetworkAddress method](netconfigurationquerynetworkaddress.md)
+[NetConfigurationQueryLinkLayerAddress method](netconfigurationquerylinklayeraddress.md)
 
 [NetConfigurationQueryString method](netconfigurationquerystring.md)
 

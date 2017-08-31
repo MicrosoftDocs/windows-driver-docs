@@ -43,6 +43,6 @@ There are `NetConfiguration*` functions for querying ULONG data, strings, multi-
 * [**NetConfigurationOpenSubConfiguration**](netconfigurationopensubconfiguration.md)
 * [**NetConfigurationQueryBinary**](netconfigurationquerybinary.md)
 * [**NetConfigurationQueryMultiString**](netconfigurationquerymultistring.md)
-* [**NetConfigurationQueryNetworkAddress**](netconfigurationquerynetworkaddress.md)
+* [**NetConfigurationQueryLinkLayerAddress**](netconfigurationquerylinklayeraddress.md)
 * [**NetConfigurationQueryString**](netconfigurationquerystring.md)
 * [**NetConfigurationQueryUlong**](netconfigurationqueryulong.md)

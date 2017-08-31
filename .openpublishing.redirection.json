@@ -914,6 +914,11 @@
       "source_path": "windows-driver-docs-pr/netcx/class-extension--net--limitations.md",
       "redirect_URL": "/windows-hardware/drivers/netcx/netadaptercx-limitations",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/netconfigurationquerynetworkaddress.md",
+      "redirect_URL": "/windows-hardware/drivers/netcx/netconfigurationquerylinklayeraddress",
+      "redirect_document_id": true
     }
   ]
 }

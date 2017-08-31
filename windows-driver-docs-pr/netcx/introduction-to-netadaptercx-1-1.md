@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # Introduction to NetAdapterCx 1.1
 
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
 This topic introduces version 1.1 of the WDF Network Adapter Class Extension (NetAdapterCx). NetAdapterCx 1.1 is included in Windows 10, version 1709.
 
 ## Feature updates
@@ -23,24 +25,25 @@ NetAdapterCx 1.1 features advancements in performance over version 1.0, as well 
 
 In version 1.0, NetAdapterCx had one packet context per queue, which limited client drivers' usability. For example, if you were using the DMA IO Helper for your transmit queue, that was the only packet context available to you. In version 1.1, however, you can now allocate as many packet contexts as you need. Each driver subsystem can now use a different context, creating flexibility and improving componentization.
 
-### Finer link layer address control
+### Finer link state control
 
-Two new methods, [NetAdapterSetPermanentLinkLayerAddress](netadaptersetpermanentlinklayeraddress.md) and [NetAdapterSetCurrentLinkLayerAddress](netadaptersetcurrentlinklayeraddress.md), have been added in NetAdapter 1.1 to allow NIC client drivers to more easily set these separate addresses with dedicated methods. Previously, in version 1.0, this functionality was embedded in the [NetAdapterSetLinkLayerCapabilities](netadaptersetlinklayercapabilities.md) method and required additional complexity in allocating and initializing that method's [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md) structure.
+Two new methods, [NetAdapterSetPermanentLinkLayerAddress](netadaptersetpermanentlinklayeraddress.md) and [NetAdapterSetCurrentLinkLayerAddress](netadaptersetcurrentlinklayeraddress.md), have been added in NetAdapter 1.1 to allow NIC client drivers to more easily set these separate addresses with dedicated methods. After setting the permanent and current link layer addresses, the driver can also now query them with the updated [NetConfigurationQueryLinkLayerAddress](netconfigurationquerylinklayeraddress.md) method.
+
+Previously, in version 1.0, this functionality was embedded in the [NetAdapterSetLinkLayerCapabilities](netadaptersetlinklayercapabilities.md) method and required additional complexity in allocating and initializing that method's [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md) structure. The addition of these two new link layer address set methods, along with the updated query method, means that drivers can now report their *current* link state at runtime, as opposed to only when setting capabilities.
 
 ## API changes
 
-### New APIs
+### New APIs and data structures
 
-The following APIs are new in NetAdapterCx 1.1.
+The following APIs and data structures are new in NetAdapterCx 1.1.
 
 - [NET_ADAPTER_LINK_LAYER_ADDRESS_INIT method](net-adapter-link-layer-address-init.md)
 - [NetAdapterSetPermanentLinkLayerAddress method](netadaptersetpermanentlinklayeraddress.md)
 - [NetAdapterSetCurrentLinkLayerAddress method](netadaptersetcurrentlinklayeraddress.md)
-- [NET_PACKET_CONTEXT_TOKEN]
+- [NET_PACKET_CONTEXT_TOKEN](net-packet-context-token.md)
 - [NET_PACKET_CONTEXT_ATTRIBUTES]
 - [NET_PACKET_DECLARE_CASTING_FUNCTION_FROM_TOKEN]
 - [NetPacketGetContextFromToken]
-- [NetConfigurationQueryLinkLayerAddress]
 - [NET_RXQUEUE_BUFFER_LAYOUT_HINT]
 - [NET_RXQUEUE_GET_PACKET_CONTEXT_TOKEN]
 - [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG]
@@ -54,15 +57,16 @@ The following APIs are new in NetAdapterCx 1.1.
 - [NetTxQueueGetPacketContextToken]
 - [NetTxQueueInitAddPacketContextAttributes]
 
-### Updated APIs
+### Updated APIs and data structures
 
-The following APIs were updated in NetAdapterCx 1.1.
+The following APIs and data structures were updated in NetAdapterCx 1.1.
 
 - [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md)
 - [NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT](net-adapter-link-layer-capabilities-init.md)
 - [NET_ADAPTER_CONFIG](net-adapter-config.md)
 - [NET_ADAPTER_CONFIG_INIT](net-adapter-config-init.md)
 - [NetAdapterDriverWdmGetHandle](netadapterdriverwdmgethandle.md)
+- [NetConfigurationQueryLinkLayerAddress](netconfigurationquerylinklayeraddress.md)
 - [NetPowerSettingsGetWakePatternCount](netpowersettingsgetwakepatterncount.md)
 - [NetPowerSettingsGetWakePatternCountForType](netpowersettingsgetwakepatterncountfortype.md)
 - [NetPowerSettingsGetWakePattern](netpowersettingsgetwakepattern.md)
@@ -79,14 +83,13 @@ The following APIs were updated in NetAdapterCx 1.1.
 - [EVT_TXQUEUE_SET_NOTIFICATION_ENABLED](evt-txqueue-set-notification-enabled.md)
 - [NET_TXQUEUE_CONFIG](net-txqueue-config.md)
 
-### Removed APIs
+### Removed APIs and data structures
 
-The following APIs were removed in NetAdapterCx 1.1. Many of them were replaced with a different API. See each topic for details.
+The following APIs and data structures were removed in NetAdapterCx 1.1. Many of them were replaced with a different API or data structure. See each topic for details.
 
 - [NET_ADAPTER_PHYSICAL_ADDRESS](net-adapter-physical-address.md)
 - [NET_ADAPTER_PHYSICAL_ADDRESS_INIT](net-adapter-physical-address-init.md)
 - [NET_ADAPTER_LINK_LAYER_CAPABILITIES_NO_PHYSICAL_ADDRESS](net-adapter-link-layer-capabilities-init-no-physical-address.md)
-- [NetConfigurationQueryNetworkAddress](netconfigurationquerynetworkaddress.md)
 - [NetRxQueueConfigureDmaAllocator](netrxqueueconfiguredmaallocator.md)
 
 ## Compiling a NetAdapterCx 1.1 client driver

@@ -13,7 +13,9 @@ ms.technology: windows-devices
 
 # NET_ADAPTER_LINK_LAYER_ADDRESS_INIT method
 
-The **NET_ADAPTER_LINK_LAYER_ADDRESS_INIT** method initializes a link layer address.
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+The NET_ADAPTER_LINK_LAYER_ADDRESS_INIT method initializes a link layer address.
 
 ## Syntax
 
