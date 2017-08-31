@@ -27,9 +27,7 @@ In version 1.0, NetAdapterCx had one packet context per queue, which limited cli
 
 ### Finer link state control
 
-Two new methods, [NetAdapterSetPermanentLinkLayerAddress](netadaptersetpermanentlinklayeraddress.md) and [NetAdapterSetCurrentLinkLayerAddress](netadaptersetcurrentlinklayeraddress.md), have been added in NetAdapter 1.1 to allow NIC client drivers to more easily set these separate addresses with dedicated methods. After setting the permanent and current link layer addresses, the driver can also now query them with the updated [NetConfigurationQueryLinkLayerAddress](netconfigurationquerylinklayeraddress.md) method.
-
-Previously, in version 1.0, this functionality was embedded in the [NetAdapterSetLinkLayerCapabilities](netadaptersetlinklayercapabilities.md) method and required additional complexity in allocating and initializing that method's [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md) structure. The addition of these two new link layer address set methods, along with the updated query method, means that drivers can now report their *current* link state at runtime, as opposed to only when setting capabilities.
+Two new methods, [NetAdapterSetPermanentLinkLayerAddress](netadaptersetpermanentlinklayeraddress.md) and [NetAdapterSetCurrentLinkLayerAddress](netadaptersetcurrentlinklayeraddress.md), have been added in NetAdapter 1.1 to allow NIC client drivers to more easily set these separate addresses with dedicated methods. After setting the permanent and current link layer addresses, the driver can also now query them with the updated [NetConfigurationQueryLinkLayerAddress](netconfigurationquerylinklayeraddress.md) method. The addition of these two new set methods, along with the updated query method, means that drivers can now report their *current* link state at runtime, as opposed to only when setting capabilities with [NetAdapterSetLinkLayerCapabilities](netadaptersetlinklayercapabilities.md).
 
 ## API changes
 
