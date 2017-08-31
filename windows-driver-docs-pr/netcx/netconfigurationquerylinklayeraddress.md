@@ -33,7 +33,7 @@ Parameters
 Handle to a NETCONFIGURATION object that represents an opened registry key.
 
 *LinkLayerAddress* [out]  
-A pointer to a NET_ADAPTER_LINK_LAYER_ADDRESS object that represents the link layer address.
+A pointer to a NET_ADAPTER_LINK_LAYER_ADDRESS object that represents the link layer address stored in the registry key.
 
 Return value
 ------------
@@ -65,11 +65,11 @@ Requirements
 </tr>
 <tr class="even">
 <td align="left"><p>Minimum KMDF version</p></td>
-<td align="left"><p>1.21</p></td>
+<td align="left"><p>1.23</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Minimum NetAdapterCx version</p></td>
-<td align="left"><p>1.0</p></td>
+<td align="left"><p>1.1</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Header</p></td>
