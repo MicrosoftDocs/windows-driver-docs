@@ -27,9 +27,9 @@ In version 1.0, NetAdapterCx had one packet context per queue, which limited cli
 
 ### Finer link state control
 
-Two new methods, [NetAdapterSetPermanentLinkLayerAddress](netadaptersetpermanentlinklayeraddress.md) and [NetAdapterSetCurrentLinkLayerAddress](netadaptersetcurrentlinklayeraddress.md), have been added in NetAdapter 1.1 to allow NIC client drivers to more easily set these separate addresses with dedicated methods. After setting the permanent and current link layer addresses, the driver can also now query them with the updated [NetConfigurationQueryLinkLayerAddress](netconfigurationquerylinklayeraddress.md) method. The addition of these two new set methods, along with the updated query method, means that drivers can now report their *current* link state at runtime, as opposed to only when setting capabilities with [NetAdapterSetLinkLayerCapabilities](netadaptersetlinklayercapabilities.md).
+Two new methods, [NetAdapterSetPermanentLinkLayerAddress](netadaptersetpermanentlinklayeraddress.md) and [NetAdapterSetCurrentLinkLayerAddress](netadaptersetcurrentlinklayeraddress.md), have been added in NetAdapter 1.1 to enable NetAdapterCx client drivers to more easily set these separate addresses with dedicated methods. The driver can also query them with the updated [NetConfigurationQueryLinkLayerAddress](netconfigurationquerylinklayeraddress.md) method. This means that drivers can now report their *current* link state at runtime, as opposed to only when setting capabilities with [NetAdapterSetLinkLayerCapabilities](netadaptersetlinklayercapabilities.md).
 
-## API changes
+## API and data structure changes
 
 ### New APIs and data structures
 
@@ -60,22 +60,22 @@ The following APIs and data structures are new in NetAdapterCx 1.1.
 The following APIs and data structures were updated in NetAdapterCx 1.1.
 
 - [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md)
-- [NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT](net-adapter-link-layer-capabilities-init.md)
+- [NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT method](net-adapter-link-layer-capabilities-init.md)
 - [NET_ADAPTER_CONFIG](net-adapter-config.md)
-- [NET_ADAPTER_CONFIG_INIT](net-adapter-config-init.md)
-- [NetAdapterDriverWdmGetHandle](netadapterdriverwdmgethandle.md)
-- [NetConfigurationQueryLinkLayerAddress](netconfigurationquerylinklayeraddress.md)
-- [NetPowerSettingsGetWakePatternCount](netpowersettingsgetwakepatterncount.md)
-- [NetPowerSettingsGetWakePatternCountForType](netpowersettingsgetwakepatterncountfortype.md)
-- [NetPowerSettingsGetWakePattern](netpowersettingsgetwakepattern.md)
-- [NetPowerSettingsIsWakePatternEnabled](netpowersettingsiswakepatternenabled.md)
-- [NetPowerSettingsGetEnabledWakeUpFlags](netpowersettingsgetenabledwakeupflags.md)
-- [NetPowerSettingsGetEnabledProtocolOffloadFlags](netpowersettingsgetenabledprotocoloffloadflags.md)
-- [NetPowerSettingsGetEnabledMediaSpecificWakeUpEvents](netpowersettingsgetenabledmediaspecificwakeupevents.md)
-- [NetPowerSettingsGetProtocolOffloadCount](netpowersettingsgetprotocoloffloadcount.md)
-- [NetPowerSettingsGetProtocolOffloadCountForType](netpowersettingsgetprotocoloffloadcountfortype.md)
-- [NetPowerSettingsGetProtocolOffload](netpowersettingsgetprotocoloffload.md)
-- [NetPowerSettingsIsProtocolOffloadEnabled](netpowersettingsisprotocoloffloadenabled.md)
+- [NET_ADAPTER_CONFIG_INIT method](net-adapter-config-init.md)
+- [NetAdapterDriverWdmGetHandle method](netadapterdriverwdmgethandle.md)
+- [NetConfigurationQueryLinkLayerAddress method](netconfigurationquerylinklayeraddress.md)
+- [NetPowerSettingsGetWakePatternCount method](netpowersettingsgetwakepatterncount.md)
+- [NetPowerSettingsGetWakePatternCountForType method](netpowersettingsgetwakepatterncountfortype.md)
+- [NetPowerSettingsGetWakePattern method](netpowersettingsgetwakepattern.md)
+- [NetPowerSettingsIsWakePatternEnabled method](netpowersettingsiswakepatternenabled.md)
+- [NetPowerSettingsGetEnabledWakeUpFlags method](netpowersettingsgetenabledwakeupflags.md)
+- [NetPowerSettingsGetEnabledProtocolOffloadFlags method](netpowersettingsgetenabledprotocoloffloadflags.md)
+- [NetPowerSettingsGetEnabledMediaSpecificWakeUpEvents method](netpowersettingsgetenabledmediaspecificwakeupevents.md)
+- [NetPowerSettingsGetProtocolOffloadCount method](netpowersettingsgetprotocoloffloadcount.md)
+- [NetPowerSettingsGetProtocolOffloadCountForType method](netpowersettingsgetprotocoloffloadcountfortype.md)
+- [NetPowerSettingsGetProtocolOffload method](netpowersettingsgetprotocoloffload.md)
+- [NetPowerSettingsIsProtocolOffloadEnabled method](netpowersettingsisprotocoloffloadenabled.md)
 - [EVT_RXQUEUE_SET_NOTIFICATION_ENABLED](evt-rxqueue-set-notification-enabled.md)
 - [NET_RXQUEUE_CONFIG](net-rxqueue-config.md)
 - [EVT_TXQUEUE_SET_NOTIFICATION_ENABLED](evt-txqueue-set-notification-enabled.md)

@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 This section contains methods for Network Adapter WDF Class Extension (NetAdapterCx) client drivers.
 
-### Initialize or add methods
+## Initialize or add methods
 
 The following methods are used to initialize structures or add handlers to a NetAdapterCx client driver.
 
@@ -65,7 +65,7 @@ The following methods are used to initialize structures or add handlers to a Net
 
 [NET_TXQUEUE_CONFIG_INIT method](net-txqueue-config-init.md)
 
-### All other methods
+## All other methods
 
 The following methods are used for all other functionality in a NetAdapterCx client driver other than initializing a structure or adding a handler.
 
