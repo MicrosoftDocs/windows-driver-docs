@@ -24,7 +24,7 @@ Fabrikam removes the non-universal sections and directives and uses the [InfVeri
 
 ## Use extension INFs to componentize a driver package
 
-Next, Fabrikam separates customizations that are specific to OEM partners (such as Contoso) from the primary driver package into an [extension INF](../install/using-an-extension-inf-file.md).
+Next, Fabrikam separates customizations that are specific to OEM partners (such as Contoso) from the base driver package into an [extension INF](../install/using-an-extension-inf-file.md).
 
 The following snippet, updated from [`osrfx2_DCHU_extension.inx`], specifies the `Extension` class and identifies Contoso as the provider since they will own the extension driver package:
 
@@ -52,7 +52,7 @@ HKR, OSR, "OperatingParams",, "-Extended"
 HKR, OSR, "OperatingExceptions",, "x86"	
 ```
 
-Note that extensions are always processed after the primary INF in no definite order. If a primary INF is updated to a newer version, then the extensions will still be re-applied after the new primary INF is installed.
+Note that extensions are always processed after the base INF in no definite order. If a base INF is updated to a newer version, then the extensions will still be re-applied after the new base INF is installed.
 
 ## Install a service from an INF file
 
@@ -116,7 +116,7 @@ Note that the component driver package is only distributed on Desktop SKUs due t
 
 Fabrikam would like to provide a GUI-based companion app as part of the universal driver package.  Because Win32-based companion applications cannot be part of a universal driver package, they port their Win32 app to the Universal Windows Platform (UWP) and [pair the app with the device](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-access-for-universal-windows-platform-apps).
 
-The following snippet from [`osrfx2_DCHU_base/device.c`](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_base/device.c) shows how the primary driver package adds a custom capability to the device interface instance:
+The following snippet from [`osrfx2_DCHU_base/device.c`](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_base/device.c) shows how the base driver package adds a custom capability to the device interface instance:
 
 ```cpp
     WDF_DEVICE_INTERFACE_PROPERTY_DATA PropertyData = { 0 };
@@ -161,7 +161,12 @@ HKCR,CLSID\{92FCF37F-F6C7-4F8A-AA09-1A14BA118084}\VersionIndependentProgID,,,"AT
 
 ## Tightly coupling multiple INF files
 
-Ideally, there should be strong versioning contracts between base, extensions and components.  There are servicing advantages in having these three packages serviced independently, but there are scenarios where they need to be bundled in a single driver package ("tightly coupled") due to poor versioning contracts.  The sample includes an example of how to package an extensions and components separately ("loosely coupled" files under  [DCHU_Sample\osrfx2_DCHU_extension_loose](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_loose)) or together (tightly coupled files under [DCHU_Sample\osrfx2_DCHU_extension_tight](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_tight)).  When the extension and component are tightly coupled, the extension INF is responsible for enabling the installation of the component INF.  This is demonstrated in [DCHU_Sample\osrfx2_DCHU_extension_tight\osrfx2_DCHU_extension\osrfx2_DCHU_extension.inx](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_tight/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx) by using the [CopyINF directive](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-copyinf-directive):
+Ideally, there should be strong versioning contracts between base, extensions and components.  There are servicing advantages in having these three packages serviced independently (the "loosely coupled" scenario), but there are scenarios where they need to be bundled in a single driver package ("tightly coupled") due to poor versioning contracts.  The sample includes examples of both scenarios:
+
+ * [DCHU_Sample\osrfx2_DCHU_extension_loose](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_loose)
+ * [DCHU_Sample\osrfx2_DCHU_extension_tight](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_tight)
+ 
+ When the extension and component are in the same driver package ("tightly coupled"), the extension INF specifies the [CopyINF directive](../install/inf-copyinf-directive.md) to cause the component INF to be copied to the target system.  This is demonstrated in [DCHU_Sample\osrfx2_DCHU_extension_tight\osrfx2_DCHU_extension\osrfx2_DCHU_extension.inx](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_tight/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx):
 
 ```
 [OsrFx2Extension_Install.NT]
@@ -183,9 +188,9 @@ Using a destination directory value of 13 can result in improved stability durin
 
 ## Summary
 
-The following diagram shows the driver packages that Fabrikam and Contoso created for their Universal Windows Driver.  In the loosely coupled example, they will make three separate submissions on the [Windows Hardware Dev Center dashboard](https://developer.microsoft.com/dashboard/Registration/Hardware).  In the tightly coupled example, they will make two submissions.
+The following diagram shows the driver packages that Fabrikam and Contoso created for their Universal Windows Driver.  In the loosely coupled example, they will make three separate submissions on the [Windows Hardware Dev Center dashboard](https://developer.microsoft.com/dashboard/Registration/Hardware): one for the base, one for the extension, and one for the component.  In the tightly coupled example, they will make two submissions: base and extension/component.
 
-![Extension, primary, and component driver packages](images/universal-scenarios.png)
+![Extension, base, and component driver packages](images/universal-scenarios.png)
 
 Note that the component INF will match on the component hardware ID, whereas the base and extensions will match on the board's hardware ID.
 
