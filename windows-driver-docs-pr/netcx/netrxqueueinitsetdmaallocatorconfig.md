@@ -38,12 +38,11 @@ This method does not return a value.
 
 ## Remarks
 
-In NetAdapterCx version 1.1, this method replaced the previous **NetRxQueueConfigureDmaAllocator** method as the way a client driver lets NetAdapterCx manage the receive buffer. To opt in:
+In NetAdapterCx version 1.1, this method replaced the previous **NetRxQueueConfigureDmaAllocator** method as the way a client driver lets NetAdapterCx manage the receive buffer. To opt in, follow these steps in your [EVT_NET_ADAPTER_CREATE_RXQUEUE](evt-net-adapter-create-rxqueue.md) callback function:
 
   1. Set the **AllocationSize** and **AlignmentRequirement** members of [**NET_RXQUEUE_CONFIG**](net-rxqueue-config.md).
-  2. Call [**WdfDmaEnablerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff546983), typically from the [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md) event callback function.
-  3. Allocate a [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG](net-rxqueue-dma-allocator-config.md) structure.
-  4. Call [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT](net-rxqueue-dma-allocator-config-init.md) with the the initialized WDFDMAENABLER object and the NET_RXQUEUE_DMA_ALLOCATOR_CONFIG structure.
+  2. Allocate a [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG](net-rxqueue-dma-allocator-config.md) structure.
+  3. Call [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT](net-rxqueue-dma-allocator-config-init.md) with the NET_RXQUEUE_DMA_ALLOCATOR_CONFIG structure and a DMA enabler object retrieved from the callback's *Adapter* input parameter.
   4. Call **NetRxQueueInitSetDmaAllocatorConfig** with the initialized NET_RXQUEUE_DMA_ALLOCATOR_CONFIG structure.
 
 NetAdapterCx then uses the queue's DMA enabler to allocate pre-mapped buffers for each packet in the queue's [**NET_RING_BUFFER**](net-ring-buffer.md) structure, and updates the **VirtualAddress** and **DmaLogicalAddress** members of each [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) to point to each premapped buffer.
