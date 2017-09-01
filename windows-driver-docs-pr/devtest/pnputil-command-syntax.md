@@ -38,7 +38,7 @@ Adds a [driver package](https://msdn.microsoft.com/library/windows/hardware/ff54
 
 The **/a** switch has the following optional parameters:
 
-<span id="_i"></span><span id="_I"></span>/i  
+<span id="_i"></span><span id="_I"></span>**/i**  
 Installs the [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) on matching devices that are connected to the system. The driver package is installed after it is added to the [driver store](https://msdn.microsoft.com/library/windows/hardware/ff544868).
 
 **Note**  When you add a [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) to the [driver store](https://msdn.microsoft.com/library/windows/hardware/ff544868) by using the **/a** switch, Windows uses a different name (*published name*) for the driver package's [INF file](https://msdn.microsoft.com/library/windows/hardware/ff547402). You must use the published name of the INF file for the *PublishedInfFileName* parameter of the **/d** switch.
@@ -50,7 +50,7 @@ Removes a [driver package](https://msdn.microsoft.com/library/windows/hardware/f
 
 The **/d** switch has the following optional parameters:
 
-<span id="_f"></span><span id="_F"></span>/f  
+<span id="_f"></span><span id="_F"></span>**/f**  
 Forces the deletion of the specified [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) from the [driver store](https://msdn.microsoft.com/library/windows/hardware/ff544868). You must use this parameter if the specified driver package is installed on a device that is connected to the system. If this parameter is not specified, PnPUtil only removes a driver package if it was not used to install drivers for devices that are connected to the system.
 
 **Note**  Removing the driver package in this manner will not affect the operation of currently connected devices for which drivers were previously installed from the package.
