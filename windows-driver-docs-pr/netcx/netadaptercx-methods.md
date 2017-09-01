@@ -63,6 +63,8 @@ The following methods are used to initialize structures or add handlers to a Net
 
 [NET_RXQUEUE_CONFIG_INIT method](net-rxqueue-config-init.md)
 
+[NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT method](net-rxqueue-dma-allocator-config-init.md)
+
 [NET_TXQUEUE_CONFIG_INIT method](net-txqueue-config-init.md)
 
 ## All other methods

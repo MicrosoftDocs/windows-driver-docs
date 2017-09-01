@@ -54,7 +54,7 @@ For a PCI NIC, enabling receive queue notification typically means enabling the 
 
 For example:
 ```cpp
-NTSTATUS
+VOID
 EvtRxQueueSetNotificationEnabled(
     _In_ NETRXQUEUE rxQueue,
     _In_ BOOLEAN notificationEnabled)
@@ -114,6 +114,8 @@ NetAdapterCx serializes this callback function along with the receive queue's [*
 
 For more info, see [Transferring Network Data](transferring-network-data.md).
 
+In NetAdapterCx 1.1, the return type of this method was changed from **NTSTATUS** in version 1.0 to **VOID**.
+
 Requirements
 ------------
 
@@ -129,11 +131,11 @@ Requirements
 </tr>
 <tr class="even">
 <td align="left"><p>Minimum KMDF version</p></td>
-<td align="left"><p>1.21</p></td>
+<td align="left"><p>1.23</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Minimum NetAdapterCx version</p></td>
-<td align="left"><p>1.0</p></td>
+<td align="left"><p>1.1</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Header</p></td>

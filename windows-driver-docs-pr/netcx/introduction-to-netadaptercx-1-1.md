@@ -44,8 +44,8 @@ The following APIs and data structures are new in NetAdapterCx 1.1.
 - [NetPacketGetContextFromToken]
 - [NET_RXQUEUE_BUFFER_LAYOUT_HINT]
 - [NET_RXQUEUE_GET_PACKET_CONTEXT_TOKEN]
-- [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG]
-- [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT]
+- [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG](net-rxqueue-dma-allocator-config.md)
+- [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT method](net-rxqueue-dma-allocator-config-init.md)
 - [NetRxQueueGetPacketContextToken]
 - [NetRxQueueInitAddPacketContextAttributes]
 - [NetRxQueueInitSetDmaAllocatorConfig]
