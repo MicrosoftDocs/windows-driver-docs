@@ -46,7 +46,7 @@ The preferred NUMA node to use when allocating memory. If this member is set to 
 
 ## Remarks
 
-Call [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT](net-rxqueue-dma-allocator-config-init.md) to initialize this structure...
+Call [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT](net-rxqueue-dma-allocator-config-init.md) to initialize this structure.
 
 The **NET_RXQUEUE_DMA_ALLOCATOR_CONFIG** structure is an input parameter to [NetRxQueueInitSetDmaAllocatorConfig](netrxqueueinitsetdmaallocatorconfig.md). The client must use [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT](net-rxqueue-dma-allocator-config-init.md) to initialize this structure.
 
