@@ -94,7 +94,7 @@ The following APIs and data structures were removed in NetAdapterCx 1.1 and were
 - [NET_ADAPTER_DRIVER_TYPE](net-adapter-driver-type.md)
 - [NET_ADAPTER_PHYSICAL_ADDRESS](net-adapter-physical-address.md)
 - [NET_ADAPTER_PHYSICAL_ADDRESS_INIT](net-adapter-physical-address-init.md)
-- [NET_ADAPTER_LINK_LAYER_CAPABILITIES_NO_PHYSICAL_ADDRESS](net-adapter-link-layer-capabilities-init-no-physical-address.md)
+- [NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT_NO_PHYSICAL_ADDRESS](net-adapter-link-layer-capabilities-init-no-physical-address.md)
 
 ## Compiling a NetAdapterCx 1.1 client driver
 
