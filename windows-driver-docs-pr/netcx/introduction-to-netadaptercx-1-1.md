@@ -33,6 +33,8 @@ Two new methods, [NetAdapterSetPermanentLinkLayerAddress](netadaptersetpermanent
 
 If a client driver chose to let NetAdapterCx manage the receive buffer in version 1.0, it called a method called **NetRxQueueConfigureDmaAllocator**. However, it was not possible to specify further options for receive queue DMA allocation. In version 1.1, a new structure, [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG](net-rxqueue-dma-allocator-config.md), has been introduced to enable client drivers to customize DMA aspects such as cache enablement or the preferred NUMA node to be used when allocating memory. This structure is initialized with the new [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT](net-rxqueue-dma-allocator-config-init.md) method and is associated with the receive queue by calling [NetRxQueueInitSetDmaAllocatorConfig](netrxqueueinitsetdmaallocatorconfig.md), which replaced **NetRxQueueConfigureDmaAllocator**.
 
+Client driver can also now query whether DMA allocator cache is enabled with the new [NetRxQueueQueryAllocatorCacheEnabled](netrxqueuequeryallocatorcacheenabled.md) method.
+
 ## API and data structure changes
 
 ### New APIs and data structures
