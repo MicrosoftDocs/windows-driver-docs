@@ -71,13 +71,12 @@ For transmit queues, cast this value to an MDL pointer.
 Do not modify this value.
 
 **VirtualAddress**  
-Points to the start of the packet buffer.
-This address is mapped into the system address space.
+Points to the start of the packet buffer. This address is mapped into the system address space.
 
 For transmit queues, this value is read-only.
 
 **ValidLength**  
-Contains the length of packet payload.  This value is less than or equal to the value of **Capacity**.
+Contains the length of packet payload. This value is less than or equal to the value of **Capacity**.
 
 For transmit queues, this value is read-only.
 

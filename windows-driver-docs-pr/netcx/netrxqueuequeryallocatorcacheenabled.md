@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The NetRxQueueQueryAllocatorCacheEnabled method queries whether DMA allocator cache is enabled.
+The NetRxQueueQueryAllocatorCacheEnabled method queries whether DMA allocator cache is enabled for a receive queue.
 
 Syntax
 ------
@@ -40,11 +40,6 @@ Return value
 ------------
 
 The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
-
-Remarks
--------
-
-In NetAdapterCx 1.0, this method was called **NetRxQueueConfigureDmaAllocator**. It was renamed to **NetRxQueueQueryAllocatorCacheEnabled** in NetAdapterCx 1.1. DMA allocator configuration is now done by initializing a [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG](net-rxqueue-dma-allocator-config.md) structure with the [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT](net-rxqueue-dma-allocator-config-init.md) method.
 
 Requirements
 ------------

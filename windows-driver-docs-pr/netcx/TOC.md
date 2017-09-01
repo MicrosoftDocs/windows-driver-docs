@@ -141,6 +141,7 @@
 #### [NetRxQueueCreate method](netrxqueuecreate.md)
 #### [NetRxQueueGetRingBuffer method](netrxqueuegetringbuffer.md)
 #### [NetRxQueueInitGetQueueId method](netrxqueueinitgetqueueid.md)
+#### [NetRxQueueInitSetDmaAllocatorConfig method](netrxqueueinitsetdmaallocatorconfig.md)
 #### [NetRxQueueNotifyMoreReceivedPacketsAvailable method](netrxqueuenotifymorereceivedpacketsavailable.md)
 #### [NetRxQueueQueryAllocatorCacheEnabled method](netrxqueuequeryallocatorcacheenabled.md)
 #### [NetTxQueueCreate method](nettxqueuecreate.md)

@@ -197,6 +197,8 @@ The following methods are used for all other functionality in a NetAdapterCx cli
 
 [NetRxQueueInitGetQueueId method](netrxqueueinitgetqueueid.md)
 
+[NetRxQueueInitSetDmaAllocatorConfig method](netrxqueueinitsetdmaallocatorconfig.md)
+
 [NetRxQueueNotifyMoreReceivedPacketsAvailable method](netrxqueuenotifymorereceivedpacketsavailable.md)
 
 [NetTxQueueCreate method](nettxqueuecreate.md)

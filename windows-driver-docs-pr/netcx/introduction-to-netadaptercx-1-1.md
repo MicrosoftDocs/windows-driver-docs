@@ -48,8 +48,8 @@ The following APIs and data structures are new in NetAdapterCx 1.1.
 - [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT method](net-rxqueue-dma-allocator-config-init.md)
 - [NetRxQueueGetPacketContextToken]
 - [NetRxQueueInitAddPacketContextAttributes]
-- [NetRxQueueInitSetDmaAllocatorConfig]
 - [NetRxQueueGetBufferLayoutHint]
+- [NetRxQueueQueryAllocatorCacheEnabled](netrxqueuequeryallocatorcacheenabled.md)
 - [NET_TXQUEUE_GET_PACKET_CONTEXT_TOKEN]
 - [NetTxQueueGetPacketContextToken]
 - [NetTxQueueInitAddPacketContextAttributes]
@@ -75,7 +75,7 @@ The following APIs and data structures were updated in NetAdapterCx 1.1.
 - [NetPowerSettingsGetProtocolOffloadCountForType method](netpowersettingsgetprotocoloffloadcountfortype.md)
 - [NetPowerSettingsGetProtocolOffload method](netpowersettingsgetprotocoloffload.md)
 - [NetPowerSettingsIsProtocolOffloadEnabled method](netpowersettingsisprotocoloffloadenabled.md)
-- [NetRxQueueQueryAllocatorCacheEnabled](netrxqueuequeryallocatorcacheenabled.md)
+- [NetRxQueueInitSetDmaAllocatorConfig](netrxqueueinitsetdmaallocatorconfig.md)
 - [EVT_RXQUEUE_SET_NOTIFICATION_ENABLED](evt-rxqueue-set-notification-enabled.md)
 - [NET_RXQUEUE_CONFIG](net-rxqueue-config.md)
 - [EVT_TXQUEUE_SET_NOTIFICATION_ENABLED](evt-txqueue-set-notification-enabled.md)
@@ -83,7 +83,7 @@ The following APIs and data structures were updated in NetAdapterCx 1.1.
 
 ### Removed APIs and data structures
 
-The following APIs and data structures were removed in NetAdapterCx 1.1. Many of them were replaced with a different API or data structure. See each topic for details.
+The following APIs and data structures were removed in NetAdapterCx 1.1 and were replaced with a different API or data structure. See each topic for details.
 
 - [NET_ADAPTER_DRIVER_TYPE](net-adapter-driver-type.md)
 - [NET_ADAPTER_PHYSICAL_ADDRESS](net-adapter-physical-address.md)
