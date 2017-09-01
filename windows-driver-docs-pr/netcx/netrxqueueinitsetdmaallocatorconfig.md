@@ -13,7 +13,7 @@ ms.technology: windows-devices
 
 # NetRxQueueInitSetDmaAllocatorConfig method
 
-The NetRxQueueInitSetDmaAllocatorConfig method associates an initialized [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG](net-rxqueue-dma-allocator-config.md) structure, which contains a configured WDFDMAENABLER object, with a receive queue.
+The NetRxQueueInitSetDmaAllocatorConfig method associates an initialized [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG](net-rxqueue-dma-allocator-config.md) structure with a receive queue.
 
 ## Syntax
 

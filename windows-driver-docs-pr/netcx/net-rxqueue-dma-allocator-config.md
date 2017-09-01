@@ -13,7 +13,7 @@ ms.technology: windows-devices
 
 # NET_RXQUEUE_DMA_ALLOCATOR_CONFIG structure
 
-The NET_RXQUEUE_DMA_ALLOCATOR_CONFIG structure describes the configuration options for a WDFDMAENABLER object to be associated with a receive queue.
+The NET_RXQUEUE_DMA_ALLOCATOR_CONFIG structure describes the configuration options for a DMA allocator to be associated with a receive queue.
 
 ## Syntax
 
