@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # NET_RXQUEUE_DMA_ALLOCATOR_CONFIG structure
 
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
 The NET_RXQUEUE_DMA_ALLOCATOR_CONFIG structure describes the configuration options for a DMA allocator to be associated with a receive queue.
 
 ## Syntax

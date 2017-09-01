@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # NetRxQueueInitSetDmaAllocatorConfig method
 
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
 The NetRxQueueInitSetDmaAllocatorConfig method associates an initialized [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG](net-rxqueue-dma-allocator-config.md) structure with a receive queue.
 
 ## Syntax

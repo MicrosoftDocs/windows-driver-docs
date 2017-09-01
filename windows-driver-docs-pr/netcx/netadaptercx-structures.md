@@ -46,6 +46,8 @@ This section contains structures for Network Adapter WDF Class Extension (NetAda
 
 [NET_RING_BUFFER](net-ring-buffer.md)
 
+[NET_RXQUEUE_BUFFER_LAYOUT_HINT](net-rxqueue-buffer-layout-hint.md)
+
 [NET_RXQUEUE_CONFIG](net-rxqueue-config.md)
 
 [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG](net-rxqueue-dma-allocator-config.md)

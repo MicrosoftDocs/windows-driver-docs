@@ -50,6 +50,7 @@
 #### [NET_REQUEST_QUEUE_QUERY_DATA_HANDLER](net-request-queue-query-data-handler.md)
 #### [NET_REQUEST_QUEUE_SET_DATA_HANDLER](net-request-queue-set-data-handler.md)
 #### [NET_RING_BUFFER](net-ring-buffer.md)
+#### [NET_RXQUEUE_BUFFER_LAYOUT_HINT](net-rxqueue-buffer-layout-hint.md)
 #### [NET_RXQUEUE_CONFIG](net-rxqueue-config.md)
 #### [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG](net-rxqueue-dma-allocator-config.md)
 #### [NET_TXQUEUE_CONFIG](net-txqueue-config.md)
