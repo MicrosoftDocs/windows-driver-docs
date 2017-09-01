@@ -53,7 +53,7 @@ Size of each receive buffer. If non-zero, NetAdapterCx allocates receive buffers
 The alignment requirement, in bytes, for each receive buffer. This value must be one less than the alignment boundary. For example, specify 15 for a 16-byte alignment boundary. You can also use one of the FILE_Xxxx_ALIGNMENT constants that are defined in Wdm.h. If unspecified, **AlignmentRequirement** defaults to the value returned by [**WdfDeviceGetAlignmentRequirement**](https://msdn.microsoft.com/en-us/library/windows/hardware/ff545953) for the adapter's associated device object.
 
 **RingBufferNumberOfElementsHint**  
-
+A hint at the number of elements for the ring buffer. Set this member if the client driver requires a minimum size for the buffer. If this member is set to **0**, NetAdapterCx will set the ring buffer size to the default value.
 
 Remarks
 -------
@@ -62,7 +62,7 @@ Call [**NET_RXQUEUE_CONFIG_INIT**](net-rxqueue-config-init.md) to initialize thi
 
 The **NET_RXQUEUE_CONFIG** structure is an input parameter to [**NetRxQueueCreate**](netrxqueuecreate.md). The client must use [**NET_RXQUEUE_CONFIG_INIT**](net-rxqueue-config-init.md) to initialize this structure.
 
-In NetAdapterCx 1.1, the **ContextTypeInfo** member from version 1.0 was removed. The **RingBufferNumberOfElementsHint** member was added in version 1.1.
+In NetAdapterCx 1.1, the **ContextTypeInfo** member from version 1.0 was replaced with the **RingBufferNumberOfElementsHint**.
 
 Requirements
 ------------
@@ -75,11 +75,11 @@ Requirements
 <tbody>
 <tr class="odd">
 <td align="left"><p>Minimum KMDF version</p></td>
-<td align="left"><p>1.21</p></td>
+<td align="left"><p>1.23</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Minimum NetAdapterCx version</p></td>
-<td align="left"><p>1.0</p></td>
+<td align="left"><p>1.1</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Header</p></td>
