@@ -22,17 +22,14 @@ typedef struct _NET_PACKET_FRAGMENT {
 #else 
   ULONG_PTR         Reserved              : 1;
   ULONG_PTR         NextFragment_Reserved : 29;
-#endif 
-  
+#endif   
   union
   {
       MDL              *Mdl;
       PHYSICAL_ADDRESS DmaLogicalAddress;
       ULONG64          AsInteger;
   } Mapping;
-
   PVOID             VirtualAddress;
-
   UINT64            ValidLength           : 26;
   UINT64            Capacity              : 26;
   UINT64            Offset                : 10;

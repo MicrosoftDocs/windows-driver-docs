@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-
+The NetRxQueueGetBufferLayoutHint method queries buffer layout hints that a NetAdapterCx client driver's receive queue can use to calculate how much padding its receive buffers should have.
 
 ## Syntax
 
@@ -29,10 +29,10 @@ VOID FORCEINLINE NetRxQueueGetBufferLayoutHint(
 ## Parameters
 
 *NetRxQueue* [in]  
-d
+A handle to a NETRXQUEUE object created in a prior call to [NetRxQueueCreate](netrxqueuecreate.md).
 
 *BufferLayoutHint* [out]  
-d
+A [NET_RXQUEUE_BUFFER_LAYOUT_HINT](net-rxqueue-buffer-layout-hint.md) structure that represents the buffer layout hints returned from the upper layer.
 
 ## Return value
 
@@ -40,6 +40,7 @@ This method does not return a value.
 
 ## Remarks
 
+Call this method to obtain buffer layout hints from the upper layer, formatted as a NET_RXQUEUE_BUFFER_LAYOUT_HINT structure. While this method is optional for client drivers to call, it can help improve receive queue performance by enabling the receive queue to precalculate buffer padding and alignment.
 
 ## Requirements
 

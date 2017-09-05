@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The NET_RXQUEUE_BUFFER_LAYOUT_HINT structure represents
+The NET_RXQUEUE_BUFFER_LAYOUT_HINT structure represents receive buffer layout hints returned to a client driver from the upper layer.
 
 ## Syntax
 
@@ -29,14 +29,14 @@ typedef struct _NET_RXQUEUE_BUFFER_LAYOUT_HINT{
 ## Members
 
 **MinimumBackfillSize**  
-d
+The minimum space that should be unused in the beginning of the first fragment of the ring buffer.
 
 **L3HeaderAlignment**  
-d
+The ideal alignment for the start of the L3 header. This member's value is in the form *N-1*, where *N* is the alignment.
 
 ## Remarks
 
-
+The information in this structure is set by the upper layer and is retrieved by the client driver by calling [NetRxQueueGetBufferLayoutHint](netrxqueuegetbufferlayouthint.md).
 
 ## Requirements
 
