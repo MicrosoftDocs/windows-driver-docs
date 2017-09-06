@@ -45,14 +45,13 @@ These topics describe addtional advanced fucnctionality in time travel debugging
 
 > Topic not yet available
 
-- [Time Travel Debugging - Extension commands] (time-travel-debugging-extension-commands.md)
-- [Time Travel Debugging - JavaScript Automation] (time-travel-debugging-javascript-automation.md)
-- [Time Travel Debugging - TTDAnalyze] (time-travel-debugging-ttdanalyze.md)
-- [Time Travel Debugging - Trace File object model] (time-travel-debugging-object-model.md)
-- [Debugger Object model reference - Time Travel Debugging] (debugger-object-model-reference-time-travel-debugging.md)
+- [Time Travel Debugging - Extension commands] time-travel-debugging-extension-commands.md
+- [Time Travel Debugging - JavaScript Automation] time-travel-debugging-javascript-automation.md
+- [Time Travel Debugging - TTDAnalyze] time-travel-debugging-ttdanalyze.md
+- [Time Travel Debugging - Trace File object model] time-travel-debugging-object-model.md
+- [Debugger Object model reference - Time Travel Debugging] debugger-object-model-reference-time-travel-debugging.md
 
 ##  Comparison of Debugging Tools
-
 
 
 Approach​ | Pros | Cons​
