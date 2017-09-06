@@ -12,17 +12,24 @@ ms.technology: windows-devices
 > The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
 >
 
+TBD TBD TBD
+
 
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Overview
 
-TBD TBD TBD
 
 What is Time Travel Debugging?
+
+Time Travel Debugging, is a tool that allows you to record an execution of your process running, then replay it later both forwards and backwards. TTD can help you debug issues easier by letting you "rewind" your debugger session, instead of having to reproduce the issue until you find the bug. In the event you can't figure it out yourself, you can simply share the trace with a co-worker and they can look at exactly what you're looking at! 
+
+Problem Doman
+
 What is a trace? 
     How big can they get and such
 What is an index - .IDX file and it could be big
 
 Basics of incompatibilities 
+
 
 
 WinDbg Preview is a brand-new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. WinDbg Preview is using the same underlying engine as WinDbg today, so all the commands, extensions, and workflows you're used to will still work as they did before.
@@ -36,11 +43,25 @@ Review these topics to install and configure WinDbg Preview.
 
 These topics describe addtional advanced fucnctionality in time travel debugging. 
 
-- [Time Travel Debugging - Extension commands](time-travel-debugging-extension-commands.md)
-- [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md)
-- [Time Travel Debugging - TTDAnalyze](time-travel-debugging-ttdanalyze.md)
-- [Time Travel Debugging - Trace File object model](time-travel-debugging-object-model.md)
-- [Debugger Object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md)
+> Topic not yet available
+
+- [Time Travel Debugging - Extension commands] (time-travel-debugging-extension-commands.md)
+- [Time Travel Debugging - JavaScript Automation] (time-travel-debugging-javascript-automation.md)
+- [Time Travel Debugging - TTDAnalyze] (time-travel-debugging-ttdanalyze.md)
+- [Time Travel Debugging - Trace File object model] (time-travel-debugging-object-model.md)
+- [Debugger Object model reference - Time Travel Debugging] (debugger-object-model-reference-time-travel-debugging.md)
+
+##  Comparison of Debugging Tools
+
+
+
+Approach​ | Pros | Cons​
+|--------|------|-----|
+| Getting a local repro (or a repro in a controlled environment)​  |Access to all the familiar tools in a familiar setting.  | Time consuming, not always possible to get a local repro, addtional data may be needed for the repro.​ 
+| WinDbg - Live debugging | Interactive experience, sees flow of execution, can change target state, familiar tool in familiar setting.​ | Disrupts the user experience, may require effort to reproduce the issue repeatedly, may impact security, not always an option.​
+| Dumps​ | No coding upfront, low-intrusiveness, based on triggers.  | Successive snapshot or live dumps provide a simple “over time” view. Overhead is essentially zero if not used.​  | Often no pre-defect state, limited data, many developers struggle to root cause after the fact.​  | 
+| Telemetry & logs​  |Lightweight, often tied to business scenarios / user actions, great increase in value via Kusto & Splunk, machine learning friendly.​  | Issues arise in unexpected code paths (with no telemetry). Lack of data depth, statically compiled into the code. Telemetry is often focused on usage patterns not code patterns.​
+| Time Travel Debugging (TTD)​ | Great at complex bugs, no coding upfront, offline repeatable debugging, analysis friendly, captures everything. | Large overhead at record time. Manual setup. May collect too much data.​ |
 
 
 ## <span id="providingfeedback"></span>Providing feedback

@@ -12,7 +12,6 @@ ms.technology: windows-devices
 > The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
 >
 
-
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Recording 
 
 TBD TBD TBD 
@@ -21,6 +20,8 @@ TBD TBD TBD
 This section describes how to record time travel traces.
 
 Non-invasive attach
+
+![Screen shot of WinDbg Preview showing start recording checkbox](images/ttd-start-recording.png)
 
 Trace gets recorded
 
