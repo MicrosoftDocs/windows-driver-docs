@@ -32,6 +32,8 @@ This section contains structures for Network Adapter WDF Class Extension (NetAda
 
 [NET_PACKET](net-packet.md)
 
+[NET_PACKET_CONTEXT_ATTRIBUTES](net-packet-context-attributes.md)
+
 [NET_PACKET_CONTEXT_TOKEN](net-packet-context-token.md)
 
 [NET_PACKET_FRAGMENT](net-packet-fragment.md)

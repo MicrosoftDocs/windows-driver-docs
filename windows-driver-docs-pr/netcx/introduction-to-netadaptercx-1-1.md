@@ -23,7 +23,9 @@ NetAdapterCx 1.1 features advancements in performance over version 1.0, as well 
 
 ### More packet context options 
 
-In version 1.0, NetAdapterCx had one packet context per queue, which limited client drivers' usability. For example, if you were using the DMA IO Helper for your transmit queue, that was the only packet context available to you. In version 1.1, however, you can now allocate as many packet contexts as you need. Each driver subsystem can now use a different context, creating flexibility and improving componentization.
+In version 1.0, NetAdapterCx had one packet context per queue (or per packet on a queue), which limited client drivers' usability. For example, if you were using the DMA IO Helper for your transmit queue, it occupied the only packet context available to you. In version 1.1, however, you can now allocate as many packet contexts as you need. Each driver subsystem can now use a different context, creating flexibility and improving componentization.
+
+For more info, see [NET_PACKET_CONTEXT_ATTRIBUTES](net-packet-context-attributes.md) and [NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE](net-packet-context-attributes-init-type.md).
 
 ### Finer link state control
 
@@ -47,7 +49,8 @@ The following APIs and data structures are new in NetAdapterCx 1.1.
 - [NetAdapterSetPermanentLinkLayerAddress method](netadaptersetpermanentlinklayeraddress.md)
 - [NetAdapterSetCurrentLinkLayerAddress method](netadaptersetcurrentlinklayeraddress.md)
 - [NET_PACKET_CONTEXT_TOKEN](net-packet-context-token.md)
-- [NET_PACKET_CONTEXT_ATTRIBUTES]
+- [NET_PACKET_CONTEXT_ATTRIBUTES](net-packet-context-attributes.md)
+- [NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE](net-packet-context-attributes-init-type.md)
 - [NET_PACKET_DECLARE_CASTING_FUNCTION_FROM_TOKEN]
 - [NetPacketGetContextFromToken]
 - [NET_RXQUEUE_BUFFER_LAYOUT_HINT](net-rxqueue-buffer-layout-hint.md)

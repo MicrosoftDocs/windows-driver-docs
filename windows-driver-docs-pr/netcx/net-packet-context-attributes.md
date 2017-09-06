@@ -1,42 +1,42 @@
 ---
-title: NET_RXQUEUE_BUFFER_LAYOUT_HINT structure
-description: NET_RXQUEUE_BUFFER_LAYOUT_HINT structure
-ms.assetid: 5EFAEB36-9B39-41A7-9140-16DB225801E2
+title: NET_PACKET_CONTEXT_ATTRIBUTES structure
+description: NET_PACKET_CONTEXT_ATTRIBUTES structure
+ms.assetid: 16543429-9BD5-472F-A5AC-72FB2EE50267
 keywords:
-- WDF Network Adapter Class Extension NET_RXQUEUE_BUFFER_LAYOUT_HINT, NetAdapterCx NET_RXQUEUE_BUFFER_LAYOUT_HINT, NetCx NET_RXQUEUE_BUFFER_LAYOUT_HINT
+- WDF Network Adapter Class Extension NET_PACKET_CONTEXT_ATTRIBUTES, NetAdapterCx NET_PACKET_CONTEXT_ATTRIBUTES, NetCx NET_PACKET_CONTEXT_ATTRIBUTES
 ms.author: windowsdriverdev
-ms.date: 09/01/2017
+ms.date: 09/05/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# NET_RXQUEUE_BUFFER_LAYOUT_HINT structure
+# NET_PACKET_CONTEXT_ATTRIBUTES structure
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The NET_RXQUEUE_BUFFER_LAYOUT_HINT structure represents receive buffer layout hints returned to a client driver from the upper layer.
+The NET_PACKET_CONTEXT_ATTRIBUTES structure represents attributes for a [NET_PACKET](net-packet.md) structure's context space.
 
 ## Syntax
 
 ```cpp
-typedef struct _NET_RXQUEUE_BUFFER_LAYOUT_HINT{
-    ULONG   MinimumBackfillSize;
-    ULONG   L3HeaderAlignment;
-} NET_RXQUEUE_BUFFER_LAYOUT_HINT, *PNET_RXQUEUE_BUFFER_LAYOUT_HINT;
+typedef struct _NET_PACKET_CONTEXT_ATTRIBUTES{
+    ULONG                   Size;
+    size_t                  ContextSizeOverride;
+    PCNET_CONTEXT_TYPE_INFO ContextTypeInfo;
+} NET_PACKET_CONTEXT_ATTRIBUTES, *PNET_PACKET_CONTEXT_ATTRIBUTES;
 ```
 
 ## Members
 
-**MinimumBackfillSize**  
-The minimum space that should be unused in the beginning of the first fragment of the ring buffer.
+**Size**  
+The size of this structure, in bytes.
 
-**L3HeaderAlignment**  
-The ideal alignment for the start of the L3 header. This member's value is in the form *N-1*, where *N* is the alignment. For example, TCP/IP performance is optimized with a 4-byte alignment boundary, so this member would be set to **3** in that case.
+**ContextSizeOverride**  
+If this member is not set to zero, it represents the context size to use when allocating the packet context.
 
-## Remarks
-
-The information in this structure is set by the upper layer and is retrieved by the client driver by calling [NetRxQueueGetBufferLayoutHint](netrxqueuegetbufferlayouthint.md).
+**ContextTypeInfo**  
+A pointer to a [**WDF_OBJECT_CONTEXT_TYPE_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff552407) structure.
 
 ## Requirements
 

@@ -193,6 +193,8 @@ The following methods are used for all other functionality in a NetAdapterCx cli
 
 [NetRxQueueCreate method](netrxqueuecreate.md)
 
+[NetRxQueueGetBufferLayoutHint method](netrxqueuegetbufferlayouthint.md)
+
 [NetRxQueueGetRingBuffer method](netrxqueuegetringbuffer.md)
 
 [NetRxQueueInitGetQueueId method](netrxqueueinitgetqueueid.md)
