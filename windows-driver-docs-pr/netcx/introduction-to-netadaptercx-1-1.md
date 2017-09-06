@@ -23,9 +23,11 @@ NetAdapterCx 1.1 features advancements in performance over version 1.0, as well 
 
 ### More packet context options 
 
-In version 1.0, NetAdapterCx had one packet context per queue (or per packet on a queue), which limited client drivers' usability. For example, if you were using the DMA IO Helper for your transmit queue, it occupied the only packet context available to you. In version 1.1, however, you can now allocate as many packet contexts as you need. Each driver subsystem can now use a different context, creating flexibility and improving componentization.
+In version 1.0, NetAdapterCx had one packet context per queue (or per packet on a queue), but client drivers could not modify their queues' packet contexts or allocate additional packet contexts for other driver subsystems. This limited client drivers' usability. For example, if you were using the DMA IO Helper for your transmit queue, it occupied the only packet context available to you for that queue. In version 1.1, however, you can now allocate as many packet contexts as you need. Each driver subsystem can now use a different context, creating flexibility and improving componentization.
 
-For more info about setting attributes for each packet context, see [NET_PACKET_CONTEXT_ATTRIBUTES](net-packet-context-attributes.md) and [NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE](net-packet-context-attributes-init-type.md).
+For more info about declaring additional packet contexts and setting their attributes, see [NET_PACKET_CONTEXT_ATTRIBUTES](net-packet-context-attributes.md) and [NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE](net-packet-context-attributes-init-type.md).
+
+For more info about adding additional packet context attributes to transmit or receive queues, see [NetTxQueueInitAddPacketContextAttributes](nettxqueueinitaddpacketcontextattributes.md) or [NetRxQueueInitAddPacketContextAttributes](netrxqueueinitaddpacketcontextattributes.md) respectively.
 
 ### Finer link state control
 

@@ -40,6 +40,8 @@ This method does not return a value.
 
 ## Remarks
 
+The NETRXQUEUE_INIT structure is an opaque structure that is defined and allocated by NetAdapterCx, similar to WDFDEVICE_INIT.
+
 In NetAdapterCx version 1.1, this method replaced the previous **NetRxQueueConfigureDmaAllocator** method as the way a client driver lets NetAdapterCx manage the receive buffer. To opt in, follow these steps in your [EVT_NET_ADAPTER_CREATE_RXQUEUE](evt-net-adapter-create-rxqueue.md) callback function:
 
   1. Set the **AllocationSize** and **AlignmentRequirement** members of [**NET_RXQUEUE_CONFIG**](net-rxqueue-config.md).

@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The NET_PACKET_CONTEXT_ATTRIBUTES structure represents attributes for a [NET_PACKET](net-packet.md) structure's context space.
+The NET_PACKET_CONTEXT_ATTRIBUTES structure represents attributes for a packet context space.
 
 ## Syntax
 
@@ -37,6 +37,10 @@ If this member is not set to zero, it represents the context size to use when al
 
 **ContextTypeInfo**  
 A pointer to a [**WDF_OBJECT_CONTEXT_TYPE_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff552407) structure.
+
+## Remarks
+
+Initialize this structure with a context type by calling [NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE](net-packet-context-attributes-init-type.md).
 
 ## Requirements
 
