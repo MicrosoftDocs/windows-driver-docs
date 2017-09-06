@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The NET_PACKET_CONTEXT_TOKEN structure represents a token for an individual [NET_PACKET](net-packet.md) context.
+The NET_PACKET_CONTEXT_TOKEN structure represents a token for an individual packet context.
 
 ## Syntax
 
@@ -29,7 +29,7 @@ This structure has no members.
 
 ## Remarks
 
-NET_PACKET_CONTEXT_TOKEN is used as an identifier for each individual NET_PACKET context allocated by the client driver.
+NET_PACKET_CONTEXT_TOKEN is used as an identifier for each individual packet context allocated by the client driver.
 
 ## Requirements
 
