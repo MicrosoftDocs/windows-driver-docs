@@ -25,7 +25,7 @@ NetAdapterCx 1.1 features advancements in performance over version 1.0, as well 
 
 In version 1.0, NetAdapterCx had one packet context per queue (or per packet on a queue), which limited client drivers' usability. For example, if you were using the DMA IO Helper for your transmit queue, it occupied the only packet context available to you. In version 1.1, however, you can now allocate as many packet contexts as you need. Each driver subsystem can now use a different context, creating flexibility and improving componentization.
 
-For more info, see [NET_PACKET_CONTEXT_ATTRIBUTES](net-packet-context-attributes.md) and [NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE](net-packet-context-attributes-init-type.md).
+For more info about setting attributes for each packet context, see [NET_PACKET_CONTEXT_ATTRIBUTES](net-packet-context-attributes.md) and [NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE](net-packet-context-attributes-init-type.md).
 
 ### Finer link state control
 
@@ -59,11 +59,11 @@ The following APIs and data structures are new in NetAdapterCx 1.1.
 - [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG](net-rxqueue-dma-allocator-config.md)
 - [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT method](net-rxqueue-dma-allocator-config-init.md)
 - [NetRxQueueGetPacketContextToken]
-- [NetRxQueueInitAddPacketContextAttributes]
+- [NetRxQueueInitAddPacketContextAttributes method](netrxqueueinitaddpacketcontextattributes.md)
 - [NetRxQueueQueryAllocatorCacheEnabled](netrxqueuequeryallocatorcacheenabled.md)
 - [NET_TXQUEUE_GET_PACKET_CONTEXT_TOKEN]
 - [NetTxQueueGetPacketContextToken]
-- [NetTxQueueInitAddPacketContextAttributes]
+- [NetTxQueueInitAddPacketContextAttributes](nettxqueueinitaddpacketcontextattributes.md)
 
 ### Updated APIs and data structures
 
