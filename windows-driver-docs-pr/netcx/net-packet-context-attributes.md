@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The NET_PACKET_CONTEXT_ATTRIBUTES structure represents attributes for a packet context space.
+The NET_PACKET_CONTEXT_ATTRIBUTES structure represents attributes for a [NET_PACKET](net-packet.md) context space.
 
 ## Syntax
 

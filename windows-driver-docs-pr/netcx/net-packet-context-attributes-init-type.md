@@ -13,7 +13,7 @@ ms.technology: windows-devices
 
 # NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE macro
 
-The **NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE** macro initializes a NetAdapterCx client driver's [NET_PACKET_CONTEXT_ATTRIBUTES](net-packet-context-attributes.md) structure for a packet and inserts driver-defined context information into the structure.
+The **NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE** macro initializes a NetAdapterCx client driver's [NET_PACKET_CONTEXT_ATTRIBUTES](net-packet-context-attributes.md) structure for a [NET_PACKET](net-packet.md) and inserts driver-defined context information into the structure.
 
 ## Syntax
 
