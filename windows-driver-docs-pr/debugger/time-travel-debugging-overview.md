@@ -21,10 +21,14 @@ TBD TBD TBD
 ## What is Time Travel Debugging?
 
 Time Travel Debugging, is a tool that allows you to record an execution of your process running, then replay it later both forwards and backwards. TTD can help you debug issues easier by letting you "rewind" your debugger session, instead of having to reproduce the issue until you find the bug. 
+ 
+-or parts of this ...-
+
+Time Travel Debugging (TTD) is a solution that allows you to record the execution of an app or process, then replay it going both forwards and backwards. Today's debuggers typically allow you to start at specific point in time and only go forward. TTD allows you to go back in time to better understand the conditions that lead up to the bug and replay it multiple times to learn how best to fix the problem. 
 
 TTD has advantages over crash dump files, which often are missing the code execution that led up to the ultimate failure.  
 
-In the event you can't figure it out the issue yourself, you can simply share the trace with a co-worker and they can look at exactly what you're looking at. This can allow for easier collaboration then live debugging, as the recorded instructions are the same, compared to creating a live debugging, where the address locations and code execution will be different on different PCs.
+In the event you can't figure it out the issue yourself, you can simply share the trace with a co-worker and they can look at exactly what you're looking at. This can allow for easier collaboration then live debugging, as the recorded instructions are the same, where the address locations and code execution will be different on different PCs. You can also share a specific point in time to help your colaborator figure out where to start. 
 
 TTD is lightweight and works to add minimal overhead as it captures code execution in trace files. The performance impact is similar to attaching a non-invasive debugger connection. 
 
@@ -40,19 +44,20 @@ Approach​ | Pros | Cons​
 | Getting a local repro (or a repro in a controlled environment)​  |Access to all the familiar tools in a familiar setting.  | Time consuming, not always possible to get a local repro, addtional data may be needed for the repro.​ 
 | WinDbg - Live debugging | Interactive experience, sees flow of execution, can change target state, familiar tool in familiar setting.​ | Disrupts the user experience, may require effort to reproduce the issue repeatedly, may impact security, not always an option.​
 | Dumps​ | No coding upfront, low-intrusiveness, based on triggers.  | Successive snapshot or live dumps provide a simple “over time” view. Overhead is essentially zero if not used.​  | Often no pre-defect state, limited data, many developers struggle to root cause after the fact.​  | 
-| Telemetry & logs​  |Lightweight, often tied to business scenarios / user actions, great increase in value via Kusto & Splunk, machine learning friendly.​  | Issues arise in unexpected code paths (with no telemetry). Lack of data depth, statically compiled into the code. Telemetry is often focused on usage patterns not code patterns.​
-| Time Travel Debugging (TTD)​ | Great at complex bugs, no coding upfront, offline repeatable debugging, analysis friendly, captures everything. | Large overhead at record time. Manual setup. May collect too much data.​ |
+| Telemetry & logs​  |Lightweight, often tied to business scenarios / user actions, machine learning friendly.​  | Issues arise in unexpected code paths (with no telemetry). Lack of data depth, statically compiled into the code. Telemetry is often focused on usage patterns not code patterns.​
+| Time Travel Debugging (TTD)​ | Great at complex bugs, no coding upfront, offline repeatable debugging, analysis friendly, captures everything. | Large overhead at record time. May collect too much data.​ |
+
 
 ## TTD Availablity 
 
-TTD is only available on Windows 10 as part of the WinDbg Preview.  WinDbg Preview is a brand-new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. For more information on downloading WinDbg Preview from the store, see [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md).
+TTD is available on Windows 10 as part of the WinDbg Preview.  WinDbg Preview is a brand-new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, with built in support for the extensible debugger data model. For more information on downloading WinDbg Preview from the store, see [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md).
 
 
 ## Trace file basics 
 
- How big can they get and such
-What is an index - .IDX file and it could be big
+How big can they get and such
 
+What is an index - .IDX file and it could be big
 
 ## Getting started with TTD
 
@@ -67,17 +72,21 @@ These topics describe addtional advanced fucnctionality in time travel debugging
 
 - [Time Travel Debugging - Trace File object model](time-travel-debugging-object-model.md)
 - [Debugger Object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md)
+- [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md)
 
 > Topics not yet available pending product support
 
 - [Time Travel Debugging - Extension commands] time-travel-debugging-extension-commands.md
-- [Time Travel Debugging - JavaScript Automation] time-travel-debugging-javascript-automation.md
 - [Time Travel Debugging - TTDAnalyze] time-travel-debugging-ttdanalyze.md
 
-## Basics of incompatibilities 
+## Things to look out for / Basics of incompatibilities 
+
+Anti-virus
 
 1
+
 2
+
 3
 
 
@@ -92,25 +101,26 @@ Your feedback will help guide time travel development priorities going forward.
 
 ## Major Features of Time Travel
 
-Here's some of the most notable things that have changed or are new.
+Here's some of the most notable features.
+
+
+### Debugger data model support
+
+- **Built in data model support** - TTD includes data model support.
+- **Model window** - You can use the data model window in WinDbg  Preview to work with an expandable and browsable version of ‘dx’ and ‘dx -g’, letting you create tables using NatVis, JavaScript, and LINQ queries. 
+
+For general information about the debugger data model, see [WinDbg Preview - Data model](windbg-data-model-preview.md).
+
+For information about working with see, [Time Travel Debugging - JavaScript Automation] time-travel-debugging-javascript-automation.md
 
 
 
-### Enhanced data model support
+### Scripting support  
 
-- **Built in data model support** - WinDbg Preview is written with built in data model support and the data model is available through out the debugger.
-- **Model window** - The model window gives you an expandable and browsable version of ‘dx’ and ‘dx -g’, letting you create powerful tables on-top of your NatVis, JavaScript, and LINQ queries. 
+- **Scripting Automation** - Scripting support for avaScript and NatVis allows for the automation of problem ivnestiagtion. For more information, see 
+[Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md).
 
-For more information, see [WinDbg Preview - Data model](windbg-data-model-preview.md).
-
-
-
-### New Scripting development UI 
-
-- **Script development UI** - There is now a purpose built scripting window to make developing JavaScript and NatVis scripts easier, with error highlighting and IntelliSense.
-
-For more information, see [WinDbg Preview - Scripting](windbg-scripting-preview.md).
-
+For general information about working with JavaScript and NatVis, see [WinDbg Preview - Scripting](windbg-scripting-preview.md).
 
 
 

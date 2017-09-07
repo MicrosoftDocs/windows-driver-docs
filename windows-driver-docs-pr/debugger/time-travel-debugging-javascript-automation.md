@@ -1,6 +1,6 @@
 ---
-title: Time Travel Debugging - Working with Trace Files 
-description: This section describes how to work with time travel trace files 
+title: Time Travel Debugging - JavaScript Automation
+description: This section describes how to use JavaScript automation to help analyze TTD traces.
 ms.author: windowsdriverdev
 ms.date: 09/06/2017
 ms.topic: article
@@ -12,25 +12,14 @@ ms.technology: windows-devices
 > The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
 >
 
+# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - JavaScript Automation
 
-# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Recording 
+TBD TBD TBD 
 
-This section describes how to record time travel traces.
 
-TBD
+This section describes how to  use JavaScript automation to help analyze TTD traces.
 
-Traces can be opened after recorded
-
-Need to share the .run file. .idx can be re-built with !index. If you don’t care about how big, share the .idx file. – TBD – What should we recommend people do.
-
-Can be shared between others
-
-Key positions in time 
-"Now, let's say that you suspect there is a bug on a part of the code your coworker knows best. You can take note of what position in time you coworker should navigate to in order to investigate" (pick a previous position) "Then you can share this position with your coworker" 
-"Let me pretend to be your coworker (Close Windbg). I get the trace file from you and I open it. (Open the trace)" 
-"I can pick up debugging exactly where you suggest by navigating to that position. The command for this is !tt x:y"(run command) 
-Successful recorded traces or previously loaded traces can be easily access from your Recents list as well.
-
+*Non-invasive attach*
 
 
 > Additional Content Pending
