@@ -66,6 +66,8 @@ Specifies the type of software installation.
 
 A value of 1 indicates that the associated software is an MSI or EXE binary. When this value is set, the **SoftwareBinary** entry is also required. In current Windows Insiders builds, a value of 2 indicates that the associated software is a Windows Store link.
 
+Note that SoftwareType 1 is not supported on Windows 10 S.
+
 **SoftwareBinary**=*filename*
 
 Specifies the path to the executable.  The system generates command lines like the following:
