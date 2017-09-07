@@ -18,41 +18,22 @@ TBD TBD TBD
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Overview
 
 
-What is Time Travel Debugging?
+## What is Time Travel Debugging?
 
-Time Travel Debugging, is a tool that allows you to record an execution of your process running, then replay it later both forwards and backwards. TTD can help you debug issues easier by letting you "rewind" your debugger session, instead of having to reproduce the issue until you find the bug. In the event you can't figure it out yourself, you can simply share the trace with a co-worker and they can look at exactly what you're looking at! 
+Time Travel Debugging, is a tool that allows you to record an execution of your process running, then replay it later both forwards and backwards. TTD can help you debug issues easier by letting you "rewind" your debugger session, instead of having to reproduce the issue until you find the bug. 
 
-Problem Doman
+TTD has advantages over crash dump files, which often are missing the code execution that led up to the ultimate failure.  
 
-What is a trace? 
-    How big can they get and such
-What is an index - .IDX file and it could be big
+In the event you can't figure it out the issue yourself, you can simply share the trace with a co-worker and they can look at exactly what you're looking at. This can allow for easier collaboration then live debugging, as the recorded instructions are the same, compared to creating a live debugging, where the address locations and code execution will be different on different PCs.
 
-Basics of incompatibilities 
+TTD is lightweight and works to add minimal overhead as it captures code execution in trace files. The performance impact is similar to attaching a non-invasive debugger connection. 
 
+TTD currently supports only user mode operation. 
 
-
-WinDbg Preview is a brand-new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. WinDbg Preview is using the same underlying engine as WinDbg today, so all the commands, extensions, and workflows you're used to will still work as they did before.
-
-Review these topics to install and configure WinDbg Preview.
-
-- [Time Travel Debugging - Recording](time-travel-debugging-recording.md)
-- [Time Travel Debugging - Playback](time-travel-debugging-playback.md)
-- [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-files.md)
-- [Time Travel Debugging - Troubleshooting](time-travel-troubleshooting.md)
-
-These topics describe addtional advanced fucnctionality in time travel debugging. 
-
-> Topic not yet available
-
-- [Time Travel Debugging - Extension commands] time-travel-debugging-extension-commands.md
-- [Time Travel Debugging - JavaScript Automation] time-travel-debugging-javascript-automation.md
-- [Time Travel Debugging - TTDAnalyze] time-travel-debugging-ttdanalyze.md
-- [Time Travel Debugging - Trace File object model] time-travel-debugging-object-model.md
-- [Debugger Object model reference - Time Travel Debugging] debugger-object-model-reference-time-travel-debugging.md
 
 ##  Comparison of Debugging Tools
 
+This table summarizes the pros and cons of the different debugging solutions available.
 
 Approach​ | Pros | Cons​
 |--------|------|-----|
@@ -62,10 +43,47 @@ Approach​ | Pros | Cons​
 | Telemetry & logs​  |Lightweight, often tied to business scenarios / user actions, great increase in value via Kusto & Splunk, machine learning friendly.​  | Issues arise in unexpected code paths (with no telemetry). Lack of data depth, statically compiled into the code. Telemetry is often focused on usage patterns not code patterns.​
 | Time Travel Debugging (TTD)​ | Great at complex bugs, no coding upfront, offline repeatable debugging, analysis friendly, captures everything. | Large overhead at record time. Manual setup. May collect too much data.​ |
 
+## TTD Availablity 
+
+TTD is only available on Windows 10 as part of the WinDbg Preview.  WinDbg Preview is a brand-new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. For more information on downloading WinDbg Preview from the store, see [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md).
+
+
+## Trace file basics 
+
+ How big can they get and such
+What is an index - .IDX file and it could be big
+
+
+## Getting started with TTD
+
+Review these topics to record and playback a trace file as well as for information on working with trace files and troubleshooting.
+
+- [Time Travel Debugging - Recording](time-travel-debugging-recording.md)
+- [Time Travel Debugging - Playback](time-travel-debugging-playback.md)
+- [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-files.md)
+- [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md)
+
+These topics describe addtional advanced fucnctionality in time travel debugging. 
+
+- [Time Travel Debugging - Trace File object model](time-travel-debugging-object-model.md)
+- [Debugger Object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md)
+
+> Topics not yet available pending product support
+
+- [Time Travel Debugging - Extension commands] time-travel-debugging-extension-commands.md
+- [Time Travel Debugging - JavaScript Automation] time-travel-debugging-javascript-automation.md
+- [Time Travel Debugging - TTDAnalyze] time-travel-debugging-ttdanalyze.md
+
+## Basics of incompatibilities 
+
+1
+2
+3
+
 
 ## <span id="providingfeedback"></span>Providing feedback
 
-Your feedback will help guide timt travel development going forward. 
+Your feedback will help guide time travel development priorities going forward. 
 
 - If you have feedback such as a feature that you really want to see or a bug that makes something difficult, use the Feedback Hub.
 
