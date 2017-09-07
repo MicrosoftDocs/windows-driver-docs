@@ -82,7 +82,7 @@ Here are the entries you need to define an INF as an extension INF.
     
     ```
     [DeviceExtensions.NTamd64]
-    %Device.ExtensionDesc% = DeviceExtension_Install, USB\VID_XXXX&PID_XXXX&REV_XXXX
+    %Device.ExtensionDesc% = DeviceExtension_Install, PCI\VEN_XXXX&DEV_XXXX&SUBSYS_XXXXXXXX&REV_XXXX
     ```
 
     Alternatively, the extension INF might list the same hardware ID as the base INF, for instance if the device is already very narrowly targeted, or if the base INF already lists the most specific hardware ID.
@@ -112,7 +112,7 @@ CatalogFile = delta.cat
 %CONTOSO% = DeviceExtensions,NTamd64
 
 [DeviceExtensions.NTamd64]
-%Device.ExtensionDesc% = DeviceExtension_Install, USB\VID_XXXX&PID_XXXX&REV_XXXX
+%Device.ExtensionDesc% = DeviceExtension_Install, PCI\VEN_XXXX&DEV_XXXX&SUBSYS_XXXXXXXX&REV_XXXX
 
 [DeviceExtension_Install]
 ; No changes
@@ -236,7 +236,7 @@ CatalogFile = delta.cat
 %CONTOSO% = DeviceExtensions,NTx86
 
 [DeviceExtensions.NTx86]
-%Device.ExtensionDesc% = DeviceExtension_Install,USB\VID_XXXX&PID_XXXX&REV_XXXX
+%Device.ExtensionDesc% = DeviceExtension_Install,PCI\VEN_XXXX&DEV_XXXX&SUBSYS_XXXXXXXX&REV_XXXX
 
 [DeviceExtension_Install]
 CopyFiles = Filter_CopyFiles
