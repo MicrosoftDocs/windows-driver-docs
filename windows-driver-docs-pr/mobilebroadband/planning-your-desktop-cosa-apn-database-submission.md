@@ -90,8 +90,6 @@ The following settings apply to desktop COSA only. These entries will be used if
 | --- | --- | --- | --- | --- |
 | Data Marketplace support | A true/false string describing whether the profile is supported by the data marketplace. | Optional | If left blank, defaults to "false." | Windows 10, version 1703 and later |
 | SPN | An identifier string for the Service Provider Name (SPN) | Optional | Helps to identify the MO/MVNO's network. If left blank, defaults to empty string and does nothing. | Windows 10, version 1703 and later |
-| PNN | An identifier string for Public Land Mobile Network (PLMN) Network Name | Optional | Identifier string for MVNO. If left blank, defaults to empty string and does nothing. | Windows 10, version 1703 and later |
-| GID1 | An identifier for Group Identifier Level 1 (GID1) | Optional | Identifier string for MVNO. If left blank, defaults to empty string and does nothing. | Windows 10, version 1703 and later |
 | AlwaysOn | Describes whether the connection is always on or not. | Required | If left blank, defaults to "true." | Windows 10, version 1703 |
 | Purpose groups | A string specifying the purposes of the connection by a comma-separated list of GUIDs representing purpose values. | Required | The following purpose values are available: <ul><li>**Internet**</li><li>**MMS**</li><li>**IMS**</li><li>**SUPL**</li><li>**Purchase**</li><li>**Administrative**</li><li>**Application**</li></ul> <p> If left blank, defaults to "Internet."</p> | Windows 10, version 1703 and later |
 | IP Type | A string specifying the network protocol of the connection. | Optional | Possible values: <ul><li>IPv4</li><li>IPv6</li><li>IPv4v6</li></ul> <p>If left blank, defaults to "IPv4."</p> | Windows 10, version 1703 and later |
