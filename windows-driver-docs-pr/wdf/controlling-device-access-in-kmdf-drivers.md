@@ -35,7 +35,7 @@ Physical device objects (PDOs) must have names. Typically, framework-based bus d
 
 On the other hand, a framework-based driver can assign a device name to a device object by calling [**WdfDeviceInitAssignName**](https://msdn.microsoft.com/library/windows/hardware/ff546029). A driver should name a functional device object (FDO), filter device object (filter DO), or PDO only if the driver must support an older application that expects a specific device name, or if the driver belongs to an older driver stack whose architecture requires object names.
 
-Instead of naming FDOs and filter DOs, WDM drivers and framework-based drivers should provide raw mode, without a function driver.
+Instead of naming FDOs and filter DOs, WDM drivers and framework-based drivers should provide device interfaces that applications can access. The operating system obtains a device interface's security descriptor from the device's PDO and from registry entries that a driver package's INF file specifies. A bus driver can provide device interfaces for a PDO if the driver's devices operate in raw mode, without a function driver.
 
 Some drivers must call [**WdfDeviceCreateSymbolicLink**](https://msdn.microsoft.com/library/windows/hardware/ff545939) to create symbolic link names for their devices. For example, a driver might create an [MS-DOS device name](https://msdn.microsoft.com/library/windows/hardware/ff548088) if applications expect to see an MS-DOS name for the device. If your driver creates a symbolic link name for an unnamed FDO or filter DO, the framework associates the symbolic link name with the PDO's name. (Control devices are not associated with a PDO, so your driver cannot create a symbolic link name for an unnamed control device.)
 

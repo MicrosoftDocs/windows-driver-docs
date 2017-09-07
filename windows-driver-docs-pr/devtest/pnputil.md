@@ -16,6 +16,8 @@ PnPUtil (PnPUtil.exe) is a command line tool that lets an administrator perform 
 
 -   Adds a driver package to the [driver store](https://msdn.microsoft.com/library/windows/hardware/ff544868).
 
+-   Installs a driver package on the computer.
+
 -   Deletes a driver package from the driver store.
 
 -   Enumerates the driver packages that are currently in the driver store. Only driver packages that are not in-box packages are listed. An *in-box* driver package is one which is included in the default installation of Windows or its service packs.
@@ -50,7 +52,7 @@ PnPUtil (PnPUtil.exe) is a command line tool that lets an administrator perform 
 
 This section includes the following:
 
-[**PnPUtil Command Syntax**](pnputil-command-syntax.md)
+[PnPUtil Command Syntax](pnputil-command-syntax.md)
 
 [PnPUtil Examples](pnputil-examples.md)
 

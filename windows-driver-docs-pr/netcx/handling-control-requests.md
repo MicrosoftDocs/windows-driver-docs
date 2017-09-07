@@ -103,7 +103,7 @@ The client driver must complete each NETREQUEST that it receives.  Otherwise, th
 If the original request did not contain a large enough buffer, call [**NetRequestSetBytesNeeded**](netrequestsetbytesneeded.md).  To complete a control request and specify only completion status, call [**NetRequestCompleteWithoutInformation**](netrequestcompletewithoutinformation.md) from the OID handler, as shown in the following snippet:
     
 ```cpp
-        NetRequestCompleteWithoutInformation(Request, NDIS_STATUS_INVALID_DATA);
+        NetRequestCompleteWithoutInformation(Request, STATUS_SUCCESS);
 ```
 
 If the original request did contain a large enough buffer, the client driver calls [**NetRequestRetrieveInputOutputBuffer**](NetRequestRetrieveInputOutputBuffer.md) to retrieve the input/output buffer.  Then the client transfers the data and completes the request using one of the following, depending on the request type:

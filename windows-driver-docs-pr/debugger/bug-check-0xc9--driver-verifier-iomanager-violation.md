@@ -110,6 +110,27 @@ When Driver Verifier is active and **I/O Verification** is selected, various I/O
 <td align="left"><p>The driver passed <strong>IoBuildDeviceIoControlRequest</strong> an invalid buffer.</p></td>
 </tr>
 <tr class="even">
+<td align="left"><p>0x10</p></td>
+<td align="left"><p>Current IRQL</p></td>
+<td align="left"><p>Reserved</p></td>
+<td align="left"><p>Reserved</p></td>
+<td align="left"><p>IoCallDriver was called above DISPATCH_LEVEL.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x11</p></td>
+<td align="left"><p>Driver fast I/O dispatch routine address</p></td>
+<td align="left"><p>IRQL before calling driver dispatch routine</p></td>
+<td align="left"><p>Current IRQL</p></td>
+<td align="left"><p>IoCallDriver was called above DISPATCH_LEVEL.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x12</p></td>
+<td align="left"><p>Driver dispatch routine address</p></td>
+<td align="left"><p>IRQL before calling driver dispatch routine</p></td>
+<td align="left"><p>Current IRQL</p></td>
+<td align="left"><p>IoCallDriver was called above DISPATCH_LEVEL.</p></td>
+</tr>
+<tr class="even">
 <td align="left"><p>0x0A</p></td>
 <td align="left"><p>Address of device object</p></td>
 <td align="left"><p>0</p></td>

@@ -904,6 +904,26 @@
       "source_path": "windows-driver-docs-pr/mobilebroadband/submitting-the-cosa-apn-database-update.md",
       "redirect_URL": "/windows-hardware/drivers/mobilebroadband/submitting-the-desktop-cosa-apn-database-update",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/custom-capabilities-for-universal-windows-platform-apps.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/creating-a-custom-capability-to-pair-driver-with-hsa",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/developing-a-universal-windows-platform-app-with-custom-capabilities.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/using-a-custom-capability-to-pair-hsa-with-driver",
+      "redirect_document_id": true
+    },
+        {
+      "source_path": "windows-driver-docs-pr/install/adding-software-components-with-an-inf-file.md",
+      "redirect_URL": "/windows-hardware/drivers/install/using-a-component-inf-file",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/develop/installing-the-enterprise-wdk.md",
+      "redirect_URL": "/windows-hardware/drivers/develop/using-the-enterprise-wdk",
+      "redirect_document_id": true
     }
   ]
 }
