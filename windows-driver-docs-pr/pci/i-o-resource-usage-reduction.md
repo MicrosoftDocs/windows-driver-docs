@@ -21,13 +21,18 @@ Microsoft has implemented support to help reduce the dependence that PCI, PCI-X,
 
 To reduce I/O resource usage, the driver developer must place the following entry in the device driver's INF file.
 
+Win10:
 ```
 [DDInstall.HW]
 Include=pci.inf
 Needs=PciIoSpaceNotRequired.HW
 ```
-
- 
+Win8.1 and earlier:
+```
+[DDInstall.HW]
+Include=machine.inf
+Needs=PciIoSpaceNotRequired
+```
 
  
 
