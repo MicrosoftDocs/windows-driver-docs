@@ -24,6 +24,25 @@ o	Ribbon button
 o	Other TBD windows 
 
 
+0:000> !tt /?
+ tt <position> - Time travel to the given position in the trace.
+                 If <position> is a decimal number between 0 and 100,
+                 it travels to approximately that percent into the trace.
+                 If <position> is #:#, where # are a hexadecimal numbers,
+                 it travels to that position.
+                 If the number after : is omitted, it's defaulted to zero.
+                 If the : is omitted, then the second number must have
+                 precisely 16 hexadecimal digits, with zeros for left-padding.
+
+Examples:
+ tt 0                   - Time travel to the beginning of the trace
+ tt 50                  - Time travel to halfway through the trace
+ tt 100                 - Time travel to the end of the trace
+ tt 1A0:                - Time travel to position 1A0:0
+ tt 1A0:0               - Time travel to position 1A0:0
+ tt 1A0:12F             - Time travel to position 1A0:12F
+ tt 1A0000000000000012F - Time travel to position 1A0:12F
+
 > Additional Content Pending
 
 ---

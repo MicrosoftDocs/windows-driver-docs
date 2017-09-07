@@ -19,8 +19,6 @@ TBD TBD TBD
 
 This section describes how to  use JavaScript automation to help analyze TTD traces.
 
-*Non-invasive attach*
-
 
 > Additional Content Pending
 

@@ -28,7 +28,7 @@ Trace gets recorded
 
 In the dialog you can confirm what we are tracing. You can stop tracing and debug your program, or simply cancel the tracing. (click on stop and debug) As you can see the trace is loaded automatically. And this is the case if your program crashes as well.”
 
-Here is where you work to cause the activty that you wish to anamyze to occur. You may open a problamtic file or click ona specific button in the app to cause the event of interest to occur. Using breakpoint is a common apprroach to pause code execution at the event of interest.
+Here is where you work to cause the activty that you wish to anamyze to occur. You may open a problamtic file or click on a specific button in the app to cause the event of interest to occur. Using breakpoint is a common apprroach to pause code execution at the event of interest.
 
 Once complete, close your app or hit “Stop and debug” – This will kill your process.
 
@@ -39,6 +39,19 @@ Trace will open
 Indexing will happen
 Right after the trace is loaded, our indexing process begins. This allows for complete and faster memory value look ups. This indexing process can take longer for larger trace files.”
 
+Time Travel Position: 10:0
+ntdll!ZwTestAlert+0x14:
+00007ffc`61f789d4 c3              ret
+0:000> !index
+Indexed 1/1 keyframes
+Successfully created the index in 96ms.
+0:000> !tt
+Setting position to the beginning of the trace
+Setting position: 10:0
+(4604.21dc): Break instruction exception - code 80000003 (first/second chance not available)
+Time Travel Position: 10:0
+ntdll!ZwTestAlert+0x14:
+00007ffc`61f789d4 c3              ret
 
 
 
