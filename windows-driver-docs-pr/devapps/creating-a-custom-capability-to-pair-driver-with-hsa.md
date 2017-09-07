@@ -104,7 +104,7 @@ To prepare the SCCD file, first update the custom capability string.  Use the fo
 <AuthorizedEntities>
     <AuthorizedEntity AppPackageFamilyName="MicrosoftHSATest.Microsoft.SDKSamples.Hsa.CPP_q536wpkpf5cy2" CertificateSignatureHash="ca9fc964db7e0c2938778f4559946833e7a8cfde0f3eaa07650766d4764e86c4"></AuthorizedEntity>
 </AuthorizedEntities>
-<Catalog>…</Catalog>
+<Catalog>0000</Catalog>
 </CustomCapabilityDescriptor>
 ```
 
@@ -123,21 +123,17 @@ For testing purposes, a custom capability owner can restrict installation of a h
 To do so, before getting the SCCD signed by Microsoft, add **DeveloperModeOnly**:
 
 ```xml
-<xs:complexType name="CT_CustomCapabilityDescriptor">
-    <xs:sequence>
-    <xs:element ref="CustomCapabilities" minOccurs="1" maxOccurs="1"/>
-    <xs:element ref="AuthorizedEntities" minOccurs="1" maxOccurs="1"/>
-    <xs:element ref="DeveloperModeOnly" minOccurs="0" maxOccurs="1"/>
-    <xs:element ref="Catalog" minOccurs="1" maxOccurs="1"/>
-    <xs:any minOccurs="0"/>
-    </xs:sequence>
-</xs:complexType>
-
-<xs:element name="DeveloperModeOnly">
-    <xs:complexType>
-    <xs:attribute name="Value" type="xs:boolean" use="required"/>
-    </xs:complexType>
-</xs:element>
+<?xml version="1.0" encoding="utf-8"?>
+<CustomCapabilityDescriptor xmlns="http://schemas.microsoft.com/appx/2016/sccd" xmlns:s="http://schemas.microsoft.com/appx/2016/sccd">
+<CustomCapabilities>
+    <CustomCapability Name="microsoft.hsaTestCustomCapability_q536wpkpf5cy2"></CustomCapability>
+</CustomCapabilities>
+<AuthorizedEntities>
+    <AuthorizedEntity AppPackageFamilyName="MicrosoftHSATest.Microsoft.SDKSamples.Hsa.CPP_q536wpkpf5cy2" CertificateSignatureHash="ca9fc964db7e0c2938778f4559946833e7a8cfde0f3eaa07650766d4764e86c4"></AuthorizedEntity>
+</AuthorizedEntities>
+<Catalog>0000/Catalog>
+<DeveloperModeOnly Value="true" />
+</CustomCapabilityDescriptor>
 ```
 
 The resulting signed SCCD works only on devices in [Developer Mode](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development). 
@@ -148,9 +144,114 @@ The following diagram summarizes the sequence described above:
 
 ![Getting an SCCD signed](images/signsccd.png)
 
+## Resouces
+
 ### See Also
 
 * [App capability declarations](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations)
 * [Custom Capability sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomCapability)
 * [Getting Started with Universal Windows drivers](../develop/getting-started-with-universal-drivers.md)
 * [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md)
+
+### SCCD XML Schema
+
+The following is the formal XML XSD schema for a SCCD file.  One should use this schema to validate your SCCD before submitting it for review.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://schemas.microsoft.com/appx/2016/sccd"
+  xmlns:s="http://schemas.microsoft.com/appx/2016/sccd"
+  xmlns="http://schemas.microsoft.com/appx/2016/sccd">
+
+  <xs:element name="CustomCapabilityDescriptor" type="CT_CustomCapabilityDescriptor">
+    <xs:unique name="Unique_CustomCapability_Name">
+      <xs:selector xpath="s:CustomCapabilities/s:CustomCapability"/>
+      <xs:field xpath="@Name"/>
+    </xs:unique>
+  </xs:element>
+
+  <xs:complexType name="CT_CustomCapabilityDescriptor">
+    <xs:sequence>
+      <xs:element ref="CustomCapabilities" minOccurs="1" maxOccurs="1"/>
+      <xs:element ref="AuthorizedEntities" minOccurs="1" maxOccurs="1"/>
+      <xs:element ref="DeveloperModeOnly" minOccurs="0" maxOccurs="1"/>
+      <xs:element ref="Catalog" minOccurs="1" maxOccurs="1"/>
+      <xs:any minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="CustomCapabilities" type="CT_CustomCapabilities" />
+
+  <xs:complexType name="CT_CustomCapabilities">
+    <xs:sequence>
+      <xs:element ref="CustomCapability" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="CustomCapability">
+    <xs:complexType>
+      <xs:attribute name="Name" type="ST_CustomCapability" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="ST_NonEmptyString">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="32767"/>
+      <xs:pattern value="[^\s]|([^\s].*[^\s])"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ST_CustomCapability">
+    <xs:annotation>
+      <xs:documentation>Custom capabilities should be a string in the form of Company.capabilityName_PublisherId</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="ST_NonEmptyString">
+      <xs:pattern value="[A-Za-z0-9][-_.A-Za-z0-9]*_[a-hjkmnp-z0-9]{13}"/>
+      <xs:minLength value="15"/>
+      <xs:maxLength value="255"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="AuthorizedEntities" type="CT_AuthorizedEntities" />
+
+  <xs:complexType name="CT_AuthorizedEntities">
+    <xs:sequence>
+      <xs:element ref="AuthorizedEntity" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="AuthorizedEntity" type="CT_AuthorizedEntity" />
+
+  <xs:complexType name="CT_AuthorizedEntity">
+    <xs:attribute name="CertificateSignatureHash" type="ST_CertificateSignatureHash" use="required"/>
+    <xs:attribute name="AppPackageFamilyName" type="ST_NonEmptyString" use="required"/>
+  </xs:complexType>
+
+  <xs:simpleType name="ST_CertificateSignatureHash">
+    <xs:restriction base="ST_NonEmptyString">
+      <xs:pattern value="[A-Fa-f0-9]+"/>
+      <xs:minLength value="64"/>
+      <xs:maxLength value="64"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="DeveloperModeOnly">
+    <xs:complexType>
+      <xs:attribute name="Value" type="xs:boolean" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Catalog" type="ST_Catalog" />
+
+  <xs:simpleType name="ST_Catalog">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Za-z0-9\+\/\=]+"/>
+      <xs:minLength value="4"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
+```
