@@ -89,8 +89,7 @@ Here are the entries you need to define an INF as an extension INF.
     
     In some cases, the extension INF might provide a less specific device ID, like a compatible ID, in order to customize a setting across a broader set of devices.
 
-5.  Optionally, provide a **TargetComputers** section if you want to constrain which computers this INF can be installed on.  You might do this if you are using extension INFs with less specific hardware IDs or compatible IDs that are applicable to a large number of devices.
-6.  Do not define a service with `SPSVCINST_ASSOCSERVICE`.  However, an extension INF can define other services, such as a filter driver for the device.  For more info about specifying services, see [**INF AddService Directive**](inf-addservice-directive.md).
+5.  Do not define a service with `SPSVCINST_ASSOCSERVICE`.  However, an extension INF can define other services, such as a filter driver for the device.  For more info about specifying services, see [**INF AddService Directive**](inf-addservice-directive.md).
 
 The driver validation and submission process is the same for extension INFs as for regular INFs. For more info, see [Windows HLK Getting Started](https://msdn.microsoft.com/library/windows/hardware/dn915002).
 
