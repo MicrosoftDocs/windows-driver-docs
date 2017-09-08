@@ -12,6 +12,8 @@ ms.technology: windows-devices
 
 # Using the sensor class extension to handle events
 
+> [!IMPORTANT] 
+> This documentation and the geolocation driver sample for Windows 8.1 has been deprecated.
 
 The sensor class extension handles the event-linkage between a sensor driver and the Sensor API.
 
