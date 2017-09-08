@@ -116,9 +116,16 @@ Other utilities that attempt to block memory access, can also be probalatic, for
 
 TTD currently supports only user mode operation, so tracing kernel mode process is not posssible. 
 
+
+### Read only playback
+
+You can travel back in time, but you can't change history. So you can use read memory commands, but you can't use commands that modify or write to memory.
+
+
 ### System Protected Processes
 
 Some Windows system protected processes, such as PPL (Protected Process Light) process are protected, so the TTD can not inject itself into the proteced process to allow for time travel tracing.
+
 
 ### Trace file errors
 
