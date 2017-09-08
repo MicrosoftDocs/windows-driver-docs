@@ -30,6 +30,27 @@ Use a trailing minus sign with the following version of these commands to travel
 | g- | [g (Go)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/g--go-)       |
 
 
+## TBD
+
+```
+Help for undocumented debugger commands:
+  .time [-s]                      - Display time travel position and system
+                                    time variables.  Use -s to specify only
+                                    the current thread (short form).
+  bt <position>                   - Set a time breakpoint.
+  g- [BreakAddr [; BreakCmds]]    - Execute backward.
+  g-t <position>                  - Execute backward and break on <position>.
+  gt <position>                   - Execute foward and break on <position> .
+  [~Thread] p- [count] ["Command"] - Reverse step over.
+  [~Thread] p-a <addr>             - Reverse step to address.
+  [~Thread] p-c [count]            - Reverse step over to (previous) call.
+  [~Thread] t- [count] ["Command"] - Reverse step into.
+  [~Thread] t-a <addr>             - Reverse step to address.
+  [~Thread] t-c [count]            - Reverse step into to (previous) call.
+
+```
+
+
 ## Ribbon button time travel navigation
 
 Alternatively use the ribbon buttons to navigate in the trace.
@@ -69,6 +90,34 @@ Setting position: 10:0
 Time Travel Position: 10:0
 ntdll!ZwTestAlert+0x14:
 00007ffc`61f789d4 c3              ret
+```
+
+```
+0:000> !ttdext.tt E:0
+Setting position: E:0
+(1a04.3bd0): Break instruction exception - code 80000003 (first/second chance not available)
+Time Travel Position: E:0
+ntdll!ZwSetInformationWorkerFactory+0x14:
+00007ff9`31ed0894 c3              ret
+0:000> p
+Time Travel Position: E:1
+ntdll!TpAdjustBindingCount+0x49:
+00007ff9`31e887ed ebd4            jmp     ntdll!TpAdjustBindingCount+0x1f (00007ff9`31e887c3)
+0:000> p
+Time Travel Position: E:2
+ntdll!TpAdjustBindingCount+0x1f:
+00007ff9`31e887c3 4883c428        add     rsp,28h
+0:000> p
+Time Travel Position: E:4
+    could step in/over inline function frames ...
+01 000000e4`d1c8f110 00007ff9`31e8668a ntdll!TppInitializeTimer+0x54 [minkernel\threadpool\ntdll\timer.c @ 1411] 
+ntdll!TppInitializeTimer+0x54:
+00007ff9`31e8875c 4883a3f000000000 and     qword ptr [rbx+0F0h],0 ds:0000027c`e87065f0=0000000000000000
+0:000> p
+Time Travel Position: E:5
+ntdll!TppInitializeTimer+0x5c:
+00007ff9`31e88764 4088b361010000  mov     byte ptr [rbx+161h],sil ds:0000027c`e8706661=00
+
 ```
 
 

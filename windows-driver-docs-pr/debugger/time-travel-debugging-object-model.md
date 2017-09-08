@@ -24,6 +24,7 @@ For more information about objects see these topics:
 [Debugger Object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md)
 
 T1
+
 T2
 
 ## Querying a Time Travel Trace – dx namespaces and commands

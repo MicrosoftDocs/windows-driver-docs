@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Overview
 description: This section describes time travel debugging.
 ms.author: windowsdriverdev
-ms.date: 09/07/2017
+ms.date: 09/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,9 +22,7 @@ TBD TBD TBD
 
 Time Travel Debugging, is a tool that allows you to record an execution of your process running, then replay it later both forwards and backwards. TTD can help you debug issues easier by letting you "rewind" your debugger session, instead of having to reproduce the issue until you find the bug. 
  
--or parts of this ...-
-
-Time Travel Debugging (TTD) is a solution that allows you to record the execution of an app or process, then replay it going both forwards and backwards. Today's debuggers typically allow you to start at specific point in time and only go forward. TTD allows you to go back in time to better understand the conditions that lead up to the bug and replay it multiple times to learn how best to fix the problem. 
+TTD allows you to go back in time to better understand the conditions that lead up to the bug and replay it multiple times to learn how best to fix the problem. 
 
 TTD can have advantages over crash dump files, which often are missing the code execution that led up to the ultimate failure.  
 

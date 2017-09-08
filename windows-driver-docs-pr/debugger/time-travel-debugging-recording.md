@@ -73,7 +73,7 @@ Successfully created the index in 96ms.
 ```
 
 
-
+# Notes - TBD
 
 Command line version: 
 
@@ -147,21 +147,6 @@ Help for Time Travel Debugging Extensions
 Note: Input all address and position values in HEX format.  Size must be a
       a decimal value between 1 and 8.
 
-
-Help for undocumented debugger commands:
-  .time [-s]                      - Display time travel position and system
-                                    time variables.  Use -s to specify only
-                                    the current thread (short form).
-  bt <position>                   - Set a time breakpoint.
-  g- [BreakAddr [; BreakCmds]]    - Execute backward.
-  g-t <position>                  - Execute backward and break on <position>.
-  gt <position>                   - Execute foward and break on <position> .
-  [~Thread] p- [count] ["Command"] - Reverse step over.
-  [~Thread] p-a <addr>             - Reverse step to address.
-  [~Thread] p-c [count]            - Reverse step over to (previous) call.
-  [~Thread] t- [count] ["Command"] - Reverse step into.
-  [~Thread] t-a <addr>             - Reverse step to address.
-  [~Thread] t-c [count]            - Reverse step into to (previous) call.
 
 
 
