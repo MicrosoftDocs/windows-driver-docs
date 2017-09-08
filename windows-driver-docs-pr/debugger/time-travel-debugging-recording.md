@@ -27,12 +27,12 @@ To record a TTD trace, follow these steps.
 ![Screen shot of WinDbg Preview showing start recording checkbox](images/ttd-start-recording.png)
 
 > [!NOTE]
-> The UI shown here is preliminary and will likley change. Updated information will be provided in a later release of the documentation. 
+> The UI shown here is preliminary and will likely change. Updated information will be provided in a later release of the documentation. 
 >
 
 3. Click **OK** to launch the executable and start tracing. 
 
-4. The recording dialog appears indicatting the trace is being recorded.
+4. The recording dialog appears indicating the trace is being recorded.
 
 ![TTD recording popup showing stop and debug as well as cancel options](images/ttd-recording-pop-up.png)
 
@@ -43,11 +43,11 @@ When the recording dialog box is being displayed you can:
 
 As you can see the trace is loaded automatically. And this is the case if your program crashes as well.
 
-When the application terminates the trace file will be closed and written out to disk.
+When the application terminates, the trace file will be closed and written out to disk.
 
-Here is where you work to cause the activty that you wish to analyze to occur. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
+Here is where you work to cause the activity that you wish to analyze to occur. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
 
-Using breakpoints is a common apprroach to pause code execution at the event of interest.
+Using breakpoints is a common approach to pause code execution at the event of interest.
 
 Once complete, close your app or hit “Stop and debug” – This will kill your process.
 

@@ -40,7 +40,7 @@ Help for undocumented debugger commands:
   bt <position>                   - Set a time breakpoint.
   g- [BreakAddr [; BreakCmds]]    - Execute backward.
   g-t <position>                  - Execute backward and break on <position>.
-  gt <position>                   - Execute foward and break on <position> .
+  gt <position>                   - Execute forward and break on <position> .
   [~Thread] p- [count] ["Command"] - Reverse step over.
   [~Thread] p-a <addr>             - Reverse step to address.
   [~Thread] p-c [count]            - Reverse step over to (previous) call.
@@ -59,7 +59,7 @@ Alternatively use the ribbon buttons to navigate in the trace.
 
 ## Use the !tt extension to travel in time
 
-Provide a time postion in any of the following formats to travel to that point in time.
+Provide a time position in any of the following formats to travel to that point in time.
 
 !tt <position> - Time travel to the given position in the trace.
            
@@ -69,7 +69,7 @@ Provide a time postion in any of the following formats to travel to that point i
     - !tt 100                 - Time travel to the end of the trace
  
 
-- If <position> is #:#, where # are a hexadecimal numbers,it travels to that position. If the number after : is omitted, it's defaulted to zero.
+- If <position> is #:#, where # are a hexadecimal numbers, it travels to that position. If the number after : is omitted, it's defaulted to zero.
     - !tt 1A0:                - Time travel to position 1A0:0
     - !tt 1A0:0               - Time travel to position 1A0:0
     - !tt 1A0:12F             - Time travel to position 1A0:12F
