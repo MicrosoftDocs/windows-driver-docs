@@ -46,7 +46,7 @@ In NetAdapterCx version 1.1, this method replaced the previous **NetRxQueueConfi
 
   1. Set the **AllocationSize** and **AlignmentRequirement** members of [**NET_RXQUEUE_CONFIG**](net-rxqueue-config.md).
   2. Allocate a [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG](net-rxqueue-dma-allocator-config.md) structure.
-  3. Call [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT](net-rxqueue-dma-allocator-config-init.md) with the NET_RXQUEUE_DMA_ALLOCATOR_CONFIG structure and a DMA enabler object retrieved from the callback's *Adapter* input parameter.
+  3. Call [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT](net-rxqueue-dma-allocator-config-init.md) with the NET_RXQUEUE_DMA_ALLOCATOR_CONFIG structure and a DMA enabler object retrieved from the NETADAPTER's context.
   4. Call **NetRxQueueInitSetDmaAllocatorConfig** with the initialized NET_RXQUEUE_DMA_ALLOCATOR_CONFIG structure.
 
 NetAdapterCx then uses the queue's DMA enabler to allocate pre-mapped buffers for each packet in the queue's [**NET_RING_BUFFER**](net-ring-buffer.md) structure, and updates the **VirtualAddress** and **DmaLogicalAddress** members of each [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) to point to each premapped buffer.

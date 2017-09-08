@@ -39,7 +39,7 @@ If a client driver chose to let NetAdapterCx manage the receive buffer in versio
 
 Client driver can also now query whether DMA allocator cache is enabled with the new [NetRxQueueQueryAllocatorCacheEnabled](netrxqueuequeryallocatorcacheenabled.md) method.
 
-To improve performance in the receive queue, client drivers can now optionally call the [NetRxQueueGetBufferLayoutHint](netrxqueuegetbufferlayouthint.md) method to precalculate receive buffer padding and alignment.
+To improve performance in the receive queue, client drivers can also now optionally call the [NetRxQueueGetBufferLayoutHint](netrxqueuegetbufferlayouthint.md) method to precalculate receive buffer padding and alignment.
 
 ## API and data structure changes
 
