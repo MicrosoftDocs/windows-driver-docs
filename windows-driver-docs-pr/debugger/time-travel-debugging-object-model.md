@@ -1,8 +1,8 @@
 ---
 title: Time Travel Debugging - Object Model
-description: This section describes how to record time travel traces.
+description: This section describes how to use the data model to query time travel traces. 
 ms.author: windowsdriverdev
-ms.date: 09/06/2017
+ms.date: 09/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,6 +28,18 @@ T1
 T2
 
 ## Querying a Time Travel Trace – dx namespaces and commands
+
+
+The Lifetime, Threads and Events TTD objects are associated with the current process (curprocess). Use the dx command to view these TTD Objects.
+
+```
+0:000> dx @$curprocess.TTD 
+@$curprocess.TTD  
+    Lifetime         : [97:0, 113:0]
+    Threads         
+    Events          
+```
+
 
 Use dx to query for what you are looking for. 
 

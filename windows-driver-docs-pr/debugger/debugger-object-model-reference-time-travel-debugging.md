@@ -1,5 +1,5 @@
 ---
-title: [Debugger Object model reference - Time Travel Debugging
+title: Debugger Object model reference - Time Travel Debugging
 description: This section describes the debugger model objects associated with time travel debugging.
 ms.author: windowsdriverdev
 ms.date: 09/08/2017
@@ -17,7 +17,7 @@ ms.technology: windows-devices
 
 This section describes the debugger model objects associated with time travel debugging.
 
-The Lifetime, Threads and Events TTD objects are associated with the current process (curprocess). Use the dx command to view these TTD Objects
+The Lifetime, Threads and Events TTD objects are associated with the current process (curprocess). Use the dx command to view these TTD Objects.
 
 ```
 0:000> dx @$curprocess.TTD 

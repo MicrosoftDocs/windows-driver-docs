@@ -14,8 +14,6 @@ ms.technology: windows-devices
 
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Recording 
 
-TBD TBD TBD 
-
 This section describes how to record time travel traces.
 
 To record a TTD trace, follow these steps.
@@ -36,22 +34,20 @@ To record a TTD trace, follow these steps.
 
 ![TTD recording popup showing stop and debug as well as cancel options](images/ttd-recording-pop-up.png)
 
-When the recording dialog box is being displayed you can:
+5. When the recording dialog box is being displayed you can:
 
 - Stop tracing and debug your program. 
-- Cancel the tracing. This option does 
+- Cancel the tracing. This option does not TBD.
 
-As you can see the trace is loaded automatically. And this is the case if your program crashes as well.
+    Here is where you work to cause the activity that you wish to analyze to occur. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
 
-When the application terminates, the trace file will be closed and written out to disk.
+    TBD - Need to test focus of UI and console apps to better clarify the intended experience.
 
-Here is where you work to cause the activity that you wish to analyze to occur. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
+    Using breakpoints is a common approach to pause code execution at the event of interest.
 
-Using breakpoints is a common approach to pause code execution at the event of interest.
+6. Once complete, close your app or hit “Stop and debug” – This will kill your process.
 
-Once complete, close your app or hit “Stop and debug” – This will kill your process.
-
-5. When the trace file is closed, indexing will happen automatically as shown in the output below.
+7. When the application terminates, the trace file will be closed and written out to disk. This is the case if your program crashes as well.
 
 ```
 Time Travel Position: 6D1:0
@@ -61,7 +57,7 @@ ntdll!ZwTerminateProcess+0x12:
 Successfully created the index in 0ms.
 ```
 
-Right after the trace is loaded, the indexing process begins. Indexing allows for complete and faster memory value look ups. This indexing process will take longer for larger trace files.
+8. When the trace file is closed, indexing will happen automatically as shown in the output below. Indexing allows for complete and faster memory value look ups. This indexing process will take longer for larger trace files.
 
 ```
 Time Travel Position: 10:0
@@ -71,8 +67,6 @@ ntdll!ZwTestAlert+0x14:
 Indexed 1/1 keyframes
 Successfully created the index in 96ms.
 ```
-
-
 
 
 > Additional Content Pending
