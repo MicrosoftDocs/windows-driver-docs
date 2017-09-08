@@ -29,36 +29,6 @@ Use a trailing minus sign with the following version of these commands to travel
 | p- | [p (Step)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/p--step-)   |
 | g- | [g (Go)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/g--go-)       |
 
-
-## TBD
-
-```
-Help for undocumented debugger commands:
-  .time [-s]                      - Display time travel position and system
-                                    time variables.  Use -s to specify only
-                                    the current thread (short form).
-  bt <position>                   - Set a time breakpoint.
-  g- [BreakAddr [; BreakCmds]]    - Execute backward.
-  g-t <position>                  - Execute backward and break on <position>.
-  gt <position>                   - Execute forward and break on <position> .
-  [~Thread] p- [count] ["Command"] - Reverse step over.
-  [~Thread] p-a <addr>             - Reverse step to address.
-  [~Thread] p-c [count]            - Reverse step over to (previous) call.
-  [~Thread] t- [count] ["Command"] - Reverse step into.
-  [~Thread] t-a <addr>             - Reverse step to address.
-  [~Thread] t-c [count]            - Reverse step into to (previous) call.
-
-```
-
-
-| Command | Description |
-|---------|---------------------------------------------------------------------------|
-!position | Displays the current position of the trace  
-!events   | Opens a command tree window with a list of events in the trace file.  
-!search   | Searches trace similar to ba but can be used for registers see TTT-Search  
-
-
-
 ## Ribbon button time travel navigation
 
 Alternatively use the ribbon buttons to navigate in the trace.
@@ -85,26 +55,6 @@ Provide a time position in any of the following formats to travel to that point 
 - If the : is omitted, then the second number must have precisely 16 hexadecimal digits, with zeros for left-padding.
     - !tt 1A0000000000000012F - Time travel to position 1A0:12F
 
-
-0:000> !tt.help
-TtdExt - This extension provides commands, model types and model objects
-         to allow the user to interact with a loaded Time Travel Debugging
-         trace.
-
- positions - Displays all the active threads, including their current positions.
- index        - Run an indexing pass over the current trace.
-                If the current trace is already indexed, this does nothing.
- index status - Reports the status of the trace index
-
-
-TBD
-
-```
-0:000> !tt.positions
->Thread ID=0x4164 - Position: 97:4
- Thread ID=0x4C8C - Position: F2:0
- Thread ID=0x1E08 - Position: F3:0
-```
 
 
 ## Example TTD Playback
@@ -143,14 +93,63 @@ ntdll!TppInitializeTimer+0x54:
 This outputs shows using the p- command to travel backwards in a TTD trace. 
 
 ```
-TDB
-
+0:000> p-
+Time Travel Position: E:3
+ntdll!TpAdjustBindingCount+0x23:
+00007ff9`31e887c7 c3              ret
+0:000> p-
+Time Travel Position: E:1
+ntdll!TpAdjustBindingCount+0x49:
+00007ff9`31e887ed ebd4            jmp     ntdll!TpAdjustBindingCount+0x1f (00007ff9`31e887c3)
+0:000> p-
+TTD: Start of trace reached.
+(1a04.3bd0): Break instruction exception - code 80000003 (first/second chance not available)
+Time Travel Position: E:0
+ntdll!ZwSetInformationWorkerFactory+0x14:
+00007ff9`31ed0894 c3              ret
 ```
 
 
-# Notes - TBD
+## TTD !tt Extension Command
+
+Use the following !tt extension commands to work with TTD traces.
 
 
+### !tt.positions
+
+Use !tt.*positions* to display all the active threads, including their current positions.
+
+```
+0:000> !tt.positions
+>Thread ID=0x4164 - Position: 97:4
+ Thread ID=0x4C8C - Position: F2:0
+ Thread ID=0x1E08 - Position: F3:0
+```
+
+### !tt.index
+
+Use !tt.*index* to run an indexing pass over the current trace. If the current trace is already indexed, this does nothing.
+
+```
+0:000> !tt.index
+Successfully created the index in 0ms.
+```
+
+### !tt.index status
+
+Use !tt.index status to report the status of the trace index.
+
+```
+0:000> !tt.index status
+Index file loaded.
+```
+
+
+# Notes - TBD !tt
+
+TBD - Determine which addtional options to describe.
+
+```
 Help for Time Travel Debugging Extensions
   activitytree [all|<guid>] - Display the E2E activity tree.
   cmp <p1> <p2>     - Show the execution order relationship between two
@@ -197,11 +196,36 @@ Help for Time Travel Debugging Extensions
                                     Note that all debug output events remain visible in the '!events' command,
                                     regardless of this setting
 
-Note: Input all address and position values in HEX format.  Size must be a
-      a decimal value between 1 and 8.
+Note: Input all address and position values in HEX format.  Size must be a a decimal value between 1 and 8.
+
+```
+
+## !idna extension
+
+```
+Help for undocumented debugger commands:
+  .time [-s]                      - Display time travel position and system
+                                    time variables.  Use -s to specify only
+                                    the current thread (short form).
+  bt <position>                   - Set a time breakpoint.
+  g- [BreakAddr [; BreakCmds]]    - Execute backward.
+  g-t <position>                  - Execute backward and break on <position>.
+  gt <position>                   - Execute forward and break on <position> .
+  [~Thread] p- [count] ["Command"] - Reverse step over.
+  [~Thread] p-a <addr>             - Reverse step to address.
+  [~Thread] p-c [count]            - Reverse step over to (previous) call.
+  [~Thread] t- [count] ["Command"] - Reverse step into.
+  [~Thread] t-a <addr>             - Reverse step to address.
+  [~Thread] t-c [count]            - Reverse step into to (previous) call.
+
+```
 
 
-
+| Command | Description |
+|---------|---------------------------------------------------------------------------|
+!position | Displays the current position of the trace  
+!events   | Opens a command tree window with a list of events in the trace file.  
+!search   | Searches trace similar to ba but can be used for registers see TTT-Search  
 
 
 > Additional Content Pending

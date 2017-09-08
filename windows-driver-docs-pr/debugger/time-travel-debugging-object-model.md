@@ -29,8 +29,28 @@ T2
 
 ## Querying a Time Travel Trace – dx namespaces and commands
 
-TBD
+Use dx to query for what you are looking for. 
 
+Examples:
+- Querying for exceptions:
+
+```
+dx @$curprocess.TTD.Events.Where(t => t.Type == "Exception").Select(e => e.Exception) 
+
+```
+
+- Querying for the load event(s) of a particular module
+```
+
+```
+dx @$curprocess.TTD.Events.Where(t => t.Type == "ModuleLoaded").Where(t => t.Module.Name.Contains("ntdll.dll")) 
+```
+- Querying for the threads that get created
+
+```
+dx -g @$curprocess.TTD.Events.Where(t => t.Type == "ThreadCreated").Select(t => t.Thread) 
+
+```
 
 ##	Overview of namespaces and querying call-outs
 

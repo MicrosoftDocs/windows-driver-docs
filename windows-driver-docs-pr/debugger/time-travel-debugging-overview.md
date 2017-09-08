@@ -12,9 +12,6 @@ ms.technology: windows-devices
 > The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
 >
 
-TBD TBD TBD
-
-
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Overview
 
 
