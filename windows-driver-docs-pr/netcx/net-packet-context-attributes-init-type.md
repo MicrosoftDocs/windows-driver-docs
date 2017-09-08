@@ -42,32 +42,28 @@ Before calling NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE, you must first declare a
 
 ## Example
 
-In this example, the client driver defines a packet context called **XYZ** for its XYZ subsustem, then invokes the [NET_PACKET_DECLARE_CONTEXT_TYPE_WITH_NAME](net-packet-declare-context-type-with-name.md) macro to register the structure and specify that the context accessor method will be named **GetXyzContext**.
+In this example, the client driver defines a packet context called **MY_TCB** for its transmit queue, then invokes the [NET_PACKET_DECLARE_CONTEXT_TYPE_WITH_NAME](net-packet-declare-context-type-with-name.md) macro to register the structure and specify that the context accessor method will be named **GetMyTcbFromPacket**.
+
+**MY_TCB** is a simple packet context that contains a hardware descriptor for this example client's NIC. TCB stands for Transmit Control Block, indicating that this example context would be used for assistance in transmit operations.
 
 ```cpp
 // in global space
 
-typedef struct _XYZ{
-    XYZ abc;
-    XYZ abc;
-    XYZ abc;
-} XYZ, *PXYZ;
+typedef struct _MY_TCB{
+    MY_TX_DESC  *TxDesc;
+} MY_TCB;
 
-NET_PACKET_DECLARE_CONTEXT_TYPE_WITH_NAME(XYZ, GetXyzContext);
+NET_PACKET_DECLARE_CONTEXT_TYPE_WITH_NAME(MY_TCB, GetMyTcbFromPacket);
 ```
 
-Then, in a function, the example driver allocates a [NET_PACKET_CONTEXT_ATTRIBUTES](net-packet-context-attributes.md) structure and calls [NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE](net-packet-context-attributes-init-type.md) to initialize it with the **XYZ** type.
+Then, in its [EVT_NET_ADAPTER_CREATE_TXQUEUE](evt-net-adapter-create-txqueue.md) callback, the example driver allocates a [NET_PACKET_CONTEXT_ATTRIBUTES](net-packet-context-attributes.md) structure and calls [NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE](net-packet-context-attributes-init-type.md) to initialize it with the **MY_TCB** type.
 
 ```cpp
-// in a function
-
 ...
 
 NET_PACKET_CONTEXT_ATTRIBUTES packetContextAttributes;
-NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE(&packetContextAttributes, XYZ);
+NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE(&packetContextAttributes, MY_TCB);
 ```
-
-This procedure can be repeated as many times as needed for each driver subsystem that requires a unique packet context.
 
 ## Requirements
 

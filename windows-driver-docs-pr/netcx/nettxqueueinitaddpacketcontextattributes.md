@@ -13,7 +13,7 @@ ms.technology: windows-devices
 
 # NetTxQueueInitAddPacketContextAttributes method
 
-The **NetTxQueueInitAddPacketContextAttributes** method appends an initialized [NET_PACKET_CONTEXT_ATTRIBUTES](net-packet-context-attributes.md) structure to a transmit queue's packet context space.
+The **NetTxQueueInitAddPacketContextAttributes** method adds an initialized [NET_PACKET_CONTEXT_ATTRIBUTES](net-packet-context-attributes.md) structure to a transmit queue's packet context space.
 
 ## Syntax
 

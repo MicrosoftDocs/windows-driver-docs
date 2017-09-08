@@ -13,7 +13,7 @@ ms.technology: windows-devices
 
 # NetRxQueueInitAddPacketContextAttributes method
 
-The **NetRxQueueInitAddPacketContextAttributes** method appends an initialized [NET_PACKET_CONTEXT_ATTRIBUTES](net-packet-context-attributes.md) structure to a receive queue's packet context space.
+The **NetRxQueueInitAddPacketContextAttributes** method adds an initialized [NET_PACKET_CONTEXT_ATTRIBUTES](net-packet-context-attributes.md) structure to a receive queue's packet context space.
 
 ## Syntax
 

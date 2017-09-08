@@ -59,11 +59,13 @@ Next, the client calls [**NetRxQueueCreate**](netrxqueuecreate.md) to allocate a
 
 To retrieve the ring buffer associated with a given queue, call [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md).
 
->[!TIP]
-> This example uses DMA allocation for the receive queue. It is assumed that the example code previously declared a context for its NETADAPTER object and included a WDFDMAENABLER object in the context, which will now be retrieved in **EvtAdapterCreateRxQueue** to be used for receive buffer DMA allocation. For more info about receive queue DMA allocation, see [NetRxQueueInitSetDmaAllocatorConfig](netrxqueueinitsetdmaallocatorconfig.md).
-
 Example
 -----
+
+>[!TIP]
+> This example uses DMA allocation for the receive queue. It is assumed that the example code previously declared a context for its NETADAPTER object and included a WDFDMAENABLER object in the context, which will now be retrieved in **EvtAdapterCreateRxQueue** to be used for receive buffer DMA allocation. For more info about receive queue DMA allocation, see [NetRxQueueInitSetDmaAllocatorConfig](netrxqueueinitsetdmaallocatorconfig.md).
+>
+> Error handling code has been excised from this example for brevity and clarity.
 
 ```cpp
 NTSTATUS
@@ -107,7 +109,7 @@ EvtAdapterCreateRxQueue(
 
     // Create the receive queue
 
-    NTSTATUS status = NetRxQueueCreate(
+    status = NetRxQueueCreate(
         rxQueueInit,
         &rxAttributes,
         &rxConfig,

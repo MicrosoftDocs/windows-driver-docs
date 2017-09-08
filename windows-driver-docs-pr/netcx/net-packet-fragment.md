@@ -45,20 +45,26 @@ Members
 This bit field value specifies whether this is the last fragment in the current packet.  If it is not set, use **NET_PACKET_FRAGMENT_GET_NEXT** to get the next fragment in the chain.
 
 **LastPacketOfChain**  
-Reserved.
+Reserved.  
 Client drivers must not read or write to this value.
 
 **Reserved**  
-Reserved.
+Reserved.  
 Client drivers must not read or write to this value.
 
 **NextFragment_Reserved**  
-Reserved.
+Reserved.  
 Client drivers must not read or write to this value.
 
-
 **Mapping**  
-TBD
+A union that contains information for DMA.
+
+**Mdl**  
+For transmit queues, a pointer to an MDL to be used for scatter/gather DMA.
+
+For receive queues, this member is not used.
+
+Do not modify this value.
 
 **DmaLogicalAddress**  
 For receive queues, contains a mapped DMA address that can be used to program NIC hardware.
@@ -66,6 +72,10 @@ For receive queues, contains a mapped DMA address that can be used to program NI
 For transmit queues, cast this value to an MDL pointer.
 
 Do not modify this value.
+
+**AsInteger**  
+Reserved.  
+Client drivers must not read or write to this value.
 
 **VirtualAddress**  
 Points to the start of the packet buffer. This address is mapped into the system address space.
