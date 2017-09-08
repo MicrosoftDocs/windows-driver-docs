@@ -26,7 +26,7 @@ TTD allows you to go back in time to better understand the conditions that lead 
 
 TTD can have advantages over crash dump files, which often are missing the code execution that led up to the ultimate failure.  
 
-In the event you can't figure out the issue yourself, you can simply share the trace with a co-worker and they can look at exactly what you're looking at. This can allow for easier collaboration then live debugging, as the recorded instructions are the same, where the address locations and code execution will be different on different PCs. You can also share a specific point in time to help your colaborator figure out where to start. 
+In the event you can't figure out the issue yourself, you can simply share the trace with a co-worker and they can look at exactly what you're looking at. This can allow for easier collaboration then live debugging, as the recorded instructions are the same, where the address locations and code execution will be different on different PCs. You can also share a specific point in time to help your collaborator figure out where to start. 
 
 TTD is lightweight and works to add minimal overhead as it captures code execution in trace files. The performance impact is similar to attaching a non-invasive debugger connection. 
 
@@ -37,14 +37,14 @@ This table summarizes the pros and cons of the different debugging solutions ava
 
 Approach​ | Pros | Cons​
 |---------|------|-------|
-| Getting a local repro (or a repro in a controlled environment)​  |Access to all the familiar tools in a familiar setting.  | Time consuming, not always possible to get a local repro, addtional data may be needed for the repro.​ 
+| Getting a local repro (or a repro in a controlled environment)​  |Access to all the familiar tools in a familiar setting.  | Time consuming, not always possible to get a local repro, additional data may be needed for the repro.​ 
 | WinDbg - Live debugging | Interactive experience, sees flow of execution, can change target state, familiar tool in familiar setting.​ | Disrupts the user experience, may require effort to reproduce the issue repeatedly, may impact security, not always an option.​
 | Dumps​ | No coding upfront, low-intrusiveness, based on triggers.  | Successive snapshot or live dumps provide a simple “over time” view. Overhead is essentially zero if not used.​  | Often no pre-defect state, limited data, many developers struggle to root cause after the fact.​  | 
 | Telemetry & logs​  |Lightweight, often tied to business scenarios / user actions, machine learning friendly.​  | Issues arise in unexpected code paths (with no telemetry). Lack of data depth, statically compiled into the code. Telemetry is often focused on usage patterns not code patterns.​
 | Time Travel Debugging (TTD)​ | Great at complex bugs, no coding upfront, offline repeatable debugging, analysis friendly, captures everything. | Large overhead at record time. May collect more data that is needed. Data files can become large.​ |
 
 
-## TTD Availablity 
+## TTD Availability 
 
 TTD is available on Windows 10 as part of the WinDbg Preview.  WinDbg Preview is a brand-new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, with built in support for the extensible debugger data model. For more information on downloading WinDbg Preview from the store, see [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md).
 
@@ -59,9 +59,9 @@ Trace file can get big and the user of TTD is responsible to make sure that ther
 
 As the trace occurs a .RUN file is used to store the code execution. 
 
-Once the tracing is stoped and index (.IDX) file is created to allow for faster access to the trace information.
+Once the tracing is stopped and index (.IDX) file is created to allow for faster access to the trace information.
 
-IDX files can also be large, typically <TBD> size larger then the .RUN file.  
+IDX files can also be large, typically <TBD> size larger than the .RUN file.  
 
 You can recreated the index file from the . RUN file using this command
 
@@ -71,7 +71,7 @@ You can recreated the index file from the . RUN file using this command
 
 Recording errors and other recording output is written to an .out file.
 
-All of the output files are stored in the users document folder. For example for User1, the TTD files would be stored here:
+All of the output files are stored in the users document folder. For example, for User1 the TTD files would be stored here:
 
 ```
 C:\Users\User1\Documents
@@ -88,7 +88,7 @@ Review these topics to record and playback a trace file as well as for informati
 - [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-files.md)
 - [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md)
 
-These topics describe addtional advanced fucnctionality in time travel debugging. 
+These topics describe additional advanced functionality in time travel debugging. 
 
 - [Time Travel Debugging - Trace File object model](time-travel-debugging-object-model.md)
 - [Debugger Object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md)
@@ -103,28 +103,28 @@ These topics describe addtional advanced fucnctionality in time travel debugging
 ## Things to look out for 
 
 
-### Anti virus incompatibilities 
+### Anti-virus incompatibilities 
 
 Because of how TTD hooks into process, there can be  incompatibilities that arise. Typically issues arise with anti-virus or other system software that is attempting to track and shadow system memory calls. 
 
-If you run into issues of <TBD> type or see <TBD> message, try temporaily unloading any anti-virus software to deteremin if that is the cause.  
+If you run into issues of <TBD> type or see <TBD> message, try temporarily unloading any anti-virus software to determine if that is the cause.  
 
-Other utilities that attempt to block memory access, can also be probalatic, for example, the Microsoft Enhanced Mitigation Experience Toolkit. For more information about EMET, see [The Enhanced Mitigation Experience Toolkit](https://support.microsoft.com/en-us/help/2458544/the-enhanced-mitigation-experience-toolkit).
+Other utilities that attempt to block memory access, can also be problematic, for example, the Microsoft Enhanced Mitigation Experience Toolkit. For more information about EMET, see [The Enhanced Mitigation Experience Toolkit](https://support.microsoft.com/en-us/help/2458544/the-enhanced-mitigation-experience-toolkit).
 
 
 ### User mode only
 
-TTD currently supports only user mode operation, so tracing kernel mode process is not posssible. 
+TTD currently supports only user mode operation, so tracing kernel mode process is not possible. 
 
 
 ### Read only playback
 
-You can travel back in time, but you can't change history. So you can use read memory commands, but you can't use commands that modify or write to memory.
+You can travel back in time, but you can't change history. You can use read memory commands, but you can't use commands that modify or write to memory.
 
 
 ### System Protected Processes
 
-Some Windows system protected processes, such as PPL (Protected Process Light) process are protected, so the TTD can not inject itself into the proteced process to allow for time travel tracing.
+Some Windows system protected processes, such as PPL (Protected Process Light) process are protected, so the TTD cannot inject itself into the protected process to allow for time travel tracing.
 
 
 ### Trace file errors
@@ -148,7 +148,7 @@ For general information about the debugger data model, see [WinDbg Preview - Dat
 
 ### Scripting support  
 
-- **Scripting Automation** - Scripting support for avaScript and NatVis allows for the automation of problem ivnestiagtion. For more information, see 
+- **Scripting Automation** - Scripting support for JavaScript and NatVis allows for the automation of problem investigation. For more information, see 
 [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md).
 
 For general information about working with JavaScript and NatVis, see [WinDbg Preview - Scripting](windbg-scripting-preview.md).
