@@ -87,6 +87,7 @@ Review these topics to record and playback a trace file as well as for informati
 - [Time Travel Debugging - Playback](time-travel-debugging-playback.md)
 - [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-files.md)
 - [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md)
+- [Time Travel Debugging - TTDAnalyze](time-travel-debugging-ttdanalyze.md)
 
 These topics describe additional advanced functionality in time travel debugging. 
 
@@ -97,7 +98,6 @@ These topics describe additional advanced functionality in time travel debugging
 > Topics not yet available -- pending product support
 
 - [Time Travel Debugging - Extension commands] time-travel-debugging-extension-commands.md
-- [Time Travel Debugging - TTDAnalyze] time-travel-debugging-ttdanalyze.md
 
 
 ## Things to look out for 

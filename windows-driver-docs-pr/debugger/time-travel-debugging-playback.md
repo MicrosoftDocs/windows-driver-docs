@@ -51,6 +51,14 @@ Help for undocumented debugger commands:
 ```
 
 
+| Command | Description |
+|---------|---------------------------------------------------------------------------|
+!position | Displays the current position of the trace  
+!events   | Opens a command tree window with a list of events in the trace file.  
+!search   | Searches trace similar to ba but can be used for registers see TTT-Search  
+
+
+
 ## Ribbon button time travel navigation
 
 Alternatively use the ribbon buttons to navigate in the trace.
@@ -78,9 +86,30 @@ Provide a time position in any of the following formats to travel to that point 
     - !tt 1A0000000000000012F - Time travel to position 1A0:12F
 
 
+0:000> !tt.help
+TtdExt - This extension provides commands, model types and model objects
+         to allow the user to interact with a loaded Time Travel Debugging
+         trace.
+
+ positions - Displays all the active threads, including their current positions.
+ index        - Run an indexing pass over the current trace.
+                If the current trace is already indexed, this does nothing.
+ index status - Reports the status of the trace index
+
+
+TBD
+
+```
+0:000> !tt.positions
+>Thread ID=0x4164 - Position: 97:4
+ Thread ID=0x4C8C - Position: F2:0
+ Thread ID=0x1E08 - Position: F3:0
+```
+
+
 ## Example TTD Playback
 
-This outputs shows... TBD 
+This outputs shows using the !tt command to reset the time postion to the begining of the trace. 
 
 ```
 0:000> !tt
@@ -92,13 +121,9 @@ ntdll!ZwTestAlert+0x14:
 00007ffc`61f789d4 c3              ret
 ```
 
+This outputs shows using the p command to travel forward in a TTD trace. 
+
 ```
-0:000> !ttdext.tt E:0
-Setting position: E:0
-(1a04.3bd0): Break instruction exception - code 80000003 (first/second chance not available)
-Time Travel Position: E:0
-ntdll!ZwSetInformationWorkerFactory+0x14:
-00007ff9`31ed0894 c3              ret
 0:000> p
 Time Travel Position: E:1
 ntdll!TpAdjustBindingCount+0x49:
@@ -113,12 +138,69 @@ Time Travel Position: E:4
 01 000000e4`d1c8f110 00007ff9`31e8668a ntdll!TppInitializeTimer+0x54 [minkernel\threadpool\ntdll\timer.c @ 1411] 
 ntdll!TppInitializeTimer+0x54:
 00007ff9`31e8875c 4883a3f000000000 and     qword ptr [rbx+0F0h],0 ds:0000027c`e87065f0=0000000000000000
-0:000> p
-Time Travel Position: E:5
-ntdll!TppInitializeTimer+0x5c:
-00007ff9`31e88764 4088b361010000  mov     byte ptr [rbx+161h],sil ds:0000027c`e8706661=00
+```
+
+This outputs shows using the p- command to travel backwards in a TTD trace. 
 
 ```
+TDB
+
+```
+
+
+# Notes - TBD
+
+
+Help for Time Travel Debugging Extensions
+  activitytree [all|<guid>] - Display the E2E activity tree.
+  cmp <p1> <p2>     - Show the execution order relationship between two
+                      positions.  The relationship is ?? if it cannot
+                      determine the runtime ordering.
+  events            - Bring up the .cmdtree window (currently unavailable in clients other than WinDBG).
+  help              - Shows this help.
+  index [-q]        - Commits a memory index to the trace file to extend
+                      the range of addresses the debugger can resolve.
+  position [-c|-s|  - Display current position info.  Use -c to specify
+            -a]       only the current thread.  Use -s to specify the
+                      trace start position.  Use -a to specify displaying
+                      only active threads.
+  pa <addr> [size]  - Get the value(s) in <addr>.  This may return multiple
+                      values if the last reference to the <addr> occurred
+                      in overlapping sequences in different threads.
+  pr <addr> [size]  - Search for the previous read(s) in <addr>.
+  pw <addr> [size]  - Search for the previous write(s) in <addr>.
+  search <direction> <expr> - Search either backwards or forwards in the
+                      trace until the expression evaluates to true.  See the
+                      section on searching the trace file using the debugger
+                      by going to http://idna and following the link to the
+                      Search page in the Wiki pages.
+  sn [count] <expr> - Short cut for !search +j <expr> with optional
+                      iteration count.  Count can be a number in hex or
+                      decimal format, or it can be the symbol '*' to
+                      indicate that it should iterate to the end of the
+                      trace.
+  sp [count] <expr> - Short cut for !search -j <expr> with optional
+                      iteration count.
+  tt <position>     - Time Travel to a position in the trace or if the
+                      position x is 0 to 100 it travels to approximately
+                      x% of the way through the trace.
+  ttpw              - Search previous write instruction in <addr>, and
+                      perform a time travel to write position.
+  replayexceptions [on|off]       - Control how exceptions are replayed:
+                                      on = all software exceptions replay as recorded (slower)
+                                     off = most software exceptions are replayed as C++ exceptions (default, fast)
+                                    Note that all exceptions remain visible in the '!events' command,
+                                    regardless of this setting
+  replaydebugoutput [on|off]      - Control how debug output is replayed:
+                                      on = all debug output will be shown as recorded (slower)
+                                     off = no debug output will be shown (default, fast)
+                                    Note that all debug output events remain visible in the '!events' command,
+                                    regardless of this setting
+
+Note: Input all address and position values in HEX format.  Size must be a
+      a decimal value between 1 and 8.
+
+
 
 
 
