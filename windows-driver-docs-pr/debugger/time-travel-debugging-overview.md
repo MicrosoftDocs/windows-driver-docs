@@ -38,7 +38,7 @@ TTD is lightweight and works to add minimal overhead as it captures code executi
 This table summarizes the pros and cons of the different debugging solutions available.
 
 Approach​ | Pros | Cons​
-|--------|------|-----|
+|---------|------|-------|
 | Getting a local repro (or a repro in a controlled environment)​  |Access to all the familiar tools in a familiar setting.  | Time consuming, not always possible to get a local repro, addtional data may be needed for the repro.​ 
 | WinDbg - Live debugging | Interactive experience, sees flow of execution, can change target state, familiar tool in familiar setting.​ | Disrupts the user experience, may require effort to reproduce the issue repeatedly, may impact security, not always an option.​
 | Dumps​ | No coding upfront, low-intrusiveness, based on triggers.  | Successive snapshot or live dumps provide a simple “over time” view. Overhead is essentially zero if not used.​  | Often no pre-defect state, limited data, many developers struggle to root cause after the fact.​  | 

@@ -16,56 +16,76 @@ ms.technology: windows-devices
 
 TBD TBD TBD 
 
-
 This section describes how to record time travel traces.
 
-*Non-invasive attach*
+To record a TTD trace, follow these steps.
+
+1. In WinDbg Preview, select **File** > **Launch executable (advanced)** .
+
+2. Fill in the path to the user mode executable that you wish to trace.
 
 ![Screen shot of WinDbg Preview showing start recording checkbox](images/ttd-start-recording.png)
 
-Trace gets recorded
+> [!NOTE]
+> The UI shown here is preliminary and will likley change. Updated information will be provided in a later release of the documentation. 
+>
 
+3. Click **OK** to launch the executable and start tracing. 
 
-In the dialog you can confirm what we are tracing. You can stop tracing and debug your program, or simply cancel the tracing. (click on stop and debug) As you can see the trace is loaded automatically. And this is the case if your program crashes as well.”
-
-Here is where you work to cause the activty that you wish to anamyze to occur. You may open a problamtic file or click on a specific button in the app to cause the event of interest to occur. Using breakpoint is a common apprroach to pause code execution at the event of interest.
-
-Once complete, close your app or hit “Stop and debug” – This will kill your process.
+4. The recording dialog appears indicatting the trace is being recorded.
 
 ![TTD recording popup showing stop and debug as well as cancel options](images/ttd-recording-pop-up.png)
 
-Trace will open
+When the recording dialog box is being displayed you can:
 
-Indexing will happen
-Right after the trace is loaded, our indexing process begins. This allows for complete and faster memory value look ups. This indexing process can take longer for larger trace files.”
+- Stop tracing and debug your program. 
+- Cancel the tracing. This option does 
 
+As you can see the trace is loaded automatically. And this is the case if your program crashes as well.
+
+When the application terminates the trace file will be closed and written out to disk.
+
+Here is where you work to cause the activty that you wish to analyze to occur. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
+
+Using breakpoints is a common apprroach to pause code execution at the event of interest.
+
+Once complete, close your app or hit “Stop and debug” – This will kill your process.
+
+5. When the trace file is closed, indexing will happen automatically as shown in the output below.
+
+```
+Time Travel Position: 6D1:0
+ntdll!ZwTerminateProcess+0x12:
+00007ffc`61f75922 0f05            syscall
+||0:0:000> !index
+Successfully created the index in 0ms.
+```
+
+Right after the trace is loaded, the indexing process begins. Indexing allows for complete and faster memory value look ups. This indexing process will take longer for larger trace files.
+
+```
 Time Travel Position: 10:0
 ntdll!ZwTestAlert+0x14:
 00007ffc`61f789d4 c3              ret
 0:000> !index
 Indexed 1/1 keyframes
 Successfully created the index in 96ms.
-0:000> !tt
-Setting position to the beginning of the trace
-Setting position: 10:0
-(4604.21dc): Break instruction exception - code 80000003 (first/second chance not available)
-Time Travel Position: 10:0
-ntdll!ZwTestAlert+0x14:
-00007ffc`61f789d4 c3              ret
+```
+
 
 
 
 Command line version: 
 
-2. Get process id of program that is running using tlist or taskmgr
+1. Get process id of program that is running using tlist or taskmgr
 Example command to get id of explorer: "tlist | findstr explorer"
 
-3. Run ttt:
+2. Run ttt:
 c:\Debuggers\ttt\TTTracer.exe -attach <pid>
 
-4. Little dialog window should appear. When you are done taking a trace, press "Exit app"
+3. Dialog window should appear. When you are done taking a trace, press "Exit app"
 
-5. Share the content of the folder
+4. Share the content of the folder
 
 FAQ
 - Need to attach idna trace at launch?
@@ -75,6 +95,8 @@ c:\Debuggers\ttt\TTTracer.exe -onlaunch <process name> -out c:\data\test\bin\ope
  
 When you are done, you can stop further tracing by running 
 c:\Debuggers\ttt\TTTracer.exe –delete “all”
+
+
 
 Help for Time Travel Debugging Extensions
   activitytree [all|<guid>] - Display the E2E activity tree.

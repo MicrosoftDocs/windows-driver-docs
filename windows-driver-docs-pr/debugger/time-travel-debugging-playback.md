@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Playback
 description: This section describes how to record time travel traces.
 ms.author: windowsdriverdev
-ms.date: 09/06/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,33 +15,63 @@ ms.technology: windows-devices
 
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Recording 
 
-This section describes how to record time travel traces.
-
 TBD TBD TBD
 
-o	t-, p-, g-
-o	Ribbon button
-o	Other TBD windows 
+This section describes how to playback time travel traces and navigate in time.
+
+## Command time travel navigation
+
+Use a trailing minus sign with the following version of these commands to travel back in time.
+
+| Command  |  For more information |
+|----|-------------------------------------------------------------------------------------------|
+| t- | [t (Trace)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/t--trace-) |
+| p- | [p (Step)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/p--step-)   |
+| g- | [g (Go)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/g--go-)       |
 
 
-0:000> !tt /?
- tt <position> - Time travel to the given position in the trace.
-                 If <position> is a decimal number between 0 and 100,
-                 it travels to approximately that percent into the trace.
-                 If <position> is #:#, where # are a hexadecimal numbers,
-                 it travels to that position.
-                 If the number after : is omitted, it's defaulted to zero.
-                 If the : is omitted, then the second number must have
-                 precisely 16 hexadecimal digits, with zeros for left-padding.
+## Ribbon button time travel navigation
 
-Examples:
- tt 0                   - Time travel to the beginning of the trace
- tt 50                  - Time travel to halfway through the trace
- tt 100                 - Time travel to the end of the trace
- tt 1A0:                - Time travel to position 1A0:0
- tt 1A0:0               - Time travel to position 1A0:0
- tt 1A0:12F             - Time travel to position 1A0:12F
- tt 1A0000000000000012F - Time travel to position 1A0:12F
+Alternatively use the ribbon buttons to navigate in the trace.
+
+![Screen shot of WinDbg Preview showing start recording checkbox](images/ttd-ribbon-buttons.png)
+
+## Use the !tt extension to travel in time
+
+Provide a time postion in any of the following formats to travel to that point in time.
+
+!tt <position> - Time travel to the given position in the trace.
+           
+- If <position> is a decimal number between 0 and 100, it travels to approximately that percent into the trace. For example:
+    - !tt 0                   - Time travel to the beginning of the trace
+    - !tt 50                  - Time travel to halfway through the trace
+    - !tt 100                 - Time travel to the end of the trace
+ 
+
+- If <position> is #:#, where # are a hexadecimal numbers,it travels to that position. If the number after : is omitted, it's defaulted to zero.
+    - !tt 1A0:                - Time travel to position 1A0:0
+    - !tt 1A0:0               - Time travel to position 1A0:0
+    - !tt 1A0:12F             - Time travel to position 1A0:12F
+
+- If the : is omitted, then the second number must have precisely 16 hexadecimal digits, with zeros for left-padding.
+    - !tt 1A0000000000000012F - Time travel to position 1A0:12F
+
+
+## Example TTD Playback
+
+This outputs shows... TBD 
+
+```
+0:000> !tt
+Setting position to the beginning of the trace
+Setting position: 10:0
+(4604.21dc): Break instruction exception - code 80000003 (first/second chance not available)
+Time Travel Position: 10:0
+ntdll!ZwTestAlert+0x14:
+00007ffc`61f789d4 c3              ret
+```
+
+
 
 > Additional Content Pending
 
