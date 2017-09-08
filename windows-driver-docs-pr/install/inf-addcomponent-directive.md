@@ -48,7 +48,7 @@ Each *component-install-section* must have at least the **ComponentIDs** entry a
 
 Note that **ComponentIDs** are [HardwareIDs](hardware-ids.md), which means they are strings defined by the hardware developer.  To ensure uniqueness of these IDs, in most cases, we recommend following the identifier schema used for [PCI devices](identifiers-for-pci-devices.md).  It is possible that a vendor might want to use a different schema, but that depends on the scenario.
 
-For example, a vendor with multiple components hanging off of a device may want a relationship between the HardwareIDs of the component and the parent. In this case, they would create their **ComponentID** by appending a four-character vendor-defined component identifier to the parents' HardwareID.
+For example, a vendor with multiple components on a single device might want to associate the hardware IDs of the component with the parent.  In this case, they could create a **ComponentID** by appending a four-character vendor-defined component identifier to the hardware ID of the parent.
 
 ## Component-Install Section Entries and Values
 	
