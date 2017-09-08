@@ -144,9 +144,7 @@ The following diagram summarizes the sequence described above:
 
 ![Getting an SCCD signed](images/signsccd.png)
 
-## Resouces
-
-### See Also
+## Resources
 
 * [App capability declarations](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations)
 * [Custom Capability sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomCapability)
@@ -155,7 +153,7 @@ The following diagram summarizes the sequence described above:
 
 ### SCCD XML Schema
 
-The following is the formal XML XSD schema for a SCCD file.  One should use this schema to validate your SCCD before submitting it for review.
+The following is the formal XML XSD schema for an SCCD file.  Use this schema to validate your SCCD before submitting it for review.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
