@@ -193,6 +193,8 @@ The following methods are used for all other functionality in a NetAdapterCx cli
 
 [NetRxQueueCreate method](netrxqueuecreate.md)
 
+[NetRxQueueGetPacketContextToken method](netrxqueuegetpacketcontexttoken.md)
+
 [NetRxQueueGetBufferLayoutHint method](netrxqueuegetbufferlayouthint.md)
 
 [NetRxQueueGetRingBuffer method](netrxqueuegetringbuffer.md)
@@ -208,6 +210,8 @@ The following methods are used for all other functionality in a NetAdapterCx cli
 [NetRxQueueQueryAllocatorCacheEnabled method](netrxqueuequeryallocatorcacheenabled.md)
 
 [NetTxQueueCreate method](nettxqueuecreate.md)
+
+[NetTxQueueGetPacketContextToken method](nettxqueuegetpacketcontexttoken.md)
 
 [NetTxQueueGetRingBuffer method](nettxqueuegetringbuffer.md)
 

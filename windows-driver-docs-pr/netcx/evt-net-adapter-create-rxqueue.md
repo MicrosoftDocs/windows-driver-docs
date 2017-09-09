@@ -87,9 +87,14 @@ EvtAdapterCreateRxQueue(
     rxConfig.AlignmentRequirement = 64;
     rxConfig.AllocationSize = NIC_MAX_PACKET_SIZE + FRAME_CRC_SIZE + RSVD_BUF_SIZE;
 
-    // Assign fixed size data type as per packet context
+    // Initialize the per-packet context
 
-    NET_RXQUEUE_CONFIG_SET_DEFAULT_PACKET_CONTEXT_TYPE(&rxConfig, MY_RXQUEUE_PACKET_CONTEXT);
+    NET_PACKET_CONTEXT_ATTRIBUTES myRxContextAttributes;
+    NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE(&myRxContextAttributes, MY_RXQUEUE_PACKET_CONTEXT);
+
+    // Add the context attributes to the queue
+
+    status = NetRxQueueInitAddPacketContextAttributes(rxQueueInit, &myRxContextAttributes);
 
     // Retrieve the WDFDMAENABLER from the NETADAPTER's context to opt in to DMA allocation
 

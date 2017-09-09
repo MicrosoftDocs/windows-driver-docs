@@ -1,7 +1,7 @@
 ---
 title: NET_TXQUEUE_GET_PACKET_CONTEXT_TOKEN macro
 description: NET_TXQUEUE_GET_PACKET_CONTEXT_TOKEN macro
-ms.assetid: 0BCE4E5A-13CA-44DD-80E4-193102B78510
+ms.assetid: 8377E830-8F92-4998-B2A7-65853EC07548
 keywords:
 - WDF Network Adapter Class Extension NET_TXQUEUE_GET_PACKET_CONTEXT_TOKEN, NetAdapterCx NET_TXQUEUE_GET_PACKET_CONTEXT_TOKEN, NetCx NET_TXQUEUE_GET_PACKET_CONTEXT_TOKEN
 ms.author: windowsdriverdev
@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The **NET_TXQUEUE_GET_PACKET_CONTEXT_TOKEN** macro 
+The **NET_TXQUEUE_GET_PACKET_CONTEXT_TOKEN** macro retrieves a [NET_PACKET_CONTEXT_TOKEN](net-packet-context-token.md) for a [NET_PACKET](net-packet.md) context based on the supplied context type name.
 
 ## Syntax
 

@@ -87,7 +87,7 @@ EvtAdapterCreateTxQueue(
     NET_PACKET_CONTEXT_ATTRIBUTES myTxContextAttributes;
     NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE(&myTxContextAttributes, MY_DEFAULT_TX_PACKET_CONTEXT);
 
-    // Add the first default packet context to the queue
+    // Add the first default packet context attributes to the queue
 
     status = NetTxQueueInitAddPacketContextAttributes(txQueueInit, &myTxContextAttributes);
 
@@ -96,7 +96,7 @@ EvtAdapterCreateTxQueue(
     NET_PACKET_CONTEXT_ATTRIBUTES tcbContextAttributes;
     NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE(&tcbContextAttributes, MY_TCB);
 
-    // Add the second TCB packet context to the queue
+    // Add the second TCB packet context attributes to the queue
 
     status = NetTxQueueInitAddPacketContextAttributes(txQueueInit, &tcbContextAttributes);
 

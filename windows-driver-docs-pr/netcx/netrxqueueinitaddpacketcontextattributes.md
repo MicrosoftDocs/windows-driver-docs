@@ -40,7 +40,7 @@ If the operation is successful, theis method must return STATUS_SUCCESS, or anot
 
 ## Remarks
 
-The NETRXQUEUE_INIT structure is an opaque structure that is defined and allocated by NetAdapterCx, similar to WDFDEVICE_INIT. The client driver receives a pointer to the NETRXQUEUE_INIT object in its [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md) callback function, where this method can be optionally called to add additional information to the receive queue's packet context space.
+The NETRXQUEUE_INIT structure is an opaque structure that is defined and allocated by NetAdapterCx, similar to WDFDEVICE_INIT. The client driver receives a pointer to the NETRXQUEUE_INIT object in its [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md) callback function, where this method is called to add context attributes to the queue for each packet context context the driver has created.
 
 ## Requirements
 
