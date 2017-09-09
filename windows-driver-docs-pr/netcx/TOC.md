@@ -105,6 +105,7 @@
 #### [NetConfigurationQueryLinkLayerAddress method](netconfigurationquerylinklayeraddress.md)
 #### [NetConfigurationQueryString method](netconfigurationquerystring.md)
 #### [NetConfigurationQueryUlong method](netconfigurationqueryulong.md)
+#### [NetPacketGetContextFromToken method](netpacketgetcontextfromtoken.md)
 #### [NetPacketGetTypedContext method](netpacketgettypedcontext.md)
 #### [NetPowerSettingsGetEnabledMediaSpecificWakeUpEvents method](netpowersettingsgetenabledmediaspecificwakeupevents.md)
 #### [NetPowerSettingsGetEnabledProtocolOffloadFlags method](netpowersettingsgetenabledprotocoloffloadflags.md)

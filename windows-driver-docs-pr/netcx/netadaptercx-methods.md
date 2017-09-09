@@ -121,6 +121,8 @@ The following methods are used for all other functionality in a NetAdapterCx cli
 
 [NetConfigurationQueryUlong method](netconfigurationqueryulong.md)
 
+[NetPacketGetContextFromToken method](netpacketgetcontextfromtoken.md)
+
 [NetPacketGetTypedContext method](netpacketgettypedcontext.md)
 
 [NetPowerSettingsGetEnabledMediaSpecificWakeUpEvents method](netpowersettingsgetenabledmediaspecificwakeupevents.md)
