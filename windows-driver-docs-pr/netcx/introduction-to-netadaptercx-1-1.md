@@ -23,11 +23,13 @@ NetAdapterCx 1.1 features advancements in performance over version 1.0, as well 
 
 ### More packet context options 
 
-In version 1.0, NetAdapterCx had one packet context per packet on each datapath queue, but client drivers could not modify their queues' packet contexts or allocate additional packet contexts. This limited client drivers' usability. For example, if you were using the DMA IO Helper for your transmit queue, it occupied the only packet context available to you for that queue. In version 1.1, however, you can now allocate as many packet contexts as you need for each datapath queue, creating more flexibility for transmit and receive operations elsewhere in the driver.
+In version 1.0, NetAdapterCx had one packet context per packet on each datapath queue, but client drivers could not allocate additional packet contexts. This limited client drivers' usability. For example, if you were using the DMA IO Helper for your transmit queue, it occupied the only packet context available to you for that queue. In version 1.1, however, you can now allocate as many packet contexts as you need for each datapath queue, creating more flexibility for transmit and receive operations elsewhere in the driver.
 
-For more info about declaring additional packet contexts and setting their attributes, see [NET_PACKET_CONTEXT_ATTRIBUTES](net-packet-context-attributes.md) and [NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE](net-packet-context-attributes-init-type.md).
+For more info about declaring packet contexts and setting their attributes, see [NET_PACKET_CONTEXT_ATTRIBUTES](net-packet-context-attributes.md) and [NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE](net-packet-context-attributes-init-type.md).
 
-For more info about adding additional packet context attributes to transmit or receive queues, see [NetTxQueueInitAddPacketContextAttributes](nettxqueueinitaddpacketcontextattributes.md) or [NetRxQueueInitAddPacketContextAttributes](netrxqueueinitaddpacketcontextattributes.md) respectively.
+For more info about adding packet context attributes to transmit or receive queues, see [NetTxQueueInitAddPacketContextAttributes](nettxqueueinitaddpacketcontextattributes.md) or [NetRxQueueInitAddPacketContextAttributes](netrxqueueinitaddpacketcontextattributes.md) respectively.
+
+For more info and an example about using [NET_PACKET_CONTEXT_TOKEN](net-packet-context-token.md)s to retrieve packet contexts on a queue with more than one packet context, see [NET_PACKET_DECLARE_CONTEXT_TYPE_WITH_NAME](net-packet-declare-context-type-with-name.md), [NET_TXQUEUE_GET_PACKET_CONTEXT_TOKEN](net-txqueue-get-packet-context-token.md), and [NET_RXQUEUE_GET_PACKET_CONTEXT_TOKEN](net-rxqueue-get-packet-context-token.md).
 
 An example of defining and adding a custom packet context for a transmit queue is explained on [NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE](net-packet-context-attributes-init-type.md) and [EVT_NET_ADAPTER_CREATE_TXQUEUE](evt-net-adapter-create-txqueue.md).
 
