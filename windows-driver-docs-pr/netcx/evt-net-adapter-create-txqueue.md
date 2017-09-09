@@ -63,7 +63,7 @@ Example
 -------
 
 > [!TIP]
-> This example transmit queue uses a driver-defined additonal packet context called MY_TCB to assist with transmit operations. For more info about setting up this example packet context and initializing it, see [NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE](net-packet-context-attributes-init-type.md).
+> This example transmit queue uses two driver-defined packet contexts - one called MY_TX_PACKET_CONTEXT, and a second called MY_TCB to assist with transmit operations. For more info about setting up this second example packet context and initializing it, see [NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE](net-packet-context-attributes-init-type.md).
 >
 > Error handling code has been excised from this example for brevity and clarity.
 
@@ -82,14 +82,23 @@ EvtAdapterCreateTxQueue(
         EvtTxQueueSetNotificationEnabled,
         EvtTxQueueCancel);
 
-    // Initialize the custom Transmit Control Block packet context
+    // Initialize the first default packet context
 
-    NET_PACKET_CONTEXT_ATTRIBUTES packetContextAttributes;
-    NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE(&packetContextAttributes, MY_TCB);
+    NET_PACKET_CONTEXT_ATTRIBUTES myTxContextAttributes;
+    NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE(&myTxContextAttributes, MY_DEFAULT_TX_PACKET_CONTEXT);
 
-    // Add the TCB packet context to the queue
+    // Add the first default packet context to the queue
 
-    status = NetTxQueueInitAddPacketContextAttributes(txQueueInit, &packetContextAttributes);
+    status = NetTxQueueInitAddPacketContextAttributes(txQueueInit, &myTxContextAttributes);
+
+    // Initialize a second custom packet context for a transmit control block
+
+    NET_PACKET_CONTEXT_ATTRIBUTES tcbContextAttributes;
+    NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE(&tcbContextAttributes, MY_TCB);
+
+    // Add the second TCB packet context to the queue
+
+    status = NetTxQueueInitAddPacketContextAttributes(txQueueInit, &tcbContextAttributes);
 
     // Create the transmit queue
 

@@ -55,17 +55,17 @@ The following APIs and data structures are new in NetAdapterCx 1.1.
 - [NET_PACKET_CONTEXT_TOKEN](net-packet-context-token.md)
 - [NET_PACKET_CONTEXT_ATTRIBUTES](net-packet-context-attributes.md)
 - [NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE](net-packet-context-attributes-init-type.md)
-- [NET_PACKET_DECLARE_CASTING_FUNCTION_FROM_TOKEN]
+- [NET_PACKET_DECLARE_CASTING_FUNCTION_FROM_TOKEN](net-packet-declare-casting-function-from-token.md)
 - [NetPacketGetContextFromToken]
 - [NET_RXQUEUE_BUFFER_LAYOUT_HINT](net-rxqueue-buffer-layout-hint.md)
 - [NetRxQueueGetBufferLayoutHint method](netrxqueuegetbufferlayouthint.md)
 - [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG](net-rxqueue-dma-allocator-config.md)
 - [NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT method](net-rxqueue-dma-allocator-config-init.md)
-- [NET_RXQUEUE_GET_PACKET_CONTEXT_TOKEN]
+- [NET_RXQUEUE_GET_PACKET_CONTEXT_TOKEN](net-rxqueue-get-packet-context-token.md)
 - [NetRxQueueGetPacketContextToken]
 - [NetRxQueueInitAddPacketContextAttributes method](netrxqueueinitaddpacketcontextattributes.md)
 - [NetRxQueueQueryAllocatorCacheEnabled](netrxqueuequeryallocatorcacheenabled.md)
-- [NET_TXQUEUE_GET_PACKET_CONTEXT_TOKEN]
+- [NET_TXQUEUE_GET_PACKET_CONTEXT_TOKEN](net-txqueue-get-packet-context-token.md)
 - [NetTxQueueGetPacketContextToken]
 - [NetTxQueueInitAddPacketContextAttributes](nettxqueueinitaddpacketcontextattributes.md)
 
@@ -76,6 +76,7 @@ The following APIs and data structures were updated in NetAdapterCx 1.1.
 - [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md)
 - [NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT method](net-adapter-link-layer-capabilities-init.md)
 - [NET_ADAPTER_CONFIG](net-adapter-config.md)
+- [NET_PACKET_DECLARE_CONTEXT_TYPE_WITH_NAME](net-packet-declare-context-type-with-name.md)
 - [NET_PACKET_FRAGMENT](net-packet-fragment.md)
 - [NetAdapterDriverWdmGetHandle method](netadapterdriverwdmgethandle.md)
 - [NetConfigurationQueryLinkLayerAddress method](netconfigurationquerylinklayeraddress.md)

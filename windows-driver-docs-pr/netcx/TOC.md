@@ -168,4 +168,7 @@
 #### [NET_REQUEST_QUEUE_TYPE](net-request-queue-type.md)
 ### [NetAdapterCx macros](netadaptercx-macros.md)
 #### [NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE](net-packet-context-attributes-init-type.md)
+#### [NET_PACKET_DECLARE_CASTING_FUNCTION](net-packet-declare-casting-function.md)
 #### [NET_PACKET_DECLARE_CONTEXT_TYPE_WITH_NAME](net-packet-declare-context-type-with-name.md)
+#### [NET_RXQUEUE_GET_PACKET_CONTEXT_TOKEN](net-rxqueue-get-packet-context-token.md)
+#### [NET_TXQUEUE_GET_PACKET_CONTEXT_TOKEN](net-txqueue-get-packet-context-token.md)
