@@ -90,6 +90,8 @@ The TTD Lifetime Object contains information on the contents of the time travel 
 The active lifetime of a thread is the closest approximation to when the thread was present during record.
 [FirstPosition..LastPosition] is the portion of the timeline that contains instructions executed by the thread.
 
+### TTD Threads Object Examples
+
 Use the dx command to display all of the children objects to the first TTD threads object.
 
 ```
@@ -148,6 +150,9 @@ Contains:
   *Checksum* -   The computed checksum of the module - for example, 0x0 TBD - Need to confirm value
   *Timestamp* -   The timestamp of the module - for example,  0x59b1e18f. The timestamp is relative to the TBD of the TBD. 
         
+
+### TTD Events Object Examples
+
 Use the dx command to display all of the childern objects to the TTD Events object.
 
 ```
