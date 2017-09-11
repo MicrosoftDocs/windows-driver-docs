@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Recording 
 description: This section describes how to record time travel traces.
 ms.author: windowsdriverdev
-ms.date: 09/06/2017
+ms.date: 09/11/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -18,9 +18,9 @@ This section describes how to record time travel traces.
 
 To record a TTD trace, follow these steps.
 
-1. In WinDbg Preview, select **File** > **Launch executable (advanced)** .
+1. In WinDbg Preview, select **File** > **Launch executable (advanced)**.
 
-2. Fill in the path to the user mode executable that you wish to trace.
+2. Fill in the path to the user mode executable that you wish to trace. For information about working with the Launch Executable menu in WinDbg Preview, see [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md).
 
 ![Screen shot of WinDbg Preview showing start recording checkbox](images/ttd-start-recording.png)
 
@@ -28,13 +28,15 @@ To record a TTD trace, follow these steps.
 > The UI shown here is preliminary and will likely change. Updated information will be provided in a later release of the documentation. 
 >
 
-3. Click **OK** to launch the executable and start tracing. 
+3. Check the **Record Process** box to create a trace when the executable is launched. 
 
-4. The recording dialog appears indicating the trace is being recorded.
+4. Click **OK** to launch the executable and start tracing. 
+
+5. The recording dialog appears indicating the trace is being recorded.
 
 ![TTD recording popup showing stop and debug as well as cancel options](images/ttd-recording-pop-up.png)
 
-5. When the recording dialog box is being displayed you can:
+6. When the recording dialog box is being displayed you can:
 
 - Stop tracing and debug your program. 
 - Cancel the tracing. This option does not TBD.
@@ -45,9 +47,11 @@ To record a TTD trace, follow these steps.
 
     Using breakpoints is a common approach to pause code execution at the event of interest.
 
-6. Once complete, close your app or hit “Stop and debug” – This will kill your process.
+    TBD - Need to add example / walkthrough topic showing breakpoint usage.
 
-7. When the application terminates, the trace file will be closed and written out to disk. This is the case if your program crashes as well.
+7. Once complete, close your app or hit “Stop and debug” – This will kill your process.
+
+8. When the application terminates, the trace file will be closed and written out to disk. This is the case if your program crashes as well.
 
 ```
 Time Travel Position: 6D1:0
@@ -57,7 +61,7 @@ ntdll!ZwTerminateProcess+0x12:
 Successfully created the index in 0ms.
 ```
 
-8. When the trace file is closed, indexing will happen automatically as shown in the output below. Indexing allows for complete and faster memory value look ups. This indexing process will take longer for larger trace files.
+9. When the trace file is closed, indexing will happen automatically as shown in the output below. Indexing allows for complete and faster memory value look ups. This indexing process will take longer for larger trace files.
 
 ```
 Time Travel Position: 10:0
@@ -68,8 +72,13 @@ Indexed 1/1 keyframes
 Successfully created the index in 96ms.
 ```
 
+10. At this point you are at the end/beginning (TBD) of the trace file.
 
-> Additional Content Pending
+11. Now that you have a recorded a TTD trace, you can play the trace back or work with the trace file, for example sharing it with a co-worker. For more information see:
+
+- [Time Travel Debugging - Playback](time-travel-debugging-playback.md)
+- [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-files.md)
+- [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md)
 
 ---
 

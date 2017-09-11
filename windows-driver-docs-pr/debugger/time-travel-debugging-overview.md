@@ -34,8 +34,7 @@ This table summarizes the pros and cons of the different debugging solutions ava
 
 Approach​ | Pros | Cons​
 |---------|------|-------|
-| Getting a local repro (or a repro in a controlled environment)​  |Access to all the familiar tools in a familiar setting.  | Time consuming, not always possible to get a local repro, additional data may be needed for the repro.​ 
-| WinDbg - Live debugging | Interactive experience, sees flow of execution, can change target state, familiar tool in familiar setting.​ | Disrupts the user experience, may require effort to reproduce the issue repeatedly, may impact security, not always an option.​
+| WinDbg - Live debugging | Interactive experience, sees flow of execution, can change target state, familiar tool in familiar setting.​ | Disrupts the user experience, may require effort to reproduce the issue repeatedly, may impact security, not always an option.​ With repro difficult to work back from point of failure to determine cause.
 | Dumps​ | No coding upfront, low-intrusiveness, based on triggers.  | Successive snapshot or live dumps provide a simple “over time” view. Overhead is essentially zero if not used.​  | Often no pre-defect state, limited data, many developers struggle to root cause after the fact.​  | 
 | Telemetry & logs​  |Lightweight, often tied to business scenarios / user actions, machine learning friendly.​  | Issues arise in unexpected code paths (with no telemetry). Lack of data depth, statically compiled into the code. Telemetry is often focused on usage patterns not code patterns.​
 | Time Travel Debugging (TTD)​ | Great at complex bugs, no coding upfront, offline repeatable debugging, analysis friendly, captures everything. | Large overhead at record time. May collect more data that is needed. Data files can become large.​ |
@@ -60,15 +59,16 @@ Once the tracing is stopped and index (.IDX) file is created to allow for faster
 
 IDX files can also be large, typically <TBD> size larger than the .RUN file.  
 
-You can recreated the index file from the . RUN file using this command
+You can recreate the index file from the . RUN file using this command
 
 ```
-!index
+0:000> !tt.index
+Successfully created the index in 10ms.
 ```
 
 Recording errors and other recording output is written to an .out file.
 
-All of the output files are stored in the users document folder. For example, for User1 the TTD files would be stored here:
+All of the output files are stored in the users document folder by default. For example, for User1 the TTD files would be stored here:
 
 ```
 C:\Users\User1\Documents
@@ -91,10 +91,12 @@ These topics describe additional advanced functionality in time travel debugging
 - [Time Travel Debugging - Trace File object model](time-travel-debugging-object-model.md)
 - [Debugger Object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md)
 - [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md)
+- [Time Travel Debugging - Sample App Walkthorugh](time-travel-debugging-walk-through.md)
 
 > Topics not yet available -- pending product support
 
 - [Time Travel Debugging - Extension commands] time-travel-debugging-extension-commands.md
+
 
 
 ## Things to look out for 

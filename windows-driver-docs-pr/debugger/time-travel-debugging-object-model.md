@@ -68,7 +68,7 @@ dx -g @$curprocess.TTD.Events.Where(t => t.Type == "ThreadCreated").Select(t => 
 
 TBD
 
-
+For addtional information, see [Debugger Object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md).
 
 
 > Additional Content Pending

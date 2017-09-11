@@ -1,8 +1,8 @@
 ---
-title: Time Travel Debugging - Troubleshooting
-description: This section describes how to troubleshoot time travel traces.
+title: Time Travel Debugging - Sample App Walkthorugh
+description: This section contains a walk through of a small C++ app. 
 ms.author: windowsdriverdev
-ms.date: 09/06/2017
+ms.date: 09/11/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,13 +15,75 @@ ms.technology: windows-devices
 
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Recording 
 
-This section describes how to troubleshoot time travel traces.
+This section  a walk through of a small C++ app.
 
 TBD
 
-https://osgwiki.com/wiki/Trace_file_derailment
+## Sample Code
 
-https://osgwiki.com/wiki/Debugging_a_Time_Travel_Trace
+Compile thsi code using Visual Studio
+
+```
+// CDog_Console.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <windows.h>
+class CDog
+{
+public:
+       CDog() { m_age = 8; m_weight = 30; }
+       long m_age;
+       long m_weight;
+};
+
+class CDogs
+{
+public:
+       CDog MyDog1;
+       CDog MyDog2;
+       CDog MyDog3;
+       CDog MyDog4;
+       CDog MyDog5;
+
+};
+
+class Simple1DArray
+{
+public:
+       ULONG64 m_size =5;
+       int intArray[5]{ 1,2,3,4,5 };
+       int *m_pValues = &intArray[0];
+       Simple1DArray()
+       {
+       };
+
+};
+
+
+
+int main()
+{
+       CDog MyDog;
+       CDogs MyDogs;
+       Simple1DArray g_array1D;
+       printf_s("Array Information \n");
+       printf_s("%I64d, %d \n", g_array1D.m_size, (int) g_array1D.m_pValues);
+       printf_s("Array size Dog Object Information \n");
+       printf_s("%d, %d\n", MyDog.m_age, MyDog.m_weight);
+       // Commenting out for TTD Testing 9-8-2017 DHM
+       getchar();
+       return 0;
+}
+```
+
+## Recording the App
+
+TBD
+
+## Playing back the App
+
+TBD
 
 
 > Additional Content Pending

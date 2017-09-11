@@ -31,6 +31,10 @@ Key positions in time 
 "I can pick up debugging exactly where you suggest by navigating to that position. The command for this is !tt x:y"(run command) 
 Successful recorded traces or previously loaded traces can be easily access from your Recents list as well.
 
+o	Traces can be opened after recorded
+o	Need to share the .run file. .idx can be re-built with !index. If you don’t care about how big, share the .idx file. – TBD – What should we recommend people do.
+o	Can be shared between others
+
 
 
 > Additional Content Pending

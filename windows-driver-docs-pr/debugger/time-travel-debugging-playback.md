@@ -56,6 +56,24 @@ Provide a time position in any of the following formats to travel to that point 
     - !tt 1A0000000000000012F - Time travel to position 1A0:12F
 
 
+## Trace Segment Terminology
+
+This table summarizes the major elements of a TTD Trace.
+
+Keyframe - 
+Key frame​
+Place in a trace where replay can start with no previous data​
+
+Position - 
+
+
+Trace segment​
+Part of a recorded thread between two key frames​
+
+Sequencing point​
+Orderable event in the trace​
+
+Instruction Position Reference - 
 
 ## Example TTD Playback
 
