@@ -34,13 +34,14 @@ The TTD Lifetime Object contains information on the contents of the time travel 
 **MinPostion** 
 
 MinPosition Contains:
-  *Sequence* - 
-  *Steps* -    
+  *Sequence* - The sequence position in the TTD trace. TBD
+  *Steps* - The number of steps in the TTD trace. TBD
  
 **MaxPosition**
 MaxPosition Contains:
-  *Sequence* -
-  *Steps* -
+  *Sequence* - The sequence position in the TTD trace. TBD
+  *Steps* - The number of steps in the TTD trace. TBD
+  
 
 Use the dx command to display all of the childern objects to the TTD Lifetime object.
 
@@ -59,17 +60,35 @@ Use the dx command to display all of the childern objects to the TTD Lifetime ob
 
 ## TTD Threads Object 
 
-The TTD Threads Object contains and array of the threads in the TTD trace.
+The TTD Threads Object contains and array of the threads in the TTD trace. Each thread in the array contains the following objects.
 
 **UniqueId** 
-The uniqueId is an assigned Unique ID
+The uniqueId is an assigned Unique ID TBD TBD.
 
 **Id**
 
-Contains:
-  *Sequence* - 
-  *Steps* -    
+**LifeTime**
+
+The TTD Lifetime Object contains information on the contents of the time travel trace.
+
+
+**MinPostion** 
+
+MinPosition Contains:
+  *Sequence* - The sequence position in the TTD trace. TBD
+  *Steps* -    The number of steps in the TTD trace. TBD
  
+**MaxPosition**
+MaxPosition Contains:
+  *Sequence* - The sequence position in the TTD trace. TBD
+  *Steps* -    The number of steps in the TTD trace. TBD
+ 
+**ActiveTime**
+
+The TTD Lifetime Object contains information on the contents of the time travel trace.
+
+The active lifetime of a thread is the closest approximation to when the thread was present during record.
+[FirstPosition..LastPosition] is the portion of the timeline that contains instructions executed by the thread.
 
 Use the dx command to display all of the children objects to the first TTD threads object.
 
@@ -99,7 +118,6 @@ The [Time Travel] links provide a link to a
 ```
 dx @$curprocess.TTD .@"Threads"[2].@"ActiveTime".@"MinPosition".SeekTo()
 ```
-
 
 ## TTD Events Object 
 
