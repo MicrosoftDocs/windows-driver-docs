@@ -21,7 +21,7 @@ TBD
 
 ## Sample Code
 
-Compile thsi code using Visual Studio
+Compile this code using Visual Studio.
 
 ```
 // CDog_Console.cpp : Defines the entry point for the console application.
@@ -44,7 +44,8 @@ public:
        CDog MyDog2;
        CDog MyDog3;
        CDog MyDog4;
-       CDog MyDog5;
+// Do we need a fifth dog?
+//     CDog MyDog5;
 
 };
 
@@ -71,7 +72,6 @@ int main()
        printf_s("%I64d, %d \n", g_array1D.m_size, (int) g_array1D.m_pValues);
        printf_s("Array size Dog Object Information \n");
        printf_s("%d, %d\n", MyDog.m_age, MyDog.m_weight);
-       // Commenting out for TTD Testing 9-8-2017 DHM
        getchar();
        return 0;
 }

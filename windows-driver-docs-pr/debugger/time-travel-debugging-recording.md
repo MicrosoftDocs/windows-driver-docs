@@ -41,17 +41,16 @@ To record a TTD trace, follow these steps.
 - Stop tracing and debug your program. 
 - Cancel the tracing. This option does not TBD.
 
-    Here is where you work to cause the activity that you wish to analyze to occur. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
+Here is where you work to cause the activity that you wish to analyze to occur. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
 
-    TBD - Need to test focus of UI and console apps to better clarify the intended experience.
+> [!TIP]
+> Using breakpoints is a common approach to pause code execution at the event of interest.  Unique to TTD, you can set a breakpoint and travel back in time until that breakpoint is hit. The ability to later determine the best breakpoint, after the code has executed, can enables addtional code analysis workflows. For an example of using a breakpoint in the past, see [Time Travel Debugging - Sample App Walkthorugh](time-travel-debugging-walk-through.md). 
+>
+    
 
-    Using breakpoints is a common approach to pause code execution at the event of interest.
+7. Once your recording is complete, close your app or hit “Stop and debug” – This will kill your process.
 
-    TBD - Need to add example / walkthrough topic showing breakpoint usage.
-
-7. Once complete, close your app or hit “Stop and debug” – This will kill your process.
-
-8. When the application terminates, the trace file will be closed and written out to disk. This is the case if your program crashes as well.
+8. When the associated application terminates, the trace file will be closed and written out to disk. This is the case if your program crashes as well.
 
 ```
 Time Travel Position: 6D1:0
@@ -72,12 +71,13 @@ Indexed 1/1 keyframes
 Successfully created the index in 96ms.
 ```
 
-10. At this point you are at the end/beginning (TBD) of the trace file.
+10. At this point you are at the end (TBD - confirm?) of the trace file.
 
 11. Now that you have a recorded a TTD trace, you can play the trace back or work with the trace file, for example sharing it with a co-worker. For more information see:
 
 - [Time Travel Debugging - Playback](time-travel-debugging-playback.md)
 - [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-files.md)
+- [Time Travel Debugging - Sample App Walkthorugh](time-travel-debugging-walk-through.md)
 - [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md)
 
 ---
