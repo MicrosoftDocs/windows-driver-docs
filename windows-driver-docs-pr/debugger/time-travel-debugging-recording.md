@@ -44,7 +44,7 @@ To record a TTD trace, follow these steps.
 Here is where you work to cause the activity that you wish to analyze to occur. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
 
 > [!TIP]
-> Using breakpoints is a common approach to pause code execution at the event of interest.  Unique to TTD, you can set a breakpoint and travel back in time until that breakpoint is hit. The ability to later determine the best breakpoint, after the code has executed, can enables addtional code analysis workflows. For an example of using a breakpoint in the past, see [Time Travel Debugging - Sample App Walkthorugh](time-travel-debugging-walk-through.md). 
+> Using breakpoints is a common approach to pause code execution at the event of interest.  Unique to TTD, you can set a breakpoint and travel back in time until that breakpoint is hit. The ability to later determine the best breakpoint, after the code has executed, can enables addtional code analysis workflows. For an example of using a breakpoint in the past, see [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walk-through.md). 
 >
     
 
@@ -77,7 +77,7 @@ Successfully created the index in 96ms.
 
 - [Time Travel Debugging - Playback](time-travel-debugging-playback.md)
 - [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-files.md)
-- [Time Travel Debugging - Sample App Walkthorugh](time-travel-debugging-walk-through.md)
+- [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md)
 - [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md)
 
 ---

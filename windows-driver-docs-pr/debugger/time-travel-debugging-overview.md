@@ -83,13 +83,14 @@ Review these topics to record and playback a trace file as well as for informati
 - [Time Travel Debugging - Recording](time-travel-debugging-recording.md)
 - [Time Travel Debugging - Playback](time-travel-debugging-playback.md)
 - [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-files.md)
+- [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md)
 - [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md)
 - [Time Travel Debugging - TTDAnalyze](time-travel-debugging-ttdanalyze.md)
 
 These topics describe additional advanced functionality in time travel debugging. 
 
 - [Time Travel Debugging - Trace File object model](time-travel-debugging-object-model.md)
-- [Debugger Object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md)
+- [Debugger Object Model Reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md)
 - [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md)
 - [Time Travel Debugging - Sample App Walkthorugh](time-travel-debugging-walk-through.md)
 
