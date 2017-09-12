@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Playback
 description: This section describes how to record time travel traces.
 ms.author: windowsdriverdev
-ms.date: 09/07/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -12,10 +12,8 @@ ms.technology: windows-devices
 > The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
 >
 
-
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Playback 
 
-TBD TBD TBD
 
 This section describes how to playback time travel traces and navigate in time.
 
@@ -39,23 +37,23 @@ Alternatively, use the ribbon buttons to navigate in the trace.
 ## Trace Segment Terminology
 
 This table summarizes the major elements of a TTD Trace.
+| Term  |  Description|
+|----|-------------------------------------------------------------------------------------------|
+| Keyframe | A location in a trace where replay can start with no previous data​. Keyframes are generated automatically. Larger traces will contain more keyframes. When the trace is indexed, the number of keyframes is displayed. |
+| Trace segment​ | Part of a recorded thread between two key frames​.  |
+| Instruction Position Reference |A specific position reference in the trace, for example 12:0. |
+| Position | The current position in the trace.  |
+| Sequencing point​ | Orderable event in the trace.​ |
 
-TBD - Diagram
-
-Keyframe - Place in a trace where replay can start with no previous data​.
-Trace segment​ - Part of a recorded thread between two key frames​
-Sequencing point​ - Orderable event in the trace​
-Instruction Position Reference - 
-
-Position - 
+TBD - Create elements of trace file diagram.
 
 
 ## Example TTD Playback
 
-This outputs shows using the !tt command to reset the time postion to the begining of the trace. 
+This outputs shows using the !tt 0 command to reset the time postion to the begining of the trace. 
 
 ```
-0:000> !tt
+0:000> !tt 0
 Setting position to the beginning of the trace
 Setting position: 10:0
 (4604.21dc): Break instruction exception - code 80000003 (first/second chance not available)
@@ -102,6 +100,8 @@ ntdll!ZwSetInformationWorkerFactory+0x14:
 00007ff9`31ed0894 c3              ret
 ```
 
+TBD- Why did we skip over E:2 in the example above?
+
 ## !tt navigation commands
 
 Provide a time position in any of the following formats to travel to that point in time.
@@ -133,13 +133,12 @@ Use !tt.*positions* to display all the active threads, including their current p
  Thread ID=0x4C8C - Position: F2:0
  Thread ID=0x1E08 - Position: F3:0
 ```
+In this example three threads each ran until they finished, one after another.  (TBD - Confirm)
+
 
 ## !tt Extension utility commands
 
 Use the following !tt extension commands to work with TTD traces.
-
-
-
 
 You can change threads and navigate in time in each ??? TBD
 
