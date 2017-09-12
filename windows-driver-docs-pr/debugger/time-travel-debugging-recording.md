@@ -22,11 +22,11 @@ To record a TTD trace, follow these steps.
 
 2. Fill in the path to the user mode executable that you wish to trace. For information about working with the Launch Executable menu in WinDbg Preview, see [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md).
 
-![Screen shot of WinDbg Preview showing start recording checkbox](images/ttd-start-recording.png)
+    ![Screen shot of WinDbg Preview showing start recording checkbox](images/ttd-start-recording.png)
 
-> [!NOTE]
-> The UI shown here is preliminary and will likely change. Updated information will be provided in a later release of the documentation. 
->
+    > [!NOTE]
+    > The UI shown here is preliminary and will likely change. Updated information will be provided in a later release of the documentation. 
+    >
 
 3. Check the **Record Process** box to create a trace when the executable is launched. 
 
@@ -34,42 +34,42 @@ To record a TTD trace, follow these steps.
 
 5. The recording dialog appears indicating the trace is being recorded.
 
-![TTD recording popup showing stop and debug as well as cancel options](images/ttd-recording-pop-up.png)
+    ![TTD recording popup showing stop and debug as well as cancel options](images/ttd-recording-pop-up.png)
 
 6. When the recording dialog box is being displayed you can:
 
-- Stop tracing and debug your program. 
-- Cancel the tracing. This option does not TBD.
+    - Stop tracing and debug your program. 
+    - Cancel the tracing. This option does not kill the started process, so it must be manually terminated. ??? TBD - Important to confirm this is true???
 
-Here is where you work to cause the activity that you wish to analyze to occur. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
+    Here is where you work to cause the activity that you wish to analyze to occur. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
 
-> [!TIP]
-> Using breakpoints is a common approach to pause code execution at the event of interest.  Unique to TTD, you can set a breakpoint and travel back in time until that breakpoint is hit. The ability to later determine the best breakpoint, after the code has executed, can enables addtional code analysis workflows. For an example of using a breakpoint in the past, see [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walk-through.md). 
->
+    > [!TIP]
+    > Using breakpoints is a common approach to pause code execution at the event of interest.  Unique to TTD, you can set a breakpoint and travel back in time until that breakpoint is hit. The ability to later determine the best breakpoint, after the code has executed, enables addtional debugging workflows. For an example of using a breakpoint in the past, see [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md). 
+    >
     
 
-7. Once your recording is complete, close your app or hit “Stop and debug” – This will kill your process.
+7. Once your recording is complete, close your app or hit **Stop and debug** – This will kill your process.
 
 8. When the associated application terminates, the trace file will be closed and written out to disk. This is the case if your program crashes as well.
 
-```
-Time Travel Position: 6D1:0
-ntdll!ZwTerminateProcess+0x12:
-00007ffc`61f75922 0f05            syscall
-||0:0:000> !index
-Successfully created the index in 0ms.
-```
+    ```
+    Time Travel Position: 6D1:0
+    ntdll!ZwTerminateProcess+0x12:
+    00007ffc`61f75922 0f05            syscall
+    ||0:0:000> !index
+    Successfully created the index in 0ms.
+    ```
 
 9. When the trace file is closed, indexing will happen automatically as shown in the output below. Indexing allows for complete and faster memory value look ups. This indexing process will take longer for larger trace files.
 
-```
-Time Travel Position: 10:0
-ntdll!ZwTestAlert+0x14:
-00007ffc`61f789d4 c3              ret
-0:000> !index
-Indexed 1/1 keyframes
-Successfully created the index in 96ms.
-```
+    ```
+    Time Travel Position: 10:0
+    ntdll!ZwTestAlert+0x14:
+    00007ffc`61f789d4 c3              ret
+    0:000> !index
+    Indexed 1/1 keyframes
+    Successfully created the index in 96ms.
+    ```
 
 10. At this point you are at the end (TBD - confirm?) of the trace file.
 
@@ -80,7 +80,6 @@ Successfully created the index in 96ms.
 - [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md)
 - [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md)
 
----
 
 ## See Also
 
