@@ -13,11 +13,11 @@ ms.technology: windows-devices
 >
 
 
-# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Recording 
+# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Working with Trace Files
 
-This section describes how to record time travel traces.
+This section describes how to with time travel trace files .
 
-TBD
+TBD TBD TBD 
 
 Traces can be opened after recorded
 

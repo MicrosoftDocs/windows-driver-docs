@@ -13,7 +13,7 @@ ms.technology: windows-devices
 >
 
 
-# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Recording 
+# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Playback 
 
 TBD TBD TBD
 
@@ -163,87 +163,6 @@ Index file loaded.
 ```
 
 
-# Notes - TBD !tt
-
-TBD - Determine which addtional options to describe.
-
-```
-Help for Time Travel Debugging Extensions
-  activitytree [all|<guid>] - Display the E2E activity tree.
-  cmp <p1> <p2>     - Show the execution order relationship between two
-                      positions.  The relationship is ?? if it cannot
-                      determine the runtime ordering.
-  events            - Bring up the .cmdtree window (currently unavailable in clients other than WinDBG).
-  help              - Shows this help.
-  index [-q]        - Commits a memory index to the trace file to extend
-                      the range of addresses the debugger can resolve.
-  position [-c|-s|  - Display current position info.  Use -c to specify
-            -a]       only the current thread.  Use -s to specify the
-                      trace start position.  Use -a to specify displaying
-                      only active threads.
-  pa <addr> [size]  - Get the value(s) in <addr>.  This may return multiple
-                      values if the last reference to the <addr> occurred
-                      in overlapping sequences in different threads.
-  pr <addr> [size]  - Search for the previous read(s) in <addr>.
-  pw <addr> [size]  - Search for the previous write(s) in <addr>.
-  search <direction> <expr> - Search either backwards or forwards in the
-                      trace until the expression evaluates to true.  See the
-                      section on searching the trace file using the debugger
-                      by going to http://idna and following the link to the
-                      Search page in the Wiki pages.
-  sn [count] <expr> - Short cut for !search +j <expr> with optional
-                      iteration count.  Count can be a number in hex or
-                      decimal format, or it can be the symbol '*' to
-                      indicate that it should iterate to the end of the
-                      trace.
-  sp [count] <expr> - Short cut for !search -j <expr> with optional
-                      iteration count.
-  tt <position>     - Time Travel to a position in the trace or if the
-                      position x is 0 to 100 it travels to approximately
-                      x% of the way through the trace.
-  ttpw              - Search previous write instruction in <addr>, and
-                      perform a time travel to write position.
-  replayexceptions [on|off]       - Control how exceptions are replayed:
-                                      on = all software exceptions replay as recorded (slower)
-                                     off = most software exceptions are replayed as C++ exceptions (default, fast)
-                                    Note that all exceptions remain visible in the '!events' command,
-                                    regardless of this setting
-  replaydebugoutput [on|off]      - Control how debug output is replayed:
-                                      on = all debug output will be shown as recorded (slower)
-                                     off = no debug output will be shown (default, fast)
-                                    Note that all debug output events remain visible in the '!events' command,
-                                    regardless of this setting
-
-Note: Input all address and position values in HEX format.  Size must be a a decimal value between 1 and 8.
-
-```
-
-## !idna extension
-
-```
-Help for undocumented debugger commands:
-  .time [-s]                      - Display time travel position and system
-                                    time variables.  Use -s to specify only
-                                    the current thread (short form).
-  bt <position>                   - Set a time breakpoint.
-  g- [BreakAddr [; BreakCmds]]    - Execute backward.
-  g-t <position>                  - Execute backward and break on <position>.
-  gt <position>                   - Execute forward and break on <position> .
-  [~Thread] p- [count] ["Command"] - Reverse step over.
-  [~Thread] p-a <addr>             - Reverse step to address.
-  [~Thread] p-c [count]            - Reverse step over to (previous) call.
-  [~Thread] t- [count] ["Command"] - Reverse step into.
-  [~Thread] t-a <addr>             - Reverse step to address.
-  [~Thread] t-c [count]            - Reverse step into to (previous) call.
-
-```
-
-
-| Command | Description |
-|---------|---------------------------------------------------------------------------|
-!position | Displays the current position of the trace  
-!events   | Opens a command tree window with a list of events in the trace file.  
-!search   | Searches trace similar to ba but can be used for registers see TTT-Search  
 
 
 > Additional Content Pending

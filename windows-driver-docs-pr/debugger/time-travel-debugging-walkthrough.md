@@ -1,5 +1,5 @@
 ---
-title: Time Travel Debugging - Sample App Walkthorugh
+title: Time Travel Debugging - Sample App Walkthrough
 description: This section contains a walk through of a small C++ app. 
 ms.author: windowsdriverdev
 ms.date: 09/11/2017
@@ -13,11 +13,11 @@ ms.technology: windows-devices
 >
 
 
-# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Recording 
+# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Sample App Walkthrough
 
 This section  a walk through of a small C++ app.
 
-TBD
+TBD TBD TBD
 
 ## Sample Code
 
