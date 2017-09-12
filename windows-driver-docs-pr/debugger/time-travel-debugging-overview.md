@@ -93,10 +93,7 @@ These topics describe additional advanced functionality in time travel debugging
 - [Debugger Object Model Reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md)
 - [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md)
 - [Time Travel Debugging - Sample App Walkthorugh](time-travel-debugging-walkthrough.md)
-
-> Topics not yet available -- pending product support
-
-- [Time Travel Debugging - Extension commands] time-travel-debugging-extension-commands.md
+- [Time Travel Debugging - Extension commands](time-travel-debugging-extension-commands.md)
 
 
 ## Things to look out for 

@@ -73,7 +73,9 @@ To record a TTD trace, follow these steps.
 
 10. At this point you are at the end (TBD - confirm?) of the trace file.
 
-11. Now that you have a recorded a TTD trace, you can play the trace back or work with the trace file, for example sharing it with a co-worker. For more information see:
+## Next Steps
+
+Now that you have a recorded a TTD trace, you can play the trace back or work with the trace file, for example sharing it with a co-worker. For more information see these topics.
 
 - [Time Travel Debugging - Playback](time-travel-debugging-playback.md)
 - [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-files.md)
