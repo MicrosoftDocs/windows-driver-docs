@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Recording 
 description: This section describes how to record time travel traces.
 ms.author: windowsdriverdev
-ms.date: 09/11/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,10 +68,13 @@ To record a TTD trace, follow these steps.
 
 Now that you have a recorded a TTD trace, you can play the trace back or work with the trace file, for example sharing it with a co-worker. For more information, see these topics.
 
-- [Time Travel Debugging - Playback](time-travel-debugging-playback.md)
-- [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-files.md)
-- [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md)
-- [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md)
+[Time Travel Debugging - Playback](time-travel-debugging-playback.md)
+
+[Time Travel Debugging - Working with trace files](time-travel-debugging-trace-files.md)
+
+[Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md)
+
+[Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md)
 
 
 ## See Also

@@ -15,11 +15,11 @@ ms.technology: windows-devices
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Playback 
 
 
-This section describes how to playback time travel traces and navigate in time.
+This section describes how to playback time travel traces and navigate forward and back in time.
 
 ## Command time travel navigation
 
-Use a trailing minus sign with the following version of these commands to travel back in time.
+Use a trailing minus sign with the following commands to travel back in time.
 
 | Command  |  For more information |
 |----|-------------------------------------------------------------------------------------------|
@@ -42,15 +42,16 @@ This table summarizes the major elements of a TTD Trace.
 | Keyframe | A location in a trace where replay can start with no previous data​. Keyframes are generated automatically. Larger traces will contain more keyframes. When the trace is indexed, the number of keyframes is displayed. |
 | Trace segment​ | Part of a recorded thread between two key frames​.  |
 | Instruction Position Reference |A specific position reference in the trace, for example 12:0. |
-| Position | The current position in the trace.  |
-| Sequencing point​ | Orderable event in the trace.​ |
+| Sequencing point​ | Orderable event in the trace.​ ??? TBD -- Need example / more info|
 
-TBD - Create elements of trace file diagram.
+??? TBD - Needs review. The goal is to describe elements like key frames that you encounter as you work with trace files.
+
+??? TBD - Create simple elements of trace file diagram.
 
 
 ## Example TTD Playback
 
-This outputs shows using the !tt 0 command to reset the time postion to the begining of the trace. 
+Use the !tt 0 command to reset the time position to the beginning of the TTD trace. 
 
 ```
 0:000> !tt 0
@@ -62,7 +63,7 @@ ntdll!ZwTestAlert+0x14:
 00007ffc`61f789d4 c3              ret
 ```
 
-This outputs shows using the p command to travel forward in a TTD trace. 
+Use the p command to step forward in a TTD trace. 
 
 ```
 0:000> p
@@ -81,7 +82,7 @@ ntdll!TppInitializeTimer+0x54:
 00007ff9`31e8875c 4883a3f000000000 and     qword ptr [rbx+0F0h],0 ds:0000027c`e87065f0=0000000000000000
 ```
 
-This outputs shows using the p- command to travel backwards in a TTD trace. 
+Use the the p- command to step backwards in a TTD trace. 
 
 ```
 0:000> p-
@@ -100,21 +101,23 @@ ntdll!ZwSetInformationWorkerFactory+0x14:
 00007ff9`31ed0894 c3              ret
 ```
 
-TBD- Why did we skip over E:2 in the example above?
+??? TBD - Why did we skip over E:2 in the example above? Should explain that.
 
 ## !tt navigation commands
 
-Provide a time position in any of the following formats to travel to that point in time.
+Use the !tt command to navigate forward or backwards in time, by traveling to a given position in the trace. 
 
-!tt <position> - Time travel to the given position in the trace.
+!tt {position}
+
+Provide a time position in any of the following formats to travel to that point in time.
            
-- If <position> is a decimal number between 0 and 100, it travels to approximately that percent into the trace. For example:
+- If {position} is a decimal number between 0 and 100, it travels to approximately that percent into the trace. For example:
     - !tt 0                   - Time travel to the beginning of the trace
     - !tt 50                  - Time travel to halfway through the trace
     - !tt 100                 - Time travel to the end of the trace
  
 
-- If <position> is #:#, where # are a hexadecimal numbers, it travels to that position. If the number after : is omitted, it's defaulted to zero.
+- If {position} is #:#, where # are a hexadecimal numbers, it travels to that position. If the number after : is omitted, it defaults to zero.
     - !tt 1A0:                - Time travel to position 1A0:0
     - !tt 1A0:0               - Time travel to position 1A0:0
     - !tt 1A0:12F             - Time travel to position 1A0:12F
@@ -125,30 +128,80 @@ Provide a time position in any of the following formats to travel to that point 
 
 ## !tt.positions
 
-Use !tt.*positions* to display all the active threads, including their current positions.
+Use !tt.*positions* to display all the active threads, including their position in the trace.
 
 ```
-0:000> !tt.positions
->Thread ID=0x4164 - Position: 97:4
- Thread ID=0x4C8C - Position: F2:0
- Thread ID=0x1E08 - Position: F3:0
+1:0:000> !tt.positions
+ Thread ID=0x3604 - Position: 20:0
+ Thread ID=0x0A94 - Position: 612:0
+ Thread ID=0x1D78 - Position: A89:0
+ Thread ID=0x38F8 - Position: 1695:0
+ Thread ID=0x0AC4 - Position: 172C:0
+ Thread ID=0x1D8C - Position: 17B5:0
+ Thread ID=0x35FC - Position: 743D:0
+ Thread ID=0x3200 - Position: 7D56:0
 ```
-In this example three threads each ran until they finished, one after another.  (TBD - Confirm)
+In this example eight threads each ran until they finished, one after another.  (??? TBD - Confirm - I don't see any thread listed twice, so I assume this is the case...)
 
+
+Use the [~ (Thread Status)](---thread-status-.md) command to confirm that we positioned at the first thread, 3604.
+
+```
+1:0:000> ~
+.  0  Id: 3f4.3604 Suspend: 4096 Teb: 00000061`79804000 Unfrozen
+   1  Id: 3f4.a94 Suspend: 4096 Teb: 00000061`79806000 Unfrozen
+   2  Id: 3f4.1d78 Suspend: 4096 Teb: 00000061`7980a000 Unfrozen
+   3  Id: 3f4.38f8 Suspend: 4096 Teb: 00000061`7980e000 Unfrozen
+   4  Id: 3f4.ac4 Suspend: 4096 Teb: 00000061`79810000 Unfrozen
+   5  Id: 3f4.1d8c Suspend: 4096 Teb: 00000061`79812000 Unfrozen
+   6  Id: 3f4.35fc Suspend: 4096 Teb: 00000061`79814000 Unfrozen
+   7  Id: 3f4.3200 Suspend: 4096 Teb: 00000061`79808000 Unfrozen
+```
+
+Click on the link next to the third thread (1D78) in the !tt.positions output, to time travel to that position in the trace, A89:0.
+
+```
+1:0:001> !ttdext.tt A89:0
+Setting position: A89:0
+ModLoad: 00007ff8`3cd00000 00007ff8`3ce45000   C:\WINDOWS\System32\ole32.dll
+(3f4.1d78): Break instruction exception - code 80000003 (first/second chance not available)
+Time Travel Position: A89:0
+ntdll!ZwWaitForWorkViaWorkerFactory+0x14:
+00007ff8`3ed88c34 c3              ret
+```
+
+Use the [~ (Thread Status)](---thread-status-.md) command to confirm that we are now positioned at the third thread, 1D78.
+
+```
+1:0:002> ~
+   0  Id: 3f4.3604 Suspend: 4096 Teb: 00000061`79804000 Unfrozen
+   1  Id: 3f4.a94 Suspend: 4096 Teb: 00000061`79806000 Unfrozen
+.  2  Id: 3f4.1d78 Suspend: 4096 Teb: 00000061`7980a000 Unfrozen
+   3  Id: 3f4.38f8 Suspend: 4096 Teb: 00000061`7980e000 Unfrozen
+   4  Id: 3f4.ac4 Suspend: 4096 Teb: 00000061`79810000 Unfrozen
+   5  Id: 3f4.1d8c Suspend: 4096 Teb: 00000061`79812000 Unfrozen
+   6  Id: 3f4.35fc Suspend: 4096 Teb: 00000061`79814000 Unfrozen
+   7  Id: 3f4.3200 Suspend: 4096 Teb: 00000061`79808000 Unfrozen
+```
 
 ## !tt Extension utility commands
 
 Use the following !tt extension commands to work with TTD traces.
 
-You can change threads and navigate in time in each ??? TBD
-
---- TEST ---
-
-(See echo lab)
 
 ### !tt.index
 
-Use !tt.*index* to run an indexing pass over the current trace. If the current trace is already indexed, this does nothing.
+Use !tt.*index* to run an indexing pass over the current trace. 
+
+```
+0:000> !index
+Indexed 10/14 keyframes
+Indexed 14/14 keyframes
+Successfully created the index in 535ms.
+
+```
+
+If the current trace is already indexed, the !tt.index command does nothing.
 
 ```
 0:000> !tt.index
@@ -165,15 +218,17 @@ Index file loaded.
 ```
 
 
-
-
-> Additional Content Pending
-
 ---
 
 ## See Also
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
+
+[Time Travel Debugging - Recording](time-travel-debugging-recording.md)
+
+[Time Travel Debugging - Working with trace files](time-travel-debugging-trace-files.md)
+
+[Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md)
 
 ---
 
