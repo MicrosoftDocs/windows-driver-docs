@@ -31,49 +31,24 @@ Use a trailing minus sign with the following version of these commands to travel
 
 ## Ribbon button time travel navigation
 
-Alternatively use the ribbon buttons to navigate in the trace.
+Alternatively, use the ribbon buttons to navigate in the trace.
 
 ![Screen shot of WinDbg Preview showing start recording checkbox](images/ttd-ribbon-buttons.png)
-
-## Use the !tt extension to travel in time
-
-Provide a time position in any of the following formats to travel to that point in time.
-
-!tt <position> - Time travel to the given position in the trace.
-           
-- If <position> is a decimal number between 0 and 100, it travels to approximately that percent into the trace. For example:
-    - !tt 0                   - Time travel to the beginning of the trace
-    - !tt 50                  - Time travel to halfway through the trace
-    - !tt 100                 - Time travel to the end of the trace
- 
-
-- If <position> is #:#, where # are a hexadecimal numbers, it travels to that position. If the number after : is omitted, it's defaulted to zero.
-    - !tt 1A0:                - Time travel to position 1A0:0
-    - !tt 1A0:0               - Time travel to position 1A0:0
-    - !tt 1A0:12F             - Time travel to position 1A0:12F
-
-- If the : is omitted, then the second number must have precisely 16 hexadecimal digits, with zeros for left-padding.
-    - !tt 1A0000000000000012F - Time travel to position 1A0:12F
 
 
 ## Trace Segment Terminology
 
 This table summarizes the major elements of a TTD Trace.
 
-Keyframe - 
-Key frame​
-Place in a trace where replay can start with no previous data​
+TBD - Diagram
+
+Keyframe - Place in a trace where replay can start with no previous data​.
+Trace segment​ - Part of a recorded thread between two key frames​
+Sequencing point​ - Orderable event in the trace​
+Instruction Position Reference - 
 
 Position - 
 
-
-Trace segment​
-Part of a recorded thread between two key frames​
-
-Sequencing point​
-Orderable event in the trace​
-
-Instruction Position Reference - 
 
 ## Example TTD Playback
 
@@ -127,13 +102,28 @@ ntdll!ZwSetInformationWorkerFactory+0x14:
 00007ff9`31ed0894 c3              ret
 ```
 
+## !tt navigation commands
 
-## TTD !tt Extension Command
+Provide a time position in any of the following formats to travel to that point in time.
 
-Use the following !tt extension commands to work with TTD traces.
+!tt <position> - Time travel to the given position in the trace.
+           
+- If <position> is a decimal number between 0 and 100, it travels to approximately that percent into the trace. For example:
+    - !tt 0                   - Time travel to the beginning of the trace
+    - !tt 50                  - Time travel to halfway through the trace
+    - !tt 100                 - Time travel to the end of the trace
+ 
+
+- If <position> is #:#, where # are a hexadecimal numbers, it travels to that position. If the number after : is omitted, it's defaulted to zero.
+    - !tt 1A0:                - Time travel to position 1A0:0
+    - !tt 1A0:0               - Time travel to position 1A0:0
+    - !tt 1A0:12F             - Time travel to position 1A0:12F
+
+- If the : is omitted, then the second number must have precisely 16 hexadecimal digits, with zeros for left-padding.
+    - !tt 1A0000000000000012F - Time travel to position 1A0:12F
 
 
-### !tt.positions
+## !tt.positions
 
 Use !tt.*positions* to display all the active threads, including their current positions.
 
@@ -143,6 +133,19 @@ Use !tt.*positions* to display all the active threads, including their current p
  Thread ID=0x4C8C - Position: F2:0
  Thread ID=0x1E08 - Position: F3:0
 ```
+
+## !tt Extension utility commands
+
+Use the following !tt extension commands to work with TTD traces.
+
+
+
+
+You can change threads and navigate in time in each ??? TBD
+
+--- TEST ---
+
+(See echo lab)
 
 ### !tt.index
 
