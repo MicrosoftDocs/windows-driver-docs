@@ -71,7 +71,7 @@ To record a TTD trace, follow these steps.
     Successfully created the index in 96ms.
     ```
 
-10. At this point you are at the end (TBD - confirm?) of the trace file.
+10. At this point you are at the end (TBD - confirm?) of the trace file and are ready to travel back in time.
 
 ## Next Steps
 
