@@ -28,6 +28,8 @@ In the event you can't figure out the issue yourself, you can share the trace w
 TTD is lightweight and works to add minimal overhead as it captures code execution in trace files. The performance impact is similar to attaching a non-invasive debugger connection. 
 
 
+![Example screen shot of WinDbg preview showing time travel command and cdog app](images/ttd-windbgx-screen-shot-example-cdog-app.png)
+
 ##  Comparison of Debugging Tools
 
 This table summarizes the pros and cons of the different debugging solutions available.
