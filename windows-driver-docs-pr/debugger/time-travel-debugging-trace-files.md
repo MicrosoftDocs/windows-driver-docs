@@ -36,22 +36,22 @@ All of the output files are stored in the users document folder by default. For 
 ```
 C:\Users\User1\Documents
 ```
-The most recently used list of trace files allows you to return to working with previous files.
+The most recently used list of trace files allows you to work with previously used files.
 
 ![File open list of .run trace files showing five recently used trace files](images/ttd-recent-trace-files.png) 
 
 
 ## Trace .IDX index files  
 
-Once the tracing is stopped and index (.IDX) file is created to allow for faster access to the trace information.
+Once the tracing is stopped an index (.IDX) file is created to allow for faster access to the trace information.
 
-IDX files can also be large, typically size larger than the .RUN file. 
+IDX files can also be large, typically ??? TBD *x to y size* larger than the .RUN file. 
 
 ## Recreating the .IDX file
-You can recreate the index file from the .RUN file using the !tt.index command.
+You can recreate the index file from the .RUN file using the ```!tt.index``` command.
 
 ```
-0:0:001> !index
+0:0:001> !tt.index
 Indexed 3/3 keyframes
 Successfully created the index in 49ms.
 ```
@@ -87,8 +87,6 @@ Error: Failed starting the guest process "C:\Windows\Notepad.exe test.txt" : err
 Trace dumped to C:\Users\User1\Documents\Notepad.exe test01.run
 ```
 
-
----
 
 ## See Also
 

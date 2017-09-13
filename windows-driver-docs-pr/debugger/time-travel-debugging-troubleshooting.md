@@ -17,16 +17,61 @@ ms.technology: windows-devices
 
 This section describes how to troubleshoot time travel traces.
 
-TBD
+??? TBD - I need some help with this topic as I think the related Wikis are not targeted towards external relase and may be out of date:
 
 https://osgwiki.com/wiki/Trace_file_derailment
 
 https://osgwiki.com/wiki/Debugging_a_Time_Travel_Trace
 
+P??? TBD - Please add any additional information and correct anything below.
+
+P??? TBD - It would be great to use any product telemetry to look at the 3-5 top failures and offer guidance for those in the docs.
+
+
+## Issues with .IDX index files
+
+Use the ```!tt.index status``` command to examine the state of the .IDX index file associated with the .RUN trace file.
+
+### Recreating the .IDX index file
+
+If you suspect and issue with the index file, recreate it. To to this:
+
+1. Delete the existing IDX file, it will have the same name as the .RUN trace file and be located in the same directory that the .RUN file is.
+2. Open the trace .RUN file in WinDbg Preview.
+3. Run the ```!tt.index``` command.
+4. Use the ```!tt.index status``` command to confirm that the trace index is functional.
+
+
+## Issues with Trace .RUN Files
+
+When there are issues with the trace .RUN file, you may receive error messages such as these.
+
+```
+Replay and log are out of sync at fallback data. Packet type is incorrect "Packet Type"
+Replay and log are out of sync at opaque data. Log had already reached the end
+Replay exit thread event does not match up with logged event
+Logged debug write values are out of sync with replay
+```
+In most cases all of the failure messages indicate that the .RUN trace file is not usable and must be re-recorded.
+
+??? TBD 
+Would any (or all?) failures be related to a troublesome INDEX file? Do we want to share which messages indicate that?
+Do we want to talk about disabling CPU features as mentioned on the wiki? 32 vs. 64 bit?
+
+
+### Re-recording the user mode app
+
+If there is a specific issue with recording a user mode app, you may want to try recording a different app on the same PC, or try the same app on a different PC. You may want to try and record a different use of the app to see if there is a specific issue with recording certain parts of the app.
+
+## TTD Incompatibilities
+
+See "Things to look out for" in [Time Travel Debugging - Overview](time-travel-debugging-overview.md) for information on TTD incompatibilities.
+
 
 > Additional Content Pending
 
----
+??? TBD - What additional information can we provide to help our users troubleshoot the most common issues with TTD?
+
 
 ## See Also
 

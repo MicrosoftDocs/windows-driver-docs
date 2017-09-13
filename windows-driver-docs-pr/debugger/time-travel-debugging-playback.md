@@ -218,8 +218,6 @@ Index file loaded.
 ```
 
 
----
-
 ## See Also
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
