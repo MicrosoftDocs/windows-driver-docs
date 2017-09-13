@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Extension commands
 description: This section describes the TTD extension commands.
 ms.author: windowsdriverdev
-ms.date: 09/11/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,11 @@ ms.technology: windows-devices
 
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Extension commands
 
-This section describes how to  section describes how to use the TTD extension commands.
+This section describes how to  section describes how to use the TTD extension commands, ???TBD.
 
-# Notes - TBD !tt
+# !idna
 
-TBD - Determine which addtional options to describe.
+??? TBD - Determine which if any of the !idna options to describe.
 
 ```
 Help for Time Travel Debugging Extensions
@@ -72,7 +72,16 @@ Note: Input all address and position values in HEX format.  Size must be a a dec
 
 ```
 
-## !idna extension
+??? TBD Table
+
+
+| Command | Description |
+|---------|---------------------------------------------------------------------------|
+
+!search   | Searches trace similar to ba but can be used for registers see TTT-Search  
+
+
+## Other
 
 ```
 Help for undocumented debugger commands:
@@ -91,14 +100,6 @@ Help for undocumented debugger commands:
   [~Thread] t-c [count]            - Reverse step into to (previous) call.
 
 ```
-
-
-| Command | Description |
-|---------|---------------------------------------------------------------------------|
-!position | Displays the current position of the trace  
-!events   | Opens a command tree window with a list of events in the trace file.  
-!search   | Searches trace similar to ba but can be used for registers see TTT-Search  
-
 
 
 
