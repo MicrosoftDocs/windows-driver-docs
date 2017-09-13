@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Working with Trace Files 
 description: This section describes how to work with time travel trace files 
 ms.author: windowsdriverdev
-ms.date: 09/06/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,29 +15,78 @@ ms.technology: windows-devices
 
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Working with Trace Files
 
-This section describes how to with time travel trace files .
+This section describes how to work with time travel trace files.
 
-TBD TBD TBD 
+## Trace File Overview
 
-Traces can be opened after recorded
+.RUN files are used to record code execution.
 
-Need to share the .run file. .idx can be re-built with !index. If you don’t care about how big, share the .idx file. – TBD – What should we recommend people do.
+.IDX files are created when the trace file is closed and enable quick acess to memory locations in the trace file. 
 
-Can be shared between others
+.OUT files are used to log error messages, when failures occur.
 
-Key positions in time 
-"Now, let's say that you suspect there is a bug on a part of the code your coworker knows best. You can take note of what position in time you coworker should navigate to in order to investigate" (pick a previous position) "Then you can share this position with your coworker" 
-"Let me pretend to be your coworker (Close Windbg). I get the trace file from you and I open it. (Open the trace)" 
-"I can pick up debugging exactly where you suggest by navigating to that position. The command for this is !tt x:y"(run command) 
-Successful recorded traces or previously loaded traces can be easily access from your Recents list as well.
+## Trace .RUN files  
 
-o	Traces can be opened after recorded
-o	Need to share the .run file. .idx can be re-built with !index. If you don’t care about how big, share the .idx file. – TBD – What should we recommend people do.
-o	Can be shared between others
+Trace .RUN files can be opened after they are recorded using **File** > **Open Trace**.
+
+![File open options showing open trace option highlighted](images/ttd-start-debugging-options.png) 
+
+All of the output files are stored in the users document folder by default. For example, for User1 the TTD files would be stored here:
+
+```
+C:\Users\User1\Documents
+```
+The most recently used list of trace files allows you to return to working with previous files.
+
+![File open list of .run trace files showing five recently used trace files](images/ttd-recent-trace-files.png) 
 
 
+## Trace .IDX index files  
 
-> Additional Content Pending
+Once the tracing is stopped and index (.IDX) file is created to allow for faster access to the trace information.
+
+IDX files can also be large, typically size larger than the .RUN file. 
+
+## Recreating the .IDX file
+You can recreate the index file from the .RUN file using the !tt.index command.
+
+```
+0:0:001> !index
+Indexed 3/3 keyframes
+Successfully created the index in 49ms.
+```
+
+## Sharing TTD Trace .RUN files
+
+TTD trace files can be shared with others by copying the .RUN file. You can rename the file to include any addtional information, such as the date or a bug number.
+
+The .IDX file does not need to be copied as it can be re-created using the !tt.index command.
+
+
+> [!TIP]
+> When collaborating with others, pass on any relevant trace positions realted to the problem at hand. The collaborator can use the ```!tt x:y``` command to move to that exact point in time in the execution of the code. Time position ranges can be included in bug descriptions to track where the possible issue be occuring.
+>
+
+
+## .OUT files
+
+Recording errors and other recording output is written to an .out file. 
+
+TBD ??? - Need to confirm that an out file is only created on error.
+
+```
+Initializing Time Travel Tracing for Launch of "C:\Windows\Notepad.exe test.txt"
+Time: 08/03/2017 17:23:33
+OS:10.0.15063 EDITION:x64
+Group tracing GUID: f8295bed-5a11-401c-8650-5f0c74390c0e
+
+Running "C:\Windows\Notepad.exe test.txt"
+Error: Failed starting the guest process "C:\Windows\Notepad.exe test.txt" : error:(2)The system cannot find the file specified.
+
+   (onecore\sdktools\debuggers\ttd\dev\idna\tracer\client.cpp:StartGuestProcess:2426)
+Trace dumped to C:\Users\User1\Documents\Notepad.exe test01.run
+```
+
 
 ---
 
