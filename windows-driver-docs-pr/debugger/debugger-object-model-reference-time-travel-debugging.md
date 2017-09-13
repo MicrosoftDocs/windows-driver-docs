@@ -2,7 +2,7 @@
 title: Debugger Object model reference - Time Travel Debugging
 description: This section describes the debugger model objects associated with time travel debugging.
 ms.author: windowsdriverdev
-ms.date: 09/08/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -29,90 +29,78 @@ The Lifetime, Threads and Events TTD objects are associated with the current pro
 
 ## TTD Lifetime Object 
 
-The TTD Lifetime Object contains information on the contents of the time travel trace.
+The TTD Lifetime Object contains the position range [smallest, largest] found in the time travel trace file.
 
-**MinPostion** 
-
+**MinPostion** - The minimum valid position for a position range.
 MinPosition Contains:
-  *Sequence* - The sequence position in the TTD trace. TBD
-  *Steps* - The number of steps in the TTD trace. TBD
+  *Sequence* - References the last position where this thread might have explicitly interacted with other threads.
+  *Steps* - The steps (instructions) beyond the last thread sequencing event.
  
-**MaxPosition**
+**MaxPosition** - The maximum valid position for a position range.
 MaxPosition Contains:
-  *Sequence* - The sequence position in the TTD trace. TBD
-  *Steps* - The number of steps in the TTD trace. TBD
+  *Sequence* - References the last position where this thread might have explicitly interacted with other threads.
+  *Steps* - The steps (instructions) beyond the last thread sequencing event.
   
+Example:
 
-Use the dx command to display all of the childern objects to the TTD Lifetime object.
+Use the dx command to display help about all of the childern objects to the TTD Lifetime object.
 
 ```
-0:000> dx -r2 @$curprocess.TTD .@"Lifetime"
-@$curprocess.TTD .@"Lifetime"                 : [97:0, 113:0]
-    MinPosition      : 97:0 [Time Travel]
-        Sequence         : 0x97
-        Steps            : 0x0
-    MaxPosition      : 113:0 [Time Travel]
-        Sequence         : 0x113
-        Steps            : 0x0
+0:000> dx -r2 -h @$curprocess.TTD.Lifetime
+@$curprocess.TTD.Lifetime                 : [D:0, 8A:0] [The position range [smallest, largest] found in the trace file.]
+    MinPosition      : D:0 [Time Travel] [The minimum valid position for a position range.]
+        Sequence         : 0xd [References the last position where this thread might have explicitly interacted with other threads.]
+        Steps            : 0x0 [Counts the steps (instructions) beyond the last thread sequencing event.]
+    MaxPosition      : 8A:0 [Time Travel] [The maximum valid position for a position range.]
+        Sequence         : 0x8a [References the last position where this thread might have explicitly interacted with other threads.]
+        Steps            : 0x0 [Counts the steps (instructions) beyond the last thread sequencing event.]
 ```
 
-
-
-## TTD Threads Object 
+## TTD Threads Objects 
 
 The TTD Threads Object contains and array of the threads in the TTD trace. Each thread in the array contains the following objects.
 
-**UniqueId** 
-The uniqueId is an assigned Unique ID TBD TBD.
-
-**Id**
+**UniqueId** - The uniqueId is the thread's unique ID within the process (TIDs can be reused over the life of the process).]
+ 
+**Id** - The thread's TID assigned by the OS.
 
 **LifeTime**
-
-The TTD Lifetime Object contains information on the contents of the time travel trace.
-
-
-**MinPostion** 
-
-MinPosition Contains:
-  *Sequence* - The sequence position in the TTD trace. TBD
-  *Steps* -    The number of steps in the TTD trace. TBD
+The TTD Lifetime Object contains information on the contents of the time travel trace, see above for information on the LifeTime object.
  
-**MaxPosition**
-MaxPosition Contains:
-  *Sequence* - The sequence position in the TTD trace. TBD
-  *Steps* -    The number of steps in the TTD trace. TBD
- 
-**ActiveTime**
-
-The TTD Lifetime Object contains information on the contents of the time travel trace.
+**ActiveTime** - The position range where execution of this thread is recorded.
 
 The active lifetime of a thread is the closest approximation to when the thread was present during record.
 [FirstPosition..LastPosition] is the portion of the timeline that contains instructions executed by the thread.
 
+## TTD Threads Methods 
+ 
+ **SeekTo** - Method which seeks to time position.
+ **ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier.
+        
+ 
 ### TTD Threads Object Examples
 
 Use the dx command to display all of the children objects to the first TTD threads object.
 
 ```
-0:000> dx -r3 @$curprocess.TTD .@"Threads"[0]
-@$curprocess.TTD .@"Threads"[0]                 : UID: 2, TID: 0x4164
-    UniqueId         : 0x2
-    Id               : 0x4164
-    Lifetime         : [0:0, FFFFFFFFFFFFFFFE:0]
-        MinPosition      : Min Position [Time Travel]
-            Sequence         : 0x0
-            Steps            : 0x0
-        MaxPosition      : FFFFFFFFFFFFFFFE:0 [Time Travel]
-            Sequence         : 0xfffffffffffffffe
-            Steps            : 0x0
-    ActiveTime       : [97:0, ED:0]
-        MinPosition      : 97:0 [Time Travel]
-            Sequence         : 0x97
-            Steps            : 0x0
-        MaxPosition      : ED:0 [Time Travel]
-            Sequence         : 0xed
-            Steps            : 0x0
+0:000> dx -r3 -h @$curprocess.TTD.Threads[0]
+@$curprocess.TTD.Threads[0]                 : UID: 2, TID: 0x4C2C
+    UniqueId         : 0x2 [The thread's unique ID within the process (TIDs can be reused over the life of the process).]
+    Id               : 0x4c2c [The thread's TID assigned by the OS.]
+    Lifetime         : [0:0, FFFFFFFFFFFFFFFE:0] [The position range where the thread appears in the timeline.]
+        MinPosition      : Min Position [Time Travel] [The minimum valid position for a position range.]
+            Sequence         : 0x0 [References the last position where this thread might have explicitly interacted with other threads.]
+            Steps            : 0x0 [Counts the steps (instructions) beyond the last thread sequencing event.]
+        MaxPosition      : FFFFFFFFFFFFFFFE:0 [Time Travel] [The maximum valid position for a position range.]
+            Sequence         : 0xfffffffffffffffe [References the last position where this thread might have explicitly interacted with other threads.]
+            Steps            : 0x0 [Counts the steps (instructions) beyond the last thread sequencing event.]
+    ActiveTime       : [D:0, 64:0] [The position range where execution of this thread is recorded.]
+        MinPosition      : D:0 [Time Travel] [The minimum valid position for a position range.]
+            Sequence         : 0xd [References the last position where this thread might have explicitly interacted with other threads.]
+            Steps            : 0x0 [Counts the steps (instructions) beyond the last thread sequencing event.]
+        MaxPosition      : 64:0 [Time Travel] [The maximum valid position for a position range.]
+            Sequence         : 0x64 [References the last position where this thread might have explicitly interacted with other threads.]
+            Steps            : 0x0 [Counts the steps (instructions) beyond the last thread sequencing event.]
 ```
 
 The [Time Travel] links provide a link to a 
@@ -174,11 +162,12 @@ Use the dx command to display all of the childern objects to the TTD Events obje
 
 > Additional Content Pending
 
----
+
 
 ## See Also
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
+
 
 ---
 

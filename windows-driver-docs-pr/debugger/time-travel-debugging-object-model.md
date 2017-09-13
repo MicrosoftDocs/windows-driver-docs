@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Object Model
 description: This section describes how to use the data model to query time travel traces. 
 ms.author: windowsdriverdev
-ms.date: 09/08/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -16,11 +16,14 @@ ms.technology: windows-devices
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Object Model
 
 
-This section describes how to use the data model to query time travel traces. This can be a powerful tool to 
+TBD TBD TBD 
 
-For more information about objects see these topics:
+This section describes how to use the data model to query time travel traces. This can be a powerful tool to answer ask questions like these about the code that is captured in a a time travel trace.
 
-[Debugger Object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md)
+- foo
+- bar
+
+For more information about objects described here, see [Debugger Object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md).
 
 
 ## Querying a Time Travel Trace – dx namespaces and commands
