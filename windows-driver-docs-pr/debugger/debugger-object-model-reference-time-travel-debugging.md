@@ -1,5 +1,5 @@
 ---
-title: Debugger Object model reference - Time Travel Debugging
+title: Debugger object model reference - time travel debugging (TTD)
 description: This section describes the debugger model objects associated with time travel debugging.
 ms.author: windowsdriverdev
 ms.date: 09/13/2017
@@ -13,74 +13,109 @@ ms.technology: windows-devices
 >
 
 
-# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Debugger Object model reference - Time Travel Debugging
+# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Debugger object model reference - time travel debugging (TTD)
 
-This section describes the debugger model objects associated with time travel debugging.
+This section describes the debugger model objects associated with time travel debugging - TTD. 
 
-The Lifetime, Threads and Events TTD objects are associated with the current process (curprocess). Use the dx command to view these TTD Objects.
+For general information about the debugger object model, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md) and  [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md). 
+
+For information on working with the TTD objects see, [Time Travel Debugging - Trace File object model](time-travel-debugging-object-model.md).
+
+## TTD Object
+
+The TTD object contains time travel debugging specific properties available for each process in a trace file. The TTD Lifetime, Threads and Events objects are documented in this topic. The TTD object is associated with the current process (curprocess) debugger object. 
+
+### TTD Methods
+
+**SetPosition** - Sets the debugger to point to the given position on this process.    
+
+### Example
+
+Use the dx command with the help option (-h)  to view the TTD Objects with their descriptions.
 
 ```
-0:000> dx @$curprocess.TTD 
-@$curprocess.TTD  
-    Lifetime         : [97:0, 113:0]
-    Threads         
-    Events          
+0:000>  dx -h @$curprocess.TTD
+@$curprocess.TTD                 [TTD-specific properties available for each process (for each trace file).]
+    Lifetime         : [D:0, 8A:0] [The position range [smallest, largest] found in the trace file.]
+    Threads          [This process' list of threads alive throughout the timeline.]
+    Events           [This process' list of events.]         
+```
+
+Add the -v verbose option to view the methods associated with the TTD Objects, in this case the SetPostion method.
+
+```
+0:000> dx -h -v @$curprocess.TTD 
+@$curprocess.TTD                  [TTD-specific properties available for each process (for each trace file).]
+    Lifetime         : [D:0, 8A:0] [The position range [smallest, largest] found in the trace file.]
+    Threads          [This process' list of threads alive throughout the timeline.]
+    Events           [This process' list of events.]
+    SetPosition      [Sets the debugger to point to the given position on this process.]      
 ```
 
 ## TTD Lifetime Object 
 
-The TTD Lifetime Object contains the position range [smallest, largest] found in the time travel trace file.
+The TTD Lifetime Object contains the position range [smallest, largest] found in the time travel trace file. 
 
-**MinPostion** - The minimum valid position for a position range.
-MinPosition Contains:
+**MinPostion** - The minimum valid position for a position range. MinPosition Contains:
+
   *Sequence* - References the last position where this thread might have explicitly interacted with other threads.
+
   *Steps* - The steps (instructions) beyond the last thread sequencing event.
  
-**MaxPosition** - The maximum valid position for a position range.
-MaxPosition Contains:
+**MaxPosition** - The maximum valid position for a position range. MaxPosition Contains:
+
   *Sequence* - References the last position where this thread might have explicitly interacted with other threads.
+  
   *Steps* - The steps (instructions) beyond the last thread sequencing event.
   
-Example:
+### TTD Lifetime Methods
 
-Use the dx command to display help about all of the childern objects to the TTD Lifetime object.
+**ToDisplayString([FormatSpecifier]** - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object childern support this method.
+
+### TTD Object Example
+
+Use the dx command to display information about all of the childern objects of the TTD Lifetime object.
 
 ```
-0:000> dx -r2 -h @$curprocess.TTD.Lifetime
+0:000> x -r2 -h -v @$curprocess.TTD.Lifetime
 @$curprocess.TTD.Lifetime                 : [D:0, 8A:0] [The position range [smallest, largest] found in the trace file.]
     MinPosition      : D:0 [Time Travel] [The minimum valid position for a position range.]
         Sequence         : 0xd [References the last position where this thread might have explicitly interacted with other threads.]
         Steps            : 0x0 [Counts the steps (instructions) beyond the last thread sequencing event.]
+        SeekTo           [Method which seeks to time position]
+        ToDisplayString  [ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier]
     MaxPosition      : 8A:0 [Time Travel] [The maximum valid position for a position range.]
         Sequence         : 0x8a [References the last position where this thread might have explicitly interacted with other threads.]
         Steps            : 0x0 [Counts the steps (instructions) beyond the last thread sequencing event.]
+        SeekTo           [Method which seeks to time position]
+        ToDisplayString  [ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier]
+    ToDisplayString  [ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier]
 ```
 
 ## TTD Threads Objects 
 
-The TTD Threads Object contains and array of the threads in the TTD trace. Each thread in the array contains the following objects.
+The TTD Threads Object contains an array of the threads in the TTD trace. Each thread in the array contains the following objects.
 
-**UniqueId** - The uniqueId is the thread's unique ID within the process (TIDs can be reused over the life of the process).]
+**UniqueId** - The uniqueId is the thread's unique ID within the process (TIDs can be reused over the life of the process).
  
 **Id** - The thread's TID assigned by the OS.
 
-**LifeTime**
-The TTD Lifetime Object contains information on the contents of the time travel trace, see above for information on the LifeTime object.
- 
-**ActiveTime** - The position range where execution of this thread is recorded.
+**LifeTime** - The TTD Lifetime object contains information on the contents of the time travel trace, see above for information on the LifeTime object. In the Lifetime object, the MinPosition to MaxPosition range, is the portion of the timeline that contains instructions executed by the thread.
 
-The active lifetime of a thread is the closest approximation to when the thread was present during record.
-[FirstPosition..LastPosition] is the portion of the timeline that contains instructions executed by the thread.
+ 
+**ActiveTime** - The position range where execution of this thread is recorded. The active lifetime of a thread is the closest approximation to when the thread was present during recording of the trace.
+
 
 ## TTD Threads Methods 
  
- **SeekTo** - Method which seeks to time position.
- **ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier.
+ **SeekTo** - Method which seeks to time position. The MinPosition and MaxPosition TTD Threads objects support this method.
+ 
+ **ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object childern support this method.
         
  
-### TTD Threads Object Examples
+### TTD Threads Object Example
 
-Use the dx command to display all of the children objects to the first TTD threads object.
+Use the dx command to display all of the children objects to the first TTD threads object in the array.
 
 ```
 0:000> dx -r3 -h @$curprocess.TTD.Threads[0]
@@ -103,45 +138,112 @@ Use the dx command to display all of the children objects to the first TTD threa
             Steps            : 0x0 [Counts the steps (instructions) beyond the last thread sequencing event.]
 ```
 
-The [Time Travel] links provide a link to a 
+The [Time Travel] links provide a link to a SeekTo() a specific event. ??? TBD - My sample seems to Seekto() vs. 2:0 - bug?
 
-```
-dx @$curprocess.TTD .@"Threads"[2].@"ActiveTime".@"MinPosition".SeekTo()
+```0:0:000> dx -r1 @$curprocess.TTD .@"Threads"[2].@"ActiveTime"
+@$curprocess.TTD .@"Threads"[2].@"ActiveTime"                 : [6A:0, 89:0]
+   MinPosition      : 6A:0 [Time Travel]
+   MaxPosition      : 89:0 [Time Travel]
+0:0:000> dx @$curprocess.TTD .@"Threads"[2].@"ActiveTime".@"MinPosition".SeekTo()
+@$curprocess.TTD .@"Threads"[2].@"ActiveTime".@"MinPosition".SeekTo()
+
 ```
 
 ## TTD Events Object 
 
 The TTD Events Object contains an array of events in the TTD trace.
-Events are the TBD... in the TTD trace
 
-**Type** - The type of module that is loaded, for example *ModuleLoaded* indicates TBD.
-Contains:
- *Length* - Length of the TBD in TBD, for example 0xc
+**Events** - This process list of events in the trace.
+
+    Type             : ModuleLoaded [The type of the event.]
+        Length           : 0xc [Length - Property which returns the length of the string]
+    Position         : 2:0 [Time Travel] [The position where the event happened.]
+        Sequence         : 0x2 [References the last position where this thread might have explicitly interacted with other threads.]
+        Steps            : 0x0 [Counts the steps (instructions) beyond the last thread sequencing event.]
+    Module           : Module C:\Users\DOMARS\Documents\Visual Studio 2015\Projects\CDog_Console\Debug\CDog_Console.exe at address 0X12B0000 with size 126976 [TTD-specific properties for a module.]
+        Name             : C:\Users\DOMARS\Documents\Visual Studio 2015\Projects\CDog_Console\Debug\CDog_Console.exe [The name of a module.]
+            Length           : 0x59 [Length - Property which returns the length of the string]
+        Address          : 0x12b0000 [The address where the module was loaded.]
+        Size             : 0x1f000 [The size of the module in bytes.]
+        Checksum         : 0x0 [The checksum of the module.]
+        Timestamp        : 0x59b1cfa6 [The timestamp of the module.]
+
+### TTD Events Type Object
+
+**Type** - The type of event. For example *ModuleLoaded* indicates that code module loaded. Contains:
+*Length* - Property which returns the length of the string, for example 0xc.
+
+### TTD Events Type Methods
+
+**Contains(OtherString)** -Method which returns whether the string contains a given sub string.
+
+**EndsWith(OtherString)** -Method which returns whether the string ends with a given string.
+
+**IndexOf(OtherString)** -Method which returns the index of the first occurrence of a substring in the given string.  If no such occurrence exists, -1 is returned.
+
+**LastIndexOf(OtherString)** -Method which returns the index of the last occurrence of a substring in the given string.  If no such occurrence exists, -1 is returned.
+
+**Length** - Property which returns the length of the string.
+
+**PadLeft(TotalWidth)** - Method which right aligns the string to the specified width by inserting spaces at the left of the string.
+
+**PadRight(TotalWidth)** - Method which left aligns the string to the specified width by inserting spaces at the right of the string.
+
+**Remove(StartPos, [Length])** - Method which removes all characters beginning at the specified position from the string.  If an optional length is supplied, only that many characters after the starting position are removed.
+
+**Replace(SearchString, ReplaceString)** - Method which replaces every occurrence of a specified search string with a replacement string.
+
+**StartsWith(OtherString)** - Method which returns whether the string starts with a given string.
+
+**Substring(StartPos, [Length])** - Method which retrieves a substring from the given string.  The substring starts at a specified character position and continues to the end of the string or for the optionally specified length.
+
+**ToLower()** - Returns a copy of this string converted to lowercase.
+
+**ToUpper()** - Returns a copy of this string converted to uppercase.
+
+**ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object childern support this method.
  
-**Position**
-The position is an offset to the current event from the TBD of the TTD trace, for example 8C:0 [Time Travel] indicates TBD.
+### TTD Events Position Objects
 
-Contains:
-  *Sequence* - The sequence is TBD, for example  0x8c
-  *Steps* - Steps, for example 0x0 indicates, that TBD.
+**Position** - The position where the event happened. The position is an offset to the current event from the start of the TTD trace. Position contains:
+
+  *Sequence* - References the last position where this thread might have explicitly interacted with other threads.
+
+  *Steps* - Counts the steps (instructions) beyond the last thread sequencing event.
+
+### TTD Events Position Methods
  
-**Module**
+ **SeekTo** - Method which seeks to time position. The MinPosition and MaxPosition TTD Threads objects support this method.
+ 
+ **ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object childern support this method.
+        
 
- The module references a specific code element, for example
+### TTD Events Module Objects
+
+**Module** -  The module references a specific code element, for example:
  ```
  Module C:\Data1\Redstone\Debugger\TTD\CDog_Console\Debug\CDog_Console.exe at address 0XBF0000 with size 126976
  ```
-Contains:
+The Module object contains:
+
   *Name* - The module name, for example C:\Data1\Redstone\Debugger\TTD\CDog_Console\Debug\CDog_Console.exe
-  *Address* - The address of the module -  for example 0xbf0000
-  *Size* -   The size of the module - for example, 0x1f000
-  *Checksum* -   The computed checksum of the module - for example, 0x0 TBD - Need to confirm value
-  *Timestamp* -   The timestamp of the module - for example,  0x59b1e18f. The timestamp is relative to the TBD of the TBD. 
-        
+
+  *Address* - The address where the module was loaded, for example 0xbf0000
+
+  *Size* -   The size of the module in bytes, for example, 0x1f000
+
+  *Checksum* -   The computed checksum of the module, for example, 0x9c4e
+
+  *Timestamp* -   The timestamp of the module, for example,  0x59b1e18f. The timestamp is relative to the ???TBD of the ???TBD. 
+
+
+### TTD Events Module Methods
+
+ **ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object childern support this method.
 
 ### TTD Events Object Examples
 
-Use the dx command to display all of the childern objects to the TTD Events object.
+Use the dx command to display all of the childern objects of the TTD Events object.
 
 ```
 0:000> dx -r2 @$curprocess.TTD .@"Events"[0]
@@ -159,15 +261,15 @@ Use the dx command to display all of the childern objects to the TTD Events obje
         Timestamp        : 0x59b1e18f
 ```
 
-
-> Additional Content Pending
-
-
-
 ## See Also
+
+[Time Travel Debugging - Trace File object model](time-travel-debugging-object-model.md)
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
+[Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md)
+
+[dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md)
 
 ---
 
