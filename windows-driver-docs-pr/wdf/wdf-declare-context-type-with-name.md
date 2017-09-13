@@ -1,7 +1,7 @@
 ---
-title: WDF\_DECLARE\_CONTEXT\_TYPE\_WITH\_NAME macro
+title: WDF_DECLARE_CONTEXT_TYPE_WITH_NAME macro
 author: windows-driver-content
-description: The WDF\_DECLARE\_CONTEXT\_TYPE\_WITH\_NAME macro creates an accessor method with a specified name for a driver's object-specific context space.
+description: The WDF_DECLARE_CONTEXT_TYPE_WITH_NAME macro creates an accessor method with a specified name for a driver's object-specific context space.
 ms.assetid: e5911bd2-6976-4a91-b9ba-befa7ec93103
 keywords:
  - WDF_DECLARE_CONTEXT_TYPE_WITH_NAME macro
@@ -12,12 +12,12 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# WDF\_DECLARE\_CONTEXT\_TYPE\_WITH\_NAME macro
+# WDF_DECLARE_CONTEXT_TYPE_WITH_NAME macro
 
 
 \[Applies to KMDF and UMDF\]
 
-The WDF\_DECLARE\_CONTEXT\_TYPE\_WITH\_NAME macro creates an accessor method with a specified name for a driver's object-specific context space.
+The WDF_DECLARE_CONTEXT_TYPE_WITH_NAME macro creates an accessor method with a specified name for a driver's object-specific context space.
 
 Syntax
 ------
@@ -32,10 +32,10 @@ void WDF_DECLARE_CONTEXT_TYPE_WITH_NAME(
 Parameters
 ----------
 
-*\_contexttype*   
+*_contexttype*   
 The structure type name of a driver-defined structure that describes the contents of an object's context space.
 
-*\_castingfunction*   
+*_castingfunction*   
 A C-language routine name. The macro uses this name as the name for the accessor method that it creates for the object's context space.
 
 Return value
@@ -51,7 +51,7 @@ For more information about using this macro, see [Framework Object Context Space
 Examples
 --------
 
-The following code example defines a context structure (MY\_REQUEST\_CONTEXT) for a request object. Then, the example invokes the WDF\_DECLARE\_CONTEXT\_TYPE\_WITH\_NAME macro to register the structure and specify that the context accessor method will be named **RequestGetMyContext**.
+The following code example defines a context structure (MY_REQUEST_CONTEXT) for a request object. Then, the example invokes the WDF_DECLARE_CONTEXT_TYPE_WITH_NAME macro to register the structure and specify that the context accessor method will be named **RequestGetMyContext**.
 
 ```
 typedef struct _MY_REQUEST_CONTEXT {
@@ -120,14 +120,14 @@ Requirements
 
 [**WdfObjectGetTypedContext**](wdfobjectgettypedcontext.md)
 
-[**WDF\_DECLARE\_CONTEXT\_TYPE**](wdf-declare-context-type.md)
+[**WDF_DECLARE_CONTEXT_TYPE**](wdf-declare-context-type.md)
 
  
 
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20WDF_DECLARE_CONTEXT_TYPE_WITH_NAME%20macro%20%20RELEASE:%20%288/22/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 
