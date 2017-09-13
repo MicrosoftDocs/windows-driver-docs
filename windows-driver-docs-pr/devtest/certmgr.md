@@ -24,7 +24,7 @@ CertMgr (Certmgr.exe) is a command-line [CryptoAPI](http://go.microsoft.com/fwli
 
 CertMgr supports a large number of switches, but this section describes only those that are relevant to managing [test certificates](https://msdn.microsoft.com/library/windows/hardware/ff553457) within a certificate store.
 
-``` syntax
+```
     CertMgr [/add|/del|/put] [Switches] [/s [/r RegistryLocation ] ] SourceName [/s [/r RegistryLocation] ] [DestinationName]
 ```
 

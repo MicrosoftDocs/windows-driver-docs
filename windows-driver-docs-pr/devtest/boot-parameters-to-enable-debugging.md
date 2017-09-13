@@ -74,7 +74,7 @@ If BCDEdit has not been used, the default global debug settings are for serial c
 
 To display the current settings, use the following command:
 
-``` syntax
+```
 bcdedit /dbgsettings
 
 debugtype               Serial
@@ -90,7 +90,7 @@ To set the global debug settings to serial communications, use the following syn
 
 The following example shows how to specify serial communications as the global debug setting.
 
-``` syntax
+```
 bcdedit /dbgsettings serial debugport:1 baudrate:115200
 ```
 
@@ -106,19 +106,19 @@ If no **{***ID***}** is specified, the settings apply to the currently active bo
 
 The following example shows how to specify the serial debug settings for a specific boot entry. To enable the debug settings, you must reboot your computer and select that boot entry you have configured for debugging.
 
-``` syntax
+```
 bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} debugtype serial
 ```
 
-``` syntax
+```
 bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} debugport 1
 ```
 
-``` syntax
+```
 bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} baudrate 115200
 ```
 
-``` syntax
+```
 bcdedit /debug {18b123cd-2bf6-11db-bfae-00e018e2b8db} on
 ```
 
@@ -138,7 +138,7 @@ To set the debug settings for 1394 globally, use the following syntax:
 
 The following example shows how to specify 1394 as the global debug setting.
 
-``` syntax
+```
 bcdedit /dbgsettings 1394 channel:32 
 ```
 
@@ -152,15 +152,15 @@ If an **{***ID***}** is not specified, the settings apply to the current boot en
 
 The following example shows how to specify the 1394 debug settings for a specific boot entry, and how to use the **/debug** option to enable kernel debugging for that boot entry. Note that to enable the debug settings, you must reboot your computer and select the boot entry you have configured for debugging.
 
-``` syntax
+```
 bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} debugtype 1394
 ```
 
-``` syntax
+```
 bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} channel 32
 ```
 
-``` syntax
+```
 bcdedit /debug {18b123cd-2bf6-11db-bfae-00e018e2b8db} on
 ```
 
@@ -180,7 +180,7 @@ To set the debug settings for USB globally, use the following syntax:
 
 The following example shows how to specify USB as the global debug setting.
 
-``` syntax
+```
 bcdedit /dbgsettings usb targetname:U1
 ```
 
@@ -194,15 +194,15 @@ If no **{***ID***}** is specified, the settings apply to the current boot entry.
 
 The following example shows how to specify the USB debug settings for a specific boot entry, and how to use the **/debug** command to enable kernel debugging for that boot entry. Note that to enable the debug settings, you must reboot your computer and select the boot entry you have configured for debugging.
 
-``` syntax
+```
 bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} debugtype usb
 ```
 
-``` syntax
+```
 bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} targetname u2
 ```
 
-``` syntax
+```
 bcdedit /debug {18b123cd-2bf6-11db-bfae-00e018e2b8db} on
 ```
 

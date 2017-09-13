@@ -1,6 +1,6 @@
 ---
-title: for\_each\_register
-description: The for\_each\_register extension executes a specified command for each register.
+title: for_each_register
+description: The for_each_register extension executes a specified command for each register.
 ms.assetid: 496DC161-D082-4C83-A6B6-6BBCE932BE76
 keywords: ["for_each_register Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The **!for\_each\_register** extension executes a specified command for each register.
 
-``` syntax
+```
 !for_each_register -c:CommandString
 !for_each_register -?
 ```
@@ -45,7 +45,7 @@ Ext.dll
 
 This example lists the name of each register.
 
-``` syntax
+```
 0:000> !for_each_register -c:.echo @#RegisterName
 rax
 rcx
@@ -56,7 +56,7 @@ rbx
 
 This example executes [**!address**](-address.md) for each register value.
 
-``` syntax
+```
 0:000> !for_each_register -c:!address ${@#RegisterValue}
 ...
 Usage:                  Stack

@@ -21,7 +21,7 @@ api_type:
 
 The **.echocpunum** command turns on or turns off the display of the processor number when you are debugging a multiprocessor target computer.
 
-``` syntax
+```
 .echocpunum 0 
 .echocpunum 1 
 .echocpunum 

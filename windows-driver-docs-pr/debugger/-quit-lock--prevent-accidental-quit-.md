@@ -1,6 +1,6 @@
 ---
-title: .quit\_lock (Prevent Accidental Quit)
-description: The .quit\_lock command sets a password to prevent you from accidentally ending the debugging session.
+title: .quit_lock (Prevent Accidental Quit)
+description: The .quit_lock command sets a password to prevent you from accidentally ending the debugging session.
 ms.assetid: fd40e642-beba-4da0-a072-6493588980de
 keywords: [".quit_lock (Prevent Accidental Quit) Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The **.quit\_lock** command sets a password to prevent you from accidentally ending the debugging session.
 
-``` syntax
+```
 .quit_lock /s NewPassword 
 .quit_lock /q Password 
 .quit_lock 

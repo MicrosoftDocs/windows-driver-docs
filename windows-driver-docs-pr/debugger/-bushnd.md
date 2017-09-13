@@ -1,6 +1,6 @@
 ---
 title: bushnd
-description: The bushnd extension displays a HAL BUS\_HANDLER structure.
+description: The bushnd extension displays a HAL BUS_HANDLER structure.
 ms.assetid: dd2cb9c1-9abe-4209-a4fa-dc50965e807e
 keywords: ["bushnd Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The **!bushnd** extension displays a HAL BUS\_HANDLER structure.
 
-``` syntax
+```
     !bushnd [Address] 
 ```
 

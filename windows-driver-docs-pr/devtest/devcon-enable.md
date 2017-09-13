@@ -24,7 +24,7 @@ Enables devices on the computer. Valid only on the local computer.
 
 To *enable* a device means that the device driver is loaded into memory and the device is ready for use.
 
-``` syntax
+```
     devcon [/r] enable {* | ID [ID ...] | =class [ID [ID ...]]} 
 
    

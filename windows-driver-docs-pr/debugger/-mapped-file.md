@@ -1,6 +1,6 @@
 ---
-title: mapped\_file
-description: The mapped\_file extension displays the name of the file that backs the file mapping that contains a specified address.
+title: mapped_file
+description: The mapped_file extension displays the name of the file that backs the file mapping that contains a specified address.
 ms.assetid: 1d6d4d14-01ca-47ce-a044-778c9a56e9a5
 keywords: ["mapped_file Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The **!mapped\_file** extension displays the name of the file that backs the file mapping that contains a specified address.
 
-``` syntax
+```
 !mapped_file Address
 ```
 
@@ -63,7 +63,7 @@ Remarks
 
 Here are three examples. The first two addresses used are mapped from a file, and the third is not.
 
-``` syntax
+```
 0:000> !mapped_file 4121ec 
 Mapped file name for 004121ec: '\Device\HarddiskVolume2\CODE\TimeTest\Debug\TimeTest.exe'
 

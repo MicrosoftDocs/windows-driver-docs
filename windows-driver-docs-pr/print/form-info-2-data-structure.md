@@ -1,7 +1,7 @@
 ---
-title: FORM\_INFO\_2 Data Structure
+title: FORM_INFO_2 Data Structure
 author: windows-driver-content
-description: FORM\_INFO\_2 Data Structure
+description: FORM_INFO_2 Data Structure
 ms.assetid: df953fe9-00a2-468a-a2ae-ba8f3fce9982
 keywords:
 - FORM_INFO_2 data structure WDK printer

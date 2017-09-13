@@ -1,6 +1,6 @@
 ---
-title: usbkd.\_ehcitfer
-description: The usbkd.\_ehcitfer command displays information from a usbehci \_HCD\_TRANSFER\_DESCRIPTOR structure.
+title: usbkd._ehcitfer
+description: The usbkd._ehcitfer command displays information from a usbehci _HCD_TRANSFER_DESCRIPTOR structure.
 ms.assetid: 745B8891-150C-4E25-8814-E8F35FB939F5
 keywords: ["usbkd._ehcitfer Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.\_ehcitfer** command displays information from a **usbehci!\_HCD\_TRANSFER\_DESCRIPTOR** structure.
 
-``` syntax
+```
 !usbkd._ehcitfer StructAddr
 ```
 

@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.help** extension displays a help text showing all AVStream-specific Ks.dll extension commands.
 
-``` syntax
-    !ks.help 
+```
+!ks.help 
 ```
 
 ### <span id="DLL"></span><span id="dll"></span>DLL

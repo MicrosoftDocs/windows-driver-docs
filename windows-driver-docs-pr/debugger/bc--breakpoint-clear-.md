@@ -21,7 +21,7 @@ api_type:
 
 The **bc** command permanently removes previously set breakpoints from the system.
 
-``` syntax
+```
 bc Breakpoints 
 ```
 

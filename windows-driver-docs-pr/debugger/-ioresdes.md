@@ -1,6 +1,6 @@
 ---
 title: ioresdes
-description: The ioresdes extension displays the IO\_RESOURCE\_DESCRIPTOR structure at the specified address.
+description: The ioresdes extension displays the IO_RESOURCE_DESCRIPTOR structure at the specified address.
 ms.assetid: a57dd414-16d6-4515-9eee-dac91398906b
 keywords: ["ioresdes Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,8 +21,8 @@ api_type:
 
 The **!ioresdes** extension displays the IO\_RESOURCE\_DESCRIPTOR structure at the specified address.
 
-``` syntax
-    !ioresdes Address 
+```
+!ioresdes Address 
 ```
 
 ## <span id="ddk__ioresdes_dbg"></span><span id="DDK__IORESDES_DBG"></span>Parameters

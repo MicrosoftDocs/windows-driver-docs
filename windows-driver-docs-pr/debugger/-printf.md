@@ -21,7 +21,7 @@ api_type:
 
 The **.printf** token behaves like the **printf** statement in C.
 
-``` syntax
+```
 .printf [/D] [Option] "FormatString" [, Argument , ...] 
 ```
 
@@ -103,7 +103,9 @@ The following options are available.
 <span id="_______FormatString______"></span><span id="_______formatstring______"></span><span id="_______FORMATSTRING______"></span> *FormatString*   
 Specifies the format string, as in **printf**. In general, conversion characters work exactly as in C. For the floating-point conversion characters, the 64-bit argument is interpreted as a 32-bit floating-point number unless the **l** modifier is used.
 
-The %p conversion character is supported, but it represents a pointer in the target's virtual address space. It must not have any modifiers and it uses the debugger's internal address formatting. The following additional conversion characters are supported.
+The "I64" modifier can be added to indicate that a value should be interpreted as 64-bits. For instance, "%I64x" can be used to print a 64-bit hexadecimal number.
+
+The %p conversion character is supported, but it represents a pointer in the target's virtual address space. It must not have any modifiers and it uses the debugger's internal address formatting. In addition to the standard printf-style format specifiers, the following additional conversion characters are supported.
 
 <table>
 <colgroup>
@@ -134,30 +136,24 @@ The %p conversion character is supported, but it represents a pointer in the tar
 <td align="left"><p>The value of the pointer. (This is equivalent to the standard C %p character.)</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>%I</p></td>
-<td align="left"><p>ULONG64</p></td>
-<td align="left"><p>Any 64-bit value.</p></td>
-<td align="left"><p>The specified value. If this is greater than 0xFFFFFFFF, it is printed as a 64-bit address; otherwise it is printed as a 32-bit address.</p></td>
-</tr>
-<tr class="even">
 <td align="left"><p>%ma</p></td>
 <td align="left"><p>ULONG64</p></td>
 <td align="left"><p>The address of a NULL-terminated ASCII string in the target's virtual address space.</p></td>
 <td align="left"><p>The specified string.</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>%mu</p></td>
 <td align="left"><p>ULONG64</p></td>
 <td align="left"><p>The address of a NULL-terminated Unicode string in the target's virtual address space.</p></td>
 <td align="left"><p>The specified string.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p>%msa</p></td>
 <td align="left"><p>ULONG64</p></td>
 <td align="left"><p>The address of an ANSI_STRING structure in the target's virtual address space.</p></td>
 <td align="left"><p>The specified string.</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>%msu</p></td>
 <td align="left"><p>ULONG64</p></td>
 <td align="left"><p>The address of a UNICODE_STRING structure in the target's virtual address space.</p></td>
@@ -194,7 +190,7 @@ The color settings that you can choose by using the *Options* parameter are by d
 
 The following example shows how to include a DML tag in the format string.
 
-```cmd
+```
 .printf /D "Click <link cmd=\".chain /D\">here</link> to see extensions DLLs."
 ```
 

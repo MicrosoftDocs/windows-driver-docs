@@ -1,6 +1,6 @@
 ---
 title: bitcount
-description: The bitcount extension counts the number of \ 0034;1 \ 0034; bits in a memory range.
+description: The !bitcount extension counts the number of "1" bits in a memory range.
 ms.assetid: dacf3d63-6241-4779-afca-514905b37e26
 keywords: ["bitcount Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The **!bitcount** extension counts the number of "1" bits in a memory range.
 
-``` syntax
+```
 !bitcount StartAddress TotalBits
 ```
 

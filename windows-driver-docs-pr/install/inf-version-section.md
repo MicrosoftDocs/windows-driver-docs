@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 By convention, the **Version** section appears first in INF files. Every INF file must have this section.
 
-``` syntax
+```
 [Version]
  
 Signature="signature-name"

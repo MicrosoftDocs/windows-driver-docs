@@ -26,7 +26,7 @@ A driver can associate multiple custom types with a single framework object. A d
 
 In output from KMDF debugger extensions, custom type names are displayed along with other WDF object information.
 
-``` syntax
+```
 WDF_Object_Name, [custom_Type1_Name, custom_Type2_Name]
 ```
 

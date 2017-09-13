@@ -1,6 +1,6 @@
 ---
-title: Do I need to call WPP\_CHECK\_FOR\_NULL\_STRING
-description: Do I need to call WPP\_CHECK\_FOR\_NULL\_STRING
+title: Do I need to call WPP_CHECK_FOR_NULL_STRING
+description: Do I need to call WPP_CHECK_FOR_NULL_STRING
 ms.assetid: 4a4dfe91-a70b-4297-9f11-fcc4b0e5a900
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

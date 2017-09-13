@@ -21,7 +21,7 @@ api_type:
 
 The **!sysinfo** extension reads and displays specified SMBIOS, Advanced Configuration and Power Interface (ACPI), and CPU information from a dump file or live system.
 
-``` syntax
+```
 !sysinfo cpuinfo [-csv [-noheaders]]
 !sysinfo cpumicrocode [-csv [-noheaders]]
 !sysinfo cpuspeed [-csv [-noheaders]]

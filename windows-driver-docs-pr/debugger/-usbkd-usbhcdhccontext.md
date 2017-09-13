@@ -1,6 +1,6 @@
 ---
 title: usbkd.usbhcdhccontext
-description: The usbkd.usbhcdhccontext command displays the USB2LIB\_HC\_CONTEXT for a USB host controller.
+description: The usbkd.usbhcdhccontext command displays the USB2LIB_HC_CONTEXT for a USB host controller.
 ms.assetid: 72A4BAA1-D395-4D6A-BEFB-F217E994B4E7
 keywords: ["usbkd.usbhcdhccontext Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbhcdhccontext** command displays the **USB2LIB\_HC\_CONTEXT** for a USB host controller.
 
-``` syntax
+```
 !usbkd.usbhcdhccontext DeviceExtension
 ```
 

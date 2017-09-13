@@ -21,7 +21,7 @@ api_type:
 
 The **!cpuid** extension displays information about the processors on the system.
 
-``` syntax
+```
 !cpuid [Processor]
 ```
 
@@ -65,7 +65,7 @@ If you are debugging in user mode, the **!cpuid** extension describes the comput
 
 The following example shows this extension.
 
-``` syntax
+```
 kd> !cpuid 
 CP  F/M/S  Manufacturer        MHz 
  0  6,5,1  GenuineIntel        700 

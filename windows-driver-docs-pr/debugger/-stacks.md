@@ -23,7 +23,7 @@ The **!stacks** extension displays information about the kernel stacks.
 
 Syntax
 
-``` syntax
+```
 !stacks [Detail [FilterString]] 
 ```
 
@@ -76,7 +76,7 @@ The [**!findstack**](-findstack.md) user-mode extension also displays informatio
 
 Here is an example of the simplest **!stacks** display:
 
-``` syntax
+```
 kd> !stacks 0
 Proc.Thread  .Thread  ThreadState  Blocker
                                      [System]
@@ -101,7 +101,7 @@ The fourth column shows the top address on the thread's stack.
 
 Here are examples of more detailed **!stacks** output:
 
-``` syntax
+```
 kd> !stacks 1
 Proc.Thread  .Thread  ThreadState  Blocker
                                      [System]

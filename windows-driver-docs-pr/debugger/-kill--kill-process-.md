@@ -25,13 +25,13 @@ In kernel mode, the **.kill** command ends a process on the target computer.
 
 User-Mode Syntax
 
-``` syntax
+```
 .kill [ /h | /n ]
 ```
 
 Kernel-Mode Syntax
 
-``` syntax
+```
 .kill Process 
 ```
 
@@ -90,14 +90,14 @@ Examples
 
 Suppose you attach a debugger to parent process (Parent.exe) before it creates a child process. You can enter the command [**.childdbg 1**](-childdbg--debug-child-processes-.md) to tell the debugger to attach to any child process that the parent creates.
 
-``` syntax
+```
 1:001> .childdbg 1
 Processes created by the current process will be debugged
 ```
 
 Now let the parent process run, and break in after it has created the child process. Use the [**| (Process Status)**](---process-status-.md) command to see the process numbers for the parent and child processes.
 
-``` syntax
+```
 0:002> |*
 .  0    id: 7f8 attach  name: C:\Parent\x64\Debug\Parent.exe
    1    id: 2d4 child   name: notepad.exe
@@ -105,7 +105,7 @@ Now let the parent process run, and break in after it has created the child proc
 
 In the preceding output, the number of the child process (notepad.exe) is 1. The dot (.) at the beginning of the first line tells us that the parent process is the current process. To make the child process the current process, enter **|1s**.
 
-``` syntax
+```
 0:002> |1s
 ...
 1:001> |*
@@ -115,7 +115,7 @@ In the preceding output, the number of the child process (notepad.exe) is 1. The
 
 To kill the child process, enter the command **.kill**. The parent process continues to run.
 
-``` syntax
+```
 1:001> .kill
 Terminated.  Exit thread and process events will occur.
 1:001> g

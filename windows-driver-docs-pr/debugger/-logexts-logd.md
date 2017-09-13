@@ -21,7 +21,7 @@ api_type:
 
 The **!logexts.logd** extension disables logging.
 
-``` syntax
+```
     !logexts.logd 
 ```
 

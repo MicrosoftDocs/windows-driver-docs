@@ -25,7 +25,7 @@ There are two ways to start a smart client: by starting CDB or WinDbg with the -
 
 The protocol of the smart client must match the protocol of the process server. The general syntax for starting a smart client depends on the protocol used. The following options exist:
 
-``` syntax
+```
 Debugger -premote npipe:server=Server,pipe=PipeName[,password=Password] [Options]
 
 Debugger -premote tcp:server=Server,port=Socket[,password=Password][,ipversion=6] [Options]
@@ -43,7 +43,7 @@ Debugger -premote ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clicon=Server
 
 To use the graphical interface to connect to a process server, WinDbg must be in dormant mode -- it must either have been started with no command-line parameters, or it must have ended the previous debugging session. Select the **File | Connect to Remote Stub** menu command. When the **Connect to Remote Stub Server** dialog box appears, enter one of the following strings into the **Connection string** text box:
 
-``` syntax
+```
 npipe:server=Server,pipe=PipeName[,password=Password] 
 
 tcp:server=Server,port=Socket[,password=Password][,ipversion=6] 

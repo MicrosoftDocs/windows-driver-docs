@@ -21,7 +21,7 @@ api_type:
 
 The **!wudfext.umirp** extension displays information about a host user-mode I/O request packet (UM IRP).
 
-``` syntax
+```
 !wudfext.umirp Address
 ```
 

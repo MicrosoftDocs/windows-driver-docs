@@ -155,7 +155,7 @@ Your debugger (WinDbg or KD) must have access through the firewall. You can use 
 
 The range of port numbers that can be used for network debugging might be limited by your company's network policy. To determine whether your company's policy limits the range of ports that can be used for network debugging, check with your network administrator. On the target computer, open a Command Prompt window as Administrator and enter the command **bcdedit /dbgsettings**. The output will be similar to this.
 
-``` syntax
+```
 key                     XXXXXX.XXXXX.XXXXX.XXXXX
 debugtype               NET
 debugport               1

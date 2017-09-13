@@ -19,20 +19,27 @@ api_type:
 # !ppmidleaccounting
 
 
-The **!ppmidleaccounting** command
+The **!ppmidleaccounting** command displays processor idle state accounting information.
 
-``` syntax
+```
+!ppmidleaccounting
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+None
 
+This command is supported on the following versions of Windows:
 
-<span id="ParamName"></span><span id="paramname"></span><span id="PARAMNAME"></span>*ParamName*  
-Description.
+- Windows 7
+- Windows 8
+- Windows 8.1 
+- Windows 10, Version 1511
+- Windows 10, Version 1607
+- Windows 10, Version 1703
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
- 
+ Kdexts.dll 
 
  
 

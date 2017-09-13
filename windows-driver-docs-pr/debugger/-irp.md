@@ -21,7 +21,7 @@ api_type:
 
 The **!irp** extension displays information about an I/O request packet (IRP).
 
-``` syntax
+```
 !irp Address [Detail] 
 ```
 
@@ -75,7 +75,7 @@ Any combination of these three may appear, and if any of the conditions shown ar
 
 Here is an example of the output from this extension for Windows 10:
 
-``` syntax
+```
 0: kd> !irp ac598dc8
 Irp is active with 2 stacks 1 is current (= 0xac598e38)
  No Mdl: No System Buffer: Thread 8d1c7bc0:  Irp stack trace.  
@@ -96,7 +96,7 @@ The third argument displayed in the output, is the IOCTL code. Use the [**!ioctl
 
 Here is an example of the output from this extension from Windows Vista.
 
-``` syntax
+```
 0: kd> !irp 0x831f4a00
 Irp is active with 8 stacks 5 is current (= 0x831f4b00)
  Mdl = 82b020d8 Thread 8c622118:  Irp stack trace.

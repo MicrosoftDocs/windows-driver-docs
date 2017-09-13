@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.dumplog** extension displays the internal kernel streaming debug log.
 
-``` syntax
-    !ks.dumplog [Entries] 
+```
+!ks.dumplog [Entries] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

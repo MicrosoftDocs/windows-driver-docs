@@ -26,7 +26,7 @@ To display the trace messages in readable form, Tracefmt must apply the formatti
 
 To provide a TMF file or a path to a directory of TMF files:
 
-``` syntax
+```
     tracefmt [EtlFile | -rt SessionName][-tmf TMFFile | -p TMFPath ] [Options]
 
    
@@ -34,7 +34,7 @@ To provide a TMF file or a path to a directory of TMF files:
 
 To create a TMF file:
 
-``` syntax
+```
     tracefmt [EtlFile | -rt SessionName]-i ImageFiles [-r SymbolPath ] [-p TmfPath ] [Options]
 
    
@@ -42,7 +42,7 @@ To create a TMF file:
 
 To display the syntax at the command line.
 
-``` syntax
+```
     tracefmt -h | /?
 
    

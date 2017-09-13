@@ -2,7 +2,7 @@
 title: TList Commands
 description: The syntax of the TList command is as follows
 ms.assetid: d1527ffe-ea80-4e02-9a32-b6eccddc1c6a
-keywords: ["TList Commands Windows Debugging"]
+keywords: TList Commands, Windows debugging
 ms.author: windowsdriverdev
 ms.date: 05/23/2017
 ms.topic: article
@@ -21,10 +21,8 @@ api_type:
 
 The syntax of the TList command is as follows:
 
-``` syntax
-    tlist [/p ProcessName | PID | Pattern | /t | /c | /e | /k | /m [Module] | /s | /v
-
-   
+```
+tlist [/p ProcessName | PID | Pattern | /t | /c | /e | /k | /m [Module] | /s | /v
 ```
 
 ## <span id="ddk_tlist_commands_dtools"></span><span id="DDK_TLIST_COMMANDS_DTOOLS"></span>Parameters

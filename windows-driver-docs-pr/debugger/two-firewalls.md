@@ -34,19 +34,19 @@ First, make sure the target computer is configured for debugging and is attached
 
 Second, start the repeater on 127.0.20.20:
 
-``` syntax
+```
 dbengprx -p -s tcp:port=9001 -c tcp:port=9000,clicon=127.0.10.10 
 ```
 
 Third, start the KD connection server on 127.0.10.10 in Building A as follows:
 
-``` syntax
+```
 kdsrv -t tcp:port=9000,clicon=127.0.20.20,password=longjump 
 ```
 
 Finally, start the smart client on 127.0.30.30 in Building C. (This can actually be done before or after starting the server in Building A.)
 
-``` syntax
+```
 windbg -k kdsrv:server=@{tcp:server=127.0.20.20,port=9001,password=longjump},trans=@{1394:channel=9} -y SymbolPath
 ```
 
@@ -56,13 +56,13 @@ This scenario can be made even more complicated if you suppose that the symbols 
 
 Suppose that 127.0.30.30 has the symbols, as before, and that its local name is \\\\BOXC. The smart client can be started with the same command as above but with an additional **-server** parameter. Since no one will be using this machine, it will take less processing time if you use KD instead of WinDbg:
 
-``` syntax
+```
 kd -server npipe:pipe=randomname -k kdsrv:server=@{tcp:server=127.0.20.20,port=9001,password=longjump},trans=@{1394:channel=9} -y SymbolPath
 ```
 
 Then the technician, elsewhere in the building, can start a debugging client as follows:
 
-``` syntax
+```
 windbg -remote npipe:server=\\BOXC,pipe=randomname 
 ```
 

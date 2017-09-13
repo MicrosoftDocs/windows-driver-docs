@@ -25,8 +25,8 @@ api_type:
 
 The **!ndiskd.ndisevent** extension displays an NDIS debug event log.
 
-``` syntax
-    !ndiskd.ndisevent [-handle <x>] [-tagtype <str>] 
+```
+!ndiskd.ndisevent [-handle <x>] [-tagtype <str>] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -49,7 +49,7 @@ To see the output of the event log for a network adapter, !ndiskd provides a lin
 
 First, enter the **!ndiskd.netadapter** command with no parameters to see a list of network adapters and miniport drivers on the system. In the following example, look for the handle for the Marvell AVASTAR Wireless-AC Network Controller, ffffc804b9e6f1a0.
 
-```cmd
+```
 1: kd> !ndiskd.netadapter
     Driver             NetAdapter          Name                                 
     ffffc804af2e3710   ffffc804b9e6f1a0    Marvell AVASTAR Wireless-AC Network Controller
@@ -70,7 +70,7 @@ First, enter the **!ndiskd.netadapter** command with no parameters to see a list
 
 Now, click on the link for that NetAdapter or enter the **!ndiskd.netadapter -handle** command to see its details. Look for the "Show state history" link to the right of the Device PnP field, in the State section.
 
-```cmd
+```
 1: kd> !ndiskd.netadapter ffffc804b9e6f1a0
 
 
@@ -141,7 +141,7 @@ MORE INFORMATION
 
 Now you can click the "Show state history" link or use the net adapter's handle to enter the **!ndiskd.netadapter -handle -log** command, which will show you the PnP event log for this miniport's miniport driver.
 
-```cmd
+```
 1: kd> !ndiskd.netadapter ffffc804b9e6f1a0 -log
 
 

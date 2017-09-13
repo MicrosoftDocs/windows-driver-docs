@@ -21,7 +21,7 @@ This scenario requires the test system to support the *Always on Always connecte
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 pwrtest /cs [/c:n] [/d:n] [/p:n][/?] 
 ```
 
@@ -36,11 +36,11 @@ Specifies the connected standby exit time (in seconds; 60 seconds is the default
 
 **Examples**
 
-``` syntax
+```
 pwrtest /cs /c:4 
 ```
 
-``` syntax
+```
 pwrtest /cs /c:4 /p:120 /d:150
 ```
 

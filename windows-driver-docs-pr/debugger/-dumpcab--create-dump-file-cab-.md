@@ -21,8 +21,8 @@ api_type:
 
 The **.dumpcab** command creates a CAB file containing the current dump file.
 
-``` syntax
-    .dumpcab [-a] CabName 
+```
+.dumpcab [-a] CabName 
 ```
 
 ## <span id="ddk_meta_create_dump_file_cab_dbg"></span><span id="DDK_META_CREATE_DUMP_FILE_CAB_DBG"></span>Parameters
@@ -48,7 +48,7 @@ The CAB file name, including extension. *CabName* can include an absolute or rel
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>live, crash dump</p></td>
+<td align="left"><p>crash dump</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Platforms</strong></p></td>

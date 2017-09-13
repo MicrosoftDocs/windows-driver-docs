@@ -21,8 +21,8 @@ api_type:
 
 The **!ndiskd.ifprovider** extension displays information about an [NDIS interface provider](https://msdn.microsoft.com/windows/hardware/drivers/network/registering-as-an-interface-provider) (IfProvider). If you run this extension with no parameters, !ndiskd will display a list of all registered NDIS interface providers.
 
-``` syntax
-    !ndiskd.ifprovider [-handle <x>] 
+```
+!ndiskd.ifprovider [-handle <x>] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -40,7 +40,7 @@ Examples
 
 Run the **!ndiskd.ifprovider** extension with no parameters to get a list of all registered IfProviders.
 
-```cmd
+```
 1: kd> !ndiskd.ifprovider
     IfProvider                                                                  
     ffffd20d14334180 - wanarp
@@ -57,7 +57,7 @@ You can see from the previous example that the debugee machine has four interfac
 
 The following example shows the details for the "wanarp" interface provider in the previous example, whose handle is ffffd20d14334180.
 
-```cmd
+```
 1: kd> !ndiskd.ifprovider ffffd20d14334180
 
 

@@ -21,7 +21,7 @@ api_type:
 
 If two dollar signs ( **$$** ) appear at the start of a command, then the rest of the line is treated as a comment, unless the comment is terminated by a semicolon.
 
-``` syntax
+```
 $$ [any text]
 ```
 
@@ -34,7 +34,7 @@ The **$$** token will cause the text after it to be ignored until the end of the
 
 For example, the following command will display **eax** and **ebx**, but not **ecx**:
 
-``` syntax
+```
 0:000> r eax; $$ some text; r ebx; * more text; r ecx 
 ```
 

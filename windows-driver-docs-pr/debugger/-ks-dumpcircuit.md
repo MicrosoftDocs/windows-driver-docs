@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.dumpcircuit** extension lists details of the transport circuit associated with the given object.
 
-``` syntax
-    !ks.dumpcircuitextension Object [Level] 
+```
+!ks.dumpcircuitextension Object [Level] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

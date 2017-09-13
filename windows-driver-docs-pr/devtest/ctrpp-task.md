@@ -29,7 +29,7 @@ The following example shows how to edit the metadata in the .vcxproj file.
 
 The following example shows the command-line invocation:
 
-``` syntax
+```
 ctrpp.exe –ch "c:\test\abc.h" a.manifest
 ```
 

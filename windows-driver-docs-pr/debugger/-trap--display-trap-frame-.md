@@ -21,7 +21,7 @@ api_type:
 
 The **.trap** command displays the trap frame register state and also sets the register context.
 
-``` syntax
+```
 .trap [Address]
 ```
 

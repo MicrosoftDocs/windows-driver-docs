@@ -1,6 +1,6 @@
 ---
 title: minipkd.portconfig
-description: The minipkd.portconfig extension displays information about the specified PORT\_CONFIGURATION\_INFORMATION data structure.
+description: The minipkd.portconfig extension displays information about the specified PORT_CONFIGURATION_INFORMATION data structure.
 ms.assetid: efc527c4-0340-4976-9126-d3e32286fc64
 keywords: ["minipkd.portconfig Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,8 +21,8 @@ api_type:
 
 The **!minipkd.portconfig** extension displays information about the specified PORT\_CONFIGURATION\_INFORMATION data structure.
 
-``` syntax
-    !minipkd.portconfig PortConfig 
+```
+!minipkd.portconfig PortConfig 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

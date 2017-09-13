@@ -21,7 +21,7 @@ api_type:
 
 The **!imggp** extension displays the global pointer (GP) directory entry value for a 64-bit image.
 
-``` syntax
+```
 !imggp Address 
 ```
 

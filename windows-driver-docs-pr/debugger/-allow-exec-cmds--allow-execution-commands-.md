@@ -1,6 +1,6 @@
 ---
-title: .allow\_exec\_cmds (Allow Execution Commands)
-description: The .allow\_exec\_cmds command controls whether execution commands can be used.
+title: .allow_exec_cmds (Allow Execution Commands)
+description: The .allow_exec_cmds command controls whether execution commands can be used.
 ms.assetid: c6e37cf1-42cc-4f82-9eb8-d252f0b6e196
 keywords: [".allow_exec_cmds (Allow Execution Commands) Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,8 +21,8 @@ api_type:
 
 The **.allow\_exec\_cmds** command controls whether execution commands can be used.
 
-``` syntax
-    .allow_exec_cmds 0 
+```
+.allow_exec_cmds 0 
 .allow_exec_cmds 1 
 .allow_exec_cmds 
 ```

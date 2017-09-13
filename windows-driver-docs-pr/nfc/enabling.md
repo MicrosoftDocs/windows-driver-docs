@@ -1,7 +1,7 @@
 ---
 title: Enabling NFP
 author: windows-driver-content
-description: A client can re-enable previously disabled subscriptions, publications, and presence with IOCTL\_NFP\_ENABLE.
+description: A client can re-enable previously disabled subscriptions, publications, and presence with IOCTL_NFP_ENABLE.
 ms.assetid: 5F5F3C85-6B66-4335-ADA1-E4B6E702FFCB
 keywords:
 - NFC

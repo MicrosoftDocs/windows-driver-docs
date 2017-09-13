@@ -1,6 +1,6 @@
 ---
-title: CTRL+\\ (Debug Current Debugger)
-description: The CTRL+\\ key launches a new instance of CDB; this new debugger takes the current debugger as its target.
+title: CTRL+\ (Debug Current Debugger)
+description: The CTRL+\ key combination launches a new instance of CDB; this new debugger takes the current debugger as its target.
 ms.assetid: c0c63af5-712c-47b6-8811-81e441ddb3df
 keywords: ["CTRL+\ (Debug Current Debugger) Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The **CTRL+\\** key launches a new instance of CDB; this new debugger takes the current debugger as its target.
 
-``` syntax
+```
 CTRL+\  ENTER 
 ```
 

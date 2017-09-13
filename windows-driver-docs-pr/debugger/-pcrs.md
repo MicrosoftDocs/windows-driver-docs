@@ -21,7 +21,7 @@ api_type:
 
 The **!pcrs** extension displays the Intel Itanium-specific processor control registers.
 
-``` syntax
+```
 !pcrs Address
 ```
 

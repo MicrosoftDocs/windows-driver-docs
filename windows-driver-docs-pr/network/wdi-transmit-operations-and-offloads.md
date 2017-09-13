@@ -131,88 +131,31 @@ In the more common case where host-FIPS mode is not enabled (target-implemented 
 
 The network data is submitted in 802.11 packet format to the port (target device). Each transmitted frame starts with a 802.11 MAC header. The host sets some of the fields of the MAC header, while the target sets other fields. The table below describes which fields of the 802.11 MAC header and cipher headers are populated by the host, and which should be populated by the target device.
 
-Field name
-Subfield name
-Target-implemented encryption mode
-Host-implemented FIPS mode
-Set by host
-Set by target
-Set by host
-Set by target
-Frame Control
-Protocol Version
-X
-X
-Frame Control
-Type
-X
-X
-Frame Control
-Subtype
-X
-X
-Frame Control
-To DS
-X
-X
-Frame Control
-From DS
-X
-X
-Frame Control
-More Fragments
-X
-X
-Frame Control
-Retry
-X
-X
-Frame Control
-Pwr Mgmt
-X
-X
-Frame Control
-More Data
-X
-X
-Frame Control
-Protected Frame
-X
-X
-Frame Control
-Order
-X
-X
-Duration/Id
-X
-X
-Address 1
-X
-X
-Address 2
-X
-X
-Address 3
-X
-X
-Sequence Control
-Fragment Number
-X
-X
-Sequence Control
-Sequence Number
-X
-X
-Address 4
-X
-X
-QoS Control
-Added/populated by target.
-Added/populated by target in the case of 11n QoS association.
-HT Control
-Added/populated by target.
-Added/populated by target.
- 
+<table>
+<tr><th>Field name</th><th>Subfield name</th><th colspan="2">Target-implemented encryption mode</th><th colspan="2">Host-implemented FIPS mode</th>
+</tr>
+    <tr><th></th><th></th><th>Set by host</th><th>Set by target</th><th>Set by host</th><th>Set by target</th></tr>
+    <tr><td>Frame Control</td><td>Protocol Version</td><td>X</td><td></td><td>X</td><td></td></tr>
+    <tr><td>Frame Control</td><td>Type</td><td>X</td><td></td><td>X</td><td></td></tr>
+    <tr><td>Frame Control</td><td>Subtype</td><td>X</td><td></td><td>X</td><td></td></tr>
+    <tr><td>Frame Control</td><td>To DS</td><td>X</td><td></td><td>X</td><td></td></tr>
+    <tr><td>Frame Control</td><td>From DS</td><td>X</td><td></td><td>X</td><td></td></tr>
+    <tr><td>Frame Control</td><td>More Fragments</td><td>X</td><td></td><td>X</td><td></td></tr>
+    <tr><td>Frame Control</td><td>Retry</td><td></td><td>X</td><td></td><td>X</td></tr>
+    <tr><td>Frame Control</td><td>Pwr Mgmt</td><td></td><td>X</td><td></td><td>X</td></tr>
+    <tr><td>Frame Control</td><td>More Data</td><td></td><td>X</td><td></td><td>X</td></tr>
+    <tr><td>Frame Control</td><td>Protected Frame</td><td></td><td>X</td><td>X</td><td></td></tr>
+    <tr><td>Frame Control</td><td>Order</td><td>X</td><td></td><td>X</td><td></td></tr>
+    <tr><td>Duration/Id</td><td></td><td></td><td>X</td><td></td><td>X</td></tr>
+    <tr><td>Address 1</td><td></td><td>X</td><td></td><td>X</td><td></td></tr>
+    <tr><td>Address 2</td><td></td><td>X</td><td></td><td>X</td><td></td></tr>
+    <tr><td>Address 3</td><td></td><td>X</td><td></td><td>X</td><td></td></tr>
+    <tr><td>Sequence Control</td><td>Fragment Number</td><td>X</td><td></td><td></td><td>X</td></tr>
+    <tr><td>Sequence Control</td><td>Sequence Number</td><td></td><td>X</td><td></td><td>X</td></tr>
+    <tr><td>Address 4</td><td></td><td>X</td><td></td><td>X</td><td></td></tr>
+    <tr><td>QoS Control</td><td></td><td></td><td>Added/populated by target.</td><td></td><td>Added/populated by target in the case of 11n QoS association.</td></tr>
+    <tr><td>HT Control</td><td></td><td></td><td>Added/populated by target.</td><td></td><td>Added/populated by target.</td></tr>
+</table>
 
 ## Related topics
 

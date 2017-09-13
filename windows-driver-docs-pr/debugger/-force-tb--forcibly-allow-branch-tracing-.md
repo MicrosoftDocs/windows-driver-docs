@@ -1,6 +1,6 @@
 ---
-title: .force\_tb (Forcibly Allow Branch Tracing)
-description: The .force\_tb command forces the processor to trace branches early in the boot process.
+title: .force_tb (Forcibly Allow Branch Tracing)
+description: The .force_tb command forces the processor to trace branches early in the boot process.
 ms.assetid: ac4aabfa-6d00-4478-9c13-213bf89f613a
 keywords: [".force_tb (Forcibly Allow Branch Tracing) Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,8 +21,8 @@ api_type:
 
 The **.force\_tb** command forces the processor to trace branches early in the boot process.
 
-``` syntax
-    .force_tb 
+```
+.force_tb 
 ```
 
 ## <span id="ddk_meta_forcibly_allow_branch_tracing_dbg"></span><span id="DDK_META_FORCIBLY_ALLOW_BRANCH_TRACING_DBG"></span>

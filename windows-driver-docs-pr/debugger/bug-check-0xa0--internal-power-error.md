@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0xA0 INTERNAL\_POWER\_ERROR
-description: The INTERNAL\_POWER\_ERROR bug check has a value of 0x000000A0. This bug check indicates that the power policy manager experienced a fatal error.
+title: Bug Check 0xA0 INTERNAL_POWER_ERROR
+description: The INTERNAL_POWER_ERROR bug check has a value of 0x000000A0. This bug check indicates that the power policy manager experienced a fatal error.
 ms.assetid: a763e865-8591-4ed3-b3cd-1cdaecad6e97
 keywords: ["Bug Check 0xA0 INTERNAL_POWER_ERROR", "INTERNAL_POWER_ERROR"]
 ms.author: windowsdriverdev
@@ -483,7 +483,7 @@ In the preceding table, several of the parameters are pointers to structures. Fo
 
 Some of the structures that appear in the preceding table are not defined in any public header file. You can see the definitions of those structures by using the [**dt**](dt--display-type-.md) debugger command. The following example shows how to use the **dt** command to see the **DEVICE\_OBJECT\_POWER\_EXTENSION** structure.
 
-``` syntax
+```
 3: kd> dt nt!DEVICE_OBJECT_POWER_EXTENSION
    +0x000 IdleCount        : Uint4B
    +0x004 BusyCount        : Uint4B

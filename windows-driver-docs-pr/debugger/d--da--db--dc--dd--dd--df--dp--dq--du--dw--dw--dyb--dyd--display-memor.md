@@ -1,6 +1,6 @@
 ---
 title: d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)
-description: The d\ commands display the contents of memory in the given range.
+description: The d* commands display the contents of memory in the given range.
 ms.assetid: deb58b77-6648-466d-be00-e2e0a92895b5
 keywords: ["d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory) Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The **d\*** commands display the contents of memory in the given range.
 
-``` syntax
+```
 d{a|b|c|d|D|f|p|q|u|w|W} [Options] [Range] 
 dy{b|d} [Options] [Range] 
 d [Options] [Range] 

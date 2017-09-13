@@ -21,7 +21,7 @@ api_type:
 
 Displays a variety of WDM Audio (WDMAud) structures.
 
-``` syntax
+```
 !wdmaud Address Flags
 ```
 

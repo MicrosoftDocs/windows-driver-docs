@@ -1,6 +1,6 @@
 ---
 title: ds, dS (Display String)
-description: The ds and dS commands display a STRING, ANSI\_STRING, or UNICODE\_STRING structure.
+description: The ds and dS commands display a STRING, ANSI_STRING, or UNICODE_STRING structure.
 ms.assetid: cb05e89c-6c83-476b-a577-a6aeefd8cdd6
 keywords: ["ds, dS (Display String) Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The **ds** and **dS** commands display a STRING, ANSI\_STRING, or UNICODE\_STRING structure. (These commands do not display null-delimited character strings.)
 
-``` syntax
+```
 d{s|S} [/c Width] [Address]
 ```
 

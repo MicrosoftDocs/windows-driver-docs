@@ -1,6 +1,6 @@
 ---
-title: usbkd.\_ehciitd
-description: The usbkd.\_ehciitd command displays information from a usbehci \_HCD\_HSISO\_TRANSFER\_DESCRIPTOR structure.
+title: usbkd._ehciitd
+description: The usbkd._ehciitd command displays information from a usbehci _HCD_HSISO_TRANSFER_DESCRIPTOR structure.
 ms.assetid: 0878695D-E7ED-498D-AD37-994371C319C4
 keywords: ["usbkd._ehciitd Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.\_ehciitd** command displays information from a **usbehci!\_HCD\_HSISO\_TRANSFER\_DESCRIPTOR** structure.
 
-``` syntax
+```
 !usbkd._ehciitd StructAddr
 ```
 

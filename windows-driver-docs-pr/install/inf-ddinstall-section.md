@@ -24,7 +24,7 @@ Each per-Models *DDInstall* section contains an optional **DriverVer** directive
 
 The sections referenced by these directives contain instructions for installing driver files and writing any device-specific and/or driver-specific information into the registry.
 
-``` syntax
+```
 [install-section-name] | 
 [install-section-name.nt] | 
 [install-section-name.ntx86] | 
@@ -92,7 +92,7 @@ This optional entry specifies one or more additional system-supplied INF files t
 
 For example, the system INF files for device drivers that depend on the system's kernel-streaming support specify this entry as follows:
 
-``` syntax
+```
 Include= ks.inf[, [kscaptur.inf,] [ksfilter.inf]]...
 ```
 
@@ -103,7 +103,7 @@ This optional entry specifies sections within system-supplied INF files that mus
 
 For example, the INF files for device drivers that have the preceding **Include** entry specify this entry as follows:
 
-``` syntax
+```
 Needs= KS.Registration[, KSCAPTUR.Registration | KSCAPTUR.Registration.NT, MSPCLOCK.Installation]
 ```
 

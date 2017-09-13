@@ -66,7 +66,7 @@ The Setup API logs (setupapi.app.log and setupapi.dev.log) contain useful inform
 
 To increase the verbosity and potential usefulness of these logs, set the following registry key to 0x2000FFFF before running the Reinstall test:
 
-``` syntax
+```
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Setup\LogLevel
 ```
 

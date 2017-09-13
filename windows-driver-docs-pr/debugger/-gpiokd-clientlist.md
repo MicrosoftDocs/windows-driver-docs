@@ -21,7 +21,7 @@ api_type:
 
 The **!gpiokd.clientlist** command displays all registered GPIO controllers.
 
-``` syntax
+```
 !gpiokd.clientlist [Flags] 
 ```
 

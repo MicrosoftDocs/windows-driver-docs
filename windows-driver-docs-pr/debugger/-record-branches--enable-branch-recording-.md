@@ -1,6 +1,6 @@
 ---
-title: .record\_branches (Enable Branch Recording)
-description: The .record\_branches command enables the recording of branches that the target's code executed.
+title: .record_branches (Enable Branch Recording)
+description: The .record_branches command enables the recording of branches that the target's code executed.
 ms.assetid: 522eeba5-b6c5-473c-9c8e-8ef4c941079f
 keywords: ["Enable Branch Recording (.record_branches) command", ".record_branches (Enable Branch Recording) Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The **.record\_branches** command enables the recording of branches that the target's code executed.
 
-``` syntax
+```
 .record_branches {1|0} 
 .record_branches
 ```

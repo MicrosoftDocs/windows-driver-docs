@@ -23,14 +23,14 @@ The **gn** and **gN** commands continue execution of the given thread without ma
 
 User-Mode Syntax
 
-``` syntax
+```
 [~Thread] gn[a] [= StartAddress] [BreakAddress ... [; BreakCommands]] 
 [~Thread] gN[a] [= StartAddress] [BreakAddress ... [; BreakCommands]] 
 ```
 
 Kernel-Mode Syntax
 
-``` syntax
+```
 gn[a] [= StartAddress] [BreakAddress ... [; BreakCommands]] 
 gN[a] [= StartAddress] [BreakAddress ... [; BreakCommands]] 
 ```

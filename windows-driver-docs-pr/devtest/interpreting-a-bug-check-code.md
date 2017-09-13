@@ -28,7 +28,7 @@ If no debugger is attached, a blue text screen appears with information about th
 
 The exact appearance of the bug check screen depends on the cause of the error. The following is an example of one possible bug check screen:
 
-``` syntax
+```
 STOP: 0x00000079 (0x00000002, 0x00000001, 0x00000002, 0x00000000)
 
 Mismatched kernel and hal image.
@@ -40,7 +40,7 @@ technical support group.
 
 On the other hand, some blue screens look like this:
 
-``` syntax
+```
 STOP: c000021a {Fatal System Error}
 
 The Windows Logon Process system process terminated unexpectedly with

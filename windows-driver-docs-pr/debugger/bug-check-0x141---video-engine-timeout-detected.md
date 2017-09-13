@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x141 VIDEO\_ENGINE\_TIMEOUT\_DETECTED
-description: The VIDEO\_ENGINE\_TIMEOUT\_DETECTED bug check has a value of 0x00000141. This indicates that one of the display engines failed to respond in timely fashion.
+title: Bug Check 0x141 VIDEO_ENGINE_TIMEOUT_DETECTED
+description: The VIDEO_ENGINE_TIMEOUT_DETECTED bug check has a value of 0x00000141. This indicates that one of the display engines failed to respond in timely fashion.
 ms.assetid: 0912495D-DE6D-4064-BD66-DA6145889821
 keywords: ["Bug Check 0x141 VIDEO_ENGINE_TIMEOUT_DETECTED", "VIDEO_ENGINE_TIMEOUT_DETECTED"]
 ms.author: windowsdriverdev

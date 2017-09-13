@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 The Enhanced Storage Certificate Management tool can create a self-signed certificate that is imported to an IEEE 1667-compliant USB storage device. The specifications for the certificate are stored within either a text (.txt) or initialization (.ini) file and must contain the following entries:
 
-``` syntax
+```
   [certificate]
 
     Subject=SubjectString

@@ -20,13 +20,13 @@ ms.technology: windows-devices
 # INF ClassInstall32 Section
 
 
-**Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-configurable-inf-file.md).
+**Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 
 A **ClassInstall32** section installs a new [device setup class](device-setup-classes.md) (and possibly a class installer) for devices in the new class.
 
-``` syntax
+```
 [ClassInstall32] | 
 [ClassInstall32.nt] | 
 [ClassInstall32.ntx86] |
@@ -139,7 +139,7 @@ Under this *SetupClassGUID* subkey, such an INF also provides registry informati
 
 Such a class-specific add-registry section has the following general form:
 
-``` syntax
+```
 [SetupClassAddReg]
  
 HKR,,,,%DevClassName% ; device-class friendly name 

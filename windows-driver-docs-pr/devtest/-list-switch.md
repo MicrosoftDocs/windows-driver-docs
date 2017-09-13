@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 The **/List** switch of the Enhanced Storage Certificate Management tool lists all the IEEE 1667-compliant USB storage devices that are connected to the computer. This switch can also be used to list the certificates (together with their properties) within the authentication silo certificate (ASC) store in a specified USB storage device.
 
-``` syntax
+```
     EhStorCertMgrCmd /List [-Volume:
     VolumeName
     ]

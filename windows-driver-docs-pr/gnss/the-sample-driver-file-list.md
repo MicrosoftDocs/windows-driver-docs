@@ -12,6 +12,8 @@ ms.technology: windows-devices
 
 # Geolocation sample driver file list
 
+> [!IMPORTANT] 
+> This documentation and the geolocation driver sample for Windows 8.1 has been deprecated.
 
 The source file of the geolocation driver sample includes the following categories of files.
 

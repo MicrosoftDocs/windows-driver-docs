@@ -1,6 +1,6 @@
 ---
-title: usbkd.\_ehcistq
-description: The usbkd.\_ehcistq command displays a usbehci \_HCD\_QUEUEHEAD\_DESCRIPTOR structure.
+title: usbkd._ehcistq
+description: The usbkd._ehcistq command displays a usbehci _HCD_QUEUEHEAD_DESCRIPTOR structure.
 ms.assetid: 282206D2-7F4A-4EBA-A874-F1744F218194
 keywords: ["usbkd._ehcistq Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.\_ehcistq** command displays a **usbehci!\_HCD\_QUEUEHEAD\_DESCRIPTOR** structure.
 
-``` syntax
+```
 !usbkd._ehciep StructAddr
 ```
 

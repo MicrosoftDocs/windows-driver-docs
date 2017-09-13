@@ -21,8 +21,8 @@ api_type:
 
 The **.childdbg** command controls the debugging of child processes.
 
-``` syntax
-    .childdbg 0 
+```
+.childdbg 0 
 .childdbg 1 
 .childdbg 
 ```

@@ -25,7 +25,7 @@ When you click **Connect to Remote Stub**, the **Connect to Remote Stub Server**
 
 To manually specify the remote connection parameters, enter one of the following strings in the **Connection string** box:
 
-``` syntax
+```
 npipe:server=Server,pipe=PipeName[,password=Password] 
 
 tcp:server=Server,port=Socket[,password=Password][,ipversion=6]

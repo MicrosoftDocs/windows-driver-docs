@@ -21,7 +21,7 @@ api_type:
 
 The **.reboot** command restarts the target computer.
 
-``` syntax
+```
 .reboot
 ```
 

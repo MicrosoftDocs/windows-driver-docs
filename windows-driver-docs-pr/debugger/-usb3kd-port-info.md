@@ -1,6 +1,6 @@
 ---
-title: usb3kd.port\_info
-description: The usb3kd.port\_info command displays information about a USB port in the USB 3.0 tree.
+title: usb3kd.port_info
+description: The usb3kd.port_info command displays information about a USB port in the USB 3.0 tree.
 ms.assetid: 78233FE5-981E-42C4-A100-198CAAA840A0
 keywords: ["usb3kd.port_info Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The [**!usb3kd.port\_info**](-usb3kd-device-info.md) command displays information about a USB port in the [USB 3.0 tree](usb-3-extensions.md#usb-3-tree).
 
-``` syntax
+```
 !usb3kd.port_info PortContext
 ```
 
@@ -41,7 +41,7 @@ Examples
 
 To obtain the address of the port context, look at the output of the [**!usb\_tree**](-usb3kd-usb-tree.md) command. In the following example, the address of a port context is 0xfffffa8005abe0c0.
 
-```cmd
+```
 3: kd> !usb_tree
 
 ## Dumping HUB Tree - !drvObj 0xfffffa800597f770
@@ -57,7 +57,7 @@ Topology
 
 Now you can pass the address of the port context to the **!port\_info** command.
 
-```cmd
+```
 3: kd> !port_info 0xfffffa8005abe0c0
 
 ## Dumping Port Context 0xfffffa8005abe0c0

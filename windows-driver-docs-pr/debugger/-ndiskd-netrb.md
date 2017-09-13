@@ -1,6 +1,6 @@
 ---
 title: ndiskd.netrb
-description: The ndiskd.netrb extension displays information about a NET\_RING\_BUFFER structure.
+description: The ndiskd.netrb extension displays information about a NET_RING_BUFFER structure.
 ms.assetid: 2D749E7E-00A5-422B-B785-B8DB3393A74F
 keywords: ["ndiskd.netrb Windows Debugging"]
 ms.author: windowsdriverdev
@@ -23,8 +23,8 @@ The **!ndiskd.netrb** extension displays information about a [NET\_RING\_BUFFER]
 
 For more information about the Network Adapter WDF Class Extension (NetAdapterCx), see [Network Adapter WDF Class Extension (Cx)](https://docs.microsoft.com/windows-hardware/drivers/netcx).
 
-``` syntax
-    !ndiskd.netrb [-handle <x>] [-basic] [-dump] [-elementtype <str>] 
+```
+!ndiskd.netrb [-handle <x>] [-basic] [-dump] [-elementtype <str>] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -64,7 +64,7 @@ To obtain a handle for a NET\_RING\_BUFFER, follow these steps:
 For details on Steps 1-4 of this procedure, see the examples on the **!ndiskd.cxadapter** topic. For details on Step 5 of this procedure, see the examples on the [**!ndiskd.netqueue**](-ndiskd-netqueue.md) topic.
 In the following example, look for the handle for this NETTXQUEUE's ring buffer, ffffd1022d000000.
 
-```cmd
+```
 0: kd> !ndiskd.netqueue ffffd1022f512700
 
     NETTXQUEUE         00002efdd0aed9a8
@@ -80,7 +80,7 @@ In the following example, look for the handle for this NETTXQUEUE's ring buffer,
 
 By clicking on the handle for the ring buffer or by entering the **!ndiskd.netrb -handle** command on the command line, you can see details for this NET\_RING\_BUFFER, including how many elements it contains and the address of its Begin and End indices.
 
-```cmd
+```
 0: kd> !ndiskd.netrb ffffd1022d000000
 
     NET_RING_BUFFER    ffffd1022d000000
@@ -98,7 +98,7 @@ By clicking on the handle for the ring buffer or by entering the **!ndiskd.netrb
 
 To see this NET\_RING\_BUFFER's elements, either click the "List all elements" link at the bottom of its details or enter the **!ndiskd.netrb -dump** command on the command line. The following example has had the middle elements excised for brevity.
 
-```cmd
+```
 0: kd> !ndiskd.netrb ffffd1022d000000 -dump
 
     [000] ffffd1022d000040 - NET_PACKET

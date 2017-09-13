@@ -106,7 +106,7 @@ You can activate the DDI compliance checking feature for one or more drivers by 
 
     At the command line, DDI compliance checking is represented by **verifier /flags 0x00020000** (Bit 17). To activate DDI compliance checking, use a flag value of 0x00020000 or add 0x00020000 to the flag value. For example:
 
-    ``` syntax
+    ```
     verifier /flags 0x00020000 /driver MyDriver.sys
     ```
 
@@ -145,7 +145,7 @@ You can activate the **DDI compliance checking (additional)** rules for one or m
 
     At the command line, DDI compliance checking is represented by **verifier /flags 0x00080000** (Bit 19). To activate **DDI compliance checking (additional)**, use a flag value of 0x00080000 or add 0x00080000 to the flag value. For example:
 
-    ``` syntax
+    ```
     verifier /flags 0x00080000 /driver MyDriver.sys
     ```
 

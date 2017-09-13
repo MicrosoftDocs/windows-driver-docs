@@ -79,10 +79,14 @@ The following table lists the environment variables that can be used in both use
 <td align="left"><p>Prevents processes spawned by the debugger from inheriting SeDebugPrivilege.</p></td>
 </tr>
 <tr class="odd">
+<td align="left"><p>DBGENG_NO_BUGCHECK_ANALYSIS</p></td>
+<td align="left"><p>Prevents automated bugcheck analysis.</p></td>
+</tr>
+<tr class="even">
 <td align="left"><p>DBGHELP_HOMEDIR</p></td>
 <td align="left"><p>Specifies the path for the root of the default downstream store used by SymSrv and SrcSrv. <em>Path</em> can contain a drive letter followed by a colon (<strong>:</strong>). Separate multiple directories with semicolons (<strong>;</strong>).</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p>SRCSRV_INI_FILE</p></td>
 <td align="left"><p>Specifies the path and name of the configuration file used by [SrcSrv](srcsrv.md). By default, the path is the srcsrv subdirectory of the Debugging Tools for Windows installation directory, and the file name is Srcsrv.ini. See [Source Indexing](source-indexing.md) for details.</p></td>
 </tr>

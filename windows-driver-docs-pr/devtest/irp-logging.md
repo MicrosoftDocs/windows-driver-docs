@@ -104,7 +104,7 @@ For each device the format is:
 
 Here is a sample DC2WMIParser log file. In an actual file there will not be any spaces, comments, or blank lines, but these have been added to this example to make it more clear.
 
-``` syntax
+```
 2           There are two devices described by this log file.
 
 The first device begins here:

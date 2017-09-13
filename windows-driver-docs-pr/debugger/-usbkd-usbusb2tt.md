@@ -1,6 +1,6 @@
 ---
 title: usbkd.usbusb2tt
-description: The usbkd.usbusb2tt command displays information from a usbport \_TT structure.
+description: The usbkd.usbusb2tt command displays information from a usbport _TT structure.
 ms.assetid: 0020C59D-EC86-4820-8882-F801C0C7936E
 keywords: ["usbkd.usbusb2tt Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbusb2tt** command displays information from a **usbport!\_TT** structure.
 
-``` syntax
+```
 !usbkd.usbusb2tt StructAddr
 ```
 

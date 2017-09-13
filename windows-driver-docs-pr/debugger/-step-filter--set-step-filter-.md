@@ -1,6 +1,6 @@
 ---
-title: .step\_filter (Set Step Filter)
-description: The .step\_filter command creates a list of functions that are skipped (stepped over) when tracing.
+title: .step_filter (Set Step Filter)
+description: The .step_filter command creates a list of functions that are skipped (stepped over) when tracing.
 ms.assetid: 9ce2bed4-fac0-4537-a129-7cb9f1e8725e
 keywords: [".step_filter (Set Step Filter) Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The **.step\_filter** command creates a list of functions that are skipped (stepped over) when tracing. This allows you to trace through code and skip only certain functions. It can also be used in source mode to control stepping when there are multiple function calls on one line.
 
-``` syntax
+```
 .step_filter "FilterList" 
 .step_filter /c 
 .step_filter 

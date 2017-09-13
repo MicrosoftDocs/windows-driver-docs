@@ -1,6 +1,6 @@
 ---
-title: usb3kd.xhci\_capability
-description: The usb3kd.xhci\_capability extension displays the capabilities of a USB 3.0 host controller.
+title: usb3kd.xhci_capability
+description: The usb3kd.xhci_capability extension displays the capabilities of a USB 3.0 host controller.
 ms.assetid: 72D3919A-C111-4B16-8A52-B439429DFFCC
 keywords: ["usb3kd.xhci_capability Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The [**!usb3kd.xhci\_capability**](-usb3kd-device-info.md) extension displays the capabilities of a USB 3.0 host controller.
 
-``` syntax
+```
 !usb3kd.xhci_capability DeviceExtension
 ```
 
@@ -46,7 +46,7 @@ Examples
 
 To obtain the address of the device extension, look at the output of the [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md) command. In the following example, the address of the device extension is 0xfffffa800536e2d0.
 
-```cmd
+```
 3: kd> !xhci_dumpall
 
 ## Dumping all the XHCI controllers - DrvObj 0xfffffa80053072f0
@@ -63,7 +63,7 @@ To obtain the address of the device extension, look at the output of the [**!xhc
 
 Now you can pass the address of the device extension to the **!xhci\_capability** command.
 
-```cmd
+```
 3: kd> !xhci_capability 0xfffffa800536e2d0
 
 ## Controller Capabilities

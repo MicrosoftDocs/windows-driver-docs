@@ -16,12 +16,12 @@ api_type:
 - NA
 ---
 
-# $&lt;, $&gt;&lt;, $$&lt;, $$&gt;&lt;, $$&gt;a&lt; (Run Script File)
+# $<, $><, $$<, $$><, $$ >a< (Run Script File)
 
 
 The **$&lt;**, **$&gt;&lt;**, **$$&lt;**, **$$&gt;&lt;**, and **$$&gt;a&lt;** commands read the contents of the specified script file and use its contents as debugger command input.
 
-``` syntax
+```
 $<Filename 
 $><Filename 
 $$<Filename 
@@ -149,27 +149,27 @@ Examples
 
 The following example demonstrates how to pass arguments to a script file, Myfile.txt. Assume that the file contains the following text:
 
-``` syntax
+```
 .echo The first argument is ${$arg1}.
 .echo The second argument is ${$arg2}.
 ```
 
 Then you can pass arguments to this file by using a command like this:
 
-``` syntax
+```
 0:000> $$>a<myfile.txt myFirstArg mySecondArg 
 ```
 
 The result of this command would be:
 
-``` syntax
+```
 The first argument is myFirstArg.
 The second argument is mySecondArg.
 ```
 
 Here is an example of what happens when the wrong number of argument is supplied. Assume that the file My Script.txt contains the following text:
 
-``` syntax
+```
 .echo The first argument is ${$arg1}.
 .echo The fifth argument is ${$arg5}.
 .echo The fourth argument is ${$arg4}.
@@ -177,7 +177,7 @@ Here is an example of what happens when the wrong number of argument is supplied
 
 Then the following semicolon-delimited command line produces output thus:
 
-``` syntax
+```
 0:000> $$>a< "c:\binl\my script.txt" "First one" Two "Three More" Four; recx 
 The first argument is First one.
 The fifth argument is ${$arg5}.

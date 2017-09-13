@@ -21,7 +21,7 @@ api_type:
 
 The **!gbl** extension displays header information from the ACPI BIOS Root System Description (RSDT) table of the target computer.
 
-``` syntax
+```
 !gbl [-v]
 ```
 

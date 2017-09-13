@@ -21,12 +21,10 @@ api_type:
 
 The DbEngPrx command line uses the following syntax.
 
-``` syntax
-    dbengprx [-p] -c ClientTransport -s ServerTransport 
+```
+dbengprx [-p] -c ClientTransport -s ServerTransport 
 
 dbengprx -? 
-
-   
 ```
 
 ## <span id="ddk_dbengprx_command_line_options_dbg"></span><span id="DDK_DBENGPRX_COMMAND_LINE_OPTIONS_DBG"></span>Parameters

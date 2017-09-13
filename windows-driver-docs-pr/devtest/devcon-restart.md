@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Stops and restarts the specified devices. Valid only on the local computer.
 
-``` syntax
+```
     devcon [/r] restart {* | ID [ID ...] | =class [ID [ID ...]]} 
 
    

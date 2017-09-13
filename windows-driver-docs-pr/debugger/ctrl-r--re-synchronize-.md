@@ -23,13 +23,13 @@ The CTRL+R key synchronizes with the target computer.
 
 KD Syntax
 
-``` syntax
+```
 CTRL+R  ENTER 
 ```
 
 WinDbg Syntax
 
-``` syntax
+```
 CTRL+ALT+R 
 ```
 

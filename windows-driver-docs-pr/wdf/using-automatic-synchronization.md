@@ -39,7 +39,7 @@ The framework implements this automatic synchronization by using a set of intern
 
 Your driver should store object-specific data in [object context space](framework-object-context-space.md). If your driver uses only framework-defined interfaces, only callback functions that receive a handle to the object can access this data. If the framework is synchronizing calls to the driver's callback functions, only one callback function will be called at a time and the object's context space will be accessible to only one callback function at a time.
 
-Unless your driver implements DIRQL) and requires additional synchronization. For more information, see [Synchronizing Interrupt Code](synchronizing-interrupt-code.md).
+Unless your driver implements [passive-level interrupt handling](supporting-passive-level-interrupts.md), code that services interrupts and accesses interrupt data must run at the device's IRQL (DIRQL) and requires additional synchronization. For more information, see [Synchronizing Interrupt Code](synchronizing-interrupt-code.md).
 
 If your driver enables automatic synchronization of the callback functions that handle I/O requests, the framework synchronizes these callback functions so that they run one at a time. The following table lists the callback functions that the framework synchronizes.
 

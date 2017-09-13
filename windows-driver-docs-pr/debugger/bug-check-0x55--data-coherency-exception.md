@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x55 DATA\_COHERENCY\_EXCEPTION
-description: The DATA\_COHERENCY\_EXCEPTION bug check has a value of 0x00000055.This bug check appears very infrequently.
+title: Bug Check 0x55 DATA_COHERENCY_EXCEPTION
+description: The DATA_COHERENCY_EXCEPTION bug check has a value of 0x00000055.This bug check appears very infrequently.
 ms.assetid: f7b585ec-5b76-44eb-b3fa-17684152156d
 keywords: ["Bug Check 0x55 DATA_COHERENCY_EXCEPTION", "DATA_COHERENCY_EXCEPTION"]
 ms.author: windowsdriverdev

@@ -21,8 +21,8 @@ api_type:
 
 The **!ndiskd.ndiskdversion** extension displays information about !ndiskd itself.
 
-``` syntax
-    !ndiskd.ndiskdversion 
+```
+!ndiskd.ndiskdversion 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -39,7 +39,7 @@ Examples
 
 The following example shows output for **!ndiskd.ndiskdversion**.
 
-```cmd
+```
 1: kd> !ndiskd.ndiskdversion
     NDISKD Version     17.01.00 (NDISKD codename "All your WDF are belong to us")
     Build              Release

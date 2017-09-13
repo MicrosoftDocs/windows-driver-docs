@@ -1,6 +1,6 @@
 ---
-title: usb3kd.ucx\_controller\_list
-description: The usb3kd.ucx\_controller\_list command displays information about all USB 3.0 host controllers on the computer. The display is based on data structures maintained by UcxVersion.sys.
+title: usb3kd.ucx_controller_list
+description: The usb3kd.ucx_controller_list command displays information about all USB 3.0 host controllers on the computer. The display is based on data structures maintained by UcxVersion.sys.
 ms.assetid: 57565A2A-A409-46CE-B7F9-F1CD521960E5
 keywords: ["usb3kd.ucx_controller_list Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The [**!usb3kd.ucx\_controller\_list**](-usb3kd-device-info.md) command displays information about all USB 3.0 host controllers on the computer. The display is based on data structures maintained by the USB host controller extension driver (Ucx*Version*.sys).
 
-``` syntax
+```
 !usb3kd.ucx_controller_list
 ```
 

@@ -1,6 +1,6 @@
 ---
 title: .exptr (Display Exception Pointers)
-description: The .exptr command displays an EXCEPTION\_POINTERS structure.
+description: The .exptr command displays an EXCEPTION_POINTERS structure.
 ms.assetid: ef98bf22-10a1-4fd2-80f1-fd7eb75015c1
 keywords: [".exptr (Display Exception Pointers) Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,8 +21,8 @@ api_type:
 
 The **.exptr** command displays an EXCEPTION\_POINTERS structure.
 
-``` syntax
-    .exptr Address
+```
+.exptr Address
 ```
 
 ## <span id="ddk_meta_display_exception_pointers_dbg"></span><span id="DDK_META_DISPLAY_EXCEPTION_POINTERS_DBG"></span>Parameters

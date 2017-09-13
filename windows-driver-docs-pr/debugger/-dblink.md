@@ -21,8 +21,8 @@ api_type:
 
 The **!dblink** extension displays a linked list in the backward direction.
 
-``` syntax
-    !dblink Address [Count] [Bias]  
+```
+!dblink Address [Count] [Bias]  
 ```
 
 ## <span id="ddk__dblink_dbg"></span><span id="DDK__DBLINK_DBG"></span>Parameters

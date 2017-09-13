@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0xFE BUGCODE\_USB\_DRIVER
-description: The BUGCODE\_USB\_DRIVER bug check has a value of 0x000000FE. This indicates that an error has occurred in a universal serial bus (USB) driver.
+title: Bug Check 0xFE BUGCODE_USB_DRIVER
+description: The BUGCODE_USB_DRIVER bug check has a value of 0x000000FE. This indicates that an error has occurred in a universal serial bus (USB) driver.
 ms.assetid: 830f9d11-4b16-41a9-a804-6d689a779278
 keywords: ["Bug Check 0xFE BUGCODE_USB_DRIVER", "BUGCODE_USB_DRIVER"]
 ms.author: windowsdriverdev

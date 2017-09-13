@@ -1,6 +1,6 @@
 ---
-title: usb3kd.xhci\_deviceslots
-description: The usb3kd.xhci\_deviceslots extension displays information about the devices connected to a USB 3.0 host controller.
+title: usb3kd.xhci_deviceslots
+description: The usb3kd.xhci_deviceslots extension displays information about the devices connected to a USB 3.0 host controller.
 ms.assetid: 471167EA-F7F8-470D-B09C-8627C5BE9566
 keywords: ["usb3kd.xhci_deviceslots Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The [**!usb3kd.xhci\_deviceslots**](-usb3kd-device-info.md) extension displays information about the devices connected to a USB 3.0 host controller.
 
-``` syntax
+```
 !usb3kd.xhci_deviceslots DeviceExtension [SlotNumber] [verbose]
 ```
 
@@ -54,7 +54,7 @@ Examples
 
 To obtain the address of the device extension, look at the output of the [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md) command. In the following example, the address of the device extension is 0xfffffa800536e2d0.
 
-```cmd
+```
 3: kd> !xhci_dumpall
 
 ## Dumping all the XHCI controllers - DrvObj 0xfffffa80053072f0
@@ -74,7 +74,7 @@ To obtain the address of the device extension, look at the output of the [**!xhc
 
 Now you can pass the address of the device extension to the **!usb3kd.xhci\_deviceslots** command.
 
-```cmd
+```
 3: kd> !xhci_deviceslots 0xfffffa800536e2d0
 
 ## Dumping dt _DEVICESLOT_DATA 0xfffffa8005226220

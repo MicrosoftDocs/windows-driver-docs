@@ -21,7 +21,7 @@ api_type:
 
 The **.outmask** command controls the current output mask.
 
-``` syntax
+```
 .outmask[-] [/l] Expression 
 .outmask /a 
 .outmask /d

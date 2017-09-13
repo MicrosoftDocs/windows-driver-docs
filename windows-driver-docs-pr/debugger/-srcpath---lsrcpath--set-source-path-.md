@@ -21,7 +21,7 @@ api_type:
 
 The **.srcpath** and **.lsrcpath** commands set or display the source file search path.
 
-``` syntax
+```
 .srcpath[+] [Directory [; ...]] 
 .lsrcpath[+] [Directory [; ...]] 
 ```

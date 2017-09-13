@@ -23,7 +23,7 @@ The **!amli dns** extension displays an ACPI namespace object.
 
 Syntax
 
-``` syntax
+```
 !amli dns [/s] [Name | Address]
 ```
 

@@ -1,6 +1,6 @@
 ---
 title: C28168
-description: Warning C28168 The dispatch function does not have a \_Dispatch\_type\_ annotation matching this dispatch table entry.
+description: Warning C28168 The dispatch function does not have a _Dispatch_type_ annotation matching this dispatch table entry.
 ms.assetid: 5e5acc54-acb3-4366-a625-eb79865e932e
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -66,7 +66,7 @@ __drv_dispatchType(IRP_MJ_CREATE_NAMED_PIPE)
 
 In this situation, the Code Analysis tool reports this error:
 
-``` syntax
+```
 The function 'DispatchPassIrp' does not have a _Dispatch_type_ annotation matching dispatch table position 'IRP_MJ_CREATE' (0x00):  This can be  corrected either by adding a _Dispatch_type_ annotation to the function declaration or correcting the dispatch table entry being used.
 ```
 

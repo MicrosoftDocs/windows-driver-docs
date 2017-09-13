@@ -21,7 +21,7 @@ api_type:
 
 The **!acpicache** extension displays all of the Advanced Configuration and Power Interface (ACPI) tables cached by the HAL.
 
-``` syntax
+```
 !acpicache [DisplayLevel]
 ```
 

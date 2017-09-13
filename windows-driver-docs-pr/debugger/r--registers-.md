@@ -23,14 +23,14 @@ The **r** command displays or modifies registers, floating-point registers, flag
 
 User-Mode
 
-``` syntax
+```
 [~Thread] r[M Mask|F|X|?] [ Register[:[Num]Type] [= [Value]] ] 
 r.
 ```
 
 Kernel-Mode
 
-``` syntax
+```
 [Processor] r[M Mask|F|X|Y|YI|?] [ Register[:[Num]Type] [= [Value]] ] 
 r.
 ```
@@ -318,55 +318,55 @@ The following code examples show **r** commands for an x86-based processor.
 
 In kernel mode, the following command shows the registers for processor 2.
 
-``` syntax
+```
 1: kd> 2r 
 ```
 
 In user mode, the following command shows the registers for thread 2.
 
-``` syntax
+```
 0:000> ~2 r 
 ```
 
 In user mode, the following command displays all of the **eax** registers that are associated with all threads (in thread index order).
 
-``` syntax
+```
 0:000> ~* r eax
 ```
 
 The following command sets the **eax** register for the current thread to 0x000000FF.
 
-``` syntax
+```
 0:000> r eax=0x000000FF
 ```
 
 The following command sets the **st0** register to 1.234e+10 (the **F** is optional).
 
-``` syntax
+```
 0:000> rF st0=1.234e+10
 ```
 
 The following command displays the zero flag.
 
-``` syntax
+```
 0:000> r zf 
 ```
 
 The following command displays the **xmm0** register as 16 unsigned bytes and then displays the full contents of the **xmm1** register in double-precision floating-point format.
 
-``` syntax
+```
 0:000> r xmm0:16ub, xmm1:d 
 ```
 
 If the current syntax is C++, you must precede registers by an at sign (**@**). Therefore, you could use the following command to copy the **ebx** register to the **eax** register.
 
-``` syntax
+```
 0:000> r eax = @ebx
 ```
 
 The following command displays pseudo-registers in the same way that the **r** command displays registers.
 
-``` syntax
+```
 0:000> r $teb
 ```
 
@@ -374,7 +374,7 @@ You can also use the **r** command to create *fixed-name aliases*. These aliases
 
 Here is an example of the **r.** command on an x86-based processor. The last entry of the call stack precedes the command itself.
 
-``` syntax
+```
 01004af3 8bec            mov     ebp,esp
 0:000> r.
 ebp=0006ffc0  esp=0006ff7c
@@ -382,7 +382,7 @@ ebp=0006ffc0  esp=0006ff7c
 
 Here is an example of the **r.** command on an Itanium-based processor.
 
-``` syntax
+```
 e0000000`83066cf0        ld8.acq r25 = [r45] e0000000`ffff0b18=????????????????
 1: kd> r.
 r25=ffffffff`d0000006  r45=e0000000`ffff0b18

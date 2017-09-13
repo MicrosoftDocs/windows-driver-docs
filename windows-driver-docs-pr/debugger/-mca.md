@@ -23,13 +23,13 @@ On an x86 target computer, the !mca extension displays the machine check archite
 
 Syntax for x86 target computer
 
-``` syntax
+```
 !mca
 ```
 
 Syntax for Itanium target computer
 
-``` syntax
+```
 !mca Address [Flags]
 ```
 
@@ -94,7 +94,7 @@ Remarks
 
 On an Itanium target, **!mca** displays the MCA error record from the system abstraction layer (SAL). Here is an example of the output from this extension:
 
-``` syntax
+```
 kd> !mca e0000165f3f58000
 hal!HalpFeatureBits: 0xf [HAL_PERF_EVENTS|HAL_MCA_PRESENT|HAL_CMC_PRESENT|HAL_CPE_PRESENT]
  
@@ -596,7 +596,7 @@ CP M/R/F/A Manufacturer     SerialNumber     Features         Speed
 
 On an x86 target, **!mca** displays the machine check registers supported by the active processor. It also displays basic CPU information (identical to that displayed by [**!cpuinfo**](-cpuinfo.md)). Here is an example of the output from this extension:
 
-``` syntax
+```
 0: kd> !mca
 MCE: Enabled, Cycle Address: 0x00000001699f7a00, Type: 0x0000000000000000
 
@@ -620,7 +620,7 @@ CP F/M/S Manufacturer   MHz Update Signature Features
 
 Note that this extension requires private HAL symbols. Without these symbols, the extension will display the message "HalpFeatureBits not found" along with basic CPU information. For example:
 
-``` syntax
+```
 kd> !mca
 HalpFeatureBits not found
 CP F/M/S Manufacturer  MHz Update Signature Features

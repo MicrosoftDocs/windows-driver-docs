@@ -21,8 +21,8 @@ api_type:
 
 The **.break** token behaves like the **break** keyword in C.
 
-``` syntax
-    .for (...) { ... ; .if (Condition) .break ; ...} 
+```
+ .for (...) { ... ; .if (Condition) .break ; ...} 
 
 .while (...) { ... ; .if (Condition) .break ; ...} 
 

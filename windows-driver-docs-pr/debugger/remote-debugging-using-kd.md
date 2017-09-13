@@ -29,7 +29,7 @@ There are several transport protocols you can use for a remote debugging connect
 
 4.  KD will respond with output similar to the following.
 
-    ``` syntax
+    ```
     Server started.  Client can connect with any of these command lines
     0: <debugger> -remote tcp:Port=5005,Server=YourHostComputer
     ```

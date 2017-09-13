@@ -1,6 +1,6 @@
 ---
 title: dp ( ntsdexts.dp)
-description: The dp extension in Ntsdexts.dll displays a CSR process.This extension command should not be confused with the dp (Display Memory) command, or with the kdext\ .dp extension command.
+description: The dp extension in Ntsdexts.dll displays a CSR process.
 ms.assetid: 9e489cfc-2105-4605-b94d-88eea7883420
 keywords: ["dp ( ntsdexts.dp) Windows Debugging"]
 ms.author: windowsdriverdev
@@ -23,8 +23,8 @@ The **!dp** extension in Ntsdexts.dll displays a CSR process.
 
 This extension command should not be confused with the [**dp (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command, or with the [**!kdext\*.dp**](-db---dc---dd---dp---dq---du---dw.md) extension command.
 
-``` syntax
-    !dp [v] [ PID | CSR-Process ]
+```
+!dp [v] [ PID | CSR-Process ]
 ```
 
 ## <span id="ddk__ntsdexts_dp_dbg"></span><span id="DDK__NTSDEXTS_DP_DBG"></span>Parameters

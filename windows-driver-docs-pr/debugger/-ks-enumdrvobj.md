@@ -21,8 +21,8 @@ api_type:
 
 The **!ks.enumdrvobj** extension displays all KSDEVICE structures associated with a given WDM driver object, and lists the filter types and filters currently instantiated on these devices.
 
-``` syntax
-    !ks.enumdrvobj DriverObject
+```
+!ks.enumdrvobj DriverObject
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

@@ -21,7 +21,7 @@ api_type:
 
 The **.continue** token behaves like the **continue** keyword in C.
 
-``` syntax
+```
 .for (...) { ... ; .if (Condition) .continue ; ... } 
 
 .while (...) { ... ; .if (Condition) .continue ; ... } 

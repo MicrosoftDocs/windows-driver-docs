@@ -21,9 +21,9 @@ To establish a default EPS bearer with the network the device must request a PDP
 3.	The device does not specify a LTE attach APN and lets network assign one back to the device.
 4.	The device registered from a 2G/3G network to LTE and there was already at minimum one active PDP context. The network uses it as the LTE attach APN.
 
-Today, all LTE attach APN information is provided by IHVs and OEMs directly in the modem for each provider for which it has configuration. However, it is not a fully scalable model for IHVs and OEMs to have all possible LTE attach APN settings for all operators around the globe. Starting in Windows 10 Version 1703, new interfaces are defined for both NDIS OIDs and MBIM Microsoft proprietary CIDs to support LTE attach APN configuration from the OS. Similar to how the OS receives traditional Internet APN configuration from users, enterprises, operators, and other sources, LTE attach APN management will also be part of Windows moving forward.
+Today, all LTE attach APN information is provided by IHVs and OEMs directly in the modem for each provider for which it has configuration. However, it is not a fully scalable model for IHVs and OEMs to have all possible LTE attach APN settings for all operators around the globe. Starting in Windows 10, version 1703, new interfaces are defined for both NDIS OIDs and MBIM Microsoft proprietary CIDs to support LTE attach APN configuration from the OS. Similar to how the OS receives traditional Internet APN configuration from users, enterprises, operators, and other sources, LTE attach APN management will also be part of Windows moving forward.
 
-Starting in Windows 10 Version 1703, if the underlying hardware supports LTE attach APN configuration from the OS then the user will be able to configure the LTE attach APN from Settings. Hardware that has default LTE attach APN configurations must also make its configuration available by the OS.
+Starting in Windows 10, version 1703, if the underlying hardware supports LTE attach APN configuration from the OS then the user will be able to configure the LTE attach APN from Settings. Hardware that has default LTE attach APN configurations must also make its configuration available by the OS.
 
 This feature is supported by adding in two new OIDs and CIDs.  For IHV partners that implement MBIM, only the CID version has to be supported.
 
@@ -39,8 +39,8 @@ UUID Value = **3d01dcc5-fef5-4d05-0d3abef7058e9aaf**
 
 | CID | Command Code | Minimum OS Version |
 | --- | --- | --- |
-| MBIM_CID_MS_LTE_ATTACH_CONFIG | 3 | Windows 10 Version 1703 |
-| MBIM_CID_MS_LTE_ATTACH_STATUS | 4 | Windows 10 Version 1703 |
+| MBIM_CID_MS_LTE_ATTACH_CONFIG | 3 | Windows 10, version 1703 |
+| MBIM_CID_MS_LTE_ATTACH_STATUS | 4 | Windows 10, version 1703 |
 
 ### MBIM_CID_MS_LTE_ATTACH_CONFIG
 

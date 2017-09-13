@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfdevicequeues** extension displays information about all of the framework queue objects that belong to a specified device.
 
-``` syntax
+```
 !wdfkd.wdfdevicequeues Handle
 ```
 

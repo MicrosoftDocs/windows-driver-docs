@@ -1,5 +1,5 @@
 ---
-title: locks ( kdext\ .locks)
+title: !locks (!kdext*.locks)
 description: The locks extension in Kdextx86.dll and Kdexts.dll displays information about kernel ERESOURCE locks.
 ms.assetid: c1be6c6c-0028-459f-9c92-61df52cbc4b6
 keywords: ["kdext .locks extension", "ERESOURCE locks", "deadlocks", "locks ( kdext .locks) Windows Debugging"]
@@ -23,7 +23,7 @@ The **!locks** extension in Kdextx86.dll and Kdexts.dll displays information abo
 
 This extension command should not be confused with the [**!ntsdexts.locks**](-locks---ntsdexts-locks-.md) extension command.
 
-``` syntax
+```
 !locks [Options] [Address]
 ```
 
@@ -75,7 +75,7 @@ You can usually pinpoint a deadlock in Microsoft Windows 2000 by finding one non
 
 Here is an example of the basic **!locks** output:
 
-``` syntax
+```
 kd> !locks
 **** DUMP OF ALL RESOURCE OBJECTS ****
 KD: Scanning for held locks......
@@ -97,7 +97,7 @@ Note that the address for each thread displayed is followed by its thread count 
 
 If you want to find more information about one of these resource objects, use the address that follows "Resource @" as an argument for future commands. To investigate the second resource shown in the preceding example, you could use [**dt ERESOURCE 80d8b0b0**](dt--display-type-.md) or [**!thread 80ed0020**](-thread.md). Or you could use the **!locks** extension again with the **-v** option:
 
-``` syntax
+```
 kd> !locks -v 80d8b0b0
 
 Resource @ 0x80d8b0b0    Shared 1 owning threads

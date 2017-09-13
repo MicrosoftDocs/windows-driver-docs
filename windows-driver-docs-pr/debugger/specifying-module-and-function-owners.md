@@ -32,7 +32,7 @@ Although the Triage.ini file is intended to help you determine the owner of a fu
 
 Each line in this file has the following syntax.
 
-``` syntax
+```
 Module[!Function]=Owner 
 ```
 
@@ -44,7 +44,7 @@ For more information about syntax options, see Special Triage.ini Syntax.
 
 The following examples shows a sample Triage.ini file.
 
-``` syntax
+```
 module1=Person1
 module2!functionA=Person2
 module2!functionB=Person3
@@ -60,7 +60,7 @@ When you pass a module or function name to the [**!owner**](-owner.md) extension
 
 The following example uses the previous sample Triage.ini file.
 
-``` syntax
+```
 0:000> !owner module2!functionB
 Followup:  Person3
 ```
@@ -85,7 +85,7 @@ Suppose the third frame is **module2!functionC**. The debugger first looks for a
 
 The debugger then displays output that is similar to the following example.
 
-``` syntax
+```
 0:000> !analyze
 *******************************************************************************
 *                                                                             *

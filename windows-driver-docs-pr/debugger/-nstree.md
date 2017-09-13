@@ -23,7 +23,7 @@ The **!nstree** extension displays an ACPI namespace object and its children in 
 
 Syntax
 
-``` syntax
+```
 !nstree [Address]
 ```
 

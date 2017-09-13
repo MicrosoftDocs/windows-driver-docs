@@ -22,6 +22,8 @@ This section includes the following topics:
 
 [Creating Secure Device Installations](creating-secure-device-installations.md)
 
+[Using a Component INF File](using-a-component-inf-file.md)
+
 [Device Identification and Properties](device-identification-and-properties.md)
 
 [Device Installations and System Restarts](device-installations-and-system-restarts.md)

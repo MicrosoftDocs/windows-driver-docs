@@ -54,7 +54,7 @@ After you have determined the pool tag associated with the leak, follow this pro
 
 2.  Set **PoolHitTag** equal to the tag that you suspect to be the source of the memory leak. The module name "nt" should be specified for faster symbol resolution. The tag value must be entered in little-endian format (that is, backward). Because pool tags are always four characters, this tag is actually A-b-c-space, not merely A-b-c. So use the following command:
     ```
-    kd> ed nt!poolhittag &#39; cbA&#39; 
+    kd> ed nt!poolhittag ' cbA' 
     ```
 
 3.  To verify the current value of **PoolHitTag**, use the [**db (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command:

@@ -21,7 +21,7 @@ api_type:
 
 The **ah** command controls the assertion handling status for specific addresses.
 
-``` syntax
+```
 ahb [Address] 
 ahi [Address] 
 ahd [Address] 

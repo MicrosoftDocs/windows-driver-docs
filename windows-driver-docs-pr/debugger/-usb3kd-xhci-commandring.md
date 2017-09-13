@@ -1,6 +1,6 @@
 ---
-title: usb3kd.xhci\_commandring
-description: The usb3kd.xhci\_commandring extension displays information about the command ring data structure associated with a USB 3.0 host controller.
+title: usb3kd.xhci_commandring
+description: The usb3kd.xhci_commandring extension displays information about the command ring data structure associated with a USB 3.0 host controller.
 ms.assetid: 3099F3F1-B881-4BBD-90F5-59DC2DFECF3B
 keywords: ["usb3kd.xhci_commandring Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The [**!usb3kd.xhci\_commandring**](-usb3kd-device-info.md) extension displays information about the command ring data structure associated with a USB 3.0 host controller.
 
-``` syntax
+```
 !usb3kd.xhci_commandring DeviceExtension
 ```
 
@@ -48,7 +48,7 @@ Examples
 
 To obtain the address of the device extension, look at the output of the [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md) command. In the following example, the address of the device extension is 0xfffffa800536e2d0.
 
-```cmd
+```
 3: kd> !xhci_dumpall
 
 ## Dumping all the XHCI controllers - DrvObj 0xfffffa80053072f0
@@ -67,7 +67,7 @@ To obtain the address of the device extension, look at the output of the [**!xhc
 
 Now you can pass the address of the device extension to the **!xhci\_commandring** command.
 
-```cmd
+```
 3: kd> !xhci_commandring 0xfffffa800536e2d0
 
 ## Dumping dt _COMMAND_DATA 0xfffffa8005362f70 !rcdrlogdump USBXHCI -a 0xfffffa8005a8f010

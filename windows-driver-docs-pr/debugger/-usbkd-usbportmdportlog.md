@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.usbportmdportlog** command displays the USBPORT debug log if it is present in a crash dump that was generated as a result of [**Bug Check 0xFE**](bug-check-0xfe--bugcode-usb-driver.md).
 
-``` syntax
+```
 !usbkd.usbportmdportlog
 ```
 
@@ -40,7 +40,7 @@ Examples
 
 Here is an example of a portion of the output of **!usbportmdportlog**.
 
-``` syntax
+```
 1: kd> !analyze -v
 *** ...
 BUGCODE_USB_DRIVER (fe) 

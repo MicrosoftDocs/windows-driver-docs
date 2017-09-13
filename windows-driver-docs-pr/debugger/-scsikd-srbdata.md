@@ -1,6 +1,6 @@
 ---
 title: scsikd.srbdata
-description: The scsikd.srbdata extension displays the specified SRB\_DATA tracking block.
+description: The scsikd.srbdata extension displays the specified SRB_DATA tracking block.
 ms.assetid: 9c0ba4d9-124f-4e86-a0e1-7f8796b6571a
 keywords: ["scsikd.srbdata Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,8 +21,8 @@ api_type:
 
 The **!scsikd.srbdata** extension displays the specified SRB\_DATA tracking block.
 
-``` syntax
-    !scsikd.srbdata Address 
+```
+!scsikd.srbdata Address 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

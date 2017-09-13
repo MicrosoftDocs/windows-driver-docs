@@ -24,7 +24,7 @@ Keyword instances appearing within a PrintCapabilities or PrintTicket document S
 
 The namespace URI for the Print Schema keywords for 3D manufacturing is:
 
-``` syntax
+```
 http://schemas.microsoft.com/3dmanufacturing/2013/01/pskeywords3d
 ```
 

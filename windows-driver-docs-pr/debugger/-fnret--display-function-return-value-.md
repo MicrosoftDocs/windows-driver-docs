@@ -21,8 +21,8 @@ api_type:
 
 The **.fnret** command displays information about a function's return value.
 
-``` syntax
-    .fnret [/s] Address [Value] 
+```
+.fnret [/s] Address [Value] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

@@ -1,6 +1,6 @@
 ---
-title: usb3kd.xhci\_info
-description: The usb3kd.xhci\_info extension displays all the XHCI commands for an individual USB 3.0 host controller.
+title: usb3kd.xhci_info
+description: The usb3kd.xhci_info extension displays all the XHCI commands for an individual USB 3.0 host controller.
 ms.assetid: C3C3B379-4871-4293-9C35-B64F3A5E1348
 keywords: ["usb3kd.xhci_info Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The [**!usb3kd.xhci\_info**](-usb3kd-device-info.md) extension displays all the XHCI commands for an individual USB 3.0 host controller.
 
-``` syntax
+```
 !usb3kd.xhci_info DeviceExtension
 ```
 
@@ -46,7 +46,7 @@ Examples
 
 You can get address of the device extension from the [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md) command or from a variety of other debugger commands. For example, the [**!devstack**](-devstack.md) command displays the address of the device extension. In the following example, the address of the device extension for the host controller's FDO is fffffa800536e2d0.
 
-```cmd
+```
 3: kd> !devnode 0 1 usbxhci
 Dumping IopRootDeviceNode (= 0xfffffa8003609cc0)
 DevNode 0xfffffa8003df3010 for PDO 0xfffffa8003dd5870
@@ -64,7 +64,7 @@ DevNode 0xfffffa8003df3010 for PDO 0xfffffa8003dd5870
 
 Now you can pass the address of the device extension to the **!xhci\_info** command.
 
-```cmd
+```
 3: kd> !xhci_info 0xfffffa80`0536e2d0
 
 ## Dumping XHCI controller commands - DeviceExtension 0xfffffa800536e2d0

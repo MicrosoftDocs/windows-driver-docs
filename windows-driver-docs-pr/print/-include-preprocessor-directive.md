@@ -1,7 +1,7 @@
 ---
-title: '\ Include Preprocessor Directive'
+title: '#Include Preprocessor Directive'
 author: windows-driver-content
-description: '\ Include Preprocessor Directive'
+description: '#Include Preprocessor Directive'
 ms.assetid: 6c3e4de7-2007-4a1a-bdb0-fd5b2b64f489
 keywords:
 - preprocessor directives WDK GDL , keywords

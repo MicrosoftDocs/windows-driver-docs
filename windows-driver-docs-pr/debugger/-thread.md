@@ -25,7 +25,7 @@ This extension command is not the same as the [**.thread (Set Register Context)*
 
 Syntax
 
-``` syntax
+```
 !thread [-p] [-t] [Address [Flags]]
 ```
 
@@ -69,7 +69,7 @@ Remarks
 
 Here is an example using Windows 10:
 
-``` syntax
+```
 0: kd> !thread 0xffffcb088f0a4480            
 THREAD ffffcb088f0a4480  Cid 0e34.3814  Teb: 0000001a27ca6000 Win32Thread: 0000000000000000 RUNNING on processor 0
 Not impersonating

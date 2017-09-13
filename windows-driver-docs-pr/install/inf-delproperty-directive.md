@@ -20,13 +20,13 @@ ms.technology: windows-devices
 # INF DelProperty Directive
 
 
-**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-configurable-inf-file.md).
+**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 
 A **DelProperty** directive references one or more INF file sections that delete [device properties](device-properties.md) for a device instance, a [device setup class](device-setup-classes.md), a [device interface class](device-interface-classes.md), or a device interface.
 
-``` syntax
+```
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -47,7 +47,7 @@ A **DelProperty** directive can be specified under any of the sections shown in 
 
 A *del-property-section* that is referenced by a **DelProperty** directive has the following format:
 
-``` syntax
+```
 [del-property-section]
 (property-name [ ,, flags [, value]]) | ({property-category-guid}, property-pid [ , flags [, value]])
 (property-name [ ,, flags [, value]]) | ({property-category-guid}, property-pid [ , flags [, value]])

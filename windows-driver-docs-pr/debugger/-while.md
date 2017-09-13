@@ -21,7 +21,7 @@ api_type:
 
 The **.while** token behaves like the **while** keyword in C.
 
-``` syntax
+```
 .while (Condition) { Commands } 
 ```
 

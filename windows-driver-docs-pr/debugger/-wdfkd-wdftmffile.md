@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdftmffile** extension sets the trace message format (.tmf) file to use when the debugger is formatting Kernel-Mode Driver Framework (KMDF) error log records for the [**!wdfkd.wdflogdump**](-wdfkd-wdflogdump.md) or [**!wdfkd.wdfcrashdump**](-wdfkd-wdfcrashdump.md) extensions.
 
-``` syntax
+```
 !wdfkd.wdftmffile TMFpath
 ```
 

@@ -1,6 +1,6 @@
 ---
-title: usbkd.ehci\_info\_from\_fdo
-description: The usbkd.ehci\_info\_from\_fdo command displays information about a USB host controller.
+title: usbkd.ehci_info_from_fdo
+description: The usbkd.ehci_info_from_fdo command displays information about a USB host controller.
 ms.assetid: C7026EF3-F58D-45EB-83D5-8B4A3E661759
 keywords: ["usbkd.ehci_info_from_fdo Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The [**!usbkd.ehci\_info\_from\_fdo**](https://msdn.microsoft.com/library/windows/hardware/dn367058) command displays information about a USB host controller.
 
-``` syntax
+```
 !usbkd.ehci_info_from_fdo fdo
 ```
 
@@ -41,7 +41,7 @@ Examples
 
 First use the [**!usb2tree**](-usbkd-usb2tree.md) command to get the address of the FDO.
 
-``` syntax
+```
 0: kd> !usbkd.usb2tree
 
 EHCI MINIPORT(s) dt usbport!_USBPORT_MINIPORT_DRIVER ffffe00001f48bd0
@@ -52,7 +52,7 @@ EHCI MINIPORT(s) dt usbport!_USBPORT_MINIPORT_DRIVER ffffe00001f48bd0
 
 In the preceding output, you can see that the address of the FDO of the USB host controller is `ffffe00001ca1050`. Pass the address of the FDO to [**!ehci\_info\_from\_fdo**](https://msdn.microsoft.com/library/windows/hardware/dn367058).
 
-``` syntax
+```
 0: kd> !usbkd.ehci_info_from_fdo ffffe00001ca1050
 
 HC Flavor 1000  FDO ffffe00001ca1050

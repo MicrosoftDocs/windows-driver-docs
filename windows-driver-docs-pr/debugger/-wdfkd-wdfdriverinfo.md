@@ -21,7 +21,7 @@ api_type:
 
 The **!wdfkd.wdfdriverinfo** extension displays information about the specified driver, including its device tree, the version of the Kernel-Mode Driver Framework (KMDF) library that the driver was compiled with, and a list of the framework device objects that the driver created.
 
-``` syntax
+```
 !wdfkd.wdfdriverinfo [DriverName [Flags]]
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.doesdumphaveusbdata** command checks to see which types of USB data are in a crash dump file that was generated as a result of [**Bug Check 0xFE**](bug-check-0xfe--bugcode-usb-driver.md).
 
-``` syntax
+```
 !usbkd.doesdumphaveusbdata
 ```
 
@@ -40,7 +40,7 @@ Examples
 
 Here is an example of the output of **!doesdumphaveusbdata**
 
-``` syntax
+```
 1: kd> !analyze -v
 *** ...
 BUGCODE_USB_DRIVER (fe) 

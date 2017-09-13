@@ -21,8 +21,8 @@ api_type:
 
 The **!storagekd.storhelp** extension displays help text for Storagekd.dll extension commands.
 
-``` syntax
-    !storagekd.storhelp 
+```
+!storagekd.storhelp 
 ```
 
 ## <span id="DLL"></span><span id="dll"></span>DLL
@@ -63,10 +63,10 @@ Here is an example of the **!storagekd.storhelp** display:
 ## STORPORT specific commands
 --------------------------
 !storlogirp <args>     - displays internal log entries that reference the specified IRP.
-                         See &#39;!storhelp storlogirp&#39; for details.
-!storloglist <args>    - displays internal log entries. See &#39;!storhelp storloglist&#39; for details.
+                         See '!storhelp storlogirp' for details.
+!storloglist <args>    - displays internal log entries. See '!storhelp storloglist' for details.
 !storlogsrb <args>     - displays internal log entries that reference the specified SRB.
-                         See &#39;!storhelp storlogsrb&#39; for details.
+                         See '!storhelp storlogsrb' for details.
 !storsrb <address>     - display details for the specified SCSI or STORAGE request block
 ```
 

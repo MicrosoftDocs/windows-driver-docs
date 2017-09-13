@@ -1,7 +1,7 @@
 ---
-title: '\ Endif Conditional Preprocessor Directive'
+title: '#Endif Conditional Preprocessor Directive'
 author: windows-driver-content
-description: '\ Endif Conditional Preprocessor Directive'
+description: '#Endif Conditional Preprocessor Directive'
 ms.assetid: dfbfdb4a-955b-4ccf-b496-c8c5ddc42d2b
 keywords:
 - preprocessor directives WDK GDL , conditional directives

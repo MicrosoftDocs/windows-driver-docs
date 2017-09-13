@@ -21,11 +21,11 @@ api_type:
 
 The **a** command assembles 32-bit x86 instruction mnemonics and puts the resulting instruction codes into memory.
 
-``` syntax
+```
 a [Address]
 ```
 
-## <span id="ddk_cmd_assemble_dbg"></span><span id="DDK_CMD_ASSEMBLE_DBG"></span>Parameters
+## <span id="DDK_CMD_ASSEMBLE_DBG"></span>Parameters
 
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   

@@ -9,6 +9,9 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
+> [!IMPORTANT]
+> Starting in Windows 10, version 1507, this element has been deprecated and may not be supported in future versions of Windows.
+
 # AllowStandardUserPinUnlock
 
 
@@ -17,7 +20,7 @@ The AllowStandardUserPinUnlock element specifies if standard users are allowed t
 ## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
 
 
-``` syntax
+```syntax
 <AllowStandardUserPinUnlock>
   text
 </ AllowStandardUserPinUnlock >

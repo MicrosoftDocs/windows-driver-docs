@@ -21,7 +21,7 @@ api_type:
 
 The **.attach** command attaches to a new target application.
 
-``` syntax
+```
 .attach [-premote RemoteOptions] AttachOptions PID
 ```
 

@@ -21,7 +21,7 @@ api_type:
 
 The **!bthkd.rfcommconnection** command displays information about a given RFCOMM connection object.
 
-``` syntax
+```
 !bthkd.rfcommconnection addr 
 ```
 

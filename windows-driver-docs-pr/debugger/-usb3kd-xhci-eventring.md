@@ -1,6 +1,6 @@
 ---
-title: usb3kd.xhci\_eventring
-description: The usb3kd.xhci\_eventring extension displays information about the event ring data structure associated with a USB 3.0 host controller.
+title: usb3kd.xhci_eventring
+description: The usb3kd.xhci_eventring extension displays information about the event ring data structure associated with a USB 3.0 host controller.
 ms.assetid: D3A40372-5473-48B0-94C7-5D3B80801F16
 keywords: ["usb3kd.xhci_eventring Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The [**!usb3kd.xhci\_eventring**](-usb3kd-device-info.md) extension displays information about the event ring data structure associated with a USB 3.0 host controller.
 
-``` syntax
+```
 !usb3kd.xhci_eventring DeviceExtension
 ```
 
@@ -48,7 +48,7 @@ Examples
 
 To obtain the address of the device extension, look at the output of the [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md) command. In the following example, the address of the device extension is 0xfffffa800536e2d0.
 
-```cmd
+```
 3: kd> !xhci_dumpall
 
 ## Dumping all the XHCI controllers - DrvObj 0xfffffa80053072f0
@@ -69,7 +69,7 @@ To obtain the address of the device extension, look at the output of the [**!xhc
 
 Now you can pass the address of the device extension to the **!xhci\_eventring** command.
 
-```cmd
+```
 3: kd> !xhci_eventring 0xfffffa800536e2d0
 
 ## Dumping dt _PRIMARY_INTERRUPTER_DATA fffffa800536b5b0

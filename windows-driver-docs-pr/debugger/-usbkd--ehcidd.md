@@ -1,6 +1,6 @@
 ---
-title: usbkd.\_ehcidd
-description: The usbkd.\_ehcidd command displays information from a usbehci \_DEVICE\_DATA structure.
+title: usbkd._ehcidd
+description: The usbkd._ehcidd command displays information from a usbehci _DEVICE_DATA structure.
 ms.assetid: 8D594564-6506-44A8-A109-A76DA5AE7D89
 keywords: ["usbkd._ehcidd Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The **!usbkd.\_ehcidd** command displays information from a **usbehci!\_DEVICE\_DATA** structure.
 
-``` syntax
+```
 !usbkd._ehcidd StructAddr
 ```
 
@@ -41,7 +41,7 @@ Examples
 
 Here is one way to get the address of a **usbehci!\_DEVICE\_DATA** structure. First enter [**!usbkd.usbhcdlist**](-usbkd-usbhcdlist.md).
 
-``` syntax
+```
 0: kd> !usbkd.usbhcdlist
 
 MINIPORT List @ fffff80001e5bbd0
@@ -62,7 +62,7 @@ In the preceding output, `ffffe0000781bda0` is the address of a **\_DEVICE\_DATA
 
 Now pass the structure address to **!\_ehcidd**
 
-``` syntax
+```
 0: kd> !usbkd._ehcidd ffffe0000781bda0
 
 *USBEHCI DEVICE DATA ffffe0000781bda0

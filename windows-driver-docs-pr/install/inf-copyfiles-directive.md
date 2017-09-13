@@ -25,7 +25,7 @@ A **CopyFiles** directive can do either of the following:
 -   Cause a single file to be copied from the source media to the default destination directory.
 -   Reference one or more INF-writer-defined sections in the INF that each specifies a list of files to be copied from the source media to the destination.
 
-``` syntax
+```
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -43,7 +43,7 @@ A **CopyFiles** directive can be specified within any of the sections shown in t
 
 Each named section referenced by a **CopyFiles** directive has one or more entries of the following form:
 
-``` syntax
+```
 [file-list-section]
 destination-file-name[,[source-file-name][,[unused][,flag]]]
 ...
@@ -53,7 +53,7 @@ An INF-writer-defined *file-list-section* can have any number of entries, each o
 
 Each *file-list-section* can have an optional, associated *file-list-section***.security** section of the following form:
 
-``` syntax
+```
 [file-list-section.security]
 "security-descriptor-string"
 ```

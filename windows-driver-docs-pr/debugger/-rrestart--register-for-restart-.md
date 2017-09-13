@@ -21,7 +21,7 @@ api_type:
 
 The **.rrestart** command registers the debugging session for restart in case of a reboot or an application failure.
 
-``` syntax
+```
 .rrestart
 ```
 

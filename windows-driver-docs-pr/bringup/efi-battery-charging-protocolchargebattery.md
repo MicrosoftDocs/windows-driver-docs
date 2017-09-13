@@ -1,7 +1,7 @@
 ---
-title: EFI\_BATTERY\_CHARGING\_PROTOCOL.ChargeBattery
+title: EFI_BATTERY_CHARGING_PROTOCOL.ChargeBattery
 author: windows-driver-content
-description: EFI\_BATTERY\_CHARGING\_PROTOCOL.ChargeBattery
+description: EFI_BATTERY_CHARGING_PROTOCOL.ChargeBattery
 ms.assetid: 362b812f-b64b-4b6c-84a6-61c09a60f8a3
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

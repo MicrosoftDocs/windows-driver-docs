@@ -1,7 +1,7 @@
 ---
 ms.assetid: 176A3794-E9E9-46C3-B242-422843436D2A
 title: Building Drivers for Different Versions of Windows
-description: If you are writing drivers for different versions of Windows, the following section provides some guidelines about how you should build those drivers using the Windows Driver Kit \(WDK\) 8.1 or WDK 8, Visual Studio, and MSBuild.
+description: If you are writing drivers for different versions of Windows, the following section provides some guidelines about how you should build those drivers using the Windows Driver Kit (WDK) 8.1 or WDK 8, Visual Studio, and MSBuild.
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
@@ -33,7 +33,7 @@ If you are [writing drivers for different versions of Windows](https://msdn.micr
 
     **Using MSBuild:**
 
-    ``` syntax
+    ```
     msbuild /p:KernelBufferOverflowLib="C:\Program Files (x86)\Windows Kits\8.1\Lib\win8\km\x64\BufferOverflowK.lib" /p:platform=x64 /p:Configuration="Win8 Release" myDriver.sln
     ```
 

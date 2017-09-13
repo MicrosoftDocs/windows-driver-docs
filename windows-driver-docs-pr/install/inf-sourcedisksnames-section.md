@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 A **SourceDisksNames** section identifies the distribution disks or CD-ROM discs that contain the source files to be transferred to the target computer during installation.
 
-``` syntax
+```
 [SourceDisksNames] |
 [SourceDisksNames.x86] | 
 [SourceDisksNames.ia64] | (Windows XP and later versions of Windows)

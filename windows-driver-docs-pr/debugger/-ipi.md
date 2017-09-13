@@ -21,7 +21,7 @@ api_type:
 
 The **!ipi** extension displays the interprocessor interrupt (IPI) state for a specified processor.
 
-``` syntax
+```
 !ipi [Processor]
 ```
 
@@ -63,7 +63,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-``` syntax
+```
 0: kd> !ipi
 IPI State for Processor 0
   Worker Routine:  nt!KiFlushTargetMultipleTb [Stale]

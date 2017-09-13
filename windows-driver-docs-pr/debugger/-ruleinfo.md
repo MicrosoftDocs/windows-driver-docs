@@ -21,7 +21,7 @@ api_type:
 
 The **!ruleinfo** command displays information about a Driver Verifier rule.
 
-``` syntax
+```
 !ruleinfo RuleId [RuleState [SubState]]
 ```
 
@@ -48,7 +48,7 @@ This command applies only to rules in the Driver Verifier extension; that is, ru
 
 The following example shows the four arguments of a [**DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](bug-check-0xc4--driver-verifier-detected-violation.md) bug check.
 
-``` syntax
+```
 DRIVER_VERIFIER_DETECTED_VIOLATION (c4)
 ...
 Arguments:
@@ -83,7 +83,7 @@ FAILURE_BUCKET_ID:  Xxxx
 
 In the preceding output, the rule ID (0x91001) is shown as Arg1. Arg3 and Arg4 are the addresses of rule state and substate information. You can pass the rule ID, the rule state, and the substate to **!ruleinfo** to get a description of the rule and a link to detailed documentation of the rule.
 
-``` syntax
+```
 3: kd> !ruleinfo 0x91001 0xffffe000027b8370 0xffffe000027b83f8
 
 RULE_ID: 0x91001

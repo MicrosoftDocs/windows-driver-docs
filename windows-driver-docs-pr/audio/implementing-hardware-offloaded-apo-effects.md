@@ -18,6 +18,9 @@ Two types of APOs can be loaded during hardware offload playback.
 
 1. Offload Stream Effects (OSFX)
 2. Offload Mode Effects (OMFX)
+
+
+
 ## <span id="Hardware_Offloaded_APO_Effects_Overview"></span><span id="hardware_offloaded_apo_effects_overview"></span><span id="HARDWARE_OFFLOADED_APO_EFFECTS_OVERVIEW"></span>Hardware Offloaded APO Effects Overview
 
 

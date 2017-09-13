@@ -26,7 +26,7 @@ This operation does not delete the device driver or any files installed for the 
 
 Valid only on the local computer.
 
-``` syntax
+```
     devcon [/r] remove {* | ID [ID ...] | =class [ID [ID ...]]} 
 
    

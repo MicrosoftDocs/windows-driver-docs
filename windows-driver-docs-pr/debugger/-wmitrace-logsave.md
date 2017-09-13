@@ -21,8 +21,8 @@ api_type:
 
 The **!wmitrace.logsave** extension writes the current contents of the trace buffers for a trace session to a file.
 
-``` syntax
-    !wmitrace.logsave {LoggerID|LoggerName} Filename 
+```
+!wmitrace.logsave {LoggerID|LoggerName} Filename 
 ```
 
 ## <span id="ddk__wmitrace_logsave_dbg"></span><span id="DDK__WMITRACE_LOGSAVE_DBG"></span>Parameters

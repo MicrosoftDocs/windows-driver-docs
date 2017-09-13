@@ -11,165 +11,46 @@ ms.technology: windows-devices
 
 # Getting Started with Universal Windows drivers
 
-Universal Windows drivers enable developers to create a single driver that runs across multiple different device types, from embedded systems to tablets and desktop PCs. Hardware developers can use their existing components and device drivers across different form factors. Universal Windows drivers run on Windows 10 for desktop editions (Home, Pro, and Enterprise), Windows 10 Mobile, Windows 10 IoT Core, Windows Server 2016 Technical Preview, as well as other Windows 10 editions that share a common set of interfaces.
+Universal Windows drivers enable developers to create a single driver package that runs across multiple different device types, from embedded systems to tablets and desktop PCs.
 
-## <span id="Introduction_to_Universal_Windows_drivers"></span><span id="introduction_to_universal_windows_drivers"></span><span id="INTRODUCTION_TO_UNIVERSAL_WINDOWS_DRIVERS"></span>Introduction to Universal Windows drivers
+A Universal Windows driver is a driver package that contains an INF file and binaries that will install and run on Universal Windows Platform (UWP) based editions of Windows 10, such as Windows 10 for desktop editions (Home, Pro, and Enterprise), Windows 10 S, Windows 10 Mobile, Windows 10 IoT Core, Windows Server 2016, as well as other Windows 10 editions that share a common set of interfaces.
 
+A Universal INF file is an INF file that only uses the [subset of INF syntax](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file) that is supported on [UWP-based editions of Windows 10](windows-10-editions-for-universal-drivers.md).
 
-Windows 10 provides a set of API and DDI interfaces that are common to multiple editions of Windows. This set of interfaces is called the Universal Windows Platform (UWP).
+Any binaries referenced by the Universal INF file must use only device driver interfaces (DDI) that are included in [UWP-based editions of Windows 10](windows-10-editions-for-universal-drivers.md).  These DDIs are marked as **Universal** on the corresponding documentation reference pages.  The driver binary can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the Windows Driver Model (WDM).
 
-A Universal Windows driver is a kernel-mode or user-mode driver binary that installs and runs on UWP-based editions of Windows 10.
+Other binaries contained in your Universal Windows driver must pass the [API validation tests](../devtest/infverif.md).
 
-A Universal Windows driver calls only device driver interfaces (DDIs) that are part of UWP. These DDIs are marked as **Universal** on the corresponding MSDN reference pages.
+## Design Principles
 
-To determine if your existing driver calls any interfaces outside of UWP, recompile your driver as a Universal Windows driver. The compiler displays [ApiValidator errors](validating-universal-drivers.md) if the driver calls interfaces that are not part of UWP. In some cases, you can replace these calls with alternate DDIs that are listed on the MSDN reference pages for the desktop-only DDI. If you cannot find a suitable replacement, please submit [feedback](http://go.microsoft.com/fwlink/p/?linkid=529549).
+When you write a universal driver package, there are four design principles to consider:
 
-In other cases, you may have to code a workaround if there is not a suitable replacement. If you need to, write a new Universal Windows driver starting from the driver templates in the unified WDK.
+*  Declarative: Use directives in the INF file for installation operations and not extension points such as co-installers, RegisterDlls, etc.
+*  Componentized: System and/or OEM-specific customizations are in an [extension INF](../install/using-an-extension-inf-file.md) driver package separate from the primary driver package, facilitating independent updates of different components owned by different organizations.
+*  Hardware Support Apps (HSA): Use [custom capabilities](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md) to associate a hardware-specific UWP (Universal Windows Platform) application with your driver.  The resulting app can be delivered and serviced from the Windows Store.
+*  Universal API compliance: Binaries in the universal driver package only call APIs and DDIs that are included in the OneCore subset.  INF files use only universal INF syntax.
 
-The compiler might also display [INF validation errors](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn929320) if you are not [using a universal INF file](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn941087).
+Below, you'll find requirements and recommendations related to these principles.  Also check out [Universal Driver Scenarios](universal-driver-scenarios.md), which describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) applies the DCHU design principles.
 
-A Universal Windows driver can use [KMDF](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff557565), [UMDF 2](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn384105) or the Windows Driver Model (WDM).
+## Requirements
 
-## <span id="Building_a_Universal_Windows_driver"></span><span id="building_a_universal_windows_driver"></span><span id="BUILDING_A_UNIVERSAL_WINDOWS_DRIVER"></span>Building a Universal Windows driver
+The following are required when writing a universal driver package:
 
+*  Create a universal INF file for your driver:
+    1.  Review the list of INF sections and directives that are valid in universal driver packages in [Using a Universal INF File](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file).
+    2.  Use the [InfVerif](../devtest/infverif.md) tool to verify that your driver package's INF file is universal.
+*  Use the ApiValidator tool to verify that the APIs your binaries call are valid for a universal driver package.  See [Validating Universal Windows drivers](validating-universal-drivers.md).
 
-You can use Microsoft Visual Studio 2015 in conjunction with Windows Driver Kit (WDK) 10 to build drivers for desktop, mobile, or universal. You can download kits and tools from the [Windows Hardware Dev Center](http://go.microsoft.com/fwlink/p/?LinkId=524487).
+## Best Practices
 
-In many cases, you can recompile an existing kernel-mode driver that runs on Windows 8.1 as a Universal Windows driver, as long as the driver does not work with any user-mode components. WDM and KMDF drivers that work with Windows 8.1 should recompile as Universal Windows drivers targeting Windows 10 with no conversion required.
+Use the following best practices:
 
-In contrast, existing user-mode drivers may require modification to compile as Universal Windows drivers. Specifically, your driver package must not have any dependencies outside of UWP. For example, only some of the Win32 APIs are part of UWP.
+*  If you are using the WDK with Visual Studio, set the **Target Platform** value in the driver project properties to `Universal`.  This will automatically pull in the correct libraries, as well as running the Universal INF validation and APIValidator as a part of build.  To do this:
 
-**Converting an existing driver project to a Universal Windows driver project**
-
-1.  In Visual Studio 2015, open the existing driver project.
-2.  In the Solution Explorer pane, right-click the solution and choose **Configuration Manager**. Set the target operating system to Windows 10.
-3.  Right-click the driver project and choose **Properties**. Under Configuration Properties-&gt;Driver, verify that **Target Platform** is set to **Universal**. Other choices include **Desktop**, to build a driver that runs on Windows 10 for desktop editions only, and **Mobile**, to build a driver that runs on Windows 10 Mobile only.
-4.  Build the driver. You might see linker errors.
-5.  Fix the errors one by one by going through the error log. Refer to individual reference pages in the documentation for possible alternate APIs. If replacements are not available, you may need to redesign your driver.
-
-**Creating a New Universal Windows driver Project in Microsoft Visual Studio**
-
-1.  Create a new driver from a template (**File&gt;New Project-&gt;Templates-&gt;Visual C++-&gt;Windows Driver-&gt;WDF**) and choose either **User Mode Driver (UMDF V2)** or **Kernel Mode Driver (KMDF)**.
-2.  After you create the project, in the Solution Explorer pane, right-click the solution and choose **Configuration Manager**. Set **Active solution configuration** to the desired target Windows version, and set **Active solution platform** to **Win32** or **x64**. If **ARM** is not listed, choose **&lt;New...&gt;** to build for ARM.
-
-    If you choose Windows 10, the driver model defaults to **Universal**.
-
-    To change driver model manually, right-click the driver project and choose Properties. Under **Configuration Properties-&gt;Driver Settings-&gt;General**, find the **Target Platform** entry. Choose **Universal**, **Desktop**, or **Mobile**. Microsoft Visual Studio uses this setting to determine what libraries to link against.
-
-    **Note**  You cannot build a Universal Windows driver for Windows versions earlier than Windows 10.
-3.  You might need to modify the .inf file to specify the provider, specified as an %*ManufacturerName*% token that is expanded later in the INF file's [**Strings**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547485) section. For example:
-
-    ``` syntax
-    Provider="Contoso"
-    ```
-
-4.  You can now build the solution. Visual Studio links against the required libraries and generates a .cat file, an .inf file, and a driver binary.
-
-For information about the configuration settings you can use in Visual Studio when building your driver, see [Building a Driver with the WDK](building-a-driver.md).
-
-## <span id="Installing_a_Universal_Windows_driver"></span><span id="installing_a_universal_windows_driver"></span><span id="INSTALLING_A_UNIVERSAL_WINDOWS_DRIVER"></span>Installing a Universal Windows driver
-
-
-**Note**  The SetupAPI component is not part of UWP, so a Universal Windows driver cannot call functions in this API set.
-
- 
-
-If you want to install a Universal Windows driver on a device that is running Windows 10 for desktop editions, you can still use an INF file, with a few caveats. An INF for a Universal Windows driver cannot include any of the following:
-
--   Coinstallers
--   Class installers
--   RegisterDLL, DelFile, or DelReg directives
--   Non-HKR AddReg directives
-
-For more information, see [Using a Universal INF File](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn941087).
-
-If you want to install your Universal Windows driver on Windows 10 Mobile, you can use an .spkg file. An .spkg ("*package file*") is a standalone module that contains your driver package. If you are not deploying to Windows 10 Mobile, you do not need to generate a package file. You can still compile a Universal Windows driver (as defined by the driver source code) without a package file.
-
-WDK 10 includes PkgGen, a tool that generates package files. You run PkgGen in Visual Studio when you build your driver, using the following procedure.
-
-**Using PkgGen to generate a package file**
-
-1.  Right-click the driver project and choose **Add-&gt;New Item**. Next, under **Visual C++-&gt;Windows Driver**, choose **Package Manifest**. Click **Add**.
-2.  Visual Studio adds a file called Package.pkg.xml to your driver project. You can right-click the file and choose properties to verify that the item type is **PkgGen**. (On this same property page, you can set **Excluded from Build** to **Yes** if you decide later that you want to build this driver project and not generate a package file.) Click **OK**.
-3.  Right-click the driver project and choose **Properties**. Under Configuration Properties, open the PackageGen node and change Version to any value you like.
-4.  Save your work and restart Visual Studio as administrator.
-5.  Build your driver. Visual Studio links against the required libraries and generates a .cat file, an .inf file, a driver binary, and an .spkg file.
-
-To view the contents of the package file, append a .cab suffix to the file name and then open the cab file in Windows Explorer.
-
-To learn about running PkgGen outside of Visual Studio, see [Creating packages](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn756642).
-
-To install a mobile driver package (.spkg file), you have two options.
-
--   If you are updating an existing package on a target system or adding a new package to the target, use IUTool.exe to install an .spkg driver package.
--   If you are combining packages into a mobile OS image, use ImgGen to add the .spkg driver package to a full flash update (FFU) image that can then be flashed to a mobile device.
-
-**Using IUTool to add a mobile driver package (.spkg) to a running device**
-
-1.  [IUTool.exe](http://go.microsoft.com/fwlink/p/?linkid=617385) is in the \\tools\\bin\\*&lt;architecture&gt;* subdirectory of WDK 10.
-
-    Attach your mobile device to the PC. Then, from an elevated command prompt, issue the following command:
-
-       ``` syntax
-       IUTool -p MyKmdfDriver.spkg
-       ```
-
-2.  For more information, see [IUTool.exe: Update packages on a phone](http://go.microsoft.com/fwlink/p/?linkid=617385) and [Adding a driver to a test image](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Mt131832).
-
-**Using ImgGen to add a driver package (.spkg) to a mobile OS image (.ffu)**
-
-1.  After you install Visual Studio, on the Start screen, click the Visual Studio 2015 folder. Right-click **Developer Command Prompt for VS2015**, and choose **Run as Administrator**.
-2.  For more information about ImgGen, see [Building a phone image using ImgGen.cmd](http://go.microsoft.com/fwlink/p/?linkid=617386).
-
-## <span id="flashing_a_mobile_os_image__.ffu_"></span><span id="FLASHING_A_MOBILE_OS_IMAGE__.FFU_"></span>Flashing a mobile OS image (.ffu)
-
-
-To flash the image to the device, either use the Microsoft-supplied FFUTool, or develop custom OEM flashing tools. For more information, see [Update packages in an .FFU image file](http://go.microsoft.com/fwlink/p/?linkid=617387).
-
-## <span id="Debugging_a_Universal_Windows_driver"></span><span id="debugging_a_universal_windows_driver"></span><span id="DEBUGGING_A_UNIVERSAL_WINDOWS_DRIVER"></span>Debugging a Universal Windows driver
-
-
-Starting in Windows 10, you can build your KMDF or UMDF driver so that it gets additional driver debugging information through the [Inflight Trace Recorder](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn914610). Universal Windows drivers can take advantage of this feature.
-
-In addition, if you used the Visual Studio KMDF template, your driver uses Windows software trace preprocessor (WPP) to write trace messages. Your driver is an ETW provider with a provider GUID.
-
-To send a trace message from your driver, use this code:
-
-   ``` syntax
-   TraceEvents(TRACE_LEVEL_INFORMATION, TRACE_DRIVER, &quot;%!FUNC! Entry&quot;);
-   ```
-       
-You can access the ETW logs either using Tracelog via the [TShell tool](http://go.microsoft.com/fwlink/p/?linkid=617388) on a phone, or by using [!wmitrace](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff561362) in a debugger session.
-
-To use Tracelog on a phone:
-
-1.  Establish a kernel-mode debugging session between a host computer and the phone.
-2.  On the host computer, in TShell, enter this command:
-
-       ``` syntax
-       exec-device tracelog -addautologger MyLogger05 -guid c:\SteveGuid.txt -level 4 -flag 0xF –kd
-       ```
-       
-3.  Reboot the phone, and watch for trace messages in the debugger.
-
-All existing kernel mode debug transports continue to work on Windows 10 for desktop editions. However, for both user-mode and kernel-mode drivers, you must use a remote debugger session over KDNET to test Windows 10 Mobile. For more info, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439346) in Visual Studio.
-
-## <span id="related_topics"></span>Related topics
-
-
-* [Building a Driver with the WDK](building-a-driver.md)
-* [Windows 10 Editions for Universal Windows drivers](windows-10-editions-for-universal-drivers.md)
-* [Write a Universal Windows driver (UMDF 2) based on a template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439659)
-* [Write a universal Hello World driver (KMDF)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439665)
-* [Write a Universal Windows driver (KMDF) based on a template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439654)
-* [Provision a computer for driver deployment and testing (WDK 10)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909)
-* [What's new in driver development](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn927349)
- 
-
- 
-
-
-
-
-
-
+    1. Open the driver project properties.
+    2. Select **Driver Settings**.
+    3. Use the drop-down menu to set **Target Platform** to `Universal`.
+    
+*  If your INF performs any custom setup actions that depend on the target platform, consider separating them out into an extension INF.  You can update an extension INF independently from the primary driver package to improve robustness and servicing.  See [Using an Extension INF File](../install/using-an-extension-inf-file.md).
+*  If you would like to provide an application that works with your device, please provide a UWP app.  For details, see [Hardware access for Universal Windows Platform apps](../devapps/hardware-access-for-universal-windows-platform-apps.md).  In Windows 10, version 1703, the OEM needs to pre-load such an app using [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).  Alternatively, users can manually download the app from the Windows Store.
+*  In [**INF DestinationDirs Section**](../install/inf-destinationdirs-section.md), set the destination directories to 13 to make the driver run from the Driver Store.  This will not work for some devices.

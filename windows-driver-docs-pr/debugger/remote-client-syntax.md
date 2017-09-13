@@ -21,10 +21,8 @@ api_type:
 
 To start the client side of the Remote tool, use the following syntax at the command line.
 
-``` syntax
-    remote /c Server SessionName [/L Lines] [/f] [/b] [/k ColorFile] 
-
-   
+```
+remote /c Server SessionName [/L Lines] [/f] [/b] [/k ColorFile] 
 ```
 
 ## <span id="ddk_remote_client_syntax_dtools"></span><span id="DDK_REMOTE_CLIENT_SYNTAX_DTOOLS"></span>Parameters

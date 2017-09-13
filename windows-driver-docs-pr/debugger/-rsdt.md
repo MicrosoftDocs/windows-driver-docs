@@ -23,7 +23,7 @@ The **!rsdt** extension displays the ACPI Root System Description Table.
 
 Syntax
 
-``` syntax
+```
 !rsdt 
 ```
 

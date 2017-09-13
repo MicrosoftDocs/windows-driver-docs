@@ -21,7 +21,7 @@ api_type:
 
 The **.symfix** command automatically sets the symbol path to point to the Microsoft symbol store.
 
-``` syntax
+```
 .symfix[+] [LocalSymbolCache]
 ```
 
@@ -68,7 +68,7 @@ Remarks
 
 The following example shows how to use **.symfix** to set a new symbol path that points to the Microsoft symbol store.
 
-```cmd
+```
 3: kd> .symfix c:\myCache
 3: kd> .sympath
 Symbol search path is: srv*
@@ -77,7 +77,7 @@ Expanded Symbol search path is: cache*c:\myCache;SRV*https://msdl.microsoft.com/
 
 The following example shows how to use **.symfix+** to append the existing symbol path with a path that points to the Microsoft symbol store.
 
-```cmd
+```
 3: kd> .sympath
 Symbol search path is: c:\someSymbols
 Expanded Symbol search path is: c:\somesymbols

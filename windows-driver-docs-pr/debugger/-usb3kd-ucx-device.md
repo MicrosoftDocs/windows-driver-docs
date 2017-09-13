@@ -1,6 +1,6 @@
 ---
-title: usb3kd.ucx\_device
-description: The usb3kd.ucx\_device extension displays information about a USB device in the USB 3.0 tree. The display is based on data structures maintained by UcxVersion.sys.
+title: usb3kd.ucx_device
+description: The usb3kd.ucx_device extension displays information about a USB device in the USB 3.0 tree. The display is based on data structures maintained by UcxVersion.sys.
 ms.assetid: 7AC3DBBF-1D62-492E-B46E-C193579DE1E3
 keywords: ["usb3kd.ucx_device Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The [**!usb3kd.ucx\_device**](-usb3kd-device-info.md) extension displays information about a USB device in the [USB 3.0 tree](usb-3-extensions.md#usb-3-tree). The display is based on data structures maintained by the USB host controller extension driver (Ucx*Version*.sys).
 
-``` syntax
+```
 !usb3kd.ucx_device UcxUsbDevicePrivContext
 ```
 
@@ -48,7 +48,7 @@ Examples
 
 To obtain the address of the UCX USB device private context, look at the output of the [**!ucx\_controller\_list**](-usb3kd-ucx-controller-list.md) command. In the following example, the address of the private context for the second device is 0xfffffa8005bd9680.
 
-```cmd
+```
 3: 3: kd> !ucx_controller_list
 
 ## Dumping List of UCX controller objects
@@ -64,7 +64,7 @@ To obtain the address of the UCX USB device private context, look at the output 
 
 Now you can pass the address of the UCX USB private context to the **!ucx\_device** command.
 
-```cmd
+```
 3: kd> !ucx_device 0xfffffa8005bd9680
 
 ## Dumping Ucx USB Device Information fffffa8005bd9680

@@ -406,7 +406,7 @@ You can use any trace message function you choose, provided the trace message fu
 
 1.  Add the [**DoTraceMessage**](https://msdn.microsoft.com/library/windows/hardware/ff544918) macro to your code like you would a debug print routine. The **DoTraceMessage** macro takes 3 parameters: the flag level (*TraceFlagName*), which defines the condition when the trace message is written, the *Message* string, and the optional variable list.
 
-    ``` syntax
+    ```
     DoTraceMessage(TraceFlagName, Message, [VariableList... ]
     ```
 
@@ -453,7 +453,7 @@ If you are using the Windows driver templates in Visual Studio, the **TraceEvent
 
 1.  Add the **TraceEvents** macro to your code like you would a debug print routine. The **TraceEvents** macro takes the following parameters: the trace level (*Level*) and the trace flag (*Flags*), which define the condition when the trace message is written, the *Message* string, and the optional variable list.
 
-    ``` syntax
+    ```
     TraceEvents(Level, Flags, Message, [VariableList... ]
     ```
 
@@ -514,7 +514,7 @@ To verify that all your messages are generated, you might just set the trace lev
 
 (Example) Starting a trace session using Logman
 
-``` syntax
+```
 logman create trace "myWPP_session" -p {11C3AAE4-0D88-41b3-43BD-AC38BF747E19} 0xffffffff 0xff -o c:\DriverTest\TraceFile.etl 
 
 logman start "myWPP_session"
@@ -524,7 +524,7 @@ logman stop "myWPP_session"
 
 (Example) Starting a trace session using TraceLog
 
-``` syntax
+```
 tracelog -start MyTrace -guid  MyProvider.guid -f d:\traces\testtrace.etl -flag 2 -level 0xFFFF
 ```
 

@@ -1,6 +1,6 @@
 ---
-title: elog\_str
-description: The elog\_str extension adds a string to the event log.
+title: elog_str
+description: The elog_str extension adds a string to the event log.
 ms.assetid: 142ef480-8095-428e-9b7d-f4c8bfb78075
 keywords: ["event log", "elog_str Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The **!elog\_str** extension adds a string to the event log.
 
-``` syntax
+```
 !elog_str String
 ```
 

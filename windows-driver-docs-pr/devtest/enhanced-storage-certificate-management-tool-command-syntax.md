@@ -24,7 +24,7 @@ The Enhanced Storage Certificate Management tool provides certificate management
 
 The Enhanced Storage Certificate Management tool is run from the command line.
 
-``` syntax
+```
     EhStorCertMgrCmd 
     [/Add 
     AddParameters 

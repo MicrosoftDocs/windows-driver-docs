@@ -25,7 +25,7 @@ You can use the **/es** scenario together with [PwrTest Idle Scenario](pwrtest-i
 
 ### <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
-``` syntax
+```
 pwrtest /es  [/t:n] [/stes:{y|n}] [/rss:{y|n}] [/sss:{y|n}] [/all] [/user] [/kernel] [/idle] [/?] 
 ```
 
@@ -55,43 +55,43 @@ Log idle statistics.
 
 **Examples**
 
-``` syntax
+```
 pwrtest /es /all
 ```
 
-``` syntax
+```
 pwrtest /es /user
 ```
 
-``` syntax
+```
 pwrtest /es /kernel
 ```
 
-``` syntax
+```
 pwrtest /es /kernel /sss:n
 ```
 
-``` syntax
+```
 pwrtest /es /kernel /rss:n
 ```
 
-``` syntax
+```
 pwrtest /es /kernel /rss:y /sss:n
 ```
 
-``` syntax
+```
 pwrtest /es /sss:n
 ```
 
-``` syntax
+```
 pwrtest /es /rss:n /sss:n
 ```
 
-``` syntax
+```
 pwrtest /es /stes:n 
 ```
 
-``` syntax
+```
 pwrtest /es /all /idle 
 ```
 

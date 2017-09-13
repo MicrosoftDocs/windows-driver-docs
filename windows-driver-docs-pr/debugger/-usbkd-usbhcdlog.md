@@ -21,7 +21,7 @@ api_type:
 
 The [**!usbkd.usbhcdlog**](https://msdn.microsoft.com/library/windows/hardware/dn367076) command displays a portion of the debug log for a USB host controller.
 
-``` syntax
+```
 !usbkd.usbhcdlog DeviceExtension[, NumberOfEntries]
 ```
 
@@ -44,7 +44,7 @@ Examples
 
 Here is one way to find the address of the device extension for the FDO of a USB host controller. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-``` syntax
+```
 0 kd> !usbkd.usb2tree
 
 EHCI MINIPORT(s) dt usbport!_USBPORT_MINIPORT_DRIVER ffffe00001f48bd0
@@ -58,7 +58,7 @@ In the preceding output, the address of the device extension of the FDO is displ
 
 Now pass the address of the device extension to the **!usbhcdlog** command. In this example, the second argument limits the display to four log entries.
 
-``` syntax
+```
 0: kd> !usbkd.usbhcdlog ffffe00001ca11a0, 4
 
 LOG@: ffffe00001ca11b8 

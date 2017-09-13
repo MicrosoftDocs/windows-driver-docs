@@ -1,6 +1,6 @@
 ---
 title: fileobj
-description: The fileobj extension displays detailed information about a FILE\_OBJECT structure.
+description: The fileobj extension displays detailed information about a FILE_OBJECT structure.
 ms.assetid: ee9237e7-8a1f-473c-9e30-f2b0731a7519
 keywords: ["FILE_OBJECT", "fileobj Windows Debugging"]
 ms.author: windowsdriverdev
@@ -21,7 +21,7 @@ api_type:
 
 The **!fileobj** extension displays detailed information about a FILE\_OBJECT structure.
 
-``` syntax
+```
 !fileobj FileObject
 ```
 

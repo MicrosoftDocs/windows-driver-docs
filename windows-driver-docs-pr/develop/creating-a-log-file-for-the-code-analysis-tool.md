@@ -1,7 +1,7 @@
 ---
 ms.assetid: 4985B206-9E7F-45FE-9067-7CFD15A7AAAD
 title: Creating a log file for the code analysis tool
-description: The Windows Server 2012&\#32;Hardware Certification Program requires a Driver Verification Log \(DVL\) for all applicable driver submissions.
+description: The Windows Server 2012 Hardware Certification Program requires a Driver Verification Log (DVL) for all applicable driver submissions.
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
@@ -28,19 +28,19 @@ Code Analysis for Drivers is a compile-time static verification tool that detect
 
 You can also run the Code Analysis tool from a Visual Studio Command Prompt window. Set up the environment by running one of the following batch files.
 
-``` syntax
+```
 "C:\Program Files\Microsoft Visual Studio 11.0\VC\vcvarsall.bat" x64
 ```
 
 -Or-
 
-``` syntax
+```
 "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\vcvarsall.bat" x64
 ```
 
 Run the Code Analysis tool.
 
-``` syntax
+```
 msbuild.exe <vcxprojectfile> /p:Configuration="Win8 Release" /P:Platform=x64 /target:clean
 msbuild.exe <vcxprojectfile> /p:Configuration="Win8 Release" /P:Platform=x64 /P:RunCodeAnalysisOnce=True
 ```

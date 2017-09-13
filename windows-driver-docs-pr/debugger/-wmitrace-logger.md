@@ -21,7 +21,7 @@ api_type:
 
 The **!wmitrace.logger** extension displays data about the trace session, including the session configuration data. This extension does not display trace messages generated during the session.
 
-``` syntax
+```
 !wmitrace.logger [ LoggerID | LoggerName ]
 ```
 

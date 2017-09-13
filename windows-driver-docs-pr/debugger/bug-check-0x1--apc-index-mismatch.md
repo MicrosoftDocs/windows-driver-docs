@@ -1,5 +1,5 @@
 ---
-title: Bug Check 0x1 APC\_INDEX\_MISMATCH
+title: Bug Check 0x1 APC_INDEX_MISMATCH
 description: 0x00000001.
 ms.assetid: 01e64516-809c-49ce-9aaa-b4e439ac575b
 keywords: ["Bug Check 0x1 APC_INDEX_MISMATCH", "APC_INDEX_MISMATCH"]

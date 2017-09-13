@@ -48,7 +48,7 @@ DML content roughly follows the XML/HTML rules for special characters. The chara
 would be converted to the following DML.
 
 ```
-&quot;Alice &amp; Bob think 3 &lt 4&quot;
+&quot;Alice & Bob think 3 &lt 4&quot;
 ```
 
 **C programming language formatting characters**
@@ -526,11 +526,11 @@ HRESULT CALLBACK testout(_In_ PDEBUG_CLIENT pClient, _In_ PCWSTR /*pwszArgs*/)
     spControl->ControlledOutputWide(0, DEBUG_OUTPUT_NORMAL, L"TEXT/NORMAL Y{S}: %Y{S}\n", L"Hello <World>");
 
     spControl->ControlledOutputWide(DEBUG_OUTCTL_DML, DEBUG_OUTPUT_NORMAL, L"DML/NORMAL Y{a}: %Y{a}\n", (ULONG64)0x00007ffa7da163c0);
-    spControl->ControlledOutputWide(DEBUG_OUTCTL_DML, DEBUG_OUTPUT_NORMAL, L"DML/NORMAL Y{as} 64bit   : &#39;%Y{as}&#39;\n", (ULONG64)0x00007ffa7da163c0);
-    spControl->ControlledOutputWide(DEBUG_OUTCTL_DML, DEBUG_OUTPUT_NORMAL, L"DML/NORMAL Y{as} 32value : &#39;%Y{as}&#39;\n", (ULONG64)0x1);
+    spControl->ControlledOutputWide(DEBUG_OUTCTL_DML, DEBUG_OUTPUT_NORMAL, L"DML/NORMAL Y{as} 64bit   : '%Y{as}'\n", (ULONG64)0x00007ffa7da163c0);
+    spControl->ControlledOutputWide(DEBUG_OUTCTL_DML, DEBUG_OUTPUT_NORMAL, L"DML/NORMAL Y{as} 32value : '%Y{as}'\n", (ULONG64)0x1);
 
-    spControl->ControlledOutputWide(DEBUG_OUTCTL_DML, DEBUG_OUTPUT_NORMAL, L"DML/NORMAL Y{ps} 64bit   : &#39;%Y{ps}&#39;\n", (ULONG64)0x00007ffa7da163c0);
-    spControl->ControlledOutputWide(DEBUG_OUTCTL_DML, DEBUG_OUTPUT_NORMAL, L"DML/NORMAL Y{ps} 32value : &#39;%Y{ps}&#39;\n", (ULONG64)0x1);
+    spControl->ControlledOutputWide(DEBUG_OUTCTL_DML, DEBUG_OUTPUT_NORMAL, L"DML/NORMAL Y{ps} 64bit   : '%Y{ps}'\n", (ULONG64)0x00007ffa7da163c0);
+    spControl->ControlledOutputWide(DEBUG_OUTCTL_DML, DEBUG_OUTPUT_NORMAL, L"DML/NORMAL Y{ps} 32value : '%Y{ps}'\n", (ULONG64)0x1);
 
     spControl->ControlledOutputWide(DEBUG_OUTCTL_DML, DEBUG_OUTPUT_NORMAL, L"DML/NORMAL Y{l}: %Y{l}\n", (ULONG64)0x00007ffa7da163c0);
 
@@ -552,10 +552,10 @@ TEXT/NORMAL Y{T}: &quot;Hello &lt;World&gt;&quot;
 TEXT/NORMAL Y{s}: Hello <World>
 TEXT/NORMAL Y{S}: Hello &lt;World&gt;
 DML/NORMAL Y{a}: 00007ffa`7da163c0
-DML/NORMAL Y{as} 64bit   : &#39;         &#39;
-DML/NORMAL Y{as} 32value : &#39;         &#39;
-DML/NORMAL Y{ps} 64bit   : &#39;        &#39;
-DML/NORMAL Y{ps} 32value : &#39;        &#39;
+DML/NORMAL Y{as} 64bit   : '         '
+DML/NORMAL Y{as} 32value : '         '
+DML/NORMAL Y{ps} 64bit   : '        '
+DML/NORMAL Y{ps} 32value : '        '
 DML/NORMAL Y{l}: [d:\th\minkernel\kernelbase\debug.c @ 443]
 ```
 

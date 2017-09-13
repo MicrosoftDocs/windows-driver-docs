@@ -36,7 +36,7 @@ Notice that the Locals window displays the parameters correctly even though they
 
 In addition to tracking variables with primitive types, the location records track data members of local structures and classes. The following debugger output displays local structures.
 
-```ManagedCPlusPlus
+```
 0:000> dt My1
 Local var Type _LocalStruct
    +0x000 i1               : 0n0 (edi)
@@ -63,11 +63,11 @@ Here are some observations about the preceding debugger output.
 ## <span id="Display_of_inline_functions_on_the_call_stack"></span><span id="display_of_inline_functions_on_the_call_stack"></span><span id="DISPLAY_OF_INLINE_FUNCTIONS_ON_THE_CALL_STACK"></span>Display of inline functions on the call stack
 
 
-During code optimization, some functions are placed in line. Tat is, the body of the function is placed directly in the code like a macro expansion. There is no function call and no return to the caller. To facilitate the display of inline functions, the compiler stores data in the PDB files that helps decode the code chunks for the inline functions (that is, sequences of code blocks in caller functions that belong to the callee functions that are being placed inline) as well as the local variables (scoped local variables in those code blocks). This data helps the debugger include inline functions as part of the stack unwind.
+During code optimization, some functions are placed in line. That is, the body of the function is placed directly in the code like a macro expansion. There is no function call and no return to the caller. To facilitate the display of inline functions, the compiler stores data in the PDB files that helps decode the code chunks for the inline functions (that is, sequences of code blocks in caller functions that belong to the callee functions that are being placed inline) as well as the local variables (scoped local variables in those code blocks). This data helps the debugger include inline functions as part of the stack unwind.
 
 Suppose you compile an application and force a function named `func1` to be inline.
 
-```ManagedCPlusPlus
+```
 __forceinline int func1(int p1, int p2, int p3)
 {
    int num1 = 0;
@@ -79,7 +79,7 @@ __forceinline int func1(int p1, int p2, int p3)
 
 You can use the [**bm**](bp--bu--bm--set-breakpoint-.md) command to set a breakpoint at `func1`.
 
-``` syntax
+```
 0:000> bm MyApp!func1
   1: 000007f6`8d621088 @!"MyApp!func1" (MyApp!func1 inlined in MyApp!main+0x88)
 0:000> g
@@ -91,7 +91,7 @@ MyApp!main+0x88:
 
 After you take one step into `func1`, you can use the [**k**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to see `func1` on the call stack. You can use the [**dv**](dv--display-local-variables-.md) command to see the local variables for `func1`. Notice that the local variable `num3` is shown as unavailable. A local variable can be unavailable in optimized code for a number of reasons. It might be that the variable doesn't exist in the optimized code. It might be that the variable has not been initialized yet or that the variable is no longer being used.
 
-``` syntax
+```
 0:000> p
 MyApp!func1+0x7:
 000007f6`8d62108f 8d3c33          lea     edi,[rbx+rsi]
@@ -112,7 +112,7 @@ MyApp!func1+0x7:
 
 If you look at frame 1 in the stack trace, you can see the local variables for the `main` function. Notice that two of the variables are stored in registers.
 
-``` syntax
+```
 0:000> .frame 1
 01 00000000`0050fc90 000007f6`8d6213f3 MyApp!main+0x8f
 
@@ -124,7 +124,7 @@ If you look at frame 1 in the stack trace, you can see the local variables for t
 
 The Windows debugger aggregates data from PDB files to find all the places where a specific function has been placed inline. You can use the [**x**](x--examine-symbols-.md) command to list all the caller sites of the an inline function.
 
-``` syntax
+```
 0:000> x simple!MoreCalculate
 00000000`ff6e1455 simple!MoreCalculate =  (inline caller) simple!wmain+8d
 00000000`ff6e1528 simple!MoreCalculate =  (inline caller) simple!wmain+160
@@ -137,7 +137,7 @@ Because the Windows debugger can enumerate all the caller sites of an inline fun
 
 The Windows debugger groups all breakpoints that are set for a specific inline function into a breakpoint container. You can manipulate the breakpoint container as a whole by using commands like [**be**](be--breakpoint-enable-.md), [**bd**](bd--breakpoint-disable-.md), [**bc**](bc--breakpoint-clear-.md). See the following **bd 3** and **bc 3** command examples. You can also manipulate individual breakpoints. See the following **be 2** command example.
 
-```ManagedCPlusPlus
+```
 0:000> bm simple!MoreCalculate
   2: 00000000`ff6e1455 @!"simple!MoreCalculate" (simple!MoreCalculate inlined in simple!wmain+0x8d)
   4: 00000000`ff6e1528 @!"simple!MoreCalculate" (simple!MoreCalculate inlined in simple!wmain+0x160)

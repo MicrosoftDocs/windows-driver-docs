@@ -21,7 +21,7 @@ api_type:
 
 The **ln** command displays the symbols at or near the given address.
 
-``` syntax
+```
 ln Address
 ln /D Address 
 ```
