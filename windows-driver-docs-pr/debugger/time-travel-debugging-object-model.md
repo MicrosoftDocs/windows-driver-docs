@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Object Model
 description: This section describes how to use the data model to query time travel traces. 
 ms.author: windowsdriverdev
-ms.date: 09/13/2017
+ms.date: 09/14/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,7 +22,7 @@ This section describes how to use the data model to query time travel traces. Th
 - What thread spent the most time running?
 - At what point in time in the trace did a specific code module load?
 
-- Check slide deck ... and 
+- ??? TBD - need more here...
 
 For more information about objects described here, see [Debugger Object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md).
 

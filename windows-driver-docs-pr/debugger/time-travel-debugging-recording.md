@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Recording 
 description: This section describes how to record time travel traces.
 ms.author: windowsdriverdev
-ms.date: 09/12/2017
+ms.date: 09/14/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

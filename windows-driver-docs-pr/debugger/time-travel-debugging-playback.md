@@ -218,6 +218,25 @@ Index file loaded.
 ```
 
 
+## Trace Play back command reference
+
+The following commands can be used when playing back a trace
+
+??? TBD - Need to validate that all of these are supported.
+
+```
+  g- [BreakAddr [; BreakCmds]]    - Execute backward.
+  g-t <position>                  - Execute backward and break on <position>.
+  gt <position>                   - Execute forward and break on <position> .
+  [~Thread] p- [count] ["Command"] - Reverse step over.
+  [~Thread] p-a <addr>             - Reverse step to address.
+  [~Thread] p-c [count]            - Reverse step over to (previous) call.
+  [~Thread] t- [count] ["Command"] - Reverse step into.
+  [~Thread] t-a <addr>             - Reverse step to address.
+  [~Thread] t-c [count]            - Reverse step into to (previous) call.
+```
+
+
 ## See Also
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
