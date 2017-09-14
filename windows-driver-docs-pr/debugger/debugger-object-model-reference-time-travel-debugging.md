@@ -23,13 +23,13 @@ For information on working with the TTD objects see, [Time Travel Debugging - Tr
 
 ## TTD Object
 
-The TTD object contains time travel debugging specific properties available for each process in a trace file. The TTD Lifetime, Threads and Events objects are documented in this topic. The TTD object is associated with the current process (curprocess) debugger object. 
+The TTD object contains time travel debugging specific properties available for each process in a trace file. The TTD object is associated with the current process (curprocess) debugger object. The TTD *Lifetime*, *Threads* and *Events* objects are documented in this topic. 
 
 ### TTD Methods
 
 **SetPosition** - Sets the debugger to point to the given position on this process.    
 
-### Example
+### TTD dx command Example
 
 Use the dx command with the help option (-h)  to view the TTD Objects with their descriptions.
 
@@ -72,7 +72,7 @@ The TTD Lifetime Object contains the position range [smallest, largest] found in
 
 **ToDisplayString([FormatSpecifier]** - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object childern support this method.
 
-### TTD Object Example
+### TTD Object dx Command Example
 
 Use the dx command to display information about all of the childern objects of the TTD Lifetime object.
 
@@ -140,7 +140,8 @@ Use the dx command to display all of the children objects to the first TTD threa
 
 The [Time Travel] links provide a link to a SeekTo() a specific event. ??? TBD - My sample seems to Seekto() vs. 2:0 - bug?
 
-```0:0:000> dx -r1 @$curprocess.TTD .@"Threads"[2].@"ActiveTime"
+```
+0:0:000> dx -r1 @$curprocess.TTD .@"Threads"[2].@"ActiveTime"
 @$curprocess.TTD .@"Threads"[2].@"ActiveTime"                 : [6A:0, 89:0]
    MinPosition      : 6A:0 [Time Travel]
    MaxPosition      : 89:0 [Time Travel]
@@ -154,20 +155,7 @@ The [Time Travel] links provide a link to a SeekTo() a specific event. ??? TBD -
 The TTD Events Object contains an array of events in the TTD trace.
 
 **Events** - This process list of events in the trace.
-
-    Type             : ModuleLoaded [The type of the event.]
-        Length           : 0xc [Length - Property which returns the length of the string]
-    Position         : 2:0 [Time Travel] [The position where the event happened.]
-        Sequence         : 0x2 [References the last position where this thread might have explicitly interacted with other threads.]
-        Steps            : 0x0 [Counts the steps (instructions) beyond the last thread sequencing event.]
-    Module           : Module C:\Users\DOMARS\Documents\Visual Studio 2015\Projects\CDog_Console\Debug\CDog_Console.exe at address 0X12B0000 with size 126976 [TTD-specific properties for a module.]
-        Name             : C:\Users\DOMARS\Documents\Visual Studio 2015\Projects\CDog_Console\Debug\CDog_Console.exe [The name of a module.]
-            Length           : 0x59 [Length - Property which returns the length of the string]
-        Address          : 0x12b0000 [The address where the module was loaded.]
-        Size             : 0x1f000 [The size of the module in bytes.]
-        Checksum         : 0x0 [The checksum of the module.]
-        Timestamp        : 0x59b1cfa6 [The timestamp of the module.]
-
+ 
 ### TTD Events Type Object
 
 **Type** - The type of event. For example *ModuleLoaded* indicates that code module loaded. Contains:
@@ -211,6 +199,10 @@ The TTD Events Object contains an array of events in the TTD trace.
 
   *Steps* - Counts the steps (instructions) beyond the last thread sequencing event.
 
+   Position         : 2:0 [Time Travel] [The position where the event happened.]
+        Sequence         : 0x2 [References the last position where this thread might have explicitly interacted with other threads.]
+        Steps            : 0x0 [Counts the steps (instructions) beyond the last thread sequencing event.]
+
 ### TTD Events Position Methods
  
  **SeekTo** - Method which seeks to time position. The MinPosition and MaxPosition TTD Threads objects support this method.
@@ -221,12 +213,14 @@ The TTD Events Object contains an array of events in the TTD trace.
 ### TTD Events Module Objects
 
 **Module** -  The module references a specific code element, for example:
+ 
  ```
- Module C:\Data1\Redstone\Debugger\TTD\CDog_Console\Debug\CDog_Console.exe at address 0XBF0000 with size 126976
+ Module C:\Data1\Redstone\Debugger\TTD\CDog_Console\Debug\CDog_Console.exe 
  ```
+
 The Module object contains:
 
-  *Name* - The module name, for example C:\Data1\Redstone\Debugger\TTD\CDog_Console\Debug\CDog_Console.exe
+  *Name* - The module name, for example C:\Data1\Redstone\Debugger\TTD\CDog_Console\Debug\CDog_Console.exe. *Name* contains: *Length* - Property which returns the length of the string, for example 0x59.
 
   *Address* - The address where the module was loaded, for example 0xbf0000
 
@@ -234,12 +228,41 @@ The Module object contains:
 
   *Checksum* -   The computed checksum of the module, for example, 0x9c4e
 
-  *Timestamp* -   The timestamp of the module, for example,  0x59b1e18f. The timestamp is relative to the ???TBD of the ???TBD. 
+  *Timestamp* -   The timestamp of the module, for example,  0x59b1e18f. The timestamp is relative to the ???TBD of the ???TBD or is when when the module is loaded ??? TBD. 
 
 
 ### TTD Events Module Methods
 
  **ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object childern support this method.
+
+### TTD Events Module Name Methods
+
+**Contains(OtherString)** -Method which returns whether the string contains a given sub string.
+
+**EndsWith(OtherString)** -Method which returns whether the string ends with a given string.
+
+**IndexOf(OtherString)** -Method which returns the index of the first occurrence of a substring in the given string.  If no such occurrence exists, -1 is returned.
+
+**LastIndexOf(OtherString)** -Method which returns the index of the last occurrence of a substring in the given string.  If no such occurrence exists, -1 is returned.
+
+**Length** - Property which returns the length of the string.
+
+**PadLeft(TotalWidth)** - Method which right aligns the string to the specified width by inserting spaces at the left of the string.
+
+**PadRight(TotalWidth)** - Method which left aligns the string to the specified width by inserting spaces at the right of the string.
+
+**Remove(StartPos, [Length])** - Method which removes all characters beginning at the specified position from the string.  If an optional length is supplied, only that many characters after the starting position are removed.
+
+**Replace(SearchString, ReplaceString)** - Method which replaces every occurrence of a specified search string with a replacement string.
+
+**StartsWith(OtherString)** - Method which returns whether the string starts with a given string.
+
+**Substring(StartPos, [Length])** - Method which retrieves a substring from the given string.  The substring starts at a specified character position and continues to the end of the string or for the optionally specified length.
+
+**ToLower()** - Returns a copy of this string converted to lowercase.
+
+**ToUpper()** - Returns a copy of this string converted to uppercase.
+
 
 ### TTD Events Object Examples
 
