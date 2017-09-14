@@ -27,6 +27,7 @@ In the event you can't figure out the issue yourself, you can share the trace w
 
 TTD is lightweight and works to add minimal overhead as it captures code execution in trace files. The performance impact is similar to attaching a non-invasive debugger connection. 
 
+TTD includes a set of debugger data model objects to allow you to query the trace using LINQ. For example you can use ttd objects to locate when a specific code module was loaded or locate all of the exceptions. 
 
 ![Example screen shot of WinDbg preview showing time travel command and cdog app](images/ttd-windbgx-screen-shot-example-cdog-app.png)
 
@@ -44,20 +45,20 @@ Approach​ | Pros | Cons​
 
 ## TTD Availability 
 
-TTD is available on Windows 10 as part of the WinDbg Preview.  WinDbg Preview is a brand-new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, with built in support for the extensible debugger data model. For more information on downloading WinDbg Preview from the store, see [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md).
+TTD is available on Windows 10 devices after installing the WinDbg Preview app from the Store.  WinDbg Preview is a brand-new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, with built in support for the extensible debugger data model. For more information on downloading WinDbg Preview from the store, see [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md).
 
 
 ## Trace file basics 
 
 ### Trace file size
 
-Trace file can get big and the user of TTD is responsible to make sure that there is adequate free space on the default Windows storage device. If you trace a program for even a few minutes the trace files can grow to the order of gigabytes, quickly. To allow for complex long running scenarios, the trace files are not designed to reach a set size and stop tracing. As with any trace, quickly re-creating the issue of interest, will keep the trace file size as small as possible.
+Trace file can get big and the user of TTD needs to make sure that there is adequate free space available. If you trace a program for even a few minutes, the trace files can quickly grow to be several gigabytes. TTD does not set a maximum size of trace files to allow for complex long running scenarios. Quickly re-creating the issue, will keep the trace file size as small as possible.
 
 ### Run and index files
 
-As the trace occurs a .RUN file is used to store the code execution. 
+A .RUN file stores the code execution as the trace is running. 
 
-Once the tracing is stopped and index (.IDX) file is created to allow for faster access to the trace information.
+Once the tracing is stopped, an index (.IDX) file is created to allow for faster access to the trace information.
 
 IDX files can also be large, typically <TBD> size larger than the .RUN file.  
 
@@ -76,7 +77,7 @@ All of the output files are stored in the users document folder by default. For 
 C:\Users\User1\Documents
 ```
 
-For more information on working with see [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-files.md).
+For more information on working the trace files, see [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-files.md).
 
 ## Getting started with TTD
 
@@ -101,9 +102,9 @@ These topics describe additional advanced functionality in time travel debugging
 
 ### Anti-virus incompatibilities 
 
-Because of how TTD hooks into process, there can be  incompatibilities that arise. Typically issues arise with anti-virus or other system software that is attempting to track and shadow system memory calls. 
+You may encounter incompatibilities because of how TTD hooks into process to record them. . Typically issues arise with anti-virus or other system software that is attempting to track and shadow system memory calls. 
 
-If you run into issues of TBD??? type or see TBD??? message, try temporarily unloading any anti-virus software to determine if that is the cause.  
+If you run into issues of TBD??? type or see TBD??? message, try temporarily disabling any anti-virus software.  
 
 Other utilities that attempt to block memory access, can also be problematic, for example, the Microsoft Enhanced Mitigation Experience Toolkit. For more information about EMET, see [The Enhanced Mitigation Experience Toolkit](https://support.microsoft.com/en-us/help/2458544/the-enhanced-mitigation-experience-toolkit).
 
@@ -119,7 +120,8 @@ You can travel back in time, but you can't change history. You can use read memo
 
 ### System Protected Processes
 
-Some Windows system protected processes, such as PPL (Protected Process Light) process are protected, so the TTD cannot inject itself into the protected process to allow for time travel tracing.
+Some Windows system protected processes, such as Protected Process Light (PPL) process are protected, so the TTD cannot inject itself into the protected process to allow for the recording of the code execution.
+
 
 ### Trace file errors
 

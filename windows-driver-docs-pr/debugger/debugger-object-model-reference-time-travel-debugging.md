@@ -2,7 +2,7 @@
 title: Debugger object model reference - time travel debugging (TTD)
 description: This section describes the debugger model objects associated with time travel debugging.
 ms.author: windowsdriverdev
-ms.date: 09/13/2017
+ms.date: 09/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,11 +70,11 @@ The TTD Lifetime Object contains the position range [smallest, largest] found in
   
 ### TTD Lifetime Methods
 
-**ToDisplayString([FormatSpecifier]** - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object childern support this method.
+**ToDisplayString([FormatSpecifier]** - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object children support this method.
 
 ### TTD Object dx Command Example
 
-Use the dx command to display information about all of the childern objects of the TTD Lifetime object.
+Use the dx command to display information about all of the children objects of the TTD Lifetime object.
 
 ```
 0:000> x -r2 -h -v @$curprocess.TTD.Lifetime
@@ -110,7 +110,7 @@ The TTD Threads Object contains an array of the threads in the TTD trace. Each t
  
  **SeekTo** - Method which seeks to time position. The MinPosition and MaxPosition TTD Threads objects support this method.
  
- **ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object childern support this method.
+ **ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object children support this method.
         
  
 ### TTD Threads Object Example
@@ -158,7 +158,7 @@ The TTD Events Object contains an array of events in the TTD trace.
  
 ### TTD Events Type Object
 
-**Type** - The type of event. For example *ModuleLoaded* indicates that code module loaded. Contains:
+**Type** - The type of event. For example, *ModuleLoaded* indicates that code module loaded. Contains:
 *Length* - Property which returns the length of the string, for example 0xc.
 
 ### TTD Events Type Methods
@@ -189,7 +189,7 @@ The TTD Events Object contains an array of events in the TTD trace.
 
 **ToUpper()** - Returns a copy of this string converted to uppercase.
 
-**ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object childern support this method.
+**ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object children support this method.
  
 ### TTD Events Position Objects
 
@@ -207,7 +207,7 @@ The TTD Events Object contains an array of events in the TTD trace.
  
  **SeekTo** - Method which seeks to time position. The MinPosition and MaxPosition TTD Threads objects support this method.
  
- **ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object childern support this method.
+ **ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object children support this method.
         
 
 ### TTD Events Module Objects
@@ -228,12 +228,12 @@ The Module object contains:
 
   *Checksum* -   The computed checksum of the module, for example, 0x9c4e
 
-  *Timestamp* -   The timestamp of the module, for example,  0x59b1e18f. The timestamp is relative to the ???TBD of the ???TBD or is when when the module is loaded ??? TBD. 
+  *Timestamp* -   The timestamp of the module, for example,  0x59b1e18f. The timestamp is relative to the ???TBD of the ???TBD or is when the module is loaded ??? TBD. 
 
 
 ### TTD Events Module Methods
 
- **ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object childern support this method.
+ **ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object children support this method.
 
 ### TTD Events Module Name Methods
 
@@ -266,7 +266,7 @@ The Module object contains:
 
 ### TTD Events Object Examples
 
-Use the dx command to display all of the childern objects of the TTD Events object.
+Use the dx command to display all of the children objects of the TTD Events object.
 
 ```
 0:000> dx -r2 @$curprocess.TTD .@"Events"[0]
