@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Extension commands
 description: This section describes the TTD extension commands.
 ms.author: windowsdriverdev
-ms.date: 09/13/2017
+ms.date: 09/14/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -19,7 +19,7 @@ This section describes how to  section describes how to use the TTD extension co
 
 # !idna
 
-??? TBD - Determine which if any of the !idna options to describe.
+??? TBD - Determine which if any of the !idna options to describe for external use.
 
 ```
 Help for Time Travel Debugging Extensions

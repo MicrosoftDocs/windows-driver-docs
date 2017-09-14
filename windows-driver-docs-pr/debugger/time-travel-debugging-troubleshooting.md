@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Troubleshooting
 description: This section describes how to troubleshoot time travel traces.
 ms.author: windowsdriverdev
-ms.date: 09/06/2017
+ms.date: 09/14/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -23,9 +23,9 @@ https://osgwiki.com/wiki/Trace_file_derailment
 
 https://osgwiki.com/wiki/Debugging_a_Time_Travel_Trace
 
-P??? TBD - Please add any additional information and correct anything below.
+??? TBD - Please add any additional information and correct anything below.
 
-P??? TBD - It would be great to use any product telemetry to look at the 3-5 top failures and offer guidance for those in the docs.
+??? TBD - It would be great to use any product telemetry to look at the 3-5 top failures and offer guidance for those in the docs.
 
 
 ## Issues with .IDX index files

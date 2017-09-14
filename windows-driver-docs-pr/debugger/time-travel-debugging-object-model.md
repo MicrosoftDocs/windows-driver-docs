@@ -19,8 +19,9 @@ ms.technology: windows-devices
 This section describes how to use the data model to query time travel traces. This can be a powerful tool to answer ask questions like these about the code that is captured in a a time travel trace.
 
 - What exceptions are in the trace?
-- What thread spent the most time running?
 - At what point in time in the trace did a specific code module load?
+- When where threads created/terminated in the trace?
+- What thread spent the most time running?
 
 - ??? TBD - need more here...
 
