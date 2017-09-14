@@ -16,12 +16,13 @@ ms.technology: windows-devices
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Object Model
 
 
-TBD TBD TBD 
-
 This section describes how to use the data model to query time travel traces. This can be a powerful tool to answer ask questions like these about the code that is captured in a a time travel trace.
 
-- foo
-- bar
+- What exceptions are in the trace?
+- What thread spent the most time running?
+- At what point in time in the trace did a specific code module load?
+
+- Check slide deck ... and 
 
 For more information about objects described here, see [Debugger Object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md).
 
@@ -39,28 +40,46 @@ The Lifetime, Threads and Events TTD objects are associated with the current pro
     Events          
 ```
 
-
-Use dx to query for what you are looking for. 
+Use the dx command to query for what you are looking for. 
 
 ## Examples
 
-Querying for exceptions:
+### Querying for exceptions
+
+This LINQ query displays all of the exceptions in the trace.
 
 ```
 dx @$curprocess.TTD.Events.Where(t => t.Type == "Exception").Select(e => e.Exception) 
+
 ```
 
-Querying for the load event(s) of a particular module
+### Querying for the load event for a specific module
 
+This LINQ query displays the load event(s) of a particular module
 
 ```
 dx @$curprocess.TTD.Events.Where(t => t.Type == "ModuleLoaded").Where(t => t.Module.Name.Contains("ntdll.dll")) 
 ```
 
-Querying for the threads that get created
+Use the [lm]() command to display the modules currently loaded
+
+```
+TBD
+``` 
+
+### Querying for the time postion in the trace when threads that get created
+
+This LINQ query for the time postion in the trace when threads that get created
 
 ```
 dx -g @$curprocess.TTD.Events.Where(t => t.Type == "ThreadCreated").Select(t => t.Thread) 
+===========================================================================================================
+=                             = (+) UniqueId = (+) Id    = (+) Lifetime                 = (+) ActiveTime  =
+===========================================================================================================
+= [0x0] : UID: 2, TID: 0x4C2C - 0x2          - 0x4c2c    - [0:0, FFFFFFFFFFFFFFFE:0]    - [D:0, 64:0]     =
+= [0x1] : UID: 3, TID: 0x4CFC - 0x3          - 0x4cfc    - [0:0, 8A:0]                  - [69:0, 8A:0]    =
+= [0x2] : UID: 4, TID: 0x27B0 - 0x4          - 0x27b0    - [0:0, 89:0]                  - [6A:0, 89:0]    =
+===========================================================================================================
 ```
 
 ##	Overview of namespaces and querying call-outs

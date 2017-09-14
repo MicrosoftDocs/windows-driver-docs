@@ -21,29 +21,32 @@ This section describes how to work with time travel trace files.
 
 .RUN files are used to record code execution.
 
-.IDX files are created when the trace file is closed and enable quick acess to memory locations in the trace file. 
+.IDX files are created when the trace file is closed and enable quick access to memory locations in the trace file. 
 
 .OUT files are used to log error messages, when failures occur.
 
 ## Trace .RUN files  
 
-Trace .RUN files can be opened after they are recorded using **File** > **Open Trace**.
+Trace .RUN files can be opened after they are recorded using **File** > **Open trace file**.
 
 ![File open options showing open trace option highlighted](images/ttd-start-debugging-options.png) 
 
-All of the output files are stored in the users document folder by default. For example, for User1 the TTD files would be stored here:
+All of the trace output files are stored in the users document folder by default. For example, for User1 the TTD files would be stored here:
 
 ```
 C:\Users\User1\Documents
 ```
-The most recently used list of trace files allows you to work with previously used files.
+You can change the location of the trace files when you start to record. For more information, see [Time Travel Debugging - Recording](time-travel-debugging-recording.md).
+
+When opening an existing trace file, the most recently used list of trace files allows you to work with previously used files. 
 
 ![File open list of .run trace files showing five recently used trace files](images/ttd-recent-trace-files.png) 
 
 
+
 ## Trace .IDX index files  
 
-Once the tracing is stopped an index (.IDX) file is created to allow for faster access to the trace information.
+Once the tracing is stopped, an index (.IDX) file is created to allow for faster access to the trace information.
 
 IDX files can also be large, typically ??? TBD *x to y size* larger than the .RUN file. 
 
@@ -58,13 +61,13 @@ Successfully created the index in 49ms.
 
 ## Sharing TTD Trace .RUN files
 
-TTD trace files can be shared with others by copying the .RUN file. You can rename the file to include any addtional information, such as the date or a bug number.
+TTD trace files can be shared with others by copying the .RUN file. You can rename the file to include any additional information, such as the date or a bug number.
 
 The .IDX file does not need to be copied as it can be re-created using the !tt.index command.
 
 
 > [!TIP]
-> When collaborating with others, pass on any relevant trace positions realted to the problem at hand. The collaborator can use the ```!tt x:y``` command to move to that exact point in time in the execution of the code. Time position ranges can be included in bug descriptions to track where the possible issue be occuring.
+> When collaborating with others, pass on any relevant trace positions related to the problem at hand. The collaborator can use the ```!tt x:y``` command to move to that exact point in time in the execution of the code. Time position ranges can be included in bug descriptions to track where the possible issue may be occurring.
 >
 
 
