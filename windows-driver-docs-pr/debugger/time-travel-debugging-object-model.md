@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Object Model
 
 
-This section describes how to use the data model to query time travel traces. This can be a powerful tool to answer questions like these about the code that is captured in a a time travel trace.
+This section describes how to use the data model to query time travel traces. This can be a powerful tool to answer questions like these about the code that is captured in a time travel trace.
 
 - What exceptions are in the trace?
 - At what point in time in the trace did a specific code module load?
@@ -28,7 +28,7 @@ This section describes how to use the data model to query time travel traces. Th
 
 ## dx TTD namespaces and commands
 
-The Lifetime, Threads and Events TTD objects are associated with the current process (curprocess). Use the dx -h option to view information about these TTD Objects.
+The Lifetime, Threads and Events TTD objects are associated with the current process (curprocess). Use the dx -h option to view basic information about these TTD Objects.
 
 ```
 0:000>  dx -h @$curprocess.TTD
@@ -73,7 +73,7 @@ start    end        module name
 77070000 771fe000   ntdll      (private pdb symbols)
 ``` 
 
-Then use the following dx command to see when the module was loaded.
+Then use the following dx command to see when a specific module was loaded.
 
 ```
  dx @$curprocess.TTD.Events.Where(t => t.Type == "ModuleLoaded").Where(t => t.Module.Name.Contains("ntdll.dll")) 
@@ -83,20 +83,28 @@ Then use the following dx command to see when the module was loaded.
 
 This LINQ query displays the load event(s) of a particular module.
 
-### Querying for the time postion in the trace when threads that get created
+```
+0:000> dx @$curprocess.TTD.Events.Where(t => t.Type == "ModuleUnloaded").Where(t => t.Module.Name.Contains("ntdll.dll")) 
+@$curprocess.TTD.Events.Where(t => t.Type == "ModuleUnloaded").Where(t => t.Module.Name.Contains("ntdll.dll"))                 
+    [0x0]            : Module Unloaded at position: FFFFFFFFFFFFFFFE:0
+```
+The address of FFFFFFFFFFFFFFFE:0 indicates ??? TBD. 
 
-Use this dx command to display all of the events in the trace.
+
+### Querying for the time position in the trace when threads were created
+
+Use this dx command to display all of the events in the trace in grid format.
 
 ```
 0:000> dx -g @$curprocess.TTD.Events
 ==================================================================================================================================================================================================
 =                                                          = (+) Type            = (+) Position          = (+) Module                                                   = (+) Thread             =
 ==================================================================================================================================================================================================
-= [0x0] : Module Loaded at position: 2:0                   - ModuleLoaded        - 2:0                   - Module C:\Users\DOMARS\Documents\Visual Studio 2015\Proje... -                        =
+= [0x0] : Module Loaded at position: 2:0                   - ModuleLoaded        - 2:0                   - Module C:\Users\USER1\Documents\Visual Studio 2015\Proje... -                        =
 = [0x1] : Module Loaded at position: 3:0                   - ModuleLoaded        - 3:0                   - Module C:\WINDOWS\SYSTEM32\VCRUNTIME140D.dll at address 0... -                        =
 = [0x2] : Module Loaded at position: 4:0                   - ModuleLoaded        - 4:0                   - Module C:\WINDOWS\SYSTEM32\ucrtbased.dll at address 0X118... -                        =
-= [0x3] : Module Loaded at position: 5:0                   - ModuleLoaded        - 5:0                   - Module C:\Users\DOMARS\AppData\Local\Dbg\UI\Fast.20170907... -                        =
-= [0x4] : Module Loaded at position: 6:0                   - ModuleLoaded        - 6:0                   - Module C:\Users\DOMARS\AppData\Local\Dbg\UI\Fast.20170907... -                        =
+= [0x3] : Module Loaded at position: 5:0                   - ModuleLoaded        - 5:0                   - Module C:\Users\USER1\AppData\Local\Dbg\UI\Fast.20170907... -                        =
+= [0x4] : Module Loaded at position: 6:0                   - ModuleLoaded        - 6:0                   - Module C:\Users\USER1\AppData\Local\Dbg\UI\Fast.20170907... -                        =
 = [0x5] : Module Loaded at position: 7:0                   - ModuleLoaded        - 7:0                   - Module C:\WINDOWS\SYSTEM32\apphelp.dll at address 0X73770... -                        =
 = [0x6] : Module Loaded at position: 8:0                   - ModuleLoaded        - 8:0                   - Module C:\WINDOWS\System32\KERNELBASE.dll at address 0X73... -                        =
 = [0x7] : Module Loaded at position: 9:0                   - ModuleLoaded        - 9:0                   - Module C:\WINDOWS\System32\KERNEL32.DLL at address 0X7590... -                        =
@@ -107,10 +115,10 @@ Use this dx command to display all of the events in the trace.
 = [0xc] : Thread created at 6A:0                           - ThreadCreated       - 6A:0                  -                                                              - UID: 4, TID: 0x27B0    =
 = [0xd] : Thread terminated at 89:0                        - ThreadTerminated    - 89:0                  -                                                              - UID: 4, TID: 0x27B0    =
 = [0xe] : Thread terminated at 8A:0                        - ThreadTerminated    - 8A:0                  -                                                              - UID: 3, TID: 0x4CFC    =
-= [0xf] : Module Unloaded at position: FFFFFFFFFFFFFFFE:0  - ModuleUnloaded      - FFFFFFFFFFFFFFFE:0    - Module C:\Users\DOMARS\Documents\Visual Studio 2015\Proje... -                        =
-= [0x10] : Module Unloaded at position: FFFFFFFFFFFFFFFE:0 - ModuleUnloaded      - FFFFFFFFFFFFFFFE:0    - Module C:\Users\DOMARS\AppData\Local\Dbg\UI\Fast.20170907... -                        =
+= [0xf] : Module Unloaded at position: FFFFFFFFFFFFFFFE:0  - ModuleUnloaded      - FFFFFFFFFFFFFFFE:0    - Module C:\Users\USER1\Documents\Visual Studio 2015\Proje... -                        =
+= [0x10] : Module Unloaded at position: FFFFFFFFFFFFFFFE:0 - ModuleUnloaded      - FFFFFFFFFFFFFFFE:0    - Module C:\Users\USER1\AppData\Local\Dbg\UI\Fast.20170907... -                        =
 = [0x11] : Module Unloaded at position: FFFFFFFFFFFFFFFE:0 - ModuleUnloaded      - FFFFFFFFFFFFFFFE:0    - Module C:\WINDOWS\SYSTEM32\VCRUNTIME140D.dll at address 0... -                        =
-= [0x12] : Module Unloaded at position: FFFFFFFFFFFFFFFE:0 - ModuleUnloaded      - FFFFFFFFFFFFFFFE:0    - Module C:\Users\DOMARS\AppData\Local\Dbg\UI\Fast.20170907... -                        =
+= [0x12] : Module Unloaded at position: FFFFFFFFFFFFFFFE:0 - ModuleUnloaded      - FFFFFFFFFFFFFFFE:0    - Module C:\Users\USER1\AppData\Local\Dbg\UI\Fast.20170907... -                        =
 = [0x13] : Module Unloaded at position: FFFFFFFFFFFFFFFE:0 - ModuleUnloaded      - FFFFFFFFFFFFFFFE:0    - Module C:\WINDOWS\SYSTEM32\ucrtbased.dll at address 0X118... -                        =
 = [0x14] : Module Unloaded at position: FFFFFFFFFFFFFFFE:0 - ModuleUnloaded      - FFFFFFFFFFFFFFFE:0    - Module C:\WINDOWS\SYSTEM32\apphelp.dll at address 0X73770... -                        =
 = [0x15] : Module Unloaded at position: FFFFFFFFFFFFFFFE:0 - ModuleUnloaded      - FFFFFFFFFFFFFFFE:0    - Module C:\WINDOWS\System32\KERNELBASE.dll at address 0X73... -                        =
@@ -118,9 +126,11 @@ Use this dx command to display all of the events in the trace.
 = [0x17] : Module Unloaded at position: FFFFFFFFFFFFFFFE:0 - ModuleUnloaded      - FFFFFFFFFFFFFFFE:0    - Module C:\WINDOWS\SYSTEM32\ntdll.dll at address 0X7707000... -                        =
 ==================================================================================================================================================================================================
 
+Click on any of the columns with a + sign to sort the output.
+
 ```
 
-Use this LINQ query to disaply in grid format, the time postion in the trace when threads were created (Type == "ThreadCreated").
+Use this LINQ query to display in grid format, the time position in the trace when threads were created (Type == "ThreadCreated").
 
 ```
 dx -g @$curprocess.TTD.Events.Where(t => t.Type == "ThreadCreated").Select(t => t.Thread) 
@@ -133,6 +143,7 @@ dx -g @$curprocess.TTD.Events.Where(t => t.Type == "ThreadCreated").Select(t => 
 ===========================================================================================================
 ```
 
+Use this LINQ query to display in grid format, the time position in the trace when threads were terminated (Type == "ThreadTerminated").
 
 ```
 0:000> dx -g @$curprocess.TTD.Events.Where(t => t.Type == "ThreadTerminated").Select(t => t.Thread) 
@@ -142,14 +153,36 @@ dx -g @$curprocess.TTD.Events.Where(t => t.Type == "ThreadCreated").Select(t => 
 = [0x0] : UID: 2, TID: 0x4C2C - 0x2          - 0x4c2c    - [0:0, FFFFFFFFFFFFFFFE:0]    - [D:0, 64:0]     =
 = [0x1] : UID: 4, TID: 0x27B0 - 0x4          - 0x27b0    - [0:0, 89:0]                  - [6A:0, 89:0]    =
 = [0x2] : UID: 3, TID: 0x4CFC - 0x3          - 0x4cfc    - [0:0, 8A:0]                  - [69:0, 8A:0]    =
-=================================================================================================
+===========================================================================================================
 ```
 
-##	Overview of namespaces and querying call-outs
 
+### Sorting output to determine the longest running threads
+
+Use this LINQ query to display in grid format, the longest running threads in the trace.
+
+??? TBD Is this possible? What would the dx query be? Would we use OrderByDescending? Can we just display the top 3 long running threads?
+
+```
 TBD
 
-For addtional information, see [Debugger Object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md).
+This isn't right...
+
+ dx -r1 -g @$curprocess.TTD.Events.OrderByDescending(obj => (obj.@"Position").ToDisplayString())
+
+TBD 
+
+Is the query valid in a trace? It seems to return results of some type. It is not using the TTD objects though.
+
+0:000> dx -r2 Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.ThreadCount),5
+Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.ThreadCount),5                
+    [0x2f08]        
+        Name             : CDog_Console.exe
+        ThreadCount      : 0x3
+
+```
+
+
 
 
 
