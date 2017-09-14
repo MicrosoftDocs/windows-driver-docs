@@ -36,7 +36,7 @@ A pointer to an initialized [NET_PACKET_CONTEXT_ATTRIBUTES](net-packet-context-a
 
 ## Return value
 
-If the operation is successful, theis method must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
+If the operation is successful, this method returns STATUS_SUCCESS. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
 
 ## Remarks
 
