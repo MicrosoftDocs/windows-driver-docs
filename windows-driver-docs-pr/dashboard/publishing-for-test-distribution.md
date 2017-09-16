@@ -41,16 +41,9 @@ Once you have published your driver for test distribution, the expiration time i
 
 ## <span id="Client_PC_configuration"></span><span id="client_pc_configuration"></span><span id="CLIENT_PC_CONFIGURATION"></span>Client PC configuration
 
-
-### <span id="Test_distribution_client_configuration_for_previous_versions_of_Windows"></span><span id="test_distribution_client_configuration_for_previous_versions_of_windows"></span><span id="TEST_DISTRIBUTION_CLIENT_CONFIGURATION_FOR_PREVIOUS_VERSIONS_OF_WINDOWS"></span>Test distribution client configuration for previous versions of Windows
-
-Prior to Windows 10, a legacy registry key was used to indicate that a client machine is interested in receiving test distribution drivers. Starting with Windows 10, this legacy registry key will be retired and no longer function.
-
-To configure a client machine (Windows 7, Windows 8, or Windows 8.1) for test distribution, you must configure the client machine using the steps outlined in the following section.
-
 ### <span id="How_do_I_configure_my_machine_to_receive_test_distribution_drivers_"></span><span id="how_do_i_configure_my_machine_to_receive_test_distribution_drivers_"></span><span id="HOW_DO_I_CONFIGURE_MY_MACHINE_TO_RECEIVE_TEST_DISTRIBUTION_DRIVERS_"></span>How do I configure my machine to receive test distribution drivers?
 
-Configuring a system to receive test distribution updates is easier than ever. Follow these steps on the test machine running Windows 10, or on the source OS (Windows 8.1 or earlier) if you are testing upgrade scenarios to Windows 10.
+Configuring a system to receive test distribution updates can be performed with the following steps:
 
 1.  Open the Windows Registry Editor (regedit.exe)
 2.  Go to HKLM\\Software\\Microsoft\\

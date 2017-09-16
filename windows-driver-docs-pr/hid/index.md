@@ -65,7 +65,7 @@ Today, HID devices include: alphanumeric displays, barcode readers, volume contr
 </tr>
 <tr class="odd">
 <td><p>[HID Transports](hid-transports.md)</p></td>
-<td></td>
+<td><p>Descriptions of HID transports supported in current and previous versions of Windows.</p></td>
 </tr>
 <tr class="even">
 <td><p>[Non-HID legacy devices](non-hid-legacy-devices.md)</p></td>
