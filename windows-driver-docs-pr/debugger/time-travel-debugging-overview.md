@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Overview
 description: This section describes time travel debugging.
 ms.author: windowsdriverdev
-ms.date: 09/08/2017
+ms.date: 09/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,7 +83,7 @@ For more information on working the trace files, see [Time Travel Debugging - Wo
 
 Review these topics to record and playback a trace file as well as for information on working with trace files and troubleshooting.
 
-- [Time Travel Debugging - Recording](time-travel-debugging-recording.md)
+- [Time Travel Debugging - Record a trace](time-travel-debugging-recording.md)
 - [Time Travel Debugging - Replay a trace](time-travel-debugging-replay.md)
 - [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-files.md)
 - [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md)

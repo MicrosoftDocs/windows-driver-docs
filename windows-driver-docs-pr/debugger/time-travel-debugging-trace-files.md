@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Working with Trace Files 
 description: This section describes how to work with time travel trace files 
 ms.author: windowsdriverdev
-ms.date: 09/12/2017
+ms.date: 09/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -14,8 +14,7 @@ ms.technology: windows-devices
 
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Replay a trace 
 
-
-This section describes how to playback time travel traces and navigate forward and back in time.
+This section describes how to replay a time travel traces an navigate forward and backward in time.
 
 ## Command time travel navigation
 
@@ -49,7 +48,7 @@ This table summarizes the major elements of a TTD Trace.
 ??? TBD - Create simple elements of trace file diagram.
 
 
-## Example TTD Playback
+## Example TTD Trace Replay
 
 Use the !tt 0 command to reset the time position to the beginning of the TTD trace. 
 
@@ -241,7 +240,7 @@ The following commands can be used when playing back a trace
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
-[Time Travel Debugging - Recording](time-travel-debugging-recording.md)
+[Time Travel Debugging - Record a trace](time-travel-debugging-recording.md)
 
 [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-files.md)
 
