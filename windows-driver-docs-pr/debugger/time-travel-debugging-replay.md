@@ -1,8 +1,8 @@
 ---
-title: Time Travel Debugging - Playback
-description: This section describes how to record time travel traces.
+title: Time Travel Debugging - Replay a trace
+description: This section describes how to replay time travel traces.
 ms.author: windowsdriverdev
-ms.date: 09/12/2017
+ms.date: 09/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -12,7 +12,7 @@ ms.technology: windows-devices
 > The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
 >
 
-# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Playback 
+# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Replay a trace 
 
 
 This section describes how to playback time travel traces and navigate forward and back in time.
