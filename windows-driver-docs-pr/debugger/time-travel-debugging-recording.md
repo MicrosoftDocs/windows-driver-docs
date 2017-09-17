@@ -39,17 +39,17 @@ To launch an executable and record a TTD trace, follow these steps.
 
     ![TTD recording popup showing stop and debug as well as cancel options](images/ttd-recording-pop-up.png)
 
-6. Here is where you work to cause the activity that you wish to analyze to occur. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
+6. Here is where you cause the event of interest that you wish to analyze to occur.  You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
 
 7. When the recording dialog box is being displayed you can:
 
     - **Stop and debug** - Choosing this will stop the recording, create the trace file, index the trace file and open the trace file so you can start debugging. 
-    - **Cancel** - Choosing this will stop the recording and create the trace file. You can open the trace file at a later time. TBD - Important to confirm this is true - need to test.
+    - **Cancel** - Choosing this will stop the recording and create the trace file. You can open the trace file at a later time. 
      
 8. Once your recording is complete, close your app or hit **Stop and debug**.
 
    > [!NOTE]
-   > Both *Stop and debug* and *Cancel* will kill the associated app process. 
+   > Both *Stop and debug* and *Cancel* will kill the associated process. 
    >   
 
 9. When the associated application terminates, the trace file will be closed and written out to disk. This is the case if your program crashes as well.
@@ -74,7 +74,7 @@ To attach to a process and record a TTD trace, follow these steps.
 
 1. In WinDbg Preview, select **File** > **Attach to process**.
 
-2. Select the user mode executable that you wish to trace. For information about working with *Attach to a process* menu in WinDbg Preview, see [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md).
+2. Select the user mode process that you wish to trace. For information about working with *Attach to a process* menu in WinDbg Preview, see [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md).
 
     ![Screen shot of WinDbg Preview showing start recording checkbox](images/ttd-start-recording-attach-to-process.png)
 
@@ -90,18 +90,22 @@ To attach to a process and record a TTD trace, follow these steps.
 
     ![TTD recording popup showing stop and debug as well as cancel options](images/ttd-recording-pop-up-attach.png)
 
-6. Here is where you work to cause the activity that you wish to analyze to occur. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
+6. Here is where you cause the event of interest that you wish to analyze to occur. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
 
 7. When the recording dialog box is being displayed you can:
 
-    - Stop recording and debug your program. 
-    - Cancel the recording. This option will kill the process that you attached to. ??? TBD - Important to confirm this is true.
+    - **Stop and debug** - Choosing this will stop the recording, create the trace file, index the trace file and open the trace file so you can start debugging. 
+    - **Cancel** - Choosing this will stop the recording and create the trace file. You can open the trace file at a later time. 
    
-8. Once your recording is complete, close your app or hit **Stop and debug** – This will kill the associated process.
+8. Once your recording is complete, close your app or hit **Stop and debug**.
+
+   > [!NOTE]
+   > Both *Stop and debug* and *Cancel* will kill the associated process. 
+   >   
 
 9. When the associated application terminates, the trace file will be closed and written out to disk. This is the case if your program crashes as well.
 
-10. When the trace file is closed, indexing will happen automatically as shown in the output below. Indexing allows for complete and faster memory value look ups. This indexing process will take longer for larger trace files.
+10.  With the **Stop and debug** option, the trace file is automatically indexed after being written to disk. Indexing allows for complete and faster memory value look ups. This indexing process will take longer for larger trace files.
 
     ```
     Time Travel Position: 10:0
