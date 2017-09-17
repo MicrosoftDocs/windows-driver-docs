@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Record a trace 
 
-This section describes how to record time travel debugging (TTD) traces. 
+This section describes how to record time travel debugging (TTD) traces. There are two ways to record a Trace in WinDbg Preview, *Launch Executable (advanced)* and *Attach to a process*. 
 
 
 ## Launch executable (advanced)
@@ -86,6 +86,11 @@ To attach to a process and record a TTD trace, follow these steps.
 
 4. Click **Attach** to start recording. 
 
+    > [!NOTE]
+    > ??? TBD confirm - You can use either **Attach** or  **Non-inasive attach**. 
+    >
+
+
 5. The recording dialog appears indicating the trace is being recorded.
 
     ![TTD recording popup showing stop and debug as well as cancel options](images/ttd-recording-pop-up-attach.png)
@@ -123,7 +128,7 @@ To attach to a process and record a TTD trace, follow these steps.
 
 ## Next Steps
 
-Now that you have a recorded a TTD trace, you can play the trace back or work with the trace file, for example sharing it with a co-worker. For more information, see these topics.
+Now that you have a recorded a TTD trace, you can replay the trace back or work with the trace file, for example sharing it with a co-worker. For more information, see these topics.
 
 [Time Travel Debugging - Replay a trace](time-travel-debugging-replay.md)
 

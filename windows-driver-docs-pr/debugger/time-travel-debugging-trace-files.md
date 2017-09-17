@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Working with Trace Files 
 description: This section describes how to work with time travel trace files 
 ms.author: windowsdriverdev
-ms.date: 09/16/2017
+ms.date: 09/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,19 +15,22 @@ ms.technology: windows-devices
 
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Working with Trace Files
 
-This section describes how to work with time travel trace files.
+This section describes how to work with files used by time travel debugging.
 
 ## Trace File Overview
 
-.RUN files are used to record code execution.
+Time Travel Debugging uses the following files to debug code execution.
 
-.IDX files are created when the trace file is closed and enable quick access to memory locations in the trace file. 
+The trace file contains the code execution recording and has a .RUN extension.
 
-.OUT files are used to log error messages, when failures occur.
+The index file enables quick access to information in the Trace file and has an .IDX extension
+
+The error log files are created when tracing failures occur and has an .OUT extension
+
 
 ## Trace .RUN files  
 
-Trace .RUN files can be opened after they are recorded using **File** > **Open trace file**.
+Trace .RUN files can be opened after they are recorded using **File** > **Start debugging** > **Open trace file**.
 
 ![File open options showing open trace option highlighted](images/ttd-start-debugging-options.png) 
 
@@ -43,15 +46,14 @@ When opening an existing trace file, the most recently used list of trace files 
 ![File open list of .run trace files showing five recently used trace files](images/ttd-recent-trace-files.png) 
 
 
+## Index .IDX files  
 
-## Trace .IDX index files  
+An index .IDX file is created for the associated trace .RUN file automatically when opening the trace file in WinDbg Preview. You can manually create the index file by using the !tt.index command. An index allows for faster access to the trace information. 
 
-Once the tracing is stopped, an index (.IDX) file is created to allow for faster access to the trace information.
-
-IDX files can also be large, typically ??? TBD *x to y size* larger than the .RUN file. 
+IDX files can also be large, typically ??? TBD *x to y size* 2 to 3? ??? TBD larger than the .RUN file.  
 
 ## Recreating the .IDX file
-You can recreate the index file from the .RUN file using the ```!tt.index``` command.
+You can recreate the .IDX file from the .RUN file, using the ```!tt.index``` command.
 
 ```
 0:0:001> !tt.index
@@ -61,9 +63,11 @@ Successfully created the index in 49ms.
 
 ## Sharing TTD Trace .RUN files
 
-TTD trace files can be shared with others by copying the .RUN file. You can rename the file to include any additional information, such as the date or a bug number.
+TTD trace files can be shared with others by copying the .RUN file. This can be handy for having a coworker help you figure out the problem. They don't need to install the app or do any other related setup. They can just load the trace file and debug the app as if it was installed on their PC. 
 
-The .IDX file does not need to be copied as it can be re-created using the !tt.index command.
+You can rename the file to include any additional information, such as the date or a bug number.
+
+The .IDX file does not need to be copied as it can be re-created using the !tt.index command as described above.
 
 
 > [!TIP]
@@ -71,11 +75,11 @@ The .IDX file does not need to be copied as it can be re-created using the !tt.i
 >
 
 
-## .OUT files
+## .OUT files ??? TDB replaced by Log Files
 
-Recording errors and other recording output is written to an .out file. 
+Recording errors and other recording output is written to a log file. 
 
-TBD ??? - Need to confirm that an out file is only created on error.
+TBD ??? - Need to determine log file location and how to view it using scenario shown below.
 
 ```
 Initializing Time Travel Tracing for Launch of "C:\Windows\Notepad.exe test.txt"

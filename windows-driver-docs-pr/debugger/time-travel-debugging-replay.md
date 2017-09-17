@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Replay a trace 
 
-This section describes how to replay a time travel traces an navigate forward and backward in time.
+This section describes how to replay time travel traces, navigating forwards and backwards in time.
 
 ## Command time travel navigation
 
@@ -43,64 +43,76 @@ This table summarizes the major elements of a TTD Trace.
 | Instruction Position Reference |A specific position reference in the trace, for example 12:0. |
 | Sequencing point​ | Orderable event in the trace.​ ??? TBD -- Need example / more info|
 
-??? TBD - Needs review. The goal is to describe elements like key frames that you encounter as you work with trace files.
+??? TBD - Needs review. The goal is to describe elements like key frames that you encounter as you work with trace files. Let me know if there is a spec that contains this information that I can review.
 
 ??? TBD - Create simple elements of trace file diagram.
 
 
 ## Example TTD Trace Replay
 
-Use the !tt 0 command to reset the time position to the beginning of the TTD trace. 
+Use the g- command to reset the time position to the beginning of the TTD trace. 
 
 ```
-0:000> !tt 0
-Setting position to the beginning of the trace
-Setting position: 10:0
-(4604.21dc): Break instruction exception - code 80000003 (first/second chance not available)
-Time Travel Position: 10:0
+0:000> g-
+TTD: Start of trace reached.
+(3f78.4274): Break instruction exception - code 80000003 (first/second chance not available)
+Time Travel Position: 29:0
 ntdll!ZwTestAlert+0x14:
 00007ffc`61f789d4 c3              ret
 ```
 
-Use the p command to step forward in a TTD trace. 
+Use the [p (Step)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/p--step-) command to step forward in a TTD trace. 
 
 ```
 0:000> p
-Time Travel Position: E:1
-ntdll!TpAdjustBindingCount+0x49:
-00007ff9`31e887ed ebd4            jmp     ntdll!TpAdjustBindingCount+0x1f (00007ff9`31e887c3)
+Time Travel Position: 29:1
+ntdll!_LdrpInitialize+0x96:
+00007ffc`61f49bc6 4c8d5c2450      lea     r11,[rsp+50h]
 0:000> p
-Time Travel Position: E:2
-ntdll!TpAdjustBindingCount+0x1f:
-00007ff9`31e887c3 4883c428        add     rsp,28h
+Time Travel Position: 29:B
+ntdll!LdrpInitialize+0x3b:
+00007ffc`61f49b1b 488b5c2430      mov     rbx,qword ptr [rsp+30h] ss:000000a3`e827f360=000000a3e827f3b0
 0:000> p
-Time Travel Position: E:4
-    could step in/over inline function frames ...
-01 000000e4`d1c8f110 00007ff9`31e8668a ntdll!TppInitializeTimer+0x54 [minkernel\threadpool\ntdll\timer.c @ 1411] 
-ntdll!TppInitializeTimer+0x54:
-00007ff9`31e8875c 4883a3f000000000 and     qword ptr [rbx+0F0h],0 ds:0000027c`e87065f0=0000000000000000
+Time Travel Position: 29:F
+ntdll!LdrInitializeThunk+0xe:
+00007ffc`61f49ace b201            mov     dl,1
 ```
+
+You an also use the [t (Trace)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/t--trace-) command to navigate in the trace.
+
+```
+0:000> t
+Time Travel Position: 29:12
+ntdll!ZwContinue:
+00007ffc`61f75bf0 4c8bd1          mov     r10,rcx
+0:000> t
+Time Travel Position: 2B:0
+ntdll!RtlUserThreadStart:
+00007ffc`61f40d30 4883ec48        sub     rsp,48h
+```
+
 
 Use the the p- command to step backwards in a TTD trace. 
 
 ```
 0:000> p-
-Time Travel Position: E:3
-ntdll!TpAdjustBindingCount+0x23:
-00007ff9`31e887c7 c3              ret
+Time Travel Position: 2A:0
+ntdll!ZwContinue+0x12:
+00007ffc`61f75c02 0f05            syscall
 0:000> p-
-Time Travel Position: E:1
-ntdll!TpAdjustBindingCount+0x49:
-00007ff9`31e887ed ebd4            jmp     ntdll!TpAdjustBindingCount+0x1f (00007ff9`31e887c3)
+Time Travel Position: 29:11
+ntdll!LdrInitializeThunk+0x13:
+00007ffc`61f49ad3 e818c10200      call    ntdll!ZwContinue (00007ffc`61f75bf0)
 0:000> p-
 TTD: Start of trace reached.
-(1a04.3bd0): Break instruction exception - code 80000003 (first/second chance not available)
-Time Travel Position: E:0
-ntdll!ZwSetInformationWorkerFactory+0x14:
-00007ff9`31ed0894 c3              ret
+(3f78.4274): Break instruction exception - code 80000003 (first/second chance not available)
+Time Travel Position: 29:0
+ntdll!ZwTestAlert+0x14:
+00007ffc`61f789d4 c3              ret
 ```
 
-??? TBD - Why did we skip over E:2 in the example above? Should explain that.
+You can also use the t- command to navigate backwards in time.
+
 
 ## !tt navigation commands
 
@@ -143,7 +155,7 @@ Use !tt.*positions* to display all the active threads, including their position 
 In this example eight threads each ran until they finished, one after another.  (??? TBD - Confirm - I don't see any thread listed twice, so I assume this is the case...)
 
 
-Use the [~ (Thread Status)](---thread-status-.md) command to confirm that we positioned at the first thread, 3604.
+Use the user mode [~ (Thread Status)](---thread-status-.md) command to confirm that we positioned at the first thread, 3604.
 
 ```
 1:0:000> ~
@@ -219,9 +231,9 @@ Index file loaded.
 
 ## Trace replay command reference
 
-The following commands can be used when replaying a trace
+The following commands can be used when replaying a trace.
 
-??? TBD - Need to validate that all of these are supported, including the ~thread. 
+??? TBD - Need to validate that all of these are supported, including the ~thread prefix. Can you navigate on a thread that you weren't on?
 
 | Command  |  Description|
 |----|-------------------------------------------------------------------------------------------|
