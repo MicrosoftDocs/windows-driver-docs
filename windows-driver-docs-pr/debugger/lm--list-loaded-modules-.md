@@ -22,7 +22,7 @@ api_type:
 The **lm** command displays the specified loaded modules. The output includes the status and the path of the module.
 
 ```
-lmOptions [a Address] [m Pattern | M Pattern]
+lm Options [a Address] [m Pattern | M Pattern]
 ```
 
 ## <span id="ddk_cmd_list_loaded_modules_dbg"></span><span id="DDK_CMD_LIST_LOADED_MODULES_DBG"></span>Parameters
