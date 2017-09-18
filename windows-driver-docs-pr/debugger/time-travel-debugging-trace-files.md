@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Working with Trace Files 
 description: This section describes how to work with time travel trace files 
 ms.author: windowsdriverdev
-ms.date: 09/17/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,7 +50,7 @@ When opening an existing trace file, the most recently used list of trace files 
 
 An index .IDX file is created for the associated trace .RUN file automatically when opening the trace file in WinDbg Preview. You can manually create the index file by using the !tt.index command. An index allows for faster access to the trace information. 
 
-IDX files can also be large, typically ??? TBD *x to y size* 2 to 3? ??? TBD larger than the .RUN file.  
+IDX files can also be large, typically twice the size of the  .RUN file.  
 
 ## Recreating the .IDX file
 You can recreate the .IDX file from the .RUN file, using the ```!tt.index``` command.
@@ -75,11 +75,11 @@ The .IDX file does not need to be copied as it can be re-created using the !tt.i
 >
 
 
-## .OUT files ??? TDB replaced by Log Files
+## Error - Log Files
 
-Recording errors and other recording output is written to a log file. 
+Recording errors and other recording output is written to the debugger log file. 
 
-TBD ??? - Need to determine log file location and how to view it using scenario shown below.
+TBD ??? - Need to show log file output.
 
 ```
 Initializing Time Travel Tracing for Launch of "C:\Windows\Notepad.exe test.txt"

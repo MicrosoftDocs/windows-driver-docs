@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Overview
 description: This section describes time travel debugging.
 ms.author: windowsdriverdev
-ms.date: 09/16/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ A .RUN file stores the code execution as the trace is running.
 
 Once the tracing is stopped, an index (.IDX) file is created to allow for faster access to the trace information.
 
-IDX files can also be large, typically ???TBD size larger than the .RUN file.  
+IDX files can also be large, typically twice as large as the .RUN file.  
 
 You can recreate the index file from the .RUN file using the !tt.index command.
 
@@ -102,13 +102,11 @@ These topics describe additional advanced functionality in time travel debugging
 
 ### Anti-virus incompatibilities 
 
-You may encounter incompatibilities because of how TTD hooks into process to record them. . Typically issues arise with anti-virus or other system software that is attempting to track and shadow system memory calls. 
-
-If you run into issues of TBD??? type or see TBD??? message, try temporarily disabling any anti-virus software.  
+You may encounter incompatibilities because of how TTD hooks into process to record them. Typically issues arise with anti-virus or other system software that is attempting to track and shadow system memory calls. If you run into issues of with recording, such as an insufficient permission message, try temporarily disabling any anti-virus software.  
 
 Other utilities that attempt to block memory access, can also be problematic, for example, the Microsoft Enhanced Mitigation Experience Toolkit. For more information about EMET, see [The Enhanced Mitigation Experience Toolkit](https://support.microsoft.com/en-us/help/2458544/the-enhanced-mitigation-experience-toolkit).
 
-Another example of an environment that conflicts with TTD, would be the electron application framework.
+Another example of an environment that conflicts with TTD, would be the electron application framework. In this case the trace may record, but a deadlock of WinDbg is also possible.
 
 ### User mode only
 

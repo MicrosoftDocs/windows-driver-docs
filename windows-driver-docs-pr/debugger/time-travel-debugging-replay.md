@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Replay a trace
 description: This section describes how to replay time travel traces.
 ms.author: windowsdriverdev
-ms.date: 09/17/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,21 +31,6 @@ Use a trailing minus sign with the following commands to travel back in time.
 Alternatively, use the ribbon buttons to navigate in the trace.
 
 ![Screen shot of WinDbg Preview showing start recording checkbox](images/ttd-ribbon-buttons.png)
-
-
-## Trace Segment Terminology
-
-This table summarizes the major elements of a TTD Trace.
-| Term  |  Description|
-|----|-------------------------------------------------------------------------------------------|
-| Keyframe | A location in a trace where replay can start with no previous data​. Keyframes are generated automatically. Larger traces will contain more keyframes. When the trace is indexed, the number of keyframes is displayed. |
-| Trace segment​ | Part of a recorded thread between two key frames​.  |
-| Instruction Position Reference |A specific position reference in the trace, for example 12:0. |
-| Sequencing point​ | Orderable event in the trace.​ ??? TBD -- Need example / more info|
-
-??? TBD - Needs review. The goal is to describe elements like key frames that you encounter as you work with trace files. Let me know if there is a spec that contains this information that I can review.
-
-??? TBD - Create simple elements of trace file diagram.
 
 
 ## Example TTD Trace Replay
@@ -132,6 +117,13 @@ Provide a time position in any of the following formats to travel to that point 
     - !tt 1A0:                - Time travel to position 1A0:0
     - !tt 1A0:0               - Time travel to position 1A0:0
     - !tt 1A0:12F             - Time travel to position 1A0:12F
+
+
+   > [!NOTE]
+   >  Traces use a two part instruction position that references a specific position reference in the trace, for example 12:0. 
+   >  The first element is the TBD
+   >  The second elemnt is the instruction pointer TBD 
+
 
 - If the : is omitted, then the second number must have precisely 16 hexadecimal digits, with zeros for left-padding.
     - !tt 1A0000000000000012F - Time travel to position 1A0:12F
@@ -228,27 +220,7 @@ Use !tt.index status to report the status of the trace index.
 Index file loaded.
 ```
 
-
-## Trace replay command reference
-
-The following commands can be used when replaying a trace.
-
-??? TBD - Need to validate that all of these are supported, including the ~thread prefix. Can you navigate on a thread that you weren't on?
-
-| Command  |  Description|
-|----|-------------------------------------------------------------------------------------------|
-|g- [BreakAddr [; BreakCmds]]     | Execute backward.  |
-|g-t <position>                   | Execute backward and break on <position>.  |
-|gt <position>                    | Execute forward and break on <position>. |
-|[~Thread] p- [count] ["Command"] | Reverse step over. |
-|[~Thread] p-a <addr>             | Reverse step to address. |
-|[~Thread] p-c [count]            | Reverse step over to (previous) call. |
-|[~Thread] t- [count] ["Command"] | Reverse step into. |
-|[~Thread] t-a <addr>             | Reverse step to address. |
-|[~Thread] t-c [count]            | Reverse step into to (previous) call. |
  
-
-
 ## See Also
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)

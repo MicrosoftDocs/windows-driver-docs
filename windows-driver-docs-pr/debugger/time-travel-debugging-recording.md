@@ -64,7 +64,10 @@ To launch an executable and record a TTD trace, follow these steps.
     Indexed 1/1 keyframes
     Successfully created the index in 96ms.
     ```
-
+   > [!NOTE]
+   > A keyframe is a location in a trace where replay can start with no previous data​. Keyframes are generated automatically. Larger traces will contain more keyframes. When the trace is indexed, the number of keyframes is displayed. 
+   >   
+ 
 11. At this point you are at the end of the trace file and are ready to travel back in time.
 
 
@@ -85,11 +88,6 @@ To attach to a process and record a TTD trace, follow these steps.
 3. Check the **Record Process** box to create a trace when the executable is launched. 
 
 4. Click **Attach** to start recording. 
-
-    > [!NOTE]
-    > ??? TBD confirm - You can use either **Attach** or  **Non-inasive attach**. 
-    >
-
 
 5. The recording dialog appears indicating the trace is being recorded.
 
@@ -120,6 +118,11 @@ To attach to a process and record a TTD trace, follow these steps.
     Indexed 1/1 keyframes
     Successfully created the index in 96ms.
     ```
+
+   > [!NOTE]
+   > A keyframe is a location in a trace where replay can start with no previous data​. Keyframes are generated automatically. Larger traces will contain more keyframes. When the trace is indexed, the number of keyframes is displayed. 
+   >   
+
 
 11. At this point you are at the end of the trace file and are ready to travel back in time.
 
