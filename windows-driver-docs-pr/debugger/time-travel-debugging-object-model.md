@@ -190,7 +190,7 @@ Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
-[Debugger Object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md)
+[Debugger object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md)
 
 [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md)
 

@@ -2,7 +2,7 @@
 title: Debugger object model reference - time travel debugging (TTD)
 description: This section describes the debugger model objects associated with time travel debugging.
 ms.author: windowsdriverdev
-ms.date: 09/15/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -19,11 +19,16 @@ This section describes the debugger model objects associated with time travel de
 
 For general information about the debugger object model, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md) and  [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md). 
 
-For information on working with the TTD objects see, [Time Travel Debugging - Trace File object model](time-travel-debugging-object-model.md).
+For information on working with the TTD objects see, [Time Travel Debugging - Object Model](time-travel-debugging-object-model.md).
 
 ## TTD Object
 
-The TTD object contains time travel debugging specific properties available for each process in a trace file. The TTD object is associated with the current process (curprocess) debugger object. The TTD *Lifetime*, *Threads* and *Events* objects are documented in this topic. 
+The TTD object contains time travel debugging properties available for each process in a trace file. The TTD object is associated with the current process (curprocess) debugger object. The following TTD objects are documented in this topic. 
+
+- *Lifetime*
+- *Threads*
+- *Events* 
+
 
 ### TTD Methods
 
@@ -108,9 +113,9 @@ The TTD Threads Object contains an array of the threads in the TTD trace. Each t
 
 ## TTD Threads Methods 
  
- **SeekTo** - Method which seeks to time position. The MinPosition and MaxPosition TTD Threads objects support this method.
+ **SeekTo** - Method which seeks to time position. The MinPosition and MaxPosition TTD Threads objects, support this method.
  
- **ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object children support this method.
+ **ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Threads object children support this method.
         
  
 ### TTD Threads Object Example
@@ -189,7 +194,7 @@ The TTD Events Object contains an array of events in the TTD trace.
 
 **ToUpper()** - Returns a copy of this string converted to uppercase.
 
-**ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object children support this method.
+**ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Events object children support this method.
  
 ### TTD Events Position Objects
 
