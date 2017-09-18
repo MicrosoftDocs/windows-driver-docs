@@ -17,7 +17,6 @@ ms.technology: windows-devices
 
 ## What is Time Travel Debugging?
 
-James
 Time Travel Debugging, is a tool that allows you to record an execution of your process running, then replay it later both forwards and backwards. Time Travel Debugging (TTD) can help you debug issues easier by letting you "rewind" your debugger session, instead of having to reproduce the issue until you find the bug. 
  
 TTD allows you to go back in time to better understand the conditions that lead up to the bug and replay it multiple times to learn how best to fix the problem. 
@@ -28,7 +27,7 @@ In the event you can't figure out the issue yourself, you can share the trace w
 
 TTD is lightweight and works to add minimal overhead as it captures code execution in trace files. The performance impact is similar to attaching a non-invasive debugger connection. 
 
-TTD includes a set of debugger data model objects to allow you to query the trace using LINQ. For example you can use ttd objects to locate when a specific code module was loaded or locate all of the exceptions. 
+TTD includes a set of debugger data model objects to allow you to query the trace using LINQ. For example, you can use TTD objects to locate when a specific code module was loaded or locate all of the exceptions. 
 
 ![Example screen shot of WinDbg preview showing time travel command and cdog app](images/ttd-windbgx-screen-shot-example-cdog-app.png)
 
@@ -61,7 +60,7 @@ A .RUN file stores the code execution as the trace is running.
 
 Once the tracing is stopped, an index (.IDX) file is created to allow for faster access to the trace information.
 
-IDX files can also be large, typically <TBD> size larger than the .RUN file.  
+IDX files can also be large, typically ???TBD size larger than the .RUN file.  
 
 You can recreate the index file from the .RUN file using the !tt.index command.
 
@@ -70,7 +69,7 @@ You can recreate the index file from the .RUN file using the !tt.index command.
 Successfully created the index in 10ms.
 ```
 
-Recording errors and other recording output is written to an .out file. TBD ??? - Is the out file only created on error, or is there always an out file?
+Recording errors and other recording output is written to a WinDbg log file.
 
 All of the output files are stored in the users document folder by default. For example, for User1 the TTD files would be stored here:
 
@@ -113,7 +112,7 @@ Another example of an environment that conflicts with TTD, would be the electron
 
 ### User mode only
 
-TTD currently supports only user mode operation, so tracing kernel mode process is not possible. 
+TTD currently supports only user mode operation, so tracing a kernel mode process is not possible. 
 
 ### Read only playback
 

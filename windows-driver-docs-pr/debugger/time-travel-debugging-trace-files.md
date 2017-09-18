@@ -23,9 +23,9 @@ Time Travel Debugging uses the following files to debug code execution.
 
 The trace file contains the code execution recording and has a .RUN extension.
 
-The index file enables quick access to information in the Trace file and has an .IDX extension
+The index file enables quick access to information in the Trace file and has an .IDX extension.
 
-The error log files are created when tracing failures occur and has an .OUT extension
+The error log files are created when tracing failures occur and has an .OUT extension.
 
 
 ## Trace .RUN files  

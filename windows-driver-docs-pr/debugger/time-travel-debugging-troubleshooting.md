@@ -17,7 +17,7 @@ ms.technology: windows-devices
 
 This section describes how to troubleshoot time travel traces.
 
-??? TBD - I need some help with this topic as I think the related Wikis are not targeted towards external relase and may be out of date:
+??? TBD - I need some help with this topic as I think the related Wikis are not targeted towards external release and may be out of date:
 
 https://osgwiki.com/wiki/Trace_file_derailment
 
@@ -34,7 +34,7 @@ Use the ```!tt.index status``` command to examine the state of the .IDX index fi
 
 ### Recreating the .IDX index file
 
-If you suspect and issue with the index file, recreate it. To to this:
+If you suspect and issue with the index file, recreate it. To do this:
 
 1. Delete the existing IDX file, it will have the same name as the .RUN trace file and be located in the same directory that the .RUN file is.
 2. Open the trace .RUN file in WinDbg Preview.
