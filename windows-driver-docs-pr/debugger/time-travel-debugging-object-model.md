@@ -23,7 +23,7 @@ This section describes how to use the data model to query time travel traces. Th
 - When where threads created/terminated in the trace?
 - What thread spent the most time running?
 
-- ??? TBD - need more cool examples here...
+- ??? TBD - need more examples here...
 
 
 ## dx TTD namespaces and commands
