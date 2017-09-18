@@ -77,21 +77,17 @@ The .IDX file does not need to be copied as it can be re-created using the !tt.i
 
 ## Error - Log Files
 
-Recording errors and other recording output is written to the debugger log file. 
+Recording errors and other recording output is written to the debugger log file. To view the log file, select **View** > **Logs**. 
 
-TBD ??? - Need to show log file output.
+This example shows the error when attempting to use launch executable to start a program called Foo.exe that is not installed in the C:\Windows directory.
 
 ```
-Initializing Time Travel Tracing for Launch of "C:\Windows\Notepad.exe test.txt"
-Time: 08/03/2017 17:23:33
-OS:10.0.15063 EDITION:x64
-Group tracing GUID: f8295bed-5a11-401c-8650-5f0c74390c0e
-
-Running "C:\Windows\Notepad.exe test.txt"
-Error: Failed starting the guest process "C:\Windows\Notepad.exe test.txt" : error:(2)The system cannot find the file specified.
-
-   (onecore\sdktools\debuggers\ttd\dev\idna\tracer\client.cpp:StartGuestProcess:2426)
-Trace dumped to C:\Users\User1\Documents\Notepad.exe test01.run
+2017-09-18:16:11:23:421 : Error : DbgXUI.dll : 
+WindowsDebugger.WindowsDebuggerException: FAILURE HR=0x80070002: Failed to CreateProcessAndAttachWide: C:\Windows\Foo.exe
+   at WindowsDebugger.DbgEng.HRESULTExtensions.ThrowOnFailed(HRESULT hr, String operation)
+   at DbgX.Requests.Initialization.CreateProcessRequest.DoInitializeEngine(IEngineRequestServices ers, EngineInterfaces engine)
+   at DbgX.Requests.Initialization.InitializationRequest.DoExecute(IEngineRequestServices ers, EngineInterfaces engine)
+   at DbgX.Requests.EngineRequestWithTask`1.Execute(IEngineRequestServices ers, EngineInterfaces engine)
 ```
 
 
