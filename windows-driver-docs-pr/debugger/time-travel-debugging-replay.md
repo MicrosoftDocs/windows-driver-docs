@@ -109,19 +109,10 @@ Provide a time position in any of the following formats to travel to that point 
            
 - If {position} is a decimal number between 0 and 100, it travels to approximately that percent into the trace. For example:
 
-| Example  |  Description |
-|----------------|------------------------------------------|
-| !ttdext.tt 0   |Time travel to the beginning of the trace |
-| !ttdext.tt 50  |Time travel halfway through the trace |
-| !ttdext.tt 100 |Time travel to the end of the trace |
 
-
-```
- !ttdext.tt 0                   - Time travel to the beginning of the trace
- !ttdext.tt 50                  - Time travel to halfway through the trace
- !ttdext.tt 100                 - Time travel to the end of the trace
-```
- 
+     - !ttdext.tt 0                   - Time travel to the beginning of the trace
+     -  !ttdext.tt 50                  - Time travel to halfway through the trace
+     -  !ttdext.tt 100                 - Time travel to the end of the trace
 
 - If {position} is #:#, where # are a hexadecimal numbers, it travels to that position. If the number after : is omitted, it defaults to zero.
     - !ttdext.tt 1A0:                - Time travel to position 1A0:0
@@ -130,14 +121,13 @@ Provide a time position in any of the following formats to travel to that point 
 
 
    > [!NOTE]
-   >  Traces use a two part instruction position that references a specific position reference in the trace, for example 12:0. or 15:7
+   > Traces use a two part instruction position that references a specific position reference in the trace, for example 12:0. or 15:7. The two elements are defined as described here.
+   >
    > xx:yy
+   > 
    > xx- the first element is the sequencing number
+   >
    > yy - the second element is a step count, which corresponds roughly to the instruction count since the sequencing number.
-
-
-- If the : is omitted, then the second number must have precisely 16 hexadecimal digits, with zeros for left-padding.
-    - !ttdext.tt 1A0000000000000012F - Time travel to position 1A0:12F
 
 
 ## !ttdext.positions
@@ -156,7 +146,6 @@ Use !ttdext.*positions* to display all the active threads, including their posit
  Thread ID=0x3200 - Position: 7D56:0
 ```
 In this example eight threads each ran until they finished, one after another.  
-
 
 Use the user mode [~ (Thread Status)](---thread-status-.md) command to confirm that we positioned at the first thread, 3604.
 
