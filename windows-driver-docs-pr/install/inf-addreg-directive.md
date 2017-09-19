@@ -83,8 +83,8 @@ Relative root, in which keys that are specified by using this abbreviation are r
 | INF [***DDInstall*.HW**](inf-ddinstall-hw-section.md) section | The device's [*hardware key*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-key) |
 | INF *\[service-install-section\]* section                      | The **Services** key                                                                  |
 | INF *\[event-log-install\]* section                            | The **EventLog** key                                                                  |
+| INF *\[add-interface-section\]* section                        | The device interface's registry key                                                    |
 
- 
 
 **Note**  **HKR** cannot be used in an *add-registry-section* referenced from an [**INF DefaultInstall section**](inf-defaultinstall-section.md).
 

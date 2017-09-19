@@ -28,6 +28,7 @@ This section describes common characteristics of framework objects and how a Win
 -   [Using General Framework Objects](using-general-framework-objects.md)
 -   [Framework Object Collections](framework-object-collections.md)
 -   [Summary of Framework Objects](summary-of-framework-objects.md)
+-   [WDF General Object Macros](wdf-general-object-macros.md)
 -   [Framework Object Creation Errors](framework-object-creation-errors.md)
 
  
