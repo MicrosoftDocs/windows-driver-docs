@@ -25,7 +25,7 @@ TTD can have advantages over crash dump files, which often are missing the code 
 
 In the event you can't figure out the issue yourself, you can share the trace with a co-worker and they can look at exactly what you're looking at. This can allow for easier collaboration then live debugging, as the recorded instructions are the same, where the address locations and code execution will be different on different PCs. You can also share a specific point in time to help your collaborator figure out where to start. 
 
-TTD is lightweight and works to add minimal overhead as it captures code execution in trace files. The performance impact is similar to attaching a non-invasive debugger connection. 
+TTD is lightweight and works to add as little as possible overhead as it captures code execution in trace files.  
 
 TTD includes a set of debugger data model objects to allow you to query the trace using LINQ. For example, you can use TTD objects to locate when a specific code module was loaded or locate all of the exceptions. 
 
@@ -37,9 +37,9 @@ This table summarizes the pros and cons of the different debugging solutions ava
 
 Approach​ | Pros | Cons​
 |---------|------|-------|
-| WinDbg - Live debugging | Interactive experience, sees flow of execution, can change target state, familiar tool in familiar setting.​ | Disrupts the user experience, may require effort to reproduce the issue repeatedly, may impact security, not always an option.​ With repro difficult to work back from point of failure to determine cause.
+| WinDbg - Live debugging | Interactive experience, sees flow of execution, can change target state, familiar tool in familiar setting.​ | Disrupts the user experience, may require effort to reproduce the issue repeatedly, may impact security, not always an option on production systems.​ With repro difficult to work back from point of failure to determine cause.
 | Dumps​ | No coding upfront, low-intrusiveness, based on triggers.  | Successive snapshot or live dumps provide a simple “over time” view. Overhead is essentially zero if not used.​  | Often no pre-defect state, limited data, many developers struggle to root cause after the fact.​  | 
-| Telemetry & logs​  |Lightweight, often tied to business scenarios / user actions, machine learning friendly.​  | Issues arise in unexpected code paths (with no telemetry). Lack of data depth, statically compiled into the code. Telemetry is often focused on usage patterns not code patterns.​
+| Telemetry & logs​  |Lightweight, often tied to business scenarios / user actions, machine learning friendly.​  | Issues arise in unexpected code paths (with no telemetry). Lack of data depth, statically compiled into the code. 
 | Time Travel Debugging (TTD)​ | Great at complex bugs, no coding upfront, offline repeatable debugging, analysis friendly, captures everything. | Large overhead at record time. May collect more data that is needed. Data files can become large.​ |
 
 
@@ -58,7 +58,7 @@ Trace file can get big and the user of TTD needs to make sure that there is adeq
 
 A .RUN file stores the code execution as the trace is running. 
 
-Once the tracing is stopped, an index (.IDX) file is created to allow for faster access to the trace information.
+Once the tracing is stopped, an index (.IDX) file is created to allow for faster access to the trace information. Index files are also created automatically when WinDbg Preview opens the .RUN trace file.
 
 IDX files can also be large, typically twice as large as the .RUN file.  
 
@@ -71,7 +71,7 @@ Successfully created the index in 10ms.
 
 Recording errors and other recording output is written to a WinDbg log file.
 
-All of the output files are stored in the users document folder by default. For example, for User1 the TTD files would be stored here:
+All of the output files are stored in a location configured by the user. The default location is in the users document folder. For example, for User1 the TTD files would be stored here:
 
 ```
 C:\Users\User1\Documents
@@ -106,7 +106,7 @@ You may encounter incompatibilities because of how TTD hooks into process to rec
 
 Other utilities that attempt to block memory access, can also be problematic, for example, the Microsoft Enhanced Mitigation Experience Toolkit. For more information about EMET, see [The Enhanced Mitigation Experience Toolkit](https://support.microsoft.com/en-us/help/2458544/the-enhanced-mitigation-experience-toolkit).
 
-Another example of an environment that conflicts with TTD, would be the electron application framework. In this case the trace may record, but a deadlock of WinDbg is also possible.
+Another example of an environment that conflicts with TTD, would be the electron application framework. In this case the trace may record, but a deadlock of WinDbg or the process being recorded is also possible.
 
 ### User mode only
 
