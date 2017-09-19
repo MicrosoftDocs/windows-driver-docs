@@ -106,7 +106,7 @@ You may encounter incompatibilities because of how TTD hooks into process to rec
 
 Other utilities that attempt to block memory access, can also be problematic, for example, the Microsoft Enhanced Mitigation Experience Toolkit. For more information about EMET, see [The Enhanced Mitigation Experience Toolkit](https://support.microsoft.com/en-us/help/2458544/the-enhanced-mitigation-experience-toolkit).
 
-Another example of an environment that conflicts with TTD, would be the electron application framework. In this case the trace may record, but a deadlock of WinDbg or the process being recorded is also possible.
+Another example of an environment that conflicts with TTD, would be the electron application framework. In this case the trace may record, but a deadlock or crash of the process being recorded is also possible.
 
 ### User mode only
 
