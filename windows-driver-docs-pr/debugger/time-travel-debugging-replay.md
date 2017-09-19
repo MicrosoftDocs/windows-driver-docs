@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Replay a trace
 description: This section describes how to replay time travel traces.
 ms.author: windowsdriverdev
-ms.date: 09/18/2017
+ms.date: 09/19/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -99,44 +99,54 @@ ntdll!ZwTestAlert+0x14:
 You can also use the t- command to navigate backwards in time.
 
 
-## !tt navigation commands
+## !ttdext.tt navigation commands
 
-Use the !tt command to navigate forward or backwards in time, by traveling to a given position in the trace. 
+Use the !ttdext.tt command to navigate forward or backwards in time, by skiping to a given position in the trace. 
 
-!tt {position}
+!ttdext.tt {position}
 
 Provide a time position in any of the following formats to travel to that point in time.
            
 - If {position} is a decimal number between 0 and 100, it travels to approximately that percent into the trace. For example:
-    - !tt 0                   - Time travel to the beginning of the trace
-    - !tt 50                  - Time travel to halfway through the trace
-    - !tt 100                 - Time travel to the end of the trace
+
+| Example  |  Description |
+|----------------|------------------------------------------|
+| !ttdext.tt 0   |Time travel to the beginning of the trace |
+| !ttdext.tt 50  |Time travel halfway through the trace |
+| !ttdext.tt 100 |Time travel to the end of the trace |
+
+
+```
+ !ttdext.tt 0                   - Time travel to the beginning of the trace
+ !ttdext.tt 50                  - Time travel to halfway through the trace
+ !ttdext.tt 100                 - Time travel to the end of the trace
+```
  
 
 - If {position} is #:#, where # are a hexadecimal numbers, it travels to that position. If the number after : is omitted, it defaults to zero.
-    - !tt 1A0:                - Time travel to position 1A0:0
-    - !tt 1A0:0               - Time travel to position 1A0:0
-    - !tt 1A0:12F             - Time travel to position 1A0:12F
+    - !ttdext.tt 1A0:                - Time travel to position 1A0:0
+    - !ttdext.tt 1A0:0               - Time travel to position 1A0:0
+    - !ttdext.tt 1A0:12F             - Time travel to position 1A0:12F
 
 
    > [!NOTE]
    >  Traces use a two part instruction position that references a specific position reference in the trace, for example 12:0. or 15:7
    > xx:yy
    > xx- the first element is the sequencing number
-   > yy - the second element is the instruction count since the sequencing number
+   > yy - the second element is a step count, which corresponds roughly to the instruction count since the sequencing number.
 
 
 - If the : is omitted, then the second number must have precisely 16 hexadecimal digits, with zeros for left-padding.
-    - !tt 1A0000000000000012F - Time travel to position 1A0:12F
+    - !ttdext.tt 1A0000000000000012F - Time travel to position 1A0:12F
 
 
-## !tt.positions
+## !ttdext.positions
 
-Use !tt.*positions* to display all the active threads, including their position in the trace.
+Use !ttdext.*positions* to display all the active threads, including their position in the trace.
 
 ```
-1:0:000> !tt.positions
- Thread ID=0x3604 - Position: 20:0
+1:0:000> !ttdext.positions
+>Thread ID=0x3604 - Position: 20:0
  Thread ID=0x0A94 - Position: 612:0
  Thread ID=0x1D78 - Position: A89:0
  Thread ID=0x38F8 - Position: 1695:0
@@ -145,7 +155,7 @@ Use !tt.*positions* to display all the active threads, including their position 
  Thread ID=0x35FC - Position: 743D:0
  Thread ID=0x3200 - Position: 7D56:0
 ```
-In this example eight threads each ran until they finished, one after another.  (??? TBD - Confirm - I don't see any thread listed twice, so I assume this is the case, but I'm new to TTD and don't know all I would like to about thread scheduling and execution...)
+In this example eight threads each ran until they finished, one after another.  
 
 
 Use the user mode [~ (Thread Status)](---thread-status-.md) command to confirm that we positioned at the first thread, 3604.
@@ -188,36 +198,35 @@ Use the [~ (Thread Status)](---thread-status-.md) command to confirm that we are
    7  Id: 3f4.3200 Suspend: 4096 Teb: 00000061`79808000 Unfrozen
 ```
 
-## !tt Extension utility commands
+## !ttdext Extension utility commands
 
-Use the following !tt extension commands to work with TTD traces.
+Use the following !ttdext extension commands to work with TTD traces.
 
 
-### !tt.index
+### !ttdext.index
 
-Use !tt.*index* to run an indexing pass over the current trace. 
+Use !ttdext.*index* to run an indexing pass over the current trace. 
 
 ```
-0:000> !index
+0:000> ttdext!index
 Indexed 10/14 keyframes
 Indexed 14/14 keyframes
 Successfully created the index in 535ms.
-
 ```
 
-If the current trace is already indexed, the !tt.index command does nothing.
+If the current trace is already indexed, the !ttdext.index command does nothing.
 
 ```
-0:000> !tt.index
+0:000> !ttdext.index
 Successfully created the index in 0ms.
 ```
 
-### !tt.index status
+### !ttdext.index status
 
 Use !tt.index status to report the status of the trace index.
 
 ```
-0:000> !tt.index status
+0:000> !ttdext.index status
 Index file loaded.
 ```
 
