@@ -120,9 +120,10 @@ Provide a time position in any of the following formats to travel to that point 
 
 
    > [!NOTE]
-   >  Traces use a two part instruction position that references a specific position reference in the trace, for example 12:0. 
-   >  The first element is the TBD
-   >  The second elemnt is the instruction pointer TBD 
+   >  Traces use a two part instruction position that references a specific position reference in the trace, for example 12:0. or 15:7
+   > xx:yy
+   > xx- the first element is the sequencing number
+   > yy - the second element is the instruction count since the sequencing number
 
 
 - If the : is omitted, then the second number must have precisely 16 hexadecimal digits, with zeros for left-padding.
@@ -144,7 +145,7 @@ Use !tt.*positions* to display all the active threads, including their position 
  Thread ID=0x35FC - Position: 743D:0
  Thread ID=0x3200 - Position: 7D56:0
 ```
-In this example eight threads each ran until they finished, one after another.  (??? TBD - Confirm - I don't see any thread listed twice, so I assume this is the case...)
+In this example eight threads each ran until they finished, one after another.  (??? TBD - Confirm - I don't see any thread listed twice, so I assume this is the case, but I'm new to TTD and don't know all I would like to about thread scheduling and execution...)
 
 
 Use the user mode [~ (Thread Status)](---thread-status-.md) command to confirm that we positioned at the first thread, 3604.
