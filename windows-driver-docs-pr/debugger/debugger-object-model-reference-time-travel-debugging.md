@@ -23,7 +23,7 @@ For information on working with the TTD objects see, [Time Travel Debugging - Ob
 
 ## TTD Object
 
-The TTD object contains time travel debugging properties available for each process in a trace file. The TTD object is associated with the current process (curprocess) debugger object. The following TTD objects are documented in this topic. 
+The TTD object contains time travel debugging properties available for each process in a trace file. The TTD object is associated with the current process (curprocess) debugger object. The following TTD childern objects are documented in this topic. 
 
 - *Lifetime*
 - *Threads*
@@ -106,7 +106,6 @@ The TTD Threads Object contains an array of the threads in the TTD trace. Each t
 **Id** - The thread's TID assigned by the OS.
 
 **LifeTime** - The TTD Lifetime object contains information on the contents of the time travel trace, see above for information on the LifeTime object. In the Lifetime object, the MinPosition to MaxPosition range, is the portion of the timeline that contains instructions executed by the thread.
-
  
 **ActiveTime** - The position range where execution of this thread is recorded. The active lifetime of a thread is the closest approximation to when the thread was present during recording of the trace.
 
@@ -120,7 +119,7 @@ The TTD Threads Object contains an array of the threads in the TTD trace. Each t
  
 ### TTD Threads Object Example
 
-Use the dx command to display all of the children objects to the first TTD threads object in the array.
+Use the dx command to display all of the children objects of the first TTD threads object in the array.
 
 ```
 0:000> dx -r3 -h @$curprocess.TTD.Threads[0]
@@ -143,7 +142,8 @@ Use the dx command to display all of the children objects to the first TTD threa
             Steps            : 0x0 [Counts the steps (instructions) beyond the last thread sequencing event.]
 ```
 
-The [Time Travel] links provide a link to a SeekTo() a specific event. ??? TBD - My sample seems to Seekto() vs. 2:0 - bug?
+The [Time Travel] links provide a link to SeekTo() a specific event. 
+
 
 ```
 0:0:000> dx -r1 @$curprocess.TTD .@"Threads"[2].@"ActiveTime"
@@ -168,11 +168,11 @@ The TTD Events Object contains an array of events in the TTD trace.
 
 ### TTD Events Type Methods
 
-**Contains(OtherString)** -Method which returns whether the string contains a given sub string.
+**Contains(OtherString)** - Method which returns whether the string contains a given sub string.
 
-**EndsWith(OtherString)** -Method which returns whether the string ends with a given string.
+**EndsWith(OtherString)** - Method which returns whether the string ends with a given string.
 
-**IndexOf(OtherString)** -Method which returns the index of the first occurrence of a substring in the given string.  If no such occurrence exists, -1 is returned.
+**IndexOf(OtherString)** - Method which returns the index of the first occurrence of a substring in the given string.  If no such occurrence exists, -1 is returned.
 
 **LastIndexOf(OtherString)** -Method which returns the index of the last occurrence of a substring in the given string.  If no such occurrence exists, -1 is returned.
 
@@ -240,6 +240,7 @@ The Module object contains:
 
  **ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object children support this method.
 
+
 ### TTD Events Module Name Methods
 
 **Contains(OtherString)** -Method which returns whether the string contains a given sub string.
@@ -271,7 +272,7 @@ The Module object contains:
 
 ### TTD Events Object Examples
 
-Use the dx command to display all of the children objects of the TTD Events object.
+Use the dx command to display all of the children objects for the TTD Events object.
 
 ```
 0:000> dx -r2 @$curprocess.TTD .@"Events"[0]
