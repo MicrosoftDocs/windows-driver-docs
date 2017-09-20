@@ -2512,7 +2512,7 @@
 #### [Interface Descriptor for Data Class Interface](interface-descriptor-for-data-class-interface.md)
 #### [Data In Endpoint Descriptor](data-in-endpoint-descriptor.md)
 #### [Data Out Endpoint Descriptor](data-out-endpoint-descriptor.md)
-# [SDK Topics for Network Drivers](sdk-topics-for-network-drivers.md)
+# [Kernel Mode SDK Topics for Network Drivers](kernel-mode-sdk-topics-for-network-drivers.md)
 ## [Mstcpip.h](mstcpip-h.md)
 ### [SIO_LOOPBACK_FAST_PATH control code](sio-loopback-fast-path.md)
 ### [SIO_QUERY_WFP_CONNECTION_REDIRECT_CONTEXT control code](sio-query-wfp-connection-redirect-context.md)

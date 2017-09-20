@@ -884,6 +884,11 @@
       "source_path": "windows-driver-docs-pr/develop/installing-the-enterprise-wdk.md",
       "redirect_URL": "/windows-hardware/drivers/develop/using-the-enterprise-wdk",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/sdk-topics-for-network-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/network/kernel-mode-sdk-topics-for-network-drivers",
+      "redirect_document_id": true
     }
   ]
 }

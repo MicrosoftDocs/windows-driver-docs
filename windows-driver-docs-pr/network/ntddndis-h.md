@@ -1,7 +1,7 @@
 ---
 title: Ntddndis.h
 author: windows-driver-content
-description: This section contains network driver topics for the Ntddndis.h header.
+description: This section contains kernel mode network driver topics for the Ntddndis.h header.
 ms.assetid: EC2CD8C5-A2E9-4CA3-9229-BF0A955E6F53
 keywords:
 - Ntddndis.h network drivers
@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Ntddndis.h
 
 
-This section contains network driver topics for the Ntddndis.h header. These topics may also be shared with the user mode applications that interact with network drivers.
+This section contains kernel mode network driver topics for the Ntddndis.h header. This header is included in the Windows SDK as it is also shared with user mode networking applications.
 
 The Ntddndis.h header contains definitions for constants and types for interfacing with network drivers.
 
