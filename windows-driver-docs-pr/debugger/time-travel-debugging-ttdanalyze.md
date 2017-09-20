@@ -18,16 +18,7 @@ ms.technology: windows-devices
 This section describes how to use the Data and utility objects to look at heap data in time travel traces.
 
 
-TBD TBD TBD 
-
-**This topic is not complete**
-
-TBD TBD TBD 
-
-
-The Data and Utility objects are childern of the TTD object. Use the dx command as hown to display information about the  
-
-??? TBD - I can paste in the updated strings now...
+The Data and Utility objects are childern of the TTD object. Use the dx command as shown to display information about the TTD childern object.
 
 ```
 0:000> dx @$cursession.TTD
@@ -36,6 +27,10 @@ The Data and Utility objects are childern of the TTD object. Use the dx command 
     Utility          : Use 'dx -v' to see the utility methods contained in TTD.Utility
 
 ```
+
+Use the dx command -v and -d options to display addtional information about the objects. For more information about the dx command, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md).
+
+??? TBD - Ken I can paste in the updated help strings now if you can email the rc (?) file...
 
 
 ## TTD Data
@@ -49,8 +44,6 @@ The TTD Data object contains these two childern objects.
 
 The Data namespace contains “normalized data” from the trace. There is one data source offered, heap allocations, which can be accessed using .Heap().
 
-??? TBD need new version to test - or maybe use WinDbg Classic
-??? TBD try -g form
 
 ```
 0:000> dx -r2 @$cursession.TTD.Data.Heap()
@@ -83,21 +76,43 @@ The Data namespace contains “normalized data” from the trace. There is one d
 …
 ```
 
+Use the -g option to display the results in a grid
+
+??? TBD Need to have a better example with better TimeEnd 
+
+```
+0:000> dx -r2 -g @$cursession.TTD.Data.Heap()
+==========================================================================================================================================
+=                          = Action   = Heap   = Address         = Size          = Flags  = (+) TimeStart = (+) TimeEnd         = Result =
+==========================================================================================================================================
+= [0x0] : [object Object]  - Alloc    - 0x0    - 0x0             - 0x77722dc0    - 0x0    - B2:3BF        - Invalid Position    -        =
+= [0x1] : [object Object]  - Alloc    - 0x0    - 0x0             - 0x77722dc0    - 0x0    - 1C:78         - Invalid Position    -        =
+= [0x2] : [object Object]  - Alloc    - 0x0    - 0x0             - 0x77722dc0    - 0x0    - B7:77         - Invalid Position    -        =
+= [0x3] : [object Object]  - Alloc    - 0x0    - 0x0             - 0x77722dc0    - 0x0    - CC:77         - Invalid Position    -        =
+= [0x4] : [object Object]  - Alloc    - 0x0    - 0x0             - 0x77722dc0    - 0x0    - D2:214        - Invalid Position    -        =
+= [0x5] : [object Object]  - Alloc    - 0x0    - 0x0             - 0x77722dc0    - 0x0    - D3:1FE        - Invalid Position    -        =
+= [0x6] : [object Object]  - Alloc    - 0x0    - 0x0             - 0x77722dc0    - 0x0    - DF:1CF        - Invalid Position    -        =
+```
+
 
 Note that clicking on TimeStart or TimeEnd will navigate you to that point in the trace.  
 
-It is called “normalized data” because theere is a chosen set of APIs that represent heap operations, extracted the data from the appropriate parameters that is presented in a uniform manner.
+It is called “normalized data” because there is a chosen set of APIs that represent heap operations, extracted the data from the appropriate parameters that is presented in a uniform manner.
 
-There is support searching for arbitrary function calls using the .Calls() method as shown below.
 
 ## TTD Utility
 
 **capturedSession** - Captured session data. Supports the internal implementation of the data object.    
-**GetHeapAddress** -   Filters HeapAPICalls() to just the entries that impact the specified address. The address can point anywhere inside a memory block, it is not required to point to  the start of a block.
 
-### Remarks
+**GetHeapAddress** -  Filters HeapAPICalls() to just the entries that impact the specified address. The address can point anywhere inside a memory block, it is not required to point to  the start of a block.  
+```dx @$cursession.TTDUtils.GetHeapAddress(address) ```
 
-Use this dx command and the GetHeapAddress to locate head entries that impact the specified address.
+### GetHeapAddress example use 
+
+Use this dx command with the GetHeapAddress method to locate heap entries that impact the specified address.
+
+??? TBD - need better example then 0x0
+??? TBD - is 0x0 non heap - stack memory?
 
 ```
 0:000> dx -r4 -g @$cursession.TTD.Utility.GetHeapAddress(0x0)
@@ -115,15 +130,72 @@ Use this dx command and the GetHeapAddress to locate head entries that impact th
 = [0x8] : [object Object]  - Alloc    - 0x0    - 0x0     - 0x77722dc0    - 0x0    - 22:B2         - Invalid Position    =
 ```
 
- dx @$cursession.TTDUtils.GetHeapAddress(address)
+
 
 ## TTD Methods
 
-**Calls** - Returns call information from the trace for the specified set of symbols: TTD.Calls("module!symbol1", "module!symbol2", ...)]
-    Data             
+**Calls** - Returns call information from the trace for the specified set of methods: TTD.Calls("module!method1", "module!method2", ...)] 
+Calls returns an indexable list of heap API operations that change the address space in some way. For example alloc, realloc, free and a few others. It does not return heap API operations that are just queries (e.g. getting size of allocated block.)
 
 
-### Example use: Debugging exception
+### Example use: Viewing Calls
+
+Use the Calls method to see the areas of the trace that contain a specificed set of method calls. 
+
+
+```
+0:000> dx -r2 @$cursession.TTD.Calls("user32!SendMessageW")
+@$cursession.TTD.Calls("user32!SendMessageW")
+    [0x0]
+        Function         : USER32!SendMessageW
+        FunctionAddress  : 0x7ff98afc08b0
+        ReturnValue      : 2
+        Parameter[1]       : 0x307b0
+        Parameter[2]       : 0x429
+        Parameter[3]       : 0x2
+        Parameter[4]       : 0
+        TimeStart          : 14AE3:9A
+        TimeEnd            : 14B4F:95
+
+```
+
+??? TBD - need updated output to show param[] array
+??? TBD Parameter1..4 are being replaced with a Parameters[] array, indexed by 0 .. n-1 where n is number of parameters
+
+
+All of the LINQ features of dx can be used to filter the query, for example searching for just message 0x429.
+
+```
+0:000> dx -r2 @$cursession.TTD.Calls("user32!SendMessageW").Where(c => c.Parameter2 == 0x429)
+@$cursession.TTD.Calls("user32!SendMessageW").Where(c => c.Parameter2 == 0x429)
+    [0x0]
+        Function         : USER32!SendMessageW
+        FunctionAddress  : 0x7ff98afc08b0
+        ReturnValue      : 2
+        Parameter1       : 0x307b0
+        Parameter2       : 0x429
+        Parameter3       : 0x2
+        Parameter4       : 0
+        TimeStart        : 14AE3:9A
+        TimeEnd          : 14B4F:95
+    [0x1]
+        Function         : USER32!SendMessageW
+        FunctionAddress  : 0x7ff98afc08b0
+        ReturnValue      : 0
+        Parameter1       : 0x307b0
+        Parameter2       : 0x429
+        Parameter3       : 0x2
+        Parameter4       : 2
+        TimeStart        : 149D0:57
+        TimeEnd          : 14AE3:95
+
+```
+
+You can pass multiple functions to .Calls(“function1”, “function2”, “function3” …) and those functions can contain wildcards.  
+
+
+
+### Example scenario use - Debugging exception
 
  Start by ensuring trace is indexed:
 
@@ -181,7 +253,7 @@ Use !events to navigate to the spot where the critical error is raised (which gi
 Ask TTD to locate all of the operations that impacted the address:
 
  ```
- 0:000> dx -g @$cursession.TTDUtils.GetHeapAddress(0x00000235`7942f860)
+ 0:000> dx -g @$cursession.TTD.GetHeapAddress(0x00000235`7942f860)
  =====================================================================================================================
  =          = Action   = Heap             = Address          = Size    = Flags  = (+) TimeRange      = Result        =
  =====================================================================================================================
@@ -193,56 +265,7 @@ Ask TTD to locate all of the operations that impacted the address:
 
  From this it is can be observed that the last two entries show the same address is freed twice. So the problem is a double free. The time positions for both the first and second free can be navigated to in order to understand the root cause.
 
-### Example use: Viewing Calls
 
-```
-0:000> dx -r2 @$cursession.TTD.Calls("user32!SendMessageW")
-@$cursession.TTD.Calls("user32!SendMessageW")
-    [0x0]
-        Function         : USER32!SendMessageW
-        FunctionAddress  : 0x7ff98afc08b0
-        ReturnValue      : 2
-        Parameter1       : 0x307b0
-        Parameter2       : 0x429
-        Parameter3       : 0x2
-        Parameter4       : 0
-        TimeStart        : 14AE3:9A
-        TimeEnd          : 14B4F:95
-
-```
-
-Note: Parameter1..4 are being replaced with a Parameters[] array, indexed by 0 .. n-1 where n is number of parameters
-
-
-All of the LINQ features of dx can be used to filter the query, for example searching for just message 0x429.
-
-```
-0:000> dx -r2 @$cursession.TTD.Calls("user32!SendMessageW").Where(c => c.Parameter2 == 0x429)
-@$cursession.TTD.Calls("user32!SendMessageW").Where(c => c.Parameter2 == 0x429)
-    [0x0]
-        Function         : USER32!SendMessageW
-        FunctionAddress  : 0x7ff98afc08b0
-        ReturnValue      : 2
-        Parameter1       : 0x307b0
-        Parameter2       : 0x429
-        Parameter3       : 0x2
-        Parameter4       : 0
-        TimeStart        : 14AE3:9A
-        TimeEnd          : 14B4F:95
-    [0x1]
-        Function         : USER32!SendMessageW
-        FunctionAddress  : 0x7ff98afc08b0
-        ReturnValue      : 0
-        Parameter1       : 0x307b0
-        Parameter2       : 0x429
-        Parameter3       : 0x2
-        Parameter4       : 2
-        TimeStart        : 149D0:57
-        TimeEnd          : 14AE3:95
-
-```
-
-You can pass multiple functions to .Calls(“function1”, “function2”, “function3” …) and those functions can contain wildcards.  
 
 ## JavaScript Support
 
@@ -261,12 +284,14 @@ for (var api of localApis)
 ```
 
 
+## Calls notes --- to be removed...
+
  This extension projects raw call data from ttdanalyze (provided by @$cursession.TTD.Calls())
  into friendlier data that is specific to Heap APIs and hides Windows implementation details.
 
  The following extensions to the datamodel are provided:
 
- dx @$cursession.TTDUtils.HeapAPICalls()
+ dx @$cursession.TTD.Calls()
 
  --------------------------------
  Returns an indexable list of heap API operations that change the address space in some way:
