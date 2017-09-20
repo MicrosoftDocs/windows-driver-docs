@@ -13,23 +13,21 @@ ms.technology: windows-devices
 >
 
 
-# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - TTDAnalyze 
+# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Data and Utility objects
 
 This section describes how to use the Data and utility objects to look at heap data in time travel traces.
 
-TBD TBD TBD 
-TBD TBD TBD 
-TBD TBD TBD 
-
-**This topic contains random notes and is not ready for review**
 
 TBD TBD TBD 
+
+**This topic is not complete**
+
 TBD TBD TBD 
-TBD TBD TBD 
+
 
 The Data and Utility objects are childern of the TTD object. Use the dx command as hown to display information about the  
 
-??? TBD - Ken to we want to paste in the updated strings now? I can update next week, when we ship that code.
+??? TBD - I can paste in the updated strings now...
 
 ```
 0:000> dx @$cursession.TTD
@@ -38,6 +36,7 @@ The Data and Utility objects are childern of the TTD object. Use the dx command 
     Utility          : Use 'dx -v' to see the utility methods contained in TTD.Utility
 
 ```
+
 
 ## TTD Data
 
@@ -51,6 +50,7 @@ The TTD Data object contains these two childern objects.
 The Data namespace contains “normalized data” from the trace. There is one data source offered, heap allocations, which can be accessed using .Heap().
 
 ??? TBD need new version to test - or maybe use WinDbg Classic
+??? TBD try -g form
 
 ```
 0:000> dx -r2 @$cursession.TTD.Data.Heap()
@@ -92,46 +92,50 @@ There is support searching for arbitrary function calls using the .Calls() metho
 
 ## TTD Utility
 
-   **capturedSession** - Captured session data. Supports the internal implementation of the data object.    
-   **GetHeapAddress** -   Filters HeapAPICalls() to just the entries that impact the specified address. The address can point anywhere inside a memory block, it is not required to point to  the start of a block.
+**capturedSession** - Captured session data. Supports the internal implementation of the data object.    
+**GetHeapAddress** -   Filters HeapAPICalls() to just the entries that impact the specified address. The address can point anywhere inside a memory block, it is not required to point to  the start of a block.
 
 ### Remarks
 
-Use this dx command to locate head entries that impact the specified address.
+Use this dx command and the GetHeapAddress to locate head entries that impact the specified address.
 
 ```
- dx -g @$cursession.TTD.Utility.GetHeapAddress(123)
+0:000> dx -r4 -g @$cursession.TTD.Utility.GetHeapAddress(0x0)
+=========================================================================================================================
+=                          = Action   = Heap   = Address = Size          = Flags  = (+) TimeStart = (+) TimeEnd         =
+=========================================================================================================================
+= [0x0] : [object Object]  - Alloc    - 0x0    - 0x0     - 0x77722dc0    - 0x0    - B2:3BF        - Invalid Position    =
+= [0x1] : [object Object]  - Alloc    - 0x0    - 0x0     - 0x77722dc0    - 0x0    - 1C:78         - Invalid Position    =
+= [0x2] : [object Object]  - Alloc    - 0x0    - 0x0     - 0x77722dc0    - 0x0    - B7:77         - Invalid Position    =
+= [0x3] : [object Object]  - Alloc    - 0x0    - 0x0     - 0x77722dc0    - 0x0    - CC:77         - Invalid Position    =
+= [0x4] : [object Object]  - Alloc    - 0x0    - 0x0     - 0x77722dc0    - 0x0    - D2:214        - Invalid Position    =
+= [0x5] : [object Object]  - Alloc    - 0x0    - 0x0     - 0x77722dc0    - 0x0    - D3:1FE        - Invalid Position    =
+= [0x6] : [object Object]  - Alloc    - 0x0    - 0x0     - 0x77722dc0    - 0x0    - DF:1CF        - Invalid Position    =
+= [0x7] : [object Object]  - Alloc    - 0x0    - 0x0     - 0x77722dc0    - 0x0    - E0:1FE        - Invalid Position    =
+= [0x8] : [object Object]  - Alloc    - 0x0    - 0x0     - 0x77722dc0    - 0x0    - 22:B2         - Invalid Position    =
 ```
 
  dx @$cursession.TTDUtils.GetHeapAddress(address)
- --------------------------------------------
- Filters HeapAPICalls() to just the entries that impact the specified address. The address can point anywhere inside a memory block, it is not required to point to
- the start of a block.
 
- Example use: Debugging a critical heap error (but see HeapAnalyze() below for the easier way...)
+## TTD Methods
+
+**Calls** - Returns call information from the trace for the specified set of symbols: TTD.Calls("module!symbol1", "module!symbol2", ...)]
+    Data             
+
+
+### Example use: Debugging exception
 
  Start by ensuring trace is indexed:
 
+```
  0:000> !index
  Indexed 1/1 keyframes
  Successfully created the index in 29ms.
+```
 
- Use !events to navigate to the spot where the critical error is raised (which gives example queries to use in place of !events):
+Use !events to navigate to the spot where the critical error is raised (which gives example queries to use in place of !events):
 
- 0:000> !events
- This command is not supported. You can now use the Data Model to explore events in the trace.
- Use dx to query for what you are looking for. Examples:
- - Querying for exceptions:
-    dx @$curprocess.TTD.Events.Where(t => t.Type == "Exception").Select(e => e.Exception) 
- - Querying for the load event(s) of a particular module
-    dx @$curprocess.TTD.Events.Where(t => t.Type == "ModuleLoaded").Where(t => t.Module.Name.Contains("ntdll.dll")) 
- - Querying for the threads that get created
-    dx -g @$curprocess.TTD.Events.Where(t => t.Type == "ThreadCreated").Select(t => t.Thread) 
- 
- To learn more visit https:aka.ms/ttddatamodel 
-
- Click on the first query to get the list of exceptions and click on the exception to get details:
-
+```
  0:000> dx @$curprocess.TTD.Events.Where(t => t.Type == "Exception").Select(e => e.Exception)
  @$curprocess.TTD.Events.Where(t => t.Type == "Exception").Select(e => e.Exception)                
      [0x0]            : Exception of type Software at PC: 0X7FF83B92BF60
@@ -143,10 +147,12 @@ Use this dx command to locate head entries that impact the specified address.
      Code             : 0xc0000374
      Flags            : 0x1
      RecordAddress    : 0x0
+```
 
  0xc0000374 is the exception code for a heap error. Travel to that position and dump the start of the stack with parameters. The 4th parameter is the
  heap address that has a problem:
 
+```
  0:000> !tt  74:0
  Setting position: 74:0
  (2420.4100): Break instruction exception - code 80000003 (first/second chance not available)
@@ -170,9 +176,11 @@ Use this dx command to locate head entries that impact the specified address.
  			void * Param1 = 0x00000235`7942f860, 
  			void * Param2 = 0x00000000`00000000, 
  			void * Param3 = 0x00000000`00000000)+0x96 [minkernel\ntos\rtl\heaplog.c @ 714] 
+```
 
- Ask TTD to locate all of the operations that impacted the address:
+Ask TTD to locate all of the operations that impacted the address:
 
+ ```
  0:000> dx -g @$cursession.TTDUtils.GetHeapAddress(0x00000235`7942f860)
  =====================================================================================================================
  =          = Action   = Heap             = Address          = Size    = Flags  = (+) TimeRange      = Result        =
@@ -181,9 +189,11 @@ Use this dx command to locate head entries that impact the specified address.
  = [0x1]    - Free     - 0x23579330000    - 0x2357942f860    -         - 0x0    - [63:13, 65:2B]     - 0x1           =
  = [0x2]    - Free     - 0x23579330000    - 0x2357942f860    -         - 0x0    - [6D:13, 6D:B13]    - 0x6917108b    =
  =====================================================================================================================
+```
 
- From this it is easy to see that the problem is a double free. The time positions for both the first and second free can be navigated to in order to understand the root cause.
+ From this it is can be observed that the last two entries show the same address is freed twice. So the problem is a double free. The time positions for both the first and second free can be navigated to in order to understand the root cause.
 
+### Example use: Viewing Calls
 
 ```
 0:000> dx -r2 @$cursession.TTD.Calls("user32!SendMessageW")
