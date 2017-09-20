@@ -13,14 +13,14 @@ ms.technology: windows-devices
 # Overview of Windows support for ACPI 5.0
 
 
-The [ACPI 5.0 specification](http://www.acpi.info) enables support of SoC-based mobile platforms that run Windows 8 and later, but continues to support many useful features that were introduced in earlier versions Windows. This design guide directs implementers to the parts of ACPI 5.0 that specifically apply to SoC-based platforms, and describes best practices for implementing the SoC-specific features in ACPI to run Windows on these platforms.
+The [ACPI 5.0 specification](http://www.acpi.info) enables support of SoC-based mobile platforms that run Windows 8 and later, and enables and support of Windows Server 2016 and later, but continues to support many useful features that were introduced in earlier versions Windows. This design guide directs implementers to the parts of ACPI 5.0 that specifically apply to SoC-based platforms as well as for systems designed for Windows Server 2016, and describes best practices for implementing the SoC-specific features in ACPI to run Windows on these platforms.
 
 ## Scope
 
 
-The target audience for this design guide is firmware developers and system designers who require guidance for firmware support and implementation. Observation and adherence to these guidelines will help ensure proper functionality of Windows on SoC platforms.
+The target audience for this design guide is firmware developers and system designers who require guidance for firmware support and implementation. Observation and adherence to these guidelines will help ensure proper functionality of Windows on SoC platforms and Windows Server 2016 systems.
 
-This design guidance specifically targets hardware-reduced ACPI platforms that support low-power S0 idle. However, most of the guidance also applies to any platform that is compliant with ACPI 5.0 and that runs Windows 8 or later. In addition, this topic assumes either a clamshell form factor or a wireless, multi-touch-only mobile platform. It therefore limits itself to technologies that are expected to be widely used on such platforms. For technologies that are not covered in this document, the reader is referred to the ACPI specification itself for implementation information.
+This design guidance specifically targets hardware-reduced ACPI platforms that support low-power S0 idle. However, most of the guidance also applies to any platform that is compliant with ACPI 5.0 and that runs Windows 8 or later, or Windows Server 2012 or later. In addition, this topic assumes either a clamshell form factor or a wireless, multi-touch-only mobile platform. It therefore limits itself to technologies that are expected to be widely used on such platforms. For technologies that are not covered in this document, the reader is referred to the ACPI specification itself for implementation information.
 
 ## Firmware revision support
 

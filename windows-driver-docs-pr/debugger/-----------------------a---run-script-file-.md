@@ -16,7 +16,7 @@ api_type:
 - NA
 ---
 
-# $&lt;, $&gt;&lt;, $$&lt;, $$&gt;&lt;, $$&gt;a&lt; (Run Script File)
+# $<, $><, $$<, $$><, $$ >a< (Run Script File)
 
 
 The **$&lt;**, **$&gt;&lt;**, **$$&lt;**, **$$&gt;&lt;**, and **$$&gt;a&lt;** commands read the contents of the specified script file and use its contents as debugger command input.

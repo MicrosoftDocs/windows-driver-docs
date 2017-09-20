@@ -12,6 +12,8 @@ ms.technology: windows-devices
 
 # Initializing the geolocation object
 
+> [!IMPORTANT] 
+> This documentation and the geolocation driver sample for Windows 8.1 has been deprecated.
 
 The object source file, geolocation.cpp, contains an **Initialize** method that initializes the settable property keys and data-field keys for the simulated geolocation-sensor. This method is invoked by the sensor manager at startup.
 

@@ -1,6 +1,6 @@
 ---
 title: dp ( ntsdexts.dp)
-description: The dp extension in Ntsdexts.dll displays a CSR process.This extension command should not be confused with the dp (Display Memory) command, or with the kdext\ .dp extension command.
+description: The dp extension in Ntsdexts.dll displays a CSR process.
 ms.assetid: 9e489cfc-2105-4605-b94d-88eea7883420
 keywords: ["dp ( ntsdexts.dp) Windows Debugging"]
 ms.author: windowsdriverdev

@@ -1,6 +1,6 @@
 ---
 title: zombies
-description: The zombies extension displays all dead ( \ 0034;zombie \ 0034;) processes or threads.
+description: The zombies extension displays all dead ("zombie") processes or threads.
 ms.assetid: f7fbce79-456a-4643-ad31-8cb2e6449ecf
 keywords: ["zombies Windows Debugging"]
 ms.author: windowsdriverdev

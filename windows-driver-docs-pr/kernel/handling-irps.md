@@ -47,6 +47,8 @@ This section describes how kernel-mode drivers handle *I/O request packets* (IRP
 
 [Using IRP Priority Hints](using-irp-priority-hints.md)
 
+[IRP Major Function Codes](irp-major-function-codes.md)
+
 [IRP Processing Examples](irp-processing-examples.md)
 
  
