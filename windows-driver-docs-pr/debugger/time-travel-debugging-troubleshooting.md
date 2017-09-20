@@ -56,7 +56,10 @@ In most cases all of the failure messages indicate that the .RUN trace file is n
 
 ??? TBD 
 Would any (or all?) failures be related to a troublesome INDEX file? Do we want to share which messages indicate that?
-Do we want to talk about disabling CPU features as mentioned on the wiki? 32 vs. 64 bit?
+
+Do we want to talk about disabling CPU features as mentioned on the wiki? 
+
+32 vs. 64 bit?
 
 
 ### Re-recording the user mode app
