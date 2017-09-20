@@ -1,5 +1,5 @@
 ---
-title: Adding Software Components with an INF file
+title: Using a Component INF File
 description: Describes how to use software components to include user-mode software that is specific to a device.
 ms.author: windowsdriverdev
 ms.topic: article
@@ -16,24 +16,30 @@ If you want to include user-mode software for use with a device on Windows 10, y
 |[Hardware support apps (HSA)](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md) | Device add-on software packaged as a UWP app that is delivered and serviced from the Windows Store.  Recommended approach. |
 |Software components|Device add-on software is an MSI or EXE binary, a Win32 service, or software installed using AddReg and CopyFiles.  Referenced binary only runs on desktop editions (Home, Pro, and Enterprise).  The referenced binary will not run on Windows 10S.|
 
-A software component is a separate, standalone driver package that can install one or more software modules.  The installed software enhances the value of the device, but is not necessary for basic device functionality and has no associated function driver service.  
+A software component is a separate, standalone driver package that can install one or more software modules.  The installed software enhances the value of the device, but is not necessary for basic device functionality and does not require an associated function driver service.  
 
 This page provides guidelines for the use of software components.
 
 ## Getting started
 
-To create components, an [extension INF file](using-an-extension-inf-file.md) specifies the [INF AddComponent Directive](inf-addcomponent-directive.md) one or more times in the [INF DDInstall.Components](inf-ddinstall-components-section.md) section.  For each software component referenced in an extension INF file, the system creates a virtual software-enumerated child device.  More than one driver package can reference the same software component. 
-
+To create components, an [extension INF file](using-an-extension-inf-file.md) specifies the [INF AddComponent directive](inf-addcomponent-directive.md) one or more times in the [INF DDInstall.Components](inf-ddinstall-components-section.md) section.  For each software component referenced in an extension INF file, the system creates a virtual software-enumerated child device.  More than one driver package can reference the same software component. 
 
 Virtual device children can be updated independently just like any other device, as long as the parent device is started.  We recommend separating functionality into as many different groupings as makes sense from a servicing perspective, and then creating one software component for each grouping.
 
-You'll provide an INF file for each software component.  A component INF:
+You'll provide an INF file for each software component.
+
+If your software component INF specifies the [**AddSoftware** directive](inf-addsoftware-directive.md), the component INF:
 
 * Must be a [universal INF file](../install/using-a-universal-inf-file.md).
+* Must specify the **SoftwareComponent** setup class.
+
+You can specify the [**AddSoftware** directive](inf-addsoftware-directive.md) one or more times.
+
+Additionally, any INF (component or not) matching on a software component device:
+
 * Can specify Win32 user services using the [AddService directive](inf-addservice-directive.md).
-* Can install software modules by specifying the the [**AddSoftware** directive](inf-addsoftware-directive.md) one or more times.
 * Can install software using the [INF AddReg directive](inf-addreg-directive.md) and the [INF CopyFiles directive](inf-copyfiles-directive.md).
-* Cannot specify a function driver service.
+* Does not require a function driver service.
 * Can be uninstalled by the user independently from the parent device.
 
 You can find an [example of an component INF](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_component/osrfx2_DCHU_component/osrfx2_DCHU_component.inx) in the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).

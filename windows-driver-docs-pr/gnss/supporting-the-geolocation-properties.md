@@ -12,6 +12,8 @@ ms.technology: windows-devices
 
 # Supporting the geolocation properties
 
+> [!IMPORTANT] 
+> This documentation and the geolocation driver sample for Windows 8.1 has been deprecated.
 
 The source file, geolocation.cpp, contains three arrays of PROPERTYKEY structures that define the properties supported by the simulated sensor.
 

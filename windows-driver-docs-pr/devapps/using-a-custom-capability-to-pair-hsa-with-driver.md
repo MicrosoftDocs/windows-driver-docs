@@ -19,7 +19,7 @@ ms.technology: windows-devices
 
 This topic describes how to associate your [Universal Windows Platform (UWP)](https://msdn.microsoft.com/50a5605e-3a91-41db-800a-9180717c1e86) app with a driver or [RPC (Remote Procedure Call)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378651) endpoint using a custom capability.  When paired in this fashion, the UWP app is referred to as a Hardware Support App (HSA).
 
-The steps required by the owner of the driver or RPC endpoint are described in [Getting Started with Hardware Support Apps](creating-a-custom-capability-to-pair-driver-with-hsa.md).
+The steps required by the owner of the driver or RPC endpoint are described in [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](creating-a-custom-capability-to-pair-driver-with-hsa.md).
 
 Before you get started, install the latest version of Visual Studio and create an UWP app project.  For more info, see [Develop Windows Store apps using Visual Studio](https://developer.microsoft.com/en-us/windows/apps/develop).
 
@@ -28,6 +28,12 @@ Before you get started, install the latest version of Visual Studio and create a
 A developer account on the Windows Store is required. Hardware partners will need a Windows Store account that is different from their Hardware partner account. You'll need the publisher name when you author the app manifest and the device metadata in later steps. You can also reserve a name for your app once you've created a store profile.
 
 To create a Windows Store account, go to the [Windows Store apps sign up page](http://go.microsoft.com/fwlink/p/?LinkId=302197). For more info, see [Opening a developer account](https://docs.microsoft.com/windows/uwp/publish/opening-a-developer-account).
+
+## Choosing a programming language for the app
+
+If your app will communicate with a driver, you can use [Windows.Devices.Custom](https://docs.microsoft.com/uwp/api/windows.devices.custom), which is part of the WinRT API, and therefore available in JavaScript, C#, and C++.
+
+If your app will communicate with an NT service, then you need to use the RPC APIs.  Because RPC APIs are Win32 APIs that are not available in WinRT, you need to either use C++, or wrap the RPC calls using .NET interop (PInvoke).  For more info, see [Calling Native Functions from Managed Code](https://docs.microsoft.com/cpp/dotnet/calling-native-functions-from-managed-code).
 
 ## Contact the custom capability owner
 
@@ -97,3 +103,4 @@ When the target machine is in Developer Mode, you can try the following steps to
 * [Enable your device for development](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
 * [Custom Capability sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomCapability)
 * [Getting Started with Universal Windows drivers](../develop/getting-started-with-universal-drivers.md)
+* [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md)
