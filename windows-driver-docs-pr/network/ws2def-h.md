@@ -1,7 +1,7 @@
 ---
 title: Ws2def.h
 author: windows-driver-content
-description: This section contains network driver topics for the Ws2def.h header.
+description: This section contains kernel mode network driver topics for the Ws2def.h header.
 ms.assetid: D84A448E-5810-485F-9CAC-4366E4223DBE
 keywords:
 - Ws2def.h network drivers
@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 # Ws2def.h
 
-This section contains network driver topics for the Ws2def.h header. These topics may also be shared with the user mode applications that interact with network drivers.
+This section contains kernel mode network driver topics for the Ws2def.h header. This header is included in the Windows SDK as it is also shared with user mode applications that interact with network drivers.
 
 The Ws2def.h header contains definitions for the Winsock2 specification. It is included in Winsock2.h. User mode applications should include Winsock2.h rather than including Ws2def.h directly. Ws2def.h cannot be included by a module that also includes Winsock.h.
 

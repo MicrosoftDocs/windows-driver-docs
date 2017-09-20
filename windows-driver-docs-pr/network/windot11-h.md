@@ -1,7 +1,7 @@
 ---
 title: Windot11.h
 author: windows-driver-content
-description: This section contains network driver topics for the Windot11.h header.
+description: This section contains kernel mode network driver topics for the Windot11.h header.
 ms.assetid: 3C31D5E1-39FE-4344-BD40-D0199ACCB670
 keywords:
 - Windot11.h network drivers
@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 # Windot11.h
 
-This section contains network driver topics for the Windot11.h header. These topics may also be shared with the user mode applications that interact with network drivers.
+This section contains kernel mode network driver topics for the Windot11.h header. This header is included in the Windows SDK as it is also shared with user mode applications that interact with network drivers.
 
 The Windot11.h header contains definitions for Native 802.11 miniport driver specifications.
 
