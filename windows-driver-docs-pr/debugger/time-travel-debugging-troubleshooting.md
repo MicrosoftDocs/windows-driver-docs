@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Troubleshooting
 description: This section describes how to troubleshoot time travel traces.
 ms.author: windowsdriverdev
-ms.date: 09/14/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -38,8 +38,8 @@ If you suspect and issue with the index file, recreate it. To do this:
 
 1. Delete the existing IDX file, it will have the same name as the .RUN trace file and be located in the same directory that the .RUN file is.
 2. Open the trace .RUN file in WinDbg Preview.
-3. Run the ```!tt.index``` command.
-4. Use the ```!tt.index status``` command to confirm that the trace index is functional.
+3. Run the ```!ttdext.index``` command.
+4. Use the ```!ttdext.index -status``` command to confirm that the trace index is functional.
 
 
 ## Issues with Trace .RUN Files

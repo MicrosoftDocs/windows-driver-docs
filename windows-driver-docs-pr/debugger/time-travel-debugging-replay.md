@@ -210,12 +210,12 @@ If the current trace is already indexed, the !ttdext.index command does nothing.
 Successfully created the index in 0ms.
 ```
 
-### !ttdext.index status
+### !ttdext.index -status
 
 Use !tt.index status to report the status of the trace index.
 
 ```
-0:000> !ttdext.index status
+0:000> !ttdext.index -status
 Index file loaded.
 ```
 

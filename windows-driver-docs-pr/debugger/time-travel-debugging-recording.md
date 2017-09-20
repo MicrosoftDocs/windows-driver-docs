@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Record a trace 
 description: This section describes how to record time travel traces.
 ms.author: windowsdriverdev
-ms.date: 09/16/2017
+ms.date: 09/19/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,8 +57,7 @@ To launch an executable and record a TTD trace, follow these steps.
 10. With the **Stop and debug** option, the trace file is automatically indexed after being written to disk. Indexing allows for complete and faster memory value look ups. This indexing process will take longer for larger trace files.
 
     ```
-    Time Travel Position: 10:0
-    ntdll!ZwTestAlert+0x14:
+    ...
     00007ffc`61f789d4 c3              ret
     0:000> !index
     Indexed 1/1 keyframes
@@ -111,8 +110,7 @@ To attach to a process and record a TTD trace, follow these steps.
 10.  With the **Stop and debug** option, the trace file is automatically indexed after being written to disk. Indexing allows for complete and faster memory value look ups. This indexing process will take longer for larger trace files.
 
     ```
-    Time Travel Position: 10:0
-    ntdll!ZwTestAlert+0x14:
+    ...
     00007ffc`61f789d4 c3              ret
     0:000> !index
     Indexed 1/1 keyframes
