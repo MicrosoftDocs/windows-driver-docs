@@ -135,13 +135,17 @@ Use this dx command with the GetHeapAddress method to locate heap entries that i
 ## TTD Methods
 
 **Calls** - Returns call information from the trace for the specified set of methods: TTD.Calls("module!method1", "module!method2", ...)] 
-Calls returns an indexable list of heap API operations that change the address space in some way. For example alloc, realloc, free and a few others. It does not return heap API operations that are just queries (e.g. getting size of allocated block.)
+Calls returns an indexable list of heap API operations that change the address space in some way. For example alloc, realloc, free and a few others. It does not return heap API operations that are just queries (e.g. getting size of allocated block.) The data that is presented is specific to Heap APIs and hides Windows implementation details.
 
+TBD - Need output sample
+
+```
+ dx @$cursession.TTD.Calls()
+```
 
 ### Example use: Viewing Calls
 
 Use the Calls method to see the areas of the trace that contain a specificed set of method calls. 
-
 
 ```
 0:000> dx -r2 @$cursession.TTD.Calls("user32!SendMessageW")
@@ -159,8 +163,27 @@ Use the Calls method to see the areas of the trace that contain a specificed set
 
 ```
 
-??? TBD - need updated output to show param[] array
+??? TBD - need updated output to show param[] array - zero based or one based?
 ??? TBD Parameter1..4 are being replaced with a Parameters[] array, indexed by 0 .. n-1 where n is number of parameters
+
+Clicking on [Time Travel] will take you to that position in the trace.
+
+If you click on a TimeRange you will see the extent of the call:
+
+```
+ 0:000> dx @$cursession.TTDUtils.HeapAPICalls()[5]
+ @$cursession.TTDUtils.HeapAPICalls()[5]                
+    Action           : Alloc
+    Heap             : 0x1a3f7430000
+    Address          : 0x1a3f744bc40
+    Size             : 0x10
+    Flags            : 0x0
+    TimeRange        : [50:167, 52:36]
+ 0:000> dx -r1 @$cursession.TTDUtils.HeapAPICalls()[5].@"TimeRange"
+ @$cursession.TTDUtils.HeapAPICalls()[5].@"TimeRange"                 : [50:167, 52:36]
+     MinPosition      : 50:167 [Time Travel]
+     MaxPosition      : 52:36 [Time Travel]
+```
 
 
 All of the LINQ features of dx can be used to filter the query, for example searching for just message 0x429.
@@ -269,7 +292,7 @@ Ask TTD to locate all of the operations that impacted the address:
 
 ## JavaScript Support
 
-You can also use these queries from JavaScript.
+You can also use these queries from JavaScript as shown below.
 
 ```
 var localApis = host.currentSession
@@ -284,39 +307,6 @@ for (var api of localApis)
 ```
 
 
-## Calls notes --- to be removed...
-
- This extension projects raw call data from ttdanalyze (provided by @$cursession.TTD.Calls()) into friendlier data that is specific to Heap APIs and hides Windows implementation details.
-
- The following extensions to the datamodel are provided:
-
- dx @$cursession.TTD.Calls()
-
- Returns an indexable list of heap API operations that change the address space in some way:
- alloc, realloc, free and a few others. It does not return heap API operations that are just queries (e.g. getting size of allocated block.)
-
-If you click on a TimeRange you will see the extent of the call:
-
-```
- 0:000> dx @$cursession.TTDUtils.HeapAPICalls()[5]
- @$cursession.TTDUtils.HeapAPICalls()[5]                
-    Action           : Alloc
-    Heap             : 0x1a3f7430000
-    Address          : 0x1a3f744bc40
-    Size             : 0x10
-    Flags            : 0x0
-    TimeRange        : [50:167, 52:36]
- 0:000> dx -r1 @$cursession.TTDUtils.HeapAPICalls()[5].@"TimeRange"
- @$cursession.TTDUtils.HeapAPICalls()[5].@"TimeRange"                 : [50:167, 52:36]
-     MinPosition      : 50:167 [Time Travel]
-     MaxPosition      : 52:36 [Time Travel]
-
- Clicking on [Time Travel] will take you to that position in the trace.
-```
-
-
-
-> Additional Content Pending
 
 ---
 
