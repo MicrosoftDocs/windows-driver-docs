@@ -12,7 +12,8 @@ ms.technology: windows-devices
 # Dashboard submission REST API reference
 
 
-**Important**  The dashboard submission REST APIs will no longer be available for use as of the end of November 10th, 2016. APIs for driver submissions are under consideration for a future release.
+> [!Important]  
+> The dashboard submission REST APIs have been depricated and are no longer be available for use. APIs for driver submissions are under consideration for a future release.
 
  
 
