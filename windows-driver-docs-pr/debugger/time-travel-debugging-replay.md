@@ -99,25 +99,25 @@ ntdll!ZwTestAlert+0x14:
 You can also use the t- command to navigate backwards in time.
 
 
-## !ttdext.tt navigation commands
+## !tt navigation commands
 
-Use the !ttdext.tt command to navigate forward or backwards in time, by skiping to a given position in the trace. 
+Use the !tt command to navigate forward or backwards in time, by skiping to a given position in the trace. 
 
-!ttdext.tt {position}
+!tt {position}
 
 Provide a time position in any of the following formats to travel to that point in time.
            
 - If {position} is a decimal number between 0 and 100, it travels to approximately that percent into the trace. For example:
 
 
-     - !ttdext.tt 0                   - Time travel to the beginning of the trace
-     -  !ttdext.tt 50                  - Time travel to halfway through the trace
-     -  !ttdext.tt 100                 - Time travel to the end of the trace
+     - !tt 0                   - Time travel to the beginning of the trace
+     -  !tt 50                  - Time travel to halfway through the trace
+     -  !tt 100                 - Time travel to the end of the trace
 
 - If {position} is #:#, where # are a hexadecimal numbers, it travels to that position. If the number after : is omitted, it defaults to zero.
-    - !ttdext.tt 1A0:                - Time travel to position 1A0:0
-    - !ttdext.tt 1A0:0               - Time travel to position 1A0:0
-    - !ttdext.tt 1A0:12F             - Time travel to position 1A0:12F
+    - !tt 1A0:                - Time travel to position 1A0:0
+    - !tt 1A0:0               - Time travel to position 1A0:0
+    - !tt 1A0:12F             - Time travel to position 1A0:12F
 
 
    > [!NOTE]
@@ -130,12 +130,12 @@ Provide a time position in any of the following formats to travel to that point 
    > yy - the second element is a step count, which corresponds roughly to the instruction count since the sequencing number.
 
 
-## !ttdext.positions
+## !positions
 
-Use !ttdext.*positions* to display all the active threads, including their position in the trace.
+Use ```!positions``` to display all the active threads, including their position in the trace.
 
 ```
-1:0:000> !ttdext.positions
+1:0:000> !positions
 >Thread ID=0x3604 - Position: 20:0
  Thread ID=0x0A94 - Position: 612:0
  Thread ID=0x1D78 - Position: A89:0
@@ -161,10 +161,10 @@ Use the user mode [~ (Thread Status)](---thread-status-.md) command to confirm t
    7  Id: 3f4.3200 Suspend: 4096 Teb: 00000061`79808000 Unfrozen
 ```
 
-Click on the link next to the third thread (1D78) in the !tt.positions output, to time travel to that position in the trace, A89:0.
+Click on the link next to the third thread (1D78) in the !positions output, to time travel to that position in the trace, A89:0.
 
 ```
-1:0:001> !ttdext.tt A89:0
+1:0:001> !tt A89:0
 Setting position: A89:0
 ModLoad: 00007ff8`3cd00000 00007ff8`3ce45000   C:\WINDOWS\System32\ole32.dll
 (3f4.1d78): Break instruction exception - code 80000003 (first/second chance not available)
@@ -187,35 +187,35 @@ Use the [~ (Thread Status)](---thread-status-.md) command to confirm that we are
    7  Id: 3f4.3200 Suspend: 4096 Teb: 00000061`79808000 Unfrozen
 ```
 
-## !ttdext Extension utility commands
+## Time travel debugging extension utility commands
 
-Use the following !ttdext extension commands to work with TTD traces.
+Use the following travel debugging extension utility commands to work with TTD traces.
 
 
-### !ttdext.index
+### !index
 
-Use !ttdext.*index* to run an indexing pass over the current trace. 
+Use ```!index``` to run an indexing pass over the current trace. 
 
 ```
-0:000> ttdext!index
+0:000> !index
 Indexed 10/14 keyframes
 Indexed 14/14 keyframes
 Successfully created the index in 535ms.
 ```
 
-If the current trace is already indexed, the !ttdext.index command does nothing.
+If the current trace is already indexed, the ```!index``` command does nothing.
 
 ```
-0:000> !ttdext.index
+0:000> !index
 Successfully created the index in 0ms.
 ```
 
-### !ttdext.index -status
+### !index -status
 
 Use !tt.index status to report the status of the trace index.
 
 ```
-0:000> !ttdext.index -status
+0:000> !index -status
 Index file loaded.
 ```
 
