@@ -44,7 +44,7 @@ The maximum logical address to use when allocating receive buffers. Set to **0**
 A [WDF_TRI_STATE](https://msdn.microsoft.com/library/windows/hardware/ff552533) value defining if the memory allocated should have cache enabled or not. A value of **WdfUseDefault** will enable cache only if the device is cache coherent.
 
 **PreferredNode**  
-The preferred NUMA node to use when allocating memory. If this member is set to MM_ANY_NODE_OK, NetAdapterCx will query the device for the best node to use.
+The preferred NUMA node to use when allocating memory. If this member is set to MM_ANY_NODE_OK, NetAdapterCx will automatically determine the best node to use.
 
 ## Remarks
 

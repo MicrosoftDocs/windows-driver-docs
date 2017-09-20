@@ -33,6 +33,7 @@ The minimum space that should be unused in the beginning of the first fragment o
 
 **L3HeaderAlignment**  
 The ideal alignment for the start of the L3 header. This member's value is in the form *N-1*, where *N* is the alignment. For example, TCP/IP performance is optimized with a 4-byte alignment boundary, so this member would be set to **3** in that case.
+You can use the **FILE_XXX_ALIGNMENT** constants, like **FILE_QUAD_ALIGNMENT** to name a specific alignment.
 
 ## Remarks
 

@@ -40,7 +40,7 @@ This method does not return a value.
 
 ## Remarks
 
-Call this method to obtain buffer layout hints from the upper layer, formatted as a NET_RXQUEUE_BUFFER_LAYOUT_HINT structure. While this method is optional for client drivers to call, it can help improve receive queue performance by enabling the receive queue to precalculate buffer padding and alignment.
+Call this method to obtain buffer layout hints from the upper layer, formatted as a NET_RXQUEUE_BUFFER_LAYOUT_HINT structure. While this method is optional for client drivers to call, it can help improve receive queue performance by ensuring that protocol headers are naturally aligned.
 
 ## Requirements
 

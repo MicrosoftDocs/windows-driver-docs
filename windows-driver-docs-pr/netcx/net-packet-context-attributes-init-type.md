@@ -49,7 +49,7 @@ In this example, the client driver defines a packet context called **MY_TCB** fo
 **MY_TCB** is a simple packet context that contains a hardware descriptor for this example client's NIC. TCB stands for Transmit Control Block, indicating that this example context would be used for assistance in transmit operations.
 
 ```cpp
-// in global space
+// in global scope
 
 typedef struct _MY_TCB{
     MY_TX_DESC  *TxDesc;

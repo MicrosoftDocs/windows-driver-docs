@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The NetRxQueueQueryAllocatorCacheEnabled method queries whether DMA allocator cache is enabled for a receive queue.
+The NetRxQueueQueryAllocatorCacheEnabled method queries whether DMA allocator allocates cacheable memory.
 
 Syntax
 ------
@@ -34,7 +34,7 @@ Parameters
 The receive queue object that the client driver obtained from a previous call to [**NetRxQueueCreate**](netrxqueuecreate.md).
 
 *CacheEnabled* [out]  
-A pointer to a boolean value indicating whether DMA allocator cache is enabled or not.
+A pointer to a boolean value that, on return, indicates whether the memory allocated for the Rx queue's payload buffers is cacheable.
 
 Return value
 ------------
