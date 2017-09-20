@@ -1,7 +1,7 @@
 ---
-title: EFI\_USBFN\_IO\_PROTOCOL.GetEndpointPolicy
+title: EFI_USBFN_IO_PROTOCOL.GetEndpointPolicy
 author: windows-driver-content
-description: EFI\_USBFN\_IO\_PROTOCOL.GetEndpointPolicy
+description: EFI_USBFN_IO_PROTOCOL.GetEndpointPolicy
 ms.assetid: 143ee448-2c29-46f4-b62c-6429a4a1d890
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

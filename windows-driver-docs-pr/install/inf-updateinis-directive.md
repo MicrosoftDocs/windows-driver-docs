@@ -20,13 +20,13 @@ ms.technology: windows-devices
 # INF UpdateInis Directive
 
 
-**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-configurable-inf-file.md).
+**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 
 An **UpdateInis** directive references one or more named sections, specifying an INI file from which a particular section or line is to be read and applied to an existing INI file of the same name on the target computer. Optionally, line-by-line modifications from and to such INI files can be specified in the *update-ini-section*.
 
-``` syntax
+```
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -41,7 +41,7 @@ This directive is almost never specified in INF files for installation on Window
 
 Each named section referenced by an **UpdateInis** directive has the following form:
 
-``` syntax
+```
 [update-ini-section]
  
 ini-file,ini-section[,old-ini-entry][,new-ini-entry][,flags]
@@ -62,7 +62,7 @@ Specifies the name of the section within the given INI file. If the next two val
 <a href="" id="old-ini-entry"></a>*old-ini-entry*  
 This optional value specifies the name of an entry in the given *ini-section*, usually expressed in the following form:
 
-``` syntax
+```
 "key=value"
 ```
 

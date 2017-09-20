@@ -30,7 +30,7 @@ The path and name of this file are specified by the -p PlaceFile command-line pa
 
 Each line of a place file has the same format.
 
-``` syntax
+```
     
      FileName Class[:Class[...]   [ ; Comment ] 
 

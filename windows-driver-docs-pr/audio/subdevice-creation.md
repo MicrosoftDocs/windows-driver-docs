@@ -81,10 +81,10 @@ The following code example shows how the adapter driver performs these actions:
                                     MiniportClassId, NULL, NonPagedPool);
       }
       else   // Ask PortCls for one of its built-in miniports.
- {
+      {
           ntStatus = PcNewMiniport((PMINIPORT*)&miniport,
                                    MiniportClassId);
- }
+      }
 
       if (NT_SUCCESS(ntStatus))
       {

@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Inf2Cat (Inf2Cat.exe) is a command-line tool that determines whether a [driver package's](https://msdn.microsoft.com/library/windows/hardware/ff544840) INF file can be digitally-signed for a specified list of Windows versions. If so, Inf2Cat generates the unsigned [catalog files](https://msdn.microsoft.com/library/windows/hardware/ff537872) that apply to the specified Windows versions.
 
-``` syntax
+```
     Inf2Cat /driver:
     PackagePath
      /os:

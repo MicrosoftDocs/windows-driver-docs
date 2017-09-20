@@ -32,7 +32,7 @@ verifier /flags 7 /driver beep.sys flpydisk.sys
 
 You can use the **/volatile** parameter with some Driver Verifier **/flags** options and with **/standard**. You cannot use **/volatile** with the **/flags** options for [DDI compliance checking](ddi-compliance-checking.md), [Power Framework Delay Fuzzing](concurrency-stress-test.md), [Storport Verification](dv-storport-verification.md), or [SCSI Verification](scsi-verification.md). For details, see [Using Volatile Settings](using-volatile-settings.md).
 
-``` syntax
+```
   verifier /standard /all
   verifier /standard /driver NAME [NAME ...]
   verifier /flags <options> /all
@@ -60,7 +60,7 @@ You can use the **/volatile** parameter with some Driver Verifier **/flags** opt
 
 You can use the **/volatile** parameter with some Driver Verifier **/flags** options and with **/standard**. You cannot use **/volatile** with the **/flags** options for [DDI compliance checking](ddi-compliance-checking.md), [Power Framework Delay Fuzzing](concurrency-stress-test.md), [Storport Verification](dv-storport-verification.md), or [SCSI Verification](scsi-verification.md). For details, see [Using Volatile Settings](using-volatile-settings.md).
 
-``` syntax
+```
   verifier /standard /all
   verifier /standard /driver NAME [NAME ...]
   verifier /flags <options> /all
@@ -84,7 +84,7 @@ You can use the **/volatile** parameter with some Driver Verifier **/flags** opt
 
 You can use the **/volatile** parameter with some Driver Verifier **/flags** options and with **/standard**. You cannot use **/volatile** with the /flags options for [DDI compliance checking](ddi-compliance-checking.md), [Power Framework Delay Fuzzing](concurrency-stress-test.md), [Storport Verification](dv-storport-verification.md), [SCSI Verification](scsi-verification.md) or with **/disk**. For details, see [Using Volatile Settings](using-volatile-settings.md).
 
-``` syntax
+```
 verifier [/volatile] [/standard | /flags Options ] [ /all | /driver DriverList ]
 verifier /volatile /faults [Probability PoolTags Applications DelayMins] /driver DriverList
 verifier /volatile {/adddriver | /removedriver} DriverList
@@ -99,7 +99,7 @@ verifier /?
 
 **Windows Server 2003 Syntax**
 
-``` syntax
+```
 verifier [/disk] [ /standard | /flags Options ] [ /all | /driver DriverList ] 
 verifier /volatile /flags VolatileOptions 
 verifier /volatile {/adddriver | /removedriver} DriverList
@@ -146,6 +146,11 @@ Controls whether the settings for Driver Verifier are enabled after a reboot. To
 <tr class="odd">
 <td align="left"><p><span id="oneboot"></span><span id="ONEBOOT"></span><strong>oneboot</strong></p></td>
 <td align="left"><p>Only enables the Driver Verifier settings for the next time the computer starts. Driver Verifier is disabled for subsequent reboots.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><span id="resetonunusualshutdown"></span><span id="RESETONUNUSUALSHUTDOWN"></span><strong>resetonunusualshutdown</strong></p></td>
+<td align="left"><p>(Introduced in Windows 10, build 1709) Driver Verifier will persist until an unusual shutdown occurs. Its abbrevation, <strong>'rous'</strong>, can be used.
+</p></td>
 </tr>
 </tbody>
 </table>

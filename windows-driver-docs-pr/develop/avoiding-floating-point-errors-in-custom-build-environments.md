@@ -29,7 +29,7 @@ To avoid these problem with floating-point calculations, add the **/kernel** fla
 
 In addition, if you build a driver using the WDK and the Visual Studio Professional 2012 development environment, or use MSBuild, in a Visual Studio Command prompt window, the Microsoft provided platform toolset (**WindowsKernelModeDriver8.0**) sets the **/kernel** flag. As a result, floating-point generation errors are avoided.
 
-``` syntax
+```
 msbuild myProject.vcxproj /p:PlatformToolset=WindowsKernelModeDriver8.0
 ```
 

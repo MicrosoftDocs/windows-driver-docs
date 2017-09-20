@@ -11,7 +11,7 @@ ms.technology: windows-devices
 
 # Validating Universal Windows drivers
 
-You can use the ApiValidator.exe tool to verify that the APIs that your driver calls are valid for a Universal Windows driver. The tool returns an error if your driver calls an API that is outside the set of valid APIs for Universal Windows drivers. This tool is part of the Windows Driver Kit (WDK) for Windows 10.
+You can use the ApiValidator.exe tool to verify that the APIs that your binaries call are valid for a Universal Windows driver. The tool returns an error if your binaries call an API that is outside the set of valid APIs for Universal Windows drivers. This tool is part of the Windows Driver Kit (WDK) for Windows 10.
 
 ## <span id="Running_ApiValidator_in_Visual_Studio"></span><span id="running_apivalidator_in_visual_studio"></span><span id="RUNNING_APIVALIDATOR_IN_VISUAL_STUDIO"></span>Running ApiValidator in Visual Studio
 
@@ -22,7 +22,7 @@ To view all the messages displayed by ApiValidator, navigate to **Tools &gt; Opt
 
 For the umdf2\_fx2 driver sample, API validation errors look this:
 
-``` syntax
+```
 Warning  1   warning : API DecodePointer in kernel32.dll is not supported. osrusbfx2um.dll calls this API.   C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2_fx2\driver\ApiValidator.exe    osrusbfx2um
 Warning 2   warning : API DisableThreadLibraryCalls in kernel32.dll is not supported. osrusbfx2um.dll calls this API.   C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2_fx2\driver\ApiValidator.exe    osrusbfx2um
 Warning 3   warning : API EncodePointer in kernel32.dll is not supported. osrusbfx2um.dll calls this API.   C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2_fx2\driver\ApiValidator.exe    osrusbfx2um
@@ -37,16 +37,17 @@ Error   10  error MSB3721: The command ""C:\Program Files (x86)\Windows Kits\10\
 
 **Fixing validation errors**
 
-1.  If you switched a legacy desktop driver to universal, verify that you are including the correct libraries. Right click the project and choose properties. Navigate to **Linker-&gt;Input**. The **Additional Dependencies** should contain:
+1.  If you switched a legacy desktop UMDF driver project to universal, verify that you are including the correct libraries when building your binaries. Right click the project and choose properties. Navigate to **Linker-&gt;Input**. The **Additional Dependencies** should contain:
 
-    ``` syntax
-    %AdditionalDependencies);$(SDK_LIB_PATH)\mincore.lib;$(SDK_LIB_PATH)\WppRecorderUM.lib
+    ```
+    %AdditionalDependencies);$(SDK_LIB_PATH)\OneCoreUAP.lib
     ```
 
 2.  Remove or replace the non-universal API calls one at a time and rerun the tool until there are no errors.
 
-## <span id="Running_ApiValidator_from_the_Command_Prompt"></span><span id="running_apivalidator_from_the_command_prompt"></span><span id="RUNNING_APIVALIDATOR_FROM_THE_COMMAND_PROMPT"></span>Running ApiValidator from the Command Prompt
+3.  In some cases, you can replace these calls with alternate DDIs that are listed on the reference pages for the desktop-only DDI. If you cannot find a suitable replacement, please [submit feedback](http://go.microsoft.com/fwlink/p/?linkid=529549).  You may have to code a workaround if there is not a suitable replacement.  If you need to, write a new Universal Windows driver starting from the driver templates in the WDK.
 
+## Running ApiValidator from the Command Prompt
 
 You can also run Apivalidator.exe from the command prompt. In your WDK installation, navigate to C:\\Program Files (x86)\\Windows Kits\\10\\bin\\*&lt;arch&gt;*.
 
@@ -60,7 +61,7 @@ For example, to verify the APIs called by the Activity sample in the WDK, first 
 
 The command produces the following output:
 
-``` syntax
+```
 ApiValidator.exe: Warning: API DecodePointer in kernel32.dll is not supported. osrusbfx2um.dll calls this API.
 ApiValidator.exe: Warning: API DisableThreadLibraryCalls in kernel32.dll is not supported. osrusbfx2um.dll calls this API.
 ApiValidator.exe: Warning: API EncodePointer in kernel32.dll is not supported. osrusbfx2um.dll calls this API.
@@ -81,7 +82,7 @@ The XML files that enumerate the valid APIs for Universal Windows drivers are lo
 
 If ApiValidator.exe outputs an incorrect format error such as the following:
 
-``` syntax
+```
 Error      1              error : AitStatic output file has incorrect format or analysis run on incorrect file types.     C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2_fx2\driver\ApiValidator.exe            osrusbfx2um
 ```
 
@@ -89,7 +90,7 @@ Use this workaround:
 
 1.  Open Project properties, navigate to **General**, and rename **Output Directory** to the following:
 
-    ``` syntax
+    ```
     $(SolutionDir)$(Platform)\$(ConfigurationName)\
     ```
 

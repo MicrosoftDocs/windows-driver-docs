@@ -1,0 +1,145 @@
+---
+title: Configuring tools.ini
+description: Configuring tools.ini
+ms.assetid: 4f0d9f48-99d5-4180-b25d-70fd8de6f20e
+keywords: ["tools.ini file", "ntsd.ini file"]
+ms.author: windowsdriverdev
+ms.date: 05/23/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+---
+
+# Configuring tools.ini
+
+
+## <span id="ddk_configuring_tools_ini_dbg"></span><span id="DDK_CONFIGURING_TOOLS_INI_DBG"></span>
+
+
+The file tools.ini contains information to initialize the command-line debuggers. On startup, the debugger searches for the appropriate section header in the tools.ini file and extracts initialization information from the entries under the header. Each command-line debugger has its own section header - \[CDB\], \[NTSD\], and \[KD\]. The environment variable INIT must point to the directory containing the tools.ini file.
+
+WinDbg does not use the tools.ini file. Instead, WinDbg saves initialization settings in [workspaces](using-workspaces.md).
+
+The tools.ini entries are shown in the following table.
+
+Keywords must be separated from the values by white space or a colon. Keywords are not case-sensitive.
+
+For **TRUE** or **FALSE** values, "FALSE" is the only false value. Anything else is **TRUE**.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Entry</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p><strong>$u0:</strong> <em>value</em> ... <strong>$u9:</strong> <em>value</em></p></td>
+<td align="left"><p>Assign values to fixed-name aliases. You can specify numeric values <em>n</em> or <em>0xn</em> or any other string. See [Using Aliases](using-aliases.md) for details. No command-line equivalent.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>DebugChildren:</strong> <em>flag</em></p></td>
+<td align="left"><p><strong>TRUE</strong> or <strong>FALSE</strong>. If <strong>TRUE</strong>, CDB debugs the specified application as well as any child processes that it might spawn. Command-line equivalent is <strong>-o</strong>.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>DebugOutput:</strong> <em>flag</em></p></td>
+<td align="left"><p><strong>TRUE</strong> or <strong>FALSE</strong>. If <strong>TRUE</strong>, CDB sends output and receives input through a terminal. If <strong>FALSE</strong>, output goes to the user screen. The command-line option <strong>-d</strong> is similar but not identical.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>IniFile:</strong> <em>file</em></p></td>
+<td align="left"><p>Specifies the name of the script file that CDB or KD takes commands from at startup. The default is the ntsd.ini file in the current directory. Command-line equivalent is <strong>-cf</strong>. For details, see [Using Script Files](using-script-files.md).</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>LazyLoad:</strong> <em>flag</em></p></td>
+<td align="left"><p><strong>TRUE</strong> or <strong>FALSE</strong>. If <strong>TRUE</strong>, CDB performs lazy symbol loading; that is, symbols are not loaded until required. Command-line equivalent is <strong>-s</strong>.</p>
+<p>For details, and other methods of setting this option, see [Deferred Symbol Loading](deferred-symbol-loading.md).</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>SetDll:</strong> <em>filename</em></p></td>
+<td align="left"><p>Set extension DLL. The .dll filename extension should be omitted. Default is userexts.dll. Command-line equivalent is <strong>-a</strong>.</p>
+<p>For details, and other methods of setting this default, see [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md).</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>StopFirst:</strong> <em>flag</em></p></td>
+<td align="left"><p><strong>TRUE</strong> or <strong>FALSE</strong>. If <strong>true</strong>, CDB stops on the breakpoint at the end of the image-loading process. Command-line equivalent is <strong>-g</strong>.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>StopOnProcessExit:</strong> <em>flag</em></p></td>
+<td align="left"><p><strong>TRUE</strong> or <strong>FALSE</strong>. If <strong>TRUE</strong>, CDB stops when it receives a process termination notification. Command-line equivalent is <strong>-G</strong>.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p></p>
+<strong>sxd:</strong> <em>event</em>
+<strong>sxe:</strong> <em>event</em></td>
+<td align="left"><p>Sets the debugger response and the handling status for the specified exception or event.</p>
+<p>Exceptions and events may be specified in the following ways:</p>
+<p></p>
+<strong>*</strong>: Default exception
+<em>n</em>: Exception <em>n</em> (decimal)
+<em>0xn</em>: Exception <em>0xn</em> (hexadecimal)
+(other): Event code
+<p>See [Controlling Exceptions and Events](controlling-exceptions-and-events.md) for details of this process and for other methods of controlling these settings.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>VerboseOutput:</strong> <em>flag</em></p></td>
+<td align="left"><p><strong>TRUE</strong> or <strong>FALSE</strong>. If <strong>TRUE</strong>, CDB will display detailed information about symbol handling, event notification, and other run-time occurrences. Command-line equivalent is <strong>-v</strong>.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>lines:</strong> <em>flag</em></p></td>
+<td align="left"><p><strong>TRUE</strong> or <strong>FALSE</strong>. The lines flag enables or disables support for source-line information.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>srcopt:</strong> <em>options</em></p></td>
+<td align="left"><p>Sets the source line options that control source display and program stepping options. For more information see [<strong>l+, l- (Set Source Options)</strong>](l---l---set-source-options-.md).</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>srcpath:</strong> <em>directory</em></p></td>
+<td align="left"><p>Sets the source file search path. For more information see [<strong>.srcpath, .lsrcpath (Set Source Path)</strong>](-srcpath---lsrcpath--set-source-path-.md).</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>enable_unicode:</strong> <em>flag</em></p></td>
+<td align="left"><p><strong>TRUE</strong> or <strong>FALSE</strong>. The enable_unicode flag specifies whether the debugger displays USHORT pointers and arrays as Unicode strings.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>force_radix_output:</strong> <em>flag</em></p></td>
+<td align="left"><p><strong>TRUE</strong> or <strong>FALSE</strong>. The force_radix_output flag specifies whether integers are displayed in decimal format or in the default radix.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>col_mode:</strong> <em>flag</em></p></td>
+<td align="left"><p><strong>TRUE</strong> or <strong>FALSE</strong>. The col_mode flag controls the color mode setting. When color mode is enabled the debugger can produce colored output. By default, most colors are not set and instead default to the current console colors.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>col:</strong> <em>name</em> <em>colspec</em></p></td>
+<td align="left"><p>The <em>name</em> indicates the element that you are coloring. The <em>colspec</em> is a three-letter RGB indicator of the form [rR-][gG-][bB-]. A lower-case letter indicates darker, an upper-case letter indicates brighter and a dash indicates no color component contribution. Due to console color limitations, bright is not actually per-component, but applies to all components if any request bright. In other words, rgB is the same as RGB. For this reason, it is recommended that all caps be used if any caps are going to be used.</p>
+<p>Example usage:</p>
+<p>col: emphfg R--</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+A sample \[NTSD\] section in the tools.ini file follows:
+
+```
+[NTSD]
+sxe: 3c
+sxe: cc
+$u0: VeryLongName
+VerboseOutput:true
+```
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Configuring%20tools.ini%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+

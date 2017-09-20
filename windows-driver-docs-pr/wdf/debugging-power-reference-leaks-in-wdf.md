@@ -41,7 +41,7 @@ For a UMDF driver:
 
 **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services\\&lt;Driver Service Name&gt;\\Parameters\\Wdf**
 
-``` syntax
+```
 (REG_DWORD) VerifierOn = 0x1
 (REG_DWORD) TrackPower = 0x0 (disabled)
                        = 0x1 (capture tick count, file name, line number)
@@ -71,14 +71,14 @@ if (NT_SUCCESS(status)) {
 
 To display the power references taken on the device, as well as a tag tracker that shows the reference history, use [**!wdfkd.wdfdevice**](https://msdn.microsoft.com/library/windows/hardware/ff565703) with verbose flags:
 
-``` syntax
+```
 kd> !wdfkd.wdfdevice 0x6d939790 ff
 Power references: 0 !wdftagtracker 0x9ea030a8
 ```
 
 Calling the [**!wdfkd.wdftagtracker**](https://msdn.microsoft.com/library/windows/hardware/ff566126) shows the device’s power reference history:
 
-``` syntax
+```
 kd> !wdftagtracker 0x9ea030a8
 Reference and Release History:
 # (showing most recent first; refcount is approximate in multi-threaded scenarios)
@@ -99,7 +99,7 @@ Reference and Release History:
 
 Optionally, specify a tag name to facilitate identification of specific power references. To do so, use [**WdfDeviceStopIdleWithTag**](https://msdn.microsoft.com/library/windows/hardware/dn932460) and [**WdfDeviceResumeIdleWithTag**](https://msdn.microsoft.com/library/windows/hardware/dn932459):
 
-``` syntax
+```
 status = WdfDeviceStopIdleWithTag(device, FALSE, (PVOID)'oyeH');
 if (NT_SUCCESS(status)) {
     WdfDeviceResumeIdleWithTag(device, (PVOID)'oyeH');
@@ -108,7 +108,7 @@ if (NT_SUCCESS(status)) {
 
 Corresponding [**!wdftagtracker**](https://msdn.microsoft.com/library/windows/hardware/ff566126) sample output:
 
-``` syntax
+```
 (--) 0 ref: Tag 'Heyo' at Time 0x24e40 ticks
 ##      path\to\your\driver\code.c @ 374
 

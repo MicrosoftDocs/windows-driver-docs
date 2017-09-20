@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 To run XpsAnalyzer, type a command at the command line using the following syntax and parameters.
 
-``` syntax
+```
     XpsAnalyzer [/XpsFile:FileName] [/Directory:DirectoryName] [/FlushSql:SqlFormat]] 
 
    

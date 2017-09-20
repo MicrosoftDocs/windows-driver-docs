@@ -1,7 +1,7 @@
 ---
-title: Checking for Traverse Privilege on IRP\_MJ\_CREATE
+title: Checking for Traverse Privilege on IRP_MJ_CREATE
 author: windows-driver-content
-description: Checking for Traverse Privilege on IRP\_MJ\_CREATE
+description: Checking for Traverse Privilege on IRP_MJ_CREATE
 ms.assetid: 9ba743d6-8e78-4f9a-9cb8-cb98f734c290
 keywords:
 - IRP_MJ_CREATE

@@ -1,6 +1,6 @@
 ---
-title: UPS\ServiceProviders Registry Entries
-description: UPS\ServiceProviders Registry Entries
+title: UPS ServiceProviders Registry Entries
+description: Create a vendor-specific subkey under the UPS ServiceProviders registry key for each UPS model.
 ms.assetid: fa206f16-e136-4bfe-9823-7c324d62e1fb
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

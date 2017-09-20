@@ -18,7 +18,7 @@ PwrTest is capable of logging battery capacity, voltage, rate of drain, and gene
 
 ### <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
-``` syntax
+```
 pwrtest /battery [/c:n] [/i:n] [/?] 
 ```
 
@@ -30,11 +30,11 @@ Specifies the polling interval in milliseconds (the default is 5000).
 
 **Examples**
 
-``` syntax
+```
 pwrtest /battery 
 ```
 
-``` syntax
+```
 pwrtest /battery /c:4 /i:1000
 ```
 

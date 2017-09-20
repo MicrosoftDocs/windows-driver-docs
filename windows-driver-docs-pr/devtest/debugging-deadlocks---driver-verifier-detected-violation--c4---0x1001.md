@@ -1,6 +1,6 @@
 ---
-title: Debugging deadlocks - DRIVER\_VERIFIER\_DETECTED\_VIOLATION (C4) 0x1001
-description: When Driver Verifier detects a spin lock hierarchy violation, Driver Verifiergenerates Bug Check 0xC4 DRIVER\_VERIFIER\_DETECTED\_VIOLATION with a parameter 1 value of 0x1001.
+title: Debugging deadlocks - DRIVER_VERIFIER_DETECTED_VIOLATION (C4) 0x1001
+description: When Driver Verifier detects a spin lock hierarchy violation, Driver Verifiergenerates Bug Check 0xC4 DRIVER_VERIFIER_DETECTED_VIOLATION with a parameter 1 value of 0x1001.
 ms.assetid: 4C3ED1DB-5EDC-4386-B91C-CF86973EE1F6
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -22,7 +22,7 @@ When the Deadlock Detection option is active (Deadlock Detection is part of the 
 
 **New in Windows 8.1** When [Driver Verifier](driver-verifier.md) encounters this violation, if the debugger is attached, the debugger will ask you for input about the error. In Windows 8 and previous versions of Windows, this violation result in an immediate bug check.
 
-``` syntax
+```
 ************ Verifier Detected a Potential Deadlock *************
 **
 ** Type !deadlock in the debugger for more information.
@@ -35,7 +35,7 @@ When the Deadlock Detection option is active (Deadlock Detection is part of the 
 
 To debug this violation on a computer running Windows 8.1, choose **B** (Break), and enter the suggested debugger command ([**!deadlock**](https://msdn.microsoft.com/library/windows/hardware/ff562326)):
 
-``` syntax
+```
 kd> !deadlock
 issue: 00001001 97dd800c 86858ce0 00000000 
 
@@ -55,7 +55,7 @@ Lock B =   97dd8008 (MyTestDriver!BravoLock+0x00000000) - Type 'Spinlock'.
 
 The [**!deadlock**](https://msdn.microsoft.com/library/windows/hardware/ff562326) **3** command can also be used to show more information, including the stack at the time of last acquire:
 
-``` syntax
+```
 kd> !deadlock 3
 issue: 00001001 97dd800c 86858ce0 00000000 
 
@@ -114,7 +114,7 @@ Lock A =     97dd800c (MyTestDriver!AlphaLock+0x00000000) - Type 'Spinlock'.
 
 The debugger suggests using the [**kb (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943) command to display the current stack trace.
 
-``` syntax
+```
 kd> kb
 ChildEBP RetAddr  Args to Child              
 89b2cac4 820da328 97dd800c 86858ce0 00000000 nt!VfReportIssueWithOptions+0x86
@@ -136,7 +136,7 @@ At this point, a review of the source code of each function should reveal that a
 
 Both *MyTestDriver!AlphaLock* and *MyTestDriver!BravoLock* are objects globally available in the driver:
 
-``` syntax
+```
 include "MyTestDriverHeader.h"
 
 // Locks used to control access to various objects

@@ -12,7 +12,8 @@ ms.technology: windows-devices
 # ELAM Driver Requirements
 
 
-Driver installation must use existing tools for online and offline installation, registering a driver through typical INF processing.
+Driver installation must use existing tools for online and offline installation, registering a driver through typical INF processing.  For sample ELAM driver code, please see the following:
+https://github.com/Microsoft/Windows-driver-samples/tree/master/security/elam 
 
 ## AM Driver Installation
 
@@ -21,7 +22,7 @@ To ensure driver install compatibility, an ELAM driver advertises itself as a bo
 
 The following is an example of the driver install section of an ELAM driver INF.
 
-``` syntax
+```
 [SampleAV.Service]
 DisplayName    = %SampleAVServiceName%
 Description    = %SampleAVServiceDescription%
@@ -40,7 +41,7 @@ To provide a recovery mechanism in the event that the ELAM driver is inadvertent
 
 The installer reads the backup file location from the **BackupPath** key stored in
 
-``` syntax
+```
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\EarlyLaunch
 ```
 
@@ -87,7 +88,7 @@ The two callback types have unique context structures that provide additional in
 
 The malware signature data is determined by the AM ISV, but should include, at a minimum, an approved list of driver hashes. The signature data is stored in the registry in a new “Early Launch Drivers” hive under HKLM that is loaded by Winload. Each AM driver has a unique key in which to store their signature binary large object (BLOB). The registry path and key has the format:
 
-``` syntax
+```
 HKLM\ELAM\\<VendorName>\
 ```
 
@@ -162,12 +163,12 @@ The driver must meet the performance requirements defined in the following table
 
 Once the boot drivers are evaluated by the ELAM driver, the Kernel uses the classification returned by ELAM to decide whether to initialize the driver. This decision is dictated by policy and is stored here in the registry at:
 
-``` syntax
+```
 HKLM\System\CurrentControlSet\Control\EarlyLaunch\DriverLoadPolicy
 ```
 
 This can be configured through Group Policy on a domain-joined client. An antimalware solution may want to expose this functionality to the end user in nonmanaged scenarios. The following values are defined for DriverLoadPolicy:
-``` syntax
+```
 PNP_INITIALIZE_DRIVERS_DEFAULT 0x0  (initializes known Good drivers only)
 PNP_INITIALIZE_UNKNOWN_DRIVERS 0x1  
 PNP_INITIALIZE_BAD_CRITICAL_DRIVERS 0x3 (this is the default setting)
@@ -184,7 +185,7 @@ If a boot driver is skipped due to the initialization policy, the Kernel continu
 
 When the ELAM driver is installed, a backup copy of the driver must also be installed. The back-up location will be stored in the **BackupPath** key stored in
 
-``` syntax
+```
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\EarlyLaunch
 ```
 
@@ -195,7 +196,7 @@ In the event of a failure to load or initialize the primary driver due to a corr
 
 If the ELAM driver detects a policy violation (a rootkit, for example), it can invalidate the PCRs that indicated that the system was in a good state by using the Tbsi\_Revoke\_Attestation() function:
 
-``` syntax
+```
 TBS_RESULT WINAPI
 Tbsi_Revoke_Attestation();
 ```

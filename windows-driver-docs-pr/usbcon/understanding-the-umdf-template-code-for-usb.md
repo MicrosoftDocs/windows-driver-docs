@@ -66,14 +66,14 @@ The next portion declares the tracing macro and the tracing GUID. Note the traci
     WPP_LEVEL_LOGGER(flag)
 
 #define WPP_FLAG_LEVEL_ENABLED(flag, level)                            \
-    (WPP_LEVEL_ENABLED(flag) &amp;&amp;                                        \
+    (WPP_LEVEL_ENABLED(flag) &&                                        \
      WPP_CONTROL(WPP_BIT_ ## flag).Level >= level)
 
 #define WPP_LEVEL_FLAGS_LOGGER(lvl,flags) \
            WPP_LEVEL_LOGGER(flags)
                
 #define WPP_LEVEL_FLAGS_ENABLED(lvl, flags) \
-           (WPP_LEVEL_ENABLED(flags) &amp;&amp; WPP_CONTROL(WPP_BIT_ ## flags).Level >= lvl)
+           (WPP_LEVEL_ENABLED(flags) && WPP_CONTROL(WPP_BIT_ ## flags).Level >= lvl)
 
 ```
 
@@ -119,7 +119,7 @@ EXTERN_C const CLSID CLSID_Driver;
 
 class CMyDriver :
     public CComObjectRootEx<CComMultiThreadModel>,
-    public CComCoClass<CMyDriver, &amp;CLSID_Driver>,
+    public CComCoClass<CMyDriver, &CLSID_Driver>,
     public IDriverEntry
 {
 public:
@@ -204,7 +204,7 @@ CMyDriver::OnDeviceAdd(
 
     hr = CMyDevice::CreateInstanceAndInitialize(FxWdfDriver,
                                                 FxDeviceInit,
-                                                &amp;device);
+                                                &device);
 
     if (SUCCEEDED(hr))
     {
@@ -345,7 +345,7 @@ CMyDevice::Initialize(
 
     FxDeviceInit->SetPowerPolicyOwnership(TRUE);
 
-    hr = this->QueryInterface(__uuidof(IUnknown), (void **)&amp;unknown);
+    hr = this->QueryInterface(__uuidof(IUnknown), (void **)&unknown);
     if (FAILED(hr))
     {
         TraceEvents(TRACE_LEVEL_ERROR,
@@ -355,7 +355,7 @@ CMyDevice::Initialize(
         goto Exit;
     }
 
-    hr = FxDriver->CreateDevice(FxDeviceInit, unknown, &amp;fxDevice);
+    hr = FxDriver->CreateDevice(FxDeviceInit, unknown, &fxDevice);
     DriverSafeRelease(unknown);
     if (FAILED(hr))
     {
@@ -402,7 +402,7 @@ CMyDevice::Configure(
 
     TraceEvents(TRACE_LEVEL_INFORMATION, TRACE_DEVICE, "%!FUNC! Entry");
 
-     hr = CMyIoQueue::CreateInstanceAndInitialize(m_FxDevice, this, &amp;m_IoQueue);
+     hr = CMyIoQueue::CreateInstanceAndInitialize(m_FxDevice, this, &m_IoQueue);
     if (FAILED(hr))
     {
         TraceEvents(TRACE_LEVEL_ERROR,
@@ -422,7 +422,7 @@ CMyDevice::Configure(
         goto Exit;
     } 
 
-    hr = m_FxDevice->CreateDeviceInterface(&amp;GUID_DEVINTERFACE_MyUSBDriver_UMDF_,NULL);
+    hr = m_FxDevice->CreateDeviceInterface(&GUID_DEVINTERFACE_MyUSBDriver_UMDF_,NULL);
     if (FAILED(hr))
     {
         TraceEvents(TRACE_LEVEL_ERROR,
@@ -489,7 +489,7 @@ CMyDevice::OnPrepareHardware(
 
     TraceEvents(TRACE_LEVEL_INFORMATION, TRACE_DEVICE, "%!FUNC! Entry");
 
-    hr = m_FxDevice->QueryInterface(IID_PPV_ARGS(&amp;usbFactory));
+    hr = m_FxDevice->QueryInterface(IID_PPV_ARGS(&usbFactory));
 
     if (FAILED(hr))
     {
@@ -500,7 +500,7 @@ CMyDevice::OnPrepareHardware(
         goto Exit;
     }
 
-    hr = usbFactory->CreateUsbTargetDevice(&amp;usbDevice);
+    hr = usbFactory->CreateUsbTargetDevice(&usbDevice);
 
     if (FAILED(hr))
     {
@@ -656,7 +656,7 @@ CMyIoQueue::CreateInstanceAndInitialize(
 
     TraceEvents(TRACE_LEVEL_INFORMATION, TRACE_QUEUE, "%!FUNC! Entry");
 
-    hr = CComObject<CMyIoQueue>::CreateInstance( &amp;pMyQueue );
+    hr = CComObject<CMyIoQueue>::CreateInstance( &pMyQueue );
     if (FAILED(hr))
     {
         TraceEvents(TRACE_LEVEL_ERROR,
@@ -704,7 +704,7 @@ CMyIoQueue::Initialize(
     assert(FxDevice != NULL);
     assert(MyDevice != NULL);
 
-    hr = this->QueryInterface(__uuidof(IUnknown), (void **)&amp;unknown);
+    hr = this->QueryInterface(__uuidof(IUnknown), (void **)&unknown);
     if (FAILED(hr))
     {
         TraceEvents(TRACE_LEVEL_ERROR,
@@ -719,7 +719,7 @@ CMyIoQueue::Initialize(
                                  WdfIoQueueDispatchParallel,  // Dispatch type
                                  TRUE,     // Power managed?
                                  FALSE,     // Allow zero-length requests?
-                                 &amp;fxQueue); // I/O queue
+                                 &fxQueue); // I/O queue
     DriverSafeRelease(unknown);
 
     if (FAILED(hr))

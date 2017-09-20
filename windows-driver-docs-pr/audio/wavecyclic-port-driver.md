@@ -31,12 +31,15 @@ The WaveCyclic port driver exposes an [IPortWaveCyclic](https://msdn.microsoft.c
 [**IPortWaveCyclic::NewMasterDmaChannel**](https://msdn.microsoft.com/library/windows/hardware/ff536900)
 
 Creates a new master DMA channel object for an audio device with a built-in DMA controller.
+
 [**IPortWaveCyclic::NewSlaveDmaChannel**](https://msdn.microsoft.com/library/windows/hardware/ff536902)
 
 Creates a new subordinate DMA channel object for an audio device without a built-in DMA controller.
+
 [**IPortWaveCyclic::Notify**](https://msdn.microsoft.com/library/windows/hardware/ff536903)
 
 Notifies the port driver that the DMA controller has advanced to a new position in the audio stream.
+
 The WaveCyclic port and miniport driver objects communicate with each other through their respective [IPortWaveCyclic](https://msdn.microsoft.com/library/windows/hardware/ff536899) and [IMiniportWaveCyclic](https://msdn.microsoft.com/library/windows/hardware/ff536714) interfaces. In addition, the port driver communicates with the miniport driver's stream objects through their [IMiniportWaveCyclicStream](https://msdn.microsoft.com/library/windows/hardware/ff536715) interfaces.
 
  

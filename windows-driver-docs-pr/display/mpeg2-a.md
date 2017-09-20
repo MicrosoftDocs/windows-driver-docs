@@ -1,6 +1,6 @@
 ---
-title: MPEG2\_A
-description: MPEG2\_A
+title: MPEG2_A
+description: MPEG2_A
 ms.assetid: 4f9e2aad-4072-4a49-87df-dfc6b4bf5f56
 keywords:
 - MPEG2_A restricted profile WDK DirectX VA

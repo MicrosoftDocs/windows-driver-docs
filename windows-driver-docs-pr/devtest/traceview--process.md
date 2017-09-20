@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Use a **TraceView -process** command to format the binary trace messages in a [trace log](trace-log.md) or from a real-time trace seesion. The **TraceView -process** command creates a text file of a trace messages and a summary file that describes the input and output files.
 
-``` syntax
+```
     traceview -process [EtlFile | -rt SessionName][Parameters]
 
    

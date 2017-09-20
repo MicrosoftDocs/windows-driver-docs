@@ -12,6 +12,8 @@ ms.technology: windows-devices
 
 # Adding support for real hardware to the geolocation driver sample
 
+> [!IMPORTANT] 
+> This documentation and the geolocation driver sample for Windows 8.1 has been deprecated.
 
 The geolocation driver sample was provided as a starting point that simulates a GPS device. This topic describes how you can add support for real hardware.
 

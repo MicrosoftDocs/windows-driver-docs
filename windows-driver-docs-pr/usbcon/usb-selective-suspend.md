@@ -226,7 +226,7 @@ IdleNotificationRequestComplete(
 
     ntStatus = Irp->IoStatus.Status;
     
-    if(!NT_SUCCESS(ntStatus) &amp;&amp; ntStatus != STATUS_NOT_SUPPORTED) 
+    if(!NT_SUCCESS(ntStatus) && ntStatus != STATUS_NOT_SUPPORTED) 
     {
 
         //Idle IRP completes with error.
@@ -292,7 +292,7 @@ IdleNotificationRequestComplete_Exit:
 
     DeviceExtension->PendingIdleIrp = NULL;
 
-    InterlockedExchange(&amp;DeviceExtension->IdleReqPend, 0);
+    InterlockedExchange(&DeviceExtension->IdleReqPend, 0);
 
     if(idleCallbackInfo)
     {
@@ -308,7 +308,7 @@ IdleNotificationRequestComplete_Exit:
 
     IoFreeIrp(Irp);
 
-    KeSetEvent(&amp;DeviceExtension->IdleIrpCompleteEvent, IO_NO_INCREMENT, FALSE);
+    KeSetEvent(&DeviceExtension->IdleIrpCompleteEvent, IO_NO_INCREMENT, FALSE);
 
     return STATUS_MORE_PROCESSING_REQUIRED;
 }

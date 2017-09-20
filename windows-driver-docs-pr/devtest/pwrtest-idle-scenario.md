@@ -23,7 +23,7 @@ You can combine this scenario with the [PwrTest Execution State Scenario](pwrtes
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 pwrtest /idle  [/t:n] [/?] [/es [es_options]
 ```
 
@@ -35,15 +35,15 @@ Runs the [PwrTest Execution State (ES) Scenario](pwrtest-execution-state-scenari
 
 **Examples**
 
-``` syntax
+```
 pwrtest /idle /t:60
 ```
 
-``` syntax
+```
 pwrtest /idle /es /user
 ```
 
-``` syntax
+```
 pwrtest /idle /es /kernel
 ```
 

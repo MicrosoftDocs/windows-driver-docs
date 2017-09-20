@@ -12,6 +12,8 @@ ms.technology: windows-devices
 
 # Definitions and Variables Used in the Examples
 
+> [!IMPORTANT]  
+> WSD Challenger functionality has been deprecated and all WSD Challenger-related documentation will be removed in 2018.
 
 The following code shows constant definitions and common variables that are used in the code examples in this section.
 

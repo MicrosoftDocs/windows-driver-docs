@@ -1,6 +1,6 @@
 ---
 title: INF BitReg Directive
-description: A BitReg directive references one or more INF-writer-defined sections used to set or clear bits within an existing REG\_BINARY-type value entry in the registry. However, this directive is very rarely used in device/driver INF files.
+description: A BitReg directive references one or more INF-writer-defined sections used to set or clear bits within an existing REG_BINARY-type value entry in the registry. However, this directive is very rarely used in device/driver INF files.
 ms.assetid: d9dc601a-e0bb-488f-8bed-221ad600a88c
 keywords:
 - INF BitReg Directive Device and Driver Installation
@@ -20,13 +20,13 @@ ms.technology: windows-devices
 # INF BitReg Directive
 
 
-**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-configurable-inf-file.md).
+**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 
 A **BitReg** directive references one or more INF-writer-defined sections used to set or clear bits within an existing REG\_BINARY-type value entry in the registry. However, this directive is very rarely used in device/driver INF files.
 
-``` syntax
+```
 [DDInstall] | 
 [DDInstall.HW] | 
 [DDInstall.CoInstallers] | 
@@ -46,7 +46,7 @@ A **BitReg** directive can be specified under any of the sections shown in the f
 
 Each named section referenced by a **BitReg** directive has the following form:
 
-``` syntax
+```
 [bit-registry-section]
 reg-root, [subkey], value-entry-name, [flags], byte-mask, byte-to-modify
 reg-root, [subkey], value-entry-name, [flags], byte-mask, byte-to-modify

@@ -65,7 +65,7 @@ You might see several messages before you see the message **The network path was
 
  
 
-``` syntax
+```
 Connecting to computer "MyComputer"
 Installing driver test automation service
 Getting computer system information
@@ -83,7 +83,7 @@ You might see several messages before you see the message **The network name can
 
  
 
-``` syntax
+```
 Connecting to computer "NonExistentComputer"
 Installing driver test automation service
 Getting computer system information
@@ -96,7 +96,7 @@ The messages that are displayed when you enter an incorrect target computer name
 
  
 
-``` syntax
+```
 Connecting to computer "NonExistentComputer"
 Installing driver test automation service
 Could not access remote machine "NonExistentComputer" over the network. 
@@ -107,7 +107,7 @@ target machine.
 
 Or you might be prompted to enter credentials.
 
-``` syntax
+```
 Enter your password to connect to: NonExistentComputer
 ```
 
@@ -122,7 +122,7 @@ When you start to provision a target computer, you might see a message that says
 1.  Deploy the driver with breakpoints disabled. 
 2.  Manually break into the kernel-mode debugger. 
 3.  Set an exception on load of the module:
-``` syntax
+```
 sxe ld <DriverName>
 ``` 
 4.  Enable the breakpoint and resume execution. 

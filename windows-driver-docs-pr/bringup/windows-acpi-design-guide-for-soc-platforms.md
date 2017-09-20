@@ -38,7 +38,7 @@ This section contains guidelines for implementing Windows PCs and devices that s
 </tr>
 <tr class="even">
 <td><p>[ACPI system description tables](acpi-system-description-tables.md)</p></td>
-<td><p>Implementation of the Advanced Configuration and Power Interface (ACPI) Hardware Specification is not required on SoC-based platforms, but much of the ACPI Software Specification is (or can be) required. ACPI defines a generic, extensible table-passing mechanism, plus specific tables for describing the platform to the operating system.</p></td>
+<td><p>Implementation of the Advanced Configuration and Power Interface (ACPI) Hardware Specification is not required on SoC-based platforms or Windows Server systems that are BIOS-based, but much of the ACPI Software Specification is (or can be) required. ACPI defines a generic, extensible table-passing mechanism, plus specific tables for describing the platform to the operating system.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[Device management namespace objects](device-management-namespace-objects.md)</p></td>

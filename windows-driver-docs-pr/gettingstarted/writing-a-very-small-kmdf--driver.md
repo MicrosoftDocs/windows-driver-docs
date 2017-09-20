@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 This topic describes how to write a very small [Universal Windows driver](https://msdn.microsoft.com/windows-drivers/develop/getting_started_with_universal_drivers) using Kernel-Mode Driver Framework (KMDF). 
 
-To get started, be sure you have [Microsoft Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=698539) and the [Windows Driver Kit (WDK) 10](https://go.microsoft.com/fwlink/p/?LinkId=733614) installed.
+To get started, be sure you have [Microsoft Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=698539) and the [Windows Driver Kit (WDK) 10](https://go.microsoft.com/fwlink/p/?LinkId=733614) installed.
 
 [Debugging Tools for Windows](http://go.microsoft.com/fwlink/p?linkid=223405) is included when you install the WDK.
 
@@ -28,9 +28,9 @@ To get started, be sure you have [Microsoft Visual Studio 2015](https://go.micro
 3.  In the middle pane, select **Kernel Mode Driver, Empty (KMDF)**.
 4.  In the **Name** field, enter "KmdfHelloWorld" for the project name.
 
-    **Note**  \*When you create a new KMDF or UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
+    **Note**  \*When you create a new KMDF or UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
 
-     
+     
 
 5.  In the **Location** field, enter the directory where you want to create the new project.
 6.  Check **Create directory for solution**. Click **OK**.
@@ -46,9 +46,9 @@ To get started, be sure you have [Microsoft Visual Studio 2015](https://go.micro
 8.  In the **Solution Explorer** window, right-click **KmdfHelloWorld** and choose **Add &gt; New Item**.
 9.  In the **Add New Item** dialog box, select **C++ File**. For **Name**, enter "Driver.c".
 
-    **Note**  The file name extension is **.c**, not **.cpp**.
+    **Note**  The file name extension is **.c**, not **.cpp**.
 
-     
+     
 
     Click **Add**. The Driver.c file is added under Source Files, as shown here.
 
@@ -115,7 +115,7 @@ So far you've used Visual Studio to build a driver on the host computer. Now you
 
     ![screen shot showing the kmdfhelloworld package property pages window with the deployment driver install selected ](images/vs2015-kmdf-hello-world-property-pages.png)
 
-    **Note**  In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**.
+    **Note**  In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**.
     You'll see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **KmdfHelloWorld &gt; Driver Files**, and double-click KmdfHelloWorld.inf. The hardware ID is located under \[Standard.NT$ARCH$\].
 
     ```ManagedCPlusPlus
@@ -123,7 +123,7 @@ So far you've used Visual Studio to build a driver on the host computer. Now you
     %KmdfHelloWorld.DeviceDesc%=KmdfHelloWorld_Device, Root\KmdfHelloWorld
     ```
 
-     
+     
 
 7.  On the **Debug** menu, choose **Start Debugging**, or press **F5** on the keyboard.
 8.  Visual Studio first shows progress in the **Output** window. Then it opens the **Debugger Immediate** window and continues to show progress.
@@ -153,9 +153,9 @@ So far you've used Visual Studio to build a driver on the host computer. Now you
 
 [Write your first driver](writing-your-first-driver.md)
 
- 
+ 
 
- 
+ 
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[wdkgetstart\wdkgetstart]:%20Write%20a%20universal%20Hello%20World%20driver%20%28KMDF%29%20%20RELEASE:%20%281/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 

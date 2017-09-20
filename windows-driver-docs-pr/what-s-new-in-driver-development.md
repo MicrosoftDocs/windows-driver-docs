@@ -59,9 +59,9 @@ We're making the docs more community-driven. On many pages of the Windows driver
 
 ![screenshot of contribute button](contribute-button.png)
 
-When you click **Contribute**, you'll arrive at the Markdown source file for that topic in a [GitHub repository](https://github.com/Microsoft/windows-driver-docs). You can click **Edit** and suggest changes right here.
+When you click **Contribute**, you'll arrive at the Markdown source file for that topic in a [GitHub repository](https://github.com/MicrosoftDocs/windows-driver-docs). You can click **Edit** and suggest changes right here.
 
-For more details, see [CONTRIBUTING.md](https://github.com/Microsoft/windows-driver-docs/blob/staging/CONTRIBUTING.md) in the repo. And thanks for taking the time to improve the docs!
+For more details, see [CONTRIBUTING.md](https://github.com/MicrosoftDocs/windows-driver-docs/blob/staging/CONTRIBUTING.md) in the repo. And thanks for taking the time to improve the docs!
 
 ### Debugging Tools for Windows
 
@@ -158,8 +158,12 @@ This section describes new features and improvements for driver development in W
 
 New topics:
 
-* New DDIs to support APO Module Communications discovery
-* Implementing Audio Module Communication
+* [Implementing Audio Module Communication](https://docs.microsoft.com/en-us/windows-hardware/drivers/audio/implementing-audio-module-communication) - Describes the support for communication from Universal Windows Platform (UWP) apps to kernel mode audio device drivers.
+* New DDIs and properties reference topics to support APO Module Communications discovery:
+    - [KSPROPSETID_AudioModule](https://msdn.microsoft.com/en-us/library/windows/hardware/mt808144.aspx) - A new KS Property Set that defines three properties specific to audio modules.
+    - [KSPROPERTY_AUDIOMODULE_COMMAND](https://msdn.microsoft.com/library/windows/hardware/mt808141.aspx) property - Allows Audio Module clients to send custom commands to query and set parameters on Audio Modules. 
+    - [IPortClsNotifications](https://msdn.microsoft.com/library/windows/hardware/mt808133.aspx) - New Port Class Notifications that provide notification helpers to miniports, to support audio module communication.
+
 
 ### Battery
 

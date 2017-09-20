@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 An **AddProperty** directive references one or more INF file sections that modify the [device properties](device-properties.md) that are set for a device instance, a [device setup class](device-setup-classes.md), a [device interface class](device-interface-classes.md), or a device interface.
 
-``` syntax
+```
 [DDInstall] |
 [DDInstall.nt] |
 [DDInstall.ntx86] |
@@ -51,7 +51,7 @@ Each *add-property-section* can have entries to do the following:
 
 An *add-property-section* that is referenced by an **AddProperty** directive has the following format:
 
-``` syntax
+```
 [add-property-section]
 (property-name, , , [flags], value]) | 
 ({property-category-guid}, property-pid, type, [flags], value)

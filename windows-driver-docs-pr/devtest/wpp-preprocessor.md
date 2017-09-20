@@ -38,7 +38,7 @@ You can invoke the WPP preprocessor using Visual Studio and the MSBuild environm
 
     If you need to provide more than one configuration file, for instance to specify custom data types, reference your file in **Command Line** using the **-scan** option, for example:
 
-    ``` syntax
+    ```
     -scan:"$(KMDF_INC_PATH)\$(KMDF_VER_PATH)\WdfTraceEnums.h"
     ```
 

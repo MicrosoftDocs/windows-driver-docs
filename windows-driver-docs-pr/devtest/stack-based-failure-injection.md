@@ -66,13 +66,13 @@ Most of the issues found with Stack Based Failure Injection result in bug checks
 
 -   From the debugger command prompt, type the following command: **!***&lt;path&gt;\\***kmautofaildbg.dll.autofail**. For example, assuming debugger extensions are installed at c:\\dbgext and that kmautofail.pdb is in the symbol path, you would enter the following command:
 
-    ``` syntax
+    ```
     !c:\dbgext\kmautofaildbg.dll.autofail
     ```
 
 This will dump information to your debugger showing the call stacks from the most recent failures injected. Each entry looks something like the following, taken from a real test run. In the following example, Stack Based Failure Injection is enabled on Mydriver.sys
 
-``` syntax
+```
 Sequence: 2, Test Number: 0, Process ID: 0, Thread ID: 0
                  IRQ Level: 2, HASH: 0xea98a56083aae93c
  0xfffff8800129ed83 kmautofail!ShimHookExAllocatePoolWithTag+0x37
@@ -99,7 +99,7 @@ Note that if a driver has returned failure from its [*DriverEntry*](https://msdn
 
 This next entry shows a call to the driver by means of an IOCTL from user mode. Note the process ID and the IRQ level. Since Mydriver.sys is an NDIS filter driver, the IOCTL came through Ndis.sys. Note that nt!NtDeviceIoControlFile is on the stack. Any test that you run on your driver that uses IOCTLs will go through this function.
 
-``` syntax
+```
 Sequence: 5, Test Number: 0, Process ID: 2052, Thread ID: 4588
                  IRQ Level: 0, HASH: 0xecd4650e9c25ee4
  0xfffff8800129ed83 kmautofail!ShimHookExAllocatePoolWithTag+0x37

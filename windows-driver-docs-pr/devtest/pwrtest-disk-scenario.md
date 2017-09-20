@@ -24,7 +24,7 @@ This scenario does not work for all types of disks or controllers because not al
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 pwrtest /disk  [/t:n] [/?] 
 ```
 
@@ -33,11 +33,11 @@ Specifies the total time (in minutes) for the scenario to run (the default value
 
 **Examples**
 
-``` syntax
+```
 pwrtest /disk /t:60
 ```
 
-``` syntax
+```
 pwrtest /disk
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: DevCon Dp\_delete
+title: DevCon Dp_delete
 description: Deletes a third-party (OEM) driver package from the driver store on the local computer. This command deletes the INF file, the PNF file, and the associated catalog file (.cat).
 ms.assetid: bc9d8d66-4aa1-423b-b907-40a8c0194eb1
 keywords:
@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Deletes a third-party (OEM) driver package from the driver store on the local computer. This command deletes the INF file, the PNF file, and the associated catalog file (.cat).
 
-``` syntax
+```
     devcon dp_delete [-f] inf
 
    

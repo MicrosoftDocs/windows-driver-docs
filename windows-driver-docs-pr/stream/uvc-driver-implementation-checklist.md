@@ -17,7 +17,7 @@ Use these links to get acquainted with UVC:
 
 - Access the [USB class](http://www.usb.org/developers/docs/devclass_docs/) documentation (non-UVC specific) at USB.org
 
-- Dowmload the [USB Video Class 1.5](http://www.usb.org/developers/docs/devclass_docs/USB_Video_Class_1_5.zip) documentation from USB.org
+- Download the [USB Video Class 1.5](http://www.usb.org/developers/docs/devclass_docs/USB_Video_Class_1_5.zip) documentation from USB.org
 
 - Review the [USB Video Class driver overview](https://msdn.microsoft.com/en-us/windows/hardware/drivers/stream/usb-video-class-driver-overview) on MSDN 
 

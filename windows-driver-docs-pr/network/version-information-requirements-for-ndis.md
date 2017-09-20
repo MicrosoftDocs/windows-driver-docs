@@ -24,7 +24,7 @@ NDIS supports various header version information requirements that guarantee con
 ## Related topics
 
 
-[NDIS Versions in Network Drivers](ndis-versions-in-network-drivers.md)
+[Overview of NDIS versions](overview-of-ndis-versions.md)
 
 [Specifying NDIS Version Information](specifying-ndis-version-information.md)
 

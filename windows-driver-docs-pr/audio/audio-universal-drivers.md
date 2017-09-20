@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 In Windows 10 you can write a universal audio driver that will work across many types of hardware. This topics discusses the benefits of this approach as well as the differences between different platforms. In addition to the Universal Windows drivers for audio, Windows continues to support previous audio driver technologies, such as WDM.
 
-## <span id="Getting_Started_with_Universal_Windows_drivers_for_Audio"></span><span id="getting_started_with_universal_windows_drivers_for_audio"></span><span id="GETTING_STARTED_WITH_UNIVERSAL_WINDOWS_DRIVERS_FOR_AUDIO"></span>Getting Started with Universal Windows drivers for Audio
+## <span id="getting_started_with_universal_windows_drivers_for_audio"></span>Getting Started with Universal Windows drivers for Audio
 
 
 IHVs can develop a Universal Windows driver that works on all devices (desktops, laptops, tablets, phones). This can reduces development time and cost for initial development and later code maintenance.
@@ -27,7 +27,7 @@ These tools are available to develop Universal Windows driver support:
 
 -   Updated DDI reference documentation: The DDI reference documentation is being updated to indicate which DDIs are supported by Universal Windows drivers. For more information, see [Audio Devices Reference](https://msdn.microsoft.com/library/windows/hardware/ff536192).
 
-## <span id="Create_a_Universal_Audio_Driver"></span><span id="create_a_universal_audio_driver"></span><span id="CREATE_A_UNIVERSAL_AUDIO_DRIVER"></span>Create a Universal Audio Driver
+## <span id="create_a_universal_audio_driver"></span>Create a Universal Audio Driver
 
 
 For step-by-step guidance, see [Getting Started with Universal Windows Drivers](https://msdn.microsoft.com/windows-drivers/develop/getting_started_with_universal_drivers). Here is a summary of the steps:
@@ -40,12 +40,12 @@ For step-by-step guidance, see [Getting Started with Universal Windows Drivers](
 
 4. Build, install, deploy, and debug the driver for Windows 10 for desktop editions or Windows 10 Mobile.
 
-## <span id="Sample_Code"></span><span id="sample_code"></span><span id="SAMPLE_CODE"></span>Sample Code
+## <span id="sample_code"></span>Sample Code
 
 
 Sysvad and SwapAPO have been converted to be Universal Windows driver samples. For more information, see [Sample Audio Drivers](sample-audio-drivers.md).
 
-## <span id="Available_Programming_Interfaces_for_Universal_Windows_drivers_for_Audio"></span><span id="available_programming_interfaces_for_universal_windows_drivers_for_audio"></span><span id="AVAILABLE_PROGRAMMING_INTERFACES_FOR_UNIVERSAL_WINDOWS_DRIVERS_FOR_AUDIO"></span>Available Programming Interfaces for Universal Windows drivers for Audio
+## <span id="available_programming_interfaces_for_universal_windows_drivers_for_audio"></span>Available Programming Interfaces for Universal Windows drivers for Audio
 
 
 Starting with Windows 10, the driver programming interfaces are part of OneCoreUAP-based editions of Windows. By using that common set, you can write a Universal Windows driver. Those drivers will run on both Windows 10 for desktop editions and Windows 10 Mobile, and other Windows 10 versions.
@@ -66,7 +66,7 @@ The following DDIs to are available when working with universal audio drivers.
 
 -   [Port Class Audio Driver Reference](https://msdn.microsoft.com/library/windows/hardware/ff537764)
 
-## <span id="_Convert_an_Existing_Audio_Driver_to_a_Universal_Windows_driver"></span><span id="_convert_an_existing_audio_driver_to_a_universal_windows_driver"></span><span id="_CONVERT_AN_EXISTING_AUDIO_DRIVER_TO_A_UNIVERSAL_WINDOWS_DRIVER"></span> Convert an Existing Audio Driver to a Universal Windows driver
+## <span id="_convert_an_existing_audio_driver_to_a_universal_windows_driver"></span> Convert an Existing Audio Driver to a Universal Windows driver
 
 
 Follow this process to convert an existing audio driver to a Universal Windows driver.
@@ -81,7 +81,109 @@ Follow this process to convert an existing audio driver to a Universal Windows d
 
 5. Replace those calls with alternate calls, or create a code workaround, or write a new driver.
 
-## <span id="Building_the_Sysvad_Universal_Audio_Sample_for_Windows_10_Desktop"></span><span id="building_the_sysvad_universal_audio_sample_for_windows_10_desktop"></span><span id="BUILDING_THE_SYSVAD_UNIVERSAL_AUDIO_SAMPLE_FOR_WINDOWS_10_DESKTOP"></span>Building the Sysvad Universal Audio Sample for Windows 10 Desktop
+
+## <span id="creating-a-componentized-audio-driver-installation"></span> Creating a componentized audio driver installation
+
+### Overview
+
+To create a smoother and more reliable install experience and to better support component servicing, divide the driver installation process into the following components.
+
+- DSP (if present) and Codec
+- APO
+- OEM Customizations
+
+Optionally, separate INF files can be used for the DSP and Codec.
+
+This diagram summarizes a componentized audio installation.
+
+![The componentized audio stack showing DSP driver codec and APOs](images/audio-componentized-stack-diagram.png)
+
+A separate extension INF file is used for each software component. For more information, see 
+[Using an Extension INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file).
+
+An extension INF file must be a universal INF file. For more information, see [Using a Universal INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file).
+
+For information about adding software using INF files, see [Using a Component INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-component-inf-file).
+
+
+### SYSVAD  componentized INF files
+
+To see an example of componentized INF files examine the [sysvad/TabletAudioSample](https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad/TabletAudioSample), on Github. 
+
+| File name                              | Description                                                                    |
+|----------------------------------------|--------------------------------------------------------------------------------|
+| ComponentizedAudioSample.inf           | The base componentized sample audio INF file.                                  |
+| ComponentizedAudioSampleExtension.inf  | The extension driver for the sysvad base with additional OEM customizations.   |
+| ComponentizedApoSample.inf             | An APO sample extension INF file.                                              |
+
+The traditional INF files continue to be available in the SYSVAD sample.
+
+| File name                      | Description                                                                    |
+|--------------------------------|--------------------------------------------------------------------------------|
+| tabletaudiosample.inf          | A desktop monolitic INF file that contains all of the information needed to install the driver. |
+| phoneaudiosample.inf           | A phone monolitic INF file that contains all of the information needed to install the driver.   |
+
+
+
+### APO vendor specific tuning parameters and feature configuration
+
+All APO vendor system specific settings, parameters, and tuning values must be installed via the audio OEM extension INF package. In many cases, this can be performed in a simple manner with the AddReg directive. In more complex cases, a tuning file can be used.  
+ 
+Base driver packages must not depend on these customizations in order to function (although of course functionality may be reduced).  
+
+
+### Programmatically launching UWP Hardware Support Apps
+
+To programmatically launch a UWP Hardware Support App, based on a driver event (for example, when a new audio device is connected), use the Windows Shell APIs. The Windows 10 Shell APIs support a method for launching UWP UI based on resource activation, or directly via [IApplicationActivationManager](https://msdn.microsoft.com/library/windows/desktop/hh706903.aspx). You can find more details on automated launching for UWP applications in [Automate launching Windows 10 UWP apps](https://docs.microsoft.com/windows/uwp/xbox-apps/automate-launching-uwp-apps#launch-activation).  
+
+### APO and device driver vendor use of the AudioModules API
+
+The Audio Modules API/DDI is designed to standardize the communication transport (but not the protocol) for commands passed between a UWP application or user-mode service to a kernel driver module or DSP processing block. Audio Modules requires a driver implementing the correct DDI to support module enumeration and communication. The commands are passed as binary and interpretation/definition is left up to the creator.  
+ 
+Audio Modules is not currently designed to facilitate direct communication between a UWP app and a SW APO running in the audio engine. 
+
+For more information about audio modules, see [Implementing Audio Module Communication](https://docs.microsoft.com/windows-hardware/drivers/audio/implementing-audio-module-communication) and [Configure and query audio device modules](https://docs.microsoft.com/windows-hardware/drivers/audio/configure-and-query-audiodevicemodules).
+
+
+### APO HWID strings construction  
+ 
+APO Hardware IDs incorporate both standard information and vendor-defined strings. 
+
+They are constructed as follows: 
+
+```
+APO\VEN_v(4)&AID_a(4)&SUBSYS_ n(4)s(4) &REV_r(4) 
+APO\VEN_v(4)&AID_a(4)&SUBSYS_ n(4)s(4) 
+APO\VEN_v(4)&AID_a(4) 
+```
+
+Where: 
+
+- v(4) is the 4-character identifier for the APO device vendor. This will be managed by Microsoft.  
+- a(4) is the 4-character identifier for the APO, defined by the APO vendor.  
+- n(4) is the 4-character PCI SIG-assigned identifier for the vendor of the subsystem for the parent device. This is typically the OEM identifier. 
+- s(4) is the 4-character vendor-defined subsystem identifier for the parent device. This is typically the OEM product identifier. 
+
+
+### Plug and Play INF version and date evaluation for driver update   
+
+The Windows Plug and Play system evaluates the date and the driver version to determine which drive to install when multiple drivers exist.  For more information, see [How Windows Ranks Drivers](https://docs.microsoft.com/windows-hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-). 
+
+To allow the latest driver to be used, be sure and update the date and version, for each new version of the driver.
+
+
+### APO driver registry key
+
+For third party-defined audio driver/APO registry keys, use the HKR with the exception of HKLM\System\CurrentControlSet. 
+ 
+
+### Use a Windows Service to facilitate UWP <-> APO communication
+ 
+A Windows Service is not strictly required for management of user-mode components like APOs, however, if your design includes an RPC server to facilitate UWP <-> APO communication, we recommend implementing that functionality in a Windows Service that then controls the APO running in the audio engine.  
+
+
+
+## <span id="building_the_sysvad_universal_audio_sample_for_windows_10_desktop"></span>Building the Sysvad Universal Audio Sample for Windows 10 Desktop
 
 
 Complete the following steps to build the sysvad sample for Windows 10 desktop.
@@ -127,7 +229,7 @@ Follow these steps to install the driver using the PnpUtil on the target system.
 
 5. Locate an MP3 or other audio file on the target computer and double-click to play it. Then in the Sound dialog box, verify that there is activity in the volume level indicator associated with the Microsoft Virtual Audio Device (WDM) - Sysvad Sample driver.
 
-## <span id="Building_the_Sysvad_Universal_Audio_Sample_for_Windows_10_Mobile"></span><span id="building_the_sysvad_universal_audio_sample_for_windows_10_mobile"></span><span id="BUILDING_THE_SYSVAD_UNIVERSAL_AUDIO_SAMPLE_FOR_WINDOWS_10_MOBILE"></span>Building the Sysvad Universal Audio Sample for Windows 10 Mobile
+## <span id="building_the_sysvad_universal_audio_sample_for_windows_10_mobile"></span>Building the Sysvad Universal Audio Sample for Windows 10 Mobile
 
 
 Complete the following steps to build the sysvad sample for Windows 10 Mobile.

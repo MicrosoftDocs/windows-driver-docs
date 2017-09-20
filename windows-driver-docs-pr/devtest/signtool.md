@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 SignTool (Signtool.exe) is a command-line [CryptoAPI](http://go.microsoft.com/fwlink/p/?linkid=136391) tool that digitally-signs files, verifies signatures in files, and time stamps files.
 
-``` syntax
+```
     SignTool [Operation] [Options] [FileName ...]
 ```
 

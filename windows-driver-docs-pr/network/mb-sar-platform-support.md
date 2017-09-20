@@ -10,13 +10,15 @@ ms.technology: windows-devices
 
 # MB SAR Platform Support
 
+## Overview
+
 Traditionally, OEMs have implemented proprietary solutions for Selective Absorption Rate (SAR). This requires the OEM to implement a device service command that is either only identified between their User Mode Driver (UMDF) and the modem or requires kernel mode components to directly interact with the modem. Some OEMs may even have a hybrid solution where they have both UMDF-modem and kernel mode-modem components. As radio radiation awareness has increased, standardizing the interface for OEM software components to pass through the SAR command to the modem introduces the following benefits:
 
 1.	OEMs can move toward user mode components and makes the system more stable, as errors in user mode are not fatal to the system compared to kernel mode.
 2.	Windows provides a platform standard interface and reduces the proprietary implementation from OEMs.
 3.	Services in the platform that want to take advantage of SAR can retrieve the information from the modem.
 
-Starting in Windows 10 Version 1703, Windows supports passing through SAR configuration and modem transmission status. Windows will continue to leave the SAR business logic to IHVs and OEMs to use as a self-differentiating factor but will provide an interface to streamline the platform. Two new NDIS OIDs and two new MBIM CIDs have been defined to support this interface. Devices that want to take advantage of OS support must implement both commands.
+Starting in Windows 10, version 1703, Windows supports passing through SAR configuration and modem transmission status. Windows will continue to leave the SAR business logic to IHVs and OEMs to use as a self-differentiating factor but will provide an interface to streamline the platform. Two new NDIS OIDs and two new MBIM CIDs have been defined to support this interface. Devices that want to take advantage of OS support must implement both commands.
 
 This feature is supported by adding in two new OIDs and CIDs. For IHV partners that implement MBIM, only the CID version needs to be supported.
 
@@ -32,12 +34,12 @@ UUID Value = **68223D04-9F6C-4E0F-822D-28441FB72340**
 
 | CID | Minimum OS Version |
 | --- | --- |
-| MBIM_CID_MS_SAR_CONFIG | Windows 10 Version 1703 |
-| MBIM_CID_MS_TRANSMISSION_STATUS | Windows 10 Version 1703 |
+| MBIM_CID_MS_SAR_CONFIG | Windows 10, version 1703 |
+| MBIM_CID_MS_TRANSMISSION_STATUS | Windows 10, version 1703 |
 
-### MBIM_CID_MS_SAR_CONFIG
+## MBIM_CID_MS_SAR_CONFIG
 
-#### Description
+### Description
 
 This command sets or returns information about a MB device’s SAR back off mode and level. The MB device must act on the SAR back off command immediately by overwriting the current Transmit power limits and applying them to the transmitting antennas. If an antenna’s SAR configuration was not changed by the operating system, it should maintain its current setting. For example, if the operating system sets antenna 1 to be SAR back off index 1, then antenna 2’s configuration should be kept the same without any changes.
 
@@ -45,32 +47,32 @@ It is expected for devices that support this command to implement Query so they 
 
 After each Query or Set response, the modem should return a MBIM_MS_SAR_CONFIG structure that contains information for all antennas on the device associated with Mobile Broadband.
 
-##### Query
+#### Query
 
 The InformationBuffer on MBIM_COMMAND_MSG is not used. MBIM_MS_SAR_CONFIG is returned in the InformationBuffer of MBIM_COMMAND_DONE.
 
-##### Set
+#### Set
 
 The InformationBuffer on MBIM_COMMAND_MSG contains a MBIM_MS_SAR_CONFIG. MBIM_MS_SAR_CONFIG is returned in the InformationBuffer of MBIM_COMMAND_DONE.
 
-##### Unsolicited Events
+#### Unsolicited Events
 
 Not applicable.
 
-#### Parameters
+### Parameters
 
 |  | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_SET_SAR_CONFIG | Not applicable | Not applicable |
 | Response | MBIM_MS_SAR_CONFIG | MBIM_MS_SAR_CONFIG | Not applicable |
 
-#### Data Structures
+### Data Structures
 
-##### Query
+#### Query
 
 The InformationBuffer shall be NULL and InformationBufferLength shall be zero.
 
-##### Set
+#### Set
 
 The following MBIM_MS_SET_SAR_CONFIG structure shall be used in the InformationBuffer.
 
@@ -102,10 +104,10 @@ MBIM_MS_SAR_CONFIG_STATE describes the possible states for SAR backoff for the a
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
-| 0 | 4 | SARAntennaIndex | UINT32 | An antenna index that corresponds to the SARBackOffIndex field in the MBIM_MS_SAR_CONFIG_STATE table. It corresponds to the antenna number and is left to OEM implementation to index each antenna on the device. If this value is set to 0xFFFFFFFFF, the SARBackOffIndex should be applied to all antennas. |
-| 4 | 4 | SARBAckOffIndex | UINT32 | A back off index that corresponds to the back off table that is defined by OEM or modem vendor. The table has individual bands and associated back off parameters. |
+| 0 | 4 | SARAntennaIndex | UINT32 | An antenna index that corresponds to the **SARBackOffIndex** field in this table. It corresponds to the antenna number and is left to OEM implementation to index each antenna on the device. Any index is valid for this value. If this value is set to **0xFFFFFFFF** in a *Set* command, the **SARBackOffIndex** should be applied to all antennas. If this value is set to **0xFFFFFFFF** in response, it indicates that **SARBackOffIndex** is applied to all antennas. |
+| 4 | 4 | SARBAckOffIndex | UINT32 | A back off index that corresponds to the back off table that is defined by the OEM or modem vendor. The table has individual bands and associated back off parameters. |
 
-##### Response
+#### Response
 
 The following MBIM_MS_SAR_CONFIG structure shall be used in the InformationBuffer. MBIM_MS_SAR_CONFIG specifies the configuration for SAR.
 
@@ -125,11 +127,11 @@ The following MBIM_MS_SAR_HARDWARE_WIFI_INTEGRATION structure is used in the pre
 | MBIMMsSARWifiHardwareIntegrated  | 0 | Wi-Fi and Cellular modem SAR is integrated in the device. |
 | MBIMMsSARWifiHardwareNotIntegrated | 1 | Wi-Fi and Cellular modem SAR is not integrated in the device. |
 
-##### Notification
+#### Notification
 
 Not applicable.
 
-#### Status Codes
+### Status Codes
 
 | Error Code | Description |
 | --- | --- |
@@ -140,9 +142,9 @@ Not applicable.
 | MBIM_STATUS_INVALID_PARAMETERS | The operation failed because of invalid parameters. |
 | MBIM_STATUS_OPERATION_NOT_ALLOWED | The operation failed because the operation is not allowed. |
 
-### MBIM_CID_MS_TRANSMISSION_STATUS
+## MBIM_CID_MS_TRANSMISSION_STATUS
 
-#### Description
+### Description
 
 This command is used to enable or disable the notification from the modem on transmit state. It is a per-executor command as each executor can have different channel transmit state. For example, a dual SIM modem might have one on LTE and the other on GSM. At the same time, it can be used to provide the transmit status of the modem. This notification could be used for clients that are interested in whether the modem is transmitting data or not. The modem should provide notification any time there is a start or end of TX traffic. If the duty cycle is too small and cannot be provided in real time to the host, then the TX state can be kept as active for a set time with a hysteresis timer before it sends an update of the state. As an example, it might be that there was a short burst of TX and the modem could not provide the start and end notification in time. The modem should send up notification when the TX traffic starts and should continue to monitor its TX traffic during the hysteresis timer. If no more TX traffic was generated within the timer’s timeframe, then it should report that TX traffic has ended.
 
@@ -152,32 +154,32 @@ The Wi-Fi back off mechanism and command is out of scope of this specification.
 
 OEMs that use this command should be aware of the potential power impact as the modem may be sending up transmission-related notifications at all times, including reduced power states. The OS, by default, will not allow this notification to awake the AP during Modern Standby to improve power performance.
 
-##### Query
+#### Query
 
 The InformationBuffer on MBIM_COMMAND_MSG is not used. MBIM_MS_SET_TRANSMISSION_STATUS_INFO is returned in the InformationBuffer of MBIM_COMMAND_DONE.
 
-##### Set
+#### Set
 
 The InformationBuffer on MBIM_COMMAND_MSG contains MBIM_MS_SET_TRANSMISSION_STATUS. MBIM_MS_SET_TRANSIMISSION_STATUS _INFO is returned in the InformationBuffer of MBIM_COMMAND_DONE.
 
-##### Unsolicited Events
+#### Unsolicited Events
 
 Unsolicited events contain MBIM_MS_TRANSMISSION_STATUS_INFO and are sent when there is a change to the active over-the-air (OTA) channels. For example, if a modem started uploading packet data, it would be required to set up uplink channels when it uses the network data channel so that it can upload payloads. This would trigger the notification to be provided to the operating system.
 
-#### Parameters
+### Parameters
 
 |  | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_SET_TRANSMISSION_STATUS | Not applicable | Not applicable |
 | Response | MBIM_MS_TRANSMISSION_STATUS_INFO | MBIM_MS_TRANSMISSION_STATUS_INFO | MBIM_MS_TRANSMISSION_STATUS_INFO |
 
-#### Data Structures
+### Data Structures
 
-##### Query
+#### Query
 
 The InformationBuffer on MBIM_COMMAND_MSG is not used. MBIM_MS_TRANSMISSION_STATUS_INFO is returned in the InformationBuffer of MBIM_COMMAND_DONE. 
 
-##### Set
+#### Set
 
 The following MBIM_MS_SET_TRANSMISSION_STATUS structure shall be used in the InformationBuffer.
 
@@ -193,7 +195,7 @@ The following MBIM_MS_TRANSMISSION_STATUS_NOTIFICATION structure is used in the 
 | MBIMMsTransmissionNotificationDisabled | 0 | Modem channel transmission status notification disabled. |
 | MBIMMsTransmissionNotificationEnabled | 1 | Modem channel transmission status notification enabled. |
 
-##### Response
+#### Response
 
 The following MBIM_MS_TRANSMISSION_STATUS_INFO structure is used for response.
 
@@ -210,11 +212,11 @@ The following MBIM_MS_TRANSMISSION_STATUS structure is used in the preceding tab
 | MBIMMsTransmissionStateInactive | 0 | The modem was not actively transmitting data without any continuous lapse of transmission for the last HysteresisTimer value. |
 | MBIMMsTransmissionStateActive | 1 | The modem was actively transmitting data. |
 
-##### Notification
+#### Notification
 
 For more information, see the MBIM_MS_SET_TRANSMISSION_STATUS_INFO table.
 
-#### Status Codes
+### Status Codes
 
 | Error Code | Description |
 | --- | --- |

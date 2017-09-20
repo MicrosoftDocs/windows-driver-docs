@@ -1,6 +1,6 @@
 ---
 title: ChkINF Command Syntax
-description: The ChkINF scripts are located in the WindowSdkDir \\Tools\\x86\\Chkinf subdirectory.
+description: The ChkINF scripts are located in the %WindowSdkDir%\Tools\x86\Chkinf subdirectory.
 ms.assetid: 62919c28-73f1-4401-95de-59ac45e4a8e7
 keywords:
 - ChkINF Command Syntax Driver Development Tools
@@ -24,7 +24,7 @@ The ChkINF scripts are located in the %WindowSdkDir%\\Tools\\x86\\Chkinf subdire
 
 Use the following command syntax:
 
-``` syntax
+```
     chkinf {INFFile [INFFile...] | Directory} [/L TextFile] [/B] [/LO] [/DC Options]
 
    
