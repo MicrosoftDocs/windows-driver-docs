@@ -286,36 +286,18 @@ for (var api of localApis)
 
 ## Calls notes --- to be removed...
 
- This extension projects raw call data from ttdanalyze (provided by @$cursession.TTD.Calls())
- into friendlier data that is specific to Heap APIs and hides Windows implementation details.
+ This extension projects raw call data from ttdanalyze (provided by @$cursession.TTD.Calls()) into friendlier data that is specific to Heap APIs and hides Windows implementation details.
 
  The following extensions to the datamodel are provided:
 
  dx @$cursession.TTD.Calls()
 
- --------------------------------
  Returns an indexable list of heap API operations that change the address space in some way:
- alloc, realloc, free and a few others. It does not return heap API operations that are just
- queries (e.g. getting size of allocated block.)
+ alloc, realloc, free and a few others. It does not return heap API operations that are just queries (e.g. getting size of allocated block.)
 
- 0:000> dx -g @$cursession.TTDUtils.HeapAPICalls()
- ===================================================================================================================
- =           = Action   = Heap             = Address          = Size     = Flags  = (+) TimeRange         = Result =
- ===================================================================================================================
- = [0x0]     - Alloc    - 0x1a3f7430000    - 0x1a3f7459b40    - 0x208    - 0x0    - [10:EE, 12:36]        -        =
- = [0x1]     - Free     - 0x1a3f7430000    - 0x1a3f7459b40    -          - 0x0    - [12:472, 14:2B]       - 0x1    =
- = [0x2]     - Alloc    - 0x1a3f7430000    - 0x1a3f744bb90    - 0x7b     - 0x8    - [14:23A8, 16:36]      -        =
- = [0x3]     - Alloc    - 0x1a3f7430000    - 0x1a3f744bc40    - 0x46     - 0x0    - [17:79D, 19:36]       -        =
- = [0x4]     - Free     - 0x1a3f7430000    - 0x1a3f744bc40    -          - 0x0    - [1D:32, 1F:2B]        - 0x1    =
- = [0x5]     - Alloc    - 0x1a3f7430000    - 0x1a3f744bc40    - 0x10     - 0x0    - [50:167, 52:36]       -        =
- = [0x6]     - Alloc    - 0x1a3f7430000    - 0x1a3f7439ff0    - 0x38     - 0x0    - [AD:6F, AF:36]        -        =
- = [0x7]     - Alloc    - 0x1a3f7430000    - 0x1a3f744bc80    - 0x2      - 0x0    - [AF:FD, B1:36]        -        =
- = [0x8]     - Free     - 0x1a3f7430000    - 0x1a3f744bc80    -          - 0x0    - [B3:76, B5:2B]        - 0x1    =
- = [0x9]     - Alloc    - 0x1a3f7430000    - 0x1a3f744bc80    - 0x2      - 0x0    - [B5:CF, B7:36]        -        =
- ===================================================================================================================
+If you click on a TimeRange you will see the extent of the call:
 
- Most fields should be self explanatory. If you click on a TimeRange you will see the extent of the call:
-
+```
  0:000> dx @$cursession.TTDUtils.HeapAPICalls()[5]
  @$cursession.TTDUtils.HeapAPICalls()[5]                
     Action           : Alloc
@@ -330,16 +312,6 @@ for (var api of localApis)
      MaxPosition      : 52:36 [Time Travel]
 
  Clicking on [Time Travel] will take you to that position in the trace.
-
- [ Note: As of 6/5/2017 there is a bug that prevents clicking on that link from working (#12139327.) There are
-  three workarounds:
-     1. Enter a !tt <position> command manually (e.g. !tt 50:167)
-     2. Point dx to the MinPosition / MaxPosition directly and *then* click the link
-        (e.g. dx @$cursession.TTDUtils.HeapAPICalls()[5].TimeRange.MinPosition)
-     3. Invoke the .SeekTo() method directly 
-        (e.g.  dx @$cursession.TTDUtils.HeapAPICalls()[5].TimeRange.MinPosition.SeekTo())
- ]
-
 ```
 
 
