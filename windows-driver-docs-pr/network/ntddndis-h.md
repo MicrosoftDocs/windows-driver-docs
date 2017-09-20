@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Ntddndis.h
 
 
-This section contains kernel mode network driver topics for the Ntddndis.h header. This header is included in the Windows SDK as it is also shared with user mode applications that interact with network drivers.
+This section contains kernel mode network driver topics for the Ntddndis.h header. This header is included in the Windows SDK as it is also shared with user mode networking applications.
 
 The Ntddndis.h header contains definitions for constants and types for interfacing with network drivers.
 

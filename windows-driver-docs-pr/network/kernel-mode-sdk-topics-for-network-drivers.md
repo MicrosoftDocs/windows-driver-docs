@@ -13,7 +13,7 @@ ms.technology: windows-devices
 
 # Kernel Mode SDK Topics for Network Drivers
 
-This section contains kernel mode SDK topics for Windows network drivers starting with Windows Vista, which are defined in header files that are included in the Windows Software Development Kit (SDK). These headers are included in the SDK instead of the Windows Driver Kit (WDK) as they are also shared with user mode applications that interact with network drivers.
+This section contains kernel mode SDK topics for Windows network drivers starting with Windows Vista, which are defined in header files that are included in the Windows Software Development Kit (SDK). These headers are included in the SDK instead of the Windows Driver Kit (WDK) as they are also shared with user mode networking applications.
 
 > [!IMPORTANT]
 > This section's header topics contains pages for definitions, macros, OIDs, status indications, and other data structures that are not part of network driver reference (structures, enumerations, functions, and callbacks). 

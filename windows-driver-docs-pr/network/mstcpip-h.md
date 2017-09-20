@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 # Mstcpip.h
 
-This section contains kernel mode network driver topics for the Mstcpip.h header. This header is included in the Windows SDK as it is also shared with user mode applications that interact with network drivers.
+This section contains kernel mode network driver topics for the Mstcpip.h header. This header is included in the Windows SDK as it is also shared with user mode networking applications.
 
 The Mstcpip.h header contains definitions for Microsoft-specific extensions to the core Winsock definitions.
 
