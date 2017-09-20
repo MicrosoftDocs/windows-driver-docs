@@ -23,7 +23,7 @@ For information on working with the TTD objects see, [Time Travel Debugging - Ob
 
 ## TTD Object
 
-The TTD object contains time travel debugging properties available for each process in a trace file. The TTD object is associated with the current process (curprocess) debugger object. The following TTD childern objects are documented in this topic. 
+The TTD object contains time travel debugging properties available for each process in a trace file. The TTD object is associated with a process debugger object. The following TTD objects are documented in this topic. 
 
 - *Lifetime*
 - *Threads*
@@ -32,7 +32,7 @@ The TTD object contains time travel debugging properties available for each proc
 
 ### TTD Methods
 
-**SetPosition** - Sets the debugger to point to the given position on this process.    
+**SetPosition()** - Sets the debugger to point to the given position on this process.    
 
 ### TTD dx command Example
 
