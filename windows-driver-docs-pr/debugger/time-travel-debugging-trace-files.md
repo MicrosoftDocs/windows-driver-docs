@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Working with Trace Files 
 description: This section describes how to work with time travel trace files 
 ms.author: windowsdriverdev
-ms.date: 09/18/2017
+ms.date: 09/19/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,15 +48,15 @@ When opening an existing trace file, the most recently used list of trace files 
 
 ## Index .IDX files  
 
-An index .IDX file is created for the associated trace .RUN file automatically when opening the trace file in WinDbg Preview. You can manually create the index file by using the !tt.index command. An index allows for faster access to the trace information. 
+An index .IDX file is created for the associated trace .RUN file automatically when opening the trace file in WinDbg Preview. You can manually create the index file by using the !ttdext.index command. An index allows for faster access to the trace information. 
 
 IDX files can also be large, typically twice the size of the  .RUN file.  
 
 ## Recreating the .IDX file
-You can recreate the .IDX file from the .RUN file, using the ```!tt.index``` command.
+You can recreate the .IDX file from the .RUN file, using the ```!ttdext.index``` command.
 
 ```
-0:0:001> !tt.index
+0:0:001> !ttdext.index
 Indexed 3/3 keyframes
 Successfully created the index in 49ms.
 ```
@@ -67,11 +67,11 @@ TTD trace files can be shared with others by copying the .RUN file. This can be 
 
 You can rename the file to include any additional information, such as the date or a bug number.
 
-The .IDX file does not need to be copied as it can be re-created using the !tt.index command as described above.
+The .IDX file does not need to be copied as it can be re-created using the !ttdext.index command as described above.
 
 
 > [!TIP]
-> When collaborating with others, pass on any relevant trace positions related to the problem at hand. The collaborator can use the ```!tt x:y``` command to move to that exact point in time in the execution of the code. Time position ranges can be included in bug descriptions to track where the possible issue may be occurring.
+> When collaborating with others, pass on any relevant trace positions related to the problem at hand. The collaborator can use the ```!ttdext x:y``` command to move to that exact point in time in the execution of the code. Time position ranges can be included in bug descriptions to track where the possible issue may be occurring.
 >
 
 
