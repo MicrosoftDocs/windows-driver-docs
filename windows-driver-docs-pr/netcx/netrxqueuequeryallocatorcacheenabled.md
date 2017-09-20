@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The NetRxQueueQueryAllocatorCacheEnabled method queries whether DMA allocator allocates cacheable memory.
+The NetRxQueueQueryAllocatorCacheEnabled method queries whether the DMA allocator allocates cacheable memory.
 
 Syntax
 ------
