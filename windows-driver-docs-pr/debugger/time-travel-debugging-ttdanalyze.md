@@ -134,14 +134,15 @@ Use this dx command with the GetHeapAddress method to locate heap entries that i
 
 ## TTD Methods
 
-**Calls** - Returns call information from the trace for the specified set of methods: TTD.Calls("module!method1", "module!method2", ...)] 
+**Calls** - Returns call information from the trace for the specified set of methods:  
+
+```
+ dx @$cursession.TTD.Calls("module!method1", "module!method2", ...)
+```
+
+
 Calls returns an indexable list of heap API operations that change the address space in some way. For example alloc, realloc, free and a few others. It does not return heap API operations that are just queries (e.g. getting size of allocated block.) The data that is presented is specific to Heap APIs and hides Windows implementation details.
 
-TBD - Need output sample
-
-```
- dx @$cursession.TTD.Calls()
-```
 
 ### Example use: Viewing Calls
 
