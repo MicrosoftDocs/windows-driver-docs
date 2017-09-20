@@ -131,7 +131,7 @@ To do so, before getting the SCCD signed by Microsoft, add **DeveloperModeOnly**
 <AuthorizedEntities>
     <AuthorizedEntity AppPackageFamilyName="MicrosoftHSATest.Microsoft.SDKSamples.Hsa.CPP_q536wpkpf5cy2" CertificateSignatureHash="ca9fc964db7e0c2938778f4559946833e7a8cfde0f3eaa07650766d4764e86c4"></AuthorizedEntity>
 </AuthorizedEntities>
-<Catalog>0000/Catalog>
+<Catalog>0000</Catalog>
 <DeveloperModeOnly Value="true" />
 </CustomCapabilityDescriptor>
 ```
