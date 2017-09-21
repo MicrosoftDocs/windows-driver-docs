@@ -18,26 +18,24 @@ ms.technology: windows-devices
 This section describes how to  section describes how to use the how to use the time travel debugger extensions.
 
 
-## !ttdext navigation commands
+## !tt navigation commands
 
-Use the !ttdext.tt command to navigate forward or backwards in time, by traveling to a given position in the trace. 
+Use the !tt command to navigate forward or backwards in time, by traveling to a given position in the trace. 
 
-!ttdext.tt {position}
+!tt {position}
 
 Provide a time position in any of the following formats to travel to that point in time.
            
 - If {position} is a decimal number between 0 and 100, it travels to approximately that percent into the trace. For example:
-    - !ttdext.tt 0                   - Time travel to the beginning of the trace
-    - !ttdext.tt 50                  - Time travel to halfway through the trace
-    - !ttdext.tt 100                 - Time travel to the end of the trace
+    - !tt 0                   - Time travel to the beginning of the trace
+    - !tt 50                  - Time travel to halfway through the trace
+    - !tt 100                 - Time travel to the end of the trace
  
 
 - If {position} is #:#, where # are a hexadecimal numbers, it travels to that position. If the number after : is omitted, it defaults to zero.
-    - !ttdext.tt 1A0:                - Time travel to position 1A0:0
-    - !ttdext.tt 1A0:0               - Time travel to position 1A0:0
-    - !ttdext.tt 1A0:12F             - Time travel to position 1A0:12F
-
-
+    - !tt 1A0:                - Time travel to position 1A0:0
+    - !tt 1A0:0               - Time travel to position 1A0:0
+    - !tt 1A0:12F             - Time travel to position 1A0:12F
 
 
 ## !ttdext Extension utility commands
@@ -45,51 +43,9 @@ Provide a time position in any of the following formats to travel to that point 
 Use the following !ttdext extension commands to work with TTD traces.
 
 
-### !ttdext.index
-
-Use !ttdext.*index* to run an indexing pass over the current trace. 
-
-```
-0:000> !index
-Indexed 10/14 keyframes
-Indexed 14/14 keyframes
-Successfully created the index in 535ms.
-
-```
-
-If the current trace is already indexed, the !ttdext.index command does nothing.
-
-```
-0:000> !ttdext.index
-Successfully created the index in 0ms.
-```
-
-### !ttdext.index -status
-
-Use !tt.index -status to report the status of the trace index.
-
-```
-0:000> !tt.index -status
-Index file loaded.
-```
-
-??? TBD Table
+The time travel debugger extension commands are implemented in ttdext.dll. The time travel command ddl is loaded automatically in WinDbg Preview, you don't need to use the load command to manually load the dll.
 
 
-| Command | Description |
-|---------|---------------------------------------------------------------------------|
-
-!search   | Searches trace similar to ba but can be used for registers see TTT-Search  
-
-
-This section describes the Human Interface Device (HID) debugger extension commands.
-
-The HID debugger extension commands are implemented in Hidkd.dll. To load the HID commands, enter **.load hidkd.dll** in the debugger.
-
-## <span id="Getting_started_with_the_HID_extensions_"></span><span id="getting_started_with_the_hid_extensions_"></span><span id="GETTING_STARTED_WITH_THE_HID_EXTENSIONS_"></span>Getting started with the HID extensions
-
-
-To start debugging a HID issue, enter the [**!hidtree**](-hidkd-hidtree.md) command. The **!hidtree** command displays a list of commands and addresses that you can use to investigate device objects, preparsed HID data, and HID report descriptors.
 
 ## <span id="in_this_section"></span>In this section
 
@@ -117,18 +73,6 @@ To start debugging a HID issue, enter the [**!hidtree**](-hidkd-hidtree.md) comm
 <tr class="odd">
 <td align="left"><p>[<strong>!hidkd.hidpdo</strong>](-hidkd-hidpdo.md)</p></td>
 <td align="left"><p>The [<strong>!hidkd.hidpdo</strong>](-hidkd-hidpdo.md) command displays HID information associated with a physical device object (PDO).</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[<strong>!hidkd.hidtree</strong>](-hidkd-hidtree.md)</p></td>
-<td align="left"><p>The [<strong>!hidkd.hidtree</strong>](-hidkd-hidtree.md) command displays a list of all device nodes that have a HID function driver along with their child nodes. The child nodes have a physical device object (PDO) that was created by the parent node's HID function driver.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[<strong>!hidkd.hidppd</strong>](-hidkd-hidppd.md)</p></td>
-<td align="left"><p>The [<strong>!hidkd.hidppd</strong>](-hidkd-hidppd.md) command displays HID preparsed data.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[<strong>!hidkd.hidrd</strong>](-hidkd-hidrd.md)</p></td>
-<td align="left"><p>The [<strong>!hidkd.hidrd</strong>](-hidkd-hidrd.md) command displays a HID report descriptor in both raw and parsed format.</p></td>
 </tr>
 </tbody>
 </table>
