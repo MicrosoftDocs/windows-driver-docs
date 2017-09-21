@@ -1,5 +1,5 @@
 ---
-Description: 'Describes the behavior of the USB Type-C Port Controller Interface class Extension, known as UcmTcpciCx and tasks that a client driver must perform for USB Type-C port controller.'
+Description: 'Describes the behavior of the USB Type-C Port Controller Interface Class Extension, known as UcmTcpciCx and tasks that a client driver must perform for a USB Type-C port controller.'
 title: Write a USB Type-C port controller driver
 author: windows-driver-content
 ms.author: windowsdriverdev
@@ -11,26 +11,13 @@ ms.technology: windows-devices
 
 # Write a USB Type-C port controller driver
 
-You need to write a USB Type-C port controller driver if your USB Type-C hardware provides the connector but does not have the capability of handling the power delivery (PD) state machine. 
+You need to write a USB Type-C port controller driver if your USB Type-C hardware implements the USB Type-C or Power Delivery (PD) physical layer but does not implement the state machines required for the Power Delivery. 
 
-A USB Type-C client driver for the USB connector manager class extension (UmcCx) handles the complexity of managing the USB Type-C connector and USB Power Delivery (PD) state machines. In Windows 10, version 1703, the architecture for USB Type-C support has been improved. The PD/Type-C state logic is now built into a new compoment in the operating system, called the Device Policy Manager (DPM). Communicating with DPM is a new class extension, called USB Connector Manager Type-C Port Controller Interface Class Extension (UcmTcpciCx.sys). A client driver to that class extension is your driver for a port controller that needs to the keep class extension informed about the hardware events. That communication is enabled through a set of programming interfaces described in this topic and in the reference section.
+In Windows 10, version 1703, the USB Type-C architecture has been improved to support hardware designs that implement the USB Type-C or Power Delivery (PD) physical layer but do not have a corresponding PD policy engine or protocol layer implementation. For these designs, Windows 10 version 1703 provides a software-based PD policy engine and device policy manager through a new class extension called "USB Connector Manager Type-C Port Controller Interface Class Extension" (UcmTcpciCx). A client driver written by an IHV or OEM/ODM communicates with UcmTcpciCx to provide information about the hardware events needed for the PD policy engine and device policy manager in UcmTcpciCx to function. That communication is enabled through a set of programming interfaces described in this topic and in the reference section.
 
 ![usb connector manager](images/tcpci-arch.png)
 
-DPM implements the PD state machines. This includes: 
-
-* PD messaging protocol sequences. For example, negotiating an initial power contract, alternate mode discovery, power contract updates, etc. 
-
-* PD receiver and transmitter state machines. This includes managing the message ID counter, message retries, etc. 
-
-DPM expects to receive cable-detection events and PD-messaging events from the port manager.
-
-The port manager implements the USB Type-C state machine logic. It is analogous to the TCPC (Type-C Port Manager) as described in the TCPCI specification. It processes alerts received from the port controller interface. It also handles events related to the execution of the state machine. When the port manager receives events relevant to PD messaging, they are forwarded to DPM. It sends its requests and those received from DPM to the port controller interface. 
-
-The port manager interfaces with UcmCx to report USB Type-C-specific connector updates. 
-
-The UcmTcpciCx class extension is a client driver of UcmCx. The policy decisions about power contracts, data roles, are made in UcmCx and forwarded to UcmTcpciCx. UcmTcpciCx implements those policies and manages the Type-C and PD state machines, by using the port controller interface provided by your UcmTcpciCx client driver. 
-
+The UcmTcpciCx class extension is itself a client driver of UcmCx. The policy decisions about power contracts, data roles, are made in UcmCx and forwarded to UcmTcpciCx. UcmTcpciCx implements those policies and manages the Type-C and PD state machines, by using the port controller interface provided by your UcmTcpciCx client driver. 
 
 **Summary**
 - Services provided by the UcmTcpci class extension
@@ -48,7 +35,6 @@ Applies to:
 **WDF version**
 
 -   KMDF version 1.15
--   UMDF version 2.15
 
 **Last updated:**
 
@@ -58,12 +44,13 @@ Applies to:
 
 [USB Type-C Port Controller Interface driver class extensions reference]
 
-**Reference sample**
+**UcmTcpciCx client driver template**
 
-[UcmTcpciCx Port Controller Client Driver](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmTcpciCxClientSample)
+[UcmTcpciCx client driver template](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmTcpciCxClientSample)
 
 ## Before you begin...
 
+-   Determine the type of driver you need to write depending on whether your hardware or firmware implements PD state machine. For more information, see [Developing Windows drivers for USB Type-C connectors](developing-windows-drivers-for-usb-type-c-connectors.md).  
 -   Install Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) on your target computer or Windows 10 Mobile with a USB Type-C connector.
 -   [Install](http://go.microsoft.com/fwlink/p/?LinkID=845980) the latest Windows Driver Kit (WDK) on your development computer. The kit has the required header files and libraries for writing the client driver, specifically, you'll need:
 
@@ -74,9 +61,7 @@ Applies to:
 
     ![visual studio configuration for ucm](images/ucmtcpci-vs.png)
 
--  Decide whether the client driver will support:
-    -   Alerts
-    -   TBD
+-  Decide whether the client driver will support alerts.
 
 - Your port controller is not required to be TCPCI-compliant. The interface captures the capabilities of any Type-C port controller. Writing a UcmTcpciCx client driver for hardware that is not TCPCI-compliant simply involves mapping the meanings of registers and commands in the TCPCI specification to those of the hardware. 
 
