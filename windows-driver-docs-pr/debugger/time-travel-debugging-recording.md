@@ -39,35 +39,7 @@ To launch an executable and record a TTD trace, follow these steps.
 
     ![TTD recording popup showing stop and debug as well as cancel options](images/ttd-recording-pop-up.png)
 
-6. Here is where you cause the event of interest that you wish to analyze to occur.  You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
-
-7. When the recording dialog box is being displayed you can:
-
-    - **Stop and debug** - Choosing this will stop the recording, create the trace file and open the trace file so you can start debugging. 
-    - **Cancel** - Choosing this will stop the recording and create the trace file. You can open the trace file at a later time. 
-     
-8. Once your recording is complete, close your app or hit **Stop and debug**.
-
-   > [!NOTE]
-   > Both *Stop and debug* and *Cancel* will terminate the associated process. 
-   >   
-
-9. When the associated application terminates, the trace file will be closed and written out to disk. This is the case if your program crashes as well.
-
-10. When a trace file is opened, the debugger will automatically index the trace file. Indexing allows for more accurate and faster memory value look ups. This indexing process will take longer for larger trace files.
-
-    ```
-    ...
-    00007ffc`61f789d4 c3              ret
-    0:000> !index
-    Indexed 1/1 keyframes
-    Successfully created the index in 96ms.
-    ```
-   > [!NOTE]
-   > A keyframe is a location in a trace used for indexing. Keyframes are generated automatically. Larger traces will contain more keyframes. When the trace is indexed, the number of keyframes is displayed. 
-   >   
- 
-11. At this point you are at the beginning of the trace file and are ready to travel forward and backward in time.
+6. See [How to record](#HOWTORECORD) for information on recording.
 
 
 ## Attach to a process
@@ -92,22 +64,26 @@ To attach to a process and record a TTD trace, follow these steps.
 
     ![TTD recording popup showing stop and debug as well as cancel options](images/ttd-recording-pop-up-attach.png)
 
-6. Here is where you cause the event of interest that you wish to analyze to occur. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
+6. See [How to record](#HOWTORECORD) for information on recording.
 
-7. When the recording dialog box is being displayed you can:
+## <span id="HOWTORECORD"></span><span id="howtorecord"></span>How to record
+
+1. Here is where you cause the event of interest that you wish to analyze to occur. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
+
+2. When the recording dialog box is being displayed you can:
 
     - **Stop and debug** - Choosing this will stop the recording, create the trace file and open the trace file so you can start debugging. 
     - **Cancel** - Choosing this will stop the recording and create the trace file. You can open the trace file at a later time. 
    
-8. Once your recording is complete, close your app or hit **Stop and debug**.
+3. Once your recording is complete, close your app or hit **Stop and debug**.
 
    > [!NOTE]
    > Both *Stop and debug* and *Cancel* will terminate the associated process. 
    >   
 
-9. When the associated application terminates, the trace file will be closed and written out to disk. This is the case if your program crashes as well.
+4. When the associated application terminates, the trace file will be closed and written out to disk. This is the case if your program crashes as well.
 
-10. When a trace file is opened, the debugger will automatically index the trace file. Indexing allows for more accurate and faster memory value look ups. This indexing process will take longer for larger trace files.
+5. When a trace file is opened, the debugger will automatically index the trace file. Indexing allows for more accurate and faster memory value look ups. This indexing process will take longer for larger trace files.
 
     ```
     ...
@@ -120,7 +96,7 @@ To attach to a process and record a TTD trace, follow these steps.
    > A keyframe is a location in a trace used for indexing. Keyframes are generated automatically. Larger traces will contain more keyframes. When the trace is indexed, the number of keyframes is displayed. 
    >   
  
-11. At this point you are at the beginning of the trace file and are ready to travel forward and backward in time.
+6. At this point you are at the beginning of the trace file and are ready to travel forward and backward in time.
 
     > [!TIP]
     > Using breakpoints is a common approach to pause code execution at some event of interest.  Unique to TTD, you can set a breakpoint and travel back in time until that breakpoint is hit after the trace has been recorded. The ability to later determine the best breakpoint, after the code has executed, enables additional debugging workflows. For an example of using a breakpoint in the past, see [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md).

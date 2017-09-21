@@ -3,19 +3,20 @@ title: !positions
 description: The !positions extension displays all the active threads, including their current positions.
 keywords: ["positions Windows Debugging"]
 ms.author: windowsdriverdev
-ms.date: 09/20/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-topic_type:
-- apiref
-api_name:
-- psotions
-api_type:
-- NA
 ---
 
-# !positions
+
+> [!NOTE]
+> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
+>
+
+
+# ![Small logo for windbg preview](images/windbgx-preview-logo.png) !positions
+
 
 The **!positions** extension displays all the active threads, including their current positions in the time travel trace.
 

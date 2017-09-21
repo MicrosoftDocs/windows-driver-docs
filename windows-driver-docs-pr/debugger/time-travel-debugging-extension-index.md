@@ -1,21 +1,21 @@
 ---
 title: !index
 description: The !index extension indexes time travel traces or displays index status information.
-keywords: ["index Windows Debugging"]
 ms.author: windowsdriverdev
-ms.date: 09/20/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-topic_type:
-- apiref
-api_name:
-- index
-api_type:
-- NA
 ---
 
+
+> [!NOTE]
+> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
+>
+
+
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) !index
+
 
 The **!index** extension indexes time travel traces or displays index status information.
 
