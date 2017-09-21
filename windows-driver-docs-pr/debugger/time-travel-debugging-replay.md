@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Replay a trace
 description: This section describes how to replay time travel traces.
 ms.author: windowsdriverdev
-ms.date: 09/19/2017
+ms.date: 09/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -147,7 +147,10 @@ Use ```!positions``` to display all the active threads, including their position
 ```
 This example shows that there are eight threads at the current position. The current thread is 3604, marked with '>'.  
 
-Hint: Another way to display the current list of threads with positions is to use the a data model command like: ```dx -g @$curprocess.Threads.Select(t => new { IsCurrent = t.Id == @$curthread.Id, ThreadId = t.Id, Position = t.TTD.Position })```.
+> [!TIP] Another way to display the current list of threads with positions is to use the a data model command for example:
+>
+> ```dx -g @$curprocess.Threads.Select(t => new { IsCurrent = t.Id == @$curthread.Id, ThreadId = t.Id, Position = t.TTD.Position })```
+>
 
 Use the user mode [~ (Thread Status)](---thread-status-.md) command shows the same eight threads, and marks the current thread with '.':
 
