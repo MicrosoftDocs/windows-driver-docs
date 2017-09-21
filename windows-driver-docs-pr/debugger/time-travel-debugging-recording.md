@@ -43,18 +43,18 @@ To launch an executable and record a TTD trace, follow these steps.
 
 7. When the recording dialog box is being displayed you can:
 
-    - **Stop and debug** - Choosing this will stop the recording, create the trace file, index the trace file and open the trace file so you can start debugging. 
+    - **Stop and debug** - Choosing this will stop the recording, create the trace file and open the trace file so you can start debugging. 
     - **Cancel** - Choosing this will stop the recording and create the trace file. You can open the trace file at a later time. 
      
 8. Once your recording is complete, close your app or hit **Stop and debug**.
 
    > [!NOTE]
-   > Both *Stop and debug* and *Cancel* will kill the associated process. 
+   > Both *Stop and debug* and *Cancel* will terminate the associated process. 
    >   
 
 9. When the associated application terminates, the trace file will be closed and written out to disk. This is the case if your program crashes as well.
 
-10. With the **Stop and debug** option, the trace file is automatically indexed after being written to disk. Indexing allows for complete and faster memory value look ups. This indexing process will take longer for larger trace files.
+10. When a trace file is opened, the debugger will automatically index the trace file. Indexing allows for more accurate and faster memory value look ups. This indexing process will take longer for larger trace files.
 
     ```
     ...
@@ -64,10 +64,10 @@ To launch an executable and record a TTD trace, follow these steps.
     Successfully created the index in 96ms.
     ```
    > [!NOTE]
-   > A keyframe is a location in a trace where replay can start with no previous data​. Keyframes are generated automatically. Larger traces will contain more keyframes. When the trace is indexed, the number of keyframes is displayed. 
+   > A keyframe is a location in a trace used for indexing. Keyframes are generated automatically. Larger traces will contain more keyframes. When the trace is indexed, the number of keyframes is displayed. 
    >   
  
-11. At this point you are at the end of the trace file and are ready to travel back in time.
+11. At this point you are at the beginning of the trace file and are ready to travel forward and backward in time.
 
 
 ## Attach to a process
@@ -96,18 +96,18 @@ To attach to a process and record a TTD trace, follow these steps.
 
 7. When the recording dialog box is being displayed you can:
 
-    - **Stop and debug** - Choosing this will stop the recording, create the trace file, index the trace file and open the trace file so you can start debugging. 
+    - **Stop and debug** - Choosing this will stop the recording, create the trace file and open the trace file so you can start debugging. 
     - **Cancel** - Choosing this will stop the recording and create the trace file. You can open the trace file at a later time. 
    
 8. Once your recording is complete, close your app or hit **Stop and debug**.
 
    > [!NOTE]
-   > Both *Stop and debug* and *Cancel* will kill the associated process. 
+   > Both *Stop and debug* and *Cancel* will terminate the associated process. 
    >   
 
 9. When the associated application terminates, the trace file will be closed and written out to disk. This is the case if your program crashes as well.
 
-10.  With the **Stop and debug** option, the trace file is automatically indexed after being written to disk. Indexing allows for complete and faster memory value look ups. This indexing process will take longer for larger trace files.
+10. When a trace file is opened, the debugger will automatically index the trace file. Indexing allows for more accurate and faster memory value look ups. This indexing process will take longer for larger trace files.
 
     ```
     ...
@@ -116,16 +116,14 @@ To attach to a process and record a TTD trace, follow these steps.
     Indexed 1/1 keyframes
     Successfully created the index in 96ms.
     ```
-
    > [!NOTE]
-   > A keyframe is a location in a trace where replay can start with no previous data​. Keyframes are generated automatically. Larger traces will contain more keyframes. When the trace is indexed, the number of keyframes is displayed. 
+   > A keyframe is a location in a trace used for indexing. Keyframes are generated automatically. Larger traces will contain more keyframes. When the trace is indexed, the number of keyframes is displayed. 
    >   
-
-
-11. At this point you are at the end of the trace file and are ready to travel back in time.
+ 
+11. At this point you are at the beginning of the trace file and are ready to travel forward and backward in time.
 
     > [!TIP]
-    > Using breakpoints is a common approach to pause code execution at the event of interest.  Unique to TTD, you can set a breakpoint and travel back in time until that breakpoint is hit after the trace has been recorded. The ability to later determine the best breakpoint, after the code has executed, enables additional debugging workflows. For an example of using a breakpoint in the past, see [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md).
+    > Using breakpoints is a common approach to pause code execution at some event of interest.  Unique to TTD, you can set a breakpoint and travel back in time until that breakpoint is hit after the trace has been recorded. The ability to later determine the best breakpoint, after the code has executed, enables additional debugging workflows. For an example of using a breakpoint in the past, see [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md).
 
 ## Next Steps
 
