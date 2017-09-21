@@ -1,8 +1,8 @@
 ---
-title: !ttdext (time travel)
-description: This section describes the !tt (time travel) debugger extension.
+title: !tt (time travel)
+description: The the !tt (time travel) debugger extension that allows you to navigate forward and backwards in time.
 ms.author: windowsdriverdev
-ms.date: 09/19/2017
+ms.date: 09/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -13,16 +13,22 @@ ms.technology: windows-devices
 >
 
 
-# ![Small logo on windbg preview](images/windbgx-preview-logo.png) !ttdext (time travel)
+# ![Small logo on windbg preview](images/windbgx-preview-logo.png) !tt (time travel)
 
-This section describes how to  section describes how to use the  !ttdext time travel extension command.
+The the !tt (time travel) debugger extension that allows you to navigate forward and backwards in time.
 
 
-## !ttdext navigation commands
+## !tt navigation commands
 
-Use the !ttdext.tt command to navigate forward or backwards in time, by traveling to a given position in the trace. 
+Use the !tt extension to navigate forward or backwards in time, by traveling to a given position in the trace. 
 
-!ttdext.tt {position}
+```
+!tt [position] 
+```
+
+## <span id="ddk__analyze_dbg"></span><span id="DDK__ANALYZE_DBG"></span>Parameters
+
+**position**
 
 Provide a time position in any of the following formats to travel to that point in time.
            
@@ -38,54 +44,13 @@ Provide a time position in any of the following formats to travel to that point 
     - !ttdext.tt 1A0:12F             - Time travel to position 1A0:12F
 
 
+### <span id="DLL"></span><span id="dll"></span>DLL
 
+ttdext.dll
 
-## !ttdext Extension utility commands
+### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-Use the following !ttdext extension commands to work with TTD traces.
-
-
-### !ttdext.index
-
-Use !ttdext.*index* to run an indexing pass over the current trace. 
-
-```
-0:000> !index
-Indexed 10/14 keyframes
-Indexed 14/14 keyframes
-Successfully created the index in 535ms.
-
-```
-
-If the current trace is already indexed, the !ttdext.index command does nothing.
-
-```
-0:000> !ttdext.index
-Successfully created the index in 0ms.
-```
-
-### !ttdext.index -status
-
-Use !tt.index -status to report the status of the trace index.
-
-```
-0:000> !tt.index -status
-Index file loaded.
-```
-
-??? TBD Table
-
-
-| Command | Description |
-|---------|---------------------------------------------------------------------------|
-
-!search   | Searches trace similar to ba but can be used for registers see TTT-Search  
-
-
-
-> Additional Content Pending
-
----
+This extension only works with time travel traces. For more information about time travel, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
 
 ## See Also
 

@@ -15,36 +15,7 @@ ms.technology: windows-devices
 
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time travel debugging extensions
 
-This section describes how to  section describes how to use the how to use the time travel debugger extensions.
-
-
-## !tt navigation commands
-
-Use the !tt command to navigate forward or backwards in time, by traveling to a given position in the trace. 
-
-!tt {position}
-
-Provide a time position in any of the following formats to travel to that point in time.
-           
-- If {position} is a decimal number between 0 and 100, it travels to approximately that percent into the trace. For example:
-    - !tt 0                   - Time travel to the beginning of the trace
-    - !tt 50                  - Time travel to halfway through the trace
-    - !tt 100                 - Time travel to the end of the trace
- 
-
-- If {position} is #:#, where # are a hexadecimal numbers, it travels to that position. If the number after : is omitted, it defaults to zero.
-    - !tt 1A0:                - Time travel to position 1A0:0
-    - !tt 1A0:0               - Time travel to position 1A0:0
-    - !tt 1A0:12F             - Time travel to position 1A0:12F
-
-
-## !ttdext Extension utility commands
-
-Use the following !ttdext extension commands to work with TTD traces.
-
-
-The time travel debugger extension commands are implemented in ttdext.dll. The time travel command ddl is loaded automatically in WinDbg Preview, you don't need to use the load command to manually load the dll.
-
+This section introduces the time travel debugger extensions.
 
 
 ## <span id="in_this_section"></span>In this section
@@ -63,20 +34,28 @@ The time travel debugger extension commands are implemented in ttdext.dll. The t
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>!hidkd.help</strong>](-hidkd-help.md)</p></td>
-<td align="left"><p>The [<strong>!hidkd.help</strong>](-hidkd-help.md) command displays help for the HID debugger extension commands.</p></td>
+<td align="left"><p>[<strong>!tt (time travel)</strong>](time-travel-debugging-extension-tt.md)</p></td>
+<td align="left"><p>The [<strong>!tt (time travel)</strong>](time-travel-debugging-extension-tt.md) debugger extension that allows you to navigate forward and backwards in time.</p></td>
+
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!hidkd.hidfdo</strong>](-hidkd-hidfdo.md)</p></td>
-<td align="left"><p>The [<strong>!hidkd.hidfdo</strong>](-hidkd-hidfdo.md) command displays HID information associated with a functional device object (FDO).</p></td>
+<td align="left"><p>[<strong>!position</strong>]((time-travel-debugging-extension-position.md))</p></td>
+<td align="left"><p>The [<strong>!positions</strong>](time-travel-debugging-extension-position.md) extension displays all the active threads, including their current positions in the time travel trace.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>!hidkd.hidpdo</strong>](-hidkd-hidpdo.md)</p></td>
-<td align="left"><p>The [<strong>!hidkd.hidpdo</strong>](-hidkd-hidpdo.md) command displays HID information associated with a physical device object (PDO).</p></td>
+<td align="left"><p>[<strong>!index</strong>](time-travel-debugging-extension-index.md)</p></td>
+<td align="left"><p>The [<strong>!index</strong>]The [!index](time-travel-debugging-extension-index.md) extension indexes time travel traces or displays index status information.</p></td>
 </tr>
 </tbody>
 </table>
 
+### </span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+
+This extension only works with time travel traces. For more information about time travel, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
+
+### DLL
+
+The time travel debugger extension commands are implemented in ttdext.dll. The time travel command ddl is loaded automatically in WinDbg Preview. You don't need to use the load command to manually load the ttdext.dll.
  
 ## See Also
 

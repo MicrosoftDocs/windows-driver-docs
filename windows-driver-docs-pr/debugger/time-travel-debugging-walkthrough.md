@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Sample App Walkthrough
 description: This section contains a walk through of a small C++ app. 
 ms.author: windowsdriverdev
-ms.date: 09/11/2017
+ms.date: 09/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,8 +44,7 @@ public:
        CDog MyDog2;
        CDog MyDog3;
        CDog MyDog4;
-// Do we need a fifth dog?
-//     CDog MyDog5;
+       CDog MyDog5;
 
 };
 

@@ -15,7 +15,7 @@ api_type:
 - NA
 ---
 
-# !index
+# ![Small logo on windbg preview](images/windbgx-preview-logo.png) !index
 
 The **!index** extension indexes time travel traces or displays index status information.
 
@@ -54,11 +54,13 @@ Index file loaded.
 ```
 **-force**
 
-Use ```!index -force``` to report the status of the trace index.
+Use ```!index -force``` to reindex the trace even if an an unloadable index file exists on disk.
+
+??? TBD Output look right - Wasn't able to properly test 
 
 ```
 0:000> !tt.index -force
-??? TBD Output
+Successfully created the index in 152ms.
 ```
 
 
@@ -68,11 +70,15 @@ ttdext.dll
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-This extension only works with time travel traces.
+This extension only works with time travel traces. For more information about time travel, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
+
+
+## See Also
+
+[Time Travel Debugging - Extension Commands](time-travel-debugging-extension-commands.md)
 
 
 -------
-
 
  
 
