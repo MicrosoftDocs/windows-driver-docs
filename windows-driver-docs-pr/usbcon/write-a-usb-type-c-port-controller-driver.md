@@ -35,7 +35,6 @@ Applies to:
 **WDF version**
 
 -   KMDF version 1.15
--   UMDF version 2.15
 
 **Last updated:**
 
@@ -51,6 +50,7 @@ Applies to:
 
 ## Before you begin...
 
+-   Determine the type of driver you need to write depending on whether your hardware or firmware implements PD state machine. For more information, see [Developing Windows drivers for USB Type-C connectors](developing-windows-drivers-for-usb-type-c-connectors.md).  
 -   Install Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) on your target computer or Windows 10 Mobile with a USB Type-C connector.
 -   [Install](http://go.microsoft.com/fwlink/p/?LinkID=845980) the latest Windows Driver Kit (WDK) on your development computer. The kit has the required header files and libraries for writing the client driver, specifically, you'll need:
 
@@ -61,9 +61,7 @@ Applies to:
 
     ![visual studio configuration for ucm](images/ucmtcpci-vs.png)
 
--  Decide whether the client driver will support:
-    -   Alerts
-    -   TBD
+-  Decide whether the client driver will support alerts.
 
 - Your port controller is not required to be TCPCI-compliant. The interface captures the capabilities of any Type-C port controller. Writing a UcmTcpciCx client driver for hardware that is not TCPCI-compliant simply involves mapping the meanings of registers and commands in the TCPCI specification to those of the hardware. 
 
