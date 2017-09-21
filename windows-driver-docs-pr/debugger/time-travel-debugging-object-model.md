@@ -30,14 +30,10 @@ The primary objects added by TTDExt can be found in the *TTD* namespace off of a
 | Threads | Contains a collection of [TTD thread objects](time-travel-debugging-thread-objects.md), one for every thread throughout the lifetime of the trace. |
 | Events | Contains a collection of [TTD event objects](time-travel-debugging-event-objects.md), one for every event in the trace. |
 
-<<<<<<< HEAD
 ### Methods
 | Method | Description |
 | --- | --- |
 | SetPosition() | Takes an integer between 0 and 100 or string in N:N form as input and jumps the trace to that location. See [!tt](time-travel-debugging-extension-tt.md) for more information.|
-=======
-## TTD namespaces and commands
->>>>>>> e7992ce5c9430d102dce21a01fa2f68c040a46e0
 
 ## TTDAnalyze.dll
 The primary objects added by TTDAnalyze can be found in the *TTD* namespace off of any *Session* object. For example, `@$cursession.TTD`.
