@@ -1,8 +1,8 @@
 ---
 title: Time travel debugging extensions
-description: This section describes how to use the time travel debugger extensions.
+description: This section describes how to use the time travel debugger extension commands.
 ms.author: windowsdriverdev
-ms.date: 09/20/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,9 +14,9 @@ ms.technology: windows-devices
 >
 
 
-# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time travel debugging extensions
+# ![Small logo for windbg preview](images/windbgx-preview-logo.png) Time travel debugging extension commands
 
-This section introduces the time travel debugger extensions.
+This section introduces the time travel debugger extension commandss.
 
 
 ## <span id="in_this_section"></span>In this section

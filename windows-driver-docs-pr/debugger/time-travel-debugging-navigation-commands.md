@@ -40,7 +40,7 @@ This section describes the time travel navigation commands.
 </tr>
 <tr class="even">
 <td align="left"><p>[<strong>t-</strong>](#T)</p></td>
-<td align="left"><p>The [<strong>!positions</strong>](time-travel-debugging-extension-position.md) extension displays all the active threads, including their current positions in the time travel trace.</p></td>
+<td align="left"><p>The [<strong>!positions</strong>](time-travel-debugging-extension-positions.md) extension displays all the active threads, including their current positions in the time travel trace.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>[<strong>g- (go backwards)</strong>](#GO)</p></td>

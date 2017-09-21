@@ -55,7 +55,7 @@
 ### [Time Travel Debugging - Extension Commands](time-travel-debugging-extension-commands.md)
 #### [Time Travel Debugging - !tt (time travel)](time-travel-debugging-extension-tt.md)
 #### [Time Travel Debugging - !index (time travel)](time-travel-debugging-extension-index.md)
-#### [Time Travel Debugging - !position (time travel)](time-travel-debugging-extension-position.md)
+#### [Time Travel Debugging - !positions (time travel)](time-travel-debugging-extension-positions.md)
 # [Debugging Resources](debugging-resources.md)
 ## [Debugging Tools for Windows: New for Windows 10](debugging-tools-for-windows--new-for-windows-10.md)
 ## [Tools Included in Debugging Tools for Windows](extra-tools.md)

@@ -2,7 +2,7 @@
 title: Debugger object model reference - time travel debugging (TTD)
 description: This section describes the debugger model objects associated with time travel debugging.
 ms.author: windowsdriverdev
-ms.date: 09/18/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -23,7 +23,7 @@ For information on working with the TTD objects see, [Time Travel Debugging - Ob
 
 ## TTD Object
 
-The TTD object contains time travel debugging properties available for each process in a trace file. The TTD object is associated with a process debugger object. The following TTD objects are documented in this topic. 
+The TTD object contains time travel debugging properties available for each process in a trace file. The TTD object is associated with the curprocess debugger object. The following TTD objects are discussed in this topic. 
 
 - *Lifetime*
 - *Threads*
