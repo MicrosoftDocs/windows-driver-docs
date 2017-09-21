@@ -26,7 +26,7 @@ This section describes how to use the data model to query time travel traces. Th
 - ??? TBD - need more examples here...
 
 
-## dx TTD namespaces and commands
+## TTD namespaces and commands
 
 The Lifetime, Threads and Events TTD objects are associated with the current process (curprocess). Use the dx -h option to view basic information about these TTD Objects.
 

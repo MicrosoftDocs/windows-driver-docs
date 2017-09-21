@@ -1,5 +1,5 @@
 ---
-title:Time travel debugging extensions
+title: Time travel debugging extensions
 description: This section describes how to use the time travel debugger extensions.
 ms.author: windowsdriverdev
 ms.date: 09/20/2017
@@ -40,8 +40,8 @@ This section introduces the time travel debugger extensions.
 
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!position</strong>]((time-travel-debugging-extension-position.md))</p></td>
-<td align="left"><p>The [<strong>!positions</strong>](time-travel-debugging-extension-position.md) extension displays all the active threads, including their current positions in the time travel trace.</p></td>
+<td align="left"><p>[<strong>!position</strong>](time-travel-debugging-extension-positions.md)</p></td>
+<td align="left"><p>The [<strong>!positions</strong>](time-travel-debugging-extension-positions.md) extension displays all the active threads, including their current positions in the time travel trace.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>[<strong>!index</strong>](time-travel-debugging-extension-index.md)</p></td>

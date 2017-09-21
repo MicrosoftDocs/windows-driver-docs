@@ -9,6 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
+
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) !index
 
 The **!index** extension indexes time travel traces or displays index status information.
