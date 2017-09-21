@@ -147,7 +147,8 @@ Use ```!positions``` to display all the active threads, including their position
 ```
 This example shows that there are eight threads at the current position. The current thread is 3604, marked with '>'.  
 
-> [!TIP] Another way to display the current list of threads with positions is to use the a data model command for example:
+> [!TIP] 
+> Another way to display the current list of threads with positions is to use the a data model command for example:
 >
 > ```dx -g @$curprocess.Threads.Select(t => new { IsCurrent = t.Id == @$curthread.Id, ThreadId = t.Id, Position = t.TTD.Position })```
 >
