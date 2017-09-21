@@ -28,7 +28,7 @@ ms.technology: windows-devices
 | SeekTo() | Time travels the trace to the position. |
 
 ## Example Usage
-`TODO`
+Coming soon.
 
 ## See Also
-`TODO`
+Coming soon.

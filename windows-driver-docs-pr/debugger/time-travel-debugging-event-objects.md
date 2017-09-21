@@ -32,7 +32,7 @@ ms.technology: windows-devices
 \* - Existence of these child objects depends on the type of event
 
 ## Example Usage
-`TODO`
+Coming soon.
 
 ## See Also
-`TODO`
+Coming soon.

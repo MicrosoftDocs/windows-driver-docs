@@ -12,36 +12,43 @@ ms.technology: windows-devices
 > The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
 >
 
-
-# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Object Model
-
-
+# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Introduction to Time Travel Debugging objects
 This section describes how to use the data model to query time travel traces. This can be a powerful tool to answer questions like these about the code that is captured in a time travel trace.
+* What exceptions are in the trace?
+* At what point in time in the trace did a specific code module load?
+* When where threads created/terminated in the trace?
 
-- What exceptions are in the trace?
-- At what point in time in the trace did a specific code module load?
-- When where threads created/terminated in the trace?
-- What thread spent the most time running?
+There are two debugger extensions that add TTD data two the debugger object model: TTDExt and TTDAnalyze. The model objects can be accessed through `dx`, WinDbg Preview's model windows, and JavaScript. Both of these extensions are automatically loaded when debugging a time travel trace.
 
-- ??? TBD - need more examples here...
+## TTDExt.dll
+The primary objects added by TTDExt can be found in the *TTD* namespace off of any *Process* object. For example, `@$curprocess.TTD`.
 
+### Children
+| Object | Description |
+| --- | --- |
+| Lifetime | A [TTD range object](time-travel-debugging-range-objects.md) describing the lifetime of the entire trace. |
+| Threads | Contains a collection of [TTD thread objects](time-travel-debugging-thread-objects.md), one for every thread throughout the lifetime of the trace. |
+| Events | Contains a collection of [TTD event objects](time-travel-debugging-event-objects.md), one for every event in the trace. |
 
-## dx TTD namespaces and commands
+### Methods
+| Method | Description |
+| --- | --- |
+| SetPosition() | Takes an integer between 0 and 100 or string in N:N form as input and jumps the trace to that location. See [!tt](time-travel-debugging-extension-tt.md) for more information.|
 
-The Lifetime, Threads and Events TTD objects are associated with the current process (curprocess). Use the dx -h option to view basic information about these TTD Objects.
+## TTDAnalyze.dll
+The primary objects added by TTDAnalyze can be found in the *TTD* namespace off of any *Session* object. For example, `@$cursession.TTD`.
 
-```
-0:000>  dx -h @$curprocess.TTD
-@$curprocess.TTD                 [TTD-specific properties available for each process (for each trace file).]
-    Lifetime         : [D:0, 8A:0] [The position range [smallest, largest] found in the trace file.]
-    Threads          [This process' list of threads alive throughout the timeline.]
-    Events           [This process' list of events.]         
-```
+> [!NOTE]
+> There are some objects and methods added by TTDAnalyze that are used for internal functions of the extension. We aren't documenting those here to avoid confusion. There are also some namespaces that will grow over time, so we're glossing over the sparse or empty namespaces.
+>
 
-For more information about objects described here, see [Debugger Object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md).
+### Methods
+| Method | Description |
+| --- | --- |
+| Data.Heap() | A collection of [heap objects](time-travel-debugging-heap-objects.md) that were allocated during the trace. Note that this is a function that does computation, so it takes a while to run.|
+| Calls() | A collection of [calls objects](time-travel-debugging-calls-objects.md) that we called during the trace. Note that this is a function that does computation, so it takes a while to run.|
 
-
-## Querying a Time Travel Trace – Examples
+## Examples
 
 ### Querying for exceptions
 
@@ -189,8 +196,6 @@ Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount
 ## See Also
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
-
-[Debugger object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md)
 
 [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md)
 

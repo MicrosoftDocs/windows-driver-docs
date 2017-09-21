@@ -23,7 +23,7 @@ ms.technology: windows-devices
 | MaxPosition | A [position object](time-travel-debugging-position-objects.md) that describes the latest position relevant to the range. |
 
 ## Example Usage
-`TODO`
+Coming soon.
 
 ## See Also
-`TODO`
+Coming soon.
