@@ -1,6 +1,6 @@
 ---
 title: TTD Event Objects
-description: This section describes the exception model objects associated with time travel debugging.
+description: This section describes the event model objects associated with time travel debugging.
 ms.author: windowsdriverdev
 ms.date: 09/20/2017
 ms.topic: article

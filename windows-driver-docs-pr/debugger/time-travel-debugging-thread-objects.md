@@ -26,8 +26,8 @@ ms.technology: windows-devices
 ## Children
 | Object | Description |
 | --- | --- |
-| LifeTime | A [TTD range object](time-travel-debugging-range-object.md) that describes the lifetime of the thread. |
-| ActiveTime | A [TTD range object](time-travel-debugging-range-object.md) that describes the time the thread was active. |
+| LifeTime | A [TTD range object](time-travel-debugging-range-objects.md) that describes the lifetime of the thread. |
+| ActiveTime | A [TTD range object](time-travel-debugging-range-objects.md) that describes the time the thread was active. |
 
 ## Example Usage
 `TODO`
