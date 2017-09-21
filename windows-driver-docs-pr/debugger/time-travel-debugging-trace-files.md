@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Working with Trace Files 
 description: This section describes how to work with time travel trace files 
 ms.author: windowsdriverdev
-ms.date: 09/19/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,17 +15,17 @@ ms.technology: windows-devices
 
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Working with Trace Files
 
-This section describes how to work with files used by time travel debugging.
+This section describes how to work with files created and consumed by time travel debugging.
 
 ## Trace File Overview
 
 Time Travel Debugging uses the following files to debug code execution.
 
-The trace file contains the code execution recording and has a .RUN extension.
+- The trace file contains the code execution recording and has a .RUN extension.
 
-The index file enables quick access to information in the Trace file and has an .IDX extension.
+- The index file enables quick access to information in the Trace file and has an .IDX extension.
 
-The error log files are created when tracing failures occur and has an .OUT extension.
+- Recording errors and other recording output is written to the debugger log file.
 
 
 ## Trace .RUN files  
@@ -41,7 +41,7 @@ C:\Users\User1\Documents
 ```
 You can change the location of the trace files when you start to record. For more information, see [Time Travel Debugging - Recording](time-travel-debugging-recording.md).
 
-When opening an existing trace file, the most recently used list of trace files allows you to work with previously used files. 
+The most recently used list of files allows you to quickly access previously used target configuration files. Any recently used trace files or dump files are listed as well. 
 
 ![File open list of .run trace files showing five recently used trace files](images/ttd-recent-trace-files.png) 
 
@@ -63,7 +63,7 @@ Successfully created the index in 49ms.
 
 ## Sharing TTD Trace .RUN files
 
-TTD trace files can be shared with others by copying the .RUN file. This can be handy for having a coworker help you figure out the problem. They don't need to install the app or do any other related setup. They can just load the trace file and debug the app as if it was installed on their PC. 
+TTD trace files can be shared with others by copying the .RUN file. This can be handy for having a coworker help you figure out the problem. They don't need to install the crashing app or do any other related setup to attempt to reproduce the issue. They can just load the trace file and debug the app as if it was installed on their PC. 
 
 You can rename the file to include any additional information, such as the date or a bug number.
 
@@ -75,7 +75,7 @@ The .IDX file does not need to be copied as it can be re-created using the !ttde
 >
 
 
-## Error - Log Files
+## Error - Log File
 
 Recording errors and other recording output is written to the debugger log file. To view the log file, select **View** > **Logs**. 
 
