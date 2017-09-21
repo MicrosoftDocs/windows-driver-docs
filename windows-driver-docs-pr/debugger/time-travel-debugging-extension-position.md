@@ -7,13 +7,8 @@ ms.date: 09/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-topic_type:
-- apiref
-api_name:
-- psotions
-api_type:
-- NA
 ---
+
 
 # !positions
 

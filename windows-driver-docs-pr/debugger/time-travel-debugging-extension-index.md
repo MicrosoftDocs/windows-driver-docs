@@ -7,12 +7,6 @@ ms.date: 09/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-topic_type:
-- apiref
-api_name:
-- index
-api_type:
-- NA
 ---
 
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) !index
