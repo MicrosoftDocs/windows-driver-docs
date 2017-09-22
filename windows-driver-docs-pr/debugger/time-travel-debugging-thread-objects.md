@@ -30,7 +30,7 @@ ms.technology: windows-devices
 | ActiveTime | A [TTD range object](time-travel-debugging-range-objects.md) that describes the time the thread was active. |
 
 ## Example Usage
-`TODO`
+Coming soon.
 
 ## See Also
-`TODO`
+Coming soon.
