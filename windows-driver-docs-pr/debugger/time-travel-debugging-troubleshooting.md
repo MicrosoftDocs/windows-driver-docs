@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Troubleshooting
 description: This section describes how to troubleshoot time travel traces.
 ms.author: windowsdriverdev
-ms.date: 09/18/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -21,28 +21,21 @@ This section describes how to troubleshoot time travel traces.
 
 ### I get an error message that says "WinDbg must be run elevated to support Time Travel Debugging"
 
-As it says, running the debugger elevated is a requirement. In order to run the debugger elevated, right-click on its icon in the start menu and then select "More --> Run as Administrator".
+As the message indicates, running the debugger elevated is a requirement. In order to run the debugger elevated, right-click on the **WinDbg Preview** icon in the start menu and then select **More** > **Run as Administrator**.
 
 ### I can't launch and record a Windows Store application
 
 This is not supported at this time, but you may attach to and record an already-running Windows Store application.
 
-### I can't record a <insert esoteric process type - running in another session, security context, credentials...> process
+### I can't record a <insert name of unusual process type - running in another session, security context, credentials...> process
 
 At this time, TTD only record regular processes that you can be normally launched from a command console or by clicking on an executable or shortcut in Windows Explorer.
 
-> [!NOTE]
-> JCAB: the wording of this will require some finagling. I don't even know what could fail, really. Elevation might enable crazy scenarios. I think Jordi mentioned recording LSASS, of all things, from WinDbg.
-> But we should put something here, catch-all, to address recoding failures like these.
->
+### I cannot successfully record my application on my computer
 
-### I cannot successfully record my application in this computer
+If recording of your application fails, verify that you can record a simple Windows process.  For example, "ping.exe" or "cmd.exe" are simple processes that can normally be recorded.
 
-If recording of your application fails, we suggest verifying whether you can record a simple Windows process. "ping.exe" or "cmd.exe" are two examples of simple processes.
-
-If that fails...
-
-### I cannot successfully record anything at all in my computer
+### I cannot successfully record anything at all on my computer
 
 TTD recording is an invasive technology, which can interfere with other invasive technologies like application virtualization frameworks, information management products, security software or antivirus products.
 
@@ -65,10 +58,10 @@ To do this you may run ```!index -force```. If that fails:
 1. Close the debugger.
 2. Delete the existing IDX file, it will have the same name as the .RUN trace file and be located in the same directory that the .RUN file is.
 3. Open the trace .RUN file in WinDbg Preview. This will run the ```!index``` command to re-create the index.
-5. Use the ```!index -status``` command to confirm that the trace index is functional.
+4. Use the ```!index -status``` command to confirm that the trace index is functional.
 
-Please, ensure that there's enough space for the index file in the same location where the trace file resides.
-Depending on the contents of the recording, the index file may be significantly larger than the trace file.
+Ensure that there's enough space for the index file in the same location where the trace file resides.
+Depending on the contents of the recording, the index file may be significantly larger than the trace file, typically on th order of twice as large.
 
 ## Issues with Trace .RUN Files
 
@@ -82,32 +75,25 @@ Logged debug write values are out of sync with replay
 ```
 In most cases all of the failure messages indicate that the .RUN trace file is not usable and must be re-recorded.
 
-??? TBD 
-Would any (or all?) failures be related to a troublesome INDEX file? Do we want to share which messages indicate that?
-
-Do we want to talk about disabling CPU features as mentioned on the wiki? 
-
-32 vs. 64 bit?
-
-??? TBD - I need some help with this topic as I think the related Wikis are not targeted towards external release and may be out of date:
-
-https://osgwiki.com/wiki/Trace_file_derailment
-
-https://osgwiki.com/wiki/Debugging_a_Time_Travel_Trace
-
-??? TBD - Please add any additional information and correct anything below.
-
-??? TBD - It would be great to use any product telemetry to look at the 3-5 top failures and offer guidance for those in the docs.
-
 
 ### Re-recording the user mode app
 
 If there is a specific issue with recording a user mode app, you may want to try recording a different app on the same PC, or try the same app on a different PC. You may want to try and record a different use of the app to see if there is a specific issue with recording certain parts of the app.
 
 
-> Additional Content Pending
+### When debugging or creating the index, I see messages about “Derailment events”.
 
-??? TBD - What additional information can we provide to help our users troubleshoot the most common issues with TTD?
+It is possible You may see messages like this one:
+
+```
+Derailment event MissingDataDerailment(7) on UTID 2, position 2A550B:108 with PC 0x7FFE5EEB4448 Request address: 0x600020, size: 32
+```
+
+TTD works by running an emulator inside of the debugger, which executes the instructions of the debugged process in order to replicate the state of that process at every position in the recording. Derailments happen when this emulator observes some sort of discrepancy between the resulting state and information found in the trace file. The error quoted above, for instance, refers to an instruction found on location 0x7FFE5EEB4448, at position 2A550B:108 in the trace, which attempted to read some memory around location 0x600020, which doesn’t exist in the recording.
+
+Derailments are often caused by some error in the recorder, or sometimes in the emulator, at some recorded instruction further back in the trace. 
+
+In most cases this failure messages indicates that the .RUN trace file is not usable and must be re-recorded.
 
 
 ## See Also
