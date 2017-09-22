@@ -16,12 +16,12 @@ ms.technology: windows-devices
 This section describes how to use the data model to query time travel traces. This can be a powerful tool to answer questions like these about the code that is captured in a time travel trace.
 * What exceptions are in the trace?
 * At what point in time in the trace did a specific code module load?
-* When where threads created/terminated in the trace?
+* When were threads created/terminated in the trace?
 
-There are two debugger extensions that add TTD data two the debugger object model: TTDExt and TTDAnalyze. The model objects can be accessed through `dx`, WinDbg Preview's model windows, and JavaScript. Both of these extensions are automatically loaded when debugging a time travel trace.
+There are TTD extensions that add data to the *Session* and *Process* data model objects. The model objects can be accessed through `dx`, WinDbg Preview's model windows, and JavaScript. Both of these extensions are automatically loaded when debugging a time travel trace.
 
-## TTDExt.dll
-The primary objects added by TTDExt can be found in the *TTD* namespace off of any *Process* object. For example, `@$curprocess.TTD`.
+## Process Objects
+The primary objects added to *Process* objects can be found in the *TTD* namespace off of any *Process* object. For example, `@$curprocess.TTD`.
 
 ### Children
 | Object | Description |
@@ -35,8 +35,8 @@ The primary objects added by TTDExt can be found in the *TTD* namespace off of a
 | --- | --- |
 | SetPosition() | Takes an integer between 0 and 100 or string in N:N form as input and jumps the trace to that location. See [!tt](time-travel-debugging-extension-tt.md) for more information.|
 
-## TTDAnalyze.dll
-The primary objects added by TTDAnalyze can be found in the *TTD* namespace off of any *Session* object. For example, `@$cursession.TTD`.
+## Session Objects
+The primary objects added to *Session* objects can be found in the *TTD* namespace off of any *Session* object. For example, `@$cursession.TTD`.
 
 > [!NOTE]
 > There are some objects and methods added by TTDAnalyze that are used for internal functions of the extension. We aren't documenting those here to avoid confusion. There are also some namespaces that will grow over time, so we're glossing over the sparse or empty namespaces.
