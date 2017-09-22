@@ -93,7 +93,7 @@ TTD works by running an emulator inside of the debugger, which executes the inst
 
 Derailments are often caused by some error in the recorder, or sometimes in the emulator, at some recorded instruction further back in the trace. 
 
-In most cases this failure messages indicates that the .RUN trace file is not usable from the point that it derailed. If the event of interest you are trying to debug happened before the trace derailed, the trace may be usable. If the derailment happened before the event of interest occurred, the trace will need to be re-recorded.
+In most cases this failure message indicates that the .RUN trace file will have a gap in the thread that derailed, starting at the point that it derailed,for some indeterminate number of instructions. If the event of interest you are trying to debug didn’t happen during that gap, the trace may be usable. If the event of interest occurred during that gap, the trace will need to be re-recorded.
 
 
 ## See Also
