@@ -41,8 +41,8 @@ Depending on the heap object, it may have some of the properties below.
 ## Children
 | Object | Description |
 | --- | --- |
-| TimeStart | A [position object](time-travel-position-objects.md) that describes the position at the start of the allocation. |
-| TimeEnd | A [position object](time-travel-position-objects.md) that describes the position at the end of the allocation. |
+| TimeStart | A [position object](time-travel-debugging-position-objects.md) that describes the position at the start of the allocation. |
+| TimeEnd | A [position object](time-travel-debugging-position-objects.md) that describes the position at the end of the allocation. |
 
 
 ## Example Usage
