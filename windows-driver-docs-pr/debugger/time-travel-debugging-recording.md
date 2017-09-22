@@ -21,7 +21,7 @@ This section describes how to record time travel debugging (TTD) traces. There a
 
 To launch an executable and record a TTD trace, follow these steps.
 
-1. In WinDbg Preview, select **File** > **Launch executable (advanced)**.
+1. In WinDbg Preview, select **File** > **Start debugging** > **Launch executable (advanced)**.
 
 2. Enter the path to the user mode executable that you wish to record or select **Browse** to navigate to the executable. For information about working with the Launch Executable menu in WinDbg Preview, see [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md).
 
@@ -31,7 +31,7 @@ To launch an executable and record a TTD trace, follow these steps.
     > The UI shown here is preliminary and will likely change. Updated information will be provided in a later release of the documentation. 
     >
 
-3. Check the **Record Process** box to record a trace when the executable is launched. 
+3. Check the **Record process with Time Travel Debugging** box to record a trace when the executable is launched. 
 
 4. Click **OK** to launch the executable and start recording. 
 
@@ -46,7 +46,7 @@ To launch an executable and record a TTD trace, follow these steps.
 
 To attach to a process and record a TTD trace, follow these steps.
 
-1. In WinDbg Preview, select **File** > **Attach to process**.
+1. In WinDbg Preview, select **File** > **Start debugging** > **Attach to process**.
 
 2. Select the user mode process that you wish to trace. For information about working with *Attach to a process* menu in WinDbg Preview, see [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md).
 
@@ -56,7 +56,7 @@ To attach to a process and record a TTD trace, follow these steps.
     > The UI shown here is preliminary and will likely change. Updated information will be provided in a later release of the documentation. 
     >
 
-3. Check the **Record Process** box to create a trace when the executable is launched. 
+3. Check the **Record Process with Time Travel Debugging** box to create a trace when the executable is launched. 
 
 4. Click **Attach** to start recording. 
 
@@ -68,7 +68,7 @@ To attach to a process and record a TTD trace, follow these steps.
 
 ## <span id="HOWTORECORD"></span><span id="howtorecord"></span>How to record
 
-1. Here is where you cause the event of interest that you wish to analyze to occur. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
+1. Recording is where you cause the event of interest that you wish to debug. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
 
 2. While the recording dialog box is being displayed you can:
 
