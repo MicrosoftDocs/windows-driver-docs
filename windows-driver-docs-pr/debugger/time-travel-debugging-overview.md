@@ -25,7 +25,7 @@ TTD can have advantages over crash dump files, which often are missing the code 
 
 In the event you can't figure out the issue yourself, you can share the trace with a co-worker and they can look at exactly what you're looking at. This can allow for easier collaboration than live debugging, as the recorded instructions are the same, where the address locations and code execution will be different on different PCs. You can also share a specific point in time to help your co-worker figure out where to start. 
 
-TTD is lightweight and works to add as little as possible overhead as it captures code execution in trace files.  
+TTD is efficient and works to add as little as possible overhead as it captures code execution in trace files.  
 
 TTD includes a set of debugger data model objects to allow you to query the trace using LINQ. For example, you can use TTD objects to locate when a specific code module was loaded or locate all of the exceptions. 
 
@@ -37,7 +37,7 @@ This table summarizes the pros and cons of the different debugging solutions ava
 
 Approach​ | Pros | Cons​
 |---------|------|-------|
-| WinDbg - Live debugging | Interactive experience, sees flow of execution, can change target state, familiar tool in familiar setting.​ | Disrupts the user experience, may require effort to reproduce the issue repeatedly, may impact security, not always an option on production systems.​ With repro difficult to work back from point of failure to determine cause.
+| Live debugging | Interactive experience, sees flow of execution, can change target state, familiar tool in familiar setting.​ | Disrupts the user experience, may require effort to reproduce the issue repeatedly, may impact security, not always an option on production systems.​ With repro difficult to work back from point of failure to determine cause.
 | Dumps​ | No coding upfront, low-intrusiveness, based on triggers.  | Successive snapshot or live dumps provide a simple “over time” view. Overhead is essentially zero if not used.​  | Often no pre-defect state, limited data, many developers struggle to root cause after the fact.​  | 
 | Telemetry & logs​  |Lightweight, often tied to business scenarios / user actions, machine learning friendly.​  | Issues arise in unexpected code paths (with no telemetry). Lack of data depth, statically compiled into the code. 
 | Time Travel Debugging (TTD)​ | Great at complex bugs, no coding upfront, offline repeatable debugging, analysis friendly, captures everything. | Large overhead at record time. May collect more data that is needed. Data files can become large.​ |
@@ -45,7 +45,7 @@ Approach​ | Pros | Cons​
 
 ## TTD Availability 
 
-TTD is available on Windows 10 devices after installing the WinDbg Preview app from the Store.  WinDbg Preview is a brand-new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, with built in support for the extensible debugger data model. For more information on downloading WinDbg Preview from the store, see [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md).
+TTD is available on Windows 10 after installing the WinDbg Preview app from the Store.  WinDbg Preview is a brand-new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, with built in support for the extensible debugger data model. For more information on downloading WinDbg Preview from the store, see [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md).
 
 
 ## Trace file basics 
@@ -112,7 +112,7 @@ Another example of an environment that conflicts with TTD, would be the electron
 
 TTD currently supports only user mode operation, so tracing a kernel mode process is not possible. 
 
-### Read only playback
+### Read-only playback
 
 You can travel back in time, but you can't change history. You can use read memory commands, but you can't use commands that modify or write to memory.
 
@@ -123,7 +123,7 @@ Some Windows system protected processes, such as Protected Process Light (PPL) p
 
 ### Trace file errors
 
-If something occurs the trace file may be corrupted. Use the !index command to see if it can be re-indexed. For more information, see [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md).
+There are some cases where trace file errors can occur. For more information, see [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md).
 
 
 

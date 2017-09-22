@@ -56,8 +56,6 @@ Index file loaded.
 
 Use ```!index -force``` to reindex the trace even if an an unloadable index file exists on disk.
 
-??? TBD Output look right - Wasn't able to properly test 
-
 ```
 0:000> !tt.index -force
 Successfully created the index in 152ms.

@@ -45,7 +45,7 @@ This section introduces the time travel debugger extension commandss.
 </tr>
 <tr class="odd">
 <td align="left"><p>[<strong>!index</strong>](time-travel-debugging-extension-index.md)</p></td>
-<td align="left"><p>The [<strong>!index</strong>]The [!index](time-travel-debugging-extension-index.md) extension indexes time travel traces or displays index status information.</p></td>
+<td align="left"><p>The [<strong>!index</strong>]time-travel-debugging-extension-index.md) extension indexes time travel traces or displays index status information.</p></td>
 </tr>
 </tbody>
 </table>
