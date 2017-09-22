@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Record a trace 
 description: This section describes how to record time travel traces.
 ms.author: windowsdriverdev
-ms.date: 09/21/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -27,9 +27,6 @@ To launch an executable and record a TTD trace, follow these steps.
 
     ![Screen shot of WinDbg Preview showing start recording checkbox in launch executable (advanced) screen](images/ttd-start-recording.png)
 
-    > [!NOTE]
-    > The UI shown here is preliminary and will likely change. Updated information will be provided in a later release of the documentation. 
-    >
 
 3. Check the **Record process with Time Travel Debugging** box to record a trace when the executable is launched. 
 
@@ -52,9 +49,6 @@ To attach to a process and record a TTD trace, follow these steps.
 
     ![Screen shot of WinDbg Preview showing start recording checkbox](images/ttd-start-recording-attach-to-process.png)
 
-    > [!NOTE]
-    > The UI shown here is preliminary and will likely change. Updated information will be provided in a later release of the documentation. 
-    >
 
 3. Check the **Record Process with Time Travel Debugging** box to create a trace when the executable is launched. 
 
