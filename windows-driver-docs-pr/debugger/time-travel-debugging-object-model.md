@@ -95,7 +95,7 @@ This LINQ query displays the load event(s) of a particular module.
 @$curprocess.TTD.Events.Where(t => t.Type == "ModuleUnloaded").Where(t => t.Module.Name.Contains("ntdll.dll"))                 
     [0x0]            : Module Unloaded at position: FFFFFFFFFFFFFFFE:0
 ```
-The address of FFFFFFFFFFFFFFFE:0 indicates ??? TBD. 
+The address of FFFFFFFFFFFFFFFE:0 indicates the end of the trace. 
 
 
 ### Querying for the time position in the trace when threads were created
@@ -166,27 +166,30 @@ Use this LINQ query to display in grid format, the time position in the trace wh
 
 ### Sorting output to determine the longest running threads
 
-Use this LINQ query to display in grid format, the longest running threads in the trace.
-
-??? TBD Is this possible? What would the dx query be? Would we use OrderByDescending? Can we just display the top 3 long running threads?
+Use this LINQ query to display in grid format, the approximate longest running threads in the trace.
 
 ```
-TBD
-
-This isn't right...
-
- dx -r1 -g @$curprocess.TTD.Events.OrderByDescending(obj => (obj.@"Position").ToDisplayString())
-
-TBD 
-
-Is the query valid in a trace? It seems to return results of some type. It is not using the TTD objects though.
-
-0:000> dx -r2 Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.ThreadCount),5
-Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.ThreadCount),5                
-    [0x2f08]        
-        Name             : CDog_Console.exe
-        ThreadCount      : 0x3
-
+0:000> dx -g @$curprocess.TTD.Events.Where(e => e.Type == "ThreadTerminated").Select(e => new { Thread = e.Thread, ActiveTimeLength = e.Thread.ActiveTime.MaxPosition.Sequence - e.Thread.ActiveTime.MinPosition.Sequence }).OrderByDescending(t => t.ActiveTimeLength)
+=========================================================
+=          = (+) Thread              = ActiveTimeLength =
+=========================================================
+= [0x0]    - UID: 2, TID: 0x1750     - 0x364030         =
+= [0x1]    - UID: 3, TID: 0x420C     - 0x360fd4         =
+= [0x2]    - UID: 7, TID: 0x352C     - 0x35da46         =
+= [0x3]    - UID: 9, TID: 0x39F4     - 0x34a5b5         =
+= [0x4]    - UID: 11, TID: 0x4288    - 0x326199         =
+= [0x5]    - UID: 13, TID: 0x21C8    - 0x2fa8d8         =
+= [0x6]    - UID: 14, TID: 0x2188    - 0x2a03e3         =
+= [0x7]    - UID: 15, TID: 0x40E8    - 0x29e7d0         =
+= [0x8]    - UID: 16, TID: 0x124     - 0x299677         =
+= [0x9]    - UID: 4, TID: 0x2D74     - 0x250f43         =
+= [0xa]    - UID: 5, TID: 0x2DC8     - 0x24f921         =
+= [0xb]    - UID: 6, TID: 0x3B1C     - 0x24ec8e         =
+= [0xc]    - UID: 10, TID: 0x3808    - 0xf916f          =
+= [0xd]    - UID: 12, TID: 0x26B8    - 0x1ed3a          =
+= [0xe]    - UID: 17, TID: 0x37D8    - 0xc65            =
+= [0xf]    - UID: 8, TID: 0x45F8     - 0x1a2            =
+=========================================================
 ```
 
 

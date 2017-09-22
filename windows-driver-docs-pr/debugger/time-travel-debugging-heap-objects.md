@@ -29,14 +29,14 @@ Depending on the heap object, it may have some of the properties below.
 | Property | Description |
 | --- | --- |
 | Address | The address of the allocated object. |
-| PreviousAddress | TODO |
-| Size | TODO |
+| PreviousAddress | The address of the allocated object before it was reallocated. If Address is not the same as PreviousAddress then the reallocation caused the memory to move. |
+| Size | The size and/or requested size of an allocated object. |
 | BaseAddress | TODO |
-| Flags | The flags for the heap. |
-| Result | What was returned by the heap. |
+| Flags | Meaning depends on the API |
+| Result | The result of the heap API call. Non-zero means success and zero means failure. |
 | ReserveSize | Amount of memory to reserve for the heap. |
-| CommitSize | Initial committed size. |
-| MakeReadyOnly | If the heap is read-only or not. |
+| CommitSize | Initial committed size for the heap. |
+| MakeReadOnly | A non-zero value indicates a request to make the heap read-only; A zero value indicates the heap should be read-write. |
 
 ## Children
 | Object | Description |

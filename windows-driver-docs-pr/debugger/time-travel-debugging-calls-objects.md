@@ -19,7 +19,7 @@ ms.technology: windows-devices
 ## Properties
 | Property | Description |
 | --- | --- |
-| Function | The function name. |
+| Function | The symbolic name of the function. |
 | FunctionAddress | The functions address in memory. |
 | ReturnValue | The return value of the function. If the function has a void type, this property will not be present. |
 
