@@ -68,7 +68,7 @@ To attach to a process and record a TTD trace, follow these steps.
 
 ## <span id="HOWTORECORD"></span><span id="howtorecord"></span>How to record
 
-1. Recording is where you cause the event of interest that you wish to debug. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
+1. The process is being recorded, so this is where you need to cause the issue that you wish to debug. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
 
 2. While the recording dialog box is being displayed you can:
 
@@ -81,7 +81,7 @@ To attach to a process and record a TTD trace, follow these steps.
    > Both *Stop and debug* and *Cancel* will terminate the associated process. 
    >   
 
-4. When the associated application terminates, the trace file will be closed and written out to disk. This is the case if your program crashes as well.
+4. When the application being recorded terminates, the trace file will be closed and written out to disk. This is the case if your program crashes as well.
 
 5. When a trace file is opened, the debugger will automatically index the trace file. Indexing allows for more accurate and faster memory value look ups. This indexing process will take longer for larger trace files.
 
