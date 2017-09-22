@@ -19,16 +19,16 @@ ms.technology: windows-devices
 ## Properties
 | Property | Description |
 | --- | --- |
-| Type | TODO |
-| ProgramCounter | TODO  |
-| Code | TODO  |
-| Flags | TODO  |
-| RecordAddress | TODO  |
+| Type | Describes the type of exception. Possible values are "Software" and "Hardware". |
+| ProgramCounter | The instruction where the exception was thrown.  |
+| Code | The code of the exception.  |
+| Flags | The exception flags. |
+| RecordAddress | Where in memory you can find the record of the exception.  |
 
 ## Children
 | Object | Description |
 | --- | --- |
-| Position | A [position object](time-travel-position-objects.md) that describes the position the exception occurred. |
+| Position | A [position object](time-travel-debugging-position-objects.md) that describes the position the exception occurred. |
 
 ## Example Usage
 Coming soon.
