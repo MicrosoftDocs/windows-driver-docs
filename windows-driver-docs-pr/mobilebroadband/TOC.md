@@ -50,6 +50,7 @@
 ### [APN database overview](apn-database-overview.md)
 ### [COSA/APN database submission](cosa-apn-database-submission.md)
 #### [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md)
+##### [Desktop COSA/APN database settings](desktop-cosa-apn-database-settings.md)
 #### [Testing your desktop COSA/APN database submission](testing-your-desktop-cosa-apn-database-submission.md)
 #### [Submitting the desktop COSA/APN database update](submitting-the-desktop-cosa-apn-database-update.md)
 ## [Service metadata](service-metadata.md)
