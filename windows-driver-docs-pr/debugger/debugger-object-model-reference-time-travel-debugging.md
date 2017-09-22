@@ -2,7 +2,7 @@
 title: Debugger object model reference - time travel debugging (TTD)
 description: This section describes the debugger model objects associated with time travel debugging.
 ms.author: windowsdriverdev
-ms.date: 09/15/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -19,15 +19,20 @@ This section describes the debugger model objects associated with time travel de
 
 For general information about the debugger object model, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md) and  [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md). 
 
-For information on working with the TTD objects see, [Time Travel Debugging - Trace File object model](time-travel-debugging-object-model.md).
+For information on working with the TTD objects see, [Time Travel Debugging - Object Model](time-travel-debugging-object-model.md).
 
 ## TTD Object
 
-The TTD object contains time travel debugging specific properties available for each process in a trace file. The TTD object is associated with the current process (curprocess) debugger object. The TTD *Lifetime*, *Threads* and *Events* objects are documented in this topic. 
+The TTD object contains time travel debugging properties available for each process in a trace file. The TTD object is associated with the curprocess debugger object. The following TTD objects are discussed in this topic. 
+
+- *Lifetime*
+- *Threads*
+- *Events* 
+
 
 ### TTD Methods
 
-**SetPosition** - Sets the debugger to point to the given position on this process.    
+**SetPosition()** - Sets the debugger to point to the given position on this process.    
 
 ### TTD dx command Example
 
@@ -101,21 +106,20 @@ The TTD Threads Object contains an array of the threads in the TTD trace. Each t
 **Id** - The thread's TID assigned by the OS.
 
 **LifeTime** - The TTD Lifetime object contains information on the contents of the time travel trace, see above for information on the LifeTime object. In the Lifetime object, the MinPosition to MaxPosition range, is the portion of the timeline that contains instructions executed by the thread.
-
  
 **ActiveTime** - The position range where execution of this thread is recorded. The active lifetime of a thread is the closest approximation to when the thread was present during recording of the trace.
 
 
 ## TTD Threads Methods 
  
- **SeekTo** - Method which seeks to time position. The MinPosition and MaxPosition TTD Threads objects support this method.
+ **SeekTo** - Method which seeks to time position. The MinPosition and MaxPosition TTD Threads objects, support this method.
  
- **ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object children support this method.
+ **ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Threads object children support this method.
         
  
 ### TTD Threads Object Example
 
-Use the dx command to display all of the children objects to the first TTD threads object in the array.
+Use the dx command to display all of the children objects of the first TTD threads object in the array.
 
 ```
 0:000> dx -r3 -h @$curprocess.TTD.Threads[0]
@@ -138,7 +142,8 @@ Use the dx command to display all of the children objects to the first TTD threa
             Steps            : 0x0 [Counts the steps (instructions) beyond the last thread sequencing event.]
 ```
 
-The [Time Travel] links provide a link to a SeekTo() a specific event. ??? TBD - My sample seems to Seekto() vs. 2:0 - bug?
+The [Time Travel] links provide a link to SeekTo() a specific event. 
+
 
 ```
 0:0:000> dx -r1 @$curprocess.TTD .@"Threads"[2].@"ActiveTime"
@@ -163,11 +168,11 @@ The TTD Events Object contains an array of events in the TTD trace.
 
 ### TTD Events Type Methods
 
-**Contains(OtherString)** -Method which returns whether the string contains a given sub string.
+**Contains(OtherString)** - Method which returns whether the string contains a given sub string.
 
-**EndsWith(OtherString)** -Method which returns whether the string ends with a given string.
+**EndsWith(OtherString)** - Method which returns whether the string ends with a given string.
 
-**IndexOf(OtherString)** -Method which returns the index of the first occurrence of a substring in the given string.  If no such occurrence exists, -1 is returned.
+**IndexOf(OtherString)** - Method which returns the index of the first occurrence of a substring in the given string.  If no such occurrence exists, -1 is returned.
 
 **LastIndexOf(OtherString)** -Method which returns the index of the last occurrence of a substring in the given string.  If no such occurrence exists, -1 is returned.
 
@@ -189,7 +194,7 @@ The TTD Events Object contains an array of events in the TTD trace.
 
 **ToUpper()** - Returns a copy of this string converted to uppercase.
 
-**ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object children support this method.
+**ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Events object children support this method.
  
 ### TTD Events Position Objects
 
@@ -235,6 +240,7 @@ The Module object contains:
 
  **ToDisplayString** - ToDisplayString([FormatSpecifier]) - Method which converts the object to its display string representation according to an optional format specifier. All of the TTD Lifetime object children support this method.
 
+
 ### TTD Events Module Name Methods
 
 **Contains(OtherString)** -Method which returns whether the string contains a given sub string.
@@ -266,7 +272,7 @@ The Module object contains:
 
 ### TTD Events Object Examples
 
-Use the dx command to display all of the children objects of the TTD Events object.
+Use the dx command to display all of the children objects for the TTD Events object.
 
 ```
 0:000> dx -r2 @$curprocess.TTD .@"Events"[0]

@@ -23,10 +23,10 @@ This section describes how to use the data model to query time travel traces. Th
 - When where threads created/terminated in the trace?
 - What thread spent the most time running?
 
-- ??? TBD - need more cool examples here...
+- ??? TBD - need more examples here...
 
 
-## dx TTD namespaces and commands
+## TTD namespaces and commands
 
 The Lifetime, Threads and Events TTD objects are associated with the current process (curprocess). Use the dx -h option to view basic information about these TTD Objects.
 
@@ -50,7 +50,7 @@ This LINQ query displays all of the exceptions in the trace.
 ```
 dx @$curprocess.TTD.Events.Where(t => t.Type == "Exception").Select(e => e.Exception) 
 
-TBD - Need to get a TTD trace .RUN file with an exception - break CDog app
+TBD - Need to get a TTD trace .RUN file with an exception - I think I can break the CDog app
 
 ```
 
@@ -190,7 +190,7 @@ Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
-[Debugger Object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md)
+[Debugger object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md)
 
 [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md)
 
