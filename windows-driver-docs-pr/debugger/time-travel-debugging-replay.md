@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Replay a trace
 description: This section describes how to replay time travel traces.
 ms.author: windowsdriverdev
-ms.date: 09/20/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -35,7 +35,8 @@ Alternatively, use the ribbon buttons to navigate in the trace.
 
 ## Example TTD Trace Replay
 
-Use the g- command to reset the time position to the beginning of the TTD trace. 
+Use the g- command to execute backwards until either an event or the beginning of the TTD trace is reached. The events that can stop backward execution are the same that would stop forward execution. In this example, the start of the trace is reached.
+
 
 ```
 0:000> g-
@@ -193,14 +194,15 @@ Use the [~ (Thread Status)](---thread-status-.md) command to confirm that we are
    7  Id: 3f4.3200 Suspend: 4096 Teb: 00000061`79808000 Unfrozen
 ```
 
-## Time travel debugging extension utility commands
 
-Use the following travel debugging extension utility commands to work with TTD traces.
+> [!NOTE]
+> The *~s#*, where *#* is a thread number, also switches to the given thread, but it doesn’t change the current position in the trace.  When *!tt* is 
+> used to time travel to another thread’s position, any values you (and the debugger) read from memory will be looked up at that position. When switching > threads with *~s#*, the debugger doesn't change the current position internally, which is used for all memory queries. This works this way primarily so > that *~s#* doesn’t have to reset the debugger’s inner loop.
 
 
-### !index
+## Time travel debugging extension commands
 
-Use ```!index``` to run an indexing pass over the current trace and to display the status of the index. For more information, see [Time Travel Debugging - !index (time travel)](time-travel-debugging-extension-index.md).
+For information on the ```!tt```, ```!positions``` and the ```!index``` commands see [Time Travel Debugging - Extension Commands](time-travel-debugging-extension-commands.md).
 
  
 ## See Also
