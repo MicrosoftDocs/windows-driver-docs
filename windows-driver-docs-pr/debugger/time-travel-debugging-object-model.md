@@ -12,36 +12,43 @@ ms.technology: windows-devices
 > The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
 >
 
-
-# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Object Model
-
-
+# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Introduction to Time Travel Debugging objects
 This section describes how to use the data model to query time travel traces. This can be a powerful tool to answer questions like these about the code that is captured in a time travel trace.
+* What exceptions are in the trace?
+* At what point in time in the trace did a specific code module load?
+* When were threads created/terminated in the trace?
 
-- What exceptions are in the trace?
-- At what point in time in the trace did a specific code module load?
-- When where threads created/terminated in the trace?
-- What thread spent the most time running?
+There are TTD extensions that add data to the *Session* and *Process* data model objects. The model objects can be accessed through `dx`, WinDbg Preview's model windows, and JavaScript. Both of these extensions are automatically loaded when debugging a time travel trace.
 
-- ??? TBD - need more examples here...
+## Process Objects
+The primary objects added to *Process* objects can be found in the *TTD* namespace off of any *Process* object. For example, `@$curprocess.TTD`.
 
+### Children
+| Object | Description |
+| --- | --- |
+| Lifetime | A [TTD range object](time-travel-debugging-range-objects.md) describing the lifetime of the entire trace. |
+| Threads | Contains a collection of [TTD thread objects](time-travel-debugging-thread-objects.md), one for every thread throughout the lifetime of the trace. |
+| Events | Contains a collection of [TTD event objects](time-travel-debugging-event-objects.md), one for every event in the trace. |
 
-## TTD namespaces and commands
+### Methods
+| Method | Description |
+| --- | --- |
+| SetPosition() | Takes an integer between 0 and 100 or string in N:N form as input and jumps the trace to that location. See [!tt](time-travel-debugging-extension-tt.md) for more information.|
 
-The Lifetime, Threads and Events TTD objects are associated with the current process (curprocess). Use the dx -h option to view basic information about these TTD Objects.
+## Session Objects
+The primary objects added to *Session* objects can be found in the *TTD* namespace off of any *Session* object. For example, `@$cursession.TTD`.
 
-```
-0:000>  dx -h @$curprocess.TTD
-@$curprocess.TTD                 [TTD-specific properties available for each process (for each trace file).]
-    Lifetime         : [D:0, 8A:0] [The position range [smallest, largest] found in the trace file.]
-    Threads          [This process' list of threads alive throughout the timeline.]
-    Events           [This process' list of events.]         
-```
+> [!NOTE]
+> There are some objects and methods added by TTDAnalyze that are used for internal functions of the extension. We aren't documenting those here to avoid confusion. There are also some namespaces that will grow over time, so we're glossing over the sparse or empty namespaces.
+>
 
-For more information about objects described here, see [Debugger Object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md).
+### Methods
+| Method | Description |
+| --- | --- |
+| Data.Heap() | A collection of [heap objects](time-travel-debugging-heap-objects.md) that were allocated during the trace. Note that this is a function that does computation, so it takes a while to run.|
+| Calls() | A collection of [calls objects](time-travel-debugging-calls-objects.md) that we called during the trace. Note that this is a function that does computation, so it takes a while to run.|
 
-
-## Querying a Time Travel Trace – Examples
+## Examples
 
 ### Querying for exceptions
 
@@ -88,7 +95,7 @@ This LINQ query displays the load event(s) of a particular module.
 @$curprocess.TTD.Events.Where(t => t.Type == "ModuleUnloaded").Where(t => t.Module.Name.Contains("ntdll.dll"))                 
     [0x0]            : Module Unloaded at position: FFFFFFFFFFFFFFFE:0
 ```
-The address of FFFFFFFFFFFFFFFE:0 indicates ??? TBD. 
+The address of FFFFFFFFFFFFFFFE:0 indicates the end of the trace. 
 
 
 ### Querying for the time position in the trace when threads were created
@@ -159,27 +166,30 @@ Use this LINQ query to display in grid format, the time position in the trace wh
 
 ### Sorting output to determine the longest running threads
 
-Use this LINQ query to display in grid format, the longest running threads in the trace.
-
-??? TBD Is this possible? What would the dx query be? Would we use OrderByDescending? Can we just display the top 3 long running threads?
+Use this LINQ query to display in grid format, the approximate longest running threads in the trace.
 
 ```
-TBD
-
-This isn't right...
-
- dx -r1 -g @$curprocess.TTD.Events.OrderByDescending(obj => (obj.@"Position").ToDisplayString())
-
-TBD 
-
-Is the query valid in a trace? It seems to return results of some type. It is not using the TTD objects though.
-
-0:000> dx -r2 Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.ThreadCount),5
-Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.ThreadCount),5                
-    [0x2f08]        
-        Name             : CDog_Console.exe
-        ThreadCount      : 0x3
-
+0:000> dx -g @$curprocess.TTD.Events.Where(e => e.Type == "ThreadTerminated").Select(e => new { Thread = e.Thread, ActiveTimeLength = e.Thread.ActiveTime.MaxPosition.Sequence - e.Thread.ActiveTime.MinPosition.Sequence }).OrderByDescending(t => t.ActiveTimeLength)
+=========================================================
+=          = (+) Thread              = ActiveTimeLength =
+=========================================================
+= [0x0]    - UID: 2, TID: 0x1750     - 0x364030         =
+= [0x1]    - UID: 3, TID: 0x420C     - 0x360fd4         =
+= [0x2]    - UID: 7, TID: 0x352C     - 0x35da46         =
+= [0x3]    - UID: 9, TID: 0x39F4     - 0x34a5b5         =
+= [0x4]    - UID: 11, TID: 0x4288    - 0x326199         =
+= [0x5]    - UID: 13, TID: 0x21C8    - 0x2fa8d8         =
+= [0x6]    - UID: 14, TID: 0x2188    - 0x2a03e3         =
+= [0x7]    - UID: 15, TID: 0x40E8    - 0x29e7d0         =
+= [0x8]    - UID: 16, TID: 0x124     - 0x299677         =
+= [0x9]    - UID: 4, TID: 0x2D74     - 0x250f43         =
+= [0xa]    - UID: 5, TID: 0x2DC8     - 0x24f921         =
+= [0xb]    - UID: 6, TID: 0x3B1C     - 0x24ec8e         =
+= [0xc]    - UID: 10, TID: 0x3808    - 0xf916f          =
+= [0xd]    - UID: 12, TID: 0x26B8    - 0x1ed3a          =
+= [0xe]    - UID: 17, TID: 0x37D8    - 0xc65            =
+= [0xf]    - UID: 8, TID: 0x45F8     - 0x1a2            =
+=========================================================
 ```
 
 
@@ -189,8 +199,6 @@ Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount
 ## See Also
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
-
-[Debugger object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md)
 
 [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md)
 

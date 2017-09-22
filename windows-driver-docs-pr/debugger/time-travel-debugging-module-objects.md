@@ -26,7 +26,7 @@ ms.technology: windows-devices
 | Timestamp | The timestamp of the module. |
 
 ## Example Usage
-`TODO`
+Coming soon.
 
 ## See Also
-`TODO`
+Coming soon.

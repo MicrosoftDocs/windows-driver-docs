@@ -14,7 +14,9 @@ ms.technology: windows-devices
 
 # TTD Position Objects
 ## Description
-*Position* objects are used to describe a position in a time travel trace. A position object is normally described by two hexadecimal numbers separated by a colon. The first of the hexadecimal numbers is the *Steps* and the second is the *Sequence*.
+*Position* objects are used to describe a position in a time travel trace. A position object is normally described by two hexadecimal numbers separated by a colon. The first of the hexadecimal numbers is the *Sequence* and the second is the *Steps*.
+
+A position of FFFFFFFFFFFFFFFE:0 indicates the end of the trace.
 
 ## Properties
 | Property | Description |
@@ -25,10 +27,10 @@ ms.technology: windows-devices
 ## Methods
 | Method | Description |
 | --- | --- |
-| SeekTo() | Time travels the trace to the position. |
+| SeekTo() | Time travels to this position in the trace. |
 
 ## Example Usage
-`TODO`
+Coming soon.
 
 ## See Also
-`TODO`
+Coming soon.
