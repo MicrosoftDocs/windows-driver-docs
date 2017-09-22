@@ -85,10 +85,9 @@ Review these topics to record and replay a trace file as well as for information
 
 - [Time Travel Debugging - Record a trace](time-travel-debugging-recording.md)
 - [Time Travel Debugging - Replay a trace](time-travel-debugging-replay.md)
-- [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-files.md)
-- [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md)
+- [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-file-information.md)
 - [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md)
-- [Time Travel Debugging - TTDAnalyze](time-travel-debugging-ttdanalyze.md)
+- [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md)
 
 These topics describe additional advanced functionality in time travel debugging. 
 

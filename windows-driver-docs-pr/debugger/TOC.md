@@ -40,7 +40,7 @@
 ## [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 ### [Time Travel Debugging - Recording](time-travel-debugging-recording.md)
 ### [Time Travel Debugging - Replay a trace](time-travel-debugging-replay.md)
-### [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-files.md)
+### [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-file-information.md)
 ### [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md)
 ### [Time Travel Debugging - Navigation commands](time-travel-debugging-navigation-commands.md)
 ### [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md)

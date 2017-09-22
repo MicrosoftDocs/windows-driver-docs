@@ -76,10 +76,6 @@ The Data namespace contains “normalized data” from the trace. There is one d
 …
 ```
 
-Use the -g option to display the results in a grid
-
-??? TBD Need to have a better example with better TimeEnd 
-
 ```
 0:000> dx -r2 -g @$cursession.TTD.Data.Heap()
 ==========================================================================================================================================
@@ -111,8 +107,6 @@ It is called “normalized data” because there is a chosen set of APIs that re
 
 Use this dx command with the GetHeapAddress method to locate heap entries that impact the specified address.
 
-??? TBD - need better example then 0x0
-??? TBD - is 0x0 non heap - stack memory?
 
 ```
 0:000> dx -r4 -g @$cursession.TTD.Utility.GetHeapAddress(0x0)
