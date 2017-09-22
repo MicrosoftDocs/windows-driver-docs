@@ -23,7 +23,7 @@ TTD allows you to go back in time to better understand the conditions that lead 
 
 TTD can have advantages over crash dump files, which often are missing the code execution that led up to the ultimate failure.  
 
-In the event you can't figure out the issue yourself, you can share the trace with a co-worker and they can look at exactly what you're looking at. This can allow for easier collaboration then live debugging, as the recorded instructions are the same, where the address locations and code execution will be different on different PCs. You can also share a specific point in time to help your collaborator figure out where to start. 
+In the event you can't figure out the issue yourself, you can share the trace with a co-worker and they can look at exactly what you're looking at. This can allow for easier collaboration than live debugging, as the recorded instructions are the same, where the address locations and code execution will be different on different PCs. You can also share a specific point in time to help your co-worker figure out where to start. 
 
 TTD is lightweight and works to add as little as possible overhead as it captures code execution in trace files.  
 
@@ -52,17 +52,17 @@ TTD is available on Windows 10 devices after installing the WinDbg Preview app f
 
 ### Trace file size
 
-Trace file can get big and the user of TTD needs to make sure that there is adequate free space available. If you trace a program for even a few minutes, the trace files can quickly grow to be several gigabytes. TTD does not set a maximum size of trace files to allow for complex long running scenarios. Quickly re-creating the issue, will keep the trace file size as small as possible.
+The trace file can get big and the user of TTD needs to make sure that there is adequate free space available. If you record a program for even a few minutes, the trace files can quickly grow to be several gigabytes. TTD does not set a maximum size of trace files to allow for complex long running scenarios. Quickly re-creating the issue, will keep the trace file size as small as possible.
 
-### Run and index files
+### Trace and index files
 
-A .RUN file stores the code execution as the trace is running. 
+A trace (.RUN) file stores the code execution during recording. 
 
-Once the tracing is stopped, an index (.IDX) file is created to allow for faster access to the trace information. Index files are also created automatically when WinDbg Preview opens the .RUN trace file.
+Once the recording is stopped, an index (.IDX) file is created to allow for faster access to the trace information. Index files are also created automatically when WinDbg Preview opens the trace file.
 
-IDX files can also be large, typically twice as large as the .RUN file.  
+Index files can also be large, typically twice as large as the trace file.  
 
-You can recreate the index file from the .RUN file using the !tt.index command.
+You can recreate the index file from the trace file using the !tt.index command.
 
 ```
 0:000> !tt.index
@@ -81,7 +81,7 @@ For more information on working the trace files, see [Time Travel Debugging - Wo
 
 ## Getting started with TTD
 
-Review these topics to record and playback a trace file as well as for information on working with trace files and troubleshooting.
+Review these topics to record and replay a trace file as well as for information on working with trace files and troubleshooting.
 
 - [Time Travel Debugging - Record a trace](time-travel-debugging-recording.md)
 - [Time Travel Debugging - Replay a trace](time-travel-debugging-replay.md)
