@@ -70,7 +70,7 @@ To attach to a process and record a TTD trace, follow these steps.
 
 1. Here is where you cause the event of interest that you wish to analyze to occur. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
 
-2. When the recording dialog box is being displayed you can:
+2. While the recording dialog box is being displayed you can:
 
     - **Stop and debug** - Choosing this will stop the recording, create the trace file and open the trace file so you can start debugging. 
     - **Cancel** - Choosing this will stop the recording and create the trace file. You can open the trace file at a later time. 

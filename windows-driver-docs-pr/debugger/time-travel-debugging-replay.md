@@ -200,30 +200,7 @@ Use the following travel debugging extension utility commands to work with TTD t
 
 ### !index
 
-Use ```!index``` to run an indexing pass over the current trace. 
-
-```
-0:000> !index
-Indexed 10/14 keyframes
-Indexed 14/14 keyframes
-Successfully created the index in 535ms.
-```
-
-If the current trace is already indexed, the ```!index``` command does nothing.
-
-```
-0:000> !index
-Successfully created the index in 0ms.
-```
-
-### !index -status
-
-Use !tt.index status to report the status of the trace index.
-
-```
-0:000> !index -status
-Index file loaded.
-```
+Use ```!index``` to run an indexing pass over the current trace and to display the status of the index. For more information, see [Time Travel Debugging - !index (time travel)](time-travel-debugging-extension-index.md).
 
  
 ## See Also

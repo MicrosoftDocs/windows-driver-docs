@@ -83,7 +83,7 @@ If there is a specific issue with recording a user mode app, you may want to try
 
 ### When debugging or creating the index, I see messages about “Derailment events”.
 
-It is possible You may see messages like this one:
+It is possible that you may see messages like this one:
 
 ```
 Derailment event MissingDataDerailment(7) on UTID 2, position 2A550B:108 with PC 0x7FFE5EEB4448 Request address: 0x600020, size: 32
