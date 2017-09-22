@@ -418,7 +418,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="even">
 <td align="left"><p>0x225</p></td>
 <td align="left"><p>Non-fatal error</p></td>
-<td align="left"><p>An IRP dispatch handler has returned a status that is illegal (0xFFFFFFFF). This is probably due to an uninitialized stack variable. To debug this error, use the [<strong>ln (List Nearest Symbols)</strong>](ln--list-nearest-symbols-.md) command with the specified address.</p></td>
+<td align="left"><p>An IRP dispatch handler has returned a status that is illegal (0xFFFFFFFF). This is probably due to an uninitialized stack variable. To debug this error, use the <strong>[ln (List Nearest Symbols)](ln--list-nearest-symbols-.md)</strong> command with the specified address.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x226</p></td>

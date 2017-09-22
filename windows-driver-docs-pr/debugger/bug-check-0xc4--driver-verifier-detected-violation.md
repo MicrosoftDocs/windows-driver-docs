@@ -115,7 +115,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Current IRQL</p></td>
 <td align="left"><p>Requested IRQL</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The driver passed an invalid parameter to [<strong>KeRaiseIrql</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553079).</p>
+<td align="left"><p>The driver passed an invalid parameter to <strong>[KeRaiseIrql](https://msdn.microsoft.com/library/windows/hardware/ff553079)</strong>.</p>
 <p>(The parameter was either a value lower than the current IRQL, or a value higher than HIGH_LEVEL. This may be the result of using an uninitialized parameter.)</p></td>
 </tr>
 <tr class="even">
@@ -124,7 +124,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Requested IRQL</p></td>
 <td align="left"><p><strong>0:</strong> New IRQL is bad</p>
 <p><strong>1:</strong> New IRQL is invalid inside a DPC routine</p></td>
-<td align="left"><p>The driver passed an invalid parameter to [<strong>KeLowerIrql</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552968).</p>
+<td align="left"><p>The driver passed an invalid parameter to <strong>[KeLowerIrql](https://msdn.microsoft.com/library/windows/hardware/ff552968)</strong>.</p>
 <p>(The parameter was either a value higher than the current IRQL, or a value higher than HIGH_LEVEL. This may be the result of using an uninitialized parameter.)</p></td>
 </tr>
 <tr class="odd">
@@ -132,7 +132,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Current IRQL</p></td>
 <td align="left"><p>Spin lock address</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The driver called [<strong>KeReleaseSpinLock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553145) at an IRQL other than DISPATCH_LEVEL.</p>
+<td align="left"><p>The driver called <strong>[KeReleaseSpinLock](https://msdn.microsoft.com/library/windows/hardware/ff553145)</strong> at an IRQL other than DISPATCH_LEVEL.</p>
 <p>(This may be due to a double-release of a spin lock.)</p></td>
 </tr>
 <tr class="even">
@@ -196,21 +196,21 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Handle passed to routine</p></td>
 <td align="left"><p>Object type</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The driver called [<strong>ObReferenceObjectByHandle</strong>](https://msdn.microsoft.com/library/windows/hardware/ff558679) with a bad handle.</p></td>
+<td align="left"><p>The driver called <strong>[ObReferenceObjectByHandle](https://msdn.microsoft.com/library/windows/hardware/ff558679)</strong> with a bad handle.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x3D</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Address of the bad resource</p></td>
-<td align="left"><p>The driver passed a bad (unaligned) resource to [<strong>ExAcquireResourceExclusive</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544345).</p></td>
+<td align="left"><p>The driver passed a bad (unaligned) resource to <strong>[ExAcquireResourceExclusive](https://msdn.microsoft.com/library/windows/hardware/ff544345)</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x3E</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The driver called [<strong>KeLeaveCriticalRegion</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552964) for a thread that is not currently in a critical region.</p></td>
+<td align="left"><p>The driver called <strong>[KeLeaveCriticalRegion](https://msdn.microsoft.com/library/windows/hardware/ff552964)</strong> for a thread that is not currently in a critical region.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x3F</p></td>
@@ -219,28 +219,28 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <p><strong>-1:</strong> dereference case</p>
 <p><strong>1:</strong> reference case</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The driver applied [<strong>ObReferenceObject</strong>](https://msdn.microsoft.com/library/windows/hardware/ff558678) to an object that has a reference count of zero, or the driver applied [<strong>ObDereferenceObject</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557724) to an object that has a reference count of zero.</p></td>
+<td align="left"><p>The driver applied <strong>[ObReferenceObject](https://msdn.microsoft.com/library/windows/hardware/ff558678)</strong> to an object that has a reference count of zero, or the driver applied <strong>[ObDereferenceObject](https://msdn.microsoft.com/library/windows/hardware/ff557724)</strong> to an object that has a reference count of zero.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x40</p></td>
 <td align="left"><p>Current IRQL</p></td>
 <td align="left"><p>Spin lock address</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The driver called [<strong>KeAcquireSpinLockAtDpcLevel</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551921) with IRQL &lt; DISPATCH_LEVEL.</p></td>
+<td align="left"><p>The driver called <strong>[KeAcquireSpinLockAtDpcLevel](https://msdn.microsoft.com/library/windows/hardware/ff551921)</strong> with IRQL &lt; DISPATCH_LEVEL.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x41</p></td>
 <td align="left"><p>Current IRQL</p></td>
 <td align="left"><p>Spin lock address</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The driver called [<strong>KeReleaseSpinLockFromDpcLevel</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553150) with IRQL &lt; DISPATCH_LEVEL.</p></td>
+<td align="left"><p>The driver called <strong>[KeReleaseSpinLockFromDpcLevel](https://msdn.microsoft.com/library/windows/hardware/ff553150)</strong> with IRQL &lt; DISPATCH_LEVEL.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x42</p></td>
 <td align="left"><p>Current IRQL</p></td>
 <td align="left"><p>Spin lock address</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The driver called [<strong>KeAcquireSpinLock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551917) with IRQL &gt; DISPATCH_LEVEL.</p></td>
+<td align="left"><p>The driver called <strong>[KeAcquireSpinLock](https://msdn.microsoft.com/library/windows/hardware/ff551917)</strong> with IRQL &gt; DISPATCH_LEVEL.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x51</p></td>
@@ -291,7 +291,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Current IRQL</p></td>
 <td align="left"><p>MDL address</p></td>
 <td align="left"><p>Access mode</p></td>
-<td align="left"><p>The driver called [<strong>MmProbeAndLockPages</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554664) with IRQL &gt; DISPATCH_LEVEL.</p></td>
+<td align="left"><p>The driver called <strong>[MmProbeAndLockPages](https://msdn.microsoft.com/library/windows/hardware/ff554664)</strong> with IRQL &gt; DISPATCH_LEVEL.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x71</p></td>
@@ -313,77 +313,77 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>In 32-bit Windows: Low 32 bits of the physical address</p>
 <p>In 64-bit Windows: the 64-bit physical address</p></td>
 <td align="left"><p>Number of bytes</p></td>
-<td align="left"><p>The driver called [<strong>MmMapIoSpace</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554618) with IRQL &gt; DISPATCH_LEVEL.</p></td>
+<td align="left"><p>The driver called <strong>[MmMapIoSpace](https://msdn.microsoft.com/library/windows/hardware/ff554618)</strong> with IRQL &gt; DISPATCH_LEVEL.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x74</p></td>
 <td align="left"><p>Current IRQL</p></td>
 <td align="left"><p>MDL address</p></td>
 <td align="left"><p>Access mode</p></td>
-<td align="left"><p>The driver called [<strong>MmMapLockedPages</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554622) in kernel mode with IRQL &gt; DISPATCH_LEVEL.</p></td>
+<td align="left"><p>The driver called <strong>[MmMapLockedPages](https://msdn.microsoft.com/library/windows/hardware/ff554622)</strong> in kernel mode with IRQL &gt; DISPATCH_LEVEL.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x75</p></td>
 <td align="left"><p>Current IRQL</p></td>
 <td align="left"><p>MDL address</p></td>
 <td align="left"><p>Access mode</p></td>
-<td align="left"><p>The driver called [<strong>MmMapLockedPages</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554622) in user mode with IRQL &gt; APC_LEVEL.</p></td>
+<td align="left"><p>The driver called <strong>[MmMapLockedPages](https://msdn.microsoft.com/library/windows/hardware/ff554622)</strong> in user mode with IRQL &gt; APC_LEVEL.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x76</p></td>
 <td align="left"><p>Current IRQL</p></td>
 <td align="left"><p>MDL address</p></td>
 <td align="left"><p>Access mode</p></td>
-<td align="left"><p>The driver called [<strong>MmMapLockedPagesSpecifyCache</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554629) in kernel mode with IRQL &gt; DISPATCH_LEVEL.</p></td>
+<td align="left"><p>The driver called <strong>[MmMapLockedPagesSpecifyCache](https://msdn.microsoft.com/library/windows/hardware/ff554629)</strong> in kernel mode with IRQL &gt; DISPATCH_LEVEL.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x77</p></td>
 <td align="left"><p>Current IRQL</p></td>
 <td align="left"><p>MDL address</p></td>
 <td align="left"><p>Access mode</p></td>
-<td align="left"><p>The driver called [<strong>MmMapLockedPagesSpecifyCache</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554629) in user mode with IRQL &gt; APC_LEVEL.</p></td>
+<td align="left"><p>The driver called <strong>[MmMapLockedPagesSpecifyCache](https://msdn.microsoft.com/library/windows/hardware/ff554629)</strong> in user mode with IRQL &gt; APC_LEVEL.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x78</p></td>
 <td align="left"><p>Current IRQL</p></td>
 <td align="left"><p>MDL address</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The driver called [<strong>MmUnlockPages</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556381) with IRQL &gt; DISPATCH_LEVEL.</p></td>
+<td align="left"><p>The driver called <strong>[MmUnlockPages](https://msdn.microsoft.com/library/windows/hardware/ff556381)</strong> with IRQL &gt; DISPATCH_LEVEL.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x79</p></td>
 <td align="left"><p>Current IRQL</p></td>
 <td align="left"><p>Virtual address being unmapped</p></td>
 <td align="left"><p>MDL address</p></td>
-<td align="left"><p>The driver called [<strong>MmUnmapLockedPages</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556391) in kernel mode with IRQL &gt; DISPATCH_LEVEL.</p></td>
+<td align="left"><p>The driver called <strong>[MmUnmapLockedPages](https://msdn.microsoft.com/library/windows/hardware/ff556391)</strong> in kernel mode with IRQL &gt; DISPATCH_LEVEL.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x7A</p></td>
 <td align="left"><p>Current IRQL</p></td>
 <td align="left"><p>Virtual address being unmapped</p></td>
 <td align="left"><p>MDL address</p></td>
-<td align="left"><p>The driver called [<strong>MmUnmapLockedPages</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556391) in user mode with IRQL &gt; APC_LEVEL.</p></td>
+<td align="left"><p>The driver called <strong>[MmUnmapLockedPages](https://msdn.microsoft.com/library/windows/hardware/ff556391)</strong> in user mode with IRQL &gt; APC_LEVEL.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x7B</p></td>
 <td align="left"><p>Current IRQL</p></td>
 <td align="left"><p>Virtual address being unmapped</p></td>
 <td align="left"><p>Number of bytes</p></td>
-<td align="left"><p>The driver called [<strong>MmUnmapIoSpace</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556387) with IRQL &gt; APC_LEVEL.</p></td>
+<td align="left"><p>The driver called <strong>[MmUnmapIoSpace](https://msdn.microsoft.com/library/windows/hardware/ff556387)</strong> with IRQL &gt; APC_LEVEL.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x7C</p></td>
 <td align="left"><p>MDL address</p></td>
 <td align="left"><p>MDL flags</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The driver called [<strong>MmUnlockPages</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556381), and passed an MDL whose pages were never successfully locked.</p></td>
+<td align="left"><p>The driver called <strong>[MmUnlockPages](https://msdn.microsoft.com/library/windows/hardware/ff556381)</strong>, and passed an MDL whose pages were never successfully locked.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x7D</p></td>
 <td align="left"><p>MDL address</p></td>
 <td align="left"><p>MDL flags</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The driver called [<strong>MmUnlockPages</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556381), and passed an MDL whose pages are from nonpaged pool.</p>
+<td align="left"><p>The driver called <strong>[MmUnlockPages](https://msdn.microsoft.com/library/windows/hardware/ff556381)</strong>, and passed an MDL whose pages are from nonpaged pool.</p>
 <p>(These should never be unlocked.)</p></td>
 </tr>
 <tr class="odd">
@@ -391,36 +391,36 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Current IRQL</p></td>
 <td align="left"><p>DISPATCH_LEVEL</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The driver called [<strong>MmAllocatePagesForMdl</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554482), [<strong>MmAllocatePagesForMdlEx</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554489), or [<strong>MmFreePagesFromMdl</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554521) with IRQL &gt; DISPATCH_LEVEL.</p></td>
+<td align="left"><p>The driver called <strong>[MmAllocatePagesForMdl](https://msdn.microsoft.com/library/windows/hardware/ff554482)</strong>, <strong>[MmAllocatePagesForMdlEx](https://msdn.microsoft.com/library/windows/hardware/ff554489)</strong>, or <strong>[MmFreePagesFromMdl](https://msdn.microsoft.com/library/windows/hardware/ff554521)</strong> with IRQL &gt; DISPATCH_LEVEL.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x7F</p></td>
 <td align="left"><p>Current IRQL</p></td>
 <td align="left"><p>MDL address</p></td>
 <td align="left"><p>MDL flags</p></td>
-<td align="left"><p>The driver called [<strong>BuildMdlForNonPagedPool</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554498) and passed an MDL whose pages are from paged pool.</p></td>
+<td align="left"><p>The driver called <strong>[BuildMdlForNonPagedPool](https://msdn.microsoft.com/library/windows/hardware/ff554498)</strong> and passed an MDL whose pages are from paged pool.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x80</p></td>
 <td align="left"><p>Current IRQL</p></td>
 <td align="left"><p>Event address</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The driver called [<strong>KeSetEvent</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553253) with IRQL &gt; DISPATCH_LEVEL.</p></td>
+<td align="left"><p>The driver called <strong>[KeSetEvent](https://msdn.microsoft.com/library/windows/hardware/ff553253)</strong> with IRQL &gt; DISPATCH_LEVEL.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x81</p></td>
 <td align="left"><p>MDL address</p></td>
 <td align="left"><p>MDL flags</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The driver called [<strong>MmMapLockedPages</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554622).</p>
-<p>(You should use [<strong>MmMapLockedPagesSpecifyCache</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554629) instead, with the <em>BugCheckOnFailure</em> parameter set to <strong>FALSE</strong>.)</p></td>
+<td align="left"><p>The driver called <strong>[MmMapLockedPages](https://msdn.microsoft.com/library/windows/hardware/ff554622)</strong>.</p>
+<p>(You should use <strong>[MmMapLockedPagesSpecifyCache](https://msdn.microsoft.com/library/windows/hardware/ff554629)</strong> instead, with the <em>BugCheckOnFailure</em> parameter set to <strong>FALSE</strong>.)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x82</p></td>
 <td align="left"><p>MDL address</p></td>
 <td align="left"><p>MDL flags</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The driver called [<strong>MmMapLockedPagesSpecifyCache</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554629) with the <em>BugCheckOnFailure</em> parameter equal to <strong>TRUE</strong>.</p>
+<td align="left"><p>The driver called <strong>[MmMapLockedPagesSpecifyCache](https://msdn.microsoft.com/library/windows/hardware/ff554629)</strong> with the <em>BugCheckOnFailure</em> parameter equal to <strong>TRUE</strong>.</p>
 <p>(This parameter should be set to <strong>FALSE</strong>.)</p></td>
 </tr>
 <tr class="even">
@@ -428,14 +428,14 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Start of physical address range to map</p></td>
 <td align="left"><p>Number of bytes to map</p></td>
 <td align="left"><p>First page frame number that isn't locked down</p></td>
-<td align="left"><p>The driver called [<strong>MmMapIoSpace</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554618) without having locked down the MDL pages. The physical pages represented by the physical address range being mapped must have been locked down prior to making this call.</p></td>
+<td align="left"><p>The driver called <strong>[MmMapIoSpace](https://msdn.microsoft.com/library/windows/hardware/ff554618)</strong> without having locked down the MDL pages. The physical pages represented by the physical address range being mapped must have been locked down prior to making this call.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x85</p></td>
 <td align="left"><p>MDL address</p></td>
 <td align="left"><p>Number of pages to map</p></td>
 <td align="left"><p>First page frame number that isn't locked down</p></td>
-<td align="left"><p>The driver called [<strong>MmMapLockedPages</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554622) without having locked down the MDL pages.</p></td>
+<td align="left"><p>The driver called <strong>[MmMapLockedPages](https://msdn.microsoft.com/library/windows/hardware/ff554622)</strong> without having locked down the MDL pages.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x89</p></td>
@@ -449,7 +449,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The driver switched stacks using a method that is not supported by the operating system. The only supported way to extend a kernel mode stack is by using [<strong>KeExpandKernelStackAndCallout</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552030).</p></td>
+<td align="left"><p>The driver switched stacks using a method that is not supported by the operating system. The only supported way to extend a kernel mode stack is by using <strong>[KeExpandKernelStackAndCallout](https://msdn.microsoft.com/library/windows/hardware/ff552030)</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0xA0 (Windows Server 2003 and later operating systems only)</p></td>
@@ -477,35 +477,35 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>MDL address</p></td>
 <td align="left"><p>MDL flags</p></td>
 <td align="left"><p>Incorrect MDL flags</p></td>
-<td align="left"><p>The driver called [<strong>MmProbeAndLockPages</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554664) for an MDL with incorrect flags. For example, the driver passed an MDL created by [<strong>MmBuildMdlForNonPagedPool</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554498) to <strong>MmProbeAndLockPages</strong>.</p></td>
+<td align="left"><p>The driver called <strong>[MmProbeAndLockPages](https://msdn.microsoft.com/library/windows/hardware/ff554664)</strong> for an MDL with incorrect flags. For example, the driver passed an MDL created by <strong>[MmBuildMdlForNonPagedPool](https://msdn.microsoft.com/library/windows/hardware/ff554498)</strong> to <strong>MmProbeAndLockPages</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0xB1 (Windows Vista and later operating systems only)</p></td>
 <td align="left"><p>MDL address</p></td>
 <td align="left"><p>MDL flags</p></td>
 <td align="left"><p>Incorrect MDL flags</p></td>
-<td align="left"><p>The driver called <strong>MmProbeAndLockProcessPages</strong> for an MDL with incorrect flags. For example, the driver passed an MDL created by [<strong>MmBuildMdlForNonPagedPool</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554498) to <strong>MmProbeAndLockProcessPages</strong>.</p></td>
+<td align="left"><p>The driver called <strong>MmProbeAndLockProcessPages</strong> for an MDL with incorrect flags. For example, the driver passed an MDL created by <strong>[MmBuildMdlForNonPagedPool](https://msdn.microsoft.com/library/windows/hardware/ff554498)</strong> to <strong>MmProbeAndLockProcessPages</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0xB2 (Windows Vista and later operating systems only)</p></td>
 <td align="left"><p>MDL address</p></td>
 <td align="left"><p>MDL flags</p></td>
 <td align="left"><p>Incorrect MDL flags</p></td>
-<td align="left"><p>The driver called [<strong>MmMapLockedPages</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554622) for an MDL with incorrect flags. For example, the driver passed an MDL that is already mapped to a system address or that was not locked to <strong>MmMapLockedPages</strong>.</p></td>
+<td align="left"><p>The driver called <strong>[MmMapLockedPages](https://msdn.microsoft.com/library/windows/hardware/ff554622)</strong> for an MDL with incorrect flags. For example, the driver passed an MDL that is already mapped to a system address or that was not locked to <strong>MmMapLockedPages</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0xB3 (Windows Vista and later operating systems only)</p></td>
 <td align="left"><p>MDL address</p></td>
 <td align="left"><p>MDL flags</p></td>
 <td align="left"><p>Missing MDL flags (at least one was expected)</p></td>
-<td align="left"><p>The driver called [<strong>MmMapLockedPages</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554622) for an MDL with incorrect flags. For example, the driver passed an MDL that is not locked to <strong>MmMapLockedPages</strong>.</p></td>
+<td align="left"><p>The driver called <strong>[MmMapLockedPages](https://msdn.microsoft.com/library/windows/hardware/ff554622)</strong> for an MDL with incorrect flags. For example, the driver passed an MDL that is not locked to <strong>MmMapLockedPages</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0xB4 (Windows Vista and later operating systems only)</p></td>
 <td align="left"><p>MDL address</p></td>
 <td align="left"><p>MDL flags</p></td>
 <td align="left"><p>Unexpected partial MDL flag</p></td>
-<td align="left"><p>The driver called [<strong>MmUnlockPages</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556381) for a partial MDL. A partial MDL is one that was created by [<strong>IoBuildPartialMdl</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548324).</p></td>
+<td align="left"><p>The driver called <strong>[MmUnlockPages](https://msdn.microsoft.com/library/windows/hardware/ff556381)</strong> for a partial MDL. A partial MDL is one that was created by <strong>[IoBuildPartialMdl](https://msdn.microsoft.com/library/windows/hardware/ff548324)</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0xB8 (Windows Vista and later operating systems only)</p></td>
@@ -520,7 +520,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Address of the IRP</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The driver called [<strong>IoCallDriver</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548336) with interrupts disabled.</p></td>
+<td align="left"><p>The driver called <strong>[IoCallDriver](https://msdn.microsoft.com/library/windows/hardware/ff548336)</strong> with interrupts disabled.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0xC1 (Windows Vista and later operating systems only)</p></td>
@@ -549,8 +549,8 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>The current thread's APC disable count</p></td>
 <td align="left"><p>The thread's APC disable count prior to calling the driver dispatch routine</p></td>
 <td align="left"><p>A driver dispatch routine has changed the thread's APC disable count.</p>
-<p>The APC disable count is decremented each time a driver calls [<strong>KeEnterCriticalRegion</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552021), [<strong>FsRtlEnterFileSystem</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545900), or acquires a mutex.</p>
-<p>The APC disable count is incremented each time a driver calls [<strong>KeLeaveCriticalRegion</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552964), [<strong>KeReleaseMutex</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553140), or [<strong>FsRtlExitFileSystem</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545908).</p>
+<p>The APC disable count is decremented each time a driver calls <strong>[KeEnterCriticalRegion](https://msdn.microsoft.com/library/windows/hardware/ff552021)</strong>, <strong>[FsRtlEnterFileSystem](https://msdn.microsoft.com/library/windows/hardware/ff545900)</strong>, or acquires a mutex.</p>
+<p>The APC disable count is incremented each time a driver calls <strong>[KeLeaveCriticalRegion](https://msdn.microsoft.com/library/windows/hardware/ff552964)</strong>, <strong>[KeReleaseMutex](https://msdn.microsoft.com/library/windows/hardware/ff553140)</strong>, or <strong>[FsRtlExitFileSystem](https://msdn.microsoft.com/library/windows/hardware/ff545908)</strong>.</p>
 <p>Because these calls should always be in pairs, the APC disable count should be zero whenever a thread is exited. A negative value indicates that a driver has disabled APC calls without re-enabling them. A positive value indicates that the reverse is true.</p></td>
 </tr>
 <tr class="odd">
@@ -559,8 +559,8 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Current thread's APC disable count</p></td>
 <td align="left"><p>The thread's APC disable count prior to calling the Fast I/O driver dispatch routine</p></td>
 <td align="left"><p>A driver Fast I/O dispatch routine has changed the thread's APC disable count.</p>
-<p>The APC disable count is decremented each time a driver calls [<strong>KeEnterCriticalRegion</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552021), [<strong>FsRtlEnterFileSystem</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545900), or acquires a mutex.</p>
-<p>The APC disable count is incremented each time a driver calls [<strong>KeLeaveCriticalRegion</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552964), [<strong>KeReleaseMutex</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553140), or [<strong>FsRtlExitFileSystem</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545908).</p>
+<p>The APC disable count is decremented each time a driver calls <strong>[KeEnterCriticalRegion](https://msdn.microsoft.com/library/windows/hardware/ff552021)</strong>, <strong>[FsRtlEnterFileSystem](https://msdn.microsoft.com/library/windows/hardware/ff545900)</strong>, or acquires a mutex.</p>
+<p>The APC disable count is incremented each time a driver calls <strong>[KeLeaveCriticalRegion](https://msdn.microsoft.com/library/windows/hardware/ff552964)</strong>, <strong>[KeReleaseMutex](https://msdn.microsoft.com/library/windows/hardware/ff553140)</strong>, or <strong>[FsRtlExitFileSystem](https://msdn.microsoft.com/library/windows/hardware/ff545908)</strong>.</p>
 <p>Because these calls should always be in pairs, the APC disable count should be zero whenever a thread is exited. A negative value indicates that a driver has disabled APC calls without re-enabling them. A positive value indicates that the reverse is true.</p></td>
 </tr>
 <tr class="even">
@@ -615,23 +615,23 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <tr class="odd">
 <td align="left"><p>0xD5 (Windows Vista and later operating systems only)</p></td>
 <td align="left"><p>Address of the IO_REMOVE_LOCK structure created by the checked build version of the driver</p></td>
-<td align="left"><p>Current [<strong>IoReleaseRemoveLock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549560) tag</p></td>
+<td align="left"><p>Current <strong>[IoReleaseRemoveLock](https://msdn.microsoft.com/library/windows/hardware/ff549560)</strong> tag</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The current [<strong>IoReleaseRemoveLock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549560) tag does not match the previous [<strong>IoAcquireRemoveLock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548204) tag. If the driver calling <strong>IoReleaseRemoveLock</strong> is not in a checked build, Parameter 2 is the address of the shadow IO_REMOVE_LOCK structure created by Driver Verifier on behalf of the driver. In this case, the address of the IO_REMOVE_LOCK structure used by the driver is not used at all, because Driver Verifier is replacing the lock address for all the remove lock APIs. A bug check with this parameter occurs only when the <strong>I/O Verification</strong> option of Driver Verifier is active.</p></td>
+<td align="left"><p>The current <strong>[IoReleaseRemoveLock](https://msdn.microsoft.com/library/windows/hardware/ff549560)</strong> tag does not match the previous <strong>[IoAcquireRemoveLock](https://msdn.microsoft.com/library/windows/hardware/ff548204)</strong> tag. If the driver calling <strong>IoReleaseRemoveLock</strong> is not in a checked build, Parameter 2 is the address of the shadow IO_REMOVE_LOCK structure created by Driver Verifier on behalf of the driver. In this case, the address of the IO_REMOVE_LOCK structure used by the driver is not used at all, because Driver Verifier is replacing the lock address for all the remove lock APIs. A bug check with this parameter occurs only when the <strong>I/O Verification</strong> option of Driver Verifier is active.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0xD6 (Windows Vista and later operating systems only)</p></td>
 <td align="left"><p>Address of the IO_REMOVE_LOCK structure created by the checked build version of the driver</p></td>
-<td align="left"><p>Tag that does not match previous [<strong>IoAcquireRemoveLock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548204) tag</p></td>
-<td align="left"><p>Previous [<strong>IoAcquireRemoveLock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548204) tag</p></td>
-<td align="left"><p>The current [<strong>IoReleaseRemoveLockAndWait</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549567) tag does not match the previous [<strong>IoAcquireRemoveLock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548204) tag. If the driver calling [<strong>IoReleaseRemoveLock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549560) is not a checked build, Parameter 2 is the address of the shadow IO_REMOVE_LOCK structure created by Driver Verifier on behalf of the driver. In this case, the address of the IO_REMOVE_LOCK structure used by the driver is not used at all, because Driver Verifier is replacing the lock address for all the remove lock APIs. A bug check with this parameter occurs only when the <strong>I/O Verification</strong> option of Driver Verifier is active.</p></td>
+<td align="left"><p>Tag that does not match previous <strong>[IoAcquireRemoveLock](https://msdn.microsoft.com/library/windows/hardware/ff548204)</strong> tag</p></td>
+<td align="left"><p>Previous <strong>[IoAcquireRemoveLock](https://msdn.microsoft.com/library/windows/hardware/ff548204)</strong> tag</p></td>
+<td align="left"><p>The current <strong>[IoReleaseRemoveLockAndWait](https://msdn.microsoft.com/library/windows/hardware/ff549567)</strong> tag does not match the previous <strong>[IoAcquireRemoveLock](https://msdn.microsoft.com/library/windows/hardware/ff548204)</strong> tag. If the driver calling <strong>[IoReleaseRemoveLock](https://msdn.microsoft.com/library/windows/hardware/ff549560)</strong> is not a checked build, Parameter 2 is the address of the shadow IO_REMOVE_LOCK structure created by Driver Verifier on behalf of the driver. In this case, the address of the IO_REMOVE_LOCK structure used by the driver is not used at all, because Driver Verifier is replacing the lock address for all the remove lock APIs. A bug check with this parameter occurs only when the <strong>I/O Verification</strong> option of Driver Verifier is active.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0xD7 (Windows 7 operating systems and later only)</p></td>
 <td align="left"><p>Address of the checked build Remove Lock structure that is used internally by Driver Verifier</p></td>
 <td align="left"><p>Address of the Remove Lock structure that is specified by the driver</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>A Remove Lock cannot be re-initialized, even after it calls [<strong>IoReleaseRemoveLockAndWait</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549567), because other threads might still be using that lock (by calling [<strong>IoAcquireRemoveLock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548204)). The driver should allocate the Remove Lock inside its device extension, and initialize it a single time. The lock will be deleted together with the device extension.</p></td>
+<td align="left"><p>A Remove Lock cannot be re-initialized, even after it calls <strong>[IoReleaseRemoveLockAndWait](https://msdn.microsoft.com/library/windows/hardware/ff549567)</strong>, because other threads might still be using that lock (by calling <strong>[IoAcquireRemoveLock](https://msdn.microsoft.com/library/windows/hardware/ff548204)</strong>). The driver should allocate the Remove Lock inside its device extension, and initialize it a single time. The lock will be deleted together with the device extension.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0xDA (Windows Vista and later operating systems only)</p></td>
@@ -652,14 +652,14 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>An invalid RegHandle value was specified as a parameter of the function [<strong>EtwUnregister</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545613).</p></td>
+<td align="left"><p>An invalid RegHandle value was specified as a parameter of the function <strong>[EtwUnregister](https://msdn.microsoft.com/library/windows/hardware/ff545613)</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0xDD (Windows Vista and later operating systems only)</p></td>
 <td align="left"><p>Address of the call to <strong>EtwRegister</strong></p></td>
 <td align="left"><p>Starting address of the unloading driver</p></td>
 <td align="left"><p>For Windows 8Windows 8 and later versions, this parameter is the ETW RegHandle value.</p></td>
-<td align="left"><p>An attempt was made to unload a driver without calling [<strong>EtwUnregister</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545613).</p></td>
+<td align="left"><p>An attempt was made to unload a driver without calling <strong>[EtwUnregister](https://msdn.microsoft.com/library/windows/hardware/ff545613)</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0xDF (Windows 7 operating systems and later only)</p></td>
@@ -743,7 +743,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Address of the <strong>NULL</strong> handle</p></td>
 <td align="left"><p>Object type</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>A driver passed a <strong>NULL</strong> handle to [<strong>ObReferenceObjectByHandle</strong>](https://msdn.microsoft.com/library/windows/hardware/ff558679).</p></td>
+<td align="left"><p>A driver passed a <strong>NULL</strong> handle to <strong>[ObReferenceObjectByHandle](https://msdn.microsoft.com/library/windows/hardware/ff558679)</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0xF6 (Windows 7 operating systems and later)</p></td>
@@ -772,8 +772,8 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Current thread's APC disable count</p></td>
 <td align="left"><p>The thread's APC disable count before it calls the IRP completion routine</p></td>
 <td align="left"><p>The thread's APC disable count was changed by the driver's IRP completion routine.</p>
-<p>The APC disable count is decremented each time a driver calls [<strong>KeEnterCriticalRegion</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552021), [<strong>FsRtlEnterFileSystem</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545900), or acquires a mutex.</p>
-<p>The APC disable count is incremented each time a driver calls [<strong>KeLeaveCriticalRegion</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552964), [<strong>KeReleaseMutex</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553140), or [<strong>FsRtlExitFileSystem</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545908).</p>
+<p>The APC disable count is decremented each time a driver calls <strong>[KeEnterCriticalRegion](https://msdn.microsoft.com/library/windows/hardware/ff552021)</strong>, <strong>[FsRtlEnterFileSystem](https://msdn.microsoft.com/library/windows/hardware/ff545900)</strong>, or acquires a mutex.</p>
+<p>The APC disable count is incremented each time a driver calls <strong>[KeLeaveCriticalRegion](https://msdn.microsoft.com/library/windows/hardware/ff552964)</strong>, <strong>[KeReleaseMutex](https://msdn.microsoft.com/library/windows/hardware/ff553140)</strong>, or <strong>[FsRtlExitFileSystem](https://msdn.microsoft.com/library/windows/hardware/ff545908)</strong>.</p>
 <p>Because these calls should always be in pairs, the APC disable count should be zero whenever a thread is exited. A negative value indicates that a driver has disabled APC calls without re-enabling them. A positive value indicates that the reverse is true.</p></td>
 </tr>
 <tr class="odd">
@@ -891,7 +891,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <tr class="even">
 <td align="left"><p>0x135</p></td>
 <td align="left"><p>Address of IRP</p></td>
-<td align="left"><p>Number of milliseconds allowed between the [<strong>IoCancelIrp</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548338) call and the completion for this IRP</p></td>
+<td align="left"><p>Number of milliseconds allowed between the <strong>[IoCancelIrp](https://msdn.microsoft.com/library/windows/hardware/ff548338)</strong> call and the completion for this IRP</p></td>
 <td align="left"></td>
 <td align="left"><p>The canceled IRP did not completed in the expected time The driver took longer than expected to complete the canceled IRP.</p></td>
 </tr>
@@ -900,42 +900,42 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Address of the pool block being freed</p></td>
 <td align="left"><p>Incorrect value</p></td>
 <td align="left"><p>Address of the incorrect value</p></td>
-<td align="left"><p>The driver has called [<strong>ExFreePool</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544590) and Driver Verifier detects an error in one of the internal values that is used to track pool usage.</p></td>
+<td align="left"><p>The driver has called <strong>[ExFreePool](https://msdn.microsoft.com/library/windows/hardware/ff544590)</strong> and Driver Verifier detects an error in one of the internal values that is used to track pool usage.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x13B</p></td>
 <td align="left"><p>Address of the pool block being freed</p></td>
 <td align="left"><p>Address of the incorrect value</p></td>
 <td align="left"><p>Address of a pointer to the incorrect memory page</p></td>
-<td align="left"><p>The driver has called [<strong>ExFreePool</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544590) and Driver Verifier detects an error in one of the internal values that is used to track pool usage.</p></td>
+<td align="left"><p>The driver has called <strong>[ExFreePool](https://msdn.microsoft.com/library/windows/hardware/ff544590)</strong> and Driver Verifier detects an error in one of the internal values that is used to track pool usage.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x13C</p></td>
 <td align="left"><p>Address of the pool block being freed</p></td>
 <td align="left"><p>Incorrect value</p></td>
 <td align="left"><p>Address of the incorrect value</p></td>
-<td align="left"><p>The driver has called [<strong>ExFreePool</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544590) and Driver Verifier detects an error in one of the internal values that is used to track pool usage.</p></td>
+<td align="left"><p>The driver has called <strong>[ExFreePool](https://msdn.microsoft.com/library/windows/hardware/ff544590)</strong> and Driver Verifier detects an error in one of the internal values that is used to track pool usage.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x13D</p></td>
 <td align="left"><p>Address of the pool block being freed</p></td>
 <td align="left"><p>Address of the incorrect value</p></td>
 <td align="left"><p>Correct value that was expected</p></td>
-<td align="left"><p>The driver has called [<strong>ExFreePool</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544590) and Driver Verifier detects an error in one of the internal values that is used to track pool usage.</p></td>
+<td align="left"><p>The driver has called <strong>[ExFreePool](https://msdn.microsoft.com/library/windows/hardware/ff544590)</strong> and Driver Verifier detects an error in one of the internal values that is used to track pool usage.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x13E</p></td>
 <td align="left"><p>Pool block address specified by the caller</p></td>
 <td align="left"><p>Pool block address tracked by Driver Verifier</p></td>
 <td align="left"><p>Pointer to the pool block address that is tracked by Driver Verifier</p></td>
-<td align="left"><p>The pool block address specified by the caller of [<strong>ExFreePool</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544590) is different from the address tracked by Driver Verifier.</p></td>
+<td align="left"><p>The pool block address specified by the caller of <strong>[ExFreePool](https://msdn.microsoft.com/library/windows/hardware/ff544590)</strong> is different from the address tracked by Driver Verifier.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x13F</p></td>
 <td align="left"><p>Address of the pool block being freed</p></td>
 <td align="left"><p>Number of bytes being freed</p></td>
 <td align="left"><p>Pointer to the number of bytes tracked by Driver Verifier</p></td>
-<td align="left"><p>The number of bytes of memory being freed in the call to [<strong>ExFreePool</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544590) is different from the number of bytes tracked by Driver Verifier.</p></td>
+<td align="left"><p>The number of bytes of memory being freed in the call to <strong>[ExFreePool](https://msdn.microsoft.com/library/windows/hardware/ff544590)</strong> is different from the number of bytes tracked by Driver Verifier.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x140</p></td>
@@ -957,7 +957,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p><strong>Deadlock:</strong> A lock hierarchy violation has been found. A bug check with this parameter occurs only when the <strong>Deadlock Detection</strong> option of Driver Verifier is active.</p>
-<p>(Use the [<strong>!deadlock</strong>](-deadlock.md) extension for further information.)</p></td>
+<p>(Use the <strong>[!deadlock](-deadlock.md)</strong> extension for further information.)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x1002 (Windows XP and later operating systems only)</p></td>
@@ -1032,7 +1032,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>A pointer to the <em>NetBufferList</em> object</p></td>
 <td align="left"><p>A pointer to the virtual switch object (if NON-NULL)</p></td>
 <td align="left"><p>Reserved (unused)</p></td>
-<td align="left"><p>VM Switch: The <strong>SourceHandle</strong> for the caller-supplied <em>NetBufferList</em> must be set. See the [<em>AllocateNetBufferListForwardingContext</em>](https://msdn.microsoft.com/library/windows/hardware/hh598134) routine.</p></td>
+<td align="left"><p>VM Switch: The <strong>SourceHandle</strong> for the caller-supplied <em>NetBufferList</em> must be set. See the <em>[AllocateNetBufferListForwardingContext](https://msdn.microsoft.com/library/windows/hardware/hh598134)</em> routine.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0xA002</p>
@@ -1040,7 +1040,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>A pointer to the <em>NetBufferList</em> object</p></td>
 <td align="left"><p>A pointer to the virtual switch object (if NON-NULL).</p></td>
 <td align="left"><p>Reserved (unused)</p></td>
-<td align="left"><p>VM Switch: The caller supplied NetBufferList's forwarding detail is not zero. See the [<em>AllocateNetBufferListForwardingContext</em>](https://msdn.microsoft.com/library/windows/hardware/hh598134) routine.</p></td>
+<td align="left"><p>VM Switch: The caller supplied NetBufferList's forwarding detail is not zero. See the <em>[AllocateNetBufferListForwardingContext](https://msdn.microsoft.com/library/windows/hardware/hh598134)</em> routine.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0xA003</p>
@@ -1064,7 +1064,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>A pointer to the <em>NetBufferList</em> object</p></td>
 <td align="left"><p>A pointer to the Destination list.</p></td>
 <td align="left"><p>A pointer to the virtual switch object (if NON-NULL).</p></td>
-<td align="left"><p>VM Switch: The caller supplied an invalid destination. See [<em>AddNetBufferListDestination</em>](https://msdn.microsoft.com/library/windows/hardware/hh598133) and [<em>UpdateNetBufferListDestinations</em>](https://msdn.microsoft.com/library/windows/hardware/hh598303).</p></td>
+<td align="left"><p>VM Switch: The caller supplied an invalid destination. See <em>[AddNetBufferListDestination](https://msdn.microsoft.com/library/windows/hardware/hh598133)</em> and <em>[UpdateNetBufferListDestinations](https://msdn.microsoft.com/library/windows/hardware/hh598303)</em>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0xA006</p>
@@ -1080,7 +1080,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>A pointer to the <em>NetBufferList</em> object</p></td>
 <td align="left"><p>A pointer to the virtual switch object (if NON-NULL).</p></td>
 <td align="left"><p>Reserved (unused)</p></td>
-<td align="left"><p>VM Switch: The caller supplied an invalid destination list. See [<em>AddNetBufferListDestination</em>](https://msdn.microsoft.com/library/windows/hardware/hh598133) and [<em>UpdateNetBufferListDestinations</em>](https://msdn.microsoft.com/library/windows/hardware/hh598303).</p></td>
+<td align="left"><p>VM Switch: The caller supplied an invalid destination list. See <em>[AddNetBufferListDestination](https://msdn.microsoft.com/library/windows/hardware/hh598133)</em> and <em>[UpdateNetBufferListDestinations](https://msdn.microsoft.com/library/windows/hardware/hh598303)</em>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0xA008</p>
@@ -1104,7 +1104,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>A pointer to the <em>NetBufferList</em> object</p></td>
 <td align="left"><p>ContextTypeInfo object</p></td>
 <td align="left"><p>Reserved (unused)</p></td>
-<td align="left"><p>VM Switch: Failure context is already set. See [<em>SetNetBufferListSwitchContext</em>](https://msdn.microsoft.com/library/windows/hardware/hh846223).</p></td>
+<td align="left"><p>VM Switch: Failure context is already set. See <em>[SetNetBufferListSwitchContext](https://msdn.microsoft.com/library/windows/hardware/hh846223)</em>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0xA00B</p>
@@ -1112,7 +1112,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>A pointer to the <em>NetBufferList</em> object</p></td>
 <td align="left"><p>NDIS_SWITCH_REPORT_FILTERED_NBL_FLAGS_*</p></td>
 <td align="left"><p>A pointer to the virtual switch object (if NON-NULL)</p></td>
-<td align="left"><p>VM Switch: Invalid direction provided for dropped NetBufferList. See [<em>ReportFilteredNetBufferLists</em>](https://msdn.microsoft.com/library/windows/hardware/hh598297).</p></td>
+<td align="left"><p>VM Switch: Invalid direction provided for dropped NetBufferList. See <em>[ReportFilteredNetBufferLists](https://msdn.microsoft.com/library/windows/hardware/hh598297)</em>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0xA00C</p>
@@ -1140,10 +1140,10 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <tr class="even">
 <td align="left"><p>0x2000</p>
 <p>(Windows 7 operating systems and later)</p></td>
-<td align="left"><p>The first argument passed to the [<strong>StorPortInitialize</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567108) routine. This parameter is a pointer to the driver object that the operating system passed to the miniport driver in the first argument of the miniport driver's [<em>DriverEntry</em>](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine.</p></td>
-<td align="left"><p>The second argument passed to the [<strong>StorPortInitialize</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567108) routine. This parameter is a pointer to context information that the operating system passed to the miniport driver in the second argument of the miniport driver's [<em>DriverEntry</em>](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine.</p></td>
+<td align="left"><p>The first argument passed to the <strong>[StorPortInitialize](https://msdn.microsoft.com/library/windows/hardware/ff567108)</strong> routine. This parameter is a pointer to the driver object that the operating system passed to the miniport driver in the first argument of the miniport driver's <em>[DriverEntry](https://msdn.microsoft.com/library/windows/hardware/ff544113)</em> routine.</p></td>
+<td align="left"><p>The second argument passed to the <strong>[StorPortInitialize](https://msdn.microsoft.com/library/windows/hardware/ff567108)</strong> routine. This parameter is a pointer to context information that the operating system passed to the miniport driver in the second argument of the miniport driver's <em>[DriverEntry](https://msdn.microsoft.com/library/windows/hardware/ff544113)</em> routine.</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The Storport miniport driver passed a bad argument (a <strong>NULL</strong> pointer) to the [<strong>StorPortInitialize</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567108) routine.</p>
+<td align="left"><p>The Storport miniport driver passed a bad argument (a <strong>NULL</strong> pointer) to the <strong>[StorPortInitialize](https://msdn.microsoft.com/library/windows/hardware/ff567108)</strong> routine.</p>
 <p></p></td>
 </tr>
 <tr class="odd">
@@ -1152,7 +1152,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Optional pointer to the rule state variable(s).</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [IrqlApcLte](https://msdn.microsoft.com/library/windows/hardware/ff547740). The rule specifies that the driver must call [<strong>ObGetObjectSecurity</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557738) and [<strong>ObReleaseObjectSecurity</strong>](https://msdn.microsoft.com/library/windows/hardware/ff558695) only when IRQL &lt;= APC_LEVEL.</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule [IrqlApcLte](https://msdn.microsoft.com/library/windows/hardware/ff547740). The rule specifies that the driver must call <strong>[ObGetObjectSecurity](https://msdn.microsoft.com/library/windows/hardware/ff557738)</strong> and <strong>[ObReleaseObjectSecurity](https://msdn.microsoft.com/library/windows/hardware/ff558695)</strong> only when IRQL &lt;= APC_LEVEL.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x00020003</p>
@@ -1168,7 +1168,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Optional pointer to the rule state variable(s).</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [IrqlExAllocatePool](https://msdn.microsoft.com/library/windows/hardware/ff547747). The IrqlExAllocatePool rule specifies that the driver calls [<strong>ExAllocatePoolWithTag</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544520) and [<strong>ExAllocatePoolWithTagPriority</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544523) only when at IRQL&lt;=DISPATCH_LEVEL.</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule [IrqlExAllocatePool](https://msdn.microsoft.com/library/windows/hardware/ff547747). The IrqlExAllocatePool rule specifies that the driver calls <strong>[ExAllocatePoolWithTag](https://msdn.microsoft.com/library/windows/hardware/ff544520)</strong> and <strong>[ExAllocatePoolWithTagPriority](https://msdn.microsoft.com/library/windows/hardware/ff544523)</strong> only when at IRQL&lt;=DISPATCH_LEVEL.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x00020005</p>
@@ -1288,7 +1288,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Optional pointer to the rule state variable(s).</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [IrqlKeSetEvent](https://msdn.microsoft.com/library/windows/hardware/ff547835). The IrqlKeSetEvent rule specifies that the [<strong>KeSetEvent</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553253) routine is only called at IRQL &lt;= DISPATCH_LEVEL when Wait is set to FALSE, and at IRQL &lt;= APC_LEVEL when Wait is set to TRUE.</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule [IrqlKeSetEvent](https://msdn.microsoft.com/library/windows/hardware/ff547835). The IrqlKeSetEvent rule specifies that the <strong>[KeSetEvent](https://msdn.microsoft.com/library/windows/hardware/ff553253)</strong> routine is only called at IRQL &lt;= DISPATCH_LEVEL when Wait is set to FALSE, and at IRQL &lt;= APC_LEVEL when Wait is set to TRUE.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x00020019</p>
@@ -1304,7 +1304,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Optional pointer to the rule state variable(s).</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [<strong>IrqlMmDispatch</strong>](https://msdn.microsoft.com/library/windows/hardware/hh975186). The <strong>IrqlMmDispatch</strong> rule specifies that the driver must call [<strong>MmFreeContiguousMemory</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554503) only when IRQL = DISPATCH_LEVEL.</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule <strong>[IrqlMmDispatch](https://msdn.microsoft.com/library/windows/hardware/hh975186)</strong>. The <strong>IrqlMmDispatch</strong> rule specifies that the driver must call <strong>[MmFreeContiguousMemory](https://msdn.microsoft.com/library/windows/hardware/ff554503)</strong> only when IRQL = DISPATCH_LEVEL.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x0002001B</p>
@@ -1312,7 +1312,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Optional pointer to the rule state variable(s).</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [IrqlObPassive](https://msdn.microsoft.com/library/windows/hardware/ff547873). The IrqlObPassive rule specifies that the driver must call [<strong>ObReferenceObjectByHandle</strong>](https://msdn.microsoft.com/library/windows/hardware/ff558679) only when IRQL = PASSIVE_LEVEL.</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule [IrqlObPassive](https://msdn.microsoft.com/library/windows/hardware/ff547873). The IrqlObPassive rule specifies that the driver must call <strong>[ObReferenceObjectByHandle](https://msdn.microsoft.com/library/windows/hardware/ff558679)</strong> only when IRQL = PASSIVE_LEVEL.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x0002001C</p>
@@ -1328,7 +1328,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [<strong>IrqlReturn</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547886).</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule <strong>[IrqlReturn](https://msdn.microsoft.com/library/windows/hardware/ff547886)</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x0002001E</p>
@@ -1336,7 +1336,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Optional pointer to the rule state variable(s).</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [IrqlRtlPassive](https://msdn.microsoft.com/library/windows/hardware/ff547893). The IrqlRtlPassive rule specifies that the driver must call [<strong>RtlDeleteRegistryValue</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561829) only when IRQL = PASSIVE_LEVEL.</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule [IrqlRtlPassive](https://msdn.microsoft.com/library/windows/hardware/ff547893). The IrqlRtlPassive rule specifies that the driver must call <strong>[RtlDeleteRegistryValue](https://msdn.microsoft.com/library/windows/hardware/ff561829)</strong> only when IRQL = PASSIVE_LEVEL.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x0002001F</p>
@@ -1344,7 +1344,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Optional pointer to the rule state variable(s).</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [IrqlZwPassive](https://msdn.microsoft.com/library/windows/hardware/ff547897). The IrqlZwPassive rule specifies that the driver must call [<strong>ZwClose</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566417) only when IRQL = PASSIVE_LEVEL.</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule [IrqlZwPassive](https://msdn.microsoft.com/library/windows/hardware/ff547897). The IrqlZwPassive rule specifies that the driver must call <strong>[ZwClose](https://msdn.microsoft.com/library/windows/hardware/ff566417)</strong> only when IRQL = PASSIVE_LEVEL.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x00020022</p>
@@ -1352,7 +1352,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Reserved (unused)</p></td>
 <td align="left"><p>Reserved (unused)</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [<strong>IrqlIoDispatch</strong>](https://msdn.microsoft.com/library/windows/hardware/jj157234).</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule <strong>[IrqlIoDispatch](https://msdn.microsoft.com/library/windows/hardware/jj157234)</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x00040003</p>
@@ -1360,7 +1360,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [<strong>CriticalRegions</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543603).</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule <strong>[CriticalRegions](https://msdn.microsoft.com/library/windows/hardware/ff543603)</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x00040006</p>
@@ -1368,7 +1368,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [<strong>QueuedSpinLock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551494).</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule <strong>[QueuedSpinLock](https://msdn.microsoft.com/library/windows/hardware/ff551494)</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x00040007</p>
@@ -1376,7 +1376,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [<strong>QueuedSpinLockRelease</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551496).</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule <strong>[QueuedSpinLockRelease](https://msdn.microsoft.com/library/windows/hardware/ff551496)</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x00040009</p>
@@ -1384,7 +1384,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [<strong>SpinLock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551861).</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule <strong>[SpinLock](https://msdn.microsoft.com/library/windows/hardware/ff551861)</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x0004000B</p>
@@ -1392,7 +1392,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [<strong>SpinlockRelease</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552780).</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule <strong>[SpinlockRelease](https://msdn.microsoft.com/library/windows/hardware/ff552780)</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x0004000E</p>
@@ -1400,7 +1400,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [<strong>GuardedRegions</strong>](https://msdn.microsoft.com/library/windows/hardware/hh975150).</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule <strong>[GuardedRegions](https://msdn.microsoft.com/library/windows/hardware/hh975150)</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x0004100B</p>
@@ -1408,7 +1408,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [<strong>RequestedPowerIrp</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551613).</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule <strong>[RequestedPowerIrp](https://msdn.microsoft.com/library/windows/hardware/ff551613)</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x0004100F</p>
@@ -1416,7 +1416,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [<strong>IoSetCompletionExCompleteIrp</strong>](https://msdn.microsoft.com/library/windows/hardware/hh975178).</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule <strong>[IoSetCompletionExCompleteIrp](https://msdn.microsoft.com/library/windows/hardware/hh975178)</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x00043006</p>
@@ -1424,7 +1424,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [<strong>PnpRemove</strong>](https://msdn.microsoft.com/library/windows/hardware/dn322052).</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule <strong>[PnpRemove](https://msdn.microsoft.com/library/windows/hardware/dn322052)</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x00091001</p>
@@ -1432,7 +1432,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [<strong>NdisOidComplete</strong>](https://msdn.microsoft.com/library/windows/hardware/dn305115).</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule <strong>[NdisOidComplete](https://msdn.microsoft.com/library/windows/hardware/dn305115)</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x00091002</p>
@@ -1440,7 +1440,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [<strong>NdisOidDoubleComplete</strong>](https://msdn.microsoft.com/library/windows/hardware/dn305116).</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule <strong>[NdisOidDoubleComplete](https://msdn.microsoft.com/library/windows/hardware/dn305116)</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x0009100E</p>
@@ -1448,7 +1448,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the DDI compliance rule [<strong>NdisOidDoubleRequest</strong>](https://msdn.microsoft.com/library/windows/hardware/dn305117).</p></td>
+<td align="left"><p>The driver violated the DDI compliance rule <strong>[NdisOidDoubleRequest](https://msdn.microsoft.com/library/windows/hardware/dn305117)</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x00092003</p>
@@ -1456,7 +1456,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the NDIS/WIFI verification rule [<strong>NdisTimedOidComplete</strong>](https://msdn.microsoft.com/library/windows/hardware/dn305120).</p></td>
+<td align="left"><p>The driver violated the NDIS/WIFI verification rule <strong>[NdisTimedOidComplete](https://msdn.microsoft.com/library/windows/hardware/dn305120)</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x0009200D</p>
@@ -1464,7 +1464,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the NDIS/WIFI verification rule [<strong>NdisTimedDataSend</strong>](https://msdn.microsoft.com/library/windows/hardware/dn305119).</p></td>
+<td align="left"><p>The driver violated the NDIS/WIFI verification rule <strong>[NdisTimedDataSend](https://msdn.microsoft.com/library/windows/hardware/dn305119)</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x0009200F</p>
@@ -1472,7 +1472,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the NDIS/WIFI verification rule [<strong>NdisTimedDataHang</strong>](https://msdn.microsoft.com/library/windows/hardware/dn305118).</p></td>
+<td align="left"><p>The driver violated the NDIS/WIFI verification rule <strong>[NdisTimedDataHang](https://msdn.microsoft.com/library/windows/hardware/dn305118)</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x00093004</p>
@@ -1480,7 +1480,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the NDIS/WIFI verification rule [<strong>WlanAssociation</strong>](https://msdn.microsoft.com/library/windows/hardware/dn305122).</p></td>
+<td align="left"><p>The driver violated the NDIS/WIFI verification rule <strong>[WlanAssociation](https://msdn.microsoft.com/library/windows/hardware/dn305122)</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x00093005</p>
@@ -1488,7 +1488,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the NDIS/WIFI verification rule [<strong>WlanConnectionRoaming</strong>](https://msdn.microsoft.com/library/windows/hardware/dn305123).</p></td>
+<td align="left"><p>The driver violated the NDIS/WIFI verification rule <strong>[WlanConnectionRoaming](https://msdn.microsoft.com/library/windows/hardware/dn305123)</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x00093006</p>
@@ -1496,7 +1496,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the NDIS/WIFI verification rule [<strong>WlanDisassociation</strong>](https://msdn.microsoft.com/library/windows/hardware/dn305124).</p></td>
+<td align="left"><p>The driver violated the NDIS/WIFI verification rule <strong>[WlanDisassociation](https://msdn.microsoft.com/library/windows/hardware/dn305124)</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x00094007</p>
@@ -1504,7 +1504,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the NDIS/WIFI verification rule [<strong>WlanTimedAssociation</strong>](https://msdn.microsoft.com/library/windows/hardware/dn305125).</p></td>
+<td align="left"><p>The driver violated the NDIS/WIFI verification rule <strong>[WlanTimedAssociation](https://msdn.microsoft.com/library/windows/hardware/dn305125)</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x00094008</p>
@@ -1512,7 +1512,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the NDIS/WIFI verification rule [<strong>WlanTimedConnectionRoaming</strong>](https://msdn.microsoft.com/library/windows/hardware/dn305126).</p></td>
+<td align="left"><p>The driver violated the NDIS/WIFI verification rule <strong>[WlanTimedConnectionRoaming](https://msdn.microsoft.com/library/windows/hardware/dn305126)</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x00094009</p>
@@ -1520,7 +1520,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the NDIS/WIFI verification rule [<strong>WlanTimedConnectRequest</strong>](https://msdn.microsoft.com/library/windows/hardware/dn305127).</p></td>
+<td align="left"><p>The driver violated the NDIS/WIFI verification rule <strong>[WlanTimedConnectRequest](https://msdn.microsoft.com/library/windows/hardware/dn305127)</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x0009400B</p>
@@ -1528,7 +1528,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the NDIS/WIFI verification rule [<strong>WlanTimedLinkQuality</strong>](https://msdn.microsoft.com/library/windows/hardware/dn305128).</p></td>
+<td align="left"><p>The driver violated the NDIS/WIFI verification rule <strong>[WlanTimedLinkQuality](https://msdn.microsoft.com/library/windows/hardware/dn305128)</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x0009400C</p>
@@ -1536,7 +1536,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Pointer to the string that describes the violated rule condition.</p></td>
 <td align="left"><p>Address of internal rule state (second argument to <strong>!ruleinfo</strong>).</p></td>
 <td align="left"><p>Address of supplemental states (third argument to <strong>!ruleinfo</strong>).</p></td>
-<td align="left"><p>The driver violated the NDIS/WIFI verification rule [<strong>WlanTimedScan</strong>](https://msdn.microsoft.com/library/windows/hardware/dn305129).</p></td>
+<td align="left"><p>The driver violated the NDIS/WIFI verification rule <strong>[WlanTimedScan](https://msdn.microsoft.com/library/windows/hardware/dn305129)</strong>.</p></td>
 </tr>
 </tbody>
 </table>
