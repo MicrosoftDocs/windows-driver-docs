@@ -2,7 +2,7 @@
 title: TTD Heap Objects
 description: This section describes the heap model objects associated with time travel debugging.
 ms.author: windowsdriverdev
-ms.date: 09/20/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,9 +59,10 @@ Use this dx command to display the heap memory in a grid using the -g option.
 = [0x2]     - UnknownOrMissingSymbols    - 0x7ffbe3daae00      - 0x16c7d7be400    - {...}          - 51C95:21F3    - 51CA6:81    =
 ```
 
-Note that clicking on TimeStart or TimeEnd will navigate you to that point in the trace.  
 
-The output can be described as “normalized data” because there is a chosen set of APIs that represent heap operations, extracted the data from the appropriate parameters that is presented in a uniform manner.
+The output can be described as “normalized data” because there is a chosen set of APIs that represent heap operations. The data that is extracted from the appropriate parameters, is presented in a uniform manner.
+
+Clicking on TimeStart or TimeEnd will navigate you to that point in the trace.  
 
 Click on the parameters field next to a specific entry, to display available parameter information.
 
