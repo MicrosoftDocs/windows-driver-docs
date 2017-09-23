@@ -32,7 +32,7 @@ ms.technology: windows-devices
 
 ## Example Usage
 
-Use the dx command to display all of the threads in the array.
+Use this dx command to display all of the threads in the array in a grid.
 
 ```
 0:0:000> dx -g @$curprocess.TTD.Threads
