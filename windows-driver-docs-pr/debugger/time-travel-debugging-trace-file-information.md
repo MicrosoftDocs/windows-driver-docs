@@ -90,7 +90,7 @@ Launching C:\Windows\Foo.exe
 2017-09-21:17:18:10:320 : Error : DbgXUI.dll : TTD: Errors: 
 Error: Trace of C:\Windows\Foo.exe PID:0 did not complete successfully: status:27
 Error: Could not open 'Foo.exe'; file not found.
-Error: Corrupted trace dumped to C:\Users\ivcarr.REDMOND\Documents\Foo01.run.err.
+Error: Corrupted trace dumped to C:\Users\User1\Documents\Foo01.run.err.
 ```
 
 
