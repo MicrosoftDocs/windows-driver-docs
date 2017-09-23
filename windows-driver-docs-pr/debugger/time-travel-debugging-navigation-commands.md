@@ -2,7 +2,7 @@
 title: time travel navigation commands
 description: This section describes the time travel navigation commands.
 ms.author: windowsdriverdev
-ms.date: 09/22/2017
+ms.date: 09/23/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -18,55 +18,24 @@ ms.technology: windows-devices
 This section describes the time travel navigation commands.
 
 
-## <span id="in_this_section"></span>In this section
+## </span><span id="P"></span> p- (Step Backwards)
+
+The p command executes the previous single instruction or source line. When subroutine calls or interrupts occur, they are treated as a single step.
+ 
+
+## </span><span id="T"></span> t- (Trace Backwards)
+
+The t command executes the previous single instruction or source line. When subroutine calls or interrupts occur, each of their steps is also traced.
 
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Topic</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>[<strong>p-</strong>](#P)</p></td>
-<td align="left"><p>The [<strong>!tt (time travel)</strong>](time-travel-debugging-extension-tt.md) debugger extension that allows you to navigate forward and backwards in time.</p></td>
+## </span><span id="Go"></span> g- (Go Backwards)
 
-</tr>
-<tr class="even">
-<td align="left"><p>[<strong>t-</strong>](#T)</p></td>
-<td align="left"><p>The [<strong>!positions</strong>](time-travel-debugging-extension-positions.md) extension displays all the active threads, including their current positions in the time travel trace.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[<strong>g- (go backwards)</strong>](#GO)</p></td>
-<td align="left"><p>The [<strong>!index</strong>]The g- (go backwards)](#GO) command executes code in the reverese direction </p></td>
-</tr>
-</tbody>
-</table>
+The g command starts executing the current process in reverse. Execution will halt at the end of the program, when BreakAddress is hit, or when another event causes the debugger to stop.
+
 
 ## </span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-The time travel naviagation commands only work with time travel traces. For more information about time travel, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
-
-## </span><span id="P"></span> p- (Step Backwards)
-
-The p command executes a single instruction or source line. When subroutine calls or interrupts occur, they are treated as a single step.
- 
-
-## </span><span id="T"></span> t- (?)
-
-TBD
-
-
-## </span><span id="Go"></span> g- (go backwards)
-
-TBD
-
+The time travel navigation commands only work with time travel traces. For more information about time travel, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
 
 ## See Also
 
