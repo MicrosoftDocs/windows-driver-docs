@@ -1,7 +1,7 @@
 ---
 title: Mstcpip.h
 author: windows-driver-content
-description: This section contains network driver topics for the Mstcpip.h header.
+description: This section contains kernel mode network driver topics for the Mstcpip.h header.
 ms.assetid: 5623EB2D-CA8D-4176-922E-29B8C66AA2CF
 keywords:
 - Mstcpip.h network drivers
@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 # Mstcpip.h
 
-This section contains network driver topics for the Mstcpip.h header. These topics may also be shared with the user mode applications that interact with network drivers.
+This section contains kernel mode network driver topics for the Mstcpip.h header. This header is included in the Windows SDK as it is also shared with user mode networking applications.
 
 The Mstcpip.h header contains definitions for Microsoft-specific extensions to the core Winsock definitions.
 
