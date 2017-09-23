@@ -211,7 +211,7 @@ For information on the ```!tt```, ```!positions``` and the ```!index``` commands
 
 [Time Travel Debugging - Record a trace](time-travel-debugging-recording.md)
 
-[Time Travel Debugging - Working with trace files](time-travel-debugging-trace-files.md)
+[Time Travel Debugging - Working with trace files](time-travel-debugging-trace-file-information.md)
 
 [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md)
 
