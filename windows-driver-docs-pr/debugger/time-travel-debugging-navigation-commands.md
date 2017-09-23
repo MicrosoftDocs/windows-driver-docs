@@ -2,7 +2,7 @@
 title: time travel navigation commands
 description: This section describes the time travel navigation commands.
 ms.author: windowsdriverdev
-ms.date: 09/20/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

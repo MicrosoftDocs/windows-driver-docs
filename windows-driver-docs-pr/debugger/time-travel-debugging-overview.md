@@ -77,7 +77,7 @@ All of the output files are stored in a location configured by the user. The def
 C:\Users\User1\Documents
 ```
 
-For more information on working the trace files, see [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-files.md).
+For more information on working the trace files, see [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-file-information.md).
 
 ## Getting started with TTD
 
