@@ -39,7 +39,7 @@ The primary objects added to *Process* objects can be found in the *TTD* namespa
 The primary objects added to *Session* objects can be found in the *TTD* namespace off of any *Session* object. For example, `@$cursession.TTD`.
 
 > [!NOTE]
-> There are some objects and methods added by TTDAnalyze that are used for internal functions of the extension. We aren't documenting those here to avoid confusion. There are also some namespaces that will grow over time, so we're glossing over the sparse or empty namespaces.
+> There are some objects and methods added by TTDAnalyze that are used for internal functions of the extension. Not all namespaces are are documented  and the current namespaces will evolve over time. 
 >
 
 ### Methods
