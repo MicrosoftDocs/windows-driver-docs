@@ -139,7 +139,7 @@ Defines subscriber information on the mobile operator network. There are two dif
 >
 > **Logo** and **Name** will no longer be considered when provisioning in Windows 10, version 1709 and later. The ProvisioningAgent API will not throw an error if they are used, but you should change **Branding Icon** and **Branding Name** in COSA instead.  
 >
-> For more information about **Branding Icon** and **Branding Name**, see [Planning your desktop COSA/APN database submission (Desktop COSA-only settings)](planning-your-desktop-cosa-apn-database-submission.md#desktop-cosa-only-settings).
+> For more information about **Branding Icon** and **Branding Name**, see [Desktop COSA/APN database settings (Desktop COSA only settings)](desktop-cosa-apn-database-settings.md#desktop-cosa-only-settings).
 
 Branding lets you specify how Windows displays your mobile broadband networks. This information overrides any service metadata, if present. If no information is provided, the contents of the service metadata package are used. The branding elements are as follows:
 
