@@ -33,7 +33,26 @@ ms.technology: windows-devices
 
 ## Example Usage
 
-*Information pending*
+
+
+```
+0:000> dx -r2 @$curprocess.TTD.Events.Where(t => t.Type == "Exception").Select(e => e.Exception)
+@$curprocess.TTD.Events.Where(t => t.Type == "Exception").Select(e => e.Exception)                
+    [0x0]            : Exception of type CPlusPlus at PC: 0X777663B0
+        Position         : 13B7:0 [Time Travel]
+        Type             : CPlusPlus
+        ProgramCounter   : 0x777663b0
+        Code             : 0xe06d7363
+        Flags            : 0x1
+        RecordAddress    : 0x0
+    [0x1]            : Exception of type Hardware at PC: 0XF1260D0
+        Position         : BC0F:0 [Time Travel]
+        Type             : Hardware
+        ProgramCounter   : 0xf1260d0
+        Code             : 0x80000003
+        Flags            : 0x0
+        RecordAddress    : 0x0
+```
 
 
 ## See Also

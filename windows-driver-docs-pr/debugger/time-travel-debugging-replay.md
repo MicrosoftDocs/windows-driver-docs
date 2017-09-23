@@ -51,30 +51,45 @@ Use the [p (Step)](https://docs.microsoft.com/en-us/windows-hardware/drivers/deb
 
 ```
 0:000> p
-Time Travel Position: 29:1
-ntdll!_LdrpInitialize+0x96:
-00007ffc`61f49bc6 4c8d5c2450      lea     r11,[rsp+50h]
+Time Travel Position: F:1
+eax=0173a5b0 ebx=00fd8000 ecx=7774f821 edx=0f994afc esi=0f99137c edi=00de0000
+eip=7774f828 esp=010ff34c ebp=010ff584 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!LdrpInitializeProcess+0x1bc5:
+7774f828 740b            je      ntdll!LdrpInitializeProcess+0x1bd2 (7774f835) [br=1]
 0:000> p
-Time Travel Position: 29:B
-ntdll!LdrpInitialize+0x3b:
-00007ffc`61f49b1b 488b5c2430      mov     rbx,qword ptr [rsp+30h] ss:000000a3`e827f360=000000a3e827f3b0
+Time Travel Position: F:2
+eax=0173a5b0 ebx=00fd8000 ecx=7774f821 edx=0f994afc esi=0f99137c edi=00de0000
+eip=7774f835 esp=010ff34c ebp=010ff584 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!LdrpInitializeProcess+0x1bd2:
+7774f835 83bdd0feffff00  cmp     dword ptr [ebp-130h],0 ss:002b:010ff454=00000000
 0:000> p
-Time Travel Position: 29:F
-ntdll!LdrInitializeThunk+0xe:
-00007ffc`61f49ace b201            mov     dl,1
+Time Travel Position: F:3
+eax=0173a5b0 ebx=00fd8000 ecx=7774f821 edx=0f994afc esi=0f99137c edi=00de0000
+eip=7774f83c esp=010ff34c ebp=010ff584 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!LdrpInitializeProcess+0x1bd9:
+7774f83c 0f8450e8ffff    je      ntdll!LdrpInitializeProcess+0x42f (7774e092) [br=1]
 ```
 
 You an also use the [t (Trace)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/t--trace-) command to navigate in the trace.
 
 ```
 0:000> t
-Time Travel Position: 29:12
-ntdll!ZwContinue:
-00007ffc`61f75bf0 4c8bd1          mov     r10,rcx
+Time Travel Position: F:4
+eax=0173a5b0 ebx=00fd8000 ecx=7774f821 edx=0f994afc esi=0f99137c edi=00de0000
+eip=7774e092 esp=010ff34c ebp=010ff584 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!LdrpInitializeProcess+0x42f:
+7774e092 33c0            xor     eax,eax
 0:000> t
-Time Travel Position: 2B:0
-ntdll!RtlUserThreadStart:
-00007ffc`61f40d30 4883ec48        sub     rsp,48h
+Time Travel Position: F:5
+eax=00000000 ebx=00fd8000 ecx=7774f821 edx=0f994afc esi=0f99137c edi=00de0000
+eip=7774e094 esp=010ff34c ebp=010ff584 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!LdrpInitializeProcess+0x431:
+7774e094 e9f5170000      jmp     ntdll!LdrpInitializeProcess+0x1c2b (7774f88e)
 ```
 
 
@@ -82,19 +97,19 @@ Use the the p- command to step backwards in a TTD trace.
 
 ```
 0:000> p-
-Time Travel Position: 2A:0
-ntdll!ZwContinue+0x12:
-00007ffc`61f75c02 0f05            syscall
+Time Travel Position: F:4
+eax=0173a5b0 ebx=00fd8000 ecx=7774f821 edx=0f994afc esi=0f99137c edi=00de0000
+eip=7774e092 esp=010ff34c ebp=010ff584 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!LdrpInitializeProcess+0x42f:
+7774e092 33c0            xor     eax,eax
 0:000> p-
-Time Travel Position: 29:11
-ntdll!LdrInitializeThunk+0x13:
-00007ffc`61f49ad3 e818c10200      call    ntdll!ZwContinue (00007ffc`61f75bf0)
-0:000> p-
-TTD: Start of trace reached.
-(3f78.4274): Break instruction exception - code 80000003 (first/second chance not available)
-Time Travel Position: 29:0
-ntdll!ZwTestAlert+0x14:
-00007ffc`61f789d4 c3              ret
+Time Travel Position: F:3
+eax=0173a5b0 ebx=00fd8000 ecx=7774f821 edx=0f994afc esi=0f99137c edi=00de0000
+eip=7774f83c esp=010ff34c ebp=010ff584 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!LdrpInitializeProcess+0x1bd9:
+7774f83c 0f8450e8ffff    je      ntdll!LdrpInitializeProcess+0x42f (7774e092) [br=1]
 ```
 
 You can also use the t- command to navigate backwards in time.
@@ -136,15 +151,15 @@ Provide a time position in any of the following formats to travel to that point 
 Use ```!positions``` to display all the active threads, including their position in the trace.
 
 ```
-1:0:000> !positions
->Thread ID=0x3604 - Position: 20:0
- Thread ID=0x0A94 - Position: 612:0
- Thread ID=0x1D78 - Position: A89:0
- Thread ID=0x38F8 - Position: 1695:0
- Thread ID=0x0AC4 - Position: 172C:0
- Thread ID=0x1D8C - Position: 17B5:0
- Thread ID=0x35FC - Position: 743D:0
- Thread ID=0x3200 - Position: 7D56:0
+0:000> !positions
+>Thread ID=0x1C74 - Position: F:2
+ Thread ID=0x1750 - Position: A5:0
+ Thread ID=0x3FFC - Position: 200:0
+ Thread ID=0x36B8 - Position: 403:0
+ Thread ID=0x3BC4 - Position: 5F2:0
+ Thread ID=0x392C - Position: B45:0
+ Thread ID=0x32B4 - Position: C87:0
+ Thread ID=0x337C - Position: DF1:0
 ```
 This example shows that there are eight threads at the current position. The current thread is 3604, marked with '>'.  
 
@@ -157,41 +172,43 @@ This example shows that there are eight threads at the current position. The cur
 Use the user mode [~ (Thread Status)](---thread-status-.md) command shows the same eight threads, and marks the current thread with '.':
 
 ```
-1:0:000> ~
-.  0  Id: 3f4.3604 Suspend: 4096 Teb: 00000061`79804000 Unfrozen
-   1  Id: 3f4.a94 Suspend: 4096 Teb: 00000061`79806000 Unfrozen
-   2  Id: 3f4.1d78 Suspend: 4096 Teb: 00000061`7980a000 Unfrozen
-   3  Id: 3f4.38f8 Suspend: 4096 Teb: 00000061`7980e000 Unfrozen
-   4  Id: 3f4.ac4 Suspend: 4096 Teb: 00000061`79810000 Unfrozen
-   5  Id: 3f4.1d8c Suspend: 4096 Teb: 00000061`79812000 Unfrozen
-   6  Id: 3f4.35fc Suspend: 4096 Teb: 00000061`79814000 Unfrozen
-   7  Id: 3f4.3200 Suspend: 4096 Teb: 00000061`79808000 Unfrozen
+0:000> ~
+.  0  Id: 954.1c74 Suspend: 4096 Teb: 00fdb000 Unfrozen
+   1  Id: 954.1750 Suspend: 4096 Teb: 00fea000 Unfrozen
+   2  Id: 954.3ffc Suspend: 4096 Teb: 00fde000 Unfrozen
+   3  Id: 954.36b8 Suspend: 4096 Teb: 00fe1000 Unfrozen
+   4  Id: 954.3bc4 Suspend: 4096 Teb: 00fe4000 Unfrozen
+   5  Id: 954.392c Suspend: 4096 Teb: 00fed000 Unfrozen
+   6  Id: 954.32b4 Suspend: 4096 Teb: 00ff0000 Unfrozen
+   7  Id: 954.337c Suspend: 4096 Teb: 00ff3000 Unfrozen
 ```
 
-Click on the link next to the third thread (1D78) in the !positions output, to time travel to that position in the trace, A89:0.
+Click on the link next to the third thread (3FFC) in the !positions output, to time travel to that position in the trace, 200:0.
 
 ```
-1:0:001> !tt A89:0
-Setting position: A89:0
-ModLoad: 00007ff8`3cd00000 00007ff8`3ce45000   C:\WINDOWS\System32\ole32.dll
-(3f4.1d78): Break instruction exception - code 80000003 (first/second chance not available)
-Time Travel Position: A89:0
-ntdll!ZwWaitForWorkViaWorkerFactory+0x14:
-00007ff8`3ed88c34 c3              ret
+0:002> !ttdext.tt 200:0
+Setting position: 200:0
+(954.3ffc): Break instruction exception - code 80000003 (first/second chance not available)
+Time Travel Position: 200:0
+eax=00000000 ebx=012da718 ecx=7775396c edx=00000000 esi=012e1848 edi=012e1a08
+eip=7775396c esp=014cf9f8 ebp=014cfbfc iopl=0         nv up ei ng nz ac po cy
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000293
+ntdll!NtWaitForWorkViaWorkerFactory+0xc:
+7775396c c21400          ret     14h
 ```
 
-Use the [~ (Thread Status)](---thread-status-.md) command to confirm that we are now positioned at the third thread, 1D78.
+Use the [~ (Thread Status)](---thread-status-.md) command to confirm that we are now positioned at the third thread, 3ffc.
 
 ```
-1:0:002> ~
-   0  Id: 3f4.3604 Suspend: 4096 Teb: 00000061`79804000 Unfrozen
-   1  Id: 3f4.a94 Suspend: 4096 Teb: 00000061`79806000 Unfrozen
-.  2  Id: 3f4.1d78 Suspend: 4096 Teb: 00000061`7980a000 Unfrozen
-   3  Id: 3f4.38f8 Suspend: 4096 Teb: 00000061`7980e000 Unfrozen
-   4  Id: 3f4.ac4 Suspend: 4096 Teb: 00000061`79810000 Unfrozen
-   5  Id: 3f4.1d8c Suspend: 4096 Teb: 00000061`79812000 Unfrozen
-   6  Id: 3f4.35fc Suspend: 4096 Teb: 00000061`79814000 Unfrozen
-   7  Id: 3f4.3200 Suspend: 4096 Teb: 00000061`79808000 Unfrozen
+0:002> ~
+   0  Id: 954.1c74 Suspend: 4096 Teb: 00fdb000 Unfrozen
+   1  Id: 954.1750 Suspend: 4096 Teb: 00fea000 Unfrozen
+.  2  Id: 954.3ffc Suspend: 4096 Teb: 00fde000 Unfrozen
+   3  Id: 954.36b8 Suspend: 4096 Teb: 00fe1000 Unfrozen
+   4  Id: 954.3bc4 Suspend: 4096 Teb: 00fe4000 Unfrozen
+   5  Id: 954.392c Suspend: 4096 Teb: 00fed000 Unfrozen
+   6  Id: 954.32b4 Suspend: 4096 Teb: 00ff0000 Unfrozen
+   7  Id: 954.337c Suspend: 4096 Teb: 00ff3000 Unfrozen
 ```
 
 

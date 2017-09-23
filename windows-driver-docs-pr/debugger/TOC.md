@@ -55,8 +55,6 @@
 #### [Time Travel Debugging - Position objects](time-travel-debugging-position-objects.md)
 #### [Time Travel Debugging - Range objects](time-travel-debugging-range-objects.md)
 #### [Time Travel Debugging - Thread objects](time-travel-debugging-thread-objects.md)
-#### [Debugger Object Model Reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md)
-#### [Time Travel Debugging - Data and Utility objects](time-travel-debugging-ttdanalyze.md)
 ### [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md)
 # [Debugging Resources](debugging-resources.md)
 ## [Debugging Tools for Windows: New for Windows 10](debugging-tools-for-windows--new-for-windows-10.md)
