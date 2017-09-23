@@ -57,8 +57,6 @@ This LINQ query displays all of the exceptions in the trace.
 ```
 dx @$curprocess.TTD.Events.Where(t => t.Type == "Exception").Select(e => e.Exception) 
 
-TBD - Need to get a TTD trace .RUN file with an exception - I think I can break the CDog app
-
 ```
 
 ### Querying for the load event for a specific module

@@ -53,9 +53,9 @@ This section describes the time travel navigation commands.
 
 The time travel naviagation commands only work with time travel traces. For more information about time travel, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
 
-## </span><span id="P"></span> p- (?)
+## </span><span id="P"></span> p- (Step Backwards)
 
-TBD
+The p command executes a single instruction or source line. When subroutine calls or interrupts occur, they are treated as a single step.
  
 
 ## </span><span id="T"></span> t- (?)
