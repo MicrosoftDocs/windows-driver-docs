@@ -83,7 +83,7 @@ For more information on working the trace files, see [Time Travel Debugging - Wo
 
 Review these topics to record and replay a trace file as well as for information on working with trace files and troubleshooting.
 
-- [Time Travel Debugging - Record a trace](time-travel-debugging-recording.md)
+- [Time Travel Debugging - Record a trace](time-travel-debugging-record.md)
 - [Time Travel Debugging - Replay a trace](time-travel-debugging-replay.md)
 - [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-file-information.md)
 - [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md)
