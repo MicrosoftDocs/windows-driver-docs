@@ -39,7 +39,7 @@ All of the trace output files are stored in the users document folder by default
 ```
 C:\Users\User1\Documents
 ```
-You can change the location of the trace files when you start to record. For more information, see [Time Travel Debugging - Recording](time-travel-debugging-recording.md).
+You can change the location of the trace files when you start to record. For more information, see [Time Travel Debugging - Recording](time-travel-debugging-record.md).
 
 The most recently used list of files allows you to quickly access previously used target configuration files. Any recently used trace files or dump files are listed as well. 
 
