@@ -46,7 +46,35 @@ Depending on the heap object, it may have some of the properties below.
 
 
 ## Example Usage
-*Information pending*
+
+Use this dx command to display the heap memory in a grid using the -g option.
+
+```
+0:0:000> dx -g @$cursession.TTD.Data.Heap()
+==================================================================================================================================
+=           = (+) Function               = (+) FunctionAddress = (+) ReturnValue  = (+) Parameters = (+) TimeStart = (+) TimeEnd =
+==================================================================================================================================
+= [0x0]     - UnknownOrMissingSymbols    - 0x7ffbe3daae00      - 0x16c7d7b4050    - {...}          - 50C74:8E      - 50C76:3B    =
+= [0x1]     - UnknownOrMissingSymbols    - 0x7ffbe3db0dd0      - 0x1              - {...}          - 50C76:1E9     - 50C78:1D    =
+= [0x2]     - UnknownOrMissingSymbols    - 0x7ffbe3daae00      - 0x16c7d7be400    - {...}          - 51C95:21F3    - 51CA6:81    =
+```
+
+Note that clicking on TimeStart or TimeEnd will navigate you to that point in the trace.  
+
+The output can be described as “normalized data” because there is a chosen set of APIs that represent heap operations, extracted the data from the appropriate parameters that is presented in a uniform manner.
+
+Click on the parameters field next to a specific entry, to display available parameter information.
+
+```
+dx -r1 @$cursession.TTD.Data.Heap()[2].@"Parameters"
+@$cursession.TTD.Data.Heap()[2].@"Parameters"                
+    [0x0]            : 0x16c7d780000
+    [0x1]            : 0x280000
+    [0x2]            : 0x20
+    [0x3]            : 0x0
+```
+
+
 
 
 
