@@ -78,10 +78,10 @@ start    end        module name
 77070000 771fe000   ntdll      (private pdb symbols)
 ``` 
 
-Then use the following dx command to see when a specific module was loaded.
+Then use the following dx command to see at what position in the trace a specific module was loaded.
 
 ```
- dx @$curprocess.TTD.Events.Where(t => t.Type == "ModuleLoaded").Where(t => t.Module.Name.Contains("ntdll.dll")) 
+dx @$curprocess.TTD.Events.Where(t => t.Type == "ModuleLoaded").Where(t => t.Module.Name.Contains("ntdll.dll")) 
 @$curprocess.TTD.Events.Where(t => t.Type == "ModuleLoaded").Where(t => t.Module.Name.Contains("ntdll.dll"))                 
     [0x0]            : Module Loaded at position: A:0 
 ```
@@ -98,7 +98,7 @@ The address of FFFFFFFFFFFFFFFE:0 indicates the end of the trace.
 
 ### Querying for the time position in the trace when threads were created
 
-Use this dx command to display all of the events in the trace in grid format.
+Use this dx command to display all of the events in the trace in grid format (-g).
 
 ```
 0:000> dx -g @$curprocess.TTD.Events
@@ -130,10 +130,10 @@ Use this dx command to display all of the events in the trace in grid format.
 = [0x16] : Module Unloaded at position: FFFFFFFFFFFFFFFE:0 - ModuleUnloaded      - FFFFFFFFFFFFFFFE:0    - Module C:\WINDOWS\System32\KERNEL32.DLL at address 0X7590... -                        =
 = [0x17] : Module Unloaded at position: FFFFFFFFFFFFFFFE:0 - ModuleUnloaded      - FFFFFFFFFFFFFFFE:0    - Module C:\WINDOWS\SYSTEM32\ntdll.dll at address 0X7707000... -                        =
 ==================================================================================================================================================================================================
+```
 
 Click on any of the columns with a + sign to sort the output.
 
-```
 
 Use this LINQ query to display in grid format, the time position in the trace when threads were created (Type == "ThreadCreated").
 
@@ -148,7 +148,7 @@ dx -g @$curprocess.TTD.Events.Where(t => t.Type == "ThreadCreated").Select(t => 
 ===========================================================================================================
 ```
 
-Use this LINQ query to display in grid format, the time position in the trace when threads were terminated (Type == "ThreadTerminated").
+Use this LINQ query to display in grid format, the time positions in the trace when threads were terminated (Type == "ThreadTerminated").
 
 ```
 0:000> dx -g @$curprocess.TTD.Events.Where(t => t.Type == "ThreadTerminated").Select(t => t.Thread) 
