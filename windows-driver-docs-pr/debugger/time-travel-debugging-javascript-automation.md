@@ -2,7 +2,7 @@
 title: Time Travel Debugging - JavaScript Automation
 description: This section describes how to use JavaScript automation to help analyze TTD traces.
 ms.author: windowsdriverdev
-ms.date: 09/06/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,13 +14,7 @@ ms.technology: windows-devices
 
 # ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - JavaScript Automation
 
-TBD TBD TBD 
-
-
-This section describes how to  use JavaScript automation to help analyze TTD traces.
-
-
-> Additional Content Pending
+Content Pending
 
 ---
 

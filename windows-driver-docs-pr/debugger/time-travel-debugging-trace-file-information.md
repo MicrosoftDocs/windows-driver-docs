@@ -79,15 +79,18 @@ The .IDX file does not need to be copied as it can be re-created using the !inde
 
 Recording errors and other recording output is written to the debugger log file. To view the log file, select **View** > **Logs**. 
 
-This example shows the error when attempting to use launch executable to start a program called Foo.exe that is not installed in the C:\Windows directory.
+This example shows the error log text when attempting to launch and record an executable named Foo.exe that is not in the C:\Windows directory.
 
 ```
-2017-09-18:16:11:23:421 : Error : DbgXUI.dll : 
-WindowsDebugger.WindowsDebuggerException: FAILURE HR=0x80070002: Failed to CreateProcessAndAttachWide: C:\Windows\Foo.exe
-   at WindowsDebugger.DbgEng.HRESULTExtensions.ThrowOnFailed(HRESULT hr, String operation)
-   at DbgX.Requests.Initialization.CreateProcessRequest.DoInitializeEngine(IEngineRequestServices ers, EngineInterfaces engine)
-   at DbgX.Requests.Initialization.InitializationRequest.DoExecute(IEngineRequestServices ers, EngineInterfaces engine)
-   at DbgX.Requests.EngineRequestWithTask`1.Execute(IEngineRequestServices ers, EngineInterfaces engine)
+2017-09-21:17:18:10:320 : Information : DbgXUI.dll : TTD: Output: 
+Microsoft (R) TTD 1.01.02
+Release: 10.0.16366.1000
+Copyright (C) Microsoft Corporation. All rights reserved.
+Launching C:\Windows\Foo.exe
+2017-09-21:17:18:10:320 : Error : DbgXUI.dll : TTD: Errors: 
+Error: Trace of C:\Windows\Foo.exe PID:0 did not complete successfully: status:27
+Error: Could not open 'Foo.exe'; file not found.
+Error: Corrupted trace dumped to C:\Users\ivcarr.REDMOND\Documents\Foo01.run.err.
 ```
 
 

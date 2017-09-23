@@ -119,11 +119,9 @@ You can travel back in time, but you can't change history. You can use read memo
 
 Some Windows system protected processes, such as Protected Process Light (PPL) process are protected, so the TTD cannot inject itself into the protected process to allow for the recording of the code execution.
 
-
 ### Trace file errors
 
 There are some cases where trace file errors can occur. For more information, see [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md).
-
 
 
 ## Advanced Features of Time Travel Debugging

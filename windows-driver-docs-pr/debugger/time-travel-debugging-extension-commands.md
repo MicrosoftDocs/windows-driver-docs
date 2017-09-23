@@ -2,7 +2,7 @@
 title: Time travel debugging extensions
 description: This section describes how to use the time travel debugger extension commands.
 ms.author: windowsdriverdev
-ms.date: 09/21/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ This section introduces the time travel debugger extension commandss.
 </tr>
 <tr class="odd">
 <td align="left"><p>[<strong>!index</strong>](time-travel-debugging-extension-index.md)</p></td>
-<td align="left"><p>The [<strong>!index</strong>]time-travel-debugging-extension-index.md) extension indexes time travel traces or displays index status information.</p></td>
+<td align="left"><p>The [<strong>!index</strong>](time-travel-debugging-extension-index.md) extension indexes time travel traces or displays index status information.</p></td>
 </tr>
 </tbody>
 </table>
