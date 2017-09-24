@@ -91,10 +91,8 @@ Review these topics to record and replay a trace file as well as for information
 
 These topics describe additional advanced functionality in time travel debugging. 
 
-- [Time Travel Debugging - Trace File object model](time-travel-debugging-object-model.md)
-- [Debugger Object Model Reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md)
+- [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
 - [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md)
-- [Time Travel Debugging - !tt (time travel)](time-travel-debugging-extension-commands.md)
 
 
 ## Things to look out for 
@@ -132,7 +130,7 @@ Here's some of the most notable TTD advanced features.
 
 - **Built in data model support** - TTD includes data model support. Using LINQ queries to analyze application failures can be a powerful tool. You can use the data model window in WinDbg  Preview to work with an expandable and browsable version of ‘dx’ and ‘dx -g’, letting you create tables using NatVis, JavaScript, and LINQ queries. 
 
-For general information about the debugger data model, see [WinDbg Preview - Data model](windbg-data-model-preview.md). For information about working with the TTD debugger object model, see [Time Travel Debugging - Trace File object model](time-travel-debugging-object-model.md) and [Debugger Object model reference - Time Travel Debugging](debugger-object-model-reference-time-travel-debugging.md).
+For general information about the debugger data model, see [WinDbg Preview - Data model](windbg-data-model-preview.md). For information about working with the TTD debugger object model, see [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md).
 
 ### Scripting support  
 
