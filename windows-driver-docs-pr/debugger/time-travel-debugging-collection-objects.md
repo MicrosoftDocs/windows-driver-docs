@@ -14,9 +14,12 @@ ms.technology: windows-devices
 
 # TTD Collection Objects
 ## Description
-*TTD Range* objects are used to give information about a range of time in a trace. These are generally used to describe the lifetime of a [TTD thread object](time-travel-debugging-thread-objects.md) during a TTD session.
+*TBD.
 
 ## Children
+
+TODO 
+
 | Object | Description |
 | --- | --- |
 | MinPosition | A [position object](time-travel-debugging-position-objects.md) that describes the earliest position relevant to the range. |
