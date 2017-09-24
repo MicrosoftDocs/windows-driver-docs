@@ -20,11 +20,13 @@ This section describes how to replay time travel traces, navigating forwards and
 
 Use a trailing minus sign with the following commands to travel back in time.
 
-| Command  |  For more information |
-|----|-------------------------------------------------------------------------------------------|
-| t- | [t (Trace)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/t--trace-) |
-| p- | [p (Step)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/p--step-)   |
-| g- | [g (Go)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/g--go-)       |
+| Command  | 
+|----------------|
+| p- (Step Back) | 
+| t- (Trace Back)| 
+| g- (Go Back)   |
+
+For more information, see [Time Travel Debugging - Navigation commands](time-travel-debugging-navigation-commands.md). 
 
 ## Ribbon button time travel navigation
 
