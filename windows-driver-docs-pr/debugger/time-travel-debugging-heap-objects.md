@@ -2,7 +2,7 @@
 title: TTD Heap Objects
 description: This section describes the heap model objects associated with time travel debugging.
 ms.author: windowsdriverdev
-ms.date: 09/22/2017
+ms.date: 09/24/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,8 +31,8 @@ Depending on the heap object, it may have some of the properties below.
 | Address | The address of the allocated object. |
 | PreviousAddress | The address of the allocated object before it was reallocated. If Address is not the same as PreviousAddress then the reallocation caused the memory to move. |
 | Size | The size and/or requested size of an allocated object. |
-| BaseAddress | TODO |
-| Flags | Meaning depends on the API |
+| BaseAddress | The address of an allocated object in the heap.  It can represent the address which will be freed (Free) or the address of the object before it is reallocated (ReAlloc.) |
+| Flags | Meaning depends on the API. |
 | Result | The result of the heap API call. Non-zero means success and zero means failure. |
 | ReserveSize | Amount of memory to reserve for the heap. |
 | CommitSize | Initial committed size for the heap. |
