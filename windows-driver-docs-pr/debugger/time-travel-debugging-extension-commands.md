@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 # ![Small logo for windbg preview](images/windbgx-preview-logo.png) Time travel debugging extension commands
 
-This section introduces the time travel debugger extension commandss.
+This section introduces the time travel debugger extension commands.
 
 
 ## <span id="in_this_section"></span>In this section
@@ -56,7 +56,7 @@ This extension only works with time travel traces. For more information about ti
 
 ### DLL
 
-The time travel debugger extension commands are implemented in ttdext.dll. The time travel command ddl is loaded automatically in WinDbg Preview. You don't need to use the load command to manually load the ttdext.dll.
+The time travel debugger extension commands are implemented in ttdext.dll. The time travel command dll is loaded automatically in WinDbg Preview. You don't need to use the load command to manually load the ttdext.dll.
  
 ## See Also
 

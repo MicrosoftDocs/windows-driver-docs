@@ -119,38 +119,22 @@ You can also use the t- command to navigate backwards in time.
 
 ## !tt navigation commands
 
-Use the !tt command to navigate forward or backwards in time, by skiping to a given position in the trace. 
+Use the !tt command to navigate forward or backwards in time, by skipping to a given position in the trace. 
 
-!tt {position}
+!tt [position]
 
 Provide a time position in any of the following formats to travel to that point in time.
            
-- If {position} is a decimal number between 0 and 100, it travels to approximately that percent into the trace. For example:
+- If [position] is a decimal number between 0 and 100, it travels to approximately that percent into the trace. For example ```!tt 50``` travels to halfway through the trace.
 
+- If {position} is #:#, where # are a hexadecimal numbers, it travels to that position. For example, ```!tt 1A0:12F``` travels to position 1A0:12F in the trace.
 
-     - !tt 0                   - Time travel to the beginning of the trace
-     - !tt 50                  - Time travel to halfway through the trace
-     - !tt 100                 - Time travel to the end of the trace
-
-- If {position} is #:#, where # are a hexadecimal numbers, it travels to that position. If the number after : is omitted, it defaults to zero.
-    - !tt 1A0:                - Time travel to position 1A0:0
-    - !tt 1A0:0               - Time travel to position 1A0:0
-    - !tt 1A0:12F             - Time travel to position 1A0:12F
-
-
-   > [!NOTE]
-   > Traces use a two part instruction position that references a specific position reference in the trace, for example 12:0. or 15:7. The two elements are hexadecimal numbers defined as described here.
-   >
-   > xx:yy
-   > 
-   > xx- the first element is the sequencing number, which corresponds to a sequencing event.
-   >
-   > yy - the second element is a step count, which corresponds roughly to the instruction count since the sequencing event.
+For more information, see [Time Travel Debugging - !tt (time travel)](time-travel-debugging-extension-tt.md).
 
 
 ## !positions
 
-Use ```!positions``` to display all the active threads, including their position in the trace.
+Use ```!positions``` to display all the active threads, including their position in the trace. For more information, see [Time Travel Debugging - !positions (time travel)](time-travel-debugging-extension-positions.md).
 
 ```
 0:000> !positions

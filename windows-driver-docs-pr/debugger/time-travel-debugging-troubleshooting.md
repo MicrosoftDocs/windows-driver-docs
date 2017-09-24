@@ -23,10 +23,6 @@ This section describes how to troubleshoot time travel traces.
 
 As the message indicates, running the debugger elevated is a requirement. In order to run the debugger elevated, right-click on the **WinDbg Preview** icon in the start menu and then select **More** > **Run as Administrator**.
 
-### I installed WinDbg Preview with an account that didn't have administrator privileges and I get an error message that says "WinDbg must be run elevated to support Time Travel Debugging"
-
-Re-install WinDbg Preview using an account that has administrator privileges.
-
 ### I can't launch and record a Windows Store application
 
 This is not supported at this time, but you may attach to and record an already-running Windows Store application.
@@ -65,7 +61,7 @@ To do this you may run ```!index -force```. If that fails:
 4. Use the ```!index -status``` command to confirm that the trace index is functional.
 
 Ensure that there's enough space for the index file in the same location where the trace file resides.
-Depending on the contents of the recording, the index file may be significantly larger than the trace file, typically on th order of twice as large.
+Depending on the contents of the recording, the index file may be significantly larger than the trace file, typically on the order of twice as large.
 
 ## Issues with Trace .RUN Files
 
@@ -97,7 +93,7 @@ TTD works by running an emulator inside of the debugger, which executes the inst
 
 Derailments are often caused by some error in the recorder, or sometimes in the emulator, at some recorded instruction further back in the trace. 
 
-In most cases this failure message indicates that the .RUN trace file will have a gap in the thread that derailed, starting at the point that it derailed,for some indeterminate number of instructions. If the event of interest you are trying to debug didn’t happen during that gap, the trace may be usable. If the event of interest occurred during that gap, the trace will need to be re-recorded.
+In most cases this failure message indicates that the .RUN trace file will have a gap in the thread that derailed, starting at the point that it derailed, for some indeterminate number of instructions. If the event of interest you are trying to debug didn’t happen during that gap, the trace may be usable. If the event of interest occurred during that gap, the trace will need to be re-recorded.
 
 
 ## See Also

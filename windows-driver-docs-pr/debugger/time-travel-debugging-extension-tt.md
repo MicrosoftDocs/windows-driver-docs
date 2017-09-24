@@ -45,6 +45,16 @@ Provide a time position in any of the following formats to travel to that point 
     - !ttdext.tt 1A0:12F             - Time travel to position 1A0:12F
 
 
+   > [!NOTE]
+   > Traces use a two-part instruction position that references a specific position reference in the trace, for example 12:0. or 15:7. The two elements are hexadecimal numbers defined as described here.
+   >
+   > xx:yy
+   > 
+   > xx- the first element is the sequencing number, which corresponds to a sequencing event.
+   >
+   > yy - the second element is a step count, which corresponds roughly to the instruction count since the sequencing event.
+
+
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
 ttdext.dll
