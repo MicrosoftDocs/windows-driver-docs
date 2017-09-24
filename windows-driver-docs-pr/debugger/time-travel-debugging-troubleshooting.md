@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Troubleshooting
 description: This section describes how to troubleshoot time travel traces.
 ms.author: windowsdriverdev
-ms.date: 09/21/2017
+ms.date: 09/24/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,6 +22,10 @@ This section describes how to troubleshoot time travel traces.
 ### I get an error message that says "WinDbg must be run elevated to support Time Travel Debugging"
 
 As the message indicates, running the debugger elevated is a requirement. In order to run the debugger elevated, right-click on the **WinDbg Preview** icon in the start menu and then select **More** > **Run as Administrator**.
+
+### I installed WinDbg Preview with an account that didn't have administrator privileges and I get an error message that says "WinDbg must be run elevated to support Time Travel Debugging"
+
+Re-install WinDbg Preview using an account that has administrator privileges.
 
 ### I can't launch and record a Windows Store application
 
