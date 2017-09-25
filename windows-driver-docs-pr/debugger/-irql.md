@@ -2,7 +2,7 @@
 title: irql extension command
 description: The irql extension displays the interrupt request level (IRQL) of a processor on the target computer before the debugger break.
 ms.assetid: 52dd3b9f-c03c-4b90-a01b-25289de67f5a
-keywords: ["IRQL (Interrupt Request Level)", "IRQL (Interrupt Request Level), See "Interrupt Request Level (IRQL)"", "irql Windows Debugging"]
+keywords: ["IRQL (Interrupt Request Level)", "IRQL (Interrupt Request Level), See "Interrupt Request Level (IRQL)", "irql Windows Debugging"]
 ms.author: windowsdriverdev
 ms.date: 05/23/2017
 ms.topic: article
