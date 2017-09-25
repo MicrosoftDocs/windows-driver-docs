@@ -26,4 +26,4 @@
 ### [I2C controller tests in MITT](run-mitt-tests-for-an-i2c-controller-.md)
 ### [SPI tests in MITT](spi-tests-in-mitt.md)
 ### [UART tests in MITT](uart-tests-in-mitt.md)
-
+# [PWM driver for an on-SoC PWM module](pulse-width-controller driver.md)
