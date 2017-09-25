@@ -1,5 +1,5 @@
 ---
-title: locks ( ntsdexts.locks)
+title: locks ntsdexts.locks
 description: The locks extension in Ntsdexts.dll displays a list of critical sections associated with the current process.This extension command should not be confused with the kdext*.locks extension command.
 ms.assetid: f33a68e8-1ddc-4d49-bb22-8f8b097c8ada
 keywords: ["locks ( ntsdexts.locks) Windows Debugging"]

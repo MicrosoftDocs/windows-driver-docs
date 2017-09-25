@@ -1,6 +1,6 @@
 ---
 title: * Comment Line Specifier
-description: If the asterisk * character is at the start of a command, then the rest of the line is treated as a comment, even if a semicolon appears after it.
+description: If the asterisk character is at the start of a command, then the rest of the line is treated as a comment, even if a semicolon appears after it.
 ms.assetid: 46f68e92-0758-49f2-82bb-bc4d25ddb641
 keywords: ["comment line token", "Comment Line Specifier Windows Debugging"]
 ms.author: windowsdriverdev
