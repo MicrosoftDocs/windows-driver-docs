@@ -1,9 +1,9 @@
 ---
-title: SDK Topics for Network Drivers
-description: SDK Topics for Network Drivers
+title: Kernel Mode SDK Topics for Network Drivers
+description: Kernel Mode SDK Topics for Network Drivers
 ms.assetid: E621615F-5A6A-4FB6-88D6-2DD11E2537B2
 keywords:
-- SDK topics for network drivers, SDK network drivers, Windows SDK network drivers, Microsoft Windows SDK network drivers
+- Kernel mode SDK topics for network drivers, kernel mode SDK network drivers, kernel mode Windows SDK network drivers, kernel mode Microsoft Windows SDK network drivers
 ms.author: windowsdriverdev
 ms.date: 08/08/2017
 ms.topic: article
@@ -11,14 +11,14 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# SDK Topics for Network Drivers
+# Kernel Mode SDK Topics for Network Drivers
 
-This section contains SDK topics for Windows networking device drivers starting with Windows Vista. These topics may also be shared with the user mode applications that interact with network drivers. The header files that contain the topics defined in this section are included in the Windows Software Development Kit (SDK).
+This section contains kernel mode SDK topics for Windows network drivers starting with Windows Vista, which are defined in header files that are included in the Windows Software Development Kit (SDK). These headers are included in the SDK instead of the Windows Driver Kit (WDK) as they are also shared with user mode networking applications.
 
 > [!IMPORTANT]
 > This section's header topics contains pages for definitions, macros, OIDs, status indications, and other data structures that are not part of network driver reference (structures, enumerations, functions, and callbacks). 
 >
-> For more information about network driver reference for these headers, see [SDK Topics for Network Drivers (Reference)](https://msdn.microsoft.com/library/windows/hardware/mt808525).
+> For more information about network driver reference for these headers, see [Kernel Mode SDK Topics for Network Drivers (Reference)](https://msdn.microsoft.com/library/windows/hardware/mt808525).
 
 This section contains:
 

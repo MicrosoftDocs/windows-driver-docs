@@ -23,12 +23,12 @@ NDIS 6.0 and later versions of NDIS provide standardized keywords that can be ed
 The following example shows an INF file definition for a keyword that can be edited.
 
 ```
-HKR, Ndi\params\\<SubkeyName>,ParamDesc, 0, "<ParamDesc>"
-HKR, Ndi\params\\<SubkeyName>,Type, 0, "int"
-HKR, Ndi\params\\<SubkeyName>,Default, 0, "<IHV defined>"
-HKR, Ndi\params\\<SubkeyName>,Optional, 0, "0"
-HKR, Ndi\params\\<SubkeyName>,Min, 0, "0"
-HKR, Ndi\params\\<SubkeyName>,Max, 0, "<IHV defined>"
+HKR, Ndi\params\<SubkeyName>,ParamDesc, 0, "<ParamDesc>"
+HKR, Ndi\params\<SubkeyName>,Type, 0, "int"
+HKR, Ndi\params\<SubkeyName>,Default, 0, "<IHV defined>"
+HKR, Ndi\params\<SubkeyName>,Optional, 0, "0"
+HKR, Ndi\params\<SubkeyName>,Min, 0, "0"
+HKR, Ndi\params\<SubkeyName>,Max, 0, "<IHV defined>"
 ```
 
 The standard keywords that can be edited are:
