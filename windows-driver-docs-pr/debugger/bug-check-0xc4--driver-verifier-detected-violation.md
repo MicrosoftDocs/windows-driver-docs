@@ -507,6 +507,14 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Unexpected partial MDL flag</p></td>
 <td align="left"><p>The driver called [<strong>MmUnlockPages</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556381) for a partial MDL. A partial MDL is one that was created by [<strong>IoBuildPartialMdl</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548324).</p></td>
 </tr>
+<tr class="odd">
+<td align="left"><p>0xB8 (Windows Vista and later operating systems only)</p></td>
+<td align="left"><p>MDL address</p></td>
+<td align="left"><p>MDL flags</p></td>
+<td align="left"><p>Reserved</p></td>
+<td align="left"><p>The pages that are described by the MDL are still mapped. The driver must unmap the pages before calling IoFreeMdl.
+</p></td>
+</tr>
 <tr class="even">
 <td align="left"><p>0xC0 (Windows Vista and later operating systems only)</p></td>
 <td align="left"><p>Address of the IRP</p></td>
@@ -702,6 +710,13 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>A call was made to a Kernel API at the incorrect IRQL.</p></td>
 </tr>
+<tr class="even">
+<td align="left"><p>0xE6 (Windows Vista and later operating systems only)</p></td>
+<td align="left"><p>Address inside the driver making the Zw API call</p></td>
+<td align="left"><p>Current IRQL</p></td>
+<td align="left"><p>Special kernel APCs.</p></td>
+<td align="left"><p>Kernel Zw API was not called at IRQL = PASSIVE_LEVEL and with special kernel APCs enabled.</p></td>
+</tr>
 <tr class="odd">
 <td align="left"><p>0xEA (Windows Vista and later operating systems only)</p></td>
 <td align="left"><p>Current IRQL</p></td>
@@ -792,6 +807,14 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Address of the extended context that was saved before it executed the ISR</p></td>
 <td align="left"><p>Address of the extended context was saved after it executed the ISR</p></td>
 <td align="left"><p>The interrupt service routine (ISR) for the driver has corrupted the extended thread context.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x111</p>
+<p>(Windows 7 operating systems and later)</p></td>
+<td align="left"><p>Address of the Interrupt Service Routine</p></td>
+<td align="left"><p>IRQL before executing ISR</p></td>
+<td align="left"><p>IRQL after executing ISR</p></td>
+<td align="left"><p>The interrupt Service Routine returned a changed IRQL.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x115</p>
@@ -913,6 +936,13 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 <td align="left"><p>Number of bytes being freed</p></td>
 <td align="left"><p>Pointer to the number of bytes tracked by Driver Verifier</p></td>
 <td align="left"><p>The number of bytes of memory being freed in the call to [<strong>ExFreePool</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544590) is different from the number of bytes tracked by Driver Verifier.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x140</p></td>
+<td align="left"><p>Current IRQL</p></td>
+<td align="left"><p>MDL address</p></td>
+<td align="left"><p>Associated virtual address with this MDL</p></td>
+<td align="left"><p>A non-locked MDL was constructed from either pageable or tradable memory.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x1000 (Windows XP and later operating systems only)</p></td>

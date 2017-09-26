@@ -17,7 +17,7 @@ This topic provides information about updates that have been made to the XPSDrv 
 
 **XPS Format**
 
-The XPS Print API and/or the print filter pipeline will convert seamlessly between [Microsoft Xml Paper Specification 1.0](http://msdn.microsoft.com/windows/hardware/gg463375) (MS XPS), and [OpenXPS](http://www.ecma-international.org/publications/standards/Ecma-388.md) (ECMA-388). Unless otherwise specified, v4 print drivers default to consuming MS XPS. Using the manifest directive XpsFormat, drivers may choose to support one or both of the available XPS formats. For more information about OpenXPS support, see [OpenXPS Support in Windows](http://msdn.microsoft.com/library/windows/hardware/br259130).
+The XPS Print API and/or the print filter pipeline will convert seamlessly between [Microsoft Xml Paper Specification 1.0](http://msdn.microsoft.com/windows/hardware/gg463375) (MS XPS), and [OpenXPS](http://www.ecma-international.org/publications/standards/Ecma-388.htm) (ECMA-388). Unless otherwise specified, v4 print drivers default to consuming MS XPS. Using the manifest directive XpsFormat, drivers may choose to support one or both of the available XPS formats. For more information about OpenXPS support, see [OpenXPS Support in Windows](http://msdn.microsoft.com/library/windows/hardware/br259130).
 
 **XPS Rasterization Service Improvements**
 
@@ -42,7 +42,7 @@ The [IPrintCoreHelperUni2](https://msdn.microsoft.com/library/windows/hardware/h
 [IPrintCoreHelperUni2](https://msdn.microsoft.com/library/windows/hardware/hh406580)  
 [Microsoft Xml Paper Specification 1.0](http://msdn.microsoft.com/windows/hardware/gg463375)  
 [Native Pixel Formats Overview](http://msdn.microsoft.com/library/windows/hardware/ee719797.aspx)  
-[OpenXPS](http://www.ecma-international.org/publications/standards/Ecma-388.md)  
+[OpenXPS](http://www.ecma-international.org/publications/standards/Ecma-388.htm)  
 [OpenXPS Support in Windows](http://msdn.microsoft.com/library/windows/hardware/br259130)  
 [V4 Printer Driver Rendering Architecture](v4-driver-rendering-architecture.md)  
 [**XPSRaterizationFactory1::CreateRasterizer1**](https://msdn.microsoft.com/library/windows/hardware/hh802468)  

@@ -12,6 +12,8 @@ ms.technology: windows-devices
 
 # Defining the geolocation sensor as an object
 
+> [!IMPORTANT] 
+> This documentation and the geolocation driver sample for Windows 8.1 has been deprecated.
 
 The sensors geolocation driver sample treats its simulated geolocation-sensor as an object. This object is declared in the header file named geolocation.h. (For a description of the header file and the other driver sample files refer to [The sample driver file list](the-sample-driver-file-list.md) section.)
 
