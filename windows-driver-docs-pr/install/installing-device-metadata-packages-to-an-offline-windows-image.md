@@ -15,7 +15,7 @@ ms.technology: windows-devices
 Computer OEMs can add device metadata packages to an offline image of Windows by copying the packages to the local device metadata store. This store is in the following location:
 
 ```
-%PROGRAMDATA%\Microsoft\Windows\DeviceMetadataStore\\<locale>
+%PROGRAMDATA%\Microsoft\Windows\DeviceMetadataStore\<locale>
 ```
 
 You must first create the *&lt;locale&gt;* subdirectory based on the target locale of the device metadata package. Then you must copy the metadata package to the appropriate *&lt;locale&gt;* subdirectory.
