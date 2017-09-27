@@ -12,10 +12,6 @@ ms.technology: windows-devices
 # Controlling driver access
 
 
-**Last updated:**
-
--   July 14, 2017
-
 This article describes steps you can take to help control access to your driver.
 
 The drivers for a device are responsible for ensuring that unauthorized users do not have access to the device. Ensuring device security involves the following:

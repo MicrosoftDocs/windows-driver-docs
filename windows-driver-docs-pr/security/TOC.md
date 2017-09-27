@@ -9,5 +9,5 @@
 ### [Of course it's a valid handle! (Or is it?)](of-course-it-s-a-valid-handle---or-is-it--.md)
 ### [How safe is your device namespace?](how-safe-is-your-device-namespace-.md)
 ## [Windows security model for driver developers](windows-security-model.md)
-### [Driver security responsibility (Windows security model)](windows-security-model-driver-security-responsibility.md)
+## [Controlling Driver Access](controlling-driver-access.md)
 

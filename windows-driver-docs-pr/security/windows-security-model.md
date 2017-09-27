@@ -3,7 +3,7 @@ title: Windows security model
 description: The Windows security model is based primarily on per-object rights, with a small number of system-wide privileges.
 ms.assetid: 3A7ECA7C-1FE6-4ADB-97A9-A61C6FCE9F04
 ms.author: windowsdriverdev
-ms.date: 06/06/2017
+ms.date: 09/27/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -36,8 +36,8 @@ This article provides information about writing secure kernel-mode drivers for t
 <td align="left"><p>The system uses the security constructs described in the Windows security model whenever a process creates a handle to a file or object.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Driver security responsibility (Windows security model)](driver-security-responsibility--windows-security-model-.md)</p></td>
-<td align="left"><p>This article describes driver security responsibility in the Windows security model.</p></td>
+<td align="left"><p>[Driver security responsibility (Windows security model)](controlling-driver-access.md)</p></td>
+<td align="left"><p>This article describes driver steps to take to control driver access.</p></td>
 </tr>
 
 </tbody>
@@ -56,10 +56,6 @@ This section summarizes how the Windows security model applies to kernel-mode dr
 
 # Windows security model
 
-
-**Last updated:**
-
--   July 7, 2004
 
 The Windows security model is based primarily on per-object rights, with a small number of system-wide privileges. Objects that can be secured include, —but are not limited to, —processes, threads, events and other synchronization objects, as well as files, directories, and devices.
 
