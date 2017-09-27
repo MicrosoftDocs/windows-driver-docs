@@ -17,7 +17,7 @@ This topic discusses points to consider regarding threat modeling for drivers.
 ## <span id="Fast_path_threat_modeling"></span><span id="fast_path_threat_modeling"></span><span id="FAST_PATH_THREAT_MODELING"></span>Fast path threat modeling
 
 
-If resources are limited, instead of creating a complete threat model diagram, a summary outline can be created to help assess security risks to the driver. For example the text below describes some of the surface areas diagramed in the example driver described in [Create threat models for drivers](create-threat-models-for-drivers.md).
+If resources are limited, instead of creating a complete threat model diagram, a summary outline can be created to help assess security risks to the driver. For example the text below describes some of the surface areas diagramed in the example driver described in [Create threat models for drivers](threat-models-for-drivers-create.md).
 
 The driver receives data from the operating system in several types of requests:
 

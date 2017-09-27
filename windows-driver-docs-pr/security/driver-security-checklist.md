@@ -444,10 +444,7 @@ To tighten security when such IOCTLs are sent by user-mode callers, the driver c
 
 **Additional general Windows security model information**
 
-[Windows security model: what every driver writer needs to know](windows-security-model--what-every-driver-writer-needs-to-know.md)
-
-[Windows security model scenario: creating a file](windows-security-model-scenario--creating-a-file.md)
-
+[Windows security model for driver developers](windows-security-model.md)
 
 
 ## <span id="enhancedeviceinstallationsecurity"></span>Enhance device installation security

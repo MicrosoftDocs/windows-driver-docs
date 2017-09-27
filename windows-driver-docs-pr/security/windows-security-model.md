@@ -32,7 +32,7 @@ This article provides information about writing secure kernel-mode drivers for t
 <td align="left"><p>The Windows security model is based primarily on per-object rights, with a small number of system-wide privileges. Objects that can be secured include, —but are not limited to, —processes, threads, events and other synchronization objects, as well as files, directories, and devices.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Windows security model scenario: creating a file](windows-security-model-scenario--creating-a-file.md)</p></td>
+<td align="left"><p>[Windows security model scenario: creating a file](#creating-a-file)</p></td>
 <td align="left"><p>The system uses the security constructs described in the Windows security model whenever a process creates a handle to a file or object.</p></td>
 </tr>
 <tr class="odd">
@@ -202,8 +202,7 @@ Privileges are different from access rights because they apply to system-related
 The access token for each process contains a list of the privileges granted to the process. Privileges must be specifically enabled before use. An administrator enables and audits the use of privileges by using **Administrative Tools** in the Windows Control Panel; privileges can also be enabled programmatically.
 
  
-# Windows security model scenario: creating a file
-
+# <span id="Creating-A-File"></span><span id="CREATING-A-FILE"></span><span id="creating-a-file"></span>Creating a file
 
 The system uses the security constructs described in the Windows security model whenever a process creates a handle to a file or object.
 

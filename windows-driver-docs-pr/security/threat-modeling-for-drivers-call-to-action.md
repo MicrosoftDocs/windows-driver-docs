@@ -58,7 +58,7 @@ To prioritize the threats to your driver, rank each threat from 1 to 10 on all 5
 
 **Sample: Assessing Threats**
 
-Continuing with the example discussed in [Create threat models for drivers](create-threat-models-for-drivers.md), the following table shows how a designer might assess the hypothetical denial-of-service attack:
+Continuing with the example discussed in [Create threat models for drivers](threat-models-for-drivers-create.md), the following table shows how a designer might assess the hypothetical denial-of-service attack:
 
 | DREAD Criterion | Score   | Comments                                                                |
 |-----------------|---------|-------------------------------------------------------------------------|
@@ -90,7 +90,7 @@ If possible, your driver design should mitigate against all the threats that you
 
 [Cancel Logic in Windows Drivers](https://msdn.microsoft.com/library/windows/hardware/dn653289) white paper
 
-[Windows security model: what every driver writer needs to know](windows-security-model--what-every-driver-writer-needs-to-know.md)
+[Windows security model: what every driver writer needs to know](windows-security-model.md)
 
 **Microsoft Windows Driver Development Kit (DDK)**
 

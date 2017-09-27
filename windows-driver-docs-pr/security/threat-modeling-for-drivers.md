@@ -34,15 +34,15 @@ Driver writers and architects should make threat modeling an integral part of th
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Create threat models for drivers](create-threat-models-for-drivers.md)</p></td>
+<td align="left"><p>[Create threat models for drivers](threat-models-for-drivers-create.md)</p></td>
 <td align="left"><p>Creating a threat model requires a thorough understanding of the driver’s design, the types of threats to which the driver might be exposed, and the consequences of a security attack that exploits a particular threat. After creating the threat model for a driver, you can determine how to mitigate the potential threats.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Points to consider regarding threat modeling for drivers](points-to-consider-regarding-threat-modeling-for-drivers.md)</p></td>
+<td align="left"><p>[Points to consider regarding threat modeling for drivers](threat-modeling-for-drivers-points-to-consider.md)</p></td>
 <td align="left"><p>This topic discusses points to consider regarding threat modeling for drivers.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Call to action and resources (threat modeling for drivers)](call-to-action-and-resources--threat-modeling-for-drivers-.md)</p></td>
+<td align="left"><p>[Call to action and resources (threat modeling for drivers)](threat-modeling-for-drivers-call-to-action.md)</p></td>
 <td align="left"><p>This article contains call to action recommendations and resources for threat modeling for drivers.</p></td>
 </tr>
 </tbody>
