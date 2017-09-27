@@ -35,25 +35,16 @@ This section contains information on enhancing driver security.
 </tr>
 <tr class="odd">
 <td align="left"><p>[Threat modeling for drivers](threat-modeling-for-drivers.md)</p></td>
-<td align="left"><p>Driver writers and architects should make threat modeling an integral part of the design process for any driver. This article provides guidelines for creating threat models for drivers for the Microsoft Windows family of operating systems.</p></td>
+<td align="left"><p>Driver writers and architects should make threat modeling an integral part of the design process for any driver. This article provides guidelines for creating threat models for drivers.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Deprecate unsafe functions](deprecate-unsafe-functions.md)</p></td>
-<td align="left"><p>Create a process to look for and remove code vulnerabilities from your driver code. Because driver code is highly specialized, and threats continue to evolve, a single checklist cannot apply uniformly to all drivers. The following are general points to consider when creating drivers.</p></td>
+<td align="left"><p>Create a process to look for and remove code vulnerabilities from your driver code. Because driver code is highly specialized, and threats continue to evolve, a single set of guidelines cannot apply uniformly to all drivers. The topics are general points to consider when creating drivers.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Windows security model: what every driver writer needs to know](windows-security-model--what-every-driver-writer-needs-to-know.md)</p></td>
-<td align="left"><p>This article provides information about writing secure kernel-mode drivers for the Microsoft Windows family of operating systems. It describes how the Windows security model applies to drivers and explains what driver writers must do to ensure the security of their devices.</p></td>
+<td align="left"><p>[Windows security model for driver developers](windows-security-model.md)</p></td>
+<td align="left"><p>This topic provides information about writing secure kernel-mode drivers for Windows. It describes how the Windows security model applies to drivers and explains what driver writers must do to improve the security of their devices.</p></td>
 </tr>
-<tr class="even">
-<td align="left"><p>[Increase driver installation security](increase-driver-installation-security.md)</p></td>
-<td align="left"><p>Evaluate how and where the driver installs to decrease the risk of tampering. Design default settings so that users are protected out of the box and have to opt in to taking on more risk.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Driver packaging and distribution guidance](driver-packaging-and-distribution-guidance.md)</p></td>
-<td align="left"><p>Properly signing and packing and distributing your driver can help decrease the risk that the driver can be tampered with.</p></td>
-</tr>
-
 </tbody>
 </table>
 

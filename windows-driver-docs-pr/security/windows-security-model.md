@@ -9,6 +9,51 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
+# Overview 
+This article provides information about writing secure kernel-mode drivers for the Microsoft Windows family of operating systems. It describes how the Windows security model applies to drivers and explains what driver writers must do to ensure the security of their devices.
+
+## <span id="in_this_section"></span>In this section
+
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Topic</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>[Windows security model](windows-security-model.md)</p></td>
+<td align="left"><p>The Windows security model is based primarily on per-object rights, with a small number of system-wide privileges. Objects that can be secured include, —but are not limited to, —processes, threads, events and other synchronization objects, as well as files, directories, and devices.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>[Windows security model scenario: creating a file](windows-security-model-scenario--creating-a-file.md)</p></td>
+<td align="left"><p>The system uses the security constructs described in the Windows security model whenever a process creates a handle to a file or object.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>[Driver security responsibility (Windows security model)](driver-security-responsibility--windows-security-model-.md)</p></td>
+<td align="left"><p>This article describes driver security responsibility in the Windows security model.</p></td>
+</tr>
+
+</tbody>
+</table>
+
+ 
+
+## <span id="Introduction"></span><span id="introduction"></span><span id="INTRODUCTION"></span>Introduction
+
+
+The Windows security model is based on securable objects. Each component of the operating system must ensure the security of the objects for which it is responsible. Drivers, therefore, must safeguard the security of their devices and device objects.
+
+This section summarizes how the Windows security model applies to kernel-mode drivers and what drivers must do to ensure the security of their devices. For some types of devices, additional device-specific requirements apply. See the device-specific documentation in the [Windows Driver Kit (WDK)](http://msdn.microsoft.com/library/windows/hardware/gg487463) for details.
+
+
+
 # Windows security model
 
 
@@ -157,6 +202,72 @@ Privileges are different from access rights because they apply to system-related
 The access token for each process contains a list of the privileges granted to the process. Privileges must be specifically enabled before use. An administrator enables and audits the use of privileges by using **Administrative Tools** in the Windows Control Panel; privileges can also be enabled programmatically.
 
  
+# Windows security model scenario: creating a file
+
+
+The system uses the security constructs described in the Windows security model whenever a process creates a handle to a file or object.
+
+The following diagram shows the security-related actions that are triggered when a user-mode process attempts to create a file.
+
+![creating a file](images/wsm-creatingafile.gif)
+
+The previous diagram shows how the system responds when a user-mode application calls the **CreateFile** function. The following notes refer to the circled numbers in the figure:
+
+1.  A user-mode application calls the **CreateFile** function, passing a valid Microsoft Win32 file name.
+2.  The user-mode Kernel32.dll passes the request to Ntdll.dll, which converts the Win32 name to a Microsoft Windows NT file name.
+3.  Ntdll.dll calls the **NtCreateFile** function with the Windows file name. Within Ntoskrnl.exe, the I/O Manager handles **NtCreateFile**.
+4.  The I/O Manager repackages the request into an Object Manager call.
+5.  The Object Manager resolves symbolic links and ensures that the user has traversal rights for the path in which the file will be created. For more information, see [Security checks in the Object Manager](#omchecks).
+6.  The Object Manager calls the system component that owns the underlying object type associated with the request. For a file creation request, this component is the I/O Manager, which owns device objects.
+7.  The I/O Manager checks the security descriptor for the device object against the access token for the user’s process to ensure that the user has the required access to the device. For more information, see [Security checks in the I/O Manager](#iomanchecks).
+8.  If the user process has the required access, the I/O Manager creates a handle and sends an IRP\_MJ\_CREATE request to the driver for the device or file system.
+9.  The driver performs additional security checks as needed. For example, if the request specifies an object in the device’s namespace, the driver must ensure that the caller has the required access rights. For more information, see [Security checks in the driver](#driver).
+
+## <span id="omchecks"></span><span id="OMCHECKS"></span>Security checks in the Object Manager
+
+
+The responsibility for checking access rights belongs to the highest-level component that can perform such checks. If the Object Manager can verify the caller’s access rights, it does so. If not, the Object Manager passes the request to the component responsible for the underlying object type. That component, in turn, verifies access, if it can; if it cannot, it passes the request to a still-lower component, such as a driver.
+
+The Object Manager checks ACLs for simple object types, such as events and mutex locks. For objects that have a namespace, the type owner performs security checks. For example, the I/O Manager is considered the type owner for device objects and file objects. If the Object Manager finds the name of a device object or file object when parsing a name, it hands off the name to the I/O Manager, as in the file creation scenario presented above. The I/O Manager then checks the access rights if it can. If the name specifies an object within a device namespace, the I/O Manager in turn hands off the name to the device (or file system) driver, and that driver is responsible for validating the requested access.
+
+## <span id="iomanchecks"></span><span id="IOMANCHECKS"></span>Security checks in the I/O Manager
+
+
+When the I/O Manager creates a handle, it checks the object’s rights against the process access token and then stores the rights granted to the user as part of the handle. When later I/O requests arrive, the I/O Manager checks the rights recorded in the handle to ensure that the process has the right to perform the requested I/O operation. For example, if the process later requests a write operation, the I/O Manager checks the rights in the handle to ensure that the caller has write access to the object.
+
+If the handle is duplicated, rights can be removed from the copy, but not added to it.
+
+When the I/O Manager creates an object, it converts generic Win32 access modes to object-specific rights. For example, the following rights apply to files and directories:
+
+| Win32 access mode | Object-specific rights                |
+|-------------------|---------------------------------------|
+| GENERIC\_READ     | ReadData | ReadAttributes | ReadEA    |
+| GENERIC\_WRITE    | WriteData | WriteAttributes | WriteEA |
+| GENERIC\_EXECUTE  | ReadAttributes | Execute/Traverse     |
+| GENERIC\_ALL      | All                                   |
+
+ 
+
+To create a file, a process must have traversal rights to the parent directories in the target path. For example, to create \\Device\\Floppy0\\Directory\\File.txt, a process must have the right to traverse \\Device, \\Device\\Floppy0, and \\Device\\Floppy0\\Directory. The I/O Manager checks only the traversal rights for these directories.
+
+The I/O Manager checks traversal rights when it parses the file name. If the file name is a symbolic link, the I/O Manager resolves it to a full path and then checks traversal rights, starting from the root. For example, assume the symbolic link \\DosDevices\\A maps to the Windows NT device name \\Device\\Floppy0. The process must have traversal rights to the \\Device directory.
+
+## <span id="driver"></span><span id="DRIVER"></span>Security checks in the driver
+
+
+The operating system kernel treats every driver, in effect, as a file system with its own namespace. Consequently, when a caller attempts to create an object in the device namespace, the I/O Manager checks that the process has traversal rights to the directories in the path. By default, however, the I/O Manager does not perform security checks against the namespace. The driver is responsible for ensuring the security of its namespace.
+
+
+
+
+
+## Recommendations 
+
+-   Set strong default ACLs in calls to the **IoCreateDeviceSecure** routine.
+-   Specify ACLs in the INF file for each device. These ACLs can loosen tight default ACLs if necessary.
+-   Set the FILE\_DEVICE\_SECURE\_OPEN characteristic to apply device object security settings to the device namespace.
+-   Do not define IOCTLs that permit FILE\_ANY\_ACCESS unless such access cannot be exploited maliciously.
+-   Use the **IoValidateDeviceIoControlAccess** routine to tighten security on existing IOCTLS that allow FILE\_ANY\_ACCESS.
 
  
 
