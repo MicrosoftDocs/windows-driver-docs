@@ -150,7 +150,7 @@ Use ```!positions``` to display all the active threads, including their position
 This example shows that there are eight threads at the current position. The current thread is 3604, marked with '>'.  
 
 > [!TIP] 
-> Another way to display the current list of threads with positions is to use the a data model command for example:
+> Another way to display the current list of threads and their positions, is to use the data model dx command:
 >
 > ```dx -g @$curprocess.Threads.Select(t => new { IsCurrent = t.Id == @$curthread.Id, ThreadId = t.Id, Position = t.TTD.Position })```
 >
@@ -199,8 +199,9 @@ Use the [~ (Thread Status)](---thread-status-.md) command to confirm that we are
 
 
 > [!NOTE]
-> The *~s#*, where *#* is a thread number, also switches to the given thread, but it doesn’t change the current position in the trace.  When *!tt* is 
-> used to time travel to another thread’s position, any values you (and the debugger) read from memory will be looked up at that position. When switching > threads with *~s#*, the debugger doesn't change the current position internally, which is used for all memory queries. This works this way primarily so > that *~s#* doesn’t have to reset the debugger’s inner loop.
+> The *~s#*, where *#* is a thread number, also switches to the given thread, but it doesn’t change the current position in the 
+trace.  When *!tt* is used to time travel to another thread’s position, any values you (and the debugger) read from memory will  be looked up at that position. When switching threads with *~s#*, the debugger doesn't change the current position internally, 
+which is used for all memory queries. This works this way primarily so that *~s#* doesn’t have to reset the debugger’s inner loop.
 
 
 ## Time travel debugging extension commands

@@ -38,6 +38,9 @@ Time travel debugging uses symbol information provided in the PDBs to determine 
 
 These assumptions allow queries to be made in the absence of adequate symbol information. However, for best results use full PDB symbols when possible.
 
+Note that the Calls function does computation, and depending on the size of the trace, it can take a while to run. CPU usage will spike during the computation and watching CPU usage in task manager, gives an indication that the computation is progressing.  The query results are cached in memory so subsequent queries against previously queried calls are significantly faster.
+
+
 
 ## Example Usage
 
