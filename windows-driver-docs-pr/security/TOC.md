@@ -4,10 +4,10 @@
 ### [Create threat models for drivers](threat-models-for-drivers-create.md)
 ### [Points to consider regarding threat modeling for drivers](threat-modeling-for-drivers-points-to-consider.md)
 ### [Call to action and resources (threat modeling for drivers)](threat-modeling-for-drivers-call-to-action.md)
+## [Windows security model for driver developers](windows-security-model.md)
+### [Controlling Driver Access](controlling-driver-access.md)
 ## [Deprecate unsafe functions](deprecate-unsafe-functions.md)
 ### [IOCTLs with FILE_ANY_ACCESS: safe or sorry?](ioctls-with-file-any-access--safe-or-sorry-.md)
 ### [Of course it's a valid handle! (Or is it?)](of-course-it-s-a-valid-handle---or-is-it--.md)
 ### [How safe is your device namespace?](how-safe-is-your-device-namespace-.md)
-## [Windows security model for driver developers](windows-security-model.md)
-## [Controlling Driver Access](controlling-driver-access.md)
 
