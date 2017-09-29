@@ -70,7 +70,7 @@ The ACL for a device object can be set in any of three ways:
 -   Created programmatically by the **RtlCreateSecurityDescriptor** function and set by the **RtlSetDaclSecurityDescriptor** function.
 -   Specified in Security Descriptor Definition Language (SDDL) in the device’s INF file or in a call to the **IoCreateDeviceSecure** routine.
 
-All new drivers should use SDDL in the INF file to specify ACLs for their device objects.
+All drivers should use SDDL in the INF file to specify ACLs for their device objects.
 
 SDDL is an extensible description language that enables components to create ACLs in a string format. SDDL is used by both user-mode and kernel-mode code. The following figure shows the format of SDDL strings for device objects.
 
@@ -224,10 +224,6 @@ The operating system kernel treats every driver, in effect, as a file system wit
 
 
 ### See Also
-
-For some types of devices, additional device-specific requirements apply. See [Device and Driver Technologies](https://docs.microsoft.com/windows-hardware/drivers/device-and-driver-technologies) for details.
-
-For additional information see these topics.
 
 [Controlling Driver Access](controlling-driver-access.md)
 
