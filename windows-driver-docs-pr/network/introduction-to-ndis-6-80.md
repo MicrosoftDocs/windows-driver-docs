@@ -15,9 +15,18 @@ This topic introduces Network Driver Interface Specification (NDIS) 6.80 and des
 
 NDIS 6.80 is a minor version update to NDIS 6.70 for miniport, protocol, filter, and intermediate drivers. For more information about porting NDIS 6.x drivers to NDIS 6.80, see [Porting NDIS 6.x drivers to NDIS 6.80](porting-ndis-6-x-drivers-to-ndis-6-70.md).
 
-For NIC drivers, the NetAdapter class extension (NetAdapterCx) has been updated from version 1.0 to version 1.1 in Windows 10, version 1709. For more information about the NetAdapterCx, see [NetAdapterCx](../netcx/index.md). For more information about the changes from NetAdapterCx 1.0 to NetAdapterCx 1.1, see [What's new in NetAdapterCx](../netcx/whats-new-in-netadaptercx.md) 
+For NIC drivers, the NetAdapter class extension (NetAdapterCx) has been updated from version 1.0 to version 1.1 in Windows 10, version 1709. For more information about the changes from NetAdapterCx 1.0 to NetAdapterCx 1.1, see [Introduction to NetAdapterCx 1.1](../netcx/introduction-to-netadaptercx-1-1.md).
 
 ## Feature updates
+
+### Synchronous OID requests
+
+NDIS 6.80 introduces a new feature for OID requests, synchronous OID requests. Synchronous OID calls are low-latency, non-blocking, scalable, and reliable compared to regular OID requests. For more info, see [Synchronous OID Request Interface in NDIS 6.80](synchronous-oid-request-interface-in-ndis-6-80.md).
+
+> [!IMPORTANT]
+> In Windows 10, version 1709, synchronous OID requests are supported only for miniport and protocol drivers.
+
+### Other new networking features
 
 NDIS forms the core foundation for the network driver platform on Windows. For a list of other network driver features that were updated at the same time as NDIS 6.80, see the Windows 10, version 1709 section for Networking on [What's new in driver development](../what-s-new-in-driver-development.md).
 
@@ -25,7 +34,7 @@ NDIS forms the core foundation for the network driver platform on Windows. For a
 
 ### NIC drivers
 
-For more information about implementing a NIC driver with the NetAdapterCx, see [NetAdapterCx](../netcx/index.md).
+For more information about implementing a NIC driver with NetAdapterCx 1.1, see [Introduction to NetAdapterCx 1.1](../netcx/introduction-to-netadaptercx-1-1.md).
 
 ### Miniport, protocol, filter, and intermediate drivers
 
@@ -54,27 +63,27 @@ Add the following compiler settings to the Visual Studio project for your driver
 
 For information on building a driver with the Windows 10, version 1709 release of the WDK, see [Building a Driver](../develop/building-a-driver.md).
 
-## Using NDIS 6.80 driver data structures
+## API and data structure changes
 
 ### NIC drivers
 
-For more information about NetAdapterCx data structures, see [NetAdapterCx](../netcx/index.md).
+For more information about NetAdapterCx API and data structure changes, see [Introduction to NetAdapterCx 1.1](../netcx/introduction-to-netadaptercx-1-1.md).
 
 ### Miniport, protocol, filter, and intermediate drivers
 
-#### New data structures
+#### New APIs and data structures
 
-The following data structures are new in NDIS 6.80.
+The following APIs and data structures are new in NDIS 6.80.
 
-- [NDIS_STATUS_WWAN_MODEM_CONFIG_INFO](TBD)
-- [OID_WWAN_MODEM_CONFIG_INFO](TBD)
-- [NDIS_STATUS_WWAN_PCO_STATUS](TBD)
-- [OID_WWAN_PCO](TBD)
+- [MINIPORT_SYNCHRONOUS_OID_REQUEST](TBD)
+- [NdisFSynchronousOidRequest](TBD)
+- [NdisSynchronousOidRequest](TBD)
 
-#### Updated data structures
+#### Updated APIs and data structures
 
-The following data structures were updated in NDIS 6.80.
+The following APIs and data structures were updated in NDIS 6.80.
 
+- [NDIS_MINIPORT_DRIVER_CHARACTERISTICS](https://msdn.microsoft.com/library/windows/hardware/ff565958)
 - [NDIS_NET_BUFFER_LIST_INFO](https://msdn.microsoft.com/library/windows/hardware/ff566569)
 - [NdisMRegisterScatterGatherDma](https://msdn.microsoft.com/library/windows/hardware/ff563659)
 

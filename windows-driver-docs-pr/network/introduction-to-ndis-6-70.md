@@ -19,7 +19,7 @@ NDIS 6.70 is a minor version update to NDIS 6.60 for miniport, protocol, filter,
 
 ### NetAdapterCx
 
-NDIS 6.70 includes a major new feature for NIC drivers, the Network Adapter WDF Class Extension, a.k.a. [NetAdapterCx](../netcx/index.md). NetAdapterCx is preview only in Windows 10, version 1703. The NetAdapterCx model enables NIC driver developers to harness the full functionality and simplified driver model of WDF, meaning NIC drivers are easier to write.
+Alongside NDIS 6.70, Windows 10, version 1703 includes a major new feature for NIC drivers called the Network Adapter WDF Class Extension, a.k.a. [NetAdapterCx](../netcx/index.md). NetAdapterCx is preview only in Windows 10, version 1703. The NetAdapterCx model enables NIC driver developers to harness the full functionality and simplified driver model of WDF, meaning NIC drivers are easier to write.
 
 ### Other feature updates
 
