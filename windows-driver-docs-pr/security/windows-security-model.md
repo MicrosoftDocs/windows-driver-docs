@@ -3,14 +3,21 @@ title: Windows security model for driver developers
 description: The Windows security model is based primarily on per-object rights, with a small number of system-wide privileges.
 ms.assetid: 3A7ECA7C-1FE6-4ADB-97A9-A61C6FCE9F04
 ms.author: windowsdriverdev
-ms.date: 09/27/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-## <span id="in_this_section"></span>In this section
 
+## <span id="Introduction"></span><span id="introduction"></span><span id="INTRODUCTION"></span>Windows security model for driver developers
+
+The Windows security model is based on securable objects. Each component of the operating system must ensure the security of the objects for which it is responsible. Drivers, therefore, must safeguard the security of their devices and device objects.
+
+This section summarizes how the Windows security model applies to kernel-mode drivers. 
+
+
+## <span id="in_this_section"></span>In this section
 
 <table>
 <colgroup>
@@ -29,22 +36,12 @@ ms.technology: windows-devices
 <td align="left"><p>The Windows security model is based primarily on per-object rights, with a small number of system-wide privileges. Objects that can be secured include, —but are not limited to, —processes, threads, events and other synchronization objects, as well as files, directories, and devices.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Windows security model scenario: creating a file](#creating-a-file)</p></td>
+<td align="left"><p>[Windows security model scenario: Creating a file](#creating-a-file)</p></td>
 <td align="left"><p>The system uses the security constructs described in the Windows security model whenever a process creates a handle to a file or object.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Controlling driver access](controlling-driver-access.md)</p></td>
-<td align="left"><p>This article describes driver steps to take to control driver access.</p></td>
 </tr>
 </tbody>
 </table>
 
-
-## <span id="Introduction"></span><span id="introduction"></span><span id="INTRODUCTION"></span>Introduction
-
-The Windows security model is based on securable objects. Each component of the operating system must ensure the security of the objects for which it is responsible. Drivers, therefore, must safeguard the security of their devices and device objects.
-
-This section summarizes how the Windows security model applies to kernel-mode drivers. For some types of devices, additional device-specific requirements apply. See [Device and Driver Technologies](https://docs.microsoft.com/windows-hardware/drivers/device-and-driver-technologies) for details.
 
 
 
@@ -53,7 +50,7 @@ This section summarizes how the Windows security model applies to kernel-mode dr
 
 The Windows security model is based primarily on per-object rights, with a small number of system-wide privileges. Objects that can be secured include, —but are not limited to, —processes, threads, events and other synchronization objects, as well as files, directories, and devices.
 
-For each type of object, the generic read, write, and execute rights map into detailed object-specific rights. For example, for files and directories, possible rights include the right to read or write the file or directory, the right to read or write extended file attributes, the right to traverse a directory, and the right to write an object’s security descriptor. For more information, including a complete list of rights, see “Security (General)” in the “Security” section of the [MSDN Library](http://msdn.microsoft.com/).
+For each type of object, the generic read, write, and execute rights map into detailed object-specific rights. For example, for files and directories, possible rights include the right to read or write the file or directory, the right to read or write extended file attributes, the right to traverse a directory, and the right to write an object’s security descriptor. 
 
 The security model involves the following concepts:
 
@@ -77,19 +74,18 @@ Every process has an access token. The access token describes the complete secur
 
 By default, the system uses the primary access token for a process whenever a thread of the process interacts with a securable object. However, a thread can impersonate a client account. When a thread impersonates, it has an impersonation token in addition to its own primary token. The impersonation token describes the security context of the user account that the thread is impersonating. Impersonation is especially common in Remote Procedure Call (RPC) handling.
 
-An access token that describes a restricted security context for a thread or process is called a restricted token. The SIDs in a *restricted token* can be set only to deny access, not to allow access, to securable objects. In addition, the token can describe a limited set of system-wide privileges. The user’s SID and identity remain the same, but the user’s access rights are limited while the process is using the restricted token. The **CreateRestrictedToken** function creates a restricted token.
+An access token that describes a restricted security context for a thread or process is called a restricted token. The SIDs in a *restricted token* can be set only to deny access, not to allow access, to securable objects. In addition, the token can describe a limited set of system-wide privileges. The user’s SID and identity remain the same, but the user’s access rights are limited while the process is using the restricted token. The [CreateRestrictedToken](https://msdn.microsoft.com/library/windows/desktop/aa446583.aspx) function creates a restricted token.
 
-Restricted tokens are useful for running untrusted code, such as email attachments. Windows XP uses a restricted token when you right-click an executable file, select **Run As**, and select **Protect my computer and data from unauthorized program activity**.
 
 ### Security descriptors
 
-
 Every named Windows object has a security descriptor; some unnamed objects do, too. The security descriptor describes the owner and group SIDs for the object along with its ACLs.
 
-An object’s security descriptor is usually created by the function that creates the object. When a driver calls the **IoCreateDevice** or **IoCreateDeviceSecure** routine to create a device object, the system applies a security descriptor to the created device object and sets ACLs for the object. For most devices, ACLs are specified in the device Information (INF) file.
+An object’s security descriptor is usually created by the function that creates the object. When a driver calls the [IoCreateDevice](https://msdn.microsoft.com/library/windows/hardware/ff548397.aspx) or [IoCreateDeviceSecure](https://msdn.microsoft.com/library/windows/hardware/ff548407.aspx) routine to create a device object, the system applies a security descriptor to the created device object and sets ACLs for the object. For most devices, ACLs are specified in the device Information (INF) file.
+
+For more information [Security Descriptors](https://docs.microsoft.com/windows-hardware/drivers/kernel/security-descriptors) in the kernel driver documentation.
 
 ### Access Control Lists
-
 
 Access Control Lists (ACLs) enable fine-grained control over access to objects. An ACL is part of the security descriptor for each object.
 
@@ -189,10 +185,11 @@ A privilege is the right for a user to perform a system-related operation on the
 
 Privileges are different from access rights because they apply to system-related tasks and resources rather than objects, and because they are assigned to a user or group by a system administrator, rather than by the operating system.
 
-The access token for each process contains a list of the privileges granted to the process. Privileges must be specifically enabled before use. An administrator enables and audits the use of privileges by using **Administrative Tools** in the Windows Control Panel; privileges can also be enabled programmatically.
+The access token for each process contains a list of the privileges granted to the process. Privileges must be specifically enabled before use. For more information on privilges, see [Privileges](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/privileges) in the kernel driver documentation.
 
  
-## <span id="Creating-A-File"></span><span id="CREATING-A-FILE"></span><span id="creating-a-file"></span>Creating a file
+
+## <span id="Creating-A-File"></span><span id="CREATING-A-FILE"></span><span id="creating-a-file"></span>Windows security model scenario: Creating a file
 
 The system uses the security constructs described in the Windows security model whenever a process creates a handle to a file or object.
 
@@ -214,13 +211,11 @@ The previous diagram shows how the system responds when a user-mode application 
 
 ### <span id="omchecks"></span><span id="OMCHECKS"></span>Security checks in the Object Manager
 
-
 The responsibility for checking access rights belongs to the highest-level component that can perform such checks. If the Object Manager can verify the caller’s access rights, it does so. If not, the Object Manager passes the request to the component responsible for the underlying object type. That component, in turn, verifies access, if it can; if it cannot, it passes the request to a still-lower component, such as a driver.
 
 The Object Manager checks ACLs for simple object types, such as events and mutex locks. For objects that have a namespace, the type owner performs security checks. For example, the I/O Manager is considered the type owner for device objects and file objects. If the Object Manager finds the name of a device object or file object when parsing a name, it hands off the name to the I/O Manager, as in the file creation scenario presented above. The I/O Manager then checks the access rights if it can. If the name specifies an object within a device namespace, the I/O Manager in turn hands off the name to the device (or file system) driver, and that driver is responsible for validating the requested access.
 
 ### <span id="iomanchecks"></span><span id="IOMANCHECKS"></span>Security checks in the I/O Manager
-
 
 When the I/O Manager creates a handle, it checks the object’s rights against the process access token and then stores the rights granted to the user as part of the handle. When later I/O requests arrive, the I/O Manager checks the rights recorded in the handle to ensure that the process has the right to perform the requested I/O operation. For example, if the process later requests a write operation, the I/O Manager checks the rights in the handle to ensure that the caller has write access to the object.
 
@@ -237,9 +232,9 @@ When the I/O Manager creates an object, it converts generic Win32 access modes t
 
  
 
-To create a file, a process must have traversal rights to the parent directories in the target path. For example, to create \\Device\\Floppy0\\Directory\\File.txt, a process must have the right to traverse \\Device, \\Device\\Floppy0, and \\Device\\Floppy0\\Directory. The I/O Manager checks only the traversal rights for these directories.
+To create a file, a process must have traversal rights to the parent directories in the target path. For example, to create \\Device\\CDROM0\\Directory\\File.txt, a process must have the right to traverse \\Device, \\Device\\CDROM0, and \\Device\\CDROM0\\Directory. The I/O Manager checks only the traversal rights for these directories.
 
-The I/O Manager checks traversal rights when it parses the file name. If the file name is a symbolic link, the I/O Manager resolves it to a full path and then checks traversal rights, starting from the root. For example, assume the symbolic link \\DosDevices\\A maps to the Windows NT device name \\Device\\Floppy0. The process must have traversal rights to the \\Device directory.
+The I/O Manager checks traversal rights when it parses the file name. If the file name is a symbolic link, the I/O Manager resolves it to a full path and then checks traversal rights, starting from the root. For example, assume the symbolic link \\DosDevices\\A maps to the Windows NT device name \\Device\\CDROM0. The process must have traversal rights to the \\Device directory.
 
 
 ### <span id="driver"></span><span id="DRIVER"></span>Security checks in the driver
@@ -256,7 +251,20 @@ The operating system kernel treats every driver, in effect, as a file system wit
 -   Do not define IOCTLs that permit FILE\_ANY\_ACCESS unless such access cannot be exploited maliciously.
 -   Use the **IoValidateDeviceIoControlAccess** routine to tighten security on existing IOCTLS that allow FILE\_ANY\_ACCESS.
 
- 
+
+### See Also
+
+For some types of devices, additional device-specific requirements apply. See [Device and Driver Technologies](https://docs.microsoft.com/windows-hardware/drivers/device-and-driver-technologies) for details.
+
+For additional information see these topics.
+
+[Controlling Driver Access](controlling-driver-access.md)
+
+[Securing Device Objects](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/securing-device-objects)
+
+[Driver security checklist](driver-security-checklist.md)
+
+
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[hw_design\hw_design]:%20Windows%20security%20model%20%20RELEASE:%20%286/16/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
