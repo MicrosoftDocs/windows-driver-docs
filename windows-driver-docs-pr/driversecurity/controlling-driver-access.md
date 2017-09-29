@@ -193,7 +193,7 @@ The I/O Manager checks access rights for all IRPs that contain IOCTLs. Rights gr
 
 Some system-defined and many driver-defined IOCTLs are defined with FILE\_ANY\_ACCESS as the required access value. To tighten security when such IOCTLs are sent by user-mode callers, a driver should use the [IoValidateDeviceIoControlAccess routine](https://msdn.microsoft.com/library/windows/hardware/ff550418.aspx) function. This function allows a driver to check access rights. 
 
-Upon receiving an IOCTL, a driver can call [IoValidateDeviceIoControlAccess routine](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550418.aspx), specifying FILE\_READ\_ACCESS, FILE\_WRITE\_ACCESS, or both. In response, the I/O Manager checks the access rights granted to the caller. If the caller does not have the specified rights, the driver can fail the IRP with an appropriate status.
+Upon receiving an IOCTL, a driver can call [IoValidateDeviceIoControlAccess routine](https://msdn.microsoft.com/library/windows/hardware/ff550418.aspx), specifying FILE\_READ\_ACCESS, FILE\_WRITE\_ACCESS, or both. In response, the I/O Manager checks the access rights granted to the caller. If the caller does not have the specified rights, the driver can fail the IRP with an appropriate status.
 
 A driver can also check system-wide privileges. For example, a driver can test the Load/Unload Driver privilege before it forwards an IRP down the device stack. Drivers should check privileges when passing an IRP down the device stack. When the IRP is returning back up the device stack, checking privilege is not effective because the I/O is already complete.
 
@@ -214,10 +214,10 @@ Drivers should also make certain that user-mode applications cannot misuse handl
 ### How to use user-mode handle safely and help protect kernel handles from misuse
 
 -   After receiving any handle, call [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679) immediately to swap the user-mode handle for an object pointer:
-    -   Always specify the object type you expect so you can take advantage of the type-checking provided by [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679).
-    -   For a user-mode handle, specify UserMode for *AccessMode* (assuming the user is expected to have the same access to the file object as your driver).
-    -   Always check the status code returned by [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679), and only proceed if it is STATUS\_SUCCESS.
-    -   When you finish using the object pointer provided by [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679), call [**ObDereferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff557724) to release the pointer and avoid a resource leak.
+-   Always specify the object type you expect so you can take advantage of the type-checking provided by [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679).
+-   For a user-mode handle, specify UserMode for *AccessMode* (assuming the user is expected to have the same access to the file object as your driver).
+-   Always check the status code returned by [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679), and only proceed if it is STATUS\_SUCCESS.
+-   When you finish using the object pointer provided by [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679), call [**ObDereferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff557724) to release the pointer and avoid a resource leak.
 -   Before creating a handle for use in kernel mode, call [**InitializeObjectAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff547804) to initialize an OBJECT\_ATTRIBUTES structure where Attributes has the value OBJ\_KERNEL\_HANDLE set.
 
 The following code fragment shows proper usage of [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679), in this case for a handle to an event.
@@ -240,6 +240,11 @@ if (NT_SUCCESS(status)) {
 }
 ```
  
+For more information about working with handles, refer to these topics.
+
+[Handle Management](https://docs.microsoft.com/windows-hardware/drivers/ifs/handle-management)
+
+[Failure to Validate Object Handles](https://docs.microsoft.com/windows-hardware/drivers/kernel/failure-to-validate-object-handles)
 
  
 ## See Also
@@ -250,6 +255,7 @@ if (NT_SUCCESS(status)) {
 
  
 ---
+
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[hw_design\hw_design]:%20Driver%20security%20responsibility%20%28Windows%20security%20model%29%20%20RELEASE:%20%286/16/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
