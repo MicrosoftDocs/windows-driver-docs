@@ -1,4 +1,4 @@
----
+--
 title: Using a Universal INF File
 description: If you are building a universal or mobile driver package, you must use a universal INF file.
 ms.assetid: 2CBEB814-974D-4E8B-A44A-2CFAA8D4C94E
@@ -22,7 +22,6 @@ Some editions of Windows, such as Windows 10 Mobile, do not support the Plug an
 A universal INF file installs predictably, with the same result each time. The results of the installation do not depend on the runtime behavior of the system. For example, co-installer references are not valid in a universal INF file because code in an additional DLL cannot be executed on an offline system.
 
 As a result, a driver package with a universal INF file can be configured in advance and added to an offline system.
-
 
 You can use the [InfVerif](../devtest/infverif.md) tool to test if your driver's INF file is universal.
 
