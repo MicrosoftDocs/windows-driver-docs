@@ -13,6 +13,10 @@ ms.technology: windows-devices
 
 This article describes steps you can take to help control access to your driver.
 
+Kernel-mode drivers run in the trusted system address space and are, in effect, extensions of the operating system. Kernel-mode drivers must validate all data and addresses that originate with user-mode processes.
+
+Numerous security and reliability issues apply to kernel-mode drivers. The following are a few examples of the areas in which kernel-mode drivers can be vulnerable to security threats:
+
 The drivers for a device are responsible for ensuring that unauthorized users do not have access to the device. Complete the following tasks to help control access:
 
 -   [Create secure device objects](#create-secure-device-objects)
@@ -20,6 +24,8 @@ The drivers for a device are responsible for ensuring that unauthorized users do
 -   [Specify device characteristics and security settings in INF files](#specify-device-characteristics-and-security-settings-in-inf-files)
 -   [Define and handle IOCTLs securely](#define-and-handle-ioctls-securely)
 -   [Secure access to handles](#secure-handles)
+-   [Secure access to the handles](#secure-handles)
+-   [Create secure device installations](#driver-installation)
 
 
 ## <span id="Create-secure-device-objects"></span><span id="create-secure-device-objects"></span><span id="CREATE-SECURE-DEVICE-OBJECTS"></span>Create secure device objects
@@ -247,6 +253,31 @@ For more information about working with handles, refer to these topics.
 [Failure to Validate Object Handles](https://docs.microsoft.com/windows-hardware/drivers/kernel/failure-to-validate-object-handles)
 
  
+
+## <span id="Driver-installation"></span><span id="driver-installation"></span><span id="DRIVER-INSTALLATION"></span>Driver installation
+
+During installation, copy driver files to secure locations and set security descriptors if necessary. The system subdirectories of the Windows directory (%windir%) automatically inherit the security settings of their parent directory, which protects system files. Vendors must not override these defaults. Therefore, if your installation procedure copies files only to %windir%\\system32\\drivers and other subdirectories of the Windows directory, the appropriate security descriptors are in place by default; you do not need to specify a security descriptor in the INF **CopyFiles** directive.
+
+However, if you install files in a different location, you should set a security descriptor that has access control entries (ACEs) that allow access by the local system and by built-in administrators but deny write access to nonprivileged users. The local system and built-in administrators require write access to install and upgrade devices, drivers, and system service packs. For example:
+
+(A;;GA;;;SY) grants all access to the local system.
+
+(A;;GA;;;BA) grants all access to built-in administrators.
+
+For most drivers, the INF file should specify device characteristics and security settings for device objects. The values in the INF file override the defaults for the security descriptor for the device class.
+
+For WDM drivers, specifying device object security settings in the INF file is the preferred method. Before starting a WDM device stack, the PnP manager propagates the security settings that are specified in the INF file to the security descriptors for the drivers in the stack.
+
+For more information, see [Creating Secure Device Installations](https://msdn.microsoft.com/library/windows/hardware/ff540212) and [Device and Driver Installation](https://msdn.microsoft.com/library/windows/hardware/dn653558).
+
+### Use Secure Default Settings Durring Installation
+
+Most users accept default settings during product installation. Therefore, a default setting that can be exploited by a security attack is both highly reproducible and can affect many users. Whenever possible, make defaults restrictive and allow system administrators to change them if necessary. Do not define nonrestrictive defaults and assume that users or administrators will study your documentation to learn how to tighten them.
+
+ 
+
+
+
 ## See Also
 
 [Kernel-Mode Drivers: Fixing Common Driver Reliability Issues (White Paper)](http://download.microsoft.com/download/5/7/7/577a5684-8a83-43ae-9272-ff260a9c20e2/drvqa.doc)
