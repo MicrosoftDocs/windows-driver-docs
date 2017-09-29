@@ -19,6 +19,7 @@
 ## [Getting started with Windows drivers](gettingstarted/index.md)
 ## [GNSS drivers](gnss/index.md)
 ## [GPIO drivers](gpio/index.md)
+## [Hardware notifications](gpiobtn/index.md)
 ## [HID Drivers](hid/index.md)
 ## [IEEE Drivers](ieee/index.md)
 ## [Imaging device drivers](image/index.md)

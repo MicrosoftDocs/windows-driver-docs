@@ -46,7 +46,7 @@ The primary objects added to *Session* objects can be found in the *TTD* namespa
 | Method | Description |
 | --- | --- |
 | Data.Heap() | A collection of [heap objects](time-travel-debugging-heap-objects.md) that were allocated during the trace. Note that this is a function that does computation, so it takes a while to run.|
-| Calls() | A collection of [calls objects](time-travel-debugging-calls-objects.md) that we called during the trace. Note that this is a function that does computation, so it takes a while to run.|
+| Calls() | Returns a collection of [calls objects](time-travel-debugging-calls-objects.md) that match the input string. The input string can contain wildcards. Note that this is a function that does computation, so it takes a while to run.  |
 
 ## Examples
 
