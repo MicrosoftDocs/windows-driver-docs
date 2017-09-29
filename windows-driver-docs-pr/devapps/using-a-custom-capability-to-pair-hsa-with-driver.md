@@ -82,6 +82,10 @@ Then copy the SCCD file to the package root of the appx package. In Visual Studi
 
 ![Adding an SCCD file into the appx package](images/addSCCDToAppx.png)
 
+Mark the SCCD as build content by right clicking on the SCCD file and changing "Content" to True. In case of C# project this is represented by property "Build Action" = Content and for JavaScript project "Package Action" = Content. 
+
+![Marking SCCD as content](images/markSCCDAsContent.png)
+
 Finally, right click the project, select **Store**, then **Create App Packages**.
 
 **Note**: There is no support for UWP apps with custom capabilities on mobile platforms.

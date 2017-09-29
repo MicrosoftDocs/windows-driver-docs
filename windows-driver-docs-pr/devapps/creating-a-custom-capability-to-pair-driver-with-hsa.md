@@ -153,7 +153,7 @@ The following diagram summarizes the sequence described above:
 
 ### SCCD XML Schema
 
-The following is the formal XML XSD schema for an SCCD file.  Use this schema to validate your SCCD before submitting it for review.
+The following is the formal XML XSD schema for an SCCD file.  Use this schema to validate your SCCD before submitting it for review. See [Schema Cache](https://docs.microsoft.com/en-us/visualstudio/xml-tools/schema-cache) and [XML Document validation](https://docs.microsoft.com/en-us/visualstudio/xml-tools/xml-document-validation) to import XML XSD and get IntelliSense validation.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
