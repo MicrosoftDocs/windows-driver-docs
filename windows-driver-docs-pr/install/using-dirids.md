@@ -103,9 +103,10 @@ The following table shows several commonly used *dirids*, and the directories th
 <p>For Windows 8.1 and later versions of Windows, specifies the path to the Driver Store directory where the driver package was imported.
 
 Please note that:
-1) You may not use [DelFiles](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-delfiles-directive) on a file whose DestinationDirs includes dirid 13
-2) The optional subdir in the SourceDiskFiles section for a file must match the subdir in the DestinationDirs section for the entry that applies to this file
-3) You cannot use a [CopyFiles](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-copyfiles-directive) directive to rename a file whose DestinationDirs includes dirid 13.
+
+1.  You may not use [DelFiles](inf-delfiles-directive.md) on a file for which **DestinationDirs** includes dirid 13.
+2.  The optional subdirectory in the **SourceDiskFiles** section for a file must match the subdirectory in the **DestinationDirs** section for the entry that applies to this file.
+3.  You cannot use a [CopyFiles](inf-copyfiles-directive.md) directive to rename a file for which **DestinationDirs** includes dirid 13.
 </p></td>
 </tr>
 <tr class="even">
