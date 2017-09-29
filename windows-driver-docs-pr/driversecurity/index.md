@@ -38,16 +38,28 @@ This section contains information on enhancing driver security.
 <td align="left"><p>Driver writers and architects should make threat modeling an integral part of the design process for any driver. This article provides guidelines for creating threat models for drivers.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Deprecate unsafe functions](deprecate-unsafe-functions.md)</p></td>
-<td align="left"><p>Create a process to look for and remove code vulnerabilities from your driver code. Because driver code is highly specialized, and threats continue to evolve, a single set of guidelines cannot apply uniformly to all drivers. The topics are general points to consider when creating drivers.</p></td>
-</tr>
-<tr class="odd">
 <td align="left"><p>[Windows security model for driver developers](windows-security-model.md)</p></td>
 <td align="left"><p>This topic provides information about writing secure kernel-mode drivers for Windows. It describes how the Windows security model applies to drivers and explains what driver writers must do to improve the security of their devices.</p></td>
 </tr>
 </tbody>
 </table>
 
+## <span id="Kernel-mode_drivers"></span><span id="kernel-mode_drivers"></span><span id="KERNEL-MODE_DRIVERS"></span>Kernel-mode drivers
+
+
+Kernel-mode drivers run in the trusted system address space and are, in effect, extensions of the operating system. Kernel-mode drivers must validate all data and addresses that originate with user-mode processes.
+
+Numerous security and reliability issues apply to kernel-mode drivers. The following are a few examples of the areas in which kernel-mode drivers can be vulnerable to security threats:
+
+-   Handling unexpected IOCTLs
+-   Validating buffer lengths
+-   Handling IOCTLs that permit FILE\_ANY\_ACCESS
+-   Securing device objects
+-   Securing Registry keys
+-   Handling user-mode buffers
+-   Using handles that are passed from user mode to kernel mode
+
+For information about specific points at which kernel-mode drivers might be vulnerable, see the resources listed at the end of this topic and the white paper titled *Kernel-Mode Drivers: Fixing Common Driver Reliability Issues* available for download at <http://www.microsoft.com/whdc/driver/security/drvqa.mspx>. All writers of kernel-mode drivers should become familiar with this material.
  
 
  

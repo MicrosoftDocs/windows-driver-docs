@@ -19,9 +19,10 @@ The drivers for a device are responsible for ensuring that unauthorized users do
 -   [Secure the device namespace](#secure-the-device-namespace)
 -   [Specify device characteristics and security settings in INF files](#specify-device-characteristics-and-security-settings-in-inf-files)
 -   [Define and handle IOCTLs securely](#define-and-handle-ioctls-securely)
+-   [Secure access to handles](#secure-handles)
+
 
 ## <span id="Create-secure-device-objects"></span><span id="create-secure-device-objects"></span><span id="CREATE-SECURE-DEVICE-OBJECTS"></span>Create secure device objects
-
 
 Every device object has a security descriptor, which contains an ACL that controls access to the device. In general, the security descriptor is created at the same time as the device object, and the ACL is specified in the INF file for the device, but the details vary depending on the position of the driver in the device stack and the type of device it controls. The following sections describe the specific requirements for:
 
@@ -202,11 +203,51 @@ Although FILE\_ANY\_ACCESS makes life easy for callers, it's risky for drivers b
 
 Don't specify FILE\_ANY\_ACCESS, most requests need only FILE\_READ\_ACCESS or FILE\_WRITE\_ACCESS (or both—they can be OR'd together).
 
+## <span id="Secure-handles"></span><span id="secure-handles"></span><span id="SECURE-HANDLES"></span>Secure access to handles
+
+Handles that are passed to a driver by a caller do not pass through the I/O Manager, so the I/O Manager cannot perform any validation checks on the handles. Never assume a handle is valid; always make sure the handle has the correct object type, appropriate access for the required tasks, the correct access mode, and that the access mode is compatible with the access requested.
+
+Drivers should be careful when using handles, especially those received from user-mode applications. First, such handles are specific to a process context, so they're only valid in the process that opened the handle—when used from a different process context or from a worker thread, the handle could reference a different object or it could simply be invalid. Second, an attacker might close and reopen the handle to change what it refers to while the driver is using it. Third, an attacker might pass in such a handle to trick a driver into performing operations that are illegal for the application, such as calling **Zw*Xxx*** functions. Access checks are skipped for kernel-mode callers of these functions, so an attacker can use this mechanism to bypass validation.
+
+Drivers should also make certain that user-mode applications cannot misuse handles created by the driver. Setting the OBJ\_KERNEL\_HANDLE attribute for a handle makes it a kernel handle, which can be used in any process context but is only accessible from kernel mode (which is especially important for handles that are passed to the ZwXxx routines). A user-mode process cannot access, close, or replace a kernel handle.
+
+### How to use user-mode handle safely and help protect kernel handles from misuse
+
+-   After receiving any handle, call [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679) immediately to swap the user-mode handle for an object pointer:
+    -   Always specify the object type you expect so you can take advantage of the type-checking provided by [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679).
+    -   For a user-mode handle, specify UserMode for *AccessMode* (assuming the user is expected to have the same access to the file object as your driver).
+    -   Always check the status code returned by [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679), and only proceed if it is STATUS\_SUCCESS.
+    -   When you finish using the object pointer provided by [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679), call [**ObDereferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff557724) to release the pointer and avoid a resource leak.
+-   Before creating a handle for use in kernel mode, call [**InitializeObjectAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff547804) to initialize an OBJECT\_ATTRIBUTES structure where Attributes has the value OBJ\_KERNEL\_HANDLE set.
+
+The following code fragment shows proper usage of [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679), in this case for a handle to an event.
+
+```ManagedCPlusPlus
+NTSTATUS status;
+PKEVENT userEvent;
+HANDLE handle;
+handle = RetrieveHandleFromIrpBuffer(…);
+status = ObReferenceObjectByHandle(handle,
+    EVENT_MODIFY_STATE,
+    *ExEventObjectType,
+    UserMode,
+    (PVOID*) &amp;userEvent,
+    NULL);
+if (NT_SUCCESS(status)) {
+    // do something interesting here
+    KeSetEvent(userEvent, IO_NO_INCREMENT, FALSE);
+    ObDereferenceObject(userEvent);
+}
+```
+ 
 
  
 ## See Also
 
-[Kernel-Mode Drivers: Fixing Common Driver Reliability Issues](http://download.microsoft.com/download/5/7/7/577a5684-8a83-43ae-9272-ff260a9c20e2/drvqa.doc)
+[Kernel-Mode Drivers: Fixing Common Driver Reliability Issues (White Paper)](http://download.microsoft.com/download/5/7/7/577a5684-8a83-43ae-9272-ff260a9c20e2/drvqa.doc)
+
+[User-Mode Interactions: Guidelines for Kernel-Mode Drivers (White Paper)](http://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/KM-UMGuide.doc)
+
  
 ---
 
