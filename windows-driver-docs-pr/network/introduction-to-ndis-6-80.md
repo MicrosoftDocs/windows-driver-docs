@@ -21,9 +21,9 @@ For NIC drivers, the NetAdapter class extension (NetAdapterCx) has been updated 
 
 ### Synchronous OID requests
 
-NDIS 6.80 introduces a new feature for OID requests, synchronous OID requests. Synchronous OID calls are low-latency, non-blocking, scalable, and reliable compared to regular OID requests. For more info, see [Synchronous OID Request Interface in NDIS 6.80](synchronous-oid-request-interface-in-ndis-6-80.md).
+NDIS 6.80 introduces a new feature for OID calls, synchronous OID requests. Synchronous OID calls are low-latency, non-blocking, scalable, and reliable compared to regular OID requests. For more info, see [Synchronous OID Request Interface in NDIS 6.80](synchronous-oid-request-interface-in-ndis-6-80.md).
 
-> [!IMPORTANT]
+> [!WARNING]
 > In Windows 10, version 1709, synchronous OID requests are supported only for miniport and protocol drivers.
 
 ### Other new networking features
@@ -76,6 +76,8 @@ For more information about NetAdapterCx API and data structure changes, see [Int
 The following APIs and data structures are new in NDIS 6.80.
 
 - [MINIPORT_SYNCHRONOUS_OID_REQUEST](TBD)
+- [FILTER_SYNCHRONOUS_OID_REQUEST](TBD)
+- [FILTER_SYNCHRONOUS_OID_REQUEST_COMPLETE](TBD)
 - [NdisFSynchronousOidRequest](TBD)
 - [NdisSynchronousOidRequest](TBD)
 
@@ -84,6 +86,7 @@ The following APIs and data structures are new in NDIS 6.80.
 The following APIs and data structures were updated in NDIS 6.80.
 
 - [NDIS_MINIPORT_DRIVER_CHARACTERISTICS](https://msdn.microsoft.com/library/windows/hardware/ff565958)
+- [NDIS_FILTER_DRIVER_CHARACTERISTICS](https://msdn.microsoft.com/library/windows/hardware/ff565515)
 - [NDIS_NET_BUFFER_LIST_INFO](https://msdn.microsoft.com/library/windows/hardware/ff566569)
 - [NdisMRegisterScatterGatherDma](https://msdn.microsoft.com/library/windows/hardware/ff563659)
 
