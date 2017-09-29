@@ -62,7 +62,7 @@ Each *file-list-section* can have an optional, associated *file-list-section***.
 
 
 <a href="" id="destination-file-name"></a>*destination-file-name*  
-Specifies the name of the destination file. If no *source-file-name* is given, this specification is also the name of the source file.
+Specifies the name of the destination file. If no *source-file-name* is given, this specification is also the name of the source file. You may use directory identifiers to specify destination files. For more details, refer to [**Using Dirids**](using-dirids.md).
 
 <a href="" id="source-file-name"></a>*source-file-name*  
 Specifies the name of the source file. If the source and destination file names for the file copy operation are the same, *source-file-name* can be omitted.
@@ -216,6 +216,8 @@ For additional examples of how to use the INF **CopyFiles** directive, see the I
 [**ClassInstall32**](inf-classinstall32-section.md)
 
 [***DDInstall***](inf-ddinstall-section.md)
+
+[**Using Dirids**](using-dirids.md)
 
 [***DDInstall*.CoInstallers**](inf-ddinstall-coinstallers-section.md)
 
