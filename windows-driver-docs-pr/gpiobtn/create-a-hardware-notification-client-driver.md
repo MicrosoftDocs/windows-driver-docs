@@ -60,6 +60,7 @@ This section provides general guidance on the development of a hardware notifica
 
 ## <span id="related_topics"></span>Related topics
 [Hardware notifications](hardware-notifications-support.md)
+
 [Hardware notifications reference](https://msdn.microsoft.com/en-us/library/windows/hardware/dn789336)
 
 --------------------
