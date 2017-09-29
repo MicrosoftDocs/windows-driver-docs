@@ -40,6 +40,10 @@ This section contains information on enhancing driver security.
 <tr class="even">
 <td align="left"><p>[Windows security model for driver developers](windows-security-model.md)</p></td>
 <td align="left"><p>This topic provides information about writing secure kernel-mode drivers for Windows. It describes how the Windows security model applies to drivers and explains what driver writers must do to improve the security of their devices.</p></td>
+<tr class="odd">
+<td align="left"><p>[Controlling driver access](controlling-driver-access.md)</p></td>
+<td align="left"><p>This topic describes steps you can take to help control access to your driver. Device drivers are responsible for ensuring that unauthorized users do not have access to the device. Complete the described tasks to help control access to your driver.</p></td>
+</tr>
 </tr>
 </tbody>
 </table>

@@ -14,39 +14,10 @@ ms.technology: windows-devices
 
 The Windows security model is based on securable objects. Each component of the operating system must ensure the security of the objects for which it is responsible. Drivers, therefore, must safeguard the security of their devices and device objects.
 
-This section summarizes how the Windows security model applies to kernel-mode drivers. 
-
-
-## <span id="in_this_section"></span>In this section
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Topic</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>[Windows security model](windows-security-model.md)</p></td>
-<td align="left"><p>The Windows security model is based primarily on per-object rights, with a small number of system-wide privileges. Objects that can be secured include, —but are not limited to, —processes, threads, events and other synchronization objects, as well as files, directories, and devices.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Windows security model scenario: Creating a file](#creating-a-file)</p></td>
-<td align="left"><p>The system uses the security constructs described in the Windows security model whenever a process creates a handle to a file or object.</p></td>
-</tr>
-</tbody>
-</table>
-
-
+This topic summarizes how the Windows security model applies to kernel-mode drivers. 
 
 
 ## Windows security model
-
 
 The Windows security model is based primarily on per-object rights, with a small number of system-wide privileges. Objects that can be secured include, —but are not limited to, —processes, threads, events and other synchronization objects, as well as files, directories, and devices.
 

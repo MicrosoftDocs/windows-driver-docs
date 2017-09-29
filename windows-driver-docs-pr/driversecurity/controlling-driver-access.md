@@ -13,11 +13,7 @@ ms.technology: windows-devices
 
 This article describes steps you can take to help control access to your driver.
 
-Kernel-mode drivers run in the trusted system address space and are, in effect, extensions of the operating system. Kernel-mode drivers must validate all data and addresses that originate with user-mode processes.
-
-Numerous security and reliability issues apply to kernel-mode drivers. The following are a few examples of the areas in which kernel-mode drivers can be vulnerable to security threats:
-
-The drivers for a device are responsible for ensuring that unauthorized users do not have access to the device. Complete the following tasks to help control access:
+Device drivers are responsible for ensuring that unauthorized users do not have access to the device. Complete the following tasks to help control access:
 
 -   [Create secure device objects](#create-secure-device-objects)
 -   [Secure the device namespace](#secure-the-device-namespace)
@@ -25,7 +21,7 @@ The drivers for a device are responsible for ensuring that unauthorized users do
 -   [Define and handle IOCTLs securely](#define-and-handle-ioctls-securely)
 -   [Secure access to handles](#secure-handles)
 -   [Secure access to the handles](#secure-handles)
--   [Create secure device installations](#driver-installation)
+-   [Secure driver installations](#driver-installation)
 
 
 ## <span id="Create-secure-device-objects"></span><span id="create-secure-device-objects"></span><span id="CREATE-SECURE-DEVICE-OBJECTS"></span>Create secure device objects
@@ -110,9 +106,7 @@ A client usually opens a driver's named device objects ("\\Device\\MyDevice") in
 
 Your driver is always responsible for managing its namespace, and using FILE\_DEVICE\_SECURE\_OPEN makes that easier by having the I/O Manager perform security checks for your driver. Setting FILE\_DEVICE\_SECURE\_OPEN closes potential security holes because the security descriptor for the device is applied to all open attempts, including those with trailing names, no matter how deep into the namespace they go. (To be absolutely sure of preventing a caller from opening files, make sure that **IrpSp-&gt;FileObject-&gt;FileName.Length** is 0 in every create IRP your driver receives).
 
-### What should you do?
-
-Almost all drivers that create device objects should set FILE\_DEVICE\_SECURE\_OPEN when the device object is created. The only drivers that shouldn't are those that implement their own security checking, such as file systems.
+Almost all drivers that create device objects should set FILE\_DEVICE\_SECURE\_OPEN when the device object is created. The only drivers that shouldn't are those that implement their own security checking, such as file systems. Your driver code should do the following.
 
 -   Set FILE\_DEVICE\_SECURE\_OPEN when calling [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397) or [**IoCreateDeviceSecure**](https://msdn.microsoft.com/library/windows/hardware/ff548407) to create a device object.
 -   For Plug and Play drivers use the INF file to assign FILE\_DEVICE\_SECURE\_OPEN to the DeviceCharacteristics value name in the registry.
@@ -254,7 +248,7 @@ For more information about working with handles, refer to these topics.
 
  
 
-## <span id="Driver-installation"></span><span id="driver-installation"></span><span id="DRIVER-INSTALLATION"></span>Driver installation
+## <span id="Driver-installation"></span><span id="driver-installation"></span><span id="DRIVER-INSTALLATION"></span>Secure driver installations
 
 During installation, copy driver files to secure locations and set security descriptors if necessary. The system subdirectories of the Windows directory (%windir%) automatically inherit the security settings of their parent directory, which protects system files. Vendors must not override these defaults. Therefore, if your installation procedure copies files only to %windir%\\system32\\drivers and other subdirectories of the Windows directory, the appropriate security descriptors are in place by default; you do not need to specify a security descriptor in the INF **CopyFiles** directive.
 
@@ -277,14 +271,15 @@ Most users accept default settings during product installation. Therefore, a def
  
 
 
-
 ## See Also
 
-[Kernel-Mode Drivers: Fixing Common Driver Reliability Issues (White Paper)](http://download.microsoft.com/download/5/7/7/577a5684-8a83-43ae-9272-ff260a9c20e2/drvqa.doc)
+[Driver security checklist](driver-security-checklist.md)
 
 [User-Mode Interactions: Guidelines for Kernel-Mode Drivers (White Paper)](http://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/KM-UMGuide.doc)
 
+[Kernel-Mode Drivers: Fixing Common Driver Reliability Issues (White Paper)](http://download.microsoft.com/download/5/7/7/577a5684-8a83-43ae-9272-ff260a9c20e2/drvqa.doc)
  
+
 ---
 
 

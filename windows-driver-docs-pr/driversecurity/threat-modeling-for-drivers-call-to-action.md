@@ -11,11 +11,6 @@ ms.technology: windows-devices
 
 # Call to action and resources (threat modeling for drivers)
 
-
-**Last updated:**
-
--   January 27, 2017
-
 This article contains call to action recommendations and resources for threat modeling for drivers.
 
 ## <span id="Call_to_action"></span><span id="call_to_action"></span><span id="CALL_TO_ACTION"></span>Call to action

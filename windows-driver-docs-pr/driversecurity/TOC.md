@@ -5,6 +5,6 @@
 ### [Points to consider regarding threat modeling for drivers](threat-modeling-for-drivers-points-to-consider.md)
 ### [Call to action and resources (threat modeling for drivers)](threat-modeling-for-drivers-call-to-action.md)
 ## [Windows security model for driver developers](windows-security-model.md)
-## [Controlling Driver Access](controlling-driver-access.md)
+## [Controlling driver access](controlling-driver-access.md)
 
 
