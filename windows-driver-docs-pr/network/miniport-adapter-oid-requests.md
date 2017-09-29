@@ -22,7 +22,9 @@ ms.technology: windows-devices
 
 NDIS defines object identifier (OID) values to identify miniport adapter parameters, which include operating parameters such as device characteristics, configurable settings and statistics. For more information about OIDs, see [NDIS OIDs](https://msdn.microsoft.com/library/windows/hardware/ff566707).
 
-NDIS also provides a [direct OID request interface for NDIS 6.1](direct-oid-request-interface-in-ndis-6-1.md) and later miniport drivers. The *direct OID request path* supports OID requests that are queried or set frequently. The direct OID request interface is optional for NDIS drivers.
+For NDIS 6.1 and later miniport drivers, NDIS provides a [Direct OID Request Interface](direct-oid-request-interface-in-ndis-6-1.md). The *Direct OID request path* supports OID requests that are queried or set frequently. The Direct OID Request Interface is optional for NDIS drivers.
+
+For NDIS 6.80 and later miniport drivers, NDIS provides a [Synchronous OID Request Interface](synchronous-oid-request-interface-in-ndis-6-80.md). The *Synchronous OID request path* supports OIDs that require synchronization or OIDs that should not be queued by filter drivers, such as [RSSv2](TBD) OIDs. The Synchronous OID Request Interface is optional for NDIS drivers.
 
 The following topics provide more information about miniport driver OID requests:
 
@@ -32,11 +34,4 @@ The following topics provide more information about miniport driver OID requests
 
 [Miniport Adapter Direct OID Requests](miniport-adapter-direct-oid-requests.md)
 
- 
-
- 
-
-
-
-
-
+[Miniport Adapter Synchronous OID Requests](miniport-adapter-synchronous-oid-requests.md)

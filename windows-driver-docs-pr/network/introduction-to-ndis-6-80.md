@@ -21,7 +21,7 @@ For NIC drivers, the NetAdapter class extension (NetAdapterCx) has been updated 
 
 ### Synchronous OID requests
 
-NDIS 6.80 introduces a new feature for OID calls, synchronous OID requests. Synchronous OID calls are low-latency, non-blocking, scalable, and reliable compared to regular OID requests. For more info, see [Synchronous OID Request Interface in NDIS 6.80](synchronous-oid-request-interface-in-ndis-6-80.md).
+NDIS 6.80 introduces a new feature for OIDs, Synchronous OID requests. Synchronous OID calls are low-latency, non-blocking, scalable, and reliable compared to regular OID requests. For more info, see [Synchronous OID Request Interface in NDIS 6.80](synchronous-oid-request-interface-in-ndis-6-80.md).
 
 > [!WARNING]
 > In Windows 10, version 1709, synchronous OID requests are supported only for miniport and protocol drivers.
