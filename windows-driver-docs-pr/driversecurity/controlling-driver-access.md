@@ -20,7 +20,6 @@ Device drivers are responsible for ensuring that unauthorized users do not have 
 -   [Specify device characteristics and security settings in INF files](#specify-device-characteristics-and-security-settings-in-inf-files)
 -   [Define and handle IOCTLs securely](#define-and-handle-ioctls-securely)
 -   [Secure access to handles](#secure-handles)
--   [Secure access to the handles](#secure-handles)
 -   [Secure driver installations](#driver-installation)
 
 
@@ -42,7 +41,7 @@ If the device cannot be used in raw mode, the driver can call either the **IoCre
 
 ### <span id="Plug_and_Play_and_WDM_drivers"></span><span id="plug_and_play_and_wdm_drivers"></span><span id="PLUG_AND_PLAY_AND_WDM_DRIVERS"></span>Plug and Play and WDM drivers
 
-Plug and Play (PnP) and WDM drivers (except for bus drivers, as described in “[Bus drivers](#bus)”) call the **IoCreateDevice** routine to create an unnamed device object. The PnP Manager applies a default security descriptor to each such unnamed device object.
+Plug and Play (PnP) and WDM drivers (except for bus drivers, as described above) call the **IoCreateDevice** routine to create an unnamed device object. The PnP Manager applies a default security descriptor to each such unnamed device object.
 
 The INF file for the device should specify the device-specific ACL. The PnP Manager ensures that the ACL is applied to all device objects in the device stack, thereby securing the entire stack before allowing other processes any access to the device.
 
@@ -74,7 +73,7 @@ The I/O Manager is considered the type owner for device objects; thus, the I/O M
 
 The driver is considered the type owner for objects in its namespace. The namespace includes the top-level directory for the device (\\Device\\DeviceName\) and any objects subordinate to this directory (\\Device\\DeviceName\\File).
 
-### <span id="Open_devices_securely"></span><span id="open_devices_securely"></span><span id="OPEN_DEVICES_SECURELY"></span>Open devices securely
+### Open devices securely
 
 A user opens a device by specifying the device name. For example:
 
@@ -98,7 +97,8 @@ if ( IrpSp->FileObject->RelatedFileObject != NULL)
 
 A non-NULL value in the **RelatedFileObject** field indicates that another handle is already open. The driver must fail the request if this value is not NULL.
 
-## Control Device Namespace Access
+
+### Control device namespace access
 
 The I/O Manager can protect your device's namespace from unprivileged access if you set the FILE\_DEVICE\_SECURE\_OPEN device characteristic. Setting the FILE\_DEVICE\_SECURE\_OPEN device characteristic directs the I/O Manager to apply the security descriptor of the device object to all open requests, including file-open requests into the device's namespace. Essentially, the I/O Manager performs access checks and fails requests that don't have the privileges you established for the device object. 
 
@@ -116,12 +116,12 @@ Almost all drivers that create device objects should set FILE\_DEVICE\_SECURE\_O
 For more information, see [Controlling Device Namespace Access](https://msdn.microsoft.com/library/windows/hardware/ff542068).
 
 
-### <span id="Open_files_securely"></span><span id="open_files_securely"></span><span id="OPEN_FILES_SECURELY"></span>Open files securely
+### Open files securely
 
 Open requests in the following forms specify files or other objects in the device namespace:
 
 ``` 
-\Device\Floppy0\Readme.txt
+\Device\CdRom0\Readme.txt
 \Device\Mup\Server\Share\File.txt
 \Device\Serial0\
 ```
@@ -197,7 +197,7 @@ Upon receiving an IOCTL, a driver can call [IoValidateDeviceIoControlAccess rout
 
 A driver can also check system-wide privileges. For example, a driver can test the Load/Unload Driver privilege before it forwards an IRP down the device stack. Drivers should check privileges when passing an IRP down the device stack. When the IRP is returning back up the device stack, checking privilege is not effective because the I/O is already complete.
 
-FILE\_ANY\_ACCESS authorizes the I/O Manager to send an IRP for any caller that has a handle to the device, creating a possible path for malicious users to compromise the system. The the alternative is to use the *RequiredAccess* bits in an IOCTL definition indicate the type of access that a caller must request when opening the file object that represents the device. The system-defined constant FILE\_ANY\_ACCESS, commonly used for driver IOCTLs and FSCTLs, authorizes the I/O Manager to send an IRP for any caller that has a handle to the device (that is, a handle to the file object that represents the target device object). FILE\_ANY\_ACCESS essentially allows unrestricted access to the target device.
+FILE\_ANY\_ACCESS authorizes the I/O Manager to send an IRP for any caller that has a handle to the device, creating a possible path for malicious users to compromise the system. The alternative is to use the *RequiredAccess* bits in an IOCTL definition indicate the type of access that a caller must request when opening the file object that represents the device. The system-defined constant FILE\_ANY\_ACCESS, commonly used for driver IOCTLs and FSCTLs, authorizes the I/O Manager to send an IRP for any caller that has a handle to the device (that is, a handle to the file object that represents the target device object). FILE\_ANY\_ACCESS essentially allows unrestricted access to the target device.
 
 Although FILE\_ANY\_ACCESS makes life easy for callers, it's risky for drivers because it can create a possible path for malicious users to compromise the system. For example, an IOCTL might put the device in a particular state that should only be in effect for legitimate reads and writes to the device. If the IOCTL's RequiredAccess is set to FILE\_ANY\_ACCESS, any caller could issue the IOCTL.
 
@@ -264,7 +264,7 @@ For WDM drivers, specifying device object security settings in the INF file is t
 
 For more information, see [Creating Secure Device Installations](https://msdn.microsoft.com/library/windows/hardware/ff540212) and [Device and Driver Installation](https://msdn.microsoft.com/library/windows/hardware/dn653558).
 
-### Use Secure Default Settings Durring Installation
+### Use Secure Default Settings During Installation
 
 Most users accept default settings during product installation. Therefore, a default setting that can be exploited by a security attack is both highly reproducible and can affect many users. Whenever possible, make defaults restrictive and allow system administrators to change them if necessary. Do not define nonrestrictive defaults and assume that users or administrators will study your documentation to learn how to tighten them.
 

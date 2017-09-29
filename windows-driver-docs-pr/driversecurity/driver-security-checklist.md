@@ -409,6 +409,8 @@ For more information, see the following articles:
 
 [Controlling Device Namespace Access](https://msdn.microsoft.com/library/windows/hardware/ff542068)
 
+[Controlling driver access](controlling-driver-access.md)
+
 "Names, Security Descriptors and Device Classes " on page 6 of the *January February 2017 The NT Insider Newsletter* published by [OSR](http://www.osr.com).
 
 **Security Identifiers (SIDs) risk hierarchy** 
@@ -442,7 +444,7 @@ To tighten security when such IOCTLs are sent by user-mode callers, the driver c
 [Defining I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/defining-i-o-control-codes)
 
 
-**Additional general Windows security model information**
+**General Windows security model information**
 
 [Windows security model for driver developers](windows-security-model.md)
 

@@ -205,7 +205,7 @@ When the I/O Manager creates an object, it converts generic Win32 access modes t
 
 To create a file, a process must have traversal rights to the parent directories in the target path. For example, to create \\Device\\CDROM0\\Directory\\File.txt, a process must have the right to traverse \\Device, \\Device\\CDROM0, and \\Device\\CDROM0\\Directory. The I/O Manager checks only the traversal rights for these directories.
 
-The I/O Manager checks traversal rights when it parses the file name. If the file name is a symbolic link, the I/O Manager resolves it to a full path and then checks traversal rights, starting from the root. For example, assume the symbolic link \\DosDevices\\A maps to the Windows NT device name \\Device\\CDROM0. The process must have traversal rights to the \\Device directory.
+The I/O Manager checks traversal rights when it parses the file name. If the file name is a symbolic link, the I/O Manager resolves it to a full path and then checks traversal rights, starting from the root. For example, assume the symbolic link \\DosDevices\\D maps to the Windows NT device name \\Device\\CDROM0. The process must have traversal rights to the \\Device directory.
 
 
 ### <span id="driver"></span><span id="DRIVER"></span>Security checks in the driver
