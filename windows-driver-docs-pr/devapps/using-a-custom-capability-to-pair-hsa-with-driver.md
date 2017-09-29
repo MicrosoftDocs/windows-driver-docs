@@ -86,7 +86,7 @@ Mark the SCCD as build content by right clicking on the SCCD file and changing *
 
 ![Marking SCCD as content](images/markSCCDAsContent.png)
 
-Finally, right click the project, select **Store**, then **Create App Packages**.
+Finally, right-click the project, select **Store**, then **Create App Packages**.
 
 **Note**: There is no support for UWP apps with custom capabilities on mobile platforms.
 
