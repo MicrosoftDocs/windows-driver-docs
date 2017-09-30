@@ -23,7 +23,7 @@ This enforces the correct state and ensures a refresh to the user interface laye
 
 *Figure 1 Convertible Implementation Options* shows the options for implementing GPIO indicators on a convertible system.
 
-![convertible implementation options](../images/implementationconvertibles.jpg)
+![convertible implementation options](images/implementationconvertibles.jpg)
 
 **Figure 1 Convertible Implementation Options**
 
@@ -32,7 +32,7 @@ This enforces the correct state and ensures a refresh to the user interface laye
 
 *Figure 2 Laptop Implementation Options* shows the options for implementing GPIO indicators on a laptop system.
 
-![laptop implementation options](../images/implementationlaptops.jpg)
+![laptop implementation options](images/implementationlaptops.jpg)
 
 **Figure 2 Laptop Implementation Options**
 

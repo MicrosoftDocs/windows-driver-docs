@@ -27,26 +27,26 @@ This topic describes implementation requirements for various form factors.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><img src="../images/slate.jpg" alt="Slate" /></p></td>
+<td align="left"><p><img src="images/slate.jpg" alt="Slate" /></p></td>
 <td align="left">Slate</td>
 <td align="left">Tablet form factor with no attachable keyboard</td>
 <td align="left">When a stationary docking accessory is available, the docking indicator must be implemented.</td>
 </tr>
 <tr class="even">
-<td align="left"><p><img src="../images/laptop.jpg" alt="Laptop" /></p></td>
+<td align="left"><p><img src="images/laptop.jpg" alt="Laptop" /></p></td>
 <td align="left">Laptop</td>
 <td align="left">Permanently attached keyboard that is always available for typing.</td>
 <td align="left">Statically set the mode to laptop.</td>
 </tr>
 <tr class="odd">
-<td align="left"><p><img src="../images/convertible.jpg" alt="Convertible" /></p></td>
+<td align="left"><p><img src="images/convertible.jpg" alt="Convertible" /></p></td>
 <td align="left">Convertible</td>
 <td align="left">System that can be used as either a slate or a tablet. The keyboard can be detached, flipped, or swivelled.</td>
 <td align="left"><p>Implement the laptop/slate indicator.</p>
 <p>If a stationary docking accessory is available, the docking indicator must also be implemented.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><img src="../images/allinone.jpg" alt="All-in-One" /></p></td>
+<td align="left"><p><img src="images/allinone.jpg" alt="All-in-One" /></p></td>
 <td align="left">All-in-One</td>
 <td align="left">Medium size desktop/semi-portable systems that have a keyboard that is attached as an accessory.</td>
 <td align="left">No implementation required because the keyboard is an optional accessory.</td>
