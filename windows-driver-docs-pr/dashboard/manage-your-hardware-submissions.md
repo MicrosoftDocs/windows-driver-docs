@@ -117,7 +117,7 @@ After you submit your product for the Windows Hardware Compatibility Program for
 
 ## Register an extension INF for your submission
 
-To register an extension INF with your submission, submit a support ticket to the Windows Hardware Dev Center Dashboard support team. in the ticket, specify the ExtensionID generated within the INF file. see [Using an extension INF file](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-an-extension-inf-file) for more information. 
+To register an extension INF with your submission, submit a support ticket to the Windows Hardware Dev Center Dashboard support team. in the ticket, specify the ExtensionID generated within the INF file. see [Using an extension INF file](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-an-extension-inf-file) for more information about specifying an ExtensionID. 
 
 
  
