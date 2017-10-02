@@ -1,5 +1,5 @@
 ---
-title: OID\_RECEIVE\_FILTER\_SET\_FILTER
+title: OID_RECEIVE_FILTER_SET_FILTER
 author: windows-driver-content
 description: An overlying driver issues an OID method request of OID\_RECEIVE\_FILTER\_SET\_FILTER to set a filter on a network adapter.
 ms.assetid: ec3e119e-662f-48a6-8c68-20da20590b24

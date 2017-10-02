@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_DATA\_RATE\_MAPPING\_TABLE
+title: OID_DOT11_DATA_RATE_MAPPING_TABLE
 author: windows-driver-content
 description: When queried, the OID\_DOT11\_DATA\_RATE\_MAPPING\_TABLE object identifier (OID) requests that the miniport driver return the table of data rates supported by a PHY on the 802.11 station for transmit and receive operations.
 ms.assetid: f0d7a91d-9eaa-4a54-98dd-6e60641c8386

@@ -1,5 +1,5 @@
 ---
-title: 'REMOTE\_NDIS\_HALT\_MSG'
+title: 'REMOTE_NDIS_HALT_MSG'
 author: windows-driver-content
 Description: 'This message is sent by the host to terminate the network connection.'
 ms.assetid: ad7802ff-20ee-4228-b236-a2ca39e8c478

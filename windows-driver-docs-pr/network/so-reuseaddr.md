@@ -1,5 +1,5 @@
 ---
-title: SO\_REUSEADDR
+title: SO_REUSEADDR
 author: windows-driver-content
 description: SO\_REUSEADDR
 ms.assetid: 9436492b-0bfb-4234-bcf3-c44657a846d7

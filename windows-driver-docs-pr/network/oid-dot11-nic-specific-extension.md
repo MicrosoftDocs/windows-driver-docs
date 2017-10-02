@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_NIC\_SPECIFIC\_EXTENSION
+title: OID_DOT11_NIC_SPECIFIC_EXTENSION
 author: windows-driver-content
 description: OID\_DOT11\_NIC\_SPECIFIC\_EXTENSION
 ms.assetid: 4d9194ca-4d40-4c83-a464-7f145f0a52b5

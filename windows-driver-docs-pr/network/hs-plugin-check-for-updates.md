@@ -1,5 +1,5 @@
 ---
-title: HS\_PLUGIN\_CHECK\_FOR\_UPDATES function
+title: HS_PLUGIN_CHECK_FOR_UPDATES function
 author: windows-driver-content
 description: The HS\_PLUGIN\_CHECK\_FOR\_UPDATES function checks for configuration updates at the frequency specified in the dwProfileUpdateTimeDays member of the plugin’s HS\_PLUGIN\_PROFILE structure.
 ms.assetid: 8db3c237-d61b-4dca-b3a5-2fdaeb683b15

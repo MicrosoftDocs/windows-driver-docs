@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_SUPPORTED\_DSSS\_CHANNEL\_LIST
+title: OID_DOT11_SUPPORTED_DSSS_CHANNEL_LIST
 author: windows-driver-content
 description: OID\_DOT11\_SUPPORTED\_DSSS\_CHANNEL\_LIST
 ms.assetid: ee1ff240-77ab-43eb-90a5-d11025fa5de4

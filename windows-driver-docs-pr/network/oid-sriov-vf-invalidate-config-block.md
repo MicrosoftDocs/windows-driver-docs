@@ -1,5 +1,5 @@
 ---
-title: OID\_SRIOV\_VF\_INVALIDATE\_CONFIG\_BLOCK
+title: OID_SRIOV_VF_INVALIDATE_CONFIG_BLOCK
 author: windows-driver-content
 description: NDIS issues an object identifier (OID) method request of OID\_SRIOV\_VF\_INVALIDATE\_CONFIG\_BLOCK to notify the miniport driver of a PCI Express (PCIe) Virtual Function (VF) that data within one or more configuration blocks has changed.
 ms.assetid: CF73E0DA-20DA-49A0-80B0-0F5A56DCEF5D

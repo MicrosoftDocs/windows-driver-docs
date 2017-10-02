@@ -1,5 +1,5 @@
 ---
-title: SO\_EXCLUSIVEADDRUSE
+title: SO_EXCLUSIVEADDRUSE
 author: windows-driver-content
 description: SO\_EXCLUSIVEADDRUSE
 ms.assetid: d281086f-4d8b-4e1e-b2bd-7b0a20338222

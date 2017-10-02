@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_DIVERSITY\_SUPPORT
+title: OID_DOT11_DIVERSITY_SUPPORT
 author: windows-driver-content
 description: OID\_DOT11\_DIVERSITY\_SUPPORT
 ms.assetid: 9e04f9cc-b638-45ac-a1a6-c099ae889018

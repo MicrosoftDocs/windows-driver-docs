@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_INCOMING\_ASSOCIATION\_DECISION
+title: OID_DOT11_INCOMING_ASSOCIATION_DECISION
 author: windows-driver-content
 description: OID\_DOT11\_INCOMING\_ASSOCIATION\_DECISION
 ms.assetid: dd9601c7-ff89-4629-affc-02a401b9ca83
