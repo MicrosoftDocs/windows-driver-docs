@@ -88,7 +88,9 @@ Mark the SCCD as build content by right clicking on the SCCD file and changing *
 
 Finally, right-click the project, select **Store**, then **Create App Packages**.
 
-**Note**: There is no support for UWP apps with custom capabilities on mobile platforms.
+**Note**: 
+1. UWP apps with custom capabilities require **10.0.10536 SDK** or greater.
+2. There is no support for UWP apps with custom capabilities on mobile platforms.
 
 ## Troubleshooting
 
