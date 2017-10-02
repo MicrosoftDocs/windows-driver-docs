@@ -2,7 +2,7 @@
 title: Miniport Adapter Synchronous OID Requests
 description: This topic describes miniport adapter Synchronous OID requests
 ms.assetid: E169972C-2EFF-4005-B279-9EFC53B431E2
-keywords: Synchronous OID Requests Interface, Synchronous OID call, WDK Synchronous OIDs, Synchronous OID request
+keywords: Miniport Adapter Synchronous OID Requests Interface, Miniport Adapter Synchronous OID call, WDK Miniport Adapter Synchronous OIDs, Miniport Adapter Synchronous OID request
 ms.author: windowsdriverdev
 ms.date: 09/28/2017
 ms.topic: article
