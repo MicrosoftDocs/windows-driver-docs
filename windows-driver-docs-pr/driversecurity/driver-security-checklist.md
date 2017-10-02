@@ -427,6 +427,8 @@ BA (Built-in Administrators)
 LS (Local Service)
 \/
 BU (Built-in User)
+\/
+AC (Application Container)
 ```
 
 Following the general least privilege security principle, configure only the minimum level of access that is required for your driver to function.
