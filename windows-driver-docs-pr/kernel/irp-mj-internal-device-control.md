@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL
+title: IRP_MJ_INTERNAL_DEVICE_CONTROL
 author: windows-driver-content
 description: In general, any replacement for an existing driver that supports internal device control requests should handle this request in a DispatchInternalDeviceControl routine.
 ms.author: windowsdriverdev

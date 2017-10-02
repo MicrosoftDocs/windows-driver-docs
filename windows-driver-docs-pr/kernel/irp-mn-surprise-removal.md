@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_SURPRISE\_REMOVAL
+title: IRP_MN_SURPRISE_REMOVAL
 author: windows-driver-content
 description: All PnP drivers must handle this IRP.
 ms.author: windowsdriverdev

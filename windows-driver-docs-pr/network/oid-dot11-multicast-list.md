@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_MULTICAST\_LIST
+title: OID_DOT11_MULTICAST_LIST
 author: windows-driver-content
 description: OID\_DOT11\_MULTICAST\_LIST
 ms.assetid: 5a27a01f-57d8-435c-a0a8-6ae671b350e2

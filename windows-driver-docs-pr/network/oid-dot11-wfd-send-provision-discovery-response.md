@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_WFD\_SEND\_PROVISION\_DISCOVERY\_RESPONSE
+title: OID_DOT11_WFD_SEND_PROVISION_DISCOVERY_RESPONSE
 author: windows-driver-content
 description: When set, the OID\_DOT11\_WFD\_SEND\_PROVISION\_DISCOVERY\_RESPONSE object identifier (OID) is sent to the miniport driver with the parameters to send in a provision discovery response.
 ms.assetid: 07EEB56F-EC84-4C7E-AF06-A4B87269A992

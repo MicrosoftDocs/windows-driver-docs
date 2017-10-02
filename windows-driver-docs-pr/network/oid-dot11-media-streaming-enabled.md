@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_MEDIA\_STREAMING\_ENABLED
+title: OID_DOT11_MEDIA_STREAMING_ENABLED
 author: windows-driver-content
 description: OID\_DOT11\_MEDIA\_STREAMING\_ENABLED
 ms.assetid: c286775c-996e-419d-9d65-84aa3c732dbd

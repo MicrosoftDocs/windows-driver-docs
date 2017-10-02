@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_SUPPORTED\_UNICAST\_ALGORITHM\_PAIR
+title: OID_DOT11_SUPPORTED_UNICAST_ALGORITHM_PAIR
 author: windows-driver-content
 description: OID\_DOT11\_SUPPORTED\_UNICAST\_ALGORITHM\_PAIR
 ms.assetid: 8b16dfca-d9f3-4b51-8363-2799b8fb49c7

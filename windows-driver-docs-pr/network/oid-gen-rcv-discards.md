@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_RCV\_DISCARDS
+title: OID_GEN_RCV_DISCARDS
 author: windows-driver-content
 description: As a query, NDIS and overlying drivers use the OID\_GEN\_RCV\_DISCARDS OID to determine the number of receive discards on a miniport adapter.
 ms.assetid: 638d2961-d327-490d-925b-3f6c30a13a89

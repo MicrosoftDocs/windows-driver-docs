@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_FLUSH\_BSS\_LIST
+title: OID_DOT11_FLUSH_BSS_LIST
 author: windows-driver-content
 description: OID\_DOT11\_FLUSH\_BSS\_LIST
 ms.assetid: e56d9b5b-1f06-400a-8c9d-39fffb068a10

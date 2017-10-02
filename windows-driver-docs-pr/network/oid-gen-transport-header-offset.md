@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_TRANSPORT\_HEADER\_OFFSET
+title: OID_GEN_TRANSPORT_HEADER_OFFSET
 author: windows-driver-content
 description: As a set, the OID\_GEN\_TRANSPORT\_HEADER\_OFFSET OID indicates the size of additional headers for packets that a particular transport sends and receives.
 ms.assetid: 00b00c5b-cdf3-4b87-8914-e87876c9ae23

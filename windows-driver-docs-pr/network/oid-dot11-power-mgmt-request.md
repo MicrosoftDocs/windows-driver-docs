@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_POWER\_MGMT\_REQUEST
+title: OID_DOT11_POWER_MGMT_REQUEST
 author: windows-driver-content
 description: OID\_DOT11\_POWER\_MGMT\_REQUEST
 ms.assetid: 5b79d5e4-7b0a-4c70-93c6-957385356244

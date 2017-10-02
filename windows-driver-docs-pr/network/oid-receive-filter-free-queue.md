@@ -1,5 +1,5 @@
 ---
-title: OID\_RECEIVE\_FILTER\_FREE\_QUEUE
+title: OID_RECEIVE_FILTER_FREE_QUEUE
 author: windows-driver-content
 description: NDIS protocol drivers issue object identifier (OID) set requests of OID\_RECEIVE\_FILTER\_FREE\_QUEUE to free a receive queue.
 ms.assetid: ee8cff69-2f5e-4798-9c18-28e996dd1dd4

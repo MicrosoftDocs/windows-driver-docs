@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_XMIT\_DISCARDS
+title: OID_GEN_XMIT_DISCARDS
 author: windows-driver-content
 description: As a query, NDIS and overlying drivers use the OID\_GEN\_XMIT\_DISCARDS OID to determine the number of transmit discards on a miniport adapter.
 ms.assetid: f6265262-c485-441c-bb89-fa1d302608d2

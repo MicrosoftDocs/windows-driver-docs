@@ -1,5 +1,5 @@
 ---
-title: NDIS\_ROUTING\_DOMAIN\_ISOLATION\_ENTRY\_GET\_NEXT macro
+title: NDIS_ROUTING_DOMAIN_ISOLATION_ENTRY_GET_NEXT macro
 author: windows-driver-content
 description: Hyper-V extensible switch extensions use the NDIS\_ROUTING\_DOMAIN\_ISOLATION\_ENTRY\_GET\_NEXT macro to access the next NDIS\_ROUTING\_DOMAIN\_ISOLATION\_ENTRY element that follows an NDIS\_ROUTING\_DOMAIN\_ISOLATION\_ENTRY structure in the array that is specified by an NDIS\_SWITCH\_PORT\_PROPERTY\_ROUTING\_DOMAIN structure.
 ms.assetid: DFBBD989-08E5-48A3-9D03-C6F914753131

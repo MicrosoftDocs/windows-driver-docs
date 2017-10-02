@@ -1,5 +1,5 @@
 ---
-title: OID\_NDK\_SET\_STATE
+title: OID_NDK_SET_STATE
 author: windows-driver-content
 description: As a set request, NDIS and overlying drivers use the OID\_NDK\_SET\_STATE OID to set the state of the miniport adapter's NDK functionality.
 ms.assetid: 5BA49F42-FE37-4860-B68F-92A7F4007639

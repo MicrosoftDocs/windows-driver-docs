@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_HD\_SPLIT\_PARAMETERS
+title: OID_GEN_HD_SPLIT_PARAMETERS
 author: windows-driver-content
 description: As a set, NDIS and overlying drivers or user-mode applications use the OID\_GEN\_HD\_SPLIT\_PARAMETERS OID to set the current header-data split settings of a miniport adapter.
 ms.assetid: 1b33c601-4302-4f63-8265-b75889b42d42

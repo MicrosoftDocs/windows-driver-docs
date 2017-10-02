@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_NIC\_POWER\_STATE
+title: OID_DOT11_NIC_POWER_STATE
 author: windows-driver-content
 description: OID\_DOT11\_NIC\_POWER\_STATE
 ms.assetid: ed05b714-7cdf-4996-bc5d-ab9baa67e11b

@@ -1,5 +1,5 @@
 ---
-title: OID\_SWITCH\_NIC\_CONNECT
+title: OID_SWITCH_NIC_CONNECT
 author: windows-driver-content
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID\_SWITCH\_NIC\_CONNECT to notify underlying extensible switch extensions that a network connection between an extensible switch port and a network adapter is completely established. The protocol edge previously notified extensions that this connection is being established when it issued an OID set request of OID\_SWITCH\_NIC\_CREATE.
 ms.assetid: 98A4AD28-2716-40DD-AE46-70969A23FAB7

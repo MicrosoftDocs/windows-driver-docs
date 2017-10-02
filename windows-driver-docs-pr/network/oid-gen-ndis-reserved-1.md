@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_NDIS\_RESERVED\_1
+title: OID_GEN_NDIS_RESERVED_1
 author: windows-driver-content
 description: The OID\_GEN\_NDIS\_RESERVED\_1 OID is reserved for NDIS. NDIS drivers do not use this OID.
 ms.assetid: 483315ba-92a4-44da-b74a-c944cc3bf2e5

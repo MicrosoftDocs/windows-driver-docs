@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_HOP\_TIME
+title: OID_DOT11_HOP_TIME
 author: windows-driver-content
 description: OID\_DOT11\_HOP\_TIME
 ms.assetid: 7c4b0306-b375-44c2-9b44-d6ebf6f1e7eb

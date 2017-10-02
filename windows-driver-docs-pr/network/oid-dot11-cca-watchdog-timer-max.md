@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_CCA\_WATCHDOG\_TIMER\_MAX
+title: OID_DOT11_CCA_WATCHDOG_TIMER_MAX
 author: windows-driver-content
 description: OID\_DOT11\_CCA\_WATCHDOG\_TIMER\_MAX
 ms.assetid: 4199dff5-bdcf-4ae0-b8c2-0b9ecc54a128

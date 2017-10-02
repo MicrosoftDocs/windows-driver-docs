@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_SUPPORTED\_DATA\_RATES\_VALUE
+title: OID_DOT11_SUPPORTED_DATA_RATES_VALUE
 author: windows-driver-content
 description: OID\_DOT11\_SUPPORTED\_DATA\_RATES\_VALUE
 ms.assetid: 5daf34be-bbbf-4aca-818d-6db24aa15cd4

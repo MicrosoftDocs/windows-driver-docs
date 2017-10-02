@@ -1,5 +1,5 @@
 ---
-title: OID\_PNP\_QUERY\_POWER
+title: OID_PNP_QUERY_POWER
 author: windows-driver-content
 description: OID\_PNP\_QUERY\_POWER
 ms.assetid: 62675042-3339-48de-97bb-58bfa05e1b39
