@@ -17,7 +17,7 @@ After you submit your product for the Windows Hardware Compatibility Program for
 -   [Find a hardware submission](#find-a-hardware-submission)
 -   [Update an HCK hardware submission using the Driver Update Acceptable (DUA) process](#update-an-hck-hardware-submission-using-the-driver-update-acceptable-dua-process)
 
-## **Find a hardware submission**
+## Find a hardware submission
 
 1.  Sign in to the Windows Hardware Dev Center dashboard.
 
@@ -81,7 +81,7 @@ After you submit your product for the Windows Hardware Compatibility Program for
 
      
 
-## **Update an HCK hardware submission using the Driver Update Acceptable (DUA) process**
+## Update an HCK hardware submission using the Driver Update Acceptable (DUA) process
 
 1.  [Find the hardware submission](#find-a-hardware-submission) that you want to update.
 
@@ -115,7 +115,10 @@ After you submit your product for the Windows Hardware Compatibility Program for
 
 14. You can monitor the progress of your driver update with the progress tracker at the top of the page. Once all steps show a green check, the update is complete.
 
- 
+## Register an extension INF for your submission
+
+To register an extension INF with your submission, submit a support ticket to the Windows Hardware Dev Center Dashboard support team. in the ticket, specify the ExtensionID generated within the INF file. see [Using an extension INF file](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-an-extension-inf-file) for more information. 
+
 
  
 
