@@ -52,7 +52,7 @@ This section provides a sample INF that is part of the WU package. The key point
 
 -   The firmware binaries are independent of the UMDF driver.
 -   The firmware binaries are located a well-known, pre-defined location as shown below to filename collisions. The binaries cannot be not be executable files containing PE/COFF headers.
--   `%windir%\Firmware\\<IHVCompanyName>\\<UniqueBinaryName>.bin`
+-   `%windir%\Firmware\<IHVCompanyName>\<UniqueBinaryName>.bin`
 -   The UMDF driver is aware of this predefined well-known location.
 -   The sample INF template below has highlighted items that need to be filled by the IHV.
 

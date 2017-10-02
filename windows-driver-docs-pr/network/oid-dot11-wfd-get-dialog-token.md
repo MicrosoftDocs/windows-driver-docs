@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_WFD\_GET\_DIALOG\_TOKEN
+title: OID_DOT11_WFD_GET_DIALOG_TOKEN
 author: windows-driver-content
 description: When queried, the OID\_DOT11\_WFD\_GET\_DIALOG\_TOKEN object identifier (OID) requests that the miniport driver return a dialog token for use in a later action frame send request OID.
 ms.assetid: 5F283F85-4470-4605-877E-E6DC143DA659

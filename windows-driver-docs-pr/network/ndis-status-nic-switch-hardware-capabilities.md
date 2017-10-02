@@ -1,5 +1,5 @@
 ---
-title: NDIS\_STATUS\_NIC\_SWITCH\_HARDWARE\_CAPABILITIES
+title: NDIS_STATUS_NIC_SWITCH_HARDWARE_CAPABILITIES
 author: windows-driver-content
 description: The NDIS\_STATUS\_NIC\_SWITCH\_HARDWARE\_CAPABILITIES status indicates to NDIS and overlying drivers that the hardware capabilities of the NIC switch in a network adapter have changed.
 ms.assetid: 21B326EC-22CC-4E41-895F-457971202C0B

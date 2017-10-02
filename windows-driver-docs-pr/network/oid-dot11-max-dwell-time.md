@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_MAX\_DWELL\_TIME
+title: OID_DOT11_MAX_DWELL_TIME
 author: windows-driver-content
 description: OID\_DOT11\_MAX\_DWELL\_TIME
 ms.assetid: 6adbe09e-9ba3-4186-9ae1-435a8a6b233a

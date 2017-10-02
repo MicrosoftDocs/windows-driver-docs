@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_XMIT\_LINK\_SPEED
+title: OID_GEN_XMIT_LINK_SPEED
 author: windows-driver-content
 description: As a query, use the OID\_GEN\_XMIT\_LINK\_SPEED OID to determine the transmit link speed of a network interface. Version Information Windows Vista and laterSupported. NDIS 6.0 and later miniport driversNot requested. For NDIS interface providers only.
 ms.assetid: 0a390456-8974-4668-b624-55259c2f9e20

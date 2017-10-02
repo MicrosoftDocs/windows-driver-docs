@@ -1,5 +1,5 @@
 ---
-title: OID\_WWAN\_DELETE\_MAC
+title: OID_WWAN_DELETE_MAC
 author: windows-driver-content
 description: OID\_WWAN\_DELETE\_MAC requests the miniport driver to delete the NDIS port specified in the NDIS\_WWAN\_MAC\_INFO parameter.
 ms.assetid: 3C992E0D-132E-4687-B38E-31409E1A9F54

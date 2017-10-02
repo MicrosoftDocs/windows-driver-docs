@@ -1,5 +1,5 @@
 ---
-title: HS\_PLUGIN\_DISCONNECT\_FROM\_NETWORK function
+title: HS_PLUGIN_DISCONNECT_FROM_NETWORK function
 author: windows-driver-content
 description: The HS\_PLUGIN\_DISCONNECT\_FROM\_NETWORK function notifies the plugin that the device will be disconnected from the network.
 ms.assetid: 8a53c824-18f7-4000-b264-fe852595a9e3

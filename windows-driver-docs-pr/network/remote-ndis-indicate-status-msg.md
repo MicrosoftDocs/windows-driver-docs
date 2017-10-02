@@ -1,5 +1,5 @@
 ---
-title: 'REMOTE\_NDIS\_INDICATE\_STATUS\_MSG'
+title: 'REMOTE_NDIS_INDICATE_STATUS_MSG'
 author: windows-driver-content
 Description: 'This message is sent from a Remote NDIS device to a host to indicate a change in the status of the device.'
 ms.assetid: 768aad13-3da6-436c-a7ba-d420af34643e

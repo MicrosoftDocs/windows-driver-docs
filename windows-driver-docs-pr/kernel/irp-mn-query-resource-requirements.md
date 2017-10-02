@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_QUERY\_RESOURCE\_REQUIREMENTS
+title: IRP_MN_QUERY_RESOURCE_REQUIREMENTS
 author: windows-driver-content
 description: The PnP manager uses this IRP to get a device's resource requirements list.Bus drivers must handle this request for their child devices that require hardware resources.
 ms.author: windowsdriverdev

@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_DISCONTINUITY\_TIME
+title: OID_GEN_DISCONTINUITY_TIME
 author: windows-driver-content
 description: As a query, use the OID\_GEN\_DISCONTINUITY\_TIME OID to determine the discontinuity time of a network interface (ifCounterDiscontinuityTime from RFC 2863).
 ms.assetid: 3eac6818-c346-47f6-b812-f98b808dc36a

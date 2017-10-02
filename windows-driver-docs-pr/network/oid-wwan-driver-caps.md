@@ -1,5 +1,5 @@
 ---
-title: OID\_WWAN\_DRIVER\_CAPS
+title: OID_WWAN_DRIVER_CAPS
 author: windows-driver-content
 description: OID\_WWAN\_DRIVER\_CAPS returns the version of the MB driver model supported by the miniport driver.
 ms.assetid: 2310a341-6899-44ad-8dfb-a13fd0c42dcb

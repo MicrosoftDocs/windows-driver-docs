@@ -1,5 +1,5 @@
 ---
-title: OID\_802\_3\_MAXIMUM\_LIST\_SIZE
+title: OID_802_3_MAXIMUM_LIST_SIZE
 author: windows-driver-content
 description: OID\_802\_3\_MAXIMUM\_LIST\_SIZE
 ms.assetid: e4288fb3-6bb3-415c-b150-1f258a2fa1a0

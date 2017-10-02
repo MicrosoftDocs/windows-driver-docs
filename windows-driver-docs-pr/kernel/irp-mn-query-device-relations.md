@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_QUERY\_DEVICE\_RELATIONS
+title: IRP_MN_QUERY_DEVICE_RELATIONS
 author: windows-driver-content
 description: The PnP manager sends this request to determine certain relationships among devices.
 ms.author: windowsdriverdev

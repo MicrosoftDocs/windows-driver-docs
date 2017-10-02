@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_QUERY\_STOP\_DEVICE
+title: IRP_MN_QUERY_STOP_DEVICE
 author: windows-driver-content
 description: All PnP drivers must handle this IRP.
 ms.author: windowsdriverdev

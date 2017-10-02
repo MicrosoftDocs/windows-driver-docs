@@ -1,5 +1,5 @@
 ---
-title: OID\_SRIOV\_WRITE\_VF\_CONFIG\_BLOCK
+title: OID_SRIOV_WRITE_VF_CONFIG_BLOCK
 author: windows-driver-content
 description: An overlying driver issues an object identifier (OID) set request of OID\_SRIOV\_WRITE\_VF\_CONFIG\_BLOCK to write data to a PCI Express (PCIe) Virtual Function (VF) configuration block.
 ms.assetid: 60527938-5627-482D-B94D-522DA8E32540

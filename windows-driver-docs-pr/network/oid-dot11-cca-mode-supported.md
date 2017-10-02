@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_CCA\_MODE\_SUPPORTED
+title: OID_DOT11_CCA_MODE_SUPPORTED
 author: windows-driver-content
 description: OID\_DOT11\_CCA\_MODE\_SUPPORTED
 ms.assetid: b4cebe6a-d128-453e-9c12-c9f6099dbea7

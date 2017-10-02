@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_POWER
+title: IRP_MJ_POWER
 author: windows-driver-content
 description: All drivers must be prepared to service IRP\_MJ\_POWER requests in a DispatchPower routine.
 ms.author: windowsdriverdev

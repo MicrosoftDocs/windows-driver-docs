@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_CURRENT\_FREQUENCY
+title: OID_DOT11_CURRENT_FREQUENCY
 author: windows-driver-content
 description: OID\_DOT11\_CURRENT\_FREQUENCY
 ms.assetid: 8e164bef-0a83-41cb-a287-82d67553a611

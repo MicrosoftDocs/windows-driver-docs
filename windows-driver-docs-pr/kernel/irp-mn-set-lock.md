@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_SET\_LOCK
+title: IRP_MN_SET_LOCK
 author: windows-driver-content
 description: Bus drivers must handle this IRP for their child devices (child PDOs) that support device locking. Function and filter drivers do not handle this request.
 ms.author: windowsdriverdev

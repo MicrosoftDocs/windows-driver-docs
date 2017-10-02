@@ -1,5 +1,5 @@
 ---
-title: OID\_NIC\_SWITCH\_ENUM\_SWITCHES
+title: OID_NIC_SWITCH_ENUM_SWITCHES
 author: windows-driver-content
 description: An overlying driver or user-mode application issues an object identifier (OID) query request of OID\_NIC\_SWITCH\_ENUM\_SWITCHES to obtain an array.
 ms.assetid: 706C3F1C-239F-4731-A38E-E150D26C79A5
