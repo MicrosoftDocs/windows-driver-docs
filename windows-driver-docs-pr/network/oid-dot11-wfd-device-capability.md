@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_WFD\_DEVICE\_CAPABILITY
+title: OID_DOT11_WFD_DEVICE_CAPABILITY
 author: windows-driver-content
 description: When set, the OID\_DOT11\_WFD\_DEVICE\_CAPABILITY object identifier (OID) modifies the Peer-to-Peer (P2P) device functionality that a Wi-Fi Direct (WFD) device supports and advertises in the P2P Capability attribute.
 ms.assetid: DAB74B39-A904-4F53-9123-0BBA86EBEEF0

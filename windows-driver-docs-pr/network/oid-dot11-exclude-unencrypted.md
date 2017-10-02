@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_EXCLUDE\_UNENCRYPTED
+title: OID_DOT11_EXCLUDE_UNENCRYPTED
 author: windows-driver-content
 description: OID\_DOT11\_EXCLUDE\_UNENCRYPTED
 ms.assetid: 51a6563d-9e9d-4156-9f7a-b2892f4b7c25

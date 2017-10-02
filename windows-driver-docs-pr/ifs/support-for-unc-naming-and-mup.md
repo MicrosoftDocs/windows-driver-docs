@@ -239,7 +239,7 @@ Changes to the ProviderOrder registry value require a reboot to take effect in M
 MUP uses each provider name listed to find the provider's registry key under the following registry key:
 
 ```
-HKLM\System\CurrentControlSet\Services\\<ProviderName>
+HKLM\System\CurrentControlSet\Services\<ProviderName>
 ```
 
 MUP then reads the DeviceName value under the NetworkProvider subkey to find the device name with which the provider will register. When the provider actually registers, MUP matches the device name passed in with the list of device names of known providers and places the provider in an ordered list for the purposes of prefix resolution. The order of providers in this list is based on the order specified in the ProviderOrder registry value discussed above.

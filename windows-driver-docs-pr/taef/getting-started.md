@@ -1,4 +1,4 @@
-[---
+---
 title: Getting Started with TAEF
 description: Getting Started with Test Authoring and Execution Framework (TAEF)
 ms.assetid: 7F57C5EF-141A-4303-9B9F-2EC118324BF8

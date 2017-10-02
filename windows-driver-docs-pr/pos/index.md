@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # POS design guide
 
 
-This section provides design guidance for point-of-service devices.
+This section provides driver design guidance for point-of-service (POS) devices.
 
 ## In this section
 
@@ -33,6 +33,27 @@ This section provides design guidance for point-of-service devices.
 <tr>
 <td><p>[POS driver samples](driver-samples.md)</p></td>
 <td><p>Samples that demonstrate how to create universal drivers for point of service (POS) devices.</p></td>
+</tr>
+</tbody>
+</table>
+
+## Related sections
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>[POS driver API reference](https://msdn.microsoft.com/en-us/library/windows/hardware/dn757548)</p></td>
+<td><p>Provides reference information for point of service (POS) device drivers.</p></td>
 </tr>
 </tbody>
 </table>

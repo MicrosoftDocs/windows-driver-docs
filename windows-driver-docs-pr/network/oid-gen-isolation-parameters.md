@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_ISOLATION\_PARAMETERS
+title: OID_GEN_ISOLATION_PARAMETERS
 author: windows-driver-content
 description: NDIS and overlying drivers issue an object identifier (OID) request of OID\_GEN\_ISOLATION\_PARAMETERS to obtain the multi-tenancy configuration (isolation) parameters that are set on a VM network adapter's port.
 ms.assetid: 68E89349-4907-4241-9C50-B13C75273F0D

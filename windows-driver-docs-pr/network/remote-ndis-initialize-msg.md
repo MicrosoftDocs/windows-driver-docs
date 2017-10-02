@@ -1,5 +1,5 @@
 ---
-title: 'REMOTE\_NDIS\_INITIALIZE\_MSG'
+title: 'REMOTE_NDIS_INITIALIZE_MSG'
 author: windows-driver-content
 Description: 'This message is sent by the host to a Remote NDIS device to initialize the network connection.'
 ms.assetid: 08735ee8-7a4c-4a3d-9082-27c61cfd15e8

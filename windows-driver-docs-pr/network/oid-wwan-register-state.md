@@ -1,5 +1,5 @@
 ---
-title: OID\_WWAN\_REGISTER\_STATE
+title: OID_WWAN_REGISTER_STATE
 author: windows-driver-content
 description: OID\_WWAN\_REGISTER\_STATE selects a network provider to register with.
 ms.assetid: 564de5bf-10d9-47fe-a4c1-3409d9b2aee8

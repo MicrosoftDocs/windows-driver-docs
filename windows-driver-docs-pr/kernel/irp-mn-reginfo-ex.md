@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_REGINFO\_EX
+title: IRP_MN_REGINFO_EX
 author: windows-driver-content
 description: WMI sends this IRP to query or update a driver's registration information after the driver has called IoWMIRegistrationControl.
 ms.author: windowsdriverdev

@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_TEMP\_TYPE
+title: OID_DOT11_TEMP_TYPE
 author: windows-driver-content
 description: OID\_DOT11\_TEMP\_TYPE
 ms.assetid: dbfcb23a-5c59-4c03-acd8-46d61b71ab21

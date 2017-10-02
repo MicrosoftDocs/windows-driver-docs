@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_RANDOM\_TABLE\_FLAG
+title: OID_DOT11_RANDOM_TABLE_FLAG
 author: windows-driver-content
 description: OID\_DOT11\_RANDOM\_TABLE\_FLAG
 ms.assetid: d8a42690-dd37-494f-b06a-04364a3f9637

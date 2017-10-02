@@ -1,5 +1,5 @@
 ---
-title: SO\_CONDITIONAL\_ACCEPT
+title: SO_CONDITIONAL_ACCEPT
 author: windows-driver-content
 description: SO\_CONDITIONAL\_ACCEPT
 ms.assetid: 8aaaa08b-b239-4648-8c4f-8db2efbda551

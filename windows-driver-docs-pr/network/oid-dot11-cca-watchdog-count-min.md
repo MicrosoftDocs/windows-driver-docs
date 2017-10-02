@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_CCA\_WATCHDOG\_COUNT\_MIN
+title: OID_DOT11_CCA_WATCHDOG_COUNT_MIN
 author: windows-driver-content
 description: OID\_DOT11\_CCA\_WATCHDOG\_COUNT\_MIN
 ms.assetid: a9c535db-6942-44f3-af9c-cba398214e21

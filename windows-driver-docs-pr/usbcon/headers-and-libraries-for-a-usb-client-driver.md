@@ -164,33 +164,33 @@ To find the header and library for a specific device driver interface (DDI), con
 <tbody>
 <tr class="odd">
 <td>usbd.lib</td>
-<td><p>\Lib\win8\km\<em>&lt;arch&gt;</em></p>
-<p>\Lib\win7\km\<em>&lt;arch&gt;</em></p>
-<p>\Lib\winv6.3\km\<em>&lt;arch&gt;</em></p></td>
+<td><p>\Lib\win8\km\\<em>&lt;arch&gt;</em></p>
+<p>\Lib\win7\km\\<em>&lt;arch&gt;</em></p>
+<p>\Lib\winv6.3\km\\<em>&lt;arch&gt;</em></p></td>
 <td>Provides helper routines for getting information from the USB driver stack and formatting URBs for requests.</td>
 </tr>
 <tr class="even">
 <td>usbrpm.lib</td>
-<td><p>\Lib\win8\km\<em>&lt;arch&gt;</em></p>
-<p>\Lib\win7\km\<em>&lt;arch&gt;</em></p>
-<p>\Lib\winv6.3\km\<em>&lt;arch&gt;</em></p></td>
+<td><p>\Lib\win8\km\\<em>&lt;arch&gt;</em></p>
+<p>\Lib\win7\km\\<em>&lt;arch&gt;</em></p>
+<p>\Lib\winv6.3\km\\<em>&lt;arch&gt;</em></p></td>
 <td>Provides functions for an application to perform operations for replacing a Microsoft-provided driver with a third-party RPM driver.</td>
 </tr>
 <tr class="odd">
 <td>usbdex.lib</td>
-<td><p>\Lib\win8\km\<em>&lt;arch&gt;</em></p>
-<p>\Lib\win7\km\<em>&lt;arch&gt;</em></p>
-<p>\Lib\winv6.3\km\<em>&lt;arch&gt;</em></p></td>
+<td><p>\Lib\win8\km\\<em>&lt;arch&gt;</em></p>
+<p>\Lib\win7\km\\<em>&lt;arch&gt;</em></p>
+<p>\Lib\winv6.3\km\\<em>&lt;arch&gt;</em></p></td>
 <td>Provides helper routines for client drivers to send requests to the underlying USB driver stack. The library gets loaded and statically linked to the client driver module when it is built. A client driver that calls these routines can run on Windows Vista and later versions of Windows.</td>
 </tr>
 <tr class="even">
 <td>winusb.lib</td>
-<td><p>\Lib\win8\km\<em>&lt;arch&gt;</em></p>
-<p>\Lib\win8\um\<em>&lt;arch&gt;</em></p>
-<p>\Lib\win7\km\<em>&lt;arch&gt;</em></p>
-<p>\Lib\win7\um\<em>&lt;arch&gt;</em></p>
-<p>\Lib\winv6.3\km\<em>&lt;arch&gt;</em></p>
-<p>\Lib\winv6.3\um\<em>&lt;arch&gt;</em></p></td>
+<td><p>\Lib\win8\km\\<em>&lt;arch&gt;</em></p>
+<p>\Lib\win8\um\\<em>&lt;arch&gt;</em></p>
+<p>\Lib\win7\km\\<em>&lt;arch&gt;</em></p>
+<p>\Lib\win7\um\\<em>&lt;arch&gt;</em></p>
+<p>\Lib\winv6.3\km\\<em>&lt;arch&gt;</em></p>
+<p>\Lib\winv6.3\um\\<em>&lt;arch&gt;</em></p></td>
 <td>Provides functions for a user-mode client driver or an application to communicate with a USB device that has Winusb.sys loaded as its function driver.</td>
 </tr>
 </tbody>

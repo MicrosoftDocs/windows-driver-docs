@@ -1,5 +1,5 @@
 ---
-title: OID\_SWITCH\_PROPERTY\_UPDATE
+title: OID_SWITCH_PROPERTY_UPDATE
 author: windows-driver-content
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID\_SWITCH\_PROPERTY\_UPDATE to notify extensible switch extensions about the update to parameters for an extensible switch policy property.
 ms.assetid: AEC32AD8-B353-4D58-9111-D70C2FFA9F66

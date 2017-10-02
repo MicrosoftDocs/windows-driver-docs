@@ -1,5 +1,5 @@
 ---
-title: HS\_PLUGIN\_SEND\_KEEP\_ALIVE function
+title: HS_PLUGIN_SEND_KEEP_ALIVE function
 author: windows-driver-content
 description: The HS\_PLUGIN\_SEND\_KEEP\_ALIVE function is called by the host to send a network connection keep-alive message. It will be called at the frequency specified in the dwKeepAliveTimeMins member of the plugin's HS\_PLUGIN\_PROFILE structure.
 ms.assetid: 1db91146-03bb-4513-9c1b-f0dbd5c941f5

@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_DELETE\_MAC
+title: OID_DOT11_DELETE_MAC
 author: windows-driver-content
 description: OID\_DOT11\_DELETE\_MAC
 ms.assetid: 84ca1060-5460-4f63-b452-a0f6429aaca8

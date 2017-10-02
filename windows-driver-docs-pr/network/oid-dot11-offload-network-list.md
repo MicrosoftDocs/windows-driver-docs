@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_OFFLOAD\_NETWORK\_LIST
+title: OID_DOT11_OFFLOAD_NETWORK_LIST
 author: windows-driver-content
 description: This OID supports Set operation.
 ms.assetid: F404E428-4B82-45F3-9AFA-AABA213B6C2A

@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_MAXIMUM\_LOOKAHEAD
+title: OID_GEN_MAXIMUM_LOOKAHEAD
 author: windows-driver-content
 description: As a query, the OID\_GEN\_MAXIMUM\_LOOKAHEAD OID specifies the maximum number of bytes that the NIC can provide as lookahead data.
 ms.assetid: 086581f7-c0a5-4355-82fe-22f53201b540

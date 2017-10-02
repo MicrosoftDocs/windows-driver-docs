@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_HARDWARE\_STATUS
+title: OID_GEN_HARDWARE_STATUS
 author: windows-driver-content
 description: As a query, the OID\_GEN\_HARDWARE\_STATUS OID specifies the current hardware status of the underlying NIC.
 ms.assetid: beab6f7a-b064-446f-8008-ef8db9d7c080

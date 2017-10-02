@@ -1,5 +1,5 @@
 ---
-title: HS\_HOST\_UPDATE\_CONFIGURATION\_COMPLETION function
+title: HS_HOST_UPDATE_CONFIGURATION_COMPLETION function
 author: windows-driver-content
 description: The HS\_HOST\_UPDATE\_CONFIGURATION\_COMPLETION function indicates the success or failure of a request to check for updates.
 ms.assetid: 7e9eda04-db8e-4181-90e3-8716a99429a8

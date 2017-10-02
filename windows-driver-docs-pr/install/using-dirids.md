@@ -100,7 +100,14 @@ The following table shows several commonly used *dirids*, and the directories th
 <tr class="odd">
 <td align="left"><p><strong>13</strong></p></td>
 <td align="left"><p>Driver package's <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/install/driver-store">Driver Store</a> directory.</p>
-<p>For Windows 8.1 and later versions of Windows, specifies the path to the Driver Store directory where the driver package was imported.</p></td>
+<p>For Windows 8.1 and later versions of Windows, specifies the path to the Driver Store directory where the driver package was imported.
+
+Don't use [DelFiles](inf-delfiles-directive.md) on a file for which **DestinationDirs** includes *dirid* 13.
+
+The optional subdirectory in the **SourceDiskFiles** section for a file must match the subdirectory in the **DestinationDirs** section for the entry that applies to this file.
+
+Don't use [CopyFiles](inf-copyfiles-directive.md) to rename a file for which **DestinationDirs** includes *dirid* 13.
+</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>17</strong></p></td>

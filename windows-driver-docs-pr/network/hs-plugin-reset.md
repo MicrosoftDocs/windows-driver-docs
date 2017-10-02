@@ -1,5 +1,5 @@
 ---
-title: HS\_PLUGIN\_RESET function
+title: HS_PLUGIN_RESET function
 author: windows-driver-content
 description: The HS\_PLUGIN\_RESET function is called by the host to notify the plugin that it must reset its state.
 ms.assetid: 9f5683c9-b426-4802-85bd-c1ce770b9e46

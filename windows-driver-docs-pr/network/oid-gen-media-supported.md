@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_MEDIA\_SUPPORTED
+title: OID_GEN_MEDIA_SUPPORTED
 author: windows-driver-content
 description: As a query, the OID\_GEN\_MEDIA\_SUPPORTED OID specifies the media types that a NIC can support but not necessarily the media types that the NIC currently uses.
 ms.assetid: e7b8d2b1-4e84-416f-aeb3-75591ed44b22

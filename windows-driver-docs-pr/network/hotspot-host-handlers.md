@@ -1,5 +1,5 @@
 ---
-title: HOTSPOT\_HOST\_HANDLERS structure
+title: HOTSPOT_HOST_HANDLERS structure
 author: windows-driver-content
 description: The HOTSPOT\_HOST\_HANDLERS structure contains the hotspot host handlers function table.
 ms.assetid: b381e471-7713-401a-b3fa-eae1801b0e81

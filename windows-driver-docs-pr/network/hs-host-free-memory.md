@@ -1,5 +1,5 @@
 ---
-title: HS\_HOST\_FREE\_MEMORY function
+title: HS_HOST_FREE_MEMORY function
 author: windows-driver-content
 description: The HS\_HOST\_FREE\_MEMORY function frees any memory that was allocated earlier by a call to HS\_HOST\_ALLOCATE\_MEMORY.
 ms.assetid: 2090ecf8-e1d5-4410-acbf-1b97f418e185

@@ -1,5 +1,5 @@
 ---
-title: SIO\_ADDRESS\_LIST\_QUERY
+title: SIO_ADDRESS_LIST_QUERY
 author: windows-driver-content
 description: SIO\_ADDRESS\_LIST\_QUERY
 ms.assetid: c50520a3-6ba3-448e-bbb4-bf3425dcbc41

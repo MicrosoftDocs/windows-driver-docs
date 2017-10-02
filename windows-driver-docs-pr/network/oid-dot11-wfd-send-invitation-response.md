@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_WFD\_SEND\_INVITATION\_RESPONSE
+title: OID_DOT11_WFD_SEND_INVITATION_RESPONSE
 author: windows-driver-content
 description: When set, the OID\_DOT11\_WFD\_SEND\_INVITATION\_RESPONSE object identifier (OID) is sent to the miniport driver with the parameters to respond to an invitation request.
 ms.assetid: D80224C0-980E-4F9E-9A10-6F5AB4B306D4
