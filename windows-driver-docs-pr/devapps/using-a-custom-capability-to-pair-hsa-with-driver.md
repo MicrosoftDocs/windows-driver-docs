@@ -21,7 +21,7 @@ This topic describes how to associate your [Universal Windows Platform (UWP)](ht
 
 The steps required by the owner of the driver or RPC endpoint are described in [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](creating-a-custom-capability-to-pair-driver-with-hsa.md).
 
-Before you get started, install the latest version of Visual Studio and create an UWP app project.  For more info, see [Develop Windows Store apps using Visual Studio](https://developer.microsoft.com/en-us/windows/apps/develop).
+Before you get started, install the latest version of Visual Studio and create an UWP app project.  To build a UWP app with a custom capability, you'll need Windows SDK version **10.0.15063 SDK** (Windows 10 Creators Update) or later. For more help getting configured, see [Develop Windows Store apps using Visual Studio](https://developer.microsoft.com/en-us/windows/apps/develop).
 
 ## Create a Windows Store account
 
@@ -88,9 +88,7 @@ Mark the SCCD as build content by right clicking on the SCCD file and changing *
 
 Finally, right-click the project, select **Store**, then **Create App Packages**.
 
-**Note**: 
-1. UWP apps with custom capabilities require **10.0.10536 SDK** or greater.
-2. There is no support for UWP apps with custom capabilities on mobile platforms.
+**Note**: There is no support for UWP apps with custom capabilities on mobile platforms.
 
 ## Troubleshooting
 
