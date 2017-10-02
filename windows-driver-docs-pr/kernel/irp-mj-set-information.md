@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_SET\_INFORMATION
+title: IRP_MJ_SET_INFORMATION
 author: windows-driver-content
 description: Device drivers can optionally handle an IRP\_MJ\_SET\_INFORMATION request.
 ms.author: windowsdriverdev

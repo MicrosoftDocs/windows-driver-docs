@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_WRITE
+title: IRP_MJ_WRITE
 author: windows-driver-content
 description: Every device driver that transfers data from the system to its device must handle write requests in a DispatchWrite or DispatchReadWrite routine, as must any higher-level driver layered over such a device driver.
 ms.author: windowsdriverdev

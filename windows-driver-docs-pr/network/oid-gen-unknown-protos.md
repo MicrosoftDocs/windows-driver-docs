@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_UNKNOWN\_PROTOS
+title: OID_GEN_UNKNOWN_PROTOS
 author: windows-driver-content
 description: As a query, use the OID\_GEN\_UNKNOWN\_PROTOS OID to determine the unknown-protocol packet count of a network interface (ifInUnknownProtos from RFC 2863).
 ms.assetid: a0bebd8d-c202-41f5-84be-a3056a2eeef9

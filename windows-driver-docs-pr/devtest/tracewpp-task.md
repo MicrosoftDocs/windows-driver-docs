@@ -31,7 +31,7 @@ The following example shows how to edit the metadata in the .vcxproj file.
     <ClCompile Include="b.c">
         <WppEnabled>true</WppEnabled>
         <WppKernelMode>true</WppKernelMode>
-        <WppAdditionalIncludeDirectories>c:\test\\</WppAdditionalIncludeDirectories>
+        <WppAdditionalIncludeDirectories>c:\test\</WppAdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="test1.c" />
     <ClCompile Include="test2.c">

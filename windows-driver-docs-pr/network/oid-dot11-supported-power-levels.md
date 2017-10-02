@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_SUPPORTED\_POWER\_LEVELS
+title: OID_DOT11_SUPPORTED_POWER_LEVELS
 author: windows-driver-content
 description: When queried, the OID\_DOT11\_SUPPORTED\_POWER\_LEVELS OID requests that the miniport driver return the following for the current PHY type on the 802.11 station
 ms.assetid: c285ff65-f6c0-444d-961d-614c50c86a1c

@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_POWER\_MGMT\_MODE\_AUTO\_ENABLED
+title: OID_DOT11_POWER_MGMT_MODE_AUTO_ENABLED
 author: windows-driver-content
 description: This OID supports Set operation.
 ms.assetid: 56817EBC-EF21-4013-8298-92944CD05C11

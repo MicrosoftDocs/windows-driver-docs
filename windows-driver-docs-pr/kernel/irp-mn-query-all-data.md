@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_QUERY\_ALL\_DATA
+title: IRP_MN_QUERY_ALL_DATA
 author: windows-driver-content
 description: All drivers that support WMI must handle this IRP.
 ms.author: windowsdriverdev

@@ -43,7 +43,7 @@ The topic contains basic information about the USB samples that are available fo
 <td>[USBVIEW](http://go.microsoft.com/fwlink/p/?LinkId=618004)</td>
 <td><p>The USBVIEW sample shows how a user-mode application can enumerate USB host controllers, USB hubs, and attached USB devices and can query information about the devices from the registry and through USB requests to the devices. USBVIEW is based on the Windows Driver Model (WDM).</p>
 <div class="alert">
-<strong>Note</strong>  For USBView tool, get the executable from Windows Driver Kit (WDK) (Tools\<em>&lt;arch&gt;</em> folder).
+<strong>Note</strong>  For USBView tool, get the executable from Windows Driver Kit (WDK) (Tools\\<em>&lt;arch&gt;</em> folder).
 </div>
 <div>
  

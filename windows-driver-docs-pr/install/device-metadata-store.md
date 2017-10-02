@@ -17,7 +17,7 @@ ms.technology: windows-devices
 The device metadata store is the directory where device metadata packages are stored on the local computer. The device metadata store is accessed from the following directory:
 
 ```
-%PROGRAMDATA%\Microsoft\Windows\DeviceMetadataStore\\<locale>
+%PROGRAMDATA%\Microsoft\Windows\DeviceMetadataStore\<locale>
 ```
 
 The &lt;locale&gt; subdirectory represents the locale of the device metadata package. The name of this subdirectory can be in the following format:

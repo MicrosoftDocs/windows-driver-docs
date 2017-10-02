@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_QUERY\_POWER
+title: IRP_MN_QUERY_POWER
 author: windows-driver-content
 description: This IRP queries a device to determine whether the system power state or the device power state can be changed.
 ms.author: windowsdriverdev

@@ -1,5 +1,5 @@
 ---
-title: OID\_RECEIVE\_FILTER\_PARAMETERS
+title: OID_RECEIVE_FILTER_PARAMETERS
 author: windows-driver-content
 description: An overlying driver issues an OID method request of OID\_RECEIVE\_FILTER\_PARAMETERS to obtain the current configuration parameters of a filter on a network adapter.
 ms.assetid: 1bb12945-0dad-47b9-9f44-e05efe292979

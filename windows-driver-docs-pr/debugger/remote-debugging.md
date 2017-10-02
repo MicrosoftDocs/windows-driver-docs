@@ -1,6 +1,6 @@
 ---
 title: Remote Debugging
-description: This topic provides an overview of remote user-mode debugging. This involves two computers: the client and the server.
+description: This topic provides an overview of remote user-mode debugging. This involves two computers the client and the server.
 ms.assetid: fa87b55c-c339-4b8c-8614-c7355d203a6e
 keywords: remote debugging
 ms.author: windowsdriverdev

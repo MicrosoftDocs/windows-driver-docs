@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_POWER\_SEQUENCE
+title: IRP_MN_POWER_SEQUENCE
 author: windows-driver-content
 description: This IRP returns the power sequence values for a device.
 ms.author: windowsdriverdev

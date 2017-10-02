@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_CCA\_WATCHDOG\_COUNT\_MAX
+title: OID_DOT11_CCA_WATCHDOG_COUNT_MAX
 author: windows-driver-content
 description: OID\_DOT11\_CCA\_WATCHDOG\_COUNT\_MAX
 ms.assetid: 63d50370-43ad-47d7-acc5-166b5d038754

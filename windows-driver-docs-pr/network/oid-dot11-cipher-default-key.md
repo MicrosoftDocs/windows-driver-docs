@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_CIPHER\_DEFAULT\_KEY
+title: OID_DOT11_CIPHER_DEFAULT_KEY
 author: windows-driver-content
 description: OID\_DOT11\_CIPHER\_DEFAULT\_KEY
 ms.assetid: 51b6c89f-4f9f-482a-a3fe-6622cbcfa04a

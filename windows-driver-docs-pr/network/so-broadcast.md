@@ -1,5 +1,5 @@
 ---
-title: SO\_BROADCAST
+title: SO_BROADCAST
 author: windows-driver-content
 description: SO\_BROADCAST
 ms.assetid: 24b93d4e-461d-44c3-b721-85cf41a1680a

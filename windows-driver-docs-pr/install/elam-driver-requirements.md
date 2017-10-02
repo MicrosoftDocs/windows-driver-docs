@@ -89,7 +89,7 @@ The two callback types have unique context structures that provide additional in
 The malware signature data is determined by the AM ISV, but should include, at a minimum, an approved list of driver hashes. The signature data is stored in the registry in a new “Early Launch Drivers” hive under HKLM that is loaded by Winload. Each AM driver has a unique key in which to store their signature binary large object (BLOB). The registry path and key has the format:
 
 ```
-HKLM\ELAM\\<VendorName>\
+HKLM\ELAM\<VendorName>\
 ```
 
 Within the key, the vendor is free to define and use any of the values.

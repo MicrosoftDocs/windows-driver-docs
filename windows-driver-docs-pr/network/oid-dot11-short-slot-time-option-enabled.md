@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_SHORT\_SLOT\_TIME\_OPTION\_ENABLED
+title: OID_DOT11_SHORT_SLOT_TIME_OPTION_ENABLED
 author: windows-driver-content
 description: OID\_DOT11\_SHORT\_SLOT\_TIME\_OPTION\_ENABLED
 ms.assetid: eba45a33-a61a-4aac-b655-b891187ddf41

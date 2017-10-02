@@ -36,7 +36,7 @@ Windows 10 Mobile is optimized for the unique needs of mobile devices. Instead 
 -   [Bus and Port Drivers](https://msdn.microsoft.com/en-us/library/windows/hardware/ff557547)
 -   [Display Devices (Adapters and Monitors)](https://msdn.microsoft.com/library/windows/hardware/ff569172)
 -   [Human Input Devices](https://msdn.microsoft.com/library/windows/hardware/ff543301)
--   [Hardware Indicators](https://msdn.microsoft.com/library/windows/hardware/dn957503)
+-   [Hardware Notifications](https://msdn.microsoft.com/library/windows/hardware/dn957503)
 -   [Imaging Devices (Scanner)](https://msdn.microsoft.com/library/windows/hardware/ff546215)
 -   [Infrared Devices](https://msdn.microsoft.com/library/windows/hardware/ff539583)
 -   [Installable File System Drivers](https://msdn.microsoft.com/library/windows/hardware/ff551834)

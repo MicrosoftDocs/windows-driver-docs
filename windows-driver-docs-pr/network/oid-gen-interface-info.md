@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_INTERFACE\_INFO
+title: OID_GEN_INTERFACE_INFO
 author: windows-driver-content
 description: As a query, use the OID\_GEN\_INTERFACE\_INFO OID to obtain the current state and statistics information for a network interface.
 ms.assetid: fa1dd52f-7cf6-4e95-af15-02ae65fcb872

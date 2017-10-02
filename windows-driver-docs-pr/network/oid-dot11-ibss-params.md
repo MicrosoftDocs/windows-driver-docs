@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_IBSS\_PARAMS
+title: OID_DOT11_IBSS_PARAMS
 author: windows-driver-content
 description: When set, the OID\_DOT11\_IBSS\_PARAMS object identifier (OID) requests that the miniport driver set parameters to be used when connecting to an independent basic service set (IBSS) network.Note  IBSS (Ad hoc) and SoftAP are deprecated.
 ms.assetid: 5b0500ed-40c1-4e23-8610-e299bfe692db

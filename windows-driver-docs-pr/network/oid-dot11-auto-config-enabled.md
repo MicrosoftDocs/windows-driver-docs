@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_AUTO\_CONFIG\_ENABLED
+title: OID_DOT11_AUTO_CONFIG_ENABLED
 author: windows-driver-content
 description: OID\_DOT11\_AUTO\_CONFIG\_ENABLED
 ms.assetid: aefa79fb-e156-4b67-9008-ef88f4f32302

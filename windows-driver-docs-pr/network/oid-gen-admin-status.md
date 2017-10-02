@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_ADMIN\_STATUS
+title: OID_GEN_ADMIN_STATUS
 author: windows-driver-content
 description: As a query, use the OID\_GEN\_ADMIN\_STATUS OID to determine the administrative status for an interface (ifAdminStatus from RFC 2863).
 ms.assetid: e8f45521-7419-4c11-b84b-36d4d3306fc2

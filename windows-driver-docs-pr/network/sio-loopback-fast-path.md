@@ -1,5 +1,5 @@
 ---
-title: SIO\_LOOPBACK\_FAST\_PATH control code
+title: SIO_LOOPBACK_FAST_PATH control code
 author: windows-driver-content
 description: The SIO\_LOOPBACK\_FAST\_PATH socket I/O control code allows a WSK application to configure a TCP socket for faster operations on the loopback interface.
 ms.assetid: 5A5AD945-9EFD-4157-AFA4-F9C3995B7C43

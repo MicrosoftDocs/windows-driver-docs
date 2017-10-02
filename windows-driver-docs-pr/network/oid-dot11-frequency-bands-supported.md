@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_FREQUENCY\_BANDS\_SUPPORTED
+title: OID_DOT11_FREQUENCY_BANDS_SUPPORTED
 author: windows-driver-content
 description: OID\_DOT11\_FREQUENCY\_BANDS\_SUPPORTED
 ms.assetid: 14f9e174-dffc-45e3-8a8b-a7e204276f7c

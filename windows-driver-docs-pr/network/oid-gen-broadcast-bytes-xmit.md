@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_BROADCAST\_BYTES\_XMIT
+title: OID_GEN_BROADCAST_BYTES_XMIT
 author: windows-driver-content
 description: As a query, the OID\_GEN\_BROADCAST\_BYTES\_XMIT OID specifies the number of bytes in broadcast packets that are transmitted without errors.
 ms.assetid: a7df77fb-4319-4d15-9c12-5fd718395305
