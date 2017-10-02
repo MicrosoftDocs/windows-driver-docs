@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_RECEIVE\_BLOCK\_SIZE
+title: OID_GEN_RECEIVE_BLOCK_SIZE
 author: windows-driver-content
 description: As a query.
 ms.assetid: 92a7a388-4a41-41cf-96e5-a65b5559553d

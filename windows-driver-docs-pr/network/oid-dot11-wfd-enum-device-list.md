@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_WFD\_ENUM\_DEVICE\_LIST
+title: OID_DOT11_WFD_ENUM_DEVICE_LIST
 author: windows-driver-content
 description: When queried, the OID\_DOT11\_WFD\_ENUM\_DEVICE\_LIST object identifier (OID) requests that the miniport driver return the list of other devices within range of the Wi-Fi Direct (WFD) device.
 ms.assetid: 08264B77-BA5F-4352-A113-2FB5116F20B0

@@ -1,5 +1,5 @@
 ---
-title: OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE
+title: OID_RECEIVE_FILTER_ALLOCATE_QUEUE
 author: windows-driver-content
 description: Overlying drivers issue object identifier (OID) method requests of OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE to allocate a queue that has an initial set of configuration parameters.
 ms.assetid: 8dd7ab91-b752-46fd-ae1b-014dc0fb0157

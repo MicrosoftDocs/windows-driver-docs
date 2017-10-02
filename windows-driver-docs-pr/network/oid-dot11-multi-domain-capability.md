@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_MULTI\_DOMAIN\_CAPABILITY
+title: OID_DOT11_MULTI_DOMAIN_CAPABILITY
 author: windows-driver-content
 description: When queried, the OID\_DOT11\_MULTI\_DOMAIN\_CAPABILITY object identifier (OID) requests that the miniport driver return the list of supported regulatory domains associated with
 ms.assetid: 45115177-e641-47b9-8b40-ad2091db22bd

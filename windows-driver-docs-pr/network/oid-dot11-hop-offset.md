@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_HOP\_OFFSET
+title: OID_DOT11_HOP_OFFSET
 author: windows-driver-content
 description: OID\_DOT11\_HOP\_OFFSET
 ms.assetid: c72c870a-2909-4eb1-83fb-2f16610c9b14

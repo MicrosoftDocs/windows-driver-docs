@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_TRANSMIT\_BUFFER\_SPACE
+title: OID_GEN_TRANSMIT_BUFFER_SPACE
 author: windows-driver-content
 description: As a query, the OID\_GEN\_TRANSMIT\_BUFFER\_SPACE OID specifies the amount of memory, in bytes, on the NIC that is available for buffering transmit data.
 ms.assetid: 23d242fc-8447-4660-ab84-b8cbdb638a71

@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_ENABLE\_EVENTS
+title: IRP_MN_ENABLE_EVENTS
 author: windows-driver-content
 description: Any WMI driver that registers one or more event blocks must handle this IRP.
 ms.author: windowsdriverdev

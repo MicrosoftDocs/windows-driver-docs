@@ -1,5 +1,5 @@
 ---
-title: 'REMOTE\_NDIS\_RESET\_MSG'
+title: 'REMOTE_NDIS_RESET_MSG'
 author: windows-driver-content
 Description: 'This message is sent to a Remote NDIS device from a host to reset the device and return status.'
 ms.assetid: b5938b0d-75bf-497f-afeb-9950b383af5e

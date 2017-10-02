@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_PBCC\_OPTION\_IMPLEMENTED
+title: OID_DOT11_PBCC_OPTION_IMPLEMENTED
 author: windows-driver-content
 description: OID\_DOT11\_PBCC\_OPTION\_IMPLEMENTED
 ms.assetid: 38ef6940-05c1-42e4-a19e-68155f609239

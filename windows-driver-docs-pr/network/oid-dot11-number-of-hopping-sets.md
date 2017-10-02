@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_NUMBER\_OF\_HOPPING\_SETS
+title: OID_DOT11_NUMBER_OF_HOPPING_SETS
 author: windows-driver-content
 description: OID\_DOT11\_NUMBER\_OF\_HOPPING\_SETS
 ms.assetid: 8a61edff-9f9b-4e98-a2de-907d2d9fa836

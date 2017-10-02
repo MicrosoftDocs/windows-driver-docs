@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_ENABLED\_AUTHENTICATION\_ALGORITHM
+title: OID_DOT11_ENABLED_AUTHENTICATION_ALGORITHM
 author: windows-driver-content
 description: When set, the OID\_DOT11\_ENABLED\_AUTHENTICATION\_ALGORITHM object identifier (OID) requests that the miniport driver set the Extensible Station (ExtSTA) msDot11EnabledAuthAlgo management information base (MIB) object to the specified data.
 ms.assetid: d3c262b0-1b04-4a98-be2d-baae4abbd58f

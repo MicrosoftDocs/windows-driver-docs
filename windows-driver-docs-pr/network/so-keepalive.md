@@ -1,5 +1,5 @@
 ---
-title: SO\_KEEPALIVE
+title: SO_KEEPALIVE
 author: windows-driver-content
 description: SO\_KEEPALIVE
 ms.assetid: 47b29218-f227-4d36-b206-d8bf009252c0

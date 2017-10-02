@@ -1,5 +1,5 @@
 ---
-title: NDIS\_STATUS\_DOT11\_PHY\_FREQUENCY\_ADOPTED
+title: NDIS_STATUS_DOT11_PHY_FREQUENCY_ADOPTED
 author: windows-driver-content
 description: NDIS\_STATUS\_DOT11\_PHY\_FREQUENCY\_ADOPTED
 ms.assetid: f723fa8d-702c-48dd-9a66-7532cc476257

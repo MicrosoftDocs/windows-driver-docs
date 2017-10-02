@@ -1,5 +1,5 @@
 ---
-title: OID\_PM\_ADD\_PROTOCOL\_OFFLOAD
+title: OID_PM_ADD_PROTOCOL_OFFLOAD
 author: windows-driver-content
 description: As a set, NDIS protocol drivers use the OID\_PM\_ADD\_PROTOCOL\_OFFLOAD OID to add a protocol offload for power management to a network adapter.
 ms.assetid: 418f4ce8-64af-4e1e-877a-4cc606f63747

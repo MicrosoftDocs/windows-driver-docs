@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_QUERY\_SINGLE\_INSTANCE
+title: IRP_MN_QUERY_SINGLE_INSTANCE
 author: windows-driver-content
 description: All drivers that support WMI must handle this IRP.
 ms.author: windowsdriverdev

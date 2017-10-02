@@ -1,5 +1,5 @@
 ---
-title: NDIS\_STATUS\_DOT11\_CONNECTION\_START
+title: NDIS_STATUS_DOT11_CONNECTION_START
 author: windows-driver-content
 description: A miniport driver must make an NDIS\_STATUS\_DOT11\_CONNECTION\_START indication after the set request of OID\_DOT11\_CONNECT\_REQUEST.
 ms.assetid: 08602585-6ef9-4b9e-992f-5b16bd1855f0

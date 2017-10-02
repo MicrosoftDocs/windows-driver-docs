@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_CURRENT\_INDEX
+title: OID_DOT11_CURRENT_INDEX
 author: windows-driver-content
 description: OID\_DOT11\_CURRENT\_INDEX
 ms.assetid: bc22e608-fcc5-4ad3-bd6b-5fe42e166fdf
