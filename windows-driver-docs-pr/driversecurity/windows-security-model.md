@@ -218,25 +218,25 @@ The operating system kernel treats every driver, in effect, as a file system wit
 
 Drivers communicating with each other and to user mode callers of different privilege levels can be considered to be crossing a trust boundary. A trust boundary is any code execution path  that crosses from a lower privileged process into a higher privileged process.
 
-The higher the disparity is in the privilege levels the more interesting the boundary is for the attackers that want to perform a privilege escalation attack against the targeted driver or process.
+The higher the disparity in the privilege levels, the more interesting the boundary is for attackers that want to perform a privilege escalation attack against the targeted driver or process.
 
 Part of the process of creating a threat model is to examine the security boundaries and look for unanticipated paths. For more information, see [Threat modeling for drivers](threat-modeling-for-drivers.md). 
 
 Any data that crosses a trust boundary is untrusted and must be validated. 
 
-
 This diagram  shows three kernel drivers, and two apps, one in an app container and one that runs with admin rights. The red lines indicate example trust boundaries.
 
 ![driver attack surface showing three kernel drivers, and two apps, one in an app container](images/driver-security-attack-surface.png)
 
-As the app container can provide additional constraints, and is not running at admin level, the path (1) is a lower risk path. 
+As the app container can provide additional constraints, and is not running at admin level, path (1) is a lower risk path. 
 
-Path (2) is a higher risk path as the app is running at admin rights and is calling into a kernel driver. 
+Path (2) is a higher risk path, as the app is running with admin rights and is calling directly into the kernel driver. 
 
 Path (3) is an example of a code execution path that crosses multiple trust boundaries that could be missed if a threat model is not created.
 In this example, there is a trust boundary between driver 1 and driver 3, as driver 1 takes input from the user mode app and passes it directly to driver 3.
 
-All inputs coming into the driver from user mode is untrusted and should be validated, inputs coming from other drivers may also be untrusted depending on whether the previous driver was just a simple pass-through. Be sure to identify all attack surfaces and trust boundaries and validate all data crossing them.
+All inputs coming into the driver from user mode is untrusted and should be validated. Inputs coming from other drivers may also be untrusted depending on whether the previous driver was just a simple pass-through. Be sure to identify all attack surfaces and trust boundaries and validate all data crossing them, by creating a complete threat model.
+
 
 ## Windows Security Model Recommendations 
 
@@ -245,7 +245,7 @@ All inputs coming into the driver from user mode is untrusted and should be vali
 -   Set the FILE\_DEVICE\_SECURE\_OPEN characteristic to apply device object security settings to the device namespace.
 -   Do not define IOCTLs that permit FILE\_ANY\_ACCESS unless such access cannot be exploited maliciously.
 -   Use the **IoValidateDeviceIoControlAccess** routine to tighten security on existing IOCTLS that allow FILE\_ANY\_ACCESS.
--   Create a threat model to look examine the security boundaries and look for unanticipated paths. For more information, see [Threat modeling for drivers](threat-modeling-for-drivers.md). 
+-   Create a threat model to examine the security boundaries and look for unanticipated paths. For more information, see [Threat modeling for drivers](threat-modeling-for-drivers.md). 
 -   See [Driver security checklist](driver-security-checklist.md) for additional driver security recommendations.
 
 
