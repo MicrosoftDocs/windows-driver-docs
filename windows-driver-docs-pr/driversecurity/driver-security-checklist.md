@@ -3,7 +3,7 @@ title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
 ms.assetid: 25375E02-FCA1-4E94-8D9A-AA396C909278
 ms.author: windowsdriverdev
-ms.date: 09/26/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,13 +68,13 @@ In addition to avoiding the issues associated with a driver being attacked, many
 **Security checklist item \#1:** *Confirm that a kernel driver is required and that a lower risk approach, such as Windows service or app, is not a better option.*
 
 Drivers live in the Windows kernel, and having an issue when executing in kernel exposes the entire operating system. If any other option is available, it likely will be lower cost and have less associated risk than creating a new kernel driver.
-For more information about using the built in Windows drivers, see [Do you need to write a driver?](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/do-you-need-to-write-a-driver-).
+For more information about using the built in Windows drivers, see [Do you need to write a driver?](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/do-you-need-to-write-a-driver-).
 
-For information on using the lower risk user mode framework driver (UMDF), see [Choosing a driver model](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/choosing-a-driver-model).
+For information on using the lower risk user mode framework driver (UMDF), see [Choosing a driver model](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/choosing-a-driver-model).
 
 For information on using background tasks, see  [Support your app with background tasks](https://docs.microsoft.com/windows/uwp/launch-resume/support-your-app-with-background-tasks).
 
-For information on using Windows Services, see [Services](https://msdn.microsoft.com/en-us/library/windows/desktop/ms685141.aspx).
+For information on using Windows Services, see [Services](https://msdn.microsoft.com/library/windows/desktop/ms685141.aspx).
 
 
 ## <span id="controlsoftwareonly"></span>Control access to software only drivers
@@ -85,7 +85,7 @@ Software-only kernel drivers may not use plug-and-play (PnP) to become associate
 
 Because software-only kernel drivers contain additional risk, they must be limited to run on specific hardware (for example, by using a unique PnP ID to enable creation of a PnP driver, or by checking the SMBIOS table for the presence of specific hardware).
 
-Code signed by a trusted Software Publishers Certificate (SPC) or Windows Hardware Quality Labs (WHQL) signature must not facilitate bypass of Windows code integrity and security technologies.  Before code is signed by a trusted SPC or WHQL signature, first ensure it complies with guidance from both [Device.DevFund.Reliability.BasicSecurity](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1703/device-devfund#device.devfund.reliability) and [Creating Reliable Kernel-Mode Drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/creating-reliable-kernel-mode-drivers). In addition the code must not contain any dangerous behaviors, described below.  For more information about driver signing, see [Release driver signing](#releasedriversigning) later in this article.
+Code signed by a trusted Software Publishers Certificate (SPC) or Windows Hardware Quality Labs (WHQL) signature must not facilitate bypass of Windows code integrity and security technologies.  Before code is signed by a trusted SPC or WHQL signature, first ensure it complies with guidance from both [Device.DevFund.Reliability.BasicSecurity](https://docs.microsoft.com/windows-hardware/design/compatibility/1703/device-devfund#device.devfund.reliability) and [Creating Reliable Kernel-Mode Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/creating-reliable-kernel-mode-drivers). In addition the code must not contain any dangerous behaviors, described below.  For more information about driver signing, see [Release driver signing](#releasedriversigning) later in this article.
 
 Examples of dangerous behavior include the following:
 
@@ -335,7 +335,7 @@ For more information about using the tool, see [Use the Device Guard Readiness T
 For more information about the related device fundamentals test, see [Device.DevFund.DeviceGuard](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfunddeviceguard).
 
 For general information about Device Guard, see [Windows 10 Device Guard and Credential Guard Demystified](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/)
-and [Device Guard deployment guide](https://docs.microsoft.com/en-us/windows/device-security/device-guard/device-guard-deployment-guide).
+and [Device Guard deployment guide](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
 
 
 ## <span id="technologyspecificcodepractices"></span>Follow technology-specific code best practices
@@ -415,7 +415,7 @@ For more information, see the following articles:
 
 **Security Identifiers (SIDs) risk hierarchy** 
 
-The following section describes the risk hierarchy of the common SIDs used in driver code. For general information about SDDL, see [SDDL for Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff563667), [SID Strings](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379602.aspx), and [SDDL String Syntax](https://msdn.microsoft.com/en-us/library/cc230374.aspx). 
+The following section describes the risk hierarchy of the common SIDs used in driver code. For general information about SDDL, see [SDDL for Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff563667), [SID Strings](https://msdn.microsoft.com/library/windows/desktop/aa379602.aspx), and [SDDL String Syntax](https://msdn.microsoft.com/library/cc230374.aspx). 
 
 It is important to understand that if lower privilege callers are allowed to access the kernel, code risk is increased. In this summary diagram, the risk increases as you allow lower privilege SIDs access to your driver functionality.
 
@@ -435,13 +435,13 @@ Following the general least privilege security principle, configure only the min
 
 **Granular IOCTL security control**
 
-To tighten security when such IOCTLs are sent by user-mode callers, the driver code should include the [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550418.aspx) function. This function allows a driver to check access rights. Upon receiving an IOCTL, a driver can call [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550418.aspx), specifying FILE_READ_ACCESS, FILE_WRITE_ACCESS, or both. For more information, see the following articles:
+To tighten security when such IOCTLs are sent by user-mode callers, the driver code should include the [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/library/windows/hardware/ff550418.aspx) function. This function allows a driver to check access rights. Upon receiving an IOCTL, a driver can call [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/library/windows/hardware/ff550418.aspx), specifying FILE_READ_ACCESS, FILE_WRITE_ACCESS, or both. For more information, see the following articles:
 
-[Define and handle IOCTLs securely](https://msdn.microsoft.com/en-us/library/windows/hardware/dn613909.aspx#define_and_handle_ioctls_securely)
+[Define and handle IOCTLs securely](https://msdn.microsoft.com/library/windows/hardware/dn613909.aspx#define_and_handle_ioctls_securely)
 
-[IoValidateDeviceIoControlAccess routine](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550418.aspx)
+[IoValidateDeviceIoControlAccess routine](https://msdn.microsoft.com/library/windows/hardware/ff550418.aspx)
 
-[WdmlibIoValidateDeviceIoControlAccess function](https://msdn.microsoft.com/en-us/library/windows/hardware/mt800806.aspx)
+[WdmlibIoValidateDeviceIoControlAccess function](https://msdn.microsoft.com/library/windows/hardware/mt800806.aspx)
 
 [Defining I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/defining-i-o-control-codes)
 
@@ -753,7 +753,7 @@ To use Device Guard Readiness Tool, complete the following steps:
 <tr class="even">
 <td align="left"><p>Execute Page Mapping</p></td>
 <td align="left"><p>The caller specified an executable memory descriptor list (MDL) mapping.</p>
-<p> Make sure that the mask that is used contains MdlMappingNoExecute. For more information, see [MmGetSystemAddressForMdlSafe](https://msdn.microsoft.com/en-us/library/windows/hardware/ff554559.aspx)</p>
+<p> Make sure that the mask that is used contains MdlMappingNoExecute. For more information, see [MmGetSystemAddressForMdlSafe](https://msdn.microsoft.com/library/windows/hardware/ff554559.aspx)</p>
 </td>
 </tr>
 
@@ -773,7 +773,7 @@ To use Device Guard Readiness Tool, complete the following steps:
 <tr class="odd">
 <td align="left"><p>Unsupported Relocs</p></td>
 <td align="left"><p>In Windows 10, version 1507 through Windows 10, version 1607, because of the use of Address Space Layout Randomization (ASLR) an issue can arise with address alignment and memory relocation.  The operating system needs to relocate the address from where the linker set its default base address to the actual location that ASLR assigned. This relocation cannot straddle a page boundary.  For example, consider a 64-bit address value that starts at offset 0x3FFC in a page. It’s address value overlaps over to the next page at offset 0x0003. This type of overlapping relocs is not supported prior to Windows 10, version 1703.</p>
-<p>This situation can occur when a global struct type variable initializer has a misaligned pointer to another global, laid out in such a way that the linker cannot move the variable to avoid the straddling relocation. The linker will attempt to move the variable, but there are situations where it may not be able to do so (for example with large misaligned structs or large arrays of misaligned structs). Where appropriate, modules should be assembled using the [/Gy (COMDAT)](https://docs.microsoft.com/en-us/cpp/build/reference/gy-enable-function-level-linking) option to allow the linker to align module code as much as possible.</p>
+<p>This situation can occur when a global struct type variable initializer has a misaligned pointer to another global, laid out in such a way that the linker cannot move the variable to avoid the straddling relocation. The linker will attempt to move the variable, but there are situations where it may not be able to do so (for example with large misaligned structs or large arrays of misaligned structs). Where appropriate, modules should be assembled using the [/Gy (COMDAT)](https://docs.microsoft.com/cpp/build/reference/gy-enable-function-level-linking) option to allow the linker to align module code as much as possible.</p>
 
 
 
@@ -842,7 +842,7 @@ BAD_STRUCT MayHaveStraddleRelocations[4096] = { // as a global variable
 <td align="left"><p>IAT in Executable Section</p></td>
 <td align="left"><p>The import address table (IAT), should not be an executable section of memory.</p>
 <p>This issue occurs when the IAT, is located in a Read and Execute (RX) only section of memory. This means that the OS will not be able to write to the IAT to set the correct addresses for where the referenced DLL. </p>
-<p> One way that this can occur is when using the [/MERGE (Combine Sections)](https://docs.microsoft.com/en-us/cpp/build/reference/merge-combine-sections) option in code linking. For example if .rdata (Read-only initialized data) is merged with .text data (Executable code), it is possible that the IAT may end up in an executable section of memory.  </p>
+<p> One way that this can occur is when using the [/MERGE (Combine Sections)](https://docs.microsoft.com/cpp/build/reference/merge-combine-sections) option in code linking. For example if .rdata (Read-only initialized data) is merged with .text data (Executable code), it is possible that the IAT may end up in an executable section of memory.  </p>
 </td>
 </tr>
 
