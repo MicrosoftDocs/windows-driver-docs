@@ -30,15 +30,25 @@ USBAudio.Sys fits within the wider architecture of Windows USB Audio as shown.
 
 ![stack diagram showing Kmixer.sys at the top and a USB audio device at the bottom](images/usb-2-0-audio-arch.png)
 
-## Audio Formats
-The driver supports the formats listed below. An alternate setting which specifies another format defined in FMT20, or an unknown format, will be ignored.
+## Related USB specifications
 
-Type I formats (FMT20 2.3.1):
+The following USB specifications define USB Audio and are referenced in this topic.
+
+-	USB-2 refers to the Universal Serial Bus Specification, Revision 2.0
+-	ADC-2 refers to the USB Device Class Definition for Audio Devices, Release 2.0.
+-	FMT-2 refers to the Audio Data Formats specification, Release 2.0.
+
+The USB-IF is a special interest group that maintains the [Official USB Specification](http://www.usb.org/developers/docs/), test specifications and tools. 
+
+## Audio formats
+The driver supports the formats listed below. An alternate setting which specifies another format defined in FMT-2, or an unknown format, will be ignored.
+
+Type I formats (FMT-2 2.3.1):
 -	PCM Format with 8..32 bits per sample (FMT20 2.3.1.7.1)
--	PCM8 Format (FMT20 2.3.1.7.2)
--	IEEE_FLOAT Format (FMT20 2.3.1.7.3)
+-	PCM8 Format (FMT-2 2.3.1.7.2)
+-	IEEE_FLOAT Format (FMT-2 2.3.1.7.3)
 
-Type III formats (FMT20 2.3.3 and A.2.3):
+Type III formats (FMT-2 2.3.3 and A.2.3):
 -	IEC61937_AC-3
 -	IEC61937_MPEG-2_AAC_ADTS
 -	IEC61937_DTS-I
@@ -49,13 +59,7 @@ Type III formats (FMT20 2.3.3 and A.2.3):
 
 ## Feature descriptions
 
-This section describes the features of the of the USB 2.0 driver. The following USB specificiation are referenced.
-
--	USB-2 refers to the Universal Serial Bus Specification, Revision 2.0
--	ADC-2 refers to the USB Audio Device Class specification, Release 2.0.
--	FMT-2 refers to the Audio Data Formats specification, Release 2.0.
-
-The USB-IF is a special interest group that maintains the [Official USB Specification](http://www.usb.org/developers/docs/), test specifications and tools. 
+This section describes the features of the of the USB 2.0 driver. 
 
 ### Audio function topology - (ADC-2.0 3.13)
 
@@ -63,7 +67,7 @@ The driver supports all entity types defined in ADC-2 3.13.
 
 Each Terminal Entity must have a valid clock connection. The clock path may optionally include Clock Multiplier and Clock Selector units and must end in a Clock Source Entity.
 
-The driver supports one single clock source only. If a device implements multiple clock source entities and a clock selector then the driver will use the clock source that is selected by default and will not modify the clock selector’s position.
+The driver supports one single clock source only. If a device implements multiple clock source entities and a clock selector, then the driver will use the clock source that is selected by default and will not modify the clock selector’s position.
 
 A Processing Unit (ADC-2 3.13.9) with more than one input pin is not supported.
 
@@ -72,7 +76,8 @@ An Extension Unit (ADC-2 3.13.10) with more than one input pin is not supported.
 Cyclic paths in the topology are not allowed.
 
 
-### Audio Streaming
+### Audio streaming
+
 The driver supports the following endpoint synchronization types (USB-2 5.12.4.1):
 
  -	Asynchronous IN and OUT
@@ -92,7 +97,7 @@ An audio function must implement exactly one AudioControl  Interface Descriptor 
 
 The driver supports all descriptor types defined in ADC20, section 4. The following subsections provide comments on some specific descriptor types.
 
-### Class-Specific AS Interface Descriptor (ADC-2 4.9.2)
+### Class-Specific AS interface descriptor (ADC-2 4.9.2)
 
 An AS interface descriptor must start with alternate setting zero with no endpoint (no bandwidth consumption) and further alternate settings must be specified in ascending order.
 
@@ -108,23 +113,70 @@ For Type I formats, exactly one bit must be set to one in the bmFormats field of
 
 To save bus bandwidth, one AS interface can implement multiple alternate settings with the same format (in terms of bNrChannels  and AS Format Type Descriptor) but different wMaxPacketSize values in the isochronous data endpoint descriptor. For a given sample rate, the driver selects the alternate setting with the smallest wMaxPacketSize that can fulfill the data rate requirements.
 
-### Type I Format Type Descriptor (FMT-2 2.3.1.6)
+### Type I format type descriptor (FMT-2 2.3.1.6)
 
 The following restrictions apply:
 
-Type I PCM format: 		1 <= bSubslotSize <= 4		8 <= bBitResolution <= 32
-Type I PCM8 format:		bSubslotSize == 1		bBitResolution == 8
-Type I IEEE_FLOAT format:	bSubslotSize == 4		bBitResolution == 32
-Type III IEC61937 formats:	bSubslotSize == 2		bBitResolution == 16
-Class-Specific AS Isochronous Audio Data Endpoint Descriptor (ADC20 4.10.1.2)
+|                            |                        |                               |
+|----------------------------|------------------------|-------------------------------|
+| Type I PCM format: 		 | 1 <= bSubslotSize <= 4 |		8 <= bBitResolution <= 32 |
+| Type I PCM8 format:		 | bSubslotSize == 1	  | 	bBitResolution == 8       |
+| Type I IEEE_FLOAT format:	 | bSubslotSize == 4	  | 	bBitResolution == 32      | 
+| Type III IEC61937 formats: | bSubslotSize == 2	  | 	bBitResolution == 16      |
+
+
+### Class-Specific AS isochronous audio data endpoint descriptor (ADC-2 4.10.1.2)
+
 The MaxPacketsOnly flag in the bmAttributes field is not supported and will be ignored.
+
 The fields bmControls, bLockDelayUnits and wLockDelay will be ignored.
 
-## Class Requests and Interrupt Data Messages
 
-The driver supports a subset of the control requests defined in ADC20, section 5.2, and supports interrupt data messages (ADC20 6.1) for some controls. The following table shows the subset that is implemented in the driver.
+## Class requests and interrupt data messages
+
+The driver supports a subset of the control requests defined in ADC-2, section 5.2, and supports interrupt data messages (ADC-2 6.1) for some controls. The following table shows the subset that is implemented in the driver.
+
+| Entity           | Control                    | GET CUR | SET CUR | GET RANGE | INTERRUPT |
+|------------------|----------------------------|---------|---------|-----------|-----------|
+| Clock Source     | Sampling Frequency Control | x       | x       | x         |           |
+| Clock Selector   | Clock Selector Control     | x       |         |           |           |
+| Clock Multiplier | Numerator Control          | x       |         |           |           |
+|                  | Denominator Control        | x       |         |           |           |
+| Terminal         | Connector Control          | x       |         |           | x         |
+| Mixer Unit       | Mixer Control              | x       | x       | x         |           |
+| Selector Unit    | Selector Control           | x       | x       |           |           |
+| Feature Unit     | Mute Control               | x       | x       |           | x         |
+|                  | Volume Control             | x       | x       | x         | x         |
+|                  | Automatic Gain Control     | x       | x       |           |           |
+| Effect Unit      | –                          |         |         |           |           |
+| Processing Unit  | –                          |         |         |           |           |
+| Extension Unit   | –                          |         |         |           |           |
 
 
+Additional information on the controls and requests is available in the following subsections.
+
+### Clock source entity (ADC-2 5.2.5.1)
+
+At a minimum, a Clock Source Entity must implement Sampling Frequency Control GET RANGE and GET CUR requests (ADC-2 5.2.5.1.1).
+
+The Sampling Frequency Control GET RANGE request returns a list of subranges (ADC-2 5.2.1). Each subrange describes a discrete frequency, or a frequency range. A discrete sampling frequency must be expressed by setting MIN and MAX fields to the respective frequency and RES to zero. Individual subranges must not overlap. If a subrange overlaps a previous one, it will be ignored by the driver.
+
+A Clock Source Entity which implements one single fixed frequency only does not need to implement Sampling Frequency Control SET CUR. It implements GET CUR which returns the fixed frequency, and it implements GET RANGE which reports one single discrete frequency.
+
+### Feature unit (ADC-2 5.2.5.7)
+
+The driver supports one single volume range only. If the Volume Control GET RANGE request returns more than one range, then subsequent ranges will be ignored.
+
+The volume interval expressed by the MIN and MAX fields should be an integer multiple of the step size specified in the RES field.
+
+If a feature unit implements single channel controls as well as a master control for Mute or Volume, then the driver uses the single channel controls and ignores the master control.
+
+
+### Clock selector entity (ADC-2 5.2.5.2)
+
+The Clock Selector Control GET CUR request (ADC-2 5.2.5.2.1) must be implemented. 
+
+The driver uses the Clock Source Entity which is selected by default and never issues a Clock Selector Control SET CUR request.
 
 
 ## Additional Information for OEM and IHVs
@@ -144,26 +196,40 @@ The in-box driver registers for the following compatible IDs
     Class_01 SubClass_02 Prot_20
     Class_01 SubClass_03 Prot_20
 
-## IHV USB 2.0 Audio Drivers and Updates
+
+ This table provides the audio interface subclass codes.   
+
+| Audio Interface Subclass Codes   |  Value              |
+|----------------------------------|---------------------|
+| INTERFACE_SUBCLASS_UNDEFINED     |    0X00             |
+| AUDIOCONTROL                     |    0X01             |
+| AUDIOSTREAMING                   |    0X02             |
+| MIDISTREAMING                    |    0X03             |
+
+
+## IHV USB 2.0 audio drivers and updates
 For IHV provided third party driver USB 2.0 drivers, those drivers will continue to be preferred for their devices over our in-box driver unless they update their driver to explicitly override this behavior and use the in-box driver. 
 
 
-## Trouble Shooting
+## Troubleshooting
 If the driver does not start, the system event log should be checked. The driver logs events which indicate the reason for the failure.
 
 
-## Driver Development 
+## Driver development 
 
 This driver was developed by Thesycon and is supported by Microsoft.
 
 
 
-### See Also
+### See also
 
 [Windows Driver Model (WDM)](https://msdn.microsoft.com/library/windows/hardware/ff565698)
+
 [Audio Drivers Overview](https://docs.microsoft.com/windows-hardware/drivers/audio/getting-started-with-wdm-audio-drivers)
+
 [WaveRT Port Driver](https://docs.microsoft.com/windows-hardware/drivers/audio/introducing-the-wavert-port-driver)
-[low-latency-audio](https://docs.microsoft.com/windows-hardware/drivers/audio/low-latency-audio)
+
+[Low Latency Audio](https://docs.microsoft.com/windows-hardware/drivers/audio/low-latency-audio)
 
 
 --------------------
