@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_QUERY\_CAPABILITIES
+title: IRP_MN_QUERY_CAPABILITIES
 author: windows-driver-content
 description: The PnP manager sends this IRP to get the capabilities of a device, such as whether the device can be locked or ejected.Function and filter drivers can handle this request if they alter the capabilities supported by the bus driver.
 ms.author: windowsdriverdev

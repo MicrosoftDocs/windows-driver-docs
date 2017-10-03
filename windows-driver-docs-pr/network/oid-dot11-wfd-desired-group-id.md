@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_WFD\_DESIRED\_GROUP\_ID
+title: OID_DOT11_WFD_DESIRED_GROUP_ID
 author: windows-driver-content
 description: When set, the OID\_DOT11\_WFD\_DESIRED\_GROUP\_ID object identifier (OID) sets WFD group identifier that the miniport should use when starting as the WFD Group Owner (GO).
 ms.assetid: BCE476DA-A9CD-4B50-AA89-8B604FDCE1E8

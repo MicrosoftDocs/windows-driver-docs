@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_WFD\_FLUSH\_DEVICE\_LIST
+title: OID_DOT11_WFD_FLUSH_DEVICE_LIST
 author: windows-driver-content
 description: When set, the OID\_DOT11\_WFD\_FLUSH\_DEVICE\_LIST object identifier (OID) requests that the miniport driver clear the device list cached in the Wi-Fi Direct (WFD) device.
 ms.assetid: B9A281B8-331B-47D3-BB00-36BFC7948DE0

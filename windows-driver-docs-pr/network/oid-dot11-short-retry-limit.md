@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_SHORT\_RETRY\_LIMIT
+title: OID_DOT11_SHORT_RETRY_LIMIT
 author: windows-driver-content
 description: OID\_DOT11\_SHORT\_RETRY\_LIMIT
 ms.assetid: ccf0f3ef-179d-4b9c-b98a-c942e4e37f59

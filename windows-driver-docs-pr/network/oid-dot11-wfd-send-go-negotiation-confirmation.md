@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_WFD\_SEND\_GO\_NEGOTIATION\_CONFIRMATION
+title: OID_DOT11_WFD_SEND_GO_NEGOTIATION_CONFIRMATION
 author: windows-driver-content
 description: When set, the OID\_DOT11\_WFD\_SEND\_GO\_NEGOTIATION\_CONFIRMATION object identifier (OID) provides the miniport driver with the parameters for a Group Owner (GO) negotiation confirmation.
 ms.assetid: 4D836BED-F3F0-4224-9438-C39B8122EE03

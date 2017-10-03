@@ -1,5 +1,5 @@
 ---
-title: OID\_WWAN\_SLOT\_INFO
+title: OID_WWAN_SLOT_INFO
 author: windows-driver-content
 description: OID\_WWAN\_SLOT\_INFO retrieves a high-level aggregated status of a specified UICC slot and the card within it (if any). It may also be used to deliver an unsolicited notification when the status of one of the slots changes.
 ms.assetid: 6267D480-5055-4A7A-B2A0-F4DF9154DCD7

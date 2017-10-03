@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_RECV\_SENSITIVITY\_LIST
+title: OID_DOT11_RECV_SENSITIVITY_LIST
 author: windows-driver-content
 description: When queried, the OID\_DOT11\_RECV\_SENSITIVITY\_LIST object identifier (OID) requests that the miniport driver return the list of receive sensitivity ranges for all data rates supported on a PHY.
 ms.assetid: 6220b866-b914-4bc9-9a26-13f2109736e6

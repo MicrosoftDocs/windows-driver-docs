@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_SUPPORTED\_RX\_ANTENNA
+title: OID_DOT11_SUPPORTED_RX_ANTENNA
 author: windows-driver-content
 description: OID\_DOT11\_SUPPORTED\_RX\_ANTENNA
 ms.assetid: 03159f85-e69b-4510-b429-507d1a2f517b

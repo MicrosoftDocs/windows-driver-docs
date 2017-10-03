@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_DISASSOCIATE\_PEER\_REQUEST
+title: OID_DOT11_DISASSOCIATE_PEER_REQUEST
 author: windows-driver-content
 description: OID\_DOT11\_DISASSOCIATE\_PEER\_REQUEST
 ms.assetid: d12e6374-bc2f-4302-b0ba-24d0b6687849

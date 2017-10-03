@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_ALIAS
+title: OID_GEN_ALIAS
 author: windows-driver-content
 description: As a query, use the OID\_GEN\_ALIAS OID to obtain the alias string for an interface (ifAlias from RFC 2863). Version Information Windows Vista and laterSupported. NDIS 6.0 and later miniport driversNot requested. For NDIS interface providers only.
 ms.assetid: ff5e6494-aa4e-4a0a-b773-64b612236c8c

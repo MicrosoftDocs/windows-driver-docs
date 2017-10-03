@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_WRITE\_CONFIG
+title: IRP_MN_WRITE_CONFIG
 author: windows-driver-content
 description: Bus drivers for buses with configuration space must handle this request for their child devices (child PDOs). Function and filter drivers do not handle this request.
 ms.author: windowsdriverdev
