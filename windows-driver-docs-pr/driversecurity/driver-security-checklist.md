@@ -1020,7 +1020,6 @@ SAFECode - [https://www.safecode.org/](https://www.safecode.org/)
 
 [Still Feeling Insecure? - IoCreateDeviceSecure( ) for Windows](http://www.osronline.com/article.cfm?article=105)
 
-[Locking Down Drivers - A Survey of Techniques](http://www.osronline.com/article.cfm?article=357)
 
 **Sample Driver Code**
 
