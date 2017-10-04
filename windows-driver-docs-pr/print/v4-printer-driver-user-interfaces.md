@@ -17,7 +17,7 @@ V4 print drivers support customization in both the Windows Desktop UI, and the W
 
 Due to the very different natures of these experiences, these UIs must be implemented as two different applications. However, both are built upon a common COM API provided by the configuration module. Printer extensions support v4 print drivers in the desktop and work with all existing applications. And printer extensions also work in printer sharing scenarios with the enhanced Point and Print driver. Support is planned for all operating systems from Windows Vista through Windows 8.
 
-Windows Store device apps support v4 print drivers in the Windows Store app UI. For more information about developing Windows Store device apps, see the [Developing a Windows Store device app for Printing](http://msdn.microsoft.com/library/windows/hardware/br259129.aspx) whitepaper.
+UWP device apps support v4 print drivers in the Windows Store app UI. For more information about developing UWP device apps, see [Developing a UWP device app for printing](http://msdn.microsoft.com/library/windows/hardware/br259129.aspx).
 
 The following diagram shows a high level overview of the communication architecture between customized UIs and the print system.
 
@@ -35,7 +35,7 @@ The following topics provide a more detailed look at the v4 print driver's suppo
 
 [Printer Extensions](printer-extensions.md)
 
-[Windows Store device apps for Printers](windows-store-device-apps-for-printers.md)
+[UWP device apps for Printers](uwp-device-apps-for-printers.md)
 
 ## Related topics
 [v4 Printer Driver](v4-printer-driver.md)  
