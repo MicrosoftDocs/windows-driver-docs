@@ -174,9 +174,7 @@ If a feature unit implements single channel controls as well as a master control
 
 ### Clock selector entity (ADC-2 5.2.5.2)
 
-The Clock Selector Control GET CUR request (ADC-2 5.2.5.2.1) must be implemented in compatible USB Audio 2.0 hardware. 
-
-The driver uses the Clock Source Entity which is selected by default and never issues a Clock Selector Control SET CUR request.
+The USB Audio 2.0 driver does not support clock selection. The driver uses the Clock Source Entity which is selected by default and never issues a Clock Selector Control SET CUR request. The Clock Selector Control GET CUR request (ADC-2 5.2.5.2.1) must be implemented in compatible USB Audio 2.0 hardware. 
 
 
 ## Additional Information for OEM and IHVs
