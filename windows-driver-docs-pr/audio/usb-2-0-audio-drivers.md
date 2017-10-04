@@ -99,7 +99,7 @@ The driver supports all descriptor types defined in ADC20, section 4. The follow
 
 ### Class-Specific AS interface descriptor (ADC-2 4.9.2)
 
-An AS interface descriptor must start with alternate setting zero with no endpoint (no bandwidth consumption) and further alternate settings must be specified in ascending order in in compatible USB Audio 2.0 hardware.
+An AS interface descriptor must start with alternate setting zero with no endpoint (no bandwidth consumption) and further alternate settings must be specified in ascending order in compatible USB Audio 2.0 hardware.
 
 An alternate setting with a format that is not supported by the driver will be ignored.
 
