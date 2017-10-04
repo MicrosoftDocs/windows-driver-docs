@@ -21,7 +21,9 @@ This topic describes how to associate your [Universal Windows Platform (UWP)](ht
 
 The steps required by the owner of the driver or RPC endpoint are described in [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](creating-a-custom-capability-to-pair-driver-with-hsa.md).
 
-Before you get started, install the latest version of Visual Studio and create an UWP app project.  For more info, see [Develop Windows Store apps using Visual Studio](https://developer.microsoft.com/en-us/windows/apps/develop).
+Before you get started, install the latest version of Visual Studio and create an UWP app project.  To build a UWP app with a custom capability, you'll need Windows SDK version 10.0.15063 (Windows 10 Creators Update) or later. For more help getting configured, see [Develop Windows Store apps using Visual Studio](https://developer.microsoft.com/en-us/windows/apps/develop).
+
+In current Windows Insider builds, you can specify that a Universal Windows Platform (UWP) app should only load if a specific driver is present.  To learn how, see [Pairing a driver with a UWP app](../install/pairing-app-and-driver-versions.md).
 
 ## Create a Windows Store account
 
@@ -82,7 +84,11 @@ Then copy the SCCD file to the package root of the appx package. In Visual Studi
 
 ![Adding an SCCD file into the appx package](images/addSCCDToAppx.png)
 
-Finally, right click the project, select **Store**, then **Create App Packages**.
+Mark the SCCD as build content by right clicking on the SCCD file and changing **Content** to **True**.  For a C# project, use the property `Build Action = Content`, and for a JavaScript project, use `Package Action = Content`. 
+
+![Marking SCCD as content](images/markSCCDAsContent.png)
+
+Finally, right-click the project, select **Store**, then **Create App Packages**.
 
 **Note**: There is no support for UWP apps with custom capabilities on mobile platforms.
 

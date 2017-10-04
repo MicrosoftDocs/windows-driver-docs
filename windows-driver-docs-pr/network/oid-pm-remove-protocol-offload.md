@@ -1,5 +1,5 @@
 ---
-title: OID\_PM\_REMOVE\_PROTOCOL\_OFFLOAD
+title: OID_PM_REMOVE_PROTOCOL_OFFLOAD
 author: windows-driver-content
 description: As a set request, NDIS and protocol drivers use the OID\_PM\_REMOVE\_PROTOCOL\_OFFLOAD OID to remove a power management protocol offload from a network adapter.
 ms.assetid: efca3018-28bf-4d91-b698-4b1c9e02f6e3

@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_WFD\_DISCONNECT\_FROM\_GROUP\_REQUEST
+title: OID_DOT11_WFD_DISCONNECT_FROM_GROUP_REQUEST
 author: windows-driver-content
 ms.assetid: C0AE95DB-8186-4B89-8115-B6B300FD8D73
 description: 

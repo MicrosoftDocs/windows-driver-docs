@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_EHCC\_CAPABILITY\_ENABLED
+title: OID_DOT11_EHCC_CAPABILITY_ENABLED
 author: windows-driver-content
 description: OID\_DOT11\_EHCC\_CAPABILITY\_ENABLED
 ms.assetid: 3c930dd2-3351-4c3d-911c-8e4aabd1ac91

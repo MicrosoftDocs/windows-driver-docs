@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_STATISTICS
+title: OID_DOT11_STATISTICS
 author: windows-driver-content
 description: When queried, the OID\_DOT11\_STATISTICS object identifier (OID) requests that the miniport driver return the statistics for the IEEE 802.11 interface, including
 ms.assetid: 631f29fb-c59f-4ecf-9d63-cde348270315

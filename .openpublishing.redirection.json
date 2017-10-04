@@ -16,6 +16,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows-driver-docs-pr/develop/visual-studio-driver-development-environment.md",
+      "redirect_URL": "/windows-hardware/drivers/develop/index",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/devtest/28114---copying-a-whole-irp-leaves-certain-fields-initialized-that-sho.md",
       "redirect_URL": "/windows-hardware/drivers/devtest/28114-improper-irp-stack-copy ",
       "redirect_document_id": true

@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_HIDDEN\_NETWORK\_ENABLED
+title: OID_DOT11_HIDDEN_NETWORK_ENABLED
 author: windows-driver-content
 description: OID\_DOT11\_HIDDEN\_NETWORK\_ENABLED
 ms.assetid: ecbcc751-3c05-464e-adee-d07463bc3b1b

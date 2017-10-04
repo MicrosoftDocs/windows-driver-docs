@@ -1,5 +1,5 @@
 ---
-title: OID\_QOS\_REMOTE\_PARAMETERS
+title: OID_QOS_REMOTE_PARAMETERS
 author: windows-driver-content
 description: An overlying driver issues an object identifier (OID) query request of OID\_QOS\_REMOTE\_PARAMETERS to obtain the NDIS Quality of Service (QoS) parameters for a remote peer.
 ms.assetid: F9DA87FF-577F-4E06-929B-4AD65105B2F0

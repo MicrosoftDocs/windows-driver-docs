@@ -1,5 +1,5 @@
 ---
-title: NDIS\_MAKE\_NET\_LUID macro
+title: NDIS_MAKE_NET_LUID macro
 author: windows-driver-content
 description: The NDIS\_MAKE\_NET\_LUID macro builds a NET\_LUID value from an interface type and a NET\_LUID index.
 ms.assetid: 57b04978-8f02-4d35-9e4a-0929cb79aabb

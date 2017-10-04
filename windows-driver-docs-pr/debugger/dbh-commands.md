@@ -248,7 +248,7 @@ The following table lists the commands that display and search for symbols.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>elines</strong> [<em>Source</em> [<em>Obj</em>]]</p></td>
-<td align="left"><p>Enumerates all source lines matching the specified source mask and object mask. <em>Source</em> specifies the name of the source file, including the absolute path and file name extension. <em>Obj</em> specifies the name of the object file, including the relative path and file name extension. Both <em>Source</em> and <em>Obj</em> may contain a variety of wildcard characters and specifiers; see [String Wildcard Syntax](string-wildcard-syntax.md) for details. If a parameter is omitted this is equivalent to using the asterisk (<strong>*</strong>) wildcard. If you do not wish to specify path information, prefix the file name with <strong>*\</strong> to indicate a wildcard path.</p></td>
+<td align="left"><p>Enumerates all source lines matching the specified source mask and object mask. <em>Source</em> specifies the name of the source file, including the absolute path and file name extension. <em>Obj</em> specifies the name of the object file, including the relative path and file name extension. Both <em>Source</em> and <em>Obj</em> may contain a variety of wildcard characters and specifiers; see [String Wildcard Syntax](string-wildcard-syntax.md) for details. If a parameter is omitted this is equivalent to using the asterisk (<strong>\*</strong>) wildcard. If you do not wish to specify path information, prefix the file name with <strong>\*\\</strong> to indicate a wildcard path.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>index</strong> <em>Value</em></p></td>

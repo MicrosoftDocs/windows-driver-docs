@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_POWER\_MGMT\_MODE\_STATUS
+title: OID_DOT11_POWER_MGMT_MODE_STATUS
 author: windows-driver-content
 description: This OID supports Query operation. Windows issues this OID to query the status of the power mode.
 ms.assetid: 6B232446-3CF7-44F8-A1C9-6431D28F3EDA

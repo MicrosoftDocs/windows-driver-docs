@@ -259,7 +259,7 @@ In another example, you have two devices, and one device sends more trace messag
 The system defines maximum and minimum buffer sizes in the registry. You can set these values appropriately to conserve memory and configure logging capabilities.
 
 ```
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\\<serviceName>\Parameters
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\<serviceName>\Parameters
    WppRecorder_PerBufferMinBytes
    Data type
    REG_DWORD

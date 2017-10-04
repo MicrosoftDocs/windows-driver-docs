@@ -1,5 +1,5 @@
 ---
-title: OID\_WWAN\_DEVICE\_SERVICE\_COMMAND
+title: OID_WWAN_DEVICE_SERVICE_COMMAND
 author: windows-driver-content
 description: OID\_WWAN\_DEVICE\_SERVICE\_COMMAND allows miniport drivers to implement vendor specific commands.NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_RESPONSE status notification containing a vendor-defined structure (NDIS\_WWAN\_DEVICE\_SERVICE\_COMMAND) to provide responses when they have completed the transaction.
 ms.assetid: 296E2D23-6EDA-4480-91A3-B6CB39243DAD

@@ -1,5 +1,5 @@
 ---
-title: OID\_SRIOV\_WRITE\_VF\_CONFIG\_SPACE
+title: OID_SRIOV_WRITE_VF_CONFIG_SPACE
 author: windows-driver-content
 description: An overlying driver issues an object identifier (OID) set request of OID\_SRIOV\_WRITE\_VF\_CONFIG\_SPACE to write data to the PCI Express (PCIe) configuration space for a specified PCIe Virtual Function (VF) on the network adapter.
 ms.assetid: 0D9866A6-A8C6-4B0A-8D17-A632E1AE37BF

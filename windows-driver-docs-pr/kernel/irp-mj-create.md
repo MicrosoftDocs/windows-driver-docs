@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_CREATE
+title: IRP_MJ_CREATE
 author: windows-driver-content
 description: Every kernel-mode driver must handle IRP\_MJ\_CREATE requests in a DispatchCreate or DispatchCreateClose routine.
 ms.author: windowsdriverdev

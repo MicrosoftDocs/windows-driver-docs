@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_DSSS\_OFDM\_OPTION\_IMPLEMENTED
+title: OID_DOT11_DSSS_OFDM_OPTION_IMPLEMENTED
 author: windows-driver-content
 description: OID\_DOT11\_DSSS\_OFDM\_OPTION\_IMPLEMENTED
 ms.assetid: f8da0630-5f34-4ee6-8f0c-9404bb2e1ce5

@@ -1,5 +1,5 @@
 ---
-title: NDIS\_STATUS\_DOT11\_SCAN\_CONFIRM
+title: NDIS_STATUS_DOT11_SCAN_CONFIRM
 author: windows-driver-content
 description: NDIS\_STATUS\_DOT11\_SCAN\_CONFIRM
 ms.assetid: 065055c1-8fa5-46ac-827b-47e79670d10f
