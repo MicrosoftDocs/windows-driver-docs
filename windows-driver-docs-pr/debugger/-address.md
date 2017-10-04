@@ -266,7 +266,7 @@ Displays the output according to one of the following options.
 </tr>
 <tr class="odd">
 <td align="left"><p>1</p></td>
-<td align="left"><p>Displays the output in bare format. This format works well when <strong>!address</strong> is used as input to [<strong>.foreach</strong>](-foreach.md).</p></td>
+<td align="left"><p>Displays the output in bare format. This format works well when <strong>!address</strong> is used as input to <strong>[.foreach](-foreach.md)</strong>.</p></td>
 </tr>
 </tbody>
 </table>

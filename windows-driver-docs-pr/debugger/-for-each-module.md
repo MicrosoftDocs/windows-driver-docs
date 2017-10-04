@@ -131,7 +131,7 @@ You can use the following aliases in *CommandString* or in any script that the c
 <tr class="odd">
 <td align="left"><p>@#TimeDateStamp</p></td>
 <td align="left"><p>ULONG</p></td>
-<td align="left"><p>The time and date stamp of the image. If you want to expand this time and date stamp into a readable date, use the [<strong>.formats (Show Number Formats)</strong>](-formats--show-number-formats-.md) command.</p></td>
+<td align="left"><p>The time and date stamp of the image. If you want to expand this time and date stamp into a readable date, use the <strong>[.formats (Show Number Formats)](-formats--show-number-formats-.md)</strong> command.</p></td>
 </tr>
 <tr class="even">
 <td align="left"></td>

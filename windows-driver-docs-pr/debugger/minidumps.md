@@ -58,7 +58,7 @@ If you are creating a minidump file with the debugger, you can choose exactly wh
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/mt</strong></p></td>
-<td align="left"><p>Adds additional thread information to the minidump. This includes thread times, which can be displayed by using [<strong>.ttime (Display Thread Times)</strong>](-ttime--display-thread-times-.md) when debugging the minidump.</p></td>
+<td align="left"><p>Adds additional thread information to the minidump. This includes thread times, which can be displayed by using <strong>[.ttime (Display Thread Times)](-ttime--display-thread-times-.md)</strong> when debugging the minidump.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/mi</strong></p></td>
