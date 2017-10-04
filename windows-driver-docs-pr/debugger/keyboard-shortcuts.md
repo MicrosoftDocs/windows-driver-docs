@@ -329,7 +329,7 @@ The following shortcut keys are equivalent to KD / CDB control keys.
 <tr class="even">
 <td align="left"><p>CTRL+ALT+D</p></td>
 <td align="left"></td>
-<td align="left"><p>[<strong>CTRL+D (Toggle Debug Info)</strong>](ctrl-d--toggle-debug-info-.md)</p></td>
+<td align="left"><p><strong>[CTRL+D (Toggle Debug Info)](ctrl-d--toggle-debug-info-.md)</strong></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>CTRL+ALT+K</p></td>
