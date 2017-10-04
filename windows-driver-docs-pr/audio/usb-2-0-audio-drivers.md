@@ -1,5 +1,5 @@
 ---
-title: USB 2.0 Audio Driver
+title: USB Audio 2.0 Drivers
 description: Starting with Windows 10, release 1703, a USB 2.0 driver is shipped with Windows. This driver provides basic functionality.
 ms.author: windowsdriverdev
 ms.date: 10/03/2017
@@ -8,20 +8,20 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-## Overview
+## USB Audio 2.0 Drivers
 
-Starting with Windows 10, release 1703, a USB 2.0 driver is shipped with Windows. This driver provides basic functionality including:
+Starting with Windows 10, release 1703, a USB Audio 2.0 driver is shipped with Windows. This driver provides basic functionality including:
 
 - The driver is designed to support the USB Audio 2.0 device class. For more information see [http://www.usb.org/developers/docs/devclass_docs/](http://www.usb.org/developers/docs/devclass_docs/)
-- The driver is a WaveRT Audio Port Class
+- The driver is a WaveRT audio port class miniport.
 - The driver supports power management including USB selective suspend
 - DRM and copy protected content is not supported 
 
 The driver is named: _usbaudio2.sys_ and the associated inf file is _usbaudio2.inf_.
 
-The driver will identify in device manager as "USB Audio Class 2 Device". This name will be overwritten with USB Product string, if it is available.
+The driver will identify in device manager as "USB Audio Class 2 Device". This name will be overwritten with a USB Product string, if it is available.
 
-The driver is automatically enabled when a compatible device is attached to the system.
+The driver is automatically enabled when a compatible device is attached to the system. However, if a third-party driver exists on the system or Windows Update, that driver will be installed and override the class driver. 
 
  
 ## Architecure
@@ -65,7 +65,7 @@ This section describes the features of the of the USB 2.0 driver.
 
 The driver supports all entity types defined in ADC-2 3.13.
 
-Each Terminal Entity must have a valid clock connection. The clock path may optionally include Clock Multiplier and Clock Selector units and must end in a Clock Source Entity.
+Each Terminal Entity must have a valid clock connection in compatible USB Audio 2.0 hardware. The clock path may optionally include Clock Multiplier and Clock Selector units and must end in a Clock Source Entity.
 
 The driver supports one single clock source only. If a device implements multiple clock source entities and a clock selector, then the driver will use the clock source that is selected by default and will not modify the clock selector’s position.
 
@@ -157,7 +157,7 @@ Additional information on the controls and requests is available in the followin
 
 ### Clock source entity (ADC-2 5.2.5.1)
 
-At a minimum, a Clock Source Entity must implement Sampling Frequency Control GET RANGE and GET CUR requests (ADC-2 5.2.5.1.1).
+At a minimum, a Clock Source Entity must implement Sampling Frequency Control GET RANGE and GET CUR requests (ADC-2 5.2.5.1.1) in compatible USB Audio 2.0 hardware.
 
 The Sampling Frequency Control GET RANGE request returns a list of subranges (ADC-2 5.2.1). Each subrange describes a discrete frequency, or a frequency range. A discrete sampling frequency must be expressed by setting MIN and MAX fields to the respective frequency and RES to zero. Individual subranges must not overlap. If a subrange overlaps a previous one, it will be ignored by the driver.
 
@@ -174,7 +174,7 @@ If a feature unit implements single channel controls as well as a master control
 
 ### Clock selector entity (ADC-2 5.2.5.2)
 
-The Clock Selector Control GET CUR request (ADC-2 5.2.5.2.1) must be implemented. 
+The Clock Selector Control GET CUR request (ADC-2 5.2.5.2.1) must be implemented in compatible USB Audio 2.0 hardware. 
 
 The driver uses the Clock Source Entity which is selected by default and never issues a Clock Selector Control SET CUR request.
 
@@ -187,15 +187,19 @@ There is not and any specific partner customization that is associated with the 
 
 This INF file entry (provided in a update to Windows Release 1703), is used to indentify that the in-box driver is a generic device driver. 
 
-    GenericDriverInstalled,,,,1
+```
+GenericDriverInstalled,,,,1
+```
 
-The in-box driver registers for the following compatible IDs
 
-    Class_01 SubClass_00 Prot_20
-    Class_01 SubClass_01 Prot_20
-    Class_01 SubClass_02 Prot_20
-    Class_01 SubClass_03 Prot_20
+The in-box driver registers for the following compatible IDs with usbaudio2.inf.
 
+```
+Class_01 SubClass_00 Prot_20
+Class_01 SubClass_01 Prot_20
+Class_01 SubClass_02 Prot_20
+Class_01 SubClass_03 Prot_20
+```
 
  This table provides the audio interface subclass codes.   
 
@@ -207,7 +211,23 @@ The in-box driver registers for the following compatible IDs
 | MIDISTREAMING                    |    0X03             |
 
 
-## IHV USB 2.0 audio drivers and updates
+The USB Audio 1.0 class driver registers this compatible ID with wdma_usb.inf.
+ 
+```
+USB\Class_01
+```
+ 
+And has these exclusions:
+ 
+```
+USB\Class_01&SubClass_00&Prot_20
+USB\Class_01&SubClass_01&Prot_20
+USB\Class_01&SubClass_02&Prot_20
+USB\Class_01&SubClass_03&Prot_20
+```
+
+
+## IHV USB Audio 2.0 drivers and updates
 For IHV provided third party driver USB 2.0 drivers, those drivers will continue to be preferred for their devices over our in-box driver unless they update their driver to explicitly override this behavior and use the in-box driver. 
 
 
