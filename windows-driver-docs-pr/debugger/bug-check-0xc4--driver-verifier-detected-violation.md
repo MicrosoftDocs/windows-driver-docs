@@ -1557,11 +1557,9 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 |0x13 or
 0x14|Reserved|Pointer to pool header|Pool header contents|The driver attempted to free memory pool which was already freed.|
 |0x16|Reserved|Pool address|0|The driver attempted to free pool at a bad address, or the driver passed invalid parameters to a memory routine.|
-|0x30|Current IRQL|Requested IRQL|0|The driver passed an invalid parameter to [KeRaiseIrql](https://msdn.microsoft.com/library/windows/hardware/ff553079).
-(The parameter was either a value lower than the current IRQL, or a value higher than HIGH_LEVEL. This may be the result of using an uninitialized parameter.)|
+|0x30|Current IRQL|Requested IRQL|0|The driver passed an invalid parameter to [KeRaiseIrql](https://msdn.microsoft.com/library/windows/hardware/ff553079). (The parameter was either a value lower than the current IRQL, or a value higher than HIGH_LEVEL. This may be the result of using an uninitialized parameter.)|
 |0x31|Current IRQL|Requested IRQL|0 - New IRQL is bad
-1 - New IRQL is invalid inside a DPC routine|The driver passed an invalid parameter to [KeLowerIrql](https://msdn.microsoft.com/library/windows/hardware/ff552968).
-(The parameter was either a value higher than the current IRQL, or a value higher than HIGH_LEVEL. This may be the result of using an uninitialized parameter.)|
+1 - New IRQL is invalid inside a DPC routine|The driver passed an invalid parameter to [KeLowerIrql](https://msdn.microsoft.com/library/windows/hardware/ff552968). (The parameter was either a value higher than the current IRQL, or a value higher than HIGH_LEVEL. This may be the result of using an uninitialized parameter.)|
 |0x32|Current IRQL|Spin lock address|0|The driver called [KeReleaseSpinLock](https://msdn.microsoft.com/library/windows/hardware/ff553145) at an IRQL other than DISPATCH_LEVEL.
 (This may be due to a double-release of a spin lock.)|
 |0x33|Current IRQL|Fast mutex address|0|The driver attempted to acquire fast mutex with IRQL > APC_LEVEL.|
@@ -1575,9 +1573,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 |0x3C|Handle passed to routine|Object type|0|The driver called [ObReferenceObjectByHandle](https://msdn.microsoft.com/library/windows/hardware/ff558679) with a bad handle.|
 |0x3D|0|0|Address of the bad resource|The driver passed a bad (unaligned) resource to [ExAcquireResourceExclusive](https://msdn.microsoft.com/library/windows/hardware/ff544345).|
 |0x3E|0|0|0|The driver called [KeLeaveCriticalRegion](https://msdn.microsoft.com/library/windows/hardware/ff552964) for a thread that is not currently in a critical region.|
-|0x3F|Object address|New object reference count.
--1: dereference case
-1: reference case|0|The driver applied [ObReferenceObject](https://msdn.microsoft.com/library/windows/hardware/ff558678) to an object that has a reference count of zero, or the driver applied [ObDereferenceObject](https://msdn.microsoft.com/library/windows/hardware/ff557724) to an object that has a reference count of zero.|
+|0x3F|Object address|New object reference count. -1: dereference case  1: reference case|0|The driver applied [ObReferenceObject](https://msdn.microsoft.com/library/windows/hardware/ff558678) to an object that has a reference count of zero, or the driver applied [ObDereferenceObject](https://msdn.microsoft.com/library/windows/hardware/ff557724) to an object that has a reference count of zero.|
 |0x40|Current IRQL|Spin lock address|0|The driver called [KeAcquireSpinLockAtDpcLevel](https://msdn.microsoft.com/library/windows/hardware/ff551921) with IRQL < DISPATCH_LEVEL.|
 |0x41|Current IRQL|Spin lock address|0|The driver called [KeReleaseSpinLockFromDpcLevel](https://msdn.microsoft.com/library/windows/hardware/ff553150) with IRQL < DISPATCH_LEVEL.|
 |0x42|Current IRQL|Spin lock address|0|The driver called [KeAcquireSpinLock](https://msdn.microsoft.com/library/windows/hardware/ff551917) with IRQL > DISPATCH_LEVEL.|
