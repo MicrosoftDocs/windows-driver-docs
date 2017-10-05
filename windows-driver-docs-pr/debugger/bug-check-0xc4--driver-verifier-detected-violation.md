@@ -4,7 +4,7 @@ description: The DRIVER_VERIFIER_DETECTED_VIOLATION bug check has a value of 0x0
 ms.assetid: 7814f827-05fc-419b-b428-4565978bbb52
 keywords: ["Bug Check 0xC4 DRIVER_VERIFIER_DETECTED_VIOLATION", "DRIVER_VERIFIER_DETECTED_VIOLATION"]
 ms.author: windowsdriverdev
-ms.date: 05/23/2017
+ms.date: 10/04/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -36,13 +36,6 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
  
 
 <table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Parameter 1</th>
@@ -1542,7 +1535,6 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 </table>
 
  
-
 
 
 
