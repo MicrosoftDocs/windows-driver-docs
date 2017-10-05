@@ -423,9 +423,9 @@ This table summarizes which functions are called by the script commands
 <tbody>
 <tr class="odd">
 <td align="left"></td>
-<td align="left">.[<strong>.scriptload</strong>](-scriptload--load-script-.md)</td>
-<td align="left">[<strong>.scriptrun (Run Script)</strong>](-scriptrun--run-script-.md)</td>
-<td align="left">[<strong>.scriptunload (Unload Script)</strong>](-scriptunload--unload-script-.md)</td>
+<td align="left">.<strong>[.scriptload](-scriptload--load-script-.md)</strong></td>
+<td align="left"><strong>[.scriptrun (Run Script)](-scriptrun--run-script-.md)</strong></td>
+<td align="left"><strong>[.scriptunload (Unload Script)](-scriptunload--unload-script-.md)</strong></td>
 </tr>
 <tr class="even">
 <td align="left">root</td>
