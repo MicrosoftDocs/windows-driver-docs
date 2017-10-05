@@ -37,7 +37,7 @@ You must not modify the values of the following registry entries (*device proper
 
 -   EnumPropPages32
 
-These device properties represent a device?s installation state. Direct modification of these properties might invalidate the device?s installation state. For example, changing information related to the [INF file](inf-files.md) invalidates information about driver files that are associated with such properties as device and driver signing information. Changing driver version or driver date might break Windows Update functionality.
+These device properties represent a device's installation state. Direct modification of these properties might invalidate the device's installation state. For example, changing information related to the [INF file](inf-files.md) invalidates information about driver files that are associated with such properties as device and driver signing information. Changing driver version or driver date might break Windows Update functionality.
 
 **Note**  Starting with Windows Vista, the operating system imposes "installation-time only" access restrictions for these properties. Values can be replicated for compatibility, and direct modification of values during device installation does not affect internal state.
 

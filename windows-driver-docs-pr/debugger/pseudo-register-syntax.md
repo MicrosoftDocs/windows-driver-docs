@@ -72,7 +72,7 @@ The debugger automatically sets the following pseudo-registers.
 <tr class="even">
 <td align="left"><p><strong>$ra</strong></p></td>
 <td align="left"><p>The return address that is currently on the stack.</p>
-<p>This address is especially useful in execution commands. For example, <strong>g @$ra</strong> continues until the return address is found (although [<strong>gu (Go Up)</strong>](gu--go-up-.md) is a more precise effective way of &quot;stepping out&quot; of the current function).</p></td>
+<p>This address is especially useful in execution commands. For example, <strong>g @$ra</strong> continues until the return address is found (although <strong>[gu (Go Up)](gu--go-up-.md)</strong> is a more precise effective way of &quot;stepping out&quot; of the current function).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>$ip</strong></p></td>
@@ -125,7 +125,7 @@ The debugger automatically sets the following pseudo-registers.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>$p</strong></p></td>
-<td align="left"><p>The value that the last [<strong>d* (Display Memory)</strong>](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command printed.</p></td>
+<td align="left"><p>The value that the last <strong>[d* (Display Memory)](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md)</strong> command printed.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>$proc</strong></p></td>
@@ -169,7 +169,7 @@ The debugger automatically sets the following pseudo-registers.
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>$frame</strong></p></td>
-<td align="left"><p>The current frame index. This index is the same frame number that the [<strong>.frame (Set Local Context)</strong>](-frame--set-local-context-.md) command uses.</p></td>
+<td align="left"><p>The current frame index. This index is the same frame number that the <strong>[.frame (Set Local Context)](-frame--set-local-context-.md)</strong> command uses.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>$dbgtime</strong></p></td>
@@ -177,7 +177,7 @@ The debugger automatically sets the following pseudo-registers.
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>$callret</strong></p></td>
-<td align="left"><p>The return value of the last function that [<strong>.call (Call Function)</strong>](-call--call-function-.md) called or that is used in an [<strong>.fnret /s</strong>](-fnret--display-function-return-value-.md) command. The data type of <strong>$callret</strong> is the data type of this return value.</p></td>
+<td align="left"><p>The return value of the last function that <strong>[.call (Call Function)](-call--call-function-.md)</strong> called or that is used in an <strong>[.fnret /s](-fnret--display-function-return-value-.md)</strong> command. The data type of <strong>$callret</strong> is the data type of this return value.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>$extret</strong></p></td>
