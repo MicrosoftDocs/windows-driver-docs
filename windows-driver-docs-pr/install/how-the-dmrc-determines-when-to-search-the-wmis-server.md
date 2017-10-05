@@ -65,9 +65,9 @@ The following table describes the format and value range for the **CheckBackMDRe
 
 The DMRC follows these steps to determine whether it has to search the WMIS server for a newer metadata package for a device:
 
-1.  If the target device?s [device ID](device-ids.md) is not listed in the DMRC index table, the DMRC is searching for the device's metadata package for the first time. In this case, the DMRC queries the WMIS server.
+1.  If the target device's [device ID](device-ids.md) is not listed in the DMRC index table, the DMRC is searching for the device's metadata package for the first time. In this case, the DMRC queries the WMIS server.
 
-2.  If the target device?s [device ID](device-ids.md) is listed in the DMRC index table, the DMRC calculates whether it is time to query the WMIS server again for a metadata package for the device. In this case, the DMRC queries the WMIS server in the following way:
+2.  If the target device's [device ID](device-ids.md) is listed in the DMRC index table, the DMRC calculates whether it is time to query the WMIS server again for a metadata package for the device. In this case, the DMRC queries the WMIS server in the following way:
 
     1.  If the DMRC has previously downloaded a device metadata package for the device, the DMRC compares the value of the **CheckBackMDRetrieved** registry key to the value of today's date minus the **LastCheckedDate** value. If the **CheckBackMDRetrieved** value is smaller, the DMRC queries the WMIS server.
 
