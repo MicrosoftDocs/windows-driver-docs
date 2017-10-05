@@ -1554,11 +1554,10 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 |0x10|Bad Address|0|0|The driver attempted to free an address that was not returned from an allocate call.|
 |0x11|Current IRQL|Pool type|Address of pool|The driver attempted to free paged pool with IRQL > APC_LEVEL.|
 |0x12|Current IRQL|Pool type|Address of pool|The driver attempted to free nonpaged pool with IRQL > DISPATCH_LEVEL.|
-|0x13 or
-0x14|Reserved|Pointer to pool header|Pool header contents|The driver attempted to free memory pool which was already freed.|
+|0x13 or 0x14|Reserved|Pointer to pool header|Pool header contents|The driver attempted to free memory pool which was already freed.|
 |0x16|Reserved|Pool address|0|The driver attempted to free pool at a bad address, or the driver passed invalid parameters to a memory routine.|
 |0x30|Current IRQL|Requested IRQL|0|The driver passed an invalid parameter to [KeRaiseIrql](https://msdn.microsoft.com/library/windows/hardware/ff553079). (The parameter was either a value lower than the current IRQL, or a value higher than HIGH_LEVEL. This may be the result of using an uninitialized parameter.)|
-|0x31|Current IRQL|Requested IRQL|0 - New IRQL is bad 1 - New IRQL is invalid inside a DPC routine|The driver passed an invalid parameter to [KeLowerIrql](https://msdn.microsoft.com/library/windows/hardware/ff552968). (The parameter was either a value higher than the current IRQL, or a value higher than HIGH_LEVEL. This may be the result of using an uninitialized parameter.)|
+|0x31|Current IRQL|Requested IRQL|0: New IRQL is bad 1: New IRQL is invalid inside a DPC routine|The driver passed an invalid parameter to [KeLowerIrql](https://msdn.microsoft.com/library/windows/hardware/ff552968). (The parameter was either a value higher than the current IRQL, or a value higher than HIGH_LEVEL. This may be the result of using an uninitialized parameter.)|
 |0x32|Current IRQL|Spin lock address|0|The driver called [KeReleaseSpinLock](https://msdn.microsoft.com/library/windows/hardware/ff553145) at an IRQL other than DISPATCH_LEVEL. (This may be due to a double-release of a spin lock.)|
 |0x33|Current IRQL|Fast mutex address|0|The driver attempted to acquire fast mutex with IRQL > APC_LEVEL.|
 |0x34|Current IRQL|Fast mutex address|0|The driver attempted to release fast mutex at an IRQL other than APC_LEVEL.|
@@ -1584,8 +1583,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 |0x70|Current IRQL|MDL address|Access mode|The driver called [MmProbeAndLockPages](https://msdn.microsoft.com/library/windows/hardware/ff554664) with IRQL > DISPATCH_LEVEL.|
 |0x71|Current IRQL|MDL address|Process address|The driver called MmProbeAndLockProcessPages with IRQL > DISPATCH_LEVEL.|
 |0x72|Current IRQL|MDL address|Process address|The driver called MmProbeAndLockSelectedPages with IRQL > DISPATCH_LEVEL.|
-|0x73|Current IRQL|In 32-bit Windows: Low 32 bits of the physical address
-In 64-bit Windows: the 64-bit physical address|Number of bytes|The driver called [MmMapIoSpace](https://msdn.microsoft.com/library/windows/hardware/ff554618) with IRQL > DISPATCH_LEVEL.|
+|0x73|Current IRQL|In 32-bit Windows: Low 32 bits of the physical address In 64-bit Windows: the 64-bit physical address|Number of bytes|The driver called [MmMapIoSpace](https://msdn.microsoft.com/library/windows/hardware/ff554618) with IRQL > DISPATCH_LEVEL.|
 |0x74|Current IRQL|MDL address|Access mode|The driver called [MmMapLockedPages](https://msdn.microsoft.com/library/windows/hardware/ff554622) in kernel mode with IRQL > DISPATCH_LEVEL.|
 |0x75|Current IRQL|MDL address|Access mode|The driver called [MmMapLockedPages](https://msdn.microsoft.com/library/windows/hardware/ff554622) in user mode with IRQL > APC_LEVEL.|
 |0x76|Current IRQL|MDL address|Access mode|The driver called [MmMapLockedPagesSpecifyCache](https://msdn.microsoft.com/library/windows/hardware/ff554629) in kernel mode with IRQL > DISPATCH_LEVEL.|
@@ -1595,14 +1593,12 @@ In 64-bit Windows: the 64-bit physical address|Number of bytes|The driver called
 |0x7A|Current IRQL|Virtual address being unmapped|MDL address|The driver called [MmUnmapLockedPages](https://msdn.microsoft.com/library/windows/hardware/ff556391) in user mode with IRQL > APC_LEVEL.|
 |0x7B|Current IRQL|Virtual address being unmapped|Number of bytes|The driver called [MmUnmapIoSpace](https://msdn.microsoft.com/library/windows/hardware/ff556387) with IRQL > APC_LEVEL.|
 |0x7C|MDL address|MDL flags|0|The driver called [MmUnlockPages](https://msdn.microsoft.com/library/windows/hardware/ff556381), and passed an MDL whose pages were never successfully locked.|
-|0x7D|MDL address|MDL flags|0|The driver called [MmUnlockPages](https://msdn.microsoft.com/library/windows/hardware/ff556381), and passed an MDL whose pages are from nonpaged pool.
-(These should never be unlocked.)|
+|0x7D|MDL address|MDL flags|0|The driver called [MmUnlockPages](https://msdn.microsoft.com/library/windows/hardware/ff556381), and passed an MDL whose pages are from nonpaged pool. (These should never be unlocked.)|
 |0x7E|Current IRQL|DISPATCH_LEVEL|0|The driver called [MmAllocatePagesForMdl](https://msdn.microsoft.com/library/windows/hardware/ff554482), [MmAllocatePagesForMdlEx](https://msdn.microsoft.com/library/windows/hardware/ff554489), or [MmFreePagesFromMdl](https://msdn.microsoft.com/library/windows/hardware/ff554521) with IRQL > DISPATCH_LEVEL.|
 |0x7F|Current IRQL|MDL address|MDL flags|The driver called [BuildMdlForNonPagedPool](https://msdn.microsoft.com/library/windows/hardware/ff554498) and passed an MDL whose pages are from paged pool.|
 |0x80|Current IRQL|Event address|0|The driver called [KeSetEvent](https://msdn.microsoft.com/library/windows/hardware/ff553253) with IRQL > DISPATCH_LEVEL.|
 |0x81|MDL address|MDL flags|0|The driver called [MmMapLockedPages](https://msdn.microsoft.com/library/windows/hardware/ff554622). (You should use [MmMapLockedPagesSpecifyCache](https://msdn.microsoft.com/library/windows/hardware/ff554629) instead, with the BugCheckOnFailure parameter set to FALSE.)|
-|0x82|MDL address|MDL flags|0|The driver called [MmMapLockedPagesSpecifyCache](https://msdn.microsoft.com/library/windows/hardware/ff554629) with the BugCheckOnFailure parameter equal to TRUE.
-(This parameter should be set to FALSE.)|
+|0x82|MDL address|MDL flags|0|The driver called [MmMapLockedPagesSpecifyCache](https://msdn.microsoft.com/library/windows/hardware/ff554629) with the BugCheckOnFailure parameter equal to TRUE. (This parameter should be set to FALSE.)|
 |0x83|Start of physical address range to map|Number of bytes to map|First page frame number that isn't locked down|The driver called [MmMapIoSpace](https://msdn.microsoft.com/library/windows/hardware/ff554618) without having locked down the MDL pages. The physical pages represented by the physical address range being mapped must have been locked down prior to making this call.|
 |0x85|MDL address|Number of pages to map|First page frame number that isn't locked down|The driver called [MmMapLockedPages](https://msdn.microsoft.com/library/windows/hardware/ff554622) without having locked down the MDL pages.|
 |0x89|MDL address|Pointer to the non-memory page in the MDL|The non-memory page number in the MDL|An MDL is not marked as "I/O", but it contains non-memory page addresses.|
@@ -1635,7 +1631,7 @@ In 64-bit Windows: the 64-bit physical address|Number of bytes|The driver called
 |0xDA (Windows Vista and later operating systems only)|Starting address of the driver|WMI callback address inside the driver|Reserved|An attempt was made to unload a driver that has not deregistered its WMI callback function.|
 |0xDB (Windows Vista and later operating systems only)|Address of the device object|Reserved|Reserved|An attempt was made to delete a device object that was not deregistered from WMI.|
 |0xDC (Windows Vista and later operating systems only)|Reserved|Reserved|Reserved|An invalid RegHandle value was specified as a parameter of the function [EtwUnregister](https://msdn.microsoft.com/library/windows/hardware/ff545613).|
-|0xDD (Windows Vista and later operating systems only)|Address of the call to EtwRegister|Starting address of the unloading driver|For Windows 8Windows 8 and later versions, this parameter is the ETW RegHandle value.|An attempt was made to unload a driver without calling [EtwUnregister](https://msdn.microsoft.com/library/windows/hardware/ff545613).|
+|0xDD (Windows Vista and later operating systems only)|Address of the call to EtwRegister|Starting address of the unloading driver|For Windows 8 and later versions, this parameter is the ETW RegHandle value.|An attempt was made to unload a driver without calling [EtwUnregister](https://msdn.microsoft.com/library/windows/hardware/ff545613).|
 |0xDF (Windows 7 operating systems and later only)|Synchronization object address|The synchronization object is in session address space. Synchronization objects are not allowed in session address space because they can be manipulated from another session or from system threads that have no session virtual address space.|
 |0xE0 (Windows Vista and later operating systems only)|User-mode address that is used as a parameter|Size ,in bytes, of the address range that is used as a parameter|Reserved|A call was made to an operating system kernel function that specified a user-mode address as a parameter.|
 |0xE1 (Windows Vista and later operating systems only)|Address of the synchronization object|Reserved|Reserved|A synchronization object was found to have an address that was either invalid or pageable.|
