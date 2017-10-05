@@ -36,6 +36,13 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
  
 
 <table>
+<colgroup>
+<col width="15%" />
+<col width="15%" />
+<col width="15%" />
+<col width="15%" />
+<col width="15%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Parameter 1</th>
@@ -1552,8 +1559,8 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 |0x16|Reserved|Pool address|0|The driver attempted to free pool at a bad address, or the driver passed invalid parameters to a memory routine.|
 |0x30|Current IRQL|Requested IRQL|0|The driver passed an invalid parameter to [KeRaiseIrql](https://msdn.microsoft.com/library/windows/hardware/ff553079).
 (The parameter was either a value lower than the current IRQL, or a value higher than HIGH_LEVEL. This may be the result of using an uninitialized parameter.)|
-|0x31|Current IRQL|Requested IRQL|0: New IRQL is bad
-1: New IRQL is invalid inside a DPC routine|The driver passed an invalid parameter to [KeLowerIrql](https://msdn.microsoft.com/library/windows/hardware/ff552968).
+|0x31|Current IRQL|Requested IRQL|0 - New IRQL is bad
+1 - New IRQL is invalid inside a DPC routine|The driver passed an invalid parameter to [KeLowerIrql](https://msdn.microsoft.com/library/windows/hardware/ff552968).
 (The parameter was either a value higher than the current IRQL, or a value higher than HIGH_LEVEL. This may be the result of using an uninitialized parameter.)|
 |0x32|Current IRQL|Spin lock address|0|The driver called [KeReleaseSpinLock](https://msdn.microsoft.com/library/windows/hardware/ff553145) at an IRQL other than DISPATCH_LEVEL.
 (This may be due to a double-release of a spin lock.)|
