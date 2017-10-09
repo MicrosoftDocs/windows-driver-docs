@@ -50,7 +50,7 @@ Drivers for mouse devices register instances of this device interface class to n
 
 The system-supplied [mouse class driver](../hid/keyboard-and-mouse-class-drivers.md) registers an instance of this device interface class for a mouse device. Access an instance of this device interface class by using the I/O interface supported by the mouse class driver.
 
-For general information about supporting mouse devices, see [HID Architecture](https://msdn.microsoft.com/library/windows/hardware/jj126193) and [Features of the Kbdclass and Mouclass Drivers](hid-features_of_the_kbdclass_and_mouclass_drivers).
+For general information about supporting mouse devices, see [HID Architecture](https://msdn.microsoft.com/library/windows/hardware/jj126193) and [Features of the Kbdclass and Mouclass Drivers](../hid/keyboard-and-mouse-class-drivers.md).
 
 The WDK includes sample code for the system-supplied mouse class driver. The mouse class driver uses the obsolete identifier [**GUID_CLASS_MOUSE**](guid-class-mouse.md) to register an instance of this [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
 
