@@ -67,7 +67,7 @@ This class includes hard disk controllers, including ATA/ATAPI controllers but n
 Human Interface Devices (HID)
 Class = HIDClass
 ClassGuid = {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
-This class includes interactive input devices that are operated by the system-supplied [HID class driver](https://msdn.microsoft.com/library/windows/hardware/jj126193). This includes USB devices that comply with the [USB HID Standard](hid-usb_hid_standard) and non-USB devices that use a HID minidriver. For more information, see [HIDClass Device Setup Class](hid-hidclass_device_setup_class). (See also the Keyboard or Mouse classes later in this list.)
+This class includes interactive input devices that are operated by the system-supplied [HID class driver](https://msdn.microsoft.com/library/windows/hardware/jj126193). This includes USB devices that comply with the [USB HID Standard](../hid/hid-over-usb.md) and non-USB devices that use a HID minidriver. For more information, see [HIDClass Device Setup Class](../hid/minidriver-operations.md). (See also the Keyboard or Mouse classes later in this list.)
 
 IEEE 1284.4 Devices
 Class = Dot4

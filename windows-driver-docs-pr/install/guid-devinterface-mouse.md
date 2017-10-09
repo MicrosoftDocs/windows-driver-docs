@@ -48,7 +48,7 @@ Remarks
 
 Drivers for mouse devices register instances of this device interface class to notify the operating system and applications of the presence of mouse devices.
 
-The system-supplied [mouse class driver](hid-non_hidclass_keyboard_and_mouse_devices) registers an instance of this device interface class for a mouse device. Access an instance of this device interface class by using the I/O interface supported by the mouse class driver.
+The system-supplied [mouse class driver](../hid/keyboard-and-mouse-class-drivers.md) registers an instance of this device interface class for a mouse device. Access an instance of this device interface class by using the I/O interface supported by the mouse class driver.
 
 For general information about supporting mouse devices, see [HID Architecture](https://msdn.microsoft.com/library/windows/hardware/jj126193) and [Features of the Kbdclass and Mouclass Drivers](hid-features_of_the_kbdclass_and_mouclass_drivers).
 

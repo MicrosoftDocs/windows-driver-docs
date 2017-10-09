@@ -50,7 +50,7 @@ Drivers for HID collections register instances of this device interface class to
 
 The system-supplied [HID class driver](https://msdn.microsoft.com/library/windows/hardware/jj126193) registers an instance of this device interface class for a HID collection. For example, the HID class driver registers an interface for a USB keyboard or mouse device. Access a HID collection by using the I/O interface supported by the HID class driver.
 
-For information about HID devices and drivers, see [HIDClass Devices](hid-hidclass_devices).
+For information about HID devices and drivers, see [HIDClass Devices](../hid/binding-minidrivers-to-the-hid-class.md).
 
 For information about the device interface class for keyboard devices, see [**GUID_DEVINTERFACE_KEYBOARD**](guid-devinterface-keyboard.md).
 

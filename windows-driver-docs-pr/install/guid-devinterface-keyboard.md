@@ -48,9 +48,9 @@ Remarks
 
 Drivers for keyboard devices register instances of this device interface class to notify the system and applications of the presence of keyboard devices.
 
-The system-supplied [keyboard class driver](hid-non_hidclass_keyboard_and_mouse_devices) registers an instance of this device interface class for a keyboard device. Access an instance of this device interface class by using the I/O interface supported by the keyboard class driver.
+The system-supplied [keyboard class driver](../hid/keyboard-and-mouse-class-drivers.md) registers an instance of this device interface class for a keyboard device. Access an instance of this device interface class by using the I/O interface supported by the keyboard class driver.
 
-For general information about supporting keyboard devices, see [HID Architecture](https://msdn.microsoft.com/library/windows/hardware/jj126193) and [Features of the Kbdclass and Mouclass Drivers](hid-features_of_the_kbdclass_and_mouclass_drivers).
+For general information about supporting keyboard devices, see [HID Architecture](https://msdn.microsoft.com/library/windows/hardware/jj126193) and [Features of the Kbdclass and Mouclass Drivers](../hid/keyboard-and-mouse-class-drivers.md).
 
 The WDK includes sample code for the system-supplied keyboard class driver. The keyboard class driver uses the obsolete identifier [**GUID_CLASS_KEYBOARD**](guid-class-keyboard.md) to register an instance of this [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
 

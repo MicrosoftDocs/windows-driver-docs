@@ -50,7 +50,7 @@ The system-supplied [ACPI driver](https://msdn.microsoft.com/library/windows/har
 
 For information about supplying WDM [function drivers](https://msdn.microsoft.com/library/windows/hardware/ff546516) for ACPI devices, see [Supporting ACPI Devices](https://msdn.microsoft.com/library/windows/hardware/ff536161).
 
-For information about PS/2-style keyboard and mouse devices, see [Non-HIDClass Keyboard and Mouse Devices](hid-non_hidclass_keyboard_and_mouse_devices).
+For information about PS/2-style keyboard and mouse devices, see [Non-HIDClass Keyboard and Mouse Devices](../hid/keyboard-and-mouse-class-drivers.md).
 
 Requirements
 ------------
