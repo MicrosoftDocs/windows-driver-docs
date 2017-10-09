@@ -53,7 +53,7 @@ The documentation link URL should be a link to a file that contains information 
 The URL can contain parameters. For example, the following URL contains a **prod** parameter that supplies the value "DSC530", a **rev** parameter that supplies the value "34", and a **type** parameter that supplies the value "doc":
 
 ```
-http://www.microsoft.com/redirect?prod=DSC530&amp;rev=34&amp;type=docs
+http://www.microsoft.com/redirect?prod=DSC530&rev=34&type=docs
 ```
 
 Microsoft does not provide Web hosting or redirection for a webpage that is specified by a DEVPKEY\_DrvPkg\_DocumentationLink property value. The URL must link to a webpage that is maintained by the [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) provider.
@@ -71,7 +71,7 @@ When a user clicks the website link that is displayed in Setup-generated end-use
 For privacy reasons, user information and the serial number of device is not included in the HTTP request.
 
 ```
-The following example shows the type of HTTP request that would be sent to a web server: http://www.microsoft.com/redirect?prod=DSC530&amp;rev34&amp;type=docs&amp;pver=6.0&amp;spb=pro&amp;olcid=0x409&amp;pnpid=PCI%5CVEN_8086%26DEV_2533%26SUBSYS_00000000%26REV_04
+The following example shows the type of HTTP request that would be sent to a web server: http://www.microsoft.com/redirect?prod=DSC530&rev34&type=docs&pver=6.0&spb=pro&olcid=0x409&pnpid=PCI%5CVEN_8086%26DEV_2533%26SUBSYS_00000000%26REV_04
 ```
 
 You can set the value of DEVPKEY\_DrvPkg\_DocumentationLink by an [**INF AddProperty directive**](https://msdn.microsoft.com/library/windows/hardware/ff546318) that is included in the [**INF *DDInstall* section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) of the INF file that installs the device. You can retrieve the value of DEVPKEY\_DrvPkg\_DocumentationLinkproperty by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
@@ -85,7 +85,7 @@ AddProperty=SampleAddPropertySection
 ...
 
 [SampleAddPropertySection] 
-DeviceDocumentationLink,,,,"http://www.microsoft.com/redirect?prod=DSC530&amp;rev34&amp;type="docs"
+DeviceDocumentationLink,,,,"http://www.microsoft.com/redirect?prod=DSC530&rev34&type="docs"
 ...
 ```
 

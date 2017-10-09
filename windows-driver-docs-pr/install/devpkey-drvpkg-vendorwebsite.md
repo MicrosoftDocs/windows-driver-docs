@@ -51,7 +51,7 @@ Remarks
 The URL can be a link to the root of the vendor website, a webpage within a website, or a redirection page. The URL can also contain parameters, for example, the following URL contains a **prod** parameter that supplies the product identifier "DSC530" and a **rev** parameter that supplies the number "34":
 
 ```
-http://www.microsoft.com/redirect?prod=DSC530&amp;rev=34
+http://www.microsoft.com/redirect?prod=DSC530&rev=34
 ```
 
 You can set the value of DEVPKEY\_DrvPkg\_VendorWebSite by an [**INF AddProperty directive**](https://msdn.microsoft.com/library/windows/hardware/ff546318) that is included in the [**INF DDInstall section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) of the INF file that installs the device. You can retrieve the value of DEVPKEY\_DrvPkg\_VendorWebSite by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
@@ -65,7 +65,7 @@ AddProperty=SampleAddPropertySection
 ...
 
 [SampleAddPropertySection] 
-DeviceVendorWebsite,,,,"http://www.microsoft.com/redirect?prod=DSC530&amp;rev=34"
+DeviceVendorWebsite,,,,"http://www.microsoft.com/redirect?prod=DSC530&rev=34"
 ...
 ```
 
