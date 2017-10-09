@@ -1,0 +1,85 @@
+---
+title: KSCATEGORY\_VBICODEC
+description: KSCATEGORY\_VBICODEC
+ms.assetid: c69857e5-19ca-44aa-ae42-bc015be2b0f8
+keywords: ["KSCATEGORY_VBICODEC Device and Driver Installation"]
+topic_type:
+- apiref
+api_name:
+- KSCATEGORY_VBICODEC
+api_location:
+- Ksmedia.h
+api_type:
+- HeaderDef
+---
+
+# KSCATEGORY\_VBICODEC
+
+
+The KSCATEGORY\_VBICODEC [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a video blanking interval (VBI) codec device.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Attribute</th>
+<th align="left">Setting</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>Identifier</p></td>
+<td align="left"><p>KSCATEGORY_VBICODEC</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Class GUID</p></td>
+<td align="left"><p>{07DAD660-22F1-11D1-A9F4-00C04FBBDE8F}</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+Remarks
+-------
+
+Drivers for KS devices register instances of KSCATEGORY\_VBICODEC to indicate to the operating system that the devices support the KSCATEGORY\_VBICODEC functional category.
+
+For general information about video devices, see [Video Capture Devices](https://msdn.microsoft.com/library/windows/hardware/ff568699).
+
+For more information about video blanking, see [Streaming Data from a Video Capture Device](https://msdn.microsoft.com/library/windows/hardware/ff568268) and [VBI Category](https://msdn.microsoft.com/library/windows/hardware/ff568691).
+
+Requirements
+------------
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p>Header</p></td>
+<td align="left">Ksmedia.h (include Ksmedia.h)</td>
+</tr>
+</tbody>
+</table>
+
+## See also
+
+
+[**KSCATEGORY\_VIDEO**](kscategory-video.md)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bdevinst\devinst%5D:%20KSCATEGORY_VBICODEC%20%20RELEASE:%20%2810/9/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
+

@@ -1,0 +1,141 @@
+---
+title: DIF\_TROUBLESHOOTER
+description: DIF\_TROUBLESHOOTER
+ms.assetid: e8477d4d-cc81-48aa-9d51-9f37c3cce0cb
+keywords: ["DIF_TROUBLESHOOTER Device and Driver Installation"]
+topic_type:
+- apiref
+api_name:
+- DIF_TROUBLESHOOTER
+api_location:
+- Setupapi.h
+api_type:
+- HeaderDef
+---
+
+# DIF\_TROUBLESHOOTER
+
+
+The DIF\_TROUBLESHOOTER request allows an installer to start a troubleshooter for a device or to return CHM and HTM troubleshooter files for Windows to start.
+
+**Note**  This DIF code is only supported on Windows Server 2003, Windows XP, and Microsoft Windows 2000.
+
+ 
+
+### When Sent
+
+When a user clicks the "Troubleshooter" button for a device in Device Manager.
+
+### Who Handles
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p>Class Co-installer</p></td>
+<td align="left"><p>Can handle</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Device Co-installer</p></td>
+<td align="left"><p>Can handle</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Class Installer</p></td>
+<td align="left"><p>Can handle</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+### Installer Input
+
+<a href="" id="deviceinfoset"></a>*DeviceInfoSet*  
+Supplies a handle to the [device information set](https://msdn.microsoft.com/library/windows/hardware/ff541247) that contains the device.
+
+<a href="" id="deviceinfodata"></a>*DeviceInfoData*  
+Supplies a pointer to an [**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies the device in the device information set.
+
+<a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
+There are device installation parameters ([**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
+
+<a href="" id="class-installation-parameters"></a>Class Installation Parameters  
+An [**SP\_TROUBLESHOOTER\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553341) structure is associated with the *DeviceInfoData*.
+
+### Installer Output
+
+<a href="" id="class-installation-parameters"></a>Class Installation Parameters  
+An installer might modify the [**SP\_TROUBLESHOOTER\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553341), setting a CHM or HTML file.
+
+### Installer Return Value
+
+If a co-installer does not handle this request, it returns NO\_ERROR from its preprocessing pass.
+
+If a co-installer handles this request, it does so in its postprocessing pass. If the co-installer supplies CHM and HTML files, it propagates the status it received (probably ERROR\_DI\_DO\_DEFAULT). If the co-installer runs a troubleshooter and fixes the problem, the co-installer returns NO\_ERROR. If the co-installer runs a troubleshooter but does not fix the problem, it propagates the status it received (ERROR\_DI\_DO\_DEFAULT).
+
+If a class installer supplies a CHM file and an HTML file, or the class installer runs a troubleshooter but does not fix the problem, the class installer returns ERROR\_DI\_DO\_DEFAULT. Windows will subsequently call the default handler.
+
+If a class installer starts its own troubleshooter and fixes the problem, the class installer returns NO\_ERROR. Windows will not subsequently call the default handler.
+
+If the class installer encounters an error, the installer returns an appropriate Win32 error code. Windows will not subsequently call the default handler.
+
+### Default DIF Code Handler
+
+None
+
+There is no default handler for DIF\_TROUBLESHOOTER, but the operating system provides default troubleshooters that attempt to resolve device problems if there are no installer-supplied troubleshooters.
+
+### Installer Operation
+
+An installer calls [**CM\_Get\_DevNode\_Status**](https://msdn.microsoft.com/library/windows/hardware/ff538514) to get the device status and the CM problem code. Depending on the problem, an installer might provide a troubleshooter, a help file, or nothing. A troubleshooter can possibly resolve a problem with a device. If a troubleshooter resolves the problem, it should call **SetupDiCallClassInstaller** to send a DIF\_PROPERTYCHANGE request of type DICS\_PROPCHANGE. If an installer does not supply a troubleshooter for a device, it might supply a help file of problem-solving suggestions for the user.
+
+If no installer runs its own troubleshooter, Windows runs HTML Help to display information to the user. If an installer supplied a CHM file in the class installation parameters, Windows displays that file. Otherwise, Windows displays system-supplied troubleshooting information.
+
+The class installation parameters contain at most one **ChmFile** and **HtmlTroubleShooter** pair. If more than one installer specifies these values, Windows uses the values set by the last installer that handled the DIF request.
+
+For more information about DIF codes, see [Handling DIF Codes](https://msdn.microsoft.com/library/windows/hardware/ff546094).
+
+Requirements
+------------
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p>Version</p></td>
+<td align="left"><p>Supported in Windows Server 2003, Windows XP, and Microsoft Windows 2000.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Header</p></td>
+<td align="left">Setupapi.h (include Setupapi.h)</td>
+</tr>
+</tbody>
+</table>
+
+## See also
+
+
+[**CM\_Get\_DevNode\_Status**](https://msdn.microsoft.com/library/windows/hardware/ff538514)
+
+[**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
+
+[**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
+
+[**SP\_TROUBLESHOOTER\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553341)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bdevinst\devinst%5D:%20DIF_TROUBLESHOOTER%20%20RELEASE:%20%2810/9/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
+

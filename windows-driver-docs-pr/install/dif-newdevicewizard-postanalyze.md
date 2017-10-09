@@ -1,0 +1,138 @@
+---
+title: DIF\_NEWDEVICEWIZARD\_POSTANALYZE
+description: DIF\_NEWDEVICEWIZARD\_POSTANALYZE
+ms.assetid: 81d609e6-9562-4738-b3ba-c29b24612f91
+keywords: ["DIF_NEWDEVICEWIZARD_POSTANALYZE Device and Driver Installation"]
+topic_type:
+- apiref
+api_name:
+- DIF_NEWDEVICEWIZARD_POSTANALYZE
+api_location:
+- Setupapi.h
+api_type:
+- HeaderDef
+---
+
+# DIF\_NEWDEVICEWIZARD\_POSTANALYZE
+
+
+A DIF\_NEWDEVICEWIZARD\_POSTANALYZE request allows an installer to supply wizard pages that Windows displays to the user after the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) is registered but before Windows installs the drivers for the device. This request is only used during manual installation of non-PnP devices.
+
+### When Sent
+
+After Windows registers the device, which makes the devnode "live," but before Windows installs the drivers for the device.
+
+### Who Handles
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p>Class Co-installer</p></td>
+<td align="left"><p>Can handle</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Device Co-installer</p></td>
+<td align="left"><p>Does not handle</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Class Installer</p></td>
+<td align="left"><p>Can handle</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+### Installer Input
+
+<a href="" id="deviceinfoset"></a>*DeviceInfoSet*  
+Supplies a handle to the [device information set](https://msdn.microsoft.com/library/windows/hardware/ff541247) that contains the device.
+
+<a href="" id="deviceinfodata"></a>*DeviceInfoData*  
+Supplies a pointer to an [**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies the device in the device information set.
+
+<a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
+There are device installation parameters ([**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
+
+<a href="" id="class-installation-parameters"></a>Class Installation Parameters  
+An [**SP\_NEWDEVICEWIZARD\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553305) structure is associated with the *DeviceInfoData*.
+
+### Installer Output
+
+<a href="" id="device-installation-parameters"></a>Device Installation Parameters  
+An installer can modify the flags in the device installation parameters. Windows does not check the flags upon completion of this DIF request. However, it will check them later in the installation process.
+
+<a href="" id="class-installation-parameters"></a>Class Installation Parameters  
+An installer can modify the [**SP\_NEWDEVICEWIZARD\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553305) to supply custom page(s).
+
+### Installer Return Value
+
+If a co-installer does not handle this DIF request it returns NO\_ERROR from its preprocessing pass. If a co-installer handles this request it can return NO\_ERROR, ERROR\_DI\_POSTPROCESSING\_REQUIRED, or a Win32 error code.
+
+A class installer returns NO\_ERROR if it successfully supplies page(s). Otherwise, a class installer returns ERROR\_DI\_DO\_DEFAULT or a Win32 error code.
+
+### Default DIF Code Handler
+
+None
+
+### Installer Operation
+
+A DIF\_NEWDEVICEWIZARD\_POSTANALYZE request allows an installer to supply wizard pages that Windows displays to the user after the devnode is registered but before Windows installs the drivers for the device. This request is only used during manual installation of non-PnP devices.
+
+If an installer adds custom postanalyze page(s), the installer should first check whether **NumDynamicPages** in the class install parameters has reached MAX\_INSTALLWIZARD\_DYNAPAGES.
+
+After the user clicks **Next** on a custom page, Windows installs the drivers for the device and the PnP manager starts the device. A postanalyze wizard page is the last opportunity for an installer to do work before the drivers are loaded and the device is started.
+
+An installer should supply a Wizard 97 header title and a header subtitle in the PROPSHEETPAGE structure for a custom wizard page. An installer should not replace the system-supplied wizard title. See the Microsoft Windows SDK for documentation of the PROPSHEETPAGE structure and for more information about property pages.
+
+For more information about DIF codes, see [Handling DIF Codes](https://msdn.microsoft.com/library/windows/hardware/ff546094).
+
+Requirements
+------------
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p>Version</p></td>
+<td align="left"><p>Supported in Microsoft Windows 2000 and later versions of Windows.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Header</p></td>
+<td align="left">Setupapi.h (include Setupapi.h)</td>
+</tr>
+</tbody>
+</table>
+
+## See also
+
+
+[**DIF\_NEWDEVICEWIZARD\_PREANALYZE**](dif-newdevicewizard-preanalyze.md)
+
+[**DIF\_NEWDEVICEWIZARD\_PRESELECT**](dif-newdevicewizard-preselect.md)
+
+[**DIF\_NEWDEVICEWIZARD\_SELECT**](dif-newdevicewizard-select.md)
+
+[**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
+
+[**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
+
+[**SP\_NEWDEVICEWIZARD\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553305)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bdevinst\devinst%5D:%20DIF_NEWDEVICEWIZARD_POSTANALYZE%20%20RELEASE:%20%2810/9/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
+

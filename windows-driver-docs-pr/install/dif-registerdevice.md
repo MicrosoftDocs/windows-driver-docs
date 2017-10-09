@@ -1,0 +1,144 @@
+---
+title: DIF\_REGISTERDEVICE
+description: DIF\_REGISTERDEVICE
+ms.assetid: cb5f12f4-d429-4f02-b560-08807ffa3793
+keywords: ["DIF_REGISTERDEVICE Device and Driver Installation"]
+topic_type:
+- apiref
+api_name:
+- DIF_REGISTERDEVICE
+api_location:
+- Setupapi.h
+api_type:
+- HeaderDef
+---
+
+# DIF\_REGISTERDEVICE
+
+
+The DIF\_REGISTERDEVICE request allows an installer to participate in registering a newly created device instance with the PnP manager. Windows sends this DIF request for non-PnP devices.
+
+### When Sent
+
+When an installer reports a previously unknown device in response to a [**DIF\_DETECT**](dif-detect.md) request. Windows sends this DIF request in the analyze phase of the Add Hardware Wizard before it installs the device. Windows also sends this request during non-PnP detection.
+
+### Who Handles
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p>Class Co-installer</p></td>
+<td align="left"><p>Can handle</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Device Co-installer</p></td>
+<td align="left"><p>Does not handle</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Class Installer</p></td>
+<td align="left"><p>Can handle</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+### Installer Input
+
+<a href="" id="deviceinfoset"></a>*DeviceInfoSet*  
+Supplies a handle to the [device information set](https://msdn.microsoft.com/library/windows/hardware/ff541247) that contains the device.
+
+<a href="" id="deviceinfodata"></a>*DeviceInfoData*  
+Supplies a pointer to an [**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies the device in the device information set.
+
+<a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
+There are device installation parameters ([**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
+
+<a href="" id="class-installation-parameters-"></a>Class Installation Parameters   
+None
+
+### Installer Output
+
+None
+
+### Installer Return Value
+
+A co-installer can return NO\_ERROR or a Win32 error code. A co-installer should not return ERROR\_DI\_POSTPROCESSING\_REQUIRED for this DIF request.
+
+If an installer determines that the device is a duplicate it returns ERROR\_DUPLICATE\_FOUND.
+
+If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) should subsequently call the default handler, the class installer returns ERROR\_DI\_DO\_DEFAULT.
+
+If the class installer successfully handles this request, including directly calling the default handler, the class installer should return NO\_ERROR and **SetupDiCallClassInstaller** will not subsequently call the default handler again.
+
+**Note**  The class installer can directly call the default handler, but the class installer should never attempt to supersede the operations of the default handler.
+
+ 
+
+For more information about calling the default handler, see [Calling Default DIF Code Handlers](https://msdn.microsoft.com/library/windows/hardware/ff537868).
+
+If the class installer encounters an error, the installer should return an appropriate Win32 error code and **SetupDiCallClassInstaller** will not subsequently call the default handler.
+
+If the installer determines that the device is a duplicate, the installer returns ERROR\_DUPLICATE\_FOUND.
+
+### Default DIF Code Handler
+
+[**SetupDiRegisterDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff552091)
+
+### Installer Operation
+
+A [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) typically sends this DIF request to register a non-PnP device with the PnP manager. Starting with Microsoft Windows 2000, non-PnP devices must be registered before they can be installed.
+
+An installer typically handles this DIF request to do duplicate detection. Such an installer typically calls the default handler ([**SetupDiRegisterDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff552091)) and specifies its detection routine. If the registration is successful and the installer determines that the device is not a duplicate, the installer returns NO\_ERROR.
+
+A co-installer should perform any operations to handle this DIF request in its preprocessing pass. When the co-installer is called for postprocessing, the device instance has already been registered by either the class installer or the default handler.
+
+If an installer returns an error for this DIF code, typically ERROR\_DUPLICATE\_FOUND, Windows deletes the device from the device information set.
+
+For more information about DIF codes, see [Handling DIF Codes](https://msdn.microsoft.com/library/windows/hardware/ff546094).
+
+Requirements
+------------
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p>Version</p></td>
+<td align="left"><p>Supported in Microsoft Windows 2000 and later versions of Windows.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Header</p></td>
+<td align="left">Setupapi.h (include Setupapi.h)</td>
+</tr>
+</tbody>
+</table>
+
+## See also
+
+
+[**DIF\_DETECT**](dif-detect.md)
+
+[**SetupDiRegisterDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff552091)
+
+[**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
+
+[**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bdevinst\devinst%5D:%20DIF_REGISTERDEVICE%20%20RELEASE:%20%2810/9/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
+
