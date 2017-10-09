@@ -1,6 +1,6 @@
 ---
-title: DEVPROP\_TYPE\_STRING
-description: In Windows Vista and later versions of Windows, the DEVPROP\_TYPE\_STRING property type represents the base-data-type identifier that indicates that the data type is a NULL-terminated Unicode string.
+title: DEVPROP_TYPE_STRING
+description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_STRING property type represents the base-data-type identifier that indicates that the data type is a NULL-terminated Unicode string.
 ms.assetid: b578fa1f-b55d-4ad2-bdc4-a796b5d7b811
 keywords: ["DEVPROP_TYPE_STRING Device and Driver Installation"]
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPROP\_TYPE\_STRING
+# DEVPROP_TYPE_STRING
 
 
-In Windows Vista and later versions of Windows, the DEVPROP\_TYPE\_STRING property type represents the base-data-type identifier that indicates that the data type is a NULL-terminated Unicode string.
+In Windows Vista and later versions of Windows, the DEVPROP_TYPE_STRING property type represents the base-data-type identifier that indicates that the data type is a NULL-terminated Unicode string.
 
 Remarks
 -------
 
-DEVPROP\_TYPE\_STRING can be combined only with the [**DEVPROP\_TYPEMOD\_LIST**](devprop-typemod-list.md) property-data-type modifier.
+DEVPROP_TYPE_STRING can be combined only with the [**DEVPROP_TYPEMOD_LIST**](devprop-typemod-list.md) property-data-type modifier.
 
 ### Setting a Property of this Type
 
-To set a property whose base data type is DEVPROP\_TYPE\_STRING, call the corresponding **SetupDiSet*Xxx*** property function, setting the function input parameters as follows:
+To set a property whose base data type is DEVPROP_TYPE_STRING, call the corresponding **SetupDiSet*Xxx*** property function, setting the function input parameters as follows:
 
--   Set the *PropertyType* parameter to DEVPROP\_TYPE\_STRING, set the *PropertyBuffer* parameter to a pointer to a buffer that contains a NULL-terminated Unicode string, and set the *PropertyBufferSize* parameter to the size, in bytes, of the string, including the NULL terminator.
+-   Set the *PropertyType* parameter to DEVPROP_TYPE_STRING, set the *PropertyBuffer* parameter to a pointer to a buffer that contains a NULL-terminated Unicode string, and set the *PropertyBufferSize* parameter to the size, in bytes, of the string, including the NULL terminator.
 
 -   Set the other function input parameters as appropriate to set the property.
 

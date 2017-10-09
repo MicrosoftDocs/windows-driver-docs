@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_SYSAUDIO
-description: KSCATEGORY\_SYSAUDIO
+title: KSCATEGORY_SYSAUDIO
+description: KSCATEGORY_SYSAUDIO
 ms.assetid: 48b67af6-ad0f-4cd2-b094-56d4708cb9c7
 keywords: ["KSCATEGORY_SYSAUDIO Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_SYSAUDIO
+# KSCATEGORY_SYSAUDIO
 
 
-The KSCATEGORY\_SYSAUDIO [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) represents a [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that is reserved for exclusive use by the system-supplied [WDM audio components](https://msdn.microsoft.com/library/windows/hardware/ff537039).
+The KSCATEGORY_SYSAUDIO [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) represents a [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that is reserved for exclusive use by the system-supplied [WDM audio components](https://msdn.microsoft.com/library/windows/hardware/ff537039).
 
 <table>
 <colgroup>

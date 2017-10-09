@@ -1,6 +1,6 @@
 ---
-title: BUS1394\_CLASS\_GUID
-description: BUS1394\_CLASS\_GUID
+title: BUS1394_CLASS_GUID
+description: BUS1394_CLASS_GUID
 ms.assetid: 5452c829-b1d2-4a15-93ef-3d82ac6c04d0
 keywords: ["BUS1394_CLASS_GUID Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# BUS1394\_CLASS\_GUID
+# BUS1394_CLASS_GUID
 
 
-The BUS1394\_CLASS\_GUID [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [1394 bus devices](https://msdn.microsoft.com/library/windows/hardware/ff537209).
+The BUS1394_CLASS_GUID [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [1394 bus devices](https://msdn.microsoft.com/library/windows/hardware/ff537209).
 
 <table>
 <colgroup>
@@ -50,9 +50,9 @@ Bus drivers for 1394 buses register instances of this device interface class to 
 
 For information about 1394 buses, see [1394 bus devices](https://msdn.microsoft.com/library/windows/hardware/ff537209).
 
-The WDK samples include the [1394api sample](https://msdn.microsoft.com/library/windows/hardware/ff536887) application. This application uses BUS1394\_CLASS\_GUID to register to be notified of the presence of instances of this device interface class.
+The WDK samples include the [1394api sample](https://msdn.microsoft.com/library/windows/hardware/ff536887) application. This application uses BUS1394_CLASS_GUID to register to be notified of the presence of instances of this device interface class.
 
-For information about the device interface class for IEEE 1394 devices in the 61883 [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509) that support the IEC-61883 protocol, see [**GUID\_61883\_CLASS**](guid-61883-class.md).
+For information about the device interface class for IEEE 1394 devices in the 61883 [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509) that support the IEC-61883 protocol, see [**GUID_61883_CLASS**](guid-61883-class.md).
 
 Requirements
 ------------
@@ -77,7 +77,7 @@ Requirements
 ## See also
 
 
-[**GUID\_61883\_CLASS**](guid-61883-class.md)
+[**GUID_61883_CLASS**](guid-61883-class.md)
 
  
 

@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_RENDER
-description: KSCATEGORY\_RENDER
+title: KSCATEGORY_RENDER
+description: KSCATEGORY_RENDER
 ms.assetid: 467e3192-46c4-4ef4-88cf-0a870efc1725
 keywords: ["KSCATEGORY_RENDER Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_RENDER
+# KSCATEGORY_RENDER
 
 
-The KSCATEGORY\_RENDER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that renders wave and MIDI data streams.
+The KSCATEGORY_RENDER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that renders wave and MIDI data streams.
 
 <table>
 <colgroup>
@@ -46,11 +46,11 @@ The KSCATEGORY\_RENDER [device interface class](https://msdn.microsoft.com/libra
 Remarks
 -------
 
-Drivers for KS audio adapter devices register an instance of KSCATEGORY\_RENDER to indicate that the devices support the KSCATEGORY\_RENDER functional category.
+Drivers for KS audio adapter devices register an instance of KSCATEGORY_RENDER to indicate that the devices support the KSCATEGORY_RENDER functional category.
 
 For information about how to register this functional category in an INF file, see the INF file *Ac97smpl.inf* that is included with the [AC'97 sample driver](http://go.microsoft.com/fwlink/p/?linkid=256075) in the WDK.
 
-For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](https://msdn.microsoft.com/library/windows/hardware/ff536813) and [**KSPROPERTY\_TOPOLOGY\_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799).
+For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](https://msdn.microsoft.com/library/windows/hardware/ff536813) and [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799).
 
 Requirements
 ------------

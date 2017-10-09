@@ -1,6 +1,6 @@
 ---
-title: SP\_INSTALLWIZARD\_DATA
-description: SP\_INSTALLWIZARD\_DATA
+title: SP_INSTALLWIZARD_DATA
+description: SP_INSTALLWIZARD_DATA
 ms.assetid: 98192da9-4afd-4bfd-a412-4f38f96b7947
 keywords: ["SP_INSTALLWIZARD_DATA Device and Driver Installation"]
 topic_type:
@@ -11,14 +11,14 @@ api_type:
 - NA
 ---
 
-# SP\_INSTALLWIZARD\_DATA
+# SP_INSTALLWIZARD_DATA
 
 
 This structure is obsolete.
 
-SP\_INSTALLWIZARD\_DATA is a parameter to the **SetupDiGetWizardPage** function.
+SP_INSTALLWIZARD_DATA is a parameter to the **SetupDiGetWizardPage** function.
 
-Instead of DIF\_INSTALLWIZARD, Windows uses the DIF\_NEWDEVICEWIZARD\_*XXX* requests such as DIF\_NEWDEVICEWIZARD\_FINISHINSTALL.
+Instead of DIF_INSTALLWIZARD, Windows uses the DIF_NEWDEVICEWIZARD_*XXX* requests such as DIF_NEWDEVICEWIZARD_FINISHINSTALL.
 
  
 

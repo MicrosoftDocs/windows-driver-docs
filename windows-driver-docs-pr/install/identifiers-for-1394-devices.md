@@ -45,7 +45,7 @@ If a device has vendor and model name strings, the 1394 bus driver uses the firs
 
 The device ID for a camera on a IEEE1394 might be:
 
-1394\\SONY&CCM-DS250\_1.08
+1394\\SONY&CCM-DS250_1.08
 
 Multifunction devices have a separate set of identifiers for each unit directory in the device's configuration ROM.
 
@@ -63,9 +63,9 @@ Where:
 
 The device ID for a SBP-2 1394 hard disk might be as follows:
 
-SBP2\\VST\_TECHNOLOGIESINC.&VST\_FULL\_HEIGHT\_FIREWIRE\_DRIVE&LUN0
+SBP2\\VST_TECHNOLOGIESINC.&VST_FULL_HEIGHT_FIREWIRE_DRIVE&LUN0
 
-As with the 1394 bus, the SBP2 port driver does not classify the device ID as a hardware ID. However, whereas the 1394 bus distinguishes between hardware IDs and compatible IDs, the SBP2 port driver does not. For **IRP\_MN\_QUERY\_ID** IRPs of type **BusQueryHardwareIDs** and **IRP\_MN\_QUERY\_ID** IRPs of type **BusQueryCompatibleIDs** SBP2 returns the same set of four identifiers:
+As with the 1394 bus, the SBP2 port driver does not classify the device ID as a hardware ID. However, whereas the 1394 bus distinguishes between hardware IDs and compatible IDs, the SBP2 port driver does not. For **IRP_MN_QUERY_ID** IRPs of type **BusQueryHardwareIDs** and **IRP_MN_QUERY_ID** IRPs of type **BusQueryCompatibleIDs** SBP2 returns the same set of four identifiers:
 
 SBP2\\VendorName&ModelName&CmdSetIdn\*
 

@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_VBICODEC
-description: KSCATEGORY\_VBICODEC
+title: KSCATEGORY_VBICODEC
+description: KSCATEGORY_VBICODEC
 ms.assetid: c69857e5-19ca-44aa-ae42-bc015be2b0f8
 keywords: ["KSCATEGORY_VBICODEC Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_VBICODEC
+# KSCATEGORY_VBICODEC
 
 
-The KSCATEGORY\_VBICODEC [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a video blanking interval (VBI) codec device.
+The KSCATEGORY_VBICODEC [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a video blanking interval (VBI) codec device.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSCATEGORY\_VBICODEC [device interface class](https://msdn.microsoft.com/lib
 Remarks
 -------
 
-Drivers for KS devices register instances of KSCATEGORY\_VBICODEC to indicate to the operating system that the devices support the KSCATEGORY\_VBICODEC functional category.
+Drivers for KS devices register instances of KSCATEGORY_VBICODEC to indicate to the operating system that the devices support the KSCATEGORY_VBICODEC functional category.
 
 For general information about video devices, see [Video Capture Devices](https://msdn.microsoft.com/library/windows/hardware/ff568699).
 
@@ -71,7 +71,7 @@ Requirements
 ## See also
 
 
-[**KSCATEGORY\_VIDEO**](kscategory-video.md)
+[**KSCATEGORY_VIDEO**](kscategory-video.md)
 
  
 

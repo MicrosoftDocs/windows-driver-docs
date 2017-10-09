@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_VIDEO
-description: KSCATEGORY\_VIDEO
+title: KSCATEGORY_VIDEO
+description: KSCATEGORY_VIDEO
 ms.assetid: cdcdb22b-3969-4c58-a8ce-a9d0b4b64e3b
 keywords: ["KSCATEGORY_VIDEO Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_VIDEO
+# KSCATEGORY_VIDEO
 
 
-The KSCATEGORY\_VIDEO [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a video device.
+The KSCATEGORY_VIDEO [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a video device.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSCATEGORY\_VIDEO [device interface class](https://msdn.microsoft.com/librar
 Remarks
 -------
 
-Drivers for KS video devices register instances of KSCATEGORY\_VIDEO to indicate to the operating system that the devices support the KSCATEGORY\_VIDEO functional category.
+Drivers for KS video devices register instances of KSCATEGORY_VIDEO to indicate to the operating system that the devices support the KSCATEGORY_VIDEO functional category.
 
 For an example of how to register this functional category in an INF file, see the *Bdan.inf* INF file that is included with the software tuner sample in the *src/swtuner/algtuner* directory of the WDK.
 
@@ -54,7 +54,7 @@ For more information about this functional category, see [Providing a UVC INF Fi
 
 For general information about video devices, see [Video Capture Devices](https://msdn.microsoft.com/library/windows/hardware/ff568699).
 
-For information about other device interface classes for video devices, see [**KSCATEGORY\_TVAUDIO**](kscategory-tvaudio.md) and [**KSCATEGORY\_TVTUNER**](kscategory-tvtuner.md).
+For information about other device interface classes for video devices, see [**KSCATEGORY_TVAUDIO**](kscategory-tvaudio.md) and [**KSCATEGORY_TVTUNER**](kscategory-tvtuner.md).
 
 Requirements
 ------------
@@ -75,9 +75,9 @@ Requirements
 ## See also
 
 
-[**KSCATEGORY\_TVAUDIO**](kscategory-tvaudio.md)
+[**KSCATEGORY_TVAUDIO**](kscategory-tvaudio.md)
 
-[**KSCATEGORY\_TVTUNER**](kscategory-tvtuner.md)
+[**KSCATEGORY_TVTUNER**](kscategory-tvtuner.md)
 
  
 

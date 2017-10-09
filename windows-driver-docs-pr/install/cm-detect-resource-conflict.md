@@ -1,6 +1,6 @@
 ---
-title: CM\_Detect\_Resource\_Conflict
-description: CM\_Detect\_Resource\_Conflict
+title: CM_Detect_Resource_Conflict
+description: CM_Detect_Resource_Conflict
 ms.assetid: c2e5fd52-dbbd-48a0-9936-87f300fb9189
 keywords: ["CM_Detect_Resource_Conflict Device and Driver Installation"]
 topic_type:
@@ -11,13 +11,13 @@ api_type:
 - NA
 ---
 
-# CM\_Detect\_Resource\_Conflict
+# CM_Detect_Resource_Conflict
 
 
 ## <a href="" id="ddk-cm-detect-resource-conflict-dr"></a>
 
 
-This function is obsolete and no longer supported in Windows 2000 and later versions of Windows. Use [**CM\_Query\_Resource\_Conflict\_List**](https://msdn.microsoft.com/library/windows/hardware/ff539760) instead.
+This function is obsolete and no longer supported in Windows 2000 and later versions of Windows. Use [**CM_Query_Resource_Conflict_List**](https://msdn.microsoft.com/library/windows/hardware/ff539760) instead.
 
  
 

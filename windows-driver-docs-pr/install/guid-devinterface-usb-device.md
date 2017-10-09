@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVINTERFACE\_USB\_DEVICE
-description: GUID\_DEVINTERFACE\_USB\_DEVICE
+title: GUID_DEVINTERFACE_USB_DEVICE
+description: GUID_DEVINTERFACE_USB_DEVICE
 ms.assetid: 9a771eca-8ec5-4c69-8b1e-f01f548b5041
 keywords: ["GUID_DEVINTERFACE_USB_DEVICE Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVINTERFACE\_USB\_DEVICE
+# GUID_DEVINTERFACE_USB_DEVICE
 
 
-The GUID\_DEVINTERFACE\_USB\_DEVICE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [USB devices](https://msdn.microsoft.com/library/windows/hardware/ff538930) that are attached to a USB hub.
+The GUID_DEVINTERFACE_USB_DEVICE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [USB devices](https://msdn.microsoft.com/library/windows/hardware/ff538930) that are attached to a USB hub.
 
 <table>
 <colgroup>
@@ -46,9 +46,9 @@ The GUID\_DEVINTERFACE\_USB\_DEVICE [device interface class](https://msdn.micros
 Remarks
 -------
 
-The system-supplied USB hub driver registers instances of GUID\_DEVINTERFACE\_USB\_DEVICE to notify the system and applications of the presence of USB devices that are attached to a USB hub.
+The system-supplied USB hub driver registers instances of GUID_DEVINTERFACE_USB_DEVICE to notify the system and applications of the presence of USB devices that are attached to a USB hub.
 
-The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](http://go.microsoft.com/fwlink/p/?linkid=256205). The USBVIEW sample uses the obsolete identifier [**GUID\_CLASS\_USB\_DEVICE**](guid-class-usb-device.md) to register to be notified of the arrival of instances of this device interface class.
+The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](http://go.microsoft.com/fwlink/p/?linkid=256205). The USBVIEW sample uses the obsolete identifier [**GUID_CLASS_USB_DEVICE**](guid-class-usb-device.md) to register to be notified of the arrival of instances of this device interface class.
 
 Requirements
 ------------
@@ -69,11 +69,11 @@ Requirements
 ## See also
 
 
-[**GUID\_CLASS\_USB\_DEVICE**](guid-class-usb-device.md)
+[**GUID_CLASS_USB_DEVICE**](guid-class-usb-device.md)
 
-[**GUID\_DEVINTERFACE\_USB\_HOST\_CONTROLLER**](guid-devinterface-usb-host-controller.md)
+[**GUID_DEVINTERFACE_USB_HOST_CONTROLLER**](guid-devinterface-usb-host-controller.md)
 
-[**GUID\_DEVINTERFACE\_USB\_HUB**](guid-devinterface-usb-hub.md)
+[**GUID_DEVINTERFACE_USB_HUB**](guid-devinterface-usb-hub.md)
 
  
 

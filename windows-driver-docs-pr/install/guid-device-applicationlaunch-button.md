@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVICE\_APPLICATIONLAUNCH\_BUTTON
-description: GUID\_DEVICE\_APPLICATIONLAUNCH\_BUTTON
+title: GUID_DEVICE_APPLICATIONLAUNCH_BUTTON
+description: GUID_DEVICE_APPLICATIONLAUNCH_BUTTON
 ms.assetid: d2ca6eab-b0a1-4626-94cb-5b0a66ec6a6f
 keywords: ["GUID_DEVICE_APPLICATIONLAUNCH_BUTTON Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVICE\_APPLICATIONLAUNCH\_BUTTON
+# GUID_DEVICE_APPLICATIONLAUNCH_BUTTON
 
 
-The GUID\_DEVICE\_APPLICATIONLAUNCH\_BUTTON [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for Advanced Configuration and Power Interface (ACPI) application start buttons.
+The GUID_DEVICE_APPLICATIONLAUNCH_BUTTON [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for Advanced Configuration and Power Interface (ACPI) application start buttons.
 
 <table>
 <colgroup>

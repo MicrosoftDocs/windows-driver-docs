@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_EnumeratorName
-description: DEVPKEY\_Device\_EnumeratorName
+title: DEVPKEY_Device_EnumeratorName
+description: DEVPKEY_Device_EnumeratorName
 ms.assetid: 513b298d-31a1-4791-a434-620a0a2edac0
 keywords: ["DEVPKEY_Device_EnumeratorName Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_EnumeratorName
+# DEVPKEY_Device_EnumeratorName
 
 
-The DEVPKEY\_Device\_EnumeratorName device property represents the name of the enumerator for a device instance.
+The DEVPKEY_Device_EnumeratorName device property represents the name of the enumerator for a device instance.
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_Device\_EnumeratorName device property represents the name of the e
 Remarks
 -------
 
-Windows sets the value of DEVPKEY\_Device\_EnumeratorName to the name of the enumerator for a device.
+Windows sets the value of DEVPKEY_Device_EnumeratorName to the name of the enumerator for a device.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_EnumeratorName.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_EnumeratorName.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_EnumeratorName property key. Instead, you can use the corresponding SPDRP\_ENUMERATOR\_NAME identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_EnumeratorName property key. Instead, you can use the corresponding SPDRP_ENUMERATOR_NAME identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------

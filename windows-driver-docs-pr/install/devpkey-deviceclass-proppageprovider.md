@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DeviceClass\_PropPageProvider
-description: DEVPKEY\_DeviceClass\_PropPageProvider
+title: DEVPKEY_DeviceClass_PropPageProvider
+description: DEVPKEY_DeviceClass_PropPageProvider
 ms.assetid: 467a050e-9dd4-4b3b-a942-ee29667ac264
 keywords: ["DEVPKEY_DeviceClass_PropPageProvider Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DeviceClass\_PropPageProvider
+# DEVPKEY_DeviceClass_PropPageProvider
 
 
-The DEVPKEY\_DeviceClass\_PropPageProvider device property represents the property page provider for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
+The DEVPKEY_DeviceClass_PropPageProvider device property represents the property page provider for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
 
 <table>
 <colgroup>
@@ -56,13 +56,13 @@ The DEVPKEY\_DeviceClass\_PropPageProvider device property represents the proper
 Remarks
 -------
 
-The value of DEVPKEY\_DeviceClass\_PropPageProvider is the value of the **EnumPropPages32** registry value under the class registry key. This value contains the name of the class property page provider DLL and the provider's entry point for the device setup class.
+The value of DEVPKEY_DeviceClass_PropPageProvider is the value of the **EnumPropPages32** registry value under the class registry key. This value contains the name of the class property page provider DLL and the provider's entry point for the device setup class.
 
 The **EnumPropPages32** registry value for a device setup class can set by an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF ClassInstall32 section**](https://msdn.microsoft.com/library/windows/hardware/ff546335) of the INF file that installs the class.
 
-You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY\_DeviceClass\_PropPageProvider.
+You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY_DeviceClass_PropPageProvider.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_DeviceClass\_PropPageProvider property key. You can access the value of this property by accessing the corresponding **EnumPropPages32** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](https://msdn.microsoft.com/library/windows/hardware/ff537751).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_PropPageProvider property key. You can access the value of this property by accessing the corresponding **EnumPropPages32** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](https://msdn.microsoft.com/library/windows/hardware/ff537751).
 
 Requirements
 ------------

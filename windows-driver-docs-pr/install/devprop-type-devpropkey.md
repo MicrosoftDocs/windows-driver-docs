@@ -1,6 +1,6 @@
 ---
-title: DEVPROP\_TYPE\_DEVPROPKEY
-description: In Windows Vista and later versions of Windows, the DEVPROP\_TYPE\_DEVPROPKEY identifier represents the base-data-type identifier that indicates the data type is a DEVPROPKEY-typed device property key.
+title: DEVPROP_TYPE_DEVPROPKEY
+description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_DEVPROPKEY identifier represents the base-data-type identifier that indicates the data type is a DEVPROPKEY-typed device property key.
 ms.assetid: 4b0f0f33-9a9e-498a-b2f3-e215bac68dd9
 keywords: ["DEVPROP_TYPE_DEVPROPKEY Device and Driver Installation"]
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPROP\_TYPE\_DEVPROPKEY
+# DEVPROP_TYPE_DEVPROPKEY
 
 
-In Windows Vista and later versions of Windows, the DEVPROP\_TYPE\_DEVPROPKEY identifier represents the base-data-type identifier that indicates the data type is a DEVPROPKEY-typed device property key.
+In Windows Vista and later versions of Windows, the DEVPROP_TYPE_DEVPROPKEY identifier represents the base-data-type identifier that indicates the data type is a DEVPROPKEY-typed device property key.
 
 Remarks
 -------
 
-The DEVPROP\_TYPE\_DEVPROPKEY property type can be combined only with the [**DEVPROP\_TYPEMOD\_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
+The DEVPROP_TYPE_DEVPROPKEY property type can be combined only with the [**DEVPROP_TYPEMOD_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
 
 ### Setting a Property of this Type
 
-To set a property whose base data type is DEVPROP\_TYPE\_DEVPROPKEY, call the corresponding SetupDiSet*Xxx* property function and set the function input parameters as follows:
+To set a property whose base data type is DEVPROP_TYPE_DEVPROPKEY, call the corresponding SetupDiSet*Xxx* property function and set the function input parameters as follows:
 
--   Set the *PropertyType* parameter to DEVPROP\_TYPE\_DEVPROPKEY, set the *PropertyBuffer* parameter to a pointer to a buffer that contains a DEVPROPKEY structure, and set the *PropertyBufferSize* parameter to `sizeof(DEVPROPKEY)`.
+-   Set the *PropertyType* parameter to DEVPROP_TYPE_DEVPROPKEY, set the *PropertyBuffer* parameter to a pointer to a buffer that contains a DEVPROPKEY structure, and set the *PropertyBufferSize* parameter to `sizeof(DEVPROPKEY)`.
 
 -   Set the other function input parameters as appropriate to set the property.
 

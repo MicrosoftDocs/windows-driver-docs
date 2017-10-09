@@ -47,7 +47,7 @@ The following components are blocked from executing on Windows 10 S:
 -   msbuild.exe
 -   ntsd.exe
 -   powershell.exe
--   powershell\_ise.exe
+-   powershell_ise.exe
 -   rcsi.exe
 -   reg.exe
 -   regedt32.exe

@@ -1,6 +1,6 @@
 ---
-title: DEVPROP\_TYPE\_STRING\_INDIRECT
-description: The DEVPROP\_TYPE\_STRING\_INDIRECT identifier represents the base-data-type identifier for a NULL-terminated Unicode string that contains an indirect string reference.
+title: DEVPROP_TYPE_STRING_INDIRECT
+description: The DEVPROP_TYPE_STRING_INDIRECT identifier represents the base-data-type identifier for a NULL-terminated Unicode string that contains an indirect string reference.
 ms.assetid: c3a4f627-02d7-47ba-aa62-5d6b0e8dd9cd
 keywords: ["DEVPROP_TYPE_STRING_INDIRECT Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPROP\_TYPE\_STRING\_INDIRECT
+# DEVPROP_TYPE_STRING_INDIRECT
 
 
-The DEVPROP\_TYPE\_STRING\_INDIRECT identifier represents the base-data-type identifier for a NULL-terminated Unicode string that contains an indirect string reference.
+The DEVPROP_TYPE_STRING_INDIRECT identifier represents the base-data-type identifier for a NULL-terminated Unicode string that contains an indirect string reference.
 
 Remarks
 -------
@@ -29,13 +29,13 @@ Windows extracts the string from the module that is specified by the *path* and 
 <a href="" id="-infname--strkey-"></a>**@***InfName***,%***strkey***%**  
 Windows extracts the string from the INF **Strings** section of the INF file in the %SystemRoot%\\*inf* directory whose name is supplied by the *InfName* entry. The *strkey* token identifier should match the key of a line in the **Strings** section that best matches one of the caller's preferred UI languages. If no language-specific **Strings** sections exist, Windows uses the default **Strings** section.
 
-You cannot combine DEVPROP\_TYPE\_STRING\_INDIRECT with any of the property-data-type modifiers.
+You cannot combine DEVPROP_TYPE_STRING_INDIRECT with any of the property-data-type modifiers.
 
 ### Setting a Property of This Type
 
-To set a property whose base data type is DEVPROP\_TYPE\_STRING\_INDIRECT, call the corresponding **SetupDiSet***Xxx* property function and set the function input parameters as follows:
+To set a property whose base data type is DEVPROP_TYPE_STRING_INDIRECT, call the corresponding **SetupDiSet***Xxx* property function and set the function input parameters as follows:
 
--   Set the *PropertyType* parameter to DEVPROP\_TYPE\_STRING\_INDIRECT.
+-   Set the *PropertyType* parameter to DEVPROP_TYPE_STRING_INDIRECT.
 
 -   Set the *PropertyBuffer* parameter to a pointer to a buffer that contains the NULL-terminated string that supplies an indirect string reference.
 
@@ -45,11 +45,11 @@ To set a property whose base data type is DEVPROP\_TYPE\_STRING\_INDIRECT, call 
 
 ### Retrieving the Value of This Property Type
 
-When an application calls a **SetupDiGet***Xxx* property function to retrieve the value of a property of this base data type, Windows tries to locate the actual string that the property references. If Windows can retrieve the actual string, it returns the actual string to the caller and identifies the base data type of the retrieved property as [**DEVPROP\_TYPE\_STRING**](devprop-type-string.md). Otherwise, Windows returns the indirect string reference and identifies the base data type of the retrieved property as DEVPROP\_TYPE\_STRING\_INDIRECT.
+When an application calls a **SetupDiGet***Xxx* property function to retrieve the value of a property of this base data type, Windows tries to locate the actual string that the property references. If Windows can retrieve the actual string, it returns the actual string to the caller and identifies the base data type of the retrieved property as [**DEVPROP_TYPE_STRING**](devprop-type-string.md). Otherwise, Windows returns the indirect string reference and identifies the base data type of the retrieved property as DEVPROP_TYPE_STRING_INDIRECT.
 
 ### Localizing Static Text
 
-Starting with Windows Vista you can localize custom and standard string-type PnP static-text properties using resources from a PE image's string or resource tables by setting static-text property types to DEVPROP\_TYPE\_STRING\_INDIRECT. You can also add non-localized replacement-string data that can be formatted into the static text.
+Starting with Windows Vista you can localize custom and standard string-type PnP static-text properties using resources from a PE image's string or resource tables by setting static-text property types to DEVPROP_TYPE_STRING_INDIRECT. You can also add non-localized replacement-string data that can be formatted into the static text.
 
 Strings located in a PE image's STRINGTABLE resource (as typically performed by LoadString) should use the following format:
 
@@ -96,7 +96,7 @@ Requirements
 ## See also
 
 
-[**DEVPROP\_TYPE\_STRING**](devprop-type-string.md)
+[**DEVPROP_TYPE_STRING**](devprop-type-string.md)
 
  
 

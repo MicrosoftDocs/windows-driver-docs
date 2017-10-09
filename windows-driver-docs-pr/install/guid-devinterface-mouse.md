@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVINTERFACE\_MOUSE
-description: GUID\_DEVINTERFACE\_MOUSE
+title: GUID_DEVINTERFACE_MOUSE
+description: GUID_DEVINTERFACE_MOUSE
 ms.assetid: c5aff960-a78d-4429-ba3f-f2f91d9a56fa
 keywords: ["GUID_DEVINTERFACE_MOUSE Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVINTERFACE\_MOUSE
+# GUID_DEVINTERFACE_MOUSE
 
 
-The GUID\_DEVINTERFACE\_MOUSE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for mouse devices.
+The GUID_DEVINTERFACE_MOUSE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for mouse devices.
 
 <table>
 <colgroup>
@@ -52,9 +52,9 @@ The system-supplied [mouse class driver](hid-non_hidclass_keyboard_and_mouse_dev
 
 For general information about supporting mouse devices, see [HID Architecture](https://msdn.microsoft.com/library/windows/hardware/jj126193) and [Features of the Kbdclass and Mouclass Drivers](hid-features_of_the_kbdclass_and_mouclass_drivers).
 
-The WDK includes sample code for the system-supplied mouse class driver. The mouse class driver uses the obsolete identifier [**GUID\_CLASS\_MOUSE**](guid-class-mouse.md) to register an instance of this [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
+The WDK includes sample code for the system-supplied mouse class driver. The mouse class driver uses the obsolete identifier [**GUID_CLASS_MOUSE**](guid-class-mouse.md) to register an instance of this [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
 
-For information about the device interface class for keyboard devices, see [**GUID\_DEVINTERFACE\_KEYBOARD**](guid-devinterface-keyboard.md).
+For information about the device interface class for keyboard devices, see [**GUID_DEVINTERFACE_KEYBOARD**](guid-devinterface-keyboard.md).
 
 Requirements
 ------------
@@ -79,9 +79,9 @@ Requirements
 ## See also
 
 
-[**GUID\_CLASS\_MOUSE**](guid-class-mouse.md)
+[**GUID_CLASS_MOUSE**](guid-class-mouse.md)
 
-[**GUID\_DEVINTERFACE\_KEYBOARD**](guid-devinterface-keyboard.md)
+[**GUID_DEVINTERFACE_KEYBOARD**](guid-devinterface-keyboard.md)
 
  
 

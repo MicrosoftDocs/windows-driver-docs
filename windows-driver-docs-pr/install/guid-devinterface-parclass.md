@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVINTERFACE\_PARCLASS
-description: GUID\_DEVINTERFACE\_PARCLASS
+title: GUID_DEVINTERFACE_PARCLASS
+description: GUID_DEVINTERFACE_PARCLASS
 ms.assetid: d55195d4-f4f5-464f-a1ca-5fe0eafccb2a
 keywords: ["GUID_DEVINTERFACE_PARCLASS Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVINTERFACE\_PARCLASS
+# GUID_DEVINTERFACE_PARCLASS
 
 
-The GUID\_DEVINTERFACE\_PARCLASS [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for devices that are attached to a [parallel port](https://msdn.microsoft.com/library/windows/hardware/ff544263).
+The GUID_DEVINTERFACE_PARCLASS [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for devices that are attached to a [parallel port](https://msdn.microsoft.com/library/windows/hardware/ff544263).
 
 <table>
 <colgroup>
@@ -46,15 +46,15 @@ The GUID\_DEVINTERFACE\_PARCLASS [device interface class](https://msdn.microsoft
 Remarks
 -------
 
-Drivers for parallel devices that are attached to parallel ports register instances of GUID\_DEVINTERFACE\_PARCLASS to notify the operating system and applications of the presence of parallel devices.
+Drivers for parallel devices that are attached to parallel ports register instances of GUID_DEVINTERFACE_PARCLASS to notify the operating system and applications of the presence of parallel devices.
 
 The system-supplied bus driver for parallel ports creates an instance of this device interface class for each hardware device that is attached to a parallel port.
 
 For information about parallel devices and drivers, see [Parallel Devices Design Guide](https://msdn.microsoft.com/library/windows/hardware/ff544263).
 
-For information about the device interface class for parallel ports, see [**GUID\_DEVINTERFACE\_PARALLEL**](guid-devinterface-parallel.md).
+For information about the device interface class for parallel ports, see [**GUID_DEVINTERFACE_PARALLEL**](guid-devinterface-parallel.md).
 
-[**GUID\_PARCLASS\_DEVICE**](guid-parclass-device.md) is an obsolete identifier for this device interface class; for new instances of this class, use GUID\_DEVINTERFACE\_PARCLASS instead.
+[**GUID_PARCLASS_DEVICE**](guid-parclass-device.md) is an obsolete identifier for this device interface class; for new instances of this class, use GUID_DEVINTERFACE_PARCLASS instead.
 
 Requirements
 ------------
@@ -79,9 +79,9 @@ Requirements
 ## See also
 
 
-[**GUID\_DEVINTERFACE\_PARALLEL**](guid-devinterface-parallel.md)
+[**GUID_DEVINTERFACE_PARALLEL**](guid-devinterface-parallel.md)
 
-[**GUID\_PARCLASS\_DEVICE**](guid-parclass-device.md)
+[**GUID_PARCLASS_DEVICE**](guid-parclass-device.md)
 
  
 

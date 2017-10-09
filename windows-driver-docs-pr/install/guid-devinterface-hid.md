@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVINTERFACE\_HID
-description: GUID\_DEVINTERFACE\_HID
+title: GUID_DEVINTERFACE_HID
+description: GUID_DEVINTERFACE_HID
 ms.assetid: af2ebdaf-b7e9-4f79-abb6-60f1fb954b55
 keywords: ["GUID_DEVINTERFACE_HID Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVINTERFACE\_HID
+# GUID_DEVINTERFACE_HID
 
 
-The GUID\_DEVINTERFACE\_HID [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [HID collections](https://msdn.microsoft.com/library/windows/hardware/ff539861).
+The GUID_DEVINTERFACE_HID [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [HID collections](https://msdn.microsoft.com/library/windows/hardware/ff539861).
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The system-supplied [HID class driver](https://msdn.microsoft.com/library/window
 
 For information about HID devices and drivers, see [HIDClass Devices](hid-hidclass_devices).
 
-For information about the device interface class for keyboard devices, see [**GUID\_DEVINTERFACE\_KEYBOARD**](guid-devinterface-keyboard.md).
+For information about the device interface class for keyboard devices, see [**GUID_DEVINTERFACE_KEYBOARD**](guid-devinterface-keyboard.md).
 
-For information about the device interface class for mouse devices, see [**GUID\_DEVINTERFACE\_MOUSE**](guid-devinterface-mouse.md).
+For information about the device interface class for mouse devices, see [**GUID_DEVINTERFACE_MOUSE**](guid-devinterface-mouse.md).
 
-The [**GUID\_CLASS\_INPUT**](guid-class-input.md) is an obsolete identifier for this device interface class; use GUID\_DEVINTERFACE\_HID instead.
+The [**GUID_CLASS_INPUT**](guid-class-input.md) is an obsolete identifier for this device interface class; use GUID_DEVINTERFACE_HID instead.
 
 Requirements
 ------------
@@ -77,11 +77,11 @@ Requirements
 ## See also
 
 
-[**GUID\_CLASS\_INPUT**](guid-class-input.md)
+[**GUID_CLASS_INPUT**](guid-class-input.md)
 
-[**GUID\_DEVINTERFACE\_KEYBOARD**](guid-devinterface-keyboard.md)
+[**GUID_DEVINTERFACE_KEYBOARD**](guid-devinterface-keyboard.md)
 
-[**GUID\_DEVINTERFACE\_MOUSE**](guid-devinterface-mouse.md)
+[**GUID_DEVINTERFACE_MOUSE**](guid-devinterface-mouse.md)
 
  
 

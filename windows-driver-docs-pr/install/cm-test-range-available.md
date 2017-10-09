@@ -1,6 +1,6 @@
 ---
-title: CM\_Test\_Range\_Available
-description: CM\_Test\_Range\_Available
+title: CM_Test_Range_Available
+description: CM_Test_Range_Available
 ms.assetid: c10bca86-5fa4-4857-9a29-701458d8fa60
 keywords: ["CM_Test_Range_Available Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# CM\_Test\_Range\_Available
+# CM_Test_Range_Available
 
 
  

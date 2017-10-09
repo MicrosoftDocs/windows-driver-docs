@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVICE\_LID
-description: GUID\_DEVICE\_LID
+title: GUID_DEVICE_LID
+description: GUID_DEVICE_LID
 ms.assetid: e879b1bf-3f5f-4b6d-956b-006091377194
 keywords: ["GUID_DEVICE_LID Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVICE\_LID
+# GUID_DEVICE_LID
 
 
-The GUID\_DEVICE\_LID [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for Advanced Configuration and Power Interface (ACPI) lid devices.
+The GUID_DEVICE_LID [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for Advanced Configuration and Power Interface (ACPI) lid devices.
 
 <table>
 <colgroup>

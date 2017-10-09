@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVINTERFACE\_WPD
-description: GUID\_DEVINTERFACE\_WPD
+title: GUID_DEVINTERFACE_WPD
+description: GUID_DEVINTERFACE_WPD
 ms.assetid: 611d1866-2530-4acb-8c83-77c29bdd128c
 keywords: ["GUID_DEVINTERFACE_WPD Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVINTERFACE\_WPD
+# GUID_DEVINTERFACE_WPD
 
 
-The GUID\_DEVINTERFACE\_WPD [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [Windows Portable Devices](http://go.microsoft.com/fwlink/p/?linkid=106527) (WPD).
+The GUID_DEVINTERFACE_WPD [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [Windows Portable Devices](http://go.microsoft.com/fwlink/p/?linkid=106527) (WPD).
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The GUID\_DEVINTERFACE\_WPD [device interface class](https://msdn.microsoft.com/
 Remarks
 -------
 
-Drivers for devices that support the WPD device-driver interface (DDI) register instances of GUID\_DEVINTERFACE\_WPD to notify the operating system and applications that WPD devices are present.
+Drivers for devices that support the WPD device-driver interface (DDI) register instances of GUID_DEVINTERFACE_WPD to notify the operating system and applications that WPD devices are present.
 
 The WPD class extension component registers an instance of this device interface for a WPD driver that uses the WPD class extension.
 
@@ -54,7 +54,7 @@ Clients that use WPD devices should register to be notified of the arrival of in
 
 Clients can enumerate WPD devices that register this interface by calling **IPortableDeviceManager::GetDevices** (documented in Windows SDK).
 
-For information about the device interface class for private WPD devices, see [**GUID\_DEVINTERFACE\_WPD\_PRIVATE**](guid-devinterface-wpd-private.md).
+For information about the device interface class for private WPD devices, see [**GUID_DEVINTERFACE_WPD_PRIVATE**](guid-devinterface-wpd-private.md).
 
 Requirements
 ------------
@@ -79,7 +79,7 @@ Requirements
 ## See also
 
 
-[**GUID\_DEVINTERFACE\_WPD\_PRIVATE**](guid-devinterface-wpd-private.md)
+[**GUID_DEVINTERFACE_WPD_PRIVATE**](guid-devinterface-wpd-private.md)
 
  
 

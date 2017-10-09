@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_DriverDate
-description: DEVPKEY\_Device\_DriverDate
+title: DEVPKEY_Device_DriverDate
+description: DEVPKEY_Device_DriverDate
 ms.assetid: d1310b0f-f358-4875-a01b-8bc4cf8b8d2d
 keywords: ["DEVPKEY_Device_DriverDate Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_DriverDate
+# DEVPKEY_Device_DriverDate
 
 
-The PKEY\_Device\_DriverDate device property represents the date of the driver that is currently installed for a device instance.
+The PKEY_Device_DriverDate device property represents the date of the driver that is currently installed for a device instance.
 
 <table>
 <colgroup>
@@ -53,11 +53,11 @@ The PKEY\_Device\_DriverDate device property represents the date of the driver t
 Remarks
 -------
 
-The value of DEVPKEY\_Device\_DriverDate is supplied by the [**INF DriverVer directive**](https://msdn.microsoft.com/library/windows/hardware/ff547394) that is included in the **INF Version section** of an INF file that installs a device or by a device-specific INF **DriverVer** directive that is included in the [**INF *DDInstall* section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) that installs a device.
+The value of DEVPKEY_Device_DriverDate is supplied by the [**INF DriverVer directive**](https://msdn.microsoft.com/library/windows/hardware/ff547394) that is included in the **INF Version section** of an INF file that installs a device or by a device-specific INF **DriverVer** directive that is included in the [**INF *DDInstall* section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_DriverDate property.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_DriverDate property.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_DriverDate property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **DriverDateData** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverDate property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **DriverDateData** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
 
 Requirements
 ------------

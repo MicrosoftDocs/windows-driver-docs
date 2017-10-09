@@ -1,6 +1,6 @@
 ---
-title: KSMFT\_CATEGORY\_OTHER
-description: KSMFT\_CATEGORY\_OTHER
+title: KSMFT_CATEGORY_OTHER
+description: KSMFT_CATEGORY_OTHER
 ms.assetid: db50ab63-9c6d-4345-8b1c-377a2645dde3
 keywords: ["KSMFT_CATEGORY_OTHER Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSMFT\_CATEGORY\_OTHER
+# KSMFT_CATEGORY_OTHER
 
 
-The KSMFT\_CATEGORY\_OTHER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [Kernel Streaming](https://msdn.microsoft.com/library/windows/hardware/ff560842) (KS) functional category for a device that does not belong in other KS functional categories.
+The KSMFT_CATEGORY_OTHER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [Kernel Streaming](https://msdn.microsoft.com/library/windows/hardware/ff560842) (KS) functional category for a device that does not belong in other KS functional categories.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSMFT\_CATEGORY\_OTHER [device interface class](https://msdn.microsoft.com/l
 Remarks
 -------
 
-AVStream drivers that have MFT codec support register instances of this device interface class to indicate to the operating system that the devices support the KSMFT\_CATEGORY\_OTHER functional category.
+AVStream drivers that have MFT codec support register instances of this device interface class to indicate to the operating system that the devices support the KSMFT_CATEGORY_OTHER functional category.
 
 For more information about device interface classes for AVStream devices with hardware codec support, see [Getting Started with Hardware Codec Support in AVStream](https://msdn.microsoft.com/library/windows/hardware/gg299325).
 

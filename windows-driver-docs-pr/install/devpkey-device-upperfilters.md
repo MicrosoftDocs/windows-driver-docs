@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_UpperFilters
-description: DEVPKEY\_Device\_UpperFilters
+title: DEVPKEY_Device_UpperFilters
+description: DEVPKEY_Device_UpperFilters
 ms.assetid: 5e6cba65-13ca-44b2-bb5f-ca61b3f23c5c
 keywords: ["DEVPKEY_Device_UpperFilters Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_UpperFilters
+# DEVPKEY_Device_UpperFilters
 
 
-The DEVPKEY\_Device\_UpperFilters device property represents a list of the service names of the upper-level filter drivers that are installed for a device instance.
+The DEVPKEY_Device_UpperFilters device property represents a list of the service names of the upper-level filter drivers that are installed for a device instance.
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_Device\_UpperFilters device property represents a list of the servi
 Remarks
 -------
 
-The value of the DEVPKEY\_Device\_UpperFilters property is set when an upper-level device filter driver is installed for a device. For more information about how to install a device filter driver, see [Installing a Filter Driver](https://msdn.microsoft.com/library/windows/hardware/ff547595).
+The value of the DEVPKEY_Device_UpperFilters property is set when an upper-level device filter driver is installed for a device. For more information about how to install a device filter driver, see [Installing a Filter Driver](https://msdn.microsoft.com/library/windows/hardware/ff547595).
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) and **SetupDiGetDeviceProperty** to retrieve and set the value of DEVPKEY\_Device\_UpperFilters.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) and **SetupDiGetDeviceProperty** to retrieve and set the value of DEVPKEY_Device_UpperFilters.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_UpperFilters property key. Instead, you can use the corresponding SPDRP\_UPPERFILTERS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_UpperFilters property key. Instead, you can use the corresponding SPDRP_UPPERFILTERS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------

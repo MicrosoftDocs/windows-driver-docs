@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVINTERFACE\_OPM
-description: GUID\_DEVINTERFACE\_OPM
+title: GUID_DEVINTERFACE_OPM
+description: GUID_DEVINTERFACE_OPM
 ms.assetid: bd999b09-d531-4b89-a306-83e1ca7cac64
 keywords: ["GUID_DEVINTERFACE_OPM Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVINTERFACE\_OPM
+# GUID_DEVINTERFACE_OPM
 
 
-The GUID\_DEVINTERFACE\_OPM [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for display adapter drivers that operate in the context of the [Windows Vista Display Driver Model](https://msdn.microsoft.com/library/windows/hardware/ff570593) and support output protection management (OPM) for monitor child devices.
+The GUID_DEVINTERFACE_OPM [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for display adapter drivers that operate in the context of the [Windows Vista Display Driver Model](https://msdn.microsoft.com/library/windows/hardware/ff570593) and support output protection management (OPM) for monitor child devices.
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ Remarks
 
 Drivers register instances of this device interface class to notify the operating system and applications of the presence of OPM device interfaces.
 
-If a display miniport driver supports a direct-call OPM interface for this [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509), a kernel-mode component can retrieve the direct-call interface by calling the miniport driver's [**DxgkDdiQueryInterface**](https://msdn.microsoft.com/library/windows/hardware/ff559764) function and supplying GUID\_DEVINTERFACE\_OPM to specify the interface type.
+If a display miniport driver supports a direct-call OPM interface for this [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509), a kernel-mode component can retrieve the direct-call interface by calling the miniport driver's [**DxgkDdiQueryInterface**](https://msdn.microsoft.com/library/windows/hardware/ff559764) function and supplying GUID_DEVINTERFACE_OPM to specify the interface type.
 
 For information about OPM, see [Supporting Output Protection Manager](https://msdn.microsoft.com/library/windows/hardware/ff569879).
 

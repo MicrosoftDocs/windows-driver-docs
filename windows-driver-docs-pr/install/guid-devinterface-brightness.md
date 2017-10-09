@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVINTERFACE\_BRIGHTNESS
-description: GUID\_DEVINTERFACE\_BRIGHTNESS
+title: GUID_DEVINTERFACE_BRIGHTNESS
+description: GUID_DEVINTERFACE_BRIGHTNESS
 ms.assetid: a31b4e12-3702-4a24-98c0-cf8ae7d86a75
 keywords: ["GUID_DEVINTERFACE_BRIGHTNESS Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVINTERFACE\_BRIGHTNESS
+# GUID_DEVINTERFACE_BRIGHTNESS
 
 
-The GUID\_DEVINTERFACE\_BRIGHTNESS [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for display adapter drivers that operate in the context of the [Windows Vista Display Driver Model](https://msdn.microsoft.com/library/windows/hardware/ff570593) and support brightness control of monitor child devices.
+The GUID_DEVINTERFACE_BRIGHTNESS [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for display adapter drivers that operate in the context of the [Windows Vista Display Driver Model](https://msdn.microsoft.com/library/windows/hardware/ff570593) and support brightness control of monitor child devices.
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ Remarks
 
 Drivers register instances of this device interface class to notify the operating system and applications of the presence of brightness control interfaces for monitor child devices.
 
-If the display miniport driver supports a direct-call brightness control interface for this [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509), a kernel-mode component can retrieve the direct-call interface by calling the miniport driver's [**DxgkDdiQueryInterface**](https://msdn.microsoft.com/library/windows/hardware/ff559764) function and supplying GUID\_DEVINTERFACE\_BRIGHTNESS to specify the interface type.
+If the display miniport driver supports a direct-call brightness control interface for this [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509), a kernel-mode component can retrieve the direct-call interface by calling the miniport driver's [**DxgkDdiQueryInterface**](https://msdn.microsoft.com/library/windows/hardware/ff559764) function and supplying GUID_DEVINTERFACE_BRIGHTNESS to specify the interface type.
 
 For information about brightness devices, see [Supporting Brightness Controls on Integrated Display Panels](https://msdn.microsoft.com/library/windows/hardware/ff569755) and [Brightness Control Interface](https://msdn.microsoft.com/library/windows/hardware/ff538260).
 

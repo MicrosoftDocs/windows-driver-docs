@@ -1,6 +1,6 @@
 ---
-title: GUID\_DISPLAY\_DEVICE\_ARRIVAL
-description: GUID\_DISPLAY\_DEVICE\_ARRIVAL
+title: GUID_DISPLAY_DEVICE_ARRIVAL
+description: GUID_DISPLAY_DEVICE_ARRIVAL
 ms.assetid: 4915c6b0-b9a7-4602-ae43-032e20353719
 keywords: ["GUID_DISPLAY_DEVICE_ARRIVAL Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DISPLAY\_DEVICE\_ARRIVAL
+# GUID_DISPLAY_DEVICE_ARRIVAL
 
 
-The GUID\_DISPLAY\_DEVICE\_ARRIVAL [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [display adapters](https://msdn.microsoft.com/library/windows/hardware/ff554044).
+The GUID_DISPLAY_DEVICE_ARRIVAL [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [display adapters](https://msdn.microsoft.com/library/windows/hardware/ff554044).
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ Remarks
 
 The system-supplied components of the [Windows Vista Display Driver Model](https://msdn.microsoft.com/library/windows/hardware/ff570593) register instances of this device interface class to notify the operating system and applications of the presence of display adapters.
 
-For information about the device interface class for display views that are supported by display adapters, see [**GUID\_DEVINTERFACE\_DISPLAY\_ADAPTER**](guid-devinterface-display-adapter.md).
+For information about the device interface class for display views that are supported by display adapters, see [**GUID_DEVINTERFACE_DISPLAY_ADAPTER**](guid-devinterface-display-adapter.md).
 
 Requirements
 ------------
@@ -73,7 +73,7 @@ Requirements
 ## See also
 
 
-[**GUID\_DEVINTERFACE\_DISPLAY\_ADAPTER**](guid-devinterface-display-adapter.md)
+[**GUID_DEVINTERFACE_DISPLAY_ADAPTER**](guid-devinterface-display-adapter.md)
 
  
 

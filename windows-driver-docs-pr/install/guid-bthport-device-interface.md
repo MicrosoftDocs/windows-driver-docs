@@ -1,6 +1,6 @@
 ---
-title: GUID\_BTHPORT\_DEVICE\_INTERFACE
-description: GUID\_BTHPORT\_DEVICE\_INTERFACE
+title: GUID_BTHPORT_DEVICE_INTERFACE
+description: GUID_BTHPORT_DEVICE_INTERFACE
 ms.assetid: 2e23912c-ab5b-4c4d-94c7-e763544cc2f5
 keywords: ["GUID_BTHPORT_DEVICE_INTERFACE Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_BTHPORT\_DEVICE\_INTERFACE
+# GUID_BTHPORT_DEVICE_INTERFACE
 
 
-The GUID\_BTHPORT\_DEVICE\_INTERFACE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [Bluetooth radios](https://msdn.microsoft.com/library/windows/hardware/ff536596).
+The GUID_BTHPORT_DEVICE_INTERFACE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [Bluetooth radios](https://msdn.microsoft.com/library/windows/hardware/ff536596).
 
 <table>
 <colgroup>

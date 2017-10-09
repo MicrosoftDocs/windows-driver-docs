@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_MULTIPLEXER
-description: KSCATEGORY\_MULTIPLEXER
+title: KSCATEGORY_MULTIPLEXER
+description: KSCATEGORY_MULTIPLEXER
 ms.assetid: 3023769a-9b98-4c12-90b1-f83294a45ab0
 keywords: ["KSCATEGORY_MULTIPLEXER Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_MULTIPLEXER
+# KSCATEGORY_MULTIPLEXER
 
 
-The KSCATEGORY\_MULTIPLEXER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a multiplexer device.
+The KSCATEGORY_MULTIPLEXER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a multiplexer device.
 
 <table>
 <colgroup>
@@ -46,13 +46,13 @@ The KSCATEGORY\_MULTIPLEXER [device interface class](https://msdn.microsoft.com/
 Remarks
 -------
 
-Drivers for KS devices register instances of KSCATEGORY\_MULTIPLEXER to indicate to the operating system that the devices support the KSCATEGORY\_MULTIPLEXER functional category.
+Drivers for KS devices register instances of KSCATEGORY_MULTIPLEXER to indicate to the operating system that the devices support the KSCATEGORY_MULTIPLEXER functional category.
 
 For an example of how to register this functional category in an INF file, see the *Bdan.inf* INF file that is included with the software tuner sample in the *src/swtuner/algtuner* directory of the WDK.
 
 For information about multiplexers, see [Topology Filters](https://msdn.microsoft.com/library/windows/hardware/ff538552).
 
-For more information about the KSCATEGORY\_MULTIPLEXER functional category, see [Encoder Installation and Registration](https://msdn.microsoft.com/library/windows/hardware/ff559551).
+For more information about the KSCATEGORY_MULTIPLEXER functional category, see [Encoder Installation and Registration](https://msdn.microsoft.com/library/windows/hardware/ff559551).
 
 Requirements
 ------------

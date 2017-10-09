@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_InstanceId
-description: DEVPKEY\_Device\_InstanceId
+title: DEVPKEY_Device_InstanceId
+description: DEVPKEY_Device_InstanceId
 ms.assetid: 74c78289-e140-46da-8005-ef6f441f78ec
 keywords: ["DEVPKEY_Device_InstanceId Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_InstanceId
+# DEVPKEY_Device_InstanceId
 
 
-The DEVPKEY\_Device\_InstanceId device property represents the device instance identifier of a device.
+The DEVPKEY_Device_InstanceId device property represents the device instance identifier of a device.
 
 <table>
 <colgroup>
@@ -48,11 +48,11 @@ The DEVPKEY\_Device\_InstanceId device property represents the device instance i
 Remarks
 -------
 
-The value of DEVPKEY\_Device\_InstanceId is set internally by Windows during the installation of a device instance.
+The value of DEVPKEY_Device_InstanceId is set internally by Windows during the installation of a device instance.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_InstanceId for a device instance.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_InstanceId for a device instance.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_InstanceId property key. For information about how to retrieve a device instance identifier on these earlier versions of Windows, see [Retrieving a Device Instance Identifier](https://msdn.microsoft.com/library/windows/hardware/ff549863).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_InstanceId property key. For information about how to retrieve a device instance identifier on these earlier versions of Windows, see [Retrieving a Device Instance Identifier](https://msdn.microsoft.com/library/windows/hardware/ff549863).
 
 Requirements
 ------------

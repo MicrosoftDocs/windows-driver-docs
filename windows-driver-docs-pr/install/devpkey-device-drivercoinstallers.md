@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_DriverCoInstallers
-description: DEVPKEY\_Device\_DriverCoInstallers
+title: DEVPKEY_Device_DriverCoInstallers
+description: DEVPKEY_Device_DriverCoInstallers
 ms.assetid: ba85a906-adfa-42f9-b52a-e8a48c8d5076
 keywords: ["DEVPKEY_Device_DriverCoInstallers Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_DriverCoInstallers
+# DEVPKEY_Device_DriverCoInstallers
 
 
-The DEVPKEY\_Device\_DriverCoInstallers device property represents a list of DLL names, and entry points in the DLLs, that are registered as [*co-installers*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-co-installer) for a device instance.
+The DEVPKEY_Device_DriverCoInstallers device property represents a list of DLL names, and entry points in the DLLs, that are registered as [*co-installers*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-co-installer) for a device instance.
 
 <table>
 <colgroup>
@@ -57,11 +57,11 @@ The DEVPKEY\_Device\_DriverCoInstallers device property represents a list of DLL
 Remarks
 -------
 
-The value of DEVPKEY\_Device\_DriverCoInstallers is supplied by the [**INF *DDInstall*.Coinstallers**](https://msdn.microsoft.com/library/windows/hardware/ff547321) section in the INF file that installs a device.
+The value of DEVPKEY_Device_DriverCoInstallers is supplied by the [**INF *DDInstall*.Coinstallers**](https://msdn.microsoft.com/library/windows/hardware/ff547321) section in the INF file that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_DriverCoInstallers.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_DriverCoInstallers.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_DriverCoInstallers property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **CoInstallers32** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverCoInstallers property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **CoInstallers32** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
 
 Requirements
 ------------

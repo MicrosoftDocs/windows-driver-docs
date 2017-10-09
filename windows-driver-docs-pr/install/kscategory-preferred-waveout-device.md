@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_PREFERRED\_WAVEOUT\_DEVICE
-description: KSCATEGORY\_PREFERRED\_WAVEOUT\_DEVICE
+title: KSCATEGORY_PREFERRED_WAVEOUT_DEVICE
+description: KSCATEGORY_PREFERRED_WAVEOUT_DEVICE
 ms.assetid: bba79780-e89c-4b19-98e0-84bfdb5bbf25
 keywords: ["KSCATEGORY_PREFERRED_WAVEOUT_DEVICE Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_PREFERRED\_WAVEOUT\_DEVICE
+# KSCATEGORY_PREFERRED_WAVEOUT_DEVICE
 
 
-The KSCATEGORY\_PREFERRED\_WAVEIN\_DEVICE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for the preferred wave input device.
+The KSCATEGORY_PREFERRED_WAVEIN_DEVICE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for the preferred wave input device.
 
 <table>
 <colgroup>

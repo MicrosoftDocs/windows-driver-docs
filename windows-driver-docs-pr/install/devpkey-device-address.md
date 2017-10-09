@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_Address
-description: DEVPKEY\_Device\_Address
+title: DEVPKEY_Device_Address
+description: DEVPKEY_Device_Address
 ms.assetid: 48951b9e-0bd0-4f56-9a6f-e8a5aa6c25c2
 keywords: ["DEVPKEY_Device_Address Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_Address
+# DEVPKEY_Device_Address
 
 
-The DEVPKEY\_Device\_Address device property represents the bus-specific address of a device instance.
+The DEVPKEY_Device_Address device property represents the bus-specific address of a device instance.
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_Device\_Address device property represents the bus-specific address
 Remarks
 -------
 
-Windows sets the value of DEVPKEY\_Device\_Address to the address of the device on its bus. For information about the interpretation of a device address, see the **DevicePropertyAddress** value of the *DeviceProperty* parameter of [**IoGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff549203).
+Windows sets the value of DEVPKEY_Device_Address to the address of the device on its bus. For information about the interpretation of a device address, see the **DevicePropertyAddress** value of the *DeviceProperty* parameter of [**IoGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff549203).
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_Address.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_Address.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_Address property key. Instead, you can use the corresponding SPDRP\_ADDRESS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_Address property key. Instead, you can use the corresponding SPDRP_ADDRESS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------

@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_DevType
-description: DEVPKEY\_Device\_DevType
+title: DEVPKEY_Device_DevType
+description: DEVPKEY_Device_DevType
 ms.assetid: acbc0d6f-96e7-4e7c-acc3-d4cded2080d7
 keywords: ["DEVPKEY_Device_DevType Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_DevType
+# DEVPKEY_Device_DevType
 
 
-The DEVPKEY\_Device\_DevType device property represents the device type of a device instance.
+The DEVPKEY_Device_DevType device property represents the device type of a device instance.
 
 <table>
 <colgroup>
@@ -52,13 +52,13 @@ The DEVPKEY\_Device\_DevType device property represents the device type of a dev
 Remarks
 -------
 
-Windows sets the value of DEVPKEY\_Device\_DevType to the value of the DeviceType member of the [**DEVICE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147) structure for a device instance. The value of DEVPKEY\_Device\_DevType is one of the system-defined device type values that are listed in [Specifying Device Types](https://msdn.microsoft.com/library/windows/hardware/ff563821).
+Windows sets the value of DEVPKEY_Device_DevType to the value of the DeviceType member of the [**DEVICE_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147) structure for a device instance. The value of DEVPKEY_Device_DevType is one of the system-defined device type values that are listed in [Specifying Device Types](https://msdn.microsoft.com/library/windows/hardware/ff563821).
 
-You can set the value of DEVPKEY\_Device\_DevType by using an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF *DDInstall*.HW section**](https://msdn.microsoft.com/library/windows/hardware/ff547330) in the INF file that installs a device.
+You can set the value of DEVPKEY_Device_DevType by using an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF *DDInstall*.HW section**](https://msdn.microsoft.com/library/windows/hardware/ff547330) in the INF file that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_DevType.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_DevType.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_DevType property key. Instead, you can use the corresponding SPDRP\_DEVTYPE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DevType property key. Instead, you can use the corresponding SPDRP_DEVTYPE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------
@@ -83,7 +83,7 @@ Requirements
 ## See also
 
 
-[**DEVICE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147)
+[**DEVICE_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147)
 
 [**INF *DDInstall*.HW section**](https://msdn.microsoft.com/library/windows/hardware/ff547330)
 

@@ -1,6 +1,6 @@
 ---
-title: DIF\_FINISHINSTALL\_ACTION
-description: DIF\_FINISHINSTALL\_ACTION
+title: DIF_FINISHINSTALL_ACTION
+description: DIF_FINISHINSTALL_ACTION
 ms.assetid: 76eba79b-7a8a-478e-aaea-8b36eee51846
 keywords: ["DIF_FINISHINSTALL_ACTION Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DIF\_FINISHINSTALL\_ACTION
+# DIF_FINISHINSTALL_ACTION
 
 
-A DIF\_FINISHINSTALL\_ACTION request allows an installer to run finish-install actions in an interactive administrator context after all other device installation operations have completed.
+A DIF_FINISHINSTALL_ACTION request allows an installer to run finish-install actions in an interactive administrator context after all other device installation operations have completed.
 
 ### When Sent
 
@@ -63,10 +63,10 @@ If a user is signed in without administrative privileges, Windows prompts the us
 A handle to the [device information set](https://msdn.microsoft.com/library/windows/hardware/ff541247) that contains the device being installed.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-A pointer to an [**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that represents the device being installed.
+A pointer to an [**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that represents the device being installed.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters (a [**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346) structure) associated with *DeviceInfoData*.
+There are device installation parameters (a [**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346) structure) associated with *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
 None
@@ -74,7 +74,7 @@ None
 ### Installer Output
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-An installer sets the DI\_NEEDREBOOT flag if a system restart is required to complete its finish-install actions.
+An installer sets the DI_NEEDREBOOT flag if a system restart is required to complete its finish-install actions.
 
 ### Installer Return Value
 
@@ -119,7 +119,7 @@ There is no default DIF Code Handler in Windows 8 and later versions, and [**Se
 
 ### Comments
 
-Because device installation cannot determine from an ERROR\_DI\_DO\_DEFAULT return code or a NO\_ERROR return code whether a finish-install action actually succeeded, the installer should notify the user of the status of a finish-installer action.
+Because device installation cannot determine from an ERROR_DI_DO_DEFAULT return code or a NO_ERROR return code whether a finish-install action actually succeeded, the installer should notify the user of the status of a finish-installer action.
 
 For more information about finish-install actions, see [How Device Installation Processes Finish-Install Actions](https://msdn.microsoft.com/library/windows/hardware/ff546216) and [Implementing Finish-Install Actions](https://msdn.microsoft.com/library/windows/hardware/ff546302).
 

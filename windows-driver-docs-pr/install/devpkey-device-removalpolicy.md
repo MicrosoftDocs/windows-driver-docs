@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_RemovalPolicy
-description: DEVPKEY\_Device\_RemovalPolicy
+title: DEVPKEY_Device_RemovalPolicy
+description: DEVPKEY_Device_RemovalPolicy
 ms.assetid: 81dbabc1-34ef-4861-ad18-ec4a9557a19f
 keywords: ["DEVPKEY_Device_RemovalPolicy Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_RemovalPolicy
+# DEVPKEY_Device_RemovalPolicy
 
 
-The DEVPKEY\_Device\_RemovalPolicy device property represents the current removal policy for a device instance.
+The DEVPKEY_Device_RemovalPolicy device property represents the current removal policy for a device instance.
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_Device\_RemovalPolicy device property represents the current remova
 Remarks
 -------
 
-Windows sets the value of DEVPKEY\_Device\_RemovalPolicy to one of the CM\_REMOVAL\_POLICY\_*Xxx* values that are defined in Cfgmgr32.h.
+Windows sets the value of DEVPKEY_Device_RemovalPolicy to one of the CM_REMOVAL_POLICY_*Xxx* values that are defined in Cfgmgr32.h.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_RemovalPolicy property.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_RemovalPolicy property.
 
-Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY\_Device\_RemovalPolicy property key. Instead, you can use the corresponding SPDRP\_REMOVAL\_POLICY identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_Device_RemovalPolicy property key. Instead, you can use the corresponding SPDRP_REMOVAL_POLICY identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------

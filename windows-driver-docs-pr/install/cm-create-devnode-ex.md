@@ -1,6 +1,6 @@
 ---
-title: CM\_Create\_DevNode\_Ex
-description: CM\_Create\_DevNode\_Ex
+title: CM_Create_DevNode_Ex
+description: CM_Create_DevNode_Ex
 ms.assetid: 8a005611-22a7-4f94-abcf-7f5965da7f31
 keywords: ["CM_Create_DevNode_ExA", "CM_Create_DevNode_ExW", "CM_Create_DevNode_Ex Device and Driver Installation"]
 topic_type:
@@ -12,7 +12,7 @@ api_type:
 - NA
 ---
 
-# CM\_Create\_DevNode\_Ex
+# CM_Create_DevNode_Ex
 
 
  

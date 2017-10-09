@@ -1,6 +1,6 @@
 ---
-title: CM\_Get\_Device\_Interface\_List\_Ex
-description: CM\_Get\_Device\_Interface\_List\_Ex
+title: CM_Get_Device_Interface_List_Ex
+description: CM_Get_Device_Interface_List_Ex
 ms.assetid: 6d2b4acc-2166-4462-8e5f-1298301499bc
 keywords: ["CM_Get_Device_Interface_List_ExA", "CM_Get_Device_Interface_List_ExW", "CM_Get_Device_Interface_List_Ex Device and Driver Installation"]
 topic_type:
@@ -12,7 +12,7 @@ api_type:
 - NA
 ---
 
-# CM\_Get\_Device\_Interface\_List\_Ex
+# CM_Get_Device_Interface_List_Ex
 
 
  

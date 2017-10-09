@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_REALTIME
-description: KSCATEGORY\_REALTIME
+title: KSCATEGORY_REALTIME
+description: KSCATEGORY_REALTIME
 ms.assetid: c9b0a31a-50d9-47bc-9345-5d73a95238c3
 keywords: ["KSCATEGORY_REALTIME Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_REALTIME
+# KSCATEGORY_REALTIME
 
 
-The KSCATEGORY\_REALTIME [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for an audio device that is connected to a system bus (for example, the PCI bus) and that plays back or captures wave data in real time.
+The KSCATEGORY_REALTIME [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for an audio device that is connected to a system bus (for example, the PCI bus) and that plays back or captures wave data in real time.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSCATEGORY\_REALTIME [device interface class](https://msdn.microsoft.com/lib
 Remarks
 -------
 
-Drivers for KS devices register instances of KSCATEGORY\_REALTIME to indicate to the operating system that the devices support the KSCATEGORY\_REALTIME functional category.
+Drivers for KS devices register instances of KSCATEGORY_REALTIME to indicate to the operating system that the devices support the KSCATEGORY_REALTIME functional category.
 
 Devices that register this functional category are operated by the system-supplied [WaveRT port driver](https://msdn.microsoft.com/library/windows/hardware/ff538837).
 

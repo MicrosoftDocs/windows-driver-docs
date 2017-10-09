@@ -1,6 +1,6 @@
 ---
-title: CM\_Set\_HW\_Prof\_Flags
-description: CM\_Set\_HW\_Prof\_Flags
+title: CM_Set_HW_Prof_Flags
+description: CM_Set_HW_Prof_Flags
 ms.assetid: 52c3b9b8-6d0d-4b4d-9be4-5bd0d864d2fd
 keywords: ["CM_Set_HW_Prof_FlagsA", "CM_Set_HW_Prof_FlagsW", "CM_Set_HW_Prof_Flags Device and Driver Installation"]
 topic_type:
@@ -13,7 +13,7 @@ api_type:
 - NA
 ---
 
-# CM\_Set\_HW\_Prof\_Flags
+# CM_Set_HW_Prof_Flags
 
 
  

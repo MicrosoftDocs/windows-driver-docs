@@ -1,6 +1,6 @@
 ---
-title: GUID\_CLASS\_USB\_HOST\_CONTROLLER
-description: GUID\_CLASS\_USB\_HOST\_CONTROLLER
+title: GUID_CLASS_USB_HOST_CONTROLLER
+description: GUID_CLASS_USB_HOST_CONTROLLER
 ms.assetid: d2140a9e-95bc-48dd-a80b-3b098937edb3
 keywords: ["GUID_CLASS_USB_HOST_CONTROLLER Device and Driver Installation"]
 topic_type:
@@ -13,15 +13,15 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_CLASS\_USB\_HOST\_CONTROLLER
+# GUID_CLASS_USB_HOST_CONTROLLER
 
 
-GUID\_CLASS\_USB\_HOST\_CONTROLLER is an obsolete identifier for the [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) for [USB](https://msdn.microsoft.com/library/windows/hardware/ff538930) host controller devices. Starting with Microsoft Windows 2000, use the [**GUID\_DEVINTERFACE\_USB\_HOST\_CONTROLLER**](guid-devinterface-usb-host-controller.md) class identifier for new instances of this class.
+GUID_CLASS_USB_HOST_CONTROLLER is an obsolete identifier for the [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) for [USB](https://msdn.microsoft.com/library/windows/hardware/ff538930) host controller devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_USB_HOST_CONTROLLER**](guid-devinterface-usb-host-controller.md) class identifier for new instances of this class.
 
 Remarks
 -------
 
-The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](http://go.microsoft.com/fwlink/p/?linkid=256205). The USBVIEW sample uses GUID\_CLASS\_USB\_HOST\_CONTROLLER to enumerate instances of the GUID\_CLASS\_USB\_HOST\_CONTROLLER device interface class.
+The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](http://go.microsoft.com/fwlink/p/?linkid=256205). The USBVIEW sample uses GUID_CLASS_USB_HOST_CONTROLLER to enumerate instances of the GUID_CLASS_USB_HOST_CONTROLLER device interface class.
 
 Requirements
 ------------
@@ -46,7 +46,7 @@ Requirements
 ## See also
 
 
-[**GUID\_DEVINTERFACE\_USB\_HOST\_CONTROLLER**](guid-devinterface-usb-host-controller.md)
+[**GUID_DEVINTERFACE_USB_HOST_CONTROLLER**](guid-devinterface-usb-host-controller.md)
 
  
 

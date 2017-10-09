@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_GenericDriverInstalled
-description: DEVPKEY\_Device\_GenericDriverInstalled
+title: DEVPKEY_Device_GenericDriverInstalled
+description: DEVPKEY_Device_GenericDriverInstalled
 ms.assetid: 7809bed7-af11-42b0-bcc8-9492c47d92ab
 keywords: ["DEVPKEY_Device_GenericDriverInstalled Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_GenericDriverInstalled
+# DEVPKEY_Device_GenericDriverInstalled
 
 
-The DEVPKEY\_Device\_GenericDriverInstalled device property represents a Boolean value that indicates whether the driver installed for a device instance provides only basic device functionality.
+The DEVPKEY_Device_GenericDriverInstalled device property represents a Boolean value that indicates whether the driver installed for a device instance provides only basic device functionality.
 
 <table>
 <colgroup>
@@ -48,11 +48,11 @@ The DEVPKEY\_Device\_GenericDriverInstalled device property represents a Boolean
 Remarks
 -------
 
-Windows sets the value of DEVPKEY\_Device\_GenericDriverInstalled.
+Windows sets the value of DEVPKEY_Device_GenericDriverInstalled.
 
-The value of DEVPKEY\_Device\_GenericDriverInstalled is set to DEVPROP\_TRUE to indicate that a basic driver is installed. Otherwise, the value of the property is set to DEVPROP\_FALSE.
+The value of DEVPKEY_Device_GenericDriverInstalled is set to DEVPROP_TRUE to indicate that a basic driver is installed. Otherwise, the value of the property is set to DEVPROP_FALSE.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_GenericDriverInstalled.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_GenericDriverInstalled.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not support this property.
 

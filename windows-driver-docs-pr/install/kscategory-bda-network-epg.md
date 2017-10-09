@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_BDA\_NETWORK\_EPG
-description: KSCATEGORY\_BDA\_NETWORK\_EPG
+title: KSCATEGORY_BDA_NETWORK_EPG
+description: KSCATEGORY_BDA_NETWORK_EPG
 ms.assetid: 70a02c74-f092-4d1b-bf35-392da5c4fcb6
 keywords: ["KSCATEGORY_BDA_NETWORK_EPG Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_BDA\_NETWORK\_EPG
+# KSCATEGORY_BDA_NETWORK_EPG
 
 
-The KSCATEGORY\_BDA\_NETWORK\_EPG [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for an electronic program guide (EPG) in the [broadcast driver architecture](https://msdn.microsoft.com/library/windows/hardware/ff556573) (BDA).
+The KSCATEGORY_BDA_NETWORK_EPG [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for an electronic program guide (EPG) in the [broadcast driver architecture](https://msdn.microsoft.com/library/windows/hardware/ff556573) (BDA).
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSCATEGORY\_BDA\_NETWORK\_EPG [device interface class](https://msdn.microsof
 Remarks
 -------
 
-Drivers for BDA devices register instances of KSCATEGORY\_BDA\_NETWORK\_EPG to indicate to the operating system that the devices support a BDA EPG filter.
+Drivers for BDA devices register instances of KSCATEGORY_BDA_NETWORK_EPG to indicate to the operating system that the devices support a BDA EPG filter.
 
 For more information, see [BDA Filter Category GUIDs](https://msdn.microsoft.com/library/windows/hardware/ff556521).
 

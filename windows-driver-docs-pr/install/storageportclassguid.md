@@ -16,7 +16,7 @@ api_type:
 # StoragePortClassGuid
 
 
-StoragePortClassGuid is an obsolete identifier for the device interface class for storage port. Starting with Microsoft Windows 2000, use the [**GUID\_DEVINTERFACE\_STORAGEPORT**](guid-devinterface-storageport.md) class identifier for new instances of this class.
+StoragePortClassGuid is an obsolete identifier for the device interface class for storage port. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_STORAGEPORT**](guid-devinterface-storageport.md) class identifier for new instances of this class.
 
 Requirements
 ------------
@@ -41,7 +41,7 @@ Requirements
 ## See also
 
 
-[**GUID\_DEVINTERFACE\_STORAGEPORT**](guid-devinterface-storageport.md)
+[**GUID_DEVINTERFACE_STORAGEPORT**](guid-devinterface-storageport.md)
 
  
 

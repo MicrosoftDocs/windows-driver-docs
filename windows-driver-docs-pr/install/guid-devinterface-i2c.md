@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVINTERFACE\_I2C
-description: GUID\_DEVINTERFACE\_I2C
+title: GUID_DEVINTERFACE_I2C
+description: GUID_DEVINTERFACE_I2C
 ms.assetid: 765cecb7-b8ea-48ef-bdab-742da722e169
 keywords: ["GUID_DEVINTERFACE_I2C Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVINTERFACE\_I2C
+# GUID_DEVINTERFACE_I2C
 
 
-The GUID\_DEVINTERFACE\_I2C [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for display adapter drivers that operate in the context of the [Windows Vista Display Driver Model](https://msdn.microsoft.com/library/windows/hardware/ff570593) and perform I2C transactions with monitor child devices.
+The GUID_DEVINTERFACE_I2C [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for display adapter drivers that operate in the context of the [Windows Vista Display Driver Model](https://msdn.microsoft.com/library/windows/hardware/ff570593) and perform I2C transactions with monitor child devices.
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ Remarks
 
 Drivers register instances of this device interface class to notify the operating system and applications of the presence of I2C interfaces that perform transactions with monitor child devices.
 
-If a display miniport driver supports a direct-call I2C interface for this [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509), a kernel-mode component can retrieve the direct-call interface by calling the miniport driver's [**DxgkDdiQueryInterface**](https://msdn.microsoft.com/library/windows/hardware/ff559764) function and supplying GUID\_DEVINTERFACE\_I2C to specify the interface type.
+If a display miniport driver supports a direct-call I2C interface for this [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509), a kernel-mode component can retrieve the direct-call interface by calling the miniport driver's [**DxgkDdiQueryInterface**](https://msdn.microsoft.com/library/windows/hardware/ff559764) function and supplying GUID_DEVINTERFACE_I2C to specify the interface type.
 
 For information about the I2C bus, see [I2C Bus and Child Devices of the Display Adapter](https://msdn.microsoft.com/library/windows/hardware/ff567381).
 

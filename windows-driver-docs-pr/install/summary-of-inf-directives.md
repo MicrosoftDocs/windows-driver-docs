@@ -25,7 +25,7 @@ This section lists the most commonly used directives first, together with their 
 <a href="" id="addreg-directive"></a>[**AddReg Directive**](inf-addreg-directive.md)  
 This directive references one or more *add-registry-section*s, which are INF sections used to add or modify subkeys and value entries in the registry.
 
-The particular INF section in which an **AddReg** (or **DelReg**) directive resides determines the default, relative registry location that will receive modifications specified in the referenced *add-registry-section* (or *delete-registry-section*). These default registry locations are typically device-specific or driver-specific subkeys somewhere under the HKEY\_LOCAL\_MACHINE registry tree. For more information, see [Registry Trees and Keys for Devices and Drivers](registry-trees-and-keys.md).
+The particular INF section in which an **AddReg** (or **DelReg**) directive resides determines the default, relative registry location that will receive modifications specified in the referenced *add-registry-section* (or *delete-registry-section*). These default registry locations are typically device-specific or driver-specific subkeys somewhere under the HKEY_LOCAL_MACHINE registry tree. For more information, see [Registry Trees and Keys for Devices and Drivers](registry-trees-and-keys.md).
 
 Additional *add-registry-sections* can set up registry information for vendor-supplied co-installers, for system-defined device interfaces (such as kernel streaming interfaces) exported to higher level drivers, for new device interfaces exported by an installed component for a given class of devices, for driver services, or (rarely) for a new setup class of devices if the INF has a **ClassInstall32** section.
 
@@ -73,7 +73,7 @@ This directive references an *add-interface-section* in which one or more **AddR
 
  
 
-This rarely used directive references one or more *bit-registry-section*s specifying existing REG\_BINARY-type value entries in the registry for which particular bits in the values are to be modified.
+This rarely used directive references one or more *bit-registry-section*s specifying existing REG_BINARY-type value entries in the registry for which particular bits in the values are to be modified.
 
 <a href="" id="logconfig-directive"></a>[**LogConfig Directive**](inf-logconfig-directive.md)  
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).

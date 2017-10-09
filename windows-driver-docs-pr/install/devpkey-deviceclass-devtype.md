@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DeviceClass\_DevType
-description: DEVPKEY\_DeviceClass\_DevType
+title: DEVPKEY_DeviceClass_DevType
+description: DEVPKEY_DeviceClass_DevType
 ms.assetid: 383f2b47-c0ee-49c2-851c-b18c98fd0303
 keywords: ["DEVPKEY_DeviceClass_DevType Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DeviceClass\_DevType
+# DEVPKEY_DeviceClass_DevType
 
 
-The DEVPKEY\_DeviceClass\_DevType device property represents the default device type for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
+The DEVPKEY_DeviceClass_DevType device property represents the default device type for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
 
 <table>
 <colgroup>
@@ -52,13 +52,13 @@ The DEVPKEY\_DeviceClass\_DevType device property represents the default device 
 Remarks
 -------
 
-You can set the value of DEVPKEY\_DeviceClass\_DevType when an installation application installs a device setup class. For information about how to install a device setup class and setting this property, see [**INF ClassInstall32 Section**](https://msdn.microsoft.com/library/windows/hardware/ff546335) and the information about the registry entry value **DeviceType** that is provided in the "Special *value-entry-name* Keywords" section of [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320).
+You can set the value of DEVPKEY_DeviceClass_DevType when an installation application installs a device setup class. For information about how to install a device setup class and setting this property, see [**INF ClassInstall32 Section**](https://msdn.microsoft.com/library/windows/hardware/ff546335) and the information about the registry entry value **DeviceType** that is provided in the "Special *value-entry-name* Keywords" section of [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320).
 
-The value of DEVPKEY\_DeviceClass\_DevType is one of the FILE\_DEVICE\_Xxx values that are defined in Wdm.h and Ntddk.h. For more information about device types, see the *DeviceType* parameter of the [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397) function.
+The value of DEVPKEY_DeviceClass_DevType is one of the FILE_DEVICE_Xxx values that are defined in Wdm.h and Ntddk.h. For more information about device types, see the *DeviceType* parameter of the [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397) function.
 
-You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY\_DeviceClass\_DevType.
+You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY_DeviceClass_DevType.
 
-Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY\_DeviceClass\_DevType property key. On these earlier versions of Windows, you can use the SPCRP\_DEVTYPE identifier to access the value of this property. For information about how to access the value of this property, see [Retrieving Device Setup Class SPCRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff550644).
+Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_DeviceClass_DevType property key. On these earlier versions of Windows, you can use the SPCRP_DEVTYPE identifier to access the value of this property. For information about how to access the value of this property, see [Retrieving Device Setup Class SPCRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff550644).
 
 Requirements
 ------------

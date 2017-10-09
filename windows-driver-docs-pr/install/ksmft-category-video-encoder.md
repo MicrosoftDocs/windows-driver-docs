@@ -1,6 +1,6 @@
 ---
-title: KSMFT\_CATEGORY\_VIDEO\_ENCODER
-description: KSMFT\_CATEGORY\_VIDEO\_ENCODER
+title: KSMFT_CATEGORY_VIDEO_ENCODER
+description: KSMFT_CATEGORY_VIDEO_ENCODER
 ms.assetid: aa3725c0-a393-4100-acd5-d8776322b82a
 keywords: ["KSMFT_CATEGORY_VIDEO_ENCODER Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSMFT\_CATEGORY\_VIDEO\_ENCODER
+# KSMFT_CATEGORY_VIDEO_ENCODER
 
 
-The KSMFT\_CATEGORY\_VIDEO\_ENCODER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [Kernel Streaming](https://msdn.microsoft.com/library/windows/hardware/ff560842) (KS) functional category for a video device.
+The KSMFT_CATEGORY_VIDEO_ENCODER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [Kernel Streaming](https://msdn.microsoft.com/library/windows/hardware/ff560842) (KS) functional category for a video device.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSMFT\_CATEGORY\_VIDEO\_ENCODER [device interface class](https://msdn.micros
 Remarks
 -------
 
-AVStream drivers that have MFT codec support register instances of this device interface class to indicate to the operating system that the devices support the KSMFT\_CATEGORY\_VIDEO\_ENCODER functional category.
+AVStream drivers that have MFT codec support register instances of this device interface class to indicate to the operating system that the devices support the KSMFT_CATEGORY_VIDEO_ENCODER functional category.
 
 For more information about device interface classes for AVStream devices with hardware codec support, see [Getting Started with Hardware Codec Support in AVStream](https://msdn.microsoft.com/library/windows/hardware/gg299325).
 

@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_BaseContainerId
-description: DEVPKEY\_Device\_BaseContainerId
+title: DEVPKEY_Device_BaseContainerId
+description: DEVPKEY_Device_BaseContainerId
 ms.assetid: ccc20b78-60a3-4351-9809-e2a285ad0a19
 keywords: ["DEVPKEY_Device_BaseContainerId Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_BaseContainerId
+# DEVPKEY_Device_BaseContainerId
 
 
-The DEVPKEY\_Device\_BaseContainerId device property represents the [*GUID*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-guid) value of the base container identifier (*ID*) .The Windows Plug and Play (PnP) manager assigns this value to the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)).
+The DEVPKEY_Device_BaseContainerId device property represents the [*GUID*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-guid) value of the base container identifier (*ID*) .The Windows Plug and Play (PnP) manager assigns this value to the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)).
 
 <table>
 <colgroup>
@@ -56,11 +56,11 @@ The PnP manager determines the container ID for a devnode by using one of the fo
 
 -   A bus driver provides a container ID.
 
-    When the PnP manager assigns a container ID to a devnode, it first checks whether the bus driver of the devnode can provide a container ID. Bus drivers provide a container ID through an [**IRP\_MN\_QUERY\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff551679) query request with the **Parameters.QueryId.IdType** field set to **BusQueryContainerID**.
+    When the PnP manager assigns a container ID to a devnode, it first checks whether the bus driver of the devnode can provide a container ID. Bus drivers provide a container ID through an [**IRP_MN_QUERY_ID**](https://msdn.microsoft.com/library/windows/hardware/ff551679) query request with the **Parameters.QueryId.IdType** field set to **BusQueryContainerID**.
 
 -   The PnP manager generates a container ID by using the removable device capability.
 
-    If a bus driver cannot provide a container ID for a devnode that it is enumerating, the PnP manager uses the removable device capability to generate a container ID for all devnodes that are enumerated for the device. The bus driver reports this device capability in response to an [**IRP\_MN\_QUERY\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff551664) request.
+    If a bus driver cannot provide a container ID for a devnode that it is enumerating, the PnP manager uses the removable device capability to generate a container ID for all devnodes that are enumerated for the device. The bus driver reports this device capability in response to an [**IRP_MN_QUERY_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff551664) request.
 
 -   The PnP manager generates a container ID by using an override of the removable device capability.
 
@@ -68,15 +68,15 @@ The PnP manager determines the container ID for a devnode by using one of the fo
 
 For more information about these methods, see [How Container IDs are Generated](https://msdn.microsoft.com/library/windows/hardware/ff546193).
 
-Regardless of how the container ID value is obtained, the PnP manager assigns the value to the DEVPKEY\_Device\_BaseContainerId property of the devnode.
+Regardless of how the container ID value is obtained, the PnP manager assigns the value to the DEVPKEY_Device_BaseContainerId property of the devnode.
 
-The DEVPKEY\_Device\_BaseContainerId property can be used to force the grouping of a new devnode with other devnodes that exists in the system. This lets you use the new devnode as the parent (or *base*) container ID for other related devnodes. To do this, you must first obtain the DEVPKEY\_Device\_BaseContainerID GUID of the existing devnode. Then, you must return the container ID GUID of the new devnode in response to an [**IRP\_MN\_QUERY\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff551679) query request that has the **Parameters.QueryId.IdType** field set to **BusQueryContainerID**.
+The DEVPKEY_Device_BaseContainerId property can be used to force the grouping of a new devnode with other devnodes that exists in the system. This lets you use the new devnode as the parent (or *base*) container ID for other related devnodes. To do this, you must first obtain the DEVPKEY_Device_BaseContainerID GUID of the existing devnode. Then, you must return the container ID GUID of the new devnode in response to an [**IRP_MN_QUERY_ID**](https://msdn.microsoft.com/library/windows/hardware/ff551679) query request that has the **Parameters.QueryId.IdType** field set to **BusQueryContainerID**.
 
-**Note**   The value that is returned by a query of the DEVPKEY\_Device\_BaseContainerId or [**DEVPKEY\_Device\_ContainerId**](devpkey-device-containerid.md) properties can be different for the same devnode.
+**Note**   The value that is returned by a query of the DEVPKEY_Device_BaseContainerId or [**DEVPKEY_Device_ContainerId**](devpkey-device-containerid.md) properties can be different for the same devnode.
 
  
 
-**Note**  Do not use the DEVPKEY\_Device\_BaseContainerId property to reconstruct device container groupings in the system. Use the [**DEVPKEY\_Device\_ContainerId**](devpkey-device-containerid.md) property instead.
+**Note**  Do not use the DEVPKEY_Device_BaseContainerId property to reconstruct device container groupings in the system. Use the [**DEVPKEY_Device_ContainerId**](devpkey-device-containerid.md) property instead.
 
  
 
@@ -107,7 +107,7 @@ Requirements
 
 [Container IDs](https://msdn.microsoft.com/library/windows/hardware/ff540024)
 
-[**DEVPKEY\_Device\_ContainerId**](devpkey-device-containerid.md)
+[**DEVPKEY_Device_ContainerId**](devpkey-device-containerid.md)
 
 [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
 

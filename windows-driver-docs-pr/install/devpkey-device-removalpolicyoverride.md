@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_RemovalPolicyOverride
-description: DEVPKEY\_Device\_RemovalPolicyOverride
+title: DEVPKEY_Device_RemovalPolicyOverride
+description: DEVPKEY_Device_RemovalPolicyOverride
 ms.assetid: 74b90422-9187-4bbb-9be6-cf2d11e29686
 keywords: ["DEVPKEY_Device_RemovalPolicyOverride Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_RemovalPolicyOverride
+# DEVPKEY_Device_RemovalPolicyOverride
 
 
-The DEVPKEY\_Device\_RemovalPolicyOverride device property represents the removal policy override for a device instance.
+The DEVPKEY_Device_RemovalPolicyOverride device property represents the removal policy override for a device instance.
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_Device\_RemovalPolicyOverride device property represents the remova
 Remarks
 -------
 
-The value of DEVPKEY\_Device\_RemovalPolicyOverride is one of the CM\_REMOVAL\_POLICY\_*Xxx* values that are defined in Cfgmgr32.h.
+The value of DEVPKEY_Device_RemovalPolicyOverride is one of the CM_REMOVAL_POLICY_*Xxx* values that are defined in Cfgmgr32.h.
 
-You can retrieve the value of DEVPKEY\_Device\_RemovalPolicyOverride by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) or you can also set this value by calling [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163).
+You can retrieve the value of DEVPKEY_Device_RemovalPolicyOverride by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) or you can also set this value by calling [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163).
 
-Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY\_Device\_RemovalPolicyOverride property key. Instead, you can use the corresponding SPDRP\_REMOVAL\_POLICY\_OVERRIDE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_Device_RemovalPolicyOverride property key. Instead, you can use the corresponding SPDRP_REMOVAL_POLICY_OVERRIDE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------

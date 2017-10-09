@@ -1,6 +1,6 @@
 ---
-title: DEVPROP\_TYPE\_INT16
-description: In Windows Vista and later versions of Windows, the DEVPROP\_TYPE\_INT16 identifier represents the base-data-type identifier that indicates the data type is a SHORT-typed signed integer.
+title: DEVPROP_TYPE_INT16
+description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_INT16 identifier represents the base-data-type identifier that indicates the data type is a SHORT-typed signed integer.
 ms.assetid: a126a7c2-744e-4eaf-9b3d-45bd4286de73
 keywords: ["DEVPROP_TYPE_INT16 Device and Driver Installation"]
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPROP\_TYPE\_INT16
+# DEVPROP_TYPE_INT16
 
 
-In Windows Vista and later versions of Windows, the DEVPROP\_TYPE\_INT16 identifier represents the base-data-type identifier that indicates the data type is a SHORT-typed signed integer.
+In Windows Vista and later versions of Windows, the DEVPROP_TYPE_INT16 identifier represents the base-data-type identifier that indicates the data type is a SHORT-typed signed integer.
 
 Remarks
 -------
 
-DEVPROP\_TYPE\_SHORT can be combined only with the [**DEVPROP\_TYPEMOD\_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
+DEVPROP_TYPE_SHORT can be combined only with the [**DEVPROP_TYPEMOD_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
 
 **Setting a Property of this Type**
 
-To set a property whose base data type is DEVPROP\_TYPE\_INT16, call the corresponding **SetupDiSet*Xxx*** property function and set the function input parameters as follows:
+To set a property whose base data type is DEVPROP_TYPE_INT16, call the corresponding **SetupDiSet*Xxx*** property function and set the function input parameters as follows:
 
--   Set the *PropertyType* parameter to DEVPROP\_TYPE\_INT16, set the *PropertyBuffer* parameter to a pointer to a buffer that can contain at least one SHORT value, and set the *PropertyBufferSize* parameter to **sizeof(**SHORT**)**.
+-   Set the *PropertyType* parameter to DEVPROP_TYPE_INT16, set the *PropertyBuffer* parameter to a pointer to a buffer that can contain at least one SHORT value, and set the *PropertyBufferSize* parameter to **sizeof(**SHORT**)**.
 
 -   Set the other function input parameters as appropriate to set the property.
 

@@ -1,6 +1,6 @@
 ---
-title: DIF\_CALCDISKSPACE
-description: DIF\_CALCDISKSPACE
+title: DIF_CALCDISKSPACE
+description: DIF_CALCDISKSPACE
 ms.assetid: 36380267-9e20-4c87-bc82-92dafeb5af98
 keywords: ["DIF_CALCDISKSPACE Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# DIF\_CALCDISKSPACE
+# DIF_CALCDISKSPACE
 
 
 This DIF code is reserved for system use. Vendor-supplied installers must not handle this request.

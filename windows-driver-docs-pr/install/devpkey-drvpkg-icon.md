@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DrvPkg\_Icon
-description: DEVPKEY\_DrvPkg\_Icon
+title: DEVPKEY_DrvPkg_Icon
+description: DEVPKEY_DrvPkg_Icon
 ms.assetid: 30aa817c-9dda-4504-b51a-78ef91d0cf01
 keywords: ["DEVPKEY_DrvPkg_Icon Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DrvPkg\_Icon
+# DEVPKEY_DrvPkg_Icon
 
 
-The DEVPKEY\_DrvPkg\_Icon device property represents a list of device icons that Windows uses to visually represent a device instance.
+The DEVPKEY_DrvPkg_Icon device property represents a list of device icons that Windows uses to visually represent a device instance.
 
 <table>
 <colgroup>
@@ -74,9 +74,9 @@ A resource identifier must be an integer value, which corresponds to a resource 
 
 -   If the supplied identifier is positive, for example, the value *n*, Windows uses the resource in the executable file whose identifier is the n+1 lowest value in the executable file. For example, if the value of *n* is 1, Windows uses the resource whose identifier has the second lowest value in the executable file.
 
-You can set the value of DEVPKEY\_DrvPkg\_Icon by an [**INF AddProperty directive**](https://msdn.microsoft.com/library/windows/hardware/ff546318) that is included in the [**INF *DDInstall* section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) of the INF file that installs the device. You can retrieve the value of DEVPKEY\_DrvPkg\_Icon by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
+You can set the value of DEVPKEY_DrvPkg_Icon by an [**INF AddProperty directive**](https://msdn.microsoft.com/library/windows/hardware/ff546318) that is included in the [**INF *DDInstall* section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) of the INF file that installs the device. You can retrieve the value of DEVPKEY_DrvPkg_Icon by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
 
-The following is an example of how to use an INF **AddProperty** directive to set DEVPKEY\_DrvPkg\_Icon for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
+The following is an example of how to use an INF **AddProperty** directive to set DEVPKEY_DrvPkg_Icon for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
 
 ```
 [SampleDDinstallSection]

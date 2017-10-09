@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_CompatibleIds
-description: DEVPKEY\_Device\_CompatibleIds
+title: DEVPKEY_Device_CompatibleIds
+description: DEVPKEY_Device_CompatibleIds
 ms.assetid: 01858541-9239-48be-8c48-ee163d87e767
 keywords: ["DEVPKEY_Device_CompatibleIds Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_CompatibleIds
+# DEVPKEY_Device_CompatibleIds
 
 
-The DEVPKEY\_DEVICE\_CompatibleIds device property represents the list of compatible identifiers for a device instance.
+The DEVPKEY_DEVICE_CompatibleIds device property represents the list of compatible identifiers for a device instance.
 
 <table>
 <colgroup>
@@ -56,11 +56,11 @@ The DEVPKEY\_DEVICE\_CompatibleIds device property represents the list of compat
 Remarks
 -------
 
-The value of DEVPKEY\_DEVICE\_CompatibleIds is set by the *compatible-id* entry values that are supplied for a device in the [**INF Models section**](https://msdn.microsoft.com/library/windows/hardware/ff547456) of the INF file that installs a device.
+The value of DEVPKEY_DEVICE_CompatibleIds is set by the *compatible-id* entry values that are supplied for a device in the [**INF Models section**](https://msdn.microsoft.com/library/windows/hardware/ff547456) of the INF file that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_DEVICE\_CompatibleIds.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_DEVICE_CompatibleIds.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_CompatibleIds property key. Instead, you can use the corresponding SPDRP\_COMPATIBLEIDS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_CompatibleIds property key. Instead, you can use the corresponding SPDRP_COMPATIBLEIDS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------

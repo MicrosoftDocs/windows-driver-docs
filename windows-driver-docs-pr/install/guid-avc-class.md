@@ -1,6 +1,6 @@
 ---
-title: GUID\_AVC\_CLASS
-description: GUID\_AVC\_CLASS
+title: GUID_AVC_CLASS
+description: GUID_AVC_CLASS
 ms.assetid: 1aa323d3-7d68-4c50-af68-01bda3792fec
 keywords: ["GUID_AVC_CLASS Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_AVC\_CLASS
+# GUID_AVC_CLASS
 
 
-The GUID\_AVC\_CLASS [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for audio video control (AV/C) devices that are supported by the [AVStream](https://msdn.microsoft.com/library/windows/hardware/ff554240) architecture.
+The GUID_AVC_CLASS [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for audio video control (AV/C) devices that are supported by the [AVStream](https://msdn.microsoft.com/library/windows/hardware/ff554240) architecture.
 
 <table>
 <colgroup>
@@ -46,9 +46,9 @@ The GUID\_AVC\_CLASS [device interface class](https://msdn.microsoft.com/library
 Remarks
 -------
 
-The system-supplied [AV/C client driver](https://msdn.microsoft.com/library/windows/hardware/ff556367) [Avc.sys](https://msdn.microsoft.com/library/windows/hardware/ff568667) registers an instance of GUID\_AVC\_CLASS to represent an external AV/C unit on a 1394 bus.
+The system-supplied [AV/C client driver](https://msdn.microsoft.com/library/windows/hardware/ff556367) [Avc.sys](https://msdn.microsoft.com/library/windows/hardware/ff568667) registers an instance of GUID_AVC_CLASS to represent an external AV/C unit on a 1394 bus.
 
-For information about the device interface class for virtual AV/C devices, see [**GUID\_VIRTUAL\_AVC\_CLASS**](guid-virtual-avc-class.md).
+For information about the device interface class for virtual AV/C devices, see [**GUID_VIRTUAL_AVC_CLASS**](guid-virtual-avc-class.md).
 
 Requirements
 ------------
@@ -73,7 +73,7 @@ Requirements
 ## See also
 
 
-[**GUID\_VIRTUAL\_AVC\_CLASS**](guid-virtual-avc-class.md)
+[**GUID_VIRTUAL_AVC_CLASS**](guid-virtual-avc-class.md)
 
  
 

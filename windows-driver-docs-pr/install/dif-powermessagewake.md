@@ -1,6 +1,6 @@
 ---
-title: DIF\_POWERMESSAGEWAKE
-description: DIF\_POWERMESSAGEWAKE
+title: DIF_POWERMESSAGEWAKE
+description: DIF_POWERMESSAGEWAKE
 ms.assetid: 73f6e763-0900-4297-ac88-20bbb3ac424d
 keywords: ["DIF_POWERMESSAGEWAKE Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DIF\_POWERMESSAGEWAKE
+# DIF_POWERMESSAGEWAKE
 
 
-A DIF\_POWERMESSAGEWAKE request allows an installer to supply custom text that Windows displays on the power management properties page of the device properties.
+A DIF_POWERMESSAGEWAKE request allows an installer to supply custom text that Windows displays on the power management properties page of the device properties.
 
 ### When Sent
 
@@ -55,24 +55,24 @@ Windows only sends this DIF request if the drivers for the device support power 
 Supplies a handle to the [device information set](https://msdn.microsoft.com/library/windows/hardware/ff541247) that contains the device.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Supplies a pointer to an [**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies the device in the device information set.
+Supplies a pointer to an [**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies the device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters ([**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
+There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP\_POWERMESSAGEWAKE\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553311) structure is associated with the *DeviceInfoData*.
+An [**SP_POWERMESSAGEWAKE_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553311) structure is associated with the *DeviceInfoData*.
 
 ### Installer Output
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An installer can modify the [**SP\_POWERMESSAGEWAKE\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553311) to supply custom text for a device's power properties page.
+An installer can modify the [**SP_POWERMESSAGEWAKE_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553311) to supply custom text for a device's power properties page.
 
 ### Installer Return Value
 
-A co-installer typically returns NO\_ERROR, ERROR\_DI\_POSTPROCESSING\_REQUIRED, or a Win32 error code.
+A co-installer typically returns NO_ERROR, ERROR_DI_POSTPROCESSING_REQUIRED, or a Win32 error code.
 
-A class installer returns NO\_ERROR if it successfully supplies power properties text. Otherwise, a class installer returns ERROR\_DI\_DO\_DEFAULT or a Win32 error code.
+A class installer returns NO_ERROR if it successfully supplies power properties text. Otherwise, a class installer returns ERROR_DI_DO_DEFAULT or a Win32 error code.
 
 ### Default DIF Code Handler
 
@@ -80,7 +80,7 @@ None
 
 ### Installer Operation
 
-A DIF\_POWERMESSAGEWAKE request allows an installer to supply text that Windows displays on the power properties page for a device.
+A DIF_POWERMESSAGEWAKE request allows an installer to supply text that Windows displays on the power properties page for a device.
 
 If a co-installer supplies power-properties text, it should do so in its postprocessing phase. A co-installer should be careful when overwriting any power-properties text supplied by an installer that handled the request before the co-installer.
 
@@ -109,11 +109,11 @@ Requirements
 ## See also
 
 
-[**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
+[**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
 
-[**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
+[**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
 
-[**SP\_POWERMESSAGEWAKE\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553311)
+[**SP_POWERMESSAGEWAKE_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553311)
 
  
 

@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_COMMUNICATIONSTRANSFORM
-description: KSCATEGORY\_COMMUNICATIONSTRANSFORM
+title: KSCATEGORY_COMMUNICATIONSTRANSFORM
+description: KSCATEGORY_COMMUNICATIONSTRANSFORM
 ms.assetid: a958c5a6-18a3-43e0-a6ac-84a879a981da
 keywords: ["KSCATEGORY_COMMUNICATIONSTRANSFORM Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_COMMUNICATIONSTRANSFORM
+# KSCATEGORY_COMMUNICATIONSTRANSFORM
 
 
-The KSCATEGORY\_COMMUNICATIONSTRANSFORM [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a communication transform device.
+The KSCATEGORY_COMMUNICATIONSTRANSFORM [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a communication transform device.
 
 <table>
 <colgroup>
@@ -46,9 +46,9 @@ The KSCATEGORY\_COMMUNICATIONSTRANSFORM [device interface class](https://msdn.mi
 Remarks
 -------
 
-Drivers for KS devices register instances of KSCATEGORY\_COMMUNICATIONSTRANSFORM to indicate to the operating system that the devices support the KSCATEGORY\_COMMUNICATIONSTRANSFORM functional category.
+Drivers for KS devices register instances of KSCATEGORY_COMMUNICATIONSTRANSFORM to indicate to the operating system that the devices support the KSCATEGORY_COMMUNICATIONSTRANSFORM functional category.
 
-The KSCATEGORY\_COMMUNICATIONSTRANSFORM functional category is one of the [**KSPROPERTY\_TOPOLOGY\_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799).
+The KSCATEGORY_COMMUNICATIONSTRANSFORM functional category is one of the [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799).
 
 Requirements
 ------------
@@ -69,7 +69,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY\_TOPOLOGY\_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)
+[**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)
 
  
 

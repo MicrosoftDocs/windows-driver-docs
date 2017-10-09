@@ -1,6 +1,6 @@
 ---
-title: DIF\_PROPERTYCHANGE
-description: DIF\_PROPERTYCHANGE
+title: DIF_PROPERTYCHANGE
+description: DIF_PROPERTYCHANGE
 ms.assetid: 62f3380d-8cd1-4f4c-a727-1285de081b9e
 keywords: ["DIF_PROPERTYCHANGE Device and Driver Installation"]
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 ---
 
-# DIF\_PROPERTYCHANGE
+# DIF_PROPERTYCHANGE
 
 
-A DIF\_PROPERTYCHANGE request notifies the installer that the device's properties are changing. The device is being enabled, disabled, started, stopped, or some item on a property page has changed. This DIF request gives the installer an opportunity to participate in the change.
+A DIF_PROPERTYCHANGE request notifies the installer that the device's properties are changing. The device is being enabled, disabled, started, stopped, or some item on a property page has changed. This DIF request gives the installer an opportunity to participate in the change.
 
 ### When Sent
 
 When a device is being enabled, disabled, restarted, stopped, or its properties have changed.
 
-For example, Windows sends this request when a property-page provider sets the DI\_FLAGSEX\_PROPCHANGE\_PENDING flag in the **FlagsEx** field of the [**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346) structure for the device.
+For example, Windows sends this request when a property-page provider sets the DI_FLAGSEX_PROPCHANGE_PENDING flag in the **FlagsEx** field of the [**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346) structure for the device.
 
 For more information about detecting when a device is started for the first time or subsequently restarted, see the Installer Operation section.
 
@@ -57,13 +57,13 @@ For more information about detecting when a device is started for the first time
 Supplies a handle to the [device information set](https://msdn.microsoft.com/library/windows/hardware/ff541247) that contains the device.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Supplies a pointer to an [**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure for the device in the device information set.
+Supplies a pointer to an [**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure for the device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters ([**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
+There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP\_PROPCHANGE\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553315) structure is associated with the *DeviceInfoData*.
+An [**SP_PROPCHANGE_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553315) structure is associated with the *DeviceInfoData*.
 
 ### Installer Output
 
@@ -71,11 +71,11 @@ An [**SP\_PROPCHANGE\_PARAMS**](https://msdn.microsoft.com/library/windows/hardw
 
 ### Installer Return Value
 
-A co-installer can return NO\_ERROR, ERROR\_DI\_POSTPROCESSING\_REQUIRED, or a Win32 error code.
+A co-installer can return NO_ERROR, ERROR_DI_POSTPROCESSING_REQUIRED, or a Win32 error code.
 
-If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) should subsequently call the default handler, the class installer returns ERROR\_DI\_DO\_DEFAULT.
+If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) should subsequently call the default handler, the class installer returns ERROR_DI_DO_DEFAULT.
 
-If the class installer successfully handles this request, including directly calling the default handler, the class installer should return NO\_ERROR and **SetupDiCallClassInstaller** will not subsequently call the default handler again.
+If the class installer successfully handles this request, including directly calling the default handler, the class installer should return NO_ERROR and **SetupDiCallClassInstaller** will not subsequently call the default handler again.
 
 **Note**   The class installer can directly call the default handler, but the class installer should never attempt to supersede the operations of the default handler.
 
@@ -91,11 +91,11 @@ If the class installer encounters an error, the installer should return an appro
 
 ### Installer Operation
 
-In response to a DIF\_PROPERTYCHANGE request an installer can participate in the property-change operation. The class installation parameters (SP\_PROPCHANGE\_PARAMS) indicate which change is taking place.
+In response to a DIF_PROPERTYCHANGE request an installer can participate in the property-change operation. The class installation parameters (SP_PROPCHANGE_PARAMS) indicate which change is taking place.
 
 A property change might require a system restart. For information about how to restart the system, see [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922).
 
-When Windows sends a DIF\_INSTALLDEVICE request to install a device for the first time, Windows starts the device but does not send a DIF\_PROPERTYCHANGE request as part of the installation. If a custom installation operation must be performed when a device is started for the first time and whenever the device is subsequently restarted, an installer or a co-installer should handle the DIF\_INSTALLDEVICE request that starts the device for the first time and a DIF\_PROPERTYCHANGE request that indicates that the state change action is that the device is being started.
+When Windows sends a DIF_INSTALLDEVICE request to install a device for the first time, Windows starts the device but does not send a DIF_PROPERTYCHANGE request as part of the installation. If a custom installation operation must be performed when a device is started for the first time and whenever the device is subsequently restarted, an installer or a co-installer should handle the DIF_INSTALLDEVICE request that starts the device for the first time and a DIF_PROPERTYCHANGE request that indicates that the state change action is that the device is being started.
 
 For more information about DIF codes, see [Handling DIF Codes](https://msdn.microsoft.com/library/windows/hardware/ff546094).
 
@@ -124,11 +124,11 @@ Requirements
 
 [**SetupDiChangeState**](https://msdn.microsoft.com/library/windows/hardware/ff550930)
 
-[**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
+[**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
 
-[**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
+[**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
 
-[**SP\_PROPCHANGE\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553315)
+[**SP_PROPCHANGE_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553315)
 
  
 

@@ -16,7 +16,7 @@ api_type:
 # WriteOnceDiskClassGuid
 
 
-WriteOnceDiskClassGuid is an obsolete identifier for the [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) for write-once disk devices. Starting with Microsoft Windows 2000, use the [**GUID\_DEVINTERFACE\_WRITEONCEDISK**](guid-devinterface-writeoncedisk.md) class identifier for new instances of this class.
+WriteOnceDiskClassGuid is an obsolete identifier for the [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) for write-once disk devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_WRITEONCEDISK**](guid-devinterface-writeoncedisk.md) class identifier for new instances of this class.
 
 Requirements
 ------------
@@ -41,7 +41,7 @@ Requirements
 ## See also
 
 
-[**GUID\_DEVINTERFACE\_WRITEONCEDISK**](guid-devinterface-writeoncedisk.md)
+[**GUID_DEVINTERFACE_WRITEONCEDISK**](guid-devinterface-writeoncedisk.md)
 
  
 

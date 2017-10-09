@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_NETWORK
-description: KSCATEGORY\_NETWORK
+title: KSCATEGORY_NETWORK
+description: KSCATEGORY_NETWORK
 ms.assetid: 8112f828-e215-433a-9749-1ba965a97700
 keywords: ["KSCATEGORY_NETWORK Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_NETWORK
+# KSCATEGORY_NETWORK
 
 
-The KSCATEGORY\_NETWORK [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a network device.
+The KSCATEGORY_NETWORK [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a network device.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSCATEGORY\_NETWORK [device interface class](https://msdn.microsoft.com/libr
 Remarks
 -------
 
-Drivers for KS devices register instances of KSCATEGORY\_NETWORK to indicate to the operating system that the devices support the KSCATEGORY\_NETWORK functional category.
+Drivers for KS devices register instances of KSCATEGORY_NETWORK to indicate to the operating system that the devices support the KSCATEGORY_NETWORK functional category.
 
 Requirements
 ------------

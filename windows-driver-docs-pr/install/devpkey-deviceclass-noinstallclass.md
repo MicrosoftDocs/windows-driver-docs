@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DeviceClass\_NoInstallClass
-description: DEVPKEY\_DeviceClass\_NoInstallClass
+title: DEVPKEY_DeviceClass_NoInstallClass
+description: DEVPKEY_DeviceClass_NoInstallClass
 ms.assetid: 4b4f1187-570b-40e0-a96c-f3511f46a1be
 keywords: ["DEVPKEY_DeviceClass_NoInstallClass Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DeviceClass\_NoInstallClass
+# DEVPKEY_DeviceClass_NoInstallClass
 
 
-The DEVPKEY\_DeviceClass\_NoInstallClass device setup class property represents a Boolean flag that controls whether devices in a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509) are displayed in the **Add Hardware Wizard**.
+The DEVPKEY_DeviceClass_NoInstallClass device setup class property represents a Boolean flag that controls whether devices in a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509) are displayed in the **Add Hardware Wizard**.
 
 <table>
 <colgroup>
@@ -52,13 +52,13 @@ The DEVPKEY\_DeviceClass\_NoInstallClass device setup class property represents 
 Remarks
 -------
 
-Setting the value of DEVPKEY\_DeviceClass\_NoInstallClass to DEVPROP\_TRUE indicates that installation of devices in the class does not require end-user interaction. If this value is not set to DEVPROP\_TRUE, the Add Hardware Wizard does display devices for the device setup class.
+Setting the value of DEVPKEY_DeviceClass_NoInstallClass to DEVPROP_TRUE indicates that installation of devices in the class does not require end-user interaction. If this value is not set to DEVPROP_TRUE, the Add Hardware Wizard does display devices for the device setup class.
 
 The **NoInstallClass** registry value for a device setup class can be set by an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF ClassInstall32 section**](https://msdn.microsoft.com/library/windows/hardware/ff546335) of the INF file that installs the class.
 
-You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY\_DeviceClass\_NoInstallClass.
+You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY_DeviceClass_NoInstallClass.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_DeviceClass\_NoInstallClass property key. You can access the value of this property by accessing the corresponding **NoInstallClass** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](https://msdn.microsoft.com/library/windows/hardware/ff537751).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_NoInstallClass property key. You can access the value of this property by accessing the corresponding **NoInstallClass** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](https://msdn.microsoft.com/library/windows/hardware/ff537751).
 
 Requirements
 ------------

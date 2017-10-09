@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DeviceDisplay\_Category
-description: DEVPKEY\_DeviceDisplay\_Category
+title: DEVPKEY_DeviceDisplay_Category
+description: DEVPKEY_DeviceDisplay_Category
 ms.assetid: 4f1999cd-e3b7-4755-ab48-1feabbc9d245
 keywords: ["DEVPKEY_DeviceDisplay_Category Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DeviceDisplay\_Category
+# DEVPKEY_DeviceDisplay_Category
 
 
-The DEVPKEY\_DeviceDisplay\_Category device property represents one or more functional categories that apply to a device instance.
+The DEVPKEY_DeviceDisplay_Category device property represents one or more functional categories that apply to a device instance.
 
 <table>
 <colgroup>
@@ -54,13 +54,13 @@ Each physical device can have one or more functional categories specified in the
 
 Multifunction devices would typically identify multiple functional categories for each hardware function that the device supports. For example, a multifunction device could identify functional categories for printer, fax, scanner, and removable storage device functionality.
 
-The first functional category string in the [**DEVPROP\_TYPE\_STRING\_LIST**](devprop-type-string-list.md) specifies the physical device's primary functional category. The primary functional category is defined by the independent hardware vendor (IHV) to specify how the device is advertised, packaged, sold, and ultimately identified by users.
+The first functional category string in the [**DEVPROP_TYPE_STRING_LIST**](devprop-type-string-list.md) specifies the physical device's primary functional category. The primary functional category is defined by the independent hardware vendor (IHV) to specify how the device is advertised, packaged, sold, and ultimately identified by users.
 
-If the DEVPKEY\_DeviceDisplay\_Category device property specifies more than one functional category string, the remaining strings that follow the first string specifies the physical device's secondary functional categories.
+If the DEVPKEY_DeviceDisplay_Category device property specifies more than one functional category string, the remaining strings that follow the first string specifies the physical device's secondary functional categories.
 
-The **Devices and Printers** user interface in Control Panel displays the primary and secondary functional categories of the device instance. These categories are displayed in the order that is specified in the DEVPKEY\_DeviceDisplay\_Category device property.
+The **Devices and Printers** user interface in Control Panel displays the primary and secondary functional categories of the device instance. These categories are displayed in the order that is specified in the DEVPKEY_DeviceDisplay_Category device property.
 
-You can access the DEVPKEY\_DeviceDisplay\_Category property by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
+You can access the DEVPKEY_DeviceDisplay_Category property by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
 
 Requirements
 ------------

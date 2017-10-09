@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_TVAUDIO
-description: KSCATEGORY\_TVAUDIO
+title: KSCATEGORY_TVAUDIO
+description: KSCATEGORY_TVAUDIO
 ms.assetid: a3fac238-2712-4eef-b768-4bc2ac43ec4c
 keywords: ["KSCATEGORY_TVAUDIO Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_TVAUDIO
+# KSCATEGORY_TVAUDIO
 
 
-The KSCATEGORY\_TVAUDIO [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a TV audio device.
+The KSCATEGORY_TVAUDIO [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a TV audio device.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSCATEGORY\_TVAUDIO [device interface class](https://msdn.microsoft.com/libr
 Remarks
 -------
 
-Drivers for KS devices register instances of this KSCATEGORY\_TVAUDIO to indicate to the operating system that the devices support the KSCATEGORY\_TVAUDIO functional category.
+Drivers for KS devices register instances of this KSCATEGORY_TVAUDIO to indicate to the operating system that the devices support the KSCATEGORY_TVAUDIO functional category.
 
 For an example of how to register this functional category in an INF file, see the *Bdan.inf* INF file that is included with the software tuner sample in the *src/swtuner/algtuner* directory of the WDK.
 
@@ -71,7 +71,7 @@ Requirements
 ## See also
 
 
-[**KSCATEGORY\_TVTUNER**](kscategory-tvtuner.md)
+[**KSCATEGORY_TVTUNER**](kscategory-tvtuner.md)
 
  
 

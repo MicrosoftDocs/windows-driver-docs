@@ -14,7 +14,7 @@ api_type:
 # Config.DriverKey Section of a TxtSetup.oem File
 
 
-A **Config.***DriverKey* section specifies values to be set in the registry for particular component options. Windows automatically creates the required values in the **Services\\***DriverKey* key. Use this section to specify additional keys to be created under **Services\\***DriverKey* and values under **Services\\***DriverKey* and **Services\\***DriverKey*\\*subkey\_name*.
+A **Config.***DriverKey* section specifies values to be set in the registry for particular component options. Windows automatically creates the required values in the **Services\\***DriverKey* key. Use this section to specify additional keys to be created under **Services\\***DriverKey* and values under **Services\\***DriverKey* and **Services\\***DriverKey*\\*subkey_name*.
 
 ``` syntax
 [Config.DriverKey]
@@ -22,20 +22,20 @@ value = subkey_name,value_name,value_type,value
 ...
 ```
 
-<a href="" id="subkey-name"></a>*subkey\_name*  
+<a href="" id="subkey-name"></a>*subkey_name*  
 Specifies the name of a key under the **Services\\***DriverKey* tree where Windows places the specified value. Windows creates the key if it does not exist.
 
-If *subkey\_name* is the empty string (""), the value is placed under the **Services\\***DriverKey*.
+If *subkey_name* is the empty string (""), the value is placed under the **Services\\***DriverKey*.
 
-The *subkey\_name* can specify more than one level of subkey, such as "subkey1\\subkey2\\subkey3".
+The *subkey_name* can specify more than one level of subkey, such as "subkey1\\subkey2\\subkey3".
 
-<a href="" id="value-name"></a>*value\_name*  
+<a href="" id="value-name"></a>*value_name*  
 Specifies the name of the value to be set.
 
-<a href="" id="value-type"></a>*value\_type*  
-Specifies the type of the registry entry. The *value\_type* can be one of the following:
+<a href="" id="value-type"></a>*value_type*  
+Specifies the type of the registry entry. The *value_type* can be one of the following:
 
-<a href="" id="reg-dword"></a>REG\_DWORD  
+<a href="" id="reg-dword"></a>REG_DWORD  
 One *value* is allowed; it must be a string containing up to eight hexadecimal digits.
 
 For example:
@@ -44,7 +44,7 @@ For example:
 value = parameters,NumberOfButtons,REG_DWORD,2
 ```
 
-<a href="" id="reg-sz-or-reg-expand-sz"></a>REG\_SZ or REG\_EXPAND\_SZ  
+<a href="" id="reg-sz-or-reg-expand-sz"></a>REG_SZ or REG_EXPAND_SZ  
 One *value* is allowed; it is interpreted as the null-terminated string to be stored.
 
 For example:
@@ -53,7 +53,7 @@ For example:
 value = parameters,Description,REG_SZ,"This is a text string"
 ```
 
-<a href="" id="reg-binary"></a>REG\_BINARY  
+<a href="" id="reg-binary"></a>REG_BINARY  
 One *value* is allowed; it is a string of hex digits, each pair of which is interpreted as a byte value.
 
 For example (stores the byte stream 00,34,ec,4d,04,5a):
@@ -62,8 +62,8 @@ For example (stores the byte stream 00,34,ec,4d,04,5a):
 value = parameters,Data,REG_BINARY,0034eC4D045a
 ```
 
-<a href="" id="reg-multi-sz"></a>REG\_MULTI\_SZ  
-Multiple *value* arguments are allowed; each is interpreted as a component of the MULTI\_SZ string.
+<a href="" id="reg-multi-sz"></a>REG_MULTI_SZ  
+Multiple *value* arguments are allowed; each is interpreted as a component of the MULTI_SZ string.
 
 For example:
 
@@ -72,7 +72,7 @@ value = parameters,Strings,REG_MULTI_SZ,String1,"String 2",string3
 ```
 
 <a href="" id="value"></a>*value*  
-Specifies the value; its format depends on *value\_type*.
+Specifies the value; its format depends on *value_type*.
 
 The following example shows a **Config.***DriverKey* section:
 

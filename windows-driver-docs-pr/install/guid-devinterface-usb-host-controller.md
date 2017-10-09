@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVINTERFACE\_USB\_HOST\_CONTROLLER
-description: GUID\_DEVINTERFACE\_USB\_HOST\_CONTROLLER
+title: GUID_DEVINTERFACE_USB_HOST_CONTROLLER
+description: GUID_DEVINTERFACE_USB_HOST_CONTROLLER
 ms.assetid: 4afa1ada-ff57-4585-9117-10595310b976
 keywords: ["GUID_DEVINTERFACE_USB_HOST_CONTROLLER Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVINTERFACE\_USB\_HOST\_CONTROLLER
+# GUID_DEVINTERFACE_USB_HOST_CONTROLLER
 
 
-The GUID\_DEVINTERFACE\_USB\_HOST\_CONTROLLER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [USB](https://msdn.microsoft.com/library/windows/hardware/ff538930) host controller devices.
+The GUID_DEVINTERFACE_USB_HOST_CONTROLLER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [USB](https://msdn.microsoft.com/library/windows/hardware/ff538930) host controller devices.
 
 <table>
 <colgroup>
@@ -46,9 +46,9 @@ The GUID\_DEVINTERFACE\_USB\_HOST\_CONTROLLER [device interface class](https://m
 Remarks
 -------
 
-The system-supplied port driver for a USB host controller registers instances of GUID\_DEVINTERFACE\_USB\_HOST\_CONTROLLER to notify the operating system and applications of the presence of USB host controllers.
+The system-supplied port driver for a USB host controller registers instances of GUID_DEVINTERFACE_USB_HOST_CONTROLLER to notify the operating system and applications of the presence of USB host controllers.
 
-The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](http://go.microsoft.com/fwlink/p/?linkid=256205). The USBVIEW uses the obsolete identifier [**GUID\_CLASS\_USB\_HOST\_CONTROLLER**](guid-class-usb-host-controller.md) to enumerate instances of this device interface class.
+The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](http://go.microsoft.com/fwlink/p/?linkid=256205). The USBVIEW uses the obsolete identifier [**GUID_CLASS_USB_HOST_CONTROLLER**](guid-class-usb-host-controller.md) to enumerate instances of this device interface class.
 
 Requirements
 ------------
@@ -69,11 +69,11 @@ Requirements
 ## See also
 
 
-[**GUID\_CLASS\_USB\_HOST\_CONTROLLER**](guid-class-usb-host-controller.md)
+[**GUID_CLASS_USB_HOST_CONTROLLER**](guid-class-usb-host-controller.md)
 
-[**GUID\_DEVINTERFACE\_USB\_DEVICE**](guid-devinterface-usb-device.md)
+[**GUID_DEVINTERFACE_USB_DEVICE**](guid-devinterface-usb-device.md)
 
-[**GUID\_DEVINTERFACE\_USB\_HUB**](guid-devinterface-usb-hub.md)
+[**GUID_DEVINTERFACE_USB_HUB**](guid-devinterface-usb-hub.md)
 
  
 

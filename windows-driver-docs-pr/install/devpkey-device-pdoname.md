@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_PDOName
-description: DEVPKEY\_Device\_PDOName
+title: DEVPKEY_Device_PDOName
+description: DEVPKEY_Device_PDOName
 ms.assetid: 1f2bc1e0-a671-47f6-9fbb-d0482b5abeca
 keywords: ["DEVPKEY_Device_PDOName Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_PDOName
+# DEVPKEY_Device_PDOName
 
 
-The DEVPKEY\_Device\_PDOName device property represents the name of the physical device object (PDO) that represents a device instance.
+The DEVPKEY_Device_PDOName device property represents the name of the physical device object (PDO) that represents a device instance.
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_Device\_PDOName device property represents the name of the physical
 Remarks
 -------
 
-Windows sets the value of DEVPKEY\_Device\_PDOName to the name of the physical name object (PDO) that represents a device. For more information about PDO names, see the *DeviceName* parameter that is used with the [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397) routine.
+Windows sets the value of DEVPKEY_Device_PDOName to the name of the physical name object (PDO) that represents a device. For more information about PDO names, see the *DeviceName* parameter that is used with the [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397) routine.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_PDOName.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_PDOName.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_PDOName property key. Instead, you can use the corresponding SPDRP\_PHYSICAL\_DEVICE\_OBJECT\_NAME identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_PDOName property key. Instead, you can use the corresponding SPDRP_PHYSICAL_DEVICE_OBJECT_NAME identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------

@@ -1,6 +1,6 @@
 ---
-title: DIF\_SELECTBESTCOMPATDRV
-description: DIF\_SELECTBESTCOMPATDRV
+title: DIF_SELECTBESTCOMPATDRV
+description: DIF_SELECTBESTCOMPATDRV
 ms.assetid: aa10f39f-718b-4160-9cfa-668fb0349156
 keywords: ["DIF_SELECTBESTCOMPATDRV Device and Driver Installation"]
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 ---
 
-# DIF\_SELECTBESTCOMPATDRV
+# DIF_SELECTBESTCOMPATDRV
 
 
-A DIF\_SELECTBESTCOMPATDRV request allows an installer to select the best driver from the device information element's compatible driver list.
+A DIF_SELECTBESTCOMPATDRV request allows an installer to select the best driver from the device information element's compatible driver list.
 
 ### When Sent
 
 When the operating system is preparing to install a new PnP device or is performing a change-driver operation on a PnP device.
 
-This DIF request is typically used during a PnP configuration. If a device is being manually installed, Windows sends a [**DIF\_SELECTDEVICE**](dif-selectdevice.md) request.
+This DIF request is typically used during a PnP configuration. If a device is being manually installed, Windows sends a [**DIF_SELECTDEVICE**](dif-selectdevice.md) request.
 
 ### Who Handles
 
@@ -55,10 +55,10 @@ This DIF request is typically used during a PnP configuration. If a device is be
 Supplies a handle to the [device information set](https://msdn.microsoft.com/library/windows/hardware/ff541247) that contains the device.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Supplies a pointer to an [**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies the device in the device information set.
+Supplies a pointer to an [**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies the device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters ([**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
+There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
 None
@@ -69,15 +69,15 @@ None
 An installer can modify the device installation parameters. However, they typically do not when handling this DIF request.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-As a side effect, an installer can modify the driver list associated with the *DeviceInfoData*, in particular, the SP\_DRVINSTALL\_PARAMS.
+As a side effect, an installer can modify the driver list associated with the *DeviceInfoData*, in particular, the SP_DRVINSTALL_PARAMS.
 
 ### Installer Return Value
 
-A co-installer can return NO\_ERROR, ERROR\_DI\_POSTPROCESSING\_REQUIRED, or a Win32 error code.
+A co-installer can return NO_ERROR, ERROR_DI_POSTPROCESSING_REQUIRED, or a Win32 error code.
 
-If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) should subsequently call the default handler, the class installer returns ERROR\_DI\_DO\_DEFAULT.
+If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) should subsequently call the default handler, the class installer returns ERROR_DI_DO_DEFAULT.
 
-If the class installer successfully handles this request, including directly calling the default handler, the class installer should return NO\_ERROR and **SetupDiCallClassInstaller** will not subsequently call the default handler again.
+If the class installer successfully handles this request, including directly calling the default handler, the class installer should return NO_ERROR and **SetupDiCallClassInstaller** will not subsequently call the default handler again.
 
 **Note**   The class installer can directly call the default handler, but the class installer should never attempt to supersede the operations of the default handler.
 
@@ -97,11 +97,11 @@ An installer handles this DIF request to participate in selecting a driver for a
 
 -   Do nothing.
 
-    If an installer has no special selection requirements, it does nothing in response to this DIF request. A class installer returns ERROR\_DI\_DO\_DEFAULT and a co-installer returns NO\_ERROR.
+    If an installer has no special selection requirements, it does nothing in response to this DIF request. A class installer returns ERROR_DI_DO_DEFAULT and a co-installer returns NO_ERROR.
 
 -   Modify the parameters of one or more drivers in the driver list.
 
-    For example, an installer might remove a driver from consideration for the device by marking it DNF\_BAD\_DRIVER. An installer modifies driver parameters by following these steps:
+    For example, an installer might remove a driver from consideration for the device by marking it DNF_BAD_DRIVER. An installer modifies driver parameters by following these steps:
 
     1.  Get the information about the first driver in the list by calling [**SetupDiEnumDriverInfo**](https://msdn.microsoft.com/library/windows/hardware/ff551018) and [**SetupDiGetDriverInstallParams**](https://msdn.microsoft.com/library/windows/hardware/ff551978). If appropriate, modify the driver parameters and apply the change by calling [**SetupDiSetDriverInstallParams**](https://msdn.microsoft.com/library/windows/hardware/ff552172).
 
@@ -109,11 +109,11 @@ An installer handles this DIF request to participate in selecting a driver for a
 
     2.  Repeat the previous step until you have processed all the drivers in the list. Make sure that you increment the *MemberIndex* parameter to [**SetupDiEnumDriverInfo**](https://msdn.microsoft.com/library/windows/hardware/ff551018) as described in the reference page for that function.
 
-    After a class installer modifies the driver list, it returns ERROR\_DI\_DO\_DEFAULT. If a co-installer modifies the driver list, it should do so in preprocessing and return NO\_ERROR.
+    After a class installer modifies the driver list, it returns ERROR_DI_DO_DEFAULT. If a co-installer modifies the driver list, it should do so in preprocessing and return NO_ERROR.
 
 -   Select the best driver for the device.
 
-    This action is less common, but an installer might choose the best driver for the device. Such an installer would examine the data for each driver, choose a driver, and call [**SetupDiSetSelectedDriver**](https://msdn.microsoft.com/library/windows/hardware/ff552183) to set the driver. After an installer sets the selected driver, it returns NO\_ERROR.
+    This action is less common, but an installer might choose the best driver for the device. Such an installer would examine the data for each driver, choose a driver, and call [**SetupDiSetSelectedDriver**](https://msdn.microsoft.com/library/windows/hardware/ff552183) to set the driver. After an installer sets the selected driver, it returns NO_ERROR.
 
     If a co-installer selects a driver, it should do so in postprocessing.
 
@@ -146,9 +146,9 @@ Requirements
 
 [**SetupDiSetSelectedDriver**](https://msdn.microsoft.com/library/windows/hardware/ff552183)
 
-[**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
+[**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
 
-[**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
+[**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
 
  
 

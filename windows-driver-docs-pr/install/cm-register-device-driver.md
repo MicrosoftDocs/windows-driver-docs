@@ -1,6 +1,6 @@
 ---
-title: CM\_Register\_Device\_Driver
-description: CM\_Register\_Device\_Driver
+title: CM_Register_Device_Driver
+description: CM_Register_Device_Driver
 ms.assetid: 11959ee2-c021-4678-b9c4-82de74178756
 keywords: ["CM_Register_Device_Driver Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# CM\_Register\_Device\_Driver
+# CM_Register_Device_Driver
 
 
 This function is obsolete and no longer supported.

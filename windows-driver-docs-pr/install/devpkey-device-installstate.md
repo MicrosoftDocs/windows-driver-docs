@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_InstallState
-description: DEVPKEY\_Device\_InstallState
+title: DEVPKEY_Device_InstallState
+description: DEVPKEY_Device_InstallState
 ms.assetid: 3bebb3d6-96bb-4c7c-8a7a-c5bf29cb3a2a
 keywords: ["DEVPKEY_Device_InstallState Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_InstallState
+# DEVPKEY_Device_InstallState
 
 
-The DEVPKEY\_Device\_InstallState device property represents the installation state of a device instance.
+The DEVPKEY_Device_InstallState device property represents the installation state of a device instance.
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_Device\_InstallState device property represents the installation st
 Remarks
 -------
 
-Windows sets the value of DEVPKEY\_Device\_InstallState to one of the CM\_INSTALL\_STATE\_*Xxx* values that are defined in Cfgmgr32.h. The CM\_INSTALL\_STATE\_*Xxx* values correspond to the [**DEVICE\_INSTALL\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff543130) enumeration values.
+Windows sets the value of DEVPKEY_Device_InstallState to one of the CM_INSTALL_STATE_*Xxx* values that are defined in Cfgmgr32.h. The CM_INSTALL_STATE_*Xxx* values correspond to the [**DEVICE_INSTALL_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff543130) enumeration values.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_InstallState.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_InstallState.
 
-Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY\_Device\_InstallState property key. Instead, you can use the corresponding SPDRP\_INSTALL\_STATE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_Device_InstallState property key. Instead, you can use the corresponding SPDRP_INSTALL_STATE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------

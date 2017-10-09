@@ -1,6 +1,6 @@
 ---
-title: CM\_Dup\_Range\_List
-description: CM\_Dup\_Range\_List
+title: CM_Dup_Range_List
+description: CM_Dup_Range_List
 ms.assetid: 342d0034-f04d-4cdd-a25d-7138878ac9db
 keywords: ["CM_Dup_Range_List Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# CM\_Dup\_Range\_List
+# CM_Dup_Range_List
 
 
 ## <a href="" id="ddk-cm-dup-range-list-dr"></a>

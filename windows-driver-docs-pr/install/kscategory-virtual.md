@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_VIRTUAL
-description: KSCATEGORY\_VIRTUAL
+title: KSCATEGORY_VIRTUAL
+description: KSCATEGORY_VIRTUAL
 ms.assetid: 065bd2b1-4863-49ff-b6e7-f09c4234adad
 keywords: ["KSCATEGORY_VIRTUAL Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_VIRTUAL
+# KSCATEGORY_VIRTUAL
 
 
-The KSCATEGORY\_VIRTUAL [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) represents a [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) category that is reserved for exclusive use by the system-supplied [WDM audio components](https://msdn.microsoft.com/library/windows/hardware/ff537039).
+The KSCATEGORY_VIRTUAL [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) represents a [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) category that is reserved for exclusive use by the system-supplied [WDM audio components](https://msdn.microsoft.com/library/windows/hardware/ff537039).
 
 <table>
 <colgroup>

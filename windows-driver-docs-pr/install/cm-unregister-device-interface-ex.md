@@ -1,6 +1,6 @@
 ---
-title: CM\_Unregister\_Device\_Interface\_Ex
-description: CM\_Unregister\_Device\_Interface\_Ex
+title: CM_Unregister_Device_Interface_Ex
+description: CM_Unregister_Device_Interface_Ex
 ms.assetid: d19b1377-02cc-4014-a330-7a95c98230cc
 keywords: ["CM_Unregister_Device_Interface_ExA", "CM_Unregister_Device_Interface_ExW", "CM_Unregister_Device_Interface_Ex Device and Driver Installation"]
 topic_type:
@@ -12,7 +12,7 @@ api_type:
 - NA
 ---
 
-# CM\_Unregister\_Device\_Interface\_Ex
+# CM_Unregister_Device_Interface_Ex
 
 
  

@@ -1,6 +1,6 @@
 ---
-title: DIF\_INSTALLCLASSDRIVERS
-description: DIF\_INSTALLCLASSDRIVERS
+title: DIF_INSTALLCLASSDRIVERS
+description: DIF_INSTALLCLASSDRIVERS
 ms.assetid: bdc57254-561e-4027-8f08-ec431d67e947
 keywords: ["DIF_INSTALLCLASSDRIVERS Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# DIF\_INSTALLCLASSDRIVERS
+# DIF_INSTALLCLASSDRIVERS
 
 
 This DIF code is reserved for system use. Vendor-supplied installers must not handle this request.

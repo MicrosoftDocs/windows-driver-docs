@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_PROXY
-description: KSCATEGORY\_PROXY
+title: KSCATEGORY_PROXY
+description: KSCATEGORY_PROXY
 ms.assetid: 35ab8abc-9416-4f7f-bf57-099f78fe82dd
 keywords: ["KSCATEGORY_PROXY Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_PROXY
+# KSCATEGORY_PROXY
 
 
-The KSCATEGORY\_PROXY [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) represents a [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that is reserved for exclusive use by the [kernel streaming proxy module](https://msdn.microsoft.com/library/windows/hardware/ff560877).
+The KSCATEGORY_PROXY [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) represents a [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that is reserved for exclusive use by the [kernel streaming proxy module](https://msdn.microsoft.com/library/windows/hardware/ff560877).
 
 <table>
 <colgroup>

@@ -1,6 +1,6 @@
 ---
-title: CM\_Open\_DevNode\_Key\_Ex
-description: CM\_Open\_DevNode\_Key\_Ex
+title: CM_Open_DevNode_Key_Ex
+description: CM_Open_DevNode_Key_Ex
 ms.assetid: ae611dbf-5882-4881-90df-7011a5bf5e9e
 keywords: ["CM_Open_DevNode_Key_Ex Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# CM\_Open\_DevNode\_Key\_Ex
+# CM_Open_DevNode_Key_Ex
 
 
  

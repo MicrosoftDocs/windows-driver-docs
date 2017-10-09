@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DrvPkg\_Model
-description: DEVPKEY\_DrvPkg\_Model
+title: DEVPKEY_DrvPkg_Model
+description: DEVPKEY_DrvPkg_Model
 ms.assetid: 54aedf63-50b3-49eb-9638-2984af7de59a
 keywords: ["DEVPKEY_DrvPkg_Model Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DrvPkg\_Model
+# DEVPKEY_DrvPkg_Model
 
 
-The DEVPKEY\_DrvPkg\_Model device [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) property represents the model name for a device instance.
+The DEVPKEY_DrvPkg_Model device [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) property represents the model name for a device instance.
 
 <table>
 <colgroup>
@@ -48,9 +48,9 @@ The DEVPKEY\_DrvPkg\_Model device [driver package](https://msdn.microsoft.com/li
 Remarks
 -------
 
-You can set the value of DEVPKEY\_DrvPkg\_Model by an [**INF AddProperty directive**](https://msdn.microsoft.com/library/windows/hardware/ff546318) that is included in the [**INF *DDInstall* section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) of the INF file that installs the device. You can retrieve the value of the DEVPKEY\_DrvPkg\_Model property by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
+You can set the value of DEVPKEY_DrvPkg_Model by an [**INF AddProperty directive**](https://msdn.microsoft.com/library/windows/hardware/ff546318) that is included in the [**INF *DDInstall* section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) of the INF file that installs the device. You can retrieve the value of the DEVPKEY_DrvPkg_Model property by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
 
-The following is an example of how to use an INF **AddProperty** directive to set the value of DEVPKEY\_DrvPkg\_Model for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
+The following is an example of how to use an INF **AddProperty** directive to set the value of DEVPKEY_DrvPkg_Model for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
 
 ```
 [SampleDDinstallSection]

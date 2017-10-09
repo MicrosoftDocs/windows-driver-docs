@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVINTERFACE\_CDCHANGER
-description: GUID\_DEVINTERFACE\_CDCHANGER
+title: GUID_DEVINTERFACE_CDCHANGER
+description: GUID_DEVINTERFACE_CDCHANGER
 ms.assetid: 9bcbe3d5-2057-44cb-a495-6edee14a9cbb
 keywords: ["GUID_DEVINTERFACE_CDCHANGER Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVINTERFACE\_CDCHANGER
+# GUID_DEVINTERFACE_CDCHANGER
 
 
-The GUID\_DEVINTERFACE\_CDCHANGER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for CD-ROM changer devices.
+The GUID_DEVINTERFACE_CDCHANGER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for CD-ROM changer devices.
 
 <table>
 <colgroup>
@@ -46,13 +46,13 @@ The GUID\_DEVINTERFACE\_CDCHANGER [device interface class](https://msdn.microsof
 Remarks
 -------
 
-The system-supplied CD-ROM [changer driver](https://msdn.microsoft.com/library/windows/hardware/ff551455) registers instances of GUID\_DEVINTERFACE\_CDCHANGER to notify the operating system and applications of the presence of CD-ROM changer devices.
+The system-supplied CD-ROM [changer driver](https://msdn.microsoft.com/library/windows/hardware/ff551455) registers instances of GUID_DEVINTERFACE_CDCHANGER to notify the operating system and applications of the presence of CD-ROM changer devices.
 
-For information about the device interface class for CD-ROM devices, see [**GUID\_DEVINTERFACE\_CDROM**](guid-devinterface-cdrom.md).
+For information about the device interface class for CD-ROM devices, see [**GUID_DEVINTERFACE_CDROM**](guid-devinterface-cdrom.md).
 
 For information about storage devices, see [Storage Drivers](https://msdn.microsoft.com/library/windows/hardware/ff566976).
 
-[**CdChangerClassGuid**](cdchangerclassguid.md) is an obsolete identifier for the GUID\_DEVINTERFACE\_CDCHANGER device interface class; for new instances of this class, use GUID\_DEVINTERFACE\_CDCHANGER instead.
+[**CdChangerClassGuid**](cdchangerclassguid.md) is an obsolete identifier for the GUID_DEVINTERFACE_CDCHANGER device interface class; for new instances of this class, use GUID_DEVINTERFACE_CDCHANGER instead.
 
 Requirements
 ------------
@@ -79,7 +79,7 @@ Requirements
 
 [**CdChangerClassGuid**](cdchangerclassguid.md)
 
-[**GUID\_DEVINTERFACE\_CDROM**](guid-devinterface-cdrom.md)
+[**GUID_DEVINTERFACE_CDROM**](guid-devinterface-cdrom.md)
 
  
 

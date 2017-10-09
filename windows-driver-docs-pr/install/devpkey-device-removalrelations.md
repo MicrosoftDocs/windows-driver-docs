@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_RemovalRelations
-description: DEVPKEY\_Device\_RemovalRelations
+title: DEVPKEY_Device_RemovalRelations
+description: DEVPKEY_Device_RemovalRelations
 ms.assetid: c88e2545-0c7b-4f8f-93f2-b9de1ec0444c
 keywords: ["DEVPKEY_Device_RemovalRelations Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_RemovalRelations
+# DEVPKEY_Device_RemovalRelations
 
 
-The DEVPKEY\_Device\_RemovalRelations device property represents the [**removal relations**](https://msdn.microsoft.com/library/windows/hardware/ff551670) for a device instance.
+The DEVPKEY_Device_RemovalRelations device property represents the [**removal relations**](https://msdn.microsoft.com/library/windows/hardware/ff551670) for a device instance.
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ The DEVPKEY\_Device\_RemovalRelations device property represents the [**removal 
 Remarks
 -------
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_RemovalRelations.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_RemovalRelations.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not directly support this property. For information about how to retrieve device relations properties on these earlier versions of Windows, see [Retrieving Device Relations](https://msdn.microsoft.com/library/windows/hardware/ff550630).
 

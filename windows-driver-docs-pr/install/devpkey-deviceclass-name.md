@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DeviceClass\_Name
-description: DEVPKEY\_DeviceClass\_Name
+title: DEVPKEY_DeviceClass_Name
+description: DEVPKEY_DeviceClass_Name
 ms.assetid: c07ca3c7-42f1-497b-82bf-6e43cafe9867
 keywords: ["DEVPKEY_DeviceClass_Name Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DeviceClass\_Name
+# DEVPKEY_DeviceClass_Name
 
 
-The DEVPKEY\_DeviceClass\_Name device property represents the friendly name of a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
+The DEVPKEY_DeviceClass_Name device property represents the friendly name of a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
 
 <table>
 <colgroup>
@@ -48,11 +48,11 @@ The DEVPKEY\_DeviceClass\_Name device property represents the friendly name of a
 Remarks
 -------
 
-The value of DEVPKEY\_DeviceClass\_Name is set by an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF ClassInstall32 section**](https://msdn.microsoft.com/library/windows/hardware/ff546335) that installs the class. To set the friendly name for a class, use an **AddReg** directive to set the **(Default)** registry entry value for the class.
+The value of DEVPKEY_DeviceClass_Name is set by an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF ClassInstall32 section**](https://msdn.microsoft.com/library/windows/hardware/ff546335) that installs the class. To set the friendly name for a class, use an **AddReg** directive to set the **(Default)** registry entry value for the class.
 
-You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY\_DeviceClass\_Name.
+You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY_DeviceClass_Name.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_DeviceClass\_Name property key. For information about how to access the friendly name of a device setup class on Windows Server 2003, Windows XP, and Windows 2000, see [Accessing the Friendly Name and Class Name of a Device Setup Class](https://msdn.microsoft.com/library/windows/hardware/ff537755).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_Name property key. For information about how to access the friendly name of a device setup class on Windows Server 2003, Windows XP, and Windows 2000, see [Accessing the Friendly Name and Class Name of a Device Setup Class](https://msdn.microsoft.com/library/windows/hardware/ff537755).
 
 Requirements
 ------------

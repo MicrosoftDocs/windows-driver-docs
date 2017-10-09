@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_VIDEO\_CAMERA
-description: KSCATEGORY\_VIDEO\_CAMERA
+title: KSCATEGORY_VIDEO_CAMERA
+description: KSCATEGORY_VIDEO_CAMERA
 ms.assetid: 188FC545-C2DB-4938-88B2-AAB2A473E36E
 keywords: ["KSCATEGORY_VIDEO_CAMERA Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_VIDEO\_CAMERA
+# KSCATEGORY_VIDEO_CAMERA
 
 
-The KSCATEGORY\_VIDEO\_CAMERA GUID is defined as follows:
+The KSCATEGORY_VIDEO_CAMERA GUID is defined as follows:
 
 <table>
 <colgroup>

@@ -1,6 +1,6 @@
 ---
-title: CM\_Disable\_DevNode\_Ex
-description: CM\_Disable\_DevNode\_Ex
+title: CM_Disable_DevNode_Ex
+description: CM_Disable_DevNode_Ex
 ms.assetid: d493399a-b9f7-44cc-9c0e-150137d468c8
 keywords: ["CM_Disable_DevNode_Ex Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# CM\_Disable\_DevNode\_Ex
+# CM_Disable_DevNode_Ex
 
 
 ## <a href="" id="ddk-cm-disable-devnode-ex-dr"></a>

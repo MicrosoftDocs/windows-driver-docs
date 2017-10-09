@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_DriverProvider
-description: DEVPKEY\_Device\_DriverProvider
+title: DEVPKEY_Device_DriverProvider
+description: DEVPKEY_Device_DriverProvider
 ms.assetid: cbc1582a-1f43-4239-b00a-f7c99bf2deee
 keywords: ["DEVPKEY_Device_DriverProvider Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_DriverProvider
+# DEVPKEY_Device_DriverProvider
 
 
-The DEVPKEY\_Device\_DriverProvider device property represents the name of the provider of the [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) for a device instance.
+The DEVPKEY_Device_DriverProvider device property represents the name of the provider of the [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) for a device instance.
 
 <table>
 <colgroup>
@@ -53,11 +53,11 @@ The DEVPKEY\_Device\_DriverProvider device property represents the name of the p
 Remarks
 -------
 
-The value of DEVPKEY\_Device\_DriverProvider is supplied by the **Provider** directive that is included in the [**INF Version section**](https://msdn.microsoft.com/library/windows/hardware/ff547394) of a device INF file.
+The value of DEVPKEY_Device_DriverProvider is supplied by the **Provider** directive that is included in the [**INF Version section**](https://msdn.microsoft.com/library/windows/hardware/ff547394) of a device INF file.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_DriverProvider.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_DriverProvider.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_DriverProvider property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **ProviderName** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverProvider property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **ProviderName** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
 
 Requirements
 ------------

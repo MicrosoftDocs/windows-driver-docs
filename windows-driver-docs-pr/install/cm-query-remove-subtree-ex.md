@@ -1,6 +1,6 @@
 ---
-title: CM\_Query\_Remove\_SubTree\_Ex
-description: CM\_Query\_Remove\_SubTree\_Ex
+title: CM_Query_Remove_SubTree_Ex
+description: CM_Query_Remove_SubTree_Ex
 ms.assetid: cc8872c1-7e8d-4673-9f4d-91b529821724
 keywords: ["CM_Query_Remove_SubTree_Ex Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# CM\_Query\_Remove\_SubTree\_Ex
+# CM_Query_Remove_SubTree_Ex
 
 
  

@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_LocationPaths
-description: DEVPKEY\_Device\_LocationPaths
+title: DEVPKEY_Device_LocationPaths
+description: DEVPKEY_Device_LocationPaths
 ms.assetid: 36320528-d306-441f-a7ae-5a75d982b32a
 keywords: ["DEVPKEY_Device_LocationPaths Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_LocationPaths
+# DEVPKEY_Device_LocationPaths
 
 
-The DEVPKEY\_Device\_LocationPaths device property represents the location of a device instance in the device tree.
+The DEVPKEY_Device_LocationPaths device property represents the location of a device instance in the device tree.
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_Device\_LocationPaths device property represents the location of a 
 Remarks
 -------
 
-Windows sets the value of DEVPKEY\_Device\_LocationPaths.
+Windows sets the value of DEVPKEY_Device_LocationPaths.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_LocationPaths.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_LocationPaths.
 
-Windows Server 2003 supports this property, but does not support the DEVPKEY\_Device\_LocationPaths property key. Instead, you can use the corresponding SPDRP\_LOCATION\_PATHS identifier to access the value of the property on Windows Server 2003. For information about how to access this property value on Windows Server 2003, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003 supports this property, but does not support the DEVPKEY_Device_LocationPaths property key. Instead, you can use the corresponding SPDRP_LOCATION_PATHS identifier to access the value of the property on Windows Server 2003. For information about how to access this property value on Windows Server 2003, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------

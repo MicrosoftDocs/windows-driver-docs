@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_SENSOR\_CAMERA
-description: KSCATEGORY\_SENSOR\_CAMERA
+title: KSCATEGORY_SENSOR_CAMERA
+description: KSCATEGORY_SENSOR_CAMERA
 ms.assetid: 79FF1642-630A-4E11-9EAE-74D187CF5088
 keywords: ["KSCATEGORY_SENSOR_CAMERA Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_SENSOR\_CAMERA
+# KSCATEGORY_SENSOR_CAMERA
 
 
-The KSCATEGORY\_SENSOR\_CAMERA GUID is defined as follows:
+The KSCATEGORY_SENSOR_CAMERA GUID is defined as follows:
 
 <table>
 <colgroup>

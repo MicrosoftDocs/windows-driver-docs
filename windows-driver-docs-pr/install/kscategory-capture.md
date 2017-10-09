@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_CAPTURE
-description: KSCATEGORY\_CAPTURE
+title: KSCATEGORY_CAPTURE
+description: KSCATEGORY_CAPTURE
 ms.assetid: b33e9a04-00f2-4cfa-911e-55461ce5aae7
 keywords: ["KSCATEGORY_CAPTURE Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_CAPTURE
+# KSCATEGORY_CAPTURE
 
 
-The KSCATEGORY\_CAPTURE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that captures wave or MIDI data streams.
+The KSCATEGORY_CAPTURE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that captures wave or MIDI data streams.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSCATEGORY\_CAPTURE [device interface class](https://msdn.microsoft.com/libr
 Remarks
 -------
 
-Drivers for KS devices register instances of KSCATEGORY\_CAPTURE to indicate that the devices support the KSCATEGORY\_CAPTURE functional category.
+Drivers for KS devices register instances of KSCATEGORY_CAPTURE to indicate that the devices support the KSCATEGORY_CAPTURE functional category.
 
 For information about how to register this functional category in an INF file, see the *Ac97smpl.inf* INF file that is included with the [AC'97 sample driver](http://go.microsoft.com/fwlink/p/?linkid=256075) that is provided in the WDK.
 

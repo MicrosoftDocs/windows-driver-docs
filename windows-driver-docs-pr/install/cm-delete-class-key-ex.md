@@ -1,6 +1,6 @@
 ---
-title: CM\_Delete\_Class\_Key\_Ex
-description: CM\_Delete\_Class\_Key\_Ex
+title: CM_Delete_Class_Key_Ex
+description: CM_Delete_Class_Key_Ex
 ms.assetid: 17d73442-7188-4ab7-ab2b-c3dc5f5e4291
 keywords: ["CM_Delete_Class_Key_Ex Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# CM\_Delete\_Class\_Key\_Ex
+# CM_Delete_Class_Key_Ex
 
 
 ## <a href="" id="ddk-cm-delete-class-key-ex-dr"></a>

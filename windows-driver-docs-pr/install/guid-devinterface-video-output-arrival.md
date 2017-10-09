@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVINTERFACE\_VIDEO\_OUTPUT\_ARRIVAL
-description: GUID\_DEVINTERFACE\_VIDEO\_OUTPUT\_ARRIVAL
+title: GUID_DEVINTERFACE_VIDEO_OUTPUT_ARRIVAL
+description: GUID_DEVINTERFACE_VIDEO_OUTPUT_ARRIVAL
 ms.assetid: 4a0bf1fe-3b68-456b-ba13-156dec1e7700
 keywords: ["GUID_DEVINTERFACE_VIDEO_OUTPUT_ARRIVAL Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVINTERFACE\_VIDEO\_OUTPUT\_ARRIVAL
+# GUID_DEVINTERFACE_VIDEO_OUTPUT_ARRIVAL
 
 
-The GUID\_DEVINTERFACE\_VIDEO\_OUTPUT\_ARRIVAL [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for child devices of [display devices](https://msdn.microsoft.com/library/windows/hardware/ff554044).
+The GUID_DEVINTERFACE_VIDEO_OUTPUT_ARRIVAL [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for child devices of [display devices](https://msdn.microsoft.com/library/windows/hardware/ff554044).
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ This Windows operating system does not use this device interface class.
 
 For information about display devices, see [Windows Vista Display Driver Model](https://msdn.microsoft.com/library/windows/hardware/ff570593) and [Windows 2000 Display Driver Model](https://msdn.microsoft.com/library/windows/hardware/ff570584).
 
-For information about the device interface class for display adapters, see [**GUID\_DISPLAY\_DEVICE\_ARRIVAL**](guid-display-device-arrival.md).
+For information about the device interface class for display adapters, see [**GUID_DISPLAY_DEVICE_ARRIVAL**](guid-display-device-arrival.md).
 
 Requirements
 ------------
@@ -71,7 +71,7 @@ Requirements
 ## See also
 
 
-[**GUID\_DISPLAY\_DEVICE\_ARRIVAL**](guid-display-device-arrival.md)
+[**GUID_DISPLAY_DEVICE_ARRIVAL**](guid-display-device-arrival.md)
 
  
 

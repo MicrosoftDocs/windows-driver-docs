@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_DeviceDesc
-description: DEVPKEY\_Device\_DeviceDesc
+title: DEVPKEY_Device_DeviceDesc
+description: DEVPKEY_Device_DeviceDesc
 ms.assetid: 02b88ee7-d825-48d9-99ef-aac8e6748141
 keywords: ["DEVPKEY_Device_DeviceDesc Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_DeviceDesc
+# DEVPKEY_Device_DeviceDesc
 
 
-The DEVPKEY\_Device\_DeviceDesc device property represents a description of a device instance.
+The DEVPKEY_Device_DeviceDesc device property represents a description of a device instance.
 
 <table>
 <colgroup>
@@ -52,13 +52,13 @@ The DEVPKEY\_Device\_DeviceDesc device property represents a description of a de
 Remarks
 -------
 
-The value of DEVPKEY\_Device\_DeviceDesc is set by the *device-description* entry value that is supplied by the [**INF Models section**](https://msdn.microsoft.com/library/windows/hardware/ff547456) of the INF file that installs a device.
+The value of DEVPKEY_Device_DeviceDesc is set by the *device-description* entry value that is supplied by the [**INF Models section**](https://msdn.microsoft.com/library/windows/hardware/ff547456) of the INF file that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_DEVICE\_DeviceDesc.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_DEVICE_DeviceDesc.
 
-You can retrieve the value of the [**DEVPKEY\_NAME**](devpkey-name--device-instance-.md) device instance property to retrieve the name of the device as it should appear in a user interface item.
+You can retrieve the value of the [**DEVPKEY_NAME**](devpkey-name--device-instance-.md) device instance property to retrieve the name of the device as it should appear in a user interface item.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_DeviceDesc property key. Instead, these earlier versions of Windows use the corresponding SPDRP\_DEVICEDESC identifier to access the value of the property. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DeviceDesc property key. Instead, these earlier versions of Windows use the corresponding SPDRP_DEVICEDESC identifier to access the value of the property. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------
@@ -83,7 +83,7 @@ Requirements
 ## See also
 
 
-[**DEVPKEY\_NAME (Device Instance)**](devpkey-name--device-instance-.md)
+[**DEVPKEY_NAME (Device Instance)**](devpkey-name--device-instance-.md)
 
 [**INF Models Section**](https://msdn.microsoft.com/library/windows/hardware/ff547456)
 

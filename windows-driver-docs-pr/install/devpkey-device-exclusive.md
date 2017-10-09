@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_Exclusive
-description: DEVPKEY\_Device\_Exclusive
+title: DEVPKEY_Device_Exclusive
+description: DEVPKEY_Device_Exclusive
 ms.assetid: c54c2fe3-cf57-4603-a701-8ddbc28aa47d
 keywords: ["DEVPKEY_Device_Exclusive Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_Exclusive
+# DEVPKEY_Device_Exclusive
 
 
-The DEVPKEY\_Device\_Exclusive device property represents a Boolean value that determines whether a device instance can be opened for exclusive use.
+The DEVPKEY_Device_Exclusive device property represents a Boolean value that determines whether a device instance can be opened for exclusive use.
 
 <table>
 <colgroup>
@@ -52,13 +52,13 @@ The DEVPKEY\_Device\_Exclusive device property represents a Boolean value that d
 Remarks
 -------
 
-The value of the DEVPKEY\_Device\_Exclusive property is DEVPROP\_TRUE if the device can be opened for exclusive use. Otherwise, the value of the property is DEVPROP\_FALSE.
+The value of the DEVPKEY_Device_Exclusive property is DEVPROP_TRUE if the device can be opened for exclusive use. Otherwise, the value of the property is DEVPROP_FALSE.
 
-You can set the value of DEVPKEY\_Device\_Exclusive by using an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF *DDInstall*.HW section**](https://msdn.microsoft.com/library/windows/hardware/ff547330) that installs a device.
+You can set the value of DEVPKEY_Device_Exclusive by using an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF *DDInstall*.HW section**](https://msdn.microsoft.com/library/windows/hardware/ff547330) that installs a device.
 
-You can retrieve or set the value of DEVPKEY\_Device\_Exclusive by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) and [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163).
+You can retrieve or set the value of DEVPKEY_Device_Exclusive by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) and [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163).
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_Exclusive property key. Instead, you can use the corresponding SPDRP\_EXCLUSIVE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_Exclusive property key. Instead, you can use the corresponding SPDRP_EXCLUSIVE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------

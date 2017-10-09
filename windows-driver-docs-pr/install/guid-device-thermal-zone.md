@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVICE\_THERMAL\_ZONE
-description: GUID\_DEVICE\_THERMAL\_ZONE
+title: GUID_DEVICE_THERMAL_ZONE
+description: GUID_DEVICE_THERMAL_ZONE
 ms.assetid: bbb9abb8-aaff-4f1c-ba8d-96fc5b69676a
 keywords: ["GUID_DEVICE_THERMAL_ZONE Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVICE\_THERMAL\_ZONE
+# GUID_DEVICE_THERMAL_ZONE
 
 
-The GUID\_DEVICE\_THERMAL\_ZONE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for Advanced Configuration and Power Interface (ACPI) thermal zone devices.
+The GUID_DEVICE_THERMAL_ZONE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for Advanced Configuration and Power Interface (ACPI) thermal zone devices.
 
 <table>
 <colgroup>

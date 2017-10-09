@@ -1,6 +1,6 @@
 ---
-title: DEVPROP\_MASK\_TYPE
-description: In Windows Vista and later versions of Windows, the DEVPROP\_MASK\_TYPE mask can be combined in a bitwise AND with a property-data-type identifier to extract the base-data-type identifier from a property-data-type identifier.
+title: DEVPROP_MASK_TYPE
+description: In Windows Vista and later versions of Windows, the DEVPROP_MASK_TYPE mask can be combined in a bitwise AND with a property-data-type identifier to extract the base-data-type identifier from a property-data-type identifier.
 ms.assetid: 5d1d5cb2-d967-47b4-bde7-fdf4248b1913
 keywords: ["DEVPROP_MASK_TYPE Device and Driver Installation"]
 topic_type:
@@ -13,17 +13,17 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPROP\_MASK\_TYPE
+# DEVPROP_MASK_TYPE
 
 
-In Windows Vista and later versions of Windows, the DEVPROP\_MASK\_TYPE mask can be combined in a bitwise AND with a [property-data-type identifier](https://msdn.microsoft.com/library/windows/hardware/ff541476) to extract the [**base-data-type identifier**](https://msdn.microsoft.com/library/windows/hardware/ff537793) from a property-data-type identifier.
+In Windows Vista and later versions of Windows, the DEVPROP_MASK_TYPE mask can be combined in a bitwise AND with a [property-data-type identifier](https://msdn.microsoft.com/library/windows/hardware/ff541476) to extract the [**base-data-type identifier**](https://msdn.microsoft.com/library/windows/hardware/ff537793) from a property-data-type identifier.
 
 Remarks
 -------
 
 This mask cannot be used as a base-data-type identifier, a property-data-type modifier, or a property-data-type identifier.
 
-For information about how to extract the DEVPROP\_TYPEMOD\_Xxx [**property-data-type modifier**](https://msdn.microsoft.com/library/windows/hardware/ff549770) from a property-data-type identifier, see [**DEVPROP\_MASK\_TYPEMOD**](devprop-mask-typemod.md).
+For information about how to extract the DEVPROP_TYPEMOD_Xxx [**property-data-type modifier**](https://msdn.microsoft.com/library/windows/hardware/ff549770) from a property-data-type identifier, see [**DEVPROP_MASK_TYPEMOD**](devprop-mask-typemod.md).
 
 Requirements
 ------------
@@ -44,7 +44,7 @@ Requirements
 ## See also
 
 
-[**DEVPROP\_MASK\_TYPEMOD**](devprop-mask-typemod.md)
+[**DEVPROP_MASK_TYPEMOD**](devprop-mask-typemod.md)
 
  
 

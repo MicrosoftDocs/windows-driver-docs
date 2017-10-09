@@ -36,7 +36,7 @@ device-description=install-section-name[,hw-id][,compatible-id...]
 
 
 <a href="" id="device-description"></a>*device-description*  
-Identifies a device to be installed, expressed as any unique combination of visible characters or as a **%***strkey***%** token defined in an [**INF Strings section**](inf-strings-section.md). The maximum length, in characters, of a device description is LINE\_LEN.
+Identifies a device to be installed, expressed as any unique combination of visible characters or as a **%***strkey***%** token defined in an [**INF Strings section**](inf-strings-section.md). The maximum length, in characters, of a device description is LINE_LEN.
 
 <a href="" id="install-section-name"></a>*install-section-name*  
 Specifies the undecorated name of the INF install sections to be used for the device (and compatible models of device, if any). For more information, see [**INF *DDInstall* Section**](inf-ddinstall-section.md).

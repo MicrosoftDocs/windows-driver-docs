@@ -1,6 +1,6 @@
 ---
-title: GUID\_DISPLAY\_ADAPTER\_INTERFACE
-description: GUID\_DISPLAY\_ADAPTER\_INTERFACE
+title: GUID_DISPLAY_ADAPTER_INTERFACE
+description: GUID_DISPLAY_ADAPTER_INTERFACE
 ms.assetid: 978dd905-0f1f-4554-8d4a-750093effbf9
 keywords: ["GUID_DISPLAY_ADAPTER_INTERFACE Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DISPLAY\_ADAPTER\_INTERFACE
+# GUID_DISPLAY_ADAPTER_INTERFACE
 
 
-GUID\_DISPLAY\_ADAPTER\_INTERFACE is an obsolete identifier for the [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) for display adapter devices; for new instances of this class, use the [**GUID\_DEVINTERFACE\_DISPLAY\_ADAPTER**](guid-devinterface-display-adapter.md) class identifier instead.
+GUID_DISPLAY_ADAPTER_INTERFACE is an obsolete identifier for the [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) for display adapter devices; for new instances of this class, use the [**GUID_DEVINTERFACE_DISPLAY_ADAPTER**](guid-devinterface-display-adapter.md) class identifier instead.
 
 Requirements
 ------------
@@ -37,7 +37,7 @@ Requirements
 ## See also
 
 
-[**GUID\_DEVINTERFACE\_DISPLAY\_ADAPTER**](guid-devinterface-display-adapter.md)
+[**GUID_DEVINTERFACE_DISPLAY_ADAPTER**](guid-devinterface-display-adapter.md)
 
  
 

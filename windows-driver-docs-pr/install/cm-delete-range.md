@@ -1,6 +1,6 @@
 ---
-title: CM\_Delete\_Range
-description: CM\_Delete\_Range
+title: CM_Delete_Range
+description: CM_Delete_Range
 ms.assetid: 7f4cde4e-6a0f-4259-b653-9538a9e5769d
 keywords: ["CM_Delete_Range Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# CM\_Delete\_Range
+# CM_Delete_Range
 
 
 ## <a href="" id="ddk-cm-delete-range-dr"></a>

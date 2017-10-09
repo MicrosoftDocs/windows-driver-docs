@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DeviceClass\_SecuritySDS
-description: DEVPKEY\_DeviceClass\_SecuritySDS
+title: DEVPKEY_DeviceClass_SecuritySDS
+description: DEVPKEY_DeviceClass_SecuritySDS
 ms.assetid: 463e8af1-a1cc-4c05-94c9-f1fbaf5928f9
 keywords: ["DEVPKEY_DeviceClass_SecuritySDS Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DeviceClass\_SecuritySDS
+# DEVPKEY_DeviceClass_SecuritySDS
 
 
-The DEVPKEY\_DeviceClass\_SecuritySDS device property represents a security descriptor string for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
+The DEVPKEY_DeviceClass_SecuritySDS device property represents a security descriptor string for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_DeviceClass\_SecuritySDS device property represents a security desc
 Remarks
 -------
 
-You can set the value of DEVPKEY\_DeviceClass\_SecuritySDS either during or after an installation application installs a device setup class. For more information about how to set this property, see [Creating Secure Device Installations](https://msdn.microsoft.com/library/windows/hardware/ff540212).
+You can set the value of DEVPKEY_DeviceClass_SecuritySDS either during or after an installation application installs a device setup class. For more information about how to set this property, see [Creating Secure Device Installations](https://msdn.microsoft.com/library/windows/hardware/ff540212).
 
-You can retrieve the value of DEVPKEY\_DeviceClass\_SecuritySDS by calling [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090). You can set DEVPKEY\_DeviceClass\_SecuritySDS by calling [**SetupDiSetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552128) or [**SetupDiSetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552132).
+You can retrieve the value of DEVPKEY_DeviceClass_SecuritySDS by calling [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090). You can set DEVPKEY_DeviceClass_SecuritySDS by calling [**SetupDiSetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552128) or [**SetupDiSetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552132).
 
-Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY\_DeviceClass\_SecuritySDS property key. On these earlier versions of Windows, you can use the SPCRP\_SECURITY\_SDS identifier to access the value of this property. For information about how to access the value of this property, see [Retrieving Device Setup Class SPCRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff550644) and [Setting Device Setup Class SPCRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff550814).
+Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_DeviceClass_SecuritySDS property key. On these earlier versions of Windows, you can use the SPCRP_SECURITY_SDS identifier to access the value of this property. For information about how to access the value of this property, see [Retrieving Device Setup Class SPCRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff550644) and [Setting Device Setup Class SPCRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff550814).
 
 Requirements
 ------------

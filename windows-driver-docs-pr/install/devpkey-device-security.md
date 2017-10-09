@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_Security
-description: DEVPKEY\_Device\_Security
+title: DEVPKEY_Device_Security
+description: DEVPKEY_Device_Security
 ms.assetid: ecfebaeb-f418-4f4a-b280-bd0c06cbc3a6
 keywords: ["DEVPKEY_Device_Security Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_Security
+# DEVPKEY_Device_Security
 
 
-The DEVPKEY\_Device\_Security device property represents a security descriptor structure for a device instance.
+The DEVPKEY_Device_Security device property represents a security descriptor structure for a device instance.
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_Device\_Security device property represents a security descriptor s
 Remarks
 -------
 
-You can set the value of DEVPKEY\_Device\_Security by using an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF *DDInstall*.HW section**](https://msdn.microsoft.com/library/windows/hardware/ff547330) of the INF file that installs a device.
+You can set the value of DEVPKEY_Device_Security by using an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF *DDInstall*.HW section**](https://msdn.microsoft.com/library/windows/hardware/ff547330) of the INF file that installs a device.
 
-You can retrieve the value of DEVPKEY\_Device\_Security by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) or you can set this property by calling [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163).
+You can retrieve the value of DEVPKEY_Device_Security by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) or you can set this property by calling [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163).
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_Security property key. Instead, you can use the corresponding SPDRP\_SECURITY identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_Security property key. Instead, you can use the corresponding SPDRP_SECURITY identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------

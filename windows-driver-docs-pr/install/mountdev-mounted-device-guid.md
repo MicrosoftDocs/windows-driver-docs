@@ -1,6 +1,6 @@
 ---
-title: MOUNTDEV\_MOUNTED\_DEVICE\_GUID
-description: MOUNTDEV\_MOUNTED\_DEVICE\_GUID
+title: MOUNTDEV_MOUNTED_DEVICE_GUID
+description: MOUNTDEV_MOUNTED_DEVICE_GUID
 ms.assetid: 48d127ed-414b-40bb-8a35-6472c8783b81
 keywords: ["MOUNTDEV_MOUNTED_DEVICE_GUID Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# MOUNTDEV\_MOUNTED\_DEVICE\_GUID
+# MOUNTDEV_MOUNTED_DEVICE_GUID
 
 
-The MOUNTDEV\_MOUNTED\_DEVICE\_GUID [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for volume devices.
+The MOUNTDEV_MOUNTED_DEVICE_GUID [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for volume devices.
 
 <table>
 <colgroup>
@@ -46,9 +46,9 @@ The MOUNTDEV\_MOUNTED\_DEVICE\_GUID [device interface class](https://msdn.micros
 Remarks
 -------
 
-The MOUNTDEV\_MOUNTED\_DEVICE\_GUID identifier for this device interface class is an alias for the [**GUID\_DEVINTERFACE\_VOLUME**](guid-devinterface-volume.md) device interface class.
+The MOUNTDEV_MOUNTED_DEVICE_GUID identifier for this device interface class is an alias for the [**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md) device interface class.
 
-The storage [samples](http://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK includes the [ClassPnP Storage Class Driver Library](http://go.microsoft.com/fwlink/p/?linkid=256095) that uses MOUNTDEV\_MOUNTED\_DEVICE\_GUID to register instances of the GUID\_DEVINTERFACE\_VOLUME device interface class.
+The storage [samples](http://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK includes the [ClassPnP Storage Class Driver Library](http://go.microsoft.com/fwlink/p/?linkid=256095) that uses MOUNTDEV_MOUNTED_DEVICE_GUID to register instances of the GUID_DEVINTERFACE_VOLUME device interface class.
 
 Requirements
 ------------
@@ -69,7 +69,7 @@ Requirements
 ## See also
 
 
-[**GUID\_DEVINTERFACE\_VOLUME**](guid-devinterface-volume.md)
+[**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md)
 
  
 

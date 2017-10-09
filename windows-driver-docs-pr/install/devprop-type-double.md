@@ -1,6 +1,6 @@
 ---
-title: DEVPROP\_TYPE\_DOUBLE
-description: In Windows Vista and later versions of Windows, the DEVPROP\_TYPE\_DOUBLE identifier represents the base-data-type identifier that indicates that the data type is a DOUBLE-typed IEEE floating-point number.
+title: DEVPROP_TYPE_DOUBLE
+description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_DOUBLE identifier represents the base-data-type identifier that indicates that the data type is a DOUBLE-typed IEEE floating-point number.
 ms.assetid: c04f8538-ce0d-4eaf-a4d5-86968dbc18fd
 keywords: ["DEVPROP_TYPE_DOUBLE Device and Driver Installation"]
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPROP\_TYPE\_DOUBLE
+# DEVPROP_TYPE_DOUBLE
 
 
-In Windows Vista and later versions of Windows, the DEVPROP\_TYPE\_DOUBLE identifier represents the base-data-type identifier that indicates that the data type is a DOUBLE-typed IEEE floating-point number.
+In Windows Vista and later versions of Windows, the DEVPROP_TYPE_DOUBLE identifier represents the base-data-type identifier that indicates that the data type is a DOUBLE-typed IEEE floating-point number.
 
 Remarks
 -------
 
-DEVPROP\_TYPE\_DOUBLE can be combined only with the [**DEVPROP\_TYPEMOD\_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
+DEVPROP_TYPE_DOUBLE can be combined only with the [**DEVPROP_TYPEMOD_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
 
 ### Setting a Property of this Type
 
-To set a property whose base data type is DEVPROP\_TYPE\_DOUBLE, call the corresponding SetupDiSet*Xxx* property function and set the function input parameters as follows:
+To set a property whose base data type is DEVPROP_TYPE_DOUBLE, call the corresponding SetupDiSet*Xxx* property function and set the function input parameters as follows:
 
--   Set the *PropertyType* parameter to DEVPROP\_TYPE\_DOUBLE, set the *PropertyBuffer* parameter to a pointer to a buffer that can contain at least one ULONG value, and set the *PropertyBufferSize* parameter to `sizeof(DOUBLE)`.
+-   Set the *PropertyType* parameter to DEVPROP_TYPE_DOUBLE, set the *PropertyBuffer* parameter to a pointer to a buffer that can contain at least one ULONG value, and set the *PropertyBufferSize* parameter to `sizeof(DOUBLE)`.
 
 -   Set the other function input parameters as appropriate to set the property.
 

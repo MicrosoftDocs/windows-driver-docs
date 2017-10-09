@@ -1,6 +1,6 @@
 ---
-title: CM\_Register\_Device\_Interface\_Ex
-description: CM\_Register\_Device\_Interface\_Ex
+title: CM_Register_Device_Interface_Ex
+description: CM_Register_Device_Interface_Ex
 ms.assetid: 8a3f3eae-6af5-45ca-a399-844a6f121a1c
 keywords: ["CM_Register_Device_Interface_ExA", "CM_Register_Device_Interface_ExW", "CM_Register_Device_Interface_Ex Device and Driver Installation"]
 topic_type:
@@ -12,7 +12,7 @@ api_type:
 - NA
 ---
 
-# CM\_Register\_Device\_Interface\_Ex
+# CM_Register_Device_Interface_Ex
 
 
  

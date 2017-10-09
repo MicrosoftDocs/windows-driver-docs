@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_MIXER
-description: KSCATEGORY\_MIXER
+title: KSCATEGORY_MIXER
+description: KSCATEGORY_MIXER
 ms.assetid: b17696ed-d8d6-4d02-a23b-64ebc8505afd
 keywords: ["KSCATEGORY_MIXER Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_MIXER
+# KSCATEGORY_MIXER
 
 
-The KSCATEGORY\_MIXER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that mixes data streams.
+The KSCATEGORY_MIXER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that mixes data streams.
 
 <table>
 <colgroup>
@@ -46,9 +46,9 @@ The KSCATEGORY\_MIXER [device interface class](https://msdn.microsoft.com/librar
 Remarks
 -------
 
-Drivers for KS devices register instances of KSCATEGORY\_MIXER to indicate to the operating system that the devices support the KSCATEGORY\_MIXER functional category.
+Drivers for KS devices register instances of KSCATEGORY_MIXER to indicate to the operating system that the devices support the KSCATEGORY_MIXER functional category.
 
-For more information about this functional category and other functional categories, see [Installing Device Interfaces for an Audio Adapter](https://msdn.microsoft.com/library/windows/hardware/ff536813) and [**KSPROPERTY\_TOPOLOGY\_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799).
+For more information about this functional category and other functional categories, see [Installing Device Interfaces for an Audio Adapter](https://msdn.microsoft.com/library/windows/hardware/ff536813) and [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799).
 
 Requirements
 ------------
@@ -69,7 +69,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY\_TOPOLOGY\_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)
+[**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)
 
  
 

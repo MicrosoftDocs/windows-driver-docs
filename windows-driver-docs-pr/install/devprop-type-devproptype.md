@@ -1,6 +1,6 @@
 ---
-title: DEVPROP\_TYPE\_DEVPROPTYPE
-description: In Windows Vista and later versions of Windows, the DEVPROP\_TYPE\_DEVPROPTYPE identifier represents the base-data-type identifier that indicates the data type is a DEVPROPTYPE-typed value.
+title: DEVPROP_TYPE_DEVPROPTYPE
+description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_DEVPROPTYPE identifier represents the base-data-type identifier that indicates the data type is a DEVPROPTYPE-typed value.
 ms.assetid: d50a26d4-0af5-4cc5-aaa4-8587b64fc1a8
 keywords: ["DEVPROP_TYPE_DEVPROPTYPE Device and Driver Installation"]
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPROP\_TYPE\_DEVPROPTYPE
+# DEVPROP_TYPE_DEVPROPTYPE
 
 
-In Windows Vista and later versions of Windows, the DEVPROP\_TYPE\_DEVPROPTYPE identifier represents the base-data-type identifier that indicates the data type is a DEVPROPTYPE-typed value.
+In Windows Vista and later versions of Windows, the DEVPROP_TYPE_DEVPROPTYPE identifier represents the base-data-type identifier that indicates the data type is a DEVPROPTYPE-typed value.
 
 Remarks
 -------
 
-The DEVPROP\_TYPE\_DEVPROPTYPE property type can be combined only with the [**DEVPROP\_TYPEMOD\_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
+The DEVPROP_TYPE_DEVPROPTYPE property type can be combined only with the [**DEVPROP_TYPEMOD_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
 
 ### Setting a Property of this Type
 
-To set a property whose base data type is DEVPROP\_TYPE\_DEVPROPTYPE, call the corresponding SetupDiSet*Xxx* property function, setting the function input parameters as follows:
+To set a property whose base data type is DEVPROP_TYPE_DEVPROPTYPE, call the corresponding SetupDiSet*Xxx* property function, setting the function input parameters as follows:
 
--   Set the *PropertyType* parameter to DEVPROP\_TYPE\_DEVPROPTYPE, set the *PropertyBuffer* parameter to a pointer to a buffer that contains a DEVPROPTYPE value, and set the *PropertyBufferSize* parameter to `sizeof(DEVPROPTYPE)`.
+-   Set the *PropertyType* parameter to DEVPROP_TYPE_DEVPROPTYPE, set the *PropertyBuffer* parameter to a pointer to a buffer that contains a DEVPROPTYPE value, and set the *PropertyBufferSize* parameter to `sizeof(DEVPROPTYPE)`.
 
 -   Set the remaining function parameters as appropriate to set the property.
 

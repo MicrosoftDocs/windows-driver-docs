@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_AUDIO\_SPLITTER
-description: KSCATEGORY\_AUDIO\_SPLITTER
+title: KSCATEGORY_AUDIO_SPLITTER
+description: KSCATEGORY_AUDIO_SPLITTER
 ms.assetid: cae34eb3-899b-49d4-a6ea-0d94f4666518
 keywords: ["KSCATEGORY_AUDIO_SPLITTER Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_AUDIO\_SPLITTER
+# KSCATEGORY_AUDIO_SPLITTER
 
 
-The KSCATEGORY\_AUDIO\_SPLITTER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is designed for a [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that is reserved for exclusive use by the system-supplied [WDM audio components](https://msdn.microsoft.com/library/windows/hardware/ff537039).
+The KSCATEGORY_AUDIO_SPLITTER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is designed for a [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that is reserved for exclusive use by the system-supplied [WDM audio components](https://msdn.microsoft.com/library/windows/hardware/ff537039).
 
 <table>
 <colgroup>

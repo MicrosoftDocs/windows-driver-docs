@@ -1,6 +1,6 @@
 ---
-title: CM\_Get\_Class\_Name\_Ex
-description: CM\_Get\_Class\_Name\_Ex
+title: CM_Get_Class_Name_Ex
+description: CM_Get_Class_Name_Ex
 ms.assetid: ff6589c1-9349-42ed-a3cf-901c7e46ebf0
 keywords: ["CM_Get_Class_Name_ExA", "CM_Get_Class_Name_ExW", "CM_Get_Class_Name_Ex Device and Driver Installation"]
 topic_type:
@@ -12,7 +12,7 @@ api_type:
 - NA
 ---
 
-# CM\_Get\_Class\_Name\_Ex
+# CM_Get_Class_Name_Ex
 
 
 ## <a href="" id="ddk-cm-get-class-name-ex-dr"></a>

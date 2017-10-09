@@ -1,6 +1,6 @@
 ---
-title: CM\_Run\_Detection
-description: CM\_Run\_Detection
+title: CM_Run_Detection
+description: CM_Run_Detection
 ms.assetid: c1e146a4-96ce-4e67-a585-0c51132ce7d5
 keywords: ["CM_Run_Detection Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# CM\_Run\_Detection
+# CM_Run_Detection
 
 
 This function is obsolete and no longer supported.

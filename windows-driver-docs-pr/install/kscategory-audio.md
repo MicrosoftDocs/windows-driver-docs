@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_AUDIO
-description: KSCATEGORY\_AUDIO
+title: KSCATEGORY_AUDIO
+description: KSCATEGORY_AUDIO
 ms.assetid: 5acdca77-ed90-4f20-bdcc-5f51312c9dd7
 keywords: ["KSCATEGORY_AUDIO Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_AUDIO
+# KSCATEGORY_AUDIO
 
 
-The KSCATEGORY\_AUDIO [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for an audio device.
+The KSCATEGORY_AUDIO [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for an audio device.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSCATEGORY\_AUDIO [device interface class](https://msdn.microsoft.com/librar
 Remarks
 -------
 
-Drivers for KS audio devices register instances of this device interface class to indicate to the operating system that the devices support the KSCATEGORY\_AUDIO functional category.
+Drivers for KS audio devices register instances of this device interface class to indicate to the operating system that the devices support the KSCATEGORY_AUDIO functional category.
 
 For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](https://msdn.microsoft.com/library/windows/hardware/ff536813).
 

@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_DriverInfSectionExt
-description: DEVPKEY\_Device\_DriverInfSectionExt
+title: DEVPKEY_Device_DriverInfSectionExt
+description: DEVPKEY_Device_DriverInfSectionExt
 ms.assetid: bf6260b4-5df3-4f85-8319-0f864c017e3d
 keywords: ["DEVPKEY_Device_DriverInfSectionExt Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_DriverInfSectionExt
+# DEVPKEY_Device_DriverInfSectionExt
 
 
-The DEVPKEY\_Device\_DriverInfSectionExt device driver property represents the platform extension of the [**INF DDInstall section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) that installs the driver for a device instance.
+The DEVPKEY_Device_DriverInfSectionExt device driver property represents the platform extension of the [**INF DDInstall section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) that installs the driver for a device instance.
 
 <table>
 <colgroup>
@@ -53,11 +53,11 @@ The DEVPKEY\_Device\_DriverInfSectionExt device driver property represents the p
 Remarks
 -------
 
-Windows sets the value of DEVPKEY\_Device\_DriverInfSectionExt.
+Windows sets the value of DEVPKEY_Device_DriverInfSectionExt.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_DriverInfSectionExt.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_DriverInfSectionExt.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_DriverInfSectionExt property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **InfSectionExt** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverInfSectionExt property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **InfSectionExt** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
 
 Requirements
 ------------

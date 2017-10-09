@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_Class
-description: DEVPKEY\_Device\_Class
+title: DEVPKEY_Device_Class
+description: DEVPKEY_Device_Class
 ms.assetid: e6fb0925-ff60-430e-aea4-1dd706a60de8
 keywords: ["DEVPKEY_Device_Class Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_Class
+# DEVPKEY_Device_Class
 
 
-The DEVPKEY\_Device\_Class device property represents the name of the [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509) that a device instance belongs to.
+The DEVPKEY_Device_Class device property represents the name of the [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509) that a device instance belongs to.
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_Device\_Class device property represents the name of the [device se
 Remarks
 -------
 
-The value of the DEVPKEY\_Device\_Class property is set by the *class-name* value that is supplied by the Class directive in the [**INF Version section**](https://msdn.microsoft.com/library/windows/hardware/ff546326) of the INF file that installs a device.
+The value of the DEVPKEY_Device_Class property is set by the *class-name* value that is supplied by the Class directive in the [**INF Version section**](https://msdn.microsoft.com/library/windows/hardware/ff546326) of the INF file that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_Class.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_Class.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_Class property key. Instead, you can use the corresponding SPDRP\_CLASS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_Class property key. Instead, you can use the corresponding SPDRP_CLASS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------

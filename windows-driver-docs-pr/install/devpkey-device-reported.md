@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_Reported
-description: DEVPKEY\_Device\_Reported
+title: DEVPKEY_Device_Reported
+description: DEVPKEY_Device_Reported
 ms.assetid: dfec9e24-4d4e-42e4-a229-ad3d060fb1b5
 keywords: ["DEVPKEY_Device_Reported Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_Reported
+# DEVPKEY_Device_Reported
 
 
-The DEVPKEY\_Device\_Reported device property represents a Boolean value that indicates whether a device instance is a root-enumerated device that the driver for the device reported to the Plug and Play (PnP) manager by calling [**IoReportDetectedDevice**](https://msdn.microsoft.com/library/windows/hardware/ff549597).
+The DEVPKEY_Device_Reported device property represents a Boolean value that indicates whether a device instance is a root-enumerated device that the driver for the device reported to the Plug and Play (PnP) manager by calling [**IoReportDetectedDevice**](https://msdn.microsoft.com/library/windows/hardware/ff549597).
 
 <table>
 <colgroup>
@@ -48,9 +48,9 @@ The DEVPKEY\_Device\_Reported device property represents a Boolean value that in
 Remarks
 -------
 
-The PnP manager sets the value of DEVPKEY\_Device\_Reported to DEVPROP\_TRUE if the device is a root-enumerated device that the driver for the device reported to the PnP manager by calling IoReportDetectedDevice. Otherwise, the PnP manager sets the value of the property to DEVPROP\_FALSE.
+The PnP manager sets the value of DEVPKEY_Device_Reported to DEVPROP_TRUE if the device is a root-enumerated device that the driver for the device reported to the PnP manager by calling IoReportDetectedDevice. Otherwise, the PnP manager sets the value of the property to DEVPROP_FALSE.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_Reported.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_Reported.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not support this property.
 

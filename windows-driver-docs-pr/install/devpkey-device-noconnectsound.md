@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_NoConnectSound
-description: DEVPKEY\_Device\_NoConnectSound
+title: DEVPKEY_Device_NoConnectSound
+description: DEVPKEY_Device_NoConnectSound
 ms.assetid: 7ed4eb3f-6585-4ec1-83b7-bde368faca0a
 keywords: ["DEVPKEY_Device_NoConnectSound Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_NoConnectSound
+# DEVPKEY_Device_NoConnectSound
 
 
-The DEVPKEY\_Device\_NoConnectSound device property represents a Boolean value that indicates whether to suppress the sound that the Microsoft Windows operating system plays to indicate that a removable device arrived or was removed.
+The DEVPKEY_Device_NoConnectSound device property represents a Boolean value that indicates whether to suppress the sound that the Microsoft Windows operating system plays to indicate that a removable device arrived or was removed.
 
 <table>
 <colgroup>
@@ -48,11 +48,11 @@ The DEVPKEY\_Device\_NoConnectSound device property represents a Boolean value t
 Remarks
 -------
 
-The value of DEVPKEY\_Device\_NoConnectSound is set to DEVPROP\_TRUE to suppress playing sound. Otherwise, the value of the property is set to DEVPROP\_FALSE.
+The value of DEVPKEY_Device_NoConnectSound is set to DEVPROP_TRUE to suppress playing sound. Otherwise, the value of the property is set to DEVPROP_FALSE.
 
-The DEVPKEY\_Device\_NoConnectSound property is typically set by an [**INF AddProperty directive**](https://msdn.microsoft.com/library/windows/hardware/ff546318) in the INF file for a device.
+The DEVPKEY_Device_NoConnectSound property is typically set by an [**INF AddProperty directive**](https://msdn.microsoft.com/library/windows/hardware/ff546318) in the INF file for a device.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) or [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163) to retrieve or set the value of DEVPKEY\_Device\_NoConnectSound.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) or [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163) to retrieve or set the value of DEVPKEY_Device_NoConnectSound.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not support this property.
 

@@ -1,6 +1,6 @@
 ---
-title: DIF\_VALIDATECLASSDRIVERS
-description: DIF\_VALIDATECLASSDRIVERS
+title: DIF_VALIDATECLASSDRIVERS
+description: DIF_VALIDATECLASSDRIVERS
 ms.assetid: 60a7efac-5d9b-45c2-8156-3581764f5dda
 keywords: ["DIF_VALIDATECLASSDRIVERS Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# DIF\_VALIDATECLASSDRIVERS
+# DIF_VALIDATECLASSDRIVERS
 
 
 This DIF code is obsolete and no longer supported in Microsoft Windows 2000 and later versions of Windows.

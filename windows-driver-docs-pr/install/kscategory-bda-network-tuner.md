@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_BDA\_NETWORK\_TUNER
-description: KSCATEGORY\_BDA\_NETWORK\_TUNER
+title: KSCATEGORY_BDA_NETWORK_TUNER
+description: KSCATEGORY_BDA_NETWORK_TUNER
 ms.assetid: d3f9d393-c8a1-4280-8796-a1de755f9508
 keywords: ["KSCATEGORY_BDA_NETWORK_TUNER Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_BDA\_NETWORK\_TUNER
+# KSCATEGORY_BDA_NETWORK_TUNER
 
 
-The KSCATEGORY\_BDA\_NETWORK\_TUNER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a network tuner in the [broadcast driver architecture](https://msdn.microsoft.com/library/windows/hardware/ff556573) (BDA).
+The KSCATEGORY_BDA_NETWORK_TUNER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a network tuner in the [broadcast driver architecture](https://msdn.microsoft.com/library/windows/hardware/ff556573) (BDA).
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSCATEGORY\_BDA\_NETWORK\_TUNER [device interface class](https://msdn.micros
 Remarks
 -------
 
-Drivers for BDA devices register instances of KSCATEGORY\_BDA\_NETWORK\_TUNER to indicate to the operating system that the devices support a BDA network tuner filter.
+Drivers for BDA devices register instances of KSCATEGORY_BDA_NETWORK_TUNER to indicate to the operating system that the devices support a BDA network tuner filter.
 
 For an example of how to register this functional category in an INF file, see the INF file *BDASwTunerATSC.inf*. *BDASwTunerATSC.inf* is included with the BDA sample generic tuner in the *src\\swtuner\\BDAtuner\\gentuner* subdirectory of the WDK.
 

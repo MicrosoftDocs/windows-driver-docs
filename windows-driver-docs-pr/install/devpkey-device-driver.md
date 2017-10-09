@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_Driver
-description: DEVPKEY\_Device\_Driver
+title: DEVPKEY_Device_Driver
+description: DEVPKEY_Device_Driver
 ms.assetid: c7c54efe-6b9f-4d77-9060-ea57e4cb1463
 keywords: ["DEVPKEY_Device_Driver Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_Driver
+# DEVPKEY_Device_Driver
 
 
-The DEVPKEY\_Device\_Driver device property represents the registry entry name of the [*driver key*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-driver-key) for a [*device instance*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-instance).
+The DEVPKEY_Device_Driver device property represents the registry entry name of the [*driver key*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-driver-key) for a [*device instance*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-instance).
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_Device\_Driver device property represents the registry entry name o
 Remarks
 -------
 
-Windows sets the value of DEVPKEY\_Device\_Driver after it installs a driver for device.
+Windows sets the value of DEVPKEY_Device_Driver after it installs a driver for device.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_Driver.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_Driver.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_Driver property key. Instead, you can use the corresponding SPDRP\_DRIVER identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_Driver property key. Instead, you can use the corresponding SPDRP_DRIVER identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------

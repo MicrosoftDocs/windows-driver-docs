@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_EjectionRelations
-description: DEVPKEY\_Device\_EjectionRelations
+title: DEVPKEY_Device_EjectionRelations
+description: DEVPKEY_Device_EjectionRelations
 ms.assetid: 3b3a0d6f-4163-40a8-817d-924f63871e51
 keywords: ["DEVPKEY_Device_EjectionRelations Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_EjectionRelations
+# DEVPKEY_Device_EjectionRelations
 
 
-The DEVPKEY\_Device\_EjectionRelations device property represents the [**ejection relations**](https://msdn.microsoft.com/library/windows/hardware/ff551670) for a device instance.
+The DEVPKEY_Device_EjectionRelations device property represents the [**ejection relations**](https://msdn.microsoft.com/library/windows/hardware/ff551670) for a device instance.
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ The DEVPKEY\_Device\_EjectionRelations device property represents the [**ejectio
 Remarks
 -------
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_EjectionRelations.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_EjectionRelations.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not directly support this property. For information about how to retrieve device relations properties on these earlier versions of Windows, see [Retrieving Device Relations](https://msdn.microsoft.com/library/windows/hardware/ff550630).
 

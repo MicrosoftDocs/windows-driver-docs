@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_BDA\_IP\_SINK
-description: KSCATEGORY\_BDA\_IP\_SINK
+title: KSCATEGORY_BDA_IP_SINK
+description: KSCATEGORY_BDA_IP_SINK
 ms.assetid: 7c9627b3-2d6b-471c-9101-0768890bfe10
 keywords: ["KSCATEGORY_BDA_IP_SINK Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_BDA\_IP\_SINK
+# KSCATEGORY_BDA_IP_SINK
 
 
-The KSCATEGORY\_BDA\_IP\_SINK [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a sink filter in the [broadcast driver architecture](https://msdn.microsoft.com/library/windows/hardware/ff556573) (BDA).
+The KSCATEGORY_BDA_IP_SINK [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a sink filter in the [broadcast driver architecture](https://msdn.microsoft.com/library/windows/hardware/ff556573) (BDA).
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSCATEGORY\_BDA\_IP\_SINK [device interface class](https://msdn.microsoft.co
 Remarks
 -------
 
-Drivers for BDA devices register instances of KSCATEGORY\_BDA\_IP\_SINK to indicate that the devices support a BDA IP sink filter.
+Drivers for BDA devices register instances of KSCATEGORY_BDA_IP_SINK to indicate that the devices support a BDA IP sink filter.
 
 For more information, see [BDA Filter Category GUIDs](https://msdn.microsoft.com/library/windows/hardware/ff556521).
 

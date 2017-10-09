@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DeviceClass\_UpperFilters
-description: DEVPKEY\_DeviceClass\_UpperFilters
+title: DEVPKEY_DeviceClass_UpperFilters
+description: DEVPKEY_DeviceClass_UpperFilters
 ms.assetid: 9a6a9587-340c-460e-b6e2-1aadfb5b8c2f
 keywords: ["DEVPKEY_DeviceClass_UpperFilters Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DeviceClass\_UpperFilters
+# DEVPKEY_DeviceClass_UpperFilters
 
 
-The DEVPKEY\_DeviceClass\_UpperFilters device property represents a list of the service names of the upper-level filter drivers that are installed for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
+The DEVPKEY_DeviceClass_UpperFilters device property represents a list of the service names of the upper-level filter drivers that are installed for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
 
 <table>
 <colgroup>
@@ -60,11 +60,11 @@ The DEVPKEY\_DeviceClass\_UpperFilters device property represents a list of the 
 Remarks
 -------
 
-The value of DEVPKEY\_DeviceClass\_UpperFilters is set when a class filter driver is installed. For more information about how to install a class filter driver, see [Installing a Filter Driver](https://msdn.microsoft.com/library/windows/hardware/ff547595) and [**INF ClassInstall32 Section**](https://msdn.microsoft.com/library/windows/hardware/ff546335).
+The value of DEVPKEY_DeviceClass_UpperFilters is set when a class filter driver is installed. For more information about how to install a class filter driver, see [Installing a Filter Driver](https://msdn.microsoft.com/library/windows/hardware/ff547595) and [**INF ClassInstall32 Section**](https://msdn.microsoft.com/library/windows/hardware/ff546335).
 
-You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY\_DeviceClass\_UpperFilters.
+You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY_DeviceClass_UpperFilters.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_DeviceClass\_UpperFilters property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **UpperFilters** registry value under the class registry key. For information about how to access this property value on these earlier versions of Windows, see [Accessing Registry Entry Values Under the Class Registry Key](https://msdn.microsoft.com/library/windows/hardware/ff537751).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_UpperFilters property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **UpperFilters** registry value under the class registry key. For information about how to access this property value on these earlier versions of Windows, see [Accessing Registry Entry Values Under the Class Registry Key](https://msdn.microsoft.com/library/windows/hardware/ff537751).
 
 Requirements
 ------------

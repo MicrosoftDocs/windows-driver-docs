@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DeviceInterface\_Enabled
-description: DEVPKEY\_DeviceInterface\_Enabled
+title: DEVPKEY_DeviceInterface_Enabled
+description: DEVPKEY_DeviceInterface_Enabled
 ms.assetid: 8e7ea36c-827d-43bd-b424-41c06ba8c20d
 keywords: ["DEVPKEY_DeviceInterface_Enabled Device and Driver Installation"]
 topic_type:
@@ -13,7 +13,7 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DeviceInterface\_Enabled
+# DEVPKEY_DeviceInterface_Enabled
 
 
 The **DeviceInterfaceEnabled** device property represents a Boolean flag that indicates whether a device interface is enabled.
@@ -48,11 +48,11 @@ The **DeviceInterfaceEnabled** device property represents a Boolean flag that in
 Remarks
 -------
 
-If the value of DEVPKEY\_DeviceInterface\_Enabled is DEVPROP\_TRUE, the interface is enabled. Otherwise, the interface is not enabled.
+If the value of DEVPKEY_DeviceInterface_Enabled is DEVPROP_TRUE, the interface is enabled. Otherwise, the interface is not enabled.
 
-You can call [**SetupDiGetDeviceInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551122) to retrieve the value of DEVPKEY\_DeviceInterface\_Enabled.
+You can call [**SetupDiGetDeviceInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551122) to retrieve the value of DEVPKEY_DeviceInterface_Enabled.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_DeviceInterface\_Enabled property key. For information about how to retrieve the activity status of a device interface on these earlier versions of Windows, see the information about how to use [**SetupDiEnumDeviceInterfaces**](https://msdn.microsoft.com/library/windows/hardware/ff551015) that is provided in [Accessing Device Interface Properties](https://msdn.microsoft.com/library/windows/hardware/ff537740).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceInterface_Enabled property key. For information about how to retrieve the activity status of a device interface on these earlier versions of Windows, see the information about how to use [**SetupDiEnumDeviceInterfaces**](https://msdn.microsoft.com/library/windows/hardware/ff551015) that is provided in [Accessing Device Interface Properties](https://msdn.microsoft.com/library/windows/hardware/ff537740).
 
 For more information about device interfaces, see [Device Interface Classes](https://msdn.microsoft.com/library/windows/hardware/ff541339) and the [**INF AddInterface Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546310).
 

@@ -1,6 +1,6 @@
 ---
-title: GUID\_PARCLASS\_DEVICE
-description: GUID\_PARCLASS\_DEVICE
+title: GUID_PARCLASS_DEVICE
+description: GUID_PARCLASS_DEVICE
 ms.assetid: ce2c312f-4af3-464b-995f-e5907830a7dc
 keywords: ["GUID_PARCLASS_DEVICE Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_PARCLASS\_DEVICE
+# GUID_PARCLASS_DEVICE
 
 
-GUID\_PARCLASS\_DEVICE is an obsolete identifier for the device interface class for devices that are attached to a parallel port. For new instances of this class, use the [**GUID\_DEVINTERFACE\_PARCLASS**](guid-devinterface-parclass.md) class identifier instead.
+GUID_PARCLASS_DEVICE is an obsolete identifier for the device interface class for devices that are attached to a parallel port. For new instances of this class, use the [**GUID_DEVINTERFACE_PARCLASS**](guid-devinterface-parclass.md) class identifier instead.
 
 Requirements
 ------------
@@ -41,7 +41,7 @@ Requirements
 ## See also
 
 
-[**GUID\_DEVINTERFACE\_PARCLASS**](guid-devinterface-parclass.md)
+[**GUID_DEVINTERFACE_PARCLASS**](guid-devinterface-parclass.md)
 
  
 

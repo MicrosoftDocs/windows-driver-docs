@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_FILESYSTEM
-description: KSCATEGORY\_FILESYSTEM
+title: KSCATEGORY_FILESYSTEM
+description: KSCATEGORY_FILESYSTEM
 ms.assetid: a3d6a3dc-926a-415a-80ef-c7d2f11ed4bf
 keywords: ["KSCATEGORY_FILESYSTEM Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_FILESYSTEM
+# KSCATEGORY_FILESYSTEM
 
 
-The KSCATEGORY\_FILESYSTEM [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that moves a data stream into or out of the file system.
+The KSCATEGORY_FILESYSTEM [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that moves a data stream into or out of the file system.
 
 <table>
 <colgroup>
@@ -46,9 +46,9 @@ The KSCATEGORY\_FILESYSTEM [device interface class](https://msdn.microsoft.com/l
 Remarks
 -------
 
-Drivers for KS devices register instances of KSCATEGORY\_FILESYSTEM to indicate to the operating system that the devices support the KSCATEGORY\_FILESYSTEM functional category.
+Drivers for KS devices register instances of KSCATEGORY_FILESYSTEM to indicate to the operating system that the devices support the KSCATEGORY_FILESYSTEM functional category.
 
-The KSCATEGORY\_FILESYSTEM functional category is one of the [**KSPROPERTY\_TOPOLOGY\_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799) functional categories.
+The KSCATEGORY_FILESYSTEM functional category is one of the [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799) functional categories.
 
 Requirements
 ------------
@@ -69,7 +69,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY\_TOPOLOGY\_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)
+[**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)
 
  
 

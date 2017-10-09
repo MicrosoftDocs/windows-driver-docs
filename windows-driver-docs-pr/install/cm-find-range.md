@@ -1,6 +1,6 @@
 ---
-title: CM\_Find\_Range
-description: CM\_Find\_Range
+title: CM_Find_Range
+description: CM_Find_Range
 ms.assetid: a969ce26-93d8-4a11-a36d-4afc89f24c09
 keywords: ["CM_Find_Range Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# CM\_Find\_Range
+# CM_Find_Range
 
 
 ## <a href="" id="ddk-cm-find-range-dr"></a>

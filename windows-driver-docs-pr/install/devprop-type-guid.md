@@ -1,6 +1,6 @@
 ---
-title: DEVPROP\_TYPE\_GUID
-description: In Windows Vista and later versions of Windows, the DEVPROP\_TYPE\_GUID identifier represents the base-data-type identifier that indicates that the data type is a GUID-typed globally unique identifier (GUID).
+title: DEVPROP_TYPE_GUID
+description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_GUID identifier represents the base-data-type identifier that indicates that the data type is a GUID-typed globally unique identifier (GUID).
 ms.assetid: 77080860-c2b3-4c7c-8ab8-e0b02582ffbb
 keywords: ["DEVPROP_TYPE_GUID Device and Driver Installation"]
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPROP\_TYPE\_GUID
+# DEVPROP_TYPE_GUID
 
 
-In Windows Vista and later versions of Windows, the DEVPROP\_TYPE\_GUID identifier represents the base-data-type identifier that indicates that the data type is a GUID-typed globally unique identifier (GUID).
+In Windows Vista and later versions of Windows, the DEVPROP_TYPE_GUID identifier represents the base-data-type identifier that indicates that the data type is a GUID-typed globally unique identifier (GUID).
 
 Remarks
 -------
 
-DEVPROP\_TYPE\_GUID can be combined only with the [**DEVPROP\_TYPEMOD\_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
+DEVPROP_TYPE_GUID can be combined only with the [**DEVPROP_TYPEMOD_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
 
 ### Setting a Property of this Type
 
-To set a property whose base data type is DEVPROP\_TYPE\_GUID, call the corresponding SetupDiSet*Xxx* property function and set the function input parameters as follows:
+To set a property whose base data type is DEVPROP_TYPE_GUID, call the corresponding SetupDiSet*Xxx* property function and set the function input parameters as follows:
 
--   Set the *PropertyType* parameter to DEVPROP\_TYPE\_GUID, set the *PropertyBuffer* parameter to a pointer to a buffer that contains a GUID value, and set the *PropertyBufferSize* parameter to `sizeof(GUID)`.
+-   Set the *PropertyType* parameter to DEVPROP_TYPE_GUID, set the *PropertyBuffer* parameter to a pointer to a buffer that contains a GUID value, and set the *PropertyBufferSize* parameter to `sizeof(GUID)`.
 
 -   Set the other function input parameters as appropriate to set the property.
 

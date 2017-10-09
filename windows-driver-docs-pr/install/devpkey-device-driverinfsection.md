@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_DriverInfSection
-description: DEVPKEY\_Device\_DriverInfSection
+title: DEVPKEY_Device_DriverInfSection
+description: DEVPKEY_Device_DriverInfSection
 ms.assetid: 42f41a61-b29b-4c07-a348-e876050a4670
 keywords: ["DEVPKEY_Device_DriverInfSection Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_DriverInfSection
+# DEVPKEY_Device_DriverInfSection
 
 
-The DEVPKEY\_Device\_DriverInfSection device property represents the name of the [**INF DDInstall section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) that installs the driver for a device instance.
+The DEVPKEY_Device_DriverInfSection device property represents the name of the [**INF DDInstall section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) that installs the driver for a device instance.
 
 <table>
 <colgroup>
@@ -53,11 +53,11 @@ The DEVPKEY\_Device\_DriverInfSection device property represents the name of the
 Remarks
 -------
 
-Windows sets the value of the PKEY\_Device\_DriverInfSection property.
+Windows sets the value of the PKEY_Device_DriverInfSection property.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of PKEY\_Device\_DriverInfSection.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of PKEY_Device_DriverInfSection.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the PKEY\_Device\_DriverInfSection property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **InfSection** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the PKEY_Device_DriverInfSection property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **InfSection** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
 
 Requirements
 ------------

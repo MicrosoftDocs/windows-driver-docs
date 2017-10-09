@@ -1,6 +1,6 @@
 ---
-title: KSMFT\_CATEGORY\_MULTIPLEXER
-description: KSMFT\_CATEGORY\_MULTIPLEXER
+title: KSMFT_CATEGORY_MULTIPLEXER
+description: KSMFT_CATEGORY_MULTIPLEXER
 ms.assetid: 79849eeb-7e5d-45bb-a0e4-cd6f413aa3dc
 keywords: ["KSMFT_CATEGORY_MULTIPLEXER Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSMFT\_CATEGORY\_MULTIPLEXER
+# KSMFT_CATEGORY_MULTIPLEXER
 
 
-The KSMFT\_CATEGORY\_MULTIPLEXER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [Kernel Streaming](https://msdn.microsoft.com/library/windows/hardware/ff560842) (KS) functional category for a device that combines (*multiplexes*) media streams.
+The KSMFT_CATEGORY_MULTIPLEXER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [Kernel Streaming](https://msdn.microsoft.com/library/windows/hardware/ff560842) (KS) functional category for a device that combines (*multiplexes*) media streams.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSMFT\_CATEGORY\_MULTIPLEXER [device interface class](https://msdn.microsoft
 Remarks
 -------
 
-AVStream drivers that have MFT codec support register instances of this device interface class to indicate to the operating system that the devices support the KSMFT\_CATEGORY\_MULTIPLEXER functional category.
+AVStream drivers that have MFT codec support register instances of this device interface class to indicate to the operating system that the devices support the KSMFT_CATEGORY_MULTIPLEXER functional category.
 
 For more information about device interface classes for AVStream devices with hardware codec support, see [Getting Started with Hardware Codec Support in AVStream](https://msdn.microsoft.com/library/windows/hardware/gg299325).
 

@@ -1,6 +1,6 @@
 ---
-title: GUID\_CLASS\_COMPORT
-description: GUID\_CLASS\_COMPORT
+title: GUID_CLASS_COMPORT
+description: GUID_CLASS_COMPORT
 ms.assetid: 116d05aa-d327-4661-8e59-20134d9c2a1b
 keywords: ["GUID_CLASS_COMPORT Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_CLASS\_COMPORT
+# GUID_CLASS_COMPORT
 
 
-GUID\_CLASS\_COMPORT is an obsolete identifier for the device interface class for devices that support a 16550 UART-compatible hardware interface. Use the [**GUID\_DEVINTERFACE\_COMPORT**](guid-devinterface-comport.md) class identifier for new instances of this class.
+GUID_CLASS_COMPORT is an obsolete identifier for the device interface class for devices that support a 16550 UART-compatible hardware interface. Use the [**GUID_DEVINTERFACE_COMPORT**](guid-devinterface-comport.md) class identifier for new instances of this class.
 
 Requirements
 ------------
@@ -41,7 +41,7 @@ Requirements
 ## See also
 
 
-[**GUID\_DEVINTERFACE\_COMPORT**](guid-devinterface-comport.md)
+[**GUID_DEVINTERFACE_COMPORT**](guid-devinterface-comport.md)
 
  
 

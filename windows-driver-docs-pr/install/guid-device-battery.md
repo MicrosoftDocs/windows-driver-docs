@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVICE\_BATTERY
-description: GUID\_DEVICE\_BATTERY
+title: GUID_DEVICE_BATTERY
+description: GUID_DEVICE_BATTERY
 ms.assetid: 8391b167-0d17-46bf-9320-4fceed54aead
 keywords: ["GUID_DEVICE_BATTERY Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVICE\_BATTERY
+# GUID_DEVICE_BATTERY
 
 
-The GUID\_DEVICE\_BATTERY [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [battery devices](https://msdn.microsoft.com/library/windows/hardware/ff536281).
+The GUID_DEVICE_BATTERY [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [battery devices](https://msdn.microsoft.com/library/windows/hardware/ff536281).
 
 <table>
 <colgroup>

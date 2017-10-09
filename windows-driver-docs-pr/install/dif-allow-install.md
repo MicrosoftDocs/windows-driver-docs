@@ -1,6 +1,6 @@
 ---
-title: DIF\_ALLOW\_INSTALL
-description: DIF\_ALLOW\_INSTALL
+title: DIF_ALLOW_INSTALL
+description: DIF_ALLOW_INSTALL
 ms.assetid: 0bcda90e-f9f1-4965-a08b-d884077a2e8b
 keywords: ["DIF_ALLOW_INSTALL Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DIF\_ALLOW\_INSTALL
+# DIF_ALLOW_INSTALL
 
 
-A DIF\_ALLOW\_INSTALL request asks the installers for a device whether Windows can proceed to install the device.
+A DIF_ALLOW_INSTALL request asks the installers for a device whether Windows can proceed to install the device.
 
 ### When Sent
 
@@ -53,10 +53,10 @@ After selecting a driver for the device but before installing the device.
 Supplies a handle to the [device information set](https://msdn.microsoft.com/library/windows/hardware/ff541247) that contains the device.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Supplies a pointer to an [**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies the device in the device information set.
+Supplies a pointer to an [**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies the device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters ([**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
+There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
 None
@@ -67,13 +67,13 @@ None
 
 ### Installer Return Value
 
-A co-installer can return NO\_ERROR or a Win32 error. A co-installer should not return ERROR\_DI\_POSTPROCESSING\_REQUIRED for this DIF request.
+A co-installer can return NO_ERROR or a Win32 error. A co-installer should not return ERROR_DI_POSTPROCESSING_REQUIRED for this DIF request.
 
-A class installer typically returns ERROR\_DI\_DO\_DEFAULT or a Win32 error code.
+A class installer typically returns ERROR_DI_DO_DEFAULT or a Win32 error code.
 
-Typical Win32 error codes for this DIF request include ERROR\_DI\_DONT\_INSTALL and ERROR\_NON\_WINDOWS\_NT\_DRIVER.
+Typical Win32 error codes for this DIF request include ERROR_DI_DONT_INSTALL and ERROR_NON_WINDOWS_NT_DRIVER.
 
-**Note**  Class installers and co-installers should not freturn ERROR\_REQUIRES\_INTERACTIVE\_WINDOWSTATION since that causes the device installation to fail. If the device installation requires user interaction, class installers and co-installers should support a [finish-install action](https://msdn.microsoft.com/library/windows/hardware/ff544940).
+**Note**  Class installers and co-installers should not freturn ERROR_REQUIRES_INTERACTIVE_WINDOWSTATION since that causes the device installation to fail. If the device installation requires user interaction, class installers and co-installers should support a [finish-install action](https://msdn.microsoft.com/library/windows/hardware/ff544940).
 
  
 
@@ -83,15 +83,15 @@ None
 
 ### Installer Operation
 
-In response to a DIF\_ALLOW\_INSTALL request an installer confirms whether Windows can install the device.
+In response to a DIF_ALLOW_INSTALL request an installer confirms whether Windows can install the device.
 
 An installer can fail this request if it determines that the selected driver is incorrect (for example, if the driver is a Windows 9x-only driver that will not work correctly on NT-based operating systems) or if it determines that a selected driver is known to have bugs.
 
-An installer might fail this request if the DI\_QUIETINSTALL flag is set in the device installation parameters and the installer has to display UI during device installation. However, this failure is rare because an installer can typically supply any UI pages in response to the DIF\_NEWDEVICEWIZARD\_FINISHINSTALL request. In that case, UI does not prevent the installer from succeeding a DIF\_ALLOW\_INSTALL request for which the quiet flag is set. However, if an installer cannot limit its UI to the finish-install case, the installer must fail this DIF request if the DI\_QUIETINSTALL flag is set. An installer might have this restriction, for example, if it calls vendor-supplied code that displays UI.
+An installer might fail this request if the DI_QUIETINSTALL flag is set in the device installation parameters and the installer has to display UI during device installation. However, this failure is rare because an installer can typically supply any UI pages in response to the DIF_NEWDEVICEWIZARD_FINISHINSTALL request. In that case, UI does not prevent the installer from succeeding a DIF_ALLOW_INSTALL request for which the quiet flag is set. However, if an installer cannot limit its UI to the finish-install case, the installer must fail this DIF request if the DI_QUIETINSTALL flag is set. An installer might have this restriction, for example, if it calls vendor-supplied code that displays UI.
 
 If an installer fails this DIF request, Windows stops the installation.
 
-If an installer fails this DIF request and DI\_QUIETINSTALL is not set in the device installation parameters, the installer should display a dialog box with a message that explains why the device is not being installed.
+If an installer fails this DIF request and DI_QUIETINSTALL is not set in the device installation parameters, the installer should display a dialog box with a message that explains why the device is not being installed.
 
 For more information about DIF codes, see [Handling DIF Codes](https://msdn.microsoft.com/library/windows/hardware/ff546094).
 
@@ -118,9 +118,9 @@ Requirements
 ## See also
 
 
-[**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
+[**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
 
-[**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
+[**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
 
  
 

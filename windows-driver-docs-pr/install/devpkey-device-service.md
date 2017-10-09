@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_Service
-description: DEVPKEY\_Device\_Service
+title: DEVPKEY_Device_Service
+description: DEVPKEY_Device_Service
 ms.assetid: 665d4c58-53c0-4f18-9a2f-2798676cb097
 keywords: ["DEVPKEY_Device_Service Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_Service
+# DEVPKEY_Device_Service
 
 
-The DEVPKEY\_Device\_Service device property represents the name of the service that is installed for a device instance.
+The DEVPKEY_Device_Service device property represents the name of the service that is installed for a device instance.
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_Device\_Service device property represents the name of the service 
 Remarks
 -------
 
-The value of DEVPKEY\_Device\_Service is set by the *service-name* entry value that is supplied by the [**INF AddService directive**](https://msdn.microsoft.com/library/windows/hardware/ff546326) in the INF file that installs a service for a device.
+The value of DEVPKEY_Device_Service is set by the *service-name* entry value that is supplied by the [**INF AddService directive**](https://msdn.microsoft.com/library/windows/hardware/ff546326) in the INF file that installs a service for a device.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_Service.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_Service.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_Service property key. Instead, you can use the corresponding SPDRP\_SERVICE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_Service property key. Instead, you can use the corresponding SPDRP_SERVICE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------

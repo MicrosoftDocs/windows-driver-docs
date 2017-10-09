@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_DriverPropPageProvider
-description: DEVPKEY\_Device\_DriverPropPageProvider
+title: DEVPKEY_Device_DriverPropPageProvider
+description: DEVPKEY_Device_DriverPropPageProvider
 ms.assetid: 9dabdba0-e179-467b-b0ad-960033a7ab86
 keywords: ["DEVPKEY_Device_DriverPropPageProvider Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_DriverPropPageProvider
+# DEVPKEY_Device_DriverPropPageProvider
 
 
-The DEVPKEY\_Device\_DriverPropPageProvider device property represents the name of a DLL, and an entry point in the DLL, that is registered as a property page provider for a device instance.
+The DEVPKEY_Device_DriverPropPageProvider device property represents the name of a DLL, and an entry point in the DLL, that is registered as a property page provider for a device instance.
 
 <table>
 <colgroup>
@@ -53,11 +53,11 @@ The DEVPKEY\_Device\_DriverPropPageProvider device property represents the name 
 Remarks
 -------
 
-You can set the value of DEVPKEY\_Device\_DriverPropPageProvider by using an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included the [**INF *DDInstall* section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) of the INF file that installs a device.
+You can set the value of DEVPKEY_Device_DriverPropPageProvider by using an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included the [**INF *DDInstall* section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) of the INF file that installs a device.
 
-You can retrieve the value of DEVPKEY\_Device\_DriverPropPageProvider by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
+You can retrieve the value of DEVPKEY_Device_DriverPropPageProvider by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_DriverPropPageProvider property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **EnumPropPages32** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverPropPageProvider property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **EnumPropPages32** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
 
 Requirements
 ------------

@@ -1,6 +1,6 @@
 ---
-title: CM\_Setup\_DevNode\_Ex
-description: CM\_Setup\_DevNode\_Ex
+title: CM_Setup_DevNode_Ex
+description: CM_Setup_DevNode_Ex
 ms.assetid: 831fdc18-1d5e-4358-8f64-59abb5e7c0e6
 keywords: ["CM_Setup_DevNode_Ex Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# CM\_Setup\_DevNode\_Ex
+# CM_Setup_DevNode_Ex
 
 
  

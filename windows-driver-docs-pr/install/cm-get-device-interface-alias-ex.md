@@ -1,6 +1,6 @@
 ---
-title: CM\_Get\_Device\_Interface\_Alias\_Ex
-description: CM\_Get\_Device\_Interface\_Alias\_Ex
+title: CM_Get_Device_Interface_Alias_Ex
+description: CM_Get_Device_Interface_Alias_Ex
 ms.assetid: 3fc2396c-d6a4-4e54-a960-14b00af15b2c
 keywords: ["CM_Get_Device_Interface_Alias_ExA", "CM_Get_Device_Interface_Alias_ExW", "CM_Get_Device_Interface_Alias_Ex Device and Driver Installation"]
 topic_type:
@@ -12,7 +12,7 @@ api_type:
 - NA
 ---
 
-# CM\_Get\_Device\_Interface\_Alias\_Ex
+# CM_Get_Device_Interface_Alias_Ex
 
 
  

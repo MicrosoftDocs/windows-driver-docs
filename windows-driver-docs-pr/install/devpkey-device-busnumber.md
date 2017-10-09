@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_BusNumber
-description: DEVPKEY\_Device\_BusNumber
+title: DEVPKEY_Device_BusNumber
+description: DEVPKEY_Device_BusNumber
 ms.assetid: 17cbe49a-e10b-4483-b030-c061ced065c3
 keywords: ["DEVPKEY_Device_BusNumber Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_BusNumber
+# DEVPKEY_Device_BusNumber
 
 
-The DEVPKEY\_Device\_BusNumber device property represents the number that identifies the bus instance that a device instance is attached to.
+The DEVPKEY_Device_BusNumber device property represents the number that identifies the bus instance that a device instance is attached to.
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_Device\_BusNumber device property represents the number that identi
 Remarks
 -------
 
-Windows sets the value of DEVPKEY\_Device\_BusNumber to the value of the BusNumber member of the [**PNP\_BUS\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff559608) structure that a bus driver returns in response to an [**IRP\_MN\_QUERY\_BUS\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff551654) request.
+Windows sets the value of DEVPKEY_Device_BusNumber to the value of the BusNumber member of the [**PNP_BUS_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff559608) structure that a bus driver returns in response to an [**IRP_MN_QUERY_BUS_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff551654) request.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_BusNumber.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_BusNumber.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_BusNumber property key. Instead, you can use the corresponding SPDRP\_BUSNUMBER identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_BusNumber property key. Instead, you can use the corresponding SPDRP_BUSNUMBER identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------
@@ -81,9 +81,9 @@ Requirements
 ## See also
 
 
-[**IRP\_MN\_QUERY\_BUS\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff551654)
+[**IRP_MN_QUERY_BUS_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff551654)
 
-[**PNP\_BUS\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff559608)
+[**PNP_BUS_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff559608)
 
 [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
 

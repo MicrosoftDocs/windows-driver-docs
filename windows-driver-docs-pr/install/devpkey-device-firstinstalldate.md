@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_FirstInstallDate
-description: DEVPKEY\_Device\_FirstInstallDate
+title: DEVPKEY_Device_FirstInstallDate
+description: DEVPKEY_Device_FirstInstallDate
 ms.assetid: aedc4f18-51be-4c42-a172-c1fd88cc49b3
 keywords: ["DEVPKEY_Device_FirstInstallDate Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_FirstInstallDate
+# DEVPKEY_Device_FirstInstallDate
 
 
-The DEVPKEY\_Device\_FirstInstallDate device property specifies the time stamp when the device instance was first installed in the system.
+The DEVPKEY_Device_FirstInstallDate device property specifies the time stamp when the device instance was first installed in the system.
 
 <table>
 <colgroup>
@@ -48,13 +48,13 @@ The DEVPKEY\_Device\_FirstInstallDate device property specifies the time stamp w
 Remarks
 -------
 
-Windows sets the value of DEVPKEY\_Device\_FirstInstallDate with the time stamp that specifies when the device instance was first installed in the system.
+Windows sets the value of DEVPKEY_Device_FirstInstallDate with the time stamp that specifies when the device instance was first installed in the system.
 
-**Note**   Unlike the [**DEVPKEY\_Device\_InstallDate**](devpkey-device-installdate.md) property, the value of the DEVPKEY\_Device\_FirstInstallDate property does not change with each successive update of the device driver. For example, a driver that was updated through Windows Update does not change the value of this property,
+**Note**   Unlike the [**DEVPKEY_Device_InstallDate**](devpkey-device-installdate.md) property, the value of the DEVPKEY_Device_FirstInstallDate property does not change with each successive update of the device driver. For example, a driver that was updated through Windows Update does not change the value of this property,
 
  
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_FirstInstallDate property.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_FirstInstallDate property.
 
 Requirements
 ------------

@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_TOPOLOGY
-description: KSCATEGORY\_TOPOLOGY
+title: KSCATEGORY_TOPOLOGY
+description: KSCATEGORY_TOPOLOGY
 ms.assetid: 20c4ccf1-81bb-4209-9842-4de295fe3a00
 keywords: ["KSCATEGORY_TOPOLOGY Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_TOPOLOGY
+# KSCATEGORY_TOPOLOGY
 
 
-The KSCATEGORY\_TOPOLOGY [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for the internal topology of an audio device.
+The KSCATEGORY_TOPOLOGY [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for the internal topology of an audio device.
 
 <table>
 <colgroup>
@@ -46,11 +46,11 @@ The KSCATEGORY\_TOPOLOGY [device interface class](https://msdn.microsoft.com/lib
 Remarks
 -------
 
-Drivers for KS audio adapter devices register instances of KSCATEGORY\_TOPOLOGY to indicate to the operating system that the devices support the KSCATEGORY\_TOPOLOGY functional category.
+Drivers for KS audio adapter devices register instances of KSCATEGORY_TOPOLOGY to indicate to the operating system that the devices support the KSCATEGORY_TOPOLOGY functional category.
 
 For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](https://msdn.microsoft.com/library/windows/hardware/ff536813).
 
-The [AC'97 sample driver](http://go.microsoft.com/fwlink/p/?linkid=256075) that is provided in the WDK enumerates instances of the KSCATEGORY\_TOPOLOGY device interface class.
+The [AC'97 sample driver](http://go.microsoft.com/fwlink/p/?linkid=256075) that is provided in the WDK enumerates instances of the KSCATEGORY_TOPOLOGY device interface class.
 
 The sysfx sample in the WDK registers instances of this device interface class. The sysfx sample is located in the *src\\audio\\sysfx directory* of the WDK.
 

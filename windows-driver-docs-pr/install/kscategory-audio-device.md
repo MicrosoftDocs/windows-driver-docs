@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_AUDIO\_DEVICE
-description: KSCATEGORY\_AUDIO\_DEVICE
+title: KSCATEGORY_AUDIO_DEVICE
+description: KSCATEGORY_AUDIO_DEVICE
 ms.assetid: db31154c-3e0c-4bcb-9928-02f2068f2499
 keywords: ["KSCATEGORY_AUDIO_DEVICE Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_AUDIO\_DEVICE
+# KSCATEGORY_AUDIO_DEVICE
 
 
-The KSCATEGORY\_AUDIO\_DEVICE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) represents a [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that is reserved for exclusive use by the system-supplied [WDM audio components](https://msdn.microsoft.com/library/windows/hardware/ff537039).
+The KSCATEGORY_AUDIO_DEVICE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) represents a [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that is reserved for exclusive use by the system-supplied [WDM audio components](https://msdn.microsoft.com/library/windows/hardware/ff537039).
 
 <table>
 <colgroup>

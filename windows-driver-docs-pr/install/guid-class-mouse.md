@@ -1,6 +1,6 @@
 ---
-title: GUID\_CLASS\_MOUSE
-description: GUID\_CLASS\_MOUSE
+title: GUID_CLASS_MOUSE
+description: GUID_CLASS_MOUSE
 ms.assetid: 3b6578c7-0462-4fff-bd09-b9c768676ceb
 keywords: ["GUID_CLASS_MOUSE Device and Driver Installation"]
 topic_type:
@@ -13,15 +13,15 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_CLASS\_MOUSE
+# GUID_CLASS_MOUSE
 
 
-GUID\_CLASS\_MOUSE is an obsolete identifier for the [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) for mouse devices. Starting with Microsoft Windows 2000, use the [**GUID\_DEVINTERFACE\_MOUSE**](guid-devinterface-mouse.md) class identifier for new instances of this class.
+GUID_CLASS_MOUSE is an obsolete identifier for the [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) for mouse devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_MOUSE**](guid-devinterface-mouse.md) class identifier for new instances of this class.
 
 Remarks
 -------
 
-The HID samples that are provided in the WDK include the mouse class driver. The mouse class driver uses GUID\_CLASS\_MOUSE to register instances of this device interface class.
+The HID samples that are provided in the WDK include the mouse class driver. The mouse class driver uses GUID_CLASS_MOUSE to register instances of this device interface class.
 
 Requirements
 ------------
@@ -46,7 +46,7 @@ Requirements
 ## See also
 
 
-[**GUID\_DEVINTERFACE\_MOUSE**](guid-devinterface-mouse.md)
+[**GUID_DEVINTERFACE_MOUSE**](guid-devinterface-mouse.md)
 
  
 

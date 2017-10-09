@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DrvPkg\_DetailedDescription
-description: DEVPKEY\_DrvPkg\_DetailedDescription
+title: DEVPKEY_DrvPkg_DetailedDescription
+description: DEVPKEY_DrvPkg_DetailedDescription
 ms.assetid: ee9080d1-8c66-42b3-af48-cb1fbfc332e2
 keywords: ["DEVPKEY_DrvPkg_DetailedDescription Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DrvPkg\_DetailedDescription
+# DEVPKEY_DrvPkg_DetailedDescription
 
 
-The DEVPKEY\_DrvPkg\_DetailedDescription device property represents a detailed description of the capabilities of a device instance.
+The DEVPKEY_DrvPkg_DetailedDescription device property represents a detailed description of the capabilities of a device instance.
 
 <table>
 <colgroup>
@@ -63,9 +63,9 @@ The detailed description string is in XML format. XML format makes it possible f
 <a href="" id="paragraph-tag"></a>Paragraph tag  
 &lt;p&gt;
 
-You can set the value of DEVPKEY\_DrvPkg\_DetailedDescription by an [**INF AddProperty directive**](https://msdn.microsoft.com/library/windows/hardware/ff546318) that is included in the [**INF *DDInstall* section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) of the INF file that installs the device. You can retrieve the value of DEVPKEY\_DrvPkg\_DetailedDescription by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
+You can set the value of DEVPKEY_DrvPkg_DetailedDescription by an [**INF AddProperty directive**](https://msdn.microsoft.com/library/windows/hardware/ff546318) that is included in the [**INF *DDInstall* section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) of the INF file that installs the device. You can retrieve the value of DEVPKEY_DrvPkg_DetailedDescription by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
 
-The following is an example of how to use an INF **AddProperty** directive to set the value of DEVPKEY\_DrvPkg\_DetailedDescription for a device instance that is installed by an INF *DDInstall* section "SampleDDInstallSection":
+The following is an example of how to use an INF **AddProperty** directive to set the value of DEVPKEY_DrvPkg_DetailedDescription for a device instance that is installed by an INF *DDInstall* section "SampleDDInstallSection":
 
 ```
 [SampleDDinstallSection]

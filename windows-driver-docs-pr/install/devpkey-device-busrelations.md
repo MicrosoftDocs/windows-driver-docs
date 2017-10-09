@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_BusRelations
-description: DEVPKEY\_Device\_BusRelations
+title: DEVPKEY_Device_BusRelations
+description: DEVPKEY_Device_BusRelations
 ms.assetid: 590cbf77-3cee-4c74-bad1-ca237986cff0
 keywords: ["DEVPKEY_Device_BusRelations Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_BusRelations
+# DEVPKEY_Device_BusRelations
 
 
-The DEVPKEY\_Device\_BusRelations device property represents the [**bus relations**](https://msdn.microsoft.com/library/windows/hardware/ff551670) for a device instance.
+The DEVPKEY_Device_BusRelations device property represents the [**bus relations**](https://msdn.microsoft.com/library/windows/hardware/ff551670) for a device instance.
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ The DEVPKEY\_Device\_BusRelations device property represents the [**bus relation
 Remarks
 -------
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_BusRelations.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_BusRelations.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not directly support this property. For information about how to retrieve device relations properties on these earlier versions of Windows, see [Retrieving Device Relations](https://msdn.microsoft.com/library/windows/hardware/ff550630).
 

@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVINTERFACE\_MODEM
-description: GUID\_DEVINTERFACE\_MODEM
+title: GUID_DEVINTERFACE_MODEM
+description: GUID_DEVINTERFACE_MODEM
 ms.assetid: 80f5c063-8b22-422f-8102-4ac1e62241c8
 keywords: ["GUID_DEVINTERFACE_MODEM Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVINTERFACE\_MODEM
+# GUID_DEVINTERFACE_MODEM
 
 
-The GUID\_DEVINTERFACE\_MODEM [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [modem devices](https://msdn.microsoft.com/library/windows/hardware/ff542573).
+The GUID_DEVINTERFACE_MODEM [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [modem devices](https://msdn.microsoft.com/library/windows/hardware/ff542573).
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ Remarks
 
 Drivers for modem devices register instances of this device interface class to notify the operating system and applications of the presence of modem devices.
 
-GUID\_DEVINTERFACE\_MODEM in *Ntddmodm.h* will be defined correctly only if the correct versions of the INITGUID and DEFINE\_GUID macros are defined before the inclusion of *Ntddmodm.h*. The DEFINE\_GUID macro is defined in the *Guiddef.h*. To make sure that INITGUID, DEFINE\_GUID, and GUID\_DEVINTERFACE\_MODEM are correctly defined, include the following code in a header file:
+GUID_DEVINTERFACE_MODEM in *Ntddmodm.h* will be defined correctly only if the correct versions of the INITGUID and DEFINE_GUID macros are defined before the inclusion of *Ntddmodm.h*. The DEFINE_GUID macro is defined in the *Guiddef.h*. To make sure that INITGUID, DEFINE_GUID, and GUID_DEVINTERFACE_MODEM are correctly defined, include the following code in a header file:
 
 ```
 #ifndef INITGUID
@@ -67,7 +67,7 @@ For information about modem devices, see [Modem Devices Design Guide](https://ms
 
 For an example of using this device interface class, see the [FakeModem - Unimodem controller-less modem sample driver](http://go.microsoft.com/fwlink/p/?linkid=256110) sample that is provided in the WDK.
 
-[**GUID\_CLASS\_MODEM**](guid-class-modem.md) is an obsolete identifier for this device interface class; for new instances of this class, use GUID\_DEVINTERFACE\_MODEM instead.
+[**GUID_CLASS_MODEM**](guid-class-modem.md) is an obsolete identifier for this device interface class; for new instances of this class, use GUID_DEVINTERFACE_MODEM instead.
 
 Requirements
 ------------
@@ -92,7 +92,7 @@ Requirements
 ## See also
 
 
-[**GUID\_CLASS\_MODEM**](guid-class-modem.md)
+[**GUID_CLASS_MODEM**](guid-class-modem.md)
 
  
 

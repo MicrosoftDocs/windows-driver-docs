@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVINTERFACE\_NET
-description: GUID\_DEVINTERFACE\_NET
+title: GUID_DEVINTERFACE_NET
+description: GUID_DEVINTERFACE_NET
 ms.assetid: e1cdda95-1915-4bbc-86e9-dff99b7fcc7b
 keywords: ["GUID_DEVINTERFACE_NET Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVINTERFACE\_NET
+# GUID_DEVINTERFACE_NET
 
 
-The GUID\_DEVINTERFACE\_NET [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [network devices](https://msdn.microsoft.com/library/windows/hardware/ff568356).
+The GUID_DEVINTERFACE_NET [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [network devices](https://msdn.microsoft.com/library/windows/hardware/ff568356).
 
 <table>
 <colgroup>

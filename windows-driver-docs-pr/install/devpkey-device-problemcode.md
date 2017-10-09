@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_ProblemCode
-description: DEVPKEY\_Device\_ProblemCode
+title: DEVPKEY_Device_ProblemCode
+description: DEVPKEY_Device_ProblemCode
 ms.assetid: 545fb6f7-660e-4df8-80cd-48b36910a518
 keywords: ["DEVPKEY_Device_ProblemCode Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_ProblemCode
+# DEVPKEY_Device_ProblemCode
 
 
-The DEVPKEY\_Device\_ProblemCode device property represents the problem code for a device instance.
+The DEVPKEY_Device_ProblemCode device property represents the problem code for a device instance.
 
 <table>
 <colgroup>
@@ -48,9 +48,9 @@ The DEVPKEY\_Device\_ProblemCode device property represents the problem code for
 Remarks
 -------
 
-The value of DEVPKEY\_Device\_ProblemCode is one of the CM\_PROB\_*Xxx* problem codes that are defined in Cfg.h.
+The value of DEVPKEY_Device_ProblemCode is one of the CM_PROB_*Xxx* problem codes that are defined in Cfg.h.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_ProblemCode.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_ProblemCode.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not directly support this property. For information about how to access the problem code for a device instance on these earlier versions of Windows, see [Retrieving the Status and Problem Code for a Device Instance](https://msdn.microsoft.com/library/windows/hardware/ff550651).
 
@@ -77,7 +77,7 @@ Requirements
 ## See also
 
 
-[**CM\_Get\_DevNode\_Status**](https://msdn.microsoft.com/library/windows/hardware/ff538514)
+[**CM_Get_DevNode_Status**](https://msdn.microsoft.com/library/windows/hardware/ff538514)
 
 [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
 

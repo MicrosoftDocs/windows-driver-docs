@@ -1,6 +1,6 @@
 ---
-title: DEVPROP\_TYPE\_BOOLEAN
-description: In Windows Vista and later versions of Windows, the DEVPROP\_TYPE\_BOOLEAN property type represents the base-data-type identifier that indicates that the data type is a DEVPROP\_BOOLEAN-typed Boolean value.
+title: DEVPROP_TYPE_BOOLEAN
+description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_BOOLEAN property type represents the base-data-type identifier that indicates that the data type is a DEVPROP_BOOLEAN-typed Boolean value.
 ms.assetid: f0e960b7-be71-4117-b978-5877e5bf771f
 keywords: ["DEVPROP_TYPE_BOOLEAN Device and Driver Installation"]
 topic_type:
@@ -13,15 +13,15 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPROP\_TYPE\_BOOLEAN
+# DEVPROP_TYPE_BOOLEAN
 
 
-In Windows Vista and later versions of Windows, the DEVPROP\_TYPE\_BOOLEAN property type represents the base-data-type identifier that indicates that the data type is a DEVPROP\_BOOLEAN-typed Boolean value.
+In Windows Vista and later versions of Windows, the DEVPROP_TYPE_BOOLEAN property type represents the base-data-type identifier that indicates that the data type is a DEVPROP_BOOLEAN-typed Boolean value.
 
 Remarks
 -------
 
-The DEVPROP\_BOOLEAN data type and valid Boolean values are defined as follows:
+The DEVPROP_BOOLEAN data type and valid Boolean values are defined as follows:
 
 ``` syntax
 typedef CHAR DEVPROP_BOOLEAN, *PDEVPROP_BOOLEAN;
@@ -29,13 +29,13 @@ typedef CHAR DEVPROP_BOOLEAN, *PDEVPROP_BOOLEAN;
 #define DEVPROP_FALSE ((DEVPROP_BOOLEAN) 0)
 ```
 
-DEVPROP\_TYPE\_BOOLEAN can be combined only with the [**DEVPROP\_TYPEMOD\_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
+DEVPROP_TYPE_BOOLEAN can be combined only with the [**DEVPROP_TYPEMOD_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
 
 ### Setting a Property of this Type
 
-To set a property whose base data type is DEVPROP\_TYPE\_BOOLEAN, call the corresponding SetupDiSet*Xxx* property function and set the function input parameters as follows:
+To set a property whose base data type is DEVPROP_TYPE_BOOLEAN, call the corresponding SetupDiSet*Xxx* property function and set the function input parameters as follows:
 
--   Set the *PropertyType* parameter to DEVPROP\_TYPE\_BOOLEAN, set the *PropertyBuffer* parameter to a pointer to a buffer that contains a DEVPROP\_FALSE or DEVPROP\_TRUE value, and set the *PropertyBufferSize* parameter to `sizeof(DEVPROP_BOOLEAN)`.
+-   Set the *PropertyType* parameter to DEVPROP_TYPE_BOOLEAN, set the *PropertyBuffer* parameter to a pointer to a buffer that contains a DEVPROP_FALSE or DEVPROP_TRUE value, and set the *PropertyBufferSize* parameter to `sizeof(DEVPROP_BOOLEAN)`.
 
 -   Set the other function input parameters as appropriate to set the property.
 

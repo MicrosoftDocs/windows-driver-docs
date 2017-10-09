@@ -1,6 +1,6 @@
 ---
-title: DEVPROP\_TYPE\_SBYTE
-description: In Windows Vista and later versions of Windows, the DEVPROP\_TYPE\_BYTE identifier represents the base-data-type identifier that indicates the data type is a SBYTE-typed signed integer.
+title: DEVPROP_TYPE_SBYTE
+description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_BYTE identifier represents the base-data-type identifier that indicates the data type is a SBYTE-typed signed integer.
 ms.assetid: d2c503aa-4427-4745-b3c2-57b6ebd0e93c
 keywords: ["DEVPROP_TYPE_SBYTE Device and Driver Installation"]
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPROP\_TYPE\_SBYTE
+# DEVPROP_TYPE_SBYTE
 
 
-In Windows Vista and later versions of Windows, the DEVPROP\_TYPE\_BYTE identifier represents the base-data-type identifier that indicates the data type is a SBYTE-typed signed integer.
+In Windows Vista and later versions of Windows, the DEVPROP_TYPE_BYTE identifier represents the base-data-type identifier that indicates the data type is a SBYTE-typed signed integer.
 
 Remarks
 -------
 
-DEVPROP\_TYPE\_SBYTE can be combined only with the [**DEVPROP\_TYPEMOD\_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
+DEVPROP_TYPE_SBYTE can be combined only with the [**DEVPROP_TYPEMOD_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
 
 **Setting a Property of this Type**
 
-To set a property whose data type is DEVPROP\_TYPE\_BYTE, call the corresponding **SetupDiSet*Xxx*** property function, and set the function parameters as follows:
+To set a property whose data type is DEVPROP_TYPE_BYTE, call the corresponding **SetupDiSet*Xxx*** property function, and set the function parameters as follows:
 
--   Set the *PropertyType* parameter to DEVPROP\_TYPE\_BYTE, set the *PropertyBuffer* parameter to a pointer to a buffer that can contain at least one BYTE value, and set the *PropertyBufferSize* parameter to **sizeof(**BYTE**)**.
+-   Set the *PropertyType* parameter to DEVPROP_TYPE_BYTE, set the *PropertyBuffer* parameter to a pointer to a buffer that can contain at least one BYTE value, and set the *PropertyBufferSize* parameter to **sizeof(**BYTE**)**.
 
 -   Set the other function input parameters as appropriate to set the property.
 

@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_Children
-description: DEVPKEY\_Device\_Children
+title: DEVPKEY_Device_Children
+description: DEVPKEY_Device_Children
 ms.assetid: bdcc60e3-0c27-4f2c-9c91-a5282f3d4614
 keywords: ["DEVPKEY_Device_Children Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_Children
+# DEVPKEY_Device_Children
 
 
-The DEVPKEY\_Device\_Children device property represents a list of the device instance IDs for the devices that are children of a device instance.
+The DEVPKEY_Device_Children device property represents a list of the device instance IDs for the devices that are children of a device instance.
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ The DEVPKEY\_Device\_Children device property represents a list of the device in
 Remarks
 -------
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_Children.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_Children.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not directly support this property. For information about how to retrieve device relations properties on these earlier versions of Windows, see [Retrieving Device Relations](https://msdn.microsoft.com/library/windows/hardware/ff550630).
 

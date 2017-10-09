@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_CROSSBAR
-description: KSCATEGORY\_CROSSBAR
+title: KSCATEGORY_CROSSBAR
+description: KSCATEGORY_CROSSBAR
 ms.assetid: 0a5edfd5-ad50-4402-8f6d-d6c5018d1ab2
 keywords: ["KSCATEGORY_CROSSBAR Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_CROSSBAR
+# KSCATEGORY_CROSSBAR
 
 
-The KSCATEGORY\_CROSSBAR [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a crossbar device that routes video and audio streams.
+The KSCATEGORY_CROSSBAR [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a crossbar device that routes video and audio streams.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSCATEGORY\_CROSSBAR [device interface class](https://msdn.microsoft.com/lib
 Remarks
 -------
 
-Drivers for KS devices register instances of KSCATEGORY\_CROSSBAR to indicate to the operating system that the devices support the KSCATEGORY\_CROSSBAR functional category.
+Drivers for KS devices register instances of KSCATEGORY_CROSSBAR to indicate to the operating system that the devices support the KSCATEGORY_CROSSBAR functional category.
 
 For an example of how to register this functional category in an INF file, see the *Bdan.inf* INF file that is included with the software tuner sample in the *src\\swtuner\\algtuner* directory of the WDK.
 

@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_NAME (Device Instance)
-description: DEVPKEY\_NAME (Device Instance)
+title: DEVPKEY_NAME (Device Instance)
+description: DEVPKEY_NAME (Device Instance)
 ms.assetid: 4968a215-7e22-4d17-938c-4aa5289b2803
 keywords: ["DEVPKEY_NAME (Device Instance) Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_NAME (Device Instance)
+# DEVPKEY_NAME (Device Instance)
 
 
-The DEVPKEY\_NAME device property represents the name of a device instance.
+The DEVPKEY_NAME device property represents the name of a device instance.
 
 <table>
 <colgroup>
@@ -48,13 +48,13 @@ The DEVPKEY\_NAME device property represents the name of a device instance.
 Remarks
 -------
 
-The value of DEVPKEY\_NAME device should be used to identify a device instance to an end-user in a user interface item.
+The value of DEVPKEY_NAME device should be used to identify a device instance to an end-user in a user interface item.
 
-The retrieved property value is the same as the value of the [**DEVPKEY\_Device\_FriendlyName**](devpkey-device-friendlyname.md) device property, if **DEVPKEY\_Device\_FriendlyName** is set. Otherwise, the value of DEVPKEY\_NAME is same as the value of the [**DEVPKEY\_Device\_DeviceDesc**](devpkey-device-devicedesc.md) device property.
+The retrieved property value is the same as the value of the [**DEVPKEY_Device_FriendlyName**](devpkey-device-friendlyname.md) device property, if **DEVPKEY_Device_FriendlyName** is set. Otherwise, the value of DEVPKEY_NAME is same as the value of the [**DEVPKEY_Device_DeviceDesc**](devpkey-device-devicedesc.md) device property.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_NAME property.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_NAME property.
 
-Windows Server 2003, Windows XP, and Windows 2000 do not directly support a corresponding name property. However, these earlier versions of Windows do support properties that correspond to DEVPKEY\_Device\_FriendlyName and DEVPKEY\_Device\_DeviceDesc.
+Windows Server 2003, Windows XP, and Windows 2000 do not directly support a corresponding name property. However, these earlier versions of Windows do support properties that correspond to DEVPKEY_Device_FriendlyName and DEVPKEY_Device_DeviceDesc.
 
 Requirements
 ------------
@@ -79,9 +79,9 @@ Requirements
 ## See also
 
 
-[**DEVPKEY\_Device\_DeviceDesc**](devpkey-device-devicedesc.md)
+[**DEVPKEY_Device_DeviceDesc**](devpkey-device-devicedesc.md)
 
-[**DEVPKEY\_Device\_FriendlyName**](devpkey-device-friendlyname.md)
+[**DEVPKEY_Device_FriendlyName**](devpkey-device-friendlyname.md)
 
 [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
 

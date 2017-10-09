@@ -1,6 +1,6 @@
 ---
-title: CM\_Create\_DevNode
-description: CM\_Create\_DevNode
+title: CM_Create_DevNode
+description: CM_Create_DevNode
 ms.assetid: 38f7ac6f-10c2-40cf-b0cc-3b593cb774b5
 keywords: ["CM_Create_DevNodeA", "CM_Create_DevNodeW", "CM_Create_DevNode Device and Driver Installation"]
 topic_type:
@@ -12,7 +12,7 @@ api_type:
 - NA
 ---
 
-# CM\_Create\_DevNode
+# CM_Create_DevNode
 
 
 ## <a href="" id="ddk-cm-create-devnode-dr"></a>

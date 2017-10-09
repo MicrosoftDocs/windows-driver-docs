@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DeviceClass\_Icon
-description: DEVPKEY\_DeviceClass\_Icon
+title: DEVPKEY_DeviceClass_Icon
+description: DEVPKEY_DeviceClass_Icon
 ms.assetid: 036b6daf-b5de-4aa0-b7e3-ba0430107938
 keywords: ["DEVPKEY_DeviceClass_Icon Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DeviceClass\_Icon
+# DEVPKEY_DeviceClass_Icon
 
 
-The DEVPKEY\_DeviceClass\_Icon device property represents the icon for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
+The DEVPKEY_DeviceClass_Icon device property represents the icon for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
 
 <table>
 <colgroup>
@@ -48,13 +48,13 @@ The DEVPKEY\_DeviceClass\_Icon device property represents the icon for a [device
 Remarks
 -------
 
-The value of DEVPKEY\_DeviceClass\_Icon is set by an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF ClassInstall32 section**](https://msdn.microsoft.com/library/windows/hardware/ff546335) that installs the class. To set the value of DEVPKEY\_DeviceClass\_Icon, use an **AddReg** directive to set the **Icon** registry entry value for the class.
+The value of DEVPKEY_DeviceClass_Icon is set by an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF ClassInstall32 section**](https://msdn.microsoft.com/library/windows/hardware/ff546335) that installs the class. To set the value of DEVPKEY_DeviceClass_Icon, use an **AddReg** directive to set the **Icon** registry entry value for the class.
 
 The **Icon** entry value is an integer number in string format. If the number is negative, the absolute value of the number is the resource identifier of the icon in setupapi.dll. If the number is positive, the number is the resource identifier of the icon in the class installer DLL, if there is a class installer, or the class property page provider, if there is no class installer and there is a property page provider. A value of zero is not valid.
 
-You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY\_DeviceClass\_Icon.
+You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY_DeviceClass_Icon.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_DeviceClass\_Icon property key. For information about how to access the mini-icon for a device setup class on Windows Server 2003, Windows XP, and Windows 2000, see [Accessing Icon Properties of a Device Setup Class](https://msdn.microsoft.com/library/windows/hardware/ff537746).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_Icon property key. For information about how to access the mini-icon for a device setup class on Windows Server 2003, Windows XP, and Windows 2000, see [Accessing Icon Properties of a Device Setup Class](https://msdn.microsoft.com/library/windows/hardware/ff537746).
 
 Requirements
 ------------

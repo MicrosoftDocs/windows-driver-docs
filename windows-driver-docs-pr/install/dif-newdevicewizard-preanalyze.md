@@ -1,6 +1,6 @@
 ---
-title: DIF\_NEWDEVICEWIZARD\_PREANALYZE
-description: DIF\_NEWDEVICEWIZARD\_PREANALYZE
+title: DIF_NEWDEVICEWIZARD_PREANALYZE
+description: DIF_NEWDEVICEWIZARD_PREANALYZE
 ms.assetid: 6731a916-488a-4fb2-84d9-4b3cb9b8b160
 keywords: ["DIF_NEWDEVICEWIZARD_PREANALYZE Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DIF\_NEWDEVICEWIZARD\_PREANALYZE
+# DIF_NEWDEVICEWIZARD_PREANALYZE
 
 
-A DIF\_NEWDEVICEWIZARD\_PREANALYZE request allows an installer to supply wizard pages that Windows displays to the user before it displays the analyze page. This request is only used during manual installation of non-PnP devices.
+A DIF_NEWDEVICEWIZARD_PREANALYZE request allows an installer to supply wizard pages that Windows displays to the user before it displays the analyze page. This request is only used during manual installation of non-PnP devices.
 
 ### When Sent
 
@@ -53,13 +53,13 @@ After the user has selected a driver, but before Windows registers the device th
 Supplies a handle to the [device information set](https://msdn.microsoft.com/library/windows/hardware/ff541247) that contains the device.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Supplies a pointer to an [**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies the device in the device information set.
+Supplies a pointer to an [**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies the device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters ([**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
+There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP\_NEWDEVICEWIZARD\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553305) structure is associated with the *DeviceInfoData*.
+An [**SP_NEWDEVICEWIZARD_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553305) structure is associated with the *DeviceInfoData*.
 
 ### Installer Output
 
@@ -67,13 +67,13 @@ An [**SP\_NEWDEVICEWIZARD\_DATA**](https://msdn.microsoft.com/library/windows/ha
 An installer can modify the flags in the device installation parameters. Windows does not check the flags upon completion of this DIF request. However, it checks them later in the installation process.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An installer can modify the [**SP\_NEWDEVICEWIZARD\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553305) to supply custom wizard page(s).
+An installer can modify the [**SP_NEWDEVICEWIZARD_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553305) to supply custom wizard page(s).
 
 ### Installer Return Value
 
-If a co-installer does not handle this DIF request it returns NO\_ERROR from its preprocessing pass. If a co-installer handles this request it can return NO\_ERROR, ERROR\_DI\_POSTPROCESSING\_REQUIRED, or a Win32 error code.
+If a co-installer does not handle this DIF request it returns NO_ERROR from its preprocessing pass. If a co-installer handles this request it can return NO_ERROR, ERROR_DI_POSTPROCESSING_REQUIRED, or a Win32 error code.
 
-A class installer returns NO\_ERROR if it successfully supplies page(s). Otherwise, a class installer returns ERROR\_DI\_DO\_DEFAULT or a Win32 error code.
+A class installer returns NO_ERROR if it successfully supplies page(s). Otherwise, a class installer returns ERROR_DI_DO_DEFAULT or a Win32 error code.
 
 ### Default DIF Code Handler
 
@@ -81,11 +81,11 @@ None
 
 ### Installer Operation
 
-A DIF\_NEWDEVICEWIZARD\_PREANALYZE request allows an installer to supply wizard pages that Windows displays to the user before it displays the analyze page. These pages can be thought of as "postselect" pages. This request is only used during manual installation of non-PnP devices.
+A DIF_NEWDEVICEWIZARD_PREANALYZE request allows an installer to supply wizard pages that Windows displays to the user before it displays the analyze page. These pages can be thought of as "postselect" pages. This request is only used during manual installation of non-PnP devices.
 
 An installer might use a custom preanalyze page, for example, to choose a COM port after a modem device is selected.
 
-If an installer adds custom preselect page(s), the installer should first check whether **NumDynamicPages** in the class install parameters has reached MAX\_INSTALLWIZARD\_DYNAPAGES.
+If an installer adds custom preselect page(s), the installer should first check whether **NumDynamicPages** in the class install parameters has reached MAX_INSTALLWIZARD_DYNAPAGES.
 
 An installer should supply a Wizard 97 header title and a header subtitle in the PROPSHEETPAGE structure for a custom wizard page. An installer should not replace the system-supplied wizard title. See the Microsoft Windows SDK for documentation of the PROPSHEETPAGE structure and for more information about property pages.
 
@@ -114,17 +114,17 @@ Requirements
 ## See also
 
 
-[**DIF\_NEWDEVICEWIZARD\_PRESELECT**](dif-newdevicewizard-preselect.md)
+[**DIF_NEWDEVICEWIZARD_PRESELECT**](dif-newdevicewizard-preselect.md)
 
-[**DIF\_NEWDEVICEWIZARD\_POSTANALYZE**](dif-newdevicewizard-postanalyze.md)
+[**DIF_NEWDEVICEWIZARD_POSTANALYZE**](dif-newdevicewizard-postanalyze.md)
 
-[**DIF\_NEWDEVICEWIZARD\_SELECT**](dif-newdevicewizard-select.md)
+[**DIF_NEWDEVICEWIZARD_SELECT**](dif-newdevicewizard-select.md)
 
-[**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
+[**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
 
-[**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
+[**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
 
-[**SP\_NEWDEVICEWIZARD\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553305)
+[**SP_NEWDEVICEWIZARD_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553305)
 
  
 

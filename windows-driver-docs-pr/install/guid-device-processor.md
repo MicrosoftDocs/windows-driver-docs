@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVICE\_PROCESSOR
-description: GUID\_DEVICE\_PROCESSOR
+title: GUID_DEVICE_PROCESSOR
+description: GUID_DEVICE_PROCESSOR
 ms.assetid: 47a70d17-5b30-4bae-9f24-f77f3e26e7fc
 keywords: ["GUID_DEVICE_PROCESSOR Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVICE\_PROCESSOR
+# GUID_DEVICE_PROCESSOR
 
 
-The GUID\_DEVICE\_PROCESSOR [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for Advanced Configuration and Power Interface (ACPI) processor devices.
+The GUID_DEVICE_PROCESSOR [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for Advanced Configuration and Power Interface (ACPI) processor devices.
 
 <table>
 <colgroup>

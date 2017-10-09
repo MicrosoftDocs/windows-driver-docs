@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_HardwareIds
-description: DEVPKEY\_Device\_HardwareIds
+title: DEVPKEY_Device_HardwareIds
+description: DEVPKEY_Device_HardwareIds
 ms.assetid: 4bfd50b3-027f-4f79-8bff-d0c92c1b2386
 keywords: ["DEVPKEY_Device_HardwareIds Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_HardwareIds
+# DEVPKEY_Device_HardwareIds
 
 
-The DEVPKEY\_DEVICE\_HardwareIds device property represents the list of hardware identifiers for a device instance.
+The DEVPKEY_DEVICE_HardwareIds device property represents the list of hardware identifiers for a device instance.
 
 <table>
 <colgroup>
@@ -56,11 +56,11 @@ The DEVPKEY\_DEVICE\_HardwareIds device property represents the list of hardware
 Remarks
 -------
 
-The value of DEVPKEY\_DEVICE\_HardwareIds is set by the *hw-id* entry values for a device that are supplied by the [**INF *Models* section**](https://msdn.microsoft.com/library/windows/hardware/ff547456) of the INF file that installs a device.
+The value of DEVPKEY_DEVICE_HardwareIds is set by the *hw-id* entry values for a device that are supplied by the [**INF *Models* section**](https://msdn.microsoft.com/library/windows/hardware/ff547456) of the INF file that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_DEVICE\_HardwareIds.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_DEVICE_HardwareIds.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_DEVICE\_HardwareIds property key. Instead, you can use the corresponding SPDRP\_HARDWAREID identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DEVICE_HardwareIds property key. Instead, you can use the corresponding SPDRP_HARDWAREID identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------

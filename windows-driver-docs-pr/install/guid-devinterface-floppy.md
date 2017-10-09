@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVINTERFACE\_FLOPPY
-description: GUID\_DEVINTERFACE\_FLOPPY
+title: GUID_DEVINTERFACE_FLOPPY
+description: GUID_DEVINTERFACE_FLOPPY
 ms.assetid: 07d47168-a179-40ef-843b-c1efa6acb395
 keywords: ["GUID_DEVINTERFACE_FLOPPY Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVINTERFACE\_FLOPPY
+# GUID_DEVINTERFACE_FLOPPY
 
 
-The GUID\_DEVINTERFACE\_FLOPPY [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for floppy disk [storage devices](https://msdn.microsoft.com/library/windows/hardware/ff566969).
+The GUID_DEVINTERFACE_FLOPPY [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for floppy disk [storage devices](https://msdn.microsoft.com/library/windows/hardware/ff566969).
 
 <table>
 <colgroup>
@@ -46,9 +46,9 @@ The GUID\_DEVINTERFACE\_FLOPPY [device interface class](https://msdn.microsoft.c
 Remarks
 -------
 
-The system-supplied storage class driver for floppy disk storage devices registers an instance of GUID\_DEVINTERFACE\_FLOPPY for a floppy disk storage device.
+The system-supplied storage class driver for floppy disk storage devices registers an instance of GUID_DEVINTERFACE_FLOPPY for a floppy disk storage device.
 
-The storage [samples](http://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include a [floppy driver](http://go.microsoft.com/fwlink/p/?linkid=256192) sample that uses the obsolete identifier [**FloppyClassGuid**](floppyclassguid.md) to register an instance of the GUID\_DEVINTERFACE\_FLOPPY device interface class.
+The storage [samples](http://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include a [floppy driver](http://go.microsoft.com/fwlink/p/?linkid=256192) sample that uses the obsolete identifier [**FloppyClassGuid**](floppyclassguid.md) to register an instance of the GUID_DEVINTERFACE_FLOPPY device interface class.
 
 For information about storage drivers, see [Storage Drivers](https://msdn.microsoft.com/library/windows/hardware/ff566976).
 

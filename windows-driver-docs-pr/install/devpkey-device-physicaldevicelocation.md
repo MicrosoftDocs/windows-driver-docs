@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_PhysicalDeviceLocation
-description: DEVPKEY\_Device\_PhysicalDeviceLocation
+title: DEVPKEY_Device_PhysicalDeviceLocation
+description: DEVPKEY_Device_PhysicalDeviceLocation
 ms.assetid: DEF01D17-7E32-45BB-8846-D3B3B60506EB
 keywords: ["DEVPKEY_Device_PhysicalDeviceLocation Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_PhysicalDeviceLocation
+# DEVPKEY_Device_PhysicalDeviceLocation
 
 
-The DEVPKEY\_Device\_PhysicalDeviceLocation device property encapsulates the physical device location information provided by a device's firmware to Windows.
+The DEVPKEY_Device_PhysicalDeviceLocation device property encapsulates the physical device location information provided by a device's firmware to Windows.
 
 <table>
 <colgroup>
@@ -52,9 +52,9 @@ The DEVPKEY\_Device\_PhysicalDeviceLocation device property encapsulates the phy
 Remarks
 -------
 
-Windows sets the value of DEVPKEY\_Device\_PhysicalDeviceLocation with the physical device location information. The format of the information is defined in the ACPI 4.0a Specification, section 6.1.6.
+Windows sets the value of DEVPKEY_Device_PhysicalDeviceLocation with the physical device location information. The format of the information is defined in the ACPI 4.0a Specification, section 6.1.6.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_PhysicalDeviceLocation.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_PhysicalDeviceLocation.
 
 Requirements
 ------------

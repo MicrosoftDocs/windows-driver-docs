@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DrvPkg\_DocumentationLink
-description: DEVPKEY\_DrvPkg\_DocumentationLink
+title: DEVPKEY_DrvPkg_DocumentationLink
+description: DEVPKEY_DrvPkg_DocumentationLink
 ms.assetid: a4ae1f6c-edf5-4490-8f92-6d7a24040304
 keywords: ["DEVPKEY_DrvPkg_DocumentationLink Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DrvPkg\_DocumentationLink
+# DEVPKEY_DrvPkg_DocumentationLink
 
 
-The DEVPKEY\_DrvPkg\_DocumentationLink device property represents a URL to the documentation for a device instance.
+The DEVPKEY_DrvPkg_DocumentationLink device property represents a URL to the documentation for a device instance.
 
 <table>
 <colgroup>
@@ -56,9 +56,9 @@ The URL can contain parameters. For example, the following URL contains a **prod
 http://www.microsoft.com/redirect?prod=DSC530&rev=34&type=docs
 ```
 
-Microsoft does not provide Web hosting or redirection for a webpage that is specified by a DEVPKEY\_DrvPkg\_DocumentationLink property value. The URL must link to a webpage that is maintained by the [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) provider.
+Microsoft does not provide Web hosting or redirection for a webpage that is specified by a DEVPKEY_DrvPkg_DocumentationLink property value. The URL must link to a webpage that is maintained by the [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) provider.
 
-When a user clicks the website link that is displayed in Setup-generated end-user dialog box, Windows adds the following information to the HTTP request that includes the URL supplied by DEVPKEY\_DrvPkg\_DocumentationLink:
+When a user clicks the website link that is displayed in Setup-generated end-user dialog box, Windows adds the following information to the HTTP request that includes the URL supplied by DEVPKEY_DrvPkg_DocumentationLink:
 
 -   The Windows version, as specified by a **pver** parameter. For example, "pver=6.0" specifies Windows Vista.
 
@@ -66,7 +66,7 @@ When a user clicks the website link that is displayed in Setup-generated end-use
 
 -   The local identifier (LCID), as specified by the **olcid** parameter. For example, "olcid=0x409" specifies the English (Standard) language.
 
--   The most specific hardware identifier for a device, as specified by the **pnpid** parameter. For example, "pnpid=PCI%5CVEN\_8086%26DEV\_2533%26SUBSYS\_00000000%26REV\_04" specifies the hardware identifier for a PCI device.
+-   The most specific hardware identifier for a device, as specified by the **pnpid** parameter. For example, "pnpid=PCI%5CVEN_8086%26DEV_2533%26SUBSYS_00000000%26REV_04" specifies the hardware identifier for a PCI device.
 
 For privacy reasons, user information and the serial number of device is not included in the HTTP request.
 
@@ -74,9 +74,9 @@ For privacy reasons, user information and the serial number of device is not inc
 The following example shows the type of HTTP request that would be sent to a web server: http://www.microsoft.com/redirect?prod=DSC530&rev34&type=docs&pver=6.0&spb=pro&olcid=0x409&pnpid=PCI%5CVEN_8086%26DEV_2533%26SUBSYS_00000000%26REV_04
 ```
 
-You can set the value of DEVPKEY\_DrvPkg\_DocumentationLink by an [**INF AddProperty directive**](https://msdn.microsoft.com/library/windows/hardware/ff546318) that is included in the [**INF *DDInstall* section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) of the INF file that installs the device. You can retrieve the value of DEVPKEY\_DrvPkg\_DocumentationLinkproperty by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
+You can set the value of DEVPKEY_DrvPkg_DocumentationLink by an [**INF AddProperty directive**](https://msdn.microsoft.com/library/windows/hardware/ff546318) that is included in the [**INF *DDInstall* section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) of the INF file that installs the device. You can retrieve the value of DEVPKEY_DrvPkg_DocumentationLinkproperty by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
 
-The following is an example of how to use an INF **AddProperty** directive to set the value of DEVPKEY\_DrvPkg\_DocumentationLink for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
+The following is an example of how to use an INF **AddProperty** directive to set the value of DEVPKEY_DrvPkg_DocumentationLink for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
 
 ```
 [SampleDDinstallSection]

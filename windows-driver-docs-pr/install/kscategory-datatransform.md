@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_DATATRANSFORM
-description: KSCATEGORY\_DATATRANSFORM
+title: KSCATEGORY_DATATRANSFORM
+description: KSCATEGORY_DATATRANSFORM
 ms.assetid: 2e5ff89a-6ec4-4bdf-b935-675c2a337efb
 keywords: ["KSCATEGORY_DATATRANSFORM Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_DATATRANSFORM
+# KSCATEGORY_DATATRANSFORM
 
 
-The KSCATEGORY\_DATATRANSFORM [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that transforms audio data streams.
+The KSCATEGORY_DATATRANSFORM [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that transforms audio data streams.
 
 <table>
 <colgroup>
@@ -46,11 +46,11 @@ The KSCATEGORY\_DATATRANSFORM [device interface class](https://msdn.microsoft.co
 Remarks
 -------
 
-Drivers for KS devices register instances of KSCATEGORY\_DATATRANSFORM to indicate to the operating system that the devices support the KSCATEGORY\_DATATRANSFORM functional category.
+Drivers for KS devices register instances of KSCATEGORY_DATATRANSFORM to indicate to the operating system that the devices support the KSCATEGORY_DATATRANSFORM functional category.
 
 For an example of how to register this functional category in an INF file, see the *Ddksynth.inf* INF file that is included with the software synthesizer sample in the *src\\audio\\ddksynth* directory of the WDK.
 
-For more information about this functional category, see [Installing Device Interfaces for an Audio Adapter](https://msdn.microsoft.com/library/windows/hardware/ff536813), [**KSPROPERTY\_TOPOLOGY\_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799), and [Requirements for a GFX Filter Factory](https://msdn.microsoft.com/library/windows/hardware/ff537839).
+For more information about this functional category, see [Installing Device Interfaces for an Audio Adapter](https://msdn.microsoft.com/library/windows/hardware/ff536813), [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799), and [Requirements for a GFX Filter Factory](https://msdn.microsoft.com/library/windows/hardware/ff537839).
 
 Requirements
 ------------

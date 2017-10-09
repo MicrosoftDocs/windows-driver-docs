@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_SafeRemovalRequired
-description: DEVPKEY\_Device\_SafeRemovalRequired
+title: DEVPKEY_Device_SafeRemovalRequired
+description: DEVPKEY_Device_SafeRemovalRequired
 ms.assetid: a162e259-21aa-40d9-a65a-af175a59df6a
 keywords: ["DEVPKEY_Device_SafeRemovalRequired Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_SafeRemovalRequired
+# DEVPKEY_Device_SafeRemovalRequired
 
 
-The DEVPKEY\_Device\_SafeRemovalRequired device property represents a Boolean value that indicates whether a hot-plug device instance requires safe removal from the computer.
+The DEVPKEY_Device_SafeRemovalRequired device property represents a Boolean value that indicates whether a hot-plug device instance requires safe removal from the computer.
 
 <table>
 <colgroup>
@@ -48,9 +48,9 @@ The DEVPKEY\_Device\_SafeRemovalRequired device property represents a Boolean va
 Remarks
 -------
 
-If this property for a hot-plug device instance has a value of DEVPROP\_TRUE, the device instance requires safe removal from the computer. In this case, Windows displays the **Safely Remove Hardware** icon in the notification area on the right side of the taskbar. When the user clicks this icon, the system starts the **Safely Remove Hardware** program. By using this program, the user can instruct the system to prepare the device instance for removal before it can be surprise-removed from the computer.
+If this property for a hot-plug device instance has a value of DEVPROP_TRUE, the device instance requires safe removal from the computer. In this case, Windows displays the **Safely Remove Hardware** icon in the notification area on the right side of the taskbar. When the user clicks this icon, the system starts the **Safely Remove Hardware** program. By using this program, the user can instruct the system to prepare the device instance for removal before it can be surprise-removed from the computer.
 
-**Note**   If the device instance is a removable media device, such as an optical disk drive, the device instance must have media inserted and must have the DEVPKEY\_Device\_SafeRemovalRequired property value of DEVPROP\_TRUE. If both are true, the device instance is displayed in the **Safely Remove Hardware** program.
+**Note**   If the device instance is a removable media device, such as an optical disk drive, the device instance must have media inserted and must have the DEVPKEY_Device_SafeRemovalRequired property value of DEVPROP_TRUE. If both are true, the device instance is displayed in the **Safely Remove Hardware** program.
 
  
 
@@ -60,17 +60,17 @@ Windows Plug and Play (PnP) determines that the hot-plug device instance require
 
 -   The device instance is either started or can be ejected automatically by the system.
 
--   The CM\_DEVCAP\_SURPRISEREMOVALOK device capability bit for the device instance is not set. For more information about device capabilities, see [**SetupDiGetDeviceRegistryProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551967).
+-   The CM_DEVCAP_SURPRISEREMOVALOK device capability bit for the device instance is not set. For more information about device capabilities, see [**SetupDiGetDeviceRegistryProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551967).
 
--   The device instance does not have the [**DEVPKEY\_Device\_SafeRemovalRequiredOverride**](devpkey-device-saferemovalrequiredoverride.md) device property set to DEVPROP\_FALSE.
+-   The device instance does not have the [**DEVPKEY_Device_SafeRemovalRequiredOverride**](devpkey-device-saferemovalrequiredoverride.md) device property set to DEVPROP_FALSE.
 
-    **Note**   PnP unconditionally determines that the hot-plug device requires safe removal if the DEVPKEY\_Device\_SafeRemovalRequiredOverride device property is set to DEVPROP\_TRUE.
+    **Note**   PnP unconditionally determines that the hot-plug device requires safe removal if the DEVPKEY_Device_SafeRemovalRequiredOverride device property is set to DEVPROP_TRUE.
 
      
 
 -   The device instance is either directly removable from its parent device instance or has a removable ancestor in its device tree.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_SafeRemovalRequired.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_SafeRemovalRequired.
 
 Requirements
 ------------
@@ -95,7 +95,7 @@ Requirements
 ## See also
 
 
-[**DEVPKEY\_Device\_SafeRemovalRequiredOverride**](devpkey-device-saferemovalrequiredoverride.md)
+[**DEVPKEY_Device_SafeRemovalRequiredOverride**](devpkey-device-saferemovalrequiredoverride.md)
 
 [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
 

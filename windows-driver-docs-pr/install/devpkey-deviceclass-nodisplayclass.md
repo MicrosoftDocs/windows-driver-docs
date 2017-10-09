@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DeviceClass\_NoDisplayClass
-description: DEVPKEY\_DeviceClass\_NoDisplayClass
+title: DEVPKEY_DeviceClass_NoDisplayClass
+description: DEVPKEY_DeviceClass_NoDisplayClass
 ms.assetid: b604c201-c6db-491f-bd7a-ae097249e98a
 keywords: ["DEVPKEY_DeviceClass_NoDisplayClass Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DeviceClass\_NoDisplayClass
+# DEVPKEY_DeviceClass_NoDisplayClass
 
 
-The DEVPKEY\_DeviceClass\_NoDisplayClass device property represents a Boolean flag that controls whether devices in a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509) are displayed by the Device Manager.
+The DEVPKEY_DeviceClass_NoDisplayClass device property represents a Boolean flag that controls whether devices in a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509) are displayed by the Device Manager.
 
 <table>
 <colgroup>
@@ -52,13 +52,13 @@ The DEVPKEY\_DeviceClass\_NoDisplayClass device property represents a Boolean fl
 Remarks
 -------
 
-If the value of DEVPKEY\_DeviceClass\_NoDisplayClass is set to DEVPROP\_TRUE, Device Manager does not display devices in the device setup class. If this value is not set to DEVPROP\_TRUE, the Device Manager does display devices in the device setup class.
+If the value of DEVPKEY_DeviceClass_NoDisplayClass is set to DEVPROP_TRUE, Device Manager does not display devices in the device setup class. If this value is not set to DEVPROP_TRUE, the Device Manager does display devices in the device setup class.
 
 The **NoDisplayClass** registry value for a device setup class can be set by an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF ClassInstall32 section**](https://msdn.microsoft.com/library/windows/hardware/ff546335) of the INF file that installs the class.
 
-You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY\_DeviceClass\_NoDisplayClass.
+You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY_DeviceClass_NoDisplayClass.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_DeviceClass\_NoDisplayClass property key. You can access the value of this property by accessing the corresponding **NoDisplayClass** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](https://msdn.microsoft.com/library/windows/hardware/ff537751).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_NoDisplayClass property key. You can access the value of this property by accessing the corresponding **NoDisplayClass** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](https://msdn.microsoft.com/library/windows/hardware/ff537751).
 
 Requirements
 ------------

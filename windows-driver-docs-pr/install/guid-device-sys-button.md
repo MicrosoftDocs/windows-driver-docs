@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVICE\_SYS\_BUTTON
-description: GUID\_DEVICE\_SYS\_BUTTON
+title: GUID_DEVICE_SYS_BUTTON
+description: GUID_DEVICE_SYS_BUTTON
 ms.assetid: 6d07e015-3ea5-4951-ab2d-9c110edef1c5
 keywords: ["GUID_DEVICE_SYS_BUTTON Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVICE\_SYS\_BUTTON
+# GUID_DEVICE_SYS_BUTTON
 
 
-The GUID\_DEVICE\_SYS\_BUTTON [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339)is defined for Advanced Configuration and Power Interface (ACPI) system power button devices.
+The GUID_DEVICE_SYS_BUTTON [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339)is defined for Advanced Configuration and Power Interface (ACPI) system power button devices.
 
 <table>
 <colgroup>

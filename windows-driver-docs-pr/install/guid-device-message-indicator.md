@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVICE\_MESSAGE\_INDICATOR
-description: GUID\_DEVICE\_MESSAGE\_INDICATOR
+title: GUID_DEVICE_MESSAGE_INDICATOR
+description: GUID_DEVICE_MESSAGE_INDICATOR
 ms.assetid: 6f48dbc7-dca7-4373-b5ff-83ebb5f5c266
 keywords: ["GUID_DEVICE_MESSAGE_INDICATOR Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVICE\_MESSAGE\_INDICATOR
+# GUID_DEVICE_MESSAGE_INDICATOR
 
 
-The GUID\_DEVICE\_MESSAGE\_INDICATOR [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for Advanced Configuration and Power Interface (ACPI) message indicator devices.
+The GUID_DEVICE_MESSAGE_INDICATOR [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for Advanced Configuration and Power Interface (ACPI) message indicator devices.
 
 <table>
 <colgroup>

@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_RemovalPolicyDefault
-description: DEVPKEY\_Device\_RemovalPolicyDefault
+title: DEVPKEY_Device_RemovalPolicyDefault
+description: DEVPKEY_Device_RemovalPolicyDefault
 ms.assetid: e51fb2d2-5bc7-440c-8fc8-9e3f461350ea
 keywords: ["DEVPKEY_Device_RemovalPolicyDefault Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_RemovalPolicyDefault
+# DEVPKEY_Device_RemovalPolicyDefault
 
 
-The DEVPKEY\_Device\_RemovalPolicyDefault device property represents the default removal policy for a device instance.
+The DEVPKEY_Device_RemovalPolicyDefault device property represents the default removal policy for a device instance.
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_Device\_RemovalPolicyDefault device property represents the default
 Remarks
 -------
 
-Windows sets the value of DEVPKEY\_Device\_RemovalPolicyDefault to one of the CM\_REMOVAL\_POLICY\_*Xxx* values that are defined in Cfgmgr32.h.
+Windows sets the value of DEVPKEY_Device_RemovalPolicyDefault to one of the CM_REMOVAL_POLICY_*Xxx* values that are defined in Cfgmgr32.h.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_RemovalPolicyDefault.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_RemovalPolicyDefault.
 
-Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY\_Device\_RemovalPolicyDefault property key. Instead, you can use the corresponding SPDRP\_REMOVAL\_POLICY\_HW\_DEFAULT identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_Device_RemovalPolicyDefault property key. Instead, you can use the corresponding SPDRP_REMOVAL_POLICY_HW_DEFAULT identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------

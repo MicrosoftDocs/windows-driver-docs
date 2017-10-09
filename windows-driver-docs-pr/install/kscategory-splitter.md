@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_SPLITTER
-description: KSCATEGORY\_SPLITTER
+title: KSCATEGORY_SPLITTER
+description: KSCATEGORY_SPLITTER
 ms.assetid: 056b6bc0-5566-4498-959d-dbc9725aa03e
 keywords: ["KSCATEGORY_SPLITTER Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_SPLITTER
+# KSCATEGORY_SPLITTER
 
 
-The KSCATEGORY\_SPLITTER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that splits a data stream.
+The KSCATEGORY_SPLITTER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that splits a data stream.
 
 <table>
 <colgroup>
@@ -46,9 +46,9 @@ The KSCATEGORY\_SPLITTER [device interface class](https://msdn.microsoft.com/lib
 Remarks
 -------
 
-Drivers for KS audio adapter devices register an instance of KSCATEGORY\_SPLITTER to indicate to the operating system that the devices support the KSCATEGORY\_SPLITTER functional category.
+Drivers for KS audio adapter devices register an instance of KSCATEGORY_SPLITTER to indicate to the operating system that the devices support the KSCATEGORY_SPLITTER functional category.
 
-The KSCATEGORY\_SPLITTER functional category is one of the [**KSPROPERTY\_TOPOLOGY\_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799) functional categories.
+The KSCATEGORY_SPLITTER functional category is one of the [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799) functional categories.
 
 For general information about splitters, see [AVStream Splitters](https://msdn.microsoft.com/library/windows/hardware/ff554255).
 
@@ -71,7 +71,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY\_TOPOLOGY\_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)
+[**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)
 
  
 

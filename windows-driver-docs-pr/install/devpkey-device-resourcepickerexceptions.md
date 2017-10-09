@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_ResourcePickerExceptions
-description: DEVPKEY\_Device\_ResourcePickerExceptions
+title: DEVPKEY_Device_ResourcePickerExceptions
+description: DEVPKEY_Device_ResourcePickerExceptions
 ms.assetid: 65a2c709-fe3a-44e2-90f9-4ad6dbcb50bd
 keywords: ["DEVPKEY_Device_ResourcePickerExceptions Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_ResourcePickerExceptions
+# DEVPKEY_Device_ResourcePickerExceptions
 
 
-The DEVPKEY\_Device\_ResourcePickerExceptions device property represents the resource conflicts that are allowed for a device instance.
+The DEVPKEY_Device_ResourcePickerExceptions device property represents the resource conflicts that are allowed for a device instance.
 
 <table>
 <colgroup>
@@ -53,11 +53,11 @@ The DEVPKEY\_Device\_ResourcePickerExceptions device property represents the res
 Remarks
 -------
 
-You can set the value of DEVPKEY\_Device\_ResourcePickerExceptions by using an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF *DDInstall* section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) of the INF file that installs a device.
+You can set the value of DEVPKEY_Device_ResourcePickerExceptions by using an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF *DDInstall* section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) of the INF file that installs a device.
 
-You can retrieve the value of DEVPKEY\_Device\_ResourcePickerExceptions by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
+You can retrieve the value of DEVPKEY_Device_ResourcePickerExceptions by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_ResourcePickerExceptions property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **ResourcePickerExceptions** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_ResourcePickerExceptions property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **ResourcePickerExceptions** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
 
 Requirements
 ------------

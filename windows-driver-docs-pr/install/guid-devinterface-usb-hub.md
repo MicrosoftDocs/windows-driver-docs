@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVINTERFACE\_USB\_HUB
-description: GUID\_DEVINTERFACE\_USB\_HUB
+title: GUID_DEVINTERFACE_USB_HUB
+description: GUID_DEVINTERFACE_USB_HUB
 ms.assetid: 899b77ad-fa98-4078-9207-69b422e3d0d0
 keywords: ["GUID_DEVINTERFACE_USB_HUB Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVINTERFACE\_USB\_HUB
+# GUID_DEVINTERFACE_USB_HUB
 
 
-The GUID\_DEVINTERFACE\_USB\_HUB [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [USB](https://msdn.microsoft.com/library/windows/hardware/ff538930) hub devices.
+The GUID_DEVINTERFACE_USB_HUB [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [USB](https://msdn.microsoft.com/library/windows/hardware/ff538930) hub devices.
 
 <table>
 <colgroup>
@@ -46,9 +46,9 @@ The GUID\_DEVINTERFACE\_USB\_HUB [device interface class](https://msdn.microsoft
 Remarks
 -------
 
-The system-supplied USB port driver registers instances of GUID\_DEVINTERFACE\_USB\_HUB to notify the operating system and applications of the presence of the root hub of host controller devices. The system-supplied USB hub driver registers instances of this class for additional hub devices, if any, that are supported by the host controller.
+The system-supplied USB port driver registers instances of GUID_DEVINTERFACE_USB_HUB to notify the operating system and applications of the presence of the root hub of host controller devices. The system-supplied USB hub driver registers instances of this class for additional hub devices, if any, that are supported by the host controller.
 
-The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](http://go.microsoft.com/fwlink/p/?linkid=256205). The USBVIEW sample uses the obsolete identifier [**GUID\_CLASS\_USBHUB**](guid-class-usbhub.md) to be notified of instances of this device interface class.
+The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](http://go.microsoft.com/fwlink/p/?linkid=256205). The USBVIEW sample uses the obsolete identifier [**GUID_CLASS_USBHUB**](guid-class-usbhub.md) to be notified of instances of this device interface class.
 
 Requirements
 ------------
@@ -69,11 +69,11 @@ Requirements
 ## See also
 
 
-[**GUID\_CLASS\_USBHUB**](guid-class-usbhub.md)
+[**GUID_CLASS_USBHUB**](guid-class-usbhub.md)
 
-[**GUID\_DEVINTERFACE\_USB\_DEVICE**](guid-devinterface-usb-device.md)
+[**GUID_DEVINTERFACE_USB_DEVICE**](guid-devinterface-usb-device.md)
 
-[**GUID\_DEVINTERFACE\_USB\_HOST\_CONTROLLER**](guid-devinterface-usb-host-controller.md)
+[**GUID_DEVINTERFACE_USB_HOST_CONTROLLER**](guid-devinterface-usb-host-controller.md)
 
  
 

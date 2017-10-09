@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DrvPkg\_VendorWebSite
-description: DEVPKEY\_DrvPkg\_VendorWebSite
+title: DEVPKEY_DrvPkg_VendorWebSite
+description: DEVPKEY_DrvPkg_VendorWebSite
 ms.assetid: 5a460073-64ec-4f86-af18-ddd065ed03b1
 keywords: ["DEVPKEY_DrvPkg_VendorWebSite Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DrvPkg\_VendorWebSite
+# DEVPKEY_DrvPkg_VendorWebSite
 
 
-The DEVPKEY\_DrvPkg\_VendorWebSite device property represents a vendor URL for a device instance.
+The DEVPKEY_DrvPkg_VendorWebSite device property represents a vendor URL for a device instance.
 
 <table>
 <colgroup>
@@ -54,9 +54,9 @@ The URL can be a link to the root of the vendor website, a webpage within a webs
 http://www.microsoft.com/redirect?prod=DSC530&rev=34
 ```
 
-You can set the value of DEVPKEY\_DrvPkg\_VendorWebSite by an [**INF AddProperty directive**](https://msdn.microsoft.com/library/windows/hardware/ff546318) that is included in the [**INF DDInstall section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) of the INF file that installs the device. You can retrieve the value of DEVPKEY\_DrvPkg\_VendorWebSite by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
+You can set the value of DEVPKEY_DrvPkg_VendorWebSite by an [**INF AddProperty directive**](https://msdn.microsoft.com/library/windows/hardware/ff546318) that is included in the [**INF DDInstall section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) of the INF file that installs the device. You can retrieve the value of DEVPKEY_DrvPkg_VendorWebSite by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
 
-The following is an example of how to use an INF **AddProperty** directive to set the DEVPKEY\_DrvPkg\_VendorWebSite property value for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
+The following is an example of how to use an INF **AddProperty** directive to set the DEVPKEY_DrvPkg_VendorWebSite property value for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
 
 ```
 [SampleDDinstallSection]

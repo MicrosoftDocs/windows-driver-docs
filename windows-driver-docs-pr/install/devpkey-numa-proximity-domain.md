@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Numa\_Proximity\_Domain
-description: DEVPKEY\_Numa\_Proximity\_Domain
+title: DEVPKEY_Numa_Proximity_Domain
+description: DEVPKEY_Numa_Proximity_Domain
 ms.assetid: 384e167b-cb08-4264-a7b1-3cea2dda0d46
 keywords: ["DEVPKEY_Numa_Proximity_Domain Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Numa\_Proximity\_Domain
+# DEVPKEY_Numa_Proximity_Domain
 
 
-The DEVPKEY\_Numa\_Proximity\_Domain device property represents the proximity domain of a Non-Uniform Memory Architecture (NUMA).
+The DEVPKEY_Numa_Proximity_Domain device property represents the proximity domain of a Non-Uniform Memory Architecture (NUMA).
 
 <table>
 <colgroup>
@@ -48,13 +48,13 @@ The DEVPKEY\_Numa\_Proximity\_Domain device property represents the proximity do
 Remarks
 -------
 
-The value DEVPKEY\_Numa\_Proximity\_Domain is a numeric value that represents a domain ID.
+The value DEVPKEY_Numa_Proximity_Domain is a numeric value that represents a domain ID.
 
-Typically, the operating system sets the value of DEVPKEY\_Numa\_Proximity\_Domain by retrieving the corresponding information from system firmware.
+Typically, the operating system sets the value of DEVPKEY_Numa_Proximity_Domain by retrieving the corresponding information from system firmware.
 
-You can retrieve the value of DEVPKEY\_Numa\_Proximity\_Domain by calling **IoSetDevicePropertyData** or **IoGetDevicePropertyData** in a device driver.
+You can retrieve the value of DEVPKEY_Numa_Proximity_Domain by calling **IoSetDevicePropertyData** or **IoGetDevicePropertyData** in a device driver.
 
-You can also call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Numa\_Proximity\_Domain.
+You can also call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Numa_Proximity_Domain.
 
 The value of this property is owned by Windows and should be treated as read-only by drivers and applications.
 

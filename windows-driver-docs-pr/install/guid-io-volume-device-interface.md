@@ -1,6 +1,6 @@
 ---
-title: GUID\_IO\_VOLUME\_DEVICE\_INTERFACE
-description: GUID\_IO\_VOLUME\_DEVICE\_INTERFACE
+title: GUID_IO_VOLUME_DEVICE_INTERFACE
+description: GUID_IO_VOLUME_DEVICE_INTERFACE
 ms.assetid: 8c623d9c-bc55-4dce-a78a-0b23f8e5b4b5
 keywords: ["GUID_IO_VOLUME_DEVICE_INTERFACE Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_IO\_VOLUME\_DEVICE\_INTERFACE
+# GUID_IO_VOLUME_DEVICE_INTERFACE
 
 
-The GUID\_IO\_VOLUME\_DEVICE\_INTERFACE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for volume devices.
+The GUID_IO_VOLUME_DEVICE_INTERFACE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for volume devices.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The GUID\_IO\_VOLUME\_DEVICE\_INTERFACE [device interface class](https://msdn.mi
 Remarks
 -------
 
-The GUID\_IO\_VOLUME\_DEVICE\_INTERFACE identifier for this device interface class is an alias for the [**GUID\_DEVINTERFACE\_VOLUME**](guid-devinterface-volume.md) device interface class.
+The GUID_IO_VOLUME_DEVICE_INTERFACE identifier for this device interface class is an alias for the [**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md) device interface class.
 
 Requirements
 ------------
@@ -67,7 +67,7 @@ Requirements
 ## See also
 
 
-[**GUID\_DEVINTERFACE\_VOLUME**](guid-devinterface-volume.md)
+[**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md)
 
  
 

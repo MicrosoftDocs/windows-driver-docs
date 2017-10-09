@@ -1,6 +1,6 @@
 ---
-title: GUID\_CLASS\_KEYBOARD
-description: GUID\_CLASS\_KEYBOARD
+title: GUID_CLASS_KEYBOARD
+description: GUID_CLASS_KEYBOARD
 ms.assetid: 9e90d18f-5298-4234-8b05-38e9b8ec5076
 keywords: ["GUID_CLASS_KEYBOARD Device and Driver Installation"]
 topic_type:
@@ -13,15 +13,15 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_CLASS\_KEYBOARD
+# GUID_CLASS_KEYBOARD
 
 
-GUID\_CLASS\_KEYBOARD is an obsolete identifier for the [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) for keyboard devices. Starting with Microsoft Windows 2000, use the [**GUID\_DEVINTERFACE\_KEYBOARD**](guid-devinterface-keyboard.md) class identifier for new instances of this class.
+GUID_CLASS_KEYBOARD is an obsolete identifier for the [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) for keyboard devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_KEYBOARD**](guid-devinterface-keyboard.md) class identifier for new instances of this class.
 
 Remarks
 -------
 
-The HID samples that are provided in the WDK include the keyboard class driver. The keyboard class driver uses GUID\_CLASS\_KEYBOARD to register instances of this device interface class.
+The HID samples that are provided in the WDK include the keyboard class driver. The keyboard class driver uses GUID_CLASS_KEYBOARD to register instances of this device interface class.
 
 Requirements
 ------------
@@ -46,7 +46,7 @@ Requirements
 ## See also
 
 
-[**GUID\_DEVINTERFACE\_KEYBOARD**](guid-devinterface-keyboard.md)
+[**GUID_DEVINTERFACE_KEYBOARD**](guid-devinterface-keyboard.md)
 
  
 

@@ -1,6 +1,6 @@
 ---
-title: KSMFT\_CATEGORY\_AUDIO\_ENCODER
-description: KSMFT\_CATEGORY\_AUDIO\_ENCODER
+title: KSMFT_CATEGORY_AUDIO_ENCODER
+description: KSMFT_CATEGORY_AUDIO_ENCODER
 ms.assetid: b8be392e-6211-46ba-8b99-edcccb7ef8fb
 keywords: ["KSMFT_CATEGORY_AUDIO_ENCODER Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSMFT\_CATEGORY\_AUDIO\_ENCODER
+# KSMFT_CATEGORY_AUDIO_ENCODER
 
 
-The KSMFT\_CATEGORY\_AUDIO\_ENCODER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [Kernel Streaming](https://msdn.microsoft.com/library/windows/hardware/ff560842) (KS) functional category for an audio device.
+The KSMFT_CATEGORY_AUDIO_ENCODER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [Kernel Streaming](https://msdn.microsoft.com/library/windows/hardware/ff560842) (KS) functional category for an audio device.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSMFT\_CATEGORY\_AUDIO\_ENCODER [device interface class](https://msdn.micros
 Remarks
 -------
 
-AVStream drivers that have MFT codec support register instances of this device interface class to indicate to the operating system that the devices support the KSMFT\_CATEGORY\_AUDIO\_ENCODER functional category.
+AVStream drivers that have MFT codec support register instances of this device interface class to indicate to the operating system that the devices support the KSMFT_CATEGORY_AUDIO_ENCODER functional category.
 
 For more information about device interface classes for AVStream devices with hardware codec support, see [Getting Started with Hardware Codec Support in AVStream](https://msdn.microsoft.com/library/windows/hardware/gg299325).
 

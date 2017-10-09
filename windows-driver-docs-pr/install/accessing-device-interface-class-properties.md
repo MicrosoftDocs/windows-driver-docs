@@ -36,7 +36,7 @@ To retrieve the default interface for a device interface class, call [**SetupDiG
 
 -   Set *hwndParent* to **NULL**.
 
--   Set *Flags* to (DIGCF\_DEVICEINTERFACE | DIGCF\_DEFAULT).
+-   Set *Flags* to (DIGCF_DEVICEINTERFACE | DIGCF_DEFAULT).
 
 This call will return a device information set that contains a device information element. The device information element that is returned represents the device that supports the default interface for the specified device interface class.
 
@@ -44,7 +44,7 @@ To set the default interface for a device interface class, call [**SetupDiSetDev
 
 -   Set *DeviceInfoSet* to a handle to the device information set that contains the device interface to set as the default for a device interface class.
 
--   Set *DeviceInterfaceData* to a pointer to an [**SP\_DEVICE\_INTERFACE\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552342) structure that specifies the device interface in *DeviceInfoSet*.
+-   Set *DeviceInterfaceData* to a pointer to an [**SP_DEVICE_INTERFACE_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552342) structure that specifies the device interface in *DeviceInfoSet*.
 
 ### <a href="" id="accessing-device-interface-class-properties-that-have-registry-entry-v"></a> Accessing Device Interface Class Properties That Have Registry Entry Values Under the Interface Class Registry Key
 
@@ -54,11 +54,11 @@ To access properties of a device interface class that have corresponding registr
 
     -   Set *ClassGuid* to a pointer to the GUID that identifies the device interface class of the requested class registry key.
     -   Set *samDesired* to a REGSAM-typed value that specifies the required access permission.
-    -   Set *Flags* to DIOCR\_INTERFACE.
+    -   Set *Flags* to DIOCR_INTERFACE.
     -   Set *MachineName* to a pointer to a NULL-terminated string that contains the name of the computer on which to open the requested class registry key. If the computer is the local computer, set *MachineName* to **NULL**.
     -   Set *Reserved* to **NULL**.
 
-    If this call to [**SetupDiOpenClassRegKeyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552067) succeeds, **SetupDiOpenClassRegKeyEx** returns the requested handle. If the function call fails, **SetupDiOpenClassRegKeyEx** returns INVALID\_HANDLE\_VALUE and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
+    If this call to [**SetupDiOpenClassRegKeyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552067) succeeds, **SetupDiOpenClassRegKeyEx** returns the requested handle. If the function call fails, **SetupDiOpenClassRegKeyEx** returns INVALID_HANDLE_VALUE and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
 
 2.  Supply the retrieved handle in a call to [RegQueryValueEx](http://go.microsoft.com/fwlink/p/?linkid=95398) and [RegSetValueEx](http://go.microsoft.com/fwlink/p/?linkid=95399) to retrieve or set the registry entry value that corresponds to the device interface class property.
 

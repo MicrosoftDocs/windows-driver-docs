@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_WDMAUD
-description: KSCATEGORY\_WDMAUD
+title: KSCATEGORY_WDMAUD
+description: KSCATEGORY_WDMAUD
 ms.assetid: a03ea284-6d28-4f6b-9e31-97d66cf7a00d
 keywords: ["KSCATEGORY_WDMAUD Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_WDMAUD
+# KSCATEGORY_WDMAUD
 
 
-The KSCATEGORY\_WDMAUD [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) represents a [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that is reserved for exclusive use by the system-supplied [WDM audio components](https://msdn.microsoft.com/library/windows/hardware/ff538905).
+The KSCATEGORY_WDMAUD [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) represents a [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that is reserved for exclusive use by the system-supplied [WDM audio components](https://msdn.microsoft.com/library/windows/hardware/ff538905).
 
 <table>
 <colgroup>

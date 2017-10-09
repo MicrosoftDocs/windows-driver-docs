@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_UINumberDescFormat
-description: DEVPKEY\_Device\_UINumberDescFormat
+title: DEVPKEY_Device_UINumberDescFormat
+description: DEVPKEY_Device_UINumberDescFormat
 ms.assetid: 6720b35e-a65b-4935-8010-aef53e3951e9
 keywords: ["DEVPKEY_Device_UINumberDescFormat Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_UINumberDescFormat
+# DEVPKEY_Device_UINumberDescFormat
 
 
-The DEVPKEY\_Device\_UINumberDescFormat device property represents a **printf**-compatible format string that you should use to display the value of the DEVPKEY\_DEVICE\_UINumber device property for a device instance.
+The DEVPKEY_Device_UINumberDescFormat device property represents a **printf**-compatible format string that you should use to display the value of the DEVPKEY_DEVICE_UINumber device property for a device instance.
 
 <table>
 <colgroup>
@@ -52,9 +52,9 @@ The DEVPKEY\_Device\_UINumberDescFormat device property represents a **printf**-
 Remarks
 -------
 
-You can retrieve the value of DDEVPKEY\_Device\_UINumberDescFormat by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) or you can also set this value by calling [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163).
+You can retrieve the value of DDEVPKEY_Device_UINumberDescFormat by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) or you can also set this value by calling [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163).
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_UINumberDescFormat property key. Instead, you can use the corresponding SPDRP\_UI\_NUMBER\_DESC\_FORMAT identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_UINumberDescFormat property key. Instead, you can use the corresponding SPDRP_UI_NUMBER_DESC_FORMAT identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------

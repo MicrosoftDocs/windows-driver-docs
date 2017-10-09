@@ -1,6 +1,6 @@
 ---
-title: CM\_Remove\_SubTree
-description: CM\_Remove\_SubTree
+title: CM_Remove_SubTree
+description: CM_Remove_SubTree
 ms.assetid: 49f477ba-c870-45be-945b-58065bf6b02e
 keywords: ["CM_Remove_SubTree Device and Driver Installation"]
 topic_type:
@@ -11,13 +11,13 @@ api_type:
 - NA
 ---
 
-# CM\_Remove\_SubTree
+# CM_Remove_SubTree
 
 
 ## <a href="" id="ddk-cm-remove-subtree-dr"></a>
 
 
-This function is obsolete and no longer supported in Windows 2000 and later versions of Windows. Use [**CM\_Query\_And\_Remove\_Subtree**](https://msdn.microsoft.com/library/windows/hardware/ff539722) instead.
+This function is obsolete and no longer supported in Windows 2000 and later versions of Windows. Use [**CM_Query_And_Remove_Subtree**](https://msdn.microsoft.com/library/windows/hardware/ff539722) instead.
 
  
 

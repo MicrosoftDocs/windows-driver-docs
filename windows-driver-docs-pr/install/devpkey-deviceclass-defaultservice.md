@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DeviceClass\_DefaultService
-description: DEVPKEY\_DeviceClass\_DefaultService
+title: DEVPKEY_DeviceClass_DefaultService
+description: DEVPKEY_DeviceClass_DefaultService
 ms.assetid: 19d1a9ea-3bde-4230-af1a-b67b5a29e6f4
 keywords: ["DEVPKEY_DeviceClass_DefaultService Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DeviceClass\_DefaultService
+# DEVPKEY_DeviceClass_DefaultService
 
 
-The DEVPKEY\_DeviceClass\_DefaultService device property represents the name of the default service for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
+The DEVPKEY_DeviceClass_DefaultService device property represents the name of the default service for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
 
 <table>
 <colgroup>
@@ -54,11 +54,11 @@ Remarks
 
 If a default service is installed for a device setup class and a device does not install a device-specific service, the [**INF ClassInstall32.Services section**](https://msdn.microsoft.com/library/windows/hardware/ff546339) of the INF file that installs the class installs the class default service for the device.
 
-The value of DEVPKEY\_DeviceClass\_DefaultService is the value of the **Default Service** registry value under the class registry key.
+The value of DEVPKEY_DeviceClass_DefaultService is the value of the **Default Service** registry value under the class registry key.
 
-You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY\_DeviceClass\_DefaultService.
+You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY_DeviceClass_DefaultService.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_DeviceClass\_DefaultService property key. You can access the value of this property by accessing the corresponding **Default Service** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](https://msdn.microsoft.com/library/windows/hardware/ff537751).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_DefaultService property key. You can access the value of this property by accessing the corresponding **Default Service** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](https://msdn.microsoft.com/library/windows/hardware/ff537751).
 
 Requirements
 ------------

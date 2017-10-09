@@ -1,6 +1,6 @@
 ---
-title: CM\_Set\_DevNode\_Registry\_Property\_Ex
-description: CM\_Set\_DevNode\_Registry\_Property\_Ex
+title: CM_Set_DevNode_Registry_Property_Ex
+description: CM_Set_DevNode_Registry_Property_Ex
 ms.assetid: 510a9cee-4a4a-437d-8864-5b28a01ca044
 keywords: ["CM_Set_DevNode_Registry_Property_ExA", "CM_Set_DevNode_Registry_Property_ExW", "CM_Set_DevNode_Registry_Property_Ex Device and Driver Installation"]
 topic_type:
@@ -12,7 +12,7 @@ api_type:
 - NA
 ---
 
-# CM\_Set\_DevNode\_Registry\_Property\_Ex
+# CM_Set_DevNode_Registry_Property_Ex
 
 
  

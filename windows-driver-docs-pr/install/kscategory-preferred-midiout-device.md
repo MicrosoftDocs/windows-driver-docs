@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_PREFERRED\_MIDIOUT\_DEVICE
-description: KSCATEGORY\_PREFERRED\_MIDIOUT\_DEVICE
+title: KSCATEGORY_PREFERRED_MIDIOUT_DEVICE
+description: KSCATEGORY_PREFERRED_MIDIOUT_DEVICE
 ms.assetid: b3d93d21-d4f8-4f00-9947-034790f3f7b1
 keywords: ["KSCATEGORY_PREFERRED_MIDIOUT_DEVICE Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_PREFERRED\_MIDIOUT\_DEVICE
+# KSCATEGORY_PREFERRED_MIDIOUT_DEVICE
 
 
-The KSCATEGORY\_PREFERRED\_MIDIOUT\_DEVICE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for the preferred MIDI output device.
+The KSCATEGORY_PREFERRED_MIDIOUT_DEVICE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for the preferred MIDI output device.
 
 <table>
 <colgroup>

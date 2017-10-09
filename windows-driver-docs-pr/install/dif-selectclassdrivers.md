@@ -1,6 +1,6 @@
 ---
-title: DIF\_SELECTCLASSDRIVERS
-description: DIF\_SELECTCLASSDRIVERS
+title: DIF_SELECTCLASSDRIVERS
+description: DIF_SELECTCLASSDRIVERS
 ms.assetid: 392a52f4-8a2e-464c-b04a-9760cff172f0
 keywords: ["DIF_SELECTCLASSDRIVERS Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# DIF\_SELECTCLASSDRIVERS
+# DIF_SELECTCLASSDRIVERS
 
 
 This DIF code is obsolete and no longer supported in Microsoft Windows 2000 and later versions of Windows.

@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_Manufacturer
-description: DEVPKEY\_Device\_Manufacturer
+title: DEVPKEY_Device_Manufacturer
+description: DEVPKEY_Device_Manufacturer
 ms.assetid: 28da7262-bdb6-40da-a2f8-30dcbd4f5e6c
 keywords: ["DEVPKEY_Device_Manufacturer Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_Manufacturer
+# DEVPKEY_Device_Manufacturer
 
 
-The DEVPKEY\_DEVICE\_Manufacturer device property represents the name of the manufacturer of a device instance.
+The DEVPKEY_DEVICE_Manufacturer device property represents the name of the manufacturer of a device instance.
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_DEVICE\_Manufacturer device property represents the name of the man
 Remarks
 -------
 
-The value of DEVPKEY\_DEVICE\_Manufacturer is set by the *manufacturer-identifier* entry value for a device that is supplied by the [**INF Manufacturer section**](https://msdn.microsoft.com/library/windows/hardware/ff547454) of the INF file that installs a device.
+The value of DEVPKEY_DEVICE_Manufacturer is set by the *manufacturer-identifier* entry value for a device that is supplied by the [**INF Manufacturer section**](https://msdn.microsoft.com/library/windows/hardware/ff547454) of the INF file that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_DEVICE\_Manufacturer.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_DEVICE_Manufacturer.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_Manufacturer property key. Instead, you can use the corresponding SPDRP\_MFG identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_Manufacturer property key. Instead, you can use the corresponding SPDRP_MFG identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------

@@ -1,6 +1,6 @@
 ---
-title: CM\_Enable\_DevNode\_Ex
-description: CM\_Enable\_DevNode\_Ex
+title: CM_Enable_DevNode_Ex
+description: CM_Enable_DevNode_Ex
 ms.assetid: 582e7cdf-2302-4c9a-8834-5eada8f142d8
 keywords: ["CM_Enable_DevNode_Ex Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# CM\_Enable\_DevNode\_Ex
+# CM_Enable_DevNode_Ex
 
 
 ## <a href="" id="ddk-cm-enable-devnode-ex-dr"></a>

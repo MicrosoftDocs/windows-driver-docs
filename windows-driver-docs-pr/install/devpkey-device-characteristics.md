@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_Characteristics
-description: DEVPKEY\_Device\_Characteristics
+title: DEVPKEY_Device_Characteristics
+description: DEVPKEY_Device_Characteristics
 ms.assetid: 148557aa-2246-4cd9-9008-d920ffb64845
 keywords: ["DEVPKEY_Device_Characteristics Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_Characteristics
+# DEVPKEY_Device_Characteristics
 
 
-The DEVPKEY\_Device\_Characteristics device property represents the characteristics of a device instance.
+The DEVPKEY_Device_Characteristics device property represents the characteristics of a device instance.
 
 <table>
 <colgroup>
@@ -52,13 +52,13 @@ The DEVPKEY\_Device\_Characteristics device property represents the characterist
 Remarks
 -------
 
-The value of DEVPKEY\_Device\_Characteristics is a bitwise OR of the FILE\_*Xxx* file characteristic flags that are defined in Wdm.h and Ntddk.h. For more information about the device characteristic flags, see the *DeviceCharacteristics* parameter of [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397) and [Specifying Device Characteristics](https://msdn.microsoft.com/library/windows/hardware/ff563818).
+The value of DEVPKEY_Device_Characteristics is a bitwise OR of the FILE_*Xxx* file characteristic flags that are defined in Wdm.h and Ntddk.h. For more information about the device characteristic flags, see the *DeviceCharacteristics* parameter of [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397) and [Specifying Device Characteristics](https://msdn.microsoft.com/library/windows/hardware/ff563818).
 
-You can set the value of DEVPKEY\_Device\_Characteristics by using an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF DDInstall.HW section**](https://msdn.microsoft.com/library/windows/hardware/ff547330) that installs a device.
+You can set the value of DEVPKEY_Device_Characteristics by using an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF DDInstall.HW section**](https://msdn.microsoft.com/library/windows/hardware/ff547330) that installs a device.
 
-You can retrieve the value of DEVPKEY\_Device\_Characteristics by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
+You can retrieve the value of DEVPKEY_Device_Characteristics by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_Characteristics property key. Instead, you can use the corresponding SPDRP\_CHARACTERISTICS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_Characteristics property key. Instead, you can use the corresponding SPDRP_CHARACTERISTICS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------

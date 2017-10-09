@@ -1,6 +1,6 @@
 ---
-title: DIF\_ENABLECLASS
-description: DIF\_ENABLECLASS
+title: DIF_ENABLECLASS
+description: DIF_ENABLECLASS
 ms.assetid: 435b14bb-dd0f-4243-9b92-35c918207b8a
 keywords: ["DIF_ENABLECLASS Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# DIF\_ENABLECLASS
+# DIF_ENABLECLASS
 
 
 This DIF code is reserved for system use. Vendor-supplied installers must not handle this request.

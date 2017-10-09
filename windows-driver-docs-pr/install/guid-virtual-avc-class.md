@@ -1,6 +1,6 @@
 ---
-title: GUID\_VIRTUAL\_AVC\_CLASS
-description: GUID\_VIRTUAL\_AVC\_CLASS
+title: GUID_VIRTUAL_AVC_CLASS
+description: GUID_VIRTUAL_AVC_CLASS
 ms.assetid: bd577fd7-f50c-4477-9619-8dd9e849367a
 keywords: ["GUID_VIRTUAL_AVC_CLASS Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_VIRTUAL\_AVC\_CLASS
+# GUID_VIRTUAL_AVC_CLASS
 
 
-The GUID\_VIRTUAL\_AVC\_CLASS [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for virtual audio video control (AV/C) devices that are supported by the [AVStream](https://msdn.microsoft.com/library/windows/hardware/ff554240) architecture.
+The GUID_VIRTUAL_AVC_CLASS [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for virtual audio video control (AV/C) devices that are supported by the [AVStream](https://msdn.microsoft.com/library/windows/hardware/ff554240) architecture.
 
 <table>
 <colgroup>
@@ -46,9 +46,9 @@ The GUID\_VIRTUAL\_AVC\_CLASS [device interface class](https://msdn.microsoft.co
 Remarks
 -------
 
-The system-supplied [AV/C client driver](https://msdn.microsoft.com/library/windows/hardware/ff556367) [Avc.sys](https://msdn.microsoft.com/library/windows/hardware/ff568667) registers an instance of GUID\_VIRTUAL\_AVC\_CLASS to represent a virtual AV/C device.
+The system-supplied [AV/C client driver](https://msdn.microsoft.com/library/windows/hardware/ff556367) [Avc.sys](https://msdn.microsoft.com/library/windows/hardware/ff568667) registers an instance of GUID_VIRTUAL_AVC_CLASS to represent a virtual AV/C device.
 
-For information about the device interface class for AV/C units on a 1394 bus, see [**GUID\_AVC\_CLASS**](guid-avc-class.md).
+For information about the device interface class for AV/C units on a 1394 bus, see [**GUID_AVC_CLASS**](guid-avc-class.md).
 
 Requirements
 ------------
@@ -73,7 +73,7 @@ Requirements
 ## See also
 
 
-[**GUID\_AVC\_CLASS**](guid-avc-class.md)
+[**GUID_AVC_CLASS**](guid-avc-class.md)
 
  
 

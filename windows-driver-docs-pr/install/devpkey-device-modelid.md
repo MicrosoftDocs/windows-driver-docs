@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_ModelId
-description: DEVPKEY\_Device\_ModelId
+title: DEVPKEY_Device_ModelId
+description: DEVPKEY_Device_ModelId
 ms.assetid: 6066f18b-40bf-4b36-9821-5e886e166256
 keywords: ["DEVPKEY_Device_ModelId Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_ModelId
+# DEVPKEY_Device_ModelId
 
 
-The DEVPKEY\_Device\_ModelId device property matches a device to a [device metadata package](https://msdn.microsoft.com/library/windows/hardware/ff541439).
+The DEVPKEY_Device_ModelId device property matches a device to a [device metadata package](https://msdn.microsoft.com/library/windows/hardware/ff541439).
 
 <table>
 <colgroup>
@@ -48,9 +48,9 @@ The DEVPKEY\_Device\_ModelId device property matches a device to a [device metad
 Remarks
 -------
 
-The DEVPKEY\_Device\_ModelId device property provides support for IHVs and OEMs to uniquely identify devices that share the same manufacturer and model. By using a model identifier (ModelID), OEMs and IHVs can match the device model that they distribute to their own branded device metadata package.
+The DEVPKEY_Device_ModelId device property provides support for IHVs and OEMs to uniquely identify devices that share the same manufacturer and model. By using a model identifier (ModelID), OEMs and IHVs can match the device model that they distribute to their own branded device metadata package.
 
-The DEVPKEY\_Device\_ModelId device property contains the value of the [**ModelID**](https://msdn.microsoft.com/library/windows/hardware/ff549295) XML element from the device's metadata package. When the device is installed, this PKEY is populated with the ModelID GUID value as reported by the device.
+The DEVPKEY_Device_ModelId device property contains the value of the [**ModelID**](https://msdn.microsoft.com/library/windows/hardware/ff549295) XML element from the device's metadata package. When the device is installed, this PKEY is populated with the ModelID GUID value as reported by the device.
 
 For more information, see [Device Metadata Packages](https://msdn.microsoft.com/library/windows/hardware/ff541439).
 

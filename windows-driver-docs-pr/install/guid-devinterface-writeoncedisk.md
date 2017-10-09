@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVINTERFACE\_WRITEONCEDISK
-description: GUID\_DEVINTERFACE\_WRITEONCEDISK
+title: GUID_DEVINTERFACE_WRITEONCEDISK
+description: GUID_DEVINTERFACE_WRITEONCEDISK
 ms.assetid: 8b1660e1-0868-40aa-ba47-dfcb6cf58aaf
 keywords: ["GUID_DEVINTERFACE_WRITEONCEDISK Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVINTERFACE\_WRITEONCEDISK
+# GUID_DEVINTERFACE_WRITEONCEDISK
 
 
-The GUID\_DEVINTERFACE\_WRITEONCEDISK [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for write-once disk devices.
+The GUID_DEVINTERFACE_WRITEONCEDISK [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for write-once disk devices.
 
 <table>
 <colgroup>
@@ -46,9 +46,9 @@ The GUID\_DEVINTERFACE\_WRITEONCEDISK [device interface class](https://msdn.micr
 Remarks
 -------
 
-The system-supplied [storage drivers](https://msdn.microsoft.com/library/windows/hardware/ff566976) register instances of GUID\_DEVINTERFACE\_WRITEONCEDISK to notify the operating system and application of the presence of write-once disks, such as a CD-R.
+The system-supplied [storage drivers](https://msdn.microsoft.com/library/windows/hardware/ff566976) register instances of GUID_DEVINTERFACE_WRITEONCEDISK to notify the operating system and application of the presence of write-once disks, such as a CD-R.
 
-[**WriteOnceDiskClassGuid**](writeoncediskclassguid.md) is an obsolete identifier for the GUID\_DEVINTERFACE\_WRITEONCEDISK device interface class. For new instances of this class, use GUID\_DEVINTERFACE\_WRITEONCEDISK instead.
+[**WriteOnceDiskClassGuid**](writeoncediskclassguid.md) is an obsolete identifier for the GUID_DEVINTERFACE_WRITEONCEDISK device interface class. For new instances of this class, use GUID_DEVINTERFACE_WRITEONCEDISK instead.
 
 Requirements
 ------------

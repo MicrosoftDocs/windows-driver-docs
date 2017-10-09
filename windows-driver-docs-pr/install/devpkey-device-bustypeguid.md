@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_BusTypeGuid
-description: DEVPKEY\_Device\_BusTypeGuid
+title: DEVPKEY_Device_BusTypeGuid
+description: DEVPKEY_Device_BusTypeGuid
 ms.assetid: a68e7ff2-9afa-48d5-9764-3c400561024e
 keywords: ["DEVPKEY_Device_BusTypeGuid Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_BusTypeGuid
+# DEVPKEY_Device_BusTypeGuid
 
 
-The DEVPKEY\_Device\_BusTypeGuid device property represents the GUID that identifies the bus type of a device instance.
+The DEVPKEY_Device_BusTypeGuid device property represents the GUID that identifies the bus type of a device instance.
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_Device\_BusTypeGuid device property represents the GUID that identi
 Remarks
 -------
 
-Windows sets the value of DEVPKEY\_Device\_BusTypeGuid to the value of the BusTypeGuid member of the [**PNP\_BUS\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff559608) structure that a bus driver returns in response to an [**IRP\_MN\_QUERY\_BUS\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff551654) request.
+Windows sets the value of DEVPKEY_Device_BusTypeGuid to the value of the BusTypeGuid member of the [**PNP_BUS_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff559608) structure that a bus driver returns in response to an [**IRP_MN_QUERY_BUS_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff551654) request.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_BusTypeGuid.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_BusTypeGuid.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_BusTypeGuid property key. Instead, you can use the corresponding SPDRP\_BUSTYPEGUID identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_BusTypeGuid property key. Instead, you can use the corresponding SPDRP_BUSTYPEGUID identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------
@@ -81,9 +81,9 @@ Requirements
 ## See also
 
 
-[**IRP\_MN\_QUERY\_BUS\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff551654)
+[**IRP_MN_QUERY_BUS_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff551654)
 
-[**PNP\_BUS\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff559608)
+[**PNP_BUS_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff559608)
 
 [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
 

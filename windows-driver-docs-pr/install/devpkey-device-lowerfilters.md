@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_LowerFilters
-description: DEVPKEY\_Device\_LowerFilters
+title: DEVPKEY_Device_LowerFilters
+description: DEVPKEY_Device_LowerFilters
 ms.assetid: 7ee0421f-7c4e-463a-ab79-1616c6837bdc
 keywords: ["DEVPKEY_Device_LowerFilters Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_LowerFilters
+# DEVPKEY_Device_LowerFilters
 
 
-The DEVPKEY\_Device\_LowerFilters device property represents a list of the service names of the lower-level filter drivers that are installed for a device instance.
+The DEVPKEY_Device_LowerFilters device property represents a list of the service names of the lower-level filter drivers that are installed for a device instance.
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_Device\_LowerFilters device property represents a list of the servi
 Remarks
 -------
 
-The value of the DEVPKEY\_Device\_LowerFilters property is set when a lower-level device filter driver is installed for a device. For more information about how to install a device filter driver, see [Installing a Filter Driver](https://msdn.microsoft.com/library/windows/hardware/ff547595).
+The value of the DEVPKEY_Device_LowerFilters property is set when a lower-level device filter driver is installed for a device. For more information about how to install a device filter driver, see [Installing a Filter Driver](https://msdn.microsoft.com/library/windows/hardware/ff547595).
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) and [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163) to retrieve and set the value of DEVPKEY\_Device\_LowerFilters.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) and [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163) to retrieve and set the value of DEVPKEY_Device_LowerFilters.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_LowerFilters property key. Instead, you can use the corresponding SPDRP\_LOWERFILTERS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_LowerFilters property key. Instead, you can use the corresponding SPDRP_LOWERFILTERS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------

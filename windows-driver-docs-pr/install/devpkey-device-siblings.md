@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_Siblings
-description: DEVPKEY\_Device\_Siblings
+title: DEVPKEY_Device_Siblings
+description: DEVPKEY_Device_Siblings
 ms.assetid: 7456c9f7-6969-4b42-a4f9-f388c731c735
 keywords: ["DEVPKEY_Device_Siblings Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_Siblings
+# DEVPKEY_Device_Siblings
 
 
-The DEVPKEY\_Device\_Siblings device property represents a list of the device instance IDs for the devices that are siblings of a device instance.
+The DEVPKEY_Device_Siblings device property represents a list of the device instance IDs for the devices that are siblings of a device instance.
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ The DEVPKEY\_Device\_Siblings device property represents a list of the device in
 Remarks
 -------
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_Siblings.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_Siblings.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not directly support this property. For information about how to retrieve device relations properties on these earlier versions of Windows, see [Retrieving Device Relations](https://msdn.microsoft.com/library/windows/hardware/ff550630).
 

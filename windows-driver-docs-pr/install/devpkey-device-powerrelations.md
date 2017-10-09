@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_PowerRelations
-description: DEVPKEY\_Device\_PowerRelations
+title: DEVPKEY_Device_PowerRelations
+description: DEVPKEY_Device_PowerRelations
 ms.assetid: 616e6d02-9047-491b-b7e7-758e1804dff5
 keywords: ["DEVPKEY_Device_PowerRelations Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_PowerRelations
+# DEVPKEY_Device_PowerRelations
 
 
-The DEVPKEY\_Device\_PowerRelations device property represents the [**power relations**](https://msdn.microsoft.com/library/windows/hardware/ff551670) for a device instance.
+The DEVPKEY_Device_PowerRelations device property represents the [**power relations**](https://msdn.microsoft.com/library/windows/hardware/ff551670) for a device instance.
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ The DEVPKEY\_Device\_PowerRelations device property represents the [**power rela
 Remarks
 -------
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_PowerRelations.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_PowerRelations.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not directly support this property. For information about how to retrieve device relations properties on these earlier versions of Windows, see [Retrieving Device Relations](https://msdn.microsoft.com/library/windows/hardware/ff550630).
 

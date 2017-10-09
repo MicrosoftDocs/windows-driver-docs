@@ -16,12 +16,12 @@ api_type:
 # VolumeClassGuid
 
 
-VolumeClassGuid is an obsolete identifier for the [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) for volume devices. Starting with Microsoft Windows 2000, use the [**GUID\_DEVINTERFACE\_VOLUME**](guid-devinterface-volume.md) class identifier for new instances of this class.
+VolumeClassGuid is an obsolete identifier for the [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) for volume devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md) class identifier for new instances of this class.
 
 Remarks
 -------
 
-The storage [samples](http://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include an [Addfilter Storage Filter Tool](http://go.microsoft.com/fwlink/p/?linkid=256076) that uses VolumeClassGuid to enumerate instances of the [**GUID\_DEVINTERFACE\_VOLUME**](guid-devinterface-volume.md) device interface class.
+The storage [samples](http://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include an [Addfilter Storage Filter Tool](http://go.microsoft.com/fwlink/p/?linkid=256076) that uses VolumeClassGuid to enumerate instances of the [**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md) device interface class.
 
 Requirements
 ------------
@@ -46,7 +46,7 @@ Requirements
 ## See also
 
 
-[**GUID\_DEVINTERFACE\_VOLUME**](guid-devinterface-volume.md)
+[**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md)
 
  
 

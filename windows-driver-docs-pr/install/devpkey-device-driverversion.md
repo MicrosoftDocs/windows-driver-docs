@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_DriverVersion
-description: DEVPKEY\_Device\_DriverVersion
+title: DEVPKEY_Device_DriverVersion
+description: DEVPKEY_Device_DriverVersion
 ms.assetid: 68df1313-e948-4aea-9b90-c838f7bf228d
 keywords: ["DEVPKEY_Device_DriverVersion Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_DriverVersion
+# DEVPKEY_Device_DriverVersion
 
 
-The PKEY\_Device\_DriverVersion device property represents the version of the driver that is currently installed on a device instance.
+The PKEY_Device_DriverVersion device property represents the version of the driver that is currently installed on a device instance.
 
 <table>
 <colgroup>
@@ -53,11 +53,11 @@ The PKEY\_Device\_DriverVersion device property represents the version of the dr
 Remarks
 -------
 
-The value of DEVPKEY\_Device\_DriverVersion is supplied by the [**INF DriverVer directive**](https://msdn.microsoft.com/library/windows/hardware/ff547394) that is included in the [**INF Version section**](https://msdn.microsoft.com/library/windows/hardware/ff547502) of an INF file that installs a device or is supplied by a device-specific INF **DriverVer** directive that is included in the [**INF *DDInstall* section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) that installs a device.
+The value of DEVPKEY_Device_DriverVersion is supplied by the [**INF DriverVer directive**](https://msdn.microsoft.com/library/windows/hardware/ff547394) that is included in the [**INF Version section**](https://msdn.microsoft.com/library/windows/hardware/ff547502) of an INF file that installs a device or is supplied by a device-specific INF **DriverVer** directive that is included in the [**INF *DDInstall* section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of PKEY\_Device\_DriverVersion.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of PKEY_Device_DriverVersion.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_DriverVersion property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **DriverVersion** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverVersion property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **DriverVersion** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
 
 Requirements
 ------------

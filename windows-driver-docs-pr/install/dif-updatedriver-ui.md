@@ -1,6 +1,6 @@
 ---
-title: DIF\_UPDATEDRIVER\_UI
-description: DIF\_UPDATEDRIVER\_UI
+title: DIF_UPDATEDRIVER_UI
+description: DIF_UPDATEDRIVER_UI
 ms.assetid: 60240f12-101b-419b-87c6-fa04d8853133
 keywords: ["DIF_UPDATEDRIVER_UI Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# DIF\_UPDATEDRIVER\_UI
+# DIF_UPDATEDRIVER_UI
 
 
 This DIF code is reserved for system use. Vendor-supplied installers must not handle this request.

@@ -1,6 +1,6 @@
 ---
-title: DIF\_UNREMOVE
-description: DIF\_UNREMOVE
+title: DIF_UNREMOVE
+description: DIF_UNREMOVE
 ms.assetid: 01e39f77-3ee8-44c4-ba1a-19d4356b26ce
 keywords: ["DIF_UNREMOVE Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DIF\_UNREMOVE
+# DIF_UNREMOVE
 
 
-A DIF\_UNREMOVE request notifies the installer that Windows is about to reinstate a device in a given hardware profile and gives the installer an opportunity to participate in the operation. Windows only sends this request for non-PnP devices.
+A DIF_UNREMOVE request notifies the installer that Windows is about to reinstate a device in a given hardware profile and gives the installer an opportunity to participate in the operation. Windows only sends this request for non-PnP devices.
 
 ### When Sent
 
@@ -53,13 +53,13 @@ When a root-enumerated, non-PnP device is reinstated to a hardware profile.
 Supplies a handle to the [device information set](https://msdn.microsoft.com/library/windows/hardware/ff541247) that contains the device.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Supplies a pointer to an [**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies the device in the device information set.
+Supplies a pointer to an [**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies the device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters ([**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
+There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP\_UNREMOVEDEVICE\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553349) structure is associated with the *DeviceInfoData*. The **Scope** field must be set to DI\_UNREMOVEDEVICE\_CONFIGSPECIFIC and a hardware profile must be specified in the **HwProfile** field.
+An [**SP_UNREMOVEDEVICE_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553349) structure is associated with the *DeviceInfoData*. The **Scope** field must be set to DI_UNREMOVEDEVICE_CONFIGSPECIFIC and a hardware profile must be specified in the **HwProfile** field.
 
 ### Installer Output
 
@@ -67,11 +67,11 @@ An [**SP\_UNREMOVEDEVICE\_PARAMS**](https://msdn.microsoft.com/library/windows/h
 
 ### Installer Return Value
 
-A co-installer can return NO\_ERROR, ERROR\_DI\_POSTPROCESSING\_REQUIRED, or a Win32 error code.
+A co-installer can return NO_ERROR, ERROR_DI_POSTPROCESSING_REQUIRED, or a Win32 error code.
 
-If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) should subsequently call the default handler, the class installer returns ERROR\_DI\_DO\_DEFAULT.
+If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) should subsequently call the default handler, the class installer returns ERROR_DI_DO_DEFAULT.
 
-If the class installer successfully handles this request, including directly calling the default handler, the class installer should return NO\_ERROR and **SetupDiCallClassInstaller** will not subsequently call the default handler again.
+If the class installer successfully handles this request, including directly calling the default handler, the class installer should return NO_ERROR and **SetupDiCallClassInstaller** will not subsequently call the default handler again.
 
 **Note**   The class installer can directly call the default handler, but the class installer should never attempt to supersede the operations of the default handler.
 
@@ -116,11 +116,11 @@ Requirements
 
 [**SetupDiUnremoveDevice**](https://msdn.microsoft.com/library/windows/hardware/ff552193)
 
-[**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
+[**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
 
-[**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
+[**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
 
-[**SP\_UNREMOVEDEVICE\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553349)
+[**SP_UNREMOVEDEVICE_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553349)
 
  
 

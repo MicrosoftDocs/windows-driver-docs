@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DeviceInterfaceClass\_DefaultInterface
-description: DEVPKEY\_DeviceInterfaceClass\_DefaultInterface
+title: DEVPKEY_DeviceInterfaceClass_DefaultInterface
+description: DEVPKEY_DeviceInterfaceClass_DefaultInterface
 ms.assetid: dab341d1-6cab-420b-9ee0-acf6747e2dac
 keywords: ["DEVPKEY_DeviceInterfaceClass_DefaultInterface Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DeviceInterfaceClass\_DefaultInterface
+# DEVPKEY_DeviceInterfaceClass_DefaultInterface
 
 
-The DEVPKEY\_DeviceInterfaceClass\_DefaultInterface device property represents the symbolic link name of the default device interface for a device interface class.
+The DEVPKEY_DeviceInterfaceClass_DefaultInterface device property represents the symbolic link name of the default device interface for a device interface class.
 
 <table>
 <colgroup>
@@ -50,9 +50,9 @@ Remarks
 
 For information about how to install and using device interfaces, see [Device Interface Classes](https://msdn.microsoft.com/library/windows/hardware/ff541339) and the [**INF AddInterface Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546310).
 
-You can retrieve the value of DEVPKEY\_DeviceInterfaceClass\_DefaultInterface by calling [**SetupDiGetDeviceInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551122). You can set DEVPKEY\_DeviceInterfaceClass\_DefaultInterface by calling [**SetupDiSetDeviceInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552158).
+You can retrieve the value of DEVPKEY_DeviceInterfaceClass_DefaultInterface by calling [**SetupDiGetDeviceInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551122). You can set DEVPKEY_DeviceInterfaceClass_DefaultInterface by calling [**SetupDiSetDeviceInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552158).
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_DeviceInterfaceClass\_DefaultInterface property key. For information about how to access the default interface of a device interface class on these earlier versions of Windows, see [Accessing Device Interface Class Properties](https://msdn.microsoft.com/library/windows/hardware/ff537739).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceInterfaceClass_DefaultInterface property key. For information about how to access the default interface of a device interface class on these earlier versions of Windows, see [Accessing Device Interface Class Properties](https://msdn.microsoft.com/library/windows/hardware/ff537739).
 
 Requirements
 ------------

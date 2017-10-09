@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_BusReportedDeviceDesc
-description: DEVPKEY\_Device\_BusReportedDeviceDesc
+title: DEVPKEY_Device_BusReportedDeviceDesc
+description: DEVPKEY_Device_BusReportedDeviceDesc
 ms.assetid: 3a03b4f0-728c-4a15-9c97-03d03f65afc7
 keywords: ["DEVPKEY_Device_BusReportedDeviceDesc Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_BusReportedDeviceDesc
+# DEVPKEY_Device_BusReportedDeviceDesc
 
 
-The DEVPKEY\_Device\_BusReportedDeviceDesc device property represents a string value that was reported by the bus driver for the device instance.
+The DEVPKEY_Device_BusReportedDeviceDesc device property represents a string value that was reported by the bus driver for the device instance.
 
 <table>
 <colgroup>
@@ -48,9 +48,9 @@ The DEVPKEY\_Device\_BusReportedDeviceDesc device property represents a string v
 Remarks
 -------
 
-The value of DEVPKEY\_Device\_BusReportedDeviceDesc is set by Windows Plug and Play (PnP) with the string value that is reported by the bus driver for a device instance. The bus driver returns this value when queried with [**IRP\_MN\_QUERY\_DEVICE\_TEXT**](https://msdn.microsoft.com/library/windows/hardware/ff551674).
+The value of DEVPKEY_Device_BusReportedDeviceDesc is set by Windows Plug and Play (PnP) with the string value that is reported by the bus driver for a device instance. The bus driver returns this value when queried with [**IRP_MN_QUERY_DEVICE_TEXT**](https://msdn.microsoft.com/library/windows/hardware/ff551674).
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_BusReportedDeviceDesc.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_BusReportedDeviceDesc.
 
 Requirements
 ------------

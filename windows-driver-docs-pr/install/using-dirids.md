@@ -247,7 +247,7 @@ Don't use [CopyFiles](inf-copyfiles-directive.md) to rename a file for which **D
 
  
 
-In addition to the values in this table that are defined in *Setupapi.h*, you can use any of the CSIDL\_*Xxx* values that are defined in *Shlobj.h*. To define a *dirid* value for a folder not listed in this table, add 16384 (0x4000) to the CSIDL\_*Xxx* value. For more information about CSIDL\_*Xxx* values, see the Windows SDK documentation.
+In addition to the values in this table that are defined in *Setupapi.h*, you can use any of the CSIDL_*Xxx* values that are defined in *Shlobj.h*. To define a *dirid* value for a folder not listed in this table, add 16384 (0x4000) to the CSIDL_*Xxx* value. For more information about CSIDL_*Xxx* values, see the Windows SDK documentation.
 
  
 

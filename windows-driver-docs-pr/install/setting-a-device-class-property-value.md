@@ -34,7 +34,7 @@ To set the value of a device class property, call [**SetupDiSetClassProperty**](
 
 -   Set *RequiredSize* to a DWORD-typed variable.
 
--   If the device class is a device setup class, set *Flags* to DICLASSPROP\_INSTALLER. Otherwise, if the device class is a device interface class, set *Flags* to DICLASSPROP\_INTERFACE.
+-   If the device class is a device setup class, set *Flags* to DICLASSPROP_INSTALLER. Otherwise, if the device class is a device interface class, set *Flags* to DICLASSPROP_INTERFACE.
 
 If a call to [**SetupDiSetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552128) succeeds, **SetupDiSetClassProperty** sets the device class property and returns **TRUE**. If the function call fails, **SetupDiSetClassProperty** returns **FALSE** and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
 

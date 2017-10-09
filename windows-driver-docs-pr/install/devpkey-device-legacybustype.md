@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_LegacyBusType
-description: DEVPKEY\_Device\_LegacyBusType
+title: DEVPKEY_Device_LegacyBusType
+description: DEVPKEY_Device_LegacyBusType
 ms.assetid: 76c2a472-bb05-4f6a-84da-0ae9e7c1fdf1
 keywords: ["DEVPKEY_Device_LegacyBusType Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_LegacyBusType
+# DEVPKEY_Device_LegacyBusType
 
 
-The DEVPKEY\_Device\_LegacyBusType device property represents the legacy bus number of a device instance.
+The DEVPKEY_Device_LegacyBusType device property represents the legacy bus number of a device instance.
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_Device\_LegacyBusType device property represents the legacy bus num
 Remarks
 -------
 
-Windows sets the value of DEVPKEY\_Device\_LegacyBusType to the value of the LegacyBusType member of the [**PNP\_BUS\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff559608) structure that a bus driver returns in response to an [**IRP\_MN\_QUERY\_BUS\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff551654) request. The value of DEVPKEY\_Device\_LegacyBusType is one of [**INTERFACE\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff547839) enumerator values that are defined in Wdm.h and Ntddk.h.
+Windows sets the value of DEVPKEY_Device_LegacyBusType to the value of the LegacyBusType member of the [**PNP_BUS_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff559608) structure that a bus driver returns in response to an [**IRP_MN_QUERY_BUS_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff551654) request. The value of DEVPKEY_Device_LegacyBusType is one of [**INTERFACE_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff547839) enumerator values that are defined in Wdm.h and Ntddk.h.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_LegacyBusType.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_LegacyBusType.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_LegacyBusType property key. Instead, you can use the corresponding SPDRP\_LEGACYBUSTYPE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_LegacyBusType property key. Instead, you can use the corresponding SPDRP_LEGACYBUSTYPE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------
@@ -81,11 +81,11 @@ Requirements
 ## See also
 
 
-[**INTERFACE\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff547839)
+[**INTERFACE_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff547839)
 
-[**IRP\_MN\_QUERY\_BUS\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff551654)
+[**IRP_MN_QUERY_BUS_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff551654)
 
-[**PNP\_BUS\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff559608)
+[**PNP_BUS_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff559608)
 
 [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
 

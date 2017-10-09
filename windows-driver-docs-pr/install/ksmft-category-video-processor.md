@@ -1,6 +1,6 @@
 ---
-title: KSMFT\_CATEGORY\_VIDEO\_PROCESSOR
-description: KSMFT\_CATEGORY\_VIDEO\_PROCESSOR
+title: KSMFT_CATEGORY_VIDEO_PROCESSOR
+description: KSMFT_CATEGORY_VIDEO_PROCESSOR
 ms.assetid: 9d27cea3-0d4f-4812-9e87-0b2295c99a5f
 keywords: ["KSMFT_CATEGORY_VIDEO_PROCESSOR Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSMFT\_CATEGORY\_VIDEO\_PROCESSOR
+# KSMFT_CATEGORY_VIDEO_PROCESSOR
 
 
-The KSMFT\_CATEGORY\_VIDEO\_PROCESSOR [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [Kernel Streaming](https://msdn.microsoft.com/library/windows/hardware/ff560842) (KS) functional category for a video device.
+The KSMFT_CATEGORY_VIDEO_PROCESSOR [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [Kernel Streaming](https://msdn.microsoft.com/library/windows/hardware/ff560842) (KS) functional category for a video device.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSMFT\_CATEGORY\_VIDEO\_PROCESSOR [device interface class](https://msdn.micr
 Remarks
 -------
 
-AVStream drivers that have MFT codec support register instances of this device interface class to indicate to the operating system that the devices support the KSMFT\_CATEGORY\_VIDEO\_PROCESSOR functional category.
+AVStream drivers that have MFT codec support register instances of this device interface class to indicate to the operating system that the devices support the KSMFT_CATEGORY_VIDEO_PROCESSOR functional category.
 
 For more information about device interface classes for AVStream devices with hardware codec support, see [Getting Started with Hardware Codec Support in AVStream](https://msdn.microsoft.com/library/windows/hardware/gg299325).
 

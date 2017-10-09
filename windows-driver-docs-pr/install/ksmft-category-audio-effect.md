@@ -1,6 +1,6 @@
 ---
-title: KSMFT\_CATEGORY\_AUDIO\_EFFECT
-description: KSMFT\_CATEGORY\_AUDIO\_EFFECT
+title: KSMFT_CATEGORY_AUDIO_EFFECT
+description: KSMFT_CATEGORY_AUDIO_EFFECT
 ms.assetid: a6747c99-3c16-4833-905a-52472a854f77
 keywords: ["KSMFT_CATEGORY_AUDIO_EFFECT Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSMFT\_CATEGORY\_AUDIO\_EFFECT
+# KSMFT_CATEGORY_AUDIO_EFFECT
 
 
-The KSMFT\_CATEGORY\_AUDIO\_EFFECT [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [Kernel Streaming](https://msdn.microsoft.com/library/windows/hardware/ff560842) (KS) functional category for an audio device.
+The KSMFT_CATEGORY_AUDIO_EFFECT [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [Kernel Streaming](https://msdn.microsoft.com/library/windows/hardware/ff560842) (KS) functional category for an audio device.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSMFT\_CATEGORY\_AUDIO\_EFFECT [device interface class](https://msdn.microso
 Remarks
 -------
 
-AVStream drivers that have MFT codec support register instances of this device interface class to indicate to the operating system that the devices support the KSMFT\_CATEGORY\_AUDIO\_EFFECT functional category.
+AVStream drivers that have MFT codec support register instances of this device interface class to indicate to the operating system that the devices support the KSMFT_CATEGORY_AUDIO_EFFECT functional category.
 
 For more information about device interface classes for AVStream devices with hardware codec support, see [Getting Started with Hardware Codec Support in AVStream](https://msdn.microsoft.com/library/windows/hardware/gg299325).
 

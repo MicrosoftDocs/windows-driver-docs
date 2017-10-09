@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DeviceInterface\_Restricted
-description: DEVPKEY\_DeviceInterface\_Restricted
+title: DEVPKEY_DeviceInterface_Restricted
+description: DEVPKEY_DeviceInterface_Restricted
 ms.assetid: 54C71B62-3F3D-462B-BF72-DDF1F97D3C75
 keywords: ["DEVPKEY_DeviceInterface_Restricted Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DeviceInterface\_Restricted
+# DEVPKEY_DeviceInterface_Restricted
 
 
-The DEVPKEY\_DeviceInterface\_Restricted device interface property indicates that the device interface on which it is present and set to TRUE, should be treated with privileged access by system components that honor the setting.
+The DEVPKEY_DeviceInterface_Restricted device interface property indicates that the device interface on which it is present and set to TRUE, should be treated with privileged access by system components that honor the setting.
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ The DEVPKEY\_DeviceInterface\_Restricted device interface property indicates tha
 Remarks
 -------
 
-You can call [**SetupDiGetDeviceInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551122) to retrieve the value of DEVPKEY\_DeviceInterface\_Restricted.
+You can call [**SetupDiGetDeviceInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551122) to retrieve the value of DEVPKEY_DeviceInterface_Restricted.
 
 Requirements
 ------------

@@ -1,6 +1,6 @@
 ---
-title: DEVPROP\_TYPE\_SECURITY\_DESCRIPTOR
-description: In Windows Vista and later versions of Windows, the DEVPROP\_TYPE\_SECURITY\_DESCRIPTOR identifier represents the base-data-type identifier that indicates the data type is a variable-length, self-relative, SECURITY\_DESCRIPTOR-typed, security descriptor.
+title: DEVPROP_TYPE_SECURITY_DESCRIPTOR
+description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_SECURITY_DESCRIPTOR identifier represents the base-data-type identifier that indicates the data type is a variable-length, self-relative, SECURITY_DESCRIPTOR-typed, security descriptor.
 ms.assetid: e8eea343-adaa-41b8-9556-962b5e6903fb
 keywords: ["DEVPROP_TYPE_SECURITY_DESCRIPTOR Device and Driver Installation"]
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPROP\_TYPE\_SECURITY\_DESCRIPTOR
+# DEVPROP_TYPE_SECURITY_DESCRIPTOR
 
 
-In Windows Vista and later versions of Windows, the DEVPROP\_TYPE\_SECURITY\_DESCRIPTOR identifier represents the base-data-type identifier that indicates the data type is a variable-length, self-relative, SECURITY\_DESCRIPTOR-typed, security descriptor.
+In Windows Vista and later versions of Windows, the DEVPROP_TYPE_SECURITY_DESCRIPTOR identifier represents the base-data-type identifier that indicates the data type is a variable-length, self-relative, SECURITY_DESCRIPTOR-typed, security descriptor.
 
 Remarks
 -------
 
-DEVPROP\_TYPE\_SECURITY\_DESCRIPTOR cannot be combined with the property-data-type modifiers.
+DEVPROP_TYPE_SECURITY_DESCRIPTOR cannot be combined with the property-data-type modifiers.
 
 ### Setting a Property of this Type
 
-To set a property whose base data type is DEVPROP\_TYPE\_SECURITY\_DESCRIPTOR, call the corresponding **SetupDiSet*Xxx*** property function and set the function input parameters as follows:
+To set a property whose base data type is DEVPROP_TYPE_SECURITY_DESCRIPTOR, call the corresponding **SetupDiSet*Xxx*** property function and set the function input parameters as follows:
 
--   Set the *PropertyType* parameter to DEVPROP\_TYPE\_SECURITY\_DESCRIPTOR, set the *PropertyBuffer* parameter to a pointer to a buffer that contains a variable length SECURITY\_DESCRIPTOR structure, and set the *PropertyBufferSize* parameter to the size, in bytes, of the security descriptor structure.
+-   Set the *PropertyType* parameter to DEVPROP_TYPE_SECURITY_DESCRIPTOR, set the *PropertyBuffer* parameter to a pointer to a buffer that contains a variable length SECURITY_DESCRIPTOR structure, and set the *PropertyBufferSize* parameter to the size, in bytes, of the security descriptor structure.
 
 -   Set the other function input parameters as appropriate to set the property.
 

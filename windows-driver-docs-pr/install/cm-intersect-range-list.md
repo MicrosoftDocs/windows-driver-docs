@@ -1,6 +1,6 @@
 ---
-title: CM\_Intersect\_Range\_List
-description: CM\_Intersect\_Range\_List
+title: CM_Intersect_Range_List
+description: CM_Intersect_Range_List
 ms.assetid: 37504017-ff18-4b46-a202-90db4485f282
 keywords: ["CM_Intersect_Range_List Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# CM\_Intersect\_Range\_List
+# CM_Intersect_Range_List
 
 
  

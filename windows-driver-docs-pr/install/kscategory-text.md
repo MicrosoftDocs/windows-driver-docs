@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_TEXT
-description: KSCATEGORY\_TEXT
+title: KSCATEGORY_TEXT
+description: KSCATEGORY_TEXT
 ms.assetid: 05a027ee-b342-4200-b753-33942a77e455
 keywords: ["KSCATEGORY_TEXT Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_TEXT
+# KSCATEGORY_TEXT
 
 
-The KSCATEGORY\_TEXT [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that supports text data.
+The KSCATEGORY_TEXT [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that supports text data.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSCATEGORY\_TEXT [device interface class](https://msdn.microsoft.com/library
 Remarks
 -------
 
-Drivers for KS devices register instances of KSCATEGORY\_TEXT to indicate that the devices support the KSCATEGORY\_TEXT functional category.
+Drivers for KS devices register instances of KSCATEGORY_TEXT to indicate that the devices support the KSCATEGORY_TEXT functional category.
 
 Requirements
 ------------

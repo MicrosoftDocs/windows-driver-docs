@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVINTERFACE\_PARTITION
-description: GUID\_DEVINTERFACE\_PARTITION
+title: GUID_DEVINTERFACE_PARTITION
+description: GUID_DEVINTERFACE_PARTITION
 ms.assetid: c489b62a-167d-47a9-bfeb-fdd40cc8dece
 keywords: ["GUID_DEVINTERFACE_PARTITION Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVINTERFACE\_PARTITION
+# GUID_DEVINTERFACE_PARTITION
 
 
-The GUID\_DEVINTERFACE\_PARTITION [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for partition devices.
+The GUID_DEVINTERFACE_PARTITION [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for partition devices.
 
 <table>
 <colgroup>
@@ -46,9 +46,9 @@ The GUID\_DEVINTERFACE\_PARTITION [device interface class](https://msdn.microsof
 Remarks
 -------
 
-The system-supplied [storage drivers](https://msdn.microsoft.com/library/windows/hardware/ff566976) register an instance of GUID\_DEVINTERFACE\_PARTITION for a partition that is a child device of a [storage device](https://msdn.microsoft.com/library/windows/hardware/ff566969).
+The system-supplied [storage drivers](https://msdn.microsoft.com/library/windows/hardware/ff566976) register an instance of GUID_DEVINTERFACE_PARTITION for a partition that is a child device of a [storage device](https://msdn.microsoft.com/library/windows/hardware/ff566969).
 
-[**PartitionClassGuid**](partitionclassguid.md) is an obsolete identifier for the GUID\_DEVINTERFACE\_PARTITION device interface class. For new instances of this class, use GUID\_DEVINTERFACE\_PARTITION instead.
+[**PartitionClassGuid**](partitionclassguid.md) is an obsolete identifier for the GUID_DEVINTERFACE_PARTITION device interface class. For new instances of this class, use GUID_DEVINTERFACE_PARTITION instead.
 
 Requirements
 ------------

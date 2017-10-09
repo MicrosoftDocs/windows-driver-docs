@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DeviceClass\_ClassInstaller
-description: DEVPKEY\_DeviceClass\_ClassInstaller
+title: DEVPKEY_DeviceClass_ClassInstaller
+description: DEVPKEY_DeviceClass_ClassInstaller
 ms.assetid: 7bde624e-37e5-4603-bf8c-1122b7090ab2
 keywords: ["DEVPKEY_DeviceClass_ClassInstaller Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DeviceClass\_ClassInstaller
+# DEVPKEY_DeviceClass_ClassInstaller
 
 
-The DEVPKEY\_DeviceClass\_ClassInstaller device property represents the class installer for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
+The DEVPKEY_DeviceClass_ClassInstaller device property represents the class installer for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
 
 <table>
 <colgroup>
@@ -56,13 +56,13 @@ The DEVPKEY\_DeviceClass\_ClassInstaller device property represents the class in
 Remarks
 -------
 
-The value of DEVPKEY\_DeviceClass\_ClassInstaller is the value of the **Installer32** registry value under the class registry key. This entry contains the name of the class installer DLL and the installer's entry point for the device setup class.
+The value of DEVPKEY_DeviceClass_ClassInstaller is the value of the **Installer32** registry value under the class registry key. This entry contains the name of the class installer DLL and the installer's entry point for the device setup class.
 
 The **Installer32** registry value for a device setup class can be set by an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF ClassInstall32 Section**](https://msdn.microsoft.com/library/windows/hardware/ff546335) of the INF file that installs a device setup class.
 
-You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY\_DeviceClass\_ClassInstaller.
+You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY_DeviceClass_ClassInstaller.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_DeviceClass\_ClassInstaller property key. You can access the value of this property by accessing the corresponding **Installer32** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](https://msdn.microsoft.com/library/windows/hardware/ff537751).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_ClassInstaller property key. You can access the value of this property by accessing the corresponding **Installer32** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](https://msdn.microsoft.com/library/windows/hardware/ff537751).
 
 Requirements
 ------------

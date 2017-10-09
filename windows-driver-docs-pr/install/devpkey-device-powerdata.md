@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_PowerData
-description: DEVPKEY\_Device\_PowerData
+title: DEVPKEY_Device_PowerData
+description: DEVPKEY_Device_PowerData
 ms.assetid: a5ebb465-674c-483a-ae2c-c46c30a67662
 keywords: ["DEVPKEY_Device_PowerData Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_PowerData
+# DEVPKEY_Device_PowerData
 
 
-The DEVPKEY\_Device\_PowerData device property represents power information about a device instance.
+The DEVPKEY_Device_PowerData device property represents power information about a device instance.
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_Device\_PowerData device property represents power information abou
 Remarks
 -------
 
-Windows sets the value of DEVPKEY\_Device\_PowerData. The value of DEVPKEY\_Device\_PowerData contains a [**CM\_POWER\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff541989) structure.
+Windows sets the value of DEVPKEY_Device_PowerData. The value of DEVPKEY_Device_PowerData contains a [**CM_POWER_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff541989) structure.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_PowerData.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_PowerData.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_PowerData property key. Instead, you can use the corresponding SPDRP\_DEVICE\_POWER\_DATA identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_PowerData property key. Instead, you can use the corresponding SPDRP_DEVICE_POWER_DATA identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------
@@ -81,7 +81,7 @@ Requirements
 ## See also
 
 
-[**CM\_POWER\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff541989)
+[**CM_POWER_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff541989)
 
 [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
 

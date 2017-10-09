@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_Legacy
-description: DEVPKEY\_Device\_Legacy
+title: DEVPKEY_Device_Legacy
+description: DEVPKEY_Device_Legacy
 ms.assetid: a2af9881-3aa3-45a7-9b80-cb507460957e
 keywords: ["DEVPKEY_Device_Legacy Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_Legacy
+# DEVPKEY_Device_Legacy
 
 
-The DEVPKEY\_Device\_Legacy device property represents a Boolean value that indicates whether a device is a root-enumerated device that the Plug and Play (PnP) manager automatically created when the non-PnP driver for the device was loaded.
+The DEVPKEY_Device_Legacy device property represents a Boolean value that indicates whether a device is a root-enumerated device that the Plug and Play (PnP) manager automatically created when the non-PnP driver for the device was loaded.
 
 <table>
 <colgroup>
@@ -48,9 +48,9 @@ The DEVPKEY\_Device\_Legacy device property represents a Boolean value that indi
 Remarks
 -------
 
-The PnP manager sets the value of DEVPKEY\_Device\_Reported to DEVPROP\_TRUE if the PnP manager automatically created the device as a root-enumerated device when the non-PnP driver for the device was loaded. Otherwise, the PnP manager sets the value of the property to DEVPROP\_FALSE.
+The PnP manager sets the value of DEVPKEY_Device_Reported to DEVPROP_TRUE if the PnP manager automatically created the device as a root-enumerated device when the non-PnP driver for the device was loaded. Otherwise, the PnP manager sets the value of the property to DEVPROP_FALSE.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_Legacy.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_Legacy.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not support this property.
 

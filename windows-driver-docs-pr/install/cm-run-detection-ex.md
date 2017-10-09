@@ -1,6 +1,6 @@
 ---
-title: CM\_Run\_Detection\_Ex
-description: CM\_Run\_Detection\_Ex
+title: CM_Run_Detection_Ex
+description: CM_Run_Detection_Ex
 ms.assetid: 0e10e07c-53c7-4f51-93b2-947755f783bf
 keywords: ["CM_Run_Detection_Ex Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# CM\_Run\_Detection\_Ex
+# CM_Run_Detection_Ex
 
 
 This function is obsolete and no longer supported.

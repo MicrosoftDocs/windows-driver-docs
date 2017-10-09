@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DeviceClass\_IconPath
-description: DEVPKEY\_DeviceClass\_IconPath
+title: DEVPKEY_DeviceClass_IconPath
+description: DEVPKEY_DeviceClass_IconPath
 ms.assetid: c81ea18d-dd21-4b5e-8aba-52f7ad6931bf
 keywords: ["DEVPKEY_DeviceClass_IconPath Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DeviceClass\_IconPath
+# DEVPKEY_DeviceClass_IconPath
 
 
-The DEVPKEY\_DeviceClass\_IconPath device property represents an icon list for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
+The DEVPKEY_DeviceClass_IconPath device property represents an icon list for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
 
 <table>
 <colgroup>
@@ -52,9 +52,9 @@ The DEVPKEY\_DeviceClass\_IconPath device property represents an icon list for a
 Remarks
 -------
 
-You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY\_DeviceClass\_IconPath.
+You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY_DeviceClass_IconPath.
 
-A DEVPKEY\_DeviceClass\_IconPath value is a REG\_MULTI\_SZ-typed list of icon resource specifiers in the format that is used by the Windows shell. The format of an icon resource specifier is "*executable-file-path*,*resource-identifier*," where *executable-file-path* contains the fully qualified path of the file on a computer that contains the icon resource and *resource-identifier* specifies an integer that identifies the resource. For example, the icon resource specifier "%SystemRoot%\\system32\\DLL1.dll,-12" contains the executable file path "%SystemRoot%\\system32\\DLL1.dll" and the resource identifier "-12".
+A DEVPKEY_DeviceClass_IconPath value is a REG_MULTI_SZ-typed list of icon resource specifiers in the format that is used by the Windows shell. The format of an icon resource specifier is "*executable-file-path*,*resource-identifier*," where *executable-file-path* contains the fully qualified path of the file on a computer that contains the icon resource and *resource-identifier* specifies an integer that identifies the resource. For example, the icon resource specifier "%SystemRoot%\\system32\\DLL1.dll,-12" contains the executable file path "%SystemRoot%\\system32\\DLL1.dll" and the resource identifier "-12".
 
 Windows Server 2003, Windows XP, and Windows 2000 do not support this property. For information about how to access icon information for a device setup class on these versions of Windows, see [Accessing Icon Properties of a Device Setup Class](https://msdn.microsoft.com/library/windows/hardware/ff537746).
 

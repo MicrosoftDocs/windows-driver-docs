@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_BDA\_RECEIVER\_COMPONENT
-description: KSCATEGORY\_BDA\_RECEIVER\_COMPONENT
+title: KSCATEGORY_BDA_RECEIVER_COMPONENT
+description: KSCATEGORY_BDA_RECEIVER_COMPONENT
 ms.assetid: f160662e-651c-444f-aa82-cfc73c19e41d
 keywords: ["KSCATEGORY_BDA_RECEIVER_COMPONENT Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_BDA\_RECEIVER\_COMPONENT
+# KSCATEGORY_BDA_RECEIVER_COMPONENT
 
 
-The KSCATEGORY\_BDA\_RECEIVER\_COMPONENT [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a receiver in the [broadcast driver architecture](https://msdn.microsoft.com/library/windows/hardware/ff556573) (BDA).
+The KSCATEGORY_BDA_RECEIVER_COMPONENT [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a receiver in the [broadcast driver architecture](https://msdn.microsoft.com/library/windows/hardware/ff556573) (BDA).
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSCATEGORY\_BDA\_RECEIVER\_COMPONENT [device interface class](https://msdn.m
 Remarks
 -------
 
-Drivers for BDA devices register instances of KSCATEGORY\_BDA\_RECEIVER\_COMPONENT to indicate to the operating system that the devices support a BDA receiver filter.
+Drivers for BDA devices register instances of KSCATEGORY_BDA_RECEIVER_COMPONENT to indicate to the operating system that the devices support a BDA receiver filter.
 
 For more information about the KS functional category for a BDA receiver filters, see [Common Control Nodes and Filters](https://msdn.microsoft.com/library/windows/hardware/ff557718), [Starting a BDA Minidriver](https://msdn.microsoft.com/library/windows/hardware/ff568223), and [BDA Filter Category GUIDs](https://msdn.microsoft.com/library/windows/hardware/ff556521).
 

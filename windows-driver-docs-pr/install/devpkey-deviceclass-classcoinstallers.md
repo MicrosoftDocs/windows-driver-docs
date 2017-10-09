@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DeviceClass\_ClassCoInstallers
-description: DEVPKEY\_DeviceClass\_ClassCoInstallers
+title: DEVPKEY_DeviceClass_ClassCoInstallers
+description: DEVPKEY_DeviceClass_ClassCoInstallers
 ms.assetid: c1369006-5329-48c7-afe0-ddce44889bbc
 keywords: ["DEVPKEY_DeviceClass_ClassCoInstallers Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DeviceClass\_ClassCoInstallers
+# DEVPKEY_DeviceClass_ClassCoInstallers
 
 
-The DEVPKEY\_DeviceClass\_ClassCoInstallers device property represents a list of the class co-installers that are installed for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
+The DEVPKEY_DeviceClass_ClassCoInstallers device property represents a list of the class co-installers that are installed for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
 
 <table>
 <colgroup>
@@ -60,9 +60,9 @@ Each class installer in the class co-installer list is identified by its DLL and
 
 For information about how to install a class co-installer, see [Registering a Class Co-installer](https://msdn.microsoft.com/library/windows/hardware/ff549801).
 
-You can retrieve the value of DEVPKEY\_DeviceClass\_ClassCoInstallers by calling [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090). You can set DEVPKEY\_DeviceClass\_ClassCoInstallers by calling [**SetupDiSetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552128) or [**SetupDiSetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552132).
+You can retrieve the value of DEVPKEY_DeviceClass_ClassCoInstallers by calling [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090). You can set DEVPKEY_DeviceClass_ClassCoInstallers by calling [**SetupDiSetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552128) or [**SetupDiSetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552132).
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_DeviceClass\_ClassCoInstallers property key. For information about how to access the corresponding information on these earlier versions of Windows, see [Accessing the Co-installers Registry Entry Value of a Device Setup Class](https://msdn.microsoft.com/library/windows/hardware/ff537754).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_ClassCoInstallers property key. For information about how to access the corresponding information on these earlier versions of Windows, see [Accessing the Co-installers Registry Entry Value of a Device Setup Class](https://msdn.microsoft.com/library/windows/hardware/ff537754).
 
 Requirements
 ------------

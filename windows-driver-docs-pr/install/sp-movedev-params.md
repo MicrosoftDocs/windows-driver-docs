@@ -1,6 +1,6 @@
 ---
-title: SP\_MOVEDEV\_PARAMS
-description: SP\_MOVEDEV\_PARAMS
+title: SP_MOVEDEV_PARAMS
+description: SP_MOVEDEV_PARAMS
 ms.assetid: 6410cdc3-5ec3-4fe1-8513-c0797b6a2582
 keywords: ["SP_MOVEDEV_PARAMS Device and Driver Installation"]
 topic_type:
@@ -11,12 +11,12 @@ api_type:
 - NA
 ---
 
-# SP\_MOVEDEV\_PARAMS
+# SP_MOVEDEV_PARAMS
 
 
 This structure is obsolete.
 
-This structure is associated with the [**DIF\_MOVEDEVICE**](dif-movedevice.md) request, which is obsolete and cannot be used with any version of Microsoft Windows.
+This structure is associated with the [**DIF_MOVEDEVICE**](dif-movedevice.md) request, which is obsolete and cannot be used with any version of Microsoft Windows.
 
  
 

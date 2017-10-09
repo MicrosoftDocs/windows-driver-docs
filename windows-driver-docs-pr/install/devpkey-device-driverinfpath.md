@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_DriverInfPath
-description: DEVPKEY\_Device\_DriverInfPath
+title: DEVPKEY_Device_DriverInfPath
+description: DEVPKEY_Device_DriverInfPath
 ms.assetid: ceb1f25b-284c-4a59-a019-dbb5bbb88626
 keywords: ["DEVPKEY_Device_DriverInfPath Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_DriverInfPath
+# DEVPKEY_Device_DriverInfPath
 
 
-The PKEY\_Device\_DriverInfPath device property represents the name of the INF file that installed a device instance.
+The PKEY_Device_DriverInfPath device property represents the name of the INF file that installed a device instance.
 
 <table>
 <colgroup>
@@ -53,11 +53,11 @@ The PKEY\_Device\_DriverInfPath device property represents the name of the INF f
 Remarks
 -------
 
-Windows sets the value of DEVPKEY\_Device\_DriverInfPath. A copy of the INF file that installed a device is located in the system INF file directory. The name of the INF file copy is Oem*Nnn*.inf, where *Nnn* is a decimal number from 0 through 9999.
+Windows sets the value of DEVPKEY_Device_DriverInfPath. A copy of the INF file that installed a device is located in the system INF file directory. The name of the INF file copy is Oem*Nnn*.inf, where *Nnn* is a decimal number from 0 through 9999.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_DriverInfPath.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_DriverInfPath.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_DriverInfPath property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **InfPath** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverInfPath property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **InfPath** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
 
 Requirements
 ------------

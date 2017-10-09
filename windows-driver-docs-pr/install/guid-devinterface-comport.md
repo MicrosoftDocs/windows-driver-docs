@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVINTERFACE\_COMPORT
-description: GUID\_DEVINTERFACE\_COMPORT
+title: GUID_DEVINTERFACE_COMPORT
+description: GUID_DEVINTERFACE_COMPORT
 ms.assetid: ce7fbe64-1445-4702-898e-2fc92f96ebf9
 keywords: ["GUID_DEVINTERFACE_COMPORT Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVINTERFACE\_COMPORT
+# GUID_DEVINTERFACE_COMPORT
 
 
-The GUID\_DEVINTERFACE\_COMPORT [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [COM ports](https://msdn.microsoft.com/library/windows/hardware/ff546485).
+The GUID_DEVINTERFACE_COMPORT [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [COM ports](https://msdn.microsoft.com/library/windows/hardware/ff546485).
 
 <table>
 <colgroup>
@@ -56,7 +56,7 @@ The following samples (on Github) register an instance of this class for a seria
 -   [The Virtual serial driver sample](http://go.microsoft.com/fwlink/p/?LinkId=617963) (UMDF 1.0)
 -   [The Virtual serial2 driver sample](http://go.microsoft.com/fwlink/p/?LinkId=722209) (KMDF)
 
-[**GUID\_CLASS\_COMPORT**](guid-class-comport.md) is an obsolete identifier for this device interface class; for new instances of this class, use GUID\_DEVINTERFACE\_COMPORT instead.
+[**GUID_CLASS_COMPORT**](guid-class-comport.md) is an obsolete identifier for this device interface class; for new instances of this class, use GUID_DEVINTERFACE_COMPORT instead.
 
 Requirements
 ------------
@@ -81,7 +81,7 @@ Requirements
 ## See also
 
 
-[**GUID\_CLASS\_COMPORT**](guid-class-comport.md)
+[**GUID_CLASS_COMPORT**](guid-class-comport.md)
 
  
 

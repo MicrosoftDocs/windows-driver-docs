@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVINTERFACE\_TAPE
-description: GUID\_DEVINTERFACE\_TAPE
+title: GUID_DEVINTERFACE_TAPE
+description: GUID_DEVINTERFACE_TAPE
 ms.assetid: af19bdf6-5205-4fc1-842f-081e34ea2337
 keywords: ["GUID_DEVINTERFACE_TAPE Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVINTERFACE\_TAPE
+# GUID_DEVINTERFACE_TAPE
 
 
-The GUID\_DEVINTERFACE\_TAPE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for tape [storage devices](https://msdn.microsoft.com/library/windows/hardware/ff566969).
+The GUID_DEVINTERFACE_TAPE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for tape [storage devices](https://msdn.microsoft.com/library/windows/hardware/ff566969).
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The GUID\_DEVINTERFACE\_TAPE [device interface class](https://msdn.microsoft.com
 Remarks
 -------
 
-The system-supplied [tape class driver](https://msdn.microsoft.com/library/windows/hardware/ff567961) registers an instance of GUID\_DEVINTERFACE\_TAPE to notify the operating system and applications of the presence of tape storage devices.
+The system-supplied [tape class driver](https://msdn.microsoft.com/library/windows/hardware/ff567961) registers an instance of GUID_DEVINTERFACE_TAPE to notify the operating system and applications of the presence of tape storage devices.
 
 For more information about storage drivers, see [Storage Drivers](https://msdn.microsoft.com/library/windows/hardware/ff566976).
 

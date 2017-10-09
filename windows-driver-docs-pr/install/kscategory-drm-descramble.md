@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_DRM\_DESCRAMBLE
-description: KSCATEGORY\_DRM\_DESCRAMBLE
+title: KSCATEGORY_DRM_DESCRAMBLE
+description: KSCATEGORY_DRM_DESCRAMBLE
 ms.assetid: 3bb6887f-4fc9-452e-bceb-35fe26844ac5
 keywords: ["KSCATEGORY_DRM_DESCRAMBLE Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_DRM\_DESCRAMBLE
+# KSCATEGORY_DRM_DESCRAMBLE
 
 
-The KSCATEGORY\_DRM\_DESCRAMBLE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that unscrambles a DRM-protected wave stream.
+The KSCATEGORY_DRM_DESCRAMBLE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that unscrambles a DRM-protected wave stream.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSCATEGORY\_DRM\_DESCRAMBLE [device interface class](https://msdn.microsoft.
 Remarks
 -------
 
-Drivers for KS devices register instances of KSCATEGORY\_DRM\_DESCRAMBLE to indicate to the operating system that the devices support the KSCATEGORY\_DRM\_DESCRAMBLE functional category.
+Drivers for KS devices register instances of KSCATEGORY_DRM_DESCRAMBLE to indicate to the operating system that the devices support the KSCATEGORY_DRM_DESCRAMBLE functional category.
 
 For more information about this functional category, see [Installing Device Interfaces for an Audio Adapter](https://msdn.microsoft.com/library/windows/hardware/ff536813).
 

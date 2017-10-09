@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DeviceClass\_LowerFilters
-description: DEVPKEY\_DeviceClass\_LowerFilters
+title: DEVPKEY_DeviceClass_LowerFilters
+description: DEVPKEY_DeviceClass_LowerFilters
 ms.assetid: 39bc784e-a8be-4921-9a12-f423fe502019
 keywords: ["DEVPKEY_DeviceClass_LowerFilters Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DeviceClass\_LowerFilters
+# DEVPKEY_DeviceClass_LowerFilters
 
 
-The DEVPKEY\_DeviceClass\_LowerFilters device property represents a list of the service names of the lower-level filter drivers that are installed for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
+The DEVPKEY_DeviceClass_LowerFilters device property represents a list of the service names of the lower-level filter drivers that are installed for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
 
 <table>
 <colgroup>
@@ -60,11 +60,11 @@ The DEVPKEY\_DeviceClass\_LowerFilters device property represents a list of the 
 Remarks
 -------
 
-The value of DEVPKEY\_DeviceClass\_LowerFilters is set when a class filter driver is installed. For more information about how to install a class filter driver, see [Installing a Filter Driver](https://msdn.microsoft.com/library/windows/hardware/ff547595) and [**INF ClassInstall32 Section**](https://msdn.microsoft.com/library/windows/hardware/ff546335).
+The value of DEVPKEY_DeviceClass_LowerFilters is set when a class filter driver is installed. For more information about how to install a class filter driver, see [Installing a Filter Driver](https://msdn.microsoft.com/library/windows/hardware/ff547595) and [**INF ClassInstall32 Section**](https://msdn.microsoft.com/library/windows/hardware/ff546335).
 
-You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY\_DeviceClass\_LowerFilters.
+You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY_DeviceClass_LowerFilters.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_DeviceClass\_LowerFilters property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **LowerFilters** registry value under the class registry key. For information about how to access this property value on these earlier versions of Windows, see [Accessing Registry Entry Values Under the Class Registry Key](https://msdn.microsoft.com/library/windows/hardware/ff537751).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_LowerFilters property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **LowerFilters** registry value under the class registry key. For information about how to access this property value on these earlier versions of Windows, see [Accessing Registry Entry Values Under the Class Registry Key](https://msdn.microsoft.com/library/windows/hardware/ff537751).
 
 Requirements
 ------------

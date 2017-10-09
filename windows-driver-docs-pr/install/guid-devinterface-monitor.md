@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVINTERFACE\_MONITOR
-description: GUID\_DEVINTERFACE\_MONITOR
+title: GUID_DEVINTERFACE_MONITOR
+description: GUID_DEVINTERFACE_MONITOR
 ms.assetid: b75de360-44f3-4e8b-860c-57355757b6dd
 keywords: ["GUID_DEVINTERFACE_MONITOR Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVINTERFACE\_MONITOR
+# GUID_DEVINTERFACE_MONITOR
 
 
-The GUID\_DEVINTERFACE\_MONITOR [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [monitor devices](https://msdn.microsoft.com/library/windows/hardware/ff568428).
+The GUID_DEVINTERFACE_MONITOR [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [monitor devices](https://msdn.microsoft.com/library/windows/hardware/ff568428).
 
 <table>
 <colgroup>

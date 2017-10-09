@@ -1,6 +1,6 @@
 ---
-title: DIF\_VALIDATEDRIVER
-description: DIF\_VALIDATEDRIVER
+title: DIF_VALIDATEDRIVER
+description: DIF_VALIDATEDRIVER
 ms.assetid: a3ba3ee6-5f1e-47e6-bfc1-b77a42045023
 keywords: ["DIF_VALIDATEDRIVER Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# DIF\_VALIDATEDRIVER
+# DIF_VALIDATEDRIVER
 
 
 This DIF code is obsolete and no longer supported in Microsoft Windows 2000 and later versions of Windows.

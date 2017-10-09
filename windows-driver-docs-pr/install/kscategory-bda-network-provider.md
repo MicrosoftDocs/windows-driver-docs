@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_BDA\_NETWORK\_PROVIDER
-description: KSCATEGORY\_BDA\_NETWORK\_PROVIDER
+title: KSCATEGORY_BDA_NETWORK_PROVIDER
+description: KSCATEGORY_BDA_NETWORK_PROVIDER
 ms.assetid: a73f7ea3-19bf-4328-a96f-f28ee91db242
 keywords: ["KSCATEGORY_BDA_NETWORK_PROVIDER Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_BDA\_NETWORK\_PROVIDER
+# KSCATEGORY_BDA_NETWORK_PROVIDER
 
 
-The KSCATEGORY\_BDA\_NETWORK\_PROVIDER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a network provider in the [broadcast driver architecture](https://msdn.microsoft.com/library/windows/hardware/ff556573) (BDA).
+The KSCATEGORY_BDA_NETWORK_PROVIDER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a network provider in the [broadcast driver architecture](https://msdn.microsoft.com/library/windows/hardware/ff556573) (BDA).
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSCATEGORY\_BDA\_NETWORK\_PROVIDER [device interface class](https://msdn.mic
 Remarks
 -------
 
-Drivers for BDA devices register instances of KSCATEGORY\_BDA\_NETWORK\_PROVIDER to indicate to the operating system that the devices support a BDA network provider filter.
+Drivers for BDA devices register instances of KSCATEGORY_BDA_NETWORK_PROVIDER to indicate to the operating system that the devices support a BDA network provider filter.
 
 For more information, see [BDA Filter Category GUIDs](https://msdn.microsoft.com/library/windows/hardware/ff556521).
 

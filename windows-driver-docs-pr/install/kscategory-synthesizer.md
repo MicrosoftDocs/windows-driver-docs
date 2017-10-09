@@ -1,6 +1,6 @@
 ---
-title: KSCATEGORY\_SYNTHESIZER
-description: KSCATEGORY\_SYNTHESIZER
+title: KSCATEGORY_SYNTHESIZER
+description: KSCATEGORY_SYNTHESIZER
 ms.assetid: 07713c80-adff-4c3d-a9df-2c2865ef78d9
 keywords: ["KSCATEGORY_SYNTHESIZER Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# KSCATEGORY\_SYNTHESIZER
+# KSCATEGORY_SYNTHESIZER
 
 
-The KSCATEGORY\_SYNTHESIZER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that converts MIDI data to either wave audio samples or an analog output signal.
+The KSCATEGORY_SYNTHESIZER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that converts MIDI data to either wave audio samples or an analog output signal.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ The KSCATEGORY\_SYNTHESIZER [device interface class](https://msdn.microsoft.com/
 Remarks
 -------
 
-Drivers for KS audio adapter devices register instances of KSCATEGORY\_SYNTHESIZER to indicate to the operating system that the devices support the KSCATEGORY\_SYNTHESIZER functional category.
+Drivers for KS audio adapter devices register instances of KSCATEGORY_SYNTHESIZER to indicate to the operating system that the devices support the KSCATEGORY_SYNTHESIZER functional category.
 
 For an example of how to register this functional category in an INF file, see the *Ddksynth.inf* INF file that is included with the software synthesizer sample in the *src\\audio\\ddksynth* directory of the WDK.
 

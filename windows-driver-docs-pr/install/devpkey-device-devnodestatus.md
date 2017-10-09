@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_DevNodeStatus
-description: DEVPKEY\_Device\_DevNodeStatus
+title: DEVPKEY_Device_DevNodeStatus
+description: DEVPKEY_Device_DevNodeStatus
 ms.assetid: 538a78f0-c704-444e-8314-38b2e0421c39
 keywords: ["DEVPKEY_Device_DevNodeStatus Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_DevNodeStatus
+# DEVPKEY_Device_DevNodeStatus
 
 
-The DEVPKEY\_Device\_DevNodeStatus device property represents the status of a device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)).
+The DEVPKEY_Device_DevNodeStatus device property represents the status of a device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)).
 
 <table>
 <colgroup>
@@ -48,9 +48,9 @@ The DEVPKEY\_Device\_DevNodeStatus device property represents the status of a de
 Remarks
 -------
 
-The value of DEVPKEY\_Device\_DevNodeStatus is a bitwise OR of the DN\_*Xxx* bit flags that are defined in Cfg.h.
+The value of DEVPKEY_Device_DevNodeStatus is a bitwise OR of the DN_*Xxx* bit flags that are defined in Cfg.h.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_DevNodeStatus.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_DevNodeStatus.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not directly support this property. For information about how to access the status of a device instance on these earlier versions of Windows, see [Retrieving the Status and Problem Code for a Device Instance](https://msdn.microsoft.com/library/windows/hardware/ff550651).
 
@@ -77,7 +77,7 @@ Requirements
 ## See also
 
 
-[**CM\_Get\_DevNode\_Status**](https://msdn.microsoft.com/library/windows/hardware/ff538514)
+[**CM_Get_DevNode_Status**](https://msdn.microsoft.com/library/windows/hardware/ff538514)
 
 [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
 

@@ -1,6 +1,6 @@
 ---
-title: CM\_Merge\_Range\_List
-description: CM\_Merge\_Range\_List
+title: CM_Merge_Range_List
+description: CM_Merge_Range_List
 ms.assetid: 168d2b63-dff9-4a08-adce-41f9fe739094
 keywords: ["CM_Merge_Range_List Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# CM\_Merge\_Range\_List
+# CM_Merge_Range_List
 
 
  

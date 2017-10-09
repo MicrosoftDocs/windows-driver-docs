@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_DeviceClass\_NoUseClass
-description: DEVPKEY\_DeviceClass\_NoUseClass
+title: DEVPKEY_DeviceClass_NoUseClass
+description: DEVPKEY_DeviceClass_NoUseClass
 ms.assetid: 9b720e2d-0d81-42a4-acea-931428547231
 keywords: ["DEVPKEY_DeviceClass_NoUseClass Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_DeviceClass\_NoUseClass
+# DEVPKEY_DeviceClass_NoUseClass
 
 
-The DEVPKEY\_DeviceClass\_NoUseClass device property represents a Boolean flag that controls whether the Plug and Play (PnP) manager and SetupAPI use the [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
+The DEVPKEY_DeviceClass_NoUseClass device property represents a Boolean flag that controls whether the Plug and Play (PnP) manager and SetupAPI use the [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
 
 <table>
 <colgroup>
@@ -52,13 +52,13 @@ The DEVPKEY\_DeviceClass\_NoUseClass device property represents a Boolean flag t
 Remarks
 -------
 
-If the value of DEVPKEY\_DeviceClass\_NoUseClass is set to **1**, the PnP manager and SetupAPI do not use the device setup class. Otherwise, they do use the device setup class.
+If the value of DEVPKEY_DeviceClass_NoUseClass is set to **1**, the PnP manager and SetupAPI do not use the device setup class. Otherwise, they do use the device setup class.
 
 The **NoUseClass** registry value for a device setup class is set by an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF ClassInstall32 section**](https://msdn.microsoft.com/library/windows/hardware/ff546335) of the INF file that installs the class.
 
-You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY\_DeviceClass\_NoUseClass.
+You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY_DeviceClass_NoUseClass.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_DeviceClass\_NoUseClass property key. You can access the value of this property by accessing the corresponding **NoUseClass** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](https://msdn.microsoft.com/library/windows/hardware/ff537751).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_NoUseClass property key. You can access the value of this property by accessing the corresponding **NoUseClass** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](https://msdn.microsoft.com/library/windows/hardware/ff537751).
 
 Requirements
 ------------

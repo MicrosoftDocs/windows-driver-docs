@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_InstallDate
-description: DEVPKEY\_Device\_InstallDate
+title: DEVPKEY_Device_InstallDate
+description: DEVPKEY_Device_InstallDate
 ms.assetid: 16b26112-1081-40f0-b65b-aafa200aa2eb
 keywords: ["DEVPKEY_Device_InstallDate Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_InstallDate
+# DEVPKEY_Device_InstallDate
 
 
-The DEVPKEY\_Device\_InstallDate device property specifies the time stamp when the device instance was last installed in the system.
+The DEVPKEY_Device_InstallDate device property specifies the time stamp when the device instance was last installed in the system.
 
 <table>
 <colgroup>
@@ -48,11 +48,11 @@ The DEVPKEY\_Device\_InstallDate device property specifies the time stamp when t
 Remarks
 -------
 
-Windows sets the value of DEVPKEY\_Device\_InstallDate with the time stamp that specifies when the device instance was last installed in the system.
+Windows sets the value of DEVPKEY_Device_InstallDate with the time stamp that specifies when the device instance was last installed in the system.
 
 This time stamp value changes for each successive update of the device driver. For example, this time stamp reports the date and time when the device driver was last updated through Windows Update.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_FirstInstallDate property.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_FirstInstallDate property.
 
 Requirements
 ------------

@@ -1,6 +1,6 @@
 ---
-title: DIF\_INSTALLDEVICEFILES
-description: DIF\_INSTALLDEVICEFILES
+title: DIF_INSTALLDEVICEFILES
+description: DIF_INSTALLDEVICEFILES
 ms.assetid: 544a9a88-156e-494d-9ef0-8070addfa86b
 keywords: ["DIF_INSTALLDEVICEFILES Device and Driver Installation"]
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 ---
 
-# DIF\_INSTALLDEVICEFILES
+# DIF_INSTALLDEVICEFILES
 
 
-A DIF\_INSTALLDEVICEFILES request allows an installer to participate in copying the files to support a device or to make a list of the files for a device. The device files include files for the selected driver, any device interfaces, and any co-installers.
+A DIF_INSTALLDEVICEFILES request allows an installer to participate in copying the files to support a device or to make a list of the files for a device. The device files include files for the selected driver, any device interfaces, and any co-installers.
 
 ### When Sent
 
-The [system-provided device installation components](https://msdn.microsoft.com/library/windows/hardware/ff728855) send this DIF request for a variety of reasons. Some device installation components send this DIF request before DIF\_REGISTER\_COINSTALLERS, DIF\_INSTALLINTERFACES, and DIF\_INSTALL\_DEVICE to ensure that all the relevant files can be copied before proceeding with the installation. Some device installation components omit this DIF request and expect the files to be copied during the handling of those three DIF requests. In addition, some device installation components send this DIF request to retrieve the list of the files associated with a device.
+The [system-provided device installation components](https://msdn.microsoft.com/library/windows/hardware/ff728855) send this DIF request for a variety of reasons. Some device installation components send this DIF request before DIF_REGISTER_COINSTALLERS, DIF_INSTALLINTERFACES, and DIF_INSTALL_DEVICE to ensure that all the relevant files can be copied before proceeding with the installation. Some device installation components omit this DIF request and expect the files to be copied during the handling of those three DIF requests. In addition, some device installation components send this DIF request to retrieve the list of the files associated with a device.
 
 ### Who Handles
 
@@ -53,12 +53,12 @@ The [system-provided device installation components](https://msdn.microsoft.com/
 Supplies a handle to the [device information set](https://msdn.microsoft.com/library/windows/hardware/ff541247) that contains the device whose supporting files are to be copied.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Supplies a pointer to an [**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies the device in the device information set.
+Supplies a pointer to an [**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies the device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters ([**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
+There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
 
-If the DI\_NOVCP flag is set, the device installation parameters contain a valid **FileQueue** handle and installers that handle this DIF request add their file operations to this queue and do not commit the queue.
+If the DI_NOVCP flag is set, the device installation parameters contain a valid **FileQueue** handle and installers that handle this DIF request add their file operations to this queue and do not commit the queue.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
 None
@@ -70,11 +70,11 @@ An installer can modify the **FileQueue**, if there is one.
 
 ### Installer Return Value
 
-A co-installer can return NO\_ERROR, ERROR\_DI\_POSTPROCESSING\_REQUIRED, or a Win32 error code.
+A co-installer can return NO_ERROR, ERROR_DI_POSTPROCESSING_REQUIRED, or a Win32 error code.
 
-If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) should subsequently call the default handler, the class installer returns ERROR\_DI\_DO\_DEFAULT.
+If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) should subsequently call the default handler, the class installer returns ERROR_DI_DO_DEFAULT.
 
-If the class installer successfully handles this request, including directly calling the default handler, the class installer should return NO\_ERROR and **SetupDiCallClassInstaller** will not subsequently call the default handler again.
+If the class installer successfully handles this request, including directly calling the default handler, the class installer should return NO_ERROR and **SetupDiCallClassInstaller** will not subsequently call the default handler again.
 
 **Note**  The class installer can directly call the default handler, but the class installer should never attempt to supersede the operations of the default handler.
 
@@ -90,7 +90,7 @@ If the class installer encounters an error, the installer should return an appro
 
 ### Installer Operation
 
-In response to a DIF\_INSTALLDEVICEFILES request an installer specifies any necessary file operations. For example, an installer can specify an additional file to be copied that is required for device installation. If the DI\_NOVCP flag is set, an installer specifies file operations by adding them to the **FileQueue** in the device installation parameters. See the Microsoft Windows SDK for information about how to use file queues and for reference pages on file-queuing functions such as **SetupInstallFilesFromInfSection**.
+In response to a DIF_INSTALLDEVICEFILES request an installer specifies any necessary file operations. For example, an installer can specify an additional file to be copied that is required for device installation. If the DI_NOVCP flag is set, an installer specifies file operations by adding them to the **FileQueue** in the device installation parameters. See the Microsoft Windows SDK for information about how to use file queues and for reference pages on file-queuing functions such as **SetupInstallFilesFromInfSection**.
 
 If this DIF request is sent during device installation, and the installer returns a Microsoft Win32 error code, Windows stops the installation.
 
@@ -123,9 +123,9 @@ Requirements
 
 [**SetupDiInstallDriverFiles**](https://msdn.microsoft.com/library/windows/hardware/ff552048)
 
-[**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
+[**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
 
-[**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
+[**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
 
  
 

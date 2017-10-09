@@ -1,6 +1,6 @@
 ---
-title: CM\_Uninstall\_DevNode\_Ex
-description: CM\_Uninstall\_DevNode\_Ex
+title: CM_Uninstall_DevNode_Ex
+description: CM_Uninstall_DevNode_Ex
 ms.assetid: ef9d5186-0cd5-4a7e-8067-f8550ff648e6
 keywords: ["CM_Uninstall_DevNode_Ex Device and Driver Installation"]
 topic_type:
@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# CM\_Uninstall\_DevNode\_Ex
+# CM_Uninstall_DevNode_Ex
 
 
  

@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_LocationInfo
-description: DEVPKEY\_Device\_LocationInfo
+title: DEVPKEY_Device_LocationInfo
+description: DEVPKEY_Device_LocationInfo
 ms.assetid: c7eba222-20fe-4868-89e2-9dcef9965cec
 keywords: ["DEVPKEY_Device_LocationInfo Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_LocationInfo
+# DEVPKEY_Device_LocationInfo
 
 
-The DEVPKEY\_Device\_LocationInfo device property represents the bus-specific physical location of a device instance.
+The DEVPKEY_Device_LocationInfo device property represents the bus-specific physical location of a device instance.
 
 <table>
 <colgroup>
@@ -52,11 +52,11 @@ The DEVPKEY\_Device\_LocationInfo device property represents the bus-specific ph
 Remarks
 -------
 
-Windows sets the value of DEVPKEY\_Device\_LocationInfo to the value that the bus driver returns for a device instance in response to an [**IRP\_MN\_QUERY\_DEVICE\_TEXT**](https://msdn.microsoft.com/library/windows/hardware/ff551674) IRP.
+Windows sets the value of DEVPKEY_Device_LocationInfo to the value that the bus driver returns for a device instance in response to an [**IRP_MN_QUERY_DEVICE_TEXT**](https://msdn.microsoft.com/library/windows/hardware/ff551674) IRP.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) and **SetupDiGetDeviceProperty** to retrieve and set the value of DEVPKEY\_Device\_LocationInfo.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) and **SetupDiGetDeviceProperty** to retrieve and set the value of DEVPKEY_Device_LocationInfo.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_LocationInfo property key. Instead, you can use the corresponding SPDRP\_LOCATION\_INFORMATION identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_LocationInfo property key. Instead, you can use the corresponding SPDRP_LOCATION_INFORMATION identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------
@@ -81,7 +81,7 @@ Requirements
 ## See also
 
 
-[**IRP\_MN\_QUERY\_DEVICE\_TEXT**](https://msdn.microsoft.com/library/windows/hardware/ff551674)
+[**IRP_MN_QUERY_DEVICE_TEXT**](https://msdn.microsoft.com/library/windows/hardware/ff551674)
 
 [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
 

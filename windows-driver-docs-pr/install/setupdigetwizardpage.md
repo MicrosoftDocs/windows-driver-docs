@@ -14,7 +14,7 @@ api_type:
 # SetupDiGetWizardPage
 
 
-The **SetupDiGetWizardPage** function is reserved for system use. For information about wizard pages, see the DIF\_NEWDEVICEWIZARD\_*XXX* requests, for example, [**DIF\_NEWDEVICEWIZARD\_FINISHINSTALL**](dif-newdevicewizard-finishinstall.md).
+The **SetupDiGetWizardPage** function is reserved for system use. For information about wizard pages, see the DIF_NEWDEVICEWIZARD_*XXX* requests, for example, [**DIF_NEWDEVICEWIZARD_FINISHINSTALL**](dif-newdevicewizard-finishinstall.md).
 
 ```
 HPROPSHEETPAGE

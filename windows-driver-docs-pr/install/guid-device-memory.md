@@ -1,6 +1,6 @@
 ---
-title: GUID\_DEVICE\_MEMORY
-description: GUID\_DEVICE\_MEMORY
+title: GUID_DEVICE_MEMORY
+description: GUID_DEVICE_MEMORY
 ms.assetid: 8351585d-6538-41aa-891a-b7c1e0b75cef
 keywords: ["GUID_DEVICE_MEMORY Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# GUID\_DEVICE\_MEMORY
+# GUID_DEVICE_MEMORY
 
 
-The GUID\_DEVICE\_MEMORY [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for Advanced Configuration and Power Interface (ACPI) memory devices.
+The GUID_DEVICE_MEMORY [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for Advanced Configuration and Power Interface (ACPI) memory devices.
 
 <table>
 <colgroup>

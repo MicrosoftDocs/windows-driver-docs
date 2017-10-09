@@ -1,6 +1,6 @@
 ---
-title: DIF\_INSTALLINTERFACES
-description: DIF\_INSTALLINTERFACES
+title: DIF_INSTALLINTERFACES
+description: DIF_INSTALLINTERFACES
 ms.assetid: fd3eb56b-f73e-4699-accf-6bf70e2e54f8
 keywords: ["DIF_INSTALLINTERFACES Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DIF\_INSTALLINTERFACES
+# DIF_INSTALLINTERFACES
 
 
-A DIF\_INSTALLINTERFACES request allows an installer to participate in the registration of the device interfaces for a device.
+A DIF_INSTALLINTERFACES request allows an installer to participate in the registration of the device interfaces for a device.
 
 ### When Sent
 
@@ -53,10 +53,10 @@ After registering device co-installers but before completing device installation
 Supplies a handle to the [device information set](https://msdn.microsoft.com/library/windows/hardware/ff541247) that contains the device.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Supplies a pointer to an [**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies the device in the device information set.
+Supplies a pointer to an [**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies the device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters ([**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
+There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
 None
@@ -68,11 +68,11 @@ An installer might modify the device installation parameters, but not usually fo
 
 ### Installer Return Value
 
-A co-installer can return NO\_ERROR, ERROR\_DI\_POSTPROCESSING\_REQUIRED, or a Win32 error code.
+A co-installer can return NO_ERROR, ERROR_DI_POSTPROCESSING_REQUIRED, or a Win32 error code.
 
-If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) should subsequently call the default handler, the class installer returns ERROR\_DI\_DO\_DEFAULT.
+If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) should subsequently call the default handler, the class installer returns ERROR_DI_DO_DEFAULT.
 
-If the class installer successfully handles this request, including directly calling the default handler, the class installer should return NO\_ERROR and **SetupDiCallClassInstaller** will not subsequently call the default handler again.
+If the class installer successfully handles this request, including directly calling the default handler, the class installer should return NO_ERROR and **SetupDiCallClassInstaller** will not subsequently call the default handler again.
 
 **Note**  The class installer can directly call the default handler, but the class installer should never attempt to supersede the operations of the default handler.
 
@@ -88,11 +88,11 @@ If the class installer encounters an error, the installer should return an appro
 
 ### Installer Operation
 
-In response to a DIF\_INSTALLINTERFACES request an installer might register a device interface programmatically instead of having the interface registered through the INF file. Typically, vendor-supplied installers do not handle this DIF request.
+In response to a DIF_INSTALLINTERFACES request an installer might register a device interface programmatically instead of having the interface registered through the INF file. Typically, vendor-supplied installers do not handle this DIF request.
 
-Unless the DI\_NOFILECOPY flag is set, an installer that handles this DIF request should copy files that are required for the device interface(s).
+Unless the DI_NOFILECOPY flag is set, an installer that handles this DIF request should copy files that are required for the device interface(s).
 
-If the DI\_NOFILECOPY flag is clear but the DI\_NOVCP flag is set, the installer must enqueue any file operations to the supplied file queue but must not commit the queue.
+If the DI_NOFILECOPY flag is clear but the DI_NOVCP flag is set, the installer must enqueue any file operations to the supplied file queue but must not commit the queue.
 
 If an installer registers a device interface, a kernel-mode component for the device (for example, a driver) must call [**IoSetDeviceInterfaceState**](https://msdn.microsoft.com/library/windows/hardware/ff549700) to enable the interface.
 
@@ -125,9 +125,9 @@ Requirements
 
 [**SetupDiInstallDeviceInterfaces**](https://msdn.microsoft.com/library/windows/hardware/ff552043)
 
-[**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
+[**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
 
-[**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
+[**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
 
  
 

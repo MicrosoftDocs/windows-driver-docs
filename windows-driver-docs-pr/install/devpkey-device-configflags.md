@@ -1,6 +1,6 @@
 ---
-title: DEVPKEY\_Device\_ConfigFlags
-description: DEVPKEY\_Device\_ConfigFlags
+title: DEVPKEY_Device_ConfigFlags
+description: DEVPKEY_Device_ConfigFlags
 ms.assetid: 67ff3b29-ba25-4dcd-b21b-75203ee17973
 keywords: ["DEVPKEY_Device_ConfigFlags Device and Driver Installation"]
 topic_type:
@@ -13,10 +13,10 @@ api_type:
 - HeaderDef
 ---
 
-# DEVPKEY\_Device\_ConfigFlags
+# DEVPKEY_Device_ConfigFlags
 
 
-The DEVPKEY\_Device\_ConfigFlags device property represents the configuration flags that are set for a device instance.
+The DEVPKEY_Device_ConfigFlags device property represents the configuration flags that are set for a device instance.
 
 <table>
 <colgroup>
@@ -52,13 +52,13 @@ The DEVPKEY\_Device\_ConfigFlags device property represents the configuration fl
 Remarks
 -------
 
-The value of DEVPKEY\_Device\_ConfigFlags is set during a device installation to indicate the current configuration of a device.
+The value of DEVPKEY_Device_ConfigFlags is set during a device installation to indicate the current configuration of a device.
 
-The configuration flags are represented by the CONFIGFLAG\_*Xxx* bitmasks that are defined in Regstr.h.
+The configuration flags are represented by the CONFIGFLAG_*Xxx* bitmasks that are defined in Regstr.h.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY\_Device\_ConfigFlags and call [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163) to set DEVPKEY\_Device\_ConfigFlags.
+You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_ConfigFlags and call [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163) to set DEVPKEY_Device_ConfigFlags.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY\_Device\_ConfigFlags property key. Instead, you can use the corresponding SPDRP\_CONFIGFLAGS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP\_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_ConfigFlags property key. Instead, you can use the corresponding SPDRP_CONFIGFLAGS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
 
 Requirements
 ------------
