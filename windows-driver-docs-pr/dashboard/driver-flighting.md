@@ -36,7 +36,7 @@ Drivers can be promoted for flighting being submitted to the Windows Hardware De
 | Promotion Option                                                        | Description                                                                                                                              |
 |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | Automatically deliver and install the driver during Windows Upgrade     | Marks the driver for delivery via Dynamic Update, enabling it to be delivered to applicable machines during an operating system upgrade. |
-| Automatically deliver and install the driver on all applicable systems. | Marks the driver as a Critical Update (CU), enabling it to be automatically distributed through Windows Update.                          |
+| Automatically deliver and install the driver on all applicable systems. | Marks the driver as a Critical Update (CU), enabling it to be automatically installed via Windows Update.                                |
 3. Complete the additional details required for promotion for flighting:
     1. The email address of the Microsoft sponsor you are working with for the promotion
     2. The business justification for promoting the publication request
