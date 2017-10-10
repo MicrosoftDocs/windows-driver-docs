@@ -22,7 +22,7 @@ A subset of the mobile broadband API includes the PIN Management API. To unlock 
 
 2.  Create an [**IMbnInterfaceManager**](https://msdn.microsoft.com/library/windows/desktop/dd430416) instance.
 
-3.  Advise to the [**IMbnPinManagerEvents**](https://msdn.microsoft.com/library/windows/desktop/dd323118) and [**IMbnPinEvents**](https://msdn.microsoft.com/library/windows/desktop/dd323110) connection points (these are used for getting PIN state and unblock/unlock results).
+3.  Advise to the [**IMbnPinManagerEvents**](https://msdn.microsoft.com/library/windows/desktop/dd323118) and [**IMbnPinEvents**](https://msdn.microsoft.com/library/windows/desktop/dd323110) connection points (these are used for getting PIN state and unblock/unlock results). For more info, see the Remarks section of [**IMbnInterfaceManager**](https://msdn.microsoft.com/library/windows/desktop/dd430416).
 
 4.  Pass the network adapter ID into [**IMbnInterfaceManager::GetInterface**](https://msdn.microsoft.com/library/windows/desktop/dd430420) to get an [**IMbnInterface**](https://msdn.microsoft.com/library/windows/desktop/dd430406) interface for the device.
 
