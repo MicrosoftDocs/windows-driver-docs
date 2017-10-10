@@ -49,7 +49,7 @@ In most cases, co-installers should not interact with the user except during the
 
 Do not save device installation state within the [*co-installer*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-co-installer) dynamic-link library (DLL). Because Windows generally unloads the DLL after a DIF code is handled by the installer, any state information that is saved within the DLL would not persist.
 
-To safely preserve device installer state, class installers or co-installers should save the state information as properties within the device?s [*driver key*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-driver-key) in the registry. To do this, follow these steps:
+To safely preserve device installer state, class installers or co-installers should save the state information as properties within the device's [*driver key*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-driver-key) in the registry. To do this, follow these steps:
 
 1.  To retrieve a registry handle to the driver key for a [*device instance*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-instance), use [**SetupDiOpenDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552079) with the *KeyType* parameter set to DIREG\_DRV.
 

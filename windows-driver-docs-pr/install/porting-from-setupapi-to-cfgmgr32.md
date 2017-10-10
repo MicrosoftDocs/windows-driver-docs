@@ -304,30 +304,39 @@ GetInterfacesAndDevicePropertyCfgmgr32(
     ULONG PropertySize;
     DWORD Index = 0;
 
-    cr = CM_Get_Device_Interface_List_Size(&DeviceInterfaceListLength,
-                                           (LPGUID)&GUID_DEVINTERFACE_VOLUME,
-                                           NULL,
-                                           CM_GET_DEVICE_INTERFACE_LIST_ALL_DEVICES);
+    do {
+        cr = CM_Get_Device_Interface_List_Size(&DeviceInterfaceListLength,
+                                               (LPGUID)&GUID_DEVINTERFACE_VOLUME,
+                                               NULL,
+                                               CM_GET_DEVICE_INTERFACE_LIST_ALL_DEVICES);
 
-    if (cr != CR_SUCCESS)
-    {
-        goto Exit;
-    }
+        if (cr != CR_SUCCESS)
+        {
+            break;
+        }
 
-    DeviceInterfaceList = (PWSTR)HeapAlloc(GetProcessHeap(),
-                                           HEAP_ZERO_MEMORY,
-                                           DeviceInterfaceListLength * sizeof(WCHAR));
+        if (DeviceInterfaceList != NULL) {
+            HeapFree(GetProcessHeap(),
+                     0,
+                     DeviceInterfaceList);
+        }
 
-    if (DeviceInterfaceList == NULL)
-    {
-        goto Exit;
-    }
+        DeviceInterfaceList = (PWSTR)HeapAlloc(GetProcessHeap(),
+                                               HEAP_ZERO_MEMORY,
+                                               DeviceInterfaceListLength * sizeof(WCHAR));
 
-    cr = CM_Get_Device_Interface_List((LPGUID)&GUID_DEVINTERFACE_VOLUME,
-                                      NULL,
-                                      DeviceInterfaceList,
-                                      DeviceInterfaceListLength,
-                                      CM_GET_DEVICE_INTERFACE_LIST_ALL_DEVICES);
+        if (DeviceInterfaceList == NULL)
+        {
+            cr = CR_OUT_OF_MEMORY;
+            break;
+        }
+
+        cr = CM_Get_Device_Interface_List((LPGUID)&GUID_DEVINTERFACE_VOLUME,
+                                          NULL,
+                                          DeviceInterfaceList,
+                                          DeviceInterfaceListLength,
+                                          CM_GET_DEVICE_INTERFACE_LIST_ALL_DEVICES);
+    } while (cr == CR_BUFFER_SMALL);
 
     if (cr != CR_SUCCESS)
     {

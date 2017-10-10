@@ -88,98 +88,98 @@ You can use the commands in the following forms.
 <td align="left"><p>Stops all debugging and closes the target.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>(CDB/KD only) [<strong>CTRL+C</strong>](ctrl-c--break-.md)</p></td>
+<td align="left"><p>(CDB/KD only) <strong>[CTRL+C](ctrl-c--break-.md)</strong></p></td>
 <td align="left"><img src="images/tbbreak.png" alt="Screen shot of the Break button" /></td>
 <td align="left"><p>[Debug | Break](debug---break.md)</p></td>
 <td align="left"><p>CTRL + BREAK</p></td>
 <td align="left"><p>Execution stops, and the debugger breaks into the target.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>.restart (Restart Target Application)</strong>](-restart--restart-target-application-.md)</p></td>
+<td align="left"><p><strong>[.restart (Restart Target Application)](-restart--restart-target-application-.md)</strong></p></td>
 <td align="left"><img src="images/tbrestart.png" alt="Screen shot of the Restart button" /></td>
 <td align="left"><p>[Debug | Restart](debug---restart.md)</p></td>
 <td align="left"><p>CTRL + SHIFT + F5</p></td>
 <td align="left"><p>(User mode only) Restarts the target application.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>g (Go)</strong>](g--go-.md)</p></td>
+<td align="left"><p><strong>[g (Go)](g--go-.md)</strong></p></td>
 <td align="left"><img src="images/tbgo.png" alt="Screen shot of the Go button" /></td>
 <td align="left"><p>[Debug | Go](debug---go.md)</p></td>
 <td align="left"><p>F5</p></td>
 <td align="left"><p>Target executes freely.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>gc (Go from Conditional Breakpoint)</strong>](gc--go-from-conditional-breakpoint-.md)</p></td>
+<td align="left"><p><strong>[gc (Go from Conditional Breakpoint)](gc--go-from-conditional-breakpoint-.md)</strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Resumes execution after a [conditional breakpoint](setting-a-conditional-breakpoint.md).</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>gh (Go with Exception Handled)</strong>](gh--go-with-exception-handled-.md)</p></td>
+<td align="left"><p><strong>[gh (Go with Exception Handled)](gh--go-with-exception-handled-.md)</strong></p></td>
 <td align="left"></td>
 <td align="left"><p>[Debug | Go Handled Exception](debug---go-handled-exception.md)</p></td>
 <td align="left"></td>
 <td align="left"><p>Same as <strong>g (Go)</strong>, except that the current exception is treated as handled.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>gn (Go with Exception Not Handled)</strong>](gn--gn--go-with-exception-not-handled-.md)</p></td>
+<td align="left"><p><strong>[gn (Go with Exception Not Handled)](gn--gn--go-with-exception-not-handled-.md)</strong></p></td>
 <td align="left"></td>
 <td align="left"><p>[Debug | Go Unhandled Exception](debug---go-unhandled-exception.md)</p></td>
 <td align="left"></td>
 <td align="left"><p>Same as <strong>g (Go)</strong>, except that the current exception is treated as unhandled.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>gu (Go Up)</strong>](gu--go-up-.md)</p></td>
+<td align="left"><p><strong>[gu (Go Up)](gu--go-up-.md)</strong></p></td>
 <td align="left"><img src="images/tbout.png" alt="Screen shot of the Step Out button" /></td>
 <td align="left"><p>[Debug | Step Out](debug---step-out.md)</p></td>
 <td align="left"><p>SHIFT + F11</p></td>
 <td align="left"><p>Target executes until the current function is complete.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>p (Step)</strong>](p--step-.md)</p></td>
+<td align="left"><p><strong>[p (Step)](p--step-.md)</strong></p></td>
 <td align="left"><img src="images/tbover.png" alt="Screen shot of the Step Over button" /></td>
 <td align="left"><p>[Debug | Step Over](debug---step-over.md)</p></td>
 <td align="left"><p>F10</p></td>
 <td align="left"><p>Target executes one instruction. If this instruction is a function call, that function is executed as a single step.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>pa (Step to Address)</strong>](pa--step-to-address-.md)</p></td>
+<td align="left"><p><strong>[pa (Step to Address)](pa--step-to-address-.md)</strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches the specified address. All steps in this function are displayed (but steps in called functions are not).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>pc (Step to Next Call)</strong>](pc--step-to-next-call-.md)</p></td>
+<td align="left"><p><strong>[pc (Step to Next Call)](pc--step-to-next-call-.md)</strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until the next <strong>call</strong> instruction. If the current instruction is a <strong>call</strong> instruction, this call is executed completely and execution continues until the next <strong>call</strong>.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>pct (Step to Next Call or Return)</strong>](pct--step-to-next-call-or-return-.md)</p></td>
+<td align="left"><p><strong>[pct (Step to Next Call or Return)](pct--step-to-next-call-or-return-.md)</strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches a <strong>call</strong> instruction or a <strong>return</strong> instruction.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>ph (Step to Next Branching Instruction)</strong>](ph--step-to-next-branching-instruction-.md)</p></td>
+<td align="left"><p><strong>[ph (Step to Next Branching Instruction)](ph--step-to-next-branching-instruction-.md)</strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches any kind of branching instruction, including conditional or unconditional branches, calls, returns, and system calls.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>pt (Step to Next Return)</strong>](pt--step-to-next-return-.md)</p></td>
+<td align="left"><p><strong>[pt (Step to Next Return)](pt--step-to-next-return-.md)</strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches a <strong>return</strong> instruction.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>t (Trace)</strong>](t--trace-.md)</p></td>
+<td align="left"><p><strong>[t (Trace)](t--trace-.md)</strong></p></td>
 <td align="left"><img src="images/tbinto.png" alt="Screen shot of the Step Into button" /></td>
 <td align="left"><p>[Debug | Step Into](debug---step-into.md)</p></td>
 <td align="left"><p>F11</p>
@@ -187,49 +187,49 @@ You can use the commands in the following forms.
 <td align="left"><p>Target executes one instruction. If this instruction is a function call, debugger traces into that call.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>ta (Trace to Address)</strong>](ta--trace-to-address-.md)</p></td>
+<td align="left"><p><strong>[ta (Trace to Address)](ta--trace-to-address-.md)</strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches the specified address. All steps in this function and called functions are displayed.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>tb (Trace to Next Branch)</strong>](tb--trace-to-next-branch-.md)</p></td>
+<td align="left"><p><strong>[tb (Trace to Next Branch)](tb--trace-to-next-branch-.md)</strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>(All modes, except kernel mode, only on x86-based systems) Target executes until it reaches the next branch instruction.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>tc (Trace to Next Call)</strong>](tc--trace-to-next-call-.md)</p></td>
+<td align="left"><p><strong>[tc (Trace to Next Call)](tc--trace-to-next-call-.md)</strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until the next <strong>call</strong> instruction. If the current instruction is a <strong>call</strong> instruction, the instruction is traced into until a new <strong>call</strong> is reached.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>tct (Trace to Next Call or Return)</strong>](tct--trace-to-next-call-or-return-.md)</p></td>
+<td align="left"><p><strong>[tct (Trace to Next Call or Return)](tct--trace-to-next-call-or-return-.md)</strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches a <strong>call</strong> instruction or <strong>return</strong> instruction. If the current instruction is a <strong>call</strong> instruction or <strong>return</strong> instruction, the instruction is traced into until a new <strong>call</strong> or <strong>return</strong> is reached.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>th (Trace to Next Branching Instruction)</strong>](th--trace-to-next-branching-instruction-.md)</p></td>
+<td align="left"><p><strong>[th (Trace to Next Branching Instruction)](th--trace-to-next-branching-instruction-.md)</strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches any kind of branching instruction, including conditional or unconditional branches, calls, returns, and system calls. If the current instruction is a branching instruction, the instruction is traced into until a new branching instruction is reached.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>tt (Trace to Next Return)</strong>](tt--trace-to-next-return-.md)</p></td>
+<td align="left"><p><strong>[tt (Trace to Next Return)](tt--trace-to-next-return-.md)</strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>Target executes until it reaches a <strong>return</strong> instruction. If the current instruction is a <strong>return</strong> instruction, the instruction is traced into until a new <strong>return</strong> is reached.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>wt (Trace and Watch Data)</strong>](wt--trace-and-watch-data-.md)</p></td>
+<td align="left"><p><strong>[wt (Trace and Watch Data)](wt--trace-and-watch-data-.md)</strong></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
