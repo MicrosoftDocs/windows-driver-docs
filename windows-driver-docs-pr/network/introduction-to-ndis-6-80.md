@@ -75,11 +75,11 @@ For more information about NetAdapterCx API and data structure changes, see [Int
 
 The following APIs and data structures are new in NDIS 6.80.
 
-- [MINIPORT_SYNCHRONOUS_OID_REQUEST](TBD)
-- [FILTER_SYNCHRONOUS_OID_REQUEST](TBD)
-- [FILTER_SYNCHRONOUS_OID_REQUEST_COMPLETE](TBD)
-- [NdisFSynchronousOidRequest](TBD)
-- [NdisSynchronousOidRequest](TBD)
+- [MINIPORT_SYNCHRONOUS_OID_REQUEST](https://msdn.microsoft.com/library/windows/hardware/0DDF9CF8-91F6-4D7C-A8E8-FC425BF155CB)
+- [FILTER_SYNCHRONOUS_OID_REQUEST](https://msdn.microsoft.com/library/windows/hardware/AC84B27B-6FBF-429D-A8FA-F3C8F583F738)
+- [FILTER_SYNCHRONOUS_OID_REQUEST_COMPLETE](https://msdn.microsoft.com/library/windows/hardware/E0749F52-CC7C-484D-8350-1986154957C1)
+- [NdisFSynchronousOidRequest](https://msdn.microsoft.com/library/windows/hardware/01B625EB-AB6D-496F-95F2-22845460324A)
+- [NdisSynchronousOidRequest](https://msdn.microsoft.com/library/windows/hardware/BF539DDA-59ED-4010-88BC-3C7D8DC475EF)
 
 #### Updated APIs and data structures
 
