@@ -26,9 +26,9 @@ When a connection is activated or bridged from the host, the modem should check 
 
 This notification will be used to notify the host that an **OID_WWAN_PCO** query request has been completed, with the PCO value included in the notification. The host expects the modem to pass the complete structure of PCO values on the PDN corresponding to the port number.
 
-If PCO functionality is supported by the modem but no PCO value is received from the network when the host sends an **OID_WWAN_PCO** query request, the modem should return an **NDIS_STATUS_WWAN_PCO_STATUS** notification with an empty [WWAN_PCO_VALUE](TBD) payload. 
+If PCO functionality is supported by the modem but no PCO value is received from the network when the host sends an **OID_WWAN_PCO** query request, the modem should return an **NDIS_STATUS_WWAN_PCO_STATUS** notification with an empty [WWAN_PCO_VALUE](https://msdn.microsoft.com/library/windows/hardware/45A499CE-2C9A-4070-BEF8-880E7673FA8E) payload. 
 
-This notification uses the [NDIS_WWAN_PCO_STATUS](TBD) structure.
+This notification uses the [NDIS_WWAN_PCO_STATUS](https://msdn.microsoft.com/library/windows/hardware/C71187C5-74B6-450A-8461-BB9FDF60DB8D) structure.
 
 > [!NOTE]
 > Currently, in Windows 10, version 1709, some modems are only able to provide operator specific PCO elements. If a PCO data structure is received by modem but there is no applicable operator specific PCO element, to avoid unnecessary device wakeup, the modem should not advertise the PCO notification to the OS. 
@@ -44,9 +44,9 @@ This notification uses the [NDIS_WWAN_PCO_STATUS](TBD) structure.
 
 [OID_WWAN_PCO](oid-wwan-pco.md)
 
-[NDIS_WWAN_PCO_STATUS](TBD)
+[NDIS_WWAN_PCO_STATUS](https://msdn.microsoft.com/library/windows/hardware/C71187C5-74B6-450A-8461-BB9FDF60DB8D)
 
-[WWAN_PCO_VALUE](TBD)
+[WWAN_PCO_VALUE](https://msdn.microsoft.com/library/windows/hardware/45A499CE-2C9A-4070-BEF8-880E7673FA8E)
 
 [MB Protocol Configuration Operations (PCO)](mb-protocol-configuration-operations--pco-.md)
  
