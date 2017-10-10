@@ -990,3 +990,5 @@
 ### [Files.HwComponent.ID Section of a TxtSetup.oem File](files-hwcomponent-id-section-of-a-txtsetup-oem-file.md)
 ### [Config.DriverKey Section of a TxtSetup.oem File](config-driverkey-section-of-a-txtsetup-oem-file.md)
 ### [HardwareIds.scsi.ID Section of a TxtSetup.oem File](hardwareids-scsi-id-section-of-a-txtsetup-oem-file.md)
+### [DEVPROPKEY](devinst/devpropkey.md)
+### [InstallSelectedDriver](devinst/installselecteddriver.md)
