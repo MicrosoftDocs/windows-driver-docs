@@ -24,7 +24,7 @@ NDIS defines object identifier (OID) values to identify miniport adapter paramet
 
 For NDIS 6.1 and later miniport drivers, NDIS provides a [Direct OID Request Interface](direct-oid-request-interface-in-ndis-6-1.md). The *Direct OID request path* supports OID requests that are queried or set frequently. The Direct OID Request Interface is optional for NDIS drivers.
 
-For NDIS 6.80 and later miniport drivers, NDIS provides a [Synchronous OID Request Interface](synchronous-oid-request-interface-in-ndis-6-80.md). The *Synchronous OID request path* supports OIDs that require synchronization or OIDs that should not be queued by filter drivers, such as [RSSv2](TBD) OIDs. The Synchronous OID Request Interface is optional for NDIS drivers.
+For NDIS 6.80 and later miniport drivers, NDIS provides a [Synchronous OID Request Interface](synchronous-oid-request-interface-in-ndis-6-80.md). The *Synchronous OID request path* supports OIDs that require synchronization or OIDs that should not be queued by filter drivers, such as [RSSv2](receive-side-scaling-version-2-rssv2-in-ndis-6-80.md) OIDs. The Synchronous OID Request Interface is optional for NDIS drivers but is required if the miniport driver advertises support for RSSv2.
 
 The following topics provide more information about miniport driver OID requests:
 
