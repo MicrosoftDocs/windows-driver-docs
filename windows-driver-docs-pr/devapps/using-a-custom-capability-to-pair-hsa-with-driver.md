@@ -23,7 +23,7 @@ The steps required by the owner of the driver or RPC endpoint are described in [
 
 Before you get started, install the latest version of Visual Studio and create an UWP app project.  To build a UWP app with a custom capability, you'll need Windows SDK version 10.0.15063 (Windows 10 Creators Update) or later. For more help getting configured, see [Develop Windows Store apps using Visual Studio](https://developer.microsoft.com/en-us/windows/apps/develop).
 
-In current Windows Insider builds, you can specify that a Universal Windows Platform (UWP) app should only load if a specific driver is present.  To learn how, see [Pairing a driver with a UWP app](../install/pairing-app-and-driver-versions.md).
+Starting in Windows 10 version 1709, you can specify that a Universal Windows Platform (UWP) app should only load if a specific driver is present.  To learn how, see [Pairing a driver with a UWP app](../install/pairing-app-and-driver-versions.md).
 
 ## Create a Windows Store account
 
