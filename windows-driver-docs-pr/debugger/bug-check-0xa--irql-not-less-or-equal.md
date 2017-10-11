@@ -41,7 +41,7 @@ The IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x0000000A. This indicat
 <tr class="odd">
 <td align="left"><p>1</p></td>
 <td align="left"><p>The virtual memory address that could not be accessed.</p>
-<p>Use [<strong>!pool</strong>](-pool.md) on this address to see whether it's Paged pool. These commands, may also be useful in gathering information about the failure: [<strong>!pte</strong>](-pte.md), [<strong>!address</strong>](-address.md), and [<strong>ln (List Nearest Symbols)</strong>](ln--list-nearest-symbols-.md).</p></td>
+<p>Use <strong>[!pool](-pool.md)</strong> on this address to see whether it's Paged pool. These commands, may also be useful in gathering information about the failure: <strong>[!pte](-pte.md)</strong>, <strong>[!address](-address.md)</strong>, and <strong>[ln (List Nearest Symbols)](ln--list-nearest-symbols-.md)</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>
@@ -74,7 +74,7 @@ The IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x0000000A. This indicat
 <tr class="even">
 <td align="left"><p>4</p></td>
 <td align="left"><p>The instruction pointer at the time of the fault.</p>
-<p>Use the [<strong>ln (List Nearest Symbols)</strong>](ln--list-nearest-symbols-.md) command on this address to see the name of the function.</p></td>
+<p>Use the <strong>[ln (List Nearest Symbols)](ln--list-nearest-symbols-.md)</strong> command on this address to see the name of the function.</p></td>
 </tr>
 </tbody>
 </table>

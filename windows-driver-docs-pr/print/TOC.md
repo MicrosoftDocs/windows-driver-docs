@@ -26,7 +26,7 @@
 ### [Job Management](job-management.md)
 ### [Device Maintenance](device-maintenance.md)
 ### [Printer Extensions](printer-extensions.md)
-### [Windows Store Device Apps for Printers](windows-store-device-apps-for-printers.md)
+### [UWP Device Apps for Printers](uwp-device-apps-for-printers.md)
 ## [V4 Printer Driver Connectivity](v4-printer-driver-connectivity.md)
 ### [V4 Driver Connectivity Architecture](v4-driver-connectivity-architecture.md)
 ### [USB Bidi Extender](usb-bidi-extender.md)
