@@ -15,22 +15,22 @@ The current Windows Driver Kit (WDK) is optimized for individual developers usin
 
 The Enterprise WDK contains the necessary elements to build drivers and basic Win32 driver test applications.  Use your favorite code editor to modify source code and project files.  Because it is command-line based, the Enterprise WDK does lack some of the features incorporated into Visual Studio, such as an IDE, driver deployment and driver testing. 
 
+## Enterprise WDK 1709 Prerequisites
+
+*	.NET Framework 4.6 SDK build 4.6.01586
+
 ## Enterprise WDK 1703 Prerequisites
 
 *	.NET Framework 4.6 SDK build 4.6.01586
 
-## Enterprise WDK 1607 Prerequisites
-
-*	.NET Framework 4.6 SDK build 10586.13
-
 ## Getting Started
 
 > [!NOTE] 
-> In current [Windows 10 Insider Preview](https://insider.windows.com/) builds, the Enterprise WDK is ISO-based.  To get started, download and mount the ISO, then run `LaunchBuildEnv`.
+> Starting in Windows 10 version 1709, the Enterprise WDK is ISO-based.  To get started, download and mount the ISO, then run `LaunchBuildEnv`.
 
 1.	Download one of the following: 
+ * [Enterprise WDK 1709](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709) 
  * [Enterprise WDK 1703](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1703) 
- * [Enterprise WDK 1607](https://developer.microsoft.com/en-us/windows/hardware/license-terms-enterprise-wdk)
 2.	Expand the .zip file into an appropriately named directory, such as d:\ewdk.
 3.	From an Administrator command prompt, navigate to the expanded folder in the previous step, and then run **LaunchBuildEnvcmd** to create the build environment. For example:
   **D:\EWDK\LaunchBuildEnv**
