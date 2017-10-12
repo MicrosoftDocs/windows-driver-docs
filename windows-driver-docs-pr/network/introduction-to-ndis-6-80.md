@@ -23,12 +23,13 @@ For NIC drivers, the NetAdapter class extension (NetAdapterCx) has been updated 
 
 NDIS 6.80 introduces a new feature for OIDs, Synchronous OID requests. Synchronous OID calls are low-latency, non-blocking, scalable, and reliable compared to regular OID requests. For more info, see [Synchronous OID Request Interface in NDIS 6.80](synchronous-oid-request-interface-in-ndis-6-80.md).
 
-> [!WARNING]
-> In Windows 10, version 1709, synchronous OID requests are supported only for miniport and protocol drivers.
+In Windows 10, version 1709, synchronous OID requests are supported only for miniport and protocol drivers.
 
 ### RSSv2
 
 In NDIS 6.80, [Receive Side Scaling (RSS)](ndis-receive-side-scaling2.md) has been upgraded to RSS version 2 (RSSv2). RSSv2 improves on RSSv2 by enabling per-VPort spreading. For more info, see [Receive Side Scaling Version 2 (RSSv2) in NDIS 6.80](receive-side-scaling-version-2-rssv2-in-ndis-6-80.md).
+
+RSSv2 is preview only in Windows 10, version 1709.
 
 ### Other new networking features
 
