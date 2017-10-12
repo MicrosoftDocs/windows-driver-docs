@@ -24,6 +24,8 @@ Receive side scaling (RSS) improves the system performance related to handling o
 
 For introductory information about RSS, see [Introduction to Receive Side Scaling](introduction-to-receive-side-scaling.md).
 
+Starting with Windows 10, version 1709, RSS Version 2 (RSSv2) is available for miniport drivers. RSSv2 improves on the base RSS model by offering per-VPort spreading. For more info, see [Receive Side Scaling Version 2 (RSSv2)](receive-side-scaling-version-2-rssv2-.md). RSSv2 is preview only in Windows 10, version 1709.
+
 The following topics describe the RSS implementations that are possible with different levels of hardware and software support:
 
 [Non-RSS Receive Processing](non-rss-receive-processing.md)

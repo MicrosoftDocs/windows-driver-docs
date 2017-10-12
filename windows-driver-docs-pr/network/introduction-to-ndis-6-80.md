@@ -27,7 +27,7 @@ In Windows 10, version 1709, synchronous OID requests are supported only for min
 
 ### RSSv2
 
-In NDIS 6.80, [Receive Side Scaling (RSS)](ndis-receive-side-scaling2.md) has been upgraded to RSS version 2 (RSSv2). RSSv2 improves on RSSv2 by enabling per-VPort spreading. For more info, see [Receive Side Scaling Version 2 (RSSv2) in NDIS 6.80](receive-side-scaling-version-2-rssv2-in-ndis-6-80.md).
+In NDIS 6.80, [Receive Side Scaling (RSS)](ndis-receive-side-scaling2.md) has been upgraded to RSS version 2 (RSSv2). RSSv2 improves on RSSv2 by offering per-VPort spreading. For more info, see [Receive Side Scaling Version 2 (RSSv2) in NDIS 6.80](receive-side-scaling-version-2-rssv2-in-ndis-6-80.md).
 
 RSSv2 is preview only in Windows 10, version 1709.
 
