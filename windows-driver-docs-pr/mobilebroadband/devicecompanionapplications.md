@@ -45,7 +45,7 @@ There are no attributes.
 <tbody>
 <tr class="odd">
 <td><p>[Package](package.md)</p></td>
-<td><p>Specifies the package that will be used for the Windows Store device app.</p></td>
+<td><p>Specifies the package that will be used for the Microsoft Store device app.</p></td>
 </tr>
 </tbody>
 </table>

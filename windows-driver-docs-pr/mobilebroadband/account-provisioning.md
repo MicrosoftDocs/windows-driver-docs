@@ -39,7 +39,7 @@ A mobile broadband app can use the following triggers to update the provisioning
 
 -   **Incoming SMS** You can send SMS messages that your app understands. This might define a message that initiates a refresh, or automatically checks for updated usage upon receiving a threshold notification.
 
--   **Windows Notification Service** Any Windows Store app can register for push notifications and take actions based on their content. You can use this as a notification channel for provisioning updates.
+-   **Windows Notification Service** Any UWP app can register for push notifications and take actions based on their content. You can use this as a notification channel for provisioning updates.
 
 -   **Large location changes** If different parameters apply to users who are in different locales, a change in location might trigger an app to apply updated settings for the user’s new location.
 
@@ -563,7 +563,7 @@ XSD schemas are available under **%SYSTEMROOT%\\schemas\\provisioning** on any c
 
 ### Apply provisioning XML to the device
 
-You can apply a provisioning XML file to a device by using a mobile broadband app, a Windows Store app, or from a web site.
+You can apply a provisioning XML file to a device by using a mobile broadband app, a UWP app, or from a web site.
 
 To provision from a mobile broadband app:
 
@@ -573,7 +573,7 @@ To provision from a mobile broadband app:
 
 The asynchronous operation complete and the results of the provisioning operation are returned.
 
-To provision from a Windows Store app other than the mobile broadband app:
+To provision from a UWP app other than the mobile broadband app:
 
 1.  Generate a signed Account Provisioning XML document.
 

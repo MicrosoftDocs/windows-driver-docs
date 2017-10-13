@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # SoftwareInfo XML schema
 
 
-A metadata package contains one SoftwareInfo.xml document, which contains information that the operating system downloads a Windows Store app. This information results in privileged access for apps.
+A metadata package contains one SoftwareInfo.xml document, which contains information that the operating system downloads a UWP app. This information results in privileged access for apps.
 
 The data within the Softwareinfo.xml document is formatted based on the SoftwareInfo XML Schema, which is described in this section.
 

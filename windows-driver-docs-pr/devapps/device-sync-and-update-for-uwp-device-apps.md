@@ -1,6 +1,6 @@
 ---
 title: Device sync and update for Store device apps in Windows 8.1
-description: In Windows 8.1, your Windows Store app can use a device background task to synchronize data on your peripheral device.
+description: In Windows 8.1, your UWP app can use a device background task to synchronize data on your peripheral device.
 ms.assetid: AA6E0760-F048-4BDC-8429-D119A531CED6
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -12,18 +12,18 @@ ms.technology: windows-devices
 # Device sync and update for Store device apps in Windows 8.1
 
 
-In Windows 8.1, your Windows Store app can use a device background task to synchronize data on your peripheral device. If your app is associated with device metadata, that Windows Store device app can also use a device background agent to perform device updates, such as firmware updates. Device background agents are subject to policies that ensure user consent and help preserve battery life while devices are being synced and updated.
+In Windows 8.1, your UWP app can use a device background task to synchronize data on your peripheral device. If your app is associated with device metadata, that UWP device app can also use a device background agent to perform device updates, such as firmware updates. Device background agents are subject to policies that ensure user consent and help preserve battery life while devices are being synced and updated.
 
 To perform device sync and update operations, create a device background task that uses the [DeviceUseTrigger](http://go.microsoft.com/fwlink/p/?LinkID=308967) and [DeviceServicingTrigger](http://go.microsoft.com/fwlink/p/?LinkID=308965), respectively. To learn how this is done with the [Custom USB device sample](http://go.microsoft.com/fwlink/p/?LinkId=301975 ) and the [Firmware update USB device sample](http://go.microsoft.com/fwlink/p/?LinkId=309186), see [Creating a device background task](how-to-create-a-device-background-task.md).
 
-**Note**  Windows Runtime device APIs don't require device metadata. That means your app doesn't need to be a Windows Store device app to use them. Windows Store apps can use these APIs to access USB, Human Interface Devices (HID), Bluetooth devices, and more. For more info, see [Integrating devices](http://go.microsoft.com/fwlink/p/?LinkId=533279).
+**Note**  Windows Runtime device APIs don't require device metadata. That means your app doesn't need to be a UWP device app to use them. UWP apps can use these APIs to access USB, Human Interface Devices (HID), Bluetooth devices, and more. For more info, see [Integrating devices](http://go.microsoft.com/fwlink/p/?LinkId=533279).
 
  
 
 ## <span id="Device_background_task_overview_"></span><span id="device_background_task_overview_"></span><span id="DEVICE_BACKGROUND_TASK_OVERVIEW_"></span>Device background task overview
 
 
-When users move your Windows Store app off-screen, Windows suspends your app in-memory. This lets another app have the foreground. When an app is suspended, it is resident in-memory and Windows has stopped it from running. When this happens, without the help of a device background task, any ongoing device operations like syncing and updating will be interrupted. Windows 8.1 provides two new background task triggers that let your app perform long running sync and update operations on your peripheral device safely in the background, even if your app is suspended: DeviceUseTrigger and DeviceServicingTrigger. For more info about app suspension, see [Launching, resuming, and multitasking](http://go.microsoft.com/fwlink/p/?LinkId=309316).
+When users move your UWP app off-screen, Windows suspends your app in-memory. This lets another app have the foreground. When an app is suspended, it is resident in-memory and Windows has stopped it from running. When this happens, without the help of a device background task, any ongoing device operations like syncing and updating will be interrupted. Windows 8.1 provides two new background task triggers that let your app perform long running sync and update operations on your peripheral device safely in the background, even if your app is suspended: DeviceUseTrigger and DeviceServicingTrigger. For more info about app suspension, see [Launching, resuming, and multitasking](http://go.microsoft.com/fwlink/p/?LinkId=309316).
 
 <table>
 <colgroup>
@@ -60,12 +60,12 @@ DeviceServicingTrigger requires device metadata because the app must be specifie
 
 Some critical device operations, such as long running device updates, can be performed only by a privileged app. A *privileged app* is the app that the device manufacturer has authorized to perform those operations. The device metadata specifies which app, if any, has been designated as the privileged app for a device.
 
-When creating your device metadata with the device metadata wizard, specify your app on the **Specify Windows Store device app information** page. For more info, see [Step 2: Create device metadata for your Windows Store device app](step-2--create-device-metadata.md).
+When creating your device metadata with the device metadata wizard, specify your app on the **Specify UWP device app information** page. For more info, see [Step 2: Create device metadata for your UWP device app](step-2--create-device-metadata.md).
 
 ## <span id="Supported_protocols"></span><span id="supported_protocols"></span><span id="SUPPORTED_PROTOCOLS"></span>Supported protocols
 
 
-Device background tasks that use DeviceUseTrigger and DeviceServicingTrigger let your app communicate with peripheral devices over protocols that aren't supported by the system-triggered tasks typically used by Windows Store apps.
+Device background tasks that use DeviceUseTrigger and DeviceServicingTrigger let your app communicate with peripheral devices over protocols that aren't supported by the system-triggered tasks typically used by UWP apps.
 
 | Protocol         | DeviceServicingTrigger                                                   | DeviceUseTrigger                                                                         | System triggers                                                                       |
 |------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
@@ -170,7 +170,7 @@ This table indicates which task initiation policies apply to each background tas
 
 | Policy                                                                                                                                                                                                                               | DeviceServicingTrigger                       | DeviceUseTrigger                                            |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|-------------------------------------------------------------|
-| Your Windows Store app is in the foreground when triggering the background task.                                                                                                                                                     | ![policy applies](images/ap-tools.png)       | ![policy applies](images/ap-tools.png)                      |
+| Your UWP app is in the foreground when triggering the background task.                                                                                                                                                     | ![policy applies](images/ap-tools.png)       | ![policy applies](images/ap-tools.png)                      |
 | Your device is attached to the system (or in range for a wireless device).                                                                                                                                                           | ![policy applies](images/ap-tools.png)       | ![policy applies](images/ap-tools.png)                      |
 | Your background task consumes 400ms of CPU time (assuming a 1GHz CPU) every minute when the screen is locked, or every 5 minutes when the screen is not locked. Failure to meet this policy can result in cancellation of your task. | ![policy applies](images/ap-tools.png)       | ![policy applies](images/ap-tools.png)                      |
 | Your device is accessible to the app using the device peripheral APIs (the Windows Runtime APIs for USB, HID, Bluetooth, and so on). If your app can't access the device, access to the background tasks is denied.                  | ![policy applies](images/ap-tools.png)       | ![policy applies](images/ap-tools.png)                      |
@@ -202,7 +202,7 @@ This table indicates which runtime policies apply to each background task trigge
 ## <span id="Best_practices"></span><span id="best_practices"></span><span id="BEST_PRACTICES"></span>Best practices
 
 
-The following are best practices for Windows Store device apps that use the device background tasks.
+The following are best practices for UWP device apps that use the device background tasks.
 
 ### <span id="Device_background_task_programming_model"></span><span id="device_background_task_programming_model"></span><span id="DEVICE_BACKGROUND_TASK_PROGRAMMING_MODEL"></span>Device background task programming model
 
@@ -216,7 +216,7 @@ Using the DeviceUseTrigger or DeviceServicingTrigger background tasks from your 
 
 4.  Register the trigger.
 
-5.  When a task completes, unregister the background task. When your background task completes, you can unregister the background tasks and reopen the device and use it regularly from your Windows Store app.
+5.  When a task completes, unregister the background task. When your background task completes, you can unregister the background tasks and reopen the device and use it regularly from your UWP app.
 
 6.  Register for cancellation events from your background task class. Registering for cancellation events will allow your background task code to cleanly stop your running background task when canceled by Windows or your foreground app.
 

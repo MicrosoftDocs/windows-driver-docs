@@ -46,7 +46,7 @@ The following diagram shows the components that make up the universal sensor dri
 
 ![architectural diagram of the converged sensor driver model.](images/sensorsv2-arch.png)
 
-Note that the Windows Store Apps component can consist of apps developed by Microsoft, or by the 3rd party developer to accompany the sensor.
+Note that the Microsoft Store Apps component can consist of apps developed by Microsoft, or by the 3rd party developer to accompany the sensor.
 
  
 

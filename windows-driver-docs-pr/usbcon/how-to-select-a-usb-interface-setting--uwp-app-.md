@@ -1,6 +1,6 @@
 ---
 Description: Use the UsbInterfaceSetting object to get the current setting and set a setting in the interface.
-title: How to select a USB interface setting (Windows Store app)
+title: How to select a USB interface setting (UWP app)
 author: windows-driver-content
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# How to select a USB interface setting (Windows Store app)
+# How to select a USB interface setting (UWP app)
 
 
 **Summary**
@@ -27,7 +27,7 @@ In this topic, you'll learn about changing a setting within a USB interface. You
 ## Before you start...
 
 
--   You must have opened the device and obtained the [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883) object. Read [How to connect to a USB device (Windows Store App)](how-to-connect-to-a-usb-device--windows-store-app-.md).
+-   You must have opened the device and obtained the [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883) object. Read [How to connect to a USB device (UWP app)](how-to-connect-to-a-usb-device--uwp-app-.md).
 -   Code examples are based on the CustomUSBDevice sample. You can download the complete sample from this code gallery page.
 -   
 
@@ -38,7 +38,7 @@ Each USB interface exposes one or more endpoints that are grouped in *interface 
 
 A setting is said to be active after it has been selected on the device. The default active setting is the first setting of an interface.
 
-Each setting is represented by a [**UsbInterfaceSetting**](https://msdn.microsoft.com/library/windows/apps/dn264278) object. By using the object, your Windows Store app can perform these operations:
+Each setting is represented by a [**UsbInterfaceSetting**](https://msdn.microsoft.com/library/windows/apps/dn264278) object. By using the object, your UWP app can perform these operations:
 
 -   Determine whether a particular setting is active while enumerating all settings in an interface.
 -   Initiate a request that selects an setting.

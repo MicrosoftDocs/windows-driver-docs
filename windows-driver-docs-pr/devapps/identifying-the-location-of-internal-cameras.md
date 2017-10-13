@@ -9,10 +9,10 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Identifying the location of internal cameras (Windows Store device apps)
+# Identifying the location of internal cameras (UWP device apps)
 
 
-This topic provides info about supporting internal cameras on systems in Windows 8.1. It describes how to identify the physical location of built-in cameras so that they work correctly with Windows Store apps. It also describes how to set the Model ID so that the camera works with Windows Store device apps. To learn more about Windows Store device apps in general, see [Meet Windows Store device apps](meet-windows-store-device-apps.md).
+This topic provides info about supporting internal cameras on systems in Windows 8.1. It describes how to identify the physical location of built-in cameras so that they work correctly with UWP apps. It also describes how to set the Model ID so that the camera works with UWP device apps. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
 ## <span id="Providing_physical_location"></span><span id="providing_physical_location"></span><span id="PROVIDING_PHYSICAL_LOCATION"></span>Providing physical location
 
@@ -29,8 +29,8 @@ The following two [Windows Hardware Certification Requirements](http://go.micros
 
 Windows needs to know the physical location of internal cameras for the following reasons:
 
--   Windows Store apps use the physical location to determine which camera to use if multiple cameras are present. For example, a chat application will default to using the front camera that faces the user when the app starts up.
--   Windows Store apps use the physical location to determine how to mirror or rotate the video preview.
+-   UWP apps use the physical location to determine which camera to use if multiple cameras are present. For example, a chat application will default to using the front camera that faces the user when the app starts up.
+-   UWP apps use the physical location to determine how to mirror or rotate the video preview.
 -   If the camera is facing the user, the preview should look as if the user is looking into a mirror. To do this, the app will flip the left and right sides of the preview, so that the preview mirrors the video. If the camera is facing away from the user, the app does not need to mirror the video.
 -   If the app rotates the preview, the degree of rotation differs depending on the position of the camera.
 
@@ -101,7 +101,7 @@ For nodes downstream of USBCCGP, the address value is calculated by adding the p
 ## <span id="Providing_Model_ID"></span><span id="providing_model_id"></span><span id="PROVIDING_MODEL_ID"></span>Providing Model ID
 
 
-The Windows device metadata system is able to query for an internally embedded camera’s device metadata package only if the camera’s device node has a **Model ID** property and the device category is `Imaging.Webcam`. To make an internal camera’s metadata discoverable by Windows so that the device metadata package is correctly associated with the device and the camera-specific Windows Store device app, an OEM needs to do the following:
+The Windows device metadata system is able to query for an internally embedded camera’s device metadata package only if the camera’s device node has a **Model ID** property and the device category is `Imaging.Webcam`. To make an internal camera’s metadata discoverable by Windows so that the device metadata package is correctly associated with the device and the camera-specific UWP device app, an OEM needs to do the following:
 
 -   Set the **Model ID** in the device node, by using the `InternalDeviceModification` flag in the device registry key
 
@@ -242,16 +242,16 @@ Windows Registry Editor Version 5.00
 
 The device metadata package for an internal camera has the same structure as the device metadata package for any other device. The MetadataKey in **packageinfo.xml** within the device metadata package is the Model ID defined by using the InternalDeviceModification registry key. The Windows metadata system downloads the device metadata package based on the Model ID. The hardware ID of the internal camera is not used.
 
-For more info about creating device metadata for your Windows Store device app, see [Building Windows Store device apps](the-workflow.md).
+For more info about creating device metadata for your UWP device app, see [Building UWP device apps](the-workflow.md).
 
 ### <span id="Pre-installation"></span><span id="pre-installation"></span><span id="PRE-INSTALLATION"></span>Pre-installation
 
-Both the Windows Store device app and the device metadata package can be preinstalled on the device using the OEM Preinstallation Kit (OPK).
+Both the Microsoft Store device app and the device metadata package can be preinstalled on the device using the OEM Preinstallation Kit (OPK).
 
 ## <span id="related_topics"></span>Related topics
 
 
-[Windows Store device apps for internal devices](windows-store-device-apps-for-specialized-devices.md)
+[UWP device apps for internal devices](uwp-device-apps-for-specialized-devices.md)
 
  
 

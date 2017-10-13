@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # AutoplayHandler
 
 
-The AutoplayHandler element specifies a Windows Store device app that should appear as the recommended AutoPlay action when a user plugs in a device.
+The AutoplayHandler element specifies a UWP device app that should appear as the recommended AutoPlay action when a user plugs in a device.
 
 ## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
 
@@ -115,7 +115,7 @@ There are no attributes.
 
 -   The structure for the [PackageIdentity](packageidentity.md) and [Application](application-windowsinfo-v2.md) elements are identical with the Application Manifest structure, so copy the elements from the application's manifest.
 
--   In addition to including the AutoplayHandler element in the device metadata, the specified Windows Store device app must also register for the AutoPlay event by adding a Declaration in its application manifest for the event. AutoPlay recognizes the declaration for the app and then includes it in the list of possible actions that a user can take to respond to that event.
+-   In addition to including the AutoplayHandler element in the device metadata, the specified UWP device app must also register for the AutoPlay event by adding a Declaration in its application manifest for the event. AutoPlay recognizes the declaration for the app and then includes it in the list of possible actions that a user can take to respond to that event.
 
 -   Only the package listed in the [DeviceCompanionApplications](devicecompanionapplications.md) value in the SoftwareInfo.xml file will be downloaded as part of the device installation. If the [LaunchApplicationOnDeviceConnect](launchapplicationondeviceconnect.md) element value is from a different package, Windows does not know whether it will actually be on the user’s device. If the recommended application is not on the user’s device, users will not be presented with the choice.
 

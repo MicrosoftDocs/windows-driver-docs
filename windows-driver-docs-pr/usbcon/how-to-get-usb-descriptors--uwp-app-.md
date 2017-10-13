@@ -1,6 +1,6 @@
 ---
 Description: One of the main tasks of interacting with a USB device is to get information about it.
-title: How to get USB descriptors (Windows Store app)
+title: How to get USB descriptors (UWP app)
 author: windows-driver-content
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# How to get USB descriptors (Windows Store app)
+# How to get USB descriptors (UWP app)
 
 
 **Summary**
@@ -24,7 +24,7 @@ ms.technology: windows-devices
 -   [**UsbConfigurationDescriptor**](https://msdn.microsoft.com/library/windows/apps/dn297689)
 -   [**UsbDescriptor**](https://msdn.microsoft.com/library/windows/apps/dn263863)
 
-One of the main tasks of interacting with a USB device is to get information about it. All USB devices provide information in the form of several data structures called descriptors. This topic describes how a Windows Store app can get descriptors from the device at the endpoint, interface, configuration, and device level.
+One of the main tasks of interacting with a USB device is to get information about it. All USB devices provide information in the form of several data structures called descriptors. This topic describes how a UWP app can get descriptors from the device at the endpoint, interface, configuration, and device level.
 
 ## USB descriptors
 
@@ -42,14 +42,14 @@ For detailed description about device layout, see [Standard USB descriptors](sta
 ## Before you start...
 
 
--   You must have opened the device and obtained the [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883) object. Read [How to connect to a USB device (Windows Store App)](how-to-connect-to-a-usb-device--windows-store-app-.md).
+-   You must have opened the device and obtained the [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883) object. Read [How to connect to a USB device (UWP app)](how-to-connect-to-a-usb-device--uwp-app-.md).
 -   You can see the complete code shown in this topic in the CustomUsbDeviceAccess sample, Scenario5\_UsbDescriptors files.
 -   Get information about the device layout. **Usbview.exe** (included in the Windows Software Development Kit (SDK) for Windows 8) is an application that enables you to browse all USB controllers and the USB devices that are connected to them. For each connected device, you can view the device, configuration, interface, and endpoint descriptors to get an idea about the capability of the device.
 
 ## How to get the device descriptor
 
 
-Your Windows Store app can get the device descriptor from the previously obtained [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883) object by getting the [**UsbDevice.DeviceDescriptor**](https://msdn.microsoft.com/library/windows/apps/dn264002) property value.
+Your UWP app can get the device descriptor from the previously obtained [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883) object by getting the [**UsbDevice.DeviceDescriptor**](https://msdn.microsoft.com/library/windows/apps/dn264002) property value.
 
 This code example shows how to populate a string with field values from device descriptor.
 

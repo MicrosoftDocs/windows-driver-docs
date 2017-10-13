@@ -1,6 +1,6 @@
 ---
 Description: An app that communicates with a USB device usually sends several control transfers requests.
-title: How to send a USB control transfer (Windows Store app)
+title: How to send a USB control transfer (UWP app)
 author: windows-driver-content
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# How to send a USB control transfer (Windows Store app)
+# How to send a USB control transfer (UWP app)
 
 
 **Summary**
@@ -22,9 +22,9 @@ ms.technology: windows-devices
 -   [**SendControlInTransferAsync**](https://msdn.microsoft.com/library/windows/apps/dn264027)
 -   [**SendControlOutTransferAsync**](https://msdn.microsoft.com/library/windows/apps/dn264044)
 
-An app that communicates with a USB device usually sends several control transfers requests. Those requests get information about the device and send control commands defined by the hardware vendor. In this topic you'll learn about control transfers and how to format and send them in your Windows Store app.
+An app that communicates with a USB device usually sends several control transfers requests. Those requests get information about the device and send control commands defined by the hardware vendor. In this topic you'll learn about control transfers and how to format and send them in your UWP app.
 
-A control transfer can read or write configuration information or perform device-specific functions defined by the hardware vendor. If the transfer performs a write operation, it's an OUT transfer; a read operation, it's an IN transfer. Regardless of the direction, a software, such as your Windows Store app, on the host system always builds and initiates a request for a control transfer. At times, your app can initiate control transfers that reads or writes data. In that case, you might need to send an additional buffer.
+A control transfer can read or write configuration information or perform device-specific functions defined by the hardware vendor. If the transfer performs a write operation, it's an OUT transfer; a read operation, it's an IN transfer. Regardless of the direction, a software, such as your UWP app, on the host system always builds and initiates a request for a control transfer. At times, your app can initiate control transfers that reads or writes data. In that case, you might need to send an additional buffer.
 
 To accommodate all types of control transfers, [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) provides these methods:
 
@@ -42,7 +42,7 @@ Control transfers for certain types of standard requests are not supported. Howe
 ## Before you start...
 
 
--   You have must opened the device and obtained the [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883) object. Read [How to connect to a USB device (Windows Store App)](how-to-connect-to-a-usb-device--windows-store-app-.md).
+-   You have must opened the device and obtained the [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883) object. Read [How to connect to a USB device (UWP app)](how-to-connect-to-a-usb-device--uwp-app-.md).
 -   Obtain information about vendor-defined control commands. Those commands are typically defined in the hardware specification.
 -   You can see the complete code shown in this topic in the CustomUsbDeviceAccess sample, Scenario2\_ControlTransfer.cpp and Scenario2\_ControlTransfer.h.
 

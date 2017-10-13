@@ -133,7 +133,7 @@ The following snippet from [`osrfx2_DCHU_base/device.c`](https://github.com/Micr
                                               (PVOID)customCapabilities);
 ```
 
-The new app (not included in the DCHU sample) is secure and can be updated easily in the Windows Store.   With the UWP application ready, Contoso uses [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows) to pre-load the application on Windows desktop edition images.
+The new app (not included in the DCHU sample) is secure and can be updated easily in the Microsoft Store.   With the UWP application ready, Contoso uses [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows) to pre-load the application on Windows desktop edition images.
 
 ## Registering a COM component in an INF file
 

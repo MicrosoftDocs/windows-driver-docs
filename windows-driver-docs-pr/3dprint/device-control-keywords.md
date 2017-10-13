@@ -309,7 +309,7 @@ Job3DAppName keyword usage
 ## 2.3. Job3DWSDAPackageFamilyName
 
 
-The device MAY identify a Windows Store Device App (WSDA), which the print dialog will launch when the “advanced settings” button is clicked by a user. This app presents UI for operations such as printer maintenance, material setup, calibration, etc. No default is supplied, so if this keyword is omitted, no “advanced settings” button will be displayed.
+The device MAY identify a UWP device app (WSDA), which the print dialog will launch when the “advanced settings” button is clicked by a user. This app presents UI for operations such as printer maintenance, material setup, calibration, etc. No default is supplied, so if this keyword is omitted, no “advanced settings” button will be displayed.
 
 <table>
 <colgroup>

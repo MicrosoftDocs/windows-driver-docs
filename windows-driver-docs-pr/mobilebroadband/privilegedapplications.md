@@ -100,11 +100,11 @@ There are no attributes.
 
 -   To specify multiple packages, list multiple [Package](package-privapps.md) elements in the PrivilegedApplications element.
 
--   The Package Name, Publisher, and Application ID must match the information in package.appxmanifest for the Windows Store app. The publisher also must match the publisher certificate that is installed on the PC.
+-   The Package Name, Publisher, and Application ID must match the information in package.appxmanifest for the Microsoft Store app. The publisher also must match the publisher certificate that is installed on the PC.
 
--   For the Windows Store app that is listed under the [DeviceCompanionApplications](devicecompanionapplications.md) element to have access to privileged Mobile Broadband interfaces including SMS, that app also must be specified under the PrivilegedApplications element.
+-   For the Microsoft Store app that is listed under the [DeviceCompanionApplications](devicecompanionapplications.md) element to have access to privileged Mobile Broadband interfaces including SMS, that app also must be specified under the PrivilegedApplications element.
 
--   When you are submitting your service metadata package to the Windows Dev Center Dashboard, you cannot declare more than 2 privileged apps. One of apps must be the app ID for the Windows Store device app that will be automatically downloaded. The second privileged app is not automatically downloaded, but will access to the privileged Mobile Broadband APIs if the app is installed.
+-   When you are submitting your service metadata package to the Windows Dev Center Dashboard, you cannot declare more than 2 privileged apps. One of apps must be the app ID for the Microsoft Store device app that will be automatically downloaded. The second privileged app is not automatically downloaded, but will access to the privileged Mobile Broadband APIs if the app is installed.
 
 The PrivilegedApplications element is optional.
 

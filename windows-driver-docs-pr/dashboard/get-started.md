@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 You can help your customers identify quality products that run reliably on Windows-based computers by testing your products and participating in the Windows Hardware Compatibility Program (for Windows 10), or the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems).
 
-These programs enable you to design, create, and test your product before you submit the final version through the Windows Hardware Dev Center dashboard. The dashboard supports hardware, Windows Store app, and desktop app development, and it replaces the Windows Quality Online Services (Winqual).
+These programs enable you to design, create, and test your product before you submit the final version through the Windows Hardware Dev Center dashboard. The dashboard supports hardware, UWP app, and desktop app development, and it replaces the Windows Quality Online Services (Winqual).
 
 **Note**  
 This guide assumes the following:

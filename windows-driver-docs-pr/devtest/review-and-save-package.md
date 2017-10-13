@@ -21,7 +21,7 @@ After completing all of the tabs in the wizard, review and save your package.
 
 1.  Click the **Finish** tab.
 2.  Review all of the information that's listed under **Summary information**.
-3.  Make a note of the Experience ID. If you're creating a Windows Store device app, you need to include this ID in the in StoreManifest.xml, a file that must be included in the final Windows Store app submitted to the Windows Store.
+3.  Make a note of the Experience ID. If you're creating a UWP device app, you need to include this ID in the in StoreManifest.xml, a file that must be included in the final UWP app submitted to the Microsoft Store.
 4.  If applicable, review any errors in red and fix them in the appropriate tabs.
 
 ## <span id="To_save_a_package"></span><span id="to_save_a_package"></span><span id="TO_SAVE_A_PACKAGE"></span>To save a package

@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Design branding in a mobile broadband app
 
 
-Windows Store apps encourage branding in the following ways:
+UWP apps encourage branding in the following ways:
 
 -   **Customization of colors and fonts** This includes being able to customize background colors and font colors. For example, you can use your look or brand colors in the app.
 
@@ -56,7 +56,7 @@ You can use branding in the following places in your mobile broadband app:
 
     ![windows connection manager](images/mb-fig5-wcm.png)
 
-For more info aboutWindows 8, Windows 8.1, and Windows 10 branding guidance, see [Windows Store app marketing guidelines](https://msdn.microsoft.com/library/windows/apps/hh694084).
+For more info aboutWindows 8, Windows 8.1, and Windows 10 branding guidance, see [UWP app marketing guidelines](https://msdn.microsoft.com/library/windows/apps/hh694084).
 
 ## <span id="Quick_summary"></span><span id="quick_summary"></span><span id="QUICK_SUMMARY"></span>Quick summary
 
@@ -65,7 +65,7 @@ Appropriate design for operator branding:
 
 -   Use primary and secondary corporate brand colors in your app for backgrounds and fonts.
 
--   Use brand icons appropriately to maintain simplicity and follow Windows Store app design guidelines.
+-   Use brand icons appropriately to maintain simplicity and follow UWP app design guidelines.
 
 Inappropriate design for operator branding:
 

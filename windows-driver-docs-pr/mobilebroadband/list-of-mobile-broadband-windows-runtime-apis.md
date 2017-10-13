@@ -68,9 +68,9 @@ The following sections are available in this topic:
 ## <span id="mbacctapi"></span><span id="MBACCTAPI"></span>Mobile Broadband Account API
 
 
-Because it has methods that can be used to get personally identifiable information about the customer and change the network settings on mobile broadband devices, the Mobile Broadband Account API is a privileged API. This means that most Windows Store apps cannot call its methods without getting an “access denied” error. To be able to call this API, a Windows Store app must meet the following criteria:
+Because it has methods that can be used to get personally identifiable information about the customer and change the network settings on mobile broadband devices, the Mobile Broadband Account API is a privileged API. This means that most UWP apps cannot call its methods without getting an “access denied” error. To be able to call this API, a UWP app must meet the following criteria:
 
--   The app must have a device metadata or service metadata package associated with it, and it must be listed in the [PrivilegedApplications](privilegedapplications.md) XML element of the SoftwareInfo.xml file inside the package. The package does not have to be exclusive to the application; it is possible for any particular Windows Store app to be listed in the PrivilegedApplications element of several packages. That package must be associated with the service provider for a mobile broadband device that has been active at least once on the computer, so that it has been installed.
+-   The app must have a device metadata or service metadata package associated with it, and it must be listed in the [PrivilegedApplications](privilegedapplications.md) XML element of the SoftwareInfo.xml file inside the package. The package does not have to be exclusive to the application; it is possible for any particular UWP app to be listed in the PrivilegedApplications element of several packages. That package must be associated with the service provider for a mobile broadband device that has been active at least once on the computer, so that it has been installed.
 
 -   The application’s appxmanifest file needs a **&lt;DeviceCapability&gt;** entry for the Mobile Broadband Account API. You can do this by adding the following XML element as a child of the **&lt;Capabilities&gt;** element in the application’s appxmanifest file:
 
@@ -81,7 +81,7 @@ Because it has methods that can be used to get personally identifiable informati
     For more information on the **&lt;Capabilities&gt;** element, see [App Manifest File For Windows 8](https://msdn.microsoft.com/library/windows/apps/ff769509.aspx).
 
 **Note**  
-Applications that are not Windows Store apps (for example, Microsoft Win32 services or desktop apps) have unrestricted access to the Mobile Broadband Account API. This is because these applications can use existing Win32 and Component Object Model (COM) APIs to get full access to the mobile broadband network. These APIs cannot be used from Windows Store apps.
+Applications that are not UWP apps (for example, Microsoft Win32 services or desktop apps) have unrestricted access to the Mobile Broadband Account API. This is because these applications can use existing Win32 and Component Object Model (COM) APIs to get full access to the mobile broadband network. These APIs cannot be used from UWP apps.
 
  
 
@@ -104,7 +104,7 @@ Even though getting the ICCID from a network account ID requires access to the c
 Network account IDs are segregated by mobile network operator (MNO), so that if an end user has both Provider1 and Provider2 mobile broadband devices and their corresponding mobile broadband apps are installed, the Provider1 app will not be able to use any Provider2 network account IDs, and vice versa. The function that returns all network account IDs will return only the IDs of the network accounts for the MNO whose application is calling the function. An attempt to use a network account ID that belongs to a different MNO will result in an “access denied” error.
 
 **Note**  
-Apps that are not Windows Store apps (for example, Win32 services or desktop apps) have access to all network accounts regardless of network service provider.
+Apps that are not UWP apps (for example, Win32 services or desktop apps) have access to all network accounts regardless of network service provider.
 
  
 

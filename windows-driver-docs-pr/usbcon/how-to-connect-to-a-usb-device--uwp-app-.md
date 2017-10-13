@@ -1,6 +1,6 @@
 ---
-Description: In Windows 8.1, you can write a Windows Store app that interacts with a USB device.
-title: How to connect to a USB device (Windows Store app)
+Description: In Windows 8.1, you can write a UWP app that interacts with a USB device.
+title: How to connect to a USB device (UWP app)
 author: windows-driver-content
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# How to connect to a USB device (Windows Store app)
+# How to connect to a USB device (UWP app)
 
 
 **Summary**
@@ -23,12 +23,12 @@ ms.technology: windows-devices
 -   [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883)
 -   [**DeviceWatcher**](https://msdn.microsoft.com/library/windows/apps/br225446)
 
-When you write a Windows Store app that interacts with a USB device, the app can send control commands, get device information, and read and write data to/from bulk and interrupt endpoints. Before you can do all that, you must find the device and establish connection.
+When you write a UWP app that interacts with a USB device, the app can send control commands, get device information, and read and write data to/from bulk and interrupt endpoints. Before you can do all that, you must find the device and establish connection.
 
 ## Before you start...
 
 
--   This is the first topic in a series. Before you start this tutorial, you must have created a basic Visual Studio project that you can extend in this tutorial. Read [Getting started with Windows Store apps](http://go.microsoft.com/fwlink/p/?linkid=617681) for more info.
+-   This is the first topic in a series. Before you start this tutorial, you must have created a basic Visual Studio project that you can extend in this tutorial. Read [Getting started with UWP apps](http://go.microsoft.com/fwlink/p/?linkid=617681) for more info.
 -   Code examples are based on the CustomUsbDeviceAccess sample. You can download the complete sample from this code gallery page.
 -   The USB device used in tutorial is the SuperMUTT device.
 -   In order to use the [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) namespace to write a Windows store app that interacts with a USB device, the device must have the Winusb.sys driver loaded as its function driver. Winusb.sys is provided by Microsoft and is included with Windows in the **\\Windows\\System32\\drivers** folder.
@@ -57,7 +57,7 @@ However, in the case of Winusb.sys, instead of the driver exposing the device in
 -   In the device's MS OS descriptors. The device manufacturer sets **DeviceInterfaceGUID** as a custom property in the extended properties descriptor in the device. For more details, see the "Extended Properties Descriptors" document in [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?linkid=617682).
 -   If you installed Winusb.sys manually through a custom INF, the INF registered a GUID in the INF. See [WinUSB (Winusb.sys) Installation](winusb-installation.md).
 
-If a device interface GUID is found for the device, your Windows Store app can find all devices that match that device interface GUID.
+If a device interface GUID is found for the device, your UWP app can find all devices that match that device interface GUID.
 
 **How is USB device identification shown in Windows?**
 
@@ -78,7 +78,7 @@ USB-IF assigns those identifiers and the device manufacturer must expose them in
 
     &lt;Device Id="vidpid:045e f001"&gt;
 
-Your Windows Store app can find all devices that match a specific vendor and product ids. You can narrow the search results by specifying the device interface GUID.
+Your UWP app can find all devices that match a specific vendor and product ids. You can narrow the search results by specifying the device interface GUID.
 
 **What are USB device classes?**
 
@@ -93,7 +93,7 @@ Whether a device is vendor-defined or conforms to a device class, it must descri
 -   Protocol code: The protocol that the device uses.
 
 For example, the SuperMUTT device is a vendor-defined device and that information is indicated by class code is FF. If your device shows class code as FEh, subclass code as 02h, and protocol code 00h, you can conclude that the device is a class-compliant IrDA bridge device.
-Your Windows Store app can communicate with devices that belong to these device classes:
+Your UWP app can communicate with devices that belong to these device classes:
 
 -   ActiveSync
 -   CdcControl
@@ -105,7 +105,7 @@ Your Windows Store app can communicate with devices that belong to these device 
 -   Physical
 -   VendorSpecific
 
-Your Windows Store app can find all devices that match a specific set of class, subclass, and protocol codes.
+Your UWP app can find all devices that match a specific set of class, subclass, and protocol codes.
 
 ## Get the Advanced Query Syntax (AQS) string for the device
 
@@ -118,7 +118,7 @@ Generate an advanced query string (AQS) that contains identification information
 
     `"System.Devices.InterfaceClassGuid:="{DEE824EF-729B-4A0E-9C14-B7117D33A817}" AND System.Devices.InterfaceEnabled:=System.StructuredQueryType.Boolean#True AND System.DeviceInterface.WinUsb.UsbVendorId:=1118 AND System.DeviceInterface.WinUsb.UsbProductId:=61441"`
 
-    **Note**  Notice that the device interface GUID that appears in the string is not the one you specified. That GUID is the actual device interface GUID registered by Winusb.sys for Windows Store apps.
+    **Note**  Notice that the device interface GUID that appears in the string is not the one you specified. That GUID is the actual device interface GUID registered by Winusb.sys for UWP apps.
 
      
 
@@ -135,7 +135,7 @@ This is the simplest way to find a USB device. For details, see [Quickstart: enu
 2.  Loop through the collection. Each iteration gets a [**DeviceInformation**](https://msdn.microsoft.com/library/windows/apps/br225393) object.
 3.  Get the [**DeviceInformation.Id**](https://msdn.microsoft.com/library/windows/apps/br225437) property value. The string value is the device instance path. For example, "\\\\\\\\?\\\\USB\#VID\_045E&PID\_078F\#6&1b8ff026&0&5\#{dee824ef-729b-4a0e-9c14-b7117d33a817}".
 4.  Call [**FromIdAsync**](https://msdn.microsoft.com/library/windows/apps/dn264010) by passing the device instance string and get the [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883) object. You can then use the **UsbDevice** object to perform other operations, such as sending a control transfer. When the app has finished using the **UsbDevice** object, the app must release it by calling [**Close**](https://msdn.microsoft.com/library/windows/apps/dn263990).
-    **Note**  When Windows Store app suspends, the device is closed automatically. To avoid using a stale handle for future operations, the app must released the [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883) reference.
+    **Note**  When UWP app suspends, the device is closed automatically. To avoid using a stale handle for future operations, the app must released the [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883) reference.
 
      
 

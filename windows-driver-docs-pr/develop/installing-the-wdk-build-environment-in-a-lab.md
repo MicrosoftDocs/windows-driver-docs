@@ -15,7 +15,7 @@ The Windows Driver Kit (WDK) 8.1 provides a feature that enables you to copy co
 
 You might find this feature useful if you need to integrate the WDK with your build process, or if you want to distribute the build process in a lab or test environment.
 
-**Note**  You can only use this feature for building drivers and applications that use C and C++. This feature cannot be used for managed code or Windows Store apps.
+**Note**  You can only use this feature for building drivers and applications that use C and C++. This feature cannot be used for managed code or UWP apps.
 
 
 ## 1. Download the Visual Studio and WDK and SDK setup files
