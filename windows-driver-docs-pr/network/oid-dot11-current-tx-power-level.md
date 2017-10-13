@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_CURRENT\_TX\_POWER\_LEVEL
+title: OID_DOT11_CURRENT_TX_POWER_LEVEL
 author: windows-driver-content
 description: OID\_DOT11\_CURRENT\_TX\_POWER\_LEVEL
 ms.assetid: 082c900c-9037-4c16-8c42-6896b762c9be

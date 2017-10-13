@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_SHUTDOWN
+title: IRP_MJ_SHUTDOWN
 author: windows-driver-content
 description: Drivers of mass-storage devices that have internal caches for data must handle this request in a DispatchShutdown routine.
 ms.author: windowsdriverdev

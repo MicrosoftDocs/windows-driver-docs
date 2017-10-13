@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_MAC\_OPTIONS
+title: OID_GEN_MAC_OPTIONS
 author: windows-driver-content
 description: As a query, the OID\_GEN\_MAC\_OPTIONS OID specifies a bitmask that defines optional properties of the underlying driver or a NIC.
 ms.assetid: 2a093bcb-ae6f-491c-a596-03e6f47b0b86

@@ -207,7 +207,7 @@ The following table describes some of the elements in the previous example.
 <tbody>
 <tr class="odd">
 <td align="left">WAIT</td>
-<td align="left">The parenthetical comment after this heading gives the reason for the wait. The command [<strong>dt nt!_KWAIT_REASON</strong>](dt--display-type-.md) will display a list of all wait reasons.</td>
+<td align="left">The parenthetical comment after this heading gives the reason for the wait. The command <strong>[dt nt!_KWAIT_REASON](dt--display-type-.md)</strong> will display a list of all wait reasons.</td>
 </tr>
 <tr class="even">
 <td align="left"><p>ElapsedTime</p></td>

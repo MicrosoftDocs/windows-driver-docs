@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_FLUSH\_BUFFERS
+title: IRP_MJ_FLUSH_BUFFERS
 author: windows-driver-content
 description: Drivers of devices with internal caches for data and drivers that maintain internal buffers for data must handle this request in a DispatchFlushBuffers routine.
 ms.author: windowsdriverdev

@@ -1,5 +1,5 @@
 ---
-title: NDIS\_STATUS\_DOT11\_ROAMING\_START
+title: NDIS_STATUS_DOT11_ROAMING_START
 author: windows-driver-content
 description: NDIS\_STATUS\_DOT11\_ROAMING\_START
 ms.assetid: ff8f5d8f-b094-4f9b-bf5d-e92c2d5650f2

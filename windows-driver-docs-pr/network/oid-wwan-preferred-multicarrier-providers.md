@@ -1,5 +1,5 @@
 ---
-title: OID\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS
+title: OID_WWAN_PREFERRED_MULTICARRIER_PROVIDERS
 author: windows-driver-content
 description: OID\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS is used to set or query the list of preferred multi-carrier network providers. Multi-carrier providers are ones that can be set as home providers.
 ms.assetid: BA78E0B9-1B57-412C-83E7-328F8304C82D

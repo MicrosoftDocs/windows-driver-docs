@@ -35,7 +35,7 @@ UMDF version 2 (both 2.0 and 2.1) is included in Windows 10 and later.
 ## What is the difference between UMDF version 2 and the previous version, 1.11 (one dot eleven)?
 
 
-A driver written in UMDF version 2 is written in the C programming language. This same driver can then be easly compiled for KMDF. Additionally, a UMDF version 1 driver must be written according to the COM programming model. 
+A driver written in UMDF version 2 is written in the C programming language. This same driver can then be easily compiled for KMDF. Additionally, a UMDF version 1 driver must be written according to the COM programming model. 
 
 For more info, see [Getting Started with UMDF](getting-started-with-umdf-version-2.md).
 

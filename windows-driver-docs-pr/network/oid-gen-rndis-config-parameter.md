@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_RNDIS\_CONFIG\_PARAMETER
+title: OID_GEN_RNDIS_CONFIG_PARAMETER
 author: windows-driver-content
 description: As a set, the OID\_GEN\_RNDIS\_CONFIG\_PARAMETER is used to set device-specific parameters.
 ms.assetid: 79e74e8b-7811-46a5-8ede-f6cca92967b0

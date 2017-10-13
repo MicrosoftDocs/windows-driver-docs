@@ -73,48 +73,48 @@ This entry is no longer supported in Windows 2000 and later versions of Windows.
 <a href="" id="flag"></a>*flag*  
 These optional flags, expressed in hexadecimal notation or as a decimal value in a section entry, can be used to control how (or whether) a particular source file is copied to the destination. One or more (ORed) values for the following system-defined flags can be specified. However, some of these flags are mutually exclusive:
 
-<a href="" id="0x00000001---copyflg-warn-if-skip--"></a>**0x00000001** (COPYFLG\_WARN\_IF\_SKIP)   
+<a href="" id="0x00000001---copyflg-warn-if-skip--"></a>**0x00000001** (COPYFLG_WARN_IF_SKIP)   
 Send a warning if the user chooses not to copy a file. This flag and the next are mutually exclusive, and both are irrelevant to INF files that are digitally signed.
 
-<a href="" id="0x00000002--copyflg-noskip-"></a>**0x00000002** (COPYFLG\_NOSKIP)  
+<a href="" id="0x00000002--copyflg-noskip-"></a>**0x00000002** (COPYFLG_NOSKIP)  
 Do not allow the user to skip copying a file. This flag is implied if the [driver package](driver-packages.md) is signed.
 
-<a href="" id="0x00000004--copyflg-noversioncheck-"></a>**0x00000004** (COPYFLG\_NOVERSIONCHECK)  
+<a href="" id="0x00000004--copyflg-noversioncheck-"></a>**0x00000004** (COPYFLG_NOVERSIONCHECK)  
 Ignore file versions and write over existing files in the destination directory. This flag and the next two are mutually exclusive. This flag is irrelevant to digitally signed INF files.
 
-<a href="" id="0x00000008--copyflg-force-file-in-use-"></a>**0x00000008** (COPYFLG\_FORCE\_FILE\_IN\_USE)  
+<a href="" id="0x00000008--copyflg-force-file-in-use-"></a>**0x00000008** (COPYFLG_FORCE_FILE_IN_USE)  
 Force file-in-use behavior: do not copy over an existing file of the same name if it is currently open. Instead, copy the given source file with a temporary name so that it can be renamed and used when the next restart occurs.
 
-<a href="" id="0x00000010--copyflg-no-overwrite-"></a>**0x00000010** (COPYFLG\_NO\_OVERWRITE)  
+<a href="" id="0x00000010--copyflg-no-overwrite-"></a>**0x00000010** (COPYFLG_NO_OVERWRITE)  
 Do not replace an existing file in the destination directory with a source file of the same name. This flag cannot be combined with any other flags.
 
-<a href="" id="0x00000020--copyflg-no-version-dialog--"></a>**0x00000020** (COPYFLG\_NO\_VERSION\_DIALOG)   
+<a href="" id="0x00000020--copyflg-no-version-dialog--"></a>**0x00000020** (COPYFLG_NO_VERSION_DIALOG)   
 Do not write over a file in the destination directory with the source file if the existing file is newer than the source file.
 
 Beginning with Windows Vista and later operating systems, Windows respects this flag for all INF files, including digitally signed INF files.
 
 Prior to Windows Vista this flag is irrelevant to digitally signed INF files. If a [driver package](driver-packages.md) is digitally signed, Windows installs the package as a whole and does not selectively omit files in the package based on other versions already present on the computer.
 
-<a href="" id="0x00000040---copyflg-overwrite-older-only-"></a>**0x00000040** (COPYFLG\_OVERWRITE\_OLDER\_ONLY)  
+<a href="" id="0x00000040---copyflg-overwrite-older-only-"></a>**0x00000040** (COPYFLG_OVERWRITE_OLDER_ONLY)  
 Copy the source file to the destination directory only if the file on the destination is superseded by a newer version. This flag is irrelevant to digitally signed INF files.
 
-<a href="" id="0x00000400--copyflg-replaceonly--"></a>**0x00000400** (COPYFLG\_REPLACEONLY)   
+<a href="" id="0x00000400--copyflg-replaceonly--"></a>**0x00000400** (COPYFLG_REPLACEONLY)   
 Copy the source file to the destination directory only if the file is already present in the destination directory.
 
-<a href="" id="0x00000800--copyflg-nodecomp--"></a>**0x00000800** (COPYFLG\_NODECOMP)   
+<a href="" id="0x00000800--copyflg-nodecomp--"></a>**0x00000800** (COPYFLG_NODECOMP)   
 (Windows 7 and later) Copy the source file to the destination directory without decompressing the source file if it is compressed.
 
-<a href="" id="0x00001000--copyflg-replace-boot-file-"></a>**0x00001000** (COPYFLG\_REPLACE\_BOOT\_FILE)  
+<a href="" id="0x00001000--copyflg-replace-boot-file-"></a>**0x00001000** (COPYFLG_REPLACE_BOOT_FILE)  
 This file is required by the system loader. The system will prompt the user to restart the system.
 
-<a href="" id="0x00002000--copyflg-noprune-"></a>**0x00002000** (COPYFLG\_NOPRUNE)  
+<a href="" id="0x00002000--copyflg-noprune-"></a>**0x00002000** (COPYFLG_NOPRUNE)  
 Do not delete this operation as a result of optimization.
 
 For example, Windows might determine that the file copy operation is not necessary because the file already exists. However, the writer of the INF knows that the operation is required and directs Windows to override its optimization and perform the file operation.
 
 This flag can be used to ensure that files are copied if they are also specified in an INF [**DelFiles**](inf-delfiles-directive.md) directive or an INF [**RenFiles**](inf-renfiles-directive.md) directive.
 
-<a href="" id="0x00004000--copyflg-in-use-rename-"></a>**0x00004000** (COPYFLG\_IN\_USE\_RENAME)  
+<a href="" id="0x00004000--copyflg-in-use-rename-"></a>**0x00004000** (COPYFLG_IN_USE_RENAME)  
 If the source file cannot be copied because the destination file is being used, rename the destination file, then copy the source file to the destination file, and delete the renamed destination file. If the destination file cannot be renamed, complete the copy operation during the next system restart. If the renamed destination file cannot be deleted, delete the renamed destination file during the next system restart.
 
 <a href="" id="security-descriptor-string"></a>*security-descriptor-string*  

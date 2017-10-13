@@ -83,11 +83,12 @@ To publish a driver to Windows Update, [create a hardware submission](create-a-n
 
 7.  If you want to add Computer Hardware IDs (CHIDs), enter each CHID into the text box and select **Add CHID(s)**. To bulk add multiple CHIDs, ensure that each CHID is separated by a newline, select **Add multiple CHIDs**, and paste your CHIDs into the text box. You can view all added CHIDs in the list below the text box. To remove a CHID from the list, select **Remove**
 
-> [!NOTE]
-> CHIDs are not supported for all versions of Windows. Do not add CHIDs if your driver targets the following operating systems:
+>[!IMPORTANT]
+> CHIDs are not supported for the following versions of windows:
 > * Windows 8.1 or earlier
 > * Windows Server 2012 R2 or earlier
-
+>
+> If your driver targets either of these operating systems, create two shipping labels: one for Windows 10 (where you can add CHIDs) and one for down-level operating systems (where no CHIDs will be added).
 
 
 

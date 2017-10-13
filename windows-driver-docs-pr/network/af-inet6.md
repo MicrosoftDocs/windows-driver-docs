@@ -1,5 +1,5 @@
 ---
-title: AF\_INET6
+title: AF_INET6
 author: windows-driver-content
 description: AF\_INET6
 ms.assetid: 58d36a1e-cda2-42aa-9563-96df2f7319b2

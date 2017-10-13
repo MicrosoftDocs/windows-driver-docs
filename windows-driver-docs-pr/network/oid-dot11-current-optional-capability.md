@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_CURRENT\_OPTIONAL\_CAPABILITY
+title: OID_DOT11_CURRENT_OPTIONAL_CAPABILITY
 author: windows-driver-content
 description: When queried, the OID\_DOT11\_CURRENT\_OPTIONAL\_CAPABILITY object identifier (OID) requests that the miniport driver return the state of the optional wireless LAN (WLAN) capabilities supported by the 802.11 station.
 ms.assetid: e029712c-b34f-447c-9e43-48e5a72ad6ad

@@ -35,11 +35,4 @@ A driver package is staged to the driver store by being verified and validated:
 
 After a driver package has passed integrity and syntax checks, it is copied to the driver store. Afterwards, the operating system uses the driver package to automatically install new devices without requiring user interaction.
 
- 
-
- 
-
-
-
-
-
+Once files are staged to the driver store, they should not be removed or modified in any way.  Additionally, new files should not be added to the driver store outside of the staging process.  This includes files being added, removed, or modified directly through programmatic calls, or indirectly through INF directives that will be processed at a later time.  

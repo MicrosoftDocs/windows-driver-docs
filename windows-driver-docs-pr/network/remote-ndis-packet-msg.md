@@ -1,5 +1,5 @@
 ---
-title: 'REMOTE\_NDIS\_PACKET\_MSG'
+title: 'REMOTE_NDIS_PACKET_MSG'
 author: windows-driver-content
 Description: 'REMOTE\_NDIS\_PACKET\_MSG encapsulates NDIS data packets to form a single data message.'
 ms.assetid: cc4efe94-6e2c-4201-b251-10e76cf5a553

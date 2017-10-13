@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_QUERY\_LEGACY\_BUS\_INFORMATION
+title: IRP_MN_QUERY_LEGACY_BUS_INFORMATION
 author: windows-driver-content
 description: This IRP is reserved for system use.
 ms.author: windowsdriverdev

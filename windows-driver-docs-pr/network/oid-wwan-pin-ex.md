@@ -1,5 +1,5 @@
 ---
-title: OID\_WWAN\_PIN\_EX
+title: OID_WWAN_PIN_EX
 author: windows-driver-content
 description: OID\_WWAN\_PIN\_EX sets or returns expanded information related to Personal Identification Numbers (PINs).
 ms.assetid: 4D3D91B2-7B3C-4C8F-B98F-0F9999D04C03

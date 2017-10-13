@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_READ
+title: IRP_MJ_READ
 author: windows-driver-content
 description: Every device driver that transfers data from its device to the system must handle read requests in a DispatchRead or DispatchReadWrite routine, as must any higher-level driver layered over such a device driver.
 ms.author: windowsdriverdev

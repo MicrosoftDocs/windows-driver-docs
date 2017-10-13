@@ -1,5 +1,5 @@
 ---
-title: OID\_PM\_CURRENT\_CAPABILITIES
+title: OID_PM_CURRENT_CAPABILITIES
 author: windows-driver-content
 description: As a query, overlying drivers can use the OID\_PM\_CURRENT\_CAPABILITIES OID to query the currently available power management capabilities of a network adapter.
 ms.assetid: b35ce325-a1aa-43e0-bf68-cb2ab89dff76

@@ -1,5 +1,5 @@
 ---
-title: NDIS\_STATUS\_DOT11\_CONNECTION\_COMPLETION
+title: NDIS_STATUS_DOT11_CONNECTION_COMPLETION
 author: windows-driver-content
 description: A miniport driver must make an NDIS\_STATUS\_DOT11\_CONNECTION\_COMPLETION indication after a connection operation completes.
 ms.assetid: 85656517-28b4-4905-8f80-f83a0fde9028

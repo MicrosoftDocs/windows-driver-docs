@@ -20,7 +20,7 @@ The Plug and Play (PnP) manager uses this method if the following are true:
 
 -   The bus driver for the device recognizes this unique ID as present and well formatted.
 
--   The bus driver can reliably hash the unique ID into a globally unique identifier ([*GUID*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-guid)), and returns this GUID in response to the [**IRP\_MN\_QUERY\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff551679) function code when the **Parameters.QueryId.IdType** member of the [**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659) structure is set to **BusQueryContainerID**.
+-   The bus driver can reliably hash the unique ID into a globally unique identifier ([*GUID*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-guid)), and returns this GUID in response to the [**IRP_MN_QUERY_ID**](https://msdn.microsoft.com/library/windows/hardware/ff551679) function code when the **Parameters.QueryId.IdType** member of the [**IO_STACK_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659) structure is set to **BusQueryContainerID**.
 
 Windows 7 and later versions of Windows provide inbox drivers for several of the most common bus types. This includes USB, Bluetooth, and PnP-X. For these bus types, the device is only required to include a bus-specific unique ID. The supplied Windows bus driver will then read the unique ID from the device and create a container ID.
 

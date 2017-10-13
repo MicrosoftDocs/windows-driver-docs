@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_SUPPORTED\_GUIDS
+title: OID_GEN_SUPPORTED_GUIDS
 author: windows-driver-content
 description: As a query, the OID\_GEN\_SUPPORTED\_GUIDS OID requests the miniport driver to return an array of structures of the type NDIS\_GUID.
 ms.assetid: 6985727e-50f8-4dbf-b8cd-ce31d49e8294

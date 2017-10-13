@@ -25,7 +25,7 @@ ms.technology: windows-devices
 
 When a new USB device is plugged in, the system-supplied USB hub driver composes the following device ID by using information extracted from the device's device descriptor:
 
-USB\\VID\_v(4)&PID\_d(4)&REV\_r(4)
+USB\\VID_v(4)&PID_d(4)&REV_r(4)
 
 Where:
 
@@ -39,15 +39,15 @@ The hub driver extracts the vendor and product codes from the *idVendor* and *id
 
 An INF model section can also specify the following hardware ID:
 
-USB\\VID\_v(4)&PID\_d(4)
+USB\\VID_v(4)&PID_d(4)
 
 and the following compatible IDs:
 
-USB\\CLASS\_c(2)&SUBCLASS\_s(2)&PROT\_p(2)
+USB\\CLASS_c(2)&SUBCLASS_s(2)&PROT_p(2)
 
-USB\\CLASS\_c(2)&SUBCLASS\_s(2)
+USB\\CLASS_c(2)&SUBCLASS_s(2)
 
-USB\\CLASS\_c(2)
+USB\\CLASS_c(2)
 
 Where:
 
@@ -65,7 +65,7 @@ Devices with multiple interfaces are called *composite* devices. Starting with W
 
 Each interface has a device ID of the following form:
 
-USB\\ VID\_v(4)&PID\_d(4)&MI\_z(2)
+USB\\ VID_v(4)&PID_d(4)&MI_z(2)
 
 Where:
 
@@ -77,11 +77,11 @@ Where:
 
 An INF model section can also specify the following compatible IDs:
 
-USB\\CLASS\_d(2)&SUBCLASS\_s(2)&PROT\_p(2)
+USB\\CLASS_d(2)&SUBCLASS_s(2)&PROT_p(2)
 
-USB\\CLASS\_d(2)&SUBCLASS\_s(2)
+USB\\CLASS_d(2)&SUBCLASS_s(2)
 
-USB\\CLASS\_d(2)
+USB\\CLASS_d(2)
 
 USB\\COMPOSITE
 

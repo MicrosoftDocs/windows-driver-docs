@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_CHANGE\_SINGLE\_ITEM
+title: IRP_MN_CHANGE_SINGLE_ITEM
 author: windows-driver-content
 description: All drivers that support WMI must handle this IRP.
 ms.author: windowsdriverdev

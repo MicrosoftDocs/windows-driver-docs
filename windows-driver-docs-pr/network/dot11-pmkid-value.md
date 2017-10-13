@@ -1,5 +1,5 @@
 ---
-title: DOT11\_PMKID\_VALUE
+title: DOT11_PMKID_VALUE
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 ms.assetid: 8b23bb59-251a-4898-b929-b97ff6802744

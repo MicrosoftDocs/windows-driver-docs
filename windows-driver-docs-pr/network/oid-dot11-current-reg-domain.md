@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_CURRENT\_REG\_DOMAIN
+title: OID_DOT11_CURRENT_REG_DOMAIN
 author: windows-driver-content
 description: OID\_DOT11\_CURRENT\_REG\_DOMAIN
 ms.assetid: 29937d0b-ed26-45cb-8ebc-2a37e313faf9

@@ -115,31 +115,31 @@ In addition to **!process**, the following extensions can help to determine the 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>!ready</strong>](-ready.md)</p></td>
+<td align="left"><p><strong>[!ready](-ready.md)</strong></p></td>
 <td align="left"><p>Identifies the threads that are ready to run, in order of priority.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!kdext*.locks</strong>](-locks---kdext--locks-.md)</p></td>
+<td align="left"><p><strong>[!kdext*.locks](-locks---kdext--locks-.md)</strong></p></td>
 <td align="left"><p>Identifies any held resource locks, in case there is a deadlock with retail time outs.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>!vm</strong>](-vm.md)</p></td>
+<td align="left"><p><strong>[!vm](-vm.md)</strong></p></td>
 <td align="left"><p>Checks the virtual memory usage.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!poolused</strong>](-poolused.md)</p></td>
+<td align="left"><p><strong>[!poolused](-poolused.md)</strong></p></td>
 <td align="left"><p>Determines whether one type of pool allocation is disproportionately large (pool tagging required).</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>!memusage</strong>](-memusage.md)</p></td>
+<td align="left"><p><strong>[!memusage](-memusage.md)</strong></p></td>
 <td align="left"><p>Checks the physical memory status.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!heap</strong>](-heap.md)</p></td>
+<td align="left"><p><strong>[!heap](-heap.md)</strong></p></td>
 <td align="left"><p>Checks the validity of the heap.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>!irpfind</strong>](-irpfind.md)</p></td>
+<td align="left"><p><strong>[!irpfind](-irpfind.md)</strong></p></td>
 <td align="left"><p>Searches nonpaged pool for active IRPs.</p></td>
 </tr>
 </tbody>
