@@ -68,7 +68,7 @@ In the preceding image,
 
     **USB Type-C port controller**
 
-    The Type-C Port Controller Interface Class Extension (UcmTcpciCx.sys) communicates with Device Policy Manager (DPM), a system component that implements Type-C PD state machine. A client driver to that class extension is a port controller that needs to the keep class extension informed about the hardware events. These drivers are used for a system that does not have the capability of handling the power delivery (PD) state machine.
+    The Type-C Port Controller Interface Class Extension (UcmTcpciCx.sys) is an extension to the USB Connector Manager provided by Microsoft that allows the OS to behave as a Type-C Port Manager (TCPM) for a connector that does not implement the PD state machines. A UcmTcpciCx client driver allows the software TCPM to control the hardware and get its status in real time.
 
     For information about writing the client driver, see [Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md).
 
