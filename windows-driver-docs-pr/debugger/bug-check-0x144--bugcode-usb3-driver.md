@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x144 BUGCODE\_USB3\_DRIVER
-description: The BUGCODE\_USB3\_DRIVER bug check has a value of 0x00000144. This is the code used for all USB 3 bug checks.
+title: Bug Check 0x144 BUGCODE_USB3_DRIVER
+description: The BUGCODE_USB3_DRIVER bug check has a value of 0x00000144. This is the code used for all USB 3 bug checks.
 ms.assetid: 39414287-3E20-405B-846A-B7F9F8AEE078
 keywords: ["Bug Check 0x144 BUGCODE_USB3_DRIVER", "BUGCODE_USB3_DRIVER"]
 ms.author: windowsdriverdev
@@ -96,9 +96,9 @@ The **BUGCODE\_USB3\_DRIVER** bug check has a value of 0x00000144. This is the c
 <tr class="even">
 <td align="left"><p>0x804</p></td>
 <td align="left"><p>The leaked handle context. Run <strong>!usbanalyze -v</strong> to get information about the leaked handle and URBs. You must enable Driver Verifier for the client driver.</p></td>
-<td align="left"><p>Device object passed to [<strong>USBD_CreateHandle</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406241).</p></td>
+<td align="left"><p>Device object passed to <strong>[USBD_CreateHandle](https://msdn.microsoft.com/library/windows/hardware/hh406241)</strong>.</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>A client driver forgot to close a handle it created earlier using [<strong>USBD_CreateHandle</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406241) or forgot to free an URB it allocated.</p></td>
+<td align="left"><p>A client driver forgot to close a handle it created earlier using <strong>[USBD_CreateHandle](https://msdn.microsoft.com/library/windows/hardware/hh406241)</strong> or forgot to free an URB it allocated.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x805</p></td>
@@ -112,14 +112,14 @@ The **BUGCODE\_USB3\_DRIVER** bug check has a value of 0x00000144. This is the c
 <td align="left"><p>Pointer to the IRP</p></td>
 <td align="left"><p>Pointer to the URB</p></td>
 <td align="left"><p>Pointer to the client driver's device object</p></td>
-<td align="left"><p>A client driver attempted to send a chained [<strong>MDL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554414) before querying for chained <strong>MDL</strong> capability. A client driver cannot send a chained <strong>MDL</strong> until after it successfully queries for the chained <strong>MDL</strong> capability. For more information, see Remarks.</p></td>
+<td align="left"><p>A client driver attempted to send a chained <strong>[MDL](https://msdn.microsoft.com/library/windows/hardware/ff554414)</strong> before querying for chained <strong>MDL</strong> capability. A client driver cannot send a chained <strong>MDL</strong> until after it successfully queries for the chained <strong>MDL</strong> capability. For more information, see Remarks.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x807</p></td>
-<td align="left"><p>Pointer to the chained [<strong>MDL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554414)</p></td>
+<td align="left"><p>Pointer to the chained <strong>[MDL](https://msdn.microsoft.com/library/windows/hardware/ff554414)</strong></p></td>
 <td align="left"><p>Pointer to the URB</p></td>
 <td align="left"><p>Pointer to the client driver's device object if available</p></td>
-<td align="left"><p>A client driver sent an URB to the core stack with a transfer buffer length longer than the byte count (returned by [<strong>MmGetMdlByteCount</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554530)) of the [<strong>MDL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554414) passed in. For more information, see Remarks.</p></td>
+<td align="left"><p>A client driver sent an URB to the core stack with a transfer buffer length longer than the byte count (returned by <strong>[MmGetMdlByteCount](https://msdn.microsoft.com/library/windows/hardware/ff554530)</strong>) of the <strong>[MDL](https://msdn.microsoft.com/library/windows/hardware/ff554414)</strong> passed in. For more information, see Remarks.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x1001</p></td>

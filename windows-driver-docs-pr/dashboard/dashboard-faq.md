@@ -57,22 +57,21 @@ This includes both EV and Standard – there is no restriction on the number of 
 <tbody>
 <tr class="odd">
 <td>Hardware certification</td>
-<td><p>Windows Certification Program Testing Agreement v1.0</p>
-<p>Windows Logo License Agreement for Hardware 2017</p></td>
+<td><p>Windows Hardware Compatibility Program Test Agreement (Required)</p>
+<p>Windows Logo License Agreement for Hardware 2017*</p></td>
 </tr>
 <tr class="even">
 <td>Software certification</td>
-<td><p>Windows Certification Program Testing Agreement v1.0</p>
-<p>Windows Logo License Agreement For Software v1.9</p></td>
+<td><p>Windows Hardware Compatibility Program Test Agreement (Required)</p>
+<p>Windows Logo License Agreement For Software v1.9*</p></td>
 </tr>
 <tr class="odd">
 <td>File driver signing</td>
-<td><p>Windows Compatibility Program and Driver Quality Attestment Testing Agreement</p>
-<p>Windows Certification Program Testing Agreement v1.0</p></td>
+<td><p>Windows Compatibility Program and Driver Quality Attestment Testing Agreement (Required)</p>
 </tr>
 </tbody>
 </table>
-
+*These agreements are optional unless you are using features or asssts in the associated agreement.
  
 
 ### <span id="How_do_I_sign_legal_agreements_"></span><span id="how_do_i_sign_legal_agreements_"></span><span id="HOW_DO_I_SIGN_LEGAL_AGREEMENTS_"></span>How do I sign legal agreements?
@@ -127,13 +126,13 @@ Check that the announcement date that has been set. If it is not, set the date f
 
 In an effort to make Windows 10 more secure without affecting performance, all binaries now receive embedded signatures. This applies to all the submissions submitted for certification, not only submissions based on Windows 10.
 
-### <span id="How_to_get_a_single_cat_file_if_drivers_are_uniform_for_all_operating_systems"></span><span id="how_to_get_a_single_cat_file_if_drivers_are_uniform_for_all_operating_systems"></span><span id="HOW_TO_GET_A_SINGLE_CAT_FILE_IF_DRIVERS_ARE_UNIFORM_FOR_ALL_OPERATING_SYSTEMS"></span>How to get a single cat file if drivers are uniform for all operating systems
+### <span id="How_to_get_a_single_cat_file_if_drivers_are_uniform_for_all_operating_systems"></span><span id="how_to_get_a_single_cat_file_if_drivers_are_uniform_for_all_operating_systems"></span><span id="HOW_TO_GET_A_SINGLE_CAT_FILE_IF_DRIVERS_ARE_UNIFORM_FOR_ALL_OPERATING_SYSTEMS"></span>How do I get a single cat file if my drivers are uniform for all operating systems?
 
 Make sure your final package has a single driver folder on the **Package** tab and the driver’s properties include all the operating systems you have tested.
 
 ![package tab](images/packagetab.png)
 
-### <span id="Unable_to_add_new_marketing_names_to_the_approved_submission"></span><span id="unable_to_add_new_marketing_names_to_the_approved_submission"></span><span id="UNABLE_TO_ADD_NEW_MARKETING_NAMES_TO_THE_APPROVED_SUBMISSION"></span>Unable to add new marketing names to the approved submission
+### <span id="Unable_to_add_new_marketing_names_to_the_approved_submission"></span><span id="unable_to_add_new_marketing_names_to_the_approved_submission"></span><span id="UNABLE_TO_ADD_NEW_MARKETING_NAMES_TO_THE_APPROVED_SUBMISSION"></span>I'm unable to add new marketing names to the approved submission.
 
 Please check the announcement date that has been set. If the announcement date set has passed, you will be not able to add a new name. You need to contact [Sysdev@Microsoft.com](http://go.microsoft.com/fwlink/p/?LinkID=624170).
 

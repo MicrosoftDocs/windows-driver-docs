@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 A **DriverVer** directive specifies version information for drivers installed by this INF.
 
-``` syntax
+```
 [Version] |
 [DDInstall]
  

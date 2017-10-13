@@ -1,7 +1,7 @@
 ---
-title: Sending an IOCTL\_ACPI\_ENUM\_CHILDREN Request
+title: Sending an IOCTL_ACPI_ENUM_CHILDREN Request
 author: windows-driver-content
-description: Sending an IOCTL\_ACPI\_ENUM\_CHILDREN Request
+description: Sending an IOCTL_ACPI_ENUM_CHILDREN Request
 ms.assetid: cbad53dd-4320-4920-9d16-231d0aaae839
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

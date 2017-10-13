@@ -25,11 +25,11 @@ Taking advantage of the Visual Studio development environment, the WDK provides 
 ## <span id="Setting_deployment_properties_for_your_driver_solution"></span><span id="setting_deployment_properties_for_your_driver_solution"></span><span id="SETTING_DEPLOYMENT_PROPERTIES_FOR_YOUR_DRIVER_SOLUTION"></span>Setting deployment properties for your driver solution
 
 
-From the property pages for your driver package, you have additional control over how you want your driver deployed for testing. You can choose to deploy the driver automatically whenever you build the driver solution in each configuration.
+From the property pages for your driver project, you have additional control over how you want your driver deployed for testing. You can choose to deploy the driver automatically whenever you build the driver solution in each configuration.
 
-1.  Open the property pages for your driver package. Right-click the driver package project in Solution Explorer and select **Properties**.
-2.  In the property pages for the driver package, click **Configuration Properties**, click **Driver Install**, and then click **Deployment**.
-3.  Select the **Enable deployment** option. When this option is selected, you must select a test computer that you have configured, or select the name of a computer that you want to configure for testing. See [Provision a computer for driver deployment and testing (WDK 10)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909).
+1.  Open the property pages for your driver project. Right-click the driver project in Solution Explorer and select **Properties**.
+2.  In the property pages for the driver project, click **Configuration Properties**, click **Driver Install**, and then click **Deployment**.
+3.  Select a test computer that you have configured, or select the name of a computer that you want to configure for testing. See [Provision a computer for driver deployment and testing (WDK 10)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909).
 
     When you enable deployment for your driver package project, the driver is automatically deployed to the test computer you have selected when you build your solution. You can use the **Deployment** property page to configure options for driver installation and deployment. See [Deployment Properties for Driver Package Projects](deployment-properties-for-driver-projects.md).
 
@@ -45,6 +45,7 @@ From the property pages for your driver package, you have additional control ove
 2.  Before you deploy the driver to the test computer, you also need to sign the driver package. See [Signing a Driver During Development and Testing](signing-a-driver-during-development-and-testing.md).
 3.  Select the test computer that you have configured.
 4.  To deploy the driver, click **Build Solution** or **Deploy Solution** from the **Build** menu, or press **F5** to build, deploy, and start debugging.
+5.  On the test computer, you might see a dialog box asking you to confirm that changes should be made.  In this case, deployment is paused until you confirm.
 
 When you deploy a driver, the driver files are copied to the %Systemdrive%\\drivertest\\drivers folder on the test computer. If something goes wrong during deployment, you can check to see if the files are copied to the test computer. Verify that the .inf, .cat, test cert, and .sys files, and any other necessary files, are present %systemdrive%\\drivertest\\drivers folder.
 
@@ -79,25 +80,3 @@ Starting with Windows Vista, all 64-bit versions of Windows require driver code 
 
 <span id="Problems_installing_the_driver__general_"></span><span id="problems_installing_the_driver__general_"></span><span id="PROBLEMS_INSTALLING_THE_DRIVER__GENERAL_"></span>**Problems installing the driver (general)**  
 The WDK can deploy and install a driver package on a test computer, but only if the driver has all the necessary components for installation, such as an INF file. See [Driver Packages](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff544840) more information. Make sure you can install the driver outside of Visual Studio and the WDK. For example, use the Device Console utility, [Devcon](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff544707) to test whether you can install the driver. Make sure the device (if you have one) is connected to the target computer. For more information, see [Device and Driver Installation](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff549731) and [Creating a Driver Package](creating-a-driver-package.md).
-
-## <span id="related_topics"></span>Related topics
-
-
-* [Provision a computer for driver deployment and testing (WDK 10)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909)
-* [Troubleshooting Configuration of Driver Deployment, Testing and Debugging](troubleshooting-configuration-of-driver-deployment--testing-and-debugging.md)
-* [Signing a Driver During Development and Testing](signing-a-driver-during-development-and-testing.md)
-* [Deployment Properties for Driver Projects](deployment-properties-for-driver-projects.md)
-* [Driver Verifier Properties for Driver Projects](driver-verifier-properties-for--driver-projects.md)
-* [KMDF Verifier Properties for Driver Package Projects](kmdf-verifier-properties-for-driver-package-projects.md)
-* [UMDF Verifier Properties for Driver Package Projects](umdf-verifier-properties-for-driver-package-projects.md)
-* [How to create a custom driver installation script](create-a-custom-driver-installation-script.md)
-* [Inf2Cat Properties for Driver Package Projects](inf2cat-properties-for-driver-package-projects.md)
- 
-
- 
-
-
-
-
-
-

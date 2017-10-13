@@ -1,6 +1,6 @@
 ---
-title: net\_send
-description: The net\_send extension sends a message over a local network.
+title: net_send
+description: The net_send extension sends a message over a local network.
 ms.assetid: 13d5fe3f-6477-4610-8928-020726ccb3c8
 keywords: ["network messages", "net_send Windows Debugging"]
 ms.author: windowsdriverdev

@@ -1,6 +1,6 @@
 ---
 title: Determining the RSC Capabilities of a Network Adapter
-description: A receive segment coalescing (RSC)-capable miniport driver reports its RSC capability by means of the NDIS\_OFFLOAD structure that it passes to NdisMSetMiniportAttributes.
+description: A receive segment coalescing (RSC)-capable miniport driver reports its RSC capability by means of the NDIS_OFFLOAD structure that it passes to NdisMSetMiniportAttributes.
 ms.assetid: 043A09F9-7D5D-4401-9645-19FDBD614659
 ms.author: windowsdriverdev
 ms.date: 04/20/2017

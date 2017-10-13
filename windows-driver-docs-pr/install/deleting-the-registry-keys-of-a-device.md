@@ -27,7 +27,7 @@ You should not use [**SetupDiDeleteDevRegKey**](https://msdn.microsoft.com/libra
 
     [**SetupDiDeleteDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff550991) also removes critical device installation state.
 
--   Software or hardware keys that are opened by using [**SetupDiOpenDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552079) with a scope of DICS\_FLAG\_GLOBAL contain data about the device installation state. Software or hardware keys that are accessed with a scope of DICS\_FLAG\_CONFIGSPECIFIC do not contain device installation state.
+-   Software or hardware keys that are opened by using [**SetupDiOpenDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552079) with a scope of DICS_FLAG_GLOBAL contain data about the device installation state. Software or hardware keys that are accessed with a scope of DICS_FLAG_CONFIGSPECIFIC do not contain device installation state.
 
     In either case, deleting these software or hardware keys could have implications for other device installation components.
 

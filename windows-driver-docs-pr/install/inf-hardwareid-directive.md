@@ -1,6 +1,6 @@
 ---
 title: INF HardwareId Directive
-description: Starting with Windows Vista, the Found New Hardware Wizard and Hardware Update Wizard support INF HardwareId directives in the \ DeviceInstall\ section of an Autorun.inf file.
+description: The Found New Hardware Wizard and Hardware Update Wizard support INF HardwareId directives in the [DeviceInstall] section of an Autorun.inf file.
 ms.assetid: aceb4db2-ae00-47f3-994a-49541437e260
 keywords:
 - INF HardwareId Directive Device and Driver Installation
@@ -26,7 +26,7 @@ ms.technology: windows-devices
 
 Starting with Windows Vista, the Found New Hardware Wizard and Hardware Update Wizard support INF **HardwareId** directives in the **\[DeviceInstall\]** section of an *Autorun.inf* file. The author of *Autorun.inf* can use these **HardwareId** directives to specify Plug and Play (PnP) hardware identifiers (IDs) of the devices for which the AutoRun-enabled application provides and installs drivers.
 
-``` syntax
+```
 [DeviceInstall] 
  
 HardwareId="pnp-hardware-id"
@@ -39,7 +39,7 @@ HardwareId="pnp-hardware-id"
 <a href="" id="-pnp-hardware-id-"></a>"*pnp-hardware-id*"  
 This value specifies a PnP device hardware ID. The hardware ID must be enclosed in double quotation marks (").
 
-The hardware ID can be fairly generic, such as PCI\\VEN\_1234&DEV\_1234, or very specific, such as PCI\\VEN\_1234&DEV\_1234&SUBSYS\_12345678&REV\_01.
+The hardware ID can be fairly generic, such as PCI\\VEN_1234&DEV_1234, or very specific, such as PCI\\VEN_1234&DEV_1234&SUBSYS_12345678&REV_01.
 
 Only one PnP hardware ID can be specified per HardwareId directive. To specify multiple hardware IDs, use multiple HardwareId directives, one per line.
 

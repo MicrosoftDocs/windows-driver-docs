@@ -6,6 +6,96 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows-driver-docs-pr/debugger/debugging-windows-store-apps-using-the-windows-debugger.md",
+      "redirect_URL": "/windows-hardware/drivers/debugger/debugging-uwp-apps-using-the-windows-debugger",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/auto-install-for-windows-store-device-apps.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/auto-install-for-uwp-device-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/autoplay-for-windows-store-device-apps.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/autoplay-for-uwp-device-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/build-a-windows-store-device-app-step-by-step.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/build-a-uwp-device-app-step-by-step",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/device-sync-and-update-for-windows-store-device-apps.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/device-sync-and-update-for-uwp-device-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/meet-windows-store-device-apps.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/meet-uwp-device-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/step-1--create-a-windows-store-device-app.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/step-1--create-a-uwp-device-app",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/windows-store-device-apps-for-printers.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/uwp-device-apps-for-printers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/windows-store-device-apps-for-specialized-devices.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/uwp-device-apps-for-specialized-devices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/windows-store-device-apps-for-webcams.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/uwp-device-apps-for-webcams",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/mobilebroadband/windows-store-mobile-broadband-apps.md",
+      "redirect_URL": "/windows-hardware/drivers/mobilebroadband/uwp-mobile-broadband-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/usbcon/how-to-connect-to-a-usb-device--windows-store-app-.md",
+      "redirect_URL": "/windows-hardware/drivers/usbcon/how-to-connect-to-a-usb-device--uwp-app-",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/usbcon/how-to-get-usb-descriptors--windows-store-app-.md",
+      "redirect_URL": "/windows-hardware/drivers/usbcon/how-to-get-usb-descriptors--uwp-app-",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/usbcon/how-to-select-a-usb-interface-setting--windows-store-app-.md",
+      "redirect_URL": "/windows-hardware/drivers/usbcon/how-to-select-a-usb-interface-setting--uwp-app-",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/usbcon/how-to-send-a-usb-bulk-transfer--windows-store-app-.md",
+      "redirect_URL": "/windows-hardware/drivers/usbcon/how-to-send-a-usb-bulk-transfer--uwp-app-",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/usbcon/how-to-send-a-usb-control-transfer--windows-store-app-.md",
+      "redirect_URL": "/windows-hardware/drivers/usbcon/how-to-send-a-usb-control-transfer--uwp-app-",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/usbcon/how-to-send-a-usb-interrupt-transfer--windows-store-app-.md",
+      "redirect_URL": "/windows-hardware/drivers/usbcon/how-to-send-a-usb-interrupt-transfer--uwp-app-",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/usbcon/writing-usb-device-companion-apps-for-windows-store.md",
+      "redirect_URL": "/windows-hardware/drivers/usbcon/writing-usb-device-companion-apps-for-uwp",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/devtest/28110---drivers-must-protect-floating-point-hardware-state--see-use-of.md",
       "redirect_URL": "/windows-hardware/drivers/devtest/28110-floating-point-hardware-protect ",
       "redirect_document_id": true
@@ -13,6 +103,11 @@
     {
       "source_path": "windows-driver-docs-pr/devtest/28111---the-irql-where-the-floating-point-state-was-saved-does-not-mat.md",
       "redirect_URL": "/windows-hardware/drivers/devtest/28111-floating-point-irql-mismatch ",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/develop/visual-studio-driver-development-environment.md",
+      "redirect_URL": "/windows-hardware/drivers/develop/index",
       "redirect_document_id": true
     },
     {
@@ -736,27 +831,158 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows-driver-docs-pr/sensors/architecture-overview",
+      "source_path": "windows-driver-docs-pr/sensors/architecture-overview.md",
       "redirect_URL": "/windows-hardware/drivers/sensors/architecture-overview-for-sensor-drivers ",
       "redirect_document_id": true
     },
     {
-      "source_path": "windows-driver-docs-pr/display/performing-copp-operations2",
+      "source_path": "windows-driver-docs-pr/display/performing-copp-operations2.md",
       "redirect_URL": "/windows-hardware/drivers/display/performing-copp-operations-example ",
       "redirect_document_id": true
     },
     {
-      "source_path": "windows-driver-docs-pr/dashboard/walkthrough--how-to-get-a-driver-signed-by-microsoft-for-multiple-versions-of-windows",
+      "source_path": "windows-driver-docs-pr/dashboard/walkthrough--how-to-get-a-driver-signed-by-microsoft-for-multiple-versions-of-windows.md",
       "redirect_URL": "/windows-hardware/drivers/dashboard/get-drivers-signed-by-microsoft-for-multiple-windows-versions",
       "redirect_document_id": true
     },
     {
-      "source_path": "windows-driver-docs-pr/nfc/p2p-rf-data-exchagne-sequence",
+      "source_path": "windows-driver-docs-pr/nfc/p2p-rf-data-exchagne-sequence.md",
       "redirect_URL": "/windows-hardware/drivers/nfc/p2p-rf-data-exchange-sequence",
       "redirect_document_id": true
-    },{
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/using-a-configurable-inf-file.md",
+      "redirect_URL": "/windows-hardware/drivers/install/using-a-universal-inf-file",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/creating-an-extensible-inf-file.md",
+      "redirect_URL": "/windows-hardware/drivers/install/using-an-extension-inf-file",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/nfc/tag-rf-data-exchagne-sequence.md",
       "redirect_URL": "/windows-hardware/drivers/nfc/tag-rf-data-exchange-sequence",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/Windows10SDriverGuidelines.md",
+      "redirect_URL": "/windows-hardware/drivers/install/Windows10SDriverRequirements",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/what-s-new-for-wdf-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-versions-in-network-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/network/overview-of-ndis-versions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis--rndis.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-communication",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-control-messages2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-control-messages",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-initialize-msg2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-initialize-msg",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-initialize-cmplt2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-initialize-cmplt",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-halt-msg2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-halt-msg",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-query-msg2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-query-msg",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-query-cmplt2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-query-cmplt",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-set-msg2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-set-msg",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-set-cmplt2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-set-cmplt",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-reset-msg2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-reset-msg",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-reset-cmplt2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-reset-cmplt",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-indicate-status-msg2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-indicate-status-msg",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-keepalive-msg2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-keepalive-msg",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-keepalive-cmplt2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-keepalive-cmplt",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-data-message2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-data-message",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/remote-ndis-packet-msg2.md",
+      "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-packet-msg",
+      "redirect_document_id": true
+    },
+        {
+      "source_path": "windows-driver-docs-pr/devapps/custom-capabilities-for-universal-windows-platform-apps.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/creating-a-custom-capability-to-pair-driver-with-hsa",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/developing-a-universal-windows-platform-app-with-custom-capabilities.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/using-a-custom-capability-to-pair-hsa-with-driver",
+      "redirect_document_id": true
+    },
+        {
+      "source_path": "windows-driver-docs-pr/install/adding-software-components-with-an-inf-file.md",
+      "redirect_URL": "/windows-hardware/drivers/install/using-a-component-inf-file",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/develop/installing-the-enterprise-wdk.md",
+      "redirect_URL": "/windows-hardware/drivers/develop/using-the-enterprise-wdk",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/sdk-topics-for-network-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/network/kernel-mode-sdk-topics-for-network-drivers",
       "redirect_document_id": true
     }
   ]

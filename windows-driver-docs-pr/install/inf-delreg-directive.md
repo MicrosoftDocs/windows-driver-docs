@@ -20,13 +20,13 @@ ms.technology: windows-devices
 # INF DelReg Directive
 
 
-**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-configurable-inf-file.md).
+**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 
 A **DelReg** directive references one or more INF-writer-defined sections describing keys and/or value entries to be removed from the registry.
 
-``` syntax
+```
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -39,7 +39,7 @@ DelReg=del-registry-section[,del-registry-section]...
 
 Each *del-registry-section* referenced by a **DelReg** directive has the following form:
 
-``` syntax
+```
 [del-registry-section]
 reg-root-string,subkey[,value-entry-name][,flags][,value]
 reg-root-string,subkey[,value-entry-name][,flags][,value]
@@ -55,16 +55,16 @@ A *del-registry-section* can have any number of entries, each on a separate line
 Identifies the root of the registry tree for other values supplied in this entry. The value can be one of the following:
 
 <a href="" id="hkcr"></a>**HKCR**  
-Abbreviation for **HKEY\_CLASSES\_ROOT**.
+Abbreviation for **HKEY_CLASSES_ROOT**.
 
 <a href="" id="hkcu"></a>**HKCU**  
-Abbreviation for **HKEY\_CURRENT\_USER**.
+Abbreviation for **HKEY_CURRENT_USER**.
 
 <a href="" id="hklm"></a>**HKLM**  
-Abbreviation for **HKEY\_LOCAL\_MACHINE**.
+Abbreviation for **HKEY_LOCAL_MACHINE**.
 
 <a href="" id="hku"></a>**HKU**  
-Abbreviation for **HKEY\_USERS**.
+Abbreviation for **HKEY_USERS**.
 
 <a href="" id="hkr"></a>**HKR**  
 Relative root, in which keys that are specified by using this abbreviation are relative to the registry key associated with the INF section in which this **DelReg** directive appears, as indicated in the following table.
@@ -81,7 +81,7 @@ Relative root, in which keys that are specified by using this abbreviation are r
 
  
 
-For more information about driver information that is stored under the **HKEY\_LOCAL\_MACHINE** root, see [Registry Trees and Keys for Devices and Drivers](registry-trees-and-keys.md).
+For more information about driver information that is stored under the **HKEY_LOCAL_MACHINE** root, see [Registry Trees and Keys for Devices and Drivers](registry-trees-and-keys.md).
 
 <a href="" id="subkey"></a>*subkey*  
 This optional value, formed either as a %*strkey*% token defined in a [**Strings**](inf-strings-section.md) section of the INF or as a registry path under the given *reg-root* (*key1***\\***key2***\\***key3*...), specifies one of the following:
@@ -97,13 +97,13 @@ This value identifies a named value entry to be removed from the given subkey. T
 
 Bitmask values for each of these flags are as follows:
 
-<a href="" id="0x00002000--flg-delreg-keyonly-common---"></a>**0x00002000** (FLG\_DELREG\_KEYONLY\_COMMON)   
+<a href="" id="0x00002000--flg-delreg-keyonly-common---"></a>**0x00002000** (FLG_DELREG_KEYONLY_COMMON)   
 Delete the entire subkey.
 
-<a href="" id="0x00004000---flg-delreg-32bitkey-"></a>**0x00004000** (FLG\_DELREG\_32BITKEY)  
+<a href="" id="0x00004000---flg-delreg-32bitkey-"></a>**0x00004000** (FLG_DELREG_32BITKEY)  
 Make the specified change in the 32-bit registry. If not specified, the change is made to the native registry.
 
-<a href="" id="0x00018002--flg-delreg-multi-sz-delstring-"></a>**0x00018002** (FLG\_DELREG\_MULTI\_SZ\_DELSTRING)  
+<a href="" id="0x00018002--flg-delreg-multi-sz-delstring-"></a>**0x00018002** (FLG_DELREG_MULTI_SZ_DELSTRING)  
 Within a multistring registry entry, delete all strings matching a string value specified by value. Case is ignored.
 
 <a href="" id="value"></a>*value*  
@@ -124,13 +124,13 @@ Each *del-registry-section* name must be unique to the INF file, but it can be r
 
 With operating system versions prior to Windows XP, the only way to delete a key is by specifying the following:
 
-``` syntax
+```
 reg-root-string, subkey
 ```
 
 For Windows XP and later versions of Windows, the following is also permitted (to specify the 32-bit registry):
 
-``` syntax
+```
 reg-root-string, subkey,,0x4000
 ```
 

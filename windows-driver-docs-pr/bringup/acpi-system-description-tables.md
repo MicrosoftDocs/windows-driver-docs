@@ -110,7 +110,7 @@ The Windows SMM Security Mitigations Table (WSMT) specification contains details
 
 This information applies to the following operating systems:
 
-Windows Server 2016 Technical Preview
+Windows Server 2016
 
 Windows 10, version 1607
 

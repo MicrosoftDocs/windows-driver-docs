@@ -1,7 +1,7 @@
 ---
-title: Handling Quotas on IRP\_MJ\_CREATE
+title: Handling Quotas on IRP_MJ_CREATE
 author: windows-driver-content
-description: Handling Quotas on IRP\_MJ\_CREATE
+description: Handling Quotas on IRP_MJ_CREATE
 ms.assetid: 71cf5e78-c87a-48fe-ba0b-f5efe8166525
 keywords:
 - IRP_MJ_CREATE

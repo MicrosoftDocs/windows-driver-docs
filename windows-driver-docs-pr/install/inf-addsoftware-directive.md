@@ -9,14 +9,14 @@ ms.technology: windows-devices
 
 # INF AddSoftware Directive
 
-Each **AddSoftware** directive describes the installation of standalone software.  Use this directive in an INF file for a [software component](adding-software-components-with-an-inf-file.md).  This directive is supported for Windows 10 Version 1703 and later.
+Each **AddSoftware** directive describes the installation of standalone software.  Use this directive in an INF file of the **SoftwareComponent** setup class. For more details on software components, see [Using a Component INF File](using-a-component-inf-file.md).  This directive is supported for Windows 10 version 1703 and later.
 
 Valid installation types depend on the [target platform](../develop/windows-10-editions-for-universal-drivers.md). For example, Desktop supports MSI installers and setup EXEs.
 
 When a software component INF file specifies **AddSoftware**, the system queues software to be installed after device installation.  There is no guarantee when or if the software will be installed.
 If referenced software fails to install, the system tries again when the referencing software component is updated.
 
-An **AddSoftware** directive is used within an INF [*DDInstall*.**Software**](inf-ddinstall-software-section.md) section.
+An **AddSoftware** directive is used within an [**INF *DDInstall*.Software**](inf-ddinstall-software-section.md) section.
 
 ```
 [DDInstall.Software]
@@ -26,7 +26,7 @@ AddSoftware=SoftwareName,[flags],software-install-section
 
 ## Entries
 
-**SoftwareName**
+*SoftwareName*
 
 Specifies the name of the software to be installed.  This name uniquely identifies the software.  The processing of an **AddSoftware** directive checks the version against previous software installed with the same name by an **AddSoftware** directive from any driver package.  We recommend prefacing the SoftwareName with the vendor name, for example `ContosoControlPanel`.
 
@@ -50,10 +50,13 @@ An **AddSoftware** directive must reference a named *software-install-section* e
 SoftwareType=type-code
 [SoftwareBinary=path-to-binary]
 [SoftwareArguments=argument[, argument] …]
-SoftwareVersion=w.x.y.z
+[SoftwareVersion=w.x.y.z]
+[SoftwareID=pfn://x.y.z]
 ```
 
-The **SoftwareType** and **SoftwareVersion** entries are required.  If **SoftwareType** is set to 1, the **SoftwareBinary** entry is also required.  Other entries are optional.
+The **SoftwareType** entry is required.  If **SoftwareType** is set to 1, **SoftwareBinary** and **SoftwareVersion** are also required, but arguments and flags are optional. If **SoftwareType** is set to 2, **SoftwareID** is required, and flags are optional.  For info about this feature, see [Pairing a driver with a Universal Windows Platform (UWP) app](pairing-app-and-driver-versions.md) and [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md).
+
+Any software installed using **AddSoftware** must be installed silently (or quietly). In other words, no user interface can be shown to the user during installation.    
 
 ## Software-Install Section Entries and Values
 
@@ -61,7 +64,7 @@ The **SoftwareType** and **SoftwareVersion** entries are required.  If **Softwar
 
 Specifies the type of software installation.
 
-A value of 1 indicates that the system should determine the extension type and use the appropriate command line.  When this value is set, the **SoftwareBinary** entry is also required, and only MSI and EXE binaries can be run.
+A value of 1 indicates that the associated software is an MSI or EXE binary.  When this value is set, the **SoftwareBinary** entry is also required.  Note that a value of 1 is not supported on Windows 10 S.  In current Windows Insiders builds, a value of 2 indicates that the associated software is a Windows Store link.
 
 **SoftwareBinary**=*filename*
 
@@ -96,7 +99,9 @@ For example:
 
 The above example results in a command line like this:
 
-`<DriverStorePath>\ContosoControlPanel.exe PCI\VEN_1000&DEV_0001&SUBSYS_0000\1&08`
+`<DriverStorePath>\ContosoControlPanel.exe PCI\VEN_0000&DEV_0001&SUBSYS_00000000&REV_00\0123`
+
+If SoftwareArguments contains multiple arguments:
 
 ```
 	SoftwareArguments=arg1,<<DeviceInstanceID>>,arg2
@@ -104,16 +109,22 @@ The above example results in a command line like this:
 
 The above results in:
 
-`arg1 PCI\VEN_1000&DEV_0001&SUBSYS_0000\1&08 arg2`
+`<DriverStorePath>\ContosoControlPanel.exe arg1 PCI\VEN_0000&DEV_0001&SUBSYS_00000000&REV_00\0123 arg2`
 
 **SoftwareVersion**=*w.x.y.z*
 
 Specifies the software version.  Each value should not exceed 65535.  When the system encounters a duplicate **SoftwareName**, it checks the **SoftwareVersion** against the previous **SoftwareVersion**.  If it is greater, Windows runs the software.
 
+**SoftwareID**=*x.y.z*
+
+Specifies a Windows Store identifier and identifier type.  Currently, only Package Family Name (PFN) is supported.  Use a PFN to reference a Universal Windows Platform (UWP) app using the form `pfn://<x.y.z>`.
+
+<!--add link to related page in UWP docs once it is available-->
+
 ## See Also
 
-[Adding Software Components with an INF file](adding-software-components-with-an-inf-file.md).
-
-[INF DDInstall.Software Section](inf-ddinstall-software-section.md)
-
-[INF AddComponent Directive](inf-addcomponent-directive.md)
+* [Using a Component INF File](using-a-component-inf-file.md).
+* [INF DDInstall.Software Section](inf-ddinstall-software-section.md)
+* [INF AddComponent Directive](inf-addcomponent-directive.md)
+* [Pairing a driver with a Universal Windows Platform (UWP) app](pairing-app-and-driver-versions.md)
+* [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md)

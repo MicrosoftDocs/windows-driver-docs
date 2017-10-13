@@ -603,19 +603,19 @@ VOID  GetFirmwareVersion(
   
     firmwareVersion = 0;  
   
-    WDF_MEMORY_DESCRIPTOR_INIT_BUFFER(&amp;memoryDescriptor, (PVOID) &amp;firmwareVersion, sizeof(firmwareVersion));  
+    WDF_MEMORY_DESCRIPTOR_INIT_BUFFER(&memoryDescriptor, (PVOID) &firmwareVersion, sizeof(firmwareVersion));  
   
     WDF_REQUEST_SEND_OPTIONS_INIT(  
-                                  &amp;sendOptions,  
+                                  &sendOptions,  
                                   WDF_REQUEST_SEND_OPTION_TIMEOUT  
                                   );  
   
     WDF_REQUEST_SEND_OPTIONS_SET_TIMEOUT(  
-                                         &amp;sendOptions,  
+                                         &sendOptions,  
                                          DEFAULT_CONTROL_TRANSFER_TIMEOUT  
                                          );  
                 
-    WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR(&amp;controlSetupPacket,  
+    WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR(&controlSetupPacket,  
                                         BmRequestDeviceToHost,       // Direction of the request
                                         BmRequestToDevice,           // Recipient
                                         USBFX2_GET_FIRMWARE_VERSION, // Vendor command
@@ -625,9 +625,9 @@ VOID  GetFirmwareVersion(
     status = WdfUsbTargetDeviceSendControlTransferSynchronously(  
                                         DeviceContext->UsbDevice,  
                                         WDF_NO_HANDLE,               // Optional WDFREQUEST
-                                        &amp;sendOptions,  
-                                        &amp;controlSetupPacket,  
-                                        &amp;memoryDescriptor,           // MemoryDescriptor                                          
+                                        &sendOptions,  
+                                        &controlSetupPacket,  
+                                        &memoryDescriptor,           // MemoryDescriptor                                          
                                         NULL);                       // BytesTransferred    
      
     if (!NT_SUCCESS(status)) 
@@ -694,24 +694,24 @@ CDevice::GetDeviceStatus ()
     WINUSB_CONTROL_SETUP_PACKET setupPacket;  
   
     WINUSB_CONTROL_SETUP_PACKET_INIT_GET_STATUS(  
-                                      &amp;setupPacket,  
+                                      &setupPacket,  
                                       BmRequestToDevice,  
                                       0);  
 
     hr = SendControlTransferSynchronously(  
-                 &amp;(setupPacket.WinUsb),  
-                 &amp; deviceStatus,  
+                 &(setupPacket.WinUsb),  
+                 & deviceStatus,  
                  sizeof(USHORT),  
-                 &amp;bytesReturned  
+                 &bytesReturned  
                 ); 
 
      if (SUCCEEDED(hr))  
     {  
-        if (deviceStatus &amp; USB_GETSTATUS_SELF_POWERED)
+        if (deviceStatus & USB_GETSTATUS_SELF_POWERED)
         {
              m_Self_Powered = true;
         } 
-        if (deviceStatus &amp; USB_GETSTATUS_REMOTE_WAKEUP_ENABLED)
+        if (deviceStatus & USB_GETSTATUS_REMOTE_WAKEUP_ENABLED)
         {
              m_remote_wake-enabled = true;
         }  
@@ -746,17 +746,17 @@ CDevice::SendControlTransferSynchronously(
       
     hr = m_FxDevice->CreateRequest( NULL, //pCallbackInterface
                                     NULL, //pParentObject
-                                    &amp;pWdfRequest);  
+                                    &pWdfRequest);  
   
     if (SUCCEEDED(hr))  
     {  
-        m_FxDevice->GetDriver(&amp;FxDriver);  
+        m_FxDevice->GetDriver(&FxDriver);  
   
         hr = FxDriver->CreatePreallocatedWdfMemory( Buffer,  
                                                     BufferLength,  
                                                     NULL,        //pCallbackInterface
                                                     pWdfRequest, //pParetObject
-                                                    &amp;FxMemory );  
+                                                    &FxMemory );  
     }  
   
     if (SUCCEEDED(hr))  
@@ -775,14 +775,14 @@ CDevice::SendControlTransferSynchronously(
   
     if (SUCCEEDED(hr))  
     {  
-        pWdfRequest->GetCompletionParams(&amp;FxComplParams);  
+        pWdfRequest->GetCompletionParams(&FxComplParams);  
   
         hr = FxComplParams->GetCompletionStatus();  
     }  
   
     if (SUCCEEDED(hr))  
     {  
-        HRESULT hrQI = FxComplParams->QueryInterface(IID_PPV_ARGS(&amp;FxUsbComplParams));  
+        HRESULT hrQI = FxComplParams->QueryInterface(IID_PPV_ARGS(&FxUsbComplParams));  
         WUDF_TEST_DRIVER_ASSERT(SUCCEEDED(hrQI));  
   
         WUDF_TEST_DRIVER_ASSERT( WdfUsbRequestTypeDeviceControlTransfer ==   

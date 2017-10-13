@@ -1,6 +1,6 @@
 ---
 title: ProjectUpgradeTool
-description: The ProjectUpgradeTool takes Microsoft Visual Studio 2012 project (\ .vcxproj) and solution files (\ .sln) that were created with the Windows Driver Kit (WDK) for Windows 8 and upgrades them to work with the WDK for Windows 8.1 and Microsoft Visual Studio 2013.
+description: The ProjectUpgradeTool takes Microsoft Visual Studio 2012 projects (*.vcxproj) and solution files (*.sln) that were created with the Windows Driver Kit (WDK) for Windows 8 and upgrades them to work with the WDK for Windows 8.1 and Microsoft Visual Studio 2013.
 ms.assetid: DEB7799C-D505-40E6-B2B0-CF774A99B1BE
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -23,7 +23,7 @@ The ProjectUpgradeTool takes Microsoft Visual Studio 2012 project (\*.vcxproj) a
 1.  Open a Visual Studio Command Prompt window.
 2.  Type the command **ProjectUpgradeTool** and specify the root (or parent) directory that contains the Windows Driver Kit (WDK) 8 project or solution files that you want to upgrade to the Windows Driver Kit (WDK) 8.1 for Windows 8.1. For example, the following command upgrades all the files in C:\\myDriver directory and subdirectories.
 
-    ``` syntax
+    ```
     ProjectUpgradeTool.exe  C:\myDriver
     ```
 
@@ -39,7 +39,7 @@ The project upgrade tool is located in the %WindowsSdkDir%\\bin\\x86\\ directory
 
 The ProjectUpgradeTool.exe has the following syntax:
 
-``` syntax
+```
 ProjectUpgradeTool.exe  < rootDir >
                           [-Log:[<LogFile>]:[<Verbosity>]]
                           [-ConsoleLog:<Verbosity>]
@@ -105,7 +105,7 @@ ProjectUpgradeTool.exe  < rootDir >
 
 If you attempt to open a project or solution that was created with WDK 8, you might see the following error message when you attempt to build the project using WDK 8.1.
 
-``` syntax
+```
 1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.Cpp.Platform.targets(54,5): error MSB8020: The builds tools for WindowsKernelModeDriver8.0 (Platform Toolset = 'WindowsKernelModeDriver8.0') cannot be found. To build using the WindowsKernelModeDriver8.0 build tools, please install WindowsKernelModeDriver8.0 build tools. Alternatively, you may update to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Update VC++ Projects...".
 ```
 
@@ -119,17 +119,17 @@ The platform toolset in the WDK 8 was **WindowsKernelModeDriver8.0**. To fix thi
 
 You open the project in WDK 8.1. When you build a Win32 Windows Vista target, you might see the following error message:
 
-``` syntax
+```
 error MSB6004: The specified task executable location "C:\Program Files (x86)\Windows Kits\8.0\bin\x86\x86\CL.exe" is invalid.   C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets  347 5   KMDF Driver1
 ```
 
 When you build an x64 Windows Vista target, you might see the following error messages:
 
-``` syntax
+```
 error TRK0002: Failed to execute command: ""C:\Program Files (x86)\Windows Kits\8.0\bin\x64\stampinf.exe" -d * -a amd64 -v * -k 1.11 -u 1.11.0 -f x64\VistaRelease\KMDFDriver1.inf". The operation identifier is not valid.  C:\Users\Administrator\Desktop\KMDF Driver1 - Copy\KMDF Driver1\TRACKER KMDF Driver1
 ```
 
-``` syntax
+```
 error : Verification Error: Driver package has no driver version.    C:\Program Files (x86)\Windows Kits\8.0\build\WindowsDriver8.0.common.targets   1338    5   KMDF Driver1 Package
 ```
 

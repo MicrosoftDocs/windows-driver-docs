@@ -24,7 +24,7 @@ A per-manufacturer *Models* section identifies at least one device, references t
 
 Any entry in the per-manufacturer *Models* section can also specify one or more additional device IDs for models that are compatible with the device designated by the initial hardware ID and are controlled by the same drivers.
 
-``` syntax
+```
 [models-section-name] |
 [models-section-name.TargetOSVersion]  (Windows XP and later versions of Windows)
 
@@ -36,7 +36,7 @@ device-description=install-section-name[,hw-id][,compatible-id...]
 
 
 <a href="" id="device-description"></a>*device-description*  
-Identifies a device to be installed, expressed as any unique combination of visible characters or as a **%***strkey***%** token defined in an [**INF Strings section**](inf-strings-section.md). The maximum length, in characters, of a device description is LINE\_LEN.
+Identifies a device to be installed, expressed as any unique combination of visible characters or as a **%***strkey***%** token defined in an [**INF Strings section**](inf-strings-section.md). The maximum length, in characters, of a device description is LINE_LEN.
 
 <a href="" id="install-section-name"></a>*install-section-name*  
 Specifies the undecorated name of the INF install sections to be used for the device (and compatible models of device, if any). For more information, see [**INF *DDInstall* Section**](inf-ddinstall-section.md).

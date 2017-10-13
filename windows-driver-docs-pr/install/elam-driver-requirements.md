@@ -12,16 +12,17 @@ ms.technology: windows-devices
 # ELAM Driver Requirements
 
 
-Driver installation must use existing tools for online and offline installation, registering a driver through typical INF processing.
+Driver installation must use existing tools for online and offline installation, registering a driver through typical INF processing.  For sample ELAM driver code, please see the following:
+https://github.com/Microsoft/Windows-driver-samples/tree/master/security/elam 
 
 ## AM Driver Installation
 
 
-To ensure driver install compatibility, an ELAM driver advertises itself as a boot-start driver similar to all other boot-start drivers. The INF sets the start type to SERVICE\_BOOT\_START (0), which indicates that the driver should be loaded by the boot loader and initialized during kernel initialization. An ELAM Driver advertises its group as “Early-Launch”. The early launch behavior for drivers in this group will be implemented in Windows, as described in the next section.
+To ensure driver install compatibility, an ELAM driver advertises itself as a boot-start driver similar to all other boot-start drivers. The INF sets the start type to SERVICE_BOOT_START (0), which indicates that the driver should be loaded by the boot loader and initialized during kernel initialization. An ELAM Driver advertises its group as “Early-Launch”. The early launch behavior for drivers in this group will be implemented in Windows, as described in the next section.
 
 The following is an example of the driver install section of an ELAM driver INF.
 
-``` syntax
+```
 [SampleAV.Service]
 DisplayName    = %SampleAVServiceName%
 Description    = %SampleAVServiceDescription%
@@ -40,7 +41,7 @@ To provide a recovery mechanism in the event that the ELAM driver is inadvertent
 
 The installer reads the backup file location from the **BackupPath** key stored in
 
-``` syntax
+```
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\EarlyLaunch
 ```
 
@@ -69,13 +70,13 @@ The ELAM driver can use the [**IoRegisterBootDriverCallback**](https://msdn.micr
 
 **Callback Function**
 
-The Boot Driver Callback Facility leverages the EX Callback interface defined in the WDK and documented on MSDN. The format of the callback function shares its definition with [**EX\_CALLBACK\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff560903), receiving a pointer to a context structure registered with the API as the first input parameter and receiving a callback type and a system-provided context structure for the specific callback type.
+The Boot Driver Callback Facility leverages the EX Callback interface defined in the WDK and documented on MSDN. The format of the callback function shares its definition with [**EX_CALLBACK_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff560903), receiving a pointer to a context structure registered with the API as the first input parameter and receiving a callback type and a system-provided context structure for the specific callback type.
 
 An error returned from a status update callback is treated as a fatal error and leads to a system bug check. This provides an ELAM driver the ability to indicate when a state is reached outside of AM policy. For example, if an AM runtime driver was not loaded and initialized, the Early Launch driver can fail the prepare-to-unload callback to prevent Windows from entering a state without an AM driver loaded.
 
 An image is treated as unknown when an error is returned from the initialize image callback. Unknown drivers are initialized or have their initialization skipped based on OS policy.
 
-The [**BDCB\_CALLBACK\_TYPE enumeration**](https://msdn.microsoft.com/library/windows/hardware/hh406352) describes two types of callbacks:
+The [**BDCB_CALLBACK_TYPE enumeration**](https://msdn.microsoft.com/library/windows/hardware/hh406352) describes two types of callbacks:
 
 -   Callbacks that provide status updates to an ELAM driver (BdCbStatusUpdate)
 -   Callbacks used by the AM driver to classify boot-start drivers and dependent DLLs before initializing their images (BdCbInitializeImage)
@@ -87,8 +88,8 @@ The two callback types have unique context structures that provide additional in
 
 The malware signature data is determined by the AM ISV, but should include, at a minimum, an approved list of driver hashes. The signature data is stored in the registry in a new “Early Launch Drivers” hive under HKLM that is loaded by Winload. Each AM driver has a unique key in which to store their signature binary large object (BLOB). The registry path and key has the format:
 
-``` syntax
-HKLM\ELAM\\<VendorName>\
+```
+HKLM\ELAM\<VendorName>\
 ```
 
 Within the key, the vendor is free to define and use any of the values.
@@ -162,12 +163,12 @@ The driver must meet the performance requirements defined in the following table
 
 Once the boot drivers are evaluated by the ELAM driver, the Kernel uses the classification returned by ELAM to decide whether to initialize the driver. This decision is dictated by policy and is stored here in the registry at:
 
-``` syntax
+```
 HKLM\System\CurrentControlSet\Control\EarlyLaunch\DriverLoadPolicy
 ```
 
 This can be configured through Group Policy on a domain-joined client. An antimalware solution may want to expose this functionality to the end user in nonmanaged scenarios. The following values are defined for DriverLoadPolicy:
-``` syntax
+```
 PNP_INITIALIZE_DRIVERS_DEFAULT 0x0  (initializes known Good drivers only)
 PNP_INITIALIZE_UNKNOWN_DRIVERS 0x1  
 PNP_INITIALIZE_BAD_CRITICAL_DRIVERS 0x3 (this is the default setting)
@@ -184,7 +185,7 @@ If a boot driver is skipped due to the initialization policy, the Kernel continu
 
 When the ELAM driver is installed, a backup copy of the driver must also be installed. The back-up location will be stored in the **BackupPath** key stored in
 
-``` syntax
+```
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\EarlyLaunch
 ```
 
@@ -193,9 +194,9 @@ In the event of a failure to load or initialize the primary driver due to a corr
 ## ELAM and Measured Boot
 
 
-If the ELAM driver detects a policy violation (a rootkit, for example), it can invalidate the PCRs that indicated that the system was in a good state by using the Tbsi\_Revoke\_Attestation() function:
+If the ELAM driver detects a policy violation (a rootkit, for example), it can invalidate the PCRs that indicated that the system was in a good state by using the Tbsi_Revoke_Attestation() function:
 
-``` syntax
+```
 TBS_RESULT WINAPI
 Tbsi_Revoke_Attestation();
 ```
@@ -206,7 +207,7 @@ None
 
 **Return value**:
 
-If the function succeeds, the function returns TBS\_SUCCESS (0).
+If the function succeeds, the function returns TBS_SUCCESS (0).
 
 **Remarks**:
 

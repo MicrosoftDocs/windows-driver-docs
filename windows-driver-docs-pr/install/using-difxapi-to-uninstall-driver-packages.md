@@ -38,9 +38,9 @@ If this operation is part of a driver update procedure, first call the [**Driver
 
 ### <a href="" id="deleting-the-binary-files-of-the-installed-driver"></a> Deleting the Binary Files of the Installed Driver
 
-To delete the driver package and the associated driver binaries, call the [**DriverPackageUninstall**](https://msdn.microsoft.com/library/windows/hardware/ff544822) function with the *Flags* parameter set to DRIVER\_PACKAGE\_DELETE\_FILES.
+To delete the driver package and the associated driver binaries, call the [**DriverPackageUninstall**](https://msdn.microsoft.com/library/windows/hardware/ff544822) function with the *Flags* parameter set to DRIVER_PACKAGE_DELETE_FILES.
 
-**Note**   Starting with Windows 7, the DRIVER\_PACKAGE\_DELETE\_FILES flag is ignored by **DriverPackageUninstall**. Binary files, which were copied to a system when a driver package was installed, can no longer be deleted by calling this function.
+**Note**   Starting with Windows 7, the DRIVER_PACKAGE_DELETE_FILES flag is ignored by **DriverPackageUninstall**. Binary files, which were copied to a system when a driver package was installed, can no longer be deleted by calling this function.
 
  
 

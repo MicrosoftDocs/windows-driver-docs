@@ -11,8 +11,17 @@ ms.technology: windows-devices
 
 # WDM Audio Support in Different Versions of Windows
 
+This section describes the operating system support for audio devices and drivers in different versions of Windows. 
 
-This section describes the operating system support for audio devices and drivers in the versions of Windows since Windows 98. The topics in this section are:
+[Implementing Audio Module Communication](implementing-audio-module-communication.md)
+
+[Low Latency Audio](low-latency-audio.md)
+
+[Voice Activation](voice-activation.md)
+
+[Audio Hardware Resource Management](audio-hardware-resource-management.md)
+
+-----------------------------------------------------------------------------------------------
 
 [Bluetooth Bypass Guidelines for Audio Drivers](bluetooth-bypass-guidelines-for-audio-drivers.md)
 
@@ -28,9 +37,7 @@ This section describes the operating system support for audio devices and driver
 
 [Factors Governing Wave-Output Latency](factors-governing-wave-output-latency.md)
 
-[Implementation Issues for WavePci Devices](implementation-issues-for-wavepci-devices.md)
-
-[Audio System Effects](audio-system-effects.md)
+[Windows Vista Audio System Effects](audio-system-effects.md)
 
  
 

@@ -17,7 +17,7 @@ The PwrTest Timer Scenario logs system timer resolution changes as they happen.
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 pwrtest /timer /?  [/t:n]  [/?] 
 ```
 
@@ -26,11 +26,11 @@ Specifies the total time (in minutes) for the scenario to run (the default value
 
 **Examples**
 
-``` syntax
+```
   pwrtest /timer
 ```
 
-``` syntax
+```
 pwrtest /timer /t:5
 ```
 

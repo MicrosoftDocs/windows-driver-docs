@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Finds all devices that are currently attached to the computer. Displays the device instance ID and device description. Valid on local and remote computers.
 
-``` syntax
+```
     devcon [/m:\\computer] find {* | ID [ID ...] | =class [ID [ID ...]]} 
 
    

@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0x15D SOC\_SUBSYSTEM\_FAILURE\_LIVEDUMP
-description: The SOC\_SUBSYSTEM\_FAILURE\_LIVEDUMP bug code has a value of 0x0000015D.
+title: Bug Check 0x15D SOC_SUBSYSTEM_FAILURE_LIVEDUMP
+description: The SOC_SUBSYSTEM_FAILURE_LIVEDUMP bug code has a value of 0x0000015D.
 ms.assetid: F7903E88-1706-46E6-A5D0-6972702058A8
 keywords: ["Bug Check 0x15D SOC_SUBSYSTEM_FAILURE_LIVEDUMP", "Bug Check 0x14B SOC_SUBSYSTEM_FAILURE"]
 ms.author: windowsdriverdev
@@ -40,7 +40,7 @@ The SOC\_SUBSYSTEM\_FAILURE\_LIVEDUMP bug code has a value of 0x0000015D. This i
 <tbody>
 <tr class="odd">
 <td align="left"><p>1</p></td>
-<td align="left"><p>Address of an [<strong>SOC_SUBSYSTEM_FAILURE_DETAILS</strong>](https://msdn.microsoft.com/library/windows/hardware/dn376404) structure.</p></td>
+<td align="left"><p>Address of an <strong>[SOC_SUBSYSTEM_FAILURE_DETAILS](https://msdn.microsoft.com/library/windows/hardware/dn376404)</strong> structure.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>

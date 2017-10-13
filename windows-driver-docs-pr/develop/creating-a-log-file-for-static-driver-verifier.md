@@ -1,7 +1,7 @@
 ---
 ms.assetid: EDA6357A-D18D-439D-A0DD-050BA51E1A79
 title: Creating a log file for Static Driver Verifier
-description: The Windows Server 2012&\#32;Hardware Certification Program requires a Driver Verification Log \(DVL\) for all applicable driver submissions.
+description: The Windows Server 2012 Hardware Certification Program requires a Driver Verification Log (DVL) for all applicable driver submissions.
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
@@ -34,19 +34,19 @@ For the most up-to-date information about Static Driver Verifier and the Driver 
 
 You can also run Static Driver Verifier from a Visual Studio Command Prompt window. Set up the environment by running one of the following batch files.
 
-``` syntax
+```
 "C:\Program Files\Microsoft Visual Studio 11.0\VC\vcvarsall.bat" x64
 ```
 
 -Or-
 
-``` syntax
+```
 "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\vcvarsall.bat" x64
 ```
 
 Run Static Driver Verifier.
 
-``` syntax
+```
 msbuild.exe <vcxprojectfile> /p:Configuration="Win8 Release" /p:Platform=x64 /target:sdv /p:inputs="/clean"
 msbuild.exe <vcxprojectfile> /p:Configuration="Win8 Release" /p:Platform=x64 /target:sdv /p:inputs="/check:default.sdv"
 ```

@@ -69,7 +69,7 @@ To add or delete volatile options, use the **/volatile /flags** parameter.
 
 -   To start or stop the verification of a driver without rebooting:
 
-    ``` syntax
+    ```
     verifier /volatile /adddriver DriverName.sys
     verifier /volatile /removedriver DriverName.sys
     ```
@@ -78,13 +78,13 @@ To add or delete volatile options, use the **/volatile /flags** parameter.
 
 -   To activate or deactivate options without rebooting:
 
-    ``` syntax
+    ```
     verifier /volatile /flags Options
     ```
 
     You can use this command syntax with any Driver Verifier option, except for [SCSI Verification](scsi-verification.md) and [Disk Integrity Checking](disk-integrity-checking.md). For example,
 
-    ``` syntax
+    ```
     verifier /volatile /flags 0x20
     ```
 
@@ -94,7 +94,7 @@ To add or delete volatile options, use the **/volatile /flags** parameter.
 
     You cannot stop the verification of a driver that is currently loaded without rebooting. However, you can use the following command syntax to deactivate all of the Driver Verifier options without rebooting, thereby minimizing the overhead until the next reboot.
 
-    ``` syntax
+    ```
     verifier /volatile /flags 0
     ```
 

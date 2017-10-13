@@ -43,9 +43,8 @@ The miniport driver reports the SR-IOV hardware capabilities of the underlying n
 
     -   NDIS\_SRIOV\_CAPS\_PF\_MINIPORT
 
-    **Note**  The miniport driver for a PCIe Virtual Function (VF) of the network adapter must only set the NDIS\_SRIOV\_CAPS\_VF\_MINIPORT flag.
-
-     
+   > [!NOTE]
+   > The miniport driver for a PCIe Virtual Function (VF) of the network adapter must set both the NDIS\_SRIOV\_CAPS\_VF\_MINIPORT flag and the NDIS\_SRIOV\_CAPS\_SRIOV\_SUPPORTED flag.    
 
 When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function, the driver registers the SR-IOV capabilities of the network adapter by following these steps:
 

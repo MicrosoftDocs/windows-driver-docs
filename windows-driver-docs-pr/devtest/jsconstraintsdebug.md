@@ -102,7 +102,7 @@ function validatePrintTicket(PrintTicket, scriptContext)
 ## <span id="JSConstraintsDebug_Command_Syntax"></span><span id="jsconstraintsdebug_command_syntax"></span><span id="JSCONSTRAINTSDEBUG_COMMAND_SYNTAX"></span>JSConstraintsDebug Command Syntax
 
 
-``` syntax
+```
 JSConstraintsDebug <PrinterName> <PrintTicket> [MergePrintTicket] [Constraints]
 ```
 
@@ -152,19 +152,19 @@ JSConstraintsDebug <PrinterName> <PrintTicket> [MergePrintTicket] [Constraints]
 
 Debug a print driver against a known test print ticket.
 
-``` syntax
+```
 JSConstraintsDebug “Contoso Printer” PrintTicket.xml
 ```
 
 Debug a print driver with a new constraints source file against a known test print ticket.
 
-``` syntax
+```
 JSConstraintsDebug “Contoso Printer” PrintTicket.xml Constraints.js
 ```
 
 Test merge and validate operations between two custom print tickets.
 
-``` syntax
+```
 JSConstraintsDebug “Contoso Printer” PrintTicket.xml PrintTicket2.xml
 ```
 

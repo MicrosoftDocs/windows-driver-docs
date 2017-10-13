@@ -35,7 +35,7 @@ This section includes the following topics:
 ## Related topics
 
 
-[NDIS Versions in Network Drivers](ndis-versions-in-network-drivers.md)
+[Overview of NDIS versions](overview-of-ndis-versions.md)
 
  
 

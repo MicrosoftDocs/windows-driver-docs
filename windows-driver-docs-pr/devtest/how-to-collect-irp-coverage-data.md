@@ -44,13 +44,13 @@ For information about setting up the WDK and the Visual Studio test environment,
 
     After the test computer has restarted, verify that the filter driver is installed and the correct devices are enabled for IRP coverage. To do this, run the **Display Devices enabled for IRP coverage data collection** tool on the test computer.
 
-    ``` syntax
+    ```
     Drvcov /D
     ```
 
     The following example shows sample output from this tool:
 
-    ``` syntax
+    ```
     |------------------------------------------------------------------
     | List of devices we can get coverage data from.
     |------------------------------------------------------------------

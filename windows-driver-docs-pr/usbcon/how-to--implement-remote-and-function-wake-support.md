@@ -116,7 +116,7 @@ SendRequestForRemoteWakeNotification(
         nextStack->MajorFunction = IRP_MJ_INTERNAL_DEVICE_CONTROL;   
         nextStack->Parameters.DeviceIoControl.IoControlCode = IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION;
 
-        nextStack->Parameters.Others.Argument1 = &amp;remoteWake;
+        nextStack->Parameters.Others.Argument1 = &remoteWake;
         
         // Caller&#39;s completion routine will free the IRP when it completes.
  
@@ -179,7 +179,7 @@ VOID
     PIO_STACK_LOCATION              nextStack;
     NTSTATUS                        status;
 
-    status = USBD_UrbAllocate(parentFdoExt->usbdHandle, &amp;urb);
+    status = USBD_UrbAllocate(parentFdoExt->usbdHandle, &urb);
 
     if (!NT_SUCCESS(status))
     {    

@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 The **Manufacturer** section identifies the manufacturer of one or more devices that can be installed by using the INF file.
 
-``` syntax
+```
 [Manufacturer]
 
 manufacturer-identifier
@@ -37,7 +37,7 @@ manufacturer-identifier
 <a href="" id="manufacturer-identifier"></a>*manufacturer-identifier*  
 Uniquely identifies a manufacturer and an INF section that contains information that identifies a manufacturer's device models. Each *manufacturer-identifier* entry must exist on a separate line and use the following format:
 
-``` syntax
+```
 manufacturer-name |
 %strkey%=models-section-name |
 %strkey%=models-section-name [,TargetOSVersion] [,TargetOSVersion] ...  (Windows XP and later versions of Windows)
@@ -46,7 +46,7 @@ manufacturer-name |
 These entries are defined as follows:
 
 <a href="" id="manufacturer-name"></a>*manufacturer-name*  
-Identifies the devices' manufacturer. The INF must also contain a corresponding [**INF *Models* section**](inf-models-section.md) of the same name. The maximum length of a manufacturer's name, in characters, is LINE\_LEN. (An entry specified in this manner cannot be localized.)
+Identifies the devices' manufacturer. The INF must also contain a corresponding [**INF *Models* section**](inf-models-section.md) of the same name. The maximum length of a manufacturer's name, in characters, is LINE_LEN. (An entry specified in this manner cannot be localized.)
 
 <a href="" id="strkey-"></a>*strkey*   
 Specifies a token, unique within the INF file that represents the name of a manufacturer. Each such %*strkey*% token must be defined in an [**INF Strings section**](inf-strings-section.md) of the INF file.
@@ -78,11 +78,11 @@ For Windows XP and later versions of Windows, *models-section-name* entries in t
 
 For Windows XP to Windows 10, version 1511, the format of *TargetOSVersion* decoration is as follows:
 
-``` syntax
+```
 nt[Architecture][.[OSMajorVersion][.[OSMinorVersion][.[ProductType][.SuiteMask]]]]
 ```
 Starting with Windows 10, version 1607 (Build 14310 and later), the format of the *TargetOSVersion* decoration is as follows:
-``` syntax
+```
 nt[Architecture][.[OSMajorVersion][.[OSMinorVersion][.[ProductType][.SuiteMask][.[BuildNumber]]]]]
 ```
 
@@ -141,40 +141,40 @@ A number that represents the operating system's minor version number. The follow
  
 
 <a href="" id="producttype"></a>*ProductType*  
-A number that represents one of the VER\_NT\_xxxx flags defined in *Winnt.h*, such as the following:
+A number that represents one of the VER_NT_xxxx flags defined in *Winnt.h*, such as the following:
 
-**0x0000001** (VER\_NT\_WORKSTATION)
+**0x0000001** (VER_NT_WORKSTATION)
 
-**0x0000002** (VER\_NT\_DOMAIN\_CONTROLLER)
+**0x0000002** (VER_NT_DOMAIN_CONTROLLER)
 
-**0x0000003** (VER\_NT\_SERVER)
+**0x0000003** (VER_NT_SERVER)
 
 If a product type is specified, the INF file is used only if the operating system matches the specified product type. If the INF supports multiple product types for a single operating system version, multiple *TargetOSVersion* entries are required.
 
 <a href="" id="suitemask"></a>*SuiteMask*  
-A number representing a combination of one or more of the VER\_SUITE\_xxxx flags defined in *Winnt.h*. These flags include the following:
+A number representing a combination of one or more of the VER_SUITE_xxxx flags defined in *Winnt.h*. These flags include the following:
 
-**0x00000001** (VER\_SUITE\_SMALLBUSINESS)
+**0x00000001** (VER_SUITE_SMALLBUSINESS)
 
-**0x00000002** (VER\_SUITE\_ENTERPRISE)
+**0x00000002** (VER_SUITE_ENTERPRISE)
 
-**0x00000004** (VER\_SUITE\_BACKOFFICE)
+**0x00000004** (VER_SUITE_BACKOFFICE)
 
-**0x00000008** (VER\_SUITE\_COMMUNICATIONS)
+**0x00000008** (VER_SUITE_COMMUNICATIONS)
 
-**0x00000010** (VER\_SUITE\_TERMINAL)
+**0x00000010** (VER_SUITE_TERMINAL)
 
-**0x00000020** (VER\_SUITE\_SMALLBUSINESS\_RESTRICTED)
+**0x00000020** (VER_SUITE_SMALLBUSINESS_RESTRICTED)
 
-**0x00000040** (VER\_SUITE\_EMBEDDEDNT)
+**0x00000040** (VER_SUITE_EMBEDDEDNT)
 
-**0x00000080** (VER\_SUITE\_DATACENTER)
+**0x00000080** (VER_SUITE_DATACENTER)
 
-**0x00000100** (VER\_SUITE\_SINGLEUSERTS)
+**0x00000100** (VER_SUITE_SINGLEUSERTS)
 
-**0x00000200** (VER\_SUITE\_PERSONAL)
+**0x00000200** (VER_SUITE_PERSONAL)
 
-**0x00000400** (VER\_SUITE\_SERVERAPPLIANCE)
+**0x00000400** (VER_SUITE_SERVERAPPLIANCE)
 
 If one or more suite mask values are specified, the INF is used only if the operating system matches all the specified product suites. If the INF supports multiple product suite combinations for a single operating system version, multiple *TargetOSVersion* entries are required.
 

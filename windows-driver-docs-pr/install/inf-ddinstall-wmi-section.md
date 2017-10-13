@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 An INF *DDInstall*.**WMI** section contains one or more **WMIInterface** directives that specify characteristics for each WMI class that the driver provides.
 
-``` syntax
+```
 [install-section-name.WMI] |
 [install-section-name.nt.WMI] | 
 [install-section-name.ntx86.WMI] |
@@ -41,7 +41,7 @@ Specifies a GUID value that identifies a WMI class.
 <a href="" id="flags"></a>*flags*  
 Specifies one of the following bitmask flags:
 
-<a href="" id="0x00000001--scwmi-clobber-security-"></a>0x00000001 (SCWMI\_CLOBBER\_SECURITY)  
+<a href="" id="0x00000001--scwmi-clobber-security-"></a>0x00000001 (SCWMI_CLOBBER_SECURITY)  
 If set, and if a security descriptor already exists in the registry, the existing security descriptor is replaced by the one specified in the INF file. If not set, and if a security descriptor already exists in the registry, the existing security descriptor is used instead of the one specified in the INF file.
 
 <a href="" id="wmi-class-section"></a>*WMI-class-section*  

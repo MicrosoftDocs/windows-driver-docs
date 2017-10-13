@@ -14,14 +14,14 @@ ms.technology: windows-devices
 
 The PwrTest Thermal Scenario monitors ACPI thermal zone information and statistics. This scenario is only supported on systems that report thermal zones and temperature changes.
 
-**Note**  This scenario only works on systems that report thermal data to the operating system.
+**Note**  This scenario only works on systems that report thermal data to the operating system.
 
- 
+ 
 
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 pwrtest /thermal [/t:n] [/?] 
 ```
 
@@ -33,15 +33,15 @@ Specifies the temperature scale Kelvin (**k**), Celsius (**c**), Fahrenheit (**f
 
 **Examples**
 
-``` syntax
+```
 pwrtest /thermal  
 ```
 
-``` syntax
+```
 pwrtest /thermal  /t:30
 ```
 
-``` syntax
+```
 pwrtest /thermal  /t:30 /temp:f
 ```
 
@@ -176,7 +176,7 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -185,9 +185,9 @@ The following table describes the XML elements that appear in the log file.
 
 [PowerCfg](http://go.microsoft.com/fwlink/p/?linkid=294568)
 
- 
+ 
 
- 
+ 
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20PwrTest%20Thermal%20Scenario%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 

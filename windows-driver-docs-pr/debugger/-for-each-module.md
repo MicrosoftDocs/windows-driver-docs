@@ -1,6 +1,6 @@
 ---
-title: for\_each\_module
-description: The for\_each\_module extension executes a debugger command one time for each loaded module.
+title: for_each_module
+description: The for_each_module extension executes a debugger command one time for each loaded module.
 ms.assetid: 607947d8-be06-4012-8901-13bf27e382b1
 keywords: ["for_each_module Windows Debugging"]
 ms.author: windowsdriverdev
@@ -131,7 +131,7 @@ You can use the following aliases in *CommandString* or in any script that the c
 <tr class="odd">
 <td align="left"><p>@#TimeDateStamp</p></td>
 <td align="left"><p>ULONG</p></td>
-<td align="left"><p>The time and date stamp of the image. If you want to expand this time and date stamp into a readable date, use the [<strong>.formats (Show Number Formats)</strong>](-formats--show-number-formats-.md) command.</p></td>
+<td align="left"><p>The time and date stamp of the image. If you want to expand this time and date stamp into a readable date, use the <strong>[.formats (Show Number Formats)](-formats--show-number-formats-.md)</strong> command.</p></td>
 </tr>
 <tr class="even">
 <td align="left"></td>

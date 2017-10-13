@@ -16,7 +16,7 @@ This topic lists the options that are available when you run InfVerif.exe from t
 > [!NOTE]
 > InfVerif requires that each combined path and file name must be less than 260 characters.
 
-``` syntax
+```
 USAGE: InfVerif.exe [/v] [/u | /universal] [/info] [/stampinf] [/l <path>] [/osver TargetOSVersion>] [/product <ias file>] <files>
 
 /v

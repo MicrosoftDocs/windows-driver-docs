@@ -18,7 +18,7 @@ ms.technology: windows-devices
 
 [SetupAPI](setupapi.md) writes a log entry to a text log only if the event level set for a text log is greater than or equal to the event level for the log entry, and the [event category](enabling-event-categories-for-a-text-log.md) for the log entry is enabled for the text log.
 
-The following table lists the event levels that SetupAPI supports and the manifest constants that represent these event levels. TXTLOG\_ERROR is the lowest event level, followed by the next highest event level TXTLOG\_WARNING, and so on. TXTLOG\_VERY\_VERBOSE is the highest event level.
+The following table lists the event levels that SetupAPI supports and the manifest constants that represent these event levels. TXTLOG_ERROR is the lowest event level, followed by the next highest event level TXTLOG_WARNING, and so on. TXTLOG_VERY_VERBOSE is the highest event level.
 
 <table>
 <colgroup>
@@ -74,8 +74,8 @@ The following table lists the event levels that SetupAPI supports and the manife
 
  
 
-<a href="" id="to-set-the-event-level-for-the-setupapi-text-logs--create--or-modify--the-following-reg-dword-registry-value-"></a>To set the event level for the SetupAPI text logs, create (or modify) the following REG\_DWORD registry value:  
-**HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Setup\\LogLevel**
+<a href="" id="to-set-the-event-level-for-the-setupapi-text-logs--create--or-modify--the-following-reg-dword-registry-value-"></a>To set the event level for the SetupAPI text logs, create (or modify) the following REG_DWORD registry value:  
+**HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Setup\\LogLevel**
 
 If the **LogLevel** registry value does not exist or has a value of zero, SetupAPI sets the event level for the application installation and device installation text logs to the default values described in the following table:
 

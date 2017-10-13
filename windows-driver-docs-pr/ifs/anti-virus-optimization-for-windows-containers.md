@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 **Applies to:**
 -   Windows 10, version 1607
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 -   AV products running on the Host
 
 This topic describes optimizations that anti-virus products can utilize to avoid redundant scanning of Windows Container files and help improve Container start up time.

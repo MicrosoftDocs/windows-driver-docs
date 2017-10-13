@@ -24,7 +24,7 @@ Each per-Models *DDInstall* section contains an optional **DriverVer** directive
 
 The sections referenced by these directives contain instructions for installing driver files and writing any device-specific and/or driver-specific information into the registry.
 
-``` syntax
+```
 [install-section-name] | 
 [install-section-name.nt] | 
 [install-section-name.ntx86] | 
@@ -92,7 +92,7 @@ This optional entry specifies one or more additional system-supplied INF files t
 
 For example, the system INF files for device drivers that depend on the system's kernel-streaming support specify this entry as follows:
 
-``` syntax
+```
 Include= ks.inf[, [kscaptur.inf,] [ksfilter.inf]]...
 ```
 
@@ -103,7 +103,7 @@ This optional entry specifies sections within system-supplied INF files that mus
 
 For example, the INF files for device drivers that have the preceding **Include** entry specify this entry as follows:
 
-``` syntax
+```
 Needs= KS.Registration[, KSCAPTUR.Registration | KSCAPTUR.Registration.NT, MSPCLOCK.Installation]
 ```
 
@@ -149,7 +149,7 @@ For more information about this directive, see [**INF FeatureScore Directive**](
  
 
 <a href="" id="bitreg-bit-registry-section--bit-registry-section----"></a>**BitReg=***bit-registry-section*\[**,***bit-registry-section*\]...  
-This directive references one or more INF-writer-defined sections in which existing registry value entries of type REG\_BINARY are modified.
+This directive references one or more INF-writer-defined sections in which existing registry value entries of type REG_BINARY are modified.
 
 An **HKR** specification in such a bit-registry section designates the **..Class\\***SetupClassGUID***\\***device-instance-id* registry path of the user-accessible driver. This type of **HKR** specification is also referred to as a. "software key".
 
@@ -209,7 +209,7 @@ For more information, see [**INF Reboot Directive**](inf-reboot-directive.md).
 Remarks
 -------
 
-Throughout the Windows Driver Kit (WDK) documentation, the term *DDInstall* is used to refer to an *install-section-name*, with or without platform extensions. Therefore, "*DDInstall* section" means "a named section within an INF, having the format \[*install-section-name*\] or \[*install-section-name***.nt***xxx*\]". When you create names for *DDInstall* sections, you should include a device-specific prefix, such as **\[WDMPNPB003\_Device\]** or **\[GPR400.Install.NT\]**.
+Throughout the Windows Driver Kit (WDK) documentation, the term *DDInstall* is used to refer to an *install-section-name*, with or without platform extensions. Therefore, "*DDInstall* section" means "a named section within an INF, having the format \[*install-section-name*\] or \[*install-section-name***.nt***xxx*\]". When you create names for *DDInstall* sections, you should include a device-specific prefix, such as **\[WDMPNPB003_Device\]** or **\[GPR400.Install.NT\]**.
 
 Each *DDInstall* section must be referenced in a device/models-specific entry under the per-manufacturer [**INF *Models* section**](inf-models-section.md) of the INF file.
 
@@ -242,7 +242,7 @@ Depending on the [device setup class](device-setup-classes.md) that was specifie
 Examples
 --------
 
-This example shows the expansion of the *DDInstall* sections, **Ser\_Inst** and **Inp\_Inst**. These sections are referenced in the example for the [**INF *Models* section**](inf-models-section.md).
+This example shows the expansion of the *DDInstall* sections, **Ser_Inst** and **Inp_Inst**. These sections are referenced in the example for the [**INF *Models* section**](inf-models-section.md).
 
 ```
 [Ser_Inst]

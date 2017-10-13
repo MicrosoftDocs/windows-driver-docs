@@ -33,7 +33,7 @@ If the user inserts your distribution medium before plugging in the device, an A
 
 -   If the device is "hot-pluggable," tell the user to plug it in.
 
-    If the bus does not provide hot-plug notification, initiate reenumeration by calling [**CM\_Reenumerate\_DevNode**](https://msdn.microsoft.com/library/windows/hardware/ff539763).
+    If the bus does not provide hot-plug notification, initiate reenumeration by calling [**CM_Reenumerate_DevNode**](https://msdn.microsoft.com/library/windows/hardware/ff539763).
 
 -   If the device is not hot-pluggable, tell the user to turn the system off, plug in the device, and turn the system back on.
 

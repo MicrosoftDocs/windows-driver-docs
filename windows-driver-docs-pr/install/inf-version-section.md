@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 By convention, the **Version** section appears first in INF files. Every INF file must have this section.
 
-``` syntax
+```
 [Version]
  
 Signature="signature-name"
@@ -88,7 +88,7 @@ For a new [device setup class](device-setup-classes.md), the INF must specify a 
  
 
 <a href="" id="provider--inf-creator-"></a>**Provider=%***INF-creator***%**  
-Identifies the provider of the INF file. Typically, this is specified as an **%***OrganizationName***%** token that is expanded later in the INF file's [**Strings**](inf-strings-section.md) section. The maximum length, in characters, of a provider name is LINE\_LEN.
+Identifies the provider of the INF file. Typically, this is specified as an **%***OrganizationName***%** token that is expanded later in the INF file's [**Strings**](inf-strings-section.md) section. The maximum length, in characters, of a provider name is LINE_LEN.
 
 For example, INF files supplied with the system typically specify the *INF-creator* as **%**Msft**%** and define **%**Msft**% = "**Microsoft**"** in their [**Strings**](inf-strings-section.md) sections.
 

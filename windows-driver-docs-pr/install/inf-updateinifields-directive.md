@@ -20,13 +20,13 @@ ms.technology: windows-devices
 # INF UpdateIniFields Directive
 
 
-**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-configurable-inf-file.md).
+**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 
 An **UpdateIniFields** directive references one or more named sections in which fine-grained modifications within the lines of an INI file can be specified.
 
-``` syntax
+```
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -39,7 +39,7 @@ UpdateIniFields=update-inifields-section[,update-inifields-section]...
 
 Each named section referenced by an **UpdateIniFields** directive has the following form:
 
-``` syntax
+```
 [update-inifields-section]
  
 ini-file,ini-section,profile-name[,old-field][,new-field][,flags]

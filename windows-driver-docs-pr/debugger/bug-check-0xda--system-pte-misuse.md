@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0xDA SYSTEM\_PTE\_MISUSE
-description: The SYSTEM\_PTE\_MISUSE bug check has a value of 0x000000DA. This indicates that a page table entry (PTE) routine has been used in an improper way.
+title: Bug Check 0xDA SYSTEM_PTE_MISUSE
+description: The SYSTEM_PTE_MISUSE bug check has a value of 0x000000DA. This indicates that a page table entry (PTE) routine has been used in an improper way.
 ms.assetid: a9a9f3e9-39b7-4e4a-a326-2f510e0aaa99
 keywords: ["Bug Check 0xDA SYSTEM_PTE_MISUSE", "SYSTEM_PTE_MISUSE"]
 ms.author: windowsdriverdev
@@ -192,8 +192,8 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>The address of the invalid mapping</p></td>
 <td align="left"><p>The caller's identifying tag</p></td>
 <td align="left"><p>The number of mappings in the mapping address space</p></td>
-<td align="left"><p>(Windows XP and later only) The mapping address space that the caller is trying to free is still reserved. [<strong>MmUnmapReservedMapping</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556392)</p>
-<p>must be called before [<strong>MmFreeMappingAddress</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554512).</p></td>
+<td align="left"><p>(Windows XP and later only) The mapping address space that the caller is trying to free is still reserved. <strong>[MmUnmapReservedMapping](https://msdn.microsoft.com/library/windows/hardware/ff556392)</strong></p>
+<p>must be called before <strong>[MmFreeMappingAddress](https://msdn.microsoft.com/library/windows/hardware/ff554512)</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x104</p></td>
@@ -214,7 +214,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>The first mapping address</p></td>
 <td align="left"><p>The address of the non-empty mapping</p></td>
 <td align="left"><p>The last mapping address</p></td>
-<td align="left"><p>(Windows XP and later only) The caller is attempting to map an MDL to a mapping address space that has not been properly reserved. The caller should have called [<strong>MmUnmapReservedMapping</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556392) prior to calling [<strong>MmMapLockedPagesWithReservedMapping</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554640)</p></td>
+<td align="left"><p>(Windows XP and later only) The caller is attempting to map an MDL to a mapping address space that has not been properly reserved. The caller should have called <strong>[MmUnmapReservedMapping](https://msdn.microsoft.com/library/windows/hardware/ff556392)</strong> prior to calling <strong>[MmMapLockedPagesWithReservedMapping](https://msdn.microsoft.com/library/windows/hardware/ff554640)</strong></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x108</p></td>

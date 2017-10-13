@@ -21,7 +21,7 @@ The **/platidle** scenario requires that the computer has support for the *Alway
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
-``` syntax
+```
 pwrtest /platidle  [/t:n] [/i:n] [/?] 
 ```
 
@@ -33,11 +33,11 @@ Specifies the polling interval (in seconds) for gathering platform idle statisti
 
 **Examples**
 
-``` syntax
+```
 pwrtest /platidle /t:60
 ```
 
-``` syntax
+```
 pwrtest /platidle
 ```
 

@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0xA4 CNSS\_FILE\_SYSTEM\_FILTER
-description: The CNSS\_FILE\_SYSTEM\_FILTER bug check has a value of 0x000000A4. This bug check indicates that a problem occurred in the CNSS file system filter.
+title: Bug Check 0xA4 CNSS_FILE_SYSTEM_FILTER
+description: The CNSS_FILE_SYSTEM_FILTER bug check has a value of 0x000000A4. This bug check indicates that a problem occurred in the CNSS file system filter.
 ms.assetid: fbf04b17-424c-4b9b-beae-5327d20bf0b9
 keywords: ["Bug Check 0xA4 CNSS_FILE_SYSTEM_FILTER", "CNSS_FILE_SYSTEM_FILTER"]
 ms.author: windowsdriverdev

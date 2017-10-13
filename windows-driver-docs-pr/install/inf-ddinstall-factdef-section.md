@@ -20,13 +20,13 @@ ms.technology: windows-devices
 # INF DDInstall.FactDef Section
 
 
-**Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-configurable-inf-file.md).
+**Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 
 This section should be used in an INF for any manually installed non-PnP device that an end-user might install. This section specifies the factory-default hardware configuration settings, such as the bus-relative I/O ports and IRQ (if any), for such a card.
 
-``` syntax
+```
 [install-section-name.FactDef] |
 [install-section-name.nt.FactDef] | 
 [install-section-name.ntx86.FactDef] | 
@@ -68,7 +68,7 @@ Specifies the bus-relative DMA channel as a decimal number. *DMAattrs* is option
 <a href="" id="ioconfig-io-range"></a>**IOConfig=***io-range*  
 Specifies the I/O port range for the device in the following form:
 
-``` syntax
+```
 start-end[([decode-mask][:alias-offset][:attr])]
 ```
 
@@ -81,7 +81,7 @@ Specifies the ending address of the I/O port range, also as a 64-bit hexadecimal
 <a href="" id="decode-mask-"></a>*decode-mask*   
 Defines the alias type and can be any of the following.
 
-| Mask value | Meaning         | IOR\_Alias value |
+| Mask value | Meaning         | IOR_Alias value |
 |------------|-----------------|------------------|
 | **3ff**    | 10-bit decode   | 0x04             |
 | **fff**    | 12-bit decode   | 0x10             |
@@ -99,7 +99,7 @@ Specifies the letter **M** if the specified range is in system memory. If omitte
 <a href="" id="memconfig-mem-range"></a>**MemConfig=***mem-range*  
 Specifies the memory range for the device in the following form:
 
-``` syntax
+```
 start-end[(attr)]
 ```
 

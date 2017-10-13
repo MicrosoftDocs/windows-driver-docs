@@ -20,13 +20,13 @@ ms.technology: windows-devices
 # INF LogConfig Directive
 
 
-**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-configurable-inf-file.md).
+**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 
 A **LogConfig** directive references one or more INF-writer-defined sections, each of which specifies a logical configuration of hardware resources − the interrupt request lines, memory ranges, I/O ports, and DMA channels that can be used by the device. Each *log-config-section* specifies an alternative set of bus-relative hardware resources that can be used by the device.
 
-``` syntax
+```
 [DDInstall] | 
 [DDInstall.LogConfigOverride] 
   
@@ -39,7 +39,7 @@ INF files for PnP devices use this directive only to create override configurati
 
 Each named section referenced by a **LogConfig** directive has the following form:
 
-``` syntax
+```
 [log-config-section]
  
 ConfigPriority=priority-value[,config-type]
@@ -116,7 +116,7 @@ Specifies the ending address of the I/O port range, also as a 64-bit hexadecimal
 <a href="" id="decode-mask"></a>*decode-mask*  
 Defines the alias type and can be any of the following:
 
-| Mask value | Meaning         | IOR\_Alias value |
+| Mask value | Meaning         | IOR_Alias value |
 |------------|-----------------|------------------|
 | **3ff**    | 10-bit decode   | 0x04             |
 | **fff**    | 12-bit decode   | 0x10             |
@@ -148,7 +148,7 @@ Optionally specifies a 64-bitmask that is used in a bitwise AND operation to ali
 <a href="" id="decode-mask"></a>*decode-mask*  
 Defines the alias type and can be any of the following:
 
-| Mask value | Meaning         | IOR\_Alias value |
+| Mask value | Meaning         | IOR_Alias value |
 |------------|-----------------|------------------|
 | **3ff**    | 10-bit decode   | 0x04             |
 | **fff**    | 12-bit decode   | 0x10             |
@@ -166,7 +166,7 @@ Specifies the letter **M** if the given range is in system memory. If omitted, t
 <a href="" id="memconfig-mem-range--mem-range----"></a>**MemConfig=***mem-range*\[**,***mem-range*\]...  
 Specifies one or more memory ranges for the device in one of the following forms:
 
-``` syntax
+```
 start-end[(attr)] | size@min-max[%align-mask][(attr)]
 ```
 

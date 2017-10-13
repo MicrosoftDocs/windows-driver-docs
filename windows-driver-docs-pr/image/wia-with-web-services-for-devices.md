@@ -17,7 +17,12 @@ In Windows Vista and later versions of Windows, the operating system supports ne
 
 The WSD Scan driver is an inbox Microsoft Windows Image Acquisition (WIA) class driver for web services scanners. This driver is compliant with the Windows Device Protocol (WDP) for scanners and is new with Windows Vista.
 
-The WSD Scan driver package contains a reusable kernel driver component, *WSDScan.sys*, that is intended specifically to install web services scanner devices. Windows Vista also includes the *WSD Challenger*, which is a module that enables web services clients to challenge disconnected devices to reestablish device communication when the device comes back online.
+The WSD Scan driver package contains a reusable kernel driver component, *WSDScan.sys*, that is intended specifically to install web services scanner devices. 
+
+Windows Vista also includes the *WSD Challenger*, which is a module that enables web services clients to challenge disconnected devices to reestablish device communication when the device comes back online.
+
+> [!IMPORTANT]  
+> WSD Challenger functionality has been deprecated and all WSD Challenger-related documentation will be removed in 2018.
 
 The following sections describe how to use *WSDScan.sys* to install a WIA driver for a web services scanner, how to use function discovery to initialize SOAP communications with the scanner device from within the WIA driver, and how to challenge a disconnected device by using the WSD Challenger:
 

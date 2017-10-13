@@ -245,10 +245,11 @@ Debugger.State.Scripts
 We can click on the *FirstSampleFunction*, to see what functions it provides.
 
 ```
-0:000> dx -r1 Debugger.State.Scripts.FirstSampleFunction.Contents
+0:000> dx -r1 -v Debugger.State.Scripts.FirstSampleFunction.Contents
 Debugger.State.Scripts.FirstSampleFunction.Contents                 : [object Object]
     host             : [object Object]
-    addTwoValues   
+    addTwoValues    
+ ... 
 ```
 
 To make the script a bit more convenient to work with, assign a variable in the debugger to hold the contents of the script using the dx command.
@@ -422,9 +423,9 @@ This table summarizes which functions are called by the script commands
 <tbody>
 <tr class="odd">
 <td align="left"></td>
-<td align="left">.[<strong>.scriptload</strong>](-scriptload--load-script-.md)</td>
-<td align="left">[<strong>.scriptrun (Run Script)</strong>](-scriptrun--run-script-.md)</td>
-<td align="left">[<strong>.scriptunload (Unload Script)</strong>](-scriptunload--unload-script-.md)</td>
+<td align="left">.<strong>[.scriptload](-scriptload--load-script-.md)</strong></td>
+<td align="left"><strong>[.scriptrun (Run Script)](-scriptrun--run-script-.md)</strong></td>
+<td align="left"><strong>[.scriptunload (Unload Script)](-scriptunload--unload-script-.md)</strong></td>
 </tr>
 <tr class="even">
 <td align="left">root</td>

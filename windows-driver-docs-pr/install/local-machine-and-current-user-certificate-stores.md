@@ -15,10 +15,10 @@ ms.technology: windows-devices
 Each of the system certificate stores has the following types:
 
 <a href="" id="local-machine-certificate-store"></a>Local machine certificate store  
-This type of certificate store is local to the computer and is global to all users on the computer. This certificate store is located in the registry under the HKEY\_LOCAL\_MACHINE root.
+This type of certificate store is local to the computer and is global to all users on the computer. This certificate store is located in the registry under the HKEY_LOCAL_MACHINE root.
 
 <a href="" id="current-user-certificate-store"></a>Current user certificate store  
-This type of certificate store is local to a user account on the computer. This certificate store is located in the registry under the HKEY\_CURRENT\_USER root.
+This type of certificate store is local to a user account on the computer. This certificate store is located in the registry under the HKEY_CURRENT_USER root.
 
 Be aware that all current user certificate stores inherit the contents of the local machine certificate stores. For example, if a certificate is added to the local machine [Trusted Root Certification Authorities certificate store](trusted-root-certification-authorities-certificate-store.md), all current user Trusted Root Certification Authorities certificate stores also contain the certificate.
 

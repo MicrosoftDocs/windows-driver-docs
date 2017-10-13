@@ -22,11 +22,11 @@ ms.technology: windows-devices
 
 The **/Add** switch of the Enhanced Storage Certificate Management tool adds a certificate to the authentication silo certificate (ASC) store on a specified IEEE 1667-compliant USB storage device.
 
-**Note**  In this topic, the specified IEEE 1667-compliant USB storage device is known as the *target device*.
+**Note**  In this topic, the specified IEEE 1667-compliant USB storage device is known as the *target device*.
 
- 
+ 
 
-``` syntax
+```
     EhStorCertMgrCmd 
     /Add
      -Volume:
@@ -40,9 +40,9 @@ The **/Add** switch of the Enhanced Storage Certificate Management tool adds a c
 <span id="_______-Volume______"></span><span id="_______-volume______"></span><span id="_______-VOLUME______"></span> **-Volume**   
 The volume name of the target device. For more information about the format of this parameter, see [Overview of the Enhanced Storage Certificate Management Tool](overview-of-the-enhanced-storage-certificate-management-tool.md).
 
-**Note**  To produce a list of the volume names of the IEEE 1667-compliant USB storage devices currently connected to a computer, type **EhStorCertMgrCmd /List** at the command prompt and then press **Enter**.
+**Note**  To produce a list of the volume names of the IEEE 1667-compliant USB storage devices currently connected to a computer, type **EhStorCertMgrCmd /List** at the command prompt and then press **Enter**.
 
- 
+ 
 
 <span id="_______-Type______"></span><span id="_______-type______"></span><span id="_______-TYPE______"></span> **-Type**   
 The type of the certificate to be added to the ASC store in the target device. The following table defines the valid certificate types.
@@ -84,7 +84,7 @@ The type of the certificate to be added to the ASC store in the target device. T
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______-Validation______"></span><span id="_______-validation______"></span><span id="_______-VALIDATION______"></span> **-Validation**   
 The type of certificate validation procedure that is performed by the addressable command target (ACT) in the target device. The following table defines the correct validation types.
@@ -116,11 +116,11 @@ The type of certificate validation procedure that is performed by the addressabl
 </tbody>
 </table>
 
- 
+ 
 
-**Note**  If the -Validation: parameter is not specified, the tool uses a validation value of **None**.
+**Note**  If the -Validation: parameter is not specified, the tool uses a validation value of **None**.
 
- 
+ 
 
 <span id="_______-Index______"></span><span id="_______-index______"></span><span id="_______-INDEX______"></span> **-Index**   
 The index within the ASC store where the certificate will be saved. If the specified index contains a certificate, that certificate will be replaced. The index value must be greater than zero.
@@ -146,28 +146,28 @@ The following guidelines apply when you add certificates to the target device:
 
 -   The PCp certificate is used to perform administrative authentication between the host and the target device. If the target device does not have a PCp certificate, you must first provision the target device with a PCp certificate. For the PCp certificate type, the **-Index** switch must be specified with a value of one.
 
-    **Important**  It is best to only provision the target device with a PCp certificate that has its private key stored in a certificate store on your computer. If an incorrect PCp certificate is provisioned on the target device, you will not be able to clear the certificate store (which includes the PCp certificate) by using the [**/Initialize switch**](-initialize-switch.md).
+    **Important**  It is best to only provision the target device with a PCp certificate that has its private key stored in a certificate store on your computer. If an incorrect PCp certificate is provisioned on the target device, you will not be able to clear the certificate store (which includes the PCp certificate) by using the [**/Initialize switch**](-initialize-switch.md).
 
-     
+     
 
 -   If the **-Index** switch is not specified when you add HCh, ASCh, and SCh certificates, the tool stores the certificate in the first index within the ASC store that is not used.
 
-    **Note**  In order to add these certificate types to the target device, the correct PCp certificate must reside in the host in order to pass administrative authentication with the device.
+    **Note**  In order to add these certificate types to the target device, the correct PCp certificate must reside in the host in order to pass administrative authentication with the device.
 
-     
+     
 
 -   If the specified index is not empty in the target device, the **/Add** switch replaces the existing certificate with the specified certificate.
 
-    **Note**  If the Enhanced Storage Certificate Management tool replaces an ASCh certificate at the specified index, the tool removes all related SCh in the ASCh certificate chain.
+    **Note**  If the Enhanced Storage Certificate Management tool replaces an ASCh certificate at the specified index, the tool removes all related SCh in the ASCh certificate chain.
     If the tool replaces an SCh certificate at the specified index that is part of an ASCh certificate chain, the tool removes the SCh certificate together with all its parent SCh certificates in the certificate chain.
 
-     
+     
 
 -   Only one of the **-Store**, -**File** or **-New** parameters must be specified.
 
-**Note**   The Enhanced Storage Certificate Management tool cannot add, remove, or replace the ASC-manufacturer (ASCm) certificate from the ASC store in the target device.
+**Note**   The Enhanced Storage Certificate Management tool cannot add, remove, or replace the ASC-manufacturer (ASCm) certificate from the ASC store in the target device.
 
- 
+ 
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
@@ -177,9 +177,9 @@ The following example shows how to add a certificate from the certificate store 
 EhStorCertMgrCmd /Add -Volume:"\\?\usbstor#ieee1667control&ven_&prod_&rev_#123456789&0&control#{4f40006f-b933-4550-b532-2b58cee614d3}" -Index:1 -Store:TestCert -Type:PCp -Validation:None
 ```
 
- 
+ 
 
- 
+ 
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20/Add%20Switch%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 

@@ -22,408 +22,59 @@ In addition, MB miniport drivers must implement OID\_GEN\_PHYSICAL\_MEDIUM even 
 
 The syntax and semantics of the MB OIDs listed in the following table are described in [MB Operational Semantics](mb-operational-semantics.md). The interactions between the MB Service and the MB miniport driver are described in [MB Operation Flowcharts](mb-operation-flowcharts.md).
 
-### WWAN-Specific OIDs
-
-**OID** and **Corresponding Data Structure**
-
-**Set operation**
-
-**Query operation**
-
-**GSM/CDMA**
-
-Windows 7
-Windows 8
-Windows 7
-Windows 8
-[OID\_WWAN\_DRIVER\_CAPS](https://msdn.microsoft.com/library/windows/hardware/ff569825)
-
-uses [**NDIS\_WWAN\_DRIVER\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff567908)
-
-Not supported
-
-Not supported
-
-S
-
-S
-
-GSM, CDMA
-
-[OID\_WWAN\_DEVICE\_CAPS](https://msdn.microsoft.com/library/windows/hardware/ff569824) has no corresponding structure
-
-Not supported
-
-Not supported
-
-A
-
-A
-
-GSM, CDMA
-
-[OID\_WWAN\_READY\_INFO](https://msdn.microsoft.com/library/windows/hardware/ff569833) has no corresponding structure
-
-Not supported
-
-Not supported
-
-A
-
-A
-
-GSM, CDMA
-
-[OID\_WWAN\_SERVICE\_ACTIVATION](https://msdn.microsoft.com/library/windows/hardware/ff569835)†
-
-uses [**NDIS\_WWAN\_SERVICE\_ACTIVATION**](https://msdn.microsoft.com/library/windows/hardware/ff567918)
-
-A
-
-A
-
-Not supported
-
-Not supported
-
-GSM, CDMA
-
-[OID\_WWAN\_RADIO\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569832)
-
-uses [**NDIS\_WWAN\_SET\_RADIO\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567925)
-
-A
-
-A
-
-A
-
-A
-GSM, CDMA
-
-[OID\_WWAN\_PIN](https://msdn.microsoft.com/library/windows/hardware/ff569828)
-
-uses [**NDIS\_WWAN\_SET\_PIN**](https://msdn.microsoft.com/library/windows/hardware/ff567922)
-
-A
-
-Not supported
-
-A
-
-Not supported
-
-GSM, CDMA
-
-[OID\_WWAN\_PIN\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569829) has no corresponding structure
-
-Not supported
-
-Not supported
-
-A
-
-A
-
-GSM, CDMA
-
-[OID\_WWAN\_PIN\_EX](https://msdn.microsoft.com/library/windows/hardware/hh440095)
-
-uses [**NDIS\_WWAN\_SET\_PIN\_EX**](https://msdn.microsoft.com/library/windows/hardware/hh439842)
-
-Not supported
-
-A
-
-Not supported
-
-A
-
-GSM, CDMA
-
-[OID\_WWAN\_HOME\_PROVIDER](https://msdn.microsoft.com/library/windows/hardware/ff569826) has no corresponding structure
-
-Not supported
-
-Not supported
-
-A
-
-A
-
-GSM, CDMA
-
-[OID\_WWAN\_PREFERRED\_PROVIDERS](https://msdn.microsoft.com/library/windows/hardware/ff569830)†
-
-uses [**NDIS\_WWAN\_SET\_PREFERRED\_PROVIDERS**](https://msdn.microsoft.com/library/windows/hardware/ff567923)
-
-A
-
-A
-
-A
-
-A
-
-GSM only
-
-[OID\_WWAN\_VISIBLE\_PROVIDERS](https://msdn.microsoft.com/library/windows/hardware/ff569843)
-
-has no corresponding structure
-
-Not supported
-
-Not supported
-
-A
-
-A
-
-GSM
-
-[OID\_WWAN\_REGISTER\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569834)
-
-uses [**NDIS\_WWAN\_SET\_REGISTER\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567926)
-
-A
-
-A
-
-A
-
-A
-
-CDMA
-
-[OID\_WWAN\_SIGNAL\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569836)
-
-uses [**NDIS\_WWAN\_SET\_SIGNAL\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567928)
-
-A
-
-A
-
-A
-
-A
-
-GSM, CDMA
-
-[OID\_WWAN\_PACKET\_SERVICE](https://msdn.microsoft.com/library/windows/hardware/ff569827)
-
-uses [**NDIS\_WWAN\_SET\_PACKET\_SERVICE**](https://msdn.microsoft.com/library/windows/hardware/ff567921)
-
-A
-
-A
-
-A
-
-A
-
-GSM, CDMA
-
-[OID\_WWAN\_PROVISIONED\_CONTEXTS](https://msdn.microsoft.com/library/windows/hardware/ff569831)††
-
-uses [**NDIS\_WWAN\_SET\_PROVISIONED\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff567924)
-
-A
-
-A
-
-A
-
-A
-
-GSM, CDMA
-
-[OID\_WWAN\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/ff569823)
-
-uses [**NDIS\_WWAN\_SET\_CONTEXT\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567920)
-
-A
-
-A
-
-A
-
-A
-
-GSM, CDMA
-
-[OID\_WWAN\_SMS\_CONFIGURATION](https://msdn.microsoft.com/library/windows/hardware/ff569837)
-
-uses [**NDIS\_WWAN\_SET\_SMS\_CONFIGURATION**](https://msdn.microsoft.com/library/windows/hardware/ff567929)
-
-A
-
-A
-
-A
-
-A
-
-GSM, CDMA
-
-[OID\_WWAN\_SMS\_READ](https://msdn.microsoft.com/library/windows/hardware/ff569839)
-
-uses [**NDIS\_WWAN\_SMS\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff567941)
-
-Not supported
-
-A
-
-A
-
-A
-
-GSM, CDMA
-
-[OID\_WWAN\_SMS\_SEND](https://msdn.microsoft.com/library/windows/hardware/ff569840)
-
-uses [**NDIS\_WWAN\_SMS\_SEND**](https://msdn.microsoft.com/library/windows/hardware/ff567943)
-
-A
-
-A
-
-Not supported
-
-Not supported
-
-GSM, CDMA
-
-[OID\_WWAN\_SMS\_DELETE](https://msdn.microsoft.com/library/windows/hardware/ff569838)
-
-uses [**NDIS\_WWAN\_SMS\_DELETE**](https://msdn.microsoft.com/library/windows/hardware/ff567938)
-
-A
-
-A
-
-Not supported
-
-Not supported
-
-GSM, CDMA
-
-[OID\_WWAN\_SMS\_STATUS](https://msdn.microsoft.com/library/windows/hardware/ff569841)
-
-uses [**NDIS\_WWAN\_SMS\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff567945)
-
-Not supported
-
-Not supported
-
-A
-
-A
-
-GSM, CDMA
-
-[OID\_WWAN\_VENDOR\_SPECIFIC](https://msdn.microsoft.com/library/windows/hardware/ff569842)† uses a vendor-defined structure
-
-A
-
-A
-
-Not supported
-
-Not supported
-
-GSM, CDMA
-
-[OID\_WWAN\_DEVICE\_SERVICES](https://msdn.microsoft.com/library/windows/hardware/hh440093) has no corresponding structure
-
-Not supported
-
-Not supported
-
-Not supported
-
-A
-
-GSM, CDMA
-
-[OID\_WWAN\_SUBSCRIBE\_DEVICE\_SERVICE\_EVENTS](https://msdn.microsoft.com/library/windows/hardware/hh440096)
-
-uses [**NDIS\_WWAN\_SUBSCRIBE\_DEVICE\_SERVICE\_EVENTS**](https://msdn.microsoft.com/library/windows/hardware/hh439843)
-
-Not supported
-
-A
-
-Not supported
-
-Not supported
-
-GSM, CDMA
-
-[OID\_WWAN\_AUTH\_CHALLENGE](https://msdn.microsoft.com/library/windows/hardware/hh440092)
-
-uses [**NDIS\_WWAN\_AUTH\_CHALLENGE**](https://msdn.microsoft.com/library/windows/hardware/hh439833)
-
-Not supported
-
-Not supported
-
-Not supported
-
-A
-
-GSM, CDMA
-
-[OID\_WWAN\_USSD](https://msdn.microsoft.com/library/windows/hardware/hh440100)
-
-uses [**NDIS\_WWAN\_USSD\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/hh439846)
-
-Not supported
-
-A
-
-Not supported
-
-Not supported
-
-GSM
-
-[OID\_WWAN\_DEVICE\_SERVICE\_COMMAND](https://msdn.microsoft.com/library/windows/hardware/hh440094)
-
-uses [**NDIS\_WWAN\_DEVICE\_SERVICE\_COMMAND**](https://msdn.microsoft.com/library/windows/hardware/hh439836)
-
-Not supported
-
-A
-
-Not supported
-
-A
-
-GSM, CDMA
-
- 
-
-**Note**  The following notes apply to the preceding table:
-†represents optional OIDs that miniport drivers may support. Miniport drivers that do not support the optional OIDs must not return them in OID\_GEN\_SUPPORTED\_LIST.
-
-††represents miniport drivers that support GSM-based devices which can optionally support OID\_WWAN\_PROVISIONED\_CONTEXTS set and query operations. Miniport drivers that support CDMA-based devices can optionally support OID\_WWAN\_PROVISIONED\_CONTEXTS query operations for CDMA-based devices that report Simple IP (WWAN\_CTRL\_CAPS\_CDMA\_SIMPLE\_IP).
-
-Miniport drivers must support all non-optional OIDs. The MB Service may ignore any miniport driver that does not report all of the mandatory OIDs.
-
-"A" and "S" in the Set and Query operation columns in the preceding table reflect the nature of the transaction for completing the OID request: "A" stands for an asynchronous transaction and "S" for a synchronous transaction.
-
-The data structures in the preceding table correspond to set operation OIDs and to return data for synchronous query operation OIDs.
-
-The following OIDs share a common variable length list data structure called [**WWAN\_LIST\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff571208) in their corresponding data structures:
--   OID\_WWAN\_READY\_INFO
--   OID\_WWAN\_PREFERRED\_PROVIDERS
--   OID\_WWAN\_VISIBLE\_PROVIDERS
--   OID\_WWAN\_PROVISIONED\_CONTEXTS
--   OID\_WWAN\_SMS\_READ
-
- 
-
-### WWAN-Specific Indications, Corresponding Data Structures, and OS Revisions
+## WWAN-Specific OIDs
+
+| OID and Corresponding Data Structure | Set operation |   | Query operation |   | GSM/CDMA |
+| ---                                  | ---       | ---       | ---       | ---       |--- |
+|                                      | Windows 7 | Windows 8 | Windows 7 | Windows 8 |    |
+| [OID\_WWAN\_DRIVER\_CAPS](https://msdn.microsoft.com/library/windows/hardware/ff569825) uses [**NDIS\_WWAN\_DRIVER\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff567908) | Not supported | Not supported |S | S | GSM, CDMA |
+| [OID\_WWAN\_DEVICE\_CAPS](https://msdn.microsoft.com/library/windows/hardware/ff569824) has no corresponding structure | Not supported | Not supported | A | A | GSM, CDMA |
+| [OID\_WWAN\_READY\_INFO](https://msdn.microsoft.com/library/windows/hardware/ff569833) has no corresponding structure | Not supported Not supported | A | A | GSM, CDMA |
+| [OID\_WWAN\_SERVICE\_ACTIVATION](https://msdn.microsoft.com/library/windows/hardware/ff569835)† uses [**NDIS\_WWAN\_SERVICE\_ACTIVATION**](https://msdn.microsoft.com/library/windows/hardware/ff567918) | A | A | Not supported | Not supported | GSM, CDMA |
+| [OID\_WWAN\_RADIO\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569832) uses [**NDIS\_WWAN\_SET\_RADIO\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567925) | A | A | A | A | GSM, CDMA |
+| [OID\_WWAN\_PIN](https://msdn.microsoft.com/library/windows/hardware/ff569828) uses [**NDIS\_WWAN\_SET\_PIN**](https://msdn.microsoft.com/library/windows/hardware/ff567922) | A | Not supported | A | Not supported | GSM, CDMA |
+| [OID\_WWAN\_PIN\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569829) has no corresponding structure | Not supported | Not supported | A | A | GSM, CDMA |
+| [OID\_WWAN\_PIN\_EX](https://msdn.microsoft.com/library/windows/hardware/hh440095) uses [**NDIS\_WWAN\_SET\_PIN\_EX**](https://msdn.microsoft.com/library/windows/hardware/hh439842) | Not supported | A | Not supported | A | GSM, CDMA |
+| [OID\_WWAN\_HOME\_PROVIDER](https://msdn.microsoft.com/library/windows/hardware/ff569826) has no corresponding structure | Not supported | Not supported | A | A | GSM, CDMA |
+| [OID\_WWAN\_PREFERRED\_PROVIDERS](https://msdn.microsoft.com/library/windows/hardware/ff569830)† uses [**NDIS\_WWAN\_SET\_PREFERRED\_PROVIDERS**](https://msdn.microsoft.com/library/windows/hardware/ff567923) | A | A | A | A | GSM only |
+| [OID\_WWAN\_VISIBLE\_PROVIDERS](https://msdn.microsoft.com/library/windows/hardware/ff569843) has no corresponding structure | Not supported | Not supported | A | A | GSM |
+| [OID\_WWAN\_REGISTER\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569834) uses [**NDIS\_WWAN\_SET\_REGISTER\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567926) | A | A | A | A | CDMA |
+| [OID\_WWAN\_SIGNAL\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569836) uses [**NDIS\_WWAN\_SET\_SIGNAL\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567928) | A | A | A | A | GSM, CDMA |
+| [OID\_WWAN\_PACKET\_SERVICE](https://msdn.microsoft.com/library/windows/hardware/ff569827) uses [**NDIS\_WWAN\_SET\_PACKET\_SERVICE**](https://msdn.microsoft.com/library/windows/hardware/ff567921) | A | A | A | A | GSM, CDMA |
+| [OID\_WWAN\_PROVISIONED\_CONTEXTS](https://msdn.microsoft.com/library/windows/hardware/ff569831)†† uses [**NDIS\_WWAN\_SET\_PROVISIONED\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff567924) | A | A | A | A | GSM, CDMA |
+| [OID\_WWAN\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/ff569823) uses [**NDIS\_WWAN\_SET\_CONTEXT\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567920) | A | A | A | A | GSM, CDMA |
+| [OID\_WWAN\_SMS\_CONFIGURATION](https://msdn.microsoft.com/library/windows/hardware/ff569837) uses [**NDIS\_WWAN\_SET\_SMS\_CONFIGURATION**](https://msdn.microsoft.com/library/windows/hardware/ff567929) | A | A | A | A | GSM, CDMA | 
+| [OID\_WWAN\_SMS\_READ](https://msdn.microsoft.com/library/windows/hardware/ff569839) uses [**NDIS\_WWAN\_SMS\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff567941) | Not supported | A | A | A |GSM, CDMA | 
+| [OID\_WWAN\_SMS\_SEND](https://msdn.microsoft.com/library/windows/hardware/ff569840) uses [**NDIS\_WWAN\_SMS\_SEND**](https://msdn.microsoft.com/library/windows/hardware/ff567943) | A | A | Not supported | Not supported | GSM, CDMA |
+| [OID\_WWAN\_SMS\_DELETE](https://msdn.microsoft.com/library/windows/hardware/ff569838) uses [**NDIS\_WWAN\_SMS\_DELETE**](https://msdn.microsoft.com/library/windows/hardware/ff567938) | A | A | Not supported | Not supported |  GSM, CDMA |
+| [OID\_WWAN\_SMS\_STATUS](https://msdn.microsoft.com/library/windows/hardware/ff569841) uses [**NDIS\_WWAN\_SMS\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff567945) | Not supported | Not supported | A | A | GSM, CDMA |
+| [OID\_WWAN\_VENDOR\_SPECIFIC](https://msdn.microsoft.com/library/windows/hardware/ff569842)† uses a vendor-defined structure | A | A | Not supported | Not supported | GSM, CDMA |
+| [OID\_WWAN\_DEVICE\_SERVICES](https://msdn.microsoft.com/library/windows/hardware/hh440093) has no corresponding structure | Not supported | Not supported | Not supported | A | GSM, CDMA |
+| [OID\_WWAN\_SUBSCRIBE\_DEVICE\_SERVICE\_EVENTS](https://msdn.microsoft.com/library/windows/hardware/hh440096) uses [**NDIS\_WWAN\_SUBSCRIBE\_DEVICE\_SERVICE\_EVENTS**](https://msdn.microsoft.com/library/windows/hardware/hh439843) | Not supported | A | Not supported | Not supported | GSM, CDMA |
+| [OID\_WWAN\_AUTH\_CHALLENGE](https://msdn.microsoft.com/library/windows/hardware/hh440092) uses [**NDIS\_WWAN\_AUTH\_CHALLENGE**](https://msdn.microsoft.com/library/windows/hardware/hh439833) | Not supported | Not supported | Not supported | A | GSM, CDMA |
+| [OID\_WWAN\_USSD](https://msdn.microsoft.com/library/windows/hardware/hh440100) uses [**NDIS\_WWAN\_USSD\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/hh439846) | Not supported | A | Not supported | Not supported | GSM |
+| [OID\_WWAN\_DEVICE\_SERVICE\_COMMAND](https://msdn.microsoft.com/library/windows/hardware/hh440094) uses [**NDIS\_WWAN\_DEVICE\_SERVICE\_COMMAND**](https://msdn.microsoft.com/library/windows/hardware/hh439836) | Not supported | A | Not supported | A| GSM, CDMA |
+
+> [!NOTE] 
+> The following notes apply to the preceding table:
+> † represents optional OIDs that miniport drivers may support. Miniport drivers that do not support the optional OIDs must not return them in OID\_GEN\_SUPPORTED\_LIST.
+>
+> †† represents miniport drivers that support GSM-based devices which can optionally support OID\_WWAN\_PROVISIONED\_CONTEXTS set and query operations. Miniport drivers that support CDMA-based devices can optionally support OID\_WWAN\_PROVISIONED\_CONTEXTS query operations for CDMA-based devices that report Simple IP (WWAN\_CTRL\_CAPS\_CDMA\_SIMPLE\_IP).
+>
+> Miniport drivers must support all non-optional OIDs. The MB Service may ignore any miniport driver that does not report all of the mandatory OIDs.
+> 
+> "A" and "S" in the Set and Query operation columns in the preceding table reflect the nature of the transaction for completing the OID request: "A" stands for an asynchronous transaction and "S" for a synchronous transaction.
+>
+> The data structures in the preceding table correspond to set operation OIDs and to return data for synchronous query operation OIDs.
+> 
+> The following OIDs share a common variable length list data structure called [**WWAN\_LIST\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff571208) in their corresponding data structures:
+> -   OID\_WWAN\_READY\_INFO
+> -   OID\_WWAN\_PREFERRED\_PROVIDERS
+> -   OID\_WWAN\_VISIBLE\_PROVIDERS
+> -   OID\_WWAN\_PROVISIONED\_CONTEXTS
+> -   OID\_WWAN\_SMS\_READ 
+
+## WWAN-Specific Indications, Corresponding Data Structures, and OS Revisions
 
 <table>
 <colgroup>
@@ -600,14 +251,11 @@ The following OIDs share a common variable length list data structure called [**
 </tbody>
 </table>
 
- 
+> [!NOTE]
+> The following notes apply to the preceding table:
+> † represents optional indications that miniport drivers may support. Be aware that if a miniport driver supports an optional OID, the miniport driver should also support the corresponding indication. 
 
-**Note**  The following notes apply to the preceding table:
-†represents optional indications that miniport drivers may support. Be aware that if a miniport driver supports an optional OID, the miniport driver should also support the corresponding indication.
-
- 
-
-### WWAN-Specific Indication Support for GSM, CDMA, and Unsolicited Indications
+## WWAN-Specific Indication Support for GSM, CDMA, and Unsolicited Indications
 
 <table>
 <colgroup>
@@ -790,11 +438,9 @@ The following OIDs share a common variable length list data structure called [**
 <td align="left"><p>N</p></td>
 </tr>
 </tbody>
-</table>
+</table> 
 
- 
-
-### Multi-carrier Specific OIDs
+## Multi-carrier Specific OIDs
 
 The following changes apply to NDIS 6.30 miniport drivers that support multi-carrier mode. If the miniport driver does not support multi-carrier mode then please refer to the preceding table.
 
@@ -827,11 +473,9 @@ The following changes apply to NDIS 6.30 miniport drivers that support multi-car
 <td align="left"><p>GSM, CDMA</p></td>
 </tr>
 </tbody>
-</table>
+</table> 
 
- 
-
-### Multi-carrier Specific Indications, Corresponding Data Structures, and OS Revisions
+## Multi-carrier Specific Indications, Corresponding Data Structures, and OS Revisions
 
 <table>
 <colgroup>
@@ -859,11 +503,9 @@ The following changes apply to NDIS 6.30 miniport drivers that support multi-car
 <td align="left"><p>NDIS_WWAN_VISIBLE_PROVIDERS_REVISION_1. The <strong>VisibleListHeader.ElementType</strong> should be set to <strong>WwanStructProvider2</strong> and the list should contain WWAN_PROVIDER2 structure.</p></td>
 </tr>
 </tbody>
-</table>
+</table> 
 
- 
-
-### Multi-carrier Specific Indication Support for GSM, CDMA, and Unsolicited Indications
+## Multi-carrier Specific Indication Support for GSM, CDMA, and Unsolicited Indications
 
 <table>
 <colgroup>
@@ -902,14 +544,3 @@ The following changes apply to NDIS 6.30 miniport drivers that support multi-car
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-

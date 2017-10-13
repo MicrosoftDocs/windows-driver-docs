@@ -1,6 +1,6 @@
 ---
-title: DeviceProperties\_RunDLL Function Prototype
-description: DeviceProperties\_RunDLL Function Prototype
+title: DeviceProperties_RunDLL Function Prototype
+description: DeviceProperties_RunDLL Function Prototype
 ms.assetid: 15c93f6d-56e7-4872-a94b-0c948e2cd76f
 keywords:
 - device properties dialog box WDK device installations
@@ -15,10 +15,10 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# DeviceProperties\_RunDLL Function Prototype
+# DeviceProperties_RunDLL Function Prototype
 
 
-The DeviceProperties\_RunDLL function opens the device properties dialog box for a specified device that is installed on a local or remote computer.
+The DeviceProperties_RunDLL function opens the device properties dialog box for a specified device that is installed on a local or remote computer.
 
 ```
 void DeviceProperties_RunDLL(
@@ -32,7 +32,7 @@ void DeviceProperties_RunDLL(
 ### Parameters
 
 <a href="" id="hwndstub"></a>*hwndStub*  
-A handle to the window in which to display the user interface items that DeviceProperties\_RunDLL creates.
+A handle to the window in which to display the user interface items that DeviceProperties_RunDLL creates.
 
 <a href="" id="happinstance"></a>*hAppInstance*  
 This parameter is not used to invoke a device properties dialog box and should be set to **NULL**.
@@ -57,7 +57,7 @@ None
 
 ### Headers
 
-DeviceProperties\_RunDLL is not declared in a public header and can only be invoked indirectly by programmatically obtaining a pointer to the function or by using rundll32.
+DeviceProperties_RunDLL is not declared in a public header and can only be invoked indirectly by programmatically obtaining a pointer to the function or by using rundll32.
 
 ### <a href="" id="comments"></a>Remarks
 

@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # <span id="display.using_cross-adapter_resources_in_a_hybrid_system"></span>Using cross-adapter resources in a hybrid system
 
 
-Starting in Windows 8.1, a Windows Display Driver Model (WDDM) driver can support a *hybrid system*, where *cross-adapter resources* are shared between an integrated GPU and a discrete GPU, and an application can be run on either GPU, depending on the needs of the application. The operating system and driver together determine which GPU an application should run on.
+Starting in Windows 8.1, a Windows Display Driver Model (WDDM) driver can support a *hybrid system*, where *cross-adapter resources* are shared between an integrated GPU and a discrete GPU, and an application can be run on either GPU, depending on the needs of the application. The operating system and driver together determine which GPU an application should run on.
 
 The display miniport driver should express support for cross-adapter resources by setting the **CrossAdapterResource** member of the [**DXGK\_VIDMMCAPS**](https://msdn.microsoft.com/library/windows/hardware/ff562072) structure.
 
@@ -38,7 +38,7 @@ These subsequent topics give more details on driver implementation for hybrid sy
 ## <span id="definition_of_a_cross_adapter_resource"></span><span id="DEFINITION_OF_A_CROSS_ADAPTER_RESOURCE"></span>Definition and properties of a cross-adapter resource:
 
 
--   A cross-adapter resource is available only starting in Windows 8.1.
+-   A cross-adapter resource is available only starting in Windows 8.1.
 -   It can be paged-in only to the aperture GPU memory segment.
 -   It is allocated as a shared resource.
 -   It has only one allocation, in a linear format.
@@ -48,9 +48,9 @@ These subsequent topics give more details on driver implementation for hybrid sy
 -   It might be created as a standard allocation from kernel mode by the display miniport driver and then be opened later by the user-mode display driver.
 -   It might be created by the user-mode display driver.
 
- 
+ 
 
- 
+ 
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Using%20cross-adapter%20resources%20in%20a%20hybrid%20system%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 

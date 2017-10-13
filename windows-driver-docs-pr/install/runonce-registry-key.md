@@ -38,7 +38,7 @@ The registry root (*reg-root*) and subkey values for the **RunOnce** registry ke
 
 **HKLM, "Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce"**
 
-The *value-entry-name* string is omitted from a **RunOnce** registry entry. The type of the entry, which is indicated by the *Flags* value, must be either REG\_SZ (*Flags* value of 0x00000000) or REG\_EXPAND\_SZ (*Flags* value of 0x00010000). For an entry of type REG\_SZ (the default), the *Flags* value can be omitted.
+The *value-entry-name* string is omitted from a **RunOnce** registry entry. The type of the entry, which is indicated by the *Flags* value, must be either REG_SZ (*Flags* value of 0x00000000) or REG_EXPAND_SZ (*Flags* value of 0x00010000). For an entry of type REG_SZ (the default), the *Flags* value can be omitted.
 
 The *value* parameter in a **RunOnce** key specifies the command to be executed. This parameter is a quoted string that has the following format:
 

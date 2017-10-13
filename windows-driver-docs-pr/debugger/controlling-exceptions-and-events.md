@@ -58,9 +58,9 @@ You can control the break status and handling status by doing one of the followi
 
 -   Use the [**SXE**](sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md), **SXD**, **SXN**, or **SXI** command in the [Debugger Command window](debugger-command-window.md).
 
--   (CDB only) Use the **-x**, **-xe**, **-xd**, **-xn**, or **-xi** option on the CDB [**command line**](cdb-command-line-options.md).
+-   (CDB and NTSD) Use the **-x**, **-xe**, **-xd**, **-xn**, or **-xi** option on the [**command line**](cdb-command-line-options.md).
 
--   (CDB only) Use the **sxe** or **sxd** keyword in the [Tools.ini](configuring-tools-ini.md) file.
+-   (CDB, NTSD, and KD) Use the **sxe** or **sxd** keyword in the [Tools.ini](configuring-tools-ini.md) file.
 
 -   (WinDbg only) Click [Event Filters](debug---event-filters.md) on the **Debug** menu to open the **Event Filters** dialog box, and then choose the options that you want.
 
@@ -429,7 +429,7 @@ You can change the break status of the following events. Because these events ar
 <td align="left"><p><strong>cpr</strong>[<strong>:</strong><em>Process</em>]</p></td>
 <td align="left"><p>Process creation</p>
 <p>Setting the break status of this event applies only to user-mode debugging. This event does not occur in kernel mode.</p>
-<p>You can control this event only if you have activated debugging of child processes in CDB or WinDbg, either through the -o[<strong>command-line option</strong>](cdb-command-line-options.md) or through the [<strong>.childdbg (Debug Child Processes)</strong>](-childdbg--debug-child-processes-.md) command.</p>
+<p>You can control this event only if you have activated debugging of child processes in CDB or WinDbg, either through the -o<strong>[command-line option](cdb-command-line-options.md)</strong> or through the <strong>[.childdbg (Debug Child Processes)](-childdbg--debug-child-processes-.md)</strong> command.</p>
 <p>The process name can include an optional file name extension and an asterisk (*) or question mark (?) as wildcard characters. The debugger remembers only the most recent <strong>cpr</strong> setting. Separate settings for separate processes are not supported. Include a colon or a space between <strong>cpr</strong> and <em>Process</em>.</p>
 <p>If <em>Process</em> is omitted, the setting applies to any child process creation.</p></td>
 <td align="left"><p>Ignore</p></td>
@@ -438,7 +438,7 @@ You can change the break status of the following events. Because these events ar
 <td align="left"><p><strong>epr</strong>[<strong>:</strong><em>Process</em>]</p></td>
 <td align="left"><p>Process exit</p>
 <p>Setting the break status of this event applies only to user-mode debugging. This event does not occur in kernel mode.</p>
-<p>You can control this event only if you have activated debugging of child processes in CDB or WinDbg, either through the -o[<strong>command-line option</strong>](cdb-command-line-options.md) or through the [<strong>.childdbg (Debug Child Processes)</strong>](-childdbg--debug-child-processes-.md) command.</p>
+<p>You can control this event only if you have activated debugging of child processes in CDB or WinDbg, either through the -o<strong>[command-line option](cdb-command-line-options.md)</strong> or through the <strong>[.childdbg (Debug Child Processes)](-childdbg--debug-child-processes-.md)</strong> command.</p>
 <p>The process name can include an optional file name extension and an asterisk (*) or question mark (?) as wildcard characters. The debugger remembers only the most recent <strong>epr</strong> setting. Separate settings for separate processes are not supported. Include a colon or a space between <strong>epr</strong> and <em>Process</em>.</p>
 <p>If <em>Process</em> is omitted, the setting applies to any child process exit.</p></td>
 <td align="left"><p>Ignore</p></td>

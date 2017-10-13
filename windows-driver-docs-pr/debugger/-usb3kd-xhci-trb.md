@@ -1,6 +1,6 @@
 ---
-title: usb3kd.xhci\_trb
-description: The usb3kd.xhci\_trb extension displays one or more transfer request blocks (TRBs) used by a USB 3.0 host controller
+title: usb3kd.xhci_trb
+description: The usb3kd.xhci_trb extension displays one or more transfer request blocks (TRBs) used by a USB 3.0 host controller
 ms.assetid: 6EC90908-320E-4908-BE53-1AD01A81B140
 keywords: ["usb3kd.xhci_trb Windows Debugging"]
 ms.author: windowsdriverdev

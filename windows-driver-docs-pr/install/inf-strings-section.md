@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 An INF file must have at least one **Strings** section to define every %*strkey*% token specified elsewhere in that INF.
 
-``` syntax
+```
 [Strings] | 
 [Strings.LanguageID] ...
  
@@ -82,17 +82,17 @@ Because the system INF parser strips the outermost pair of enclosing double quot
 To create a single international INF file, an INF can have a set of locale-specific **Strings.***LanguageID* sections, as shown in the formal syntax statement. The *LanguageID* extension is a hexadecimal value that is defined as follows:
 
 -   The lower 10 bits contain the primary language ID and the next 6 bits contain the sublanguage ID, as specified by the MAKELANGID macro defined in *Winnt.h*.
--   The language and sublanguage IDs must match the system-defined values of the Win32 LANG\_*XXX* and SUBLANG\_*XXX* constants defined in *Winnt.h.*
+-   The language and sublanguage IDs must match the system-defined values of the Win32 LANG_*XXX* and SUBLANG_*XXX* constants defined in *Winnt.h.*
 
-For example, a *LanguageID* value of 0x0407 represents a primary language ID of LANG\_GERMAN (07) with a sublanguage ID of SUBLANG\_GERMAN (01).
+For example, a *LanguageID* value of 0x0407 represents a primary language ID of LANG_GERMAN (07) with a sublanguage ID of SUBLANG_GERMAN (01).
 
 An INF file can contain only one **Strings** section, along with one **Strings.***LanguageID* section for each *LanguageID* value.
 
 Windows selects a single **Strings** section that is used to translate all %*strkey*% tokens for the installation. Depending on the current locale of a particular computer, Windows selects a **Strings** section in the following way:
 
 1.  Windows first looks for the *.LanguageID* values in the INF that match the current locale assigned to the computer. If an exact match is found, Windows uses that **Strings.LanguageID** INF section to translate all %*strkey*% tokens that are defined within the INF.
-2.  Otherwise, Windows looks next for a match to the LANG\_*XXX* value with the value of SUBLANG\_NEUTRAL as the SUBLANG\_*XXX*. If such a match is found, Windows uses that INF section to translate all %*strkey*% tokens that are defined within the INF.
-3.  Otherwise, Windows looks next for a match to the LANG\_*XXX* value and any valid SUBLANG\_*XXX* for the same LANG\_*XXX* family. If such a partial match is found, use that Strings.LanguageID INF section to translate all %*strkey*% tokens that are defined within the INF.
+2.  Otherwise, Windows looks next for a match to the LANG_*XXX* value with the value of SUBLANG_NEUTRAL as the SUBLANG_*XXX*. If such a match is found, Windows uses that INF section to translate all %*strkey*% tokens that are defined within the INF.
+3.  Otherwise, Windows looks next for a match to the LANG_*XXX* value and any valid SUBLANG_*XXX* for the same LANG_*XXX* family. If such a partial match is found, use that Strings.LanguageID INF section to translate all %*strkey*% tokens that are defined within the INF.
 4.  Otherwise, Windows uses the undecorated Strings section to all translate %*strkey*% tokens that are defined within the INF.
 
 By convention, and for convenience in creating a set of INF files for the international market, **Strings** sections are the last within all system INF files. Using %*strkey*% tokens for all user-visible string values within an INF, and placing them in per-locale **Strings** sections, simplifies the translation of such strings. For more information about locale-specific INF files, see [Creating International INF Files](creating-international-inf-files.md).

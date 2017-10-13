@@ -41,7 +41,7 @@ You can run Driver Verifier on multiple drivers simultaneously, or on one driver
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>You don't need to. Driver Verifier (Verifier.exe) is included in every version of Windows, starting with Windows 2000 (in the %windir%\system32 directory). There isn't a separate Driver Verifier download package.</p>
+<td align="left"><p>You don't need to download Driver Verifier (Verifier.exe) as it is included in every version of Windows after Windows 2000, except for Windows 10 S. There isn't a separate Driver Verifier download package, it is located in the %windir%\system32 directory. </p>
 <ul>
 <li>Open a <strong>Command Prompt</strong> window (<strong>Run as administrator</strong>).</li>
 <li>Type <strong>verifier</strong> to open the Driver Verifier Manager, or type <strong>verifier /?</strong> to view command line options. See [<strong>Driver Verifier Command Syntax</strong>](verifier-command-line.md) for more information.</li>
@@ -53,6 +53,7 @@ You can run Driver Verifier on multiple drivers simultaneously, or on one driver
 <li>Running Driver Verifier could cause the computer to crash.</li>
 <li>You should only run Driver Verifier on computers you are using for testing and debugging.</li>
 <li>You must be in the Administrators group on the computer to use Driver Verifier.</li>
+<li>Driver verifier is not included in Windows 10 S. We recommend testing driver behavior in Windows 10 instead.</li>
 </ul>
 </div>
 <div>
@@ -134,7 +135,7 @@ You should only run Driver Verifier on test computers, or computers you are test
 
  
 
-``` syntax
+```
 verifier  /standard /driver myDriver.sys
 ```
 
@@ -153,7 +154,7 @@ See [**Driver Verifier Command Syntax**](verifier-command-line.md) for more info
 
 Or type the following command in a Command Prompt window and reboot the computer.
 
-``` syntax
+```
 verifier  /reset
 ```
 
@@ -164,7 +165,7 @@ verifier  /reset
 
 Or type the following command in a Command Prompt window.
 
-``` syntax
+```
 verifier  /querysettings
 ```
 
@@ -175,7 +176,7 @@ verifier  /querysettings
 
 Or type the following command in a Command Prompt window.
 
-``` syntax
+```
 verifier  /query
 ```
 
@@ -201,7 +202,7 @@ For more information see [Handling a Bug Check When Driver Verifier is Enabled](
 
 When you start a new debug session, use the debugger extension command [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112). In kernel mode, the **!analyze** command displays information about the most recent bug check. The **!analyze -v** command displays additional information and attempts to pinpoint the faulting driver.
 
-``` syntax
+```
 kd> !analyze -v
 ```
 
@@ -209,25 +210,25 @@ In addition [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/f
 
 -   [**!verifier**](https://msdn.microsoft.com/library/windows/hardware/ff565591) dumps captured Driver Verifier statistics. Use **!verifier -?** to display all of the available options.
 
-    ``` syntax
+    ```
     kd> !verifier
     ```
 
 -   [**!deadlock**](https://msdn.microsoft.com/library/windows/hardware/ff562326) displays information related to locks or objects tracked by Driver Verifier's deadlock detection feature. Use **!deadlock -?** to display all of the available options.
 
-    ``` syntax
+    ```
     kd> !deadlock
     ```
 
 -   [**!iovirp**](https://msdn.microsoft.com/library/windows/hardware/ff563252) \[*address*\] displays information related to an IRP tracked by I/O Verifier. For example:
 
-    ``` syntax
+    ```
     kd> !iovirp 947cef68
     ```
 
 -   [**!ruleinfo**](https://msdn.microsoft.com/library/windows/hardware/dn265374) \[*RuleID*\] displays information related to the [DDI compliance checking](ddi-compliance-checking.md) rule that was violated (*RuleID* is always the first argument to the bug check. All DDI Compliance Checking *RuleID* are in the form 0x200nn). For example:
 
-    ``` syntax
+    ```
     kd> !ruleinfo 0x20005
     ```
 
