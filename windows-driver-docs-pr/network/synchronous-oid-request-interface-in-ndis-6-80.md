@@ -189,9 +189,7 @@ In contrast, a filter driver that needs to issue a Regular or Direct OID must se
 
 Although the Regular, Direct, and Synchronous calling styles all use the same data structures, the pipelines do not go to the same handler in the miniport. Furthermore, some OIDs cannot be used in some of the pipelines. For example, [OID_PNP_SET_POWER](oid-pnp-set-power.md) requires careful synchronization and often forces the miniport to make blocking calls. This makes handling it difficult in a Direct OID callback and prevents its use in a Synchronous OID callback. 
 
-Therefore, just as with Direct OID requests, Synchronous OID calls can only be used with a subset of OIDs. In Windows 10, version 1709, the following RSSv2 OIDs are supported:
-
-- TBD fill in after doing Ntddndis.h documentation to have a list of the RSSv2 OIDs
+Therefore, just as with Direct OID requests, Synchronous OID calls can only be used with a subset of OIDs. In Windows 10, version 1709, only the [OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES](oid-gen-rss-set-indirection-table-entries.md) OID used in [Receive Side Scaling Version 2 (RSSv2)](receive-side-scaling-version-2-rssv2-.md) is supported in the Synchronous OID path.
 
 ## Implementing Synchronous OID requests
 
