@@ -19,6 +19,9 @@ As a query, NDIS and overlying drivers can use the OID\_GEN\_RECEIVE\_SCALE\_PAR
 
 As a set, NDIS and overlying drivers use the OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS OID to set the current RSS parameters of a NIC. The miniport driver receives an NDIS\_RECEIVE\_SCALE\_PARAMETERS structure that defines the RSS parameters.
 
+> [!NOTE]
+> In RSSv2, this OID is only used to query current RSS parameters of a given scaling entity. For miniport drivers that support RSSv2, see [OID_GEN_RECEIVE_SCALE_PARAMETERS_V2](oid-gen-receive-scale-parameters-v2.md) for setting RSS parameters other than the indirection table.
+
 Remarks
 -------
 

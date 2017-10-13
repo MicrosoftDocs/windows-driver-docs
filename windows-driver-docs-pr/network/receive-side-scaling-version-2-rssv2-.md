@@ -24,6 +24,19 @@ Compared to RSSv1, RSSv2 shortens the time between the measurement of CPU load a
 
 Two new OIDs, [OID_GEN_RECEIVE_SCALE_PARAMETERS_V2](oid-gen-receive-scale-parameters-v2.md) and [OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES](oid-gen-rss-set-indirection-table-entries.md), have been introduced in RSSv2 for miniport drivers to set proper RSS capabilities and control the indirection table respectively. OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 is a Regular OID, while OID_GEN_RSS_SET_INDIRECTION_ENTRIES is a Synchronous OID that cannot return NDIS_STATUS_PENDING. For more info about these OIDs, see their individual reference pages. For more info about Synchronous OIDs, see [Synchronous OID request interface in NDIS 6.80](synchronous-oid-request-interface-in-ndis-6-80.md).
 
+## RSSv2 terminology
+
+- RSSv2: The receive side scaling mechanism supported in Windows 10, version 1709 and later, described in this topic.
+- Scaling entity: The miniport adapter itself in Native RSS mode, or a VPort in RSSv2 mode.
+- ITE: An indirection table entry of a given scaling entity. The total number of ITEs per VPort cannot exceed **NumberOfIndirectionTableEntriesPerNonDefaultPFVPort** or **NumberOfIndirectionTableEntriesForDefaultVPort** in VMQ mode or 128 in the Native RSS case. **NumberOfIndirectionTableEntriesPerNonDefaultPFVPort** and **NumberOfIndirectionTableEntriesForDefaultVPort** are members of the [NDIS_NIC_SWITCH_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff566583) structure.
+- Scaling mode: The per-VPort vmswitch policy which controls how its ITEs are handled at runtime. This can be static (no ITE moves due to load changes) or dyanmic (expansion and coalescing depending on current traffic load).
+- Queue: An underlying hardware object (queue) that backs the ITE. Depending on the hardware and indirection table, the configuration queue may back multiple ITEs. The total number of queues, including one that is used by the default queue, cannot exceed the preconfigured limit typically set by an administrator.
+- Default queue: A queue which receives packets for which the hash cannot be calculated. Each VPort has a default queue.
+- Primary processor: A processor specified as the **ProcessorAffinity** member of the [NDIS_NIC_SWITCH_VPORT_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451597) structure during VPort creation.
+- Source CPU: The processor to which the ITE is currently mapped.
+- Target CPU: The processor to which the ITE is being re-mapped (using RSSv2).
+- Actor CPU: The processor on which RSSv2 requests are being made.
+
 ## Advertising RSSv2 capability in a miniport driver
 
 Miniport drivers advertise RSSv2 support by setting the **CapabilitiesFlags** member of the [NDIS_RECEIVE_SCALE_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff567220) structure with the new *NDIS_RSS_CAPS_SUPPORTS_INDEPENDENT_ENTRY_MOVE* flag. This capability is required to enable RSSv2's Dynamic VMQ feature, along with the *NDIS_RECEIVE_FILTER_DYNAMIC_PROCESSOR_AFFINITY_CHANGE_SUPPORTED* flag that enables the older RSSv1 Dynamic VMQ feature for non-default VPorts (VMQs).
