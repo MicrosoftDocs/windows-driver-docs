@@ -44,7 +44,7 @@ This topic describes,
 
 **Important APIs**
 
--   [PWM IOCTLs](https://msdn.microsoft.com/library/windows/hardware/mt188011)
+-   [PWM IOCTLs](https://msdn.microsoft.com/en-us/library/windows/desktop/mt826481)
 
 ## About PWM
 PWM describes the basic technique for generating a rectangular pulse wave with modulated pulse width resulting in the variation of the average value of the waveform.  
