@@ -42,7 +42,7 @@ Applies to:
 
 **Important APIs**
 
-[USB Type-C Port Controller Interface driver class extensions reference]
+[USB Type-C Port Controller Interface driver class extensions reference](https://msdn.microsoft.com/en-us/library/windows/hardware/mt805826)
 
 **UcmTcpciCx client driver template**
 
