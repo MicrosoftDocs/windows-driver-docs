@@ -70,32 +70,44 @@ The USB Type-C connector, introduced by the USB-IF, defined in the USB 3.1 speci
 <td><ul>
 <p>Use this flow chart to determine a solution for your USB Type-C system. </p>
 
-<li><p>For a system that implements a PD state machine, implement a client driver to the UcmCx class extension.</p>
-
-<p>[Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md)</P>
-
-<p>[UCmCx client driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188011)</p></li>
-
 <li><p>For a system that does not implement a PD state machine, implement a client driver to the UcmTcpciCx class extension. </p>
 
-<p>[Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md)</p>
+[UCmCx client driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188011)
 
-<p>[USB Type-C Port Controller Interface driver class extension reference](https://msdn.microsoft.com/en-us/library/windows/hardware/mt805826)</p></li>
+[Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md)
 
-<li>For a system that has PD state machine and supports USB Type-C Connector System Software Interface (UCSI) over ACPI, load the Microsoft provided in-box driver, UcmUcsi.sys. See [UCSI driver](ucsi.md). 
+</li>
 
-If the system supports UCSI over another transport such as PCI, implement a UCSI-compliant client driver to the UcmCx class extension. Modify [this sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi) and replace ACPI portions with your implementation for another transport.</li>
+<li>For systems that implement the PD state machines in hardware or firmware and support USB Type-C Connector System Software Interface (UCSI) over ACPI, load the Microsoft provided in-box driver, UcmUcsi.sys. 
+
+See [UCSI driver](ucsi.md).</li>
+
+<li><p>For systems that implement the PD state machines in hardware or firmware, but either do not support UCSI, or support UCSI but require a transport other than ACPI, write a client driver for the UcmCx class extension.</p>
+
+<p>For systems that implement UCSI but require a transport other than ACPI, Microsoft provides a skeleton UcmCx client driver based on the inbox UCSI driver that can be modified to support a different transport. 
+
+See [this sample template](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi). </p>
+</li>
+
+[Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md)
+
+[UcmCx client driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188011)</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><img src="images/bringup-c3.png" alt="Bringup" /></td>
 <td><ol>
-<li>If you are building is a mobile device (such as a phone) modify system ACPI to indicate to the Microsoft in-box function controller driver that the connector is a USB Type-C connector.</li>
-<li>If you are building a dual-role mobile device, modify system ACPI to enable the Microsoft in-box USB role-switch driver.</li>
-<li>Bringing up the connector driver depends on the driver that you choose for the connector, Microsoft in-box driver - UCSI (UcmUcsi.sys), a client driver to UcmCx or UcmTcpciCx. For more information, see the links in the precedeing section. 
+
+<li>USB Function driver bring-up is only required if you support USB Function mode. If you previously implemented a USB Function driver for a USB micro-B connector, describe the appropriate connectors as USB Type-C in the ACPI tables for the USB Function driver to continue working. 
+
+For more information, see [instructions about writing a USB Function driver.](developing-windows-drivers-for-usb-function-controllers.md).
+</li>
+<li>USB Role-Switch driver bring-up is only required for devices that have a Dual Role controller that assumes both Host and Function roles. To bring-up the USB Role-Switch driver, you need to modify the ACPI tables to enable the Microsoft in-box USB role-switch driver. 
+
+For more information, see the [guidance for bringing up the USB Role Switch Driver](dual-role-controller-bringup-for-a-usb-type-c-system.md).</li>
+
+<li><p>A USB Connector Manager Driver is required for Windows to manage the USB Type-C ports on a system. The bring-up tasks for a USB Connector Manager driver depend on the driver that you choose for the USB Type-C ports: The Microsoft in-box UCSI (UcmUcsi.sys) driver, a UcmCx client driver, or a UcmTcpciCx client driver. For more information, see the links in the preceding section that describe how to choose the right solution for your USB Type-C system.</p></li>
 <ul>
-<li>If you are using UCSI, follow the instructions given in [Intel BIOS Implementation of UCSI](http://go.microsoft.com/fwlink/p/?LinkId=760658) to load the driver.</li>
-<li>If you are using a custom driver, load the driver by using the connector driver installation package.</li>
 </ul></li>
 </ol></td>
 </tr>
@@ -103,7 +115,8 @@ If the system supports UCSI over another transport such as PCI, implement a UCSI
 <td><img src="images/test-c1.png" alt="Test" /></td>
 <td><ul>
 <li><p>Perform various functional and stress tests on systems and devices that expose a USB Type-C connector.</p>
-<p>[Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md)</p></li>
+
+[Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md)</li>
 <li>Run USB tests included in the Windows Hardware Lab Kit (HLK) for Windows 10.
 <div class="alert">
 <strong>Note</strong>  Run USB function HLK tests with a C-to-A cable (searc for <strong>&quot;Windows USB Device&quot;</strong> in the HLK search box.
@@ -112,7 +125,7 @@ If the system supports UCSI over another transport such as PCI, implement a UCSI
  
 </div></li>
 <li><p>Certification/Compliance</p>
-<p>Attend Power Delivery and USB-C compliance workshops hosted by the standards bodies,</p></li>
+<p>Attend Power Delivery and USB Type-C compliance workshops hosted by the standards bodies.</p></li>
 </ul></td>
 </tr>
 </tbody>
