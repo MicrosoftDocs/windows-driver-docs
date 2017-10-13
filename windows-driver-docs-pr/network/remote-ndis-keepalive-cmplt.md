@@ -1,5 +1,5 @@
 ---
-title: 'REMOTE\_NDIS\_KEEPALIVE\_CMPLT'
+title: 'REMOTE_NDIS_KEEPALIVE_CMPLT'
 author: windows-driver-content
 Description: 'A Remote NDIS device will respond to a REMOTE\_NDIS\_KEEPALIVE\_MSG message from the host by sending back a REMOTE\_NDIS\_KEEPALIVE\_CMPLT response message.'
 ms.assetid: c090b781-73f1-4a7a-a0a2-60af366daa77

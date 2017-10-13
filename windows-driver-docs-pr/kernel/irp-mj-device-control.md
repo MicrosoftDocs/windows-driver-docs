@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_DEVICE\_CONTROL
+title: IRP_MJ_DEVICE_CONTROL
 author: windows-driver-content
 description: Every driver whose device objects belong to a particular device type (see Specifying Device Types) is required to support this request in a DispatchDeviceControl routine, if a set of system-defined I/O control codes (IOCTLs) exists for the type.
 ms.author: windowsdriverdev

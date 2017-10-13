@@ -104,7 +104,7 @@ In user mode, **/m** can be followed with additional *MiniOptions* specifying ex
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>t</strong></p></td>
-<td align="left"><p>Adds additional thread information to the minidump. This includes thread times, which can be displayed by using the [<strong>!runaway</strong>](-runaway.md) extension or the [<strong>.ttime (Display Thread Times)</strong>](-ttime--display-thread-times-.md) command when debugging the minidump.</p></td>
+<td align="left"><p>Adds additional thread information to the minidump. This includes thread times, which can be displayed by using the <strong>[!runaway](-runaway.md)</strong> extension or the <strong>[.ttime (Display Thread Times)](-ttime--display-thread-times-.md)</strong> command when debugging the minidump.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>i</strong></p></td>

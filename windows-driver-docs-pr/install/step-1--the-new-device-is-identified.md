@@ -27,11 +27,11 @@ For example, when a user plugs a wireless local area network (WLAN) adapter into
 
 1.  The device is detected by the USB hub driver. Based on information that it queries from the adapter, the hub driver creates a hardware ID for the device.
 
-    For example, the USB hub driver could create a hardware ID of USB\\VID\_1234&PID\_5678&REV\_0001 for the WLAN adapter, where:
+    For example, the USB hub driver could create a hardware ID of USB\\VID_1234&PID_5678&REV_0001 for the WLAN adapter, where:
 
-    -   VID\_1234 is the identifier of the vendor.
-    -   PID\_5678 is the product, or model, identifier of the device.
-    -   REV\_0001 is the revision identifier of the device.
+    -   VID_1234 is the identifier of the vendor.
+    -   PID_5678 is the product, or model, identifier of the device.
+    -   REV_0001 is the revision identifier of the device.
 
     For more information about the format of USB hardware IDs, see [Identifiers for USB Devices](identifiers-for-usb-devices.md).
 

@@ -109,21 +109,21 @@ Parameter 1 identifies the type of violation.
 <td align="left"><p>Delay, in microseconds</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The Storport miniport driver called [<strong>StorPortStallExecution</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567508) and specified a delay longer than 0.1 second, stalling the processor for an excessive length of time.</p></td>
+<td align="left"><p>The Storport miniport driver called <strong>[StorPortStallExecution](https://msdn.microsoft.com/library/windows/hardware/ff567508)</strong> and specified a delay longer than 0.1 second, stalling the processor for an excessive length of time.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x2002</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>[<strong>StorPortGetUncachedExtension</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567103) was not called from the miniport driver's [<strong>HwStorFindAdapter</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557390) routine. The <strong>StorPortGetUncachedExtension</strong> routine can only be called from the miniport driver's <strong>HwStorFindAdapter</strong> routine and only for a bus-master adapter. A Storport miniport driver must set the <strong>SrbExtensionSize</strong> of the [<strong>HW_INITIALIZATION_DATA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557459) (Storport) structure before calling <strong>StorPortGetUncachedExtension</strong>.</p></td>
+<td align="left"><p><strong>[StorPortGetUncachedExtension](https://msdn.microsoft.com/library/windows/hardware/ff567103)</strong> was not called from the miniport driver's <strong>[HwStorFindAdapter](https://msdn.microsoft.com/library/windows/hardware/ff557390)</strong> routine. The <strong>StorPortGetUncachedExtension</strong> routine can only be called from the miniport driver's <strong>HwStorFindAdapter</strong> routine and only for a bus-master adapter. A Storport miniport driver must set the <strong>SrbExtensionSize</strong> of the <strong>[HW_INITIALIZATION_DATA](https://msdn.microsoft.com/library/windows/hardware/ff557459)</strong> (Storport) structure before calling <strong>StorPortGetUncachedExtension</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x2003</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>An invalid address was passed to the [<strong>StorPortGetDeviceBase</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567080) routine. The <strong>StorPortGetDeviceBase</strong> routine supports only those addresses that were assigned to the driver by the system Plug and Play (PnP) manager.</p></td>
+<td align="left"><p>An invalid address was passed to the <strong>[StorPortGetDeviceBase](https://msdn.microsoft.com/library/windows/hardware/ff567080)</strong> routine. The <strong>StorPortGetDeviceBase</strong> routine supports only those addresses that were assigned to the driver by the system Plug and Play (PnP) manager.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x2004</p></td>
@@ -137,7 +137,7 @@ Parameter 1 identifies the type of violation.
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The Storport miniport driver passed an invalid virtual address to one of the <strong>StorPortRead</strong><em>xxx</em> or <strong>StorPortWrite</strong><em>xxx</em> routines. This usually means the address supplied doesn't map to the common buffer area. The specified <em>Register</em> or <em>Port</em> must be in mapped memory-space range returned by [<strong>StorPortGetDeviceBase</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567080) routine.</p></td>
+<td align="left"><p>The Storport miniport driver passed an invalid virtual address to one of the <strong>StorPortRead</strong><em>xxx</em> or <strong>StorPortWrite</strong><em>xxx</em> routines. This usually means the address supplied doesn't map to the common buffer area. The specified <em>Register</em> or <em>Port</em> must be in mapped memory-space range returned by <strong>[StorPortGetDeviceBase](https://msdn.microsoft.com/library/windows/hardware/ff567080)</strong> routine.</p></td>
 </tr>
 </tbody>
 </table>

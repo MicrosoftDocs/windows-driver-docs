@@ -1,5 +1,5 @@
 ---
-title: NDIS\_STATUS\_DOT11\_STOP\_AP
+title: NDIS_STATUS_DOT11_STOP_AP
 author: windows-driver-content
 description: NDIS\_STATUS\_DOT11\_STOP\_AP
 ms.assetid: b35e6280-72cd-470b-a3c3-31136f8961cf

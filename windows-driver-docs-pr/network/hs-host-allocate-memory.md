@@ -1,5 +1,5 @@
 ---
-title: HS\_HOST\_ALLOCATE\_MEMORY function
+title: HS_HOST_ALLOCATE_MEMORY function
 author: windows-driver-content
 description: The HS\_HOST\_ALLOCATE\_MEMORY function returns an amount of memory specified by the caller.
 ms.assetid: afa59680-d85b-4be5-8642-152ff653a0b0

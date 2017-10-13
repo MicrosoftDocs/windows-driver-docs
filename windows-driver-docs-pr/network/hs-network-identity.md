@@ -1,5 +1,5 @@
 ---
-title: HS\_NETWORK\_IDENTITY structure
+title: HS_NETWORK_IDENTITY structure
 author: windows-driver-content
 description: The HS\_NETWORK\_IDENTITY structure contains information that uniquely identifies a Wi-Fi network.
 ms.assetid: 40d9720b-c122-4d19-8907-cfa2a05014e7

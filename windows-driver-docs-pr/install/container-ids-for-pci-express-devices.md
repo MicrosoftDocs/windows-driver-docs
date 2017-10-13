@@ -57,7 +57,7 @@ The PCI bus driver marks a PCIe device as removable if both of the following con
 
 The mechanism that is used to set these register bits varies by PCIe chipset version and manufacturer. For example, some chipsets let the firmware program these bits, whereas other chipsets require physical pins to be strapped to the voltage charge connection (Vcc) or ground (GND).
 
-Be aware that if the device implements an \_EJ0 method in the ACPI namespace, the ACPI driver marks the device as removable. This occurs regardless of the setting of the Slot Implemented or Hot-Plug Capable bits. For more information, see the [Hot-Plug PCI and Windows](http://go.microsoft.com/fwlink/p/?linkid=26278) white paper.
+Be aware that if the device implements an _EJ0 method in the ACPI namespace, the ACPI driver marks the device as removable. This occurs regardless of the setting of the Slot Implemented or Hot-Plug Capable bits. For more information, see the [Hot-Plug PCI and Windows](http://go.microsoft.com/fwlink/p/?linkid=26278) white paper.
 
 For more information about the PCIe interface, see the [PCIe Base](http://go.microsoft.com/fwlink/p/?linkid=69486) specification.
 

@@ -44,10 +44,10 @@ For a device, this value is usually a generic name for its driver, such as "serm
 <a href="" id="flags"></a>*flags*  
 This optional value is specifies one or more of the following flags, defined in *Setupapi.h*, that are specified as a hexadecimal value:
 
-<a href="" id="0x00000004--spsvcinst-deleteeventlogentry-"></a>**0x00000004** (SPSVCINST\_DELETEEVENTLOGENTRY)  
+<a href="" id="0x00000004--spsvcinst-deleteeventlogentry-"></a>**0x00000004** (SPSVCINST_DELETEEVENTLOGENTRY)  
 An event-log entry (or entries) associated with the given ServiceName should also be removed from the system.
 
-<a href="" id="0x00000200---spsvcinst-stopservice--"></a>**0x00000200** (SPSVCINST\_STOPSERVICE)   
+<a href="" id="0x00000200---spsvcinst-stopservice--"></a>**0x00000200** (SPSVCINST_STOPSERVICE)   
 Stop the service before deleting it.
 
 <a href="" id="eventlogtype"></a>*EventLogType*  

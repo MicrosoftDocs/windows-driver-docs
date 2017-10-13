@@ -1,5 +1,5 @@
 ---
-title: OID\_SWITCH\_PORT\_ARRAY
+title: OID_SWITCH_PORT_ARRAY
 author: windows-driver-content
 description: A Hyper-V extensible switch extension issues an object identifier (OID) query request of OID\_SWITCH\_PORT\_ARRAY to obtain an array. Each element in the array specifies the configuration parameters for an extensible switch port.
 ms.assetid: 9ED5E7A5-A23E-48E7-B8A2-9089C81851A1

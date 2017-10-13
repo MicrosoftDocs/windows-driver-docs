@@ -1,5 +1,5 @@
 ---
-title: NDIS\_STATUS\_DOT11\_ROAMING\_COMPLETION
+title: NDIS_STATUS_DOT11_ROAMING_COMPLETION
 author: windows-driver-content
 description: NDIS\_STATUS\_DOT11\_ROAMING\_COMPLETION
 ms.assetid: 7effcce4-e557-4255-92d4-8a1c0b3bda61

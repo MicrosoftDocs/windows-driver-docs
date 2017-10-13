@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_OPTIONAL\_CAPABILITY
+title: OID_DOT11_OPTIONAL_CAPABILITY
 author: windows-driver-content
 description: When queried, the OID\_DOT11\_OPTIONAL\_CAPABILITY object identifier (OID) requests that the miniport driver return the optional capabilities that the 802.11 station supports.
 ms.assetid: ad6573ed-8c27-4075-975f-1b7673c564d8

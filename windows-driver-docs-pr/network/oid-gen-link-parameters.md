@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_LINK\_PARAMETERS
+title: OID_GEN_LINK_PARAMETERS
 author: windows-driver-content
 description: As a set, NDIS and overlying drivers use the OID\_GEN\_LINK\_PARAMETERS OID to set the current link state of a miniport adapter. The miniport driver receives the duplex state, link speeds, and pause functions in an NDIS\_LINK\_PARAMETERS structure.
 ms.assetid: 6a8ee5b1-ac68-424f-b749-45b085ca1d75

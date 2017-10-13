@@ -36,10 +36,10 @@ You can automate the process for building a private version of an inbox driver t
     The following [Stampinf](https://msdn.microsoft.com/library/windows/hardware/ff552786) command-line parameters are used in this example:
 
     -   The -d \* parameter uses the current date as part of the DriverVer directive in the INF file.
-    -   The **-v \*** parameter uses the current time for the version number. If the STAMPINF\_VERSION environment variable is set, Stampinf uses the version number value that is specified by this environment variable.
+    -   The **-v \*** parameter uses the current time for the version number. If the STAMPINF_VERSION environment variable is set, Stampinf uses the version number value that is specified by this environment variable.
     -   The -**c** parameter specifies the name of the [catalog file](catalog-files.md) for the [driver package](driver-packages.md). This value is written to the **CatalogFile** directive of the [**INF Version section**](inf-version-section.md) of the generated IF file.
 
-    **Note**  If you set the environment variable PRIVATE\_DRIVER\_PACKAGE, Stampinf uses the current date and version for the INF **DriverVer** directive. By setting this environment variable, you do not have to use the **-d** or **-v** parameters in your *Makefile*.
+    **Note**  If you set the environment variable PRIVATE_DRIVER_PACKAGE, Stampinf uses the current date and version for the INF **DriverVer** directive. By setting this environment variable, you do not have to use the **-d** or **-v** parameters in your *Makefile*.
 
      
 

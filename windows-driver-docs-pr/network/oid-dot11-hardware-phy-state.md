@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_HARDWARE\_PHY\_STATE
+title: OID_DOT11_HARDWARE_PHY_STATE
 author: windows-driver-content
 description: OID\_DOT11\_HARDWARE\_PHY\_STATE
 ms.assetid: 74ddc4d9-166c-4e80-996e-b63cab7938aa

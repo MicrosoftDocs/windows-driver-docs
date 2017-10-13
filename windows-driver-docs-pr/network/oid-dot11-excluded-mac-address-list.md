@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_EXCLUDED\_MAC\_ADDRESS\_LIST
+title: OID_DOT11_EXCLUDED_MAC_ADDRESS_LIST
 author: windows-driver-content
 description: When set, the OID\_DOT11\_EXCLUDED\_MAC\_ADDRESS\_LIST object identifier (OID) requests that the miniport driver set the value of the Extensible Station (ExtSTA) msDot11ExcludedMacAddressList management information base (MIB) object to the specified data.
 ms.assetid: ef2e3313-576b-4072-aba4-a940e50b0a5c

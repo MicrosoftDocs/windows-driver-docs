@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_CIPHER\_KEY\_MAPPING\_KEY
+title: OID_DOT11_CIPHER_KEY_MAPPING_KEY
 author: windows-driver-content
 description: OID\_DOT11\_CIPHER\_KEY\_MAPPING\_KEY
 ms.assetid: 45ee67a9-28f8-43e6-a6c0-8cf233498204

@@ -38,7 +38,7 @@ Two things should be noted about this [**INF Version section**](inf-version-sect
 
 1.  The [**INF Version section**](inf-version-section.md) declares three different catalog files, one for each Windows version which the driver package supports. When [**Inf2Cat**](https://msdn.microsoft.com/library/windows/hardware/ff547089) is executed, it creates a catalog file for each Windows version that is specified through the **/os** option.
 
-    For example, Inf2Cat creates the catalog file *toastamd64.cat* if the command-line argument /os:Vista\_X64 is used. Similarly, the tool creates the catalog file *toastx86.cat* if the **/os:***Vista\_X86* option is used.
+    For example, Inf2Cat creates the catalog file *toastamd64.cat* if the command-line argument /os:Vista_X64 is used. Similarly, the tool creates the catalog file *toastx86.cat* if the **/os:***Vista_X86* option is used.
 
 2.  The [**DriverVer directive**](inf-driverver-directive.md) of the INF Version section declares an old time stamp and version.
 
@@ -62,9 +62,9 @@ Where:
 
     In this example, only the *toastpkg*.inf INF file is located within the specified *src\\general\\toaster\\toastpkg\\toastcd* directory.
 
--   The **/os:***Vista\_x64* option specifies the catalog file is for the 64-bit version of Windows Vista. The Inf2Cat tool will match the name of the catalog file to the requested Windows version. Since the *toastpkg*.inf INF file contains a CatalogFile directive which has the NTAMD64 platform extension, Inf2Cat will create a catalog file that is named *tstamd64.cat.*
+-   The **/os:***Vista_x64* option specifies the catalog file is for the 64-bit version of Windows Vista. The Inf2Cat tool will match the name of the catalog file to the requested Windows version. Since the *toastpkg*.inf INF file contains a CatalogFile directive which has the NTAMD64 platform extension, Inf2Cat will create a catalog file that is named *tstamd64.cat.*
 
-    One or more Windows versions may be specified in the **/os:** option. For example, if **/os:***Vista\_x64, Vistax32* is specified, Inf2Cat will create the *tstamd64.cat* and *tstx86.cat* files because of the INF CatalogFile directives in the *toastpkg*.inf INF file.
+    One or more Windows versions may be specified in the **/os:** option. For example, if **/os:***Vista_x64, Vistax32* is specified, Inf2Cat will create the *tstamd64.cat* and *tstx86.cat* files because of the INF CatalogFile directives in the *toastpkg*.inf INF file.
 
 For more information about the tool's command-line arguments, see [**Inf2Cat**](https://msdn.microsoft.com/library/windows/hardware/ff547089).
 

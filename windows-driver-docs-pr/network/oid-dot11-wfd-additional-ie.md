@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_WFD\_ADDITIONAL\_IE
+title: OID_DOT11_WFD_ADDITIONAL_IE
 author: windows-driver-content
 description: When set, the OID\_DOT11\_WFD\_ADDITIONAL\_IE object identifier (OID) is sent to the miniport to add Informational Elements (IEs) to probe responses and beacons.
 ms.assetid: 45C14728-F53A-4FDA-A13D-CDB22DDB6F8C

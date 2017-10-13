@@ -24,7 +24,7 @@ ms.technology: windows-devices
 
  
 
-A **BitReg** directive references one or more INF-writer-defined sections used to set or clear bits within an existing REG\_BINARY-type value entry in the registry. However, this directive is very rarely used in device/driver INF files.
+A **BitReg** directive references one or more INF-writer-defined sections used to set or clear bits within an existing REG_BINARY-type value entry in the registry. However, this directive is very rarely used in device/driver INF files.
 
 ```
 [DDInstall] | 
@@ -62,16 +62,16 @@ A *bit-registry-section* can have any number of entries, each on a separate line
 Identifies the root of the registry tree for other values supplied in this entry. The value can be one of the following:
 
 <a href="" id="hkcr"></a>**HKCR**  
-Abbreviation for **HKEY\_CLASSES\_ROOT**.
+Abbreviation for **HKEY_CLASSES_ROOT**.
 
 <a href="" id="hkcu"></a>**HKCU**  
-Abbreviation for **HKEY\_CURRENT\_USER**.
+Abbreviation for **HKEY_CURRENT_USER**.
 
 <a href="" id="hklm"></a>**HKLM**  
-Abbreviation for **HKEY\_LOCAL\_MACHINE**.
+Abbreviation for **HKEY_LOCAL_MACHINE**.
 
 <a href="" id="hku"></a>**HKU**  
-Abbreviation for **HKEY\_USERS**.
+Abbreviation for **HKEY_USERS**.
 
 <a href="" id="hkr"></a>**HKR**  
 Relative root − that is, keys that are specified by using this abbreviation are relative to the registry key associated with the INF section in which this **BitReg** directive appears, as indicated in the following table.
@@ -88,42 +88,42 @@ Relative root − that is, keys that are specified by using this abbreviation ar
 
  
 
-For more information about driver information that is stored under the **HKEY\_LOCAL\_MACHINE** root, see [Registry Trees and Keys for Devices and Drivers](registry-trees-and-keys.md).
+For more information about driver information that is stored under the **HKEY_LOCAL_MACHINE** root, see [Registry Trees and Keys for Devices and Drivers](registry-trees-and-keys.md).
 
 <a href="" id="subkey"></a>*subkey*  
 This optional value, expressed either as a %*strkey*% token defined in a [**Strings**](inf-strings-section.md) section of the INF or as a registry path under the given *reg-root* (*key1\\key2\\key3*...), specifies the key that contains the value entry to be modified.
 
 <a href="" id="value-entry-name"></a>*value-entry-name*  
-Specifies the name of an existing REG\_BINARY-type value entry in the (existing) subkey to be modified. It can be expressed either as "*quoted string*" or as a %*strkey*% token that is defined in the INF's [**Strings**](inf-strings-section.md) section.
+Specifies the name of an existing REG_BINARY-type value entry in the (existing) subkey to be modified. It can be expressed either as "*quoted string*" or as a %*strkey*% token that is defined in the INF's [**Strings**](inf-strings-section.md) section.
 
 <a href="" id="flags"></a>*flags*  
 This optional hexadecimal value, expressed as an ORed bitmask of system-defined low word and high word flag values, specifies whether to clear or set the bits specified in the given byte-mask. Its default value is zero, which clears the bits in the 64-bit section of the registry.
 
 Bitmask values for each of these flags are as follows:
 
-<a href="" id="0x00000000--flg-bitreg-clearbits-"></a>**0x00000000** (FLG\_BITREG\_CLEARBITS)  
+<a href="" id="0x00000000--flg-bitreg-clearbits-"></a>**0x00000000** (FLG_BITREG_CLEARBITS)  
 Clear the bits specified by *byte-mask*.
 
-<a href="" id="0x00000001--flg-bitreg-setbits-"></a>**0x00000001** (FLG\_BITREG\_SETBITS)  
+<a href="" id="0x00000001--flg-bitreg-setbits-"></a>**0x00000001** (FLG_BITREG_SETBITS)  
 Set the bits specified by *byte-mask*.
 
-<a href="" id="0x00004000---flg-bitreg-32bitkey--"></a>**0x00004000** (FLG\_BITREG\_32BITKEY)   
+<a href="" id="0x00004000---flg-bitreg-32bitkey--"></a>**0x00004000** (FLG_BITREG_32BITKEY)   
 (Windows XP and later versions of Windows.) Make the specified change in the 32-bit registry. If not specified, the change is made to the native registry.
 
 <a href="" id="byte-mask"></a>*byte-mask*  
 This byte-sized mask, expressed in hexadecimal notation, specifies which bits to clear or set in the current value of the given *value-entry-name*.
 
 <a href="" id="byte-to-modify"></a>*byte-to-modify*  
-This byte-sized value, expressed in decimal, specifies the zero-based index of the byte within the REG\_BINARY-type value to be modified.
+This byte-sized value, expressed in decimal, specifies the zero-based index of the byte within the REG_BINARY-type value to be modified.
 
 Remarks
 -------
 
 Each *bit-registry-section* name must be unique to the INF file, but it can be referenced by **BitReg** directives in other sections of the same INF. Each INF-writer-created section name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
-The value of an existing REG\_BINARY-type value entry can also be modified by overwriting its current value within an add-registry section elsewhere in the INF file. For more information about add-registry sections, see the reference for the [**AddReg**](inf-addreg-directive.md)directive.
+The value of an existing REG_BINARY-type value entry can also be modified by overwriting its current value within an add-registry section elsewhere in the INF file. For more information about add-registry sections, see the reference for the [**AddReg**](inf-addreg-directive.md)directive.
 
-Using a **BitReg** directive requires the definition of another INF file section. However, the value of an existing REG\_BINARY-type value entry can be modified bit-by-bit in such a section, thereby preserving the values of all remaining bits.
+Using a **BitReg** directive requires the definition of another INF file section. However, the value of an existing REG_BINARY-type value entry can be modified bit-by-bit in such a section, thereby preserving the values of all remaining bits.
 
 Examples
 --------

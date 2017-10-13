@@ -1,5 +1,5 @@
 ---
-title: OID\_QOS\_CURRENT\_CAPABILITIES
+title: OID_QOS_CURRENT_CAPABILITIES
 author: windows-driver-content
 description: An overlying driver issues an object identifier (OID) query request of OID\_QOS\_CURRENT\_CAPABILITIES to obtain the currently enabled NDIS Quality of Service (QoS) hardware capabilities of a network adapter.
 ms.assetid: E9013EB2-5EDB-4BCB-BC1D-17345B85D1C4

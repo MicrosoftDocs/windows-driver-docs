@@ -17,8 +17,8 @@ In current Windows Insider builds, you can specify that a Universal Windows Plat
 
 To cause a UWP app to load only when a specific driver is present, add two XML elements to the manifest XML (.appx) file for the app:
 
-* [uap5:DriverDependency](/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverdependency)
-* [uap5:DriverConstraint](/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverconstraint)
+* [uap5:DriverDependency](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverdependency)
+* [uap5:DriverConstraint](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverconstraint)
 
 In particular, use these elements to specify at least one driver dependency containing at least one driver constraint.  See further details on use of these elements on the reference pages linked to above.  The latter page contains an example.
 
@@ -38,3 +38,4 @@ In addition to matching the most recent app and driver versions, the system also
 * [uap5:DriverConstraint](https://review.docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverconstraint?branch=lahugh-rs3)
 * [INF AddSoftware Directive](inf-addsoftware-directive.md)
 * [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md)
+* [Using a custom capability to pair a Hardware Support App (HSA) with a driver](../devapps/using-a-custom-capability-to-pair-hsa-with-driver.md)
