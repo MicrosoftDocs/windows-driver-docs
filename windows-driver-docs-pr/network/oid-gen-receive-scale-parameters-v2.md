@@ -14,11 +14,9 @@ ms.technology: windows-devices
 
 # OID_GEN_RECEIVE_SCALE_PARAMETERS_V2
 
-OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 is sent to RSSv2-capable miniport drivers to set run-time parameters other than the indirection table for a scaling entity. This OID replaces the older [OID_GEN_RECEIVE_SCALE_PARAMETERS](oid-gen-receive-scale-parameters.md) OID from RSSv1 and is not visible to NDIS Light Weight Filters (LWFs) before NDIS 6.80. 
+The OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 OID is sent to RSSv2-capable miniport drivers to set run-time parameters, other than the indirection table, for a scaling entity. OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 replaces the older [OID_GEN_RECEIVE_SCALE_PARAMETERS](oid-gen-receive-scale-parameters.md) OID from RSSv1 and is not visible to NDIS Light Weight Filters (LWFs) before NDIS 6.80. This OID is a Regular OID and can be issued as a Query or Set request. It is issued at IRQL = PASSIVE_LEVEL. It can target a given VPort, when the *NDIS_OID_REQUEST_FLAGS_VPORT_ID_VALID* flag is set at NIC switch creation. Otherwise, it targets the physical NIC in the Native RSS case.
 
-This OID is a Regular OID and can be issued as a Query or Set request. It is issued at IRQL = PASSIVE_LEVEL. It can target a given VPort, when the *NDIS_OID_REQUEST_FLAGS_VPORT_ID_VALID* flag is set at NIC switch creation. Otherwise, it targets the physical NIC in the Native RSS case.
-
-As a Query, NDIS and overlying drivers can use OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 to query the RSS parameters of a NIC. NDIS returns an [**NDIS_RECEIVE_SCALE_PARAMETERS_V2**](https://msdn.microsoft.com/library/windows/hardware/96EAB6EE-BF9A-46AD-8DED-5D9BD2B6F219) structure that defines the current RSS parameters.
+As a Query, NDIS and overlying drivers can use OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 to query the RSS parameters of a NIC. NDIS returns an [NDIS_RECEIVE_SCALE_PARAMETERS_V2](https://msdn.microsoft.com/library/windows/hardware/96EAB6EE-BF9A-46AD-8DED-5D9BD2B6F219) structure that defines the current RSS parameters.
 
 As a Set, the purpose of this OID is to perform the following actions:
 
@@ -54,7 +52,7 @@ Before changing the number of indirection table entries for VMMQ-RESTRICTED adap
 
 - [Receive Side Scaling Version 2 (RSSv2)](receive-side-scaling-version-2-rssv2-.md)
 - [OID_GEN_RECEIVE_SCALE_PARAMETERS](oid-gen-receive-scale-parameters.md)
-- [**NDIS\_RECEIVE\_SCALE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567228)
+- [NDIS_RECEIVE_SCALE_PARAMETERS_V2](https://msdn.microsoft.com/library/windows/hardware/96EAB6EE-BF9A-46AD-8DED-5D9BD2B6F219)
 - [OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES](oid-gen-rss-set-indirection-table-entries.md)
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
