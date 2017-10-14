@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # PWM driver for an on-SoC PWM module
 To provide access to a Pulse width modulation (PWM) controller that is part of the SoC and memory-mapped to the SoC address space, you need to writer a kernel-mode driver. The driver must register the device class interface of the PWM controller so that UWP apps can access the system exposed PWM devices through the PWM WinRT APIs defined in Windows.Devices.Pwm namespace. 
 
-**Note**    If you have an add-on PWM module over I<sup>2</sup>C, SPI, or a UART controller, you can access the module from a UWP app by using the APIs defined in the Windows.Devices.Pwm and Windows.Devices.Pwm.Provider namespace. For more information, see <link>.
+**Note**    If you have an add-on PWM module over I<sup>2</sup>C, SPI, or a UART controller, you can access the module from a UWP app by using the APIs defined in the [**Windows.Devices.Pwm**](https://docs.microsoft.com/en-us/uwp/api/windows.devices.pwm) and [**Windows.Devices.Pwm.Provider**](https://docs.microsoft.com/en-us/uwp/api/windows.devices.pwm.provider) namespace. 
 
 A PWM device is abstracted into a single controller and one or more pins. Controlling either the controller or the pins is done through the PWM-defined IOCTLs. For example, an LCD display driver sends such requests to  the PWM driver to control the LCD backlight level. 
 
@@ -490,19 +490,20 @@ PWM IOCTL requests are sent by an application or another driver and are targeted
 
 **Controller IOCTLs**
 
--   PWM_IOCTL_ID_CONTROLLER_GET_INFO
--   PWM_IOCTL_ID_CONTROLLER_GET_ACTUAL_PERIOD
--   PWM_IOCTL_ID_CONTROLLER_SET_DESIRED_PERIOD
+-    [**IOCTL_PWM_CONTROLLER_GET_ACTUAL_PERIOD**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt826475) 
+-    [**IOCTL_PWM_CONTROLLER_GET_INFO**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt826476) 
+-    [**IOCTL_PWM_CONTROLLER_SET_DESIRED_PERIOD**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt826478)
+
 
 **Pin IOCTLs**
 
--   PWM_IOCTL_ID_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE
--   PWM_IOCTL_ID_PIN_SET_ACTIVE_DUTY_CYCLE_PERCENTAGE
--   PWM_IOCTL_ID_PIN_GET_POLARITY
--   PWM_IOCTL_ID_PIN_SET_POLARITY
--   PWM_IOCTL_ID_PIN_START
--   PWM_IOCTL_ID_PIN_STOP
--   PWM_IOCTL_ID_PIN_IS_STARTED
+-    [**IOCTL_PWM_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843915)
+-    [**IOCTL_PWM_PIN_SET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843918)
+-    [**IOCTL_PWM_PIN_GET_POLARITY**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843916)
+-    [**IOCTL_PWM_PIN_SET_POLARITY**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843919)
+-    [**IOCTL_PWM_PIN_START**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843920)
+-    [**IOCTL_PWM_PIN_STOP**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843921)
+-    [**IOCTL_PWM_PIN_IS_STARTED**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843917)    
 
 For each IOCTL request, the PWM drivr must verify the following: 
 
