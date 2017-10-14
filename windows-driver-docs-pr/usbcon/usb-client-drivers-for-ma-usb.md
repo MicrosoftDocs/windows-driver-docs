@@ -23,7 +23,8 @@ For isochronous endpoints, the client driver needs to know the maximum programmi
 
 To build that request the driver must use the **_URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS** URB.
 
-> [!NOTE] In this release, this feature is available to only KMDF and WDM-based drivers. 
+> NOTE   
+    In this release, this feature is available to only KMDF and WDM-based drivers. 
 
 Here are some best practices for building this URB:
 
