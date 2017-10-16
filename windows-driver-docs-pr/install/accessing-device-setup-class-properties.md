@@ -14,17 +14,17 @@ ms.technology: windows-devices
 
 In Windows Vista and later versions of Windows, the [unified device property model](unified-device-property-model--windows-vista-and-later-.md) includes the following:
 
--   [Device setup class properties](https://msdn.microsoft.com/library/windows/hardware/ff542239) that correspond to the SPCRP\_*Xxx* identifiers that are defined in *Setupapi.h.*
+-   [Device setup class properties](https://msdn.microsoft.com/library/windows/hardware/ff542239) that correspond to the SPCRP_*Xxx* identifiers that are defined in *Setupapi.h.*
 
--   Properties that do not have SPCRP\_*Xxx* identifiers, but do have corresponding system-defined registry entry values.
+-   Properties that do not have SPCRP_*Xxx* identifiers, but do have corresponding system-defined registry entry values.
 
 For information about how to access device setup class properties in Windows Vista and later versions, see [Accessing Device Class Properties (Windows Vista and Later)](accessing-device-class-properties--windows-vista-and-later-.md).
 
 For information about how to access the corresponding device setup class properties on Windows Server 2003, Windows XP, and Windows 2000, see the following topics:
 
-[Retrieving SPCRP\_Xxx Properties](retrieving-spcrp-xxx-properties.md)
+[Retrieving SPCRP_Xxx Properties](retrieving-spcrp-xxx-properties.md)
 
-[Setting SPCRP\_Xxx Properties](setting-spcrp-xxx-properties.md)
+[Setting SPCRP_Xxx Properties](setting-spcrp-xxx-properties.md)
 
 [Accessing the Friendly Name and Class Name of a Device Setup Class](accessing-the-friendly-name-and-class-name-of-a-device-setup-class.md)
 

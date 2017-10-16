@@ -86,16 +86,16 @@ An *add-power-setting-section* takes one of the following two possible forms:
 <a href="" id="subgroup"></a>**SubGroup**  
 A subgroup groups power settings that are logically related.
 
-To specify a system-defined subgroup, include a **SubGroup** directive and supply only the *subgroup-guid* entry. The system-defined subgroups are represented by the constants GUID\_*Xxx*\_SUBGROUP and NO\_SUBGROUP\_GUID, which are defined in *Wdm.h*.
+To specify a system-defined subgroup, include a **SubGroup** directive and supply only the *subgroup-guid* entry. The system-defined subgroups are represented by the constants GUID_*Xxx*_SUBGROUP and NO_SUBGROUP_GUID, which are defined in *Wdm.h*.
 
-For example, GUID\_VIDEO\_SUBGROUP represents the subgroup that contains the video power settings for a power scheme personality. The NO\_SUBGROUP\_GUID constant represents a collection of settings that do not logically belong to any subgroup. If a **SubGroup** directive is not included, the setting is added by default to the collection of settings that do not logically belong to any subgroup.
+For example, GUID_VIDEO_SUBGROUP represents the subgroup that contains the video power settings for a power scheme personality. The NO_SUBGROUP_GUID constant represents a collection of settings that do not logically belong to any subgroup. If a **SubGroup** directive is not included, the setting is added by default to the collection of settings that do not logically belong to any subgroup.
 
 To define a new subgroup, include the **SubGroup** directive and supply the following required entries: *subgroup-guid*, *subgroup-name*, *subgroup-description*, and *subgroup-icon.* The GUID of the new subgroup must be unique and the other entries should be as descriptive as possible.
 
 <a href="" id="subgroup-guid"></a>*subgroup-guid*  
 The required entry supplies the GUID that identifies the subgroup. The format of this entry is **{***XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX***}**, where "X" is a hexadecimal digit.
 
-For example, the value of the system-defined constant GUID\_VIDEO\_SUBGROUP is {7516B95F-F776-4464-8C53-06167F40CC99}. This GUID represents the subgroup that contains the video power settings for a power scheme personality.
+For example, the value of the system-defined constant GUID_VIDEO_SUBGROUP is {7516B95F-F776-4464-8C53-06167F40CC99}. This GUID represents the subgroup that contains the video power settings for a power scheme personality.
 
 <a href="" id="subgroup-name"></a>*subgroup-name*  
 A string that specifies the subgroup name of the power setting. If the subgroup is a system-defined subgroup, this entry should not be supplied. If the subgroup is new, this entry is required.
@@ -148,23 +148,23 @@ A required entry that specifies the data type of the corresponding value-data en
 
 | Flag value | Data type   |
 |------------|-------------|
-| 0x00000001 | REG\_BINARY |
-| 0x00010001 | REG\_DWORD  |
-| 0x00000000 | REG\_SZ     |
+| 0x00000001 | REG_BINARY |
+| 0x00010001 | REG_DWORD  |
+| 0x00000000 | REG_SZ     |
 
  
 
 <a href="" id="value-data"></a>*value-data*  
 A required entry that supplies the data for the corresponding setting value, the format of which depends on the data type that is specified by corresponding *value-flags* entry, as follows:
 
--   A REG\_BINARY value can be specified in hexadecimal format by using 0x notation, or as a comma-separated list of paired hexadecimal numbers without the 0x notation.
+-   A REG_BINARY value can be specified in hexadecimal format by using 0x notation, or as a comma-separated list of paired hexadecimal numbers without the 0x notation.
 
     For example, the following entries are equivalent: 0xFEDCBA9876543210 and the following comma-separated list of paired hexadecimal digits: FE, DC, BA, 98, 76, 54, 32, 10.
 
--   A REG\_DWORD value can be specified either in hexadecimal format (by using 0x notation) or in decimal format.
--   A REG\_SZ value can only be expressed as a string enclosed in double quotation marks ("*quoted-string*") or as a %*strkey*% token that is defined in the INF [**Strings**](inf-strings-section.md) section of an INF file.
+-   A REG_DWORD value can be specified either in hexadecimal format (by using 0x notation) or in decimal format.
+-   A REG_SZ value can only be expressed as a string enclosed in double quotation marks ("*quoted-string*") or as a %*strkey*% token that is defined in the INF [**Strings**](inf-strings-section.md) section of an INF file.
 
-**Note**  You should not use string values because they cannot be localized. Instead, use values of type REG\_BINARY or REG\_DWORD.
+**Note**  You should not use string values because they cannot be localized. Instead, use values of type REG_BINARY or REG_DWORD.
 
  
 
@@ -182,13 +182,13 @@ For example, for a *range-minimum-value* equal to 0, a *range-maximum-value* equ
 If the allowed power setting values can best be described as a list of values, where each value can have a value-specific custom data type, use the **Value** directive instead of the **ValueRange** directive.
 
 <a href="" id="range-minimum-value"></a>*range-minimum-value*  
-A value of type REG\_DWORD that specifies the minimum allowed power setting.
+A value of type REG_DWORD that specifies the minimum allowed power setting.
 
 <a href="" id="range-maximum-value"></a>*range-maximum-value*  
-A value of type REG\_DWORD that specifies the maximum allowed power setting value. The maximum value must be greater than or equal to minimum-value and should be equal to range-minimum-value + *k\*range-increment*, for some integer *k* that is greater than zero.
+A value of type REG_DWORD that specifies the maximum allowed power setting value. The maximum value must be greater than or equal to minimum-value and should be equal to range-minimum-value + *k\*range-increment*, for some integer *k* that is greater than zero.
 
 <a href="" id="range-increment-"></a>*range-increment*   
-A value of type REG\_DWORD that is greater than zero. This value specifies the difference between consecutive values within the inclusive range that is specified by *range-minimum-value* and *range-maximum-value*.
+A value of type REG_DWORD that is greater than zero. This value specifies the difference between consecutive values within the inclusive range that is specified by *range-minimum-value* and *range-maximum-value*.
 
 <a href="" id="range-unit-label-"></a>*range-unit-label*   
 An optional string that describes the power setting value. The string, together with *setting-name*, informs the user of what type of data to enter.
@@ -235,7 +235,7 @@ For more information about how to use the system-defined **.nt**, **.ntx86**, **
 
 ### Specifying an AddPowerSetting String Entry Value
 
-Except for *value-data* entries of type REG\_SZ, all the other string entry values that are supplied with an **AddPowerSetting** directive can be expressed as a string enclosed in double quotation marks ("*quoted-string*"), as a %*strkey*% token that is defined in the INF string section of an INF file, or as language-neutral registry value.
+Except for *value-data* entries of type REG_SZ, all the other string entry values that are supplied with an **AddPowerSetting** directive can be expressed as a string enclosed in double quotation marks ("*quoted-string*"), as a %*strkey*% token that is defined in the INF string section of an INF file, or as language-neutral registry value.
 
 Language-neutral registry values are used to support Windows Multilingual User Interface (MUI) and are specified as follows:
 

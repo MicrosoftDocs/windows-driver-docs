@@ -69,7 +69,7 @@ The following syntax rules govern the required and optional contents of INF file
 
 -   Unless it is enclosed in double quotation marks characters (**"**), an INF-writer-defined section name must be a unique-to-the-INF unquoted string of explicitly visible characters, excluding certain characters with INF-specific meanings. In particular, an unquoted section name referenced by a section entry or directive cannot have leading or trailing spaces, a linefeed character, a return character, or any invisible control character, and it should not contain tabs. In addition, it cannot contain either of the bracket (**\[ \]**) characters, a single percent (**%**) character, a semicolon (**;**), or any internal double quotation marks (**"**) characters, and it cannot have a backslash (**\\**) as its last character.
 
-    For example, Std.Mfg and Std\_Mfg are unique and valid section names when referenced by an INF file entry or directive, but Std;Mfg (with its internal semicolon) is invalid unless it is enclosed by double quotation marks (**"**).
+    For example, Std.Mfg and Std_Mfg are unique and valid section names when referenced by an INF file entry or directive, but Std;Mfg (with its internal semicolon) is invalid unless it is enclosed by double quotation marks (**"**).
 
     Specifying an INF-writer-defined section name as a **"***quoted string***"** overrides most of the restrictions that were previously described on characters in referenced section names. Such a delimited section name can contain almost any explicitly or implicitly visible characters except the closing bracket (**\]**) as long as the corresponding section in the INF file matches this **"***quoted string***"** exactly.
 

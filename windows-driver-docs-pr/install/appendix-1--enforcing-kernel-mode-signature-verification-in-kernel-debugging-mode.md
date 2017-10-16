@@ -25,7 +25,7 @@ In order to facilitate debugging these situations, the kernel-mode code signing 
 HKLM\SYSTEM\CurrentControlSet\Control\CI\DebugFlags
 ```
 
-This registry value is of type REG\_DWORD, and can be assigned a value based on a bitwise OR of one or more of the following flags.
+This registry value is of type REG_DWORD, and can be assigned a value based on a bitwise OR of one or more of the following flags.
 
 ```
 0x00000001
