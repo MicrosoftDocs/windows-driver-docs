@@ -28,9 +28,9 @@ The asterisk indicates that the device is supported by more than one enumerator,
 <a href="" id="-device-class-specific-id-"></a>*&lt;device-class-specific-ID&gt;*  
 An existing device class that has established its own naming convention might use a custom format. For information about their hardware ID formats, see the hardware specification for such buses. New enumerators should not use this format.
 
-The number of characters of a hardware ID, excluding a NULL terminator, must be less than MAX\_DEVICE\_ID\_LEN. This constraint applies to the sum of the lengths of all the fields and any "\\" field separators in a hardware ID. For more information about constraints on device IDs, see the Operations section of [**IRP\_MN\_QUERY\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff551679).
+The number of characters of a hardware ID, excluding a NULL terminator, must be less than MAX_DEVICE_ID_LEN. This constraint applies to the sum of the lengths of all the fields and any "\\" field separators in a hardware ID. For more information about constraints on device IDs, see the Operations section of [**IRP_MN_QUERY_ID**](https://msdn.microsoft.com/library/windows/hardware/ff551679).
 
-To obtain the list of hardware IDs for a device, call [**IoGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff549203) with the *DeviceProperty* parameter set to **DevicePropertyHardwareID**. The list of hardware IDs that this routine retrieves is a REG\_MULTI\_SZ value. The maximum number of characters in a hardware list, including a NULL terminator after each hardware ID and a final NULL terminator, is REGSTR\_VAL\_MAX\_HCID\_LEN. The maximum possible number of IDs in a list of hardware IDs is 64.
+To obtain the list of hardware IDs for a device, call [**IoGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff549203) with the *DeviceProperty* parameter set to **DevicePropertyHardwareID**. The list of hardware IDs that this routine retrieves is a REG_MULTI_SZ value. The maximum number of characters in a hardware list, including a NULL terminator after each hardware ID and a final NULL terminator, is REGSTR_VAL_MAX_HCID_LEN. The maximum possible number of IDs in a list of hardware IDs is 64.
 
 ### Examples of Hardware IDs
 
@@ -38,7 +38,7 @@ In the following, the first example is a [generic identifier](generic-identifier
 
 root\\\*PNP0F08
 
-PCI\\VEN\_1000&DEV\_0001&SUBSYS\_00000000&REV\_02
+PCI\\VEN_1000&DEV_0001&SUBSYS_00000000&REV_02
 
  
 

@@ -21,11 +21,11 @@ ms.technology: windows-devices
 
 To implement finish-install actions, an installer:
 
-1.  Sets the DI\_FLAGSEX\_FINISHINSTALL\_ACTION flag when the installer processes a [**DIF\_NEWDEVICEWIZARD\_FINISHINSTALL**](https://msdn.microsoft.com/library/windows/hardware/ff543702) DIF code and returns one of the following error codes:
-    -   ERROR\_DI\_DO\_DEFAULT if it is a class installer without finish-install wizard pages.
-    -   NO\_ERROR if it is a class installer with finish-install wizard pages or a co-installer with or without finish-install wizard pages.
+1.  Sets the DI_FLAGSEX_FINISHINSTALL_ACTION flag when the installer processes a [**DIF_NEWDEVICEWIZARD_FINISHINSTALL**](https://msdn.microsoft.com/library/windows/hardware/ff543702) DIF code and returns one of the following error codes:
+    -   ERROR_DI_DO_DEFAULT if it is a class installer without finish-install wizard pages.
+    -   NO_ERROR if it is a class installer with finish-install wizard pages or a co-installer with or without finish-install wizard pages.
 
-2.  Performs the finish-install actions when it processes a [**DIF\_FINISHINSTALL\_ACTION**](https://msdn.microsoft.com/library/windows/hardware/ff543684) request.
+2.  Performs the finish-install actions when it processes a [**DIF_FINISHINSTALL_ACTION**](https://msdn.microsoft.com/library/windows/hardware/ff543684) request.
 
     An installer returns one of the error codes in the following table.
 
@@ -60,7 +60,7 @@ To implement finish-install actions, an installer:
 
      
 
-    **Note**   If a finish-install action fails and should not be attempted again, a class installer returns ERROR\_DI\_DO\_DEFAULT and a device or class co-installer returns NO\_ERROR.
+    **Note**   If a finish-install action fails and should not be attempted again, a class installer returns ERROR_DI_DO_DEFAULT and a device or class co-installer returns NO_ERROR.
 
      
 

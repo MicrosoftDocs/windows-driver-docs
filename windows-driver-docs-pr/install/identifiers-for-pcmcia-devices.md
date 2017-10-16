@@ -45,9 +45,9 @@ The child function number (*d(4)* in this example) is a decimal number without l
 
 If the card does not have a name of the manufacturer, the identifier has one of these three forms:
 
-PCMCIA\\UNKNOWN\_MANUFACTURER-Crc(4)
+PCMCIA\\UNKNOWN_MANUFACTURER-Crc(4)
 
-PCMCIA\\UNKNOWN\_MANUFACTURER-DEVd(4)-Crc(4)
+PCMCIA\\UNKNOWN_MANUFACTURER-DEVd(4)-Crc(4)
 
 PCMCIA\\MTD-MemoryType(4)
 
