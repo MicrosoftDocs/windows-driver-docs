@@ -63,7 +63,7 @@ The following status codes are applicable. Status is returned as an asynchronous
 
 ## OID_WWAN_DEVICE_RESET
 
-The NDIS equivalent for MBIM_CID_MS_DEVICE_RESET is [OID_WWAN_DEVICE_RESET](oid-wwan-device-reset.md)
+The NDIS equivalent for MBIM_CID_MS_DEVICE_RESET is [OID_WWAN_DEVICE_RESET](oid-wwan-device-reset.md).
 
 ## Related topics
 
