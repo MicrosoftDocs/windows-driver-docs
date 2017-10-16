@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Driver Rank Example
 
 
-Consider a device that has the following lists of [device identification strings](device-identification-strings.md), where the HwID\_*N* and CID\_*N* names represent actual [hardware IDs](hardware-ids.md) and [compatible IDs](compatible-ids.md):
+Consider a device that has the following lists of [device identification strings](device-identification-strings.md), where the HwID_*N* and CID_*N* names represent actual [hardware IDs](hardware-ids.md) and [compatible IDs](compatible-ids.md):
 
 -   List of hardware IDs
     ```
@@ -28,9 +28,9 @@ Consider a device that has the following lists of [device identification strings
     CID_1, and CID_2
     ```
 
-The first hardware ID in a list of hardware IDs is the most specific identifier for the device. In this example, that is HwID\_1.
+The first hardware ID in a list of hardware IDs is the most specific identifier for the device. In this example, that is HwID_1.
 
-Also assume there is an INF file that has an [**INF *Models* section**](inf-models-section.md) that has the following entry, where the INF\_*XXX\_N* names represent actual hardware IDs and compatible IDs:
+Also assume there is an INF file that has an [**INF *Models* section**](inf-models-section.md) that has the following entry, where the INF_*XXX_N* names represent actual hardware IDs and compatible IDs:
 
 ```
 DeviceDesc1 = InstallSection1, INF_HWID_1, INF_CID_1, INF_CID_2

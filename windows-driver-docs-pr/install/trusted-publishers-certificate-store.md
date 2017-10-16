@@ -40,7 +40,7 @@ You can manually install the Authenticode certificates into the Trusted Publishe
 
 For more information about software restriction policies and using Certificate Rules, see the information in the Windows Help and Support Center. In addition, you find more information about these topics on the [Microsoft TechNet](http://go.microsoft.com/fwlink/p/?linkid=10111) website.
 
-For more information about how to deploy Authenticode certificates in an enterprise by using Group Policy, see the readme file *Selfsign\_readme.htm*, which is located in the *src\\general\\build\\driversigning* directory of the WDK.
+For more information about how to deploy Authenticode certificates in an enterprise by using Group Policy, see the readme file *Selfsign_readme.htm*, which is located in the *src\\general\\build\\driversigning* directory of the WDK.
 
 For more information about certificate stores, see the [Code Signing Best Practices](http://go.microsoft.com/fwlink/p/?linkid=68250) website.
 

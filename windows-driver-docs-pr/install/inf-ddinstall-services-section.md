@@ -70,7 +70,7 @@ For more information about how to use the system-defined **.nt**, **.ntx86**, **
 Examples
 --------
 
-This example shows the *DDInstall***.Services** section for the **Ser\_Inst** section shown as an example for the [**INF *DDInstall* section**](inf-ddinstall-section.md).
+This example shows the *DDInstall***.Services** section for the **Ser_Inst** section shown as an example for the [**INF *DDInstall* section**](inf-ddinstall-section.md).
 
 ```
 [Ser_Inst.Services]

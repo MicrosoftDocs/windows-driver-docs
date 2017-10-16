@@ -80,9 +80,9 @@ Note the following about the implied hierarchy of an INF file:
 
 -   Each *Models* section specifies some number of entries; in the example they are **%***xxx*.DeviceDesc**%** tokens.
 
-    Each such **%***xxx*.DeviceDesc**%** token references some number of per-models *DDInstall* sections (Ser\_Inst and Inp\_Inst) for that manufacturer's product line, with each entry identifying a single device (\*PNP0F0C and \*PNP0F0D, hence the "DeviceDesc" shown here) or a set of compatible models of a device.
+    Each such **%***xxx*.DeviceDesc**%** token references some number of per-models *DDInstall* sections (Ser_Inst and Inp_Inst) for that manufacturer's product line, with each entry identifying a single device (\*PNP0F0C and \*PNP0F0D, hence the "DeviceDesc" shown here) or a set of compatible models of a device.
 
--   Each such *DDInstall*-type *Xxx*\_Inst section, in turn, can have certain system-defined extensions appended and/or can contain directives that reference additional INF-writer-defined sections. For example, the full INF file that is shown as fragments in the previous example also has a Ser\_Inst**.Services** section, and its Ser\_Inst section has a **CopyFiles** directive that references a Ser\_CopyFiles section elsewhere in this INF file.
+-   Each such *DDInstall*-type *Xxx*_Inst section, in turn, can have certain system-defined extensions appended and/or can contain directives that reference additional INF-writer-defined sections. For example, the full INF file that is shown as fragments in the previous example also has a Ser_Inst**.Services** section, and its Ser_Inst section has a **CopyFiles** directive that references a Ser_CopyFiles section elsewhere in this INF file.
 
  
 

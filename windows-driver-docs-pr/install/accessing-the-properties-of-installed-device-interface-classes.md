@@ -24,7 +24,7 @@ Use the following guidelines to safely query and modify the attributes of device
 
     2.  Use [**SetupDiGetDeviceInterfaceDetail**](https://msdn.microsoft.com/library/windows/hardware/ff551120) to retrieve details for the device interface.
 
-        The optional *DeviceInfoData* parameter will receive the [**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) element for the device for which the interface is registered.
+        The optional *DeviceInfoData* parameter will receive the [**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) element for the device for which the interface is registered.
 
     3.  Use persistent registry storage for the custom settings for a device interface class. To do this, use [**SetupDiCreateDeviceInterfaceRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff550967) (to create a new registry key) or [**SetupDiOpenDeviceInterfaceRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552075) (to open an existing registry key).
 

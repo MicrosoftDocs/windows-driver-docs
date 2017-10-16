@@ -34,7 +34,7 @@ To modify a property value, include an INF **AddProperty** directive in the sect
 
 **AddProperty=***add-property-section*\[**,***add-property-section*\] ...
 
-Each line in an add-property-section specifies one property. The following shows the two possible line formats that specify property information. The first line format shown specifies a property by its name. This format can be used only with the DEVPKEY\_DrvPkg\_*Xxx* properties. The second line format specifies a property by the property category and property identifier of the corresponding [property key](property-keys.md). This second format can be used to specify a system-defined property or a [custom device property](creating-custom-device-properties.md).
+Each line in an add-property-section specifies one property. The following shows the two possible line formats that specify property information. The first line format shown specifies a property by its name. This format can be used only with the DEVPKEY_DrvPkg_*Xxx* properties. The second line format specifies a property by the property category and property identifier of the corresponding [property key](property-keys.md). This second format can be used to specify a system-defined property or a [custom device property](creating-custom-device-properties.md).
 
 **\[***add-property-section***\]**
 *property-name***,,,\[***flags***\],***value*
@@ -42,13 +42,13 @@ Each line in an add-property-section specifies one property. The following shows
 The entry values supply the following:
 
 <a href="" id="property-name"></a>*property-name*  
-The name that identifies a DEVPKEY\_DrvPkg\_*Xxx* property. For example, **DeviceModel**, which represents the [**DEVPKEY\_DrvPkg\_Model**](https://msdn.microsoft.com/library/windows/hardware/ff543523) property, or **DeviceVendorWebSite**, which represents the [**DEVPKEY\_DrvPkg\_VendorWebSite**](https://msdn.microsoft.com/library/windows/hardware/ff543527) property.
+The name that identifies a DEVPKEY_DrvPkg_*Xxx* property. For example, **DeviceModel**, which represents the [**DEVPKEY_DrvPkg_Model**](https://msdn.microsoft.com/library/windows/hardware/ff543523) property, or **DeviceVendorWebSite**, which represents the [**DEVPKEY_DrvPkg_VendorWebSite**](https://msdn.microsoft.com/library/windows/hardware/ff543527) property.
 
 <a href="" id="property-category-guid"></a>*property-category-guid*  
-The GUID value of the property category to which the property belongs. For example, the system-defined [**DEVPKEY\_Device\_FriendlyName**](https://msdn.microsoft.com/library/windows/hardware/ff542502) property. The GUID value can also specify a custom device category.
+The GUID value of the property category to which the property belongs. For example, the system-defined [**DEVPKEY_Device_FriendlyName**](https://msdn.microsoft.com/library/windows/hardware/ff542502) property. The GUID value can also specify a custom device category.
 
 <a href="" id="property-pid"></a>*property-pid*  
-The property identifier that identifies a property within a property category. For example, the value of the property identifier for the DEVPKEY\_Device\_FriendlyName property is 14.
+The property identifier that identifies a property within a property category. For example, the value of the property identifier for the DEVPKEY_Device_FriendlyName property is 14.
 
 <a href="" id="flags"></a>*Flags*  
 An optional flag that indicates how to modify the property value.
@@ -59,7 +59,7 @@ A [property-data-type identifier](property-data-type-identifiers.md) that specif
 <a href="" id="value"></a>*value*  
 The value that is used to modify the property value.
 
-The following example of an **AddProperty** directive includes two line entries. The first line includes the *property-name* entry value "DeviceModel" and the *value* entry value "Sample Device Model Name." This entry sets the DEVPKEY\_DrvPkg\_Model property. The second line entry sets a custom property in a custom property category. The *property-category-guid* entry value is "c22189e4-8bf3-4e6d-8467-8dc6d95e2a7e" and the *property-identifier* entry value is "2." The optional *Flags* entry value is not present and the *type* entry value is "18" (DEVPROP\_TYPE\_STRING). The *value* entry value is "String value for property 1."
+The following example of an **AddProperty** directive includes two line entries. The first line includes the *property-name* entry value "DeviceModel" and the *value* entry value "Sample Device Model Name." This entry sets the DEVPKEY_DrvPkg_Model property. The second line entry sets a custom property in a custom property category. The *property-category-guid* entry value is "c22189e4-8bf3-4e6d-8467-8dc6d95e2a7e" and the *property-identifier* entry value is "2." The optional *Flags* entry value is not present and the *type* entry value is "18" (DEVPROP_TYPE_STRING). The *value* entry value is "String value for property 1."
 
 ```
 [Root_Install.NT]
@@ -80,7 +80,7 @@ The **DelProperty** directive has the following format:
 
 **DelProperty=***del-property-section*\[**,***del-property-section*\] ...
 
-Each line in a *del-property-section* specifies one property. The following shows the two possible line formats that specify property information. The first line format shown specifies a property by its name. This format can be used only with the DEVPKEY\_DrvPkg\_*Xxx* properties. The second line format specifies a property by the property category and property identifier of the corresponding [property key](property-keys.md). The second format can be used to specify a system-defined property or a [custom device property](creating-custom-device-properties.md).
+Each line in a *del-property-section* specifies one property. The following shows the two possible line formats that specify property information. The first line format shown specifies a property by its name. This format can be used only with the DEVPKEY_DrvPkg_*Xxx* properties. The second line format specifies a property by the property category and property identifier of the corresponding [property key](property-keys.md). The second format can be used to specify a system-defined property or a [custom device property](creating-custom-device-properties.md).
 
 **\[***del-property-section***\]**
 *property-name* \[**,,** *Flags* \[**,***value*\]\]
@@ -88,23 +88,23 @@ Each line in a *del-property-section* specifies one property. The following show
 The entry values supply the following:
 
 <a href="" id="property-name"></a>*property-name*  
-The name that identifies a DEVPKEY\_DrvPkg\_*Xxx* property. For example, **DeviceModel**, which represents the [**DEVPKEY\_DrvPkg\_Model**](https://msdn.microsoft.com/library/windows/hardware/ff543523) property, or **DeviceVendorWebSite**, which represents the [**DEVPKEY\_Device\_FriendlyName**](https://msdn.microsoft.com/library/windows/hardware/ff542502) property.
+The name that identifies a DEVPKEY_DrvPkg_*Xxx* property. For example, **DeviceModel**, which represents the [**DEVPKEY_DrvPkg_Model**](https://msdn.microsoft.com/library/windows/hardware/ff543523) property, or **DeviceVendorWebSite**, which represents the [**DEVPKEY_Device_FriendlyName**](https://msdn.microsoft.com/library/windows/hardware/ff542502) property.
 
 <a href="" id="property-category-guid"></a>*property-category-guid*  
-The GUID value of the property category to which the property belongs. For example, the system-defined [**DEVPKEY\_Device\_FriendlyName**](https://msdn.microsoft.com/library/windows/hardware/ff542502) property. The GUID value can also specify a custom device category.
+The GUID value of the property category to which the property belongs. For example, the system-defined [**DEVPKEY_Device_FriendlyName**](https://msdn.microsoft.com/library/windows/hardware/ff542502) property. The GUID value can also specify a custom device category.
 
 <a href="" id="property-pid"></a>*property-pid*  
-The property identifier that identifies a property within a property category. For example, the value of the property identifier for the DEVPKEY\_Device\_FriendlyName property is 14.
+The property identifier that identifies a property within a property category. For example, the value of the property identifier for the DEVPKEY_Device_FriendlyName property is 14.
 
 <a href="" id="flags"></a>*Flags*  
-An optional flag that is valid for use only with a property whose data type is [**DEVPROP\_TYPE\_STRING\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff543614). If the flag is set, the delete operation deletes the string that is specified by *value* from the property string list.
+An optional flag that is valid for use only with a property whose data type is [**DEVPROP_TYPE_STRING_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff543614). If the flag is set, the delete operation deletes the string that is specified by *value* from the property string list.
 
 <a href="" id="value"></a>*value*  
 The string to delete from a property string list.
 
 The following example of a *del-property-section* includes two line entries.
 
-The first line includes the *property-name* entry value "DeviceModel", which deletes the DEVPKEY\_DrvPkg\_Model property. The second line entry deletes the string "DeleteThisString" from a custom device property value whose data type is DEVPROP\_TYPE\_STRING\_LIST. In the second line, the *property-category-guid* entry value is "c22189e4-8bf3-4e6d-8467-8dc6d95e2a7e", the *property-identifier* entry value is "2", and the *Flags* entry value is "0x00000001."
+The first line includes the *property-name* entry value "DeviceModel", which deletes the DEVPKEY_DrvPkg_Model property. The second line entry deletes the string "DeleteThisString" from a custom device property value whose data type is DEVPROP_TYPE_STRING_LIST. In the second line, the *property-category-guid* entry value is "c22189e4-8bf3-4e6d-8467-8dc6d95e2a7e", the *property-identifier* entry value is "2", and the *Flags* entry value is "0x00000001."
 
 ```
 [SampleDelPropertySection]
