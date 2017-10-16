@@ -27,7 +27,7 @@ ms.technology: windows-devices
 
 Device Manager lists the devices that are installed in the computer. By default, certain devices are not shown in the list. These *hidden devices* include:
 
-* Devices that have the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) status bit DN\_NO\_SHOW\_IN\_DM set
+* Devices that have the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) status bit DN_NO_SHOW_IN_DM set
 * Devices that are part of a setup class that is marked as a **NoDisplayClass** in the registry (for example, printers and non-PnP drivers)
 * Devices that were physically removed from the computer but whose registry entries were not deleted (also known as [*nonpresent devices*](https://msdn.microsoft.com/library/windows/hardware/ff556313#wdkgloss-nonpresent-device)).
 
@@ -37,9 +37,9 @@ Device Manager lists the devices that are installed in the computer. By default,
 
 To include hidden devices in Device Manager display, click **View** and select **Show Hidden Devices**.
 
-Prior to Windows 8, to view nonpresent devices, you must set the environment variable DEVMGR\_SHOW\_NONPRESENT\_DEVICES to **1** before you open Device Manager, then open Device Manager and select **Show Hidden Devices**.
+Prior to Windows 8, to view nonpresent devices, you must set the environment variable DEVMGR_SHOW_NONPRESENT_DEVICES to **1** before you open Device Manager, then open Device Manager and select **Show Hidden Devices**.
 
-To permanently set the user environment variable DEVMGR\_SHOW\_NONPRESENT\_DEVICES to **1**, use the **Advanced** tab of the system property sheet. After you set this environment variable, run Device Manager and select **Show Hidden Devices**.
+To permanently set the user environment variable DEVMGR_SHOW_NONPRESENT_DEVICES to **1**, use the **Advanced** tab of the system property sheet. After you set this environment variable, run Device Manager and select **Show Hidden Devices**.
 
 For information about how to set user environment variables, see "Setting environment variables" in the Help and Support Center.
 

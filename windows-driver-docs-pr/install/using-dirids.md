@@ -80,7 +80,7 @@ The following table shows several commonly used *dirids*, and the directories th
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>01</strong></p></td>
-<td align="left"><p><em>SourceDrive</em><strong>:\\</strong><em>pathname</em> (the directory from which the INF file was installed)</p></td>
+<td align="left"><p><em>SourceDrive</em><strong>:\\\\</strong><em>pathname</em> (the directory from which the INF file was installed)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>10</strong></p></td>
@@ -90,12 +90,12 @@ The following table shows several commonly used *dirids*, and the directories th
 <tr class="odd">
 <td align="left"><p><strong>11</strong></p></td>
 <td align="left"><p>System directory.</p>
-<p>This is equivalent to <em>%SystemRoot%</em><strong>\\</strong><em>system32</em> for Windows 2000 and later versions of Windows..</p></td>
+<p>This is equivalent to <em>%SystemRoot%</em><strong>\\\\</strong><em>system32</em> for Windows 2000 and later versions of Windows..</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>12</strong></p></td>
 <td align="left"><p>Drivers directory.</p>
-<p>This is equivalent to <em>%SystemRoot%</em><strong>\\</strong><em>system32</em><strong>\\</strong><em>drivers</em> for Windows 2000 and later versions of Windows.</p></td>
+<p>This is equivalent to <em>%SystemRoot%</em><strong>\\\\</strong><em>system32</em><strong>\\\\</strong><em>drivers</em> for Windows 2000 and later versions of Windows.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>13</strong></p></td>
@@ -132,7 +132,7 @@ Don't use [CopyFiles](inf-copyfiles-directive.md) to rename a file for which **D
 <tr class="odd">
 <td align="left"><p><strong>24</strong></p></td>
 <td align="left"><p>Root directory of the system disk.</p>
-<p>This is the root directory of the disk on which Windows files are installed. For example, if <em>dirid</em> 10 is &quot;<em>C:\winnt</em>&quot;, then <em>dirid</em> 24 is &quot;<em>C:\\</em>&quot;.</p></td>
+<p>This is the root directory of the disk on which Windows files are installed. For example, if <em>dirid</em> 10 is &quot;<em>C:\winnt</em>&quot;, then <em>dirid</em> 24 is &quot;<em>C:\\\\</em>&quot;.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>25</strong></p></td>
@@ -145,7 +145,7 @@ Don't use [CopyFiles](inf-copyfiles-directive.md) to rename a file for which **D
 <tr class="even">
 <td align="left"><p><strong>50</strong></p></td>
 <td align="left"><p>System directory</p>
-<p>This is equivalent to <em>%SystemRoot%</em><strong>\\</strong><em>system</em>.</p></td>
+<p>This is equivalent to <em>%SystemRoot%</em><strong>\\\\</strong><em>system</em>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>51</strong></p></td>
@@ -247,7 +247,7 @@ Don't use [CopyFiles](inf-copyfiles-directive.md) to rename a file for which **D
 
  
 
-In addition to the values in this table that are defined in *Setupapi.h*, you can use any of the CSIDL\_*Xxx* values that are defined in *Shlobj.h*. To define a *dirid* value for a folder not listed in this table, add 16384 (0x4000) to the CSIDL\_*Xxx* value. For more information about CSIDL\_*Xxx* values, see the Windows SDK documentation.
+In addition to the values in this table that are defined in *Setupapi.h*, you can use any of the CSIDL_*Xxx* values that are defined in *Shlobj.h*. To define a *dirid* value for a folder not listed in this table, add 16384 (0x4000) to the CSIDL_*Xxx* value. For more information about CSIDL_*Xxx* values, see the Windows SDK documentation.
 
  
 

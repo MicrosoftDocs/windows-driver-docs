@@ -51,7 +51,7 @@ To safely modify the values of other registry entries in a device's software key
 
 -   Set only those device properties that are not reserved by the operating system.
 
-    For example, to change the name of the device as displayed to the user, change its [**DEVPKEY\_Device\_FriendlyName**](https://msdn.microsoft.com/library/windows/hardware/ff542502) device property.
+    For example, to change the name of the device as displayed to the user, change its [**DEVPKEY_Device_FriendlyName**](https://msdn.microsoft.com/library/windows/hardware/ff542502) device property.
 
  
 

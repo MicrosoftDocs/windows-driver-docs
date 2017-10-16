@@ -40,7 +40,7 @@ Device installation mostly runs in a system (noninteractive) service. Therefore,
 
 In most cases, co-installers should not interact with the user except during the processing of a [finish-install action](finish-install-actions--windows-vista-and-later-.md). Finish-install actions run in an interactive context.
 
-**Note**  Co-installers should not fail a DIF code with ERROR\_REQUIRES\_INTERACTIVE\_WINDOWSTATION because that causes the device installation to fail. If the device installation requires user interaction, co-installers should support finish-install actions.
+**Note**  Co-installers should not fail a DIF code with ERROR_REQUIRES_INTERACTIVE_WINDOWSTATION because that causes the device installation to fail. If the device installation requires user interaction, co-installers should support finish-install actions.
 
  
 
@@ -51,7 +51,7 @@ Do not save device installation state within the [*co-installer*](https://msdn.m
 
 To safely preserve device installer state, class installers or co-installers should save the state information as properties within the device's [*driver key*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-driver-key) in the registry. To do this, follow these steps:
 
-1.  To retrieve a registry handle to the driver key for a [*device instance*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-instance), use [**SetupDiOpenDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552079) with the *KeyType* parameter set to DIREG\_DRV.
+1.  To retrieve a registry handle to the driver key for a [*device instance*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-instance), use [**SetupDiOpenDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552079) with the *KeyType* parameter set to DIREG_DRV.
 
 2.  Use [**SetupDiGetDevicePropertyKeys**](https://msdn.microsoft.com/library/windows/hardware/ff551965) (to retrieve all the property keys for a device instance) or [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) (to retrieve a specified device instance property key).
 

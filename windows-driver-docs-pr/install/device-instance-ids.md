@@ -21,7 +21,7 @@ The format of this string consists of an [instance ID](instance-ids.md) concaten
 
 `<device-ID>\<instance-specific-ID>`
 
-The number of characters of a device instance ID, excluding a NULL-terminator, must be less than MAX\_DEVICE\_ID\_LEN. This constraint applies to the sum of the lengths of all the fields and "\\" field separator between the *device ID* and *instance-specific-ID* fields.
+The number of characters of a device instance ID, excluding a NULL-terminator, must be less than MAX_DEVICE_ID_LEN. This constraint applies to the sum of the lengths of all the fields and "\\" field separator between the *device ID* and *instance-specific-ID* fields.
 
 A device instance ID is persistent across system restarts.
 

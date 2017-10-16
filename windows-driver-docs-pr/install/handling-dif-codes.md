@@ -43,17 +43,17 @@ The handle is opaque. Use the handle, for example, to identify the device inform
 The *DeviceInfoSet* might have an associated [device setup class](device-setup-classes.md). If so, call [**SetupDiGetDeviceInfoListClass**](https://msdn.microsoft.com/library/windows/hardware/ff551101) to get the class GUID.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Optionally supplies a pointer to an [**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies a device in the device information set.
+Optionally supplies a pointer to an [**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies a device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>*Device Installation Parameters*   
-These indirect parameters supply information for the device installation in an [**SP\_DEVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346) structure. If *DeviceInfoData* is not **NULL**, there are device installation parameters associated with the *DeviceInfoData*. If *DeviceInfoData* is **NULL**, the device installation parameters are associated with the *DeviceInfoSet*.
+These indirect parameters supply information for the device installation in an [**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346) structure. If *DeviceInfoData* is not **NULL**, there are device installation parameters associated with the *DeviceInfoData*. If *DeviceInfoData* is **NULL**, the device installation parameters are associated with the *DeviceInfoSet*.
 
 Call [**SetupDiGetDeviceInstallParams**](https://msdn.microsoft.com/library/windows/hardware/ff551104) to get the device installation parameters.
 
 <a href="" id="class-installation-parameters"></a>*Class Installation Parameters*  
-The optional indirect parameters are specific to the particular DIF request. These are essentially "DIF request parameters." For example, the class installation parameters for a DIF\_REMOVE installation request are contained in an SP\_REMOVEDEVICE\_PARAMS structure.
+The optional indirect parameters are specific to the particular DIF request. These are essentially "DIF request parameters." For example, the class installation parameters for a DIF_REMOVE installation request are contained in an SP_REMOVEDEVICE_PARAMS structure.
 
-Each SP\_*XXX*\_PARAMS structure starts with a fixed-sized SP\_CLASSINSTALL\_HEADER structure.
+Each SP_*XXX*_PARAMS structure starts with a fixed-sized SP_CLASSINSTALL_HEADER structure.
 
 Call [**SetupDiGetClassInstallParams**](https://msdn.microsoft.com/library/windows/hardware/ff551083) to get the class installation parameters.
 
@@ -73,9 +73,9 @@ Specifies the appropriate return values for the DIF code. See the following figu
 <a href="" id="default-dif-code-handler"></a>**Default DIF Code Handler**  
 Specifies the **SetupDi*Xxx*** function that carries out the system-defined default operations for the DIF code. Not all DIF codes have a default handler. Unless a co-installer or class installer takes steps to prevent the default handler from being called, **SetupDiCallClassInstaller** calls the default handler for a DIF code after it calls the class installer (but before it calls any co-installers that are registered for postprocessing).
 
-If a class installer successfully handles a DIF code and **SetupDiCallClassInstaller** should subsequently call the default handler, the class installer returns ERROR\_DI\_DO\_DEFAULT.
+If a class installer successfully handles a DIF code and **SetupDiCallClassInstaller** should subsequently call the default handler, the class installer returns ERROR_DI_DO_DEFAULT.
 
-If the class installer successfully handles a DIF code, including directly calling the default handler, the class installer should return NO\_ERROR and **SetupDiCallClassInstaller** will not subsequently call the default handler again. Note that the class installer can directly call the default handler, but the class installer should never attempt to supersede the operations of the default handler.
+If the class installer successfully handles a DIF code, including directly calling the default handler, the class installer should return NO_ERROR and **SetupDiCallClassInstaller** will not subsequently call the default handler again. Note that the class installer can directly call the default handler, but the class installer should never attempt to supersede the operations of the default handler.
 
 If the class installer encounters an error, the installer should return an appropriate Win32 error code and **SetupDiCallClassInstaller** will not subsequently call the default handler.
 
