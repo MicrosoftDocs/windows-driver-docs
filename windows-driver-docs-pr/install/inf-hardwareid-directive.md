@@ -39,7 +39,7 @@ HardwareId="pnp-hardware-id"
 <a href="" id="-pnp-hardware-id-"></a>"*pnp-hardware-id*"  
 This value specifies a PnP device hardware ID. The hardware ID must be enclosed in double quotation marks (").
 
-The hardware ID can be fairly generic, such as PCI\\VEN\_1234&DEV\_1234, or very specific, such as PCI\\VEN\_1234&DEV\_1234&SUBSYS\_12345678&REV\_01.
+The hardware ID can be fairly generic, such as PCI\\VEN_1234&DEV_1234, or very specific, such as PCI\\VEN_1234&DEV_1234&SUBSYS_12345678&REV_01.
 
 Only one PnP hardware ID can be specified per HardwareId directive. To specify multiple hardware IDs, use multiple HardwareId directives, one per line.
 

@@ -32,7 +32,7 @@ To install device metadata packages through a [driver package](driver-packages.m
 
 -   All metadata packages in the driver package must be copied to the correct locale-specific folder in the [device metadata store](device-metadata-store.md). This is needed in order to support dynamic changes to locale.
 
--   The COPYFLG\_NODECOMP flag (0x00000800) is required in the [**INF CopyFiles directives**](inf-copyfiles-directive.md) that specify the device metadata packages. This flag guarantees that the binary integrity of the device metadata package is retained and avoids a decompression of the device metadata package when the driver package is installed.
+-   The COPYFLG_NODECOMP flag (0x00000800) is required in the [**INF CopyFiles directives**](inf-copyfiles-directive.md) that specify the device metadata packages. This flag guarantees that the binary integrity of the device metadata package is retained and avoids a decompression of the device metadata package when the driver package is installed.
 
 -   You must first digitally sign the device metadata package before you digitally sign the driver package. For more information about digital signing, see [Driver Signing](driver-signing.md).
 

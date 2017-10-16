@@ -19,7 +19,7 @@ Independent hardware vendors (IHVs) typically provide custom device property pag
 An IHV creates a custom device property page by using a property page provider. A property page provider can be one of the following:
 
 <a href="" id="class-installers-and-co-installers"></a>**Class Installers and Co-installers**  
-A co-installer or class installer can provide one or more custom device property pages by supporting the DIF\_ADDPROPERTYPAGE\_ADVANCED device installation function (DIF) code.
+A co-installer or class installer can provide one or more custom device property pages by supporting the DIF_ADDPROPERTYPAGE_ADVANCED device installation function (DIF) code.
 
 <a href="" id="property-page-extension-dll"></a>**Property Page Extension DLL**  
 A dynamic-link library (DLL) that provides one or more custom device property pages is referred to as a *property page extension DLL*. This type of provider supports custom property pages by implementing the **AddPropSheetPageProc**, **ExtensionPropSheetPageProc**, and other property sheet callback functions.

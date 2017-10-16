@@ -34,7 +34,7 @@ You can use the following guidelines to either verify that your device is instal
 
 -   Run test programs to exercise the device. This includes the testing and debugging tools that are supplied with the Windows Driver Kit (WDK).
 
-Additionally, in Windows Server 2003, Windows XP, and Windows 2000, a [co-installer](writing-a-co-installer.md) can provide a troubleshooter that helps users diagnose problems with your device. See [**DIF\_TROUBLESHOOTER**](https://msdn.microsoft.com/library/windows/hardware/ff543726) for more information.
+Additionally, in Windows Server 2003, Windows XP, and Windows 2000, a [co-installer](writing-a-co-installer.md) can provide a troubleshooter that helps users diagnose problems with your device. See [**DIF_TROUBLESHOOTER**](https://msdn.microsoft.com/library/windows/hardware/ff543726) for more information.
 
  
 
