@@ -11,9 +11,9 @@ ms.technology: windows-devices
 
 # Using the Enterprise WDK 10
 
-The current Windows Driver Kit (WDK) is optimized for individual developers using a state-based installation. Organizations with many developers using the WDK assume a high cost of individual installations of Visual Studio 2015 and the WDK.  To address this, the Enterprise Windows Driver Kit (Enterprise WDK) is a command-line build environment that is file-based, rather than machine based.  Once you create the environment file structure, you can have it consumed by version control software or you can zip the files and copy as needed. A .zip file created with the Enterprise WDK contains all the necessary compilers, linkers, build tools, headers and libs to build Visual Studio-based driver projects.
+The current Windows Driver Kit (WDK) is optimized for individual developers using a state-based installation.  Organizations with many developers using the WDK assume a high cost of individual installations of Visual Studio and the WDK.  To address this, the Enterprise Windows Driver Kit (Enterprise WDK) is a command-line build environment that does not require any installation prior to use.  Once you have downloaded the EWDK, you can have it consumed by version control software or you can zip the files and copy as needed.  A .zip file created with the Enterprise WDK contains all the necessary compilers, linkers, build tools, headers and libs to build Visual Studio-based driver projects.
 
-The Enterprise WDK contains the necessary elements to build drivers and basic Win32 test applications. Use your favorite code editor to modify source code and project files. Because it's a command-line, the Enterprise WDK does lack some of the features incorporated into Visual Studio, such as testing and driver deployment. 
+The Enterprise WDK contains the necessary elements to build drivers and basic Win32 driver test applications.  Use your favorite code editor to modify source code and project files.  Because it is command-line based, the Enterprise WDK does lack some of the features incorporated into Visual Studio, such as an IDE, driver deployment and driver testing. 
 
 ## Enterprise WDK 1703 Prerequisites
 

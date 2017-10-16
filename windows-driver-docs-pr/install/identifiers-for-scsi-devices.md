@@ -172,7 +172,7 @@ The SCSI Port driver currently returns the following device type strings, the fi
 
 An example of a device ID for a disk drive would be as follows:
 
-SCSI\\DiskSEAGATE\_ST39102LW\_\_\_\_\_\_\_0004
+SCSI\\DiskSEAGATE_ST39102LW_______0004
 
 There are four hardware IDs in addition to the device ID:
 
@@ -186,13 +186,13 @@ V(8)p(16)r(1)
 
 In the third and fourth of these additional identifiers, *r(1)* represents just the first character of the revision identifier. These hardware IDs are illustrated by the following examples:
 
-SCSI\\DiskSEAGATE\_ST39102LW\_\_\_\_\_\_\_
+SCSI\\DiskSEAGATE_ST39102LW_______
 
-SCSI\\DiskSEAGATE\_
+SCSI\\DiskSEAGATE_
 
-SCSI\\DiskSEAGATE\_ST39102LW\_\_\_\_\_\_\_0
+SCSI\\DiskSEAGATE_ST39102LW_______0
 
-SEAGATE\_ST39102LW\_\_\_\_\_\_\_0
+SEAGATE_ST39102LW_______0
 
 The SCSI Port driver supplies only one compatible ID, one of the variable-sized generic type codes from the previous table.
 

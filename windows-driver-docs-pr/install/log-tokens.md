@@ -24,16 +24,16 @@ A class installer or co-installer must use the log token that is returned by [**
 
 The following system-defined log tokens are provided by SetupAPI text logging:
 
-<a href="" id="logtoken-unspecified"></a>LOGTOKEN\_UNSPECIFIED  
+<a href="" id="logtoken-unspecified"></a>LOGTOKEN_UNSPECIFIED  
 Represents the part of an unspecified text log that is not part of a [text log section](format-of-a-text-log-section.md). By default, the [SetupAPI logging functions](https://msdn.microsoft.com/library/windows/hardware/ff550878) write a log entry in the application installation text log if this token value is specified.
 
-<a href="" id="logtoken-no-log"></a>LOGTOKEN\_NO\_LOG  
+<a href="" id="logtoken-no-log"></a>LOGTOKEN_NO_LOG  
 Represents the null log. The SetupAPI logging functions do not write a log entry if this token value is specified.
 
-<a href="" id="logtoken-setupapi-applog"></a>LOGTOKEN\_SETUPAPI\_APPLOG  
+<a href="" id="logtoken-setupapi-applog"></a>LOGTOKEN_SETUPAPI_APPLOG  
 Represents the part of the application text log (*SetupAPI.app.log)* that is not part of a text log section. The [SetupAPI logging functions](https://msdn.microsoft.com/library/windows/hardware/ff550878) write log entries in the application installation text log if this token value is specified.
 
-<a href="" id="logtoken-setupapi-devlog"></a>LOGTOKEN\_SETUPAPI\_DEVLOG  
+<a href="" id="logtoken-setupapi-devlog"></a>LOGTOKEN_SETUPAPI_DEVLOG  
 Represents the part of the device installation text log (*SetupAPI.dev.log)* that is not part of a text log section. The SetupAPI logging functions write log entries in the device installation text log if this token value is specified.
 
  

@@ -81,7 +81,7 @@ Specifies the ending address of the I/O port range, also as a 64-bit hexadecimal
 <a href="" id="decode-mask-"></a>*decode-mask*   
 Defines the alias type and can be any of the following.
 
-| Mask value | Meaning         | IOR\_Alias value |
+| Mask value | Meaning         | IOR_Alias value |
 |------------|-----------------|------------------|
 | **3ff**    | 10-bit decode   | 0x04             |
 | **fff**    | 12-bit decode   | 0x10             |

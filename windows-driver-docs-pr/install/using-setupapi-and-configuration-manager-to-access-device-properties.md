@@ -16,7 +16,7 @@ Windows Server 2003, Windows XP, and Windows 2000 support device property repres
 
 On these earlier versions of Windows, [SetupAPI functions](setupapi.md), [configuration manager functions](https://msdn.microsoft.com/library/windows/hardware/ff549713), and Windows registry functions can be used to access device properties, as described in the following topics:
 
-[Accessing Device Instance SPDRP\_Xxx Properties](accessing-device-instance-spdrp-xxx-properties.md)
+[Accessing Device Instance SPDRP_Xxx Properties](accessing-device-instance-spdrp-xxx-properties.md)
 
 [Retrieving a Device Instance Identifier](retrieving-a-device-instance-identifier.md)
 

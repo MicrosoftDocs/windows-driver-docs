@@ -18,22 +18,22 @@ ms.technology: windows-devices
 # Invoking a Device Properties Dialog Box from a Command-line Prompt
 
 
-The [DeviceProperties\_RunDLL](deviceproperties-rundll-function-prototype.md) function in Device Manager can be invoked from a command-line prompt using *rundll32.exe*. The following code example demonstrates the format for invoking **DeviceProperties\_RunDLL** from a command prompt.
+The [DeviceProperties_RunDLL](deviceproperties-rundll-function-prototype.md) function in Device Manager can be invoked from a command-line prompt using *rundll32.exe*. The following code example demonstrates the format for invoking **DeviceProperties_RunDLL** from a command prompt.
 
 ```
 rundll32.exe devmgr.dll, DeviceProperties_RunDLL machine-name-parameter device-instance-ID-parameter
 ```
 
-The format and requirements for the *machine-name-parameter* field is the same as that described for the command-line string supplied by the *lpCmdLine* parameter of **DeviceProperties\_RunDLL**. The format and requirements for the *device-instance-ID-parameter* field is also the same as that described for the *lpCmdLine* command-line string, subject to the following additional requirement: if the *device-instance-ID* subfield includes an ampersand (&), the *device-instance-ID* subfield must be enclosed in quotation marks (").
+The format and requirements for the *machine-name-parameter* field is the same as that described for the command-line string supplied by the *lpCmdLine* parameter of **DeviceProperties_RunDLL**. The format and requirements for the *device-instance-ID-parameter* field is also the same as that described for the *lpCmdLine* command-line string, subject to the following additional requirement: if the *device-instance-ID* subfield includes an ampersand (&), the *device-instance-ID* subfield must be enclosed in quotation marks (").
 
-The following code examples illustrate the format and requirements for supplying a *machine-name-parameter* and *device-instance-ID-parameter* to invoke **DeviceProperties\_RunDLL** from a command-line prompt. These examples correspond to the examples provided in [Invoking a Device Properties Dialog Box Programmatically in an Installation Application](invoking-a-device-properties-dialog-box-programmatically-in-an-install.md).
+The following code examples illustrate the format and requirements for supplying a *machine-name-parameter* and *device-instance-ID-parameter* to invoke **DeviceProperties_RunDLL** from a command-line prompt. These examples correspond to the examples provided in [Invoking a Device Properties Dialog Box Programmatically in an Installation Application](invoking-a-device-properties-dialog-box-programmatically-in-an-install.md).
 
 -   (Windows XP and later) An optional *machine-name-parameter* field is not supplied, which indicates, by default, that the computer is the local computer. A required *device-instance-ID-parameter* field supplies the [device instance identifier](device-instance-ids.md) "root\\system\\0000".
     ```
     rundll32.exe devmgr.dll,DeviceProperties_RunDLL /DeviceID root\system\0000
     ```
 
--   (Windows XP and later) An optional *machine-name-parameter* field is not supplied, which indicates, by default, that the computer is the local computer. A required *device-instance-ID-parameter* field supplies the device instance identifier "PCI\\VEN\_8086&DEV\_2445 &SUBSYS\_010E1028&REV\_12\\3&172E68DD&0&FD". Because the device instance identifier includes an ampersand (&), the *device-instance-ID* subfield is enclosed in quotation marks (").
+-   (Windows XP and later) An optional *machine-name-parameter* field is not supplied, which indicates, by default, that the computer is the local computer. A required *device-instance-ID-parameter* field supplies the device instance identifier "PCI\\VEN_8086&DEV_2445 &SUBSYS_010E1028&REV_12\\3&172E68DD&0&FD". Because the device instance identifier includes an ampersand (&), the *device-instance-ID* subfield is enclosed in quotation marks (").
     ```
     rundll32.exe devmgr.dll,DeviceProperties_RunDLL /DeviceID "PCI\VEN_8086&DEV_2445&SUBSYS_010E1028&REV_12\3&172E68DD&0&FD" 
     ```

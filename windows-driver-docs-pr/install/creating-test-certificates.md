@@ -44,7 +44,7 @@ Where:
 
 For more information about the MakeCert tool and its command-line arguments, see [**MakeCert**](https://msdn.microsoft.com/library/windows/hardware/ff548309).
 
-Also, refer to the readme file *Selfsign\_readme.htm* and the script file *Selfsign\_example.cmd*, which are located in the *src\\general\\build\\driversigning* directory of the Windows Driver Kit (WDK). The script file *Selfsign\_example.cmd* includes a documented example of how to use MakeCert to create a test certificate.
+Also, refer to the readme file *Selfsign_readme.htm* and the script file *Selfsign_example.cmd*, which are located in the *src\\general\\build\\driversigning* directory of the Windows Driver Kit (WDK). The script file *Selfsign_example.cmd* includes a documented example of how to use MakeCert to create a test certificate.
 
  
 

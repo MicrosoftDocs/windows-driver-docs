@@ -103,17 +103,17 @@ The following requirements and recommendations apply to platform-specific and cr
     <tr class="odd">
     <td align="left"><p>x86-based</p></td>
     <td align="left"><p>A:\i386</p></td>
-    <td align="left"><p>A:\\</p></td>
+    <td align="left"><p>A:\\\\</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p>Itanium-based</p></td>
     <td align="left"><p>A:\ia64</p></td>
-    <td align="left"><p>A:\\</p></td>
+    <td align="left"><p>A:\\\\</p></td>
     </tr>
     <tr class="odd">
     <td align="left"><p>x64-based</p></td>
     <td align="left"><p>A:\amd64</p></td>
-    <td align="left"><p>A:\\</p></td>
+    <td align="left"><p>A:\\\\</p></td>
     </tr>
     </tbody>
     </table>
