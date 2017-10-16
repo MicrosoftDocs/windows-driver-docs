@@ -503,7 +503,7 @@
 ### [Debugging in Source Mode](debugging-in-source-mode.md)
 ### [Debugging Optimized Code and Inline Functions](debugging-optimized-code-and-inline-functions-external.md)
 ### [Debugging Managed Code Using the Windows Debugger](debugging-managed-code.md)
-### [Debugging Windows Apps Using the Windows Debugger](debugging-windows-store-apps-using-the-windows-debugger.md)
+### [Debugging UWP Apps Using the Windows Debugger](debugging-uwp-apps-using-the-windows-debugger.md)
 ### [Changing Contexts](changing-contexts.md)
 ### [Controlling Processes and Threads](controlling-processes-and-threads.md)
 ### [Using Debugger Markup Language](debugger-markup-language-commands.md)

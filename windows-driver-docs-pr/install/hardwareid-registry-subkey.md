@@ -51,7 +51,7 @@ The following table defines the format and requirements of the **HardwareID** re
 
 The hardware ID value must follow the format requirements described in this table. Each **HardwareID** subkey must contain either the **LocationPaths** or **ChildLocationPaths** subkeys. Both subkeys could be specified within the **HardwareID** subkey if necessary.
 
-Because the slash character is not a valid character in a registry subkey name, you must replace it with the number character when specifying a bus prefix for the **HardwareID** registry subkey name. For example, if a removable device capability override is specified for the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) with a [hardware ID](hardware-ids.md) of USB\\VID\_1234&PID\_ABCD&REV\_0001, you must create a **HardwareID** registry subkey with a name of USB\#VID\_1234&PID\_ABCD&REV\_0001.
+Because the slash character is not a valid character in a registry subkey name, you must replace it with the number character when specifying a bus prefix for the **HardwareID** registry subkey name. For example, if a removable device capability override is specified for the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) with a [hardware ID](hardware-ids.md) of USB\\VID_1234&PID_ABCD&REV_0001, you must create a **HardwareID** registry subkey with a name of USB\#VID_1234&PID_ABCD&REV_0001.
 
  
 

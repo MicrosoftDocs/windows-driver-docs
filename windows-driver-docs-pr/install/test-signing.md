@@ -139,7 +139,7 @@ The following procedure describes the steps to test sign a driver package:
     /os:2000,XP_X86,XP_X64,Server2003_X64,Vista_X64,Vista_X86,7_x86,7_64,Server2008_x86,Server2008_x64,Sever2008_IA64,Server2008R2_x86,Server2008R2_x64,Server2008R2_IA64,8_x86,8_x64, 8_ARM, Server8_x64
     ```
 
-    The updated inf2cat from the new 8.1 WDK has /os option values of 6\_3\_X86, 6\_3\_X64, 6\_3\_ARM and SERVER\_6\_3\_X64.
+    The updated inf2cat from the new 8.1 WDK has /os option values of 6_3_X86, 6_3_X64, 6_3_ARM and SERVER_6_3_X64.
 
     Example of INF file for the Version section.
 
@@ -157,7 +157,7 @@ The following procedure describes the steps to test sign a driver package:
 
     The /driver (or /drv) option specifies the directory which contains one or more INF files. Within this directory, catalog files are created for those INF files that contain one or more CatalogFile directives. The catalog file name is not restricted to 8.3 name.
 
-    Inf2Cat creates the catalog file tstamd64.cat if the command-line argument /os:7\_X64 is used. Similarly, the tool creates the catalog file toastx86.cat if the /os:XP\_X86, option is used, similarly for Server2008R2\_IA64. In case, only one catalog file is desired, then only one entry in the INF file as shown below will suffice.
+    Inf2Cat creates the catalog file tstamd64.cat if the command-line argument /os:7_X64 is used. Similarly, the tool creates the catalog file toastx86.cat if the /os:XP_X86, option is used, similarly for Server2008R2_IA64. In case, only one catalog file is desired, then only one entry in the INF file as shown below will suffice.
 
     ```
     CatalogFile.NT  = toaster.cat
@@ -288,7 +288,7 @@ The following procedure describes the steps to use on either machine to test the
 
     /r RegistryLocation
 
-    Specifies that the registry location of the system store is under HKEY\_LOCAL\_MACHINE.
+    Specifies that the registry location of the system store is under HKEY_LOCAL_MACHINE.
 
     CertificateStore
 
@@ -396,7 +396,7 @@ Dpinst and Pnputil pre installs the driver package, whereas with Devcon and Wind
      &#39;*PNP0501      - Hardware ID with apostrophe (&#39; prefixes literal match - matches exactly as typed, including the asterisk.)
     ```
 
-    After a device has been removed, to remove the driver, two commands are necessary. Use the first command with “dp\_enum” switch to find the driver inf file name corresponding to the driver package installed in the computer.
+    After a device has been removed, to remove the driver, two commands are necessary. Use the first command with “dp_enum” switch to find the driver inf file name corresponding to the driver package installed in the computer.
 
     ```
     devcon  dp_enum

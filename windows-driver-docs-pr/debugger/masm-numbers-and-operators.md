@@ -226,7 +226,7 @@ You can also use the following additional operators in MASM expressions.
 <tr class="even">
 <td align="left"><p><strong>$iment (</strong><em>Address</em><strong>)</strong></p></td>
 <td align="left"><p>Returns the address of the image entry point in the loaded module list. <em>Address</em> specifies the Portable Executable (PE) image base address. The entry is found by looking up the image entry point in the PE image header of the image that <em>Address</em> specifies.</p>
-<p>You can use this function for both modules that are already in the module list and to set [unresolved breakpoints](unresolved-breakpoints---bu-breakpoints-.md) by using the [<strong>bu</strong>](bp--bu--bm--set-breakpoint-.md) command.</p></td>
+<p>You can use this function for both modules that are already in the module list and to set [unresolved breakpoints](unresolved-breakpoints---bu-breakpoints-.md) by using the <strong>[bu](bp--bu--bm--set-breakpoint-.md)</strong> command.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>$scmp(&quot;</strong><em>String1</em><strong>&quot;, &quot;</strong><em>String2</em><strong>&quot;)</strong></p></td>

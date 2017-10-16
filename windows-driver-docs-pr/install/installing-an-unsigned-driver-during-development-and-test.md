@@ -48,7 +48,7 @@ In order to facilitate debugging such issues, the [kernel-mode code signing poli
 HKLM\SYSTEM\CurrentControlSet\Control\CI\DebugFlags
 ```
 
-This registry value is of type REG\_DWORD, and can be assigned a value based on a bitwise OR of one or more of the following flags:
+This registry value is of type REG_DWORD, and can be assigned a value based on a bitwise OR of one or more of the following flags:
 
 <a href="" id="0x00000001"></a>**0x00000001**  
 This flag value configures the kernel to break into the debugger if a driver is unsigned. The developer or tester can then choose to load the unsigned driver by entering **g** at the debugger prompt.

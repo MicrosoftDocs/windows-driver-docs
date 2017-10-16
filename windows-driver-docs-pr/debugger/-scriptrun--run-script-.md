@@ -85,7 +85,7 @@ This table summarizes which functions are executed by .scriptload and .scriptrun
 <tbody>
 <tr class="odd">
 <td align="left"></td>
-<td align="left">[<strong>.scriptload</strong>](-scriptload--load-script-.md)</td>
+<td align="left"><strong>[.scriptload](-scriptload--load-script-.md)</strong></td>
 <td align="left"><strong>.scriptrun</strong></td>
 </tr>
 <tr class="even">

@@ -36,17 +36,17 @@ For general information about the INF file sections that install device instance
 
 Some INF file entry values provide information that Windows uses to set corresponding system-defined device properties. The following are a few examples of device properties whose values are supplied by such INF file entry values:
 
--   The [**DEVPKEY\_Device\_DeviceDesc**](https://msdn.microsoft.com/library/windows/hardware/ff542407) property for a device instance is set by the *device-description* entry value in the [**INF Models Section**](inf-models-section.md).
+-   The [**DEVPKEY_Device_DeviceDesc**](https://msdn.microsoft.com/library/windows/hardware/ff542407) property for a device instance is set by the *device-description* entry value in the [**INF Models Section**](inf-models-section.md).
 
--   The [**DEVPKEY\_DeviceClass\_ClassName**](https://msdn.microsoft.com/library/windows/hardware/ff542272) property for a [device setup class](device-setup-classes.md) is set by the *class-name* entry value in the INF **Class** directive in the [**INF Version Section**](inf-version-section.md).
+-   The [**DEVPKEY_DeviceClass_ClassName**](https://msdn.microsoft.com/library/windows/hardware/ff542272) property for a [device setup class](device-setup-classes.md) is set by the *class-name* entry value in the INF **Class** directive in the [**INF Version Section**](inf-version-section.md).
 
--   The [**DEVPKEY\_DeviceInterface\_ClassGuid**](https://msdn.microsoft.com/library/windows/hardware/ff542349) property for a device interface is set by the *InterfaceClassGuid* entry value in the [**INF InterfaceInstall32 section**](inf-interfaceinstall32-section.md).
+-   The [**DEVPKEY_DeviceInterface_ClassGuid**](https://msdn.microsoft.com/library/windows/hardware/ff542349) property for a device interface is set by the *InterfaceClassGuid* entry value in the [**INF InterfaceInstall32 section**](inf-interfaceinstall32-section.md).
 
 ### <a href="" id="inf-addreg-directives-and-inf-delreg-directives-that-modify-system-def"></a>INF AddReg Directives and INF DelReg Directives That Modify System-Defined Device Properties
 
 Many system-defined device properties have corresponding system-defined registry entry values. For a device property that has a corresponding registry entry value, using an [**INF AddReg directive**](inf-addreg-directive.md) to add the corresponding registry entry value sets the corresponding device property. Similarly, using an [**INF DelReg directive**](inf-delreg-directive.md) to delete a registry entry value, deletes the corresponding device property.
 
-For example, the following **AddReg** directive would set the **DeviceCharacteristics** registry entry value and the corresponding DEVPKEY\_Device\_Characteristics property for a device instance that is installed by the "Abc\_Device\_Install.HW" section.
+For example, the following **AddReg** directive would set the **DeviceCharacteristics** registry entry value and the corresponding DEVPKEY_Device_Characteristics property for a device instance that is installed by the "Abc_Device_Install.HW" section.
 
 ```
 [Abc_Device_Install.HW]

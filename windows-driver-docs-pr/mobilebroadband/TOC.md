@@ -183,7 +183,7 @@
 #### [Hotspot 2.0](hotspot-20.md)
 ## [Provisioning Windows using a website](provisioning-windows-using-a-website.md)
 ## [Understanding and configuring Windows Connection Manager](understanding-and-configuring-windows-connection-manager.md)
-## [Windows Store mobile broadband apps](windows-store-mobile-broadband-apps.md)
+## [UWP mobile broadband apps](UWP-mobile-broadband-apps.md)
 ### [Mobile broadband app scenarios](mobile-broadband-app-scenarios.md)
 #### [Account management](account-management.md)
 #### [App startup](app-startup.md)

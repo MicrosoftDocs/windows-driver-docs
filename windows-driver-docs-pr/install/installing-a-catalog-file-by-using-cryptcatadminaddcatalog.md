@@ -23,7 +23,7 @@ The installation program must use the Microsoft Windows Software Development Kit
 
 To use these **CryptCATAdmin*Xxx*** cryptography functions, an installation program does the following:
 
-1.  Calls [CryptCATAdminAcquireContext](http://go.microsoft.com/fwlink/p/?linkid=105783) to obtain a handle to a catalog administrator context. The application identifies the subsystem by setting the *pgSubsystem* input parameter to a pointer to the GUID DRIVER\_ACTION\_VERIFY. This GUID is defined in *Softpub.h*.
+1.  Calls [CryptCATAdminAcquireContext](http://go.microsoft.com/fwlink/p/?linkid=105783) to obtain a handle to a catalog administrator context. The application identifies the subsystem by setting the *pgSubsystem* input parameter to a pointer to the GUID DRIVER_ACTION_VERIFY. This GUID is defined in *Softpub.h*.
 
 2.  Calls [CryptCATAdminAddCatalog](http://go.microsoft.com/fwlink/p/?linkid=136382) to add the [catalog file](catalog-files.md) to the system component and driver database. The installation program supplies the handle to the catalog administrator context that was obtained in step 1, a pointer to the fully qualified path of the catalog file, and a pointer to the name of the catalog file that the function uses to install a copy of the catalog file in the database. The function returns a handle to the catalog information context for the catalog file that was added to the database.
 

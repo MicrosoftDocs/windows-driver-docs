@@ -78,7 +78,7 @@ Specifies the name of the catalog file (*Good.cat*).
 Specifies the version of the catalog file.
 
 <a href="" id="encodingtype-0x00010001"></a>EncodingType=0x00010001  
-Specifies the message encoding type that is used to generate the thumbprint. The value 0x00010001 specifies a message encoding type of PKCS\_7\_ASN\_ENCODING | X509\_ASN\_ENCODING.
+Specifies the message encoding type that is used to generate the thumbprint. The value 0x00010001 specifies a message encoding type of PKCS_7_ASN_ENCODING | X509_ASN_ENCODING.
 
 <a href="" id="catattr1-0x10010001-osattr-2-6-0"></a>CATATTR1=0x10010001:OSAttr:2:6.0  
 Specifies an attribute of the catalog file. To specify additional attributes, you must use separate CATATTR options, with each option assigned a unique numeric digit as a suffix. For example, use CATATT1 to specify one catalog file attribute and CATATT2 to specify another.

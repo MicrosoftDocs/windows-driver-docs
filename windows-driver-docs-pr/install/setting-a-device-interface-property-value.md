@@ -16,7 +16,7 @@ To set the value of a [device interface property](https://msdn.microsoft.com/lib
 
 -   Set *DeviceInfoSet* to a handle to a device information set that contains the device interface for which to set a device interface property.
 
--   Set *DeviceInterfaceData* to a pointer to an [**SP\_DEVICE\_INTERFACE\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552342) structure that represents the device interface for which to set a device interface property.
+-   Set *DeviceInterfaceData* to a pointer to an [**SP_DEVICE_INTERFACE_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552342) structure that represents the device interface for which to set a device interface property.
 
 -   Set *PropertyKey* to a pointer to the [**DEVPROPKEY**](https://msdn.microsoft.com/library/windows/hardware/ff543544) structure that represents the property to set.
 
