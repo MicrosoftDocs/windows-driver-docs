@@ -91,6 +91,8 @@ Here are the entries you need to define an INF as an extension INF.
 
 5.  Do not define a service with `SPSVCINST_ASSOCSERVICE`.  However, an extension INF can define other services, such as a filter driver for the device.  For more info about specifying services, see [**INF AddService Directive**](inf-addservice-directive.md).
 
+In most cases, you'll submit an extension INF package to the Hardware Dev Center separately from the base driver package.  For examples on how to package extension INFs, as well as links to sample code, see [Universal Driver Scenarios](../develop/universal-driver-scenarios.md).
+
 The driver validation and submission process is the same for extension INFs as for regular INFs. For more info, see [Windows HLK Getting Started](https://msdn.microsoft.com/library/windows/hardware/dn915002).
 
 ## Example 1: Using an extension INF to set the device friendly name
