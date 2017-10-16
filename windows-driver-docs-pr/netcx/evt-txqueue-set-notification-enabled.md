@@ -23,7 +23,7 @@ Syntax
 ```cpp
 EVT_TXQUEUE_SET_NOTIFICATION_ENABLED EvtTxqueueSetNotificationEnabled;
 
-NTSTATUS EvtTxqueueSetNotificationEnabled(
+VOID EvtTxqueueSetNotificationEnabled(
   _In_ NETTXQUEUE TxQueue,
   _In_ BOOLEAN    NotificationEnabled
 )
@@ -62,7 +62,7 @@ If NetAdapterCx calls *EVT_TXQUEUE_SET_NOTIFICATION_ENABLED* with *NotificationE
 For example:
 
 ```cpp
-NTSTATUS
+VOID
 EvtTxQueueSetNotificationEnabled(
     _In_ NETTXQUEUE rxQueue,
     _In_ BOOLEAN notificationEnabled)
@@ -88,6 +88,8 @@ EvtInterruptDpc(
 NetAdapterCx serializes this callback function along with the receive queue's [*EVT_TXQUEUE_ADVANCE*](evt-rxqueue-advance.md) and [*EVT_TXQUEUE_CANCEL*](evt-txqueue-cancel.md) callback functions.
 
 For more info, see [Transferring Network Data](transferring-network-data.md).
+
+In NetAdapterCx 1.1, the return type of this method was changed from **NTSTATUS** in version 1.0 to **VOID**.
 
 Requirements
 ------------

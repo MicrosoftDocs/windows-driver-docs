@@ -21,7 +21,7 @@ NDIS 6.60 is an incremental update to NDIS 6.50 and does not contain any major n
 
 ## Implementing an NDIS 6.60 driver
 
-An NDIS 6.60 driver must follow the requirements that are defined in [Implementing an NDIS 6.50 driver](introduction-to-ndis-6-50.md#implementing-an-ndis-650-driver).
+An NDIS 6.60 driver must follow the requirements that are defined in [Implementing an NDIS 6.30 driver](implementing-an-ndis-6-30-driver.md).
 
 In addition, an NDIS 6.60 driver must be compliant with the following requirements:
 
