@@ -20,9 +20,9 @@ The application calls [**SetupWriteTextLog**](https://msdn.microsoft.com/library
 
 -   *LogToken* is set to a log token value that either was obtained by calling [**SetupGetThreadLogToken**](https://msdn.microsoft.com/library/windows/hardware/ff552211) or is one of the system-defined log token values that are described in the [Log Tokens](log-tokens.md).
 
--   *Category* is set to TXTLOG\_VENDOR, which indicates that the log entry is made by a vendor-supplied application. Event categories are described in [Enabling Event Categories for a Text Log](enabling-event-categories-for-a-text-log.md).
+-   *Category* is set to TXTLOG_VENDOR, which indicates that the log entry is made by a vendor-supplied application. Event categories are described in [Enabling Event Categories for a Text Log](enabling-event-categories-for-a-text-log.md).
 
--   *Flags* is set to a bitwise OR of TXTLOG\_DETAILS and TXTLOG\_TIMESTAMP. In this example, the indentation depth is not changed and the current indentation depth was previously set to five monospace text spaces. For information about how to change the indentation depth, see [Writing Indented Log Entries](writing-indented-log-entries.md). Event levels are described in the [Setting the Event Level for a Text Log](setting-the-event-level-for-a-text-log.md) topic.
+-   *Flags* is set to a bitwise OR of TXTLOG_DETAILS and TXTLOG_TIMESTAMP. In this example, the indentation depth is not changed and the current indentation depth was previously set to five monospace text spaces. For information about how to change the indentation depth, see [Writing Indented Log Entries](writing-indented-log-entries.md). Event levels are described in the [Setting the Event Level for a Text Log](setting-the-event-level-for-a-text-log.md) topic.
 
 -   *MessageStr* is set to TEXT("Variable of interest: = %d").
 
@@ -38,7 +38,7 @@ DWORD SomeVariable = 1;   // The variable whose value will be logged
 SetupWriteTextLog(LogToken, Category, Flags, TEXT("Variable of interest: = %d"), SomeVariable);
 ```
 
-If the TXTLOG\_VENDOR event category is enabled and the TXTLOG\_DETAILS event level is set for the device installation text log, this code would create an entry in the device installation log in the following format, where the time stamp would be replaced by an actual time stamp.
+If the TXTLOG_VENDOR event category is enabled and the TXTLOG_DETAILS event level is set for the device installation text log, this code would create an entry in the device installation log in the following format, where the time stamp would be replaced by an actual time stamp.
 
 ```
      2005/02/13 22:06:28.109:    :  Variable of interest: Abc = 1

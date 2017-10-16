@@ -55,7 +55,7 @@ To generate *Tostamd64.cat* for x64 versions of Windows, specify the Windows ver
 Inf2Cat /driver:c:\WindDDK\5739\src\general\toaster\toastpkg\toastcd /os:XP_X64,Server2003_X64,Vista_X64
 ```
 
-To generate *Tostamd64.cat* only for Windows Vista x64 Edition, specify only "Vista\_X64" in *WindowsVersionList.* For example, the following Inf2Cat command only verifies that the [driver package](driver-packages.md) can be signed for Windows Vista x64 Edition.
+To generate *Tostamd64.cat* only for Windows Vista x64 Edition, specify only "Vista_X64" in *WindowsVersionList.* For example, the following Inf2Cat command only verifies that the [driver package](driver-packages.md) can be signed for Windows Vista x64 Edition.
 
 ```
 Inf2Cat /driver:c:\WindDDK\5739\src\general\toaster\toastpkg\toastcd /os:Vista_X64

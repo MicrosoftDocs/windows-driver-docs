@@ -16,7 +16,7 @@ To avoid system restarts during device installations, use the following rules:
 
 -   Never use **Reboot** or **Restart** entries in [**INF DDInstall sections**](inf-ddinstall-section.md). These directives were originally provided for compatibility with Windows 9x/Me and should not be used for Windows 2000 and later versions of Windows.
 
--   Do not use COPYFLG\_FORCE\_FILE\_IN\_USE, or COPYFLG\_REPLACE\_BOOT\_FILE flags with [**INF CopyFiles directives**](inf-copyfiles-directive.md), unless absolutely necessary.
+-   Do not use COPYFLG_FORCE_FILE_IN_USE, or COPYFLG_REPLACE_BOOT_FILE flags with [**INF CopyFiles directives**](inf-copyfiles-directive.md), unless absolutely necessary.
 
 -   Assign a new file name to each new version of a class installer or co-installer, or a service DLL. This avoids the need for a system restart if an older version is in use. (In fact, if a new file name is not used for an updated class installer or class co-installer, these new files will not be used for the installation.)
 
@@ -31,9 +31,9 @@ To improve performance, starting with Windows 10, most non-boot-start drivers a
 
 Driver start types that are now file-backed include:
 
--   SERVICE\_SYSTEM\_START (0x00000001)
--   SERVICE\_AUTO\_START (0x00000002)
--   SERVICE\_DEMAND\_START (0x00000003)
+-   SERVICE_SYSTEM_START (0x00000001)
+-   SERVICE_AUTO_START (0x00000002)
+-   SERVICE_DEMAND_START (0x00000003)
 
 Boot start drivers continue to be backed by the paging file.
 
@@ -41,7 +41,7 @@ To update a file-backed driver, use the following best practices. Otherwise, the
 
 If you are using an INF file, follow these steps:
 
-1.  Modify your driver INF file's **CopyFiles** section to use **COPYFLG\_IN\_USE\_RENAME**, as follows:
+1.  Modify your driver INF file's **CopyFiles** section to use **COPYFLG_IN_USE_RENAME**, as follows:
 
     ```
     [MyDriver_Install.NT]
@@ -58,14 +58,14 @@ If you are using an INF file, follow these steps:
     -   Close all open handles to the driver and then stop the driver using one of the following:
 
         -   **sc.exe stop** *&lt;mydriver&gt;*
-        -   **ControlService(SERVICE\_CONTROL\_STOP)**
+        -   **ControlService(SERVICE_CONTROL_STOP)**
 
         For more info, see [**ControlService function**](https://msdn.microsoft.com/library/windows/desktop/ms682108).
 
 If you are not using an INF file, use these steps:
 
 1.  Stop the driver, as described above. Replace the old driver binary file with the new one.
-2.  If you can’t stop the driver, rename the existing file, copy the new file into place, and set up the existing file to be deleted in the future (for example, using [**MoveFileEx**](https://msdn.microsoft.com/library/windows/desktop/aa365240) with the **MOVEFILE\_DELAY\_UNTIL\_REBOOT** flag). In order to start using the new version of the driver, the system will need to be restarted.
+2.  If you can’t stop the driver, rename the existing file, copy the new file into place, and set up the existing file to be deleted in the future (for example, using [**MoveFileEx**](https://msdn.microsoft.com/library/windows/desktop/aa365240) with the **MOVEFILE_DELAY_UNTIL_REBOOT** flag). In order to start using the new version of the driver, the system will need to be restarted.
 
 ## Related topics
 
