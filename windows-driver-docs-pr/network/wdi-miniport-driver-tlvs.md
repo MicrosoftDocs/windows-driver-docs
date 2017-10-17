@@ -164,7 +164,7 @@ This section contains WDI TLVs (Type-Length-Value).
 -   [**WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_PARAMETERS**](wdi-tlv-network-list-offload-parameters.md)
 -   [**WDI\_TLV\_NETWORK\_OFFLOAD\_CHANNELS**](wdi-tlv-network-offload-channels.md)
 -   [**WDI\_TLV\_NEXT\_DIALOG\_TOKEN**](wdi-tlv-next-dialog-token.md)
--   [WDI_TLV_OFFLOAD_SCOPE](wdi-tlv-offload-scope.md)
+-   [**WDI_TLV_OFFLOAD_SCOPE**](wdi-tlv-offload-scope.md)
 -   [**WDI\_TLV\_OPERATING\_CLASS**](wdi-tlv-operating-class.md)
 -   [**WDI\_TLV\_OPERATION\_MODE**](wdi-tlv-operation-mode.md)
 -   [**WDI\_TLV\_P2P\_ACTION\_FRAME\_DEVICE\_CONTEXT**](wdi-tlv-p2p-action-frame-device-context.md)
