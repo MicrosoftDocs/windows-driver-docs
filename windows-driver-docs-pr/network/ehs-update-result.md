@@ -14,6 +14,8 @@ ms.technology: windows-devices
 
 # eHS\_UPDATE\_RESULT enumeration
 
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+
 
 The **eHS\_UPDATE\_RESULT** enumeration indicates the result of a “check for updates” request.
 

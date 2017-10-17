@@ -12,6 +12,7 @@ ms.technology: windows-devices
 
 # Wi-Fi Hotspot Offloading Constants
 
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
 
 This section describes the constants that are defined for the Wi-Fi Hotspot Offloading framework.
 

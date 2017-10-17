@@ -23,7 +23,6 @@ Syntax
 ```cpp
 typedef struct _NET_ADAPTER_CONFIG {
   ULONG                                     Size;
-  NET_ADAPTER_DRIVER_TYPE                   Type;
   PFN_NET_ADAPTER_SET_CAPABILITIES          EvtAdapterSetCapabilities;
   PFN_NET_ADAPTER_CREATE_TXQUEUE            EvtAdapterCreateTxQueue;
   PFN_NET_ADAPTER_CREATE_RXQUEUE            EvtAdapterCreateRxQueue;
@@ -37,9 +36,6 @@ Members
 
 **Size**  
 Size of the **NET_ADAPTER_CONFIG** structure.
-
-**Type**  
-A [**NET_ADAPTER_DRIVER_TYPE**](net-adapter-driver-type.md)-typed value indicating the type of driver that is creating the NetAdapter object. Currently, the only supported value is **NET_ADAPTER_DRIVER_TYPE_MINIPORT**.
 
 **EvtAdapterSetCapabilities**  
 A pointer to the client's implementation of the [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) event callback.
@@ -61,6 +57,8 @@ Remarks
 
 Call [**NET_ADAPTER_CONFIG_INIT**](net-adapter-config-init.md) to initialize this structure.
 
+In NetAdapterCx version 1.1, the **Type** member from version 1.0 was removed.
+
 Requirements
 ------------
 
@@ -72,15 +70,15 @@ Requirements
 <tbody>
 <tr class="odd">
 <td align="left"><p>Minimum KMDF version</p></td>
-<td align="left"><p>1.21</p></td>
+<td align="left"><p>1.23</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Minimum NetAdapterCx version</p></td>
-<td align="left"><p>1.0</p></td>
+<td align="left"><p>1.1</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Header</p></td>
-<td align="left">Netadapter.h</td>
+<td align="left">Netadapter.h (include NetAdapterCx.h) </td>
 </tr>
 </tbody>
 </table>

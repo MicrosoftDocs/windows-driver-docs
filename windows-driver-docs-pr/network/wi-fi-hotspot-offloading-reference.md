@@ -12,6 +12,7 @@ ms.technology: windows-devices
 
 # Wi-Fi Hotspot Offloading Reference
 
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
 
 This section contains descriptions of the Wi-Fi Hotspot Offloading programming elements and related information.
 
