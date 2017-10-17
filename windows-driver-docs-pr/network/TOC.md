@@ -1967,6 +1967,7 @@
 #### [WDI_TLV_NETWORK_LIST_OFFLOAD_PARAMETERS](wdi-tlv-network-list-offload-parameters.md)
 #### [WDI_TLV_NETWORK_OFFLOAD_CHANNELS](wdi-tlv-network-offload-channels.md)
 #### [WDI_TLV_NEXT_DIALOG_TOKEN](wdi-tlv-next-dialog-token.md)
+#### [WDI_TLV_OFFLOAD_SCOPE](wdi-tlv-offload-scope.md)
 #### [WDI_TLV_OPERATING_CLASS](wdi-tlv-operating-class.md)
 #### [WDI_TLV_OPERATION_MODE](wdi-tlv-operation-mode.md)
 #### [WDI_TLV_P2P_ACTION_FRAME_DEVICE_CONTEXT](wdi-tlv-p2p-action-frame-device-context.md)
