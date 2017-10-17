@@ -54,15 +54,15 @@ Settings applications are Windows Universal apps and should therefore conform to
     ```
     <Extensions>
       <rescap:Extension Category="windows.settingsApp">
-        <rescap:SettingsApp SettingsPageUri="ms-settings:l2pageuri">
+        <rescap:SettingsApp SettingsPageUri="ms-settings:yourl2pageuri">
           <rescap:AppLinks>
             <rescap:Link AppActivationMode ="uri://yourapp#deeplink" DisplayName="Link 1 Title" />
 	          <rescap:Link AppActivationMode ="uri://yourapp#deeplink" DisplayName="Link 2 Title" />
-	          <rescap:SearchTerms>
+	        </rescap:AppLinks>
+          <rescap:SearchTerms>
 	            <rescap:Term>setup foo</rescap:Term>
 	            <rescap:Term>disable foo</rescap:Term>
 	          </rescap:SearchTerms>
-	        </rescap:AppLinks>
 	      </rescap:SettingsApp>
 	    </rescap:Extension>
     </Extensions>
