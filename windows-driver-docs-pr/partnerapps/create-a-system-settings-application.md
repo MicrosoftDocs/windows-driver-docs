@@ -59,7 +59,7 @@ Settings applications are Windows Universal apps and should therefore conform to
             <rescap:Link AppActivationMode ="uri://yourapp#deeplink" DisplayName="Link 1 Title" />
 	          <rescap:Link AppActivationMode ="uri://yourapp#deeplink" DisplayName="Link 2 Title" />
 	        </rescap:AppLinks>
-          <rescap:SearchTerms>
+            <rescap:SearchTerms>
 	          <rescap:Term>setup foo</rescap:Term>
 	          <rescap:Term>disable foo</rescap:Term>
 	        </rescap:SearchTerms>
