@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 ## Overview
 
-Traditionally, the Windows Network Driver Interface Specification (NDIS) definitions for Protocol Configuration Operations (PCO) values have been generic, for potentially receiving full PCO values from the modem and network in the future. As of Windows 10, version 1709, however, some modems are only able to pass up operator specific PCO elements to the OS. This topic defines the behavior of the current operator specific-only PCO implementation.
+Traditionally, the Windows NDIS definitions for Protocol Configuration Operations (PCO) values have been generic, for potentially receiving full PCO values from the modem and network in the future. As of Windows 10, version 1709, however, some modems are only able to pass up operator specific PCO elements to the OS. This topic defines the behavior of the current operator specific-only PCO implementation.
 
 There are three scenarios where the PCO value will be passed to the host:
 1.	When a new PCO value has arrived on an activated connection
