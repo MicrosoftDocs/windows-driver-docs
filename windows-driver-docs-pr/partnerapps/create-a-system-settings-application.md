@@ -39,9 +39,9 @@ Partner settings apps have the following characteristics:
 
 -   They are either Universal Windows Platform (UWP) apps, or Windows Phone Silverlight apps.
 
--   Users can uninstall them directly, like other applications. 
+-   Users can uninstall them directly, like other app. 
 
--   They can be upgraded by updating the settings application in the Store, like other Windows apps.
+-   They can be upgraded by updating the settings app in the Store, like other Windows apps.
 
 -   They are preinstalled applications installed at first boot. 
     > As with any other preinstalled application, partners must submit a system settings application to the Windows Dev Center in order to:
@@ -56,7 +56,8 @@ Partner settings apps have the following characteristics:
 > [!NOTE] 
 > Settings applications are Universal Windows Platform apps and should conform to all UWP programming guidelines. See [Guidelines for Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/en-us/library/windows/apps/hh465424.aspx) for more information.
 
-1.  Use the Windows Software Development Kit (SDK) to create a Windows Universal app. For more information on creating a Windows Universal app, see [Build UWP apps with Visual Studio](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/dn609832.aspx). This application will be a system settings application. If you're writing a settings app targeting Windows Phone, you can also create a Windows Phone Silverlight app. 
+1.  Use the Windows Software Development Kit (SDK) to create a Windows Universal app. For more information on creating a Windows Universal app, see [Build UWP apps with Visual Studio](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/dn609832.aspx). 
+    > If you're writing a settings app targeting Windows Phone, you can also create a Windows Phone Silverlight app. 
 
 2. In the application manifest below:
     
@@ -80,20 +81,23 @@ Partner settings apps have the following characteristics:
 	    </rescap:Extension>
     </Extensions>
     ```
+3. To be configured as a preinstalled application, submit your settings application to the Windows Dev Center. After receiving a signed .appx file and obtaining a license file, include the application in the device image.
 
-3.  Configure the system settings application as a preinstalled application by submitting the application to Windows Dev Center to sign the .appx and obtain a license file, and then include the application in the device image.
-
-## <span id="Updated_system_settings_applications"></span><span id="updated_system_settings_applications"></span><span id="UPDATED_SYSTEM_SETTINGS_APPLICATIONS"></span>Updated system settings applications
+## <span id="Updating_system_settings_applications"></span><span id="updating_system_settings_applications"></span><span id="UPDING_SYSTEM_SETTINGS_APPLICATIONS"></span>Updating system settings applications
 
 
-Settings applications follow the typical process for any Windows app. Partners can submit updates to system settings applications to the Store. After an update is submitted, customers who have the system settings application installed are notified of the update and can install the update through the Store.
+Submit settings application updates to the Microsoft Store. After an update is submitted, customers who have the settings app installed are notified of the update and can install the update through the Store. 
 
-Because system settings applications don't appear in devices' application list, users might be confused when they are notified of an update for the application on the Store. To help avoid confusion, Microsoft recommends providing some context for users by specifying in the Store description for the application that it provides system-level settings that appear in **Settings** on the device.
+System settings apps don't appear in device application lists. To avoid confusion when users are notified of updates for the app, ensure its Store description specifies that it provides system-level settings that appear in **settings** for the device.
 
 ## <span id="What_happens_to_legacy_Control_Panel_or_system_settings_apps_when_the_OS_upgrades_to_Windows_10_"></span><span id="what_happens_to_legacy_control_panel_or_system_settings_apps_when_the_os_upgrades_to_windows_10_"></span><span id="WHAT_HAPPENS_TO_LEGACY_CONTROL_PANEL_OR_SYSTEM_SETTINGS_APPS_WHEN_THE_OS_UPGRADES_TO_WINDOWS_10_"></span>What happens to legacy Control Panel or system settings apps when the OS upgrades to Windows 10?
 
 
-If your Control Panel application was written for Windows 7, Windows 8, or Windows 8.1, it will continue to work in the legacy Control Panel, but it will not support any of the features of the Windows 10 system settings app. Likewise, if your legacy system settings app was written for Windows 8 or Windows 8.1, it will continue to work but it will not support any of the features of the Windows 10 system settings app. Legacy apps cannot display in the Windows 10 system settings app. All UWP apps in the Windows 10 settings app must be preinstalled on the machine. Control Panel is deprecated and will be removed in an upcoming release.
+If your Control Panel application was written for Windows 7, Windows 8, or Windows 8.1, it will continue to work in the legacy Control Panel, but won't support any of the features of the Windows 10 system settings app. 
+
+Similarly, if your legacy system settings app was written for Windows 8 or Windows 8.1, it will continue to work, but will not support any of the features of the Windows 10 system settings app. 
+
+Legacy apps cannot display in the Windows 10 system settings app. All UWP apps in the Windows 10 settings app must be preinstalled on the machine. Control Panel is deprecated and will be removed in an upcoming release.
 
  
 
