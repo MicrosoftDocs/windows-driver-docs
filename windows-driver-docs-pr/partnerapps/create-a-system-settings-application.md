@@ -11,9 +11,9 @@ ms.technology: windows-devices
 
 # Create a partner settings app
 
-OEMs and mobile operators can expose custom settings for hardware components that they add to a device to differentiate it from other devices, such as speakers, sensors, or microphones. Up to five of these settings appear as additional links in one of the Settings app's level two pages. 
+OEMs and mobile operators can expose custom settings for device hardware features that differentiate it from other devices. Some examples are speakers, sensors, or microphones. Up to five of these custom settings will appear as additional links in one of the Settings app's level two pages.  
 
-For example, in the **Devices** tab of the **Settings** app, the following pages can have up to five additional links to custom settings apps: 
+For example, in the **Devices** tab of the **Settings** app, the following pages can each have up to five additional links to custom settings apps: 
 * Printers & scanners 
 * Connected devices 
 * Bluetooth 
@@ -28,28 +28,43 @@ For example, in the **Devices** tab of the **Settings** app, the following pages
 
 You can find a list of all level two pages in the [Launch the Windows Settings app](https://msdn.microsoft.com/en-us/windows/uwp/launch-resume/launch-settings-app) topic. It is important to note that all links must relevant to the page they are placed on.
 
-In addition to the five links, you are able to add up to five search terms on each page. Search terms must be relevant to the content on the page. For the best experience, use specific phrases for your terms, as general and one-word terms may cause your links to not be displayed in relevant searchs. For example, if you have a “Fabricam multipen” device, create a search phrase like “set up fabricam mulitipen” instead of a generic search term such as “pen”.
+Additionally, you are able to add up to five search terms on each page, which must be relevant to the content on the page. For the best search experience, use specific phrases. Using general and one-word terms may cause your links to not appear in relevant searches.  
+
+For example, if you have a “Fabricam multipen” device, create a search phrase such as “set up fabricam mulitipen” instead of a generic search term such as “pen”.
 
 ## <span id="Characteristics_of_partner_settings_app"></span><span id="characteristics_of_partner_settings_app"></span><span id="CHARACTERISTICS_OF_PARTNER_SETTINGS_APP"></span>Characteristics of partner settings app
 
 
 Partner settings apps have the following characteristics:
 
--   They are Universal Windows Platform (UWP) apps, or, in the case of Windows Phone, can also be Windows Phone Silverlight apps.
+-   They are either Universal Windows Platform (UWP) apps, or Windows Phone Silverlight apps.
 
--   Users can uninstall them directly just like any other application. They can be upgraded by updating the settings application in the Store like any other Windows app.
+-   Users can uninstall them directly, like other applications. 
 
--   They are preinstalled applications. Like any other preinstalled application, partners must submit a system settings application to Windows Dev Center in order to certify the application and obtain the signed .appx file and license file needed to include the application in a device image. They are installed at first boot.
+-   They can be upgraded by updating the settings application in the Store, like other Windows apps.
+
+-   They are preinstalled applications installed at first boot. 
+    > As with any other preinstalled application, partners must submit a system settings application to the Windows Dev Center in order to:
+    > * certify the application, 
+    > * obtain the signed .appx file and license file needed to include the application in a device image.
 
 -   They are published to a hidden location in the Store that users cannot browse to or find by using search.
 
 ## <span id="Creating_system_settings_applications"></span><span id="creating_system_settings_applications"></span><span id="CREATING_SYSTEM_SETTINGS_APPLICATIONS"></span>Creating system settings applications
 
 
-Settings applications are Windows Universal apps and should therefore conform to all programming guidelines for Windows Universal apps (see [Guidelines for Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/en-us/library/windows/apps/hh465424.aspx) for more information):
+> [!NOTE] 
+> Settings applications are Universal Windows Platform apps and should conform to all UWP programming guidelines. See [Guidelines for Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/en-us/library/windows/apps/hh465424.aspx) for more information.
 
 1.  Use the Windows Software Development Kit (SDK) to create a Windows Universal app. For more information on creating a Windows Universal app, see [Build UWP apps with Visual Studio](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/dn609832.aspx). This application will be a system settings application. If you're writing a settings app targeting Windows Phone, you can also create a Windows Phone Silverlight app. 
-2.  Declare the settings app capability and the SettingPageUri to describe the page that your application link is listed. Also add the AppActivationMode setting to point to the link. Do this in the application manifest: `xmlns:rescap=http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities`
+
+2.  Declare the settings app capability and the SettingPageUri to describe the page that your application link is listed. Also add the AppActivationMode setting to point to the link. Do this in the application manifest: 
+
+2. In the application manifest below:
+    
+    `xmlns:rescap=http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities`
+  
+    Describe the page where your application link is listed using the ```SettingsPageUri ``` attribute. Use the ```AppActivationMode``` attribute to point to this link. Use the code sample below as an example:
 
     ```
     <Extensions>
