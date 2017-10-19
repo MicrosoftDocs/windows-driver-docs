@@ -93,7 +93,7 @@ System settings apps don't appear in device application lists. To avoid confusio
 ## <span id="What_happens_to_legacy_Control_Panel_or_system_settings_apps_when_the_OS_upgrades_to_Windows_10_"></span><span id="what_happens_to_legacy_control_panel_or_system_settings_apps_when_the_os_upgrades_to_windows_10_"></span><span id="WHAT_HAPPENS_TO_LEGACY_CONTROL_PANEL_OR_SYSTEM_SETTINGS_APPS_WHEN_THE_OS_UPGRADES_TO_WINDOWS_10_"></span>What happens to legacy Control Panel or system settings apps when the OS upgrades to Windows 10?
 
 
-If your Control Panel application was written for Windows 7, Windows 8, or Windows 8.1, it will continue to work and be displayed in the legacy Control Panel (until its removal in a future release), but won't be displayed in the Windows 10 system settings app,and support any of its features. 
+If your Control Panel application was written for Windows 7, Windows 8, or Windows 8.1, it will continue to work and be displayed in the legacy Control Panel (until its removal in a future release), but won't be displayed in the Windows 10 system settings app, and support any of its features. 
 
 Similarly, if your legacy system settings app was written for Windows 8 or Windows 8.1, it will continue to work, but will not support any of the features of the Windows 10 system settings app. 
 
