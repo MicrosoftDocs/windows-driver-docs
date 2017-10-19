@@ -58,8 +58,6 @@ Partner settings apps have the following characteristics:
 
 1.  Use the Windows Software Development Kit (SDK) to create a Windows Universal app. For more information on creating a Windows Universal app, see [Build UWP apps with Visual Studio](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/dn609832.aspx). This application will be a system settings application. If you're writing a settings app targeting Windows Phone, you can also create a Windows Phone Silverlight app. 
 
-2.  Declare the settings app capability and the SettingPageUri to describe the page that your application link is listed. Also add the AppActivationMode setting to point to the link. Do this in the application manifest: 
-
 2. In the application manifest below:
     
     `xmlns:rescap=http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities`
