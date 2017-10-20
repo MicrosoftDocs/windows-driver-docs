@@ -28,7 +28,7 @@ ms.technology: windows-devices
 ## <span id="ddk_automatic_checks_tools"></span><span id="DDK_AUTOMATIC_CHECKS_TOOLS"></span>
 
 
-Driver Verifier performs the following checks whenever it is verifying one or more drivers. You cannot activate or deactivate these checks. Starting in the Windows 10 Fall Creators Update, these automatic checks have been moved into relevant [standard flags](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/verifier-command-line). As a result, users enabling Driver Verifier with the standard flags should see no reduction in checks applied.
+Driver Verifier performs the following checks whenever it is verifying one or more drivers. You cannot activate or deactivate these checks. Starting in the Windows 10 Fall Creators Update, these automatic checks have been moved into relevant [standard flags](verifier-command-line.md). As a result, users enabling Driver Verifier with the standard flags should see no reduction in checks applied.
 
 ### <span id="ddk_monitoring_irql_and_memory_routines_tools"></span><span id="DDK_MONITORING_IRQL_AND_MEMORY_ROUTINES_TOOLS"></span>Monitoring IRQL and Memory Routines
 
