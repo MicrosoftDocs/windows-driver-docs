@@ -26,7 +26,7 @@ typedef struct _NET_TXQUEUE_CONFIG {
   PFN_TXQUEUE_CANCEL                   EvtTxQueueCancel;
   PFN_TXQUEUE_SET_NOTIFICATION_ENABLED EvtTxQueueSetNotificationEnabled;
   PFN_TXQUEUE_ADVANCE                  EvtTxQueueAdvance;
-  PCNET_CONTEXT_TYPE_INFO              ContextTypeInfo;
+  ULONG                                RingBufferNumberOfElementsHint;
 } NET_TXQUEUE_CONFIG, *PNET_TXQUEUE_CONFIG;
 ```
 
@@ -45,8 +45,8 @@ A pointer to the client driver's [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-tx
 **EvtTxQueueAdvance**  
 A pointer to the client driver's [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) event callback function. This callback function is required.
 
-**ContextTypeInfo**  
-A pointer to a [**WDF_OBJECT_CONTEXT_TYPE_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff552407) structure.
+**RingBufferNumberOfElementsHint**  
+A hint at the number of elements for the ring buffer. Set this member if the client driver requires a minimum size for the buffer. If this member is set to **0**, NetAdapterCx will set the ring buffer size to the default value.
 
 Remarks
 -------
@@ -54,6 +54,8 @@ Remarks
 Call [**NET_TXQUEUE_CONFIG_INIT**](net-txqueue-config-init.md) to initialize this structure.
 
 The **NET_TXQUEUE_CONFIG** structure is an input parameter to [**NetTxQueueCreate**](nettxqueuecreate.md). The client must use [**NET_TXQUEUE_CONFIG_INIT**](net-txqueue-config-init.md) to initialize this structure.
+
+In NetAdapterCx 1.1, the **ContextTypeInfo** member from version 1.0 was replaced with the **RingBufferNumberOfElementsHint**.
 
 Requirements
 ------------
@@ -66,11 +68,11 @@ Requirements
 <tbody>
 <tr class="odd">
 <td align="left"><p>Minimum KMDF version</p></td>
-<td align="left"><p>1.21</p></td>
+<td align="left"><p>1.23</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Minimum NetAdapterCx version</p></td>
-<td align="left"><p>1.0</p></td>
+<td align="left"><p>1.1</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Header</p></td>

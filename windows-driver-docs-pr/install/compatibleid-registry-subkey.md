@@ -51,7 +51,7 @@ The following table defines the format and requirements of the **CompatibleID** 
 
 The compatible ID value must follow the format requirements described in this table. Each **CompatibleID** subkey must contain either the **LocationPaths** or **ChildLocationPaths** subkeys. Both subkeys could be specified within the **CompatbleID** subkey if necessary.
 
-Because the slash character is not a valid character in a registry subkey name, you must replace it with the number character when specifying a bus prefix for the **CompatibleID** registry subkey name. For example, if a removable device capability override is specified for the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) with a [hardware ID](hardware-ids.md) of PCI\\VEN\_ABCD&DEV\_1234&SUBSYS\_000, you must create a **CompatibleID** registry subkey with a name of PCI\#VEN\_ABCD&DEV\_1234&SUBSYS\_000.
+Because the slash character is not a valid character in a registry subkey name, you must replace it with the number character when specifying a bus prefix for the **CompatibleID** registry subkey name. For example, if a removable device capability override is specified for the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) with a [hardware ID](hardware-ids.md) of PCI\\VEN_ABCD&DEV_1234&SUBSYS_000, you must create a **CompatibleID** registry subkey with a name of PCI\#VEN_ABCD&DEV_1234&SUBSYS_000.
 
  
 

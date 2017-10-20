@@ -145,13 +145,13 @@ GenSFloppy
 
 The following shows the kind of identifiers that can be generated for an IDE hard disk drive:
 
-IDE\\DiskMaxtor\_91000D8\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_SASX1B18
+IDE\\DiskMaxtor_91000D8_____________________SASX1B18
 
-IDE\\Maxtor\_91000D8\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_SASX1B18
+IDE\\Maxtor_91000D8___________________________SASX1B18
 
-IDE\\DiskMaxtor\_91000D8\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+IDE\\DiskMaxtor_91000D8________________________
 
-Maxtor\_91000D8\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_SASX1B18
+Maxtor_91000D8__________________________SASX1B18
 
 GenDisk
 

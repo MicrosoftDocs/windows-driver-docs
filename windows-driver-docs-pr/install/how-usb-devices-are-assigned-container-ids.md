@@ -36,11 +36,11 @@ This heuristic follows these steps for each devnode that the Plug and Play (PnP)
 
 2.  If the USB device does not report a Microsoft OS **ContainerID** descriptor, the USB hub driver queries ACPI to determine whether the device is attached to an external-facing port.
 
-    The operating system tries to locate an ACPI address (**\_ADR**) object that matches the address of the USB port to which the device is connected. If a matching address object is found, the operating system performs the following steps:
+    The operating system tries to locate an ACPI address (**_ADR**) object that matches the address of the USB port to which the device is connected. If a matching address object is found, the operating system performs the following steps:
 
-    -   The USB port capabilities (**\_UPC**) object is queried and the **PortIsConnectable** value is checked. If **PortIsConnectable** has a nonzero value of 0xFF, the port can be used to connect external devices. Therefore, any device connected to this port must be external to the computer.
+    -   The USB port capabilities (**_UPC**) object is queried and the **PortIsConnectable** value is checked. If **PortIsConnectable** has a nonzero value of 0xFF, the port can be used to connect external devices. Therefore, any device connected to this port must be external to the computer.
 
-    -   If the computer implements ACPI 3.0 and the **PortIsConnectable** byte is nonzero, the operating system additionally queries the physical location description (**\_PLD**) object. The operating system checks if the **UserVisible** bit (bit 64) is set on the **\_PLD** object. It does this as an additional check to ensure that the port is both connectable and externally visible to the user.
+    -   If the computer implements ACPI 3.0 and the **PortIsConnectable** byte is nonzero, the operating system additionally queries the physical location description (**_PLD**) object. The operating system checks if the **UserVisible** bit (bit 64) is set on the **_PLD** object. It does this as an additional check to ensure that the port is both connectable and externally visible to the user.
 
     If the information that is collected from ACPI indicates that the device is external, the PnP manager generates a container ID for the device. The **ContainedID** value is either a hash of the device's USB serial number or a randomly generated value. The devnode is assigned this container ID.
 
@@ -48,7 +48,7 @@ This heuristic follows these steps for each devnode that the Plug and Play (PnP)
 
      
 
-3.  If ACPI does not return an **\_ADR** object that matches the USB port address to which the device is connected, the PnP manager generates a container ID based on the removable status of the devnode.
+3.  If ACPI does not return an **_ADR** object that matches the USB port address to which the device is connected, the PnP manager generates a container ID based on the removable status of the devnode.
 
     The USB hub driver queries the USB **RemoveAndPowerMask** descriptor from the hub, and checks whether the **DeviceRemovable** bit is set for the port to which the device is connected. If the **DeviceRemovable** bit is set, devices attached to the port are removable from the hub. If the **DeviceRemovable** bit is not set, devices attached to the port are not-removable from the hub.
 

@@ -20,7 +20,7 @@ To create device property pages, a provider must follow these general requiremen
 
 -   Create the property page by calling the **CreatePropertySheetPage** function. The provider passes the address of the initialized PROPSHEETPAGE structure in this call.
 
--   Supply a **PropSheetPageProc** callback function that handles PSPCB\_CREATE and PSPCB\_RELEASE messages if additional storage must be allocated and released for a property page.
+-   Supply a **PropSheetPageProc** callback function that handles PSPCB_CREATE and PSPCB_RELEASE messages if additional storage must be allocated and released for a property page.
 
 -   Supply a dialog box procedure that handles Windows messages for each custom property page.
 -   Initialize a PROPSHEETPAGE structure with (among other things) the addresses of the **PropSheetPageProc** callback function and dialog box procedure.

@@ -59,13 +59,13 @@ The *link-name* specifies the name of the link for the menu item or group, witho
 
 The optional *name-attributes* value specifies one or more flags that affect the operation on the menu item. This value is expressed as an ORed bitmask of system-defined flag values. Possible flags include the following:
 
-<a href="" id="0x00000001--flg-profitem-currentuser-"></a>**0x00000001** (FLG\_PROFITEM\_CURRENTUSER)  
+<a href="" id="0x00000001--flg-profitem-currentuser-"></a>**0x00000001** (FLG_PROFITEM_CURRENTUSER)  
 Directs Windows to create or delete a Start menu item in the current user's profile. If this flag is not specified, Windows processes the item for all users.
 
-<a href="" id="0x00000002---flg-profitem-delete-"></a>**0x00000002** (FLG\_PROFITEM\_DELETE)  
+<a href="" id="0x00000002---flg-profitem-delete-"></a>**0x00000002** (FLG_PROFITEM_DELETE)  
 Directs Windows to delete the menu item. If this flag is not specified, the item is created.
 
-<a href="" id="0x00000004--flg-profitem-group-"></a>**0x00000004** (FLG\_PROFITEM\_GROUP)  
+<a href="" id="0x00000004--flg-profitem-group-"></a>**0x00000004** (FLG_PROFITEM_GROUP)  
 Directs Windows to create or delete a Start menu group under Start\\Programs. If this flag is not specified, Windows creates or deletes a menu item, not a menu group.
 
 If no flag is specified, Windows creates a menu item for all users.
@@ -82,7 +82,7 @@ This optional entry specifies a subdirectory (submenu) under Start\\Programs in 
 
 For example, if the *profile-items-section* has the entry "Subdir=Accessories\\Games", then the menu item is being created or deleted in the Start\\Programs\\Accessories\\Games submenu.
 
-**Note**  If FLG\_PROFITEM\_GROUP is specified for *name-attributes*, the **SubDir** entry is ignored.
+**Note**  If FLG_PROFITEM_GROUP is specified for *name-attributes*, the **SubDir** entry is ignored.
 
  
 

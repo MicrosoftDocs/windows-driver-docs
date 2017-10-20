@@ -126,7 +126,7 @@ To test your implementation, follow the guidelines given in [USB Type-C manual i
 ## <a href="" id="what-is-the-exact-condition-and-ui-for-the-different-errors-"></a>What is the exact condition and UI for the different errors?
 
 
-Windows 10 can show a set of USB Type-C error messages to help educate users about the limitations with different combinations of USB Type-C hardware and software. For example, the user might get "Device is charging slowly" message if the charger connected to the USB Type-C connector is not powerful enough, not compatible with the system, or is connected to a non-charging port. For more information, see [Troubleshoot messages for a USB Type-C Windows system](introduction-to-usb-type-c-connectors.md).
+Windows 10 can show a set of USB Type-C error messages to help educate users about the limitations with different combinations of USB Type-C hardware and software. For example, the user might get "Device is charging slowly" message if the charger connected to the USB Type-C connector is not powerful enough, not compatible with the system, or is connected to a non-charging port. For more information, see [Troubleshoot messages for a USB Type-C Windows system](http://go.microsoft.com/fwlink/?LinkId=526894).
 
 ## <a href="" id="what-happens-when-a-non-pd-port-is-connected-to-pd-provider-----conversely--what-happens-when-a-pd-consumer-is-connected-to-a-system-that-is-not-a-pd-provider-----"></a>What happens when a non-PD port is connected to PD provider? Conversely, what happens when a PD consumer is connected to a system that is not a PD provider?
 

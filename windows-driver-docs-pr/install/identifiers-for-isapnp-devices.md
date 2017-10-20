@@ -31,13 +31,13 @@ where *m(3)d(4)* together make up an EISA-style identifier for the device--three
 
 The following pair of hardware IDs might be produced by a specific function on a multifunction card:
 
-ISAPNP\\CSC6835\_DEV0000
+ISAPNP\\CSC6835_DEV0000
 
 \*CSC0000
 
 The first of the two hardware IDs is the device ID. If the device in question is one function of a multifunction card, the device ID takes this form:
 
-ISAPNP\\m(3)d(4)\_DEVn(4)
+ISAPNP\\m(3)d(4)_DEVn(4)
 
 where *n(4)* is the decimal index (with leading zeros) of the function.
 

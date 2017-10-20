@@ -186,7 +186,7 @@ Service metadata is created by using the Service Metadata Wizard in the Windows 
 
     ![the service info step of the wizard](images/mbae-sxs81-serviceinfostep.png)
 
-4.  On the **Hardware info** page, select the information that should be used to identify your experience. Once a check box is selected, you can add the appropriate network ranges. The ID generated should exist in the Windows APN database so the right subscriber is identified. For more information about the APN database, see [APN database submission](apn-database-submission.md).
+4.  On the **Hardware info** page, select the information that should be used to identify your experience. Once a check box is selected, you can add the appropriate network ranges. The ID generated should exist in the Windows APN database so the right subscriber is identified. For more information about the APN database, see [COSA/APN database submission](cosa-apn-database-submission.md).
 
     -   If you are a GSM Provider that uses the International Mobile Subscriber Identity (IMSI), select the **IMSI** check box under the **GSM** heading. In the **Provider ID** box, enter the GSM service provider ID. Under the **IMSI/ICCID Ranges** heading, enter the range, and then click **Add**.
 
@@ -709,7 +709,7 @@ Use the following links to learn more about mobile broadband in Windows 8.1 and
 
 -   [Overview of mobile broadband](overview-of-mobile-broadband.md)
 
--   [APN database](apn-database.md)
+-   [APN database overview](apn-database-overview.md)
 
 -   [Service metadata](service-metadata.md)
 

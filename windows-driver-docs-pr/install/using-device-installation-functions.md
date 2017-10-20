@@ -32,7 +32,7 @@ This section summarizes the [device installation functions](https://msdn.microso
 
 -   Manage icons and other bitmaps.
 
-To perform device installation operations that are not supported by the SetupAPI functions described in this section, call the appropriate [general Setup functions](https://msdn.microsoft.com/library/windows/hardware/ff544985) or [PnP Configuration Manager functions](https://msdn.microsoft.com/library/windows/hardware/ff549717) (CM\_*Xxx* functions*).*
+To perform device installation operations that are not supported by the SetupAPI functions described in this section, call the appropriate [general Setup functions](https://msdn.microsoft.com/library/windows/hardware/ff544985) or [PnP Configuration Manager functions](https://msdn.microsoft.com/library/windows/hardware/ff549717) (CM_*Xxx* functions*).*
 
 The following tables provide summaries of the following types of functions:
 
