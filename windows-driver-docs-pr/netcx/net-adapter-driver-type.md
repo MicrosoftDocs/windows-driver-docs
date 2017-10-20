@@ -12,8 +12,10 @@ api_type:
 
 # NET_ADAPTER_DRIVER_TYPE enumeration
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+> [!WARNING]
+> This enumeration is no longer supported in NetAdapterCx version 1.1 and later.
 
 Identifies the type of network adapter driver.
 

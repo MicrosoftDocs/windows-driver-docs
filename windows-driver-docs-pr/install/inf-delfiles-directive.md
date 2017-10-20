@@ -68,15 +68,15 @@ Do not specify a file that is listed in a [**CopyFiles**](inf-copyfiles-directiv
 <a href="" id="flag"></a>*flag*  
 This optional value can be one of the following, expressed in hexadecimal notation as shown here or as a decimal value:
 
-<a href="" id="0x00000001--delflg-in-use-"></a>**0x00000001** (DELFLG\_IN\_USE)  
+<a href="" id="0x00000001--delflg-in-use-"></a>**0x00000001** (DELFLG_IN_USE)  
 Delete the named file, possibly after it was used during the installation process.
 
 Setting this flag value in an INF queues the file-deletion operation until the system has restarted if the given file cannot be deleted because it is in use while this INF is being processed. Otherwise, such a file will not be deleted.
 
-<a href="" id="0x00010000---delflg-in-use1-"></a>**0x00010000** (DELFLG\_IN\_USE1)  
-(Windows 2000 or later versions of Windows) This flag is a high-word version of the DELFLG\_IN\_USE flag, and it has the same purpose and effect. This flag should be used in only for installations on NT-based systems.
+<a href="" id="0x00010000---delflg-in-use1-"></a>**0x00010000** (DELFLG_IN_USE1)  
+(Windows 2000 or later versions of Windows) This flag is a high-word version of the DELFLG_IN_USE flag, and it has the same purpose and effect. This flag should be used in only for installations on NT-based systems.
 
-Setting this flag value in an INF prevents conflicts with the COPYFLG\_WARN\_IF\_SKIP flag in an INF with both **DelFiles** and [**CopyFiles**](inf-copyfiles-directive.md) directives that reference the same *file-list-section*.
+Setting this flag value in an INF prevents conflicts with the COPYFLG_WARN_IF_SKIP flag in an INF with both **DelFiles** and [**CopyFiles**](inf-copyfiles-directive.md) directives that reference the same *file-list-section*.
 
 Remarks
 -------

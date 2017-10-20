@@ -15,6 +15,8 @@ ms.technology: windows-devices
 
 # HS\_PLUGIN\_PROFILE structure
 
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+
 
 The **HS\_PLUGIN\_PROFILE** structure provides information about the plugin. The members of this structure are set by the plugin during execution of the [**HSPluginInitPlugin**](hsplugininitplugin.md) function that is called by the host.
 

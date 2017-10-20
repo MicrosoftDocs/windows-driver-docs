@@ -51,6 +51,8 @@ The client can check if this pattern is enabled by calling [**NetPowerSettingsIs
 
 The client driver can use the pointer to examine the [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) structure, but should not retain it. NetAdapterCx automatically releases the pattern structure during WoL pattern removal.
 
+In NetAdapterCx version 1.1, the IRQL of this method was changed from DISPATCH_LEVEL to PASSIVE_LEVEL.
+
 Requirements
 ------------
 
@@ -66,11 +68,11 @@ Requirements
 </tr>
 <tr class="even">
 <td align="left"><p>Minimum KMDF version</p></td>
-<td align="left"><p>1.21</p></td>
+<td align="left"><p>1.23</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Minimum NetAdapterCx version</p></td>
-<td align="left"><p>1.0</p></td>
+<td align="left"><p>1.1</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Header</p></td>
@@ -82,7 +84,7 @@ Requirements
 </tr>
 <tr class="even">
 <td align="left"><p>IRQL</p></td>
-<td align="left"><p>DISPATCH_LEVEL</p></td>
+<td align="left"><p>PASSIVE_LEVEL</p></td>
 </tr>
 </tbody>
 </table>

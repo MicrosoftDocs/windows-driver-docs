@@ -22,6 +22,9 @@ Starting in Windows 10, version 1703, Windows supports passing through SAR confi
 
 This feature is supported by adding in two new OIDs and CIDs. For IHV partners that implement MBIM, only the CID version needs to be supported.
 
+> [!NOTE]
+> This topic defines the interface for IHV partners to implement SAR platform support in their modem device drivers. If you are looking for info about customizing the SAR mapping table for a device, see [Customize a Specific Absorption Rate (SAR) mapping table](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-sar-mapping-table).
+
 ## MB Interface Update for SAR Platform Support
 
 An MBIM-compliant device implements and reports the following device service when queried by CID_MBIM_DEVICE_SERVICES. The existing well-known services are defined in section 10.1 of the USB NCM MBIM 1.0 specification. Microsoft extends this to define the following service.

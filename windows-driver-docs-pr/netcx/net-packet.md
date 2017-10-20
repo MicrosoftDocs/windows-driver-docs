@@ -17,12 +17,12 @@ typedef struct _NET_PACKET {
   NET_PACKET_FRAGMENT Data;
   NET_PACKET_LAYOUT   Layout;
   NET_PACKET_CHECKSUM Checksum;
-  UINT16              IgnoreThisPacket  :1;
-  UINT16              AdvancedOffloadRequested  :1;
-  UINT16              Reserved1  :14;
+  UINT16              IgnoreThisPacket          : 1;
+  UINT16              AdvancedOffloadRequested  : 1;
+  UINT16              Reserved1                 : 14;
   UINT32              Hash;
   UINT32              Reserved2;
-  PVOID               Reserved3;
+  PVOID               Reserved3[2];
 } NET_PACKET, *PNET_PACKET;
 ```
 

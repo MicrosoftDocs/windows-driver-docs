@@ -16,9 +16,9 @@ ms.technology: windows-devices
 # Setting the Directory Path of the Text Logs
 
 
-By default, the SetupAPI text logs are located in the system Windows directory. The location of the SetupAPI text logs can be changed by setting the following REG\_SZ registry value:
+By default, the SetupAPI text logs are located in the system Windows directory. The location of the SetupAPI text logs can be changed by setting the following REG_SZ registry value:
 
-**HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Setup\\LogPath**
+**HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Setup\\LogPath**
 
 The **LogPath** registry value must be a fully qualified directory path. The path must exist, and the path cannot include a file name.
 

@@ -8,7 +8,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# MB Multi-SIM Operations
+# MB Multi-SIM operations
 
 ## Desktop Multi-Modem Multi-Executor Support
 
@@ -171,7 +171,7 @@ The following CIDs are defined for **UUID_MS_BasicConnect**:
 | MBIM_CID_MS_DEVICE_SLOT_MAPPINGS | 7 | Windows 10, version 1703 |
 | MBIM_CID_MS_SLOT_INFO_STATUS | 8 | Windows 10, version 1703 |
 
-All offsets in the CID sections below are calculated from the beginning of the InformationBuffer MBIM_COMMAND_MSG.
+All offsets in the following CID sections are calculated from the beginning of the InformationBuffer MBIM_COMMAND_MSG.
 
 ### MBIM_CID_MS_SYS_CAPS
 
@@ -385,19 +385,21 @@ The following MBIM_MS_SLOT_INFO structure shall be used in the InformationBuffer
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
 | 0 | 4 | SlotIndex | UINT32 | The index of the slot. |
-| 4 | 4 | State | MBIM_MS_UICC_SLOT_STATE | THe state of the slot and card (if applicable). |
+| 4 | 4 | State | MBIM_MS_UICC_SLOT_STATE | The state of the slot and card (if applicable). |
 
 The following MBIM_MS_UICCSLOT_STATE structure describes the possible states of the slot.
 
 | States | Value | Description |
 | --- | --- | --- |
-| MBIMMsUICCSlotStateUnknown | 0 | The modem is still in the process of initializing so the SIM slot state is not deterministic. |
-| MBIMMsUICCSlotStateEmpty | 1 | The UICC slot is powered off and no card is present. An implementation that is unable to determine the presence of a card in a slot that is powered off reports its state as MBIMUICCSlotStateOff. |
-| MBIMMsUICCSlotStateOff | 2 | The UICC slot is powered off. |
-| MBIMMsUICCSlotStateEmpty | 3 | The UICC slot is empty (there is no card in it). |
-| MBIMMsUICCSlotStateNotReady | 4 | The UICC slot is occupied and powered on but the card within it is not yet ready. |
-| MBIMMsUICCSlotStateActive | 5 | The UICC slot is occupied and the card within it is ready. |
-| MBIMMsUICCSlotStateError | 6 | The UICC slot is occupied and powered on but the card is in an error state and cannot be used until it is next reset. |
+| UICCSlotStateUnknown | 0 | The modem is still in the process of initializing so the SIM slot state is not deterministic. |
+| UICCSlotStateOffEmpty | 1 | The UICC slot is powered off and no card is present. An implementation that is unable to determine the presence of a card in a slot that is powered off reports its state as UICCSlotStateOff. |
+| UICCSlotStateOff | 2 | The UICC slot is powered off. |
+| UICCSlotStateEmpty | 3 | The UICC slot is empty (there is no card in it). |
+| UICCSlotStateNotReady | 4 | The UICC slot is occupied and powered on but the card within it is not yet ready. |
+| UICCSlotStateActive | 5 | The UICC slot is occupied and the card within it is ready. |
+| UICCSlotStateError | 6 | The UICC slot is occupied and powered on but the card is in an error state and cannot be used until it is next reset. |
+| UICCSlotStateActiveEsim | 7 | The card in the slot is an eSIM with an active profile and is ready to accept commands. |
+| UICCSlotStateActiveEsimNoProfiles | 8 | The card in the slot is an eSIM with no profiles (or no active profiles) and is ready to accept commands. |
 
 #### Status Codes
 

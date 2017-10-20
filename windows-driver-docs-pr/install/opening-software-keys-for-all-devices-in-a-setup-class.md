@@ -23,7 +23,7 @@ To safely enumerate and open the subkeys of a device setup class, follow these s
 
 2.  Use [**SetupDiEnumDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff551010) to enumerate all devices in the set.
 
-3.  Use [**SetupDiOpenDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552079) to open the software key for each device. The *KeyType* parameter must be set to DIREG\_DRV.
+3.  Use [**SetupDiOpenDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552079) to open the software key for each device. The *KeyType* parameter must be set to DIREG_DRV.
 
 **Note**  Some devices might not have software keys, such as when a device is present and enumerated by the [Plug and Play (PnP) manager](pnp-manager.md) but has not been installed.
 

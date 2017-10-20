@@ -14,6 +14,8 @@ ms.technology: windows-devices
 
 # HS\_PLUGIN\_DISCONNECT\_FROM\_NETWORK function
 
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+
 
 The **HS\_PLUGIN\_DISCONNECT\_FROM\_NETWORK** function notifies the plugin that the device will be disconnected from the network.
 

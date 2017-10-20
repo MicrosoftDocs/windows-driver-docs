@@ -84,31 +84,31 @@ The property identifier that indicates the specific property within the property
 <a href="" id="type"></a>type  
 The numeric value, in decimal or hexadecimal format, of the [property-data-type identifier](https://msdn.microsoft.com/library/windows/hardware/ff541476) for the property that is specified by the *property-category-guid* value and the *property-pid* value. Only the following [**base data types**](https://msdn.microsoft.com/library/windows/hardware/ff537793) are supported:
 
--   DEVPROP\_TYPE\_STRING
--   DEVPROP\_TYPE\_STRING\_LIST
--   DEVPROP\_TYPE\_BINARY
--   DEVPROP\_TYPE\_BOOLEAN
--   DEVPROP\_TYPE\_UINT32
+-   DEVPROP_TYPE_STRING
+-   DEVPROP_TYPE_STRING_LIST
+-   DEVPROP_TYPE_BINARY
+-   DEVPROP_TYPE_BOOLEAN
+-   DEVPROP_TYPE_UINT32
 
-For example, the decimal value of the DEVPROP\_TYPE\_STRING data type is 18 (0x00000012) and the decimal value of the DEVPROP\_TYPE\_STRING\_LIST data type is 2066 (0x00002012).
+For example, the decimal value of the DEVPROP_TYPE_STRING data type is 18 (0x00000012) and the decimal value of the DEVPROP_TYPE_STRING_LIST data type is 2066 (0x00002012).
 
 <a href="" id="flags"></a>*flags*  
 An optional hexadecimal value that is a bitwise OR of the following flags that control the add operation:
 
-<a href="" id="0x00000001--flg-addproperty-noclobber--"></a>**0x00000001** (FLG\_ADDPROPERTY\_NOCLOBBER)   
+<a href="" id="0x00000001--flg-addproperty-noclobber--"></a>**0x00000001** (FLG_ADDPROPERTY_NOCLOBBER)   
 A flag that prevents the value entry value from replacing the existing property value. If a driver writer wants to make a property able to be overridden through **Include** and **Needs** directives, the writer must specify this flag for that property. This is because Windows processes the INF sections that are referenced by **Include** and **Needs** directives after Windows processes all other directives within the INF section that included the **Include** and **Needs** directives.
 
-<a href="" id="0x00000002--flg-addproperty-overwriteonly--"></a>**0x00000002** (FLG\_ADDPROPERTY\_OVERWRITEONLY)   
+<a href="" id="0x00000002--flg-addproperty-overwriteonly--"></a>**0x00000002** (FLG_ADDPROPERTY_OVERWRITEONLY)   
 A flag that sets the property value to the value entry value only if the specified property already exists.
 
-<a href="" id="0x00000004--flg-addproperty-append--"></a>**0x00000004** (FLG\_ADDPROPERTY\_APPEND)   
-A flag that appends the value entry value to that of an existing property string value. This flag is valid only if the property data type is DEVPROP\_TYPE\_STRING\_LIST. The supplied string is not appended to an existing property string value if the supplied string is already present in the existing string value.
+<a href="" id="0x00000004--flg-addproperty-append--"></a>**0x00000004** (FLG_ADDPROPERTY_APPEND)   
+A flag that appends the value entry value to that of an existing property string value. This flag is valid only if the property data type is DEVPROP_TYPE_STRING_LIST. The supplied string is not appended to an existing property string value if the supplied string is already present in the existing string value.
 
-<a href="" id="0x00000008--flg-addproperty-or-"></a>**0x00000008** (FLG\_ADDPROPERTY\_OR)  
-A flag that performs a bitwise OR of the value entry value to that of the existing property value. This flag is valid only if the property data type is DEVPROP\_TYPE\_UINT32.
+<a href="" id="0x00000008--flg-addproperty-or-"></a>**0x00000008** (FLG_ADDPROPERTY_OR)  
+A flag that performs a bitwise OR of the value entry value to that of the existing property value. This flag is valid only if the property data type is DEVPROP_TYPE_UINT32.
 
-<a href="" id="0x00000010--flg-addproperty-and-"></a>**0x00000010** (FLG\_ADDPROPERTY\_AND)  
-A flag that performs a bitwise AND of the value entry value to that of the existing property value. This flag is valid only if the property data type is DEVPROP\_TYPE\_UINT32.
+<a href="" id="0x00000010--flg-addproperty-and-"></a>**0x00000010** (FLG_ADDPROPERTY_AND)  
+A flag that performs a bitwise AND of the value entry value to that of the existing property value. This flag is valid only if the property data type is DEVPROP_TYPE_UINT32.
 
 <a href="" id="value"></a>*value*  
 The value that the add operation uses to modify a property value, depending on the property data type and the value of the *flags* entry.
@@ -131,7 +131,7 @@ The first line includes the *property-name* entry value "DeviceModel" and the *v
 
 The second line entry sets a custom property in a custom property category. The property-category-guid entry value is "c22189e4-8bf3-4e6d-8467-8dc6d95e2a7e" and the property-identifier entry value is "2".
 
-The optional *flags* entry value is not present, and the type entry value is "18" (DEVPROP\_TYPE\_STRING). The value entry value is "String value for property 1."
+The optional *flags* entry value is not present, and the type entry value is "18" (DEVPROP_TYPE_STRING). The value entry value is "String value for property 1."
 
 ```
 [SampleAddPropertySection]

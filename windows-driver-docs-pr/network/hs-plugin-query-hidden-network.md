@@ -14,6 +14,8 @@ ms.technology: windows-devices
 
 # HS\_PLUGIN\_QUERY\_HIDDEN\_NETWORK function
 
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+
 
 The **HS\_PLUGIN\_QUERY\_HIDDEN\_NETWORK** function returns the network identity and network profile for a hidden network.
 

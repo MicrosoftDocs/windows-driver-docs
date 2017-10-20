@@ -164,31 +164,31 @@ A number that represents the minor version number for the operating system. The 
 
 <a href="" id="producttype"></a>*ProductType*
 
-A number that represents *one* of the VER\_NT\_*xxxx* flags defined in *Winnt.h*, such as the following:
+A number that represents *one* of the VER_NT_*xxxx* flags defined in *Winnt.h*, such as the following:
 
-**0x0000001** (VER\_NT\_WORKSTATION)
+**0x0000001** (VER_NT_WORKSTATION)
 
-**0x0000002** (VER\_NT\_DOMAIN\_CONTROLLER)
+**0x0000002** (VER_NT_DOMAIN_CONTROLLER)
 
-**0x0000003** (VER\_NT\_SERVER)
+**0x0000003** (VER_NT_SERVER)
 
 If a product type is specified, the INF file will be used only if the operating system matches the specified product type. If the INF file supports multiple product types for a single operating system version, multiple *TargetOSVersion* entries are required.
 
 *SuiteMask*
 
-A number that represents *a combination of* one or more of the VER\_SUITE\_*xxxx* flags defined in *Winnt.h*. These flags include the following:
+A number that represents *a combination of* one or more of the VER_SUITE_*xxxx* flags defined in *Winnt.h*. These flags include the following:
 
-**0x00000001** (VER\_SUITE\_SMALLBUSINESS)  
-**0x00000002** (VER\_SUITE\_ENTERPRISE)  
-**0x00000004** (VER\_SUITE\_BACKOFFICE)  
-**0x00000008** (VER\_SUITE\_COMMUNICATIONS)  
-**0x00000010** (VER\_SUITE\_TERMINAL)  
-**0x00000020** (VER\_SUITE\_SMALLBUSINESS\_RESTRICTED)  
-**0x00000040** (VER\_SUITE\_EMBEDDEDNT)  
-**0x00000080** (VER\_SUITE\_DATACENTER)  
-**0x00000100** (VER\_SUITE\_SINGLEUSERTS)  
-**0x00000200** (VER\_SUITE\_PERSONAL)  
-**0x00000400** (VER\_SUITE\_SERVERAPPLIANCE)  
+**0x00000001** (VER_SUITE_SMALLBUSINESS)  
+**0x00000002** (VER_SUITE_ENTERPRISE)  
+**0x00000004** (VER_SUITE_BACKOFFICE)  
+**0x00000008** (VER_SUITE_COMMUNICATIONS)  
+**0x00000010** (VER_SUITE_TERMINAL)  
+**0x00000020** (VER_SUITE_SMALLBUSINESS_RESTRICTED)  
+**0x00000040** (VER_SUITE_EMBEDDEDNT)  
+**0x00000080** (VER_SUITE_DATACENTER)  
+**0x00000100** (VER_SUITE_SINGLEUSERTS)  
+**0x00000200** (VER_SUITE_PERSONAL)  
+**0x00000400** (VER_SUITE_SERVERAPPLIANCE)  
 
 If one or more suite mask values are specified, the INF file will be used only if the operating system matches all the specified product suites. If the INF file supports multiple product suite combinations for a single operating system version, multiple *TargetOSVersion* entries are required.
 
