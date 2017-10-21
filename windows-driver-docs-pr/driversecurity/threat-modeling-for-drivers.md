@@ -55,7 +55,7 @@ Threat modeling is most effective when performed in an organized, structured way
 
 One way to organize a threat modeling effort is to follow these steps:
 
-1.  Create a structured diagram showing data flow through the driver. Include all possible tasks that the driver performs and the source and destination of all input and output from the driver. A formal data flow diagram, or similar structured diagram, can help you to analyze the path of data through your driver and to identify the driver’s external interfaces, boundaries, and interactions. Numerous books about data flow diagrams are available. To find references, search on “data flow diagram” in your favorite Internet search engine.
+1.  Create a structured diagram showing data flow through the driver. Include all possible tasks that the driver performs and the source and destination of all input and output from the driver. A formal data flow diagram, or similar structured diagram, can help you to analyze the path of data through your driver and to identify the driver’s external interfaces, boundaries, and interactions. 
 2.  Analyze the potential security threats, based on the data flow diagram.
 3.  Assess the threats that you identified in the previous step and determine how to mitigate them.
 
@@ -122,7 +122,7 @@ After you identify the points at which a driver might be vulnerable, you can det
 -   Could malicious use of a feature compromise security?
 -   Do default settings provide adequate security?
 
-### <span id="The_STRIDE_approach"></span><span id="the_stride_approach"></span><span id="THE_STRIDE_APPROACH"></span>The STRIDE approach to threat categorization
+## <span id="The_STRIDE_approach"></span><span id="the_stride_approach"></span><span id="THE_STRIDE_APPROACH"></span>The STRIDE approach to threat categorization
 
 The acronym STRIDE describes six categories of threats to software. This acronym is derived from:
 
@@ -147,7 +147,7 @@ Using STRIDE as a guide, you can pose detailed questions about the kinds of atta
 
     Elevation-of-privilege attacks can also occur if a kernel-mode driver relies on the **RequestorMode** value in the IRP header to determine whether an I/O request comes from a kernel-mode or user-mode caller. In IRPs that arrive from the network or the Server service (SRVSVC), the value of **RequestorMode** is **KernelMode**, regardless of the origin of the request. To avoid such attacks, drivers must perform access control checks for such requests instead of simply using the value of **RequestorMode**.
 
-### <span id="analysistech"></span><span id="ANALYSISTECH"></span>Driver analysis techniques
+## <span id="analysistech"></span><span id="ANALYSISTECH"></span>Driver analysis techniques
 
 A simple way to organize the analysis is to list the vulnerable areas along with the potential threats and one or more scenarios for each type of threat.
 
@@ -206,7 +206,7 @@ Either technique can help you to understand which threats are most dangerous and
 
 ## <span id="Fast_path_threat_modeling"></span><span id="fast_path_threat_modeling"></span><span id="FAST_PATH_THREAT_MODELING"></span>Fast path threat modeling
 
-If resources are limited, instead of creating a complete threat model diagram, a summary outline can be created to help assess security risks to the driver. For example the text below describes some of the surface areas diagramed in the example driver described in [Create threat models for drivers](threat-models-for-drivers-create.md).
+If resources are limited, instead of creating a complete threat model diagram, a summary outline can be created to help assess security risks to the driver. For example the text below describes some of the surface areas diagramed in the example driver described in the previous example.
 
 The driver receives data from the operating system in several types of requests:
 
@@ -249,7 +249,7 @@ To prioritize the threats to your driver, rank each threat from 1 to 10 on all 5
 -   **Affected Users**. The number of users that could be affected by an attack is another important factor in assessing a threat. An attack that could affect at most one or two users would rate relatively low on this measure. Conversely, a denial-of-service attack that crashes a network server could affect thousands of users and therefore would rate much higher.
 -   **Discoverability** is the likelihood that a threat will be exploited. Discoverability is difficult to estimate accurately. The safest approach is to assume that any vulnerability will eventually be taken advantage of and, consequently, to rely on the other measures to establish the relative ranking of the threat.
 
-**Sample: Assessing Threats**
+**Sample: Assessing threats using DREAD**
 
 Continuing with the example discussed in [Create threat models for drivers](threat-models-for-drivers-create.md), the following table shows how a designer might assess the hypothetical denial-of-service attack:
 
@@ -313,11 +313,13 @@ For more information about the SDL process, see these additional resources:
 For driver developers:
 
 -   Make threat modeling part of driver design.
--   Take steps to efficiently [Mitigate threats](#mitigate)
+-   Take steps to efficiently mitigate threats in your driver code.
 -   Become familiar with the security and reliability issues that apply to your driver and device type. For more information, see the device-specific sections of the Windows Device Driver Kit (WDK).
--   Understand which checks the operating system, I/O manager, and any higher-level drivers perform before user requests reach your driver—and which checks they do not perform.
+-   Understand which checks the operating system, I/O manager, and any higher-level drivers perform before user requests reach your driver — and which checks they do not perform.
 -   Use tools from the WDK, such as driver verifier to test and verify your driver.
--   [Review public databases of known threats and software vulnerabilities](#reviewthreats)
+-   [Review public databases of known threats and software vulnerabilities](#reviewthreats).
+
+For additional driver security resources, see [Driver Security Checklist](driver-security-checklist.md).
 
 
 ## <span id="Resources"></span><span id="resources"></span><span id="RESOURCES"></span>Software Security Resources
@@ -354,9 +356,6 @@ To expand your knowledge of software threats, review the available public databa
 -   Common Weakness Enumeration: <https://cwe.mitre.org/>
 -   Common Attack Pattern Enumeration and Classification: <https://capec.mitre.org/index.html>
 -   NIST maintains a site that describes how vulnerabilities are cataloged: <https://samate.nist.gov/BF/>
-
- 
-For additional driver security resources, see [Driver Security Checklist](driver-security-checklist.md).
 
 
  

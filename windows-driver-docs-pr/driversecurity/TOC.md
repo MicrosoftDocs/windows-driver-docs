@@ -3,5 +3,4 @@
 ## [Threat modeling for drivers](threat-modeling-for-drivers.md)
 ## [Windows security model for driver developers](windows-security-model.md)
 ## [Controlling driver access](controlling-driver-access.md)
-
-
+## [Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility](use-device-guard-readiness-tool.md)
