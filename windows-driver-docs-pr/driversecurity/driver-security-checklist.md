@@ -53,8 +53,6 @@ In addition to avoiding the issues associated with a driver being attacked, many
 
 [Use Static Driver Verifier to Check for Vulnerabilities](#sdv)
 
-[Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility](#use-the-device-guard-readiness-tool)
-
 [Check code with Binscope Binary Analyzer](#binscope)
 
 [Review debugger techniques and extensions](#debugger)
@@ -70,16 +68,25 @@ In addition to avoiding the issues associated with a driver being attacked, many
 Drivers live in the Windows kernel, and having an issue when executing in kernel exposes the entire operating system. If any other option is available, it likely will be lower cost and have less associated risk than creating a new kernel driver.
 For more information about using the built in Windows drivers, see [Do you need to write a driver?](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/do-you-need-to-write-a-driver-).
 
-For information on using the lower risk user mode framework driver (UMDF), see [Choosing a driver model](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/choosing-a-driver-model).
-
 For information on using background tasks, see  [Support your app with background tasks](https://docs.microsoft.com/windows/uwp/launch-resume/support-your-app-with-background-tasks).
 
 For information on using Windows Services, see [Services](https://msdn.microsoft.com/library/windows/desktop/ms685141.aspx).
 
 
+## <span id="confirmkernel"></span>Use the driver frameworks 
+
+**Security checklist item \#2:** *Use the driver frameworks to reduce the size of your code and increase it's reliability and security.*
+
+Use the [Windows Driver Frameworks](https://msdn.microsoft.com/library/windows/hardware/ff557565) to reduce the size of your code and increase it's reliability and security.  To get started, review [Using WDF to Develop a Driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-the-framework-to-develop-a-driver). For information on using the lower risk user mode framework driver (UMDF), see [Choosing a driver model](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/choosing-a-driver-model).
+
+Writing an old fashion [Windows Driver Model (WDM)](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model) driver is more time cosnuming, costly, and almost always involves recreating code that is available in the driver frameworks.
+
+The Windows Driver Framework source code is open source and available on GitHub. This is the same source code from which the WDF runtime library that ships in Windows 10 is built. You can debug your driver more effectively when you can follow the interactions between the driver and WDF. Download it from [http://github.com/Microsoft/Windows-Driver-Frameworks](http://github.com/Microsoft/Windows-Driver-Frameworks).
+
+
 ## <span id="controlsoftwareonly"></span>Control access to software only drivers
 
-**Security checklist item \#2:** *If a software-only driver is going to be created, additional access control must be implemented.*
+**Security checklist item \#3:** *If a software-only driver is going to be created, additional access control must be implemented.*
 
 Software-only kernel drivers may not use plug-and-play (PnP) to become associated with specific hardware IDs, and may be able to run on any PC. Such a driver could be used for purposes other than the one originally intended, creating an attack vector. 
 
@@ -104,7 +111,7 @@ For example, imagine OEM Fabrikam wants to distribute a driver that enables an o
 ## <span id="ThreatAnalysis"></span><span id="threatanalysis"></span><span id="THREATANALYSIS"></span>Perform threat analysis
 
 
-**Security checklist item \#3:** *Either modify an existing driver threat model or create a custom threat model for your driver.*
+**Security checklist item \#4:** *Either modify an existing driver threat model or create a custom threat model for your driver.*
 
 In considering security, a common methodology is to create specific threat models that attempt to describe the types of attacks that are possible. This technique is useful when designing a driver because it forces the developer to consider the potential attack vectors against a driver in advance. Having identified potential threats, a driver developer can then consider means of defending against these threats in order to bolster the overall security of the driver component.
 
@@ -493,7 +500,6 @@ Click on the description for each warning to see the problematic area in your co
 Click on the linked warning code to see additional information.
 
 Determine whether your code needs to be changed, or whether an annotation needs to be added to allow the code analysis engine to properly follow the intent of your code. For more information on code annotation, see [Using SAL Annotations to Reduce C/C++ Code Defects](https://msdn.microsoft.com/library/ms182032.aspx) and [SAL 2.0 Annotations for Windows Drivers](https://msdn.microsoft.com/windows/hardware/drivers/devtest/sal-2-annotations-for-windows-drivers).
-
 
 
 
