@@ -251,7 +251,7 @@ To prioritize the threats to your driver, rank each threat from 1 to 10 on all 5
 
 **Sample: Assessing threats using DREAD**
 
-Continuing with the example discussed in [Create threat models for drivers](threat-models-for-drivers-create.md), the following table shows how a designer might assess the hypothetical denial-of-service attack:
+Continuing with the example discussed above, the following table shows how a designer might assess the hypothetical denial-of-service attack:
 
 | DREAD Criterion | Score   | Comments                                                                |
 |-----------------|---------|-------------------------------------------------------------------------|
