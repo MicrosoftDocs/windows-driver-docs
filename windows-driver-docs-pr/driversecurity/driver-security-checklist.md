@@ -3,7 +3,7 @@ title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
 ms.assetid: 25375E02-FCA1-4E94-8D9A-AA396C909278
 ms.author: windowsdriverdev
-ms.date: 10/03/2017
+ms.date: 10/21/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -279,6 +279,7 @@ For more information about the related device fundamentals test, see [Device.Dev
 
 
 
+
 ## <span id="technologyspecificcodepractices"></span>Follow technology-specific code best practices
 
 
@@ -523,30 +524,12 @@ Although the default rules find many common issues, consider running the more ex
 8. Click on each warning to load the SDV Report Page and examine the information associated with the possible code vulnerability. Use the report to investigate the verification result and to identify paths in your driver that fail a SDV verification. For more information, see [Static Driver Verifier Report](https://msdn.microsoft.com/library/windows/hardware/ff552834).
 
 
-## <span id="use-the-device-guard-readiness-tool"></span>Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility
 
-**Security checklist item \#14:** *Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility of your driver code.*
-
-**Overview**
-
-The Device Guard Readiness tool is designed to check a number of requirements for creating a PC that supports a variety of security enhancement features. 
-
-OS and Hardware requirements for testing HVCI driver Device Guard compatibility:
-
-1. Windows: Available only on Windows 10 Enterprise, Windows Server, and Windows 10 IoT Enterprise
-
-2. Hardware: Recent hardware that supports virtualization extension with SLAT.
-
-To use the readiness tool to evaluate the additional requirements, such as secure boot, refer to the readme.txt file included in the readiness tool download.
-
-Follow the steps in [Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility](use-device-guard-readiness-tool.md) to evaluate HVCI driver compatibility of your driver code.  
-
-For more information about the related device fundamentals test, see [Device.DevFund.DeviceGuard](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfunddeviceguard).
 
 
 ## <span id="BinScope"></span><span id="binscope"></span><span id="BINSCOPE"></span>Check code with BinScope Binary Analyzer
 
-**Security checklist item \#15:** *Follow these steps to use BinScope to double check that compile and build options are configured to minimize known security issues.*
+**Security checklist item \#14:** *Follow these steps to use BinScope to double check that compile and build options are configured to minimize known security issues.*
 
 Use BinScope to examine application binary files to identify coding and building practices that can potentially render the application vulnerable to attack or to being used as an attack vector.
 
@@ -628,7 +611,7 @@ All Scanned Items
 ## <span id="Debugger"></span><span id="debugger"></span><span id="DEBUGGER"></span>Review debugger techniques and extensions
 
 
-**Security checklist item \#16:** *Review these debugger tools and consider their use in your development debugging workflow.*
+**Security checklist item \#15:** *Review these debugger tools and consider their use in your development debugging workflow.*
 
 **!exploitable Crash Analyzer**
 
@@ -654,7 +637,7 @@ The !sd extension displays the security descriptor at the specified address. For
 ## <span id="SecureCodingResources"></span><span id="securecodingresources"></span><span id="SECURECODINGRESOURCES"></span>Review secure coding resources
 
 
-**Security checklist item \#17:** *Review these resources to expand your understanding of the secure coding best practices that are applicable to driver developers.*
+**Security checklist item \#16:** *Review these resources to expand your understanding of the secure coding best practices that are applicable to driver developers.*
 
 *Review these resources to learn more about driver security*
 
