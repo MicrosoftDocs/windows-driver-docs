@@ -3,7 +3,7 @@ title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
 ms.assetid: 25375E02-FCA1-4E94-8D9A-AA396C909278
 ms.author: windowsdriverdev
-ms.date: 10/21/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -88,7 +88,7 @@ The Windows Driver Framework source code is open source and available on GitHub.
 
 **Security checklist item \#3:** *If a software-only driver is going to be created, additional access control must be implemented.*
 
-Software-only kernel drivers may not use plug-and-play (PnP) to become associated with specific hardware IDs, and may be able to run on any PC. Such a driver could be used for purposes other than the one originally intended, creating an attack vector. 
+Software-only kernel drivers do not use plug-and-play (PnP) to become associated with specific hardware IDs, and may be able to run on any PC. Such a driver could be used for purposes other than the one originally intended, creating an attack vector. 
 
 Because software-only kernel drivers contain additional risk, they must be limited to run on specific hardware (for example, by using a unique PnP ID to enable creation of a PnP driver, or by checking the SMBIOS table for the presence of specific hardware).
 
