@@ -46,7 +46,7 @@ Open your existing NDIS miniport driver project in Visual Studio and use the fol
   ```
 6. Add new required networking keywords to the NT section of your INF.
 
-  ```cpp
+  ```Inf
   [Device.NT]
   CopyFiles=Drivers_Dir
   ; Existing network keywords

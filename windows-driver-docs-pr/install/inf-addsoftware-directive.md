@@ -74,7 +74,7 @@ Specifies the path to the executable.  The system generates command lines like t
 
 `EXE: <SoftwareBinary> [<SoftwareArguments>]`
 
-If you use this entry, you must add the executable to the DriverStore by specifying the [INF CopyINF Directive](inf-copyfiles-directive.md) with  a **DestinationDirs** value of 13.
+If you use this entry, you must add the executable to the DriverStore by specifying the [INF CopyFiles Directive](inf-copyfiles-directive.md) with  a **DestinationDirs** value of 13.
 
 **SoftwareArguments**=*argument1[, argument2[, … argumentN]]*
 
