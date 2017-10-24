@@ -76,7 +76,7 @@ Here are the entries you need to define an INF as an extension INF.
     ExtensionId = {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz} ; replace with your own GUID
     ```
 
-Note that an organisation may only use an **ExtensionID** that belongs to them. For more information on how to register an Extension ID, please refer to [this](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/manage-your-hardware-submissions#register-an-extension-inf-for-your-submission) article.     
+Note that an organization may only use an **ExtensionID** that it owns.  For information on how to register an Extension ID, see [Register an extension ID for your extension INF submission](../dashboard/manage-your-hardware-submissions.md#register-an-extension-id-for-your-extension-inf-submission).     
 
 3.  If you are updating an extension INF, keep the **ExtensionId** the same and increment the version or date (or both) specified by the [**DriverVer**](inf-driverver-directive.md) directive. For a given **ExtensionId** value, PnP selects the INF with the highest **DriverVer**.
 
