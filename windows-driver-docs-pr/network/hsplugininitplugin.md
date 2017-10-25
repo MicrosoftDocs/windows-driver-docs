@@ -14,6 +14,8 @@ ms.technology: windows-devices
 
 # HSPluginInitPlugin function
 
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+
 
 The **HSPluginInitPlugin** function is exported by the plugin DLL and is called to initialize the plugin.
 

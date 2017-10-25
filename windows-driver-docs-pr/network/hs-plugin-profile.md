@@ -1,5 +1,5 @@
 ---
-title: HS\_PLUGIN\_PROFILE structure
+title: HS_PLUGIN_PROFILE structure
 author: windows-driver-content
 description: The HS\_PLUGIN\_PROFILE structure provides information about the plugin. The members of this structure are set by the plugin during execution of the HSPluginInitPlugin function that is called by the host.
 ms.assetid: 0c4f7088-737e-479a-b46e-a55e96719775
@@ -14,6 +14,8 @@ ms.technology: windows-devices
 ---
 
 # HS\_PLUGIN\_PROFILE structure
+
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_PLUGIN\_PROFILE** structure provides information about the plugin. The members of this structure are set by the plugin during execution of the [**HSPluginInitPlugin**](hsplugininitplugin.md) function that is called by the host.

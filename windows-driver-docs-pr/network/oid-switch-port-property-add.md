@@ -1,5 +1,5 @@
 ---
-title: OID\_SWITCH\_PORT\_PROPERTY\_ADD
+title: OID_SWITCH_PORT_PROPERTY_ADD
 author: windows-driver-content
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID\_SWITCH\_PORT\_PROPERTY\_ADD to notify extensible switch extensions about the addition of a policy property for an extensible switch port.
 ms.assetid: 6F246E5A-A02A-4303-9DB0-51E2FD4DC9E7

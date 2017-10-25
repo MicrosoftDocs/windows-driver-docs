@@ -1,5 +1,5 @@
 ---
-title: HS\_MAC\_ADDRESS structure
+title: HS_MAC_ADDRESS structure
 author: windows-driver-content
 description: The HS\_MAC\_ADDRESS structure contains the host Media Access Control (MAC) address.
 ms.assetid: 2d632ed4-4522-48ae-b23d-927517185d73
@@ -14,6 +14,8 @@ ms.technology: windows-devices
 ---
 
 # HS\_MAC\_ADDRESS structure
+
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_MAC\_ADDRESS** structure contains the host Media Access Control (MAC) address.

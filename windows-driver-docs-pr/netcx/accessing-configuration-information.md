@@ -1,8 +1,17 @@
 ---
-title: Accessing Configuration Information
+title: Accessing configuration information
+description: Accessing configuration information
+ms.assetid: ABEC75AE-9CE3-4574-B388-BC48D2BC8154
+keywords:
+- NetAdapterCx accessing configuration information, NetCx accessing configuration information
+ms.author: windowsdriverdev
+ms.date: 06/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Accessing Configuration Information
+# Accessing configuration information
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
@@ -34,6 +43,6 @@ There are `NetConfiguration*` functions for querying ULONG data, strings, multi-
 * [**NetConfigurationOpenSubConfiguration**](netconfigurationopensubconfiguration.md)
 * [**NetConfigurationQueryBinary**](netconfigurationquerybinary.md)
 * [**NetConfigurationQueryMultiString**](netconfigurationquerymultistring.md)
-* [**NetConfigurationQueryNetworkAddress**](netconfigurationquerynetworkaddress.md)
+* [**NetConfigurationQueryLinkLayerAddress**](netconfigurationquerylinklayeraddress.md)
 * [**NetConfigurationQueryString**](netconfigurationquerystring.md)
 * [**NetConfigurationQueryUlong**](netconfigurationqueryulong.md)

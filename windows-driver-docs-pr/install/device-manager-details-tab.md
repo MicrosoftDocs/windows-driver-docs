@@ -28,11 +28,11 @@ Starting with Windows Server 2003 SP1 and Windows XP SP2, the details tab is ena
 
 On Windows Server 2003, Windows XP SP1, Windows XP, and Windows 2000, the details tab is disabled by default.
 
-To enable this tab, set the user environment variable DEVMGR\_SHOW\_DETAILS to 1. After you set this environment variable, the **Details** tab of the device will be available in Device Manager. To permanently set a user environment variable, use the **Advanced** tab of the system property sheet. For information about how to set environment variables, see "Setting environment variables" in the Help and Support Center.
+To enable this tab, set the user environment variable DEVMGR_SHOW_DETAILS to 1. After you set this environment variable, the **Details** tab of the device will be available in Device Manager. To permanently set a user environment variable, use the **Advanced** tab of the system property sheet. For information about how to set environment variables, see "Setting environment variables" in the Help and Support Center.
 
 ### <a href="" id="ddk-providing-firmware-revision-numbers-for-the-details-tab-dg"></a>Providing Firmware Revision Numbers for the Details Tab
 
-Device Manager's **Details** tab can display a device's firmware revision number, if available. A driver can supply a firmware revision number by responding to a WMI request. Specifically, the driver's [**DpWmiQueryDataBlock**](https://msdn.microsoft.com/library/windows/hardware/ff544096) routine should support **MSDeviceUI\_FirmwareRevision\_GUID** by returning a DEVICE\_UI\_FIRMWARE\_REVISION structure (defined in Wmidata.h). The structure must contain the firmware revision number as a NULL-terminated WCHAR string, preceded by a USHORT value that contains the string length (including the **NULL**).
+Device Manager's **Details** tab can display a device's firmware revision number, if available. A driver can supply a firmware revision number by responding to a WMI request. Specifically, the driver's [**DpWmiQueryDataBlock**](https://msdn.microsoft.com/library/windows/hardware/ff544096) routine should support **MSDeviceUI_FirmwareRevision_GUID** by returning a DEVICE_UI_FIRMWARE_REVISION structure (defined in Wmidata.h). The structure must contain the firmware revision number as a NULL-terminated WCHAR string, preceded by a USHORT value that contains the string length (including the **NULL**).
 
  
 

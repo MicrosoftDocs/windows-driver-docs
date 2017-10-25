@@ -29,7 +29,7 @@ In such a case, you should examine the following:
     3.  Locate the devnodes that make up your device. For each devnode, right-click the node, and then click **Properties.**
     4.  On the **Details** tab, in the **Properties** drop-down list, click **Capabilities**.
 
-    If the list of capability values for the devnode contains the CM\_DEVCAP\_REMOVABLE flag, the devnode is marked as removable. The Plug and Play (PnP) manager then creates a new device container for the devnode and its children that cannot be removed.
+    If the list of capability values for the devnode contains the CM_DEVCAP_REMOVABLE flag, the devnode is marked as removable. The Plug and Play (PnP) manager then creates a new device container for the devnode and its children that cannot be removed.
 
     For more information about the removable device capability, see [Container IDs Generated from the Removable Device Capability](container-ids-generated-from-the-removable-device-capability.md).
 
@@ -39,7 +39,7 @@ In such a case, you should examine the following:
 
     Make sure that the format of the container ID or unique identifier in the hardware complies with the format requirements for the given bus. For more information, see [Container IDs Generated from a Bus-Specific Unique ID](container-ids-generated-from-a-bus-specific-unique-id.md).
 
-    If devnodes for the device are enumerated by a custom bus driver, check that the bus driver correctly responds to the [**IRP\_MN\_QUERY\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff551679) request for **BusQueryContainerID**.
+    If devnodes for the device are enumerated by a custom bus driver, check that the bus driver correctly responds to the [**IRP_MN_QUERY_ID**](https://msdn.microsoft.com/library/windows/hardware/ff551679) request for **BusQueryContainerID**.
 
 -   Is the device concurrently connected to the computer by more than one bus?
 

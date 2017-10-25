@@ -14,6 +14,9 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
+> [!WARNING]
+> This method is no longer supported in NetAdapterCx version 1.1 and later. Link layer addresses are now initialized with the [NET_ADAPTER_LINK_LAYER_ADDRESS_INIT](net-adapter-link-layer-address-init.md) method and set with the [NetAdapterSetCurrentLinkLayerAddress](netadaptersetcurrentlinklayeraddress.md) method or the [NetAdapterSetPermanentLinkLayerAddress](netadaptersetpermanentlinklayeraddress.md), depending on the type of address.
+
 Initializes a [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md) structure.
 
 Syntax

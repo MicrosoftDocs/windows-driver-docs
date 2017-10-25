@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_SET\_POWER
+title: IRP_MN_SET_POWER
 author: windows-driver-content
 description: This IRP notifies a driver of a change to the system power state or sets the device power state for a device.
 ms.author: windowsdriverdev

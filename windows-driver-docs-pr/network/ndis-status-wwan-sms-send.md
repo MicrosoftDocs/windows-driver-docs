@@ -1,5 +1,5 @@
 ---
-title: NDIS\_STATUS\_WWAN\_SMS\_SEND
+title: NDIS_STATUS_WWAN_SMS_SEND
 author: windows-driver-content
 description: Miniport drivers use the NDIS\_STATUS\_WWAN\_SMS\_SEND notification to inform the MB Service about the completion of a previous send request through OID\_WWAN\_SMS\_SEND.
 ms.assetid: f750b09c-1a7c-40d8-8a4e-a7f9f3160248
@@ -39,7 +39,7 @@ Requirements
 </tr>
 <tr class="even">
 <td><p>Header</p></td>
-<td>Ntddndis.h (include Ndis.h)</td>
+<td>Ndis.h</td>
 </tr>
 </tbody>
 </table>

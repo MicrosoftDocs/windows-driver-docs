@@ -1,5 +1,5 @@
 ---
-title: OID\_802\_3\_CURRENT\_ADDRESS
+title: OID_802_3_CURRENT_ADDRESS
 author: windows-driver-content
 description: OID\_802\_3\_CURRENT\_ADDRESS
 ms.assetid: 36815f3e-7edc-486f-9c16-948119c469fc

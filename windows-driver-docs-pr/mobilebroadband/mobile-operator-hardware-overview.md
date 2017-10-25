@@ -41,7 +41,7 @@ An external device is likely to be inserted immediately before the user wants to
 
 2.  The Mobile Broadband Service reads the IMSI and generates a set of hashes.
 
-3.  When the user clicks **Connect**, these hashes are used to match connection settings within the [APN database submission](apn-database-submission.md).
+3.  When the user clicks **Connect**, these hashes are used to match connection settings within the [COSA/APN database submission](cosa-apn-database-submission.md).
 
     -   If the connection is successful and Internet connectivity is available, nothing further happens. The user has already purchased service.
 
@@ -65,7 +65,7 @@ When an active device is attached that already had an active SIM, the workflow i
 
 2.  The Mobile Broadband Service reads the IMSI and generates a set of hashes.
 
-3.  When the user clicks **Connect**, these hashes are used to match connection settings within the [APN database submission](apn-database-submission.md). For a device with an active SIM, the connection is successful and Internet connectivity is available.
+3.  When the user clicks **Connect**, these hashes are used to match connection settings within the [COSA/APN database submission](cosa-apn-database-submission.md). For a device with an active SIM, the connection is successful and Internet connectivity is available.
 
 ## <span id="Components"></span><span id="components"></span><span id="COMPONENTS"></span>Components
 
@@ -194,7 +194,7 @@ Since this is an optional Windows feature for devices to support, there is no HC
 
  
 
-For more info about the APN database, see [APN database](apn-database.md).
+For more info about the APN database, see [APN database overview](apn-database-overview.md).
 
 ### <span id="Network_personalization"></span><span id="network_personalization"></span><span id="NETWORK_PERSONALIZATION"></span>Network personalization
 

@@ -1,5 +1,5 @@
 ---
-title: NDIS\_STATUS\_WWAN\_REGISTER\_STATE
+title: NDIS_STATUS_WWAN_REGISTER_STATE
 author: windows-driver-content
 description: Miniport drivers use the NDIS\_STATUS\_WWAN\_REGISTER\_STATE notification to communicate changes to the MB device's registration state to the MB Service.
 ms.assetid: 3da8489a-6ca3-4897-9794-86665ce10e81
@@ -89,7 +89,7 @@ Requirements
 </tr>
 <tr class="even">
 <td><p>Header</p></td>
-<td>Ntddndis.h (include Ndis.h)</td>
+<td>Ndis.h</td>
 </tr>
 </tbody>
 </table>

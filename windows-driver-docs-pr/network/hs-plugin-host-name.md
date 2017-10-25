@@ -1,5 +1,5 @@
 ---
-title: HS\_PLUGIN\_HOST\_NAME structure
+title: HS_PLUGIN_HOST_NAME structure
 author: windows-driver-content
 description: The HS\_PLUGIN\_HOST\_NAME structure contains the host name.
 ms.assetid: 3995fff6-6992-4dd6-a94c-a27b2ee44436
@@ -14,6 +14,8 @@ ms.technology: windows-devices
 ---
 
 # HS\_PLUGIN\_HOST\_NAME structure
+
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_PLUGIN\_HOST\_NAME** structure contains the host name.

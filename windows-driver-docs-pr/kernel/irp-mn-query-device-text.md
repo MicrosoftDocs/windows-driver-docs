@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_QUERY\_DEVICE\_TEXT
+title: IRP_MN_QUERY_DEVICE_TEXT
 author: windows-driver-content
 description: The PnP manager uses this IRP to get a device's description or location information.Bus drivers must handle this request for their child devices if the bus supports this information. Function and filter drivers do not handle this IRP.
 ms.author: windowsdriverdev

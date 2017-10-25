@@ -32,13 +32,13 @@ To access device driver properties on Windows Server 2003, Windows XP, and Windo
 1.  Call [**SetupDiOpenDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552079) to retrieve a handle to the software key for a device instance. Supply the following parameter values:
 
     -   Set *DeviceInfoSet* to a handle to the device information set that contains the device information element for which to retrieve the global software key.
-    -   Set *DeviceInfoData* to a pointer to an [**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that represents the device information element for which to retrieve the global software key.
-    -   Set *Scope* to DICS\_FLAG\_GLOBAL.
+    -   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that represents the device information element for which to retrieve the global software key.
+    -   Set *Scope* to DICS_FLAG_GLOBAL.
     -   Set *HwProfile* to zero.
-    -   Set *KeyType* to DIREG\_DRV, which configures **SetupDiOpenDevRegKey** to retrieve a handle to the software key for a device instance.
-    -   Set *samDesired* to a REGSAM-typed value that specifies the access that you require for this key. For all access, set *samDesired* to KEY\_ALL\_ACCESS.
+    -   Set *KeyType* to DIREG_DRV, which configures **SetupDiOpenDevRegKey** to retrieve a handle to the software key for a device instance.
+    -   Set *samDesired* to a REGSAM-typed value that specifies the access that you require for this key. For all access, set *samDesired* to KEY_ALL_ACCESS.
 
-    If the call to [**SetupDiOpenDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552079) succeeds, **SetupDiOpenDevRegKey** returns a handle to the requested software key. If the function call fails, **SetupDiOpenDevRegKey** returns INVALID\_HANDLE\_VALUE. A subsequent call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the most recently logged error code.
+    If the call to [**SetupDiOpenDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552079) succeeds, **SetupDiOpenDevRegKey** returns a handle to the requested software key. If the function call fails, **SetupDiOpenDevRegKey** returns INVALID_HANDLE_VALUE. A subsequent call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the most recently logged error code.
 
 2.  Supply the handle in a call to [RegQueryValueEx](http://go.microsoft.com/fwlink/p/?linkid=95398) or to [RegSetValueEx](http://go.microsoft.com/fwlink/p/?linkid=95399) to retrieve or set the registry entry value that corresponds to the device instance driver property.
 
@@ -46,7 +46,7 @@ To access device driver properties on Windows Server 2003, Windows XP, and Windo
 
 ### <a href="" id="using-setupdigetdriverinstallparams-to-retrieve-driver-rank"></a> Using SetupDiGetDriverInstallParams to Retrieve Driver Rank
 
-On Windows Server 2003, Windows XP, and Windows 2000, you can retrieve the rank of a driver that is currently installed for a device by calling [**SetupDiGetDriverInstallParams**](https://msdn.microsoft.com/library/windows/hardware/ff551978). **SetupDiGetDriverInstallParams** retrieves a pointer to an [**SP\_DRVINSTALL\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553290) structure for the driver in the output parameter *DriverInstallParams*. The **Rank** member of the retrieved SP\_DRVINSTALL\_PARAMS structure contains the driver rank.
+On Windows Server 2003, Windows XP, and Windows 2000, you can retrieve the rank of a driver that is currently installed for a device by calling [**SetupDiGetDriverInstallParams**](https://msdn.microsoft.com/library/windows/hardware/ff551978). **SetupDiGetDriverInstallParams** retrieves a pointer to an [**SP_DRVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553290) structure for the driver in the output parameter *DriverInstallParams*. The **Rank** member of the retrieved SP_DRVINSTALL_PARAMS structure contains the driver rank.
 
  
 

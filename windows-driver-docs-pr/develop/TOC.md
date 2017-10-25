@@ -1,5 +1,6 @@
 # [Developing, Testing, and Deploying Drivers](index.md)
 # [Getting Started with Universal Drivers](getting-started-with-universal-drivers.md)
+## [Building a Universal Windows driver](building-a-universal-driver.md)
 ## [Validating Universal Drivers](validating-universal-drivers.md)
 ## [Building for OneCore](building-for-onecore.md)
 ## [Universal Driver Scenarios](universal-driver-scenarios.md)

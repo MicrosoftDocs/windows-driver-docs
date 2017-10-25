@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_WFD\_LISTEN\_STATE\_DISCOVERABILITY
+title: OID_DOT11_WFD_LISTEN_STATE_DISCOVERABILITY
 author: windows-driver-content
 description: When set, the OID\_DOT11\_WFD\_LISTEN\_STATE\_DISCOVERABILITY object identifier (OID) is used to set the discoverability state of a Wi-Fi Direct (WFD) device and to configure its availability settings.
 ms.assetid: C2BFB189-18B4-4FA9-AC17-2FEE53DC2E53

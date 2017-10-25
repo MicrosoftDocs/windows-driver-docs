@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_VIRTUAL\_STATION\_CAPABILITY
+title: OID_DOT11_VIRTUAL_STATION_CAPABILITY
 author: windows-driver-content
 description: OID\_DOT11\_VIRTUAL\_STATION\_CAPABILITY
 ms.assetid: 589b0f06-ddb5-4771-98e3-26b52f07ac66

@@ -12,7 +12,7 @@ ms.technology: windows-devices
 
 ## Overview
 
-Traditionally, OEMs have implemented proprietary solutions for Selective Absorption Rate (SAR). This requires the OEM to implement a device service command that is either only identified between their User Mode Driver (UMDF) and the modem or requires kernel mode components to directly interact with the modem. Some OEMs may even have a hybrid solution where they have both UMDF-modem and kernel mode-modem components. As radio radiation awareness has increased, standardizing the interface for OEM software components to pass through the SAR command to the modem introduces the following benefits:
+Traditionally, OEMs have implemented proprietary solutions for Specific Absorption Rate (SAR). This requires the OEM to implement a device service command that is either only identified between their User Mode Driver (UMDF) and the modem or requires kernel mode components to directly interact with the modem. Some OEMs may even have a hybrid solution where they have both UMDF-modem and kernel mode-modem components. As radio radiation awareness has increased, standardizing the interface for OEM software components to pass through the SAR command to the modem introduces the following benefits:
 
 1.	OEMs can move toward user mode components and makes the system more stable, as errors in user mode are not fatal to the system compared to kernel mode.
 2.	Windows provides a platform standard interface and reduces the proprietary implementation from OEMs.
@@ -21,6 +21,9 @@ Traditionally, OEMs have implemented proprietary solutions for Selective Absorpt
 Starting in Windows 10, version 1703, Windows supports passing through SAR configuration and modem transmission status. Windows will continue to leave the SAR business logic to IHVs and OEMs to use as a self-differentiating factor but will provide an interface to streamline the platform. Two new NDIS OIDs and two new MBIM CIDs have been defined to support this interface. Devices that want to take advantage of OS support must implement both commands.
 
 This feature is supported by adding in two new OIDs and CIDs. For IHV partners that implement MBIM, only the CID version needs to be supported.
+
+> [!NOTE]
+> This topic defines the interface for IHV partners to implement SAR platform support in their modem device drivers. If you are looking for info about customizing the SAR mapping table for a device, see [Customize a Specific Absorption Rate (SAR) mapping table](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-sar-mapping-table).
 
 ## MB Interface Update for SAR Platform Support
 

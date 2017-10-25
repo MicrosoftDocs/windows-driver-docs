@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_CURRENT\_DWELL\_TIME
+title: OID_DOT11_CURRENT_DWELL_TIME
 author: windows-driver-content
 description: OID\_DOT11\_CURRENT\_DWELL\_TIME
 ms.assetid: 373ec7fc-5302-40ad-bf65-c27f5d725354

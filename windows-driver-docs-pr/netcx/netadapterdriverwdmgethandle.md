@@ -23,8 +23,7 @@ Syntax
 
 ```cpp
 NDIS_HANDLE NetAdapterDriverWdmGetHandle(
-  _In_ WDFDRIVER               Driver,
-  _In_ NET_ADAPTER_DRIVER_TYPE Type
+  _In_ WDFDRIVER               Driver
 );
 ```
 
@@ -33,9 +32,6 @@ Parameters
 
 *Driver* [in]  
 A handle to the driver's framework driver object, obtained from a previous call to [**WdfDriverCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547175).
-
-*Type* [in]  
-A [**NET_ADAPTER_DRIVER_TYPE**](net-adapter-driver-type.md) enumeration value that specifies the type of network adapter driver.
 
 Return value
 ------------
@@ -46,6 +42,8 @@ Remarks
 -------
 
 The driver must have previously called [**NetAdapterCreate**](netadaptercreate.md).
+
+In NetAdapterCx version 1.1, the *Type* parameter from version 1.0 was removed.
 
 Requirements
 ------------
@@ -62,11 +60,11 @@ Requirements
 </tr>
 <tr class="even">
 <td align="left"><p>Minimum KMDF version</p></td>
-<td align="left"><p>1.21</p></td>
+<td align="left"><p>1.23</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Minimum NetAdapterCx version</p></td>
-<td align="left"><p>1.0</p></td>
+<td align="left"><p>1.1</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Header</p></td>

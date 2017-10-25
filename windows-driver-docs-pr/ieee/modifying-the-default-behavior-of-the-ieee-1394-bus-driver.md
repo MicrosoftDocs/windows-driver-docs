@@ -28,7 +28,7 @@ The following registry location contains the global 1394 registry values:
 
 The following registry location contains the individual 1394 controller registry values:
 
-`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class \{6BDD1FC1-810F-11D0-BEC7-08002BE2092F}\\<NNNN>`
+`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class \{6BDD1FC1-810F-11D0-BEC7-08002BE2092F}\<NNNN>`
 
 `<NNNN>` represents the instance identification number for each 1394 controller.
 

@@ -1,5 +1,5 @@
 ---
-title: OID\_PNP\_REMOVE\_WAKE\_UP\_PATTERN
+title: OID_PNP_REMOVE_WAKE_UP_PATTERN
 author: windows-driver-content
 description: OID\_PNP\_REMOVE\_WAKE\_UP\_PATTERN
 ms.assetid: 493019d0-9cd9-4712-8d18-5ee0264be9e1

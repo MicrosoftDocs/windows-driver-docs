@@ -130,6 +130,7 @@
 ### [Configure and query audio device modules](configure-and-query-audiodevicemodules.md)
 ## [Low Latency Audio](low-latency-audio.md)
 ## [Voice Activation](voice-activation.md)
+## [USB Audio 2.0 Drivers](usb-2-0-audio-drivers.md) 
 ## [Audio Hardware Resource Management](audio-hardware-resource-management.md)
 ## [Bluetooth Bypass Guidelines for Audio Drivers](bluetooth-bypass-guidelines-for-audio-drivers.md)
 ### [Architectural Overview](btth-architectural-overview.md)

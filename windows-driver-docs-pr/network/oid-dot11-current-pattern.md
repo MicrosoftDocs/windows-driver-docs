@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_CURRENT\_PATTERN
+title: OID_DOT11_CURRENT_PATTERN
 author: windows-driver-content
 description: OID\_DOT11\_CURRENT\_PATTERN
 ms.assetid: ea27b5dd-ac07-4c4f-8a1f-1ced7d658717

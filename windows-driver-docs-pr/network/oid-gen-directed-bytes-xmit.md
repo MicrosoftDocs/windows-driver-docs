@@ -1,5 +1,5 @@
 ---
-title: OID\_GEN\_DIRECTED\_BYTES\_XMIT
+title: OID_GEN_DIRECTED_BYTES_XMIT
 author: windows-driver-content
 description: As a query, the OID\_GEN\_DIRECTED\_BYTES\_XMIT OID specifies the number of bytes in directed packets that are transmitted without errors.
 ms.assetid: 645215fb-457e-43cd-b45e-e34f313af46e

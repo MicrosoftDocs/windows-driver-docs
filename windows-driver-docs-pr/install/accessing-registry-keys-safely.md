@@ -21,7 +21,7 @@ Customer problems have frequently been traced to external components, such as th
 
 -   Modify the access permissions of critical registry keys.
 
-Many of the problems seen with external components are caused by using the KEY\_ALL\_ACCESS access permission for registry keys. Starting with Windows Server 2003, [**SetupDiCreateDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff550973) grants only KEY\_READ and KEY\_WRITE access permissions and not KEY\_ALL\_ACCESS. Starting with Windows Vista, additional KEY\_ALL\_ACCESS restrictions are enforced.
+Many of the problems seen with external components are caused by using the KEY_ALL_ACCESS access permission for registry keys. Starting with Windows Server 2003, [**SetupDiCreateDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff550973) grants only KEY_READ and KEY_WRITE access permissions and not KEY_ALL_ACCESS. Starting with Windows Vista, additional KEY_ALL_ACCESS restrictions are enforced.
 
 Follow these guidelines to safely access registry keys:
 
@@ -37,13 +37,13 @@ Follow these guidelines to safely access registry keys:
 
 -   Request only the minimal access permissions that are required for each task, such as the following:
 
-    -   KEY\_SET\_VALUE
+    -   KEY_SET_VALUE
 
-    -   KEY\_CREATE\_SUB\_KEY
+    -   KEY_CREATE_SUB_KEY
 
-    -   KEY\_QUERY\_VALUE
+    -   KEY_QUERY_VALUE
 
-    -   KEY\_ENUMERATE\_SUB\_KEYS
+    -   KEY_ENUMERATE_SUB_KEYS
 
 -   Do not directly open the device setup class keys in the registry. As with any registry key, the location and name of device setup class keys might change between versions of Windows.
 
@@ -51,11 +51,11 @@ Follow these guidelines to safely access registry keys:
 
     -   Use [**SetupDiOpenClassRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552065).
 
-    -   Use [**SetupDiOpenClassRegKeyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552067) and set DIOCR\_INSTALLER in the *Flags* parameter.
+    -   Use [**SetupDiOpenClassRegKeyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552067) and set DIOCR_INSTALLER in the *Flags* parameter.
 
 -   Do not directly open device interface class keys in the registry. As with any registry key, the location and name of device interface class keys might change between versions of Windows.
 
-    To open device interface class keys safely, use [**SetupDiOpenClassRegKeyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552067) and set DIOCR\_INSTALLER in the *Flags* parameter.
+    To open device interface class keys safely, use [**SetupDiOpenClassRegKeyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552067) and set DIOCR_INSTALLER in the *Flags* parameter.
 
 -   Use only INF directives to modify registry keys that are reserved for use by the operating system. For more information, see [Summary of INF Directives](summary-of-inf-directives.md).
 

@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION
+title: IRP_MN_DEVICE_USAGE_NOTIFICATION
 author: windows-driver-content
 description: System components send this IRP to ask the drivers for a device whether the device can support a special file.
 ms.author: windowsdriverdev

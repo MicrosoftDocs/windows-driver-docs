@@ -14,22 +14,27 @@ Syntax
 
 ```cpp
 typedef struct _NET_PACKET_FRAGMENT {
-  ULONG_PTR         LastFragmentOfFrame  :1;
-  ULONG_PTR         LastPacketOfChain  :1;
+  ULONG_PTR         LastFragmentOfFrame   : 1;
+  ULONG_PTR         LastPacketOfChain     : 1;
 #if _WIN64
-  ULONG_PTR         Reserved  :3;
-  ULONG_PTR         NextFragment_Reserved  :59;
+  ULONG_PTR         Reserved              : 3;
+  ULONG_PTR         NextFragment_Reserved : 59;
 #else 
-  ULONG_PTR         Reserved  :1;
-  ULONG_PTR         NextFragment_Reserved  :29;
-#endif 
-  PHYSICAL_ADDRESS  DmaLogicalAddress;
+  ULONG_PTR         Reserved              : 1;
+  ULONG_PTR         NextFragment_Reserved : 29;
+#endif   
+  union
+  {
+      MDL              *Mdl;
+      PHYSICAL_ADDRESS DmaLogicalAddress;
+      ULONG64          AsInteger;
+  } Mapping;
   PVOID             VirtualAddress;
-  UINT64            ValidLength  :26;
-  UINT64            Capacity  :26;
-  UINT64            Offset  :10;
-  UINT64            Completed  :1;
-  UINT64            Scratch  :1;
+  UINT64            ValidLength           : 26;
+  UINT64            Capacity              : 26;
+  UINT64            Offset                : 10;
+  UINT64            Completed             : 1;
+  UINT64            Scratch               : 1;
 } NET_PACKET_FRAGMENT, *PNET_PACKET_FRAGMENT;
 ```
 
@@ -40,16 +45,26 @@ Members
 This bit field value specifies whether this is the last fragment in the current packet.  If it is not set, use **NET_PACKET_FRAGMENT_GET_NEXT** to get the next fragment in the chain.
 
 **LastPacketOfChain**  
-Reserved.
+Reserved.  
 Client drivers must not read or write to this value.
 
 **Reserved**  
-Reserved.
+Reserved.  
 Client drivers must not read or write to this value.
 
 **NextFragment_Reserved**  
-Reserved.
+Reserved.  
 Client drivers must not read or write to this value.
+
+**Mapping**  
+A union that contains information for DMA.
+
+**Mdl**  
+For transmit queues, a pointer to an MDL to be used for scatter/gather DMA.
+
+For receive queues, this member is not used.
+
+Do not modify this value.
 
 **DmaLogicalAddress**  
 For receive queues, contains a mapped DMA address that can be used to program NIC hardware.
@@ -58,14 +73,17 @@ For transmit queues, cast this value to an MDL pointer.
 
 Do not modify this value.
 
+**AsInteger**  
+Reserved.  
+Client drivers must not read or write to this value.
+
 **VirtualAddress**  
-Points to the start of the packet buffer.
-This address is mapped into the system address space.
+Points to the start of the packet buffer. This address is mapped into the system address space.
 
 For transmit queues, this value is read-only.
 
 **ValidLength**  
-Contains the length of packet payload.  This value is less than or equal to the value of **Capacity**.
+Contains the length of packet payload. This value is less than or equal to the value of **Capacity**.
 
 For transmit queues, this value is read-only.
 

@@ -14,9 +14,9 @@ ms.technology: windows-devices
 
 WinUSB uses the KMDF state machines for power management. Power policies are managed through calls to [**WinUsb\_SetPowerPolicy**](https://msdn.microsoft.com/library/windows/hardware/ff540309).
 
-In order to modify the power behavior of WinUSB, default registry settings can be modified in the device?s INF. These values must be written to the device specific location in the registry by adding the values in the **HW.AddReg** section of the INF.
+In order to modify the power behavior of WinUSB, default registry settings can be modified in the device's INF. These values must be written to the device specific location in the registry by adding the values in the **HW.AddReg** section of the INF.
 
-The registry values described in the following list can be specified in the device?s INF to modify the power behavior.
+The registry values described in the following list can be specified in the device's INF to modify the power behavior.
 
 <a href="" id="system-wake"></a>**System Wake**  
 This feature is controlled by the **SystemWakeEnabled** DWORD registry setting. This value indicates whether the device should be allowed to wake the system from a low power state.

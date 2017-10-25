@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_CONNECT\_REQUEST
+title: OID_DOT11_CONNECT_REQUEST
 author: windows-driver-content
 description: OID\_DOT11\_CONNECT\_REQUEST
 ms.assetid: 732b9549-6138-4a58-9772-e741880451eb

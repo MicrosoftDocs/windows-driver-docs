@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS
+title: IRP_MN_FILTER_RESOURCE_REQUIREMENTS
 author: windows-driver-content
 description: The PnP manager sends this IRP to a device stack so the function driver can adjust the resources required by the device, if appropriate.The function driver typically handles this IRP.
 ms.author: windowsdriverdev

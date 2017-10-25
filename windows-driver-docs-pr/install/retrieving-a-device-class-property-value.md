@@ -30,9 +30,9 @@ To retrieve the value of a device class property on a local computer, follow the
     -   Set *PropertyBuffer* to **NULL**.
     -   Set *PropertyBufferSize* to zero.
     -   Set *RequiredSize* to a DWORD-typed variable.
-    -   If the device class is a device setup class, set *Flags* to DICLASSPROP\_INSTALLER. Otherwise, if the device class is a device interface class, set *Flags* to DICLASSPROP\_INTERFACE.
+    -   If the device class is a device setup class, set *Flags* to DICLASSPROP_INSTALLER. Otherwise, if the device class is a device interface class, set *Flags* to DICLASSPROP_INTERFACE.
 
-    In response to this first call to [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086), **SetupDiGetClassProperty** sets \**RequiredSize* to the size, in bytes, of the buffer that is required to retrieve the property value, logs the error code ERROR\_INSUFFICIENT\_BUFFER, and returns **FALSE**. A subsequent call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the most recently logged error code.
+    In response to this first call to [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086), **SetupDiGetClassProperty** sets \**RequiredSize* to the size, in bytes, of the buffer that is required to retrieve the property value, logs the error code ERROR_INSUFFICIENT_BUFFER, and returns **FALSE**. A subsequent call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the most recently logged error code.
 
 2.  Call **SetupDiGetClassProperty** again and supply the same parameters that were supplied in the first call, except for the following changes:
     -   Set *PropertyBuffer* to a pointer to the buffer that receives the property value.

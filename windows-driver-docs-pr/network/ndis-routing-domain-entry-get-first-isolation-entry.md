@@ -1,5 +1,5 @@
 ---
-title: NDIS\_ROUTING\_DOMAIN\_ENTRY\_GET\_FIRST\_ISOLATION\_ENTRY macro
+title: NDIS_ROUTING_DOMAIN_ENTRY_GET_FIRST_ISOLATION_ENTRY macro
 author: windows-driver-content
 description: The NDIS\_ROUTING\_DOMAIN\_ENTRY\_GET\_FIRST\_ISOLATION\_ENTRY macro is used to access the first NDIS\_ROUTING\_DOMAIN\_ISOLATION\_ENTRY that is specified by an NDIS\_ROUTING\_DOMAIN\_ENTRY structure.
 ms.assetid: 02000ABE-15CB-4893-8BF1-2B5D6C5767EC

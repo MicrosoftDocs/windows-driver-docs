@@ -1,5 +1,5 @@
 ---
-title: NDIS\_STATUS\_WWAN\_HOME\_PROVIDER
+title: NDIS_STATUS_WWAN_HOME_PROVIDER
 author: windows-driver-content
 description: Miniport drivers use the NDIS\_STATUS\_WWAN\_HOME\_PROVIDER notification to inform the MB Service about the completion of OID\_WWAN\_HOME\_PROVIDER \ 160; query requests.
 ms.assetid: a5733c62-be4e-4f86-9639-6addd31baf0c
@@ -49,7 +49,7 @@ Requirements
 </tr>
 <tr class="even">
 <td><p>Header</p></td>
-<td>Ntddndis.h (include Ndis.h)</td>
+<td>Ndis.h</td>
 </tr>
 </tbody>
 </table>

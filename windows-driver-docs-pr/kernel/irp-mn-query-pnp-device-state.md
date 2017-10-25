@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE
+title: IRP_MN_QUERY_PNP_DEVICE_STATE
 author: windows-driver-content
 description: Function, filter, and bus drivers can handle this request.
 ms.author: windowsdriverdev

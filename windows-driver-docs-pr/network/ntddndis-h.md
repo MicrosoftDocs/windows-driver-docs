@@ -1,7 +1,7 @@
 ---
 title: Ntddndis.h
 author: windows-driver-content
-description: This section contains network driver topics for the Ntddndis.h header.
+description: This section contains kernel mode network driver topics for the Ntddndis.h header.
 ms.assetid: EC2CD8C5-A2E9-4CA3-9229-BF0A955E6F53
 keywords:
 - Ntddndis.h network drivers
@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Ntddndis.h
 
 
-This section contains network driver topics for the Ntddndis.h header. These topics may also be shared with the user mode applications that interact with network drivers.
+This section contains kernel mode network driver topics for the Ntddndis.h header. This header is included in the Windows SDK as it is also shared with user mode networking applications.
 
 The Ntddndis.h header contains definitions for constants and types for interfacing with network drivers.
 
@@ -32,30 +32,6 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 * [NDIS_ROUTING_DOMAIN_ENTRY_GET_FIRST_ISOLATION_ENTRY macro](ndis-routing-domain-entry-get-first-isolation-entry.md)
 * [NDIS_ROUTING_DOMAIN_ENTRY_GET_NEXT macro](ndis-routing-domain-entry-get-next.md)
 * [NDIS_ROUTING_DOMAIN_ISOLATION_ENTRY_GET_NEXT macro](ndis-routing-domain-isolation-entry-get-next.md)
-* [NDIS_STATUS_ISOLATION_PARAMETERS_CHANGE](ndis-status-isolation-parameters-change.md)
-* [NDIS_STATUS_NIC_SWITCH_CURRENT_CAPABILITIES](ndis-status-nic-switch-current-capabilities.md)
-* [NDIS_STATUS_NIC_SWITCH_HARDWARE_CAPABILITIES](ndis-status-nic-switch-hardware-capabilities.md)
-* [NDIS_STATUS_RECEIVE_FILTER_QUEUE_ALLOCATION_STATE](ndis-status-receive-filter-queue-allocation-state.md)
-* [NDIS_STATUS_RECEIVE_FILTER_QUEUE_PARAMETERS](ndis-status-receive-filter-queue-parameters.md)
-* [NDIS_STATUS_WWAN_CONTEXT_STATE](ndis-status-wwan-context-state.md)
-* [NDIS_STATUS_WWAN_HOME_PROVIDER](ndis-status-wwan-home-provider.md)
-* [NDIS_STATUS_WWAN_PACKET_SERVICE](ndis-status-wwan-packet-service.md)
-* [NDIS_STATUS_WWAN_PIN_INFO](ndis-status-wwan-pin-info.md)
-* [NDIS_STATUS_WWAN_PIN_LIST](ndis-status-wwan-pin-list.md)
-* [NDIS_STATUS_WWAN_PREFERRED_PROVIDERS](ndis-status-wwan-preferred-providers.md)
-* [NDIS_STATUS_WWAN_PROVISIONED_CONTEXTS](ndis-status-wwan-provisioned-contexts.md)
-* [NDIS_STATUS_WWAN_RADIO_STATE](ndis-status-wwan-radio-state.md)
-* [NDIS_STATUS_WWAN_READY_INFO](ndis-status-wwan-ready-info.md)
-* [NDIS_STATUS_WWAN_REGISTER_STATE](ndis-status-wwan-register-state.md)
-* [NDIS_STATUS_WWAN_SERVICE_ACTIVATION](ndis-status-wwan-service-activation.md)
-* [NDIS_STATUS_WWAN_SIGNAL_STATE](ndis-status-wwan-signal-state.md)
-* [NDIS_STATUS_WWAN_SMS_CONFIGURATION](ndis-status-wwan-sms-configuration.md)
-* [NDIS_STATUS_WWAN_SMS_DELETE](ndis-status-wwan-sms-delete.md)
-* [NDIS_STATUS_WWAN_SMS_RECEIVE](ndis-status-wwan-sms-receive.md)
-* [NDIS_STATUS_WWAN_SMS_SEND](ndis-status-wwan-sms-send.md)
-* [NDIS_STATUS_WWAN_SMS_STATUS](ndis-status-wwan-sms-status.md)
-* [NDIS_STATUS_WWAN_VENDOR_SPECIFIC](ndis-status-wwan-vendor-specific.md)
-* [NDIS_STATUS_WWAN_VISIBLE_PROVIDERS](ndis-status-wwan-visible-providers.md)
 * [NDIS_SWITCH_NIC_AT_ARRAY_INDEX macro](ndis-switch-nic-at-array-index.md)
 * [NDIS_SWITCH_PORT_AT_ARRAY_INDEX macro](ndis-switch-port-at-array-index.md)
 * [NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN_GET_FIRST_ISOLATION_ENTRY macro](ndis-switch-port-property-routing-domain-get-first-isolation-entry.md)
@@ -141,8 +117,10 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 * [OID_GEN_RECEIVE_HASH](oid-gen-receive-hash.md)
 * [OID_GEN_RECEIVE_SCALE_CAPABILITIES](oid-gen-receive-scale-capabilities.md)
 * [OID_GEN_RECEIVE_SCALE_PARAMETERS](oid-gen-receive-scale-parameters.md)
+* [OID_GEN_RECEIVE_SCALE_PARAMETERS_V2](oid-gen-receive-scale-parameters-v2.md)
 * [OID_GEN_RESET_COUNTS](oid-gen-reset-counts.md)
 * [OID_GEN_RNDIS_CONFIG_PARAMETER](oid-gen-rndis-config-parameter.md)
+* [OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES](oid-gen-rss-set-indirection-table-entries.md)
 * [OID_GEN_STATISTICS](oid-gen-statistics.md)
 * [OID_GEN_SUPPORTED_GUIDS](oid-gen-supported-guids.md)
 * [OID_GEN_SUPPORTED_LIST](oid-gen-supported-list.md)
@@ -270,11 +248,13 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 * [OID_WAN_CO_SET_COMP_INFO](oid-wan-co-set-comp-info.md)
 * [OID_WAN_CO_SET_LINK_INFO](oid-wan-co-set-link-info.md)
 * [OID_WWAN_AUTH_CHALLENGE](oid-wwan-auth-challenge.md)
+* [OID_WWAN_BASE_STATIONS_INFO](oid-wwan-base-stations-info.md)
 * [OID_WWAN_CONNECT](oid-wwan-connect.md)
 * [OID_WWAN_CREATE_MAC](oid-wwan-create-mac.md)
 * [OID_WWAN_DELETE_MAC](oid-wwan-delete-mac.md)
 * [OID_WWAN_DEVICE_CAPS](oid-wwan-device-caps.md)
 * [OID_WWAN_DEVICE_CAPS_EX](oid-wwan-device-caps-ex.md)
+* [OID_WWAN_DEVICE_RESET](oid-wwan-device-reset.md)
 * [OID_WWAN_DEVICE_SERVICE_COMMAND](oid-wwan-device-service-command.md)
 * [OID_WWAN_DEVICE_SERVICE_SESSION](oid-wwan-device-service-session.md)
 * [OID_WWAN_DEVICE_SERVICE_SESSION_WRITE](oid-wwan-device-service-session-write.md)
@@ -286,6 +266,7 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 * [OID_WWAN_HOME_PROVIDER](oid-wwan-home-provider.md)
 * [OID_WWAN_NETWORK_IDLE_HINT](oid-wwan-network-idle-hint.md)
 * [OID_WWAN_PACKET_SERVICE](oid-wwan-packet-service.md)
+* [OID_WWAN_PCO](oid-wwan-pco.md)
 * [OID_WWAN_PIN](oid-wwan-pin.md)
 * [OID_WWAN_PIN_EX](oid-wwan-pin-ex.md)
 * [OID_WWAN_PIN_LIST](oid-wwan-pin-list.md)
@@ -306,6 +287,7 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 * [OID_WWAN_SMS_STATUS](oid-wwan-sms-status.md)
 * [OID_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS](oid-wwan-subscribe-device-service-events.md)
 * [OID_WWAN_SYS_CAPS_INFO](oid-wwan-sys-caps.md)
+* [OID_WWAN_UICC_RESET](oid-wwan-uicc-reset.md)
 * [OID_WWAN_USSD](oid-wwan-ussd.md)
 * [OID_WWAN_VENDOR_SPECIFIC](oid-wwan-vendor-specific.md)
 * [OID_WWAN_VISIBLE_PROVIDERS](oid-wwan-visible-providers.md)

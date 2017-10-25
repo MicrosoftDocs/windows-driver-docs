@@ -1,5 +1,5 @@
 ---
-title: HS\_NETWORK\_PROFILE structure
+title: HS_NETWORK_PROFILE structure
 author: windows-driver-content
 description: The HS\_NETWORK\_PROFILE structure is provided by the plugin and contains information required for connection to the target network. Each instance of the Network Profile is uniquely associated with a corresponding HS\_NETWORK\_IDENTITY structure.
 ms.assetid: 55e8786c-d7b8-48f3-9e54-312183cf8fb3
@@ -14,6 +14,8 @@ ms.technology: windows-devices
 ---
 
 # HS\_NETWORK\_PROFILE structure
+
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_NETWORK\_PROFILE** structure is provided by the plugin and contains information required for connection to the target network. Each instance of the Network Profile is uniquely associated with a corresponding [**HS\_NETWORK\_IDENTITY**](hs-network-identity.md) structure.

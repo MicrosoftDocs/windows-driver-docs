@@ -1,5 +1,5 @@
 ---
-title: OID\_DOT11\_WFD\_SEND\_GO\_NEGOTIATION\_REQUEST
+title: OID_DOT11_WFD_SEND_GO_NEGOTIATION_REQUEST
 author: windows-driver-content
 description: When set, the OID\_DOT11\_WFD\_SEND\_GO\_NEGOTIATION\_REQUEST object identifier (OID) requests that the Wi-Fi Direct (WFD) miniport driver send a Group Owner (GO) negotiation request to a WFD peer currently in device mode.
 ms.assetid: B23D8381-1331-4DCD-B63A-7514A38970C6

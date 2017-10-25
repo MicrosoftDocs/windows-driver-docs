@@ -22,7 +22,7 @@ Syntax
 ```cpp
 EVT_RXQUEUE_SET_NOTIFICATION_ENABLED EvtRxqueueSetNotificationEnabled;
 
-NTSTATUS EvtRxqueueSetNotificationEnabled(
+VOID EvtRxqueueSetNotificationEnabled(
   _In_ NETRXQUEUE RxQueue,
   _In_ BOOLEAN    NotificationEnabled
 )
@@ -30,8 +30,6 @@ NTSTATUS EvtRxqueueSetNotificationEnabled(
 
 typedef EVT_RXQUEUE_SET_NOTIFICATION_ENABLED PFN_RXQUEUE_SET_NOTIFICATION_ENABLED;
 ```
-
-Register this callback function in [**NET_RXQUEUE_CONFIG_INIT**](net-rxqueue-config-init.md) before calling [**NetRxQueueCreate**](netrxqueuecreate.md).
 
 Parameters
 ----------
@@ -50,11 +48,13 @@ If the operation is successful, the callback function returns STATUS_SUCCESS. Ot
 Remarks
 -------
 
+Register this callback function in [**NET_RXQUEUE_CONFIG_INIT**](net-rxqueue-config-init.md) before calling [**NetRxQueueCreate**](netrxqueuecreate.md).
+
 For a PCI NIC, enabling receive queue notification typically means enabling the receive queue's hardware interrupt.  When the hardware interrupt fires, the client calls [**NetRxQueueNotifyMoreReceivedPacketsAvailable**](netrxqueuenotifymorereceivedpacketsavailable.md) from its DPC.
 
 For example:
 ```cpp
-NTSTATUS
+VOID
 EvtRxQueueSetNotificationEnabled(
     _In_ NETRXQUEUE rxQueue,
     _In_ BOOLEAN notificationEnabled)
@@ -114,6 +114,8 @@ NetAdapterCx serializes this callback function along with the receive queue's [*
 
 For more info, see [Transferring Network Data](transferring-network-data.md).
 
+In NetAdapterCx 1.1, the return type of this method was changed from **NTSTATUS** in version 1.0 to **VOID**.
+
 Requirements
 ------------
 
@@ -129,11 +131,11 @@ Requirements
 </tr>
 <tr class="even">
 <td align="left"><p>Minimum KMDF version</p></td>
-<td align="left"><p>1.21</p></td>
+<td align="left"><p>1.23</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Minimum NetAdapterCx version</p></td>
-<td align="left"><p>1.0</p></td>
+<td align="left"><p>1.1</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Header</p></td>
