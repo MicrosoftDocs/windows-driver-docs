@@ -30,8 +30,7 @@ However, depending on your requirements, you might choose instead to link to one
 
 When you use a downlevel option, a subset of APIs compile fine but return immediately on non-Desktop OneCore editions (for example Mobile or IoT).
 
-For example, the [**MessageBox**](https://msdn.microsoft.com/library/windows/desktop/ms645505) function returns ERROR_CALL_NOT_IMPLEMENTED on non-Desktop OneCore editions.  The documentation for these APIs describes this behavior, including applicable error codes, in the Requirements section of the page.
-<!--Link to list of apis with stub functionality, include example screenshot-->
+For example, the [**InstallApplication**](https://msdn.microsoft.com/library/aa374307) function returns ERROR_ NOT_SUPPORTED on non-Desktop OneCore editions.
 
 If you link to `OneCoreUAP.lib` or `OneCore.lib`, you will get a slight load time performance boost over the downlevel options.
 
