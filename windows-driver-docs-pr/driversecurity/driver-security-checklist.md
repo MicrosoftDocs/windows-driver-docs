@@ -27,41 +27,41 @@ In addition to avoiding the issues associated with a driver being attacked, many
 
 **Security checklist:** *Complete the security task described in each of these topics.*
 
-[Confirm that a kernel driver is required](#confirmkernel)
+![empty checkbox](images/checkbox.png)[Confirm that a kernel driver is required](#confirmkernel)
 
-[Use the driver frameworks](#confirmkernel)
+![empty checkbox](images/checkbox.png)[Use the driver frameworks](#confirmkernel)
 
-[Control access to software only drivers](#controlsoftwareonly)
+![empty checkbox](images/checkbox.png)[Control access to software only drivers](#controlsoftwareonly)
 
-[Do not production sign test driver code](#donotproductionsign) 
+![empty checkbox](images/checkbox.png)[Do not production sign test driver code](#donotproductionsign) 
 
-[Perform threat analysis](#threatanalysis)
+![empty checkbox](images/checkbox.png)[Perform threat analysis](#threatanalysis)
 
-[Follow driver secure coding guidelines](#driversecuritycodepractices)
+![empty checkbox](images/checkbox.png)[Follow driver secure coding guidelines](#driversecuritycodepractices)
 
-[Validate Device Guard compatibility](#dgc)
+![empty checkbox](images/checkbox.png)[Validate Device Guard compatibility](#dgc)
 
-[Follow technology specific code best practices](#technologyspecificcodepractices)
+![empty checkbox](images/checkbox.png)[Follow technology specific code best practices](#technologyspecificcodepractices)
 
-[Perform peer code review](#peercodereview)
+![empty checkbox](images/checkbox.png)[Perform peer code review](#peercodereview)
 
-[Manage driver access control](#managingdriveraccesscontrol)
+![empty checkbox](images/checkbox.png)[Manage driver access control](#managingdriveraccesscontrol)
 
-[Enhance device installation security](#enhancedeviceinstallationsecurity)
+![empty checkbox](images/checkbox.png)[Enhance device installation security](#enhancedeviceinstallationsecurity)
 
-[Execute proper release driver signing](#releasedriversigning)
+![empty checkbox](images/checkbox.png)[Execute proper release driver signing](#releasedriversigning)
 
-[Use code analysis in Visual Studio to investigate driver security](#use-code-analysis)
+![empty checkbox](images/checkbox.png)[Use code analysis in Visual Studio to investigate driver security](#use-code-analysis)
 
-[Use Static Driver Verifier to Check for Vulnerabilities](#sdv)
+![empty checkbox](images/checkbox.png)[Use Static Driver Verifier to Check for Vulnerabilities](#sdv)
 
-[Check code with Binscope Binary Analyzer](#binscope)
+![empty checkbox](images/checkbox.png)[Check code with Binscope Binary Analyzer](#binscope)
 
-[Use code validation tools](#codevalidationtools)
+![empty checkbox](images/checkbox.png)[Use code validation tools](#codevalidationtools)
 
-[Review debugger techniques and extensions](#debugger)
+![empty checkbox](images/checkbox.png)[Review debugger techniques and extensions](#debugger)
 
-[Review secure coding resources](#securecodingresources)
+![empty checkbox](images/checkbox.png)[Review secure coding resources](#securecodingresources)
 
 [Summary of key takeaways](#keytakeaways)
 
@@ -200,6 +200,13 @@ To allow drivers to support HVCI virtualization, there are additional memory req
 
 **IRP**
 
+
+**WDF and IRPs** 
+One advantage of using WDF, is that WDF drivers typically do not directly access IRPs. For example, the framework converts the WDM IRPs that represent read, write, and device I/O control operations to framework request objects that KMDF/UMDF receive in I/O queues. 
+
+If you are writing a WDM driver, review the following guidance.
+
+
 **Validate IRP input values**
 
 Validate all values that are associated with an IRP, such as buffer addresses and lengths. The following articles provide information about validating IRP input values:
@@ -227,7 +234,7 @@ The driver should mark the IRP pending before it saves the IRP, and should inclu
 
 Cancel operations can be difficult to code properly because they typically execute asynchronously. Problems in the code that handles cancel operations can go unnoticed for a long time, because this code is typically not executed frequently in a running system. Be sure to read and understand all of the information supplied under [Canceling IRPs](https://msdn.microsoft.com/library/windows/hardware/ff540748). Pay special attention to [Synchronizing IRP Cancellation](https://msdn.microsoft.com/library/windows/hardware/ff564531) and [Points to Consider When Canceling IRPs](https://msdn.microsoft.com/library/windows/hardware/ff559700).
 
-One way to avoid the synchronization problems that are associated with cancel operations is to implement a [cancel-safe IRP queue](https://msdn.microsoft.com/library/windows/hardware/ff540755).
+One way to minimize the synchronization problems that are associated with cancel operations is to implement a [cancel-safe IRP queue](https://msdn.microsoft.com/library/windows/hardware/ff540755).
 
 **Handle IRP cleanup and close operations properly**
 
@@ -266,87 +273,10 @@ In addition to the possible vulnerabilities covered here, this article provides 
 For additional information about C and C++ secure coding, see [Secure coding resources](#securecodingresources) and the end of this article.
 
 
-## <span id="DGC"></span><span id="dgc"></span>Validate Device Guard compatibility
-
-**Security checklist item \#7:** *Validate that your driver uses memory so that it is Device Guard compatible.*
-
-**Memory usage and Device Guard compatibility**
-
-Device Guard uses hardware technology and virtualization to isolate the Code Integrity (CI) decision-making function from the rest of the operating system. When using virtualization-based security to isolate CI, the only way kernel memory can become executable is through a CI verification. This means that kernel memory pages can never be Writable and Executable (W+X) and executable code cannot be directly modified. 
-
-To implement Device Guard compatible code, make sure your driver code does the following:
-
-- Opts in to NX by default
-- Uses NX APIs/flags for memory allocation (NonPagedPoolNx)
-- Does not use sections that are both writable and executable
-- Does not attempt to directly modify executable system memory
-- Does not use dynamic code in kernel
-- Does not load data files as executable
-- Section alignment is a multiple of 0x1000 (PAGE\_SIZE). E.g. DRIVER\_ALIGNMENT=0x1000
-
-For more information about using the tool and a list of incompatible memory calls, see [Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility](use-device-guard-readiness-tool.md).
-
-For general information about Device Guard, see [Windows 10 Device Guard and Credential Guard Demystified](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/)
-and [Device Guard deployment guide](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
-
-For more information about the related device fundamentals test, see [Device.DevFund.DeviceGuard](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfunddeviceguard).
-
-
-
-
-## <span id="technologyspecificcodepractices"></span>Follow technology-specific code best practices
-
-
-**Security checklist item \#8:** *Review the following technology-specific guidance for your driver.*
-
-*File Systems*
-
-For more information, about file system driver security see the following articles:
-
-[Security Considerations for File Systems](https://msdn.microsoft.com/windows/hardware/drivers/ifs/security-considerations-for-file-systems)
-
-[File System Security Issues](https://msdn.microsoft.com/windows/hardware/drivers/ifs/file-system-security-issues)
-
-[Security Features for File Systems](https://msdn.microsoft.com/windows/hardware/drivers/ifs/security-features-for-file-systems)
-
-[Security Considerations for File System Filter Drivers](https://msdn.microsoft.com/windows/hardware/drivers/ifs/security-considerations-for-file-system-filter-drivers)
-
-*NDIS - Networking*
-
-For information about NDIS driver security, see [Security Issues for Network Drivers](https://msdn.microsoft.com/windows/hardware/drivers/network/security-issues-for-network-drivers).
-
-*Display*
-
-For information about display driver security, see &lt;Content Pending&gt;.
-
-*Bluetooth*
-
-For information about Bluetooth driver security, see &lt;Content Pending&gt;.
-
-*Printers*
-
-For information related to printer driver security, see [V4 Printer Driver Security Considerations](https://msdn.microsoft.com/library/windows/hardware/jj863679).
-
-*Security Issues for Windows Image Acquisition (WIA) Drivers*
-
-For information about WIA security, see [Security Issues for Windows Image Acquisition (WIA) Drivers](https://msdn.microsoft.com/windows/hardware/drivers/image/security-issues-for-wia-drivers).
-
-
-## <span id="peercodereview"></span>Perform peer code review
-
-
-**Security checklist item \#9:** *Perform peer code review, to look for issues not surfaced by the other tools and processes*
-
-Seek out knowledgeable code reviewers to look for issues that you may have missed. A second set of eyes will often see issues that you may have overlooked.
-
-If you don't have suitable staff to review you code internally, consider engaging outside help for this purpose.
-
-
-
 
 ## <span id="ManagingDriverAccessControl"></span><span id="managingdriveraccesscontrol"></span><span id="MANAGINGDRIVERACCESSCONTROL"></span>Manage driver access control
 
-**Security checklist item \#10:** *Review your driver to make sure that your are properly controlling access.*
+**Security checklist item \#7:** *Review your driver to make sure that your are properly controlling access.*
 
 **Managing driver access control**
 
@@ -407,9 +337,77 @@ To tighten security when such IOCTLs are sent by user-mode callers, the driver c
 [Windows security model for driver developers](windows-security-model.md)
 
 
+
+## <span id="DGC"></span><span id="dgc"></span>Validate Device Guard compatibility
+
+**Security checklist item \#8:** *Validate that your driver uses memory so that it is Device Guard compatible.*
+
+**Memory usage and Device Guard compatibility**
+
+Device Guard uses hardware technology and virtualization to isolate the Code Integrity (CI) decision-making function from the rest of the operating system. When using virtualization-based security to isolate CI, the only way kernel memory can become executable is through a CI verification. This means that kernel memory pages can never be Writable and Executable (W+X) and executable code cannot be directly modified. 
+
+To implement Device Guard compatible code, make sure your driver code does the following:
+
+- Opts in to NX by default
+- Uses NX APIs/flags for memory allocation (NonPagedPoolNx)
+- Does not use sections that are both writable and executable
+- Does not attempt to directly modify executable system memory
+- Does not use dynamic code in kernel
+- Does not load data files as executable
+- Section alignment is a multiple of 0x1000 (PAGE\_SIZE). E.g. DRIVER\_ALIGNMENT=0x1000
+
+For more information about using the tool and a list of incompatible memory calls, see [Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility](use-device-guard-readiness-tool.md).
+
+For general information about Device Guard, see [Windows 10 Device Guard and Credential Guard Demystified](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/)
+and [Device Guard deployment guide](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
+
+For more information about the related device fundamentals test, see [Device.DevFund.DeviceGuard](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfunddeviceguard).
+
+
+
+
+## <span id="technologyspecificcodepractices"></span>Follow technology-specific code best practices
+
+
+**Security checklist item \#9:** *Review the following technology-specific guidance for your driver.*
+
+*File Systems*
+
+For more information, about file system driver security see the following articles:
+
+[Security Considerations for File Systems](https://msdn.microsoft.com/windows/hardware/drivers/ifs/security-considerations-for-file-systems)
+
+[File System Security Issues](https://msdn.microsoft.com/windows/hardware/drivers/ifs/file-system-security-issues)
+
+[Security Features for File Systems](https://msdn.microsoft.com/windows/hardware/drivers/ifs/security-features-for-file-systems)
+
+[Security Considerations for File System Filter Drivers](https://msdn.microsoft.com/windows/hardware/drivers/ifs/security-considerations-for-file-system-filter-drivers)
+
+*NDIS - Networking*
+
+For information about NDIS driver security, see [Security Issues for Network Drivers](https://msdn.microsoft.com/windows/hardware/drivers/network/security-issues-for-network-drivers).
+
+*Display*
+
+For information about display driver security, see &lt;Content Pending&gt;.
+
+*Bluetooth*
+
+For information about Bluetooth driver security, see &lt;Content Pending&gt;.
+
+*Printers*
+
+For information related to printer driver security, see [V4 Printer Driver Security Considerations](https://msdn.microsoft.com/library/windows/hardware/jj863679).
+
+*Security Issues for Windows Image Acquisition (WIA) Drivers*
+
+For information about WIA security, see [Security Issues for Windows Image Acquisition (WIA) Drivers](https://msdn.microsoft.com/windows/hardware/drivers/image/security-issues-for-wia-drivers).
+
+
+
 ## <span id="enhancedeviceinstallationsecurity"></span>Enhance device installation security
 
-**Security checklist item \#11:** *Review driver inf creation and installation guidance to make sure you are following best practices.*
+**Security checklist item \#10:** *Review driver inf creation and installation guidance to make sure you are following best practices.*
 
 When you create the code that installs your driver, you must make sure that the installation of your device will always be performed in a secure manner. A secure device installation is one that does the following:
  
@@ -429,6 +427,17 @@ For more information, see the following articles:
 [Using Device Installation Functions](https://msdn.microsoft.com/windows/hardware/drivers/install/using-device-installation-functions)
 
 [Device and Driver Installation Advanced Topics](https://msdn.microsoft.com/windows/hardware/drivers/install/device-and-driver-installation-advanced-topics)
+
+
+
+## <span id="peercodereview"></span>Perform peer code review
+
+**Security checklist item \#11:** *Perform peer code review, to look for issues not surfaced by the other tools and processes*
+
+Seek out knowledgeable code reviewers to look for issues that you may have missed. A second set of eyes will often see issues that you may have overlooked.
+
+If you don't have suitable staff to review you code internally, consider engaging outside help for this purpose.
+
 
 
 ## <span id="ReleaseDriverSigning"></span><span id="releasedriversigning"></span><span id="RELEASEDRIVERSIGNING"></span>Execute proper release driver signing
