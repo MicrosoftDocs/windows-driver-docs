@@ -12,6 +12,8 @@ ms.technology: windows-devices
 
 # Wi-Fi Hotspot Offloading Functions
 
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+
 
 This section describes the Wi-Fi Hotspot Offloading framework functions. These functions facilitate the interaction between the hotspot plug-in and hotspot plug-in host.
 

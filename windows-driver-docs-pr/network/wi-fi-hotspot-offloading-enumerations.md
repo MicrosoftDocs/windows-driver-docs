@@ -12,6 +12,8 @@ ms.technology: windows-devices
 
 # Wi-Fi Hotspot Offloading Enumerations
 
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+
 
 This section describes the hotspot offloading enumerations.
 

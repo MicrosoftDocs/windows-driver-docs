@@ -66,6 +66,7 @@
 #### [How to send USB bulk transfer requests](usb-bulk-and-interrupt-transfer.md)
 #### [How to open and close static streams in a USB bulk endpoint](how-to-open-streams-in-a-usb-endpoint.md)
 #### [How to transfer data to USB isochronous endpoints](transfer-data-to-isochronous-endpoints.md)
+#### [USB client drivers for Media-Agnostic (MA-USB)](usb-client-drivers-for-ma-usb.md)
 #### [How to send chained MDLs](how-to-send-chained-mdls.md)
 #### [How to recover from USB pipe errors](how-to-recover-from-usb-pipe-errors.md)
 #### [USB Bandwidth Allocation](usb-bandwidth-allocation.md)

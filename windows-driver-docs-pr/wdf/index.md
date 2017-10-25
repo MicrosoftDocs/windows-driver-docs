@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 This topic summarizes the new features and improvements for Windows Driver Frameworks (WDF) drivers in Windows 10.
 
-Windows 10, version 1703 includes Kernel-Mode Driver Framework (KMDF) version 1.21 and User-Mode Driver Framework (UMDF) version 2.21.
+Windows 10, version 1709 includes Kernel-Mode Driver Framework (KMDF) version 1.23 and User-Mode Driver Framework (UMDF) version 2.23.
 
 You can use these framework versions to build drivers for:
 
@@ -30,6 +30,10 @@ You can use these framework versions to build drivers for:
 -   Windows Server 2016
 
 For version history, see [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md). Except where noted, UMDF references on this page describe version 2 functionality that is not available in UMDF version 1.
+
+## New in WDF for Windows 10, version 1709
+
+See [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md).
 
 ## New in WDF for Windows 10, version 1703
 

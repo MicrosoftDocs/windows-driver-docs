@@ -59,6 +59,59 @@ Next, the client calls [**NetTxQueueCreate**](nettxqueuecreate.md) to allocate a
 
 To retrieve the ring buffer associated with a given queue, call [**NetTxQueueGetRingBuffer**](nettxqueuegetringbuffer.md).
 
+Example
+-------
+
+> [!TIP]
+> This example transmit queue uses two driver-defined packet contexts - one called MY_TX_PACKET_CONTEXT, and a second called MY_TCB to assist with transmit operations. For more info about setting up this second example packet context and initializing it, see [NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE](net-packet-context-attributes-init-type.md).
+>
+> Error handling code has been excised from this example for brevity and clarity.
+
+```cpp
+NTSTATUS
+EvtAdapterCreateTxQueue(
+    _In_ NETADAPTER netAdapter,
+    _Inout_ PNETTXQUEUE_INIT txQueueInit)
+{
+    NTSTATUS status = STATUS_SUCCESS;
+
+    NET_TXQUEUE_CONFIG txConfig;
+    NET_TXQUEUE_CONFIG_INIT(
+        &txConfig,
+        EvtTxQueueAdvance,
+        EvtTxQueueSetNotificationEnabled,
+        EvtTxQueueCancel);
+
+    // Initialize the first default packet context
+
+    NET_PACKET_CONTEXT_ATTRIBUTES myTxContextAttributes;
+    NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE(&myTxContextAttributes, MY_DEFAULT_TX_PACKET_CONTEXT);
+
+    // Add the first default packet context attributes to the queue
+
+    status = NetTxQueueInitAddPacketContextAttributes(txQueueInit, &myTxContextAttributes);
+
+    // Initialize a second custom packet context for a transmit control block
+
+    NET_PACKET_CONTEXT_ATTRIBUTES tcbContextAttributes;
+    NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE(&tcbContextAttributes, MY_TCB);
+
+    // Add the second TCB packet context attributes to the queue
+
+    status = NetTxQueueInitAddPacketContextAttributes(txQueueInit, &tcbContextAttributes);
+
+    // Create the transmit queue
+
+    status = NetTxQueueCreate(
+        txQueueInit,
+        &txAttributes,
+        &txConfig,
+        &netAdapter->TxQueue);
+
+    return status;
+}
+```
+
 Requirements
 ------------
 

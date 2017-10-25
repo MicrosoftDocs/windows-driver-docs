@@ -1,8 +1,17 @@
 ---
-title: Device Initialization
+title: Device initialization
+description: Device initialization
+ms.assetid: EBBEF0FB-6CDB-4899-AAE9-71812EE20AFB
+keywords:
+- NetAdapterCx device initialization, NetCx device initialization
+ms.author: windowsdriverdev
+ms.date: 06/05/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Device Initialization
+# Device initialization
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
@@ -37,7 +46,7 @@ In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hard
     status = NetAdapterCreate(device, &attribs, &config, &adapter);
     ```
 
-You can have only one NETADAPTER per WDFDEVICE, with the WDFDEVICE being the parent object of the NETADAPTER.  You can find the object hierarchy in [Summary of Objects](summary-of-objects.md).
+You can have only one NETADAPTER per WDFDEVICE, with the WDFDEVICE being the parent object of the NETADAPTER.  You can find the object hierarchy in [Summary of objects](summary-of-objects.md).
 
 Optionally, you can add context space to the NETADAPTER object. Since you can set a context on any WDF object, you could add separate context space for the WDFDEVICE and the NETADAPTER objects. In the example in step 4, the client adds `MYDRIVER_ADAPTER_CONTEXT` to the NETADAPTER object. For more info, see [Framework Object Context Space](../wdf/framework-object-context-space.md).
 

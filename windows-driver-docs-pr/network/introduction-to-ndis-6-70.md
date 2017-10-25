@@ -19,7 +19,7 @@ NDIS 6.70 is a minor version update to NDIS 6.60 for miniport, protocol, filter,
 
 ### NetAdapterCx
 
-NDIS 6.70 includes a major new feature for NIC drivers, the Network Adapter WDF Class Extension, a.k.a. [NetAdapterCx](../netcx/index.md). NetAdapterCx is preview only in Windows 10, version 1703. The NetAdapterCx model enables NIC driver developers to harness the full functionality and simplified driver model of WDF, meaning NIC drivers are easier to write.
+Alongside NDIS 6.70, Windows 10, version 1703 includes a major new feature for NIC drivers called the Network Adapter WDF Class Extension, a.k.a. [NetAdapterCx](../netcx/index.md). NetAdapterCx is preview only in Windows 10, version 1703. The NetAdapterCx model enables NIC driver developers to harness the full functionality and simplified driver model of WDF, meaning NIC drivers are easier to write.
 
 ### Other feature updates
 
@@ -40,7 +40,7 @@ For more information about implementing a NIC driver with the NetAdapterCx, see 
 
 ### Miniport, protocol, filter, and intermediate drivers
 
-An NDIS 6.70 driver must follow the requirements that are defined in [Implementing an NDIS 6.60 driver](introduction-to-ndis-6-60.md#implementing-an-ndis-660-driver).
+An NDIS 6.70 driver must follow the requirements that are defined in [Implementing an NDIS 6.30 driver](implementing-an-ndis-6-30-driver.md).
 
 In addition, an NDIS 6.70 driver must be compliant with the following requirements:
 
@@ -52,7 +52,7 @@ In addition, an NDIS 6.70 driver must be compliant with the following requiremen
 
 ### NIC drivers
 
-For more information about compiling a NIC driver with the NetAdapterCx, see [Porting NDIS miniport drivers to NetAdapter Class Extension (Compilation settings)](../netcx/porting-ndis-to-netadapter-cx.md#compilation-settings).
+For more information about compiling a NIC driver with the NetAdapterCx, see [Porting NDIS miniport drivers to NetAdapterCx (Compilation settings)](../netcx/porting-ndis-miniport-drivers-to-netadaptercx.md#compilation-settings).
 
 ### Miniport, protocol, and filter drivers
 

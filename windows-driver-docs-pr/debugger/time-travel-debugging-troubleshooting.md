@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Troubleshooting
 description: This section describes how to troubleshoot time travel traces.
 ms.author: windowsdriverdev
-ms.date: 09/24/2017
+ms.date: 10/18/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,6 +44,11 @@ If recording of your application fails, verify that you can record a simple Wind
 TTD recording is an invasive technology, which can interfere with other invasive technologies like application virtualization frameworks, information management products, security software or antivirus products.
 
 See "Things to look out for" in [Time Travel Debugging - Overview](time-travel-debugging-overview.md) for information on known TTD incompatibilities.
+
+### I’m tracing an application and running AppVerifer at the same time, and the performance when replaying the trace is slow.
+
+Because of the way AppVerifer uses memory to check the application, the experience later when replaying the trace can be noticeably worse than without AppVerifier. To improve performance, disable AppVerifier when recording the app. If this is not possible, you may need to close the callstack window in WinDbg in order to improve performance.
+
 
 ## Issues with .IDX index files
 

@@ -211,4 +211,4 @@ The client driver calls WdfRequestComplete on the framework request object with 
 The client driver might need to send an I/O request to another driver to perform the hardware operation. For example, in the sample, the driver sends an SPB request to the I<sup>2</sup>C-connected port controller. In that case, the driver cannot forward the framework request object it received from UcmTcpciCx because the the request objet might not have the correct number of stack locations in the WDM IRP. The client driver must create another framework request object and forward it to another driver. The client driver can preallocate request objectss it needs during initialization, instead of creating a one every time it gets a request from UcmTcpciCx. This is possible because UcmTcpciCx guarantees that there will be only one request outstanding at any given time. 
 
 ## See Also
-[USB Type-C Port Controller Interface driver class extensions reference]
+[USB Type-C Port Controller Interface driver class extensions reference](https://msdn.microsoft.com/en-us/library/windows/hardware/mt805826)
