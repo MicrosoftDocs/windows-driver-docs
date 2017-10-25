@@ -1,6 +1,6 @@
 ---
 title: Firmware WEG FAQ
-description:  Firmware WEG: Frequently asked questions (FAQ)
+description:  Firmware WEG - Frequently asked questions (FAQ)
 author: windows-driver-content
 ms.author: windowsdriverdev
 ms.date: 05/15/2017
