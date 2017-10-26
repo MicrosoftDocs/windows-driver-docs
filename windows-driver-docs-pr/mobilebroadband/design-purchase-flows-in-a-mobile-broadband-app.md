@@ -83,7 +83,7 @@ Inappropriate design for the purchase, recharge, refill, and billing pages:
 
 -   For design guidance for error handling, see [Laying out your UI](https://msdn.microsoft.com/library/windows/apps/hh465304).
 
--   For accessibility guidance, see [Accessibility in Windows Store apps using C++, C#, or Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh452680).
+-   For accessibility guidance, see [Accessibility in UWP apps using C++, C#, or Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh452680).
 
 -   For more information about how to use built-in controls, see [Adding controls and content](https://msdn.microsoft.com/library/windows/apps/hh465393).
 

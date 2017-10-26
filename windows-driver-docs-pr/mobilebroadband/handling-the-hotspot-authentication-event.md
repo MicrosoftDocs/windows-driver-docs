@@ -32,7 +32,7 @@ Other APIs exist to retrieve the following items:
 
 -   The BSSID of the wireless network (see [**Windows.Networking.Connectivity namespace**](https://msdn.microsoft.com/library/windows/apps/br207308)).
 
--   DHCP parameters of the network (see [Win32 and COM for Windows Store apps](https://msdn.microsoft.com/library/windows/apps/br205757)).
+-   DHCP parameters of the network (see [Win32 and COM for UWP apps](https://msdn.microsoft.com/library/windows/apps/br205757)).
 
 By using this information and any other information that your app needs to obtain from the local system or the network, credentials can be generated. The object also contains methods that permit the app to continue or complete the hotspot authentication.
 

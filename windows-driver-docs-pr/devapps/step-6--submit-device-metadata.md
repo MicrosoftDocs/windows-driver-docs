@@ -1,6 +1,6 @@
 ---
-title: Step 6 Submit device metadata for your Windows Store device app
-description: This topic describes how to submit device metadata for your Windows Store device app to the Windows Dev Center hardware dashboard.
+title: Step 6 Submit device metadata for your UWP device app
+description: This topic describes how to submit device metadata for your UWP device app to the Windows Dev Center hardware dashboard.
 ms.assetid: 5A4A371E-42A2-43C8-A496-CC3C38C17182
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -9,16 +9,16 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Step 6: Submit device metadata for your Windows Store device app
+# Step 6: Submit device metadata for your UWP device app
 
 
 ![device app workflow, step 6](images/6-device-app-workflow.png)
 
-This topic describes how to submit device metadata for your Windows Store device app to the Windows Dev Center hardware dashboard.
+This topic describes how to submit device metadata for your UWP device app to the Windows Dev Center hardware dashboard.
 
-A Windows Store device app is a special kind of Windows Store app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations and automatically install when a device is plugged in. For more info about Windows Store device apps, see [Meet Windows Store device apps](meet-windows-store-device-apps.md).
+A UWP device app is a special kind of UWP app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations and automatically install when a device is plugged in. For more info about UWP device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-**Note**  This topic is part of a step-by-step series. See [Build a Windows Store device app step-by-step](build-a-windows-store-device-app-step-by-step.md) for the introduction.
+**Note**  This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
 
  
 
@@ -52,7 +52,7 @@ You can use the **Bulk Package Wizard** to create a bulk submission package that
     -   **Logo Submission IDs** should include the hardware dashboard submission IDs.
     -   **Update experience** should be selected if the experience has been submitted before.
 
-    **Note**  The device must be certified before submitting device metadata for your Windows Store device app.
+    **Note**  The device must be certified before submitting device metadata for your UWP device app.
 
      
 

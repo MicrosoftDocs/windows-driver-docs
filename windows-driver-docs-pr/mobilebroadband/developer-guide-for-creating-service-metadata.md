@@ -62,23 +62,23 @@ You should receive an acknowledgement emails with 24 hours that your request was
 
 ### <span id="Mobile_broadband_app"></span><span id="mobile_broadband_app"></span><span id="MOBILE_BROADBAND_APP"></span>Mobile broadband app
 
-Before you create your service metadata package, ensure that your mobile broadband app has been developed and associated with the Windows Store. This app should provide key experiences, such as plan purchase, data usage, help and support, as well as highlighting value-added services from the operator. For more info about creating the mobile broadband app, see the following links:
+Before you create your service metadata package, ensure that your mobile broadband app has been developed and associated with the Microsoft Store. This app should provide key experiences, such as plan purchase, data usage, help and support, as well as highlighting value-added services from the operator. For more info about creating the mobile broadband app, see the following links:
 
 -   [Mobile broadband WinRT API overview](mobile-broadband-winrt-api-overview.md)
 
 -   [Mobile operator hardware overview](mobile-operator-hardware-overview.md)
 
--   [Windows Store mobile broadband apps](windows-store-mobile-broadband-apps.md)
+-   [UWP mobile broadband apps](uwp-mobile-broadband-apps.md)
 
 **Note**  
-The mobile broadband app doesn’t have to be published to the Windows Store until the service metadata has been tested and is ready to be published externally. We recommend that the app is published to the Windows Store only after the service metadata package passes preview mode testing.
+The mobile broadband app doesn’t have to be published to the Microsoft Store until the service metadata has been tested and is ready to be published externally. We recommend that the app is published to the Microsoft Store only after the service metadata package passes preview mode testing.
 
  
 
 ## <span id="Creating_service_metadata_packages"></span><span id="creating_service_metadata_packages"></span><span id="CREATING_SERVICE_METADATA_PACKAGES"></span>Creating service metadata packages
 
 
-Creating a service metadata package starts with the Service Metadata wizard that is available on the Windows Dev Center hardware dashboard. For more info on the Service Metadata wizard, see [Step 2- Create the service metadata package](#2-create-the-service-metadata-package). You can use the Service Metadata wizard to create a new or edit an existing service metadata package. As you go through the wizard and fill out the values, the wizard will validate and notify you of any errors or warnings. This validation includes checking for missing or incorrect fields, service identifier ownership, mobile broadband app existence in the Windows Store, and so on.
+Creating a service metadata package starts with the Service Metadata wizard that is available on the Windows Dev Center hardware dashboard. For more info on the Service Metadata wizard, see [Step 2- Create the service metadata package](#2-create-the-service-metadata-package). You can use the Service Metadata wizard to create a new or edit an existing service metadata package. As you go through the wizard and fill out the values, the wizard will validate and notify you of any errors or warnings. This validation includes checking for missing or incorrect fields, service identifier ownership, mobile broadband app existence in the Microsoft Store, and so on.
 
 When you are on the final confirmation page and ready to submit, you have the option of submitting your package either in **Developer** mode or **Preview** mode.
 
@@ -105,7 +105,7 @@ Use the following steps to create a service metadata package on the Windows Dev 
 
 -   [2-Create the service metadata package](#2-create-the-service-metadata-package)
 
--   [3-Insert the store manifest file into the Windows Store device app](#3-insert-the-store-manifest-file-into-the-windows-store-device-app)
+-   [3-Insert the store manifest file into the Microsoft Store device app](#3-insert-the-store-manifest-file-into-the-uwp-device-app)
 
 -   [4-Test the service metadata package](#4-test-the-service-metadata-package)
 
@@ -116,11 +116,11 @@ Use the following steps to create a service metadata package on the Windows Dev 
 As you go through the steps in the Service Metadata Wizard in Step 2 of this topic, several pieces of information stored in the package.appxmanifest file from the mobile broadband app project that you want to associated with the device is required. Use the following steps to gather the information so that it’s ready for Step 2 of this topic.
 
 **Caution**  
-The mobile broadband app must be associated with the Windows Store before you gather the values in this step. When you associate a mobile broadband app, the values in the package manifest file are updated to use the information from your Windows Store developer account. However, the mobile broadband app does not have to be published to the Windows Store. It can stay in your local development environment until you are ready to publish the service metadata package.
+The mobile broadband app must be associated with the Microsoft Store before you gather the values in this step. When you associate a mobile broadband app, the values in the package manifest file are updated to use the information from your Microsoft Store developer account. However, the mobile broadband app does not have to be published to the Microsoft Store. It can stay in your local development environment until you are ready to publish the service metadata package.
 
  
 
-**To gather Windows Store device app information**
+**To gather UWP device app information**
 
 1.  Open the mobile broadband app project by using Visual Studio 2013.
 
@@ -210,13 +210,13 @@ Service metadata is created by using the Service Metadata Wizard in the Windows 
 
     -   **Developer Mode** – The package is not signed and it must be manually downloaded and installed on every computer. Use this option if you want to save the package for offline development.
 
-    -   **Preview Mode** – The package is signed and automatically downloaded from Microsoft to test computers with the appropriate registry settings configured. Preview Mode does not check to ensure that the mobile broadband app is published to the Windows Store.
+    -   **Preview Mode** – The package is signed and automatically downloaded from Microsoft to test computers with the appropriate registry settings configured. Preview Mode does not check to ensure that the mobile broadband app is published to the Microsoft Store.
 
     ![this is the confirm step of the wizard](images/mbae-sxs81-confirm.png)
 
-### 3-Insert the store manifest file into the Windows Store device app
+### 3-Insert the store manifest file into the Microsoft Store device app
 
-A store manifest file must be included with a Windows Store device app. Use the following steps to download the store manifest file from your service metadata package and insert it into the mobile broadband app project.
+A store manifest file must be included with a UWP device app. Use the following steps to download the store manifest file from your service metadata package and insert it into the mobile broadband app project.
 
 **Insert the store manifest file**
 
@@ -230,7 +230,7 @@ A store manifest file must be included with a Windows Store device app. Use the 
 
 4.  Browse to the store manifest file that you downloaded, and then click **Add**.
 
-5.  Recompile the mobile broadband app and publish it again to the Windows Store.
+5.  Recompile the mobile broadband app and publish it again to the Microsoft Store.
 
 ### 4-Test the service metadata package
 

@@ -19,7 +19,7 @@ ms.technology: windows-devices
 
 This section describes how to install the WinDbg Preview debugger.
 
-The WinDbg Preview debugger is available in the Windows Store. It requires Windows 10 Anniversary Update to install. To install it, open the Windows Store and search for "WinDbg Preview", or click [here](
+The WinDbg Preview debugger is available in the Microsoft Store. It requires Windows 10 Anniversary Update to install. To install it, open the Microsoft Store and search for "WinDbg Preview", or click [here](
 https://www.microsoft.com/store/apps/9pgjgd53tn86).
 
 Once the app is a located, click on it to download and install.

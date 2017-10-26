@@ -1,6 +1,6 @@
 ---
-title: Step 3 Add an experience ID to the Windows Store device app
-description: This topic describes how to add the experience ID to your Windows Store device app.
+title: Step 3 Add an experience ID to the Microsoft Store device app
+description: This topic describes how to add the experience ID to your UWP device app.
 ms.assetid: D114C916-EADE-4C08-BF7E-628D2FA5AACC
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -9,20 +9,20 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Step 3: Add an experience ID to the Windows Store device app
+# Step 3: Add an experience ID to the Microsoft Store device app
 
 
 ![device app workflow, step 3](images/3-device-app-workflow.png)
 
-This topic describes how to add the experience ID to your Windows Store device app. The *experience ID* is a GUID that uniquely identifies a device metadata package; it's required if your app is configured for automatic installation, as is the case with [Windows Store device apps for printers](windows-store-device-apps-for-printers.md) and [cameras](windows-store-device-apps-for-webcams.md).
+This topic describes how to add the experience ID to your UWP device app. The *experience ID* is a GUID that uniquely identifies a device metadata package; it's required if your app is configured for automatic installation, as is the case with [UWP device apps for printers](uwp-device-apps-for-printers.md) and [cameras](uwp-device-apps-for-webcams.md).
 
 **Tip**  You can skip this step if your app is specified as a privileged app and it is not configured for automatic installation.
 
  
 
-A Windows Store device app is a special kind of Windows Store app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations and automatically install when a device is plugged in. For more info about Windows Store device apps, see [Meet Windows Store device apps](meet-windows-store-device-apps.md).
+A UWP device app is a special kind of UWP app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations and automatically install when a device is plugged in. For more info about UWP device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-**Note**  This topic is part of a step-by-step series. See [Build a Windows Store device app step-by-step](build-a-windows-store-device-app-step-by-step.md) for the introduction.
+**Note**  This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
 
  
 

@@ -200,7 +200,7 @@ If none of these methods works for the MNO’s network (for example, the MNO can
 
 **Service metadata**
 
-This method creates a service metadata package that covers the entire MNO network. This is usually done by submitting an IMSI range that covers all the MCC+MNC values on the MNO network, and no ICCID ranges. MVNO ranges are not described. The service metadata package features generic branding and a generic network name that displays in the Windows Connection Manager. The service metadata then references a generic app that is automatically downloaded from the Windows Store when the MNO’s SIM is detected.
+This method creates a service metadata package that covers the entire MNO network. This is usually done by submitting an IMSI range that covers all the MCC+MNC values on the MNO network, and no ICCID ranges. MVNO ranges are not described. The service metadata package features generic branding and a generic network name that displays in the Windows Connection Manager. The service metadata then references a generic app that is automatically downloaded from the Microsoft Store when the MNO’s SIM is detected.
 
 **Determining network affiliation**
 

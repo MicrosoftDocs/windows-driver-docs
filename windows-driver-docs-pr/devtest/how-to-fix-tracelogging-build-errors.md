@@ -47,7 +47,7 @@ Error 3 error LNK2001: unresolved external symbol __imp__EventRegister@16
 ```
 
 <span id="Fix_"></span><span id="fix_"></span><span id="FIX_"></span>Fix:  
-Per the guidance on MSDN, Windows Store apps need to link against advapi32.lib to resolve this reference issue.
+Per the guidance on MSDN, UWP apps need to link against advapi32.lib to resolve this reference issue.
 
 ## <span id="Case_3__Phone_Builds"></span><span id="case_3__phone_builds"></span><span id="CASE_3__PHONE_BUILDS"></span>Case 3: Phone Builds
 

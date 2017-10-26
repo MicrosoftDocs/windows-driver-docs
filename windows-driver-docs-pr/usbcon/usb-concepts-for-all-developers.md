@@ -64,7 +64,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <thead>
 <tr class="header">
 <th>Client driver</th>
-<th>Windows Store app</th>
+<th>UWP app</th>
 <th>Windows desktop app</th>
 </tr>
 </thead>
@@ -73,7 +73,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <td><p><strong>KMDF</strong>: [<strong>WdfUsbTargetDeviceCreateWithParameters</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439428)</p>
 <p><strong>UMDF</strong>: [<strong>IWDFUsbTargetDevice</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560362)</p></td>
 <td><p>[<strong>UsbDevice</strong>](https://msdn.microsoft.com/library/windows/apps/dn263883)</p>
-<p>[How to connect to a USB device (Windows Store app)](how-to-connect-to-a-usb-device--windows-store-app-.md).</p></td>
+<p>[How to connect to a USB device (UWP app)](how-to-connect-to-a-usb-device--uwp-app-.md).</p></td>
 <td><p>[<strong>WinUsb_Initialize</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540277)</p>
 <p>See [Write a Windows desktop app based on the WinUSB template](how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md).</p></td>
 </tr>
@@ -93,7 +93,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <thead>
 <tr class="header">
 <th>Client driver</th>
-<th>Windows Store app</th>
+<th>UWP app</th>
 <th>Windows desktop app</th>
 </tr>
 </thead>
@@ -109,7 +109,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <p>[<strong>UsbConfiguration.Descriptors</strong>](https://msdn.microsoft.com/library/windows/apps/dn263802)</p>
 <p>[<strong>UsbInterface.Descriptors</strong>](https://msdn.microsoft.com/library/windows/apps/dn264289)</p>
 <p>[<strong>UsbInterfaceSetting.Descriptors</strong>](https://msdn.microsoft.com/library/windows/apps/dn264281)</p>
-<p>[How to get USB descriptors (Windows Store app)](how-to-get-usb-descriptors--windows-store-app-.md).</p></td>
+<p>[How to get USB descriptors (UWP app)](how-to-get-usb-descriptors--uwp-app-.md).</p></td>
 <td><p>[<strong>WinUsb_GetDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540257)</p>
 <p>[<strong>WinUsb_QueryInterfaceSettings</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540292)</p>
 <p>[<strong>WinUsb_QueryPipe</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540293)</p>
@@ -131,7 +131,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <thead>
 <tr class="header">
 <th>Client driver</th>
-<th>Windows Store app</th>
+<th>UWP app</th>
 <th>Windows desktop app</th>
 </tr>
 </thead>
@@ -148,7 +148,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <p>Configuration selection is not Supported.</p>
 <p>[<strong>IWDFUsbInterface::SelectSetting</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560343)</p></td>
 <td><p>[<strong>UsbInterfaceSetting.SelectSettingAsync</strong>](https://msdn.microsoft.com/library/windows/apps/dn264286)</p>
-<p>[How to select a USB interface setting (Windows Store app)](how-to-select-a-usb-interface-setting--windows-store-app-.md).</p></td>
+<p>[How to select a USB interface setting (UWP app)](how-to-select-a-usb-interface-setting--uwp-app-.md).</p></td>
 <td>[<strong>WinUsb_SetCurrentAlternateSetting</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540302)</td>
 </tr>
 </tbody>
@@ -167,7 +167,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <thead>
 <tr class="header">
 <th>Client driver</th>
-<th>Windows Store app</th>
+<th>UWP app</th>
 <th>Windows desktop app</th>
 </tr>
 </thead>
@@ -182,7 +182,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <p>See [How to send a USB control transfer](usb-control-transfer.md).</p></td>
 <td><p>[<strong>SendControlInTransferAsync</strong>](https://msdn.microsoft.com/library/windows/apps/dn264037)</p>
 <p>[<strong>SendControlOutTransferAsync</strong>](https://msdn.microsoft.com/library/windows/apps/dn264047)</p>
-<p>[How to send a USB control transfer (Windows Store app)](how-to-send-a-usb-control-transfer--windows-store-app-.md).</p></td>
+<p>[How to send a USB control transfer (UWP app)](how-to-send-a-usb-control-transfer--uwp-app-.md).</p></td>
 <td><p>[<strong>WinUsb_ControlTransfer</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540219)</p>
 <p>See [Send Control Transfer to the Default Endpoint](using-winusb-api-to-communicate-with-a-usb-device.md#control).</p></td>
 </tr>
@@ -202,7 +202,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <thead>
 <tr class="header">
 <th>Client driver</th>
-<th>Windows Store app</th>
+<th>UWP app</th>
 <th>Windows desktop app</th>
 </tr>
 </thead>
@@ -221,7 +221,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <p>[<strong>IWDFUsbTargetPipe2</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560394)</p></td>
 <td><p>[<strong>UsbBulkInPipe.InputStream</strong>](https://msdn.microsoft.com/library/windows/apps/dn297601)</p>
 <p>[<strong>UsbBulkOutPipe.OutputStream</strong>](https://msdn.microsoft.com/library/windows/apps/dn297669)</p>
-<p>[How to send a USB bulk transfer request (Windows Store app)](how-to-send-a-usb-bulk-transfer--windows-store-app-.md).</p></td>
+<p>[How to send a USB bulk transfer request (UWP app)](how-to-send-a-usb-bulk-transfer--uwp-app-.md).</p></td>
 <td><p>[<strong>WinUsb_WritePipe</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540322)</p>
 <p>[<strong>WinUsb_ReadPipe</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540297)</p>
 <p>See [Issue I/O Requests](using-winusb-api-to-communicate-with-a-usb-device.md#io).</p></td>
@@ -242,7 +242,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <thead>
 <tr class="header">
 <th>Client driver</th>
-<th>Windows Store app</th>
+<th>UWP app</th>
 <th>Windows desktop app</th>
 </tr>
 </thead>
@@ -251,7 +251,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <td><p>Same as bulk transfers.</p></td>
 <td><p>[<strong>UsbInterruptInPipe.DataReceived</strong>](https://msdn.microsoft.com/library/windows/apps/dn278418)</p>
 <p>[<strong>UsbInterruptOutPipe.OutputStream</strong>](https://msdn.microsoft.com/library/windows/apps/dn278428)</p>
-<p>[How to send a USB interrupt transfer request (Windows Store app)](how-to-send-a-usb-interrupt-transfer--windows-store-app-.md).</p></td>
+<p>[How to send a USB interrupt transfer request (UWP app)](how-to-send-a-usb-interrupt-transfer--uwp-app-.md).</p></td>
 <td><p>Same as bulk transfers.</p></td>
 </tr>
 </tbody>
@@ -270,7 +270,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <thead>
 <tr class="header">
 <th>Client driver</th>
-<th>Windows Store app</th>
+<th>UWP app</th>
 <th>Windows desktop app</th>
 </tr>
 </thead>
@@ -307,7 +307,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <thead>
 <tr class="header">
 <th>Client driver</th>
-<th>Windows Store app</th>
+<th>UWP app</th>
 <th>Windows desktop app</th>
 </tr>
 </thead>

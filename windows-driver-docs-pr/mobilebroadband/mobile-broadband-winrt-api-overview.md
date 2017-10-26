@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Mobile broadband WinRT API overview
 
 
-This topic provides an overview of the Mobile Broadband API that is available in the Windows Runtime environment. It assumes that you are familiar with the Windows mobile broadband platform and the basic concepts for Windows Store app development.
+This topic provides an overview of the Mobile Broadband API that is available in the Windows Runtime environment. It assumes that you are familiar with the Windows mobile broadband platform and the basic concepts for UWP app development.
 
 The following topics are available in this section:
 

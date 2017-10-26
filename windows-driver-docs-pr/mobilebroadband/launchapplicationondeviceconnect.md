@@ -45,7 +45,7 @@ There are no attributes.
 <tbody>
 <tr class="odd">
 <td><p>[AutoplayHandler](autoplayhandler.md)</p></td>
-<td><p>Specifies a Windows Store device app that should appear as the recommended AutoPlay action when a user plugs in a device.</p></td>
+<td><p>Specifies a UWP device app that should appear as the recommended AutoPlay action when a user plugs in a device.</p></td>
 </tr>
 <tr class="even">
 <td><p>[DesktopAutoplayHandler](desktopautoplayhandler.md)</p></td>
@@ -98,7 +98,7 @@ There are no attributes.
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
 
-You must specify either a Windows Store device app or a desktop app. Use [AutoplayHandler](autoplayhandler.md) if you will specify a Windows Store device app, and use [DesktopAutoplayHandler](desktopautoplayhandler.md) if you specify a desktop application.
+You must specify either a UWP device app or a desktop app. Use [AutoplayHandler](autoplayhandler.md) if you will specify a UWP device app, and use [DesktopAutoplayHandler](desktopautoplayhandler.md) if you specify a desktop application.
 
 The LaunchApplicationOnDeviceConnect element is optional.
 

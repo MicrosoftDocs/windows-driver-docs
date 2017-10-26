@@ -32,7 +32,7 @@ In Windows 10, the driver has been rewritten by using the [Kernel-Mode Driver F
 -   Improved PnP and power management by the driver (such as, handling surprise removal).
 -   Added power management features such as [USB Selective Suspend](usb-selective-suspend.md).
 
-In addition, Windows Store applications can now use the APIs provided by the new [**Windows.Devices.SerialCommunication**](https://msdn.microsoft.com/library/windows/apps/dn921817) namespace that allow apps to talk to these devices.
+In addition, UWP applications can now use the APIs provided by the new [**Windows.Devices.SerialCommunication**](https://msdn.microsoft.com/library/windows/apps/dn921817) namespace that allow apps to talk to these devices.
 
 ## Usbser.sys installation
 

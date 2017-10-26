@@ -19,7 +19,7 @@ Location data can violate a user's privacy, especially if the information identi
 
 The sensor and location platform in Windows provides the following features to help ensure that location data remains private:
 
--   In Windows 8, there are three types of settings for enabling location. There is a setting for administrators that can disable location for all users, a per-user setting to enable or disable location, and for Windows Store apps, users can apply per-app location settings. By default, per-user location settings are turned off until the user provides explicit consent to access the data through Control Panel.
+-   In Windows 8, there are three types of settings for enabling location. There is a setting for administrators that can disable location for all users, a per-user setting to enable or disable location, and for UWP apps, users can apply per-app location settings. By default, per-user location settings are turned off until the user provides explicit consent to access the data through Control Panel.
 
     For more information on location settings in Windows 8, see [Location awareness](https://msdn.microsoft.com/library/windows/apps/br225603).
 

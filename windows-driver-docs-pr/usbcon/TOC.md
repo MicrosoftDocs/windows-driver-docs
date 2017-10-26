@@ -21,7 +21,7 @@
 ## [USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md)
 ## [USB device-side drivers in Windows](usb-device-side-drivers-in-windows.md)
 ## [Developing Windows applications for USB devices](developing-windows-applications-that-communicate-with-a-usb-device.md)
-### [UWP app for a USB device](writing-usb-device-companion-apps-for-UWP.md)
+### [UWP app for a USB device](writing-usb-device-companion-apps-for-microsoft-store.md)
 #### [Talking to USB devices, start to finish (UWP app)](talking-to-usb-devices-start-to-finish.md)
 #### [How to add USB device capabilities to the app manifest](updating-the-app-manifest-with-usb-device-capabilities.md)
 #### [How to connect to a USB device (UWP app)](how-to-connect-to-a-usb-device--UWP-app-.md)

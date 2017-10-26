@@ -23,7 +23,7 @@ The AVStream driver samples in this directory provide a starting point for writi
 | AVStream                       | [avshws](http://go.microsoft.com/fwlink/p/?LinkId=620185)          | A simulated hardware sample driver providing a pin-centric capture driver to simulate AV capture hardware.                                                            |
 | AVSSamp                        | [avssamp](http://go.microsoft.com/fwlink/p/?LinkId=620186)         | The AVStream filter-centric simulated capture sample driver with functional audio.                                                                                    |
 | Driver Device Transform Sample | [sampledevicemft](http://go.microsoft.com/fwlink/p/?LinkId=620187) | Illustrative example for a Driver Device Transform which loads in a process streaming an Avstream-based camera device using Media Foundation.                         |
-| Driver MFT                     | [SampleMft0](http://go.microsoft.com/fwlink/p/?LinkId=617126)      | A driver MFT for use with a camera's Windows Store device app. A driver MFT is a Media Foundation Transform that is used with a specific camera when capturing video. |
+| Driver MFT                     | [SampleMft0](http://go.microsoft.com/fwlink/p/?LinkId=617126)      | A driver MFT for use with a camera's UWP device app. A driver MFT is a Media Foundation Transform that is used with a specific camera when capturing video. |
 
  
 

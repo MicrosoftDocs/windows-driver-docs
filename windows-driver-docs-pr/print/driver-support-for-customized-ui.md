@@ -1,7 +1,7 @@
 ---
 title: Driver Support for Customized UI
 author: windows-driver-content
-description: The v4 print driver model was developed with built-in support for UI customization using printer extensions or Windows Store device apps for printing.
+description: The v4 print driver model was developed with built-in support for UI customization using printer extensions or UWP device apps for printing.
 ms.assetid: 91B0E824-1EE3-40B0-A24E-5A66C158972E
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -13,23 +13,23 @@ ms.technology: windows-devices
 # Driver Support for Customized UI
 
 
-The v4 print driver model was developed with built-in support for UI customization using printer extensions or Windows Store device apps for printing.
+The v4 print driver model was developed with built-in support for UI customization using printer extensions or UWP device apps for printing.
 
 Additional UI customization design considerations are described in the following sections.
 
 **Print Preferences**
 
-All v4 print drivers work with print preferences, however, it is important to maintain the boundaries between the configuration and UI layers in order to ensure maximum consistency across all scenarios. Since there may not be any printer extensions or Windows Store device apps installed (or they may have been installed automatically), v4 print drivers need to ensure that the print drivers are functional without a customized printer preferences experience. In particular, this means that the PrintTicket and PrintCapabilities support should be complete and comprehensive in the GPD/PPD + JavaScript constraints implementation in the driver.
+All v4 print drivers work with print preferences, however, it is important to maintain the boundaries between the configuration and UI layers in order to ensure maximum consistency across all scenarios. Since there may not be any printer extensions or UWP device apps installed (or they may have been installed automatically), v4 print drivers need to ensure that the print drivers are functional without a customized printer preferences experience. In particular, this means that the PrintTicket and PrintCapabilities support should be complete and comprehensive in the GPD/PPD + JavaScript constraints implementation in the driver.
 
-Some constraint validation in the printer extension or Windows Store device app could be helpful in terms of providing a highly informative, interactive experience, but it should not replace the driver's validation, which is considered authoritative.
+Some constraint validation in the printer extension or UWP device app could be helpful in terms of providing a highly informative, interactive experience, but it should not replace the driver's validation, which is considered authoritative.
 
-Printer extensions and Windows Store device apps should use the [**IPrinterQueue::SendBidiQuery**](https://msdn.microsoft.com/library/windows/hardware/hh846197) method instead of making any direct network calls to a network resource. If a network resource must be contacted, it should be done on another thread, or asynchronously in order to prevent UI from hanging. Data should be cached after it is retrieved to make future calls faster.
+Printer extensions and UWP device apps should use the [**IPrinterQueue::SendBidiQuery**](https://msdn.microsoft.com/library/windows/hardware/hh846197) method instead of making any direct network calls to a network resource. If a network resource must be contacted, it should be done on another thread, or asynchronously in order to prevent UI from hanging. Data should be cached after it is retrieved to make future calls faster.
 
 **Printer Notifications**
 
 Printer notifications are driven by Bidi and by the DriverEvent XML file. In order to better manage battery life and to minimize interruptions, however, notifications will only be shown when a user is printing.
 
-While print preferences are contextual to the app that is printing, printer notifications are not. The following flow chart explains the decision tree that Windows uses to determine the behavior of printer notifications. If available, Windows Store device apps take precedence over printer extensions.
+While print preferences are contextual to the app that is printing, printer notifications are not. The following flow chart explains the decision tree that Windows uses to determine the behavior of printer notifications. If available, UWP device apps take precedence over printer extensions.
 
 ![printer notification behavior flowchart](images/notificationbhvr.png)
 

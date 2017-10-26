@@ -53,7 +53,7 @@ UserProperties – The user property bag.
 PrinterQueue.GetProperties()– refers to the queue property bag</td>
 </tr>
 <tr class="even">
-<td>Windows Store device app</td>
+<td>UWP device app</td>
 <td>All property bags are passed in during activation using the [<strong>IPrinterExtensionContext</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406649) object. They are specified as:
 DriverProperties – refers to the driver property bag.
 UserProperties – The user property bag.
@@ -87,7 +87,7 @@ The Windows Driver Kit includes a template project for a driver property bag. Th
 ## User Property Bag
 
 
-The user property bag allows partners to store settings in a per-user, machine local context. This property bag is well suited as a storage mechanism for user preferences like "Don't show this again". This property bag is not manageable by administrators and is not synchronized between client and server during printer sharing. The user property bag is only set at runtime and is only available to the printer extensions, Windows Store device apps, and JavaScript constraints.
+The user property bag allows partners to store settings in a per-user, machine local context. This property bag is well suited as a storage mechanism for user preferences like "Don't show this again". This property bag is not manageable by administrators and is not synchronized between client and server during printer sharing. The user property bag is only set at runtime and is only available to the printer extensions, UWP device apps, and JavaScript constraints.
 
 **Note**  Since JavaScript constraints may also be called outside of a user context, during despooling, the user property bag is unavailable at this time and Windows will return HRESULT\_FROM\_WIN32(ERROR\_NOT\_FOUND).
 
@@ -149,7 +149,7 @@ For example, Config:DuplexUnit
 
 The value of the property is the keyword name for the option that has been selected by the administrator. For example, Installed. Installable options are editable using the same Set-PrinterProperty cmdlet that is used for queue properties.
 
-**Note**  Starting with Windows 8.1, a user with Administrator rights, or a user who created a print queue can change the Installable options and the per-queue configuration settings for a queue property bag from a Windows Store device app.
+**Note**  Starting with Windows 8.1, a user with Administrator rights, or a user who created a print queue can change the Installable options and the per-queue configuration settings for a queue property bag from a UWP device app.
 
  
 

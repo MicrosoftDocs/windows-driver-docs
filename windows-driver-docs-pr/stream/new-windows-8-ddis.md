@@ -44,7 +44,7 @@ These structures are used with JPEG image capture and encoding to specify image 
 ## Device removal and preemption
 
 
-This new interface is used when a camera device has been removed from the system (lost) or has been preempted by a new Windows Store app.
+This new interface is used when a camera device has been removed from the system (lost) or has been preempted by a new UWP app.
 
 -   [**KSEVENTSETID\_Device**](https://msdn.microsoft.com/library/windows/hardware/jj156036)
 -   [**KSEVENT\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/jj151588)

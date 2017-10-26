@@ -26,7 +26,7 @@ After you successfully [connect your sensor to the Sharks Cove board](connect-yo
 
 -   **The sensor diagnostic tool**
 
-    **Note**  The Sensor Diagnostic Tool is now deprecated for Windows 10. Please use the SensorInfo App from the Windows Store, for all sensor testing and diagnostics.
+    **Note**  The Sensor Diagnostic Tool is now deprecated for Windows 10. Please use the SensorInfo App from the Microsoft Store, for all sensor testing and diagnostics.
 
      
 
