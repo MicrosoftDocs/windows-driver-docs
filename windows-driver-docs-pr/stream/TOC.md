@@ -1,4 +1,5 @@
 # [Streaming media devices design guide](index.md)
+# [Camera class INF file setting for Universal camera drivers](camera-driver-inf-file-class-setting.md)
 # [USB Video Class (UVC) driver implementation checklist](uvc-driver-implementation-checklist.md)
 ## [Device MFT design guide](dmft-design.md)
 ## [Infrared stream support in UVC](infrared-stream-support-in-uvc.md)
