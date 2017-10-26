@@ -1,13 +1,13 @@
 ---
-title: Debugging Windows XP and Windows Vista
-description: To use WinDbg to debug Windows XP or Windows Vista, get the Windows 7 Debugging Tools for Windows package, which is included in the SDK for Windows 7.
+title: Debugging Windows Vista
+description: To use WinDbg to debug Windows Vista, get the Windows 7 Debugging Tools for Windows package, which is included in the SDK for Windows 7.
 ms.assetid: 1E4FC9D9-7F84-4F67-8FBC-4283C69AB0AC
 ---
 
-# Debugging Windows XP and Windows Vista
+# Debugging Windows Vista
 
 
-To use WinDbg to debug Windows XP or Windows Vista, get the Windows 7 Debugging Tools for Windows package, which is included in the [Microsoft Windows Software Development Kit (SDK) for Windows 7 and .NET Framework 4.0](http://go.microsoft.com/fwlink/p/?LinkId=320327).
+To use WinDbg to debug Windows Vista, get the Windows 7 Debugging Tools for Windows package, which is included in the [Microsoft Windows Software Development Kit (SDK) for Windows 7 and .NET Framework 4.0](http://go.microsoft.com/fwlink/p/?LinkId=320327).
 
 If you want to download only Debugging Tools for Windows, install the SDK, and, during the installation, select the **Debugging Tools for Windows** box and clear all the other boxes.
 
@@ -22,9 +22,7 @@ The Windows 7 Debugging Tools for Windows can run on x86-based or x64-based proc
 
 |               |                     |
 |---------------|---------------------|
-| Windows XP    | Windows Server 2003 |
 | Windows Vista | Windows Server 2008 |
-
  
 
 If the target computer is running a more recent version of Windows, get the current [Debugging Tools for Windows](index.md).
