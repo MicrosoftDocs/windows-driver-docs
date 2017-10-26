@@ -24,7 +24,7 @@ To enable the device to be shown in a disconnected state, select **Show device i
 ## <span id="AutoPlay_Handler"></span><span id="autoplay_handler"></span><span id="AUTOPLAY_HANDLER"></span>AutoPlay Handler
 
 
-An AutoPlay Handler allows a Windows Store app for a device to be listed in AutoPlay options when a device is connected. It doesn't automatically launch an app.
+An AutoPlay Handler allows a UWP app for a device to be listed in AutoPlay options when a device is connected. It doesn't automatically launch an app.
 
 To define an AutoPlay Handler for a device, select from the following options under **AutoPlay Handler (Optional)**.
 

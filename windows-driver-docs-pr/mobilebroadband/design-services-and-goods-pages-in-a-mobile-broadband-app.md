@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Design services and goods pages in a mobile broadband app
 
 
-You can use your mobile broadband app to publicize other related services. Use the recommended layouts to organize various services that you want to promote through the Windows Store. An example of service promotion with an organization into categories is provided here.
+You can use your mobile broadband app to publicize other related services. Use the recommended layouts to organize various services that you want to promote through the Microsoft Store. An example of service promotion with an organization into categories is provided here.
 
 ![services and goods page](images/mb-fig1-services-and-goods-page.png)
 
@@ -25,7 +25,7 @@ Appropriate design for the Services and Goods page:
 
 -   Use pictures and brief headings to describe each service.
 
--   Use the Windows Store for cross promotion.
+-   Use the Microsoft Store for cross promotion.
 
 -   Use natural panning and zooming as well as horizontal scrolling.
 

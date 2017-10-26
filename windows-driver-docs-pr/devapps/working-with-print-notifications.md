@@ -1,5 +1,5 @@
 ---
-title: Working with print notifications in a Windows Store device app
+title: Working with print notifications in a UWP device app
 description: This topic introduces print notifications, and shows how the C# version of the Print settings and print notifications sample uses a background task to respond to print notification.
 ms.assetid: 39A06A8A-5603-44AB-8884-C12B8E2F1A45
 ms.author: windowsdriverdev
@@ -9,10 +9,10 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Working with print notifications in a Windows Store device app
+# Working with print notifications in a UWP device app
 
 
-In Windows 8.1, Windows Store device apps can respond to bidirectional communication (Bidi) events that are sent from a v4 print driver. This topic introduces print notifications, and shows how the C# version of the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample uses a background task to respond to print notification. The background task demonstrates how to save notification details in the local app data store, send toasts, and update a tile and badge. To learn more about Windows Store device apps in general, see [Meet Windows Store device apps](meet-windows-store-device-apps.md).
+In Windows 8.1, UWP device apps can respond to bidirectional communication (Bidi) events that are sent from a v4 print driver. This topic introduces print notifications, and shows how the C# version of the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample uses a background task to respond to print notification. The background task demonstrates how to save notification details in the local app data store, send toasts, and update a tile and badge. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
 The C# version of the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample demonstrates the background portion of the app (*the background task*) in the **BackgroundTask** project. The code for the background task is in the **PrintBackgroundTask.cs** file. The *foreground app*, the full-screen app that can be launched from Start, is in the **DeviceAppForPrinters** project. The **InkLevel.xaml.cs** file shows one way that notification details can be accessed from the foreground app. To work with print notifications, the sample uses the printer extension library in the **PrinterExtensionLibrary** project. The printer extension library provides a convenient way to to access the printer extension interfaces of the v4 print driver. For more info, see the [Printer extension library overview](printer-extension-library-overview.md).
 
@@ -23,21 +23,21 @@ The C# version of the [Print settings and print notifications](http://go.microso
 ## <span id="Print_notifications"></span><span id="print_notifications"></span><span id="PRINT_NOTIFICATIONS"></span>Print notifications
 
 
-Print notifications let your Windows Store device app inform the user of important printer events while printing, such as a paper jam, open printer door, low ink levels, or printer out-of-paper errors. When a printer triggers a notification, the system event broker runs the background task of your app. From there, the background task can save the notification details, send a toast, update a tile, update a badge, or do nothing. By saving notification details, your app can provide an experience that helps users understand and fix their printer problems.
+Print notifications let your UWP device app inform the user of important printer events while printing, such as a paper jam, open printer door, low ink levels, or printer out-of-paper errors. When a printer triggers a notification, the system event broker runs the background task of your app. From there, the background task can save the notification details, send a toast, update a tile, update a badge, or do nothing. By saving notification details, your app can provide an experience that helps users understand and fix their printer problems.
 
-**Note**  Printer manufacturers must implement Bidi and the DriverEvent XML file in their v4 print driver to use print notifications with their Windows Store device apps. For more info, see [Bidirectional Communications](http://go.microsoft.com/fwlink/p/?LinkId=317192).
+**Note**  Printer manufacturers must implement Bidi and the DriverEvent XML file in their v4 print driver to use print notifications with their UWP device apps. For more info, see [Bidirectional Communications](http://go.microsoft.com/fwlink/p/?LinkId=317192).
 
  
 
-When a DriverEvent occurs, and the background task of a Windows Store device app is started, the app has several options as to how it can proceed. For more details about the flow that leads to the launch of the task, see [Driver Support for Customized UI](https://msdn.microsoft.com/library/windows/hardware/jj659898).
+When a DriverEvent occurs, and the background task of a UWP device app is started, the app has several options as to how it can proceed. For more details about the flow that leads to the launch of the task, see [Driver Support for Customized UI](https://msdn.microsoft.com/library/windows/hardware/jj659898).
 
 The background task can choose to:
 
 -   Do nothing
 -   Save the notification details in [local app data store](http://go.microsoft.com/fwlink/p/?LinkId=317216)
--   Update a [Windows Store app tile notification](http://go.microsoft.com/fwlink/p/?LinkId=317195)
--   Update a [Windows Store app notification badge](http://go.microsoft.com/fwlink/p/?LinkId=317196)
--   Send a [Windows Store app toast notification](http://go.microsoft.com/fwlink/p/?LinkId=317197)
+-   Update a [UWP app tile notification](http://go.microsoft.com/fwlink/p/?LinkId=317195)
+-   Update a [UWP app notification badge](http://go.microsoft.com/fwlink/p/?LinkId=317196)
+-   Send a [UWP app toast notification](http://go.microsoft.com/fwlink/p/?LinkId=317197)
 
 The tile notification or toast notification can let the user conveniently launch your foreground app. When the foreground app is launched, it can use the `OnLaunched` method in **App.xaml.cs** to check if it was launched by a tile or toast. If it was, the foreground app can access any print notification details in the [local app data store](http://go.microsoft.com/fwlink/p/?LinkId=317216).
 
@@ -48,10 +48,10 @@ Before you get started:
 
 1.  Make sure your printer is installed using a v4 print driver. For more info, see [Developing v4 print drivers](http://go.microsoft.com/fwlink/p/?LinkId=314231).
 2.  Get your development PC set up. See [Getting started](getting-started.md) for info about downloading the tools and creating a developer account.
-3.  Associate your app with the store. See [Create a Windows Store device app](step-1--create-a-windows-store-device-app.md) for info about that.
+3.  Associate your app with the store. See [Create a UWP device app](step-1--create-a-uwp-device-app.md) for info about that.
 4.  Create device metadata for your printer that associates it with your app. See [Create device metadata](step-2--create-device-metadata.md) for more about that.
-5.  Build the UI for the main page of your app. All Windows Store device apps can be launched from Start, where they'll be displayed full-screen. Use the Start experience to highlight your product or services in a way that matches the specific branding and features of your devices. There are no special restrictions on the type of UI controls it can use. To get started with the design of the full-screen experience, see the [Windows Store design principles](http://go.microsoft.com/fwlink/p/?LinkID=299845).
-6.  If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** and **DeviceAppForPrintersLibrary** projects to your Windows Store device app solution. You can find each of these projects in the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample.
+5.  Build the UI for the main page of your app. All UWP device apps can be launched from Start, where they'll be displayed full-screen. Use the Start experience to highlight your product or services in a way that matches the specific branding and features of your devices. There are no special restrictions on the type of UI controls it can use. To get started with the design of the full-screen experience, see the [Microsoft Store design principles](http://go.microsoft.com/fwlink/p/?LinkID=299845).
+6.  If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** and **DeviceAppForPrintersLibrary** projects to your UWP device app solution. You can find each of these projects in the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample.
     **Note**  Because C++ can access COM directly, C++ apps do not require a separate library to work with the COM-based printer device context.
 
      
@@ -105,7 +105,7 @@ This example shows the background task extension in the `Extension` element, as 
 ## <span id="Step_2__Configure_device_metadata"></span><span id="step_2__configure_device_metadata"></span><span id="STEP_2__CONFIGURE_DEVICE_METADATA"></span>Step 2: Configure device metadata
 
 
-When you're using the **Device Metadata Authoring Wizard** to associate your app with your device, be sure complete the **Notification handlers** box on the **Specify Windows Store device app information** page. This helps ensure that your app's background task is called during a print notification.
+When you're using the **Device Metadata Authoring Wizard** to associate your app with your device, be sure complete the **Notification handlers** box on the **Specify UWP device app information** page. This helps ensure that your app's background task is called during a print notification.
 
 For step-by-step instructions on how to edit your device metadata, see the [Testing](#testing) section.
 
@@ -116,7 +116,7 @@ Before building your app, you should work with your designers and your marketing
 
 ### <span id="Design_guidelines"></span><span id="design_guidelines"></span><span id="DESIGN_GUIDELINES"></span>Design guidelines
 
-It's important to review the Windows Store app guidelines before designing your tile and badge experience. The guidelines help ensure that your app provides an intuitive experience that is consistent with other Windows Store apps.
+It's important to review the Microsoft Store app guidelines before designing your tile and badge experience. The guidelines help ensure that your app provides an intuitive experience that is consistent with other UWP apps.
 
 -   [Guidelines for tiles and badges](http://go.microsoft.com/fwlink/p/?LinkId=317194)
 -   [Guidelines for toast notifications](http://go.microsoft.com/fwlink/p/?LinkId=317193)
@@ -262,7 +262,7 @@ void ShowToast(string title, string body)
 ## <span id="Step_5__Handle_activation"></span><span id="step_5__handle_activation"></span><span id="STEP_5__HANDLE_ACTIVATION"></span>Step 5: Handle activation
 
 
-After a print notification triggers the background task, the app can be launched by tapping a toast notification or a tile. If your app is activated from either, a parameter will be passed to the app through `LaunchActivatedEventArgs.arguments` property. For more info about activation and the Windows Store app lifecycle, see [Application lifecycle](http://go.microsoft.com/fwlink/p/?LinkId=317387).
+After a print notification triggers the background task, the app can be launched by tapping a toast notification or a tile. If your app is activated from either, a parameter will be passed to the app through `LaunchActivatedEventArgs.arguments` property. For more info about activation and the Microsoft Store app lifecycle, see [Application lifecycle](http://go.microsoft.com/fwlink/p/?LinkId=317387).
 
 To determine if your app was activated in one these cases, handle the `OnLaunched` event, and examine the event arguments that are passed to the event handler. If the event arguments are null, the app was activated by the user from Start. If the event arguments are not null, the app was launched from a toast or tile.
 
@@ -354,9 +354,9 @@ void DisplayBackgroundTaskTriggerDetails()
 ## <span id="testing"></span><span id="TESTING"></span>Testing
 
 
-Before you can test your Windows Store device app, it must be linked to your printer using device metadata.
+Before you can test your UWP device app, it must be linked to your printer using device metadata.
 
--   You need a copy of the device metadata package for your printer, to add the device app info to it. If you don’t have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Create device metadata for your Windows Store device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
+-   You need a copy of the device metadata package for your printer, to add the device app info to it. If you don’t have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Create device metadata for your UWP device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
 
     **Note**  To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional 2013, Microsoft Visual Studio Ultimate 2013, or the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209), before completing the steps in this topic. Installing Microsoft Visual Studio Express 2013 for Windows installs a version of the SDK that doesn't include the wizard.
 
@@ -373,14 +373,14 @@ The following steps build your app and install the device metadata.
 
 4.  Disconnect and uninstall the printer. This step is required so that Windows will read the updated device metadata the next time the device is detected.
 5.  Edit and save device metadata. To link the device app to your device, you must associate the device app with your device.
-    **Note**  If you haven't created your device metadata yet, see [Create device metadata for your Windows Store device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
+    **Note**  If you haven't created your device metadata yet, see [Create device metadata for your UWP device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
 
      
 
     1.  If the **Device Metadata Authoring Wizard** is not open yet, start it from *%ProgramFiles(x86)%*\\Windows Kits\\8.1\\bin\\x86, by double-clicking **DeviceMetadataWizard.exe**.
     2.  Click **Edit Device Metadata**. This will let you edit your existing device metadata package.
-    3.  In the **Open** dialog box, locate the device metadata package associated with your Windows Store device app. (It has a **devicemetadata-ms** file extension.)
-    4.  On the **Specify Windows Store device app information** page, enter the Windows Store app info in the **Windows Store device app** box. Click on **Import Windows Store App manifest file** to automatically enter the **Package name**, **Publisher name**, and **Windows Store App ID**.
+    3.  In the **Open** dialog box, locate the device metadata package associated with your UWP device app. (It has a **devicemetadata-ms** file extension.)
+    4.  On the **Specify UWP device app information** page, enter the Microsoft Store app info in the **UWP device app** box. Click on **Import UWP app manifest file** to automatically enter the **Package name**, **Publisher name**, and **UWP app ID**.
     5.  If your app is registering for printer notifications, fill out the **Notification handlers** box. In **Event ID**, enter the name of the print event handler. In **Event Asset**, enter the name of the file where that code resides.
 
     6.  When you're done, click **Next** until you get to the **Finish** page.
@@ -415,15 +415,15 @@ If no default print notification appears when expected...
 ## <span id="related_topics"></span>Related topics
 
 
-[Badge overview (Windows Store apps)](http://go.microsoft.com/fwlink/p/?LinkId=317196)
+[Badge overview (UWP apps)](http://go.microsoft.com/fwlink/p/?LinkId=317196)
 
-[Tile and tile notification overview (Windows Store apps)](http://go.microsoft.com/fwlink/p/?LinkId=317195)
+[Tile and tile notification overview (UWP apps)](http://go.microsoft.com/fwlink/p/?LinkId=317195)
 
-[Guidelines and checklist for tiles and badges (Windows Store apps)](http://go.microsoft.com/fwlink/p/?LinkId=317194)
+[Guidelines and checklist for tiles and badges (UWP apps)](http://go.microsoft.com/fwlink/p/?LinkId=317194)
 
-[Toast notification overview (Windows Store apps)](http://go.microsoft.com/fwlink/p/?LinkId=317197)
+[Toast notification overview (UWP apps)](http://go.microsoft.com/fwlink/p/?LinkId=317197)
 
-[Guidelines and checklist for toast notifications (Windows Store apps)](http://go.microsoft.com/fwlink/p/?LinkId=317193)
+[Guidelines and checklist for toast notifications (UWP apps)](http://go.microsoft.com/fwlink/p/?LinkId=317193)
 
 [Driver Support for Customized UI](https://msdn.microsoft.com/library/windows/hardware/jj659898)
 
@@ -433,11 +433,11 @@ If no default print notification appears when expected...
 
 [Bidirectional Communications](http://go.microsoft.com/fwlink/p/?LinkId=317192)
 
-[Getting started with Windows Store apps](getting-started.md)
+[Getting started with UWP apps](getting-started.md)
 
-[Create a Windows Store device app (step-by-step guide)](step-1--create-a-windows-store-device-app.md)
+[Create a UWP device app (step-by-step guide)](step-1--create-a-uwp-device-app.md)
 
-[Create device metadata for a Windows Store device app (step-by-step guide)](step-2--create-device-metadata.md)
+[Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)
 
  
 

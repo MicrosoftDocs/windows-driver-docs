@@ -1,6 +1,6 @@
 ---
-title: How to customize camera options with a Windows Store device app
-description: In Windows 8.1, Windows Store device apps let device manufacturers customize the flyout that displays more camera options in some camera apps.
+title: How to customize camera options with a UWP device app
+description: In Windows 8.1, UWP device apps let device manufacturers customize the flyout that displays more camera options in some camera apps.
 ms.assetid: 4BA34A3F-3C0D-4DDC-BA0A-E62AE9A6A93A
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -9,39 +9,39 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# How to customize camera options with a Windows Store device app
+# How to customize camera options with a UWP device app
 
 
-In Windows 8.1, Windows Store device apps let device manufacturers customize the flyout that displays more camera options in some camera apps. This topic introduces the **More options** flyout that's displayed by the CameraCatureUI API, and shows how the C# version of the [Windows Store device app for camera](http://go.microsoft.com/fwlink/p/?LinkID=227865) sample replaces the default flyout with a custom flyout. To learn more about Windows Store device apps in general, see [Meet Windows Store device apps](meet-windows-store-device-apps.md).
+In Windows 8.1, UWP device apps let device manufacturers customize the flyout that displays more camera options in some camera apps. This topic introduces the **More options** flyout that's displayed by the CameraCatureUI API, and shows how the C# version of the [UWP device app for camera](http://go.microsoft.com/fwlink/p/?LinkID=227865) sample replaces the default flyout with a custom flyout. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-**Note**  In Windows 8.1, the built-in camera app does not display a **More options** button and therefore can't display a Windows Store device app to show more camera options. However, the [CameraCaptureUI class](http://go.microsoft.com/fwlink/p/?LinkId=317985), that's available to all Windows Store apps, does have a **More options** button and can display Windows Store device apps from it.
+**Note**  In Windows 8.1, the built-in camera app does not display a **More options** button and therefore can't display a UWP device app to show more camera options. However, the [CameraCaptureUI class](http://go.microsoft.com/fwlink/p/?LinkId=317985), that's available to all UWP apps, does have a **More options** button and can display UWP device apps from it.
 
  
 
-The C# version of the [Windows Store device app for camera](http://go.microsoft.com/fwlink/p/?LinkID=227865) sample uses the **DeviceAppPage.xaml** page to demonstrate the UI of a custom flyout for more camera options. The sample also applies camera effects using a camera driver MFT (media foundation transform). For more info about that, see [Creating a camera driver MFT](creating-a-camera-driver-mft.md).
+The C# version of the [UWP device app for camera](http://go.microsoft.com/fwlink/p/?LinkID=227865) sample uses the **DeviceAppPage.xaml** page to demonstrate the UI of a custom flyout for more camera options. The sample also applies camera effects using a camera driver MFT (media foundation transform). For more info about that, see [Creating a camera driver MFT](creating-a-camera-driver-mft.md).
 
-**Note**  The code examples shown in this topic are based on the C# version of the [Windows Store device app for camera](http://go.microsoft.com/fwlink/p/?LinkID=227865) sample. This sample is also available in JavaScript and C++. Download the samples to see the latest versions of the code.
+**Note**  The code examples shown in this topic are based on the C# version of the [UWP device app for camera](http://go.microsoft.com/fwlink/p/?LinkID=227865) sample. This sample is also available in JavaScript and C++. Download the samples to see the latest versions of the code.
 
  
 
 ## <span id="More_options_for_cameras"></span><span id="more_options_for_cameras"></span><span id="MORE_OPTIONS_FOR_CAMERAS"></span>More options for cameras
 
 
-The more camera options experience is the functionality that a Windows Store device app provides when another app, a Windows Store app, captures or previews video from the camera by using the [CameraCaptureUI](http://go.microsoft.com/fwlink/p/?LinkId=317985) API. It is accessible through the **More options** link in the Camera options window. It is not full-screen, but displays within a flyout, which is a control for displaying a lightweight, contextual user interface that is dismissed when a user clicks or taps outside of it.
+The more camera options experience is the functionality that a UWP device app provides when another app, a UWP app, captures or previews video from the camera by using the [CameraCaptureUI](http://go.microsoft.com/fwlink/p/?LinkId=317985) API. It is accessible through the **More options** link in the Camera options window. It is not full-screen, but displays within a flyout, which is a control for displaying a lightweight, contextual user interface that is dismissed when a user clicks or taps outside of it.
 
 This experience can be used to highlight differentiated features for your camera, such as the ability to apply custom video effects.
 
-When a Windows Store device app is not installed for a camera, Windows provides a default more camera options experience. If Windows detects that a Windows Store device app is installed for your camera, and that the app has opted-in to the `windows.cameraSettings` extension, your app replaces the default experience provided by Windows.
+When a UWP device app is not installed for a camera, Windows provides a default more camera options experience. If Windows detects that a UWP device app is installed for your camera, and that the app has opted-in to the `windows.cameraSettings` extension, your app replaces the default experience provided by Windows.
 
 To invoke the flyout for more camera options:
 
-1.  Open a Windows Store app that uses the [CameraCaptureUI](http://go.microsoft.com/fwlink/p/?LinkId=317985) API (the [CameraCaptureUI sample](http://go.microsoft.com/fwlink/p/?linkid=228589), for example)
+1.  Open a UWP app that uses the [CameraCaptureUI](http://go.microsoft.com/fwlink/p/?LinkId=317985) API (the [CameraCaptureUI sample](http://go.microsoft.com/fwlink/p/?linkid=228589), for example)
 2.  Tap the **Options** button in the UI
 3.  This opens a **Camera options** flyout that shows basic options for setting resolution and video stabilization
 4.  On the **Camera options** flyout, tap **More options**
 5.  The **More options** flyout opens
-    -   The *default flyout* appears when no Windows Store device app for the camera is installed
-    -   A *custom flyout* appears when a Windows Store device app for the camera is installed
+    -   The *default flyout* appears when no UWP device app for the camera is installed
+    -   A *custom flyout* appears when a UWP device app for the camera is installed
 
 ![](images/372745-cameraoptionslaunching.png)
 
@@ -53,9 +53,9 @@ This image shows the default flyout for more camera options beside an example of
 Before you get started:
 
 1.  Get your development PC set up. See [Getting started](getting-started.md) for info about downloading the tools and creating a developer account.
-2.  Associate your app with the store. See [Create a Windows Store device app](step-1--create-a-windows-store-device-app.md) for info about that.
+2.  Associate your app with the store. See [Create a UWP device app](step-1--create-a-uwp-device-app.md) for info about that.
 3.  Create device metadata for your printer that associates it with your app. See [Create device metadata](step-2--create-device-metadata.md) for more about that.
-4.  Build the UI for the main page of your app. All Windows Store device apps can be launched from Start, where they'll be displayed full-screen. Use the Start experience to highlight your product or services in a way that matches the specific branding and features of your devices. There are no special restrictions on the type of UI controls it can use. To get started with the design of the full-screen experience, see the [Windows Store design principles](http://go.microsoft.com/fwlink/p/?LinkID=299845).
+4.  Build the UI for the main page of your app. All UWP device apps can be launched from Start, where they'll be displayed full-screen. Use the Start experience to highlight your product or services in a way that matches the specific branding and features of your devices. There are no special restrictions on the type of UI controls it can use. To get started with the design of the full-screen experience, see the [Microsoft Store design principles](http://go.microsoft.com/fwlink/p/?LinkID=299845).
 
 ## <span id="Step_1__Register_the_extension"></span><span id="step_1__register_the_extension"></span><span id="STEP_1__REGISTER_THE_EXTENSION"></span>Step 1: Register the extension
 
@@ -103,7 +103,7 @@ Before building your app, you should work with your designers and your marketing
 
 ### <span id="Design_guidelines"></span><span id="design_guidelines"></span><span id="DESIGN_GUIDELINES"></span>Design guidelines
 
-It's important to review the [Windows Store app flyout guidelines](http://go.microsoft.com/fwlink/p/?LinkId=317078) before designing your custom flyout. The guidelines help ensure that your flyout provides an intuitive experience that is consistent with other Windows Store apps.
+It's important to review the [UWP app flyout guidelines](http://go.microsoft.com/fwlink/p/?LinkId=317078) before designing your custom flyout. The guidelines help ensure that your flyout provides an intuitive experience that is consistent with other UWP apps.
 
 For the main page of your app, keep in mind that Windows 8.1 can display multiple apps in various sizes on a single monitor. See the following guidelines to learn more about how your app can reflow gracefully between screen sizes, window sizes, and orientations.
 
@@ -128,14 +128,14 @@ The flyout that displays more camera options is 625 pixels high and 340 pixels w
 
 ### <span id="Suggested_settings"></span><span id="suggested_settings"></span><span id="SUGGESTED_SETTINGS"></span>Suggested settings
 
--   Your Windows Store device app's custom flyout can provide a switch to enable hardware-implemented settings, such as manufacturer-provided color correction schemes.
--   Implement basic properties that supplement the other settings exposed by your Windows Store device app. For example, many devices may expose controls for adjusting brightness, contrast, flicker, focus, and exposure, but a device that implements TrueColor to automatically adjust the brightness and contrast may not need to provide these settings.
+-   Your UWP device app's custom flyout can provide a switch to enable hardware-implemented settings, such as manufacturer-provided color correction schemes.
+-   Implement basic properties that supplement the other settings exposed by your UWP device app. For example, many devices may expose controls for adjusting brightness, contrast, flicker, focus, and exposure, but a device that implements TrueColor to automatically adjust the brightness and contrast may not need to provide these settings.
 
 ### <span id="Restrictions"></span><span id="restrictions"></span><span id="RESTRICTIONS"></span>Restrictions
 
--   Do not open your Windows Store device app's custom flyout from your main app (by calling the `CameraOptionsUI.Show` method) when the app is not streaming or capturing.
+-   Do not open your UWP device app's custom flyout from your main app (by calling the `CameraOptionsUI.Show` method) when the app is not streaming or capturing.
 
--   Do not provide a preview or otherwise take ownership of the video stream from inside your Windows Store device app’s custom flyout. The custom flyout is meant to function as a companion to another app that captures video. The capture app has ownership of the video stream. You shouldn’t try to access the video stream using low-level APIs. This may cause unexpected behavior, in which the capture app loses access to the stream.
+-   Do not provide a preview or otherwise take ownership of the video stream from inside your UWP device app’s custom flyout. The custom flyout is meant to function as a companion to another app that captures video. The capture app has ownership of the video stream. You shouldn’t try to access the video stream using low-level APIs. This may cause unexpected behavior, in which the capture app loses access to the stream.
 
 -   Do not adjust resolution in the custom flyout.
 
@@ -146,9 +146,9 @@ The flyout that displays more camera options is 625 pixels high and 340 pixels w
 ## <span id="step3"></span><span id="STEP3"></span>Step 3: Handle activation
 
 
-If your app has declared the camera settings extension, it must implement an `OnActivated` method to handle the app Activation event. This event is triggered when a Windows Store app, using the [CameraCaptureUI](http://go.microsoft.com/fwlink/p/?LinkId=317985) class, calls the [CameraOptionsUI.Show](http://go.microsoft.com/fwlink/p/?LinkId=317995) method. App activation is when your app can choose which page will launch as the app starts. For apps that have declared the camera settings extension, Windows passes the video device in the Activated event arguments: Windows.ApplicationModel.Activation.IActivatedEventArgs.
+If your app has declared the camera settings extension, it must implement an `OnActivated` method to handle the app Activation event. This event is triggered when a UWP app, using the [CameraCaptureUI](http://go.microsoft.com/fwlink/p/?LinkId=317985) class, calls the [CameraOptionsUI.Show](http://go.microsoft.com/fwlink/p/?LinkId=317995) method. App activation is when your app can choose which page will launch as the app starts. For apps that have declared the camera settings extension, Windows passes the video device in the Activated event arguments: Windows.ApplicationModel.Activation.IActivatedEventArgs.
 
-A Windows Store device app can determine that the activation is intended for camera settings (that someone just tapped **More options** on the **Camera options** dialog) when the event argument's `kind` property is equal to Windows.ApplicationModel.Activation.ActivationKind.CameraSettings.
+A UWP device app can determine that the activation is intended for camera settings (that someone just tapped **More options** on the **Camera options** dialog) when the event argument's `kind` property is equal to Windows.ApplicationModel.Activation.ActivationKind.CameraSettings.
 
 This example shows the activation event handler in the `OnActivated` method, as it appears in the **App.xaml.cs** file. The event arguments are then cast as Windows.ApplicationModel.Activation.CameraSettingsActivatedEventArgs and sent to the `Initialize` method of the custom flyout (**DeviceAppPage.xaml.cs**).
 
@@ -308,11 +308,11 @@ protected void OnEffectSliderValueChanged(object sender, RoutedEventArgs e)
 ## <span id="Testing_your_app"></span><span id="testing_your_app"></span><span id="TESTING_YOUR_APP"></span>Testing your app
 
 
-This section describes how to install a Windows Store device app that provides a custom flyout for **More options** of a camera, as demonstrated in the [Windows Store device app for camera](http://go.microsoft.com/fwlink/p/?LinkID=227865) sample.
+This section describes how to install a UWP device app that provides a custom flyout for **More options** of a camera, as demonstrated in the [UWP device app for camera](http://go.microsoft.com/fwlink/p/?LinkID=227865) sample.
 
-Before you can test your Windows Store device app, it must be linked to your camera using device metadata.
+Before you can test your UWP device app, it must be linked to your camera using device metadata.
 
--   You need a copy of the device metadata package for your printer, to add the device app info to it. If you don’t have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Create device metadata for your Windows Store device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
+-   You need a copy of the device metadata package for your printer, to add the device app info to it. If you don’t have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Create device metadata for your UWP device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
 
     **Note**  To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional 2013, Microsoft Visual Studio Ultimate 2013, or the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209), before completing the steps in this topic. Installing Microsoft Visual Studio Express 2013 for Windows installs a version of the SDK that doesn't include the wizard.
 
@@ -329,14 +329,14 @@ The following steps build your app and install the device metadata.
 
 4.  Disconnect and uninstall the printer. This step is required so that Windows will read the updated device metadata the next time the device is detected.
 5.  Edit and save device metadata. To link the device app to your device, you must associate the device app with your device.
-    **Note**  If you haven't created your device metadata yet, see [Create device metadata for your Windows Store device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
+    **Note**  If you haven't created your device metadata yet, see [Create device metadata for your UWP device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
 
      
 
     1.  If the **Device Metadata Authoring Wizard** is not open yet, start it from *%ProgramFiles(x86)%*\\Windows Kits\\8.1\\bin\\x86, by double-clicking **DeviceMetadataWizard.exe**.
     2.  Click **Edit Device Metadata**. This will let you edit your existing device metadata package.
-    3.  In the **Open** dialog box, locate the device metadata package associated with your Windows Store device app. (It has a **devicemetadata-ms** file extension.)
-    4.  On the **Specify Windows Store device app information** page, enter the Windows Store app info in the **Windows Store device app** box. Click on **Import Windows Store App manifest file** to automatically enter the **Package name**, **Publisher name**, and **Windows Store App ID**.
+    3.  In the **Open** dialog box, locate the device metadata package associated with your UWP device app. (It has a **devicemetadata-ms** file extension.)
+    4.  On the **Specify UWP device app information** page, enter the Microsoft Store app info in the **UWP device app** box. Click on **Import UWP app manifest file** to automatically enter the **Package name**, **Publisher name**, and **UWP app ID**.
     5.  When you're done, click **Next** until you get to the **Finish** page.
     6.  On the **Review the device metadata package** page, make sure that all of the settings are correct and select the **Copy the device metadata package to the metadata store on the local computer** check box. Then click **Save**.
 
@@ -353,7 +353,7 @@ The following steps build your app and install the device metadata.
 
 To test the camera options experience, first download these samples:
 
--   [Windows Store device app for camera sample](http://go.microsoft.com/fwlink/p/?LinkID=227865)
+-   [UWP device app for camera sample](http://go.microsoft.com/fwlink/p/?LinkID=227865)
 -   [Camera Capture UI sample](http://go.microsoft.com/fwlink/p/?linkid=228589)
 -   [Driver MFT sample](http://go.microsoft.com/fwlink/p/?LinkID=251566)
 

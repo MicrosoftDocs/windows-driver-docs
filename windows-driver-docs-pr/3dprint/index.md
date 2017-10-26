@@ -19,7 +19,7 @@ This section provides information about 3D printer drivers in Windows 10.
 
 -   Driver model for 3D manufacturing devices
 
--   Support for Windows Store apps and extensions for 3D devices
+-   Support for UWP apps and extensions for 3D devices
 
 -   Job spooling and queuing support
 

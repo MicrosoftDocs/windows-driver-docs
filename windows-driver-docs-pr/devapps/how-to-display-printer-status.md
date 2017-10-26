@@ -1,5 +1,5 @@
 ---
-title: How to display printer status in a Windows Store device app
+title: How to display printer status in a UWP device app
 description: This topic uses the C# version of the Print settings and print notifications sample to demonstrate how to query the printer status and display it.
 ms.assetid: 91AD1B3B-0D0B-4FB6-8A0F-4943143D8FCE
 ms.author: windowsdriverdev
@@ -9,10 +9,10 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# How to display printer status in a Windows Store device app
+# How to display printer status in a UWP device app
 
 
-In Windows 8.1, users can check their printer status from the modern UI of a Windows Store device app. This topic uses the C# version of the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample to demonstrate how to query the printer status and display it. To learn more about Windows Store device apps in general, see [Meet Windows Store device apps](meet-windows-store-device-apps.md).
+In Windows 8.1, users can check their printer status from the modern UI of a UWP device app. This topic uses the C# version of the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample to demonstrate how to query the printer status and display it. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
 The C# version of the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample uses the **InkLevel.xaml** page to demonstrate how to get the printer status (in this case, the ink level) and display it. A print helper class is used to create a device context (IPrinterExtensionContext) and perform the device queries. The **PrinterHelperClass.cs** file is in the **DeviceAppForPrintersLibrary** project and uses APIs defined in the **PrinterExtensionLibrary** project. The printer extension library provides a convenient way to to access the printer extension interfaces of the v4 print driver. For more info, see the [Printer extension library overview](printer-extension-library-overview.md).
 
@@ -27,9 +27,9 @@ Before you get started:
 
 1.  Make sure your printer is installed using a v4 print driver. For more info, see [Developing v4 print drivers](http://go.microsoft.com/fwlink/p/?LinkId=314231).
 2.  Get your development PC set up. See [Getting started](getting-started.md) for info about downloading the tools and creating a developer account.
-3.  Associate your app with the store. See [Step 1: Create a Windows Store device app](step-1--create-a-windows-store-device-app.md) for info about that.
+3.  Associate your app with the store. See [Step 1: Create a UWP device app](step-1--create-a-uwp-device-app.md) for info about that.
 4.  Create device metadata for your printer that associates it with your app. See [Step 2: Create device metadata](step-2--create-device-metadata.md) for more about that.
-5.  If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** and **DeviceAppForPrintersLibrary** projects to your Windows Store device app solution. You can find each of these projects in the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample.
+5.  If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** and **DeviceAppForPrintersLibrary** projects to your UWP device app solution. You can find each of these projects in the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample.
     **Note**  Because C++ can access COM directly, C++ apps do not require a separate library to work with the COM-based printer device context.
 
      
@@ -73,7 +73,7 @@ async void EnumerateAssociatedPrinters(object sender, RoutedEventArgs e)
 }
 ```
 
-The `FindAssociation` method, called by `EnumerateAssociatedPrinters`, checks if a printer is associated with the current application. In other words, this method checks if the app is a Windows Store device app. This association exists when the app and printer are defined in device metadata on the local PC.
+The `FindAssociation` method, called by `EnumerateAssociatedPrinters`, checks if a printer is associated with the current application. In other words, this method checks if the app is a UWP device app. This association exists when the app and printer are defined in device metadata on the local PC.
 
 This example shows the `FindAssociation` method from the **InkLevel.xaml.cs** file:
 
@@ -248,9 +248,9 @@ private string InvalidHResult(int result)
 ## <span id="Testing"></span><span id="testing"></span><span id="TESTING"></span>Testing
 
 
-Before you can test your Windows Store device app, it must be linked to your printer using device metadata.
+Before you can test your UWP device app, it must be linked to your printer using device metadata.
 
--   You need a copy of the device metadata package for your printer, to add the device app info to it. If you don’t have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Step 2: Create device metadata for your Windows Store device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
+-   You need a copy of the device metadata package for your printer, to add the device app info to it. If you don’t have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Step 2: Create device metadata for your UWP device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
 
     **Note**  To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional 2013, Microsoft Visual Studio Ultimate 2013, or the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209), before completing the steps in this topic. Installing Microsoft Visual Studio Express 2013 for Windows installs a version of the SDK that doesn't include the wizard.
 
@@ -267,14 +267,14 @@ The following steps build your app and install the device metadata.
 
 4.  Disconnect and uninstall the printer. This step is required so that Windows will read the updated device metadata the next time the device is detected.
 5.  Edit and save device metadata. To link the device app to your device, you must associate the device app with your device.
-    **Note**  If you haven't created your device metadata yet, see [Step 2: Create device metadata for your Windows Store device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
+    **Note**  If you haven't created your device metadata yet, see [Step 2: Create device metadata for your UWP device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
 
      
 
     1.  If the **Device Metadata Authoring Wizard** is not open yet, start it from *%ProgramFiles(x86)%*\\Windows Kits\\8.1\\bin\\x86, by double-clicking **DeviceMetadataWizard.exe**.
     2.  Click **Edit Device Metadata**. This will let you edit your existing device metadata package.
-    3.  In the **Open** dialog box, locate the device metadata package associated with your Windows Store device app. (It has a **devicemetadata-ms** file extension.)
-    4.  On the **Specify Windows Store device app information** page, enter the Windows Store app info in the **Windows Store device app** box. Click on **Import Windows Store App manifest file** to automatically enter the **Package name**, **Publisher name**, and **Windows Store App ID**.
+    3.  In the **Open** dialog box, locate the device metadata package associated with your UWP device app. (It has a **devicemetadata-ms** file extension.)
+    4.  On the **Specify UWP device app information** page, enter the Microsoft Store app info in the **UWP device app** box. Click on **Import UWP app manifest file** to automatically enter the **Package name**, **Publisher name**, and **UWP app ID**.
     5.  If your app is registering for printer notifications, fill out the **Notification handlers** box. In **Event ID**, enter the name of the print event handler. In **Event Asset**, enter the name of the file where that code resides.
 
     6.  When you're done, click **Next** until you get to the **Finish** page.
@@ -316,11 +316,11 @@ If your printer was found when enumerating the associated printers, but a Bidi q
 
 [Bidirectional Communications](http://go.microsoft.com/fwlink/p/?LinkId=317192)
 
-[Getting started with Windows Store apps](getting-started.md)
+[Getting started with UWP apps](getting-started.md)
 
-[Create a Windows Store device app (step-by-step guide)](step-1--create-a-windows-store-device-app.md)
+[Create a UWP device app (step-by-step guide)](step-1--create-a-uwp-device-app.md)
 
-[Create device metadata for a Windows Store device app (step-by-step guide)](step-2--create-device-metadata.md)
+[Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)
 
  
 

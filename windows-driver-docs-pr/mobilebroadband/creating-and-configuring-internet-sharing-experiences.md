@@ -29,7 +29,7 @@ Internet Sharing can be turned on by using the Settings charm on the mobile broa
 
 3.  On the **Mobile Broadband** page, enable Internet Sharing for the network. If the mobile broadband network is disconnected, the device will automatically connect to the mobile broadband network before setting up the Wi-Fi network.
 
-4.  If you have created the necessary service metadata package, the PC triggers an event telling the Windows Store mobile broadband app to run an entitlement check. The PC waits for the mobile broadband app to respond before Internet Sharing is turned on. For more info on creating service metadata packages, see [Developer guide for creating service metadata](developer-guide-for-creating-service-metadata.md).
+4.  If you have created the necessary service metadata package, the PC triggers an event telling the Microsoft Store mobile broadband app to run an entitlement check. The PC waits for the mobile broadband app to respond before Internet Sharing is turned on. For more info on creating service metadata packages, see [Developer guide for creating service metadata](developer-guide-for-creating-service-metadata.md).
 
 5.  After the mobile broadband network is turned on and any required entitlement checks have passed, the mobile broadband connection is shared by using a private Wi-Fi network that uses Wi-Fi Direct Autonomous Group Owner mode with a customized network name. This ensures that any Wi-Fi device can connect to the network.
 

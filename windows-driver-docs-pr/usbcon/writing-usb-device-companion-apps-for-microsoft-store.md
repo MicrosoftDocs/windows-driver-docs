@@ -1,6 +1,6 @@
 ---
 Description: The Windows.Devices.Usb namespace provides APIs to communicate with an external USB device.
-title: Windows Store app for a USB device
+title: UWP app for a USB device
 author: windows-driver-content
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Windows Store app for a USB device
+# UWP app for a USB device
 
 
 The [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) namespace provides a way for a Windows store app to communicate with an external USB device that uses WinUSB (Winusb.sys) as the device driver.
@@ -30,36 +30,36 @@ The [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Talking to USB devices, start to finish (Windows Store app)](talking-to-usb-devices-start-to-finish.md)</p></td>
-<td><p>Use the Windows Runtime APIs, introduced in Windows 8.1, to write Windows Store apps that gives users access to their peripheral USB device. Such apps can connect to a device based on user-specified criteria, get information about the device, send data to the device and conversely get data steams from the device, and poll the device for interrupt data.</p></td>
+<td><p>[Talking to USB devices, start to finish (UWP app)](talking-to-usb-devices-start-to-finish.md)</p></td>
+<td><p>Use the Windows Runtime APIs, introduced in Windows 8.1, to write UWP apps that gives users access to their peripheral USB device. Such apps can connect to a device based on user-specified criteria, get information about the device, send data to the device and conversely get data steams from the device, and poll the device for interrupt data.</p></td>
 </tr>
 <tr class="even">
 <td><p>[How to add USB device capabilities to the app manifest](updating-the-app-manifest-with-usb-device-capabilities.md)</p></td>
 <td><p>This topic describes the device capabilities that are required for a Windows store app that uses the [<strong>Windows.Devices.Usb</strong>](https://msdn.microsoft.com/library/windows/apps/dn278466) namespace.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[How to connect to a USB device (Windows Store app)](how-to-connect-to-a-usb-device--windows-store-app-.md)</p></td>
-<td><p>In Windows 8.1, you can write a Windows Store app that interacts with a USB device. The app can send control commands, get device information, and read and write data to/from bulk and interrupt endpoints. Before you can do all that, you must find the device and establish connection.</p>
+<td><p>[How to connect to a USB device (UWP app)](how-to-connect-to-a-usb-device--uwp-app-.md)</p></td>
+<td><p>In Windows 8.1, you can write a UWP app that interacts with a USB device. The app can send control commands, get device information, and read and write data to/from bulk and interrupt endpoints. Before you can do all that, you must find the device and establish connection.</p>
 <p>In this part, you will learn how to use the [<strong>DeviceWatcher</strong>](https://msdn.microsoft.com/library/windows/apps/br225446) object to find the device and then open it to start communicating from your app. You will also learn how to close the device when you are finished using it.</p></td>
 </tr>
 <tr class="even">
-<td><p>[How to send a USB control transfer (Windows Store app)](how-to-send-a-usb-control-transfer--windows-store-app-.md)</p></td>
-<td><p>An app that communicates with a USB device usually sends several control transfers requests. Those requests get information about the device and send control commands defined by the hardware vendor. In this topic you'll learn about control transfers and how to format and send them in your Windows Store app.</p></td>
+<td><p>[How to send a USB control transfer (UWP app)](how-to-send-a-usb-control-transfer--uwp-app-.md)</p></td>
+<td><p>An app that communicates with a USB device usually sends several control transfers requests. Those requests get information about the device and send control commands defined by the hardware vendor. In this topic you'll learn about control transfers and how to format and send them in your UWP app.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[How to send a USB interrupt transfer request (Windows Store app)](how-to-send-a-usb-interrupt-transfer--windows-store-app-.md)</p></td>
-<td><p>A USB device can support interrupt endpoints so that it can send or receive data at regular intervals. To accomplish that, the host polls the device at regular intervals and data is transmitted each time the host polls the device. Interrupt transfers are mostly used for getting interrupt data from the device. This topic describes how a Windows Store app can get continuous interrupt data from the device.</p></td>
+<td><p>[How to send a USB interrupt transfer request (UWP app)](how-to-send-a-usb-interrupt-transfer--uwp-app-.md)</p></td>
+<td><p>A USB device can support interrupt endpoints so that it can send or receive data at regular intervals. To accomplish that, the host polls the device at regular intervals and data is transmitted each time the host polls the device. Interrupt transfers are mostly used for getting interrupt data from the device. This topic describes how a UWP app can get continuous interrupt data from the device.</p></td>
 </tr>
 <tr class="even">
-<td><p>[How to send a USB bulk transfer request (Windows Store app)](how-to-send-a-usb-bulk-transfer--windows-store-app-.md)</p></td>
-<td><p>In this topic, you'll learn about a USB bulk transfer and how to initiate a transfer request from your Windows Store app that communicates with a USB device.</p></td>
+<td><p>[How to send a USB bulk transfer request (UWP app)](how-to-send-a-usb-bulk-transfer--uwp-app-.md)</p></td>
+<td><p>In this topic, you'll learn about a USB bulk transfer and how to initiate a transfer request from your UWP app that communicates with a USB device.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[How to get USB descriptors (Windows Store app)](how-to-get-usb-descriptors--windows-store-app-.md)</p></td>
-<td><p>One of the main tasks of interacting with a USB device is to get information about it. All USB devices provide information in the form of several data structures called descriptors. This topic describes how a Windows Store app can get descriptors from the device at the endpoint, interface, configuration, and device level.</p></td>
+<td><p>[How to get USB descriptors (UWP app)](how-to-get-usb-descriptors--uwp-app-.md)</p></td>
+<td><p>One of the main tasks of interacting with a USB device is to get information about it. All USB devices provide information in the form of several data structures called descriptors. This topic describes how a UWP app can get descriptors from the device at the endpoint, interface, configuration, and device level.</p></td>
 </tr>
 <tr class="even">
-<td><p>[How to select a USB interface setting (Windows Store app)](how-to-select-a-usb-interface-setting--windows-store-app-.md)</p></td>
+<td><p>[How to select a USB interface setting (UWP app)](how-to-select-a-usb-interface-setting--uwp-app-.md)</p></td>
 <td><p>In this topic, you'll learn about changing a setting within a USB interface. You'll use the [<strong>UsbInterfaceSetting</strong>](https://msdn.microsoft.com/library/windows/apps/dn264278) object to get the current setting and set a setting in the interface.</p></td>
 </tr>
 </tbody>
@@ -85,7 +85,7 @@ You *cannot* use [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/wi
 -   You allow multiple apps to concurrently access the device.
 -   Your USB device is an internal device.
     **Note**  
-    The APIs are primarily designed for accessing peripheral devices. The API can also access PC internal USB devices. However access to PC internal USB devices from a Windows Store app is limited to a privileged app that is explicitly declared by the OEM for that PC.
+    The APIs are primarily designed for accessing peripheral devices. The API can also access PC internal USB devices. However access to PC internal USB devices from a UWP app is limited to a privileged app that is explicitly declared by the OEM for that PC.
 
      
 

@@ -46,11 +46,11 @@ If however, you already have a UI that is used for controlling audio processing 
 ## <span id="Application_Impact"></span><span id="application_impact"></span><span id="APPLICATION_IMPACT"></span>Application Impact
 
 
-The functionality described for this new type of audio adapter and its associated driver, can be used by Windows Store apps via WASAPI, Media Foundation, Media Engine, or the HTML 5 &lt;audio&gt; tags. Note that Wave and DSound cannot be used, as they are not available to Windows Store apps. Also note that Desktop applications cannot use the offloading capabilities of audio adapters that support hardware-offloaded audio. These applications can still render audio, but only through the host pin which makes use of the software audio engine.
+The functionality described for this new type of audio adapter and its associated driver, can be used by UWP apps via WASAPI, Media Foundation, Media Engine, or the HTML 5 &lt;audio&gt; tags. Note that Wave and DSound cannot be used, as they are not available to UWP apps. Also note that Desktop applications cannot use the offloading capabilities of audio adapters that support hardware-offloaded audio. These applications can still render audio, but only through the host pin which makes use of the software audio engine.
 
-If a Windows Store app streams media content and uses Media Foundation, Media Engine, or the HTML 5 &lt;audio&gt; tags, the app is automatically opted-in for hardware offloading as long as the proper audio category has been set for the stream. Opting-in for hardware offloading is done on a per stream basis.
+If a UWP app streams media content and uses Media Foundation, Media Engine, or the HTML 5 &lt;audio&gt; tags, the app is automatically opted-in for hardware offloading as long as the proper audio category has been set for the stream. Opting-in for hardware offloading is done on a per stream basis.
 
-Windows Store apps that use WASAPI or streaming communications have to explicitly opt-in for hardware offloading.
+UWP apps that use WASAPI or streaming communications have to explicitly opt-in for hardware offloading.
 
  
 

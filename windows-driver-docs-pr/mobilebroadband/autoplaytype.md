@@ -55,7 +55,7 @@ There are no child elements.
 <tbody>
 <tr class="odd">
 <td><p>[AutoplayHandler](autoplayhandler.md)</p></td>
-<td><p>Specifies a Windows Store device app that should appear as the recommended AutoPlay action when a user plugs in a device.</p></td>
+<td><p>Specifies a UWP device app that should appear as the recommended AutoPlay action when a user plugs in a device.</p></td>
 </tr>
 </tbody>
 </table>

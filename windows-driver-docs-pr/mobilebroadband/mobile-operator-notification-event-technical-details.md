@@ -248,7 +248,7 @@ When the service metadata and app are downloaded, the Device Setup Manager regis
 
 If the background task entry point is changed in an updated version of the mobile broadband app, the [DeviceNotificationHandler](devicenotificationhandler.md) element in the service metadata must also be changed.
 
-Service metadata is updated automatically on computers running Windows 8, Windows 8.1, and Windows 10. Mobile broadband apps are updated in the Windows Store. You should avoid changing the [DeviceNotificationHandler](devicenotificationhandler.md) background task registration in service metadata. If a change is required, the service metadata should contain references to all the different background task entry points used in all your supported versions of the mobile broadband app to preserve functionality for users who haven’t updated the mobile broadband app.
+Service metadata is updated automatically on computers running Windows 8, Windows 8.1, and Windows 10. Mobile broadband apps are updated in the Microsoft Store. You should avoid changing the [DeviceNotificationHandler](devicenotificationhandler.md) background task registration in service metadata. If a change is required, the service metadata should contain references to all the different background task entry points used in all your supported versions of the mobile broadband app to preserve functionality for users who haven’t updated the mobile broadband app.
 
 ## <span id="deffilter"></span><span id="DEFFILTER"></span>Define filtering rules in provisioning XML
 

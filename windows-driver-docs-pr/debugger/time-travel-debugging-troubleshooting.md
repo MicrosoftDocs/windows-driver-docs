@@ -27,9 +27,9 @@ As the message indicates, running the debugger elevated is a requirement. In ord
 
 Re-install WinDbg Preview using an account that has administrator privileges and use that account when recording in the debugger.
 
-### I can't launch and record a Windows Store application
+### I can't launch and record a UWP application
 
-This is not supported at this time, but you may attach to and record an already-running Windows Store application.
+This is not supported at this time, but you may attach to and record an already-running UWP application.
 
 ### I can't record a <insert name of unusual process type - running in another session, security context, credentials...> process
 

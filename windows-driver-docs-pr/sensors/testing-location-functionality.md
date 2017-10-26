@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 The Sensor Diagnostic Tool includes a separate Location tab that logs properties that are specific to location. These properties include Latitude, Longitude, and Civic Address.
 
-**Note**  The Sensor Diagnostic Tool is acceptable for testing on Windows 8.1 and earlier operating systems. The tool is now deprecated for Windows 10, so for sensor driver testing and diagnostics on Windows 10 and later operating systems, please use the SensorInfo App from the Windows Store.
+**Note**  The Sensor Diagnostic Tool is acceptable for testing on Windows 8.1 and earlier operating systems. The tool is now deprecated for Windows 10, so for sensor driver testing and diagnostics on Windows 10 and later operating systems, please use the SensorInfo App from the Microsoft Store.
 
  
 

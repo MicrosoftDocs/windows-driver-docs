@@ -54,7 +54,7 @@ The host obtains the device descriptor through a control transfer. Microsoft pro
 </thead>
 <tbody>
 <tr class="odd">
-<td>Windows Store app that uses [<strong>Windows.Devices.Usb</strong>](https://msdn.microsoft.com/library/windows/apps/dn278466)</td>
+<td>UWP app that uses [<strong>Windows.Devices.Usb</strong>](https://msdn.microsoft.com/library/windows/apps/dn278466)</td>
 <td>[<strong>UsbDevice.DeviceDescriptor</strong>](https://msdn.microsoft.com/library/windows/apps/dn264002)</td>
 </tr>
 <tr class="even">
@@ -113,7 +113,7 @@ The **bConfigurationValue** field indicates the number for the configuration def
 </thead>
 <tbody>
 <tr class="odd">
-<td>Windows Store app that uses [<strong>Windows.Devices.Usb</strong>](https://msdn.microsoft.com/library/windows/apps/dn278466)</td>
+<td>UWP app that uses [<strong>Windows.Devices.Usb</strong>](https://msdn.microsoft.com/library/windows/apps/dn278466)</td>
 <td><p>[<strong>UsbDevice.ConfigurationDescriptor</strong>](https://msdn.microsoft.com/library/windows/apps/dn297689) to get the fixed length portion.</p>
 <p>[<strong>UsbConfiguration.Descriptors</strong>](https://msdn.microsoft.com/library/windows/apps/dn263802) to get the entire configuration set.</p></td>
 </tr>
@@ -174,7 +174,7 @@ In the preceding example, note **bInterfaceNumber** and **bAlternateSetting** fi
 </thead>
 <tbody>
 <tr class="odd">
-<td>Windows Store app that uses [<strong>Windows.Devices.Usb</strong>](https://msdn.microsoft.com/library/windows/apps/dn278466)</td>
+<td>UWP app that uses [<strong>Windows.Devices.Usb</strong>](https://msdn.microsoft.com/library/windows/apps/dn278466)</td>
 <td><p>[<strong>UsbInterfaceSetting.Descriptors</strong>](https://msdn.microsoft.com/library/windows/apps/dn264281) to get a particular the descriptor for a particular alternate setting.</p>
 <p>[<strong>UsbInterface.Descriptors</strong>](https://msdn.microsoft.com/library/windows/apps/dn264281) to get descriptors for all settings of an interface.</p></td>
 </tr>
@@ -232,7 +232,7 @@ The **bEndpointAddress** field specifies the unique endpoint address that contai
 </thead>
 <tbody>
 <tr class="odd">
-<td>Windows Store app that uses [<strong>Windows.Devices.Usb</strong>](https://msdn.microsoft.com/library/windows/apps/dn278466)</td>
+<td>UWP app that uses [<strong>Windows.Devices.Usb</strong>](https://msdn.microsoft.com/library/windows/apps/dn278466)</td>
 <td><p>[<strong>UsbEndpointDescriptor</strong>](https://msdn.microsoft.com/library/windows/apps/dn264052)</p></td>
 </tr>
 <tr class="even">

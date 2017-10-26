@@ -23,7 +23,7 @@ This section describes how to pair a device-specific [Universal Windows Platform
 (UWP)](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide)
 application with a device on Windows 10.
 
-After the app is installed, you can easily update it through the Windows Store.
+After the app is installed, you can easily update it through the Microsoft Store.
 
 To associate the UWP app with your device, you'll need to create a Custom Capability.
 
@@ -38,7 +38,7 @@ To associate the UWP app with your device, you'll need to create a Custom Capabi
 
 -   [App capabilities](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations)
 
--   [Develop Windows Store apps using Visual Studio](https://developer.microsoft.com/en-us/windows/apps/develop)
+-   [Develop UWP apps using Visual Studio](https://developer.microsoft.com/en-us/windows/apps/develop)
 
 -   [Develop UWP apps](https://developer.microsoft.com/en-us/windows/apps/develop)
 

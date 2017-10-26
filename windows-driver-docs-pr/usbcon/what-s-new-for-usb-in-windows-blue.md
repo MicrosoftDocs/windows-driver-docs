@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 Here are the new features and improvements for Universal Serial Bus (USB) in Windows 8.1.
 
--   [Windows Runtime USB API for developing Windows Store apps](#usb-sdk)
+-   [Windows Runtime USB API for developing UWP apps](#usb-sdk)
 -   [Microsoft OS 2.0 descriptors for improved device enumeration](#microsoft-os-2-0-descriptors-for-improved-device-enumeration)
 -   [Isochronous support for WinUSB](#usb-wdk)
 -   [USB driver stack improvements](#usb-driver-stack-improvements)
@@ -22,21 +22,21 @@ Here are the new features and improvements for Universal Serial Bus (USB) in Win
 -   [Improved USB diagnostic tools and debugger extensions](#improved-usb-diagnostic-tools-and-debugger-extensions-)
 -   [Related topics](#related-topics)
 
-## <a href="" id="usb-sdk"></a>Windows Runtime USB API for developing Windows Store apps
+## <a href="" id="usb-sdk"></a>Windows Runtime USB API for developing UWP apps
 
 
-Windows Runtime provides a new namespace: [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) (see [Writing apps for USB devices (Windows Store apps using C#/VB/C++)](https://msdn.microsoft.com/library/windows/apps/xaml/dn263144) for a brief overview). By using the namespace, you can write a Windows Store app that talks to a custom USB device.
+Windows Runtime provides a new namespace: [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) (see [Writing apps for USB devices (UWP apps using C#/VB/C++)](https://msdn.microsoft.com/library/windows/apps/xaml/dn263144) for a brief overview). By using the namespace, you can write a UWP app that talks to a custom USB device.
 
 For more information, see these topics:
 
--   [Talking to USB devices, start to finish (Windows Store app)](talking-to-usb-devices-start-to-finish.md)
+-   [Talking to USB devices, start to finish (UWP app)](talking-to-usb-devices-start-to-finish.md)
 -   [How to add USB device capabilities to the app manifest](updating-the-app-manifest-with-usb-device-capabilities.md)
--   [How to connect to a USB device (Windows Store app)](how-to-connect-to-a-usb-device--windows-store-app-.md)
--   [How to send a USB control transfer (Windows Store app)](how-to-send-a-usb-control-transfer--windows-store-app-.md)
--   [How to send a USB interrupt transfer request (Windows Store app)](how-to-send-a-usb-interrupt-transfer--windows-store-app-.md)
--   [How to send a USB bulk transfer request (Windows Store app)](how-to-send-a-usb-bulk-transfer--windows-store-app-.md)
--   [How to get USB descriptors (Windows Store app)](how-to-get-usb-descriptors--windows-store-app-.md)
--   [How to select a USB interface setting (Windows Store app)](how-to-select-a-usb-interface-setting--windows-store-app-.md)
+-   [How to connect to a USB device (UWP app)](how-to-connect-to-a-usb-device--uwp-app-.md)
+-   [How to send a USB control transfer (UWP app)](how-to-send-a-usb-control-transfer--uwp-app-.md)
+-   [How to send a USB interrupt transfer request (UWP app)](how-to-send-a-usb-interrupt-transfer--uwp-app-.md)
+-   [How to send a USB bulk transfer request (UWP app)](how-to-send-a-usb-bulk-transfer--uwp-app-.md)
+-   [How to get USB descriptors (UWP app)](how-to-get-usb-descriptors--uwp-app-.md)
+-   [How to select a USB interface setting (UWP app)](how-to-select-a-usb-interface-setting--uwp-app-.md)
 
 These samples demonstrate the use of the [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) namespace.
 
@@ -47,7 +47,7 @@ These samples demonstrate the use of the [**Windows.Devices.Usb**](https://msdn.
 </colgroup>
 <thead>
 <tr class="header">
-<th>Windows Store app sample</th>
+<th>UWP app sample</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -62,7 +62,7 @@ These samples demonstrate the use of the [**Windows.Devices.Usb**](https://msdn.
 </tr>
 <tr class="odd">
 <td><p><a href="" id="firmware-update-usb-device-sample"></a>[Firmware Update USB Device sample](http://go.microsoft.com/fwlink/p/?linkid=309716)</p></td>
-<td><p>This sample shows how a Windows Store app can update the firmware of a USB device. The update operation runs as a background task.</p></td>
+<td><p>This sample shows how a UWP app can update the firmware of a USB device. The update operation runs as a background task.</p></td>
 </tr>
 </tbody>
 </table>

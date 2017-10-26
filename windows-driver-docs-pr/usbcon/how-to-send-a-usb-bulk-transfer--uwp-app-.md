@@ -1,6 +1,6 @@
 ---
-Description: Learn about a USB bulk transfer and how to initiate a transfer request from your Windows Store app that communicates with a USB device.
-title: How to send a USB bulk transfer request (Windows Store app)
+Description: Learn about a USB bulk transfer and how to initiate a transfer request from your UWP app that communicates with a USB device.
+title: How to send a USB bulk transfer request (UWP app)
 author: windows-driver-content
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# How to send a USB bulk transfer request (Windows Store app)
+# How to send a USB bulk transfer request (UWP app)
 
 
 **Summary**
@@ -24,7 +24,7 @@ ms.technology: windows-devices
 -   **DataReader, DataWriter**
 -   **UsbReadOptions, UsbWriteOptions**
 
-In this topic, you'll learn about a USB bulk transfer and how to initiate a transfer request from your Windows Store app that communicates with a USB device.
+In this topic, you'll learn about a USB bulk transfer and how to initiate a transfer request from your UWP app that communicates with a USB device.
 
 USB full speed, high speed, and SuperSpeed devices can support bulk endpoints. Those endpoints are used for transferring transfer large amounts of data, such as transferring data to or from a USB flash drive. Bulk transfers are reliable because they allow error detection and involves limited number of retries to make sure the data is received by the host or the device. Bulk transfers are used for data that is not time critical. Data is transferred only when there is unused bandwidth available on the bus. Therefore, when the bus is busy with other transfers, bulk data can wait indefinitely.
 
@@ -37,7 +37,7 @@ Your app can also modify the behavior of the pipe by setting certain policy flag
 ## Before you start...
 
 
--   You have must opened the device and obtained the [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883) object. Read [How to connect to a USB device (Windows Store App)](how-to-connect-to-a-usb-device--windows-store-app-.md).
+-   You have must opened the device and obtained the [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883) object. Read [How to connect to a USB device (UWP app)](how-to-connect-to-a-usb-device--uwp-app-.md).
 -   You can see the complete code shown in this topic in the CustomUsbDeviceAccess sample, Scenario4\_BulkPipes files.
 
 ## Step 1: Get the bulk pipe object

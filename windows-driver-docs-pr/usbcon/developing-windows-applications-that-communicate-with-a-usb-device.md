@@ -1,5 +1,5 @@
 ---
-Description: This topic provides guidelines for deciding whether you should write a Windows Store app or a Windows desktop app to communicate with a USB device.
+Description: This topic provides guidelines for deciding whether you should write a UWP app or a Windows desktop app to communicate with a USB device.
 title: Developing Windows applications for USB devices
 author: windows-driver-content
 ms.author: windowsdriverdev
@@ -15,14 +15,14 @@ ms.technology: windows-devices
 **Summary**
 
 -   Guidelines for choosing the right programming model
--   Windows Store app and desktop app developer experience
+-   UWP app and desktop app developer experience
 
 **Important APIs**
 
 -   [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466)
 -   [WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md)
 
-This topic provides guidelines for deciding whether you should write a Windows Store app or a Windows desktop app to communicate with a USB device.
+This topic provides guidelines for deciding whether you should write a UWP app or a Windows desktop app to communicate with a USB device.
 
 Windows provides API sets that you can use to write apps that talk to a custom USB devices. The API performs common USB-related tasks such as, finding the device, data transfers.
 
@@ -33,9 +33,9 @@ Windows provides API sets that you can use to write apps that talk to a custom U
 
 If you install [Winusb.sys](winusb-installation.md), here are the programming model options:
 
--   [Windows Store app for a USB device](writing-usb-device-companion-apps-for-windows-store.md)
+-   [UWP app for a USB device](writing-usb-device-companion-apps-for-microsoft-store.md)
 
-    Windows 8.1 provides a new namespace: [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466). The namespace cannot be used in earlier version of Windows. Other Windows Store resources are here: [Windows Store app](http://msdn.microsoft.com/windows/apps).
+    Windows 8.1 provides a new namespace: [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466). The namespace cannot be used in earlier version of Windows. Other Microsoft Store resources are here: [UWP app](http://msdn.microsoft.com/windows/apps).
 
 -   [Windows desktop app for a USB device](windows-desktop-app-for-a-usb-device.md)
 
@@ -45,7 +45,7 @@ The strategy for choosing the best programming model depends on various factors.
 
 -   **Will your app communicate with an internal USB device?**
 
-    The APIs are primarily designed for accessing peripheral devices. The API can also access PC internal USB devices. However access to PC internal USB devices from a Windows Store app is limited to a privileged app that is explicitly declared in device metadata by the OEM for that PC.
+    The APIs are primarily designed for accessing peripheral devices. The API can also access PC internal USB devices. However access to PC internal USB devices from a UWP app is limited to a privileged app that is explicitly declared in device metadata by the OEM for that PC.
 
 -   **Will your app communicate with USB isochronous endpoints?**
 
@@ -53,11 +53,11 @@ The strategy for choosing the best programming model depends on various factors.
 
 -   **Is your app a "control panel" type of app?**
 
-    Windows Store apps are per-user apps and do not have the ability to make changes outside the scope of each app. For these types of apps, you must write a Windows desktop app.
+    UWP apps are per-user apps and do not have the ability to make changes outside the scope of each app. For these types of apps, you must write a Windows desktop app.
 
--   **Is the USB device class supported classes by Windows Store apps?**
+-   **Is the USB device class supported classes by UWP apps?**
 
-    Write a Windows Store app if your device belongs to one these device classes.
+    Write a UWP app if your device belongs to one these device classes.
 
     -   `name:cdcControl,           classId:02 * *`
     -   `name:physical, classId:05 * *`
@@ -78,7 +78,7 @@ The strategy for choosing the best programming model depends on various factors.
 ## Driver requirement
 
 
-| Driver requirement | Windows Store app                                                                                                                          | Windows desktop app                                                                                                                       |
+| Driver requirement | UWP app                                                                                                                          | Windows desktop app                                                                                                                       |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | Function driver    | Microsoft-provided [Winusb.sys](winusb-installation.md) (kernel-mode driver).                                                             | Microsoft-provided [Winusb.sys](winusb-installation.md) (kernel-mode driver).                                                            |
 | Filter driver      | If filter drivers are present, access is limited to privileged apps. The app is declared as privileged apps in device metadata by the OEM. | Filter driver can be present in the kernel mode device stack as long as it doesn't block access to [Winusb.sys](winusb-installation.md). |
@@ -97,7 +97,7 @@ The strategy for choosing the best programming model depends on various factors.
 <thead>
 <tr class="header">
 <th>Sample</th>
-<th>Windows Store app</th>
+<th>UWP app</th>
 <th>Windows desktop app</th>
 </tr>
 </thead>
@@ -131,7 +131,7 @@ The strategy for choosing the best programming model depends on various factors.
 <thead>
 <tr class="header">
 <th>Development tools</th>
-<th>Windows Store app</th>
+<th>UWP app</th>
 <th>Windows desktop app</th>
 </tr>
 </thead>
@@ -170,7 +170,7 @@ The strategy for choosing the best programming model depends on various factors.
 <thead>
 <tr class="header">
 <th>Key scenario</th>
-<th>Windows Store app</th>
+<th>UWP app</th>
 <th>Windows desktop app</th>
 </tr>
 </thead>
@@ -232,7 +232,7 @@ The strategy for choosing the best programming model depends on various factors.
 ## Documentation
 
 
-| Documentation     | Windows Store app                                                                     | Windows desktop app                                                                                           |
+| Documentation     | UWP app                                                                     | Windows desktop app                                                                                           |
 |-------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Programming guide | [Talking to USB devices, start to finish](talking-to-usb-devices-start-to-finish.md) | [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md) |
 | API reference     | [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466)                              | [WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md)                                     |

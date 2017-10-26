@@ -27,7 +27,7 @@ And if an enterprise chooses to block printer extensions altogether, this can be
 ## Building a printer extension
 
 
-The [Printer Extension Sample](http://go.microsoft.com/fwlink/p/?LinkId=617945) in the Windows sample gallery shows how to build a printer extension using C#. In order to allow code sharing between Windows Store device apps and printer extensions, this sample uses two projects: PrinterExtensionLibrary (a C) and ExtensionSample (a printer extension that is dependent on the PrinterExtensionLibrary).
+The [Printer Extension Sample](http://go.microsoft.com/fwlink/p/?LinkId=617945) in the Windows sample gallery shows how to build a printer extension using C#. In order to allow code sharing between UWP device apps and printer extensions, this sample uses two projects: PrinterExtensionLibrary (a C) and ExtensionSample (a printer extension that is dependent on the PrinterExtensionLibrary).
 
 The code snippets shown in this topic are all taken from the PrinterExtensionSample solution. If you are building a printer extension in C, C++ or some other COM-based language, the concepts are similar but the APIs must instead match those specified in *PrinterExtension.IDL*, which is included in the Windows Driver Kit. The code comments in the PrinterExtensionLibrary from the sample document also include code comments that indicate the underlying COM interface that a particular object corresponds to.
 

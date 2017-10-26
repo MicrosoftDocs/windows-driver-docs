@@ -15,7 +15,7 @@ ms.technology: windows-devices
 ## <span id="SMS_device_capability_declaration_in_package_manifest"></span><span id="sms_device_capability_declaration_in_package_manifest"></span><span id="SMS_DEVICE_CAPABILITY_DECLARATION_IN_PACKAGE_MANIFEST"></span>SMS device capability declaration in package manifest
 
 
-A Windows Store app that uses SMS must declare SMS capability in its package manifest in Visual Studio.
+A UWP app that uses SMS must declare SMS capability in its package manifest in Visual Studio.
 
 Example **package.appxmanifest**:
 
@@ -25,7 +25,7 @@ Example **package.appxmanifest**:
   </Capabilities>
 ```
 
-For more information, see [App capability declarations (Windows Store apps)](http://go.microsoft.com/fwlink/p/?linkid=317125).
+For more information, see [App capability declarations (UWP apps)](http://go.microsoft.com/fwlink/p/?linkid=317125).
 
 ## <span id="SMS_app_declaration_in_device_metadata"></span><span id="sms_app_declaration_in_device_metadata"></span><span id="SMS_APP_DECLARATION_IN_DEVICE_METADATA"></span>SMS app declaration in device metadata
 

@@ -54,7 +54,7 @@ A custom logo that appears in Windows Connection Manager next to your network en
 > In Windows 10, version 1709 and later, this field has been replaced by branding through COSA. Fields in COSA for branding are described on [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md). If you are targeting versions of Windows before Windows 10, version 1709, you will still create a metadata package as described in this section. For more information about COSA, see [COSA overview](cosa-overview.md). 
 
 -   **Mobile broadband app**  
-A Windows Store device app that is automatically downloaded and applied to the computer. This app can provide key experiences such as plan purchase, data usage, and help and support, and can highlight value-added services.
+A UWP device app that is automatically downloaded and applied to the computer. This app can provide key experiences such as plan purchase, data usage, and help and support, and can highlight value-added services.
 
 -   **MB Purchase Profile**  
 Purchase profile that is used for establishing limited connectivity for purchasing a subscription.
@@ -78,7 +78,7 @@ The mobile broadband device typically provides the operator name, which Windows 
 In general, an app must be run by the user at least one time before it can register work items with the System Event broker. However, mobile broadband apps might need to receive important events before the user can run the app. You can specify the [DeviceNotificationHandler](devicenotificationhandler.md) element in service metadata, which Windows will use to register some critical events. For more information about SMS notifications, see [Delivering experiences for MVNOs](delivering-experiences-for-mvnos.md).
 
 -   **List of privileged apps with access to mobile broadband restricted interfaces**  
-Mobile Broadband APIs and interfaces (including Account Provisioning and SMS) are restricted and available to mobile broadband apps only. A list of privileged apps that have access to these privileged APIs can be specified in the service metadata package in the [PrivilegedApplications](privilegedapplications.md) element. Privileged apps can be debugging or test apps; they are not required to be distributed through the Windows Store.
+Mobile Broadband APIs and interfaces (including Account Provisioning and SMS) are restricted and available to mobile broadband apps only. A list of privileged apps that have access to these privileged APIs can be specified in the service metadata package in the [PrivilegedApplications](privilegedapplications.md) element. Privileged apps can be debugging or test apps; they are not required to be distributed through the Microsoft Store.
 
 ## <span id="Service_Metadata_Package_Structure"></span><span id="service_metadata_package_structure"></span><span id="SERVICE_METADATA_PACKAGE_STRUCTURE"></span>Service Metadata Package Structure
 

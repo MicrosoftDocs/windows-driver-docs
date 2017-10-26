@@ -16,7 +16,7 @@ The landing page is the first page that the user sees when they start the mobile
 
 ![landing page postpaid](images/mb-fig1-landing-page-postpaid.png)
 
-The landing page should follow Windows Store app guidelines for app layout. To encourage simplicity and ease of navigation, we recommend that you fit all contents of the landing page into a single page. The landing page is the central hub of your app. Although it is not a primary navigation method or management page, it showcases your app and its major functionality.
+The landing page should follow UWP app guidelines for app layout. To encourage simplicity and ease of navigation, we recommend that you fit all contents of the landing page into a single page. The landing page is the central hub of your app. Although it is not a primary navigation method or management page, it showcases your app and its major functionality.
 
 The following sections describe some of the content that you can include in the landing page:
 
@@ -84,7 +84,7 @@ You can customize your mobile broadband app to suit your individual branding sty
 
 -   Use a simple layout to improve readability.
 
--   Follow Windows Store app guidelines.
+-   Follow UWP app guidelines.
 
 -   Disable the **Back** button if this is the first time that the user is visiting the app.
 
@@ -97,11 +97,11 @@ You can customize your mobile broadband app to suit your individual branding sty
 ## <span id="res"></span><span id="RES"></span>Additional resources
 
 
--   [Index of UX guidelines for Windows Store apps](https://msdn.microsoft.com/library/windows/apps/hh465424)
+-   [Index of UX guidelines for UWP apps](https://msdn.microsoft.com/library/windows/apps/hh465424)
 
 -   [Adding controls and content](https://msdn.microsoft.com/library/windows/apps/hh465393)
 
--   [Make great Windows Store apps](https://msdn.microsoft.com/library/windows/apps/hh464920)
+-   [Make great UWP apps](https://msdn.microsoft.com/library/windows/apps/hh464920)
 
 -   [Laying out your UI](https://msdn.microsoft.com/library/windows/apps/hh465304)
 

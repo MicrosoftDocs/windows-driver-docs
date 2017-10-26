@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Create a mobile broadband experience
 
 
-A mobile broadband experience helps you create a service metadata package used to associate your Windows Store mobile broadband app with your hardware dongle.
+A mobile broadband experience helps you create a service metadata package used to associate your UWP mobile broadband app with your hardware dongle.
 
 The topics in this section include the following:
 

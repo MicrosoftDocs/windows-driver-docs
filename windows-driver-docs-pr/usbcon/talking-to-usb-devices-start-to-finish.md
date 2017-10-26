@@ -1,6 +1,6 @@
 ---
-Description: Use the Windows Runtime APIs, introduced in Windows 8.1, to write Windows Store apps that gives users access to their peripheral USB device.
-title: Talking to USB devices, start to finish (Windows Store app)
+Description: Use the Windows Runtime APIs, introduced in Windows 8.1, to write UWP apps that gives users access to their peripheral USB device.
+title: Talking to USB devices, start to finish (UWP app)
 author: windows-driver-content
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -9,12 +9,12 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Talking to USB devices, start to finish (Windows Store app)
+# Talking to USB devices, start to finish (UWP app)
 
 
 **Summary**
 
--   End-to-end walkthrough for creating a Windows Store app that talks to a USB device
+-   End-to-end walkthrough for creating a UWP app that talks to a USB device
 -   **Companion sample**: [Custom USB device access sample](http://go.microsoft.com/fwlink/p/?linkid=309716)
 
 **Important APIs**
@@ -23,9 +23,9 @@ ms.technology: windows-devices
 -   [**Windows.Devices.Enumeration**](https://msdn.microsoft.com/library/windows/apps/br225459)
 -   [**Windows.Devices.Background**](https://msdn.microsoft.com/library/windows/apps/dn263409)
 
-Use the Windows Runtime APIs, introduced in Windows 8.1, to write Windows Store apps that gives users access to their peripheral USB device. Such apps can connect to a device based on user-specified criteria, get information about the device, send data to the device and conversely get data steams from the device, and poll the device for interrupt data.
+Use the Windows Runtime APIs, introduced in Windows 8.1, to write UWP apps that gives users access to their peripheral USB device. Such apps can connect to a device based on user-specified criteria, get information about the device, send data to the device and conversely get data steams from the device, and poll the device for interrupt data.
 
-Here we describe, how your Windows Store app using C++, C#, or Visual Basic app can implement those tasks, and link to examples that demonstrate the use of classes included in [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466). We'll go over the device capabilities required in the app manifest and how to launching the app when the device is connected. And we'll show how to run a data transfer task in the background even when the app is suspended to conserve battery life.
+Here we describe, how your UWP app using C++, C#, or Visual Basic app can implement those tasks, and link to examples that demonstrate the use of classes included in [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466). We'll go over the device capabilities required in the app manifest and how to launching the app when the device is connected. And we'll show how to run a data transfer task in the background even when the app is suspended to conserve battery life.
 
 Follow the steps in this section or, skip directly to the [Custom USB device access sample](http://go.microsoft.com/fwlink/p/?linkid=309716). The companion sample implements all the steps here, but to keep things moving we won't walk through the code. Certain steps have a **Find it in the sample** section to help you find the code quickly. The structure of the sample's source files is simple and flat so you can easily find code without having to drill down through multiple layers of source files. But you may prefer to break up and organize your own project differently.
 
@@ -50,7 +50,7 @@ Follow the steps in this section or, skip directly to the [Custom USB device acc
 -   [**Step 16**—Extend the app to implement a background task that can perform lengthy USB transfers to the device, such as firmware update without the app getting suspended.](#step16)
 -   [**Step 17**—Run Windows App Certification Kit.](#step17)
 
-## Walkthrough—Writing Windows Store app for USB devices
+## Walkthrough—Writing UWP app for USB devices
 
 
 <table>
@@ -95,7 +95,7 @@ Alternatively, you can view information the registry. For more information, see 
 <tr class="odd">
 <td><a href="" id="step3"></a>
 <p><strong>Step 3</strong>—Determine whether the device class, subclass, and protocol allowed by the Windows Runtime USB API set.</p></td>
-<td><p>You can write a Windows Store app, if device class, subclass, and protocol code of the device is one of the following:</p>
+<td><p>You can write a UWP app, if device class, subclass, and protocol code of the device is one of the following:</p>
 <ul>
 <li><code>name:cdcControl,           classId:02 * *</code></li>
 <li><code>name:physical, classId:05 * *</code></li>
@@ -111,7 +111,7 @@ Alternatively, you can view information the registry. For more information, see 
 <tr class="even">
 <td><a href="" id="step4"></a>
 <p><strong>Step 4</strong>—Create a basic Visual Studio 2013 project that you can extend in this tutorial.</p></td>
-<td>For more information, see [Getting started with Windows Store apps](http://go.microsoft.com/fwlink/p/?linkid=617681).</td>
+<td>For more information, see [Getting started with UWP apps](http://go.microsoft.com/fwlink/p/?linkid=617681).</td>
 </tr>
 <tr class="odd">
 <td><a href="" id="step5"></a>
@@ -144,7 +144,7 @@ Alternatively, you can view information the registry. For more information, see 
 <tr class="even">
 <td><a href="" id="step6"></a>
 <p><strong>Step 6</strong>— Extend the app to open the device for communication.</p></td>
-<td><p><strong>Quickstart:</strong> [How to connect to a USB device (Windows Store app)](how-to-connect-to-a-usb-device--windows-store-app-.md)</p>
+<td><p><strong>Quickstart:</strong> [How to connect to a USB device (UWP app)](how-to-connect-to-a-usb-device--uwp-app-.md)</p>
 <ol>
 <li>Find the device by building an Advanced Query Syntax (AQS) string that contains search criteria for finding the device in the enumerated device collection.</li>
 <li>Open the device in one of two ways:
@@ -174,7 +174,7 @@ For more information, see [How to get notifications if devices are added, remove
 <tr class="even">
 <td><a href="" id="step8"></a>
 <p><strong>Step 8</strong>— Extend the app to get and show USB descriptors in the UI.</p></td>
-<td><p><strong>Quickstart:</strong> [How to get USB descriptors (Windows Store app)](how-to-get-usb-descriptors--windows-store-app-.md)</p>
+<td><p><strong>Quickstart:</strong> [How to get USB descriptors (UWP app)](how-to-get-usb-descriptors--uwp-app-.md)</p>
 <p></p>
 <ul>
 <li>Get the device descriptor by getting the [<strong>UsbDevice.DeviceDescriptor</strong>](https://msdn.microsoft.com/library/windows/apps/dn264002) value.</li>
@@ -198,7 +198,7 @@ For more information, see [How to get notifications if devices are added, remove
 <tr class="odd">
 <td><a href="" id="step9"></a>
 <p><strong>Step 9</strong>— Extend the app to send vendor-defined USB control transfers.</p></td>
-<td><p><strong>Quickstart:</strong> [How to send a USB control transfer request (Windows Store app)](how-to-send-a-usb-control-transfer--windows-store-app-.md)</p>
+<td><p><strong>Quickstart:</strong> [How to send a USB control transfer request (UWP app)](how-to-send-a-usb-control-transfer--uwp-app-.md)</p>
 <p></p>
 <ol>
 <li>Get the vendor command from the hardware specification of the device.</li>
@@ -214,7 +214,7 @@ For more information, see [How to get notifications if devices are added, remove
 <tr class="even">
 <td><a href="" id="step10"></a>
 <p><strong>Step 10</strong>— Extend the app to read or write bulk data.</p></td>
-<td><p><strong>Quickstart:</strong> [How to send a USB bulk transfer request (Windows Store app)](how-to-send-a-usb-bulk-transfer--windows-store-app-.md)</p>
+<td><p><strong>Quickstart:</strong> [How to send a USB bulk transfer request (UWP app)](how-to-send-a-usb-bulk-transfer--uwp-app-.md)</p>
 <p></p>
 <ol>
 <li>Get the bulk pipe object ([<strong>UsbBulkOutPipe</strong>](https://msdn.microsoft.com/library/windows/apps/dn297647) or [<strong>UsbBulkInPipe</strong>](https://msdn.microsoft.com/library/windows/apps/dn297573)).</li>
@@ -228,7 +228,7 @@ For more information, see [How to get notifications if devices are added, remove
 <tr class="odd">
 <td><a href="" id="step11"></a>
 <p><strong>Step 11</strong>— Extend the app to get hardware interrupt data.</p></td>
-<td><p><strong>Quickstart:</strong> [How to send a USB interrupt transfer request (Windows Store app)](how-to-send-a-usb-interrupt-transfer--windows-store-app-.md)</p>
+<td><p><strong>Quickstart:</strong> [How to send a USB interrupt transfer request (UWP app)](how-to-send-a-usb-interrupt-transfer--uwp-app-.md)</p>
 <p></p>
 <ol>
 <li>Get the interrupt pipe object ([<strong>UsbInterruptInPipe</strong>](https://msdn.microsoft.com/library/windows/apps/dn278416) or [<strong>UsbInterruptOutPipe</strong>](https://msdn.microsoft.com/library/windows/apps/dn278425)).</li>
@@ -241,7 +241,7 @@ For more information, see [How to get notifications if devices are added, remove
 <tr class="even">
 <td><a href="" id="step12"></a>
 <p><strong>Step 12</strong>— Extend the app to select an interface setting that is not currently active.</p></td>
-<td><p><strong>Quickstart:</strong> [How to select a USB interface setting (Windows Store app)](how-to-select-a-usb-interface-setting--windows-store-app-.md)</p>
+<td><p><strong>Quickstart:</strong> [How to select a USB interface setting (UWP app)](how-to-select-a-usb-interface-setting--uwp-app-.md)</p>
 <p>When the device is opened for communication, the default interface and its first setting is selected. If you want to change that setting, follow these steps:</p>
 <ol>
 <li>Get the active setting of a USB interface by using the [<strong>UsbInterfaceSetting.Selected</strong>](https://msdn.microsoft.com/library/windows/apps/dn264285) value.</li>
@@ -251,7 +251,7 @@ For more information, see [How to get notifications if devices are added, remove
 <tr class="odd">
 <td><a href="" id="step13"></a>
 <p><strong>Step 13</strong>— Close the device.</p></td>
-<td><p><strong>Quickstart:</strong> [How to connect to a USB device (Windows Store app)](how-to-connect-to-a-usb-device--windows-store-app-.md)</p>
+<td><p><strong>Quickstart:</strong> [How to connect to a USB device (UWP app)](how-to-connect-to-a-usb-device--uwp-app-.md)</p>
 <p>After you are finished using the UsbDevice object, close the device.</p>
 <p>C++ apps must release the reference by using the <strong>delete</strong> keyword. C#/VB apps must call the [<strong>UsbDevice.Dispose</strong>](https://msdn.microsoft.com/library/windows/apps/dn264007) method. JavaScript apps must call [<strong>UsbDevice.Close</strong>](https://msdn.microsoft.com/library/windows/apps/dn263990).</p>
 <p><strong>Find it in the sample:</strong> See files named Scenario1_DeviceConnect.</p></td>
@@ -272,7 +272,7 @@ For more information, see [How to get notifications if devices are added, remove
 </ul>
 <p><strong>To declare the app as a privileged app for your device, follow these instructions:</strong></p>
 <ol>
-<li><p>On the <strong>App Info</strong> page, in the <strong>Privileged application</strong> group, enter the <strong>Package name</strong>, <strong>Publisher name</strong>, and <strong>Windows Store App ID</strong>.</p>
+<li><p>On the <strong>App Info</strong> page, in the <strong>Privileged application</strong> group, enter the <strong>Package name</strong>, <strong>Publisher name</strong>, and <strong>UWP app ID</strong>.</p>
 <p><img src="images/privileged-app.png" alt="device metatdata for privileged apps" /></p>
 <div class="alert">
 <strong>Note</strong>  Do not check the <strong>Access custom driver</strong> option.
@@ -289,10 +289,10 @@ For more information, see [How to get notifications if devices are added, remove
 <td><a href="" id="step15"></a>
 <p><strong>Step 15</strong>—Extend the app to implement AutoPlay activation so that the app is launched when the device is connected to the system.</p></td>
 <td><p><strong>Quickstart:</strong> [Register an app for an AutoPlay device](https://msdn.microsoft.com/library/windows/apps/xaml/jj161017)</p>
-<p>You can add AutoPlay capabilities so that app is launched when the device is connected to the system. You can enable Autoplay for all Windows Store apps (privileged or otherwise).</p>
+<p>You can add AutoPlay capabilities so that app is launched when the device is connected to the system. You can enable Autoplay for all UWP apps (privileged or otherwise).</p>
 <p></p>
 <ol>
-<li>In your device metadata package, you must specify how the device should respond to an AutoPlay notification. On the <strong>Windows Info</strong> tab, select the <strong>Windows Store device app</strong> option and enter app information as shown here:</li>
+<li>In your device metadata package, you must specify how the device should respond to an AutoPlay notification. On the <strong>Windows Info</strong> tab, select the <strong>UWP device app</strong> option and enter app information as shown here:</li>
 <li><p>In the app manifest, add <strong>AutoPlay Device</strong> declaration and launch information as shown here:</p>
 <p><img src="images/autoplay.png" alt="AutoPlay" /></p></li>
 <li>In the OnActivated method of the App class, check if the app is activated by the device. If it is, then the method receives a DeviceEventArgs parameter value that contains the [<strong>DeviceInformation.Id</strong>](https://msdn.microsoft.com/library/windows/apps/br225437) property value. This is the same value described in [<strong>Step 6</strong>—Extend the app to open the device for communication](#step6).</li>
@@ -313,10 +313,10 @@ For more information, see [How to get notifications if devices are added, remove
 <p><strong>Background task class</strong></p>
 <ol>
 <li>Implements the [<strong>IBackgroundTask</strong>](https://msdn.microsoft.com/library/windows/apps/br224794) interface required by the Windows background task infrastructure.</li>
-<li>Obtains the DeviceUseDetails instance passed to the class in the <strong>Run</strong> method and uses this instance to report progress back to the Windows Store app and to register for cancellation events.</li>
+<li>Obtains the DeviceUseDetails instance passed to the class in the <strong>Run</strong> method and uses this instance to report progress back to the Microsoft Store app and to register for cancellation events.</li>
 <li>The <strong>Run</strong> method also calls the private OpenDevice and WriteToDeviceAsync methods that implement the background device sync code.</li>
 </ol>
-<p>The Windows Store app registers and triggers a DeviceUseTrigger background task. The app register, trigger, and handle progress on a background task.</p>
+<p>The UWP app registers and triggers a DeviceUseTrigger background task. The app register, trigger, and handle progress on a background task.</p>
 <div class="alert">
 <strong>Note</strong>  The example code that follows can be applied to the DeviceServicingTrigger background task by use the corresponding objects. The only difference between the two trigger objects and their corresponding APIs are the policy checks made by Windows.
 </div>
@@ -330,7 +330,7 @@ For more information, see [How to get notifications if devices are added, remove
 <ol>
 <li>Initializes the DeviceUseTrigger and saves it for later use.</li>
 <li>Creates a BackgroundTaskBuilder object and uses its Name, TaskEntryPoint and SetTrigger properties and method to register the app’s DeviceUseTrigger object and background task name. The BackgroundTaskBuilder object’s TaskEntryPoint property is set to the full name of the background task class that will be run when the background task is triggered.</li>
-<li>Registers for completion and progress events from the background task so the Windows Store app can provide completion and progress updates to the user.</li>
+<li>Registers for completion and progress events from the background task so the Microsoft Store app can provide completion and progress updates to the user.</li>
 </ol></li>
 <li>The private SyncWithDeviceAsync method registers the background task that will sync with the device and starts the background sync.
 <ol>
@@ -338,14 +338,14 @@ For more information, see [How to get notifications if devices are added, remove
 <li>Calls the private StartSyncBackgroundTaskAsync method which starts the background task.</li>
 <li>Closes the app’s handle to the device to ensure that the background task is able to open the device when it starts.
 <div class="alert">
-<strong>Note</strong>  The background task will need to open the device to perform the update so the Windows Store app must close its connections to the device before calling RequestAsync
+<strong>Note</strong>  The background task will need to open the device to perform the update so the Microsoft Store app must close its connections to the device before calling RequestAsync
 </div>
 <div>
  
 </div></li>
 <li>Calls the DeviceUseTrigger object’s RequestAsync method which starts triggers the background task and returns the DeviceTriggerResults object from RequestAsync used to determine if the background task started successfully.
 <div class="alert">
-<strong>Note</strong>  Windows checks to ensure that all necessary task initiation policy checks have been completed. If all policy checks are completed the update operation is now running as a background task outside of the Windows Store app, allowing the app to be safely suspended while the operation is in progress. Windows will also enforce any runtime requirements and cancel the background task if those requirements are no longer met.
+<strong>Note</strong>  Windows checks to ensure that all necessary task initiation policy checks have been completed. If all policy checks are completed the update operation is now running as a background task outside of the Microsoft Store app, allowing the app to be safely suspended while the operation is in progress. Windows will also enforce any runtime requirements and cancel the background task if those requirements are no longer met.
 </div>
 <div>
  
@@ -371,7 +371,7 @@ For more information, see [How to get notifications if devices are added, remove
 <td><a href="" id="step17"></a>
 <p><strong>Step 17</strong>—Run Windows App Certification Kit.</p></td>
 <td><p>[Using the Windows App Certification Kit](https://msdn.microsoft.com/library/windows/apps/hh694081)</p>
-<p>Recommended. Running Windows App Certification Kit helps you make sure your app fulfills Windows Store requirements, so you should do this when you've added major functionality to your app.</p></td>
+<p>Recommended. Running Windows App Certification Kit helps you make sure your app fulfills Microsoft Store requirements, so you should do this when you've added major functionality to your app.</p></td>
 </tr>
 </tbody>
 </table>
@@ -388,15 +388,15 @@ Learn more from related samples.
 -   [USB CDC Control sample](http://go.microsoft.com/fwlink/p/?linkid=309716)
 -   [Firmware Update USB Device sample](http://go.microsoft.com/fwlink/p/?linkid=309716)
 
-[Windows Store app UI, start to finish (XAML)](https://msdn.microsoft.com/library/windows/apps/xaml/dn263191)
+[UWP app UI, start to finish (XAML)](https://msdn.microsoft.com/library/windows/apps/xaml/dn263191)
 
-Learn more about designing Windows Store app UI.
+Learn more about designing UWP app UI.
 
-[Roadmap for Windows Store apps using C# and Visual Basic](https://msdn.microsoft.com/library/windows/apps/br229583) and [Roadmap for Windows Store apps using C++](https://msdn.microsoft.com/library/windows/apps/hh700360)
+[Roadmap for UWP apps using C# and Visual Basic](https://msdn.microsoft.com/library/windows/apps/br229583) and [Roadmap for UWP apps using C++](https://msdn.microsoft.com/library/windows/apps/hh700360)
 
-Learn more about creating Windows Store apps using C++, C#, or Visual Basic in general.
+Learn more about creating UWP apps using C++, C#, or Visual Basic in general.
 
-[Asynchronous programming (Windows Store apps)](https://msdn.microsoft.com/library/windows/apps/hh464924)
+[Asynchronous programming (UWP apps)](https://msdn.microsoft.com/library/windows/apps/hh464924)
 
 Learn about how to make your apps stay responsive when they do work that might take an extended amount of time.
 
