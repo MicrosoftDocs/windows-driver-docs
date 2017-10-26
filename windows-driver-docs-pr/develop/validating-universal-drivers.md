@@ -43,6 +43,8 @@ Error   10  error MSB3721: The command ""C:\Program Files (x86)\Windows Kits\10\
     %AdditionalDependencies);$(SDK_LIB_PATH)\OneCoreUAP.lib
     ```
 
+    To review other linker options for targeting OneCore SKUs, see [Building for OneCore](building-for-onecore.md).
+
 2.  Remove or replace the non-universal API calls one at a time and rerun the tool until there are no errors.
 
 3.  In some cases, you can replace these calls with alternate DDIs that are listed on the reference pages for the desktop-only DDI. If you cannot find a suitable replacement, please [submit feedback](http://go.microsoft.com/fwlink/p/?linkid=529549).  You may have to code a workaround if there is not a suitable replacement.  If you need to, write a new Universal Windows driver starting from the driver templates in the WDK.
