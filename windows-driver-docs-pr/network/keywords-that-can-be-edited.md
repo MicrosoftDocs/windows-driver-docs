@@ -34,7 +34,7 @@ HKR, Ndi\params\<SubkeyName>,Max, 0, "<IHV defined>"
 The standard keywords that can be edited are:
 
 <a href="" id="---------jumbopacket"></a> \*JumboPacket  
-The size, in bytes, of the largest supported Jumbo Packet (an Ethernet frame that is greater than 1514 bytes) that the hardware can support. This is also known as a Jumbo Frame. *\*JumboPacket* is a numeric integer, the possible values for which are defined by the IHV in an enumeration.
+The size, in bytes, of the largest supported Jumbo Packet (an Ethernet frame that is greater than 1514 bytes) that the hardware can support. This is also known as a Jumbo Frame. *\*JumboPacket* is an integer value, the possible values and maximum for which are IHV-defined in an enumeration.
 
 <a href="" id="---------receivebuffers"></a> \*ReceiveBuffers  
 The number of receive descriptors used by the miniport adapter. The miniport driver can choose any default value that is appropriate for performance-tuning. Note that if the value is too small, the miniport adapter may run out of receive buffers under heavy load. If the value is too large, system resources are wasted.
