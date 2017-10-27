@@ -10,7 +10,7 @@ keywords:
 - SRC WDK audio , hardware acceleration
 - sample-rate conversion WDK audio , hardware acceleration
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,8 +39,6 @@ This section describes WDM audio driver support for hardware acceleration of Dir
 [Exposing Custom Audio Property Sets](exposing-custom-audio-property-sets.md)
 
 [Prefetch Offsets](prefetch-offsets.md)
-
-[DirectSound Hardware Acceleration in 64-Bit Versions of Windows XP](directsound-hardware-acceleration-in-64-bit-versions-of-windows-xp.md)
 
  
 

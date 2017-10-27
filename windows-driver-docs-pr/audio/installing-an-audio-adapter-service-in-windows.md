@@ -1,6 +1,6 @@
 ---
-title: Installing an Audio Adapter Service in Windows 2000 and Later
-description: Installing an Audio Adapter Service in Windows 2000 and Later
+title: Installing an Audio Adapter Service
+description: Installing an Audio Adapter Service
 ms.assetid: 465005da-bf06-497b-801c-fe5aa19a3974
 keywords:
 - audio adapters WDK , service installations
@@ -8,17 +8,13 @@ keywords:
 - Port Class audio adapters WDK , service installations
 - adapter services WDK audio
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Installing an Audio Adapter Service in Windows 2000 and Later
-
-
-## <span id="installing_an_audio_adapter_service_in_windows_2000_and_later"></span><span id="INSTALLING_AN_AUDIO_ADAPTER_SERVICE_IN_WINDOWS_2000_AND_LATER"></span>
-
+# Installing an Audio Adapter Service in Windows
 
 The following [**INF AddService directive**](https://msdn.microsoft.com/library/windows/hardware/ff546326) installs the adapter driver Xyzaud.sys for the XYZ Audio Device:
 
