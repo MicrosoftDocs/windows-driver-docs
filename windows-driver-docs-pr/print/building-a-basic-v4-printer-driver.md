@@ -80,7 +80,7 @@ Line 2 describes the contents of the driver INF including Manufacturer name and 
 
 For example, if the year is 2017 and your company’s name is Fabrikam, and the print device model is 1234  you would type the following:
 
-```Text
+```
 ; Copyright (c) 2017 Fabrikam
 ; INF file for the Fabrikam 1234 print driver
 ```
@@ -90,11 +90,13 @@ For example, if the year is 2017 and your company’s name is Fabrikam, and the 
 Find the line containing **\[Version\]**.
 
 - Check and make sure that you see this line:
-    ```Text
+
+    ```
     **ClassVer**=4.0
     ```
 - Check and make sure that you see this line:
-    ```Text
+
+    ```
     **Signature**="$WINDOWS NT$"
     ```
 
@@ -104,7 +106,7 @@ Find the line containing **\[SourceDiskFiles\]**.
 
 Below this type the following lines:
 
-```Text
+```
 MyV4PrintDriver.gpd=1
 MyV4PrintDriver-manifest.ini=1
 MyV4PrintDriverRenderFilter-PipelineConfig.xml=1
@@ -117,7 +119,7 @@ Find the line containing **\[DriverFiles\]**.
 
 Below this type the following lines:
 
-```Text
+```
 MyV4PrintDriver.gpd
 MyV4PrintDriver-manifest.ini
 MyV4PrintDriverRenderFilter-PipelineConfig.xml
@@ -130,7 +132,7 @@ Find the line containing **\[Standard.NT$ARCH$\]**.
 
 This section references the Install section of the INF for each model. For example, if the model of your printer is Fabrikam 1234, then you would type the following:
 
-```Text
+```
 "Fabrikam 1234"=DriverInstall, USBPRINT\\Fabrikam1234
 "Fabrikam 1234"=DriverInstall, WSDPRINT\\Fabrikam1234
 ```
@@ -143,13 +145,13 @@ Click **Driver Files**, then in the **Properties** window look at the value for 
 
 In the INF file, in the **\[Standard.NT$ARCH$\]** section, type the following line:
 
-```Text
+```
 "Fabrikam 1234"=DriverInstall,
 ```
 
 And then after the comma, paste the GUID that you copied in the preceding step. The completed **\[Standard.NT$ARCH$\]** section should look like the following:
 
-```Text
+```
 "Fabrikam 1234"=DriverInstall, {GUID}
 "Fabrikam 1234"=DriverInstall, USBPRINT\Fabrikam1234
 "Fabrikam 1234"=DriverInstall, WSDPRINT\Fabrikam1234
@@ -163,7 +165,7 @@ Below this you will find the definition of the *ManufacturerName* string. Replac
 
 For example, if your company’s name is Fabrikam, you would type the following:
 
-```Text
+```
 ManufacturerName="Fabrikam"
 ```
 
@@ -171,7 +173,7 @@ ManufacturerName="Fabrikam"
 
 When you complete the INF file, it should look like the following:
 
-```Text
+```
 ; Copyright (c) 2017 Fabrikam
 ; INF file for the Fabrikam 1234 print driver
 
