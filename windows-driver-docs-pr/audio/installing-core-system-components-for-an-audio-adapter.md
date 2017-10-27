@@ -7,7 +7,7 @@ keywords:
 - adapter drivers WDK audio , system components
 - Port Class audio adapters WDK , system components
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -21,7 +21,7 @@ ms.technology: windows-devices
 
 This section includes the following topics about installing the core system components for a port-class audio adapter:
 
-[Installing in Windows 2000 and Later](installing-in-windows-2000-and-later.md)
+[Installing in Windows](installing-in-windows.md)
 
 The [**INF DDInstall section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) for each hardware ID specified in the manufacture's **MODEL** section should specify the inclusion of the **KS.Registration** section in Ks.inf and the **WDMAUDIO.Registration** section in Wdmaudio.inf. The Ks.inf file installs the core kernel streaming components. The Wdmaudio.inf file installs the core WDM audio components. Vendors should not modify or replace these system INF files.
 
