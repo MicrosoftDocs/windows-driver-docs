@@ -278,6 +278,16 @@ Device.ExtensionDesc     = "Sample Extension Device"
 FilterSample.ServiceDesc = "Sample Upper Filter"
 ```
 
+##  Submitting an extension INF for certification
+
+This section describes how to certify a base driver and related extension INF file.
+There are two options:
+
+1.	Test the base driver and generate a digitally signed .hlkx file (submission package).  Submit it twice:
+    *  First, submit the .hlkx package with the base drivers in the drivers folder. Do not include your extension INF file in this submission.
+    *  Next, remove the base drivers from the drivers folder and add the extension INF template instead.  If additional binaries are required for the extension INF, add these as well.  Resubmit the .hlkx package. If extension INF changes are required later, open a Driver Update Acceptable (DUA) request on this submission. 
+2.	Alternatively, create a custom extension INF without a template. In this case, the extension INF is treated like a completely new driver. Run a full HLK test pass against the device and submit the resulting logs along with the extension INF.
+
 ## Related topics
 
 * [Universal Driver Scenarios](../develop/universal-driver-scenarios.md)
