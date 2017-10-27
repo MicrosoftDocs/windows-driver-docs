@@ -80,20 +80,23 @@ Line 2 describes the contents of the driver INF including Manufacturer name and 
 
 For example, if the year is 2017 and your company’s name is Fabrikam, and the print device model is 1234  you would type the following:
 
-```
+```Text
 ; Copyright (c) 2017 Fabrikam
 ; INF file for the Fabrikam 1234 print driver
 ```
 
 #### 2. Verfy the **\[Version\]** section is correct
 
-Find the line containing **\[Version\]**
+Find the line containing **\[Version\]**.
 
-Check and make sure that you see this line:
-**ClassVer**=4.0
-
-Check and make sure that you see this line:
-**Signature**="$WINDOWS NT$"
+- Check and make sure that you see this line:
+    ```Text
+    **ClassVer**=4.0
+    ```
+- Check and make sure that you see this line:
+    ```Text
+    **Signature**="$WINDOWS NT$"
+    ```
 
 #### 3. Configure the **\[SourceDiskFiles\]** section
 
@@ -101,7 +104,7 @@ Find the line containing **\[SourceDiskFiles\]**.
 
 Below this type the following lines:
 
-```
+```Text
 MyV4PrintDriver.gpd=1
 MyV4PrintDriver-manifest.ini=1
 MyV4PrintDriverRenderFilter-PipelineConfig.xml=1
@@ -114,7 +117,7 @@ Find the line containing **\[DriverFiles\]**.
 
 Below this type the following lines:
 
-```
+```Text
 MyV4PrintDriver.gpd
 MyV4PrintDriver-manifest.ini
 MyV4PrintDriverRenderFilter-PipelineConfig.xml
@@ -127,7 +130,7 @@ Find the line containing **\[Standard.NT$ARCH$\]**.
 
 This section references the Install section of the INF for each model. For example, if the model of your printer is Fabrikam 1234, then you would type the following:
 
-```
+```Text
 "Fabrikam 1234"=DriverInstall, USBPRINT\\Fabrikam1234
 "Fabrikam 1234"=DriverInstall, WSDPRINT\\Fabrikam1234
 ```
@@ -140,13 +143,13 @@ Click **Driver Files**, then in the **Properties** window look at the value for 
 
 In the INF file, in the **\[Standard.NT$ARCH$\]** section, type the following line:
 
-```
+```Text
 "Fabrikam 1234"=DriverInstall,
 ```
 
 And then after the comma, paste the GUID that you copied in the preceding step. The completed **\[Standard.NT$ARCH$\]** section should look like the following:
 
-```
+```Text
 "Fabrikam 1234"=DriverInstall, {GUID}
 "Fabrikam 1234"=DriverInstall, USBPRINT\Fabrikam1234
 "Fabrikam 1234"=DriverInstall, WSDPRINT\Fabrikam1234
@@ -160,7 +163,7 @@ Below this you will find the definition of the *ManufacturerName* string. Replac
 
 For example, if your company’s name is Fabrikam, you would type the following:
 
-```
+```Text
 ManufacturerName="Fabrikam"
 ```
 
@@ -168,7 +171,7 @@ ManufacturerName="Fabrikam"
 
 When you complete the INF file, it should look like the following:
 
-```
+```Text
 ; Copyright (c) 2017 Fabrikam
 ; INF file for the Fabrikam 1234 print driver
 
@@ -217,15 +220,15 @@ DiskName="MyV4PrintDriver Installation Disk"
 
 ### Update the **Driver Files** list
 
-1. In Visual Studio, in the Solution Explorer, expand the *MyV4PrinterDriver* node
+1. In Visual Studio, in the Solution Explorer, expand the *MyV4PrinterDriver* node.
 
-2. Select the file MyV4PrintDriver.gpd and drag it to the **Driver Files** node
+2. Select the file MyV4PrintDriver.gpd and drag it to the **Driver Files** node.
 
-3. Do the same with MyV4PrintDriver-manifest.ini
+3. Do the same with MyV4PrintDriver-manifest.ini.
 
 ### Add the Pipeline Config file to the driver package
 
-1. In the Solution Explorer, right-click *MyV4PrintDriver* project, then click **Properties**
+1. In the Solution Explorer, right-click *MyV4PrintDriver* project, then click **Properties**.
 
 2. In the **MyV4PrintDriver Property Pages** window, expand **Configuration Properties** in the left pane.
 
@@ -237,11 +240,11 @@ DiskName="MyV4PrintDriver Installation Disk"
 
 ### Add a reference to the render filter to the driver package 
 
-1. In Visual Studio, in the Solution Explorer, expand the *MyV4PrinterDriver* node
+1. In Visual Studio, in the Solution Explorer, expand the *MyV4PrinterDriver* node.
 
-2. Right click the **References** node -> select **Add Reference**
+2. Right click the **References** node -> select **Add Reference**.
 
-3. Click the check box for *MyV4PrintDriver Render Filter*, then click **OK**
+3. Click the check box for *MyV4PrintDriver Render Filter*, then click **OK**.
 
 ### Configure the driver solution for debugging and deployment
 
