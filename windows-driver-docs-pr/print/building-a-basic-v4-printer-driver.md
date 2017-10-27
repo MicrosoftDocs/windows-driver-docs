@@ -78,7 +78,7 @@ Line 1 contains the year and name of your company. Replace the characters YYYY w
 
 Line 2 describes the contents of the driver INF including Manufacturer name and device Model information. Replace the characters &lt;Your manufacturer name&gt; with the name of your company and replace the characters of &lt;Printer Model&gt; with the model name of the printer supported by the driver.
 
-For example, if the year is 2017 and your company’s name is Fabrikam, and the print device model is 1234  you would type the following:
+For example, if the year is 2017 and your company’s name is Fabrikam, and the print device model is 1234 you would type the following:
 
 ```
 ; Copyright (c) 2017 Fabrikam
