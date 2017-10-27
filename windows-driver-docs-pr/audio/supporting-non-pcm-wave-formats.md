@@ -10,7 +10,7 @@ keywords:
 - PCM formats WDK audio
 - audio non-PCM formats WDK
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -20,11 +20,6 @@ ms.technology: windows-devices
 
 
 ## <span id="supporting_non_pcm_wave_formats"></span><span id="SUPPORTING_NON_PCM_WAVE_FORMATS"></span>
-
-
-In Microsoft Windows 2000 and Windows 98, the WDM audio framework did not allow Windows clients to use the standard audio APIs (waveOut, DirectSound, and DirectShow) to play non-PCM audio data through the PortCls system driver.
-
-This limitation has been removed in Microsoft Windows XP and later, and Windows Millennium Edition, which can play audio data encoded in a non-PCM format such as AC-3 or WMA Pro. In addition, a hot-fix package is available for Windows 98 SE that contains all fixes necessary to play non-PCM data through the waveOut and DirectSound APIs. Service Pack 2 for Windows 2000 also contains these fixes.
 
 This section describes limitations in earlier versions of Windows that prevented clients from playing non-PCM audio, and presents a set of guidelines for adapting a WDM audio driver to support non-PCM data formats on more recent versions of Windows.
 
@@ -54,7 +49,6 @@ This section includes the following topics:
 
 [USB Audio Support for Non-PCM Formats](usb-audio-support-for-non-pcm-formats.md)
 
-[Additional Requirements for Windows 98](additional-requirements-for-windows-98.md)
 
  
 
