@@ -78,7 +78,7 @@ Line 1 contains the year and name of your company. Replace the characters YYYY w
 
 Line 2 describes the contents of the driver INF including Manufacturer name and device Model information. Replace the characters &lt;Your manufacturer name&gt; with the name of your company and replace the characters of &lt;Printer Model&gt; with the model name of the printer supported by the driver.
 
-For example, if the year is 2017 and your company’s name is Fabrikam, and the print device model is 1234  you would type the following:
+For example, if the year is 2017 and your company’s name is Fabrikam, and the print device model is 1234 you would type the following:
 
 ```
 ; Copyright (c) 2017 Fabrikam
@@ -87,13 +87,18 @@ For example, if the year is 2017 and your company’s name is Fabrikam, and the 
 
 #### 2. Verfy the **\[Version\]** section is correct
 
-Find the line containing **\[Version\]**
+Find the line containing **\[Version\]**.
 
-Check and make sure that you see this line:
-**ClassVer**=4.0
+- Check and make sure that you see this line:
 
-Check and make sure that you see this line:
-**Signature**="$WINDOWS NT$"
+    ```
+    **ClassVer**=4.0
+    ```
+- Check and make sure that you see this line:
+
+    ```
+    **Signature**="$WINDOWS NT$"
+    ```
 
 #### 3. Configure the **\[SourceDiskFiles\]** section
 
@@ -217,15 +222,15 @@ DiskName="MyV4PrintDriver Installation Disk"
 
 ### Update the **Driver Files** list
 
-1. In Visual Studio, in the Solution Explorer, expand the *MyV4PrinterDriver* node
+1. In Visual Studio, in the Solution Explorer, expand the *MyV4PrinterDriver* node.
 
-2. Select the file MyV4PrintDriver.gpd and drag it to the **Driver Files** node
+2. Select the file MyV4PrintDriver.gpd and drag it to the **Driver Files** node.
 
-3. Do the same with MyV4PrintDriver-manifest.ini
+3. Do the same with MyV4PrintDriver-manifest.ini.
 
 ### Add the Pipeline Config file to the driver package
 
-1. In the Solution Explorer, right-click *MyV4PrintDriver* project, then click **Properties**
+1. In the Solution Explorer, right-click *MyV4PrintDriver* project, then click **Properties**.
 
 2. In the **MyV4PrintDriver Property Pages** window, expand **Configuration Properties** in the left pane.
 
@@ -237,11 +242,11 @@ DiskName="MyV4PrintDriver Installation Disk"
 
 ### Add a reference to the render filter to the driver package 
 
-1. In Visual Studio, in the Solution Explorer, expand the *MyV4PrinterDriver* node
+1. In Visual Studio, in the Solution Explorer, expand the *MyV4PrinterDriver* node.
 
-2. Right click the **References** node -> select **Add Reference**
+2. Right click the **References** node -> select **Add Reference**.
 
-3. Click the check box for *MyV4PrintDriver Render Filter*, then click **OK**
+3. Click the check box for *MyV4PrintDriver Render Filter*, then click **OK**.
 
 ### Configure the driver solution for debugging and deployment
 

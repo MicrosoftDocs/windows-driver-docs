@@ -16,7 +16,7 @@ keywords:
 - WAVEFORMATEX structure
 - WDM audio data formats WDK
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -163,9 +163,6 @@ The subset of WAVEFORMATEX PCM formats that KMixer supports differs between Wind
 </table>
 
  
-
-KMixer limits WAVEFORMATEX formats to only one or two channels in all versions of Windows except Windows 98 "Gold". The same limitations in sample size and number of channels apply to PCMWAVEFORMAT because it is equivalent to WAVEFORMATEX for PCM formats. For more information about Windows 98 SE + hotfix, see [Additional Requirements for Windows 98](additional-requirements-for-windows-98.md).
-
 In WAVEFORMATEXTENSIBLE, **dwBitsPerSample** is the container size, and **wValidBitsPerSample** is the number of valid data bits per sample. Containers are always byte-aligned in memory, and the container size must be specified as a multiple of eight bits.
 
 Before the WAVEFORMATEXTENSIBLE structure was defined, vendors had to register each new wave format with Microsoft so that an official, 16-bit format tag could be assigned to the format. (The format tag is contained in the **wFormatTag** member of the WAVEFORMATEX structure.) A list of registered format tags appears in public header file Mmreg.h (for example, WAVE\_FORMAT\_MPEG).

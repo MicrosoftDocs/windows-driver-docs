@@ -11,7 +11,7 @@ For more information about debugging with previous versions of Windows, see thes
 
 -   [Debugging Tools For Windows: What's New](debugging-tools-for-windows--what-s-new.md)
 -   [Debugging Tools For Windows8 Release Notes](debugging-tools-for-windows8-release-notes.md)
--   [Debugging Windows XP and Windows Vista](debugging-windows-xp-and-windows-vista.md)
+-   [Debugging Windows Vista](debugging-windows-vista.md)
 -   [Debugging Using Visual Studio](debugging-using-visual-studio.md)
 -   [Setting Up Kernel-Mode Debugging in Visual Studio](setting-up-kernel-mode-debugging-in-visual-studio.md)
 
