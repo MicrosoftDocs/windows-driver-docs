@@ -1,7 +1,7 @@
 ---
 title: OID_GEN_PROTOCOL_OPTIONS
 author: windows-driver-content
-description: As a set, the OID\_GEN\_PROTOCOL\_OPTIONS OID specifies a bitmask that defines optional properties of the protocol driver.
+description: As a set, the OID_GEN_PROTOCOL_OPTIONS OID specifies a bitmask that defines optional properties of the protocol driver.
 ms.assetid: 48c3468b-2d8b-48cb-9a25-19470923f582
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

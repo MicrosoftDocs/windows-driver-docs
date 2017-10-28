@@ -1,7 +1,7 @@
 ---
 title: HS_PLUGIN_HOST_NAME structure
 author: windows-driver-content
-description: The HS\_PLUGIN\_HOST\_NAME structure contains the host name.
+description: The HS_PLUGIN_HOST_NAME structure contains the host name.
 ms.assetid: 3995fff6-6992-4dd6-a94c-a27b2ee44436
 keywords: 
 - HS_PLUGIN_HOST_NAME structure Network Drivers Starting with Windows Vista

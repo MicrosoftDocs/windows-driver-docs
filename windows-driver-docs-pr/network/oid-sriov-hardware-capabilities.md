@@ -1,7 +1,7 @@
 ---
 title: OID_SRIOV_HARDWARE_CAPABILITIES
 author: windows-driver-content
-description: An overlying driver issues an object identifier (OID) query request of OID\_SRIOV\_HARDWARE\_CAPABILITIES to obtain the single root I/O virtualization (SR-IOV) hardware capabilities of the network adapter.
+description: An overlying driver issues an object identifier (OID) query request of OID_SRIOV_HARDWARE_CAPABILITIES to obtain the single root I/O virtualization (SR-IOV) hardware capabilities of the network adapter.
 ms.assetid: EEF99105-BBDC-4093-8B11-D27F13B1A3D0
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_SUPPORTED_COUNTRY_OR_REGION_STRING
 author: windows-driver-content
-description: When queried, the OID\_DOT11\_SUPPORTED\_COUNTRY\_OR\_REGION\_STRING object identifier (OID) requests that the miniport driver return a list of the country strings identifying the regulatory domains supported by the 802.11 station.
+description: When queried, the OID_DOT11_SUPPORTED_COUNTRY_OR_REGION_STRING object identifier (OID) requests that the miniport driver return a list of the country strings identifying the regulatory domains supported by the 802.11 station.
 ms.assetid: a8efc910-898a-4790-9da8-79d216c7ccff
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

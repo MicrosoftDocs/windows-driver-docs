@@ -1,7 +1,7 @@
 ---
 title: eHS_UNLOAD_REASON enumeration
 author: windows-driver-content
-description: The eHS\_UNLOAD\_REASON enumeration indicates the reason for the plugin to get unloaded.
+description: The eHS_UNLOAD_REASON enumeration indicates the reason for the plugin to get unloaded.
 ms.assetid: 1e658dd3-f66d-4803-ad3c-84bfa1890a86
 keywords: 
 - eHS_UNLOAD_REASON enumeration Network Drivers Starting with Windows Vista

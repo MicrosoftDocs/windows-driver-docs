@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_AVAILABLE_FREQUENCY_LIST
 author: windows-driver-content
-description: OID\_DOT11\_AVAILABLE\_FREQUENCY\_LIST
+description: OID_DOT11_AVAILABLE_FREQUENCY_LIST
 ms.assetid: f4531c27-c818-4eed-bbf5-d8e8032167ac
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

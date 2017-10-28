@@ -1,7 +1,7 @@
 ---
 title: OID_GEN_RCV_ERROR
 author: windows-driver-content
-description: As a query, the OID\_GEN\_RCV\_ERROR OID specifies the number of frames that a NIC receives but does not indicate to the protocols due to errors.
+description: As a query, the OID_GEN_RCV_ERROR OID specifies the number of frames that a NIC receives but does not indicate to the protocols due to errors.
 ms.assetid: 0481f225-869f-4313-9bc5-7af1de0b7d2d
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

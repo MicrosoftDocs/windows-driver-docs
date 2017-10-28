@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_PMKID_LIST
 author: windows-driver-content
-description: When set, the OID\_DOT11\_PMKID\_LIST object identifier (OID) requests that the miniport driver flush its cache of pairwise master key identifiers (PMKIDs) and add the PMKID entries from the specified list to its cache.
+description: When set, the OID_DOT11_PMKID_LIST object identifier (OID) requests that the miniport driver flush its cache of pairwise master key identifiers (PMKIDs) and add the PMKID entries from the specified list to its cache.
 ms.assetid: 815a29e6-29f6-4a7d-82cb-40d4d6cedc25
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

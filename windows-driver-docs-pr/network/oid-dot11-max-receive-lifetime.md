@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_MAX_RECEIVE_LIFETIME
 author: windows-driver-content
-description: OID\_DOT11\_MAX\_RECEIVE\_LIFETIME
+description: OID_DOT11_MAX_RECEIVE_LIFETIME
 ms.assetid: 1126bda6-aca9-41ec-8a31-2d6a1a6e3a89
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

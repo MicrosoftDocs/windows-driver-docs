@@ -1,7 +1,7 @@
 ---
 title: OID_WWAN_PROVISIONED_CONTEXTS
 author: windows-driver-content
-description: OID\_WWAN\_PROVISIONED\_CONTEXTS reads or updates the provisioned context entries stored on the MB device or the Subscriber Identity Module (SIM).
+description: OID_WWAN_PROVISIONED_CONTEXTS reads or updates the provisioned context entries stored on the MB device or the Subscriber Identity Module (SIM).
 ms.assetid: 7634fc32-9059-4f89-a591-7aa663b0c188
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

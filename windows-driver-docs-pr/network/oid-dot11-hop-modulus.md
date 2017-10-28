@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_HOP_MODULUS
 author: windows-driver-content
-description: OID\_DOT11\_HOP\_MODULUS
+description: OID_DOT11_HOP_MODULUS
 ms.assetid: 07061c13-58b0-4e4d-9f24-7b4f5811e087
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

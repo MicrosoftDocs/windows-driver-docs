@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_DESIRED_SSID_LIST
 author: windows-driver-content
-description: When set, the OID\_DOT11\_DESIRED\_SSID\_LIST object identifier (OID) requests that the miniport driver set the value of the msDot11DesiredSSIDList management information base (MIB) object to the specified data.
+description: When set, the OID_DOT11_DESIRED_SSID_LIST object identifier (OID) requests that the miniport driver set the value of the msDot11DesiredSSIDList management information base (MIB) object to the specified data.
 ms.assetid: a04d7f5a-d262-4a2a-b439-d311a300a574
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

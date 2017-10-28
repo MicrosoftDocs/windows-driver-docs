@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_ENUM_BSS_LIST
 author: windows-driver-content
-description: OID\_DOT11\_ENUM\_BSS\_LIST
+description: OID_DOT11_ENUM_BSS_LIST
 ms.assetid: eaf6f81f-f420-4027-a45d-3c935c1b8b07
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

@@ -1,7 +1,7 @@
 ---
 title: NDIS_STATUS_DOT11_INCOMING_ASSOC_REQUEST_RECEIVED
 author: windows-driver-content
-description: NDIS\_STATUS\_DOT11\_INCOMING\_ASSOC\_REQUEST\_RECEIVED
+description: NDIS_STATUS_DOT11_INCOMING_ASSOC_REQUEST_RECEIVED
 ms.assetid: 03210984-acf8-40b7-8414-1b984cef9dc7
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

@@ -1,7 +1,7 @@
 ---
 title: OID_WWAN_NETWORK_IDLE_HINT
 author: windows-driver-content
-description: OID\_WWAN\_NETWORK\_IDLE\_HINT sends a hint to the network interface regarding whether data is expected to be active or idle on the interface.
+description: OID_WWAN_NETWORK_IDLE_HINT sends a hint to the network interface regarding whether data is expected to be active or idle on the interface.
 ms.assetid: 1FE758C1-543A-45B4-A377-336A1307689F
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

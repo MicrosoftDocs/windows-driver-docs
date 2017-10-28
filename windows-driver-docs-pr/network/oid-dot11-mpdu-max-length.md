@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_MPDU_MAX_LENGTH
 author: windows-driver-content
-description: OID\_DOT11\_MPDU\_MAX\_LENGTH
+description: OID_DOT11_MPDU_MAX_LENGTH
 ms.assetid: f278f5ec-ad01-41e8-ab14-a245d46f127e
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_WFD_SEND_INVITATION_REQUEST
 author: windows-driver-content
-description: When set, the OID\_DOT11\_WFD\_SEND\_INVITATION\_REQUEST object identifier (OID) is sent to the miniport driver with the parameters for an invitation request.
+description: When set, the OID_DOT11_WFD_SEND_INVITATION_REQUEST object identifier (OID) is sent to the miniport driver with the parameters for an invitation request.
 ms.assetid: 1612EE79-FF44-4FC5-9266-39314E511BD0
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

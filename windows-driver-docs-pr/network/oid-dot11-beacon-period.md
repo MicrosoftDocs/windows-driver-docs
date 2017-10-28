@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_BEACON_PERIOD
 author: windows-driver-content
-description: OID\_DOT11\_BEACON\_PERIOD
+description: OID_DOT11_BEACON_PERIOD
 ms.assetid: fbb19209-e0dc-44cf-9ebf-60262036ccdc
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

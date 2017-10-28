@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_WFD_GROUP_JOIN_PARAMETERS
 author: windows-driver-content
-description: When set, the OID\_DOT11\_WFD\_GROUP\_JOIN\_PARAMETERS object identifier (OID) provides the parameters for a Wi-Fi Direct (WFD) client join request.
+description: When set, the OID_DOT11_WFD_GROUP_JOIN_PARAMETERS object identifier (OID) provides the parameters for a Wi-Fi Direct (WFD) client join request.
 ms.assetid: 8BA9DC85-41DA-4021-BFBC-2C64A38146E9
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

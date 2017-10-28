@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_CURRENT_SET
 author: windows-driver-content
-description: OID\_DOT11\_CURRENT\_SET
+description: OID_DOT11_CURRENT_SET
 ms.assetid: 8cf7fc2f-8fac-4203-8281-87e96f3cc098
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

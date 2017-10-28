@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_PREFERRED_MAC
 author: windows-driver-content
-description: OID\_DOT11\_PREFERRED\_MAC
+description: OID_DOT11_PREFERRED_MAC
 ms.assetid: 35e28d86-e546-4805-bdc5-73e0e775c8e6
 ms.author: windowsdriverdev
 ms.date: 08/08/2017
