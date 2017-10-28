@@ -1,25 +1,22 @@
 ---
-title: Installing in Windows 2000 and Later
-description: Installing in Windows 2000 and Later
+title: Installing in Windows
+description: Installing in Windows
 ms.assetid: 790caffd-ebb0-4ba1-b31c-b03d3c83bc59
 keywords:
 - audio adapters WDK , system components
 - adapter drivers WDK audio , system components
 - Port Class audio adapters WDK , system components
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Installing in Windows 2000 and Later
+# Installing in Windows
 
 
-## <span id="installing_in_windows_2000_and_later"></span><span id="INSTALLING_IN_WINDOWS_2000_AND_LATER"></span>
-
-
-In the following example of an INF device-driver-installation section, the two directives add the system-driver information that installs the core system components for an audio adapter in Windows 2000 and later:
+In the following example of an INF device-driver-installation section, the two directives add the system-driver information that installs the core system components for an audio adapter in Windows:
 
 ```
   [XYZ-Audio-Device.Registration.NTX86]
