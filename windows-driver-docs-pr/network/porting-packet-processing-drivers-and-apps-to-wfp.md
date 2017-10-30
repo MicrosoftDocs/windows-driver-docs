@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 Windows Filtering Platform (WFP) enables TCP/IP packet filtering, inspection, and modification, connection monitoring or authorization, IPsec rules and processing, and RPC filtering. Generally, you must convert your TCP/IP filtering or connection monitoring component in Windows XP and Windows Server 2003 to use a WFP user-mode application or service, a WFP kernel-mode callout driver, or both for Windows Vista and Windows Server 2008 and later. The following table lists the existing methods for packet processing in Windows XP and Windows Server 2003 and how you must change them in Windows Vista and Windows Server 2008 and later to use WFP.
 
-**Note**  As of Windows 8, the TDI feature is deprecated.
+**Note**  As of Windows 8, the Transport Driver Interface (TDI) feature and Layered Service Providers (LSPs) feature are deprecated.
 
  
 
