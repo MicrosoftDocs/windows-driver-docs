@@ -17,7 +17,7 @@ Windows 8, Windows 8.1, and Windows 10 modify operating system behavior for m
 
 By leveraging the features that are described in this topic, a device manufacturer can provide the appropriate feedback to Windows about the second hop and thereby enable these features to function correctly when the mobile broadband interface is not directly attached to the computer.
 
-In collaboration with the operator, a manufacturer can optionally offer a Windows Store mobile broadband app that allows the user to reference their account, including data usage.
+In collaboration with the operator, a manufacturer can optionally offer a UWP mobile broadband app that allows the user to reference their account, including data usage.
 
 The following topics are available in this section:
 

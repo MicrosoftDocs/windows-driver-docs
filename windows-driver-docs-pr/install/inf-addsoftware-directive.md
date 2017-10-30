@@ -64,7 +64,7 @@ Any software installed using **AddSoftware** must be installed silently (or quie
 
 Specifies the type of software installation.
 
-A value of 1 indicates that the associated software is an MSI or EXE binary.  When this value is set, the **SoftwareBinary** entry is also required.  Note that a value of 1 is not supported on Windows 10 S.  Starting in Windows 10 version 1709, a value of 2 indicates that the associated software is a Windows Store link.
+A value of 1 indicates that the associated software is an MSI or EXE binary.  When this value is set, the **SoftwareBinary** entry is also required.  Note that a value of 1 is not supported on Windows 10 S.  Starting in Windows 10 version 1709, a value of 2 indicates that the associated software is a Microsoft Store link.
 
 **SoftwareBinary**=*filename*
 
@@ -117,7 +117,7 @@ Specifies the software version.  Each value should not exceed 65535.  When the s
 
 **SoftwareID**=*x.y.z*
 
-Specifies a Windows Store identifier and identifier type.  Currently, only Package Family Name (PFN) is supported.  Use a PFN to reference a Universal Windows Platform (UWP) app using the form `pfn://<x.y.z>`.
+Specifies a Microsoft Store identifier and identifier type.  Currently, only Package Family Name (PFN) is supported.  Use a PFN to reference a Universal Windows Platform (UWP) app using the form `pfn://<x.y.z>`.
 
 <!--add link to related page in UWP docs once it is available-->
 

@@ -50,7 +50,7 @@ PROBLEM CODE 28 for the MUTT Pack device indicates that no driver is loaded for 
 
 **Change the personality of a MUTT device**
 
-MUTT devices are also used as test devices for the [USB Windows Store app sample](http://go.microsoft.com/fwlink/p/?linkid=309716). For that scenario, the firmware must be updated by running the `-SetWinRTUsb` option. In this exercise, SuperMUTT device is set to WinRT personality.
+MUTT devices are also used as test devices for the [USB UWP app sample](http://go.microsoft.com/fwlink/p/?linkid=309716). For that scenario, the firmware must be updated by running the `-SetWinRTUsb` option. In this exercise, SuperMUTT device is set to WinRT personality.
 
 To change it back to MUTT personality, use this command:
 

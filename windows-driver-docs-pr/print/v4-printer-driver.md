@@ -27,7 +27,7 @@ The v4 print driver model is also optimized for several new scenarios including 
 
 -   Windows 8 scenarios
 
-    Windows Store apps present new design considerations regarding UI behavior and security context. So a printer driver model was needed that would provide deeply integrated support for this new environment. The v4 print driver model provides the only way for printer manufacturers to provide customized Print Preferences experiences or Printer Notification experiences in Windows Store apps.
+    UWP apps present new design considerations regarding UI behavior and security context. So a printer driver model was needed that would provide deeply integrated support for this new environment. The v4 print driver model provides the only way for printer manufacturers to provide customized Print Preferences experiences or Printer Notification experiences in UWP apps.
 
 -   Printer sharing
 

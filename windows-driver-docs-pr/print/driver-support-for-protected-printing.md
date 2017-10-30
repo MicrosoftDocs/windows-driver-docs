@@ -36,7 +36,7 @@ If you're working with a v4 driver, you have to make changes to the generic prin
 -   Driver configuration file (GPD or PPD)
 -   XPS rendering filters
 -   Printer extensions
--   Windows Store device apps
+-   UWP device apps
 
 **Note**  You can use a v3 driver with the Print Schema keywords for protected printing, as long as you make the required changes in your PTProvider code. But the steps for making those changes are outside the scope of this topic.
 
@@ -278,9 +278,9 @@ The Microsoft recommendation is that, to minimize the rendering requirements on 
 
 Printer extensions should be able to display a control for protected printing in their print preferences UI. This ensures that users of desktop apps can configure the protected printing feature when using the printer extension. Microsoft is making changes that will allow the [**IPrintSchemaTicket**](https://msdn.microsoft.com/library/windows/hardware/hh451398) family of APIs to support protected printing from printer extensions.
 
-**Windows Store device apps**
+**UWP device apps**
 
-Microsoft is also making changes to allow the [**IPrintSchemaTicket**](https://msdn.microsoft.com/library/windows/hardware/hh451398) family of APIs to work with Windows Store device apps to display a control for protected printing in their print preferences UI.
+Microsoft is also making changes to allow the [**IPrintSchemaTicket**](https://msdn.microsoft.com/library/windows/hardware/hh451398) family of APIs to work with UWP device apps to display a control for protected printing in their print preferences UI.
 
  
 

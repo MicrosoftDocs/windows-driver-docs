@@ -76,6 +76,8 @@ Here are the entries you need to define an INF as an extension INF.
     ExtensionId = {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz} ; replace with your own GUID
     ```
 
+Note that an organization may only use an **ExtensionID** that it owns.  For information on how to register an Extension ID, see [Register an extension ID for your extension INF submission](../dashboard/manage-your-hardware-submissions.md#register-an-extension-id-for-your-extension-inf-submission).     
+
 3.  If you are updating an extension INF, keep the **ExtensionId** the same and increment the version or date (or both) specified by the [**DriverVer**](inf-driverver-directive.md) directive. For a given **ExtensionId** value, PnP selects the INF with the highest **DriverVer**.
 
 4.  In the [**INF Models section**](inf-models-section.md), specify one or more hardware and compatible IDs that match those of the target device.  Note that these hardware and compatible IDs do not need to match those of the base INF.  Typically, an extension INF lists a more specific hardware ID than the base INF, with the goal of further specializing a specific driver configuration.  For example, the base INF might use a two-part PCI hardware ID, while the extension INF specifies a four-part PCI hardware ID, like the following:
@@ -275,6 +277,16 @@ CONTOSO                  = "Contoso"
 Device.ExtensionDesc     = "Sample Extension Device"
 FilterSample.ServiceDesc = "Sample Upper Filter"
 ```
+
+##  Submitting an extension INF for certification
+
+This section describes how to certify a base driver and related extension INF file.
+There are two options:
+
+1.	Test the base driver and generate a digitally signed .hlkx file (submission package).  Submit it twice:
+    *  First, submit the .hlkx package with the base drivers in the drivers folder. Do not include your extension INF file in this submission.
+    *  Next, remove the base drivers from the drivers folder and add the extension INF template instead.  If additional binaries are required for the extension INF, add these as well.  Resubmit the .hlkx package. If extension INF changes are required later, open a Driver Update Acceptable (DUA) request on this submission. 
+2.	Alternatively, create a custom extension INF without a template. In this case, the extension INF is treated like a completely new driver. Run a full HLK test pass against the device and submit the resulting logs along with the extension INF.
 
 ## Related topics
 

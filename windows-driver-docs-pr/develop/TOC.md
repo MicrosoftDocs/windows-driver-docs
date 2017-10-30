@@ -2,6 +2,7 @@
 # [Getting Started with Universal Drivers](getting-started-with-universal-drivers.md)
 ## [Building a Universal Windows driver](building-a-universal-driver.md)
 ## [Validating Universal Drivers](validating-universal-drivers.md)
+## [Building for OneCore](building-for-onecore.md)
 ## [Universal Driver Scenarios](universal-driver-scenarios.md)
 ## [Debugging a Universal driver](debugging-a-universal-driver.md)
 ## [Target platform on MSDN driver reference pages](windows-10-editions-for-universal-drivers.md)

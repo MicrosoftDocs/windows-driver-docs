@@ -34,7 +34,7 @@ You can [certify your devices and apps for hardware certification](http://go.mic
 </tr>
 <tr class="even">
 <td><img src="images/b-wes-home-4.jpg" alt="Device Metadata" /></td>
-<td><p>Include device metadata in your hardware package to specify things about your device, like graphics and Windows Store device apps. To change or add device metadata, use the Device Metadata page.</p></td>
+<td><p>Include device metadata in your hardware package to specify things about your device, like graphics and UWP device apps. To change or add device metadata, use the Device Metadata page.</p></td>
 </tr>
 <tr class="odd">
 <td><img src="images/filesigningservices.png" alt="B_WES_HOME_9" /></td>

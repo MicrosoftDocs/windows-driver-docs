@@ -1,6 +1,6 @@
 ---
-title: Step 4 Test the device metadata for your Windows Store device app
-description: This topic describes how you can test device metadata for your Windows Store device app locally before you submit it to the Windows Dev Center Dashboard.
+title: Step 4 Test the device metadata for your UWP device app
+description: This topic describes how you can test device metadata for your UWP device app locally before you submit it to the Windows Dev Center Dashboard.
 ms.assetid: C1DA36DE-DB89-4A2A-8B9F-DF2A279D3EDD
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -9,16 +9,16 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Step 4: Test the device metadata for your Windows Store device app
+# Step 4: Test the device metadata for your UWP device app
 
 
 ![device app workflow, step 4](images/4-device-app-workflow.png)
 
-This topic describes how you can test device metadata for your Windows Store device app locally before you submit it to the Windows Dev Center Dashboard.
+This topic describes how you can test device metadata for your UWP device app locally before you submit it to the Windows Dev Center Dashboard.
 
-A Windows Store device app is a special kind of Windows Store app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations and automatically install when a device is plugged in. For more info about Windows Store device apps, see [Meet Windows Store device apps](meet-windows-store-device-apps.md).
+A UWP device app is a special kind of UWP app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations and automatically install when a device is plugged in. For more info about UWP device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-**Note**  This topic is part of a step-by-step series. See [Build a Windows Store device app step-by-step](build-a-windows-store-device-app-step-by-step.md) for the introduction.
+**Note**  This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
 
  
 
@@ -27,7 +27,7 @@ A Windows Store device app is a special kind of Windows Store app that device ma
 
 You can deploy device metadata to the local device metadata store on a local computer so you can test that your device works properly with it. Once device metadata is deployed, it should act the same way as it would if it were submitted to the Windows Dev Center Dashboard. For example, if AutoPlay is enabled for a device in the device metadata, the AutoPlay handler should work when the device is plugged in. If you change the model or publisher name, you can make sure those changes show up too.
 
-Before you test your device metadata, the Windows Store app should be installed on the computer where you will be deploying the device metadata.
+Before you test your device metadata, the Microsoft Store app should be installed on the computer where you will be deploying the device metadata.
 
 ## <span id="Deploy_your_device_metadata_locally"></span><span id="deploy_your_device_metadata_locally"></span><span id="DEPLOY_YOUR_DEVICE_METADATA_LOCALLY"></span>Deploy your device metadata locally
 
@@ -45,7 +45,7 @@ Before you can test your device metadata, you must deploy it to the local device
 ## <span id="Validate_your_device_metadata"></span><span id="validate_your_device_metadata"></span><span id="VALIDATE_YOUR_DEVICE_METADATA"></span>Validate your device metadata
 
 
-You can validate your device metadata against a Windows Store device app or a device by using the **Device Metadata Authoring Wizard**.
+You can validate your device metadata against a UWP device app or a device by using the **Device Metadata Authoring Wizard**.
 
 **To validate your device metadata by using the Device Metadata Authoring Wizard**
 
@@ -53,7 +53,7 @@ You can validate your device metadata against a Windows Store device app or a de
 2.  Click **Validate Metadata**.
 3.  On the **Select metadata package to validate** page, do the following:
     -   Under the **Device metadata package** heading, click **Browse** to select your .devicemanifest-ms file, or click **Select from local metadata store** if you've already deployed your device metadata locally.
-    -   If you want to validate against a Windows Store app, select the **Validate the device metadata package against a Windows Store device app** check box, and then click **Browse** to choose the Windows Store app package (.appx).
+    -   If you want to validate against a UWP app, select the **Validate the device metadata package against a UWP device app** check box, and then click **Browse** to choose the Microsoft Store app package (.appx).
     -   If you want to validate against a device, select the **Validate the device metadata package against a device** check box, click **Select from devices**, choose your device, and then click **OK.**
 
 4.  Click **Validate**.

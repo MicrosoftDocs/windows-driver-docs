@@ -22,7 +22,7 @@ Windows 8, Windows 8.1, and Windows 10 present an opportunity to reimagine an
 
 -   The need for a custom driver and for custom connection management software meant that USB-based mobile broadband devices need to also perform a USB storage function in order to deliver that custom software to the user’s PC. This dual-mode device concept often requires the user to switch between storage mode and modem mode, adding an extra task before the user can successfully connect to the network.
 
--   Highlight unique services and capabilities that make your customer experience unique. Windows 8, Windows 8.1, and Windows 10 provide the opportunity to focus on the customer connection and to highlight your unique value-add through a Windows Store mobile broadband app, previously known as a mobile operator app.
+-   Highlight unique services and capabilities that make your customer experience unique. Windows 8, Windows 8.1, and Windows 10 provide the opportunity to focus on the customer connection and to highlight your unique value-add through a UWP mobile broadband app, previously known as a mobile operator app.
 
 ## <span id="Key_scenarios"></span><span id="key_scenarios"></span><span id="KEY_SCENARIOS"></span>Key scenarios
 
@@ -73,7 +73,7 @@ In this case, an embedded device, mobile broadband app, and service metadata is 
 
      
 
-3.  Windows uses the service metadata to identify and retrieve the mobile broadband app from the Windows Store. The app is installed automatically. In Windows 8.1 and Windows 10, the app is not pinned to the Start screen.
+3.  Windows uses the service metadata to identify and retrieve the mobile broadband app from the Microsoft Store. The app is installed automatically. In Windows 8.1 and Windows 10, the app is not pinned to the Start screen.
 
     **Note**  
     This step is only necessary if the OEM has not inserted the SIM and preloaded the mobile broadband app and service metadata.
@@ -125,7 +125,7 @@ An external mobile broadband device, such as a hardware dongle, can be inserted 
 
 4.  The HWIDs that are calculated from the SIM or mobile broadband device are sent to WMIS. WMIS identifies the operator and returns the appropriate service metadata package.
 
-5.  Windows uses the service metadata to identify and retrieve the associated mobile broadband app from the Windows Store. The app is installed automatically and registered for background events. In Windows 8.1 and Windows 10, the app is not automatically pinned to the Start screen. Registering for background events allows the app to do things such as reacting to local data usage counters, receiving operator SMS messages, connecting to Wi-Fi hotspots, and handling entitlement checks. More details about background tasks can be found in [Introduction to Background Tasks](http://www.microsoft.com/download/details.aspx?id=27411).
+5.  Windows uses the service metadata to identify and retrieve the associated mobile broadband app from the Microsoft Store. The app is installed automatically and registered for background events. In Windows 8.1 and Windows 10, the app is not automatically pinned to the Start screen. Registering for background events allows the app to do things such as reacting to local data usage counters, receiving operator SMS messages, connecting to Wi-Fi hotspots, and handling entitlement checks. More details about background tasks can be found in [Introduction to Background Tasks](http://www.microsoft.com/download/details.aspx?id=27411).
 
 6.  When a background event occurs, the app generates a more complete provisioning file, if needed, and passes it to the provisioning agent. This configures Windows with information about the plan that the user has purchased.
 
@@ -179,7 +179,7 @@ Building a mobile broadband app with SMS support is necessary to show notificati
 
  
 
-SMS functionality is available to mobile broadband apps, Windows Store apps that are given privileged access to mobile network operators, Windows Store apps that are given privileged access by the PC OEM (if the mobile broadband device is embedded in the PC), or the mobile broadband device IHV (if the mobile broadband device is removable). Mobile network operators and the PC OEM (or the mobile broadband device IHV) specify privileged apps through service metadata. For more information about service metadata, see [Using metadata to configure mobile broadband experiences](using-metadata-to-configure-mobile-broadband-experiences.md).
+SMS functionality is available to mobile broadband apps, UWP apps that are given privileged access to mobile network operators, UWP apps that are given privileged access by the PC OEM (if the mobile broadband device is embedded in the PC), or the mobile broadband device IHV (if the mobile broadband device is removable). Mobile network operators and the PC OEM (or the mobile broadband device IHV) specify privileged apps through service metadata. For more information about service metadata, see [Using metadata to configure mobile broadband experiences](using-metadata-to-configure-mobile-broadband-experiences.md).
 
 ### Providing accurate usage and plan data
 
@@ -299,9 +299,9 @@ Windows 8.1 and Windows 10 support multiple PDP contexts to be active at the s
 
 ### <span id="Wireline_operators"></span><span id="wireline_operators"></span><span id="WIRELINE_OPERATORS"></span>Wireline operators
 
-You can use PnP-X to expose non-mobile broadband devices as a Windows Store device app.
+You can use PnP-X to expose non-mobile broadband devices as a UWP device app.
 
-Devices such as DVRs, gateway routers, mobile hotspots, and phones can (while connected to the same Wi-Fi or LAN network as the Windows 8, Windows 8.1, or Windows 10 PC) use PnP-X to make Windows 8, Windows 8.1, and Windows 10 aware of their presence. Device metadata is downloaded for those devices based on their device properties and a Windows Store device app developed by you is automatically downloaded. You can reference this app for these devices so that a single mobile broadband app can manage mobile broadband as well as these additional devices.
+Devices such as DVRs, gateway routers, mobile hotspots, and phones can (while connected to the same Wi-Fi or LAN network as the Windows 8, Windows 8.1, or Windows 10 PC) use PnP-X to make Windows 8, Windows 8.1, and Windows 10 aware of their presence. Device metadata is downloaded for those devices based on their device properties and a UWP device app developed by you is automatically downloaded. You can reference this app for these devices so that a single mobile broadband app can manage mobile broadband as well as these additional devices.
 
 ## <span id="How_it_works"></span><span id="how_it_works"></span><span id="HOW_IT_WORKS"></span>How it works
 
@@ -330,7 +330,7 @@ The following components are part of Windows 8, Windows 8.1, and Windows 10:
 
 -   [Windows Metadata and Internet Services](#windows-metadata-and-internet-services)
 
--   [Windows Store](#windows-store)
+-   [Microsoft Store](#microsoft-store)
 
 ### Provisioning Agent
 
@@ -346,7 +346,7 @@ For more details about the format and content of the provisioning file, see [Usi
 
 ### Data Usage and Subscription Manager
 
-The Data Usage and Subscription Manager tracks details about the user’s accounts. The stored cost information about the currently connected network is available to all Windows Store apps. You can update this information by using the Provisioning Agent.
+The Data Usage and Subscription Manager tracks details about the user’s accounts. The stored cost information about the currently connected network is available to all UWP apps. You can update this information by using the Provisioning Agent.
 
 If the carrier requests it, the Data Usage and Subscription Manager uses local data counters to trigger a background event when 5 percent of the data limit has been used. The System Event Broker delivers this background event and the mobile broadband app can use the event as a trigger to update billable usage.
 
@@ -404,16 +404,16 @@ Developers should be aware that a strict limit is placed on the amount of CPU ti
 
 ### Windows Metadata and Internet Services
 
-Windows Metadata and Internet Services (WMIS) is a cloud-based Windows service that delivers customizations to Windows from third parties that participate in the Windows device ecosystem. For a mobile broadband device, WMIS delivers the service metadata package. This provides the basic information that Windows needs in order to retrieve the mobile broadband app from the Windows Store, allow connectivity to the network for the first time, and display appropriate branding elements in Windows Connection Manager.
+Windows Metadata and Internet Services (WMIS) is a cloud-based Windows service that delivers customizations to Windows from third parties that participate in the Windows device ecosystem. For a mobile broadband device, WMIS delivers the service metadata package. This provides the basic information that Windows needs in order to retrieve the mobile broadband app from the Microsoft Store, allow connectivity to the network for the first time, and display appropriate branding elements in Windows Connection Manager.
 
-### Windows Store
+### Microsoft Store
 
-The Windows Store is the primary way that Windows Store apps are delivered to Windows 8, Windows 8.1, and Windows 10 PCs. For a mobile broadband app, the app package is retrieved from the Windows Store whenever Internet connectivity is available after the device is connected. The app package is automatically installed and available to the user at that point. In Windows 8.1 and Windows 10, the app is available in **All Apps** but is not automatically pinned to the Start screen.
+The Microsoft Store is the primary way that UWP apps are delivered to Windows 8, Windows 8.1, and Windows 10 PCs. For a mobile broadband app, the app package is retrieved from the Microsoft Store whenever Internet connectivity is available after the device is connected. The app package is automatically installed and available to the user at that point. In Windows 8.1 and Windows 10, the app is available in **All Apps** but is not automatically pinned to the Start screen.
 
-For more information about Windows Store device apps, see the [Windows Store device apps](https://msdn.microsoft.com/library/windows/hardware/dn265154) topic on MSDN.
+For more information about UWP device apps, see the [UWP device apps](https://msdn.microsoft.com/library/windows/hardware/dn265154) topic on MSDN.
 
 **Note**  
-Although enterprises can side load Windows Store apps under certain conditions, these will not be covered in this document.
+Although enterprises can side load UWP apps under certain conditions, these will not be covered in this document.
 
  
 
@@ -435,7 +435,7 @@ For information on submitting updates to the Windows APN database, see [COSA/APN
 
 Service metadata is delivered to any user after he or she connects a mobile broadband device. Service metadata is always automatically downloaded as long as the user has any form of Internet connectivity, including metered mobile broadband or roaming networks.
 
-This information enables customers to have a richer experience by allowing you to add branding elements for Windows Connection Manager, referencing a mobile broadband app that is automatically acquired from the Windows Store, and having the most current mobile broadband settings for getting online for purchase or Internet connectivity. Windows will periodically check that it has the latest service metadata package from WMIS.
+This information enables customers to have a richer experience by allowing you to add branding elements for Windows Connection Manager, referencing a mobile broadband app that is automatically acquired from the Microsoft Store, and having the most current mobile broadband settings for getting online for purchase or Internet connectivity. Windows will periodically check that it has the latest service metadata package from WMIS.
 
 The service metadata package is delivered to customers only when a mobile broadband device from the specified operator is detected on the PC. Information in this package overrides the content of the APN database, whenever it’s present. For more information on the service metadata package schema reference, see [Service metadata package schema reference](service-metadata-package-schema-reference.md).
 

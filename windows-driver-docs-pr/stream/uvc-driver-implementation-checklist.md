@@ -35,7 +35,7 @@ Use these links to get acquainted with UVC:
 
 - Review the [Device MFT sample code](https://github.com/Microsoft/Windows-driver-samples/tree/master/avstream/sampledevicemft) located on GitHub.
 
-- Review relevent information on MFT0 in the [Creating a camera driver MFT for a Windows Store device app](https://msdn.microsoft.com/windows/hardware/drivers/devapps/creating-a-camera-driver-mft) topic.
+- Review relevent information on MFT0 in the [Creating a camera driver MFT for a UWP device app](https://msdn.microsoft.com/windows/hardware/drivers/devapps/creating-a-camera-driver-mft) topic.
 
 **Note** The Device MFT model supersedes the MFT0 model. While Windows continues to support the MFT0 model, we encourage you to use Device MFT instead, as it simplifies the design and supports more functionality and scalability.
 

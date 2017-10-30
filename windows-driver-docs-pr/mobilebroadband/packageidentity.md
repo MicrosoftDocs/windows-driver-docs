@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # PackageIdentity
 
 
-The PackageIdentity element specifies a Windows Store device app that should appear as the recommended AutoPlay action when a user plugs in a device.
+The PackageIdentity element specifies a UWP device app that should appear as the recommended AutoPlay action when a user plugs in a device.
 
 ## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
 
@@ -79,7 +79,7 @@ There are no child elements.
 <tbody>
 <tr class="odd">
 <td><p>[AutoplayHandler](autoplayhandler.md)</p></td>
-<td><p>Specifies a Windows Store device app that should appear as the recommended AutoPlay action when a user plugs in a device.</p></td>
+<td><p>Specifies a UWP device app that should appear as the recommended AutoPlay action when a user plugs in a device.</p></td>
 </tr>
 </tbody>
 </table>
@@ -114,7 +114,7 @@ There are no child elements.
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
 
-Copy the Name and Publisher attributes from the application manifest's &lt;Identity&gt; element after the app has been associated with the Windows Store, because the process of associating your app will update the app manifest.
+Copy the Name and Publisher attributes from the application manifest's &lt;Identity&gt; element after the app has been associated with the Microsoft Store, because the process of associating your app will update the app manifest.
 
 Here is an example of how the &lt;Identity&gt; element may look inside an app manifest.
 

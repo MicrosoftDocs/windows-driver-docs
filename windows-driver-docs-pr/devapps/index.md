@@ -1,6 +1,6 @@
 ---
-title: Windows Store device apps
-description: Windows Store device apps are device companions, have capabilities beyond regular Windows Store apps, and perform privileged operations, such as firmware updates
+title: UWP device apps
+description: UWP device apps are device companions, have capabilities beyond regular UWP apps, and perform privileged operations, such as firmware updates
 ms.assetid: fb64bad6-aa3d-4718-b62e-68da59a07ced
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -9,17 +9,17 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Windows Store device apps
+# UWP device apps
 
 
 ## <span id="purpose"></span>Purpose
 
 
-Device manufacturers can create a Windows Store device app that serves as a companion to their device. Windows Store device apps have more capabilities than regular Windows Store apps and can perform privileged operations, such as firmware updates. Also, Windows Store device apps can start from AutoPlay (on more devices than other apps can), automatically install the first time a device is connected, and extend the printer and camera experiences built into Windows 8.1 and Windows 10.
+Device manufacturers can create a UWP device app that serves as a companion to their device. UWP device apps have more capabilities than regular UWP apps and can perform privileged operations, such as firmware updates. Also, UWP device apps can start from AutoPlay (on more devices than other apps can), automatically install the first time a device is connected, and extend the printer and camera experiences built into Windows 8.1 and Windows 10.
 
-This section describes what Windows Store device apps are and how device manufacturers can create them. If you're new to Windows Store device apps, take a look at [Getting started](getting-started.md).
+This section describes what UWP device apps are and how device manufacturers can create them. If you're new to UWP device apps, take a look at [Getting started](getting-started.md).
 
-If you're looking for info about Windows Store mobile broadband apps, see [Mobile Broadband](http://go.microsoft.com/fwlink/p/?LinkID=301754).
+If you're looking for info about UWP mobile broadband apps, see [Mobile Broadband](http://go.microsoft.com/fwlink/p/?LinkID=301754).
 
 ## <span id="in_this_section"></span>In this section
 
@@ -38,38 +38,38 @@ If you're looking for info about Windows Store mobile broadband apps, see [Mobil
 <tbody>
 <tr class="odd">
 <td align="left"><p>[What's new](what-s-new.md)</p></td>
-<td align="left"><p>This section provides a glimpse of what's new for Windows Store device apps.</p></td>
+<td align="left"><p>This section provides a glimpse of what's new for UWP device apps.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Getting started](getting-started.md)</p></td>
-<td align="left"><p>Start here to begin building Windows Store device apps.</p></td>
+<td align="left"><p>Start here to begin building UWP device apps.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Build a Windows Store device app step-by-step](build-a-windows-store-device-app-step-by-step.md)</p></td>
-<td align="left"><p>This step-by-step guide describes in detail how to build a Windows Store device app with Microsoft Visual Studio 2013 and the Device Metadata Authoring Wizard.</p></td>
+<td align="left"><p>[Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md)</p></td>
+<td align="left"><p>This step-by-step guide describes in detail how to build a UWP device app with Microsoft Visual Studio 2013 and the Device Metadata Authoring Wizard.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[AutoPlay for Windows Store device apps](autoplay-for-windows-store-device-apps.md)</p></td>
+<td align="left"><p>[AutoPlay for UWP device apps](autoplay-for-uwp-device-apps.md)</p></td>
 <td align="left"><p>This topic describes how to use the Device Metadata Authoring Wizard to enable AutoPlay. It also describes how to handle AutoPlay activations in your app.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Device sync and update for Windows Store device apps](device-sync-and-update-for-windows-store-device-apps.md)</p></td>
-<td align="left"><p>In Windows 8.1, your Windows Store app can use a device background task to synchronize data on your peripheral device. If your app is associated with device metadata, that Windows Store device app can also use a device background agent to perform device updates, such as firmware updates.</p></td>
+<td align="left"><p>[Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md)</p></td>
+<td align="left"><p>In Windows 8.1, your UWP app can use a device background task to synchronize data on your peripheral device. If your app is associated with device metadata, that UWP device app can also use a device background agent to perform device updates, such as firmware updates.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Windows Store device apps for printers](windows-store-device-apps-for-printers.md)</p></td>
-<td align="left"><p>This section introduces Windows Store device apps for printers.</p></td>
+<td align="left"><p>[UWP device apps for printers](uwp-device-apps-for-printers.md)</p></td>
+<td align="left"><p>This section introduces UWP device apps for printers.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Windows Store device apps for cameras](windows-store-device-apps-for-webcams.md)</p></td>
-<td align="left"><p>This section introduces Windows Store device apps for cameras.</p></td>
+<td align="left"><p>[UWP device apps for cameras](uwp-device-apps-for-webcams.md)</p></td>
+<td align="left"><p>This section introduces UWP device apps for cameras.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Windows Store device apps for internal devices](windows-store-device-apps-for-specialized-devices.md)</p></td>
-<td align="left"><p>This topic introduces the ways that Windows Store device apps can access internal devices.</p></td>
+<td align="left"><p>[UWP device apps for internal devices](uwp-device-apps-for-specialized-devices.md)</p></td>
+<td align="left"><p>This topic introduces the ways that UWP device apps can access internal devices.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Automatic installation for Windows Store device apps](auto-install-for-windows-store-device-apps.md)</p></td>
+<td align="left"><p>[Automatic installation for UWP device apps](auto-install-for-uwp-device-apps.md)</p></td>
 <td align="left"><p>This topic describes how automatic installation works and how the app, metadata, and drivers can be updated and uninstalled.</p></td>
 </tr>
 </tr>

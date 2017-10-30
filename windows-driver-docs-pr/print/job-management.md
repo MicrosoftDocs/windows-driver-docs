@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 A job management feature has been introduced in Windows 8.1 and later versions of Windows to provide a live view of the job queue.
 
-This feature also allows a client to cancel a print job. A client can call the appropriate programming interface from within a Windows Store device app or from a printer extension.
+This feature also allows a client to cancel a print job. A client can call the appropriate programming interface from within a UWP device app or from a printer extension.
 
 ## The new interfaces
 

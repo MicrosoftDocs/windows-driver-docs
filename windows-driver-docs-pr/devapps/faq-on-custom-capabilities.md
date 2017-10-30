@@ -35,7 +35,5 @@ The suggested method to install a UWP app with Custom Capabilities is to pre-ins
                                                                                                                                                     
                                                   
 
-For more information on DCA’s, see [Getting started with Windows Store
-device
-apps](https://msdn.microsoft.com/windows/hardware/drivers/devapps/getting-started).
+For more information on DCA’s, see [Getting started with Microsoft Store device apps](https://msdn.microsoft.com/windows/hardware/drivers/devapps/getting-started).
 

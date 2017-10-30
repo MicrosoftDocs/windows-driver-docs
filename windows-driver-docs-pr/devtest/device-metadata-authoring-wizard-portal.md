@@ -24,7 +24,7 @@ ms.technology: windows-devices
 
 The Device Metadata Authoring Wizard is a tool that device manufacturers and service operators can use to develop a metadata package for their devices and services. This metadata package provides information that appears to Windows users, including the photorealistic icon and name for the device or service.
 
-The tool also allows device manufacturers and service operators to associate a Windows Store device app to their device or service. Windows Store device apps launch automatically when a user first connects a device. The look, feel, and functionality of the app are entirely up to the device manufacturer.
+The tool also allows device manufacturers and service operators to associate a UWP device app to their device or service. UWP device apps launch automatically when a user first connects a device. The look, feel, and functionality of the app are entirely up to the device manufacturer.
 
 After using the tool to define these elements for your device or service, you can submit the final package to Microsoft for validation.
 

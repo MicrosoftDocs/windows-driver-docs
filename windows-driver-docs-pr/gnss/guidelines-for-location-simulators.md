@@ -32,7 +32,7 @@ When the simulator application exits, the simulator driver should change state t
 -   If the simulator driver does not have data when it is running in a simulator, then data from other sources will be used in the location simulator.
 
 ## Related topics
-[Running Windows Store apps in the simulator](http://msdn.microsoft.com/library/windows/apps/hh441475.aspx)  
+[Running UWP apps in the simulator](http://msdn.microsoft.com/library/windows/apps/hh441475.aspx)  
 [Set the simulated geolocation of the device](http://msdn.microsoft.com/library/windows/apps/hh441475.aspx#bkmk-set-the-simulated-geo-location-of-the-device)  
 
 --------------------

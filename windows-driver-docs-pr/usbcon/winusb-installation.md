@@ -44,7 +44,7 @@ When you connect your device, you might notice that Windows loads Winusb.sys aut
 7.  The wizard displays **WinUsb Device**. Select it to load the driver.
 
 If **Universal Serial Bus devices** does not appear in the list of device classes, then you need to install the driver by using a custom INF.
-The preceding procedure does not add a device interface GUID for an app (Windows Store app or Windows desktop app) to access the device. You must add the GUID manually by following this procedure.
+The preceding procedure does not add a device interface GUID for an app (UWP app or Windows desktop app) to access the device. You must add the GUID manually by following this procedure.
 
 1.  Load the driver as described in the preceding procedure.
 2.  Generate a device interface GUID for your device, by using a tool such as guidgen.exe.

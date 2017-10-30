@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 The Sensor Diagnostic Tool (SDT) is included with the Windows Driver Kit, and you can use this tool to test your driver, firmware, and hardware functionality.
 
-**Note**  The Sensor Diagnostic Tool is now deprecated for Windows 10. Please use the SensorInfo App from the Windows Store, for all sensor testing and diagnostics.
+**Note**  The Sensor Diagnostic Tool is now deprecated for Windows 10. Please use the SensorInfo App from the Microsoft Store, for all sensor testing and diagnostics.
 
  
 

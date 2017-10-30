@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Developing SMS apps
 
 
-Windows 8, Windows 8.1, and Windows 10 provide a Short Message Service (SMS) text messaging platform for mobile network operators, mobile broadband adapter IHVs, OEMs, and their partnered software vendor’s app with SMS access into a Windows Store app.
+Windows 8, Windows 8.1, and Windows 10 provide a Short Message Service (SMS) text messaging platform for mobile network operators, mobile broadband adapter IHVs, OEMs, and their partnered software vendor’s app with SMS access into a UWP app.
 
 **Note**  
 A mobile broadband app requires SMS support to show notifications to the end user when text messages are received. SMS might also be required to conform to regulatory requirements or best practices in certain markets.
@@ -71,7 +71,7 @@ Here’s an overview diagram on how the SMS works with a mobile broadband connec
 ## <span id="SMSAccess"></span><span id="smsaccess"></span><span id="SMSACCESS"></span>Access to mobile broadband SMS
 
 
-### <span id="store"></span><span id="STORE"></span>Windows Store app access to SMS
+### <span id="store"></span><span id="STORE"></span>UWP app access to SMS
 
 Access to mobile broadband SMS functionality is available in the following ways:
 
@@ -81,15 +81,15 @@ Access to mobile broadband SMS functionality is available in the following ways:
 
 -   OEMs who build computers that have embedded mobile broadband adapters can enable a mobile broadband app to access SMS.
 
--   Windows Store apps can be given privileged access to SMS by a mobile operator, mobile broadband adapter IHV, or OEM.
+-   UWP apps can be given privileged access to SMS by a mobile operator, mobile broadband adapter IHV, or OEM.
 
-Access to SMS is specified in service metadata or device metadata. Device metadata package is a set of XML files that create the link between a particular device and its Windows Store device app. The link is based on the HardwareId of IHV mobile broadband adapter, or computer hardware IDs of the computer device container for OEMs who build computers that have embedded mobile broadband adapters.
+Access to SMS is specified in service metadata or device metadata. Device metadata package is a set of XML files that create the link between a particular device and its UWP device app. The link is based on the HardwareId of IHV mobile broadband adapter, or computer hardware IDs of the computer device container for OEMs who build computers that have embedded mobile broadband adapters.
 
 For more information about service metadata, see [Service metadata](service-metadata.md).
 
-For mobile network operators and mobile broadband adapters IHVs, Windows 8, Windows 8.1, and Windows 10 automatically download and install the mobile broadband app from the Windows Store when users connect their device for the first time. In Windows 8.1 and Windows 10 the mobile broadband app is added to the **All Apps** view.
+For mobile network operators and mobile broadband adapters IHVs, Windows 8, Windows 8.1, and Windows 10 automatically download and install the mobile broadband app from the Microsoft Store when users connect their device for the first time. In Windows 8.1 and Windows 10 the mobile broadband app is added to the **All Apps** view.
 
-Mobile broadband apps and IHV apps have simultaneous access SMS for a single mobile broadband device. If both a mobile broadband app and an IHV or OEM Windows Store app are installed and both show a notifications user interface when a new SMS is received, the users see two notification UIs. The user can turn off notifications or uninstall one of the apps.
+Mobile broadband apps and IHV apps have simultaneous access SMS for a single mobile broadband device. If both a mobile broadband app and an IHV or OEM UWP app are installed and both show a notifications user interface when a new SMS is received, the users see two notification UIs. The user can turn off notifications or uninstall one of the apps.
 
 ### <span id="user"></span><span id="USER"></span>User consent to SMS access
 

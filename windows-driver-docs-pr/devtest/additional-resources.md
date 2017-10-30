@@ -5,7 +5,7 @@ ms.assetid: 3C4D4D58-7B81-4791-A040-903BED94B46E
 keywords:
 - device metadata resources
 - device experience resources
-- Windows Store device app resources
+- UWP device app resources
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
@@ -20,13 +20,13 @@ ms.technology: windows-devices
 
 For more information about the device experience in Windows 8, see [Windows 8 Device Experience](http://go.microsoft.com/fwlink/p/?LinkId=227312) and [Device Metadata Package Pipeline white paper](http://go.microsoft.com/fwlink/p/?LinkId=242246).
 
-For more information about Windows Store device apps, see:
+For more information about UWP device apps, see:
 
--   [Windows Store device app Lifecycle](http://go.microsoft.com/fwlink/p/?LinkId=226757)
--   [Windows Store device apps for Cameras](http://go.microsoft.com/fwlink/p/?LinkId=241445)
--   [Mobile Broadband: Windows Store device apps](http://go.microsoft.com/fwlink/p/?LinkId=241446)
--   [Printers: Windows Store device apps](http://go.microsoft.com/fwlink/p/?LinkId=241444)
--   [Specialized devices: Windows Store device apps](http://go.microsoft.com/fwlink/p/?LinkId=241447)
+-   [UWP device app Lifecycle](http://go.microsoft.com/fwlink/p/?LinkId=226757)
+-   [UWP device apps for Cameras](http://go.microsoft.com/fwlink/p/?LinkId=241445)
+-   [Mobile Broadband: UWP device apps](http://go.microsoft.com/fwlink/p/?LinkId=241446)
+-   [Printers: UWP device apps](http://go.microsoft.com/fwlink/p/?LinkId=241444)
+-   [Specialized devices: UWP device apps](http://go.microsoft.com/fwlink/p/?LinkId=241447)
 
  
 

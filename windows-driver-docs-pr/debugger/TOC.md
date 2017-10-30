@@ -453,7 +453,7 @@
 #### [Debugging Tools for Windows: New for Windows 8.1](debugging-tools-for-windows--new-for-windows-8-1.md)
 #### [Debugging Tools for Windows: New for Windows 8](debugging-tools-for-windows--new-for-windows-8.md)
 ### [Debugging Tools For Windows8 Release Notes](debugging-tools-for-windows8-release-notes.md)
-### [Debugging Windows XP and Windows Vista](debugging-windows-xp-and-windows-vista.md)
+### [Debugging Windows Vista](debugging-windows-vista.md)
 ### [Debugging Using Visual Studio](debugging-using-visual-studio.md)
 #### [Debugging a User-Mode Process Using Visual Studio](debugging-a-user-mode-process-using-visual-studio.md)
 #### [Opening a Dump File Using Visual Studio](opening-a-crash-dump-file-using-visual-studio.md)
