@@ -108,7 +108,7 @@ Some versions of Windows, as an optimization, do not load SFX or MFX APOs in RAW
 
 **Mode Effect (MFX)**
 
-Mode effects (MFX) are applied to all streams that are mapped to the same mode. Mode effects are applied after the mix (render) or before the tee (capture) for a given mode, but before the mix (render) or after the tee (capture) of all modes. Any scenario specific effect or effect that doesn’t need the specifics of the stream effect should be placed here. It is more power efficient to use a mode effect since there is one instance for multiple streams.
+Mode effects (MFX) are applied to all streams that are mapped to the same mode. Mode effects are applied after the mix (render) or before the tee (capture) for a given mode, but before the mix (render) or after the tee (capture) of all modes. Any scenario specific effect or effect that doesn’t need the specifics of the stream effect should be placed here. It is more power efficient to use a mode effect since there is one instance for multiple streams that share the same characteristics like periodicity and format.
 
 **Endpoint Effect (EFX)**
 
