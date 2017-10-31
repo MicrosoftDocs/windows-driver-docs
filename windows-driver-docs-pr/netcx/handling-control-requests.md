@@ -59,7 +59,7 @@ For example, if the protocol driver issues an OID request with `NDIS_REQUEST_TYP
 
 The following diagram shows the typical flow:
 
-<img src="images/netcx-adapter-request-handling-flow.png" alt="Drawing" style="width: 800px;"/>
+<img src="images/netcx-adapter-request-handling-flow.png" alt="NetAdapterCx request handling flow" title="NetAdapterCx request handling flow" style="width: 800px;"/>
 
 The following snippet shows how the client sets up default handlers:
 
