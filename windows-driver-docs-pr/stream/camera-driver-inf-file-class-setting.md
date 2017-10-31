@@ -26,7 +26,6 @@ ClassGuid={ca3e7ab9-b4c3-4ae6-8251-579ef933890f}
 
 ```
 
-For an example of the Camera class INF setting, see the **avscamera.inf** file in the [AvsCamera](https://github.com/Microsoft/Windows-driver-samples/tree/master/avstream/avscamera/sys) driver sample on GitHub.
 
 For more information on the HLK requirements for the Camera class INF file setting, see the **Device.Streaming.Camera.Base.AVStreamClassInterfaceAndWDM** section in [Device.Streaming.Camera](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/device-streaming-camera).
 
