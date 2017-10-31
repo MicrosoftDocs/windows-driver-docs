@@ -84,7 +84,7 @@ A client driver returns ownership of the elements by incrementing **BeginIndex**
 
 The client driver may optionally set **NextIndex** to the index of the next packet that it will submit to the hardware.
 
-![Using the ring buffer](images/using-the-ring-buffer.gif)
+![Using the ring buffer](images/using-the-ring-buffer.gif "Using the ring buffer")
 
 In this model, the client has submitted packets with index values between **BeginIndex** and **NextIndex - 1** inclusive to hardware.  Packets with index values between **NextIndex** and **EndIndex - 1** are owned by the client but have not yet been sent to hardware.  If the value of **BeginIndex** is equal to the value of **NextIndex**, the client has not programmed any packets to hardware.
 
