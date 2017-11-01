@@ -23,6 +23,7 @@ For an installation application to install a printer on a print server, it must 
 
 The **AddPrinterDriverEx** function requires a DRIVER\_INFO\_3 structure as input, and the **AddPrinter** function requires a PRINTER\_INFO\_2 structure as input. The default Windows 2000 or later printer class installer, Ntprint.dll, reads printer INF files to obtain string values that must be placed in these structures before the functions are called.
 
+
 The **AddPrinterDriverEx** and **AddPrinter** functions, along with the DRIVER\_INFO\_3 and PRINTER\_INFO\_2 structures, are described in the Microsoft Windows SDK documentation.
 
 A set of INF file entries for printer drivers that Ntprint.dll recognizes has been defined. These entries have the following format:
@@ -56,6 +57,8 @@ The following table lists INF file entries that should be included in printer IN
  
 
  **Note**  **1 (DriverCategory)**: If the INF file specifies a category, these are the allowed values (0 to 5 respectively) for specifying categories:
+ 
+ 
 | Driver Category          | Value | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |--------------------------|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | PrintFax.Printer         | 0     | A print queue that represents either a printer connected to the computer (through a local or network protocol), or a proxy to a physical printer on another computer. When the user prints to a physical printer, the result is paper with the document printed on it.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
