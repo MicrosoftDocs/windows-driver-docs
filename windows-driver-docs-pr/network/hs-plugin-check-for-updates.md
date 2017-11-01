@@ -1,7 +1,7 @@
 ---
 title: HS_PLUGIN_CHECK_FOR_UPDATES function
 author: windows-driver-content
-description: The HS\_PLUGIN\_CHECK\_FOR\_UPDATES function checks for configuration updates at the frequency specified in the dwProfileUpdateTimeDays member of the plugin’s HS\_PLUGIN\_PROFILE structure.
+description: The HS_PLUGIN_CHECK_FOR_UPDATES function checks for configuration updates at the frequency specified in the dwProfileUpdateTimeDays member of the plugin’s HS_PLUGIN_PROFILE structure.
 ms.assetid: 8db3c237-d61b-4dca-b3a5-2fdaeb683b15
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_CHECK_FOR_UPDATES) function Network Drivers Starting with Windows Vista

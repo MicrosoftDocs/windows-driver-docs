@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_ADDITIONAL_IE
 author: windows-driver-content
-description: OID\_DOT11\_ADDITIONAL\_IE
+description: OID_DOT11_ADDITIONAL_IE
 ms.assetid: 50c539c0-9106-42e6-b4e8-255169eb0089
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_ENABLED_MULTICAST_CIPHER_ALGORITHM
 author: windows-driver-content
-description: OID\_DOT11\_ENABLED\_MULTICAST\_CIPHER\_ALGORITHM
+description: OID_DOT11_ENABLED_MULTICAST_CIPHER_ALGORITHM
 ms.assetid: c661d254-8614-4282-9887-c7806a4f1606
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

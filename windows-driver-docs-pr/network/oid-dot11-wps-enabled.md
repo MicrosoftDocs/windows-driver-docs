@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_WPS_ENABLED
 author: windows-driver-content
-description: OID\_DOT11\_WPS\_ENABLED
+description: OID_DOT11_WPS_ENABLED
 ms.assetid: 84dd7496-19e4-4c0c-8208-9ad4d1797154
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

@@ -1,7 +1,7 @@
 ---
 title: OID_WWAN_SERVICE_ACTIVATION
 author: windows-driver-content
-description: OID\_WWAN\_SERVICE\_ACTIVATION instructs miniport drivers to initiate service activation in order to gain access to the provider's network.
+description: OID_WWAN_SERVICE_ACTIVATION instructs miniport drivers to initiate service activation in order to gain access to the provider's network.
 ms.assetid: a70c087d-0650-4aab-b78e-0d5a7aa49eb6
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

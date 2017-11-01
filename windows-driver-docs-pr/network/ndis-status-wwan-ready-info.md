@@ -1,7 +1,7 @@
 ---
 title: NDIS_STATUS_WWAN_READY_INFO
 author: windows-driver-content
-description: Miniport drivers use the NDIS\_STATUS\_WWAN\_READY\_INFO notification to inform the MB Service of device ready-state changes in response to OID\_WWAN\_READY\_INFO \ 160;query requests.
+description: Miniport drivers use the NDIS_STATUS_WWAN_READY_INFO notification to inform the MB Service of device ready-state changes in response to OID_WWAN_READY_INFO \ 160;query requests.
 ms.assetid: 92ddf95f-8829-4259-b53a-c7ce56ee53f0
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

@@ -1,7 +1,7 @@
 ---
 title: NDIS_STATUS_DOT11_CAN_SUSTAIN_AP
 author: windows-driver-content
-description: NDIS\_STATUS\_DOT11\_CAN\_SUSTAIN\_AP
+description: NDIS_STATUS_DOT11_CAN_SUSTAIN_AP
 ms.assetid: da31f074-f2b3-4e06-80bf-1e4c442b6012
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

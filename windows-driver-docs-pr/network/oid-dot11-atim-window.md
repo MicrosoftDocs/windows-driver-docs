@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_ATIM_WINDOW
 author: windows-driver-content
-description: OID\_DOT11\_ATIM\_WINDOW
+description: OID_DOT11_ATIM_WINDOW
 ms.assetid: 440b3948-6008-4ac7-8ff1-307d5edaa9b5
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

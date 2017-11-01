@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_EXTSTA_CAPABILITY
 author: windows-driver-content
-description: When queried, the OID\_DOT11\_EXTSTA\_CAPABILITY object identifier (OID) requests that the miniport driver return the sizes of various tables and lists supported by the 802.11 station.
+description: When queried, the OID_DOT11_EXTSTA_CAPABILITY object identifier (OID) requests that the miniport driver return the sizes of various tables and lists supported by the 802.11 station.
 ms.assetid: 0ecbaca2-67ab-4185-ae84-d72f52fffe39
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

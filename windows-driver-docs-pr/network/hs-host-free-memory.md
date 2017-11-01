@@ -1,7 +1,7 @@
 ---
 title: HS_HOST_FREE_MEMORY function
 author: windows-driver-content
-description: The HS\_HOST\_FREE\_MEMORY function frees any memory that was allocated earlier by a call to HS\_HOST\_ALLOCATE\_MEMORY.
+description: The HS_HOST_FREE_MEMORY function frees any memory that was allocated earlier by a call to HS_HOST_ALLOCATE_MEMORY.
 ms.assetid: 2090ecf8-e1d5-4410-acbf-1b97f418e185
 keywords: 
 - typedef VOID (WINAPI HS_HOST_FREE_MEMORY) function Network Drivers Starting with Windows Vista

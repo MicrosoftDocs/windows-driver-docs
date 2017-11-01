@@ -1,7 +1,7 @@
 ---
 title: NDIS_STATUS_DOT11_PMKID_CANDIDATE_LIST
 author: windows-driver-content
-description: A miniport driver uses the NDIS\_STATUS\_DOT11\_PMKID\_CANDIDATE\_LIST indication to request pairwise master key identifiers (PMKIDs) for basic service set (BSS) identifiers (BSSIDs) that the 802.11 station can potentially roam to.
+description: A miniport driver uses the NDIS_STATUS_DOT11_PMKID_CANDIDATE_LIST indication to request pairwise master key identifiers (PMKIDs) for basic service set (BSS) identifiers (BSSIDs) that the 802.11 station can potentially roam to.
 ms.assetid: 5c0376f3-71e3-4fa6-89e5-6580fc85cfa8
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_MULTI_DOMAIN_CAPABILITY_ENABLED
 author: windows-driver-content
-description: OID\_DOT11\_MULTI\_DOMAIN\_CAPABILITY\_ENABLED
+description: OID_DOT11_MULTI_DOMAIN_CAPABILITY_ENABLED
 ms.assetid: 3d2431b6-02b8-4a4c-88fb-6d3387fe6918
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

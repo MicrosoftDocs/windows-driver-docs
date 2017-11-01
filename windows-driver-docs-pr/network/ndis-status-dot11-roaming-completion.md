@@ -1,7 +1,7 @@
 ---
 title: NDIS_STATUS_DOT11_ROAMING_COMPLETION
 author: windows-driver-content
-description: NDIS\_STATUS\_DOT11\_ROAMING\_COMPLETION
+description: NDIS_STATUS_DOT11_ROAMING_COMPLETION
 ms.assetid: 7effcce4-e557-4255-92d4-8a1c0b3bda61
 ms.author: windowsdriverdev
 ms.date: 08/08/2017
