@@ -2,7 +2,7 @@
 title: Camera class INF file setting for camera drivers
 description: Describes how to add the camera class setting to a Universal camera driver INF file.
 ms.author: windowsdriverdev
-ms.date: 10/26/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -10,9 +10,9 @@ ms.technology: windows-devices
 
 # Camera class INF file setting for Universal camera drivers
 
-Starting with Windows 10, version 1709, you should add **Class=Camera** settings to your Universal camera driver INF file to ensure future compatability with camera driver HLK tests.
+Starting with Windows 10, version 1709, you should add the following Camera class settings to your Universal camera driver INF file.
 
-Add the following **Class** and **ClassGuid** entries to the **Version** section of your Universal camera driver INF file (as shown below) to ensure your driver will pass future camera driver HLK tests:
+Add these **Class** and **ClassGuid** entries to the **Version** section of your Universal camera driver INF file to ensure your driver will pass future camera driver HLK tests:
 
 ```
 [Version]
