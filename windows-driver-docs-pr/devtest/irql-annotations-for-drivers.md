@@ -11,6 +11,9 @@ ms.technology: windows-devices
 
 # IRQL annotations for drivers
 
+| d | d | d |
+| - | - | - |
+| \_IRQL_requires_max_(_irql_) | \_IRQL_requires_max_ | \_IRQL_requires_max_ |
 
 When the driver code has IRQL annotations, the code analysis tools can make a better inference about the range of levels at which a function should run and can more accurately find errors. For example, you can add annotations that specify the maximum IRQL at which a function can be called; if a function is called at a higher IRQL, the code analysis tools can identify the inconsistencies.
 
