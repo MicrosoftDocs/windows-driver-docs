@@ -54,3 +54,9 @@ Use the following best practices:
 *  If your INF performs any custom setup actions that depend on the target platform, consider separating them out into an extension INF.  You can update an extension INF independently from the primary driver package to improve robustness and servicing.  See [Using an Extension INF File](../install/using-an-extension-inf-file.md).
 *  If you would like to provide an application that works with your device, please provide a UWP app.  For details, see [Hardware access for Universal Windows Platform apps](../devapps/hardware-access-for-universal-windows-platform-apps.md).  In Windows 10, version 1703, the OEM needs to pre-load such an app using [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).  Alternatively, users can manually download the app from the Microsoft Store.
 *  In the [**INF DestinationDirs Section**](../install/inf-destinationdirs-section.md), set the destination directories to [dirid 13](../install/using-dirids.md) to make the driver run from the Driver Store.  This will not work for some devices.
+*  Submit your universal driver package for certification in the Windows Hardware Compatibility Program. See these topics for more details:
+
+   *  [Create a new hardware submission](../dashboard/create-a-new-hardware-submission.md)
+   *  [Managing hardware submissions in the Windows Hardware Dev Center dashboard](../dashboard/manage-your-hardware-submissions.md)
+   *  [Get drivers signed by Microsoft for multiple Windows versions](../dashboard/get-drivers-signed-by-microsoft-for-multiple-windows-versions.md)
+   *  [Driver flighting](../dashboard/driver-flighting.md)
