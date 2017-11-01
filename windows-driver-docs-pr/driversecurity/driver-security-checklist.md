@@ -3,7 +3,7 @@ title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
 ms.assetid: 25375E02-FCA1-4E94-8D9A-AA396C909278
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -157,7 +157,7 @@ One of the primary responsibilities of a Windows driver is transferring data bet
 | METHOD_IN_DIRECT or METHOD_OUT_DIRECT |Used in some high speed HW I/O    |[Using Direct I/O](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-direct-i-o) |
 | METHOD_NEITHER |Avoid if possible |[Using Neither Buffered Nor Direct I/O](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-neither-buffered-nor-direct-i-o)|
 
-In general buffered I/O is recomended as it provides the most secure buffering methods. But even when using buffered I/O there are risks, such as embedded pointers that must be mitigated.
+In general buffered I/O is recommended as it provides the most secure buffering methods. But even when using buffered I/O there are risks, such as embedded pointers that must be mitigated.
 
 For more information about working with buffers in IOCTLs, see [Methods for Accessing Data Buffers](https://docs.microsoft.com/windows-hardware/drivers/kernel/methods-for-accessing-data-buffers).
 
@@ -188,9 +188,7 @@ To allow drivers to support HVCI virtualization, there are additional memory req
 
 **Handles**
 
-- Validate handles passed between user-mode and kernel-mode memory. For more information, see [Handle Management](https://msdn.microsoft.com/library/windows/hardware/ff547382).
-
-- Validate object handles. For more information, see [Failure to Validate Object Handles](https://msdn.microsoft.com/library/windows/hardware/ff545703).
+- Validate handles passed between user-mode and kernel-mode memory. For more information, see [Handle Management](https://msdn.microsoft.com/library/windows/hardware/ff547382) and [Failure to Validate Object Handles](https://msdn.microsoft.com/library/windows/hardware/ff545703).
 
 **Device objects**
 
@@ -198,18 +196,16 @@ To allow drivers to support HVCI virtualization, there are additional memory req
 
 - Validate device objects. For more information, see [Failure to Validate Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff545700).
 
-**IRP**
-
+**IRPs**
 
 **WDF and IRPs** 
 One advantage of using WDF, is that WDF drivers typically do not directly access IRPs. For example, the framework converts the WDM IRPs that represent read, write, and device I/O control operations to framework request objects that KMDF/UMDF receive in I/O queues. 
 
 If you are writing a WDM driver, review the following guidance.
 
+**Properly manage IRP I/O buffers**
 
-**Validate IRP input values**
-
-Validate all values that are associated with an IRP, such as buffer addresses and lengths. The following articles provide information about validating IRP input values:
+The following articles provide information about validating IRP input values:
 
 [DispatchReadWrite Using Buffered I/O](https://msdn.microsoft.com/library/windows/hardware/ff543388)
 
@@ -221,6 +217,10 @@ Validate all values that are associated with an IRP, such as buffer addresses an
 
 [Security Issues for I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff563700)
 
+Consider validating values that are associated with an IRP, such as buffer addresses and lengths. 
+
+If you chose to use Neither I/O, be aware that unlike Read and Write, and unlike Buffered I/O and Direct I/O, that when using Neither I/O IOCTL the buffer pointers and lengths are not validated by the I/O Manager.  
+
 
 **Handle IRP completion operations properly**
 
@@ -228,7 +228,7 @@ A driver must never complete an IRP with a status value of STATUS\_SUCCESS unles
 
 **Manage driver IRP pending state**
 
-The driver should mark the IRP pending before it saves the IRP, and should include both the call to [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422) and the assignment in an interlocked sequence. For more information, see [Failure to Check a Driver's State](https://msdn.microsoft.com/library/windows/hardware/ff545672).
+The driver should mark the IRP pending before it saves the IRP, and should consider including both the call to [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422) and the assignment in an interlocked sequence. For more information, see [Failure to Check a Driver's State](https://msdn.microsoft.com/library/windows/hardware/ff545672) and [Holding Incoming IRPs When A Device Is Paused](https://docs.microsoft.com/windows-hardware/drivers/kernel/holding-incoming-irps-when-a-device-is-paused).
 
 **Handle IRP cancellation operations properly**
 
