@@ -115,9 +115,9 @@ After you submit your product for the Windows Hardware Compatibility Program for
 
 14. You can monitor the progress of your driver update with the progress tracker at the top of the page. Once all steps show a green check, the update is complete.
 
-## Register an extension ID for your extension INF submission
+## Register an extension ID for your extension INF
 
-To register an extension ID for your extension INF submission, submit a support ticket to the Windows Hardware Dev Center Dashboard support team titled "Request for ExtensionID to be registered." In the ticket, specify your seller/publisher ID, and the ExtensionID generated within the INF file. See [Using an extension INF file](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-an-extension-inf-file) for more information about specifying an ExtensionID in your INF. Please note that the SLA to register an extension ID is 2 weeks.
+To register an extension ID for your extension INF, submit a support ticket to the Windows Hardware Dev Center Dashboard support team titled "Request for ExtensionID to be registered." In the ticket, specify your seller/publisher ID, and the ExtensionID generated within the INF file. See [Using an extension INF file](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-an-extension-inf-file) for more information about specifying an ExtensionID in your INF. Please note that the SLA to register an extension ID is 2 weeks.
 
 
  
