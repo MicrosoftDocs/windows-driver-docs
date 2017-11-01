@@ -841,6 +841,7 @@
 ## [NDIS core functionality OIDs](ndis-core-functionality-oids.md)
 ### [NDIS general statistics OIDs](ndis-general-statistics-oids.md)
 ### [NDIS network interface OIDs](ndis-network-interface-oids.md)
+### [Mandatory OIDs for miniport drivers](mandatory-oids-for-miniport-drivers.md)
 ## [NDIS core functionality status indications](ndis-core-functionality-status-indications.md)
 ### [NDIS General Status Indications](ndis-general-status-indications.md)
 #### [NDIS_STATUS_MEDIA_CONNECT](ndis-status-media-connect.md)
