@@ -119,6 +119,7 @@ After you submit your product for the Windows Hardware Compatibility Program for
 
 To register an extension ID for your extension INF, submit a support ticket to the Windows Hardware Dev Center Dashboard support team titled "Request for ExtensionID to be registered." In the ticket, specify your seller/publisher ID, and the ExtensionID generated within the INF file. See [Using an extension INF file](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-an-extension-inf-file) for more information about specifying an ExtensionID in your INF. Please note that the SLA to register an extension ID is 2 weeks.
 
+Note that in your submissions, you may only use ExtensionIDs that are registered to your account. 
 
  
 
