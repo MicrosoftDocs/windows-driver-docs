@@ -282,21 +282,32 @@ For additional information about C and C++ secure coding, see [Secure coding res
 
 ## <span id="ManagingDriverAccessControl"></span><span id="managingdriveraccesscontrol"></span><span id="MANAGINGDRIVERACCESSCONTROL"></span>Manage driver access control
 
-**Security checklist item \#7:** *Review your driver to make sure that your are properly controlling access.*
+**Security checklist item \#7:** *Review your driver to make sure that you are properly controlling access.*
 
-**Managing driver access control**
+**Managing driver access control - WDF**
 
 Drivers must work to prevent users from inappropriately accessing a computer's devices and files. To prevent unauthorized access to devices and files, you must:
 
 -   Name device objects only when necessary. Named device objects are generally only necessary for legacy reasons, for example if you have an application that expects to open the device using a particular name or if you’re using a non-PNP device/control device.  Note that WDF drivers do not need to name their PnP device FDO in order to create a symbolic link using [WdfDeviceCreateSymbolicLink](https://msdn.microsoft.com/library/windows/hardware/ff545939.aspx).
+
 -   Secure access to device objects and interfaces. 
-    - If you use a named device object you can use [IoCreateDeviceSecure](https://msdn.microsoft.com/library/windows/hardware/ff548407.aspx) and specify a SDDL to secure it. When you implement [IoCreateDeviceSecure](https://msdn.microsoft.com/library/windows/hardware/ff548407.aspx) always specify a custom class GUID for DeviceClassGuid. You should not specify an existing class GUID here. Doing so has the potential to break security settings or compatibility for other devices belonging to that class. For more information, see [WdmlibIoCreateDeviceSecure](https://msdn.microsoft.com/library/windows/hardware/mt800803.aspx).
-    - In order to allow applications or other WDF drivers to access your PnP device FDO, you should use device interfaces. For more information, see [Using Device Interfaces](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-device-interfaces). A device interface serves as a symbolic link to your device stack’s PDO. Once way to control access to the PDO is by specifying an SDDL string in your INF. If the SDDL string is not in the INF file, Windows will apply a default security descriptor. For more information, see [Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects) and [SDDL for Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/sddl-for-device-objects).
 
+In order to allow applications or other WDF drivers to access your PnP device FDO, you should use device interfaces. For more information, see [Using Device Interfaces](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-device-interfaces). A device interface serves as a symbolic link to your device stack’s PDO. 
 
-For more information, see the following articles:
+One of the betters way to control access to the PDO is by specifying an SDDL string in your INF. If the SDDL string is not in the INF file, Windows will apply a default security descriptor. For more information, see [Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects) and [SDDL for Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/sddl-for-device-objects). 
+
+For more information about controlling access, see the following articles:
 
 [Controlling Device Access in KMDF Drivers](https://msdn.microsoft.com/windows/hardware/drivers/wdf/controlling-device-access-in-kmdf-drivers)
+
+"Names, Security Descriptors and Device Classes - Making Device Objects Accessible… and SAFE" on page 6 of the *January February 2017 The NT Insider Newsletter* published by [OSR](http://www.osr.com).
+
+
+**Managing driver access control - WDM**
+
+If you are working with a WDM Driver and you used a named device object you can use [IoCreateDeviceSecure](https://msdn.microsoft.com/library/windows/hardware/ff548407.aspx) and specify a SDDL to secure it. When you implement [IoCreateDeviceSecure](https://msdn.microsoft.com/library/windows/hardware/ff548407.aspx) always specify a custom class GUID for DeviceClassGuid. You should not specify an existing class GUID here. Doing so has the potential to break security settings or compatibility for other devices belonging to that class. For more information, see [WdmlibIoCreateDeviceSecure](https://msdn.microsoft.com/library/windows/hardware/mt800803.aspx).
+   
+For more information, see the following articles:
 
 [Controlling Device Access](https://msdn.microsoft.com/library/windows/hardware/ff542063)
 
@@ -304,7 +315,8 @@ For more information, see the following articles:
 
 [Controlling driver access](controlling-driver-access.md)
 
-"Names, Security Descriptors and Device Classes " on page 6 of the *January February 2017 The NT Insider Newsletter* published by [OSR](http://www.osr.com).
+[Windows security model for driver developers](windows-security-model.md)
+
 
 **Security Identifiers (SIDs) risk hierarchy** 
 
@@ -326,23 +338,17 @@ AC (Application Container)
 
 Following the general least privilege security principle, configure only the minimum level of access that is required for your driver to function.
 
-**Granular IOCTL security control**
+** WDM Granular IOCTL security control**
 
-To tighten security when such IOCTLs are sent by user-mode callers, the driver code can include the [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/library/windows/hardware/ff550418.aspx) function. This function allows a driver to check access rights. Upon receiving an IOCTL, a driver can call [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/library/windows/hardware/ff550418.aspx), specifying FILE_READ_ACCESS, FILE_WRITE_ACCESS, or both. 
+To further manage security when such IOCTLs are sent by user-mode callers, the driver code can include the [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/library/windows/hardware/ff550418.aspx) function. This function allows a driver to check access rights. Upon receiving an IOCTL, a driver can call [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/library/windows/hardware/ff550418.aspx), specifying FILE_READ_ACCESS, FILE_WRITE_ACCESS, or both. 
+
+Implementing granular IOCTL security control does not replace the need to manage driver access, using the techniques discussed above.
 
 For more information, see the following articles:
 
 [Define and handle IOCTLs securely](https://msdn.microsoft.com/library/windows/hardware/dn613909.aspx#define_and_handle_ioctls_securely)
 
-[IoValidateDeviceIoControlAccess routine](https://msdn.microsoft.com/library/windows/hardware/ff550418.aspx)
-
-[WdmlibIoValidateDeviceIoControlAccess function](https://msdn.microsoft.com/library/windows/hardware/mt800806.aspx)
-
 [Defining I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/defining-i-o-control-codes)
-
-**General Windows security model information**
-
-[Windows security model for driver developers](windows-security-model.md)
 
 
 
