@@ -1,7 +1,7 @@
 ---
 title: NDIS_STATUS_WWAN_SERVICE_ACTIVATION
 author: windows-driver-content
-description: Miniport drivers use the NDIS\_STATUS\_WWAN\_SERVICE\_ACTIVATION notification to respond to OID set requests of OID\_WWAN\_SERVICE\_ACTIVATION.
+description: Miniport drivers use the NDIS_STATUS_WWAN_SERVICE_ACTIVATION notification to respond to OID set requests of OID_WWAN_SERVICE_ACTIVATION.
 ms.assetid: c5700759-b903-4564-a8b8-c49140d2acd3
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

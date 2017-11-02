@@ -1,7 +1,7 @@
 ---
 title: OID_PNP_ENABLE_WAKE_UP
 author: windows-driver-content
-description: OID\_PNP\_ENABLE\_WAKE\_UP
+description: OID_PNP_ENABLE_WAKE_UP
 ms.assetid: 9afe774b-a429-413f-a7b6-3a3d79d2b95f
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

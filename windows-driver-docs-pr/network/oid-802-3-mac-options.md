@@ -1,7 +1,7 @@
 ---
 title: OID_802_3_MAC_OPTIONS
 author: windows-driver-content
-description: OID\_802\_3\_MAC\_OPTIONS
+description: OID_802_3_MAC_OPTIONS
 ms.assetid: 9c1f29ad-6a2c-4cb4-b402-bd86e851dc2d
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

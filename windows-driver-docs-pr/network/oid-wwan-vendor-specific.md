@@ -1,7 +1,7 @@
 ---
 title: OID_WWAN_VENDOR_SPECIFIC
 author: windows-driver-content
-description: OID\_WWAN\_VENDOR\_SPECIFIC allows miniport drivers to implement vendor specific objects.
+description: OID_WWAN_VENDOR_SPECIFIC allows miniport drivers to implement vendor specific objects.
 ms.assetid: 7c1843bc-3d60-437c-a24d-6da82262a468
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

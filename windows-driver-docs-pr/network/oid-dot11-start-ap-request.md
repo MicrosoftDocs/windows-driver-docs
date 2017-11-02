@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_START_AP_REQUEST
 author: windows-driver-content
-description: OID\_DOT11\_START\_AP\_REQUEST
+description: OID_DOT11_START_AP_REQUEST
 ms.assetid: b37ce67b-e80e-4b34-a810-89d438ed848f
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

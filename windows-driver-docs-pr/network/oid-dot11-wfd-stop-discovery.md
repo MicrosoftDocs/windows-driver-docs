@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_WFD_STOP_DISCOVERY
 author: windows-driver-content
-description: OID\_DOT11\_WFD\_STOP\_DISCOVERY is used to request the Wi-Fi Direct Device to stop any ongoing P2P discovery operation.
+description: OID_DOT11_WFD_STOP_DISCOVERY is used to request the Wi-Fi Direct Device to stop any ongoing P2P discovery operation.
 ms.assetid: 3180CE98-E8A0-4505-B2E6-766442A820FD
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

@@ -1,7 +1,7 @@
 ---
 title: OID_RECEIVE_FILTER_ENUM_QUEUES
 author: windows-driver-content
-description: Overlying drivers and user-mode applications issue object identifier (OID) query requests of OID\_RECEIVE\_FILTER\_ENUM\_QUEUES to obtain a list of all the receive queues that are allocated on a network adapter.
+description: Overlying drivers and user-mode applications issue object identifier (OID) query requests of OID_RECEIVE_FILTER_ENUM_QUEUES to obtain a list of all the receive queues that are allocated on a network adapter.
 ms.assetid: e8a946a2-9ee9-42a0-8175-fbc592d404d1
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

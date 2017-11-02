@@ -1,7 +1,7 @@
 ---
 title: HS_PLUGIN_VERSION structure
 author: windows-driver-content
-description: The HS\_PLUGIN\_VERSION structure contains the minimum and maximum hotspot host versions supported by the plugin.
+description: The HS_PLUGIN_VERSION structure contains the minimum and maximum hotspot host versions supported by the plugin.
 ms.assetid: ced24606-0379-4b13-831c-11de3ed6cd2b
 keywords: 
 - HS_PLUGIN_VERSION structure Network Drivers Starting with Windows Vista

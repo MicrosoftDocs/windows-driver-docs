@@ -1,7 +1,7 @@
 ---
 title: OID_WWAN_RADIO_STATE
 author: windows-driver-content
-description: OID\_WWAN\_RADIO\_STATE sets or returns information about a MB device's radio power state.
+description: OID_WWAN_RADIO_STATE sets or returns information about a MB device's radio power state.
 ms.assetid: e6d09ae8-65c8-4544-9581-8937f61f0747
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

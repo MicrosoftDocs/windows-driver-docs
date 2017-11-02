@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_DESIRED_BSSID_LIST
 author: windows-driver-content
-description: When set, the OID\_DOT11\_DESIRED\_BSSID\_LIST object identifier (OID) requests that the miniport driver set the value of the Extensible Station (ExtSTA) msDot11DesiredBSSIDList management information base (MIB) object to the specified data.
+description: When set, the OID_DOT11_DESIRED_BSSID_LIST object identifier (OID) requests that the miniport driver set the value of the Extensible Station (ExtSTA) msDot11DesiredBSSIDList management information base (MIB) object to the specified data.
 ms.assetid: 17989e77-0a75-48f3-8fda-e9f9cf124f1a
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

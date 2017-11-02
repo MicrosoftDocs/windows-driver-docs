@@ -1,7 +1,7 @@
 ---
 title: OID_SRIOV_READ_VF_CONFIG_BLOCK
 author: windows-driver-content
-description: An overlying driver issues an object identifier (OID) method request of OID\_SRIOV\_READ\_VF\_CONFIG\_BLOCK to read data from a specified PCI Express (PCIe) Virtual Function (VF) configuration block.
+description: An overlying driver issues an object identifier (OID) method request of OID_SRIOV_READ_VF_CONFIG_BLOCK to read data from a specified PCI Express (PCIe) Virtual Function (VF) configuration block.
 ms.assetid: A7AC7A18-5DA2-4EE8-B635-04616ABFE08C
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

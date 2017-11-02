@@ -1,7 +1,7 @@
 ---
 title: OID_WWAN_DEVICE_CAPS_EX
 author: windows-driver-content
-description: OID\_WWAN\_DEVICE\_CAPS\_EX is a similar but different OID from OID\_WWAN\_DEVICE\_CAPS.
+description: OID_WWAN_DEVICE_CAPS_EX is a similar but different OID from OID_WWAN_DEVICE_CAPS.
 ms.assetid: BE664B41-3FE7-4E93-8739-12BD2F0AE5B8
 keywords:
 - OID_WWAN_DEVICE_CAPS_EX, OID per executor, device capability ex

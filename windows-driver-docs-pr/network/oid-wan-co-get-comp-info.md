@@ -1,7 +1,7 @@
 ---
 title: OID_WAN_CO_GET_COMP_INFO
 author: windows-driver-content
-description: The OID\_WAN\_CO\_GET\_COMP\_INFO OID requests the miniport driver to return information about the capabilities of the NIC or of its driver, in particular whether either supports compression.
+description: The OID_WAN_CO_GET_COMP_INFO OID requests the miniport driver to return information about the capabilities of the NIC or of its driver, in particular whether either supports compression.
 ms.assetid: a2525548-ca5a-47a8-ab19-e0469913f6be
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

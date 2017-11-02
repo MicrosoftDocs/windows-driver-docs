@@ -1,7 +1,7 @@
 ---
 title: OID_QOS_PARAMETERS
 author: windows-driver-content
-description: The Data Center Bridging (DCB) component (Msdcb.sys) issues an object identifier (OID) method request of OID\_QOS\_PARAMETERS to configure the local NDIS Quality of Service (QoS) parameters on a network adapter.
+description: The Data Center Bridging (DCB) component (Msdcb.sys) issues an object identifier (OID) method request of OID_QOS_PARAMETERS to configure the local NDIS Quality of Service (QoS) parameters on a network adapter.
 ms.assetid: 1CA97C8A-8F5B-4AB2-B68E-DF1FA772C08F
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

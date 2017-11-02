@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_ED_THRESHOLD
 author: windows-driver-content
-description: OID\_DOT11\_ED\_THRESHOLD
+description: OID_DOT11_ED_THRESHOLD
 ms.assetid: 7cdccb9b-e12d-44c3-8149-64007d0da59a
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

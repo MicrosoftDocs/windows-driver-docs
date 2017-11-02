@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_SHORT_PREAMBLE_OPTION_IMPLEMENTED
 author: windows-driver-content
-description: OID\_DOT11\_SHORT\_PREAMBLE\_OPTION\_IMPLEMENTED
+description: OID_DOT11_SHORT_PREAMBLE_OPTION_IMPLEMENTED
 ms.assetid: dac3e058-ab18-4a06-aea2-76aa15bd1e10
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

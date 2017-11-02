@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_QOS_PARAMS
 author: windows-driver-content
-description: When set, the OID\_DOT11\_QOS\_PARAMS object identifier (OID) requests that the miniport driver set quality of service (QoS) parameters for the 802.11 station.
+description: When set, the OID_DOT11_QOS_PARAMS object identifier (OID) requests that the miniport driver set quality of service (QoS) parameters for the 802.11 station.
 ms.assetid: c7f767bb-95ff-4d66-b0ca-0a658c31dbb0
 ms.author: windowsdriverdev
 ms.date: 08/08/2017
