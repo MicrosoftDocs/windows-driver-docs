@@ -292,7 +292,7 @@ Drivers must work to prevent users from inappropriately accessing a computer's d
 
 -   Secure access to device objects and interfaces. 
 
-In order to allow applications or other WDF drivers to access your PnP device FDO, you should use device interfaces. For more information, see [Using Device Interfaces](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-device-interfaces). A device interface serves as a symbolic link to your device stack’s PDO. 
+In order to allow applications or other WDF drivers to access your PnP device PDO, you should use device interfaces. For more information, see [Using Device Interfaces](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-device-interfaces). A device interface serves as a symbolic link to your device stack’s PDO. 
 
 One of the betters way to control access to the PDO is by specifying an SDDL string in your INF. If the SDDL string is not in the INF file, Windows will apply a default security descriptor. For more information, see [Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects) and [SDDL for Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/sddl-for-device-objects). 
 
@@ -340,9 +340,9 @@ Following the general least privilege security principle, configure only the min
 
 ** WDM Granular IOCTL security control**
 
-To further manage security when such IOCTLs are sent by user-mode callers, the driver code can include the [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/library/windows/hardware/ff550418.aspx) function. This function allows a driver to check access rights. Upon receiving an IOCTL, a driver can call [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/library/windows/hardware/ff550418.aspx), specifying FILE_READ_ACCESS, FILE_WRITE_ACCESS, or both. 
+To further manage security when IOCTLs are sent by user-mode callers, the driver code can include the [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/library/windows/hardware/ff550418.aspx) function. This function allows a driver to check access rights. Upon receiving an IOCTL, a driver can call [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/library/windows/hardware/ff550418.aspx), specifying FILE_READ_ACCESS, FILE_WRITE_ACCESS, or both. 
 
-Implementing granular IOCTL security control does not replace the need to manage driver access, using the techniques discussed above.
+Implementing granular IOCTL security control does not replace the need to manage driver access using the techniques discussed above.
 
 For more information, see the following articles:
 
