@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_WFD_START_GO_REQUEST
 author: windows-driver-content
-description: When set, the OID\_DOT11\_WFD\_START\_GO\_REQUEST object identifier (OID) requests that the Wi-Fi Direct (WFD) Group Owner (GO) start the group.
+description: When set, the OID_DOT11_WFD_START_GO_REQUEST object identifier (OID) requests that the Wi-Fi Direct (WFD) Group Owner (GO) start the group.
 ms.assetid: 1512E48E-5498-4261-BA04-14581F1FD70F
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

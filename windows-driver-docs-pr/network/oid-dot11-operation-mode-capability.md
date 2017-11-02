@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_OPERATION_MODE_CAPABILITY
 author: windows-driver-content
-description: When queried, the OID\_DOT11\_OPERATION\_MODE\_CAPABILITY object identifier (OID) requests that the miniport driver return the Native 802.11 operation modes that it supports.
+description: When queried, the OID_DOT11_OPERATION_MODE_CAPABILITY object identifier (OID) requests that the miniport driver return the Native 802.11 operation modes that it supports.
 ms.assetid: d56151e0-8390-4639-bb2f-8fd27c3ddcf4
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

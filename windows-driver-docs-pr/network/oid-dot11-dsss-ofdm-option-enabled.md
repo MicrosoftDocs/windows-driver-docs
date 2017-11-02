@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_DSSS_OFDM_OPTION_ENABLED
 author: windows-driver-content
-description: OID\_DOT11\_DSSS\_OFDM\_OPTION\_ENABLED
+description: OID_DOT11_DSSS_OFDM_OPTION_ENABLED
 ms.assetid: 17d1b975-093d-4d82-bbb9-3f678e8e4ac8
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

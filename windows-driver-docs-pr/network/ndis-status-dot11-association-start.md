@@ -1,7 +1,7 @@
 ---
 title: NDIS_STATUS_DOT11_ASSOCIATION_START
 author: windows-driver-content
-description: A miniport driver must make an NDIS\_STATUS\_DOT11\_ASSOCIATION\_START indication before it initiates an association operation with either an access point (AP) (for infrastructure BSS networks) or peer station (for independent BSS (IBSS) networks).Note  IBSS (Ad hoc) and SoftAP are deprecated. Starting with Windows 8.1 and Windows Server 2012 R2, use Wi-Fi Direct.�
+description: A miniport driver must make an NDIS_STATUS_DOT11_ASSOCIATION_START indication before it initiates an association operation with either an access point (AP) (for infrastructure BSS networks) or peer station (for independent BSS (IBSS) networks).Note  IBSS (Ad hoc) and SoftAP are deprecated. Starting with Windows 8.1 and Windows Server 2012 R2, use Wi-Fi Direct.�
 ms.assetid: be5d3c95-3080-496f-83cd-1a7e329102ff
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

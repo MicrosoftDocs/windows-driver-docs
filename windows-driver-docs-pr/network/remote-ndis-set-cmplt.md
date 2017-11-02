@@ -1,7 +1,7 @@
 ---
 title: 'REMOTE_NDIS_SET_CMPLT'
 author: windows-driver-content
-Description: 'A Remote NDIS device will respond to a REMOTE\_NDIS\_SET\_MSG message with a REMOTE\_NDIS\_SET\_CMPLT message.'
+Description: 'A Remote NDIS device will respond to a REMOTE_NDIS_SET_MSG message with a REMOTE_NDIS_SET_CMPLT message.'
 ms.assetid: 97436a5f-7516-46cf-b789-a6b1c8c067a2
 ms.author: windowsdriverdev
 ms.date: 07/31/2017

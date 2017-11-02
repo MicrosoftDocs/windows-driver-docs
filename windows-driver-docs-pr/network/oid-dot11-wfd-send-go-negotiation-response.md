@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_WFD_SEND_GO_NEGOTIATION_RESPONSE
 author: windows-driver-content
-description: When set, the OID\_DOT11\_WFD\_SEND\_GO\_NEGOTIATION\_RESPONSE object identifier (OID) provides the miniport driver with the parameters for a Group Owner (GO) negotiation request.
+description: When set, the OID_DOT11_WFD_SEND_GO_NEGOTIATION_RESPONSE object identifier (OID) provides the miniport driver with the parameters for a Group Owner (GO) negotiation request.
 ms.assetid: 2D13222D-1936-4676-B20E-D26E3B219FC2
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

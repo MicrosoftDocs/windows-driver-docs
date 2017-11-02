@@ -1,7 +1,7 @@
 ---
 title: OID_NIC_SWITCH_VF_PARAMETERS
 author: windows-driver-content
-description: An overlying driver or user-mode application issues an object identifier (OID) method request of OID\_NIC\_SWITCH\_VF\_PARAMETERS to obtain the current configuration parameters of a PCI Express (PCIe) Virtual Function (VF) on a network adapter.
+description: An overlying driver or user-mode application issues an object identifier (OID) method request of OID_NIC_SWITCH_VF_PARAMETERS to obtain the current configuration parameters of a PCI Express (PCIe) Virtual Function (VF) on a network adapter.
 ms.assetid: DF08B0BA-6D86-4C4F-AC38-8A401F097925
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

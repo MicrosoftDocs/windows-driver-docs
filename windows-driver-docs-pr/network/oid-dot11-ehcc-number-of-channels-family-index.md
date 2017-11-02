@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_EHCC_NUMBER_OF_CHANNELS_FAMILY_INDEX
 author: windows-driver-content
-description: OID\_DOT11\_EHCC\_NUMBER\_OF\_CHANNELS\_FAMILY\_INDEX
+description: OID_DOT11_EHCC_NUMBER_OF_CHANNELS_FAMILY_INDEX
 ms.assetid: bbaaa263-f1d8-432d-8d7c-c6f294f1b2f1
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

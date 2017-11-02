@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_DIVERSITY_SUPPORT
 author: windows-driver-content
-description: OID\_DOT11\_DIVERSITY\_SUPPORT
+description: OID_DOT11_DIVERSITY_SUPPORT
 ms.assetid: 9e04f9cc-b638-45ac-a1a6-c099ae889018
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

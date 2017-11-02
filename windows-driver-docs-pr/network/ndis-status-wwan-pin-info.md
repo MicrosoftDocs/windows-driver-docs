@@ -1,7 +1,7 @@
 ---
 title: NDIS_STATUS_WWAN_PIN_INFO
 author: windows-driver-content
-description: Miniport drivers use the NDIS\_STATUS\_WWAN\_PIN\_INFO notification to respond to OID query and set requests of OID\_WWAN\_PIN. Miniport drivers cannot use this notification to send unsolicited events.This notification uses the NDIS\_WWAN\_PIN\_INFO structure.
+description: Miniport drivers use the NDIS_STATUS_WWAN_PIN_INFO notification to respond to OID query and set requests of OID_WWAN_PIN. Miniport drivers cannot use this notification to send unsolicited events.This notification uses the NDIS_WWAN_PIN_INFO structure.
 ms.assetid: fa3c2467-2240-423b-b91b-f7e19d5be353
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

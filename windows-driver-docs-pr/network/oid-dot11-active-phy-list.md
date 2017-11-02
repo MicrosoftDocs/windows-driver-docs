@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_ACTIVE_PHY_LIST
 author: windows-driver-content
-description: OID\_DOT11\_ACTIVE\_PHY\_LIST
+description: OID_DOT11_ACTIVE_PHY_LIST
 ms.assetid: d285248b-aae8-440c-a63f-9acdf7379eb1
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

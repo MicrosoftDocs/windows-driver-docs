@@ -1,7 +1,7 @@
 ---
 title: OID_WWAN_AUTH_CHALLENGE
 author: windows-driver-content
-description: OID\_WWAN\_AUTH\_CHALLENGE sends an authentication challenge to the MB device, or Subscriber Identity Module (SIM) card, to obtain the response from the SIM.n NDIS\_STATUS\_WWAN\_AUTHENTICATION\_RESPONSE status notification containing an NDIS\_WWAN\_AUTHENTICATION\_RESPONSE structure to provide the authentication keys requested based on challenges by the caller when completing query requests.
+description: OID_WWAN_AUTH_CHALLENGE sends an authentication challenge to the MB device, or Subscriber Identity Module (SIM) card, to obtain the response from the SIM.n NDIS_STATUS_WWAN_AUTHENTICATION_RESPONSE status notification containing an NDIS_WWAN_AUTHENTICATION_RESPONSE structure to provide the authentication keys requested based on challenges by the caller when completing query requests.
 ms.assetid: C39300F2-DF14-4DA8-9BD2-83593CC29837
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

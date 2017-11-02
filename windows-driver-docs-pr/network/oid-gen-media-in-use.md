@@ -1,7 +1,7 @@
 ---
 title: OID_GEN_MEDIA_IN_USE
 author: windows-driver-content
-description: As a query, the OID\_GEN\_MEDIA\_IN\_USE OID specifies a complete list of the media types that the NIC currently uses.
+description: As a query, the OID_GEN_MEDIA_IN_USE OID specifies a complete list of the media types that the NIC currently uses.
 ms.assetid: 3b8db63d-07e0-4a5c-9848-57e594e3dd54
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

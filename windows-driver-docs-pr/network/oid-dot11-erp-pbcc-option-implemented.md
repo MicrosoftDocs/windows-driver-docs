@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_ERP_PBCC_OPTION_IMPLEMENTED
 author: windows-driver-content
-description: OID\_DOT11\_ERP\_PBCC\_OPTION\_IMPLEMENTED
+description: OID_DOT11_ERP_PBCC_OPTION_IMPLEMENTED
 ms.assetid: 60e9737e-a97b-4d25-afa0-50d93aef773c
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

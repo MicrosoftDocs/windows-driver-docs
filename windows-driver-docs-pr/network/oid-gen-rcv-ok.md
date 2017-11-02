@@ -1,7 +1,7 @@
 ---
 title: OID_GEN_RCV_OK
 author: windows-driver-content
-description: As a query, the OID\_GEN\_RCV\_OK OID specifies the number of frames that the NIC receives without errors and indicates to bound protocols.
+description: As a query, the OID_GEN_RCV_OK OID specifies the number of frames that the NIC receives without errors and indicates to bound protocols.
 ms.assetid: 737ac1a5-9f7a-422b-9ccf-42a3176639bc
 ms.author: windowsdriverdev
 ms.date: 08/08/2017
