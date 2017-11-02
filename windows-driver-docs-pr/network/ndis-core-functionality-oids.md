@@ -2,7 +2,7 @@
 title: NDIS core functionality OIDs
 description: This section describes core functionality OIDs for all NDIS drivers
 keywords: ["NDIS core functionality OIDs", "WDK NDIS core functionality OIDs", "WDK network core functionality OIDs"]
-ms.assetid: 2DFDB362-1E34-4E1D-A549-F9909B068315
+ms.assetid: 2b9dc4c2-7f4e-42c9-9629-f89d5970f8f1
 ms.author: windows-driver-content
 ms.date: 04/20/2017
 ms.topic: article

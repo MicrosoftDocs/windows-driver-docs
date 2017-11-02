@@ -2,7 +2,7 @@
 title: Mandatory OIDs for miniport drivers
 author: windows-driver-content
 description: This topic describes mandatory OIDs for miniport drivers 
-ms.assetid: 951279D5-F849-4293-A75D-2CCD0BCD1659
+ms.assetid: e4a620b4-de8f-4c1a-be94-b0ec97fa9791
 keywords:
 - Mandatory OIDs for miniport drivers, mandatory NDIS OIDs, mandatory OIDs WDK, mandatory OIDs networking
 ms.author: windowsdriverdev
@@ -17,8 +17,8 @@ ms.technology: windows-devices
 The following table lists the OIDs that are mandatory for all miniport drivers. Your miniport driver will be required to support additional OIDs, depending on its NDIS version and the services that it supports, such as:
 
 - Connection-Oriented Objects 
-- CoNDIS WAN Objects 
-- Ethernet Objects 
+- CoNDIS  
+- Ethernet statistics OIDs 
 - Header-Data Split OIDs 
 - Hyper-V Extensible Switch OIDs 
 - IPsec Offload Version 2 OIDs 

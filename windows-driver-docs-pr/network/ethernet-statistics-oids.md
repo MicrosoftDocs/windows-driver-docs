@@ -2,7 +2,7 @@
 title: Ethernet statistics OIDs
 author: windows-driver-content
 description: This topic describes Ethernet statistics OIDs 
-ms.assetid: 0A198937-791A-4BCB-9C5A-ECE1F8DAD463
+ms.assetid: b38ec79d-d8f3-46fa-9e6f-d42fa18f467c
 keywords:
 - Ethernet statistics OIDs, Ethernet NDIS OIDs, Ethernet OIDs WDK, Ethernet OIDs networking
 ms.author: windowsdriverdev
