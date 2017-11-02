@@ -98,10 +98,11 @@ For information about creating and digitally signing an **.hckx** file, see the 
 
 11. Review the results. If your submission failed, make any necessary changes and resubmit.
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
-
-[Manage hardware submissions](manage-your-hardware-submissions.md)
+   *  [Managing hardware submissions in the Windows Hardware Dev Center dashboard](manage-your-hardware-submissions.md)
+   *  [Get drivers signed by Microsoft for multiple Windows versions](get-drivers-signed-by-microsoft-for-multiple-windows-versions.md)
+   *  [Driver flighting](driver-flighting.md)
 
  
 
