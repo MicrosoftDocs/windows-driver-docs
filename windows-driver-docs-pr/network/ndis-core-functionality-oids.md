@@ -18,7 +18,7 @@ This section contains topics describing the following categories of OIDS that ar
 
 [NDIS network interface OIDs](ndis-network-interface-oids.md)
 
-[Mandatory OIDs for miniport drivers](mandatory-oids-for-miniport-drivers)
+[Mandatory OIDs for miniport drivers](mandatory-oids-for-miniport-drivers.md)
 
 [Ethernet statistics OIDs](ethernet-statistics-oids.md)
 
