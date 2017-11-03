@@ -1,15 +1,15 @@
 ---
-title:  Controlling driver access
+title:  Controlling WDM driver access
 description: This article describes steps you can take to help control access to your driver.
 ms.assetid: 7908AC6E-93EA-4EF1-8086-701F76160DFE
 ms.author: windowsdriverdev
-ms.date: 09/29/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Controlling driver access
+# Controlling WDM driver access
 
 This article describes steps you can take to help control access to your driver.
 
@@ -27,33 +27,36 @@ Device drivers are responsible for ensuring that unauthorized users do not have 
 
 Every device object has a security descriptor, which contains an ACL that controls access to the device. In general, the security descriptor is created at the same time as the device object, and the ACL is specified in the INF file for the device, but the details vary depending on the position of the driver in the device stack and the type of device it controls. The following sections describe the specific requirements for:
 
--   Bus drivers
+-   WDM Bus drivers
 -   Other Plug and Play and Windows Driver Model (WDM) drivers
 -   Legacy devices
 
-### <span id="bus"></span><span id="BUS"></span>Bus drivers
+### <span id="bus"></span><span id="BUS"></span>WDM Bus drivers
 
-A WDM bus driver for a device that can be run in raw mode must use the **IoCreateDeviceSecure** routine to create its physical device object (PDO) and set a strong default ACL. For example, the ACL for a raw-mode device PDO might set SDDL\_DEVOBJ\_SYS\_ALL, which allows access for the System (SY) but denies access for everyone else: “D:P(A;;GA;;;SY)”.
+A WDM bus driver for a device that can be run in raw mode must use the [IoCreateDeviceSecure](https://msdn.microsoft.com/library/windows/hardware/ff548407.aspx) routine to create its physical device object (PDO) and set a strong default ACL. For example, the ACL for a raw-mode device PDO might set SDDL\_DEVOBJ\_SYS\_ALL, which allows access for the System (SY) but denies access for everyone else: “D:P(A;;GA;;;SY)”.
 
 This ACL blocks even the Administrator from accessing the device. However, the INF file for the device can loosen the ACL to allow access by the Administrator or other valid users. Because a raw-mode device can be started without an INF file, specifying a strong default ACL when creating the device object is critical. Otherwise, if the device has no INF file, a user could gain access to the device without any security checks whatsoever.
 
-If the device cannot be used in raw mode, the driver can call either the **IoCreateDevice** or the **IoCreateDeviceSecure** routine to create the device object. If the driver uses **IoCreateDevice**, the PnP Manager applies a default security descriptor just as it does for other WDM device objects. However, if the PDO requires stricter security settings than the default provides, the INF file should supply a security descriptor.
+If the device cannot be used in raw mode, the driver can call either the [IoCreateDevice](https://msdn.microsoft.com/library/windows/hardware/ff548397.aspx) or the [IoCreateDeviceSecure](https://msdn.microsoft.com/library/windows/hardware/ff548407.aspx) routine to create the device object. If the driver uses **IoCreateDevice**, the PnP Manager applies a default security descriptor just as it does for other WDM device objects. However, if the PDO requires stricter security settings than the default provides, the INF file should supply a security descriptor.
 
 ### <span id="Plug_and_Play_and_WDM_drivers"></span><span id="plug_and_play_and_wdm_drivers"></span><span id="PLUG_AND_PLAY_AND_WDM_DRIVERS"></span>Plug and Play and WDM drivers
 
-Plug and Play (PnP) and WDM drivers (except for bus drivers, as described above) call the **IoCreateDevice** routine to create an unnamed device object. The PnP Manager applies a default security descriptor to each such unnamed device object.
+Plug and Play (PnP) and WDM drivers (except for bus drivers, as described above) call the [IoCreateDevice](https://msdn.microsoft.com/library/windows/hardware/ff548397.aspx) routine to create an unnamed device object. The PnP Manager applies a default security descriptor to each such unnamed device object.
 
 The INF file for the device should specify the device-specific ACL. The PnP Manager ensures that the ACL is applied to all device objects in the device stack, thereby securing the entire stack before allowing other processes any access to the device.
 
 In the INF file, ACLs are specified in SDDL and appear in an AddReg section. The AddReg section can also set device characteristics, such as FILE\_DEVICE\_SECURE\_OPEN.
 
-Plug and Play and WDM drivers must not use the **IoCreateDeviceSecure** routine to create device objects that attach to the device stack. However, some Plug and Play drivers create named control device objects, which do not attach to the device stacks. Such control device objects must be created with the **IoCreateDeviceSecure** routine.
+Plug and Play and WDM drivers must not use the [IoCreateDeviceSecure](https://msdn.microsoft.com/library/windows/hardware/ff548407.aspx) routine to create device objects that attach to the device stack. However, some Plug and Play drivers create named control device objects, which do not attach to the device stacks. Such control device objects must be created with the [IoCreateDeviceSecure](https://msdn.microsoft.com/library/windows/hardware/ff548407.aspx) routine.
 
 ### <span id="Legacy_devices"></span><span id="legacy_devices"></span><span id="LEGACY_DEVICES"></span>Legacy devices
 
 A legacy device is a device that is not controlled by the PnP Manager. Legacy drivers must create at least one named device object in the \\Device object directory to receive I/O requests.
 
-To secure the device object for a legacy device, its driver must call the **IoCreateDeviceSecure** routine to create a named device object and to set the default security descriptor and class GUID for the device. The security descriptor should specify a strong default ACL, such as SDDL\_DEVOBJ\_SYS\_ALL. This setting allows kernel-mode code and user-mode code running as System to access the device object. At run time, the driver’s service (running as System) can open the device to individual users by using the **SetFileSecurity** user-mode function.
+To secure the device object for a legacy device, its driver must call the [IoCreateDeviceSecure](https://msdn.microsoft.com/library/windows/hardware/ff548407.aspx) routine to create a named device object and to set the default security descriptor and class GUID for the device. The security descriptor should specify a strong default ACL, such as SDDL\_DEVOBJ\_SYS\_ALL. This setting allows kernel-mode code and user-mode code running as System to access the device object. At run time, the driver’s service (running as System) can open the device to individual users by using the **SetFileSecurity** user-mode function.
+
+For more information about creating secure device objects, see [Controlling Device Access](https://docs.microsoft.com/windows-hardware/drivers/kernel/controlling-device-access).
+
 
 
 ## <span id="Secure-the-device-namespace"></span><span id="secure-the-device-namespace"></span><span id="SECURE-THE-DEVICE-NAMESPACE"></span>Secure the device namespace
@@ -246,7 +249,6 @@ For more information about working with handles, refer to these topics.
 
 [Failure to Validate Object Handles](https://docs.microsoft.com/windows-hardware/drivers/kernel/failure-to-validate-object-handles)
 
- 
 
 ## <span id="Driver-installation"></span><span id="driver-installation"></span><span id="DRIVER-INSTALLATION"></span>Secure driver installations
 

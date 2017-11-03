@@ -205,6 +205,7 @@ To allow drivers to support HVCI virtualization, there are additional memory req
 **IRPs**
 
 **WDF and IRPs** 
+
 One advantage of using WDF, is that WDF drivers typically do not directly access IRPs. For example, the framework converts the WDM IRPs that represent read, write, and device I/O control operations to framework request objects that KMDF/UMDF receive in I/O queues. 
 
 If you are writing a WDM driver, review the following guidance.
@@ -338,7 +339,7 @@ AC (Application Container)
 
 Following the general least privilege security principle, configure only the minimum level of access that is required for your driver to function.
 
-** WDM Granular IOCTL security control**
+**WDM Granular IOCTL security control**
 
 To further manage security when IOCTLs are sent by user-mode callers, the driver code can include the [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/library/windows/hardware/ff550418.aspx) function. This function allows a driver to check access rights. Upon receiving an IOCTL, a driver can call [IoValidateDeviceIoControlAccess](https://msdn.microsoft.com/library/windows/hardware/ff550418.aspx), specifying FILE_READ_ACCESS, FILE_WRITE_ACCESS, or both. 
 
@@ -346,7 +347,7 @@ Implementing granular IOCTL security control does not replace the need to manage
 
 For more information, see the following articles:
 
-[Define and handle IOCTLs securely](https://msdn.microsoft.com/library/windows/hardware/dn613909.aspx#define_and_handle_ioctls_securely)
+[Define and handle IOCTLs securely](controlling-driver-access.md#define_and_handle_ioctls_securely)
 
 [Defining I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/defining-i-o-control-codes)
 
