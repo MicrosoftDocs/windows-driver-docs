@@ -1,7 +1,7 @@
 ---
 title: General operational OIDs for connection-oriented miniport drivers
 author: windows-driver-content
-description: This topic describes OIDs for connection-oriented objects.
+description: This topic describes general operational OIDs for connection-oriented objects.
 ms.assetid: 38a8a256-b70e-4ba9-bc95-f1a2965493b2
 keywords:
 - General operational OIDs connection-oriented miniport drivers
@@ -14,7 +14,10 @@ ms.technology: windows-devices
 
 # General operational OIDs for connection-oriented miniport drivers
 
-The following table summarizes the OIDs used to get or set the general operational characteristics of connection-oriented miniport drivers and/or their NICs. Note that a connection-oriented miniport driver handles such requests in its [MiniportCoOidRequest](https://msdn.microsoft.com/library/windows/hardware/ff559362) callback function.
+The following table summarizes the OIDs used to get or set the general operational characteristics of connection-oriented miniport drivers and/or their NICs.
+
+> [!TIP] 
+> A connection-oriented miniport driver handles such requests in its [MiniportCoOidRequest](https://msdn.microsoft.com/library/windows/hardware/ff559362) callback function.
 
 In this table, M indicates an OID is mandatory, while O indicates it is optional.
 

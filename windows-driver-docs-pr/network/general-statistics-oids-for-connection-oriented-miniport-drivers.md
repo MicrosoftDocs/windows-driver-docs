@@ -1,7 +1,7 @@
 ---
 title: General statistics OIDs for connection-oriented miniport drivers
 author: windows-driver-content
-description: This topic describes OIDs for connection-oriented objects.
+description: This topic describes general statistics OIDs for connection-oriented objects.
 ms.assetid: 1967ebb9-0cc9-46ca-b9db-fc505f41c38e
 keywords:
 - General statistics OIDs connection-oriented miniport drivers
@@ -14,7 +14,10 @@ ms.technology: windows-devices
 
 # General statistics OIDs for connection-oriented miniport drivers
 
-The following table summarizes the OIDs used to get or set the general statistics characteristics of connection-oriented miniport drivers and/or their NICs. Note that a connection-oriented miniport driver handles such requests in its [MiniportCoOidRequest](https://msdn.microsoft.com/library/windows/hardware/ff559362) callback function.
+The following table summarizes the OIDs used to get or set the general statistics characteristics of connection-oriented miniport drivers and/or their NICs.
+
+> [!TIP] 
+> A connection-oriented miniport driver handles such requests in its [MiniportCoOidRequest](https://msdn.microsoft.com/library/windows/hardware/ff559362) callback function.
 
 In this table, M indicates an OID is mandatory, while O indicates it is optional.
 
