@@ -1,7 +1,7 @@
 ---
 title: OID_WWAN_PIN_LIST
 author: windows-driver-content
-description: OID\_WWAN\_PIN\_LIST returns a list of all the different types of Personal Identification Numbers (PINs) that are supported by the MB device and additional details for each PIN type, such as the length of the PIN (minimum and maximum lengths), PIN format, PIN-entry mode (enabled/disabled/not-available). This OID also specifies the current mode of each PIN supported by the device. Set requests are not supported. Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an NDIS\_STATUS\_WWAN\_PIN\_LIST status notification containing an NDIS\_WWAN\_PIN\_LIST structure to return a list of PINs with corresponding descriptions when completing query requests.
+description: OID_WWAN_PIN_LIST returns a list of all the different types of Personal Identification Numbers (PINs) that are supported by the MB device and additional details for each PIN type, such as the length of the PIN (minimum and maximum lengths), PIN format, PIN-entry mode (enabled/disabled/not-available). This OID also specifies the current mode of each PIN supported by the device. Set requests are not supported. Miniport drivers must process query requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request, and later sending an NDIS_STATUS_WWAN_PIN_LIST status notification containing an NDIS_WWAN_PIN_LIST structure to return a list of PINs with corresponding descriptions when completing query requests.
 ms.assetid: 76a1181c-974e-472d-ad15-d9c6208aa2b4
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

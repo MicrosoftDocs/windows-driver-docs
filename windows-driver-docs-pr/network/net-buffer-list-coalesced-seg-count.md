@@ -1,7 +1,7 @@
 ---
 title: NET_BUFFER_LIST_COALESCED_SEG_COUNT macro
 author: windows-driver-content
-description: The NET\_BUFFER\_LIST\_COALESCED\_SEG\_COUNT is a macro that NDIS drivers use to get and set the number of coalesced segments in a NET\_BUFFER\_LIST structure.
+description: The NET_BUFFER_LIST_COALESCED_SEG_COUNT is a macro that NDIS drivers use to get and set the number of coalesced segments in a NET_BUFFER_LIST structure.
 ms.assetid: CAF2D3C1-A91D-4FAF-8358-46064398C813
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

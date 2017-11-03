@@ -1,7 +1,7 @@
 ---
 title: OID_GEN_MULTICAST_BYTES_XMIT
 author: windows-driver-content
-description: As a query, the OID\_GEN\_MULTICAST\_BYTES\_XMIT OID specifies the number of bytes in multicast/functional packets that are transmitted without errors.
+description: As a query, the OID_GEN_MULTICAST_BYTES_XMIT OID specifies the number of bytes in multicast/functional packets that are transmitted without errors.
 ms.assetid: 4e9b5fe7-4ca6-4099-9b99-8d90a591e8ec
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

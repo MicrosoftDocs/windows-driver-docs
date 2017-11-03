@@ -1,7 +1,7 @@
 ---
 title: NDIS_STATUS_DOT11_INCOMING_ASSOC_STARTED
 author: windows-driver-content
-description: NDIS\_STATUS\_DOT11\_INCOMING\_ASSOC\_STARTED
+description: NDIS_STATUS_DOT11_INCOMING_ASSOC_STARTED
 ms.assetid: 57fd84ea-9f74-40d9-9ce9-1193edd021c9
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

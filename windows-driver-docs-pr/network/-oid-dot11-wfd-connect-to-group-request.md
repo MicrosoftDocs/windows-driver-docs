@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_WFD_CONNECT_TO_GROUP_REQUEST
 author: windows-driver-content
-description: When set, the OID\_DOT11\_WFD\_CONNECT\_TO\_GROUP\_REQUEST object identifier (OID) requests that the miniport driver perform a connection operation to join a Wi-Fi Direct (WFD) group.
+description: When set, the OID_DOT11_WFD_CONNECT_TO_GROUP_REQUEST object identifier (OID) requests that the miniport driver perform a connection operation to join a Wi-Fi Direct (WFD) group.
 ms.assetid: 67B02FD9-1CB2-424D-989C-11A307070B93
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

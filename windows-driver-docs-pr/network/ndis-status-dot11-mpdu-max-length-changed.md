@@ -1,7 +1,7 @@
 ---
 title: NDIS_STATUS_DOT11_MPDU_MAX_LENGTH_CHANGED
 author: windows-driver-content
-description: A miniport driver must make an NDIS\_STATUS\_DOT11\_MPDU\_MAX\_LENGTH\_CHANGED indication after the maximum media access control (MAC) protocol data unit (MPDU) frame size is changed for a PHY on the 802.11 station.
+description: A miniport driver must make an NDIS_STATUS_DOT11_MPDU_MAX_LENGTH_CHANGED indication after the maximum media access control (MAC) protocol data unit (MPDU) frame size is changed for a PHY on the 802.11 station.
 ms.assetid: 208e2a28-84c6-4c0f-85b1-fd572412ab19
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

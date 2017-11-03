@@ -1,7 +1,7 @@
 ---
 title: OID_PNP_SET_POWER
 author: windows-driver-content
-description: OID\_PNP\_SET\_POWER
+description: OID_PNP_SET_POWER
 ms.assetid: 21232db2-7484-4878-a2f9-5131c18ecf57
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

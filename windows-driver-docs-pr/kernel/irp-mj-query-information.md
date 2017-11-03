@@ -1,7 +1,7 @@
 ---
 title: IRP_MJ_QUERY_INFORMATION
 author: windows-driver-content
-description: Drivers can optionally handle an IRP\_MJ\_QUERY\_INFORMATION request.
+description: Drivers can optionally handle an IRP_MJ_QUERY_INFORMATION request.
 ms.author: windowsdriverdev
 ms.date: 08/12/2017
 ms.topic: article

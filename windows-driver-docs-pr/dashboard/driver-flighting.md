@@ -61,3 +61,9 @@ A driver can be rejected for several reasons. Most commonly, rejection is caused
 * targeting previous version of Windows while also targeting Windows 10
 * not including one or more Computer Hardware IDs (CHIDs) in your shipping label
 * using hardware IDs that unintentionally targets other OEMs.
+
+## Related topics
+
+   *  [Create a new hardware submission](create-a-new-hardware-submission.md)
+   *  [Managing hardware submissions in the Windows Hardware Dev Center dashboard](manage-your-hardware-submissions.md)
+   *  [Get drivers signed by Microsoft for multiple Windows versions](get-drivers-signed-by-microsoft-for-multiple-windows-versions.md)

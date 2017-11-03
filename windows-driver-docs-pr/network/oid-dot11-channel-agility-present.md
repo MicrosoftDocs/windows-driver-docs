@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_CHANNEL_AGILITY_PRESENT
 author: windows-driver-content
-description: OID\_DOT11\_CHANNEL\_AGILITY\_PRESENT
+description: OID_DOT11_CHANNEL_AGILITY_PRESENT
 ms.assetid: efa40eb3-cc90-4f7a-a22d-943ce6e6c614
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

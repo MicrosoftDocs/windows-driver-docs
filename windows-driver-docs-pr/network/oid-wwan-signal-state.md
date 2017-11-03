@@ -1,7 +1,7 @@
 ---
 title: OID_WWAN_SIGNAL_STATE
 author: windows-driver-content
-description: OID\_WWAN\_SIGNAL\_STATE returns or sets the current signal state.
+description: OID_WWAN_SIGNAL_STATE returns or sets the current signal state.
 ms.assetid: 6f5d8fd6-b4cf-4058-a27e-d4f7cea19f47
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

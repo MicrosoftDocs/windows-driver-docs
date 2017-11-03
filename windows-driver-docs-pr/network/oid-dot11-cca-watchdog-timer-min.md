@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_CCA_WATCHDOG_TIMER_MIN
 author: windows-driver-content
-description: OID\_DOT11\_CCA\_WATCHDOG\_TIMER\_MIN
+description: OID_DOT11_CCA_WATCHDOG_TIMER_MIN
 ms.assetid: d17d12b3-1ef3-4bc7-8d15-d02cc4b7bc5d
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

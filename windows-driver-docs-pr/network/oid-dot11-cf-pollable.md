@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_CF_POLLABLE
 author: windows-driver-content
-description: OID\_DOT11\_CF\_POLLABLE
+description: OID_DOT11_CF_POLLABLE
 ms.assetid: 1eb80044-5303-4f81-b821-59376f60ff34
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

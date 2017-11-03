@@ -1,7 +1,7 @@
 ---
 title: OID_GEN_FRIENDLY_NAME
 author: windows-driver-content
-description: As a query, the OID\_GEN\_FRIENDLY\_NAME OID returns the friendly name of a miniport adapter.
+description: As a query, the OID_GEN_FRIENDLY_NAME OID returns the friendly name of a miniport adapter.
 ms.assetid: 003e729c-32e3-45a8-be3a-5dfafc49863e
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

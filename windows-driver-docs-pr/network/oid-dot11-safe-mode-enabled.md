@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_SAFE_MODE_ENABLED
 author: windows-driver-content
-description: OID\_DOT11\_SAFE\_MODE\_ENABLED
+description: OID_DOT11_SAFE_MODE_ENABLED
 ms.assetid: 29fa1ba3-dd32-4deb-9780-cb5b778fc72c
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

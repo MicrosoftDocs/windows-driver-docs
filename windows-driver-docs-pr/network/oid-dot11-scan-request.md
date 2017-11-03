@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_SCAN_REQUEST
 author: windows-driver-content
-description: OID\_DOT11\_SCAN\_REQUEST
+description: OID_DOT11_SCAN_REQUEST
 ms.assetid: 84b62c71-f73c-4cb5-b00e-fb17d6b55851
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

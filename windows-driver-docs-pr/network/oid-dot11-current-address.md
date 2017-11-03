@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_CURRENT_ADDRESS
 author: windows-driver-content
-description: OID\_DOT11\_CURRENT\_ADDRESS
+description: OID_DOT11_CURRENT_ADDRESS
 ms.assetid: f8141fae-a771-43c4-8ced-5bb0cc7001c2
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

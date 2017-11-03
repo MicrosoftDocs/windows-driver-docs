@@ -1,7 +1,7 @@
 ---
 title: OID_WWAN_DEVICE_SLOT_MAPPING_INFO
 author: windows-driver-content
-description: OID\_WWAN\_DEVICE\_SLOT\_MAPPING\_INFO sets or returns the device-slot mappings of the MB device (i.e. the executor-slot mappings).
+description: OID_WWAN_DEVICE_SLOT_MAPPING_INFO sets or returns the device-slot mappings of the MB device (i.e. the executor-slot mappings).
 ms.assetid: 54AF3447-7918-49CE-945A-DC8DC1E78CBF
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

@@ -1,7 +1,7 @@
 ---
 title: NDIS_STATUS_WWAN_SMS_CONFIGURATION
 author: windows-driver-content
-description: Miniport drivers use the NDIS\_STATUS\_WWAN\_SMS\_CONFIGURATION notification to inform the MB Service about either the completion of a previous OID\_WWAN\_SMS\_CONFIGURATION \ 160;query or set request, or an event notification in the case of change in SMS configuration. Miniport drivers can also send unsolicited events with this notification.This notification uses the NDIS\_WWAN\_SMS\_CONFIGURATION structure.
+description: Miniport drivers use the NDIS_STATUS_WWAN_SMS_CONFIGURATION notification to inform the MB Service about either the completion of a previous OID_WWAN_SMS_CONFIGURATION \ 160;query or set request, or an event notification in the case of change in SMS configuration. Miniport drivers can also send unsolicited events with this notification.This notification uses the NDIS_WWAN_SMS_CONFIGURATION structure.
 ms.assetid: 86dfe2dc-070b-43d9-b6fa-54dee985c65d
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

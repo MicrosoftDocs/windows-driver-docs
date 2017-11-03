@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_CIPHER_DEFAULT_KEY_ID
 author: windows-driver-content
-description: OID\_DOT11\_CIPHER\_DEFAULT\_KEY\_ID
+description: OID_DOT11_CIPHER_DEFAULT_KEY_ID
 ms.assetid: 2ff0ec23-a957-452e-9762-bf1d83e293e8
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

@@ -1,7 +1,7 @@
 ---
 title: OID_DOT11_CHANNEL_AGILITY_ENABLED
 author: windows-driver-content
-description: OID\_DOT11\_CHANNEL\_AGILITY\_ENABLED
+description: OID_DOT11_CHANNEL_AGILITY_ENABLED
 ms.assetid: f77860bd-79d5-4028-b1d6-5f97315b6490
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

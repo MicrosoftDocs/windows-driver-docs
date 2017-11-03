@@ -1,7 +1,7 @@
 ---
 title: OID_WWAN_PREFERRED_PROVIDERS
 author: windows-driver-content
-description: OID\_WWAN\_PREFERRED\_PROVIDERS returns information about the list of preferred providers for GSM-based devices.
+description: OID_WWAN_PREFERRED_PROVIDERS returns information about the list of preferred providers for GSM-based devices.
 ms.assetid: fa70f1ac-5b14-44f8-a2c4-d2163fe81c5a
 ms.author: windowsdriverdev
 ms.date: 08/08/2017
