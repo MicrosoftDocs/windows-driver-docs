@@ -301,7 +301,7 @@ For more information about controlling access, see the following articles:
 
 [Controlling Device Access in KMDF Drivers](https://msdn.microsoft.com/windows/hardware/drivers/wdf/controlling-device-access-in-kmdf-drivers)
 
-"Names, Security Descriptors and Device Classes - Making Device Objects Accessible… and SAFE" on page 6 of the *January February 2017 The NT Insider Newsletter* published by [OSR](http://www.osr.com).
+[Names, Security Descriptors and Device Classes - Making Device Objects Accessible… and SAFE](https://www.osr.com/nt-insider/2017-issue1/making-device-objects-accessible-safe) from the *January February 2017 The NT Insider Newsletter* published by [OSR](http://www.osr.com).
 
 
 **Managing driver access control - WDM**
