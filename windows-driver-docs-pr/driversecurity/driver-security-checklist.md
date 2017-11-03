@@ -347,10 +347,9 @@ Implementing granular IOCTL security control does not replace the need to manage
 
 For more information, see the following articles:
 
-[Define and handle IOCTLs securely](controlling-driver-access.md#define_and_handle_ioctls_securely)
+[Define and handle IOCTLs securely](controlling-driver-access.md#define-and-handle-ioctls-securely)
 
 [Defining I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/defining-i-o-control-codes)
-
 
 
 ## <span id="DGC"></span><span id="dgc"></span>Validate Device Guard compatibility
