@@ -3,7 +3,7 @@ title: Driver Security Guidance
 description: This section contains information on enhancing driver security.
 ms.assetid: 50D09948-8CE2-446F-A208-35F7B3795A6B
 ms.author: windowsdriverdev
-ms.date: 06/06/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
