@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 # TAPI extension OIDs for connection-oriented NDIS
 
-OIDs that allow TAPI calls to be made over connection-oriented media. Connection-oriented clients send these OIDs to call managers or integrated miniport call manager (MCM) drivers.
+The following table summarizes OIDs that allow TAPI calls to be made over connection-oriented media. Connection-oriented clients send these OIDs to call managers or integrated miniport call manager (MCM) drivers.
 
 In this table, M indicates an OID is mandatory, while O indicates it is optional.
 
