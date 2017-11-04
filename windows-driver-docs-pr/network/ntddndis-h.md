@@ -51,6 +51,16 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 * [OID_802_3_XMIT_MAX_COLLISIONS](oid-802-3-xmit-max-collisions.md)
 * [OID_802_3_XMIT_TIMES_CRS_LOST](oid-802-3-xmit-times-crs-lost.md)
 * [OID_802_3_XMIT_UNDERRUN](oid-802-3-xmit-underrun.md)
+* [OID_CO_ADD_ADDRESS](oid-co-add-address.md)
+* [OID_CO_ADD_PVC](oid-co-add-pvc.md)
+* [OID_CO_ADDRESS_CHANGE](oid-co-address-change.md)
+* [OID_CO_AF_CLOSE](oid-co-af-close.md)
+* [OID_CO_DELETE_ADDRESS](oid-co-delete-address.md)
+* [OID_CO_DELETE_PVC](oid-co-delete-pvc.md)
+* [OID_CO_GET_ADDRESSES](oid-co-get-addresses.md)
+* [OID_CO_GET_CALL_INFORMATION](oid-co-get-call-information.md)
+* [OID_CO_SIGNALING_DISABLED](oid-co-signaling-disabled.md)
+* [OID_CO_SIGNALING_ENABLED](oid-co-signaling-enabled.md)
 * [OID_GEN_ADMIN_STATUS](oid-gen-admin-status.md)
 * [OID_GEN_ALIAS](oid-gen-alias.md)
 * [OID_GEN_BROADCAST_BYTES_RCV](oid-gen-broadcast-bytes-rcv.md)
@@ -59,9 +69,9 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 * [OID_GEN_BROADCAST_FRAMES_XMIT](oid-gen-broadcast-frames-xmit.md)
 * [OID_GEN_BYTES_RCV](oid-gen-bytes-rcv.md)
 * [OID_GEN_BYTES_XMIT](oid-gen-bytes-xmit.md)
-* [OID_GEN_CO_BYTES_RCV](oid-gen-co-bytes-rcv.md) |
-* [OID_GEN_CO_BYTES_XMIT](oid-gen-co-bytes-xmit.md) |
-* [OID_GEN_CO_BYTES_XMIT_OUTSTANDING](oid-gen-co-bytes-xmit-outstanding.md) |
+* [OID_GEN_CO_BYTES_RCV](oid-gen-co-bytes-rcv.md)
+* [OID_GEN_CO_BYTES_XMIT](oid-gen-co-bytes-xmit.md)
+* [OID_GEN_CO_BYTES_XMIT_OUTSTANDING](oid-gen-co-bytes-xmit-outstanding.md)
 * [OID_GEN_CO_DRIVER_VERSION](oid-gen-co-driver-version.md)
 * [OID_GEN_CO_GET_NETCARD_TIME](oid-gen-co-get-netcard-time.md)
 * [OID_GEN_CO_GET_TIME_CAPS](oid-gen-co-get-time-caps.md)
@@ -72,20 +82,20 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 * [OID_GEN_CO_MEDIA_IN_USE](oid-gen-co-media-in-use.md)
 * [OID_GEN_CO_MEDIA_SUPPORTED](oid-gen-co-media-supported.md)
 * [OID_GEN_CO_MINIMUM_LINK_SPEED](oid-gen-co-minimum-link-speed.md)
-* [OID_GEN_CO_NETCARD_LOAD](oid-gen-co-netcard-load.md) |
+* [OID_GEN_CO_NETCARD_LOAD](oid-gen-co-netcard-load.md)
 * [OID_GEN_CO_PROTOCOL_OPTIONS](oid-gen-co-protocol-options.md)
-* [OID_GEN_CO_RCV_CRC_ERROR](oid-gen-co-rcv-crc-error.md) |
-* [OID_GEN_CO_RCV_PDUS_ERROR](oid-gen-co-rcv-pdus-error.md) |
-* [OID_GEN_CO_RCV_PDUS_NO_BUFFER](oid-gen-co-rcv-pdus-no-buffer.md) |
-* [OID_GEN_CO_RCV_PDUS_OK](oid-gen-co-rcv-pdus-ok.md) |
+* [OID_GEN_CO_RCV_CRC_ERROR](oid-gen-co-rcv-crc-error.md)
+* [OID_GEN_CO_RCV_PDUS_ERROR](oid-gen-co-rcv-pdus-error.md)
+* [OID_GEN_CO_RCV_PDUS_NO_BUFFER](oid-gen-co-rcv-pdus-no-buffer.md)
+* [OID_GEN_CO_RCV_PDUS_OK](oid-gen-co-rcv-pdus-ok.md)
 * [OID_GEN_CO_SUPPORTED_GUIDS](oid-gen-co-supported-guids.md)
 * [OID_GEN_CO_SUPPORTED_LIST](oid-gen-co-supported-list.md)
-* [OID_GEN_CO_TRANSMIT_QUEUE_LENGTH](oid-gen-co-transmit-queue-length.md) |
+* [OID_GEN_CO_TRANSMIT_QUEUE_LENGTH](oid-gen-co-transmit-queue-length.md)
 * [OID_GEN_CO_VENDOR_DESCRIPTION](oid-gen-co-vendor-description.md)
 * [OID_GEN_CO_VENDOR_DRIVER_VERSION](oid-gen-co-vendor-driver-version.md)
 * [OID_GEN_CO_VENDOR_ID](oid-gen-co-vendor-id.md)
-* [OID_GEN_CO_XMIT_PDUS_ERROR](oid-gen-co-xmit-pdus-error.md) |
-* [OID_GEN_CO_XMIT_PDUS_OK](oid-gen-co-xmit-pdus-ok.md) |
+* [OID_GEN_CO_XMIT_PDUS_ERROR](oid-gen-co-xmit-pdus-error.md)
+* [OID_GEN_CO_XMIT_PDUS_OK](oid-gen-co-xmit-pdus-ok.md)
 * [OID_GEN_CURRENT_LOOKAHEAD](oid-gen-current-lookahead.md)
 * [OID_GEN_CURRENT_PACKET_FILTER](oid-gen-current-packet-filter.md)
 * [OID_GEN_DEVICE_PROFILE](oid-gen-device-profile.md)
