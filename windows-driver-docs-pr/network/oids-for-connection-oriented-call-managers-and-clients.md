@@ -4,7 +4,7 @@ author: windows-driver-content
 description: This topic describes OIDs for connection-oriented call managers and clients.
 ms.assetid: a2ffbfd4-a63e-41d1-ab57-0c23661148ca
 keywords:
-- General operational OIDs connection-oriented miniport drivers
+- OIDs for connection-oriented call managers and clients
 ms.author: windowsdriverdev
 ms.date: 11/02/2017
 ms.topic: article
@@ -15,9 +15,6 @@ ms.technology: windows-devices
 # OIDs for connection-oriented call managers and clients
 
 The following table summarizes the OIDs that connection-oriented clients can send to call managers or MCM drivers and that call managers or MCM drivers can send to connection-oriented clients. 
-
-> [!TIP] 
-> A connection-oriented miniport driver handles such requests in its [MiniportCoOidRequest](https://msdn.microsoft.com/library/windows/hardware/ff559362) callback function.
 
 In this table, M indicates an OID is mandatory, while O indicates it is optional.
 
