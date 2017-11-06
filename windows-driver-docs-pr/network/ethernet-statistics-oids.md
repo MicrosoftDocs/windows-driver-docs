@@ -1,0 +1,35 @@
+---
+title: Ethernet statistics OIDs
+author: windows-driver-content
+description: This topic describes Ethernet statistics OIDs 
+ms.assetid: b38ec79d-d8f3-46fa-9e6f-d42fa18f467c
+keywords:
+- Ethernet statistics OIDs, Ethernet NDIS OIDs, Ethernet OIDs WDK, Ethernet OIDs networking
+ms.author: windowsdriverdev
+ms.date: 11/01/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+---
+
+# Ethernet statistics OIDs
+
+The following table summarizes the OIDs used to get Ethernet statistics for Network Interface Controllers (NICs).
+
+| Length | Query | Set | Name |
+| --- | --- | --- | --- |
+| 4 | O |   | [OID_802_3_RCV_OVERRUN](oid-802-3-rcv-overrun.md) |
+| 4 | O |   | [OID_802_3_XMIT_DEFERRED](oid-802-3-xmit-deferred.md) |
+| 4 | O |   | [OID_802_3_XMIT_HEARTBEAT_FAILURE](oid-802-3-xmit-heartbeat-failure.md) |
+| 4 | O |   | [OID_802_3_XMIT_LATE_COLLISIONS](oid-802-3-xmit-late-collisions.md) |
+| 4 | O |   | [OID_802_3_XMIT_MAX_COLLISIONS](oid-802-3-xmit-max-collisions.md) |
+| 4 | O |   | [OID_802_3_XMIT_TIMES_CRS_LOST](oid-802-3-xmit-times-crs-lost.md) |
+| 4 | O |   | [OID_802_3_XMIT_UNDERRUN](oid-802-3-xmit-underrun.md) |
+
+> [!NOTE]
+> The following OIDs are obsolete in NDIS 6.0 and later:
+> - OID_802_3_RCV_ERROR_ALIGNMENT
+> - OID_802_3_XMIT_MORE_COLLISIONS
+> - OID_802_3_XMIT_ONE_COLLISION
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_WWAN_DEVICE_CAPS_EX%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
