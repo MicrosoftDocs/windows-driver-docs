@@ -2432,6 +2432,8 @@
 ## [Windows Filtering Platform constants](windows-filtering-platform-constants.md)
 ### [Built-in callout identifiers](built-in-callout-identifiers.md)
 ### [Filtering layer identifiers](filtering-layer-identifiers.md)
+#### [Management filtering layer identifiers](management-filtering-layer-identifiers.md)
+#### [Run-time filtering layer identifiers](run-time-filtering-layer-identifiers.md)
 ### [Filtering conditions](filtering-conditions.md)
 ### [Data field identifiers](data-field-identifiers.md)
 ### [Metadata fields](metadata-fields.md)
