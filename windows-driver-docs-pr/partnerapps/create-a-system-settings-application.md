@@ -81,6 +81,12 @@ Partner settings apps have the following characteristics:
 	    </rescap:Extension>
     </Extensions>
     ```
+ Note that this package cannot have an entry in the all apps list. To accomplish this, set the [AppListEntry](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.core.applistentry) property to **none**.   
+  ```
+     <uap:VisualElements AppListEntry="none" DisplayName="OptionalPackage"
+       ....
+     </uap:VisualElements>
+  ```
 3. To be configured as a preinstalled application, submit your settings application to the Windows Dev Center. After receiving a signed .appx file and obtaining a license file, include the application in the device image.
 
 ## <span id="Updating_system_settings_applications"></span><span id="updating_system_settings_applications"></span><span id="UPDING_SYSTEM_SETTINGS_APPLICATIONS"></span>Updating system settings applications
