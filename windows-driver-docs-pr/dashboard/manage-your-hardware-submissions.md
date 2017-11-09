@@ -117,7 +117,7 @@ After you submit your product for the Windows Hardware Compatibility Program for
 
 ## Extension ID are automatically registered for your extension INF upon submission
 
-When you submit an Extension INF to be signed, we will automatically try and register the Extension ID with your account.  If the Extension ID is already registered we will display a message saying it's already in use and to use a different ID.  See [Using an extension INF file](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-an-extension-inf-file) for more information about specifying an ExtensionID in your INF. 
+When you submit an Extension INF to be signed, we will attempt to automatically register the Extension ID with your account. If the Extension ID is already registered, a message will display stating that the ID is already in use and to use a different one.  See [Using an extension INF file](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-an-extension-inf-file) for more information about specifying an ExtensionID in your INF. 
 
 Note that in your submissions, you may only use ExtensionIDs that are registered to your account. 
 
