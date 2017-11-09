@@ -1,0 +1,204 @@
+---
+title: CreateScanJobResponse element
+description: The required CreateScanJobResponse element contains the WSD Scan Service's response to a client's scan request.
+MS-HAID:
+- 'wsdss\_ops\_4c1930e3-b26c-4581-9d8f-425ebdfba8db.xml'
+- 'image.createscanjobresponse'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: a832bdc2-9c47-41da-ac78-a844b8f84ec1
+keywords: ["CreateScanJobResponse element Imaging Devices"]
+topic_type:
+- apiref
+api_name:
+- wscn CreateScanJobResponse
+api_type:
+- Schema
+---
+
+# CreateScanJobResponse element
+
+
+The required **CreateScanJobResponse** element contains the WSD Scan Service's response to a client's scan request.
+
+Usage
+-----
+
+``` syntax
+<wscn:CreateScanJobResponse>
+  child elements
+</wscn:CreateScanJobResponse>
+```
+
+Attributes
+----------
+
+There are no attributes.
+
+## Child elements
+
+
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Element</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>[<strong>DocumentFinalParameters</strong>](documentfinalparameters.md)</p></td>
+</tr>
+<tr class="even">
+<td><p>[<strong>ImageInformation</strong>](imageinformation.md)</p></td>
+</tr>
+<tr class="odd">
+<td><p>[<strong>JobId</strong>](jobid.md)</p></td>
+</tr>
+<tr class="even">
+<td><p>[<strong>JobToken</strong>](jobtoken.md)</p></td>
+</tr>
+</tbody>
+</table>
+
+## Parent elements
+
+
+There are no parent elements.
+
+Remarks
+-------
+
+The WSD Scan Service must support the **CreateScanJobResponse** operation element.
+
+The WSD Scan Service sends a **CreateScanJobResponse** operation element to the client in response to a client's [**CreateScanJobRequest**](createscanjobrequest.md).
+
+If the client has made a valid scan request, the WSD Scan Service must return the following information:
+
+-   A unique [**JobId**](jobid.md) to identify the job. The scanner generates **JobId** in an implementation-defined manner within the defined ranges. The Scan Service must not reuse values that were recently assigned so that clients do not confuse jobs with older jobs.
+-   A unique identifier in JobToken. JobToken is paired with JobId to uniquely represent the scan job. JobToken is passed to the Scan Service in the RetrieveImageRequest operation element to enable the scan device to verify that the scan requester actually created the scan job.
+-   ImageInformation, which contains information about the resulting image data from a scan made with the ScanTicket that is currently being validated.
+-   DocumentFinalParameters, which contains the actual DocumentParameters element that the Scan Service uses for this scan job.
+
+The client must retrieve the actual image data from the Scan Service by sending one or more [**RetrieveImageRequest**](retrieveimagerequest.md) operation elements. The client has 60 seconds to send a **RetrieveImageRequest** operation element after the Scan Service has responded to the client's [**CreateScanJobRequest**](createscanjobrequest.md). If the Scan Service does not receive a **RetrieveImageRequest** within this time, it should abort the job with a [**JobStateReason**](jobstatereason.md) of **JobTimedOut**. If the job consists of multiple documents, this time-out applies between each successive **RetrieveImageRequest/Response** operation.
+
+Examples
+--------
+
+The following code example illustrates a WSD Scan Service response to a CreateScanJobRequest.
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
+  xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
+  soap:encodingStyle=&#39;http://www.w3.org/2002/12/soap-encoding&#39; >
+
+  <soap:Header>
+    <wsa:To>
+      http://schemas.xmlsoap.org/ws/2003/03/addressing/role/anonymous
+    </wsa:To>
+    <wsa:Action>
+      http://schemas.microsoft.com/windows/2006/01/wdp/scan/CreateScanJob
+    </wsa:Action>
+    <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
+    <wsa:RelatesTo>uuid:MsgIdOfTheCreateScanJobRequest</wsa:RelatesTo>
+  </soap:Header>
+
+  <soap:Body>
+    <wscn:CreateScanJobResponse>
+      <wscn:JobId>1</wscn:JobId>
+      <wscn:JobToken>Job9876TokenString</wscn:JobToken>
+      <wscn:ImageInformation>
+        <wscn:MediaFrontImageInfo>
+          <wscn:PixelsPerLine>900</wscn:PixelsPerLine>
+          <wscn:NumberOfLines>1500</wscn:NumberOfLines>
+          <wscn:BytesPerLine>113</wscn:BytesPerLine>
+        </wscn:MediaFrontImageInfo>
+      </wscn:ImageInformation>
+      <wscn:DocumentFinalParamters>
+        <wscn:Format>jfif</wscn:Format>
+        <wscn:CompressionQualityFactor>45</wscn:CompressionQualityFactor>
+        <wscn:ImagesToTransfer>0</wscn:ImagesToTransfer>
+        <wscn:InputSource>Platen</wscn:InputSource>
+        <wscn:ContentType>Auto</wscn:ContentType>
+        <wscn:InputSize>
+          <wscn:InputMediaSize>
+            <wscn:Width wscn:Override="true">8500</wscn:Width>
+            <wscn:Height wscn:Override="true">11000</wscn:Height>
+          </wscn:InputMediaSize>
+        </wscn:InputSize>
+        <wscn:Exposure>
+          <wscn:ExposureSettings>
+            <wscn:Contrast wscn:UsedDefault="true">0</wscn:Contrast>
+            <wscn:Brightness wscn:UsedDefault="true">0</wscn:Brightness>
+            <wscn:Sharpness wscn:UsedDefault="true">0</wscn:Sharpness>
+          </wscn:ExposureSettings>
+        </wscn:Exposure>
+        <wscn:Scaling>
+          <wscn:ScalingWidth>125</wscn:ScalingWidth>
+          <wscn:ScalingHeight>125</wscn:ScalingHeight>
+        </wscn:Scaling>
+        <wscn:Rotation wscn:UsedDefault="true">0</wscn:Rotation>
+        <wscn:MediaSides>
+          <wscn:MediaFront>
+            <wscn:ScanRegion>
+              <wscn:ScanRegionXOffset wscn:UsedDefault="true">
+                0
+              </wscn:ScanRegionXOffset>
+              <wscn:ScanRegionYOffset wscn:UsedDefault="true">
+                0
+              </wscn:ScanRegionYOffset>
+              <wscn:ScanRegionWidth wscn:UsedDefault="true">
+                8500
+              </wscn:ScanRegionWidth>
+              <wscn:ScanRegionHeight wscn:UsedDefault="true">
+                11000
+              </wscn:ScanRegionHeight>
+            </wscn:ScanRegion>
+            <wscn:ColorProcessing wscn:UsedDefault="true">
+              RGB24
+            </wscn:ColorProcessing>
+            <wscn:Resolution>
+              <wscn:Width>300</wscn:Width>
+              <wscn:Height>300</wscn:Height>
+            </wscn:Resolution>
+          </wscn:MediaFront>
+        </wscn:MediaSides>
+      </wscn:DocumentFinalParamters>
+    </wscn:CreateScanJobResponse>
+  </soap:Body>
+</soap:Envelope>
+```
+
+## <span id="see_also"></span>See also
+
+
+[**CreateScanJobRequest**](createscanjobrequest.md)
+
+[**DocumentFinalParameters**](documentfinalparameters.md)
+
+[**ImageInformation**](imageinformation.md)
+
+[**JobId**](jobid.md)
+
+[**JobStateReason**](jobstatereason.md)
+
+[**JobToken**](jobtoken.md)
+
+[**RetrieveImageRequest**](retrieveimagerequest.md)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20CreateScanJobResponse%20element%20%20RELEASE:%20%2811/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
+

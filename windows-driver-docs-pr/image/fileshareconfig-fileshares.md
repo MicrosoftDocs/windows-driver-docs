@@ -1,0 +1,31 @@
+---
+title: FileShareConfig.FileShares
+description: FileShareConfig.FileShares
+MS-HAID:
+- 'dsm\_ref\_psp\_c518f9b6-427a-4b30-baee-ca4fd868232a.xml'
+- 'image.fileshareconfig\_fileshares'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 7077cdb3-3d5c-4228-85f1-7c3b648ba672
+keywords: ["FileShareConfig.FileShares"]
+---
+
+# FileShareConfig.FileShares
+
+
+The **FileShares** element defines the set of network file locations the file share processing filter will use to save the scanned images for the current PostScan job. The **FileShares** element can contain one or more **ShareUNC** elements. The DSM Scan Server will try to save the scanned images to each of the shares specified in a **ShareUNC** element.
+
+The **FileShares** element supports the following sub-element:
+
+[FileShareConfig.FileShares.ShareUNC](fileshareconfig-fileshares-shareunc.md)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20FileShareConfig.FileShares%20%20RELEASE:%20%2811/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
