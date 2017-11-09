@@ -5,7 +5,7 @@ keywords:
 - Software Defined Battery
 - SDB
 ms.author: windowsdriverdev
-ms.date: 11/08/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -36,7 +36,7 @@ The topic starts by introducing the Simple Age Balancing SDB algorithm for a hyp
 - Non-Swappable Batteries - Batteries that are not designed and meant to be removed by the end user
 
 ## SDB Overview
-The MSR research paper on Software Defined Batteries can be found here: [https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/multibattery_sosp2015.pdf](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/multibattery_sosp2015.pdf). 
+The MSR research paper on Software Defined Batteries can be found here: [https://www.microsoft.com/research/wp-content/uploads/2016/02/multibattery_sosp2015.pdf](https://www.microsoft.com/research/wp-content/uploads/2016/02/multibattery_sosp2015.pdf). 
 
 This topic reprises select ideas described in this paper and presents them with a view of productizing software based battery age balancing feature in laptops and other mobile devices. 
  
@@ -197,7 +197,7 @@ Note that the device index should be set to zero.
 
 ### Feature Discovery
 
-[IOCTL_HPMI_QUERY_CAPABILITIES]() is used to discover features supported by HPMI. IOCTL_HPMI_QUERY_CAPABILITIES is not an optional IOCTL.
+[IOCTL_HPMI_QUERY_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/mt828475.aspx) is used to discover features supported by HPMI. IOCTL_HPMI_QUERY_CAPABILITIES is a required IOCTL.
 
 Windows will issue this IOCL to HPMI once after a new HPMI driver instance is discovered. 
 
@@ -275,7 +275,7 @@ typedef struct _HPMI_QUERY_CAPABILITIES_RESPONSE {
 
 ### Command Format
 
-Windows issues this IOCTL with [HPMI_QUERY_CAPABILITIES]().
+Windows issues this IOCTL with [HPMI_QUERY_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/mt828472.aspx).
 
 The Version is set to HPMI_QUERY_CAPABILITIES_VERSION_1.
 
@@ -284,16 +284,16 @@ The Version is set to HPMI_QUERY_CAPABILITIES_VERSION_1.
 
 HPMI must return STATUS_SUCCESS code.
 
-HPMI responds by setting the following values in [HPMI_QUERY_CAPABILITIES_RESPONSE]() struct:
+HPMI responds by setting the following values in [HPMI_QUERY_CAPABILITIES_RESPONSE](https://msdn.microsoft.com/library/windows/hardware/mt828473.aspx) struct:
 
 - Version is set to HPMI_QUERY_CAPABILITIES_RESPONSE_VERSION_1
-- RequestService is set to HPMI_REQUEST_SERVICE_BATTERY_UTILIZATION_HINTS to ensure HPMI driver receives [IOCTL_HPMI_BATTERY_UTILIZATION_HINT]().
+- RequestService is set to HPMI_REQUEST_SERVICE_BATTERY_UTILIZATION_HINTS to ensure HPMI driver receives [IOCTL_HPMI_BATTERY_UTILIZATION_HINT](https://msdn.microsoft.com/library/windows/hardware/mt828474.aspx).
 - SdbCapabilities is set to HPMI_CAPABILITY_SDB_OEM_SIMPLE_AGE_BALANCING to indicate battery age balancing support.
 
 
 #### Battery Utilization
 
-Windows issues [IOCTL_HPMI_BATTERY_UTILIZATION_HINT]() to HPMI to provide most updated battery utilization hints. IOCTL_HPMI_BATTERY_UTILIZATION_HINT] is not an optional IOCTL.
+Windows issues [IOCTL_HPMI_BATTERY_UTILIZATION_HINT](https://msdn.microsoft.com/library/windows/hardware/mt828474.aspx) to HPMI to provide most updated battery utilization hints. IOCTL_HPMI_BATTERY_UTILIZATION_HINT is a required IOCTL.
 
 HPMI may utilize the PreserveNonHotSwappableBatteries hint as described in [Adapting SDB Algorithm for use with Hot Swappable Batteries](#ADAPTING-SDB) to conserve the internal batteries.
 
@@ -379,7 +379,7 @@ typedef struct _HPMI_BATTERY_UTILIZATION_HINT {
 
 Windows issues this IOCTL with HPMI_BATTERY_UTILIZATION_HINT. Version is set to *HPMI_BATTERY_UTILIZATION_HINT_VERSION_1*.
 
-[HPMI_BATTERY_UTILIZATION_HINT]()
+[HPMI_BATTERY_UTILIZATION_HINT](https://msdn.microsoft.com/library/windows/hardware/mt828469.aspx)
 
 PreserveNonHotSwappableBatteries is set to one of the following values:
 
@@ -396,7 +396,7 @@ No data is returned in the response.
 
 ## Sample Interface Contract
 
-Refer to [HMPI.h]() for a full (sample) API contract for the interface definitions described here.
+Refer to [HMPI.h](https://msdn.microsoft.com/library/windows/hardware/mt828470.aspx) for a full (sample) API contract for the interface definitions described here.
 
 
 
