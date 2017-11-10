@@ -101,7 +101,7 @@ Available only in Windows Server 2008 R2, Windows 7, and later versions of
 </td>
 <td>
 <p>The 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff557080"><b>LUID</b></a>for the network interface that is associated with the
+       <a href="https://msdn.microsoft.com/library/windows/hardware/ff557080"><b>LUID</b></a> for the network interface that is associated with the
        arrival IP address.</p>
 <p>WFP uses the Arrival interface to match this condition. The Arrival Interface is the first interface the
        packet sees before entering the IP stack inbound from the network, before weak-host or forwarding are
