@@ -11,11 +11,13 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
+# Software Defined Battery
+
 >[!NOTE]
 > Some information relates to pre-released product which may be substantially modified before it's commercially released. 
 > Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-# Software Defined Battery
+## Introduction
 
 The goal of this topic is to introduce Software Defined Batteries (SDB), describe Windows SDB architecture and detail the Windows API and DDI contracts for this feature. 
 
