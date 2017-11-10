@@ -25,18 +25,18 @@ You can use the annotations in the following table to indicate the correct IRQL 
 
 |IRQL annotation|Description|
 |--- |--- |
-|IRQL_requires_max_(_irql_)|The _irql_ is the maximum IRQL at which the function can be called.|
-|IRQL_requires_min_(_irql_)|The _irql_ is the minimum IRQL at which the function can be called.|
-|IRQL_requires_(_irql_)|The function must be entered at the IRQL specified by _irql_.|
-|IRQL_raises_(_irql_)|The function exits at the specified _irql_, but it can only be called to raise (not lower) the current IRQL.|
-|IRQL_saves_|The annotated parameter saves the current IRQL to restore later.|
-|IRQL_restores_|The annotated parameter contains an IRQL value from _IRQL_saves_ that is to be restored when the function returns.|
-|IRQL_saves_global_(kind, param)|The current IRQL is saved into a location that is internal to the code analysis tools from which the IRQL is to be restored. This annotation is used to annotate a function. The location is identified by kind and further refined by param. For example, OldIrql could be the kind, and FastMutex could be the parameter that held that old IRQL value.|
-|IRQL_restores_global_(_kind_, _param_)|The IRQL saved by the function annotated with IRQL_saves_global is restored from a location that is internal to the Code Analysis tools.|
-|IRQL_always_function_min_(_value_)|The IRQL value is the minimum value to which the function can lower the IRQL.|
-|IRQL_always_function_max_(_value_)|The IRQL value is the maximum value to which the function can raise the IRQL.|
-|IRQL_requires_same_|The annotated function must enter and exit at the same IRQL. The function can change the IRQL, but it must restore the IRQL to its original value before exiting.|
-|IRQL_uses_cancel_|The annotated parameter is the IRQL value that should be restored by a DRIVER_CANCEL callback function. In most cases, use the IRQL_is_cancel annotation instead.|
+|_IRQL_requires_max_(_irql_)|The _irql_ is the maximum IRQL at which the function can be called.|
+|_IRQL_requires_min_(_irql_)|The _irql_ is the minimum IRQL at which the function can be called.|
+|_IRQL_requires_(_irql_)|The function must be entered at the IRQL specified by _irql_.|
+|_IRQL_raises_(_irql_)|The function exits at the specified _irql_, but it can only be called to raise (not lower) the current IRQL.|
+|_IRQL_saves_|The annotated parameter saves the current IRQL to restore later.|
+|_IRQL_restores_|The annotated parameter contains an IRQL value from _IRQL_saves_ that is to be restored when the function returns.|
+|_IRQL_saves_global_(kind, param)|The current IRQL is saved into a location that is internal to the code analysis tools from which the IRQL is to be restored. This annotation is used to annotate a function. The location is identified by kind and further refined by param. For example, OldIrql could be the kind, and FastMutex could be the parameter that held that old IRQL value.|
+|_IRQL_restores_global_(_kind_, _param_)|The IRQL saved by the function annotated with IRQL_saves_global is restored from a location that is internal to the Code Analysis tools.|
+|_IRQL_always_function_min_(_value_)|The IRQL value is the minimum value to which the function can lower the IRQL.|
+|_IRQL_always_function_max_(_value_)|The IRQL value is the maximum value to which the function can raise the IRQL.|
+|_IRQL_requires_same_|The annotated function must enter and exit at the same IRQL. The function can change the IRQL, but it must restore the IRQL to its original value before exiting.|
+|_IRQL_uses_cancel_|The annotated parameter is the IRQL value that should be restored by a DRIVER_CANCEL callback function. In most cases, use the IRQL_is_cancel annotation instead.|
  
 
 ## <span id="Annotations_for_DRIVER_CANCEL"></span><span id="annotations_for_driver_cancel"></span><span id="ANNOTATIONS_FOR_DRIVER_CANCEL"></span>Annotations for DRIVER\_CANCEL

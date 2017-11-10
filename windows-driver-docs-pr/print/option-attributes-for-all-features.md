@@ -34,7 +34,7 @@ The following table lists, in alphabetic order, the [option attributes](option-a
 <tbody>
 <tr class="odd">
 <td><p>*<strong>Command</strong></p></td>
-<td><p>A <strong>CmdSelect</strong>[option selection command](option-selection-command.md), specifying the command string that must be sent to the printer in order to select the option.</p></td>
+<td><p>A <strong>CmdSelect</strong> [option selection command](option-selection-command.md), specifying the command string that must be sent to the printer in order to select the option.</p></td>
 <td><p>Required.</p></td>
 </tr>
 <tr class="even">
