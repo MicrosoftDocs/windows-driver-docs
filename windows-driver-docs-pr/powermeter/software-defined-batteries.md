@@ -21,7 +21,7 @@ ms.technology: windows-devices
 
 The goal of this topic is to introduce Software Defined Batteries (SDB), describe Windows SDB architecture and detail the Windows API and DDI contracts for this feature. 
 
-The topic starts by introducing the Simple Age Balancing SDB algorithm for a hypothetical two battery system. This is followed by architecture layout and API contract needed to implement SDB algorithm.
+The topic starts by introducing the Simple Age Balancing SDB algorithm for a hypothetical two battery system. This is followed by architecture layout and API contract needed to implement the SDB algorithm.
 
 ## Nomenclature
 
@@ -56,7 +56,7 @@ As the keyboard is attached-detached over a period of time, it forces the two ba
 
 ## Simple Age Balancing SDB Algorithm
 
-The algorithm is called *simple age balancing* because it attempts to balance the battery age. The simple age balancing algorithm causes the system to prefer discharging the battery that has aged the least. A battery that has accrued lesser cycle counts not only has higher capacity to hold power, but also generally more efficient in delivering the power. Thereby prolonging the time system can sustain on batteries.
+The algorithm is called *simple age balancing* because it attempts to balance the battery age. The simple age balancing algorithm causes the system to prefer discharging the battery that has aged the least. A battery that has accrued lesser cycle counts not only has higher capacity to hold power, but also generally more efficient in delivering the power. Thereby prolonging the time that the system can sustain on batteries.
 
 *Simple Age Balancing SDB Algorithm*
 
