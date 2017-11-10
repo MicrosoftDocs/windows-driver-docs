@@ -57,6 +57,10 @@ This section includes:
 
 [TCP Chimney Offload for Intermediate Drivers](tcp-chimney-offload-for-intermediate-drivers.md)
 
+[TCP chimney offload OIDS](tcp-chimney-offload-oids.md)
+
+[TCP chimney offload status indications](tcp-chimney-offload-status-indications.md)
+
  
 
  
