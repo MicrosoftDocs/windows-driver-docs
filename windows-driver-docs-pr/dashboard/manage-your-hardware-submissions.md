@@ -117,7 +117,7 @@ After you submit your product for the Windows Hardware Compatibility Program for
 
 ## Registering an ExtensionId
 
-When you submit an extension INF to be signed, the dashboard attempts to register the **ExtensionId** with your account. If the **ExtensionId** is already registered, you'll see a message prompting you to use a different ID.
+When you submit an extension INF to be signed, the dashboard attempts to associate the **ExtensionId** with your account. If the **ExtensionId** is already registered with a different account, you'll see a message prompting you to use a different ID.
 
 For more information about specifying **ExtensionId**, see [Using an extension INF file](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-an-extension-inf-file). 
 
