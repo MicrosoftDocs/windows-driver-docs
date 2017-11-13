@@ -1,13 +1,18 @@
 ---
-title: Windows dev center
-description: Data Marketplace enables your mobile brand and pay-as-you-go connectivity offerings on Windows 10 devices.
-author: mattwojo
-ms.author: mattwoj
-ms.date: 09/01/2017
-keywords: 
+title: Windows Dev Center for Data Marketplace
+author: windows-driver-content
+description: This topic describes Windows Dev Center for Data Marketplace.
+ms.assetid: 1D9C09AC-06D0-43F5-B2EC-9833B1A2383D
+keywords:
+- Data Marketplace mobile operators, Data Marketplace mobile broadband WDK
+ms.author: windowsdriverdev
+ms.date: 11/13/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Windows Dev Center
+# Windows Dev Center for Data Marketplace
 
 To offer connectivity offers in a Windows Store pay-as-you-go (PAYG) scenario, you need to publish your Windows app through Dev Center. This app does not need to provide any real functionality. It is a container app function as the vehicle to supply your branding elements and the connectivity offers that you want to sell through Windows Store as add-ons associated with your container app. The app doesn&#39;t need to be visible or used by customers, but it must be listed in Windows Store. Your offers will be presented to the customer within the [Paid Wi-Fi and Cellular app](https://www.microsoft.com/store/apps/9NBLGGH5PNB1).
 
@@ -295,3 +300,5 @@ You can also [submit offers through Windows Store Submission API](https://docs.m
 For audit and legal reasons, you cannot delete an add-on in Windows Store once submitted. To make an offer not available for Data Marketplace / Windows Store customers, update the offer Pricing and Availability.
 
 ![Make an offer unavailable for purchase](images/image.png)
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

@@ -147,12 +147,12 @@
 ### [Using mbidgenerator.exe to generate hardware IDs](using-mbidgeneratorexe-to-generate-hardware-ids.md)
 # [Mobile operator scenarios](mobile-operator-scenarios-b-mb.md)
 ## [Data Marketplace](data-marketplace.md)
-### [Network Onboard](network-onboarding.md): Configure devices and SIMs
-### [Windows Dev Center](windows-dev-center.md): Sign-up and upload content
-### [Integration](msstore-payg-integration.md): Connect to our service
-### [MO Direct](mo-direct.md): Creating your own web experience *(not required for PAYG)*
-### [Verification](moapi-int-test-plan.md): Verify integration
-### [Review and launch](review-and-launch.md): Final checkpoint and offers go live
+### [Network onboarding for Data Marketplace](network-onboarding-for-data-marketplace.md)
+### [Windows Dev Center for Data Marketplace](windows-dev-center-for-data-marketplace.md)
+### [Microsoft Store PAYG integration](microsoft-store-payg-integration.md)
+### [MO Direct](mo-direct.md)
+### [MO API integration test plan](mo-api-integration-test-plan.md)
+### [Review and launch](review-and-launch.md)
 ## [UWP mobile broadband apps](UWP-mobile-broadband-apps.md)
 ### [Mobile broadband app scenarios](mobile-broadband-app-scenarios.md)
 #### [Account management](account-management.md)

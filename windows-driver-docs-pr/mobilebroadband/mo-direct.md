@@ -1,10 +1,15 @@
 ---
 title: MO Direct
-description: Data Marketplace enables your mobile brand and pay-as-you-go connectivity offerings on Windows 10 devices.
-author: mattwojo
-ms.author: mattwoj
-ms.date: 09/01/2017
-keywords: 
+author: windows-driver-content
+description: This topic describes MO Direct for Data Marketplace.
+ms.assetid: C2F41D39-C53B-4619-A33C-CCC11BAB8097
+keywords:
+- Data Marketplace mobile operators, Data Marketplace mobile broadband WDK
+ms.author: windowsdriverdev
+ms.date: 11/13/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MO Direct
@@ -13,7 +18,7 @@ Mobile Operator Direct (MO Direct) is a program that lets mobile operators sell 
 
 To onboard to MO Direct, you need to:
 
-1. Go through the [Network onboarding](network-onboarding.md) steps.
+1. Go through the [Network onboarding](network-onboarding-for-data-marketplace.md) steps.
 2. Build a self-contained, curated HTML experience that complies to [MO Direct policies](##mo-direct-policies).
 3. [Send MO Direct onboarding information](###required-information) to the Data Marketplace team.
 4. Integrate with Data Marketplace for [MO Direct APIs](mo-direct-api.md).
@@ -105,10 +110,10 @@ This section provides a checklist for necessary onboarding steps to launch your 
 Please provide the following information:
 
 > [!NOTE]
-> Note if you have gone through the [Network onboarding](network-onboarding.md) steps, you don&#39;t need to go through them again. 
+> Note if you have gone through the [Network onboarding](network-onboarding-for-data-marketplace.md) steps, you don&#39;t need to go through them again. 
 
 - Submit COSA database. Ensure Account Experience URL is included in your COSA database submission, for either a web portal or a dedicated Windows app for customer to manage account.
-- If you haven't done so already, go through the [Network onboarding](network-onboarding.md) steps. Additionally, send a list of countries where your MO Direct experience will be available, and the MO Direct portal URL and notification URL in email to [datamartpartnersup@microsoft.com](mailto:swifipartnersup@microsoft.com).
+- If you haven't done so already, go through the [Network onboarding](network-onboarding-for-data-marketplace.md) steps. Additionally, send a list of countries where your MO Direct experience will be available, and the MO Direct portal URL and notification URL in email to [datamartpartnersup@microsoft.com](mailto:swifipartnersup@microsoft.com).
 
 ### Design and build the MO Direct portal
 
@@ -129,3 +134,5 @@ Please provide the following information:
 
 - Your MO Direct experience goes live!
 - Ensure MO Direct experience is maintained as needed to remain in compliance with MO Direct policies.
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

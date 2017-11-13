@@ -1,10 +1,15 @@
 ---
 title: MO API integration test plan
-description: Data Marketplace enables your mobile brand and pay-as-you-go connectivity offerings on Windows 10 devices.
-author: mattwojo
-ms.author: mattwoj
-ms.date: 09/01/2017
-keywords: 
+author: windows-driver-content
+description: This topic describes the MO API integration test plan for Data Marketplace.
+ms.assetid: AB563225-7339-44E6-8D64-D647848D4432
+keywords:
+- Data Marketplace mobile operators, Data Marketplace mobile broadband WDK
+ms.author: windowsdriverdev
+ms.date: 11/13/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MO API integration test plan 
@@ -180,7 +185,7 @@ Data Marketplace Service will monitor the availability of the MO API&#39;s by is
 
 - Balance API with fieldsTemplate set to basic being executed twice every minute using a specified ICCID.
 - Microbalance API executed twice every minute for a specified ICCID.
-- Xping test to ping the MO direct portal twice every minute making sure it is accessible, if onboarded.
+- Xping test to ping the MO API integration test plan portal twice every minute making sure it is accessible, if onboarded.
 
 The expected response is HTTP 200. If we fail to receive the expected response for more than 30 minutes, we will start the escalation process and engage you for investigation.
 
@@ -216,3 +221,5 @@ Confirm the following, in a country where you published a test offer and your ne
 - Click **View plans from Windows Store** to launch the Paid WiFi &amp; Cellular app, which displays your offers. ![ Network flyout displaying the mobile broadband interface with the Data Marketplace annotation, this appears after selecting the interface](images/image.png)
 - Confirm you can consume an offer which results in the expected level of network performance (bandwidth/latency).
 - Confirm that after purchase your client displays remaining balance. ![ Network flyout displaying remaining balance](images/image.png)
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

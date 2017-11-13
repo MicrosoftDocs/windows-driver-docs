@@ -1,10 +1,15 @@
 ---
 title: Review and launch
-description: Data Marketplace enables your mobile brand and pay-as-you-go connectivity offerings on Windows 10 devices.
-author: mattwojo
-ms.author: mattwoj
-ms.date: 09/01/2017
-keywords: 
+author: windows-driver-content
+description: This topic describes how to review and launch on Data Marketplace.
+ms.assetid: BEE73118-87A0-4CB4-9F0F-D01221C768EC
+keywords:
+- Data Marketplace mobile operators, Data Marketplace mobile broadband WDK
+ms.author: windowsdriverdev
+ms.date: 11/13/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Review and launch
@@ -175,3 +180,5 @@ N/A | 0850 111 300
 | United Kingdom | +44 | (0)344 800 2400 |
 | United States | +1 | (800) 642 7676 |
 | Canada | +1 | 877 568 2495 |
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
