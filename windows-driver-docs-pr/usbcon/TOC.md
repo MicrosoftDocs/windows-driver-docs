@@ -79,8 +79,6 @@
 #### [How to Register a Composite Driver](register-a-composite-driver.md)
 #### [How to Implement Function Suspend for a Composite Driver](how-to--implement-remote-and-function-wake-support.md)
 #### [Remote Wakeup of USB Devices](remote-wakeup-of-usb-devices.md)
-### [USB Device Redirection](usb-device-redirection2.md)
-#### [Group Policy Changes](group-policy-changes.md)
 ### [Querying for Bus Driver Interfaces](querying-for-usb-interfaces.md)
 ## [Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md)
 ### [Architecture: USB host controller extension (UCX)](get-started-with-host-controller-driver-development.md)
