@@ -1,0 +1,77 @@
+---
+title: WIA\_DPS\_ENDORSER\_CHARACTERS
+description: The WIA\_DPS\_ENDORSER\_CHARACTERS property contains all of the valid characters that an application can use to create valid endorser strings.
+MS-HAID:
+- 'WIA\_PropTable\_39b34494-0301-45e7-b3c8-8ae8311a548e.xml'
+- 'image.wia\_dps\_endorser\_characters'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 7bf0676b-df85-486b-a448-ab7275ac846d
+keywords: ["WIA_DPS_ENDORSER_CHARACTERS Imaging Devices"]
+topic_type:
+- apiref
+api_name:
+- WIA_DPS_ENDORSER_CHARACTERS
+api_location:
+- Wiadef.h
+api_type:
+- HeaderDef
+---
+
+# WIA\_DPS\_ENDORSER\_CHARACTERS
+
+
+The WIA\_DPS\_ENDORSER\_CHARACTERS property contains all of the valid characters that an application can use to create valid endorser strings.
+
+## <span id="ddk_wia_dps_endorser_characters_si"></span><span id="DDK_WIA_DPS_ENDORSER_CHARACTERS_SI"></span>
+
+
+**Note**  This property is now obsolete. Use [**WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_CHARACTERS**](wia-ips-printer-endorser-valid-characters.md) instead.
+
+ 
+
+Property Type: VT\_BSTR
+
+Valid Values: WIA\_PROP\_NONE
+
+Access Rights: Read-only
+
+Remarks
+-------
+
+An "endorser" is a printer that is installed on a scanner that imprints a text message on every page that is scanned. The WIA minidriver should validate the setting of the [**WIA\_DPS\_ENDORSER\_STRING**](wia-dps-endorser-string.md) property against the valid character set in the WIA\_DPS\_ENDORSER\_CHARACTERS property. The minidriver creates and maintains this property.
+
+Requirements
+------------
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p>Header</p></td>
+<td>Wiadef.h (include Wiadef.h)</td>
+</tr>
+</tbody>
+</table>
+
+## <span id="see_also"></span>See also
+
+
+[**WIA\_DPS\_ENDORSER\_STRING**](wia-dps-endorser-string.md)
+
+[**WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_CHARACTERS**](wia-ips-printer-endorser-valid-characters.md)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20WIA_DPS_ENDORSER_CHARACTERS%20%20RELEASE:%20%2811/13/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
+
