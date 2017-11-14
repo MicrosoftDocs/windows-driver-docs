@@ -1,4 +1,4 @@
---
+---
 title: Update a code signing certificate
 description: Update a code signing certificate
 ms.assetid: 120AA970-D981-4E7D-A9BD-68125D90A0EE
