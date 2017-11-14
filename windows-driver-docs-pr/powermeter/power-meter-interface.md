@@ -7,7 +7,7 @@ keywords:
 - Power Meter Interface WDK
 - PMI WDK Power Meter
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -35,6 +35,8 @@ The power metering information that is accessed from PMI is generally read-only.
 For more information about the PMI IOCTL interface, see [PMI IOCTLs](https://msdn.microsoft.com/library/windows/hardware/ff543884).
 
  
+**Note**   The PMB infrastructure is supported on Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
+
 
  
 

@@ -40,7 +40,7 @@ The following table lists INF file entries that should be included in printer IN
 
 -   The structure member into which Ntprint.dll places a pointer to the entry value.
 
-| INF File Entry       |Value|Default Value|Structure Member (if entry not specified)|
+| INF File Entry       |Value|Default Value (if entry not specified)|Structure Member |
 |----------------------|-----|-------------|-----------------------------------------|
 | ConfigFile           | The name of the driver's [printer interface DLL](printer-interface-dll.md). | Value specified for DriverFile. | **pConfigFile** member of the DRIVER\_INFO\_3 structure (described in the Windows SDK documentation) |
 | DataFile             | The name of a driver's associated data file, such as a PPD file. | Driver's section name within the INF file. | **pDataFile** member of the DRIVER\_INFO\_3 structure |

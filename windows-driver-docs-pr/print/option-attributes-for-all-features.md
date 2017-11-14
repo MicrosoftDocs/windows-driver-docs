@@ -34,12 +34,13 @@ The following table lists, in alphabetic order, the [option attributes](option-a
 <tbody>
 <tr class="odd">
 <td><p>*<strong>Command</strong></p></td>
-<td><p>A <strong>CmdSelect</strong>[option selection command](option-selection-command.md), specifying the command string that must be sent to the printer in order to select the option.</p></td>
+<td><p>A <strong>CmdSelect</strong> [option selection command](option-selection-command.md), specifying the command string that must be sent to the printer in order to select the option.</p></td>
 <td><p>Required.</p></td>
 </tr>
 <tr class="even">
 <td><p>*<strong>DisabledFeatures</strong></p></td>
-<td><p>LIST of feature name strings, identifying features that should be disabled if the option is selected.</p></td>
+<td><p>LIST of feature name strings, identifying features that should be disabled if the option is selected.</p>
+<p>Currently DUPLEX and COLLATE features are supported. This option attribute must be used in a feature that has FeatureType set to PRINTER_PROPERTY.</p></td>
 <td><p>Optional.</p>
 <p>Listed features cannot have *<strong>Installable?</strong> set to <strong>TRUE</strong>. For more information, see [Handling Installable Features and Options](handling-installable-features-and-options.md).</p></td>
 </tr>
