@@ -3,7 +3,7 @@ title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
 ms.assetid: 25375E02-FCA1-4E94-8D9A-AA396C909278
 ms.author: windowsdriverdev
-ms.date: 11/01/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -124,7 +124,7 @@ In considering security, a common methodology is to create specific threat model
 
 This article provides driver specific guidance for creating a lightweight threat model: [Threat modeling for drivers](threat-modeling-for-drivers.md). The article provides an example driver threat model diagram that can be used as a starting point for your driver.
 
-![sample data flow diagram for hypothetical kernel-mode driver](images/sampledataflowdiagramkernelmodedriver.gif)
+![Sample data flow diagram for hypothetical kernel-mode driver](images/sampledataflowdiagramkernelmodedriver.gif)
 
 Security Development Lifecycle (SDL) best practices and associated tools can be used by IHVs and OEMs to improve the security of their products. For more information see [SDL recommendations for OEMs](https://msdn.microsoft.com/windows/hardware/drivers/bringup/security-overview#sdl).
 
@@ -169,7 +169,7 @@ For more information about working with buffers in IOCTLs, see [Methods for Acce
 
 - Properly validate variable-length buffers. For more information, see [Failure to Validate Variable-Length Buffers](https://msdn.microsoft.com/library/windows/hardware/ff545709).
 
-- Be sure and return the proper length for the OutputBuffer in the Information field. Don't just directly return the length directly from a READ request.  For example, consider a situation where the returned data from the user space indicates that there is a 4K buffer.  If the driver actually should only return 200 bytes, but instead just returns 4K in the Information field an information disclosure vulnerability has occurred. This problem occurs because the buffer the I/O Manager uses for Buffered I/O is not zeroed.  Thus, the user app gets back the original 200 bytes of data plus 4K-200 bytes of whatever was in the buffer (non-paged pool contents). This scenario can occur with all uses of Buffered I/O and not just with IOCTLs.
+- Be sure and return the proper length for the OutputBuffer in the Information field. Don't just directly return the length directly from a READ request.  For example, consider a situation where the returned data from the user space indicates that there is a 4K buffer.  If the driver actually should only return 200 bytes, but instead just returns 4K in the Information field an information disclosure vulnerability has occurred. This problem occurs because in earlier versions of Windows, the buffer the I/O Manager uses for Buffered I/O is not zeroed.  Thus, the user app gets back the original 200 bytes of data plus 4K-200 bytes of whatever was in the buffer (non-paged pool contents). This scenario can occur with all uses of Buffered I/O and not just with IOCTLs.
 
 **Errors in IOCTL direct I/O**
 
@@ -184,13 +184,15 @@ Handle zero-length buffers correctly. For more information, see [Errors in Direc
 
 There is a [potential time of check to time of use](https://en.wikipedia.org/wiki/Time_of_check_to_time_of_use) (TOCTOU) vulnerability when using direct I/O (for IOCTLs or for Read/Write).  Be aware that the driver is accessing the user data buffer, the user can simultaneously be accessing it. 
 
+To manage this risk, copy any parameters that need to be validated from the user data buffer to memory that is solely accessibly from kernel mode (such as the stack or pool).  Then once the data can not be accessed by the user application, validate and then operate on the data that was passed-in.
+
 **Driver code must make correct use of memory**
 
 - All driver pool allocations must be in non-executable (NX) pool. Using NX memory pools is inherently more secure than using executable non-paged (NP) pools, and provides better protection against overflow attacks. For more information about the related device fundamentals test, see [Device.DevFund.Memory.NXPool](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundmemory).
 
 - Device drivers must properly handle various user-mode, as well as kernel to kernel I/O, requests. For more information about the related device fundamentals test, see [Device.DevFund.Reliability.BasicSecurity](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundreliability).
 
-To allow drivers to support HVCI virtualization, there are additional memory requirements. For more information, see [Device Guard Compatibility](#dgc) later in this topic.
+To allow drivers to support HVCI virtualization, there are additional memory requirements. For more information, see [Device Guard Compatibility](#dgc) later in this article.
 
 **Handles**
 
@@ -241,7 +243,7 @@ The driver should mark the IRP pending before it saves the IRP, and should consi
 
 Cancel operations can be difficult to code properly because they typically execute asynchronously. Problems in the code that handles cancel operations can go unnoticed for a long time, because this code is typically not executed frequently in a running system. Be sure to read and understand all of the information supplied under [Canceling IRPs](https://msdn.microsoft.com/library/windows/hardware/ff540748). Pay special attention to [Synchronizing IRP Cancellation](https://msdn.microsoft.com/library/windows/hardware/ff564531) and [Points to Consider When Canceling IRPs](https://msdn.microsoft.com/library/windows/hardware/ff559700).
 
-One way to minimize the synchronization problems that are associated with cancel operations is to implement a [cancel-safe IRP queue](https://msdn.microsoft.com/library/windows/hardware/ff540755).
+One recommended way to minimize the synchronization problems that are associated with cancel operations is to implement a [cancel-safe IRP queue](https://msdn.microsoft.com/library/windows/hardware/ff540755).
 
 **Handle IRP cleanup and close operations properly**
 
@@ -256,8 +258,6 @@ Be sure that you understand the difference between [**IRP\_MJ\_CLEANUP**](https:
 For more information about handling IRPs correctly, see [Additional Errors in Handling IRPs](https://msdn.microsoft.com/library/windows/hardware/ff540543).
 
 **Other security issues**
-
-- Properly handle the cleanup and close sequence of operations. For more information, see [Errors in Handling Cleanup and Close Operations](https://msdn.microsoft.com/library/windows/hardware/ff544304).
 
 - Use a lock or an interlocked sequence to prevent race conditions. For more information, see [Errors in a Multiprocessor Environment](https://msdn.microsoft.com/library/windows/hardware/ff544288).
 
@@ -277,7 +277,7 @@ For more information about handling IRPs correctly, see [Additional Errors in Ha
 
 In addition to the possible vulnerabilities covered here, this article provides additional information about enhancing the security of kernel mode driver code: [Creating Reliable Kernel-Mode Drivers](https://msdn.microsoft.com/library/windows/hardware/ff542904).
 
-For additional information about C and C++ secure coding, see [Secure coding resources](#securecodingresources) and the end of this article.
+For additional information about C and C++ secure coding, see [Secure coding resources](#securecodingresources) at the end of this article.
 
 
 
@@ -405,9 +405,6 @@ For information about NDIS driver security, see [Security Issues for Network Dri
 
 For information about display driver security, see &lt;Content Pending&gt;.
 
-*Bluetooth*
-
-For information about Bluetooth driver security, see &lt;Content Pending&gt;.
 
 *Printers*
 
@@ -473,8 +470,7 @@ For more information, see [How to run Code Analysis for drivers](https://msdn.mi
 
 For more information, see [Code Analysis for drivers overview](https://msdn.microsoft.com/library/windows/hardware/hh698231.aspx). For additional background on code analysis, see [Visual Studio 2013 Static Code Analysis in depth](https://blogs.msdn.microsoft.com/hkamel/2013/10/24/visual-studio-2013-static-code-analysis-in-depth-what-when-and-how/).
 
-To become familiar with code analysis, you can use one of the sample drivers (for example, the featured toaster sample: <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured>).
-
+To become familiar with code analysis, you can use one of the sample drivers for example, the featured toaster sample, <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured> or the ELAM Early Launch Anti-Malware sample <https://github.com/Microsoft/Windows-driver-samples/tree/master/security/elam>.
 
 1. Open the driver solution in Visual Studio.
 
@@ -697,18 +693,12 @@ SAFECode - [https://www.safecode.org/](https://www.safecode.org/)
 
 [OSR](http://www.osr.com) provides driver development training and consulting services. These articles from the OSR newsletter highlight driver security issues.
 
+[Names, Security Descriptors and Device Classes - Making Device Objects Accessible… and SAFE](https://www.osr.com/nt-insider/2017-issue1/making-device-objects-accessible-safe)
+
 [You've Gotta Use Protection -- Inside Driver & Device Security](http://www.osronline.com/article.cfm?article=100)
 
 [Locking Down Drivers - A Survey of Techniques](http://www.osronline.com/article.cfm?article=357) 
 
-[Still Feeling Insecure? - IoCreateDeviceSecure( ) for Windows](http://www.osronline.com/article.cfm?article=105)
-
-
-**Sample Driver Code**
-
-Review these driver samples to review examples of driver projects that illustrate many of the best practices discussed here. Use these samples to become familiar with the code quality tools.
-
-[ELAM - Early Launch Anti-Malware Driver Code Sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/security/elam)
 
 **Books**
 
