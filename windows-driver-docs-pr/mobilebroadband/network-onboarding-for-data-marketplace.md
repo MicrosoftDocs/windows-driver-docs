@@ -36,11 +36,11 @@ The following table compares the UX based on an operator’s information submitt
 | SIM profile not in COSA range | Customer must manually input the APN for Windows to connect to Operator’s network. | -- |
 | SIM profile onboarded in COSA range with ‘Data Marketplace Supported = No’ | Collapsed, Disconnected: <p><img src="images/cosa_range1.png" alt="Collapsed and disconnected window" title="Collapsed and disconnected window" style="width: 250px;"/></p> | 1. No remaining balance will be displayed in the flyout for profiles not supporting Data Marketplace. |
 | SIM profile onboarded in COSA range with ‘Data Marketplace Supported = No’ | Collapsed, Connected: <p><img src="images/cosa_range2.png" alt="Collapsed and connected window" title="Collapsed and connected window" style="width: 250px;"/></p> | 2.	No option to launche Paid Wi-Fi & Cellular app from the flyout. |
-| SIM profile onboarded in COSA range with ‘Data Marketplace Supported = No’ | Expanded, Connected: ![Expanded and connected window](images/cosa_range3.png) | 3. Customer can launch Paid Wi-Fi & Cellular app from Windows start menu. If the device is eSIM capable (either with embedded or inserted reprogrammable eUICC) and the device is connected to internet, customer can choose from a list of Data Marketplace onboarded providers and purchase from them. |
-| SIM profile onboarded in COSA range with ‘Data Marketplace Supported = Yes’ | Collapsed, disconnected, has balance: ![Collapsed, disconnected with balance window](images/cosa_range4.png)| 1. Balance will be retrieved through Get Balance API and displayed in the flyout.|
-| SIM profile onboarded in COSA range with ‘Data Marketplace Supported = Yes’ | Collapsed, disconnected, no balance: ![Collapsed, disconnected, no balance window](images/cosa_range5.png) | 2.	When Operator returns no balance, ‘Connect with a data plan’ option is displayed in the flyout. This option launches the Paid Wi-Fi & Cellular app.|
-| SIM profile onboarded in COSA range with ‘Data Marketplace Supported = Yes’ | Expanded, connected, has balance: ![Expanded, connected with balance window](images/cosa_range6.png)| |
-| SIM profile onboarded in COSA range with ‘Data Marketplace Supported = Yes’ | Expanded, connected, no balance: ![Expanded, connected with no balance window](images/cosa_range7.png)| | 
+| SIM profile onboarded in COSA range with ‘Data Marketplace Supported = No’ | Expanded, Connected: <p><img src="images/cosa_range3.png" alt="Expanded and connected window" title="Expanded and connected window" style="width: 250px;"/></p> | 3. Customer can launch Paid Wi-Fi & Cellular app from Windows start menu. If the device is eSIM capable (either with embedded or inserted reprogrammable eUICC) and the device is connected to internet, customer can choose from a list of Data Marketplace onboarded providers and purchase from them. |
+| SIM profile onboarded in COSA range with ‘Data Marketplace Supported = Yes’ | Collapsed, disconnected, has balance: <p><img src="images/cosa_range4.png" alt="Collapsed, disconnected with balance window" title="Collapsed, disconnected with balance window" style="width: 250px;"/></p> | 1. Balance will be retrieved through Get Balance API and displayed in the flyout.|
+| SIM profile onboarded in COSA range with ‘Data Marketplace Supported = Yes’ | Collapsed, disconnected, no balance: <p><img src="images/cosa_range5.png" alt="Collapsed, disconnected, no balance window" title="Collapsed, disconnected, no balance window" style="width: 250px;"/></p> | 2.	When Operator returns no balance, ‘Connect with a data plan’ option is displayed in the flyout. This option launches the Paid Wi-Fi & Cellular app.|
+| SIM profile onboarded in COSA range with ‘Data Marketplace Supported = Yes’ | Expanded, connected, has balance: <p><img src="images/cosa_range6.png" alt="Expanded, connected with balance window" title="Expanded, connected with balance window" style="width: 250px;"/></p> | |
+| SIM profile onboarded in COSA range with ‘Data Marketplace Supported = Yes’ | Expanded, connected, no balance: <p><img src="images/cosa_range7.png" alt="Expanded, connected with no balance window" title="Expanded, connected with no balance window" style="width: 250px;"/></p> | | 
 
 ## Paid Wi-Fi and Cellular app 
 
@@ -51,7 +51,7 @@ The Paid Wi-Fi and Cellular (PWC) app is where customer engages in the purchase 
 This section will discuss the process and implication of having COSA database submitted.
 
 > [!IMPORTANT]
-> Starting in Windows 10, version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before version 1703 will continue to use the APN database, while Windows 10, version 1703 and later use COSA. For a list of frequently asked questions about COSA, see [COSA FAQ](//docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/cosa---faq).
+> Starting in Windows 10, version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before version 1703 will continue to use the APN database, while Windows 10, version 1703 and later use COSA. For a list of frequently asked questions about COSA, see [COSA overview](cosa-overview.md).
 
 Get the latest COSA database template from your Data Marketplace partner. 
 
@@ -73,7 +73,9 @@ These additional fields are recommended if you are onboarding to Mobile Operator
 
 When you onboard with either an Account Experience URL or an MO App, a customer with an active MO Direct account from your service will see the View my account link in the flyout (see the image below), which launches the MO App or the Account Experience URL in a browser. 
 
-![View my account flyout window](images/view_my_account.png)
+<p><img src="images/view_my_account.png" alt="View my account flyout window" title="View my account flyout window" style="width: 250px;"/></p>
+
+![Alt text](BUGBUG NEED IMAGE)
 
 The following fields are highly recommended as they determine the branding assets displayed in the Windows Connection Manager:
 
@@ -81,9 +83,9 @@ The following fields are highly recommended as they determine the branding asset
 - Branding Icon
 - Use Branding On Roaming
 
-![Windows Connection Manager with branding](images/images.png)
+![Windows Connection Manager with branding](BUGBUG NEED IMAGE)
 
-In the image above, &quot;Contoso Cellular&quot; is the branding name. Note that there is a single line for the branding name and if the string is too long, it will be truncated. The length of the string depends on the letters you are using (&#39;mmmmm&#39; and &#39;iiiii&#39; are different in length although they are both 5 letters). The maximum count of letters that can fit based on internal tests are listed here.
+Note that there is a single line for the branding name and if the string is too long, it will be truncated. The length of the string depends on the letters you are using (&#39;mmmmm&#39; and &#39;iiiii&#39; are different in length although they are both 5 letters). The maximum count of letters that can fit based on internal tests are listed in the following table.
 
 | Letter | Max Count |
 | --- | --- |
@@ -92,21 +94,21 @@ In the image above, &quot;Contoso Cellular&quot; is the branding name. Note that
 | m | 20 |
 | i | 72 |
 
-See [Planning your COSA database](https://msdn.microsoft.com/en-us/library/windows/hardware/dn973149(v=vs.85).aspx) for more information on the required and optional fields in COSA database.
+See [Desktop COSA/APN database settings](desktop-cosa-apn-database-settings.md) for more information on the required and optional fields in COSA database.
 
 ### Submit your COSA database
 
-Once you complete the COSA update spreadsheet and have the icon file, follow the process in [submitting COSA/APN database](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/submitting-the-apn-database-update). Send your case number to your Data Marketplace partner so that we can follow up internally.
+Once you complete the COSA update spreadsheet and have the icon file, follow the process in [Submitting the desktop COSA/APN database update](submitting-the-desktop-cosa-apn-database-update.md). Send your case number to your Data Marketplace partner so that we can follow up internally.
 
 You can also contact your Data Marketplace partner for any questions on the submission.
 
 ### Testing the COSA database
 
-See the process for Windows 10, version 1703 and later in [test your submission for COSA](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/testing-your-apn-database-submission).
+See the process for Windows 10, version 1703 and later in [Testing your desktop COSA/APN database submission](testing-your-desktop-cosa-apn-database-submission.md).
 
-For verifying Data Marketplace purchase option availability in the network flyout, refer to the diagram below:
+For verifying Data Marketplace purchase option availability in the network flyout, refer to the following diagram:
 
-![Data Marketplace purchase flow availability](images/dm-purchase-flow.png)
+<p><img src="images/dm-purchase-flow.png" alt="Data Marketplace purchase flow availability" title="Data Marketplace purchase flow availability" style="width: 800px;"/></p>
 
 ## eSIM profile configuration
 

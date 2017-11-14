@@ -1,10 +1,15 @@
 ---
-title: Appendix A - Data Marketplace UX for cell
-description: Data Marketplace enables your mobile brand and pay-as-you-go connectivity offerings on Windows 10 devices.
-author: mattwojo
-ms.author: mattwoj
-ms.date: 09/01/2017
-keywords: 
+title: Appendix A Data Marketplace UX for cell
+author: windows-driver-content
+description: This topic describes Appendix A Data Marketplace UX for cell for Data Marketplace.
+ms.assetid: 4FE621D3-059E-4E64-B422-E7B36D7ECDCA
+keywords:
+- Data Marketplace mobile operators, Data Marketplace mobile broadband WDK
+ms.author: windowsdriverdev
+ms.date: 11/13/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Appendix A: Data Marketplace UX for cell
@@ -33,14 +38,13 @@ The following table summarizes the initial connectivity state that Data Marketpl
 
 Data Marketplace enables Windows-basseed device customers to browse, purchase, and consume cellular data plans offered by onboarded mobile operators. The diagram below depicts the customer journey with Data Marketplace:
 
-![Data Marketplace customer journey](images/user-journey.png)
+<p><img src="images/user-journey.png" alt="Data Marketplace customer journey" title="Data Marketplace customer journey" style="width: 800px;"/></p>
 
 The table below explains each step of the customer journey:
 
 | # | Description | Balance Type returned in GetBalance API |
 | --- | --- | --- |
 | 0 | If SIM ICCID is not in DM range, or the device has no network connectivity, you will not receive a Get Balance call. If SIM ICCID is in COSA and DM range, you will receive a Get Balance call but you can return 'NotSupported' to turn off DM experience for specific use cases, such as Enterprise SIMs. This gives you flexibility when you can’t identify a consecutive ICCID range for which DM experience simply will not work. For 'NotSupported' case: <br> • When MBAE App onboarded or Account Management Experience (AMX) URL onboarded in COSA. <br> • 'View my account' link will launch MBAE app or AMX URL in web browser. No parameter is passed when launching AMX URL. <br> • When no MBAE App or AMX URL available.  <br> • When customer launches Paid Wi-Fi &amp; Cellular app from Windows start menu. | &#39;NOTSUPPORTED&#39; |
-
 | 1 | When a device is connected and Data Marketplace experience is supported, customer will see the cellular connection annotated with &#39;Buy from Windows Store&#39; invitation in Windows network flyout.&lt;image&gt; | &#39;NONE&#39; |
 | 2 | Click on &#39;Connect with a data plan&#39; from the flyout to launch Paid Wi-Fi &amp; Cellular app (PWC app).Alternatively, a customer can launch the app from the **Start** menu. | N/A |
 | 3 | Customer browses data plans on Provider Details Page (PDP) in PWC app.

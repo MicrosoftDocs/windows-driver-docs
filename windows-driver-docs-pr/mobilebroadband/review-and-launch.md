@@ -53,7 +53,7 @@ This section describes service availability and expected API response times for 
 | MO Direct Portal | A web portal customer can access for MO Direct scenario. | Customers will not be able to engage with Mobile Operator Direct (MO Direct) experience to sign up data plans. | **Yes.**   | 99.90% | 400ms |
 | xDR(CDR, SDR, TDR) | Call details record. Subscription details record. Transaction details record. | Impacts Microsoft internal business intelligence reporting and sharing insights with mobile operators. | **No.** Mobile operators are responsible to monitor its own xDR services. | N/A | N/A |
 
-![Service performance SLAs](images/image.png)
+![Service performance SLAs](BUGBUG NEED IMAGE)
 
 ### Incident escalation
 
@@ -72,7 +72,7 @@ This section describes service availability and expected API response times for 
 - Ongoing updates are expected every week until resolution.
  |
 
-![incident severity matrix](images/image.png)
+ ![Incident severity matrix](BUGBUG NEED IMAGE)
 
 #### Escalation to Microsoft
 

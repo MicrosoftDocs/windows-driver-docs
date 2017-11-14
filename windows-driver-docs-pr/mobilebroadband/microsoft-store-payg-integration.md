@@ -31,7 +31,7 @@ In addition to these core requirements, there are several other considerations w
 
 ## Configuration
 
-Please send this information to Data Marketplace Support at [datamartpartnersup@microsoft.com](mailto:swifipartnersup@microsoft.com) 
+Please send this information to Data Marketplace Support at [datamartpartnersup@microsoft.com](mailto:swifipartnersup@microsoft.com).
 
 ### ICCID range
 
@@ -39,7 +39,7 @@ This should be the same ICCID range you submitted to COSA with &#39;Data Marketp
 
 ### Service endpoint
 
-You&#39;re service endpoint. For example: [https://moapi.contoso.com/v1](https://moapi.contoso.com/v1)
+Your service endpoint. For example: https<span></span>://moapi.contoso.com/v1
 
 ### App ID
 
@@ -71,7 +71,7 @@ The table below defines the endpoints that are needed for walled garden.
 | service.datamart.windows.com | https |
 | dogfood.datamart.windows.com | https |
 | windows.policies.live.net | https |
-| [ctldl.windowsupdate.com](http://ctldl.windowsupdate.com) | http |
+| ctldl.windowsupdate.com | http |
 | msftncsi.com | http |
 | login.live.com | http + https |
 | storagetos.datamart.windows.com | http + https |
@@ -115,19 +115,17 @@ The most basic set of APIs provides support for pay-as-you-go (PAYG) plans sold 
 
 ### End-to-end flows
 
-![Customer requesting balance](images/balances1.png)
+<p><img src="images/balances1.png" alt="Customer requesting balance" title="Customer requesting balance" style="width: 800px;"/></p>
 
-![Customer viewing offers](images/microbalance2.png)
+<p><img src="images/microbalance2.png" alt="Customer viewing offers" title="Customer viewing offers" style="width: 800px;"/></p>
 
-![Customer completing purchase](images/purchase.png)
-
-
+<p><img src="images/purchase.png" alt="Customer completing purchase" title="Customer completing purchase" style="width: 800px;"/></p>
 
 ### Resource model
 
 The communication between the Data Marketplace service and the MO service involves the manipulation of the below resources.
 
-![Resource model](images/resourcemodel.png)
+<p><img src="images/resourcemodel.png" alt="Resource model" title="Resource model" style="width: 800px;"/></p>
 
 > [!NOTE] 
 > There is no CRUD operation against Sim resource at this time.
@@ -214,9 +212,9 @@ GET https://{moBaseUrl}/sims/{sim id}/balances?fieldsTemplate=basic&amp;limit=1&
 | --- | --- | --- |
 
 Example:
-The below example, will return the first balance that is available for the customer in US.
+The following example will return the first balance that is available for the customer in US.
 
-GET [https://moendpoint.com/v1/sims/iccid:](https://moendpoint.com/v1/sims/iccid:%208988247000100003319/balances?fieldsTemplate=basic&amp;limit=1&amp;location=us) [8988247000100003319](https://moendpoint.com/v1/sims/iccid:%208988247000100003319/balances?fieldsTemplate=basic&amp;limit=1&amp;location=us) [/balances?fieldsTemplate=basic&amp;limit=1&amp;location=us](https://moendpoint.com/v1/sims/iccid:%208988247000100003319/balances?fieldsTemplate=basic&amp;limit=1&amp;location=us) HTTP/1.1
+GET https<span></span>://moendpoint.com/v1/sims/iccid:8988247000100003319/balances?fieldsTemplate=basic&amp;limit=1&amp;location=us HTTP/1.1
 
 X-MS-DM-TransactionId: &quot;MSFT-12345678-1234-1234-1234-123456789abc&quot; 
 
@@ -237,7 +235,7 @@ HTTP/1.1 200 OKContent-type: application/jsonX-MS-DM-TransactionId: &quot;12345&
 
 The example below shows the expected response when fieldsTemplate is set as full.
 
-GET [https://moendpoint.com/v1/sims/iccid:](https://moendpoint.com/v1/sims/iccid:%208988247000100003319/balances?fieldsTemplate=full) [8988247000100003319](https://moendpoint.com/v1/sims/iccid:%208988247000100003319/balances?fieldsTemplate=full) [/balances?fieldsTemplate=full](https://moendpoint.com/v1/sims/iccid:%208988247000100003319/balances?fieldsTemplate=full) HTTP/1.1X-MS-DM-TransactionId: &quot;MSFT-12345678-1234-1234-1234-123456789abc&quot; HTTP/1.1 200 OKContent-type: application/jsonX-MS-DM-TransactionId: &quot;MSFT-12345678-1234-1234-1234-123456789abc&quot; {&quot;balances&quot;: [    {         &quot;id&quot;: &quot;23445&quot;,         &quot;type&quot;: &quot;PAYG&quot;,         &quot;dataRemaininginMB&quot;: 123.0,         &quot;timeRemaining&quot;: &quot;P23DT23H&quot;,         &quot;locations&quot;: [&quot;US&quot;, &quot;CA&quot;],         &quot;ms-provisioningDataSet&quot;: [&quot;xxxxx&quot;, &quot;yyyyy&quot;]    },    {         &quot;id&quot;: &quot;12345&quot;,         &quot;type&quot;: &quot;PAYG&quot;,         &quot;dataRemaininginMB&quot;: 1367.0,         &quot;timeRemaining&quot;: &quot;P23DT23H&quot;,         &quot;locations&quot;: [&quot;UK&quot;, &quot;FR&quot;],         &quot;ms-provisioningDataSet&quot;: [&quot;xxxxx&quot;, &quot;yyyyy&quot;]    }  ]}  
+GET https<span></span>://moendpoint.com/v1/sims/iccid:8988247000100003319/balances?fieldsTemplate=full HTTP/1.1X-MS-DM-TransactionId: &quot;MSFT-12345678-1234-1234-1234-123456789abc&quot; HTTP/1.1 200 OKContent-type: application/jsonX-MS-DM-TransactionId: &quot;MSFT-12345678-1234-1234-1234-123456789abc&quot; {&quot;balances&quot;: [    {         &quot;id&quot;: &quot;23445&quot;,         &quot;type&quot;: &quot;PAYG&quot;,         &quot;dataRemaininginMB&quot;: 123.0,         &quot;timeRemaining&quot;: &quot;P23DT23H&quot;,         &quot;locations&quot;: [&quot;US&quot;, &quot;CA&quot;],         &quot;ms-provisioningDataSet&quot;: [&quot;xxxxx&quot;, &quot;yyyyy&quot;]    },    {         &quot;id&quot;: &quot;12345&quot;,         &quot;type&quot;: &quot;PAYG&quot;,         &quot;dataRemaininginMB&quot;: 1367.0,         &quot;timeRemaining&quot;: &quot;P23DT23H&quot;,         &quot;locations&quot;: [&quot;UK&quot;, &quot;FR&quot;],         &quot;ms-provisioningDataSet&quot;: [&quot;xxxxx&quot;, &quot;yyyyy&quot;]    }  ]}  
 
 The example below shows the expected response for a SIM that is in the COSA ICCID range, but should not be supported by Data Marketplace. You should use this response in cases where it is impossible to segment out a particular ICCID range to exclude certain SIMs. For DM &quot;NotSupported&quot; SIMs, the customer will see default Windows OS behavior. If you include an Account Management URL in your COSA database submission, and the customer will see a &quot;Launch Account Experience&quot; link in the network flyout and access the website you provide. If the customer launches Paid Wi-Fi &amp; Cellular App from the **Start** menu, the customer will see a generic error message for invalid SIM in the app.
 
@@ -282,19 +280,19 @@ Query Parameters:
 
  Example:
 
-PUT https://moendpoint.com/sims/iccid:8988247000100003319/microbalance HTTP/1.1 X-MS-DM-TransactionId: &quot;MSFT-12345678-1234-1234-1234-123456789abc&quot; {      &quot;location&quot;: &quot;US&quot;} 
+PUT https<span></span>://moendpoint.com/sims/iccid:8988247000100003319/microbalance HTTP/1.1 X-MS-DM-TransactionId: &quot;MSFT-12345678-1234-1234-1234-123456789abc&quot; {      &quot;location&quot;: &quot;US&quot;} 
 
 HTTP Response: 
 Response JSON:
 Example:
 
-HTTP/1.1 200 OKX-MS-DM-TransactionId: &quot;MSFT-12345678-1234-1234-1234-123456789abc&quot;Location: [https://moendpoint.com/sims/iccid:](https://moendpoint.com/sims/iccid:8988247000100003319/microbalance) [8988247000100003319](https://moendpoint.com/sims/iccid:8988247000100003319/microbalance) [/microbalance](https://moendpoint.com/sims/iccid:8988247000100003319/microbalance) {} 
+HTTP/1.1 200 OKX-MS-DM-TransactionId: &quot;MSFT-12345678-1234-1234-1234-123456789abc&quot;Location: https<span></span>://moendpoint.com/sims/iccid:8988247000100003319/microbalance {} 
 
 This will be used when customer exits browsing or purchase flow.
 
 HTTP Request: 
 
-Delete https://{moBaseUrl}/sims/{sim id}/microbalance HTTP/1.1 
+Delete https:<span></span>//{moBaseUrl}/sims/{sim id}/microbalance HTTP/1.1 
 
 Where: 
 **moBaseUrl** is the endpoint of the MO hosted service. 
@@ -309,7 +307,7 @@ Query Parameters:
 
  Example:
 
-DELETE [https://moendpoint.com/sims/iccid:](https://moendpoint.com/sims/iccid:8988247000100003319/microbalance%20HTTP/1.1) [8988247000100003319](https://moendpoint.com/sims/iccid:8988247000100003319/microbalance%20HTTP/1.1) [/microbalance HTTP/1.1](https://moendpoint.com/sims/iccid:8988247000100003319/microbalance%20HTTP/1.1)X-MS-DM-TransactionId: &quot;MSFT-12345678-1234-1234-1234-123456789abc&quot; {} 
+DELETE https<span></span>://moendpoint.com/sims/iccid:8988247000100003319/microbalance HTTP/1.1X-MS-DM-TransactionId: &quot;MSFT-12345678-1234-1234-1234-123456789abc&quot; {} 
 
 HTTP Response: 
 Response JSON:
@@ -327,7 +325,7 @@ As described in the Windows Dev Center onboarding process, when ingesting offers
 
 HTTP Request: 
 
-POST https://{moBaseUrl}/orders HTTP/1.1 
+POST https<span></span>://{moBaseUrl}/orders HTTP/1.1 
 
 Where: 
 **moBaseUrl** is the endpoint of the MO hosted service.  
@@ -335,7 +333,7 @@ Where:
 
 Example:
 
-POST [https://moendpoint.com/v1/orders HTTP/1.1](https://moendpoint.com/v1/orders%20HTTP/1.1)X-MS-DM-TransactionId: &quot;MSFT-12345678-1234-1234-1234-123456789abc&quot; {       &quot;purchaseDate&quot;: &lt;Time of purchase&gt;       &quot;provisioningData&quot;: &quot;data ingested by MO in Microsoft Store&quot;,       &quot;ms-provisioningData&quot;: &quot;xxxxxx&quot;,       &quot;ms-market&quot;: &quot;US&quot;,       &quot;ms-oem&quot;: &quot;Contoso&quot;,       &quot;sims&quot;: [&quot;iccid:122345678910&quot;]} 
+POST https<span></span>://moendpoint.com/v1/orders HTTP/1.1X-MS-DM-TransactionId: &quot;MSFT-12345678-1234-1234-1234-123456789abc&quot; {       &quot;purchaseDate&quot;: &lt;Time of purchase&gt;       &quot;provisioningData&quot;: &quot;data ingested by MO in Microsoft Store&quot;,       &quot;ms-provisioningData&quot;: &quot;xxxxxx&quot;,       &quot;ms-market&quot;: &quot;US&quot;,       &quot;ms-oem&quot;: &quot;Contoso&quot;,       &quot;sims&quot;: [&quot;iccid:122345678910&quot;]} 
 
 HTTP Response:
 
@@ -375,7 +373,7 @@ In addition to the core APIs required of any provider wishing to participate in 
 
 In addition to the API itself, you must have a GSMA compliant eSIM profile and provide additional information on the SM-DP+ location at which it can be downloaded.
 
-![Customer completing purchase with eSIM](images/completing_purchase_esim.png)
+<p><img src="images/completing_purchase_esim.png" alt="Customer completing purchase with eSIM" title="Customer completing purchase with eSIM" style="width: 800px;"/></p>
 
 #### Provisioning API
 
@@ -383,7 +381,7 @@ The Data Marketplace service will give all the ICCID&#39;s available on the clie
 
 HTTP Request: 
 
-POST https://{moBaseUrl}/orders HTTP/1.1 
+POST https<span></span>://{moBaseUrl}/orders HTTP/1.1 
 
 Where: 
 **moBaseUrl** is the endpoint of the MO hosted service.   
@@ -393,7 +391,7 @@ Where:
 
 Example:
 
-POST [https://moendpoint.com/v1/orders HTTP/1.1](https://moendpoint.com/v1/orders%20HTTP/1.1)X-MS-DM-TransactionId: &quot;MSFT-12345678-1234-1234-1234-123456789abc&quot; {       &quot;purchaseDate&quot;: &lt;Time of purchase&gt;       &quot;provisioningData&quot;: &quot;data ingested by MO in Microsoft Store&quot;,       &quot;ms-provisioningData&quot;: &quot;xxxxxx&quot;,       &quot;ms-market&quot;: &quot;US&quot;,       &quot;ms-oem&quot;: &quot;Contoso&quot;,       &quot;eId&quot;: &quot;4567890123&quot;,       &quot;sims&quot;: []} 
+POST https<span></span>://moendpoint.com/v1/orders HTTP/1.1X-MS-DM-TransactionId: &quot;MSFT-12345678-1234-1234-1234-123456789abc&quot; {       &quot;purchaseDate&quot;: &lt;Time of purchase&gt;       &quot;provisioningData&quot;: &quot;data ingested by MO in Microsoft Store&quot;,       &quot;ms-provisioningData&quot;: &quot;xxxxxx&quot;,       &quot;ms-market&quot;: &quot;US&quot;,       &quot;ms-oem&quot;: &quot;Contoso&quot;,       &quot;eId&quot;: &quot;4567890123&quot;,       &quot;sims&quot;: []} 
 
 HTTP Response:
 
@@ -428,13 +426,13 @@ In the example above, the order API resulted in a new ICCID being returned by th
 
 In the second example below, the ICCID on the client be reused and thus there is no activation code returned.
 
-POST [https://moendpoint.com/v1/orders HTTP/1.1](https://moendpoint.com/v1/orders%20HTTP/1.1)X-MS-DM-TransactionId: &quot;MSFT-12345678-1234-1234-1234-123456789abc&quot; {       &quot;purchaseDate&quot;: &lt;Time of purchase&gt;       &quot;provisioningData&quot;: &quot;data ingested by MO in Microsoft Store&quot;,       &quot;ms-provisioningData&quot;: &quot;xxxxxx&quot;,       &quot;ms-market&quot;:&quot;US&quot;,       &quot;ms-oem&quot;:&quot;Contoso&quot;,       &quot;eId&quot;: &quot;4567890123&quot;,       &quot;sims&quot;: [&quot;iccid:122345678910&quot;, &quot;iccid:456789012&quot;]} HTTP/1.1 201 CreatedX-MS-DM-TransactionId: &quot;MSFT-12345678-1234-1234-1234-123456789abc&quot;Location: https://{moBaseUrl}/sims/{mo sim Id}/orders/&lt;orderId&gt; {       &quot;iccid&quot;: &quot;122345678910&quot;}  
+POST https<span></span>://moendpoint.com/v1/orders HTTP/1.1 X-MS-DM-TransactionId: &quot;MSFT-12345678-1234-1234-1234-123456789abc&quot; {       &quot;purchaseDate&quot;: &lt;Time of purchase&gt;       &quot;provisioningData&quot;: &quot;data ingested by MO in Microsoft Store&quot;,       &quot;ms-provisioningData&quot;: &quot;xxxxxx&quot;,       &quot;ms-market&quot;:&quot;US&quot;,       &quot;ms-oem&quot;:&quot;Contoso&quot;,       &quot;eId&quot;: &quot;4567890123&quot;,       &quot;sims&quot;: [&quot;iccid:122345678910&quot;, &quot;iccid:456789012&quot;]} HTTP/1.1 201 CreatedX-MS-DM-TransactionId: &quot;MSFT-12345678-1234-1234-1234-123456789abc&quot;Location: https://{moBaseUrl}/sims/{mo sim Id}/orders/&lt;orderId&gt; {       &quot;iccid&quot;: &quot;122345678910&quot;}  
 
 Expected response codes for this API are listed in Common error codes section.
 
 The below example shows the launch parameters for eSIM.
 
-MyWebView.Navigate(&quot;https://moportal.com? **eid=** 89033024010400000100000000009136&amp; **iccids** =8988247000100003319, 8988247000100003555&amp; **market** =us&amp; **transactionId** =waoigFfX00yGH3Vb.1&amp; **location** =us&quot;);  
+MyWebView.Navigate(&quot;https<span></span>://moportal.com? **eid=** 89033024010400000100000000009136&amp; **iccids** =8988247000100003319, 8988247000100003555&amp; **market** =us&amp; **transactionId** =waoigFfX00yGH3Vb.1&amp; **location** =us&quot;);  
 
 ## Additional requirements on your network service
 

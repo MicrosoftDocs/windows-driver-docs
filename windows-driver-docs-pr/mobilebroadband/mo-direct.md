@@ -18,14 +18,14 @@ Mobile Operator Direct (MO Direct) is a program that lets mobile operators sell 
 
 To onboard to MO Direct, you need to:
 
-1. Go through the [Network onboarding](network-onboarding-for-data-marketplace.md) steps.
+1. Go through the [Network onboarding for Data Marketplace](network-onboarding-for-data-marketplace.md) steps.
 2. Build a self-contained, curated HTML experience that complies to [MO Direct policies](##mo-direct-policies).
 3. [Send MO Direct onboarding information](###required-information) to the Data Marketplace team.
 4. Integrate with Data Marketplace for [MO Direct APIs](mo-direct-api.md).
 
 ## MO Direct policies
 
-These are policies that you should adhere to when developing MO Direct experience. We publish these policies to ensure the best customer experience on Windows. These policies are supplementary to the terms and conditions of Data Marketplace Partner Addendum, Windows [App Developer Agreement](https://msdn.microsoft.com/en-us/library/windows/apps/hh694058.aspx) and [Windows Store Policies](https://msdn.microsoft.com/en-us/library/windows/apps/dn764944.aspx).
+These are policies that you should adhere to when developing MO Direct experience. We publish these policies to ensure the best customer experience on Windows. These policies are supplementary to the terms and conditions of Data Marketplace Partner Addendum, Windows [App Developer Agreement](https://msdn.microsoft.com/library/windows/apps/hh694058) and [Windows Store Policies](https://msdn.microsoft.com/library/windows/apps/dn764944).
 
 ### Business functions
 
@@ -92,7 +92,7 @@ portal, or a dedicated MO App, should enable customers to take actions on their 
 
 ## Build the MO Direct experience
 
-Paid Wi-Fi &amp; Cellular app hosts your MO Direct experience using the Windows **WebView** class. To understand how it works, review the [WebView Class](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.WebView) documentation.
+Paid Wi-Fi &amp; Cellular app hosts your MO Direct experience using the Windows **WebView** class. To understand how it works, review the [WebView Class](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.WebView) documentation.
 
 To integrate your MO Direct web experience with Data Marketplace, see [MO Direct API](mo-direct-api.md).
 
@@ -135,4 +135,4 @@ Please provide the following information:
 - Your MO Direct experience goes live!
 - Ensure MO Direct experience is maintained as needed to remain in compliance with MO Direct policies.
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default. "Send comments about this topic to Microsoft")

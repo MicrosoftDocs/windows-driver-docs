@@ -30,9 +30,9 @@ As a Windows Store seller, Windows Dev Center is the main portal to help you pla
 | [Getting paid](https://docs.microsoft.com/en-us/windows/uwp/publish/getting-paid-apps) | Get details about receiving earnings from your apps, add-ons, and Microsoft Advertising. |
 | [Store Policies and Code of Conduct](https://msdn.microsoft.com/library/windows/apps/dn764939.aspx) | This section includes the  [Store Policies](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx) and  [App Quality](https://msdn.microsoft.com/library/windows/apps/mt652261.aspx) criteria that apply to Windows apps and content, and the  [Code of Conduct](https://msdn.microsoft.com/library/windows/apps/dn764941.aspx) that developers should follow. |
 
-Below is a screenshot showing merchandise information and layout of a data provider page (PDP) in the Paid Wi-Fi &amp; Cellular app. Most information on PDP comes from Dev Center and is fully controlled by you.
+The following screenshot shows merchandise information and layout of a data provider page (PDP) in the Paid Wi-Fi &amp; Cellular app. Most information on PDP comes from Dev Center and is fully controlled by you.
 
-![Paid Wi-Fi &amp; Cellular app screenshot](images/image.png).
+![Paid Wi-Fi &amp; Cellular app screenshot](BUGBUG NEED IMAGE).
 
 | Element | Title | Description | Source | Localization |
 | --- | --- | --- | --- | --- |
@@ -57,7 +57,7 @@ Windows Dev Center is the portal you will use to manage and publish your connect
 2. Next, [set up a payout account and tax forms](https://msdn.microsoft.com/en-us/windows/uwp/publish/setting-up-your-payout-account-and-tax-forms). Required to sell and to ensure you are paid.
 3. Finally, make sure you set the desired Publisher Display Name in Dec Center Account Settings > Contact Info. 
 
-![Set publisher display name in Dev Center Account Settings](images/image.png).
+![Set publisher display name in Dev Center Account Settings](BUGBUG NEED IMAGE).
 
 After registering, you may find [Using the Windows Dev Center dashboard](https://msdn.microsoft.com/en-us/windows/uwp/publish/using-the-windows-dev-center-dashboard) useful. The Windows Dev Center dashboard is the portal for managing and submitting your apps and offers.
 
@@ -82,8 +82,8 @@ Send an email to [datamartpartnersup@microsoft.com](mailto:swifipartnersup@micro
 
 1. Your Microsoft Account registered with Windows Dev Center ([youremailaddress@outlook.com](mailto:youremailaddress@outlook.com)).
 2. Your app ID in Dev Center. Retrieve your app&#39;s ID from the URL of your app&#39;s Overview page in Dev Center (clicking on your app in the Dev Center dashboard will redirect to the Overview page). In the following example, the string of characters at the end of the URL is your app&#39;s id:
- - [https://www.microsoft.com/store/apps/9WZDNCRFHVFW](https://www.microsoft.com/store/apps/9WZDNCRFHVFW)
-- https://www.microsoft .com/store/apps/&lt;string of characters&gt;
+ - https<span></span>://www.microsoft.com/store/apps/9WZDNCRFHVFW
+- https<span></span>://www.microsoft .com/store/apps/&lt;string of characters&gt;
 3. Continue with the following sections.
 
 > [!NOTE]
@@ -94,7 +94,7 @@ Send an email to [datamartpartnersup@microsoft.com](mailto:swifipartnersup@micro
 1. You need Visual Studio, a tool for creating Windows apps. Get [Visual Studio Community](https://www.visualstudio.com/vs/community/) for free.
 2. Using Visual Studio, create an app project.   [Create your first app](https://msdn.microsoft.com/en-us/windows/uwp/get-started/your-first-app) demonstrates how to use application templates to create a basic app. Since your app doesn&#39;t need any real functionality, you can also use a placeholder app. To use the placeholder app, download the [&quot;Hello World&quot; app sample](https://code.msdn.microsoft.com/windowsapps/How-to-run-Hello-World-bd5d79ec) and then follow steps (c) and (d) to customize branding. The provider logo displayed in Paid Wi-Fi &amp; Cellular app is your app&#39;s title. The product title that appears next to your logo is your app name. The subsequent instructions highlight where the app&#39;s name and images may be edited.
 
-![This highlights the provider&#39;s logo and product name displayed in the Paid Wi-Fi &amp; Cellular app](images/image.png). Note that they will be the same for all your add-ons (data plans), unless you submit a different app.
+![This highlights the provider&#39;s logo and product name displayed in the Paid Wi-Fi &amp; Cellular app](BUGBUG NEED IMAGE). Note that they will be the same for all your add-ons (data plans), unless you submit a different app.
 
 3. Add your app&#39;s icon:
 
@@ -103,7 +103,7 @@ Send an email to [datamartpartnersup@microsoft.com](mailto:swifipartnersup@micro
 - Drag and drop your app tile images in the Assets folder.
 - Within the Solution Explorer open the file Package.appxmanifest.
 
-![Image assets directory in app project](images/image.png).
+![Image assets directory in app project](BUGBUG NEED IMAGE).
 
 - Make sure the **Visual Assets** tab in the Package.appxmanifest file is selected.
 - Reference the images you dropped in the Assets folder with the app so the images are assigned as the app tile image.
@@ -112,13 +112,13 @@ Send an email to [datamartpartnersup@microsoft.com](mailto:swifipartnersup@micro
 - &quot;Square 150x150 Logo&quot; is displayed in Paid Wi-Fi &amp; Cellular app. Make sure that the image has a background color other than transparent.
 - It is better to add images for all &quot;Scaled Assets&quot;. The more images you have in different sizes, the better chance that a high-resolution image is displayed in Paid Wi-Fi and Cellular app with different app windows sizes.
 
-![Package.appxmanifest file where an app&#39;s tile image can be set](images/image.png)
+![Package.appxmanifest file where an app&#39;s tile image can be set](BUGBUG NEED IMAGE)
 
 4. You may [localize](https://msdn.microsoft.com/en-us/windows/uwp/globalizing/put-ui-strings-into-resources) your app&#39;s name by referencing a localized resource as demonstrated in [this MSDN article](https://msdn.microsoft.com/en-us/windows/uwp/globalizing/globalizing-portal) and [this step-by-step instruction](http://www.c-sharpcorner.com/UploadFile/7e39ca/localization-and-globalization-in-windows-store-apps/).
 5. Associate your app with the Store and choose the app name you reserved previously.
 6. In Visual Studio, right-click on your project and select **Store > Associate App with the Store**.
 
-![Submit an App from Visual Studio](images/image.png)
+![Submit an App from Visual Studio](BUGBUG NEED IMAGE)
 
 7. To [build an app package](https://msdn.microsoft.com/en-us/windows/uwp/packaging/packaging-uwp-apps) to submit to Dev Center, right- click on your project and select **Store > Create App Packages**.
 8. Validate your app package locally by running Windows Certification Kit.
@@ -131,13 +131,13 @@ Send an email to [datamartpartnersup@microsoft.com](mailto:swifipartnersup@micro
 1. Now submit the app package in Dev Center, as explained in [App submissions](https://msdn.microsoft.com/en-us/windows/uwp/publish/app-submissions).
 2. During submission, select the option to hide your application and prevent acquisition.
 
-![Hide your application option in Windows Dev Center](images/image.png)
+![Hide your application option in Windows Dev Center](BUGBUG NEED IMAGE)
 
 3. The values are set in the app submission – store listing step. For each language you want to support, you will need a separate store listing with localized strings. See [create app Store listings](https://docs.microsoft.com/en-us/windows/uwp/publish/create-app-store-listings).
 
-![Window Dev Center App submission, App description page](images/image.png)
+![Window Dev Center App submission, App description page](BUGBUG NEED IMAGE)
 
-![Window Dev Center App submission, App description page](images/image.png)
+![Window Dev Center App submission, App description page](BUGBUG NEED IMAGE)
 
 4. Place the following text in [Notes for certification](https://msdn.microsoft.com/en-us/windows/uwp/publish/notes-for-certification) when submitting your app in Windows Dev Center: &quot;Please escalate any possible policy issues to [acoexp@microsoft.com](mailto:acoexp@microsoft.com) or [datamartpartnersup@microsoft.com](mailto:swifipartnersup@microsoft.com). This app is being published to enable this Dev Center account to publish Connectivity Offer In-App-Purchases that are discoverable in Microsoft&#39;s Data Marketplace pre-installed Windows app. The app currently being published is marked as hidden because it&#39;s not intended for retail customer consumption. Microsoft&#39;s Data Marketplace helps Windows customers discover, purchase and connect to wireless connectivity that&#39;s sold in Windows Store.  Feel free to contact the Data Marketplace team at [datamartpartnersup@microsoft.com](mailto:swifipartnersup@microsoft.com).
 5. Submit your app. It typically takes one or two days to receive the certification result. Proceed to next step after receiving an app was certified email from Windows Dev Center.
@@ -156,7 +156,7 @@ This allows Microsoft&#39;s Data Marketplace service to sell your connectivity o
 
 1. Log into Dev Center, select your app in the Dashboard, select **Services** in the left-hand menu and then navigate to **Product collections and purchases** _._ In the _Client ID 1_ field copy/paste this text: **7b02d2d1-f9cd-497c-8064-bac0d8711e97**.
 
-![Windows Dev Center Product Collection Page](images/image.png)
+![Windows Dev Center Product Collection Page](BUGBUG NEED IMAGE)
 
 ## Email Data Marketplace integration details
 
@@ -174,8 +174,8 @@ Here is an example:
 
 | App ID | SIM ICC ID Range | Supported Location | Provider Service URI |
 | --- | --- | --- | --- |
-| 9N08DS9T6W40 | 894230600002575694-894230600002775693; 894236000024748200-894236000024748299; | US; FR; | [https://service.contoso.com](https://service.contoso.com/) |
-| 9NBLGGH42M6H | 894230600002575600-894230600002775699 | BR | [https://service.contoso.com/v1](https://service.contoso.com/v1) |
+| 9N08DS9T6W40 | 894230600002575694-894230600002775693; 894236000024748200-894236000024748299; | US; FR; | https<span></span>://service.contoso.com |
+| 9NBLGGH42M6H | 894230600002575600-894230600002775699 | BR | https<span></span>://service.contoso.com/v1 |
 
 Send an email to [datamartpartnersup@microsoft.com](mailto:swifipartnersup@microsoft.com) with the following information for MO Direct onboarding:
 
@@ -191,11 +191,11 @@ Keep these points in mind:
 
 1. Currently, providers can only create non-recurring offers by setting the **product type** to &quot;Developer-managed consumable&quot;. A customer that purchases 200 MB of cellular data that expires after 24 hours is charged once, and when 24 hours passes or the 200 MB is consumed, the customer is no longer entitled to connectivity until they purchase another offer.
 
-![Product type for connectivity offers](images/image.png)
+![Product type for connectivity offers](BUGBUG NEED IMAGE)
 
 2. After selecting the product type, set the **content type** to &quot;Connectivity offer&quot;.
 
-![Content type for connectivity offers](images/image.png)
+![Content type for connectivity offers](BUGBUG NEED IMAGE)
 
 3. Enter Data Marketplace and connectivity offer specific information in the **Tag** textbox (3000 character limit). This information must be formatted in JSON, which resembles the following format.  This must be repeated for each IAP.  The table below explains how each field is used.
 
@@ -208,12 +208,12 @@ Keep these points in mind:
 | locations | [US, GB, FR] | A list of countries (no more than 60) where the customer must be located to see the offer. |
 | providerData  | &quot;providerData&quot;:&quot;{ \&quot;Version\&quot;:\&quot;2\&quot;, \&quot;Data\&quot;:\&quot;{ \\\&quot;location\\\&quot;:\\\&quot;US\\\&quot;, \\\&quot;isMicrobalance\\\&quot;:\\\&quot;true\\\&quot;, \\\&quot;productId\\\&quot;:\\\&quot;CXZV7MW0H0XN\\\&quot;, \\\&quot;dataQuantaInMB\\\&quot;:3, \\\&quot;timeQuanta\\\&quot;:\\\&quot;00:00:01:00\\\&quot;}\&quot;}&quot;}   | This data is passed to you when Data Marketplace calls into your system to provision network access. It is transparent to Data Marketplace services and you may put any data you desire, as long as it&#39;s valid JSON and follow the same escaping rules as in the example on the left.Examples of data that may be placed here include: expiry of the data purchased or the amount of data that must be provisioned as a result of purchasing the offer. Note, this data is made available only after you have begun network integration with Microsoft. |
 
-![Connectivity offer properties](images/image.png)
+![Connectivity offer properties](BUGBUG NEED IMAGE)
 
 4. [Set Pricing and Availability](https://msdn.microsoft.com/en-us/windows/uwp/publish/set-add-on-pricing-and-availability) for available markets. A customer&#39;s market is determined by the region setting in Windows Settings -&gt; Time &amp; Language -&gt; Country or region.
 5. [Create Store Listings](https://msdn.microsoft.com/en-us/windows/uwp/publish/create-add-on-store-listings) for every language you want to support. The values are set in Add-on Store Listings. Icon for add-on is optional and it will be displayed in the order confirmation email customer receives after purchase. Add-on icon is not displayed in Paid Wi-Fi &amp; Cellular App.
 
-![Store listing for connectivity offer](images/image.png)
+![Store listing for connectivity offer](BUGBUG NEED IMAGE)
 
 > [!NOTE] 
 > For Windows Store market availability and tax remittance be sure to review [Tax details for paid apps](https://msdn.microsoft.com/en-us/windows/uwp/publish/tax-details-for-paid-apps) (and IAPs), it explains where the Store remits taxes and where you&#39;re expected to remit taxes.
@@ -222,7 +222,7 @@ Keep these points in mind:
 
 Offer ID will be useful for debugging and reporting purposes. You can find your offer ID on the offer submission page:
 
-![Retrieve your offer ID](images/image.png)
+![Retrieve your offer ID](BUGBUG NEED IMAGE)
 
 This page&#39;s URL also has the offer ID: https://developer.microsoft.com/en-us/dashboard/iaps/9NBLGGH5108R?appId=9NBLGGH4NXJ7
 
@@ -299,6 +299,6 @@ You can also [submit offers through Windows Store Submission API](https://docs.m
 
 For audit and legal reasons, you cannot delete an add-on in Windows Store once submitted. To make an offer not available for Data Marketplace / Windows Store customers, update the offer Pricing and Availability.
 
-![Make an offer unavailable for purchase](images/image.png)
+![Make an offer unavailable for purchase](BUGBUG NEED IMAGE)
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
