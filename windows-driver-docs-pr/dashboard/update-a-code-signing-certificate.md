@@ -1,4 +1,4 @@
----
+--
 title: Update a code signing certificate
 description: Update a code signing certificate
 ms.assetid: 120AA970-D981-4E7D-A9BD-68125D90A0EE
@@ -26,7 +26,7 @@ For more information about code signing requirements, see [Get a code signing ce
 
 ## To update a code signing certificate
 
-** Step 1: Renew your code signing certificate **
+**Step 1: Renew your code signing certificate**
 
 1. Determine which type of code signing certificate you need (for more information, see [Get a code signing certificate](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/get-a-code-signing-certificate)).
 
@@ -34,7 +34,7 @@ For more information about code signing requirements, see [Get a code signing ce
 
 3. Once you receive your verified certificate from the certificate authority, you can sign and upload the Winqual.exe file following the instructions below.
 
-** Step 2: Sign and upload your Winqual.exe file **
+**Step 2: Sign and upload your Winqual.exe file**
 
 1. From the Hardware Dev Center dashboard, sign in as an administrator with your Microsoft account.
 
