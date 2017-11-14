@@ -116,7 +116,7 @@ If you don’t have an approved standard or EV code signing certificate, you can
 
 -   [Buy a GlobalSign standard code signing cert](http://go.microsoft.com/fwlink/p/?LinkId=620887)
 
--   [Buy a Comodo standard code signing cert](https://comodosslstore.com/in/codesigning.aspx)
+-   [Buy a Comodo standard code signing cert](https://go.microsoft.com/fwlink/?linkid=863206)
 
 -   [Buy a DigiCert standard code signing certificate](http://go.microsoft.com/fwlink/?LinkId=393249)
 
@@ -138,7 +138,7 @@ If you don’t have an approved standard or EV code signing certificate, you can
 
 -   [Buy a GlobalSign EV code signing certificate](http://go.microsoft.com/fwlink/p/?LinkId=620888)
 
--   [Buy a Comodo EV code signing certificate](https://comodosslstore.com/positivessl-ev.aspx?utm_source=comodostore&utm_medium=banner&utm_campaign=positivesslev80-B2)
+-   [Buy a Comodo EV code signing certificate](https://go.microsoft.com/fwlink/?linkid=863208)
 
 -   [Buy a DigiCert EV code signing certificate](http://go.microsoft.com/fwlink/?LinkId=393249)
 
