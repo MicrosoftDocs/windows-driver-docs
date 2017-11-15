@@ -37,9 +37,13 @@ Your driver will need to use some other kinds of constants, as well. These const
 
 -   Some sensor properties are required to be provided by your driver, some properties can be set by client applications, and some must always return the same value. The [**Sensor Properties**](https://msdn.microsoft.com/library/windows/hardware/ff545859) reference section provides this information for each property. To understand which properties are required for a particular method, see the method documentation in the [Windows Sensor Reference](https://msdn.microsoft.com/library/windows/hardware/ff545907) section.
 
--   [**Event constants**](https://msdn.microsoft.com/library/windows/hardware/ff545463), such as SENSOR\_EVENT\_STATE\_CHANGED. Event constants include GUIDS, which represent types of events, and PROPERTYKEYs, which represent event parameter types. You will use these constants when called by the class extension in [**ISensorDriver::OnGetSupportedEvents**](https://msdn.microsoft.com/library/windows/hardware/ff545623), or when raising events through [**ISensorClassExtension::PostEvent**](https://msdn.microsoft.com/library/windows/hardware/ff545519) or [**ISensorClassExtension::PostStateChange**](https://msdn.microsoft.com/library/windows/hardware/ff545523).
+-   [**Event constants**](about-sensor-driver-events.md), such as SENSOR\_EVENT\_STATE\_CHANGED. Event constants include GUIDS, which represent types of events, and PROPERTYKEYs, which represent event parameter types. You will use these constants when called by the class extension in [**ISensorDriver::OnGetSupportedEvents**](https://msdn.microsoft.com/library/windows/hardware/ff545623), or when raising events through [**ISensorClassExtension::PostEvent**](https://msdn.microsoft.com/library/windows/hardware/ff545519) or [**ISensorClassExtension::PostStateChange**](https://msdn.microsoft.com/library/windows/hardware/ff545523).
 
 -   Icon constants. Your driver can specify a particular icon to represent the device in Windows. See [Specifying an Icon](specifying-an-icon.md).
+
+-   The sensor platform defines the GUID_DEVINTERFACE_SENSOR constant, to identify the sensor device interface class. During its installation, a driver registers for at least one device interface class. The sensor class extension registers the sensor device interface class for you.
+
+
 
 ### Persistent Unique Identifier
 
