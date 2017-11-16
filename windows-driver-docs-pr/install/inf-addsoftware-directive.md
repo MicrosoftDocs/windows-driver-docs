@@ -56,7 +56,9 @@ SoftwareType=type-code
 
 The **SoftwareType** entry is required.  If **SoftwareType** is set to 1, **SoftwareBinary** and **SoftwareVersion** are also required, but arguments and flags are optional. If **SoftwareType** is set to 2, **SoftwareID** is required, and flags are optional.  For info about this feature, see [Pairing a driver with a Universal Windows Platform (UWP) app](pairing-app-and-driver-versions.md) and [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md).
 
-Any software installed using **AddSoftware** must be installed silently (or quietly). In other words, no user interface can be shown to the user during installation.    
+Any software installed using **AddSoftware** must be installed silently (or quietly). In other words, no user interface can be shown to the user during installation.
+
+Leveraging **SoftwareType** with a value of 1 should only install **legacy** software meant to enhance the device's experience. It should not be used as a delivery mechanism to distribute arbitrary Win32 exectuables to systems . Remember that there should be no UI in software packages using **SoftwareType** 1. Any application with UI should come from the Microsoft Store (i.e. with **SoftwareType** 2).
 
 ## Software-Install Section Entries and Values
 
