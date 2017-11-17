@@ -64,7 +64,7 @@ Any software installed using **AddSoftware** must be installed silently (or quie
 
 Specifies the type of software installation.
 
-A value of 1 indicates that the associated software is an MSI or EXE binary.  When this value is set, the **SoftwareBinary** entry is also required.  A value of 1 is not supported on Windows 10 S.  Starting in Windows 10 version 1709, a value of 2 indicates that the associated software is a Microsoft Store link.  Use a value of 1 only for **legacy** device-related software that has no UI.  If the app has UI, it should come from the Microsoft Store, and the driver should reference it using **SoftwareType** 2.
+A value of 1 indicates that the associated software is an MSI or EXE binary.  When this value is set, the **SoftwareBinary** entry is also required.  A value of 1 is not supported on Windows 10 S.  Starting in Windows 10 version 1709, a value of 2 indicates that the associated software is a Microsoft Store link.  Use a value of 1 only for legacy device-related software that has no graphical user interface.  If the app has graphical elements, it should come from the Microsoft Store, and the driver should reference it using **SoftwareType** 2.
 
 For info about pairing a driver with a Universal Windows Platform (UWP) app, see [Pairing a driver with a Universal Windows Platform (UWP) app](pairing-app-and-driver-versions.md) and [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md).
 
