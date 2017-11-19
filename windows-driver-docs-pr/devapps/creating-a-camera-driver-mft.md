@@ -73,7 +73,7 @@ This section provides information on implementing your driver MFT. For a full ex
 
 ### Development tools
 
-Microsoft Visual Studio Professional 2013 or Microsoft Visual Studio Ultimate 2013 is required.
+Microsoft Visual Studio Professional or Microsoft Visual Studio Ultimate is required.
 
 ### Driver MFT characteristics
 

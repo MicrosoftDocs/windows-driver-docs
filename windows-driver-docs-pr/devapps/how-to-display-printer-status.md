@@ -39,7 +39,7 @@ Before you get started:
 
 Before a device context can be created, the app needs to determine the device ID of the printer. To do this, the sample uses the `EnumerateAssociatedPrinters` method to search through all printers that are attached to the PC. Then it checks the container for each printer and looks for an association by comparing each container's PackageFamilyName property.
 
-**Note**  The System.Devices.AppPackageFamilyName for devices that are associated with your app can be found under the **Packaging** tab on the Manifest Designer in Microsoft Visual Studio 2013.
+**Note**  The System.Devices.AppPackageFamilyName for devices that are associated with your app can be found under the **Packaging** tab on the Manifest Designer in Microsoft Visual Studio.
 
  
 
@@ -252,7 +252,7 @@ Before you can test your UWP device app, it must be linked to your printer using
 
 -   You need a copy of the device metadata package for your printer, to add the device app info to it. If you don’t have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Step 2: Create device metadata for your UWP device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
 
-    **Note**  To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional 2013, Microsoft Visual Studio Ultimate 2013, or the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209), before completing the steps in this topic. Installing Microsoft Visual Studio Express 2013 for Windows installs a version of the SDK that doesn't include the wizard.
+    **Note**  To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional, Microsoft Visual Studio Ultimate, or the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209), before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
 
      
 

@@ -1,6 +1,6 @@
 ---
 title: Step 1 Create a UWP device app
-description: This topic describes the basic process for creating a UWP device app by using Microsoft Visual Studio 2013. Learn about the tasks that are common to all UWP device apps.
+description: This topic describes the basic process for creating a UWP device app by using Microsoft Visual Studio. Learn about the tasks that are common to all UWP device apps.
 ms.assetid: 4D8240AD-F589-4623-BC6E-47E304831250
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 ![device app workflow, step 1](images/1-device-app-workflow.png)
 
-This topic describes the basic process for creating a UWP device app by using Microsoft Visual Studio 2013. Learn about the tasks that are common to all UWP device apps.
+This topic describes the basic process for creating a UWP device app by using Microsoft Visual Studio. Learn about the tasks that are common to all UWP device apps.
 
 A UWP device app is a special kind of UWP app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations and automatically install when a device is plugged in. For more info about UWP device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
@@ -29,7 +29,7 @@ This step-by-step guide assumes that you've created a UWP app project and that a
 
 ### <span id="Creating_the_Windows_Store_app_project"></span><span id="creating_the_windows_store_app_project"></span><span id="CREATING_THE_WINDOWS_STORE_APP_PROJECT"></span>Creating the Microsoft Store app project
 
-Before you can begin, you need to have installed Visual Studio 2013 and created a UWP app project. If you haven't done that yet, you can [download the tools here](http://go.microsoft.com/fwlink/p/?LinkId=302196). To get started with Microsoft Visual Studio, see [Develop UWP apps using Visual Studio](http://go.microsoft.com/fwlink/p/?LinkID=267230).
+Before you can begin, you need to have installed Visual Studio and created a UWP app project. If you haven't done that yet, you can [download the tools here](http://go.microsoft.com/fwlink/p/?LinkId=302196). To get started with Microsoft Visual Studio, see [Develop UWP apps using Visual Studio](http://go.microsoft.com/fwlink/p/?LinkID=267230).
 
 ### <span id="Device_driver_requirements"></span><span id="device_driver_requirements"></span><span id="DEVICE_DRIVER_REQUIREMENTS"></span>Device driver requirements
 

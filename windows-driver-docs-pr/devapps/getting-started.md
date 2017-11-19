@@ -35,16 +35,16 @@ To develop a UWP device app: you need Microsoft Visual Studio, for developing UW
 
 ### <span id="If_you_re_also_developing_drivers"></span><span id="if_you_re_also_developing_drivers"></span><span id="IF_YOU_RE_ALSO_DEVELOPING_DRIVERS"></span>If you're also developing drivers
 
-If you're developing Windows drivers in addition to UWP device apps, use Microsoft Visual Studio Professional 2013 or Microsoft Visual Studio Ultimate 2013 to create UWP device apps. These editions include the new Device Metadata Authoring Wizard and are also required by the Windows Driver Kit (WDK) 8.1.
+If you're developing Windows drivers in addition to UWP device apps, use Microsoft Visual Studio Professional or Microsoft Visual Studio Ultimate to create UWP device apps. These editions include the new Device Metadata Authoring Wizard and are also required by the Windows Driver Kit (WDK) 8.1.
 
-1.  [Download Visual Studio Professional 2013 or Visual Studio Ultimate 2013](http://go.microsoft.com/fwlink/p/?LinkId=302196)
+1.  [Download Visual Studio Professional or Visual Studio Ultimate](http://go.microsoft.com/fwlink/p/?LinkId=302196)
 2.  [Download the WDK 8.1](http://go.microsoft.com/fwlink/p/?LinkId=302196)
 
 ### <span id="If_you_re_not_going_to_be_developing_drivers"></span><span id="if_you_re_not_going_to_be_developing_drivers"></span><span id="IF_YOU_RE_NOT_GOING_TO_BE_DEVELOPING_DRIVERS"></span>If you're not going to be developing drivers
 
-If you don't need to develop drivers, you can use Microsoft Visual Studio Express 2013 for Windows to create UWP device apps. But this version of Visual Studio installs a version of the SDK that doesn’t include the Device Metadata Authoring Wizard. To get the new Device Metadata Authoring Wizard, you must also download the standalone Windows 8.1 SDK.
+If you don't need to develop drivers, you can use Microsoft Visual Studio Express for Windows to create UWP device apps. But this version of Visual Studio installs a version of the SDK that doesn’t include the Device Metadata Authoring Wizard. To get the new Device Metadata Authoring Wizard, you must also download the standalone Windows 8.1 SDK.
 
-1.  [Download Visual Studio Express 2013 for Windows](http://go.microsoft.com/fwlink/p/?LinkId=302196)
+1.  [Download Visual Studio Express for Windows](http://go.microsoft.com/fwlink/p/?LinkId=302196)
 2.  [Download the standalone Windows 8.1 SDK](http://go.microsoft.com/fwlink/p/?LinkId=302196)
 
 ## <span id="2._build_some_regular_windows_store_apps"></span><span id="2._BUILD_SOME_REGULAR_WINDOWS_STORE_APPS"></span>2. Build some regular UWP apps
@@ -53,7 +53,7 @@ If you don't need to develop drivers, you can use Microsoft Visual Studio Expres
 A UWP device app is a special kind of UWP app. So, before you develop your first UWP device app, get set up to build some regular UWP apps.
 
 -   [Sign up - register for a Microsoft Store developer account](http://go.microsoft.com/fwlink/p/?LinkId=302197)
--   [Get started with Microsoft Visual Studio 2013](http://go.microsoft.com/fwlink/p/?LinkID=267230)
+-   [Get started with Microsoft Visual Studio](http://go.microsoft.com/fwlink/p/?LinkID=267230)
 -   See the [Microsoft Store design principles](http://go.microsoft.com/fwlink/p/?LinkID=299845)
 
 ## <span id="3._learn_what_makes_windows_store_device_apps_special"></span><span id="3._LEARN_WHAT_MAKES_WINDOWS_STORE_DEVICE_APPS_SPECIAL"></span>3. Learn what makes UWP device apps special
