@@ -85,7 +85,10 @@ The following assumptions and restrictions apply to processing IP and TCP header
 
 -   If the large TCP packet contains IP options or TCP options (or both), the miniport driver copies these options, unaltered, to each packet that it derived from the large TCP packet. Specifically, the NIC will not increment the Time Stamp option.
 
--   All packet headers (Ethernet, IP, TCP) will be in the first MDL of the packet. The headers will not be split across multiple MDLs.
+-   All packet headers (Ethernet, IP, TCP) will be in the first MDL of the packet. The headers will not be split across multiple MDLs. 
+    > [!TIP]
+    > This assumption is valid when LSO is enabled. Otherwise, when LSO is not enabled, miniport drivers cannot assume that IP headers are in the same MDL as Ethernet headers.
+
 
 The miniport driver must send the packets in [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures in the order that it receives the NET\_BUFFER\_LIST structures from the TCP/IP transport.
 

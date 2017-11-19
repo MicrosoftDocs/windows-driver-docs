@@ -28,7 +28,7 @@ With Windows 10, there are no changes to the Microsoft Store device app functio
 
 Windows 8.1 introduces a new device metadata wizard. Easily create device metadata packages for UWP device apps without needing to edit raw XML. The new wizard can also validate device metadata against your app locally, before you submit it to the Dashboard. For more info about how this wizard fits into the process, see [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md).
 
-**Note**  To get the Device Metadata Authoring Wizard, you must install the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209) before completing the steps in this topic. Installing Microsoft Visual Studio Express 2013 for Windows installs a version of the SDK that doesn't include the wizard.
+**Note**  To get the Device Metadata Authoring Wizard, you must install the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209) before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
 
  
 

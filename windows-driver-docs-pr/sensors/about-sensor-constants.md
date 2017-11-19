@@ -21,13 +21,14 @@ The platform defines a variety of constants you can use in your sensor driver co
 
 The platform organizes sensors and their data in the following ways:
 
--   *Categories* represent broad classes of sensor devices. Categories provide a way to group sensors that are likely to provide similar types of information, or are otherwise related in some way. Each category is represented by a GUID constant. For example, sensors that report latitude and longitude coordinates belong to the location sensor category, which is representented by the [**SENSOR\_CATEGORY\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/dn265186) constant.
+-   *Categories* represent broad classes of sensor devices. Categories provide a way to group sensors that are likely to provide similar types of information, or are otherwise related in some way. Each category is represented by a GUID constant. For example, sensors that report latitude and longitude coordinates belong to the location sensor category, which is represented by the [**SENSOR\_CATEGORY\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/dn265186) constant.
 
 -   *Sensor types* represent specific kinds of sensors. Each sensor type fits into a particular category. Two sensors of different types can belong to the same category or two different categories. Each sensor type is represented by a GUID constant. For example, a global positioning system sensor would be identified by the SENSOR\_TYPE\_LOCATION\_GPS constant, while a sensor that provides the current location using an Internet IP address would be identified by the SENSOR\_TYPE\_LOCATION\_LOOKUP constant. However, both sensors would belong to the location sensor category.
 
 -   *Data types* represent specific kinds of information that the sensor can provide. Sensor data types can contain the actual measurement value, such as altitude, information about the units used to express the data, for example meters, and reference points for the data, for example sea level. Each data type is represented by a **PROPERTYKEY** constant. For example, the data type that represents the x-axis acceleration in g's would be the SENSOR\_DATA\_TYPE\_ACCELERATION\_X\_G constant.
 
 -   When reporting data, a value is said to be contained in a *data field*, and a collection of related data fields comprise a *data report*. Data reports are packaged together by using the [IPortableDeviceValues](http://go.microsoft.com/fwlink/p/?linkid=131486) interface. Each data report must contain at least one valid data field and a time stamp that identifies when the data report was created. Time stamps are represented by the SENSOR\_DATA\_TYPE\_TIMESTAMP property key.
+
 
 ### Other Constants
 
@@ -37,9 +38,13 @@ Your driver will need to use some other kinds of constants, as well. These const
 
 -   Some sensor properties are required to be provided by your driver, some properties can be set by client applications, and some must always return the same value. The [**Sensor Properties**](https://msdn.microsoft.com/library/windows/hardware/ff545859) reference section provides this information for each property. To understand which properties are required for a particular method, see the method documentation in the [Windows Sensor Reference](https://msdn.microsoft.com/library/windows/hardware/ff545907) section.
 
--   [**Event constants**](https://msdn.microsoft.com/library/windows/hardware/ff545463), such as SENSOR\_EVENT\_STATE\_CHANGED. Event constants include GUIDS, which represent types of events, and PROPERTYKEYs, which represent event parameter types. You will use these constants when called by the class extension in [**ISensorDriver::OnGetSupportedEvents**](https://msdn.microsoft.com/library/windows/hardware/ff545623), or when raising events through [**ISensorClassExtension::PostEvent**](https://msdn.microsoft.com/library/windows/hardware/ff545519) or [**ISensorClassExtension::PostStateChange**](https://msdn.microsoft.com/library/windows/hardware/ff545523).
+-   [**Event constants**](about-sensor-driver-events.md), such as SENSOR\_EVENT\_STATE\_CHANGED. Event constants include GUIDS, which represent types of events, and PROPERTYKEYs, which represent event parameter types. You will use these constants when called by the class extension in [**ISensorDriver::OnGetSupportedEvents**](https://msdn.microsoft.com/library/windows/hardware/ff545623), or when raising events through [**ISensorClassExtension::PostEvent**](https://msdn.microsoft.com/library/windows/hardware/ff545519) or [**ISensorClassExtension::PostStateChange**](https://msdn.microsoft.com/library/windows/hardware/ff545523).
 
 -   Icon constants. Your driver can specify a particular icon to represent the device in Windows. See [Specifying an Icon](specifying-an-icon.md).
+
+-   The sensor platform defines the GUID_DEVINTERFACE_SENSOR constant, to identify the sensor device interface class. During its installation, a driver registers for at least one device interface class. The sensor class extension registers the sensor device interface class for you.
+
+
 
 ### Persistent Unique Identifier
 

@@ -25,7 +25,7 @@ A UWP device app is a special kind of UWP app that device manufacturers create t
 ## <span id="Before_you_begin"></span><span id="before_you_begin"></span><span id="BEFORE_YOU_BEGIN"></span>Before you begin
 
 
-To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional 2013, Microsoft Visual Studio Ultimate 2013, or the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209), before completing the steps in this topic. Installing Microsoft Visual Studio Express 2013 for Windows installs a version of the SDK that doesn't include the wizard.
+To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional, Microsoft Visual Studio Ultimate, or the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209), before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
 
 ## <span id="Create_new_device_metadata"></span><span id="create_new_device_metadata"></span><span id="CREATE_NEW_DEVICE_METADATA"></span>Create new device metadata
 

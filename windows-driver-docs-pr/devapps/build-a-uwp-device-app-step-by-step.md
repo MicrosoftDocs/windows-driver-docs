@@ -1,6 +1,6 @@
 ---
 title: Build a UWP device app step-by-step
-description: This step-by-step guide describes in detail how to build a UWP device app with Microsoft Visual Studio 2013 and the Device Metadata Authoring Wizard.
+description: This step-by-step guide describes in detail how to build a UWP device app with Microsoft Visual Studio and the Device Metadata Authoring Wizard.
 ms.assetid: 2E3B47B6-1278-48EC-A530-64B8970A0142
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # <span id="devapps.build_a_windows_store_device_app_step-by-step"></span>Build a UWP device app step-by-step
 
 
-This step-by-step guide describes in detail how to build a UWP device app with Microsoft Visual Studio 2013 and the Device Metadata Authoring Wizard. For a high-level introduction to this process, see [Building UWP device apps](the-workflow.md).
+This step-by-step guide describes in detail how to build a UWP device app with Microsoft Visual Studio and the Device Metadata Authoring Wizard. For a high-level introduction to this process, see [Building UWP device apps](the-workflow.md).
 
 A UWP device app is a special kind of UWP app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations and automatically install when a device is plugged in. For more info about UWP device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
@@ -33,7 +33,7 @@ A UWP device app is a special kind of UWP app that device manufacturers create t
 <tbody>
 <tr class="odd">
 <td align="left"><p>[Step 1: Create a UWP device app](step-1--create-a-uwp-device-app.md)</p></td>
-<td align="left"><p>This topic describes the basic process for creating a UWP device app by using Visual Studio 2013. Learn about the tasks that are common to all UWP device apps.</p></td>
+<td align="left"><p>This topic describes the basic process for creating a UWP device app by using Visual Studio. Learn about the tasks that are common to all UWP device apps.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Step 2: Create device metadata](step-2--create-device-metadata.md)</p></td>
