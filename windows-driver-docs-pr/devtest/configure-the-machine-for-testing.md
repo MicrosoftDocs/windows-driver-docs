@@ -1,4 +1,17 @@
-# Configure the Machine for Testing
+---
+title: Configure the machine for testing
+description: Outline of the steps required to install WDTF and TAEF, copy the System Fundamentals data-driven tests, and configure the machine for testing
+keywords:
+- Sysfund tests
+- data-driven tests
+ms.author: windowsdriverdev
+ms.date: 11/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+---
+
+# Configure the machine for testing
 This topic outlines the steps required to install [WDTF](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdtf/) and [TAEF](https://docs.microsoft.com/en-us/windows-hardware/drivers/taef/), copy the data-driven tests, and configure the machine for testing. Note that the following commands must be executed from an elevated/administrator command prompt because WDTF installation installs drivers on the system.
 
 **Step 1**: Obtain the packages and files from the latest [EWDK](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/installing-the-enterprise-wdk) by accepting the licensing terms and saving the EWDK ISO file to the machine on which the tests will run. To mount the ISO, right-click the ISO file and the click **Mount**. When the ISO is mounted, a drive letter is assigned to the mounted ISO.
