@@ -135,6 +135,8 @@ This utility uses the SDEL queries defined in WDTFTest.xml to find the set of de
 To launch either of the data-driven SysFund tests, use the following commands:
 ```
     te.exe Sysfund_PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven.dll
+```
+```
     te.exe Sysfund_Sleep_With_IO_BeforeAndAfter_DataDriven.dll
 ```
 ### Refine the configuration file
@@ -160,3 +162,41 @@ After you fix the bugs in mydriver1.sys and mydriver2.sys, you can reset the **S
 ```
     <Parameter Name="SdelExcludeDrivers">(DriverBinaryNames!='')</Parameter>
 ```
+
+##Troubleshooting Problems
+###Malformed SDEL Query in the Configuration File
+The following error message is indicative of a poorly formed SDEL query contained in the WDTFTest.xml configuration file:
+```
+    Error: Verify: SUCCEEDED(m_pDeviceDepot->Query(CComBSTR(DQ), &m_pTestTargets)) - Value (0x80070057) [File: onecore\base\tools\wdtf\tests\devfund\datadriven\sysfund_pnp_disableenable_with_io_beforeandafter_datadriven\test.cpp, Function: PNP_DisableEnable_With_IO_BeforeAndAfter::PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven_Test, Line: 231]
+    EndGroup: PNP_DisableEnable_With_IO_BeforeAndAfter::PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven_Test#0 [Failed]
+```
+The HRESULT '0x80070057' means "E_INVALIDARG: One or more arguments are not valid". Carefully check the WDTFTest.xml configuration file against the [SDEL documentation](https://msdn.microsoft.com/en-us/library/windows/hardware/ff538361%28v=vs.85%29.aspx) and look for a malformed query that could be causing this error.
+
+###Test is Blocked Because it Might Reboot the Machine
+Certain SysFund tests can reboot the machine during testing. In order to run a test which can reboot the machine, the "/rebootstatefile" parameter must be used:
+```
+    te.exe <testname> /rebootstatefile=state.xml
+```
+If the /rebootstatefile parameter is not passed to the test, the following message will be displayed and the test will be blocked:
+```
+    TestBlocked: TAEF: This test cannot be run as it might reboot the machine.
+    EndGroup: Sysfund_RebootRestart_With_IO_During::Sysfund_RebootRestart_With_IO_During_DataDriven_Test#0 [Blocked]
+```
+
+###Test is Blocked Because the SDEL Query Contains '&' Characters
+When specifing an SDEL query which targets a device based on its Device Instance Path value, '&' characters in the path must be replace with "&amp\;". The following message is indicative of a WDTFTest.xml configuration file which contains '&' characters in the device instance path:
+```
+    TestBlocked: TAEF: [HRESULT: 0xC00CEE22] Error while getting value for 'SDEL' in table 'DataDrivenSysfundTable' in DataSource 'WDTFTest.xml' on line 24.
+    EndGroup: PNP_DisableEnable_With_IO_BeforeAndAfter::PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven_Test#error [Blocked]
+```
+This is the XML from the WDTFTest.xml configuration file which generated the error message above:
+```
+    <Parameter Name="SDEL">IsDevice AND deviceid='PCI\VEN_11AB&DEV_2B38&SUBSYS_045E0003&REV_00\4&91A2562&0&00E8'</Parameter>
+```
+This is the well-formed value for deviceid which fixes the error:
+```
+    <Parameter Name="SDEL">IsDevice AND deviceid='PCI\VEN_11AB&amp;DEV_2B38&amp;SUBSYS_045E0003&amp;REV_00\4&amp;91A2562&amp;0&amp;00E8'</Parameter>
+```
+
+###Other Issues
+For help with troubleshooting other issues not listed here, see [Device.DevFund Additional Documentation](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/device-devfund-additional-documentation).
