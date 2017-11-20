@@ -234,7 +234,7 @@ C:\Echo> devcon install echo.inf root\ECHO
 
 To submit multiple drivers at the same time create a sub directory for each driver as shown below.
 
-![](images/b-wes-driversigning.png)
+![](images/multiple-driversigning.jpg)
 
 Prepare a cab file DDF input file that references the subdirectories. It might look something like this.
 
