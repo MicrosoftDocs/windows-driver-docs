@@ -71,6 +71,7 @@ Typical cab file submissions contain the following.
 
 -   The driver itself, for example Echo.sys
 -   The driver INF file that is used by the dashboard to facilitate the signing process.
+-   The symbol file that is used for debugging information. For example, Echo.pdb.
 -   Catalog .CAT files are not required. Microsoft regenerates catalog files and replaces any catalog files that were submitted.
 
 2. Use MakeCab.exe to process the DDF file and create a cab file.
@@ -233,7 +234,7 @@ C:\Echo> devcon install echo.inf root\ECHO
 
 To submit multiple drivers at the same time create a sub directory for each driver as shown below.
 
-![](images/b-wes-driversigning.png)
+![](images/multiple-driversigning.jpg)
 
 Prepare a cab file DDF input file that references the subdirectories. It might look something like this.
 
