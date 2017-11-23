@@ -35,6 +35,9 @@ For information about creating and digitally signing an **.hckx** file, see the 
 
 5.  Select any applicable additional certifications if available. This option allows you to specify which down-level operating system signatures should be included with your driver. Available certifications vary depending on your driver submission package, so there may not be any certifications listed.
 
+<strong>Note</strong> If you don't want x86 signatures in x64 signatures, please create a submission file for each architecture and choose only the appropriate architecture in Additional certifications.
+
+
 6.  Select **Finalize**. You will not be able to select the **Finalize** button until your file upload is complete. Note: Your signature properties and name cannot be changed after you click **Finalize**.
 
     ![screenshot that shows possible certifications for a driver submission, and the finalize button](images/additionalcertifications.png)
