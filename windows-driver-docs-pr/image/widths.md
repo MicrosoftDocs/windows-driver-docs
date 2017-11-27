@@ -39,6 +39,7 @@ There are no attributes.
 ## Child elements
 
 
+
 <table>
 <colgroup>
 <col width="100%" />
