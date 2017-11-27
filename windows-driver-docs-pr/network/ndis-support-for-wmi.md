@@ -45,6 +45,8 @@ This section includes:
 
 [Customized OIDs and Status Indications](customized-oids-and-status-indications.md)
 
+[NDIS WMI GUIDs](ndis-wmi-guids.md)
+
  
 
  

@@ -19,7 +19,7 @@ ms.technology: windows-devices
 ## <span id="ddk_monitor_drivers_gg"></span><span id="DDK_MONITOR_DRIVERS_GG"></span>
 
 
-Starting with Windows Vista, each monitor has a device stack that includes a Microsoft monitor class function driver and possibly a vendor-supplied filter driver. The following topics describe the function and filter drivers associated with monitors:
+Each monitor has a device stack that includes a Microsoft monitor class function driver and possibly a vendor-supplied filter driver. The following topics describe the function and filter drivers associated with monitors:
 
 [Monitor Class Function Driver](monitor-class-function-driver.md)
 
