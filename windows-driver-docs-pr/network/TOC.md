@@ -628,6 +628,7 @@
 #### [NDIS Network Interface Services](ndis-network-interface-services.md)
 #### [NDIS Network Interface Architecture](ndis-network-interface-architecture.md)
 #### [NDIS Interface Provider Operations](ndis-interface-provider-operations.md)
+#### [NDIS Interface Types](ndis-interface-types.md)
 ### [Registering as an Interface Provider](registering-as-an-interface-provider.md)
 ### [Managing NDIS Network Interfaces](managing-ndis-network-interfaces.md)
 #### [NET_LUID Value](net-luid-value.md)

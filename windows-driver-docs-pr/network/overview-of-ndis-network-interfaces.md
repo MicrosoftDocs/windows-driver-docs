@@ -28,7 +28,10 @@ This section includes:
 
 [NDIS Interface Provider Operations](ndis-interface-provider-operations.md)
 
-**Note**  The NDIS 6.0 Network Interfaces section refers to many Request for Comments (RFCs) from the Internet Engineering Task Force (IETF). To view an IETF RFC, visit the [IETF Request for Comments](http://go.microsoft.com/fwlink/p/?linkid=45661) Web site, and search for the RFC in the **RFC number** box under **IETF repository retrieval**.
+[NDIS Interface Types](ndis-interface-types.md)
+
+> [!NOTE]
+> The NDIS 6.0 Network Interfaces section refers to many Request for Comments (RFCs) from the Internet Engineering Task Force (IETF). To view an IETF RFC, visit the [IETF Request for Comments](http://go.microsoft.com/fwlink/p/?linkid=45661) Web site, and search for the RFC in the **RFC number** box under **IETF repository retrieval**.
 
  
 
