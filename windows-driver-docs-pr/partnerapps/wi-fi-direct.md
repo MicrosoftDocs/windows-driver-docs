@@ -20,6 +20,8 @@ You can, however, use some of the Wi-Fi Direct WinRT APIs in a Classic Windows a
 
 WiFiDirectLegacySettings allows you to specify the SSID and password. For an example of how to use WiFiDirectLegacySettings in a Classic Windows application, see the [WiFiDirectLegacyAPDemo\_v1.0.zip](http://go.microsoft.com/fwlink/?LinkId=617905) download on the Microsoft download center.
 
+Starting with Windows 10, version 1607, Mobile Hotspots are supported. Mobile Hotspot is an enhanced version of the mobile broadband tethering feature. Note that the Mobile Hotspot and legacy Wi-Fi Direct group owner features cannot be used at the same time. Additionally, Mobile Hotspot takes precedence over all Wi-Fi Direct scenarios.
+
 Developers of desktop applications can use this sample to see how to replace the deprecated WlanHostedNetwork\* API's with the new WinRT API's without modifying the application to become a Universal Windows Application. These API's let an application start a Wi-Fi Direct Group Owner (GO) that acts as an Access Point (AP). This allows devices that do not support Wi-Fi Direct to connect to the Windows device running this application and communicate over TCP/UDP. The API's allow the developer to optionally specify an SSID and passphrase, or use randomly generated ones.
 
 **Note**  In Classic Windows apps, you don’t need to set the WinRT device capabilities because there is no Package.appxmanifest file.
