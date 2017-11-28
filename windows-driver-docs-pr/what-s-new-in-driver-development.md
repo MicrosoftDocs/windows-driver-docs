@@ -315,7 +315,7 @@ In Windows 10, version 1709, to provide access to a Pulse width modulation (PWM)
 
 To parse and validate pin paths and extract the pin number, kernel model drivers should use [PwmParsePinPath](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826268(v=vs.85).aspx).
 
-An app can send requests to the controller driver by sending [PWM IOCTLs](https://msdn.microsoft.com/en-us/library/windows/desktop/mt826481) requests.
+An app can send requests to the controller driver by sending [PWM IOCTLs](https://docs.microsoft.com/windows-hardware/drivers/spb/pulse-width-controller%20driver#pwm-ioctl-requests) requests.
 
 
 ### <a href="" id="storage-1709"></a>Storage and File Systems
