@@ -35,8 +35,7 @@ For information about creating and digitally signing an **.hckx** file, see the 
 
 5.  Select any applicable additional certifications if available. This option allows you to specify which down-level operating system signatures should be included with your driver. Available certifications vary depending on your driver submission package, so there may not be any certifications listed.
 
-<strong>Note</strong> To achieve an signed driver package for a single architecture, only include logs for the intended architecture. For example, if the intention is to only have the driver package signed for x64 then only include the logs that were tested on that architecture.
-
+**Note** If you are signing a driver package for a single architecture, only include logs for the intended architecture. For example, to sign for x64 only, submit only the x64 logs.
 
 6.  Select **Finalize**. You will not be able to select the **Finalize** button until your file upload is complete. Note: Your signature properties and name cannot be changed after you click **Finalize**.
 
