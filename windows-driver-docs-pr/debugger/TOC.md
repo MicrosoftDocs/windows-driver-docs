@@ -294,7 +294,6 @@
 #### [Metadata Files for Analysis Extension Plug-ins](metadata-files-for-analysis-extensions.md)
 #### [Failure Analysis Entries](failure-analysis-entries.md)
 ## [Debugger Programming Reference](debugger-programming-reference.md)
-## [Custom Analysis Debugger Extension Reference](custom-analysis-debugger-extension-reference.md)
 ## [Debug Engine Interfaces](client-com-interfaces.md)
 ## [Debugger Engine Reference](debugger-engine-reference.md)
 ### [Request](request.md)
