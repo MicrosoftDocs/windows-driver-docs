@@ -11,7 +11,7 @@ This topic describes the programming reference topics.
 
 This reference section includes:
 
-[Debugger Engine Reference](debugger-engine-reference.md)
+[Debugger Engine Reference](https://msdn.microsoft.com/library/windows/hardware/ff540540)
 
 [EngExtCpp Extension Reference](https://msdn.microsoft.com/library/windows/hardware/ff543033)
 
