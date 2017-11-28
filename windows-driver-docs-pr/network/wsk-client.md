@@ -21,7 +21,7 @@ typedef PVOID PWSK_CLIENT;
 ```
 
 **PWSK_CLIENT**  
-THe contents of the **WSK_CLIENT** structure are opaque to a WSK application.
+The contents of the **WSK_CLIENT** structure are opaque to a WSK application.
 
 ## Remarks
 
