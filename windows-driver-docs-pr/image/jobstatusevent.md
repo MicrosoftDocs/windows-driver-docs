@@ -1,12 +1,6 @@
 ---
 title: JobStatusEvent element
 description: The required JobStatusEvent element informs the client that a job's status has changed.
-MS-HAID:
-- 'wsdss\_events\_c1270552-8941-4cf5-9c39-469cac571124.xml'
-- 'image.jobstatusevent'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8cb510ef-9622-48d0-859d-e52c9b5b8190
 keywords: ["JobStatusEvent element Imaging Devices"]
 topic_type:

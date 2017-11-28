@@ -1,12 +1,6 @@
 ---
 title: WS-DSP Operation Elements
 description: WS-DSP Operation Elements
-MS-HAID:
-- 'dsm\_ref\_dsp\_46b0e525-1aba-4396-8921-530347b55275.xml'
-- 'image.ws\_dsp\_operation\_elements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 53588b68-c53a-4a65-9887-38dbf5d00de2
 ---
 

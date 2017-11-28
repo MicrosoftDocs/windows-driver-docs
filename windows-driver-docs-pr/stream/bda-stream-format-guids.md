@@ -1,12 +1,6 @@
 ---
 title: BDA Stream Format GUIDs
 description: BDA Stream Format GUIDs
-MS-HAID:
-- 'bdaref\_94229f51-2313-4c81-ab77-3e28c7518376.xml'
-- 'stream.bda\_stream\_format\_guids'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 216fb02c-b49b-4b9f-b7a5-220c718fb202
 ---
 

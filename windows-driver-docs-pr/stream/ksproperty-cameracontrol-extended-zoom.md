@@ -1,9 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ZOOM
 description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ZOOM is used to control digital zoom.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 93CFCBFC-69B3-4241-913F-94615599BE8E
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM Streaming Media Devices"]
 topic_type:

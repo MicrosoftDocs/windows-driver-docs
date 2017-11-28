@@ -1,12 +1,6 @@
 ---
 title: CODECAPI\_SETALLDEFAULTS
 description: CODECAPI\_SETALLDEFAULTS
-MS-HAID:
-- 'encoderef\_1268446b-a302-4ab3-9049-8672a330156e.xml'
-- 'stream.codecapi\_setalldefaults'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6a50a75f-cbc5-487f-b2cd-34e89eb127a0
 ---
 

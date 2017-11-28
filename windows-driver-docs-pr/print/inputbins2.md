@@ -1,12 +1,6 @@
 ---
 title: InputBins
 description: InputBins
-MS-HAID:
-- 'autocfg\_a05d5e08-9de0-4085-a1c4-037c71f46216.xml'
-- 'print.inputbins2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5cf7dcec-b8ea-47c6-b2a3-1cdd431fd295
 ---
 

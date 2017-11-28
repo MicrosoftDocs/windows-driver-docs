@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_EXTENSION\_UNIT\_INFO
 description: The KSPROPERTY\_EXTENSION\_UNIT\_INFO property retrieves the guidExtensionCode, bNumControls, bNrInPins, and baSourceID members of the Extension Unit Descriptor.
-MS-HAID:
-- 'vidcapprop\_bfdfb68d-690c-4655-85ad-dba6034501dd.xml'
-- 'stream.ksproperty\_extension\_unit\_info'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a7a2f655-8df7-4260-883f-53d6f5a7c6f3
 keywords: ["KSPROPERTY_EXTENSION_UNIT_INFO Streaming Media Devices"]
 topic_type:

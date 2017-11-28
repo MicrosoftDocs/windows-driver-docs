@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_RF\_TUNER\_TRANSPONDER
 description: Clients use KSPROPERTY\_BDA\_RF\_TUNER\_TRANSPONDER to inform the tuner node of the appropriate transponder number.
-MS-HAID:
-- 'bdaref\_e1cd9cba-d9f4-4b4f-9734-6f3742589676.xml'
-- 'stream.ksproperty\_bda\_rf\_tuner\_transponder'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 00445260-a317-4341-baab-d1391f6748e4
 keywords: ["KSPROPERTY_BDA_RF_TUNER_TRANSPONDER Streaming Media Devices"]
 topic_type:

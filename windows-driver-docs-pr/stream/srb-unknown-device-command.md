@@ -1,12 +1,6 @@
 ---
 title: SRB\_UNKNOWN\_DEVICE\_COMMAND
 description: SRB\_UNKNOWN\_DEVICE\_COMMAND
-MS-HAID:
-- 'strclass-srbs\_8aa64f6c-b3d4-470f-a4e7-1a336aff4fa6.xml'
-- 'stream.srb\_unknown\_device\_command'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 89bc2176-e384-48bf-82d8-4a8ab2bd5159
 ---
 

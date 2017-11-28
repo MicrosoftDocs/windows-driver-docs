@@ -1,12 +1,6 @@
 ---
 title: SendImageRequest.ImageData
 description: SendImageRequest.ImageData
-MS-HAID:
-- 'dsm\_ref\_dsp\_13cacb2c-8b26-4e3b-8fb3-85a6ede6e304.xml'
-- 'image.sendimagerequest\_imagedata'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b14dc6a4-b237-46f0-b40f-dec0545f1a16
 keywords: ["SendImageRequest.ImageData"]
 ---

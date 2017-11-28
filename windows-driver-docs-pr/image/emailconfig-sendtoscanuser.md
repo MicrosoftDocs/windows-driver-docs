@@ -1,12 +1,6 @@
 ---
 title: EmailConfig.SendToScanUser
 description: EmailConfig.SendToScanUser
-MS-HAID:
-- 'dsm\_ref\_psp\_7517b625-1a7c-46bf-af1e-e25913a7b258.xml'
-- 'image.emailconfig\_sendtoscanuser'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fa6dca60-0615-49fe-811a-fdd8aed16bbc
 keywords: ["EmailConfig.SendToScanUser"]
 ---

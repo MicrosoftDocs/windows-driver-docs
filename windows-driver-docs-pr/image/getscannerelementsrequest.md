@@ -1,12 +1,6 @@
 ---
 title: GetScannerElementsRequest element
 description: The required GetScannerElementsRequest element enables a client to request information about the scanner.
-MS-HAID:
-- 'wsdss\_ops\_b8876e4d-a74a-4690-99d9-6b9852a2523f.xml'
-- 'image.getscannerelementsrequest'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9b5baed9-0950-4fbd-9e5b-4ad58dedb87e
 keywords: ["GetScannerElementsRequest element Imaging Devices"]
 topic_type:

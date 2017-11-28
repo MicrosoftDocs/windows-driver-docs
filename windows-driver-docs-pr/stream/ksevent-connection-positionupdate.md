@@ -1,12 +1,6 @@
 ---
 title: KSEVENT\_CONNECTION\_POSITIONUPDATE
 description: The KSEVENT\_CONNECTION\_POSITIONUPDATE event allows a client to receive notification of changes in the current position. The margin of change is stream and filter dependent.
-MS-HAID:
-- 'ks-event\_fcbfc75f-a678-4769-a24a-aed969d6c551.xml'
-- 'stream.ksevent\_connection\_positionupdate'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 989b46aa-f88f-4e30-877d-1a8515e54a91
 keywords: ["KSEVENT_CONNECTION_POSITIONUPDATE Streaming Media Devices"]
 topic_type:

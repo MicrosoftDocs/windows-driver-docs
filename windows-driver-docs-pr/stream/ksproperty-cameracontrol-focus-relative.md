@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_FOCUS\_RELATIVE
 description: The KSPROPERTY\_CAMERACONTROL\_FOCUS\_RELATIVE property specifies the focus setting of the camera.
-MS-HAID:
-- 'vidcapprop\_6fab42f5-45ef-4fd3-9602-947f1a75db45.xml'
-- 'stream.ksproperty\_cameracontrol\_focus\_relative'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8282c703-5ff7-437e-87f9-e05f504d6f2c
 keywords: ["KSPROPERTY_CAMERACONTROL_FOCUS_RELATIVE Streaming Media Devices"]
 topic_type:

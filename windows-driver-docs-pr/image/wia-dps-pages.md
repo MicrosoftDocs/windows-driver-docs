@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_PAGES
 description: The WIA\_DPS\_PAGES property contains the current number of pages to acquire from an automatic document feeder.
-MS-HAID:
-- 'WIA\_PropTable\_269120dd-a7b1-432f-a420-783ab6e7b3e7.xml'
-- 'image.wia\_dps\_pages'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 51ab2eab-c7b4-4d54-bfc7-d53a8f66c7a9
 keywords: ["WIA_DPS_PAGES Imaging Devices"]
 topic_type:

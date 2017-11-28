@@ -1,12 +1,6 @@
 ---
 title: ScanRegionWidth element
 description: The required ScanRegionWidth element specifies the width of the scan region in the fast scan direction.
-MS-HAID:
-- 'wsdss\_doc\_f88ca5fd-6288-4f58-ad8c-5571c0183aa2.xml'
-- 'image.scanregionwidth'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3fe1933c-f086-453d-a8bd-84903929ed28
 keywords: ["ScanRegionWidth element Imaging Devices"]
 topic_type:

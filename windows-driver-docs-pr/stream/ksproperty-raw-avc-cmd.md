@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_RAW\_AVC\_CMD
 description: The KSPROPERTY\_RAW\_AVC\_CMD property issues a raw AV/C command. Raw AV/C commands are supported only for IEEE 1394 bus devices.
-MS-HAID:
-- 'vidcapprop\_f5968c9c-125d-4e7d-943f-44817eb40da9.xml'
-- 'stream.ksproperty\_raw\_avc\_cmd'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f3ff3815-0f4f-4fcb-89bd-e77d8002813c
 keywords: ["KSPROPERTY_RAW_AVC_CMD Streaming Media Devices"]
 topic_type:

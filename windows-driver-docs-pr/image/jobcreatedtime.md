@@ -1,12 +1,6 @@
 ---
 title: JobCreatedTime element
 description: The optional JobCreatedTime element specifies the time at which the job was created.
-MS-HAID:
-- 'wsdss\_job\_c5766ff0-7daa-4f85-b4b2-ce4508c0b993.xml'
-- 'image.jobcreatedtime'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 34107c3a-d02a-4b86-be1e-cd91e2887479
 keywords: ["JobCreatedTime element Imaging Devices"]
 topic_type:

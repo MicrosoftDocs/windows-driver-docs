@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_TUNER\_INPUT
 description: The KSPROPERTY\_TUNER\_INPUT property describes the input of the tuner in the current tuning mode, such as selecting between cable and antenna tuner inputs. This property must be implemented.
-MS-HAID:
-- 'vidcapprop\_97bfae42-a9df-4f88-b197-4cbe1504bba9.xml'
-- 'stream.ksproperty\_tuner\_input'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b2c92531-ad1f-4152-a98d-7cae9c2c940c
 keywords: ["KSPROPERTY_TUNER_INPUT Streaming Media Devices"]
 topic_type:

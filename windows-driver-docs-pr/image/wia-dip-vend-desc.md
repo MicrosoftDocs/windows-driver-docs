@@ -1,12 +1,6 @@
 ---
 title: WIA\_DIP\_VEND\_DESC
 description: The WIA\_DIP\_VEND\_DESC property contains a vendor description string for the WIA minidriver. The WIA service creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_4a1f7455-98c2-44fe-aa4f-d3dff3068d59.xml'
-- 'image.wia\_dip\_vend\_desc'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 80bb6a4e-3391-4681-93d0-8b60774dfc3d
 keywords: ["WIA_DIP_VEND_DESC Imaging Devices"]
 topic_type:

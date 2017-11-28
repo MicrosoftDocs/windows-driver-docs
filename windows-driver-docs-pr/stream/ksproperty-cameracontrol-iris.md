@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_IRIS
 description: User-mode clients use the KSPROPERTY\_CAMERACONTROL\_IRIS property to get or set a camera's aperture setting. This property is optional.
-MS-HAID:
-- 'vidcapprop\_b23dfd09-b3b7-46ff-a50a-d34970f2c7c7.xml'
-- 'stream.ksproperty\_cameracontrol\_iris'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 000fc146-f6bb-490b-93b6-ebf5ad83b92f
 keywords: ["KSPROPERTY_CAMERACONTROL_IRIS Streaming Media Devices"]
 topic_type:

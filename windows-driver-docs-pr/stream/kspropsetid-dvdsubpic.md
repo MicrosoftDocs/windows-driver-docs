@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_DvdSubPic
 description: KSPROPSETID\_DvdSubPic
-MS-HAID:
-- 'dvdref\_4a02d12b-b427-4999-a34e-187ab78ec6d1.xml'
-- 'stream.kspropsetid\_dvdsubpic'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 91d92878-fd6d-4403-ae48-ab4d41680c88
 ---
 

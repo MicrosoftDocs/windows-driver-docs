@@ -1,12 +1,6 @@
 ---
 title: KSEVENT\_TUNER\_INITIATE\_SCAN
 description: The KSEVENT\_TUNER\_INITIATE\_SCAN event requests that the driver initiate a scan operation and notify a user-mode client when the driver's associated tuning device completes the scan operation.
-MS-HAID:
-- 'vidcapevent\_d30dfc52-bf34-41be-8b3d-9ddafdd8a46e.xml'
-- 'stream.ksevent\_tuner\_initiate\_scan'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 63f6917e-30d2-4734-92fa-49a4291efafd
 keywords: ["KSEVENT_TUNER_INITIATE_SCAN Streaming Media Devices"]
 topic_type:

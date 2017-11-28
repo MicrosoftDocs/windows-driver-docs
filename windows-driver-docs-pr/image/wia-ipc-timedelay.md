@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPC\_TIMEDELAY
 description: The WIA\_IPC\_TIMEDELAY property is reserved by Microsoft for future use and is not implemented at this time.
-MS-HAID:
-- 'WIA\_PropTable\_eb50477e-4b3e-4832-92f2-edf6f2a5c852.xml'
-- 'image.wia\_ipc\_timedelay'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3166b2b8-eb90-4474-a9ea-beb752985201
 keywords: ["WIA_IPC_TIMEDELAY Imaging Devices"]
 topic_type:

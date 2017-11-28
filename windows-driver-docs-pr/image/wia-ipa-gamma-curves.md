@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPA\_GAMMA\_CURVES
 description: The WIA\_IPA\_GAMMA\_CURVES property is reserved by Microsoft for future use and is not implemented at this time.
-MS-HAID:
-- 'WIA\_PropTable\_f9e8beb5-e6b2-4680-9c4e-8ab96e98d7fa.xml'
-- 'image.wia\_ipa\_gamma\_curves'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 339c4fab-f872-443a-80b8-7b76b5edef08
 keywords: ["WIA_IPA_GAMMA_CURVES Imaging Devices"]
 topic_type:

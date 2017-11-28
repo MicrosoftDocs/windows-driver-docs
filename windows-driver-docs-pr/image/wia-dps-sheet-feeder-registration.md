@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_SHEET\_FEEDER\_REGISTRATION
 description: The WIA\_DPS\_SHEET\_FEEDER\_REGISTRATION property contains the registration, or alignment and edge detection, for documents that are placed on the flatbed of a scanner. The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_bae3f382-dd81-44ba-8198-0d293c847922.xml'
-- 'image.wia\_dps\_sheet\_feeder\_registration'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 76868baf-ee31-4395-9122-c056784a9047
 keywords: ["WIA_DPS_SHEET_FEEDER_REGISTRATION Imaging Devices"]
 topic_type:

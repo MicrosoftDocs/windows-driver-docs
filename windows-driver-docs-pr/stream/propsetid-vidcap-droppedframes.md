@@ -1,12 +1,6 @@
 ---
 title: PROPSETID\_VIDCAP\_DROPPEDFRAMES
 description: PROPSETID\_VIDCAP\_DROPPEDFRAMES
-MS-HAID:
-- 'vidcapprop\_bcfac64d-72fe-4b45-b3e4-1c4f557957d7.xml'
-- 'stream.propsetid\_vidcap\_droppedframes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0c968ff2-b0da-4416-857a-e185e58429e9
 ---
 

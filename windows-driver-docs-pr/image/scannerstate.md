@@ -1,12 +1,6 @@
 ---
 title: ScannerState element
 description: The required ScannerState element identifies the current state of the scanning portion of the scan device.
-MS-HAID:
-- 'wsdss\_status\_7161321e-cc96-4337-a365-0f0fc124f983.xml'
-- 'image.scannerstate'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 64cd5319-a52d-4ff3-976c-060886381d11
 keywords: ["ScannerState element Imaging Devices"]
 topic_type:

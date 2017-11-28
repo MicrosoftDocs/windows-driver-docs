@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_BURST\_NUMBER
 description: The WIA\_DPC\_BURST\_NUMBER property contains the number of images that a device attempts to capture during a burst operation.
-MS-HAID:
-- 'WIA\_PropTable\_50dd8c2f-0a8d-41d3-972a-47a714bdb8d5.xml'
-- 'image.wia\_dpc\_burst\_number'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fd97364a-b39c-441f-8482-9ebd6a386f0c
 keywords: ["WIA_DPC_BURST_NUMBER Imaging Devices"]
 topic_type:

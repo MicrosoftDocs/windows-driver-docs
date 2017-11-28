@@ -1,12 +1,6 @@
 ---
 title: SRB\_CLOSE\_DEVICE\_INSTANCE
 description: SRB\_CLOSE\_DEVICE\_INSTANCE
-MS-HAID:
-- 'strclass-srbs\_ace90965-c77d-4b90-bfe6-32f51bda9916.xml'
-- 'stream.srb\_close\_device\_instance'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 55a72f4f-45b3-427d-80b7-620aac870a8a
 keywords: ["SRB_CLOSE_DEVICE_INSTANCE Streaming Media Devices"]
 topic_type:

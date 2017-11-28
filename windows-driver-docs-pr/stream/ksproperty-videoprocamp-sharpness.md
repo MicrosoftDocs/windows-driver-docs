@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOPROCAMP\_SHARPNESS
 description: The KSPROPERTY\_VIDEOPROCAMP\_SHARPNESS property controls a camera's sharpness setting. This property is optional.
-MS-HAID:
-- 'vidcapprop\_8b061643-5a69-4b4f-84bc-8b807579aac7.xml'
-- 'stream.ksproperty\_videoprocamp\_sharpness'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d6b10876-313b-420a-9d81-348030e580dd
 keywords: ["KSPROPERTY_VIDEOPROCAMP_SHARPNESS Streaming Media Devices"]
 topic_type:

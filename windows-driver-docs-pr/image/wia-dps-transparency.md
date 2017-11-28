@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_TRANSPARENCY
 description: The WIA\_DPS\_TRANSPARENCY property is obsolete and should not be used.
-MS-HAID:
-- 'WIA\_PropTable\_b9859581-fb49-4646-9068-3d7463baec85.xml'
-- 'image.wia\_dps\_transparency'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c3781d8e-d19d-4482-a4c1-3d613b04f14c
 keywords: ["WIA_DPS_TRANSPARENCY Imaging Devices"]
 topic_type:

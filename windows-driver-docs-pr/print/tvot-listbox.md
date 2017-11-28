@@ -1,12 +1,6 @@
 ---
 title: TVOT\_LISTBOX
 description: TVOT\_LISTBOX
-MS-HAID:
-- 'cpsuifnc\_d0545e89-7bc2-41c9-b843-56dd48918c49.xml'
-- 'print.tvot\_listbox'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2426ae5a-33e6-4f16-ad49-ff38ea19e392
 keywords: ["TVOT_LISTBOX Print Devices"]
 topic_type:

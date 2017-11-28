@@ -1,12 +1,6 @@
 ---
 title: WS-DSD Event Elements
 description: WS-DSD Event Elements
-MS-HAID:
-- 'dsm\_ref\_dsd\_04bf3be6-430e-465d-a7b5-9674e93fe496.xml'
-- 'image.ws\_dsd\_event\_elements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 329dbfe5-b430-443e-922a-43694bff0d50
 keywords: ["WS-DSD Event Elements"]
 ---

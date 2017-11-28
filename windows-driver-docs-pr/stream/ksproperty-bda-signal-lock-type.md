@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_SIGNAL\_LOCK\_TYPE
 description: Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCK\_TYPE to determine the current lock type of a signal.
-MS-HAID:
-- 'bdaref\_ae6b987d-0f36-4e42-83c0-6eb6385601f8.xml'
-- 'stream.ksproperty\_bda\_signal\_lock\_type'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2ddf49c4-f0d1-4918-b564-719c695a83ac
 keywords: ["KSPROPERTY_BDA_SIGNAL_LOCK_TYPE Streaming Media Devices"]
 topic_type:

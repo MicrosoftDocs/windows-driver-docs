@@ -1,12 +1,6 @@
 ---
 title: Film Configuration Elements
 description: Film Configuration Elements
-MS-HAID:
-- 'wsdss\_adffilm\_5fe9df25-6cfb-4548-8687-5bedc6608020.xml'
-- 'image.film\_configuration\_elements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bb7329c6-a987-4cf8-a5cd-c1da9cd5095b
 ---
 

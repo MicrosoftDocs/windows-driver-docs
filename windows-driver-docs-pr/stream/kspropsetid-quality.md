@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_Quality
 description: KSPROPSETID\_Quality
-MS-HAID:
-- 'ks-prop\_be3ad69b-55a7-4fb2-9228-ae31fbd9ffbe.xml'
-- 'stream.kspropsetid\_quality'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 56005b14-1293-483a-8803-dffc6bfc746d
 ---
 

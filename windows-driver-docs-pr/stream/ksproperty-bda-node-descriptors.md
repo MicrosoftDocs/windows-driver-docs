@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_NODE\_DESCRIPTORS
 description: Clients use KSPROPERTY\_BDA\_NODE\_DESCRIPTORS to retrieve a list of nodes.
-MS-HAID:
-- 'bdaref\_200a5d6b-368b-4696-9f27-81a16934b28d.xml'
-- 'stream.ksproperty\_bda\_node\_descriptors'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 53b297e6-7e31-4231-80ad-b114cf9343b4
 keywords: ["KSPROPERTY_BDA_NODE_DESCRIPTORS Streaming Media Devices"]
 topic_type:

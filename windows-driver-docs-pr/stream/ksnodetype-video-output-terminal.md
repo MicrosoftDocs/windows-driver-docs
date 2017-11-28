@@ -1,12 +1,6 @@
 ---
 title: KSNODETYPE\_VIDEO\_OUTPUT\_TERMINAL
 description: KSNODETYPE\_VIDEO\_OUTPUT\_TERMINAL
-MS-HAID:
-- 'ks-nodetypes\_d96883f3-329f-41bd-8d0e-60fc8e2cb8f4.xml'
-- 'stream.ksnodetype\_video\_output\_terminal'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a0c8177e-3f3f-40d9-bb1f-3b65fbf4698a
 ---
 

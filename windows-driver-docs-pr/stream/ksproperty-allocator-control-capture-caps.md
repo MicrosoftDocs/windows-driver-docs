@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_ALLOCATOR\_CONTROL\_CAPTURE\_CAPS
 description: The KSPROPERTY\_ALLOCATOR\_CONTROL\_CAPTURE\_CAPS property informs the Overlay Mixer of the capture capabilities of the video port (that is if capture support is available).
-MS-HAID:
-- 'vidcapprop\_f0a4c442-32f3-4bf4-9837-9ed41fab47a8.xml'
-- 'stream.ksproperty\_allocator\_control\_capture\_caps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9e2947a3-ef5b-4a2a-a607-6c0c4be44b1c
 keywords: ["KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS Streaming Media Devices"]
 topic_type:

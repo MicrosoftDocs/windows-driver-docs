@@ -1,9 +1,6 @@
 ---
 title: CreatePostScanJobRequest.UserIdentifier
 description: CreatePostScanJobRequest.UserIdentifier
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: A205CE50-B4B4-4D99-A8E6-61871DF4FEF5
 ---
 

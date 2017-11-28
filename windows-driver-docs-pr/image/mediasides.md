@@ -1,12 +1,6 @@
 ---
 title: MediaSides element
 description: The optional MediaSides element contains the parameters that are unique to each physical side of the scanned media.
-MS-HAID:
-- 'wsdss\_doc\_94f853a7-e092-4d05-aedd-6ca57080fc9c.xml'
-- 'image.mediasides'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9bd3de21-4b2c-4cea-add6-51240ad6c19f
 keywords: ["MediaSides element Imaging Devices"]
 topic_type:

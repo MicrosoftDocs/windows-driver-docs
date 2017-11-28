@@ -1,12 +1,6 @@
 ---
 title: AVCSTRM\_READ
 description: AVCSTRM\_READ
-MS-HAID:
-- 'avcsref\_569c68a0-c9c3-4a7e-980c-148223006a8d.xml'
-- 'stream.avcstrm\_read'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0bc0c8ae-15b8-4f52-b081-f3eb31ac4478
 keywords: ["AVCSTRM_READ Streaming Media Devices"]
 topic_type:

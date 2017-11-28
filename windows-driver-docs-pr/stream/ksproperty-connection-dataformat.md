@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CONNECTION\_DATAFORMAT
 description: Clients use the KSPROPERTY\_CONNECTION\_DATAFORMAT property to set the current data format.
-MS-HAID:
-- 'ks-prop\_08ee40b8-f5e2-4bfd-9965-a74774c8d82e.xml'
-- 'stream.ksproperty\_connection\_dataformat'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c5f37f1b-7dc6-46d2-aba2-b6c03f07228d
 keywords: ["KSPROPERTY_CONNECTION_DATAFORMAT Streaming Media Devices"]
 topic_type:

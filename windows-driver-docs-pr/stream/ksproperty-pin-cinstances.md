@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_CINSTANCES
 description: The current number of pins this pin factory has instantiated, as well as the maximum number of pins this pin factory can instantiate, per filter.
-MS-HAID:
-- 'ks-prop\_9fd40f64-ac05-44af-9a10-8e570076097a.xml'
-- 'stream.ksproperty\_pin\_cinstances'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0a6c0afa-1bdf-4b80-a8d7-55f13d9da74b
 keywords: ["KSPROPERTY_PIN_CINSTANCES Streaming Media Devices"]
 topic_type:

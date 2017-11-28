@@ -1,12 +1,6 @@
 ---
 title: ScannerConfiguration element
 description: The required ScannerConfiguration element is a collection of elements that describes the scanner's configurable capabilities.
-MS-HAID:
-- 'wsdss\_configure\_becff2fe-44b8-4dbc-bd13-ea9e9c96dcc4.xml'
-- 'image.scannerconfiguration'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 79c26d0d-ebee-4baf-8689-f5bae088883d
 keywords: ["ScannerConfiguration element Imaging Devices"]
 topic_type:

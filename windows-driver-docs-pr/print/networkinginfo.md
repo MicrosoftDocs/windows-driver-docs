@@ -1,12 +1,6 @@
 ---
 title: NetworkingInfo
 description: NetworkingInfo
-MS-HAID:
-- 'autocfg\_23a2ecff-cb08-4cc9-b600-16b40ad03c1a.xml'
-- 'print.networkinginfo'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 81c615d4-8a7c-4d28-a3ce-5233899e35cf
 ---
 

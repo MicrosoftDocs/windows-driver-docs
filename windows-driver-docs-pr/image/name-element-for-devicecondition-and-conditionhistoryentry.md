@@ -1,12 +1,6 @@
 ---
 title: Name Element for DeviceCondition and ConditionHistoryEntry element
 description: The required Name element names the current error condition that is specified in a DeviceCondition or ConditionHistoryEntry element.
-MS-HAID:
-- 'wsdss\_status\_37e44f99-d3d2-41dc-b055-f2fcb0406866.xml'
-- 'image.name\_element\_for\_devicecondition\_and\_conditionhistoryentry'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1ac530ed-dc31-4af0-a89b-0860a36bbfeb
 keywords: ["Name Element for DeviceCondition and ConditionHistoryEntry element Imaging Devices"]
 topic_type:

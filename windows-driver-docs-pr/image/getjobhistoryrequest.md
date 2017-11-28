@@ -1,12 +1,6 @@
 ---
 title: GetJobHistoryRequest element
 description: The required GetJobHistoryRequest element requests a summary of job-related variables for previously completed jobs.
-MS-HAID:
-- 'wsdss\_ops\_1b676b58-d7cf-4ea9-98e7-a33ec87c85b8.xml'
-- 'image.getjobhistoryrequest'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 679a2256-2b3f-4a54-be06-8b414acab679
 keywords: ["GetJobHistoryRequest element Imaging Devices"]
 topic_type:

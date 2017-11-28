@@ -1,12 +1,6 @@
 ---
 title: Event\ \ \
 description: Event\ \ \
-MS-HAID:
-- 'autocfg\_4c4cc9bd-4c78-4a18-b9a4-ec9cc9ccc156.xml'
-- 'print.event\_\_\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a3b0b3f1-03d6-4309-9efe-d2588c7240cb
 ---
 

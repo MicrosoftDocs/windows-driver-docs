@@ -1,12 +1,6 @@
 ---
 title: JobInformation element
 description: The optional JobInformation element describes the intended use of the job.
-MS-HAID:
-- 'wsdss\_job\_27636579-d13a-4952-a253-4d1299b7a83e.xml'
-- 'image.jobinformation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0e5d41a0-49df-43db-a2e6-3639e60d2378
 keywords: ["JobInformation element Imaging Devices"]
 topic_type:

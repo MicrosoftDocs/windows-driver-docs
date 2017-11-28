@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPA\_BYTES\_PER\_LINE
 description: The WIA\_IPA\_BYTES\_PER\_LINE property contains the number of bytes in one scan line of an image. The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_ab6dd1da-1bc2-4d56-af2e-13e24c908d63.xml'
-- 'image.wia\_ipa\_bytes\_per\_line'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f746ce05-5dfe-47fe-857a-967a6144de16
 keywords: ["WIA_IPA_BYTES_PER_LINE Imaging Devices"]
 topic_type:

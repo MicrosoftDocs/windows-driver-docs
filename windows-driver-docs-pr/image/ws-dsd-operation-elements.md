@@ -1,12 +1,6 @@
 ---
 title: WS-DSD Operation Elements
 description: WS-DSD Operation Elements
-MS-HAID:
-- 'dsm\_ref\_dsd\_3b8a9783-ed83-434b-ae61-8cabf0b767cd.xml'
-- 'image.ws\_dsd\_operation\_elements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e1b66c90-2984-4c67-b612-e3aa38e3e34d
 ---
 

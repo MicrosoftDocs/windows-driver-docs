@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPA\_FILENAME\_EXTENSION
 description: The WIA\_IPA\_FILENAME\_EXTENSION property contains the file name extension for a particular file format. The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_f7d80007-2973-4ce5-b4e9-a5f831326321.xml'
-- 'image.wia\_ipa\_filename\_extension'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 08abb3f2-73a2-42cd-ae69-1607eda63d1e
 keywords: ["WIA_IPA_FILENAME_EXTENSION Imaging Devices"]
 topic_type:

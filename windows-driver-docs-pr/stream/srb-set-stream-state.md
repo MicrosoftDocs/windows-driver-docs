@@ -1,12 +1,6 @@
 ---
 title: SRB\_SET\_STREAM\_STATE
 description: SRB\_SET\_STREAM\_STATE
-MS-HAID:
-- 'strclass-srbs\_3909096d-3edb-463f-ad46-160400b2ca44.xml'
-- 'stream.srb\_set\_stream\_state'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8dd1237c-3b3e-4207-96b8-22311968c3a0
 keywords: ["SRB_SET_STREAM_STATE Streaming Media Devices"]
 topic_type:

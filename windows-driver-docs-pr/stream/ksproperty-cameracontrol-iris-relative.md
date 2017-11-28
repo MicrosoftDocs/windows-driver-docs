@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_IRIS\_RELATIVE
 description: The KSPROPERTY\_CAMERACONTROL\_IRIS\_RELATIVE property specifies a camera's aperture setting.
-MS-HAID:
-- 'vidcapprop\_03242f05-f60a-4572-898b-477500a4bb5b.xml'
-- 'stream.ksproperty\_cameracontrol\_iris\_relative'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 919fcf7a-ee96-4e1e-b0ce-e5a7ce5086c7
 keywords: ["KSPROPERTY_CAMERACONTROL_IRIS_RELATIVE Streaming Media Devices"]
 topic_type:

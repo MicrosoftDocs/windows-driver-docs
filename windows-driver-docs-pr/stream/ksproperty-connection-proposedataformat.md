@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CONNECTION\_PROPOSEDATAFORMAT
 description: Clients can use the KSPROPERTY\_CONNECTION\_PROPOSEDATAFORMAT property to propose a new data format for the connection.
-MS-HAID:
-- 'ks-prop\_22b752c4-e8c3-43da-b986-ff3476733a4d.xml'
-- 'stream.ksproperty\_connection\_proposedataformat'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f5bc7cd2-0033-4761-962b-33c82925134b
 keywords: ["KSPROPERTY_CONNECTION_PROPOSEDATAFORMAT Streaming Media Devices"]
 topic_type:

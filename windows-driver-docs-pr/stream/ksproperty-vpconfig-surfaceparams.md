@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_SURFACEPARAMS
 description: The KSPROPERTY\_VPCONFIG\_SURFACEPARAMS property specifies the video port surface settings..
-MS-HAID:
-- 'dvdref\_71509b27-164e-4740-ac33-003d9763ef55.xml'
-- 'stream.ksproperty\_vpconfig\_surfaceparams'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cb8ebaea-4667-43c6-964f-89d55d4ff9be
 keywords: ["KSPROPERTY_VPCONFIG_SURFACEPARAMS Streaming Media Devices"]
 topic_type:

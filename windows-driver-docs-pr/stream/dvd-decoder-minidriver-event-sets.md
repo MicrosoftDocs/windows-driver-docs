@@ -1,12 +1,6 @@
 ---
 title: DVD Decoder Minidriver Event Sets
 description: DVD Decoder Minidriver Event Sets
-MS-HAID:
-- 'dvdref\_ea067a0a-00d7-4e25-968d-8ea48ea12f28.xml'
-- 'stream.dvd\_decoder\_minidriver\_event\_sets'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 16dc9c31-1755-40f7-810d-60ecc814165a
 ---
 

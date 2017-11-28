@@ -1,12 +1,6 @@
 ---
 title: GetPostScanJobElementsResponse.JobElements.ElementData.Valid
 description: GetPostScanJobElementsResponse.JobElements.ElementData.Valid
-MS-HAID:
-- 'dsm\_ref\_dsp\_7637403d-a1d9-434c-b779-3647261df873.xml'
-- 'image.getpostscanjobelementsresponse\_jobelements\_elementdata\_valid'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a9b29f4d-6197-46f8-aa1b-1a4298cab328
 keywords: ["GetPostScanJobElementsResponse.JobElements.ElementData.Valid"]
 ---

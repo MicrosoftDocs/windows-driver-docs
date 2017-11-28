@@ -1,12 +1,6 @@
 ---
 title: DocumentName element
 description: The required DocumentName element contains the name of the document that the client supplies.
-MS-HAID:
-- 'wsdss\_doc\_5f50cd7e-aa2c-465d-8c5b-aea709821232.xml'
-- 'image.documentname'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7d6d7dcd-db5d-420d-9e5f-3badeb0a511c
 keywords: ["DocumentName element Imaging Devices"]
 topic_type:

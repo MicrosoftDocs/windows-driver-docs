@@ -1,12 +1,6 @@
 ---
 title: ScalingWidth element
 description: The required ScalingWidth element specifies the document scaling in the fast scan direction.
-MS-HAID:
-- 'wsdss\_doc\_146db34d-2454-4ff5-8ec1-5bcccfb56584.xml'
-- 'image.scalingwidth'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5bc7cec8-888a-4b95-9593-94e6e23777bf
 keywords: ["ScalingWidth element Imaging Devices"]
 topic_type:

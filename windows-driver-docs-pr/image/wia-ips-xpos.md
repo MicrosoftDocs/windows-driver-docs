@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPS\_XPOS
 description: The WIA\_IPS\_XPOS property contains the x-coordinate, in pixels, of the upper-left corner of a selected image. The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_74b13100-9c90-4706-b41a-06d9f813dd19.xml'
-- 'image.wia\_ips\_xpos'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3fa45aab-c0d0-4061-b145-795fb02c1547
 keywords: ["WIA_IPS_XPOS Imaging Devices"]
 topic_type:

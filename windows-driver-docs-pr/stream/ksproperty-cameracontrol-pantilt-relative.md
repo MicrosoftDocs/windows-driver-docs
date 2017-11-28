@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_PANTILT\_RELATIVE
 description: The KSPROPERTY\_CAMERACONTROL\_PANTILT\_RELATIVE property specifies horizontal or vertical rotation of the camera and can specify both simultaneously.
-MS-HAID:
-- 'vidcapprop\_be549273-990e-449d-8cd9-386f075df6f6.xml'
-- 'stream.ksproperty\_cameracontrol\_pantilt\_relative'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c2c9405c-7713-439f-a150-51969a2a5e6b
 keywords: ["KSPROPERTY_CAMERACONTROL_PANTILT_RELATIVE Streaming Media Devices"]
 topic_type:

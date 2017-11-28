@@ -1,12 +1,6 @@
 ---
 title: AVC\_FUNCTION\_RELEASE
 description: AVC\_FUNCTION\_RELEASE
-MS-HAID:
-- 'avcref\_b041a81a-833b-4087-8ac1-5757c79363c9.xml'
-- 'stream.avc\_function\_release'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 77a35af2-ddf4-454b-a3a9-f5b7312fa64a
 keywords: ["AVC_FUNCTION_RELEASE Streaming Media Devices"]
 topic_type:

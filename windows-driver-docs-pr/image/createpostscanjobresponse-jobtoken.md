@@ -1,12 +1,6 @@
 ---
 title: CreatePostScanJobResponse.JobToken
 description: CreatePostScanJobResponse.JobToken
-MS-HAID:
-- 'dsm\_ref\_dsp\_2c69a574-ae26-4a0d-9a80-a3422d4d8146.xml'
-- 'image.createpostscanjobresponse\_jobtoken'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 00aae6a7-ed3d-46e0-9453-4010df840eb0
 keywords: ["CreatePostScanJobResponse.JobToken"]
 ---

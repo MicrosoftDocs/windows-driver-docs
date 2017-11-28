@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_EXTXPORT\_OUTPUT\_SIGNAL\_MODE
 description: The KSPROPERTY\_EXTXPORT\_OUTPUT\_SIGNAL\_MODE property sets or gets an external device's output signal mode. For example DV-SD/NTSC/PAL, DV-SL/NTSC/PAL, MPEG2-TS, etc.
-MS-HAID:
-- 'vidcapprop\_51ed9cf3-51ca-4565-8b25-2a5e51633e82.xml'
-- 'stream.ksproperty\_extxport\_output\_signal\_mode'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9cd1bf2a-c241-491a-af22-5cf7b654169d
 keywords: ["KSPROPERTY_EXTXPORT_OUTPUT_SIGNAL_MODE Streaming Media Devices"]
 topic_type:

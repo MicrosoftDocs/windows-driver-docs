@@ -1,12 +1,6 @@
 ---
 title: KSEVENT\_BDA\_CA\_MODULE\_STATUS\_CHANGED
 description: Clients use KSEVENT\_BDA\_CA\_MODULE\_STATUS\_CHANGED to request notification when status on the CA module associated with an ECM map node changes.
-MS-HAID:
-- 'bdaref\_4152de08-ba77-4e33-be91-a6c07774a14b.xml'
-- 'stream.ksevent\_bda\_ca\_module\_status\_changed'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a331cfa9-abd0-422e-8c39-0ff01f9dcc6a
 keywords: ["KSEVENT_BDA_CA_MODULE_STATUS_CHANGED Streaming Media Devices"]
 topic_type:

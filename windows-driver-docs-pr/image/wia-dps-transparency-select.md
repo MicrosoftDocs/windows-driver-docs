@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_TRANSPARENCY\_SELECT
 description: The WIA\_DPS\_TRANSPARENCY\_SELECT property is obsolete and should not be used.
-MS-HAID:
-- 'WIA\_PropTable\_9f9dec92-b57a-49e0-92b1-1c80280b6680.xml'
-- 'image.wia\_dps\_transparency\_select'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 486a5a59-b314-4171-90e7-1eeeed7d5e3d
 keywords: ["WIA_DPS_TRANSPARENCY_SELECT Imaging Devices"]
 topic_type:

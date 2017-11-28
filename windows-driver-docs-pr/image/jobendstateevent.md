@@ -1,12 +1,6 @@
 ---
 title: JobEndStateEvent element
 description: The required JobEndStateEvent element informs the client that the scanner has finished processing a job.
-MS-HAID:
-- 'wsdss\_events\_205c004b-c00e-4102-92a9-69b29f2612ff.xml'
-- 'image.jobendstateevent'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2d5307fb-9c64-413d-8c5c-439012a44a19
 keywords: ["JobEndStateEvent element Imaging Devices"]
 topic_type:

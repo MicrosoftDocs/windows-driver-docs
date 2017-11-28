@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_DIMENSION
 description: The WIA\_DPC\_DIMENSION property is reserved by Microsoft for future use and is not implemented at this time.
-MS-HAID:
-- 'WIA\_PropTable\_2f4ba929-1b5e-42a1-a3b2-ae3e4fc7a0f2.xml'
-- 'image.wia\_dpc\_dimension'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 77bf3095-74da-428a-b907-c70605016f18
 keywords: ["WIA_DPC_DIMENSION Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: ContentType element
 description: The optional ContentType element specifies the main characteristics of the original document.
-MS-HAID:
-- 'wsdss\_doc\_e03d4829-aa89-4fdb-bf04-2f9264dacb2f.xml'
-- 'image.contenttype'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0e91e4ec-5569-452f-b929-9d2923f3147d
 keywords: ["ContentType element Imaging Devices"]
 topic_type:

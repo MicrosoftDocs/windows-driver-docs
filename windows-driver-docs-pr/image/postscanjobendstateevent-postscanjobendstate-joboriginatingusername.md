@@ -1,12 +1,6 @@
 ---
 title: PostScanJobEndStateEvent.PostScanJobEndState.JobOriginatingUserName
 description: PostScanJobEndStateEvent.PostScanJobEndState.JobOriginatingUserName
-MS-HAID:
-- 'dsm\_ref\_dsp\_c77044e3-00bf-4757-98a0-d5ee8f24f13d.xml'
-- 'image.postscanjobendstateevent\_postscanjobendstate\_joboriginatingusername'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 50268437-d5df-4534-b4a7-21ee3134bddf
 keywords: ["PostScanJobEndStateEvent.PostScanJobEndState.JobOriginatingUserName"]
 ---

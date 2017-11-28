@@ -1,12 +1,6 @@
 ---
 title: buttons element
 description: The required buttons element specifies one or more buttons that are displayed in the event notification message box on the client computer.
-MS-HAID:
-- 'async\_ab103cec-de25-45f6-90df-c4273d7a3e5e.xml'
-- 'print.buttons'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bf3718c0-37d9-4b73-a015-8a5a95535381
 keywords: ["buttons element Print Devices"]
 topic_type:

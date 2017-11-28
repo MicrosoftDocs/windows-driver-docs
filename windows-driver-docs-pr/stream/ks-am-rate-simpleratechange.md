@@ -1,12 +1,6 @@
 ---
 title: KS\_AM\_RATE\_SimpleRateChange
 description: The KS\_AM\_RATE\_SimpleDataRate property sets the time stamp rate on a filter.
-MS-HAID:
-- 'dvdref\_ad1c3992-f129-41d2-a5fe-78b829ab2257.xml'
-- 'stream.ks\_am\_rate\_simpleratechange'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 07399986-de5a-42fc-975e-05ea57570f58
 keywords: ["KS_AM_RATE_SimpleRateChange Streaming Media Devices"]
 topic_type:

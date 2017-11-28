@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_CATEGORY
 description: The client uses the KSPROPERTY\_PIN\_CATEGORY property to retrieve the category of a pin factory.
-MS-HAID:
-- 'ks-prop\_c40b6c24-650a-48b7-9ec5-51497c7789ff.xml'
-- 'stream.ksproperty\_pin\_category'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6579408c-9ec5-4b09-9a63-815cec5bd5a3
 keywords: ["KSPROPERTY_PIN_CATEGORY Streaming Media Devices"]
 topic_type:

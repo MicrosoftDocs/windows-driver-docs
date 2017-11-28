@@ -1,12 +1,6 @@
 ---
 title: CreatePostScanJobResponse Example
 description: CreatePostScanJobResponse Example
-MS-HAID:
-- 'dsm\_ref\_dsp\_8bfcc140-8abd-4bfe-9c89-4a2ceb0c1a56.xml'
-- 'image.createpostscanjobresponse\_example'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3af44534-2609-419c-836e-294b60de64e4
 keywords: ["CreatePostScanJobResponse Example"]
 ---

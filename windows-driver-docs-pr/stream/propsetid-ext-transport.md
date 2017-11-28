@@ -1,12 +1,6 @@
 ---
 title: PROPSETID\_EXT\_TRANSPORT
 description: PROPSETID\_EXT\_TRANSPORT
-MS-HAID:
-- 'vidcapprop\_4839703a-b21e-426c-8561-51657caa111e.xml'
-- 'stream.propsetid\_ext\_transport'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2e96dec7-43a9-44a4-9636-4ccb5244d5bd
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: DocumentSizeAutoDetectSupported element
 description: The required DocumentSizeAutoDetectSupported element indicates whether the scan device can detect the size of the original media.
-MS-HAID:
-- 'wsdss\_configure\_48ef9002-c2ea-4d88-ab1a-dd84c9db2af5.xml'
-- 'image.documentsizeautodetectsupported'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 38baea3d-85bf-44e1-86bf-349d17981efa
 keywords: ["DocumentSizeAutoDetectSupported element Imaging Devices"]
 topic_type:

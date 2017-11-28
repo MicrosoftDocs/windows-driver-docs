@@ -1,12 +1,6 @@
 ---
 title: WIA\_DIP\_DEV\_ID
 description: The WIA\_DIP\_DEV\_ID property contains the device identifier (ID) string for a WIA minidriver. The WIA service creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_d28769d2-508b-4e5d-b7b1-0e0b0c11b0c9.xml'
-- 'image.wia\_dip\_dev\_id'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e524e194-f9a8-4480-9ed1-7f0ba9046c03
 keywords: ["WIA_DIP_DEV_ID Imaging Devices"]
 topic_type:

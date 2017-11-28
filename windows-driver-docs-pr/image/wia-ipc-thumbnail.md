@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPC\_THUMBNAIL
 description: The WIA\_IPC\_THUMBNAIL property contains the 24-bits-per-pixel thumbnail data bits. The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_c70b559a-f632-4236-b416-2f1fe6247c7b.xml'
-- 'image.wia\_ipc\_thumbnail'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 748443a7-cc7f-4291-b987-21462af97c3c
 keywords: ["WIA_IPC_THUMBNAIL Imaging Devices"]
 topic_type:

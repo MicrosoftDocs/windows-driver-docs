@@ -1,12 +1,6 @@
 ---
 title: SendImageResponse Example
 description: SendImageResponse Example
-MS-HAID:
-- 'dsm\_ref\_dsp\_7936b622-5af1-4b7e-89b6-b822356ba84e.xml'
-- 'image.sendimageresponse\_example'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6590c00d-7dcf-4d0f-84fe-ec9497631433
 keywords: ["SendImageResponse Example"]
 ---

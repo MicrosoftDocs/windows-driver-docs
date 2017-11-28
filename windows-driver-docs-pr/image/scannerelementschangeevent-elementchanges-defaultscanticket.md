@@ -1,12 +1,6 @@
 ---
 title: ScannerElementsChangeEvent.ElementChanges.DefaultScanTicket
 description: ScannerElementsChangeEvent.ElementChanges.DefaultScanTicket
-MS-HAID:
-- 'dsm\_ref\_dsd\_7e533352-a58a-4e7a-88f5-62fb301b716f.xml'
-- 'image.scannerelementschangeevent\_elementchanges\_defaultscanticket'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ab54d8c0-4c00-49fa-802a-f7ec649fcdb6
 keywords: ["ScannerElementsChangeEvent.ElementChanges.DefaultScanTicket"]
 ---

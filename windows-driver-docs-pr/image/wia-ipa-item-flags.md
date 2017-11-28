@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPA\_ITEM\_FLAGS
 description: The WIA\_IPA\_ITEM\_FLAGS property contains the descriptive flags for a WIA item.
-MS-HAID:
-- 'WIA\_PropTable\_b97a72ca-fbaa-4e76-b4a6-ced543a510b4.xml'
-- 'image.wia\_ipa\_item\_flags'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ee25fb38-eafa-49a9-83ab-4f99bc25f4e9
 keywords: ["WIA_IPA_ITEM_FLAGS Imaging Devices"]
 topic_type:

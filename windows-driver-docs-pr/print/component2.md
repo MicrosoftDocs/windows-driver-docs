@@ -1,12 +1,6 @@
 ---
 title: Component
 description: Component
-MS-HAID:
-- 'autocfg\_e691f542-1d70-4400-aeb8-79ac4fc722c8.xml'
-- 'print.component2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 15cc741e-5919-4d71-802b-519494827722
 ---
 

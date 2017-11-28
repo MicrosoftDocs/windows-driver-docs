@@ -1,12 +1,6 @@
 ---
 title: MediaFrontImageInfo element
 description: The required MediaFrontImageInfo element contains the image information for a simplex scan or for the front side of an ADF duplex scan.
-MS-HAID:
-- 'wsdss\_ops\_f277b89c-c883-49c3-9fbf-e6834399df9b.xml'
-- 'image.mediafrontimageinfo'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4f1bcc3c-0d5f-490f-8d7a-fc357adeecb4
 keywords: ["MediaFrontImageInfo element Imaging Devices"]
 topic_type:

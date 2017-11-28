@@ -1,12 +1,6 @@
 ---
 title: InputMediaSize element
 description: The required InputMediaSize element specifies the size of the media to be scanned for the current job.
-MS-HAID:
-- 'wsdss\_doc\_966b3fbf-fa6f-4da8-af01-c2f95d23e8b7.xml'
-- 'image.inputmediasize'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f1fcb152-96c5-469c-8989-a2c4328a5f68
 keywords: ["InputMediaSize element Imaging Devices"]
 topic_type:

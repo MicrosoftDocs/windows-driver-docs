@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOCOMPRESSION\_QUALITY
 description: The KSPROPERTY\_VIDECOMPRESSION\_QUALITY property controls the video compression quality setting. This property must be implemented.
-MS-HAID:
-- 'vidcapprop\_cd4ba7ba-26ef-4ff7-92bf-75f9bb2df2d1.xml'
-- 'stream.ksproperty\_videocompression\_quality'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7566f60e-fe49-4009-bd61-b29d2adb4e8c
 keywords: ["KSPROPERTY_VIDEOCOMPRESSION_QUALITY Streaming Media Devices"]
 topic_type:

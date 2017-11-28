@@ -1,12 +1,6 @@
 ---
 title: ScannerStatusConditionEvent.DeviceCondition
 description: ScannerStatusConditionEvent.DeviceCondition
-MS-HAID:
-- 'dsm\_ref\_dsd\_eebeb30b-fe55-4e60-8361-608d914b0589.xml'
-- 'image.scannerstatusconditionevent\_devicecondition'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 64418f99-9099-4bf2-bfe2-0daf0edb6b26
 keywords: ["ScannerStatusConditionEvent.DeviceCondition"]
 ---

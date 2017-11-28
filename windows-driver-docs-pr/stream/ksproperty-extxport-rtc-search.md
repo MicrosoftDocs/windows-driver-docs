@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_EXTXPORT\_RTC\_SEARCH
 description: The KSPROPERTY\_EXTXPORT\_RTC\_SEARCH property searches to a relative time counter (RTC) on a tape.
-MS-HAID:
-- 'vidcapprop\_3733ca22-6518-4939-b089-c97f93f2e11c.xml'
-- 'stream.ksproperty\_extxport\_rtc\_search'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4a5b76fc-46f3-44f7-8548-34125df777f5
 keywords: ["KSPROPERTY_EXTXPORT_RTC_SEARCH Streaming Media Devices"]
 topic_type:

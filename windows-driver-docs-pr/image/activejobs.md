@@ -1,12 +1,6 @@
 ---
 title: ActiveJobs element
 description: The required ActiveJobs element contains a list of all currently active scan jobs.
-MS-HAID:
-- 'wsdss\_job\_92044ad1-1dc5-47d2-bb18-682e8159da5b.xml'
-- 'image.activejobs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 90acd196-60d3-43e5-9346-a8514bcf0bb8
 keywords: ["ActiveJobs element Imaging Devices"]
 topic_type:

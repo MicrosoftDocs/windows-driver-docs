@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPA\_MIN\_BUFFER\_SIZE
 description: The WIA\_IPA\_MIN\_BUFFER\_SIZE property specifies the minimum buffer size that is used in data transfers.
-MS-HAID:
-- 'WIA\_PropTable\_8ed115ce-eef7-4c17-b598-8caa7d39e6d6.xml'
-- 'image.wia\_ipa\_min\_buffer\_size'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0d289645-666c-4b67-8971-cdeff3caef3e
 keywords: ["WIA_IPA_MIN_BUFFER_SIZE Imaging Devices"]
 topic_type:

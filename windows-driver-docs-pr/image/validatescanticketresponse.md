@@ -1,12 +1,6 @@
 ---
 title: ValidateScanTicketResponse element
 description: The required ValidateScanTicketResponse operation notifies the client whether a client's submitted ScanTicket is valid.
-MS-HAID:
-- 'wsdss\_ops\_c87534fc-16d8-4982-ac02-413483a6bf9c.xml'
-- 'image.validatescanticketresponse'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7eea7d33-45de-45bf-8e89-de06f5710073
 keywords: ["ValidateScanTicketResponse element Imaging Devices"]
 topic_type:

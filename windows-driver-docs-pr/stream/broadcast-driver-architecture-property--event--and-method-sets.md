@@ -1,12 +1,6 @@
 ---
 title: Broadcast Driver Architecture Property, Event, and Method Sets
 description: Broadcast Driver Architecture Property, Event, and Method Sets
-MS-HAID:
-- 'bdaref\_ff2fdaaf-0efc-4d69-836a-18a629f33117.xml'
-- 'stream.broadcast\_driver\_architecture\_property\_\_event\_\_and\_method\_sets'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4323c19a-e47d-4ec6-a39c-3f2e95c526e4
 ---
 

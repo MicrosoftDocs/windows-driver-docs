@@ -1,12 +1,6 @@
 ---
 title: AVC\_FUNCTION\_GET\_UNIQUE\_ID
 description: AVC\_FUNCTION\_GET\_UNIQUE\_ID
-MS-HAID:
-- 'avcref\_04c4784f-1902-4c1d-a1b0-3f22ae15894b.xml'
-- 'stream.avc\_function\_get\_unique\_id'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 51b35686-03a9-45b3-8bdc-14cbd24714dc
 keywords: ["AVC_FUNCTION_GET_UNIQUE_ID Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: Event Commands
 description: Event Commands
-MS-HAID:
-- 'MicroDrv\_b79a6152-3f90-4e37-bcfb-d91bb822578a.xml'
-- 'image.event\_commands'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e2b9f985-be57-49a9-b546-5cc74b0b061b
 ---
 

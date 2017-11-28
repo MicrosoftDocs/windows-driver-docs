@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_FOCUS\_MODE
 description: The WIA\_DPC\_FOCUS\_MODE property defines the current focus mode setting for a camera device.
-MS-HAID:
-- 'WIA\_PropTable\_04f18d20-035f-4b71-8236-d0ef60b45077.xml'
-- 'image.wia\_dpc\_focus\_mode'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d651c9f7-97ca-4fa5-bc52-2af1f7c2e241
 keywords: ["WIA_DPC_FOCUS_MODE Imaging Devices"]
 topic_type:

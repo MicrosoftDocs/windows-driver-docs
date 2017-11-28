@@ -1,12 +1,6 @@
 ---
 title: ScanRegion element
 description: The optional ScanRegion element specifies the area to scan within the input document boundaries.
-MS-HAID:
-- 'wsdss\_doc\_cb8ba52e-0544-4ae8-83c3-141c9d763c51.xml'
-- 'image.scanregion'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 29b94df7-503d-4bbd-99a8-9092140c6629
 keywords: ["ScanRegion element Imaging Devices"]
 topic_type:

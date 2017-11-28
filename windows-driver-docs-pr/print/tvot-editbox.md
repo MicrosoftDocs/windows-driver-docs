@@ -1,12 +1,6 @@
 ---
 title: TVOT\_EDITBOX
 description: TVOT\_EDITBOX
-MS-HAID:
-- 'cpsuifnc\_c780dd61-df58-419c-8c3a-889d25680a38.xml'
-- 'print.tvot\_editbox'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: efbfe6ff-129d-4bf5-a0e3-3cae575dfcd7
 keywords: ["TVOT_EDITBOX Print Devices"]
 topic_type:

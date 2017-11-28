@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_VPDATAINFO
 description: The KSPROPERTY\_VPCONFIG\_VPDATAINFO property indicates the initial configuration state of the video port.
-MS-HAID:
-- 'dvdref\_692ebeb3-901b-4e6f-b8f3-9a127289647c.xml'
-- 'stream.ksproperty\_vpconfig\_vpdatainfo'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 66419d5a-c701-45f4-9ac6-322997e2f000
 keywords: ["KSPROPERTY_VPCONFIG_VPDATAINFO Streaming Media Devices"]
 topic_type:

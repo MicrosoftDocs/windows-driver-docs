@@ -1,12 +1,6 @@
 ---
 title: KSNODETYPE\_VIDEO\_STREAMING
 description: KSNODETYPE\_VIDEO\_STREAMING
-MS-HAID:
-- 'ks-nodetypes\_fb5d9cdb-68fc-4ef0-bf59-b8742535b1e2.xml'
-- 'stream.ksnodetype\_video\_streaming'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cb959466-9c37-4063-83b3-7bce517230f6
 ---
 

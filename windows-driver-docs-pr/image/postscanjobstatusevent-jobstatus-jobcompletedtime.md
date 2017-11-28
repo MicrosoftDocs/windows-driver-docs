@@ -1,12 +1,6 @@
 ---
 title: PostScanJobStatusEvent.JobStatus.JobCompletedTime
 description: PostScanJobStatusEvent.JobStatus.JobCompletedTime
-MS-HAID:
-- 'dsm\_ref\_dsp\_be2a3767-f832-43a8-a894-8616b5803225.xml'
-- 'image.postscanjobstatusevent\_jobstatus\_jobcompletedtime'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0c319834-1840-4707-af0b-f5e590254c44
 keywords: ["PostScanJobStatusEvent.JobStatus.JobCompletedTime"]
 ---

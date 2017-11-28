@@ -1,12 +1,6 @@
 ---
 title: Web Services on Devices Reference
 description: Web Services on Devices Reference
-MS-HAID:
-- 'wsdss\_intro\_3242f5a8-60d0-421c-a078-043a3f0319c7.xml'
-- 'image.web\_services\_on\_devices\_reference'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a6805bf4-e4b3-4a34-9df9-7678736cb3c8
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: KSEVENTSETID\_VIDCAPNotify
 description: KSEVENTSETID\_VIDCAPNotify
-MS-HAID:
-- 'vidcapevent\_93f27d65-3a60-49f3-b0d5-603a3b572283.xml'
-- 'stream.kseventsetid\_vidcapnotify'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3f3def49-856f-4477-86dc-7bbb796f5d37
 ---
 

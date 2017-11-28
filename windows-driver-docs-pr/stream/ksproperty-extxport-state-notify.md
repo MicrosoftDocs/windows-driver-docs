@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_EXTXPORT\_STATE\_NOTIFY
 description: The KSPROPERTY\_EXTXPORT\_STATE\_NOTIFY property sets or gets notification of transport mode and state change.
-MS-HAID:
-- 'vidcapprop\_4c2bb402-6ee2-4007-8c33-65cbad970078.xml'
-- 'stream.ksproperty\_extxport\_state\_notify'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3ebf3806-bdec-4ea2-8f2a-e75314ee020a
 keywords: ["KSPROPERTY_EXTXPORT_STATE_NOTIFY Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_Topology
 description: KSPROPSETID\_Topology
-MS-HAID:
-- 'ks-prop\_db1354a0-c7ab-43ee-9a5d-03207d7dd6f1.xml'
-- 'stream.kspropsetid\_topology'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d0c51bcf-ced3-4863-9359-9fa326122262
 ---
 

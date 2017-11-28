@@ -1,12 +1,6 @@
 ---
 title: Resolution element
 description: The optional Resolution element specifies the resolution of the scanned image.
-MS-HAID:
-- 'wsdss\_doc\_7b70d402-80e2-4a28-af0a-4f891720afb4.xml'
-- 'image.resolution'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d46c197d-40ed-4623-a842-7ee5cb9e8367
 keywords: ["Resolution element Imaging Devices"]
 topic_type:

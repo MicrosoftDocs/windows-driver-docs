@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_DEVICE\_ID
 description: The WIA\_DPS\_DEVICE\_ID property contains a unique Function Instance identifier for a web services scanner device.
-MS-HAID:
-- 'WIA\_PropTable\_baa63857-b0ae-4529-bd5a-0bb50305bfd1.xml'
-- 'image.wia\_dps\_device\_id'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 48c45b94-86b1-41b5-89bc-e3270ad56d7e
 keywords: ["WIA_DPS_DEVICE_ID Imaging Devices"]
 topic_type:

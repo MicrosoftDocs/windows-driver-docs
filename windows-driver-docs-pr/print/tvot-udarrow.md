@@ -1,12 +1,6 @@
 ---
 title: TVOT\_UDARROW
 description: TVOT\_UDARROW
-MS-HAID:
-- 'cpsuifnc\_2ba8e551-7619-45b1-acb0-59ef74fcbfd6.xml'
-- 'print.tvot\_udarrow'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c1182cc5-5d82-4db5-8ef2-7d2601499e72
 keywords: ["TVOT_UDARROW Print Devices"]
 topic_type:

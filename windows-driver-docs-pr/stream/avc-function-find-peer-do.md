@@ -1,12 +1,6 @@
 ---
 title: AVC\_FUNCTION\_FIND\_PEER\_DO
 description: AVC\_FUNCTION\_FIND\_PEER\_DO
-MS-HAID:
-- 'avcref\_ec47c813-1115-4c0b-aedd-f4369b1731a1.xml'
-- 'stream.avc\_function\_find\_peer\_do'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a21dde69-f005-4782-97d9-095a57b2b1a5
 keywords: ["AVC_FUNCTION_FIND_PEER_DO Streaming Media Devices"]
 topic_type:

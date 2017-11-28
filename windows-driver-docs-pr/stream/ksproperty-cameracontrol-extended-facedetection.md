@@ -1,9 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEDETECTION
 description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEDETECTION is a property ID that is used to turn on and off face detection.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: F503939D-D6EF-47BD-855B-4404E1AAA15C
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_FACEDETECTION Streaming Media Devices"]
 topic_type:

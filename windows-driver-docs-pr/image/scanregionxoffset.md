@@ -1,12 +1,6 @@
 ---
 title: ScanRegionXOffset element
 description: The optional ScanRegionXOffset element specifies the distance from the fast scan lead edge to the beginning of the scan region.
-MS-HAID:
-- 'wsdss\_doc\_645bb59e-c5ee-47eb-88ec-63d8bf064c7a.xml'
-- 'image.scanregionxoffset'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 79123dd1-8532-45a8-a7c5-b6c36ef0baae
 keywords: ["ScanRegionXOffset element Imaging Devices"]
 topic_type:

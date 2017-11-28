@@ -1,9 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOFRAMERATE
 description: This property gets the capture frame rate when the photo mode for the camera is sequence mode.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: F1269FED-EFB3-4F21-B0EC-F88949D6EEBC
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOFRAMERATE Streaming Media Devices"]
 topic_type:

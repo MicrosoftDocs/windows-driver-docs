@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_BdaFrequencyFilter
 description: KSPROPSETID\_BdaFrequencyFilter
-MS-HAID:
-- 'bdaref\_d1b3b4cd-c501-4771-a897-00e1b05c1f30.xml'
-- 'stream.kspropsetid\_bdafrequencyfilter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7650a239-3d49-4cb1-99bb-12bac55d70d2
 ---
 

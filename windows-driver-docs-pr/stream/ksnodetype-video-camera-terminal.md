@@ -1,12 +1,6 @@
 ---
 title: KSNODETYPE\_VIDEO\_CAMERA\_TERMINAL
 description: KSNODETYPE\_VIDEO\_CAMERA\_TERMINAL
-MS-HAID:
-- 'ks-nodetypes\_0b3f5ef7-71a5-4144-a4e9-c30de4d57c53.xml'
-- 'stream.ksnodetype\_video\_camera\_terminal'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b083d9ba-2f76-4e4b-a29c-5cd20d914479
 ---
 

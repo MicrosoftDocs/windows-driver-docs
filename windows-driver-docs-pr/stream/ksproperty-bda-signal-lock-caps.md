@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_SIGNAL\_LOCK\_CAPS
 description: Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCK\_CAPS to determine the lock types that the driver can support for a signal.
-MS-HAID:
-- 'bdaref\_512787ff-fd67-4aa2-8b87-049ab445be7c.xml'
-- 'stream.ksproperty\_bda\_signal\_lock\_caps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 753f1a3c-5308-49a6-96ee-f7d0090f021a
 keywords: ["KSPROPERTY_BDA_SIGNAL_LOCK_CAPS Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_TUNER\_CAPS
 description: The KSPROPERTY\_TUNER\_CAPS property describes the basic capabilities of a tuner. This property must be implemented.
-MS-HAID:
-- 'vidcapprop\_c452e534-6a32-43d6-9199-e5c37b01a823.xml'
-- 'stream.ksproperty\_tuner\_caps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 70255053-d241-44ca-ba24-cfc442629ab3
 keywords: ["KSPROPERTY_TUNER_CAPS Streaming Media Devices"]
 topic_type:

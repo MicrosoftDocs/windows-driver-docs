@@ -1,12 +1,6 @@
 ---
 title: KS\_AM\_RATE\_MaxFullDataRate
 description: The KS\_AM\_RATE\_MaxFullDataRate property retrieves the maximum, full data rate, multiplied by 10000 (decimal).
-MS-HAID:
-- 'dvdref\_7eaed7bc-c510-4d14-a9f0-9c7d2a543afa.xml'
-- 'stream.ks\_am\_rate\_maxfulldatarate'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2a331ecd-0b40-4dd9-90f0-7585cd36c41e
 keywords: ["KS_AM_RATE_MaxFullDataRate Streaming Media Devices"]
 topic_type:

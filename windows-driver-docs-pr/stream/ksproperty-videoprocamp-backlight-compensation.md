@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOPROCAMP\_BACKLIGHT\_COMPENSATION
 description: The KSPROPERTY\_VIDEOPROCAMP\_BACKLIGHT\_COMPENSATION property controls the back-light compensation setting on the camera. This property is optional.
-MS-HAID:
-- 'vidcapprop\_44e7f977-4f3d-472e-a923-e63f1c813f2c.xml'
-- 'stream.ksproperty\_videoprocamp\_backlight\_compensation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d893fc01-048a-4f2e-8587-d71be0796dcc
 keywords: ["KSPROPERTY_VIDEOPROCAMP_BACKLIGHT_COMPENSATION Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_RF\_TUNER\_RANGE
 description: Clients use KSPROPERTY\_BDA\_RF\_TUNER\_RANGE to control the tuner range, that is, the domain on which to find a particular carrier frequency.
-MS-HAID:
-- 'bdaref\_d4193e44-aa56-489a-8660-9ba469015550.xml'
-- 'stream.ksproperty\_bda\_rf\_tuner\_range'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2f2aa515-3f3c-419f-a817-0d597466ec85
 keywords: ["KSPROPERTY_BDA_RF_TUNER_RANGE Streaming Media Devices"]
 topic_type:

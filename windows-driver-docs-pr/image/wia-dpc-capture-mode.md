@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_CAPTURE\_MODE
 description: The WIA\_DPC\_CAPTURE\_MODE property sets the image capture mode.
-MS-HAID:
-- 'WIA\_PropTable\_337e54d1-039a-4153-b194-6a5e16d3a75b.xml'
-- 'image.wia\_dpc\_capture\_mode'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 32d117ac-fa20-49cc-a34e-31a1be88804e
 keywords: ["WIA_DPC_CAPTURE_MODE Imaging Devices"]
 topic_type:

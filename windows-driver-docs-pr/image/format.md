@@ -1,12 +1,6 @@
 ---
 title: Format element
 description: The optional Format element indicates a single file format and compression type supported by the scanner.
-MS-HAID:
-- 'wsdss\_doc\_53282201-0e9c-4421-b90d-e8222c0c4592.xml'
-- 'image.format'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: aa15607b-780b-48cb-b63f-b16476f69f70
 keywords: ["Format element Imaging Devices"]
 topic_type:

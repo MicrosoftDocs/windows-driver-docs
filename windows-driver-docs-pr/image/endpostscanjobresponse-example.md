@@ -1,12 +1,6 @@
 ---
 title: EndPostScanJobResponse Example
 description: EndPostScanJobResponse Example
-MS-HAID:
-- 'dsm\_ref\_dsp\_07305bfc-18a8-4d6f-b3da-5b610a68a600.xml'
-- 'image.endpostscanjobresponse\_example'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 698afa58-bbe0-4c65-88cc-ed42256e23ec
 keywords: ["EndPostScanJobResponse Example"]
 ---

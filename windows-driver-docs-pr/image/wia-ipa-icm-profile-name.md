@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPA\_ICM\_PROFILE\_NAME
 description: The WIA\_IPA\_ICM\_PROFILE\_NAME property contains the image color management (ICM) profile name that is needed to properly decode an image.
-MS-HAID:
-- 'WIA\_PropTable\_2a011d22-29a1-4634-b902-8f772ee8cafd.xml'
-- 'image.wia\_ipa\_icm\_profile\_name'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bf4874d9-1f08-4aec-8ee3-2a6a11d63956
 keywords: ["WIA_IPA_ICM_PROFILE_NAME Imaging Devices"]
 topic_type:

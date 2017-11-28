@@ -1,12 +1,6 @@
 ---
 title: InputSource element
 description: The optional InputSource element specifies the source of the original document on the scanning device.
-MS-HAID:
-- 'wsdss\_doc\_40225c5b-e332-4fc0-8366-56a5cb8011e4.xml'
-- 'image.inputsource'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a49ed5d8-6d49-4997-9704-de1cd6c7d0c7
 keywords: ["InputSource element Imaging Devices"]
 topic_type:

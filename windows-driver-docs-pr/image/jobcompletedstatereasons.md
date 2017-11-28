@@ -1,12 +1,6 @@
 ---
 title: JobCompletedStateReasons element
 description: The required JobCompletedStateReasons element is a collection of all additional information about how and why a scan job completed.
-MS-HAID:
-- 'wsdss\_events\_fca889e9-8c74-4f8d-a6ac-9bff915dde29.xml'
-- 'image.jobcompletedstatereasons'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 678384b4-a023-4c79-a68a-4a2cc3a04a0e
 keywords: ["JobCompletedStateReasons element Imaging Devices"]
 topic_type:

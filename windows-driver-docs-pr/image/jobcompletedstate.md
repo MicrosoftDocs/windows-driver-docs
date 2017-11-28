@@ -1,12 +1,6 @@
 ---
 title: JobCompletedState element
 description: The required JobCompletedState element specifies a job's final job state.
-MS-HAID:
-- 'wsdss\_events\_6281f47f-2401-4cec-8838-c96c5bb97b0a.xml'
-- 'image.jobcompletedstate'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 41dc029b-2315-465a-8490-1f4e50db0188
 keywords: ["JobCompletedState element Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: SRB\_CLOSE\_STREAM
 description: SRB\_CLOSE\_STREAM
-MS-HAID:
-- 'strclass-srbs\_4d21be22-30ee-423d-8e7b-b25331be3e96.xml'
-- 'stream.srb\_close\_stream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e118ddd7-fe0e-4834-9ae6-19eef0348b2c
 keywords: ["SRB_CLOSE_STREAM Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: button element
 description: The required button element specifies the characteristics of a button in a message box that is displayed on the client computer.
-MS-HAID:
-- 'async\_98d00b04-c03b-4439-88ae-cad14f709dc1.xml'
-- 'print.button'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3e210599-9412-4eea-a024-338e39852199
 keywords: ["button element Print Devices"]
 topic_type:

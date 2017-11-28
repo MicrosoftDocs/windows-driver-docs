@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_STREAM\_DEGRADATION
 description: The KSPROPERTY\_STREAM\_DEGRADATION property is an optional property that should be implemented if the pin allows degradation strategies.
-MS-HAID:
-- 'ks-prop\_32f2f0e8-71f2-461f-b73d-ebe5e1906cce.xml'
-- 'stream.ksproperty\_stream\_degradation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b8f9db81-a9ed-4a13-8d64-14854193c91b
 keywords: ["KSPROPERTY_STREAM_DEGRADATION Streaming Media Devices"]
 topic_type:

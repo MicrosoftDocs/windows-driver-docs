@@ -1,12 +1,6 @@
 ---
 title: GetJobElementsRequest element
 description: The required GetJobElementsRequest element requests information that is related to the job that the JobId element identifies.
-MS-HAID:
-- 'wsdss\_ops\_60b7bca4-d78a-42c6-981e-bab2cecb9d3d.xml'
-- 'image.getjobelementsrequest'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ba8260f4-300f-447e-ad62-d2e4fa2811ef
 keywords: ["GetJobElementsRequest element Imaging Devices"]
 topic_type:

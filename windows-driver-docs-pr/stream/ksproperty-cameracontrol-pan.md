@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_PAN
 description: User-mode clients use the KSPROPERTY\_CAMERACONTROL\_PAN property to get or set a camera's pan setting. This property is optional.
-MS-HAID:
-- 'vidcapprop\_f1dde948-af2f-4ff4-8cc2-e88f267e9362.xml'
-- 'stream.ksproperty\_cameracontrol\_pan'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 765eecbf-ecde-4268-9ab5-c0c099c06d2f
 keywords: ["KSPROPERTY_CAMERACONTROL_PAN Streaming Media Devices"]
 topic_type:

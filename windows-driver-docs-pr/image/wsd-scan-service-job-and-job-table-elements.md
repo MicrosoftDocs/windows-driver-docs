@@ -1,12 +1,6 @@
 ---
 title: WSD Scan Service Job and Job Table Elements
 description: WSD Scan Service Job and Job Table Elements
-MS-HAID:
-- 'wsdss\_job\_ab62fbae-aeb2-492d-b098-e168191282f3.xml'
-- 'image.wsd\_scan\_service\_job\_and\_job\_table\_elements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3a20c0d9-4ed7-438f-9dcc-f5adc8ac7b18
 ---
 

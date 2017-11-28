@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_VramCapture
 description: KSPROPSETID\_VramCapture
-MS-HAID:
-- 'ks-prop\_d205a3f1-cf77-4d09-a858-0e3d8f53dd80.xml'
-- 'stream.kspropsetid\_vramcapture'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 369bb258-5335-42f7-bd2f-7bfc9848e7f0
 ---
 

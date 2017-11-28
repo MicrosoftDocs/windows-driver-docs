@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOPROCAMP\_WHITEBALANCE\_COMPONENT
 description: The KSPROPERTY\_VIDEOPROCAMP\_WHITEBALANCE\_COMPONENT property specifies the white balance setting in blue and red values for video formats.
-MS-HAID:
-- 'vidcapprop\_7cf90e8f-e05d-4fc7-bce2-b5a7792b3a54.xml'
-- 'stream.ksproperty\_videoprocamp\_whitebalance\_component'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ed5faffa-7e31-47ac-bf11-2201d616c6aa
 keywords: ["KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE_COMPONENT Streaming Media Devices"]
 topic_type:

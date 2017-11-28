@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPA\_TYMED
 description: The WIA\_IPA\_TYMED property contains the method setting for image transfer . The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_0047dbca-136c-47e0-a897-28a699b89238.xml'
-- 'image.wia\_ipa\_tymed'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3490f4b8-a1ed-4ab3-b621-ed87ce8ae9ea
 keywords: ["WIA_IPA_TYMED Imaging Devices"]
 topic_type:

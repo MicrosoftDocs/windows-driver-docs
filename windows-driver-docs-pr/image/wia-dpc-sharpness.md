@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_SHARPNESS
 description: The WIA\_DPC\_SHARPNESS property indicates the perceived sharpness of a captured image.
-MS-HAID:
-- 'WIA\_PropTable\_1e850a52-b377-407f-b26e-e072b0e1665d.xml'
-- 'image.wia\_dpc\_sharpness'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6fb78506-f4fe-481c-b1ea-0f4fedcdca1a
 keywords: ["WIA_DPC_SHARPNESS Imaging Devices"]
 topic_type:

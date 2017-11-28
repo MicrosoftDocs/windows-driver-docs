@@ -1,12 +1,6 @@
 ---
 title: SRB\_SURPRISE\_REMOVAL
 description: SRB\_SURPRISE\_REMOVAL
-MS-HAID:
-- 'strclass-srbs\_5399e49a-a427-4fdf-98ba-4e362e8b7909.xml'
-- 'stream.srb\_surprise\_removal'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 81509ddb-0d9a-4f42-b38d-fe8836727b4b
 ---
 

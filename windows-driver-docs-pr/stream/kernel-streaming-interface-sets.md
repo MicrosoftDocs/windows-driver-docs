@@ -1,12 +1,6 @@
 ---
 title: Kernel Streaming Interface Sets
 description: Kernel Streaming Interface Sets
-MS-HAID:
-- 'ks-interfaces\_888911dd-d694-4a58-8e74-8951057056e5.xml'
-- 'stream.kernel\_streaming\_interface\_sets'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7fb6b137-0e28-4034-8e89-7301f3d2bbba
 ---
 

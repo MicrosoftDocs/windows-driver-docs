@@ -1,12 +1,6 @@
 ---
 title: ScannerElementsChangeEvent element
 description: The required ScannerElementsChangeEvent element informs the client that a change has occurred in the scanner.
-MS-HAID:
-- 'wsdss\_events\_f32a2dc2-8ca2-40c7-bf38-1c443455a4a4.xml'
-- 'image.scannerelementschangeevent'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5a3eb934-631d-432b-befa-c67360fe68d1
 keywords: ["ScannerElementsChangeEvent element Imaging Devices"]
 topic_type:

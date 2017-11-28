@@ -1,12 +1,6 @@
 ---
 title: KSEVENTSETID\_BdaPinEvent
 description: KSEVENTSETID\_BdaPinEvent
-MS-HAID:
-- 'bdaref\_dd178014-72e2-4227-86b6-8b02780b554a.xml'
-- 'stream.kseventsetid\_bdapinevent'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f81b9973-f4ae-4b39-a4e1-bbaff21c5d41
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_COPYRIGHT\_INFO
 description: The WIA\_DPC\_COPYRIGHT\_INFO property contains the copyright notification.
-MS-HAID:
-- 'WIA\_PropTable\_3842fa2e-d457-4bc5-b27d-35659eae75e6.xml'
-- 'image.wia\_dpc\_copyright\_info'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6945f121-46db-4287-a31a-80c26bd852da
 keywords: ["WIA_DPC_COPYRIGHT_INFO Imaging Devices"]
 topic_type:

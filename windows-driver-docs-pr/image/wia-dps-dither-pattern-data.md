@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_DITHER\_PATTERN\_DATA
 description: The WIA\_DPS\_DITHER\_PATTERN\_DATA property is reserved by Microsoft for future use and is not implemented at this time.
-MS-HAID:
-- 'WIA\_PropTable\_af6e7aae-0a28-4a60-b945-df4411a19b86.xml'
-- 'image.wia\_dps\_dither\_pattern\_data'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 740d1581-e756-4a27-bac7-52804dad2cb6
 keywords: ["WIA_DPS_DITHER_PATTERN_DATA Imaging Devices"]
 topic_type:

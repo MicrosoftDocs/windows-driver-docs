@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPA\_COMPRESSION
 description: The WIA\_IPA\_COMPRESSION property contains the current compression type that is used. The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_30734460-8d20-4f69-900e-0897af8e4ec3.xml'
-- 'image.wia\_ipa\_compression'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6853dc51-bde0-4548-92f6-678b55cf6275
 keywords: ["WIA_IPA_COMPRESSION Imaging Devices"]
 topic_type:

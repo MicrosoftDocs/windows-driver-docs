@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_EXTDEVICE\_PORT
 description: The KSPROPERTY\_EXTDEVICE\_PORT property retrieves an external device's port type.
-MS-HAID:
-- 'vidcapprop\_5035f559-82a3-4a2c-83c8-23758262cfb6.xml'
-- 'stream.ksproperty\_extdevice\_port'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7513c37f-0c93-4078-ba85-cbc98304880f
 keywords: ["KSPROPERTY_EXTDEVICE_PORT Streaming Media Devices"]
 topic_type:

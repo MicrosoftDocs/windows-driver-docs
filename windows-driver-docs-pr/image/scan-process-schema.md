@@ -1,12 +1,6 @@
 ---
 title: Scan Process Schema
 description: Scan Process Schema
-MS-HAID:
-- 'dsm\_ref\_dsp\_30bdb507-fd92-464e-ab45-293f3e3f3743.xml'
-- 'image.scan\_process\_schema'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0ce2eaef-86bf-4981-98fd-e1a19f949d23
 keywords: ["Scan Process Schema"]
 ---

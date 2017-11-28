@@ -1,12 +1,6 @@
 ---
 title: SRB\_PROPOSE\_STREAM\_RATE
 description: SRB\_PROPOSE\_STREAM\_RATE
-MS-HAID:
-- 'strclass-srbs\_3bde7b3d-35d9-4829-bcc9-e4489eb0b5e3.xml'
-- 'stream.srb\_propose\_stream\_rate'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2077ecb5-6b85-4a51-9a53-cece3695d75e
 keywords: ["SRB_PROPOSE_STREAM_RATE Streaming Media Devices"]
 topic_type:

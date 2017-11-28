@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_RF\_TUNER\_POLARITY
 description: Clients use KSPROPERTY\_BDA\_RF\_TUNER\_POLARITY to control the polarity setting of the tuner node.
-MS-HAID:
-- 'bdaref\_8026048a-292a-4ef2-a1ee-9cc8c6e0150d.xml'
-- 'stream.ksproperty\_bda\_rf\_tuner\_polarity'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6778b4ac-2444-4e27-ab80-5802dda09fdd
 keywords: ["KSPROPERTY_BDA_RF_TUNER_POLARITY Streaming Media Devices"]
 topic_type:

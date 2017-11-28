@@ -1,12 +1,6 @@
 ---
 title: MinValue element
 description: The required MinValue element specifies the minimum value that the scan device supports for scanner configuration elements that require a range of values.
-MS-HAID:
-- 'wsdss\_configure\_d10c01f2-18dd-430b-8fee-c9e93cfbf612.xml'
-- 'image.minvalue'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ea20d077-bf2d-42a1-8dba-69e8aaf2881c
 keywords: ["MinValue element Imaging Devices"]
 topic_type:

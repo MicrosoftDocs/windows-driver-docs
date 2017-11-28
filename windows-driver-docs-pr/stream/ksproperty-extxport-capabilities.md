@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_EXTXPORT\_CAPABILITIES
 description: The KSPROPERTY\_EXTXPORT\_CAPABILITIES property retrieves an external device's transport-specific capabilities.
-MS-HAID:
-- 'vidcapprop\_20370f29-4036-43b1-811c-490c0d57b6ce.xml'
-- 'stream.ksproperty\_extxport\_capabilities'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5394d05c-0c3e-4413-a61e-21445117a350
 keywords: ["KSPROPERTY_EXTXPORT_CAPABILITIES Streaming Media Devices"]
 topic_type:

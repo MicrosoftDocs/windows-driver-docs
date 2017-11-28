@@ -1,12 +1,6 @@
 ---
 title: requestClose element
 description: The optional requestClose element is used to close an event notification message on the client computer.
-MS-HAID:
-- 'async\_d6f19c7d-82d4-4621-9b5d-6737679c3def.xml'
-- 'print.requestclose'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b2f21ab2-9205-483c-9f56-1c877edb7da2
 keywords: ["requestClose element Print Devices"]
 topic_type:

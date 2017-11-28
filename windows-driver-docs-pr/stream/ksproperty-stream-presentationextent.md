@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_STREAM\_PRESENTATIONEXTENT
 description: The clients sends a KSPROPERTY\_STREAM\_PRESENTATIONEXTENT request to query the stream extent.
-MS-HAID:
-- 'ks-prop\_133a67d1-ac83-4635-a5ae-79c2936d88ad.xml'
-- 'stream.ksproperty\_stream\_presentationextent'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 36b66035-f935-4264-8555-d949865d708e
 keywords: ["KSPROPERTY_STREAM_PRESENTATIONEXTENT Streaming Media Devices"]
 topic_type:

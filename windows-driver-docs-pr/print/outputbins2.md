@@ -1,12 +1,6 @@
 ---
 title: OutputBins
 description: OutputBins
-MS-HAID:
-- 'autocfg\_f5ca4776-23dd-4b59-a468-034b62444473.xml'
-- 'print.outputbins2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4b1cccd1-088d-4d03-b08d-dea023bb0065
 ---
 

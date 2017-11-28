@@ -1,12 +1,6 @@
 ---
 title: ADFBack element
 description: The optional ADFBack element describes the capabilities of the back side of a duplex automatic document feeder (ADF) that is attached to the scanner.
-MS-HAID:
-- 'wsdss\_adffilm\_4b6bb6c3-9708-48ae-85fc-102b499fca27.xml'
-- 'image.adfback'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f364c001-ec1a-4f8c-b25a-eaa5368ba05f
 keywords: ["ADFBack element Imaging Devices"]
 topic_type:

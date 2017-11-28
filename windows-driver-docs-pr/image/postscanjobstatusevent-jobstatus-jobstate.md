@@ -1,12 +1,6 @@
 ---
 title: PostScanJobStatusEvent.JobStatus.JobState
 description: PostScanJobStatusEvent.JobStatus.JobState
-MS-HAID:
-- 'dsm\_ref\_dsp\_857c70c4-0457-4114-9412-d6645326f6e7.xml'
-- 'image.postscanjobstatusevent\_jobstatus\_jobstate'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b87471eb-c7dc-4235-b9f9-1ce80760f967
 keywords: ["PostScanJobStatusEvent.JobStatus.JobState"]
 ---

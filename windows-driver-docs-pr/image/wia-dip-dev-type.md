@@ -1,12 +1,6 @@
 ---
 title: WIA\_DIP\_DEV\_TYPE
 description: The WIA\_DIP\_DEV\_TYPE property contains a device type and device subtype.
-MS-HAID:
-- 'WIA\_PropTable\_166d604c-9428-4821-ba5a-82f110d2db61.xml'
-- 'image.wia\_dip\_dev\_type'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 685c1cfa-cc3b-42e6-aef3-359ae7220715
 keywords: ["WIA_DIP_DEV_TYPE Imaging Devices"]
 topic_type:

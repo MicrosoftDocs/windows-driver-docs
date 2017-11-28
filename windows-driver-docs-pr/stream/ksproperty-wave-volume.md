@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_WAVE\_VOLUME
 description: The KSPROPERTY\_WAVE\_VOLUME property specifies a wave device's volume setting.
-MS-HAID:
-- 'dvdref\_9197b95d-4276-4492-a2d4-e36deeb6ecce.xml'
-- 'stream.ksproperty\_wave\_volume'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c5725f7d-b965-43f3-9c49-faff82d99580
 keywords: ["KSPROPERTY_WAVE_VOLUME Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: KSNODETYPE\_VIDEO\_PROCESSING
 description: KSNODETYPE\_VIDEO\_PROCESSING
-MS-HAID:
-- 'ks-nodetypes\_d16a3a01-d0a6-4570-8127-a4e99f1b5ee7.xml'
-- 'stream.ksnodetype\_video\_processing'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e297c6c0-e4ff-420c-b22c-5185e97e6a6f
 ---
 

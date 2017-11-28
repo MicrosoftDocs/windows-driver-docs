@@ -1,12 +1,6 @@
 ---
 title: PostScanJobEndStateEvent.PostScanJobEndState.PSP\_DisplayName
 description: PostScanJobEndStateEvent.PostScanJobEndState.PSP\_DisplayName
-MS-HAID:
-- 'dsm\_ref\_dsp\_f86022af-4942-417f-bf74-ea46e9cd834b.xml'
-- 'image.postscanjobendstateevent\_postscanjobendstate\_psp\_displayname'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9d4f1511-dc12-475d-ae4f-4f7a51303ed1
 keywords: ["PostScanJobEndStateEvent.PostScanJobEndState.PSP_DisplayName"]
 ---

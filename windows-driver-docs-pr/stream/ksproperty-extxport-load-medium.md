@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_EXTXPORT\_LOAD\_MEDIUM
 description: The KSPROPERTY\_EXTXPORT\_LOAD\_MEDIUM property sets or gets an external device's load medium. For example eject, open tray, close tray, etc.
-MS-HAID:
-- 'vidcapprop\_94d0b9b6-79aa-41cb-8af7-74592e9a4835.xml'
-- 'stream.ksproperty\_extxport\_load\_medium'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 13ec61ae-4be7-4af6-875f-a6ca178cf6bc
 keywords: ["KSPROPERTY_EXTXPORT_LOAD_MEDIUM Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: CreateScanJobRequest element
 description: The required CreateScanJobRequest operation prepares a scan device to scan.
-MS-HAID:
-- 'wsdss\_ops\_ba187e38-9aef-4dd7-b377-7e7d191cff74.xml'
-- 'image.createscanjobrequest'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ce3aafe2-71b0-4875-852a-f3ab78684329
 keywords: ["CreateScanJobRequest element Imaging Devices"]
 topic_type:

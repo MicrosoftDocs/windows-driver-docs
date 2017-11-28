@@ -1,12 +1,6 @@
 ---
 title: CODECAPI\_CHANGELISTS
 description: CODECAPI\_CHANGELISTS
-MS-HAID:
-- 'encoderef\_33724eeb-3ba9-4c03-b217-dc09a8720f44.xml'
-- 'stream.codecapi\_changelists'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c1b65350-32b9-4c94-a6d4-74cb9959d737
 ---
 

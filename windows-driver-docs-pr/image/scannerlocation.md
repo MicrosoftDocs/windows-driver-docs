@@ -1,12 +1,6 @@
 ---
 title: ScannerLocation element
 description: The optional ScannerLocation element specifies the administratively assigned location of the scanner.
-MS-HAID:
-- 'wsdss\_desc\_65519d84-bdef-4fa1-af02-6af193fe671c.xml'
-- 'image.scannerlocation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 564a468d-7a4a-49c6-921a-5d8825c783fb
 keywords: ["ScannerLocation element Imaging Devices"]
 topic_type:

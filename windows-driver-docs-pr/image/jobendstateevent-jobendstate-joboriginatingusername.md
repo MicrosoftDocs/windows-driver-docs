@@ -1,12 +1,6 @@
 ---
 title: JobEndStateEvent.JobEndState.JobOriginatingUserName
 description: JobEndStateEvent.JobEndState.JobOriginatingUserName
-MS-HAID:
-- 'dsm\_ref\_dsd\_4037cc30-a9aa-4103-b2ae-ab12156e25a8.xml'
-- 'image.jobendstateevent\_jobendstate\_joboriginatingusername'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b65c8e6b-3d4e-44b2-99fe-cb48b1b07bee
 keywords: ["JobEndStateEvent.JobEndState.JobOriginatingUserName"]
 ---

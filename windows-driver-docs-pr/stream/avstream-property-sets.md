@@ -1,12 +1,6 @@
 ---
 title: AVStream Property Sets
 description: AVStream Property Sets
-MS-HAID:
-- 'ks-prop\_7877fec8-a8c4-49c6-85c1-24277788bf0b.xml'
-- 'stream.avstream\_property\_sets'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 23c020e8-b778-4784-9dc0-21920557e1c1
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPS\_PAGE\_SIZE
 description: The WIA\_IPS\_PAGE\_SIZE property contains the size of the page that is currently selected to be scanned.
-MS-HAID:
-- 'WIA\_PropTable\_f66008ea-cd93-4b34-a27c-b46128126ddd.xml'
-- 'image.wia\_ips\_page\_size'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dcfad67e-31d5-41b8-b471-532626f571af
 keywords: ["WIA_IPS_PAGE_SIZE Imaging Devices"]
 topic_type:

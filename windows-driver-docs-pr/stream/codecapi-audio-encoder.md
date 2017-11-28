@@ -1,12 +1,6 @@
 ---
 title: CODECAPI\_AUDIO\_ENCODER
 description: CODECAPI\_AUDIO\_ENCODER
-MS-HAID:
-- 'encoderef\_5564f9cb-0236-4210-8737-670272d91b28.xml'
-- 'stream.codecapi\_audio\_encoder'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c66cbbe1-36dc-4088-8ecd-7663d4503d6e
 ---
 

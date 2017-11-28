@@ -1,12 +1,6 @@
 ---
 title: Orientation
 description: Orientation
-MS-HAID:
-- 'autocfg\_d984ee6a-7ec2-452b-837c-53133c00b94f.xml'
-- 'print.orientation2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a3bd9d67-200f-4739-ad0e-ff7fd2eb20a3
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: FormatsSupported element
 description: The required FormatsSupported element is a collection of elements that list the document file formats that the scanner supports.
-MS-HAID:
-- 'wsdss\_configure\_001ad476-14e4-45ca-8ed1-5d5b7b9c007d.xml'
-- 'image.formatssupported'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bb4b6630-f865-4ec7-b7d1-8be424eea345
 keywords: ["FormatsSupported element Imaging Devices"]
 topic_type:

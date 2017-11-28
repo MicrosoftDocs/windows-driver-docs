@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_COPY\_MACROVISION
 description: The KSPROPERTY\_COPY\_MACROVISION property indicates the Macrovision level of the data stream.
-MS-HAID:
-- 'dvdref\_896707f3-c09b-4f50-8c4c-39fb15ac4d37.xml'
-- 'stream.ksproperty\_copy\_macrovision'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6863bcf6-06bc-4bd2-896e-43c083aa07d5
 keywords: ["KSPROPERTY_COPY_MACROVISION Streaming Media Devices"]
 topic_type:

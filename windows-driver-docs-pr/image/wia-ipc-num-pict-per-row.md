@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPC\_NUM\_PICT\_PER\_ROW
 description: The WIA\_IPC\_NUM\_PICT\_PER\_ROW property is reserved by Microsoft for future use and is not implemented at this time.
-MS-HAID:
-- 'WIA\_PropTable\_967beba4-f546-4c93-bc03-c0c7863123f4.xml'
-- 'image.wia\_ipc\_num\_pict\_per\_row'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 56cce580-ea96-4354-8972-d41b93c511fc
 keywords: ["WIA_IPC_NUM_PICT_PER_ROW Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_TIMELAPSE\_NUMBER
 description: The WIA\_DPC\_TIMELAPSE\_NUMBER property contains the number of images that the device attempts to capture during a time-lapse capture.
-MS-HAID:
-- 'WIA\_PropTable\_4f63c9e3-145b-4b87-b8b7-e066c7d1a1e0.xml'
-- 'image.wia\_dpc\_timelapse\_number'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1a6fc4f0-d304-4fd3-871c-e72d75068581
 keywords: ["WIA_DPC_TIMELAPSE_NUMBER Imaging Devices"]
 topic_type:

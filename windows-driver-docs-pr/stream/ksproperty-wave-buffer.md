@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_WAVE\_BUFFER
 description: The KSPROPERTY\_WAVE\_BUFFER property describes a wave device's buffer.
-MS-HAID:
-- 'dvdref\_f4870d50-71b2-49b8-9513-a8edf1754766.xml'
-- 'stream.ksproperty\_wave\_buffer'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b2ef458a-a701-4403-875b-1b06164c80a1
 keywords: ["KSPROPERTY_WAVE_BUFFER Streaming Media Devices"]
 topic_type:

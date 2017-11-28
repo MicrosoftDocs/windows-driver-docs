@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOPROCAMP\_BRIGHTNESS
 description: The KSPROPERTY\_VIDEOPROCAMP\_BRIGHTNESS property controls the brightness setting. This property is optional.
-MS-HAID:
-- 'vidcapprop\_2b59e13a-73c1-46e9-bf7a-b8da406928b2.xml'
-- 'stream.ksproperty\_videoprocamp\_brightness'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8b099ff1-e64a-4723-9834-8a42450bebd4
 keywords: ["KSPROPERTY_VIDEOPROCAMP_BRIGHTNESS Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: FilmScanModeValue element
 description: The required FilmScanModeValue element identifies a specific film exposure type that the film scanning option supports.
-MS-HAID:
-- 'wsdss\_adffilm\_9634667f-8177-4d06-b8c6-7a8d680d981f.xml'
-- 'image.filmscanmodevalue'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 62d72190-f1c5-4b2f-af6a-a3c530cc51ed
 keywords: ["FilmScanModeValue element Imaging Devices"]
 topic_type:

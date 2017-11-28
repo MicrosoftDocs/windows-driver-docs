@@ -1,12 +1,6 @@
 ---
 title: AVC\_FUNCTION\_SET\_CONNECTINFO
 description: AVC\_FUNCTION\_SET\_CONNECTINFO
-MS-HAID:
-- 'avcref\_d0d02645-ad3f-4118-be53-a135e5fcbfbf.xml'
-- 'stream.avc\_function\_set\_connectinfo'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e97b525a-2236-44a9-9d49-dc0df760f21e
 keywords: ["AVC_FUNCTION_SET_CONNECTINFO Streaming Media Devices"]
 topic_type:

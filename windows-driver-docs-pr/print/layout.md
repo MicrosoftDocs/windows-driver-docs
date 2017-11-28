@@ -1,12 +1,6 @@
 ---
 title: Layout
 description: Layout
-MS-HAID:
-- 'autocfg\_4775c8f7-ae41-4cf0-b86c-6e68bade478b.xml'
-- 'print.layout'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 649268ab-582a-4a9a-9f1e-669af321e6c6
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: ScannerInfo element
 description: The optional ScannerInfo element contains any administratively assigned descriptive information about the scanner.
-MS-HAID:
-- 'wsdss\_desc\_8d3c18c3-b1b2-48ad-8bc4-24063912e43f.xml'
-- 'image.scannerinfo'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 41d31209-8269-42ef-99f2-83818eb06f6b
 keywords: ["ScannerInfo element Imaging Devices"]
 topic_type:

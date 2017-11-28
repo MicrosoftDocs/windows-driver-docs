@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_TUNER\_MODE
 description: User-mode clients use the KSPROPERTY\_TUNER\_MODE property to get or set the tuning mode of a device, such as analog TV, digital TV, FM, AM, or DSS. This property must be implemented.
-MS-HAID:
-- 'vidcapprop\_485916b8-a9d3-4af2-9c0d-74c0c9b14577.xml'
-- 'stream.ksproperty\_tuner\_mode'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 84df4030-3836-48de-be83-ecd749839081
 keywords: ["KSPROPERTY_TUNER_MODE Streaming Media Devices"]
 topic_type:

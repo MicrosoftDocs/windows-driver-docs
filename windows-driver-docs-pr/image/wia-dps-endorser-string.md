@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_ENDORSER\_STRING
 description: The WIA\_DPS\_ENDORSER\_STRING property contains a string that is to be endorsed (that is, printed) on each page that the minidriver scans.
-MS-HAID:
-- 'WIA\_PropTable\_cb0df122-05a2-4059-ae4b-675eb77fd050.xml'
-- 'image.wia\_dps\_endorser\_string'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c51a2941-9101-4749-8fa7-b9f3bbcb0803
 keywords: ["WIA_DPS_ENDORSER_STRING Imaging Devices"]
 topic_type:

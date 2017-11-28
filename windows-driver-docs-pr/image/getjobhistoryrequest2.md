@@ -1,12 +1,6 @@
 ---
 title: GetJobHistoryRequest
 description: GetJobHistoryRequest
-MS-HAID:
-- 'dsm\_ref\_dsd\_2e7e6efe-88ce-4af2-ab33-949118e66cd5.xml'
-- 'image.getjobhistoryrequest2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3f921cc5-83d8-4f73-b28d-f1f93ab2c888
 keywords: ["GetJobHistoryRequest"]
 ---

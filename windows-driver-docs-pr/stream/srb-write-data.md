@@ -1,12 +1,6 @@
 ---
 title: SRB\_WRITE\_DATA
 description: SRB\_WRITE\_DATA
-MS-HAID:
-- 'strclass-srbs\_b614b473-a416-41ff-ada6-b371bd735291.xml'
-- 'stream.srb\_write\_data'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f7867185-3f1b-4c83-b23a-5b2b4ce6e484
 keywords: ["SRB_WRITE_DATA Streaming Media Devices"]
 topic_type:

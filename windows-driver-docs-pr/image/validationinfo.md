@@ -1,12 +1,6 @@
 ---
 title: ValidationInfo element
 description: The required ValidationInfo element contains all ScanTicket validation information in response to a client's ValidateScanTicketRequest.
-MS-HAID:
-- 'wsdss\_ops\_434ff7b9-187a-45a5-9181-11db0c15a155.xml'
-- 'image.validationinfo'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c727cbd7-6da0-4750-b36e-3b65e56015fa
 keywords: ["ValidationInfo element Imaging Devices"]
 topic_type:

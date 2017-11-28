@@ -1,12 +1,6 @@
 ---
 title: SRB\_GET\_DATA\_INTERSECTION
 description: SRB\_GET\_DATA\_INTERSECTION
-MS-HAID:
-- 'strclass-srbs\_d4e5bbec-8405-44f6-b2e4-90160c910029.xml'
-- 'stream.srb\_get\_data\_intersection'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 67100c7f-dbca-4f75-b884-52e25a666190
 keywords: ["SRB_GET_DATA_INTERSECTION Streaming Media Devices"]
 topic_type:

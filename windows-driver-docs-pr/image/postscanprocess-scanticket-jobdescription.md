@@ -1,12 +1,6 @@
 ---
 title: PostScanProcess.ScanTicket.JobDescription
 description: PostScanProcess.ScanTicket.JobDescription
-MS-HAID:
-- 'dsm\_ref\_dsp\_41529b60-0926-47d8-96ce-3aa3f75edab6.xml'
-- 'image.postscanprocess\_scanticket\_jobdescription'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 986a106a-463c-40c0-ae22-336fe1ad60ce
 keywords: ["PostScanProcess.ScanTicket.JobDescription"]
 ---

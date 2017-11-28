@@ -1,12 +1,6 @@
 ---
 title: GetActiveJobs
 description: GetActiveJobs
-MS-HAID:
-- 'dsm\_ref\_dsd\_f4de0959-d3be-4310-8864-c785743745b1.xml'
-- 'image.getactivejobs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 316ccbbd-fb16-400d-a5ad-65bd9648fdb8
 keywords: ["GetActiveJobs"]
 ---

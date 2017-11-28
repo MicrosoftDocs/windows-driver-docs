@@ -1,12 +1,6 @@
 ---
 title: \ TrayName\
 description: \ TrayName\
-MS-HAID:
-- 'autocfg\_da4a9717-e050-47a4-96d8-ca86d6e65af0.xml'
-- 'print.\_trayname\_2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: efdb5ecb-3abc-4dfd-8087-7f4f3a938cf2
 ---
 

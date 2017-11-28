@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_Stream
 description: KSPROPSETID\_Stream
-MS-HAID:
-- 'ks-prop\_a21ff2f7-680d-47da-b529-8cb795d01693.xml'
-- 'stream.kspropsetid\_stream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 68bfe15c-9be0-412e-a0d0-c2af13982377
 ---
 

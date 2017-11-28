@@ -1,12 +1,6 @@
 ---
 title: ScannerStatus element
 description: The required ScannerStatus element contains the current status of the scanner-related information that automata (such as time and changing conditions in the scanner) control.
-MS-HAID:
-- 'wsdss\_status\_6fa8c28d-a912-4e29-81d2-bb882a7c5696.xml'
-- 'image.scannerstatus'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 39a1bbc1-acee-4ac8-8b14-35a3be5076ae
 keywords: ["ScannerStatus element Imaging Devices"]
 topic_type:

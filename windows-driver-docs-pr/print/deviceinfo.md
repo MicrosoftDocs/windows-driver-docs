@@ -1,12 +1,6 @@
 ---
 title: DeviceInfo
 description: DeviceInfo
-MS-HAID:
-- 'autocfg\_d2aea7d8-905e-4143-a13a-1f5516802932.xml'
-- 'print.deviceinfo'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: be2ee9e7-bd94-4f96-8d93-3b6f5fd9350e
 ---
 

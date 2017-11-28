@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_TEMPLATE\_CONNECTIONS
 description: Clients use KSPROPERTY\_BDA\_TEMPLATE\_CONNECTIONS to retrieve a list of connections between pins and nodes in a template topology.
-MS-HAID:
-- 'bdaref\_acc9ada3-bb76-4860-ba3e-935a784907ee.xml'
-- 'stream.ksproperty\_bda\_template\_connections'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 59268751-34fd-4291-bf36-45a435a4ccf2
 keywords: ["KSPROPERTY_BDA_TEMPLATE_CONNECTIONS Streaming Media Devices"]
 topic_type:

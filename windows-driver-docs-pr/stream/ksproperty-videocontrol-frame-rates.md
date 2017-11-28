@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOCONTROL\_FRAME\_RATES
 description: The KSPROPERTY\_VIDEOCONTROL\_FRAME\_RATES property enumerates the available frame rates. This property is optional.
-MS-HAID:
-- 'vidcapprop\_51a3e350-f53a-40fd-9f7e-e1aff844c938.xml'
-- 'stream.ksproperty\_videocontrol\_frame\_rates'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f2b6fabc-c03b-4fa5-9e5b-43d7a1c26578
 keywords: ["KSPROPERTY_VIDEOCONTROL_FRAME_RATES Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: Broadcast Driver Architecture Constants
 description: Broadcast Driver Architecture Constants
-MS-HAID:
-- 'bdaref\_144c5d73-7b7d-4374-9447-b0816304659f.xml'
-- 'stream.broadcast\_driver\_architecture\_constants'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bc97d6f7-1fdc-462d-8d14-af8dc3976ee1
 ---
 

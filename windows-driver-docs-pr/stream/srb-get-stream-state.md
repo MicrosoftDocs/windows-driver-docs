@@ -1,12 +1,6 @@
 ---
 title: SRB\_GET\_STREAM\_STATE
 description: SRB\_GET\_STREAM\_STATE
-MS-HAID:
-- 'strclass-srbs\_b9aa76af-2452-40a6-b5c2-3dff5ee8bc5c.xml'
-- 'stream.srb\_get\_stream\_state'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ea868e5e-0724-4064-bccb-85d5b6e93d89
 ---
 

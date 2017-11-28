@@ -1,12 +1,6 @@
 ---
 title: ScannerStatusConditionClearedEvent element
 description: The required ScannerStatusConditionClearedEvent element informs the client that a previously reported DeviceCondition condition has been cleared at the scanner.
-MS-HAID:
-- 'wsdss\_events\_89fc0bb2-af17-4ac2-b16d-e336f47a5d04.xml'
-- 'image.scannerstatusconditionclearedevent'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c849caba-d77b-441b-a5e1-94f9285cef3f
 keywords: ["ScannerStatusConditionClearedEvent element Imaging Devices"]
 topic_type:

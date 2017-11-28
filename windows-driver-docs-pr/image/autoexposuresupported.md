@@ -1,12 +1,6 @@
 ---
 title: AutoExposureSupported element
 description: The required AutoExposureSupported element specifies whether the scan device supports automatic adjustment of the various exposure settings.
-MS-HAID:
-- 'wsdss\_configure\_31ba967f-5a4f-4b28-9993-dba02e70c013.xml'
-- 'image.autoexposuresupported'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 36ef003f-b049-4eb2-8fe3-53aa77db3065
 keywords: ["AutoExposureSupported element Imaging Devices"]
 topic_type:

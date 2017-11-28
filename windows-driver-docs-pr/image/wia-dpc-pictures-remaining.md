@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_PICTURES\_REMAINING
 description: The WIA\_DPC\_PICTURES\_REMAINING property contains the number of pictures that a user can take by using a camera device, given the current property settings. The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_fd8a60bb-2c7b-4590-ac87-6e03678dd3d1.xml'
-- 'image.wia\_dpc\_pictures\_remaining'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ac6cd3e0-c6fe-4783-8094-67083e308308
 keywords: ["WIA_DPC_PICTURES_REMAINING Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: SRB\_CHANGE\_POWER\_STATE
 description: SRB\_CHANGE\_POWER\_STATE
-MS-HAID:
-- 'strclass-srbs\_0d1e01b6-9f78-489b-848f-71de4f65d02d.xml'
-- 'stream.srb\_change\_power\_state'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 61a3e390-1ba2-44e0-b364-e86b10937cd6
 keywords: ["SRB_CHANGE_POWER_STATE Streaming Media Devices"]
 topic_type:

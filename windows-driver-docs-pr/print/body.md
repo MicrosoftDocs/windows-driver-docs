@@ -1,12 +1,6 @@
 ---
 title: body element
 description: The required body element provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event.
-MS-HAID:
-- 'async\_046f17aa-ace2-4c2b-85fd-a42e63c17f5f.xml'
-- 'print.body'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3343c272-5090-4b60-ab04-08038d2583ff
 keywords: ["body element Print Devices"]
 topic_type:

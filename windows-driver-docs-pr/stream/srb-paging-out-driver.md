@@ -1,12 +1,6 @@
 ---
 title: SRB\_PAGING\_OUT\_DRIVER
 description: SRB\_PAGING\_OUT\_DRIVER
-MS-HAID:
-- 'strclass-srbs\_327570df-0516-476e-95b2-23df0f9a1adb.xml'
-- 'stream.srb\_paging\_out\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9bcb9f07-6fea-427b-9ae8-afdc6aec540f
 keywords: ["SRB_PAGING_OUT_DRIVER Streaming Media Devices"]
 topic_type:

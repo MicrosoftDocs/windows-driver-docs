@@ -1,12 +1,6 @@
 ---
 title: AV/C Streaming Format GUIDs
 description: AV/C Streaming Format GUIDs
-MS-HAID:
-- 'avcsref\_d377b04d-5ebe-4225-93ae-33acb5039e0c.xml'
-- 'stream.av\_c\_streaming\_format\_guids'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 60f1fd59-e760-4be4-8990-e49628b76d15
 ---
 

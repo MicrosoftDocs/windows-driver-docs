@@ -1,12 +1,6 @@
 ---
 title: KSNODETYPE\_VIDEO\_INPUT\_MTT
 description: KSNODETYPE\_VIDEO\_INPUT\_MTT
-MS-HAID:
-- 'ks-nodetypes\_4a372101-9c90-4e0c-889e-8e6562f3d180.xml'
-- 'stream.ksnodetype\_video\_input\_mtt'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c5661830-9dcf-48b0-b450-2640e4768add
 ---
 

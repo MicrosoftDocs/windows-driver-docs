@@ -1,12 +1,6 @@
 ---
 title: BytesPerLine element
 description: The required BytesPerLine element specifies the number of bytes per scan line in the resultant image file.
-MS-HAID:
-- 'wsdss\_ops\_e94d2cd7-f10a-4296-909f-3b00d681469c.xml'
-- 'image.bytesperline'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 026187db-16b7-48fc-a9e4-fa32cdc73d98
 keywords: ["BytesPerLine element Imaging Devices"]
 topic_type:

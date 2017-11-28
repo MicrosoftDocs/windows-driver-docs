@@ -1,12 +1,6 @@
 ---
 title: PlatenMinimumSize element
 description: The required PlatenMinimumSize element specifies the smallest size document that an end user can scan on the flatbed platen.
-MS-HAID:
-- 'wsdss\_platen\_b44dbfc0-49a4-4d4b-a886-44d7ef38d4c6.xml'
-- 'image.platenminimumsize'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8db5092f-415c-4942-a4a7-733a381afd16
 keywords: ["PlatenMinimumSize element Imaging Devices"]
 topic_type:

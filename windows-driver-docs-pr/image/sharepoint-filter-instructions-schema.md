@@ -1,12 +1,6 @@
 ---
 title: Sharepoint Filter Instructions Schema
 description: Sharepoint Filter Instructions Schema
-MS-HAID:
-- 'dsm\_ref\_psp\_3e5e6a62-672a-43e8-94da-9c2136fb8f2d.xml'
-- 'image.sharepoint\_filter\_instructions\_schema'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 084da70e-6e3a-4ac1-8e35-c48745a6d564
 keywords: ["Sharepoint Filter Instructions Schema"]
 ---

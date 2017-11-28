@@ -1,12 +1,6 @@
 ---
 title: Summary
 description: Summary
-MS-HAID:
-- 'autocfg\_13575dea-40af-4f58-8302-ed2319bfe31f.xml'
-- 'print.summary'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8ed412b2-1e7c-440f-8949-a3b1fff09b16
 ---
 

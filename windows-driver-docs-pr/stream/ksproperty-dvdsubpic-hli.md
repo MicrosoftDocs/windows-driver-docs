@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_DVDSUBPIC\_HLI
 description: The KSPROPERTY\_DVDSUBPIC\_HLI property specifies the rectangle of the subpicture or screen to change, including the color or contrast.
-MS-HAID:
-- 'dvdref\_39b7e7da-668b-4c42-bf43-d5ac42212681.xml'
-- 'stream.ksproperty\_dvdsubpic\_hli'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c3498ff8-11fe-4f53-8317-83a487684ac7
 keywords: ["KSPROPERTY_DVDSUBPIC_HLI Streaming Media Devices"]
 topic_type:

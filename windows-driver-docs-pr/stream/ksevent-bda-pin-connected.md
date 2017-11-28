@@ -1,12 +1,6 @@
 ---
 title: KSEVENT\_BDA\_PIN\_CONNECTED
 description: Clients use KSEVENT\_BDA\_PIN\_CONNECTED to request notification when a pin becomes connected.
-MS-HAID:
-- 'bdaref\_7a15a5b3-5bd3-4f69-acfd-6fefd0c94805.xml'
-- 'stream.ksevent\_bda\_pin\_connected'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f17df59d-8904-45a0-bb6b-795b343fd629
 keywords: ["KSEVENT_BDA_PIN_CONNECTED Streaming Media Devices"]
 topic_type:

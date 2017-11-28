@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_TRANSPARENCY\_STATUS
 description: The WIA\_DPS\_TRANSPARENCY\_STATUS property is obsolete and should not be used.
-MS-HAID:
-- 'WIA\_PropTable\_e60c8db4-ff1a-4365-ac5c-2fbe81e55985.xml'
-- 'image.wia\_dps\_transparency\_status'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 276a8d13-6b3b-468b-a165-b40d4b101f4a
 keywords: ["WIA_DPS_TRANSPARENCY_STATUS Imaging Devices"]
 topic_type:

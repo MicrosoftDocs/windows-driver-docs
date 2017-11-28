@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_COMPRESSION\_SETTING
 description: The WIA\_DPC\_COMPRESSION\_SETTING property contains either a range or a list of integers to represent perceived image quality.
-MS-HAID:
-- 'WIA\_PropTable\_77261adf-ee5c-4892-8324-e75cd49be68d.xml'
-- 'image.wia\_dpc\_compression\_setting'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dfe22ff2-f613-49a5-8c55-38ba851e7ebd
 keywords: ["WIA_DPC_COMPRESSION_SETTING Imaging Devices"]
 topic_type:

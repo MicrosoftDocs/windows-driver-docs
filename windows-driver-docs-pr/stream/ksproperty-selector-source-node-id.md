@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_SELECTOR\_SOURCE\_NODE\_ID
 description: The KSPROPERTY\_SELECTOR\_SOURCE\_NODE\_ID property specifies the pin identifier of the source pin for a particular node.
-MS-HAID:
-- 'vidcapprop\_ec671321-d47c-47c0-8d41-c815a96b76c6.xml'
-- 'stream.ksproperty\_selector\_source\_node\_id'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7616e834-462c-4e2c-8a4f-ec20db042e3b
 keywords: ["KSPROPERTY_SELECTOR_SOURCE_NODE_ID Streaming Media Devices"]
 topic_type:

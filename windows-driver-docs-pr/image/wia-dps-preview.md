@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_PREVIEW
 description: The WIA\_DPS\_PREVIEW property indicates the preview mode for a device. An application sets this property to place the device into a preview mode.
-MS-HAID:
-- 'WIA\_PropTable\_af853d91-abb3-4f0a-a026-137aecbf63fa.xml'
-- 'image.wia\_dps\_preview'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 410f58c0-479c-44ab-8126-a5dec79b713b
 keywords: ["WIA_DPS_PREVIEW Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_PIN\_ID
 description: Clients use KSPROPERTY\_BDA\_PIN\_ID to retrieve the BDA identifier (ID) for a pin.
-MS-HAID:
-- 'bdaref\_e672b05a-6b4a-4256-b111-b4185a2967b9.xml'
-- 'stream.ksproperty\_bda\_pin\_id'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6f7a4454-1294-4646-8e21-bfec9a14b612
 keywords: ["KSPROPERTY_BDA_PIN_ID Streaming Media Devices"]
 topic_type:

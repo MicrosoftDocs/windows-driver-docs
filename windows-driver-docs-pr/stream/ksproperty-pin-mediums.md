@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_MEDIUMS
 description: This property returns the list of mediums supported by pins instantiated by a specific pin factory.
-MS-HAID:
-- 'ks-prop\_e46db5be-14a0-4755-8bbd-23608d8382d2.xml'
-- 'stream.ksproperty\_pin\_mediums'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e92c7a3d-4f72-4818-9a26-0e82c20bdb4c
 keywords: ["KSPROPERTY_PIN_MEDIUMS Streaming Media Devices"]
 topic_type:

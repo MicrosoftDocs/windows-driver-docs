@@ -1,9 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE
 description: The KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE property is extended to support assistant flash.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 413B3A02-498A-4C5A-8940-9A0D10D6CE81
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_FLASHMODE Streaming Media Devices"]
 topic_type:

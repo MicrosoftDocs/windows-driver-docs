@@ -1,12 +1,6 @@
 ---
 title: PROPSETID\_VIDCAP\_VIDEOCONTROL
 description: PROPSETID\_VIDCAP\_VIDEOCONTROL
-MS-HAID:
-- 'vidcapprop\_f7bdca37-592e-4826-a67e-f02222524a17.xml'
-- 'stream.propsetid\_vidcap\_videocontrol'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 892663c1-a807-4d03-9af0-f065149e7d42
 ---
 

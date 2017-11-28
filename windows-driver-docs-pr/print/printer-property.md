@@ -1,12 +1,6 @@
 ---
 title: Printer Property
 description: Printer Property
-MS-HAID:
-- 'autocfg\_b5507a19-13d3-4a30-8486-a11352cd3a46.xml'
-- 'print.printer\_property'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c97de7d2-e12f-40f3-b1a9-2bbb6d6b8061
 ---
 

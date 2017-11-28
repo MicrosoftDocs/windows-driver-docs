@@ -1,12 +1,6 @@
 ---
 title: ScannerStatusConditionEvent element
 description: The required ScannerStatusConditionEvent element provides the client with detailed information about a single status change in the scan device.
-MS-HAID:
-- 'wsdss\_events\_361528d4-280f-47bc-b09c-50b8b14433ac.xml'
-- 'image.scannerstatusconditionevent'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0a61fe67-ea1e-4143-afb8-edcdf50ee7c4
 keywords: ["ScannerStatusConditionEvent element Imaging Devices"]
 topic_type:

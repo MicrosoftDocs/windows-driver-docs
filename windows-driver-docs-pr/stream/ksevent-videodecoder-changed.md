@@ -1,12 +1,6 @@
 ---
 title: KSEVENT\_VIDEODECODER\_CHANGED
 description: The KSEVENT\_VIDEODECODER\_CHANGED event propagates an action, such as the selection of a new physical input connector, from the kernel-mode video capture minidriver to DirectShow in user-mode.
-MS-HAID:
-- 'vidcapevent\_71eb6a0f-e271-4ff9-aaf6-738d368e10d6.xml'
-- 'stream.ksevent\_videodecoder\_changed'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cb197233-fce3-4580-95d3-94605fd1f3e4
 keywords: ["KSEVENT_VIDEODECODER_CHANGED Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPC\_SEQUENCE
 description: The WIA\_IPC\_SEQUENCE property is reserved by Microsoft for future use and is not implemented at this time.
-MS-HAID:
-- 'WIA\_PropTable\_e6d667c7-4a97-44cd-8da4-9c8c818d07ab.xml'
-- 'image.wia\_ipc\_sequence'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 57723587-a4c0-4400-837e-358b19ec6ba4
 keywords: ["WIA_IPC_SEQUENCE Imaging Devices"]
 topic_type:

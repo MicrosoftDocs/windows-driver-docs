@@ -1,12 +1,6 @@
 ---
 title: SendImageRequest.DocumentDescription
 description: SendImageRequest.DocumentDescription
-MS-HAID:
-- 'dsm\_ref\_dsp\_857a8f8a-dc27-4a17-972e-e02c6e2f9849.xml'
-- 'image.sendimagerequest\_documentdescription'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3b9edd54-27da-4f19-b6e5-f25cd4596173
 keywords: ["SendImageRequest.DocumentDescription"]
 ---

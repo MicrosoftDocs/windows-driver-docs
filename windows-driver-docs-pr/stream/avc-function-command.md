@@ -1,12 +1,6 @@
 ---
 title: AVC\_FUNCTION\_COMMAND
 description: AVC\_FUNCTION\_COMMAND
-MS-HAID:
-- 'avcref\_5a207f0d-7e9f-4f15-84ae-f9a899f551b9.xml'
-- 'stream.avc\_function\_command'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5e1f7f93-83ef-4015-a952-f7efd93ccee5
 keywords: ["AVC_FUNCTION_COMMAND Streaming Media Devices"]
 topic_type:

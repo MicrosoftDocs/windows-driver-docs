@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOCOMPRESSION\_OVERRIDE\_KEYFRAME
 description: The KSPROPERTY\_VIDEOCOMPRESSION\_OVERRIDE\_KEYFRAME property temporarily overrides the key frame rate. This property is optional.
-MS-HAID:
-- 'vidcapprop\_22891f68-f505-47e1-a0cd-da29a3a3d34c.xml'
-- 'stream.ksproperty\_videocompression\_override\_keyframe'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 068bd5e6-e283-4c8d-8837-c0e0cef4df65
 keywords: ["KSPROPERTY_VIDEOCOMPRESSION_OVERRIDE_KEYFRAME Streaming Media Devices"]
 topic_type:

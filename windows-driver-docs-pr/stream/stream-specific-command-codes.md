@@ -1,12 +1,6 @@
 ---
 title: Stream-Specific Command Codes
 description: Stream-Specific Command Codes
-MS-HAID:
-- 'strclass-srbs\_ed532ebe-99ab-4e9e-9b62-a1eaaa8373e1.xml'
-- 'stream.stream\_specific\_command\_codes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b57a1449-6e7a-404a-a513-29a02363c268
 ---
 

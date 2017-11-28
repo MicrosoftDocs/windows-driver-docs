@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_TUNER\_IF\_MEDIUM
 description: KSPROPERTY\_TUNER\_IF\_MEDIUM describes the medium for the intermediate frequency pin for devices that support digital TV tuning. This property is optional.
-MS-HAID:
-- 'vidcapprop\_3e9195da-3c4b-469f-bc62-1a37252ef717.xml'
-- 'stream.ksproperty\_tuner\_if\_medium'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1144777c-e81c-4b8f-a634-411591c71356
 keywords: ["KSPROPERTY_TUNER_IF_MEDIUM Streaming Media Devices"]
 topic_type:

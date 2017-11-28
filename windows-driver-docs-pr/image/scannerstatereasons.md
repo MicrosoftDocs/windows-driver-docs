@@ -1,12 +1,6 @@
 ---
 title: ScannerStateReasons element
 description: The required ScannerStateReasons element is a list of ScannerStateReason elements that describes all of the reasons why the scanner is in its current state.
-MS-HAID:
-- 'wsdss\_status\_4612e4a3-4376-4307-871e-debffec8059b.xml'
-- 'image.scannerstatereasons'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1b4e6537-4175-4bed-9af3-7887a2737784
 keywords: ["ScannerStateReasons element Imaging Devices"]
 topic_type:

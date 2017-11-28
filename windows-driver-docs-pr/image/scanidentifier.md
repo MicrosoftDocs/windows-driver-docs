@@ -1,12 +1,6 @@
 ---
 title: ScanIdentifier element
 description: The required ScanIdentifier element contains a device-specific string that the scanner provides through a ScanAvailableEvent event.
-MS-HAID:
-- 'wsdss\_events\_ea0e53ba-be93-42f3-96ff-d05660d184fd.xml'
-- 'image.scanidentifier'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 77116871-63dc-4388-9b36-a553219ddcf7
 keywords: ["ScanIdentifier element Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: AV/C Protocol Driver Function Codes
 description: AV/C Protocol Driver Function Codes
-MS-HAID:
-- 'avcref\_99bff135-5004-4edb-9a7f-a2cc83275b35.xml'
-- 'stream.av\_c\_protocol\_driver\_function\_codes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 96f1900f-89cd-4f9e-bd73-463255cf4dcd
 ---
 

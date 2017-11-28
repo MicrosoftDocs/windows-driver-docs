@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_VOID\_TRANSFORM\_STOP
 description: Clients use KSPROPERTY\_BDA\_VOID\_TRANSFORM\_STOP to stop operation of a node.
-MS-HAID:
-- 'bdaref\_3ca41ab8-0a51-41b3-83f8-55f48b84527c.xml'
-- 'stream.ksproperty\_bda\_void\_transform\_stop'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fa9a7cb3-b802-4417-a2cc-9061f95cce67
 keywords: ["KSPROPERTY_BDA_VOID_TRANSFORM_STOP Streaming Media Devices"]
 topic_type:

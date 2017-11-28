@@ -1,12 +1,6 @@
 ---
 title: EmailConfig.SendToAddresses.CanAddAddresses
 description: EmailConfig.SendToAddresses.CanAddAddresses
-MS-HAID:
-- 'dsm\_ref\_psp\_1630a8be-8513-4a1b-b399-fbac7e8f1c26.xml'
-- 'image.emailconfig\_sendtoaddresses\_canaddaddresses'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f34f1759-c91e-41e5-be7a-036af0d27ef1
 keywords: ["EmailConfig.SendToAddresses.CanAddAddresses"]
 ---

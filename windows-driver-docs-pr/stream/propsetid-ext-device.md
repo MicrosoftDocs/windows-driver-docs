@@ -1,12 +1,6 @@
 ---
 title: PROPSETID\_EXT\_DEVICE
 description: PROPSETID\_EXT\_DEVICE
-MS-HAID:
-- 'vidcapprop\_19cea714-6adc-4f0b-9c70-804615699f96.xml'
-- 'stream.propsetid\_ext\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fe1a14dc-b337-462b-ac2a-10eef036ef7f
 ---
 

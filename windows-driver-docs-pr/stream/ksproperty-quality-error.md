@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_QUALITY\_ERROR
 description: The KSPROPERTY\_QUALITY\_ERROR property is an optional property that should be implemented if the pin supports quality management.
-MS-HAID:
-- 'ks-prop\_904a6d1f-4648-41c6-b597-668e96c7cf3b.xml'
-- 'stream.ksproperty\_quality\_error'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a918ef13-f0a7-4eb9-b6ec-dcfec3098c1e
 keywords: ["KSPROPERTY_QUALITY_ERROR Streaming Media Devices"]
 topic_type:

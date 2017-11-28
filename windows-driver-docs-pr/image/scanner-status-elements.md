@@ -1,12 +1,6 @@
 ---
 title: Scanner Status Elements
 description: Scanner Status Elements
-MS-HAID:
-- 'wsdss\_status\_16333ca0-5960-4320-9832-aa436970394f.xml'
-- 'image.scanner\_status\_elements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9c616805-a25b-4fd3-bc84-4bf40b58cab6
 ---
 

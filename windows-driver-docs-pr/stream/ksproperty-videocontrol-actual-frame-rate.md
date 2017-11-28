@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOCONTROL\_ACTUAL\_FRAME\_RATE
 description: The KSPROPERTY\_VIDEOCONTROL\_ACTUAL\_FRAME\_RATE property retrieves the frame rate at which the device is streaming for the specified pin. This property is optional.
-MS-HAID:
-- 'vidcapprop\_22c041c5-5a67-4c1a-96bd-7c33cf4a1a8d.xml'
-- 'stream.ksproperty\_videocontrol\_actual\_frame\_rate'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1681bb54-bdd8-499d-b544-c0e8b14deaa5
 keywords: ["KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE Streaming Media Devices"]
 topic_type:

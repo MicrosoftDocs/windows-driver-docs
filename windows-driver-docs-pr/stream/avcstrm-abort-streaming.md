@@ -1,12 +1,6 @@
 ---
 title: AVCSTRM\_ABORT\_STREAMING
 description: AVCSTRM\_ABORT\_STREAMING
-MS-HAID:
-- 'avcsref\_516488e1-d3b2-4975-aa2e-62fa2bbc1442.xml'
-- 'stream.avcstrm\_abort\_streaming'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9a136511-c838-456f-87c5-a4639be0c299
 keywords: ["AVCSTRM_ABORT_STREAMING Streaming Media Devices"]
 topic_type:

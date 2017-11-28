@@ -1,12 +1,6 @@
 ---
 title: Configuration
 description: Configuration
-MS-HAID:
-- 'autocfg\_966fdc04-c6ea-4490-837f-e60a8edd7ffa.xml'
-- 'print.configuration'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8d1d4a80-7ca1-47e3-bd27-ece0c0b38b81
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: ScanData element
 description: The required ScanData element contains the binary data that represents the scanned image.
-MS-HAID:
-- 'wsdss\_ops\_fe260434-110b-444d-93ed-5862132f98f3.xml'
-- 'image.scandata'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9b29224c-b1e1-4c64-8a4a-476f9d6eea45
 keywords: ["ScanData element Imaging Devices"]
 topic_type:

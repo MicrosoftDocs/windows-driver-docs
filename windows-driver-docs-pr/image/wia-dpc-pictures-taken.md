@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_PICTURES\_TAKEN
 description: The WIA\_DPC\_PICTURES\_TAKEN property contains the number of pictures that a camera has taken. The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_90e86fde-b8d9-4324-90f9-96c7deaabfe9.xml'
-- 'image.wia\_dpc\_pictures\_taken'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 594ec2e1-460f-4c80-9251-45631e6ff3cf
 keywords: ["WIA_DPC_PICTURES_TAKEN Imaging Devices"]
 topic_type:

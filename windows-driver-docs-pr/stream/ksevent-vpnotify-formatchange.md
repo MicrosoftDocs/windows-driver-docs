@@ -1,12 +1,6 @@
 ---
 title: KSEVENT\_VPNOTIFY\_FORMATCHANGE
 description: The KSEVENT\_VPNOTIFY\_FORMATCHANGE event is used to propagate an event, such as a video-format change, from the kernel-mode DVD decoder minidriver to DirectShow in user-mode.
-MS-HAID:
-- 'dvdref\_f05e3681-9106-4093-87e5-49c5a08c870a.xml'
-- 'stream.ksevent\_vpnotify\_formatchange'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4c1757ec-1453-4aaa-b246-7c255e29310d
 keywords: ["KSEVENT_VPNOTIFY_FORMATCHANGE Streaming Media Devices"]
 topic_type:

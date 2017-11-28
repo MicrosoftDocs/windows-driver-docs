@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_PAN\_POSITION
 description: The WIA\_DPC\_PAN\_POSITION property is reserved by Microsoft for future use and is not implemented at this time.
-MS-HAID:
-- 'WIA\_PropTable\_1224e893-877c-4ca1-890b-8a4da112ac74.xml'
-- 'image.wia\_dpc\_pan\_position'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4bc54da2-ae6e-4a46-a4ab-535c419c679e
 keywords: ["WIA_DPC_PAN_POSITION Imaging Devices"]
 topic_type:

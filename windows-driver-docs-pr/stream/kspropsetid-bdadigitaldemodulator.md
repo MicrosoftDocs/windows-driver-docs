@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_BdaDigitalDemodulator
 description: KSPROPSETID\_BdaDigitalDemodulator
-MS-HAID:
-- 'bdaref\_e1a7ca30-c582-4f78-bd5c-aec189924bf9.xml'
-- 'stream.kspropsetid\_bdadigitaldemodulator'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 536c247d-049b-4d48-96b7-f2aa01f1fa91
 ---
 

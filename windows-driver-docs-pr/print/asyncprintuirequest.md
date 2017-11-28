@@ -1,12 +1,6 @@
 ---
 title: asyncPrintUIRequest element
 description: The required asyncPrintUIRequest element describes a request issued by the printer driver to create a message on a client computer.
-MS-HAID:
-- 'async\_278023fa-2344-4553-a854-c4af1e4b14b6.xml'
-- 'print.asyncprintuirequest'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 992e3c97-b148-4802-be48-3067adb6dd0d
 keywords: ["asyncPrintUIRequest element Print Devices"]
 topic_type:

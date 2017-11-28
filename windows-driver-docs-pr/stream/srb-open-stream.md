@@ -1,12 +1,6 @@
 ---
 title: SRB\_OPEN\_STREAM
 description: SRB\_OPEN\_STREAM
-MS-HAID:
-- 'strclass-srbs\_ced2765f-20ed-498a-babb-b4fdb2f0743e.xml'
-- 'stream.srb\_open\_stream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 53732add-e304-4128-9235-525ff073d777
 keywords: ["SRB_OPEN_STREAM Streaming Media Devices"]
 topic_type:

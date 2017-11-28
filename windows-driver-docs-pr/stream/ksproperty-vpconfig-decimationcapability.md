@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_DECIMATIONCAPABILITY
 description: The KSPROPERTY\_VPCONFIG\_DECIMATIONCAPABILITY property indicates if the size of the video image can be reduced by the hardware.
-MS-HAID:
-- 'dvdref\_ad2dc8f2-b85d-4786-8577-90718c8f76d2.xml'
-- 'stream.ksproperty\_vpconfig\_decimationcapability'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a929b154-165e-4075-9295-d34fecc8e18d
 keywords: ["KSPROPERTY_VPCONFIG_DECIMATIONCAPABILITY Streaming Media Devices"]
 topic_type:

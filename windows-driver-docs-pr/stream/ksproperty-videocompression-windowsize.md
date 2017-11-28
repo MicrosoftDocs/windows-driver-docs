@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOCOMPRESSION\_WINDOWSIZE
 description: The KSPROPERTY\_VIDEOCOMPRESSION\_WINDOWSIZE property controls the data rate that describes the average frame size. This property must be implemented.
-MS-HAID:
-- 'vidcapprop\_c9f0b78a-f9d6-4f7d-bf8a-40597c5293a5.xml'
-- 'stream.ksproperty\_videocompression\_windowsize'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 44cf4bb6-7ddb-4a72-8a77-7dc390aa8c12
 keywords: ["KSPROPERTY_VIDEOCOMPRESSION_WINDOWSIZE Streaming Media Devices"]
 topic_type:

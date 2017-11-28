@@ -1,12 +1,6 @@
 ---
 title: AutoExposure element
 description: The required AutoExposure element specifies that the WSD Scan Service should automatically determine the exposure settings for the document.
-MS-HAID:
-- 'wsdss\_doc\_32f33f0a-cebc-45ec-95b2-aee70b9122e0.xml'
-- 'image.autoexposure'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ccc2b246-cfa1-4d79-b968-7b4bbaad17ee
 keywords: ["AutoExposure element Imaging Devices"]
 topic_type:

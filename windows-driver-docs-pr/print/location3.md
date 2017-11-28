@@ -1,12 +1,6 @@
 ---
 title: Location
 description: Location
-MS-HAID:
-- 'autocfg\_d0c59ce1-55ee-4ede-a0ce-22dda8ab7de3.xml'
-- 'print.location3'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cbe6ec7f-36dd-484e-8db6-42e91e69577c
 ---
 

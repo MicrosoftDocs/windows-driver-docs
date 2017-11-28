@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPA\_ITEM\_CATEGORY
 description: The WIA\_IPA\_ITEM\_CATEGORY property contains grouped categories for WIA items.
-MS-HAID:
-- 'WIA\_PropTable\_224f7336-6f22-4dc1-bf73-780cbbfec408.xml'
-- 'image.wia\_ipa\_item\_category'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0dde5e1c-ac30-4129-96fb-89ce1950c29b
 keywords: ["WIA_IPA_ITEM_CATEGORY Imaging Devices"]
 topic_type:

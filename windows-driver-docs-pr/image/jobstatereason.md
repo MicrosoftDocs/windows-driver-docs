@@ -1,12 +1,6 @@
 ---
 title: JobStateReason element
 description: The optional JobStateReason element specifies one reason why a job is in its current state.
-MS-HAID:
-- 'wsdss\_job\_3deb7502-f57a-4f35-8359-c3b6e50a5857.xml'
-- 'image.jobstatereason'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: daaa288b-fa56-4d29-92f6-0283fbbd2fe8
 keywords: ["JobStateReason element Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: JobSummary element
 description: The optional JobSummary element contains a summary about a scan job.
-MS-HAID:
-- 'wsdss\_ops\_709e8e7b-6031-42d9-85bf-9cb20d6e9a7b.xml'
-- 'image.jobsummary'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: db81cad5-d157-403c-b3a4-1e5f91f858da
 keywords: ["JobSummary element Imaging Devices"]
 topic_type:

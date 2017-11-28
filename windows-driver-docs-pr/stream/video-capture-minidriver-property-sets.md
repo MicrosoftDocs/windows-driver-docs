@@ -1,12 +1,6 @@
 ---
 title: Video Capture Minidriver Property Sets
 description: Video Capture Minidriver Property Sets
-MS-HAID:
-- 'vidcapprop\_53d4ab37-50e4-4079-b978-8356eb59f4b6.xml'
-- 'stream.video\_capture\_minidriver\_property\_sets'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: adbf62c4-1c66-46e9-ae8e-867a88bb107c
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: Staple
 description: Staple
-MS-HAID:
-- 'autocfg\_c2a5b0f8-5e4c-4af4-8a64-812592e8ee0c.xml'
-- 'print.staple3'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 71e5bd28-cbf8-4346-884a-88d9f310c378
 ---
 

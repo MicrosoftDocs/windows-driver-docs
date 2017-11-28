@@ -1,12 +1,6 @@
 ---
 title: Widths element
 description: The required Widths element contains the list of widths at which the scanner can scan images.
-MS-HAID:
-- 'wsdss\_platen\_cf5deccb-1a3c-4422-9325-d72e0e41bea3.xml'
-- 'image.widths'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 785d469f-bdad-413c-8bfb-de7a518b243c
 keywords: ["Widths element Imaging Devices"]
 topic_type:

@@ -1,9 +1,6 @@
 ---
 title: Device transform manager events
 description: This section contains information about the Device Transform Manager events.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4ADA2A20-D4DE-4F80-AAD7-F8AFCBD5E843
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOPROCAMP\_POWERLINE\_FREQUENCY
 description: The KSPROPERTY\_VIDEOPROCAMP\_POWERLINE\_FREQUENCY property specifies the local power line frequency. The frequency might be necessary if the device supports anti-flicker processing for fluorescent lighting environments.
-MS-HAID:
-- 'vidcapprop\_3d17fd87-03c0-422d-a6ee-6ea94393440e.xml'
-- 'stream.ksproperty\_videoprocamp\_powerline\_frequency'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 560bb16d-2a95-408f-b32c-fa2db1c94902
 keywords: ["KSPROPERTY_VIDEOPROCAMP_POWERLINE_FREQUENCY Streaming Media Devices"]
 topic_type:

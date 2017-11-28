@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_DVDCOPY\_TITLE\_KEY
 description: The KSPROPERTY\_DVDCOPY\_TITLE\_KEY property retrieves the title key information from the current content for the DVD copyright protection authentication process.
-MS-HAID:
-- 'dvdref\_b97c57ea-2a76-4277-b664-0465fa68f63f.xml'
-- 'stream.ksproperty\_dvdcopy\_title\_key'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7c07bf75-cbc4-4319-a1a6-4f05d228d91a
 keywords: ["KSPROPERTY_DVDCOPY_TITLE_KEY Streaming Media Devices"]
 topic_type:

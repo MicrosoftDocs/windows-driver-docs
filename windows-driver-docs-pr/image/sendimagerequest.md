@@ -1,12 +1,6 @@
 ---
 title: SendImageRequest
 description: SendImageRequest
-MS-HAID:
-- 'dsm\_ref\_dsp\_803795c7-7639-465e-9614-19dc114ff21d.xml'
-- 'image.sendimagerequest'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fda4926f-5d37-4515-9a13-ef27a607a8fd
 keywords: ["SendImageRequest"]
 ---

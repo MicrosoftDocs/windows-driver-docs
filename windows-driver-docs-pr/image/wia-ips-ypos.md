@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPS\_YPOS
 description: The WIA\_IPS\_YPOS property contains the current y-coordinate, in pixels, of the upper-left corner of a selected image. The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_85480dc8-64f2-4f1c-8e99-c479d0d65c35.xml'
-- 'image.wia\_ips\_ypos'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e6592d54-d1b6-4ee7-8678-903d575d52a3
 keywords: ["WIA_IPS_YPOS Imaging Devices"]
 topic_type:

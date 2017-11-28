@@ -1,12 +1,6 @@
 ---
 title: CPSUI Option Types
 description: CPSUI Option Types
-MS-HAID:
-- 'cpsuifnc\_48dbc218-25bd-411e-a4fe-f63945ffb76a.xml'
-- 'print.cpsui\_option\_types'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3b3c002c-a201-4f81-b208-30864343409b
 ---
 

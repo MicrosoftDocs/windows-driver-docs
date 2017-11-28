@@ -1,12 +1,6 @@
 ---
 title: FilmScanMode element
 description: The optional FilmScanMode element specifies the exposure type of the film to be scanned.
-MS-HAID:
-- 'wsdss\_doc\_ce84f6f9-f470-4c8c-9e4c-2fb9bf49fc93.xml'
-- 'image.filmscanmode'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 134ca8f2-1d4f-4617-b706-8732b972f493
 keywords: ["FilmScanMode element Imaging Devices"]
 topic_type:

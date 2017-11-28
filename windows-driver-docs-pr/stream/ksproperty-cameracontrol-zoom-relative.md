@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_ZOOM\_RELATIVE
 description: The KSPROPERTY\_CAMERACONTROL\_ZOOM\_RELATIVE property specifies the zoom status of the camera.
-MS-HAID:
-- 'vidcapprop\_728764a7-e8d0-451f-ac21-634a76b5ec8d.xml'
-- 'stream.ksproperty\_cameracontrol\_zoom\_relative'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 686bfb4f-fe93-456a-bd50-7ebd99a146eb
 keywords: ["KSPROPERTY_CAMERACONTROL_ZOOM_RELATIVE Streaming Media Devices"]
 topic_type:

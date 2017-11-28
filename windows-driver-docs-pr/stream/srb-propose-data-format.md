@@ -1,12 +1,6 @@
 ---
 title: SRB\_PROPOSE\_DATA\_FORMAT
 description: SRB\_PROPOSE\_DATA\_FORMAT
-MS-HAID:
-- 'strclass-srbs\_4b665a19-1498-41f0-9410-a42abd2b4f7a.xml'
-- 'stream.srb\_propose\_data\_format'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a15ec7cc-7351-4a63-ad35-e59610205913
 keywords: ["SRB_PROPOSE_DATA_FORMAT Streaming Media Devices"]
 topic_type:

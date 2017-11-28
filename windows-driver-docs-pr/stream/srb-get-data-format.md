@@ -1,12 +1,6 @@
 ---
 title: SRB\_GET\_DATA\_FORMAT
 description: SRB\_GET\_DATA\_FORMAT
-MS-HAID:
-- 'strclass-srbs\_0400f11d-5347-4b2a-bf27-38372a7471ac.xml'
-- 'stream.srb\_get\_data\_format'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6346d719-395d-4847-af80-6c65e15af250
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: ScalingHeight element
 description: The required ScalingHeight element contains the range of allowable values for scaling the height of the output document.
-MS-HAID:
-- 'wsdss\_configure\_d70677bf-8d00-4c44-8e21-f0ae8ad58a52.xml'
-- 'image.scalingheight2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f13e1ef8-e05f-4aab-bf2a-08a953638334
 keywords: ["ScalingHeight element Imaging Devices"]
 topic_type:

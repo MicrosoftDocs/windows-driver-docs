@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPA\_REGION\_TYPE
 description: The WIA\_IPA\_REGION\_TYPE property is reserved by Microsoft for future use and is not implemented at this time.
-MS-HAID:
-- 'WIA\_PropTable\_3e501351-d91c-4b6f-842a-d16df4e19f0f.xml'
-- 'image.wia\_ipa\_region\_type'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 134f89c0-aefa-4643-8a19-ce3ae54caf19
 keywords: ["WIA_IPA_REGION_TYPE Imaging Devices"]
 topic_type:

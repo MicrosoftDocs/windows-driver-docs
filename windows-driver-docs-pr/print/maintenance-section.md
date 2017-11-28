@@ -1,12 +1,6 @@
 ---
 title: Maintenance Section
 description: Maintenance Section
-MS-HAID:
-- 'autocfg\_cf9255e3-cd67-464d-9159-7c0fccc97c05.xml'
-- 'print.maintenance\_section'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 65b94b61-83aa-403d-98a1-67f82bf48e86
 ---
 

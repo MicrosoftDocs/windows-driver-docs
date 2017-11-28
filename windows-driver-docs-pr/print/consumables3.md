@@ -1,12 +1,6 @@
 ---
 title: Consumables
 description: Consumables
-MS-HAID:
-- 'autocfg\_758ced28-f31b-4257-bcd2-67c15f16c498.xml'
-- 'print.consumables3'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e017a8e9-5460-4ba5-aa64-5dffd4f09bc9
 ---
 

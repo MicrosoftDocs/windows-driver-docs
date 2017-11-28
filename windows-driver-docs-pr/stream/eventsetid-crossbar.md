@@ -1,12 +1,6 @@
 ---
 title: EVENTSETID\_CROSSBAR
 description: EVENTSETID\_CROSSBAR
-MS-HAID:
-- 'vidcapevent\_7c2b3efa-e043-4c76-ac93-1ec9aefc6abf.xml'
-- 'stream.eventsetid\_crossbar'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 19e8e431-00fd-462b-bb01-e41e0a7b7f6d
 ---
 

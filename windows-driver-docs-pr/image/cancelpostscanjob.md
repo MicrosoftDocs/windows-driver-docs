@@ -1,12 +1,6 @@
 ---
 title: CancelPostScanJob
 description: CancelPostScanJob
-MS-HAID:
-- 'dsm\_ref\_dsp\_92c660e1-b8a2-4010-a229-bb9aa09cd52c.xml'
-- 'image.cancelpostscanjob'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dafabbe9-fafd-4333-95bb-3de229133b95
 keywords: ["CancelPostScanJob"]
 ---

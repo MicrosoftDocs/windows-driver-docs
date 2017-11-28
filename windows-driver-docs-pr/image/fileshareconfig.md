@@ -1,12 +1,6 @@
 ---
 title: FileShareConfig
 description: FileShareConfig
-MS-HAID:
-- 'dsm\_ref\_psp\_1e389a65-2862-4d1e-8e21-afae417bb8b3.xml'
-- 'image.fileshareconfig'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6eae90dc-740b-482b-9b85-0e4f254d547e
 keywords: ["FileShareConfig"]
 ---

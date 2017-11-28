@@ -1,12 +1,6 @@
 ---
 title: JobStateReasons element
 description: The required JobStateReasons element contains all additional information about why a job is in its current state.
-MS-HAID:
-- 'wsdss\_job\_6560dab0-31b4-428d-aad3-2a298573f509.xml'
-- 'image.jobstatereasons'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 52d6519e-2392-4fa4-bac0-f1bf60eccc99
 keywords: ["JobStateReasons element Imaging Devices"]
 topic_type:

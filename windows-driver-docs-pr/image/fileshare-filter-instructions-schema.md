@@ -1,12 +1,6 @@
 ---
 title: Fileshare Filter Instructions Schema
 description: Fileshare Filter Instructions Schema
-MS-HAID:
-- 'dsm\_ref\_psp\_f8445689-1f90-4590-bcf9-71f1bd630ed4.xml'
-- 'image.fileshare\_filter\_instructions\_schema'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7168765a-9f2e-47ab-983c-9711f70cd4e5
 keywords: ["Fileshare Filter Instructions Schema"]
 ---

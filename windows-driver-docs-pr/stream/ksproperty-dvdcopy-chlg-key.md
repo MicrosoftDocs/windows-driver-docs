@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_DVDCOPY\_CHLG\_KEY
 description: The KSPROPERTY\_DVDCOPY\_CHLG\_KEY property transfers the bus challenge keys that the DVD decoder and DVD drive provide.
-MS-HAID:
-- 'dvdref\_98c43cec-c7ff-4de1-b177-ae5a80fc5367.xml'
-- 'stream.ksproperty\_dvdcopy\_chlg\_key'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 744ea965-29dc-401f-8f68-7d63b58b6151
 keywords: ["KSPROPERTY_DVDCOPY_CHLG_KEY Streaming Media Devices"]
 topic_type:

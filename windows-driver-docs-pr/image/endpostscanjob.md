@@ -1,12 +1,6 @@
 ---
 title: EndPostScanJob
 description: EndPostScanJob
-MS-HAID:
-- 'dsm\_ref\_dsp\_887a807d-bde7-41f5-bf95-64f0e4e11e05.xml'
-- 'image.endpostscanjob'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 29e13a19-eaf6-49af-a29d-27c82d3b58b7
 keywords: ["EndPostScanJob"]
 ---

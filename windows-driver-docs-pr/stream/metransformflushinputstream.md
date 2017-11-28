@@ -1,9 +1,6 @@
 ---
 title: METransformFlushInputStream event
 description: The METransformFlushInputStream event informs the Device Transform Manager to flush the output stream of devproxy that is connected to the input of Device MFT.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 400FB4BE-90F2-4FF2-A709-7E213D99DCC8
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_VERTICAL\_BED\_REGISTRATION
 description: The WIA\_DPS\_VERTICAL\_BED\_REGISTRATION property contains the registration, or vertical alignment and edge detection, for documents that are placed on the flatbed of a scanner. The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_5c4f48cb-6ac6-4db2-87d4-7adaf24fecd8.xml'
-- 'image.wia\_dps\_vertical\_bed\_registration'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 58c1bfb2-1f61-4910-ac6d-189aa203c370
 keywords: ["WIA_DPS_VERTICAL_BED_REGISTRATION Imaging Devices"]
 topic_type:

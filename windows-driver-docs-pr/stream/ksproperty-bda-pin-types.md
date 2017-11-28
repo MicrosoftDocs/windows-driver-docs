@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_PIN\_TYPES
 description: Clients use KSPROPERTY\_BDA\_PIN\_TYPES to retrieve a list of pin types.
-MS-HAID:
-- 'bdaref\_db262ae3-cd86-4ce6-aa91-29fae0cbd8fd.xml'
-- 'stream.ksproperty\_bda\_pin\_types'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: de11ab3c-a787-4831-aad4-e97f46432032
 keywords: ["KSPROPERTY_BDA_PIN_TYPES Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CLOCK\_CORRELATEDPHYSICALTIME
 description: Clients use the KSPROPERTY\_CLOCK\_CORRELATEDPHYSICALTIME property to compare the current physical time on a clock to the current system time.
-MS-HAID:
-- 'ks-prop\_dd9bc33c-e24f-4c05-82c9-d8a480bda529.xml'
-- 'stream.ksproperty\_clock\_correlatedphysicaltime'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 49f74411-1489-4864-9213-e1894128e355
 keywords: ["KSPROPERTY_CLOCK_CORRELATEDPHYSICALTIME Streaming Media Devices"]
 topic_type:

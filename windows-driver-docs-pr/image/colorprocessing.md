@@ -1,12 +1,6 @@
 ---
 title: ColorProcessing element
 description: The optional ColorProcessing element specifies the color-processing mode of the input source on the scanner.
-MS-HAID:
-- 'wsdss\_doc\_5136b74b-81f8-4984-96a1-bb34f53e643f.xml'
-- 'image.colorprocessing'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 10170090-d0d2-44b1-bd0d-3b800669f7cf
 keywords: ["ColorProcessing element Imaging Devices"]
 topic_type:

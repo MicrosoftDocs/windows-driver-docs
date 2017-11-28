@@ -1,12 +1,6 @@
 ---
 title: PROPSETID\_VIDCAP\_CAMERACONTROL
 description: PROPSETID\_VIDCAP\_CAMERACONTROL
-MS-HAID:
-- 'vidcapprop\_f5058946-de27-422e-a2a8-af307b9a33d1.xml'
-- 'stream.propsetid\_vidcap\_cameracontrol'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8899a474-fa6f-4d5c-bd68-2433428bb5c5
 keywords: ["KSPROPERTY_VIDCAP_CAMERACONTROL"]
 ---

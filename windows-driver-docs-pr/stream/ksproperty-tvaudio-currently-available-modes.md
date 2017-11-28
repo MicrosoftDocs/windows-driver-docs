@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_TVAUDIO\_CURRENTLY\_AVAILABLE\_MODES
 description: The KSPROPERTY\_TVAUDIO\_CURRENTLY\_AVAILABLE\_MODES property retrieves TV audio modes that are available for the device. This property must be implemented.
-MS-HAID:
-- 'vidcapprop\_b7c3e8ee-d2b9-47a2-ac1c-5100be43ccf4.xml'
-- 'stream.ksproperty\_tvaudio\_currently\_available\_modes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9c98771a-7a41-469d-a441-da5c1ac5a697
 keywords: ["KSPROPERTY_TVAUDIO_CURRENTLY_AVAILABLE_MODES Streaming Media Devices"]
 topic_type:

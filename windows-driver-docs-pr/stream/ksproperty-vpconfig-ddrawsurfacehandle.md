@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_DDRAWSURFACEHANDLE
 description: The KSPROPERTY\_VPCONFIG\_DDRAWSURFACEHANDLE property returns the Microsoft DirectDraw surface handle property information.
-MS-HAID:
-- 'dvdref\_3e3e2750-b902-4321-8f08-1a36fb141601.xml'
-- 'stream.ksproperty\_vpconfig\_ddrawsurfacehandle'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8fb85c4f-bd1f-4fb9-a8e5-541d6c5fcdac
 keywords: ["KSPROPERTY_VPCONFIG_DDRAWSURFACEHANDLE Streaming Media Devices"]
 topic_type:

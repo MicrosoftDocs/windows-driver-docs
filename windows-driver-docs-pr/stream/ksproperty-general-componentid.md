@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_GENERAL\_COMPONENTID
 description: The KSPROPERTY\_GENERAL\_COMPONENTID property is an optional property that allows a client to access general component information stored in the KSCOMPONENTID structure.
-MS-HAID:
-- 'ks-prop\_be06cb26-0125-4fc1-8efb-f04621a4c714.xml'
-- 'stream.ksproperty\_general\_componentid'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fbbdf3f6-c71a-4a6d-ba15-ec7b7bdc1e0e
 keywords: ["KSPROPERTY_GENERAL_COMPONENTID Streaming Media Devices"]
 topic_type:

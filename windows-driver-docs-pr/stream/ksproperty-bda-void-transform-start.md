@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_VOID\_TRANSFORM\_START
 description: Clients use KSPROPERTY\_BDA\_VOID\_TRANSFORM\_START to start operation of a node.
-MS-HAID:
-- 'bdaref\_3e314f19-4358-4007-9950-c058e4d2104c.xml'
-- 'stream.ksproperty\_bda\_void\_transform\_start'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f9116fc6-1c53-470f-abf9-69d047dca44b
 keywords: ["KSPROPERTY_BDA_VOID_TRANSFORM_START Streaming Media Devices"]
 topic_type:

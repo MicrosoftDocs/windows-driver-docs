@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPC\_AUDIO\_AVAILABLE
 description: The WIA\_IPC\_AUDIO\_AVAILABLE property is obsolete and should not be used.
-MS-HAID:
-- 'WIA\_PropTable\_b7fdf8e9-9362-428a-8aea-7a865ad3da90.xml'
-- 'image.wia\_ipc\_audio\_available'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7dfff74c-f853-4152-adb4-bdac682dc076
 keywords: ["WIA_IPC_AUDIO_AVAILABLE Imaging Devices"]
 topic_type:

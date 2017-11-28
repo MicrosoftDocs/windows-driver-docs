@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOCONTROL\_MODE
 description: The KSPROPERTY\_VIDEOCONTROL\_MODE property controls the mode of image production. This includes settings for horizontal and vertical image flipping, and enabling frame capture by an external trigger. This property is optional.
-MS-HAID:
-- 'vidcapprop\_28156768-f439-4e02-b756-4aaed9c66a03.xml'
-- 'stream.ksproperty\_videocontrol\_mode'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b101b348-cfd4-46a1-857a-9e7cb3f35ce5
 keywords: ["KSPROPERTY_VIDEOCONTROL_MODE Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: ClientContext element
 description: The required ClientContext element specifies a client-specific string.
-MS-HAID:
-- 'wsdss\_events\_0fb4cb8d-9a81-453c-a4ad-1785958d587f.xml'
-- 'image.clientcontext'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 09bc5f5b-6198-4553-9f6f-8219e620f634
 keywords: ["ClientContext element Imaging Devices"]
 topic_type:

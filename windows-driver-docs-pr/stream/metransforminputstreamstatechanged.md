@@ -1,9 +1,6 @@
 ---
 title: METransformInputStreamStateChanged
 description: The METransformInputStreamStateChanged event indicates that the input stream state or media type must be changed.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 734080DD-8D96-4AF3-BB13-FDA8E0398C0B
 ---
 

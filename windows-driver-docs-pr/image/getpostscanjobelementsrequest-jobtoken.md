@@ -1,12 +1,6 @@
 ---
 title: GetPostScanJobElementsRequest.JobToken
 description: GetPostScanJobElementsRequest.JobToken
-MS-HAID:
-- 'dsm\_ref\_dsp\_77839ab6-2c86-445b-9b9f-8d76e7bef239.xml'
-- 'image.getpostscanjobelementsrequest\_jobtoken'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c6348f96-371d-4f02-b5f1-46b64af2717b
 keywords: ["GetPostScanJobElementsRequest.JobToken"]
 ---

@@ -1,12 +1,6 @@
 ---
 title: BDA Node Category GUIDs
 description: BDA Node Category GUIDs
-MS-HAID:
-- 'bdaref\_d375c48e-1946-439b-9ce4-b95415fc91ee.xml'
-- 'stream.bda\_node\_category\_guids'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cf439881-d20d-4efc-8ea3-3752e117b14d
 ---
 

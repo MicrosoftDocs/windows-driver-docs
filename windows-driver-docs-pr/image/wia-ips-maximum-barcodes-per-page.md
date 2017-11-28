@@ -1,9 +1,6 @@
 ---
 title: WIA\_IPS\_MAXIMUM\_BARCODES\_PER\_PAGE
 description: The WIA\_IPS\_MAXIMUM\_BARCODES\_PER\_PAGE property describes the maximum number of barcodes that the device can and should detect on one document page side when barcode detection is enabled.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9DA59D24-3483-4663-8B6A-54EC53A3466D
 keywords: ["WIA_IPS_MAXIMUM_BARCODES_PER_PAGE Imaging Devices"]
 topic_type:

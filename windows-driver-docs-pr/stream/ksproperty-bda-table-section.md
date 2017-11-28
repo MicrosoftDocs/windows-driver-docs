@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_TABLE\_SECTION
 description: Clients use KSPROPERTY\_BDA\_TABLE\_SECTION to inform nodes about the table section to use when delivering data on the node's output.
-MS-HAID:
-- 'bdaref\_a503ad3e-eb8e-409b-8906-1fe0d866c39c.xml'
-- 'stream.ksproperty\_bda\_table\_section'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 58e6cc37-b6f1-49d6-a832-46f1edabf740
 keywords: ["KSPROPERTY_BDA_TABLE_SECTION Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: ScannerElements element
 description: The required ScannerElements contains all of the scanner information that is being returned to a client.
-MS-HAID:
-- 'wsdss\_ops\_d4295ece-4678-4f1e-891a-1b4762e08dce.xml'
-- 'image.scannerelements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7e1b6e49-34a3-486f-83f2-472b181399d0
 keywords: ["ScannerElements element Imaging Devices"]
 topic_type:

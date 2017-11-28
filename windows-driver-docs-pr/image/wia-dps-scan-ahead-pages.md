@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_SCAN\_AHEAD\_PAGES
 description: The WIA\_DPS\_SCAN\_AHEAD\_PAGES property contains a value that indicates whether a scanner will cache pages in a scanner buffer before sending them to an application.
-MS-HAID:
-- 'WIA\_PropTable\_f3fb848b-46c1-45a2-a52c-88f8c1f4391b.xml'
-- 'image.wia\_dps\_scan\_ahead\_pages'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8c00b029-dc9f-43e1-af4a-088e143351ca
 keywords: ["WIA_DPS_SCAN_AHEAD_PAGES Imaging Devices"]
 topic_type:

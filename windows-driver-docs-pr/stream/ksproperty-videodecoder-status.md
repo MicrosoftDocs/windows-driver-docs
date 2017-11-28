@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEODECODER\_STATUS
 description: The KSPROPERTY\_VIDEDECODER\_STATUS property retrieves status information from the video decoder. This property must be implemented.
-MS-HAID:
-- 'vidcapprop\_6079aecb-ee05-46ff-a5ac-6ee596dc7afe.xml'
-- 'stream.ksproperty\_videodecoder\_status'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1d8cb537-1d85-4536-bd75-33beea0f586d
 keywords: ["KSPROPERTY_VIDEODECODER_STATUS Streaming Media Devices"]
 topic_type:

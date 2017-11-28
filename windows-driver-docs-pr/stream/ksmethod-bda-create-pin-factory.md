@@ -1,12 +1,6 @@
 ---
 title: KSMETHOD\_BDA\_CREATE\_PIN\_FACTORY
 description: Clients use KSMETHOD\_BDA\_CREATE\_PIN\_FACTORY to create a pin factory for a filter.
-MS-HAID:
-- 'bdaref\_9b0243ba-31a8-486a-ad54-7434d6bc6f93.xml'
-- 'stream.ksmethod\_bda\_create\_pin\_factory'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ebc9dc1d-1b4b-40d3-82b5-f32d3781537c
 keywords: ["KSMETHOD_BDA_CREATE_PIN_FACTORY Streaming Media Devices"]
 topic_type:

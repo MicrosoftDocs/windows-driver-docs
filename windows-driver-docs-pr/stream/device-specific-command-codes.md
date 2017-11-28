@@ -1,12 +1,6 @@
 ---
 title: Device-Specific Command Codes
 description: Device-Specific Command Codes
-MS-HAID:
-- 'strclass-srbs\_32603888-cc83-43cd-901a-459951fada3e.xml'
-- 'stream.device\_specific\_command\_codes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5dae7269-7a5d-4e34-b164-cfb02f17ee2c
 ---
 

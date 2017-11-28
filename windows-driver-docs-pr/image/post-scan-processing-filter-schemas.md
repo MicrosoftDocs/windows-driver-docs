@@ -1,12 +1,6 @@
 ---
 title: Post-Scan Processing Filter Schemas
 description: Post-Scan Processing Filter Schemas
-MS-HAID:
-- 'dsm\_ref\_psp\_533028d3-03a8-48fa-a137-320880fcaeca.xml'
-- 'image.post\_scan\_processing\_filter\_schemas'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 35007423-1f52-4436-b591-757491f42805
 keywords: ["Post-Scan Processing Filter Schemas"]
 ---

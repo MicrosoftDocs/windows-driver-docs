@@ -1,12 +1,6 @@
 ---
 title: BDA Filter Category GUIDs
 description: BDA Filter Category GUIDs
-MS-HAID:
-- 'bdaref\_eaa96074-dfdf-4133-99a3-19bb888ce9f3.xml'
-- 'stream.bda\_filter\_category\_guids'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fbd4bf91-8309-423a-97ea-7e4f90cd3b68
 ---
 

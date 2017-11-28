@@ -1,12 +1,6 @@
 ---
 title: PagesPerSheet
 description: PagesPerSheet
-MS-HAID:
-- 'autocfg\_b925851e-f54a-44c9-b8ce-fea09e7686e6.xml'
-- 'print.pagespersheet2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 019c9344-7661-4c39-a441-469d340e61cb
 ---
 

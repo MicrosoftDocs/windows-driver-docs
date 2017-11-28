@@ -1,12 +1,6 @@
 ---
 title: Stream Class SRB Reference
 description: Stream Class SRB Reference
-MS-HAID:
-- 'strclass-srbs\_1025d3ae-5b01-4755-9a65-d515153011aa.xml'
-- 'stream.stream\_class\_srb\_reference'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fdd2de58-8825-429a-937a-0bd27a180f2a
 ---
 

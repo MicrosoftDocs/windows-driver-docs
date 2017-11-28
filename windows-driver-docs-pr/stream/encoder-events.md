@@ -1,12 +1,6 @@
 ---
 title: Encoder Events
 description: Encoder Events
-MS-HAID:
-- 'encoderef\_b39ca4b7-3734-467f-92b7-3cbe971a0f4c.xml'
-- 'stream.encoder\_events'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4aa6877e-8963-41ba-a7b5-4ca312d851bf
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: ConditionClearTime element
 description: The required ConditionClearTime element specifies the date and time at which a scan device condition was cleared.
-MS-HAID:
-- 'wsdss\_events\_bc4be112-2ebe-42ae-9254-5276f39e8a7e.xml'
-- 'image.conditioncleartime'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c3a00770-278a-4840-bf6d-644fbd7c25e1
 keywords: ["ConditionClearTime element Imaging Devices"]
 topic_type:

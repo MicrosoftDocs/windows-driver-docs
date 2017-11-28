@@ -1,12 +1,6 @@
 ---
 title: ScannerStatusConditionEvent Example
 description: ScannerStatusConditionEvent Example
-MS-HAID:
-- 'dsm\_ref\_dsd\_2312caa0-4025-48d2-a369-b73fe6ed53d9.xml'
-- 'image.scannerstatusconditionevent\_example'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 925aa3d6-2218-4095-8d78-de1ebd1adeee
 keywords: ["ScannerStatusConditionEvent Example"]
 ---

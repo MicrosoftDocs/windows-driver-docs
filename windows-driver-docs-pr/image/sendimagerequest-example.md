@@ -1,12 +1,6 @@
 ---
 title: SendImageRequest Example
 description: SendImageRequest Example
-MS-HAID:
-- 'dsm\_ref\_dsp\_96298cea-ec05-441d-bd1f-c60589c3fd2e.xml'
-- 'image.sendimagerequest\_example'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bf14727b-3c03-4d80-8780-32806bd680f5
 keywords: ["SendImageRequest Example"]
 ---

@@ -1,12 +1,6 @@
 ---
 title: Device Interface Classes for Imaging Devices
 description: Device Interface Classes for Imaging Devices
-MS-HAID:
-- 'devinterface\_image\_d299f0f5-c1cb-4f7a-994c-8a2c836e1e5a.xml'
-- 'image.device\_interface\_classes\_for\_imaging\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 935b7977-4222-4749-95bb-c6991e8179ef
 keywords: ["device interface classes WDK imaging"]
 ---

@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CLOCK\_RESOLUTION
 description: Clients use the KSPROPERTY\_CLOCK\_RESOLUTION property to determine the precision of a clock.
-MS-HAID:
-- 'ks-prop\_eea0bec2-1f85-4acc-ba85-7c1583a3099b.xml'
-- 'stream.ksproperty\_clock\_resolution'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3e92a4fb-207f-449a-bc70-aa8028b4f8f1
 keywords: ["KSPROPERTY_CLOCK_RESOLUTION Streaming Media Devices"]
 topic_type:

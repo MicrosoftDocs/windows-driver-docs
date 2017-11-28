@@ -1,12 +1,6 @@
 ---
 title: PostScanJobEndStateEvent.PostScanJobEndState.JobToken
 description: PostScanJobEndStateEvent.PostScanJobEndState.JobToken
-MS-HAID:
-- 'dsm\_ref\_dsp\_ea57dfc1-0eca-440c-9942-469d3aefa1f6.xml'
-- 'image.postscanjobendstateevent\_postscanjobendstate\_jobtoken'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 56ed458c-70b3-4227-8c55-3f004be21b86
 keywords: ["PostScanJobEndStateEvent.PostScanJobEndState.JobToken"]
 ---

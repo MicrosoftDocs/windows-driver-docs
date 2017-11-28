@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_TILT
 description: User-mode clients use the KSPROPERTY\_CAMERACONTROL\_TILT property to get or set a camera's tilt setting. This property is optional.
-MS-HAID:
-- 'vidcapprop\_5b39f333-5ea0-450d-b4eb-d0d91ef68077.xml'
-- 'stream.ksproperty\_cameracontrol\_tilt'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 265315ce-6f35-4f5a-907f-b5595e7fb5af
 keywords: ["KSPROPERTY_CAMERACONTROL_TILT Streaming Media Devices"]
 topic_type:

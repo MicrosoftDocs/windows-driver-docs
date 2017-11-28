@@ -1,12 +1,6 @@
 ---
 title: EndPostScanJobRequest Example
 description: EndPostScanJobRequest Example
-MS-HAID:
-- 'dsm\_ref\_dsp\_9c5c7084-bef8-450d-9961-78b9f4bf2e3b.xml'
-- 'image.endpostscanjobrequest\_example'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 90e8d9a7-e219-469e-84a2-aa11999993b0
 keywords: ["EndPostScanJobRequest Example"]
 ---

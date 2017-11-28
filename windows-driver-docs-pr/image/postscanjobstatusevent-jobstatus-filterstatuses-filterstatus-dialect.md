@@ -1,12 +1,6 @@
 ---
 title: PostScanJobStatusEvent.JobStatus.FilterStatuses.FilterStatus.Dialect
 description: PostScanJobStatusEvent.JobStatus.FilterStatuses.FilterStatus.Dialect
-MS-HAID:
-- 'dsm\_ref\_dsp\_f15c8690-7462-42cc-9336-a6d033c01e79.xml'
-- 'image.postscanjobstatusevent\_jobstatus\_filterstatuses\_filterstatus\_dialect'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 773a0450-9811-4981-88e3-df805eaa3248
 keywords: ["PostScanJobStatusEvent.JobStatus.FilterStatuses.FilterStatus.Dialect"]
 ---

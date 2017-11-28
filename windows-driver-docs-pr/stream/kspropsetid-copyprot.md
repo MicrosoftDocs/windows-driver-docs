@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_CopyProt
 description: KSPROPSETID\_CopyProt
-MS-HAID:
-- 'dvdref\_d4480121-41d6-4f27-a050-d20f9085509b.xml'
-- 'stream.kspropsetid\_copyprot'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f5596bed-e7be-4ad0-aaf7-cb34550e0726
 ---
 

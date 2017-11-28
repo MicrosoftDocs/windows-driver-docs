@@ -1,12 +1,6 @@
 ---
 title: MediaBack element
 description: The optional MediaBack element contains all parameters that are specific to the scanning of the back side of the physical media.
-MS-HAID:
-- 'wsdss\_doc\_ef121912-284e-419a-a8f8-52abd2edff58.xml'
-- 'image.mediaback'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d736c76f-7ea7-49ca-9ad9-df35924fc7b4
 keywords: ["MediaBack element Imaging Devices"]
 topic_type:

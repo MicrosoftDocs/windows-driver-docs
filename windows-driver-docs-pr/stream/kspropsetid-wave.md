@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_Wave
 description: KSPROPSETID\_Wave
-MS-HAID:
-- 'dvdref\_c2add67b-3bfe-44a4-8136-f6666ba47435.xml'
-- 'stream.kspropsetid\_wave'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 33aa1ab6-bc17-4611-8df8-d785edcb4ddf
 ---
 

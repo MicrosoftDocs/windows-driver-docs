@@ -1,12 +1,6 @@
 ---
 title: KSEVENT\_DYNAMIC\_FORMAT\_CHANGE
 description: Clients enable the KSEVENT\_DYNAMIC\_FORMAT\_CHANGE event to signal that a dynamic format change has occurred.
-MS-HAID:
-- 'ks-event\_2cc950bb-f8c1-4b2f-936a-c82c5e06614a.xml'
-- 'stream.ksevent\_dynamic\_format\_change'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7f8cf67b-274b-4342-a9f7-7fab5345bbc9
 keywords: ["KSEVENT_DYNAMIC_FORMAT_CHANGE Streaming Media Devices"]
 topic_type:

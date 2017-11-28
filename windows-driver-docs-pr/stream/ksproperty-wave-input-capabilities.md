@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_WAVE\_INPUT\_CAPABILITIES
 description: The KSPROPERTY\_WAVE\_INPUT\_CAPABILITIES property returns a wave device's input capabilities.
-MS-HAID:
-- 'dvdref\_b247d134-a501-4b6b-961a-d05e28d0e31e.xml'
-- 'stream.ksproperty\_wave\_input\_capabilities'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 84ed0f41-52b6-40e0-b334-c336e158cbfc
 keywords: ["KSPROPERTY_WAVE_INPUT_CAPABILITIES Streaming Media Devices"]
 topic_type:

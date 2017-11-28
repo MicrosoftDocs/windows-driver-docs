@@ -1,12 +1,6 @@
 ---
 title: PixelsPerLine element
 description: The required PixelsPerLine element describes the exact width, in pixels, of the final output image.
-MS-HAID:
-- 'wsdss\_ops\_889e513d-e5e5-48b0-858a-9c2133575e7a.xml'
-- 'image.pixelsperline'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: aad46ca7-025e-4f50-9bc5-7f584a7bf684
 keywords: ["PixelsPerLine element Imaging Devices"]
 topic_type:

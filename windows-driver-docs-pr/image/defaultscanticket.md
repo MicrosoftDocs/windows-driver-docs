@@ -1,12 +1,6 @@
 ---
 title: DefaultScanTicket element
 description: .
-MS-HAID:
-- 'wsdss\_status\_3f9d23b8-f2f6-4b66-928c-314ca462f7bc.xml'
-- 'image.defaultscanticket'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1c0f15c8-b14f-4607-8655-36e1397082e6
 keywords: ["DefaultScanTicket element Imaging Devices"]
 topic_type:

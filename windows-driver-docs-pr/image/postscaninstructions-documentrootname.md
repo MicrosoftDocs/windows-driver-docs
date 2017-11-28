@@ -1,12 +1,6 @@
 ---
 title: PostScanInstructions.DocumentRootName
 description: PostScanInstructions.DocumentRootName
-MS-HAID:
-- 'dsm\_ref\_dsp\_d237d274-870c-4592-8fce-6420fa98e6f0.xml'
-- 'image.postscaninstructions\_documentrootname'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d8612911-857a-402a-b722-3518724a7c37
 keywords: ["PostScanInstructions.DocumentRootName"]
 ---

@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_CAPABILITIES
 description: The KSPROPERTY\_MEDIASEEKING\_CAPABILITIES property retrieves the media-seeking capabilities of a filter.
-MS-HAID:
-- 'ks-prop\_7eecfbec-0a15-4335-92fe-ac46d3e24e5b.xml'
-- 'stream.ksproperty\_mediaseeking\_capabilities'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f0ee8fed-cdb5-44f9-96c3-d6edf235ea35
 keywords: ["KSPROPERTY_MEDIASEEKING_CAPABILITIES Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: RotationValue element
 description: The required RotationValue element specifies a single rotation value supported by the scan device.
-MS-HAID:
-- 'wsdss\_configure\_e76a3bb6-a739-4695-865c-cbd1e79e3fac.xml'
-- 'image.rotationvalue'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 89b8527a-309a-4344-bf6e-3155bb056acf
 keywords: ["RotationValue element Imaging Devices"]
 topic_type:

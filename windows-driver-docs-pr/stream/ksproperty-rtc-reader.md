@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_RTC\_READER
 description: The KSPROPERTY\_RTC\_READER property retrieves the relative time counter (RTC) for the current tape position.
-MS-HAID:
-- 'vidcapprop\_76768d9e-b14b-41f4-97ec-2370079ad287.xml'
-- 'stream.ksproperty\_rtc\_reader'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 728a4504-de60-47c7-a381-3513f2d4745b
 keywords: ["KSPROPERTY_RTC_READER Streaming Media Devices"]
 topic_type:

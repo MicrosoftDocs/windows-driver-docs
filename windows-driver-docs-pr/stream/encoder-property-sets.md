@@ -1,12 +1,6 @@
 ---
 title: Encoder Property Sets
 description: Encoder Property Sets
-MS-HAID:
-- 'encoderef\_32cdb280-305e-4ff1-be12-4d75011176c7.xml'
-- 'stream.encoder\_property\_sets'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b273464d-0d40-488c-a848-291f949609f0
 ---
 

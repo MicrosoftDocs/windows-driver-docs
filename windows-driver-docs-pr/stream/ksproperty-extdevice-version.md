@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_EXTDEVICE\_VERSION
 description: The KSPROPERTY\_EXTDEVICE\_VERSION property retrieves the version of an external device.
-MS-HAID:
-- 'vidcapprop\_427a7bbb-caac-4483-9181-1ed658291dc0.xml'
-- 'stream.ksproperty\_extdevice\_version'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cb5133c9-b723-4d28-b591-8c65a8cc52a5
 keywords: ["KSPROPERTY_EXTDEVICE_VERSION Streaming Media Devices"]
 topic_type:

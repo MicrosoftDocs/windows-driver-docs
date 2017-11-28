@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPA\_ITEM\_TIME
 description: The WIA\_IPA\_ITEM\_TIME property contains the time that an image was originally captured.
-MS-HAID:
-- 'WIA\_PropTable\_ec6bfe71-8a6e-4d79-93fa-2393a1d8e794.xml'
-- 'image.wia\_ipa\_item\_time'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 30e29169-7a1a-412e-858a-a467d6f1b44e
 keywords: ["WIA_IPA_ITEM_TIME Imaging Devices"]
 topic_type:

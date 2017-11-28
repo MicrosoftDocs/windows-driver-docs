@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CLOCK\_TIME
 description: Clients use the KSPROPERTY\_CLOCK\_TIME property to determine the current presentation time on a clock.
-MS-HAID:
-- 'ks-prop\_8f873cea-d792-46ae-b46a-879af2cbfd17.xml'
-- 'stream.ksproperty\_clock\_time'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 42bae8fa-bff0-4411-bf32-5aa4da3e4f02
 keywords: ["KSPROPERTY_CLOCK_TIME Streaming Media Devices"]
 topic_type:

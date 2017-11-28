@@ -1,12 +1,6 @@
 ---
 title: Broadcast Network Type GUIDs
 description: Broadcast Network Type GUIDs
-MS-HAID:
-- 'bdaref\_3fb47610-d36a-49ca-81c5-cd0957269607.xml'
-- 'stream.broadcast\_network\_type\_guids'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3501cb1f-10f7-481b-bd2f-1f77156a676a
 ---
 

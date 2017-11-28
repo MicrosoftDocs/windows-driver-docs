@@ -1,12 +1,6 @@
 ---
 title: KSMETHODSETID\_BdaChangeSync
 description: KSMETHODSETID\_BdaChangeSync
-MS-HAID:
-- 'bdaref\_d431586f-149e-45a9-9c7b-e9f9fbc0f99a.xml'
-- 'stream.ksmethodsetid\_bdachangesync'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 260b227d-0d49-4efa-8f8c-4c66886cf9f6
 ---
 

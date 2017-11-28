@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_SIGNAL\_LOCKED
 description: Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCKED to determine whether a signal can be locked.
-MS-HAID:
-- 'bdaref\_60f9d7d2-af8b-4e34-8417-6fd6365935bd.xml'
-- 'stream.ksproperty\_bda\_signal\_locked'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 98023f83-2e90-4649-8e85-3e7b7f26b01d
 keywords: ["KSPROPERTY_BDA_SIGNAL_LOCKED Streaming Media Devices"]
 topic_type:

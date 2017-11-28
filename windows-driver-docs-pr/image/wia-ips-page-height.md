@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPS\_PAGE\_HEIGHT
 description: The WIA\_IPS\_PAGE\_HEIGHT property contains the height, in thousandths of an inch (.001), of the currently selected page. The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_996670d1-5ecd-4977-ad0d-50e6441665bd.xml'
-- 'image.wia\_ips\_page\_height'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f8721f87-641c-4da8-ad3a-a38bf18d3111
 keywords: ["WIA_IPS_PAGE_HEIGHT Imaging Devices"]
 topic_type:

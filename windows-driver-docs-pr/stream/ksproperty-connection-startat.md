@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CONNECTION\_STARTAT
 description: KSPROPERTY\_CONNECTION\_STARTAT is an optional property that is implemented by filters that support starting when a specified event occurs.
-MS-HAID:
-- 'ks-prop\_a1fe507b-4886-4e74-a3e8-825eece280ff.xml'
-- 'stream.ksproperty\_connection\_startat'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fcf76316-4016-4218-8530-5ef79794769a
 keywords: ["KSPROPERTY_CONNECTION_STARTAT Streaming Media Devices"]
 topic_type:

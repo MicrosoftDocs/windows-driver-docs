@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_BdaVoidTransform
 description: KSPROPSETID\_BdaVoidTransform
-MS-HAID:
-- 'bdaref\_d871ffa2-a064-4db2-9d0d-6b4843e845c7.xml'
-- 'stream.kspropsetid\_bdavoidtransform'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a204a221-891a-4039-bae9-634b9f678290
 ---
 

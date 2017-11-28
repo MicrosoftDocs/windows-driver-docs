@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_INTERFACES
 description: This property returns the list of interfaces supported by pins instantiated by a specific pin factory.
-MS-HAID:
-- 'ks-prop\_6a8b09a5-181b-43e5-a511-8fe58c9560ee.xml'
-- 'stream.ksproperty\_pin\_interfaces'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5a49c685-d086-4827-87a3-67d1fa80452a
 keywords: ["KSPROPERTY_PIN_INTERFACES Streaming Media Devices"]
 topic_type:

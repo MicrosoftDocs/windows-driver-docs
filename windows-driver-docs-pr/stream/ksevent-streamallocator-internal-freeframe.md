@@ -1,12 +1,6 @@
 ---
 title: KSEVENT\_STREAMALLOCATOR\_INTERNAL\_FREEFRAME
 description: The KSEVENT\_STREAMALLOCATOR\_INTERNAL\_FREEFRAME event is used only internally in the default allocator implementation and other implementations. This event is used to service waiters that have pending allocation IRPs and should not be enabled by clients.
-MS-HAID:
-- 'ks-event\_800afdf9-94d4-4f87-9457-d98ac0d15521.xml'
-- 'stream.ksevent\_streamallocator\_internal\_freeframe'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 97bd024f-1c1b-4a74-ba82-bd8baaebd664
 keywords: ["KSEVENT_STREAMALLOCATOR_INTERNAL_FREEFRAME Streaming Media Devices"]
 topic_type:

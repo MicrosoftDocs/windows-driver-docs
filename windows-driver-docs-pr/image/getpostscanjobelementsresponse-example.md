@@ -1,12 +1,6 @@
 ---
 title: GetPostScanJobElementsResponse Example
 description: GetPostScanJobElementsResponse Example
-MS-HAID:
-- 'dsm\_ref\_dsp\_fa3318a5-bbcc-4b69-bed6-57abad1bc477.xml'
-- 'image.getpostscanjobelementsresponse\_example'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3b0fcd15-930d-4fcb-99da-60cf444aae92
 keywords: ["GetPostScanJobElementsResponse Example"]
 ---

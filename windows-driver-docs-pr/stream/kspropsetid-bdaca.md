@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_BdaCA
 description: KSPROPSETID\_BdaCA
-MS-HAID:
-- 'bdaref\_65f1f1c1-5f57-46c7-9ee6-c30462e1dd87.xml'
-- 'stream.kspropsetid\_bdaca'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2ceb54ff-f111-4cf7-8c8e-f9a4dce42d4e
 ---
 

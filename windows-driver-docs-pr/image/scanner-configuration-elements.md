@@ -1,12 +1,6 @@
 ---
 title: Scanner Configuration Elements
 description: Scanner Configuration Elements
-MS-HAID:
-- 'wsdss\_configure\_43e96e7f-fee4-4928-81e9-6ff2b9cb0276.xml'
-- 'image.scanner\_configuration\_elements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f8adb58e-389e-4411-bbc0-3f74bba691df
 ---
 

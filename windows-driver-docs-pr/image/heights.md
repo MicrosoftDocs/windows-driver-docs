@@ -1,12 +1,6 @@
 ---
 title: Heights element
 description: The required Heights element contains the list of heights at which the scanner can scan images.
-MS-HAID:
-- 'wsdss\_platen\_e924b360-99f8-4ee1-bf7c-80785ea44e96.xml'
-- 'image.heights'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b45a967e-9ce9-417a-96f2-c199ab302b88
 keywords: ["Heights element Imaging Devices"]
 topic_type:

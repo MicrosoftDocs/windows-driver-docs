@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPS\_PREVIEW\_TYPE
 description: The WIA\_IPS\_PREVIEW\_TYPE property indicates if WIA\_IPA\_DATATYPE and WIA\_IPA\_DEPTH are changed, without having to request a new preview scan. The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_182fc094-7f4d-4e7f-a67b-09e2c4966565.xml'
-- 'image.wia\_ips\_preview\_type'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2d4f1052-da7a-404e-b462-9a7c2e2caf80
 keywords: ["WIA_IPS_PREVIEW_TYPE Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: JobEndStateEvent.JobEndState.JobCompletedStateReasons
 description: JobEndStateEvent.JobEndState.JobCompletedStateReasons
-MS-HAID:
-- 'dsm\_ref\_dsd\_8a81448e-3a66-43d3-8304-54081ad63f32.xml'
-- 'image.jobendstateevent\_jobendstate\_jobcompletedstatereasons'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dd16a914-8fe1-4173-93f5-5a88c119e182
 keywords: ["JobEndStateEvent.JobEndState.JobCompletedStateReasons"]
 ---

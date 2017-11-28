@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPS\_BRIGHTNESS
 description: The WIA\_IPS\_BRIGHTNESS property contains the current hardware brightness setting for a device.
-MS-HAID:
-- 'WIA\_PropTable\_d28d2f91-4163-4c9e-824f-b3d426bfbc50.xml'
-- 'image.wia\_ips\_brightness'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3954cf52-3bb1-4b76-9ff4-a638e1ddde83
 keywords: ["WIA_IPS_BRIGHTNESS Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: TVOT\_COMBOBOX
 description: TVOT\_COMBOBOX
-MS-HAID:
-- 'cpsuifnc\_7e1fd70f-b50f-4106-9ce7-021e11421a49.xml'
-- 'print.tvot\_combobox'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 186acda6-f87c-4e0f-95b8-d76823354cfd
 keywords: ["TVOT_COMBOBOX Print Devices"]
 topic_type:

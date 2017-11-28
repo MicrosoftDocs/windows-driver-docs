@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_CA\_MODULE\_STATUS
 description: Clients use KSPROPERTY\_BDA\_CA\_MODULE\_STATUS to determine status on the CA module associated with an ECM map node.
-MS-HAID:
-- 'bdaref\_ddbc58a7-093e-4d73-9cba-020e577e81be.xml'
-- 'stream.ksproperty\_bda\_ca\_module\_status'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4bd8a423-7a76-4702-a769-0de88fcc5772
 keywords: ["KSPROPERTY_BDA_CA_MODULE_STATUS Streaming Media Devices"]
 topic_type:

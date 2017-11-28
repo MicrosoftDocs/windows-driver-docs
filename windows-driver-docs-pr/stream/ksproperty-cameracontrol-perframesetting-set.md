@@ -1,9 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_SET
 description: The KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_SET property ID that is defined in KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_PROPERTY is used to set per-frame settings in the driver.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2EFBEA64-8340-4367-A56B-2C46167F0DE5
 keywords: ["KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_SET Streaming Media Devices"]
 topic_type:

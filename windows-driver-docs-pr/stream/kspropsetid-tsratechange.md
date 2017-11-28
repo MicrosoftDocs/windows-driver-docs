@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_TSRateChange
 description: KSPROPSETID\_TSRateChange
-MS-HAID:
-- 'dvdref\_cb02f058-790c-4fb0-a827-c857c7f66a30.xml'
-- 'stream.kspropsetid\_tsratechange'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bd2855e5-dd90-4ae3-a96e-e2163e94c7d6
 ---
 

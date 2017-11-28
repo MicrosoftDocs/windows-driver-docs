@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_GM\_TIMESTAMP\_CLOCK
 description: The KSPROPERTY\_GM\_TIMESTAMP\_CLOCK property is not currently supported.
-MS-HAID:
-- 'ks-prop\_2dbc23c1-f994-4120-b6f6-0bdadb73d99f.xml'
-- 'stream.ksproperty\_gm\_timestamp\_clock'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 009cab3e-0889-4b8e-aee4-235db31c068b
 keywords: ["KSPROPERTY_GM_TIMESTAMP_CLOCK Streaming Media Devices"]
 topic_type:

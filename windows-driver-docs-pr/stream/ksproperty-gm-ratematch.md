@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_GM\_RATEMATCH
 description: The KSPROPERTY\_GM\_RATEMATCH property is not currently supported.
-MS-HAID:
-- 'ks-prop\_8ebea38d-38b2-4aa5-b501-c16dd6c371f9.xml'
-- 'stream.ksproperty\_gm\_ratematch'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b712d709-e871-49e9-b92e-c439be1687ac
 keywords: ["KSPROPERTY_GM_RATEMATCH Streaming Media Devices"]
 topic_type:

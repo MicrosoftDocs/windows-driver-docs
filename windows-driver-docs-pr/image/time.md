@@ -1,12 +1,6 @@
 ---
 title: Time element
 description: The required Time element specifies the time at which a condition occurred.
-MS-HAID:
-- 'wsdss\_status\_1a42e114-1ffd-451b-8356-8849a5c4d35e.xml'
-- 'image.time'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1a10f6b4-1fcd-4697-9eb4-d58cca9c4a23
 keywords: ["Time element Imaging Devices"]
 topic_type:

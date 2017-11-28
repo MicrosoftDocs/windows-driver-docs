@@ -1,12 +1,6 @@
 ---
 title: KSNODETYPE\_VIDEO\_SELECTOR
 description: KSNODETYPE\_VIDEO\_SELECTOR
-MS-HAID:
-- 'ks-nodetypes\_97c7f55a-cd3c-4bf7-bd8f-9b61aa897800.xml'
-- 'stream.ksnodetype\_video\_selector'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fcd6c2d0-5dbb-454e-ac37-23c509f07b9c
 ---
 

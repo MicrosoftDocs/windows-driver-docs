@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_BdaTopology
 description: KSPROPSETID\_BdaTopology
-MS-HAID:
-- 'bdaref\_661708a5-0e65-4d6b-88f7-fb8bd1e99e0a.xml'
-- 'stream.kspropsetid\_bdatopology'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 26d67e68-56a9-4d36-9e33-6fb4486d7cd9
 ---
 

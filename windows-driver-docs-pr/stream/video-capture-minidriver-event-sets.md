@@ -1,12 +1,6 @@
 ---
 title: Video Capture Minidriver Event Sets
 description: Video Capture Minidriver Event Sets
-MS-HAID:
-- 'vidcapevent\_3a019082-5659-4df3-91cf-e66234d230f4.xml'
-- 'stream.video\_capture\_minidriver\_event\_sets'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 85fd6d3c-3f90-427e-b66c-8849d44bad58
 ---
 

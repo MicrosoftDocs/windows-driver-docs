@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_POSITIONS
 description: The KSPROPERTY\_MEDIASEEKING\_POSITIONS property sets the media time and/or the stop time on a filter.
-MS-HAID:
-- 'ks-prop\_ad269113-aa5f-4e88-97e6-9d19956e405b.xml'
-- 'stream.ksproperty\_mediaseeking\_positions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 20f0e97a-37bb-4c01-8012-b73bb765f4b9
 keywords: ["KSPROPERTY_MEDIASEEKING_POSITIONS Streaming Media Devices"]
 topic_type:

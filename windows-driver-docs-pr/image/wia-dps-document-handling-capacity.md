@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_DOCUMENT\_HANDLING\_CAPACITY
 description: The WIA\_DPS\_DOCUMENT\_HANDLING\_CAPACITY property is obsolete and should not be used.
-MS-HAID:
-- 'WIA\_PropTable\_a5f59083-0aec-460d-a7a6-2350de30cea2.xml'
-- 'image.wia\_dps\_document\_handling\_capacity'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a1d633a5-5dc1-420f-a9c9-b44422093478
 keywords: ["WIA_DPS_DOCUMENT_HANDLING_CAPACITY Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_PLATEN\_COLOR
 description: The WIA\_DPS\_PLATEN\_COLOR property contains the current platen color.
-MS-HAID:
-- 'WIA\_PropTable\_0fef6644-e6c8-4feb-b3ab-845ee5c91668.xml'
-- 'image.wia\_dps\_platen\_color'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d1bc9bc8-ad23-48b8-8456-21aa3556ab69
 keywords: ["WIA_DPS_PLATEN_COLOR Imaging Devices"]
 topic_type:

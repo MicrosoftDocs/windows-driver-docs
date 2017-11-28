@@ -1,12 +1,6 @@
 ---
 title: Kernel Streaming Event Sets
 description: Kernel Streaming Event Sets
-MS-HAID:
-- 'ks-event\_01115a47-5437-49f0-8cb4-de642d8a712b.xml'
-- 'stream.kernel\_streaming\_event\_sets'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 424b3262-2e38-4748-8a6c-35dea25935a4
 ---
 

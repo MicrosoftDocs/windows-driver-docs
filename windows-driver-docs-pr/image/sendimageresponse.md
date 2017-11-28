@@ -1,12 +1,6 @@
 ---
 title: SendImageResponse
 description: SendImageResponse
-MS-HAID:
-- 'dsm\_ref\_dsp\_dcbcd9d9-3a26-467d-8e28-708f748a3651.xml'
-- 'image.sendimageresponse'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b850f63e-d9d3-4aa7-ba74-8d2914588796
 keywords: ["SendImageResponse"]
 ---

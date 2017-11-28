@@ -1,12 +1,6 @@
 ---
 title: KSEVENT\_BDA\_PIN\_DISCONNECTED
 description: Clients use KSEVENT\_BDA\_PIN\_DISCONNECTED to request notification when a pin becomes disconnected.
-MS-HAID:
-- 'bdaref\_4c5244ce-57f2-4824-9394-b7a6f8eac1b0.xml'
-- 'stream.ksevent\_bda\_pin\_disconnected'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b3209e9d-21e3-4ade-a6da-9d17ecf31c74
 keywords: ["KSEVENT_BDA_PIN_DISCONNECTED Streaming Media Devices"]
 topic_type:

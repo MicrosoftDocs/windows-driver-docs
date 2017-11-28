@@ -1,12 +1,6 @@
 ---
 title: CancelJobResponse element
 description: The required CancelJobResponse operation element acknowledges a client's job cancelation request.
-MS-HAID:
-- 'wsdss\_ops\_46d60908-4dc0-40e3-b0f9-3e1f264c9f06.xml'
-- 'image.canceljobresponse'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 754b6cf0-3581-4530-9ad6-6b3a19b540f1
 keywords: ["CancelJobResponse element Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: ClientDisplayName element
 description: The required ClientDisplayName element specifies the string that the scanner should display in its user interface.
-MS-HAID:
-- 'wsdss\_events\_f6642c6b-1f39-482c-9fae-73d51b793302.xml'
-- 'image.clientdisplayname'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e43e5c51-5f8e-47af-b5da-707b89401935
 keywords: ["ClientDisplayName element Imaging Devices"]
 topic_type:

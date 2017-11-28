@@ -1,12 +1,6 @@
 ---
 title: AVC\_FUNCTION\_CLR\_CONNECTINFO
 description: AVC\_FUNCTION\_CLR\_CONNECTINFO
-MS-HAID:
-- 'avcref\_ca496369-e11b-4789-8527-633f013fa0e8.xml'
-- 'stream.avc\_function\_clr\_connectinfo'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 035555c7-4668-4eda-aed1-44b2b5794ff5
 keywords: ["AVC_FUNCTION_CLR_CONNECTINFO Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: ElementData for JobElements element
 description: The required ElementData element contains the data that is returned for a job-related schema request.
-MS-HAID:
-- 'wsdss\_ops\_15f43fde-ec5b-4676-9cb0-51eea367ecb7.xml'
-- 'image.elementdata\_for\_jobelements\_element'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6d9724cd-c076-4c87-9c01-ec2c16cd2aac
 keywords: ["ElementData for JobElements element Imaging Devices"]
 topic_type:

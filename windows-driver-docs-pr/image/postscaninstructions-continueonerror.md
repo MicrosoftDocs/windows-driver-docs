@@ -1,12 +1,6 @@
 ---
 title: PostScanInstructions.ContinueOnError
 description: PostScanInstructions.ContinueOnError
-MS-HAID:
-- 'dsm\_ref\_dsp\_c44f56dc-0036-4ba5-a22a-c7aa2850f069.xml'
-- 'image.postscaninstructions\_continueonerror'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b0d28224-c9a0-40de-bd1c-1e1f0f4c5247
 keywords: ["PostScanInstructions.ContinueOnError"]
 ---

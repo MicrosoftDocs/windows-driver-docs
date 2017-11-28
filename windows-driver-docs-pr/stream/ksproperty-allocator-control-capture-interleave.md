@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_ALLOCATOR\_CONTROL\_CAPTURE\_INTERLEAVE
 description: The KSPROPERTY\_ALLOCATOR\_CONTROL\_CAPTURE\_INTERLEAVE property informs the Overlay Mixer if interleaved capture is possible.
-MS-HAID:
-- 'vidcapprop\_9f3e7de5-6c54-4cb6-af49-7aace389ec66.xml'
-- 'stream.ksproperty\_allocator\_control\_capture\_interleave'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ea38289f-2d4e-4613-ba08-c8ab49f6fce7
 keywords: ["KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE Streaming Media Devices"]
 topic_type:

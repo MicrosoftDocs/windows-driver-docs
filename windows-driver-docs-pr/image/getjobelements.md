@@ -1,12 +1,6 @@
 ---
 title: GetJobElements
 description: GetJobElements
-MS-HAID:
-- 'dsm\_ref\_dsd\_f2b45d97-53f2-409b-bdd9-f9f33b383c82.xml'
-- 'image.getjobelements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e9f3713f-7227-48db-a0c0-6891589e06a1
 keywords: ["GetJobElements"]
 ---

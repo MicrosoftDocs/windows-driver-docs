@@ -1,12 +1,6 @@
 ---
 title: Finishing
 description: Finishing
-MS-HAID:
-- 'autocfg\_422fd6d0-36d4-4500-9e0e-6732dbf4a956.xml'
-- 'print.finishing'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5c8e556b-102a-4caf-92d3-8b61bec1a29f
 ---
 

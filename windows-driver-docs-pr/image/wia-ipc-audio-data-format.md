@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPC\_AUDIO\_DATA\_FORMAT
 description: The WIA\_IPC\_AUDIO\_DATA\_FORMAT property is obsolete and should not be used.
-MS-HAID:
-- 'WIA\_PropTable\_e52a07ba-8c7b-46c7-92d0-7d04e26ff741.xml'
-- 'image.wia\_ipc\_audio\_data\_format'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8b7ec009-ac27-4087-ac88-1efadcd6bdd8
 keywords: ["WIA_IPC_AUDIO_DATA_FORMAT Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: PostScanJobEndStateEvent.PostScanJobEndState.FilterCompletedStatuses.FilterStatus.Dialect
 description: PostScanJobEndStateEvent.PostScanJobEndState.FilterCompletedStatuses.FilterStatus.Dialect
-MS-HAID:
-- 'dsm\_ref\_dsp\_1b5d5af7-706d-48c1-a24d-38837689564a.xml'
-- 'image.postscanjobendstateevent\_postscanjobendstate\_filtercompletedstatuses\_f'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 24bd74c0-cfd3-4464-bd78-fd6534aad9d3
 keywords: ["PostScanJobEndStateEvent.PostScanJobEndState.FilterCompletedStatuses.FilterStatus.Dialect"]
 ---

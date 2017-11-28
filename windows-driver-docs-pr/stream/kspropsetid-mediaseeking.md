@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_MediaSeeking
 description: KSPROPSETID\_MediaSeeking
-MS-HAID:
-- 'ks-prop\_3ba7964f-b1f2-4c32-843c-963ba07db3bf.xml'
-- 'stream.kspropsetid\_mediaseeking'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0c0ffb59-0b67-4d88-9737-7dd4ad5369ac
 ---
 

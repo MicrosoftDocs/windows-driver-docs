@@ -1,12 +1,6 @@
 ---
 title: PROPSETID\_TUNER
 description: PROPSETID\_TUNER
-MS-HAID:
-- 'vidcapprop\_bc2656c0-6134-4d16-a85d-e7b65f87418e.xml'
-- 'stream.propsetid\_tuner'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2697fb71-32da-40d0-aebf-d91b1a0587ba
 ---
 

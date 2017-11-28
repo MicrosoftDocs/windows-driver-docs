@@ -1,12 +1,6 @@
 ---
 title: PostScanJobStatusEvent.JobStatus.JobCreatedTime
 description: PostScanJobStatusEvent.JobStatus.JobCreatedTime
-MS-HAID:
-- 'dsm\_ref\_dsp\_3e3d1342-ef30-4a21-988d-9a8ecc406a54.xml'
-- 'image.postscanjobstatusevent\_jobstatus\_jobcreatedtime'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f2ba9fff-4b50-4eb2-a9cd-9c7536c0d821
 keywords: ["PostScanJobStatusEvent.JobStatus.JobCreatedTime"]
 ---

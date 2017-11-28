@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CONNECTION\_ALLOCATORFRAMING\_EX
 description: AVStream clients use the KSPROPERTY\_CONNECTION\_ALLOCATORFRAMING\_EX property to determine framing requirements for a pin.
-MS-HAID:
-- 'ks-prop\_a81b5574-dcd6-432d-bd0d-f78ab4b1182d.xml'
-- 'stream.ksproperty\_connection\_allocatorframing\_ex'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7ff1462f-959b-413e-a888-bcf7d251edee
 keywords: ["KSPROPERTY_CONNECTION_ALLOCATORFRAMING_EX Streaming Media Devices"]
 topic_type:

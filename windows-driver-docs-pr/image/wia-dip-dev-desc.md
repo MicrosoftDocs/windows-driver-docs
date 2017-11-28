@@ -1,12 +1,6 @@
 ---
 title: WIA\_DIP\_DEV\_DESC
 description: The WIA\_DIP\_DEV\_DESC property contains the device description string for a WIA minidriver. The WIA service creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_4352bf50-8756-41b0-bf50-cd4e50258576.xml'
-- 'image.wia\_dip\_dev\_desc'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ce10deb8-7f33-45da-8a0e-cdcd7bf08ff9
 keywords: ["WIA_DIP_DEV_DESC Imaging Devices"]
 topic_type:

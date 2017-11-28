@@ -1,12 +1,6 @@
 ---
 title: ScanRegionYOffset element
 description: The optional ScanRegionYOffset element specifies the distance from the slow scan lead edge to the beginning of the scan region.
-MS-HAID:
-- 'wsdss\_doc\_8a4219d1-d3a5-4d20-a896-a2cc90433d89.xml'
-- 'image.scanregionyoffset'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fb1b6402-917a-486b-a762-219cc3e8aa82
 keywords: ["ScanRegionYOffset element Imaging Devices"]
 topic_type:

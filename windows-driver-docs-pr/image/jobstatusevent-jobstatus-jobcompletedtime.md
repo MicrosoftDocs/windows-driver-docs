@@ -1,12 +1,6 @@
 ---
 title: JobStatusEvent.JobStatus.JobCompletedTime
 description: JobStatusEvent.JobStatus.JobCompletedTime
-MS-HAID:
-- 'dsm\_ref\_dsd\_d309b8a4-6d41-45d6-9420-8ebe3cfd4fc6.xml'
-- 'image.jobstatusevent\_jobstatus\_jobcompletedtime'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 49e31ccb-98af-4a0e-89a2-234a1b512c22
 keywords: ["JobStatusEvent.JobStatus.JobCompletedTime"]
 ---

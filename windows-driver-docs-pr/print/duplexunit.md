@@ -1,12 +1,6 @@
 ---
 title: DuplexUnit
 description: DuplexUnit
-MS-HAID:
-- 'autocfg\_9f75bbbd-b791-4e2a-a30d-cdbb7811fa1b.xml'
-- 'print.duplexunit'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cad41b5a-b594-474a-9ec4-27b4550882cb
 ---
 

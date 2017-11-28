@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_STREAMALLOCATOR\_FUNCTIONTABLE
 description: The KSPROPERTY\_STREAMALLOCATOR\_FUNCTIONTABLE property retrieves the function table of the given allocator.
-MS-HAID:
-- 'ks-prop\_34803554-2770-4cb1-8c70-aaf7d2174df2.xml'
-- 'stream.ksproperty\_streamallocator\_functiontable'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5a55c808-2960-41c7-b242-69d1e10d0015
 keywords: ["KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE Streaming Media Devices"]
 topic_type:

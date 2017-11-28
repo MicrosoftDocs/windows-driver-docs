@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPC\_AUDIO\_DATA
 description: The WIA\_IPC\_AUDIO\_DATA property is obsolete and should not be used.
-MS-HAID:
-- 'WIA\_PropTable\_83655e29-258a-4c93-9256-5794b9703093.xml'
-- 'image.wia\_ipc\_audio\_data'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 360ad9ad-9a66-42c0-8b22-f0a58ba9b99d
 keywords: ["WIA_IPC_AUDIO_DATA Imaging Devices"]
 topic_type:

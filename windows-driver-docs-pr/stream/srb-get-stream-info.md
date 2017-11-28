@@ -1,12 +1,6 @@
 ---
 title: SRB\_GET\_STREAM\_INFO
 description: SRB\_GET\_STREAM\_INFO
-MS-HAID:
-- 'strclass-srbs\_a3880692-bd3a-4951-9aad-531d70344eb6.xml'
-- 'stream.srb\_get\_stream\_info'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ff5412ee-6e4f-43f4-a90d-4a2bdfa5d4ae
 keywords: ["SRB_GET_STREAM_INFO Streaming Media Devices"]
 topic_type:

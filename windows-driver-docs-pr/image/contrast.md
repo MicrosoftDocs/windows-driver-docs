@@ -1,12 +1,6 @@
 ---
 title: Contrast element
 description: The optional Contrast element specifies the relative amount to reduce or enhance the contrast of the scanned document.
-MS-HAID:
-- 'wsdss\_doc\_40516e83-410a-44af-bcd5-5cbc79d4fab9.xml'
-- 'image.contrast'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c40e824f-4e10-4590-a524-ff69a21a4499
 keywords: ["Contrast element Imaging Devices"]
 topic_type:

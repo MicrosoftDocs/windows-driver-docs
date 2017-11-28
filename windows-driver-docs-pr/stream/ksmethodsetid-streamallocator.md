@@ -1,12 +1,6 @@
 ---
 title: KSMETHODSETID\_StreamAllocator
 description: KSMETHODSETID\_StreamAllocator
-MS-HAID:
-- 'ks-method\_e78607b3-08e2-44bf-aa7e-64bd092d639b.xml'
-- 'stream.ksmethodsetid\_streamallocator'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 21097c03-9299-41a6-a0de-48be72f38778
 ---
 

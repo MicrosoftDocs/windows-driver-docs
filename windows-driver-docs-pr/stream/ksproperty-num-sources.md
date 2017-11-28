@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_NUM\_SOURCES
 description: The KSPROPERTY\_NUM\_SOURCES property specifies the number of input pins on the selector unit.
-MS-HAID:
-- 'vidcapprop\_1ab5b371-9923-4393-b6d1-597870411917.xml'
-- 'stream.ksproperty\_num\_sources'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 94d0f926-0551-4fe2-aa7f-2898e04c4b36
 keywords: ["KSPROPERTY_NUM_SOURCES Streaming Media Devices"]
 topic_type:

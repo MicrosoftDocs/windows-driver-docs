@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_BdaNullTransform
 description: KSPROPSETID\_BdaNullTransform
-MS-HAID:
-- 'bdaref\_06b985d0-247a-472d-88d3-5da89f41e86a.xml'
-- 'stream.kspropsetid\_bdanulltransform'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 08277c76-4fa5-46d0-8c86-4bc0e060fa9c
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: JobName element
 description: The required JobName element specifies the client-supplied, user-friendly name of the scan job.
-MS-HAID:
-- 'wsdss\_job\_b2243aad-4f4d-4d62-a66b-5bdfbe701227.xml'
-- 'image.jobname'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b6d2baba-6a2e-4971-880b-9a4df66dc1ae
 keywords: ["JobName element Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: Film element
 description: The optional Film element describes the capabilities of the film scanning option that is attached to the scanner.
-MS-HAID:
-- 'wsdss\_adffilm\_b3de3935-9e88-4565-bfa6-b489451d37f5.xml'
-- 'image.film'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 132690c4-71c2-4379-bdb2-dc9944d9c5ea
 keywords: ["Film element Imaging Devices"]
 topic_type:

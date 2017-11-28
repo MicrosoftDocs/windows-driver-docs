@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPS\_MIN\_HORIZONTAL\_SIZE
 description: The WIA\_IPS\_MIN\_HORIZONTAL\_SIZE property contains the physical horizontal dimensions of the smallest page that a scanner's document feeder can scan, in thousandths of an inch (.001). The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_dd5ed30e-27ff-4110-a68c-5e2e0c129bb2.xml'
-- 'image.wia\_ips\_min\_horizontal\_size'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 95489d82-037b-45ac-86e8-e5584c66251c
 keywords: ["WIA_IPS_MIN_HORIZONTAL_SIZE Imaging Devices"]
 topic_type:

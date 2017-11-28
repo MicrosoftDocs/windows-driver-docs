@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_VPConfig and KSPROPSETID\_VPVBIConfig
 description: KSPROPSETID\_VPConfig and KSPROPSETID\_VPVBIConfig
-MS-HAID:
-- 'dvdref\_2ab95a14-ec2e-49c0-a15c-477141bd28d6.xml'
-- 'stream.kspropsetid\_vpconfig\_and\_kspropsetid\_vpvbiconfig'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3e9a79a2-f217-4736-87b2-a968b358bbc7
 ---
 

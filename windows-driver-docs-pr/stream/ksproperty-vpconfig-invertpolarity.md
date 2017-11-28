@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_INVERTPOLARITY
 description: The KSPROPERTY\_VPCONFIG\_INVERTPOLARITY property toggles the global polarity flag, forcing the video port to be inverted.
-MS-HAID:
-- 'dvdref\_bfe1d273-f7ed-4a9f-90ef-002f639ab4d0.xml'
-- 'stream.ksproperty\_vpconfig\_invertpolarity'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c0b69aa4-0f81-42b4-9a69-5afcf702f5f1
 keywords: ["KSPROPERTY_VPCONFIG_INVERTPOLARITY Streaming Media Devices"]
 topic_type:

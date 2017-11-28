@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_TIMER\_MODE
 description: The WIA\_DPC\_TIMER\_MODE property is reserved by Microsoft for future use and is not implemented at this time.
-MS-HAID:
-- 'WIA\_PropTable\_232b433a-1af5-4087-878f-0cb142c1314f.xml'
-- 'image.wia\_dpc\_timer\_mode'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fcf165ec-62ad-4a0c-9903-5ce6fab69336
 keywords: ["WIA_DPC_TIMER_MODE Imaging Devices"]
 topic_type:

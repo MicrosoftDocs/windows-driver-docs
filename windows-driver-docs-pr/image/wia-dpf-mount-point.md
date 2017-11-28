@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPF\_MOUNT\_POINT
 description: The WIA\_DPF\_MOUNT\_POINT property is reserved by Microsoft for future use and is not implemented at this time.
-MS-HAID:
-- 'WIA\_PropTable\_a76c0bbc-6994-42e1-b2a9-d122af794ad0.xml'
-- 'image.wia\_dpf\_mount\_point'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4bcde680-ff52-46a1-9369-846acfc4f52b
 keywords: ["WIA_DPF_MOUNT_POINT Imaging Devices"]
 topic_type:

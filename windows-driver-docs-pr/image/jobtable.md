@@ -1,12 +1,6 @@
 ---
 title: JobTable element
 description: The required JobTable element contains current and historical information about scan jobs.
-MS-HAID:
-- 'wsdss\_job\_68974764-400f-4be3-812e-f484e8344932.xml'
-- 'image.jobtable'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 349ca443-5296-4200-884d-91fcdb222be4
 keywords: ["JobTable element Imaging Devices"]
 topic_type:

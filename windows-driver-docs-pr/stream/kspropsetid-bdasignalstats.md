@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_BdaSignalStats
 description: KSPROPSETID\_BdaSignalStats
-MS-HAID:
-- 'bdaref\_d67822b3-4ba7-46f9-94c3-b6b4ef8faa06.xml'
-- 'stream.kspropsetid\_bdasignalstats'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ea368344-e56d-47d1-bc1f-241ba8aa0bc4
 ---
 

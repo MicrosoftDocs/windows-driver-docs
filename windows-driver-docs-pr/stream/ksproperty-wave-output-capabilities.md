@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_WAVE\_OUTPUT\_CAPABILITIES
 description: The KSPROPERTY\_WAVE\_OUTPUT\_CAPABILITIES property returns a wave device's wave output capabilities.
-MS-HAID:
-- 'dvdref\_ca5aa617-8efe-4873-b49b-1d1aa7e6a199.xml'
-- 'stream.ksproperty\_wave\_output\_capabilities'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9e5e8ed1-0d08-45b7-b683-df7ce4424c26
 keywords: ["KSPROPERTY_WAVE_OUTPUT_CAPABILITIES Streaming Media Devices"]
 topic_type:

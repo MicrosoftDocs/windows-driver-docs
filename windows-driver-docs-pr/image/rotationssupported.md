@@ -1,12 +1,6 @@
 ---
 title: RotationsSupported element
 description: The required RotationsSupported element contains the list of rotation values that the scanner supports for rotating each image of a scanned document.
-MS-HAID:
-- 'wsdss\_configure\_5c9f493a-3cec-474b-aa5d-9674b8fd424b.xml'
-- 'image.rotationssupported'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: da72cc1e-40e8-46a1-8215-0a20a52a0e19
 keywords: ["RotationsSupported element Imaging Devices"]
 topic_type:

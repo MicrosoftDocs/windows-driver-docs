@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_RGB\_GAIN
 description: The WIA\_DPC\_RGB\_GAIN property contains a null-terminated Unicode string that represents the red, green, and blue gain, respectively, that is applied to image data.
-MS-HAID:
-- 'WIA\_PropTable\_fdc386ec-fd7a-43ad-b428-b13e81cf6dd3.xml'
-- 'image.wia\_dpc\_rgb\_gain'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 26448818-0885-4084-a0f3-c9e25d15dbf2
 keywords: ["WIA_DPC_RGB_GAIN Imaging Devices"]
 topic_type:

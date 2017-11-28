@@ -1,12 +1,6 @@
 ---
 title: CancelPostScanJobRequest Example
 description: CancelPostScanJobRequest Example
-MS-HAID:
-- 'dsm\_ref\_dsp\_4ff2448a-33d4-4fb5-a123-802f542022d1.xml'
-- 'image.cancelpostscanjobrequest\_example'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ce750b7b-0a37-4fbb-baf1-4d699d78c938
 keywords: ["CancelPostScanJobRequest Example"]
 ---

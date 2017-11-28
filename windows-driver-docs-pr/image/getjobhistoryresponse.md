@@ -1,12 +1,6 @@
 ---
 title: GetJobHistoryResponse element
 description: The required GetJobHistoryResponse element returns a summary of completed jobs.
-MS-HAID:
-- 'wsdss\_ops\_4a0b26eb-fef1-4996-b01a-61881365a6b6.xml'
-- 'image.getjobhistoryresponse'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 85c9edb4-fe6c-49a7-899a-71ce65e38852
 keywords: ["GetJobHistoryResponse element Imaging Devices"]
 topic_type:

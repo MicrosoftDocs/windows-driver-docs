@@ -1,12 +1,6 @@
 ---
 title: Direction
 description: Direction
-MS-HAID:
-- 'autocfg\_03da4517-5798-42de-9e7a-6f909e596990.xml'
-- 'print.direction2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 19aa1c88-968d-4789-89cc-00b76b1a30d9
 ---
 

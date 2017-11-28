@@ -1,12 +1,6 @@
 ---
 title: action element
 description: The optional action element describes an action that will be completed when a user clicks a button in the balloon message.
-MS-HAID:
-- 'async\_e2652093-33ee-4394-85b6-cb69abeb94da.xml'
-- 'print.action'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dae207ad-072e-4de6-b6a2-f1188ce91065
 keywords: ["action element Print Devices"]
 topic_type:

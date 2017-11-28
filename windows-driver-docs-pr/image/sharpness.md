@@ -1,12 +1,6 @@
 ---
 title: Sharpness element
 description: The optional Sharpness element specifies the relative amount to reduce or enhance the sharpness of the scanned document.
-MS-HAID:
-- 'wsdss\_doc\_8953c902-3282-4563-a86e-32231f4b9fa5.xml'
-- 'image.sharpness'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 80a2023e-74fa-4e7e-b8e7-ecae8827cf5b
 keywords: ["Sharpness element Imaging Devices"]
 topic_type:

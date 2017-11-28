@@ -1,9 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_WARMSTART
 description: The warm start property control provides a hint for the driver to keep the camera pin ready to allow glitch-free operation.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: EAC20371-6228-48F1-85FF-FAECC835B070
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_WARMSTART Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPS\_XRES
 description: The WIA\_IPS\_XRES property contains the current horizontal resolution, in pixels per inch, for a device.
-MS-HAID:
-- 'WIA\_PropTable\_4e3539d2-1541-4622-b41d-0d8a65793123.xml'
-- 'image.wia\_ips\_xres'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cde64e80-b4b0-4360-a14e-b6918b97aabc
 keywords: ["WIA_IPS_XRES Imaging Devices"]
 topic_type:

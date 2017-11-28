@@ -1,12 +1,6 @@
 ---
 title: EVENTSETID\_TUNER
 description: EVENTSETID\_TUNER
-MS-HAID:
-- 'vidcapevent\_04d6db41-a18e-4672-979c-434adfc82ba8.xml'
-- 'stream.eventsetid\_tuner'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0b8770cd-f88b-4c1d-8625-39c42cb14dff
 ---
 

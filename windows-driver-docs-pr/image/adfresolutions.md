@@ -1,12 +1,6 @@
 ---
 title: ADFResolutions element
 description: The required ADFResolutions element contains a list of resolutions at which the front or back side of the scanner's automatic document feeder (ADF) can scan.
-MS-HAID:
-- 'wsdss\_adffilm\_51d6b4ca-2731-497f-b5be-eb8eef9e0d14.xml'
-- 'image.adfresolutions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6747b4d9-3333-4f06-9c1e-043dde24273c
 keywords: ["ADFResolutions element Imaging Devices"]
 topic_type:

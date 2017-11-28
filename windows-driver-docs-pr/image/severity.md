@@ -1,12 +1,6 @@
 ---
 title: Severity element
 description: The required Severity element specifies the severity level of the current DeviceCondition or ConditionHistoryEntry element.
-MS-HAID:
-- 'wsdss\_status\_1e2d7db8-cbb6-4c9b-906c-7dc34ae58ea2.xml'
-- 'image.severity'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 51c08a50-0c2b-40d9-883e-32460c2024ad
 keywords: ["Severity element Imaging Devices"]
 topic_type:

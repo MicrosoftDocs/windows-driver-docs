@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_DVDCOPY\_REGION
 description: The KSPROPERTY\_DVDCOPY\_REGION property specifies the DVD copy-protection region according to language restrictions.
-MS-HAID:
-- 'dvdref\_7353d190-4a71-4061-9ec6-fce21559be15.xml'
-- 'stream.ksproperty\_dvdcopy\_region'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b0ad355b-607f-43c5-9959-a309c6c63259
 keywords: ["KSPROPERTY_DVDCOPY_REGION Streaming Media Devices"]
 topic_type:

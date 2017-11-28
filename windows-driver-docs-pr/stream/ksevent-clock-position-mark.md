@@ -1,12 +1,6 @@
 ---
 title: KSEVENT\_CLOCK\_POSITION\_MARK
 description: A KSEVENT\_CLOCK\_POSITION\_MARK event occurs when a certain time on a clock is reached.
-MS-HAID:
-- 'ks-event\_d6690c9d-c3eb-4293-8f34-10685b296fe5.xml'
-- 'stream.ksevent\_clock\_position\_mark'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 489e7441-41e9-40e5-8bf5-0bff2fda9f27
 keywords: ["KSEVENT_CLOCK_POSITION_MARK Streaming Media Devices"]
 topic_type:

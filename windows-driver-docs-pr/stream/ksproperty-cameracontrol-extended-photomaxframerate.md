@@ -1,9 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMAXFRAMERATE
 description: This property provides the maximum capture frame rate for a camera when it is in photo sequence mode.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 49A93E02-232C-4009-8F18-75D067CA7150
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMAXFRAMERATE Streaming Media Devices"]
 topic_type:

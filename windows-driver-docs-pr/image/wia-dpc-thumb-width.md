@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_THUMB\_WIDTH
 description: The WIA\_DPC\_THUMB\_WIDTH property defines the width, in pixels, of a thumbnail image to use for newly captured images.
-MS-HAID:
-- 'WIA\_PropTable\_9e4f93e0-30b7-42af-8026-633e8a09d045.xml'
-- 'image.wia\_dpc\_thumb\_width'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 01136695-9bef-4d47-89df-fb1d14465bef
 keywords: ["WIA_DPC_THUMB_WIDTH Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: KSINTERFACE\_STANDARD\_CONTROL
 description: KSINTERFACE\_STANDARD\_CONTROL
-MS-HAID:
-- 'ks-interfaces\_a50b3c94-ee06-4793-b6d6-842e2eee4f7f.xml'
-- 'stream.ksinterface\_standard\_control'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 672b63bd-cda4-48c3-9605-0f54802611ce
 keywords: ["KSINTERFACE_STANDARD_CONTROL Streaming Media Devices"]
 topic_type:

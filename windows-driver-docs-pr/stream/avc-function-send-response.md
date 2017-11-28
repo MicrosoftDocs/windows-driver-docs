@@ -1,12 +1,6 @@
 ---
 title: AVC\_FUNCTION\_SEND\_RESPONSE
 description: AVC\_FUNCTION\_SEND\_RESPONSE
-MS-HAID:
-- 'avcref\_8e3ab83b-6d29-495e-8c1d-b5c935cff731.xml'
-- 'stream.avc\_function\_send\_response'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f04caed8-8521-4dfa-9bfa-cf71ec7a658e
 keywords: ["AVC_FUNCTION_SEND_RESPONSE Streaming Media Devices"]
 topic_type:

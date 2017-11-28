@@ -1,12 +1,6 @@
 ---
 title: KSEVENT\_VIDCAP\_AUTO\_UPDATE
 description: The KSEVENT\_VIDCAP\_AUTO\_UPDATE event is triggered when a property value changes.
-MS-HAID:
-- 'vidcapevent\_ada8d670-d879-4a6d-919e-ec87ef562daa.xml'
-- 'stream.ksevent\_vidcap\_auto\_update'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dd7e665f-104d-4276-94aa-62d64faba69d
 keywords: ["KSEVENT_VIDCAP_AUTO_UPDATE Streaming Media Devices"]
 topic_type:

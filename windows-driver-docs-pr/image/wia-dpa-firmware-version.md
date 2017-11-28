@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPA\_FIRMWARE\_VERSION
 description: The WIA\_DPA\_FIRMWARE\_VERSION property contains a device firmware version. The minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_1e7fffe0-0928-42c0-a234-f6b777747960.xml'
-- 'image.wia\_dpa\_firmware\_version'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 868979d9-81a4-4655-915c-539771e438a6
 keywords: ["WIA_DPA_FIRMWARE_VERSION Imaging Devices"]
 topic_type:

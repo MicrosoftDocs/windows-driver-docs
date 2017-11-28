@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_FOCUS\_DISTANCE
 description: The WIA\_DPC\_FOCUS\_DISTANCE property contains the distance, in millimeters, between the image-capturing plane of a digital camera and the point of focus.
-MS-HAID:
-- 'WIA\_PropTable\_8708c251-b9c1-496f-86f3-3b706e4a8712.xml'
-- 'image.wia\_dpc\_focus\_distance'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0f12fbdf-2c40-4b8b-9a22-ee35aa8cbc3f
 keywords: ["WIA_DPC_FOCUS_DISTANCE Imaging Devices"]
 topic_type:

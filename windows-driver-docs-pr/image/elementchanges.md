@@ -1,12 +1,6 @@
 ---
 title: ElementChanges element
 description: The required ElementChanges element contains the changes to the ScannerDescription, ScannerConfiguration, DefaultScanTicket, and vendor-extended elements.
-MS-HAID:
-- 'wsdss\_events\_d1273f76-8174-4c74-aeae-fb6305132aa6.xml'
-- 'image.elementchanges'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d6f1d188-beb6-4ea3-a362-de64d8d8dacb
 keywords: ["ElementChanges element Imaging Devices"]
 topic_type:

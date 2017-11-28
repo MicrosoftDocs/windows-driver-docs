@@ -1,12 +1,6 @@
 ---
 title: PROPSETID\_VIDCAP\_VIDEODECODER
 description: PROPSETID\_VIDCAP\_VIDEODECODER
-MS-HAID:
-- 'vidcapprop\_edad8ef7-aa8c-4a45-962a-777a3c9e1e79.xml'
-- 'stream.propsetid\_vidcap\_videodecoder'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 86b581b7-51fd-4662-8291-4c5baf9d3b16
 ---
 

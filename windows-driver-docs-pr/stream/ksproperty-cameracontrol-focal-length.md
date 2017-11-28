@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_FOCAL\_LENGTH
 description: The KSPROPERTY\_CAMERACONTROL\_FOCAL\_LENGTH property retrieves focal length information for a camera.
-MS-HAID:
-- 'vidcapprop\_c3dc7a87-9c81-4043-ba83-62b1f385011e.xml'
-- 'stream.ksproperty\_cameracontrol\_focal\_length'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a7fba5e4-abd1-46ae-b93c-5fede0249771
 keywords: ["KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH Streaming Media Devices"]
 topic_type:

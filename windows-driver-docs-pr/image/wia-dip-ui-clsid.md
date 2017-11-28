@@ -1,12 +1,6 @@
 ---
 title: WIA\_DIP\_UI\_CLSID
 description: The WIA\_DIP\_UI\_CLSID property contains the vendor-supplied class identifier (CLSID) for any user interface (UI) extension COM object that is installed with a WIA minidriver. The WIA service creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_563ebbd3-c3cb-4156-9d1f-2f302ad41ab3.xml'
-- 'image.wia\_dip\_ui\_clsid'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 05b2bda0-d53d-44f9-89c0-e0f6f1fc2b48
 keywords: ["WIA_DIP_UI_CLSID Imaging Devices"]
 topic_type:

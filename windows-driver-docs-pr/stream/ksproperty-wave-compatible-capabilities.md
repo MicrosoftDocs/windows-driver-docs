@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_WAVE\_COMPATIBLE\_CAPABILITIES
 description: The KSPROPERTY\_WAVE\_COMPATIBLE\_CAPABILITIES property determines a device's wave compatible capabilities.
-MS-HAID:
-- 'dvdref\_1bb502c3-1113-4c44-bb72-30e55541f216.xml'
-- 'stream.ksproperty\_wave\_compatible\_capabilities'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 59b24d84-8b98-4928-aaae-46cb14c0d140
 keywords: ["KSPROPERTY_WAVE_COMPATIBLE_CAPABILITIES Streaming Media Devices"]
 topic_type:

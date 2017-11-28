@@ -1,12 +1,6 @@
 ---
 title: MediaBackImageInfo element
 description: The optional MediaBackImageInfo element contains the image information for the back side of an ADF duplex scan.
-MS-HAID:
-- 'wsdss\_ops\_ea5d17fc-011a-4ede-8a25-764c0c79421f.xml'
-- 'image.mediabackimageinfo'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 42f0151a-6677-41a6-bbf5-0485bd288bb1
 keywords: ["MediaBackImageInfo element Imaging Devices"]
 topic_type:

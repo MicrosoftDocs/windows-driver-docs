@@ -1,12 +1,6 @@
 ---
 title: GetJobElementsRequest.RequestedElements.Name
 description: GetJobElementsRequest.RequestedElements.Name
-MS-HAID:
-- 'dsm\_ref\_dsd\_ec7d5e5b-8aeb-4f53-b753-59c533ea7af7.xml'
-- 'image.getjobelementsrequest\_requestedelements\_name'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0259ae07-2383-4a7b-8978-68b10280318f
 keywords: ["GetJobElementsRequest.RequestedElements.Name"]
 ---

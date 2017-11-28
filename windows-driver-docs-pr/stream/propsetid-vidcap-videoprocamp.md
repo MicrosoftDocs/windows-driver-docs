@@ -1,12 +1,6 @@
 ---
 title: PROPSETID\_VIDCAP\_VIDEOPROCAMP
 description: PROPSETID\_VIDCAP\_VIDEOPROCAMP
-MS-HAID:
-- 'vidcapprop\_7d03bd93-912a-449d-9f5b-f576cf1550d0.xml'
-- 'stream.propsetid\_vidcap\_videoprocamp'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ea1d9c96-b1a5-4849-b607-4c508a526512
 ---
 

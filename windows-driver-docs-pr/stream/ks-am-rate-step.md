@@ -1,12 +1,6 @@
 ---
 title: KS\_AM\_RATE\_Step
 description: The KS\_AM\_RATE\_Step property is not yet implemented.
-MS-HAID:
-- 'dvdref\_589e0436-6f04-47d1-be8b-0dbb037e53ac.xml'
-- 'stream.ks\_am\_rate\_step'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fc3e3369-335b-4403-876f-c55d4616e290
 keywords: ["KS_AM_RATE_Step Streaming Media Devices"]
 topic_type:

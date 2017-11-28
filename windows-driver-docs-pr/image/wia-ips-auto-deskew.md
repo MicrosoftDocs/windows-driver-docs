@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPS\_AUTO\_DESKEW
 description: The WIA\_IPS\_AUTO\_DESKEW property indicates if a device should use automatic skew correction. The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_5204a41a-b42d-477e-aeb1-c75e31fd248c.xml'
-- 'image.wia\_ips\_auto\_deskew'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e72d1af3-05ca-47b0-a2fe-0bb74a22b528
 keywords: ["WIA_IPS_AUTO_DESKEW Imaging Devices"]
 topic_type:

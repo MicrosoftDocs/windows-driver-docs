@@ -1,12 +1,6 @@
 ---
 title: Finishing Section
 description: Finishing Section
-MS-HAID:
-- 'autocfg\_2a63f08c-701c-4ade-8567-ab7d9487cdbd.xml'
-- 'print.finishing\_section'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9ecb96f5-8bb5-4224-8867-cf9c9c21a5ee
 ---
 

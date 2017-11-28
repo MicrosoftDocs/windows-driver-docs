@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPA\_ITEM\_NAME
 description: The WIA\_IPA\_ITEM\_NAME property contains a WIA item name.
-MS-HAID:
-- 'WIA\_PropTable\_cf0ccaeb-075d-4be9-9f2f-1954700e8e5b.xml'
-- 'image.wia\_ipa\_item\_name'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: becdd9c6-8202-4c0e-a530-043c1b8421fa
 keywords: ["WIA_IPA_ITEM_NAME Imaging Devices"]
 topic_type:

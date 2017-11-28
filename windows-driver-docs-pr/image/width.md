@@ -1,12 +1,6 @@
 ---
 title: Width element
 description: The required Width element specifies a width value that the scan device supports for scanner configuration elements that require a Width.
-MS-HAID:
-- 'wsdss\_platen\_9e094446-9c17-43ac-b1b8-2be932bc4aee.xml'
-- 'image.width'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2e9b6c4a-8180-4c09-8d60-64f8ede7bdfc
 keywords: ["Width element Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: Web Services for Devices Print Service Schema
 description: Web Services for Devices Print Service Schema
-MS-HAID:
-- 'wsdps\_intro\_1c9053de-e49f-4b4f-8a93-20731b463d9a.xml'
-- 'print.web\_services\_for\_devices\_print\_service\_schema'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6a629b69-73a9-4d78-ace1-4cb2c807db14
 ---
 

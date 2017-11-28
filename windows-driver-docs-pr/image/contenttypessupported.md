@@ -1,12 +1,6 @@
 ---
 title: ContentTypesSupported element
 description: The required ContentTypesSupported element contains a list of keywords that describe the different document content types that the scanner supports.
-MS-HAID:
-- 'wsdss\_configure\_6f895bb9-be86-419c-b651-587b958acf4a.xml'
-- 'image.contenttypessupported'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f7ed2ba9-8cd9-486c-9bb0-3eb2c925450a
 keywords: ["ContentTypesSupported element Imaging Devices"]
 topic_type:

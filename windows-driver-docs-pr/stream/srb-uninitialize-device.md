@@ -1,12 +1,6 @@
 ---
 title: SRB\_UNINITIALIZE\_DEVICE
 description: SRB\_UNINITIALIZE\_DEVICE
-MS-HAID:
-- 'strclass-srbs\_cc71f7b1-1672-4093-baf1-d7e8524e2345.xml'
-- 'stream.srb\_uninitialize\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2cacb65a-8df3-4649-bc44-1bc7a5c598b9
 keywords: ["SRB_UNINITIALIZE_DEVICE Streaming Media Devices"]
 topic_type:

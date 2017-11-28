@@ -1,12 +1,6 @@
 ---
 title: ENCAPIPARAM\_BITRATE
 description: ENCAPIPARAM\_BITRATE
-MS-HAID:
-- 'encoderef\_b152d54c-87f5-463f-a1fc-d41104d78af2.xml'
-- 'stream.encapiparam\_bitrate'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a0fba9b3-7ce3-407d-b53f-fd54a50cbdcb
 ---
 

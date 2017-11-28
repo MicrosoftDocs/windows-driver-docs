@@ -1,12 +1,6 @@
 ---
 title: Documents element
 description: The required Documents element contains the actual scan characteristics that are used during image acquisition, plus a collection of all Document elements that the scan job contains.
-MS-HAID:
-- 'wsdss\_doc\_251becb6-7259-430a-b838-ce517346e8af.xml'
-- 'image.documents'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b547ed17-b533-4dde-8194-dee1b0f9f85f
 keywords: ["Documents element Imaging Devices"]
 topic_type:

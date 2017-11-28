@@ -1,9 +1,6 @@
 ---
 title: METransformNeedInput
 description: The METransformNeedInput event indicates that a device transform needs an input.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: AACD80F6-90A1-4338-AE5B-4A9248747949
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: KSINTERFACESETID\_Media
 description: KSINTERFACESETID\_Media
-MS-HAID:
-- 'ks-interfaces\_ddb7aa97-20b5-4732-8fc0-01f9962bfb71.xml'
-- 'stream.ksinterfacesetid\_media'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5154068a-adeb-45dd-9abd-5bcf07931ef2
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOPROCAMP\_COLORENABLE
 description: The KSPROPERTY\_VIDEOPROCAMP\_COLORENABLE property controls the color enable setting. This property is optional.
-MS-HAID:
-- 'vidcapprop\_e32f6cc5-7933-4e2b-89fd-c8a637218e7e.xml'
-- 'stream.ksproperty\_videoprocamp\_colorenable'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9e484135-8388-4498-a3bb-99fb3b6dd84e
 keywords: ["KSPROPERTY_VIDEOPROCAMP_COLORENABLE Streaming Media Devices"]
 topic_type:

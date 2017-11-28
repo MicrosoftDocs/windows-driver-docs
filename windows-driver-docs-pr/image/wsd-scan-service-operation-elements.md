@@ -1,12 +1,6 @@
 ---
 title: WSD Scan Service Operation Elements
 description: WSD Scan Service Operation Elements
-MS-HAID:
-- 'wsdss\_ops\_a72d0c76-51fa-48e3-af67-4525f835178e.xml'
-- 'image.wsd\_scan\_service\_operation\_elements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e06d7683-bec4-49af-bc03-06ef02169999
 ---
 

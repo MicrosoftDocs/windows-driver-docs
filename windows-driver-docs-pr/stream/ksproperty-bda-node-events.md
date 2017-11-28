@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_NODE\_EVENTS
 description: Clients use KSPROPERTY\_BDA\_NODE\_EVENTS to retrieve a list of events supported on a node.
-MS-HAID:
-- 'bdaref\_7ac82d19-4e64-4940-8834-3644102ebee1.xml'
-- 'stream.ksproperty\_bda\_node\_events'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4923a88b-abb3-4608-95b3-b0e74eeadaa8
 keywords: ["KSPROPERTY_BDA_NODE_EVENTS Streaming Media Devices"]
 topic_type:

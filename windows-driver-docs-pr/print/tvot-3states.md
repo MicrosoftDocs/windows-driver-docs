@@ -1,12 +1,6 @@
 ---
 title: TVOT\_3STATES
 description: TVOT\_3STATES
-MS-HAID:
-- 'cpsuifnc\_f0071219-3f32-48df-b091-468411d5f4bf.xml'
-- 'print.tvot\_3states'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: baa9fa5e-521e-446b-bd6c-7910d61c7764
 keywords: ["TVOT_3STATES Print Devices"]
 topic_type:

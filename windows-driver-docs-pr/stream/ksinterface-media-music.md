@@ -1,12 +1,6 @@
 ---
 title: KSINTERFACE\_MEDIA\_MUSIC
 description: KSINTERFACE\_MEDIA\_MUSIC
-MS-HAID:
-- 'ks-interfaces\_8df97baa-713d-4bb5-b4fc-f0ee1b21b56f.xml'
-- 'stream.ksinterface\_media\_music'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5f81dc68-a2f7-4f74-825d-5f3ebdedf5ba
 keywords: ["KSINTERFACE_MEDIA_MUSIC Streaming Media Devices"]
 topic_type:

@@ -1,9 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_STRING
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_STRING property is used to configure the text to be printed/endorsed. The WIA minidriver creates and maintains this property.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: DF4B1361-EC9C-4BEA-97F5-9179DCB77044
 keywords: ["WIA_IPS_PRINTER_ENDORSER_STRING Imaging Devices"]
 topic_type:

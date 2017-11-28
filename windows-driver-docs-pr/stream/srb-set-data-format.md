@@ -1,12 +1,6 @@
 ---
 title: SRB\_SET\_DATA\_FORMAT
 description: SRB\_SET\_DATA\_FORMAT
-MS-HAID:
-- 'strclass-srbs\_0f5e9744-782f-4d0e-8a6b-3ffb35625095.xml'
-- 'stream.srb\_set\_data\_format'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a111ab92-a0a0-464e-ac13-f5be33ecd064
 keywords: ["SRB_SET_DATA_FORMAT Streaming Media Devices"]
 topic_type:

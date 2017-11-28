@@ -1,12 +1,6 @@
 ---
 title: KSMETHOD\_BDA\_CHECK\_CHANGES
 description: Clients use KSMETHOD\_BDA\_CHECK\_CHANGES to determine whether a list of requested changes will work.
-MS-HAID:
-- 'bdaref\_e5cc296c-654a-4506-b5a5-b3d89f1c5cb4.xml'
-- 'stream.ksmethod\_bda\_check\_changes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 00a2d0ca-0ede-4ae5-ab2a-95d19143ea7c
 keywords: ["KSMETHOD_BDA_CHECK_CHANGES Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: SRB\_INDICATE\_MASTER\_CLOCK
 description: SRB\_INDICATE\_MASTER\_CLOCK
-MS-HAID:
-- 'strclass-srbs\_eb075801-b109-4e9c-8ae3-84a39674b3bf.xml'
-- 'stream.srb\_indicate\_master\_clock'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 76ce59d2-d33c-4cec-a90e-563a16dc476b
 keywords: ["SRB_INDICATE_MASTER_CLOCK Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: SRB\_READ\_DATA
 description: SRB\_READ\_DATA
-MS-HAID:
-- 'strclass-srbs\_d5c585dd-b9ee-456d-a2b5-03e9206ff3ba.xml'
-- 'stream.srb\_read\_data'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b59d705d-5215-42ee-85cf-369a2e69f99b
 keywords: ["SRB_READ_DATA Streaming Media Devices"]
 topic_type:

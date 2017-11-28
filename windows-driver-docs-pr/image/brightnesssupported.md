@@ -1,12 +1,6 @@
 ---
 title: BrightnessSupported element
 description: The required BrightnessSupported element specifies whether the scan device supports user control of the scan brightness setting.
-MS-HAID:
-- 'wsdss\_configure\_cd29431c-869d-480b-9ff4-87c5bf44c945.xml'
-- 'image.brightnesssupported'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: aa0eb627-694f-45a1-a923-07fc04b0612b
 keywords: ["BrightnessSupported element Imaging Devices"]
 topic_type:

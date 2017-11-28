@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_DITHER\_SELECT
 description: The WIA\_DPS\_DITHER\_SELECT property is reserved by Microsoft for future use and is not implemented at this time.
-MS-HAID:
-- 'WIA\_PropTable\_f2a5241f-ceec-40b7-9489-3495a1a0da5d.xml'
-- 'image.wia\_dps\_dither\_select'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a7153d11-2c1e-495c-aa2a-af66df6c80c8
 keywords: ["WIA_DPS_DITHER_SELECT Imaging Devices"]
 topic_type:

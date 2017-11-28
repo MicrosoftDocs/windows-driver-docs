@@ -1,12 +1,6 @@
 ---
 title: WSD Scan Service Operation Error Reporting
 description: WSD Scan Service Operation Error Reporting
-MS-HAID:
-- 'wsdss\_ops\_62114155-bb8d-417d-8328-1365019cf8d8.xml'
-- 'image.wsd\_scan\_service\_operation\_error\_reporting'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 78cf0cf9-f792-4dc9-b0df-c45b408b85ab
 ---
 

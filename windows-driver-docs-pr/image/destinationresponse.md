@@ -1,12 +1,6 @@
 ---
 title: DestinationResponse element
 description: The required DestinationResponse element contains the response information for a single ScanDestination registration.
-MS-HAID:
-- 'wsdss\_events\_df503398-0202-413f-ae20-cec4b6201c29.xml'
-- 'image.destinationresponse'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 388304ca-4d62-40cf-ad68-13607a836caf
 keywords: ["DestinationResponse element Imaging Devices"]
 topic_type:

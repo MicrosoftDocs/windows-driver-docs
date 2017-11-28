@@ -1,12 +1,6 @@
 ---
 title: GetScannerElementsResponse.ScannerElements.ElementData
 description: GetScannerElementsResponse.ScannerElements.ElementData
-MS-HAID:
-- 'dsm\_ref\_dsd\_74d5b2cc-2ec2-4e67-bd3b-bc5b376415d1.xml'
-- 'image.getscannerelementsresponse\_scannerelements\_elementdata'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b21af147-5edf-4243-b020-437032a40d89
 keywords: ["GetScannerElementsResponse.ScannerElements.ElementData"]
 ---

@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOPROCAMP\_WHITEBALANCE
 description: The KSPROPERTY\_VIDEOPROCAMP\_WHITEBALANCE property sets or gets a camera's white balance setting. This property is optional.
-MS-HAID:
-- 'vidcapprop\_6fffb26d-457a-47bb-8cdf-3535151f9d2c.xml'
-- 'stream.ksproperty\_videoprocamp\_whitebalance'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8973db14-e971-4601-8a96-bc264e7ddd3a
 keywords: ["KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE Streaming Media Devices"]
 topic_type:

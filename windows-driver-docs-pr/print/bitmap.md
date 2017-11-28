@@ -1,12 +1,6 @@
 ---
 title: bitmap element
 description: The optional bitmap element is used to display a bitmap image to the left of the body text in a message box.
-MS-HAID:
-- 'async\_86c5d249-2826-4516-bc66-7e8a3165bbf6.xml'
-- 'print.bitmap'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6dd1a82f-7a9e-4ed6-9d0d-76e025331d2c
 keywords: ["bitmap element Print Devices"]
 topic_type:

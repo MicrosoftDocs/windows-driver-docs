@@ -1,12 +1,6 @@
 ---
 title: PostScanProcess.ScanTicket.DocumentParameters
 description: PostScanProcess.ScanTicket.DocumentParameters
-MS-HAID:
-- 'dsm\_ref\_dsp\_2a074cb1-e5ab-428b-9081-913c3c5a0a00.xml'
-- 'image.postscanprocess\_scanticket\_documentparameters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9b0e449d-e7f9-4aa0-b5cc-198e528607bb
 keywords: ["PostScanProcess.ScanTicket.DocumentParameters"]
 ---

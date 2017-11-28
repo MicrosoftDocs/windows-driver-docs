@@ -1,12 +1,6 @@
 ---
 title: CODECAPI\_SUPPORTSEVENTS
 description: CODECAPI\_SUPPORTSEVENTS
-MS-HAID:
-- 'encoderef\_837cb88f-4655-4f46-90fd-6adbf15e36ab.xml'
-- 'stream.codecapi\_supportsevents'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: feb6d110-9a9c-4e2b-bc19-259f80f3947a
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_MAX\_SCAN\_TIME
 description: The WIA\_DPS\_MAX\_SCAN\_TIME property contains the maximum time to scan a single page with the current property settings, in milliseconds.
-MS-HAID:
-- 'WIA\_PropTable\_cf8f1c13-5a1f-462c-8150-fbc2ff9359dd.xml'
-- 'image.wia\_dps\_max\_scan\_time'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 28c24b1b-9318-46d2-86eb-f948247de8ab
 keywords: ["WIA_DPS_MAX_SCAN_TIME Imaging Devices"]
 topic_type:

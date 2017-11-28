@@ -1,12 +1,6 @@
 ---
 title: GetJobHistoryResponse
 description: GetJobHistoryResponse
-MS-HAID:
-- 'dsm\_ref\_dsd\_eca91772-93dc-48b7-b614-abc2c3b72eca.xml'
-- 'image.getjobhistoryresponse4'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 843af327-3165-4d95-9dc5-22b56ecb6f9b
 keywords: ["GetJobHistoryResponse"]
 ---

@@ -1,12 +1,6 @@
 ---
 title: RequestedElements.Name
 description: RequestedElements.Name
-MS-HAID:
-- 'dsm\_ref\_dsp\_c4090f01-6131-4043-85c9-5bff2a1c05e1.xml'
-- 'image.requestedelements\_name'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a781dce6-06c6-40e3-b681-8dc2486125cb
 keywords: ["RequestedElements.Name"]
 ---

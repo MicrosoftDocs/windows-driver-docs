@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_CONVERTTIMEFORMAT
 description: The KSPROPERTY\_MEDIASEEKING\_CONVERTTIMEFORMAT property converts the specified media time from one supported format to another.
-MS-HAID:
-- 'ks-prop\_60917032-28b5-4237-9950-4b3606ef2891.xml'
-- 'stream.ksproperty\_mediaseeking\_converttimeformat'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a465bfcf-85eb-4b14-b614-e26edff6f9bb
 keywords: ["KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_CTYPES
 description: Clients use the KSPROPERTY\_PIN\_CTYPES property to determine how many pin types a KS filter supports.
-MS-HAID:
-- 'ks-prop\_4178eba1-ad3d-4686-8c2c-4ab9003f0748.xml'
-- 'stream.ksproperty\_pin\_ctypes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2aa93591-9fe6-453f-bc50-871972cb3e50
 keywords: ["KSPROPERTY_PIN_CTYPES Streaming Media Devices"]
 topic_type:

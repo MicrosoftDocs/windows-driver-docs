@@ -1,12 +1,6 @@
 ---
 title: PROPSETID\_VIDCAP\_SELECTOR
 description: PROPSETID\_VIDCAP\_SELECTOR
-MS-HAID:
-- 'vidcapprop\_7e089b91-957d-44ea-90cb-ca690a30945c.xml'
-- 'stream.propsetid\_vidcap\_selector'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a7328f22-be49-48ac-b923-15f66dc38ccb
 ---
 

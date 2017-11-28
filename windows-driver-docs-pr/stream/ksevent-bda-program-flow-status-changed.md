@@ -1,12 +1,6 @@
 ---
 title: KSEVENT\_BDA\_PROGRAM\_FLOW\_STATUS\_CHANGED
 description: Clients use KSEVENT\_BDA\_PROGRAM\_FLOW\_STATUS\_CHANGED to request notification when status on program information changes.
-MS-HAID:
-- 'bdaref\_afbca8d0-7898-48d1-bda2-ecd56ddcdd4a.xml'
-- 'stream.ksevent\_bda\_program\_flow\_status\_changed'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4d4041ba-2330-4dc5-aa8b-3ea8cb1b27e7
 keywords: ["KSEVENT_BDA_PROGRAM_FLOW_STATUS_CHANGED Streaming Media Devices"]
 topic_type:

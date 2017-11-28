@@ -1,12 +1,6 @@
 ---
 title: DeviceCondition element
 description: The optional DeviceCondition element provides details about one of the scanner's currently active conditions.
-MS-HAID:
-- 'wsdss\_status\_f4f46602-0104-4e4d-9c18-b2fa9720bfc5.xml'
-- 'image.devicecondition'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5e68462f-afa9-40d4-843a-7d15fb7c98e3
 keywords: ["DeviceCondition element Imaging Devices"]
 topic_type:

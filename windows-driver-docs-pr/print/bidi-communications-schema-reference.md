@@ -1,12 +1,6 @@
 ---
 title: Bidirectional Communication Schema Reference
 description: Bidirectional Communication Schema Reference
-MS-HAID:
-- 'autocfg\_5354d7ec-2a20-4176-b051-b200914f6ae8.xml'
-- 'print.bidi\_communications\_schema\_reference'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 23432e94-e932-43a4-917b-a5a393cbbb60
 keywords: ["bidirectional communication schema WDK print", "bidi communication schema WDK print"]
 ---

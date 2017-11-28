@@ -1,12 +1,6 @@
 ---
 title: AVC\_FUNCTION\_GET\_SUBUNIT\_INFO
 description: AVC\_FUNCTION\_GET\_SUBUNIT\_INFO
-MS-HAID:
-- 'avcref\_70fdbc50-6701-45d3-80f4-07ce8606cfeb.xml'
-- 'stream.avc\_function\_get\_subunit\_info'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1793df9d-b186-425f-a3dd-3054cb9b74bf
 keywords: ["AVC_FUNCTION_GET_SUBUNIT_INFO Streaming Media Devices"]
 topic_type:

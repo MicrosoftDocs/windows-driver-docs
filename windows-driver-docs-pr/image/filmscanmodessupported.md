@@ -1,12 +1,6 @@
 ---
 title: FilmScanModesSupported element
 description: The required FilmScanModesSupported element contains a list of film exposure types that the film scanning option supports.
-MS-HAID:
-- 'wsdss\_adffilm\_62946459-a17d-4253-9668-92178a11fab7.xml'
-- 'image.filmscanmodessupported'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bcc1335f-4465-4bc1-a804-b6e8729ec616
 keywords: ["FilmScanModesSupported element Imaging Devices"]
 topic_type:

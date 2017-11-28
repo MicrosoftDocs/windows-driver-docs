@@ -1,12 +1,6 @@
 ---
 title: CODECAPI\_VIDEO\_ENCODER
 description: CODECAPI\_VIDEO\_ENCODER
-MS-HAID:
-- 'encoderef\_ec845fb2-8500-41e0-9ef4-2cbcaa4ceb9a.xml'
-- 'stream.codecapi\_video\_encoder'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e08f26ff-1e11-42a4-a9f8-3af9b885a901
 ---
 

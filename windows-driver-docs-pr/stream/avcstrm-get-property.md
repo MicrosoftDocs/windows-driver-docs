@@ -1,12 +1,6 @@
 ---
 title: AVCSTRM\_GET\_PROPERTY
 description: AVCSTRM\_GET\_PROPERTY
-MS-HAID:
-- 'avcsref\_43193343-1034-4f0a-a713-54e0d63568ad.xml'
-- 'stream.avcstrm\_get\_property'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d53422d3-c591-4ba5-ba85-bd20e2519add
 keywords: ["AVCSTRM_GET_PROPERTY Streaming Media Devices"]
 topic_type:

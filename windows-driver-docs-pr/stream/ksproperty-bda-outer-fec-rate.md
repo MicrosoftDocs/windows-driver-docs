@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_OUTER\_FEC\_RATE
 description: Clients use KSPROPERTY\_BDA\_OUTER\_FEC\_RATE to control the binary convolution scheme used for the outer forward error correction (FEC) type of a demodulator node.
-MS-HAID:
-- 'bdaref\_1979b079-ca2a-4b91-a7a2-0ac1da7fe82f.xml'
-- 'stream.ksproperty\_bda\_outer\_fec\_rate'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0bf1819d-5361-4ab2-b337-e0dd393f5b9b
 keywords: ["KSPROPERTY_BDA_OUTER_FEC_RATE Streaming Media Devices"]
 topic_type:

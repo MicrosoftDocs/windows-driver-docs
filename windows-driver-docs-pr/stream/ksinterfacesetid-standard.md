@@ -1,12 +1,6 @@
 ---
 title: KSINTERFACESETID\_Standard
 description: KSINTERFACESETID\_Standard
-MS-HAID:
-- 'ks-interfaces\_d300afc3-3dfc-42f1-bf67-72ad940a4079.xml'
-- 'stream.ksinterfacesetid\_standard'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f921ffba-04dd-4900-8825-5b3486009bca
 ---
 

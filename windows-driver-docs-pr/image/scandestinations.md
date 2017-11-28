@@ -1,12 +1,6 @@
 ---
 title: ScanDestinations element
 description: The required ScanDestinations element is a collection of all of the scan destinations that a client wants to register with the scan device.
-MS-HAID:
-- 'wsdss\_events\_c8818229-d8f6-4026-b40a-1ad858b178e8.xml'
-- 'image.scandestinations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 50f87269-4d95-4653-ba93-aa752bdc9168
 keywords: ["ScanDestinations element Imaging Devices"]
 topic_type:

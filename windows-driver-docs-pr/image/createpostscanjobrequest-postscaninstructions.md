@@ -1,12 +1,6 @@
 ---
 title: CreatePostScanJobRequest.PostScanInstructions
 description: CreatePostScanJobRequest.PostScanInstructions
-MS-HAID:
-- 'dsm\_ref\_dsp\_c8fd0999-6963-4e14-b0a9-8fb8438bd043.xml'
-- 'image.createpostscanjobrequest\_postscaninstructions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4954e8b2-411f-4ed7-b798-7090b0eae77e
 keywords: ["CreatePostScanJobRequest.PostScanInstructions"]
 ---

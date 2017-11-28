@@ -1,12 +1,6 @@
 ---
 title: JobElements element
 description: The required JobElements element contains all of the job-related elements that a client requests through a call to GetJobElementsRequest.
-MS-HAID:
-- 'wsdss\_ops\_2279ad8a-add8-4bca-8a6a-914126002de9.xml'
-- 'image.jobelements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ac7d8749-272d-4817-bc80-8f220e06436c
 keywords: ["JobElements element Imaging Devices"]
 topic_type:

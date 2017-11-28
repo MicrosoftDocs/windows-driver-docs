@@ -1,12 +1,6 @@
 ---
 title: WS-DSP Event Elements
 description: WS-DSP Event Elements
-MS-HAID:
-- 'dsm\_ref\_dsp\_0a71853a-f6dc-47f4-96ce-514444cc3fe2.xml'
-- 'image.ws\_dsp\_event\_elements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9007417a-8feb-48e0-805f-03dd7e2a3ce1
 ---
 

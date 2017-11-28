@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CLOCK\_STATE
 description: Clients use the KSPROPERTY\_CLOCK\_STATE property to determine the streaming state of a pin.
-MS-HAID:
-- 'ks-prop\_92959849-e6e3-4fed-9bbc-c6f098188057.xml'
-- 'stream.ksproperty\_clock\_state'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c041b896-524b-4a7a-bb2c-9061c08f763c
 keywords: ["KSPROPERTY_CLOCK_STATE Streaming Media Devices"]
 topic_type:

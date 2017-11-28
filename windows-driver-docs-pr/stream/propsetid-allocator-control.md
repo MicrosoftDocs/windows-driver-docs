@@ -1,12 +1,6 @@
 ---
 title: PROPSETID\_ALLOCATOR\_CONTROL
 description: PROPSETID\_ALLOCATOR\_CONTROL
-MS-HAID:
-- 'vidcapprop\_70e6f90b-40d8-47be-814f-9cc5347feb31.xml'
-- 'stream.propsetid\_allocator\_control'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a3e0a5e9-4357-4bc9-ba2a-098f344ed01e
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: ValidateScanTicketRequest.ScanTicket.JobDescription
 description: ValidateScanTicketRequest.ScanTicket.JobDescription
-MS-HAID:
-- 'dsm\_ref\_dsd\_f3688045-e751-47f8-8585-17ff84319877.xml'
-- 'image.validatescanticketrequest\_scanticket\_jobdescription'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c3e1b72f-925a-4d0e-acda-316fd51b3fc8
 keywords: ["ValidateScanTicketRequest.ScanTicket.JobDescription"]
 ---

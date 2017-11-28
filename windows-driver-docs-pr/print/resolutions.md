@@ -1,12 +1,6 @@
 ---
 title: Resolutions
 description: Resolutions
-MS-HAID:
-- 'autocfg\_96fc6806-b6ac-4b16-b23e-9d0f182aeb16.xml'
-- 'print.resolutions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1106cd77-1085-4487-a81a-268f619824e5
 ---
 

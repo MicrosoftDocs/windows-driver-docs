@@ -1,12 +1,6 @@
 ---
 title: PROPSETID\_VIDCAP\_EXTENSION\_UNIT
 description: PROPSETID\_VIDCAP\_EXTENSION\_UNIT
-MS-HAID:
-- 'vidcapprop\_41a7ede1-1a1e-4c45-bdb1-60d59bb2485b.xml'
-- 'stream.propsetid\_vidcap\_extension\_unit'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7aa4742f-e64f-4798-a9e0-8c1f02aa15b3
 ---
 

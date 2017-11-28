@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_FOCUS\_METERING\_MODE
 description: The WIA\_DPC\_FOCUS\_METERING\_MODE property specifies the mode that a camera uses to automatically adjust the focus.
-MS-HAID:
-- 'WIA\_PropTable\_ab20460a-1282-4bcc-ab83-1fc277f1f67f.xml'
-- 'image.wia\_dpc\_focus\_metering\_mode'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a6a45f46-504b-4dad-a292-496f1ea4d8a0
 keywords: ["WIA_DPC_FOCUS_METERING_MODE Imaging Devices"]
 topic_type:

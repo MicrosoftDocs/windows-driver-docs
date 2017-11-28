@@ -1,12 +1,6 @@
 ---
 title: parameter element
 description: The optional parameter element specifies a text string that is substituted for a percentage ( ) character in the text of an event notification message.
-MS-HAID:
-- 'async\_a0adc762-3c44-49c1-ac44-83c7763cc42b.xml'
-- 'print.parameter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6a43af7d-da00-4038-b1a8-a076d07c4c1a
 keywords: ["parameter element Print Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: ScannerStatusConditionEvent.DeviceCondition.Time
 description: ScannerStatusConditionEvent.DeviceCondition.Time
-MS-HAID:
-- 'dsm\_ref\_dsd\_eae26a8c-d2a9-48d6-9854-376c606d6760.xml'
-- 'image.scannerstatusconditionevent\_devicecondition\_time'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bb4509ae-289b-4942-bf4e-689f171e6280
 keywords: ["ScannerStatusConditionEvent.DeviceCondition.Time"]
 ---

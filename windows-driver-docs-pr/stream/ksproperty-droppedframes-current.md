@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_DROPPEDFRAMES\_CURRENT
 description: The KSPROPERTY\_DROPPED\_FRAMES\_CURRENT property dynamically retrieves the video capture minidriver for the number of frames captured, the number of frames dropped, and the average frame size. This property must be implemented.
-MS-HAID:
-- 'vidcapprop\_9f0cfc13-09d6-4829-b66d-82485a884e0f.xml'
-- 'stream.ksproperty\_droppedframes\_current'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 43367858-4e3b-476e-aaa5-c9e665df8dc6
 keywords: ["KSPROPERTY_DROPPEDFRAMES_CURRENT Streaming Media Devices"]
 topic_type:

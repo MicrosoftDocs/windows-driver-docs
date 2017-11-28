@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_GLOBAL\_IDENTITY
 description: The WIA\_DPS\_GLOBAL\_IDENTITY property contains the SOAP address of a web services scanner device. The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_c43ea0fc-0adf-4873-be8c-bddfd987f43b.xml'
-- 'image.wia\_dps\_global\_identity'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4ee25eb9-eb5b-43b2-8b35-7bc8ac45c90a
 keywords: ["WIA_DPS_GLOBAL_IDENTITY Imaging Devices"]
 topic_type:

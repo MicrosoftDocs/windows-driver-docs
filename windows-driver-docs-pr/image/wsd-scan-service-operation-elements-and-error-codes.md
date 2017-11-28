@@ -1,12 +1,6 @@
 ---
 title: WSD Scan Service Operation Elements and Error Codes
 description: WSD Scan Service Operation Elements and Error Codes
-MS-HAID:
-- 'wsdss\_ops\_172b75d1-e3fa-42b6-9855-c163a8b45ac7.xml'
-- 'image.wsd\_scan\_service\_operation\_elements\_and\_error\_codes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c3dde1b9-fb81-4e33-8970-ec20bb83e13f
 ---
 

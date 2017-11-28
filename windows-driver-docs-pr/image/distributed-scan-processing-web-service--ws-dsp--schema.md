@@ -1,12 +1,6 @@
 ---
 title: Distributed Scan Processing Web Service (WS-DSP) Schema
 description: Distributed Scan Processing Web Service (WS-DSP) Schema
-MS-HAID:
-- 'dsm\_ref\_dsp\_168440d1-bc66-4a8a-850a-4dd37eb18da1.xml'
-- 'image.distributed\_scan\_processing\_web\_service\_\_ws\_dsp\_\_schema'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4d99dd68-7aff-485c-b69a-d58860e1f376
 ---
 

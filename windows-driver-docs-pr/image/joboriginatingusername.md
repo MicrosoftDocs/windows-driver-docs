@@ -1,12 +1,6 @@
 ---
 title: JobOriginatingUserName element
 description: The required JobOriginatingUserName element specifies the name of the user who submitted the scan job.
-MS-HAID:
-- 'wsdss\_job\_28cea6dd-5f4c-462b-8d15-7f53a01e0019.xml'
-- 'image.joboriginatingusername'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ba2dd472-1ac0-40bd-816c-02abc093b6ed
 keywords: ["JobOriginatingUserName element Imaging Devices"]
 topic_type:

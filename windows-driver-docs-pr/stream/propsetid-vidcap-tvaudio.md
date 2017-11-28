@@ -1,12 +1,6 @@
 ---
 title: PROPSETID\_VIDCAP\_TVAUDIO
 description: PROPSETID\_VIDCAP\_TVAUDIO
-MS-HAID:
-- 'vidcapprop\_0e85e696-b0d5-4ba9-a6a2-a8c8759f725e.xml'
-- 'stream.propsetid\_vidcap\_tvaudio'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 33c76f30-2e4b-48b7-a463-f6363419dca3
 ---
 

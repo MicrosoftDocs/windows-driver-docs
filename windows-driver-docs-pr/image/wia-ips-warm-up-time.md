@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPS\_WARM\_UP\_TIME
 description: The WIA\_IPS\_WARM\_UP\_TIME property contains the maximum warm-up time, in milliseconds, that a device needs before starting the scanning operation. The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_a9408b68-7ad3-4b82-bbe8-6c8bb6ed73d7.xml'
-- 'image.wia\_ips\_warm\_up\_time'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 081cdb91-d5d8-4458-9a78-72fcbb13c7da
 keywords: ["WIA_IPS_WARM_UP_TIME Imaging Devices"]
 topic_type:

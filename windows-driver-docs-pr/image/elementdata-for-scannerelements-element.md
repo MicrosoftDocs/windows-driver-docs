@@ -1,12 +1,6 @@
 ---
 title: ElementData for ScannerElements element
 description: The required ElementData element contains the data that is returned for a scanner-related schema request.
-MS-HAID:
-- 'wsdss\_ops\_fbbe1a6e-e1f4-4186-b5d2-ea020ae89d96.xml'
-- 'image.elementdata\_for\_scannerelements\_element'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 852a7f8a-cd87-467b-8793-8a7d7943f2a9
 keywords: ["ElementData for ScannerElements element Imaging Devices"]
 topic_type:

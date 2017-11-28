@@ -1,9 +1,6 @@
 ---
 title: EndPostScanJobRequest.JobToken
 description: EndPostScanJobRequest.JobToken
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e568da96-412f-47ef-81ee-57beddec5a42
 keywords: ["EndPostScanJobRequest.JobToken"]
 ---

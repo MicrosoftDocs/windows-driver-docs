@@ -1,12 +1,6 @@
 ---
 title: ConditionHistory element
 description: The optional ConditionHistory element is a collection of ConditionHistoryEntry elements that provide details about recent conditions and errors on the scanner.
-MS-HAID:
-- 'wsdss\_status\_b6186750-1dc6-434f-b8ff-f5ff0842c10f.xml'
-- 'image.conditionhistory'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3725a635-6571-4a34-b8f9-9fe6881bd6da
 keywords: ["ConditionHistory element Imaging Devices"]
 topic_type:

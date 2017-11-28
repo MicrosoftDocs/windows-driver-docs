@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_BdaPinControl
 description: KSPROPSETID\_BdaPinControl
-MS-HAID:
-- 'bdaref\_ffe3f635-7300-4763-9ecc-dea6a432f2f4.xml'
-- 'stream.kspropsetid\_bdapincontrol'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f3c6ae83-d50f-49c8-a851-763f191f1932
 ---
 

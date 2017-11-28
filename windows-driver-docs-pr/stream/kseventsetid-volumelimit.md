@@ -1,9 +1,6 @@
 ---
 title: KSEVENTSETID\_VolumeLimit
 description: KSEVENTSETID\_VolumeLimit
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B71ED9F9-BA2C-43D1-8162-CCA4CD5C5B22
 ---
 

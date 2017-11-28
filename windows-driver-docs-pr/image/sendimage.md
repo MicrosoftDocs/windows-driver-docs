@@ -1,12 +1,6 @@
 ---
 title: SendImage
 description: SendImage
-MS-HAID:
-- 'dsm\_ref\_dsp\_da9e9f9a-528b-4dc8-bbf6-3476dd357191.xml'
-- 'image.sendimage'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 36757ae4-49da-4ccf-af79-5774c1ff6d87
 keywords: ["SendImage"]
 ---

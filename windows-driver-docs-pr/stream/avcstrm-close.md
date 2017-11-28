@@ -1,12 +1,6 @@
 ---
 title: AVCSTRM\_CLOSE
 description: AVCSTRM\_CLOSE
-MS-HAID:
-- 'avcsref\_d65d38ff-f161-4c2f-8549-146072fb621b.xml'
-- 'stream.avcstrm\_close'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2487ba06-3577-409e-ba82-f9a0d3453c5d
 keywords: ["AVCSTRM_CLOSE Streaming Media Devices"]
 topic_type:

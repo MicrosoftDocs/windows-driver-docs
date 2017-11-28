@@ -1,12 +1,6 @@
 ---
 title: ValidateScanTicketRequest.ScanTicket.DocumentParameters
 description: ValidateScanTicketRequest.ScanTicket.DocumentParameters
-MS-HAID:
-- 'dsm\_ref\_dsd\_b948cde8-8c80-4479-bae0-47efb4ce6ace.xml'
-- 'image.validatescanticketrequest\_scanticket\_documentparameters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6ecb6068-563f-49d3-9f14-6010594792dc
 keywords: ["ValidateScanTicketRequest.ScanTicket.DocumentParameters"]
 ---

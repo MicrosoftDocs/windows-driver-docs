@@ -1,12 +1,6 @@
 ---
 title: SharePointConfig.SaveToSharePointSites
 description: SharePointConfig.SaveToSharePointSites
-MS-HAID:
-- 'dsm\_ref\_psp\_a34a1a40-b404-4847-8426-13fd6b383295.xml'
-- 'image.sharepointconfig\_savetosharepointsites'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: efcc9334-a1aa-494d-b9bb-f64981eb6b59
 keywords: ["SharePointConfig.SaveToSharePointSites"]
 ---

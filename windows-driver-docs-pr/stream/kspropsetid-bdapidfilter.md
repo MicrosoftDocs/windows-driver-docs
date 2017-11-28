@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_BdaPIDFilter
 description: KSPROPSETID\_BdaPIDFilter
-MS-HAID:
-- 'bdaref\_eb155717-d8fb-4c3c-9ee9-9baaae31c3c8.xml'
-- 'stream.kspropsetid\_bdapidfilter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9a2655cb-d7e9-4f61-803a-63fe3fd3501b
 ---
 

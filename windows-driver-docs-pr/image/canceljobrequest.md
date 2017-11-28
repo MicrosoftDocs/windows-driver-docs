@@ -1,12 +1,6 @@
 ---
 title: CancelJobRequest element
 description: The required CancelJobRequest operation enables a client to cancel a scan job.
-MS-HAID:
-- 'wsdss\_ops\_7395a514-8551-4314-a284-4333350beffd.xml'
-- 'image.canceljobrequest'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 781fae32-2827-48d8-8aed-7f437326919d
 keywords: ["CancelJobRequest element Imaging Devices"]
 topic_type:

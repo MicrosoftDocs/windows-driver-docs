@@ -1,12 +1,6 @@
 ---
 title: CancelPostScanJobRequest.JobToken
 description: CancelPostScanJobRequest.JobToken
-MS-HAID:
-- 'dsm\_ref\_dsp\_34ad6d02-ee38-4a3c-a2fe-a525d5cd4cb2.xml'
-- 'image.cancelpostscanjobrequest\_jobtoken'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d232fc80-20dc-4d47-9b3e-e15a0cf24273
 keywords: ["CancelPostScanJobRequest.JobToken"]
 ---

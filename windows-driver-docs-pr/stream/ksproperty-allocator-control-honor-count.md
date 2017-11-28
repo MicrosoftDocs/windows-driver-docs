@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_ALLOCATOR\_CONTROL\_HONOR\_COUNT
 description: The KSPROPERTY\_ALLOCATOR\_CONTROL\_HONOR\_COUNT property informs the Overlay Mixer how to determine the number of DirectDraw surfaces to allocate. This property is optional.
-MS-HAID:
-- 'vidcapprop\_e4532e0e-4876-4f7b-b625-fe23b6d6c62f.xml'
-- 'stream.ksproperty\_allocator\_control\_honor\_count'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3a867554-a6ef-49bd-89e7-e5d09a21609e
 keywords: ["KSPROPERTY_ALLOCATOR_CONTROL_HONOR_COUNT Streaming Media Devices"]
 topic_type:

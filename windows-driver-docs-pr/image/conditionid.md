@@ -1,12 +1,6 @@
 ---
 title: ConditionId element
 description: The required ConditionId element uniquely identifies the device condition that was just cleared.
-MS-HAID:
-- 'wsdss\_events\_6b77a5ac-6e45-4535-a117-8f22b5f0b6b1.xml'
-- 'image.conditionid'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4b154fb3-625e-478d-9bb4-92fd7cae0530
 keywords: ["ConditionId element Imaging Devices"]
 topic_type:

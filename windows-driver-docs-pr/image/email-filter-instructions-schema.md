@@ -1,12 +1,6 @@
 ---
 title: Email Filter Instructions Schema
 description: Email Filter Instructions Schema
-MS-HAID:
-- 'dsm\_ref\_psp\_f5796719-a8aa-4c1e-9f78-e05440a2d148.xml'
-- 'image.email\_filter\_instructions\_schema'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 12e0a664-72fc-4c1a-9fa0-e87b4e3cce3e
 keywords: ["Email Filter Instructions Schema"]
 ---

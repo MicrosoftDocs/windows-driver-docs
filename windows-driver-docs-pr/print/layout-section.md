@@ -1,12 +1,6 @@
 ---
 title: Layout Section
 description: Layout Section
-MS-HAID:
-- 'autocfg\_d6db2f34-87bb-45d7-b321-1c1b33aa3abc.xml'
-- 'print.layout\_section'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a9d2d6b2-ad4e-43eb-b498-bd2c6f8eb914
 ---
 

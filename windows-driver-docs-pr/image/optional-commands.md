@@ -1,12 +1,6 @@
 ---
 title: Optional Commands
 description: Optional Commands
-MS-HAID:
-- 'MicroDrv\_903e4b4b-89f2-47c8-a130-a29726acb1f4.xml'
-- 'image.optional\_commands'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b9c411b1-0061-468a-b900-47c6062aa3b0
 ---
 

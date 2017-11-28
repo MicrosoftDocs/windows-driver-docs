@@ -1,12 +1,6 @@
 ---
 title: SRB\_OPEN\_DEVICE\_INSTANCE
 description: SRB\_OPEN\_DEVICE\_INSTANCE
-MS-HAID:
-- 'strclass-srbs\_f8048929-d6ff-4403-af51-f2797e7e24ab.xml'
-- 'stream.srb\_open\_device\_instance'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 71f57abd-7875-4c7a-bbb3-c5c45c9a83ab
 keywords: ["SRB_OPEN_DEVICE_INSTANCE Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: ImageInformation element
 description: The required ImageInformation element contains information about the resulting image data from a scan made with a ScanTicket element that is currently being validated.
-MS-HAID:
-- 'wsdss\_ops\_6adeb142-f521-46d6-868b-d6296829de62.xml'
-- 'image.imageinformation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 58a5dc09-07fa-4e31-93f1-7370dace3263
 keywords: ["ImageInformation element Imaging Devices"]
 topic_type:

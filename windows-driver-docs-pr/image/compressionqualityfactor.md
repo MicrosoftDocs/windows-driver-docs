@@ -1,12 +1,6 @@
 ---
 title: CompressionQualityFactor element
 description: The optional CompressionQualityFactor element specifies an idealized integer amount of image quality, on a scale from 0 through 100.
-MS-HAID:
-- 'wsdss\_doc\_62131dcd-ee84-40ac-be6b-7dcd4377ee33.xml'
-- 'image.compressionqualityfactor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e66ab41d-3f77-4c60-b0bf-d050f467c6b4
 keywords: ["CompressionQualityFactor element Imaging Devices"]
 topic_type:

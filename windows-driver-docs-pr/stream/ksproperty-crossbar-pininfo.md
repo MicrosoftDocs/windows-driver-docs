@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CROSSBAR\_PININFO
 description: The KSPROPERTY\_CROSSBAR\_PININFO property retrieves the type of physical connection represented by the pin including settings such as data flow direction, medium GUID(s) and pin-type.
-MS-HAID:
-- 'vidcapprop\_79216c93-f105-4fdd-ac90-ea50b3b501d9.xml'
-- 'stream.ksproperty\_crossbar\_pininfo'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d025b401-bc75-40d6-a367-1b98e065a48d
 keywords: ["KSPROPERTY_CROSSBAR_PININFO Streaming Media Devices"]
 topic_type:

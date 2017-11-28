@@ -1,12 +1,6 @@
 ---
 title: Platen Configuration Elements
 description: Platen Configuration Elements
-MS-HAID:
-- 'wsdss\_platen\_9a835463-661e-4ca2-97c5-ec07204835c4.xml'
-- 'image.platen\_configuration\_elements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8f3d61cc-1aee-4f2d-82c3-1bd357c8e771
 ---
 

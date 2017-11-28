@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEODECODER\_OUTPUT\_ENABLE
 description: The KSPROPERTY\_VIDEODECODER\_OUTPUT\_ENABLE property controls the three-state output of video decoders that reside on a shared video port bus. This property is optional.
-MS-HAID:
-- 'vidcapprop\_a0d13be3-1764-48ac-88bc-dae7170e0408.xml'
-- 'stream.ksproperty\_videodecoder\_output\_enable'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 33c9a3d2-ffc0-4460-abc4-56bc83c64b55
 keywords: ["KSPROPERTY_VIDEODECODER_OUTPUT_ENABLE Streaming Media Devices"]
 topic_type:

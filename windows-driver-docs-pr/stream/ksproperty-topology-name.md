@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_TOPOLOGY\_NAME
 description: The KSPROPERTY\_TOPOLOGY\_NAME property provides the localized Unicode string name of the node.
-MS-HAID:
-- 'ks-prop\_51230b86-64ea-44cd-b398-c0064b894ff3.xml'
-- 'stream.ksproperty\_topology\_name'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ae12fe2f-9ccf-4949-b530-e7e33c846837
 keywords: ["KSPROPERTY_TOPOLOGY_NAME Streaming Media Devices"]
 topic_type:

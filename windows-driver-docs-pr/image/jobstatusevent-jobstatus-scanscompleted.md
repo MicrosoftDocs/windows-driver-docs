@@ -1,12 +1,6 @@
 ---
 title: JobStatusEvent.JobStatus.ScansCompleted
 description: JobStatusEvent.JobStatus.ScansCompleted
-MS-HAID:
-- 'dsm\_ref\_dsd\_99b7852f-261b-4c0d-877c-1e6003ddd7c7.xml'
-- 'image.jobstatusevent\_jobstatus\_scanscompleted'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6f9dbd8b-ce8e-4245-9cea-a2c8bf3b6199
 keywords: ["JobStatusEvent.JobStatus.ScansCompleted"]
 ---

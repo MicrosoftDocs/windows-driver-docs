@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_GUARD\_INTERVAL
 description: Clients use KSPROPERTY\_BDA\_GUARD\_INTERVAL to control the setting for guard interval of a demodulator node.
-MS-HAID:
-- 'bdaref\_72d285bc-a7f6-4704-b151-960b1e12a957.xml'
-- 'stream.ksproperty\_bda\_guard\_interval'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7c0c6c5e-94fd-4013-9778-d41568ae9f0b
 keywords: ["KSPROPERTY_BDA_GUARD_INTERVAL Streaming Media Devices"]
 topic_type:

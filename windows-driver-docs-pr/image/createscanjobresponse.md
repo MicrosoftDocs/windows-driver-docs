@@ -1,12 +1,6 @@
 ---
 title: CreateScanJobResponse element
 description: The required CreateScanJobResponse element contains the WSD Scan Service's response to a client's scan request.
-MS-HAID:
-- 'wsdss\_ops\_4c1930e3-b26c-4581-9d8f-425ebdfba8db.xml'
-- 'image.createscanjobresponse'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a832bdc2-9c47-41da-ac78-a844b8f84ec1
 keywords: ["CreateScanJobResponse element Imaging Devices"]
 topic_type:

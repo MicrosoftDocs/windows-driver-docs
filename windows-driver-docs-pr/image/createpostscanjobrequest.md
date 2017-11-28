@@ -1,12 +1,6 @@
 ---
 title: CreatePostScanJobRequest
 description: CreatePostScanJobRequest
-MS-HAID:
-- 'dsm\_ref\_dsp\_d1a0c687-d72c-435e-a62f-de872bc1bff2.xml'
-- 'image.createpostscanjobrequest'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2c3fcb1f-7edb-4486-95b5-390bfd244e3a
 keywords: ["CreatePostScanJobRequest"]
 ---

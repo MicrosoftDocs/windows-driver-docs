@@ -1,12 +1,6 @@
 ---
 title: AVC\_FUNCTION\_GET\_PIN\_DESCRIPTOR
 description: AVC\_FUNCTION\_GET\_PIN\_DESCRIPTOR
-MS-HAID:
-- 'avcref\_6d739a9b-692f-40e6-9ee2-a7578385d32f.xml'
-- 'stream.avc\_function\_get\_pin\_descriptor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1a02c328-e908-4125-abe7-4db9970ac86a
 keywords: ["AVC_FUNCTION_GET_PIN_DESCRIPTOR Streaming Media Devices"]
 topic_type:

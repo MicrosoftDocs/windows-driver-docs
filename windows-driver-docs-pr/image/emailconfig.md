@@ -1,12 +1,6 @@
 ---
 title: EmailConfig
 description: EmailConfig
-MS-HAID:
-- 'dsm\_ref\_psp\_244cc800-4cdd-44fe-8035-91f34a48c53e.xml'
-- 'image.emailconfig'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c9f5c5db-eb8c-4e50-9cd7-8190e980278b
 keywords: ["EndPostScanJobRequest.JobToken"]
 ---

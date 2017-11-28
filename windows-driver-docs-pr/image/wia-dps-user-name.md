@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_USER\_NAME
 description: The WIA\_DPS\_USER\_NAME property on the WIA driver root item allows drivers to get the domain name or the machine name and user name of the user who is accessing the WIA device at a given point in time. The WIA service creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_9161e0fd-7e90-4630-8223-0dbb21084d9a.xml'
-- 'image.wia\_dps\_user\_name'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d1d49e1f-5992-4687-9508-a95662b1ed9f
 keywords: ["WIA_DPS_USER_NAME Imaging Devices"]
 topic_type:

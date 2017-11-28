@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_EXTDEVICE\_CAPABILITIES
 description: The KSPROPERTY\_EXTDEVICE\_CAPABILITIES property retrieves the capabilities of an external device.
-MS-HAID:
-- 'vidcapprop\_1ea1a148-4cbf-4d20-91cc-6c47a9b96de4.xml'
-- 'stream.ksproperty\_extdevice\_capabilities'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c408b4cf-2fd9-41b2-b182-47baa551fd93
 keywords: ["KSPROPERTY_EXTDEVICE_CAPABILITIES Streaming Media Devices"]
 topic_type:

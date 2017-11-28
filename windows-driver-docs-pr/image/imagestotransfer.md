@@ -1,12 +1,6 @@
 ---
 title: ImagesToTransfer element
 description: The optional ImagesToTransfer element specifies the number of images to scan for the current job.
-MS-HAID:
-- 'wsdss\_doc\_2e6979e1-e4e6-413e-83f5-50c6ee91ee09.xml'
-- 'image.imagestotransfer'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d3f06104-17a5-41e4-ab80-1228ee342b7d
 keywords: ["ImagesToTransfer element Imaging Devices"]
 topic_type:

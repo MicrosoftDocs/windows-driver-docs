@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_TIMER\_VALUE
 description: The WIA\_DPC\_TIMER\_VALUE property is reserved by Microsoft for future use and is not implemented at this time.
-MS-HAID:
-- 'WIA\_PropTable\_4d19a1dc-1d24-48e7-88c4-e36d67fce3d4.xml'
-- 'image.wia\_dpc\_timer\_value'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9e4e4623-7b72-4ab7-983c-c43148cbe272
 keywords: ["WIA_DPC_TIMER_VALUE Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: GetActiveJobsRequest element
 description: The required GetActiveJobsRequest element requests a summary of all currently active jobs in the scan device.
-MS-HAID:
-- 'wsdss\_ops\_36e7a74d-50c5-4260-9099-e2057b121d9a.xml'
-- 'image.getactivejobsrequest'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4dc7bc64-b62f-4634-8f0e-64039b9f8609
 keywords: ["GetActiveJobsRequest element Imaging Devices"]
 topic_type:

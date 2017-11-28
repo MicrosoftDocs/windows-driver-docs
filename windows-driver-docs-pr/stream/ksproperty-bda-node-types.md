@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_NODE\_TYPES
 description: Clients use KSPROPERTY\_BDA\_NODE\_TYPES to retrieve a list of node types.
-MS-HAID:
-- 'bdaref\_bb83aa53-8710-432e-8052-2a171734af87.xml'
-- 'stream.ksproperty\_bda\_node\_types'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8fe72434-3635-4c2c-a72a-1fd398e488d8
 keywords: ["KSPROPERTY_BDA_NODE_TYPES Streaming Media Devices"]
 topic_type:

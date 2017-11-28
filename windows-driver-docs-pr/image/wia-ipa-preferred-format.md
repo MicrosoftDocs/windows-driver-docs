@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPA\_PREFERRED\_FORMAT
 description: The WIA\_IPA\_PREFERRED\_FORMAT property contains the preferred format for images that the WIA minidriver transfers. The minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_e2ce616e-c508-4860-a6c8-3a39ac502abf.xml'
-- 'image.wia\_ipa\_preferred\_format'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a9291395-6c9b-4288-abcf-53638deca82e
 keywords: ["WIA_IPA_PREFERRED_FORMAT Imaging Devices"]
 topic_type:

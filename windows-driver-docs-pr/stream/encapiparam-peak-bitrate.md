@@ -1,12 +1,6 @@
 ---
 title: ENCAPIPARAM\_PEAK\_BITRATE
 description: ENCAPIPARAM\_PEAK\_BITRATE
-MS-HAID:
-- 'encoderef\_fa136312-b941-4c88-8bc2-5cb736061f27.xml'
-- 'stream.encapiparam\_peak\_bitrate'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 444a20e0-f3af-4dbc-9272-44e992e059e8
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: RetrieveImageRequest element
 description: The required RetrieveImageRequest operation element contains the client's request to retrieve scan data from the device after a scan job has been created.
-MS-HAID:
-- 'wsdss\_ops\_d33777fc-19c7-48fe-a197-86fe2a06e86c.xml'
-- 'image.retrieveimagerequest'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4f6d6bd0-b323-4f95-b380-2be9cec1ee6e
 keywords: ["RetrieveImageRequest element Imaging Devices"]
 topic_type:

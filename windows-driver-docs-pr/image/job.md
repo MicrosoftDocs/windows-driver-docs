@@ -1,12 +1,6 @@
 ---
 title: Job element
 description: The required Job element contains all elements that are associated with a scan job.
-MS-HAID:
-- 'wsdss\_job\_65cfefc4-fdaf-4486-8ae2-55df9f30a4a5.xml'
-- 'image.job'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c5622ea6-c57a-4c80-a6ef-e6b9014b2b59
 keywords: ["Job element Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPA\_PROP\_STREAM\_COMPAT\_ID
 description: The WIA\_IPA\_PROP\_STREAM\_COMPAT\_ID property specifies a class identifier (CLSID) that represents a set of device property values.
-MS-HAID:
-- 'WIA\_PropTable\_9c4eb9b6-8780-42f4-82aa-294a303ce28d.xml'
-- 'image.wia\_ipa\_prop\_stream\_compat\_id'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e0701a7a-45e8-4096-8f20-2ed7d3113181
 keywords: ["WIA_IPA_PROP_STREAM_COMPAT_ID Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_STOPPOSITION
 description: The KSPROPERTY\_MEDIASEEKING\_STOPPOSITION property retrieves the stop media time on a filter.
-MS-HAID:
-- 'ks-prop\_e79a6983-7b12-40a4-bc5d-23d21aee9409.xml'
-- 'stream.ksproperty\_mediaseeking\_stopposition'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5a2d6c47-8419-4f1d-a362-28bf17cbd0a5
 keywords: ["KSPROPERTY_MEDIASEEKING_STOPPOSITION Streaming Media Devices"]
 topic_type:

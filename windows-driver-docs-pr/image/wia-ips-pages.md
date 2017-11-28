@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPS\_PAGES
 description: The WIA\_IPS\_PAGES property contains the current number of pages to acquire from an automatic document feeder.
-MS-HAID:
-- 'WIA\_PropTable\_4e933090-cb42-473d-8fc8-110fc97e2611.xml'
-- 'image.wia\_ips\_pages'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 638f816b-0efd-4885-b285-4fa6a42272bc
 keywords: ["WIA_IPS_PAGES Imaging Devices"]
 topic_type:

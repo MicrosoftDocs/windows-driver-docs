@@ -1,12 +1,6 @@
 ---
 title: Device Settings Configuration Elements
 description: Device Settings Configuration Elements
-MS-HAID:
-- 'wsdss\_configure\_146ac331-94d6-4bfc-af3f-030efe95569f.xml'
-- 'image.device\_settings\_configuration\_elements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1393f384-b688-48af-86d7-9a422a1e3cc6
 ---
 

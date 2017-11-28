@@ -1,12 +1,6 @@
 ---
 title: KSMETHOD\_BDA\_START\_CHANGES
 description: Clients use KSMETHOD\_BDA\_START\_CHANGES to reset a change list.
-MS-HAID:
-- 'bdaref\_c0a41708-b40a-424d-bcc0-1a30d9d92427.xml'
-- 'stream.ksmethod\_bda\_start\_changes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 657fb89d-f216-4352-87d8-3d2d933cc8a5
 keywords: ["KSMETHOD_BDA_START_CHANGES Streaming Media Devices"]
 topic_type:

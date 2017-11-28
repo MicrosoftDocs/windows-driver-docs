@@ -1,12 +1,6 @@
 ---
 title: PlatenOpticalResolution element
 description: The required PlatenOpticalResolution element specifies the maximum optical resolution at which the platen can scan.
-MS-HAID:
-- 'wsdss\_platen\_c8ed3840-714f-4c4d-8d46-f34f65432f4b.xml'
-- 'image.platenopticalresolution'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 770c204c-9315-47c6-afd3-4ac385e1177e
 keywords: ["PlatenOpticalResolution element Imaging Devices"]
 topic_type:

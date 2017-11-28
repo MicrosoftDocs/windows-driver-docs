@@ -1,12 +1,6 @@
 ---
 title: JobEndStateEvent.JobEndState
 description: JobEndStateEvent.JobEndState
-MS-HAID:
-- 'dsm\_ref\_dsd\_ceb324ae-d918-4385-9159-753821d11720.xml'
-- 'image.jobendstateevent\_jobendstate'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6fac4952-97d6-439f-9277-5d2dbd318768
 keywords: ["JobEndStateEvent.JobEndState"]
 ---

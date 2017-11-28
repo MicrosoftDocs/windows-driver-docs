@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_BdaAutodemodulate
 description: KSPROPSETID\_BdaAutodemodulate
-MS-HAID:
-- 'bdaref\_31e2e26b-862b-4298-bbf5-734ffbc52cd2.xml'
-- 'stream.kspropsetid\_bdaautodemodulate'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b7c3c934-5b31-48da-9fb0-98007267711b
 ---
 

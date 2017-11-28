@@ -1,12 +1,6 @@
 ---
 title: ConditionHistoryEntry element
 description: The required ConditionHistoryEntry element provides details about one of the past conditions on the scanner.
-MS-HAID:
-- 'wsdss\_status\_d075aa47-14fa-4d39-8082-fe6d54e29e67.xml'
-- 'image.conditionhistoryentry'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2a5d52c2-6389-4afe-be6c-4645d62ccda0
 keywords: ["ConditionHistoryEntry element Imaging Devices"]
 topic_type:

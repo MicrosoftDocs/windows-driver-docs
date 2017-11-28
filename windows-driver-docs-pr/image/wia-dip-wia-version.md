@@ -1,12 +1,6 @@
 ---
 title: WIA\_DIP\_WIA\_VERSION
 description: The WIA\_DIP\_WIA\_VERSION property contains the number (as a string) of the current WIA version that is installed on a computer. The WIA service creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_24647c37-5b4d-4a0f-a233-ddb785b3ee95.xml'
-- 'image.wia\_dip\_wia\_version'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6d849fc1-c22f-4839-a27d-7198f6e362fc
 keywords: ["WIA_DIP_WIA_VERSION Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: PostScanJobEndStateEvent.PostScanJobEndState.FilterCompletedStatuses.FilterStatus.FilterStateReasons
 description: PostScanJobEndStateEvent.PostScanJobEndState.FilterCompletedStatuses.FilterStatus.FilterStateReasons
-MS-HAID:
-- 'dsm\_ref\_dsp\_b8221331-dbb7-4d13-b75d-4ad489ed1330.xml'
-- 'image.postscanjobendstateevent\_postscanjobendstate\_filtercompletedstatuses\_f4'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 091e4cf4-ef09-4614-996b-43715f791cb2
 keywords: ["PostScanJobEndStateEvent.PostScanJobEndState.FilterCompletedStatuses.FilterStatus.FilterStateReasons"]
 ---

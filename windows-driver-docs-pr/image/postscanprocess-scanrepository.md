@@ -1,12 +1,6 @@
 ---
 title: PostScanProcess.ScanRepository
 description: PostScanProcess.ScanRepository
-MS-HAID:
-- 'dsm\_ref\_dsp\_ac37e127-8099-4cbf-94dd-de08642e7233.xml'
-- 'image.postscanprocess\_scanrepository'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 015b99d7-017b-43a8-a4ab-598b2e04569a
 keywords: ["PostScanProcess.ScanRepository"]
 ---

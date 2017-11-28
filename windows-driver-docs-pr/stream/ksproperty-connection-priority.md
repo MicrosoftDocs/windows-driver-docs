@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CONNECTION\_PRIORITY
 description: Clients use the KSPROPERTY\_CONNECTION\_PRIORITY property to get or set the priority of a connection.
-MS-HAID:
-- 'ks-prop\_cd68643f-667e-4184-a7b6-651f7d9b9943.xml'
-- 'stream.ksproperty\_connection\_priority'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2037fe95-e176-4714-ad36-65a0e25b29e0
 keywords: ["KSPROPERTY_CONNECTION_PRIORITY Streaming Media Devices"]
 topic_type:

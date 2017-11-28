@@ -1,12 +1,6 @@
 ---
 title: ScanAvailableEvent element
 description: The required ScanAvailableEvent element informs a client that a scan device to which the client is subscribed is ready to scan a job.
-MS-HAID:
-- 'wsdss\_events\_41d08a71-a7fd-491d-97c1-51237c08fb43.xml'
-- 'image.scanavailableevent'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 82ebfa36-60df-44dd-a928-e751deeea5b0
 keywords: ["ScanAvailableEvent element Imaging Devices"]
 topic_type:

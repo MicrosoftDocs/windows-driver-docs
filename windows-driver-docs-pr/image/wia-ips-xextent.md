@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPS\_XEXTENT
 description: The WIA\_IPS\_XEXTENT property contains the current width, in pixels, of a selected image to acquire.
-MS-HAID:
-- 'WIA\_PropTable\_93f85633-ec7c-4b97-bf31-3e4b6f9116f6.xml'
-- 'image.wia\_ips\_xextent'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 00e8f705-5c2a-40ac-8635-b21a5d3315a3
 keywords: ["WIA_IPS_XEXTENT Imaging Devices"]
 topic_type:

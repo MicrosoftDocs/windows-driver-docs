@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_STREAMALLOCATOR\_STATUS
 description: The KSPROPERTY\_STREAMALLOCATOR\_STATUS property retrieves the current status of the specified allocator.
-MS-HAID:
-- 'ks-prop\_b852eb44-d549-4672-b89f-a59bfd628678.xml'
-- 'stream.ksproperty\_streamallocator\_status'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: af88253b-e72d-4ea9-855d-0a91e6e35d0f
 keywords: ["KSPROPERTY_STREAMALLOCATOR_STATUS Streaming Media Devices"]
 topic_type:

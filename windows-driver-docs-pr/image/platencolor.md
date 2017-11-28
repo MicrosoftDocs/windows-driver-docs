@@ -1,12 +1,6 @@
 ---
 title: PlatenColor element
 description: The required PlatenColor element contains a list of ColorEntry elements that describe the color processing capabilities of the platen.
-MS-HAID:
-- 'wsdss\_platen\_7c5001fb-ad88-44ec-83ff-b9012146eef7.xml'
-- 'image.platencolor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 97fd9926-e49d-4b4f-95aa-eb4142c353a3
 keywords: ["PlatenColor element Imaging Devices"]
 topic_type:

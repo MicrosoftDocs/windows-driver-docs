@@ -1,12 +1,6 @@
 ---
 title: TVOT\_PUSHBUTTON
 description: TVOT\_PUSHBUTTON
-MS-HAID:
-- 'cpsuifnc\_a7754d69-2a8c-49da-901d-b5b9c8663d54.xml'
-- 'print.tvot\_pushbutton'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 47d51066-c1bc-4a84-bc9b-5091100b9f53
 keywords: ["TVOT_PUSHBUTTON Print Devices"]
 topic_type:

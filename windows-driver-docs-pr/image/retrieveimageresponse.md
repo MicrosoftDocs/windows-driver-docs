@@ -1,12 +1,6 @@
 ---
 title: RetrieveImageResponse element
 description: The required RetrieveImageResponse operation element returns the scan data to the client.
-MS-HAID:
-- 'wsdss\_ops\_348feb47-1955-4107-8729-b211da634971.xml'
-- 'image.retrieveimageresponse'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f63398c4-bbae-42ca-94c5-059b066c65cb
 keywords: ["RetrieveImageResponse element Imaging Devices"]
 topic_type:

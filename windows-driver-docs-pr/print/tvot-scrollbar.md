@@ -1,12 +1,6 @@
 ---
 title: TVOT\_SCROLLBAR
 description: TVOT\_SCROLLBAR
-MS-HAID:
-- 'cpsuifnc\_3854464b-f41e-42e9-b987-a7b89759a8b4.xml'
-- 'print.tvot\_scrollbar'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8d905933-9629-48eb-9130-afa3dfa15099
 keywords: ["TVOT_SCROLLBAR Print Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_AudioDecoderOut
 description: KSPROPSETID\_AudioDecoderOut
-MS-HAID:
-- 'dvdref\_48d192e5-9de4-494d-ac84-55aea2feef95.xml'
-- 'stream.kspropsetid\_audiodecoderout'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 80292a43-305f-4c3c-aab1-e38f2eb749d1
 ---
 

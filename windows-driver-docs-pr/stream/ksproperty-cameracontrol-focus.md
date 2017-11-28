@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_FOCUS
 description: User-mode clients use the KSPROPERTY\_CAMERACONTROL\_FOCUS property to get or set a camera's focus setting. This property is optional.
-MS-HAID:
-- 'vidcapprop\_d5c9ed8b-5b47-4598-95a1-0e74c836419b.xml'
-- 'stream.ksproperty\_cameracontrol\_focus'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 89a77055-1ad1-4394-8435-d057685b9eee
 keywords: ["KSPROPERTY_CAMERACONTROL_FOCUS Streaming Media Devices"]
 topic_type:

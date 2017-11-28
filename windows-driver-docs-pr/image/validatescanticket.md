@@ -1,12 +1,6 @@
 ---
 title: ValidateScanTicket
 description: ValidateScanTicket
-MS-HAID:
-- 'dsm\_ref\_dsd\_5cc3b035-c7f1-4f55-8a5a-2ea51cc111c6.xml'
-- 'image.validatescanticket'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3f7ffa80-ea6c-4323-8df6-d1dee77c5ef6
 keywords: ["ValidateScanTicket"]
 ---

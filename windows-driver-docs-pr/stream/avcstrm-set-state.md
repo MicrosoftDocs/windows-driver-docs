@@ -1,12 +1,6 @@
 ---
 title: AVCSTRM\_SET\_STATE
 description: AVCSTRM\_SET\_STATE
-MS-HAID:
-- 'avcsref\_8a32b07f-5b6d-4a0c-a096-474743437580.xml'
-- 'stream.avcstrm\_set\_state'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 890ae8d1-d7e2-40a4-af7f-b6df32d845e4
 keywords: ["AVCSTRM_SET_STATE Streaming Media Devices"]
 topic_type:

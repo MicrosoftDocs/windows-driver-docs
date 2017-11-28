@@ -1,12 +1,6 @@
 ---
 title: HardDisk
 description: HardDisk
-MS-HAID:
-- 'autocfg\_ee366e43-558e-480c-bf69-b96ab6f5b32c.xml'
-- 'print.harddisk'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 88eadea0-54cb-4c19-90d2-9941b13b9303
 ---
 

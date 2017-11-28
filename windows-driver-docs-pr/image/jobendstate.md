@@ -1,12 +1,6 @@
 ---
 title: JobEndState element
 description: The required JobEndState element describes the final state of the current scan job.
-MS-HAID:
-- 'wsdss\_events\_69cb54df-611c-4544-92a0-fd7d7c004f98.xml'
-- 'image.jobendstate'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c69b5988-ca0d-441f-9b65-e5692a17ccb3
 keywords: ["JobEndState element Imaging Devices"]
 topic_type:

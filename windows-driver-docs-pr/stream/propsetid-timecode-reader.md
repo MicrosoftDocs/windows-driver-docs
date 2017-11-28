@@ -1,12 +1,6 @@
 ---
 title: PROPSETID\_TIMECODE\_READER
 description: PROPSETID\_TIMECODE\_READER
-MS-HAID:
-- 'vidcapprop\_871c3ef7-0098-48f4-91f1-2659267d9df9.xml'
-- 'stream.propsetid\_timecode\_reader'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7f115ba5-a6b7-4bae-a562-7e84a98ef420
 ---
 

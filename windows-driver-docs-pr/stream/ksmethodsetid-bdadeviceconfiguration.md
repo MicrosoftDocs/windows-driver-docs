@@ -1,12 +1,6 @@
 ---
 title: KSMETHODSETID\_BdaDeviceConfiguration
 description: KSMETHODSETID\_BdaDeviceConfiguration
-MS-HAID:
-- 'bdaref\_31bb609e-5893-4ab8-9c93-8be3989e70e7.xml'
-- 'stream.ksmethodsetid\_bdadeviceconfiguration'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a0014869-2ea0-4f55-be3a-da1e624ad61c
 ---
 

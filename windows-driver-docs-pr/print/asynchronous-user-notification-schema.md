@@ -1,12 +1,6 @@
 ---
 title: Asynchronous User Notification Schema
 description: Asynchronous User Notification Schema
-MS-HAID:
-- 'async\_1b7d1290-24b1-4437-bb09-4d18c5fa28b9.xml'
-- 'print.asynchronous\_user\_notification\_schema'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a9a11663-d5e5-4337-8be3-bdb6d3b0e436
 ---
 

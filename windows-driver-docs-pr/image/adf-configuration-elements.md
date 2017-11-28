@@ -1,12 +1,6 @@
 ---
 title: ADF Configuration Elements
 description: ADF Configuration Elements
-MS-HAID:
-- 'wsdss\_adffilm\_ceb6d68e-0df1-4c0c-84d1-a0a3cf4364e0.xml'
-- 'image.adf\_configuration\_elements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 643e551d-3a70-4d52-b45d-c33d1e0ac63e
 ---
 

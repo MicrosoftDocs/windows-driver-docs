@@ -1,12 +1,6 @@
 ---
 title: CreatePostScanJobRequest.PSP\_Identifier
 description: CreatePostScanJobRequest.PSP\_Identifier
-MS-HAID:
-- 'dsm\_ref\_dsp\_f0617627-39f9-400a-97b7-2da28f36f000.xml'
-- 'image.createpostscanjobrequest\_psp\_identifier'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 07a17b6a-7fcf-4734-9a8e-caf62e398553
 keywords: ["CreatePostScanJobRequest.PSP_Identifier"]
 ---

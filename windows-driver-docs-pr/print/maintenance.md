@@ -1,12 +1,6 @@
 ---
 title: Maintenance
 description: Maintenance
-MS-HAID:
-- 'autocfg\_7b8b5708-dca0-4949-8159-e36afd88c78b.xml'
-- 'print.maintenance'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 228759ed-f6de-4680-adf2-ca88b83ff4a0
 ---
 

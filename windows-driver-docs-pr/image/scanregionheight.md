@@ -1,12 +1,6 @@
 ---
 title: ScanRegionHeight element
 description: The required ScanRegionHeight element specifies the height of the scan region in the slow scan direction.
-MS-HAID:
-- 'wsdss\_doc\_c7a5909b-c728-4ab8-b6b4-d6cf6e41289d.xml'
-- 'image.scanregionheight'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b0b5b385-d0dc-4e12-b21e-e45b317f40e0
 keywords: ["ScanRegionHeight element Imaging Devices"]
 topic_type:

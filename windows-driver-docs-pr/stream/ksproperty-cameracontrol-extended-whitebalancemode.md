@@ -1,9 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_WHITEBALANCEMODE
 description: The white balance mode property specifies the whether auto processing occurs for white balance or a manual temperature value is used instead.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5DEC4A56-3868-40AF-9FD0-CDB0637B875A
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_WHITEBALANCEMODE Streaming Media Devices"]
 topic_type:

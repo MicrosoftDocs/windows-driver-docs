@@ -1,12 +1,6 @@
 ---
 title: FilmColor element
 description: The required FilmColor element contains the list of color processing capabilities that the film scanning input source supports.
-MS-HAID:
-- 'wsdss\_adffilm\_f78bc105-9ab0-45fa-8d97-fadae6e96a9e.xml'
-- 'image.filmcolor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: daea2cb8-a29f-4be8-bc58-8ed45d64870c
 keywords: ["FilmColor element Imaging Devices"]
 topic_type:

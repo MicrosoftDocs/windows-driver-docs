@@ -1,12 +1,6 @@
 ---
 title: KSEVENT\_CONNECTION\_PRIORITY
 description: The KSEVENT\_CONNECTION\_PRIORITY event allows a client to receive notification of priority failures. This event occurs when resources are lost due to priority levels. There are no parameters to this event.
-MS-HAID:
-- 'ks-event\_21940961-9b69-4e9d-965e-cc39117e36d5.xml'
-- 'stream.ksevent\_connection\_priority'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ebd077d6-f8f5-4498-89d2-bdbbd3d68da3
 keywords: ["KSEVENT_CONNECTION_PRIORITY Streaming Media Devices"]
 topic_type:

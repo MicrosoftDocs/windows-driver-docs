@@ -1,12 +1,6 @@
 ---
 title: AV/C Streaming Protocol Driver Function Codes
 description: AV/C Streaming Protocol Driver Function Codes
-MS-HAID:
-- 'avcsref\_79bd6635-f32f-43d7-8c20-6a2960a1123f.xml'
-- 'stream.av\_c\_streaming\_protocol\_driver\_function\_codes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c76662fc-8bb9-411a-8672-d00a4533e952
 ---
 

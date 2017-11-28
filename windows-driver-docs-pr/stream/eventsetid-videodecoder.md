@@ -1,12 +1,6 @@
 ---
 title: EVENTSETID\_VIDEODECODER
 description: EVENTSETID\_VIDEODECODER
-MS-HAID:
-- 'vidcapevent\_7c29a59c-0dc4-42bf-adbc-e2c179437cfa.xml'
-- 'stream.eventsetid\_videodecoder'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fb2dbd7b-9626-4114-bbfe-f710ba27103e
 ---
 

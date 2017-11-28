@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_BdaTableSection
 description: KSPROPSETID\_BdaTableSection
-MS-HAID:
-- 'bdaref\_8fac13f0-c822-412e-b317-db43f4879ce0.xml'
-- 'stream.kspropsetid\_bdatablesection'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 300e526f-454b-40ba-88eb-97d8a0a14775
 ---
 

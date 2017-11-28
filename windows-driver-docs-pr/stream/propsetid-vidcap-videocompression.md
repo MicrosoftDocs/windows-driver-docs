@@ -1,12 +1,6 @@
 ---
 title: PROPSETID\_VIDCAP\_VIDEOCOMPRESSION
 description: PROPSETID\_VIDCAP\_VIDEOCOMPRESSION
-MS-HAID:
-- 'vidcapprop\_ffe19cd7-ef63-4b73-b474-9b40dbdf60f1.xml'
-- 'stream.propsetid\_vidcap\_videocompression'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7af6f7f0-d446-4b44-9423-efd37f731e0b
 ---
 

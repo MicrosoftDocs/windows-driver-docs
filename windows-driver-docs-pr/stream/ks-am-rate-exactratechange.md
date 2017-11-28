@@ -1,12 +1,6 @@
 ---
 title: KS\_AM\_RATE\_ExactRateChange
 description: The KS\_AM\_RATE\_ExactRateChange property is not yet implemented.
-MS-HAID:
-- 'dvdref\_69e99ea8-ce90-4faf-8b7f-72d3110cc614.xml'
-- 'stream.ks\_am\_rate\_exactratechange'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c96fe88c-04c5-47d9-a9dd-18d06388300e
 keywords: ["KS_AM_RATE_ExactRateChange Streaming Media Devices"]
 topic_type:

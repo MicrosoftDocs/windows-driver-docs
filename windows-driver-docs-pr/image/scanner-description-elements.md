@@ -1,12 +1,6 @@
 ---
 title: Scanner Description Elements
 description: Scanner Description Elements
-MS-HAID:
-- 'wsdss\_desc\_b1af9a0a-089d-4551-b357-1f3c5cda5a2c.xml'
-- 'image.scanner\_description\_elements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bbdc3aa3-5a53-4341-920e-0024f17719b2
 ---
 

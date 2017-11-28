@@ -1,12 +1,6 @@
 ---
 title: AV/C Streaming Constants
 description: AV/C Streaming Constants
-MS-HAID:
-- 'avcsref\_538ef9f5-63e4-44b9-8850-f179a3e24e87.xml'
-- 'stream.av\_c\_streaming\_constants'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1c72796b-04b8-4c5b-bfc0-6a5a2f4ceebc
 ---
 

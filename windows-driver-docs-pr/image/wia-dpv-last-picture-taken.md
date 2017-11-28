@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPV\_LAST\_PICTURE\_TAKEN
 description: The WIA\_DPV\_LAST\_PICTURE\_TAKEN property is reserved by Microsoft for future use and is not implemented at this time.
-MS-HAID:
-- 'WIA\_PropTable\_5022a424-88aa-44ff-bd53-aee5dd4e7c07.xml'
-- 'image.wia\_dpv\_last\_picture\_taken'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1d4f450c-ce29-441a-bfa6-84474109dfa2
 keywords: ["WIA_DPV_LAST_PICTURE_TAKEN Imaging Devices"]
 topic_type:

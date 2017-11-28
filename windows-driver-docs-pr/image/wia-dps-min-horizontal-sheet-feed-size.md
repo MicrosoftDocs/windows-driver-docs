@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_MIN\_HORIZONTAL\_SHEET\_FEED\_SIZE
 description: The WIA\_DPS\_MIN\_HORIZONTAL\_SHEET\_FEED\_SIZE property contains the physical horizontal dimensions of the smallest page that a scanner's document feeder can scan, in thousandths of an inch (.001). The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_9a4647e5-afa7-47e5-b70a-e86ff835d54c.xml'
-- 'image.wia\_dps\_min\_horizontal\_sheet\_feed\_size'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5e7c56ea-39d3-4f0a-bd35-f0100c3a4a06
 keywords: ["WIA_DPS_MIN_HORIZONTAL_SHEET_FEED_SIZE Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_TOPOLOGY\_NODES
 description: KSPROPERTY\_TOPOLOGY\_NODES provides a list of the topology nodes and node types GUIDs supported by the filter.
-MS-HAID:
-- 'ks-prop\_4dd4584c-49b4-4174-bb41-fb5c49e793bf.xml'
-- 'stream.ksproperty\_topology\_nodes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3b07b4d5-b222-44f1-be62-3addf3a87847
 keywords: ["KSPROPERTY_TOPOLOGY_NODES Streaming Media Devices"]
 topic_type:

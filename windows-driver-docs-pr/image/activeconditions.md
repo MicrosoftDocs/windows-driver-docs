@@ -1,12 +1,6 @@
 ---
 title: ActiveConditions element
 description: The required ActiveConditions element is a collection of all of the currently active conditions or errors on the scan device.
-MS-HAID:
-- 'wsdss\_status\_d55c9741-ac90-47fb-bbb0-90bce211e80f.xml'
-- 'image.activeconditions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e66196af-d794-4ffe-99e5-c0f8ea4ffe74
 keywords: ["ActiveConditions element Imaging Devices"]
 topic_type:

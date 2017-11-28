@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOPROCAMP\_GAMMA
 description: The KSPROPERTY\_VIDEOPROCAMP\_GAMMA property controls a camera's gamma setting. This property is optional.
-MS-HAID:
-- 'vidcapprop\_4d14298c-ad96-4cbf-99cf-ee3979b4cd45.xml'
-- 'stream.ksproperty\_videoprocamp\_gamma'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 880f0895-6619-49ac-9753-e44b7eace83d
 keywords: ["KSPROPERTY_VIDEOPROCAMP_GAMMA Streaming Media Devices"]
 topic_type:

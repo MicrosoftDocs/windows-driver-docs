@@ -1,12 +1,6 @@
 ---
 title: FileShareConfig.FileShares.ShareUNC
 description: FileShareConfig.FileShares.ShareUNC
-MS-HAID:
-- 'dsm\_ref\_psp\_7f45bc29-bf21-4983-986d-395966d10b27.xml'
-- 'image.fileshareconfig\_fileshares\_shareunc'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8bcc73e1-7764-42d4-b0da-a2662e09a83a
 keywords: ["FileShareConfig.FileShares.ShareUNC"]
 ---

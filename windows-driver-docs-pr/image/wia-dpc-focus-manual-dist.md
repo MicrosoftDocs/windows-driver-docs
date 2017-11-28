@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_FOCUS\_MANUAL\_DIST
 description: The WIA\_DPC\_FOCUS\_MANUAL\_DIST property is reserved by Microsoft for future use and is not implemented at this time.
-MS-HAID:
-- 'WIA\_PropTable\_2cb5c6fb-f508-4f2e-9820-84d27fac13fa.xml'
-- 'image.wia\_dpc\_focus\_manual\_dist'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0ee3c2b1-8486-483b-a728-19ed720ae949
 keywords: ["WIA_DPC_FOCUS_MANUAL_DIST Imaging Devices"]
 topic_type:

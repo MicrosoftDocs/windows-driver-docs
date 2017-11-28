@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_NULL\_TRANSFORM\_START
 description: Clients use KSPROPERTY\_BDA\_NULL\_TRANSFORM\_START to disable any transform that the node previously applied to a signal and to allow the signal to pass through the node unchanged.
-MS-HAID:
-- 'bdaref\_ebffcc8e-7598-4a99-9cfa-f346a220f28f.xml'
-- 'stream.ksproperty\_bda\_null\_transform\_start'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4713d167-7f49-42d6-a2fc-cfdfe5a737ae
 keywords: ["KSPROPERTY_BDA_NULL_TRANSFORM_START Streaming Media Devices"]
 topic_type:

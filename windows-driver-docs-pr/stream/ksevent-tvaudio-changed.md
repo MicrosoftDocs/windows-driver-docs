@@ -1,12 +1,6 @@
 ---
 title: KSEVENT\_TVAUDIO\_CHANGED
 description: The KSEVENT\_TVAUDIO\_CHANGED event propagates an action, such as a newly tuned-to channel supports stereo audio, from the kernel-mode video capture minidriver to DirectShow in user-mode.
-MS-HAID:
-- 'vidcapevent\_6dd12ce4-c7df-4584-bdd4-3b42bfb640e5.xml'
-- 'stream.ksevent\_tvaudio\_changed'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 98d77001-9844-4893-9a23-9c06f7d75841
 keywords: ["KSEVENT_TVAUDIO_CHANGED Streaming Media Devices"]
 topic_type:

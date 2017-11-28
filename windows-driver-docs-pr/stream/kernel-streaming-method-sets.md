@@ -1,12 +1,6 @@
 ---
 title: Kernel Streaming Method Sets
 description: Kernel Streaming Method Sets
-MS-HAID:
-- 'ks-method\_ed494eea-e388-4928-b642-793d649997f5.xml'
-- 'stream.kernel\_streaming\_method\_sets'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 570a2db3-72a9-49ca-8cdf-c421cd9e908f
 ---
 

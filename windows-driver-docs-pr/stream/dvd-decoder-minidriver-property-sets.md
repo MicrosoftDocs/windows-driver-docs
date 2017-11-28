@@ -1,12 +1,6 @@
 ---
 title: DVD Decoder Minidriver Property Sets
 description: DVD Decoder Minidriver Property Sets
-MS-HAID:
-- 'dvdref\_6f64d8a2-1c99-4f93-b283-09d130f810bc.xml'
-- 'stream.dvd\_decoder\_minidriver\_property\_sets'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c24685bd-ea20-4cc2-b419-feb1fa2ea03e
 ---
 

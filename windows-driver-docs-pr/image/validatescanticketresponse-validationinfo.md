@@ -1,12 +1,6 @@
 ---
 title: ValidateScanTicketResponse.ValidationInfo
 description: ValidateScanTicketResponse.ValidationInfo
-MS-HAID:
-- 'dsm\_ref\_dsd\_199dd887-398a-4274-b3dd-1301bee0bfb5.xml'
-- 'image.validatescanticketresponse\_validationinfo'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 125719d7-9e27-4154-8243-7ee83b0f21bd
 keywords: ["ValidateScanTicketResponse.ValidationInfo"]
 ---

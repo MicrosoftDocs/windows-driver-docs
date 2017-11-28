@@ -1,12 +1,6 @@
 ---
 title: ScannerStatusSummaryEvent
 description: ScannerStatusSummaryEvent
-MS-HAID:
-- 'dsm\_ref\_dsd\_b119bcee-2302-419e-ab6e-21f46bb79131.xml'
-- 'image.scannerstatussummaryevent6'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 45a56c4d-1dd7-413b-aa9a-5643ed6b9b52
 keywords: ["ScannerStatusSummaryEvent"]
 ---

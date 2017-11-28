@@ -1,9 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_TEXT\_UPLOAD
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_TEXT\_UPLOAD property is used to report whether the Imprinter/Endorser item supports upload text data transfers. The WIA minidriver creates and maintains this property.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: FE239B61-6656-462B-A962-2101A1F0C683
 keywords: ["WIA_IPS_PRINTER_ENDORSER_TEXT_UPLOAD Imaging Devices"]
 topic_type:

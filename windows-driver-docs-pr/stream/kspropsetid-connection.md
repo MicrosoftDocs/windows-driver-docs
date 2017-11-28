@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_Connection
 description: KSPROPSETID\_Connection
-MS-HAID:
-- 'ks-prop\_fc940ef1-e39a-4db2-bd68-ba850830d989.xml'
-- 'stream.kspropsetid\_connection'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1be062ab-7396-4876-ab28-8a03e55df1d3
 ---
 

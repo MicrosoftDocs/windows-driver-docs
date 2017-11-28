@@ -1,12 +1,6 @@
 ---
 title: KSEVENTSETID\_VPNotify
 description: KSEVENTSETID\_VPNotify
-MS-HAID:
-- 'dvdref\_72dc615a-88ec-4f00-9452-86da892eaea0.xml'
-- 'stream.kseventsetid\_vpnotify'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 97511a75-b66b-40c1-b508-a82e3a10832e
 ---
 

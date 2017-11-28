@@ -1,12 +1,6 @@
 ---
 title: balloonUI element
 description: The optional balloonUI element is used to display a message balloon on the client computer.
-MS-HAID:
-- 'async\_12e3a090-6c3a-4989-86e2-d0c6438061a1.xml'
-- 'print.balloonui'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8db15dcb-26ed-429e-ad4c-e5dc59f9bbca
 keywords: ["balloonUI element Print Devices"]
 topic_type:

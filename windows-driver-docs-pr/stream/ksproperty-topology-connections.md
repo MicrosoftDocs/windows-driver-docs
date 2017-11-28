@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_TOPOLOGY\_CONNECTIONS
 description: The KSPROPERTY\_TOPOLOGY\_CONNECTIONS property queries all connections between nodes of a KS filter.
-MS-HAID:
-- 'ks-prop\_7c8e7fdd-e9aa-4a64-bbcf-105b9b359b99.xml'
-- 'stream.ksproperty\_topology\_connections'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8ea77244-14c1-4e27-9b96-e0f5a6c491e9
 keywords: ["KSPROPERTY_TOPOLOGY_CONNECTIONS Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: KSINTERFACE\_STANDARD\_LOOPED\_STREAMING
 description: KSINTERFACE\_STANDARD\_LOOPED\_STREAMING
-MS-HAID:
-- 'ks-interfaces\_d1b6a3f5-a50b-457c-bf1d-9019da5eaee7.xml'
-- 'stream.ksinterface\_standard\_looped\_streaming'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c12e7085-fa13-48d3-b4ed-ea0a708f026b
 keywords: ["KSINTERFACE_STANDARD_LOOPED_STREAMING Streaming Media Devices"]
 topic_type:

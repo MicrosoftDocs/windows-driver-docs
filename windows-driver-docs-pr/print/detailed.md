@@ -1,12 +1,6 @@
 ---
 title: Detailed
 description: Detailed
-MS-HAID:
-- 'autocfg\_f9a9e58f-df60-4bd4-bd8d-ad1d04632c93.xml'
-- 'print.detailed'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a96cbb55-2a39-4606-94aa-93a59c80c2d5
 ---
 

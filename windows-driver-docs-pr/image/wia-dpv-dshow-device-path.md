@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPV\_DSHOW\_DEVICE\_PATH
 description: The WIA\_DPV\_DSHOW\_DEVICE\_PATH property is reserved by Microsoft for future use and is not implemented at this time.
-MS-HAID:
-- 'WIA\_PropTable\_4a849f6e-024b-499f-8bfa-d45cfee35133.xml'
-- 'image.wia\_dpv\_dshow\_device\_path'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2fdd3f64-0994-49d5-a81c-1c7aa7e40004
 keywords: ["WIA_DPV_DSHOW_DEVICE_PATH Imaging Devices"]
 topic_type:

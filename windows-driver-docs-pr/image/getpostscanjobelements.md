@@ -1,12 +1,6 @@
 ---
 title: GetPostScanJobElements
 description: GetPostScanJobElements
-MS-HAID:
-- 'dsm\_ref\_dsp\_afba1662-dc98-4575-8803-8fff64b587c5.xml'
-- 'image.getpostscanjobelements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3d5801dd-7b17-48d6-9fd6-2165665f4f50
 keywords: ["GetPostScanJobElements"]
 ---

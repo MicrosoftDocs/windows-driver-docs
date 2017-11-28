@@ -1,12 +1,6 @@
 ---
 title: Platen element
 description: The optional Platen element describes the capabilities of the flatbed platen that is available on the scanner.
-MS-HAID:
-- 'wsdss\_platen\_fe78b133-795a-42d2-8845-460751322e58.xml'
-- 'image.platen'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bda5aa6d-ac19-4af2-9b21-64b29d726e80
 keywords: ["Platen element Imaging Devices"]
 topic_type:

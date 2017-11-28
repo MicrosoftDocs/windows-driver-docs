@@ -1,12 +1,6 @@
 ---
 title: ScalingHeight element
 description: The required ScalingHeight element specifies the document scaling in the slow scan direction.
-MS-HAID:
-- 'wsdss\_doc\_a791da43-5bf7-423d-9c33-0a6f22c9d290.xml'
-- 'image.scalingheight'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 29dcaab0-d32b-4aa0-ba27-3da0c9c39f97
 keywords: ["ScalingHeight element Imaging Devices"]
 topic_type:

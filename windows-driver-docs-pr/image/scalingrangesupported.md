@@ -1,12 +1,6 @@
 ---
 title: ScalingRangeSupported element
 description: The required ScalingRangeSupported element describes the range of values that the scan device supports for scaling the output document.
-MS-HAID:
-- 'wsdss\_configure\_537b4c07-1fa0-430b-a9b0-b35c65830c5a.xml'
-- 'image.scalingrangesupported'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0af5a00e-fdca-438f-b463-3150abf0f871
 keywords: ["ScalingRangeSupported element Imaging Devices"]
 topic_type:

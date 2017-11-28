@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_TUNER\_FREQUENCY
 description: The KSPROPERTY\_TUNER\_FREQUENCY property sets or gets the current frequency or channel of the tuner. This property must be implemented.
-MS-HAID:
-- 'vidcapprop\_fc71c194-152e-420b-ac95-dfc8b2ada9a1.xml'
-- 'stream.ksproperty\_tuner\_frequency'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ba6caf67-63c1-4a31-b93f-3b06b61244bf
 keywords: ["KSPROPERTY_TUNER_FREQUENCY Streaming Media Devices"]
 topic_type:

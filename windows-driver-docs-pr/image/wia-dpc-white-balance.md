@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_WHITE\_BALANCE
 description: The WIA\_DPC\_WHITE\_BALANCE property specifies how a digital camera blends color channels.
-MS-HAID:
-- 'WIA\_PropTable\_c610d1dc-16f8-4e17-ab80-90b4f646418f.xml'
-- 'image.wia\_dpc\_white\_balance'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f0f9dd8e-940a-4a42-b6d7-1d1e86c0a530
 keywords: ["WIA_DPC_WHITE_BALANCE Imaging Devices"]
 topic_type:

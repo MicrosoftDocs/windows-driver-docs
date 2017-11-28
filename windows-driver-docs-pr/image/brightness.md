@@ -1,12 +1,6 @@
 ---
 title: Brightness element
 description: The optional Brightness element specifies the relative amount to reduce or enhance the brightness of the scanned document.
-MS-HAID:
-- 'wsdss\_doc\_0effdce2-20be-4566-829a-fe327d4b23ad.xml'
-- 'image.brightness'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 15b1b9a1-4735-4a25-837e-8fd9e9ecf88d
 keywords: ["Brightness element Imaging Devices"]
 topic_type:

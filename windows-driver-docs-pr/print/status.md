@@ -1,12 +1,6 @@
 ---
 title: Status
 description: Status
-MS-HAID:
-- 'autocfg\_923ee76b-9c12-4f79-92e1-803b47cd7cad.xml'
-- 'print.status'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a4c39069-4324-4af3-a331-31b684275a57
 ---
 

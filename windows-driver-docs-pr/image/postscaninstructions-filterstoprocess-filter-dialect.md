@@ -1,12 +1,6 @@
 ---
 title: PostScanInstructions.FiltersToProcess.Filter.Dialect
 description: PostScanInstructions.FiltersToProcess.Filter.Dialect
-MS-HAID:
-- 'dsm\_ref\_dsp\_f86c291d-22f4-4fdd-8ca6-e16cf538f5c4.xml'
-- 'image.postscaninstructions\_filterstoprocess\_filter\_dialect'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 356acd01-3368-48c8-b31c-07fb89b6d6ba
 keywords: ["PostScanInstructions.FiltersToProcess.Filter.Dialect"]
 ---

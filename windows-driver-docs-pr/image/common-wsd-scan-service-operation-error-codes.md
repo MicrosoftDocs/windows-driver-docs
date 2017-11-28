@@ -1,12 +1,6 @@
 ---
 title: Common WSD Scan Service Operation Error Codes
 description: This topic lists error codes that are common to all WSD Scan Service operations.
-MS-HAID:
-- 'wsdss\_ops\_08928bee-c437-4c2d-9888-bfe6463d0b41.xml'
-- 'image.common\_wsd\_scan\_service\_operation\_error\_codes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 138c29ff-5b2f-4145-95b0-4a9e8489bb37
 keywords: ["Common WSD Scan Service Operation Error Codes Imaging Devices"]
 topic_type:

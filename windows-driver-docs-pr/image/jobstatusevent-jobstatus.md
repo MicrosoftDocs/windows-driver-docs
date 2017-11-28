@@ -1,12 +1,6 @@
 ---
 title: JobStatusEvent.JobStatus
 description: JobStatusEvent.JobStatus
-MS-HAID:
-- 'dsm\_ref\_dsd\_aa01f1d0-f01f-43b6-ab1c-e758d353b0e4.xml'
-- 'image.jobstatusevent\_jobstatus'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 65f16b07-90d9-4320-b728-349a60a00b44
 keywords: ["JobStatusEvent.JobStatus"]
 ---

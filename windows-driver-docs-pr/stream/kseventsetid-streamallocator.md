@@ -1,12 +1,6 @@
 ---
 title: KSEVENTSETID\_StreamAllocator
 description: The KSEVENTSETID\_StreamAllocator event set specifies two events.
-MS-HAID:
-- 'ks-event\_1b3f694c-e59e-4f5e-9f80-ac8f748aa559.xml'
-- 'stream.kseventsetid\_streamallocator'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2ca3914c-b3f3-467d-86ef-fe3331421e27
 keywords: ["KSEVENTSETID_StreamAllocator Streaming Media Devices"]
 topic_type:

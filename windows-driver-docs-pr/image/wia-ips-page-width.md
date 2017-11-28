@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPS\_PAGE\_WIDTH
 description: The WIA\_IPS\_PAGE\_WIDTH property contains the width of the current page selected, in thousandths of an inch (.001). The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_80a4e78f-6669-4a4d-813e-bb4f79e3782e.xml'
-- 'image.wia\_ips\_page\_width'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b72d32bf-6f1b-4eb2-8f7c-f0de4e2caf26
 keywords: ["WIA_IPS_PAGE_WIDTH Imaging Devices"]
 topic_type:

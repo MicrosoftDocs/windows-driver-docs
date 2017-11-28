@@ -1,12 +1,6 @@
 ---
 title: PROPSETID\_VIDCAP\_CROSSBAR
 description: PROPSETID\_VIDCAP\_CROSSBAR
-MS-HAID:
-- 'vidcapprop\_a98cf1c8-5afd-49c7-a865-86ee3cc97fff.xml'
-- 'stream.propsetid\_vidcap\_crossbar'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a2ed126c-75ee-4346-845e-9f675ca34416
 ---
 

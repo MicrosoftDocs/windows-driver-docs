@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPS\_LAMP
 description: The WIA\_IPS\_LAMP property contains the current configuration setting for a scanner's lamp. The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_ec944d84-3ddd-4800-9793-5c5fa957ac79.xml'
-- 'image.wia\_ips\_lamp'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a5eb83cf-824a-4c7c-a7e3-2f9af5a2eb3c
 keywords: ["WIA_IPS_LAMP Imaging Devices"]
 topic_type:

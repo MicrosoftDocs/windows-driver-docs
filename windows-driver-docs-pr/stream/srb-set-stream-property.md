@@ -1,12 +1,6 @@
 ---
 title: SRB\_SET\_STREAM\_PROPERTY
 description: SRB\_SET\_STREAM\_PROPERTY
-MS-HAID:
-- 'strclass-srbs\_19597cee-f8c5-47dd-8e65-e01e525a4884.xml'
-- 'stream.srb\_set\_stream\_property'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 33a44732-a75c-4394-9839-f3c7d71d01e1
 keywords: ["SRB_SET_STREAM_PROPERTY Streaming Media Devices"]
 topic_type:

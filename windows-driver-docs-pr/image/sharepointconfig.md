@@ -1,12 +1,6 @@
 ---
 title: SharePointConfig
 description: SharePointConfig
-MS-HAID:
-- 'dsm\_ref\_psp\_2a05a801-831a-4c08-864d-8c91e4cb9d59.xml'
-- 'image.sharepointconfig'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 00f53ca7-bc55-47f1-97ea-b0422b9d7509
 keywords: ["SharePointConfig"]
 ---

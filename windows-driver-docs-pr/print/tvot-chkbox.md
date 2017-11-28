@@ -1,12 +1,6 @@
 ---
 title: TVOT\_CHKBOX
 description: TVOT\_CHKBOX
-MS-HAID:
-- 'cpsuifnc\_c834ecda-035a-4406-aaae-a971a4fd5343.xml'
-- 'print.tvot\_chkbox'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 66e9879e-c101-4367-b1ee-0746e6a71bc3
 keywords: ["TVOT_CHKBOX Print Devices"]
 topic_type:

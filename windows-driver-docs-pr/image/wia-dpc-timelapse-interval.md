@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_TIMELAPSE\_INTERVAL
 description: The WIA\_DPC\_TIMELAPSE\_INTERVAL property contains the time, in milliseconds, between image captures in a time-lapse capture operation.
-MS-HAID:
-- 'WIA\_PropTable\_328a1699-ff2e-4bf0-9551-2507e83b6c92.xml'
-- 'image.wia\_dpc\_timelapse\_interval'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d500275d-b88e-4fde-8a5d-f1a7ffc4253e
 keywords: ["WIA_DPC_TIMELAPSE_INTERVAL Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: Angle
 description: Angle
-MS-HAID:
-- 'autocfg\_629c366e-46bd-41de-9581-4c8ba73a7373.xml'
-- 'print.angle2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a5bc6a00-ca65-4c4b-9372-1d0db8dd7e41
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: Component element
 description: The required Component element identifies the component that the current DeviceCondition or ConditionHistoryEntry element describes.
-MS-HAID:
-- 'wsdss\_status\_6aeb52a4-6751-48f9-bcaa-f56407e11291.xml'
-- 'image.component'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1204d8c6-40a2-4b0b-bf86-a739ae96f54a
 keywords: ["Component element Imaging Devices"]
 topic_type:

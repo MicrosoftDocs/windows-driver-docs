@@ -1,12 +1,6 @@
 ---
 title: WIA Properties
 description: WIA Properties
-MS-HAID:
-- 'WIA\_PropTable\_d8e6829b-bc45-4235-9fe3-64efbef129ff.xml'
-- 'image.wia\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3b9d4d90-775b-450e-b5d1-646ea45253d7
 ---
 

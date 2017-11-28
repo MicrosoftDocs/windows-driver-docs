@@ -1,12 +1,6 @@
 ---
 title: Kernel Streaming Topology Nodes
 description: Kernel Streaming Topology Nodes
-MS-HAID:
-- 'ks-nodetypes\_6935e244-8846-482d-bc2f-9659fcf9c511.xml'
-- 'stream.kernel\_streaming\_topology\_nodes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3e62200c-1dfa-4dde-8710-0ab8f01375de
 ---
 

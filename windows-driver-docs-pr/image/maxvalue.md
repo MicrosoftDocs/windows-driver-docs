@@ -1,12 +1,6 @@
 ---
 title: MaxValue element
 description: The required MaxValue element specifies the maximum value that the scan device supports for scanner configuration elements that require a range of values.
-MS-HAID:
-- 'wsdss\_configure\_c45daead-3628-44b1-9761-7b2d1e54ad58.xml'
-- 'image.maxvalue'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a01833ff-06cd-47d3-9f54-2f1cf01cc1e6
 keywords: ["MaxValue element Imaging Devices"]
 topic_type:

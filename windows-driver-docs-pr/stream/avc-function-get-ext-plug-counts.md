@@ -1,12 +1,6 @@
 ---
 title: AVC\_FUNCTION\_GET\_EXT\_PLUG\_COUNTS
 description: AVC\_FUNCTION\_GET\_EXT\_PLUG\_COUNTS
-MS-HAID:
-- 'avcref\_48119fd6-7d3e-4919-b0ee-c1916217997b.xml'
-- 'stream.avc\_function\_get\_ext\_plug\_counts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dced18ac-dc26-4c47-bc92-a3f3daec505b
 keywords: ["AVC_FUNCTION_GET_EXT_PLUG_COUNTS Streaming Media Devices"]
 topic_type:

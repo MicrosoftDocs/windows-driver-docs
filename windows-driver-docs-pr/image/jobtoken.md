@@ -1,12 +1,6 @@
 ---
 title: JobToken element
 description: The required JobToken element contains the device-created token for a new scan job.
-MS-HAID:
-- 'wsdss\_ops\_91ae2956-25f2-49ad-8f56-f1722792a333.xml'
-- 'image.jobtoken'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 09446fc0-074a-4f54-93fa-55b4dd467fad
 keywords: ["JobToken element Imaging Devices"]
 topic_type:

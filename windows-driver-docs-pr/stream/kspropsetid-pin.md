@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_Pin
 description: KSPROPSETID\_Pin
-MS-HAID:
-- 'ks-prop\_1d95ccb0-57fa-4d0d-be22-73ba27f18afa.xml'
-- 'stream.kspropsetid\_pin'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a74a9cb2-2809-4e03-95da-71eeb5f079e9
 ---
 

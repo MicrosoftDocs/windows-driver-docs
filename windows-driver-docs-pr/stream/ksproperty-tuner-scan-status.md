@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_TUNER\_SCAN\_STATUS
 description: The KSPROPERTY\_TUNER\_SCAN\_STATUS property describes the status of a scanning operation. This property can be implemented optionally.
-MS-HAID:
-- 'vidcapprop\_4d745c49-21be-4abf-b670-d8157965ef90.xml'
-- 'stream.ksproperty\_tuner\_scan\_status'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ce7dd30b-84fc-46e2-847c-33c07e60e0f7
 keywords: ["KSPROPERTY_TUNER_SCAN_STATUS Streaming Media Devices"]
 topic_type:

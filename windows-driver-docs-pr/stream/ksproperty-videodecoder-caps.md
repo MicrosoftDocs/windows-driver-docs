@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEODECODER\_CAPS
 description: The KSPROPERTY\_VIDEODECODER\_CAPS property describes the basic capabilities of a video decoder. This property must be implemented.
-MS-HAID:
-- 'vidcapprop\_429e1432-d920-4a44-a717-70c9c5df3b13.xml'
-- 'stream.ksproperty\_videodecoder\_caps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8b252f36-911b-4f51-894d-3aae9aa9dfde
 keywords: ["KSPROPERTY_VIDEODECODER_CAPS Streaming Media Devices"]
 topic_type:

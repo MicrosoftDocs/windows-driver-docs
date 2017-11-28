@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_StreamAllocator
 description: KSPROPSETID\_StreamAllocator
-MS-HAID:
-- 'ks-prop\_f666689f-1cae-4433-a4be-6eb293fb54d0.xml'
-- 'stream.kspropsetid\_streamallocator'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 80763dfb-87eb-49c7-8639-b138b9032185
 ---
 

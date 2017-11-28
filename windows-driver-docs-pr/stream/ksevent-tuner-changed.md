@@ -1,12 +1,6 @@
 ---
 title: KSEVENT\_TUNER\_CHANGED
 description: The KSEVENT\_TUNER\_CHANGED event propagates an action, such as a channel change, from the kernel-mode video capture minidriver to DirectShow in user-mode.
-MS-HAID:
-- 'vidcapevent\_1cfde8e7-c6f1-47ae-b486-000ae8112a33.xml'
-- 'stream.ksevent\_tuner\_changed'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7286e36c-a433-40a0-9281-7eac4ab64cbf
 keywords: ["KSEVENT_TUNER_CHANGED Streaming Media Devices"]
 topic_type:

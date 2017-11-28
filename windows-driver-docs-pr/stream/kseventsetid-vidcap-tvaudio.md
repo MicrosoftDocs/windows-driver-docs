@@ -1,12 +1,6 @@
 ---
 title: KSEVENTSETID\_VIDCAP\_TVAUDIO
 description: KSEVENTSETID\_VIDCAP\_TVAUDIO
-MS-HAID:
-- 'vidcapevent\_b60f18a8-1cca-49b8-8edc-89bc3b6669c4.xml'
-- 'stream.kseventsetid\_vidcap\_tvaudio'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5a79d509-d382-4120-83cc-cf9048c5589e
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: InputSize element
 description: The optional InputSize element specifies the size of the original scan media.
-MS-HAID:
-- 'wsdss\_doc\_497a57f4-53af-4018-b59d-5159225956f3.xml'
-- 'image.inputsize'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 406cfff9-7357-467f-a07a-340e32d9220f
 keywords: ["InputSize element Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_TOPOLOGY\_CATEGORIES
 description: The KSPROPERTY\_TOPOLOGY\_CATEGORIES property queries for the array of functional categories that a driver supports.
-MS-HAID:
-- 'ks-prop\_60bbb306-6bb4-471e-9890-96ab5e0a7be4.xml'
-- 'stream.ksproperty\_topology\_categories'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 35a293a1-f8fe-44da-a50b-a4429e369567
 keywords: ["KSPROPERTY_TOPOLOGY_CATEGORIES Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPS\_LAMP\_AUTO\_OFF
 description: The WIA\_IPS\_LAMP\_AUTO\_OFF property contains the current configuration setting for automatically shutting off a scanner's lamp. The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_f13bdfa9-e949-4730-aab4-b7e0adf27f7b.xml'
-- 'image.wia\_ips\_lamp\_auto\_off'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 82a3b5dc-0a70-4e2a-a863-6019b04cbbaf
 keywords: ["WIA_IPS_LAMP_AUTO_OFF Imaging Devices"]
 topic_type:

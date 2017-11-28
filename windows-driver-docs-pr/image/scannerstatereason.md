@@ -1,12 +1,6 @@
 ---
 title: ScannerStateReason element
 description: The optional ScannerStateReason element specifies one piece of information about why the scanner is in its current state.
-MS-HAID:
-- 'wsdss\_status\_e3dd8671-01bd-4998-ae89-74ad2a05dae4.xml'
-- 'image.scannerstatereason'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7f10476a-d3ef-40a1-a355-ab735a6afe60
 keywords: ["ScannerStateReason element Imaging Devices"]
 topic_type:

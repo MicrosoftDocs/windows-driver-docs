@@ -1,12 +1,6 @@
 ---
 title: Scaling element
 description: The optional Scaling element specifies the scaling of both the width and height of the scanned document.
-MS-HAID:
-- 'wsdss\_doc\_8ae46544-3aa4-4d3d-8a2c-923b2815b87e.xml'
-- 'image.scaling'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 43769ebf-f883-418a-a0b3-87d5b23601f9
 keywords: ["Scaling element Imaging Devices"]
 topic_type:

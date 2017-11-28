@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_STREAM\_MASTERCLOCK
 description: The KSPROPERTY\_STREAM\_MASTERCLOCK property is an optional property that should be implemented if the pin uses or produces a master clock that can be used for synchronization.
-MS-HAID:
-- 'ks-prop\_34bcda1f-32f9-45e9-8176-7c3b02434ba8.xml'
-- 'stream.ksproperty\_stream\_masterclock'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b8fb4d7b-e2e3-498c-9f76-4075d3ae0cb2
 keywords: ["KSPROPERTY_STREAM_MASTERCLOCK Streaming Media Devices"]
 topic_type:

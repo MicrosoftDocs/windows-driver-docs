@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_NUMVIDEOFORMAT
 description: The KSPROPERTY\_VPCONFIG\_NUMVIDEOFORMAT property obtains the maximum number of supported pixel formats.
-MS-HAID:
-- 'dvdref\_5ba96aea-1ad2-4593-8602-7c34cb61e9f6.xml'
-- 'stream.ksproperty\_vpconfig\_numvideoformat'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: aa081e46-1992-43db-b287-220e3869902a
 keywords: ["KSPROPERTY_VPCONFIG_NUMVIDEOFORMAT Streaming Media Devices"]
 topic_type:

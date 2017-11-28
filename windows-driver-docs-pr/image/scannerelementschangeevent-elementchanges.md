@@ -1,12 +1,6 @@
 ---
 title: ScannerElementsChangeEvent.ElementChanges
 description: ScannerElementsChangeEvent.ElementChanges
-MS-HAID:
-- 'dsm\_ref\_dsd\_801f358c-9433-4f52-98d9-01cb362fa8da.xml'
-- 'image.scannerelementschangeevent\_elementchanges'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bf047894-e97d-459d-a126-180e5a725e68
 keywords: ["ScannerElementsChangeEvent.ElementChanges"]
 ---

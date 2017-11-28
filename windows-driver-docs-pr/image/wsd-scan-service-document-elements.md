@@ -1,12 +1,6 @@
 ---
 title: WSD Scan Service Document Elements
 description: WSD Scan Service Document Elements
-MS-HAID:
-- 'wsdss\_doc\_392996fd-db2f-48fb-9527-0ff850a0f0ce.xml'
-- 'image.wsd\_scan\_service\_document\_elements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5f0c6604-0fad-4e7a-a7b4-7e0814821a55
 ---
 

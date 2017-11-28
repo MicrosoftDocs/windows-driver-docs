@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_TVAUDIO\_CAPS
 description: The KSPROPERTY\_TVAUDIO\_CAPS property retrieves the capabilities of the TV audio device. This property must be implemented.
-MS-HAID:
-- 'vidcapprop\_01303a69-45d0-45f3-b3dc-3cd9015b1253.xml'
-- 'stream.ksproperty\_tvaudio\_caps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a5b7348e-0f85-430c-acf0-c35e289ef338
 keywords: ["KSPROPERTY_TVAUDIO_CAPS Streaming Media Devices"]
 topic_type:

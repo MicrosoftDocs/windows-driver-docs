@@ -1,12 +1,6 @@
 ---
 title: ValidScanTicket element
 description: The optional ValidScanTicket element contains a valid ScanTicket.
-MS-HAID:
-- 'wsdss\_ops\_1a16b9d1-67fd-46b3-9ef5-c11e407d562a.xml'
-- 'image.validscanticket'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 306b5d90-068f-4b63-9155-8f35c7825f16
 keywords: ["ValidScanTicket element Imaging Devices"]
 topic_type:

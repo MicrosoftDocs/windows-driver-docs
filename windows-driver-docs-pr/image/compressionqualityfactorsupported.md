@@ -1,12 +1,6 @@
 ---
 title: CompressionQualityFactorSupported element
 description: The required CompressionQualityFactorSupported element specifies the range of compression quality factors that the scan device supports.
-MS-HAID:
-- 'wsdss\_configure\_1224916b-b87d-41c6-aca5-66d804bd4e18.xml'
-- 'image.compressionqualityfactorsupported'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f82ae450-b948-463e-a6a8-aaea0575ddb9
 keywords: ["CompressionQualityFactorSupported element Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: WIA\_DIP\_SERVER\_NAME
 description: The WIA\_DIP\_SERVER\_NAME property contains the name of the server that a WIA minidriver is running on.
-MS-HAID:
-- 'WIA\_PropTable\_f6268f1a-c8f3-45a0-b9b5-38dff964514b.xml'
-- 'image.wia\_dip\_server\_name'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 93fec2b1-dc41-48cf-990b-f6aa99133835
 keywords: ["WIA_DIP_SERVER_NAME Imaging Devices"]
 topic_type:

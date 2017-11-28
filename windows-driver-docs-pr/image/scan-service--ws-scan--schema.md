@@ -1,12 +1,6 @@
 ---
 title: Scan Service (WS-Scan) Schema
 description: Scan Service (WS-Scan) Schema
-MS-HAID:
-- 'wsdss\_intro\_3b1e4cce-93f7-4265-b262-043a58944f6c.xml'
-- 'image.scan\_service\_\_ws\_scan\_\_schema'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4a1f3f82-b345-4e08-ac5e-69bd5fee1b83
 ---
 

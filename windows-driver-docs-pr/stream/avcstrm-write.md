@@ -1,12 +1,6 @@
 ---
 title: AVCSTRM\_WRITE
 description: AVCSTRM\_WRITE
-MS-HAID:
-- 'avcsref\_f0d56c9c-2188-4c75-bae8-1a5ec6ebfbe0.xml'
-- 'stream.avcstrm\_write'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: de11778d-21ab-40ae-8e7f-5229acfeea42
 keywords: ["AVCSTRM_WRITE Streaming Media Devices"]
 topic_type:

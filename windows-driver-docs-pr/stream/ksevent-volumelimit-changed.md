@@ -1,9 +1,6 @@
 ---
 title: KSEVENT\_VOLUMELIMIT\_CHANGED
 description: The KSEVENT\_VOLUMELIMIT\_CHANGED event propagates an a volume change action from the kernel-mode driver to user-mode.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: C4CB9E8A-A0B6-48E1-B020-EA6A0768AE05
 keywords: ["KSEVENT_VOLUMELIMIT_CHANGED Streaming Media Devices"]
 topic_type:

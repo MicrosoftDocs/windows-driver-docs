@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_EXTXPORT\_MEDIUM\_INFO
 description: The KSPROPERTY\_EXTXPORT\_MEDIUM\_INFO property retrieves information about an external device's medium.
-MS-HAID:
-- 'vidcapprop\_236921cb-139c-4015-b5a2-55f936c029bf.xml'
-- 'stream.ksproperty\_extxport\_medium\_info'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 04b98c50-ebb0-4224-b476-d261b7c5dd79
 keywords: ["KSPROPERTY_EXTXPORT_MEDIUM_INFO Streaming Media Devices"]
 topic_type:

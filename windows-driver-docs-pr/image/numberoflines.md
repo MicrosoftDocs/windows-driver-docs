@@ -1,12 +1,6 @@
 ---
 title: NumberOfLines element
 description: The required NumberOfLines element describes the exact height, in pixels, of the final output image.
-MS-HAID:
-- 'wsdss\_ops\_284a8152-61e6-47fb-9416-2a1819ae7d91.xml'
-- 'image.numberoflines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9f7f96d4-fd88-4d14-b000-7abefe96775f
 keywords: ["NumberOfLines element Imaging Devices"]
 topic_type:

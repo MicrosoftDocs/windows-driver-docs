@@ -1,12 +1,6 @@
 ---
 title: title element
 description: The required title element provides text that is displayed in the title of the event notification message.
-MS-HAID:
-- 'async\_7dab29a9-385e-4aaa-8ddb-d6b30605781d.xml'
-- 'print.title'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 60583593-9fe9-4c3c-ab86-3e7c37a8e199
 keywords: ["title element Print Devices"]
 topic_type:

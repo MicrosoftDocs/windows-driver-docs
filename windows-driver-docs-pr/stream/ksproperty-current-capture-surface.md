@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CURRENT\_CAPTURE\_SURFACE
 description: The KSPROPERTY\_CURRENT\_CAPTURE\_SURFACE property gets or sets the type of capture memory used by a given pin.To use VRAM transport, a capture minidriver must support this property.
-MS-HAID:
-- 'ks-prop\_179fde8b-2bb4-405b-800d-5b1ebdc28741.xml'
-- 'stream.ksproperty\_current\_capture\_surface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fcb07f74-d43a-4850-b8be-c349c92f9f9f
 keywords: ["KSPROPERTY_CURRENT_CAPTURE_SURFACE Streaming Media Devices"]
 topic_type:

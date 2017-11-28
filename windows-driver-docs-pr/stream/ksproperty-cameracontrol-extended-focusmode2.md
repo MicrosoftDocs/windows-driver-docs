@@ -1,9 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSMODE
 description: The KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSMODE extended property is extended to support advanced focus scenarios as follows
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2A55CA7C-2EC0-4D88-8499-E05BF68DA97C
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE Streaming Media Devices"]
 topic_type:

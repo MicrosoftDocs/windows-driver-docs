@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CONNECTION\_STATE
 description: The KSPROPERTY\_CONNECTION\_STATE property sets the current run state of the pin.
-MS-HAID:
-- 'ks-prop\_6ed375e0-845b-4146-a02d-912aa0975bbe.xml'
-- 'stream.ksproperty\_connection\_state'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f1a9e101-1398-4f16-bae9-f827e7d0c433
 keywords: ["KSPROPERTY_CONNECTION_STATE Streaming Media Devices"]
 topic_type:

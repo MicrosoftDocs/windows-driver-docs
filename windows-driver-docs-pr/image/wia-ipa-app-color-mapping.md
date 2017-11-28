@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPA\_APP\_COLOR\_MAPPING
 description: The WIA\_IPA\_APP\_COLOR\_MAPPING property is reserved by Microsoft for future use and is not implemented at this time.
-MS-HAID:
-- 'WIA\_PropTable\_35b66013-706d-4fde-818d-0550a7afaab2.xml'
-- 'image.wia\_ipa\_app\_color\_mapping'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: abf0888b-7c9a-4cd4-9227-3a065d7b732b
 keywords: ["WIA_IPA_APP_COLOR_MAPPING Imaging Devices"]
 topic_type:

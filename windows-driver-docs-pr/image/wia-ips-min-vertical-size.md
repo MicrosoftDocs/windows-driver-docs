@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPS\_MIN\_VERTICAL\_SIZE
 description: The WIA\_IPS\_MIN\_VERTICAL\_SIZE property contains the physical vertical dimensions of the smallest page that a scanner's document feeder can scan, in thousandths of an inch (.001).
-MS-HAID:
-- 'WIA\_PropTable\_f3f0d38d-689a-4279-b40f-b58037a5aa36.xml'
-- 'image.wia\_ips\_min\_vertical\_size'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 95cfd1a2-2968-4493-8fe1-514f86e10fdf
 keywords: ["WIA_IPS_MIN_VERTICAL_SIZE Imaging Devices"]
 topic_type:

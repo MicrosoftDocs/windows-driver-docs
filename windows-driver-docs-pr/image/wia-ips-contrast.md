@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPS\_CONTRAST
 description: The WIA\_IPS\_CONTRAST property contains the current hardware contrast setting for a device.
-MS-HAID:
-- 'WIA\_PropTable\_72afd11d-f393-4917-9de6-0b25d9145116.xml'
-- 'image.wia\_ips\_contrast'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7fecfd43-212c-40e6-8520-ef1819448895
 keywords: ["WIA_IPS_CONTRAST Imaging Devices"]
 topic_type:

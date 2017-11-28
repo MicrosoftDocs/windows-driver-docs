@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_NODE\_PROPERTIES
 description: Clients use KSPROPERTY\_BDA\_NODE\_PROPERTIES to retrieve a list of properties supported on a node.
-MS-HAID:
-- 'bdaref\_f0773162-7234-44f0-bd72-bc97c1694e5a.xml'
-- 'stream.ksproperty\_bda\_node\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 36d37844-a69b-4f67-bb8f-e5445ba9a2cb
 keywords: ["KSPROPERTY_BDA_NODE_PROPERTIES Streaming Media Devices"]
 topic_type:

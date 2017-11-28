@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_CA\_REMOVE\_PROGRAM
 description: Clients use KSPROPERTY\_BDA\_CA\_REMOVE\_PROGRAM to prevent access to a specific program.
-MS-HAID:
-- 'bdaref\_ce6a7011-a0ed-4a83-b05c-e9413c7a6b9a.xml'
-- 'stream.ksproperty\_bda\_ca\_remove\_program'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 07792113-6d47-4836-8db2-6960fb14ab87
 keywords: ["KSPROPERTY_BDA_CA_REMOVE_PROGRAM Streaming Media Devices"]
 topic_type:

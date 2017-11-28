@@ -1,12 +1,6 @@
 ---
 title: DestinationResponses element
 description: The required DestinationResponses element is a collection of all of the responses to a client's scan destination requests.
-MS-HAID:
-- 'wsdss\_events\_c33cbebb-f9f0-46fe-806e-228ca0283fd2.xml'
-- 'image.destinationresponses'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f373b584-eec9-412e-80b2-3d8a69f4b7ca
 keywords: ["DestinationResponses element Imaging Devices"]
 topic_type:

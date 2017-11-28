@@ -1,12 +1,6 @@
 ---
 title: Name for RequestedElements element
 description: This required Name element identifies the section of the WSD Scan Service schema that the client wants data for when it calls GetScannerElementsRequest or GetJobElementsRequest.
-MS-HAID:
-- 'wsdss\_ops\_a8e05886-46f4-45d2-8116-1f5d021d95c5.xml'
-- 'image.name\_for\_requestedelements\_element'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1b2bc3b4-24de-4957-a72a-6788425dc3b9
 keywords: ["Name for RequestedElements element Imaging Devices"]
 topic_type:

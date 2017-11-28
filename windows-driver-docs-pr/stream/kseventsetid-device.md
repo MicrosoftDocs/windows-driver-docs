@@ -1,9 +1,6 @@
 ---
 title: KSEVENTSETID\_Device
 description: The KSEVENTSETID\_Device event set specifies device events that can be enabled on a filter.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B3A28AD3-D63A-4F2F-8FB3-63656F603E7F
 keywords: ["KSEVENTSETID_Device Streaming Media Devices"]
 topic_type:

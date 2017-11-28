@@ -1,12 +1,6 @@
 ---
 title: BDA Pin Name GUIDs
 description: BDA Pin Name GUIDs
-MS-HAID:
-- 'bdaref\_151cb82f-f42c-4bf7-8ada-ea19a9b522e8.xml'
-- 'stream.bda\_pin\_name\_guids'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 098e4c49-13dd-4c9a-8ce4-06b99b7c5fa3
 ---
 

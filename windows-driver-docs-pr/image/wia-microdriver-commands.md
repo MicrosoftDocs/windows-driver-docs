@@ -1,12 +1,6 @@
 ---
 title: WIA Microdriver Commands
 description: WIA Microdriver Commands
-MS-HAID:
-- 'MicroDrv\_ecfc5a07-c925-46a1-9b23-bc3bc2d51c32.xml'
-- 'image.wia\_microdriver\_commands'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 54d0c35b-d8b3-4e38-85cf-d5b4f80f6daa
 ---
 

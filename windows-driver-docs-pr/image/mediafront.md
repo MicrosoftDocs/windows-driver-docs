@@ -1,12 +1,6 @@
 ---
 title: MediaFront element
 description: The required MediaFront element contains all parameters that are specific to the scanning of the front side of the physical media.
-MS-HAID:
-- 'wsdss\_doc\_d557ccd0-a37b-4fbb-b0c2-320a0619c39d.xml'
-- 'image.mediafront'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1bde587b-4057-4368-b075-c22561ee45cc
 keywords: ["MediaFront element Imaging Devices"]
 topic_type:

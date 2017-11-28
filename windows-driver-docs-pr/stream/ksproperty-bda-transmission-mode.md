@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_TRANSMISSION\_MODE
 description: Clients use KSPROPERTY\_BDA\_TRANSMISSION\_MODE to control the setting on a demodulator node for how broadcast signals are transmitted.
-MS-HAID:
-- 'bdaref\_3574ee2a-c7d0-40ad-ae8e-735d8cbd8539.xml'
-- 'stream.ksproperty\_bda\_transmission\_mode'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8d49a45f-031f-445f-ae2e-d98223a7d524
 keywords: ["KSPROPERTY_BDA_TRANSMISSION_MODE Streaming Media Devices"]
 topic_type:

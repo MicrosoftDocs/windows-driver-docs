@@ -1,12 +1,6 @@
 ---
 title: DeviceSettings element
 description: The required DeviceSettings element describes the basic capabilities of the scan device.
-MS-HAID:
-- 'wsdss\_configure\_781ebae8-ae5a-4196-946e-5f6f4d67e94c.xml'
-- 'image.devicesettings'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d12d25f0-fa94-4840-bb1a-cc1a5352767c
 keywords: ["DeviceSettings element Imaging Devices"]
 topic_type:

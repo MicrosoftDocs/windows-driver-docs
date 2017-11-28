@@ -1,12 +1,6 @@
 ---
 title: KSINTERFACE\_STANDARD\_STREAMING
 description: KSINTERFACE\_STANDARD\_STREAMING
-MS-HAID:
-- 'ks-interfaces\_e652d63a-559e-46f7-9ff8-b4348b3fbff6.xml'
-- 'stream.ksinterface\_standard\_streaming'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 04ba6879-1699-4d12-b81e-a90878014325
 keywords: ["KSINTERFACE_STANDARD_STREAMING Streaming Media Devices"]
 topic_type:

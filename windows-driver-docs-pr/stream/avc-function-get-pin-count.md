@@ -1,12 +1,6 @@
 ---
 title: AVC\_FUNCTION\_GET\_PIN\_COUNT
 description: AVC\_FUNCTION\_GET\_PIN\_COUNT
-MS-HAID:
-- 'avcref\_9688360e-6bfa-4cd8-a19f-5dbfc9b01661.xml'
-- 'stream.avc\_function\_get\_pin\_count'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fb455843-c979-479c-ba7c-f84875a9ba6f
 keywords: ["AVC_FUNCTION_GET_PIN_COUNT Streaming Media Devices"]
 topic_type:

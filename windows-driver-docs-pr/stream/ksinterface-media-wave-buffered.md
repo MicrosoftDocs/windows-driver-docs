@@ -1,12 +1,6 @@
 ---
 title: KSINTERFACE\_MEDIA\_WAVE\_BUFFERED
 description: KSINTERFACE\_MEDIA\_WAVE\_BUFFERED
-MS-HAID:
-- 'ks-interfaces\_c0644000-5f6d-49e3-9fbe-2d7f02f6a4d1.xml'
-- 'stream.ksinterface\_media\_wave\_buffered'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bb38f814-b0e5-4590-9ab1-6edd17b84ce9
 keywords: ["KSINTERFACE_MEDIA_WAVE_BUFFERED Streaming Media Devices"]
 topic_type:

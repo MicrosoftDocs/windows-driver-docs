@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_SCALEFACTOR
 description: The KSPROPERTY\_VPCONFIG\_SCALEFACTOR property sets the video port dimensions to user-defined specifications.
-MS-HAID:
-- 'dvdref\_1e6fd3f6-4725-4548-8c9c-664df6505b40.xml'
-- 'stream.ksproperty\_vpconfig\_scalefactor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0fbfedc8-9dff-4c7c-910f-507b84614e47
 keywords: ["KSPROPERTY_VPCONFIG_SCALEFACTOR Streaming Media Devices"]
 topic_type:

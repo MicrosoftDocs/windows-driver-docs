@@ -1,12 +1,6 @@
 ---
 title: SRB\_UNKNOWN\_STREAM\_COMMAND
 description: SRB\_UNKNOWN\_STREAM\_COMMAND
-MS-HAID:
-- 'strclass-srbs\_09d06b97-faeb-4163-8298-c45ec78b96a4.xml'
-- 'stream.srb\_unknown\_stream\_command'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 968a52ab-478e-4efe-ae8a-438ea3f7b71d
 keywords: ["SRB_UNKNOWN_STREAM_COMMAND Streaming Media Devices"]
 topic_type:

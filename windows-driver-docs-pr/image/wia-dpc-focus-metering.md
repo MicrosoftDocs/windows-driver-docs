@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_FOCUS\_METERING
 description: The WIA\_DPC\_FOCUS\_METERING property is reserved by Microsoft for future use and is not implemented at this time.
-MS-HAID:
-- 'WIA\_PropTable\_9e88ee56-78c1-4a28-87c9-7fc89aa4d3c0.xml'
-- 'image.wia\_dpc\_focus\_metering'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d948ed5a-106e-490d-aac0-c811c3af0978
 keywords: ["WIA_DPC_FOCUS_METERING Imaging Devices"]
 topic_type:

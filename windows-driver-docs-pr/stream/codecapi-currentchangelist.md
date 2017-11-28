@@ -1,12 +1,6 @@
 ---
 title: CODECAPI\_CURRENTCHANGELIST
 description: CODECAPI\_CURRENTCHANGELIST
-MS-HAID:
-- 'encoderef\_c70291e4-5639-44bd-8520-2cbe330f8d99.xml'
-- 'stream.codecapi\_currentchangelist'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f783857f-d1a1-417f-8f69-198b6f328a69
 ---
 

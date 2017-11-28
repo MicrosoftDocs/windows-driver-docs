@@ -1,12 +1,6 @@
 ---
 title: GUID\_DEVINTERFACE\_IMAGE Device Interface Class
 description: GUID\_DEVINTERFACE\_IMAGE Device Interface Class
-MS-HAID:
-- 'devinterface\_image\_33d965fd-8c72-4828-a666-ae33e77a4f29.xml'
-- 'image.guid\_devinterface\_image\_device\_interface\_class'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2bf0bb35-c047-481e-a0f3-b8a8c06e259b
 ---
 

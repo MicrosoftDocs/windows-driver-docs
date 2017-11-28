@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_NECESSARYINSTANCES
 description: This property returns the minimum number of pins that the pin factory must instantiate before the filter can perform I/O operations.
-MS-HAID:
-- 'ks-prop\_8300fe4d-0aef-416c-8e23-2c435cac4b73.xml'
-- 'stream.ksproperty\_pin\_necessaryinstances'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d30d7546-3d16-42df-b640-a8ec37bca35c
 keywords: ["KSPROPERTY_PIN_NECESSARYINSTANCES Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: GetScannerElementsRequest.RequestedElements
 description: GetScannerElementsRequest.RequestedElements
-MS-HAID:
-- 'dsm\_ref\_dsd\_28e5575e-cd91-472b-b60b-c81e804d8463.xml'
-- 'image.getscannerelementsrequest\_requestedelements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: eb8878fb-d546-46ce-becc-81e46ef78c0a
 keywords: ["GetScannerElementsRequest.RequestedElements"]
 ---

@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_GETCONNECTINFO
 description: The KSPROPERTY\_VPCONFIG\_GETCONNECTINFO property retrieves all possible video port configurations.
-MS-HAID:
-- 'dvdref\_38b7569d-ce63-47c0-94f3-3bc5c1564e1e.xml'
-- 'stream.ksproperty\_vpconfig\_getconnectinfo'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 30ac1f7d-0218-49ed-8f6d-e58f56aee70e
 keywords: ["KSPROPERTY_VPCONFIG_GETCONNECTINFO Streaming Media Devices"]
 topic_type:

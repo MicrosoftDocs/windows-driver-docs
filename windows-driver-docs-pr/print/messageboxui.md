@@ -1,12 +1,6 @@
 ---
 title: messageBoxUI element
 description: The optional messageBoxUI element is used to display a message box on the client computer.
-MS-HAID:
-- 'async\_a2fe3e3d-d25d-4bdf-9235-0745829c6954.xml'
-- 'print.messageboxui'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 83fe67fe-72b0-42e2-864e-242b7b9989d9
 keywords: ["messageBoxUI element Print Devices"]
 topic_type:

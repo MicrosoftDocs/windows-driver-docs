@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_INNER\_FEC\_TYPE
 description: Clients use KSPROPERTY\_BDA\_INNER\_FEC\_TYPE to control the inner forward error correction (FEC) type of a demodulator node.
-MS-HAID:
-- 'bdaref\_7c97c316-8dc3-49c8-878f-98cf7b006882.xml'
-- 'stream.ksproperty\_bda\_inner\_fec\_type'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e6640d89-cf75-4073-98fb-2a877d6c38d3
 keywords: ["KSPROPERTY_BDA_INNER_FEC_TYPE Streaming Media Devices"]
 topic_type:

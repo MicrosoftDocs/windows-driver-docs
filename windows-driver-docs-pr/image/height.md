@@ -1,12 +1,6 @@
 ---
 title: Height element
 description: The Height element specifies a height value that the scan device supports for scanner configuration elements that require a height.
-MS-HAID:
-- 'wsdss\_platen\_73b7f517-cb05-4bcf-8057-a065711295eb.xml'
-- 'image.height'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1161c92e-e135-4921-b55d-b27e98d5caec
 keywords: ["Height element Imaging Devices"]
 topic_type:

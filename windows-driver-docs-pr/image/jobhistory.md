@@ -1,12 +1,6 @@
 ---
 title: JobHistory element
 description: The required JobHistory element contains a list of JobSummary elements that describe the most recently completed jobs in the scan device.
-MS-HAID:
-- 'wsdss\_ops\_e40ba674-1a0c-4256-adc4-c147abee96ec.xml'
-- 'image.jobhistory'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d1439e56-b2fe-4db8-b063-56537a3346c6
 keywords: ["JobHistory element Imaging Devices"]
 topic_type:

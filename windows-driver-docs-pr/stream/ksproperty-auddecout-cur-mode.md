@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_AUDDECOUT\_CUR\_MODE
 description: The KSPROPERTY\_AUDDECOUT\_CUR\_MODE property indicates the current audio output mode.
-MS-HAID:
-- 'dvdref\_91a21d1a-c980-48d1-ae80-0a59e8c30311.xml'
-- 'stream.ksproperty\_auddecout\_cur\_mode'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4ac6d181-f532-4ac6-b8fd-2975214a3618
 keywords: ["KSPROPERTY_AUDDECOUT_CUR_MODE Streaming Media Devices"]
 topic_type:

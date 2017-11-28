@@ -1,12 +1,6 @@
 ---
 title: GetActiveJobsResponse
 description: GetActiveJobsResponse
-MS-HAID:
-- 'dsm\_ref\_dsd\_5ff67b8c-d053-4cf4-8210-266db7ed1c10.xml'
-- 'image.getactivejobsresponse2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 994b6124-a5df-4cb1-93f1-377a8398fb37
 keywords: ["GetActiveJobsResponse"]
 ---

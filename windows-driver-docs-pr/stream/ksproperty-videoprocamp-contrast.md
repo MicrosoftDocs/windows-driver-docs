@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOPROCAMP\_CONTRAST
 description: The KSPROPERTY\_VIDEOPROCAMP\_CONTRAST property controls a camera's contrast (luma gain) setting. This property is optional.
-MS-HAID:
-- 'vidcapprop\_5f4883be-99b9-4ef2-97b3-14d54c7ec1d8.xml'
-- 'stream.ksproperty\_videoprocamp\_contrast'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0e94aec4-b258-44be-aa6e-f0a40b803564
 keywords: ["KSPROPERTY_VIDEOPROCAMP_CONTRAST Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: KSEVENT\_STREAMALLOCATOR\_FREEFRAME
 description: The KSEVENT\_STREAMALLOCATOR\_FREEFRAME event can be used to receive notification when a free frame is available for allocation.
-MS-HAID:
-- 'ks-event\_75b60cf1-afc0-4902-b970-5c5acb64ddda.xml'
-- 'stream.ksevent\_streamallocator\_freeframe'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0b3ec3d5-a6fa-4738-a049-3f5dd6686ee6
 keywords: ["KSEVENT_STREAMALLOCATOR_FREEFRAME Streaming Media Devices"]
 topic_type:

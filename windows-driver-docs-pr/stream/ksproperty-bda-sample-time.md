@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_SAMPLE\_TIME
 description: Clients use KSPROPERTY\_BDA\_SAMPLE\_TIME to determine the sample time over which signal level and quality are averaged.
-MS-HAID:
-- 'bdaref\_387d8990-fcf8-4f25-9c74-98daea880224.xml'
-- 'stream.ksproperty\_bda\_sample\_time'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 53252e11-2a18-42d5-aed8-99052a2b0f21
 keywords: ["KSPROPERTY_BDA_SAMPLE_TIME Streaming Media Devices"]
 topic_type:

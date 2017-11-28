@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_TUNER\_STATUS
 description: The KSPROPERTY\_TUNER\_STATUS property retrieves information about the tuning process including the current frequency, phase locked loop (PLL) offset, and signal strength. This property must be implemented.
-MS-HAID:
-- 'vidcapprop\_d34dacc5-8599-4408-b390-99d0e2ca295d.xml'
-- 'stream.ksproperty\_tuner\_status'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8613cda2-f39b-4363-a1c7-ac91162b9fca
 keywords: ["KSPROPERTY_TUNER_STATUS Streaming Media Devices"]
 topic_type:

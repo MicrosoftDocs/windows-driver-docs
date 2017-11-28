@@ -1,12 +1,6 @@
 ---
 title: ADF element
 description: The optional ADF element describes the capabilities of the automatic document feeder (ADF) that is attached to the scanner.
-MS-HAID:
-- 'wsdss\_adffilm\_40d21472-fe58-4b22-87ff-ac2b37417a66.xml'
-- 'image.adf'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2c9114c3-0c6e-4404-a1ee-fd8d63c6e8eb
 keywords: ["ADF element Imaging Devices"]
 topic_type:

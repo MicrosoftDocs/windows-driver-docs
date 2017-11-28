@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_ALLOCATOR\_CONTROL\_SURFACE\_SIZE
 description: The KSPROPERTY\_ALLOCATOR\_CONTROL\_SURFACE\_SIZE property informs client filters that provide DirectDraw surface allocators (such as the Overlay Mixer) that a capture operation is in progress and that Microsoft DirectDraw surfaces must be allocated at a fixed size regardless of the present size of the overlay. This property is optional.
-MS-HAID:
-- 'vidcapprop\_3066c80d-7d2b-4e86-a379-2333e9562ac0.xml'
-- 'stream.ksproperty\_allocator\_control\_surface\_size'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fc759013-9dd7-44fc-a0d7-fd2585975966
 keywords: ["KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE Streaming Media Devices"]
 topic_type:

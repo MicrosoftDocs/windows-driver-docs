@@ -1,12 +1,6 @@
 ---
 title: ScalingWidth element
 description: The required ScalingWidth element contains the range of allowable values for scaling the width of the output document.
-MS-HAID:
-- 'wsdss\_configure\_afab2331-ca4f-494f-bf30-d26ac2ee0ee8.xml'
-- 'image.scalingwidth2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8b15f4b9-8537-479e-8745-0c8b35883bf5
 keywords: ["ScalingWidth element Imaging Devices"]
 topic_type:

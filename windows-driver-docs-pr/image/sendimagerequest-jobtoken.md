@@ -1,12 +1,6 @@
 ---
 title: SendImageRequest.JobToken
 description: SendImageRequest.JobToken
-MS-HAID:
-- 'dsm\_ref\_dsp\_36b7500c-481d-45db-b263-5a607f3332e3.xml'
-- 'image.sendimagerequest\_jobtoken'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5452b91a-9dad-418a-8b6e-9dedab70990d
 keywords: ["SendImageRequest.JobToken"]
 ---

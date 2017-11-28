@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPS\_TRANSFER\_CAPABILITIES
 description: The WIA\_IPS\_TRANSFER\_CAPABILITIES property indicates if a device can transfer parent and child items together. The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_2f748821-673c-4d8b-ba86-f9715de16e60.xml'
-- 'image.wia\_ips\_transfer\_capabilities'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 937e3e54-6ad3-46bb-bd00-e0812c64e539
 keywords: ["WIA_IPS_TRANSFER_CAPABILITIES Imaging Devices"]
 topic_type:

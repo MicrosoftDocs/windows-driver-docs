@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_NODE\_METHODS
 description: Clients use KSPROPERTY\_BDA\_NODE\_METHODS to retrieve a list of methods supported on a node.
-MS-HAID:
-- 'bdaref\_156b4bca-7deb-4000-b450-399ed3c055e3.xml'
-- 'stream.ksproperty\_bda\_node\_methods'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 143456dc-1910-4db4-8584-9cd19d09e8ce
 keywords: ["KSPROPERTY_BDA_NODE_METHODS Streaming Media Devices"]
 topic_type:

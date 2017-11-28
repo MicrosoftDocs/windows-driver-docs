@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_CA\_MODULE\_UI
 description: Clients use KSPROPERTY\_BDA\_CA\_MODULE\_UI to retrieve interface data that a CA plugin can display to users.
-MS-HAID:
-- 'bdaref\_5329539f-c3d1-4a8c-b759-55b31329e30c.xml'
-- 'stream.ksproperty\_bda\_ca\_module\_ui'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 192161fe-8059-454b-8085-5565c940fbbb
 keywords: ["KSPROPERTY_BDA_CA_MODULE_UI Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: DocumentDescription element
 description: The required DocumentDescription element defines all of the description attributes that pertain to the basic creation information of the currently identified Document element.
-MS-HAID:
-- 'wsdss\_doc\_d1094b0d-1fbb-4236-9d80-fed6cb0104fc.xml'
-- 'image.documentdescription'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e8889dc1-7b92-43aa-b4a6-4c5bb53e5076
 keywords: ["DocumentDescription element Imaging Devices"]
 topic_type:

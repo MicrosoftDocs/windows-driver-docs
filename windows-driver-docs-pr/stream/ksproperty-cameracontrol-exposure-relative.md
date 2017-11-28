@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXPOSURE\_RELATIVE
 description: The KSPROPERTY\_CAMERACONTROL\_EXPOSURE\_RELATIVE property specifies the electronic shutter speed.
-MS-HAID:
-- 'vidcapprop\_0c2eed60-d5db-4507-9b77-395dc97334a7.xml'
-- 'stream.ksproperty\_cameracontrol\_exposure\_relative'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a4003fcd-9dc8-4889-9ce0-e4f09273d152
 keywords: ["KSPROPERTY_CAMERACONTROL_EXPOSURE_RELATIVE Streaming Media Devices"]
 topic_type:

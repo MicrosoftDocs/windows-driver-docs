@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_DVDSUBPIC\_COMPOSIT\_ON
 description: The KSPROPERTY\_DVDSUBPIC\_COMPOSIT\_ON property enables or disables the display of the subpicture.
-MS-HAID:
-- 'dvdref\_7b377fdc-fa3f-4c5f-9ab0-f96286e3e439.xml'
-- 'stream.ksproperty\_dvdsubpic\_composit\_on'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f9dcf8ca-44fb-45e2-9993-813439c742ef
 keywords: ["KSPROPERTY_DVDSUBPIC_COMPOSIT_ON Streaming Media Devices"]
 topic_type:

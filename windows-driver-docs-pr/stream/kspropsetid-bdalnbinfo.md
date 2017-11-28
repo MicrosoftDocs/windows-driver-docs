@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_BdaLNBInfo
 description: KSPROPSETID\_BdaLNBInfo
-MS-HAID:
-- 'bdaref\_84d8dc33-11ec-49c5-a368-27b7286092d8.xml'
-- 'stream.kspropsetid\_bdalnbinfo'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2b385e93-2d0d-44ca-9cfc-58afea946db6
 ---
 

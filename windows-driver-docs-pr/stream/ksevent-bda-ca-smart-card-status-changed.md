@@ -1,12 +1,6 @@
 ---
 title: KSEVENT\_BDA\_CA\_SMART\_CARD\_STATUS\_CHANGED
 description: Clients use KSEVENT\_BDA\_CA\_SMART\_CARD\_STATUS\_CHANGED to request notification when status on the smart card reader associated with an ECM map node changes.
-MS-HAID:
-- 'bdaref\_d11a3fde-1bd8-4c2c-8601-555a00251d48.xml'
-- 'stream.ksevent\_bda\_ca\_smart\_card\_status\_changed'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 67684ce9-038a-41fc-a272-f0fd3d5bfbbf
 keywords: ["KSEVENT_BDA_CA_SMART_CARD_STATUS_CHANGED Streaming Media Devices"]
 topic_type:

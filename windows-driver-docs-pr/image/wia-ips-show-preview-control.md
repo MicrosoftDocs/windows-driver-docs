@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPS\_SHOW\_PREVIEW\_CONTROL
 description: The WIA\_IPS\_SHOW\_PREVIEW\_CONTROL property indicates whether an item needs a preview control displayed to a user. The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_cd47d3e7-a251-4f2f-b47a-dc82889c6165.xml'
-- 'image.wia\_ips\_show\_preview\_control'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 50559dc2-8e5b-4dbc-9c39-8c51e0f825dc
 keywords: ["WIA_IPS_SHOW_PREVIEW_CONTROL Imaging Devices"]
 topic_type:

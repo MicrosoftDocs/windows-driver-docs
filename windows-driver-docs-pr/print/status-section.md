@@ -1,12 +1,6 @@
 ---
 title: Status Section
 description: Status Section
-MS-HAID:
-- 'autocfg\_3a994f70-46b6-475a-8095-3f549357e59c.xml'
-- 'print.status\_section'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3cb36ca5-37dc-4f2b-947f-acc6f2da1103
 ---
 

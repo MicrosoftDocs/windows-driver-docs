@@ -1,12 +1,6 @@
 ---
 title: Configuration Section
 description: Configuration Section
-MS-HAID:
-- 'autocfg\_1ebe2f19-caa6-42d0-9f71-f2067edb8bf3.xml'
-- 'print.configuration\_section'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 77f275d9-6cee-40a5-b118-cb82f6d2c9d3
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOCOMPRESSION\_PFRAMES\_PER\_KEYFRAME
 description: The KSPROPERTY\_VIDEOCOMPRESSION\_PFRAMES\_PER\_KEYFRAME property controls the predicted frame (P-Frame) interval. This property must be implemented.
-MS-HAID:
-- 'vidcapprop\_16675bab-3d78-4457-84d3-70322493fbbb.xml'
-- 'stream.ksproperty\_videocompression\_pframes\_per\_keyframe'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: feb839b4-32fc-4fe9-b015-019d9d683c66
 keywords: ["KSPROPERTY_VIDEOCOMPRESSION_PFRAMES_PER_KEYFRAME Streaming Media Devices"]
 topic_type:

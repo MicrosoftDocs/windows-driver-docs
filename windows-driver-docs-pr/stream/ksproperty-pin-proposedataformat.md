@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_PROPOSEDATAFORMAT
 description: Clients use the KSPROPERTY\_PIN\_PROPOSEDATAFORMAT property to determine if pins instantiated by the pin factory support a specific data format.
-MS-HAID:
-- 'ks-prop\_74676c08-da12-45c7-8ae5-a304f92853fd.xml'
-- 'stream.ksproperty\_pin\_proposedataformat'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f1657fd1-0988-48b8-95d0-c6026965848b
 keywords: ["KSPROPERTY_PIN_PROPOSEDATAFORMAT Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: Pattern
 description: Pattern
-MS-HAID:
-- 'autocfg\_afe3cc6b-1a98-4566-b822-62f9e2e22b84.xml'
-- 'print.pattern2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4c9067dc-03b2-4bee-ad30-df395de357d9
 ---
 

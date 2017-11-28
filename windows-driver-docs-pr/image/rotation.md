@@ -1,12 +1,6 @@
 ---
 title: Rotation element
 description: The optional Rotation element specifies the amount to rotate each image of the scanned document.
-MS-HAID:
-- 'wsdss\_doc\_5e6727f8-8449-4fb2-871e-63991b7e5d97.xml'
-- 'image.rotation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: df12cd79-7c3e-4be5-9d7c-237ec014e9c1
 keywords: ["Rotation element Imaging Devices"]
 topic_type:

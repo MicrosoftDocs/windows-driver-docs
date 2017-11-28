@@ -1,12 +1,6 @@
 ---
 title: ScansCompleted element
 description: The required ScansCompleted element specifies the number of images that are scanned.
-MS-HAID:
-- 'wsdss\_job\_df52277c-d852-40e6-a690-d6a18719916e.xml'
-- 'image.scanscompleted'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 71634b6b-1c61-46a0-8cde-01a975c09270
 keywords: ["ScansCompleted element Imaging Devices"]
 topic_type:

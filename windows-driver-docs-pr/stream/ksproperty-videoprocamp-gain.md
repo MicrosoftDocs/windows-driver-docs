@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOPROCAMP\_GAIN
 description: The KSPROPERTY\_VIDEOPROCAMP\_GAIN property sets or gets the camera gain. This property is optional.
-MS-HAID:
-- 'vidcapprop\_43f28957-079e-4f09-899b-a8ff28ef61eb.xml'
-- 'stream.ksproperty\_videoprocamp\_gain'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 46ed6ba1-1413-4466-9125-2d0a3fd51def
 keywords: ["KSPROPERTY_VIDEOPROCAMP_GAIN Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_CA\_SET\_PROGRAM\_PIDS
 description: Clients use KSPROPERTY\_BDA\_CA\_SET\_PROGRAM\_PIDS to set the list of packet identifiers in a particular program.
-MS-HAID:
-- 'bdaref\_1c17f5b3-515e-4e9f-aa25-60ab02bf68dd.xml'
-- 'stream.ksproperty\_bda\_ca\_set\_program\_pids'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5cc049f7-df97-4739-8ec4-22ab646781a6
 keywords: ["KSPROPERTY_BDA_CA_SET_PROGRAM_PIDS Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_VERTICAL\_SHEET\_FEED\_SIZE
 description: The WIA\_DPS\_VERTICAL\_SHEET\_FEED\_SIZE property contains the physical vertical dimensions of a scanner's document feeder, in thousandths of an inch (.001). The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_04978824-57b2-4636-b2bf-d148ba01e064.xml'
-- 'image.wia\_dps\_vertical\_sheet\_feed\_size'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0bccbb41-f27d-49d1-b654-23c476a19be8
 keywords: ["WIA_DPS_VERTICAL_SHEET_FEED_SIZE Imaging Devices"]
 topic_type:

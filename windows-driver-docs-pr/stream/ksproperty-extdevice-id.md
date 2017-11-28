@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_EXTDEVICE\_ID
 description: The KSPROPERTY\_EXTDEVICE\_ID property retrieves an external device's generalized system-wide Id.
-MS-HAID:
-- 'vidcapprop\_473b93b8-e687-4687-8032-f4d32c1aba80.xml'
-- 'stream.ksproperty\_extdevice\_id'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ff0f37f8-55a8-45b9-8cf1-81e2cc5ac3aa
 keywords: ["KSPROPERTY_EXTDEVICE_ID Streaming Media Devices"]
 topic_type:

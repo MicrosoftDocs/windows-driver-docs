@@ -1,12 +1,6 @@
 ---
 title: ColorEntry element
 description: The required ColorEntry element describes a single color-processing mode that an input source on the scanner supports.
-MS-HAID:
-- 'wsdss\_platen\_25e72e17-9c69-4745-976b-6f7d66b4974e.xml'
-- 'image.colorentry'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a25c6da6-058e-4d10-895c-4507f0562ee8
 keywords: ["ColorEntry element Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_EXPOSURE\_INDEX
 description: The WIA\_DPC\_EXPOSURE\_INDEX property enables you to emulate film speed settings on a digital camera.
-MS-HAID:
-- 'WIA\_PropTable\_0d793aff-dda6-482e-a727-05ddcee1c536.xml'
-- 'image.wia\_dpc\_exposure\_index'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 805efbf0-b81f-49fd-82be-536d471d255e
 keywords: ["WIA_DPC_EXPOSURE_INDEX Imaging Devices"]
 topic_type:

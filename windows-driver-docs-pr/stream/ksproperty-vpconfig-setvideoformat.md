@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_SETVIDEOFORMAT
 description: The KSPROPERTY\_VPCONFIG\_SETVIDEOFORMAT property sets the video format. The format must match one that an earlier KSPROPERTY\_VPCONFIG\_GETVIDEOFORMAT Get request returned.
-MS-HAID:
-- 'dvdref\_933b2449-9130-4f83-b17e-263bec5c5945.xml'
-- 'stream.ksproperty\_vpconfig\_setvideoformat'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f701ad32-ba85-4766-ac6b-11744af8fc0d
 keywords: ["KSPROPERTY_VPCONFIG_SETVIDEOFORMAT Streaming Media Devices"]
 topic_type:

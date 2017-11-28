@@ -1,12 +1,6 @@
 ---
 title: KSEVENTSETID\_BdaCAEvent
 description: KSEVENTSETID\_BdaCAEvent
-MS-HAID:
-- 'bdaref\_87d35712-880f-40f0-8577-68caec1cec73.xml'
-- 'stream.kseventsetid\_bdacaevent'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e748a8a1-9aa4-41da-8cc2-02beb89a8887
 ---
 

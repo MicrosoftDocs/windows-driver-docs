@@ -1,12 +1,6 @@
 ---
 title: Distributed Scan Management (DSM) Schemas
 description: Distributed Scan Management (DSM) Schemas
-MS-HAID:
-- 'wsdbiz\_ref\_431fc175-29b7-4176-9802-e637d051ce1b.xml'
-- 'image.distributed\_scan\_management\_\_dsm\_\_schemas'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cadd3a55-5607-4637-8aa8-06a11507d8d7
 ---
 

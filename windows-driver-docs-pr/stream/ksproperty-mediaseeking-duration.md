@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_DURATION
 description: The KSPROPERTY\_MEDIASEEKING\_DURATION property retrieves the media duration on a filter.
-MS-HAID:
-- 'ks-prop\_739613ab-3fb8-4ff6-9694-59028aee96ad.xml'
-- 'stream.ksproperty\_mediaseeking\_duration'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f84ff468-7cf6-4948-afee-a28ee365760d
 keywords: ["KSPROPERTY_MEDIASEEKING_DURATION Streaming Media Devices"]
 topic_type:

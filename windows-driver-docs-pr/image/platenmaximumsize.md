@@ -1,12 +1,6 @@
 ---
 title: PlatenMaximumSize element
 description: The required PlatenMaximumSize element specifies the largest size document that an end user can scan on the flatbed platen.
-MS-HAID:
-- 'wsdss\_platen\_51d386dc-0ba5-404f-bd78-dc40d26d696f.xml'
-- 'image.platenmaximumsize'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dedeb5cf-588f-48dd-aea9-78c2a17f19e6
 keywords: ["PlatenMaximumSize element Imaging Devices"]
 topic_type:

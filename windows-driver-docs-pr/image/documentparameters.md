@@ -1,12 +1,6 @@
 ---
 title: DocumentParameters element
 description: The optional DocumentParameters element specifies the image processing functions to apply to documents in a job.
-MS-HAID:
-- 'wsdss\_doc\_27b90cf2-6d85-43de-8492-7f4ad6597360.xml'
-- 'image.documentparameters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3b76bf47-a674-4925-aa0f-b2310e1ad1ce
 keywords: ["DocumentParameters element Imaging Devices"]
 topic_type:

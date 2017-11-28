@@ -1,12 +1,6 @@
 ---
 title: SRB\_SET\_STREAM\_RATE
 description: SRB\_SET\_STREAM\_RATE
-MS-HAID:
-- 'strclass-srbs\_2e7033f7-139b-4418-9298-49cfe665da07.xml'
-- 'stream.srb\_set\_stream\_rate'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7c98f2db-25eb-46bc-9c64-59f0eb9600cc
 keywords: ["SRB_SET_STREAM_RATE Streaming Media Devices"]
 topic_type:

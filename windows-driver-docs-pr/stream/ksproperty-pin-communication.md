@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_COMMUNICATION
 description: The KSPROPERTY\_PIN\_COMMUNICATION property specifies the direction of IRP flow on pins instantiated by the pin factory.
-MS-HAID:
-- 'ks-prop\_6b391783-06ff-43c2-aea4-ee295458b8aa.xml'
-- 'stream.ksproperty\_pin\_communication'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d5f62731-39de-4ec4-83d5-f4253373aaa4
 keywords: ["KSPROPERTY_PIN_COMMUNICATION Streaming Media Devices"]
 topic_type:

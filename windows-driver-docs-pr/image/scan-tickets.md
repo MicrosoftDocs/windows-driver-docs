@@ -1,12 +1,6 @@
 ---
 title: Scan Tickets
 description: Scan Tickets
-MS-HAID:
-- 'wsdss\_status\_154a5afa-9376-4d27-a24e-6467e002aa7b.xml'
-- 'image.scan\_tickets'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0d0d351e-2e15-4cc3-8130-7cfaf96a62f7
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: AVC\_FUNCTION\_PEER\_DO\_LIST
 description: AVC\_FUNCTION\_PEER\_DO\_LIST
-MS-HAID:
-- 'avcref\_aea2c357-8879-479e-91a2-a0dbefce8431.xml'
-- 'stream.avc\_function\_peer\_do\_list'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 80ffd94e-788f-4874-b716-3eb66d90e4aa
 keywords: ["AVC_FUNCTION_PEER_DO_LIST Streaming Media Devices"]
 topic_type:

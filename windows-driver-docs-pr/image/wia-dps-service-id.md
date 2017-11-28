@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_SERVICE\_ID
 description: The WIA\_DPS\_SERVICE\_ID property contains the service ID of a web services scanner device. The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_c36acdc6-ae00-43d3-8074-65bfd82b8862.xml'
-- 'image.wia\_dps\_service\_id'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ec77c2a6-0b9e-4c43-b189-7714257f3807
 keywords: ["WIA_DPS_SERVICE_ID Imaging Devices"]
 topic_type:

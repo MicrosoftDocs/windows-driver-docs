@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_HORIZONTAL\_BED\_SIZE
 description: The WIA\_DPS\_HORIZONTAL\_BED\_SIZE property contains the physical dimensions of a scanner's flatbed, in thousandths of an inch (.001). The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_b05b17b7-2531-411c-8873-471860c55e5d.xml'
-- 'image.wia\_dps\_horizontal\_bed\_size'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 384af168-d181-45d6-98d4-644fc59855bb
 keywords: ["WIA_DPS_HORIZONTAL_BED_SIZE Imaging Devices"]
 topic_type:

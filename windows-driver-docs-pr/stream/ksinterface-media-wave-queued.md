@@ -1,12 +1,6 @@
 ---
 title: KSINTERFACE\_MEDIA\_WAVE\_QUEUED
 description: KSINTERFACE\_MEDIA\_WAVE\_QUEUED
-MS-HAID:
-- 'ks-interfaces\_09ecdd56-4b31-418e-b888-78ee023a1636.xml'
-- 'stream.ksinterface\_media\_wave\_queued'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d5f65cd6-85bc-4b72-a6fb-ef9c570dba21
 keywords: ["KSINTERFACE_MEDIA_WAVE_QUEUED Streaming Media Devices"]
 topic_type:

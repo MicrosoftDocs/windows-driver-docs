@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_CA\_SMART\_CARD\_STATUS
 description: Clients use KSPROPERTY\_BDA\_CA\_SMART\_CARD\_STATUS to determine status on the smart card reader associated with an ECM map node.
-MS-HAID:
-- 'bdaref\_547c093c-1905-417b-a01c-4fa8853f892d.xml'
-- 'stream.ksproperty\_bda\_ca\_smart\_card\_status'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a53cea17-0463-4909-839b-6e8ad67dac82
 keywords: ["KSPROPERTY_BDA_CA_SMART_CARD_STATUS Streaming Media Devices"]
 topic_type:

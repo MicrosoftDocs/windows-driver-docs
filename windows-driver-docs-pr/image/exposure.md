@@ -1,12 +1,6 @@
 ---
 title: Exposure element
 description: The optional Exposure element specifies the exposure settings of the document.
-MS-HAID:
-- 'wsdss\_doc\_ccf5c7d5-77b8-4d4a-97a4-b27f207457f7.xml'
-- 'image.exposure'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 70e02507-106f-45a9-92b1-29707cbbcbab
 keywords: ["Exposure element Imaging Devices"]
 topic_type:

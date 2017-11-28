@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_CONTRAST
 description: The WIA\_DPC\_CONTRAST property indicates the perceived contrast of a captured image.
-MS-HAID:
-- 'WIA\_PropTable\_f5c79557-1c7c-4cf2-9607-194d18fc48d4.xml'
-- 'image.wia\_dpc\_contrast'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 78477714-0cf3-464c-9d32-7aba0b7def16
 keywords: ["WIA_DPC_CONTRAST Imaging Devices"]
 topic_type:

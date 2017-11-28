@@ -1,12 +1,6 @@
 ---
 title: GetJobElementsResponse element
 description: The required GetJobElementsResponse element returns the job-related information that a client requests.
-MS-HAID:
-- 'wsdss\_ops\_15ef7d98-e499-419d-ab31-07e8cb5d4b5b.xml'
-- 'image.getjobelementsresponse'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b27c1aba-eb5f-4446-ab34-c03a969e954f
 keywords: ["GetJobElementsResponse element Imaging Devices"]
 topic_type:

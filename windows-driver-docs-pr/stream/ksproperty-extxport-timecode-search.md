@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_EXTXPORT\_TIMECODE\_SEARCH
 description: The KSPROPERTY\_EXTXPORT\_TIMECODE\_SEARCH property searches to a specific timecode.
-MS-HAID:
-- 'vidcapprop\_3dec94da-eee1-4ae2-966b-c4f3374dd0d9.xml'
-- 'stream.ksproperty\_extxport\_timecode\_search'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 34252fce-426b-4f75-b57f-fa86654ffc5f
 keywords: ["KSPROPERTY_EXTXPORT_TIMECODE_SEARCH Streaming Media Devices"]
 topic_type:

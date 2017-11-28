@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_POSITION
 description: KSPROPERTY\_MEDIASEEKING\_POSITION retrieves the media time of a filter.
-MS-HAID:
-- 'ks-prop\_433eadbf-bbe6-47d4-a681-22fccbaf78e5.xml'
-- 'stream.ksproperty\_mediaseeking\_position'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 46b246c6-63e9-4f38-91cc-eed762126097
 keywords: ["KSPROPERTY_MEDIASEEKING_POSITION Streaming Media Devices"]
 topic_type:

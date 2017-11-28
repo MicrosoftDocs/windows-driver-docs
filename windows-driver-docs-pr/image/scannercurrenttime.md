@@ -1,12 +1,6 @@
 ---
 title: ScannerCurrentTime element
 description: The required ScannerCurrentTime element indicates the current date and time according to the scanner's internal clock.
-MS-HAID:
-- 'wsdss\_status\_fb6cab49-ca64-48f5-8822-b8a4ab2c94ee.xml'
-- 'image.scannercurrenttime'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7103fdb4-dfa4-40b0-b20e-022e2a42bf5c
 keywords: ["ScannerCurrentTime element Imaging Devices"]
 topic_type:

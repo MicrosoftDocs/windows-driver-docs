@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_ZOOM\_POSITION
 description: The WIA\_DPC\_ZOOM\_POSITION property is reserved by Microsoft for future use and is not implemented at this time.
-MS-HAID:
-- 'WIA\_PropTable\_93f7ee64-c5f0-4393-b766-fb68a5932672.xml'
-- 'image.wia\_dpc\_zoom\_position'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 48dccdd2-bb29-4271-a56e-9e8f01429dfb
 keywords: ["WIA_DPC_ZOOM_POSITION Imaging Devices"]
 topic_type:

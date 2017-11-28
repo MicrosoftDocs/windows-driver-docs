@@ -1,12 +1,6 @@
 ---
 title: KSEVENT\_BDA\_CA\_MODULE\_UI\_REQUESTED
 description: Clients use KSEVENT\_BDA\_CA\_MODULE\_UI\_REQUESTED to request notification when interface data is available to retrieve and display to users.
-MS-HAID:
-- 'bdaref\_41689c03-9df8-4fa1-ab36-68ff210c69eb.xml'
-- 'stream.ksevent\_bda\_ca\_module\_ui\_requested'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c76bbe0d-7cc4-4594-b435-ad738ebbd141
 keywords: ["KSEVENT_BDA_CA_MODULE_UI_REQUESTED Streaming Media Devices"]
 topic_type:

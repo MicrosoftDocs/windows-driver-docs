@@ -1,12 +1,6 @@
 ---
 title: AVCSTRM\_OPEN
 description: AVCSTRM\_OPEN
-MS-HAID:
-- 'avcsref\_d47d3922-7b30-4c9e-8b48-106ffbf00643.xml'
-- 'stream.avcstrm\_open'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d352615b-8ab8-40ac-b165-479686abd587
 keywords: ["AVCSTRM_OPEN Streaming Media Devices"]
 topic_type:

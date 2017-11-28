@@ -1,12 +1,6 @@
 ---
 title: AVCSTRM\_SET\_PROPERTY
 description: AVCSTRM\_SET\_PROPERTY
-MS-HAID:
-- 'avcsref\_7ec98d1f-e8d5-4b62-a83c-564bd6273fd5.xml'
-- 'stream.avcstrm\_set\_property'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5053eed7-23cf-46e7-bcd4-6eb2038d65bb
 keywords: ["AVCSTRM_SET_PROPERTY Streaming Media Devices"]
 topic_type:

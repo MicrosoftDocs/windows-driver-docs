@@ -1,12 +1,6 @@
 ---
 title: Automatic Document Feeder Commands
 description: Automatic Document Feeder Commands
-MS-HAID:
-- 'MicroDrv\_cbf95ca0-83d8-4144-8918-8cd419cacd49.xml'
-- 'image.automatic\_document\_feeder\_commands'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dd6664d6-4853-4f97-85cc-39a7879d523e
 ---
 

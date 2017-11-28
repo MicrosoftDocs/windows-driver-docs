@@ -1,12 +1,6 @@
 ---
 title: PostScanProcess.PostScanInstructions
 description: PostScanProcess.PostScanInstructions
-MS-HAID:
-- 'dsm\_ref\_dsp\_11ba80e3-7770-48c3-8825-c4e7fc5bd4d6.xml'
-- 'image.postscanprocess\_postscaninstructions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fa60df79-4eaf-4cf8-b4f1-38218a47f744
 keywords: ["PostScanProcess.PostScanInstructions"]
 ---

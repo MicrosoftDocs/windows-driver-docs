@@ -1,12 +1,6 @@
 ---
 title: PostScanProcess.ScanTicket
 description: PostScanProcess.ScanTicket
-MS-HAID:
-- 'dsm\_ref\_dsp\_5cfb0c42-60de-45f2-ac56-1f374ce2acd2.xml'
-- 'image.postscanprocess\_scanticket'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 31a4abac-3216-4d96-b462-e4a08e9cd059
 keywords: ["PostScanProcess.ScanTicket"]
 ---

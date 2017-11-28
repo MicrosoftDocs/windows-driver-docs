@@ -1,12 +1,6 @@
 ---
 title: CreatePostScanJob
 description: CreatePostScanJob
-MS-HAID:
-- 'dsm\_ref\_dsp\_1c4b12d7-2b50-4eee-92c6-d161bb3c334c.xml'
-- 'image.createpostscanjob'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f8e1f39e-d4c2-4683-ba9e-bf9931c0f4a7
 keywords: ["CreatePostScanJob"]
 ---

@@ -1,12 +1,6 @@
 ---
 title: ScannerStatusSummaryEvent element
 description: The required ScannerStatusSummaryEvent element informs the client that the scan device's status has changed.
-MS-HAID:
-- 'wsdss\_events\_b6793112-1cc4-4b2e-a200-c7b6759aa85a.xml'
-- 'image.scannerstatussummaryevent'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a1297e25-1136-49ef-8b8e-e7c8c62bec13
 keywords: ["ScannerStatusSummaryEvent element Imaging Devices"]
 topic_type:

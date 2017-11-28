@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_Clock
 description: KSPROPSETID\_Clock
-MS-HAID:
-- 'ks-prop\_acf7eec9-bc79-4efd-bde2-b3f51f7bdefc.xml'
-- 'stream.kspropsetid\_clock'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1f76daa9-b400-4506-9221-8506d8b75e1c
 ---
 

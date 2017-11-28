@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CLOCK\_PHYSICALTIME
 description: Clients use the KSPROPERTY\_CLOCK\_PHYSICAL\_TIME property to determine the current physical time of a clock.
-MS-HAID:
-- 'ks-prop\_51d77c6f-b8d8-40c3-a0ed-7ec7e601c828.xml'
-- 'stream.ksproperty\_clock\_physicaltime'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cc747fd4-1df0-4d44-b43e-b43532c1228b
 keywords: ["KSPROPERTY_CLOCK_PHYSICALTIME Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: TVOT\_TRACKBAR
 description: TVOT\_TRACKBAR
-MS-HAID:
-- 'cpsuifnc\_8c678735-d5c1-4c38-95f4-b559d16d479b.xml'
-- 'print.tvot\_trackbar'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 00140dca-c192-42dc-853d-ae84c602b206
 keywords: ["TVOT_TRACKBAR Print Devices"]
 topic_type:

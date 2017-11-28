@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_UPLOAD\_URL
 description: The WIA\_DPC\_UPLOAD\_URL property describes a standard Internet URL.
-MS-HAID:
-- 'WIA\_PropTable\_98c4cc71-73ae-4259-8587-120311f4770c.xml'
-- 'image.wia\_dpc\_upload\_url'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5fc36640-32e3-4e51-845f-dabaecd39472
 keywords: ["WIA_DPC_UPLOAD_URL Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPC\_DIGITAL\_ZOOM
 description: The WIA\_DPC\_DIGITAL\_ZOOM property contains the effective zoom ratio of a digital camera's acquired image, scaled by a factor of 10.
-MS-HAID:
-- 'WIA\_PropTable\_26a2a9ea-5846-4f31-a0cf-71a979761526.xml'
-- 'image.wia\_dpc\_digital\_zoom'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5f1ec791-fd51-4397-ac7d-5012c020ef0a
 keywords: ["WIA_DPC_DIGITAL_ZOOM Imaging Devices"]
 topic_type:

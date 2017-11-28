@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_PREROLL
 description: The KSPROPERTY\_MEDIASEEKING\_PREROLL property retrieves the amount of preroll in 100-nanosecond units required on a filter.
-MS-HAID:
-- 'ks-prop\_be10bf12-dbec-45d1-8837-9f80e379296e.xml'
-- 'stream.ksproperty\_mediaseeking\_preroll'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3b9a5458-b26a-452b-b7aa-7bbb30c3d631
 keywords: ["KSPROPERTY_MEDIASEEKING_PREROLL Streaming Media Devices"]
 topic_type:

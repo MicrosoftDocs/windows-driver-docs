@@ -1,12 +1,6 @@
 ---
 title: requestOpen element
 description: The requestOpen element is used to open an event notification message on the client computer.
-MS-HAID:
-- 'async\_a611c8f5-a865-44db-9546-284b7d315ece.xml'
-- 'print.requestopen'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c1797295-9aca-4986-bd9d-482bb7049942
 keywords: ["requestOpen element Print Devices"]
 topic_type:

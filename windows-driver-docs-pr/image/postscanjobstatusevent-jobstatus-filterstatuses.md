@@ -1,12 +1,6 @@
 ---
 title: PostScanJobStatusEvent.JobStatus.FilterStatuses
 description: PostScanJobStatusEvent.JobStatus.FilterStatuses
-MS-HAID:
-- 'dsm\_ref\_dsp\_8fbb1e2b-4bbf-4fd7-9067-81e54dd083a8.xml'
-- 'image.postscanjobstatusevent\_jobstatus\_filterstatuses'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c9abbed6-68fb-49b0-9c6f-21f3207bd2ff
 keywords: ["PostScanJobStatusEvent.JobStatus.FilterStatuses"]
 ---

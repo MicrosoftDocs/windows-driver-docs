@@ -1,12 +1,6 @@
 ---
 title: Distributed Scan Device Web Service (WS-DSD) Schema
 description: Distributed Scan Device Web Service (WS-DSD) Schema
-MS-HAID:
-- 'dsm\_ref\_dsd\_c8d84004-31a4-4446-8811-38aeb93e589e.xml'
-- 'image.distributed\_scan\_device\_web\_service\_\_ws\_dsd\_schema'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 439847d9-eb90-445c-aae8-fa96eb528e5d
 ---
 

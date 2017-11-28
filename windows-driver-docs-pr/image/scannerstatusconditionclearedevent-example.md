@@ -1,12 +1,6 @@
 ---
 title: ScannerStatusConditionClearedEvent Example
 description: ScannerStatusConditionClearedEvent Example
-MS-HAID:
-- 'dsm\_ref\_dsd\_6d5208ce-aea6-4fbf-88b7-c13b3c2ce7bd.xml'
-- 'image.scannerstatusconditionclearedevent\_example'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 54a51c31-c629-413e-842f-2ae1acf966ee
 keywords: ["ScannerStatusConditionClearedEvent Example"]
 ---

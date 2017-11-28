@@ -1,12 +1,6 @@
 ---
 title: ADFMinimumSize element
 description: The required ADFMinimumSize element specifies the smallest size original that an end user can scan on the front or back of the automatic document feeder (ADF).
-MS-HAID:
-- 'wsdss\_adffilm\_a8d3ae62-76c4-4916-9a45-ac97e1251a6e.xml'
-- 'image.adfminimumsize'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9304bb42-8ec4-4e79-95ce-af2aed4a58e2
 keywords: ["ADFMinimumSize element Imaging Devices"]
 topic_type:

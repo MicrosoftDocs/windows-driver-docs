@@ -1,12 +1,6 @@
 ---
 title: HolePunch
 description: HolePunch
-MS-HAID:
-- 'autocfg\_2828ff48-5fff-4604-982f-e75a7e05fc4f.xml'
-- 'print.holepunch3'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 259c5182-71c4-4d68-9609-4b9d90d9b4c5
 ---
 

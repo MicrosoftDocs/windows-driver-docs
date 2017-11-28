@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOCOMPRESSION\_KEYFRAME\_RATE
 description: The KSPROPERTY\_VIDEOCOMPRESSION\_KEYFRAME\_RATE property controls the key frame rate. This property must be implemented.
-MS-HAID:
-- 'vidcapprop\_448fc1dd-768a-4560-b7ac-c6a2459f9dbb.xml'
-- 'stream.ksproperty\_videocompression\_keyframe\_rate'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2b39dbe4-5010-4454-92ca-699b3b2c21ac
 keywords: ["KSPROPERTY_VIDEOCOMPRESSION_KEYFRAME_RATE Streaming Media Devices"]
 topic_type:

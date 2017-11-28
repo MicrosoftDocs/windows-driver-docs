@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_GM\_RENDER\_CLOCK
 description: The KSPROPERTY\_GM\_RENDER\_CLOCK property is not currently supported.
-MS-HAID:
-- 'ks-prop\_af94cd08-f101-4e71-a4a1-22cbd4d5b605.xml'
-- 'stream.ksproperty\_gm\_render\_clock'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3e67db6e-b174-45f8-afdf-75c846875508
 keywords: ["KSPROPERTY_GM_RENDER_CLOCK Streaming Media Devices"]
 topic_type:

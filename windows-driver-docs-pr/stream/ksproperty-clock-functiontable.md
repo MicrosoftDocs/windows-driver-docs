@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CLOCK\_FUNCTIONTABLE
 description: Clients use the KSPROPERTY\_CLOCK\_FUNCTIONTABLE property to retrieve the entry points for querying time at DISPATCH\_LEVEL, which enables filters to perform precise rate matching.
-MS-HAID:
-- 'ks-prop\_dfac2e74-c02c-41b2-8ca6-efaff35fdfd6.xml'
-- 'stream.ksproperty\_clock\_functiontable'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6dac5688-fd69-416c-a4e4-da9ccc45c32a
 keywords: ["KSPROPERTY_CLOCK_FUNCTIONTABLE Streaming Media Devices"]
 topic_type:

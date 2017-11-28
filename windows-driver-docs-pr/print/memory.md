@@ -1,12 +1,6 @@
 ---
 title: Memory
 description: Memory
-MS-HAID:
-- 'autocfg\_3d461649-440b-47b8-beec-01163a0d473b.xml'
-- 'print.memory'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9e1ad59f-9a97-49d7-b749-14380067cf64
 ---
 

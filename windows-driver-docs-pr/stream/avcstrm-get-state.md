@@ -1,12 +1,6 @@
 ---
 title: AVCSTRM\_GET\_STATE
 description: AVCSTRM\_GET\_STATE
-MS-HAID:
-- 'avcsref\_9e924f62-a9d9-4cbf-bc9b-c6414b4f53a1.xml'
-- 'stream.avcstrm\_get\_state'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f0e73c5f-f1ba-4eb3-ad73-58516f3d1768
 keywords: ["AVCSTRM_GET_STATE Streaming Media Devices"]
 topic_type:

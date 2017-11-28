@@ -1,12 +1,6 @@
 ---
 title: customUI element
 description: The optional customUI element specifies a custom user interface to be displayed on a client computer.
-MS-HAID:
-- 'async\_767e0d41-8f25-4900-8a15-0c403ff874e8.xml'
-- 'print.customui'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4408dcf2-0928-4ecb-97eb-0027eceef457
 keywords: ["customUI element Print Devices"]
 topic_type:

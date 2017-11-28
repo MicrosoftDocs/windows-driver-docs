@@ -1,12 +1,6 @@
 ---
 title: KSPROPSETID\_GM
 description: KSPROPSETID\_GM
-MS-HAID:
-- 'ks-prop\_8270472c-05eb-4596-9646-863a7472c5b7.xml'
-- 'stream.kspropsetid\_gm'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e06adfad-2fc0-4d63-bd2e-28876fe3ada7
 ---
 

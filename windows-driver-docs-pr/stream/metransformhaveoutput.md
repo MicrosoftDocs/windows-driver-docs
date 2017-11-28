@@ -1,9 +1,6 @@
 ---
 title: METransformHaveOutput
 description: The METransformHaveOutput event indicates that a device transform has a sample ready on one of its output streams.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1CD11A3C-8181-4AF2-9AB3-10B04668CF1C
 ---
 

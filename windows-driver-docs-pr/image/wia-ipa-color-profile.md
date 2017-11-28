@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPA\_COLOR\_PROFILE
 description: The WIA\_IPA\_COLOR\_PROFILE property is reserved by Microsoft for future use and is not implemented at this time.
-MS-HAID:
-- 'WIA\_PropTable\_9f85be55-4d2d-4ca7-93e4-abb30d05b25c.xml'
-- 'image.wia\_ipa\_color\_profile'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a360e4e7-bd34-4839-8af3-1ece6423653a
 keywords: ["WIA_IPA_COLOR_PROFILE Imaging Devices"]
 topic_type:

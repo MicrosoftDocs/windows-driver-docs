@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPA\_RAW\_BITS\_PER\_CHANNEL
 description: The WIA\_IPA\_RAW\_BITS\_PER\_CHANNEL property contains the number of bits in each color channel.
-MS-HAID:
-- 'WIA\_PropTable\_007a744a-4a42-43a2-92ce-8e3be6ffd569.xml'
-- 'image.wia\_ipa\_raw\_bits\_per\_channel'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 541d5409-b095-4bf0-bdc7-cc56d416ed43
 keywords: ["WIA_IPA_RAW_BITS_PER_CHANNEL Imaging Devices"]
 topic_type:

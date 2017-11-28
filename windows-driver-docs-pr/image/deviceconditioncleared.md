@@ -1,12 +1,6 @@
 ---
 title: DeviceConditionCleared element
 description: The required DeviceConditionCleared element contains information about a previously reported DeviceCondition condition that has been cleared.
-MS-HAID:
-- 'wsdss\_events\_7a8940da-7efc-4651-86d6-a98b5fcbe5c7.xml'
-- 'image.deviceconditioncleared'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f4ed3d25-cee0-4532-84aa-d1cdd144ce2a
 keywords: ["DeviceConditionCleared element Imaging Devices"]
 topic_type:

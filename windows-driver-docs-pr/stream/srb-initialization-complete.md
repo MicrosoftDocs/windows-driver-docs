@@ -1,12 +1,6 @@
 ---
 title: SRB\_INITIALIZATION\_COMPLETE
 description: SRB\_INITIALIZATION\_COMPLETE
-MS-HAID:
-- 'strclass-srbs\_4399864a-c761-458d-a8f5-ad58dd5a4195.xml'
-- 'stream.srb\_initialization\_complete'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 72412ab0-226d-4bf6-af6b-98d62653e061
 keywords: ["SRB_INITIALIZATION_COMPLETE Streaming Media Devices"]
 topic_type:

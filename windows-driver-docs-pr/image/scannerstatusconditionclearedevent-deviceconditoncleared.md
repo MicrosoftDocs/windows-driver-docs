@@ -1,12 +1,6 @@
 ---
 title: ScannerStatusConditionClearedEvent.DeviceConditonCleared
 description: ScannerStatusConditionClearedEvent.DeviceConditonCleared
-MS-HAID:
-- 'dsm\_ref\_dsd\_1fae0fb7-c25c-4e64-8072-c9e1dfb735dc.xml'
-- 'image.scannerstatusconditionclearedevent\_deviceconditoncleared'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8e46e5aa-837f-45ca-b1aa-ce678c7ca9b1
 keywords: ["ScannerStatusConditionClearedEvent.DeviceConditonCleared"]
 ---

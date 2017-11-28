@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_ROLL\_RELATIVE
 description: The KSPROPERTY\_CAMERACONTROL\_ROLL\_RELATIVE property specifies camera rotation around the image viewing axis.
-MS-HAID:
-- 'vidcapprop\_29c9069a-f9b9-43d5-b5ec-14d6a6efb9ad.xml'
-- 'stream.ksproperty\_cameracontrol\_roll\_relative'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cd16369b-558c-48b6-9a0a-ffd4e4561a30
 keywords: ["KSPROPERTY_CAMERACONTROL_ROLL_RELATIVE Streaming Media Devices"]
 topic_type:

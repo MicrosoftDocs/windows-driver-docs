@@ -1,12 +1,6 @@
 ---
 title: WIA\_DPS\_OPTICAL\_XRES
 description: The WIA\_DPS\_OPTICAL\_XRES property contains the highest-supported horizontal optical resolution of the device, in dots per inch (dpi). The WIA minidriver creates and maintains this property.
-MS-HAID:
-- 'WIA\_PropTable\_6e0b5b00-1c2b-4da9-8823-eab1b33fe775.xml'
-- 'image.wia\_dps\_optical\_xres'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: aad3b42c-cb0f-4345-9534-ca1aee5781db
 keywords: ["WIA_DPS_OPTICAL_XRES Imaging Devices"]
 topic_type:

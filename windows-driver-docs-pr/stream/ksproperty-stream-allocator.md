@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_STREAM\_ALLOCATOR
 description: The KSPROPERTY\_STREAM\_ALLOCATOR property is an optional property that should be implemented if the pin allocates stream buffers or can provide an allocator
-MS-HAID:
-- 'ks-prop\_320a0523-fbac-4a03-986a-ba199c2ee414.xml'
-- 'stream.ksproperty\_stream\_allocator'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9a13efe6-4ad4-49bc-b9f1-10c22b47d9d0
 keywords: ["KSPROPERTY_STREAM_ALLOCATOR Streaming Media Devices"]
 topic_type:

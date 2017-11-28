@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_AVAILABLE
 description: The KSPROPERTY\_MEDIASEEKING\_AVAILABLE property retrieves the media time span that is currently available on a filter.
-MS-HAID:
-- 'ks-prop\_c7f7556e-32e3-437f-a245-3536adee2ed3.xml'
-- 'stream.ksproperty\_mediaseeking\_available'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: df59f32e-2783-418d-85b9-f9285034c6fa
 keywords: ["KSPROPERTY_MEDIASEEKING_AVAILABLE Streaming Media Devices"]
 topic_type:

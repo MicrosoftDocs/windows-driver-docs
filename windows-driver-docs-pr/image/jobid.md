@@ -1,12 +1,6 @@
 ---
 title: JobId element
 description: The required JobId element uniquely identifies a job within a scanner.
-MS-HAID:
-- 'wsdss\_job\_c6a5cc55-a043-46fe-949d-10f9a05c1f7e.xml'
-- 'image.jobid'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ae9199c1-c45a-4147-b4f0-f37a9a0f1b22
 keywords: ["JobId element Imaging Devices"]
 topic_type:

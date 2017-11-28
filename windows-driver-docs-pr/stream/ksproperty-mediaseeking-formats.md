@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_FORMATS
 description: The KSPROPERTY\_MEDIASEEKING\_FORMATS property retrieves the media time formats supported by a filter. This information is returned as a multiple item property.
-MS-HAID:
-- 'ks-prop\_387d4d36-f6ab-4107-987a-3a86a42586ff.xml'
-- 'stream.ksproperty\_mediaseeking\_formats'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6d01737e-baef-4a65-90c7-3838cb19b4c9
 keywords: ["KSPROPERTY_MEDIASEEKING_FORMATS Streaming Media Devices"]
 topic_type:

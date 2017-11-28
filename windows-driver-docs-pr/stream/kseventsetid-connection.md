@@ -1,12 +1,6 @@
 ---
 title: KSEVENTSETID\_Connection
 description: The KSEVENTSETID\_Connection event set specifies the general events that can be enabled on a filter and a pin.
-MS-HAID:
-- 'ks-event\_4e71ca3a-bad7-45fb-860e-c7460c882648.xml'
-- 'stream.kseventsetid\_connection'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 69c7b947-97b9-4c38-a2c8-00a8550b7b39
 keywords: ["KSEVENTSETID_Connection Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: EmailConfig.SendToAddresses.EmailAddress
 description: EmailConfig.SendToAddresses.EmailAddress
-MS-HAID:
-- 'dsm\_ref\_psp\_10726bdc-d70f-49fe-8eb0-20d78251da5a.xml'
-- 'image.emailconfig\_sendtoaddresses\_emailaddress'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ce7de33e-8705-4efc-b052-e82480f88564
 keywords: ["EmailConfig.SendToAddresses.EmailAddress"]
 ---

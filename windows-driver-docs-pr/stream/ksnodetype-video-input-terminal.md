@@ -1,12 +1,6 @@
 ---
 title: KSNODETYPE\_VIDEO\_INPUT\_TERMINAL
 description: KSNODETYPE\_VIDEO\_INPUT\_TERMINAL
-MS-HAID:
-- 'ks-nodetypes\_ba544256-5fb3-46f6-aa02-226d770a5136.xml'
-- 'stream.ksnodetype\_video\_input\_terminal'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f0b43fc2-4cb0-420d-bfb7-78d391daa740
 ---
 

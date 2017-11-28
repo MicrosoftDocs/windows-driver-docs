@@ -1,12 +1,6 @@
 ---
 title: PostScanInstructions.FiltersToProcess
 description: PostScanInstructions.FiltersToProcess
-MS-HAID:
-- 'dsm\_ref\_dsp\_ff055dec-83ab-4596-8f2f-43c6d169220d.xml'
-- 'image.postscaninstructions\_filterstoprocess'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b75e1ca4-5fbe-4eeb-aa37-6cd0358f1a0d
 keywords: ["PostScanInstructions.FiltersToProcess"]
 ---

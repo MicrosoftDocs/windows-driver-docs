@@ -1,12 +1,6 @@
 ---
 title: Required Commands
 description: Required Commands
-MS-HAID:
-- 'MicroDrv\_4640b8ba-f546-481c-99b4-80eae86aff45.xml'
-- 'image.required\_commands'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e4a82cc6-8031-4d67-bef8-1d73e2d98b6b
 ---
 

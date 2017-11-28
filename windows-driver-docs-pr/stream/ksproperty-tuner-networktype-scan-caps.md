@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_TUNER\_NETWORKTYPE\_SCAN\_CAPS
 description: The KSPROPERTY\_TUNER\_NETWORKTYPE\_SCAN\_CAPS property describes the scanning capabilities of a particular broadcast network type that the tuning device supports. This property can be implemented optionally.
-MS-HAID:
-- 'vidcapprop\_e7b38719-0edd-4928-adb2-7e77c75f9882.xml'
-- 'stream.ksproperty\_tuner\_networktype\_scan\_caps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 89f66812-9192-4d1d-ac8c-38396fc6be8e
 keywords: ["KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS Streaming Media Devices"]
 topic_type:

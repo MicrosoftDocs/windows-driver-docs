@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_MAXPIXELRATE
 description: The KSPROPERTY\_VPCONFIG\_MAXPIXELRATE property specifies the maximum pixel rate based on pixel format and specifies the dimension (width by height) of the connection.
-MS-HAID:
-- 'dvdref\_ff819eba-c604-46be-9898-80b5bb0e9ab0.xml'
-- 'stream.ksproperty\_vpconfig\_maxpixelrate'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5a1e70b6-32ab-4a6c-82f7-3e6e828262a4
 keywords: ["KSPROPERTY_VPCONFIG_MAXPIXELRATE Streaming Media Devices"]
 topic_type:

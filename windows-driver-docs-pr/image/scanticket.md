@@ -1,12 +1,6 @@
 ---
 title: ScanTicket element
 description: The required ScanTicket element defines all of the description and processing parameters of the currently identified scan job.
-MS-HAID:
-- 'wsdss\_status\_6ea90dc9-c27d-40d8-8d46-b70595b7d183.xml'
-- 'image.scanticket'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d507bd46-8fc4-49d3-9575-2d83fd7ae625
 keywords: ["ScanTicket element Imaging Devices"]
 topic_type:

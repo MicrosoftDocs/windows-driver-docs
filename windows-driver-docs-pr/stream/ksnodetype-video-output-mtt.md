@@ -1,12 +1,6 @@
 ---
 title: KSNODETYPE\_VIDEO\_OUTPUT\_MTT
 description: KSNODETYPE\_VIDEO\_OUTPUT\_MTT
-MS-HAID:
-- 'ks-nodetypes\_8cd409df-0b57-4c1b-8892-31d5193e3c44.xml'
-- 'stream.ksnodetype\_video\_output\_mtt'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 451b5a3f-8168-4ac3-85bb-46460999128b
 ---
 

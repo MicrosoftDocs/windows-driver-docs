@@ -1,12 +1,6 @@
 ---
 title: DestinationToken element
 description: The required DestinationToken element contains a device-specific string that the scanner assigns to the current client destination.
-MS-HAID:
-- 'wsdss\_events\_b7ed92cd-1468-4891-b81f-139565edaea7.xml'
-- 'image.destinationtoken'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 92ff99a2-079a-4001-aa01-ff5db09f6fd2
 keywords: ["DestinationToken element Imaging Devices"]
 topic_type:

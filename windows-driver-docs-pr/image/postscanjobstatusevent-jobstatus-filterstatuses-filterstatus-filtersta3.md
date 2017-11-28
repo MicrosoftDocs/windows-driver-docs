@@ -1,12 +1,6 @@
 ---
 title: PostScanJobStatusEvent.JobStatus.FilterStatuses.FilterStatus.FilterStateReasons
 description: PostScanJobStatusEvent.JobStatus.FilterStatuses.FilterStatus.FilterStateReasons
-MS-HAID:
-- 'dsm\_ref\_dsp\_fa8d770e-6c78-4364-9f9f-30dab3d7c0da.xml'
-- 'image.postscanjobstatusevent\_jobstatus\_filterstatuses\_filterstatus\_filtersta3'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: be0b4be6-27d5-4e76-aa36-6b97f0f1a5d2
 keywords: ["PostScanJobStatusEvent.JobStatus.FilterStatuses.FilterStatus.FilterStateReasons"]
 ---

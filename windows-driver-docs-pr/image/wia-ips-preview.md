@@ -1,12 +1,6 @@
 ---
 title: WIA\_IPS\_PREVIEW
 description: The WIA\_IPS\_PREVIEW property indicates the preview mode for a device.
-MS-HAID:
-- 'WIA\_PropTable\_d4c3169d-b480-4325-8a1f-0fd2a28d50c7.xml'
-- 'image.wia\_ips\_preview'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 06caadc7-2a65-4c54-8d63-4aa1c17186de
 keywords: ["WIA_IPS_PREVIEW Imaging Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: KSMETHOD\_BDA\_DELETE\_PIN\_FACTORY
 description: Clients use KSMETHOD\_BDA\_DELETE\_PIN\_FACTORY to delete a pin factory for a filter.
-MS-HAID:
-- 'bdaref\_0fb58c28-6008-49a2-be12-622ae24c1bb0.xml'
-- 'stream.ksmethod\_bda\_delete\_pin\_factory'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b9e9306a-5b0e-47d0-9194-eb60d793bebc
 keywords: ["KSMETHOD_BDA_DELETE_PIN_FACTORY Streaming Media Devices"]
 topic_type:

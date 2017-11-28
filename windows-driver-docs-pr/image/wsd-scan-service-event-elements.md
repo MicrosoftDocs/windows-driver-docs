@@ -1,12 +1,6 @@
 ---
 title: WSD Scan Service Event Elements
 description: WSD Scan Service Event Elements
-MS-HAID:
-- 'wsdss\_events\_d31e2296-d7cf-462d-beab-e99e34de97d8.xml'
-- 'image.wsd\_scan\_service\_event\_elements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 87141df8-a0cf-484c-a0ec-12129ad5fa3a
 ---
 

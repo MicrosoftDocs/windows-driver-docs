@@ -1,12 +1,6 @@
 ---
 title: ScannerStatusConditionEvent.DeviceCondition.Severity
 description: ScannerStatusConditionEvent.DeviceCondition.Severity
-MS-HAID:
-- 'dsm\_ref\_dsd\_1c0513ff-b85e-49a1-b3e2-3862df83866f.xml'
-- 'image.scannerstatusconditionevent\_devicecondition\_severity'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4bac847f-57e3-4540-8b07-e4cb0e7aa3e1
 keywords: ["ScannerStatusConditionEvent.DeviceCondition.Severity"]
 ---

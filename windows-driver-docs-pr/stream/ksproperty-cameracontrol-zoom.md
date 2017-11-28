@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_ZOOM
 description: User-mode clients use the KSPROPERTY\_CAMERACONTROL\_ZOOM property to get or set a camera's zoom setting. This property is optional.
-MS-HAID:
-- 'vidcapprop\_8b821361-7238-4f52-9460-54fb75d5b5a2.xml'
-- 'stream.ksproperty\_cameracontrol\_zoom'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: eceebcee-e7dc-41df-ac44-3b9a9adb0341
 keywords: ["KSPROPERTY_CAMERACONTROL_ZOOM Streaming Media Devices"]
 topic_type:

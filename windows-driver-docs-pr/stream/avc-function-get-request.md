@@ -1,12 +1,6 @@
 ---
 title: AVC\_FUNCTION\_GET\_REQUEST
 description: AVC\_FUNCTION\_GET\_REQUEST
-MS-HAID:
-- 'avcref\_3924cb53-0f00-47fd-8f36-710a6340e6d5.xml'
-- 'stream.avc\_function\_get\_request'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b29df7a8-782b-4014-b47e-7cf917f8e99d
 keywords: ["AVC_FUNCTION_GET_REQUEST Streaming Media Devices"]
 topic_type:

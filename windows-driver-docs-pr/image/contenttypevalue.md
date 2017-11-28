@@ -1,12 +1,6 @@
 ---
 title: ContentTypeValue element
 description: The required ContentTypeValue element specifies one document content type that the scan device supports.
-MS-HAID:
-- 'wsdss\_configure\_337528fe-9e1d-43d0-8bcd-7acfe518604e.xml'
-- 'image.contenttypevalue'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 04d29626-cc14-4db3-88ec-cfb1cc9cd1cd
 keywords: ["ContentTypeValue element Imaging Devices"]
 topic_type:

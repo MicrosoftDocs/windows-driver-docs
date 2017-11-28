@@ -1,12 +1,6 @@
 ---
 title: AVC\_FUNCTION\_ACQUIRE
 description: AVC\_FUNCTION\_ACQUIRE
-MS-HAID:
-- 'avcref\_e53d0610-4a5f-4cfa-a57e-d0d6499b5324.xml'
-- 'stream.avc\_function\_acquire'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c250d800-1777-44c0-8902-09017eb46c78
 keywords: ["AVC_FUNCTION_ACQUIRE Streaming Media Devices"]
 topic_type:

@@ -1,12 +1,6 @@
 ---
 title: DocumentSizeAutoDetect element
 description: The optional DocumentSizeAutoDetect element specifies whether the scan device automatically determines the size of the original scan media.
-MS-HAID:
-- 'wsdss\_doc\_b097765c-8c40-4aaf-8bb6-cf121230c15e.xml'
-- 'image.documentsizeautodetect'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 509e96d8-c99b-4d6e-9117-b9aed199da2c
 keywords: ["DocumentSizeAutoDetect element Imaging Devices"]
 topic_type:

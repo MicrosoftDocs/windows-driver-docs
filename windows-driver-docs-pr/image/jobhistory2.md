@@ -1,12 +1,6 @@
 ---
 title: JobHistory element
 description: The optional JobHistory element contains information about scan jobs that have recently completed processing.
-MS-HAID:
-- 'wsdss\_job\_0f3fc9c8-a70b-4fb9-9079-547018001ac6.xml'
-- 'image.jobhistory2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7f46044e-ac34-4181-9a35-62dea5ec8c82
 keywords: ["JobHistory element Imaging Devices"]
 topic_type:

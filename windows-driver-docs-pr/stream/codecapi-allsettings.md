@@ -1,12 +1,6 @@
 ---
 title: CODECAPI\_ALLSETTINGS
 description: CODECAPI\_ALLSETTINGS
-MS-HAID:
-- 'encoderef\_10d5c38a-de96-4471-87f7-9141702a718b.xml'
-- 'stream.codecapi\_allsettings'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0ae11200-af21-476a-89a8-515bd98920a0
 ---
 

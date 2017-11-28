@@ -1,12 +1,6 @@
 ---
 title: NumberUp
 description: NumberUp
-MS-HAID:
-- 'autocfg\_9a0bb72b-42c3-4443-8b26-4324d9f93142.xml'
-- 'print.numberup2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d3c29bbc-2c6e-4e5b-b596-04eec939eb5b
 ---
 

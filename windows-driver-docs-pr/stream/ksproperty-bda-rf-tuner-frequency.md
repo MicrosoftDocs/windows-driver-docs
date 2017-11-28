@@ -1,12 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY
 description: Clients use KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY along with KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY\_MULTIPLIER to control the frequency setting of the tuner node.
-MS-HAID:
-- 'bdaref\_570bd796-2380-466e-abe9-921d6c268ef4.xml'
-- 'stream.ksproperty\_bda\_rf\_tuner\_frequency'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0bcecf33-06d5-4b07-8602-da97db5c1306
 keywords: ["KSPROPERTY_BDA_RF_TUNER_FREQUENCY Streaming Media Devices"]
 topic_type:
