@@ -2399,6 +2399,8 @@
 ### [WSK Socket Options](wsk-socket-options.md)
 #### [SO_WSK_EVENT_CALLBACK](so-wsk-event-callback.md)
 #### [SO_WSK_SECURITY](so-wsk-security.md)
+### [WSK data types](wsk-data-types.md)
+#### [WSK_CLIENT](wsk-client.md)
 ## [Winsock Kernel Programming Considerations](winsock-kernel-programming-considerations.md)
 ### [Porting TDI Drivers to Winsock Kernel](porting-tdi-drivers-to-winsock-kernel.md)
 ### [Sharing Transport Addresses](sharing-transport-addresses.md)
