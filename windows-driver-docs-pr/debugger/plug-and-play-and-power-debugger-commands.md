@@ -2,6 +2,11 @@
 title: Debugging Plug and Play and Power Issues
 description: The following extensions are useful for debugging Plug and Play and power issues.
 ms.assetid: 2F047A62-F27C-4650-9081-F8BFA7525A02
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging Plug and Play and Power Issues

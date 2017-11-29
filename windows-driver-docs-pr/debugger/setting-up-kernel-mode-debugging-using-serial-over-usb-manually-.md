@@ -2,6 +2,11 @@
 title: Setting Up Kernel-Mode Debugging using Serial over USB Manually for a Sharks cove development board
 description: This topic describes setting up Kernel-Mode Debugging manually for a Sharks cove development board.
 ms.assetid: E6157263-74E8-4704-9668-B845043737A7
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # <span id="debugger.setting_up_kernel-mode_debugging_using_serial_over_usb_manually_"></span>Setting Up Kernel-Mode Debugging using Serial over USB Manually

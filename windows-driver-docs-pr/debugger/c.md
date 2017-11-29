@@ -3,6 +3,11 @@ title: C (Windows Debugger Glossary)
 description: Glossary page - C
 Robots: noindex, nofollow
 ms.assetid: 295b05a3-e27f-4761-a562-7e87e25bfd3b
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C

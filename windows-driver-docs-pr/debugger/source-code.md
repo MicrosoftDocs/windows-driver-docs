@@ -2,6 +2,11 @@
 title: Source Code
 description: This section contains the following topics.
 ms.assetid: C8275DAF-5062-4244-A78E-C14CC90055E2
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Source Code
