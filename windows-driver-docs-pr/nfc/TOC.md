@@ -38,6 +38,7 @@
 ## [Smart card design guide](design-guide-smart-card.md)
 ### [Functional flow](functional-flow.md)
 ### [Example sequence](example-sequence.md)
+### [Storage card requirements](storage-card-requirements.md)
 ## [Power management](nfc-power-management.md)
 ### [Polling](polling.md)
 ## [NFC class extension (CX) design guide](nfc-class-extension-.md)
