@@ -36,9 +36,7 @@ This video demonstrates how to set up Microsoft Message Analyzer for USB traces 
 
 **Note**  Under **Device**, choose between USB 2 or USB 3 tracing scenarios. Note that USB 3 tracing is only available on Windows 8 and later versions. Make your selection based on the host controller to which the device is connected, not the speed of the device. For example if you have a high speed device connected to an xHCI controller, choose the USB 3 trace scenario.
 
- 
-
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/e5300401-351e-4dcc-bcc2-edd07079d7fa/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/e5300401-351e-4dcc-bcc2-edd07079d7fa]
 
 ## Analyze a USB trace
 
@@ -47,7 +45,7 @@ Microsoft Message Analyzer parses the information dynamically as it is captured 
 
 This video demonstrates how you can determine the root cause of a device enumeration failure.
 
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/29cb1d44-a38a-4105-9513-256e69e9f6a0/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/29cb1d44-a38a-4105-9513-256e69e9f6a0]
 
 ## Related topics
 [Blog: Capturing USB ETW traces with Microsoft Message Analyzer (MMA)](http://blogs.msdn.com/b/usbcoreblog/archive/2013/11/09/capturing-usb-etw-traces-with-microsoft-message-analyzer-mma.aspx)  

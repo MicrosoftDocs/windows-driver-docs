@@ -35,8 +35,7 @@ The WPT is part of the Windows Assessment and Deployment Kit (ADK). You can inst
 The WPT consists of two separate tools: Windows Performance Recorder and Windows Performance Analyzer (WPA). In this topic, we use WPR to record a trace, and then WPA to view the trace in a configurable GUI format.
 
 To learn how to use the Windows Performance Toolkit to measure the performance of a WDF driver, either watch the following video, or read the steps below the video. The video and the steps cover the same procedure.
-
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/fc37f465-9456-45d7-bbe9-6f7d44342563/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no">Using Windows Performance Toolkit to measuring performance of a WDF driver</iframe>
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/fc37f465-9456-45d7-bbe9-6f7d44342563]
 
 **Recording and viewing an event log for a WDF driver**
 
