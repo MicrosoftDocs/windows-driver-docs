@@ -35,12 +35,17 @@ The following IOCTLs are not supported for NFC smart card operation because they
 -   IOCTL\_SMARTCARD\_GET\_LAST\_ERROR
 -   IOCTL\_SMARTCARD\_SWALLOW
 
+## Smart card attributes
+The Windows smart card DDI includes IOCTL requests for Get and Set attributes. In order to meet the minimum requirement to support NFC contactless reader, we only support the GET_ATTRIBUTE for the minimum set of Reader and ICC State. For more information, see [Supported smart card attributes](smart-card-attributes.md).
+
 ## In this section
 
 
 -   [Functional flow](functional-flow.md)
 -   [Example sequence](example-sequence.md)
-
+-   [Storage card requirements](storage-card-requirements.md)
+-   [Supported smart card attributes](smart-card-attributes.md)
+-   [PC/SC interface](pc-sc-interface.md)
  
 
  
