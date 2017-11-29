@@ -26,6 +26,8 @@ This section describes constants used in Windows Filtering Platform callout driv
 
 [Metadata fields](metadata-fields.md)
 
+[Data field identifiers](data-field-identifiers.md)
+
 [Data offset positions](data-offset-positions.md)
 
 [Discard reason identifiers](discard-reason-identifiers.md)
