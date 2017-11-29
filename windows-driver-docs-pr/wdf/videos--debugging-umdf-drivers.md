@@ -36,7 +36,7 @@ To get the most from this content you should have working knowledge of UMDF and 
 
 Discusses use of the WDK samples and the OSR USB-FX2 Learning Kit.
 
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/d1040a16-81ec-40bb-a2d5-05021a37a144/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no">UMDF debugging video part 1</iframe>
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/d1040a16-81ec-40bb-a2d5-05021a37a144]
 
 In this video, you'll learn about UMDF debugging basics, including preparing your test machine, using the Devcon tool to install the UMDF Echo sample driver, using WdfVerifier to identify the host process hosting a given UMDF driver, and using WdfVerifier to attach the host process to the debugger in time to debug initialization code. This video also shows how you can list running host processes in Task Manager, and view running drivers in Device Manager.
 
