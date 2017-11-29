@@ -2,6 +2,11 @@
 title: PKEY\_AudioDevice\_EnableEndpointByDefault
 description: PKEY\_AudioDevice\_EnableEndpointByDefault
 ms.assetid: bde2c06d-9418-4f6d-960a-0ebec83bf397
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PKEY\_AudioDevice\_EnableEndpointByDefault

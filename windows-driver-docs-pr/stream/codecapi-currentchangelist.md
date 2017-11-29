@@ -2,6 +2,11 @@
 title: CODECAPI\_CURRENTCHANGELIST
 description: CODECAPI\_CURRENTCHANGELIST
 ms.assetid: f783857f-d1a1-417f-8f69-198b6f328a69
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CODECAPI\_CURRENTCHANGELIST

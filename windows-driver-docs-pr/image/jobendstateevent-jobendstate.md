@@ -3,6 +3,11 @@ title: JobEndStateEvent.JobEndState
 description: JobEndStateEvent.JobEndState
 ms.assetid: 6fac4952-97d6-439f-9277-5d2dbd318768
 keywords: ["JobEndStateEvent.JobEndState"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # JobEndStateEvent.JobEndState

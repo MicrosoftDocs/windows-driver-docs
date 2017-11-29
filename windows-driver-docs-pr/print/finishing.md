@@ -2,6 +2,11 @@
 title: Finishing
 description: Finishing
 ms.assetid: 5c8e556b-102a-4caf-92d3-8b61bec1a29f
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Finishing

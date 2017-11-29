@@ -3,6 +3,11 @@ title: EndPostScanJobRequest Example
 description: EndPostScanJobRequest Example
 ms.assetid: 90e8d9a7-e219-469e-84a2-aa11999993b0
 keywords: ["EndPostScanJobRequest Example"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EndPostScanJobRequest Example

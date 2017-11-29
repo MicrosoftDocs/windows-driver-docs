@@ -3,6 +3,11 @@ title: GetScannerElementsRequest.RequestedElements.Name
 description: GetScannerElementsRequest.RequestedElements.Name
 ms.assetid: 63967234-8ff4-4128-bead-b384766eaf8a
 keywords: ["GetScannerElementsRequest.RequestedElements.Name"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GetScannerElementsRequest.RequestedElements.Name

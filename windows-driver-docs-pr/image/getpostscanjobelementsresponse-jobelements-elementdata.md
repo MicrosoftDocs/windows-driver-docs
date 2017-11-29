@@ -3,6 +3,11 @@ title: GetPostScanJobElementsResponse.JobElements.ElementData
 description: GetPostScanJobElementsResponse.JobElements.ElementData
 ms.assetid: 286280c0-5e10-46e0-81d9-7cf4755bf55d
 keywords: ["GetPostScanJobElementsResponse.JobElements.ElementData"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GetPostScanJobElementsResponse.JobElements.ElementData

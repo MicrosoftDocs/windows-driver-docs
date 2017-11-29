@@ -3,6 +3,11 @@ title: CreatePostScanJobResponse.JobToken
 description: CreatePostScanJobResponse.JobToken
 ms.assetid: 00aae6a7-ed3d-46e0-9453-4010df840eb0
 keywords: ["CreatePostScanJobResponse.JobToken"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CreatePostScanJobResponse.JobToken

@@ -2,6 +2,11 @@
 title: \ TrayName\
 description: \ TrayName\
 ms.assetid: efdb5ecb-3abc-4dfd-8087-7f4f3a938cf2
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # \[TrayName\]

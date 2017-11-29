@@ -3,6 +3,11 @@ title: GetJobHistoryResponse.JobHistory
 description: GetJobHistoryResponse.JobHistory
 ms.assetid: 2b7565dc-4a8b-4527-892d-03229c43fa9a
 keywords: ["GetJobHistoryResponse.JobHistory"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GetJobHistoryResponse.JobHistory

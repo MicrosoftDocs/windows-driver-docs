@@ -3,6 +3,11 @@ title: PostScanInstructions.DocumentRootName
 description: PostScanInstructions.DocumentRootName
 ms.assetid: d8612911-857a-402a-b722-3518724a7c37
 keywords: ["PostScanInstructions.DocumentRootName"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PostScanInstructions.DocumentRootName

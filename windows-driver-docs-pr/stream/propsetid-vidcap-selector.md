@@ -2,6 +2,11 @@
 title: PROPSETID\_VIDCAP\_SELECTOR
 description: PROPSETID\_VIDCAP\_SELECTOR
 ms.assetid: a7328f22-be49-48ac-b923-15f66dc38ccb
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PROPSETID\_VIDCAP\_SELECTOR

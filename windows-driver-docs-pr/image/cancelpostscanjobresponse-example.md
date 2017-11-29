@@ -3,6 +3,11 @@ title: CancelPostScanJobResponse Example
 description: CancelPostScanJobResponse Example
 ms.assetid: 6562896c-d718-4d19-948a-028f533cf886
 keywords: ["CancelPostScanJobResponse Example"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CancelPostScanJobResponse Example

@@ -2,6 +2,11 @@
 title: SRB\_SURPRISE\_REMOVAL
 description: SRB\_SURPRISE\_REMOVAL
 ms.assetid: 81509ddb-0d9a-4f42-b38d-fe8836727b4b
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SRB\_SURPRISE\_REMOVAL

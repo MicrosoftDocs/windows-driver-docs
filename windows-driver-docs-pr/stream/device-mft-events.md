@@ -2,6 +2,11 @@
 title: Device transform manager events
 description: This section contains information about the Device Transform Manager events.
 ms.assetid: 4ADA2A20-D4DE-4F80-AAD7-F8AFCBD5E843
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device transform manager events

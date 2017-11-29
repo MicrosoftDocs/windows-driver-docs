@@ -2,6 +2,11 @@
 title: Audio Miniport Auxiliary Interfaces
 description: Audio Miniport Auxiliary Interfaces
 ms.assetid: cda22e86-f3f7-430c-856d-a2c868caa975
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio Miniport Auxiliary Interfaces

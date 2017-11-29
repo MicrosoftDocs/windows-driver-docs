@@ -2,6 +2,11 @@
 title: CODECAPI\_CHANGELISTS
 description: CODECAPI\_CHANGELISTS
 ms.assetid: c1b65350-32b9-4c94-a6d4-74cb9959d737
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CODECAPI\_CHANGELISTS

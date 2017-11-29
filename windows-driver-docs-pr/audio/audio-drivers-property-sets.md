@@ -2,6 +2,11 @@
 title: Audio Drivers Property Sets
 description: Audio Drivers Property Sets
 ms.assetid: bac74ad5-3a9b-40b1-ae49-c86558c34e94
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio Drivers Property Sets

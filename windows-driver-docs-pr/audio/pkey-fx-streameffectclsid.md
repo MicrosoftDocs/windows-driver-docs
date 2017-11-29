@@ -2,6 +2,11 @@
 title: PKEY\_FX\_StreamEffectClsid
 description: In Windows 8.1 and later, the PKEY\_FX\_StreamEffectClsid property key identifies the stream effect (SFX) supported by the driver. The driver developer should specify the list of supported stream effects that their driver supports.
 ms.assetid: 8557AE39-56DF-4184-A74A-186AF30F2A63
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PKEY\_FX\_StreamEffectClsid

@@ -2,6 +2,11 @@
 title: Bluetooth HFP DDI Structures
 description: This section describes the structures that work with the Windows Bluetooth Handsfree profile (HFP) driver.
 ms.assetid: FC4DD00B-7462-43CC-86C7-B76240DFDE87
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bluetooth HFP DDI Structures

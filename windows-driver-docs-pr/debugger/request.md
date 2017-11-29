@@ -12,6 +12,11 @@ api_location:
 - dbgeng.h
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IDebugAdvanced2::Request method

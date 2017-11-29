@@ -2,6 +2,11 @@
 title: Legacy Audio Device Messages
 description: Legacy Audio Device Messages
 ms.assetid: d8b2807b-e72f-4f72-8a83-5700bc0239dc
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Legacy Audio Device Messages

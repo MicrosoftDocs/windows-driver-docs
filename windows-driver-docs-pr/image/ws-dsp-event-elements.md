@@ -2,6 +2,11 @@
 title: WS-DSP Event Elements
 description: WS-DSP Event Elements
 ms.assetid: 9007417a-8feb-48e0-805f-03dd7e2a3ce1
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WS-DSP Event Elements

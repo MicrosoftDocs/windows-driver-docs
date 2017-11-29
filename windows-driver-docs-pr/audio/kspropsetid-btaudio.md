@@ -2,6 +2,11 @@
 title: KSPROPSETID\_BtAudio
 description: KSPROPSETID\_BtAudio
 ms.assetid: 503ea37c-9320-470c-aeb7-e8056ab6e4e3
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_BtAudio

@@ -9,6 +9,11 @@ api_name:
 - KSEVENT_CLOCK_POSITION_MARK
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSEVENT\_CLOCK\_POSITION\_MARK

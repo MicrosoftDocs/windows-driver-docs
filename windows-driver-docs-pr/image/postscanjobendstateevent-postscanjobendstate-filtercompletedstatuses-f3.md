@@ -3,6 +3,11 @@ title: PostScanJobEndStateEvent.PostScanJobEndState.FilterCompletedStatuses.Filt
 description: PostScanJobEndStateEvent.PostScanJobEndState.FilterCompletedStatuses.FilterStatus
 ms.assetid: 9943a5cf-8e66-4cfb-b98d-2c769e6e8274
 keywords: ["PostScanJobEndStateEvent.PostScanJobEndState.FilterCompletedStatuses.FilterStatus"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PostScanJobEndStateEvent.PostScanJobEndState.FilterCompletedStatuses.FilterStatus

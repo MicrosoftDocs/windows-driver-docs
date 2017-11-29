@@ -2,6 +2,11 @@
 title: Distributed Scan Processing Web Service (WS-DSP) Schema
 description: Distributed Scan Processing Web Service (WS-DSP) Schema
 ms.assetid: 4d99dd68-7aff-485c-b69a-d58860e1f376
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Distributed Scan Processing Web Service (WS-DSP) Schema

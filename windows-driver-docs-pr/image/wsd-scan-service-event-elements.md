@@ -2,6 +2,11 @@
 title: WSD Scan Service Event Elements
 description: WSD Scan Service Event Elements
 ms.assetid: 87141df8-a0cf-484c-a0ec-12129ad5fa3a
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WSD Scan Service Event Elements

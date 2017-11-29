@@ -9,6 +9,11 @@ api_name:
 - Common WSD Scan Service Operation Error Codes
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Common WSD Scan Service Operation Error Codes

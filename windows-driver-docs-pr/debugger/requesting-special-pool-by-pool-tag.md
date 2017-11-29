@@ -2,6 +2,11 @@
 title: Requesting Special Pool by Pool Tag
 description: Requesting Special Pool by Pool Tag
 ms.assetid: 201eb8a5-b38b-4625-853d-448488214e52
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Requesting Special Pool by Pool Tag

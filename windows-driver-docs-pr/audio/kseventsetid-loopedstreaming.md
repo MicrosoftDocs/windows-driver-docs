@@ -3,6 +3,11 @@ title: KSEVENTSETID\_LoopedStreaming
 description: KSEVENTSETID\_LoopedStreaming
 ms.assetid: 88baf1f0-d18f-4601-9ba3-fea957712cd6
 keywords: ["KSEVENTSETID_LoopedStreaming"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSEVENTSETID\_LoopedStreaming

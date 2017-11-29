@@ -3,6 +3,11 @@ title: CancelPostScanJobRequest
 description: CancelPostScanJobRequest
 ms.assetid: 279cf004-a223-40e7-8ade-220fb1805b95
 keywords: ["CancelPostScanJobRequest"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CancelPostScanJobRequest

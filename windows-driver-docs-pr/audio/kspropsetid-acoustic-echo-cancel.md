@@ -3,6 +3,11 @@ title: KSPROPSETID\_Acoustic\_Echo\_Cancel
 description: KSPROPSETID\_Acoustic\_Echo\_Cancel
 ms.assetid: 62c9210c-bb34-4df3-9836-f2a81d1b1545
 keywords: ["KSPROPSETID_Acoustic_Echo_Cancel"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_Acoustic\_Echo\_Cancel

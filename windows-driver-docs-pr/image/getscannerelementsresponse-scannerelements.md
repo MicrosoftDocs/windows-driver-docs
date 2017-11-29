@@ -3,6 +3,11 @@ title: GetScannerElementsResponse.ScannerElements
 description: GetScannerElementsResponse.ScannerElements
 ms.assetid: c3a05967-9025-40ff-9918-4d05bff0fec7
 keywords: ["GetScannerElementsResponse.ScannerElements"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GetScannerElementsResponse.ScannerElements

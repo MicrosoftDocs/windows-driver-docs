@@ -2,6 +2,11 @@
 title: KSPROPSETID\_Connection
 description: KSPROPSETID\_Connection
 ms.assetid: 1be062ab-7396-4876-ab28-8a03e55df1d3
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_Connection

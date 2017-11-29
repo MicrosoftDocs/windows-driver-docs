@@ -9,6 +9,11 @@ api_name:
 - KSNODETYPE_ACOUSTIC_ECHO_CANCEL
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL

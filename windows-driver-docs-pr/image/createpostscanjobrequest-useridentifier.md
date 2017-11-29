@@ -2,6 +2,11 @@
 title: CreatePostScanJobRequest.UserIdentifier
 description: CreatePostScanJobRequest.UserIdentifier
 ms.assetid: A205CE50-B4B4-4D99-A8E6-61871DF4FEF5
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CreatePostScanJobRequest.UserIdentifier

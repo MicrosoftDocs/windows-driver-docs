@@ -3,6 +3,11 @@ title: Sharepoint Filter Instructions Schema
 description: Sharepoint Filter Instructions Schema
 ms.assetid: 084da70e-6e3a-4ac1-8e35-c48745a6d564
 keywords: ["Sharepoint Filter Instructions Schema"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sharepoint Filter Instructions Schema

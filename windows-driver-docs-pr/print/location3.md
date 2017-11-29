@@ -2,6 +2,11 @@
 title: Location
 description: Location
 ms.assetid: cbe6ec7f-36dd-484e-8db6-42e91e69577c
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Location

@@ -2,6 +2,11 @@
 title: KSPROPSETID\_AudioDecoderOut
 description: KSPROPSETID\_AudioDecoderOut
 ms.assetid: 80292a43-305f-4c3c-aab1-e38f2eb749d1
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_AudioDecoderOut

@@ -2,6 +2,11 @@
 title: KSPROPSETID\_Pin
 description: KSPROPSETID\_Pin
 ms.assetid: a74a9cb2-2809-4e03-95da-71eeb5f079e9
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_Pin

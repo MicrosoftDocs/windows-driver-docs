@@ -2,6 +2,11 @@
 title: KSNODETYPE\_VIDEO\_OUTPUT\_MTT
 description: KSNODETYPE\_VIDEO\_OUTPUT\_MTT
 ms.assetid: 451b5a3f-8168-4ac3-85bb-46460999128b
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSNODETYPE\_VIDEO\_OUTPUT\_MTT

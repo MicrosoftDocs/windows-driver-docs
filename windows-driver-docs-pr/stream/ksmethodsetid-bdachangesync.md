@@ -2,6 +2,11 @@
 title: KSMETHODSETID\_BdaChangeSync
 description: KSMETHODSETID\_BdaChangeSync
 ms.assetid: 260b227d-0d49-4efa-8f8c-4c66886cf9f6
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSMETHODSETID\_BdaChangeSync

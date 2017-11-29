@@ -3,6 +3,11 @@ title: EndPostScanJobResponse
 description: EndPostScanJobResponse
 ms.assetid: 2433b365-a401-4ce8-a4fd-2aefd3181ddc
 keywords: ["EndPostScanJobResponse"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EndPostScanJobResponse

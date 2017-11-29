@@ -2,6 +2,11 @@
 title: KSPROPSETID\_Clock
 description: KSPROPSETID\_Clock
 ms.assetid: 1f76daa9-b400-4506-9221-8506d8b75e1c
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_Clock

@@ -2,6 +2,11 @@
 title: KSEVENTSETID\_VIDCAP\_TVAUDIO
 description: KSEVENTSETID\_VIDCAP\_TVAUDIO
 ms.assetid: 5a79d509-d382-4120-83cc-cf9048c5589e
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSEVENTSETID\_VIDCAP\_TVAUDIO

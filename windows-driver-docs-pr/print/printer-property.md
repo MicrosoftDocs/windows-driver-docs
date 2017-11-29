@@ -2,6 +2,11 @@
 title: Printer Property
 description: Printer Property
 ms.assetid: c97de7d2-e12f-40f3-b1a9-2bbb6d6b8061
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Property

@@ -2,6 +2,11 @@
 title: PROPSETID\_VIDCAP\_VIDEODECODER
 description: PROPSETID\_VIDCAP\_VIDEODECODER
 ms.assetid: 86b581b7-51fd-4662-8291-4c5baf9d3b16
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PROPSETID\_VIDCAP\_VIDEODECODER

@@ -2,6 +2,11 @@
 title: KSNODETYPE\_VIDEO\_SELECTOR
 description: KSNODETYPE\_VIDEO\_SELECTOR
 ms.assetid: fcd6c2d0-5dbb-454e-ac37-23c509f07b9c
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSNODETYPE\_VIDEO\_SELECTOR

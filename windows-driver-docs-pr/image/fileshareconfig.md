@@ -3,6 +3,11 @@ title: FileShareConfig
 description: FileShareConfig
 ms.assetid: 6eae90dc-740b-482b-9b85-0e4f254d547e
 keywords: ["FileShareConfig"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # FileShareConfig

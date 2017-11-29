@@ -2,6 +2,11 @@
 title: KSNODETYPE\_VIDEO\_CAMERA\_TERMINAL
 description: KSNODETYPE\_VIDEO\_CAMERA\_TERMINAL
 ms.assetid: b083d9ba-2f76-4e4b-a29c-5cd20d914479
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSNODETYPE\_VIDEO\_CAMERA\_TERMINAL

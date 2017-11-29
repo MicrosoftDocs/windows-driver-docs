@@ -2,6 +2,11 @@
 title: HD Audio DDI Routines
 description: HD Audio DDI Routines
 ms.assetid: 2f360031-39bd-457e-8b64-04b37e21a7fe
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # HD Audio DDI Routines

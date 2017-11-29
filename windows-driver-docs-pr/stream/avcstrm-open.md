@@ -9,6 +9,11 @@ api_name:
 - AVCSTRM_OPEN
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AVCSTRM\_OPEN

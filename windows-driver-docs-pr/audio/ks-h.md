@@ -2,6 +2,11 @@
 title: Ks.h
 description: This section contains reference topics for the Ks.h header.
 ms.assetid: 8A4058E3-4232-4C0E-80AE-C361F6613425
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Ks.h

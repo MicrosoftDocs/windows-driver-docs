@@ -2,6 +2,11 @@
 title: AVStream Property Sets
 description: AVStream Property Sets
 ms.assetid: 23c020e8-b778-4784-9dc0-21920557e1c1
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AVStream Property Sets

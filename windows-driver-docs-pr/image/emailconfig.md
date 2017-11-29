@@ -3,6 +3,11 @@ title: EmailConfig
 description: EmailConfig
 ms.assetid: c9f5c5db-eb8c-4e50-9cd7-8190e980278b
 keywords: ["EndPostScanJobRequest.JobToken"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EmailConfig

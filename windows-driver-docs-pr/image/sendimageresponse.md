@@ -3,6 +3,11 @@ title: SendImageResponse
 description: SendImageResponse
 ms.assetid: b850f63e-d9d3-4aa7-ba74-8d2914588796
 keywords: ["SendImageResponse"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SendImageResponse

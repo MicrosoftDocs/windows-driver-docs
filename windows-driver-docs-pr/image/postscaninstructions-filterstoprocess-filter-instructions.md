@@ -3,6 +3,11 @@ title: PostScanInstructions.FiltersToProcess.Filter.Instructions
 description: PostScanInstructions.FiltersToProcess.Filter.Instructions
 ms.assetid: 278acb0e-ca72-4851-a46d-6f99cabe3950
 keywords: ["PostScanInstructions.FiltersToProcess.Filter.Instructions"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PostScanInstructions.FiltersToProcess.Filter.Instructions

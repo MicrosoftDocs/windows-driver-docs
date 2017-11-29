@@ -3,6 +3,11 @@ title: KSPROPSETID\_DrmAudioStream
 description: KSPROPSETID\_DrmAudioStream
 ms.assetid: 91c7b459-b52e-4340-8a3c-e92b73ebcd3d
 keywords: ["KSPROPSETID_DrmAudioStream"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_DrmAudioStream

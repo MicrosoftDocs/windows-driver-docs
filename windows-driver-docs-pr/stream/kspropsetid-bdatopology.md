@@ -2,6 +2,11 @@
 title: KSPROPSETID\_BdaTopology
 description: KSPROPSETID\_BdaTopology
 ms.assetid: 26d67e68-56a9-4d36-9e33-6fb4486d7cd9
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_BdaTopology

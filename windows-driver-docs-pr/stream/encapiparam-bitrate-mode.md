@@ -2,6 +2,11 @@
 title: ENCAPIPARAM\_BITRATE\_MODE
 description: ENCAPIPARAM\_BITRATE\_MODE
 ms.assetid: d7e82483-bee3-44bd-9066-c2877130a1f9
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ENCAPIPARAM\_BITRATE\_MODE

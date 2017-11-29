@@ -9,6 +9,11 @@ api_name:
 - EXT_TDOP_GET_POINTER_TO
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EXT\_TDOP\_GET\_POINTER\_TO

@@ -3,6 +3,11 @@ title: KSPROPSETID\_Sysaudio\_Pin
 description: KSPROPSETID\_Sysaudio\_Pin
 ms.assetid: 41777b45-2126-43f8-a514-53750f447231
 keywords: ["KSPROPSETID_Sysaudio_Pin"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_Sysaudio\_Pin

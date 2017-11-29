@@ -3,6 +3,11 @@ title: ScannerElementsChangeEvent.ElementChanges
 description: ScannerElementsChangeEvent.ElementChanges
 ms.assetid: bf047894-e97d-459d-a126-180e5a725e68
 keywords: ["ScannerElementsChangeEvent.ElementChanges"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ScannerElementsChangeEvent.ElementChanges

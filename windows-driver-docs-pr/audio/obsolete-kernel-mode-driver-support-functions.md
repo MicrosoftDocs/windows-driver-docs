@@ -2,6 +2,11 @@
 title: Obsolete Kernel-Mode Driver-Support Functions
 description: Obsolete Kernel-Mode Driver-Support Functions
 ms.assetid: 8bdfbd2e-a0d6-424f-9092-297e533efa33
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Obsolete Kernel-Mode Driver-Support Functions

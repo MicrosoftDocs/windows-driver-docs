@@ -3,6 +3,11 @@ title: KSPROPSETID\_Synth
 description: KSPROPSETID\_Synth
 ms.assetid: ff5efd85-0b4d-4625-b029-fecf325bcacb
 keywords: ["KSPROPSETID_Synth"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_Synth

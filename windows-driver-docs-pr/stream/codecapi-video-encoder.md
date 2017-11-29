@@ -2,6 +2,11 @@
 title: CODECAPI\_VIDEO\_ENCODER
 description: CODECAPI\_VIDEO\_ENCODER
 ms.assetid: e08f26ff-1e11-42a4-a9f8-3af9b885a901
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CODECAPI\_VIDEO\_ENCODER

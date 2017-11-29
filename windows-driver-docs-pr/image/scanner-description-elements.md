@@ -2,6 +2,11 @@
 title: Scanner Description Elements
 description: Scanner Description Elements
 ms.assetid: bbdc3aa3-5a53-4341-920e-0024f17719b2
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Scanner Description Elements

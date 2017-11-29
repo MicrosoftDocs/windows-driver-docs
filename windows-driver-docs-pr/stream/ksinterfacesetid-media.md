@@ -2,6 +2,11 @@
 title: KSINTERFACESETID\_Media
 description: KSINTERFACESETID\_Media
 ms.assetid: 5154068a-adeb-45dd-9abd-5bcf07931ef2
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSINTERFACESETID\_Media

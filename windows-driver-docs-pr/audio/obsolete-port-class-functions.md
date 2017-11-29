@@ -2,6 +2,11 @@
 title: Obsolete Port Class Functions
 description: Obsolete Port Class Functions
 ms.assetid: 6fcb5ae6-81bc-423e-9757-34955a2de522
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Obsolete Port Class Functions

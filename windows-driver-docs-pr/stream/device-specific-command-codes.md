@@ -2,6 +2,11 @@
 title: Device-Specific Command Codes
 description: Device-Specific Command Codes
 ms.assetid: 5dae7269-7a5d-4e34-b164-cfb02f17ee2c
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device-Specific Command Codes

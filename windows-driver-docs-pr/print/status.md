@@ -2,6 +2,11 @@
 title: Status
 description: Status
 ms.assetid: a4c39069-4324-4af3-a331-31b684275a57
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Status

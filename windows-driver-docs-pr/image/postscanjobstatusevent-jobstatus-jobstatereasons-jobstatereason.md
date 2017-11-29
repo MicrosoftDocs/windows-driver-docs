@@ -3,6 +3,11 @@ title: PostScanJobStatusEvent.JobStatus.JobStateReasons.JobStateReason
 description: PostScanJobStatusEvent.JobStatus.JobStateReasons.JobStateReason
 ms.assetid: f10f7f9a-d052-4664-9f14-96699799afbf
 keywords: ["PostScanJobStatusEvent.JobStatus.JobStateReasons.JobStateReason"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PostScanJobStatusEvent.JobStatus.JobStateReasons.JobStateReason

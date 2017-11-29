@@ -2,6 +2,11 @@
 title: IAudioSystemEffects
 description: IAudioSystemEffects
 ms.assetid: 86429c51-6831-4266-9774-1547dc04bcb0
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IAudioSystemEffects

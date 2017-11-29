@@ -2,6 +2,11 @@
 title: WSD Scan Service Operation Error Reporting
 description: WSD Scan Service Operation Error Reporting
 ms.assetid: 78cf0cf9-f792-4dc9-b0df-c45b408b85ab
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WSD Scan Service Operation Error Reporting

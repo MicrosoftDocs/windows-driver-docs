@@ -2,6 +2,11 @@
 title: EVENTSETID\_VIDEODECODER
 description: EVENTSETID\_VIDEODECODER
 ms.assetid: fb2dbd7b-9626-4114-bbfe-f710ba27103e
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EVENTSETID\_VIDEODECODER

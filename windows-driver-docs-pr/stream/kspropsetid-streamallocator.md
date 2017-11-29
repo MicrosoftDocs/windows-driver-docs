@@ -2,6 +2,11 @@
 title: KSPROPSETID\_StreamAllocator
 description: KSPROPSETID\_StreamAllocator
 ms.assetid: 80763dfb-87eb-49c7-8639-b138b9032185
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_StreamAllocator

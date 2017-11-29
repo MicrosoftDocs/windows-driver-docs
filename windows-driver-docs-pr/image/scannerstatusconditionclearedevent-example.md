@@ -3,6 +3,11 @@ title: ScannerStatusConditionClearedEvent Example
 description: ScannerStatusConditionClearedEvent Example
 ms.assetid: 54a51c31-c629-413e-842f-2ae1acf966ee
 keywords: ["ScannerStatusConditionClearedEvent Example"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ScannerStatusConditionClearedEvent Example

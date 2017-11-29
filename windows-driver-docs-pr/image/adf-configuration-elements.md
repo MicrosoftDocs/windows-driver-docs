@@ -2,6 +2,11 @@
 title: ADF Configuration Elements
 description: ADF Configuration Elements
 ms.assetid: 643e551d-3a70-4d52-b45d-c33d1e0ac63e
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ADF Configuration Elements

@@ -3,6 +3,11 @@ title: SharePointConfig.SaveToMySite
 description: SharePointConfig.SaveToMySite
 ms.assetid: f6aeb6e6-4a06-41eb-a0eb-c4050d01bf25
 keywords: ["SharePointConfig.SaveToMySite"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SharePointConfig.SaveToMySite

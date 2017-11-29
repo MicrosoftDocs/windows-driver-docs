@@ -2,6 +2,11 @@
 title: KSINTERFACESETID\_Standard
 description: KSINTERFACESETID\_Standard
 ms.assetid: f921ffba-04dd-4900-8825-5b3486009bca
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSINTERFACESETID\_Standard

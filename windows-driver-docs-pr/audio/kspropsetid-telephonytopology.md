@@ -2,6 +2,11 @@
 title: KSPROPSETID\_TelephonyTopology
 description: The KSPROPSETID\_TelephonyTopology property set is used access endpoints associated with cellular audio routing as well as the cellular call volume.
 ms.assetid: FB003065-7BC9-4DDD-88CA-4BFA98AAF61E
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_TelephonyTopology

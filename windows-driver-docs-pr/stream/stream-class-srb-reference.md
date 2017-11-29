@@ -2,6 +2,11 @@
 title: Stream Class SRB Reference
 description: Stream Class SRB Reference
 ms.assetid: fdd2de58-8825-429a-937a-0bd27a180f2a
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stream Class SRB Reference

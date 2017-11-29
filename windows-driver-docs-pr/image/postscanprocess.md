@@ -3,6 +3,11 @@ title: PostScanProcess
 description: PostScanProcess
 ms.assetid: 330868fd-c562-42ad-84ed-09426f3cda18
 keywords: ["PostScanProcess"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PostScanProcess

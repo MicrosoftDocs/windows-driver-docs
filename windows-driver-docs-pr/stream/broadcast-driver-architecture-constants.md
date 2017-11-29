@@ -2,6 +2,11 @@
 title: Broadcast Driver Architecture Constants
 description: Broadcast Driver Architecture Constants
 ms.assetid: bc97d6f7-1fdc-462d-8d14-af8dc3976ee1
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Broadcast Driver Architecture Constants

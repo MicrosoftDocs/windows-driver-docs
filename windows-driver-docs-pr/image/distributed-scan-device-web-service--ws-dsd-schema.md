@@ -2,6 +2,11 @@
 title: Distributed Scan Device Web Service (WS-DSD) Schema
 description: Distributed Scan Device Web Service (WS-DSD) Schema
 ms.assetid: 439847d9-eb90-445c-aae8-fa96eb528e5d
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Distributed Scan Device Web Service (WS-DSD) Schema

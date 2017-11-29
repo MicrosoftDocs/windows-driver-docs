@@ -9,6 +9,11 @@ api_name:
 - SRB_READ_DATA
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SRB\_READ\_DATA

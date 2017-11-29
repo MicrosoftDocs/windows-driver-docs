@@ -2,6 +2,11 @@
 title: Encoder Property Sets
 description: Encoder Property Sets
 ms.assetid: b273464d-0d40-488c-a848-291f949609f0
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Encoder Property Sets

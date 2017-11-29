@@ -3,6 +3,11 @@ title: GetJobElements
 description: GetJobElements
 ms.assetid: e9f3713f-7227-48db-a0c0-6891589e06a1
 keywords: ["GetJobElements"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GetJobElements

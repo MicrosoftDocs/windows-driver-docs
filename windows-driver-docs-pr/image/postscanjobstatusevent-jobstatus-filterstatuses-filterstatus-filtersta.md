@@ -3,6 +3,11 @@ title: PostScanJobStatusEvent.JobStatus.FilterStatuses.FilterStatus.FilterStateR
 description: PostScanJobStatusEvent.JobStatus.FilterStatuses.FilterStatus.FilterStateReasons.FilterStateReason
 ms.assetid: a51ff635-bb7f-4929-b478-138ce6552052
 keywords: ["PostScanJobStatusEvent.JobStatus.FilterStatuses.FilterStatus.FilterStateReasons.FilterStateReason"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PostScanJobStatusEvent.JobStatus.FilterStatuses.FilterStatus.FilterStateReasons.FilterStateReason

@@ -2,6 +2,11 @@
 title: Orientation
 description: Orientation
 ms.assetid: a3bd9d67-200f-4739-ad0e-ff7fd2eb20a3
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Orientation

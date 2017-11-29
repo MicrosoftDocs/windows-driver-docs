@@ -2,6 +2,11 @@
 title: KSEVENTSETID\_BdaCAEvent
 description: KSEVENTSETID\_BdaCAEvent
 ms.assetid: e748a8a1-9aa4-41da-8cc2-02beb89a8887
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSEVENTSETID\_BdaCAEvent

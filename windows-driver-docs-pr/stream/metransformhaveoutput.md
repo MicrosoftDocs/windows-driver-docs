@@ -2,6 +2,11 @@
 title: METransformHaveOutput
 description: The METransformHaveOutput event indicates that a device transform has a sample ready on one of its output streams.
 ms.assetid: 1CD11A3C-8181-4AF2-9AB3-10B04668CF1C
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # METransformHaveOutput

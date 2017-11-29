@@ -3,6 +3,11 @@ title: SendImageRequest
 description: SendImageRequest
 ms.assetid: fda4926f-5d37-4515-9a13-ef27a607a8fd
 keywords: ["SendImageRequest"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SendImageRequest

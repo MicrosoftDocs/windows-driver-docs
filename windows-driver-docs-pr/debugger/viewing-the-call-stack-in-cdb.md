@@ -2,6 +2,11 @@
 title: Viewing the Call Stack in CDB
 description: In CDB, you can view the call stack by entering one of the k (Display Stack Backtrace) commands.
 ms.assetid: 4694AFEC-24CF-4331-AA0A-1AE176048295
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Viewing the Call Stack in CDB

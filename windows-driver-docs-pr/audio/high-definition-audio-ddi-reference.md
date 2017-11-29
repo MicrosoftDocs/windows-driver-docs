@@ -2,6 +2,11 @@
 title: High Definition Audio DDI Reference
 description: High Definition Audio DDI Reference
 ms.assetid: 82d8698b-20fd-40ba-b7f5-56006ffb518f
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # High Definition Audio DDI Reference

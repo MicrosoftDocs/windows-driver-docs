@@ -2,6 +2,11 @@
 title: KSPROPSETID\_SoundDetector
 description: .
 ms.assetid: FC4A354B-D42C-4199-B613-1E1B75A600C6
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_SoundDetector

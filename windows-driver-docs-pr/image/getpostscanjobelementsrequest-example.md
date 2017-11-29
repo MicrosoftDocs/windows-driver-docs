@@ -3,6 +3,11 @@ title: GetPostScanJobElementsRequest Example
 description: GetPostScanJobElementsRequest Example
 ms.assetid: 01d4f19d-247c-4f12-bfcb-ea9ab5311b86
 keywords: ["GetPostScanJobElementsRequest Example"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GetPostScanJobElementsRequest Example

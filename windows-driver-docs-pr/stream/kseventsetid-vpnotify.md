@@ -2,6 +2,11 @@
 title: KSEVENTSETID\_VPNotify
 description: KSEVENTSETID\_VPNotify
 ms.assetid: 97511a75-b66b-40c1-b508-a82e3a10832e
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSEVENTSETID\_VPNotify

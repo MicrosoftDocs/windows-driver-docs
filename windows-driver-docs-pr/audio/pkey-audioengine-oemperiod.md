@@ -2,6 +2,11 @@
 title: PKEY\_AudioEngine\_OEMPeriod
 description: PKEY\_AudioEngine\_OEMPeriod
 ms.assetid: e0cefdbf-7016-4609-a898-592a40b5d430
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PKEY\_AudioEngine\_OEMPeriod

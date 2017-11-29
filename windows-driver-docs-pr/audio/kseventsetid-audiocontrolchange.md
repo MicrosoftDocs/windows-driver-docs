@@ -3,6 +3,11 @@ title: KSEVENTSETID\_AudioControlChange
 description: KSEVENTSETID\_AudioControlChange
 ms.assetid: 5189c284-d53a-4fc4-981c-7d6b3851dab1
 keywords: ["KSEVENTSETID_AudioControlChange"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSEVENTSETID\_AudioControlChange

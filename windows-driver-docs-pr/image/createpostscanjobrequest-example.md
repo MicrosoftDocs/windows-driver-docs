@@ -3,6 +3,11 @@ title: CreatePostScanJobRequest Example
 description: CreatePostScanJobRequest Example
 ms.assetid: 19cd3467-1f38-4e83-b10c-432e2aaa2d77
 keywords: ["CreatePostScanJobRequest Example"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CreatePostScanJobRequest Example

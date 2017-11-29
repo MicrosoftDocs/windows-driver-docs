@@ -2,6 +2,11 @@
 title: Optional Commands
 description: Optional Commands
 ms.assetid: b9c411b1-0061-468a-b900-47c6062aa3b0
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Optional Commands

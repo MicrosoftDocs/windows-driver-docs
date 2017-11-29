@@ -3,6 +3,11 @@ title: SendImageRequest.ImageData
 description: SendImageRequest.ImageData
 ms.assetid: b14dc6a4-b237-46f0-b40f-dec0545f1a16
 keywords: ["SendImageRequest.ImageData"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SendImageRequest.ImageData

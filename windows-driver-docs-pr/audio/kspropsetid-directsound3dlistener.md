@@ -3,6 +3,11 @@ title: KSPROPSETID\_DirectSound3DListener
 description: KSPROPSETID\_DirectSound3DListener
 ms.assetid: 37eef2cb-5b45-4ff8-abb9-a685f0b290e3
 keywords: ["KSPROPSETID_DirectSound3DListener"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_DirectSound3DListener

@@ -2,6 +2,11 @@
 title: GetJobElementsResponse.JobElements
 description: GetJobElementsResponse.JobElements
 ms.assetid: 6d2df523-3133-40ce-835b-e7fde8a3e7cd
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GetJobElementsResponse.JobElements

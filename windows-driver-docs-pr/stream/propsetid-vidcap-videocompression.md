@@ -2,6 +2,11 @@
 title: PROPSETID\_VIDCAP\_VIDEOCOMPRESSION
 description: PROPSETID\_VIDCAP\_VIDEOCOMPRESSION
 ms.assetid: 7af6f7f0-d446-4b44-9423-efd37f731e0b
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PROPSETID\_VIDCAP\_VIDEOCOMPRESSION

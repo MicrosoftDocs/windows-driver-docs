@@ -9,6 +9,11 @@ api_name:
 - AVC_FUNCTION_GET_EXT_PLUG_COUNTS
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AVC\_FUNCTION\_GET\_EXT\_PLUG\_COUNTS

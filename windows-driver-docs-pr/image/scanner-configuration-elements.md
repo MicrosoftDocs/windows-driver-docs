@@ -2,6 +2,11 @@
 title: Scanner Configuration Elements
 description: Scanner Configuration Elements
 ms.assetid: f8adb58e-389e-4411-bbc0-3f74bba691df
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Scanner Configuration Elements

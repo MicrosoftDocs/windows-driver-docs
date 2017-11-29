@@ -3,6 +3,11 @@ title: SendImageResponse Example
 description: SendImageResponse Example
 ms.assetid: 6590c00d-7dcf-4d0f-84fe-ec9497631433
 keywords: ["SendImageResponse Example"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SendImageResponse Example

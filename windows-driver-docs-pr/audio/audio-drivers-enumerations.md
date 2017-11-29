@@ -2,6 +2,11 @@
 title: Audio Drivers Enumerations
 description: This section describes the enumerations that are used by various audio properties and structures.
 ms.assetid: 9C7530BE-C63F-438C-A853-9A7E47C240E9
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio Drivers Enumerations

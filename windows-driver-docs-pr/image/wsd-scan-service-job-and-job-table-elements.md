@@ -2,6 +2,11 @@
 title: WSD Scan Service Job and Job Table Elements
 description: WSD Scan Service Job and Job Table Elements
 ms.assetid: 3a20c0d9-4ed7-438f-9dcc-f5adc8ac7b18
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WSD Scan Service Job and Job Table Elements

@@ -2,6 +2,11 @@
 title: KSPROPSETID\_MediaSeeking
 description: KSPROPSETID\_MediaSeeking
 ms.assetid: 0c0ffb59-0b67-4d88-9737-7dd4ad5369ac
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_MediaSeeking

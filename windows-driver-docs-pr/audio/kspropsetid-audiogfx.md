@@ -3,6 +3,11 @@ title: KSPROPSETID\_AudioGfx
 description: KSPROPSETID\_AudioGfx
 ms.assetid: f872a5bb-6ab5-4f1e-b81b-86ba744b2d6e
 keywords: ["KSPROPSETID_AudioGfx"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_AudioGfx

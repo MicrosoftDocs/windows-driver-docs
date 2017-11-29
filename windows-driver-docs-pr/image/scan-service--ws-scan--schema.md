@@ -2,6 +2,11 @@
 title: Scan Service (WS-Scan) Schema
 description: Scan Service (WS-Scan) Schema
 ms.assetid: 4a1f3f82-b345-4e08-ac5e-69bd5fee1b83
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Scan Service (WS-Scan) Schema

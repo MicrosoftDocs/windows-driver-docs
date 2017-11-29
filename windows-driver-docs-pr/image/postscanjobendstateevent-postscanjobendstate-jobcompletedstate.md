@@ -3,6 +3,11 @@ title: PostScanJobEndStateEvent.PostScanJobEndState.JobCompletedState
 description: PostScanJobEndStateEvent.PostScanJobEndState.JobCompletedState
 ms.assetid: 38819dd3-4689-423b-b9ff-1ecc83e32842
 keywords: ["PostScanJobEndStateEvent.PostScanJobEndState.JobCompletedState"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PostScanJobEndStateEvent.PostScanJobEndState.JobCompletedState

@@ -2,6 +2,11 @@
 title: AV/C Streaming Format GUIDs
 description: AV/C Streaming Format GUIDs
 ms.assetid: 60f1fd59-e760-4be4-8990-e49628b76d15
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AV/C Streaming Format GUIDs

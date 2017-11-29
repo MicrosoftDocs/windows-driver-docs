@@ -3,6 +3,11 @@ title: GetJobElementsRequest.JobId
 description: GetJobElementsRequest.JobId
 ms.assetid: b6bf3799-e085-49c8-9d63-b0f9a6d83cee
 keywords: ["GetJobElementsRequest.JobId"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GetJobElementsRequest.JobId

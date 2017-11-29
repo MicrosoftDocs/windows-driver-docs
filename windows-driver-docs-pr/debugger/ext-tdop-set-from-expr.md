@@ -9,6 +9,11 @@ api_name:
 - EXT_TDOP_SET_FROM_EXPR
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EXT\_TDOP\_SET\_FROM\_EXPR

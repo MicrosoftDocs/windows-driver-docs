@@ -2,6 +2,11 @@
 title: Audio Power Management Interfaces
 description: Audio Power Management Interfaces
 ms.assetid: 7b123d3f-4f11-448e-8b20-92578fda7e69
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio Power Management Interfaces

@@ -2,6 +2,11 @@
 title: KSPROPSETID\_StreamInterface
 description: KSPROPSETID\_StreamInterface
 ms.assetid: 74f3500e-71f3-4e0c-bf97-143d4a63d44f
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_StreamInterface

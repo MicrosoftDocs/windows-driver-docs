@@ -2,6 +2,11 @@
 title: KSPROPSETID\_TelephonyControl
 description: The KSPROPSETID\_TelephonyControl property set is used to work with telephony control properties. These properties can be used to determine the state of a call and perform certain operations such as putting a call on hold or muting the local microphone.
 ms.assetid: 77886C58-4881-4499-99DA-A9870481D4CF
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_TelephonyControl

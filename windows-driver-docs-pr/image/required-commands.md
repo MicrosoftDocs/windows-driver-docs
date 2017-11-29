@@ -2,6 +2,11 @@
 title: Required Commands
 description: Required Commands
 ms.assetid: e4a82cc6-8031-4d67-bef8-1d73e2d98b6b
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Required Commands

@@ -2,6 +2,11 @@
 title: Port Class Audio Driver Reference
 description: Port Class Audio Driver Reference
 ms.assetid: ce68e3fd-9d7e-4d9e-b30a-09c07a3bb805
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Port Class Audio Driver Reference

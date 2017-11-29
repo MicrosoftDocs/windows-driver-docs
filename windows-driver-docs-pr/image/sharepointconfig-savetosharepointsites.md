@@ -3,6 +3,11 @@ title: SharePointConfig.SaveToSharePointSites
 description: SharePointConfig.SaveToSharePointSites
 ms.assetid: efcc9334-a1aa-494d-b9bb-f64981eb6b59
 keywords: ["SharePointConfig.SaveToSharePointSites"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SharePointConfig.SaveToSharePointSites

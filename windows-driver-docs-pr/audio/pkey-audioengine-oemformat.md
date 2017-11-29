@@ -2,6 +2,11 @@
 title: PKEY\_AudioEngine\_OEMFormat
 description: PKEY\_AudioEngine\_OEMFormat
 ms.assetid: a1587f46-1c21-4419-a1a4-81fe299c6871
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PKEY\_AudioEngine\_OEMFormat

@@ -2,6 +2,11 @@
 title: HolePunch
 description: HolePunch
 ms.assetid: 259c5182-71c4-4d68-9609-4b9d90d9b4c5
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # HolePunch

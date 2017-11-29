@@ -3,6 +3,11 @@ title: ValidateScanTicketResponse.ValidationInfo
 description: ValidateScanTicketResponse.ValidationInfo
 ms.assetid: 125719d7-9e27-4154-8243-7ee83b0f21bd
 keywords: ["ValidateScanTicketResponse.ValidationInfo"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ValidateScanTicketResponse.ValidationInfo

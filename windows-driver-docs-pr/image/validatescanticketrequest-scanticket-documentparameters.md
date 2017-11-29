@@ -3,6 +3,11 @@ title: ValidateScanTicketRequest.ScanTicket.DocumentParameters
 description: ValidateScanTicketRequest.ScanTicket.DocumentParameters
 ms.assetid: 6ecb6068-563f-49d3-9f14-6010594792dc
 keywords: ["ValidateScanTicketRequest.ScanTicket.DocumentParameters"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ValidateScanTicketRequest.ScanTicket.DocumentParameters

@@ -3,6 +3,11 @@ title: SendImageRequest Example
 description: SendImageRequest Example
 ms.assetid: bf14727b-3c03-4d80-8780-32806bd680f5
 keywords: ["SendImageRequest Example"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SendImageRequest Example

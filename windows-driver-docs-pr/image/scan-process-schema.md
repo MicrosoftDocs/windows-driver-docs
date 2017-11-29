@@ -3,6 +3,11 @@ title: Scan Process Schema
 description: Scan Process Schema
 ms.assetid: 0ce2eaef-86bf-4981-98fd-e1a19f949d23
 keywords: ["Scan Process Schema"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Scan Process Schema

@@ -2,6 +2,11 @@
 title: PROPSETID\_VIDCAP\_TVAUDIO
 description: PROPSETID\_VIDCAP\_TVAUDIO
 ms.assetid: 33c76f30-2e4b-48b7-a463-f6363419dca3
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PROPSETID\_VIDCAP\_TVAUDIO

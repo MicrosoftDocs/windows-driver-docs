@@ -3,6 +3,11 @@ title: EmailConfig.SendToAddresses.CanAddAddresses
 description: EmailConfig.SendToAddresses.CanAddAddresses
 ms.assetid: f34f1759-c91e-41e5-be7a-036af0d27ef1
 keywords: ["EmailConfig.SendToAddresses.CanAddAddresses"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EmailConfig.SendToAddresses.CanAddAddresses

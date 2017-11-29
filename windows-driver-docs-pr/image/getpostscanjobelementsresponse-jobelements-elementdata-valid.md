@@ -3,6 +3,11 @@ title: GetPostScanJobElementsResponse.JobElements.ElementData.Valid
 description: GetPostScanJobElementsResponse.JobElements.ElementData.Valid
 ms.assetid: a9b29f4d-6197-46f8-aa1b-1a4298cab328
 keywords: ["GetPostScanJobElementsResponse.JobElements.ElementData.Valid"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GetPostScanJobElementsResponse.JobElements.ElementData.Valid

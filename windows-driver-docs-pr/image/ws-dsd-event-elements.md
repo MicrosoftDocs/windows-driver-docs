@@ -3,6 +3,11 @@ title: WS-DSD Event Elements
 description: WS-DSD Event Elements
 ms.assetid: 329dbfe5-b430-443e-922a-43694bff0d50
 keywords: ["WS-DSD Event Elements"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WS-DSD Event Elements

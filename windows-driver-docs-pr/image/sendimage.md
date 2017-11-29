@@ -3,6 +3,11 @@ title: SendImage
 description: SendImage
 ms.assetid: 36757ae4-49da-4ccf-af79-5774c1ff6d87
 keywords: ["SendImage"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SendImage

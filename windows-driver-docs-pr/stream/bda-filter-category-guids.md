@@ -2,6 +2,11 @@
 title: BDA Filter Category GUIDs
 description: BDA Filter Category GUIDs
 ms.assetid: fbd4bf91-8309-423a-97ea-7e4f90cd3b68
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # BDA Filter Category GUIDs

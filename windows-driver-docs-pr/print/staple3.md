@@ -2,6 +2,11 @@
 title: Staple
 description: Staple
 ms.assetid: 71e5bd28-cbf8-4346-884a-88d9f310c378
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Staple

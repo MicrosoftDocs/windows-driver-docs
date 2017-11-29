@@ -2,6 +2,11 @@
 title: Kernel Streaming Interface Sets
 description: Kernel Streaming Interface Sets
 ms.assetid: 7fb6b137-0e28-4034-8e89-7301f3d2bbba
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Kernel Streaming Interface Sets

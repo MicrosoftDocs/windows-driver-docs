@@ -2,6 +2,11 @@
 title: Event\ \ \
 description: Event\ \ \
 ms.assetid: a3b0b3f1-03d6-4309-9efe-d2588c7240cb
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Event\#\#\#

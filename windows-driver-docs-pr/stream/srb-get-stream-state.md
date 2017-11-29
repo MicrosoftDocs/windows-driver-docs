@@ -2,6 +2,11 @@
 title: SRB\_GET\_STREAM\_STATE
 description: SRB\_GET\_STREAM\_STATE
 ms.assetid: ea868e5e-0724-4064-bccb-85d5b6e93d89
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SRB\_GET\_STREAM\_STATE

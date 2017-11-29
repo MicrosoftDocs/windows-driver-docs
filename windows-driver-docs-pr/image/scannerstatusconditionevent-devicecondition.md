@@ -3,6 +3,11 @@ title: ScannerStatusConditionEvent.DeviceCondition
 description: ScannerStatusConditionEvent.DeviceCondition
 ms.assetid: 64418f99-9099-4bf2-bfe2-0daf0edb6b26
 keywords: ["ScannerStatusConditionEvent.DeviceCondition"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ScannerStatusConditionEvent.DeviceCondition

@@ -2,6 +2,11 @@
 title: PROPSETID\_EXT\_TRANSPORT
 description: PROPSETID\_EXT\_TRANSPORT
 ms.assetid: 2e96dec7-43a9-44a4-9636-4ccb5244d5bd
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PROPSETID\_EXT\_TRANSPORT

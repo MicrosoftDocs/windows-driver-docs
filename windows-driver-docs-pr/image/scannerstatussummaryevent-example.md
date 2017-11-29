@@ -3,6 +3,11 @@ title: ScannerStatusSummaryEvent Example
 description: ScannerStatusSummaryEvent Example
 ms.assetid: d2ebc617-fdb5-4683-a181-29a1c1798449
 keywords: ["ScannerStatusSummaryEvent Example"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ScannerStatusSummaryEvent Example

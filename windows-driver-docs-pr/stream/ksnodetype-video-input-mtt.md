@@ -2,6 +2,11 @@
 title: KSNODETYPE\_VIDEO\_INPUT\_MTT
 description: KSNODETYPE\_VIDEO\_INPUT\_MTT
 ms.assetid: c5661830-9dcf-48b0-b450-2640e4768add
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSNODETYPE\_VIDEO\_INPUT\_MTT

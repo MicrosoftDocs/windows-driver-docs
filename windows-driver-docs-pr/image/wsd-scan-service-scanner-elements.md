@@ -2,6 +2,11 @@
 title: WSD Scan Service Scanner Elements
 description: WSD Scan Service Scanner Elements
 ms.assetid: 84bb3f19-fc32-4433-b601-ec3db11aacfa
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WSD Scan Service Scanner Elements

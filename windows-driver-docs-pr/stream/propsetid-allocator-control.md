@@ -2,6 +2,11 @@
 title: PROPSETID\_ALLOCATOR\_CONTROL
 description: PROPSETID\_ALLOCATOR\_CONTROL
 ms.assetid: a3e0a5e9-4357-4bc9-ba2a-098f344ed01e
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PROPSETID\_ALLOCATOR\_CONTROL

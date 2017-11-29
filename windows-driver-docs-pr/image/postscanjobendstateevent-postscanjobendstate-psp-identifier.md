@@ -3,6 +3,11 @@ title: PostScanJobEndStateEvent.PostScanJobEndState.PSP\_Identifier
 description: PostScanJobEndStateEvent.PostScanJobEndState.PSP\_Identifier
 ms.assetid: 57b7f75a-b2ef-4d8a-a620-82348b6d28e5
 keywords: ["PostScanJobEndStateEvent.PostScanJobEndState.PSP_Identifier"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PostScanJobEndStateEvent.PostScanJobEndState.PSP\_Identifier

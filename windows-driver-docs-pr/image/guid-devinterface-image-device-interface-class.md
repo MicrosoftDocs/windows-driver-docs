@@ -2,6 +2,11 @@
 title: GUID\_DEVINTERFACE\_IMAGE Device Interface Class
 description: GUID\_DEVINTERFACE\_IMAGE Device Interface Class
 ms.assetid: 2bf0bb35-c047-481e-a0f3-b8a8c06e259b
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GUID\_DEVINTERFACE\_IMAGE Device Interface Class

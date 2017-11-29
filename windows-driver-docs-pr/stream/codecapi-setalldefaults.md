@@ -2,6 +2,11 @@
 title: CODECAPI\_SETALLDEFAULTS
 description: CODECAPI\_SETALLDEFAULTS
 ms.assetid: 6a50a75f-cbc5-487f-b2cd-34e89eb127a0
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CODECAPI\_SETALLDEFAULTS

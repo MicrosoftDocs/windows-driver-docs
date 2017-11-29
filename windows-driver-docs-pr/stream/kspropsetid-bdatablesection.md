@@ -2,6 +2,11 @@
 title: KSPROPSETID\_BdaTableSection
 description: KSPROPSETID\_BdaTableSection
 ms.assetid: 300e526f-454b-40ba-88eb-97d8a0a14775
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_BdaTableSection

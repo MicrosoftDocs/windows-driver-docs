@@ -2,6 +2,11 @@
 title: KSPROPSETID\_BdaPinControl
 description: KSPROPSETID\_BdaPinControl
 ms.assetid: f3c6ae83-d50f-49c8-a851-763f191f1932
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_BdaPinControl

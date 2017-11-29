@@ -2,6 +2,11 @@
 title: KSPROPSETID\_VramCapture
 description: KSPROPSETID\_VramCapture
 ms.assetid: 369bb258-5335-42f7-bd2f-7bfc9848e7f0
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_VramCapture

@@ -3,6 +3,11 @@ title: GetActiveJobsResponse.ActiveJobs
 description: GetActiveJobsResponse.ActiveJobs
 ms.assetid: 41214a7f-79bd-4361-9a81-e51daa1ea259
 keywords: ["GetActiveJobsResponse.ActiveJobs"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GetActiveJobsResponse.ActiveJobs

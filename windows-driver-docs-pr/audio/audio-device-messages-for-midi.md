@@ -2,6 +2,11 @@
 title: Audio Device Messages for MIDI
 description: Audio Device Messages for MIDI
 ms.assetid: d3b00985-6894-41ea-b493-d0aee269d5bf
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio Device Messages for MIDI

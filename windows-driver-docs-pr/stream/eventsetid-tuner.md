@@ -2,6 +2,11 @@
 title: EVENTSETID\_TUNER
 description: EVENTSETID\_TUNER
 ms.assetid: 0b8770cd-f88b-4c1d-8625-39c42cb14dff
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EVENTSETID\_TUNER

@@ -2,6 +2,11 @@
 title: Distributed Scan Management (DSM) Schemas
 description: Distributed Scan Management (DSM) Schemas
 ms.assetid: cadd3a55-5607-4637-8aa8-06a11507d8d7
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Distributed Scan Management (DSM) Schemas

@@ -3,6 +3,11 @@ title: PostScanJobEndStateEvent.PostScanJobEndState.ImagesReceived
 description: PostScanJobEndStateEvent.PostScanJobEndState.ImagesReceived
 ms.assetid: b043f34b-e43a-4dcd-a606-0f45a49f66d0
 keywords: ["PostScanJobEndStateEvent.PostScanJobEndState.ImagesReceived"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PostScanJobEndStateEvent.PostScanJobEndState.ImagesReceived

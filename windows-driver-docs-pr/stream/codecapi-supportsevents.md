@@ -2,6 +2,11 @@
 title: CODECAPI\_SUPPORTSEVENTS
 description: CODECAPI\_SUPPORTSEVENTS
 ms.assetid: feb6d110-9a9c-4e2b-bc19-259f80f3947a
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CODECAPI\_SUPPORTSEVENTS

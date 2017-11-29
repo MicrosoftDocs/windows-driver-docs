@@ -3,6 +3,11 @@ title: JobStatusEvent.JobStatus
 description: JobStatusEvent.JobStatus
 ms.assetid: 65f16b07-90d9-4320-b728-349a60a00b44
 keywords: ["JobStatusEvent.JobStatus"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # JobStatusEvent.JobStatus

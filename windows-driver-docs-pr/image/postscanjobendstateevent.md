@@ -3,6 +3,11 @@ title: PostScanJobEndStateEvent
 description: PostScanJobEndStateEvent
 ms.assetid: 686068cd-aa42-43d6-aa56-865243eca020
 keywords: ["PostScanJobEndStateEvent"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PostScanJobEndStateEvent

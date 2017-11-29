@@ -2,6 +2,11 @@
 title: KSEVENTSETID\_VIDCAPNotify
 description: KSEVENTSETID\_VIDCAPNotify
 ms.assetid: 3f3def49-856f-4477-86dc-7bbb796f5d37
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSEVENTSETID\_VIDCAPNotify

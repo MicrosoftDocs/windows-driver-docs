@@ -3,6 +3,11 @@ title: KSPROPSETID\_Sysaudio
 description: KSPROPSETID\_Sysaudio
 ms.assetid: 817cbda5-9d37-4c12-8749-98a86540609f
 keywords: ["KSPROPSETID_Sysaudio"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_Sysaudio

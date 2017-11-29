@@ -2,6 +2,11 @@
 title: WS-DSP Operation Elements
 description: WS-DSP Operation Elements
 ms.assetid: 53588b68-c53a-4a65-9887-38dbf5d00de2
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WS-DSP Operation Elements

@@ -3,6 +3,11 @@ title: SharePointConfig.SaveToSharePointSites.SaveToSharePointSiteURL
 description: SharePointConfig.SaveToSharePointSites.SaveToSharePointSiteURL
 ms.assetid: d07d1ba5-2f06-4ffd-b5b4-6cd815025a58
 keywords: ["SharePointConfig.SaveToSharePointSites.SaveToSharePointSiteURL"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SharePointConfig.SaveToSharePointSites.SaveToSharePointSiteURL

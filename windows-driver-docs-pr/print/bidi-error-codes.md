@@ -3,6 +3,11 @@ title: Bidirectional Communication Error Codes
 description: The following error codes are used in printer bidirectional communication.
 ms.assetid: e273f5eb-e4f4-4aa7-9ed9-b418eebc6144
 keywords: ["graphics device interface (GDI),bidi error codes", "Windows graphics device interface (GDI),bidi error codes", "GDI,bidi error codes", "graphics device interface (GDI),bidirectional error codes", "Windows graphics device interface (GDI),bidirectional error codes", "GDI,bidirectional error codes", "graphics device interface (GDI),bidirectional error codes", "Windows graphics device interface (GDI),bidirectional error codes", "GDI,bidirectional error codes", "printing,bidi error codes", "printing,bidirectional error codes", "printing,bidirectional error codes", "bidi error codes", "bidirectional error codes", "bidirectional error codes"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bidirectional Communication Error Codes

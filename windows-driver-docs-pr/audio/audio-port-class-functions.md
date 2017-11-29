@@ -2,6 +2,11 @@
 title: Audio Port Class Functions
 description: Audio Port Class Functions
 ms.assetid: dc8f32e8-b01c-4f06-a32f-c08f76001f79
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio Port Class Functions

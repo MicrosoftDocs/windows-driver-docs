@@ -3,6 +3,11 @@ title: PostScanProcess.ScanTicket
 description: PostScanProcess.ScanTicket
 ms.assetid: 31a4abac-3216-4d96-b462-e4a08e9cd059
 keywords: ["PostScanProcess.ScanTicket"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PostScanProcess.ScanTicket

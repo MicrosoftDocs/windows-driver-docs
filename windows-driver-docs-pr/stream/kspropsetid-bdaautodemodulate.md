@@ -2,6 +2,11 @@
 title: KSPROPSETID\_BdaAutodemodulate
 description: KSPROPSETID\_BdaAutodemodulate
 ms.assetid: b7c3c934-5b31-48da-9fb0-98007267711b
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_BdaAutodemodulate

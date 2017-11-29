@@ -2,6 +2,11 @@
 title: Platen Configuration Elements
 description: Platen Configuration Elements
 ms.assetid: 8f3d61cc-1aee-4f2d-82c3-1bd357c8e771
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Platen Configuration Elements

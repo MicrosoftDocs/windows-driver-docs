@@ -2,6 +2,11 @@
 title: PROPSETID\_VIDCAP\_VIDEOPROCAMP
 description: PROPSETID\_VIDCAP\_VIDEOPROCAMP
 ms.assetid: ea1d9c96-b1a5-4849-b607-4c508a526512
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PROPSETID\_VIDCAP\_VIDEOPROCAMP

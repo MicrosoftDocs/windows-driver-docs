@@ -3,6 +3,11 @@ title: Email Filter Instructions Schema
 description: Email Filter Instructions Schema
 ms.assetid: 12e0a664-72fc-4c1a-9fa0-e87b4e3cce3e
 keywords: ["Email Filter Instructions Schema"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Email Filter Instructions Schema

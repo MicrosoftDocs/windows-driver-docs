@@ -3,6 +3,11 @@ title: SendImageRequest.DocumentDescription.Format
 description: SendImageRequest.DocumentDescription.Format
 ms.assetid: 32bb5eb5-bcb9-4cd3-b200-e2971ab1f65a
 keywords: ["SendImageRequest.DocumentDescription.Format"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SendImageRequest.DocumentDescription.Format

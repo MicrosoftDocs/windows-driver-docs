@@ -2,6 +2,11 @@
 title: Example 1 Displaying Global Flags
 description: Example 1 Displaying Global Flags
 ms.assetid: c1a1eafd-d70a-43f9-af90-33ddc33758fe
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 1: Displaying Global Flags

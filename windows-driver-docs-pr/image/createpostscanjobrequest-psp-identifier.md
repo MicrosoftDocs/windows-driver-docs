@@ -3,6 +3,11 @@ title: CreatePostScanJobRequest.PSP\_Identifier
 description: CreatePostScanJobRequest.PSP\_Identifier
 ms.assetid: 07a17b6a-7fcf-4734-9a8e-caf62e398553
 keywords: ["CreatePostScanJobRequest.PSP_Identifier"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CreatePostScanJobRequest.PSP\_Identifier

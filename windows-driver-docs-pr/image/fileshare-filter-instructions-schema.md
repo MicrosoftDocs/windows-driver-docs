@@ -3,6 +3,11 @@ title: Fileshare Filter Instructions Schema
 description: Fileshare Filter Instructions Schema
 ms.assetid: 7168765a-9f2e-47ab-983c-9711f70cd4e5
 keywords: ["Fileshare Filter Instructions Schema"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Fileshare Filter Instructions Schema

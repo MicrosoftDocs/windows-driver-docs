@@ -3,6 +3,11 @@ title: ValidateScanTicket
 description: ValidateScanTicket
 ms.assetid: 3f7ffa80-ea6c-4323-8df6-d1dee77c5ef6
 keywords: ["ValidateScanTicket"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ValidateScanTicket

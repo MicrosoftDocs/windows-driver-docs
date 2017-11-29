@@ -3,6 +3,11 @@ title: PostScanProcess.PostScanInstructions
 description: PostScanProcess.PostScanInstructions
 ms.assetid: fa60df79-4eaf-4cf8-b4f1-38218a47f744
 keywords: ["PostScanProcess.PostScanInstructions"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PostScanProcess.PostScanInstructions

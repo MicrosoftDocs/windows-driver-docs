@@ -3,6 +3,11 @@ title: JobEndStateEvent Example
 description: JobEndStateEvent Example
 ms.assetid: dfd52358-ffa7-4d9a-ab18-99478c46f3b8
 keywords: ["JobEndStateEvent Example"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # JobEndStateEvent Example

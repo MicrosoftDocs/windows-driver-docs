@@ -3,6 +3,11 @@ title: CreatePostScanJobResponse
 description: CreatePostScanJobResponse
 ms.assetid: 9c3bda26-d306-4fbd-9884-11b404c5e761
 keywords: ["CreatePostScanJobResponse"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CreatePostScanJobResponse

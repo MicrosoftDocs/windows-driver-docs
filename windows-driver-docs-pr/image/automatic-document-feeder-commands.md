@@ -2,6 +2,11 @@
 title: Automatic Document Feeder Commands
 description: Automatic Document Feeder Commands
 ms.assetid: dd6664d6-4853-4f97-85cc-39a7879d523e
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Automatic Document Feeder Commands

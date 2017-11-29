@@ -2,6 +2,11 @@
 title: Event Commands
 description: Event Commands
 ms.assetid: e2b9f985-be57-49a9-b546-5cc74b0b061b
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Event Commands

@@ -2,6 +2,11 @@
 title: KSPROPSETID\_BdaDigitalDemodulator
 description: KSPROPSETID\_BdaDigitalDemodulator
 ms.assetid: 536c247d-049b-4d48-96b7-f2aa01f1fa91
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KSPROPSETID\_BdaDigitalDemodulator
