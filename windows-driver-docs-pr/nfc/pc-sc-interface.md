@@ -23,12 +23,82 @@ The ATR formats for different NFC card types are listed below. Please refer to P
 | 4+N         | XX    | TCK              | Checksum                                                                                                                    |
 
 ## ATR format for storage carks
-
-| Byte offset | Value                                                       | Designation      | Description                                                                                                                                                                                                                                                                                                           |
-|-------------|-------------------------------------------------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0           | 3B                                                          | Initial header   |                                                                                                                                                                                                                                                                                                                       |
-| 1           | 8n                                                          | T0               | Higher nibble indicates only presence of TD1. Lower nibble indicates the size of the historical bytes                                                                                                                                                                                                                 |
-| 2           | 80                                                          | TD1              | Presence of TD2                                                                                                                                                                                                                                                                                                       |
-| 3           | 01                                                          | TD2              |                                                                                                                                                                                                                                                                                                                       |
-| 4 to 3+N    | XX                                                          | Historical bytes | For ISO14443A: The historical bytes is from the ATS response <br> For ISO14443B: The historical bytes is from ATTRIB (ATQB)                                                                                                                                                                                           |
-| 4+N         | 80<br>4F<br>0C<br>A0 00 00 03 06<br>SS<br>NN<br>00 00 00 00 | TK               | Category indicator byte<br>Application identifier presence<br>Length<br>RID as specified in part 3 supplemental doc from PC/SC<br>Byte for standard. The values should correspond to Table 2 of the supplemental doc<br>Bytes for card name. The values should correspond to Table 3 of the supplemental doc<br> <br> |
+<table>
+    <tbody>
+        <tr>
+            <th>Byte offset</th>
+            <th>Value</th>
+            <th>Designation</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>3B</td>
+            <td>Initial header</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>8n</td>
+            <td>T0</td>
+            <td>Higher nibble indicates only presence of TD1. Lower nibble indicates the size of the historical bytes.</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>80</td>
+            <td>TD1</td>
+            <td>Presence of TD2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>01</td>
+            <td>TD2</td>
+        </tr>
+        <tr>
+            <td>4 to 3+N</td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>80</td>
+                        <td>TK<td>
+                        <td>Category indicator byte</td>
+                    </tr>
+                    <tr>
+                        <td>4F</td>
+                        <td></td>
+                        <td>Application identifier presence</td>
+                    <tr>
+                        <td>0C</td>
+                        <td></td>
+                        <td>Length</td>
+                    </tr>
+                    <tr>
+                        <td>A0 00 00 03 06</td>
+                        <td></td>
+                        <td>RID as specified in part 3 supplemental doc from PC/SC</td>
+                    </tr>
+                    <tr>
+                        <td>SS</td>
+                        <td></td>
+                        <td>Byte for standard. The values should correspond to Table 2 of the supplemental doc.</td>
+                    </tr>
+                    <tr>
+                        <td>NN<td>
+                        <td></td>
+                        <td>Bytes for card name. The values should correspond to Table 3 of the supplemental doc</td>
+                    </tr>
+                    <tr>
+                        <td>00 00 00 00</td>
+                        <td>RFU</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </tr>
+        <tr>
+            <td>4+N</td>
+            <td>XX</td>
+            <td>TCK<td>
+            <td>Check-sum</td>
+        </tr>
+    </tbody>
+</table>
