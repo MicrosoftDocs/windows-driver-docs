@@ -39,6 +39,8 @@
 ### [Functional flow](functional-flow.md)
 ### [Example sequence](example-sequence.md)
 ### [Storage card requirements](storage-card-requirements.md)
+### [Supported smart card attributes](smart-card-attributes.md)
+### [PC/SC interface](pc-sc-interface.md)
 ## [Power management](nfc-power-management.md)
 ### [Polling](polling.md)
 ## [NFC class extension (CX) design guide](nfc-class-extension-.md)
