@@ -1,39 +1,31 @@
 ---
-title: Windows Filtering Platform constants
+title: WDI_FRAME_ID
 author: windows-driver-content
-description: This section describes Windows Filtering Platform constants.
-ms.assetid: 9ebf1db2-fae2-427d-9c9d-6fae707da55a
+description: This topic describes the WDI_FRAME_ID data type for WDI miniport drivers.
+ms.assetid: 7D886BA2-EDD2-4770-948C-9C891D07EF58
 keywords:
-- Windows Filtering Platform constants network drivers
+- WDI_FRAME_ID, WDK WDI_FRAME_ID network drivers
 ms.author: windowsdriverdev
-ms.date: 11/07/2017
+ms.date: 11/27/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Windows Filtering Platform constants
+# WDI_FRAME_ID
 
-This section describes constants used in Windows Filtering Platform callout drivers.
+The WDI_FRAME_ID data type is a UINT16 value that defines a frame ID. This is only an identifier. It does not convey information about the ordering of frames.
 
-## In this section
+```c++
+typedef UINT16 WDI_FRAME_ID;
+```
 
-[Built-in callout identifiers](built-in-callout-identifiers.md)
+## Requirements
 
-[Filtering layer identifiers](filtering-layer-identifiers.md)
-
-[Filtering conditions](filtering-conditions.md)
-
-[Metadata fields](metadata-fields.md)
-
-[Data field identifiers](data-field-identifiers.md)
-
-[Data offset positions](data-offset-positions.md)
-
-[Discard reason identifiers](discard-reason-identifiers.md)
-
-## Related topics
-
-[Windows Filtering Platform Callout Drivers reference](https://msdn.microsoft.com/library/windows/hardware/ff571067)
+|   |   |
+| --- | --- |
+| Minimum supported client | Windows 10 |
+| Minimum supported server | Windows Server 2016 |
+| Header | Dot11wdi.h |
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
