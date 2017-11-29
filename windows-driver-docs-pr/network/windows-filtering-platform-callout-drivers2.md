@@ -29,6 +29,8 @@ This section discusses Windows Filtering Platform (WFP) callout drivers and incl
 -   [Porting Packet-Processing Drivers and Apps to WFP](porting-packet-processing-drivers-and-apps-to-wfp.md)
 -   [Developing IPsec-Compatible Callout Drivers](developing-ipsec-compatible-callout-drivers.md)
 -   [Calling Other Windows Filtering Platform Functions](calling-other-windows-filtering-platform-functions.md)
+-   [Windows Filtering Platform constants](windows-filtering-platform-constants.md)
+-   [Other Windows Filtering Platform functions](other-windows-filtering-platform-functions.md)
 
 For an overview of WFP, see [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/desktop/aa366510).
 

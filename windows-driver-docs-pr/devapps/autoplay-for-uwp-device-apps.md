@@ -53,7 +53,7 @@ When using device metadata with your app, AutoPlay supports these device types:
 ## <span id="Before_you_begin"></span><span id="before_you_begin"></span><span id="BEFORE_YOU_BEGIN"></span>Before you begin
 
 
--   **Make sure you have the Device Metadata Authoring Wizard**. You'll need it to enable AutoPlay. In this release, this wizard is included with Microsoft Visual Studio Professional 2013 and Microsoft Visual Studio Ultimate 2013. But if you have Microsoft Visual Studio Express 2013 for Windows, you need to download the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209) to get the wizard.
+-   **Make sure you have the Device Metadata Authoring Wizard**. You'll need it to enable AutoPlay. In this release, this wizard is included with Microsoft Visual Studio Professional and Microsoft Visual Studio Ultimate. But if you have Microsoft Visual Studio Express for Windows, you need to download the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209) to get the wizard.
 
 -   **Associate your app with the Microsoft Store**. You'll need your app's package information to enable AutoPlay. For more info, see the *Associate your app with the Microsoft Store* section in [Step 1: Create a UWP device app](step-1--create-a-uwp-device-app.md).
 
@@ -92,7 +92,7 @@ To handle an AutoPlay activation in your app, you need to register for a `window
 
 To register your app as an AutoPlay handler for your device, you need to specify the experience ID associated with your UWP device app and the AutoPlay **Verb** and **ActionDisplayName** that will be used to activate your app.
 
-1.  Open your app's project in Microsoft Visual Studio 2013.
+1.  Open your app's project in Microsoft Visual Studio.
 2.  In **Solution Explorer**, right-click the **Package.appxmanifest** file and select **View Code**. This will display the app package manifest in the XML (Text) Editor.
 3.  In the `Application` element, below the `VisualElements` element, paste the following `Extensions` element into your package manifest file.
     ```XML

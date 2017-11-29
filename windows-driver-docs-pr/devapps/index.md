@@ -46,7 +46,7 @@ If you're looking for info about UWP mobile broadband apps, see [Mobile Broadban
 </tr>
 <tr class="odd">
 <td align="left"><p>[Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md)</p></td>
-<td align="left"><p>This step-by-step guide describes in detail how to build a UWP device app with Microsoft Visual Studio 2013 and the Device Metadata Authoring Wizard.</p></td>
+<td align="left"><p>This step-by-step guide describes in detail how to build a UWP device app with Microsoft Visual Studio and the Device Metadata Authoring Wizard.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[AutoPlay for UWP device apps](autoplay-for-uwp-device-apps.md)</p></td>
