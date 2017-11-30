@@ -42,7 +42,7 @@ Additionally, any INF (component or not) matching on a software component device
 * Does not require a function driver service.
 * Can be uninstalled by the user independently from the parent device.
 
-You can find an [example of an component INF](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_component/osrfx2_DCHU_component/osrfx2_DCHU_component.inx) in the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).
+You can find an example of a component INF in the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).
 
 ## Accessing a device from a software component
 

@@ -2,6 +2,11 @@
 title: Storage Kernel Debugger Extensions
 description: The storage kernel debugger extensions (storagekd) are used for debugging the storage drivers on Windows 8 and above operating system (OS) targets.
 ms.assetid: 8EF83BC8-6ABB-496C-98A6-EF0298D78F76
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storage Kernel Debugger Extensions

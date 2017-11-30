@@ -2,6 +2,11 @@
 title: Stop on unhandled user-mode exception
 description: Stop on unhandled user-mode exception
 ms.assetid: BD8E1000-29B0-425D-BEA1-D4FD55CF0E4F
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # <span id="debugger.stop_on_unhandled_user-mode_exception"></span>Stop on unhandled user-mode exception

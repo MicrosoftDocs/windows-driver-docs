@@ -2,6 +2,11 @@
 title: Example 5 Clearing a Flag
 description: Example 5 Clearing a Flag
 ms.assetid: 63c8bae9-ae6e-4d82-9389-ec36554635ab
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 5: Clearing a Flag

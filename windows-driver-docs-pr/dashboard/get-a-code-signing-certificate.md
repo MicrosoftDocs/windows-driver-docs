@@ -116,6 +116,8 @@ If you don’t have an approved standard or EV code signing certificate, you can
 
 -   [Buy a GlobalSign standard code signing cert](http://go.microsoft.com/fwlink/p/?LinkId=620887)
 
+-   [Buy a Comodo standard code signing cert](https://go.microsoft.com/fwlink/?linkid=863206)
+
 -   [Buy a DigiCert standard code signing certificate](http://go.microsoft.com/fwlink/?LinkId=393249)
 
     1.  On the **DigiCert Code Signing Certificates for Sysdevs** page, click **Start**.
@@ -135,6 +137,8 @@ If you don’t have an approved standard or EV code signing certificate, you can
 -   [Buy an Entrust EV code signing cert](https://go.microsoft.com/fwlink/?linkid=843068)
 
 -   [Buy a GlobalSign EV code signing certificate](http://go.microsoft.com/fwlink/p/?LinkId=620888)
+
+-   [Buy a Comodo EV code signing certificate](https://go.microsoft.com/fwlink/?linkid=863208)
 
 -   [Buy a DigiCert EV code signing certificate](http://go.microsoft.com/fwlink/?LinkId=393249)
 
