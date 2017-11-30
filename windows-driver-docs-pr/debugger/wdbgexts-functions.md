@@ -3,6 +3,11 @@ title: WdbgExts Functions
 description: WdbgExts Functions
 ms.assetid: 1b070b0c-575d-4104-af66-e0a2c2f2c1b6
 keywords: ["WdbgExts extensions, functions"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WdbgExts Functions

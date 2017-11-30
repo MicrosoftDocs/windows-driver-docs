@@ -9,6 +9,11 @@ api_name:
 - DEBUG_REQUEST_READ_CAPTURED_EVENT_CODE_STREAM
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DEBUG\_REQUEST\_READ\_CAPTURED\_EVENT\_CODE\_STREAM

@@ -9,6 +9,11 @@ api_name:
 - DEBUG_REQUEST_GET_CAPTURED_EVENT_CODE_OFFSET
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DEBUG\_REQUEST\_GET\_CAPTURED\_EVENT\_CODE\_OFFSET

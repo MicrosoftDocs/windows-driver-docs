@@ -9,6 +9,11 @@ api_name:
 - DEBUG_REQUEST_EXT_TYPED_DATA_ANSI
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI

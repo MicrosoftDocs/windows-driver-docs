@@ -2,6 +2,11 @@
 title: Metadata Files for Analysis Extension Plug-ins
 description: When you write an analysis extension plug-in, you also write a metadata file that describes the situations for which you want your plug-in to be called.
 ms.assetid: 13B9B7A5-1D68-49A3-825B-454AC070FCC1
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Metadata Files for Analysis Extension Plug-ins

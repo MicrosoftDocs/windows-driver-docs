@@ -42,8 +42,7 @@ In this video, you'll learn about UMDF debugging basics, including preparing you
 
 ## Examining the object hierarchy with debugger extensions
 
-
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/da033b03-b965-40cc-9697-ecb97430006a/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no">UMDF debugging video part 2a</iframe>
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/da033b03-b965-40cc-9697-ecb97430006a]
 
 In this part, you'll learn how to start debugging a UMDF driver. The video describes how to set up the OSR USB-FX2 driver sample and application sample so that three instances of the app send read, write, and device I/O control requests to the driver. You'll see how the requests flow first to the reflector, and then to the user mode driver host process. This video introduces the WDF object hierarchy for the FX2 driver sample, and discusses how to use the following UMDF debugger extensions to traverse the UMDF object hierarchy:
 
@@ -56,36 +55,31 @@ For UMDF 2, see [Summary of Debugger Extensions in Wdfkd.dll](debugger-extension
 
 ## Accessing framework USB objects
 
-
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/f22577ab-1da0-47ae-b12b-ed3d586cde9e/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no">UMDF debugging video part 2b</iframe>
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/f22577ab-1da0-47ae-b12b-ed3d586cde9e]
 
 Here, you'll learn how to examine the driver's framework USB objects. To do so, you'll navigate through the WDF object hiearchy to reach the USB pipe objects, USB interface objects, and USB I/O target objects.
 
 ##  I/O requests and queues
 
-
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/48165551-a75d-4855-b0c8-3e55826f4f5e/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no">UMDF debugging video part 2c</iframe>
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/48165551-a75d-4855-b0c8-3e55826f4f5e]
 
 In this video, you'll use the debugger to examine the driver's framework I/O request objects and framework queue objects.
 
 ## File objects and callback objects
 
-
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/39c05ac7-3e20-4b8d-bcc9-37f450ddf507/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no">UMDF debugging video part 2d</iframe>
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/39c05ac7-3e20-4b8d-bcc9-37f450ddf507]
 
 In this part, you'll learn how to examine framework file objects as well as the driver's callback objects.
 
 ##  Tracking I/O requests sent by a UMDF driver
 
-
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/8d1aa0a2-4360-4d68-9b09-310851a6087f/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no">UMDF debugging video part 3a</iframe>
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/8d1aa0a2-4360-4d68-9b09-310851a6087f]
 
 Here, you'll learn how to use the App Verifier tool to help you debug. You'll also learn how to debug driver initialization code, and how to track requests sent by a UMDF driver to the kernel stack below.
 
 ##  Driver does not complete an I/O request
 
-
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/ddf4eff2-73f9-44a9-8602-adb08fc48373/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no">UMDF debugging video part 3b</iframe>
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/ddf4eff2-73f9-44a9-8602-adb08fc48373]
 
 In the final video, you'll investigate a case when a UMDF driver does not complete a request it received, and you'll learn about the framework's object tracking and reference tracking capabilities.
 

@@ -26,9 +26,7 @@ For an introduction to Debugging Tools for Windows, see [Windows Debugging](http
 
 This video demonstrates how to use the WinDbg debugging engine directly in Visual Studio instead of running WinDbg separately.
 
-<iframe 
-src="https://hubs-video.ssl.catalog.video.msn.com/embed/57464a96-8900-4194-b806-813eb1dd6ac6/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe> 
- 
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/57464a96-8900-4194-b806-813eb1dd6ac6]
 
 
 
