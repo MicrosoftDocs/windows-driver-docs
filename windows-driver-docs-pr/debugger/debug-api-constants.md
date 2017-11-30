@@ -11,23 +11,23 @@ ms.technology: windows-devices
 
 # Debug API Constants
 
-[DBG_DUMP_XXX](debugger/dbg-dump-xxx.md)
+[DBG_DUMP_XXX](dbg-dump-xxx.md)
 
-[DBG_DUMP_FIELD_XXX](debugger/dbg-dump-field-xxx.md)
+[DBG_DUMP_FIELD_XXX](dbg-dump-field-xxx.md)
 
-[DEBUG_FILTER_XXX](debugger/debug-filter-xxx.md)
+[DEBUG_FILTER_XXX](debug-filter-xxx.md)
 
-[DEBUG_OUTCTL_XXX](debugger/debug-outctl-xxx.md)
+[DEBUG_OUTCTL_XXX](debug-outctl-xxx.md)
 
-[DEBUG_OUTPUT_XXX](debugger/debug-output-xxx.md)
+[DEBUG_OUTPUT_XXX](debug-output-xxx.md)
 
-[DEBUG_PROCESS_XXX](debugger/debug-process-xxx.md)
+[DEBUG_PROCESS_XXX](debug-process-xxx.md)
 
-[DEBUG_STATUS_XXX](debugger/debug-status-xxx.md)
+[DEBUG_STATUS_XXX](debug-status-xxx.md)
 
-[DEBUG_SYMBOL_XXX](debugger/debug-symbol-xxx.md)
+[DEBUG_SYMBOL_XXX](debug-symbol-xxx.md)
 
-[DEBUG_TYPEOPTS_XXX](debugger/debug-typeopts-xxx.md)
+[DEBUG_TYPEOPTS_XXX](debug-typeopts-xxx.md)
 
  
 
