@@ -1697,6 +1697,7 @@
 ###### [Extensible Access Point Indications](extensible-access-point-indications.md)
 ###### [Extensible Station Indications](extensible-station-indications.md)
 ###### [IHV-Specific Indications](ihv-specific-indications.md)
+#### [DOT11_ASSOC_STATUS status codes](dot11-assoc-status-status-codes.md)
 #### [Native 802.11 OIDs](native-802-11-oids.md)
 ##### [Native 802.11 OID terminology](native-802-11-oid-terminology.md)
 ##### [Native 802.11 Extensible AP OIDs](native-802-11-extensible-ap-oids.md)
