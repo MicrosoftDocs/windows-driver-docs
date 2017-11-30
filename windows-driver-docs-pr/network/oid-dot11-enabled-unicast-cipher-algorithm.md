@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_ENABLED\_UNICAST\_CIPHER\_ALGORITHM
+title: OID_DOT11_ENABLED_UNICAST_CIPHER_ALGORITHM
 author: windows-driver-content
-description: OID\_DOT11\_ENABLED\_UNICAST\_CIPHER\_ALGORITHM
+description: OID_DOT11_ENABLED_UNICAST_CIPHER_ALGORITHM
 ms.assetid: e8ab5623-2021-499c-a324-6b2b47905e88
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

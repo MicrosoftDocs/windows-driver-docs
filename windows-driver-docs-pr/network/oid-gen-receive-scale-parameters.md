@@ -1,7 +1,7 @@
 ---
-title: OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS
+title: OID_GEN_RECEIVE_SCALE_PARAMETERS
 author: windows-driver-content
-description: As a query, NDIS and overlying drivers can use the OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS OID to query the current receive side scaling (RSS) parameters of a NIC.
+description: As a query, NDIS and overlying drivers can use the OID_GEN_RECEIVE_SCALE_PARAMETERS OID to query the current receive side scaling (RSS) parameters of a NIC.
 ms.assetid: a54190f7-0d2e-4f85-84c2-05fc9ec4994a
 ms.author: windowsdriverdev
 ms.date: 08/08/2017
@@ -18,6 +18,9 @@ keywords:
 As a query, NDIS and overlying drivers can use the OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS OID to query the current receive side scaling (RSS) parameters of a NIC. NDIS returns an [**NDIS\_RECEIVE\_SCALE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567228) structure that defines the current RSS parameters.
 
 As a set, NDIS and overlying drivers use the OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS OID to set the current RSS parameters of a NIC. The miniport driver receives an NDIS\_RECEIVE\_SCALE\_PARAMETERS structure that defines the RSS parameters.
+
+> [!NOTE]
+> In RSSv2, this OID is only used to query current RSS parameters of a given scaling entity. For miniport drivers that support RSSv2, see [OID_GEN_RECEIVE_SCALE_PARAMETERS_V2](oid-gen-receive-scale-parameters-v2.md) for setting RSS parameters other than the indirection table.
 
 Remarks
 -------

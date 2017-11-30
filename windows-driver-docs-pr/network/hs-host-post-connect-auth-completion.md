@@ -1,7 +1,7 @@
 ---
-title: HS\_HOST\_POST\_CONNECT\_AUTH\_COMPLETION function
+title: HS_HOST_POST_CONNECT_AUTH_COMPLETION function
 author: windows-driver-content
-description: The HS\_HOST\_POST\_CONNECT\_AUTH\_COMPLETION function indicates the success or failure of an authentication attempt following a Wi-Fi connection setup at layer 2.
+description: The HS_HOST_POST_CONNECT_AUTH_COMPLETION function indicates the success or failure of an authentication attempt following a Wi-Fi connection setup at layer 2.
 ms.assetid: 2c69802b-968b-400c-b02c-c2d39fa51d5a
 keywords: 
 - typedef DWORD (WINAPI HS_HOST_POST_CONNECT_AUTH_COMPLETION) function Network Drivers Starting with Windows Vista
@@ -13,6 +13,8 @@ ms.technology: windows-devices
 ---
 
 # HS\_HOST\_POST\_CONNECT\_AUTH\_COMPLETION function
+
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_HOST\_POST\_CONNECT\_AUTH\_COMPLETION** function indicates the success or failure of an authentication attempt following a Wi-Fi connection setup at layer 2.

@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_SAFE\_MODE\_HT\_ENABLED
+title: OID_DOT11_SAFE_MODE_HT_ENABLED
 author: windows-driver-content
-description: When set, the OID\_DOT11\_SAFE\_MODE\_HT\_ENABLED object identifier (OID) requests that the miniport driver enable 802.11n safe mode on the 802.11 station by setting the Boolean value msDot11SafeModeHtEnabled to TRUE.
+description: When set, the OID_DOT11_SAFE_MODE_HT_ENABLED object identifier (OID) requests that the miniport driver enable 802.11n safe mode on the 802.11 station by setting the Boolean value msDot11SafeModeHtEnabled to TRUE.
 ms.assetid: 55E517EA-046B-43FF-9FA1-52A89AC8255B
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

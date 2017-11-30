@@ -55,10 +55,10 @@ Identifies the file name of the OLE control to be registered.
 <a href="" id="registration-flags"></a>*registration-flags*  
 Indicates the registration operations to perform on the OLE control. One or both of the following flags must be specified.
 
-<a href="" id="0x00000001--flg-regsvr-dllregister-"></a>**0x00000001** (FLG\_REGSVR\_DLLREGISTER)  
+<a href="" id="0x00000001--flg-regsvr-dllregister-"></a>**0x00000001** (FLG_REGSVR_DLLREGISTER)  
 Call the OLE control's **DllRegisterServer** function (described in the Windows SDK documentation).
 
-<a href="" id="0x00000002--flg-regsvr-dllinstall--"></a>**0x00000002** (FLG\_REGSVR\_DLLINSTALL)   
+<a href="" id="0x00000002--flg-regsvr-dllinstall--"></a>**0x00000002** (FLG_REGSVR_DLLINSTALL)   
 Call the OLE control's **DllInstall** function (described in the Windows SDK documentation).
 
 <a href="" id="timeout"></a>*timeout*  

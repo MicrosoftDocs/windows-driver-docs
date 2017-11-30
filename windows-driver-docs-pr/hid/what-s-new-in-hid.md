@@ -19,14 +19,13 @@ This topic summarizes the new features and improvements for Human Interface Devi
 ## HID WinRT API
 
 
-The [Windows.Devices.HumanInterfaceDevice](https://msdn.microsoft.com/library/windows/apps/xaml/dn263140) API lets a Windows Store app access devices that support the Human Interface Device (HID) protocol.
+The [Windows.Devices.HumanInterfaceDevice](https://msdn.microsoft.com/library/windows/apps/xaml/dn263140) API lets a UWP app access devices that support the Human Interface Device (HID) protocol.
 
 The following short video describes an end-to-end sample solution for HID that's available for download on the MSDN samples gallery. (This solution includes a sample app created using the new HID WinRT API.)
 
-<iframe src="https://hubs-video.ssl.catalog.video.msn.com/embed/2d4da9fc-c2ea-4933-949d-eb0cff3c9c4e/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no">End to end solution for HID</iframe>
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/2d4da9fc-c2ea-4933-949d-eb0cff3c9c4e]
 
 ## Design Guide
-
 
 The [Design Guide](index.md) has been updated to include some new topics. And also, existing content has been revised where relevant, to show improved HID support in Windows 10. Here are some of the new, and updated topics:
 

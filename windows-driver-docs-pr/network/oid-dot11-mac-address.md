@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_MAC\_ADDRESS
+title: OID_DOT11_MAC_ADDRESS
 author: windows-driver-content
-description: OID\_DOT11\_MAC\_ADDRESS
+description: OID_DOT11_MAC_ADDRESS
 ms.assetid: ebc9ec2b-7783-44e6-9a48-9013df8895b0
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

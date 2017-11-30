@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_WFD\_DISCOVER\_REQUEST
+title: OID_DOT11_WFD_DISCOVER_REQUEST
 author: windows-driver-content
-description: When set, the OID\_DOT11\_WFD\_DISCOVER\_REQUEST object identifier (OID) requests that the miniport driver perform a device discovery operation and return the list of discovered devices and networks.
+description: When set, the OID_DOT11_WFD_DISCOVER_REQUEST object identifier (OID) requests that the miniport driver perform a device discovery operation and return the list of discovered devices and networks.
 ms.assetid: 87EB02C3-09CA-4F7E-9523-35096727B16B
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

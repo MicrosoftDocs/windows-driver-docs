@@ -2,6 +2,11 @@
 title: Native Debugger Objects in JavaScript Extensions
 description: Native debugger objects represent various constructs and behaviors of the debugger environment. The objects can be passed into (or acquired in) JavaScript extensions.
 ms.assetid: A8E12564-D083-43A7-920E-22C4D627FEE8
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native Debugger Objects in JavaScript Extensions
@@ -493,12 +498,12 @@ The following properties (and methods) are projected onto native objects which e
 
 If the object is a pointer, the following properties (and methods) are projected onto the pointer which enters JavaScript:
 
-| Property Name                                                                                   | Signature      | Description                                                                    |
-|-------------------------------------------------------------------------------------------------|----------------|--------------------------------------------------------------------------------|
-| add                                                                                             | .add(value)    | Performs pointer math addition between the pointer and the specified value     |
-| address Property Returns the address of the pointer as a 64-bit ordinal object (a library type) | Property       | Returns the address of the pointer as a 64-bit ordinal object (a library type) |
-| dereference                                                                                     | .dereference() | Dereferences the pointer and returns the underlying object                     |
-| isNull                                                                                          | Property       | Returns whether or not the pointer value is nullptr (0)                        |
+| Property Name | Signature      | Description                                                                    |
+|---------------|----------------|--------------------------------------------------------------------------------|
+| add           | .add(value)    | Performs pointer math addition between the pointer and the specified value     |
+| address       | Property       | Returns the address of the pointer as a 64-bit ordinal object (a library type) |
+| dereference   | .dereference() | Dereferences the pointer and returns the underlying object                     |
+| isNull        | Property       | Returns whether or not the pointer value is nullptr (0)                        |
 
  
 
@@ -583,7 +588,7 @@ As mentioned, a JavaScript script can get access to native objects by having the
 <p>getModuleSymbol(moduleName, symbolName, [typeName], [contextInheritor])</p></td>
 <td align="left"><p>Returns an object for a global symbol within a particular module. The module name and symbol name are strings.</p>
 <p>If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger's current context. A JavaScript extension which is not a one-off test script should always supply an explicit context.</p>
-<p>If the optional typeName argument is supplied, the symbol will be assumed to be of the passed type and the type indicated in symbol(s) will be ignored. Note that any caller which expects to operate on public symbols for a module should always supply an explicit type name.</p></td>
+<p>If the optional <em>typeName</em> argument is supplied, the symbol will be assumed to be of the passed type and the type indicated in symbol(s) will be ignored. Note that any caller which expects to operate on public symbols for a module should always supply an explicit type name.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>host.createPointerObject</p></td>
@@ -826,14 +831,14 @@ The memory sub-namespace of the host object contains the following.
 <td align="left"><p>readString(location, [contextInheritor])</p>
 <p>readString(location, [length], [contextInheritor])</p></td>
 <td align="left">2</td>
-<td align="left">This reads a narrow (current code page) string from the address space of a debug target, converts it to UTF-16, and returns the result as a JavaScript string. It may throw an exception if the memory could not be read. The supplied location can be an address (a 64-bit value), a location object, or a native char*. If the optional <em>contextInheritor</em> argument is supplied, memory will be read in the context (e.g.: address space and debug target) indicated by the argument; otherwise, it will be read from the debugger's current context. If the optional <em>length</em> argument is supplied, the read string will be of the specified length.</td>
+<td align="left">This reads a narrow (current code page) string from the address space of a debug target, converts it to UTF-16, and returns the result as a JavaScript string. It may throw an exception if the memory could not be read. The supplied location can be an address (a 64-bit value), a location object, or a native char\*. If the optional <em>contextInheritor</em> argument is supplied, memory will be read in the context (e.g.: address space and debug target) indicated by the argument; otherwise, it will be read from the debugger's current context. If the optional <em>length</em> argument is supplied, the read string will be of the specified length.</td>
 </tr>
 <tr class="odd">
 <td align="left">readWideString</td>
 <td align="left"><p>readWideString(location, [contextInheritor])</p>
 <p>readWideString(location, [length], [contextInheritor])</p></td>
 <td align="left">2</td>
-<td align="left">This reads a wide(UTF-16) string from the address space of a debug target and returns the result as a JavaScript string. It may throw an exception if the memory could not be read. The supplied location can be an address (a 64-bit value), a location object, or a native wchar_t*. If the optional <em>contextInheritor</em> argument is supplied, memory will be read in the context (e.g.: address space and debug target) indicated by the argument; otherwise, it will be read from the debugger's current context. If the optional <em>length</em> argument is supplied, the read string will be of the specified length.</td>
+<td align="left">This reads a wide(UTF-16) string from the address space of a debug target and returns the result as a JavaScript string. It may throw an exception if the memory could not be read. The supplied location can be an address (a 64-bit value), a location object, or a native wchar_t\*. If the optional <em>contextInheritor</em> argument is supplied, memory will be read in the context (e.g.: address space and debug target) indicated by the argument; otherwise, it will be read from the debugger's current context. If the optional <em>length</em> argument is supplied, the read string will be of the specified length.</td>
 </tr>
 </tbody>
 </table>

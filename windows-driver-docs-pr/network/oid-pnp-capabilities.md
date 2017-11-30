@@ -1,7 +1,7 @@
 ---
-title: OID\_PNP\_CAPABILITIES
+title: OID_PNP_CAPABILITIES
 author: windows-driver-content
-description: The OID\_PNP\_CAPABILITIES OID requests a miniport driver to return the wake-up capabilities of its network adapter or requests an intermediate driver to return the intermediate driver's wake-up capabilities.
+description: The OID_PNP_CAPABILITIES OID requests a miniport driver to return the wake-up capabilities of its network adapter or requests an intermediate driver to return the intermediate driver's wake-up capabilities.
 ms.assetid: f2e3a867-d7d2-4d09-b84b-e8f8610b8535
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

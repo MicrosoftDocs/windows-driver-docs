@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_DTIM\_PERIOD
+title: OID_DOT11_DTIM_PERIOD
 author: windows-driver-content
-description: OID\_DOT11\_DTIM\_PERIOD
+description: OID_DOT11_DTIM_PERIOD
 ms.assetid: 32690679-e806-4644-b163-7e7b6c494e1d
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

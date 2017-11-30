@@ -1,7 +1,7 @@
 ---
-title: OID\_GEN\_VENDOR\_ID
+title: OID_GEN_VENDOR_ID
 author: windows-driver-content
-description: As a query, the OID\_GEN\_VENDOR\_ID OID specifies a three-byte IEEE-registered vendor code, followed by a single byte that the vendor assigns to identify a particular NIC.
+description: As a query, the OID_GEN_VENDOR_ID OID specifies a three-byte IEEE-registered vendor code, followed by a single byte that the vendor assigns to identify a particular NIC.
 ms.assetid: dce0a2e4-5d34-417f-9764-85644fe2ce46
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

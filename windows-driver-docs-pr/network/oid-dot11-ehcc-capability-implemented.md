@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_EHCC\_CAPABILITY\_IMPLEMENTED
+title: OID_DOT11_EHCC_CAPABILITY_IMPLEMENTED
 author: windows-driver-content
-description: OID\_DOT11\_EHCC\_CAPABILITY\_IMPLEMENTED
+description: OID_DOT11_EHCC_CAPABILITY_IMPLEMENTED
 ms.assetid: 59adb057-2b9e-4b0f-9949-ff94d84a6ae4
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

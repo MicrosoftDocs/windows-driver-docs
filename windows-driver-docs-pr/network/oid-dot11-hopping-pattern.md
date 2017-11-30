@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_HOPPING\_PATTERN
+title: OID_DOT11_HOPPING_PATTERN
 author: windows-driver-content
-description: When queried, the OID\_DOT11\_HOPPING\_PATTERN object identifier (OID) requests that the miniport driver return the list of hopping patterns currently used by the current PHY type on the 802.11 station.
+description: When queried, the OID_DOT11_HOPPING_PATTERN object identifier (OID) requests that the miniport driver return the list of hopping patterns currently used by the current PHY type on the 802.11 station.
 ms.assetid: 6bf0c5e9-f2d6-48ab-9f2e-a4fd742f20f7
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

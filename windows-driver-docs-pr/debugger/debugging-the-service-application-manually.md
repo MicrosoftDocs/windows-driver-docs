@@ -2,6 +2,11 @@
 title: Debugging the Service Application Manually
 description: Debugging the Service Application Manually
 ms.assetid: 9be3976f-dd56-42f2-ac85-1c5a1f87a4ee
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging the Service Application Manually

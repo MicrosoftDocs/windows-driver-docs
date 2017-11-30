@@ -1,7 +1,7 @@
 ---
-title: IRP\_MJ\_FILE\_SYSTEM\_CONTROL
+title: IRP_MJ_FILE_SYSTEM_CONTROL
 author: windows-driver-content
-description: Only file system drivers process IRP\_MJ\_FILE\_SYSTEM\_CONTROL requests.
+description: Only file system drivers process IRP_MJ_FILE_SYSTEM_CONTROL requests.
 ms.author: windowsdriverdev
 ms.date: 08/12/2017
 ms.topic: article

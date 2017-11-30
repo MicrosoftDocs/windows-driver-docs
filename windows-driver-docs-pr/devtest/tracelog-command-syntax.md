@@ -386,10 +386,10 @@ Specifies a Pid filter with *n* Pids (maximum 8 allowed). This option is availab
 Enables tracing of all page faults. This parameter is valid only for an NT Kernel Logger trace session.
 
 <span id="___________________-PkgIdFilter____Package_Full_Name____Package_Full_Name..._"></span><span id="___________________-pkgidfilter____package_full_name____package_full_name..._"></span><span id="___________________-PKGIDFILTER____PACKAGE_FULL_NAME____PACKAGE_FULL_NAME..._"></span> **-PkgIdFilter** *Package Full Name* \[ **;***Package Full Name*...\]  
-Specifies a package ID filter. You can specify a list of package files. Separate the names of the files using semi-colons. This option is available for Windows Store Apps starting in Windows 8.1.
+Specifies a package ID filter. You can specify a list of package files. Separate the names of the files using semi-colons. This option is available for UWP apps starting in Windows 8.1.
 
 <span id="___-PkgAppIdFilter_____PRAID____PRAID..._"></span><span id="___-pkgappidfilter_____praid____praid..._"></span><span id="___-PKGAPPIDFILTER_____PRAID____PRAID..._"></span> **-PkgAppIdFilter** *PRAID* \[ **;***PRAID*...\]  
-Specifies a package-relative app identifier (PRAID) filter. The PRAID is the unique identifier of the application within the package. You can specify more than one *PRAID*. Separate the ids using semi-colons. This option is available for Windows Store Apps starting in Windows 8.1.
+Specifies a package-relative app identifier (PRAID) filter. The PRAID is the unique identifier of the application within the package. You can specify more than one *PRAID*. Separate the ids using semi-colons. This option is available for UWP apps starting in Windows 8.1.
 
 <span id="-Pmc_Ctrs_Events"></span><span id="-pmc_ctrs_events"></span><span id="-PMC_CTRS_EVENTS"></span>**-Pmc** *Ctrs***:***Events*  
 Configures the performance monitor counter (PMC) sampling on events. This option is available starting in Windows 8.

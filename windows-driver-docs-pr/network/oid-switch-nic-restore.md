@@ -1,7 +1,7 @@
 ---
-title: OID\_SWITCH\_NIC\_RESTORE
+title: OID_SWITCH_NIC_RESTORE
 author: windows-driver-content
-description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID\_SWITCH\_NIC\_RESTORE to notify the extensible switch extension about run-time data that can be restored for an extensible switch port and its network adapter connection.
+description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_NIC_RESTORE to notify the extensible switch extension about run-time data that can be restored for an extensible switch port and its network adapter connection.
 ms.assetid: 252FB1D2-932F-4FB8-83D6-2690171D746D
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

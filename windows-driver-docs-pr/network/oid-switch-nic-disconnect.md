@@ -1,7 +1,7 @@
 ---
-title: OID\_SWITCH\_NIC\_DISCONNECT
+title: OID_SWITCH_NIC_DISCONNECT
 author: windows-driver-content
-description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID\_SWITCH\_NIC\_DISCONNECT to notify underlying extensible switch extensions that a connection between an extensible switch port and a network adapter is being torn down. After the connection is completely torn down, the protocol edge of the extensible switch will issue an OID set request of OID\_SWITCH\_NIC\_DELETE.
+description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_NIC_DISCONNECT to notify underlying extensible switch extensions that a connection between an extensible switch port and a network adapter is being torn down. After the connection is completely torn down, the protocol edge of the extensible switch will issue an OID set request of OID_SWITCH_NIC_DELETE.
 ms.assetid: 367081A7-F259-4132-B857-C956C0F2829C
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

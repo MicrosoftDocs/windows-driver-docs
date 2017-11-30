@@ -1,7 +1,7 @@
 ---
-title: NDIS\_ROUTING\_DOMAIN\_ENTRY\_GET\_NEXT macro
+title: NDIS_ROUTING_DOMAIN_ENTRY_GET_NEXT macro
 author: windows-driver-content
-description: The NDIS\_ROUTING\_DOMAIN\_ENTRY\_GET\_NEXT macro is used to access the next NDIS\_ROUTING\_DOMAIN\_ENTRY element that follows an NDIS\_ROUTING\_DOMAIN\_ENTRY structure in the array that is specified by an NDIS\_ISOLATION\_PARAMETERS structure.
+description: The NDIS_ROUTING_DOMAIN_ENTRY_GET_NEXT macro is used to access the next NDIS_ROUTING_DOMAIN_ENTRY element that follows an NDIS_ROUTING_DOMAIN_ENTRY structure in the array that is specified by an NDIS_ISOLATION_PARAMETERS structure.
 ms.assetid: 134A6FBD-24BF-4401-9226-6706EE6D7CF2
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

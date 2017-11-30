@@ -13,7 +13,7 @@ If you want to include user-mode software for use with a device on Windows 10, y
     
 |Method|Scenario|
 |---|---|
-|[Hardware support apps (HSA)](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md) | Device add-on software packaged as a UWP app that is delivered and serviced from the Windows Store.  Recommended approach. |
+|[Hardware support apps (HSA)](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md) | Device add-on software packaged as a UWP app that is delivered and serviced from the Microsoft Store.  Recommended approach. |
 |Software components|Device add-on software is an MSI or EXE binary, a Win32 service, or software installed using AddReg and CopyFiles.  Referenced binary only runs on desktop editions (Home, Pro, and Enterprise).  The referenced binary will not run on Windows 10S.|
 
 A software component is a separate, standalone driver package that can install one or more software modules.  The installed software enhances the value of the device, but is not necessary for basic device functionality and does not require an associated function driver service.  
@@ -42,7 +42,7 @@ Additionally, any INF (component or not) matching on a software component device
 * Does not require a function driver service.
 * Can be uninstalled by the user independently from the parent device.
 
-You can find an [example of an component INF](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_component/osrfx2_DCHU_component/osrfx2_DCHU_component.inx) in the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).
+You can find an example of a component INF in the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).
 
 ## Accessing a device from a software component
 

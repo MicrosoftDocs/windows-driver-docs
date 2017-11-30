@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_DESIRED\_BSS\_TYPE
+title: OID_DOT11_DESIRED_BSS_TYPE
 author: windows-driver-content
-description: OID\_DOT11\_DESIRED\_BSS\_TYPE
+description: OID_DOT11_DESIRED_BSS_TYPE
 ms.assetid: 8e90f503-5aeb-49b9-b368-4fdc8f0cf496
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

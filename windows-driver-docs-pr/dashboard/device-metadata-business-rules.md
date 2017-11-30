@@ -77,7 +77,7 @@ Different types of device metadata packages must follow different rules. Additio
 <td><p>Devices and Printers Folder</p></td>
 <td><ul>
 <li><p>All devices</p></li>
-<li><p>Devices that have a Windows Store device app</p></li>
+<li><p>Devices that have a UWP device app</p></li>
 <li><p>Devices that have a privileged app</p></li>
 </ul></td>
 <td><p>The device must either use only in-box drivers that do not have an associated Windows® logo submission, or custom drivers that have Windows logo submissions that are bound to the device experience.</p></td>
@@ -174,12 +174,12 @@ To submit a mobile broadband metadata package, see [Submit a mobile broadband de
 
 To submit a multiple-locale metadata package, see [Submit a Multiple-locale device manifest package](https://msdn.microsoft.com/library/windows/hardware/hh801889.aspx).
 
-### <span id="Windows_Store_device_app_limits"></span><span id="windows_store_device_app_limits"></span><span id="WINDOWS_STORE_DEVICE_APP_LIMITS"></span>Windows Store device app limits
+### <span id="Windows_Store_device_app_limits"></span><span id="windows_store_device_app_limits"></span><span id="WINDOWS_STORE_DEVICE_APP_LIMITS"></span>UWP device app limits
 
-Device manufacturers are limited in the number of Windows Store apps that may be specified in device metadata for automatic installation and app privilege. For example, peripheral device manufacturers (IHVs) can submit up to one app that is configured for automatic installation and up to one app that is specified as a privileged app. An IHV can submit one app that meets both limitations or two apps, with each meeting just one of the limitations.
+Device manufacturers are limited in the number of UWP apps that may be specified in device metadata for automatic installation and app privilege. For example, peripheral device manufacturers (IHVs) can submit up to one app that is configured for automatic installation and up to one app that is specified as a privileged app. An IHV can submit one app that meets both limitations or two apps, with each meeting just one of the limitations.
 
 **Important**  
-There is no limit to the total number of Windows Store device apps that a device manufacturer can submit to the Windows Store; these limits apply only to a single device metadata package.
+There is no limit to the total number of UWP device apps that a device manufacturer can submit to the Microsoft Store; these limits apply only to a single device metadata package.
 
  
 

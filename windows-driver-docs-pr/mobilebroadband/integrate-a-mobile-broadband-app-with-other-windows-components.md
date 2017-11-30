@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 You can use Windows 8, Windows 8.1, and Windows 10 user interface (UI) surfaces to enhance the overall experience of your mobile broadband app.
 
-For additional user experience design guidelines for layout, navigation, commanding, animations, touch interaction, snapping and scaling, contracts and capabilities, tiles and notifications, UI controls, app roaming to the cloud, and fundamentals, see [Index of UX guidelines for Windows Store apps](https://msdn.microsoft.com/library/windows/apps/hh465424).
+For additional user experience design guidelines for layout, navigation, commanding, animations, touch interaction, snapping and scaling, contracts and capabilities, tiles and notifications, UI controls, app roaming to the cloud, and fundamentals, see [Index of UX guidelines for UWP apps](https://msdn.microsoft.com/library/windows/apps/hh465424).
 
 This topic contains the following sections:
 
@@ -108,7 +108,7 @@ The following examples show how some pages look when side by side with another a
 
 ![services page side by side with another app](images/mb-fig3-snappedview-servicespage.png)
 
-Make sure that your app is accessible through app views, including high-contrast mode and screen reader readiness. For more information about how to make your app accessible, see [Accessibility in Windows Store apps using JavaScript](https://msdn.microsoft.com/library/windows/apps/hh452681).
+Make sure that your app is accessible through app views, including high-contrast mode and screen reader readiness. For more information about how to make your app accessible, see [Accessibility in UWP apps using JavaScript](https://msdn.microsoft.com/library/windows/apps/hh452681).
 
 ## <span id="launchpts"></span><span id="LAUNCHPTS"></span>Launch points
 

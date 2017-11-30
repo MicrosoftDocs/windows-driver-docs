@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_RTS\_THRESHOLD
+title: OID_DOT11_RTS_THRESHOLD
 author: windows-driver-content
-description: OID\_DOT11\_RTS\_THRESHOLD
+description: OID_DOT11_RTS_THRESHOLD
 ms.assetid: e4049926-7a89-4c32-8789-784dafe76ca3
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

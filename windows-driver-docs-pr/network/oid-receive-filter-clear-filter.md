@@ -1,7 +1,7 @@
 ---
-title: OID\_RECEIVE\_FILTER\_CLEAR\_FILTER
+title: OID_RECEIVE_FILTER_CLEAR_FILTER
 author: windows-driver-content
-description: Overlying drivers issue OID set requests of OID\_RECEIVE\_FILTER\_CLEAR\_FILTER to clear a receive filter on a network adapter.
+description: Overlying drivers issue OID set requests of OID_RECEIVE_FILTER_CLEAR_FILTER to clear a receive filter on a network adapter.
 ms.assetid: 5e92a11a-468e-431d-b4e5-7b0da3847e8a
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

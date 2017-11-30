@@ -1,7 +1,7 @@
 ---
-title: SO\_RCVBUF
+title: SO_RCVBUF
 author: windows-driver-content
-description: SO\_RCVBUF
+description: SO_RCVBUF
 ms.assetid: 218b52ac-95ee-4047-ad75-76d6ae6ab14e
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

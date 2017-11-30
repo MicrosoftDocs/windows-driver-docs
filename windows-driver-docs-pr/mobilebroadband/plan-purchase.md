@@ -36,7 +36,7 @@ Design considerations include the following:
 
 -   **Choose the back-end interaction** For purchasing the plan, the user can use limited connectivity, alternate Internet connectivity (home, coffee shop), or control channel protocols (USSD).
 
-The following flow chart describes how plan purchase works with Windows and Windows Store apps:
+The following flow chart describes how plan purchase works with Windows and UWP apps:
 
 ![plan purchase flowchart](images/mb-fig1-planpurchaseflowchart.png)
 

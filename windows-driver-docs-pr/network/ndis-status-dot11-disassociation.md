@@ -1,7 +1,7 @@
 ---
-title: NDIS\_STATUS\_DOT11\_DISASSOCIATION
+title: NDIS_STATUS_DOT11_DISASSOCIATION
 author: windows-driver-content
-description: NDIS\_STATUS\_DOT11\_DISASSOCIATION
+description: NDIS_STATUS_DOT11_DISASSOCIATION
 ms.assetid: 5945f733-6b06-430a-863f-4ba82cff2dbe
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

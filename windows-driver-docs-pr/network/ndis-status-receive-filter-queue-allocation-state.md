@@ -1,7 +1,7 @@
 ---
-title: NDIS\_STATUS\_RECEIVE\_FILTER\_QUEUE\_ALLOCATION\_STATE
+title: NDIS_STATUS_RECEIVE_FILTER_QUEUE_ALLOCATION_STATE
 author: windows-driver-content
-description: The NDIS\_STATUS\_RECEIVE\_FILTER\_QUEUE\_ALLOCATION\_STATE status indicates to NDIS and overlying drivers that the allocation state of virtual machine (VM) queues on the network adapter has changed.
+description: The NDIS_STATUS_RECEIVE_FILTER_QUEUE_ALLOCATION_STATE status indicates to NDIS and overlying drivers that the allocation state of virtual machine (VM) queues on the network adapter has changed.
 ms.assetid: E8E62EE1-78F5-4DDB-9623-D31B807D753C
 ms.author: windowsdriverdev
 ms.date: 08/08/2017
@@ -56,7 +56,7 @@ Requirements
 </tr>
 <tr class="even">
 <td><p>Header</p></td>
-<td>Ntddndis.h (include Ndis.h)</td>
+<td>Ndis.h</td>
 </tr>
 </tbody>
 </table>

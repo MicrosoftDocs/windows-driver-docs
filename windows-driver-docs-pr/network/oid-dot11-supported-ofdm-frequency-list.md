@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_SUPPORTED\_OFDM\_FREQUENCY\_LIST
+title: OID_DOT11_SUPPORTED_OFDM_FREQUENCY_LIST
 author: windows-driver-content
-description: OID\_DOT11\_SUPPORTED\_OFDM\_FREQUENCY\_LIST
+description: OID_DOT11_SUPPORTED_OFDM_FREQUENCY_LIST
 ms.assetid: d6b22bc7-27c2-44cb-8f33-17e04596e0b1
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

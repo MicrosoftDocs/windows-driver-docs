@@ -2,6 +2,11 @@
 title: GPIO Extensions
 description: The General Purpose Input/Output (GPIO) extension commands display the software state of GPIO controllers.
 ms.assetid: 1703C402-D770-4D3F-AB70-F2D30712A5D9
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GPIO Extensions
@@ -48,32 +53,32 @@ To start debugging a GPIO issue, enter the [**!gpiokd.clientlist**](-gpiokd-clie
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>!gpiokd.help</strong>](-gpiokd-help.md)</p></td>
-<td align="left"><p>The [<strong>!gpiokd.help</strong>](-gpiokd-help.md) command displays help for the GPIO debugger extension commands.</p></td>
+<td align="left"><p><strong>[!gpiokd.help](-gpiokd-help.md)</strong></p></td>
+<td align="left"><p>The <strong>[!gpiokd.help](-gpiokd-help.md)</strong> command displays help for the GPIO debugger extension commands.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!gpiokd.bankinfo</strong>](-gpiokd-bankinfo.md)</p></td>
-<td align="left"><p>The [<strong>!gpiokd.bankinfo</strong>](-gpiokd-bankinfo.md) command displays information about a GPIO bank.</p></td>
+<td align="left"><p><strong>[!gpiokd.bankinfo](-gpiokd-bankinfo.md)</strong></p></td>
+<td align="left"><p>The <strong>[!gpiokd.bankinfo](-gpiokd-bankinfo.md)</strong> command displays information about a GPIO bank.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>!gpiokd.clientlist</strong>](-gpiokd-clientlist.md)</p></td>
-<td align="left"><p>The [<strong>!gpiokd.clientlist</strong>](-gpiokd-clientlist.md) command displays all registered GPIO controllers.</p></td>
+<td align="left"><p><strong>[!gpiokd.clientlist](-gpiokd-clientlist.md)</strong></p></td>
+<td align="left"><p>The <strong>[!gpiokd.clientlist](-gpiokd-clientlist.md)</strong> command displays all registered GPIO controllers.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!gpiokd.gpioext</strong>](-gpiokd-gpioext.md)</p></td>
-<td align="left"><p>The [<strong>!gpiokd.gpioext</strong>](-gpiokd-gpioext.md) command displays information about a GPIO controller.</p></td>
+<td align="left"><p><strong>[!gpiokd.gpioext](-gpiokd-gpioext.md)</strong></p></td>
+<td align="left"><p>The <strong>[!gpiokd.gpioext](-gpiokd-gpioext.md)</strong> command displays information about a GPIO controller.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>!gpiokd.pininfo</strong>](-gpiokd-pininfo.md)</p></td>
-<td align="left"><p>The [<strong>!gpiokd.pininfo</strong>](-gpiokd-pininfo.md) command displays information about a specified GPIO pin.</p></td>
+<td align="left"><p><strong>[!gpiokd.pininfo](-gpiokd-pininfo.md)</strong></p></td>
+<td align="left"><p>The <strong>[!gpiokd.pininfo](-gpiokd-pininfo.md)</strong> command displays information about a specified GPIO pin.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!gpiokd.pinisrvec</strong>](-gpiokd-pinisrvec.md)</p></td>
-<td align="left"><p>The [<strong>!gpiokd.pinisrvec</strong>](-gpiokd-pinisrvec.md) command displays Interrupt Service Routine (ISR) vector information for a specified pin.</p></td>
+<td align="left"><p><strong>[!gpiokd.pinisrvec](-gpiokd-pinisrvec.md)</strong></p></td>
+<td align="left"><p>The <strong>[!gpiokd.pinisrvec](-gpiokd-pinisrvec.md)</strong> command displays Interrupt Service Routine (ISR) vector information for a specified pin.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>!gpiokd.pintable</strong>](-gpiokd-pintable.md)</p></td>
-<td align="left"><p>The [<strong>!gpiokd.pintable</strong>](-gpiokd-pintable.md) command displays information about an array of GPIO pins.</p></td>
+<td align="left"><p><strong>[!gpiokd.pintable](-gpiokd-pintable.md)</strong></p></td>
+<td align="left"><p>The <strong>[!gpiokd.pintable](-gpiokd-pintable.md)</strong> command displays information about an array of GPIO pins.</p></td>
 </tr>
 </tbody>
 </table>

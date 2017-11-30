@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_RF\_USAGE
+title: OID_DOT11_RF_USAGE
 author: windows-driver-content
-description: OID\_DOT11\_RF\_USAGE
+description: OID_DOT11_RF_USAGE
 ms.assetid: 69fd1e3b-9e6c-4420-af7f-ef4b10f03546
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

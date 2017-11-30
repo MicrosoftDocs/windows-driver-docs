@@ -1,6 +1,6 @@
 ---
-title: Building Windows Store device apps
-description: Device manufacturers can create a Windows Store device app that serves as a companion to their device.
+title: Building UWP device apps
+description: Device manufacturers can create a UWP device app that serves as a companion to their device.
 ms.assetid: DB88876E-3C92-40E9-A2E2-19493F3357B5
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -9,15 +9,15 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Building Windows Store device apps
+# Building UWP device apps
 
 
-Device manufacturers can create a Windows Store device app that serves as a companion to their device. This topic describes the components of a Windows Store device app, the basic steps for building one, and the order in which you must submit your app and device metadata to the Windows Store dashboard and the Windows Dev Center hardware dashboard, respectively. For a more detailed look at each step, see [Build a Windows Store device app step-by-step](build-a-windows-store-device-app-step-by-step.md).
+Device manufacturers can create a UWP device app that serves as a companion to their device. This topic describes the components of a UWP device app, the basic steps for building one, and the order in which you must submit your app and device metadata to the Microsoft Store dashboard and the Windows Dev Center hardware dashboard, respectively. For a more detailed look at each step, see [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md).
 
 ## <span id="The_building_blocks"></span><span id="the_building_blocks"></span><span id="THE_BUILDING_BLOCKS"></span>The building blocks
 
 
-At the most basic level, a *Windows Store device app* is a Windows Store app that's associated with a specific device via device metadata. There are four components to a Windows Store device app: a device, an app, a device metadata package, and a device driver. You don't need to use device metadata to access a peripheral device using the device protocol APIs (USB, HID, Bluetooth GATT, and Bluetooth RFCOMM). But you do need to use device metadata to enable special features such as [automatic installation](auto-install-for-windows-store-device-apps.md), [AutoPlay](autoplay-for-windows-store-device-apps.md), and [device update](device-sync-and-update-for-windows-store-device-apps.md).
+At the most basic level, a *UWP device app* is a UWP app that's associated with a specific device via device metadata. There are four components to a UWP device app: a device, an app, a device metadata package, and a device driver. You don't need to use device metadata to access a peripheral device using the device protocol APIs (USB, HID, Bluetooth GATT, and Bluetooth RFCOMM). But you do need to use device metadata to enable special features such as [automatic installation](auto-install-for-uwp-device-apps.md), [AutoPlay](autoplay-for-uwp-device-apps.md), and [device update](device-sync-and-update-for-uwp-device-apps.md).
 
 <table>
 <colgroup>
@@ -31,17 +31,17 @@ At the most basic level, a *Windows Store device app* is a Windows Store app tha
 </tr>
 <tr class="even">
 <td align="left"><strong>App</strong></td>
-<td align="left">A Windows Store device app is a Windows Store app that provides a customized user experience for the device, enabling the user to access the device's unique features. A device app contains a file named <strong>StoreManifest.xml</strong> that specifies the experience ID. The <em>experience ID</em> is a GUID that uniquely identifies a device metadata package.</td>
+<td align="left">A UWP device app is a UWP app that provides a customized user experience for the device, enabling the user to access the device's unique features. A device app contains a file named <strong>StoreManifest.xml</strong> that specifies the experience ID. The <em>experience ID</em> is a GUID that uniquely identifies a device metadata package.</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>Device metadata</strong></td>
-<td align="left">This is an extended version of any device metadata package you might have already created for Windows 7. In Windows 8.1, device metadata creates a link between the device and the app. That link is identified in the experience ID. In addition to UI content for the PC (localizable model name, description, and photorealistic icons) the device metadata package specifies [AutoPlay](autoplay-for-windows-store-device-apps.md) configuration and which app has privilege to access the device. Windows automatically downloads device metadata from the Windows Metadata Internet Service (WMIS).</td>
+<td align="left">This is an extended version of any device metadata package you might have already created for Windows 7. In Windows 8.1, device metadata creates a link between the device and the app. That link is identified in the experience ID. In addition to UI content for the PC (localizable model name, description, and photorealistic icons) the device metadata package specifies [AutoPlay](autoplay-for-uwp-device-apps.md) configuration and which app has privilege to access the device. Windows automatically downloads device metadata from the Windows Metadata Internet Service (WMIS).</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Driver</strong></td>
-<td align="left">All Windows Store device apps use drivers, indirectly, to access devices. For example, the Windows Runtime device protocol APIs, introduced in Windows 8.1, use in-box drivers to let your app communicate over USB, HID, and Bluetooth. For more info about the drivers used by these APIs, see [Step 1: Create a Windows Store device app](step-1--create-a-windows-store-device-app.md).
+<td align="left">All UWP device apps use drivers, indirectly, to access devices. For example, the Windows Runtime device protocol APIs, introduced in Windows 8.1, use in-box drivers to let your app communicate over USB, HID, and Bluetooth. For more info about the drivers used by these APIs, see [Step 1: Create a UWP device app](step-1--create-a-uwp-device-app.md).
 <div class="alert">
-<strong>Important</strong>  Device access using custom drivers requires approval from Microsoft. For more info, see [Windows Store Device App Design Guide for Specialized Devices Internal to the PC](http://go.microsoft.com/fwlink/p/?LinkId=306693).
+<strong>Important</strong>  Device access using custom drivers requires approval from Microsoft. For more info, see [UWP device app Design Guide for Specialized Devices Internal to the PC](http://go.microsoft.com/fwlink/p/?LinkId=306693).
 </div>
 <div>
  
@@ -55,11 +55,11 @@ At the most basic level, a *Windows Store device app* is a Windows Store app tha
 ## <span id="Development_workflow"></span><span id="development_workflow"></span><span id="DEVELOPMENT_WORKFLOW"></span>Development workflow
 
 
-There are six steps to creating a Windows Store device app, assuming you've already created your device and submitted any necessary drivers to the Hardware Dashboard. Click the links for more details about each step.
+There are six steps to creating a UWP device app, assuming you've already created your device and submitted any necessary drivers to the Hardware Dashboard. Click the links for more details about each step.
 
 ![the device app development workflow](images/device-app-workflow.png)
 
-[Step 1: Create the app](step-1--create-a-windows-store-device-app.md). Associate your app with the Windows Store, develop the app, and test it.
+[Step 1: Create the app](step-1--create-a-uwp-device-app.md). Associate your app with the Microsoft Store, develop the app, and test it.
 
 [Step 2: Create the device metadata](step-2--create-device-metadata.md). Use the Device Metadata Authoring Wizard to associate your app with your device, create a device metadata package, and create a StoreManifest.xml file (which specifies the experience ID).
 
@@ -71,9 +71,9 @@ There are six steps to creating a Windows Store device app, assuming you've alre
 
 [Step 4: Test the device metadata (locally)](step-4--test-device-metadata.md). Use the Device Metadata Authoring Wizard to validate and deploy the device metadata to your local development workstation.
 
-[Step 5: Submit the app to the Windows Store dashboard](step-5--submit-the-app.md). Use the dashboard to confirm selling details and indicate to testers that the app is a Windows Store device app.
+[Step 5: Submit the app to the Microsoft Store dashboard](step-5--submit-the-app.md). Use the dashboard to confirm selling details and indicate to testers that the app is a UWP device app.
 
-**Note**  If your app is a privileged app and is not configured for automatic installation, you can submit your app to the Windows Store dashboard after step 6. For more info, see [Privileged app submission sequence](#priv-sequence).
+**Note**  If your app is a privileged app and is not configured for automatic installation, you can submit your app to the Microsoft Store dashboard after step 6. For more info, see [Privileged app submission sequence](#priv-sequence).
 
  
 
@@ -105,17 +105,17 @@ The first time you submit your app and device metadata to the various dashboards
 </tr>
 <tr class="even">
 <td align="left">2</td>
-<td align="left"><strong>Submit the app</strong> to the Windows Store dashboard.</td>
-<td align="left">Wait for acceptance and until the app is live on the Windows Store.</td>
+<td align="left"><strong>Submit the app</strong> to the Microsoft Store dashboard.</td>
+<td align="left">Wait for acceptance and until the app is live on the Microsoft Store.</td>
 </tr>
 <tr class="odd">
 <td align="left">3</td>
-<td align="left"><strong>Submit the device metadata</strong> to the hardware dashboard. The app needs to be in the Windows Store before the metadata can pass validation on the hardware dashboard.</td>
+<td align="left"><strong>Submit the device metadata</strong> to the hardware dashboard. The app needs to be in the Microsoft Store before the metadata can pass validation on the hardware dashboard.</td>
 <td align="left">Wait 10 days for acceptance and distribution.</td>
 </tr>
 <tr class="even">
 <td align="left">4</td>
-<td align="left"><strong>Finish:</strong> Users can benefit from all features of the Windows Store device app. Note that device app features like [automatic installation](auto-install-for-windows-store-device-apps.md), [AutoPlay](autoplay-for-windows-store-device-apps.md), and [device update](device-sync-and-update-for-windows-store-device-apps.md) won't work until the user has the device metadata and the app on the PC. If the app requires a driver that's not supplied by Microsoft, that driver will also need to be present for the app to work.</td>
+<td align="left"><strong>Finish:</strong> Users can benefit from all features of the Microsoft Store device app. Note that device app features like [automatic installation](auto-install-for-uwp-device-apps.md), [AutoPlay](autoplay-for-uwp-device-apps.md), and [device update](device-sync-and-update-for-uwp-device-apps.md) won't work until the user has the device metadata and the app on the PC. If the app requires a driver that's not supplied by Microsoft, that driver will also need to be present for the app to work.</td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -126,23 +126,23 @@ The first time you submit your app and device metadata to the various dashboards
 ## <span id="priv-sequence"></span><span id="PRIV-SEQUENCE"></span>Privileged app submission sequence
 
 
-In some cases, Windows Store device apps do not need to be live in the Windows Store before you submit the device metadata. When your Windows Store device app:
+In some cases, UWP device apps do not need to be live in the Microsoft Store before you submit the device metadata. When your UWP device app:
 
 -   Is specified as a privileged app
 -   Is not configured for automatic installation
 
-If this is true about your app, you can submit the device metadata to the hardware dashboard before you submit your Windows Store device app to the Windows Store dashboard. In such cases, you do not need to add the Experience ID to your app; specifying your app as a privileged app in the device metadata is sufficient for privileges to take effect.
+If this is true about your app, you can submit the device metadata to the hardware dashboard before you submit your UWP device app to the Microsoft Store dashboard. In such cases, you do not need to add the Experience ID to your app; specifying your app as a privileged app in the device metadata is sufficient for privileges to take effect.
 
-**Note**  Windows Store device apps for printers and cameras automatically install. Therefore, these types of Windows Store device apps must follow the standard submission sequence and be submitted to the Windows Store before the device metadata is submitted.
+**Note**  UWP device apps for printers and cameras automatically install. Therefore, these types of UWP device apps must follow the standard submission sequence and be submitted to the Microsoft Store before the device metadata is submitted.
 
  
 
-## <span id="Windows_Store_device_app_limits"></span><span id="windows_store_device_app_limits"></span><span id="WINDOWS_STORE_DEVICE_APP_LIMITS"></span>Windows Store device app limits
+## <span id="Windows_Store_device_app_limits"></span><span id="windows_store_device_app_limits"></span><span id="WINDOWS_STORE_DEVICE_APP_LIMITS"></span>UWP device app limits
 
 
-Device manufacturers are limited in the number of Windows Store apps that may be specified in device metadata for automatic installation and app privilege. For example, peripheral device manufacturers (IHVs) can submit up to one app that is configured for automatic installation and up to one app that is specified as a privileged app. An IHV can submit one app that meets both limitations or two apps, with each meeting just one of the limitations.
+Device manufacturers are limited in the number of UWP apps that may be specified in device metadata for automatic installation and app privilege. For example, peripheral device manufacturers (IHVs) can submit up to one app that is configured for automatic installation and up to one app that is specified as a privileged app. An IHV can submit one app that meets both limitations or two apps, with each meeting just one of the limitations.
 
-**Important**  There is no limit to the total number of Windows Store device apps that a device manufacturer can submit to the Windows Store; these limits apply only to a single device metadata package.
+**Important**  There is no limit to the total number of UWP device apps that a device manufacturer can submit to the Microsoft Store; these limits apply only to a single device metadata package.
 
  
 
@@ -161,15 +161,15 @@ In each device metadata package, the following limits apply:
 ## <span id="related_topics"></span>Related topics
 
 
-[Build a Windows Store device app step-by-step](build-a-windows-store-device-app-step-by-step.md)
+[Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md)
 
-[Automatic installation for Windows Store device apps](auto-install-for-windows-store-device-apps.md)
+[Automatic installation for UWP device apps](auto-install-for-uwp-device-apps.md)
 
-[AutoPlay for Windows Store device apps](autoplay-for-windows-store-device-apps.md)
+[AutoPlay for UWP device apps](autoplay-for-uwp-device-apps.md)
 
-[Device sync and update for Windows Store device apps](device-sync-and-update-for-windows-store-device-apps.md)
+[Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md)
 
-[Windows Store device apps for internal devices](windows-store-device-apps-for-specialized-devices.md)
+[UWP device apps for internal devices](uwp-device-apps-for-specialized-devices.md)
 
  
 

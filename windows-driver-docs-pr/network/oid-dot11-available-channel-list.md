@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_AVAILABLE\_CHANNEL\_LIST
+title: OID_DOT11_AVAILABLE_CHANNEL_LIST
 author: windows-driver-content
-description: OID\_DOT11\_AVAILABLE\_CHANNEL\_LIST
+description: OID_DOT11_AVAILABLE_CHANNEL_LIST
 ms.assetid: 3728261d-ed23-491e-b791-ca3778944939
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

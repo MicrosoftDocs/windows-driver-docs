@@ -1,7 +1,7 @@
 ---
-title: NDIS\_SWITCH\_PORT\_AT\_ARRAY\_INDEX macro
+title: NDIS_SWITCH_PORT_AT_ARRAY_INDEX macro
 author: windows-driver-content
-description: Hyper-V extensible switch extensions use the NDIS\_SWITCH\_PORT\_AT\_ARRAY\_INDEX macro to access an NDIS\_SWITCH\_PORT\_PARAMETERS element inside an NDIS\_SWITCH\_PORT\_ARRAY structure.
+description: Hyper-V extensible switch extensions use the NDIS_SWITCH_PORT_AT_ARRAY_INDEX macro to access an NDIS_SWITCH_PORT_PARAMETERS element inside an NDIS_SWITCH_PORT_ARRAY structure.
 ms.assetid: C632350C-CD13-4564-B8E5-4FE90B674510
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

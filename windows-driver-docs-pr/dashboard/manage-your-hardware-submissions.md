@@ -17,7 +17,7 @@ After you submit your product for the Windows Hardware Compatibility Program for
 -   [Find a hardware submission](#find-a-hardware-submission)
 -   [Update an HCK hardware submission using the Driver Update Acceptable (DUA) process](#update-an-hck-hardware-submission-using-the-driver-update-acceptable-dua-process)
 
-## **Find a hardware submission**
+## Find a hardware submission
 
 1.  Sign in to the Windows Hardware Dev Center dashboard.
 
@@ -81,7 +81,7 @@ After you submit your product for the Windows Hardware Compatibility Program for
 
      
 
-## **Update an HCK hardware submission using the Driver Update Acceptable (DUA) process**
+## Update an HCK hardware submission using the Driver Update Acceptable (DUA) process
 
 1.  [Find the hardware submission](#find-a-hardware-submission) that you want to update.
 
@@ -115,8 +115,19 @@ After you submit your product for the Windows Hardware Compatibility Program for
 
 14. You can monitor the progress of your driver update with the progress tracker at the top of the page. Once all steps show a green check, the update is complete.
 
- 
+## Registering an ExtensionId
 
- 
+When you submit an extension INF to be signed, the dashboard attempts to associate the **ExtensionId** with your account. If the **ExtensionId** is already registered with a different account, you'll see a message prompting you to use a different ID.
+
+For more information about specifying **ExtensionId**, see [Using an extension INF file](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-an-extension-inf-file). 
+
+Note that in your submissions, you may only use ExtensionIDs that are registered to your account. 
+
+## Related topics
+
+   *  [Create a new hardware submission](create-a-new-hardware-submission.md)
+   *  [Get drivers signed by Microsoft for multiple Windows versions](get-drivers-signed-by-microsoft-for-multiple-windows-versions.md)
+   *  [Driver flighting](driver-flighting.md)
+
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20Manage%20hardware%20submissions%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

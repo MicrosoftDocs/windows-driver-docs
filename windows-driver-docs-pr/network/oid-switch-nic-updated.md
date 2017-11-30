@@ -1,7 +1,7 @@
 ---
-title: OID\_SWITCH\_NIC\_UPDATED
+title: OID_SWITCH_NIC_UPDATED
 author: windows-driver-content
-description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID\_SWITCH\_NIC\_UPDATED to the extensible switch driver stack.
+description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_NIC_UPDATED to the extensible switch driver stack.
 ms.assetid: C1B446A3-861F-41B4-99EF-C7CB45F86F39
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

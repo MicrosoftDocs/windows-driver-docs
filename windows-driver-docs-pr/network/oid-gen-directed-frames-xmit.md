@@ -1,7 +1,7 @@
 ---
-title: OID\_GEN\_DIRECTED\_FRAMES\_XMIT
+title: OID_GEN_DIRECTED_FRAMES_XMIT
 author: windows-driver-content
-description: As a query, the OID\_GEN\_DIRECTED\_FRAMES\_XMIT OID specifies the number of directed packets that are transmitted without errors.
+description: As a query, the OID_GEN_DIRECTED_FRAMES_XMIT OID specifies the number of directed packets that are transmitted without errors.
 ms.assetid: 7863c5c5-618f-4e3c-9a50-3bfdcf00034d
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

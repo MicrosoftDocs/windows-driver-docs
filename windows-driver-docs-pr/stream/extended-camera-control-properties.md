@@ -22,7 +22,7 @@ The extended camera control interface, available starting in Windows 8, is used
 
 The driver can also choose to perform a camera control operation asynchronously, meaning that all requests for an operation are rejected until the first request is completed. If the driver has successfully performed asynchronous camera control operations, it should trigger the [**KSEVENTSETID\_CameraAsyncControl**](https://msdn.microsoft.com/library/windows/hardware/jj714740) event. See [**KSPROPERTY\_CAMERACONTROL\_S\_EX**](https://msdn.microsoft.com/library/windows/hardware/jj151593) for more information.
 
-Windows Store apps can access these properties to configure the camera:
+UWP apps can access these properties to configure the camera:
 
 ## Properties
 

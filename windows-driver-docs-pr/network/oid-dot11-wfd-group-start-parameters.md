@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_WFD\_GROUP\_START\_PARAMETERS
+title: OID_DOT11_WFD_GROUP_START_PARAMETERS
 author: windows-driver-content
-description: When set, the OID\_DOT11\_WFD\_GROUP\_START\_PARAMETERS object identifier (OID) provides the startup parameters for a Wi-Fi Direct (WFD) Group Owner (GO).
+description: When set, the OID_DOT11_WFD_GROUP_START_PARAMETERS object identifier (OID) provides the startup parameters for a Wi-Fi Direct (WFD) Group Owner (GO).
 ms.assetid: E71D6292-2265-4D41-A4E9-430B6AB7B702
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

@@ -2,6 +2,11 @@
 title: Debugging Using KD and NTKD
 description: This section describes how to perform basic debugging tasks using the KD and NTKD debuggers.
 ms.assetid: 625BE34B-5A3C-4E22-BC2F-5375601E629A
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging Using KD and NTKD

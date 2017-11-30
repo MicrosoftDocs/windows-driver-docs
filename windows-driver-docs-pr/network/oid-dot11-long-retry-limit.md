@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_LONG\_RETRY\_LIMIT
+title: OID_DOT11_LONG_RETRY_LIMIT
 author: windows-driver-content
-description: OID\_DOT11\_LONG\_RETRY\_LIMIT
+description: OID_DOT11_LONG_RETRY_LIMIT
 ms.assetid: e596d56c-36c8-4fa4-b62c-3656ad521b6e
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

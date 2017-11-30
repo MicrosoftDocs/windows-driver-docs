@@ -2,6 +2,11 @@
 title: Example 14 Configuring Special Pool
 description: Example 14 Configuring Special Pool
 ms.assetid: a89f8a08-30e4-4d04-9689-c665b2175780
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 14: Configuring Special Pool

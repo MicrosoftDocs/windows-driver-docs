@@ -1,7 +1,7 @@
 ---
-title: NDIS\_STATUS\_DOT11\_TKIPMIC\_FAILURE
+title: NDIS_STATUS_DOT11_TKIPMIC_FAILURE
 author: windows-driver-content
-description: A miniport driver uses the NDIS\_STATUS\_DOT11\_TKIPMIC\_FAILURE indication whenever a received packet, successfully decrypted by the TKIP cipher algorithm, fails the message integrity code (MIC) verification.
+description: A miniport driver uses the NDIS_STATUS_DOT11_TKIPMIC_FAILURE indication whenever a received packet, successfully decrypted by the TKIP cipher algorithm, fails the message integrity code (MIC) verification.
 ms.assetid: bd1b010f-e5d0-4d51-917f-3a6065c932f6
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

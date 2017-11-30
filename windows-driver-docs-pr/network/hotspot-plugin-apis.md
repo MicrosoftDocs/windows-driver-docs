@@ -1,7 +1,7 @@
 ---
-title: HOTSPOT\_PLUGIN\_APIS structure
+title: HOTSPOT_PLUGIN_APIS structure
 author: windows-driver-content
-description: The HOTSPOT\_PLUGIN\_APIS structure contains the Hotspot plugin APIs function table.
+description: The HOTSPOT_PLUGIN_APIS structure contains the Hotspot plugin APIs function table.
 ms.assetid: eee56f84-2c7f-4218-b7ec-b4fc0181d767
 keywords: 
 - HOTSPOT_PLUGIN_APIS structure Network Drivers Starting with Windows Vista
@@ -14,6 +14,8 @@ ms.technology: windows-devices
 ---
 
 # HOTSPOT\_PLUGIN\_APIS structure
+
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HOTSPOT\_PLUGIN\_APIS** structure contains the Hotspot plugin APIs function table. This function table is returned by the plugin when [**HSPluginInitPlugin**](hsplugininitplugin.md) is called to initialize the plugin. The table contains functions that are called by the hotspot host to communicate with the plugin.

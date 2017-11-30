@@ -95,13 +95,13 @@ ServiceBinary = %12%\upperfilt.sys
 
 The device installation application would:
 
-1.  Call **SetupInstallFilesFromInfSection** for the \[upperfilter\_inst\] section.
+1.  Call **SetupInstallFilesFromInfSection** for the \[upperfilter_inst\] section.
 
-2.  Call **SetupInstallServicesFromInfSection** for the \[upperfilter\_inst.Services\] section.
+2.  Call **SetupInstallServicesFromInfSection** for the \[upperfilter_inst.Services\] section.
 
-3.  Call **SetupInstallFromInfSection** for the \[upperfilter\_inst\] section, once for each class key it wants to register the *upperfilt* service for.
+3.  Call **SetupInstallFromInfSection** for the \[upperfilter_inst\] section, once for each class key it wants to register the *upperfilt* service for.
 
-Each call would specify **SPINST\_REGISTRY** for the *Flags* argument, to indicate that only registry modifications need to be performed.
+Each call would specify **SPINST_REGISTRY** for the *Flags* argument, to indicate that only registry modifications need to be performed.
 
  
 

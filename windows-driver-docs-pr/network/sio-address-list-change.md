@@ -1,7 +1,7 @@
 ---
-title: SIO\_ADDRESS\_LIST\_CHANGE
+title: SIO_ADDRESS_LIST_CHANGE
 author: windows-driver-content
-description: SIO\_ADDRESS\_LIST\_CHANGE
+description: SIO_ADDRESS_LIST_CHANGE
 ms.assetid: d451208d-c850-4f2f-9ee0-d34139454ed4
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

@@ -1,7 +1,7 @@
 ---
-title: HS\_PLUGIN\_PRE\_CONNECT\_INIT function
+title: HS_PLUGIN_PRE_CONNECT_INIT function
 author: windows-driver-content
-description: The HS\_PLUGIN\_PRE\_CONNECT\_INIT function is called to notify the plugin to initialize its state when a connection to a hotspot network is in progress.
+description: The HS_PLUGIN_PRE_CONNECT_INIT function is called to notify the plugin to initialize its state when a connection to a hotspot network is in progress.
 ms.assetid: 799242a0-144f-4d3f-b48c-9e96a851d8c4
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_PRE_CONNECT_INIT) function Network Drivers Starting with Windows Vista
@@ -13,6 +13,8 @@ ms.technology: windows-devices
 ---
 
 # HS\_PLUGIN\_PRE\_CONNECT\_INIT function
+
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_PLUGIN\_PRE\_CONNECT\_INIT** function is called to notify the plugin to initialize its state when a connection to a hotspot network is in progress.

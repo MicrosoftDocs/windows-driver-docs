@@ -1,7 +1,7 @@
 ---
-title: HS\_SIM\_DATA structure
+title: HS_SIM_DATA structure
 author: windows-driver-content
-description: The HS\_SIM\_DATA structure contains information stored in the SIM card.
+description: The HS_SIM_DATA structure contains information stored in the SIM card.
 ms.assetid: 9e29a85e-e764-4841-b218-c63bba0ca9fa
 keywords: 
 - HS_SIM_DATA structure Network Drivers Starting with Windows Vista
@@ -14,6 +14,8 @@ ms.technology: windows-devices
 ---
 
 # HS\_SIM\_DATA structure
+
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_SIM\_DATA** structure contains information stored in the SIM card.

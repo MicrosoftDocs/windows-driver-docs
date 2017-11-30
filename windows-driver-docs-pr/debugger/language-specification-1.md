@@ -2,6 +2,11 @@
 title: Language Specification 1
 description: Language Specification 1
 ms.assetid: 7c770200-ed2a-47e0-8389-e79a5624a3dd
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Language Specification 1

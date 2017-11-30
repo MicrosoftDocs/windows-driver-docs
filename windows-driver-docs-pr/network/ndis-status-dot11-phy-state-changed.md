@@ -1,7 +1,7 @@
 ---
-title: NDIS\_STATUS\_DOT11\_PHY\_STATE\_CHANGED
+title: NDIS_STATUS_DOT11_PHY_STATE_CHANGED
 author: windows-driver-content
-description: A miniport driver must make the NDIS\_STATUS\_DOT11\_PHY\_STATE\_CHANGED indication whenever the hardware or software power state of a PHY changes on the 802.11 station.
+description: A miniport driver must make the NDIS_STATUS_DOT11_PHY_STATE_CHANGED indication whenever the hardware or software power state of a PHY changes on the 802.11 station.
 ms.assetid: 276fb352-f355-4047-adce-ef9e51b5c1b7
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

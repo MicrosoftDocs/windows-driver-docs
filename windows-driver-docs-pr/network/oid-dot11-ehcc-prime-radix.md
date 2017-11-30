@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_EHCC\_PRIME\_RADIX
+title: OID_DOT11_EHCC_PRIME_RADIX
 author: windows-driver-content
-description: OID\_DOT11\_EHCC\_PRIME\_RADIX
+description: OID_DOT11_EHCC_PRIME_RADIX
 ms.assetid: bc561b41-8ab6-4e6b-889a-701b681f3f7d
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

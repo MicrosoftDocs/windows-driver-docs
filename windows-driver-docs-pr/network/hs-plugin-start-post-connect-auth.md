@@ -1,7 +1,7 @@
 ---
-title: HS\_PLUGIN\_START\_POST\_CONNECT\_AUTH function
+title: HS_PLUGIN_START_POST_CONNECT_AUTH function
 author: windows-driver-content
-description: The HS\_PLUGIN\_START\_POST\_CONNECT\_AUTH function is called to perform any post-connect authentication required to authenticate the device over the network.
+description: The HS_PLUGIN_START_POST_CONNECT_AUTH function is called to perform any post-connect authentication required to authenticate the device over the network.
 ms.assetid: f52236fc-2afd-46e2-ae88-7c4fa10f8d59
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_START_POST_CONNECT_AUTH) function Network Drivers Starting with Windows Vista
@@ -13,6 +13,8 @@ ms.technology: windows-devices
 ---
 
 # HS\_PLUGIN\_START\_POST\_CONNECT\_AUTH function
+
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_PLUGIN\_START\_POST\_CONNECT\_AUTH** function is called to perform any post-connect authentication required to authenticate the device over the network.

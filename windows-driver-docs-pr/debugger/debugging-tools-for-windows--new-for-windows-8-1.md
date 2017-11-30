@@ -2,6 +2,11 @@
 title: Debugging Tools for Windows New for Windows 8.1
 description: For Windows 8.1, Debugging Tools for Windows includes these new features.
 ms.assetid: F2424842-88A7-4520-9C52-9574D049FB5F
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging Tools for Windows: New for Windows 8.1

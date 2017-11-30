@@ -54,9 +54,9 @@ SoftwareType=type-code
 [SoftwareID=pfn://x.y.z]
 ```
 
-The **SoftwareType** entry is required.  If **SoftwareType** is set to 1, **SoftwareBinary** and **SoftwareVersion** are also required, but arguments and flags are optional. If **SoftwareType** is set to 2, **SoftwareID** is required, and flags are optional.  For info about this feature, see [Pairing a driver with a Universal Windows Platform (UWP) app](pairing-app-and-driver-versions.md) and [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md).
+The **SoftwareType** entry is required.  If **SoftwareType** is set to 1, **SoftwareBinary** and **SoftwareVersion** are also required, but arguments and flags are optional. If **SoftwareType** is set to 2, **SoftwareID** is required, and flags are optional.
 
-Any software installed using **AddSoftware** must be installed silently (or quietly). In other words, no user interface can be shown to the user during installation.    
+Any software installed using **AddSoftware** must be installed silently (or quietly). In other words, no user interface can be shown to the user during installation.
 
 ## Software-Install Section Entries and Values
 
@@ -64,7 +64,15 @@ Any software installed using **AddSoftware** must be installed silently (or quie
 
 Specifies the type of software installation.
 
-A value of 1 indicates that the associated software is an MSI or EXE binary.  When this value is set, the **SoftwareBinary** entry is also required.  Note that a value of 1 is not supported on Windows 10 S.  In current Windows Insiders builds, a value of 2 indicates that the associated software is a Windows Store link.
+A value of 1 indicates that the associated software is an MSI or EXE binary.  When this value is set, the **SoftwareBinary** entry is also required.  A value of 1 is not supported on Windows 10 S.  Starting in Windows 10 version 1709, a value of 2 indicates that the associated software is a Microsoft Store link.  Use a value of 1 only for device-specific software that has no graphical user interface.  If you have a device-specific app with graphical elements, it should come from the Microsoft Store, and the driver should reference it using **SoftwareType** 2.
+
+Do not use AddSoftware to distribute software that is unrelated to a device. For example, an OEM-specific PC utility program should not be installed with AddSoftware.
+Instead, use one of the following options to preinstall an app in an OEM image of Windows 10:
+
+* To preinstall a Win32 app, boot to audit mode and install the app. For details, see [Audit Mode Overview](https://docs.microsoft.com/windows-hardware/manufacture/desktop/audit-mode-overview).
+* To preinstall a Microsoft Store (UWP) app, see [Preinstallable apps for desktop devices](https://docs.microsoft.com/windows-hardware/customize/preinstall/preinstallable-apps-for-windows-10-desktop).
+
+For info about pairing a driver with a Universal Windows Platform (UWP) app, see [Pairing a driver with a Universal Windows Platform (UWP) app](pairing-app-and-driver-versions.md) and [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md).
 
 **SoftwareBinary**=*filename*
 
@@ -74,7 +82,7 @@ Specifies the path to the executable.  The system generates command lines like t
 
 `EXE: <SoftwareBinary> [<SoftwareArguments>]`
 
-If you use this entry, you must add the executable to the DriverStore by specifying the [INF CopyINF Directive](inf-copyfiles-directive.md) with  a **DestinationDirs** value of 13.
+If you use this entry, you must add the executable to the DriverStore by specifying the [INF CopyFiles Directive](inf-copyfiles-directive.md) with  a **DestinationDirs** value of 13.
 
 **SoftwareArguments**=*argument1[, argument2[, … argumentN]]*
 
@@ -117,7 +125,7 @@ Specifies the software version.  Each value should not exceed 65535.  When the s
 
 **SoftwareID**=*x.y.z*
 
-Specifies a Windows Store identifier and identifier type.  Currently, only Package Family Name (PFN) is supported.  Use a PFN to reference a Universal Windows Platform (UWP) app using the form `pfn://<x.y.z>`.
+Specifies a Microsoft Store identifier and identifier type.  Currently, only Package Family Name (PFN) is supported.  Use a PFN to reference a Universal Windows Platform (UWP) app using the form `pfn://<x.y.z>`.
 
 <!--add link to related page in UWP docs once it is available-->
 

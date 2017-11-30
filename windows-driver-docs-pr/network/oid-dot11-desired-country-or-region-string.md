@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_DESIRED\_COUNTRY\_OR\_REGION\_STRING
+title: OID_DOT11_DESIRED_COUNTRY_OR_REGION_STRING
 author: windows-driver-content
-description: OID\_DOT11\_DESIRED\_COUNTRY\_OR\_REGION\_STRING
+description: OID_DOT11_DESIRED_COUNTRY_OR_REGION_STRING
 ms.assetid: 5a1e9019-c821-45c9-b8ed-5b78d213f7ee
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

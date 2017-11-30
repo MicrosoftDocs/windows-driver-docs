@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_MAX\_TRANSMIT\_MSDU\_LIFETIME
+title: OID_DOT11_MAX_TRANSMIT_MSDU_LIFETIME
 author: windows-driver-content
-description: OID\_DOT11\_MAX\_TRANSMIT\_MSDU\_LIFETIME
+description: OID_DOT11_MAX_TRANSMIT_MSDU_LIFETIME
 ms.assetid: fb129074-6078-48b6-8043-e6296ec831d4
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

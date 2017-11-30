@@ -34,6 +34,8 @@ This section describes how to write user-mode drivers that work with the Windows
 -   [Ranking a Biometric Driver on Windows Update](ranking-a-biometric-driver-on-windows-update.md)
 -   [Testing Biometric Drivers](testing-biometric-drivers.md)
 -   [Signing WBDI Drivers](signing-wbdi-drivers.md)
+-   [Windows Hello: Steps to Submit a Fingerprint Driver](windows-hello-driver-signing.md)
+-   [Custom Control Codes](custom-control-codes.md)
 
  
 

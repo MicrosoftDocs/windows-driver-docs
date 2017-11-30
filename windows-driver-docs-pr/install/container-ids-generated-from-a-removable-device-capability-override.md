@@ -93,7 +93,7 @@ Within the [LocationPath](locationpath-registry-subkey.md) and [\*](--registry-s
 
 The following shows a device override for a devnode that matches a [HardwareID](hardwareid-registry-subkey.md) registry subkey in addition to a location path that is specified through the [LocationPaths](locationpaths-registry-subkey.md) registry subkey.
 
-In this example, the override will disable the removable device capability, and is applied to all devnodes that have a [hardware ID](hardware-ids.md) of USB\\VID\_1234&PID\_5678 at the location path PCIROOT(0)\#PCI(102)\#USBROOT(0)\#USB(1).
+In this example, the override will disable the removable device capability, and is applied to all devnodes that have a [hardware ID](hardware-ids.md) of USB\\VID_1234&PID_5678 at the location path PCIROOT(0)\#PCI(102)\#USBROOT(0)\#USB(1).
 
 The following is an example of the registry table format for this override.
 
@@ -107,9 +107,9 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceOverrides
 
 In this example, `USB\VID_1234&PID_5678 `is the name of the [HardwareID](hardwareid-registry-subkey.md) registry subkey, and `PCIROOT(0)#PCI(102)#USBROOT(0)#USB(1)` is the name of the [LocationPath](locationpath-registry-subkey.md) registry subkey.
 
-This override changes the Plug and Play (PnP) manager's interpretation of the device topology. Notice that the devnode with a [hardware ID](hardware-ids.md) value of USB\\VID\_1234&PID\_5678 was marked as not removable in the registry. A new container ID is not generated for this devnode, because the PnP manager interprets the devnode as not being removable from its parent. Instead, USB\\VID\_1234&PID\_5678 (and all its children) inherit the container ID (ContainerID {A}) of its parent.
+This override changes the Plug and Play (PnP) manager's interpretation of the device topology. Notice that the devnode with a [hardware ID](hardware-ids.md) value of USB\\VID_1234&PID_5678 was marked as not removable in the registry. A new container ID is not generated for this devnode, because the PnP manager interprets the devnode as not being removable from its parent. Instead, USB\\VID_1234&PID_5678 (and all its children) inherit the container ID (ContainerID {A}) of its parent.
 
-The result of this override is a single device grouping because all the devnodes in the tree have the same container ID. The device USB\\VID\_1234&PID\_5678 is interpreted as being integrated with the computer.
+The result of this override is a single device grouping because all the devnodes in the tree have the same container ID. The device USB\\VID_1234&PID_5678 is interpreted as being integrated with the computer.
 
 The following diagram shows the resulting device topology and associated container ID assignment.
 
@@ -121,7 +121,7 @@ The previous example shows a frequently encountered devnode topology: portable c
 
 The following shows a removable device capability override for all devnodes that matches a specific [hardware ID](hardware-ids.md) value.
 
-In this example, the override will enable the removable device capability, and the override is applied to devnodes that have a hardware ID value of USB\\VID\_062A&PID\_0000.
+In this example, the override will enable the removable device capability, and the override is applied to devnodes that have a hardware ID value of USB\\VID_062A&PID_0000.
 
 The following is a high-level description of the registry table format for this override.
 
@@ -135,13 +135,13 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceOverrides
 
 1 The name of the [HardwareID](hardwareid-registry-subkey.md) registry subkey.
 
-In this example, the devnode with a [hardware ID](hardware-ids.md) of USB\\VID\_1234&PID\_5678 reports the device removable capability correctly. The PnP manager generates a container ID (ContainerID {B}) for it and all its child devnodes.
+In this example, the devnode with a [hardware ID](hardware-ids.md) of USB\\VID_1234&PID_5678 reports the device removable capability correctly. The PnP manager generates a container ID (ContainerID {B}) for it and all its child devnodes.
 
-However, the child devnode with a [hardware ID](hardware-ids.md) of USB\\VID\_062A&PID\_0000 matches the override. As a result, the PnP manager generates another contained ID (ContainerID {C}) for this devnode and all its child devnodes.
+However, the child devnode with a [hardware ID](hardware-ids.md) of USB\\VID_062A&PID_0000 matches the override. As a result, the PnP manager generates another contained ID (ContainerID {C}) for this devnode and all its child devnodes.
 
-As before, this override changes the PnP manager's interpretation of the device topology. The physical device is assigned two container IDs, and is seen by Windows as two devices. Notice that the devnode with the [hardware ID](hardware-ids.md) of USB\\VID\_062A&PID\_0000 is interpreted as removable in grouping the devnodes into devices. This does not change the value reported by the devnode for the device removable capability.
+As before, this override changes the PnP manager's interpretation of the device topology. The physical device is assigned two container IDs, and is seen by Windows as two devices. Notice that the devnode with the [hardware ID](hardware-ids.md) of USB\\VID_062A&PID_0000 is interpreted as removable in grouping the devnodes into devices. This does not change the value reported by the devnode for the device removable capability.
 
-Additionally, the \* registry subkey was specified to indicate that this override should be applied to all devnodes on the computer that have the [hardware ID](hardware-ids.md) of USB\\VID\_062A&PID\_0000.
+Additionally, the \* registry subkey was specified to indicate that this override should be applied to all devnodes on the computer that have the [hardware ID](hardware-ids.md) of USB\\VID_062A&PID_0000.
 
 The following diagram shows the resulting device topology and associated container ID assignment.
 

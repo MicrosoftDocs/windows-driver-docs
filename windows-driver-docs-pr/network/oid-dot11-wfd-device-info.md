@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_WFD\_DEVICE\_INFO
+title: OID_DOT11_WFD_DEVICE_INFO
 author: windows-driver-content
-description: When set, the OID\_DOT11\_WFD\_DEVICE\_INFO object identifier (OID) provides Wi-Fi Direct device information for setting Peer-to-Peer (P2P) attributes.
+description: When set, the OID_DOT11_WFD_DEVICE_INFO object identifier (OID) provides Wi-Fi Direct device information for setting Peer-to-Peer (P2P) attributes.
 ms.assetid: EC526346-D2BB-4C25-A4B7-241CDBF6AD9E
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

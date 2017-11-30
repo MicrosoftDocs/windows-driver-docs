@@ -79,7 +79,7 @@ This table describes the use cases is supported by Windows 10, and the addition
 <p>See, [USB device class drivers included in Windows](supported-usb-classes.md).</p></td>
 <td><p>If your system wants to connect to a custom USB device for which Windows does not include a driver, you can choose to load the generic driver (Winusb.sys) or write a driver. For guidance, see [Choosing a driver model for developing a USB client driver](winusb-considerations.md).</p>
 <p>We recommend that you write a single driver that runs on Windows 10 for desktop editions and Windows 10 Mobile. For more information, see [Getting Started with Universal Windows drivers](https://msdn.microsoft.com/windows-drivers/develop/getting_started_with_universal_drivers).</p>
-<p>To write an application that communicates the device, use Windows Runtime APIs. For more information, see [Talking to USB devices, start to finish (Windows Store app)](talking-to-usb-devices-start-to-finish.md).</p></td>
+<p>To write an application that communicates the device, use Windows Runtime APIs. For more information, see [Talking to USB devices, start to finish (UWP app)](talking-to-usb-devices-start-to-finish.md).</p></td>
 </tr>
 <tr class="odd">
 <td><strong>Alternate modes</strong>

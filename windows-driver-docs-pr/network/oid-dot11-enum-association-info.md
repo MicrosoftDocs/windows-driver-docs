@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_ENUM\_ASSOCIATION\_INFO
+title: OID_DOT11_ENUM_ASSOCIATION_INFO
 author: windows-driver-content
-description: When queried, the OID\_DOT11\_ASSOCIATION\_INFO object identifier (OID) requests that the miniport driver return a list of the access point (AP) (for infrastructure basic service set (BSS) networks) or all peer stations (for independent BSS (IBSS) networks) with which the 802.11 station is associated.
+description: When queried, the OID_DOT11_ASSOCIATION_INFO object identifier (OID) requests that the miniport driver return a list of the access point (AP) (for infrastructure basic service set (BSS) networks) or all peer stations (for independent BSS (IBSS) networks) with which the 802.11 station is associated.
 ms.assetid: 1aba29c6-bea9-41a1-b530-4df248f19821
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

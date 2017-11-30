@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_SUPPORTED\_TX\_ANTENNA
+title: OID_DOT11_SUPPORTED_TX_ANTENNA
 author: windows-driver-content
-description: OID\_DOT11\_SUPPORTED\_TX\_ANTENNA
+description: OID_DOT11_SUPPORTED_TX_ANTENNA
 ms.assetid: 0b4dd0f2-50ba-4e5a-9cc7-354dadc70c06
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

@@ -95,11 +95,11 @@ For **TRUE** or **FALSE** values, "FALSE" is the only false value. Anything else
 </tr>
 <tr class="even">
 <td align="left"><p><strong>srcopt:</strong> <em>options</em></p></td>
-<td align="left"><p>Sets the source line options that control source display and program stepping options. For more information see [<strong>l+, l- (Set Source Options)</strong>](l---l---set-source-options-.md).</p></td>
+<td align="left"><p>Sets the source line options that control source display and program stepping options. For more information see <strong>[l+, l- (Set Source Options)](l---l---set-source-options-.md)</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>srcpath:</strong> <em>directory</em></p></td>
-<td align="left"><p>Sets the source file search path. For more information see [<strong>.srcpath, .lsrcpath (Set Source Path)</strong>](-srcpath---lsrcpath--set-source-path-.md).</p></td>
+<td align="left"><p>Sets the source file search path. For more information see <strong>[.srcpath, .lsrcpath (Set Source Path)](-srcpath---lsrcpath--set-source-path-.md)</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>enable_unicode:</strong> <em>flag</em></p></td>

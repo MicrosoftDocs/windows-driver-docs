@@ -1,7 +1,7 @@
 ---
-title: IRP\_MJ\_PNP
+title: IRP_MJ_PNP
 author: windows-driver-content
-description: All drivers must be prepared to service IRP\_MJ\_PNP requests in a DispatchPnP routine.
+description: All drivers must be prepared to service IRP_MJ_PNP requests in a DispatchPnP routine.
 ms.author: windowsdriverdev
 ms.date: 08/12/2017
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_CURRENT\_CCA\_MODE
+title: OID_DOT11_CURRENT_CCA_MODE
 author: windows-driver-content
-description: OID\_DOT11\_CURRENT\_CCA\_MODE
+description: OID_DOT11_CURRENT_CCA_MODE
 ms.assetid: 7fce5f95-37e5-4efc-a740-6a27628a4a5a
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

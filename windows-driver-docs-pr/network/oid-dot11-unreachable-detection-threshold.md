@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_UNREACHABLE\_DETECTION\_THRESHOLD
+title: OID_DOT11_UNREACHABLE_DETECTION_THRESHOLD
 author: windows-driver-content
-description: OID\_DOT11\_UNREACHABLE\_DETECTION\_THRESHOLD
+description: OID_DOT11_UNREACHABLE_DETECTION_THRESHOLD
 ms.assetid: f73461f4-088d-4281-a7dd-5cf823f94293
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

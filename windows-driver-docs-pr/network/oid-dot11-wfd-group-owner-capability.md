@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_WFD\_GROUP\_OWNER\_CAPABILITY
+title: OID_DOT11_WFD_GROUP_OWNER_CAPABILITY
 author: windows-driver-content
-description: When set, the OID\_DOT11\_WFD\_GROUP\_OWNER\_CAPABILITY object identifier (OID) modifies the Peer-to-Peer (P2P) group capability bitmask that a Group Owner (GO) advertises in a P2P capability attribute.
+description: When set, the OID_DOT11_WFD_GROUP_OWNER_CAPABILITY object identifier (OID) modifies the Peer-to-Peer (P2P) group capability bitmask that a Group Owner (GO) advertises in a P2P capability attribute.
 ms.assetid: 9C28ABA0-C69F-4383-8BD5-4306D31FA27D
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

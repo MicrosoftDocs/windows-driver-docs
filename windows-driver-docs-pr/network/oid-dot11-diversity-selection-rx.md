@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_DIVERSITY\_SELECTION\_RX
+title: OID_DOT11_DIVERSITY_SELECTION_RX
 author: windows-driver-content
-description: When queried, the OID\_DOT11\_DIVERSITY\_SELECTION\_RX object identifier (OID) requests that the miniport driver return the value of the IEEE 802.11 dot11DiversitySelectionRx management information base (MIB) object for the current PHY type on the 802.11 station.
+description: When queried, the OID_DOT11_DIVERSITY_SELECTION_RX object identifier (OID) requests that the miniport driver return the value of the IEEE 802.11 dot11DiversitySelectionRx management information base (MIB) object for the current PHY type on the 802.11 station.
 ms.assetid: b5be9319-3702-4bda-8dfa-3c94da2b1a69
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

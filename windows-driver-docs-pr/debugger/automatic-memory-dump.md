@@ -2,6 +2,11 @@
 title: Automatic Memory Dump
 description: Automatic Memory Dump
 ms.assetid: A2C71497-7865-4DC8-B760-6121B224737A
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Automatic Memory Dump

@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_EXECUTE\_METHOD
+title: IRP_MN_EXECUTE_METHOD
 author: windows-driver-content
 description: All drivers that support methods within data blocks must handle this IRP.
 ms.author: windowsdriverdev

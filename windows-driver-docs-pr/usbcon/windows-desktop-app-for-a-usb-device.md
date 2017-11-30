@@ -25,7 +25,7 @@ It is simpler to use WinUSB functions to communicate with a device than it is to
 -   WinUSB functions do not support devices that already have kernel-mode support. Examples of such devices include modems and network adapters, which are supported by the telephony API (TAPI) and NDIS, respectively.
 -   For multifunction devices, you can use the device's INF file to specify either an in-box kernel-mode driver or Winusb.sys for each USB function separately. However, you can specify only one of these options for a particular function, not both.
 
-**Note**  WinUSB functions require Windows XP or later. You can use these functions in your C/C++ application to communicate with your USB device. To write a Windows Store app that uses WinUSB APIs, see [Windows Store app for a USB device](writing-usb-device-companion-apps-for-windows-store.md).
+**Note**  WinUSB functions require Windows XP or later. You can use these functions in your C/C++ application to communicate with your USB device. To write a UWP app that uses WinUSB APIs, see [UWP app for a USB device](writing-usb-device-companion-apps-for-microsoft-store.md).
 
 ## Getting started...
 

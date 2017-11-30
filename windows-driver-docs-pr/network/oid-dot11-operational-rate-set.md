@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_OPERATIONAL\_RATE\_SET
+title: OID_DOT11_OPERATIONAL_RATE_SET
 author: windows-driver-content
-description: OID\_DOT11\_OPERATIONAL\_RATE\_SET
+description: OID_DOT11_OPERATIONAL_RATE_SET
 ms.assetid: 4b22c1b2-1046-4e1c-880c-ab748f3ce1b0
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

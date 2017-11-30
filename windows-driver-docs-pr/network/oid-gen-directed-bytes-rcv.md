@@ -1,7 +1,7 @@
 ---
-title: OID\_GEN\_DIRECTED\_BYTES\_RCV
+title: OID_GEN_DIRECTED_BYTES_RCV
 author: windows-driver-content
-description: As a query, the OID\_GEN\_DIRECTED\_BYTES\_RCV OID specifies the number of bytes in directed packets that are received without errors.
+description: As a query, the OID_GEN_DIRECTED_BYTES_RCV OID specifies the number of bytes in directed packets that are received without errors.
 ms.assetid: 435941b5-647f-4c5f-84ef-7b4b832c452e
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

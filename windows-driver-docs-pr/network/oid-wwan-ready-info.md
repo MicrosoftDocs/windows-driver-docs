@@ -1,7 +1,7 @@
 ---
-title: OID\_WWAN\_READY\_INFO
+title: OID_WWAN_READY_INFO
 author: windows-driver-content
-description: OID\_WWAN\_READY\_INFO returns the device ready-state, which includes its Subscriber Identity Module (SIM card).
+description: OID_WWAN_READY_INFO returns the device ready-state, which includes its Subscriber Identity Module (SIM card).
 ms.assetid: 3e6f6cb7-14fc-4eee-b5d6-d5e0cad46ea2
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

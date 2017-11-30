@@ -21,7 +21,7 @@ After you launch the **Mobile Broadband** tool, the **Welcome to the Metadata Au
 -   To create a new metadata package, select **Create new device metadata package**, and then click **Next**.
 -   To update an existing metadata package, select **Update existing device metadata package**, click **Browse** to select the package, and then click **Next**.
 
-For more information about developing mobile operator apps, see [Mobile Broadband: Windows Store device app](http://go.microsoft.com/fwlink/p/?linkid=241446).
+For more information about developing mobile operator apps, see [Mobile Broadband: UWP device app](http://go.microsoft.com/fwlink/p/?linkid=241446).
 
  
 

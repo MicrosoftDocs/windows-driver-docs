@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_HOP\_ALGORITHM\_ADOPTED
+title: OID_DOT11_HOP_ALGORITHM_ADOPTED
 author: windows-driver-content
-description: OID\_DOT11\_HOP\_ALGORITHM\_ADOPTED
+description: OID_DOT11_HOP_ALGORITHM_ADOPTED
 ms.assetid: bf577fa8-ed78-4afc-9752-d5702f917c31
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

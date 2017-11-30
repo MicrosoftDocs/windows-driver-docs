@@ -1,7 +1,7 @@
 ---
-title: OID\_WWAN\_PIN
+title: OID_WWAN_PIN
 author: windows-driver-content
-description: OID\_WWAN\_PIN sets or returns information related to Personal Identification Numbers (PINs).
+description: OID_WWAN_PIN sets or returns information related to Personal Identification Numbers (PINs).
 ms.assetid: 5c93ffe0-8067-4022-ba8e-e528e44692e6
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

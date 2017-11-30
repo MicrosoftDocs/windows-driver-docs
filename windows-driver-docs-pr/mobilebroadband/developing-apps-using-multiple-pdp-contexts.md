@@ -42,7 +42,7 @@ You can use multiple PDP contexts to enable premium services.
 ## Mobile broadband apps
 
 
-Windows Store mobile broadband apps can take advantage of multiple PDP contexts to activate a special PDP context and specify rules to route data traffic. These apps can create rules for specific destinations or for all data traffic.
+UWP mobile broadband apps can take advantage of multiple PDP contexts to activate a special PDP context and specify rules to route data traffic. These apps can create rules for specific destinations or for all data traffic.
 
 When the mobile broadband app needs to exchange data with the network, it checks the available and connected networks. If the mobile broadband app has a special rule for any of these networks, it uses the Connection Manager API to open a special PDP context. If this connection is successful, the PDP context provides routing rules for this connection and transfers the data using networking APIs. The mobile broadband app should repeat this if it receives the [**NetworkStatusChanged**](https://msdn.microsoft.com/library/windows/apps/br207299) event to see whether any connections have changed and whether it needs to open a PDP context for the new connection.
 
@@ -50,7 +50,7 @@ When the mobile broadband app needs to exchange data with the network, it checks
 
 ### <span id="Networking_APIs"></span><span id="networking_apis"></span><span id="NETWORKING_APIS"></span>Networking APIs
 
-For sending data by using a special PDP context, the Windows Store app must use different logic based on networking APIs that it uses for transferring data.
+For sending data by using a special PDP context, the Microsoft Store app must use different logic based on networking APIs that it uses for transferring data.
 
 ### <span id="HTTP-based_APIs"></span><span id="http-based_apis"></span><span id="HTTP-BASED_APIS"></span>HTTP-based APIs
 
@@ -456,7 +456,7 @@ foreach (var connectionProfile in connectionProfiles)
 
 ### <span id="Policies"></span><span id="policies"></span><span id="POLICIES"></span>Policies
 
-Some operators have indicated that special PDP contexts have limited bandwidth. Apps that activate the special PDP context but do not have access to use the special PDP context can create a denial of service attack. You should restrict the usage of special APNs to specific apps with a business relationship. You are able to provide Windows a list of Windows Store apps with special APN names. Windows will use that information to limit the access to special APNs. If you do not provide a list, Windows assumes that the special PDP context is open for all apps.
+Some operators have indicated that special PDP contexts have limited bandwidth. Apps that activate the special PDP context but do not have access to use the special PDP context can create a denial of service attack. You should restrict the usage of special APNs to specific apps with a business relationship. You are able to provide Windows a list of UWP apps with special APN names. Windows will use that information to limit the access to special APNs. If you do not provide a list, Windows assumes that the special PDP context is open for all apps.
 
 **Note**  
 This is just to avoid extra traffic on special PDP contexts. You cannot rely on this as a security mechanism for restricting apps to special PDP contexts. If you would like to restrict access to special PDP contexts, you must implement some authentication or security mechanism on your network. For example, you could use a filter that allows only certain IP addresses for a specific PDP context.

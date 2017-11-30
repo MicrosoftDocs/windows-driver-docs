@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_DISCONNECT\_REQUEST
+title: OID_DOT11_DISCONNECT_REQUEST
 author: windows-driver-content
-description: OID\_DOT11\_DISCONNECT\_REQUEST
+description: OID_DOT11_DISCONNECT_REQUEST
 ms.assetid: 89f46c68-1057-4998-86ee-b568eddfe8c2
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

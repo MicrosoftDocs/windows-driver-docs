@@ -1,0 +1,144 @@
+---
+title: WIA\_IPS\_CUR\_INTENT
+description: The WIA\_IPS\_CUR\_INTENT property contains the current settings for an application's intended use of an image. The WIA minidriver creates and maintains this property.
+ms.assetid: 9fa732bb-9281-441e-91b5-ce6eec67ea8f
+keywords: ["WIA_IPS_CUR_INTENT Imaging Devices"]
+topic_type:
+- apiref
+api_name:
+- WIA_IPS_CUR_INTENT
+api_location:
+- Wiadef.h
+api_type:
+- HeaderDef
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+---
+
+# WIA\_IPS\_CUR\_INTENT
+
+
+The WIA\_IPS\_CUR\_INTENT property contains the current settings for an application's intended use of an image. The WIA minidriver creates and maintains this property.
+
+## <span id="ddk_wia_ips_cur_intent_si"></span><span id="DDK_WIA_IPS_CUR_INTENT_SI"></span>
+
+
+Property Type: VT\_I4
+
+Valid Values: WIA\_PROP\_FLAG
+
+Access Rights: Read/write
+
+Remarks
+-------
+
+A driver uses the intent settings to pre-set item properties based on an application's intended use of an image. These properties might include, for example, maximum quality and minimum size.
+
+The following table contains the image-type flags and their definitions. These flags are used to set which type of image is intended: color, grayscale, and so on.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Image type flags</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>WIA_INTENT_IMAGE_TYPE_COLOR</p></td>
+<td><p>The application intends to prepare the device for a color scan.</p></td>
+</tr>
+<tr class="even">
+<td><p>WIA_INTENT_IMAGE_TYPE_GRAYSCALE</p></td>
+<td><p>The application intends to prepare the device for a grayscale scan.</p></td>
+</tr>
+<tr class="odd">
+<td><p>WIA_INTENT_IMAGE_TYPE_TEXT</p></td>
+<td><p>The application intends to prepare the device for scanning text.</p></td>
+</tr>
+<tr class="even">
+<td><p>WIA_INTENT_IMAGE_TYPE_MASK</p></td>
+<td><p>This flag is a mask for all of the image-type flags.</p></td>
+</tr>
+<tr class="odd">
+<td><p>WIA_INTENT_NONE</p></td>
+<td><p>Default value. No intent is specified.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+The following table contains the image size and quality flags and their definitions. These flags are used to set the size and quality of an image scan.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Image size/quality Flags</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>WIA_INTENT_BEST_PREVIEW</p></td>
+<td><p>The application intends to prepare the device for scanning a preview.</p></td>
+</tr>
+<tr class="even">
+<td><p>WIA_INTENT_MAXIMIZE_QUALITY</p></td>
+<td><p>The application intends to prepare the device for scanning a high-quality image.</p></td>
+</tr>
+<tr class="odd">
+<td><p>WIA_INTENT_MINIMIZE_SIZE</p></td>
+<td><p>The application intends to prepare the device for scanning an image that results in a small scan.</p></td>
+</tr>
+<tr class="even">
+<td><p>WIA_INTENT_SIZE_MASK</p></td>
+<td><p>This flag is a mask for all of the size and quality flags.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+The driver chooses the bit depth, in dots per inch, and other settings that it determines are appropriate for the selected intent. The application must read the current settings to determine which properties were changed.
+
+An application sets the WIA\_IPS\_CUR\_INTENT property to auto-set the WIA properties for specific acquisition intent. Note that flags can be combined with a bitwise OR operator, but an image cannot be both grayscale and color.
+
+WIA\_IPS\_CUR\_INTENT is required for all image acquisition enabled items; it is not available for storage items or stored image items.
+
+Requirements
+------------
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p>Header</p></td>
+<td>Wiadef.h (include Wiadef.h)</td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20WIA_IPS_CUR_INTENT%20%20RELEASE:%20%2811/13/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+

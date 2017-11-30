@@ -91,7 +91,7 @@ When the SIM toolkit UI application is successfully started, a SIM toolkit UI di
 ## Launching the SIM toolkit using another app
 
 
-To make the SIM toolkit more discoverable, partners can use a reserved URI scheme to enable a Windows Store app to launch the SIM applications CPL. For more information about how to do this, see [Reserved URI to launch SIM toolkit](reserved-uri-to-launch-sim-toolkit.md).
+To make the SIM toolkit more discoverable, partners can use a reserved URI scheme to enable a UWP app to launch the SIM applications CPL. For more information about how to do this, see [Reserved URI to launch SIM toolkit](reserved-uri-to-launch-sim-toolkit.md).
 
 ## SIM toolkit UI notifications
 

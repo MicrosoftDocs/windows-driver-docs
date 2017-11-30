@@ -1,7 +1,7 @@
 ---
-title: OID\_GEN\_MEDIA\_CONNECT\_STATUS
+title: OID_GEN_MEDIA_CONNECT_STATUS
 author: windows-driver-content
-description: As a query, the OID\_GEN\_MEDIA\_CONNECT\_STATUS OID requests the connection status of the NIC on the network.
+description: As a query, the OID_GEN_MEDIA_CONNECT_STATUS OID requests the connection status of the NIC on the network.
 ms.assetid: 3ed26e62-a285-4b78-91c6-7c3cc0963570
 ms.author: windowsdriverdev
 ms.date: 08/08/2017
@@ -44,7 +44,8 @@ The OID\_GEN\_MEDIA\_CONNECT\_STATUS OID requests the connection status of the N
 **NdisMediaStateConnected**
 
 **NdisMediaStateDisconnected**
-When a miniport driver senses that the network connection has been lost, it must also call the [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600) or [**NdisMCoIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563562) function with NDIS\_STATUS\_MEDIA\_DISCONNECT. When the connection is restored, it must then call **NdisM(Co)IndicateStatus** with NDIS\_STATUS\_MEDIA\_CONNECT.
+
+When a miniport driver senses that the network connection has been lost, it must also call the [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600) or [**NdisMCoIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563562) function with NDIS\_STATUS\_MEDIA\_DISCONNECT (for NDIS 5.1) or NDIS\_STATUS\_LINK\_STATE with **MediaConnectStateDisconnected** in the MediaConnectState property (for NDIS 6.x). When the connection is restored, it must then call **NdisM(Co)IndicateStatus** with NDIS\_STATUS\_MEDIA\_CONNECT (for NDIS 5.1) or NDIS\_STATUS\_LINK\_STATE with **MediaConnectStateConnected** in the MediaConnectState property (for NDIS 6.x).
 
 Requirements
 ------------

@@ -1,7 +1,7 @@
 ---
-title: SO\_KEEPALIVE
+title: SO_KEEPALIVE
 author: windows-driver-content
-description: SO\_KEEPALIVE
+description: SO_KEEPALIVE
 ms.assetid: 47b29218-f227-4d36-b206-d8bf009252c0
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

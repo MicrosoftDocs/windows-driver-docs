@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_PERMANENT\_ADDRESS
+title: OID_DOT11_PERMANENT_ADDRESS
 author: windows-driver-content
-description: OID\_DOT11\_PERMANENT\_ADDRESS
+description: OID_DOT11_PERMANENT_ADDRESS
 ms.assetid: f7830cd0-2e9e-4d11-b027-106b990299d0
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

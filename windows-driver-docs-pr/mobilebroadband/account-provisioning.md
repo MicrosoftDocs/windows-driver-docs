@@ -39,7 +39,7 @@ A mobile broadband app can use the following triggers to update the provisioning
 
 -   **Incoming SMS** You can send SMS messages that your app understands. This might define a message that initiates a refresh, or automatically checks for updated usage upon receiving a threshold notification.
 
--   **Windows Notification Service** Any Windows Store app can register for push notifications and take actions based on their content. You can use this as a notification channel for provisioning updates.
+-   **Windows Notification Service** Any UWP app can register for push notifications and take actions based on their content. You can use this as a notification channel for provisioning updates.
 
 -   **Large location changes** If different parameters apply to users who are in different locales, a change in location might trigger an app to apply updated settings for the user’s new location.
 
@@ -115,7 +115,7 @@ Defines subscriber information on the mobile operator network. There are two dif
 
 -   [**DefaultProfile**](https://msdn.microsoft.com/library/windows/apps/hh868290) Every mobile broadband subscription can have one default profile that is used to connect to the home network operator. Windows Connection Manager uses this profile for auto-connecting to the network.
 
-    ``` syntax
+    ```xml
     <MBNProfiles>
         <DefaultProfile xmlns="http://www.microsoft.com/networking/CarrierControl/WWAN/v1">
           <Name>Contoso MBN</Name>
@@ -133,6 +133,13 @@ Defines subscriber information on the mobile operator network. There are two dif
     ```
 
 [**Branding**](https://msdn.microsoft.com/library/windows/apps/hh868446)
+
+> [!IMPORTANT]
+> Starting in Windows 10, version 1709, branding fields provisioned by the ProvisioningAgent API have been replaced by branding fields in the COSA database. **Logo** has been replaced by **Branding Icon** in COSA, and **Name** has been replaced by **Branding Name** in COSA.
+>
+> **Logo** and **Name** will no longer be considered when provisioning in Windows 10, version 1709 and later. The ProvisioningAgent API will not throw an error if they are used, but you should change **Branding Icon** and **Branding Name** in COSA instead.  
+>
+> For more information about **Branding Icon** and **Branding Name**, see [Desktop COSA/APN database settings (Desktop COSA only settings)](desktop-cosa-apn-database-settings.md#desktop-cosa-only-settings).
 
 Branding lets you specify how Windows displays your mobile broadband networks. This information overrides any service metadata, if present. If no information is provided, the contents of the service metadata package are used. The branding elements are as follows:
 
@@ -563,7 +570,7 @@ XSD schemas are available under **%SYSTEMROOT%\\schemas\\provisioning** on any c
 
 ### Apply provisioning XML to the device
 
-You can apply a provisioning XML file to a device by using a mobile broadband app, a Windows Store app, or from a web site.
+You can apply a provisioning XML file to a device by using a mobile broadband app, a UWP app, or from a web site.
 
 To provision from a mobile broadband app:
 
@@ -573,7 +580,7 @@ To provision from a mobile broadband app:
 
 The asynchronous operation complete and the results of the provisioning operation are returned.
 
-To provision from a Windows Store app other than the mobile broadband app:
+To provision from a UWP app other than the mobile broadband app:
 
 1.  Generate a signed Account Provisioning XML document.
 

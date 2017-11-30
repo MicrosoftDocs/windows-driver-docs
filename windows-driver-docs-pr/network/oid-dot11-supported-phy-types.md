@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_SUPPORTED\_PHY\_TYPES
+title: OID_DOT11_SUPPORTED_PHY_TYPES
 author: windows-driver-content
-description: When queried, the OID\_DOT11\_SUPPORTED\_PHY\_TYPES object identifier (OID) requests that the miniport driver return the value of the Native 802.11 Operational msDot11SupportedPhyTypes management information base (MIB) object.
+description: When queried, the OID_DOT11_SUPPORTED_PHY_TYPES object identifier (OID) requests that the miniport driver return the value of the Native 802.11 Operational msDot11SupportedPhyTypes management information base (MIB) object.
 ms.assetid: 4b267371-5e17-47d8-b521-bd4b130daa32
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

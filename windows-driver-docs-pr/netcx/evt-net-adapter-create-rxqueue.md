@@ -62,6 +62,11 @@ To retrieve the ring buffer associated with a given queue, call [**NetRxQueueGet
 Example
 -----
 
+>[!TIP]
+> This example uses DMA allocation for the receive queue. It is assumed that the example code previously declared a context for its NETADAPTER object and included a WDFDMAENABLER object in the context, which will now be retrieved in **EvtAdapterCreateRxQueue** to be used for receive buffer DMA allocation. For more info about receive queue DMA allocation, see [NetRxQueueInitSetDmaAllocatorConfig](netrxqueueinitsetdmaallocatorconfig.md).
+>
+> Error handling code has been excised from this example for brevity and clarity.
+
 ```cpp
 NTSTATUS
 EvtAdapterCreateRxQueue(
@@ -82,21 +87,38 @@ EvtAdapterCreateRxQueue(
     rxConfig.AlignmentRequirement = 64;
     rxConfig.AllocationSize = NIC_MAX_PACKET_SIZE + FRAME_CRC_SIZE + RSVD_BUF_SIZE;
 
-    // Assign fixed size data type as per packet context
+    // Initialize the per-packet context
 
-    NET_RXQUEUE_CONFIG_SET_DEFAULT_PACKET_CONTEXT_TYPE(&rxConfig, MY_RXQUEUE_PACKET_CONTEXT);
+    NET_PACKET_CONTEXT_ATTRIBUTES myRxContextAttributes;
+    NET_PACKET_CONTEXT_ATTRIBUTES_INIT_TYPE(&myRxContextAttributes, MY_RXQUEUE_PACKET_CONTEXT);
 
-    NTSTATUS status = NetRxQueueCreate(
+    // Add the context attributes to the queue
+
+    status = NetRxQueueInitAddPacketContextAttributes(rxQueueInit, &myRxContextAttributes);
+
+    // Retrieve the WDFDMAENABLER from the NETADAPTER's context to opt in to DMA allocation
+
+    MY_NET_ADAPTER_CONTEXT *adapterContext = GetMyNetAdapterContext(netAdapter);
+    WDFDMAENABLER dmaEnabler = adapterContext->dmaEnabler;
+
+    // Specify that the OS use the WDFDMAENABLER to allocate the receive buffers
+
+    NET_RXQUEUE_DMA_ALLOCATOR_CONFIG dmaAllocatorConfig;
+    NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT(
+        &dmaAllocatorConfig,
+        dmaEnabler);
+    
+    NetRxQueueInitSetDmaAllocatorConfig(
+        &rxQueueInit,
+        &dmaAllocatorConfig);
+
+    // Create the receive queue
+
+    status = NetRxQueueCreate(
         rxQueueInit,
         &rxAttributes,
         &rxConfig,
-        &adapter->RxQueue);
-
-    // Specify that the OS use a WDFDMAENABLER to allocate the receive buffers
-
-    status = NetRxQueueConfigureDmaAllocator(
-        adapter->RxQueue,
-        adapter->DmaEnabler);
+        &netAdapter->RxQueue);
 
      return status;
 }

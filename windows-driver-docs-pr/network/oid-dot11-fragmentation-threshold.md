@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_FRAGMENTATION\_THRESHOLD
+title: OID_DOT11_FRAGMENTATION_THRESHOLD
 author: windows-driver-content
-description: OID\_DOT11\_FRAGMENTATION\_THRESHOLD
+description: OID_DOT11_FRAGMENTATION_THRESHOLD
 ms.assetid: 4b2fe2e0-2a6d-4dbb-b46c-7de32f38a349
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

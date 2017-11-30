@@ -1,7 +1,7 @@
 ---
-title: OID\_WAN\_CO\_GET\_LINK\_INFO
+title: OID_WAN_CO_GET_LINK_INFO
 author: windows-driver-content
-description: The OID\_WAN\_CO\_GET\_LINK\_INFO OID requests the miniport driver to return PPP framing information about the current state of a virtual connection (VC). This information is returned in an NDIS\_WAN\_CO\_GET\_LINK\_INFO structure, defined as follows.
+description: The OID_WAN_CO_GET_LINK_INFO OID requests the miniport driver to return PPP framing information about the current state of a virtual connection (VC). This information is returned in an NDIS_WAN_CO_GET_LINK_INFO structure, defined as follows.
 ms.assetid: 26582bc4-c32f-4243-a208-9230c62f4d16
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

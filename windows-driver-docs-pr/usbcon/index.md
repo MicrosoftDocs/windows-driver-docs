@@ -69,7 +69,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p>Miscellaneous resources based on frequently asked questions from developers who are new to developing USB devices and drivers that work with Windows operating systems.</p>
 <p></p>
 <p><strong>USB-related videos</strong></p>
-[Windows Store apps for USB devices](http://channel9.msdn.com/Events/Build/2013/3-924a)
+[UWP apps for USB devices](http://channel9.msdn.com/Events/Build/2013/3-924a)
 [Understanding USB 3.0 in Windows 8](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-256T)
 [Building great USB 3.0 devices](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-773T)
 [USB Debugging Innovations in Windows 8 (Part I, II, & III)](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-258P)
@@ -103,8 +103,8 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p>Windows 10 introduces support for emulated devices. Now you can develop an emulated Universal Serial Bus (USB) host controller driver and a connected virtual USB device. Both components are combined into a single KMDF driver that communicates with the Microsoft-provided USB device emulation class extension (UdeCx).</p>
 <p>[Developing Windows drivers for emulated USB devices (UDE)](developing-windows-drivers-for-emulated-usb-host-controllers-and-devices.md)</p>
 <p>[Emulated USB host controller driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt628025)</p>
-<strong>Write a Windows Store app</strong>
-<p>Provides step-by-step instructions about implementing USB features in a Windows Store app. To write such an app for a USB device you need Visual Studio and Microsoft Windows Software Development Kit (SDK) .</p>
+<strong>Write a UWP app</strong>
+<p>Provides step-by-step instructions about implementing USB features in a UWP app. To write such an app for a USB device you need Visual Studio and Microsoft Windows Software Development Kit (SDK) .</p>
 <p>[Talk to USB devices, start to finish](talking-to-usb-devices-start-to-finish.md)</p>
 <p>[<strong>Windows.Devices.Usb</strong>](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb)</p>
 <strong>Write a Windows desktop app</strong>
@@ -115,7 +115,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p>List of common tasks that a driver or an app performs in order to communicate with a USB device. Get quick info about the programming interfaces you need for each task.</p>
 <p></p>
 <p><strong>USB samples</strong></p>
-<p>[Windows Store app samples for USB](http://go.microsoft.com/fwlink/p/?LinkID=309716)</p>
+<p>[UWP app samples for USB](http://go.microsoft.com/fwlink/p/?LinkID=309716)</p>
 <p>[Windows driver samples for USB](http://go.microsoft.com/fwlink/p/?linkid=618021)</p>
 <p><strong>Development tools</strong></p>
 [Download kits and tools for Windows]( http://go.microsoft.com/fwlink/p/?linkid=619491)</td>

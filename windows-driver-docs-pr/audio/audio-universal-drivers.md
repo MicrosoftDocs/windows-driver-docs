@@ -3,7 +3,7 @@ title: Universal Windows Drivers for Audio
 description: In Windows 10 you can write a universal audio driver that will work across many types of hardware.
 ms.assetid: F4B56B3F-792F-4887-AF0F-FFC1F000CB8F
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -104,6 +104,12 @@ A separate extension INF file is used for each software component. For more info
 An extension INF file must be a universal INF file. For more information, see [Using a Universal INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file).
 
 For information about adding software using INF files, see [Using a Component INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-component-inf-file).
+
+
+### Submitting componentized INF files
+
+APO INF packages must be submitted to the Hardware Dev Center separately from the base driver package. For more information about creating packages, see [Windows HLK Getting Started](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
+
 
 
 ### SYSVAD  componentized INF files

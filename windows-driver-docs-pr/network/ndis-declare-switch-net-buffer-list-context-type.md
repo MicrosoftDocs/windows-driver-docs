@@ -1,7 +1,7 @@
 ---
-title: NDIS\_DECLARE\_SWITCH\_NET\_BUFFER\_LIST\_CONTEXT\_TYPE macro
+title: NDIS_DECLARE_SWITCH_NET_BUFFER_LIST_CONTEXT_TYPE macro
 author: windows-driver-content
-description: Hyper-V extensible switch extensions use the NDIS\_DECLARE\_SWITCH\_NET\_BUFFER\_LIST\_CONTEXT\_TYPE macro to define the context type that is used by the SetNetBufferListSwitchContext and GetNetBufferListSwitchContext functions to attach and retrieve context from a NET\_BUFFER\_LIST structure. Extensions can define as many context types as they want within their driver.
+description: Hyper-V extensible switch extensions use the NDIS_DECLARE_SWITCH_NET_BUFFER_LIST_CONTEXT_TYPE macro to define the context type that is used by the SetNetBufferListSwitchContext and GetNetBufferListSwitchContext functions to attach and retrieve context from a NET_BUFFER_LIST structure. Extensions can define as many context types as they want within their driver.
 ms.assetid: 1DADD5C2-10AD-409C-9382-D98FC8789E5A
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

@@ -1,7 +1,7 @@
 ---
-title: OID\_GEN\_RCV\_NO\_BUFFER
+title: OID_GEN_RCV_NO_BUFFER
 author: windows-driver-content
-description: As a query, the OID\_GEN\_RCV\_NO\_BUFFER OID specifies the number of frames that the NIC cannot receive due to lack of NIC receive buffer space.
+description: As a query, the OID_GEN_RCV_NO_BUFFER OID specifies the number of frames that the NIC cannot receive due to lack of NIC receive buffer space.
 ms.assetid: 0fcbc7cc-439b-450f-b256-3584b29909fb
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

@@ -21,7 +21,7 @@ NDIS 6.50 is an incremental update to NDIS 6.40 and does not contain any major n
 
 ## Implementing an NDIS 6.50 driver
 
-An NDIS 6.50 driver must follow the requirements that are defined in [Implementing an NDIS 6.40 driver](implementing-an-ndis-6-40-driver.md).
+An NDIS 6.50 driver must follow the requirements that are defined in [Implementing an NDIS 6.30 driver](implementing-an-ndis-6-30-driver.md).
 
 In addition, an NDIS 6.50 driver must be compliant with the following requirements:
 

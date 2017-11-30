@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_PORT\_STATE\_NOTIFICATION
+title: OID_DOT11_PORT_STATE_NOTIFICATION
 author: windows-driver-content
-description: When set, the OID\_DOT11\_PORT\_STATE\_NOTIFICATION object identifier (OID) indicates the status of the data port used for network access to the access point (AP) (for infrastructure BSS networks) or peer station (for independent BSS networks) with which the 802.11 station is associated.
+description: When set, the OID_DOT11_PORT_STATE_NOTIFICATION object identifier (OID) indicates the status of the data port used for network access to the access point (AP) (for infrastructure BSS networks) or peer station (for independent BSS networks) with which the 802.11 station is associated.
 ms.assetid: 2696f8a4-d9dd-4b17-86a2-02d9855f9b87
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

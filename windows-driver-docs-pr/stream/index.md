@@ -18,6 +18,8 @@ ms.technology: windows-devices
 
 Use the guidance in this section to design and implement drivers for devices that stream video and possibly also audio, such as webcams and digital camcorders.
 
+[Camera class INF file setting for Universal camera drivers](camera-driver-inf-file-class-setting.md) (new for Windows 10, version 1709)
+
 [USB Video Class (UVC) driver implementation checklist](uvc-driver-implementation-checklist.md) (new for Windows 10, version 1703)
 
 Note these updates for Windows 10:

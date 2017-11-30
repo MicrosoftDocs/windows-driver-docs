@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_ENUM\_PEER\_INFO
+title: OID_DOT11_ENUM_PEER_INFO
 author: windows-driver-content
-description: OID\_DOT11\_ENUM\_PEER\_INFO
+description: OID_DOT11_ENUM_PEER_INFO
 ms.assetid: d836f261-b335-4284-9d5b-79ebb9943a02
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

@@ -25,6 +25,30 @@ Sensor drivers can raise **state change events**, which notify applications abou
 
 Sensor drivers raise state change events by calling the sensor class extension's [**ISensorClassExtension::PostStateChange**](https://msdn.microsoft.com/library/windows/hardware/ff545523) method. For example, a driver that has finished initializing a sensor will call this method to signal the new [**SensorState**](https://msdn.microsoft.com/library/windows/hardware/ff545708) value named SENSOR\_STATE\_READY.
 
+### Event Constants
+
+The sensor platform defines the following constants for driver events.
+
+**Sensor Event Types**
+
+The sensor platform defines the following sensor event types identifiers.
+
+| Name | Description |
+| --- | --- |
+| SENSOR_EVENT_DATA_UPDATED | Indicates that new data is available.
+| SENSOR_EVENT_PROPERTY_CHANGED| Indicates that a property value changed.|
+| SENSOR_EVENT_STATE_CHANGED| Indicates a change of operational state, for example, from SENSOR_STATE_INITIALIZING to SENSOR_STATE_READY.|
+
+
+**Sensor Event PROPERTYKEYs**
+
+The sensor platform defines the following **PROPERTYKEYs** to identify the parameters for sensor events.
+
+| Name | Description |
+| --- | --- |
+| SENSOR_EVENT_PARAMETER_EVENT_ID| Indicates that the GUID value in IPortableDeviceValues is an event type ID, such as SENSOR_EVENT_DATA_UPDATED.|
+| SENSOR_EVENT_PARAMETER_STATE| Indicates that the unsigned integer value in IPortableDeviceValues is a sensor state, such as SENSOR_STATE_READY.<br>**Note** To raise a state change event, call [ISensorClass Extension::PostStateChange](https://msdn.microsoft.com/library/windows/hardware/ff545523). You do not have to explicitly specify SENSOR_EVENT_PARAMETER_STATE to raise the event.|
+
 ### Other Events
 
 Sensor drivers raise all other types of events by calling the sensor class extension's [**ISensorClassExtension::PostEvent**](https://msdn.microsoft.com/library/windows/hardware/ff545519) method. This method provides a generic, extensible way to raise sensor events unrelated to operating state. Each call to **PostEvent** contains a pointer to [IPortableDeviceValuesCollection](http://go.microsoft.com/fwlink/p/?linkid=131487). Each [IPortableDeviceValues](http://go.microsoft.com/fwlink/p/?linkid=131486) object in this collection contains a **GUID** value for the SENSOR\_EVENT\_PARAMETER\_EVENT\_ID property, which identifies the event type, and optional data field values, which contain the event data. For example, a GPS driver that has new city data will use the SENSOR\_EVENT\_DATA\_UPDATED event ID and provide a string value for the SENSOR\_DATA\_TYPE\_CITY propertykey.
@@ -52,7 +76,7 @@ Like other data requests, requests for event notifications are made secure throu
 For more information about data privacy, see [Privacy and Security in the Sensor and Location Platform](https://msdn.microsoft.com/library/windows/hardware/ff545686)
 
 ## Related topics
-[**Sensor Properties**](https://msdn.microsoft.com/library/windows/hardware/ff545859)  
+[**Sensor Properties**](https://msdn.microsoft.com/library/windows/hardware/ff545859)
 
 --------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20About%20Sensor%20Driver%20Events%20%20RELEASE:%20%281/12/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

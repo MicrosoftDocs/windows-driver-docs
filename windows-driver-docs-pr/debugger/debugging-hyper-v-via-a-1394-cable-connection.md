@@ -2,6 +2,11 @@
 title: Debugging Hyper-V via a 1394 Cable Connection
 description: Debugging Hyper-V via a 1394 Cable Connection
 ms.assetid: da183635-8dc9-4092-b4c3-104304ee45f7
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging Hyper-V via a 1394 Cable Connection

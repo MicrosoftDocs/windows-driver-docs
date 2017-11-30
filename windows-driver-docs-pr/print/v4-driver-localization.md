@@ -1,7 +1,7 @@
 ---
 title: V4 Printer Driver Localization
 author: windows-driver-content
-description: Windows 8 has provided standard, localized display strings to support the development of printer extensions and Windows Store device apps.
+description: Windows 8 has provided standard, localized display strings to support the development of printer extensions and UWP device apps.
 ms.assetid: 5C587AF2-C51E-4728-A214-7FC1F8A6E445
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # V4 Printer Driver Localization
 
 
-Windows 8 has provided standard, localized display strings to support the development of printer extensions and Windows Store device apps.
+Windows 8 has provided standard, localized display strings to support the development of printer extensions and UWP device apps.
 
 These standard, localized display strings are provided through the new [**IPrintSchemaCapabilities**](https://msdn.microsoft.com/library/windows/hardware/hh451256) objects to support some features and their associated standard options. The following table shows the features that Windows 8 can localize with its standard display strings:
 
@@ -95,7 +95,7 @@ In addition, these strings are available in the XML forms of PrintCapabilities, 
 
 Across the different user interfaces and APIs, the display names vary. Use the following three flowcharts to see an overview of the expected localization behavior for a given scenario.
 
-The following flowchart shows the expected localization behavior in Windows Store apps, as well as in the [**IPrintSchemaFeature**](https://msdn.microsoft.com/library/windows/hardware/hh451284) and [**IPrintSchemaOption**](https://msdn.microsoft.com/library/windows/hardware/hh451335) families of objects.
+The following flowchart shows the expected localization behavior in UWP apps, as well as in the [**IPrintSchemaFeature**](https://msdn.microsoft.com/library/windows/hardware/hh451284) and [**IPrintSchemaOption**](https://msdn.microsoft.com/library/windows/hardware/hh451335) families of objects.
 
 ![localization behavior flowchart for windows store apps, iprintschemafeature or iprintschemaoption](images/locstringmodern.png)
 

@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_CURRENT\_OPERATION\_MODE
+title: OID_DOT11_CURRENT_OPERATION_MODE
 author: windows-driver-content
-description: OID\_DOT11\_CURRENT\_OPERATION\_MODE
+description: OID_DOT11_CURRENT_OPERATION_MODE
 ms.assetid: 6fe4261a-ab7a-4aef-a67b-62f76d83796e
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

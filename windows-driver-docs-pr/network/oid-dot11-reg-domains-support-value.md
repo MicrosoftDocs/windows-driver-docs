@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_REG\_DOMAINS\_SUPPORT\_VALUE
+title: OID_DOT11_REG_DOMAINS_SUPPORT_VALUE
 author: windows-driver-content
-description: When queried, the OID\_DOT11\_REG\_DOMAINS\_SUPPORT\_VALUE object identifier (OID) requests that the miniport driver return the list of regulatory domains supported by the Physical Layer Convergence Procedure (PLCP) and Physical Media Dependent (PMD) sublayers of the current PHY type on the 802.11 station.
+description: When queried, the OID_DOT11_REG_DOMAINS_SUPPORT_VALUE object identifier (OID) requests that the miniport driver return the list of regulatory domains supported by the Physical Layer Convergence Procedure (PLCP) and Physical Media Dependent (PMD) sublayers of the current PHY type on the 802.11 station.
 ms.assetid: 0449cb9e-02cb-4a23-a360-a6db1ac2b29d
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

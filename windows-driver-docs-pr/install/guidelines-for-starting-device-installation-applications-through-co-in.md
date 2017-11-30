@@ -20,7 +20,7 @@ The following guidelines must be followed for co-installers which supply [finish
 
     If the distribution medium is not present, the co-installer should offer the user the choice of either inserting a medium or downloading the device installation application from the Internet. If the user chooses to insert the medium, the co-installer should detect the new media notification, silently exit, and allow the medium's AutoRun process to start the device installation application.
 
-    A co-installer can detect the new media by listening for a WM\_DEVICECHANGED/DBT\_DEVICEARRIVAL message with dbch\_devicetype set to DBT\_DEVTYP\_VOLUME and dbcv\_flags set to DBTF\_MEDIA.
+    A co-installer can detect the new media by listening for a WM_DEVICECHANGED/DBT_DEVICEARRIVAL message with dbch_devicetype set to DBT_DEVTYP_VOLUME and dbcv_flags set to DBTF_MEDIA.
 
     For more information, see [Detecting Media Insertion or Removal](http://go.microsoft.com/fwlink/p/?linkid=161958).
 

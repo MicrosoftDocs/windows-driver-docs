@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_RESET\_REQUEST
+title: OID_DOT11_RESET_REQUEST
 author: windows-driver-content
-description: When a method request of the OID\_DOT11\_RESET\_REQUEST OID is made, the miniport driver must reset the specified IEEE layers of the 802.11 station and transition to the initialization (INIT) state of the current operation mode.
+description: When a method request of the OID_DOT11_RESET_REQUEST OID is made, the miniport driver must reset the specified IEEE layers of the 802.11 station and transition to the initialization (INIT) state of the current operation mode.
 ms.assetid: 1338f6fa-fe87-4c10-8c32-6525561354e0
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

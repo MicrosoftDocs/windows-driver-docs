@@ -30,68 +30,68 @@ For information about how to access the device relations properties on Windows S
 
 ### <a href="" id="retrieving-ejection-relations--removal-relations--and-power-relations-"></a> Retrieving Ejection Relations, Removal Relations, and Power Relations, and Bus Relations
 
-To retrieve device relations information on Windows Server 2003, Windows XP, and Windows 2000, call **CM\_Get\_Device\_ID\_List** and supply the following parameter values:
+To retrieve device relations information on Windows Server 2003, Windows XP, and Windows 2000, call **CM_Get_Device_ID_List** and supply the following parameter values:
 
 -   Set *pszFilter* to a pointer to a NULL-terminated string that specifies the device instance identifier for which to retrieve relations information.
 
--   Set *Buffer* to a pointer to a buffer that receives a list of NULL-terminated device instance identifiers. The list is terminated by an additional NULL character. You can get the required buffer size by calling the **CM\_Get\_Device\_ID\_List\_Size** function.
+-   Set *Buffer* to a pointer to a buffer that receives a list of NULL-terminated device instance identifiers. The list is terminated by an additional NULL character. You can get the required buffer size by calling the **CM_Get_Device_ID_List_Size** function.
 
 -   Set *BufferLen* to the size, in characters, of the *Buffer* buffer.
 
 -   Set *ulFlags* to one of the following flags to retrieve the corresponding relations information:
-    -   CM\_GETIDLIST\_FILTER\_EJECTIONRELATIONS
+    -   CM_GETIDLIST_FILTER_EJECTIONRELATIONS
 
-        The CM\_GETIDLIST\_FILTER\_EJECTIONRELATIONS flag retrieves [**ejection relations**](https://msdn.microsoft.com/library/windows/hardware/ff551670), which is the same information that is provided by the [**DEVPKEY\_Device\_EjectionRelations**](https://msdn.microsoft.com/library/windows/hardware/ff542482) device property in Windows Vista and later versions.
+        The CM_GETIDLIST_FILTER_EJECTIONRELATIONS flag retrieves [**ejection relations**](https://msdn.microsoft.com/library/windows/hardware/ff551670), which is the same information that is provided by the [**DEVPKEY_Device_EjectionRelations**](https://msdn.microsoft.com/library/windows/hardware/ff542482) device property in Windows Vista and later versions.
 
-    -   CM\_GETIDLIST\_FILTER\_REMOVALRELATIONS
+    -   CM_GETIDLIST_FILTER_REMOVALRELATIONS
 
-        The CM\_GETIDLIST\_FILTER\_REMOVALRELATIONS flag retrieves [**removal relations**](https://msdn.microsoft.com/library/windows/hardware/ff551670), which is the same information that is provided by the [**DEVPKEY\_Device\_RemovalRelations**](https://msdn.microsoft.com/library/windows/hardware/ff542614) device property in Windows Vista and later versions.
+        The CM_GETIDLIST_FILTER_REMOVALRELATIONS flag retrieves [**removal relations**](https://msdn.microsoft.com/library/windows/hardware/ff551670), which is the same information that is provided by the [**DEVPKEY_Device_RemovalRelations**](https://msdn.microsoft.com/library/windows/hardware/ff542614) device property in Windows Vista and later versions.
 
-    -   CM\_GETIDLIST\_FILTER\_POWERRELATIONS
+    -   CM_GETIDLIST_FILTER_POWERRELATIONS
 
-        The CM\_GETIDLIST\_FILTER\_POWERRELATIONS flag retrieves power relations, which is the same information that is provided by the [**DEVPKEY\_Device\_PowerRelations**](https://msdn.microsoft.com/library/windows/hardware/ff542588) device property in Windows Vista and later versions.
+        The CM_GETIDLIST_FILTER_POWERRELATIONS flag retrieves power relations, which is the same information that is provided by the [**DEVPKEY_Device_PowerRelations**](https://msdn.microsoft.com/library/windows/hardware/ff542588) device property in Windows Vista and later versions.
 
-    -   CM\_GETIDLIST\_FILTER\_BUSRELATIONS
+    -   CM_GETIDLIST_FILTER_BUSRELATIONS
 
-        The CM\_GETIDLIST\_FILTER\_BUSRELATIONS flag retrieves [**bus relations**](https://msdn.microsoft.com/library/windows/hardware/ff551670), which is the same information that is provided by the [**DEVPKEY\_Device\_BusRelations**](https://msdn.microsoft.com/library/windows/hardware/ff542368) device property in Windows Vista and later versions.
+        The CM_GETIDLIST_FILTER_BUSRELATIONS flag retrieves [**bus relations**](https://msdn.microsoft.com/library/windows/hardware/ff551670), which is the same information that is provided by the [**DEVPKEY_Device_BusRelations**](https://msdn.microsoft.com/library/windows/hardware/ff542368) device property in Windows Vista and later versions.
 
-If the call to **CM\_Get\_Device\_ID\_List** succeeds, **CM\_Get\_Device\_ID\_List** retrieves the requested relations information and returns CR\_SUCCESS. Otherwise, **CM\_Get\_Device\_ID\_List** returns one of the error codes with prefix "CR\_" that are defined in *Cfgmgr32.h*.
+If the call to **CM_Get_Device_ID_List** succeeds, **CM_Get_Device_ID_List** retrieves the requested relations information and returns CR_SUCCESS. Otherwise, **CM_Get_Device_ID_List** returns one of the error codes with prefix "CR_" that are defined in *Cfgmgr32.h*.
 
 ### <a href="" id="retrieving-the-parent-of-a-device-inst"></a> Retrieving the Parent of a Device Instance
 
 To retrieve the device instance identifier of a parent device on Windows Server 2003, Windows XP, and Windows 2000, follow these steps:
 
-1.  Call the [**CM\_Get\_Parent**](https://msdn.microsoft.com/library/windows/hardware/ff538610) function to retrieve a device instance handle to the parent device of a device instance.
+1.  Call the [**CM_Get_Parent**](https://msdn.microsoft.com/library/windows/hardware/ff538610) function to retrieve a device instance handle to the parent device of a device instance.
 
-2.  Call [**CM\_Get\_Device\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff538405) to retrieve the device instance identifier that is associated with the device instance handle to the parent device that was retrieved by the previous call to **CM\_Get\_Parent**.
+2.  Call [**CM_Get_Device_ID**](https://msdn.microsoft.com/library/windows/hardware/ff538405) to retrieve the device instance identifier that is associated with the device instance handle to the parent device that was retrieved by the previous call to **CM_Get_Parent**.
 
-This information retrieved by using this procedure is the same as that represented by the DEVPKEY\_Device\_Parent property in the unified device property model of Windows Vista and later versions.
+This information retrieved by using this procedure is the same as that represented by the DEVPKEY_Device_Parent property in the unified device property model of Windows Vista and later versions.
 
 ### <a href="" id="retrieving-the-children-of-a-device-inst"></a>Retrieving the Children of a Device Instance
 
 To retrieve the device instance identifiers of the child devices of a device instance on Windows Server 2003, Windows XP, and Windows 2000, follow these steps:
 
-1.  Call the [**CM\_Get\_Child**](https://msdn.microsoft.com/library/windows/hardware/ff538074) function to retrieve a device instance handle to the first child device that is associated with a device instance.
+1.  Call the [**CM_Get_Child**](https://msdn.microsoft.com/library/windows/hardware/ff538074) function to retrieve a device instance handle to the first child device that is associated with a device instance.
 
-2.  Call [**CM\_Get\_Sibling**](https://msdn.microsoft.com/library/windows/hardware/ff538674) as many times as it is necessary to enumerate all the sibling devices of the first child device that was retrieved by the call to **CM\_Get\_Child**.
+2.  Call [**CM_Get_Sibling**](https://msdn.microsoft.com/library/windows/hardware/ff538674) as many times as it is necessary to enumerate all the sibling devices of the first child device that was retrieved by the call to **CM_Get_Child**.
 
-3.  Call **CM\_Get\_Device\_ID** to retrieve the device instance identifiers that are associated with the device instance handles that were returned by the calls to **CM\_Get\_Child** and **CM\_Get\_Sibling**.
+3.  Call **CM_Get_Device_ID** to retrieve the device instance identifiers that are associated with the device instance handles that were returned by the calls to **CM_Get_Child** and **CM_Get_Sibling**.
 
-This information retrieved by using this procedure is the same as that represented by the DEVPKEY\_Device\_Children property in the unified device property model of Windows Vista and later versions.
+This information retrieved by using this procedure is the same as that represented by the DEVPKEY_Device_Children property in the unified device property model of Windows Vista and later versions.
 
 ### <a href="" id="retrieving-the-siblings-of-a-device-inst"></a>Retrieving the Siblings of a Device Instance
 
 To retrieve the device instance identifiers of the sibling devices of device instance Abc on Windows Server 2003, Windows XP, and Windows 2000, follow these steps:
 
-1.  Call the [**CM\_Get\_Parent**](https://msdn.microsoft.com/library/windows/hardware/ff538610) function to retrieve a device instance handle to the parent device of device instance *Abc*.
+1.  Call the [**CM_Get_Parent**](https://msdn.microsoft.com/library/windows/hardware/ff538610) function to retrieve a device instance handle to the parent device of device instance *Abc*.
 
-2.  Call the [**CM\_Get\_Child**](https://msdn.microsoft.com/library/windows/hardware/ff538074) function to retrieve a device instance handle to the first child device of the parent device of device instance *Abc*.
+2.  Call the [**CM_Get_Child**](https://msdn.microsoft.com/library/windows/hardware/ff538074) function to retrieve a device instance handle to the first child device of the parent device of device instance *Abc*.
 
-3.  Call [**CM\_Get\_Sibling**](https://msdn.microsoft.com/library/windows/hardware/ff538674) as many times as is necessary to enumerate all the sibling devices of the first child device of the parent device. This enumeration will also return a handle to device instance *Abc*.
+3.  Call [**CM_Get_Sibling**](https://msdn.microsoft.com/library/windows/hardware/ff538674) as many times as is necessary to enumerate all the sibling devices of the first child device of the parent device. This enumeration will also return a handle to device instance *Abc*.
 
-4.  Call [**CM\_Get\_Device\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff538405) to retrieve the device instance identifiers that are associated with the device instance handles that were returned by the previous calls to **CM\_Get\_Sibling**. Remove the handle to device instance *Abc* from the list of sibling devices of the first child device of the parent device.
+4.  Call [**CM_Get_Device_ID**](https://msdn.microsoft.com/library/windows/hardware/ff538405) to retrieve the device instance identifiers that are associated with the device instance handles that were returned by the previous calls to **CM_Get_Sibling**. Remove the handle to device instance *Abc* from the list of sibling devices of the first child device of the parent device.
 
-The information retrieved by using this procedure is the same as that represented by the DEVPKEY\_Device\_Siblings property in the unified device property model of Windows Vista and later versions. If a **CM\_*Xxx*** function call listed in this section succeeds, the **CM\_*Xxx*** function retrieves the requested information and returns CR\_SUCCESS. Otherwise, the **CM\_*Xxx*** function returns one of the error codes with prefix "CR\_" that are defined in *Cfgmgr32.h*.
+The information retrieved by using this procedure is the same as that represented by the DEVPKEY_Device_Siblings property in the unified device property model of Windows Vista and later versions. If a **CM_*Xxx*** function call listed in this section succeeds, the **CM_*Xxx*** function retrieves the requested information and returns CR_SUCCESS. Otherwise, the **CM_*Xxx*** function returns one of the error codes with prefix "CR_" that are defined in *Cfgmgr32.h*.
 
  
 

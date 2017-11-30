@@ -1,7 +1,7 @@
 ---
-title: OID\_SWITCH\_PORT\_TEARDOWN
+title: OID_SWITCH_PORT_TEARDOWN
 author: windows-driver-content
-description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID\_SWITCH\_PORT\_TEARDOWN to notify underlying extensible switch extensions that an extensible switch port will begin the deletion process.
+description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_PORT_TEARDOWN to notify underlying extensible switch extensions that an extensible switch port will begin the deletion process.
 ms.assetid: 94FA23AC-2064-40C8-B99C-D8D3DC10BFF9
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

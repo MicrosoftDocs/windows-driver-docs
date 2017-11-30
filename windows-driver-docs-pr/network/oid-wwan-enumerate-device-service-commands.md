@@ -1,7 +1,7 @@
 ---
-title: OID\_WWAN\_ENUMERATE\_DEVICE\_SERVICE\_COMMANDS
+title: OID_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS
 author: windows-driver-content
-description: OID\_WWAN\_ENUMERATE\_DEVICE\_SERVICE\_COMMANDS returns a list of commands supported for a device service.NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS status notification containing a NDIS\_WWAN\_ENUMERATE\_DEVICE\_SERVICE\_COMMANDS structure that describes the result of the operation.
+description: OID_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS returns a list of commands supported for a device service.NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS status notification containing a NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS structure that describes the result of the operation.
 ms.assetid: 9888E4EC-D4BB-4BAC-B20B-DFA51005EEDA
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_EJECT
+title: IRP_MN_EJECT
 author: windows-driver-content
 description: Bus drivers typically handle this request for their child devices (child PDOs) that support device ejection. Function and filter drivers do not receive this request.
 ms.author: windowsdriverdev

@@ -1,7 +1,7 @@
 ---
-title: OID\_PM\_PROTOCOL\_OFFLOAD\_LIST
+title: OID_PM_PROTOCOL_OFFLOAD_LIST
 author: windows-driver-content
-description: As a query, overlying drivers can use the OID\_PM\_PROTOCOL\_OFFLOAD\_LIST OID to enumerate the protocol offloads that are set on an underlying network adapter.
+description: As a query, overlying drivers can use the OID_PM_PROTOCOL_OFFLOAD_LIST OID to enumerate the protocol offloads that are set on an underlying network adapter.
 ms.assetid: 95ace77b-e583-4611-8460-af67b4d4805d
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

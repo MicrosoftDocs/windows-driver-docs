@@ -1,7 +1,7 @@
 ---
-title: OID\_PACKET\_COALESCING\_FILTER\_MATCH\_COUNT
+title: OID_PACKET_COALESCING_FILTER_MATCH_COUNT
 author: windows-driver-content
-description: NDIS issues an OID query request of OID\_PACKET\_COALESCING\_FILTER\_MATCH\_COUNT to obtain the number of packets that were cached, or coalesced, on the network adapter.
+description: NDIS issues an OID query request of OID_PACKET_COALESCING_FILTER_MATCH_COUNT to obtain the number of packets that were cached, or coalesced, on the network adapter.
 ms.assetid: 3325865D-A329-4562-8270-CC2F42043D48
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

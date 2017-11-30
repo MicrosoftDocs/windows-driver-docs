@@ -2,6 +2,11 @@
 title: Configuring Exceptions and Events in Visual Studio
 description: You can configure the Windows Debugger to react to specified exceptions and events in a pre-determined way. For each exception, you can set the break status and the handling status. 
 ms.assetid: 531CFE28-B0DA-4B6D-896F-C8F678C7FE00
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configuring Exceptions and Events in Visual Studio

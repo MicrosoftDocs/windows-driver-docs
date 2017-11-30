@@ -1,7 +1,7 @@
 ---
-title: OID\_GEN\_CURRENT\_PACKET\_FILTER
+title: OID_GEN_CURRENT_PACKET_FILTER
 author: windows-driver-content
-description: As a query, the OID\_GEN\_CURRENT\_PACKET\_FILTER OID reports the types of net packets that are in receive indications from a miniport driver.
+description: As a query, the OID_GEN_CURRENT_PACKET_FILTER OID reports the types of net packets that are in receive indications from a miniport driver.
 ms.assetid: d5a32626-caff-4708-a134-d80a845dee91
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

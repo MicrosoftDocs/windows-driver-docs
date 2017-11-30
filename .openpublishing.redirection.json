@@ -6,6 +6,101 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows-driver-docs-pr/debugger/debugging-windows-store-apps-using-the-windows-debugger.md",
+      "redirect_URL": "/windows-hardware/drivers/debugger/debugging-uwp-apps-using-the-windows-debugger",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/usbcon/writing-usb-device-companion-apps-for-uwp.md",
+      "redirect_URL": "/windows-hardware/drivers/usbcon/writing-usb-device-companion-apps-for-microsoft-store",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/auto-install-for-windows-store-device-apps.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/auto-install-for-uwp-device-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/autoplay-for-windows-store-device-apps.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/autoplay-for-uwp-device-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/build-a-windows-store-device-app-step-by-step.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/build-a-uwp-device-app-step-by-step",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/device-sync-and-update-for-windows-store-device-apps.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/device-sync-and-update-for-uwp-device-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/meet-windows-store-device-apps.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/meet-uwp-device-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/step-1--create-a-windows-store-device-app.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/step-1--create-a-uwp-device-app",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/windows-store-device-apps-for-printers.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/uwp-device-apps-for-printers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/windows-store-device-apps-for-specialized-devices.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/uwp-device-apps-for-specialized-devices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/windows-store-device-apps-for-webcams.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/uwp-device-apps-for-webcams",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/mobilebroadband/windows-store-mobile-broadband-apps.md",
+      "redirect_URL": "/windows-hardware/drivers/mobilebroadband/uwp-mobile-broadband-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/usbcon/how-to-connect-to-a-usb-device--windows-store-app-.md",
+      "redirect_URL": "/windows-hardware/drivers/usbcon/how-to-connect-to-a-usb-device--uwp-app-",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/usbcon/how-to-get-usb-descriptors--windows-store-app-.md",
+      "redirect_URL": "/windows-hardware/drivers/usbcon/how-to-get-usb-descriptors--uwp-app-",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/usbcon/how-to-select-a-usb-interface-setting--windows-store-app-.md",
+      "redirect_URL": "/windows-hardware/drivers/usbcon/how-to-select-a-usb-interface-setting--uwp-app-",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/usbcon/how-to-send-a-usb-bulk-transfer--windows-store-app-.md",
+      "redirect_URL": "/windows-hardware/drivers/usbcon/how-to-send-a-usb-bulk-transfer--uwp-app-",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/usbcon/how-to-send-a-usb-control-transfer--windows-store-app-.md",
+      "redirect_URL": "/windows-hardware/drivers/usbcon/how-to-send-a-usb-control-transfer--uwp-app-",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/usbcon/how-to-send-a-usb-interrupt-transfer--windows-store-app-.md",
+      "redirect_URL": "/windows-hardware/drivers/usbcon/how-to-send-a-usb-interrupt-transfer--uwp-app-",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/usbcon/writing-usb-device-companion-apps-for-windows-store.md",
+      "redirect_URL": "/windows-hardware/drivers/usbcon/writing-usb-device-companion-apps-for-uwp",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/devtest/28110---drivers-must-protect-floating-point-hardware-state--see-use-of.md",
       "redirect_URL": "/windows-hardware/drivers/devtest/28110-floating-point-hardware-protect ",
       "redirect_document_id": true
@@ -13,6 +108,11 @@
     {
       "source_path": "windows-driver-docs-pr/devtest/28111---the-irql-where-the-floating-point-state-was-saved-does-not-mat.md",
       "redirect_URL": "/windows-hardware/drivers/devtest/28111-floating-point-irql-mismatch ",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/develop/visual-studio-driver-development-environment.md",
+      "redirect_URL": "/windows-hardware/drivers/develop/index",
       "redirect_document_id": true
     },
     {
@@ -786,6 +886,36 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows-driver-docs-pr/mobilebroadband/cosa---faq.md",
+      "redirect_URL": "/windows-hardware/drivers/mobilebroadband/cosa-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/mobilebroadband/apn-database.md",
+      "redirect_URL": "/windows-hardware/drivers/mobilebroadband/apn-database-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/mobilebroadband/apn-database-submission.md",
+      "redirect_URL": "/windows-hardware/drivers/mobilebroadband/cosa-apn-database-submission",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/mobilebroadband/planning-your-apn-database-submission.md",
+      "redirect_URL": "/windows-hardware/drivers/mobilebroadband/planning-your-desktop-cosa-apn-database-submission",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/mobilebroadband/testing-your-apn-database-submission.md",
+      "redirect_URL": "/windows-hardware/drivers/mobilebroadband/testing-your-cosa-apn-database-submission",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/mobilebroadband/submitting-the-apn-database-update.md",
+      "redirect_URL": "/windows-hardware/drivers/mobilebroadband/submitting-the-cosa-apn-database-update",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/network/remote-ndis--rndis.md",
       "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-communication",
       "redirect_document_id": true
@@ -865,7 +995,17 @@
       "redirect_URL": "/windows-hardware/drivers/network/remote-ndis-packet-msg",
       "redirect_document_id": true
     },
-        {
+    {
+      "source_path": "windows-driver-docs-pr/mobilebroadband/testing-your-cosa-apn-database-submission.md",
+      "redirect_URL": "/windows-hardware/drivers/mobilebroadband/testing-your-desktop-cosa-apn-database-submission",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/mobilebroadband/submitting-the-cosa-apn-database-update.md",
+      "redirect_URL": "/windows-hardware/drivers/mobilebroadband/submitting-the-desktop-cosa-apn-database-update",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/devapps/custom-capabilities-for-universal-windows-platform-apps.md",
       "redirect_URL": "/windows-hardware/drivers/devapps/creating-a-custom-capability-to-pair-driver-with-hsa",
       "redirect_document_id": true
@@ -875,14 +1015,54 @@
       "redirect_URL": "/windows-hardware/drivers/devapps/using-a-custom-capability-to-pair-hsa-with-driver",
       "redirect_document_id": true
     },
-        {
+    {
       "source_path": "windows-driver-docs-pr/install/adding-software-components-with-an-inf-file.md",
       "redirect_URL": "/windows-hardware/drivers/install/using-a-component-inf-file",
       "redirect_document_id": true
     },
     {
+      "source_path": "windows-driver-docs-pr/netcx/netpowersettingsgetenabledprotocoloffloads.md",
+      "redirect_URL": "/windows-hardware/drivers/netcx/netpowersettingsgetenabledprotocoloffloadflags",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/develop/installing-the-enterprise-wdk.md",
       "redirect_URL": "/windows-hardware/drivers/develop/using-the-enterprise-wdk",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/porting-ndis-to-netadapter-cx.md",
+      "redirect_URL": "/windows-hardware/drivers/netcx/porting-ndis-miniport-drivers-to-netadaptercx",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/debugging-netadaptercx-client-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/netcx/debugging-a-netadaptercx-client-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/power-up-sequence-for-ndis-wdf-client-driver.md",
+      "redirect_URL": "/windows-hardware/drivers/netcx/power-up-sequence-for-a-netadaptercx-client-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/power-down-sequence-for-ndis-wdf-client-driver.md",
+      "redirect_URL": "/windows-hardware/drivers/netcx/power-down-sequence-for-a-netadaptercx-client-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/class-extension--net--limitations.md",
+      "redirect_URL": "/windows-hardware/drivers/netcx/netadaptercx-limitations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/netconfigurationquerynetworkaddress.md",
+      "redirect_URL": "/windows-hardware/drivers/netcx/netconfigurationquerylinklayeraddress",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/netrxqueueconfiguredmaallocator.md",
+      "redirect_URL": "/windows-hardware/drivers/netcx/netrxqueueinitsetdmaallocatorconfig",
       "redirect_document_id": true
     },
     {

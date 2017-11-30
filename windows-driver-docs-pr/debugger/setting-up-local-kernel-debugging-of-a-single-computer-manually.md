@@ -2,6 +2,11 @@
 title: Setting Up Local Kernel Debugging of a Single Computer Manually
 description: Setting Up Local Kernel Debugging of a Single Computer Manually
 ms.assetid: FC717B1C-A68A-4002-A528-BFC3521C5E8A
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Up Local Kernel Debugging of a Single Computer Manually

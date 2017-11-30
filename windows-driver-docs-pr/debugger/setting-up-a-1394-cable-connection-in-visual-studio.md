@@ -2,6 +2,11 @@
 title: Setting Up Kernel-Mode Debugging over a 1394 Cable in Visual Studio
 description: You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over a 1394 (Firewire) cable.
 ms.assetid: 07784500-83F1-4927-998F-7CEEEADAA2B0
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Up Kernel-Mode Debugging over a 1394 Cable in Visual Studio

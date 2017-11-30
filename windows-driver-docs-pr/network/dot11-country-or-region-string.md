@@ -1,5 +1,5 @@
 ---
-title: DOT11\_COUNTRY\_OR\_REGION\_STRING
+title: DOT11_COUNTRY_OR_REGION_STRING
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 ms.assetid: f8302c7d-de43-45e4-a03b-d1bf2b0a9fc1

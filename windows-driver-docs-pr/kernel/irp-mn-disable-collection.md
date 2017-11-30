@@ -1,5 +1,5 @@
 ---
-title: IRP\_MN\_DISABLE\_COLLECTION
+title: IRP_MN_DISABLE_COLLECTION
 author: windows-driver-content
 description: Any WMI driver that registers one or more of its data blocks as expensive to collect must handle this IRP.
 ms.author: windowsdriverdev

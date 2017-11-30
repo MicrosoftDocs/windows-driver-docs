@@ -61,7 +61,7 @@ For example, if a user plugs a wireless local area network (WLAN) adapter into a
 
 -   The device installation process searches for a matching driver package from one of the following locations:
 
-    -   The Universal Naming Convention (*UNC*) paths that are identified by the **DevicePath** registry value of **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion**.
+    -   The Universal Naming Convention (*UNC*) paths that are identified by the **DevicePath** registry value of **HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion**.
 
     -   Windows Update
 

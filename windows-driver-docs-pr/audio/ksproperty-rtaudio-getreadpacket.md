@@ -1,0 +1,113 @@
+---
+title: KSPROPERTY\_RTAUDIO\_GETREADPACKET
+description: KSPROPERTY\_RTAUDIO\_GETREADPACKET returns information about captured audio packets.
+ms.assetid: BA52CDCE-0178-4C90-A82C-15800DD3709E
+keywords: ["KSPROPERTY_RTAUDIO_GETREADPACKET Audio Devices"]
+topic_type:
+- apiref
+api_name:
+- KSPROPERTY_RTAUDIO_GETREADPACKET
+api_location:
+- Ksmedia.h
+api_type:
+- HeaderDef
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+---
+
+# KSPROPERTY\_RTAUDIO\_GETREADPACKET
+
+
+KSPROPERTY\_RTAUDIO\_GETREADPACKET returns information about captured audio packets.
+
+### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+
+<table>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Get</th>
+<th align="left">Set</th>
+<th align="left">Target</th>
+<th align="left">Property descriptor type</th>
+<th align="left">Property value type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>Pin</p></td>
+<td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
+<td align="left"><p>[<strong>KSRTAUDIO_GETREADPACKET_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/mt786976)</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+The property descriptor (instance data) is a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure. Before sending the request, the client loads the structure with values that indicate the preferred base address for the register.
+
+The property value is a variable of type [**KSRTAUDIO\_GETREADPACKET\_INFO**](https://msdn.microsoft.com/library/windows/hardware/mt786976).
+
+### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
+
+A KSPROPERTY\_RTAUDIO\_GETREADPACKET property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate failure status code.
+
+STATUS\_DEVICE\_NOT\_READY - The driver returns this error if no new data is available.
+
+Remarks
+-------
+
+Before reading captured audio data from the WaveRT buffer, the OS calls this routine to get information about the available data.
+
+The packet number identifies a packet within the stream. This resets to zero when the stream is in KSSTATE\_STOP. The number advances with each captured buffer. From the packet number the OS can derive the packet location within the WaveRT buffer and can also derive the stream position of the packet relative to start of stream.
+
+The packet size is the WaveRT buffer size divided by the NotificationCount passed to [**KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION**](ksproperty-rtaudio-buffer-with-notification.md). The OS may call this routine at any time. In normal operation, the OS calls this routine after the driver sets the buffer notification event or after a previous call returns true for MoreData. When the OS calls this routine, the driver may assume that the OS has finished reading all previous packets. If the hardware has captured enough data, the driver may immediately burst the next complete packet to the WaveRT buffer and set the buffer event again. In the case of capture overflow (when the OS does not read data quickly enough) the audio driver may drop or overwrite some audio data. The audio driver drops or overwrites oldest data first, The audio driver may continue to advance its internal packet counter even though the OS may not have read the data.
+
+Requirements
+------------
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p>Version</p></td>
+<td align="left"><p>Available in Windows 10 and later Windows operating systems.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Header</p></td>
+<td align="left">Ksmedia.h</td>
+</tr>
+</tbody>
+</table>
+
+## <span id="see_also"></span>See also
+
+
+[**KSPROPERTY\_RTAUDIO\_SETWRITEPACKET**](ksproperty-rtaudio-setwritepacket.md)
+
+[UsePositionLock](usepositionlock.md)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20KSPROPERTY_RTAUDIO_GETREADPACKET%20%20RELEASE:%20%2811/22/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
+

@@ -1,7 +1,7 @@
 ---
-title: NDIS\_STATUS\_DOT11\_LINK\_QUALITY
+title: NDIS_STATUS_DOT11_LINK_QUALITY
 author: windows-driver-content
-description: A miniport driver makes the NDIS\_STATUS\_DOT11\_LINK\_QUALITY indication whenever the link quality of the association with an access point (AP) or peer station changes.
+description: A miniport driver makes the NDIS_STATUS_DOT11_LINK_QUALITY indication whenever the link quality of the association with an access point (AP) or peer station changes.
 ms.assetid: 911397fd-e898-4970-9a1b-7baf57e16687
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

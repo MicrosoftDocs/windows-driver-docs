@@ -40,6 +40,7 @@ Defines which signature or catalog attribute needs to be applied to the file. Sh
 -   HalExt
 -   PETrust
 -   DRM
+-   WindowsHello
 
 <a href="" id="attribute-attribute-name"></a>**Attribute=***attribute-name*  
 Each Signature Type has a corresponding attribute and value, as listed below. Use these definitions for your SignatureAttributes subsections:
@@ -48,6 +49,7 @@ Each Signature Type has a corresponding attribute and value, as listed below. Us
 -   **SignatureAttributes.HalExt**: HalExt = true
 -   **SignatureAttributes.DRM**: DRMLevel = {1300 | 1200}
 -   **SignatureAttributes.PETrust**: PETrust = true
+-   **SignatureAttributes.WindowsHello**: WindowsHello = true
 
 Remarks
 -------
@@ -102,6 +104,17 @@ ELAMFILE.dll=SignatureAttributes.Elam
 [SignatureAttributes.Elam]
 Elam=true
 ```
+
+The following examples demonstrate how to enumerate and request additional signatures for Windows Hello:
+
+```
+[SignatureAttributes]
+WindowsHelloFile.dll=SignatureAttributes.WindowsHello
+
+[SignatureAttributes.WindowsHello]
+WindowsHello=true
+```
+
 
 ## See also
 

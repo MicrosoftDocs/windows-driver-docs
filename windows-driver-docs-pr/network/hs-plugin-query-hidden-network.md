@@ -1,7 +1,7 @@
 ---
-title: HS\_PLUGIN\_QUERY\_HIDDEN\_NETWORK function
+title: HS_PLUGIN_QUERY_HIDDEN_NETWORK function
 author: windows-driver-content
-description: The HS\_PLUGIN\_QUERY\_HIDDEN\_NETWORK function returns the network identity and network profile for a hidden network.
+description: The HS_PLUGIN_QUERY_HIDDEN_NETWORK function returns the network identity and network profile for a hidden network.
 ms.assetid: edf5ddb0-22f6-4c24-a118-3915a1f2b0af
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_QUERY_HIDDEN_NETWORK) function Network Drivers Starting with Windows Vista
@@ -13,6 +13,8 @@ ms.technology: windows-devices
 ---
 
 # HS\_PLUGIN\_QUERY\_HIDDEN\_NETWORK function
+
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_PLUGIN\_QUERY\_HIDDEN\_NETWORK** function returns the network identity and network profile for a hidden network.

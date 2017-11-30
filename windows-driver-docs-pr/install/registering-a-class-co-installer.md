@@ -28,7 +28,7 @@ To register a co-installer for every device of a particular setup class, create 
 
 The system creates the **CoDeviceInstallers** key. *Setup-class-GUID* specifies the GUID for the [device setup class](device-setup-classes.md). If the co-installer applies to more than one class of devices, create a separate value entry for each setup class.
 
-You must not overwrite other co-installers that have been previously written to the *setup-class-GUID* key. Read the key, append your co-installer string to the REG\_MULTI\_SZ list, and write the key back to the registry.
+You must not overwrite other co-installers that have been previously written to the *setup-class-GUID* key. Read the key, append your co-installer string to the REG_MULTI_SZ list, and write the key back to the registry.
 
 If you omit the *CoInstallEntryPoint*, the default is CoDeviceInstall.
 
@@ -55,7 +55,7 @@ HKLM,System\CurrentControlSet\Control\CoDeviceInstallers, \
 ; above line uses the line continuation character ()
 ```
 
-This sample INF copies the file *classXcoinst.dll* to the system directory and makes an entry for the *setup-class-GUID* class under the **CoDeviceInstallers** key. The entry in the *Xxx*\_AddReg section specifies two flags: the "00010000" flag specifies that the entry is a REG\_MULTI\_SZ, and the "00000008" flag specifies that the new value is to be appended to any existing value (if the new value is not already present in the string).
+This sample INF copies the file *classXcoinst.dll* to the system directory and makes an entry for the *setup-class-GUID* class under the **CoDeviceInstallers** key. The entry in the *Xxx*_AddReg section specifies two flags: the "00010000" flag specifies that the entry is a REG_MULTI_SZ, and the "00000008" flag specifies that the new value is to be appended to any existing value (if the new value is not already present in the string).
 
 Such an INF that registers a class co-installer can be activated by a right-click install or through an application that calls **SetupInstallFromInfSection**.
 

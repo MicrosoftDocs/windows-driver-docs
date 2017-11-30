@@ -18,7 +18,7 @@ After users have purchased a subscription, they can perform following tasks:
 
 -   **Manage account settings** Users can view and securely manage their payment and account details (such as password, email address, and automatic payment information).
 
--   **Pay a bill** Users can pay their recurring or one-time bill by using your Windows Store app.
+-   **Pay a bill** Users can pay their recurring or one-time bill by using your UWP app.
 
 Account management functionality presents a subscriber’s relationship with an operator. You can use this to create a branded experience that can distinguish your service from competitors’ services.
 
@@ -26,7 +26,7 @@ Design considerations include the following:
 
 -   **Make data usage a combination of local and back-end information** To reduce the load on the back-end servers as much as possible, Windows provides a local Data Usage API that you can use to combine back-end data usage. You can periodically get the usage information from the back-end and correlate that with local data usage.
 
--   **Periodically update Windows with data usage** Windows 8 and Windows 8.1 is designed to behave intelligently on metered networks. This can save significant network capacity because Windows and Windows Store apps can use your mobile broadband network for essential traffic. To be more accurate and to include more information for applications (for example, data limits and usage), Windows relies on you to periodically provide correct information. Your app can set this information by using Data Usage APIs.
+-   **Periodically update Windows with data usage** Windows 8 and Windows 8.1 is designed to behave intelligently on metered networks. This can save significant network capacity because Windows and UWP apps can use your mobile broadband network for essential traffic. To be more accurate and to include more information for applications (for example, data limits and usage), Windows relies on you to periodically provide correct information. Your app can set this information by using Data Usage APIs.
 
     ![account overview](images/mb-fig2-accountoverview.png)
 

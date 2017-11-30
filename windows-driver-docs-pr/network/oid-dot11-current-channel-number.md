@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_CURRENT\_CHANNEL\_NUMBER
+title: OID_DOT11_CURRENT_CHANNEL_NUMBER
 author: windows-driver-content
-description: OID\_DOT11\_CURRENT\_CHANNEL\_NUMBER
+description: OID_DOT11_CURRENT_CHANNEL_NUMBER
 ms.assetid: e4f5cea0-54f8-44cb-99d4-05a4e711d199
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

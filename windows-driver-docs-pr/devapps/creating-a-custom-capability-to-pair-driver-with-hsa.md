@@ -33,7 +33,7 @@ To reserve a custom capability:
     * What resources does capability need to access?
     * Any security or privacy concerns
     * What data does your capability provide access to?
-    * Include the Windows Store App Publisher ID.  To get one, create a skeleton app entry on the Windows Store page. For more info on reserving your App PFN, see [Create your app by reserving a name](https://msdn.microsoft.com/en-us/windows/uwp/publish/create-your-app-by-reserving-a-name).
+    * Include the Microsoft Store App Publisher ID.  To get one, create a skeleton app entry on the Microsoft Store page. For more info on reserving your App PFN, see [Create your app by reserving a name](https://msdn.microsoft.com/en-us/windows/uwp/publish/create-your-app-by-reserving-a-name).
 
 2.  If the request is approved, Microsoft emails back a unique custom capability string name in the format **CompanyName.capabilityName\_PublisherID**.
 
@@ -153,7 +153,7 @@ The following diagram summarizes the sequence described above:
 
 ### SCCD XML Schema
 
-The following is the formal XML XSD schema for an SCCD file.  Use this schema to validate your SCCD before submitting it for review.
+The following is the formal XML XSD schema for an SCCD file.  Use this schema to validate your SCCD before submitting it for review.  See [Schema Cache](https://docs.microsoft.com/visualstudio/xml-tools/schema-cache) and [XML Document validation](https://docs.microsoft.com/visualstudio/xml-tools/xml-document-validation) for info on importing a schema and validating with IntelliSense.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

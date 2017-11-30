@@ -70,7 +70,7 @@ Passing an XML provisioning file enables the operating system to automatically c
 ## <span id="appinst"></span><span id="APPINST"></span>Offer app installation
 
 
-The richest experience of Windows 8, Windows 8.1, and Windows 10 is through the use of a mobile broadband app. It is not possible to allow access to only one app in the Windows Store through a captive portal, so the app cannot be installed prior to the user obtaining Internet connectivity. However, after the user has authenticated, consider directing them to the Windows Store to install your mobile broadband app.
+The richest experience of Windows 8, Windows 8.1, and Windows 10 is through the use of a mobile broadband app. It is not possible to allow access to only one app in the Microsoft Store through a captive portal, so the app cannot be installed prior to the user obtaining Internet connectivity. However, after the user has authenticated, consider directing them to the Microsoft Store to install your mobile broadband app.
 
 ## <span id="related_topics"></span>Related topics
 

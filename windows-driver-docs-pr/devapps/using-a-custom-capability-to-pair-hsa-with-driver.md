@@ -21,13 +21,15 @@ This topic describes how to associate your [Universal Windows Platform (UWP)](ht
 
 The steps required by the owner of the driver or RPC endpoint are described in [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](creating-a-custom-capability-to-pair-driver-with-hsa.md).
 
-Before you get started, install the latest version of Visual Studio and create an UWP app project.  For more info, see [Develop Windows Store apps using Visual Studio](https://developer.microsoft.com/en-us/windows/apps/develop).
+Before you get started, install the latest version of Visual Studio and create an UWP app project.  To build a UWP app with a custom capability, you'll need Windows SDK version 10.0.15063 (Windows 10 Creators Update) or later. For more help getting configured, see [Develop UWP apps using Visual Studio](https://developer.microsoft.com/en-us/windows/apps/develop).
 
-## Create a Windows Store account
+Starting in Windows 10 version 1709, you can specify that a Universal Windows Platform (UWP) app should only load if a specific driver is present.  To learn how, see [Pairing a driver with a UWP app](../install/pairing-app-and-driver-versions.md).
 
-A developer account on the Windows Store is required. Hardware partners will need a Windows Store account that is different from their Hardware partner account. You'll need the publisher name when you author the app manifest and the device metadata in later steps. You can also reserve a name for your app once you've created a store profile.
+## Create a Microsoft Store account
 
-To create a Windows Store account, go to the [Windows Store apps sign up page](http://go.microsoft.com/fwlink/p/?LinkId=302197). For more info, see [Opening a developer account](https://docs.microsoft.com/windows/uwp/publish/opening-a-developer-account).
+A developer account on the Microsoft Store is required. Hardware partners will need a Microsoft Store account that is different from their Hardware partner account. You'll need the publisher name when you author the app manifest and the device metadata in later steps. You can also reserve a name for your app once you've created a store profile.
+
+To create a Microsoft Store account, go to the [UWP apps sign up page](http://go.microsoft.com/fwlink/p/?LinkId=302197). For more info, see [Opening a developer account](https://docs.microsoft.com/windows/uwp/publish/opening-a-developer-account).
 
 ## Choosing a programming language for the app
 
@@ -39,7 +41,7 @@ If your app will communicate with an NT service, then you need to use the RPC AP
 
 Now you're ready to request access to a custom capability from a capability owner.  You'll need to gather the following info:
 
--   App PFN (Package Family Name) from the Windows Store
+-   App PFN (Package Family Name) from the Microsoft Store
 -   Name of the custom capability
 -   Signature Hash of the app signing cert which can be generated from your .cer file using certutil.exe. The certificate must be SHA-256.
 
@@ -82,7 +84,11 @@ Then copy the SCCD file to the package root of the appx package. In Visual Studi
 
 ![Adding an SCCD file into the appx package](images/addSCCDToAppx.png)
 
-Finally, right click the project, select **Store**, then **Create App Packages**.
+Mark the SCCD as build content by right clicking on the SCCD file and changing **Content** to **True**.  For a C# project, use the property `Build Action = Content`, and for a JavaScript project, use `Package Action = Content`. 
+
+![Marking SCCD as content](images/markSCCDAsContent.png)
+
+Finally, right-click the project, select **Store**, then **Create App Packages**.
 
 **Note**: There is no support for UWP apps with custom capabilities on mobile platforms.
 

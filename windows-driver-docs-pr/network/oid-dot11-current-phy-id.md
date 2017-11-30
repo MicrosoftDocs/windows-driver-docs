@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_CURRENT\_PHY\_ID
+title: OID_DOT11_CURRENT_PHY_ID
 author: windows-driver-content
-description: OID\_DOT11\_CURRENT\_PHY\_ID
+description: OID_DOT11_CURRENT_PHY_ID
 ms.assetid: 1f551f19-01e7-4e12-8399-977589ffca32
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

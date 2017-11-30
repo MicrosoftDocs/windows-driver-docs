@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_WFD\_DEVICE\_LISTEN\_CHANNEL
+title: OID_DOT11_WFD_DEVICE_LISTEN_CHANNEL
 author: windows-driver-content
-description: When set, the OID\_DOT11\_WFD\_DEVICE\_LISTEN\_CHANNEL object identifier (OID) sets the listen channel of the Wi-Fi Direct device.
+description: When set, the OID_DOT11_WFD_DEVICE_LISTEN_CHANNEL object identifier (OID) sets the listen channel of the Wi-Fi Direct device.
 ms.assetid: D9413770-453E-4778-B765-82A49CFAA45F
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

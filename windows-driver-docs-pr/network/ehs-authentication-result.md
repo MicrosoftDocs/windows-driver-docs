@@ -1,7 +1,7 @@
 ---
-title: eHS\_AUTHENTICATION\_RESULT enumeration
+title: eHS_AUTHENTICATION_RESULT enumeration
 author: windows-driver-content
-description: The eHS\_AUTHENTICATION\_RESULT enumeration indicates the result of authentication by the plugin after the PostConnectAuth request.
+description: The eHS_AUTHENTICATION_RESULT enumeration indicates the result of authentication by the plugin after the PostConnectAuth request.
 ms.assetid: a61ddc7c-8df8-410c-83df-9058e88bce51
 keywords: 
  - eHS_AUTHENTICATION_RESULT enumeration Network Drivers Starting with Windows Vista
@@ -13,6 +13,8 @@ ms.technology: windows-devices
 ---
 
 # eHS\_AUTHENTICATION\_RESULT enumeration
+
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **eHS\_AUTHENTICATION\_RESULT** enumeration indicates the result of authentication by the plugin after the PostConnectAuth request.

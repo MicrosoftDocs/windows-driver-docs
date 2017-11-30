@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_MAXIMUM\_LIST\_SIZE
+title: OID_DOT11_MAXIMUM_LIST_SIZE
 author: windows-driver-content
-description: OID\_DOT11\_MAXIMUM\_LIST\_SIZE
+description: OID_DOT11_MAXIMUM_LIST_SIZE
 ms.assetid: f4403b06-a8c7-4c0a-8db1-82c87976175b
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

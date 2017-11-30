@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_PRIVACY\_EXEMPTION\_LIST
+title: OID_DOT11_PRIVACY_EXEMPTION_LIST
 author: windows-driver-content
-description: When set, the OID\_DOT11\_PRIVACY\_EXEMPTION\_LIST object identifier (OID) requests that the miniport driver set its Extensible Station (ExtSTA) msDot11PrivacyExemptionList management information base (MIB) object to the specified data.
+description: When set, the OID_DOT11_PRIVACY_EXEMPTION_LIST object identifier (OID) requests that the miniport driver set its Extensible Station (ExtSTA) msDot11PrivacyExemptionList management information base (MIB) object to the specified data.
 ms.assetid: 0867c5b2-035e-47c1-970b-a928f6e8aab9
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

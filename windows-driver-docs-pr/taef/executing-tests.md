@@ -24,7 +24,6 @@ The following topics provide details about executing tests in TAEF:
 -   [RunAs](runas.md)
 -   [Cross Machine Execution](cross-machine-execution.md)
 -   [Cross Architecture Execution](cross-architecture-execution.md)
--   [Lab Mode](lab-mode.md)
 -   [TAEF Timeouts](taef-timeouts.md)
 -   [User Mode Monitor](user-mode-monitor.md)
 -   [Stack and Dump Logging](stack-and-dump-logging.md)

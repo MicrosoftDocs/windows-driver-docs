@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_ASSOCIATION\_PARAMS
+title: OID_DOT11_ASSOCIATION_PARAMS
 author: windows-driver-content
-description: OID\_DOT11\_ASSOCIATION\_PARAMS
+description: OID_DOT11_ASSOCIATION_PARAMS
 ms.assetid: 3d9af740-2efa-4a9e-a3e0-0af5c6745aac
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

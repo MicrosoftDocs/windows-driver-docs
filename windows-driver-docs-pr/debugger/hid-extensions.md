@@ -2,6 +2,11 @@
 title: HID Extensions
 description: This section describes the Human Interface Device (HID) debugger extension commands.
 ms.assetid: 796DB87B-1E04-40FA-90F9-699EE7032B3C
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # HID Extensions
@@ -32,28 +37,28 @@ To start debugging a HID issue, enter the [**!hidtree**](-hidkd-hidtree.md) comm
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>!hidkd.help</strong>](-hidkd-help.md)</p></td>
-<td align="left"><p>The [<strong>!hidkd.help</strong>](-hidkd-help.md) command displays help for the HID debugger extension commands.</p></td>
+<td align="left"><p><strong>[!hidkd.help](-hidkd-help.md)</strong></p></td>
+<td align="left"><p>The <strong>[!hidkd.help](-hidkd-help.md)</strong> command displays help for the HID debugger extension commands.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!hidkd.hidfdo</strong>](-hidkd-hidfdo.md)</p></td>
-<td align="left"><p>The [<strong>!hidkd.hidfdo</strong>](-hidkd-hidfdo.md) command displays HID information associated with a functional device object (FDO).</p></td>
+<td align="left"><p><strong>[!hidkd.hidfdo](-hidkd-hidfdo.md)</strong></p></td>
+<td align="left"><p>The <strong>[!hidkd.hidfdo](-hidkd-hidfdo.md)</strong> command displays HID information associated with a functional device object (FDO).</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>!hidkd.hidpdo</strong>](-hidkd-hidpdo.md)</p></td>
-<td align="left"><p>The [<strong>!hidkd.hidpdo</strong>](-hidkd-hidpdo.md) command displays HID information associated with a physical device object (PDO).</p></td>
+<td align="left"><p><strong>[!hidkd.hidpdo](-hidkd-hidpdo.md)</strong></p></td>
+<td align="left"><p>The <strong>[!hidkd.hidpdo](-hidkd-hidpdo.md)</strong> command displays HID information associated with a physical device object (PDO).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!hidkd.hidtree</strong>](-hidkd-hidtree.md)</p></td>
-<td align="left"><p>The [<strong>!hidkd.hidtree</strong>](-hidkd-hidtree.md) command displays a list of all device nodes that have a HID function driver along with their child nodes. The child nodes have a physical device object (PDO) that was created by the parent node's HID function driver.</p></td>
+<td align="left"><p><strong>[!hidkd.hidtree](-hidkd-hidtree.md)</strong></p></td>
+<td align="left"><p>The <strong>[!hidkd.hidtree](-hidkd-hidtree.md)</strong> command displays a list of all device nodes that have a HID function driver along with their child nodes. The child nodes have a physical device object (PDO) that was created by the parent node's HID function driver.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>!hidkd.hidppd</strong>](-hidkd-hidppd.md)</p></td>
-<td align="left"><p>The [<strong>!hidkd.hidppd</strong>](-hidkd-hidppd.md) command displays HID preparsed data.</p></td>
+<td align="left"><p><strong>[!hidkd.hidppd](-hidkd-hidppd.md)</strong></p></td>
+<td align="left"><p>The <strong>[!hidkd.hidppd](-hidkd-hidppd.md)</strong> command displays HID preparsed data.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!hidkd.hidrd</strong>](-hidkd-hidrd.md)</p></td>
-<td align="left"><p>The [<strong>!hidkd.hidrd</strong>](-hidkd-hidrd.md) command displays a HID report descriptor in both raw and parsed format.</p></td>
+<td align="left"><p><strong>[!hidkd.hidrd](-hidkd-hidrd.md)</strong></p></td>
+<td align="left"><p>The <strong>[!hidkd.hidrd](-hidkd-hidrd.md)</strong> command displays a HID report descriptor in both raw and parsed format.</p></td>
 </tr>
 </tbody>
 </table>

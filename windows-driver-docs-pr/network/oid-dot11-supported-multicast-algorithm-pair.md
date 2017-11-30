@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_SUPPORTED\_MULTICAST\_ALGORITHM\_PAIR
+title: OID_DOT11_SUPPORTED_MULTICAST_ALGORITHM_PAIR
 author: windows-driver-content
-description: OID\_DOT11\_SUPPORTED\_MULTICAST\_ALGORITHM\_PAIR
+description: OID_DOT11_SUPPORTED_MULTICAST_ALGORITHM_PAIR
 ms.assetid: 93927df1-acaa-4c42-b8e1-48f651b9ef96
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

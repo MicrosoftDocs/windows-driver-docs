@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_WFD\_SEND\_PROVISION\_DISCOVERY\_REQUEST
+title: OID_DOT11_WFD_SEND_PROVISION_DISCOVERY_REQUEST
 author: windows-driver-content
-description: When set, the OID\_DOT11\_WFD\_SEND\_PROVISION\_DISCOVERY\_REQUEST object identifier (OID) requests that the Wi-Fi Direct (WFD) device send a provision discovery request packet to a peer WFD device.
+description: When set, the OID_DOT11_WFD_SEND_PROVISION_DISCOVERY_REQUEST object identifier (OID) requests that the Wi-Fi Direct (WFD) device send a provision discovery request packet to a peer WFD device.
 ms.assetid: 69490609-60CB-426F-8ED7-F8B35CDFCE2A
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

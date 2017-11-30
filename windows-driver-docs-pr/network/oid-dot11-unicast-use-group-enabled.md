@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_UNICAST\_USE\_GROUP\_ENABLED
+title: OID_DOT11_UNICAST_USE_GROUP_ENABLED
 author: windows-driver-content
-description: OID\_DOT11\_UNICAST\_USE\_GROUP\_ENABLED
+description: OID_DOT11_UNICAST_USE_GROUP_ENABLED
 ms.assetid: 4ba327e9-0404-43ed-a45f-7a60e1c1892d
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

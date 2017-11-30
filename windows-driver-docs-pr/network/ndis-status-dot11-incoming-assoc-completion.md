@@ -1,7 +1,7 @@
 ---
-title: NDIS\_STATUS\_DOT11\_INCOMING\_ASSOC\_COMPLETION
+title: NDIS_STATUS_DOT11_INCOMING_ASSOC_COMPLETION
 author: windows-driver-content
-description: NDIS\_STATUS\_DOT11\_INCOMING\_ASSOC\_COMPLETION
+description: NDIS_STATUS_DOT11_INCOMING_ASSOC_COMPLETION
 ms.assetid: 4238212d-b4e8-4e65-8b09-4ccc2c0e5569
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

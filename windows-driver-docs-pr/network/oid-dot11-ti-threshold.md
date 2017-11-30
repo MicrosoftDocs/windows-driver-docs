@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_TI\_THRESHOLD
+title: OID_DOT11_TI_THRESHOLD
 author: windows-driver-content
-description: OID\_DOT11\_TI\_THRESHOLD
+description: OID_DOT11_TI_THRESHOLD
 ms.assetid: c3f5419b-d137-4ba8-a028-637e6c337db1
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

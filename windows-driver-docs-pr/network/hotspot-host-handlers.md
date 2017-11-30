@@ -1,7 +1,7 @@
 ---
-title: HOTSPOT\_HOST\_HANDLERS structure
+title: HOTSPOT_HOST_HANDLERS structure
 author: windows-driver-content
-description: The HOTSPOT\_HOST\_HANDLERS structure contains the hotspot host handlers function table.
+description: The HOTSPOT_HOST_HANDLERS structure contains the hotspot host handlers function table.
 ms.assetid: b381e471-7713-401a-b3fa-eae1801b0e81
 keywords: 
 - HOTSPOT_HOST_HANDLERS structure Network Drivers Starting with Windows Vista
@@ -14,6 +14,8 @@ ms.technology: windows-devices
 ---
 
 # HOTSPOT\_HOST\_HANDLERS structure
+
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HOTSPOT\_HOST\_HANDLERS** structure contains the hotspot host handlers function table. This function table is passed to the plugin when [**HSPluginInitPlugin**](hsplugininitplugin.md) is called to initialize it. The table contains functions that are called by the plugin to communicate with the hotspot host.

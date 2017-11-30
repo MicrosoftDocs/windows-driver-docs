@@ -40,7 +40,7 @@ The following resources describe Driver Signing in greater detail:
 
 -   The main [Driver Signing](driver-signing.md) topic on MSDN
 -   The subtopic "How to Release Sign a Kernel Module" in the [Kernel-Mode Code Signing Walkthrough](http://msdn.microsoft.com/library/windows/hardware/dn653569.aspx) describes what you should know about signing kernel-mode code. The information in the document also applies to signing user-mode drivers.
--   The selfsign\_readme.htm file in the Windows 7 WDK is located in the WDK install directory, \\WinDDK\\7600.16385.1\\src\\general\\build\\driversigning. This directory also has a command file, selfsign\_example.cmd, which can be edited to run the driver signing commands. The selfsign\_readme.htm file in the Windows 8.1 WDK is located at C:\\Program Files (x86)\\Windows Kits\\8.1\\bin\\selfsign, and provides links to additional driver signing information.
+-   The selfsign_readme.htm file in the Windows 7 WDK is located in the WDK install directory, \\WinDDK\\7600.16385.1\\src\\general\\build\\driversigning. This directory also has a command file, selfsign_example.cmd, which can be edited to run the driver signing commands. The selfsign_readme.htm file in the Windows 8.1 WDK is located at C:\\Program Files (x86)\\Windows Kits\\8.1\\bin\\selfsign, and provides links to additional driver signing information.
 
  
 

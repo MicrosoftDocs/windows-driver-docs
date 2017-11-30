@@ -1,7 +1,7 @@
 ---
-title: 'REMOTE\_NDIS\_QUERY\_CMPLT'
+title: 'REMOTE_NDIS_QUERY_CMPLT'
 author: windows-driver-content
-Description: 'A Remote NDIS device will respond to a REMOTE\_NDIS\_QUERY\_MSG message with a REMOTE\_NDIS\_QUERY\_CMPLT message.'
+Description: 'A Remote NDIS device will respond to a REMOTE_NDIS_QUERY_MSG message with a REMOTE_NDIS_QUERY_CMPLT message.'
 ms.assetid: 357e2ade-0b67-42c3-b1e1-dcc4b7ec5cda
 ms.author: windowsdriverdev
 ms.date: 07/31/2017

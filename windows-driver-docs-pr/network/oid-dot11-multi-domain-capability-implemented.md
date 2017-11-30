@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_MULTI\_DOMAIN\_CAPABILITY\_IMPLEMENTED
+title: OID_DOT11_MULTI_DOMAIN_CAPABILITY_IMPLEMENTED
 author: windows-driver-content
-description: OID\_DOT11\_MULTI\_DOMAIN\_CAPABILITY\_IMPLEMENTED
+description: OID_DOT11_MULTI_DOMAIN_CAPABILITY_IMPLEMENTED
 ms.assetid: 5de9d07f-d0d1-4507-8193-331c7bf176f5
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

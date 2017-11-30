@@ -3,7 +3,7 @@ title: Installing an Audio Adapter Service
 description: Installing an Audio Adapter Service
 ms.assetid: fa7a59b3-377f-4b66-ab1a-4dda1f0052c3
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -17,10 +17,7 @@ ms.technology: windows-devices
 
 This section includes the following topics about installing a port-class adapter service:
 
-[Installing an Audio Adapter Service in Windows 2000 and Later](installing-an-audio-adapter-service-in-windows-2000-and-later.md)
-
-[Installing an Audio Adapter Service in Windows Me/98](installing-an-audio-adapter-service-in-windows-me-98.md)
-
+[Installing an Audio Adapter Service in Windows](installing-an-audio-adapter-service-in-windows.md)
  
 
  

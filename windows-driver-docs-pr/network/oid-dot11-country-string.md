@@ -1,7 +1,7 @@
 ---
-title: OID\_DOT11\_COUNTRY\_STRING
+title: OID_DOT11_COUNTRY_STRING
 author: windows-driver-content
-description: OID\_DOT11\_COUNTRY\_STRING
+description: OID_DOT11_COUNTRY_STRING
 ms.assetid: 17942342-0983-46ff-a1ed-f1a37a097010
 ms.author: windowsdriverdev
 ms.date: 08/08/2017

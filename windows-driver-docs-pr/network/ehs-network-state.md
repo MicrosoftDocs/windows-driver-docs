@@ -1,7 +1,7 @@
 ---
-title: eHS\_NETWORK\_STATE enumeration
+title: eHS_NETWORK_STATE enumeration
 author: windows-driver-content
-description: The eHS\_NETWORK\_STATE enumeration indicates whether a network is a hotspot network.
+description: The eHS_NETWORK_STATE enumeration indicates whether a network is a hotspot network.
 ms.assetid: a833d226-e2cf-41f9-a926-5b1f6daa03af
 keywords: 
  - eHS_NETWORK_STATE enumeration Network Drivers Starting with Windows Vista
@@ -13,6 +13,8 @@ ms.technology: windows-devices
 ---
 
 # eHS\_NETWORK\_STATE enumeration
+
+[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **eHS\_NETWORK\_STATE** enumeration indicates whether a network is a hotspot network.

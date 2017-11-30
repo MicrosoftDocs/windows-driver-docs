@@ -1,7 +1,7 @@
 ---
-title: OID\_NDK\_LOCAL\_ENDPOINTS
+title: OID_NDK_LOCAL_ENDPOINTS
 author: windows-driver-content
-description: As a query, NDIS and overlying drivers or user-mode applications use the OID\_NDK\_LOCAL\_ENDPOINTS OID to the list of active Network Direct listeners and shared endpoints on a miniport adapter.
+description: As a query, NDIS and overlying drivers or user-mode applications use the OID_NDK_LOCAL_ENDPOINTS OID to the list of active Network Direct listeners and shared endpoints on a miniport adapter.
 ms.assetid: 93F077AF-7FEA-4F92-9784-B65ADCC16564
 ms.author: windowsdriverdev
 ms.date: 08/08/2017
