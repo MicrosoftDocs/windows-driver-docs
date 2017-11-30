@@ -55,7 +55,7 @@ The ATR formats for different NFC card types are listed below. Please refer to P
         </tr>
         <tr>
             <td>4 to 3+N</td>
-            <table>
+            <td><table>
                 <tbody>
                     <tr>
                         <td>80</td>
@@ -92,7 +92,7 @@ The ATR formats for different NFC card types are listed below. Please refer to P
                         <td></td>
                     </tr>
                 </tbody>
-            </table>
+            </table></td>
         </tr>
         <tr>
             <td>4+N</td>
