@@ -71,7 +71,7 @@ Sections 5.2.3.3.10 through 5.2.3.3.14 of the IHVRIL specification define a simi
 - The RIL interface uses a separate function to close all UICC channels in a group, whereas the MBIM interface accomplishes this with variant arguments to a single CID.
 - The relationship between MBIM error status and UICC status (SW1 SW2) is more clearly defined than the relationship between RIL errors and UICC status.
 - The MBIM interface distinguishes failure to allocate a new logical channel from failure to SELECT a specified application.
-- The MBIM interface allows for sending the modem the terminal capability objects to send to the card.
+- The MBIM interface permits sending the modem terminal capability objects to send to the card.
 
 ## MBIM_CID_MS_UICC_ATR
 
@@ -100,9 +100,9 @@ The InformationBuffer of MBIM_COMMAND_DONE contains the following MBIM_MS_ATR_IN
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
-| 0 | 4 | AtrSize | SIZE(0..33) | The length of the ATR data. |
+| 0 | 4 | AtrSize | SIZE(0..33) | The length of **AtrData**. |
 | 4 | 4 | AtrOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to a byte array called **AtrData** that contains the ATR data. |
-| 8 | AtrSize | DataBuffer | DATABUFFER | The ATR data. |
+| 8 | AtrSize | DataBuffer | DATABUFFER | The **AtrData** byte array. |
 
 
 ### Unsolicited events
@@ -260,6 +260,7 @@ The host must send a complete APDU to the function. The APDU may be sent with a 
 The first byte of the command APDU is the class byte, coded as defined by section 4 of the [ISO/IEC 7816-4:2013 standard](https://go.microsoft.com/fwlink/p/?linkid=864596) or section 10.1.1 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). The host may send 0X, 4X, 6X, 8X, CX, or EX class bytes. However, the function does not pass this byte directly to the UICC. Instead, before sending the APDU to the UICC the function will replace the first byte from the host with a new class byte (encoded as defined by section 4 of the [ISO/IEC 7816-4:2013 standard](https://go.microsoft.com/fwlink/p/?linkid=864596) or section 10.1.1 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594)) based upon the Type, Channel, and SecureMessaging values specified by the host:
 
 | Byte class | Description |
+| --- | --- |
 | 0X | 7816-4 interindustry, 1 <= channel <= 3, encodes security in low nibble if relevant |
 | 4X | 7816-4 interindustry, 4 <= channel <= 19, no secure messaging |
 | 6X | 7816-4 interindustry, 4 <= channel <= 19, secure (header not authenticated) |
