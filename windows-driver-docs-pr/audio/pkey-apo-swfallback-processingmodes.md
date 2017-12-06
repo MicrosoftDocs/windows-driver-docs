@@ -11,17 +11,9 @@ ms.technology: windows-devices
 
 # PKEY\_APO\_SWFallback\_ProcessingModes
 
-In Windows 10 version 1709 and later, the *PKEY\_APO\_SWFallback\_ProcessingModes* property key identifies the modes that can fallback to software processing. The driver developer should list all of the mode effect processing modes that support software fallback that their driver supports. This list needs to encompass all the modes that the driver supports in DSP.
+In the next major release of Windows 10, the *PKEY\_APO\_SWFallback\_ProcessingModes* property key identifies the modes that can fallback to software processing. The driver developer should list all of the mode effect processing modes that support software fallback that their driver supports. This list needs to encompass all the modes that the driver supports in hardware.
 
-If a stream is requested for one of these modes and there are insufficient HW resources available to open a pin in that processing mode, a pin will be opened in the RAW mode and the SW APO initialized with the requested processing mode will be used instead.
-
- If a stream is requested for one of these modes and there are insufficient HW resources available, a Raw mode stream will be created and the SW APO will be used instead.  
-
- Drivers that would like to support software fallback of HW processing modes, must support RAW mode, as RAW mode is used to host the SW fallback APOs. 
-
- All of the modes on the device must support software processing, so all modes that the device supports must be listed.
-
-Any connector modes in this list are assumed to have a corresponding SW APO that supports the same mode or set of modes.  
+If a stream is requested for one of these modes and there are insufficient HW resources available to open a pin in that processing mode, a pin will be opened in the RAW mode and the SW APO initialized with the requested processing mode will be used instead. Because of this, drivers that would like to support software fallback of HW processing modes, must support RAW mode. 
 
 For more information about audio modes, see [Audio Signal Processing Modes](audio-signal-processing-modes.md).
 
