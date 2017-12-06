@@ -59,6 +59,10 @@ The following topics describe the functionality of a Native 802.11 miniport driv
 
 [Native 802.11 Status Indications](native-802-11-status-indications.md)
 
+[DOT11_ASSOC_STATUS status codes](dot11-assoc-status-status-codes.md)
+
+[Native 802.11 OIDs](native-802-11-oids.md)
+
 [Native 802.11 Statistics](native-802-11-statistics.md)
 
 [Native 802.11 Power Management](native-802-11-power-management.md)
