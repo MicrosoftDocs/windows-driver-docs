@@ -26,14 +26,6 @@ When the host requests that the function reset the UICC, it specifies a passthro
 
 When the host queries the function to determine the passthrough status, if the function responds with the *MBIMMsUICCPassThroughEnabled* status, it means that passthrough mode is enabled. If the function responds with the *MBIMMsUICCPassThroughDisabled* status, it means that passthrough mode is disabled.
 
-| Service name | UUID | UUID value |
-| --- | --- | --- |
-| Microsoft Low-Level UICC Access | UUID_MS_UICC_LOW_LEVEL | C2F6588E-F037-4BC9-8665-F4D44BD09367 |
-
-| CID | Command code | Set | Query | Notify |
-| --- | --- | --- | --- | --- |
-| MBIM_CID_MS_UICC_RESET | 6 | Y | Y | N |
-
 ### Parameters
 
 |   | Set | Query | Notification |
@@ -102,7 +94,7 @@ The NDIS equivalent for MBIM_CID_MS_UICC_RESET is [OID_WWAN_UICC_RESET](oid-wwan
 
 ## Related topics
 
-[MB UICC reset and modem reset operations](mb-uicc-reset-and-modem-reset-operations.md)
+[MB low level UICC access](mb-low-level-uicc-access.md)
 
 [MB modem reset operations](mb-modem-reset-operations.md)
 

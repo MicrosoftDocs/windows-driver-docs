@@ -1069,6 +1069,16 @@
       "source_path": "windows-driver-docs-pr/network/sdk-topics-for-network-drivers.md",
       "redirect_URL": "/windows-hardware/drivers/network/kernel-mode-sdk-topics-for-network-drivers",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/mb-uicc-reset-and-modem-reset-operations.md",
+      "redirect_URL": "/windows-hardware/drivers/network/mb-low-level-uicc-access",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/mb-uicc-reset-operations.md",
+      "redirect_URL": "/windows-hardware/drivers/network/mb-low-level-uicc-access",
+      "redirect_document_id": true
     }
   ]
 }
