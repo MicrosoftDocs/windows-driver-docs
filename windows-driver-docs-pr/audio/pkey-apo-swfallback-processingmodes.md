@@ -3,7 +3,7 @@ title: PKEY\_APO\_SWFallback\_ProcessingModes
 description: In Windows 10 version 1709 and later, the PKEY\_APO\_SWFallback\_ProcessingModes property key identifies the HW modes that can fallback to software processing modes supported by the driver.
 
 ms.author: windowsdriverdev
-ms.date: 12/05/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -11,7 +11,9 @@ ms.technology: windows-devices
 
 # PKEY\_APO\_SWFallback\_ProcessingModes
 
-In Windows 10 version 1709 and later, the *PKEY\_APO\_SWFallback\_ProcessingModes* property key identifies the modes that can fallback to software processing. The driver developer should list all of the mode effect processing modes that support software fallback that their driver supports. 
+In Windows 10 version 1709 and later, the *PKEY\_APO\_SWFallback\_ProcessingModes* property key identifies the modes that can fallback to software processing. The driver developer should list all of the mode effect processing modes that support software fallback that their driver supports. This list needs to encompass all the modes that the driver supports in DSP.
+
+If a stream is requested for one of these modes and there are insufficient HW resources available to open a pin in that processing mode, a pin will be opened in the RAW mode and the SW APO initialized with the requested processing mode will be used instead.
 
  If a stream is requested for one of these modes and there are insufficient HW resources available, a Raw mode stream will be created and the SW APO will be used instead.  
 
@@ -19,7 +21,7 @@ In Windows 10 version 1709 and later, the *PKEY\_APO\_SWFallback\_ProcessingMode
 
  All of the modes on the device must support software processing, so all modes that the device supports must be listed.
 
-Any connector modes in this list are assumed to have a corresponding SW APO that supports the same mode or set of modes (a single APO or multiple APOs can be used).  
+Any connector modes in this list are assumed to have a corresponding SW APO that supports the same mode or set of modes.  
 
 For more information about audio modes, see [Audio Signal Processing Modes](audio-signal-processing-modes.md).
 
@@ -46,7 +48,6 @@ PKEY_APO_SWFallback_ProcessingModes  = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},1
 AUDIO_SIGNALPROCESSINGMODE_DEFAULT = "{C18E2F7E-933D-4965-B7D1-1EEF228D2AF3}"
 AUDIO_SIGNALPROCESSINGMODE_MOVIE   = "{B26FEB0D-EC94-477C-9494-D1AB8E753F6E}"
 AUDIO_SIGNALPROCESSINGMODE_COMMUNICATIONS = "{98951333-B9CD-48B1-A0A3-FF40682D73F7}"
-TBD - Do we need to list RAW or is that assumed?
 ...
 [PKEY.APO.SWFallback.AddReg]
 ;Include all supported modes:
