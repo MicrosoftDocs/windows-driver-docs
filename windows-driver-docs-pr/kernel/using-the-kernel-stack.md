@@ -29,9 +29,9 @@ In other words, the call-tree structure of a driver should be relatively flat. Y
 
 Running out of kernel stack space causes a fatal system error. Therefore, it is better for a driver to [allocate system-space memory](allocating-system-space-memory.md) than to run out of kernel stack space. However, nonpaged pool is also a limited system resource.
 
-Drivers of devices that use DMA can buffer data to be transferred, if necessary, either by calling [**ExAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff544520) for a **NonPagedPool**-type buffer or, for some drivers, by using common-buffer DMA. For more information, see [Using Common-Buffer System DMA](using-common-buffer-system-dma.md) and [Using Common-Buffer Bus-Master DMA](using-common-buffer-bus-master-dma.md).
+Generally, the kernel-mode stack residents in memory, however it can occasionally be paged out if the thread enters a wait state that specifies user mode. See [**KeSetKernelStackSwapEnable**](https://msdn.microsoft.com/en-us/library/windows/hardware/ff553262.aspx) for more information on temporarily disable kernel stack paging for the current thread. For performance reason it is not recommended to disable kernel stack paging globally, but if you want to do so during a debugging session, see debugger document at [Disable paging of kernel stacks](https://msdn.microsoft.com/library/windows/hardware/ff541920)
 
-Generally, the kernel-mode stack residents in memory, however it can occasionally be paged out if the thread enters a wait state that specifies user mode. See [**KeSetKernelStackSwapEnable**](https://msdn.microsoft.com/en-us/library/windows/hardware/ff553262.aspx) for more information on temporarily disable kernel stack paging for the current thread. It is not recommended to disable kernel stack paging globally, but if you want to do so during a debugging session, see debugger document at [Disable paging of kernel stacks](https://msdn.microsoft.com/library/windows/hardware/ff541920)
+Because kernel stack might be paged out, please be cautious about passing stack-based buffer (i.e. local variables) to DMA or any routine that runs at DISPATCH_LEVEL or above.
 
  
 
