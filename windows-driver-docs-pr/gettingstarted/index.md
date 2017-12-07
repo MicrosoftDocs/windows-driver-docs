@@ -17,7 +17,7 @@ ms.technology: windows-devices
 
 Start here to learn fundamental concepts about drivers.
 
-You should already be familiar with the [C programming language](http://go.microsoft.com/fwlink/p?LinkID=317477), and you should understand the ideas of function pointers, callback functions, and event handlers. If you are going to write a driver based on User-Mode Driver Framework 1.x, you should be familiar with [C++ and COM](http://go.microsoft.com/fwlink/p?LinkID=317460).
+You should already be familiar with the [C programming language](https://docs.microsoft.com/cpp/c-language/c-language-reference), and you should understand the ideas of function pointers, callback functions, and event handlers. If you are going to write a driver based on User-Mode Driver Framework 1.x, you should be familiar with [C++ and COM](http://go.microsoft.com/fwlink/p?LinkID=317460).
 
 ## <span id="in_this_section"></span>In this section
 
