@@ -2,6 +2,11 @@
 title: DBG\_DUMP\_XXX
 description: DBG\_DUMP\_XXX
 ms.assetid: d34ecf95-3aea-4850-a2de-76f239e8b8a0
+ms.author: windowsdriverdev
+ms.date: 12/07/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["DBG_DUMP_XXX Windows Debugging"]
 topic_type:
 - apiref

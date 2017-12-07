@@ -2,7 +2,8 @@
 title: DEBUG\_STATUS\_XXX
 description: DEBUG\_STATUS\_XXX
 ms.assetid: 3f5fcdb6-b4fc-4155-bf39-929d00fb210c
-ms.date: 10/30/2017
+ms.author: windowsdriverdev
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

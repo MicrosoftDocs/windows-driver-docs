@@ -2,7 +2,8 @@
 title: DEBUG\_FILTER\_XXX
 description: DEBUG\_FILTER\_XXX
 ms.assetid: 1f8f738b-7b2b-419a-949e-b71f937de02d
-ms.date: 10/30/2017
+ms.author: windowsdriverdev
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -2,6 +2,11 @@
 title: HRESULT Values
 description: The following is a list of common return values for functions and methods, and their usual meanings.
 ms.assetid: 713f3ee2-2f5b-415e-9908-90f5ae428b43
+ms.author: windowsdriverdev
+ms.date: 12/07/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["HRESULT Values Windows Debugging"]
 topic_type:
 - apiref

@@ -2,7 +2,8 @@
 title: DEBUG\_SYMBOL\_XXX
 description: The DEBUG\_SYMBOL\_XXX constants are used for the symbol flags bit-set. The symbol flags describe (in part) a symbol in a symbol group.
 ms.assetid: de1988f8-6a4d-43a3-856a-0543ecaaf06f
-ms.date: 10/30/2017
+ms.author: windowsdriverdev
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

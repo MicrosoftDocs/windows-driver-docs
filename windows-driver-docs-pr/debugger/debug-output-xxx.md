@@ -2,7 +2,8 @@
 title: DEBUG\_OUTPUT\_XXX
 description: The DEBUG\_OUTPUT\_XXX constants are output flags. The output flags form a bit field that indicates the type of the output that accompanies them.
 ms.assetid: 0c500a2e-0817-45de-8607-4cd4a29d5813
-ms.date: 10/30/2017
+ms.author: windowsdriverdev
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
