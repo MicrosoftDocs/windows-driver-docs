@@ -28,8 +28,9 @@ While NDIS processes this OID and before it passes the OID to the miniport drive
 
 Miniport drivers must use the contents of the [NDIS_OFFLOAD_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff566706) structure to update the currently reported TCP offload capabilities. After the update, the miniport driver must report the current task offload capabilities with the [NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG](ndis-status-task-offload-current-config.md) status indication. This status indication ensures that all of the overlying protocol drivers are updated with the new capabilities information.
 
-Before setting OID_TCP_OFFLOAD_PARAMETERS, the overlying applications or drivers can use the [OID_TCP_OFFLOAD_HARDWARE_CAPABILITIES](oid-tcp-offload-hardware-capabilities.md) OID to determine what capabilities a miniport adapter's hardware can support. Use OID_TCP_OFFLOAD_PARAMETERS to enable capabilities that are reported as not enabled by the [OID_TCP_OFFLOAD_CURRENT_CONFIG](oid-tcp-offload-current-config.md) OID.
+This OID is a more comprehensive OID that instructs miniport drivers to turn certain offloads on or off. Most TCP/IP task offloads can be configured and activated with this OID. For some offloads, such as Rx Checksum or Rx IPSec, this OID serves as a configuration change and doesn't mean the offload will be operational immediately. To activate those offloads, the miniport driver must wait until it receives an [OID_OFFLOAD_ENCAPSULATION](oid-offload-encapsulation.md) Set request.
 
+Before setting OID_TCP_OFFLOAD_PARAMETERS, the overlying applications or drivers can use the [OID_TCP_OFFLOAD_HARDWARE_CAPABILITIES](oid-tcp-offload-hardware-capabilities.md) OID to determine what capabilities a miniport adapter's hardware can support. Use OID_TCP_OFFLOAD_PARAMETERS to enable capabilities that are reported as not enabled by the [OID_TCP_OFFLOAD_CURRENT_CONFIG](oid-tcp-offload-current-config.md) OID.
 
 ### See also
 
