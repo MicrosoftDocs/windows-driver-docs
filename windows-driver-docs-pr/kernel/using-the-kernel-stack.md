@@ -25,13 +25,13 @@ To avoid running out of kernel-mode stack space, use the following design guidel
 
 -   Make sure that you limit the number of recursive calls that can occur, if you design a driver that has a recursive routine.
 
-In other words, the call-tree structure of a driver should be relatively flat. You can call the [**IoGetStackLimits**](https://msdn.microsoft.com/library/windows/hardware/ff549299) and [**IoGetRemainingStackSize**](https://msdn.microsoft.com/library/windows/hardware/ff549286) routines to determine the kernel stack space that is available. Note that the size of the kernel-mode stack can vary among different hardware platforms and different versions of the operating system.
+In other words, the call-tree structure of a driver should be relatively flat. You can call the [**IoGetStackLimits**](https://msdn.microsoft.com/library/windows/hardware/ff549299) and [**IoGetRemainingStackSize**](https://msdn.microsoft.com/library/windows/hardware/ff549286) routines to determine the kernel stack space that is available, or [**KeExpandKernelStackAndCallout**](https://msdn.microsoft.com/en-us/library/windows/hardware/ff552030) to expand it. Note that the size of the kernel-mode stack can vary among different hardware platforms and different versions of the operating system.
 
 Running out of kernel stack space causes a fatal system error. Therefore, it is better for a driver to [allocate system-space memory](allocating-system-space-memory.md) than to run out of kernel stack space. However, nonpaged pool is also a limited system resource.
 
-Drivers of devices that use DMA can buffer data to be transferred, if necessary, either by calling [**ExAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff544520) for a **NonPagedPool**-type buffer or, for some drivers, by using common-buffer DMA. For more information, see [Using Common-Buffer System DMA](using-common-buffer-system-dma.md) and [Using Common-Buffer Bus-Master DMA](using-common-buffer-bus-master-dma.md).
+Generally, the kernel-mode stack residents in memory, however it can occasionally be paged out if the thread enters a wait state that specifies user mode. See [**KeSetKernelStackSwapEnable**](https://msdn.microsoft.com/en-us/library/windows/hardware/ff553262) for more information on temporarily disable kernel stack paging for the current thread. For performance reason it is not recommended to disable kernel stack paging globally, but if you want to do so during a debugging session, see debugger document at [Disable paging of kernel stacks](https://msdn.microsoft.com/library/windows/hardware/ff541920)
 
-Generally, the kernel-mode stack cannot be paged; it is guaranteed to be resident in memory. However, Windows occasionally pages the kernel stacks of inactive threads. For help in guaranteeing that these kernel stacks are not paged during a debugging session, see [Disable paging of kernel stacks](https://msdn.microsoft.com/library/windows/hardware/ff541920).
+Because kernel stack might be paged out, please be cautious about passing stack-based buffer (i.e. local variables) to DMA or any routine that runs at DISPATCH_LEVEL or above.
 
  
 
