@@ -13,7 +13,7 @@ ms.technology: windows-devices
 >
 
 
-# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Working with Trace Files
+# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time Travel Debugging - Working with Trace Files
 
 This section describes how to work with files created and consumed by time travel debugging.
 

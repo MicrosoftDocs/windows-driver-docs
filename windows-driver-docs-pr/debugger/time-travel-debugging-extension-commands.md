@@ -14,7 +14,7 @@ ms.technology: windows-devices
 >
 
 
-# ![Small logo for windbg preview](images/windbgx-preview-logo.png) Time travel debugging extension commands
+# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time travel debugging extension commands
 
 This section introduces the time travel debugger extension commands.
 

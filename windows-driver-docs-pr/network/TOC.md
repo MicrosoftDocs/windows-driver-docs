@@ -3140,3 +3140,7 @@
 ### [SO_KEEPALIVE](so-keepalive.md)
 ### [SO_RCVBUF](so-rcvbuf.md)
 ### [SO_REUSEADDR](so-reuseaddr.md)
+# [Previous Versions of Network Drivers](previous-versions-of-network-drivers.md)
+## [Network Drivers Prior to Windows Vista](network-drivers-prior-to-windows-vista.md)
+## [Native 802.11 Wireless LAN Drivers](native-802-11-wireless-lan-drivers.md)
+## [Cellular COM API Reference](cellular-com-api-reference.md)
