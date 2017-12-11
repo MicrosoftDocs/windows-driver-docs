@@ -44,8 +44,8 @@ The following entries apply to both APN database and desktop COSA. All entries f
 | UpdateType | Describes whether the APN Database entry is new or modified. | Required | Possible values: <ul><li>**Add** – A new entry</li><li>**Change** – Update an existing entry</li><li>**Keep** – Do not change the entry</li><li>**Delete** – Delete the entry</li></ul> |
 | Country/Region | The country or region for the APN entry. | Required | We might change this entry to match how Windows refers to a particular country or region. |
 | Operator | The name of the operator. You do not need to include the country or region in this field. | Required | Ensure you use the same spelling and capitalization each time you submit an update for your APN entries. |
-| MCC | A 3-digit MCC value used for GSM IMSI submissions. | Required for GSM providers |  |
-| MNC | A 2- or 3-digit MNC value used for GSM IMSI submissions. | Required for GSM providers |  |
+| MCC | A 3-digit MCC value used for GSM IMSI submissions. | Optional for ICCID ranges. |  |
+| MNC | A 2- or 3-digit MNC value used for GSM IMSI submissions. | Optional for ICCID ranges. |  |
 | IMSI Range - Start | A 15-digit number that includes the MCC+MNC at the start of the number. | Optional | The number should end in 00. <p>If this setting and the **IMSIRange - End** setting is left blank but the **MCC** and **MNC** entries are specified, the entire MCC+MNC range is covered.</p> |
 | IMSI Range - End | A 15-digit number that includes the MCC+MNC at the start of the number. | Optional | The number should end in 99. <p>If this setting and the **IMSI Range - Start** setting is left blank but the **MCC** and **MNC** entries are specified, the entire MCC+MNC range is covered.</p> |
 | ICCID Range - Start | A 19- or 20-digit number that starts with 89 (the ICCID issuer identifier number). | Optional | The number should end in 00. |

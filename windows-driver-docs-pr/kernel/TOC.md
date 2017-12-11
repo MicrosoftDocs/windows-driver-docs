@@ -230,6 +230,7 @@
 ##### [IRP Processing Examples](irp-processing-examples.md)
 ###### [Processing IRPs in a Lowest-Level Driver](processing-irps-in-a-lowest-level-driver.md)
 ###### [Processing IRPs in an Intermediate-Level Driver](processing-irps-in-an-intermediate-level-driver.md)
+###### [Different ways of handling IRPs - Cheat sheet](different-ways-of-handling-irps-cheat-sheet.md)
 #### [I/O Programming Techniques](i-o-programming-techniques.md)
 #### [General I/O Programming Techniques](general-i-o-programming-techniques.md)
 ##### [Synchronous I/O Programming](synchronous-i-o-programming.md)

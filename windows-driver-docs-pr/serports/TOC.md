@@ -1,6 +1,7 @@
 # [Serial Controller Driver Design Guide](index.md)
 ## [Serial Controller Drivers Overview](serial-drivers-overview.md)
 ### [Serial I/O Request Interface](serial-i-o-request-interface.md)
+#### [SerCx I/O Control Requests](sercx-io-control-requests.md)
 ### [Differences Between SerCx2.sys and Serial.sys](differences-between-sercx2-and-serial-sys.md)
 ## [Using Version 2 of the Serial Framework Extension (SerCx2)](using-version-2-of-the-serial-framework-extension.md)
 ### [SerCx2 Architectural Overview](sercx2-architectural-overview.md)
