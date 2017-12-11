@@ -29,7 +29,7 @@ The **!fileobj** extension displays detailed information about a FILE\_OBJECT st
 
 
 <span id="_______FileObject______"></span><span id="_______fileobject______"></span><span id="_______FILEOBJECT______"></span> *FileObject*   
-Specifies the address of a [FILE\_OBJECT](https://msdn.microsoft.com/library/windows/hardware/ff545834.aspx) structure.
+Specifies the address of a [FILE_OBJECT](https://msdn.microsoft.com/library/windows/hardware/ff545834) structure.
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
