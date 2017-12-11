@@ -55,44 +55,45 @@ The ATR formats for different NFC card types are listed below. Please refer to P
         </tr>
         <tr>
             <td>4 to 3+N</td>
-            <td><table>
-                <tbody>
-                    <tr>
-                        <td>80</td>
-                        <td>TK<td>
-                        <td>Category indicator byte</td>
-                    </tr>
-                    <tr>
-                        <td>4F</td>
-                        <td></td>
-                        <td>Application identifier presence</td>
-                    <tr>
-                        <td>0C</td>
-                        <td></td>
-                        <td>Length</td>
-                    </tr>
-                    <tr>
-                        <td>A0 00 00 03 06</td>
-                        <td></td>
-                        <td>RID as specified in part 3 supplemental doc from PC/SC</td>
-                    </tr>
-                    <tr>
-                        <td>SS</td>
-                        <td></td>
-                        <td>Byte for standard. The values should correspond to Table 2 of the supplemental doc.</td>
-                    </tr>
-                    <tr>
-                        <td>NN<td>
-                        <td></td>
-                        <td>Bytes for card name. The values should correspond to Table 3 of the supplemental doc</td>
-                    </tr>
-                    <tr>
-                        <td>00 00 00 00</td>
-                        <td>RFU</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table></td>
+            <td>80</td>
+            <td>T1</td>
+            <td>Category indicator byte.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>4F</td>
+            <td>TK</td>
+            <td>Application identifier presence.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>0C</td>
+            <td></td>
+            <td>Length</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>A0 00 00 03 06</td>
+            <td></td>
+            <td>RID as specified in part 3 supplemental doc from PC/SC</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>SS</td>
+            <td></td>
+            <td>Byte for standard. The values should correspond to Table 2 of the supplemental doc.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>NN</td>
+            <td></td>
+            <td>Bytes for card name. The values should correspond to Table 3 of the supplemental doc.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>00 00 00 00</td>
+            <td>RFU</td>
+            <td></td>
         </tr>
         <tr>
             <td>4+N</td>
