@@ -60,37 +60,37 @@ The ATR formats for different NFC card types are listed below. Please refer to P
             <td>Category indicator byte.</td>
         </tr>
         <tr>
-            <td></td>
+            <td>4 to 3+N</td>
             <td>4F</td>
             <td>TK</td>
             <td>Application identifier presence.</td>
         </tr>
         <tr>
-            <td></td>
+            <td>4 to 3+N</td>
             <td>0C</td>
-            <td></td>
+            <td>TK</td>
             <td>Length</td>
         </tr>
         <tr>
-            <td></td>
+            <td>4 to 3+N</td>
             <td>A0 00 00 03 06</td>
-            <td></td>
+            <td>TK</td>
             <td>RID as specified in part 3 supplemental doc from PC/SC</td>
         </tr>
         <tr>
-            <td></td>
+            <td>4 to 3+N</td>
             <td>SS</td>
-            <td></td>
+            <td>TK</td>
             <td>Byte for standard. The values should correspond to Table 2 of the supplemental doc.</td>
         </tr>
         <tr>
-            <td></td>
+            <td>4 to 3+N</td>
             <td>NN</td>
-            <td></td>
+            <td>TK</td>
             <td>Bytes for card name. The values should correspond to Table 3 of the supplemental doc.</td>
         </tr>
         <tr>
-            <td></td>
+            <td>4 to 3+N</td>
             <td>00 00 00 00</td>
             <td>RFU</td>
             <td></td>
