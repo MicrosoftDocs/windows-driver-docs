@@ -26,7 +26,7 @@
 ##### [Identifying Backup Files for Existing Boot Entries](identifying-backup-files-for-existing-boot-entries.md)
 ##### [Identifying Backup Files for Deleted Boot Entries](identifying-backup-files-for-deleted-boot-entries.md)
 ##### [Recognizing Unusable Boot Entry Backup Files](recognizing-unusable-boot-entry-backup-files.md)
-### [Overview of Boot Options in Windows Vista and Later](boot-options-in-windows-vista-and-later.md)
+### [Overview of Boot Options in Windows Vista and Later](boot-options-in-windows.md)
 ## [Editing Boot Options](editing-boot-options.md)
 ### [Adding Boot Entries](adding-boot-entries.md)
 ### [Changing the Friendly Name of a Boot Entry](changing-the-friendly-name-of-a-boot-entry.md)

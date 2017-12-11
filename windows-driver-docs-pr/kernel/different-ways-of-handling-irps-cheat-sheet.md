@@ -399,7 +399,7 @@ Return Value:
     // driver without setting a completion routine.
     // 
     
-    KeInitializeEvent(&amp;event, NotificationEvent, FALSE);
+    KeInitializeEvent(&event, NotificationEvent, FALSE);
 
     irp = IoBuildDeviceIoControlRequest (
                             IoctlControlCode,
@@ -409,8 +409,8 @@ Return Value:
                             OutputBuffer,
                             OutputBufferLength,
                             FALSE, // External
-                            &amp;event,
-                            &amp;ioStatus);
+                            &event,
+                            &ioStatus);
 
     if (NULL == irp) {
         return STATUS_INSUFFICIENT_RESOURCES;
@@ -431,7 +431,7 @@ Return Value:
         // IRP is completed.
         // 
         status = KeWaitForSingleObject(
-                     &amp;event,
+                     &event,
                      Executive, // wait reason
                      KernelMode, // To prevent stack from being paged out.
                      FALSE,     // You are not alertable
@@ -461,25 +461,25 @@ typedef enum {
 // while the canceller is calling IoCancelIrp. This is done by wrapping the
 // call in InterlockedExchange(s). The roles are as follows:
 // 
-// Initiator/completion: Cancelable --&gt; IoCallDriver() --&gt; Completed
-// Canceller: CancelStarted --&gt; IoCancelIrp() --&gt; CancelCompleted
+// Initiator/completion: Cancelable --> IoCallDriver() --> Completed
+// Canceller: CancelStarted --> IoCancelIrp() --> CancelCompleted
 // 
 // No cancellation:
-//   Cancelable--&gt;Completed
+//   Cancelable-->Completed
 // 
 // Cancellation, IoCancelIrp returns before completion:
-//   Cancelable --&gt; CancelStarted --&gt; CancelCompleted --&gt; Completed
+//   Cancelable --> CancelStarted --> CancelCompleted --> Completed
 // 
 // Canceled after completion:
-//   Cancelable --&gt; Completed -&gt; CancelStarted
+//   Cancelable --> Completed -> CancelStarted
 // 
 // Cancellation, IRP completed during call to IoCancelIrp():
-//   Cancelable --&gt; CancelStarted -&gt; Completed --&gt; CancelCompleted
+//   Cancelable --> CancelStarted -> Completed --> CancelCompleted
 // 
 //  The transition from CancelStarted to Completed tells the completer to block
 //  postprocessing (IRP ownership is transferred to the canceller). Similarly,
 //  the canceller learns it owns IRP postprocessing (free, completion, etc)
-//  during a Completed-&gt;CancelCompleted transition.
+//  during a Completed->CancelCompleted transition.
 // 
 
 
@@ -524,7 +524,7 @@ Return Value:
     LARGE_INTEGER dueTime;
     IRPLOCK lock;
 
-    KeInitializeEvent(&amp;event, NotificationEvent, FALSE);
+    KeInitializeEvent(&event, NotificationEvent, FALSE);
 
     irp = IoBuildDeviceIoControlRequest (
                     IoctlControlCode,
@@ -534,8 +534,8 @@ Return Value:
                     OutputBuffer,
                     OutputBufferLength,
                     FALSE, // External ioctl
-                    &amp;event,
-                    &amp;ioStatus);
+                    &event,
+                    &ioStatus);
 
 
 
@@ -548,7 +548,7 @@ Return Value:
     IoSetCompletionRoutine(
                     irp,
                     MakeSynchronousIoctlWithTimeOutCompletion,
-                    &amp;lock,
+                    &lock,
                     TRUE,
                     TRUE,
                     TRUE
@@ -561,16 +561,16 @@ Return Value:
         dueTime.QuadPart = -10000 * Milliseconds;
 
         status = KeWaitForSingleObject(
-                            &amp;event,
+                            &event,
                             Executive,
                             KernelMode,
                             FALSE,
-                            &amp;dueTime
+                            &dueTime
                             );
 
         if (status == STATUS_TIMEOUT) {
 
-            if (InterlockedExchange((PVOID)&amp;lock, IRPLOCK_CANCEL_STARTED) == IRPLOCK_CANCELABLE) {
+            if (InterlockedExchange((PVOID)&lock, IRPLOCK_CANCEL_STARTED) == IRPLOCK_CANCELABLE) {
 
                 // 
                 // You got it to the IRP before it was completed. You can cancel
@@ -584,12 +584,12 @@ Return Value:
                 // then you need to complete it yourself. Otherwise, you got
                 // through IoCancelIrp before the IRP completed entirely.
                 // 
-                if (InterlockedExchange(&amp;lock, IRPLOCK_CANCEL_COMPLETE) == IRPLOCK_COMPLETED) {
+                if (InterlockedExchange(&lock, IRPLOCK_CANCEL_COMPLETE) == IRPLOCK_COMPLETED) {
                     IoCompleteRequest(irp, IO_NO_INCREMENT);
                 }
             }
 
-            KeWaitForSingleObject(&amp;event, Executive, KernelMode, FALSE, NULL);
+            KeWaitForSingleObject(&event, Executive, KernelMode, FALSE, NULL);
 
             ioStatus.Status = status; // Return STATUS_TIMEOUT
 
@@ -668,7 +668,7 @@ Return Value:
         return STATUS_INSUFFICIENT_RESOURCES;
     }
 
-    KeInitializeEvent(&amp;event,  NotificationEvent,   FALSE);
+    KeInitializeEvent(&event,  NotificationEvent,   FALSE);
 
     irp = IoBuildSynchronousFsdRequest(
                 IRP_MJ_WRITE,
@@ -677,9 +677,9 @@ Return Value:
                 NumBytes,
 
 
-                &amp;startingOffset, // Optional
-                &amp;event,
-                &amp;ioStatus
+                &startingOffset, // Optional
+                &event,
+                &ioStatus
                 ); 
     
     if (NULL == irp) {
@@ -699,7 +699,7 @@ Return Value:
     if (status == STATUS_PENDING) {
 
        status = KeWaitForSingleObject(
-                            &amp;event,
+                            &event,
                             Executive,
                             KernelMode,
                             FALSE, // Not alertable
@@ -752,15 +752,15 @@ Return Value:
     BOOLEAN         isSynchronous = TRUE;
 
     startingOffset.QuadPart = (LONGLONG) 0;
-    KeInitializeEvent(&amp;event, NotificationEvent, FALSE);
+    KeInitializeEvent(&event, NotificationEvent, FALSE);
     irp = IoBuildSynchronousFsdRequest(
                 IRP_MJ_WRITE,
                 TopOfDeviceStack,
                 WriteBuffer,
                 NumBytes,
-                &amp;startingOffset, // Optional
-                &amp;event,
-                &amp;ioStatus
+                &startingOffset, // Optional
+                &event,
+                &ioStatus
                 );
 
     if (NULL == irp) {
@@ -769,7 +769,7 @@ Return Value:
 
     IoSetCompletionRoutine(irp,
                 MakeSynchronousNonIoctlRequestCompletion2,
-                (PVOID)&amp;event,
+                (PVOID)&event,
                 TRUE,
                 TRUE,
                 TRUE);
@@ -778,12 +778,12 @@ Return Value:
 
     if (status == STATUS_PENDING) {
 
-        KeWaitForSingleObject(&amp;event,
+        KeWaitForSingleObject(&event,
                               Executive,
                               KernelMode,
                               FALSE, // Not alertable
                               NULL);
-        status = irp-&gt;IoStatus.Status;
+        status = irp->IoStatus.Status;
         isSynchronous = FALSE;
     }
 
@@ -797,7 +797,7 @@ Return Value:
     // association of this IRP with the current thread.
     //
 
-    KeClearEvent(&amp;event);
+    KeClearEvent(&event);
     IoCompleteRequest(irp, IO_NO_INCREMENT);
 
     //
@@ -808,8 +808,8 @@ Return Value:
     // takes place regardless of the status value.
     //
 
-    if (!(NT_ERROR(status) &amp;&amp; isSynchronous)) {
-        KeWaitForSingleObject(&amp;event,
+    if (!(NT_ERROR(status) && isSynchronous)) {
+        KeWaitForSingleObject(&event,
                               Executive,
                               KernelMode,
                               FALSE, // Not alertable
@@ -823,7 +823,7 @@ NTSTATUS MakeSynchronousNonIoctlRequestCompletion2(
     IN PIRP             Irp,
     IN PVOID            Context )
 {
-    if (Irp-&gt;PendingReturned) {
+    if (Irp->PendingReturned) {
         KeSetEvent ((PKEVENT) Context, IO_NO_INCREMENT, FALSE);
     }
     return STATUS_MORE_PROCESSING_REQUIRED;
@@ -866,7 +866,7 @@ Arguments:
                 TopOfDeviceStack,
                 WriteBuffer,
                 NumBytes,
-                &amp;startingOffset, // Optional
+                &startingOffset, // Optional
                 NULL
                 ); 
     
@@ -900,7 +900,7 @@ Arguments:
     // 
     // Change the MajorFunction code to something appropriate.
     // 
-    nextStack-&gt;MajorFunction = IRP_MJ_SCSI;
+    nextStack->MajorFunction = IRP_MJ_SCSI;
 
     (void) IoCallDriver(TopOfDeviceStack, irp);
 
@@ -917,14 +917,14 @@ MakeAsynchronousRequestCompletion(
     
     // 
     // If the target device object is set up to do buffered i/o 
-    // (TopOfDeviceStack-&gt;Flags and DO_BUFFERED_IO), then 
+    // (TopOfDeviceStack->Flags and DO_BUFFERED_IO), then 
     // IoBuildAsynchronousFsdRequest request allocates a system buffer
     // for read and write operation. If you stop the completion of the IRP
     // here, you must free that buffer.
     // 
 
-    if(Irp-&gt;AssociatedIrp.SystemBuffer &amp;&amp; (Irp-&gt;Flags &amp; IRP_DEALLOCATE_BUFFER) ) {
-            ExFreePool(Irp-&gt;AssociatedIrp.SystemBuffer);
+    if(Irp->AssociatedIrp.SystemBuffer && (Irp->Flags & IRP_DEALLOCATE_BUFFER) ) {
+            ExFreePool(Irp->AssociatedIrp.SystemBuffer);
     }
     
     // 
@@ -934,12 +934,12 @@ MakeAsynchronousRequestCompletion(
     // the pages and free the MDL.
     // 
     
-    else if (Irp-&gt;MdlAddress != NULL) {
-        for (mdl = Irp-&gt;MdlAddress; mdl != NULL; mdl = nextMdl) {
-            nextMdl = mdl-&gt;Next;
+    else if (Irp->MdlAddress != NULL) {
+        for (mdl = Irp->MdlAddress; mdl != NULL; mdl = nextMdl) {
+            nextMdl = mdl->Next;
             MmUnlockPages( mdl ); IoFreeMdl( mdl ); // This function will also unmap pages.
         }
-        Irp-&gt;MdlAddress = NULL;
+        Irp->MdlAddress = NULL;
     }
 
     if(Context) {
@@ -996,7 +996,7 @@ Arguments:
     // to the current process for this IRP.
     // 
 
-    irp = IoAllocateIrp( TopOfDeviceStack-&gt;StackSize, FALSE );
+    irp = IoAllocateIrp( TopOfDeviceStack->StackSize, FALSE );
     if (NULL == irp) {
        
         return STATUS_INSUFFICIENT_RESOURCES;
@@ -1008,42 +1008,42 @@ Arguments:
     // 
 
     nextStack = IoGetNextIrpStackLocation( irp );
-    nextStack-&gt;MajorFunction = IRP_MJ_WRITE;
-    nextStack-&gt;Parameters.Write.Length = NumBytes;
-    nextStack-&gt;Parameters.Write.ByteOffset= startingOffset;
+    nextStack->MajorFunction = IRP_MJ_WRITE;
+    nextStack->Parameters.Write.Length = NumBytes;
+    nextStack->Parameters.Write.ByteOffset= startingOffset;
 
  
-    if(TopOfDeviceStack-&gt;Flags &amp; DO_BUFFERED_IO) {
+    if(TopOfDeviceStack->Flags & DO_BUFFERED_IO) {
         
-        irp-&gt;AssociatedIrp.SystemBuffer = WriteBuffer;
-        irp-&gt;MdlAddress = NULL;
+        irp->AssociatedIrp.SystemBuffer = WriteBuffer;
+        irp->MdlAddress = NULL;
         
-    } else if (TopOfDeviceStack-&gt;Flags &amp; DO_DIRECT_IO) {
+    } else if (TopOfDeviceStack->Flags & DO_DIRECT_IO) {
         // 
         // The target device supports direct I/O operations.  Allocate
         // an MDL large enough to map the buffer and lock the pages into
         // memory.
         // 
-        irp-&gt;MdlAddress = IoAllocateMdl( WriteBuffer,
+        irp->MdlAddress = IoAllocateMdl( WriteBuffer,
                                          NumBytes,
                                          FALSE,
                                          FALSE,
                                          (PIRP) NULL );
-        if (irp-&gt;MdlAddress == NULL) {
+        if (irp->MdlAddress == NULL) {
             IoFreeIrp( irp );
             return STATUS_INSUFFICIENT_RESOURCES;
         }
 
         try {
             
-            MmProbeAndLockPages( irp-&gt;MdlAddress,
+            MmProbeAndLockPages( irp->MdlAddress,
                                  KernelMode,
-                                 (LOCK_OPERATION) (nextStack-&gt;MajorFunction == IRP_MJ_WRITE ? IoReadAccess : IoWriteAccess) );
+                                 (LOCK_OPERATION) (nextStack->MajorFunction == IRP_MJ_WRITE ? IoReadAccess : IoWriteAccess) );
             
         } except(EXCEPTION_EXECUTE_HANDLER) {
         
-              if (irp-&gt;MdlAddress != NULL) {
-                  IoFreeMdl( irp-&gt;MdlAddress );
+              if (irp->MdlAddress != NULL) {
+                  IoFreeMdl( irp->MdlAddress );
               }
               IoFreeIrp( irp );
               return  GetExceptionCode();
@@ -1076,12 +1076,12 @@ MakeAsynchronousRequestCompletion2(
     // Free any associated MDL.
     // 
       
-    if (Irp-&gt;MdlAddress != NULL) {
-        for (mdl = Irp-&gt;MdlAddress; mdl != NULL; mdl = nextMdl) {
-            nextMdl = mdl-&gt;Next;
+    if (Irp->MdlAddress != NULL) {
+        for (mdl = Irp->MdlAddress; mdl != NULL; mdl = nextMdl) {
+            nextMdl = mdl->Next;
             MmUnlockPages( mdl ); IoFreeMdl( mdl ); // This function will also unmap pages.
         }
-        Irp-&gt;MdlAddress = NULL;
+        Irp->MdlAddress = NULL;
     }
 
     // 
@@ -1114,7 +1114,7 @@ typedef struct _DEVICE_EXTENSION{
 				 </pre><pre class="code">
 InitializeDeviceExtension( PDEVICE_EXTENSION  DeviceExtension)
 {
-    KeInitializeEvent(&amp;DeviceExtension-&gt;IrpEvent, SynchronizationEvent, TRUE); 
+    KeInitializeEvent(&DeviceExtension->IrpEvent, SynchronizationEvent, TRUE); 
 }
 
 NTSTATUS
@@ -1146,7 +1146,7 @@ Arguments:
     // make sure to call KeEnterCriticialRegion before the wait to protect 
     // the thread from getting suspended while holding a lock.
     // 
-    KeWaitForSingleObject( &amp;DeviceExtension-&gt;IrpEvent,
+    KeWaitForSingleObject( &DeviceExtension->IrpEvent,
                            Executive,
                            KernelMode,
                            FALSE,
@@ -1163,10 +1163,10 @@ Arguments:
     // 
     irp = IoBuildAsynchronousFsdRequest(
                 IRP_MJ_WRITE,
-                DeviceExtension-&gt;TopOfDeviceStack,
+                DeviceExtension->TopOfDeviceStack,
                 WriteBuffer,
                 NumBytes,
-                &amp;startingOffset, // Optional
+                &startingOffset, // Optional
                 NULL
                 ); 
     
@@ -1178,8 +1178,8 @@ Arguments:
     // 
     // Initialize the fields relevant fields in the DeviceExtension
     // 
-    DeviceExtension-&gt;PendingIrp = irp;
-    DeviceExtension-&gt;IrpLock = IRPLOCK_CANCELABLE;
+    DeviceExtension->PendingIrp = irp;
+    DeviceExtension->IrpLock = IRPLOCK_CANCELABLE;
 
     IoSetCompletionRoutine(irp,
                    MakeASynchronousRequestCompletion3,
@@ -1199,9 +1199,9 @@ Arguments:
     // 
     // You could change the MajorFunction code to something appropriate.
     // 
-    nextStack-&gt;MajorFunction = IRP_MJ_SCSI;
+    nextStack->MajorFunction = IRP_MJ_SCSI;
 
-    (void) IoCallDriver(DeviceExtension-&gt;TopOfDeviceStack, irp);
+    (void) IoCallDriver(DeviceExtension->TopOfDeviceStack, irp);
 
     return STATUS_SUCCESS;
 }
@@ -1218,14 +1218,14 @@ MakeASynchronousRequestCompletion3(
 
     // 
     // If the target device object is set up to do buffered i/o 
-    // (TargetDeviceObject-&gt;Flags &amp; DO_BUFFERED_IO), then 
+    // (TargetDeviceObject->Flags & DO_BUFFERED_IO), then 
     // IoBuildAsynchronousFsdRequest request allocates a system buffer
     // for read and write operation. If you stop the completion of the IRP
     // here, you must free that buffer.
     // 
 
-    if(Irp-&gt;AssociatedIrp.SystemBuffer &amp;&amp; (Irp-&gt;Flags &amp; IRP_DEALLOCATE_BUFFER) ) {
-            ExFreePool(Irp-&gt;AssociatedIrp.SystemBuffer);
+    if(Irp->AssociatedIrp.SystemBuffer && (Irp->Flags & IRP_DEALLOCATE_BUFFER) ) {
+            ExFreePool(Irp->AssociatedIrp.SystemBuffer);
     }
 
     // 
@@ -1235,15 +1235,15 @@ MakeASynchronousRequestCompletion3(
     // the pages and free the MDL.
     // 
 
-    if (Irp-&gt;MdlAddress != NULL) {
-        for (mdl = Irp-&gt;MdlAddress; mdl != NULL; mdl = nextMdl) {
-            nextMdl = mdl-&gt;Next;
+    if (Irp->MdlAddress != NULL) {
+        for (mdl = Irp->MdlAddress; mdl != NULL; mdl = nextMdl) {
+            nextMdl = mdl->Next;
             MmUnlockPages( mdl ); IoFreeMdl( mdl ); // This function will also unmap pages.
         }
-        Irp-&gt;MdlAddress = NULL;
+        Irp->MdlAddress = NULL;
     }
 
-    if (InterlockedExchange((PVOID)&amp;deviceExtension-&gt;IrpLock, IRPLOCK_COMPLETED) 
+    if (InterlockedExchange((PVOID)&deviceExtension->IrpLock, IRPLOCK_COMPLETED) 
                     == IRPLOCK_CANCEL_STARTED) {
         // 
         // Main line code has got the control of the IRP. It will
@@ -1257,12 +1257,12 @@ MakeASynchronousRequestCompletion3(
     // sure you call IoReuseIrp(Irp, STATUS_SUCCESS) before you reuse.
     // 
     IoFreeIrp(Irp);
-    deviceExtension-&gt;PendingIrp = NULL; // if freed
+    deviceExtension->PendingIrp = NULL; // if freed
     // 
     // Signal the event so that the next thread in the waiting list
     // can send the next request.
     // 
-    KeSetEvent (&amp;deviceExtension-&gt;IrpEvent, IO_NO_INCREMENT, FALSE);
+    KeSetEvent (&deviceExtension->IrpEvent, IO_NO_INCREMENT, FALSE);
     
     return STATUS_MORE_PROCESSING_REQUIRED;
 }
@@ -1279,23 +1279,23 @@ CancelPendingIrp(
     before successfully completing the remove request and allowing the driver to unload.
 --*/ 
 { 
-     if (InterlockedExchange((PVOID)&amp;DeviceExtension-&gt;IrpLock, IRPLOCK_CANCEL_STARTED) == IRPLOCK_CANCELABLE) {
+     if (InterlockedExchange((PVOID)&DeviceExtension->IrpLock, IRPLOCK_CANCEL_STARTED) == IRPLOCK_CANCELABLE) {
 
         // 
         // You got it to the IRP before it was completed. You can cancel
         // the IRP without fear of losing it, as the completion routine
         // will not let go of the IRP until you say so.
         // 
-        IoCancelIrp(DeviceExtension-&gt;PendingIrp);
+        IoCancelIrp(DeviceExtension->PendingIrp);
         // 
         // Release the completion routine. If it already got there,
         // then you need to free it yourself. Otherwise, you got
         // through IoCancelIrp before the IRP completed entirely.
         // 
-        if (InterlockedExchange((PVOID)&amp;DeviceExtension-&gt;IrpLock, IRPLOCK_CANCEL_COMPLETE) == IRPLOCK_COMPLETED) {
-            IoFreeIrp(DeviceExtension-&gt;PendingIrp);
-            DeviceExtension-&gt;PendingIrp = NULL;
-            KeSetEvent(&amp;DeviceExtension-&gt;IrpEvent, IO_NO_INCREMENT, FALSE);
+        if (InterlockedExchange((PVOID)&DeviceExtension->IrpLock, IRPLOCK_CANCEL_COMPLETE) == IRPLOCK_COMPLETED) {
+            IoFreeIrp(DeviceExtension->PendingIrp);
+            DeviceExtension->PendingIrp = NULL;
+            KeSetEvent(&DeviceExtension->IrpEvent, IO_NO_INCREMENT, FALSE);
         }
 
      }
