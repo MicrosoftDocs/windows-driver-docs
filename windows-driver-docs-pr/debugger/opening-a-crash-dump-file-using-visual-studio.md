@@ -2,6 +2,11 @@
 title: Opening a Dump File Using Visual Studio
 description: The procedures Opening a Dump File Using Visual Studio.
 ms.assetid: 3B7327FE-335F-46FB-94C3-75D5B52A295D
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Opening a Dump File Using Visual Studio

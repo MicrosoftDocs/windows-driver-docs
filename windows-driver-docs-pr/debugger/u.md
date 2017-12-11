@@ -3,6 +3,11 @@ title: U (Windows Debugger Glossary)
 description: Glossary page - U
 Robots: noindex, nofollow
 ms.assetid: f3866ed9-eb94-4433-8a73-3b37f7e67303
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # U

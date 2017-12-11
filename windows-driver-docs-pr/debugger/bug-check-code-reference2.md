@@ -2,6 +2,11 @@
 title: Bug Check Code Reference
 description: This section contains descriptions of the common bug checks, including the parameters passed to the blue screen.
 ms.assetid: DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bug Check Code Reference

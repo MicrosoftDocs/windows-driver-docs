@@ -3,6 +3,11 @@ title: T (Windows Debugger Glossary)
 description: Glossary page - T
 Robots: noindex, nofollow
 ms.assetid: e17a63eb-a002-4e72-86a9-8176bf5f75d0
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # T

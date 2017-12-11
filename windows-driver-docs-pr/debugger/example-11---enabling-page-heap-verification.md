@@ -2,6 +2,11 @@
 title: Example 11 Enabling Page Heap Verification
 description: Example 11 Enabling Page Heap Verification
 ms.assetid: 5d0303a9-29f7-4759-ae7b-ad670eaee0ee
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 11: Enabling Page Heap Verification

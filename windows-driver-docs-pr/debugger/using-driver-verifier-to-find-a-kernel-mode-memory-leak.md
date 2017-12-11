@@ -2,6 +2,11 @@
 title: Using Driver Verifier to Find a Kernel-Mode Memory Leak
 description: Using Driver Verifier to Find a Kernel-Mode Memory Leak
 ms.assetid: d81a8b72-91d3-4132-9cc2-1cf1b597306a
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Driver Verifier to Find a Kernel-Mode Memory Leak

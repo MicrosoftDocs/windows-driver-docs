@@ -2,6 +2,11 @@
 title: Controlling Threads and Processes in Visual Studio
 description: The procedures covers Controlling Threads and Processes in Visual Studio.
 ms.assetid: 5A1F9A59-EFCD-4BC9-BDEC-DED11A184651
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Controlling Threads and Processes in Visual Studio

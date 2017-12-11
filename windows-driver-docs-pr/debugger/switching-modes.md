@@ -2,6 +2,11 @@
 title: Switching Modes
 description: Switching Modes
 ms.assetid: 167e5352-4ebc-423d-bf4f-ba1d459b394f
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Switching Modes
