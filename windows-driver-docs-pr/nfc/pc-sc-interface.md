@@ -22,7 +22,7 @@ The ATR formats for different NFC card types are listed below. Please refer to P
 | 4 to 3+N    | XX    | Historical bytes | For ISO14443A: The historical bytes is from the ATS response <br> For ISO14443B: The historical bytes is from ATTRIB (ATQB) |
 | 4+N         | XX    | TCK              | Checksum                                                                                                                    |
 
-## ATR format for storage carks
+## ATR format for storage cards
 <table>
     <tbody>
         <tr>
