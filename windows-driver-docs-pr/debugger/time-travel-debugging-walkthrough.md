@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Sample App Walkthrough
 description: This section contains a walk through of a small C++ app. 
 ms.author: windowsdriverdev
-ms.date: 09/22/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -16,7 +16,63 @@ ms.technology: windows-devices
 # ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time Travel Debugging - Sample App Walkthrough
 
 
-> Content Pending
+This lab introduces  Time Travel Debugging, using a small code sample with a code flaw. TTD is used to debug and identify the issue. Although the issue in teh code is easy to find, the general procedure can be used on more complex code. The general procedure can be sumarized as follows.
+
+1. Capture a time travel trace of the failed program.
+2. Use the dx command to determine the exception event. 
+3. Step back in the trace and to the exception event.
+4. Single step until teh code in question comes into scope.
+5. Look at the local values and develop a hypthesis of a variable that may have an incorrect value.
+6. Determine memory address of the variable with the incorrect value.
+7. Seta memory access ba breakpoint on address of the suspect variable.
+8. Use g- to run back to point of memory access.
+9. See if that location or a few instructions before is the point of teh code flaw. If so, you are done.
+If some other variable seems to set the value in teh first variable, set another break on access breakpoint on that variable 
+10. Use g- to run back to point of memory access on the second suspect variable.
+11. Repeat this process walking back until the code that made the error is located.
+ 
+
+
+## <span id="Lab_objectives"></span><span id="lab_objectives"></span><span id="LAB_OBJECTIVES"></span>Lab objectives
+
+After completing this lab you will be able to use the general procedure with a time travel trace to locate issues in code. 
+
+## <span id="Lab_setup"></span><span id="lab_setup"></span><span id="LAB_SETUP"></span>Lab setup
+
+
+You will need the following hardware to be able to complete the lab.
+
+-   A laptop or desktop computer (host) running Windows 10
+
+You will need the following software to be able to complete the lab.
+
+-   Visual Studio to build the code 
+-   The sample echo driver for Windows 10
+
+The lab has the following eleven sections.
+
+-   [Section 1: Connect to a kernel mode WinDbg session](#connectto)
+-   [Section 2: Kernel mode debugging commands and techniques](#kernelmodedebuggingcommandsandtechniques)
+-   [Section 3: Download and build the KMDF Universal Echo Driver](#download)
+-   [Section 4: Install the KMDF Echo driver sample on the target system](#install)
+-   [Section 5: Use WinDbg to display information about the driver](#usewindbgtodisplayinformation)
+-   [Section 6: Display Plug and Play device tree information](#displayingtheplugandplaydevicetree)
+-   [Section 7: Work with breakpoints and source code](#workingwithbreakpoints)
+-   [Section 8: View variables and call stacks](#viewingvariables)
+-   [Section 9: Display processes and threads](#displayingprocessesandthreads)
+-   [Section 10: IRQL, Registers and Ending the WinDbg session](#irqlregistersmemory)
+-   [Section 11: Windows debugging resources](#windowsdebuggingresources)
+
+## <span id="CONNECTTO"></span>Section 1: Connect to a kernel mode WinDbg session
+
+
+*In Section 1, you will configure network debugging on the host and target system.*
+
+The PCs in this lab need to be configured to use an Ethernet network connection for kernel debugging.
+
+This lab uses two PCs. Windows debugger runs on the *host* system and the KMDF Echo driver runs on the *target* system.
+
+The "&lt;-Host" on the left is connected using a cross over ethernet cable to the "-&gt;Target" on the right.
 
 ---
 
