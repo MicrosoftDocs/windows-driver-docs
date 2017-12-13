@@ -15,27 +15,29 @@ ms.technology: windows-devices
 
 # Initializing a Filter Driver
 
-
 ## <a href="" id="ddk-initializing-a-filter-driver-ng"></a>
-
 
 Filter driver initialization occurs immediately after the system loads the driver. Filter drivers load as system services. The system can load the filter drivers at any time before, during, or after the miniport drivers load. NDIS can attach a filter module to a miniport adapter after a miniport adapter of the type supported by the filter driver becomes available and the filter driver initialization is complete.
 
 While a driver stack is starting, the system loads the filter drivers if they are not already loaded. For more information about starting a driver stack that includes filter modules, see [Starting a Driver Stack](starting-a-driver-stack.md).
 
-After a filter driver loads, the system calls the driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine. For more information about the filter driver **DriverEntry** routine, see [**DriverEntry of NDIS Filter Drivers**](https://msdn.microsoft.com/library/windows/hardware/ff548813).
+After a filter driver loads, the system calls the driver's [DriverEntry](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine. 
 
-The system passes two arguments to [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113):
+The system passes two arguments to [DriverEntry](https://msdn.microsoft.com/library/windows/hardware/ff544113):
 
 -   A pointer to the driver object, which was created by the I/O system.
 
 -   A pointer to the registry path, which specifies where driver-specific parameters are stored.
 
-The filter driver passes the driver object to the [**NdisFRegisterFilterDriver**](https://msdn.microsoft.com/library/windows/hardware/ff562608) function when it registers with NDIS as a filter driver. The driver can use the registry path to obtain configuration information. For more information about how to access filter driver configuration information, see [Accessing Configuration Information for a Filter Driver](accessing-configuration-information-for-a-filter-driver.md).
+[DriverEntry](https://msdn.microsoft.com/library/windows/hardware/ff544113) returns STATUS_SUCCESS, or its equivalent NDIS_STATUS_SUCCESS, if the driver successfully registered as an NDIS filter driver. If **DriverEntry** fails initialization by propagating an error status returned by an **NdisXxx** function or by a kernel-mode support routine, the driver will not remain loaded. **DriverEntry** must execute synchronously; that is, it cannot return STATUS_PENDING or its equivalent NDIS_STATUS_PENDING.
+
+The filter driver passes the driver object to the [NdisFRegisterFilterDriver](https://msdn.microsoft.com/library/windows/hardware/ff562608) function when it registers with NDIS as a filter driver. The driver can use the registry path to obtain configuration information. For more information about how to access filter driver configuration information, see [Accessing Configuration Information for a Filter Driver](accessing-configuration-information-for-a-filter-driver.md).
 
 A filter driver calls **NdisFRegisterFilterDriver** from its **DriverEntry** routine. Filter drivers export a set of *FilterXxx* functions by passing an [**NDIS\_FILTER\_DRIVER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff565515) structure to **NdisFRegisterFilterDriver** at the *FilterCharacteristics* parameter.
 
 The NDIS\_FILTER\_DRIVER\_CHARACTERISTICS structure specifies entry points for mandatory and optional *FilterXxx* functions. Some optional functions can be bypassed. For more information about bypassing functions, see [Data Bypass Mode](data-bypass-mode.md).
+
+Drivers that call [NdisFRegisterFilterDriver](https://msdn.microsoft.com/library/windows/hardware/ff562608) must be prepared for an immediate call to any of their *FilterXxx* functions.
 
 The NDIS\_FILTER\_DRIVER\_CHARACTERISTICS structure specifies the entry points for these mandatory *FilterXxx* functions:
 
