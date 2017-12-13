@@ -12,7 +12,7 @@ ms.technology: windows-devices
 > The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
 >
 
-# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Replay a trace 
+# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time Travel Debugging - Replay a trace 
 
 This section describes how to replay time travel traces, navigating forwards and backwards in time.
 

@@ -15,7 +15,7 @@ ms.technology: windows-devices
 >
 
 
-# ![Small logo for windbg preview](images/windbgx-preview-logo.png) !positions
+# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) !positions
 
 
 The **!positions** extension displays all the active threads, including their current positions in the time travel trace.

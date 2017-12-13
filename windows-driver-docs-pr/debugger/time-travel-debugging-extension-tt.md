@@ -14,7 +14,7 @@ ms.technology: windows-devices
 >
 
 
-# ![Small logo for windbg preview](images/windbgx-preview-logo.png) !tt (time travel)
+# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) !tt (time travel)
 
 The the !tt (time travel) debugger extension that allows you to navigate forward and backwards in time.
 
