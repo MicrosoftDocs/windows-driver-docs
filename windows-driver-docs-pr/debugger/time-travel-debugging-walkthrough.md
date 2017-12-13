@@ -46,7 +46,7 @@ You will need the following hardware to be able to complete the lab.
 You will need the following software to be able to complete the lab.
 
 -   The WinDbg Preview. For information on installing WinDbg Preview, see [WinDbg Preview - Installation](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/windbg-install-preview)
--   Visual Studio to build the sample C++ code 
+-   Visual Studio to build the sample C++ code. 
 
 The lab has the following eleven sections.
 
@@ -127,7 +127,7 @@ TBD Screen Shot of faulting app dialog
 In the next section of the walkthrough, we will record the execution of the sample app to see if we can determine why this exception is occuring. 
 
 
-## <span id="record"></span>Section 2: Record a trace of the sample "DisplayText" cod
+## <span id="record"></span>Section 2: Record a trace of the sample "DisplayText" code
 
 *In Section 2, you will record a trace of the misbeavhing sample "DisplayText" app*
 
@@ -137,9 +137,8 @@ To launch the sample app and record a TTD trace, follow these steps. For general
 
 2. Enter the path to the user mode executable that you wish to record or select **Browse** to navigate to the executable. For information about working with the Launch Executable menu in WinDbg Preview, see [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md).
 
-TBD Screen Shot
 
-    ![Screen shot of WinDbg Preview showing start recording checkbox in launch executable (advanced) screen](images/ttd-start-recording.png)
+    ![Screen shot of WinDbg Preview showing start recording checkbox in launch executable (advanced) screen](images/ttd-time-travel-walkthrough-recording-app.png)
 
 3. Check the **Record process with Time Travel Debugging** box to record a trace when the executable is launched. 
 
@@ -147,55 +146,68 @@ TBD Screen Shot
 
 5. The recording dialog appears indicating the trace is being recorded.
 
-    ![TTD recording popup showing stop and debug as well as cancel options](images/ttd-recording-pop-up.png)
+6. When the application being recorded terminates, the trace file will be closed and written out to disk. This is the case if the  program crashes as well, which is what will happen with the DisplayText program.
 
-6. The process is being recorded, so this is where you need to cause the issue that you wish to debug. You may open a problematic file or click on a specific button in the app to cause the event of interest to occur. 
+   ![Screen shot of WinDbg Preview showing output with 16/16 keyframes indexed](images/ttd-time-travel-walkthrough-windbg-indexed-frames.png)
 
 
-4. When the application being recorded terminates, the trace file will be closed and written out to disk. This is the case if your program crashes as well.
-
-5. When a trace file is opened, the debugger will automatically index the trace file. Indexing allows for more accurate and faster memory value look ups. This indexing process will take longer for larger trace files.
+6. The debugger will automatically index the trace file. Indexing allows for more accurate and faster memory value look ups. This indexing process will take longer for larger trace files.
 
     ```
-    ...
-    00007ffc`61f789d4 c3              ret
+    (36d8.37f4): Break instruction exception - code 80000003 (first/second chance not available)
+    Time Travel Position: 15:0
+    eax=6671a6e0 ebx=00000000 ecx=76f566ac edx=68b44afc esi=68b4137c edi=0074b000
+    eip=76f566ac esp=008ff3e4 ebp=008ff634 iopl=0         nv up ei pl nz na po nc
+    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+    ntdll!LdrpInitializeProcess+0x1d1c:
+    76f566ac 83bdbcfeffff00  cmp     dword ptr [ebp-144h],0 ss:002b:008ff4f0=00000000
     0:000> !index
-    Indexed 1/1 keyframes
-    Successfully created the index in 96ms.
+    Indexed 10/16 keyframes
+    Indexed 16/16 keyframes
+    Successfully created the index in 483ms.
     ```
+   
    > [!NOTE]
-   > A keyframe is a location in a trace used for indexing. Keyframes are generated automatically. Larger traces will contain more keyframes. When the trace is indexed, the number of keyframes is displayed. 
+   > A keyframe is a location in a trace used for indexing. Keyframes are generated automatically. Larger traces will contain more keyframes. 
    >   
  
 6. At this point you are at the beginning of the trace file and are ready to travel forward and backward in time.
 
-    > [!TIP]
-    > Using breakpoints is a common approach to pause code execution at some event of interest.  Unique to TTD, you can set a breakpoint and travel back in time until that breakpoint is hit after the trace has been recorded. The ability to examine the process state after an issue has happened, to determine the best location for a breakpoint, enables additional debugging workflows. For an example of using a breakpoint in the past, see [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md).
+Now that you have a recorded a TTD trace, you can replay the trace back or work with the trace file, for example sharing it with a co-worker. For more information about working wiuth trace files, see [Time Travel Debugging - Working with Trace Files](time-travel-debugging-trace-file-information.md)
 
-
-Now that you have a recorded a TTD trace, you can replay the trace back or work with the trace file, for example sharing it with a co-worker. For more information, see these topics.
+In the next section of this lab we will analyze the trace file to locate the issue with our code.
 
 
 ## <span id="analyze"></span>Section 3: Analyze the trace file recording to indentify the code issue
 
 *In Section 3, you will analyze the trace file recording to indentify the code issue.*
 
-1. Load the trace file that was 
 
+1.  Add your local symbol location to the symbol path by typing the following command.
 
-1.  Use the WinDbg UI to confirm that **Debug** &gt; **Source Mode** is enabled in the current WinDbg session.
+    ```
+    .sympath+ C:\Projects\DisplayText\Debug
+
+    ```
 
 2.  Add your local code location to the source path by typing the following command.
 
     ```
-    .srcpath+ C:\DriverSamples\KMDF_Echo_Sample\driver\AutoSync
+    .srcpath C:\Projects\DisplayText\DisplayText
     ```
 
-3.  Add your local symbol location to the symbol path by typing the following command.
+3.  Use the WinDbg UI to confirm that **Debug** &gt; **Source Mode** is enabled in the current WinDbg session.
+
+4. Use the dx command to determine the exception event stored in the recording. 
 
     ```
-    .sympath+ C:\DriverSamples\KMDF_Echo_Sample\driver\AutoSync
+    TBD 
     ```
+
+
+    > [!TIP]
+    > Using breakpoints is a common approach to pause code execution at some event of interest.  Unique to TTD, you can set a breakpoint and travel back in time until that breakpoint is hit after the trace has been recorded. The ability to examine the process state after an issue has happened, to determine the best location for a breakpoint, enables additional debugging workflows. 
+
 
 4.  We will use the **x** command to examine the symbols associated with the echo driver to determine the function name to use for the breakpoint. We can use a wild card or Ctrl+F to locate the **DeviceAdd** function name.
 
@@ -227,9 +239,7 @@ Now that you have a recorded a TTD trace, you can replay the trace back or work 
 
     The "e" in the output shown above indicates that the breakpoint number 1 is enabled to fire.
 
-7.  Restart code execution on the target system by typing the **go** command **g**.
 
-12. Step through the code line-by-line by typing the **p** command or pressing F10 until you reach the following end of the [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine. The Brace character “}” will be highlighted as shown.
 
 **Note**  
 **Setting memory access breakpoints**
@@ -270,6 +280,10 @@ ba <access> <size> <address> {options}
  
 
 Note that you can only set four data breakpoints at any given time and it is up to you to make sure that you are aligning your data correctly or you won’t trigger the breakpoint (words must end in addresses divisible by 2, dwords must be divisible by 4, and quadwords by 0 or 8).
+
+7.  Restart code execution on the target system by typing the **go** command **g**.
+
+12. Step through the code line-by-line by typing the **p** command or pressing F10 until you reach the following end of the [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine. The Brace character “}” will be highlighted as shown.
 
 7.  **&lt;- On the host system**
 
@@ -327,7 +341,6 @@ Note that you can only set four data breakpoints at any given time and it is up 
 10. Record the process ID associated with echoapp.exe to use later in this lab. You can also use CTRL+C, to copy the address to the copy buffer for later use.
 
 
-2. Use the dx command to determine the exception event stored in the recording. 
 
 3. Step back in the trace to the exception event.
 
