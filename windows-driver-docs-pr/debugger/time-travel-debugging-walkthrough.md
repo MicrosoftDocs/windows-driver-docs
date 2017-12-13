@@ -16,22 +16,21 @@ ms.technology: windows-devices
 # ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time Travel Debugging - Sample App Walkthrough
 
 
-This lab introduces  Time Travel Debugging, using a small code sample with a code flaw. TTD is used to debug and identify the issue. Although the issue in teh code is easy to find, the general procedure can be used on more complex code. The general procedure can be sumarized as follows.
+This lab introduces Time Travel Debugging (TTD), using a small sample program with a code flaw. TTD is used to debug and identify and root cause the issue. Although the issue in this small program is easy to find, the general procedure can be used on more complex code. This general procedure can be sumarized as follows.
 
 1. Capture a time travel trace of the failed program.
-2. Use the dx command to determine the exception event. 
-3. Step back in the trace and to the exception event.
-4. Single step until teh code in question comes into scope.
-5. Look at the local values and develop a hypthesis of a variable that may have an incorrect value.
-6. Determine memory address of the variable with the incorrect value.
-7. Seta memory access ba breakpoint on address of the suspect variable.
-8. Use g- to run back to point of memory access.
-9. See if that location or a few instructions before is the point of teh code flaw. If so, you are done.
-If some other variable seems to set the value in teh first variable, set another break on access breakpoint on that variable 
-10. Use g- to run back to point of memory access on the second suspect variable.
-11. Repeat this process walking back until the code that made the error is located.
+2. Use the dx command to determine the exception event stored in the recording. 
+3. Step back in the trace to the exception event.
+4. From that point single step backwards until the faulting code in question comes into scope.
+5. With the faulting code in scope, look at the local values and develop a hypthesis of a variable that may contain an incorrect value.
+6. Determine the memory address of the variable with the incorrect value.
+7. Set a memory access (ba) breakpoint on address of the suspect variable.
+8. Use g- to run back to point of memory access of the suspect variable.
+9. See if that location or a few instructions before is the point of the code flaw. If so, you are done.
+If some other variable sets the value in the first variable, set another break on access breakpoint on the second variable. 
+10. Use g- to run back to point of memory access on the second suspect variable. See if that location or a few instructions before contains the code flaw. If so, you are done.
+11. Repeat this process walking back until the code that created the error, by settng the incorrect value is located.
  
-
 
 ## <span id="Lab_objectives"></span><span id="lab_objectives"></span><span id="LAB_OBJECTIVES"></span>Lab objectives
 
@@ -42,37 +41,53 @@ After completing this lab you will be able to use the general procedure with a t
 
 You will need the following hardware to be able to complete the lab.
 
--   A laptop or desktop computer (host) running Windows 10
+-   A laptop or desktop computer (host) running Windows 10 
 
 You will need the following software to be able to complete the lab.
 
--   Visual Studio to build the code 
--   The sample echo driver for Windows 10
+-   The WinDbg Preview. For information on installing WinDbg Preview, see [WinDbg Preview - Installation](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/windbg-install-preview)
+-   Visual Studio to build the sample C++ code 
 
 The lab has the following eleven sections.
 
--   [Section 1: Connect to a kernel mode WinDbg session](#connectto)
--   [Section 2: Kernel mode debugging commands and techniques](#kernelmodedebuggingcommandsandtechniques)
--   [Section 3: Download and build the KMDF Universal Echo Driver](#download)
--   [Section 4: Install the KMDF Echo driver sample on the target system](#install)
--   [Section 5: Use WinDbg to display information about the driver](#usewindbgtodisplayinformation)
--   [Section 6: Display Plug and Play device tree information](#displayingtheplugandplaydevicetree)
--   [Section 7: Work with breakpoints and source code](#workingwithbreakpoints)
--   [Section 8: View variables and call stacks](#viewingvariables)
--   [Section 9: Display processes and threads](#displayingprocessesandthreads)
--   [Section 10: IRQL, Registers and Ending the WinDbg session](#irqlregistersmemory)
--   [Section 11: Windows debugging resources](#windowsdebuggingresources)
-
-## <span id="CONNECTTO"></span>Section 1: Connect to a kernel mode WinDbg session
+-   [Section 1: Build the sample code](#build)
+-   [Section 2: Record a trace of the sample "DisplayText" code](#record)
+-   [Section 3: Analyze the trace file recording to indentify the code issue](#analyze)
 
 
-*In Section 1, you will configure network debugging on the host and target system.*
+## <span id="build"></span>Section 1: Build the sample code
+
+*In Section 1, you will build the sampe code using Visual Studio.*
 
 The PCs in this lab need to be configured to use an Ethernet network connection for kernel debugging.
 
-This lab uses two PCs. Windows debugger runs on the *host* system and the KMDF Echo driver runs on the *target* system.
 
-The "&lt;-Host" on the left is connected using a cross over ethernet cable to the "-&gt;Target" on the right.
+## <span id="record"></span>Section 2: Record a trace of the sample "DisplayText" cod
+
+*In Section 2, you will record a trace of the sample "DisplayText" app*
+
+The PCs in this lab need to be configured to use an Ethernet network connection for kernel debugging.
+
+
+
+## <span id="analyze"></span>Section 3: Analyze the trace file recording to indentify the code issue
+
+*In Section 3, you will analyze the trace file recording to indentify the code issue.*
+
+The PCs in this lab need to be configured to use an Ethernet network connection for kernel debugging.
+
+1. Capture a time travel trace of the failed program.
+2. Use the dx command to determine the exception event stored in the recording. 
+3. Step back in the trace to the exception event.
+4. From that point single step backwards until the faulting code in question comes into scope.
+5. With the faulting code in scope, look at the local values and develop a hypthesis of a variable that may contain an incorrect value.
+6. Determine the memory address of the variable with the incorrect value.
+7. Set a memory access (ba) breakpoint on address of the suspect variable.
+8. Use g- to run back to point of memory access of the suspect variable.
+9. See if that location or a few instructions before is the point of the code flaw. If so, you are done.
+If some other variable sets the value in the first variable, set another break on access breakpoint on the second variable. 
+10. Use g- to run back to point of memory access on the second suspect variable. See if that location or a few instructions before contains the code flaw. If so, you are done.
+11. Repeat this process walking back until the code that created the error, by settng the incorrect value is located.
 
 ---
 
