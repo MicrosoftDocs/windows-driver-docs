@@ -19,11 +19,6 @@ ms.technology: windows-devices
 
 # INF Reboot Directive
 
-
-**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
-
- 
-
 A **Reboot** directive indicates that the caller should be notified to reboot the system after installation is complete.
 
 ```
