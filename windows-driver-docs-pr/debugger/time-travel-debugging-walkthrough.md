@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Sample App Walkthrough
 description: This section contains a walk through of a small C++ app. 
 ms.author: windowsdriverdev
-ms.date: 12/12/2017
+ms.date: 12/13/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,7 +48,7 @@ You will need the following software to be able to complete the lab.
 -   The WinDbg Preview. For information on installing WinDbg Preview, see [WinDbg Preview - Installation](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/windbg-install-preview)
 -   Visual Studio to build the sample C++ code. 
 
-The lab has the following eleven sections.
+The lab has the following three sections.
 
 -   [Section 1: Build the sample code](#build)
 -   [Section 2: Record a trace of the sample "DisplayText" code](#record)
@@ -108,23 +108,23 @@ int main()
 
 3.  In Visual Studio, click **Build** &gt; **Build Solution**.
 
-    If all goes well, the build windows should display a message indicating that the build for all three projects succeeded.
+    If all goes well, the build windows should display a message indicating that the build succeeded.
 
 4.  **Locate the built sample app files**
 
-    In the Solution Explorer, right clikc on the DisplayText project and select **Open Folder in File explorer**.
+    In the Solution Explorer, right click on the *DisplayText* project and select **Open Folder in File explorer**.
     
     Navigate to the Debug folder that contains the complied exe and symbol pdb file for the sample. For example, you would navigate to *C:\Users\UserName\Documents\Visual Studio 2017\Projects\DisplayText\Debug*, if that's the folder that your projects are stored in. 
 
 5. **Run the sample app with the code flaw**
 
-Click on the exe file to run the sample app.
+    Click on the exe file to run the sample app.
 
-TBD Screen Shot of faulting app dialog
+    ![Screen Shot of faulting app dialog box](images/ttd-time-travel-walkthrough-faulting-app-dialog-box.png) 
 
-![Screen Shot of faulting app dialog box](images/ttd-time-travel-walkthrough-faulting-app-dialog-box.png) 
-
-In the next section of the walkthrough, we will record the execution of the sample app to see if we can determine why this exception is occuring. 
+    Click on **Ignore**, to see if our app will make any forward progress.
+    
+    In the next section of the walkthrough, we will record the execution of the sample app to see if we can determine why this exception is occuring. 
 
 
 ## <span id="record"></span>Section 2: Record a trace of the sample "DisplayText" code
@@ -144,36 +144,30 @@ To launch the sample app and record a TTD trace, follow these steps. For general
 
 4. Click **OK** to launch the executable and start recording. 
 
-5. The recording dialog appears indicating the trace is being recorded.
+5. The recording dialog appears indicating the trace is being recorded. Shortly after that, the application crashes.
 
-6. When the application being recorded terminates, the trace file will be closed and written out to disk. This is the case if the  program crashes as well, which is what will happen with the DisplayText program.
+6. Click on **Retry**, to allow the exception handling code to run.
+
+7. The program crashes and the trace file will be closed and written out to disk. 
 
    ![Screen shot of WinDbg Preview showing output with 16/16 keyframes indexed](images/ttd-time-travel-walkthrough-windbg-indexed-frames.png)
 
-
-6. The debugger will automatically index the trace file. Indexing allows for more accurate and faster memory value look ups. This indexing process will take longer for larger trace files.
+8. The debugger will automatically index the trace file. Indexing allows for more accurate and faster memory value look ups. This indexing process will take longer for larger trace files.
 
     ```
-    (36d8.37f4): Break instruction exception - code 80000003 (first/second chance not available)
-    Time Travel Position: 15:0
-    eax=6671a6e0 ebx=00000000 ecx=76f566ac edx=68b44afc esi=68b4137c edi=0074b000
-    eip=76f566ac esp=008ff3e4 ebp=008ff634 iopl=0         nv up ei pl nz na po nc
-    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
-    ntdll!LdrpInitializeProcess+0x1d1c:
-    76f566ac 83bdbcfeffff00  cmp     dword ptr [ebp-144h],0 ss:002b:008ff4f0=00000000
     0:000> !index
-    Indexed 10/16 keyframes
-    Indexed 16/16 keyframes
-    Successfully created the index in 483ms.
-    ```
+    Indexed 10/15 keyframes
+    Indexed 15/15 keyframes
+    Successfully created the index in 525ms.
+     ```
    
    > [!NOTE]
    > A keyframe is a location in a trace used for indexing. Keyframes are generated automatically. Larger traces will contain more keyframes. 
    >   
  
-6. At this point you are at the beginning of the trace file and are ready to travel forward and backward in time.
+9. At this point you are at the beginning of the trace file and are ready to travel forward and backward in time.
 
-Now that you have a recorded a TTD trace, you can replay the trace back or work with the trace file, for example sharing it with a co-worker. For more information about working wiuth trace files, see [Time Travel Debugging - Working with Trace Files](time-travel-debugging-trace-file-information.md)
+   Now that you have a recorded a TTD trace, you can replay the trace back or work with the trace file, for example sharing it with a co-worker. For more information about working with trace files, see [Time Travel Debugging - Working with Trace Files](time-travel-debugging-trace-file-information.md)
 
 In the next section of this lab we will analyze the trace file to locate the issue with our code.
 
@@ -182,12 +176,13 @@ In the next section of this lab we will analyze the trace file to locate the iss
 
 *In Section 3, you will analyze the trace file recording to indentify the code issue.*
 
+**Configure the WinDbg Environment**
 
-1.  Add your local symbol location to the symbol path by typing the following command.
+1.  Add your local symbol location to the symbol path and reload the symbols, by typing the following commands.
 
     ```
     .sympath+ C:\Projects\DisplayText\Debug
-
+    .reload /f
     ```
 
 2.  Add your local code location to the source path by typing the following command.
@@ -196,49 +191,80 @@ In the next section of this lab we will analyze the trace file to locate the iss
     .srcpath C:\Projects\DisplayText\DisplayText
     ```
 
-3.  Use the WinDbg UI to confirm that **Debug** &gt; **Source Mode** is enabled in the current WinDbg session.
+3.  On the WinDbg Preview ribbon, select **Source** and **Open Source File**. Locate the DisplayText.cpp file and open it.
 
-4. Use the dx command to determine the exception event stored in the recording. 
+**Examine the exception**
+
+1. When the trace file was loaded is displays information that exception ocurred. 
 
     ```
-    TBD 
+    (2b2c.2bbc): Break instruction exception - code 80000003 (first/second chance not available)
+    Time Travel Position: 15:0
+    eax=662ea6e0 ebx=00000000 ecx=76f566ac edx=68fa4afc esi=68fa137c edi=0116b000
+    eip=76f566ac esp=012ff668 ebp=012ff8b8 iopl=0         nv up ei pl nz na po nc
+    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+    ntdll!LdrpInitializeProcess+0x1d1c:
+    76f566ac 83bdbcfeffff00  cmp     dword ptr [ebp-144h],0 ss:002b:012ff774=00000000
+    ```
+2. Use the dx command to list all of the events in the recording. The exception event is listed in the events.
+
+    ```
+    0:000> dx -r1 @$curprocess.TTD.Events
+    ...
+    [0x2c]           : Module Loaded at position: 9967:0
+    [0x2d]           : Exception at 9BDC:0
+    [0x2e]           : Thread terminated at 9C43:0
+    ...
     ```
 
+3. Click on the Exception event to display information about that TTD event. 
+
+    ```
+    0:000> dx -r1 @$curprocess.TTD.Events[45]
+    @$curprocess.TTD.Events[45]                 : Exception at 9E0D:0
+    Type             : Exception
+    Position         : 9E0D:0 [Time Travel]
+    Exception        : Exception of type Hardware at PC: 0XC42142
+    ```
+
+4. Click on the link to time travel to that position.
+
+    ```
+    0:000> dx -r1 @$curprocess.TTD.Events[45]
+    @$curprocess.TTD.Events[45]                 : Exception at 9E0D:0
+    Type             : Exception
+    Position         : 9E0D:0 [Time Travel]
+    Exception        : Exception of type Hardware at PC: 0XC42142
+    ```
+
+
+
+**Examine the exception**
+
+1.  Use the **dv** command to display the current local variables in memory.
+
+    ```
+    0:000> dv
+      _Expr_val = 0n0
+    destination = 0x00000000 ""
+    size_in_elements = 0xf
+    source = 0x00d475d0 "Message text to display goes here"
+    available = 0xcccccccc
+    destination_it = 0xcccccccc "--- memory read error at address 0xcccccccc ---"
+    source_it = 0xcccccccc "--- memory read error at address 0xcccccccc ---"
+    ```
+
+    The output shows that there may be a problem with the destination_it and source\_it.
+
+2.  Use p- command to travel back one step.
+
+
+    ```
+
+**Set a breakpoint**
 
     > [!TIP]
     > Using breakpoints is a common approach to pause code execution at some event of interest.  Unique to TTD, you can set a breakpoint and travel back in time until that breakpoint is hit after the trace has been recorded. The ability to examine the process state after an issue has happened, to determine the best location for a breakpoint, enables additional debugging workflows. 
-
-
-4.  We will use the **x** command to examine the symbols associated with the echo driver to determine the function name to use for the breakpoint. We can use a wild card or Ctrl+F to locate the **DeviceAdd** function name.
-
-    ```
-    0: kd> x ECHO!EchoEvt*
-    8b4c7490          ECHO!EchoEvtIoQueueContextDestroy (void *)
-    8b4c7000          ECHO!EchoEvtDeviceSelfManagedIoStart (struct WDFDEVICE__ *)
-    8b4c7820          ECHO!EchoEvtTimerFunc (struct WDFTIMER__ *)
-    8b4cb0e0          ECHO!EchoEvtDeviceSelfManagedIoSuspend (struct WDFDEVICE__ *)
-    8b4c75d0          ECHO!EchoEvtIoWrite (struct WDFQUEUE__ *, struct WDFREQUEST__ *, unsigned int)
-    8b4cb170          ECHO!EchoEvtDeviceAdd (struct WDFDRIVER__ *, struct 
-    …
-    ```
-
-    The output above shows that **DeviceAdd** method for our echo driver is *ECHO!EchoEvtDeviceAdd*.
-
-    Alternatively, we could review the source code to locate the desired function name for our breakpoint.
-
-5.  Set the breakpoint with the **bm** command using the name of the driver, followed by the function name (for example **AddDevice**) where 
-
-     
-
-6.  List the current breakpoints to confirm that the breakpoint was set by typing the **bl** command.
-
-    ```
-    0: kd> bl
-    1 e fffff801`0bf9b1c0     0001 (0001) ECHO!EchoEvtDeviceAdd
-    ```
-
-    The "e" in the output shown above indicates that the breakpoint number 1 is enabled to fire.
-
 
 
 **Note**  
@@ -278,88 +304,115 @@ ba <access> <size> <address> {options}
 </table>
 
  
-
 Note that you can only set four data breakpoints at any given time and it is up to you to make sure that you are aligning your data correctly or you won’t trigger the breakpoint (words must end in addresses divisible by 2, dwords must be divisible by 4, and quadwords by 0 or 8).
+
+
+4.  Altough we could look in code, We will use the **x** command to examine the symbols associated with the display text program to determine the function name to use for the breakpoint. 
+
+    ```
+    x DisplayText!Disp*
+    00d41710          DisplayText!DisplayText (void)
+    ```
+
+    The output above shows that **DisplayText** method for our DisplayText program is located at 00d41710. 
+
+    Alternatively, we could review the source code to locate the desired function name for our breakpoint.
+
+5.  Set the breakpoint with the **ba** command using the address we want to monitor. 
+
+    ```
+    ba w8 00d41710 
+    ```
+     
+
+6.  List the current breakpoints to confirm that the breakpoint was set by typing the **bl** command.
+
+    ```
+    0: kd> bl
+    1 e fffff801`0bf9b1c0     0001 (0001) ECHO!EchoEvtDeviceAdd
+    ```
+
+    The "e" in the output shown above indicates that the breakpoint number 1 is enabled to fire.
+
 
 7.  Restart code execution on the target system by typing the **go** command **g**.
 
 12. Step through the code line-by-line by typing the **p** command or pressing F10 until you reach the following end of the [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine. The Brace character “}” will be highlighted as shown.
 
-7.  **&lt;- On the host system**
-
-    When the test app runs, the I/O routine in the driver will be called. This will cause the breakpoint to fire, and execution of the driver code on the target system will halt.
+7.  When the test app runs, the I/O routine in the driver will be called. This will cause the breakpoint to fire, and execution of the driver code on the target system will halt.
 
     ```
     Breakpoint 2 hit
     ECHO!EchoEvtIoWrite:
     fffff801`0bf95810 4c89442418      mov     qword ptr [rsp+18h],r8
     ```
-
-8.  Use the **!process** command to display the current process that is involved in running echoapp.exe.
-
-    ```
-    0: kd> !process
-    PROCESS ffffe0007e6a7780
-        SessionId: 1  Cid: 03c4    Peb: 7ff7cfec4000  ParentCid: 0f34
-        DirBase: 1efd1b000  ObjectTable: ffffc001d77978c0  HandleCount:  34.
-        Image: echoapp.exe
-        VadRoot ffffe000802c79f0 Vads 30 Clone 0 Private 135. Modified 5. Locked 0.
-        DeviceMap ffffc001d83c6e80
-        Token                             ffffc001cf270050
-        ElapsedTime                       00:00:00.052
-        UserTime                          00:00:00.000
-        KernelTime                        00:00:00.000
-        QuotaPoolUsage[PagedPool]         33824
-        QuotaPoolUsage[NonPagedPool]      4464
-        Working Set Sizes (now,min,max)  (682, 50, 345) (2728KB, 200KB, 1380KB)
-        PeakWorkingSetSize                652
-        VirtualSize                       16 Mb
-        PeakVirtualSize                   16 Mb
-        PageFaultCount                    688
-        MemoryPriority                    BACKGROUND
-        BasePriority                      8
-        CommitCharge                      138
-
-            THREAD ffffe00080e32080  Cid 03c4.0ec0  Teb: 00007ff7cfece000 Win32Thread: 0000000000000000 RUNNING on processor 1
-    ```
-
-    The output shows that the process is associated with the echoapp.exe which was running when our breakpoint on the driver write event was hit. For more information, see [**!process**](-process.md).
-
-9.  Use the **!process 0 0** to display summary information for all processes. In the output, use CTRL+F to locate the same process address for the process associated with the echoapp.exe image. In the example shown below, the process address is ffffe0007e6a7780.
-
-    ```
-    ...
-
-    PROCESS ffffe0007e6a7780
-        SessionId: 1  Cid: 0f68    Peb: 7ff7cfe7a000  ParentCid: 0f34
-        DirBase: 1f7fb9000  ObjectTable: ffffc001cec82780  HandleCount:  34.
-        Image: echoapp.exe
-
-    ...
-    ```
-
-10. Record the process ID associated with echoapp.exe to use later in this lab. You can also use CTRL+C, to copy the address to the copy buffer for later use.
-
-
+`
 
 3. Step back in the trace to the exception event.
 
+   ```
+
+   ```
+      
+
 4. From that point single step backwards until the faulting code in question comes into scope.
+
+   ```
+
+   ```
+      
 
 5. With the faulting code in scope, look at the local values and develop a hypthesis of a variable that may contain an incorrect value.
 
+   ```
+
+   ```
+      
+
 6. Determine the memory address of the variable with the incorrect value.
+
+   ```
+
+   ```
+      
 
 7. Set a memory access (ba) breakpoint on address of the suspect variable.
 
+   ```
+
+   ```
+      
+
 8. Use g- to run back to point of memory access of the suspect variable.
+
+   ```
+
+   ```
+      
 
 9. See if that location or a few instructions before is the point of the code flaw. If so, you are done.
 If some other variable sets the value in the first variable, set another break on access breakpoint on the second variable. 
 
+   ```
+
+   ```
+      
+
 10. Use g- to run back to point of memory access on the second suspect variable. See if that location or a few instructions before contains the code flaw. If so, you are done.
 
+   ```
+
+   ```
+      
+
 11. Repeat this process walking back until the code that created the error, by settng the incorrect value is located.
+
+
+   ```
+
+   ```
+      
+
 
 ---
 
