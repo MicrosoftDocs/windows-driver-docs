@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Sample App Walkthrough
 description: This section contains a walk through of a small C++ app. 
 ms.author: windowsdriverdev
-ms.date: 12/13/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -16,21 +16,23 @@ ms.technology: windows-devices
 # ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time Travel Debugging - Sample App Walkthrough
 
 
-This lab introduces Time Travel Debugging (TTD), using a small sample program with a code flaw. TTD is used to debug and identify and root cause the issue. Although the issue in this small program is easy to find, the general procedure can be used on more complex code. This general procedure can be sumarized as follows.
+This lab introduces Time Travel Debugging (TTD), using a small sample program with a code flaw. TTD is used to debug, identify and root cause the issue. Although the issue in this small program is easy to find, the general procedure can be used on more complex code. This general procedure can be summarized as follows.
 
 1. Capture a time travel trace of the failed program.
 2. Use the dx command to determine the exception event stored in the recording. 
 3. Step back in the trace to the exception event.
-4. From that point single step backwards until the faulting code in question comes into scope.
-5. With the faulting code in scope, look at the local values and develop a hypthesis of a variable that may contain an incorrect value.
+4. From that point in the trace single step backwards until the faulting code in question comes into scope.
+5. With the faulting code in scope, look at the local values and develop a hypothesis of a variable that may contain an incorrect value.
 6. Determine the memory address of the variable with the incorrect value.
 7. Set a memory access (ba) breakpoint on address of the suspect variable.
 8. Use g- to run back to point of memory access of the suspect variable.
-9. See if that location or a few instructions before is the point of the code flaw. If so, you are done.
+9. See if that location, or a few instructions before, is the point of the code flaw. If so, you are done.
 If some other variable sets the value in the first variable, set another break on access breakpoint on the second variable. 
 10. Use g- to run back to point of memory access on the second suspect variable. See if that location or a few instructions before contains the code flaw. If so, you are done.
-11. Repeat this process walking back until the code that created the error, by settng the incorrect value is located.
+11. Repeat this process walking back until the code that set the incorrect value that caused the error is located.
  
+Although the general techniques included in this procedure apply to a broad set of code issues, there are unique code issues that will require a unique approach. The techniques illustrated in the walkthrough should serve to expand your debugging tool set and will illustrate some of what is possible with a TTD trace.
+
 
 ## <span id="Lab_objectives"></span><span id="lab_objectives"></span><span id="LAB_OBJECTIVES"></span>Lab objectives
 
@@ -82,7 +84,7 @@ The lab has the following three sections.
 
 int DetermineStringSize()
 {
-                // ToDo Implment String size - for now all supported strings are 15.
+                // ToDo Implement String size - for now all supported strings are 15.
                 int buffsize = 15;
                 return buffsize;
 }
@@ -133,26 +135,28 @@ int main()
 
 To launch the sample app and record a TTD trace, follow these steps. For general information about recording TTD traces, see [Time Travel Debugging - Record a trace](time-travel-debugging-record.md)
 
-1. In WinDbg Preview, select **File** > **Start debugging** > **Launch executable (advanced)**.
+1. Run WinDbg Preview as and Administrator, so as to be able to record time travel traces.
 
-2. Enter the path to the user mode executable that you wish to record or select **Browse** to navigate to the executable. For information about working with the Launch Executable menu in WinDbg Preview, see [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md).
+2. In WinDbg Preview, select **File** > **Start debugging** > **Launch executable (advanced)**.
+
+3. Enter the path to the user mode executable that you wish to record or select **Browse** to navigate to the executable. For information about working with the Launch Executable menu in WinDbg Preview, see [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md).
 
 
     ![Screen shot of WinDbg Preview showing start recording checkbox in launch executable (advanced) screen](images/ttd-time-travel-walkthrough-recording-app.png)
 
-3. Check the **Record process with Time Travel Debugging** box to record a trace when the executable is launched. 
+4. Check the **Record process with Time Travel Debugging** box to record a trace when the executable is launched. 
 
-4. Click **OK** to launch the executable and start recording. 
+5. Click **OK** to launch the executable and start recording. 
 
-5. The recording dialog appears indicating the trace is being recorded. Shortly after that, the application crashes.
+6. The recording dialog appears indicating the trace is being recorded. Shortly after that, the application crashes.
 
-6. Click on **Retry**, to allow the exception handling code to run.
+7. Click on **Retry**, to allow the exception handling code to run.
 
-7. The program crashes and the trace file will be closed and written out to disk. 
+8. The program crashes and the trace file will be closed and written out to disk. 
 
    ![Screen shot of WinDbg Preview showing output with 16/16 keyframes indexed](images/ttd-time-travel-walkthrough-windbg-indexed-frames.png)
 
-8. The debugger will automatically index the trace file. Indexing allows for more accurate and faster memory value look ups. This indexing process will take longer for larger trace files.
+9. The debugger will automatically index the trace file. Indexing allows for more accurate and faster memory value look ups. This indexing process will take longer for larger trace files.
 
     ```
     0:000> !index
@@ -165,7 +169,7 @@ To launch the sample app and record a TTD trace, follow these steps. For general
    > A keyframe is a location in a trace used for indexing. Keyframes are generated automatically. Larger traces will contain more keyframes. 
    >   
  
-9. At this point you are at the beginning of the trace file and are ready to travel forward and backward in time.
+10. At this point you are at the beginning of the trace file and are ready to travel forward and backward in time.
 
    Now that you have a recorded a TTD trace, you can replay the trace back or work with the trace file, for example sharing it with a co-worker. For more information about working with trace files, see [Time Travel Debugging - Working with Trace Files](time-travel-debugging-trace-file-information.md)
 
@@ -254,23 +258,49 @@ In the next section of this lab we will analyze the trace file to locate the iss
     source_it = 0xcccccccc "--- memory read error at address 0xcccccccc ---"
     ```
 
-    The output shows that there may be a problem with the destination_it and source\_it.
+    The output shows that there is likley a problem with the destination_it and source\_it.
 
-2.  Use p- command to travel back one step.
-
+2. Looking at our code, it looks like the exception may be caused by the bad parameters being passed to the wcscpy_s in this line of code.
 
     ```
+    wcscpy_s(buffer, size, message);
+    ```
 
-**Set a breakpoint**
+3. To invetsigate further we will set a breakpoint by clicking on the wcscpy_s line in the source Window.
 
-    > [!TIP]
-    > Using breakpoints is a common approach to pause code execution at some event of interest.  Unique to TTD, you can set a breakpoint and travel back in time until that breakpoint is hit after the trace has been recorded. The ability to examine the process state after an issue has happened, to determine the best location for a breakpoint, enables additional debugging workflows. 
+  ![Screen shot of source Window showing breakpoint set on wcscpy_s](images/ttd-time-travel-walkthrough-source-window-breakpoint.png)
 
 
-**Note**  
+4. Use g- to travel back until the breakpoint is hit.
+
+   ```
+    
+   ```
+
+
+5. Use the **dv** command to display the current local variables in memory.
+
+   ```
+   0:000> dv
+         buffer = 0x00000000 ""
+           size = 0xf
+        message = 0x00d475d0 "Message text to display goes here"
+ 
+   ```
+
+7. Looking at the value of *size* it is 0xf - 15 and our string looks to be 32 in length, so this looks like the reason that the wscpy is failing. But how did *size* get set to 15? To answer that question we will set an addtional break on access breakpoint. 
+
+    > [!NOTE]
+    > In this very small sample it would be pretty easy to just look in the code, but if there are hunderds of lines of code and dozens of subroutines the techniques described here can be used to decrease the time necessary to locate  the issue.
+
+
+**TTD and breakpoints**
+
+Using breakpoints is a common approach to pause code execution at some event of interest.  Unique to TTD, you can set a breakpoint and travel back in time until that breakpoint is hit after the trace has been recorded. The ability to examine the process state after an issue has happened, to determine the best location for a breakpoint, enables additional debugging workflows unique to TTD. 
+
 **Setting memory access breakpoints**
 
-You can also set breakpoints that fire when a memory location is accessed. Use the **ba** (break on access) command, with the following syntax.
+You can set breakpoints that fire when a memory location is accessed. Use the **ba** (break on access) command, with the following syntax.
 
 ```
 ba <access> <size> <address> {options}
@@ -307,111 +337,121 @@ ba <access> <size> <address> {options}
 Note that you can only set four data breakpoints at any given time and it is up to you to make sure that you are aligning your data correctly or you won’t trigger the breakpoint (words must end in addresses divisible by 2, dwords must be divisible by 4, and quadwords by 0 or 8).
 
 
-4.  Altough we could look in code, We will use the **x** command to examine the symbols associated with the display text program to determine the function name to use for the breakpoint. 
+1.  Use the **x** command to examine the symbols associated with *size*. 
 
     ```
-    x DisplayText!Disp*
-    00d41710          DisplayText!DisplayText (void)
+    0:000> x size
+    0053fdd4          size = 0xf
     ```
 
-    The output above shows that **DisplayText** method for our DisplayText program is located at 00d41710. 
+    In this trace *size* is located in memory at 0053fdd4. 
 
-    Alternatively, we could review the source code to locate the desired function name for our breakpoint.
 
-5.  Set the breakpoint with the **ba** command using the address we want to monitor. 
+2.  First clear the existing breakpoints, the set the breakpoint with the **ba** command using the address we want to monitor. Lastly use **bl** to list the breakpoinst to confirm they are set as intended.
 
     ```
-    ba w8 00d41710 
+    0:000> bc *
+    0:000> ba w4 0053fdd4
+    0:000> bl
+      0 e Disable Clear  0053fdd4 w 4 0001 (0001)  0:**** 
+    ```
+
+3.  Use g- command to travel back in time until the breakpoint is hit.
+
+    ```
+    0:000> g-
+    Breakpoint 0 hit
+    Time Travel Position: 5B:92
+    eax=0000000f ebx=003db000 ecx=00000000 edx=00cc1a6c esi=00d41046 edi=0053fde8
+    eip=00d4174a esp=0053fcf8 ebp=0053fde8 iopl=0         nv up ei pl nz ac pe nc
+    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000216
+    DisplayText!DisplayText+0x3a:
+    00d4174a c745e000000000  mov     dword ptr [ebp-20h],0 ss:002b:0053fdc8=cccccccc
+    ```
+
+5. Use the **dv** command to display the current local variables in memory.
+
+   ```
+   0:000> dv
+         buffer = 0x00000000 ""
+           size = 0xf
+        message = 0x00d475d0 "Message text to display goes here"
+ 
+   ```
+
+4. Single step backwards until the faulting code in question comes into scope. In this case, we can use p- command to travel back one step.
+
+    ```
+    0:000> p-
+    Time Travel Position: 5B:91
+    eax=0000000f ebx=003db000 ecx=00000000 edx=00cc1a6c esi=00d41046 edi=0053fde8
+    eip=00d41747 esp=0053fcf8 ebp=0053fde8 iopl=0         nv up ei pl nz ac pe nc
+    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000216
+    DisplayText!DisplayText+0x37:
+    00d41747 8945ec          mov     dword ptr [ebp-14h],eax ss:002b:0053fdd4=cccccccc
+    ```
+
+7. Use the source window to examine the line of code that we have hit.
+
+    ```
+    size_t size = DetermineStringSize();
+    ```
+    In this line of code we see that *size* is set by calling DetermineStringSize(). To dig deeper we will need to set an addtional breakpoint.
+
+    If our code was more complex we could set a breakpoint to locate everytime the DetermineStringSize function was called. 
+
+    ```
+    0:000> x DisplayText!DetermineStringSize
+    00d41f60          DisplayText!DetermineStringSize (void)
+    0:000> ba w4 00d41f60
+    0:000> bl
+     0 e Disable Clear  00d41f60 w 4 0001 (0001)  0:**** DisplayText!DetermineStringSize
+    ```
+
+    For this walkthrough we will assume it is only called once and turn our attention to the last line of code in the DetermineStringSize function.
+
+    ```
+    return buffsize;
+    ```
+    
+    This is where the incorrect value of 0xf is returned, but how did buffsize get set to the incorrect value? We can set another breakpoint to find out.
+
+8.  Use the **x** command to examine  *buffsize*. 
+
+    ```
+    0:000> x buffsize
+    0053fde0          buffsize = 0n13923792
+    ```
+
+    In this trace, *buffsize* is located in memory at 0053fdd4. 
+
+
+9.  Set the breakpoint with the **ba** command using the address we want to monitor. 
+
+    ```
+    ba w4 0053fde0 
     ```
      
+      
 
-6.  List the current breakpoints to confirm that the breakpoint was set by typing the **bl** command.
-
-    ```
-    0: kd> bl
-    1 e fffff801`0bf9b1c0     0001 (0001) ECHO!EchoEvtDeviceAdd
-    ```
-
-    The "e" in the output shown above indicates that the breakpoint number 1 is enabled to fire.
-
-
-7.  Restart code execution on the target system by typing the **go** command **g**.
-
-12. Step through the code line-by-line by typing the **p** command or pressing F10 until you reach the following end of the [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine. The Brace character “}” will be highlighted as shown.
-
-7.  When the test app runs, the I/O routine in the driver will be called. This will cause the breakpoint to fire, and execution of the driver code on the target system will halt.
-
-    ```
-    Breakpoint 2 hit
-    ECHO!EchoEvtIoWrite:
-    fffff801`0bf95810 4c89442418      mov     qword ptr [rsp+18h],r8
-    ```
-`
-
-3. Step back in the trace to the exception event.
+10. Use g- to run back to point of memory access of the suspect buffsize variable.
 
    ```
 
    ```
       
 
-4. From that point single step backwards until the faulting code in question comes into scope.
-
-   ```
-
-   ```
-      
-
-5. With the faulting code in scope, look at the local values and develop a hypthesis of a variable that may contain an incorrect value.
-
-   ```
-
-   ```
-      
-
-6. Determine the memory address of the variable with the incorrect value.
-
-   ```
-
-   ```
-      
-
-7. Set a memory access (ba) breakpoint on address of the suspect variable.
-
-   ```
-
-   ```
-      
-
-8. Use g- to run back to point of memory access of the suspect variable.
-
-   ```
-
-   ```
-      
-
-9. See if that location or a few instructions before is the point of the code flaw. If so, you are done.
+11. It looks like we have found the root cause. The ToDo comment indicates that the string size has not been implmented and only 15 (0xf) is returned.
 If some other variable sets the value in the first variable, set another break on access breakpoint on the second variable. 
 
    ```
-
-   ```
-      
-
-10. Use g- to run back to point of memory access on the second suspect variable. See if that location or a few instructions before contains the code flaw. If so, you are done.
-
+   // ToDo Implement String size - for now all supported strings are 15.
+      int buffsize = 15;
    ```
 
-   ```
-      
+**Summary**      
 
-11. Repeat this process walking back until the code that created the error, by settng the incorrect value is located.
-
-
-   ```
-
-   ```
-      
+In this very small sample the issue could have been determined by looking at the few lines of code, but in larger programs the techniques presented here can be used to decrease the time necessary to locate an issue. Once a trace is recorded, the trace and repro steps can be shared and the issue will be possibel to reproduce on demand, on different PCs.  
 
 
 ---
