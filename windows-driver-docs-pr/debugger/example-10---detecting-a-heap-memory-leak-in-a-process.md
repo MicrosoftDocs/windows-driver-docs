@@ -2,6 +2,11 @@
 title: Example 10 Detecting a Heap Memory Leak in a Process
 description: Example 10 Detecting a Heap Memory Leak in a Process
 ms.assetid: ec98dd96-b12b-4f83-85e8-2c5ee32fc17e
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 10: Detecting a Heap Memory Leak in a Process

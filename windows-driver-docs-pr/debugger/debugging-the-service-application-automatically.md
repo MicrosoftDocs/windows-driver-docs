@@ -2,6 +2,11 @@
 title: Debugging the Service Application Automatically
 description: Debugging the Service Application Automatically
 ms.assetid: 3168b5c1-30fa-4ff5-b871-736dcdeb8f31
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging the Service Application Automatically

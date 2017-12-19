@@ -2,6 +2,11 @@
 title: Debugger Engine and Extension APIs
 description: Debugger Engine and Extension APIs
 ms.assetid: 2d651c4b-e123-4285-b69c-d7fd5e1f9a81
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugger Engine and Extension APIs

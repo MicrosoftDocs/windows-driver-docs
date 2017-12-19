@@ -2,6 +2,11 @@
 title: Preparing to Debug the Service Application
 description: Preparing to Debug the Service Application
 ms.assetid: 332b7bcf-22e4-4b98-bcb3-3646f8bd63fd
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Preparing to Debug the Service Application

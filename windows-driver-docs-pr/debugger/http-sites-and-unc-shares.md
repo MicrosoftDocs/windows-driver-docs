@@ -2,6 +2,11 @@
 title: HTTP Sites and UNC Shares
 description: HTTP Sites and UNC Shares
 ms.assetid: a1b79242-41ba-4c95-89fd-dbb7f70b24eb
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # HTTP Sites and UNC Shares

@@ -13,7 +13,7 @@ ms.technology: windows-devices
 >
 
 
-# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Sample App Walkthrough
+# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time Travel Debugging - Sample App Walkthrough
 
 
 > Content Pending

@@ -2,6 +2,11 @@
 title: Debugging a User-Mode Process Using WinDbg
 description: You can use WinDbg to attach to a running process or to spawn and attach to a new process.
 ms.assetid: 65677DE4-4C91-4E24-B9BC-0924619C7307
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # <span id="debugger.debugging_a_user-mode_process_using_windbg"></span>Debugging a User-Mode Process Using WinDbg

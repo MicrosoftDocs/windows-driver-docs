@@ -2,6 +2,11 @@
 title: Viewing the Call Stack in Visual Studio
 description: The procedure describes how to view the Call Stack in Visual Studio
 ms.assetid: 060A2441-C1A7-4485-82E5-2C024E6A3FBE
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Viewing the Call Stack in Visual Studio

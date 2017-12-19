@@ -20,8 +20,6 @@ This section describes the following NDIS status indications that can be used by
 
 [**NDIS_STATUS_ISOLATION_PARAMETERS_CHANGE**](ndis-status-isolation-parameters-change.md)
 
-[**NDIS\_STATUS\_RECEIVE\_FILTER\_QUEUE\_ALLOCATION\_STATE**](https://msdn.microsoft.com/library/windows/hardware/hh439818)
-
 [**NDIS\_STATUS\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh439820)
 
 [**NDIS\_STATUS\_RECEIVE\_QUEUE\_STATE**](ndis-status-receive-queue-state.md)
