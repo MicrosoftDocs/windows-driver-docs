@@ -260,7 +260,7 @@ In the next section of this lab we will analyze the trace file to locate the iss
 
 
 
-**Examine the exception**
+**Examine the local variables and set a code breakpoint**
 
 1.  Use the **dv** command to display the current local variables in memory.
 
@@ -285,33 +285,31 @@ In the next section of this lab we will analyze the trace file to locate the iss
 
 3. To investigate further we will set a breakpoint by clicking on the wcscpy_s line in the source window.
 
-  ![Screen shot of source Window showing breakpoint set on wcscpy_s](images/ttd-time-travel-walkthrough-source-window-breakpoint.png)
+    ![Screen shot of source Window showing breakpoint set on wcscpy_s](images/ttd-time-travel-walkthrough-source-window-breakpoint.png)
 
 
 4. Use g- to travel back until the breakpoint is hit.
 
-   ```
-   Breakpoint 0 hit
-   Time Travel Position: 5B:AF
-   eax=0000000f ebx=00c20000 ecx=00000000 edx=00000000 esi=013a1046 edi=00effa60
-   eip=013a17c1 esp=00eff970 ebp=00effa60 iopl=0         nv up ei pl nz na po nc
-   cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
-   DisplayText!DisplayText+0x41:
-   013a17c1 8bf4            mov     esi,esp
-   ```
-
+    ```
+    Breakpoint 0 hit
+    Time Travel Position: 5B:AF
+    eax=0000000f ebx=00c20000 ecx=00000000 edx=00000000 esi=013a1046 edi=00effa60
+    eip=013a17c1 esp=00eff970 ebp=00effa60 iopl=0         nv up ei pl nz na po nc
+    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+    DisplayText!DisplayText+0x41:
+    013a17c1 8bf4            mov     esi,esp
+    ```
 
 5. Use the **dv** command to display the current local variables in memory.
 
-   ```
-   0:000> dv
+    ```
+    0:000> dv
          buffer = 0x00000000 ""
            size = 0xf
         message = 0x00d475d0 "Message text to display goes here"
- 
-   ```
+    ```
 
-7. Looking at the value of *size* it is 0xf - 15 and our string looks to be 32 in length, so this looks like the reason that the wscpy is failing. But how did *size* get set to 15? To answer that question, we will set an break on memory access breakpoint. 
+6. Looking at the value of *size* it is 0xf - 15 and our string looks to be 32 in length, so this looks like the reason that the wscpy is failing. But how did *size* get set to 15? To answer that question, we will set an break on memory access breakpoint. 
 
     > [!NOTE]
     > In this very small sample it would be pretty easy to just look in the code, but if there are hundreds of lines of code and dozens of subroutines the techniques described here can be used to decrease the time necessary to locate the issue.
@@ -321,7 +319,7 @@ In the next section of this lab we will analyze the trace file to locate the iss
 
 Using breakpoints is a common approach to pause code execution at some event of interest.  Unique to TTD, you can set a breakpoint and travel back in time until that breakpoint is hit after the trace has been recorded. The ability to examine the process state after an issue has happened, to determine the best location for a breakpoint, enables additional debugging workflows unique to TTD. 
 
-**Setting memory access breakpoints**
+**Memory access breakpoints**
 
 You can set breakpoints that fire when a memory location is accessed. Use the **ba** (break on access) command, with the following syntax.
 
@@ -360,7 +358,7 @@ ba <access> <size> <address> {options}
 Note that you can only set four data breakpoints at any given time and it is up to you to make sure that you are aligning your data correctly or you won’t trigger the breakpoint (words must end in addresses divisible by 2, dwords must be divisible by 4, and quadwords by 0 or 8).
 
 
-**Setting the break on access breakpoint for the size variable**    
+**Set the break on access breakpoint for the *size* variable**    
 
 1.  Use the **dx** command to examine the symbols associated with *size*. 
 
@@ -394,17 +392,16 @@ Note that you can only set four data breakpoints at any given time and it is up 
     00d4174a c745e000000000  mov     dword ptr [ebp-20h],0 ss:002b:0053fdc8=cccccccc
     ```
 
-5. Use the **dv** command to display the current local variables in memory.
+4. Use the **dv** command to display the current local variables in memory.
 
-   ```
-   0:000> dv
-         buffer = 0x00000000 ""
-           size = 0xf
-        message = 0x00d475d0 "Message text to display goes here"
- 
-   ```
+    ```
+    0:000> dv
+          buffer = 0x00000000 ""
+            size = 0xf
+         message = 0x00d475d0 "Message text to display goes here"
+    ```
 
-4. Single step backwards until the faulting code in question comes into scope. In this case, we can use p- command to travel back one step as the breakpoint leaves us one step after the code of interest has executed.
+5. Single step backwards until the faulting code in question comes into scope. In this case, we can use p- command to travel back one step as the breakpoint leaves us one step after the code of interest has executed.
 
     ```
     0:000> p-
@@ -416,14 +413,17 @@ Note that you can only set four data breakpoints at any given time and it is up 
     00d41747 8945ec          mov     dword ptr [ebp-14h],eax ss:002b:0053fdd4=cccccccc
     ```
 
-7. Use the source window to examine the line of code that we have hit.
+6. Use the source window to examine the line of code that we have hit.
 
     ```
     size_t size = DetermineStringSize();
     ```
     In this line of code we see that *size* is set by calling DetermineStringSize(). 
 
-8.  We will use a similar approach to find the address of the DisplayText!DetermineStringSize function, and set a breakpoint on memory access. Because the function will just be read from memory for execution, we need to set a r - read breakpoint.
+
+**Set the break on access breakpoint for the DetermineStringSize function**        
+
+1.  We will use a similar approach to find the address of the DisplayText!DetermineStringSize function, and set a breakpoint on memory access. Because the function will just be read from memory for execution, we need to set a r - read breakpoint.
 
     ```
     0:000> dx &DisplayText!DetermineStringSize
@@ -434,7 +434,7 @@ Note that you can only set four data breakpoints at any given time and it is up 
      0 e Disable Clear  00d41f60 r 4 0001 (0001)  0:**** DisplayText!DetermineStringSize
     ```
 
-9.  Use g- command to travel back in time until the breakpoint is hit.
+2.  Use g- command to travel back in time until the breakpoint is hit.
 
     ```
     0:000> g-
@@ -447,7 +447,7 @@ Note that you can only set four data breakpoints at any given time and it is up 
     00d4174a c745e000000000  mov     dword ptr [ebp-20h],0 ss:002b:0053fdc8=cccccccc
     ``'
 
-9. As the DetermineStringSize function is not large, we could just look at the code to find the issue. If this was a large function, we could look at the last line of code that returns the final value to see how that value is set.
+3. As the DetermineStringSize function is not large, we could just look at the code to find the issue. If this was a large function, we could look at the last line of code that returns the final value to see how that value is set.
 
     ```
     return buffsize;
@@ -455,7 +455,10 @@ Note that you can only set four data breakpoints at any given time and it is up 
     
     This is where the incorrect value of 0xf is returned, but how did buffsize get set to the incorrect value? We can set another breakpoint to find out.
 
-8.  Use the **dx** command to examine  *buffsize*. 
+
+**Set the break on access breakpoint for *buffsize* variable**    
+
+1.  Use the **dx** command to examine  *buffsize*. 
 
     ```
     0:000> dx &buffsize
@@ -465,7 +468,7 @@ Note that you can only set four data breakpoints at any given time and it is up 
     In this trace, *buffsize* is located in memory at 0053fdd4. 
 
 
-9.  Set the breakpoint with the **ba** command using the address we now want to monitor. 
+2.  Set the breakpoint with the **ba** command using the address we now want to monitor. 
 
     ```
     bc *
@@ -473,26 +476,26 @@ Note that you can only set four data breakpoints at any given time and it is up 
     ```
            
 
-10. Use g- to run back to point of memory access of the suspect buffsize variable.
+3. Use g- to run back to point of memory access of the suspect buffsize variable.
 
-   ```
-   0:000> g-
-   Breakpoint 0 hit
-   Time Travel Position: 5B:9C
-   eax=cccccccc ebx=002b1000 ecx=00000000 edx=68d51a6c esi=013a1046 edi=001bf7d8
-   eip=013a1735 esp=001bf6b8 ebp=001bf7d8 iopl=0         nv up ei pl nz na po nc
-   cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
-   DisplayText!DetermineStringSize+0x25:
-   013a1735 c745ec04000000  mov     dword ptr [ebp-14h],4 ss:002b:001bf7c4=cccccccc
-   ```
+    ```
+    0:000> g-
+    Breakpoint 0 hit
+    Time Travel Position: 5B:9C
+    eax=cccccccc ebx=002b1000 ecx=00000000 edx=68d51a6c esi=013a1046 edi=001bf7d8
+    eip=013a1735 esp=001bf6b8 ebp=001bf7d8 iopl=0         nv up ei pl nz na po nc
+    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+    DisplayText!DetermineStringSize+0x25:
+    013a1735 c745ec04000000  mov     dword ptr [ebp-14h],4 ss:002b:001bf7c4=cccccccc
+    ```
       
+4. It looks like we have found the root cause. The ToDo comment indicates that the string size has not been implemented and 15 (0xf) is always returned.
 
-11. It looks like we have found the root cause. The ToDo comment indicates that the string size has not been implemented and 15 (0xf) is always returned.
+    ```
+    // ToDo Implement String size - for now all supported strings are 15.
+       int buffsize = 15;
+    ```
 
-   ```
-   // ToDo Implement String size - for now all supported strings are 15.
-      int buffsize = 15;
-   ```
 
 **Summary**      
 
