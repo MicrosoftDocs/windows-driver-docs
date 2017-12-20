@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Sample App Walkthrough
 description: This section contains a walk through of a small C++ app. 
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
