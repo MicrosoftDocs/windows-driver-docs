@@ -567,7 +567,7 @@ Another way to determine at what points in the trace memory has been accessed, i
 
 4. We could then click on [Time Travel] to move to that position in the trace and look further at the code execution at that point, using the techniques described eariler in this lab.
 
-For more information about the TTD.Memory objects, see [TTD.Memory Object](time-travel-object-model.md).
+For more information about the TTD.Memory objects, see [TTD.Memory Object](time-travel-debugging-object-model.md).
 
 
 **Summary**      
