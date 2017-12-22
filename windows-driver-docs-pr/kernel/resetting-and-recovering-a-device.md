@@ -48,11 +48,11 @@ In most cases, when the driver receives IRP_MN_QUERY_REMOVE_DEVICE, it should re
 
 For more information about these IRPs, see: 
 
-[Handling an IRP_MN_QUERY_REMOVE_DEVICE Request](handling-an-irp-mn-query-remove-device-request)
+[Handling an IRP_MN_QUERY_REMOVE_DEVICE Request](handling-an-irp-mn-query-remove-device-request.md)
 
-[Handling an IRP_MN_REMOVE_DEVICE Request](handling-an-irp-mn-remove-device-request)
+[Handling an IRP_MN_REMOVE_DEVICE Request](handling-an-irp-mn-remove-device-request.md)
 
-[Handling an IRP_MN_SURPRISE_REMOVAL Request](handling-an-irp-mn-surprise-removal-request)
+[Handling an IRP_MN_SURPRISE_REMOVAL Request](handling-an-irp-mn-surprise-removal-request.md)
 
 ## Supporting the device reset interface in filter drivers
 

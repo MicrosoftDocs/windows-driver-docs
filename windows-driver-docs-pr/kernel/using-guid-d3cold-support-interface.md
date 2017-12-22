@@ -21,7 +21,7 @@ The driver that is the power policy owner (PPO) for the device calls the routine
 
 To query for this interface, a device driver sends an IRP_MN_QUERY_INTERFACE IRP down the driver stack. For this IRP, the driver sets the InterfaceType input parameter to GUID_D3COLD_SUPPORT_INTERFACE. On successful completion of the IRP, the Interface output parameter is a pointer to a D3COLD_SUPPORT_INTERFACE structure. This structure contains pointers to the routines in the interface.
 
-For more information about the D3cold device power state, see [Supporting D3cold in a Driver](supporting-d3cold-in-a-driver).
+For more information about the D3cold device power state, see [Supporting D3cold in a Driver](supporting-d3cold-in-a-driver.md).
 
 
 A driver calls the *SetD3ColdSupport* routine to dynamically enable and disable a device's transitions to D3cold that can occur when the computer is in S0. If the device must be able to signal a wake event from any low-power Dx state that the device enters, the driver should enable the device to enter D3cold only if the device can signal wake events from D3cold. Otherwise, after the device enters D3cold, it might be unavailable until the computer leaves the S0 state.
