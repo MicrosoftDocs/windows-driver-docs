@@ -3,7 +3,7 @@ title: JavaScript Debugger Scripting
 description: This topic describes how to use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger.
 ms.assetid: 3442E2C4-4054-4698-B7FB-8FE19D26C171
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 12/22/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -659,7 +659,7 @@ For general information on working with breakpoints, see [Methods of Controlling
 This example will evaluate notepad's open and save dialog: *notepad!ShowOpenSaveDialog*. This script will evaluate the pszCaption variable to determine if the current dialog is an "Open" dialog or if it is a "Save As" dialog. If it's an open dialog, code execution will continue. If it's a save as dialog, code execution will stop, and the debugger will break in.
 
 ```
- // Use JavaScript stric mode 
+ // Use JavaScript strict mode 
 "use strict";
  
 // Define the invokeScript method to handle breakpoints
@@ -671,17 +671,18 @@ This example will evaluate notepad's open and save dialog: *notepad!ShowOpenSave
     //Get the address of my string
     var address = host.evaluateExpression("pszCaption");
  
-    //The open and save dialogs use the same function
-        //When we hit the open dialog, continue.
-        //When we hit the save dialog, break.
-    if(host.memory.readWideString(address)=="Open"){
-        //host.diagnostics.debugLog("We're opening, let's continue!\n");
+    // The open and save dialogs use the same function
+    // When we hit the open dialog, continue.
+    // When we hit the save dialog, break.
+    if (host.memory.readWideString(address) == "Open") {
+        // host.diagnostics.debugLog("We're opening, let's continue!\n");
         ctl.ExecuteCommand("gc");
-    }else{
+    }
+    else
+    {
         //host.diagnostics.debugLog("We're saving, let's break!\n");
     }
- 
- }
+  }
 ```
 
 Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
