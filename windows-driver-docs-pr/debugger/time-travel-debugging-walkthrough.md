@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Sample App Walkthrough
 description: This section contains a walk through of a small C++ app. 
 ms.author: windowsdriverdev
-ms.date: 12/19/2017
+ms.date: 12/21/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -248,14 +248,22 @@ In the next section of this lab we will analyze the trace file to locate the iss
     Exception        : Exception of type Hardware at PC: 0XC42142
     ```
 
-4. Click on the link to time travel to that position.
+4. Click on the [Time Travel] link to move to that position.
 
     ```
-    0:000> dx -r1 @$curprocess.TTD.Events[45]
-    @$curprocess.TTD.Events[45]                 : Exception at 9E0D:0
-    Type             : Exception
-    Position         : 9E0D:0 [Time Travel]
-    Exception        : Exception of type Hardware at PC: 0XC42142
+    0:000> dx @$curprocess.TTD.Events[45].Position.SeekTo()
+    Setting position: 9E56:0
+    @$curprocess.TTD.Events[45].Position.SeekTo()
+
+    ...
+
+    (a2c.1278): Break instruction exception - code 80000003 (first/second chance not available)
+    Time Travel Position: 9E56:0
+    eax=00000001 ebx=002b1000 ecx=f5c607b2 edx=00000004 esi=001bf7e0 edi=001bf8d0
+    eip=68cd2142 esp=001bf778 ebp=001bf7b8 iopl=0         nv up ei pl zr na pe nc
+    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+    ucrtbased!common_tcscpy_s<wchar_t>+0x52:
+    68cd2142 cc              int     3
     ```
 
 
@@ -309,7 +317,7 @@ In the next section of this lab we will analyze the trace file to locate the iss
         message = 0x00d475d0 "Message text to display goes here"
     ```
 
-6. Looking at the value of *size* it is 0xf - 15 and our string looks to be 32 in length, so this looks like the reason that the wscpy is failing. But how did *size* get set to 15? To answer that question, we will set an break on memory access breakpoint. 
+6. Looking at the value of *size* it is 0xf - 15 and our string looks to be 32 in length, so this looks like the reason that the wscpy is failing. But how did *size* get set to 15? To answer that question, we will set a break on memory access breakpoint. 
 
     > [!NOTE]
     > In this very small sample it would be pretty easy to just look in the code, but if there are hundreds of lines of code and dozens of subroutines the techniques described here can be used to decrease the time necessary to locate the issue.
@@ -447,7 +455,7 @@ Note that you can only set four data breakpoints at any given time and it is up 
     00d4174a c745e000000000  mov     dword ptr [ebp-20h],0 ss:002b:0053fdc8=cccccccc
     ``'
 
-3. As the DetermineStringSize function is not large, we could just look at the code to find the issue. If this was a large function, we could look at the last line of code that returns the final value to see how that value is set.
+3. As the DetermineStringSize function is not complex, we could just look at the code to find the issue. If this was a large or complex function, we could look at the last line of code that returns the final value to see how that value is set.
 
     ```
     return buffsize;
@@ -495,6 +503,71 @@ Note that you can only set four data breakpoints at any given time and it is up 
     // ToDo Implement String size - for now all supported strings are 15.
        int buffsize = 15;
     ```
+
+
+**Use the TTD.Memory objects to view memory access**    
+
+Another way to determine at what points in the trace memory has been accessed, is to use the TTD.Memory objects and the dx command.
+
+1.  Use the **dx** command to examine  *buffsize*. 
+
+    ```
+    0:000> dx &buffsize
+    &buffsize                 : 0x1bf7d0 : -858993460 [Type: int *]
+        -858993460 [Type: int]
+    ```
+
+    In this trace, *buffsize* is located in memory at 1bf7d0. 
+
+2. Use the **dx** command to look at the four bytes in memory starting at that address with the read write access.
+
+    ```
+    0:000> dx -r1 @$cursession.TTD.Memory(0x1bf7d0,0x1bf7d4, "rw")
+    @$cursession.TTD.Memory(0x1bf7d0,0x1bf7d4, "rw")                
+        [0x0]           
+        [0x1]           
+        [0x2]           
+        [0x3]           
+        [0x4]           
+        [0x5]           
+        [0x6]           
+        [0x7]           
+        [0x8]           
+        [0x9]           
+        [0xa]           
+        [0xb]           
+        [0xc]           
+        [0xd]           
+        [0xe]           
+        [0xf]           
+        [0x10]          
+        [0x11]          
+        [0x12]          
+        [0x13]          
+        [0x14]          
+        [0x15]          
+    ```
+
+3. If we are interested in the last occurrence of read/write memory access in the trace we can click on the last item in the list or append the .Last() function to the end of the dx command.
+
+    ```
+    0:000> dx -r1 @$cursession.TTD.Memory(0x1bf7d0,0x1bf7d4, "rw").Last()
+    @$cursession.TTD.Memory(0x1bf7d0,0x1bf7d4, "rw").Last()                
+        EventType        : MemoryAccess
+        ThreadId         : 0x1278
+        UniqueThreadId   : 0x2
+        TimeStart        : 1A32:33B [Time Travel]
+        TimeEnd          : 1A32:33B [Time Travel]
+        AccessType       : Read
+        IP               : 0x76ed1b6a
+        Address          : 0x1bf7d0
+        Size             : 0x4
+        Value            : 0x13a17d5
+    ```
+
+4. We could then click on [Time Travel] to move to that position in the trace and look further at the code execution at that point, using the techniques described eariler in this lab.
+
+For more information about the TTD.Memory objects, see [TTD.Memory Object](time-travel-object-model.md).
 
 
 **Summary**      
