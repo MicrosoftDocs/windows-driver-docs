@@ -194,7 +194,7 @@ Debugger.State   [State pertaining to the current execution of the debugger (e.g
 
 ## Displaying TEB and PEB information using the Environment object
 
-Use the .Environment object to display TEB and PEB information associated with the thread and session.
+Use the Environment object to display TEB and PEB information associated with the thread and process.
 
 To display the TEB associated with the current thread use this command.
 
