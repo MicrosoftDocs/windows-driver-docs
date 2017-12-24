@@ -105,7 +105,7 @@ This image shows how to use the jumper for powering the MUTT pack with an extern
 -   Based on the design of FX3 EZ-USB FX3.
 -   Implements SuperSpeed features such as the bulk streams feature.
 -   Simulates USB 3.0 device traffic.
--   Note: this device does not support operation at Full Speed at this time.
+-   Note: this device does not support operation at Low Speed.
 
     ![supermutt](images/fig8-supermutt.png)
 

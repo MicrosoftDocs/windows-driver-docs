@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/devtest/boot-options-in-windows-vista-and-later.md",
+      "redirect_URL": "/windows-hardware/drivers/devtest/boot-options-in-windows",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/devtest/28101---the-drivers-module-has-inferred-that-the-current-function-is-a.md",
       "redirect_URL": "/windows-hardware/drivers/devtest/28101-wrong-function-type",
       "redirect_document_id": true
@@ -1069,6 +1074,21 @@
       "source_path": "windows-driver-docs-pr/network/sdk-topics-for-network-drivers.md",
       "redirect_URL": "/windows-hardware/drivers/network/kernel-mode-sdk-topics-for-network-drivers",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/mb-uicc-reset-and-modem-reset-operations.md",
+      "redirect_URL": "/windows-hardware/drivers/network/mb-low-level-uicc-access",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/mb-uicc-reset-operations.md",
+      "redirect_URL": "/windows-hardware/drivers/network/mb-low-level-uicc-access#mbimcidmsuiccreset",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-receive-filter-queue-allocation-state.md",
+      "redirect_URL": "/windows-hardware/drivers/network/virtual-machine-queue-status-indications",
+      "redirect_document_id": false
     }
   ]
 }
