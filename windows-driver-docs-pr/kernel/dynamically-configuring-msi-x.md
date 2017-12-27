@@ -8,7 +8,7 @@ ms.assetid: 53051239-e00f-41e8-b95d-9618693e696d
 # Dynamically Configuring MSI-X
 
 
-Windows Vista Service Pack 1 (SP1), Windows Server 2008, and later operating systems support dynamically modifying the properties of MSI-X interrupt messages. (The PCI 3.0 specification defined MSI-X.) The PCI bus driver exposes the [GUID\_MSIX\_TABLE\_CONFIG\_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/ff546563) interface to allow drivers for PCI devices to modify the settings in the bus hardware interrupt table.
+Windows Vista Service Pack 1 (SP1), Windows Server 2008, and later operating systems support dynamically modifying the properties of MSI-X interrupt messages. (The PCI 3.0 specification defined MSI-X.) The PCI bus driver exposes the GUID\_MSIX\_TABLE\_CONFIG\_INTERFACE interface to allow drivers for PCI devices to modify the settings in the bus hardware interrupt table.
 
 Drivers use the interface by sending an [**IRP\_MN\_QUERY\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff551687) request to the bus driver, with the *InterfaceType* parameter equal to GUID\_MSIX\_TABLE\_CONFIG\_INTERFACE. The bus driver supplies a pointer to a [**PCI\_MSIX\_TABLE\_CONFIG\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff558787) structure, which supplies pointers to three routines that modify the interrupt table:
 
