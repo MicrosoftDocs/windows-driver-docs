@@ -17,5 +17,5 @@ The GUID_THERMAL_COOLING_INTERFACE driver interface enables device drivers to pa
 
 By preventing overheating, Windows thermal management keeps devices operating reliably and prevents user-accessible surfaces from becoming uncomfortably hot. Windows intelligently balances the thermal-level requirements of the devices in the platform to extend the time that the platform can operate on a battery charge, and to maintain the appearance of a computer that is always on and always connected.
 
-For more information, see [Device-Level Thermal Management.md](device-level-thermal-management).
+For more information, see [Device-Level Thermal Management](device-level-thermal-management.md).
 
