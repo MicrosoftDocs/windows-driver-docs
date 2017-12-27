@@ -172,8 +172,389 @@ Vendor drivers are not required for the following devices:
 -   Keyboard, mouse, or game port devices operated by the system-supplied non-HIDClass drivers.
 
  
+## Kbfiltr sample
 
- 
+Kbfiltr is designed to be used with Kbdclass, the system class driver for keyboard devices and I8042prt, the function driver for a PS/2-style keyboard. Kbfiltr demonstrates how to filter I/O requests and how to add callback routines that modify the operation of Kbdclass and I8042prt.
+
+For more information about Kbfiltr operation, see the following:
+
+The ntddkbd.h WDK header file. 
+The sample [Kbfiltr](http://go.microsoft.com/fwlink/p/?linkid=256125) source code in the MSDN Code Gallery. 
+
+### Kbfiltr IOCTLs
+
+<table>
+<tr>
+<th>Control Code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+<p>
+<MSHelp:link tabindex="0" keywords="hid.ioctl_internal_i8042_hook_keyboard"><b>IOCTL_INTERNAL_I8042_HOOK_KEYBOARD</b></MSHelp:link>
+</p>
+</td>
+<td>
+<p>The IOCTL_INTERNAL_I8042_HOOK_KEYBOARD request does the following:</p>
+<ul>
+<li>
+<p>Adds an initialization callback routine to the I8042prt keyboard initialization routine</p>
+</li>
+<li>
+<p>Adds an ISR callback routine to the I8042prt keyboard ISR</p>
+</li>
+</ul>
+<p>The initialization and ISR callbacks are optional and are provided by an upper-level filter driver for a PS/2-style keyboard device.</p>
+<p>After I8042prt receives an <MSHelp:link tabindex="0" keywords="hid.ioctl_internal_keyboard_connect2"><b>IOCTL_INTERNAL_KEYBOARD_CONNECT</b></MSHelp:link> request, it sends a synchronous IOCTL_INTERNAL_I8042_HOOK_KEYBOARD request to the top of the keyboard device stack.</p>
+<p>After Kbfiltr receives the hook keyboard request, Kbfiltr filters the request in the following way:</p>
+<ul>
+<li>
+<p>Saves the upper-level information passed to Kbfiltr, which includes the context of an upper-level device object, a pointer to an initialization callback, and a pointer to an ISR callback</p>
+</li>
+<li>
+<p>Replaces the upper-level information with its own</p>
+</li>
+<li>
+<p>Saves the context of I8042prt and pointers to callbacks that the Kbfiltr ISR callback can use</p>
+</li>
+</ul>
+</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<MSHelp:link tabindex="0" keywords="hid.ioctl_internal_keyboard_connect"><b>IOCTL_INTERNAL_KEYBOARD_CONNECT</b></MSHelp:link>
+</p>
+</td>
+<td>
+<p>The IOCTL_INTERNAL_KEYBOARD_CONNECT request connects the Kbdclass service to the keyboard device. Kbdclass sends this request down the keyboard device stack before it opens the keyboard device. </p>
+<p>After Kbfiltr received the keyboard connect request, Kbfiltr filters the connect request in the following way:</p>
+<ul>
+<li>
+<p>Saves a copy of Kbdclass's <MSHelp:link tabindex="0" keywords="hid.connect_data__kbdclass_"><b>CONNECT_DATA (Kbdclass)</b></MSHelp:link> structure that is passed to the filter driver by Kbdclass</p>
+</li>
+<li>
+<p>Substitutes its own connect information for the class driver connect information</p>
+</li>
+<li>
+<p>Sends the IOCTL_INTERNAL_KEYBOARD_CONNECT request down the device stack</p>
+</li>
+</ul>
+<p>If the request is not successful, Kbfiltr completes the request with an appropriate error status.</p>
+<p>Kbfiltr provides a template for a filter service callback routine that can supplement the operation of <MSHelp:link tabindex="0" keywords="hid.keyboardclassservicecallback"><b>KeyboardClassServiceCallback</b></MSHelp:link>, the Kbdclass class service callback routine. The filter service callback can filter the input data that is transferred from the device input buffer to the class data queue. </p>
+<dl>
+<dd>
+</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<MSHelp:link tabindex="0" keywords="hid.ioctl_internal_keyboard_disconnect"><b>IOCTL_INTERNAL_KEYBOARD_DISCONNECT</b></MSHelp:link>
+</p>
+</td>
+<td>
+<p>The IOCTL_INTERNAL_KEYBOARD_DISCONNECT request is completed with a status of STATUS_NOT_IMPLEMENTED. Note that a Plug and Play keyboard can be added or removed by the Plug and Play manager.</p>
+</td>
+</tr>
+</table>
+
+<p>For all other device control requests, Kbfiltr skips the current IRP stack and sends the request down the device stack without further processing.</p>
+<p><b>Callback routines implemented by Kbfiltr</b></p>
+<p>
+<ul>
+<li><b>KbFilter_InitializationRoutine</b>
+      
+     (see <MSHelp:link tabindex="0" keywords="hid.pi8042_keyboard_initialization_routine"><b>PI8042_KEYBOARD_INITIALIZATION_ROUTINE</b></MSHelp:link>)<p><b>
+          KbFilter_InitializationRoutine</b> is not needed if I8042prt's default initialization of a keyboard is sufficient.</p>
+<p>I8042prt calls <b>
+          KbFilter_InitializationRoutine</b> when it initializes the keyboard. Default keyboard initialization includes the following operations: reset the keyboard, set the typematic rate and delay, and set the light-emitting diodes (LED).<pre class="syntax" xml:space="preserve"><code>
+/*
+Parameters
+DeviceObject [in] 
+Pointer to the device object that is the context for this callback.
+
+SynchFuncContext [in] 
+Pointer to the context for the routines pointed to by ReadPort and Writeport.
+
+ReadPort [in] 
+Pointer to the system-supplied PI8042_SYNCH_READ_PORT callback that reads from the port.
+
+WritePort [in] 
+Pointer to the system-supplied PI8042_SYNCH_WRITE_PORT callback that writes to the port.
+
+TurnTranslationOn [out] 
+Specifies, if TRUE, to turn translation on. Otherwise, translation is turned off.
+
+Return value
+KbFilter_InitializationRoutine returns an appropriate NTSTATUS code.
+
+
+
+*/
+
+NTSTATUS KbFilter_InitializationRoutine(
+  _In_  PDEVICE_OBJECT          DeviceObject,
+  _In_  PVOID                   SynchFuncContext,
+  _In_  PI8042_SYNCH_READ_PORT  ReadPort,
+  _In_  PI8042_SYNCH_WRITE_PORT WritePort,
+  _Out_ PBOOLEAN                TurnTranslationOn
+);
+</code></pre>
+</p>
+</li>
+<li><b>KbFilter_IsrHook</b>
+      
+     (see <MSHelp:link tabindex="0" keywords="hid.pi8042_keyboard_isr"><i>PI8042_KEYBOARD_ISR</i></MSHelp:link>)<p>This callback is not needed if the default operation of I8042prt is sufficient.</p>
+<p>The I8042prt keyboard ISR calls <b>KbFilter_IsrHook</b> after it validates the interrupt and reads the scan code. </p>
+<p><b>KbFilter_IsrHook</b> runs in kernel mode at the IRQL of the I8042prt keyboard ISR.</p>
+<pre class="syntax" xml:space="preserve"><code>
+/*
+Parameters
+DeviceObject [in] 
+Pointer to the filter device object of the driver that supplies this callback.
+
+CurrentInput [in] 
+Pointer to the input KEYBOARD_INPUT_DATA structure that is being constructed by the ISR.
+
+CurrentOutput [in] 
+Pointer to an OUTPUT_PACKET structure that specifies the bytes that are being written to the hardware device.
+
+StatusByte [in, out] 
+Specifies the status byte that is read from I/O port 60 when an interrupt occurs.
+
+DataByte [in] 
+Specifies the data byte that is read from I/O port 64 when an interrupt occurs.
+
+ContinueProcessing [out] 
+Specifies, if TRUE, to continue processing in the I8042prt keyboard ISR after this callback returns; otherwise, processing is not continued.
+
+ScanState [in] 
+Pointer to a KEYBOARD_SCAN_STATE structure that specifies the keyboard scan state.
+
+Return value
+KbFilter_IsrHook returns TRUE if the interrupt service routine should continue; otherwise it returns FALSE.
+
+
+
+*/
+
+KbFilter_IsrHook KbFilter_IsrHook(
+  _In_    PDEVICE_OBJECT       DeviceObject,
+  _In_    PKEYBOARD_INPUT_DATA CurrentInput,
+  _In_    POUTPUT_PACKET       CurrentOutput,
+  _Inout_ UCHAR                StatusByte,
+  _In_    PUCHAR               DataByte,
+  _Out_   PBOOLEAN             ContinueProcessing,
+  _In_    PKEYBOARD_SCAN_STATE ScanState
+);
+
+);
+</code></pre>
+</li>
+<li><b>KbFilter_ServiceCallback</b> (see <MSHelp:link tabindex="0" keywords="hid.kbdclass_class_service_callback_routine"><i>PSERVICE_CALLBACK_ROUTINE</i></MSHelp:link>)<p>The ISR dispatch completion routine of the function driver calls <b>KbFilter_ServiceCallback</b>, which then calls the keyboard class driver's implementation of <MSHelp:link tabindex="0" keywords="hid.kbdclass_class_service_callback_routine"><i>PSERVICE_CALLBACK_ROUTINE</i></MSHelp:link>. A vendor can implement a filter service callback to modify the input data that is transferred from the device's input buffer to the class data queue. For example, the callback can delete, transform, or insert data. <pre class="syntax" xml:space="preserve"><code>
+/*
+Parameters
+DeviceObject [in] 
+Pointer to the class device object.
+
+InputDataStart [in] 
+Pointer to the first keyboard input data packet in the input data buffer of the port device.
+
+InputDataEnd [in] 
+Pointer to the keyboard input data packet that immediately follows the last data packet in the input data buffer of the port device.
+
+InputDataConsumed [in, out] 
+Pointer to the number of keyboard input data packets that are transferred by the routine.
+
+Return value
+None
+
+
+
+
+*/
+
+VOID KbFilter_ServiceCallback(
+  _In_    PDEVICE_OBJECT       DeviceObject,
+  _In_    PKEYBOARD_INPUT_DATA InputDataStart,
+  _In_    PKEYBOARD_INPUT_DATA InputDataEnd,
+  _Inout_ PULONG               InputDataConsumed
+);
+
+);
+</code></pre>
+</p>
+
+
+## Moufiltr sample
+
+Moufiltr is designed to be used with Mouclass, the system class driver for mouse devices used with Windows 2000 and later versions, and I8042prt, the function driver for a PS/2-style mouse used with Windows 2000 and later. Moufiltr demonstrates how to filter I/O requests and add callback routines that modify the operation of Mouclass and I8042prt.
+
+<table>
+<tr>
+<th>Control Code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+<p>
+<MSHelp:link tabindex="0" keywords="hid.ioctl_internal_i8042_hook_mouse"><b>IOCTL_INTERNAL_I8042_HOOK_MOUSE</b></MSHelp:link>
+</p>
+</td>
+<td>
+<p>The IOCTL_INTERNAL_I8042_HOOK_MOUSE request adds an ISR callback routine to the I8042prt mouse ISR. The ISR callback is optional and is provided by an upper-level mouse filter driver.</p>
+<p>I8042prt sends this request after it receives an <MSHelp:link tabindex="0" keywords="hid.ioctl_internal_mouse_connect2"><b>IOCTL_INTERNAL_MOUSE_CONNECT</b></MSHelp:link> request. I8042prt sends a synchronous IOCTL_INTERNAL_I8042_HOOK_MOUSE request to the top of the mouse device stack.</p>
+<p>After Moufiltr receives the hook mouse request, it filters the request in the following way:</p>
+<ul>
+<li>
+<p>Saves the upper-level information passed to Moufiltr, which includes the context of an upper-level device object and a pointer to an ISR callback</p>
+</li>
+<li>
+<p>Replaces the upper-level information with its own</p>
+</li>
+<li>
+<p>Saves the context of I8042prt and pointers to callbacks that the Moufiltr ISR callbacks can use</p>
+</li>
+</ul>
+<p>For more information about this request and the callbacks, see the following topics:</p>
+<dl>
+<dd>
+<p>
+<MSHelp:link tabindex="0" keywords="hid.i8042prt_callback_routines">I8042prt Callback Routines</MSHelp:link>
+</p>
+</dd>
+<dd>
+<p>
+<MSHelp:link tabindex="0" keywords="hid.moufiltr_callback_routines">Moufiltr Callback Routines</MSHelp:link>
+</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<MSHelp:link tabindex="0" keywords="hid.ioctl_internal_mouse_connect"><b>IOCTL_INTERNAL_MOUSE_CONNECT</b></MSHelp:link>
+</p>
+</td>
+<td>
+<p>The IOCTL_INTERNAL_MOUSE_CONNECT request connects Mouclass service to a mouse device.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<MSHelp:link tabindex="0" keywords="hid.ioctl_internal_mouse_disconnect"><b>IOCTL_INTERNAL_MOUSE_DISCONNECT</b></MSHelp:link>
+</p>
+</td>
+<td>
+<p>The IOCTL_INTERNAL_MOUSE_DISCONNECT request is completed by Moufiltr with an error status of STATUS_NOT_IMPLEMENTED.</p>
+</td>
+</tr>
+</table>
+<p> </p>
+</p>
+<p>For all other requests, Moufiltr skips the current IRP stack and sends the request down the device stack without further processing.</p>
+<p><b>Callback routines implemented by Kbfiltr</b></p>
+<dl>
+<dd><b>MouFilter_IsrHook</b> (See  <MSHelp:link tabindex="0" keywords="hid.pi8042_mouse_isr"><i>PI8042_MOUSE_ISR</i></MSHelp:link>)<p>
+<pre class="syntax" xml:space="preserve"><code>
+/*
+Parameters
+DeviceObject 
+Pointer to the filter device object of the driver that supplies this callback.
+
+CurrentInput 
+Pointer to the input MOUSE_INPUT_DATA structure being constructed by the ISR.
+
+CurrentOutput 
+Pointer to the OUTPUT_PACKET structure that specifies the bytes being written to the hardware device.
+
+StatusByte 
+Specifies a status byte that is read from I/O port 60 when the interrupt occurs.
+
+DataByte 
+Specifies a data byte that is read from I/O port 64 when the interrupt occurs.
+
+ContinueProcessing 
+Specifies, if TRUE, that the I8042prt mouse ISR continues processing after this callback returns. Otherwise, processing is not continued.
+
+MouseState 
+Pointer to a MOUSE_STATE enumeration value, which identifies the state of mouse input.
+
+ResetSubState 
+Pointer to MOUSE_RESET_SUBSTATE enumeration value, which identifies the mouse reset substate. See the Remarks section.
+
+Return value
+MouFilter_IsrHook returns TRUE if the interrupt service routine should continue; otherwise it returns FALSE.
+
+
+*/
+
+BOOLEAN MouFilter_IsrHook(
+   PDEVICE_OBJECT        DeviceObject,
+   PMOUSE_INPUT_DATA     CurrentInput,
+   POUTPUT_PACKET        CurrentOutput,
+   UCHAR                 StatusByte,
+   PUCHAR                DataByte,
+   PBOOLEAN              ContinueProcessing,
+   PMOUSE_STATE          MouseState,
+   PMOUSE_RESET_SUBSTATE ResetSubState
+);
+</code></pre>
+</p>
+<p>A <b>MouFilter_IsrHook</b> callback is not needed if the default operation of I8042prt is sufficient.
+
+The I8042prt mouse ISR calls <b>MouFilter_IsrHook</b> after it validates the interrupt.
+
+To reset a mouse, I8042prt goes through a sequence of operational substates, each one of which is identified by an MOUSE_RESET_SUBSTATE enumeration value. For more information about how I8042prt resets a mouse and the corresponding mouse reset substates, see the documentation of MOUSE_RESET_SUBSTATE in ntdd8042.h.
+
+<b>MouFilter_IsrHook</b> runs in kernel mode at the IRQL of the I8042prt mouse ISR.
+
+</p>
+</dd>
+<dd><b>MouFilter_ServiceCallback</b> (See <MSHelp:link tabindex="0" keywords="hid.kbdclass_class_service_callback_routine"><i>PSERVICE_CALLBACK_ROUTINE</i></MSHelp:link>)<p>
+<pre class="syntax" xml:space="preserve"><code>
+/*
+Parameters
+DeviceObject [in] 
+Pointer to the class device object.
+
+InputDataStart [in] 
+Pointer to the first mouse input data packet in the input data buffer of the port device.
+
+InputDataEnd [in] 
+Pointer to the mouse input data packet immediately following the last data packet in the port device's input data buffer.
+
+InputDataConsumed [in, out] 
+Pointer to the number of mouse input data packets that are transferred by the routine.
+
+Return value
+None
+
+
+*/
+
+
+VOID MouFilter_ServiceCallback(
+  _In_    PDEVICE_OBJECT    DeviceObject,
+  _In_    PMOUSE_INPUT_DATA InputDataStart,
+  _In_    PMOUSE_INPUT_DATA InputDataEnd,
+  _Inout_ PULONG            InputDataConsumed
+);
+
+
+</code></pre>
+</p>
+<p>The ISR DPC of I8042prt calls MouFilter_ServiceCallback, which then calls MouseClassServiceCallback. A filter service callback can be configured to modify the input data that is transferred from the device's input buffer to the class data queue. For example, the callback can delete, transform, or insert data. 
+
+</p>
 
 
 --------------------
