@@ -1014,7 +1014,7 @@ Start actively debugging the script using the **.scriptdebug** command.
 >>> Debug [DebuggableSample <No Position>] >
 ```
 
-Once you see the prompt >>> Debug [DebuggableSample <No Position>] > and a request for input, you are
+Once you see the prompt *>>> Debug [DebuggableSample <No Position>] >* and a request for input, you are
 inside the script debugger.  
 
 Use the **sx** script debugger command to see the list of events we can trap.
@@ -1028,7 +1028,7 @@ sx
     uh  [     active] .... Break on unhandled exception     
 ```
 
-Turn on break on entry so that the script will trap into the script debugger as soon as any code within it executes:
+Use the **sxe** script debugger command to turn on break on entry so that the script will trap into the script debugger as soon as any code within it executes.
                                                             
 ```
 >>> Debug [DebuggableSample <No Position>] >sxe en          
@@ -1037,13 +1037,13 @@ Event filter 'en' is now active
 ```
                                                             
 
-Exit the script debugger and we'll make a function call into the script which will trap into the debugger:
+Exit the script debugger and we'll make a function call into the script which will trap into the debugger.
 
 ```
 >>> Debug [DebuggableSample <No Position>] >q
 ```
 
-At this point, you are back in the normal debugger.  Execute the following command:
+At this point, you are back in the normal debugger.  Execute the following command to call the script.
 
 ```
 dx @$scriptContents.outermost()
@@ -1060,9 +1060,9 @@ Now, you are back in the script debugger and broken in on the first line of the 
 ```
 
 In addition to seeing the break into the debugger, you get information on the line (73) and the column (5) where the break took
-place as well as the relevant snippet of source code: var x = 99
+place as well as the relevant snippet of source code: *var x = 99*.
 
-Let's step a few times and get to another place in the script:
+Let's step a few times and get to another place in the script.
 
 ```
     p
@@ -1073,16 +1073,17 @@ Let's step a few times and get to another place in the script:
     p
 ```
 
-At this point, you should be broken into the throwAndCatch method on line 34.  Y
+At this point, you should be broken into the throwAndCatch method on line 34.  
 
 ```
+...
 >>> ****** SCRIPT BREAK DebuggableSample [Step Complete] ******                       
            Location: line = 34, column = 5                                            
            Text: var curProc = host.currentProcess                                    
                                                                                       
 ```
 
-You can verify this by executing a stack trace:
+You can verify this by executing a stack trace.
 
 ```
 >>> Debug [DebuggableSample 34:5] >k                                                  
@@ -1093,7 +1094,7 @@ k
    [02] outermost                        074:05 (var result = outer())                
 ```
 
-From here, you can investigate the value of variables:
+From here, you can investigate the value of variables.
 
 ```
 >>> Debug [DebuggableSample 34:5] >??someObj                
@@ -1110,7 +1111,7 @@ someObj.b        : {...}
     d                : Hello World                          
 ```
 
-Let's set a breakpoint on the current line of code and see what breakpoints are now set:
+Let's set a breakpoint on the current line of code and see what breakpoints are now set.
 
 ```
 >>> Debug [DebuggableSample 34:5] >bpc                      
@@ -1122,7 +1123,7 @@ bl
        1 enabled  34:5                                      
 ```
 
-From here, we'll disable the entry event using sxd en and then just go and let the script continue to the end:
+From here, we'll disable the entry (en) event using the **sxd** script debugger command and then just go and let the script continue to the end.
  
 ```                                                                                                                      
 >>> Debug [DebuggableSample 34:5] >sxd en                                                                              
