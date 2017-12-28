@@ -1,6 +1,6 @@
 ---
 title: .scriptdebug (Debug JavaScript)
-description: Use the .scriptdebug command to set breakpoints and debug JavaScript scripts.
+description: Use the .scriptdebug command to debug JavaScript scripts.
 keywords: [".scriptdebug Debug JavaScript Windows Debugging"]
 ms.author: windowsdriverdev
 ms.date: 12/28/2017
@@ -17,14 +17,13 @@ api_type:
 
 # .scriptdebug (Debug JavaScript)
 
-
-Use the **.scriptdebug** command to set breakpoints and debug JavaScript scripts.
+Use the **.scriptdebug** command to debug JavaScript scripts.
 
 ```
 .scriptdebug FileName
 ```
 
-## Parameters
+### Parameters
 
 *FileName*
 
@@ -55,7 +54,7 @@ Specifies the name of the debugger JavaScript script to debug.
 
  
 
-### <span id="Additional_Information"></span>Additional Information
+## <span id="Additional_Information"></span>Additional Information
 
 For an overview of JavaScript debugging, see  [JavaScript Debugger Scripting - JavaScript Debugging](javascript-debugger-scripting.md#DEBUGGING).
 
@@ -81,7 +80,7 @@ Before you debug a JavaScript completed the following steps.
     0:000> .scriptload C:\MyScripts\DebuggableSample.js
     ```
 
-To start actively debugging the script using the **.scriptdebug** command.
+To start actively debugging the script use the **.scriptdebug** command.
 
 ```
 0:000> .scriptdebug C:\MyScripts\DebuggableSample.js
@@ -94,7 +93,7 @@ To start actively debugging the script using the **.scriptdebug** command.
 Once you see the prompt *>>> Debug [DebuggableSample <No Position>] >* and a request for input, you are
 inside the script debugger.  
 
-Use the **.help** command or **?** to display a list of commands in the JavaScript Debugging environment.
+Use the **.help** command or **?** to display a list of commands in the JavaScript debugging environment.
 
 ```
 >>> Debug [DebuggableSample <No Position>] >.help
