@@ -1394,6 +1394,7 @@
 #### [.restart (Restart Kernel Connection)](-restart--restart-kernel-connection-.md)
 #### [.rrestart (Register for Restart)](-rrestart--register-for-restart-.md)
 #### [.scroll_prefs (Control Source Scrolling Preferences)](-scroll-prefs--control-source-scrolling-preferences-.md)
+#### [.scriptdebug (Debug JavaScript)](-scriptdebug--debug-javascript-.md)
 #### [.scriptlist (List Loaded Scripts)](-scriptlist--list-loaded-scripts-.md)
 #### [.scriptload (Load Script)](-scriptload--load-script-.md)
 #### [.scriptproviders (List Script Providers)](-scriptproviders--list-script-providers-.md)
