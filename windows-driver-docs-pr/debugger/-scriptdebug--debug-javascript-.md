@@ -63,6 +63,37 @@ For an overview of JavaScript debugging, see  [JavaScript Debugger Scripting - J
 > To use JavaScript Debugging with WinDbg Preview, run the debugger as Administrator.
 >
 
+
+Remarks
+-------
+
+Before you debug a JavaScript completed the following steps.
+
+1. Load the JavaScript scripting provider using the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command. 
+
+    ```
+    0:000> .load jsprovider.dll
+    ```
+
+2. Load the sample script.
+
+    ```
+    0:000> .scriptload C:\MyScripts\DebuggableSample.js
+    ```
+
+To start actively debugging the script using the **.scriptdebug** command.
+
+```
+0:000> .scriptdebug C:\MyScripts\DebuggableSample.js
+>>> ****** DEBUGGER ENTRY DebuggableSample ******
+           No active debug event!
+
+>>> Debug [DebuggableSample <No Position>] >
+```
+
+Once you see the prompt *>>> Debug [DebuggableSample <No Position>] >* and a request for input, you are
+inside the script debugger.  
+
 Use the **.help** command or **?** to display a list of commands in the JavaScript Debugging environment.
 
 ```
@@ -98,36 +129,6 @@ Script Debugger Commands (*NOTE* IDs are **PER SCRIPT**):
     .help  ............................. Get help
 ```
 
-
-Remarks
--------
-
-Before you debug a JavaScript completed the following steps.
-
-1. Load the JavaScript scripting provider using the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command. 
-
-    ```
-    0:000> .load jsprovider.dll
-    ```
-
-2. Load the sample script.
-
-    ```
-    .scriptload C:\MyScripts\DebuggableSample.js
-    ```
-
-To start actively debugging the script using the **.scriptdebug** command.
-
-```
-0:000> .scriptdebug C:\MyScripts\DebuggableSample.js
->>> ****** DEBUGGER ENTRY DebuggableSample ******
-           No active debug event!
-
->>> Debug [DebuggableSample <No Position>] >
-```
-
-Once you see the prompt *>>> Debug [DebuggableSample <No Position>] >* and a request for input, you are
-inside the script debugger.  
 
 ### Events
 
