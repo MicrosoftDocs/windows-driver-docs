@@ -898,9 +898,14 @@ In order to allow a debugger extension to maintain precision, a set of math func
 
 ## <span id="Debugging"></span><span id="debugging"></span><span id="DEBUGGING"></span>JavaScript Debugging 
 
-This section describes how to use the script debugging capabilities of the debugger.
+This section describes how to use the script debugging capabilities of the debugger. The debugger has integrated support for debugging JavaScript scripts using the **.scriptdebug** command.
 
-We will use this sample code to explore debugging a JavaScript. Will name it DebuggableSample.js and save it in the C:\MyScripts directory.
+>[!NOTE] 
+> To use JavaScript Debugging with WinDbg Preview, run the debugger as Administrator.
+>
+
+
+Use this sample code to explore debugging a JavaScript. For this walkthrough, we will name it DebuggableSample.js and save it in the C:\MyScripts directory.
 
 ```
 "use strict";
@@ -993,34 +998,26 @@ function initializeScript()
 }
 ```
 
-The debugger has integrated support for debugging JavaScript scripts which were loaded from console through the
-**.scriptload** command.  
-
 Load the sample script.
 
 ```
-    .scriptload C:\MyScripts\DebuggableSample.js
+.scriptload C:\MyScripts\DebuggableSample.js
 ```
 
-Let's start actively debugging the script using the **.scriptdebug** command.
+Start actively debugging the script using the **.scriptdebug** command.
 
 ```
-    .scriptdebug DebuggableSample.js
-```
-
-Once you see the prompt >>> Debug [DebuggableSample <No Position>] > and a request for input, you are
-inside the script debugger.  
-
-```
-0:000> .scriptdebug C:\Projects\DebuggableSample.js
+0:000> .scriptdebug C:\MyScripts\DebuggableSample.js
 >>> ****** DEBUGGER ENTRY DebuggableSample ******
            No active debug event!
 
 >>> Debug [DebuggableSample <No Position>] >
 ```
 
+Once you see the prompt *>>> Debug [DebuggableSample <No Position>] >* and a request for input, you are
+inside the script debugger.  
 
-Continuing, let's use the **sx** script debugger command to see the list of events we can trap:
+Use the **sx** script debugger command to see the list of events we can trap.
                                                         
 ```
 >>> Debug [DebuggableSample <No Position>] >sx              
@@ -1031,7 +1028,7 @@ sx
     uh  [     active] .... Break on unhandled exception     
 ```
 
-Turn on break on entry so that the script will trap into the script debugger as soon as any code within it executes:
+Use the **sxe** script debugger command to turn on break on entry so that the script will trap into the script debugger as soon as any code within it executes.
                                                             
 ```
 >>> Debug [DebuggableSample <No Position>] >sxe en          
@@ -1040,41 +1037,21 @@ Event filter 'en' is now active
 ```
                                                             
 
-Exit the script debugger and we'll make a function call into the script which will trap into the debugger:
+Exit the script debugger and we'll make a function call into the script which will trap into the debugger.
 
 ```
-    q
+>>> Debug [DebuggableSample <No Position>] >q
 ```
 
-At this point, you are back in the normal debugger.  Execute the following command:
+At this point, you are back in the normal debugger.  Execute the following command to call the script.
 
 ```
-    dx @$scriptContents.outermost()
+dx @$scriptContents.outermost()
 ```
 
 Now, you are back in the script debugger and broken in on the first line of the outermost JavaScript function.  
 
-```inside outer!
-This is a fun test
-Of the script debugger
-foo.a = 99
-Caught and returned!
-Test
-@$scriptContents.outermost()                 : TypeError: Unable to get property '42' of undefined or null reference
-    message          : Unable to get property '42' of undefined or null reference
-    description      : Unable to get property '42' of undefined or null reference
-    number           : -2146823281
-    stack            : TypeError: Unable to get property '42' of undefined or null reference
-   at throwAndCatch (dummy2:39:9)
-   at outer (dummy2:66:5)
-   at outermost (dummy2:74:5)
 ```
-
-In addition to seeing the break into the debugger, you get information on the line (73) and the column (5) where the break took
-place as well as the relevant snippet of source code: var x = 99
-                                                            
-```
-0:000> dx @$scriptContents.outermost()                      
 >>> ****** SCRIPT BREAK DebuggableSample [BreakIn] ******   
            Location: line = 73, column = 5                  
            Text: var x = 99                                 
@@ -1082,7 +1059,10 @@ place as well as the relevant snippet of source code: var x = 99
 >>> Debug [DebuggableSample 73:5] >                         
 ```
 
-Let's step a few times and get to another place in the script:
+In addition to seeing the break into the debugger, you get information on the line (73) and the column (5) where the break took
+place as well as the relevant snippet of source code: *var x = 99*.
+
+Let's step a few times and get to another place in the script.
 
 ```
     p
@@ -1093,21 +1073,17 @@ Let's step a few times and get to another place in the script:
     p
 ```
 
-At this point, you should be broken into the throwAndCatch method on line 34.  You can verify this by executing
-a stack trace:
-
-TBD TBD TBD
+At this point, you should be broken into the throwAndCatch method on line 34.  
 
 ```
-    k
-```
-
-```
+...
 >>> ****** SCRIPT BREAK DebuggableSample [Step Complete] ******                       
            Location: line = 34, column = 5                                            
            Text: var curProc = host.currentProcess                                    
                                                                                       
 ```
+
+You can verify this by executing a stack trace.
 
 ```
 >>> Debug [DebuggableSample 34:5] >k                                                  
@@ -1117,10 +1093,8 @@ k
    [01] outer                            066:05 (var foo = throwAndCatch())           
    [02] outermost                        074:05 (var result = outer())                
 ```
-                                                                                     
 
-
-From here, you can investigate the value of variables:
+From here, you can investigate the value of variables.
 
 ```
 >>> Debug [DebuggableSample 34:5] >??someObj                
@@ -1137,7 +1111,7 @@ someObj.b        : {...}
     d                : Hello World                          
 ```
 
-Let's set a breakpoint on the current line of code and see what breakpoints are now set:
+Let's set a breakpoint on the current line of code and see what breakpoints are now set.
 
 ```
 >>> Debug [DebuggableSample 34:5] >bpc                      
@@ -1148,10 +1122,8 @@ bl
       Id State    Pos                                       
        1 enabled  34:5                                      
 ```
-                                                          
 
-
-From here, we'll disable the entry event using sxd en and then just go and let the script continue to the end:
+From here, we'll disable the entry (en) event using the **sxd** script debugger command and then just go and let the script continue to the end.
  
 ```                                                                                                                      
 >>> Debug [DebuggableSample 34:5] >sxd en                                                                              
@@ -1164,12 +1136,10 @@ Of the script debugger
 foo.a = 99                                                                                                             
 Caught and returned!                                                                                                   
 Test                                                                                                                   
-@$scriptContents.outermost()                 : TypeError: Unable to get property '42' of undefined or null reference   
-                                                                                                                       
+...
 ```
 
-
-Execute the script method again and watch our breakpoint be hit, after which, we'll get a call stack
+Execute the script method again and watch our breakpoint be hit.
                                                                                      
 ```
 0:000> dx @$scriptContents.outermost()                                                
@@ -1179,6 +1149,8 @@ inside outer!
            Text: var curProc = host.currentProcess                                    
 ```
 
+Display the call stack.
+
 ```
 >>> Debug [DebuggableSample 34:5] >k                                                  
 k                                                                                     
@@ -1187,11 +1159,9 @@ k
    [01] outer                            066:05 (var foo = throwAndCatch())           
    [02] outermost                        074:05 (var result = outer())                
 ```
-                                                                                      
 
+At this point, we want to stop debugging this script, so we detach from it and then type q to quit.  
 
-At this point, we want to stop debugging this script, so we detach from it.  You can see that executing the function again
-will no longer break into the debugger:
 
 ```
 >>> Debug [DebuggableSample 34:5] >.detach                  
@@ -1205,6 +1175,20 @@ foo.a = 99
 Caught and returned!                                        
 Test                                                        
 ```
+
+Executing the function again will no longer break into the debugger.
+
+```
+0:007> dx @$scriptContents.outermost()
+inside outer!
+This is a fun test
+Of the script debugger
+foo.a = 99
+Caught and returned!
+Test
+
+```
+
 
 
 ## <span id="Resources"></span><span id="resources"></span><span id="RESOURCES"></span>JavaScript Resources
