@@ -900,7 +900,8 @@ In order to allow a debugger extension to maintain precision, a set of math func
 
 This section describes how to use the script debugging capabilities of the debugger. The debugger has integrated support for debugging JavaScript scripts using the **.scriptdebug** command.
 
->[!NOTE] To use JavaScript Debugging with WinDbg Preview, run the debugger as Administrator.
+>[!NOTE] 
+> To use JavaScript Debugging with WinDbg Preview, run the debugger as Administrator.
 >
 
 
