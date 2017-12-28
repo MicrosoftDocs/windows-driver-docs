@@ -1017,6 +1017,41 @@ Start actively debugging the script using the **.scriptdebug** command.
 Once you see the prompt *>>> Debug [DebuggableSample <No Position>] >* and a request for input, you are
 inside the script debugger.  
 
+Use the **.help** command to display a list of commands in the JavaScript Debugging environment.
+
+```
+>>> Debug [DebuggableSample <No Position>] >.help
+Script Debugger Commands (*NOTE* IDs are **PER SCRIPT**):
+    ? .................................. Get help
+    ? <expr>  .......................... Evaluate expression <expr> and display result
+    ?? <expr>  ......................... Evaluate expression <expr> and display result
+    |  ................................. List available scripts
+    |<scriptid>s  ...................... Switch context to the given script
+    bc <bpid>  ......................... Clear breakpoint by specifed <bpid>
+    bd <bpid>  ......................... Disable breakpoint by specifed <bpid>
+    be <bpid>  ......................... Enable breakpoint by specifed <bpid>
+    bl  ................................ List breakpoints
+    bp <line>:<column>  ................ Set breakpoint at the specified line and column
+    bp <function-name>  ................ Set breakpoint at the (global) function specified by the given name
+    bpc  ............................... Set breakpoint at current location
+    dv  ................................ Display local variables of current frame
+    g  ................................. Continue script
+    gu   ............................... Step out
+    k  ................................. Get stack trace
+    p  ................................. Step over
+    q  ................................. Exit script debugger (resume execution)
+    sx  ................................ Display available events/exceptions to break on
+    sxe <event>  ....................... Enable break on <event>
+    sxd <event>  ....................... Disable break on <event>
+    t  ................................. Step in
+    .attach <scriptId>  ................ Attach debugger to the script specified by <scriptId>
+    .detach [<scriptId>]  .............. Detach debugger from the script specified by <scriptId>
+    .frame <index>  .................... Switch to frame number <index>
+    .f+  ............................... Switch to next stack frame
+    .f-  ............................... Switch to previous stack frame
+    .help  ............................. Get help
+```
+
 Use the **sx** script debugger command to see the list of events we can trap.
                                                         
 ```
