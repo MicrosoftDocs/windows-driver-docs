@@ -27,8 +27,8 @@ The universal camera driver model also contains new DDIs, including:
 * [Smooth zoom](https://msdn.microsoft.com/library/windows/hardware/dn936756)
 * [Hardware optimization hints](https://msdn.microsoft.com/library/windows/hardware/dn917956)
 * [Camera profiles](camera-driver-functions.md)
-## Build a universal camera driver
 
+## Build a universal camera driver
 
 The universal camera driver is an AVStream minidriver built on the [Windows Driver Model](https://msdn.microsoft.com/library/windows/hardware/ff565698) (WDM).
 
