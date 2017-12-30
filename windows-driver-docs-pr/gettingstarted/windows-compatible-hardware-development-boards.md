@@ -28,7 +28,7 @@ Windows compatible hardware development boards offer an affordable, yet a powerf
 ## <span id="Supported_Hardware_Development_Boards"></span><span id="supported_hardware_development_boards"></span><span id="SUPPORTED_HARDWARE_DEVELOPMENT_BOARDS"></span>Supported Hardware Development Boards
 
 
-For information on the latest supported development boards, see [IoT Device Options](https://go.microsoft.com/fwlink/p/?linkid=836942).
+For information on the latest supported development boards, see [IoT Device Options](https://developer.microsoft.com/en-us/windows/iot/getstarted/prototype/selectdevice).
 
 ## <span id="Learn_more"></span><span id="learn_more"></span><span id="LEARN_MORE"></span>Learn more
 
