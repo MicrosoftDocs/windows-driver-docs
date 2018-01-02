@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Introduction to Time Travel Debugging objects
 description: This section describes how to use the data model to query time travel traces. 
 ms.author: windowsdriverdev
-ms.date: 09/23/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,8 +59,7 @@ dx @$curprocess.TTD.Events.Where(t => t.Type == "Exception").Select(e => e.Excep
 
 ```
 
-### Querying for the load event for a specific module
-
+### Querying for the load event of a specific module
 
 Use the [lm (List Loaded Modules)](lm--list-loaded-modules-.md) command to display the loaded modules.
 
