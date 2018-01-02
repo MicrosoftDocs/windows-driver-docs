@@ -105,9 +105,13 @@ All drivers should handle this IRP and should note that the device has been phys
 
 On Windows 98/Me, the PnP manager does not send this IRP. If a user removes a device without first using the appropriate user interface, the PnP manager sends only an **IRP\_MN\_REMOVE\_DEVICE** request to the drivers for the device. All WDM drivers must handle both **IRP\_MN\_SURPRISE\_REMOVAL** and **IRP\_MN\_REMOVE\_DEVICE**. The code for **IRP\_MN\_REMOVE\_DEVICE** should check whether the driver received a prior surprise-remove IRP and should handle both cases.
 
- 
+ ## Using GUID_REENUMERATE_SELF_INTERFACE_STANDARD
 
- 
+The GUID_REENUMERATE_SELF_INTERFACE_STANDARD interface enables a driver to request that its device be reenumerated.
+
+To use this interface, send an IRP_MN_QUERY_INTERFACE IRP to your bus driver with InterfaceType = GUID_REENUMERATE_SELF_INTERFACE_STANDARD. The bus driver supplies a pointer to a REENUMERATE_SELF_INTERFACE_STANDARD structure that contains pointers to the individual routines of the interface. A [ReenumerateSelf routine](https://msdn.microsoft.com/en-us/library/windows/hardware/ff560837) requests that a bus driver reenumerate a child device.
+
+
 
 
 --------------------

@@ -2,6 +2,11 @@
 title: Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually
 description: Debugging Tools for Windows supports kernel debugging over a USB 3.0 cable. This topic describes how to set up USB 3.0 debugging manually.
 ms.assetid: 9A9F5DA0-B98A-4C19-A723-67D06B2409B5
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually

@@ -2,6 +2,11 @@
 title: Opening a Dump File Using CDB
 description: Opening a Dump File Using CDB
 ms.assetid: 204DFA6F-2BA2-4B76-AFE0-28207710322B
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Opening a Dump File Using CDB

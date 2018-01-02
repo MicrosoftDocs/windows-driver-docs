@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Introduction to Time Travel Debugging objects
 description: This section describes how to use the data model to query time travel traces. 
 ms.author: windowsdriverdev
-ms.date: 09/23/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -12,7 +12,7 @@ ms.technology: windows-devices
 > The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
 >
 
-# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Introduction to Time Travel Debugging objects
+# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Introduction to Time Travel Debugging objects
 This section describes how to use the data model to query time travel traces. This can be a powerful tool to answer questions like these about the code that is captured in a time travel trace.
 * What exceptions are in the trace?
 * At what point in time in the trace did a specific code module load?
@@ -59,8 +59,7 @@ dx @$curprocess.TTD.Events.Where(t => t.Type == "Exception").Select(e => e.Excep
 
 ```
 
-### Querying for the load event for a specific module
-
+### Querying for the load event of a specific module
 
 Use the [lm (List Loaded Modules)](lm--list-loaded-modules-.md) command to display the loaded modules.
 

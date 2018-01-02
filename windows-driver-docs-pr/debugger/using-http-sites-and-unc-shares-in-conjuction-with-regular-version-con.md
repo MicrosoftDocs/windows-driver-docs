@@ -2,6 +2,11 @@
 title: Using HTTP Sites and UNC Shares in Conjuction with Regular Version Control
 description: Using HTTP Sites and UNC Shares in Conjuction with Regular Version Control
 ms.assetid: 1b045a00-45e7-47e8-9447-7d94f70253fe
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using HTTP Sites and UNC Shares in Conjuction with Regular Version Control

@@ -337,6 +337,16 @@ typedef ULONG PFN_NUMBER, *PPFN_NUMBER;
 <p>Available starting with Windows 2000.</p>
 <p>IRQL: Any level</p></td>
 </tr>
+<tr class="even">
+<td><strong>PsGetCurrentProcess</strong></td>
+<td><p>Ntddk.h</p></td>
+<td><p>Returns a pointer to the process of the current thread.</p>
+<p><strong>Return value</strong></p>
+<p>A pointer to an opaque process object.</p>
+<div class="alert">
+<p>Available starting with Windows 2000.</p>
+<p>IRQL: Any level</p></td>
+</tr>
 <tr class="odd">
 <td><strong>READ_REGISTER_BUFFER_ULONG64</strong></td>
 <td><p>Wdm.h</p></td>

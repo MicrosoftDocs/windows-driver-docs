@@ -2,6 +2,11 @@
 title: Address and Address Range Syntax
 description: Address and Address Range Syntax
 ms.assetid: 3d4f41f1-07ec-484d-a748-27fbbb9bd0b2
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Address and Address Range Syntax

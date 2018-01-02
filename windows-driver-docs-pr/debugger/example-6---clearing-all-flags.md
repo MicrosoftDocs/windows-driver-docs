@@ -2,6 +2,11 @@
 title: Example 6 Clearing All Flags
 description: Example 6 Clearing All Flags
 ms.assetid: 07a6af3d-3ef7-429d-9afa-439b20915ab1
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 6: Clearing All Flags

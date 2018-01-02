@@ -2,6 +2,11 @@
 title: Example 12 Using Page Heap Verification to Find a Bug
 description: Example 12 Using Page Heap Verification to Find a Bug
 ms.assetid: aa3f5c53-8522-48be-a3cd-49b740803fe3
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 12: Using Page Heap Verification to Find a Bug

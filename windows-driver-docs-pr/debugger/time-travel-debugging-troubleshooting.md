@@ -13,7 +13,7 @@ ms.technology: windows-devices
 >
 
 
-# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Troubleshooting
+# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time Travel Debugging - Troubleshooting
 
 This section describes how to troubleshoot time travel traces.
 

@@ -2,7 +2,7 @@
 title: TTD Position Objects
 description: This section describes the position model objects associated with time travel debugging.
 ms.author: windowsdriverdev
-ms.date: 09/20/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,7 +22,7 @@ A position of FFFFFFFFFFFFFFFE:0 indicates the end of the trace.
 | Property | Description |
 | --- | --- |
 | Sequence | The sequencing point relevant to the position. |
-| Steps | The number of steps from the sequence point to get to this posiiton. |
+| Steps | The number of steps from the sequence point in this thread to get to this position. |
 
 ## Methods
 | Method | Description |

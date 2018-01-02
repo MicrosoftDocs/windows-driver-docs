@@ -2,6 +2,11 @@
 title: Example 3 Setting a Flag by Using Its Hexadecimal Value
 description: Example 3 Setting a Flag by Using Its Hexadecimal Value
 ms.assetid: 64fa0b2e-9fe7-47d0-bf83-8ae7c06252b6
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 3: Setting a Flag by Using Its Hexadecimal Value

@@ -3,6 +3,11 @@ title: L (Windows Debugger Glossary)
 description: Glossary page - L
 Robots: noindex, nofollow
 ms.assetid: d290c203-4cb3-423c-a41f-baabb3c9a3c1
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # L

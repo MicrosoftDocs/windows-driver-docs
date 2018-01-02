@@ -2,6 +2,11 @@
 title: Native Debugger Objects in JavaScript Extensions
 description: Native debugger objects represent various constructs and behaviors of the debugger environment. The objects can be passed into (or acquired in) JavaScript extensions.
 ms.assetid: A8E12564-D083-43A7-920E-22C4D627FEE8
+ms.author: windowsdriverdev
+ms.date: 12/22/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native Debugger Objects in JavaScript Extensions
@@ -31,11 +36,17 @@ var output = ctl.ExecuteCommand("u");
 This topic describes how to work with common objects and provides reference information on their attributes and behaviors.
 
 [Extending the Debugger via the Data Model](#extending)
+
 [Extending a Debugger Object in JavaScript](#extending-debugger-object)
+
 [Debugger Objects in JavaScript Extensions](#debugger-objects)
+
 [Host APIs for JavaScript Extensions](#host-apis)
+
 [Data Model Concepts in JavaScript](#data-model)
+
 [Debugger Data Model Design Considerations](#design-considerations)
+
 For general information about working with JavaScript, see [JavaScript Debugger Scripting](javascript-debugger-scripting.md). For JavaScript examples that use the debugger objects, see [JavaScript Debugger Example Scripts](javascript-debugger-example-scripts.md). For information about working with the settings objects, see [**.settings (Set Debug Settings)**](-settings--set-debug-settings-.md).
 
 To explore the objects available in a debugger session, use the [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command. For example, you can display some of the top level debugger objects with this dx command.

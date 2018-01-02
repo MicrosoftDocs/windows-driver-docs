@@ -17,7 +17,16 @@ ms.technology: windows-devices
 ## <a href="" id="ddk-obtaining-device-configuration-information-at-irql-dispatch-level-"></a>
 
 
-The method illustrated in the [Obtaining Device Configuration Information at IRQL = PASSIVE\_LEVEL](obtaining-device-configuration-information-at-irql---passive-level.md) section makes use of I/O request packets (IRPs) and therefore is only valid for drivers running at IRQL = PASSIVE\_LEVEL. Drivers running at IRQL = DISPATCH\_LEVEL must use a bus interface to obtain device configuration space data. To obtain this data, you can use a bus-specific interface or the system-supplied bus-independent bus interface, [**BUS\_INTERFACE\_STANDARD**](https://msdn.microsoft.com/library/windows/hardware/ff540707).
+The method illustrated in the [Obtaining Device Configuration Information at IRQL = PASSIVE\_LEVEL](obtaining-device-configuration-information-at-irql---passive-level.md) section makes use of I/O request packets (IRPs) and therefore is only valid for drivers running at IRQL = PASSIVE\_LEVEL. Drivers running at IRQL = DISPATCH\_LEVEL must use a bus interface to obtain device configuration space data. To obtain this data, you can use a bus-specific interface or the system-supplied bus-independent bus interface, **BUS\_INTERFACE\_STANDARD**.
+
+The GUID_BUS_INTERFACE_STANDARD interface enables device drivers to make direct calls to parent bus driver routines instead of using I/O request packets (IRP) to communicate with the bus driver. In particular, this interface enables drivers to access routines that the bus driver provides for the following functions:
+
+-    Translating bus addresses 
+-    Retrieving a DMA adapter structure in cases where the bus adapter supports DMA 
+-    Reading and setting the bus configuration space for a particular device on the bus 
+
+To use this interface, send an IRP_MN_QUERY_INTERFACE IRP to your bus driver with InterfaceType = GUID_BUS_INTERFACE_STANDARD. The bus driver supplies a pointer to a BUS_INTERFACE_STANDARD structure that contains pointers to the individual routines of the interface.
+
 
 It is preferable to use **BUS\_INTERFACE\_STANDARD** where possible, because a bus number is not required to retrieve configuration information when using **BUS\_INTERFACE\_STANDARD**, whereas drivers must often identify the bus number when retrieving bus-specific interfaces. Bus numbers for some buses, such as PCI, can change dynamically. Therefore, drivers should not depend on the bus number to access the PCI ports directly. Doing so might lead to system failure.
 
