@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Sample App Walkthrough
 description: This section contains a walk through of a small C++ app. 
 ms.author: windowsdriverdev
-ms.date: 12/21/2017
+ms.date: 1/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,23 +15,22 @@ ms.technology: windows-devices
 
 # ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time Travel Debugging - Sample App Walkthrough
 
-
 This lab introduces Time Travel Debugging (TTD), using a small sample program with a code flaw. TTD is used to debug, identify and root cause the issue. Although the issue in this small program is easy to find, the general procedure can be used on more complex code. This general procedure can be summarized as follows.
 
 1. Capture a time travel trace of the failed program.
-2. Use the dx command to determine the exception event stored in the recording. 
-3. Use time travel to postion the trace at the exception event.
+2. Use the [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md) command to find the exception event stored in the recording. 
+3. Use the [!tt (time travel)](time-travel-debugging-extension-tt.md) command to travel to the postion of the exception event in the trace.
 4. From that point in the trace single step backwards until the faulting code in question comes into scope.
 5. With the faulting code in scope, look at the local values and develop a hypothesis of a variable that may contain an incorrect value.
 6. Determine the memory address of the variable with the incorrect value.
-7. Set a memory access (ba) breakpoint on address of the suspect variable.
-8. Use g- to run back to point of memory access of the suspect variable.
+7. Set a memory access (ba) breakpoint on the address of the suspect variable using the ba [(Break on Access)](ba--break-on-access-.md) command.
+8. Use g- to run back to last point of memory access of the suspect variable.
 9. See if that location, or a few instructions before, is the point of the code flaw. If so, you are done.
-If some other variable sets the value in the first variable, set another break on access breakpoint on the second variable. 
-10. Use g- to run back to point of memory access on the second suspect variable. See if that location or a few instructions before contains the code flaw. If so, you are done.
+If the incorrect value came from some other variable, set another break on access breakpoint on the second variable. 
+10. Use g- to run back to the last point of memory access on the second suspect variable. See if that location or a few instructions before contains the code flaw. If so, you are done.
 11. Repeat this process walking back until the code that set the incorrect value that caused the error is located.
  
-Although the general techniques included in this procedure apply to a broad set of code issues, there are unique code issues that will require a unique approach. The techniques illustrated in the walkthrough should serve to expand your debugging tool set and will illustrate some of what is possible with a TTD trace.
+Although the general techniques described in this procedure apply to a broad set of code issues, there are unique code issues that will require a unique approach. The techniques illustrated in the walkthrough should serve to expand your debugging tool set and will illustrate some of what is possible with a TTD trace.
 
 
 ## <span id="Lab_objectives"></span><span id="lab_objectives"></span><span id="LAB_OBJECTIVES"></span>Lab objectives
@@ -53,7 +52,7 @@ You will need the following software to be able to complete the lab.
 The lab has the following three sections.
 
 -   [Section 1: Build the sample code](#build)
--   [Section 2: Record a trace of the "DisplayText" sample](#record)
+-   [Section 2: Record a trace of the "DisplayGreeting" sample](#record)
 -   [Section 3: Analyze the trace file recording to identify the code issue](#analyze)
 
 
@@ -67,87 +66,92 @@ The lab has the following three sections.
     
     Select the Win32 Console Application.
 
-    Provide a project name of *DisplayText* and click on **OK**.
-
-    The default settings are fine for our purposes, so click on **Finish**, to accept the defaults.
-
-2. Paste in the following text to the DisplayText.cpp Window.
-
-```
-// DisplayText.cpp : Defines the entry point for the console application.
-//
-
-#include "stdafx.h"
-#include <array>
-#include <stdio.h>
-#include <string.h>
-
-int DetermineStringSize()
-{
-       printf("Determining String Size \n");
-       // ToDo Implement String size - for now all supported strings are 15.
-       int buffsize = 15;
-       int WideCharBuffSize = 4;
-       int CharBuffSizeFactor = 2;
-       int NarrowCharBuffSize = WideCharBuffSize/CharBuffSizeFactor;
-       char NotNull = ' ';
-       char VeryNull = NULL;
-       char ExtraSpace = NotNull;
-       return buffsize;
-}
-
-int DisplayText()
-{
-                printf("Displaying Text \n");
-                wchar_t const* const message = L"Message text to display goes here";
-                size_t size = DetermineStringSize();
-                wchar_t* buffer = NULL;
-                wcscpy_s(buffer, size, message);
-                return 0;
-}
+    Provide a project name of *DisplayGreeting* and click on **OK**.
 
 
-int main()
-{
-    printf("Calling Displaying Text \n");
-    DisplayText();
-                return 0;
-}
+2. Uncheck the Security Development Lifecylce (SDL) checks.
 
-```
 
-3.  In Visual Studio, click **Build** &gt; **Build Solution**.
+ ![win32 application wizard application settings](images/ttd-time-travel-walkthrough-application-wizard-application-settings.png) 
+
+
+3. Click on **Finish**.
+
+3. Paste in the following text to the DisplayGreeting.cpp pane in Visual Studio.
+
+   ```
+   // DisplayGreeting.cpp : Defines the entry point for the console application.
+   //
+
+   #include "stdafx.h"
+   #include <array>
+   #include <stdio.h>
+   #include <string.h>
+
+   void GetCppConGreeting(wchar_t* buffer, size_t size)
+   {
+	   wchar_t const* const message = L"HELLO FROM THE WINDBG TEAM. GOOD LUCK IN ALL OF YOUR TIME TRAVEL DEBUGGING!";
+
+	   wcscpy_s(buffer, size, message);
+   }
+
+
+   int main()
+   {
+	   std::array <wchar_t, 50> greeting{};
+	   GetCppConGreeting(greeting.data(), sizeof(greeting));
+
+	   wprintf(L"%ls\n", greeting.data());
+
+	   return 0;
+   }
+   ```
+
+4.  In Visual Studio, click **Project** &gt; **DisplayGreeting properties**. Then click on **C/C++** and **Code Generation**.
+
+    Set the following properties.
+
+    | Setting              |  Value                        |
+    |----------------------|-------------------------------|
+    | Security Check       | Disable Security Check (/GS-) |
+    | Basic Runtime Checks |  Default                      |
+
+ 
+    > [!NOTE]
+    > Although these setting are *not* recommended, it is possible to imagine a scenario where someone would advise using these settings to expedite coding or to facilitate certain testing environments.  
+        
+
+5.  In Visual Studio, click **Build** &gt; **Build Solution**.
 
     If all goes well, the build windows should display a message indicating that the build succeeded.
 
-4.  **Locate the built sample app files**
+6.  **Locate the built sample app files**
 
-    In the Solution Explorer, right click on the *DisplayText* project and select **Open Folder in File explorer**.
+    In the Solution Explorer, right click on the *DisplayGreeting* project and select **Open Folder in File explorer**.
     
-    Navigate to the Debug folder that contains the complied exe and symbol pdb file for the sample. For example, you would navigate to *C:\Projects\DisplayText\Debug*, if that's the folder that your projects are stored in. 
+    Navigate to the Debug folder that contains the complied exe and symbol pdb file for the sample. For example, you would navigate to *C:\Projects\DisplayGreeting\Debug*, if that's the folder that your projects are stored in. 
 
-5. **Run the sample app with the code flaw**
+7. **Run the sample app with the code flaw**
 
-    Click on the exe file to run the sample app.
+    Double click on the exe file to run the sample app.
+
+    TBD TBD TBD - update screen shot - left align
 
 
     ![Faulting app dialog box](images/ttd-time-travel-walkthrough-faulting-app-dialog-box.png) 
 
 
-    Click on **Retry**, to see if our app will make any forward progress.
-
     If this dialog box appears, select **Close program**
 
-
    ![Faulting app dialog box](images/ttd-time-travel-walkthrough-program-not-working-dialog-box.png) 
-    
+  
     
     In the next section of the walkthrough, we will record the execution of the sample app to see if we can determine why this exception is occurring. 
 
 
-## <span id="record"></span>Section 2: Record a trace of the "DisplayText" sample
+## <span id="record"></span>Section 2: Record a trace of the "DisplayGreeting" sample
 
-*In Section 2, you will record a trace of the misbehaving sample "DisplayText" app*
+*In Section 2, you will record a trace of the misbehaving sample "DisplayGreeting" app*
 
 To launch the sample app and record a TTD trace, follow these steps. For general information about recording TTD traces, see [Time Travel Debugging - Record a trace](time-travel-debugging-record.md)
 
@@ -173,7 +177,7 @@ To launch the sample app and record a TTD trace, follow these steps. For general
 
    ![Screen shot of WinDbg Preview showing output with 10/16 keyframes indexed](images/ttd-time-travel-walkthrough-windbg-indexed-frames.png)
 
-9. The debugger will automatically index the trace file. Indexing allows for more accurate and faster memory value look ups. This indexing process will take longer for larger trace files.
+9. The debugger will automatically open the trace file and index it. Indexing os a process that enables efficient debugging of the trace file. This indexing process will take longer for larger trace files.
 
     ```
     0:000> !index
@@ -202,21 +206,21 @@ In the next section of this lab we will analyze the trace file to locate the iss
 1.  Add your local symbol location to the symbol path and reload the symbols, by typing the following commands.
 
     ```
-    .sympath+ C:\Projects\DisplayText\Debug
+    .sympath+ C:\Projects\DisplayGreeting\Debug
     .reload /f
     ```
 
 2.  Add your local code location to the source path by typing the following command.
 
     ```
-    .srcpath C:\Projects\DisplayText\DisplayText
+    .srcpath C:\Projects\DisplayGreeting\DisplayGreeting
     ```
 
-3.  On the WinDbg Preview ribbon, select **Source** and **Open Source File**. Locate the DisplayText.cpp file and open it.
+3.  On the WinDbg Preview ribbon, select **Source** and **Open Source File**. Locate the DisplayGreeting.cpp file and open it.
 
 **Examine the exception**
 
-1. When the trace file was loaded is displays information that exception occurred. 
+1. When the trace file was loaded it displays information that an exception occurred. 
 
     ```
     (2b2c.2bbc): Break instruction exception - code 80000003 (first/second chance not available)
@@ -304,7 +308,7 @@ In the next section of this lab we will analyze the trace file to locate the iss
     eax=0000000f ebx=00c20000 ecx=00000000 edx=00000000 esi=013a1046 edi=00effa60
     eip=013a17c1 esp=00eff970 ebp=00effa60 iopl=0         nv up ei pl nz na po nc
     cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
-    DisplayText!DisplayText+0x41:
+    DisplayGreeting!DisplayGreeting+0x41:
     013a17c1 8bf4            mov     esi,esp
     ```
 
@@ -325,7 +329,7 @@ In the next section of this lab we will analyze the trace file to locate the iss
 
 **TTD and breakpoints**
 
-Using breakpoints is a common approach to pause code execution at some event of interest.  Unique to TTD, you can set a breakpoint and travel back in time until that breakpoint is hit after the trace has been recorded. The ability to examine the process state after an issue has happened, to determine the best location for a breakpoint, enables additional debugging workflows unique to TTD. 
+Using breakpoints is a common approach to pause code execution at some event of interest.  TTD allows you to set a breakpoint and travel back in time until that breakpoint is hit after the trace has been recorded. The ability to examine the process state after an issue has happened, to determine the best location for a breakpoint, enables additional debugging workflows unique to TTD. 
 
 **Memory access breakpoints**
 
@@ -375,7 +379,7 @@ Note that you can only set four data breakpoints at any given time and it is up 
     0053fdd4          size = 0xf
     ```
 
-    In this trace *size* is located in memory at 0053fdd4. 
+    In this trace *size* is located in memory at address 0x0053fdd4. 
 
 
 2.  First clear the existing breakpoints, then set the memory access breakpoint with the **ba** command using the address we want to monitor. Lastly use **bl** to list the breakpoints to confirm they are set as intended.
@@ -396,7 +400,7 @@ Note that you can only set four data breakpoints at any given time and it is up 
     eax=0000000f ebx=003db000 ecx=00000000 edx=00cc1a6c esi=00d41046 edi=0053fde8
     eip=00d4174a esp=0053fcf8 ebp=0053fde8 iopl=0         nv up ei pl nz ac pe nc
     cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000216
-    DisplayText!DisplayText+0x3a:
+    DisplayGreeting!DisplayGreeting+0x3a:
     00d4174a c745e000000000  mov     dword ptr [ebp-20h],0 ss:002b:0053fdc8=cccccccc
     ```
 
@@ -417,7 +421,7 @@ Note that you can only set four data breakpoints at any given time and it is up 
     eax=0000000f ebx=003db000 ecx=00000000 edx=00cc1a6c esi=00d41046 edi=0053fde8
     eip=00d41747 esp=0053fcf8 ebp=0053fde8 iopl=0         nv up ei pl nz ac pe nc
     cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000216
-    DisplayText!DisplayText+0x37:
+    DisplayGreeting!DisplayGreeting+0x37:
     00d41747 8945ec          mov     dword ptr [ebp-14h],eax ss:002b:0053fdd4=cccccccc
     ```
 
@@ -431,15 +435,15 @@ Note that you can only set four data breakpoints at any given time and it is up 
 
 **Set the break on access breakpoint for the DetermineStringSize function**        
 
-1.  We will use a similar approach to find the address of the DisplayText!DetermineStringSize function, and set a breakpoint on memory access. Because the function will just be read from memory for execution, we need to set a r - read breakpoint.
+1.  We will use a similar approach to find the address of the DisplayGreeting!DetermineStringSize function, and set a breakpoint on memory access. Because the function will just be read from memory for execution, we need to set a r - read breakpoint.
 
     ```
-    0:000> dx &DisplayText!DetermineStringSize
-    00d41f60          DisplayText!DetermineStringSize (void)
+    0:000> dx &DisplayGreeting!DetermineStringSize
+    00d41f60          DisplayGreeting!DetermineStringSize (void)
     0:000> bc * 
     0:000> ba r4 00d41f60
     0:000> bl
-     0 e Disable Clear  00d41f60 r 4 0001 (0001)  0:**** DisplayText!DetermineStringSize
+     0 e Disable Clear  00d41f60 r 4 0001 (0001)  0:**** DisplayGreeting!DetermineStringSize
     ```
 
 2.  Use g- command to travel back in time until the breakpoint is hit.
@@ -451,7 +455,7 @@ Note that you can only set four data breakpoints at any given time and it is up 
     eax=0000000f ebx=003db000 ecx=00000000 edx=00cc1a6c esi=00d41046 edi=0053fde8
     eip=00d4174a esp=0053fcf8 ebp=0053fde8 iopl=0         nv up ei pl nz ac pe nc
     cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000216
-    DisplayText!DisplayText+0x3a:
+    DisplayGreeting!DisplayGreeting+0x3a:
     00d4174a c745e000000000  mov     dword ptr [ebp-20h],0 ss:002b:0053fdc8=cccccccc
     ``'
 
@@ -493,7 +497,7 @@ Note that you can only set four data breakpoints at any given time and it is up 
     eax=cccccccc ebx=002b1000 ecx=00000000 edx=68d51a6c esi=013a1046 edi=001bf7d8
     eip=013a1735 esp=001bf6b8 ebp=001bf7d8 iopl=0         nv up ei pl nz na po nc
     cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
-    DisplayText!DetermineStringSize+0x25:
+    DisplayGreeting!DetermineStringSize+0x25:
     013a1735 c745ec04000000  mov     dword ptr [ebp-14h],4 ss:002b:001bf7c4=cccccccc
     ```
       
