@@ -135,9 +135,6 @@ The lab has the following three sections.
 
     Double click on the exe file to run the sample app.
 
-    TBD TBD TBD - update screen shot - left align
-
-
     ![Faulting app dialog box](images/ttd-time-travel-walkthrough-faulting-app-dialog-box.png) 
 
 
@@ -159,7 +156,7 @@ To launch the sample app and record a TTD trace, follow these steps. For general
 
 2. In WinDbg Preview, select **File** > **Start debugging** > **Launch executable (advanced)**.
 
-3. Enter the path to the user mode executable that you wish to record or select **Browse** to navigate to the executable. For information about working with the Launch Executable menu in WinDbg Preview, see [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md).
+3. Enter the path to the user mode executable that you wish to record or select **Browse** to navigate to the executable. For information about working with the launch executable menu in WinDbg Preview, see [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md).
 
 
     ![Screen shot of WinDbg Preview showing start recording checkbox in launch executable (advanced) screen](images/ttd-time-travel-walkthrough-recording-app.png)
@@ -175,15 +172,14 @@ To launch the sample app and record a TTD trace, follow these steps. For general
 
 8. The program crashes and the trace file will be closed and written out to disk. 
 
-   ![Screen shot of WinDbg Preview showing output with 10/16 keyframes indexed](images/ttd-time-travel-walkthrough-windbg-indexed-frames.png)
+   ![Screen shot of WinDbg Preview showing output with 1/1 keyframes indexed](images/ttd-time-travel-walkthrough-windbg-indexed-frames.png)
 
 9. The debugger will automatically open the trace file and index it. Indexing os a process that enables efficient debugging of the trace file. This indexing process will take longer for larger trace files.
 
     ```
     0:000> !index
-    Indexed 10/15 keyframes
-    Indexed 15/15 keyframes
-    Successfully created the index in 525ms.
+    Indexed 1/1 keyframes
+    Successfully created the index in 95ms.
      ```
    
    > [!NOTE]
@@ -216,20 +212,22 @@ In the next section of this lab we will analyze the trace file to locate the iss
     .srcpath C:\Projects\DisplayGreeting\DisplayGreeting
     ```
 
-3.  On the WinDbg Preview ribbon, select **Source** and **Open Source File**. Locate the DisplayGreeting.cpp file and open it.
+3. To be able to view the state of the stack and local variables, on the WinDbg Preview ribbon, select **View** and **Locals** and **View** and **Stack**. Organize the windows to allow you to view them, the source code and the command windows at the same time.
+
+4.  On the WinDbg Preview ribbon, select **Source** and **Open Source File**. Locate the DisplayGreeting.cpp file and open it.
 
 **Examine the exception**
 
 1. When the trace file was loaded it displays information that an exception occurred. 
 
     ```
-    (2b2c.2bbc): Break instruction exception - code 80000003 (first/second chance not available)
+    2fa8.1fdc): Break instruction exception - code 80000003 (first/second chance not available)
     Time Travel Position: 15:0
-    eax=662ea6e0 ebx=00000000 ecx=76f566ac edx=68fa4afc esi=68fa137c edi=0116b000
-    eip=76f566ac esp=012ff668 ebp=012ff8b8 iopl=0         nv up ei pl nz na po nc
-    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+    eax=68ef8100 ebx=00000000 ecx=77a266ac edx=69614afc esi=6961137c edi=004da000
+    eip=77a266ac esp=0023f9b4 ebp=0023fc04 iopl=0         nv up ei pl nz na pe nc
+    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000206
     ntdll!LdrpInitializeProcess+0x1d1c:
-    76f566ac 83bdbcfeffff00  cmp     dword ptr [ebp-144h],0 ss:002b:012ff774=00000000
+    77a266ac 83bdbcfeffff00  cmp     dword ptr [ebp-144h],0 ss:002b:0023fac0=00000000
     ```
 2. Use the dx command to list all of the events in the recording. The exception event is listed in the events.
 
@@ -240,88 +238,110 @@ In the next section of this lab we will analyze the trace file to locate the iss
     [0x2d]           : Exception at 9BDC:0
     [0x2e]           : Thread terminated at 9C43:0
     ...
+    
     ```
 
 3. Click on the Exception event to display information about that TTD event. 
 
     ```
-    0:000> dx -r1 @$curprocess.TTD.Events[45]
-    @$curprocess.TTD.Events[45]                 : Exception at 9E0D:0
-    Type             : Exception
-    Position         : 9E0D:0 [Time Travel]
-    Exception        : Exception of type Hardware at PC: 0XC42142
+    0:000> dx -r1 @$curprocess.TTD.Events[17]
+    @$curprocess.TTD.Events[17]                 : Exception at 68:0
+        Type             : Exception
+        Position         : 68:0 [Time Travel]
+        Exception        : Exception of type Hardware at PC: 0X540020
     ```
 
-4. Click on the [Time Travel] link to move to that position.
+
+4. Click on the Exception field to further drill down on the exception data. 
 
     ```
-    0:000> dx @$curprocess.TTD.Events[45].Position.SeekTo()
-    Setting position: 9E56:0
-    @$curprocess.TTD.Events[45].Position.SeekTo()
+    0:000> dx -r1 @$curprocess.TTD.Events[17].Exception
+    @$curprocess.TTD.Events[17].Exception                 : Exception of type Hardware at PC: 0X540020
+        Position         : 68:0 [Time Travel]
+        Type             : Hardware
+        ProgramCounter   : 0x540020
+        Code             : 0xc0000005
+        Flags            : 0x0
+        RecordAddress    : 0x0
+    ```
 
-    ...
+   The exception data indicates that this is a Hardware fault thrown by the CPU. It also provides the exception code of 0xc0000005 that indicates that this is an access violation. This is typically indicates that we were attempting to write to memory that we don't have access to.
 
-    (a2c.1278): Break instruction exception - code 80000003 (first/second chance not available)
-    Time Travel Position: 9E56:0
-    eax=00000001 ebx=002b1000 ecx=f5c607b2 edx=00000004 esi=001bf7e0 edi=001bf8d0
-    eip=68cd2142 esp=001bf778 ebp=001bf7b8 iopl=0         nv up ei pl zr na pe nc
+5. Click on the [Time Travel] link in the exception event to move to that position in the trace.
+
+    ```
+    0:000> dx @$curprocess.TTD.Events[17].Exception.Position.SeekTo()
+    Setting position: 68:0
+
+    @$curprocess.TTD.Events[17].Exception.Position.SeekTo()
+    (16c8.1f28): Break instruction exception - code 80000003 (first/second chance not available)
+    Time Travel Position: 68:0
+    eax=00000000 ebx=00cf8000 ecx=99da9203 edx=69cf1a6c esi=00191046 edi=00191046
+    eip=00540020 esp=00effe4c ebp=00520055 iopl=0         nv up ei pl zr na pe nc
     cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
-    ucrtbased!common_tcscpy_s<wchar_t>+0x52:
-    68cd2142 cc              int     3
+    00540020 ??              
+    ```
+    
+    Of note is that the stack and base pointer are pointing to two very differnet addresses
+
+    ```
+    esp=00effe4c ebp=00520055
     ```
 
+    This could indicate that stack corruption - possibly a function returned and then corrupted the stack. The goal is to get back to before the CPU state was corrupted and see if we can determine when the stack corruption occurred.
 
 
 **Examine the local variables and set a code breakpoint**
 
-1.  Use the **dv** command to display the current local variables in memory.
-
-    ```
-    0:000> dv
-      _Expr_val = 0n0
-    destination = 0x00000000 ""
-    size_in_elements = 0xf
-    source = 0x00d475d0 "Message text to display goes here"
-    available = 0xcccccccc
-    destination_it = 0xcccccccc "--- memory read error at address 0xcccccccc ---"
-    source_it = 0xcccccccc "--- memory read error at address 0xcccccccc ---"
-    ```
-
-    The output shows that there is likely a problem with the destination_it and source\_it.
-
-2. Looking at our code, it looks like the exception may be caused by the bad parameters being passed to the wcscpy_s in this line of code.
-
-    ```
-    wcscpy_s(buffer, size, message);
-    ```
-
-3. To investigate further we will set a breakpoint by clicking on the wcscpy_s line in the source window.
-
-    ![Screen shot of source Window showing breakpoint set on wcscpy_s](images/ttd-time-travel-walkthrough-source-window-breakpoint.png)
+At the point of failure it is common to end up a fews steps after the true cause in error handling code. WIth time travel we can go back an instruction at a time to locate investigate the true cause.
 
 
-4. Use g- to travel back until the breakpoint is hit.
+1. From the **Home** ribbon use the  **Step Into Back** command to step back three instructions. As you do this, continue to examine the stack and memory windows.
 
-    ```
-    Breakpoint 0 hit
-    Time Travel Position: 5B:AF
-    eax=0000000f ebx=00c20000 ecx=00000000 edx=00000000 esi=013a1046 edi=00effa60
-    eip=013a17c1 esp=00eff970 ebp=00effa60 iopl=0         nv up ei pl nz na po nc
-    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
-    DisplayGreeting!DisplayGreeting+0x41:
-    013a17c1 8bf4            mov     esi,esp
-    ```
+The command window will display the time travel postion and the registers as you step back three instructions.
 
-5. Use the **dv** command to display the current local variables in memory.
+```
+0:000> t-
+Time Travel Position: 67:40
+eax=00000000 ebx=00cf8000 ecx=99da9203 edx=69cf1a6c esi=00191046 edi=00191046
+eip=00540020 esp=00effe4c ebp=00520055 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+00540020 ??              ???
 
-    ```
-    0:000> dv
-         buffer = 0x00000000 ""
-           size = 0xf
-        message = 0x00d475d0 "Message text to display goes here"
-    ```
+0:000> t-
+Time Travel Position: 67:3F
+eax=00000000 ebx=00cf8000 ecx=99da9203 edx=69cf1a6c esi=00191046 edi=00191046
+eip=0019193d esp=00effe48 ebp=00520055 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+DisplayGreeting!main+0x4d:
+0019193d c3    
 
-6. Looking at the value of *size* it is 0xf - 15 and our string looks to be 32 in length, so this looks like the reason that the wscpy is failing. But how did *size* get set to 15? To answer that question, we will set a break on memory access breakpoint. 
+0:000> t-
+Time Travel Position: 67:39
+eax=0000004c ebx=00cf8000 ecx=99da9203 edx=69cf1a6c esi=00191046 edi=00191046
+eip=00191935 esp=00effd94 ebp=00effe44 iopl=0         nv up ei pl nz ac po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000212
+DisplayGreeting!main+0x45:
+```
+
+2. At this point in the trace our  stack and base pointerhave values that make more sense, so it appears that we have getting closer to the point in the code where the corruption occurred.
+
+```
+esp=00effd94 ebp=00effe44
+```
+
+Also of interest is that the locals window contains values from our target app and the source code window is heighlighting the line of code that was being executed at this point in the trace. TBD TBD TBD - Or has just executed?
+
+   ![Screen shot of WinDbg Preview showing locals windows with memory ascii output and source code window](images/ttd-time-travel-walkthrough-locals-window.png)
+
+3. To further investigate, we can open up a memory window to view the contents near the base pointer memory address of *0x00effe44*.
+
+4. To display the associated ASCII characters, from the memory ribbon, select **Text** and then **ASCII**
+
+   ![Screen shot of WinDbg Preview showing memory ascii output and source code window](images/ttd-time-travel-walkthrough-memory-ascii.png)
+
+5. Instead of the the base pointer pointing to an instruction it is pointing to our message text. So something is not right here, this may be close to the point in time that we have corrupted the stack. To further investigate we will set a breakpoint. 
+
 
     > [!NOTE]
     > In this very small sample it would be pretty easy to just look in the code, but if there are hundreds of lines of code and dozens of subroutines the techniques described here can be used to decrease the time necessary to locate the issue.
@@ -370,28 +390,20 @@ ba <access> <size> <address> {options}
 Note that you can only set four data breakpoints at any given time and it is up to you to make sure that you are aligning your data correctly or you won’t trigger the breakpoint (words must end in addresses divisible by 2, dwords must be divisible by 4, and quadwords by 0 or 8).
 
 
-**Set the break on access breakpoint for the *size* variable**    
+**Set the break on memory access breakpoint for the base pointer**    
 
-1.  Use the **dx** command to examine the symbols associated with *size*. 
-
-    ```
-    0:000> dx &size
-    0053fdd4          size = 0xf
-    ```
-
-    In this trace *size* is located in memory at address 0x0053fdd4. 
-
-
-2.  First clear the existing breakpoints, then set the memory access breakpoint with the **ba** command using the address we want to monitor. Lastly use **bl** to list the breakpoints to confirm they are set as intended.
+1.  At this point in the trace we would like to set a breakpoint on write memory access to base pointer - ebp which in our example is 00effe44. To do this use the **ba** command using the address we want to monitor. We want to monitor writes for four bytes, so we specify w4. 
 
     ```
-    0:000> bc *
-    0:000> ba w4 0053fdd4
-    0:000> bl
-      0 e Disable Clear  0053fdd4 w 4 0001 (0001)  0:**** 
+    0:000> ba w4 00effe44
     ```
 
-3.  Use g- command to travel back in time until the breakpoint is hit.
+2. Select **View** and then **Breakpoints** to confirm they are set as intended.
+
+   ![Screen shot of WinDbg Preview showing memory ascii output and source code window](images/ttd-time-travel-walkthrough-view-breakpoints.png)
+
+
+3.  From the Home menue, select **Go Back**  to travel back in time until the breakpoint is hit.
 
     ```
     0:000> g-
@@ -404,14 +416,19 @@ Note that you can only set four data breakpoints at any given time and it is up 
     00d4174a c745e000000000  mov     dword ptr [ebp-20h],0 ss:002b:0053fdc8=cccccccc
     ```
 
-4. Use the **dv** command to display the current local variables in memory.
 
-    ```
-    0:000> dv
-          buffer = 0x00000000 ""
-            size = 0xf
-         message = 0x00d475d0 "Message text to display goes here"
-    ```
+4. At this point we can examine the program stack to see what code is active. From the **View** ribbon select **Stack**. 
+
+
+   ![Screen shot of WinDbg Preview stack window](images/ttd-time-travel-walkthrough-stack-window.png)
+
+
+The stack shows that that Greeting!main calls Greeting!GetCppConGreeting.
+
+If we look at the Locals window we can see that the *message* variable has only part of the message, while the buffer has oonly part of the message. 
+
+   ![Screen shot of WinDbg Preview locals window](images/ttd-time-travel-walkthrough-locals-window.png)
+
 
 5. Single step backwards until the faulting code in question comes into scope. In this case, we can use p- command to travel back one step as the breakpoint leaves us one step after the code of interest has executed.
 
@@ -507,6 +524,41 @@ Note that you can only set four data breakpoints at any given time and it is up 
     // ToDo Implement String size - for now all supported strings are 15.
        int buffsize = 15;
     ```
+
+
+**TBD TBD TBD**
+
+Keep any of this?
+
+
+3. To investigate further we will set a breakpoint by clicking on the wcscpy_s line in the source window.
+
+    ![Screen shot of source Window showing breakpoint set on wcscpy_s](images/ttd-time-travel-walkthrough-source-window-breakpoint.png)
+
+
+4. Use g- to travel back until the breakpoint is hit.
+
+    ```
+    Breakpoint 0 hit
+    Time Travel Position: 5B:AF
+    eax=0000000f ebx=00c20000 ecx=00000000 edx=00000000 esi=013a1046 edi=00effa60
+    eip=013a17c1 esp=00eff970 ebp=00effa60 iopl=0         nv up ei pl nz na po nc
+    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+    DisplayGreeting!DisplayGreeting+0x41:
+    013a17c1 8bf4            mov     esi,esp
+    ```
+
+5. Use the **dv** command to display the current local variables in memory.
+
+    ```
+    0:000> dv
+         buffer = 0x00000000 ""
+           size = 0xf
+        message = 0x00d475d0 "Message text to display goes here"
+    ```
+
+6. Looking at the value of *size* it is 0xf - 15 and our string looks to be 32 in length, so this looks like the reason that the wscpy is failing. But how did *size* get set to 15? To answer that question, we will set a break on memory access breakpoint. 
+
 
 
 **Use the TTD.Memory objects to view memory access**    
