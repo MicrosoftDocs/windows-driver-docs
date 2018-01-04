@@ -13,7 +13,9 @@ ms.technology: windows-devices
 
 # Network Drivers Prior to Windows Vista
 
-To access the design guide and reference topics for Windows 2000 and Windows XP network drivers, see [this link]. Prior to Windows Vista, network drivers used NDIS 5.1, which was superceded in Windows Vista and later by NDIS 6.X.
+To access the design guide and reference topics for Windows 2000 and Windows XP network drivers, see [Network Drivers Prior to Windows Vista](https://msdn.microsoft.com/library/ff562407). 
+
+Network drivers prior to Windows Vista used NDIS 5.1, which was superceded in Windows Vista and later by NDIS 6.X.
 
 ## Related topics
 
