@@ -174,7 +174,7 @@ To launch the sample app and record a TTD trace, follow these steps. For general
 
    ![Screen shot of WinDbg Preview showing output with 1/1 keyframes indexed](images/ttd-time-travel-walkthrough-windbg-indexed-frames.png)
 
-9. The debugger will automatically open the trace file and index it. Indexing os a process that enables efficient debugging of the trace file. This indexing process will take longer for larger trace files.
+9. The debugger will automatically open the trace file and index it. Indexing is a process that enables efficient debugging of the trace file. This indexing process will take longer for larger trace files.
 
     ```
     0:000> !index
@@ -241,9 +241,8 @@ In the next section of this lab we will analyze the trace file to locate the iss
     
     ```
 
-
 > [!NOTE]
-> In this walkthough three periods are used to indicate that extraneous output was removed. 
+> In this walkthrough three periods are used to indicate that extraneous output was removed. 
 >
 
 
@@ -271,7 +270,7 @@ In the next section of this lab we will analyze the trace file to locate the iss
         RecordAddress    : 0x0
     ```
 
-   The exception data indicates that this is a Hardware fault thrown by the CPU. It also provides the exception code of 0xc0000005 that indicates that this is an access violation. This is typically indicates that we were attempting to write to memory that we don't have access to.
+   The exception data indicates that this is a Hardware fault thrown by the CPU. It also provides the exception code of 0xc0000005 that indicates that this is an access violation. This typically indicates that we were attempting to write to memory that we don't have access to.
 
 5. Click on the [Time Travel] link in the exception event to move to that position in the trace.
 
@@ -288,23 +287,23 @@ In the next section of this lab we will analyze the trace file to locate the iss
     00540020 ??              
     ```
     
-    Of note in this output is that the stack and base pointer are pointing to two very differnet addresses.
+    Of note in this output is that the stack and base pointer are pointing to two very different addresses.
 
     ```
     esp=00effe4c ebp=00520055
     ```
 
-    This could indicate that stack corruption - possibly a function returned and then corrupted the stack. To validat ethis, we nned to travel back to before the CPU state was corrupted and see if we can determine when the stack corruption occurred.
+    This could indicate that stack corruption - possibly a function returned and then corrupted the stack. To validate this, we need to travel back to before the CPU state was corrupted and see if we can determine when the stack corruption occurred.
 
 
 **Examine the local variables and set a code breakpoint**
 
-At the point of failure it is common to end up a fews steps after the true cause in error handling code. WIth time travel we can go back an instruction at a time, to locate investigate the true root cause.
+At the point of failure in trace it is common to end up a fews steps after the true cause in error handling code. With time travel we can go back an instruction at a time, to locate investigate the true root cause.
 
 
 1. From the **Home** ribbon use the  **Step Into Back** command to step back three instructions. As you do this, continue to examine the stack and memory windows.
 
-The command window will display the time travel postion and the registers as you step back three instructions.
+The command window will display the time travel position and the registers as you step back three instructions.
 
 ```
 0:000> t-
@@ -331,7 +330,7 @@ DisplayGreeting!main+0x45:
 ```
 
   > [!NOTE]
-    > In this walkthrough, the command output shows the commands that can be used instead of the UI Menu options to alow users with a command line usage preferenece to use command line commands. 
+    > In this walkthrough, the command output shows the commands that can be used instead of the UI Menu options to allow users with a command line usage preference to use command line commands. 
 
 2. At this point in the trace our  stack and base pointer have values that make more sense, so it appears that we have getting closer to the point in the code where the corruption occurred.
 
@@ -339,17 +338,17 @@ DisplayGreeting!main+0x45:
 esp=00effd94 ebp=00effe44
 ```
 
-Also of interest is that the locals window contains values from our target app and the source code window is heighlighting the line of code that was just executed at this point in the trace. TBD TBD TBD - Or is ready to be executed?
+Also of interest is that the locals window contains values from our target app and the source code window is highlighting the line of code that was just executed at this point in the trace. TBD TBD TBD - Or is ready to be executed?
 
 ![Screen shot of WinDbg Preview showing locals windows with memory ascii output and source code window](images/ttd-time-travel-walkthrough-locals-window.png)
 
 3. To further investigate, we can open up a memory window to view the contents near the base pointer memory address of *0x00effe44*.
 
-4. To display the associated ASCII characters, from the memory ribbon, select **Text** and then **ASCII**
+4. To display the associated ASCII characters, from the Memory ribbon, select **Text** and then **ASCII**
 
    ![Screen shot of WinDbg Preview showing memory ascii output and source code window](images/ttd-time-travel-walkthrough-memory-ascii.png)
 
-5. Instead of the the base pointer pointing to an instruction it is pointing to our message text. So something is not right here, this may be close to the point in time that we have corrupted the stack. To further investigate we will set a breakpoint. 
+5. Instead of the base pointer pointing to an instruction it is pointing to our message text. So something is not right here, this may be close to the point in time that we have corrupted the stack. To further investigate we will set a breakpoint. 
 
 
     > [!NOTE]
@@ -436,7 +435,7 @@ Note that you can only set four data breakpoints at any given time and it is up 
    ![Screen shot of WinDbg Preview stack window](images/ttd-time-travel-walkthrough-stack-window.png)
 
 
-As it is very unlikley that the Microsoft provided wscpy_s() function would have a code bug like this, we look further in the stack. The stack shows that that Greeting!main calls Greeting!GetCppConGreeting. In our very small code sample we could just open the code at this point and likely find the error pretty easily. But to illustrate the techniques that can be used with larger, more complex program, we will set a breakpoint to investigate further. 
+As it is very unlikely that the Microsoft provided wscpy_s() function would have a code bug like this, we look further in the stack. The stack shows that that Greeting!main calls Greeting!GetCppConGreeting. In our very small code sample we could just open the code at this point and likely find the error pretty easily. But to illustrate the techniques that can be used with larger, more complex program, we will set a new breakpoint to investigate further. 
 
 
 **Set the break on access breakpoint for the GetCppConGreeting function**        
@@ -508,13 +507,13 @@ As it is very unlikley that the Microsoft provided wscpy_s() function would have
     ```
 
 
-9. It looks like we have found the root cause. The *greeting* array that we declared is 50 charcters in length, while the sizeof(greeting) that we pass into GetCppConGreeting is 0x64, 100).  
+9. It looks like we have found the root cause. The *greeting* array that we declared is 50 characters in length, while the sizeof(greeting) that we pass into GetCppConGreeting is 0x64, 100).  
 
 
    ![WinDbg Preview showing the Display greeting code with a watch locals window showing X64](images/ttd-time-travel-walkthrough-code-with-watch-locals.png)
 
 
-    As we look at the size issue further, we also notice that the the message is 75 characters in length.
+    As we look at the size issue further, we also notice that the message is 75 characters in length.
 
     ```
     HELLO FROM THE WINDBG TEAM. GOOD LUCK IN ALL OF YOUR TIME TRAVEL DEBUGGING!
@@ -536,7 +535,7 @@ As it is very unlikley that the Microsoft provided wscpy_s() function would have
 **Setting a breakpoint using the source window**
 
 
-1. It is also possible to set a breakpoint by clicking on any line of code. For example clicking on the right side of the std:array defintion line in the source window will set a breakpoint there.
+1. It is also possible to set a breakpoint by clicking on any line of code. For example clicking on the right side of the std:array definition line in the source window will set a breakpoint there.
 
     ![Screen shot of source Window showing breakpoint set on wcscpy_s](images/ttd-time-travel-walkthrough-source-window-breakpoint.png)
 
@@ -571,7 +570,7 @@ As it is very unlikley that the Microsoft provided wscpy_s() function would have
 
 **Set the break on access breakpoint for the *greeting* variable**    
 
-An alternative way to perform this investigation, would be to set a breakpoint on suspect variables and examine what code is changing them. For example to set a breakpoint on the size varible in the GetCppConGreeting method, use this procedure.
+An alternative way to perform this investigation, would be to set a breakpoint on suspect variables and examine what code is changing them. For example, to set a breakpoint on the greeting variable in the GetCppConGreeting method, use this procedure.
 
 This portion of the walkthrough assumes that you are still located at the breakpoint from the previous section. 
 
@@ -591,7 +590,7 @@ This portion of the walkthrough assumes that you are still located at the breakp
 2. Use the breakpoints window to clear any existing breakpoint by right clicking on the existing breakpoint and selecting **Remove**.
 
 
-3.  Set the breakpoint with the **ba** command using the memory address we want to monitor. 
+3.  Set the breakpoint with the **ba** command using the memory address we want to monitor for write access. 
 
     ```
     ba w4 ddf800
@@ -612,9 +611,7 @@ This portion of the walkthrough assumes that you are still located at the breakp
     77a266ac 83bdbcfeffff00  cmp     dword ptr [ebp-144h],0 ss:002b:00ddf4c4=00000000
     ```
 
-
 5. On the Home menu, select **Go** to travel forward to the first point of memory access of the greeting array. 
-
 
     ```
     0:000> g-
@@ -627,9 +624,8 @@ This portion of the walkthrough assumes that you are still located at the breakp
     013a1735 c745ec04000000  mov     dword ptr [ebp-14h],4 ss:002b:001bf7c4=cccccccc
     ```
 
-   Alternativly we could have traveled to the end of the trace, and worked in reverse through the code to find that last point in the trace that the array was written to.
+   Alternatively, we could have traveled to the end of the trace, and worked in reverse through the code to find that last point in the trace that the array memory location was written to.
       
-
 
 **Use the TTD.Memory objects to view memory access**    
 
@@ -664,7 +660,7 @@ Another way to determine at what points in the trace memory has been accessed, i
         ...         
     ```
 
-2. Click on any of the occurances.
+3. Click on any of the occurrences to display more information about that occurence of memory access.
 
     ```
     0:000> dx -r1 @$cursession.TTD.Memory(0xddf800,0xddf804, "rw")[5]
@@ -681,7 +677,7 @@ Another way to determine at what points in the trace memory has been accessed, i
         Value            : 0xddf818
     ```
 
-3. Click on [Time Travel] to position the trace at the point in time.
+4. Click on [Time Travel] to position the trace at the point in time.
 
     ```
     0:000> dx @$cursession.TTD.Memory(0xddf800,0xddf804, "rw")[5].TimeStart.SeekTo()
@@ -695,7 +691,7 @@ Another way to determine at what points in the trace memory has been accessed, i
     6900432f 51              push    ecx
    ```
 
-4. If we are interested in the last occurrence of read/write memory access in the trace we can click on the last item in the list or append the .Last() function to the end of the dx command.
+5. If we are interested in the last occurrence of read/write memory access in the trace we can click on the last item in the list or append the .Last() function to the end of the dx command.
 
     ```
     0:000> dx -r1 @$cursession.TTD.Memory(0xddf800,0xddf804, "rw").Last()
@@ -712,7 +708,7 @@ Another way to determine at what points in the trace memory has been accessed, i
         Value            : 0x45
     ```
 
-5. We could then click on [Time Travel] to move to that position in the trace and look further at the code execution at that point, using the techniques described earlier in this lab.
+6. We could then click on [Time Travel] to move to that position in the trace and look further at the code execution at that point, using the techniques described earlier in this lab.
 
 For more information about the TTD.Memory objects, see [TTD.Memory Object](time-travel-debugging-object-model.md).
 
@@ -721,7 +717,7 @@ For more information about the TTD.Memory objects, see [TTD.Memory Object](time-
 
 In this very small sample the issue could have been determined by looking at the few lines of code, but in larger programs the techniques presented here can be used to decrease the time necessary to locate an issue. 
 
-Once a trace is recorded, the trace and repro steps can be shared, and the issue will be reproducible on demand.  
+Once a trace is recorded, the trace and repro steps can be shared, and the issue will be reproducible on demand on any PC.  
 
 
 ---
