@@ -282,18 +282,18 @@ In the next section of this lab we will analyze the trace file to locate the iss
     00540020 ??              
     ```
     
-    Of note is that the stack and base pointer are pointing to two very differnet addresses
+    Of note in this output is that the stack and base pointer are pointing to two very differnet addresses.
 
     ```
     esp=00effe4c ebp=00520055
     ```
 
-    This could indicate that stack corruption - possibly a function returned and then corrupted the stack. The goal is to get back to before the CPU state was corrupted and see if we can determine when the stack corruption occurred.
+    This could indicate that stack corruption - possibly a function returned and then corrupted the stack. To validat ethis, we nned to travel back to before the CPU state was corrupted and see if we can determine when the stack corruption occurred.
 
 
 **Examine the local variables and set a code breakpoint**
 
-At the point of failure it is common to end up a fews steps after the true cause in error handling code. WIth time travel we can go back an instruction at a time to locate investigate the true cause.
+At the point of failure it is common to end up a fews steps after the true cause in error handling code. WIth time travel we can go back an instruction at a time, to locate investigate the true root cause.
 
 
 1. From the **Home** ribbon use the  **Step Into Back** command to step back three instructions. As you do this, continue to examine the stack and memory windows.
@@ -324,15 +324,15 @@ cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000212
 DisplayGreeting!main+0x45:
 ```
 
-2. At this point in the trace our  stack and base pointerhave values that make more sense, so it appears that we have getting closer to the point in the code where the corruption occurred.
+2. At this point in the trace our  stack and base pointer have values that make more sense, so it appears that we have getting closer to the point in the code where the corruption occurred.
 
 ```
 esp=00effd94 ebp=00effe44
 ```
 
-Also of interest is that the locals window contains values from our target app and the source code window is heighlighting the line of code that was being executed at this point in the trace. TBD TBD TBD - Or has just executed?
+Also of interest is that the locals window contains values from our target app and the source code window is heighlighting the line of code that was just executed at this point in the trace. TBD TBD TBD - Or is ready to be executed?
 
-   ![Screen shot of WinDbg Preview showing locals windows with memory ascii output and source code window](images/ttd-time-travel-walkthrough-locals-window.png)
+![Screen shot of WinDbg Preview showing locals windows with memory ascii output and source code window](images/ttd-time-travel-walkthrough-locals-window.png)
 
 3. To further investigate, we can open up a memory window to view the contents near the base pointer memory address of *0x00effe44*.
 
@@ -400,10 +400,10 @@ Note that you can only set four data breakpoints at any given time and it is up 
 
 2. Select **View** and then **Breakpoints** to confirm they are set as intended.
 
-   ![Screen shot of WinDbg Preview showing memory ascii output and source code window](images/ttd-time-travel-walkthrough-view-breakpoints.png)
+   ![WinDbg Preview showing breakpoints window with one breakpoint](images/ttd-time-travel-walkthrough-view-breakpoints.png)
 
 
-3.  From the Home menue, select **Go Back**  to travel back in time until the breakpoint is hit.
+3.  From the Home menu, select **Go Back**  to travel back in time until the breakpoint is hit.
 
     ```
     0:000> g-
@@ -416,6 +416,9 @@ Note that you can only set four data breakpoints at any given time and it is up 
     00d4174a c745e000000000  mov     dword ptr [ebp-20h],0 ss:002b:0053fdc8=cccccccc
     ```
 
+5. Looking at the Locals window we can see that the *destination* variable has only part of the message, while the *source* has contains all of it. This information supports the idea that the stack was corrupted. 
+
+   ![Screen shot of WinDbg Preview locals window](images/ttd-time-travel-walkthrough-locals-window.png)
 
 4. At this point we can examine the program stack to see what code is active. From the **View** ribbon select **Stack**. 
 
@@ -423,89 +426,143 @@ Note that you can only set four data breakpoints at any given time and it is up 
    ![Screen shot of WinDbg Preview stack window](images/ttd-time-travel-walkthrough-stack-window.png)
 
 
-The stack shows that that Greeting!main calls Greeting!GetCppConGreeting.
-
-If we look at the Locals window we can see that the *message* variable has only part of the message, while the buffer has oonly part of the message. 
-
-   ![Screen shot of WinDbg Preview locals window](images/ttd-time-travel-walkthrough-locals-window.png)
+As it is very unlikley that the Microsoft provided wscpy_s() function would have a code bug like this, we look further in the stack. The stack shows that that Greeting!main calls Greeting!GetCppConGreeting. In our very small code sample we could just open the code at this point and likely find the error pretty easily. But to illustrate the techniques that can be used with larger, more complex program, we will set a breakpoint to investigate further. 
 
 
-5. Single step backwards until the faulting code in question comes into scope. In this case, we can use p- command to travel back one step as the breakpoint leaves us one step after the code of interest has executed.
+**Set the break on access breakpoint for the GetCppConGreeting function**        
 
-    ```
-    0:000> p-
-    Time Travel Position: 5B:91
-    eax=0000000f ebx=003db000 ecx=00000000 edx=00cc1a6c esi=00d41046 edi=0053fde8
-    eip=00d41747 esp=0053fcf8 ebp=0053fde8 iopl=0         nv up ei pl nz ac pe nc
-    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000216
-    DisplayGreeting!DisplayGreeting+0x37:
-    00d41747 8945ec          mov     dword ptr [ebp-14h],eax ss:002b:0053fdd4=cccccccc
-    ```
+1. Use the breakpoints window to clear the existing breakpoint by right clicking on the existing breakpoint and selecting **Remove**.
 
-6. Use the source window to examine the line of code that we have hit.
+2. Determine the address of the DisplayGreeting!DetermineStringSize function using the **dx** command. 
 
     ```
-    size_t size = DetermineStringSize();
-    ```
-    In this line of code we see that *size* is set by calling DetermineStringSize(). 
-
-
-**Set the break on access breakpoint for the DetermineStringSize function**        
-
-1.  We will use a similar approach to find the address of the DisplayGreeting!DetermineStringSize function, and set a breakpoint on memory access. Because the function will just be read from memory for execution, we need to set a r - read breakpoint.
-
-    ```
-    0:000> dx &DisplayGreeting!DetermineStringSize
-    00d41f60          DisplayGreeting!DetermineStringSize (void)
-    0:000> bc * 
-    0:000> ba r4 00d41f60
-    0:000> bl
-     0 e Disable Clear  00d41f60 r 4 0001 (0001)  0:**** DisplayGreeting!DetermineStringSize
+    0:000> dx &DisplayGreeting!GetCppConGreeting
+    &DisplayGreeting!GetCppConGreeting                 : 0xb61720 [Type: void (__cdecl*)(wchar_t *,unsigned int)]
+        [Type: void __cdecl(wchar_t *,unsigned int)]
     ```
 
-2.  Use g- command to travel back in time until the breakpoint is hit.
+3. Use the **ba** command to set a breakpoint on memory access. Because the function will just be read from memory for execution, we need to set a r - read breakpoint.
 
     ```
-    0:000> g-
-    Breakpoint 0 hit
-    Time Travel Position: 5B:92
-    eax=0000000f ebx=003db000 ecx=00000000 edx=00cc1a6c esi=00d41046 edi=0053fde8
-    eip=00d4174a esp=0053fcf8 ebp=0053fde8 iopl=0         nv up ei pl nz ac pe nc
-    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000216
-    DisplayGreeting!DisplayGreeting+0x3a:
-    00d4174a c745e000000000  mov     dword ptr [ebp-20h],0 ss:002b:0053fdc8=cccccccc
-    ``'
-
-3. As the DetermineStringSize function is not complex, we could just look at the code to find the issue. If this was a large or complex function, we could look at the last line of code that returns the final value to see how that value is set.
-
-    ```
-    return buffsize;
-    ```
-    
-    This is where the incorrect value of 0xf is returned, but how did buffsize get set to the incorrect value? We can set another breakpoint to find out.
-
-
-**Set the break on access breakpoint for *buffsize* variable**    
-
-1.  Use the **dx** command to examine  *buffsize*. 
-
-    ```
-    0:000> dx &buffsize
-    0053fde0          buffsize = 0n13923792
+    0:000> ba r4 b61720
     ```
 
-    In this trace, *buffsize* is located in memory at 0053fdd4. 
+4. Confirm that a Hardware Read Breakpoint is active in the breakpoints Window.
+
+   ![WinDbg Preview showing breakpoints window with one hardware write breakpoint](images/ttd-time-travel-walkthrough-hardware-write-breakpoint.png)
 
 
-2.  Set the breakpoint with the **ba** command using the address we now want to monitor. 
+5. As we are wondering about the size of the greeting string we will set a watch window to display the value of sizeof(greeting). From the View ribbon, select **Watch** and provide *sizeof(greeting)*.
+
+![WinDbg Preview showing a watch locals window](images/ttd-time-travel-watch-locals.png)
+
+6. On the Time Travel menu, use **Time travel to start** command to move to the start of the trace.
 
     ```
-    bc *
+    0:000> !tt 0
+    Setting position to the beginning of the trace
+    Setting position: 15:0
+    (1e5c.710): Break instruction exception - code 80000003 (first/second chance not available)
+    Time Travel Position: 15:0
+    eax=68e28100 ebx=00000000 ecx=77a266ac edx=69e34afc esi=69e3137c edi=00fa2000
+    eip=77a266ac esp=00ddf3b8 ebp=00ddf608 iopl=0         nv up ei pl nz na pe nc
+    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000206
+    ntdll!LdrpInitializeProcess+0x1d1c:
+    77a266ac 83bdbcfeffff00  cmp     dword ptr [ebp-144h],0 ss:002b:00ddf4c4=00000000
+    ```
+
+7.  On the Home menu, select **Go**  to  move forward in the code until the breakpoint is hit.
+
+    ```
+    0:000> g
+    Breakpoint 2 hit
+    Time Travel Position: 4B:1AD
+    eax=00ddf800 ebx=00fa2000 ecx=00ddf800 edx=00b61046 esi=00b61046 edi=00b61046
+    eip=00b61721 esp=00ddf7a4 ebp=00ddf864 iopl=0         nv up ei pl nz na po nc
+    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+    DisplayGreeting!GetCppConGreeting+0x1:
+    00b61721 8bec            mov     ebp,esp
+    ````
+
+
+8.  On the Home menu, select **Step Out Back** Use g command to move foreward in the code until the breakpoint is hit.
+
+    ```
+    0:000> g-u
+    Time Travel Position: 4B:1AA
+    eax=00ddf800 ebx=00fa2000 ecx=00ddf800 edx=00b61046 esi=00b61046 edi=00b61046
+    eip=00b61917 esp=00ddf7ac ebp=00ddf864 iopl=0         nv up ei pl nz na po nc
+    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+    DisplayGreeting!main+0x27:
+    00b61917 e8def7ffff      call    DisplayGreeting!ILT+245(?GetCppConGreetingYAXPA_WIZ) (00b610fa)
+    ```
+
+
+9. It looks like we have found the root cause. The *greeting* array that we declared is 50 charcters in length, while the sizeof(greeting) that we pass into GetCppConGreeting is 0x64, 100).  
+
+
+   ![WinDbg Preview showing the Display greeting code with a watch locals window showing X64](images/ttd-time-travel-walkthrough-code-with-watch-locals.png)
+
+
+As we look at the size issues further, we also notice that the the message is 75 characters in length.
+
+```
+HELLO FROM THE WINDBG TEAM. GOOD LUCK IN ALL OF YOUR TIME TRAVEL DEBUGGING!
+```
+
+
+10. So one way to fix the code would be to expand the size of the character array to 100.
+
+    ```
+    std::array <wchar_t, 100> greeting{};
+    ```
+
+TBD TBD TBD - Need to test and do we need to also change sizeof(greeting) to size(greeting)???
+
+11. To validate this fix, we could recompile the code and see that it runs with out error.
+
+
+**Set the break on access breakpoint for *size* variable**    
+
+Although not needed for our investigation, we could have set a breakpoint on suscect variables and examine what code is changing them. For example to set a breakpoint on the size varible in the GetCppConGreeting method, use this procedure.
+
+
+1.  Use the **dx** command to examine  *size*. 
+
+    ```
+    0:000> dx &size
+    0053fde0          size = 0n13923792
+    ```
+
+    In this trace, *size* is located in memory at 0053fdd4. 
+
+
+2. Use the breakpoints window to clear the existing breakpoint by right clicking on the existing breakpoint and selecting **Remove**.
+
+
+3.  Set the breakpoint with the **ba** command using the address we now want to monitor. 
+
+    ```
     ba w4 0053fde0 
     ```
-           
 
-3. Use g- to run back to point of memory access of the suspect buffsize variable.
+4. On the Time Travel menu, use **Time travel to start** command to move to the start of the trace.
+
+    ```
+    0:000> !tt 0
+    Setting position to the beginning of the trace
+    Setting position: 15:0
+    (1e5c.710): Break instruction exception - code 80000003 (first/second chance not available)
+    Time Travel Position: 15:0
+    eax=68e28100 ebx=00000000 ecx=77a266ac edx=69e34afc esi=69e3137c edi=00fa2000
+    eip=77a266ac esp=00ddf3b8 ebp=00ddf608 iopl=0         nv up ei pl nz na pe nc
+    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000206
+    ntdll!LdrpInitializeProcess+0x1d1c:
+    77a266ac 83bdbcfeffff00  cmp     dword ptr [ebp-144h],0 ss:002b:00ddf4c4=00000000
+    ```
+
+
+5. On the Home menu, select **Go** to travel forward to the first point of memory access of the suspect size variable. Alternativly we could have moved to the end of the trace, and worked in reverse through the code.
 
     ```
     0:000> g-
@@ -518,7 +575,7 @@ If we look at the Locals window we can see that the *message* variable has only 
     013a1735 c745ec04000000  mov     dword ptr [ebp-14h],4 ss:002b:001bf7c4=cccccccc
     ```
       
-4. It looks like we have found the root cause. The ToDo comment indicates that the string size has not been implemented and 15 (0xf) is always returned.
+6. It looks like this code modifies the size variable. We could continue to go forward in the code to examine other places in the code that the size variable is accessed.
 
     ```
     // ToDo Implement String size - for now all supported strings are 15.
@@ -526,17 +583,18 @@ If we look at the Locals window we can see that the *message* variable has only 
     ```
 
 
-**TBD TBD TBD**
-
-Keep any of this?
+**Setting a breakpoint using the source window**
 
 
-3. To investigate further we will set a breakpoint by clicking on the wcscpy_s line in the source window.
+1. It is also possible to set a breakpoint by clicking on any line of code. For example clicking on the right side of the wcscpy_s line in the source window will set a breakpoint there.
 
     ![Screen shot of source Window showing breakpoint set on wcscpy_s](images/ttd-time-travel-walkthrough-source-window-breakpoint.png)
 
 
-4. Use g- to travel back until the breakpoint is hit.
+2. The breakpoint window will list the line of code that the breakpoint is set on
+
+
+3. On the Home Ribbon we could click on **Go Back** to travel back until the breakpoint is hit.
 
     ```
     Breakpoint 0 hit
@@ -548,16 +606,6 @@ Keep any of this?
     013a17c1 8bf4            mov     esi,esp
     ```
 
-5. Use the **dv** command to display the current local variables in memory.
-
-    ```
-    0:000> dv
-         buffer = 0x00000000 ""
-           size = 0xf
-        message = 0x00d475d0 "Message text to display goes here"
-    ```
-
-6. Looking at the value of *size* it is 0xf - 15 and our string looks to be 32 in length, so this looks like the reason that the wscpy is failing. But how did *size* get set to 15? To answer that question, we will set a break on memory access breakpoint. 
 
 
 
@@ -565,10 +613,10 @@ Keep any of this?
 
 Another way to determine at what points in the trace memory has been accessed, is to use the TTD.Memory objects and the dx command.
 
-1.  Use the **dx** command to examine  *buffsize*. 
+1.  Use the **dx** command to examine  *size*. 
 
     ```
-    0:000> dx &buffsize
+    0:000> dx &size
     &buffsize                 : 0x1bf7d0 : -858993460 [Type: int *]
         -858993460 [Type: int]
     ```
