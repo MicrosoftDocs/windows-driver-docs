@@ -303,7 +303,7 @@ At the point of failure in trace it is common to end up a fews steps after the t
 
 1. From the **Home** ribbon use the  **Step Into Back** command to step back three instructions. As you do this, continue to examine the stack and memory windows.
 
-The command window will display the time travel position and the registers as you step back three instructions.
+    The command window will display the time travel position and the registers as you step back three instructions.
 
     ```
     0:000> t-
@@ -329,8 +329,8 @@ The command window will display the time travel position and the registers as yo
     DisplayGreeting!main+0x45:
     ```
 
-> [!NOTE]
-> In this walkthrough, the command output shows the commands that can be used instead of the UI Menu options to allow users with a command line  usage preference to use command line commands. 
+    > [!NOTE]
+    > In this walkthrough, the command output shows the commands that can be used instead of the UI Menu options to allow users with a command line  usage preference to use command line commands. 
 
 2. At this point in the trace our  stack and base pointer have values that make more sense, so it appears that we have getting closer to the point in the code where the corruption occurred.
 
@@ -351,8 +351,8 @@ Also of interest is that the locals window contains values from our target app a
 5. Instead of the base pointer pointing to an instruction it is pointing to our message text. So something is not right here, this may be close to the point in time that we have corrupted the stack. To further investigate we will set a breakpoint. 
 
 
-> [!NOTE]
-> In this very small sample it would be pretty easy to just look in the code, but if there are hundreds of lines of code and dozens of subroutines the techniques described here can be used to decrease the time necessary to locate the issue.
+    > [!NOTE]
+    > In this very small sample it would be pretty easy to just look in the code, but if there are hundreds of lines of code and dozens of subroutines the techniques described here can be used to decrease the time necessary to locate the issue.
 
 
 **TTD and breakpoints**
