@@ -19,7 +19,7 @@ This lab introduces Time Travel Debugging (TTD), using a small sample program wi
 
 1. Capture a time travel trace of the failed program.
 2. Use the [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md) command to find the exception event stored in the recording. 
-3. Use the [!tt (time travel)](time-travel-debugging-extension-tt.md) command to travel to the postion of the exception event in the trace.
+3. Use the [!tt (time travel)](time-travel-debugging-extension-tt.md) command to travel to the position of the exception event in the trace.
 4. From that point in the trace single step backwards until the faulting code in question comes into scope.
 5. With the faulting code in scope, look at the local values and develop a hypothesis of a variable that may contain an incorrect value.
 6. Determine the memory address of the variable with the incorrect value.
@@ -69,7 +69,7 @@ The lab has the following three sections.
     Provide a project name of *DisplayGreeting* and click on **OK**.
 
 
-2. Uncheck the Security Development Lifecylce (SDL) checks.
+2. Uncheck the Security Development Lifecycle (SDL) checks.
 
 
  ![win32 application wizard application settings](images/ttd-time-travel-walkthrough-application-wizard-application-settings.png) 
@@ -344,7 +344,7 @@ Also of interest is that the locals window contains values from our target app a
 
 3. To further investigate, we can open up a memory window to view the contents near the base pointer memory address of *0x00effe44*.
 
-4. To display the associated ASCII characters, from the Memory ribbon, select **Text** and then **ASCII**
+4. To display the associated ASCII characters, from the Memory ribbon, select **Text** and then **ASCII**.
 
    ![Screen shot of WinDbg Preview showing memory ascii output and source code window](images/ttd-time-travel-walkthrough-memory-ascii.png)
 
@@ -513,7 +513,7 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
    ![WinDbg Preview showing the Display greeting code with a watch locals window showing X64](images/ttd-time-travel-walkthrough-code-with-watch-locals.png)
 
 
-    As we look at the size issue further, we also notice that the message is 75 characters in length.
+    As we look at the size issue further, we also notice that the message is 75 characters in length, 76 including the end of string character.
 
     ```
     HELLO FROM THE WINDBG TEAM. GOOD LUCK IN ALL OF YOUR TIME TRAVEL DEBUGGING!
@@ -526,18 +526,21 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
     std::array <wchar_t, 100> greeting{};
     ```
 
-    TBD TBD TBD - Need to test and do we need to also change sizeof(greeting) to size(greeting)???
+    And we also need to change sizeof(greeting) to size(greeting) in this line of code.
 
-11. To validate this fix, we could recompile the code and see that it runs with out error.
+    ```
+     GetCppConGreeting(greeting.data(), size(greeting));
+    ```
 
+11. To validate these fixes, we could recompile the code and confirm that it runs without error.
 
 
 **Setting a breakpoint using the source window**
 
 
-1. It is also possible to set a breakpoint by clicking on any line of code. For example clicking on the right side of the std:array definition line in the source window will set a breakpoint there.
+1. An alternative way to perform this investigation would be to set a breakpoint by clicking on any line of code. For example clicking on the right side of the std:array definition line in the source window will set a breakpoint there.
 
-    ![Screen shot of source Window showing breakpoint set on wcscpy_s](images/ttd-time-travel-walkthrough-source-window-breakpoint.png)
+    ![Screen shot of source window showing breakpoint set on std:array](images/ttd-time-travel-walkthrough-source-window-breakpoint.png)
 
 
 2. On the Time Travel menu, use **Time travel to start** command to move to the start of the trace.
@@ -570,7 +573,7 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 
 **Set the break on access breakpoint for the *greeting* variable**    
 
-An alternative way to perform this investigation, would be to set a breakpoint on suspect variables and examine what code is changing them. For example, to set a breakpoint on the greeting variable in the GetCppConGreeting method, use this procedure.
+Another alternative way to perform this investigation, would be to set a breakpoint on suspect variables and examine what code is changing them. For example, to set a breakpoint on the greeting variable in the GetCppConGreeting method, use this procedure.
 
 This portion of the walkthrough assumes that you are still located at the breakpoint from the previous section. 
 
@@ -624,7 +627,7 @@ This portion of the walkthrough assumes that you are still located at the breakp
     013a1735 c745ec04000000  mov     dword ptr [ebp-14h],4 ss:002b:001bf7c4=cccccccc
     ```
 
-   Alternatively, we could have traveled to the end of the trace, and worked in reverse through the code to find that last point in the trace that the array memory location was written to.
+   Alternatively, we could have traveled to the end of the trace and worked in reverse through the code to find that last point in the trace that the array memory location was written to.
       
 
 **Use the TTD.Memory objects to view memory access**    
@@ -660,7 +663,7 @@ Another way to determine at what points in the trace memory has been accessed, i
         ...         
     ```
 
-3. Click on any of the occurrences to display more information about that occurence of memory access.
+3. Click on any of the occurrences to display more information about that occurrence of memory access.
 
     ```
     0:000> dx -r1 @$cursession.TTD.Memory(0xddf800,0xddf804, "rw")[5]
