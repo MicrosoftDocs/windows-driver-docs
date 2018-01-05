@@ -2,7 +2,7 @@
 title: Time Travel Debugging - Sample App Walkthrough
 description: This section contains a walk through of a small C++ app. 
 ms.author: windowsdriverdev
-ms.date: 1/02/2017
+ms.date: 1/05/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -241,6 +241,12 @@ In the next section of this lab we will analyze the trace file to locate the iss
     
     ```
 
+
+> [!NOTE]
+> In this walkthough three periods are used to indicate that extraneous output was removed. 
+>
+
+
 3. Click on the Exception event to display information about that TTD event. 
 
     ```
@@ -323,6 +329,9 @@ eip=00191935 esp=00effd94 ebp=00effe44 iopl=0         nv up ei pl nz ac po nc
 cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000212
 DisplayGreeting!main+0x45:
 ```
+
+  > [!NOTE]
+    > In this walkthrough, the command output shows the commands that can be used instead of the UI Menu options to alow users with a command line usage preferenece to use command line commands. 
 
 2. At this point in the trace our  stack and base pointer have values that make more sense, so it appears that we have getting closer to the point in the code where the corruption occurred.
 
@@ -416,9 +425,10 @@ Note that you can only set four data breakpoints at any given time and it is up 
     00d4174a c745e000000000  mov     dword ptr [ebp-20h],0 ss:002b:0053fdc8=cccccccc
     ```
 
-5. Looking at the Locals window we can see that the *destination* variable has only part of the message, while the *source* has contains all of it. This information supports the idea that the stack was corrupted. 
+5. Select **View** and then **Locals**. In the locals window we can see that the *destination* variable has only part of the message, while the *source* has contains all of the text. This information supports the idea that the stack was corrupted. 
 
    ![Screen shot of WinDbg Preview locals window](images/ttd-time-travel-walkthrough-locals-window.png)
+
 
 4. At this point we can examine the program stack to see what code is active. From the **View** ribbon select **Stack**. 
 
@@ -485,7 +495,7 @@ As it is very unlikley that the Microsoft provided wscpy_s() function would have
     ````
 
 
-8.  On the Home menu, select **Step Out Back** Use g command to move foreward in the code until the breakpoint is hit.
+8.  On the Home menu, select **Step Out Back** to back one step.
 
     ```
     0:000> g-u
@@ -504,46 +514,87 @@ As it is very unlikley that the Microsoft provided wscpy_s() function would have
    ![WinDbg Preview showing the Display greeting code with a watch locals window showing X64](images/ttd-time-travel-walkthrough-code-with-watch-locals.png)
 
 
-As we look at the size issues further, we also notice that the the message is 75 characters in length.
+    As we look at the size issue further, we also notice that the the message is 75 characters in length.
 
-```
-HELLO FROM THE WINDBG TEAM. GOOD LUCK IN ALL OF YOUR TIME TRAVEL DEBUGGING!
-```
+    ```
+    HELLO FROM THE WINDBG TEAM. GOOD LUCK IN ALL OF YOUR TIME TRAVEL DEBUGGING!
+    ```
 
 
-10. So one way to fix the code would be to expand the size of the character array to 100.
+10. One way to fix the code would be to expand the size of the character array to 100.
 
     ```
     std::array <wchar_t, 100> greeting{};
     ```
 
-TBD TBD TBD - Need to test and do we need to also change sizeof(greeting) to size(greeting)???
+    TBD TBD TBD - Need to test and do we need to also change sizeof(greeting) to size(greeting)???
 
 11. To validate this fix, we could recompile the code and see that it runs with out error.
 
 
-**Set the break on access breakpoint for *size* variable**    
 
-Although not needed for our investigation, we could have set a breakpoint on suscect variables and examine what code is changing them. For example to set a breakpoint on the size varible in the GetCppConGreeting method, use this procedure.
-
-
-1.  Use the **dx** command to examine  *size*. 
-
-    ```
-    0:000> dx &size
-    0053fde0          size = 0n13923792
-    ```
-
-    In this trace, *size* is located in memory at 0053fdd4. 
+**Setting a breakpoint using the source window**
 
 
-2. Use the breakpoints window to clear the existing breakpoint by right clicking on the existing breakpoint and selecting **Remove**.
+1. It is also possible to set a breakpoint by clicking on any line of code. For example clicking on the right side of the std:array defintion line in the source window will set a breakpoint there.
+
+    ![Screen shot of source Window showing breakpoint set on wcscpy_s](images/ttd-time-travel-walkthrough-source-window-breakpoint.png)
 
 
-3.  Set the breakpoint with the **ba** command using the address we now want to monitor. 
+2. On the Time Travel menu, use **Time travel to start** command to move to the start of the trace.
 
     ```
-    ba w4 0053fde0 
+    0:000> !tt 0
+    Setting position to the beginning of the trace
+    Setting position: 15:0
+    (1e5c.710): Break instruction exception - code 80000003 (first/second chance not available)
+    Time Travel Position: 15:0
+    eax=68e28100 ebx=00000000 ecx=77a266ac edx=69e34afc esi=69e3137c edi=00fa2000
+    eip=77a266ac esp=00ddf3b8 ebp=00ddf608 iopl=0         nv up ei pl nz na pe nc
+    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000206
+    ntdll!LdrpInitializeProcess+0x1d1c:
+    77a266ac 83bdbcfeffff00  cmp     dword ptr [ebp-144h],0 ss:002b:00ddf4c4=00000000
+    ```
+
+3. On the Home Ribbon click on **Go** to travel back until the breakpoint is hit.
+
+    ```
+    Breakpoint 0 hit
+    Time Travel Position: 5B:AF
+    eax=0000000f ebx=00c20000 ecx=00000000 edx=00000000 esi=013a1046 edi=00effa60
+    eip=013a17c1 esp=00eff970 ebp=00effa60 iopl=0         nv up ei pl nz na po nc
+    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+    DisplayGreeting!DisplayGreeting+0x41:
+    013a17c1 8bf4            mov     esi,esp
+    ```
+
+
+**Set the break on access breakpoint for the *greeting* variable**    
+
+An alternative way to perform this investigation, would be to set a breakpoint on suspect variables and examine what code is changing them. For example to set a breakpoint on the size varible in the GetCppConGreeting method, use this procedure.
+
+This portion of the walkthrough assumes that you are still located at the breakpoint from the previous section. 
+
+1. From **View** and then **Locals**. In the locals window, *greeting* is available in the current context, so we will be able to determine its memory location. 
+
+2.  Use the **dx** command to examine the *greeting* array. 
+
+    ```
+    0:000> dx &greeting
+    &greeting                 : 0xddf800 [Type: std::array<wchar_t,50> *]
+       [+0x000] _Elems           : "꽘棶檙瞝???" [Type: wchar_t [50]]
+    ```
+
+    In this trace, *greeting* is located in memory at ddf800. 
+
+
+2. Use the breakpoints window to clear any existing breakpoint by right clicking on the existing breakpoint and selecting **Remove**.
+
+
+3.  Set the breakpoint with the **ba** command using the memory address we want to monitor. 
+
+    ```
+    ba w4 ddf800
     ```
 
 4. On the Time Travel menu, use **Time travel to start** command to move to the start of the trace.
@@ -562,7 +613,8 @@ Although not needed for our investigation, we could have set a breakpoint on sus
     ```
 
 
-5. On the Home menu, select **Go** to travel forward to the first point of memory access of the suspect size variable. Alternativly we could have moved to the end of the trace, and worked in reverse through the code.
+5. On the Home menu, select **Go** to travel forward to the first point of memory access of the greeting array. 
+
 
     ```
     0:000> g-
@@ -574,59 +626,29 @@ Although not needed for our investigation, we could have set a breakpoint on sus
     DisplayGreeting!DetermineStringSize+0x25:
     013a1735 c745ec04000000  mov     dword ptr [ebp-14h],4 ss:002b:001bf7c4=cccccccc
     ```
+
+   Alternativly we could have traveled to the end of the trace, and worked in reverse through the code to find that last point in the trace that the array was written to.
       
-6. It looks like this code modifies the size variable. We could continue to go forward in the code to examine other places in the code that the size variable is accessed.
-
-    ```
-    // ToDo Implement String size - for now all supported strings are 15.
-       int buffsize = 15;
-    ```
-
-
-**Setting a breakpoint using the source window**
-
-
-1. It is also possible to set a breakpoint by clicking on any line of code. For example clicking on the right side of the wcscpy_s line in the source window will set a breakpoint there.
-
-    ![Screen shot of source Window showing breakpoint set on wcscpy_s](images/ttd-time-travel-walkthrough-source-window-breakpoint.png)
-
-
-2. The breakpoint window will list the line of code that the breakpoint is set on
-
-
-3. On the Home Ribbon we could click on **Go Back** to travel back until the breakpoint is hit.
-
-    ```
-    Breakpoint 0 hit
-    Time Travel Position: 5B:AF
-    eax=0000000f ebx=00c20000 ecx=00000000 edx=00000000 esi=013a1046 edi=00effa60
-    eip=013a17c1 esp=00eff970 ebp=00effa60 iopl=0         nv up ei pl nz na po nc
-    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
-    DisplayGreeting!DisplayGreeting+0x41:
-    013a17c1 8bf4            mov     esi,esp
-    ```
-
-
 
 
 **Use the TTD.Memory objects to view memory access**    
 
 Another way to determine at what points in the trace memory has been accessed, is to use the TTD.Memory objects and the dx command.
 
-1.  Use the **dx** command to examine  *size*. 
+1.  Use the **dx** command to examine the *greeting* array. 
 
     ```
-    0:000> dx &size
-    &buffsize                 : 0x1bf7d0 : -858993460 [Type: int *]
-        -858993460 [Type: int]
+    0:000> dx &greeting
+    &greeting                 : 0xddf800 [Type: std::array<wchar_t,50> *]
+       [+0x000] _Elems           : "꽘棶檙瞝???" [Type: wchar_t [50]]
     ```
 
-    In this trace, *buffsize* is located in memory at 1bf7d0. 
+    In this trace, *greeting* is located in memory at ddf800. 
 
 2. Use the **dx** command to look at the four bytes in memory starting at that address with the read write access.
 
     ```
-    0:000> dx -r1 @$cursession.TTD.Memory(0x1bf7d0,0x1bf7d4, "rw")
+    0:000> dx -r1 @$cursession.TTD.Memory(0xddf800,0xddf804, "rw")
     @$cursession.TTD.Memory(0x1bf7d0,0x1bf7d4, "rw")                
         [0x0]           
         [0x1]           
@@ -639,37 +661,58 @@ Another way to determine at what points in the trace memory has been accessed, i
         [0x8]           
         [0x9]           
         [0xa]           
-        [0xb]           
-        [0xc]           
-        [0xd]           
-        [0xe]           
-        [0xf]           
-        [0x10]          
-        [0x11]          
-        [0x12]          
-        [0x13]          
-        [0x14]          
-        [0x15]          
+        ...         
     ```
 
-3. If we are interested in the last occurrence of read/write memory access in the trace we can click on the last item in the list or append the .Last() function to the end of the dx command.
+2. Click on any of the occurances.
 
     ```
-    0:000> dx -r1 @$cursession.TTD.Memory(0x1bf7d0,0x1bf7d4, "rw").Last()
-    @$cursession.TTD.Memory(0x1bf7d0,0x1bf7d4, "rw").Last()                
+    0:000> dx -r1 @$cursession.TTD.Memory(0xddf800,0xddf804, "rw")[5]
+    @$cursession.TTD.Memory(0xddf800,0xddf804, "rw")[5]                
         EventType        : MemoryAccess
-        ThreadId         : 0x1278
+        ThreadId         : 0x710
         UniqueThreadId   : 0x2
-        TimeStart        : 1A32:33B [Time Travel]
-        TimeEnd          : 1A32:33B [Time Travel]
-        AccessType       : Read
-        IP               : 0x76ed1b6a
-        Address          : 0x1bf7d0
+        TimeStart        : 27:3C1 [Time Travel]
+        TimeEnd          : 27:3C1 [Time Travel]
+        AccessType       : Write
+        IP               : 0x6900432f
+        Address          : 0xddf800
         Size             : 0x4
-        Value            : 0x13a17d5
+        Value            : 0xddf818
     ```
 
-4. We could then click on [Time Travel] to move to that position in the trace and look further at the code execution at that point, using the techniques described earlier in this lab.
+3. Click on [Time Travel] to position the trace at the point in time.
+
+    ```
+    0:000> dx @$cursession.TTD.Memory(0xddf800,0xddf804, "rw")[5].TimeStart.SeekTo()
+    @$cursession.TTD.Memory(0xddf800,0xddf804, "rw")[5].TimeStart.SeekTo()
+    (1e5c.710): Break instruction exception - code 80000003 (first/second chance not available)
+    Time Travel Position: 27:3C1
+    eax=00ddf81c ebx=00fa2000 ecx=00ddf818 edx=ffffffff esi=00000000 edi=00b61046
+    eip=6900432f esp=00ddf804 ebp=00ddf810 iopl=0         nv up ei pl nz ac po nc
+    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000212
+    ucrtbased!_register_onexit_function+0xf:
+    6900432f 51              push    ecx
+   ```
+
+4. If we are interested in the last occurrence of read/write memory access in the trace we can click on the last item in the list or append the .Last() function to the end of the dx command.
+
+    ```
+    0:000> dx -r1 @$cursession.TTD.Memory(0xddf800,0xddf804, "rw").Last()
+    @$cursession.TTD.Memory(0xddf800,0xddf804, "rw").Last()                
+        EventType        : MemoryAccess
+        ThreadId         : 0x710
+        UniqueThreadId   : 0x2
+        TimeStart        : 53:100E [Time Travel]
+        TimeEnd          : 53:100E [Time Travel]
+        AccessType       : Read
+        IP               : 0x690338e4
+        Address          : 0xddf802
+        Size             : 0x2
+        Value            : 0x45
+    ```
+
+5. We could then click on [Time Travel] to move to that position in the trace and look further at the code execution at that point, using the techniques described earlier in this lab.
 
 For more information about the TTD.Memory objects, see [TTD.Memory Object](time-travel-debugging-object-model.md).
 
