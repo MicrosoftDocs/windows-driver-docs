@@ -79,33 +79,33 @@ The lab has the following three sections.
 
 3. Paste in the following text to the DisplayGreeting.cpp pane in Visual Studio.
 
-   ```
-   // DisplayGreeting.cpp : Defines the entry point for the console application.
-   //
+    ```
+    // DisplayGreeting.cpp : Defines the entry point for the console application.
+    //
 
-   #include "stdafx.h"
-   #include <array>
-   #include <stdio.h>
-   #include <string.h>
+    #include "stdafx.h"
+    #include <array>
+    #include <stdio.h>
+    #include <string.h>
 
-   void GetCppConGreeting(wchar_t* buffer, size_t size)
-   {
-	   wchar_t const* const message = L"HELLO FROM THE WINDBG TEAM. GOOD LUCK IN ALL OF YOUR TIME TRAVEL DEBUGGING!";
+    void GetCppConGreeting(wchar_t* buffer, size_t size)
+    {
+	    wchar_t const* const message = L"HELLO FROM THE WINDBG TEAM. GOOD LUCK IN ALL OF YOUR TIME TRAVEL DEBUGGING!";
+ 
+ 	   wcscpy_s(buffer, size, message);
+    }
 
-	   wcscpy_s(buffer, size, message);
-   }
 
+    int main()
+    {
+	    std::array <wchar_t, 50> greeting{};
+	    GetCppConGreeting(greeting.data(), sizeof(greeting));
 
-   int main()
-   {
-	   std::array <wchar_t, 50> greeting{};
-	   GetCppConGreeting(greeting.data(), sizeof(greeting));
+	    wprintf(L"%ls\n", greeting.data());
 
-	   wprintf(L"%ls\n", greeting.data());
-
-	   return 0;
-   }
-   ```
+	    return 0;
+    }
+    ```
 
 4.  In Visual Studio, click **Project** &gt; **DisplayGreeting properties**. Then click on **C/C++** and **Code Generation**.
 
@@ -305,38 +305,38 @@ At the point of failure in trace it is common to end up a fews steps after the t
 
 The command window will display the time travel position and the registers as you step back three instructions.
 
-```
-0:000> t-
-Time Travel Position: 67:40
-eax=00000000 ebx=00cf8000 ecx=99da9203 edx=69cf1a6c esi=00191046 edi=00191046
-eip=00540020 esp=00effe4c ebp=00520055 iopl=0         nv up ei pl zr na pe nc
-cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
-00540020 ??              ???
+    ```
+    0:000> t-
+    Time Travel Position: 67:40
+    eax=00000000 ebx=00cf8000 ecx=99da9203 edx=69cf1a6c esi=00191046 edi=00191046
+    eip=00540020 esp=00effe4c ebp=00520055 iopl=0         nv up ei pl zr na pe nc
+    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+    00540020 ??              ???
 
-0:000> t-
-Time Travel Position: 67:3F
-eax=00000000 ebx=00cf8000 ecx=99da9203 edx=69cf1a6c esi=00191046 edi=00191046
-eip=0019193d esp=00effe48 ebp=00520055 iopl=0         nv up ei pl zr na pe nc
-cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
-DisplayGreeting!main+0x4d:
-0019193d c3    
+    0:000> t-
+    Time Travel Position: 67:3F
+    eax=00000000 ebx=00cf8000 ecx=99da9203 edx=69cf1a6c esi=00191046 edi=00191046
+    eip=0019193d esp=00effe48 ebp=00520055 iopl=0         nv up ei pl zr na pe nc
+    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+    DisplayGreeting!main+0x4d:
+    0019193d c3    
 
-0:000> t-
-Time Travel Position: 67:39
-eax=0000004c ebx=00cf8000 ecx=99da9203 edx=69cf1a6c esi=00191046 edi=00191046
-eip=00191935 esp=00effd94 ebp=00effe44 iopl=0         nv up ei pl nz ac po nc
-cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000212
-DisplayGreeting!main+0x45:
-```
+    0:000> t-
+    Time Travel Position: 67:39
+    eax=0000004c ebx=00cf8000 ecx=99da9203 edx=69cf1a6c esi=00191046 edi=00191046
+    eip=00191935 esp=00effd94 ebp=00effe44 iopl=0         nv up ei pl nz ac po nc
+    cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000212
+    DisplayGreeting!main+0x45:
+    ```
 
-  > [!NOTE]
-    > In this walkthrough, the command output shows the commands that can be used instead of the UI Menu options to allow users with a command line usage preference to use command line commands. 
+> [!NOTE]
+> In this walkthrough, the command output shows the commands that can be used instead of the UI Menu options to allow users with a command line  usage preference to use command line commands. 
 
 2. At this point in the trace our  stack and base pointer have values that make more sense, so it appears that we have getting closer to the point in the code where the corruption occurred.
 
-```
-esp=00effd94 ebp=00effe44
-```
+    ```
+    esp=00effd94 ebp=00effe44
+    ```
 
 Also of interest is that the locals window contains values from our target app and the source code window is highlighting the line of code that was just executed at this point in the trace. TBD TBD TBD - Or is ready to be executed?
 
@@ -351,8 +351,8 @@ Also of interest is that the locals window contains values from our target app a
 5. Instead of the base pointer pointing to an instruction it is pointing to our message text. So something is not right here, this may be close to the point in time that we have corrupted the stack. To further investigate we will set a breakpoint. 
 
 
-    > [!NOTE]
-    > In this very small sample it would be pretty easy to just look in the code, but if there are hundreds of lines of code and dozens of subroutines the techniques described here can be used to decrease the time necessary to locate the issue.
+> [!NOTE]
+> In this very small sample it would be pretty easy to just look in the code, but if there are hundreds of lines of code and dozens of subroutines the techniques described here can be used to decrease the time necessary to locate the issue.
 
 
 **TTD and breakpoints**
