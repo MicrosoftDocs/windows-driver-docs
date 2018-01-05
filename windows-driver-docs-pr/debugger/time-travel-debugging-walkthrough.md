@@ -241,9 +241,9 @@ In the next section of this lab we will analyze the trace file to locate the iss
     
     ```
 
-> [!NOTE]
-> In this walkthrough three periods are used to indicate that extraneous output was removed. 
->
+    > [!NOTE]
+    > In this walkthrough three periods are used to indicate that extraneous output was removed. 
+    >
 
 
 3. Click on the Exception event to display information about that TTD event. 
@@ -351,8 +351,8 @@ Also of interest is that the locals window contains values from our target app a
 5. Instead of the base pointer pointing to an instruction it is pointing to our message text. So something is not right here, this may be close to the point in time that we have corrupted the stack. To further investigate we will set a breakpoint. 
 
 
-    > [!NOTE]
-    > In this very small sample it would be pretty easy to just look in the code, but if there are hundreds of lines of code and dozens of subroutines the techniques described here can be used to decrease the time necessary to locate the issue.
+> [!NOTE]
+> In this very small sample it would be pretty easy to just look in the code, but if there are hundreds of lines of code and dozens of subroutines the techniques described here can be used to decrease the time necessary to locate the issue.
 
 
 **TTD and breakpoints**
