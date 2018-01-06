@@ -13,7 +13,9 @@ ms.technology: windows-devices
 
 # Cellular COM API Reference
 
-To access reference topics related to the Cellular COM API, see [this link]. The Cellular COM API was used in Windows Phone 8.1 and is deprecated in Windows 10 and later.
+To access reference topics related to the Cellular COM API, see [Cellular COM API reference](https://msdn.microsoft.com/library/windows/hardware/dn946508). 
+
+The Cellular COM API was used in Windows Phone 8.1 and is deprecated in Windows 10 and later.
 
 ## Related topics
 
