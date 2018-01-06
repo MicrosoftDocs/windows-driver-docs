@@ -95,7 +95,6 @@ The lab has the following three sections.
  	   wcscpy_s(buffer, size, message);
     }
 
-
     int main()
     {
 	    std::array <wchar_t, 50> greeting{};
