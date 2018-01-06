@@ -138,11 +138,9 @@ The lab has the following three sections.
 
     ![Faulting app dialog box](images/ttd-time-travel-walkthrough-faulting-app-dialog-box.png) 
 
-
     If this dialog box appears, select **Close program**
 
    ![Faulting app dialog box](images/ttd-time-travel-walkthrough-program-not-working-dialog-box.png) 
-  
     
     In the next section of the walkthrough, we will record the execution of the sample app to see if we can determine why this exception is occurring. 
 
@@ -159,9 +157,7 @@ To launch the sample app and record a TTD trace, follow these steps. For general
 
 3. Enter the path to the user mode executable that you wish to record or select **Browse** to navigate to the executable. For information about working with the launch executable menu in WinDbg Preview, see [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md).
 
-
-    ![Screen shot of WinDbg Preview showing start recording checkbox in launch executable (advanced) screen](images/ttd-time-travel-walkthrough-recording-app.png)
-
+   ![Screen shot of WinDbg Preview showing start recording checkbox in launch executable (advanced) screen](images/ttd-time-travel-walkthrough-recording-app.png)
 
 4. Check the **Record process with Time Travel Debugging** box to record a trace when the executable is launched. 
 
@@ -513,9 +509,7 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 
 9. It looks like we have found the root cause. The *greeting* array that we declared is 50 characters in length, while the sizeof(greeting) that we pass into GetCppConGreeting is 0x64, 100).  
 
-
    ![WinDbg Preview showing the Display greeting code with a watch locals window showing X64](images/ttd-time-travel-walkthrough-code-with-watch-locals.png)
-
 
     As we look at the size issue further, we also notice that the message is 75 characters in length, 76 including the end of string character.
 
@@ -545,7 +539,6 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 1. An alternative way to perform this investigation would be to set a breakpoint by clicking on any line of code. For example clicking on the right side of the std:array definition line in the source window will set a breakpoint there.
 
     ![Screen shot of source window showing breakpoint set on std:array](images/ttd-time-travel-walkthrough-source-window-breakpoint.png)
-
 
 2. On the Time Travel menu, use **Time travel to start** command to move to the start of the trace.
 
