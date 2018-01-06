@@ -68,12 +68,9 @@ The lab has the following three sections.
 
     Provide a project name of *DisplayGreeting* and click on **OK**.
 
-
 2. Uncheck the Security Development Lifecycle (SDL) checks.
 
-
- ![win32 application wizard application settings](images/ttd-time-travel-walkthrough-application-wizard-application-settings.png) 
-
+    ![win32 application wizard application settings](images/ttd-time-travel-walkthrough-application-wizard-application-settings.png) 
 
 3. Click on **Finish**.
 
@@ -116,11 +113,10 @@ The lab has the following three sections.
     | Basic Runtime Checks |  Default                      |
 
  
-    > [!NOTE]
-    > Although these setting are *not* recommended, it is possible to imagine a scenario where someone would advise using these settings
-    > to expedite coding or to facilitate certain testing environments.
-    >  
-        
+   > [!NOTE]
+   > Although these setting are not recommended, it is possible to imagine a scenario where someone would advise using these settings
+   > to expedite coding or to facilitate certain testing environments.
+   >  
 
 5.  In Visual Studio, click **Build** &gt; **Build Solution**.
 
@@ -140,7 +136,7 @@ The lab has the following three sections.
 
     If this dialog box appears, select **Close program**
 
-   ![Faulting app dialog box](images/ttd-time-travel-walkthrough-program-not-working-dialog-box.png) 
+    ![Faulting app dialog box](images/ttd-time-travel-walkthrough-program-not-working-dialog-box.png) 
     
     In the next section of the walkthrough, we will record the execution of the sample app to see if we can determine why this exception is occurring. 
 
@@ -157,7 +153,7 @@ To launch the sample app and record a TTD trace, follow these steps. For general
 
 3. Enter the path to the user mode executable that you wish to record or select **Browse** to navigate to the executable. For information about working with the launch executable menu in WinDbg Preview, see [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md).
 
-   ![Screen shot of WinDbg Preview showing start recording checkbox in launch executable (advanced) screen](images/ttd-time-travel-walkthrough-recording-app.png)
+    ![Screen shot of WinDbg Preview showing start recording checkbox in launch executable (advanced) screen](images/ttd-time-travel-walkthrough-recording-app.png)
 
 4. Check the **Record process with Time Travel Debugging** box to record a trace when the executable is launched. 
 
@@ -169,7 +165,7 @@ To launch the sample app and record a TTD trace, follow these steps. For general
 
 8. The program crashes and the trace file will be closed and written out to disk. 
 
-   ![Screen shot of WinDbg Preview showing output with 1/1 keyframes indexed](images/ttd-time-travel-walkthrough-windbg-indexed-frames.png)
+    ![Screen shot of WinDbg Preview showing output with 1/1 keyframes indexed](images/ttd-time-travel-walkthrough-windbg-indexed-frames.png)
 
 9. The debugger will automatically open the trace file and index it. Indexing is a process that enables efficient debugging of the trace file. This indexing process will take longer for larger trace files.
 
@@ -238,9 +234,9 @@ In the next section of this lab we will analyze the trace file to locate the iss
     
     ```
 
-    > [!NOTE]
-    > In this walkthrough three periods are used to indicate that extraneous output was removed. 
-    >
+   > [!NOTE]
+   > In this walkthrough three periods are used to indicate that extraneous output was removed. 
+   >
 
 
 3. Click on the Exception event to display information about that TTD event. 
@@ -326,10 +322,10 @@ At the point of failure in trace it is common to end up a fews steps after the t
     DisplayGreeting!main+0x45:
     ```
 
-    > [!NOTE]
-    > In this walkthrough, the command output shows the commands that can be used instead of the UI Menu options to allow users with a
-    > command line  usage preference to use command line commands.
-    > 
+   > [!NOTE]
+   > In this walkthrough, the command output shows the commands that can be used instead of the UI Menu options to allow users with a
+   > command line  usage preference to use command line commands.
+   > 
 
 2. At this point in the trace our  stack and base pointer have values that make more sense, so it appears that we have getting closer to the point in the code where the corruption occurred.
 
