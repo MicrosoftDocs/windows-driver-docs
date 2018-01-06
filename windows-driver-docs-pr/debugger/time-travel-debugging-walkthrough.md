@@ -117,7 +117,8 @@ The lab has the following three sections.
 
  
     > [!NOTE]
-    > Although these setting are *not* recommended, it is possible to imagine a scenario where someone would advise using these settings to expedite coding or to facilitate certain testing environments.
+    > Although these setting are *not* recommended, it is possible to imagine a scenario where someone would advise using these settings
+    > to expedite coding or to facilitate certain testing environments.
     >  
         
 
@@ -330,7 +331,8 @@ At the point of failure in trace it is common to end up a fews steps after the t
     ```
 
     > [!NOTE]
-    > In this walkthrough, the command output shows the commands that can be used instead of the UI Menu options to allow users with a command line  usage preference to use command line commands.
+    > In this walkthrough, the command output shows the commands that can be used instead of the UI Menu options to allow users with a
+    > command line  usage preference to use command line commands.
     > 
 
 2. At this point in the trace our  stack and base pointer have values that make more sense, so it appears that we have getting closer to the point in the code where the corruption occurred.
