@@ -1,5 +1,6 @@
 ---
 title: Print Pipeline Property Bag
+author: windows-driver-content
 description: The print pipeline property bag is used to pass information between filters in the filter pipeline.Property nameSymbolic nameProperty typeDescriptionPrinterNameXPS\_FP\_PRINTER\_NAMEVT\_BSTRThe printer name.ProgressReportXPS\_FP\_PROGRESS\_REPORTVT\_UNKNOWNA pointer to an IUnknown interface. Call QueryInterface to obtain a pointer to the IPrintPipelineProgressReport interface.PrinterHandleXPS\_FP\_PRINTER\_HANDLE VT\_BYREFThe printer handle. The filter should not close this handle.PerUserPrintTicketXPS\_FP\_USER\_PRINT\_TICKETVT\_UNKNOWNA pointer to an IUnknown interface. Call QueryInterface to obtain a pointer to the IPrintReadStreamFactory interface.UserSecurityTokenXPS\_FP\_USER\_TOKENVT\_BYREFA handle that the filter can use to impersonate the user account that submitted the print job.PrintJobIdXPS\_FP\_JOB\_IDVT\_UI4The print job identification number.PrintClassFactoryXPS\_FP\_PRINT\_CLASS\_FACTORYVT\_UNKNOWNA pointer to an IUnknown interface. Call QueryInterface to obtain a pointer to the IPrintClassObjectFactory interface.IPrintCoreHelper(There is no symbolic name for this property name.)VT\_UNKNOWNA pointer to an IUnknown interface. Call QueryInterface to obtain a pointer to the IPrintCoreHelper interface.Note that this property is only available in XPSDrv printer drivers that use the unidrvui.dll as the configuration UI DLL.PrintDeviceCapabilitiesXPS\_FP\_PRINTDEVICECAPABILITIES VT\_UNKNOWNA pointer to an IUnknown interface. Call QueryInterface to obtain a pointer to the IPrintReadStreamFactory interface.Allows XPS rendering filters to retrieve PrintDeviceCapabilities XML files from the Print filter pipeline property bag. Â
 MS-HAID:
 - 'filterpipeline\_f3fbd165-3f72-41cc-91b8-aa8b36823da9.xml'
@@ -108,9 +109,8 @@ The print pipeline property bag is used to pass information between filters in t
 
 Â 
 
+
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Print%20Pipeline%20Property%20Bag%20%20RELEASE:%20%281/8/2018%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
 
 
