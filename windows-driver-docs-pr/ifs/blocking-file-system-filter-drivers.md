@@ -27,7 +27,7 @@ Use the **IoBlockLegacyFsFilters** registry key to specify if the system blocks 
 The registry key must be created under the following registry path:
 
 ``` syntax
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SessionManager\I/O System
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\I/O System
 ```
 
 The valid DWORD values for the **IoBlockLegacyFsFilters** key are as follows:
