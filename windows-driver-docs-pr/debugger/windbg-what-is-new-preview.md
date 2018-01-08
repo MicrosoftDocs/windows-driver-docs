@@ -2,7 +2,7 @@
 title: WinDbg Preview - What's New 
 description: This topic provides inofmration on what's new in WinDbg preview debugger.
 ms.author: windowsdriverdev
-ms.date: 10/18/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,6 +42,15 @@ This version includes these updates.
 Known issues
 - SOS will not work on x86 traces.
 
+
+## 1.1712.15003.0
+
+This version includes these updates.
+
+- You can now query memory in TTD traces
+- Settings will now be preserved across WinDbg Preview sessions
+- Start-up performance improvements
+- Additional bug fixes
 
 ---
  

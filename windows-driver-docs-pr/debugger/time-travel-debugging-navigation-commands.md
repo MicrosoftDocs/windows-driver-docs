@@ -13,7 +13,7 @@ ms.technology: windows-devices
 >
 
 
-# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time travel navigation commands
+# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time travel navigation commands
 
 This section describes the time travel navigation commands.
 

@@ -2,6 +2,7 @@
 ## [SPB controller drivers](spb-controller-drivers.md)
 ### [SPB Framework Extension (SpbCx)](spb-framework-extension.md)
 ### [SpbCx Interfaces](spbcx-interfaces.md)
+### [SPB I/O Requests](spb-ioctls.md)
 ### [I/O Transfer Sequences](i-o-transfer-sequences.md)
 ### [Handling Client-Implemented Sequences](handling-client-implemented-sequences.md)
 ### [Using the SPB_TRANSFER_LIST Structure for Custom IOCTLs](using-the-spb-transfer-list-structure.md)

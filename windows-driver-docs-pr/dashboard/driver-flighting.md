@@ -8,7 +8,7 @@ ms.technology: windows-devices
 
 # Driver flighting
 
-Using the Hardware Dev Center Dashboard, you can promote a driver for flighting, which distributes your driver to Windows Insider rings while providing automatic monitoring and evaluation. After completing a flight, a report of your driver's performance will be generated, enabling you to evaluate its critical functionality and update scenarios.   Upon a successful flight and approval from Microsoft, the driver will be distributed publicly through Windows Update. 
+Driver flighting in the Windows Hardware Dev Center dashboard enables you to distribute your driver within defined Windows Insider rings, while providing automatic monitoring and evaluation. A report of your driver's performance will be generated after the completion of a flight, enabling you to evaluate its critical functionality and update scenarios. Upon a successful flight and approval from Microsoft, the driver will be distributed publicly through Windows Update. 
 
 ## Signing up for driver flighting
 
@@ -19,7 +19,7 @@ To sign up for driver flighting, submit a support ticket to the Windows Hardware
 
 After receiving your support ticket, it may take up to five business days for you to receive a response.
 
-Once your account has been approved, organization administrators will be able to configure users for promotion by going to the **Settings** page and selecting **Manage Users**. Make sure the appropriate users have at least one of the following roles selected:
+Once your account has been approved, your organization's administrators will be able to configure users for flighting by going to the **Settings** page and selecting **Manage Users**. Make sure the appropriate users have at least one of the following roles selected:
 
 * Shipping label owner
 * Shipping label promoter
@@ -27,11 +27,11 @@ Once your account has been approved, organization administrators will be able to
 
 ## How to promote a driver for driver flighting
 
-Drivers can be promoted for flighting being submitted to the Windows Hardware Dev Center Dashboard using following steps:
+After being submitted to the Windows Hardware Dev Center Dashboard, you can promote your drivers for flighting with the following steps:
  
-1. Once your driver has been submitted and is the **validation** stage of processing, create a new shipping label and fill out the **details** and **properties** sections. See [Publish a driver to Windows Update](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update) for more information.
+1. Once your driver has been submitted and is in the **validation** stage of processing, create a new shipping label and fill out the **details** and **properties** sections. See [Publish a driver to Windows Update](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update) for more information.
 
-2. Select one or more driver promotion options to promote your driver for flighting, described below:
+2. Select one or more driver promotion option to promote your driver for flighting, as described below:
 
 | Promotion Option                                                        | Description                                                                                                                              |
 |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -43,12 +43,12 @@ Drivers can be promoted for flighting being submitted to the Windows Hardware De
     3. The process used to validate the quality of the driver
     4. The OEMs (if any) that are affected by the driver publication
 
-4. Select the appropriate statements that apply to your driver. These answer will improve the speed of the evaluation process:
+4. Select the appropriate statements that apply to your driver. These answers will improve the speed of the evaluation process:
     ![An image showing the statements that may apply to a driver being flighted: it is a co-engineering driver, it requires a reboot, it deploys UI and/or software, It supports a new or unreleased device](images/driver-flighting-statements.png)
     
     Please note the following:
     * It is recommended to avoid requiring a reboot after driver installation. 
-    * Deploying UI and/or software during driver installation is not windows 10 S compliant and cannot be flighted to this operating system. 
+    * Drivers that deploy UI and/or software during installation are not windows 10 S compliant, and cannot be flighted to this operating system.
     * A co-engineering driver is not automatically released via Windows Update after a successful flight. A flight bug report will still be provided after the flighting process.
 
 5. Complete the shipping label process as usual.
@@ -58,7 +58,7 @@ After promoting your driver for shipping, Microsoft will evaluate your driver fo
 ## Why was my driver rejected?
 
 A driver can be rejected for several reasons. Most commonly, rejection is caused by improper driver targeting. These include:
-* targeting previous version of Windows while also targeting Windows 10
+* targeting previous versions of Windows while also targeting Windows 10
 * not including one or more Computer Hardware IDs (CHIDs) in your shipping label
 * using hardware IDs that unintentionally targets other OEMs.
 
