@@ -18,9 +18,9 @@ ms.technology: windows-devices
 DYNAMO is the program in Windows 10, version 1803 and later that enables mobile operators (MOs) and other service providers to sell plans to end users. DYNAMO is a new name for the previous Data Marketplace program and is not a separate or competing program.
 DYNAMO enables end users to perform the following:
 
-- Install and activate an eSIM profile
-- Activate a device on a mobile operator subscription with either prepaid (PAYG) or postpaid plans
-- Top up prepaid subscriptions when out of data and the only connectivity available is mobile connectivity
+- Install and activate an eSIM profile.
+- Activate a device on a mobile operator subscription with either prepaid (PAYG) or postpaid plans.
+- Top up prepaid subscriptions when out of data and the only connectivity available is mobile connectivity.
 
 ## Definition of terms
 
