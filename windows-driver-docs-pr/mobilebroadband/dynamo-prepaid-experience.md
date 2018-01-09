@@ -38,15 +38,15 @@ To ensure that the DYNAMO experience is properly shown in the Windows Connection
 > [!TIP]
 > Updating COSA on Windows devices takes a considerable amount of time and might become a project constraint, so you should submit this request as early as possible.
 
-<img src="images/dynamo_prepaid_network_flyout_1_general.png" alt="Windows Connection Manager general example" title="Windows Connection Manager general example" width=250 />
+<img src="images/dynamo_prepaid_network_flyout_1_general.png" alt="Windows Connection Manager general example" title="Windows Connection Manager general example" width="250" />
 
 After you update COSA, tapping or clicking on the your connection in the network flyout will expand it with more options (shown as “Contoso Cellular” in the following image). When a user expands the cellular connection, a “Connect with a data plan” option is displayed. Tapping or clicking on this option will launch the Mobile Plans app.
 
-<img src="images/dynamo_prepaid_network_flyout_2_connect.png" alt="Windows Connection Manager showing Connect with Data Plan option" title="Windows Connection Manager showing Connect with Data Plan option" width=250 />
+<img src="images/dynamo_prepaid_network_flyout_2_connect.png" alt="Windows Connection Manager showing Connect with Data Plan option" title="Windows Connection Manager showing Connect with Data Plan option" width="250" />
 
 The following figure shows an example of how users can see the amount of data and time they have left on a prepaid subscription.
 
-<img src="images/dynamo_prepaid_network_flyout_3_balance.png" alt="Windows Connection Manager showing remaining time and data" title="Windows Connection Manager showing remaining time and data" width=250 />
+<img src="images/dynamo_prepaid_network_flyout_3_balance.png" alt="Windows Connection Manager showing remaining time and data" title="Windows Connection Manager showing remaining time and data" width="250" />
 
 ### How to request a COSA database update
 
@@ -75,19 +75,19 @@ The following settings might be applicable depending of your specific business n
 
 The following image shows an example MO with branding in the network flyout:
 
-<img src="images/dynamo_prepaid_network_flyout_4_branding.png" alt="Windows Connection Manager showing MO branding" title="Windows Connection Manager showing MO branding" width=250 />
+<img src="images/dynamo_prepaid_network_flyout_4_branding.png" alt="Windows Connection Manager showing MO branding" title="Windows Connection Manager showing MO branding" width="250" />
 
 ## Get Balance API
 
 The Get Balance API queries current subscription status, controls whether the DYNAMO experience is available on the device, and shows remaining data and time in the network flyout for prepaid subscriptions. The following diagram shows the high-level flow for the Get Balance API. 
 
-<img src="images/dynamo_prepaid_get_balance_api_flow.png" alt="Get Balance API flow" title="Get Balance API flow" width=600 />
+<img src="images/dynamo_prepaid_get_balance_api_flow.png" alt="Get Balance API flow" title="Get Balance API flow" width="600" />
 
 ### Resource model
 
 Communication between the DYNAMO service and the MO service involves manipulating the resources in the following diagram. Explanations for each resource are in the tables following the diagram.
 
-<img src="images/dynamo_prepaid_get_balance_api_resource_model.png" alt="Get Balance API resource model diagram" title="Get Balance API resource model diagram" width=600 />
+<img src="images/dynamo_prepaid_get_balance_api_resource_model.png" alt="Get Balance API resource model diagram" title="Get Balance API resource model diagram" width="600" />
 
 #### SIM resource
 
