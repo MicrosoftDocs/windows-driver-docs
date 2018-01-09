@@ -19,7 +19,7 @@
     }
   ],
   "branch_target_mapping": {
-     "duncan_mos_rs3_pdf": [
+     "dynamo": [
         "Publish",
         "Pdf"
     ],
