@@ -70,11 +70,11 @@ The user’s language preference will be sent using the Accept-Language header, 
 
 The following high-level flow diagram for eSIM MO Direct illustrates a scenario where the user doesn’t have an MO profile installed and is purchasing a plan from the MO portal.
 
-**IMAGE**
+<img src="images/dynamo_implementation_mo_direct_flow_no_profile.png" alt="MO Direct flow where user has no MO profile" title="MO Direct flow where user has no MO profile" width=800>
 
 The following diagram shows the high-level flow for MO Direct when the user has a eSIM profile or is using a physical SIM in their device.
 
-**IMAGE**
+<img src="images/dynamo_implementation_mo_direct_flow_with_sim.png" alt="MO Direct flow where user has an eSIM or physical SIM" title="MO Direct flow where user has an eSIM or physical SIM" width=400>
 
 ### Control handoff to the Mobile Plans app
 
