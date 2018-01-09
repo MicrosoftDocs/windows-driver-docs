@@ -75,7 +75,7 @@ To get started with the postpaid DYNAMO experience, follow these steps:
 3. [Integration](dynamo-integration.md)
 4. [Launch](dynamo-launch.md)
 
-See these topics for additional info about DYNAMO:
+See these topics for additional information about DYNAMO:
 
 - [Prepaid experience](dynamo-prepaid-experience.md)
 - [Appendix](dynamo-appendix.md)
