@@ -37,7 +37,7 @@ DYNAMO enables end users to perform the following:
 
 DYNAMO project integration is composed of four stages, each of which has high-level tasks. Some of these high-level tasks are for mobile operators, while others are joint tasks where Microsoft works in coordination with mobile operators. The following diagram illustrates the four stages of the DYNAMO project.
 
-<img src="images/dynamo_project_overview.png" alt="DYNAMO project overview" title="DYNAMO project overview" width=600>
+<img src="images/dynamo_project_overview.png" alt="DYNAMO project overview" title="DYNAMO project overview" width=600 />
 
 ## Functional overview
 
@@ -52,7 +52,7 @@ The following table describes each component of the diagram.
 | DYNAMO Web API & Web Portal | The endpoint in the mobile operator network that is responsible for hosting the web service API and web portal that allow Windows 10 devices to access the DYNAMO experience. |
 | SMDP+ server | Responsible for creating, generating, and managing eSIM profiles that belong to a mobile operator. |
 
-<img src="images/dynamo_functional_overview.png" alt="DYNAMO functional overview" title="DYNAMO functional overview" width=600>
+<img src="images/dynamo_functional_overview.png" alt="DYNAMO functional overview" title="DYNAMO functional overview" width=600 />
 
 A typical functional flow for the preceding diagram is as follows:
 
