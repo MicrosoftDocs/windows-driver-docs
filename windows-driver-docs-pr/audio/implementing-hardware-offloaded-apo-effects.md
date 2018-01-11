@@ -63,7 +63,7 @@ An offload SFX should review the offload pin supported formats and support/exten
 
 Offload MFX cannot change the format of the input stream, but it still needs to support the variety of formats offered by the offload endpoint and eliminate any unnecessary format conversion.
 
-During rendering in the offload pin, only one stream is active and there is no mixing of streams. So, processing the audio at both stream-level and mode-level is not necessary. Thus audio effects should not be enabled as both a stream effect and mode effect.
+During rendering in the offload pin, only one stream is active on that pin and therefore there is no mixing of streams. So, processing the audio at both stream-level and mode-level is not necessary. Thus audio effects may not need to be enabled as both a stream effect and mode effect. Offloaded endpoints will support more streams, and depending on the processing architecture for a system, Offload processing may need to be factored into SFX/MFX. 
 
 **INF file entries**
 
