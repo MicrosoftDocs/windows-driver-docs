@@ -19,7 +19,7 @@ ms.technology: windows-devices
 
 **Last updated**
 
--   December 2015
+-   January 2018
 
 **Applies to**
 
@@ -39,12 +39,12 @@ ms.technology: windows-devices
 
 Describes the behavior and usage for the `MemoryOverwriteRequestControlLock` UEFI variable, revision 2.
 
-To prevent advanced memory attacks, the existing system BIOS security mitigation **MemoryOverwriteRequestControl** is improved to support locking to defend against new threats.  The threat model is expanded to include the host OS kernel as an adversary, thus ACPI and UEFI Runtime Services executing at kernel privilege level are not trusted.  Similar to Secure Boot implementations, MorLock should be implemented in a privileged firmware execution context that cannot be tampered by the host OS kernel (e.g. System Management Mode, TrustZone, BMC, …).  The interface is built upon UEFI variable services. Those services are described in the UEFI Specification version 2.5, Section 7.2 named "Variable Services".
+To prevent advanced memory attacks, the existing system BIOS security mitigation **MemoryOverwriteRequestControl** is improved to support locking to defend against new threats.  The threat model is expanded to include the host OS kernel as an adversary, thus ACPI and UEFI Runtime Services executing at kernel privilege level are not trusted.  Similar to Secure Boot implementations, MorLock should be implemented in a privileged firmware execution context that cannot be tampered by the host OS kernel (e.g. System Management Mode, TrustZone, BMC, …).  The interface is built upon UEFI variable services, which are described in the UEFI Specification version 2.5, Section 7.2 named "Variable Services".
 
 **Note**   This mitigation, called *MorLock*, must be implemented on all new systems and not only limited to systems with Trusted Platform Modules. Revision 2 adds a new capability, *unlock*, to mitigate boot performance concerns, especially on large memory systems.
 
 **Note 2**      Regarding the ACPI \_DSM control method for setting the MOR bit state (as described in Section 6 of [PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.0](http://go.microsoft.com/fwlink/p/?LinkId=717870)):  
-If a BIOS implements this \_DSM method, it must respect the state of MorLock.  If the MorLock is locked, with or without a key, this \_DSM method must fail to change MOR and return a value of 1 corresponding to “General Failure”.  No ACPI mechanism is defined to unlock MorLock version 2.  Note that Windows has not directly invoked this \_DSM method since Windows 7 and considers it deprecated.  Some BIOS indirectly invoked this \_DSM method when the OS invokes ACPI \_PTS, but that is unnecessary.  We recommend removing this unnecessary \_DSM method from modern BIOS implementations.
+Microsoft recommends removing this \_DSM method from modern BIOS implementations.  However, if a BIOS implements this \_DSM method, it must respect the state of MorLock.  If the MorLock is locked, with or without a key, this \_DSM method must fail to change MOR and return a value of 1 corresponding to “General Failure”.  No ACPI mechanism is defined to unlock MorLock revision 2.  Note that Windows has not directly invoked this \_DSM method since Windows 7 and considers it deprecated.  Some BIOS *indirectly* invokes this \_DSM method when Windows invokes ACPI \_PTS as an implementation of MOR Auto Detection of Clean Shutdown (as described in Section 2.3 of [PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.0](http://go.microsoft.com/fwlink/p/?LinkId=717870)).  This ACPI \_PTS implementation of MOR Auto Detection is security deficient and should NOT be used.
 
 ## MemoryOverwriteRequestControlLock
 
