@@ -1089,6 +1089,11 @@
       "source_path": "windows-driver-docs-pr/network/ndis-status-receive-filter-queue-allocation-state.md",
       "redirect_URL": "/windows-hardware/drivers/network/virtual-machine-queue-status-indications",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/kernel-mode-sdk-topics-for-network-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/network/network-driver-topics-in-sdk-header-files",
+      "redirect_document_id": true
     }
   ]
 }

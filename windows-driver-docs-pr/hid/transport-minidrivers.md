@@ -20,7 +20,7 @@ For other transports, you will need to write transport minidrivers.
 HID minidrivers can be written by using one of the following frameworks:
 
 1.  UMDF – User Mode Driver Framework
-2.  KDMF – Kernel Mode Driver Framework
+2.  KMDF – Kernel Mode Driver Framework
 3.  WDM – Legacy Windows Driver Model
 
 **Note**  Microsoft encourages hardware vendors to use the in-box transport-minidrivers whenever possible. However, if your device requires an unsupported transport, Microsoft recommends using the Windows Driver Framework (UMDF or KMDF) as the driver model for your minidriver. You should only create a WDM minidriver if a specific transport is not supported by the Windows Driver Framework.
