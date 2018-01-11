@@ -32,7 +32,7 @@ Dbgeng.h (include Dbgeng.h)
 
 
 ### See Also
-[DebugBaseEventCallbacksWide](debugbaseeventcallbackswide.md)
+[DebugBaseEventCallbacks](debugbaseeventcallbacks.md)
 
  
 
