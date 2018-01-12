@@ -3,6 +3,11 @@ title: ACE
 description: ACE
 ms.assetid: efdf43ae-d4d4-4950-9435-e10bf5b75cf2
 keywords: ["access control entry WDK file systems", "ACE WDK file systems"]
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ACE
