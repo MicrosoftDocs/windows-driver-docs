@@ -2,7 +2,7 @@
 title: TTD Calls Objects
 description: This section describes the calls model objects associated with time travel debugging.
 ms.author: windowsdriverdev
-ms.date: 09/25/2017
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,6 +15,11 @@ ms.technology: windows-devices
 # TTD Calls Objects
 ## Description
 *TTD Calls* objects are used to give information about function calls that occur over the course of a trace.
+
+## Parameters
+| Property | Description |
+| --- | --- |
+| Function!SymbolName | One or more contained in double quotes, seperated by a comma. For example dx @$cursession.TTD.Calls("module!symbol1", "module!symbol2", ...) |
 
 ## Properties
 | Property | Description |
@@ -44,7 +49,22 @@ Note that the Calls function does computation, and depending on the size of the 
 
 ## Example Usage
 
-*Information pending*
+
+TBD 
+
+0:000> dx -r2 @$cursession.TTD.Calls("ucrtbase!initterm")
+@$cursession.TTD.Calls("ucrtbase!initterm")
+    [0x0]
+        EventType        : Call
+        ThreadId         : 0x2074
+        UniqueThreadId   : 0x2
+        TimeStart        : 1E:5D0
+        TimeEnd          : 2D:E
+        Function         : ucrtbase!_initterm
+        FunctionAddress  : 0x7ffb345825d0
+        ReturnAddress    : 0x7ff6a521677e
+        Parameters
+
 
 
 
