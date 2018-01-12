@@ -296,6 +296,8 @@
 ## [Debugger Programming Reference](debugger-programming-reference.md)
 ## [Debug Engine Interfaces](client-com-interfaces.md)
 ## [Debugger Engine Reference](debugger-engine-reference.md)
+### [DebugBaseEventCallbacks](debugbaseeventcallbacks.md)
+### [DebugBaseEventCallbacksWide](debugbaseeventcallbackswide.md)
 ### [Debug API Constants](debug-api-constants.md)
 #### [DBG_DUMP_XXX](dbg-dump-xxx.md)
 #### [DBG_DUMP_FIELD_XXX](dbg-dump-field-xxx.md)
