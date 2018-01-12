@@ -66,7 +66,7 @@ The following table specifies the functions & fields that are mandatory.
 
 If the function does not take an input argument and *Arg3* is not an empty Package, the function shall return the **General Status Code** of Invalid Input Parameters.
 
-## <span id="DSM_Method_Output"></span><span id="dsm_method_output"></span><span id="DSM_METHOD_OUTPUT"></span>\_DSM Method Output
+## \_DSM Method Output
 
 
 All methods will return a buffer of length greater than or equal to 4 bytes. The first 4 bytes of the return buffer are structured as follows:
