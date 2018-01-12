@@ -49,9 +49,9 @@ Note that the Calls function does computation, and depending on the size of the 
 
 ## Example Usage
 
+This example shows the calls object for ucrtbase!initterm.
 
-TBD 
-
+```
 0:000> dx -r2 @$cursession.TTD.Calls("ucrtbase!initterm")
 @$cursession.TTD.Calls("ucrtbase!initterm")
     [0x0]
@@ -64,6 +64,7 @@ TBD
         FunctionAddress  : 0x7ffb345825d0
         ReturnAddress    : 0x7ff6a521677e
         Parameters
+```
 
 
 
