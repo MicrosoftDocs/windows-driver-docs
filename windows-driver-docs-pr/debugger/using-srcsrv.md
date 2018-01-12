@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Using SrcSrv
 
 
-To use [SrcSrv](srcsrv.md) with WinDbg, KD, NTSD, or CDB, verify that you have installed a recent version of the Debugging Tools for Windows package (version 6.3 or later). Then, include the text `srv*` in the source path, separated by semicolons from any directories that are also in the source path.
+To use [SrcSrv](srcsrv.md) with WinDbg, KD, NTSD, or CDB, verify that you have installed a recent version of the [Debugging Tools for Windows](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/) package (version 6.3 or later). Then, include the text `srv*` in the source path, separated by semicolons from any directories that are also in the source path.
 
 For example:
 
