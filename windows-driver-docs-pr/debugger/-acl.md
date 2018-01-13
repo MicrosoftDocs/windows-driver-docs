@@ -1,5 +1,6 @@
 ---
 title: acl
+author: domars
 description: The acl extension formats and displays the contents of an access control list (ACL).
 ms.assetid: 591f56b6-5a70-4037-a285-a1bffd5bd387
 keywords: ["acl Windows Debugging"]
