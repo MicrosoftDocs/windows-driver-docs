@@ -36,7 +36,7 @@ ms.technology: windows-devices
 | IP         |  The instruction pointer of the code that made the memory access. |
 | Address    |	The Address that was read / written to / executed and will be in the range of [beginAddress, endAddress) from the parameters to .Memory().  Note that the interval is half-open.  That is, none of the returned events will have an address matching endAddress but there could be events matching endAddress – 1.|
 | Size       |	The size the size of the read/write/execute in bytes. This will typically be 8 bytes or less. In the event of code execution, it is the number of bytes in the instruction that was executed. |
-| Value   |	The value that was read, written or executed. In the case of execution it contains the code bytes for the instruction. Note the instruction bytes are listed in MSB order by the disassembler but will be stored in value in LSB order. |
+| Value   |	The value that was read, written or executed. In the case of execution, it contains the code bytes for the instruction. Note the instruction bytes are listed in MSB order by the disassembler but will be stored in value in LSB order. |
 
 
 ## Remarks
@@ -54,7 +54,7 @@ Note that this is a function that does computation, so it takes a while to run.
 
 ## Example Usage
 
-This example shows a grid display all of the positions in the trace where the four bytes of memory starting at 0x00a4fca0 were read access occurred. Click on any entry to drill down on each occurrence of memory access.
+This example shows a grid display of all the positions in the trace where the four bytes of memory starting at 0x00a4fca0 were read access occurred. Click on any entry to drill down on each occurrence of memory access.
 
 ```
 dx -g @$cursession.TTD.Memory(0x00a4fca0,0x00a4fca4, "r")
@@ -62,7 +62,7 @@ dx -g @$cursession.TTD.Memory(0x00a4fca0,0x00a4fca4, "r")
 
 ![memory object dx example grid output](images/ttd-time-travel-memory-object-dx-output.png) 
 
-You can click on the TimeStart fields any of the events  in the grid dispay to display information for that event. 
+You can click on the TimeStart fields in any of the events in the grid display, to display information for that event. 
 
 ```
 0:000> dx -r1 @$cursession.TTD.Memory(0x00a4fca0,0x00a4fca4, "r")[16].TimeStart
@@ -78,17 +78,14 @@ To move to the position in the trace that the event occurred, click on [Time Tra
 @$cursession.TTD.Memory(0x00a4fca0,0x00a4fca4, "r")[16].TimeStart.SeekTo()
 (27b8.3168): Break instruction exception - code 80000003 (first/second chance not available)
 Time Travel Position: 5D:113
-SYMSRV:  BYINDEX: 0x4
-         C:\ProgramData\Dbg\sym
-         ucrtbased.pdb
+
 eax=0000004c ebx=00dd0000 ecx=00a4f89c edx=00a4f85c esi=00a4f89c edi=00b61046
 eip=690795e5 esp=00a4f808 ebp=00a4f818 iopl=0         nv up ei pl nz na pe nc
 cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000206
-ucrtbased!__crt_internal_free_policy::operator()+0x5 [inlined in ucrtbased!__crt_stdio_output::formatting_buffer::~formatting_buffer+0x7]:
 690795e5 ffb604040000    push    dword ptr [esi+404h] ds:002b:00a4fca0=00000000
 ```
 
-In this example all of the positions in the trace where the four bytes of memory starting at 0x1bf7d0 were read/write accessed are listed. Click on any entry to drill down on each occurrence of memory access.
+In this example, all of the positions in the trace where the four bytes of memory starting at 0x1bf7d0 were read/write accessed are listed. Click on any entry to drill down on each occurrence of memory access.
 
 ```
 0:000> dx @$cursession.TTD.Memory(0x1bf7d0,0x1bf7d4, "rw")
@@ -100,7 +97,7 @@ In this example all of the positions in the trace where the four bytes of memory
      ...
 ```
 
-In this example all of the postions in the trace where the four bytes of memory starting at 0x13a1710 were execute/change accessed, were listed and the first occurance was clicked on to drill down on for addtional information.
+In this last example, the positions in the trace where the four bytes of memory starting at 0x13a1710 were execute/change accessed were listed. And then the first [0] occurrence was clicked on to display additional information.
 
 ```
 0:000> dx -r1 @$cursession.TTD.Memory(0x13a1710,0x13a1714, "ec")[0]
