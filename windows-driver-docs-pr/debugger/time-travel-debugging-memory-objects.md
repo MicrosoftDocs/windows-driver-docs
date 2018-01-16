@@ -2,7 +2,7 @@
 title: TTD Memory Objects
 description: This section describes the memory model objects associated with time travel debugging.
 ms.author: windowsdriverdev
-ms.date: 01/12/2018
+ms.date: 01/16/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,11 +31,11 @@ ms.technology: windows-devices
 | ThreadId   |	The OS thread ID of thread that made the request. |
 | UniqueThreadId |	 A unique ID for the thread across the trace. Regular thread IDs can get reused over the lifetime of a process but UniqueThreadIds cannot. |
 | TimeStart | A [position object](time-travel-debugging-position-objects.md) that describes the position when memory access was made. |
-| TimeEnd | A [position object](time-travel-debugging-position-objects.md) that describes the position at the time memory access was made. This will always be the same as the TimeStart for TTD.Memory objects.
+| TimeEnd | A [position object](time-travel-debugging-position-objects.md) that describes the position when memory access was made. This will always be the same as the TimeStart for TTD.Memory objects.
 | AccessType |	The access type - Read, Write or Execute. |
 | IP         |  The instruction pointer of the code that made the memory access. |
 | Address    |	The Address that was read / written to / executed and will be in the range of [beginAddress, endAddress) from the parameters to .Memory().  Note that the interval is half-open.  That is, none of the returned events will have an address matching endAddress but there could be events matching endAddress – 1.|
-| Size       |	The size the size of the read/write/execute in bytes. This will typically be 8 bytes or less. In the event of code execution, it is the number of bytes in the instruction that was executed. |
+| Size       |	The size of the read/write/execute in bytes. This will typically be 8 bytes or less. In the event of code execution, it is the number of bytes in the instruction that was executed. |
 | Value   |	The value that was read, written or executed. In the case of execution, it contains the code bytes for the instruction. Note the instruction bytes are listed in MSB order by the disassembler but will be stored in value in LSB order. |
 
 
@@ -47,6 +47,7 @@ The following access types are allowed in TTD.Memory queries:
 -	w - write
 -	rw - read / write
 -	e - execute
+-	rwe - read / write / execute
 -	ec - execute /change
 
 Note that this is a function that does computation, so it takes a while to run. 
