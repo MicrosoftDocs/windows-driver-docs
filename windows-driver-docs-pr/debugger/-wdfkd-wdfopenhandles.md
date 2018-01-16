@@ -3,7 +3,7 @@ title: wdfkd.wdfopenhandles
 description: The wdfkd.wdfopenhandles extension displays information about all the handles that are open on the specified WDF device.
 ms.assetid: 9b62a80a-6f53-4581-98b7-8eb5f9f146c2
 keywords: ["wdfkd.wdfopenhandles Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

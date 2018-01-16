@@ -3,7 +3,7 @@ title: .dml_start (Display DML Starting Point)
 description: The .dml_start command displays output that serves as a starting point for exploration using commands that support Debugger Markup Language (DML).
 ms.assetid: 1CFCACDC-B253-4E9B-9877-EE9F1E91395F
 keywords: [".dml_start (Display DML Starting Point) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

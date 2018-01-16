@@ -2,7 +2,7 @@
 title: Debugger Programming Reference
 description: This topic describes the programming reference topics.
 ms.assetid: 3CBD0E5F-AACA-49B5-B324-5E76BDC71283
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

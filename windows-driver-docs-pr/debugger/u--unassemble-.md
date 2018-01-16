@@ -3,7 +3,7 @@ title: u, ub, uu (Unassemble)
 description: The u* commands display an assembly translation of the specified program code in memory. This command should not be confused with the ~u (Unfreeze Thread) command.
 ms.assetid: 933a308c-61d1-4ca4-89c1-5749ba1b41c1
 keywords: ["u, ub, uu (Unassemble) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

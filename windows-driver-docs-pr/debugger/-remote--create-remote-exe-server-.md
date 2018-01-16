@@ -3,7 +3,7 @@ title: .remote (Create Remote.exe Server)
 description: The .remote command starts a Remote.exe Server, enabling a remote connection to the current debugging session.
 ms.assetid: fa3de33c-ba8c-4e9c-9899-b9a43f3195bf
 keywords: ["Create Remote.exe Server (.remote) command", "remote debugging through remote.exe, Create Remote.exe Server (.remote) command", ".remote (Create Remote.exe Server) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Using AMLI Debugger Commands
 description: Using AMLI Debugger Commands
 ms.assetid: 8efa6f13-67db-417a-83ec-8219afc9874c
 keywords: ["AMLI Debugger, AMLI Debugger commands"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

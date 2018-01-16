@@ -3,7 +3,7 @@ title: Activating a Debugging Server
 description: There are two ways to activate the debugging server.
 ms.assetid: aba75d2d-4077-415f-b847-023e47239e2e
 keywords: ["Activating a Debugging Server Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

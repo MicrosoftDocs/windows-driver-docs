@@ -3,7 +3,7 @@ title: x86 Architecture
 description: x86 Architecture
 ms.assetid: 42c62647-7c9a-496e-839f-91283db73a29
 keywords: ["x86 processor, architecture", "registers, on an x86 processor", "x86 processor, registers", "x86 processor, calling conventions", "x86 processor, data types"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: DBH Commands
 description: DBH Commands
 ms.assetid: 124e8be9-1b1a-4498-84a4-5dbb6b5b9026
 keywords: ["DBH, commands"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

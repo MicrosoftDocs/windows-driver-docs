@@ -3,7 +3,7 @@ title: wmitrace.logsave
 description: The wmitrace.logsave extension writes the current contents of the trace buffers for a trace session to a file.
 ms.assetid: 713fea09-d405-4142-b2e8-29c813a4c3b6
 keywords: ["wmitrace.logsave Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: ih
 description: The ih extension displays the interrupt history record for the specified processor.
 ms.assetid: 4c81bde4-da8b-4c44-8013-6c586c08e22b
 keywords: ["interrupt history record", "ih Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

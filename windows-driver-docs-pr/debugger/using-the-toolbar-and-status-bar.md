@@ -3,7 +3,7 @@ title: Using the Toolbar and Status Bar
 description: Using the Toolbar and Status Bar
 ms.assetid: 96427166-b6df-4f6b-b550-69d0eb33042d
 keywords: ["toolbar (WinDbg)", "toolbar (WinDbg), overview", "buttons (WinDbg Toolbar)", "buttons (WinDbg Toolbar), overview", "status bar", "status bar, overview", "WinDbg, toolbar", "WinDbg, status bar", "WinDbg, buttons"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: pat
 description: The pat extension displays the Page Attribute Table (PAT) registers for the target processor.
 ms.assetid: 41583410-08cc-49b5-96b2-b59d935f623e
 keywords: ["PAT", "pat Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

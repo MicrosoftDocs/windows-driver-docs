@@ -3,7 +3,7 @@ title: usb3kd.xhci_transferring
 description: The usb3kd.xhci_transferring extension displays a transfer ring (used by a USB 3.0 host controller) until it detects a cycle bit change.
 ms.assetid: BCF6DEF0-FB58-4FE6-88AD-BF778E00F052
 keywords: ["usb3kd.xhci_transferring Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

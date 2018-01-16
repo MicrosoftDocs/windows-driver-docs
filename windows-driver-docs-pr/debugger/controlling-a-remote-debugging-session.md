@@ -3,7 +3,7 @@ title: Controlling a Remote Debugging Session
 description: Controlling a Remote Debugging Session
 ms.assetid: dedd277d-1aa0-468c-919c-29b25b0b5c0d
 keywords: ["remote debugging through the debugger, controlling a session"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

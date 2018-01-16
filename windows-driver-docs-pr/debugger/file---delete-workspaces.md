@@ -3,7 +3,7 @@ title: File Delete Workspaces
 description: File Delete Workspaces
 ms.assetid: 1c86fa56-4e8d-44c9-8d31-92868bbe781a
 keywords: ["File Delete Workspaces", "workspaces, File Delete Workspaces"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

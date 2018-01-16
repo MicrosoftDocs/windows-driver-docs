@@ -3,7 +3,7 @@ title: Window Dock All
 description: Window Dock All
 ms.assetid: 93c46cf2-d396-4485-a00c-d5540362af83
 keywords: ["Window Dock All", "docking windows, Window Dock All"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

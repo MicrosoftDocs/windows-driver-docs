@@ -3,7 +3,7 @@ title: Finding a Kernel-Mode Memory Leak
 description: Finding a Kernel-Mode Memory Leak
 ms.assetid: 7e707b89-8614-46d7-9c2e-bea2ddf16164
 keywords: ["memory leak, kernel-mode", "memory leak, kernel-mode, overview"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

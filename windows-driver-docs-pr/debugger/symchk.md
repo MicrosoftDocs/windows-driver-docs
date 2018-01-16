@@ -3,7 +3,7 @@ title: SymChk
 description: SymChk
 ms.assetid: ba025aac-2a72-4150-9f29-0dc57b6483b7
 keywords: ["SymChk", "SymChk, overview", "symbols, SymChk"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

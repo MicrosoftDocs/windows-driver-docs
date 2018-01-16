@@ -3,7 +3,7 @@ title: wdfkd.wdfmemory
 description: The wdfkd.wdfmemory extension displays the address and size of the buffer that is associated with a framework memory object.
 ms.assetid: c0f8cc6c-03bf-4b00-8b0b-89d1b5357765
 keywords: ["wdfkd.wdfmemory Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: usbkd.usbpnp
 description: The usbkd.usbpnp command displays state context information about a USB hub.
 ms.assetid: 2FF7F6A5-E9E5-4E4F-8323-3328ED00BCB9
 keywords: ["usbkd.usbpnp Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

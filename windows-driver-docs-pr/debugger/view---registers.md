@@ -3,7 +3,7 @@ title: View Registers
 description: View Registers
 ms.assetid: d5299e53-1735-452b-9fd8-dbcb69e7cccd
 keywords: ["View Registers"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

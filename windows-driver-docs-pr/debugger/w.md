@@ -3,7 +3,7 @@ title: W (Windows Debugger Glossary)
 description: Glossary page - W
 Robots: noindex, nofollow
 ms.assetid: 99a1fa3e-f690-458a-afcd-ff54a7c40ba6
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

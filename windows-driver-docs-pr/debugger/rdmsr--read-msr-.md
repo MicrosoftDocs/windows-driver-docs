@@ -3,7 +3,7 @@ title: rdmsr (Read MSR)
 description: The rdmsr command reads a Model-Specific Register (MSR) value from the specified address.
 ms.assetid: 693f1be5-f215-4719-ae6f-30e367cefd77
 keywords: ["rdmsr (Read MSR) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

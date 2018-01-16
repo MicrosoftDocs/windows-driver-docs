@@ -3,7 +3,7 @@ title: Creating and Opening a Workspace
 description: Creating and Opening a Workspace
 ms.assetid: 0163f380-f982-4635-a450-ed83f0b52e03
 keywords: ["workspaces, creating", "workspaces, opening", "workspaces, named workspaces", "workspaces, default workspaces", "workspaces, types of workspaces"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Virtual and Physical Memory
 description: Virtual and Physical Memory
 ms.assetid: 346a46ea-9d44-4e12-8623-d118cd0c7e25
 keywords: ["memory access, virtual and physical memory", "virtual memory access", "physical memory access"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

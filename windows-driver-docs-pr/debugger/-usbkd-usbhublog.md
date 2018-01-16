@@ -3,7 +3,7 @@ title: usbkd.usbhublog
 description: The usbkd.usbhublog command displays the debug log for a USB hub.
 ms.assetid: DFDF595E-3452-40C2-A6C7-94FB8954002C
 keywords: ["usbkd.usbhublog Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

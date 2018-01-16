@@ -2,7 +2,7 @@
 title: Symbol Problems While Debugging
 description: Symbol Problems While Debugging
 ms.assetid: 2713c371-9683-4d0d-a8ab-8a4c897ba0ab
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

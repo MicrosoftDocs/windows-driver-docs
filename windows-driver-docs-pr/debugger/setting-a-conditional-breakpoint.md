@@ -3,7 +3,7 @@ title: Conditional breakpoints in WinDbg and other Windows debuggers
 description: Conditional breakpoints in WinDbg and other Windows debuggers are useful when you need to break in only if a specific condition is satisfied.
 ms.assetid: 9fa5b417-8904-48bc-ad5c-62ba35d70b73
 keywords: ["breakpoints, conditional", "conditional breakpoints"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

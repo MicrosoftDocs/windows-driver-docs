@@ -2,7 +2,7 @@
 title: Remote Debugging Using WinDbg
 description: Remote debugging involves two debuggers running at two different locations.
 ms.assetid: 3030CEE4-DF10-4F84-A32D-38613D7EE072
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

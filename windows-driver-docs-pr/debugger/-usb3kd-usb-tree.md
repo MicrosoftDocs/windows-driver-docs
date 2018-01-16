@@ -3,7 +3,7 @@ title: usb3kd.usb_tree
 description: The usb3kd.usb_tree extension displays information, in tree format, about all USB 3.0 controllers, hubs, and devices on the computer.
 ms.assetid: 8E24AD44-7B32-4299-8428-D8E9B36F5848
 keywords: ["usb3kd.usb_tree Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

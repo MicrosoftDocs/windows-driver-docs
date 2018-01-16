@@ -3,7 +3,7 @@ title: # (Search for Disassembly Pattern)
 description: The number sign (#) command searches for the specified pattern in the disassembly code.
 ms.assetid: 834dd432-94b8-4bf6-9318-09a118eab5ab
 keywords: ["(Search for Disassembly Pattern) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

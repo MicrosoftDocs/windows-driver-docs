@@ -3,7 +3,7 @@ title: wdfkd.wdfcommonbuffer
 description: The wdfkd.wdfcommonbuffer extension displays information about a WDF common buffer object.
 ms.assetid: 961c2802-1a32-4fbf-bd64-12a7f1557a62
 keywords: ["wdfkd.wdfcommonbuffer Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

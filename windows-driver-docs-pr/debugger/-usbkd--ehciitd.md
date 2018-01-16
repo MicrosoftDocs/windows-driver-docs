@@ -3,7 +3,7 @@ title: usbkd._ehciitd
 description: The usbkd._ehciitd command displays information from a usbehci _HCD_HSISO_TRANSFER_DESCRIPTOR structure.
 ms.assetid: 0878695D-E7ED-498D-AD37-994371C319C4
 keywords: ["usbkd._ehciitd Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

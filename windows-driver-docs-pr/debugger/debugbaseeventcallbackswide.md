@@ -3,7 +3,7 @@ title: debugbaseeventcallbackswide
 description: The DebugBaseEventCallbacksWide class provides a base implementation of the IDebugEventCallbacksWide interface. 
 ms.assetid: 38AD8472-1BA3-42EA-99CE-E91098A5B334
 keywords: [DebugBaseEventCallbacksWide]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 01/10/2018
 ms.topic: article
 ms.prod: windows-hardware

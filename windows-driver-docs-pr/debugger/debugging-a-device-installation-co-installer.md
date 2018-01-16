@@ -3,7 +3,7 @@ title: Debugging a Device Installation Co-Installer
 description: Debugging a Device Installation Co-Installer
 ms.assetid: a5cf3cec-bd61-49a6-b836-6759cd8c7d82
 keywords: ["device installation co-installer debugging", "installation co-installer debugging", "co-installer debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

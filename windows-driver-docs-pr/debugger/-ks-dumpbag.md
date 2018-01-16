@@ -3,7 +3,7 @@ title: ks.dumpbag
 description: The ks.dumpbag extension displays the contents of the object bag for the specified object.
 ms.assetid: a97b4794-b5dc-45a8-b1e9-5a626959020e
 keywords: ["ks.dumpbag Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

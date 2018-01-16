@@ -3,7 +3,7 @@ title: View Call Stack
 description: View Call Stack
 ms.assetid: a62332fd-f2d2-4715-bda5-4e8d73250d14
 keywords: ["View Call Stack"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

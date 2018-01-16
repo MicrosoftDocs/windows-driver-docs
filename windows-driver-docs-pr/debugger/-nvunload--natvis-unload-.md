@@ -3,7 +3,7 @@ title: .nvunload (NatVis Unload)
 description: The .nvunload command unloads a NatVis file from the debugger environment.
 ms.assetid: E63BE2B5-291B-4F78-98FF-C1D7663A184E
 keywords: [".nvunload (NatVis Unload) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

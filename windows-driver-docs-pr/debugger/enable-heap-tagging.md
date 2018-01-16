@@ -3,7 +3,7 @@ title: Enable heap tagging
 description: Enable heap tagging
 ms.assetid: be877811-075c-4019-81dd-73a134d5fb81
 keywords: ["Enable heap tagging (global flag)"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

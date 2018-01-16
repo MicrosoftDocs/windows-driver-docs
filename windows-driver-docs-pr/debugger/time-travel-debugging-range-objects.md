@@ -1,7 +1,7 @@
 ---
 title: TTD Range Objects
 description: This section describes the range model objects associated with time travel debugging.
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 09/22/2017
 ms.topic: article
 ms.prod: windows-hardware

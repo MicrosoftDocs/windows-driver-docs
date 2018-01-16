@@ -3,7 +3,7 @@ title: .else
 description: The .else token behaves like the else keyword in C.
 ms.assetid: aa783a66-2b28-40d1-a943-67a26e668612
 keywords: [".else Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

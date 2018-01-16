@@ -3,7 +3,7 @@ title: gpiokd.bankinfo
 description: The gpiokd.bankinfo command displays information about a GPIO bank.
 ms.assetid: C4AFF469-0624-4D59-AE78-9D7FC407AC3A
 keywords: ["gpiokd.bankinfo Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

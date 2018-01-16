@@ -3,7 +3,7 @@ title: Creating a Kernel-Mode Dump File
 description: Creating a Kernel-Mode Dump File
 ms.assetid: d3eb86b2-eba7-4ddb-90e9-0e26414436fb
 keywords: ["dump file, creating kernel-mode dump file", "dump file, NMI switch", "NMI switch"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

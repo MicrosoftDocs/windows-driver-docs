@@ -3,7 +3,7 @@ title: Modules
 description: Modules
 ms.assetid: 0cd99869-4014-4f9f-b5f1-d06c69fd134e
 keywords: ["symbols, modules", "modules"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

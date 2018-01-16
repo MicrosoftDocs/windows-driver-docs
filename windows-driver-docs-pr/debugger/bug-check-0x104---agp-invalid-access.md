@@ -3,7 +3,7 @@ title: Bug Check 0x104 AGP_INVALID_ACCESS
 description: The AGP_INVALID_ACCESS bug check has a value of 0x00000104. This indicates that the GPU wrote to a range of Accelerated Graphics Port (AGP) memory that had not previously been committed.
 ms.assetid: c1f5322e-847a-424f-b117-1714b8572a4f
 keywords: ["Bug Check 0x104 AGP_INVALID_ACCESS", "AGP_INVALID_ACCESS"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

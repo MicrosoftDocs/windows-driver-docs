@@ -3,7 +3,7 @@ title: amli do
 description: The amli do extension displays an AML data object.
 ms.assetid: 5597f691-5402-42da-84f5-d5993231191e
 keywords: ["amli do Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

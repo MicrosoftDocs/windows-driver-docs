@@ -3,7 +3,7 @@ title: CTRL+B (Quit Local Debugger)
 description: The CTRL+B key causes the debugger to terminate abruptly. This does not end a remote debugging session.
 ms.assetid: f70f4c40-244f-4abf-982f-d738800ac621
 keywords: ["CTRL+B (Quit Local Debugger) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

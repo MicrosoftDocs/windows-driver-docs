@@ -3,7 +3,7 @@ title: Bug Check 0x150 TCPIP_AOAC_NIC_ACTIVE_REFERENCE_LEAK
 description: The TCPIP_AOAC_NIC_ACTIVE_REFERENCE_LEAK bug check has a value of 0x00000150. This indicates that the NIC active reference should have been released when the send queue was fully drained.
 ms.assetid: D48424B0-DE50-46E5-B63C-76B653C9176B
 keywords: ["Bug Check 0x150 TCPIP_AOAC_NIC_ACTIVE_REFERENCE_LEAK", "TCPIP_AOAC_NIC_ACTIVE_REFERENCE_LEAK"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

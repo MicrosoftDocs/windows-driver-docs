@@ -2,7 +2,7 @@
 title: Debugger Engine Introduction
 description: Debugger Engine Introduction
 ms.assetid: fa52a1f0-9397-48a5-acbd-ce5347c0baef
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
