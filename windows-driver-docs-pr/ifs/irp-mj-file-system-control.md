@@ -9,6 +9,11 @@ api_name:
 - IRP_MJ_FILE_SYSTEM_CONTROL
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IRP\_MJ\_FILE\_SYSTEM\_CONTROL

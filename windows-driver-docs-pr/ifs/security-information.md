@@ -2,6 +2,11 @@
 title: SECURITY\_INFORMATION
 description: SECURITY\_INFORMATION
 ms.assetid: 28023f0f-62ae-407b-b81b-1c98499df9a2
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SECURITY\_INFORMATION

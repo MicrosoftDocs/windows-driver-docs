@@ -12,6 +12,11 @@ api_location:
 - Ntifs.h
 api_type:
 - HeaderDef
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # FSCTL\_QUERY\_VOLUME\_NUMA\_INFO control code
