@@ -3,7 +3,7 @@ title: Minidumps
 description: Minidumps
 ms.assetid: 2cb54df3-2e61-4d5c-9ef6-3c81787d2233
 keywords: ["dump file, minidump", "minidump"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

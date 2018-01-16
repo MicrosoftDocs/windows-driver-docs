@@ -3,7 +3,7 @@ title: Source Path
 description: This topic covers how to set the source path or load the individual source files.
 ms.assetid: b5dcb557-b413-401a-be4b-2d45b2597e6c
 keywords: source files and paths, source path
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Using a Repeater
 description: Using a Repeater
 ms.assetid: c6904b6d-f28b-4494-95d0-9e6fc3dc10f3
 keywords: ["repeater, using a repeater"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

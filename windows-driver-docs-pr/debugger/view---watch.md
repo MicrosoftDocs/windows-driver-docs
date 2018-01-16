@@ -3,7 +3,7 @@ title: View Watch
 description: View Watch
 ms.assetid: 722d6b80-32d8-406b-b9af-ef40d75462e5
 keywords: ["View Watch"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

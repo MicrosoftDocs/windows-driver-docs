@@ -3,7 +3,7 @@ title: idt
 description: The idt extension displays the interrupt service routines (ISRs) for a specified interrupt dispatch table (IDT).
 ms.assetid: 6b289fde-85a3-4a40-8354-db6861ca8cb2
 keywords: ["ISR (interrupt service routine)", "IDT (interrupt dispatch table)", "idt Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

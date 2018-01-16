@@ -3,7 +3,7 @@ title: ad (Delete Alias)
 description: The ad command deletes an alias from the alias list.
 ms.assetid: 8ff223b6-5cfb-4d87-b45f-ad9bd51faf7f
 keywords: ["ad (Delete Alias) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

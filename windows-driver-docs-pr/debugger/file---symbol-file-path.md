@@ -3,7 +3,7 @@ title: File Symbol File Path
 description: File Symbol File Path
 ms.assetid: 22d32b1b-d1b9-4627-99ed-08656da9b849
 keywords: ["File Symbol File Path", "symbol files and paths, File Symbol File Path"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

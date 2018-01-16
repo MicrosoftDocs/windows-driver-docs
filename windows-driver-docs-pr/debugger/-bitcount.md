@@ -3,7 +3,7 @@ title: bitcount
 description: The !bitcount extension counts the number of "1" bits in a memory range.
 ms.assetid: dacf3d63-6241-4779-afca-514905b37e26
 keywords: ["bitcount Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

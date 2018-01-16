@@ -3,7 +3,7 @@ title: Accessing Local Variables
 description: Accessing Local Variables
 ms.assetid: 0aab3fdf-fe0c-46ad-aa2f-90992811b001
 keywords: ["local variables, accessing"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Remote Tool Examples
 description: Remote Tool Examples
 ms.assetid: 624f1a78-04da-45c2-8f8d-a593d557be7d
 keywords: ["Remote Tool, examples"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

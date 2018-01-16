@@ -3,7 +3,7 @@ title: Device Node Status Flags
 description: Device Node Status Flags
 ms.assetid: 64f4548f-ace3-440c-8a36-97bd46cfa986
 keywords: ["Plug and Play (PnP), Device Node Status Flags", "Device Node Status Flags", "DNF_XXX"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

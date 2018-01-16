@@ -3,7 +3,7 @@ title: (System Status)
 description: The double vertical bar ( ) command prints status for the specified system or for all systems that you are currently debugging.Do not confuse this command with the (Process Status) command.
 ms.assetid: fcea61b1-2ec5-4c80-abd7-269b95d56cd4
 keywords: ["(System Status) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

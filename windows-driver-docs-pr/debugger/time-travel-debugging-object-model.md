@@ -1,7 +1,7 @@
 ---
 title: Time Travel Debugging - Introduction to Time Travel Debugging objects
 description: This section describes how to use the data model to query time travel traces. 
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: windows-hardware

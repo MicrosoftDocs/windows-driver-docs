@@ -2,7 +2,7 @@
 title: Remote Debugging Using KD
 description: Remote debuggng involves two debuggers running at two different locations.
 ms.assetid: 274CAB1D-DD3B-4ACD-919C-8B8C253BCE50
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

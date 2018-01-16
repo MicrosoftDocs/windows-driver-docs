@@ -3,7 +3,7 @@ title: Using Debugger Commands
 description: This section describes using Debugger Commands. You enter commands at the prompt at the bottom of the window.
 ms.assetid: 64dcc364-53b5-41d3-9266-abcfe4b328f4
 keywords: commands, debugger commands, meta-commands
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

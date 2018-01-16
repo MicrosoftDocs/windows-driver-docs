@@ -3,7 +3,7 @@ title: Security Vulnerabilities
 description: This section covers debugging security vulnerabilities
 ms.assetid: 2767987e-e247-4319-bc8e-0ff6906f2a5a
 keywords: security vulnerabilities, debugger, security
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

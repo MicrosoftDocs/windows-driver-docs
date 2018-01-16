@@ -2,7 +2,7 @@
 title: Troubleshooting Hyper-V Debugging
 description: Troubleshooting Hyper-V Debugging
 ms.assetid: e1062300-0855-476c-9375-fdc6bc774949
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

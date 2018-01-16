@@ -3,7 +3,7 @@ title: Debugging CSRSS
 description: Debugging CSRSS
 ms.assetid: 9c3a8498-d9e4-4070-aee8-c038fa1666a4
 keywords: ["CSRSS debugging", "NTSD, debugging CSRSS", "controlling the user-mode debugger from the kernel debugger, debugging CSRSS"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Example 7 Clearing All Flags for an Image File
 description: Example 7 Clearing All Flags for an Image File
 ms.assetid: 832c79de-07ca-4212-b3b3-ace396986ebb
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

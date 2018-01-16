@@ -1,7 +1,7 @@
 ---
 title: !index
 description: The !index extension indexes time travel traces or displays index status information.
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 09/21/2017
 ms.topic: article
 ms.prod: windows-hardware

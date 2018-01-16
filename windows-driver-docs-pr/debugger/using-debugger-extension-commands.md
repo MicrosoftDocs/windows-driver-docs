@@ -3,7 +3,7 @@ title: Using Debugger Extension Commands
 description: Using Debugger Extension Commands
 ms.assetid: 1db9a835-accb-41b9-9ab1-c4c9f0596aa5
 keywords: ["extension commands ( commands), using", "extension commands ( commands), default search order"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

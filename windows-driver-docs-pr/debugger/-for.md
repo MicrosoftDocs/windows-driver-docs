@@ -3,7 +3,7 @@ title: .for
 description: The .for token behaves like the for keyword in C, except that multiple increment commands must be separated by semicolons, not by commas.
 ms.assetid: 35f54c4c-e7f5-42a9-b579-1e4958b7286b
 keywords: [".for Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

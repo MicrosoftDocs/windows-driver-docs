@@ -3,7 +3,7 @@ title: Bug Check 0x13B PASSIVE_INTERRUPT_ERROR
 description: The PASSIVE_INTERRUPT_ERROR bug check has a value of 0x0000013B. This indicates that the kernel has detected issues with the passive-level interrupt.
 ms.assetid: 6C921FCB-B945-4909-BAD3-1DBD6E3CAA54
 keywords: ["Bug Check 0x13B PASSIVE_INTERRUPT_ERROR", "PASSIVE_INTERRUPT_ERROR"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

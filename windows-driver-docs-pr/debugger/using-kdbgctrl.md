@@ -3,7 +3,7 @@ title: Using KDbgCtrl
 description: Using KDbgCtrl
 ms.assetid: 386e8861-dd55-440c-9309-7e8cf6c27690
 keywords: ["KDbgCtrl", "KDbgCtrl, basic use", "DbgPrint buffer, changing buffer size", "DbgPrint buffer, KDbgCtrl utility"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

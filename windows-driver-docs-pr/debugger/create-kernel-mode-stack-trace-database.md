@@ -3,7 +3,7 @@ title: Create kernel mode stack trace database
 description: Create kernel mode stack trace database
 ms.assetid: 0c1f94c0-ebc7-4e3c-8101-ba3cf830e7f8
 keywords: ["Create kernel mode stack trace database (global flag)"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

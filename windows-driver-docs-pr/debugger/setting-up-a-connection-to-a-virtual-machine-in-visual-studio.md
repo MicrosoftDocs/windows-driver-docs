@@ -2,7 +2,7 @@
 title: Setting Up Kernel-Mode Debugging of a Virtual Machine in Visual Studio
 description: You can use Microsoft Visual Studio to set up and perform kernel-mode debugging of a virtual machine.
 ms.assetid: E7A289CA-29CE-4C6F-AD08-529E58379715
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

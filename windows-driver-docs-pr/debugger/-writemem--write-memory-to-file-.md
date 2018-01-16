@@ -3,7 +3,7 @@ title: .writemem (Write Memory to File)
 description: The .writemem command writes a section of memory to a file.
 ms.assetid: 928e9452-d9b4-49fa-a5fa-cdc3832d7349
 keywords: [".writemem (Write Memory to File) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

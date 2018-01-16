@@ -3,7 +3,7 @@ title: usb3kd.help
 description: The usb3kd.help command displays help for the USB 3 debugger extension commands.
 ms.assetid: 55A40718-1178-4E7B-8210-BDEB6386AE8D
 keywords: ["usb3kd.help Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

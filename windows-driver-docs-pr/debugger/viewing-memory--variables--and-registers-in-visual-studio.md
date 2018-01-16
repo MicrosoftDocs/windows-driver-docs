@@ -2,7 +2,7 @@
 title: Viewing and Editing Memory and Registers in Visual Studio
 description: The procedure covers Viewing and Editing Memory and Registers in Visual Studio.
 ms.assetid: BE365305-F1C7-4D29-885A-55D040D5D900
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

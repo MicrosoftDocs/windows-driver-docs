@@ -3,7 +3,7 @@ title: .restart (Restart Kernel Connection)
 description: The .restart command restarts the kernel connection.Do not confuse this command with the .restart (Restart Target Application) command, which works only in user mode.
 ms.assetid: 2c81625b-d75f-4c5f-9437-9619bf33b500
 keywords: [".restart (Restart Kernel Connection) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

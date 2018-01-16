@@ -1,7 +1,7 @@
 ---
 title: WinDbg Preview - Installation
 description: This section describes how to install the WinDbg Preview debugger.
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 08/17/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: .reboot (Reboot Target Computer)
 description: The .reboot command restarts the target computer.
 ms.assetid: cc311a3d-d46a-4564-97e8-fb6112d0a60d
 keywords: ["Reboot Target Computer (.reboot) command", "controlling the target, Reboot Target Computer (.reboot) command", ".reboot (Reboot Target Computer) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

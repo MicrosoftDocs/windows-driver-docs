@@ -3,7 +3,7 @@ title: Get RPC Thread Information
 description: Get RPC Thread Information
 ms.assetid: 4cb8d11f-5b0a-4526-9f64-ee69fd15d1ba
 keywords: ["RPC thread information"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

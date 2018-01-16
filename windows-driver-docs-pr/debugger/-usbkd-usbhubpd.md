@@ -3,7 +3,7 @@ title: usbkd.usbhubpd
 description: The usbkd.usbhubpd command displays information about a USB port.
 ms.assetid: 41D5E65D-76C2-45E0-9AC7-C2B50D806935
 keywords: ["usbkd.usbhubpd Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

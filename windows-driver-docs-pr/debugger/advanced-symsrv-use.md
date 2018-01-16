@@ -3,7 +3,7 @@ title: Advanced SymSrv Use
 description: Advanced SymSrv Use
 ms.assetid: 16d4dda0-4bcf-4450-9972-e20d71efc845
 keywords: ["SymSrv, features", "caching symbols", "symbol servers, caching", "symbols, caching", "symbol servers, downstream store", "downstream store (symbol server)"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

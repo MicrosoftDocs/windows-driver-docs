@@ -3,7 +3,7 @@ title: .netuse (Control Network Connections)
 description: The .netuse command adds a connection to a network share.
 ms.assetid: f27e5ae5-1beb-4d2b-987e-5e91d0742e2d
 keywords: [".netuse (Control Network Connections) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

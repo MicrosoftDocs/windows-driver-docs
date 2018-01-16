@@ -3,7 +3,7 @@ title: ndiskd.nb
 description: The ndiskd.nb extension displays information about a NET_BUFFER (NB) structure.
 ms.assetid: 7351264c-4adc-43ac-9eca-41deb3d35983
 keywords: ["ndiskd.nb Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

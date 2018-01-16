@@ -3,7 +3,7 @@ title: Arranging Windows
 description: Arranging Windows
 ms.assetid: f6c0b778-42a8-4073-8cdb-c4b801e59274
 keywords: ["debugging information windows, suggestions for docking"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

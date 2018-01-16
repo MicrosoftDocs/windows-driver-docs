@@ -3,7 +3,7 @@ title: s (Set Current Process)
 description: The s command sets or displays the current process number.
 ms.assetid: 6b4d8e00-426c-496b-9c52-c60faeb0c975
 keywords: ["s (Set Current Process) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

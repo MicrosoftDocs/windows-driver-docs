@@ -3,7 +3,7 @@ title: .time (Display System Time)
 description: The .time command displays information about the system time variables.
 ms.assetid: d8024f84-98ff-4017-81c5-8a08973f9e4b
 keywords: ["Display System Time (.time) command", ".time (Display System Time) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

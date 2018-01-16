@@ -3,7 +3,7 @@ title: pa (Step to Address)
 description: The pa command executes the program until the specified address is reached, displaying each step.
 ms.assetid: 497261a9-69fb-4df2-b342-cd62bda8a51f
 keywords: ["pa (Step to Address) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Bug Check 0x1000007F UNEXPECTED_KERNEL_MODE_TRAP_M
 description: The UNEXPECTED_KERNEL_MODE_TRAP_M bug check has a value of 0x1000007F.
 ms.assetid: 913355b6-f569-4535-a6cc-bdc6071b76ff
 keywords: ["Bug Check 0x1000007F UNEXPECTED_KERNEL_MODE_TRAP_M", "UNEXPECTED_KERNEL_MODE_TRAP_M"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

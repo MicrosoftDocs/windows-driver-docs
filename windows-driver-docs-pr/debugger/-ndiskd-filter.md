@@ -3,7 +3,7 @@ title: ndiskd.filter
 description: The ndiskd.filter extension displays information about an NDIS light-weight filter (LWF). If you run this extension with no parameters, ndiskd will display a list of all LWFs.
 ms.assetid: 4cf0f8bc-a15a-49db-b7db-13d60fd0c767
 keywords: ["ndiskd.filter Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

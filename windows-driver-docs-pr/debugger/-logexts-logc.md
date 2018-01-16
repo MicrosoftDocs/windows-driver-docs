@@ -3,7 +3,7 @@ title: logexts.logc
 description: The logexts.logc extension displays all API categories, displays all APIs in a specific category, or enables and disables the logging of APIs in one or more categories.
 ms.assetid: b0132055-da13-45a8-8e83-06ddcb8b90d7
 keywords: ["logexts.logc Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

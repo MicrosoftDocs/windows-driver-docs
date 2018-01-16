@@ -3,7 +3,7 @@ title: SymChk Command-Line Options
 description: SymChk uses the following syntax
 ms.assetid: e17dd001-2830-49bd-b727-fcd772ee23b4
 keywords: ["SymChk Command-Line Options Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

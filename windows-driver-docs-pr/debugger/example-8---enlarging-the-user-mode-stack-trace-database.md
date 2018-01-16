@@ -2,7 +2,7 @@
 title: Example 8 Enlarging the User-Mode Stack Trace Database
 description: Example 8 Enlarging the User-Mode Stack Trace Database
 ms.assetid: b04f6b86-a210-4941-a4eb-a9059d9890d9
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

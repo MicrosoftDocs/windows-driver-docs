@@ -3,7 +3,7 @@ title: ptov
 description: The ptov extension displays the entire physical-to-virtual map for a given process.
 ms.assetid: 82352d12-4e81-4746-9333-b2cc98eb7a9d
 keywords: ["ptov Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

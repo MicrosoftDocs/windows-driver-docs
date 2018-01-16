@@ -3,7 +3,7 @@ title: timer
 description: The timer extension displays a detailed listing of all system timer use.
 ms.assetid: 795bdfe1-1ee4-4bf2-9fcd-80415fe84754
 keywords: ["timer Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

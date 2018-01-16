@@ -3,7 +3,7 @@ title: reg
 description: The reg extension displays and searches through registry data.
 ms.assetid: 97944c84-da2e-4859-bf99-75d05413314d
 keywords: ["reg Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
