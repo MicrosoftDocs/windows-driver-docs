@@ -53,14 +53,14 @@ This transition timeframe table contains estimates of when features will be avai
 
 | Task                                 | Transition timeframe |
 |--------------------------------------|----------------------|
-| WLK device certification submissions | End of 2017          |
-| Attestation signing                  | January 2016         |
-| Hardware certification submissions   | End of 2017          |
-| UEFI and LSA                         | Early 2018           |
-| Device metadata                      | To be scheduled      |
-| Bug management                       | To be scheduled      |
-| Remote debugging (WRD)               | To be scheduled      |
-| Win32 app certification              | To be scheduled      |
+| WLK device certification submissions | March 2018          |
+| Attestation signing                  | Available in HDC         |
+| Hardware certification submissions   | Available in HDC          |
+| UEFI and LSA                         | March 2018           |
+| Device metadata                      | March 2018      |
+| Bug management                       | Migrated      |
+| Remote debugging (WRD)               | Retiring      |
+| Win32 app certification              | Rehome      |
 
  
 
