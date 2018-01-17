@@ -58,9 +58,9 @@ This transition timeframe table contains estimates of when features will be avai
 | Hardware certification submissions   | Completed          | [Hardware certification submissions](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/hardware-certification-submissions)
 | UEFI and LSA                         | March 2018           | |
 | Device metadata                      | March 2018      | |
-| Bug management                       | Migrated      | |
+| Bug management                       | Migrated      | [Bug management](http://aka.ms/collaboratedocs) |
 | Remote debugging (WRD)               | Retiring      | |
-| Win32 app certification              | Rehome      | |
+| Win32 app certification              | New landing page coming soon      | |
 
  
 
