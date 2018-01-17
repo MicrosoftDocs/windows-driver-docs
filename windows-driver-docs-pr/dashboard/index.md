@@ -51,16 +51,16 @@ You must continue to use [Hardware Dev Center (Sysdev)](dashboard-services.md) t
 
 This transition timeframe table contains estimates of when features will be available in the Windows Hardware Dev Center dashboard. Feature specific legal and administration tasks will transition when the feature transitions.
 
-| Task                                 | Transition timeframe |
-|--------------------------------------|----------------------|
-| WLK device certification submissions | March 2018          |
-| Attestation signing                  | Available in HDC         |
-| Hardware certification submissions   | Available in HDC          |
-| UEFI and LSA                         | March 2018           |
-| Device metadata                      | March 2018      |
-| Bug management                       | Migrated      |
-| Remote debugging (WRD)               | Retiring      |
-| Win32 app certification              | Rehome      |
+| Task                                 | Transition timeframe | Documentation link (if available) |
+|--------------------------------------|----------------------|----------------------|
+| WLK device certification submissions | March 2018          | |
+| Attestation signing                  | Completed         | [Attestation signing a kernel driver for public release](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/attestation-signing-a-kernel-driver-for-public-release) |
+| Hardware certification submissions   | Completed          | [Hardware certification submissions](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/hardware-certification-submissions)
+| UEFI and LSA                         | March 2018           | |
+| Device metadata                      | March 2018      | |
+| Bug management                       | Migrated      | |
+| Remote debugging (WRD)               | Retiring      | |
+| Win32 app certification              | Rehome      | |
 
  
 
