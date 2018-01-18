@@ -23,7 +23,7 @@ There are TTD extensions that add data to the *Session* and *Process* data model
 ## Process Objects
 The primary objects added to *Process* objects can be found in the *TTD* namespace off of any *Process* object. For example, `@$curprocess.TTD`.
 
-### Children
+### Properties
 | Object | Description |
 | --- | --- |
 | Lifetime | A [TTD range object](time-travel-debugging-range-objects.md) describing the lifetime of the entire trace. |
@@ -47,6 +47,9 @@ The primary objects added to *Session* objects can be found in the *TTD* namespa
 | --- | --- |
 | Data.Heap() | A collection of [heap objects](time-travel-debugging-heap-objects.md) that were allocated during the trace. Note that this is a function that does computation, so it takes a while to run.|
 | Calls() | Returns a collection of [calls objects](time-travel-debugging-calls-objects.md) that match the input string. The input string can contain wildcards. Note that this is a function that does computation, so it takes a while to run.  |
+| Memory() | This is a method that takes beginAddress, endAddress and dataAccessMask parameters and returns a collection of [memory objects](time-travel-debugging-memory-objects.md). Note that this is a function that does computation, so it takes a while to run.  |
+
+
 
 ## Examples
 
