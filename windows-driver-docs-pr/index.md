@@ -27,7 +27,7 @@ ms.technology: windows-devices
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Get started with Universal Windows Drivers</h3>
+                                    <h3><b>Get started with Universal Windows Drivers</b></h3>
                                 </div>
                             </div>
                         </div>
@@ -41,11 +41,11 @@ ms.technology: windows-devices
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage"> 
-                                        <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
+                                        <img src="https://docs.microsoft.com/media/common/i_api-reference.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>WDK DDI Reference</h3>
+                                    <h3><b>WDK DDI Reference</b></h3>
                                 </div>
                             </div>
                         </div>
