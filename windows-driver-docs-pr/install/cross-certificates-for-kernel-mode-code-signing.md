@@ -84,6 +84,7 @@ The following list contains all of the CAs that are currently supported by Micro
 | Thawte Primary Root CA – G3                                  | ba 57 ca 5e 78 dd 2d 1d 74 76 ae be e9 95 3e 39 6f d0 55 46 | [Download](http://go.microsoft.com/fwlink/p/?linkid=321786) |
 | VeriSign Class 3 Public Primary Certification Authority – G5 | 57 53 4c cc 33 91 4c 41 f7 0e 2c bb 21 03 a1 db 18 81 7d 8b | [Download](http://go.microsoft.com/fwlink/p/?linkid=321787) |
 | VeriSign Universal Root Certification Authority              | 9e d8 cd 56 01 f0 10 56 51 eb bb 3f 57 f0 31 82 e5 fa 7e 01 | [Download](http://go.microsoft.com/fwlink/p/?linkid=321788) |
+
 ## New Cross-Certificate List
 
 
