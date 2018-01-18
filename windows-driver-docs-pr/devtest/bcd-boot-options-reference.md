@@ -11,7 +11,7 @@ ms.assetid: 351f8bc3-a228-48a4-bda8-69ee8521a5d3
 
 This section describes the boot options for Windows 10, Windows 8.1, Windows 8, Windows 7, and Windows Vista, that are related to developing, testing, and debugging drivers on computers with x86-based and x64-based processors. You can add these parameters to the boot entries for Windows operating systems.
 
-> \[!Note\]
+> [!NOTE]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
  

@@ -18,7 +18,7 @@ The **WdfRequestSendSyncAtDispatch2** rule verifies that the [**WdfRequestSend**
 
 If the driver sets the WDF\_REQUEST\_SEND\_OPTION\_SYNCHRONOUS flag, it must call the [**WdfRequestSend**](https://msdn.microsoft.com/library/windows/hardware/ff550027) function at IRQL = PASSIVE\_LEVEL. If this flag is not set, the driver must call the **WdfRequestSend** function at IRQL = DISPATCH\_LEVEL.
 
-> \[!Note\]
+> [!NOTE]
 >
 > This rule tests the same conditions as the [**WdfRequestSendSyncAtDispatch**](wdfrequestsendsyncatdispatch.md) rule, but it uses a different harness to test different code paths.
 

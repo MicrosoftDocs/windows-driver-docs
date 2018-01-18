@@ -1,6 +1,6 @@
 ---
 title: /execute
-description: The /execute parameter disables Data Execution Prevention (DEP) and Physical Address Extension (PAE).Note � DEP is a highly effective security feature.
+description: The /execute parameter disables Data Execution Prevention (DEP) and Physical Address Extension (PAE).Note � DEP is a highly effective security feature.
 ms.assetid: 2d275a80-5d7f-4b6d-ba82-2bb6801d1d56
 keywords: ["/execute Driver Development Tools"]
 topic_type:
@@ -16,7 +16,7 @@ api_type:
 
 The **/execute** parameter disables Data Execution Prevention (DEP) and Physical Address Extension (PAE).
 
-> \[!Note\]DEP is a highly effective security feature. Do not disable DEP unless you have no other alternative.
+> [!NOTE]DEP is a highly effective security feature. Do not disable DEP unless you have no other alternative.
 >
 > **Note**   The **/execute** parameter is supported in in Windows Server 2003 with SP1 to disable both DEP and PAE . To disable DEP and PAE in Windows XP with Service Pack 2 (SP2), use **/noexecute=alwaysoff**. For more information, see [**/noexecute**](-noexecute.md).
 >

@@ -35,7 +35,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="--id--"></a>\[**{***ID***}**\]  
 > The **{***ID***}** is the GUID that is associated with the boot entry. If you do not specify an **{***ID***}**, the command modifies the current operating system boot entry. If a boot entry is specified, the GUID associated with the boot entry must be enclosed in braces **{ }**. To view the GUID identifiers for all of the active boot entries, use the **bcdedit /enum** command. The identifier for the current boot entry is **{current}**. For more information about this option, use the following command: **bcdedit /? ID**
 >
-> > \[!Note\]
+> > [!NOTE]
 > > If you are using [Windows PowerShell](http://go.microsoft.com/fwlink/p/?linkid=108518), you must use quotes around the boot entry identifier, for example: **"{49916baf-0e08-11db-9af4-000bdbd316a0}"** or **"{current}"**.
 >
 >  
@@ -50,7 +50,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="-------bootmenupolicy----legacy---standard--"></a> **bootmenupolicy** \[ **Legacy** | **Standard** \]  
 > Defines the type of boot menu the system will use. ForWindows 10, Windows 8.1, Windows 8 and Windows RT the default is **Standard**. For Windows Server 2012 R2, Windows Server 2012, the default is **Legacy**. When **Legacy** is selected, the Advanced options menu (**F8**) is available. When **Standard** is selected, the boot menu will appear only under certain conditions: for example, if there is a startup failure, if you are booting up from a repair disk or installation media, if you have configured multiple boot entries, or if you manually configured the computer to use Advanced startup. When **Standard** is selected, the **F8** key is ignored during boot. Windows 8 PCs start up quickly so there isn't enough time to press **F8**. For more information, see [Windows Startup Settings (including safe mode)](http://go.microsoft.com/fwlink/p/?linkid=313921).
 >
-> > \[!Note\]
+> > [!NOTE]
 > > The option is available starting with Windows 8 and Windows Server 2012. You can also use the **onetimeadvancedoptions** to use the Advanced options (**F8**) menu (**Legacy**) one time on the next boot.
 >
 >  
@@ -85,7 +85,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="bootux---disabled---basic----standard--"></a>**bootux** \[ **disabled** | **basic** | **standard** \]  
 > Controls the boot screen animation. The possible values are disabled, basic, and standard.
 >
-> > \[!Note\]
+> > [!NOTE]
 > > Not supported in Windows 8 and Windows Server 2012.
 >
 >  
@@ -93,7 +93,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="-------disabledynamictick---yes---no--"></a> **disabledynamictick** \[ **yes** | **no** \]  
 > Enables and disables dynamic timer tick feature. The option is available starting with Windows 8 and Windows Server 2012.
 >
-> > \[!Note\]
+> > [!NOTE]
 > > This option should only be used for debugging.
 >
 >  
@@ -101,7 +101,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="disableelamdrivers---yes---no--"></a>**disableelamdrivers** \[ **yes** | **no** \]  
 > Controls the loading of Early Launch Antimalware (ELAM) drivers. The OS loader removes this entry for security reasons. This option can only be triggered by using the F8 menu. Someone must be physically present (at the computer) to trigger this option.
 >
-> > \[!Note\]
+> > [!NOTE]
 > > This option should only be used for debugging. The option is available starting with Windows 8 and Windows Server 2012.
 >
 >  
@@ -109,7 +109,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="forcelegacyplatform---yes---no--"></a>**forcelegacyplatform** \[ **yes** | **no** \]  
 > Forces the OS to assume the presence of legacy PC devices like CMOS and keyboard controllers.
 >
-> > \[!Note\]
+> > [!NOTE]
 > > This option should only be used for debugging. The option is available starting with Windows 8 and Windows Server 2012.
 >
 >  
@@ -132,7 +132,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="hypervisorbusparams-bus-device-function"></a>**hypervisorbusparams** *Bus***.***Device***.***Function*  
 > Defines the PCI bus, device, and function numbers of the debugging device. For example, 1.5.0 describes the debugging device on bus 1, device 5, function 0. Use this option when you are using either a 1394 cable, or a USB 2.0 or USB 3.0 debug cable for debugging.
 >
-> > \[!Note\]
+> > [!NOTE]
 > > The option is available starting in Windows 8 and Windows Server 2012.
 >
 >  
@@ -172,7 +172,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="hypervisorhostip--ip-address--"></a>**hypervisorhostip** *IP address*   
 > (Only used when the **hypervisordebugtype** is **Net**.) For debugging hypervisor over a network connection, specifies the IPv4 address of the host debugger. For information about debugging Hyper-V, see [Attaching to a Target Computer Running Hyper-V](https://msdn.microsoft.com/library/windows/hardware/ff538138).
 >
-> > \[!Note\]
+> > [!NOTE]
 > > The option is available starting in Windows 8 and Windows Server 2012.
 >
 >  
@@ -180,7 +180,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="hypervisorhostport---port---"></a>**hypervisorhostport** \[ *port* \]  
 > (Only used when the **hypervisordebugtype** is **Net**.) For network debugging, specifies the port to communicate with on the host debugger. Should be 49152 or higher.
 >
-> > \[!Note\]
+> > [!NOTE]
 > > The option is available starting in Windows 8 and Windows Server 2012.
 >
 >  
@@ -188,7 +188,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="hypervisordhcp-----yes---no----"></a>**hypervisordhcp** \[ **yes** | **no** \]  
 > Controls use of DHCP by the network debugger used with the hypervisor. Setting this to **no** forces the use of Automatic Private IP Addressing (APIPA) to obtain a local link IP address.
 >
-> > \[!Note\]
+> > [!NOTE]
 > > The option is available starting in Windows 8 and Windows Server 2012.
 >
 >  
@@ -196,7 +196,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="hypervisoriommupolicy-----default---enable------disable-"></a>**hypervisoriommupolicy** \[ **default** | **enable** | **disable**\]  
 > Controls whether the hypervisor uses an Input Output Memory Management Unit (IOMMU).
 >
-> > \[!Note\]
+> > [!NOTE]
 > > The option is available starting in Windows 8 and Windows Server 2012.
 >
 >  
@@ -210,7 +210,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="hypervisornumproc-number"></a>**hypervisornumproc** *number*  
 > Specifies the total number of logical processors that can be started in the hypervisor.
 >
-> > \[!Note\]
+> > [!NOTE]
 > > The option is available starting in Windows 8 and Windows Server 2012.
 >
 >  
@@ -218,7 +218,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="hypervisorrootproc-number"></a>**hypervisorrootproc** *number*  
 > Specifies the maximum number of virtual processors in the root partition and limits the number of post-split Non-Uniform Memory Architecture (NUMA) nodes which can have logical processors started in the hypervisor.
 >
-> > \[!Note\]
+> > [!NOTE]
 > > The option is available starting in Windows 8 and Windows Server 2012.
 >
 >  
@@ -226,7 +226,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="hypervisorrootprocpernode-number"></a>**hypervisorrootprocpernode** *number*  
 > Specifies the total number of virtual processors in the root partition that can be started within a pre-split Non-Uniform Memory Architecture (NUMA) node.
 >
-> > \[!Note\]
+> > [!NOTE]
 > > The option is available starting in Windows 8 and Windows Server 2012.
 >
 >  
@@ -234,7 +234,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="hypervisorusekey----key--"></a>**hypervisorusekey** \[ *key* \]  
 > (Only used when the **hypervisordebugtype** is **Net**.) For network debugging specifies the key with which to encrypt the connection. \[0-9\] and \[a-z\] allowed only.
 >
-> > \[!Note\]
+> > [!NOTE]
 > > The option is available starting in Windows 8 and Windows Server 2012.
 >
 >  
@@ -242,7 +242,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="hypervisoruselargevtlb----yes---no-"></a>**hypervisoruselargevtlb** \[ **yes** | **no**   
 > Increases virtual Translation Lookaside Buffer (TLB) size.
 >
-> > \[!Note\]
+> > [!NOTE]
 > > The option is available starting in Windows 8 and Windows Server 2012.
 >
 >  
@@ -262,7 +262,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="-------loadoptions-busparams-bus-device-function-------"></a> **loadoptions busparams=***Bus.Device.Function*   
 > Specifies the target controller when multiple controllers exist. This syntax is appropriate when using either a 1394 cable or a USB 2.0 debug cable for debugging. *Bus* specifies the bus number, *Device* specifies the device number, and *Function* specifies the function number.
 >
-> > \[!Note\]
+> > [!NOTE]
 > > For 1394 debugging, the bus parameters must be specified in decimal, regardless of which version of Windows is being configured. The format of the bus parameters used for USB 2.0 debugging depends on the Windows version. In Windows Server 2008, the USB 2.0 bus parameters must be specified in hexadecimal. In Windows 7 and Windows Server 2008 R2 and later versions of Windows, the USB 2.0 bus parameters must be specified in decimal.
 >
 >  
@@ -319,7 +319,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="onetimeadvancedoptions---on---off---"></a>**onetimeadvancedoptions** \[ **on** | **off** \]  
 > Controls whether the system boots to the legacy menu (F8 menu) on the next boot.
 >
-> > \[!Note\]
+> > [!NOTE]
 > > The option is available starting in Windows 8 and Windows Server 2012.
 >
 >  
@@ -343,7 +343,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="-------quietboot---on---off--"></a> **quietboot** \[ **on** | **off** \]  
 > Controls the display of a high-resolution bitmap in place of the Windows boot screen display and animation. In operating systems prior to Windows Vista, the **/noguiboot** serves a similar function.
 >
-> > \[!Note\]
+> > [!NOTE]
 > > Do not use the **quietboot** option in Windows 8 as it will prevent the display of bug check data in addition to all boot graphics.
 >
 >  
@@ -363,7 +363,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="-------testsigning---on---off--"></a> **testsigning** \[ **on** | **off** \]  
 > Controls whether Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2008, or Windows Vista will load any type of test-signed kernel-mode code. This option is not set by default, which means test-signed kernel-mode drivers on 64-bit versions of Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2008, and Windows Vista will not load by default. After you run the BCDEdit command, restart the computer so that the change takes effect. For more information, see [Introduction to Test-Signing](https://msdn.microsoft.com/library/windows/hardware/ff547660).
 >
-> > \[!Note\]
+> > [!NOTE]
 > > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 >
 >  
@@ -383,7 +383,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="tscsyncpolicy----default---legacy---enhanced--"></a>**tscsyncpolicy** \[ **Default** | **Legacy** | **Enhanced** \]  
 > Controls the times stamp counter synchronization policy. This option should only be used for debugging.
 >
-> > \[!Note\]
+> > [!NOTE]
 > > The option is available starting in Windows 8 and Windows Server 2012.
 >
 >  
@@ -394,7 +394,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="-------useplatformclock---yes---no--"></a> **useplatformclock** \[ **yes** | **no** \]  
 > Forces the use of the platform clock as the system's performance counter.
 >
-> > \[!Note\]
+> > [!NOTE]
 > > This option should only be used for debugging.
 >
 >  
@@ -405,7 +405,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="-------useplatformtick---yes---no--"></a> **useplatformtick** \[ **yes** | **no** \]  
 > Forces the clock to be backed by a platform source, no synthetic timers are allowed. The option is available starting in Windows 8 and Windows Server 2012.
 >
-> > \[!Note\]
+> > [!NOTE]
 > > This option should only be used for debugging.
 >
 >  

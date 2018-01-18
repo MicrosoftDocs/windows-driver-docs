@@ -16,7 +16,7 @@ api_type:
 
 The **/debug** boot option enables or disables kernel debugging of the Windows operating system associated with the specified boot entry or the current boot entry.
 
-> \[!Note\]
+> [!NOTE]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
  

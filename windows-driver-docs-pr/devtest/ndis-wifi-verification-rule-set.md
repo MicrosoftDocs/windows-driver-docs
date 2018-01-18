@@ -7,7 +7,7 @@ ms.assetid: B856F42E-E4AD-4178-AF71-3E68A23209C9
 # NDIS/WIFI verification rule set
 
 
-> \[!Note\]
+> [!NOTE]
 > You can test NDIS/WIFI drivers with these rules starting with Windows 8.1.
 
  

@@ -92,7 +92,7 @@ Specifies the speed of a kernel debugger connection in BPS. Valid values for *Ba
 <a href="" id="-------1394------"></a> **1394**   
 Specifies debugging with an IEEE 1394 (FireWire) cable. This feature is supported only if your target computer and your host computer are both running Windows XP or a later version of Windows.
 
-> \[!Note\]
+> [!NOTE]
 > To perform kernel debugging with a 1394 cable when the target computer is running Windows Server 2003 (with no service packs installed) or Windows XP with Service Pack 1 (SP1), you must disable the 1394 host controller on the target computer and install the 1394 virtual driver that is included in the Debugging Tools for Windows package on the host computer. For instructions, see the [Disabling the 1394 Host Controller](http://go.microsoft.com/fwlink/p/?linkid=113154) and [Installing the 1394 Virtual Driver](http://go.microsoft.com/fwlink/p/?linkid=113153) topics in the Debugging Tools for Windows documentation on MSDN.
 
  
@@ -106,7 +106,7 @@ Specifies the 1394 channel. The default value is 0. The value of *Channel* must 
 <a href="" id="-------usb------"></a> **usb**   
 Specifies debugging with a USB 2.0 debugging cable. This feature is supported only if your host computer is running Windows 2000 or later, and your target computer is running Windows Vista or later.
 
-> \[!Note\]
+> [!NOTE]
 > Before you perform kernel debugging over a USB 2.0 cable, additional configuration is required. For more information, see the [Setting Up a USB 2.0 Debug Cable Connection](http://go.microsoft.com/fwlink/p/?linkid=113153) topic in Debugging Tools for Windows documentation on MSDN.
 
  

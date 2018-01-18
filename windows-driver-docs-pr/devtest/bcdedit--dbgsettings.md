@@ -16,7 +16,7 @@ api_type:
 
 The **/dbgsettings** option sets or displays the current global debugger settings for the computer. To enable or disable the kernel debugger, use the [**BCDEdit /debug**](bcdedit--debug.md) option.
 
-> \[!Note\]
+> [!NOTE]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
  
@@ -63,7 +63,7 @@ The LOCAL option is available in Windows 8.0 and Windows Server 2012 and later.
 <a href="" id="-------baudrate-baud------"></a> **BAUDRATE:***baud*   
 (Only used when the connection type is **SERIAL**.) Specifies the baud rate to use. This parameter is optional. Valid values for *baud* are 9600, 19200, 38400, 57600, and 115200. The default baud rate is 115200 bps.
 
-> \[!Note\]
+> [!NOTE]
 > If the Windows Special Administration Console (SAC) application is running on a target machine that is configured for kernel mode debug through a serial port, the SAC application may cause the debugger connection to drop. This event occurs because the COM port baud value changes after the debugger connection is established. Either close the SAC application before running the debugger or change the debugger COM port baud value to 9600.
 
  

@@ -16,7 +16,7 @@ api_type:
 
 The **PnpRemove** rule specifies that the driver cannot complete IRP\_MN\_SURPRISE\_REMOVAL, IRP\_MN\_CANCEL\_REMOVE\_DEVICE, IRP\_MN\_CANCEL\_STOP\_DEVICE, or IRP\_MN\_REMOVE\_DEVICE requests with a failure.
 
-> \[!Note\]
+> [!NOTE]
 > In Windows 8.1, you can test the **PnpRemove** rule using [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448). The rule is not currently available for use with [Static Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff552808).
 
  

@@ -1,6 +1,6 @@
 ---
 title: /noexecute
-description: The /noexecute parameter enables, disables, and configures Data Execution Prevention (DEP), a set of hardware and software technologies designed to prevent harmful code from running in protected memory locations.For more information about using the /noexecute parameter and the other parameters that affect DEP configuration, see Boot Parameters to Configure DEP and PAE. NoteÂ Â DEP is a highly effective security feature. Do not disable DEP unless you have no alternative.Â
+description: The /noexecute parameter enables, disables, and configures Data Execution Prevention (DEP), a set of hardware and software technologies designed to prevent harmful code from running in protected memory locations.For more information about using the /noexecute parameter and the other parameters that affect DEP configuration, see Boot Parameters to Configure DEP and PAE. NoteÂ ï¿½ DEP is a highly effective security feature. Do not disable DEP unless you have no alternative.ï¿½
 ms.assetid: 7333cac4-91d0-4088-ab5d-4dd5883c9dbc
 keywords: ["/noexecute Driver Development Tools"]
 topic_type:
@@ -18,7 +18,7 @@ The **/noexecute** parameter enables, disables, and configures Data Execution Pr
 
 For more information about using the /**noexecute** parameter and the other parameters that affect DEP configuration, see [Boot Parameters to Configure DEP and PAE](https://msdn.microsoft.com/library/windows/hardware/ff542275).
 
-> \[!Note\]
+> [!NOTE]
 > DEP is a highly effective security feature. Do not disable DEP unless you have no alternative.
 
 Â 
