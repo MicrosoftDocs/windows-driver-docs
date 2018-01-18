@@ -26,7 +26,7 @@ Use these rules to verify that your driver correctly uses WDM DDIs correctly.
 <tbody>
 <tr class="odd">
 <td align="left"><p>[<strong>DebugBreakUsage</strong>](wdm-debugbreakusage.md)</p></td>
-<td align="left"><p>The [<strong>DebugBreakUsage</strong>](wdm-debugbreakusage.md) rule specifies that the driver must not call [<strong>DbgBreakPoint</strong>](dbgbreakpoint.md) or [<strong>DbgBreakPointWithStatus</strong>](dbgbreakpointwithstatus.md). This rule only applies when you are building a non-debug version of the driver.</p></td>
+<td align="left"><p>The [<strong>DebugBreakUsage</strong>](wdm-debugbreakusage.md) rule specifies that the driver must not call [<strong>DbgBreakPoint</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543626) or [<strong>DbgBreakPointWithStatus</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543629). This rule only applies when you are building a non-debug version of the driver.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[<strong>NullCheck</strong>](nullcheckw.md)</p></td>

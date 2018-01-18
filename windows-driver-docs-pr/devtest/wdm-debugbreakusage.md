@@ -14,7 +14,7 @@ api_type:
 # DebugBreakUsage rule (wdm)
 
 
-The **DebugBreakUsage** rule specifies that the driver must not call [**DbgBreakPoint**](dbgbreakpoint.md) or [**DbgBreakPointWithStatus**](dbgbreakpointwithstatus.md). This rule only applies when you are building a non-debug version of the driver.
+The **DebugBreakUsage** rule specifies that the driver must not call [**DbgBreakPoint**](https://msdn.microsoft.com/library/windows/hardware/ff543626) or [**DbgBreakPointWithStatus**](https://msdn.microsoft.com/library/windows/hardware/ff543629). This rule only applies when you are building a non-debug version of the driver.
 
 |              |     |
 |--------------|-----|
