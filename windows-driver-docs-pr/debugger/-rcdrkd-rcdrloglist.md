@@ -3,7 +3,7 @@ title: rcdrkd.rcdrloglist
 description: The rcdrkd.rcdrloglist extension displays a list of the recorder logs owned by a driver or a set of drivers.
 ms.assetid: D4D3C313-EFD4-482B-B4A3-307F2407D2BA
 keywords: ["rcdrkd.rcdrloglist Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

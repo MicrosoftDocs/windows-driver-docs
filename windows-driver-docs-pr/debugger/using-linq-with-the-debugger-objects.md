@@ -2,7 +2,7 @@
 title: Using LINQ With the debugger objects
 description: Using LINQ With the debugger objects. LINQ syntax can be used with the debugger objects to search and manipulate data.
 keywords: ["Using LINQ With the debugger objects"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 08/10/2017
 ms.topic: article
 ms.prod: windows-hardware

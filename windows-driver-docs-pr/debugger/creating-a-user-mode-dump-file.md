@@ -3,7 +3,7 @@ title: Creating a User-Mode Dump File
 description: Creating a User-Mode Dump File
 ms.assetid: 7fa6735f-e845-4a09-b637-8e9d1b024578
 keywords: ["dump file, creating user-mode dump file"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

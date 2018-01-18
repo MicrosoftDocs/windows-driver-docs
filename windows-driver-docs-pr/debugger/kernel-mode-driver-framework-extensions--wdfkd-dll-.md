@@ -3,7 +3,7 @@ title: Windows Driver Framework Extensions (Wdfkd.dll)
 description: Windows Driver Framework Extensions (Wdfkd.dll)
 ms.assetid: 2fa2b131-f6fd-459b-a4e3-799246076338
 keywords: ["Kernel-Mode Driver Framework debugging, extensions (wdfkd.dll)", "Kernel-Mode Driver Framework extensions (wdfkd.dll)", "wdfkd.dll (Kernel-Mode Driver Framework extensions)", "extensions, Kernel-Mode Driver Framework"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

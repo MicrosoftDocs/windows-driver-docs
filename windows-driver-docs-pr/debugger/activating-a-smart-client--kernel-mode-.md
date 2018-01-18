@@ -3,7 +3,7 @@ title: Activating a Smart Client (Kernel Mode)
 description: Once the KD connection server has been activated, you can create a smart client on another computer and begin a debugging session.
 ms.assetid: bf0f1dd5-e6dc-4168-8476-cf21e77bd335
 keywords: ["Activating a Smart Client (Kernel Mode) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

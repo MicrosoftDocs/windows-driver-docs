@@ -1,7 +1,7 @@
 ---
 title: Time Travel Debugging - Overview
 description: This section describes time travel debugging.
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 09/18/2017
 ms.topic: article
 ms.prod: windows-hardware

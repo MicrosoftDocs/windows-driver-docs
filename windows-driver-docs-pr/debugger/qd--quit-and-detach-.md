@@ -3,7 +3,7 @@ title: qd (Quit and Detach)
 description: The qd command ends the debugging session and leaves any user-mode target application running.
 ms.assetid: 3282c78b-6c4b-4c1b-a086-4890c3140ab9
 keywords: ["qd (Quit and Detach) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

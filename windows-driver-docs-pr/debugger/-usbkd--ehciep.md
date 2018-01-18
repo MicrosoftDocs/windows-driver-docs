@@ -3,7 +3,7 @@ title: usbkd._ehciep
 description: The usbkd._ehciep command displays information from a usbehci _ENDPOINT_DATA structure. Use this command to display information about asynchronous endpoints (that is, control and bulk endpoints).
 ms.assetid: 0DA42FDD-41D6-4234-9D9C-36872F0CE0C1
 keywords: ["usbkd._ehciep Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

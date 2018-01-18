@@ -3,7 +3,7 @@ title: H (Windows Debugger Glossary)
 description: Glossary page - H 
 Robots: noindex, nofollow
 ms.assetid: 478e6900-86f9-487c-a2fd-18543402f5e2
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

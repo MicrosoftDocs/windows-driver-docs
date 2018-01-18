@@ -2,7 +2,7 @@
 title: Example 4 Setting Multiple Flags
 description: Example 4 Setting Multiple Flags
 ms.assetid: b8c7301b-4a34-4f03-8c5e-ba43a1fb3681
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

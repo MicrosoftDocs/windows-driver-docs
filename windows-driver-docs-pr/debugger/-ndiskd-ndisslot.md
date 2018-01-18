@@ -3,7 +3,7 @@ title: ndiskd.ndisslot
 description: The **!ndiskd.ndisslot** extension displays the contents of an NDIS per-processor variable.
 ms.assetid: 0EF37FE7-31A1-4A71-9CAC-E2A43F0EEBCF
 keywords: ["ndiskd.ndisslot Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

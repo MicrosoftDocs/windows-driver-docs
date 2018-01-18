@@ -3,7 +3,7 @@ title: chkimg
 description: The chkimg extension detects corruption in the images of executable files by comparing them to the copy on a symbol store or other file repository.
 ms.assetid: 8079676c-1138-4c60-95df-62fd270fee62
 keywords: ["executable files and paths, corruption", "chkimg Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

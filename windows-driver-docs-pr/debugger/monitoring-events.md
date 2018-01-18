@@ -3,7 +3,7 @@ title: Monitoring Events
 description: Monitoring Events
 ms.assetid: f0381cf9-e568-4789-af08-69d8b2c3ecbf
 keywords: ["Debugger Engine, events", "events"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

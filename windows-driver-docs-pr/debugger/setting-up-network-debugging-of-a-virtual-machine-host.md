@@ -2,7 +2,7 @@
 title: Setting Up Network Debugging of a Virtual Machine Host
 description: If your target computer is a virtual machine host, you can set up network debugging and still have network access for the virtual machines.
 ms.assetid: E4C4D2A1-2FB0-4028-8A52-30B8F4F738D0
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

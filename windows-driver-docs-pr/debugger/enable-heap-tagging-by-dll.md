@@ -3,7 +3,7 @@ title: Enable heap tagging by DLL
 description: Enable heap tagging by DLL
 ms.assetid: d8f8f6f6-7365-4208-834f-3f5ccacdb7b6
 keywords: ["Enable heap tagging by DLL (global flag)"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

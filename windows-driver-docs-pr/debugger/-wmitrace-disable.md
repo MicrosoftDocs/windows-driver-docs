@@ -3,7 +3,7 @@ title: wmitrace.disable
 description: The wmitrace.disable extension disables a provider for the specified Event Tracing for Windows (ETW) trace session.
 ms.assetid: b993bfa4-2d3d-4739-9d5e-0cb714369742
 keywords: ["wmitrace.disable Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

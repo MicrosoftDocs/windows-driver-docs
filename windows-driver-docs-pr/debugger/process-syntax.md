@@ -3,7 +3,7 @@ title: Process Syntax
 description: Process Syntax
 ms.assetid: fe08b5fe-ec27-4264-baee-de4c11bcb2bf
 keywords: ["process, command syntax", "(process identifier)", "process, process identifier ( )", "process, process ID (PID)", "PID (process ID)", "(process identifier)", "syntax rules for commands, (process identifier)", "syntax rules for commands, (process identifier)", "process identifier ( )"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

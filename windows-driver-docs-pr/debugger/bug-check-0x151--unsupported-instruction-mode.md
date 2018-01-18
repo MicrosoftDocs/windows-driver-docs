@@ -3,7 +3,7 @@ title: Bug Check 0x151 UNSUPPORTED_INSTRUCTION_MODE
 description: The UNSUPPORTED_INSTRUCTION_MODE bug check has a value of 0x00000151.
 ms.assetid: 2FB679D8-9FA3-423D-BCA1-5EDE88C78FBF
 keywords: ["Bug Check 0x151 UNSUPPORTED_INSTRUCTION_MODE", "UNSUPPORTED_INSTRUCTION_MODE"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

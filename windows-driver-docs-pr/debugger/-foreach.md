@@ -3,7 +3,7 @@ title: .foreach
 description: The .foreach token parses the output of one or more debugger commands and uses each value in this output as the input to one or more additional commands.
 ms.assetid: 646c86c2-a436-43d6-b0d8-32dbd423120e
 keywords: [".foreach Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

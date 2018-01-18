@@ -3,7 +3,7 @@ title: dskheap
 description: The dskheap extension displays desktop heap information for a specified session.
 ms.assetid: e49c816f-963c-4383-a3bf-c03b2c0cfa39
 keywords: ["desktops", "dskheap Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

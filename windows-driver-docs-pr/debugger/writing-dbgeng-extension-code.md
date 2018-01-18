@@ -3,7 +3,7 @@ title: Writing DbgEng Extension Code
 description: This section describes writing DbgEng extension code
 ms.assetid: b1ee686b-986e-46eb-a4bf-93e2de6d1aeb
 keywords: ["DbgEng Extensions, writing"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

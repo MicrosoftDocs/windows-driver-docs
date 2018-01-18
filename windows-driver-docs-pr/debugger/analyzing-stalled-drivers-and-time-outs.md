@@ -3,7 +3,7 @@ title: Analyzing Stalled Drivers and Time-Outs
 description: Analyzing Stalled Drivers and Time-Outs
 ms.assetid: c305acba-48b9-4597-925a-8b1ded4f0048
 keywords: ["SCSI Miniport Debugging, hangs and time-outs"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

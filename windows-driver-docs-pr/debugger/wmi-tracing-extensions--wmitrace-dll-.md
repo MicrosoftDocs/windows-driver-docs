@@ -3,7 +3,7 @@ title: WMI Tracing Extensions (Wmitrace.dll)
 description: WMI Tracing Extensions (Wmitrace.dll)
 ms.assetid: 3fa3eabf-72f2-4695-ae7e-4d11cf754927
 keywords: ["WMI tracing extensions (wmitrace.dll)", "wmitrace.dll (WMI tracing extensions)", "extensions, WMI tracing"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

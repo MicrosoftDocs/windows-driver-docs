@@ -3,7 +3,7 @@ title: ks.automation
 description: The ks.automation extension displays any automation items associated with the given object.
 ms.assetid: a8fd790f-2793-4e6e-a500-f61646be2c89
 keywords: ["ks.automation Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

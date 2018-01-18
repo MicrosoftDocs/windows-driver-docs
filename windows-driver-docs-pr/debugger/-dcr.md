@@ -3,7 +3,7 @@ title: dcr
 description: The dcr extension displays the default control register (DCR) at the specified address.
 ms.assetid: 294fc3a9-5182-47ae-a261-53be6389bcf1
 keywords: ["DCR (default control register)", "dcr Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

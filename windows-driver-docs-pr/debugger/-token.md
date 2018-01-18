@@ -3,7 +3,7 @@ title: token
 description: The token extension displays a formatted view of a security token object.
 ms.assetid: 3df89255-5e8c-4a09-9fe9-6977b26f5631
 keywords: ["token", "security token", "token Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

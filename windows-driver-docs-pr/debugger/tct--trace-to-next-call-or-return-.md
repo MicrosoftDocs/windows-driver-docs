@@ -3,7 +3,7 @@ title: tct (Trace to Next Call or Return)
 description: The tct command executes the program until it reaches a call instruction or return instruction.
 ms.assetid: 059d8071-577f-4306-8273-8fdff6a80626
 keywords: ["tct (Trace to Next Call or Return) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: object
 description: The object extension displays information about a system object.
 ms.assetid: dc6d862b-3246-4d5b-992c-8723a0347f1d
 keywords: ["object Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

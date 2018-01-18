@@ -3,7 +3,7 @@ title: Kernel Memory Dump
 description: Kernel Memory Dump
 ms.assetid: 466f5b92-c9bd-4050-9ef8-469979ba0cbe
 keywords: ["dump file, Kernel Memory Dump", "Kernel Memory Dump"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: View Processes and Threads
 description: View Processes and Threads
 ms.assetid: 00a496e9-6791-4df4-bf95-18b20d5d9677
 keywords: ["View Processes and Threads"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

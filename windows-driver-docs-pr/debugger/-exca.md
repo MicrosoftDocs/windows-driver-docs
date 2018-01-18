@@ -3,7 +3,7 @@ title: exca
 description: The exca extension displays PC-Card Interrupt Controller (PCIC) Exchangable Card Architecture (ExCA) registers.
 ms.assetid: a395f7f3-0e1d-4f4c-80a1-018ca52a20fd
 keywords: ["PCIC (PC Card Interrupt Controller)", "ExCA registers", "exca Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

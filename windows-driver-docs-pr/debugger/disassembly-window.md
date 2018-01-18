@@ -3,7 +3,7 @@ title: Assembly Code Debugging in WinDbg
 description: In WinDbg, you can view assembly code by entering commands or by using the Disassembly window.
 ms.assetid: e00ea29e-4153-4588-8353-de69910bfc65
 keywords: ["debugging information windows, Disassembly window", "Disassembly window", "assembly debugging, Disassembly window"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

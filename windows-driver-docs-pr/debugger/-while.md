@@ -3,7 +3,7 @@ title: .while
 description: The .while token behaves like the while keyword in C.
 ms.assetid: bc38357d-b17a-4a26-840e-1b4b90986154
 keywords: [".while Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

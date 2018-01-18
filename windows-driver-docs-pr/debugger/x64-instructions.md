@@ -3,7 +3,7 @@ title: x64 Instructions
 description: x64 Instructions
 ms.assetid: f05cbf3e-001c-43cc-8a53-0e22fd161a53
 keywords: ["x64 processor, instructions"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

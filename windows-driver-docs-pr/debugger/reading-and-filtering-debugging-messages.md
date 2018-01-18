@@ -3,7 +3,7 @@ title: Reading and Filtering Debugging Messages
 description: Reading and Filtering Debugging Messages
 ms.assetid: 785469d2-30b8-4f73-b397-80bf89ed20ea
 keywords: ["reading and filtering debugging messages", "debugging messages, reading and filtering"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

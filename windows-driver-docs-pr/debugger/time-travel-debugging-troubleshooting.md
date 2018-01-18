@@ -1,7 +1,7 @@
 ---
 title: Time Travel Debugging - Troubleshooting
 description: This section describes how to troubleshoot time travel traces.
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 10/18/2017
 ms.topic: article
 ms.prod: windows-hardware

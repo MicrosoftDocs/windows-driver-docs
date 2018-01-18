@@ -3,7 +3,7 @@ title: Using AMLI Debugger Extensions
 description: Using AMLI Debugger Extensions
 ms.assetid: 98b9cd6e-b2e1-44bd-aff6-376b9cf2daa2
 keywords: ["AMLI Debugger, AMLI Debugger extensions", "amli extension", "acpikd.amli extension"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

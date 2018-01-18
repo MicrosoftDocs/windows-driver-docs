@@ -9,7 +9,7 @@ api_name:
 - EXT_TDOP_GET_FIELD_OFFSET
 api_type:
 - NA
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

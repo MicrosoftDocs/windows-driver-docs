@@ -3,7 +3,7 @@ title: dpa
 description: The dpa extension displays pool allocation information.
 ms.assetid: 1eb31741-bc50-4188-823d-b6324d2dfdf1
 keywords: ["pool allocation", "dpa Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: arbiter
 description: The arbiter extension displays the current system resource arbiters and arbitrated ranges.
 ms.assetid: 95149538-6fcd-4638-b35f-4e1a562e5231
 keywords: ["arbiter Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

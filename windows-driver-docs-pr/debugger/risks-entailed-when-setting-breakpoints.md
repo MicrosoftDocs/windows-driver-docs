@@ -3,7 +3,7 @@ title: Risks Entailed When Setting Breakpoints
 description: Risks Entailed When Setting Breakpoints
 ms.assetid: 92c1007b-f871-48e9-a215-4d36ed1371ea
 keywords: ["breakpoints, risks"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: rcdrkd.rcdrsettraceprefix
 description: The rcdrkd.rcdrsettraceprefix extension sets the trace message prefix.
 ms.assetid: BFA987B8-7013-4112-A674-064ED59741C0
 keywords: ["rcdrkd.rcdrsettraceprefix Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

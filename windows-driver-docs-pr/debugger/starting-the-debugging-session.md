@@ -2,7 +2,7 @@
 title: Starting the Debugging Session
 description: Starting the Debugging Session
 ms.assetid: 789c61cf-edd2-4354-91a8-87a0a7af28a3
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

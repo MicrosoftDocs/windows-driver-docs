@@ -3,7 +3,7 @@ title: Plug and Play Debugging
 description: This topic describes Plug and Play Debugging
 ms.assetid: 59023a95-5eeb-4a5d-9239-a28459c70f42
 keywords: Plug and Play, PnP, drivers, debugging
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

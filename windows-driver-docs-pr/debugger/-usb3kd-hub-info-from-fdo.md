@@ -3,7 +3,7 @@ title: usb3kd.hub_info_from_fdo
 description: The usb3kd.hub_info_from_fdo command displays information about a hub in the USB 3.0 tree.
 ms.assetid: 07A1C3EC-76A9-49A5-8467-53FCE3667203
 keywords: ["usb3kd.hub_info_from_fdo Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

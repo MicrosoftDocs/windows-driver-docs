@@ -3,7 +3,7 @@ title: Stack Unwind Information Not Available
 description: Stack Unwind Information Not Available
 ms.assetid: 82260f85-780b-4f30-bebd-62faed6efeeb
 keywords: ["Stack unwind information not available (warning)", "call stack, Stack unwind information not available (warning)"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

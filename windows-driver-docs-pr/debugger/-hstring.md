@@ -3,7 +3,7 @@ title: hstring
 description: The hstring extension displays the fields of an HSTRING. The last item in the display is the string itself.
 ms.assetid: 6FB85609-0FB1-457E-A58E-804F69016406
 keywords: ["hstring Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

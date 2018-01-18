@@ -3,7 +3,7 @@ title: Using Shell Commands
 description: Using Shell Commands
 ms.assetid: 16df2592-0e7d-4cd3-bc35-5323578cf555
 keywords: ["shell commands", "shell commands, overview"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

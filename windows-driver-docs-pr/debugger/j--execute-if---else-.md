@@ -3,7 +3,7 @@ title: j (Execute If - Else)
 description: The j command conditionally executes one of the specified commands, depending on the evaluation of a given expression.
 ms.assetid: c6bb2415-e888-458b-8fb9-9d50b90cc531
 keywords: ["j (Execute If - Else) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: exchain
 description: The exchain extension displays the current exception handler chain.
 ms.assetid: 6e5c935b-e475-4213-83d8-94510a58fde5
 keywords: ["exchain Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

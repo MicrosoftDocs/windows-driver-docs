@@ -1,7 +1,7 @@
 ---
 title: WinDbg Preview - View Menu 
 description: This section describes how work with the view menu.
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 08/09/2017
 ms.topic: article
 ms.prod: windows-hardware

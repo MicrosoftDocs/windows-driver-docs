@@ -3,7 +3,7 @@ title: Help Contents
 description: Help Contents
 ms.assetid: 9a37d67b-2c1d-4dc7-af15-7b006ab0f621
 keywords: ["Help Contents", "help file, Help Contents"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

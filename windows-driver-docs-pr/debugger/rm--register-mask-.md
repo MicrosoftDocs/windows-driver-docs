@@ -3,7 +3,7 @@ title: rm (Register Mask)
 description: The rm command modifies or displays the register display mask. This mask controls how registers are displayed by the r (Registers) command.
 ms.assetid: b3203bf3-b614-490b-8cbd-6abb291a801a
 keywords: ["rm (Register Mask) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

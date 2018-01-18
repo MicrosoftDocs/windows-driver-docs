@@ -3,7 +3,7 @@ title: elog_str
 description: The elog_str extension adds a string to the event log.
 ms.assetid: 142ef480-8095-428e-9b7d-f4c8bfb78075
 keywords: ["event log", "elog_str Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

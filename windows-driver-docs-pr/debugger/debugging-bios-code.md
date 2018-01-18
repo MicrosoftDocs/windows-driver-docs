@@ -3,7 +3,7 @@ title: Debugging BIOS Code
 description: Debugging BIOS Code
 ms.assetid: 98f0381b-4f9d-4cf2-9860-8da20f6fbd38
 keywords: ["BIOS debugging", "BIOS debugging, overview"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

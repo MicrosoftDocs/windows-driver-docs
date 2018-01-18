@@ -3,7 +3,7 @@ title: .ocommand (Expect Commands from Target)
 description: The .ocommand command enables the target application to send commands to the debugger.
 ms.assetid: a4363395-111f-48eb-b1da-c17c0ad9f067
 keywords: ["Expect Commands from Target (.ocommand) command", ".ocommand (Expect Commands from Target) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
