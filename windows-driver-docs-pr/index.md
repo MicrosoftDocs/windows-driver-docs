@@ -13,6 +13,48 @@ ms.technology: windows-devices
 
 <h1>Windows Driver Kit documentation</h1>
 <p>Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and [Debugging Tools for Windows](/windows-hardware/drivers/debugger/index) This integrated environment gives you the tools you need to develop, build, package, deploy, test, and debug drivers. You can run many basic certification tests in the integrated environment. The Windows Driver Kit (WDK) includes templates for several technologies and driver models, including [Windows Driver Frameworks](https://msdn.microsoft.com/en-us/library/windows/hardware/ff557565), Universal Serial Bus (USB), print, networking, and file system filters.</p>
+
+<div class="container">
+        <ul class="cardsY panelContent featuredContent">
+            <li>
+                <a href="/windows-hardware/drivers/develop/getting-started-with-universal-drivers">
+                    <div class="cardSize">
+                        <div class="cardPadding">
+                            <div class="card">
+                                <div class="cardImageOuter">
+                                    <div class="cardImage"> 
+                                        <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="cardText">
+                                    <h3>Get started with Universal Windows Drivers</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/windows-hardware/drivers/ddi/">
+                    <div class="cardSize">
+                        <div class="cardPadding">
+                            <div class="card">
+                                <div class="cardImageOuter">
+                                    <div class="cardImage"> 
+                                        <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="cardText">
+                                    <h3>WDK DDI Reference</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>            
+        </ul>
+</div>
+
 <ul class="cardsF panelContent">
     <li>
         <div class="cardSize">
@@ -80,7 +122,7 @@ ms.technology: windows-devices
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_guidelines.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
