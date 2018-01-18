@@ -108,7 +108,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="s/media/common/i_build.svg" alt="Build icon" data-linktype="absolute-path">
+                            <img src="/media/common/i_build.svg" alt="Build icon" data-linktype="absolute-path">
                         </div>
                     </div>
                     <div class="cardText">
