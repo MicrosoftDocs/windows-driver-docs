@@ -1106,7 +1106,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows-driver-docs-pr/dashboard/view-and-manage-your-bugs.md",
+      "source_path": "windows-driver-docs-pr/dashboard/search-bugs.md",
       "redirect_URL": "/windows-hardware/drivers/dashboard/search-bugs",
       "redirect_document_id": true
     }
