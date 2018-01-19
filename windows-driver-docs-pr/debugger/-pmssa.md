@@ -3,7 +3,7 @@ title: pmssa
 description: The pmssa extension displays a specified processor Minimal State Save Area (also known as Min-StateSave Area).
 ms.assetid: 55d605bd-0621-4366-8b37-62d462ee1f34
 keywords: ["processor minstate save area", "pmssa Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

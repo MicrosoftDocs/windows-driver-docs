@@ -3,7 +3,7 @@ title: View Toolbar
 description: View Toolbar
 ms.assetid: 0c8e8a6e-2924-4afd-925e-346511b943de
 keywords: ["View Toolbar", "toolbar (WinDbg), View Toolbar"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

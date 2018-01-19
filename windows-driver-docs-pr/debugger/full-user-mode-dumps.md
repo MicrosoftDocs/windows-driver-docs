@@ -3,7 +3,7 @@ title: Full User-Mode Dumps
 description: Full User-Mode Dumps
 ms.assetid: 7bf69ca0-afee-4c30-b24f-984e5d411f1b
 keywords: ["dump file, full user-mode dump", "full user-mode dump"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

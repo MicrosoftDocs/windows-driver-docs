@@ -3,7 +3,7 @@ title: wdfkd.wdfcrashdump
 description: The wdfkd.wdfcrashdump extension displays error log information and other crash dump information from a minidump file, if the data is present.
 ms.assetid: 419c76b1-e291-4503-8c59-aa46140e40b3
 keywords: ["wdfkd.wdfcrashdump Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

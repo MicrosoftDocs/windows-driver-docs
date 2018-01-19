@@ -3,7 +3,7 @@ title: Initial Breakpoint
 description: Initial Breakpoint
 ms.assetid: c7fda1f0-bbfb-41d8-b3c9-568f2f0a74e1
 keywords: ["initial breakpoint", "breakpoints, initial breakpoint"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

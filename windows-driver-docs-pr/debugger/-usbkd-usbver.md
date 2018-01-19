@@ -3,7 +3,7 @@ title: usbkd.usbver
 description: The usbkd.usbver command displays the USBD interface version of the USB driver stack.
 ms.assetid: E3F5A971-64FB-4826-8DC0-59F3615C106A
 keywords: ["usbkd.usbver Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

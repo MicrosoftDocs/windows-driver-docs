@@ -3,7 +3,7 @@ title: driveinfo
 description: The driveinfo extension displays volume information for the specified drive.
 ms.assetid: cc63c07a-4556-4b79-9dff-c0ac09371651
 keywords: ["driveinfo Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

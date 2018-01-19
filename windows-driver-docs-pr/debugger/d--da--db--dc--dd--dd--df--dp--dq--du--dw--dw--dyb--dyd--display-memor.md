@@ -3,7 +3,7 @@ title: d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)
 description: The d* commands display the contents of memory in the given range.
 ms.assetid: deb58b77-6648-466d-be00-e2e0a92895b5
 keywords: ["d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

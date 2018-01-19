@@ -3,7 +3,7 @@ title: Security During Kernel-Mode Debugging
 description: Security During Kernel-Mode Debugging
 ms.assetid: 0dc78f83-a695-4b2c-a5cd-d7f365a9560f
 keywords: ["security considerations, kernel-mode debugging", "local kernel debugging, security considerations"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

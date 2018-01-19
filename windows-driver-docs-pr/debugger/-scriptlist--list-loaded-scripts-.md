@@ -3,7 +3,7 @@ title: .scriptlist (List Loaded Scripts)
 description: The .scriptlist command lists the loaded scripts.
 ms.assetid: 98F24BE6-3F34-44E7-9546-3D5AB6D521DD
 keywords: [".scriptlist (List Loaded Scripts) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

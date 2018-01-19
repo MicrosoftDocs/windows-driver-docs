@@ -1,7 +1,7 @@
 ---
 title: TTD Calls Objects
 description: This section describes the calls model objects associated with time travel debugging.
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -16,9 +16,17 @@ ms.technology: windows-devices
 ## Description
 *TTD Calls* objects are used to give information about function calls that occur over the course of a trace.
 
+## Parameters
+| Property | Description |
+| --- | --- |
+| Function!SymbolName | One or more contained in double quotes, separated by a comma. For example dx @$cursession.TTD.Calls("module!symbol1", "module!symbol2", ...) |
+
 ## Properties
 | Property | Description |
 | --- | --- |
+| EventType  |	The type of event. This is "Call" for all TTD Calls objects. |
+| ThreadId   |	The OS thread ID of thread that made the request. |
+| UniqueThreadId |	 A unique ID for the thread across the trace. Regular thread IDs can get reused over the lifetime of a process but UniqueThreadIds cannot. |
 | Function | The symbolic name of the function. |
 | FunctionAddress | The function's address in memory. |
 | ReturnValue | The return value of the function. If the function has a void type, this property will not be present. |
@@ -44,7 +52,23 @@ Note that the Calls function does computation, and depending on the size of the 
 
 ## Example Usage
 
-*Information pending*
+This example shows the calls object for ucrtbase!initterm.
+
+```
+0:000> dx -r2 @$cursession.TTD.Calls("ucrtbase!initterm")
+@$cursession.TTD.Calls("ucrtbase!initterm")
+    [0x0]
+        EventType        : Call
+        ThreadId         : 0x2074
+        UniqueThreadId   : 0x2
+        TimeStart        : 1E:5D0
+        TimeEnd          : 2D:E
+        Function         : ucrtbase!_initterm
+        FunctionAddress  : 0x7ffb345825d0
+        ReturnAddress    : 0x7ff6a521677e
+        Parameters
+```
+
 
 
 

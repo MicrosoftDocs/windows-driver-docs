@@ -3,7 +3,7 @@ title: AgeStore
 description: AgeStore
 ms.assetid: 000b0f14-04e9-49fd-825c-8e1fd499494f
 keywords: ["AgeStore", "AgeStore, overview"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: bthkd.sdpinterface
 description: The bthkd.sdpinterface command displays information about the SDP interface.
 ms.assetid: 931A7785-2E0C-426B-A8CC-84F507438B0D
 keywords: ["bthkd.sdpinterface Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

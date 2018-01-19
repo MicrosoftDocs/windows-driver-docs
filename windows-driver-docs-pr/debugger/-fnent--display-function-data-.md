@@ -3,7 +3,7 @@ title: .fnent (Display Function Data)
 description: The .fnent command displays information about the function table entry for a specified function.
 ms.assetid: 914caf55-2fbf-4f30-af6e-e666dc47c7da
 keywords: ["Display Function Data (.fnent) command", ".fnent (Display Function Data) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

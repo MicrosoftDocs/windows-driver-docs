@@ -3,7 +3,7 @@ title: .echo (Echo Comment)
 description: The .echo command displays a comment string.
 ms.assetid: 4a291952-695c-4292-8aa5-82d497f0141c
 keywords: [".echo (Echo Comment) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

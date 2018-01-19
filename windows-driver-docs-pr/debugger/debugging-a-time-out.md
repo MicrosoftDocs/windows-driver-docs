@@ -3,7 +3,7 @@ title: Debugging a Time Out
 description: Debugging a Time Out
 ms.assetid: 795774da-10fb-4431-908d-94c3baa01132
 keywords: ["time outs"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

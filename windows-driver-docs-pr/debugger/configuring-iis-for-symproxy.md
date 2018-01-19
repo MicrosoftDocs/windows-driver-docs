@@ -3,7 +3,7 @@ title: Configuring IIS for SymProxy
 description: Configuring IIS for SymProxy
 ms.assetid: 66f1d05c-2572-4dda-a9d9-766561ebd491
 keywords: ["SymProxy, IIS"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

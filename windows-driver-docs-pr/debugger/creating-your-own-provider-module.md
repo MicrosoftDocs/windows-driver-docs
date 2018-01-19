@@ -3,7 +3,7 @@ title: Creating Your Own Provider Module
 description: Creating Your Own Provider Module
 ms.assetid: 4282d375-bcf0-478f-bb2f-a43dc50b09e3
 keywords: ["version control systems, provider modules"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

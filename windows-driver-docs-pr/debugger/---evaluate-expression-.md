@@ -3,7 +3,7 @@ title: (Evaluate Expression)
 description: The question mark ( ) command evaluates and displays the value of an expression.Note  A question mark by itself ( ) displays command help.
 ms.assetid: fae689b3-47c9-44bd-992d-8344805fb4b7
 keywords: ["(Evaluate Expression) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

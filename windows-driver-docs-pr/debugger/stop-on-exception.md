@@ -3,7 +3,7 @@ title: Stop on exception
 description: Stop on exception
 ms.assetid: f459fa28-2fdf-4094-ba58-7e01a2309bb7
 keywords: ["Stop on exception (global flag)"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -1,0 +1,177 @@
+---
+title: MRxLowIOSubmit\ LOWIO\_OP\_SHAREDLOCK\ routine
+description: The MRxLowIOSubmit\ LOWIO\_OP\_SHAREDLOCK\ routine is called by RDBSS to request that a network redirector open a shared lock on a file object.
+ms.assetid: 963ec2d1-5e24-4002-a8c9-44faf1515b9f
+keywords: ["MRxLowIOSubmit LOWIO_OP_SHAREDLOCK routine Installable File System Drivers", "PMRX_CALLDOWN"]
+topic_type:
+- apiref
+api_name:
+- MRxLowIOSubmit LOWIO_OP_SHAREDLOCK
+api_location:
+- mrx.h
+api_type:
+- UserDefined
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+---
+
+# MRxLowIOSubmit\[LOWIO\_OP\_SHAREDLOCK\] routine
+
+
+The *MRxLowIOSubmit\[LOWIO\_OP\_SHAREDLOCK\]* routine is called by [RDBSS](https://msdn.microsoft.com/library/windows/hardware/ff556810) to request that a network redirector open a shared lock on a file object.
+
+Syntax
+------
+
+```ManagedCPlusPlus
+PMRX_CALLDOWN MRxLowIOSubmit[LOWIO_OP_SHAREDLOCK];
+
+NTSTATUS MRxLowIOSubmit[LOWIO_OP_SHAREDLOCK](
+  _Inout_ PRX_CONTEXT RxContext
+)
+{ ... }
+```
+
+Parameters
+----------
+
+*RxContext* \[in, out\]  
+A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
+
+Return value
+------------
+
+*MRxLowIOSubmit\[LOWIO\_OP\_SHAREDLOCK\]* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Return code</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>STATUS_CONNECTION_DISCONNECTED</strong></td>
+<td align="left"><p>The connection was disconnected.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>STATUS_INSUFFICIENT_RESOURCES</strong></td>
+<td align="left"><p>There were insufficient resources to complete the request.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>STATUS_INVALID_BUFFER_SIZE</strong></td>
+<td align="left"><p>The requested buffer size was too large.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>STATUS_INVALID_NETWORK_RESPONSE</strong></td>
+<td align="left"><p>An invalid response was received from the remote server.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>STATUS_INVALID_PARAMETER</strong></td>
+<td align="left"><p>An invalid parameter was specified in <em>RxContext</em>.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>STATUS_LINK_FAILED</strong></td>
+<td align="left"><p>The attempt to reconnect to a remote server to complete the request failed.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>STATUS_NOT_IMPLEMENTED</strong></td>
+<td align="left"><p>This routine is not implemented.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>STATUS_SHARING_VIOLATION</strong></td>
+<td align="left"><p>A sharing violation occurred.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>STATUS_UNSUCCESSFUL</strong></td>
+<td align="left"><p>The call was unsuccessful.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+Remarks
+-------
+
+RDBSS calls *MRxLowIOSubmit\[LOWIO\_OP\_SHAREDLOCK\]* in response to receiving an [**IRP\_MJ\_LOCK\_CONTROL**](irp-mj-lock-control.md) request with a minor code of IRP\_MN\_LOCK if **IrpSp-&gt;Flags** does not have the SL\_EXCLUSIVE\_LOCK bit set.
+
+Before calling *MRxLowIOSubmit\[LOWIO\_OP\_SHAREDLOCK\]*, RDBSS modifies the following members in the RX\_CONTEXT structure pointed to by the *RxContext* parameter:
+
+The **LowIoContext.Operation** member is set to LOWIO\_OP\_SHAREDLOCK.
+
+The **LowIoContext.ResourceThreadId** member is set to the thread of the process that initiated the operation in RDBSS.
+
+The **LowIoContext.ParamsFor.Locks.ByteOffset** member is set to the value of **IrpSp-&gt;Parameters.LockControl.ByteOffset.QuadPart**.
+
+The **LowIoContext.ParamsFor.Locks.Key** member is set to the value of **IrpSp-&gt;Parameters.LockControl.Key**.
+
+The **LowIoContext.ParamsFor.Locks.Flags** member is set to the value of **IrpSp-&gt;Flags**.
+
+The **LowIoContext.ParamsFor.Locks.Length** member is set to the value of **IrpSp-&gt;Parameters.LockControl.Length.QuadPart**.
+
+The **LowIoContext.Operation** member of the RX\_CONTEXT structure specifies the low I/O operation to perform. It is possible for several of the low I/O routines to point to the same routine in a network mini-redirector because the **LowIoContext.Operation** member can be used to differentiate the low I/O operation that is requested. For example, all the I/O calls related to file locks could call the same low I/O routine in the network mini-redirector and this routine could use the **LowIoContext.Operation** member to differentiate between the lock and unlock operation that is requested.
+
+If the *MRxLowIOSubmit\[LOWIO\_OP\_SHAREDLOCK\]* routine can take a long time to complete, the network mini-redirector driver should release the FCB structure before initiating the network communication. The FCB structure can be released by calling [**RxReleaseFcbResourceForThreadInMRx**](https://msdn.microsoft.com/library/windows/hardware/ff554694). While the *MRxLowIOSubmit\[LOWIO\_OP\_SHAREDLOCK\]* routine is processing, the **LowIoContext.ResourceThreadId** member of RX\_CONTEXT is guaranteed to indicate the thread of the process that initiated the operation in RDBSS.
+
+The **LowIoContext.ResourceThreadId** member of the RX\_CONTEXT structure can be used to release the FCB structure on behalf of another thread. When an asynchronous routine completes, the FCB structure that was acquired from the initial thread can be released.
+
+Requirements
+------------
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p>Target platform</p></td>
+<td align="left">Desktop</td>
+</tr>
+<tr class="even">
+<td align="left"><p>Header</p></td>
+<td align="left">Mrx.h (include Mrx.h)</td>
+</tr>
+</tbody>
+</table>
+
+## See also
+
+
+[**MRxLowIOSubmit\[LOWIO\_OP\_EXCLUSIVELOCK\]**](mrxlowiosubmit-lowio-op-exclusivelock-.md)
+
+[**MRxLowIOSubmit\[LOWIO\_OP\_FSCTL\]**](mrxlowiosubmit-lowio-op-fsctl-.md)
+
+[**MRxLowIOSubmit\[LOWIO\_OP\_IOCTL\]**](mrxlowiosubmit-lowio-op-ioctl-.md)
+
+[**MRxLowIOSubmit\[LOWIO\_OP\_NOTIFY\_CHANGE\_DIRECTORY\]**](mrxlowiosubmit-lowio-op-notify-change-directory-.md)
+
+[**MRxLowIOSubmit\[LOWIO\_OP\_READ\]**](mrxlowiosubmit-lowio-op-read-.md)
+
+[**MRxLowIOSubmit\[LOWIO\_OP\_UNLOCK\]**](mrxlowiosubmit-lowio-op-unlock-.md)
+
+[**MRxLowIOSubmit\[LOWIO\_OP\_UNLOCK\_MULTIPLE\]**](mrxlowiosubmit-lowio-op-unlock-multiple-.md)
+
+[**MRxLowIOSubmit\[LOWIO\_OP\_WRITE\]**](mrxlowiosubmit-lowio-op-write-.md)
+
+[**RxReleaseFcbResourceForThreadInMRx**](https://msdn.microsoft.com/library/windows/hardware/ff554694)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bifsk\ifsk%5D:%20MRxLowIOSubmit%5BLOWIO_OP_SHAREDLOCK%5D%20routine%20%20RELEASE:%20%281/9/2018%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
+

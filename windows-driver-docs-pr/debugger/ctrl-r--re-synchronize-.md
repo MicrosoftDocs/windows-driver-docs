@@ -3,7 +3,7 @@ title: CTRL+R (Re-synchronize)
 description: The CTRL+R key synchronizes with the target computer.
 ms.assetid: 95ffa380-af90-4d56-b973-038e7ccc6760
 keywords: ["CTRL+R (Re-synchronize) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

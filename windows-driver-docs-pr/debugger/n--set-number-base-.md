@@ -3,7 +3,7 @@ title: n (Set Number Base)
 description: The n command sets the default number base (radix) to the specified value or displays the current number base.Do not confuse this command with the ~n (Suspend Thread) command.
 ms.assetid: a2af7cf4-b0f1-4ceb-b9c0-7517a9517c3e
 keywords: ["n (Set Number Base) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

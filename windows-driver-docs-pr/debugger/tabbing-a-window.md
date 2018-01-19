@@ -3,7 +3,7 @@ title: Tabbing a Window
 description: Tabbing a Window
 ms.assetid: 4fff713b-ce76-42a6-91f7-9ae8f2acaafd
 keywords: ["debugging information windows, tabbed windows", "tabbing windows"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

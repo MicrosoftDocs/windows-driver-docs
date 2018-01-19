@@ -1,7 +1,7 @@
 ---
 title: WinDbg Preview - Data Model 
 description: This section describes how to work with the data model menu in the WinDbg preview debugger.
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 08/10/2017
 ms.topic: article
 ms.prod: windows-hardware

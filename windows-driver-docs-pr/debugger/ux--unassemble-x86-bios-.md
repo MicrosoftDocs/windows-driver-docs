@@ -3,7 +3,7 @@ title: ux (Unassemble x86 BIOS)
 description: The ux command displays the instruction set of the x86-based BIOS code.
 ms.assetid: d3616255-1a07-4a5d-8171-c8316179a7dc
 keywords: ["ux (Unassemble x86 BIOS) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

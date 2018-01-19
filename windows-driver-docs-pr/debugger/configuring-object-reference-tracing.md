@@ -3,7 +3,7 @@ title: Configuring Object Reference Tracing
 description: Configuring Object Reference Tracing
 ms.assetid: 9dbf979d-5fc0-4359-bbed-6175f3191c52
 keywords: ["Object Reference Tracing, configuration"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

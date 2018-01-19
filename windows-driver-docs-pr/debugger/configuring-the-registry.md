@@ -3,7 +3,7 @@ title: Configuring the Registry
 description: Configuring the Registry
 ms.assetid: 69a1dd39-c4aa-491d-9e28-fd1661ec9a7a
 keywords: ["SymProxy, registry", "ProxyCfg and SymProxy", "Netsh and SymProxy"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

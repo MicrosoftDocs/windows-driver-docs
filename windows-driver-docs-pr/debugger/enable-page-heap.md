@@ -3,7 +3,7 @@ title: Enable page heap
 description: Enable page heap
 ms.assetid: b889b7b7-721c-4ecf-bf59-c1ccc0bc735d
 keywords: ["Enable page heap (global flag)"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

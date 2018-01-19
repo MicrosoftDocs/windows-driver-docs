@@ -3,7 +3,7 @@ title: Debugging Targets on Multiple Computers
 description: Debugging Targets on Multiple Computers
 ms.assetid: 3c4fa2d9-1443-4460-b570-9415a3600393
 keywords: ["multiple computer debugging", "system, targets on multiple computers", "remote debugging, multiple computers"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

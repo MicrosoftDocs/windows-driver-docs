@@ -2,7 +2,7 @@
 title: .netsyms (Disable Network Symbol Loading)
 description: .netsyms (Disable Network Symbol Loading)
 ms.assetid: 09347909-47C8-4a4d-8246-C32A1791F46B
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Bug Check 0x1C PFN_REFERENCE_COUNT
 description: The PFN_REFERENCE_COUNT bug check has a value of 0x0000001C.This bug check appears very infrequently.
 ms.assetid: 0fb1cb56-e542-4b9e-9b06-f4dfc7657bb8
 keywords: ["Bug Check 0x1C PFN_REFERENCE_COUNT", "PFN_REFERENCE_COUNT"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

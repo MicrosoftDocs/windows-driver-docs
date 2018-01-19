@@ -3,7 +3,7 @@ title: Setting Up Kernel-Mode Debugging in Visual Studio
 description: You can use Microsoft Visual Studio to set up and perform kernel-mode debugging of Windows.
 ms.assetid: 38E57F45-71D9-4467-BECF-42769563751E
 keywords: ["Kernel-mode debugging, Visual Studio", "Setting up kernel-mode debugging, Visual Studio"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

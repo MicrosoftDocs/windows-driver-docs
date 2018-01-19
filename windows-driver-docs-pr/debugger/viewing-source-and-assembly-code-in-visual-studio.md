@@ -2,7 +2,7 @@
 title: Source Code Debugging in Visual Studio
 description: The procedure covers Source Code Debugging in Visual Studio.
 ms.assetid: C2E5BAA8-913A-4B0E-8ADF-E2758CCFEC84
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

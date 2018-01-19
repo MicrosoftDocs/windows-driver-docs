@@ -3,7 +3,7 @@ title: Debugging a Stalled System
 description: Debugging a Stalled System
 ms.assetid: 83679dca-2477-4d03-9a89-5a5aebc7b9d9
 keywords: ["stalled system debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

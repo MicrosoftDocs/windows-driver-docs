@@ -2,7 +2,7 @@
 title: Keeping a Log File in Visual Studio
 description: The Windows Debugger can write a log file that records the debugging session.
 ms.assetid: 6A7588D0-A477-4BE9-874F-3AFB52561903
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Debugging a Processing Stall
 description: Debugging a Processing Stall
 ms.assetid: 9dff37ed-4843-4e85-8ab3-6a0a37a58c23
 keywords: ["kernel streaming debugging, video stream stall, processing stall"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

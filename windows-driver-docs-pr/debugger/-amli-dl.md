@@ -3,7 +3,7 @@ title: amli dl
 description: The amli dl extension displays a portion of the AML interpreter's event log.
 ms.assetid: 06565760-d7f0-4f22-8670-7706d3b4b3a8
 keywords: ["amli dl Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

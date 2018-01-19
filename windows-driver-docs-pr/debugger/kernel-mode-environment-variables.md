@@ -3,7 +3,7 @@ title: Kernel-Mode Environment Variables
 description: Kernel-Mode Environment Variables
 ms.assetid: 619ebe55-1b57-4182-ada9-0c99c78056b3
 keywords: ["environment variables, kernel-mode", "_NT_DEBUG_PORT environment variable", "_NT_DEBUG_BAUD_RATE environment variable", "KDQUIET environment variable", "_NT_DEBUG_CACHE_SIZE environment variable", "_NT_DEBUG_BUS environment variable", "_NT_DEBUG_1394_CHANNEL environment variable", "_NT_DEBUG_1394_SYMLINK environment variable", "_NT_DEBUG_OPTIONS environment variable"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

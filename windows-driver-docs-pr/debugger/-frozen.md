@@ -3,7 +3,7 @@ title: frozen
 description: The frozen extension displays the state of each processor.
 ms.assetid: aa2761b7-e7e1-435e-98d3-bfaac64925bf
 keywords: ["processor states", "frozen Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

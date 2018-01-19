@@ -3,7 +3,7 @@ title: Debug Restart
 description: Debug Restart
 ms.assetid: e529171a-0dd4-4528-a527-f8b430cd9321
 keywords: ["Debug Restart", "controlling the target, Debug Restart"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

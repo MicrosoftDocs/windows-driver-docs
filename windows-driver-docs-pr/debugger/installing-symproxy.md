@@ -3,7 +3,7 @@ title: Installing SymProxy
 description: Installing SymProxy
 ms.assetid: 63633de7-d254-415d-bf06-c0e81bd03e74
 keywords: ["SymProxy, installation"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

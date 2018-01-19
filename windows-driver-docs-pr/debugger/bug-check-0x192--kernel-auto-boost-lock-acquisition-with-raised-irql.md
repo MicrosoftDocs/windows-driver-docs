@@ -3,7 +3,7 @@ title: Bug Check 0x192 KERNEL_AUTO_BOOST_LOCK_ACQUISITION_WITH_RAISED_IRQL
 description: The KERNEL_AUTO_BOOST_LOCK_ACQUISITION_WITH_RAISED_IRQL bug check indicates that a lock tracked by AutoBoost was acquired while executing at DISPATCH_LEVEL or above.
 ms.assetid: D88EF2CC-26DC-44D8-80CB-18D058C6A413
 keywords: ["Bug Check 0x192 KERNEL_AUTO_BOOST_LOCK_ACQUISITION_WITH_RAISED_IRQL", "KERNEL_AUTO_BOOST_LOCK_ACQUISITION_WITH_RAISED_IRQL"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: runaway
 description: The runaway extension displays information about the time consumed by each thread.
 ms.assetid: ea318d5b-60c6-4d1c-80c7-6bc418ad01ab
 keywords: ["runaway Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

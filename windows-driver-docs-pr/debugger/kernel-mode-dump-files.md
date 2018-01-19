@@ -3,7 +3,7 @@ title: Kernel-Mode Dump Files
 description: Kernel-Mode Dump Files
 ms.assetid: f04dc580-0e14-41aa-88a2-e04f4406add8
 keywords: ["dump file, kernel mode"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

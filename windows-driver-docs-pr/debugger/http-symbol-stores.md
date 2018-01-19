@@ -3,7 +3,7 @@ title: HTTP Symbol Stores
 description: HTTP Symbol Stores
 ms.assetid: b7dd1f3c-0135-4b69-9d70-b7cbf37fa969
 keywords: ["HTTP symbol stores"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

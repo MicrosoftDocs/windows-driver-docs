@@ -3,7 +3,7 @@ title: Window Automatically Open Disassembly
 description: Window Automatically Open Disassembly
 ms.assetid: f3fbdb58-e41b-4150-b762-2b8ef2baed55
 keywords: ["Window Automatically Open Disassembly"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

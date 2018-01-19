@@ -2,7 +2,7 @@
 title: Example 13 Listing Image Files with Global Flags
 description: Example 13 Listing Image Files with Global Flags
 ms.assetid: 1b1285d5-ed73-49c4-a123-de9cbdb3090c
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

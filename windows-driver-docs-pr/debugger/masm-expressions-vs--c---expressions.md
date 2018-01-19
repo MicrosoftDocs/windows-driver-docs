@@ -3,7 +3,7 @@ title: MASM Expressions vs. C++ Expressions
 description: MASM Expressions vs.
 ms.assetid: 3ec06b61-9f17-49b1-b7c5-66a349b5d275
 keywords: ["expressions, MASM and C++", "MASM expressions, MASM vs. C++", "C++ expressions, C++ vs. MASM"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

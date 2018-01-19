@@ -3,7 +3,7 @@ title: wudfext.wudfrequest
 description: The wudfext.wudfrequest extension displays information about an I/O request.
 ms.assetid: 4812c7bb-0fce-43e1-8f07-e4da9dd0c3bb
 keywords: ["wudfext.wudfrequest Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
