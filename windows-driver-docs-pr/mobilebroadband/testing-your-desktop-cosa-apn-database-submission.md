@@ -38,26 +38,39 @@ For more information about how to install a provisioning package file, see [Appl
 
 ### Modify the local COSA database (desktop COSA)
 
-Follow these steps to test the updated COSA Provisioning Package (PPKG) you received from Microsoft after completing your APN information spreadsheet and submitting it to your TAM. 
+Follow these steps to test the updated COSA Provisioning Package (PPKG) you received from Microsoft after completing your APN information spreadsheet and submitting it to your TAM.
+
+These steps require a script from Microsoft to apply and test the PPKG file. Use the following link to download the latest version of the script: <https://go.microsoft.com/fwlink/p/?linkid=866771>.
 
 > [!WARNING]
 > Create a backup of the original provisioning package before performing the following actions. The original provisioning package is located here: `%systemroot%\Provisioning\Cosa\Microsoft\Microsoft.Windows.Cosa.Desktop.Client.ppkg`.
 
-1. From an elevated command prompt window, type `cd %systemroot%\Provisioning\Cosa\Microsoft` and press Enter.
-2. Type `takeown /f .\Microsoft.Windows.Cosa.Desktop.Client.ppkg`, then press Enter.
-3. Type `icacls .\Microsoft.Windows.Cosa.Desktop.Client.ppkg /grant %username%:F`, then press Enter.
-4. Replace the original PPKG with the updated **Microsoft.Windows.Cosa.Desktop.Client.ppkg** received from Microsoft in this location: `%systemroot%\Provisioning\Cosa\Microsoft`.
-5. Restart the device under test (DUT).
-   1. This is required for the provisioning to take effect and load the updated desktop COSA provisioning package (Microsoft.Windows.Cosa.Desktop.Client.ppkg).
-6. Insert the SIM for validation.
+#### Apply the updated PPKG file
+
+1. Remove any SIM from the device, if any.
+2. Copy the script and the new PPKG file to a local directory.
+3. Open an elevated Command Prompt window and change to the directory containing the script.
+4. Run the script with this syntax to apply the PPKG: `ApplyCosaProvisioning.BAT -a <full path to the PPKG local directory>`.
+  1. For example: `ApplyCosaProvisioning.BAT -a "C:\FromMicrosoft\Microsoft.Windows.Cosa.Desktop.Client.ppkg"`
+5. Insert the SIM and await provisioning.
+
+#### Restore the original PPKG file
 
 Once validation of the new provisioning package (PPKG) received from Microsoft has completed, you can restore the original PPKG with the following steps.
 
-1. Replace the updated **Microsoft.Windows.Cosa.Desktop.Client.ppkg** received from Microsoft with the original PPKG (from the backup) in this location: `%systemroot%\Provisioning\Cosa\Microsoft`.
-2. Go to this location: `C:\ProgramData\Microsoft\Provisioning`.
-3. Delete the folder called **{c8a326e4-f518-4f14-b543-97a57e1a975e}** along with all its subfolders and contents.
-   1. This removes the cache of the updated PPKG (the one received from Microsoft for validation).
-4. Insert the SIM for provisioning to take effect (reading the original PPKG).
+1. Once validated, remove the SIM from the device.
+2. Run the script with this syntax to restore the original PPKG: `ApplyCosaProvisioning.BAT -r`.
+3. Insert the SIM for provisioning to take effect, reading the original PPKG.
+
+#### Collect logs in case of failure
+
+To collect logs in the event of a failure during the testing process, follow these steps:
+
+1. Remove any SIM from the device.
+2. Run the script with this syntax to start `netsh` logging: `ApplyCosaProvisioning.BAT -l`.
+3. Insert the SIM and wait for provisioning to fail.
+4. Follow the tool's prompts to end logging.
+5. Send the logs to Microsoft in zipped format.
 
 ## Test your submission for the APN database (apndatabase.xml)
 
