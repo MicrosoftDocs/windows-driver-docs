@@ -45,7 +45,7 @@ These steps require a script from Microsoft to apply and test the PPKG file. Use
 > [!WARNING]
 > Create a backup of the original provisioning package before performing the following actions. The original provisioning package is located here: `%systemroot%\Provisioning\Cosa\Microsoft\Microsoft.Windows.Cosa.Desktop.Client.ppkg`.
 
-#### Apply the updated PPKG file
+#### Test the PPKG
 
 1. Remove any SIM from the device, if any.
 2. Copy the script and the new PPKG file to a local directory.
@@ -56,7 +56,7 @@ These steps require a script from Microsoft to apply and test the PPKG file. Use
 
 #### Restore the original PPKG file
 
-Once validation of the new provisioning package (PPKG) received from Microsoft has completed, you can restore the original PPKG with the following steps.
+Once validation of the new PPKG received from Microsoft has completed, always restore it with the following steps. Restoring back to the original PPKG will ensure that you receive the latest COSA updates via Windows Update.
 
 1. Once validated, remove the SIM from the device.
 2. Run the script with this syntax to restore the original PPKG: `ApplyCosaProvisioning.BAT -r`.
@@ -67,7 +67,7 @@ Once validation of the new provisioning package (PPKG) received from Microsoft h
 To collect logs in the event of a failure during the testing process, follow these steps:
 
 1. Remove any SIM from the device.
-2. Run the script with this syntax to start `netsh` logging: `ApplyCosaProvisioning.BAT -l`.
+2. Run the script with this syntax to start *netsh* logging: `ApplyCosaProvisioning.BAT -l`.
 3. Insert the SIM and wait for provisioning to fail.
 4. Follow the tool's prompts to end logging.
 5. Send the logs to Microsoft in zipped format.
