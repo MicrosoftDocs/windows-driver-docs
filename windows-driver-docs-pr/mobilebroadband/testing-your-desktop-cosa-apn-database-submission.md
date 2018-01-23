@@ -42,10 +42,10 @@ Follow these steps to test the updated COSA Provisioning Package (PPKG) you rece
 
 These steps require a script from Microsoft to apply and test the PPKG file. Use the following link to download the latest version of the script: <https://go.microsoft.com/fwlink/p/?linkid=866771>.
 
-> [!WARNING]
-> Create a backup of the original provisioning package before performing the following actions. The original provisioning package is located here: `%systemroot%\Provisioning\Cosa\Microsoft\Microsoft.Windows.Cosa.Desktop.Client.ppkg`.
+#### Apply the test PPKG file
 
-#### Test the PPKG
+> [!IMPORTANT]
+> Create a backup of the original provisioning package before performing the following actions. The original provisioning package is located here: `%systemroot%\Provisioning\Cosa\Microsoft\Microsoft.Windows.Cosa.Desktop.Client.ppkg`.
 
 1. Remove any SIM from the device, if any.
 2. Copy the script and the new PPKG file to a local directory.
@@ -56,7 +56,8 @@ These steps require a script from Microsoft to apply and test the PPKG file. Use
 
 #### Restore the original PPKG file
 
-Once validation of the new PPKG received from Microsoft has completed, always restore it with the following steps. Restoring back to the original PPKG will ensure that you receive the latest COSA updates via Windows Update.
+> [!WARNING]
+> Once validation of the new PPKG received from Microsoft has completed, always restore it with the following steps. Restoring back to the original PPKG will ensure that you receive the latest COSA updates via Windows Update.
 
 1. Once validated, remove the SIM from the device.
 2. Run the script with this syntax to restore the original PPKG: `ApplyCosaProvisioning.BAT -r`.
