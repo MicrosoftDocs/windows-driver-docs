@@ -4,6 +4,9 @@ This page covers the basic steps for contributing to the Windows driver document
 
 There's also an [introductory video](https://channel9.msdn.com/Blogs/WinHEC/Contributing-to-MSDN-and-TechNet-Documentation) that shows you how to propose changes.
 
+If you're looking for the driver reference (API/DDI) documentation, that's in a different repo.
+See https://github.com/MicrosoftDocs/windows-driver-docs-ddi.
+
 ## Sign a CLA
 
 If you want to contribute more than a couple lines and you're not a Microsoft employee, you need to [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/). 
