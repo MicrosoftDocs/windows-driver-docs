@@ -31,17 +31,13 @@ The Windows Hardware Dev Center dashboard replaces the [Hardware Dev Center (Sys
 ## <span id="Currently_unsupported_tasks"></span><span id="currently_unsupported_tasks"></span><span id="CURRENTLY_UNSUPPORTED_TASKS"></span>Currently unsupported tasks
 
 
-You must continue to use [Hardware Dev Center (Sysdev)](dashboard-services.md) to complete the following tasks.
+You must continue to use [Hardware Dev Center (Sysdev)](dashboard-services.md) to complete the following tasks:
 
 > [!IMPORTANT]  
-> The dashboard submission REST APIs will no longer be available for use as of November 10th, 2016. APIs for driver submissions are under consideration for a future release.
-
- 
+> The dashboard submission REST APIs are no longer be available for use as of November 10th, 2016. APIs for driver submissions are under consideration for a future release.
 
 -   [WLK device certification submissions](https://go.microsoft.com/fwlink/?linkid=830380)
--   [Attestation signing](attestation-signing-a-kernel-driver-for-public-release.md)
 -   [Device Metadata](https://go.microsoft.com/fwlink/?linkid=830383)
--   [Bug management](https://go.microsoft.com/fwlink/?linkid=830385)
 -   [Remote Debugging](https://go.microsoft.com/fwlink/?linkid=830386) (WRD)
 -   [Win32 app certification submissions](https://go.microsoft.com/fwlink/?linkid=830388)
 -   [Certified Products List](https://go.microsoft.com/fwlink/?linkid=830390)
