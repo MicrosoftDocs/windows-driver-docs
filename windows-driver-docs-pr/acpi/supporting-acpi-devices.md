@@ -13,16 +13,13 @@ keywords:
 - function drivers WDK ACPI
 - WDM function drivers WDK ACPI
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 01/24/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
 # Supporting ACPI Devices
-
-
-## <a href="" id="ddk-supporting-acpi-devices-kg"></a>
 
 
 This section describes how a vendor can use a WDM function driver in Microsoft Windows 2000 and later versions of Windows to enhance the functionality of an Advanced Configuration and Power Interface (ACPI) device.
@@ -55,7 +52,7 @@ The following topics describe how to supply a function driver for an ACPI device
 
 For information about the system-supplied support routines that support ACPI device function drivers, see [ACPI Operation Region Handler Reference](https://msdn.microsoft.com/library/windows/hardware/ff536132).
 
-For more information about ACPI devices and namespaces, see the [Advanced Configuration and Power Interface (ACPI) Specification](http://go.microsoft.com/fwlink/p/?linkid=57185).
+For more information about ACPI devices and namespaces, see the [Advanced Configuration and Power Interface (ACPI) Specification](https://go.microsoft.com/fwlink/p/?linkid=866846).
 
  
 
@@ -63,5 +60,7 @@ For more information about ACPI devices and namespaces, see the [Advanced Config
 
 
 --------------------
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20GNSS%20driver%20design%20%20RELEASE:%20%281/9/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

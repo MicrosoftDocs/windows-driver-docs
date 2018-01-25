@@ -1,16 +1,16 @@
 ---
-title: POS design guide
+title: POS device driver design guide
 author: windows-driver-content
-description: This section provides design guidance for point-of-service devices.
+description: This section provides design guidance for point-of-service (POS) device drivers.
 ms.assetid: D00B2CDF-C5CB-4CB5-A6AE-ECDE52B7603B
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 01/24/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# POS design guide
+# POS device driver design guide
 
 
 This section provides driver design guidance for point-of-service (POS) devices.
@@ -32,7 +32,7 @@ This section provides driver design guidance for point-of-service (POS) devices.
 <tbody>
 <tr>
 <td><p>[POS driver samples](driver-samples.md)</p></td>
-<td><p>Samples that demonstrate how to create universal drivers for point of service (POS) devices.</p></td>
+<td><p>Provides samples that demonstrate how to create universal drivers for point-of-service (POS) devices.</p></td>
 </tr>
 </tbody>
 </table>
@@ -52,7 +52,7 @@ This section provides driver design guidance for point-of-service (POS) devices.
 </thead>
 <tbody>
 <tr>
-<td><p>[POS driver API reference](https://msdn.microsoft.com/en-us/library/windows/hardware/dn757548)</p></td>
+<td><p>[POS DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_pos)</p></td>
 <td><p>Provides reference information for point of service (POS) device drivers.</p></td>
 </tr>
 </tbody>
