@@ -22,7 +22,6 @@ For more info about the provisioning schema, see [CarrierControlSchema schema](h
 
 ## <span id="Updating_the_provisioning_metadata"></span><span id="updating_the_provisioning_metadata"></span><span id="UPDATING_THE_PROVISIONING_METADATA"></span>Updating the provisioning metadata
 
-
 There are several ways you can update the provisioning metadata on a computer.
 
 ### <span id="Mobile_broadband_app"></span><span id="mobile_broadband_app"></span><span id="MOBILE_BROADBAND_APP"></span>Mobile broadband app
@@ -84,12 +83,9 @@ The global section is required in every provisioning file. Required elements in 
 
 -   [**CarrierId**](https://msdn.microsoft.com/library/windows/apps/hh868288) A GUID that uniquely identifies the organization that authored the file. If you are building a mobile broadband app, you must use the GUID that you specified in the [Service Number](https://msdn.microsoft.com/library/windows/hardware/dn236413) field of **ServiceInfo.xml** in the service metadata package. For info about the service metadata package schema, see [Service metadata package schema reference](service-metadata-package-schema-reference.md).
 
-    **Note**  
-    This is the same service number that you provided in the **Create a mobile broadband experience wizard** on the Windows Dev Center Dashboard – Hardware.
-
-     
-
-    If you are not creating a mobile broadband app, you can generate a GUID for your organization’s use. In either case, you should always use the same GUID on all provisioning files that your organization issues.
+  > [!NOTE]
+  > This is the same service number that you provided in the **Create a mobile broadband experience wizard** on the Windows Dev Center Dashboard – Hardware.
+  > If you are not creating a mobile broadband app, you can generate a GUID for your organization’s use. In either case, you should always use the same GUID on all provisioning files that your organization issues.
 
 -   [**SubscriberId**](https://msdn.microsoft.com/library/windows/apps/hh868305) A string that uniquely identifies the customer in your organization. If you are a mobile operator, this should be the IMSI or ICCID ranges for GSM operators or the provider ID or provider name for CDMA operators. If you are not a mobile operator, you can choose any sufficiently unique string.
 
