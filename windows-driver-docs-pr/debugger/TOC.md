@@ -51,6 +51,7 @@
 ### [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
 #### [Time Travel Debugging - Calls objects](time-travel-debugging-calls-objects.md)
 #### [Time Travel Debugging - Heap objects](time-travel-debugging-heap-objects.md)
+#### [Time Travel Debugging - Memory objects](time-travel-debugging-memory-objects.md)
 #### [Time Travel Debugging - Event objects](time-travel-debugging-event-objects.md)
 #### [Time Travel Debugging - Exception objects](time-travel-debugging-exception-objects.md)
 #### [Time Travel Debugging - Position objects](time-travel-debugging-position-objects.md)
