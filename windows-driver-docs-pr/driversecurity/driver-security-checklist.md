@@ -3,7 +3,7 @@ title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
 ms.assetid: 25375E02-FCA1-4E94-8D9A-AA396C909278
 ms.author: windowsdriverdev
-ms.date: 11/14/2017
+ms.date: 01/26/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -314,8 +314,6 @@ For more information, see the following articles:
 
 [Controlling Device Namespace Access](https://msdn.microsoft.com/library/windows/hardware/ff542068)
 
-[Controlling driver access](controlling-driver-access.md)
-
 [Windows security model for driver developers](windows-security-model.md)
 
 
@@ -346,8 +344,6 @@ To further manage security when IOCTLs are sent by user-mode callers, the driver
 Implementing granular IOCTL security control does not replace the need to manage driver access using the techniques discussed above.
 
 For more information, see the following articles:
-
-[Define and handle IOCTLs securely](controlling-driver-access.md#define-and-handle-ioctls-securely)
 
 [Defining I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/defining-i-o-control-codes)
 

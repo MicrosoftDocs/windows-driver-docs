@@ -251,8 +251,6 @@ All inputs coming into the driver from user mode is untrusted and should be vali
 
 ### See Also
 
-[Controlling Driver Access](controlling-driver-access.md)
-
 [Securing Device Objects](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/securing-device-objects)
 
 [Driver security checklist](driver-security-checklist.md)
