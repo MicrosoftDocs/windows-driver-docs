@@ -2,7 +2,7 @@
 title: WinDbg Preview - What's New 
 description: This topic provides inofmration on what's new in WinDbg preview debugger.
 ms.author: domars
-ms.date: 12/20/2017
+ms.date: 01/25/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,6 +54,25 @@ This version includes these updates.
 
 ---
  
+
+## 1.1801.19001.0 
+
+This version includes these updates.
+
+- Misc. bug fixes
+- You can now highlight all instances of selected text directly in the debugger. To use this feature, select text in the command window and then click “Highlight” in the command ribbon or use Ctrl+Alt+H. click again or use Ctrl+Alt+H to remove the highlighting. In addition, the following "$hl" commands are available.
+
+    | Command       | Description          | 
+    | ------------- |----------------------| 
+    | $hl ["someValueHere"]    | Highlight given text (or un-highlight if already highlighted)  |
+    | $hl clearAll             | Clear all highlighted entries  |
+    | $hl caseSensitive [1\|0] | Set highlight matching to case sensitive or case insensitive (default is case insensitive) |
+
+
+---
+ 
+
+
 ## See Also
 
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
