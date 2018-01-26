@@ -3,7 +3,7 @@ title: Symbols
 description: Symbols
 ms.assetid: 7eec815b-f81a-4c0f-b862-6ee31be7ed8f
 keywords: ["Debugger Engine, symbols"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

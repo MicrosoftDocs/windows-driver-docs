@@ -3,7 +3,7 @@ title: ndiskd.nbllog
 description: The ndiskd.nbllog extension displays the log of all NBL (NET_BUFFER_LIST) activity on the system.
 ms.assetid: 59CB6B60-E0B3-435E-A6F6-82A715E87C69
 keywords: ["ndiskd.nbllog Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -1449,7 +1449,6 @@
 #### [NDIS_STATUS_SWITCH_PORT_REMOVE_VF](ndis-status-switch-port-remove-vf.md)
 ### [VMQ Status Indications](virtual-machine-queue-status-indications.md)
 #### [NDIS_STATUS_ISOLATION_PARAMETERS_CHANGE](ndis-status-isolation-parameters-change.md)
-#### [NDIS_STATUS_RECEIVE_FILTER_QUEUE_ALLOCATION_STATE](ndis-status-receive-filter-queue-allocation-state.md)
 #### [NDIS_STATUS_RECEIVE_FILTER_QUEUE_PARAMETERS](ndis-status-receive-filter-queue-parameters.md)
 #### [NDIS_STATUS_RECEIVE_QUEUE_STATE](ndis-status-receive-queue-state.md)
 ### [VMQ Macros](vmq-macros.md)

@@ -3,7 +3,7 @@ title: for_each_register
 description: The for_each_register extension executes a specified command for each register.
 ms.assetid: 496DC161-D082-4C83-A6B6-6BBCE932BE76
 keywords: ["for_each_register Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

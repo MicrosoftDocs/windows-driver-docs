@@ -2,7 +2,7 @@
 title: Debugging Hyper-V via a Null-modem Cable Connection
 description: Debugging Hyper-V via a Null-modem Cable Connection
 ms.assetid: 93d78696-11fa-443b-9fbe-60d208aa91d5
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

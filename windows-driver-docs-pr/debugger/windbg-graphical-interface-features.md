@@ -3,7 +3,7 @@ title: WinDbg Graphical Interface Features
 description: WinDbg Graphical Interface Features
 ms.assetid: 715b0502-6915-402c-aecb-0b762eb7b846
 keywords: ["WinDbg, graphical interface (reference)", "graphical interface, details"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

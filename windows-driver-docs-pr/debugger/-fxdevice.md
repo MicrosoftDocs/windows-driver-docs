@@ -3,7 +3,7 @@ title: fxdevice
 description: The fxdevice extension displays summary information about all Power Management Framework (PoFx) registered devices. This command can be used only during kernel-mode debugging.
 ms.assetid: 98E34825-467F-46E5-BC29-AF241FF30B90
 keywords: ["fxdevice Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

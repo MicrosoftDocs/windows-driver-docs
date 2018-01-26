@@ -3,7 +3,7 @@ title: Bug Check 0x6A LPC_INITIALIZATION_FAILED
 description: The LPC_INITIALIZATION_FAILED bug check has a value of 0x0000006A.This bug check appears very infrequently.
 ms.assetid: a8ffc4ec-0873-4226-800b-f305a85eaf24
 keywords: ["Bug Check 0x6A LPC_INITIALIZATION_FAILED", "LPC_INITIALIZATION_FAILED"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,8 +2,8 @@
 title: JavaScript Debugger Scripting
 description: This topic describes how to use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger.
 ms.assetid: 3442E2C4-4054-4698-B7FB-8FE19D26C171
-ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.author: domars
+ms.date: 12/22/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -36,6 +36,8 @@ This topic describes some of what you can do with JavaScript debugger scripting.
 [Create a Debugger Visualizer in JavaScript](#visualizer)
 
 [Work With 64-Bit Values in JavaScript Extensions](#bitvalues)
+
+[JavaScript Debugging](#debugging)
 
 [JavaScript Resources](#resources)
 
@@ -659,7 +661,7 @@ For general information on working with breakpoints, see [Methods of Controlling
 This example will evaluate notepad's open and save dialog: *notepad!ShowOpenSaveDialog*. This script will evaluate the pszCaption variable to determine if the current dialog is an "Open" dialog or if it is a "Save As" dialog. If it's an open dialog, code execution will continue. If it's a save as dialog, code execution will stop, and the debugger will break in.
 
 ```
- // Use JavaScript stric mode 
+ // Use JavaScript strict mode 
 "use strict";
  
 // Define the invokeScript method to handle breakpoints
@@ -671,17 +673,18 @@ This example will evaluate notepad's open and save dialog: *notepad!ShowOpenSave
     //Get the address of my string
     var address = host.evaluateExpression("pszCaption");
  
-    //The open and save dialogs use the same function
-        //When we hit the open dialog, continue.
-        //When we hit the save dialog, break.
-    if(host.memory.readWideString(address)=="Open"){
-        //host.diagnostics.debugLog("We're opening, let's continue!\n");
+    // The open and save dialogs use the same function
+    // When we hit the open dialog, continue.
+    // When we hit the save dialog, break.
+    if (host.memory.readWideString(address) == "Open") {
+        // host.diagnostics.debugLog("We're opening, let's continue!\n");
         ctl.ExecuteCommand("gc");
-    }else{
+    }
+    else
+    {
         //host.diagnostics.debugLog("We're saving, let's break!\n");
     }
- 
- }
+  }
 ```
 
 Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
@@ -892,6 +895,301 @@ In order to allow a debugger extension to maintain precision, a set of math func
 | toString          | .toString(\[radix\])      | Converts the 64-bit value to a display string in the default radix (or the optionally supplied radix)         |
 
  
+
+## <span id="Debugging"></span><span id="debugging"></span><span id="DEBUGGING"></span>JavaScript Debugging 
+
+This section describes how to use the script debugging capabilities of the debugger. The debugger has integrated support for debugging JavaScript scripts using the **.scriptdebug** command.
+
+>[!NOTE] 
+> To use JavaScript Debugging with WinDbg Preview, run the debugger as Administrator.
+>
+
+
+Use this sample code to explore debugging a JavaScript. For this walkthrough, we will name it DebuggableSample.js and save it in the C:\MyScripts directory.
+
+```
+"use strict";
+
+class myObj
+{
+    toString()
+    {
+        var x = undefined[42];
+        host.diagnostics.debugLog("BOO!\n");
+    }
+}
+
+class iterObj
+{
+    *[Symbol.iterator]()
+    {
+        throw new Error("Oopsies!");
+    }
+}
+
+function foo()
+{
+    return new myObj();
+}
+
+function iter()
+{
+    return new iterObj();
+}
+
+function throwAndCatch()
+{
+    var outer = undefined;
+    var someObj = {a : 99, b : {c : 32, d: "Hello World"} };
+    var curProc = host.currentProcess;
+    var curThread = host.currentThread;
+
+    try
+    {
+        var x = undefined[42];
+    } catch(e) 
+    {
+        outer = e;
+    }
+
+    host.diagnostics.debugLog("This is a fun test\n");
+    host.diagnostics.debugLog("Of the script debugger\n");
+    var foo = {a : 99, b : 72};
+    host.diagnostics.debugLog("foo.a = ", foo.a, "\n");
+
+    return outer;
+}
+
+function throwUnhandled()
+{
+    var proc = host.currentProcess;
+    var thread = host.currentThread;
+    host.diagnostics.debugLog("Hello...  About to throw an exception!\n");
+    throw new Error("Oh me oh my!  This is an unhandled exception!\n");
+    host.diagnostics.debugLog("Oh...  this will never be hit!\n");
+    return proc;
+}
+
+function outer()
+{
+    host.diagnostics.debugLog("inside outer!\n");
+    var foo = throwAndCatch();
+    host.diagnostics.debugLog("Caught and returned!\n");
+    return foo;
+}
+
+function outermost()
+{
+    var x = 99;
+    var result = outer();
+    var y = 32;
+    host.diagnostics.debugLog("Test\n");
+    return result;
+}
+
+function initializeScript()
+{
+    //
+    // Return an array of registration objects to modify the object model of the debugger
+    // See the following for more details:
+    //
+    //     https://aka.ms/JsDbgExt
+    //
+}
+```
+
+Load the sample script.
+
+```
+.scriptload C:\MyScripts\DebuggableSample.js
+```
+
+Start actively debugging the script using the **.scriptdebug** command.
+
+```
+0:000> .scriptdebug C:\MyScripts\DebuggableSample.js
+>>> ****** DEBUGGER ENTRY DebuggableSample ******
+           No active debug event!
+
+>>> Debug [DebuggableSample <No Position>] >
+```
+
+Once you see the prompt *>>> Debug [DebuggableSample <No Position>] >* and a request for input, you are
+inside the script debugger.  
+
+Use the **sx** script debugger command to see the list of events we can trap.
+                                                        
+```
+>>> Debug [DebuggableSample <No Position>] >sx              
+sx                                                          
+    ab  [   inactive] .... Break on script abort            
+    eh  [   inactive] .... Break on any thrown exception    
+    en  [   inactive] .... Break on entry to the script     
+    uh  [     active] .... Break on unhandled exception     
+```
+
+Use the **sxe** script debugger command to turn on break on entry so that the script will trap into the script debugger as soon as any code within it executes.
+                                                            
+```
+>>> Debug [DebuggableSample <No Position>] >sxe en          
+sxe en                                                      
+Event filter 'en' is now active                             
+```
+                                                            
+
+Exit the script debugger and we'll make a function call into the script which will trap into the debugger.
+
+```
+>>> Debug [DebuggableSample <No Position>] >q
+```
+
+At this point, you are back in the normal debugger.  Execute the following command to call the script.
+
+```
+dx @$scriptContents.outermost()
+```
+
+Now, you are back in the script debugger and broken in on the first line of the outermost JavaScript function.  
+
+```
+>>> ****** SCRIPT BREAK DebuggableSample [BreakIn] ******   
+           Location: line = 73, column = 5                  
+           Text: var x = 99                                 
+                                                            
+>>> Debug [DebuggableSample 73:5] >                         
+```
+
+In addition to seeing the break into the debugger, you get information on the line (73) and the column (5) where the break took
+place as well as the relevant snippet of source code: *var x = 99*.
+
+Let's step a few times and get to another place in the script.
+
+```
+    p
+    t
+    p
+    t
+    p
+    p
+```
+
+At this point, you should be broken into the throwAndCatch method on line 34.  
+
+```
+...
+>>> ****** SCRIPT BREAK DebuggableSample [Step Complete] ******                       
+           Location: line = 34, column = 5                                            
+           Text: var curProc = host.currentProcess                                    
+                                                                                      
+```
+
+You can verify this by executing a stack trace.
+
+```
+>>> Debug [DebuggableSample 34:5] >k                                                  
+k                                                                                     
+    ##  Function                         Pos    Source Snippet                        
+-> [00] throwAndCatch                    034:05 (var curProc = host.currentProcess)   
+   [01] outer                            066:05 (var foo = throwAndCatch())           
+   [02] outermost                        074:05 (var result = outer())                
+```
+
+From here, you can investigate the value of variables.
+
+```
+>>> Debug [DebuggableSample 34:5] >??someObj                
+??someObj                                                   
+someObj          : {...}                                    
+    __proto__        : {...}                                
+    a                : 0x63                                 
+    b                : {...}                                
+>>> Debug [DebuggableSample 34:5] >??someObj.b              
+??someObj.b                                                 
+someObj.b        : {...}                                    
+    __proto__        : {...}                                
+    c                : 0x20                                 
+    d                : Hello World                          
+```
+
+Let's set a breakpoint on the current line of code and see what breakpoints are now set.
+
+```
+>>> Debug [DebuggableSample 34:5] >bpc                      
+bpc                                                         
+Breakpoint 1 set at 34:5                                    
+>>> Debug [DebuggableSample 34:5] >bl                       
+bl                                                          
+      Id State    Pos                                       
+       1 enabled  34:5                                      
+```
+
+From here, we'll disable the entry (en) event using the **sxd** script debugger command and then just go and let the script continue to the end.
+ 
+```                                                                                                                      
+>>> Debug [DebuggableSample 34:5] >sxd en                                                                              
+sxd en                                                                                                                 
+Event filter 'en' is now inactive                                                                                      
+>>> Debug [DebuggableSample 34:5] >g                                                                                   
+g                                                                                                                      
+This is a fun test                                                                                                     
+Of the script debugger                                                                                                 
+foo.a = 99                                                                                                             
+Caught and returned!                                                                                                   
+Test                                                                                                                   
+...
+```
+
+Execute the script method again and watch our breakpoint be hit.
+                                                                                     
+```
+0:000> dx @$scriptContents.outermost()                                                
+inside outer!                                                                         
+>>> ****** SCRIPT BREAK DebuggableSample [Breakpoint 1] ******                        
+           Location: line = 34, column = 5                                            
+           Text: var curProc = host.currentProcess                                    
+```
+
+Display the call stack.
+
+```
+>>> Debug [DebuggableSample 34:5] >k                                                  
+k                                                                                     
+    ##  Function                         Pos    Source Snippet                        
+-> [00] throwAndCatch                    034:05 (var curProc = host.currentProcess)   
+   [01] outer                            066:05 (var foo = throwAndCatch())           
+   [02] outermost                        074:05 (var result = outer())                
+```
+
+At this point, we want to stop debugging this script, so we detach from it and then type q to quit.  
+
+
+```
+>>> Debug [DebuggableSample 34:5] >.detach                  
+.detach                                                     
+Debugger has been detached from script!                     
+>>> Debug [<NONE> ] >q                                      
+q                                                           
+This is a fun test                                          
+Of the script debugger                                      
+foo.a = 99                                                  
+Caught and returned!                                        
+Test                                                        
+```
+
+Executing the function again will no longer break into the debugger.
+
+```
+0:007> dx @$scriptContents.outermost()
+inside outer!
+This is a fun test
+Of the script debugger
+foo.a = 99
+Caught and returned!
+Test
+
+```
+
+
 
 ## <span id="Resources"></span><span id="resources"></span><span id="RESOURCES"></span>JavaScript Resources
 

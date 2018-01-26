@@ -3,7 +3,7 @@ title: ndiskd.pktpools
 description: Warning  This extension is for legacy NDIS 5.x drivers. The ndiskd.pktpools extension displays a list of all allocated packet pools.
 ms.assetid: 0aceb22c-17ab-4199-a313-ecbc4c8f0b6e
 keywords: ["ndiskd.pktpools Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

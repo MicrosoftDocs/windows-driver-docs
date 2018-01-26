@@ -2,7 +2,7 @@
 title: Failure Analysis Entries
 description: A DebugFailureAnalysis object has a collection of failure analysis entries.
 ms.assetid: 759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

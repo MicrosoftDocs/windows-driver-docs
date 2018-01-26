@@ -3,7 +3,7 @@ title: Bug Check 0x14D EXCEPTION_SCOPE_INVALID
 description: The EXCEPTION_SCOPE_INVALID bug check has a value of 0x0000014D. This indicates that an internal inconsistency in exception dispatching has been detected.
 ms.assetid: 17355775-6D78-479D-839E-D73F0684E67C
 keywords: ["Bug Check 0x14D EXCEPTION_SCOPE_INVALID", "EXCEPTION_SCOPE_INVALID"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

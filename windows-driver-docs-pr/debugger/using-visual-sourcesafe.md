@@ -3,7 +3,7 @@ title: Using Visual SourceSafe
 description: Using Visual SourceSafe
 ms.assetid: a315a1c5-1427-4432-aec0-314dbb6d7ae5
 keywords: ["Visual SourceSafe", "source servers, Visual SourceSafe", "SrcSrv, Visual SourceSafe", "Visual SourceSafe, SrcSrv", "Visual SourceSafe, overview"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

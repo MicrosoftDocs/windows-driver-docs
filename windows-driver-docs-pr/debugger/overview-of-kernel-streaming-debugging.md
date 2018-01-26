@@ -3,7 +3,7 @@ title: Overview of Kernel Streaming Debugging
 description: Overview of Kernel Streaming Debugging
 ms.assetid: 7e09eccf-f74e-4faa-bb59-5c11f93c4b90
 keywords: ["kernel streaming debugging", "kernel streaming debugging, overview"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

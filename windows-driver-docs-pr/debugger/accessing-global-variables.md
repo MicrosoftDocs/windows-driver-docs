@@ -3,7 +3,7 @@ title: Accessing Global Variables
 description: Accessing Global Variables
 ms.assetid: 81daf418-d3cf-413a-8ee0-790b0c0f86c0
 keywords: ["global variables", "global variables, accessing"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

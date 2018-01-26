@@ -3,7 +3,7 @@ title: Command Tokens
 description: Command Tokens
 ms.assetid: 164ffe42-93d9-405e-8ad3-965c476e9204
 keywords: ["commands, tokens used in commands"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

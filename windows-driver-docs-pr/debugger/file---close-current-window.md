@@ -3,7 +3,7 @@ title: File Close Current Window
 description: File Close Current Window
 ms.assetid: b0cdb6da-66f7-40fd-8a93-8890affc6104
 keywords: ["File Close Current Window"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

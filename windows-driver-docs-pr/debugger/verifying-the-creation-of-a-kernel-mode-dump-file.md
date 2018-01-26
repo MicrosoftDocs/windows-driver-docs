@@ -3,7 +3,7 @@ title: Verifying the Creation of a Kernel-Mode Dump File
 description: Verifying the Creation of a Kernel-Mode Dump File
 ms.assetid: ea1dc18d-8974-4de8-accd-1cbc515d71d0
 keywords: ["dump file, verifying kernel-mode dump creation"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: ks.forcedump
 description: The ks.forcedump command displays information about memory contents at a caller-supplied address.
 ms.assetid: 2829d324-a346-47af-a5f8-1808f329cadf
 keywords: ["ks.forcedump Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

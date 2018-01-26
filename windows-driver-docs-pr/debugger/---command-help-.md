@@ -3,7 +3,7 @@ title: (Command Help)
 description: The question mark ( ) character displays a list of all commands and operators.Note  A question mark by itself displays command help.
 ms.assetid: 89b61021-43a4-46b7-ae43-a52dd9d40948
 keywords: ["(Command Help) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

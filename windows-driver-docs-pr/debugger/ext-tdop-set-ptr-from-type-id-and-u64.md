@@ -9,7 +9,7 @@ api_name:
 - EXT_TDOP_SET_PTR_FROM_TYPE_ID_AND_U64
 api_type:
 - NA
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

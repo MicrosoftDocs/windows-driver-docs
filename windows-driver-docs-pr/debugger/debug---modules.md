@@ -3,7 +3,7 @@ title: Debug Modules
 description: Debug Modules
 ms.assetid: 4107ff36-31c4-45a6-95f6-b647543f01be
 keywords: ["Debug Modules", "executable files and paths, Debug Modules"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

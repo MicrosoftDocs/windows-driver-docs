@@ -1084,6 +1084,141 @@
       "source_path": "windows-driver-docs-pr/network/mb-uicc-reset-operations.md",
       "redirect_URL": "/windows-hardware/drivers/network/mb-low-level-uicc-access#mbimcidmsuiccreset",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-receive-filter-queue-allocation-state.md",
+      "redirect_URL": "/windows-hardware/drivers/network/virtual-machine-queue-status-indications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/kernel-mode-sdk-topics-for-network-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/network/network-driver-topics-in-sdk-header-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/file-a-new-bug.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/bug-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/view-and-manage-your-bugs.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/bug-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/search-bugs.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/bug-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/boot-ini-boot-parameter-reference.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/boot-3gb.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/-basevideo.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/-bootlog.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/-break.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/-burnmemory.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/-crashdebug.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/-debug.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/-execute.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/-fastdetect.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/-hal.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/-kernel.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/-maxmem.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/-nodebug.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/-noguiboot.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/-noexecute.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/-nolowmem.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/-nopae.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/-pae.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/-pcilock.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/-redirect.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/-sos.md",
+      "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
+      "redirect_document_id": true
     }
   ]
 }

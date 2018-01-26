@@ -3,7 +3,7 @@ title: Control Keys
 description: Control Keys
 ms.assetid: 48a0b379-1911-4f43-9288-db9c4d55e0bd
 keywords: ["control keys", "control keys, complete listing"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

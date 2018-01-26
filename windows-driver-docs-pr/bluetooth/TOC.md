@@ -27,6 +27,7 @@
 ### [Bluetooth Certification](bluetooth-certification.md)
 ### [Appendix A: How to Install an In-Box Bluetooth Driver on New Hardware in Windows Vista](bluetooth-faq--appendix-a.md)
 ### [Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista](bluetooth-faq--appendix-b.md)
+### [Bluetooth Appendix](bluetooth-faq--appendix-c.md)
 ## [Transport Bus Driver for Bluetooth Power Control Handling Guidelines](transport-bus-driver-for-bluetooth-power-control-handling-guidelines.md)
 ### [Transport Bus Driver for Bluetooth](transport-bus-driver-for-bluetooth.md)
 ### [Bluetooth Core Driver Layer and Supported Power Transitions](bluetooth-core-driver-layer-and-supported-power-transitions.md)

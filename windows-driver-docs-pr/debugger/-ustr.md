@@ -3,7 +3,7 @@ title: ustr
 description: The ustr extension displays a UNICODE_STRING structure.
 ms.assetid: 17b84bf0-5a5b-47a5-893b-fdc58ca2afc3
 keywords: ["strings", "UNICODE_STRING structure", "ustr Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

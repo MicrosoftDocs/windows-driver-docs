@@ -3,7 +3,7 @@ title: Enable loading of kernel debugger symbols
 description: Enable loading of kernel debugger symbols
 ms.assetid: ce047073-9cfd-4ab2-bd58-48a2acc55351
 keywords: ["Enable loading of kernel debugger symbols (global flag)"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

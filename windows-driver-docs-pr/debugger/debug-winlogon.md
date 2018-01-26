@@ -3,7 +3,7 @@ title: Debug WinLogon
 description: Debug WinLogon
 ms.assetid: c30e6b83-685a-4e4e-88bf-1e05776ac87a
 keywords: ["Debug WinLogon (global flag)"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

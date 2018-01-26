@@ -3,7 +3,7 @@ title: ppmidlepolicy
 description: The ppmidlepolicy command
 ms.assetid: FA77159F-95B3-42F9-9452-CE4827DD4EC5
 keywords: ["ppmidlepolicy Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 06/08/2017
 ms.topic: article
 ms.prod: windows-hardware

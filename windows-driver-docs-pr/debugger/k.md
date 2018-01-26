@@ -3,7 +3,7 @@ title: K (Windows Debugger Glossary)
 description: Glossary page - K
 Robots: noindex, nofollow
 ms.assetid: 93b65114-f680-41f7-b754-699f773955ba
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

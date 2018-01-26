@@ -3,7 +3,7 @@ title: bthkd.rfcomminfo
 description: The bthkd.rfcomminfo command displays information about the RFCOMM FDO and the TDI Device Object.
 ms.assetid: 3C9237AD-7683-4486-95FA-E95AEC68F6C8
 keywords: ["bthkd.rfcomminfo Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: !positions
 description: The !positions extension displays all the active threads, including their current positions.
 keywords: ["positions Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 09/21/2017
 ms.topic: article
 ms.prod: windows-hardware

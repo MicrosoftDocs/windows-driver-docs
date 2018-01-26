@@ -2,7 +2,7 @@
 title: Remote Debugging on Workgroup Computers
 description: You can perform remote debugging with computers that are joined to a workgroup.
 ms.assetid: 0E740E1A-8DEA-4086-AE9D-6B135BF278B0
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

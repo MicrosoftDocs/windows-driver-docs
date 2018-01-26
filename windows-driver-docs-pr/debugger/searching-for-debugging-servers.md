@@ -3,7 +3,7 @@ title: Searching for Debugging Servers
 description: You can use KD or CDB with the -QR command-line option to obtain a list of available debugging servers that are running on a network server.
 ms.assetid: 510d5f9a-cde8-4dc8-8e2f-80f84ad44fce
 keywords: ["Searching for Debugging Servers Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

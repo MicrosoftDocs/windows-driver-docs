@@ -3,7 +3,7 @@ title: Choosing Network Security Credentials
 description: Choosing Network Security Credentials
 ms.assetid: f53bda2b-a5e7-4a8e-ac31-44c92f306b7a
 keywords: ["SymProxy, network security"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

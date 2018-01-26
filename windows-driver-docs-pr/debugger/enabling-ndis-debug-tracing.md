@@ -3,7 +3,7 @@ title: Enabling NDIS Debug Tracing
 description: Enabling NDIS Debug Tracing
 ms.assetid: 4ca3c246-3e73-46fb-93a5-ea376788e330
 keywords: ["NDIS debugging, debug tracing"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

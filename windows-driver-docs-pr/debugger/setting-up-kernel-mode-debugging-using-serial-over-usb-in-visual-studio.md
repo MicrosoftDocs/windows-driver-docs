@@ -2,7 +2,7 @@
 title: Setting Up Kernel-Mode Debugging using Serial over USB in Visual Studio with a Sharks Cove development board
 description: This topic describes setting up Kernel-Mode Debugging USB in Visual Studio with a Sharks Cove development board.
 ms.assetid: D909CA2C-3870-4521-8F23-FBF93738F338
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

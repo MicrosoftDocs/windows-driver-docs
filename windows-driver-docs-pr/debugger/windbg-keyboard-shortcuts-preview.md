@@ -1,7 +1,7 @@
 ---
 title: WinDbg Preview - keyboard shortcuts
 description: This section provides the keyboard shortcuts for the WinDbg preview debugger.
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 08/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -76,19 +76,19 @@ Ctrl+9		|   	Open/focus on thread window
 
 ### Scripting
 
-| Keystroke     | Description             |
-| ------------- |-------------------------|
-Ctrl+Shift+O		|   	Open script
-Ctrl+Shift+Enter		|   	Execute script
-Ctrl+S		|   	Save script
-Alt+S,N			|   New script
-Alt+S,U		|   	Unlink script
+| Keystroke      | Description             |
+| -------------- |-------------------------|
+Ctrl+Shift+O	 |   	Open script
+Ctrl+Shift+Enter |   	Execute script
+Ctrl+S		     |   	Save script
+Alt+S,N			 |      New script
+Alt+S,U		     |   	Unlink script
 
 
 ### Stack navigation
 | Keystroke     | Description             |
 | ------------- |-------------------------|
-Ctrl+↑ / ↓			|   Move up/down a stack frame
+Ctrl+↑ / ↓		|   Move up/down a stack frame
 
 
 ### Help 
@@ -96,6 +96,14 @@ Ctrl+↑ / ↓			|   Move up/down a stack frame
 | ------------- |-------------------------|
 F1	          	|   	Open help file
 Shift+F1		|   	Search selection on MSDN (source window)
+
+
+### Misc.  
+| Keystroke     | Description             |
+| ------------- |-------------------------|
+Ctrl+Alt+V     	|   	Toggle Verbose Mode
+
+
 
 
 ## See Also

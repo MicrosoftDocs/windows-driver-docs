@@ -3,7 +3,7 @@ title: View Verbose Output
 description: View Verbose Output
 ms.assetid: 728cf574-30ec-4e30-b951-2d9997d8defe
 keywords: ["View Verbose Output"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

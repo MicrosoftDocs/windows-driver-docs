@@ -3,7 +3,7 @@ title: ks.dump
 description: The ks.dump extension displays the specified object.
 ms.assetid: 7878c79f-9de6-4fd2-9641-c636212429eb
 keywords: ["ks.dump Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Window Close All Error Windows
 description: Window Close All Error Windows
 ms.assetid: 1de8e4f8-926d-434c-8b45-e0d27d5002b1
 keywords: ["Window Close All Error Windows"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

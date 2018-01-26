@@ -3,7 +3,7 @@ title: .expr (Choose Expression Evaluator)
 description: The .expr command specifies the default expression evaluator.
 ms.assetid: 96d246c2-10fe-4688-a04f-1325ac51e4b3
 keywords: [".expr (Choose Expression Evaluator) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -70,9 +70,7 @@ Remarks
 
 When you use the **.expr** command without an argument, the debugger displays the current default expression type.
 
-The [**?? (Evaluate C++ Expression)**](----evaluate-c---expression-.md) command, the
-
-Watch window, and the [Locals window](locals-window.md) always use C++ expression syntax. All other commands and debugging information windows use the default expression evaluator.
+The [**?? (Evaluate C++ Expression)**](----evaluate-c---expression-.md) command, the Watch window, and the [Locals window](locals-window.md) always use C++ expression syntax. All other commands and debugging information windows use the default expression evaluator.
 
 For more information about how to control which syntax is used, see [Evaluating Expressions](evaluating-expressions.md). For more information about the syntax, see [Numerical Expression Syntax](numerical-expression-syntax.md).
 

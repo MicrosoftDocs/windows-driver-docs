@@ -3,7 +3,7 @@ title: Forcing a System Crash from the Debugger
 description: Forcing a System Crash from the Debugger
 ms.assetid: 7d7d9b07-00a3-4f87-8eb9-01b3f2fa312f
 keywords: ["system crash, causing from debugger", "bug check, causing from debugger", "forcing system crash from debugger"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
