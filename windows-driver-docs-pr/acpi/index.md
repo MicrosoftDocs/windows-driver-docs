@@ -26,7 +26,7 @@ ACPI devices are defined by the [Advanced Configuration and Power Interface (ACP
 
 ## Related sctions
 
-[ACPI DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_acpi)
+-   [ACPI DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_acpi)
 
  
 

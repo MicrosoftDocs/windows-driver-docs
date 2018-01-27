@@ -20,62 +20,37 @@ This section contains information about Windows Image Acquisition (WIA) drivers,
 
 ## In this section
 
-[Device Interface Classes for Imaging Devices](device-interface-classes-for-imaging-devices.md)
-
-[Windows Image Acquisition Drivers](windows-image-acquisition-drivers.md)
-
-[WIA Properties](about-wia-properties.md)
-
-[64-Bit and WIA](64-bit-and-wia.md)
-
-[WIA Compatibility Layer](wia-compatibility-layer.md)
-
-[WIA Driver Filters](wia-driver-filters.md)
-
-[WIA Item Trees](wia-item-trees.md)
-
-[WIA with Web Services for Devices](wia-with-web-services-for-devices.md)
-
-[Developing a WIA Driver](developing-a-wia-driver.md)
-
-[Developing a WIA Camera Driver](developing-a-wia-camera-driver.md)
-
-[WIA Minidriver Best Practices](wia-minidriver-best-practices.md)
-
-[WIA Microdriver Commands](wia-microdriver-commands.md)
-
-[Building, Troubleshooting and Debugging WIA Minidrivers](building--troubleshooting-and-debugging-wia-minidrivers.md)
-
-[WIA Samples and Tools](wia-samples-and-tools.md)
-
-[Still Image Drivers](still-image-drivers.md)
-
-[Web Services on Devices](web-services-on-devices.md)
-
-[Web Services on Devices Reference](web-services-on-devices-reference.md)
-
-[Distributed Scan Management (DSM) Schemas](distributed-scan-management--dsm--schemas.md)
-
-[Distributed Scan Device Web Service (WS-DSD) Schema](distributed-scan-device-web-service--ws-dsd-schema.md)
-
-[Distributed Scan Processing Web Service (WS-DSP) Schema](distributed-scan-processing-web-service--ws-dsp--schema.md)
-
-[WS-DSP Operation Elements](ws-dsp-operation-elements.md)
-
-[WS-DSP Event Elements](ws-dsp-event-elements.md)
-
-[PostScanJobEndStateEvent](postscanjobendstateevent.md)
-
-[PostScanJobStatusEvent](postscanjobstatusevent.md)
-
-[Scan Process Schema](scan-process-schema.md)
-
-[Post-Scan Processing Filter Schemas](post-scan-processing-filter-schemas.md)
+-   [Device Interface Classes for Imaging Devices](device-interface-classes-for-imaging-devices.md)
+-   [Windows Image Acquisition Drivers](windows-image-acquisition-drivers.md)
+-   [WIA Properties](about-wia-properties.md)
+-   [64-Bit and WIA](64-bit-and-wia.md)
+-   [WIA Compatibility Layer](wia-compatibility-layer.md)
+-   [WIA Driver Filters](wia-driver-filters.md)
+-   [WIA Item Trees](wia-item-trees.md)
+-   [WIA with Web Services for Devices](wia-with-web-services-for-devices.md)
+-   [Developing a WIA Driver](developing-a-wia-driver.md)
+-   [Developing a WIA Camera Driver](developing-a-wia-camera-driver.md)
+-   [WIA Minidriver Best Practices](wia-minidriver-best-practices.md)
+-   [WIA Microdriver Commands](wia-microdriver-commands.md)
+-   [Building, Troubleshooting and Debugging WIA Minidrivers](building--troubleshooting-and-debugging-wia-minidrivers.md)
+-   [WIA Samples and Tools](wia-samples-and-tools.md)
+-   [Still Image Drivers](still-image-drivers.md)
+-   [Web Services on Devices](web-services-on-devices.md)
+-   [Web Services on Devices Reference](web-services-on-devices-reference.md)
+-   [Distributed Scan Management (DSM) Schemas](distributed-scan-management--dsm--schemas.md)
+-   [Distributed Scan Device Web Service (WS-DSD) Schema](distributed-scan-device-web-service--ws-dsd-schema.md)
+-   [Distributed Scan Processing Web Service (WS-DSP) Schema](distributed-scan-processing-web-service--ws-dsp--schema.md)
+-   [WS-DSP Operation Elements](ws-dsp-operation-elements.md)
+-   [WS-DSP Event Elements](ws-dsp-event-elements.md)
+-   [PostScanJobEndStateEvent](postscanjobendstateevent.md)
+-   [PostScanJobStatusEvent](postscanjobstatusevent.md)
+-   [Scan Process Schema](scan-process-schema.md)
+-   [Post-Scan Processing Filter Schemas](post-scan-processing-filter-schemas.md)
  
 ## Related sections
 
  
-[Imaging DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_image)
+-   [Imaging DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_image)
 
 
 
