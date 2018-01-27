@@ -695,6 +695,8 @@ SAFECode - [https://www.safecode.org/](https://www.safecode.org/)
 
 [Locking Down Drivers - A Survey of Techniques](http://www.osronline.com/article.cfm?article=357) 
 
+[Meltdown and Spectre: What about drivers?](https://www.osr.com/blog/2018/01/23/meltdown-spectre-drivers/) 
+
 
 **Books**
 
