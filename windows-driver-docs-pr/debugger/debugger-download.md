@@ -9,64 +9,62 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Download Debugging tools for Windows
+# ![decorative image showing screen with arrow to represent download](images/download-install.png) Download Debugging tools for Windows
 
 
 The Windows Debugger (WinDbg) can be used to debug kernel and user mode code, analyze crash dumps and to examine the CPU registers as code executes. 
 
-Debugging tools
--------------------
 
-
-WinDbg Preview 
+## WinDbg Preview  
+ 
 
 WinDbg Preview is a new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. WinDbg Preview is using the same underlying engine as WinDbg today, so all the commands, extensions, and workflows still work as they did before. 
-Download from the Microsoft Store 
+
+Download WinDbg Preview from the Microsoft Store 
+
 Learn more about installation and configuration  
 
 
-Debugging Tools for Windows 10 (WinDbg) 
-If you just need the Debugging Tools for Windows 10, and not WDK 10 or Visual Studio 2015, you can install the debugging tools as a standalone component from Windows SDK. In the installation wizard, select Debugging Tools for Windows, and deselect all other components. 
+## Debugging Tools for Windows 10 (WinDbg) 
+
+If you just need the Debugging Tools for Windows 10, and not WDK 10 or Visual Studio 2017, you can install the debugging tools as a standalone component from Windows SDK. In the installation wizard, select *Debugging Tools for Windows*, and deselect all other components. 
+
 Get Debugging Tools for Windows (WinDbg) (from the SDK) 
+
 Learn more about WinDbg and other debuggers (WinDbg, KD, CDB, NTSD) 
 
 
-# Download Windows Symbol Packages
+# ![decorative image showing screen with arrow to represent download](images/download-install.png)  Download Windows Symbol Packages
 
-Symbol files make it easier to debug your code. The easiest way to get Windows symbols is to use the Microsoft Symbol Server. If you prefer to download the entire set of symbols for a particular version of Windows, download a symbol package. 
+Symbol files make it easier to debug your code. The easiest way to get Windows symbols is to use the [Microsoft Symbol Server](https://msdn.microsoft.com/library/windows/desktop/ee416588.aspx#using_the_microsoft_symbol_server). If you prefer to download the entire set of symbols for a particular version of Windows, download a symbol package. 
 
-## Note on symbol package deprecrication
+## Note on symbol package deprecation
 
-Important
-
-With the cadence that we release updates for Windows, the Windows debugging symbols we publish via the packages on this page are quickly made out of date. We have made significant improvements to the online Microsoft Symbols Server by moving this to be an Azure-based symbol store, and symbols for all Windows versions and updates are available there. You can find more about this in this [MSDN blog entry](https://blogs.msdn.microsoft.com/windbg/2017/10/18/update-on-microsofts-symbol-server/). Going forward we will no longer publish the offline symbol packages for RTM releases. 
+>![IMPORTANT]
+> With the cadence that we release updates for Windows, the Windows debugging symbols we publish via the packages on this page are quickly made out of date. We have made significant improvements to the online [Microsoft Symbol Server](https://msdn.microsoft.com/library/windows/desktop/ee416588.aspx#using_the_microsoft_symbol_server) by moving this to be an Azure-based symbol store, and symbols for all Windows versions and updates are available there. You can find more about this in this [MSDN blog entry](https://blogs.msdn.microsoft.com/windbg/2017/10/18/update-on-microsofts-symbol-server/). Going forward we will no longer publish the offline symbol packages for RTM releases. 
 
 
 ## Get Windows Symbol Packages 
 
 
-The easiest way to get Windows symbols is to use the Microsoft Symbol Server. The symbol server makes symbols available to your debugging tools as needed. After a symbol file is downloaded from the symbol server it is cached on the local computer for quick access. Additional versions of Windows not listed here, are available on the Microsoft Symbol Server. 
+The easiest way to get Windows symbols is to use the [Microsoft Symbol Server](https://msdn.microsoft.com/library/windows/desktop/ee416588.aspx#using_the_microsoft_symbol_server). The symbol server makes symbols available to your debugging tools as needed. After a symbol file is downloaded from the symbol server it is cached on the local computer for quick access. Additional versions of Windows not listed here, are available on the [Microsoft Symbol Server](https://msdn.microsoft.com/library/windows/desktop/ee416588.aspx#using_the_microsoft_symbol_server). 
+
 If you prefer to download the entire set of symbols for Windows 10, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, or Windows 7, then you can download a symbol package and install it on your computer. 
 
-## In this section 
+## Symbol Package System Requirements
 
-System Requirements 
-Installation Instructions 
-Resources, Support, and Feedback 
-Download Windows Symbol Packages 
-
-System Requirements
 Before downloading and installing each symbol package, you should have at least 1 GB of disk space free, because of the size of the download package and required temporary files: 
-Each x86 symbol package may require 750 MB or more of hard disk space. 
-Each Itanium symbol package may require 560 MB or more of disk space. 
-Each x64 symbol package may require 640 MB or more. 
-Symbol packages are non-cumulative unless otherwise noted, so if you are using an SP2 Windows release, you will need to install the symbols for the original RTM version and for SP1 before you install the symbols for SP2. 
 
-## Installation Instructions
+- Each x86 symbol package may require 750 MB or more of hard disk space. 
+- Each x64 symbol package may require 640 MB or more. 
+- Symbol packages are non-cumulative unless otherwise noted, so if you are using an SP2 Windows release, you will need to install the symbols for the original RTM version and for SP1 before you install the symbols for SP2. 
+
+## Symbol Package Installation Instructions
 The symbol download packages are listed by processor type (x86, Itanium, and x64) and build type (retail and checked). Almost all customers require the symbols for the retail version. If you are debugging a special version of Windows with extra debugging information, then you should download the symbols for the checked version. 
-Windows XP and later and Windows Server 2003 and later do not require localized symbols in order to debug localized versions of the product. Each symbol download package for these versions of Windows works for debugging all localized versions.
 
-## Resources, Support, and Feedback
+
+## Symbol Resources, Support, and Feedback
+
 To learn more about using symbols and debugging, see Debugging Tools for Windows. 
 For help with debugging issues, see Debugging Resources. 
 For information on how to retrieve symbols for a machine that is not connected to the Internet, see Using a Manifest File with SymChk. 
@@ -83,6 +81,42 @@ Windows 10 – November 2015
 Windows 10 – July 2015   
 Windows RT 8.1 ARM, Windows 8.1 and Windows Server 2012 R2   
 Windows 8   
+
+
+<section class="section item-section">
+                                                <header class="section-header">
+                                                    <h4 class="section-title">Windows&nbsp;7 RC Symbols</h4>
+                                                </header>
+                                                <div class="section-body">
+                                                    <p>
+                                                        These packages contain the full set of symbols required to debug the Windows&nbsp;7 Release Candidate (RC).
+                                                    </p>
+                                                    <ul class="bulleted-list">
+                                                        <li>
+                                                            <a href="//download.microsoft.com/download/8/B/7/8B723049-19CF-444C-9755-160FD8A4C233/Windows_Winmain.7100.0.090421-1700.X86FRE.Symbols.msi">Windows&nbsp;7 RC x86 retail symbols, all languages</a> (File size: 208 MB - Most customers want this package.)
+                                                        </li>
+                                                        <li>
+                                                            <a href="//download.microsoft.com/download/8/B/7/8B723049-19CF-444C-9755-160FD8A4C233/Windows_Winmain.7100.0.090421-1700.X86CHK.Symbols.msi">Windows&nbsp;7 RC x86 checked symbols, all languages</a> (File size: 288 MB)
+                                                        </li>
+                                                        <li>
+                                                            <a href="//download.microsoft.com/download/8/7/6/876ECDEA-C26F-4540-A97C-52A5A7861448/Windows_Winmain.7100.0.090421-1700.AMD64FRE.Symbols.msi">Windows&nbsp;7 RC x64 retail symbols, all languages</a> (File size: 286 MB)
+                                                        </li>
+                                                        <li>
+                                                            <a href="//download.microsoft.com/download/8/7/6/876ECDEA-C26F-4540-A97C-52A5A7861448/Windows_Winmain.7100.0.090421-1700.AMD64CHK.Symbols.msi">Windows&nbsp;7 RC x64 checked symbols, all languages</a> (File size: 260 MB)
+                                                        </li>
+                                                        <li>
+                                                            <a href="//download.microsoft.com/download/C/A/E/CAEA5DA9-8CD8-47B4-B0EA-B4B28DEF5F88/Windows_Winmain.7100.0.090421-1700.IA64FRE.Symbols.msi">Windows&nbsp;7 RC Itanium retail symbols, all languages</a> (File size: 192 MB)
+                                                        </li>
+                                                        <li>
+                                                            <a href="//download.microsoft.com/download/C/A/E/CAEA5DA9-8CD8-47B4-B0EA-B4B28DEF5F88/Windows_Winmain.7100.0.090421-1700.IA64CHK.Symbols.msi">Windows&nbsp;7 RC Itanium checked symbols, all languages</a> (File size: 240 MB)
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </section>
+                                        </div>
+</section>
+
+
 
 
 # Looking for related downloads?
