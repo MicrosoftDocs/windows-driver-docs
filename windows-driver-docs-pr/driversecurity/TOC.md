@@ -1,5 +1,0 @@
-# [Driver Security Guidance](index.md)
-## [Driver security checklist](driver-security-checklist.md)
-## [Threat modeling for drivers](threat-modeling-for-drivers.md)
-## [Windows security model for driver developers](windows-security-model.md)
-## [Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility](use-device-guard-readiness-tool.md)
