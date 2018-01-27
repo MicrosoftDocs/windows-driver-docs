@@ -19,9 +19,9 @@ ACPI devices are defined by the [Advanced Configuration and Power Interface (ACP
 ## In this section
 
 
-| Section                                                             | Description                                                                                                                                                                                                                                                                                                                                      |
-|------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Supporting ACPI Devices](supporting-acpi-devices.md)                 | Provides information about how to use a Windows Driver Model (WDM) function driver to enhance the functionality of an ACPI device.                                                                                                                                                                                                       |
+| Section | Description |
+| --- | --- |
+| [Supporting ACPI Devices](supporting-acpi-devices.md) | Provides information about how to use a Windows Driver Model (WDM) function driver to enhance the functionality of an ACPI device. |
 | [Evaluating ACPI Control Methods](evaluating-acpi-control-methods.md) | Provides information about how device drivers that comply with the requirements of [Kernel-Mode Driver Framework (KMDF)](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel), [User-Mode Driver Framework (UMDF)](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2), or [Windows Driver Model (WDM)](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/windows-driver-model) can evaluate ACPI control methods. |
 
 ## Related sctions

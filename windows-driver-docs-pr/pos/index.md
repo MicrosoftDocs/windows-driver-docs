@@ -17,46 +17,14 @@ This section provides driver design guidance for point-of-service (POS) devices.
 
 ## In this section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>[POS driver samples](driver-samples.md)</p></td>
-<td><p>Provides samples that demonstrate how to create universal drivers for point-of-service (POS) devices.</p></td>
-</tr>
-</tbody>
-</table>
+| Topic | Description |
+| --- | --- |
+| [POS driver samples](driver-samples.md) | Provides samples that demonstrate how to create universal drivers for point-of-service (POS) devices. |
 
 ## Related sections
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>[POS DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_pos)</p></td>
-<td><p>Provides reference information for point of service (POS) device drivers.</p></td>
-</tr>
-</tbody>
-</table>
+[POS DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_pos)
+
 
 
 --------------------
