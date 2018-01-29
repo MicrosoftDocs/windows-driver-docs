@@ -87,7 +87,7 @@ The lab has the following three sections.
 
     void GetCppConGreeting(wchar_t* buffer, size_t size)
     {
-	    wchar_t const* const message = L"HELLO FROM THE WINDBG TEAM. GOOD LUCK IN ALL OF YOUR TIME TRAVEL DEBUGGING!";
+	   wchar_t const* const message = L"HELLO FROM THE WINDBG TEAM. GOOD LUCK IN ALL OF YOUR TIME TRAVEL DEBUGGING!";
  
  	   wcscpy_s(buffer, size, message);
     }
