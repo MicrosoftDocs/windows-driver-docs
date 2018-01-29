@@ -196,7 +196,7 @@ In the next section of this lab we will analyze the trace file to locate the iss
 
     ```
     .sympath+ C:\Projects\DisplayGreeting\Debug
-    .reload /f
+    .reload 
     ```
 
 2.  Add your local code location to the source path by typing the following command.
@@ -333,15 +333,15 @@ At the point of failure in trace it is common to end up a fews steps after the t
     esp=00effd94 ebp=00effe44
     ```
 
-Also of interest is that the locals window contains values from our target app and the source code window is highlighting the line of code that was just executed at this point in the trace. TBD TBD TBD - Or is ready to be executed?
+Also of interest is that the locals window contains values from our target app and the source code window is highlighting the line of code that is ready to be executed at this point in the trace.
 
-![Screen shot of WinDbg Preview showing locals windows with memory ascii output and source code window](images/ttd-time-travel-walkthrough-locals-window.png)
+    ![Screenshot of WinDbg Preview showing locals windows with memory ASCII output and source code window](images/ttd-time-travel-walkthrough-locals-window.png)
 
 3. To further investigate, we can open up a memory window to view the contents near the base pointer memory address of *0x00effe44*.
 
 4. To display the associated ASCII characters, from the Memory ribbon, select **Text** and then **ASCII**.
 
-   ![Screen shot of WinDbg Preview showing memory ascii output and source code window](images/ttd-time-travel-walkthrough-memory-ascii.png)
+    ![screenshot of winbbg preview showing memory ascii output and source code window](images/ttd-time-travel-walkthrough-memory-ascii.png)
 
 5. Instead of the base pointer pointing to an instruction it is pointing to our message text. So something is not right here, this may be close to the point in time that we have corrupted the stack. To further investigate we will set a breakpoint. 
 
@@ -404,7 +404,7 @@ Note that you can only set four data breakpoints at any given time and it is up 
 
 2. Select **View** and then **Breakpoints** to confirm they are set as intended.
 
-   ![WinDbg Preview showing breakpoints window with one breakpoint](images/ttd-time-travel-walkthrough-view-breakpoints.png)
+    ![WinDbg Preview showing breakpoints window with one breakpoint](images/ttd-time-travel-walkthrough-view-breakpoints.png)
 
 
 3.  From the Home menu, select **Go Back**  to travel back in time until the breakpoint is hit.
@@ -422,13 +422,13 @@ Note that you can only set four data breakpoints at any given time and it is up 
 
 5. Select **View** and then **Locals**. In the locals window we can see that the *destination* variable has only part of the message, while the *source* has contains all of the text. This information supports the idea that the stack was corrupted. 
 
-   ![Screen shot of WinDbg Preview locals window](images/ttd-time-travel-walkthrough-locals-window.png)
+    ![Screenshot of WinDbg Preview locals window](images/ttd-time-travel-walkthrough-locals-window.png)
 
 
 4. At this point we can examine the program stack to see what code is active. From the **View** ribbon select **Stack**. 
 
 
-   ![Screen shot of WinDbg Preview stack window](images/ttd-time-travel-walkthrough-stack-window.png)
+    ![Screenshot of WinDbg Preview stack window](images/ttd-time-travel-walkthrough-stack-window.png)
 
 
 As it is very unlikely that the Microsoft provided wscpy_s() function would have a code bug like this, we look further in the stack. The stack shows that that Greeting!main calls Greeting!GetCppConGreeting. In our very small code sample we could just open the code at this point and likely find the error pretty easily. But to illustrate the techniques that can be used with larger, more complex program, we will set a new breakpoint to investigate further. 
@@ -454,12 +454,12 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 
 4. Confirm that a Hardware Read Breakpoint is active in the breakpoints Window.
 
-   ![WinDbg Preview showing breakpoints window with one hardware write breakpoint](images/ttd-time-travel-walkthrough-hardware-write-breakpoint.png)
+    ![WinDbg Preview showing breakpoints window with one hardware read breakpoint](images/ttd-time-travel-walkthrough-hardware-write-breakpoint.png)
 
 
 5. As we are wondering about the size of the greeting string we will set a watch window to display the value of sizeof(greeting). From the View ribbon, select **Watch** and provide *sizeof(greeting)*.
 
-![WinDbg Preview showing a watch locals window](images/ttd-time-travel-watch-locals.png)
+    ![WinDbg Preview showing a watch locals window](images/ttd-time-travel-watch-locals.png)
 
 6. On the Time Travel menu, use **Time travel to start** command to move to the start of the trace.
 
@@ -505,7 +505,7 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 
 9. It looks like we have found the root cause. The *greeting* array that we declared is 50 characters in length, while the sizeof(greeting) that we pass into GetCppConGreeting is 0x64, 100).  
 
-   ![WinDbg Preview showing the Display greeting code with a watch locals window showing X64](images/ttd-time-travel-walkthrough-code-with-watch-locals.png)
+    ![WinDbg Preview showing the Display greeting code with a watch locals window showing X64](images/ttd-time-travel-walkthrough-code-with-watch-locals.png)
 
     As we look at the size issue further, we also notice that the message is 75 characters in length, 76 including the end of string character.
 
@@ -534,7 +534,7 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 
 1. An alternative way to perform this investigation would be to set a breakpoint by clicking on any line of code. For example clicking on the right side of the std:array definition line in the source window will set a breakpoint there.
 
-    ![Screen shot of source window showing breakpoint set on std:array](images/ttd-time-travel-walkthrough-source-window-breakpoint.png)
+    ![Screenshot of source window showing breakpoint set on std:array](images/ttd-time-travel-walkthrough-source-window-breakpoint.png)
 
 2. On the Time Travel menu, use **Time travel to start** command to move to the start of the trace.
 
