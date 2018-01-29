@@ -3,7 +3,7 @@ title: Logger and LogViewer
 description: Logger and LogViewer
 ms.assetid: 10f2d006-6ebc-4098-a401-afc6351ff3dd
 keywords: ["Logger", "LogViewer"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

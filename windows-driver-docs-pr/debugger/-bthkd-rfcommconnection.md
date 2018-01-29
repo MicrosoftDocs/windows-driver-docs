@@ -3,7 +3,7 @@ title: bthkd.rfcommconnection
 description: The bthkd.rfcommconnection command displays information about a given RFCOMM connection object.
 ms.assetid: 0F56B937-BE56-4B45-B30F-F6D1BAB8FCCB
 keywords: ["bthkd.rfcommconnection Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

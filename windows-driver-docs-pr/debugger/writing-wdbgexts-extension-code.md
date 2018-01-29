@@ -3,7 +3,7 @@ title: Writing WdbgExts Extension Code
 description: Writing WdbgExts Extension Code
 ms.assetid: bb37ea19-8355-42f3-aca5-32cc2b3be3b2
 keywords: ["WdbgExts extensions", "extensions, WdbgExts"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

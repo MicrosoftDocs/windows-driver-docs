@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 The Windows Sensor and Location Platform uses constants in a variety of ways. This section describes these constants and their usage.
 
-The platform defines a variety of constants you can use in your sensor driver code. You can also define your own constants. You can find the definitions of platform-defined constants in the file named Sensors.h. For detailed information about platform-defined sensor constants, see [Constants](https://msdn.microsoft.com/library/windows/hardware/ff545409).
+The platform defines a variety of constants you can use in your sensor driver code. You can also define your own constants. You can find the definitions of platform-defined constants in the files Sensors.h and Sensorsdef.h. For detailed information about platform-defined sensor constants, see [Constants](https://msdn.microsoft.com/library/windows/hardware/ff545409).
 
 ### Sensor and Data Organization
 
@@ -28,6 +28,52 @@ The platform organizes sensors and their data in the following ways:
 -   *Data types* represent specific kinds of information that the sensor can provide. Sensor data types can contain the actual measurement value, such as altitude, information about the units used to express the data, for example meters, and reference points for the data, for example sea level. Each data type is represented by a **PROPERTYKEY** constant. For example, the data type that represents the x-axis acceleration in g's would be the SENSOR\_DATA\_TYPE\_ACCELERATION\_X\_G constant.
 
 -   When reporting data, a value is said to be contained in a *data field*, and a collection of related data fields comprise a *data report*. Data reports are packaged together by using the [IPortableDeviceValues](http://go.microsoft.com/fwlink/p/?linkid=131486) interface. Each data report must contain at least one valid data field and a time stamp that identifies when the data report was created. Time stamps are represented by the SENSOR\_DATA\_TYPE\_TIMESTAMP property key.
+
+### Sensor categories
+
+The following GUIDs associate each sensor category to the sensor class extension. These GUIDs can also be used to search for sensors in the system. They are defined in the file Sensorsdef.h.
+
+| Name | Description | Syntax |
+| --- | --- | --- |
+| GUID_SensorCategory_All| This GUID identifies all of the sensors. | `DEFINE_GUID(GUID_SensorCategory_All, 0XC317C286, 0XC468, 0X4288, 0X99, 0X75, 0XD4, 0XC4, 0X58, 0X7C, 0X44, 0X2C);`|
+| GUID_SensorCategory_Biometric | This GUID identifies the biometric sensor category. | `DEFINE_GUID(GUID_SensorCategory_Biometric, 0XCA19690F, 0XA2C7, 0X477D, 0XA9, 0X9E, 0X99, 0XEC, 0X6E, 0X2B, 0X56, 0X48);` |
+| GUID_SensorCategory_Electrical | This GUID identifies the electrical sensor category. | `DEFINE_GUID(GUID_SensorCategory_Electrical, 0XFB73FCD8, 0XFC4A, 0X483C, 0XAC, 0X58, 0X27, 0XB6, 0X91, 0XC6, 0XBE, 0XFF);`|
+| GUID_SensorCategory_Environmental| This GUID identifies the environmental sensor category. | `DEFINE_GUID(GUID_SensorCategory_Environmental, 0X323439AA, 0X7F66, 0X492B, 0XBA, 0X0C, 0X73, 0XE9, 0XAA, 0X0A, 0X65, 0XD5);`|
+| GUID_SensorCategory_Light| This GUID identifies the light sensor category. | `DEFINE_GUID(GUID_SensorCategory_Light, 0X17A665C0, 0X9063, 0X4216, 0XB2, 0X02, 0X5C, 0X7A, 0X25, 0X5E, 0X18, 0XCE);`|
+| GUID_SensorCategory_Location | This GUID identifies the location sensor category. | `DEFINE_GUID(GUID_SensorCategory_Location, 0XBFA794E4, 0XF964, 0X4FDB, 0X90, 0XF6, 0X51, 0X05, 0X6B, 0XFE, 0X4B, 0X44);`|
+| GUID_SensorCategory_Mechanical| This GUID identifies the mechanical sensor category.| `DEFINE_GUID(GUID_SensorCategory_Mechanical, 0X8D131D68, 0X8EF7, 0X4656, 0X80, 0XB5, 0XCC, 0XCB, 0XD9, 0X37, 0X91, 0XC5);`|
+| GUID_SensorCategory_Motion| This GUID identifies the motion sensor category. | `DEFINE_GUID(GUID_SensorCategory_Motion, 0XCD09DAF1, 0X3B2E, 0X4C3D, 0XB5, 0X98, 0XB5, 0XE5, 0XFF, 0X93, 0XFD, 0X46);`|
+| GUID_SensorCategory_Orientation | This GUID identifies the orientation sensor category. | `DEFINE_GUID(GUID_SensorCategory_Orientation, 0X9E6C04B6, 0X96FE, 0X4954, 0XB7, 0X26, 0X68, 0X68, 0X2A, 0X47, 0X3F, 0X69);`|
+| GUID_SensorCategory_Other | This GUID identifies a category for sensors that are supported, but do not fit into any of the predefined categories.| `DEFINE_GUID(GUID_SensorCategory_Other, 0x2C90E7A9, 0xF4C9, 0x4FA2, 0xAF, 0x37, 0x56, 0xD4, 0x71, 0xFE, 0x5A, 0x3D);`|
+| GUID_SensorCategory_Scanner| This GUID identifies the scanner sensor category.| `DEFINE_GUID(GUID_SensorCategory_Scanner, 0XB000E77E, 0XF5B5, 0X420F, 0X81, 0X5D, 0X02, 0X70, 0XA7, 0X26, 0XF2, 0X70);`|
+| GUID_SensorCategory_Unsupported| This GUID identifies a category for sensors that are unsupported.| `DEFINE_GUID(GUID_SensorCategory_Unsupported, 0x2BEAE7fA, 0x19B0, 0x48C5, 0xA1, 0xF6, 0xB5, 0x48, 0x0D, 0xC2, 0x06, 0xB0);`|
+
+### Sensor Types
+
+This section provides information about the GUIDs that are associated with each type of sensor. They are defined in the file Sensorsdef.h.
+
+| Name | Description | Syntax |
+| --- | --- | --- |
+| GUID_SensorType_Accelerometer3D | This GUID identifies the accelerometer. |`DEFINE_GUID(GUID_SensorType_Accelerometer3D, 0XC2FB0F5F, 0XE2D2, 0X4C78, 0XBC, 0XD0, 0X35, 0X2A, 0X95, 0X82, 0X81, 0X9D);`|
+| GUID_SensorType_ActivityDetection | This GUID identifies the activity detection sensor. | `DEFINE_GUID(GUID_SensorType_ActivityDetection, 0X9D9E0118, 0X1807, 0X4F2E, 0X96, 0XE4, 0X2C, 0XE5, 0X71, 0X42, 0XE1, 0X96);`|
+| GUID_SensorType_AmbientLight | This GUID identifies the ambient light sensor. | `DEFINE_GUID(GUID_SensorType_AmbientLight, 0X97F115C8, 0X599A, 0X4153, 0X88, 0X94, 0XD2, 0XD1, 0X28, 0X99, 0X91, 0X8A);`|
+| GUID_SensorType_Barometer | This GUID identifies the barometer |`DEFINE_GUID(GUID_SensorType_Barometer, 0X0E903829, 0XFF8A, 0X4A93, 0X97, 0XDF, 0X3D, 0XCB, 0XDE, 0X40, 0X22, 0X88);`|
+| GUID_SensorType_Custom | This GUID identifies a custom sensor. | `DEFINE_GUID(GUID_SensorType_Custom, 0XE83AF229, 0X8640, 0X4D18, 0XA2, 0X13, 0XE2, 0X26, 0X75, 0XEB, 0XB2, 0XC3);`|
+| GUID_SensorType_GeomagneticOrientation | This GUID identifies the geomagnetic orientation. | `DEFINE_GUID(GUID_SensorType_GeomagneticOrientation, 0XE77195F8, 0X2D1F, 0X4823, 0X97, 0X1B, 0X1C, 0X44, 0X67, 0X55, 0X6C, 0X9D);`|
+| GUID_SensorType_GravityVector | This GUID identifies the gravity vector. | `DEFINE_GUID(GUID_SensorType_GravityVector, 0X03B52C73, 0XBB76, 0X463F, 0X95, 0X24, 0X38, 0XDE, 0X76, 0XEB, 0X70, 0X0B);`|
+| GUID_SensorType_Gyrometer3D | This GUID identifies the gyrometer. | `DEFINE_GUID(GUID_SensorType_Gyrometer3D, 0X09485F5A, 0X759E, 0X42C2, 0XBD, 0X4B, 0XA3, 0X49, 0XB7, 0X5C, 0X86, 0X43);`|
+| GUID_SensorType_Humidity | This GUID identifies the humidity sensor. | `DEFINE_GUID(GUID_SensorType_Humidity, 0X5C72BF67, 0XBD7E, 0X4257, 0X99, 0X0B, 0X98, 0XA3, 0XBA, 0X3B, 0X40, 0X0A);`|
+| GUID_SensorType_LinearAccelerometer | This GUID identifies the linear accelerometer. | `DEFINE_GUID(GUID_SensorType_LinearAccelerometer, 0X038B0283, 0X97B4, 0X41C8, 0XBC, 0X24, 0X5F, 0XF1, 0XAA, 0X48, 0XFE, 0XC7)`|
+| GUID_SensorType_Magnetometer3D | This GUID identifies the magnetometer. | `DEFINE_GUID(GUID_SensorType_Magnetometer3D, 0x55e5effb, 0x15c7, 0x40df, 0x86, 0x98, 0xa8, 0x4b, 0x7c, 0x86, 0x3c, 0x53);`|
+| GUID_SensorType_Orientation | This GUID identifies the orientation sensor. | `DEFINE_GUID(GUID_SensorType_Orientation, 0XCDB5D8F7, 0X3CFD, 0X41C8, 0X85, 0X42, 0XCC, 0XE6, 0X22, 0XCF, 0X5D, 0X6E);`|
+| GUID_SensorType_Pedometer | This GUID identifies the pedometer. | `DEFINE_GUID(GUID_SensorType_Pedometer, 0XB19F89AF, 0XE3EB, 0X444B, 0X8D, 0XEA, 0X20, 0X25, 0X75, 0XA7, 0X15, 0X99);`|
+| GUID_SensorType_Proximity | This GUID identifies the proximity sensor. | `DEFINE_GUID(GUID_SensorType_Proximity, 0X5220DAE9, 0X3179, 0X4430, 0X9F, 0X90, 0X06, 0X26, 0X6D, 0X2A, 0X34, 0XDE);`|
+| GUID_SensorType_RelativeOrientation | This GUID identifies the RelativeOrientation sensor. | `DEFINE_GUID(GUID_SensorType_RelativeOrientation, 0x40993b51, 0x4706, 0x44dc, 0x98, 0xd5, 0xc9, 0x20, 0xc0, 0x37, 0xff, 0xab);`|
+| GUID_SensorType_SimpleDeviceOrientation | This GUID identifies the simple device orientation sensor. | `DEFINE_GUID(GUID_SensorType_SimpleDeviceOrientation, 0X86A19291, 0X0482, 0X402C, 0XBF, 0X4C, 0XAD, 0XDA, 0XC5, 0X2B, 0X1C, 0X39);`|
+| GUID_SensorType_Temperature | This GUID identifies the temperature sensor.|`DEFINE_GUID(GUID_SensorType_Temperature, 0X04FD0EC4, 0XD5DA, 0X45FA, 0X95, 0XA9, 0X5D, 0XB3, 0X8E, 0XE1, 0X93, 0X06);`|
+
+
+
 
 
 ### Other Constants

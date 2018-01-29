@@ -3,7 +3,7 @@ title: D (Windows Debugger Glossary)
 description: Glossary page - D
 Robots: noindex, nofollow
 ms.assetid: e4d53375-c82e-493b-9ccb-444c211fbc79
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

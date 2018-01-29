@@ -3,7 +3,7 @@ title: Register Syntax
 description: Register Syntax
 ms.assetid: 64a566b1-c10b-4329-947c-af69904a21f8
 keywords: ["expressions, registers", "registers, command syntax", "(register prefix)", "syntax rules for commands, (register prefix)", "syntax rules for commands, registers"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

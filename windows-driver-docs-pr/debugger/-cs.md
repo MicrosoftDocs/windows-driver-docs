@@ -3,7 +3,7 @@ title: cs
 description: The cs extension displays one or more critical sections or the whole critical section tree.
 ms.assetid: 767ad508-013b-4cf7-808d-38ff64418879
 keywords: ["cs Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: pcr
 description: The pcr extension displays the current status of the Processor Control Region (PCR) on a specific processor.
 ms.assetid: a9d82aa4-57de-4170-80fd-b7cd5b82f1e5
 keywords: ["processor control region (PCR)", "pcr Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

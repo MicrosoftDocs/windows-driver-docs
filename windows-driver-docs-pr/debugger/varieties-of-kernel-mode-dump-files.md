@@ -3,7 +3,7 @@ title: Varieties of Kernel-Mode Dump Files
 description: Varieties of Kernel-Mode Dump Files
 ms.assetid: 6db2a755-ed9c-492a-a650-9ae34ae59968
 keywords: ["dump file, kernel-mode file types"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

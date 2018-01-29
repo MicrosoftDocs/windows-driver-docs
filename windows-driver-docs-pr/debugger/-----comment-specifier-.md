@@ -3,7 +3,7 @@ title: $$ (Comment Specifier)
 description: If two dollar signs ( $$ ) appear at the start of a command, then the rest of the line is treated as a comment, unless the comment is terminated by a semicolon.
 ms.assetid: bafd5e97-d443-4bfc-b3ee-c2867ed139a2
 keywords: ["comment token ($$)", "$$ (Comment Specifier) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

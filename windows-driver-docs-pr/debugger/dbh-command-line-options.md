@@ -3,7 +3,7 @@ title: DBH Command-Line Options
 description: The DBH command line uses the following syntax.
 ms.assetid: fd333c2d-1f07-4a47-8653-e10cf58417a5
 keywords: ["DBH Command-Line Options Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

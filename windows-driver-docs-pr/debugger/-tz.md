@@ -3,7 +3,7 @@ title: tz
 description: The tz extension displays the specified power thermal zone structure.
 ms.assetid: f3cc9e54-a0db-4095-b707-380ec1dacf59
 keywords: ["thermal zone", "tz Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

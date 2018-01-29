@@ -3,7 +3,7 @@ title: Logger Extensions (Logexts.dll)
 description: Logger Extensions (Logexts.dll)
 ms.assetid: f1031b91-6324-41ff-b9b7-86d551ca42bd
 keywords: ["logger extensions (logexts.dll)", "logexts.dll (logger extensions)", "extensions, logger"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

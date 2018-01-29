@@ -3,7 +3,7 @@ title: Using SrcSrv
 description: Using SrcSrv
 ms.assetid: 2696e5e9-343f-49a2-bdab-23a54f8c9e5c
 keywords: ["source servers, SrcSrv (srcsrv.dll)", "SrcSrv, overview"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Using SrcSrv
 
 
-To use [SrcSrv](srcsrv.md) with WinDbg, KD, NTSD, or CDB, verify that you have installed a recent version of the Debugging Tools for Windows package (version 6.3 or later). Then, include the text `srv*` in the source path, separated by semicolons from any directories that are also in the source path.
+To use [SrcSrv](srcsrv.md) with WinDbg, KD, NTSD, or CDB, verify that you have installed a recent version of the [Debugging Tools for Windows](https://docs.microsoft.com/windows-hardware/drivers/debugger/) package (version 6.3 or later). Then, include the text `srv*` in the source path, separated by semicolons from any directories that are also in the source path.
 
 For example:
 

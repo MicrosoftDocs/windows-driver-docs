@@ -2,7 +2,7 @@
 title: WdbgExts Memory Access
 description: WdbgExts Memory Access
 ms.assetid: 7b600d18-343e-4c22-b1e9-5dcc83d88695
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -1,7 +1,7 @@
 ---
-title: Customizing Microsoft's Printer Drivers
+title: Customizing Microsoft Printer Drivers
 author: windows-driver-content
-description: Customizing Microsoft's Printer Drivers
+description: Customizing Microsoft Printer Drivers
 ms.assetid: b7761209-1f6f-4288-af47-4ed855c2e629
 keywords:
 - printer driver customizing WDK
@@ -15,10 +15,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Customizing Microsoft's Printer Drivers
-
-
-## <a href="" id="ddk-customizing-microsofts-printer-drivers-gg"></a>
+# Customizing Microsoft Printer Drivers
 
 
 The designs of the [Microsoft Universal Printer Driver](microsoft-universal-printer-driver.md) (Unidrv) and the [Microsoft PostScript Printer Driver](microsoft-postscript-printer-driver.md) (Pscript) are based on the NT-based operating system [printer driver architecture](printer-driver-architecture.md). Therefore, each is composed of two components--a [printer interface DLL](printer-interface-dll.md) and a [printer graphics DLL](printer-graphics-dll.md). This section explains how to customize these components.

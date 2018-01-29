@@ -3,7 +3,7 @@ title: ppmperf
 description: The ppmperf command
 ms.assetid: B6BCB832-E7D9-44AA-9305-9A017124022B
 keywords: ["ppmperf Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

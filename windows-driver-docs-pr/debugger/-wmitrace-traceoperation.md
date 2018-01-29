@@ -3,7 +3,7 @@ title: wmitrace.traceoperation
 description: The wmitrace.traceoperation extension displays the progress messages from the tracing components in Windows.
 ms.assetid: 92d189fe-fb3b-40a6-81a8-9e66868c4d1d
 keywords: ["wmitrace.traceoperation Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

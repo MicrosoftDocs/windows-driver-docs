@@ -3,7 +3,7 @@ title: Launching a Program with Flags
 description: Launching a Program with Flags
 ms.assetid: 81c0ac6a-3114-4b6a-b154-248801a07f8b
 keywords: ["GFlags, launching a program with flags"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

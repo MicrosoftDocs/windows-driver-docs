@@ -3,7 +3,7 @@ title: pmc
 description: The pmc extension displays the Performance Monitor Counter (PMC) register at the specified address.
 ms.assetid: ff9a03af-f0e9-4aef-b583-c3092eb5f89c
 keywords: ["Performance Monitor Counter (PMC)", "pmc Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

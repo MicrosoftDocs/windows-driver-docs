@@ -3,7 +3,7 @@ title: dt
 description: The dt extension displays information about a CSR thread.This extension command should not be confused with the dt (Display Type) command.
 ms.assetid: 7fbca028-8d11-42b5-b64e-41eb3edc56cc
 keywords: ["dt Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

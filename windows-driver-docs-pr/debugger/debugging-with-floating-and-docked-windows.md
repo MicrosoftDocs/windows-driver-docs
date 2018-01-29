@@ -3,7 +3,7 @@ title: Debugging with Floating and Docked Windows
 description: Debugging with Floating and Docked Windows
 ms.assetid: 2b3e67de-576e-4cbb-bdf1-58a31cea733c
 keywords: ["docking windows, debugging", "floating windows, debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

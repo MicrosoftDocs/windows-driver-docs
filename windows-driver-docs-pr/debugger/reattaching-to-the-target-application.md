@@ -3,7 +3,7 @@ title: Reattaching to the Target Application
 description: Reattaching to the Target Application
 ms.assetid: cc137185-58a7-44bf-b262-2698c46730f6
 keywords: ["re-attaching to the target application", "process, re-attaching debugger to"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

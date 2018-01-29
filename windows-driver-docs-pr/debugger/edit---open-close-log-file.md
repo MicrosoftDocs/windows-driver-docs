@@ -3,7 +3,7 @@ title: Edit Open/Close Log File
 description: Edit Open/Close Log File
 ms.assetid: f63549f7-1516-48a0-8af8-38cca103215c
 keywords: ["Edit Open/Close Log File", "log file, Edit Open/Close Log File"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

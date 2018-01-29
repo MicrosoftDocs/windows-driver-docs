@@ -3,7 +3,7 @@ title: stacks
 description: The stacks extension displays information about the kernel stacks.
 ms.assetid: f0777609-4785-4a6b-a6f5-9efaeb608df7
 keywords: ["stacks Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

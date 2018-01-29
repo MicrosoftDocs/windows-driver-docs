@@ -3,7 +3,7 @@ title: Mapping Driver Files
 description: Mapping Driver Files
 ms.assetid: 9a13a6a9-b585-4be1-b7c8-da65fa3ba6c6
 keywords: ["mapping driver files", "driver replacement map", "driver replacement map, overview", "driver replacement map, file format", "driver replacement map, replacing boot drivers", "boot driver replacement"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

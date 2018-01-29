@@ -3,7 +3,7 @@ title: Using ks.graph
 description: Using ks.graph
 ms.assetid: 05dcd5d3-fac6-4af5-8149-955435fb016f
 keywords: ["kernel streaming debugging, displaying a graph"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

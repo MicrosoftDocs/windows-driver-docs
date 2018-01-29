@@ -3,7 +3,7 @@ title: Determining the Cause of a Video Stream Stall
 description: Determining the Cause of a Video Stream Stall
 ms.assetid: 959c2295-1ec3-48b0-aed9-93a81378372f
 keywords: ["kernel streaming debugging, video stream stall, cause"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

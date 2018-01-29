@@ -3,7 +3,7 @@ title: wmitrace.help
 description: The wmitrace.help extension displays the extension commands in Wmitrace.dll.
 ms.assetid: b0839c68-a53e-4f80-bad3-7545b5c78b7a
 keywords: ["wmitrace.help Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

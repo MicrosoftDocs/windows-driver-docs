@@ -3,7 +3,7 @@ title: apc
 description: The apc extension formats and displays the contents of one or more asynchronous procedure calls (APCs).
 ms.assetid: 0c5a9d1e-ab61-4b14-b06b-25cde582cc73
 keywords: ["apc Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

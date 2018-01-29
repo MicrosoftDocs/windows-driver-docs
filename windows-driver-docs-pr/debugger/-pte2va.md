@@ -3,7 +3,7 @@ title: pte2va
 description: The pte2va extension displays the virtual address that corresponds to the specified page table entry (PTE).
 ms.assetid: 9a94ce3a-dbbc-4566-9ef5-3ec76c1505eb
 keywords: ["pte2va Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: GFlags Overview
 description: GFlags Overview
 ms.assetid: fa5c48bf-c0d0-4010-a101-381c692082bf
 keywords: ["GFlags, overview"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: for_each_frame
 description: The for_each_frame extension executes a debugger command one time for each frame in the stack of the current thread.
 ms.assetid: 7294dc5e-190f-486f-9079-1fb28d6d484b
 keywords: ["for_each_frame Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

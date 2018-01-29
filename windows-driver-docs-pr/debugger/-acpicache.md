@@ -3,7 +3,7 @@ title: acpicache
 description: The acpicache extension displays all of the Advanced Configuration and Power Interface (ACPI) tables cached by the HAL.
 ms.assetid: 488bbc40-0f67-4d13-8615-944ff8a6a177
 keywords: ["acpicache Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

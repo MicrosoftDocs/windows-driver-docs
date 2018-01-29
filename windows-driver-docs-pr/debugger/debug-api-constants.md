@@ -2,7 +2,7 @@
 title: Debug API Constants
 description: Debug API Constants
 keywords: ["Debugger API Constants", "Debugger Engine API Constants"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: windows-hardware

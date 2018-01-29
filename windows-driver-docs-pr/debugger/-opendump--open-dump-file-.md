@@ -3,7 +3,7 @@ title: .opendump (Open Dump File)
 description: The .opendump command opens a dump file for debugging.
 ms.assetid: 751af9ea-be7e-4aef-a6f6-fc99e3b3a56e
 keywords: [".opendump (Open Dump File) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

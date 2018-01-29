@@ -2,7 +2,7 @@
 title: Keeping a Log File in WinDbg
 description: Keeping a Log File in WinDbg
 ms.assetid: 96CFF42B-CBBB-40F7-8CD3-1CF4A538A963
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

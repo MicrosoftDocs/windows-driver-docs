@@ -3,7 +3,7 @@ title: wdfkd.wdfusbinterface
 description: The wdfkd.wdfusbinterface extension displays information about a specified Kernel-Mode Driver Framework (KMDF) USB interface object, including its possible and current settings.
 ms.assetid: 2c0788aa-adb0-4a51-9937-32c8d9e0c240
 keywords: ["wdfkd.wdfusbinterface Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

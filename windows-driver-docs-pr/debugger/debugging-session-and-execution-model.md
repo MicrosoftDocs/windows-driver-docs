@@ -3,7 +3,7 @@ title: Debugging Session and Execution Model
 description: Debugging Session and Execution Model
 ms.assetid: 1cc2c055-447c-44cd-94d4-ae3dfa8243fb
 keywords: ["Debugger Engine, execution model", "execution model", "Debugger Engine, debugging session"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

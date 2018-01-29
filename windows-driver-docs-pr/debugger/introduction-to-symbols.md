@@ -2,7 +2,7 @@
 title: Introduction to Symbols
 description: Introduction to Symbols
 ms.assetid: 3c896a1e-51db-4c98-a6f4-842c82bdeaef
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

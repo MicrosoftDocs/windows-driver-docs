@@ -3,7 +3,7 @@ title: .catch
 description: The .catch token is used to prevent a program from terminating if an error occurs.It does not behave like the catch keyword in C++.
 ms.assetid: cda195d8-c0b8-4fb2-99a8-e2e8d338482b
 keywords: [".catch Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

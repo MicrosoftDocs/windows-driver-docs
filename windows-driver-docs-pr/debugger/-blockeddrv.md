@@ -3,7 +3,7 @@ title: blockeddrv
 description: The blockeddrv extension displays the list of blocked drivers on the target computer.
 ms.assetid: 38331ff6-1957-4b28-90c0-10b2c77339fb
 keywords: ["blocked drivers", "blockeddrv Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

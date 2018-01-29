@@ -3,7 +3,7 @@ title: version
 description: The version extension displays the version information for the extension DLL.This extension command should not be confused with the version (Show Debugger Version) command.
 ms.assetid: b6ca4b8c-d673-40c5-890f-3b92fbb99fae
 keywords: ["version Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

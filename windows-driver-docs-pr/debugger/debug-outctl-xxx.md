@@ -2,7 +2,7 @@
 title: DEBUG\_OUTCTL\_XXX
 description: The DEBUG\_OUTCTL\_XXX constants are used for output control. The constants form a bit field that specifies the current policy of where to send output. The bit field is divided into two sections.
 ms.assetid: 94d3416a-082e-488b-adc2-8b837bb1c1cb
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 12/07/2017
 ms.topic: article
 ms.prod: windows-hardware

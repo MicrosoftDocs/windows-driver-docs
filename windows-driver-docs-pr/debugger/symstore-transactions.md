@@ -3,7 +3,7 @@ title: SymStore Transactions
 description: SymStore Transactions
 ms.assetid: f0bb2f3f-0f6b-4ed6-809e-f55b1c537d7f
 keywords: ["SymStore, transactions"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

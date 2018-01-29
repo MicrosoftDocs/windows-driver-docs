@@ -3,7 +3,7 @@ title: .apply_dbp (Apply Data Breakpoint to Context)
 description: The .apply_dbp command applies the current process' existing data breakpoints to the specified register context.
 ms.assetid: c74fd4b3-3335-4e03-a57a-6a9aa883dd9f
 keywords: [".apply_dbp (Apply Data Breakpoint to Context) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

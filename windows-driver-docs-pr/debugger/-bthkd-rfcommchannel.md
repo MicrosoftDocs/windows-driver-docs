@@ -3,7 +3,7 @@ title: bthkd.rfcommchannel
 description: The bthkd.rfcommchannel command displays information about a given RFCOMM channel CB.
 ms.assetid: FAA0BABB-E479-47CD-85AC-5A710FFCDE89
 keywords: ["bthkd.rfcommchannel Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

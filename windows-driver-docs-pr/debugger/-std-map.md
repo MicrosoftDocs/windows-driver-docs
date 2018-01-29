@@ -3,7 +3,7 @@ title: std_map
 description: The std_map extension displays the entries of a std map tree.
 ms.assetid: 7a921226-e7b1-4c3f-9732-c53c66710ccb
 keywords: ["std_map Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

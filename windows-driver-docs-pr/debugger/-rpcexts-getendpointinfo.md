@@ -3,7 +3,7 @@ title: rpcexts.getendpointinfo
 description: The rpcexts.getendpointinfo extension searches the system's RPC state information for endpoint information.
 ms.assetid: 3efd0cd1-bcdd-4785-aa00-a32a7578219c
 keywords: ["rpcexts.getendpointinfo Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

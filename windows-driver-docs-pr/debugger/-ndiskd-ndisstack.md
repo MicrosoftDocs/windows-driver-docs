@@ -3,7 +3,7 @@ title: ndiskd.ndisstack
 description: The !ndiskd.ndisstack extension displays a debug stack trace.
 ms.assetid: 939DEC34-3D20-41FE-B5A8-DDF810195B07
 keywords: ["ndiskd.ndisstack Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

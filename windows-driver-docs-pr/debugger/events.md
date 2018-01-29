@@ -3,7 +3,7 @@ title: Events
 description: Events
 ms.assetid: 2b086e78-ac4d-4f9c-a006-65f6f50b33f1
 keywords: ["Debugger Engine, events"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

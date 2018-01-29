@@ -2,7 +2,7 @@
 title: Debugging a User-Mode Process Using Visual Studio
 description: In Microsoft Visual Studio, you can use the Windows User Mode Debugger to attach to a running process or to spawn and attach to a new process. 
 ms.assetid: C19D1B6F-B97B-4C1B-AD84-AC974C5F5C8C
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

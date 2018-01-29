@@ -3,7 +3,7 @@ title: usbkd.usbusb2ep
 description: The usbkd.usbusb2ep command displays information from a usbport _USB2_EP structure.
 ms.assetid: 0298D7A2-C121-4B09-8542-CCD10323D573
 keywords: ["usbkd.usbusb2ep Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

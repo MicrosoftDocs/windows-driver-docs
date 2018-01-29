@@ -3,7 +3,7 @@ title: Cutting and Pasting Text
 description: Cutting and Pasting Text
 ms.assetid: efc62bee-ba35-4bff-b88b-3b287ededc38
 keywords: ["cutting text", "pasting text", "copying text", "debugging information windows, cutting and pasting text", "text", "text, editing"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

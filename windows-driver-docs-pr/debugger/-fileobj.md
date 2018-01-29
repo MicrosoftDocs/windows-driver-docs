@@ -3,7 +3,7 @@ title: fileobj
 description: The fileobj extension displays detailed information about a FILE_OBJECT structure.
 ms.assetid: ee9237e7-8a1f-473c-9e30-f2b0731a7519
 keywords: ["FILE_OBJECT", "fileobj Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

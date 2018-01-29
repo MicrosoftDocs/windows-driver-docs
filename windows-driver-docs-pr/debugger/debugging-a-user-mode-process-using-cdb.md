@@ -2,7 +2,7 @@
 title: Debugging a User-Mode Process Using CDB
 description: You can use CDB to attach to a running process or to spawn and attach to new process.
 ms.assetid: 0C56F6B5-0FBC-45C9-8AB7-218C00F90521
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

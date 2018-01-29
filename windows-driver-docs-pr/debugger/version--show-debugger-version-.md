@@ -3,7 +3,7 @@ title: version (Show Debugger Version)
 description: The version command displays version information about the debugger and all loaded extension DLLs.
 ms.assetid: 51819d56-c24f-41f2-9090-5787e24ea773
 keywords: ["version (Show Debugger Version) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

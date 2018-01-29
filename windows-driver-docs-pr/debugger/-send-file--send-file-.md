@@ -3,7 +3,7 @@ title: .send_file (Send File)
 description: The .send_file command copies files. If you are performing remote debugging through a process server, it sends a file from the smart client's computer to the process server's computer.
 ms.assetid: ad12ec46-79a3-458a-acdc-c2ccb06f8c96
 keywords: [".send_file (Send File) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

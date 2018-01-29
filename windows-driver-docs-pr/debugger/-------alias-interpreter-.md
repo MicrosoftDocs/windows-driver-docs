@@ -3,7 +3,7 @@ title: $ (Alias Interpreter)
 description: A dollar sign followed by a pair of braces ( $ ) evaluates to a variety of values related to the specified user-named alias.
 ms.assetid: 5182ed99-259e-4e58-8d69-38a702bd8113
 keywords: ["$ (Alias Interpreter) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -31,17 +31,13 @@ The Windows Hardware Dev Center dashboard replaces the [Hardware Dev Center (Sys
 ## <span id="Currently_unsupported_tasks"></span><span id="currently_unsupported_tasks"></span><span id="CURRENTLY_UNSUPPORTED_TASKS"></span>Currently unsupported tasks
 
 
-You must continue to use [Hardware Dev Center (Sysdev)](dashboard-services.md) to complete the following tasks.
+You must continue to use [Hardware Dev Center (Sysdev)](dashboard-services.md) to complete the following tasks:
 
 > [!IMPORTANT]  
-> The dashboard submission REST APIs will no longer be available for use as of November 10th, 2016. APIs for driver submissions are under consideration for a future release.
-
- 
+> The dashboard submission REST APIs are no longer be available for use as of November 10th, 2016. APIs for driver submissions are under consideration for a future release.
 
 -   [WLK device certification submissions](https://go.microsoft.com/fwlink/?linkid=830380)
--   [Attestation signing](attestation-signing-a-kernel-driver-for-public-release.md)
 -   [Device Metadata](https://go.microsoft.com/fwlink/?linkid=830383)
--   [Bug management](https://go.microsoft.com/fwlink/?linkid=830385)
 -   [Remote Debugging](https://go.microsoft.com/fwlink/?linkid=830386) (WRD)
 -   [Win32 app certification submissions](https://go.microsoft.com/fwlink/?linkid=830388)
 -   [Certified Products List](https://go.microsoft.com/fwlink/?linkid=830390)
@@ -51,16 +47,16 @@ You must continue to use [Hardware Dev Center (Sysdev)](dashboard-services.md) t
 
 This transition timeframe table contains estimates of when features will be available in the Windows Hardware Dev Center dashboard. Feature specific legal and administration tasks will transition when the feature transitions.
 
-| Task                                 | Transition timeframe |
-|--------------------------------------|----------------------|
-| WLK device certification submissions | End of 2017          |
-| Attestation signing                  | January 2016         |
-| Hardware certification submissions   | End of 2017          |
-| UEFI and LSA                         | Early 2018           |
-| Device metadata                      | To be scheduled      |
-| Bug management                       | To be scheduled      |
-| Remote debugging (WRD)               | To be scheduled      |
-| Win32 app certification              | To be scheduled      |
+| Task                                 | Transition timeframe | Documentation link (if available) |
+|--------------------------------------|----------------------|----------------------|
+| WLK device certification submissions | March 2018          | |
+| Attestation signing                  | Completed         | [Attestation signing a kernel driver for public release](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/attestation-signing-a-kernel-driver-for-public-release) |
+| Hardware certification submissions   | Completed          | [Hardware certification submissions](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/hardware-certification-submissions)
+| UEFI and LSA                         | March 2018           | |
+| Device metadata                      | March 2018      | |
+| Bug management                       | Migrated      | [Bug management](http://aka.ms/collaboratedocs) |
+| Remote debugging (WRD)               | Retiring      | |
+| Win32 app certification              | New landing page coming soon      | |
 
  
 

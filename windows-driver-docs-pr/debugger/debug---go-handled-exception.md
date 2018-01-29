@@ -3,7 +3,7 @@ title: Debug Go Handled Exception
 description: Debug Go Handled Exception
 ms.assetid: f6288286-b57d-484e-b08a-79b2b84b6ea9
 keywords: ["Debug Go Handled Exception", "controlling the target, Debug Go Handled Exception", "exceptions, Debug Go Handled Exception"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
