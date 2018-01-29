@@ -1220,5 +1220,10 @@
       "redirect_URL": "https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200",
       "redirect_document_id": true
     }
+    {
+      "source_path": "windows-driver-docs-pr/3dprint/microsoft-3d-printer-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/3dprint/index",
+      "redirect_document_id": true
+    }
   ]
 }
