@@ -1222,7 +1222,7 @@
     }
     {
       "source_path": "windows-driver-docs-pr/3dprint/microsoft-3d-printer-drivers.md",
-      "redirect_URL": "/windows-hardware/drivers/3dprint/index",
+      "redirect_URL": "/windows-hardware/drivers/3dprint/",
       "redirect_document_id": true
     }
   ]
