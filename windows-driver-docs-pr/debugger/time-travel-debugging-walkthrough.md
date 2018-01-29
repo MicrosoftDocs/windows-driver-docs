@@ -333,7 +333,7 @@ At the point of failure in trace it is common to end up a fews steps after the t
     esp=00effd94 ebp=00effe44
     ```
 
-Also of interest is that the locals window contains values from our target app and the source code window is highlighting the line of code that is ready to be executed at this point in the trace.
+    Also of interest is that the locals window contains values from our target app and the source code window is highlighting the line of code that is ready to be executed at this point in the trace.
 
     ![Screenshot of WinDbg Preview showing locals windows with memory ASCII output and source code window](images/ttd-time-travel-walkthrough-locals-window.png)
 
@@ -420,13 +420,12 @@ Note that you can only set four data breakpoints at any given time and it is up 
     00d4174a c745e000000000  mov     dword ptr [ebp-20h],0 ss:002b:0053fdc8=cccccccc
     ```
 
-5. Select **View** and then **Locals**. In the locals window we can see that the *destination* variable has only part of the message, while the *source* has contains all of the text. This information supports the idea that the stack was corrupted. 
+4. Select **View** and then **Locals**. In the locals window we can see that the *destination* variable has only part of the message, while the *source* has contains all of the text. This information supports the idea that the stack was corrupted. 
 
     ![Screenshot of WinDbg Preview locals window](images/ttd-time-travel-walkthrough-locals-window.png)
 
 
-4. At this point we can examine the program stack to see what code is active. From the **View** ribbon select **Stack**. 
-
+5. At this point we can examine the program stack to see what code is active. From the **View** ribbon select **Stack**. 
 
     ![Screenshot of WinDbg Preview stack window](images/ttd-time-travel-walkthrough-stack-window.png)
 
