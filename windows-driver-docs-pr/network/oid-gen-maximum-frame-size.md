@@ -37,7 +37,7 @@ Mandatory.
 Remarks
 -------
 
-The miniport driver supplies the maximum frame size during initialization and during a restart. NDIS handles this OID query for NDIS 6.0 and later and later and later miniport drivers.
+The miniport driver supplies the maximum frame size during initialization and during a restart. NDIS handles this OID query for NDIS 6.0 and later miniport drivers.
 
 In response to this query from requesting transports, the miniport driver should indicate the maximum frame size that the transports can send, excluding the header. A miniport driver that emulates another medium type for binding to a transport must ensure that the maximum frame size for a protocol-supplied net packet does not exceed the size limitations for the true network medium. The same is true for a miniport driver that supports a NIC that requires inserting fields in frames. For example, to determine the maximum transfer unit (MTU), transports send this query to a NIC.
 
