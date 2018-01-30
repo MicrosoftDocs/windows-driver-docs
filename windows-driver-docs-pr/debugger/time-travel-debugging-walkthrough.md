@@ -451,7 +451,7 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
     0:000> ba r4 b61720
     ```
 
-4. Confirm that a Hardware Read Breakpoint is active in the breakpoints Window.
+4. Confirm that a Hardware Read breakpoint is active in the breakpoints window.
 
     ![WinDbg Preview showing breakpoints window with one hardware read breakpoint](images/ttd-time-travel-walkthrough-hardware-write-breakpoint.png)
 
