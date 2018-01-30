@@ -259,19 +259,11 @@ Disable Use of an Embedded Manifest by setting project properties for your APO p
 ## <span id="Packaging_your_APO_with_a_Driver"></span><span id="packaging_your_apo_with_a_driver"></span><span id="PACKAGING_YOUR_APO_WITH_A_DRIVER"></span>Packaging your APO with a Driver
 
 
-When you develop your own audio driver and wrap or replace the system-supplied APOs, you must provide a driver package for installing the driver and APOs. The driver package would typically contain the following:
+When you develop your own audio driver and wrap or replace the system-supplied APOs, you must provide a driver package for installing the driver and APOs. For Windows 10, please see [Universal Windows Drivers for Audio](audio-universal-drivers.md). Your audio related driver packages should follow the policies and packaging model detailed there.  
 
--   A custom HD or USB audio driver
+The custom APO is packaged as a DLL, and any configuration UI is packaged as a separate UWP or Desktop Bridge app. The APO device INF copies the DLLs to the system folders that are indicated in the associated INF CopyFile directive. The DLL that contains the APOs must register itself by including an AddReg section in the INF file.
 
--   Custom APOs
-
--   A configuration user interface
-
--   An INF file
-
-The custom APO and the configuration UI are packaged as separate DLLs. The device installation program or a setup program copies the DLLs to the system folders that are indicated in the associated INF file. The DLL that contains the APOs must register itself by including an AddReg section in the INF file.
-
-The following paragraphs and INF file fragments show the modifications that are necessary to use the standard INF file to copy and register APOs and the configuration UI.
+The following paragraphs and INF file fragments show the modifications that are necessary to use the standard INF file to copy and register APOs.
 
 The tabletaudiosample.inf and phoneaudiosample.inf files included with the Sysvad sample illustrate how the SwapApo.dll APOs are registered.
 
