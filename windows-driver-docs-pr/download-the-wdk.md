@@ -1,7 +1,7 @@
 ---
 title: Download the Windows Driver Kit (WDK)
 description: Download instructions for the latest released version of the Windows Driver Kit (WDK)
-ms.assetid: 
+ms.assetid: 7b5e253b-3bcd-41e3-a646-0f95ce416f87
 keywords:
 - Windows Driver Kit
 - WDK
@@ -27,15 +27,18 @@ The WDK is used to develop, test, and deploy Windows drivers. The latest public 
 ### Step 1: Install Visual Studio 2017
 The following editions of Visual Studio 2017 support driver development: 
 
-<!-- Insert 3 VS download buttons HERE -->
+[![Download linkd for Visual Studio Community 2017](images/vs-community-2017-download.jpg)](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15) 
+[![Download linkd for Visual Studio Professional 2017](images/vs-pro-2017-download.jpg)](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15) 
+[![Download linkd for Visual Studio Professional 2017](images/vs-pro-2017-download.jpg)](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15)
 
 When you install Visual Studio, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included, and is displayed in the right-hand **Summary** pane. 
 
 For ARM/ARM64 driver development, choose **Individual components** and under **Compilers, build tools, and runtimes** select **Visual C++ compilers and libraries for ARM/ARM64**.
 
+
 ### Step 2: Install WDK for Windows 10, version 1709
 
-<!-- Insert Download Now button --> 
+[![Download linkd for WDK for Windows 10, version 1709](images/download-btn.jpg)](https://go.microsoft.com/fwlink/p/?linkid=859232) 
 
 New for this release: The WDK installation will by default install the WDK Visual Studio extension. This must be done in order for WDK VS integration to work. 
 
@@ -43,13 +46,13 @@ New for this release: The WDK installation will by default install the WDK Visua
 
 The EWDK is a standalone self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK. There are two versions available: 
 
-EWDK with Visual Studio Build Tools 15.4 (Recommended)
+### EWDK with Visual Studio Build Tools 15.4 (Recommended)
 
-<!-- Insert Download Now button --> 
+[![Download linkd for WDK for Windows 10, version 1709](images/download-btn.jpg)](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709-VS15-4)
 
-EWDK with Visual Studio Build Tools 15.2
+### EWDK with Visual Studio Build Tools 15.2
 
-<!-- Insert Download Now button --> 
+[![Download linkd for WDK for Windows 10, version 1709](images/download-btn.jpg)](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709) 
 
 To get started, mount the ISO and run **LaunchBuildEnv**.
 
@@ -63,7 +66,7 @@ EWDK will additionally need .NET 4.6.1, for more information on what .NET runs o
 
 You can use the WDK to develop drivers for these operating systems: 
 
-|CLient OS|Server OS|
+|Client OS|Server OS|
 |-|-|
 |Windows 10|Windows Server 2016|
 |Windows 8.1|Windows Server 2012 R2|
@@ -77,3 +80,16 @@ To get universal Windows driver samples, do one of the following:
 Download the [GitHub Extension for Visual Studio](https://visualstudio.github.com/) to connect to the GitHub repositories. 
 
 [Learn more about what's new for driver samples](https://developer.microsoft.com/windows/hardware/drivers-code-samples). 
+
+## Looking for related downloads?
+[Download the Windows Assessment and Deployment Kit (Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
+
+[Download the Windows HLK, HCK, or Logo Kit](https://developer.microsoft.com/windows/hardware/windows-hardware-lab-kit)
+
+[Download the debugging Tools for Windows (WinDbg)](https://developer.microsoft.com/windows/hardware/download-windbg)
+
+[Download Windows Symbol Packages](https://developer.microsoft.com/windows/hardware/download-symbols)
+
+[Download the WDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
+
+[Other downloads and earlier versions of the kits](previous-kit-versions.md)
