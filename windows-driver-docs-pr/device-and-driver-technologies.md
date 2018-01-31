@@ -3,7 +3,7 @@ title: Device and Driver Technologies
 description: This section contains information about each of the supported Windows driver technologies.
 ms.assetid: 1ef3e216-1322-42c3-b070-94cddfb2133c
 ms.author: windowsdriverdev
-ms.date: 01/26/2018
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -20,7 +20,7 @@ You can create a Universal Windows driver—a driver that uses a subset of the i
 
 **Device drivers and Windows 10 for desktop computers**
 
-For information about the tools used to develop desktop drivers, see [Device and Driver Development Tools](https://msdn.microsoft.com/en-us/library/windows/hardware/ff557553) and [Tools for Verifying Drivers](https://msdn.microsoft.com/library/windows/hardware/ff552969). For information about deploying drivers to Windows 10 on a desktop, see [Device and Driver Installation](https://msdn.microsoft.com/library/windows/hardware/dn653558). For information about troubleshooting driver installation, see [Troubleshoot Driver Configuration](https://msdn.microsoft.com/windows-drivers/develop/troubleshooting_configuration_of_driver_deployment__testing_and_debugging).
+For information about the tools used to develop desktop drivers, see [Device and Driver Development Tools](https://msdn.microsoft.com/library/windows/hardware/ff557553) and [Tools for Verifying Drivers](https://msdn.microsoft.com/library/windows/hardware/ff552969). For information about deploying drivers to Windows 10 on a desktop, see [Device and Driver Installation](https://msdn.microsoft.com/library/windows/hardware/dn653558). For information about troubleshooting driver installation, see [Troubleshoot Driver Configuration](https://msdn.microsoft.com/windows-drivers/develop/troubleshooting_configuration_of_driver_deployment__testing_and_debugging).
 
 **Device drivers and Windows 10 Mobile**
 
@@ -35,7 +35,7 @@ Windows 10 Mobile is optimized for the unique needs of mobile devices. Instead 
 -   [Battery Devices](https://msdn.microsoft.com/library/windows/hardware/ff536301)
 -   [Biometric Devices](https://msdn.microsoft.com/library/windows/hardware/ff536448)
 -   [Bluetooth Devices](https://msdn.microsoft.com/library/windows/hardware/ff536768)
--   [Bus and Port Drivers](https://msdn.microsoft.com/en-us/library/windows/hardware/ff557547)
+-   [Bus and Port Drivers](https://msdn.microsoft.com/library/windows/hardware/ff557547)
 -   [Display Devices (Adapters and Monitors)](https://msdn.microsoft.com/library/windows/hardware/ff569172)
 -   [GNSS Devices (Location)](gnss/index.md)
 -   [Human Input Devices](https://msdn.microsoft.com/library/windows/hardware/ff543301)
@@ -45,7 +45,7 @@ Windows 10 Mobile is optimized for the unique needs of mobile devices. Instead 
 -   [Installable File System Drivers](https://msdn.microsoft.com/library/windows/hardware/ff551834)
 -   [Modem Devices](https://msdn.microsoft.com/library/windows/hardware/ff542573)
 -   [Multifunction Devices](https://msdn.microsoft.com/library/windows/hardware/ff542743)
--   [Network Devices](https://msdn.microsoft.com/en-us/library/windows/hardware/ff557563)
+-   [Network Devices](https://msdn.microsoft.com/library/windows/hardware/ff557563)
 -   [Point of Service (POS)](pos/index.md)
 -   [Print Devices](print/index.md)
 -   [Proximity Devices](https://msdn.microsoft.com/library/windows/hardware/dn905575)
@@ -54,8 +54,8 @@ Windows 10 Mobile is optimized for the unique needs of mobile devices. Instead 
 -   [Smart Card Reader Devices](https://msdn.microsoft.com/library/windows/hardware/ff548914)
 -   [Storage Devices](https://msdn.microsoft.com/library/windows/hardware/ff563893)
 -   [Streaming Media Devices](stream/index.md)
--   [System Technologies](https://msdn.microsoft.com/en-us/library/windows/hardware/ff557564)
--   [Universal Serial Bus (USB)](https://msdn.microsoft.com/en-us/library/windows/hardware/mt807557)
+-   [System Technologies](https://msdn.microsoft.com/library/windows/hardware/ff557564)
+-   [Universal Serial Bus (USB)](https://msdn.microsoft.com/library/windows/hardware/mt807557)
 -   [Windows Portable Devices](https://msdn.microsoft.com/library/windows/hardware/ff597729)
 -   [Windows SideShow Devices](https://msdn.microsoft.com/library/windows/hardware/ff548077)
 

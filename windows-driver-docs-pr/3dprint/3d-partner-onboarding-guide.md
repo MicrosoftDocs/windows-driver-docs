@@ -21,7 +21,7 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
 -   Implements the slicer. The driver takes [3MF](http://www.3mf.io) as input and produces G-Code or other similar machine level data.
 
--   Creates the print queue. The device appears under **Devices and Printers** and in the **3D Print Dialog** for compatible [3D Printing applications](https://developer.microsoft.com/en-us/windows/hardware/3d-software-partners).
+-   Creates the print queue. The device appears under **Devices and Printers** and in the **3D Print Dialog** for compatible [3D Printing applications](https://developer.microsoft.com/windows/hardware/3d-software-partners).
 
 **Lower driver (USB driver)**
 
@@ -96,9 +96,9 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
     - Follow the steps in these topics to publish your driver:
         
-        - [Purchase an extended validation (EV) code signing certificate](https://msdn.microsoft.com/en-us/library/windows/hardware/hh801887(v=vs.85).aspx)
+        - [Purchase an extended validation (EV) code signing certificate](https://msdn.microsoft.com/library/windows/hardware/hh801887(v=vs.85).aspx)
 
-        - [Publish the driver using the designated workflow](https://msdn.microsoft.com/en-us/library/windows/hardware/br230778(v=vs.85).aspx)
+        - [Publish the driver using the designated workflow](https://msdn.microsoft.com/library/windows/hardware/br230778(v=vs.85).aspx)
 
 --------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Slicer%20settings%20%20RELEASE:%20%289/2/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
