@@ -27,9 +27,9 @@ The WDK is used to develop, test, and deploy Windows drivers. The latest public 
 ### Step 1: Install Visual Studio 2017
 The following editions of Visual Studio 2017 support driver development: 
 
-[![Download link for Visual Studio Community 2017](images/vs-community-2017-dnld-sz.png)](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15) 
-[![Download link for Visual Studio Enterprise 2017](images/vs-enterprise-2017-download.jpg)](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15) 
-[![Download link for Visual Studio Professional 2017](images/vs-pro-2017-download.jpg)](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15)
+[![Download link for Visual Studio Community 2017](images/vs-community-2017-btn.png)](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15) 
+[![Download link for Visual Studio Enterprise 2017](images/vs-enterprise-2017-btn.png)](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15) 
+[![Download link for Visual Studio Professional 2017](images/vs-professional-2017-btn.png)](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15)
 
 When you install Visual Studio, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included, and is displayed in the right-hand **Summary** pane. 
 
@@ -38,7 +38,7 @@ For ARM/ARM64 driver development, choose **Individual components** and under **C
 
 ### Step 2: Install WDK for Windows 10, version 1709
 
-[![Download link for WDK for Windows 10, version 1709](images/download-btn.jpg)](https://go.microsoft.com/fwlink/p/?linkid=859232) 
+[![Download link for WDK for Windows 10, version 1709](images/download-btn.png)](https://go.microsoft.com/fwlink/p/?linkid=859232) 
 
 New for this release: The WDK installation will by default install the WDK Visual Studio extension. This must be done in order for WDK VS integration to work. 
 
@@ -48,11 +48,11 @@ The EWDK is a standalone self-contained command-line environment for building dr
 
 ### EWDK with Visual Studio Build Tools 15.4 (Recommended)
 
-[![Download link for WDK for Windows 10, version 1709](images/download-btn.jpg)](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709-VS15-4)
+[![Download link for WDK for Windows 10, version 1709](images/download-btn.png)](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709-VS15-4)
 
 ### EWDK with Visual Studio Build Tools 15.2
 
-[![Download link for WDK for Windows 10, version 1709](images/download-btn.jpg)](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709) 
+[![Download link for WDK for Windows 10, version 1709](images/download-btn.png)](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709) 
 
 To get started, mount the ISO and run **LaunchBuildEnv**.
 
