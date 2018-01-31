@@ -1,9 +1,8 @@
 ---
 title: Microsoft extensions to USB Video Class 1.5 specification
-author: windows-driver-content
 description: Describes Microsoft extensions to the USB Video Class 1.5 Specification that enables new controls as well as the capability to carry well-defined frame-metadata in a standard format.
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -410,11 +409,11 @@ The **SensorFramerate** field contains the measured sensor readout rate in hertz
 
 ###### 2.2.3.4.2 MetadataId_CameraExtrinsics
 
-The metadata format for this identifier involves the standard KSCAMERA_METADATA_ITEMHEADER followed by a byte-array payload. The payload should align to a [MFCameraExtrinsics](https://msdn.microsoft.com/en-us/library/windows/desktop/mt740392) structure followed by zero or more [MFCameraExtrinsic_CalibratedTransform](https://msdn.microsoft.com/en-us/library/windows/desktop/mt740393) structures. The payload must be 8-byte aligned and all unused bytes shall occur at the end of the payload and be set to 0.
+The metadata format for this identifier involves the standard KSCAMERA_METADATA_ITEMHEADER followed by a byte-array payload. The payload should align to a [MFCameraExtrinsics](https://msdn.microsoft.com/library/windows/desktop/mt740392) structure followed by zero or more [MFCameraExtrinsic_CalibratedTransform](https://msdn.microsoft.com/library/windows/desktop/mt740393) structures. The payload must be 8-byte aligned and all unused bytes shall occur at the end of the payload and be set to 0.
 
 ###### 2.2.3.4.3 MetadataId_CameraIntrinsics
 
-The metadata format for this identifier involves the standard KSCAMERA_METADATA_ITEMHEADER followed by a byte-array payload. The payload should align to a [MFPinholeCameraIntrinsics](https://msdn.microsoft.com/en-us/library/windows/desktop/mt740396) structure. The payload must be 8-byte aligned and all unused bytes shall occur at the end of the payload and be set to 0.
+The metadata format for this identifier involves the standard KSCAMERA_METADATA_ITEMHEADER followed by a byte-array payload. The payload should align to a [MFPinholeCameraIntrinsics](https://msdn.microsoft.com/library/windows/desktop/mt740396) structure. The payload must be 8-byte aligned and all unused bytes shall occur at the end of the payload and be set to 0.
 
 ###### 2.2.3.4.4 MetadataId_FrameIllumination
 
@@ -435,7 +434,7 @@ The **Flags** field indicates information about the captured frame. Currently, t
 
 If a frame was captured when illumination was on, the flag KSCAMERA_METADATA_FRAMEILLUMINATION_FLAG_ON shall be set. Otherwise, this flag shall not be set.
 
-The **Reserved** field is reserved for future and shall be set to 0.
+The **Reserved** field is reserved for future use and shall be set to 0.
 
 
 --------------------
