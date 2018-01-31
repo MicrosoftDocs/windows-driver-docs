@@ -11,79 +11,17 @@ ms.technology: windows-devices
 
 # PnPUtil Examples
 
-
-This topic provides the following examples on how to use the PnPUtil tool:
-
--   [Adding a driver package to the driver store](#adding-a-driver-package-to-the-driver-store)
-
--   [Installing a driver package](#installing-a-driver-package)
-
--   [Listing the driver packages within the driver store](#listing-the-driver-packages-within-the-driver-store)
-
--   [Deleting a driver package from the driver store](#deleting-a-driver-package-from-the-driver-store)
-
-## Adding a driver package to the driver store
-
-
-The following example adds a [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840), which contains the [INF](https://msdn.microsoft.com/library/windows/hardware/ff547402) file that is named MyDriver.inf, to the [driver store](https://msdn.microsoft.com/library/windows/hardware/ff544868):
+This topic provides examples on how to use the PnPUtil tool.
 
 ```
-C:\>pnputil /a m:\MyDriver.inf
-Microsoft PnP Utility
-
-Processing inf : MyDriver.inf
-Driver package added successfully.
-Published name : oem22.inf
-```
-
-As soon as it is added to the driver store, the INF file for the driver package is referenced within the store through its published named (oem22.inf).
-
-## Installing a driver package
-
-The following example adds the driver package to the [driver store](https://msdn.microsoft.com/library/windows/hardware/ff544868) and then installs the driver package on the computer:
-
-```
-C:\>pnputil /a m:\MyDriver.inf /i
-Microsoft PnP Utility
-```
-
-## Listing the driver packages within the driver store
-
-The following example lists the [driver packages](https://msdn.microsoft.com/library/windows/hardware/ff544840) that are currently in the [driver store](https://msdn.microsoft.com/library/windows/hardware/ff544868). Only driver packages that are not in-box packages are listed. An *in-box* driver package is one which is included in the default installation of Windows or its service packs:
-
-```
-C:\>pnputil /e
-Microsoft PnP Utility
-
-Published name : oem0.inf
-Driver package provider : Microsoft
-Class : Printers
-Driver version and date : Unknown driver version and date
-Signer name : microsoft windows
-
-Published name : oem22.inf
-Driver package provider : Fabrikam, Inc.
-Class : Network adapters
-Driver version and date : 10/07/2009 1.0.200.0
-Signer name : microsoft windows hardware compatibility publisher
-```
-
-In this example, information is displayed about the [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) that is referenced by the published INF file (oem22.inf). This information includes the publisher (Fabrikam, Inc.), setup class (Network adapter) and version (1.0.200.0) of the driver package.
-
-**Note**   In this example, the data for the "Signer Name" field indicates that the sample driver package was digitally signed by a [Windows Hardware Quality Labs (WHQL) release signature](https://msdn.microsoft.com/library/windows/hardware/ff553976). If the driver package was not digitally signed, there would be no data displayed in the "Signer Name" field.
-
- 
-
-## Deleting a driver package from the driver store
-
-
-The following example removes the [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) from the [driver store](https://msdn.microsoft.com/library/windows/hardware/ff544868). The driver package is referenced by its published INF file (oem22.inf):
-
-```
-C:\>pnputil /d oem22.inf
-Microsoft PnP Utility
-
-Driver package deleted successfully.
+  pnputil /add-driver x:\driver.inf       <- Add driver package
+  pnputil /add-driver c:\oem\*.inf        <- Add multiple driver packages
+  pnputil /add-driver device.inf /install <- Add and install driver package
+  pnputil /enum-drivers                   <- Enumerate OEM driver packages
+  pnputil /delete-driver oem0.inf         <- Delete driver package
+  pnputil /delete-driver oem1.inf /force  <- Force delete driver package
+  pnputil /export-driver oem6.inf .       <- Export driver package
+  pnputil /export-driver * c:\backup      <- Export all driver packages
 ```
 
  

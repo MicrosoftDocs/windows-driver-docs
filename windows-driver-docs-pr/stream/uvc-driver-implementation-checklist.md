@@ -1,9 +1,8 @@
 ---
 title: USB Video Class (UVC) driver implementation checklist
-author: windows-driver-content
 description: Provides step-by-step information on implementing a USB Video Class (UVC) driver for your device.
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -19,7 +18,7 @@ Use these links to get acquainted with UVC:
 
 - Download the [USB Video Class 1.5](http://www.usb.org/developers/docs/devclass_docs/USB_Video_Class_1_5.zip) documentation from USB.org
 
-- Review the [USB Video Class driver overview](https://msdn.microsoft.com/en-us/windows/hardware/drivers/stream/usb-video-class-driver-overview) on MSDN 
+- Review the [USB Video Class driver overview](https://msdn.microsoft.com/windows/hardware/drivers/stream/usb-video-class-driver-overview) on MSDN 
 
 ## Step 2: Implement the platform-supplied Device MFT
 
@@ -31,7 +30,7 @@ Use these links to get acquainted with UVC:
 
 - Device MFT is a user-mode component of UVC. You can insert this component to add extensions and differentiators to the UVC.
 
-- Review the [Device MFT design guide](https://msdn.microsoft.com/en-us/windows/hardware/drivers/stream/dmft-design).
+- Review the [Device MFT design guide](https://msdn.microsoft.com/windows/hardware/drivers/stream/dmft-design).
 
 - Review the [Device MFT sample code](https://github.com/Microsoft/Windows-driver-samples/tree/master/avstream/sampledevicemft) located on GitHub.
 
@@ -41,9 +40,9 @@ Use these links to get acquainted with UVC:
 
 ## Step 4: Implement Microsoft-specified UVC extensions
 
-- [Microsoft extensions to USB Video Class 1.5 specification](https://msdn.microsoft.com/en-us/windows/hardware/drivers/stream/uvc-extensions-1-5)
+- [Microsoft extensions to USB Video Class 1.5 specification](https://msdn.microsoft.com/windows/hardware/drivers/stream/uvc-extensions-1-5)
 
-- [Infrared stream support in UVC](https://msdn.microsoft.com/en-us/windows/hardware/drivers/stream/infrared-stream-support-in-uvc)
+- [Infrared stream support in UVC](https://msdn.microsoft.com/windows/hardware/drivers/stream/infrared-stream-support-in-uvc)
 
 - Method 2 still image capture:
 
@@ -53,13 +52,13 @@ Use these links to get acquainted with UVC:
 
     - Microsoft-specific documentation:
 
-        - Review section 2.2.1 and 2.2.2 in the [Microsoft extensions to USB Video Class 1.5 specification](https://msdn.microsoft.com/en-us/windows/hardware/drivers/stream/uvc-extensions-1-5#21-description).
+        - Review section 2.2.1 and 2.2.2 in the [Microsoft extensions to USB Video Class 1.5 specification](https://msdn.microsoft.com/windows/hardware/drivers/stream/uvc-extensions-1-5#21-description).
 
 ## Step 5: Test your UVC implementation to ensure it passes HLK tests and meets required functionality and performance
 
-- Run [Windows HLK tests](https://msdn.microsoft.com/en-us/library/windows/hardware/dn930814)
+- Run [Windows HLK tests](https://msdn.microsoft.com/library/windows/hardware/dn930814)
 
-- Run camera-specific [Device.Streaming HLK tests](https://msdn.microsoft.com/en-us/library/windows/hardware/dn941930)
+- Run camera-specific [Device.Streaming HLK tests](https://msdn.microsoft.com/library/windows/hardware/dn941930)
 
 - Ensure the camera meets any requirements and passes HLK tests for other products that the camera must also be compliant with (for example, Skype, Windows Hello, and so on).
 
