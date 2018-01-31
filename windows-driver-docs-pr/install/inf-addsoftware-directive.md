@@ -58,6 +58,8 @@ The **SoftwareType** entry is required.  If **SoftwareType** is set to 1, **Soft
 
 Any software installed using **AddSoftware** must be installed silently (or quietly). In other words, no user interface can be shown to the user during installation.
 
+Any software installed using **AddSoftware** will **not** be uninstalled if the virtual software component device (or its parent devices) is uninstalled.
+
 ## Software-Install Section Entries and Values
 
 **SoftwareType**=*type-code*
