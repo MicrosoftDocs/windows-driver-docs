@@ -17,6 +17,17 @@ ms.technology: windows-devices
 
 The latest public version of the Windows Driver Kit (WDK) is available at [Download the Windows Driver Kit (WDK)](download-the-wdk.md). This topic contains additional downloads for developers creating Windows drivers.
 
+## WDK for Windows 10, version 1703 
+
+### Install Visual Studio 2015
+**Important**: WDK for Windows 10, version 1703, is not compatible with Visual Studio 2017. Use Visual Studio 2015 for driver development with this version of the WDK. All four editions of Visual Studio 2015 support driver development. 
+
+[![Download linkd for Visual Studio Express for Desktop](images/vs-express-desktop.jpg)](https://go.microsoft.com/fwlink/p/?LinkId=691984)  [![Download linkd for Visual Studio Community 2015](images/vs-community-2015-download.jpg)](https://go.microsoft.com/fwlink/p/?LinkId=534599)
+
+[![Download linkd for Visual Studio Professional 2015](images/vs-pro-2015-download.jpg)](https://go.microsoft.com/fwlink/p/?LinkId=619628)  [![Download linkd for Visual Studio Enterprise 2015](images/vs-enterprise-2015-download.jpg)](https://go.microsoft.com/fwlink/p/?LinkId=619629)
+
+
+
 ## Install Visual Studio 2015 and the Windows SDK for Windows 10, version 1607
 
 1. Run Windows Update. 
