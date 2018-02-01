@@ -105,7 +105,7 @@ You can set properties for an individual driver or for an entire driver package.
 <td align="left"><p>Signing properties for driver packages (see [Signing a Driver](signing-a-driver.md))</p></td>
 </tr>
 <tr class="even">
-<td align="left">[Counters Manifest Preprocessor Properties for Driver Projects](counters-manifest-preprocessor-properties-for-driver-projects.md) (for [<strong>CTRPP</strong>](https://perf.ctrpp))</td>
+<td align="left">[Counters Manifest Preprocessor Properties for Driver Projects](counters-manifest-preprocessor-properties-for-driver-projects.md) (for [<strong>CTRPP</strong>](https://msdn.microsoft.com/library/windows/desktop/aa372128)</td>
 <td align="left"><p>[Deployment Properties for Driver Package Projects](deployment-properties-for-driver-projects.md) (see [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md))</p></td>
 </tr>
 <tr class="odd">
