@@ -66,7 +66,7 @@ Displays the command-line syntax.
 
 ## Legacy Command Mapping
 
-The following commands are still supported, but are legacy. It is recommended to use the up-to-date syntax.
+The following commands are still supported, but are legacy.  We recommend that you use the up-to-date syntax instead.
 
 ```
   -a [-i]  <filename.inf> ==> /add-driver <filename.inf> [/install]
