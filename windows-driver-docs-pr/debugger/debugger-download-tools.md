@@ -32,11 +32,10 @@ If you just need the Debugging Tools for Windows 10, and not WDK 10 or Visual St
 [Learn more about WinDbg and other debuggers (WinDbg, KD, CDB, NTSD)](https://docs.microsoft.com/windows-hardware/drivers/debugger/) 
 
 
-
-
-
-# Looking for related downloads?
 -------------------
+
+
+## Looking for related downloads?
 
 [Download Windows Debugger Symbols](debugger-download-symbols.md)  
 
