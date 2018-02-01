@@ -11,7 +11,7 @@ api_name:
 api_type:
 - NA
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -36,7 +36,8 @@ pnputil [/add-driver <...> | /delete-driver <...> |
   **/add-driver** <filename.inf | *.inf> [/subdirs] [/install] [/reboot]
 
 Add driver package(s) into the driver store.  
-```/subdirs - traverse sub directories for driver packages.  
+```
+/subdirs - traverse sub directories for driver packages.  
 /install - install/update drivers on any matching devices.  
 /reboot - reboot system if needed to complete the operation.  
 ```
@@ -45,7 +46,8 @@ Add driver package(s) into the driver store.
 
 Delete driver package from the driver store.  
 
-```/uninstall - uninstall driver package from any devices using it.  
+```
+/uninstall - uninstall driver package from any devices using it.  
 /force - delete driver package even when it is in use by devices.  
 /reboot - reboot system if needed to complete the operation.  
 ```
@@ -64,10 +66,12 @@ Displays the command-line syntax.
 
 ## Legacy Command Mapping
 
-```
-  [-i] -a <filename.inf> ==> /add-driver <filename.inf> [/install]
+The following commands are still supported, but are legacy.  We recommend that you use the up-to-date syntax instead.
 
-  [-f] -d <oem#.inf>     ==> /delete-driver <oem#.inf> [/force]
+```
+  -a [-i]  <filename.inf> ==> /add-driver <filename.inf> [/install]
+
+  -d [-f]  <oem#.inf>     ==> /delete-driver <oem#.inf> [/force]
 
   -e                     ==> /enum-drivers
 ```
