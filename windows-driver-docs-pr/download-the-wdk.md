@@ -27,9 +27,9 @@ The WDK is used to develop, test, and deploy Windows drivers. The latest public 
 ### Step 1: Install Visual Studio 2017
 The following editions of Visual Studio 2017 support driver development: 
 
-[![Download link for Visual Studio Community 2017](images/vs-community-2017-btn.png)](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15) 
-[![Download link for Visual Studio Enterprise 2017](images/vs-enterprise-2017-btn.png)](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15) 
-[![Download link for Visual Studio Professional 2017](images/vs-professional-2017-btn.png)](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15)
+* [Download Visual Studio Community 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)
+* [Download Visual Studio Enterprise 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15) 
+* [Download Visual Studio Professional 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15)
 
 When you install Visual Studio, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included, and is displayed in the right-hand **Summary** pane. 
 
@@ -38,7 +38,7 @@ For ARM/ARM64 driver development, choose **Individual components** and under **C
 
 ### Step 2: Install WDK for Windows 10, version 1709
 
-[![Download link for WDK for Windows 10, version 1709](images/download-btn.png)](https://go.microsoft.com/fwlink/p/?linkid=859232) 
+* [Download WDK for Windows 10, version 1709](https://go.microsoft.com/fwlink/p/?linkid=859232) 
 
 New for this release: The WDK installation will by default install the WDK Visual Studio extension. This must be done in order for WDK VS integration to work. 
 
@@ -48,11 +48,11 @@ The EWDK is a standalone self-contained command-line environment for building dr
 
 ### EWDK with Visual Studio Build Tools 15.4 (Recommended)
 
-[![Download link for WDK for Windows 10, version 1709](images/download-btn.png)](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709-VS15-4)
+* [Download WDK for Windows 10, version 1709](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709-VS15-4)
 
-### EWDK with Visual Studio Build Tools 15.2
+## EWDK with Visual Studio Build Tools 15.2
 
-[![Download link for WDK for Windows 10, version 1709](images/download-btn.png)](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709) 
+* [Download WDK for Windows 10, version 1709](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709)
 
 To get started, mount the ISO and run **LaunchBuildEnv**.
 
@@ -77,19 +77,14 @@ Windows 7|Windows Server 2008 R2 SP1|
 
 To get universal Windows driver samples, do one of the following: 
 * Go to the driver samples page on [GitHub](https://github.com/Microsoft/Windows-driver-samples) and click **Clone or download > Download ZIP** on the right side of the page. 
-Download the [GitHub Extension for Visual Studio](https://visualstudio.github.com/) to connect to the GitHub repositories. 
+* Download the [GitHub Extension for Visual Studio](https://visualstudio.github.com/) to connect to the GitHub repositories. 
 
 [Learn more about what's new for driver samples](https://developer.microsoft.com/windows/hardware/drivers-code-samples). 
 
-## Looking for related downloads?
-[Download the Windows Assessment and Deployment Kit (Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
-
-[Download the Windows HLK, HCK, or Logo Kit](https://developer.microsoft.com/windows/hardware/windows-hardware-lab-kit)
-
-[Download the debugging Tools for Windows (WinDbg)](https://developer.microsoft.com/windows/hardware/download-windbg)
-
-[Download Windows Symbol Packages](https://developer.microsoft.com/windows/hardware/download-symbols)
-
-[Download the WDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
-
-[Other downloads and earlier versions of the kits](other-wdk-downloads.md)
+## Related downloads
+* [Download the Windows Assessment and Deployment Kit (Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
+* [Download the Windows HLK, HCK, or Logo Kit](https://developer.microsoft.com/windows/hardware/windows-hardware-lab-kit)
+* [Download the debugging Tools for Windows (WinDbg)](https://developer.microsoft.com/windows/hardware/download-windbg)
+* [Download Windows Symbol Packages](https://developer.microsoft.com/windows/hardware/download-symbols)
+* [Download the WDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
+* [Other WDK downloads](other-wdk-downloads.md)
