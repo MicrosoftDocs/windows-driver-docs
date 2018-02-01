@@ -40,8 +40,10 @@ Symbol files make it easier to debug your code. The easiest way to get Windows s
 
 ### Note on symbol package deprecation
 
->![IMPORTANT]
-> With the cadence that we release updates for Windows, the Windows debugging symbols we publish via the packages on this page are quickly made out of date. We have made significant improvements to the online [Microsoft Symbol Server](https://msdn.microsoft.com/library/windows/desktop/ee416588.aspx#using_the_microsoft_symbol_server) by moving this to be an Azure-based symbol store, and symbols for all Windows versions and updates are available there. You can find more about this in this [MSDN blog entry](https://blogs.msdn.microsoft.com/windbg/2017/10/18/update-on-microsofts-symbol-server/). Going forward we will no longer publish the offline symbol packages for RTM releases. 
+> ![IMPORTANT]
+> With the cadence that we release updates for Windows, the Windows debugging symbols we publish via the packages on this page are quickly made out of  date. 
+> We have made significant improvements to the online [Microsoft Symbol Server](https://msdn.microsoft.com/library/windows/desktop/ee416588.aspx#using_the_microsoft_symbol_server) by moving this to be an Azure-based symbol store, and symbols for all Windows versions and updates are available there. You can find more about this in this [MSDN blog entry](https://blogs.msdn.microsoft.com/windbg/2017/10/18/update-on-microsofts-symbol-server/). Going forward we will no longer publish the offline symbol packages for RTM releases.
+> 
 
 
 ## Get Windows Symbol Packages 
