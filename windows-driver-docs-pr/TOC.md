@@ -1,5 +1,7 @@
 # [Getting Started with the Windows Driver Kit](index.md)
 # [What's new in driver development](what-s-new-in-driver-development.md)
+# [Download the Windows Driver Kit (WDK)](download-the-wdk.md)
+## [Other WDK downloads](other-wdk-downloads.md)
 # [Bring up guide](bringup/index.md)
 # [Developing, Testing, and Deploying Drivers](develop/index.md)
 # [Device and Driver Installation](install/index.md)
