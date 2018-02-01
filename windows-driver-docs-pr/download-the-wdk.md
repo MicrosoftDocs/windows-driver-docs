@@ -43,7 +43,7 @@ New for this release: The WDK installation will by default install the WDK Visua
 
 ## Enterprise WDK for Windows 10, version 1709 (EWDK) 
 
-The EWDK is a standalone self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK. There are two versions available: 
+The EWDK is a standalone self-contained command-line environment for building drivers. The EWDK includes the Visual Studio Build Tools, the SDK, and the WDK. There are two versions available: 
 
 ### EWDK with Visual Studio Build Tools 15.4 (Recommended)
 
