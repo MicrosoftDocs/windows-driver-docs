@@ -34,22 +34,18 @@ If you just need the Debugging Tools for Windows 10, and not WDK 10 or Visual St
 
 ## ![decorative image showing screen with arrow to represent download](images/download-install.png)  Download Windows Symbol Packages
 
-Symbol files make it easier to debug your code. The easiest way to get Windows symbols is to use the [Microsoft Symbol Server](https://msdn.microsoft.com/library/windows/desktop/ee416588.aspx#using_the_microsoft_symbol_server). If you prefer to download the entire set of symbols for a particular version of Windows, download a symbol package. 
+Symbol files make it easier to debug your code. The easiest way to get Windows symbols is to use the [Microsoft Symbol Server](https://msdn.microsoft.com/library/windows/desktop/ee416588.aspx#using_the_microsoft_symbol_server). The symbol server makes symbols available to your debugging tools as needed. After a symbol file is downloaded from the symbol server it is cached on the local computer for quick access. Additional versions of Windows not listed here, are available on the [Microsoft Symbol Server](https://msdn.microsoft.com/library/windows/desktop/ee416588.aspx#using_the_microsoft_symbol_server). 
 
+If you prefer to download the entire set of symbols for a particular version of Windows, download a symbol package. 
 
 ### Note on symbol package deprecation
 
 > ![IMPORTANT]
 > With the cadence that we release updates for Windows, the Windows debugging symbols we publish via the packages on this page are quickly made out of  date. 
-> We have made significant improvements to the online [Microsoft Symbol Server](https://msdn.microsoft.com/library/windows/desktop/ee416588.aspx#using_the_microsoft_symbol_server) by moving this to be an Azure-based symbol store, and symbols for all Windows versions and updates are available there. You can find more about this in this [MSDN blog entry](https://blogs.msdn.microsoft.com/windbg/2017/10/18/update-on-microsofts-symbol-server/). Going forward we will no longer publish the offline symbol packages for RTM releases.
+> We have made significant improvements to the online [Microsoft Symbol Server](https://msdn.microsoft.com/library/windows/desktop/ee416588.aspx#using_the_microsoft_symbol_server) by moving this to be an Azure-based symbol store, and symbols for all Windows versions and updates are available there. 
+> You can find more about this in this [MSDN blog entry](https://blogs.msdn.microsoft.com/windbg/2017/10/18/update-on-microsofts-symbol-server/). 
+> Going forward we will no longer publish the offline symbol packages for RTM releases.
 > 
-
-
-## Get Windows Symbol Packages 
-
-The easiest way to get Windows symbols is to use the [Microsoft Symbol Server](https://msdn.microsoft.com/library/windows/desktop/ee416588.aspx#using_the_microsoft_symbol_server). The symbol server makes symbols available to your debugging tools as needed. After a symbol file is downloaded from the symbol server it is cached on the local computer for quick access. Additional versions of Windows not listed here, are available on the [Microsoft Symbol Server](https://msdn.microsoft.com/library/windows/desktop/ee416588.aspx#using_the_microsoft_symbol_server). 
-
-If you prefer to download the entire set of symbols for Windows 10, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, or Windows 7, then you can download a symbol package and install it on your computer. 
 
 ## Symbol Package System Requirements
 
@@ -59,19 +55,18 @@ Before downloading and installing each symbol package, you should have at least 
 - Each x64 symbol package may require 640 MB or more. 
 - Symbol packages are non-cumulative unless otherwise noted, so if you are using an SP2 Windows release, you will need to install the symbols for the original RTM version and for SP1 before you install the symbols for SP2. 
 
-## Symbol Package Installation Instructions
-The symbol download packages are listed by processor type (x86, Itanium, and x64) and build type (retail and checked). Almost all customers require the symbols for the retail version. If you are debugging a special version of Windows with extra debugging information, then you should download the symbols for the checked version. 
+The symbol download packages are listed by processor type (x86, and x64) and build type (retail and checked). Almost all customers require the symbols for the retail version. If you are debugging a special version of Windows with extra debugging information, then you should download the symbols for the checked version. 
 
 
-## Symbol Resources, Support, and Feedback
+## Symbol Resources and Feedback
 
-To learn more about using symbols and debugging, see [Debugging Tools for Windows](https://docs.microsoft.com/windows-hardware/drivers/debugger/index). 
+To learn more about using symbols and debugging, see [Symbols and Symbol Files](https://docs.microsoft.com/windows-hardware/drivers/debugger/symbols-and-symbol-files). 
 
 For help with debugging issues, see [Debugging Resources](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugging-resources). 
 
 For information on how to retrieve symbols for a machine that is not connected to the Internet, see [Using a Manifest File with SymChk](https://docs.microsoft.com/windows-hardware/drivers/debugger/using-a-manifest-file-with-symchk). 
 
-Feedback- We are interested in your feedback about symbols. Please mail suggestions or bug reports to [windbgfb@microsoft.com](mailto:windbgfb@microsoft.com). Technical support is not available from this address, but your feedback will help us to plan future changes for symbols and will make them more useful to you in the future. 
+We are interested in your feedback about symbols. Please mail suggestions or bug reports to [windbgfb@microsoft.com](mailto:windbgfb@microsoft.com). Technical support is not available from this address, but your feedback will help us to plan future changes for symbols and will make them more useful to you in the future. 
 
 
 <section class="section remove-header-rule">
