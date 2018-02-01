@@ -7,7 +7,7 @@ keywords:
 - ACPI control methods WDK , evaluating
 - ACPI devices WDK , evaluating control methods
 ms.author: windowsdriverdev
-ms.date: 01/24/2018
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -18,7 +18,7 @@ ms.technology: windows-devices
 
 An Advanced Configuration and Power Interface (ACPI) control method is software that declares and defines operations to query and configure system hardware. An ACPI-compatible system provides a minimal set of control methods. Control methods are written in the ACPI Source Language (ASL), compiled by an ASL compiler into ACPI Machine Language (AML), loaded from the system firmware into the ACPI namespace, and interpreted by the ACPI driver.
 
-Kernel-mode device drivers that comply with the requirements of [Kernel-Mode Driver Framework (KMDF)](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel) or [Windows Driver Model (WDM)](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/windows-driver-model) can evaluate ACPI control methods by using device control requests. Starting with Windows 8, user-mode drivers that comply with the requirements of [User-Mode Driver Framework (UMDF)](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2) can use device control requests to evaluate ACPI control methods. Typically, a driver evaluates ACPI control methods to start or configure platform-specific functions. A driver can evaluate ACPI control methods within the namespace of the [*physical device object (PDO)*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-physical-device-object--pdo-) for which it is loaded. For drivers loaded in the device stack of an ACPI-enumerated device, the ACPI driver is always the bus driver that created and operates the PDO in the device stack. This capability includes evaluating control methods that are supported by child objects that are descendants of a parent device.
+Kernel-mode device drivers that comply with the requirements of [Kernel-Mode Driver Framework (KMDF)](https://docs.microsoft.com/windows-hardware/drivers/kernel) or [Windows Driver Model (WDM)](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model) can evaluate ACPI control methods by using device control requests. Starting with Windows 8, user-mode drivers that comply with the requirements of [User-Mode Driver Framework (UMDF)](https://docs.microsoft.com/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2) can use device control requests to evaluate ACPI control methods. Typically, a driver evaluates ACPI control methods to start or configure platform-specific functions. A driver can evaluate ACPI control methods within the namespace of the [*physical device object (PDO)*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-physical-device-object--pdo-) for which it is loaded. For drivers loaded in the device stack of an ACPI-enumerated device, the ACPI driver is always the bus driver that created and operates the PDO in the device stack. This capability includes evaluating control methods that are supported by child objects that are descendants of a parent device.
 
 A driver evaluates control methods by sending one of the following [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) requests to a device.
 

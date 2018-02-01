@@ -50,7 +50,7 @@ However, since *PrintConfig.dll* is loaded and unloaded frequently, debugging an
 
 The test app alone is sufficient to enable debugging, but it is also beneficial to add unit tests to ensure that the whole driver is handling PrintTicket, PrintCapabilities and constraints as expected. For more information on how to build Unit tests in Visual Studio, please see the following topics:
 
-[A Unit Testing Walkthrough with Visual Studio Team Test](http://msdn.microsoft.com/en-US/library/ms379625.aspx)
+[A Unit Testing Walkthrough with Visual Studio Team Test](http://msdn.microsoft.com/library/ms379625.aspx)
 
 [Unit Testing with Microsoft Visual Studio 2010 and Team Foundation Server](http://channel9.msdn.com/Events/TechEd/Australia/2010/DEV362)
 
