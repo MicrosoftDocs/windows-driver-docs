@@ -18,9 +18,8 @@ ms.technology: windows-devices
 
 The WDK is used to develop, test, and deploy Windows drivers. The latest public version of WDK is available below. Join the Windows Insider Program to get [WDK Insider Preview builds](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK). 
 
-[Learn what's new in driver development](what-s-new-in-driver-development.md) 
-
-[Review known issues](https://go.microsoft.com/fwlink/p/?LinkId=859628)
+* [Learn what's new in driver development](what-s-new-in-driver-development.md) 
+* [Review known issues](https://go.microsoft.com/fwlink/p/?LinkId=859628)
 
 ## WDK for Windows 10, version 1709
 
@@ -78,8 +77,7 @@ Windows 7|Windows Server 2008 R2 SP1|
 To get universal Windows driver samples, do one of the following: 
 * Go to the driver samples page on [GitHub](https://github.com/Microsoft/Windows-driver-samples) and click **Clone or download > Download ZIP** on the right side of the page. 
 * Download the [GitHub Extension for Visual Studio](https://visualstudio.github.com/) to connect to the GitHub repositories. 
-
-[Learn more about what's new for driver samples](https://developer.microsoft.com/windows/hardware/drivers-code-samples). 
+* [Learn more about what's new for driver samples](https://developer.microsoft.com/windows/hardware/drivers-code-samples). 
 
 ## Related downloads
 * [Download the Windows Assessment and Deployment Kit (Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
