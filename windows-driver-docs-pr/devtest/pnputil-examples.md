@@ -3,7 +3,7 @@ title: PnPUtil Examples
 description: PnPUtil Examples
 ms.assetid: 4805edb9-e4f8-441d-a7f4-0c962ddeae4e
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

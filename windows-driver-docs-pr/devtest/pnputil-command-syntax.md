@@ -11,7 +11,7 @@ api_name:
 api_type:
 - NA
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
