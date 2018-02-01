@@ -9,8 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# ![decorative image showing screen with arrow to represent download](images/download-install.png) Download Debugging Tools for Windows
-
+# Download Debugging Tools for Windows
 
 The Windows Debugger (WinDbg) can be used to debug kernel and user mode code, analyze crash dumps and to examine the CPU registers as code executes. 
 
