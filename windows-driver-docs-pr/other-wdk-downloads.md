@@ -21,7 +21,7 @@ Use the [latest public versions of the Windows Driver Kit (WDK) and tools](downl
 
 ### Install Visual Studio 2015
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > WDK for Windows 10, version 1703, is not compatible with Visual Studio 2017. Use Visual Studio 2015 for driver development with this version of the WDK. 
 
 These editions of Visual Studio 2015 support driver development. 
@@ -39,10 +39,10 @@ These editions of Visual Studio 2015 support driver development.
 
 * [Download the WDK for Windows 10, version 1703](https://go.microsoft.com/fwlink/p/?LinkID=845980)
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > If you install the WDK, you will not be able to develop Modern Applications. 
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > If you have installed WDK for Windows 10, version 1607, some WDK files get removed when installing the WDK for Windows 10, version 1703, on top of the WDK for Windows 10, version 1607. To restore these files: 
 > 1. On the Start menu, enter **Apps & features** in the search box, and select **Apps & features** from the results. 
 > 2. Find **Windows Driver Kit - Windows 10.0.15063.0** in the list of **Apps & Features**, and then select the program. 
@@ -77,7 +77,7 @@ You can also install the EWDK to build drivers and basic Win32 test applications
 
 WDK 8.1 Update has tools to build, test, debug, and deploy drivers for Windows 8.1 Update, Windows 8.1, Windows 8, and Windows 7. When you have the WDK, we recommend that you install the WDK 8.1 Update Test Pack. It has the tests for device fundamentals, graphics, imaging, mobile broadband (CDMA, GSM, WLAN), sensors, and other utilities. 
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > Before installing WDK 8.1 Update, you need to install Visual Studio 2013. 
 
 1. [Download Visual Studio 2013](https://go.microsoft.com/fwlink/p/?LinkId=620683)
@@ -98,7 +98,7 @@ With the Windows Remote Debugging client, you can work remotely with developers 
 ## WDK 8
 WDK 8 enables you to migrate earlier drivers to WDK 8.1 Update and Visual Studio 2013. Microsoft does not support WDK 8 and will make no further updates to this kit. You should use the latest versions of the WDK and Visual Studio to build drivers for Windows. 
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > You must install [Visual Studio Professional 2012](https://go.microsoft.com/fwlink/p/?LinkID=255976) or [Visual Studio Ultimate](https://go.microsoft.com/fwlink/p/?LinkID=255982) before you install WDK 8. 
 
 1. [Download WDK 8 (English only)](https://go.microsoft.com/fwlink/p/?LinkID=324284)
@@ -113,7 +113,7 @@ Developing a driver for Windows XP or Windows Server 2003? WDK 7.1.0 has the too
 ## Standalone debugging tools for debugging Windows XP and Windows Vista
 If you're debugging Windows XP, Windows Server 2003, Windows Vista, or Windows Server 2008 (or using one of these operating systems to run Debugging Tools for Windows), you need to use the Windows 7 release of the debugging tools. It's included in the SDK for Windows 7 and .NET Framework 4.0. To install the Debugging Tools for Windows as a standalone component, in the SDK installation wizard, select Debugging Tools for Windows, and clear all other components. 
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > Newer versions of the Visual C++ 2010 Redistributable can cause issues when you install the SDK for Windows 7. For more information, see [support for the Windows SDK](https://support.microsoft.com/kb/2717426). 
 
 * [Get the standalone debugging tools for Windows XP as part of Windows 7 SDK](https://www.microsoft.com/download/confirmation.aspx?id=8279) 
