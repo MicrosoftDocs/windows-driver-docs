@@ -19,6 +19,12 @@ The latest public version of the Windows Driver Kit (WDK) is available at [Downl
 
 ## WDK for Windows 10, version 1703 
 
+**Important**: If you have installed WDK for Windows 10, version 1607, some WDK files get removed when installing the WDK for Windows 10, version 1703, on top of the WDK for Windows 10, version 1607. To restore these files: 
+1. On the Start menu, enter **Apps & features** in the search box, and select **Apps & features** from the results. 
+2. Find **Windows Driver Kit - Windows 10.0.15063.0** in the list of **Apps & Features**, and then select the program. 
+3. Select **Modify**, select **Repair**, and then follow the directions on the screen. 
+4. The files will be restored. 
+
 ### Install Visual Studio 2015
 **Important**: WDK for Windows 10, version 1703, is not compatible with Visual Studio 2017. Use Visual Studio 2015 for driver development with this version of the WDK. All four editions of Visual Studio 2015 support driver development. 
 
