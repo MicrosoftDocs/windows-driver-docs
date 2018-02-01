@@ -9,7 +9,9 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-## ![decorative image showing screen with arrow to represent download](images/download-install.png)  Download Windows Symbol Packages
+## Download Windows Symbol Packages
+
+![decorative image showing screen with arrow to represent download](images/download-install.png) 
 
 Symbol files make it easier to debug your code. The easiest way to get Windows symbols is to use the [Microsoft Symbol Server](https://msdn.microsoft.com/library/windows/desktop/ee416588.aspx#using_the_microsoft_symbol_server). The symbol server makes symbols available to your debugging tools as needed. After a symbol file is downloaded from the symbol server it is cached on the local computer for quick access. Additional versions of Windows not listed here, are available on the [Microsoft Symbol Server](https://msdn.microsoft.com/library/windows/desktop/ee416588.aspx#using_the_microsoft_symbol_server). 
 
