@@ -1,15 +1,15 @@
 ---
-title: Debugger Downloads
+title: Download Debugging Tools for Windows
 description: This page provides downloads for the Windows Debugging tools, such as WinDbg.
 keywords: ["Windows Debugging Downloads", "WinDbg", "Download"]
 ms.author: domars
-ms.date: 01/30/2018
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# ![decorative image showing screen with arrow to represent download](images/download-install.png) Download Debugging tools for Windows
+# ![decorative image showing screen with arrow to represent download](images/download-install.png) Download Debugging Tools for Windows
 
 
 The Windows Debugger (WinDbg) can be used to debug kernel and user mode code, analyze crash dumps and to examine the CPU registers as code executes. 
@@ -356,12 +356,6 @@ Feedback- We are interested in your feedback about symbols. Please mail suggesti
                                                         <li>
                                                             <a href="//download.microsoft.com/download/0/A/F/0AFB5316-3062-494A-AB78-7FB0D4461357/Windows_Win7SP1.7601.17514.101119-1850.AMD64CHK.Symbols.msi">Windows&nbsp;7 Service Pack 1 x64 checked symbols, all languages</a> (File size: 262 MB)
                                                         </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/0/A/F/0AFB5316-3062-494A-AB78-7FB0D4461357/Windows_Win7SP1.7601.17514.101119-1850.IA64FRE.Symbols.msi">Windows&nbsp;7 Service Pack 1 Itanium retail symbols, all languages</a> (File size: 193 MB)
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/0/A/F/0AFB5316-3062-494A-AB78-7FB0D4461357/Windows_Win7SP1.7601.17514.101119-1850.IA64CHK.Symbols.msi">Windows&nbsp;7 Service Pack 1 Itanium checked symbols, all languages</a> (File size: 241 MB)
-                                                        </li>
                                                     </ul>
                                                 </div>
 </section>
@@ -389,12 +383,6 @@ Feedback- We are interested in your feedback about symbols. Please mail suggesti
                                                         </li>
                                                         <li>
                                                             <a href="//download.microsoft.com/download/F/1/1/F11206A1-C532-4C9E-86FF-1261A693AA53/Windows_Win7.7600.16385.090713-1255.X64CHK.Symbols.msi">Windows&nbsp;7 RTM x64 checked symbols, all languages</a> (File size: 260 MB)
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/A/9/F/A9F736B6-3DE0-4842-9488-57E78F18974D/Windows_Win7.7600.16385.090713-1255.IA64FRE.Symbols.msi">Windows&nbsp;7 RTM Itanium retail symbols, all languages</a> (File size: 192 MB)
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/A/9/F/A9F736B6-3DE0-4842-9488-57E78F18974D/Windows_Win7.7600.16385.090713-1255.IA64CHK.Symbols.msi">Windows&nbsp;7 RTM Itanium checked symbols, all languages</a> (File size: 240 MB)
                                                         </li>
                                                     </ul>
                                                 </div>
