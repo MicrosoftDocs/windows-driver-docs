@@ -11,7 +11,7 @@ api_name:
 api_type:
 - NA
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -27,75 +27,61 @@ To run PnPUtil, open a Command Prompt window (**Run as Administrator**) and type
  
 
 ```
-    PnPUtil [/a [/i] InfFileName] [/d [/f] PublishedInfFileName] [/e] [/?] 
+pnputil [/add-driver <...> | /delete-driver <...> |
+         /export-driver <...> | /enum-drivers | /?]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+## Commands
 
+  **/add-driver** <filename.inf | *.inf> [/subdirs] [/install] [/reboot]
 
-<span id="________a______"></span><span id="________A______"></span> **/a**   
-Adds a [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) to the [driver store](https://msdn.microsoft.com/library/windows/hardware/ff544868). The *InfFileName* parameter specifies the path and name of the [INF file](https://msdn.microsoft.com/library/windows/hardware/ff547402) in the driver package. For more information about this parameter, see the [Comments](#comments) section later in this topic.
+Add driver package(s) into the driver store.  
+```
+/subdirs - traverse sub directories for driver packages.  
+/install - install/update drivers on any matching devices.  
+/reboot - reboot system if needed to complete the operation.  
+```
 
-The **/a** switch has the following optional parameters:
+  **/delete-driver** *<oem#.inf> [/uninstall] [/force] [/reboot]*
 
-<span id="_i"></span><span id="_I"></span>**/i**  
-Installs the [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) on matching devices that are connected to the system. The driver package is installed after it is added to the [driver store](https://msdn.microsoft.com/library/windows/hardware/ff544868).
+Delete driver package from the driver store.  
 
-**Note**  When you add a [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) to the [driver store](https://msdn.microsoft.com/library/windows/hardware/ff544868) by using the **/a** switch, Windows uses a different name (*published name*) for the driver package's [INF file](https://msdn.microsoft.com/library/windows/hardware/ff547402). You must use the published name of the INF file for the *PublishedInfFileName* parameter of the **/d** switch.
+```
+/uninstall - uninstall driver package from any devices using it.  
+/force - delete driver package even when it is in use by devices.  
+/reboot - reboot system if needed to complete the operation.  
+```
 
- 
+**/export-driver** *<oem#.inf | *> <target directory>*
 
-<span id="________d______"></span><span id="________D______"></span> **/d**   
-Removes a [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) from the [driver store](https://msdn.microsoft.com/library/windows/hardware/ff544868). The *PublishedInfFileName* parameter specifies the published name of the [INF file](https://msdn.microsoft.com/library/windows/hardware/ff547402) for the driver package that was added to the driver store. For more information about this parameter, see the [Comments](#comments) section later in this topic.
+Export driver package(s) from the driver store into a target directory.
 
-The **/d** switch has the following optional parameters:
+**/enum-drivers**
 
-<span id="_f"></span><span id="_F"></span>**/f**  
-Forces the deletion of the specified [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) from the [driver store](https://msdn.microsoft.com/library/windows/hardware/ff544868). You must use this parameter if the specified driver package is installed on a device that is connected to the system. If this parameter is not specified, PnPUtil only removes a driver package if it was not used to install drivers for devices that are connected to the system.
+Enumerate all 3rd party driver packages in the driver store.
 
-**Note**  Removing the driver package in this manner will not affect the operation of currently connected devices for which drivers were previously installed from the package.
+**/?**
 
- 
-
-<span id="________e______"></span><span id="________E______"></span> **/e**   
-Enumerates the [driver packages](https://msdn.microsoft.com/library/windows/hardware/ff544840) that are currently in the [driver store](https://msdn.microsoft.com/library/windows/hardware/ff544868). Only driver packages that are not in-box packages are listed. An *in-box* driver package is one which is included in the default installation of Windows or its service packs.
-
-<span id="_______________"></span> **/?**   
 Displays the command-line syntax.
 
-### <span id="comments"></span><span id="COMMENTS"></span> Comments
+## Legacy Command Mapping
 
-The *InfFileName* parameter of the **/a** switch is used to specify the name of [driver package's](https://msdn.microsoft.com/library/windows/hardware/ff544840)[INF file](https://msdn.microsoft.com/library/windows/hardware/ff547402). This parameter has the following syntax:
+The following commands are still supported, but are legacy.  We recommend that you use the up-to-date syntax instead.
 
-\[**Drive:\\**\]\[**Path**\]*Filename*
+```
+  -a [-i]  <filename.inf> ==> /add-driver <filename.inf> [/install]
 
-*Filename* can specify one of the following:
+  -d [-f]  <oem#.inf>     ==> /delete-driver <oem#.inf> [/force]
 
--   The name of a single [INF file](https://msdn.microsoft.com/library/windows/hardware/ff547402).
--   The names of all INF files or only specific INF files by using the asterisk ('\*') or question mark ('?') wildcard characters.
+  -e                     ==> /enum-drivers
+```
+ 
 
-If you delete a driver package by using the **/d** switch, you must specify the published name of the INF file through the *PublishedInfFileName* parameter. You can obtain this name through one of the following methods:
+###  Comments
 
--   When the driver package is added to the driver store through the **/a** switch, PnPUtil displays the published name of the INF file for the driver package within the [driver store](https://msdn.microsoft.com/library/windows/hardware/ff544868).
--   Run PnPUtil and use the **/e** switch to list all the driver packages, together with the published names of their INF files, that are currently within the driver store.
-    ```
-    C:\>pnputil /e
-    Microsoft PnP Utility
 
-    Published name : oem0.inf
-    Driver package provider : Microsoft
-    Class : Printers
-    Driver version and date : Unknown driver version and date
-    Signer name : microsoft windows
 
-    Published name : oem22.inf
-    Driver package provider : Fabrikam, Inc.
-    Class : Network adapters
-    Driver version and date : 10/07/2009 1.0.200.0
-    Signer name : microsoft windows hardware compatibility publisher
-    ```
-
-    For examples of how to use the PnPUtil tool, see [PnPUtil Examples](pnputil-examples.md).
+For examples of how to use the PnPUtil tool, see [PnPUtil Examples](pnputil-examples.md).
 
  
 

@@ -7,7 +7,7 @@ keywords:
 - printer options WDK Unidrv , standard
 - standard options WDK Unidrv
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -18,7 +18,8 @@ ms.technology: windows-devices
 
 Standard options are those that are associated with [standard features](standard-features.md). They are identified by predefined names that the GPD language recognizes. Resource identifiers for strings that represent these names are contained in stdnames.gpd, which is supplied with the Microsoft Windows Driver Kit (WDK). 
 
-**Note** This resource may not be available in some languages and countries.
+> [!IMPORTANT]
+> This resource may not be available in some languages and countries.
 
 The following table lists the standard option names that are permitted for each standard feature. Use these names as arguments to **\*Option** entries. The features that include Print Schema option keywords are option names that are automatically mapped to Print Schema option keywords. You can also map GPD options to Print Schema keywords manually by using the **PrintSchemaKeywordMap** attribute. The Print Schema is documented in the Microsoft Windows SDK.
 
@@ -39,7 +40,7 @@ The following table lists the standard option names that are permitted for each 
 		<tr>
 			<td><b>ColorMode</b></td>
 			<td colspan="2">No standard options</td>
-			<td>Yes<br>Also see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/print/handling-color-formats">Handling Color Formats</a> and <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/print/controlling-image-quality">Controlling Image Quality</a>.</td>
+			<td>Yes<br>Also see <a href="https://docs.microsoft.com/windows-hardware/drivers/print/handling-color-formats">Handling Color Formats</a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/print/controlling-image-quality">Controlling Image Quality</a>.</td>
 		</tr>
 		<tr>
 			<td><b>Duplex</b></td>
@@ -50,7 +51,7 @@ The following table lists the standard option names that are permitted for each 
 		<tr>
 			<td><b>Halftone</b></td>
 			<td colspan="2">HT_PATSIZE_2x2<br>HT_PATSIZE_2x2_M<br>HT_PATSIZE_4x4<br>HT_PATSIZE_4x4_M<br>HT_PATSIZE_6x6<br>HT_PATSIZE_6x6_M<br>HT_PATSIZE_8x8<br>HT_PATSIZE_8x8_M<br>HT_PATSIZE_10x10<br>HT_PATSIZE_10x10_M<br>HT_PATSIZE_12x12<br>HT_PATSIZE_12x12_M<br>HT_PATSIZE_14x14<br>HT_PATSIZE_14x14_M<br>HT_PATSIZE_16x16<br>HT_PATSIZE_16x16_M<br>HT_PATSIZE_SUPERCELL<br>HT_PATSIZE_SUPERCELL_M<br>HT_PATSIZE_AUTO</td>
-			<td>Yes<br>Also see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/print/halftoning-with-unidrv">Halftoning with Unidrv</a>.</td>
+			<td>Yes<br>Also see <a href="https://docs.microsoft.com/windows-hardware/drivers/print/halftoning-with-unidrv">Halftoning with Unidrv</a>.</td>
 		</tr>
 		<tr>
 			<td rowspan="5"><b>InputBin</b></td>
@@ -78,7 +79,7 @@ The following table lists the standard option names that are permitted for each 
 			<td><b>MediaType</b></td>
 			<td>GLOSSY<br>STANDARD<br>TRANSPARENCY</td>
 			<td>PhotographicGlossy<br>Plain<br>Transparency</td>
-			<td>Yes<br>Also see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/print/controlling-image-quality">Controlling Image Quality</a>.</td>
+			<td>Yes<br>Also see <a href="https://docs.microsoft.com/windows-hardware/drivers/print/controlling-image-quality">Controlling Image Quality</a>.</td>
 		</tr>
 		<tr>
 			<td><b>Memory</b></td>
@@ -87,7 +88,7 @@ The following table lists the standard option names that are permitted for each 
 		</tr>
 		<tr>
 			<td><b>Orientation</b></td>
-			<td>PORTRAIT<br>LANDSCAPE_CC90<br>LANDSCAPE_CC270<br><br>For more information about the latter two options, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/print/specifying-paper-orientation">Specifying Paper Orientation</a>.</td>
+			<td>PORTRAIT<br>LANDSCAPE_CC90<br>LANDSCAPE_CC270<br><br>For more information about the latter two options, see <a href="https://docs.microsoft.com/windows-hardware/drivers/print/specifying-paper-orientation">Specifying Paper Orientation</a>.</td>
 			<td>Portrait<br>Landscape<br>ReverseLandscape</td>
 			<td>No</td>
 		</tr>
@@ -219,10 +220,14 @@ The following table lists the standard option names that are permitted for each 
 
 
 ## Related topics
+
+
 [Controlling Image Quality](controlling-image-quality.md)  
 [Halftoning with Unidrv](halftoning-with-unidrv.md)  
 [Specifying Paper Orientation](specifying-paper-orientation.md)  
 [Standard features](standard-features.md)  
+
+
 
 --------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Standard%20Options%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

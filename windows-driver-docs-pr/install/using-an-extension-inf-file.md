@@ -97,6 +97,13 @@ In most cases, you'll submit an extension INF package to the Hardware Dev Center
 
 The driver validation and submission process is the same for extension INFs as for regular INFs. For more info, see [Windows HLK Getting Started](https://msdn.microsoft.com/library/windows/hardware/dn915002).
 
+## Uninstalling an extension driver
+
+Before uninstalling an extension driver, you must first uninstall the base device.  Next, run PnPUtil on the extension INF.
+
+To delete the driver package, use `pnputil /delete-driver oem0.inf`.
+To force delete the driver package, use `pnputil /delete-driver oem1.inf /force`.
+
 ## Example 1: Using an extension INF to set the device friendly name
 
 In one common scenario, a device manufacturer (IHV) provides a base driver and a base INF, and then a system builder (OEM) provides an extension INF that supplements and in some cases overrides the configuration and settings of the base INF.  The following snippet is a complete extension INF that shows how to set the device friendly name.
