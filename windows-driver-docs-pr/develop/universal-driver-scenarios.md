@@ -1,6 +1,6 @@
 # Universal Driver Scenarios
 
-This topic describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) applies the DCHU design principles.  You can use it as a model for your own universal driver package.
+This topic describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) applies the DCHU [design principles](getting-started-with-universal-drivers.md) (Declarative, Componentized, Hardware Support Apps [HSA], and Universal API compliance).  You can use it as a model for your own universal driver package.
 
 If you would like a local copy of the sample repo, clone from [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples).
 
