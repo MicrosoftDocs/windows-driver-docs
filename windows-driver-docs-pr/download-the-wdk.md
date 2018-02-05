@@ -23,7 +23,7 @@ The WDK is used to develop, test, and deploy Windows drivers. The latest public 
 
 ## WDK for Windows 10, version 1709
 
-### Step 1: Install Visual Studio 2017
+### ![download icon](/images/download-install.png) Step 1: Install Visual Studio 2017 
 The following editions of Visual Studio 2017 support driver development: 
 
 * [Download Visual Studio Community 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)
@@ -35,7 +35,7 @@ When you install Visual Studio, select the **Desktop development with C++** work
 For ARM/ARM64 driver development, choose **Individual components** and under **Compilers, build tools, and runtimes** select **Visual C++ compilers and libraries for ARM/ARM64**.
 
 
-### Step 2: Install WDK for Windows 10, version 1709
+### ![download icon](/images/download-install.png) Step 2: Install WDK for Windows 10, version 1709
 
 * [Download WDK for Windows 10, version 1709](https://go.microsoft.com/fwlink/p/?linkid=859232) 
 
@@ -45,11 +45,11 @@ New for this release: The WDK installation will by default install the WDK Visua
 
 The EWDK is a standalone self-contained command-line environment for building drivers. The EWDK includes the Visual Studio Build Tools, the SDK, and the WDK. There are two versions available: 
 
-### EWDK with Visual Studio Build Tools 15.4 (Recommended)
+### ![download icon](/images/download-install.png) EWDK with Visual Studio Build Tools 15.4 (Recommended)
 
 * [Download WDK for Windows 10, version 1709](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709-VS15-4)
 
-## EWDK with Visual Studio Build Tools 15.2
+## ![download icon](/images/download-install.png) EWDK with Visual Studio Build Tools 15.2
 
 * [Download WDK for Windows 10, version 1709](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709)
 
