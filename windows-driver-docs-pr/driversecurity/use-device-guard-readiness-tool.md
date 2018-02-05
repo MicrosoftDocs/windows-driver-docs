@@ -3,7 +3,7 @@ title: Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility
 description: Follow these steps to use Device Guard Readiness Tool to evaluate HVCI driver compatibility of your driver code.
 ms.assetid: 
 ms.author: windowsdriverdev
-ms.date: 10/21/2017
+ms.date: 02/05/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -267,9 +267,25 @@ To use Device Guard Readiness Tool, complete the following steps:
 <p>Section Alignment must be a multiple of 0x1000 (PAGE_SIZE). E.g. DRIVER_ALIGNMENT=0x1000</p></td>
 </tr>
 
-<tr class="odd">
-<td align="left"><p>Unsupported Relocs</p></td>
-<td align="left"><p>In Windows 10, version 1507 through Windows 10, version 1607, because of the use of Address Space Layout Randomization (ASLR) an issue can arise with address alignment and memory relocation.  The operating system needs to relocate the address from where the linker set its default base address to the actual location that ASLR assigned. This relocation cannot straddle a page boundary.  For example, consider a 64-bit address value that starts at offset 0x3FFC in a page. It’s address value overlaps over to the next page at offset 0x0003. This type of overlapping relocs is not supported prior to Windows 10, version 1703.</p>
+
+<tr class="even">
+<td align="left"><p>IAT in Executable Section</p></td>
+<td align="left"><p>The import address table (IAT), should not be an executable section of memory.</p>
+<p>This issue occurs when the IAT, is located in a Read and Execute (RX) only section of memory. This means that the OS will not be able to write to the IAT to set the correct addresses for where the referenced DLL. </p>
+<p> One way that this can occur is when using the [/MERGE (Combine Sections)](https://docs.microsoft.com/cpp/build/reference/merge-combine-sections) option in code linking. For example if .rdata (Read-only initialized data) is merged with .text data (Executable code), it is possible that the IAT may end up in an executable section of memory.  </p>
+</td>
+</tr>
+
+</tbody>
+</table>
+
+
+---------
+
+Unsupported Relocs
+
+<p>In Windows 10, version 1507 through Windows 10, version 1607, because of the use of Address Space Layout Randomization (ASLR) an issue can arise with address alignment and memory relocation.  The operating system needs to relocate the address from where the linker set its default base address to the actual location that ASLR assigned. This relocation cannot straddle a page boundary.  For example, consider a 64-bit address value that starts at offset 0x3FFC in a page. It’s address value overlaps over to the next page at offset 0x0003. This type of overlapping relocs is not supported prior to Windows 10, version 1703.</p>
+
 <p>This situation can occur when a global struct type variable initializer has a misaligned pointer to another global, laid out in such a way that the linker cannot move the variable to avoid the straddling relocation. The linker will attempt to move the variable, but there are situations where it may not be able to do so (for example with large misaligned structs or large arrays of misaligned structs). Where appropriate, modules should be assembled using the [/Gy (COMDAT)](https://docs.microsoft.com/cpp/build/reference/gy-enable-function-level-linking) option to allow the linker to align module code as much as possible.</p>
 
 
@@ -330,22 +346,10 @@ BAD_STRUCT MayHaveStraddleRelocations[4096] = { // as a global variable
 };
 
 ```
-<p>There are other situations involving the use of assembler code, where this issue can also occur.</p>
 
-</td>
-</tr>
+There are other situations involving the use of assembler code, where this issue can also occur.
 
-<tr class="even">
-<td align="left"><p>IAT in Executable Section</p></td>
-<td align="left"><p>The import address table (IAT), should not be an executable section of memory.</p>
-<p>This issue occurs when the IAT, is located in a Read and Execute (RX) only section of memory. This means that the OS will not be able to write to the IAT to set the correct addresses for where the referenced DLL. </p>
-<p> One way that this can occur is when using the [/MERGE (Combine Sections)](https://docs.microsoft.com/cpp/build/reference/merge-combine-sections) option in code linking. For example if .rdata (Read-only initialized data) is merged with .text data (Executable code), it is possible that the IAT may end up in an executable section of memory.  </p>
-</td>
-</tr>
-
-</tbody>
-</table>
-
+---------
 
 
 ## Script customization

@@ -3,7 +3,7 @@ title: Threat modeling for drivers
 description: Driver writers and architects should make threat modeling an integral part of the design process for any driver. This article provides guidelines for creating threat models for drivers for the Microsoft Windows family of operating systems.
 ms.assetid: 77FB242E-A07C-4298-80ED-866F8D80118C
 ms.author: windowsdriverdev
-ms.date: 10/21/2017
+ms.date: 02/01/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,7 +47,7 @@ This section applies the principles of threat modeling to driver design and prov
     <https://blogs.msdn.microsoft.com/microsoft_press/2016/04/19/free-ebook-the-security-development-lifecycle/>
 
 
-# <span id="Create_a_threat_model"></span><span id="create_a_threat_model"></span><span id="CREATE_A_THREAT_MODEL"></span>Create threat models for drivers
+## <span id="Create_a_threat_model"></span><span id="create_a_threat_model"></span><span id="CREATE_A_THREAT_MODEL"></span>Create threat models for drivers
 
 Creating a threat model requires a thorough understanding of the driver’s design, the types of threats to which the driver might be exposed, and the consequences of a security attack that exploits a particular threat. After creating the threat model for a driver, you can determine how to mitigate the potential threats.
 
@@ -317,7 +317,7 @@ For driver developers:
 -   Become familiar with the security and reliability issues that apply to your driver and device type. For more information, see the device-specific sections of the Windows Device Driver Kit (WDK).
 -   Understand which checks the operating system, I/O manager, and any higher-level drivers perform before user requests reach your driver — and which checks they do not perform.
 -   Use tools from the WDK, such as driver verifier to test and verify your driver.
--   [Review public databases of known threats and software vulnerabilities](#reviewthreats).
+-   Review public databases of known threats and software vulnerabilities.
 
 For additional driver security resources, see [Driver Security Checklist](driver-security-checklist.md).
 
