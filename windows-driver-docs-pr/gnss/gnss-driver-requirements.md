@@ -1,10 +1,9 @@
 ---
 title: GNSS driver requirements
-author: windows-driver-content
 description: Describes requirements, assumptions, and constraints to consider when developing a GNSS driver for Windows 10.
 ms.assetid: BA117292-4877-4753-8FEB-2DEE6450155D
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 02/07/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -12,17 +11,14 @@ ms.technology: windows-devices
 
 # GNSS driver requirements
 
-
 Describes requirements, assumptions, and constraints to consider when developing a GNSS driver for Windows 10.
 
 ## General requirements
 
-
 -   **Driver framework:** The GNSS driver should be written as a UMDF 2.0 driver a based on this interface definition, as opposed to a raw WDM driver or KMDF driver. UMDF 1.0 drivers are not supported either. The GNSS driver interface definition or the Microsoft high level operating system (HLOS) GNSS components like GNSS adapter do not make a distinction between a WDF, KMDF GNSS driver and a UMDF 2.0 driver, as long as the driver provides the needed functionality per this interface design. UMDF 2.0 provides higher stability, simplicity and flexibility to implement features that requires functionality only offered in user mode. As a general rule, IHVs should prefer UMDF 2.0 to KMDF when the former framework is available on the platform.
 
-    **Note**  UMDF 2.0 is available on all platforms and IHVs are strongly recommended to use the driver written in user mode.
-
-     
+    > [!NOTE]
+    >  UMDF 2.0 is available on all platforms and IHVs are strongly recommended to use the driver written in user mode.
 
 -   **Multiple application sessions:** An application session is a positioning session coming from an HLOS component interacting directly with the GNSS driver. The GNSS driver could choose to natively support multiple application sessions by partitioning its state variables and functionality into per-application basis. This is an optional capability of the driver and is indicated specifically through well-defined GNSS driver capability information. In order to support this optional behavior, the GNSS driver needs to keep track of the file handle that the HLOS applications get during **CreateFile**, and associate all subsequent HLOS operations to the application-session specific file handle. This native support from the GNSS driver allows the HLOS components to be more flexible and less restrictive about exposing the driver to the rest of the platform. A GNSS driver that support this capability may need to logically partition and maintain state information for each individual application sessions. A GNSS driver that does not support this capability will only need to maintain global state for all application sessions instead of the logical app-specific partition. In this latter mode, the GNSS driver is oblivious to the presence of multiple parallel application sessions and treats all requests from HLOS as if they are originated from the same application session.
 
@@ -54,9 +50,8 @@ Describes requirements, assumptions, and constraints to consider when developing
 
     3.  Modify the fix session if needed
 
-        **Note**  This is required at least until the GNSS adapter handles multiplexing of fix sessions of the same type and it may even be require later on to handle the case of more simultaneous fix sessions active than the number supported by the GNSS driver.
-
-         
+        > [!NOTE]
+        > This is required at least until the GNSS adapter handles multiplexing of fix sessions of the same type and it may even be require later on to handle the case of more simultaneous fix sessions active than the number supported by the GNSS driver.
 
     4.  Stopping the fix session
 
@@ -71,16 +66,12 @@ Describes requirements, assumptions, and constraints to consider when developing
 -   **Device power policy:** The GNSS driver should manage the power policy of its device and should handle the power management events raised by the OS. The driver should register for the *WDF\_PNPPOWER\_EVENT\_CALLBACKS.EvtDeviceD0Entry* callback (raised by WDF when system goes to D0 state) and *WDF\_PNPPOWER\_EVENT\_CALLBACKS.EvtDeviceD0Exit* callback (raised by WDF when system exits from D0 state). The GNSS driver should be configurable to optionally disable power management.
 
     The exact power management that needs to be done in a GNSS device in the different system power states needs to be adapted according to the capabilities of the GNSS device (does it support offloaded operations or not), whether there are actual offloaded operations active, and how the communication between the system and GNSS device gets done. In general the expectations are as follows:
-
     -   The GNSS device will work in the lowest power mode possible when there are no active sessions or offloaded operations, regardless of the system power state.
-
     -   In case of offloaded scenarios, again regardless of the system power state, the GNSS device may need to check for position at different intervals or receive notifications and thus the GNSS device may need to stay in D0 state even during connected standby (this is the screen-off sleep state), but still the hardware needs to reduce the power consumption to the minimum. This model would work for those devices using DMA (Direct Memory Access) or a serial port on a UART to communicate with the host, for example. But will be a challenge for those GNSS devices connected via USB bus, in which case most likely the device's USB function should be in the D2 (suspend) device power state during connected standby. In general GNSS devices connected via USB must be able to enter a low-power D2 (suspend) state after they have no fix sessions or offloaded operations ongoing and the USB bus interface enters the suspend state. All sleep and wake power transitions must be signaled over the USB bus. If the GNSS device has fix sessions active or offloaded operations, the device must be able to use in-band, USB resume signaling to wake the SoC or core silicon from connected standby. The SoC or core silicon must be able to wake from its lowest power state in response to in-band, USB resume signaling from the GNSS device.
-
     -   Devices that do not support connected standby will have all offloaded operations cancelled at the time when the device goes to modern standby or hibernation. This includes geofences offloaded, distance tracking, or periodic tracking sessions.
-
     -   Devices that do support connected standby will continue having all offloaded operations active when the device goes to connected standby, and the GNSS device is expected to continue the tracking operations as efficiently as possible, and it is expected to provide notifications to the HLOS in case that the a geofence trigger condition or a tracking session update is pertinent. If there are no offloaded operations in a device that supports connected standby, the GNSS device is supposed to go to the lowest power state possible but still be able to listen to location session requests from the HLOS. In devices that support SUPL, it must also be possible for the GNSS device and SUPL stack to wake up on NI notifications while in connected standby.
 
-        General information on power management for drivers can be found in [Power Management Responsibilities for Drivers](https://msdn.microsoft.com/library/windows/hardware/ff559825).
+    General information on power management for drivers can be found in [Power Management Responsibilities for Drivers](https://msdn.microsoft.com/library/windows/hardware/ff559825).
 
 -   **Power consideration:** The GNSS driver stack must take power footprint into account as a primary design goal and minimize keeping the main processor awake as much as possible. All advanced functionality support (such as different fix types) must be executed in a power-efficient way such than the main app processor does not need to be active more than needed and most processing can be offloaded to the chipset/low-power processor. As a general rule, unless otherwise indicated from the HLOS, the GNSS driver must always treat power consumption as the most important constraint, and must be designed to perform the normal operations with minimal power footprint. The GNSS driver interface is explicitly designed to allow the mobile device to transition to low-power mode as often as possible, and to provide necessary power-related hints to the GNSS driver to optimize the power usage. For tracking, geofencing and other functionality that require long-running pervasive position monitoring, the GNSS driver/engine must take advantage of low-power hardware/processors. If such functionality has to be implemented using a brute-force polling mechanism in the driver or if it needs to be implemented in the app processor, the driver should not declare itself as capable of such operations. This will allow the HLOS to either restrict exposure of such functionality to the rest of the platform, or use an alternative implementation of those functionalities based on other platform services/primitives.
 
@@ -93,21 +84,16 @@ Describes requirements, assumptions, and constraints to consider when developing
 -   **User mode IHV extension:** IHVs can write accessory user-mode component that interacts with the GNSS driver over IHV-defined private IOCTLs. This is in particular needed if the GNSS driver is in kernel mode, in which case it does not have access to functionality exclusively available in user-mode (for example, Wi-Fi scan, Connection Manager APIs, and so on). Note that with UMDF 2.0 in Windows 10, a UMDF GNSS driver does not need a separate user-mode component, although the IHV may still implement a separate user mode component. These user-mode components are treated as a mere extension to the GNSS driver and will be treated as part of the IHV-delivered BSP drop. The Microsoft-provided HLOS components are oblivious to the exact implementation details of such components and the interaction mechanism between the IHV user-mode/kernel-mode components. If the GNSS driver is written as a UMDF 2.0 driver using user-mode IHV extensions is not recommended because this model will likely require more memory usage.
 
     The user-mode IHV extensions must comply with the following rules:
-
     -   The semantics and behavior of the public GNSS driver IOCTLs must remain unaffected and unobstructed by the user-mode IHV extension and its interaction with the GNSS driver.
-
     -   The user-mode extension must comply with the security, power, and other platform basics and policies imposed by the Windows 10 platform.
-
     -   The user-mode extension must perform only the authorized activities approved by Microsoft, without having the OS platform enforce/validate such authorization at runtime.
 
-        **Note**  Microsoft can still enforce security policies and control lifetime of such components. The key point here is that the IHV user-mode components should not count on the platform to enforce such policies as the extension component is treated as a trusted OS component.
+    > [!NOTE]
+    > Microsoft can still enforce security policies and control lifetime of such components. The key point here is that the IHV user-mode components should not count on the platform to enforce such policies as the extension component is treated as a trusted OS component.
 
-         
-
-        IHVs will not add arbitrary functionality or use unauthorized OS services/ secure resources.
+    IHVs will not add arbitrary functionality or use unauthorized OS services/ secure resources.
 
 ## Minimum support requirements
-
 
 There will be a large variety of GNSS devices that can be used for Windows platforms to satisfy the needs of diverse tiers of devices (low cost, high end, different device types, and so on). To enable such rich ecosystem and increase the number of tablets, laptops and other device types that can include a GNSS chip at lower cost, Microsoft does not require all GNSS devices to support the full set of features described in [GNSS driver reference for Windows 10](https://msdn.microsoft.com/library/windows/hardware/dn925122). The following table provides a high level view of the minimal functionality required for different device types and what functionality is optional or recommended.
 
