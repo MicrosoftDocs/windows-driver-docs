@@ -95,7 +95,7 @@ Describes requirements, assumptions, and constraints to consider when developing
 
 ## Minimum support requirements
 
-There will be a large variety of GNSS devices that can be used for Windows platforms to satisfy the needs of diverse tiers of devices (low cost, high end, different device types, and so on). To enable such rich ecosystem and increase the number of tablets, laptops and other device types that can include a GNSS chip at lower cost, Microsoft does not require all GNSS devices to support the full set of features described in [GNSS driver reference for Windows 10](https://msdn.microsoft.com/library/windows/hardware/dn925122). The following table provides a high level view of the minimal functionality required for different device types and what functionality is optional or recommended.
+There will be a large variety of GNSS devices that can be used for Windows platforms to satisfy the needs of diverse tiers of devices (low cost, high end, different device types, and so on). To enable such rich ecosystem and increase the number of tablets, laptops and other device types that can include a GNSS chip at lower cost, Microsoft does not require all GNSS devices to support the full set of features described in [GNSS driver reference](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/gnssdriver). The following table provides a high level view of the minimal functionality required for different device types and what functionality is optional or recommended.
 
 <table>
 <colgroup>

@@ -48,7 +48,7 @@ The components in the diagram are described here:
 ## Support for GNSS devices and drivers that follow the legacy Windows model
 
 
-The location platform in Windows 10 supports GNSS devices integrated via the legacy Sensors v1.0 class driver (see [Writing a location sensor driver](writing-a-location-sensor-driver.md)) or integrated via the new GNSS DDI described in [GNSS driver reference for Windows 10](https://msdn.microsoft.com/library/windows/hardware/dn925122).
+The location platform in Windows 10 supports GNSS devices integrated via the legacy Sensors v1.0 class driver (see [Writing a location sensor driver](writing-a-location-sensor-driver.md)) or integrated via the new GNSS DDI described in thr [GNSS driver reference](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/gnssdriver).
 
 Therefore, Windows devices with a GNSS device that integrate with the Sensor v1.0 class extension model that existed in Windows 7, Windows 8, and Windows 8.1 are expected to continue working in Windows 10 without the need of any changes. It is strongly recommended for these drivers (and any new drivers) to be published to Windows Update to improve the upgrade process for our users.
 
@@ -232,7 +232,7 @@ To facilitate the implementation of the mobile operator protocols and reduce the
 
     Only one SUPL configuration is supported in a system, including in cases of dual SIM devices. Microsoft provides the functionality to reconfigure SUPL based on UICC and on UICC change. In addition to this, in case of the device roaming, the HLOS re-configures the SUPL client to work in standalone mode. This document defines the IOCTLs for pushing such configuration data for a variety of mobile operation protocols (SUPL 1.0 and 2.0, v2UPL, and so on).
 
-2.  **User consent UI:** To meet privacy requirements, certain network initiated positioning requests need user consent. IHVs are not allowed to write UI for platform components. Hence the GNSS adapter handles the UI for user consent on behalf of the GNSS driver. The notification IOCTLs for the GNSS driver to request a UI popup, and the IOCTLs for the GNSS adapter to convey the user response to such a request are defined in [GNSS driver IOCTLs](https://msdn.microsoft.com/library/windows/hardware/dn925120).
+2.  **User consent UI:** To meet privacy requirements, certain network initiated positioning requests need user consent. IHVs are not allowed to write UI for platform components. Hence the GNSS adapter handles the UI for user consent on behalf of the GNSS driver. The notification IOCTLs for the GNSS driver to request a UI popup, and the IOCTLs for the GNSS adapter to convey the user response to such a request are defined in [GNSS driver IOCTLs](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/gnssdriver).
 
 In order to implement a fully functional SUPL client the IHV stack will need to make use of interfaces or general functionality available in/through the OS platform. The following is the list of functionality available in Windows 10 that IHVs can leverage to implement their SUPL client:
 
@@ -329,7 +329,7 @@ The sequence description is as follows:
 
 9.  The GNSS adapter closes the driver file handle using the **CloseHandle** API.
 
-The GNSS IOCTLs and associated data structures are described in detail in the [GNSS driver reference for Windows 10](https://msdn.microsoft.com/library/windows/hardware/dn925122).
+The GNSS IOCTLs and associated data structures are described in detail in the [GNSS driver reference](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/gnssdriver/).
 
 ## Distance-based tracking session
 
