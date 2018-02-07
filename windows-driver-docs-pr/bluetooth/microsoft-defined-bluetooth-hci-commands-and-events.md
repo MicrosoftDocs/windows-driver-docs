@@ -9,7 +9,10 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Microsoft-defined HCI commands 
+# Microsoft-defined Bluetooth HCI extensions
+The Bluetooth Host-Controller Interface (HCI) specifies all interactions between a host and a Bluetooth radio controller. Bluetooth specifications allow vendor-defined HCI commands and events to enable non-standardized interaction between hosts and controllers. Microsoft defines vendor-specific HCI commands and events that are consumed by Windows. Bluetooth controller implementers can use these extensions to implement special features.
+
+## Microsoft-defined HCI commands 
 
 Bluetooth HCI commands are identified by a 16-bit command code. The Bluetooth organization defines values in the range 0x0000 through 0xFBFF. Vendors define values in the range 0xFC00 through 0xFFFF, allowing for 1024 different possible vendor-assigned command codes.
 
@@ -17,7 +20,7 @@ The vendor must choose the value of the Microsoft-defined command code. Microsof
 
 The vendor must communicate the chosen value through a method other than the controller. Microsoft does not specify how to get the chosen code.
 
-## Notifying Windows Bluetooth stack of the vendor specific command code
+### Notifying Windows Bluetooth stack of the vendor specific command code
 The Windows Bluetooth stack reads the vendor-specific command code from a registry key.
 
 The VsMsftOpCode registry key has a type of REG_DWORD and the key data is the vendor specific opcode.
@@ -33,7 +36,7 @@ REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\<Device instance path>
 
 ```
 
-## Using INF to set the VsMsftOpCode registry key
+### Using INF to set the VsMsftOpCode registry key
 The vendor-specific command code can also be added via INF Files. This sample shows how and where to add the vendor specific command code so that it is automatically added to the registry.
 
 ``` 
@@ -42,7 +45,7 @@ AddReg=radio.NTamd64.HW.AddReg
 [radio.NTamd64.HW.AddReg]
 HKR,,"VsMsftOpCode",0x00010001,<Vendor Specific Opcode>
 ```
-## Microsoft-defined HCI command and subcommands
+### Microsoft-defined HCI command and subcommands
 
 The controller understands there is only one Microsoft-specific HCI command. The Microsoft-specific command set is extended through the use of an opcode. The first command parameter for the Microsoft-defined HCI command is an opcode that specifies the subcommand.
 
