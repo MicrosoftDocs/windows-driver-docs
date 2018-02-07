@@ -19,6 +19,7 @@
 #### [Building SDP Records](building-sdp-records.md)
 ### [Supporting Bluetooth Event Notifications](supporting-bluetooth-event-notifications.md)
 ## [Debugging Bluetooth Profile Drivers](debugging-bluetooth-profile-drivers.md)
+## [Microsoft-defined Bluetooth HCI commands and events](microsoft-defined-bluetooth-hci-commands-and-events.md)
 ## [Bluetooth FAQ](bluetooth-faq.md)
 ### [Bluetooth Version and Profile Support in Windows 10](general-bluetooth-support-in-windows.md)
 ### [Bluetooth Version and Profile Support in Previous Windows Versions](bluetooth-support-in-previous-windows-versions.md)
