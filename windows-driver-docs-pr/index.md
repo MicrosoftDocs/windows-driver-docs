@@ -249,19 +249,14 @@ ms.technology: windows-devices
 </ul>
 
 <p><b>Run-time requirements for WDK 10</b></p>
-You can run WDK 10, integrated with Visual Studio 2015, on these operating systems: 
-<ul>
-    <li>Windows 10</li>
-    <li>Windows 8.1</li>
-    <li>Windows 8</li>
-    <li>Windows 7</li>
-</ul>
-You can use WDK 10 to develop drivers that run on these operating systems:
-<ul>
-    <li>Windows 10</li>
-    <li>Windows 8.1</li>
-    <li>Windows 8</li>
-    <li>Windows 7</li>
-    <li>Windows Server 2016 Technical Preview</li>
-    <li>Windows Server 2008 R2</li>
-</ul>
+WDK requires Visual Studio. For more information, see [Visual Studio 2017 System Requirements] (https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs).
+
+EWDK additionally requires .NET 4.6.1. For information about .NET requirements, see [.NET Framework system requirements](https://docs.microsoft.com/en-us/dotnet/framework/get-started/system-requirements). 
+
+You can use WDK Insider Preview and the EWDK Insider Preview to develop drivers that run on these operating systems:
+Client OS | Server OS
+--------- | ---------
+Windows 10 | Windows Server 2016
+Windows 8.1 | Windows Server 2012 R2
+Windows 8 | Windows Server 2012
+Windows 7 | Windows Server 2008 R2 SP1
