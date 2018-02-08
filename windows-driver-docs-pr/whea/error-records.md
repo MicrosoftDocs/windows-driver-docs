@@ -45,6 +45,7 @@ This error record section contains processor error data that is not specific to 
 
 <a href="" id="x86-x64-processor-error"></a>x86/x64 Processor Error  
 This error record section contains processor error data that is specific to the x86 or x64 processor architecture. The data that is contained in this section is described by the [**WHEA\_XPF\_PROCESSOR\_ERROR\_SECTION**](https://msdn.microsoft.com/library/windows/hardware/ff560655) structure. The following diagram shows how the data structures that contain the processor error data are stored in the VariableInfo member. 
+
 ![Processor error data](images\wheaxpfsection.gif)
 
 <a href="" id="itanium-processor-error"></a>Itanium Processor Error  
