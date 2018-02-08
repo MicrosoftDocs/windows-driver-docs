@@ -44,7 +44,8 @@ This error record section contains the hardware error packet that was passed to 
 This error record section contains processor error data that is not specific to a particular processor architecture. The data that is contained in this section is described by the [**WHEA\_PROCESSOR\_GENERIC\_ERROR\_SECTION**](https://msdn.microsoft.com/library/windows/hardware/ff560607) structure.
 
 <a href="" id="x86-x64-processor-error"></a>x86/x64 Processor Error  
-This error record section contains processor error data that is specific to the x86 or x64 processor architecture. The data that is contained in this section is described by the [**WHEA\_XPF\_PROCESSOR\_ERROR\_SECTION**](https://msdn.microsoft.com/library/windows/hardware/ff560655) structure.
+This error record section contains processor error data that is specific to the x86 or x64 processor architecture. The data that is contained in this section is described by the [**WHEA\_XPF\_PROCESSOR\_ERROR\_SECTION**](https://msdn.microsoft.com/library/windows/hardware/ff560655) structure. The following diagram shows how the data structures that contain the processor error data are stored in the VariableInfo member. 
+![Processor error data](images\wheaxpfsection.gif)
 
 <a href="" id="itanium-processor-error"></a>Itanium Processor Error  
 This error record section contains processor error data that is specific to the Itanium processor architecture. For more information about the format of the error data that is contained in this error record section, see the [Intel Itanium Processor Family System Abstraction Layer Specification](http://go.microsoft.com/fwlink/p/?linkid=72212).
