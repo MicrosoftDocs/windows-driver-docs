@@ -23,6 +23,18 @@ The vendor must choose the value of the Microsoft-defined command code. Microsof
 
 The vendor must communicate the chosen value through a method other than the controller. Microsoft does not specify how to get the chosen code.
 
+|HCI Commands|Description|
+|---|---|
+|[HCI_VS_MSFT_Read_Supported_Features](#hci-vs-msft-read-supported-features)| HCI_VS_MSFT_Read_Supported_Features provides a bitmap that describes which Microsoft-defined features the controller supports, and specifies the prefix for Microsoft-defined events that are returned by the controller.|
+|[HCI_VS_MSFT_Monitor_Rssi](#hci-vs-msft-monitor-rssi)| HCI_VS_MSFT_Monitor_Rssi requests that the controller starts monitoring the measured link RSSI for a specified connection, and generates an event when the connection's measured link RSSI goes outside of the specified bounds.|
+|[HCI_VS_MSFT_Cancel_Monitor_Rssi](#hci-vs-msft-cancel-monitor-rssi) |HCI_VS_MSFT_Cancel_Monitor_Rssi cancels a previously-issued HCI_VS_MSFT_Monitor_Rssi command.|
+|[HCI_VS_MSFT_LE_Monitor_Advertisement](#hci-vs-msft-le-monitor-advertisement) |HCI_VS_MSFT_LE_Monitor_Advertisement requests that the controller starts monitoring for advertisements that fall within the specified RSSI range and also satisfy other requirements.|
+|[HCI_VS_MSFT_LE_Cancel_Monitor_Advertisement](#hci-vs-msft-le_cancel-monitor-advertisement) |HCI_VS_MSFT_LE_Cancel_Monitor_Advertisement cancels a previously-issued HCI_VS_MSFT_LE_Monitor_Advertisement command.|
+[HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable](#hci-vs-msft-le-set-advertisement-filter-enable) |HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable sets the state of the advertisement filters.|
+|[HCI_VS_MSFT_Read_Absolute_RSSI](#hci_vs_msft_read_absolute_rssi)|HCI_VS_MSFT_Read_Absolute_RSSI reads the absolute Received Signal Strength Indication (RSSI) value for a BR/EDR connection from the controller.|
+ 
+
+
 ### Notifying Windows Bluetooth stack of the vendor specific command code
 The Windows Bluetooth stack reads the vendor-specific command code from a registry key.
 
@@ -92,7 +104,7 @@ The controller shall always complete this command promptly with a Command Comple
 
 | Value  |  Parameter description |
 |---|---|
-| 0x00000000&#160;00000001  | Controller supports the RSSI Monitoring feature for BR/EDR connections. In addition, the controller supports [**HCI_VS_MSFT_Read_Absolute_RSSI**](#hci_vs_msft_read_absolute_rssi) to read the absolute RSSI metric of a BR/EDR connection. |
+| 0x00000000&#160;00000001  | Controller supports the RSSI Monitoring feature for BR/EDR connections. In addition, the controller supports [HCI_VS_MSFT_Read_Absolute_RSSI](#hci_vs_msft_read_absolute_rssi) to read the absolute RSSI metric of a BR/EDR connection. |
 | 0x00000000&#160;00000002 | Controller supports the RSSI Monitoring feature for LE connections. |
 | 0x00000000&#160;00000002  |  Controller supports the RSSI Monitoring feature for LE connections. |
 | 0x00000000&#160;00000004  | Controller supports the RSSI Monitoring of LE advertisements. |
@@ -579,11 +591,16 @@ RSSI (1 octet):
 |N = RSSI value|The RSSI value for the BR/EDR connection.<ul><li>Range: -128 &lt;= _N_ &lt;= 127 (signed integer)</li><li>Unit: dBm</li>|</ul>|
 
 #### Events_generated__unless_masked_away
- 
+The controller shall generate a Command Complete event when the HCI_VS_MSFT_Read_Absolute_RSSI command has completed. 
 
 ## Microsoft-defined Bluetooth HCI events
 
 All Microsoft-defined Bluetooth HCI events are vendor-defined events and use event code 0xFF. The event data for Microsoft events always starts with a constant string of bytes to distinguish the Microsoft-defined events from other vendor-defined events. The length and value of the constant string are defined by the controller implementer and returned in response to [HCI_VS_MSFT_Read_Supported_Features](#hci-vs-msft-read-supported-features).
+
+|HCI event|Description|
+|---|---|
+|[HCI_VS_MSFT_Rssi_Event](#hci-vs-msft-rssi-event)|HCI_VS_MSFT_RSSI_Event indicates that an [HCI_VS_MSFT_Monitor_Rssi](#hci-vs-msft-monitor-rssi) command has completed.|
+|[HCI_VS_MSFT_LE_Monitor_Device_Event](#hci-vs-msft-le-monitor-device-event)|HCI_VS_MSFT_LE_Monitor_Device_Event indicates that the controller has either started or stopped monitoring a Bluetooth LE device.|
 
 ### HCI_VS_MSFT_RSSI_Event
 
