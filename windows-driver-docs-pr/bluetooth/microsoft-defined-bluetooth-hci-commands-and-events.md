@@ -200,7 +200,7 @@ The controller should do all necessary cleanup if connectivity with the specifie
 
 ### HCI_VS_MSFT_Cancel_Monitor_Rssi
 
-HCI_VS_MSFT_Cancel_Monitor_Rssi cancels a previously-issued [HCI_VS_MSFT_Monitor_Rssi](hci-vs-msft-monitor-rssi) command.
+HCI_VS_MSFT_Cancel_Monitor_Rssi cancels a previously-issued [HCI_VS_MSFT_Monitor_Rssi](#hci-vs-msft-monitor-rssi) command.
 The controller shall promptly generate a Command Completed event in response to this command.
 
 
@@ -587,7 +587,7 @@ All Microsoft-defined Bluetooth HCI events are vendor-defined events and use eve
 
 ### HCI_VS_MSFT_RSSI_Event
 
-HCI_VS_MSFT_RSSI_Event indicates that an [HCI_VS_MSFT_Monitor_Rssi](hci-vs-msft-monitor-rssi) command has completed.
+HCI_VS_MSFT_RSSI_Event indicates that an [HCI_VS_MSFT_Monitor_Rssi](#hci-vs-msft-monitor-rssi) command has completed.
 If the _Status_ parameter is zero, the command completed because the RSSI value for the remote device changed to a value outside of the specified range. If the _Status_ parameter is non-zero, the command completed because the RSSI value of the connection can no longer be monitored.
 
 
