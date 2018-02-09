@@ -188,7 +188,7 @@ The Object Manager checks ACLs for simple object types, such as events and mutex
 
 ### <span id="iomanchecks"></span><span id="IOMANCHECKS"></span>Security checks in the I/O Manager
 
-When the I/O Manager creates a handle, it checks the object’s rights against the process access token and then stores the rights granted to the user as part of the handle. When later I/O requests arrive, the I/O Manager checks the rights recorded in the handle to ensure that the process has the right to perform the requested I/O operation. For example, if the process later requests a write operation, the I/O Manager checks the rights in the handle to ensure that the caller has write access to the object.
+When the I/O Manager creates a handle, it checks the object’s rights against the process access token and then stores the rights granted to the user along with the handle. When later I/O requests arrive, the I/O Manager checks the rights associated with the handle to ensure that the process has the right to perform the requested I/O operation. For example, if the process later requests a write operation, the I/O Manager checks the rights associated with the handle to ensure that the caller has write access to the object. 
 
 If the handle is duplicated, rights can be removed from the copy, but not added to it.
 
@@ -207,6 +207,7 @@ To create a file, a process must have traversal rights to the parent directories
 
 The I/O Manager checks traversal rights when it parses the file name. If the file name is a symbolic link, the I/O Manager resolves it to a full path and then checks traversal rights, starting from the root. For example, assume the symbolic link \\DosDevices\\D maps to the Windows NT device name \\Device\\CDROM0. The process must have traversal rights to the \\Device directory.
 
+For more information, see [Object Handles](https://docs.microsoft.com/windows-hardware/drivers/kernel/object-handles) and [Object Security](https://docs.microsoft.com/windows-hardware/drivers/kernel/object-security).
 
 ### <span id="driver"></span><span id="DRIVER"></span>Security checks in the driver
 
