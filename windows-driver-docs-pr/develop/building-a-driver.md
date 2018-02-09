@@ -132,7 +132,7 @@ You can set properties for an individual driver or for an entire driver package.
 ## <span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting tip for building a driver
 
 
-The following tip can help you to troubleshoot problems when you use the WDK and Visual Studio to build drivers.
+The following tip can help you troubleshoot problems when you use the WDK and Visual Studio to build drivers.
 
 **To increase the verbosity of the build output using the options in Visual Studio**
 
