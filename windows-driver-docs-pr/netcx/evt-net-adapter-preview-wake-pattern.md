@@ -45,7 +45,7 @@ A handle to the net power settings object.
 An [**NDIS_PM_WOL_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff566766) enumeration value that specifies the type of the WOL packet.
 
 *PatternToBeAdded* [in]  
-A pointer to a structure of type [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) that specifies the wake-on-LAN (WOL) pattern to accept or reject.
+A pointer to a structure of type [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) that specifies the wake-on-LAN (WOL) pattern to accept or reject. The client driver can use the pointer to examine the [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) structure, but should *not* retain it.  NetAdapterCx will destroy the wake pattern structure once the driver's EvtNetAdapterPreviewWakePattern returns.
 
 Return value
 ------------
