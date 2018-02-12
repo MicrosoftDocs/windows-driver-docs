@@ -160,6 +160,7 @@
 ## [PnPUtil](pnputil.md)
 ### [PnPUtil Command Syntax](pnputil-command-syntax.md)
 ### [PnPUtil Examples](pnputil-examples.md)
+### [PnPUtil Return Values](pnputil-return-values.md)
 ## [PoolMon](poolmon.md)
 ### [PoolMon Overview](poolmon-overview.md)
 ### [PoolMon Requirements](poolmon-requirements.md)
