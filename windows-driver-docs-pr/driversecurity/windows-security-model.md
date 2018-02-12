@@ -210,7 +210,11 @@ The I/O Manager checks traversal rights when it parses the file name. If the fil
 
 ### <span id="driver"></span><span id="DRIVER"></span>Security checks in the driver
 
-The operating system kernel treats every driver, in effect, as a file system with its own namespace. Consequently, when a caller attempts to create an object in the device namespace, the I/O Manager checks that the process has traversal rights to the directories in the path. By default, however, the I/O Manager does not perform security checks against the namespace. The driver is responsible for ensuring the security of its namespace.
+The operating system kernel treats every driver, in effect, as a file system with its own namespace. Consequently, when a caller attempts to create an object in the device namespace, the I/O Manager checks that the process has traversal rights to the directories in the path. 
+
+With WDM drivers, the I/O Manager does not perform security checks against the namespace, unless the Device Object has been created specifying FILE_DEVICE_SECURE_OPEN.  When FILE_DEVICE_SECURE_OPEN is not set, the driver is responsible for ensuring the security of its namespace. For more information, see [Controlling Device Namespace Access](https://docs.microsoft.com/windows-hardware/drivers/kernel/controlling-device-namespace-access) and [Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects).
+
+For WDF drivers, the FILE_DEVICE_SECURE_OPEN flag is always set, so that there will be a check of the device's security descriptor before allowing an application to access any names within the device's namespace. For more information, see [Controlling Device Access in KMDF Drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/controlling-device-access-in-kmdf-drivers).
 
 
 
