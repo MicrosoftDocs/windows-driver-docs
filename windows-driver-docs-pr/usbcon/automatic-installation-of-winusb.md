@@ -39,43 +39,44 @@ In Windows 8, the in-box Winusb.inf file has been updated to enable Windows to 
 
 In Windows 8, the in-box Winusb.inf file has been updated. The INF includes an install section that references a compatible ID called "USB\\MS\_COMP\_WINUSB".
 
-` [Generic.Section.NTamd64]`
-
-`%USB\MS_COMP_WINUSB.DeviceDesc%=WINUSB,USB\MS_COMP_WINUSB `
+```
+[Generic.Section.NTamd64]
+%USB\MS_COMP_WINUSB.DeviceDesc%=WINUSB,USB\MS_COMP_WINUSB 
+```
 
 The updated INF also includes a new setup class called "USBDevice".
 
 The "USBDevice" setup class is available for those devices for which Microsoft does not provide an in-box driver. Typically, such devices do not belong to well-defined USB classes such as Audio, Bluetooth, and so on, and require a custom driver. If your device is a WinUSB device, most likely, the device does not belong to a USB class. Therefore, your device must be installed under "USBDevice" setup class. The updated Winusb.inf facilitates that requirement.
 
-**About using the USBDevice class:  **
+### About using the USBDevice class:
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Do not use the &quot;USB&quot; setup class for unclassified devices. That class is reserved for installing controllers, hubs, and composite devices. Misusing the &quot;USB&quot; class can lead to significant reliability and performance issues. For unclassified devices, use &quot;USBDevice&quot;.</p>
-<p>In Windows 8, to use &quot;USBDevice&quot; device class, simply add this to your INF.</p>
-<p>[Version]</p>
-<p>…</p>
-<p><code>[Version] </code></p>
-<p><code>Class=USBDevice </code></p>
-<p><code>ClassGuid={88BAE032-5A81-49f0-BC3D-A4FF138216D6}</code></p>
-<p>…</p>
-<p>In Device Manager you will see a new node <strong>USB Universal Serial Bus devices</strong> and your device appears under that node.</p>
-<p>In Windows 7, in addition to the preceding lines, you need to create these registry settings in the INF:</p>
-<p>;---------- Add Registry Section ----------</p>
-<p><code>[USBDeviceClassReg] </code></p>
-<p><code>HKR,,,,&quot;Universal Serial Bus devices&quot;</code></p>
-<p><code>HKR,,NoInstallClass,,1</code></p>
-<p><code>HKR,,SilentInstall,,1  </code></p>
-<p><code>HKR,,IconPath,%REG_MULTI_SZ%,&quot; %systemroot%\system32\setupapi.dll,-20&quot;</code></p>
-<p>In Device Manager, you will see your device appear under <strong>USB Universal Serial Bus devices</strong>. However, the device class description is derived from the registry setting specified in your INF.</p>
-<p><em>-Eliyas Yakub, Microsoft Windows USB Core Team</em></p></td>
-</tr>
-</tbody>
-</table>
+Do not use the &quot;USB&quot; setup class for unclassified devices. That class is reserved for installing controllers, hubs, and composite devices. Misusing the &quot;USB&quot; class can lead to significant reliability and performance issues. For unclassified devices, use &quot;USBDevice&quot;.
+
+In Windows 8, to use &quot;USBDevice&quot; device class, simply add this to your INF:
+
+```
+  …
+  [Version] 
+  Class=USBDevice 
+  ClassGuid={88BAE032-5A81-49f0-BC3D-A4FF138216D6}
+  …
+```
+
+In Device Manager you will see a new node **USB Universal Serial Bus devices** and your device appears under that node.
+<p>In Windows 7, in addition to the preceding lines, you need to create these registry settings in the INF:
+
+```
+  ;---------- Add Registry Section ----------
+  [USBDeviceClassReg] 
+  HKR,,,,"Universal Serial Bus devices"
+  HKR,,NoInstallClass,,1
+  HKR,,SilentInstall,,1 
+  HKR,,IconPath,%REG_MULTI_SZ%,"%systemroot%\system32\setupapi.dll,-20"
+```
+
+In Device Manager, you will see your device appear under **USB Universal Serial Bus devices**. However, the device class description is derived from the registry setting specified in your INF.
+
+*-Eliyas Yakub, Microsoft Windows USB Core Team*
 
  
 
