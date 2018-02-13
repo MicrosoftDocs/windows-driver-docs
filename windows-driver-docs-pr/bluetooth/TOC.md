@@ -24,6 +24,7 @@
 ### [Bluetooth Version and Profile Support in Windows 10](general-bluetooth-support-in-windows.md)
 ### [Bluetooth Version and Profile Support in Previous Windows Versions](bluetooth-support-in-previous-windows-versions.md)
 ### [Bluetooth Host Radio Support](bluetooth-host-radio-support.md)
+### [Bluetooth Software Radio Switch Function Prototypes](bluetooth-software-radio-switch-function-prototypes.md)
 ### [Bluetooth User Interface](bluetooth-user-interface.md)
 ### [Bluetooth Certification](bluetooth-certification.md)
 ### [Appendix A: How to Install an In-Box Bluetooth Driver on New Hardware in Windows Vista](bluetooth-faq--appendix-a.md)
