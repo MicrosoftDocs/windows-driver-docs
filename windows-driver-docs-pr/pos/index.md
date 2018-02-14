@@ -4,7 +4,7 @@ author: windows-driver-content
 description: This section provides design guidance for point-of-service (POS) device drivers.
 ms.assetid: D00B2CDF-C5CB-4CB5-A6AE-ECDE52B7603B
 ms.author: windowsdriverdev
-ms.date: 01/24/2018
+ms.date: 02/14/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -20,6 +20,7 @@ This section provides driver design guidance for point-of-service (POS) devices.
 | Topic | Description |
 | --- | --- |
 | [POS driver samples](driver-samples.md) | Provides samples that demonstrate how to create universal drivers for point-of-service (POS) devices. |
+| [Barcode scanner Bluetooth service UUIDs](barcode-scanner-bluetooth-service-uuids.md) | Describes UUIDs for use with the Bluetooth Service Discovery Protocol (SDP) for barcode scanners. |
 
 ## Related sections
 
