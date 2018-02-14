@@ -21,13 +21,11 @@ This topic introduces version 1.2 of the WDF Network Adapter Class Extension (Ne
 
 
 
-## API and data structure changes
+## New APIs and data structures
 
-### New APIs and data structures
+The following APIs and data structures are new in NetAdapterCx 1.2. They are grouped according to the new feature they support.
 
-The following APIs and data structures are new in NetAdapterCx 1.1. They are grouped according to the new feature they support.
-
-#### Packet extensions
+### Packet extensions
 
 - NetPacketExtension
 - NET_PACKET_EXTENSION
@@ -37,7 +35,7 @@ The following APIs and data structures are new in NetAdapterCx 1.1. They are gro
 - NetRxQueueGetPacketExtensionOffset
 - NetTxQueueGetPacketExtensionOffset
 
-#### Offloads
+### Offloads
 
 - NetPacketGetPacketChecksum
 - NetPacketGetPacketLargeSendSegmentation
@@ -45,7 +43,7 @@ The following APIs and data structures are new in NetAdapterCx 1.1. They are gro
 - NET_PACKET_LARGE_SEND_SEGMENTATION
 - NET_PACKET_RECEIVE_SEGMENT_COALESCENCE
 
-#### Multi-level ring buffer
+### Multi-level ring buffer
 
 - NetRingBufferReturnAllPackets
 - NetPacketGetFragmentCount
@@ -55,12 +53,12 @@ The following APIs and data structures are new in NetAdapterCx 1.1. They are gro
 - NET_DATAPATH_DESCRIPTOR
 - NET_DATAPATH_RING_BUFFER_INDEX
 
-#### Multiple NetAdapter objects per device
+### Multiple NetAdapter objects per device
 
 - NetAdapterStart
 - NetAdapterStop
 
-#### Buffer Manager
+### Buffer Manager
 
 - NET_ADAPTER_DMA_CAPABILITIES
 - NET_ADAPTER_DMA_CAPABILITIES_INIT
@@ -75,7 +73,7 @@ The following APIs and data structures are new in NetAdapterCx 1.1. They are gro
 - NET_ADAPTER_TX_CAPABILITIES_INIT
 - NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA
 
-#### NetAdapter RSS
+### NetAdapter RSS
 
 - NetAdapterGetReceiveScalingHashSecretKey
 - NetAdapterGetReceiveScalingHashType
@@ -97,7 +95,7 @@ The following APIs and data structures are new in NetAdapterCx 1.1. They are gro
 - NET_ADAPTER_RECEIVE_SCALING_PROTOCOL_TYPE
 - NET_ADAPTER_RECEIVE_SCALING_UNHASHED_TARGET_TYPE
 
-#### Other new APIs and data structures
+### Other new APIs and data structures
 
 - SIZE_T
 - NetRequestGetAdapter
@@ -105,13 +103,37 @@ The following APIs and data structures are new in NetAdapterCx 1.1. They are gro
 - NetPacketIsIpv4
 - NetPacketIsIpv6
 
-### Updated APIs and data structures
+## Updated APIs and data structures
 
-The following APIs and data structures were updated in NetAdapterCx 1.1. Like the [new APIs and data structures](#new-apis-and-data-structures), they are grouped according to the feature they support.
+The following APIs and data structures were updated in NetAdapterCx 1.2.
 
-#### Buffer Manager
+- [NetAdapterSetDataPathCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetdatapathcapabilities)
+- [NET_ADAPTER_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_config)
+- [NetPacketGetContextFromToken]((https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-netpacketgetcontextfromtoken)
+- [NetPacketGetTypedContext](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-netpacketgettypedcontext)
+- [NET_PACKET](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet)
+- [NET_PACKET_FRAGMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_fragment)
+- [NET_RXQUEUE_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/ns-netrxqueue-_net_rxqueue_config)
+- [NET_TXQUEUE_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/ns-nettxqueue-_net_txqueue_config)
 
-- [NetAdapterSetDataPathCapabilities](netadaptersetdatapathcapabilities.md)
+## Removed APIs and data structures
+
+The following APIs and data structures were removed in NetAdapterCx 1.2. Their reference topics are no longer available. Instructions for which new or updated APIs or data structures to use instead are provided.
+
+- NET_ADAPTER_DATAPATH_CAPABILITIES
+- NET_ADAPTER_DATAPATH_CAPABILITIES_INIT
+    - TBD
+- NET_RXQUEUE_DMA_ALLOCATOR_CONFIG
+- NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT
+- NetRxQueueInitSetDmaAllocatorConfig
+- NetRxQueueQueryAllocatorCacheEnabled
+    - TBD
+- NetRxQueueGetBufferLayoutHint
+    - TBD
+- NetRxQueueGetRingBuffer
+    - TBD
+- NetTxQueueGetRingBuffer
+    - TBD
 
 ## Compiling a NetAdapterCx 1.2 client driver
 
