@@ -3,7 +3,7 @@ title: minipkd.req
 description: The minipkd.req extension displays information about all of the currently active requests on the specified adapter or device.
 ms.assetid: 5edc00dd-9a0b-4576-a3ec-11ce22163e95
 keywords: ["minipkd.req Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

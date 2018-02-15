@@ -3,7 +3,7 @@ title: Advanced Remote Debugging Scenarios
 description: Advanced Remote Debugging Scenarios
 ms.assetid: 9f0e3b01-9ec2-44aa-a6bf-0216ed5aaaa8
 keywords: ["remote debugging, advanced"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

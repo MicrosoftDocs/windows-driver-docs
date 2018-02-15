@@ -3,7 +3,7 @@ title: wdfkd.wdfusbdevice
 description: The wdfkd.wdfusbdevice extension displays information about a specified KMDF USB device object, incuding all USB interfaces and the pipes that are configured.
 ms.assetid: 94e0a4ef-36a6-4a37-ac4a-5a2ee2678b9a
 keywords: ["wdfkd.wdfusbdevice Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: stl
 description: The stl extension displays some of the known Standard Template Library (STL) templates.
 ms.assetid: a1f1f923-64bd-44c9-941f-9a648888c7e0
 keywords: ["stl Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

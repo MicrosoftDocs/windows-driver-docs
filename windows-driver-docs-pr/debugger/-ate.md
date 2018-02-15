@@ -3,7 +3,7 @@ title: ate
 description: The ate extension displays the alternate page table entry (ATE) for the specified address.
 ms.assetid: 8ec98fa5-4939-49cb-8678-e412b9cbe7e3
 keywords: ["ate Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

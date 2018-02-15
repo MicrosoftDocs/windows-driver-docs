@@ -20,7 +20,7 @@ This section lists and describes the warnings that the Code Analysis for Drivers
 
 Code Analysis for Drivers reports the following types of warnings:
 
--   **General Warnings** (6000-6999): Potential errors in C and C++ syntax and general coding practice. For a description of these warnings, see [Code Analysis for C/C++ Warnings](http://go.microsoft.com/fwlink/p/?linkid=232389).
+-   **General Warnings** (6000-6999): Potential errors in C and C++ syntax and general coding practice. For a description of these warnings, see [Code Analysis for C/C++ Warnings](/visualstudio/code-quality/code-analysis-for-c-cpp-warnings).
 
 -   **Windows Specific Warnings** (28600-28799): These warnings are specific to certain patterns of use in Windows, but are not specific to drivers.
 

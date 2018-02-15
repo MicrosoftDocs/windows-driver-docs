@@ -4,16 +4,13 @@ author: windows-driver-content
 description: Building, Troubleshooting and Debugging WIA Minidrivers
 ms.assetid: ed1e5809-aa4a-47d3-9673-eb6b63a034af
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 01/24/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
 # Building, Troubleshooting and Debugging WIA Minidrivers
-
-
-## <a href="" id="ddk-building-troubleshooting-and-debugging-wia-minidrivers-si"></a>
 
 
 This section discusses the basic build environment needed for WIA driver development, WIA minidriver troubleshooting, and WIA minidriver debugging. The following topics are covered:

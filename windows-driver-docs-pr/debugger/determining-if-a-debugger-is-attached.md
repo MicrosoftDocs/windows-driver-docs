@@ -3,7 +3,7 @@ title: Determining if a Debugger is Attached
 description: Determining if a Debugger is Attached
 ms.assetid: 78f7d90a-459c-4967-a980-3f8d6339eb77
 keywords: ["determining if a debugger is attached", "KdRefreshDebuggerNotPresent function", "KD_DEBUGGER_ENABLED global variable", "KD_DEBUGGER_NOT_PRESENT global variable"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

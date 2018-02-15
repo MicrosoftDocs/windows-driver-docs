@@ -3,7 +3,7 @@ title: .enable_long_status (Enable Long Integer Display)
 description: The .enable_long_status command specifies whether the debugger displays long integers in decimal format or in the default radix.
 ms.assetid: e08f5a40-5246-4120-ae43-37e876269463
 keywords: ["Enable Long Integer Display (.enable_long_status) command", ".enable_long_status (Enable Long Integer Display) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

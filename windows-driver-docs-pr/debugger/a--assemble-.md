@@ -3,7 +3,7 @@ title: a (Assemble)
 description: The a command assembles 32-bit x86 instruction mnemonics and puts the resulting instruction codes into memory.
 ms.assetid: 6736a5fd-5a33-4698-9510-8a95f6a1caf7
 keywords: ["Assemble (a) command", "assembly debugging, Assemble (a) command", "a (Assemble) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

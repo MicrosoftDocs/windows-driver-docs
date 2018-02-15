@@ -2,7 +2,7 @@
 title: Modifying the Source Indexing Streams in a .pdb File
 description: Modifying the Source Indexing Streams in a .pdb File
 ms.assetid: 9c319667-fc71-4baf-ad12-a20e18b67d40
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Debugger Commands
 description: Debugger Commands
 ms.assetid: b38ba11d-27a5-462f-a2fb-df56576ec377
 keywords: ["debugger commands, reference", "debugger commands, complete listing"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

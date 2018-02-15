@@ -3,7 +3,7 @@ title: Debugging Optimized Code and Inline Functions
 description: For Windows 8, the debugger and the Windows compiler have been enhanced so that you can debug optimized code and debug inline functions.
 ms.assetid: C7BE6B8E-9CF2-471C-A4F9-931C71CCC0FE
 keywords: ["debug optimized code", "debug inline functions"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

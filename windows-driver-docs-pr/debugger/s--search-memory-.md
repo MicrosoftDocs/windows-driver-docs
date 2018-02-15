@@ -3,7 +3,7 @@ title: s (Search Memory)
 description: The s command searches through memory to find a specific byte pattern.
 ms.assetid: fdca07c3-95c8-46cf-8da1-07a5e6767f67
 keywords: ["s (Search Memory) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: ppmidle
 description: The ppmidle command
 ms.assetid: 40037C2E-DE68-42BB-AFEB-C012F042082D
 keywords: ["ppmidle Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

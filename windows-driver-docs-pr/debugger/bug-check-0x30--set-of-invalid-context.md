@@ -3,7 +3,7 @@ title: Bug Check 0x30 SET_OF_INVALID_CONTEXT
 description: The SET_OF_INVALID_CONTEXT bug check has a value of 0x00000030. This indicates that the stack pointer in a trap frame had an invalid value.
 ms.assetid: 77e86390-e387-4ffd-96dd-c32a98939c3a
 keywords: ["Bug Check 0x30 SET_OF_INVALID_CONTEXT", "SET_OF_INVALID_CONTEXT"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

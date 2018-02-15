@@ -3,7 +3,7 @@ title: Edit Go to Address
 description: Edit Go to Address
 ms.assetid: 152bdbb1-87e5-4a73-a1b7-1c4997f4a41c
 keywords: ["Edit Go to Address"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

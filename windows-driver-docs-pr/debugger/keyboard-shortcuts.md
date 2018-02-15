@@ -3,7 +3,7 @@ title: Keyboard Shortcuts
 description: Keyboard Shortcuts
 ms.assetid: 57c16d54-5b7a-4de8-9798-790aac7ec30d
 keywords: ["control keys, WinDbg shortcut keys", "WinDbg, shortcut keys", "shortcut keys"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

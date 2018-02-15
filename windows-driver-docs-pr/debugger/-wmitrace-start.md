@@ -3,7 +3,7 @@ title: wmitrace.start
 description: The wmitrace.start extension starts the Event Tracing for Windows (ETW) logger on the target computer.
 ms.assetid: 52ed0c5a-6ca9-4890-bae5-54394bc43d51
 keywords: ["wmitrace.start Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

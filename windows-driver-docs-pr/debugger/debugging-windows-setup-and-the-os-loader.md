@@ -3,7 +3,7 @@ title: Debugging Windows Setup and the OS Loader
 description: Debugging Windows Setup and the OS Loader
 ms.assetid: 5195b1c5-2478-4faf-8f1e-ed5341d39ac4
 keywords: ["Windows setup debugging", "OS Loader debugging", "setup debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

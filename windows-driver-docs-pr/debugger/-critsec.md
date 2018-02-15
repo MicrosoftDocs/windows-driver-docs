@@ -3,7 +3,7 @@ title: critsec
 description: The critsec extension displays a critical section.
 ms.assetid: 7e30efd5-2bdc-420c-b3ed-504280ddd8f7
 keywords: ["critsec Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

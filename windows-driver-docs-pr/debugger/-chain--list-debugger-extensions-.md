@@ -3,7 +3,7 @@ title: .chain (List Debugger Extensions)
 description: The .chain command lists all loaded debugger extensions in their default search order.
 ms.assetid: 73139b02-265a-424d-9de8-f4f3736e62db
 keywords: [".chain (List Debugger Extensions) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

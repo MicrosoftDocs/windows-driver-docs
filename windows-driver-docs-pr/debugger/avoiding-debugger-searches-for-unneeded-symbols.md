@@ -2,7 +2,7 @@
 title: Avoiding debugger searches for unneeded symbols
 description: Why does symbol loading sometimes take so long? That depends on whether the symbol name is qualified or unqualified.
 ms.assetid: 710BAEAF-BC45-416E-8359-69E9DFCA2570
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Firewalls and Proxy Servers
 description: Firewalls and Proxy Servers
 ms.assetid: 6b438602-299e-4cc5-ac75-ac9ee3cb50bb
 keywords: ["SymSrv, firewalls and proxy servers", "firewalls and SymSrv", "internet firewalls and SymSrv", "proxy servers and SymSrv"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

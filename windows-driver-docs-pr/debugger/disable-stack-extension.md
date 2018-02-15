@@ -3,7 +3,7 @@ title: Disable stack extension
 description: Disable stack extension
 ms.assetid: e4c95103-4f98-4f79-a46c-c8040e39791b
 keywords: ["Disable stack extension (global flag)"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

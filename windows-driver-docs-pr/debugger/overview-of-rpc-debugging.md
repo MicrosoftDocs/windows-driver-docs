@@ -3,7 +3,7 @@ title: Overview of RPC Debugging
 description: Overview of RPC Debugging
 ms.assetid: 21db61fe-a4a1-45d3-9026-f58aecd3a3bc
 keywords: ["RPC debugging, overview", "remote procedure call (RPC)"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

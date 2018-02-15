@@ -3,7 +3,7 @@ title: .thread (Set Register Context)
 description: The .thread command specifies which thread will be used for the register context.
 ms.assetid: 577276b7-a6c4-427e-ada1-10dbb62ebd5c
 keywords: ["Set Register Context (.thread) command", "context, Set Register Context (.thread) command", "registers, Set Register Context (.thread) command", "call stack, Set Register Context (.thread) command", ".thread (Set Register Context) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: PDBCopy
 description: PDBCopy
 ms.assetid: 9f250b0a-597e-4ca2-8e73-306626358bc9
 keywords: ["PDBCopy", "PDBCopy, overview", "symbols, PDBCopy"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

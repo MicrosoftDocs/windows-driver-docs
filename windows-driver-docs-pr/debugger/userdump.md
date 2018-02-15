@@ -3,7 +3,7 @@ title: UserDump
 description: UserDump
 ms.assetid: cbc3d75f-e298-4cbc-a44f-bc019afff27a
 keywords: ["dump file, UserDump", "UserDump", "OEM Support Tools, UserDump", "User Mode Process Dump tool (UserDump)"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: rpcexts.getcallinfo
 description: The rpcexts.getcallinfo extension searches the system's RPC state information for server-side call (SCALL) information.
 ms.assetid: 85957afe-f73e-4533-af5c-5ee55b35ac84
 keywords: ["rpcexts.getcallinfo Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

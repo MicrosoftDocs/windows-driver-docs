@@ -3,7 +3,7 @@ title: ld (Load Symbols)
 description: The ld command loads symbols for the specified module and updates all module information.
 ms.assetid: 1dae519f-8dd1-4f30-98f4-fe904454c84c
 keywords: ["ld (Load Symbols) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

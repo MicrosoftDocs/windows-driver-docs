@@ -3,7 +3,7 @@ title: bp, bu, bm (Set Breakpoint)
 description: The bp, bu, and bm commands set one or more software breakpoints. You can combine locations, conditions, and options to set different kinds of software breakpoints.
 ms.assetid: 77d095fe-06d1-4842-ad49-8420ab4d5d72
 keywords: ["bp, bu, bm (Set Breakpoint) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

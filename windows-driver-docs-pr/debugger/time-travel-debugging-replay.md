@@ -1,7 +1,7 @@
 ---
 title: Time Travel Debugging - Replay a trace
 description: This section describes how to replay time travel traces.
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 09/22/2017
 ms.topic: article
 ms.prod: windows-hardware

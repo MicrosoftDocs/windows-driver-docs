@@ -3,7 +3,7 @@ title: up (Unassemble from Physical Memory)
 description: The up command displays an assembly translation of the specified program code in physical memory.
 ms.assetid: 4db66566-b7b8-4f1e-9492-b4b78016b45a
 keywords: ["up (Unassemble from Physical Memory) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

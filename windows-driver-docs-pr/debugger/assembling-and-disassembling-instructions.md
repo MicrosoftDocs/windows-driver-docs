@@ -3,7 +3,7 @@ title: Assembling and Disassembling Instructions
 description: Assembling and Disassembling Instructions
 ms.assetid: 7681bea1-4d4e-4260-950d-69cb8feb3807
 keywords: ["Debugger Engine API, assembling and disassembling"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

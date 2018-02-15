@@ -3,7 +3,7 @@ title: .kill (Kill Process)
 description: In user mode, the .kill command ends a process that is being debugged.
 ms.assetid: e4bc13e4-2566-4438-9ae7-a5ba05b727de
 keywords: [".kill (Kill Process) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

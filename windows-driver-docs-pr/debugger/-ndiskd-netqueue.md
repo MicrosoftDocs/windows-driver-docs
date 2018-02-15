@@ -3,7 +3,7 @@ title: ndiskd.netqueue
 description: The ndiskd.netqueue extension displays information about a NETTXQUEUE or NETRXQUEUE object.
 ms.assetid: 101F29AA-5CEE-41F8-A3EC-AA2E74B8E074
 keywords: ["ndiskd.netqueue Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

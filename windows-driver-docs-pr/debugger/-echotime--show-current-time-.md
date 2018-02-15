@@ -3,7 +3,7 @@ title: .echotime (Show Current Time)
 description: The .echotime command displays the current time.
 ms.assetid: 08da8914-0882-4525-8e15-e23176484915
 keywords: [".echotime (Show Current Time) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

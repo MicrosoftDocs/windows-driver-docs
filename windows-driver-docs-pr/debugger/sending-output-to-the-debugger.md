@@ -3,7 +3,7 @@ title: Sending Output to the Debugger
 description: Sending Output to the Debugger
 ms.assetid: e0640e70-9846-4239-a3ff-b78788751384
 keywords: ["sending output to the debugger", "OutputDebugString function", "DbgPrint function", "DbgPrintEx function", "KdPrint function", "KdPrintEx function"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

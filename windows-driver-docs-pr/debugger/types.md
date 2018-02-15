@@ -3,7 +3,7 @@ title: Types
 description: Types
 ms.assetid: 234f4f36-ccd3-426a-a361-33727e9ece5a
 keywords: ["symbols, types", "types"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

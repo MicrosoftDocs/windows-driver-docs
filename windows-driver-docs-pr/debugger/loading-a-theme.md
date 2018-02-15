@@ -3,7 +3,7 @@ title: Loading a Theme
 description: Loading a Theme
 ms.assetid: 375b7365-6526-4282-893e-91b58a14c31f
 keywords: ["themes, loading"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

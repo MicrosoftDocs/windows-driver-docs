@@ -3,7 +3,7 @@ title: Exporting LogViewer Files to Text
 description: Exporting LogViewer Files to Text
 ms.assetid: b014dc23-ca6e-4563-aa8d-f4dd19c89f80
 keywords: ["LogViewer, exporting files to text"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

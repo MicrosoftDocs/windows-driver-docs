@@ -3,7 +3,7 @@ title: fpsearch
 description: The fpsearch extension searches the freed special pool for a specified address.
 ms.assetid: 70375723-7156-47ec-b6e1-b3c51b5caaf9
 keywords: ["special pool", "fpsearch Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

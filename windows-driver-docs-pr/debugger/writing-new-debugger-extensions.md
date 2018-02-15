@@ -3,7 +3,7 @@ title: Writing New Debugger Extensions
 description: Writing New Debugger Extensions
 ms.assetid: 6a0d3478-1c7a-44e0-8e48-1334de228c64
 keywords: ["extension commands ( commands), writing extensions", "writing extension commands", "dbgeng.h header file, writing extension commands", "wdbgexts.h header file, writing extension commands"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

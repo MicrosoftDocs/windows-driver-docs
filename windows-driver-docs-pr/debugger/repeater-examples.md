@@ -3,7 +3,7 @@ title: Repeater Examples
 description: Repeater Examples
 ms.assetid: 83aff647-65a7-409f-adce-254305395775
 keywords: ["repeater, examples"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

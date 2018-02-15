@@ -3,7 +3,7 @@ title: p (Step)
 description: The p command executes a single instruction or source line and optionally displays the resulting values of all registers and flags. 
 ms.assetid: 4ee24e76-b751-4346-80af-d481d9513ce0
 keywords: ["p (Step) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Example 2 Setting a Flag by Using a Flag Abbreviation
 description: Example 2 Setting a Flag by Using a Flag Abbreviation
 ms.assetid: 3c011ca5-8901-4bf2-b95d-364d644cb476
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware

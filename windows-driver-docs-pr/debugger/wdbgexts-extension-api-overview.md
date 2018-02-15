@@ -3,7 +3,7 @@ title: WdbgExts Extension API Overview
 description: WdbgExts Extension API Overview
 ms.assetid: e54d330f-ab48-407f-a9f2-e4a521f5e27b
 keywords: ["WdbgExts extensions, overview"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

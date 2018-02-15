@@ -3,7 +3,7 @@ title: gdikdx.verifier
 description: The gdikdx.verifier extension displays the status of Driver Verifier during the verification of a graphics driver.
 ms.assetid: a7e189bb-ed63-4da3-ab7a-bf502ec131ed
 keywords: ["gdikdx.verifier Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

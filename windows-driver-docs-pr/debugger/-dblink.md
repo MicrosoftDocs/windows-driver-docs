@@ -3,7 +3,7 @@ title: dblink
 description: The dblink extension displays a linked list in the backward direction.
 ms.assetid: d57b07a6-217b-475e-adf5-7dc0f972c494
 keywords: ["dblink Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

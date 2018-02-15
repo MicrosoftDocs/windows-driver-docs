@@ -3,7 +3,7 @@ title: SCSI Miniport Debugging
 description: SCSI Miniport Debugging
 ms.assetid: 6d1e9931-aab5-4f9b-940f-86d4fcb63dcb
 keywords: ["SCSI Miniport debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

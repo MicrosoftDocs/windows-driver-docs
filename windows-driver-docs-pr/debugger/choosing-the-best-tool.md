@@ -3,7 +3,7 @@ title: Choosing the Best Tool
 description: Choosing the Best Tool
 ms.assetid: 08021932-930b-4998-b651-9581df9345b3
 keywords: ["dump file, user-mode creation tools"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

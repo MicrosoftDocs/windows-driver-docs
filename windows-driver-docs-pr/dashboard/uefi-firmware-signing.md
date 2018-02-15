@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # UEFI Firmware Signing
 
 
-UEFI signing is a service provided by the Dashboard that lets you to sign UEFI firmware binaries targeted to x86 or x64 computers, so they can be installed on Windows PCs.
+UEFI signing is a service provided by the Sysdev Legacy Dashboard that lets you to sign UEFI firmware binaries targeted to x86 or x64 computers, so they can be installed on Windows PCs.
 
 ## <span id="To_submit_your_firmware"></span><span id="to_submit_your_firmware"></span><span id="TO_SUBMIT_YOUR_FIRMWARE"></span>To submit your firmware
 

@@ -3,7 +3,7 @@ title: dlls
 description: The dlls extension displays the table entries of all loaded modules or all modules that a specified thread or process are using.
 ms.assetid: a47ec828-ba5a-4f0d-be85-18633c4e4185
 keywords: ["DLL table entry", "dlls Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

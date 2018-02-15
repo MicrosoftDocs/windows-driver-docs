@@ -3,7 +3,7 @@ title: wdfkd.wdfdriverinfo
 description: The wdfkd.wdfdriverinfo extension displays information about the specified driver, including its device tree, and version information.
 ms.assetid: dc758fd3-1226-46e3-b249-2cf37ef3e539
 keywords: ["wdfkd.wdfdriverinfo Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

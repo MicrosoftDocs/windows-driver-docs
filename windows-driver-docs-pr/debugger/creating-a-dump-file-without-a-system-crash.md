@@ -3,7 +3,7 @@ title: Creating a Dump File Without a System Crash
 description: Creating a Dump File Without a System Crash
 ms.assetid: 747194d0-0aac-487a-acdc-ff27721606d4
 keywords: ["dump file, creating without a system crash"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

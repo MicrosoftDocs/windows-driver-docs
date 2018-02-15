@@ -3,7 +3,7 @@ title: minipkd.lun
 description: The minipkd.lun extension displays detailed information about the specified Logical Unit Extension (LUN).
 ms.assetid: f78b2c15-ecfc-4138-b595-a6e3f0f7f93c
 keywords: ["minipkd.lun Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

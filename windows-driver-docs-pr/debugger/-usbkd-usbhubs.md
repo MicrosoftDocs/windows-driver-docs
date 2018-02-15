@@ -3,7 +3,7 @@ title: usbkd.usbhubs
 description: The usbkd.usbhubs command displays information about USB hubs.
 ms.assetid: 88642A67-5105-45A4-8374-7E4D01FFAEB6
 keywords: ["usbkd.usbhubs Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

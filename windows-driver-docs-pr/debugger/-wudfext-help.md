@@ -3,7 +3,7 @@ title: wudfext.help
 description: The wudfext.help extension displays all Wudfext.dll extension commands.
 ms.assetid: b81ffdae-8178-4e98-b8d8-50fee7b511c9
 keywords: ["wudfext.help Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

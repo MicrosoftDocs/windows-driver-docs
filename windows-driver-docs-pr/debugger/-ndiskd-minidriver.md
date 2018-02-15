@@ -3,7 +3,7 @@ title: ndiskd.minidriver
 description: The ndiskd.minidriver command displays information about an NDIS miniport driver. 
 ms.assetid: CD349B10-8363-4D48-A830-CC9EF5EA75BF
 keywords: ["ndiskd.minidriver Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

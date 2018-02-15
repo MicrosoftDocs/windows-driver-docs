@@ -3,7 +3,7 @@ title: .exr (Display Exception Record)
 description: The .exr command displays the contents of an exception record.
 ms.assetid: 786d7ee0-45d7-489c-b53b-28349ea10e36
 keywords: ["Display Exception Record (.exr) command", "exception record", ".exr (Display Exception Record) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
