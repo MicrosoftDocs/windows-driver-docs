@@ -1,0 +1,85 @@
+---
+title: Debugging ARM64
+description: Debugging ARM64
+keywords: ["Debugging ARM64", "Debugging", "ARM64"]
+ms.author: domars
+ms.date: 02/15/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+---
+
+# Debugging on ARM64
+
+This topic describes debugging Windows 10 on ARM Processors. For general information about Windows 10 on ARM, see 
+[Windows 10 desktop on ARM64](https://docs.microsoft.com/windows/uwp/porting/apps-on-arm).
+
+In general, developers debugging user mode apps should use the version of the debugger that matches the architecture of the target app. Use the ARM64 version of WinDbg to debug user mode ARM64 applications and use the ARM version of WinDbg to debug user mode ARM32 applications. Use the x86 version of WinDbg to debug user mode x86 applications running on ARM64 processors.  
+
+In rare cases where you need to debug system code – such as WOW64 or CHPE – you can use the ARM64 version of WinDbg. If you are debugging the ARM64 kernel from another machine, use the version of WinDbg that matches the architecture of that other machine.  
+
+
+## Getting ARM  Debugging Tools for Windows 
+
+You can get debugging tools for ARM64 by downloading the [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) (version 10.0.16299 or later).  During the installation, select the *Debugging Tools for Windows* box. 
+
+The debugging tools are located in the `Debuggers` folder in the kit installation directory.  The x86 tools are under `Debuggers\x86`, the ARM32 tools are under `Debuggers\ARM`, and the ARM64 tools are under `Debuggers\ARM64`. 
+
+## Debugging ARM64 Code
+
+ARM64 WinDbg is required to debug ARM64 code. The debugging experience is similar to debugging x86 applications with x86 WinDbg on x86 Windows, except for the following differences. 
+
+- There are 32 general purpose registers - x0 to x28 and fp, lr, sp. 
+- Program counter register, pc, is not a general purpose register. 
+- All general purpose registers and pc register are 64-bit in width. 
+- At most 2 active data breakpoints for execution and 2 active data breakpoints for read/write memory. For more information, see [Processor Breakpoints](https://docs.microsoft.com/windows-hardware/drivers/debugger/processor-breakpoints---ba-breakpoints-). 
+
+
+## Debugging x86 User Mode Code 
+
+In the rare cases that you need to use ARM64 WinDbg to debug your x86 user mode code, you can use the following WinDbg commands to switch between contexts: 
+
+- .effmach x86: Switch to and see x86 context, simulating the effect of using x86 WinDbg. 
+- .effmach arm64: Switch to and see ARM64 context 
+- .effmach chpe: Switch to and see CHPE context. 
+
+For more information about the .effmach, see [.effmach (Effective Machine)](-effmach--effective-machine-.md).
+
+When debugging x86 apps in user mode, regardless of which WinDbg version you are using, be aware of these considerations.
+
+- If a thread is not being actively debugged (e.g. single-stepped, encountered a breakpoint), not reporting an exception, and not in a system call, the register context may not be up-to-date. 
+- The emulator internally generates Data misaligned, Illegal instruction, In-page I/O error exceptions and handles the ones it generates. When you are using WinDbg, consider configuring these exceptions as *Ignored* under the Debug / Event Filters… menu item.  
+- If using ARM64 WinDbg in user mode, single-stepping across x86 & CHPE function boundaries is not supported. To work around this, set breakpoints on the target code. 
+
+For general information about ARM64 and WOW64 see [Running 32-bit Applications](https://msdn.microsoft.com/library/windows/desktop/aa384249.aspx) in the 64-bit Windows programming guide. 
+
+For information on debugging applications running under WOW64, see [Debugging WOW64](https://msdn.microsoft.com/library/windows/desktop/aa384163.aspx).
+
+
+
+## Debugging in Visual Studio 
+
+Visual Studio 15.5 Preview 1 and later supports running ARM32 apps using Universal Authentication mode. This will automatically bootstrap the necessary ARM64 remote debugging tools. 
+
+Un-checking 'Just My Code' in Visual Studio debugging is not a supported scenario. 
+
+
+## Debugging ARM Limitations
+
+The Time Travel Debugging (TTD) feature is not supported on ARM based PCs. 
+
+
+## See Also
+
+[Building ARM64 Drivers with the WDK](../develop/building-arm64-drivers.md)
+
+[Windows Community Standup discussing the Always Connected PC](https://blogs.windows.com/buildingapps/2018/01/22/windows-community-standup-discussing-always-connected-pc/)
+
+-------
+
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20ARM64%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
