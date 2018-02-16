@@ -11,7 +11,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 12/12/2017
+ms.date: 02/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ The audio driver can obtain microphone sensitivity for each microphone. This pro
 
 For Windows 10 voice recognition experiences such as Cortana to accurately detect and analyze user’s voice on various devices with different microphones, the OS needs to know certain characteristics of the input signal. Based on that information, the OS can calculate effective sensitivity and apply appropriate gain to enhance input signal. For more information, see [Voice Activation](https://msdn.microsoft.com/library/windows/hardware/mt593238).
 
-KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY2 is available beginning with the next major release of Windows 10 in 2018.
+KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY2 is available beginning with the Windows 10, version 1803.
 
 
 Requirements
