@@ -19,17 +19,31 @@ This topic introduces version 1.2 of the WDF Network Adapter Class Extension (Ne
 
 ## Feature updates
 
+### Buffer Manager
 
+TODO: Explanation of Buffer Manager, possibly linking to dedicated page
 
-## New APIs and data structures
+The following new DDIs and data structures were introduced in NetAdapterCx 1.2 to support the Buffer Manager feature.
 
-The following APIs and data structures are new in NetAdapterCx 1.2. They are grouped according to the new feature they support.
+- *[EVT_NET_ADAPTER_RETURN_RX_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_return_rx_buffer)*
+- [NET_ADAPTER_DMA_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_dma_capabilities)
+- [NET_ADAPTER_DMA_CAPABILITIES_INIT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_dma_capabilities_init)
+- [NET_ADAPTER_RX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_rx_capabilities)
+- [NET_ADAPTER_RX_CAPABILITIES_INIT_DRIVER_MANAGED](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_rx_capabilities_init_driver_managed)
+- [NET_ADAPTER_RX_CAPABILITIES_INIT_SYSTEM_MANAGED](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_rx_capabilities_init_system_managed)
+- [NET_ADAPTER_RX_CAPABILITIES_INIT_SYSTEM_MANAGED_DMA](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_rx_capabilities_init_system_managed_dma)
+- [NET_MEMORY_MAPPING_REQUIREMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ne-netadapter-_net_memory_mapping_requirement)
+- [NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ne-netadapter-_net_rx_fragment_buffer_allocation_mode)
+- [NET_RX_FRAGMENT_BUFFER_ATTACHMENT_MODE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ne-netadapter-_net_rx_fragment_buffer_attachment_mode)
+- [NET_ADAPTER_TX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_tx_capabilities)
+- [NET_ADAPTER_TX_CAPABILITIES_INIT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_tx_capabilities_init)
+- [NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_tx_capabilities_init_for_dma)
 
-### Packet extensions
+### Packet Extensions
 
 - NetPacketExtension
 - NET_PACKET_EXTENSION
-- NET_PACKET_EXTENSION_INI
+- NET_PACKET_EXTENSION_INIT
 - NET_PACKET_EXTENSION_QUERY
 - NET_PACKET_EXTENSION_QUERY_INIT
 - NetRxQueueGetPacketExtensionOffset
@@ -43,7 +57,7 @@ The following APIs and data structures are new in NetAdapterCx 1.2. They are gro
 - NET_PACKET_LARGE_SEND_SEGMENTATION
 - NET_PACKET_RECEIVE_SEGMENT_COALESCENCE
 
-### Multi-level ring buffer
+### Multi-level Ring Buffer
 
 - NetRingBufferReturnAllPackets
 - NetPacketGetFragmentCount
@@ -58,28 +72,13 @@ The following APIs and data structures are new in NetAdapterCx 1.2. They are gro
 - NetAdapterStart
 - NetAdapterStop
 
-### Buffer Manager
-
-- NET_ADAPTER_DMA_CAPABILITIES
-- NET_ADAPTER_DMA_CAPABILITIES_INIT
-- NET_ADAPTER_RX_CAPABILITIES
-- NET_ADAPTER_RX_CAPABILITIES_INIT_DRIVER_MANAGED
-- NET_ADAPTER_RX_CAPABILITIES_INIT_SYSTEM_MANAGED
-- NET_ADAPTER_RX_CAPABILITIES_INIT_SYSTEM_MANAGED_DMA
-- NET_MEMORY_MAPPING_REQUIREMENT
-- NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE
-- NET_RX_FRAGMENT_BUFFER_ATTACHMENT_MODE
-- NET_ADAPTER_TX_CAPABILITIES
-- NET_ADAPTER_TX_CAPABILITIES_INIT
-- NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA
-
 ### NetAdapter RSS
 
+- EVT_NET_ADAPTER_CREATE_RSSQUEUE_GROUP
 - NetAdapterGetReceiveScalingHashSecretKey
 - NetAdapterGetReceiveScalingHashType
 - NetAdapterGetReceiveScalingProtocolTypes
 - NetAdapterSetReceiveScalingCapabilities
-- EVT_NET_ADAPTER_CREATE_RSSQUEUE_GROUP
 - NETRSSQUEUEGROUP_INIT
 - EVT_NET_ADAPTER_RECEIVE_SCALING_ENABLE
 - EVT_NET_ADAPTER_RECEIVE_SCALING_DISABLE
@@ -95,7 +94,7 @@ The following APIs and data structures are new in NetAdapterCx 1.2. They are gro
 - NET_ADAPTER_RECEIVE_SCALING_PROTOCOL_TYPE
 - NET_ADAPTER_RECEIVE_SCALING_UNHASHED_TARGET_TYPE
 
-### Other new APIs and data structures
+### Other new DDIs and data structures
 
 - SIZE_T
 - NetRequestGetAdapter
@@ -103,37 +102,34 @@ The following APIs and data structures are new in NetAdapterCx 1.2. They are gro
 - NetPacketIsIpv4
 - NetPacketIsIpv6
 
-## Updated APIs and data structures
+## Updated DDIs and data structures
 
-The following APIs and data structures were updated in NetAdapterCx 1.2.
+The following DDIs and data structures were updated in NetAdapterCx 1.2.
 
 - [NetAdapterSetDataPathCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetdatapathcapabilities)
+- [NET_PACKET](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet)
+- [NET_PACKET_FRAGMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_fragment)
+
+^^ done
 - [NET_ADAPTER_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_config)
 - [NetPacketGetContextFromToken]((https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-netpacketgetcontextfromtoken)
 - [NetPacketGetTypedContext](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-netpacketgettypedcontext)
-- [NET_PACKET](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet)
-- [NET_PACKET_FRAGMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_fragment)
 - [NET_RXQUEUE_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/ns-netrxqueue-_net_rxqueue_config)
 - [NET_TXQUEUE_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/ns-nettxqueue-_net_txqueue_config)
 
-## Removed APIs and data structures
+^^ not done
 
-The following APIs and data structures were removed in NetAdapterCx 1.2. Their reference topics are no longer available. Instructions for which new or updated APIs or data structures to use instead are provided.
+## Removed DDIs and data structures
 
-- NET_ADAPTER_DATAPATH_CAPABILITIES
-- NET_ADAPTER_DATAPATH_CAPABILITIES_INIT
-    - TBD
-- NET_RXQUEUE_DMA_ALLOCATOR_CONFIG
-- NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT
-- NetRxQueueInitSetDmaAllocatorConfig
-- NetRxQueueQueryAllocatorCacheEnabled
-    - TBD
-- NetRxQueueGetBufferLayoutHint
-    - TBD
-- NetRxQueueGetRingBuffer
-    - TBD
-- NetTxQueueGetRingBuffer
-    - TBD
+The following DDIs and data structures were removed in NetAdapterCx 1.2. Their reference topics are no longer available. Instructions for which new or updated DDIs or data structures to use instead are provided.
+
+| Removed DDI or data structure | Description |
+| --- | --- |
+| <ul><li>NET_ADAPTER_DATAPATH_CAPABILITIES</li><li>NET_ADAPTER_DATAPATH_CAPABILITIES_INIT</li></ul> | TBD |
+| <ul><li>NET_RXQUEUE_DMA_ALLOCATOR_CONFIG</li><li>NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT</li><li>NetRxQueueInitSetDmaAllocatorConfig</li><li>NetRxQueueQueryAllocatorCacheEnabled</li></ul> | DMA capabilities have been genericized for Rx queues and Tx queues in NetAdapterCx 1.2, obviating the need for specialized Rx queue DMA structures and methods. For more info, see [NET_ADAPTER_DMA_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_dma_capabilities), [NET_ADAPTER_RX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_rx_capabilities), and [NET_ADAPTER_TX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_tx_capabilities). |
+| <ul><li>NetRxQueueGetBufferLayoutHint</li></ul> | TBD |
+| <ul><li>NetRxQueueGetRingBuffer</li></ul> | TBD |
+| <ul><li>NetTxQueueGetRingBuffer</li></ul> | TBD |
 
 ## Compiling a NetAdapterCx 1.2 client driver
 

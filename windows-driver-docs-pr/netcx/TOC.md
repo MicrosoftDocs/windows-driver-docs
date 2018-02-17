@@ -1,6 +1,7 @@
 # [Network Adapter WDF Class Extension (NetAdapterCx)](index.md)
 ## [What's new in NetAdapterCx](whats-new-in-netadaptercx.md)
 ### [Introduction to NetAdapterCx 1.1](introduction-to-netadaptercx-1-1.md)
+### [Introduction to NetAdapterCx 1.2](introduction-to-netadaptercx-1-2.md)
 ## [Porting NDIS miniport drivers to NetAdapterCx](porting-ndis-miniport-drivers-to-netadaptercx.md)
 ## [Building a NetAdapterCx client driver](building-a-netadaptercx-client-driver.md)
 ## [Device initialization](device-initialization.md)

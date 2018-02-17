@@ -45,11 +45,11 @@ Client drivers can also now query whether DMA allocator cache is enabled with th
 
 To improve performance in the receive queue, client drivers can also now optionally call the [NetRxQueueGetBufferLayoutHint](netrxqueuegetbufferlayouthint.md) method to precalculate receive buffer padding and alignment.
 
-## API and data structure changes
+## DDI and data structure changes
 
-### New APIs and data structures
+### New DDIs and data structures
 
-The following APIs and data structures are new in NetAdapterCx 1.1.
+The following DDIs and data structures are new in NetAdapterCx 1.1.
 
 - [NET_ADAPTER_LINK_LAYER_ADDRESS_INIT method](net-adapter-link-layer-address-init.md)
 - [NetAdapterSetPermanentLinkLayerAddress method](netadaptersetpermanentlinklayeraddress.md)
@@ -71,9 +71,9 @@ The following APIs and data structures are new in NetAdapterCx 1.1.
 - [NetTxQueueGetPacketContextToken method](nettxqueuegetpacketcontexttoken.md)
 - [NetTxQueueInitAddPacketContextAttributes](nettxqueueinitaddpacketcontextattributes.md)
 
-### Updated APIs and data structures
+### Updated DDIs and data structures
 
-The following APIs and data structures were updated in NetAdapterCx 1.1.
+The following DDIs and data structures were updated in NetAdapterCx 1.1.
 
 - [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md)
 - [NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT method](net-adapter-link-layer-capabilities-init.md)
@@ -99,9 +99,9 @@ The following APIs and data structures were updated in NetAdapterCx 1.1.
 - [EVT_TXQUEUE_SET_NOTIFICATION_ENABLED](evt-txqueue-set-notification-enabled.md)
 - [NET_TXQUEUE_CONFIG](net-txqueue-config.md)
 
-### Removed APIs and data structures
+### Removed DDIs and data structures
 
-The following APIs and data structures were removed in NetAdapterCx 1.1 and were replaced with a different API or data structure. See each topic for details.
+The following DDIs and data structures were removed in NetAdapterCx 1.1 and were replaced with a different DDI or data structure. See each topic for details.
 
 - [NET_ADAPTER_DRIVER_TYPE](net-adapter-driver-type.md)
 - [NET_ADAPTER_PHYSICAL_ADDRESS](net-adapter-physical-address.md)
