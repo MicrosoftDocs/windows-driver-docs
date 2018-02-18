@@ -601,6 +601,7 @@
 #### [Reading and Filtering Debugging Messages](reading-and-filtering-debugging-messages.md)
 #### [Determining if a Debugger is Attached](determining-if-a-debugger-is-attached.md)
 ## [Specialized Debugging Techniques](specialized-debugging-techniques.md)
+### [Debugging ARM64](debugging-arm64.md)
 ### [Windows Runtime Debugging](windows-runtime-debugger-commands.md)
 ### [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md)
 ### [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md)

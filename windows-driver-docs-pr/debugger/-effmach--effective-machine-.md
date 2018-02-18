@@ -4,7 +4,7 @@ description: The .effmach command displays or changes the processor mode that th
 ms.assetid: bf4dfdc0-2f0b-416a-8bf2-0e7d81339905
 keywords: ["Effective Machine (.effmach) command", ".effmach (Effective Machine) Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 01/24/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,6 +62,16 @@ You can enter one of the following machine types.
 <tr class="even">
 <td align="left"><p><strong>ebc</strong></p></td>
 <td align="left"><p>Use an EFI byte code processor mode.</p></td>
+</tr>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>arm</strong></p></td>
+<td align="left"><p>Use an ARM64 processor mode.</p></td>
+</tr>
+</tr>
+<tr class="evenodd">
+<td align="left"><p><strong>chpe</strong></p></td>
+<td align="left"><p>Use a CHPE processor mode.</p></td>
 </tr>
 </tbody>
 </table>

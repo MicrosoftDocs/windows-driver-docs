@@ -533,6 +533,7 @@
 ### [KSPROPERTY_AUDIO_MANUFACTURE_GUID](ksproperty-audio-manufacture-guid.md)
 ### [KSPROPERTY_AUDIO_MIC_ARRAY_GEOMETRY](ksproperty-audio-mic-array-geometry.md)
 ### [KSPROPERTY_AUDIO_MIC_SENSITIVITY](ksproperty-audio-mic-sensitivity.md)
+### [KSPROPERTY_AUDIO_MIC_SENSITIVITY2](ksproperty-audio-mic-sensitivity2.md)
 ### [KSPROPERTY_AUDIO_MIC_SNR](ksproperty-audio-mic-snr.md)
 ### [KSPROPERTY_AUDIO_MID](ksproperty-audio-mid.md)
 ### [KSPROPERTY_AUDIO_MIX_LEVEL_CAPS](ksproperty-audio-mix-level-caps.md)
