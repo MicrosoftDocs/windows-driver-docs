@@ -12,10 +12,10 @@ This section describes the events that are passed from the device driver to the 
 ## In this section
 
 
-<span id="MagneticStripeReaderDataReceived"></span><span id="magneticstripereaderdatareceived"></span><span id="MAGNETICSTRIPEREADERDATARECEIVED"></span>[MagneticStripeReaderDataReceived](magneticstripereaderdatareceived.md)  
+[MagneticStripeReaderDataReceived](magneticstripereaderdatareceived.md)  
 Occurs after a successful scan event.
 
-<span id="MagneticStripeReaderErrorOccured"></span><span id="magneticstripereadererroroccured"></span><span id="MAGNETICSTRIPEREADERERROROCCURED"></span>[MagneticStripeReaderErrorOccured](magneticstripereadererroroccured.md)  
+[MagneticStripeReaderErrorOccured](magneticstripereadererroroccured.md)  
 Occurs when there is an MSR error, such as a scanning error.
 
  

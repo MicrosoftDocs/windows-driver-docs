@@ -12,19 +12,19 @@ This section describes the events that are passed from the device driver to the 
 ## In this section
 
 
-<span id="BarcodeScannerDataReceived"></span><span id="barcodescannerdatareceived"></span><span id="BARCODESCANNERDATARECEIVED"></span>[BarcodeScannerDataReceived](barcodescannerdatareceived.md)  
+[BarcodeScannerDataReceived](barcodescannerdatareceived.md)  
 Occurs after a successful scan event.
 
-<span id="BarcodeScannerErrorOccurred"></span><span id="barcodescannererroroccurred"></span><span id="BARCODESCANNERERROROCCURRED"></span>[BarcodeScannerErrorOccurred](barcodescannererroroccurred.md)  
+[BarcodeScannerErrorOccurred](barcodescannererroroccurred.md)  
 Occurs when there is an error, such as a scanning error.
 
-<span id="BarcodeScannerImagePreviewReceived"></span><span id="barcodescannerimagepreviewreceived"></span><span id="BARCODESCANNERIMAGEPREVIEWRECEIVED"></span>[BarcodeScannerImagePreviewReceived](barcodescannerimagepreviewreceived.md)  
+[BarcodeScannerImagePreviewReceived](barcodescannerimagepreviewreceived.md)  
 Occurs when the device receives a bitmap image of the scan.
 
-<span id="BarcodeScannerTriggerPressed"></span><span id="barcodescannertriggerpressed"></span><span id="BARCODESCANNERTRIGGERPRESSED"></span>[BarcodeScannerTriggerPressed](barcodescannertriggerpressed.md)  
+[BarcodeScannerTriggerPressed](barcodescannertriggerpressed.md)  
 Occurs when the barcode scanner trigger is pressed.
 
-<span id="BarcodeScannerTriggerReleased"></span><span id="barcodescannertriggerreleased"></span><span id="BARCODESCANNERTRIGGERRELEASED"></span>[BarcodeScannerTriggerReleased](barcodescannertriggerreleased.md)  
+[BarcodeScannerTriggerReleased](barcodescannertriggerreleased.md)  
 Occurs when the barcode scanner trigger is released.
 
  
