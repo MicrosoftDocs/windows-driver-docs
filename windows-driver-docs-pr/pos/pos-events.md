@@ -13,6 +13,7 @@ This section describes the events that are passed from the device driver to the 
 
 
 [ReleaseDeviceRequested](releasedevicerequested.md)
+
 [StatusUpdated](statusupdated.md)
  
 
