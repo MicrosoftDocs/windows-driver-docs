@@ -77,5 +77,5 @@ Requirements
 See Also
 -----
 [**NetPowerSettingsGetEnabledWakePatterns**](netpowersettingsgetenabledwakepatterns.md)
-[**NetPowerSettingsGetEnabledProtocolOffloads**](netpowersettingsgetenabledprotocoloffloads.md)
+[**NetPowerSettingsGetEnabledProtocolOffloadFlags**](netpowersettingsgetenabledprotocoloffloadflags.md)
 [**NetPowerSettingsGetEnabledWakeUpFlags**](netpowersettingsgetenabledwakeupflags.md)

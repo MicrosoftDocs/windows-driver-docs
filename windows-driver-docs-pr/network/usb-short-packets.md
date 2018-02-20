@@ -19,7 +19,7 @@ ms.technology: windows-devices
 
 USB passes data over the wire in the form of USB packets, which should not be confused with NDIS or networking packets. The maximum length of a USB packet to or from a USB endpoint is limited to the value of the **wMaxPacketSize** field of the endpoint's descriptor. For bulk pipes the maximum packet size is 64 bytes. Due to constraints of certain USB host controllers, there is a penalty associated with using short USB packets (for example, those of less then 64 bytes, when streaming data).
 
-To work around this limitation, Remote NDIS USB devices may append zero-byte padding to data messages so that a short packet will not occur (within the constraints of the **MaxTransferSize** field of [REMOTE\_NDIS\_INITIALIZE\_MSG](remote-ndis-initialize-msg2.md)). The **MessageLength** field of the final [REMOTE\_NDIS\_PACKET\_MSG](remote-ndis-packet-msg2.md) does not include these appended padding bytes.
+To work around this limitation, Remote NDIS USB devices may append zero-byte padding to data messages so that a short packet will not occur (within the constraints of the **MaxTransferSize** field of [REMOTE\_NDIS\_INITIALIZE\_MSG](remote-ndis-initialize-msg.md)). The **MessageLength** field of the final [REMOTE\_NDIS\_PACKET\_MSG](remote-ndis-packet-msg.md) does not include these appended padding bytes.
 
 If the device has transmitted its last available REMOTE\_NDIS\_PACKET\_MSG (so no more are left in the device's queue), then it is acceptable to send a short USB packet.
 
