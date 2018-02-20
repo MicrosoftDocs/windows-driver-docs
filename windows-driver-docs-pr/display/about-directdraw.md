@@ -21,7 +21,7 @@ ms.technology: windows-devices
 ## <span id="ddk_about_directdraw_gg"></span><span id="DDK_ABOUT_DIRECTDRAW_GG"></span>
 
 
-Microsoft DirectDraw is the display component of Microsoft DirectX that allows software designers to directly manipulate display memory, hardware blitters, hardware overlays, and flipping surfaces. DirectDraw provides a device-independent way for games and Windows subsystem software, such as 3D graphics packages and digital video codecs, to gain access to the features of specific display devices.
+Microsoft DirectDraw is the display component of Microsoft DirectX that enables software designers to directly manipulate display memory, hardware blitters, hardware overlays, and flipping surfaces. DirectDraw provides a device-independent way for games and Windows subsystem software, such as 3D graphics packages and digital video codecs, to gain access to the features of specific display devices.
 
 DirectDraw provides device-independent access to the device-specific display functionality in a direct 32-bit path. DirectDraw calls important functions in a driver that accesses the display card directly, without the intervention of the Windows graphics device interface (GDI) or the device-independent bitmap (DIB) engine.
 

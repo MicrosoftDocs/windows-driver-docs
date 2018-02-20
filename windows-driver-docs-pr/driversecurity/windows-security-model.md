@@ -3,14 +3,14 @@ title: Windows security model for driver developers
 description: The Windows security model is based primarily on per-object rights, with a small number of system-wide privileges.
 ms.assetid: 3A7ECA7C-1FE6-4ADB-97A9-A61C6FCE9F04
 ms.author: windowsdriverdev
-ms.date: 10/02/2017
+ms.date: 02/01/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
 
-## <span id="Introduction"></span><span id="introduction"></span><span id="INTRODUCTION"></span>Windows security model for driver developers
+# <span id="Introduction"></span><span id="introduction"></span><span id="INTRODUCTION"></span>Windows security model for driver developers
 
 The Windows security model is based on securable objects. Each component of the operating system must ensure the security of the objects for which it is responsible. Drivers, therefore, must safeguard the security of their devices and device objects.
 
@@ -188,7 +188,7 @@ The Object Manager checks ACLs for simple object types, such as events and mutex
 
 ### <span id="iomanchecks"></span><span id="IOMANCHECKS"></span>Security checks in the I/O Manager
 
-When the I/O Manager creates a handle, it checks the object’s rights against the process access token and then stores the rights granted to the user as part of the handle. When later I/O requests arrive, the I/O Manager checks the rights recorded in the handle to ensure that the process has the right to perform the requested I/O operation. For example, if the process later requests a write operation, the I/O Manager checks the rights in the handle to ensure that the caller has write access to the object.
+When the I/O Manager creates a handle, it checks the object’s rights against the process access token and then stores the rights granted to the user along with the handle. When later I/O requests arrive, the I/O Manager checks the rights associated with the handle to ensure that the process has the right to perform the requested I/O operation. For example, if the process later requests a write operation, the I/O Manager checks the rights associated with the handle to ensure that the caller has write access to the object. 
 
 If the handle is duplicated, rights can be removed from the copy, but not added to it.
 
@@ -202,15 +202,19 @@ When the I/O Manager creates an object, it converts generic Win32 access modes t
 | GENERIC\_ALL      | All                                   |
 
  
-
 To create a file, a process must have traversal rights to the parent directories in the target path. For example, to create \\Device\\CDROM0\\Directory\\File.txt, a process must have the right to traverse \\Device, \\Device\\CDROM0, and \\Device\\CDROM0\\Directory. The I/O Manager checks only the traversal rights for these directories.
 
 The I/O Manager checks traversal rights when it parses the file name. If the file name is a symbolic link, the I/O Manager resolves it to a full path and then checks traversal rights, starting from the root. For example, assume the symbolic link \\DosDevices\\D maps to the Windows NT device name \\Device\\CDROM0. The process must have traversal rights to the \\Device directory.
 
+For more information, see [Object Handles](https://docs.microsoft.com/windows-hardware/drivers/kernel/object-handles) and [Object Security](https://docs.microsoft.com/windows-hardware/drivers/kernel/object-security).
 
 ### <span id="driver"></span><span id="DRIVER"></span>Security checks in the driver
 
-The operating system kernel treats every driver, in effect, as a file system with its own namespace. Consequently, when a caller attempts to create an object in the device namespace, the I/O Manager checks that the process has traversal rights to the directories in the path. By default, however, the I/O Manager does not perform security checks against the namespace. The driver is responsible for ensuring the security of its namespace.
+The operating system kernel treats every driver, in effect, as a file system with its own namespace. Consequently, when a caller attempts to create an object in the device namespace, the I/O Manager checks that the process has traversal rights to the directories in the path. 
+
+With WDM drivers, the I/O Manager does not perform security checks against the namespace, unless the Device Object has been created specifying FILE_DEVICE_SECURE_OPEN.  When FILE_DEVICE_SECURE_OPEN is not set, the driver is responsible for ensuring the security of its namespace. For more information, see [Controlling Device Namespace Access](https://docs.microsoft.com/windows-hardware/drivers/kernel/controlling-device-namespace-access) and [Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects).
+
+For WDF drivers, the FILE_DEVICE_SECURE_OPEN flag is always set, so that there will be a check of the device's security descriptor before allowing an application to access any names within the device's namespace. For more information, see [Controlling Device Access in KMDF Drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/controlling-device-access-in-kmdf-drivers).
 
 
 

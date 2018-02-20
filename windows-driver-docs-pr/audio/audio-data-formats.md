@@ -15,7 +15,7 @@ keywords:
 - formats WDK audio
 - data formats WDK audio , about audio data formats
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,7 +31,7 @@ To specify the data format for a wave audio stream, the [**KSDATAFORMAT**](https
 
 -   KSDATAFORMAT\_SPECIFIER\_WAVEFORMATEX
 
-    Indicates that the data format belongs to a wave stream that is being used by a waveIn or waveOut application. In this case, the data-format specifier following the KSDATAFORMAT structure is a WAVEFORMATEX structure.
+    Indicates that the data format belongs to a wave stream that is being used by a waveIn or waveOut application. In this case, if the KSDATAFORMAT structure's *FormatSize* is large enough, the data-format specifier following the KSDATAFORMAT structure is a WAVEFORMATEX structure.
 
 -   KSDATAFORMAT\_SPECIFIER\_DSOUND
 

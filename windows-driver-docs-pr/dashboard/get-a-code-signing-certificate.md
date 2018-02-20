@@ -110,7 +110,7 @@ If you don’t have an approved standard or EV code signing certificate, you can
 
 -   [Buy a Symantec standard code signing certificate](http://go.microsoft.com/fwlink/?LinkId=393247)
 
--   [Buy a Certum standard code signing cert](https://go.microsoft.com/fwlink/?linkid=843062)
+-   [Buy a Certum standard code signing cert](https://go.microsoft.com/fwlink/?linkid=843062) (Supported only in the Hardware Dev Center Dashboard)
 
 -   [Buy an Entrust standard code signing cert](https://go.microsoft.com/fwlink/?linkid=843067)
 
