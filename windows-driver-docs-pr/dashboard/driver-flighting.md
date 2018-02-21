@@ -51,6 +51,12 @@ After being submitted to the Windows Hardware Dev Center Dashboard, you can prom
     * Drivers that deploy UI and/or software during installation are not windows 10 S compliant, and cannot be flighted to this operating system.
     * A co-engineering driver is not automatically released via Windows Update after a successful flight. A flight bug report will still be provided after the flighting process.
 
+    * A co-engineering driver is a driver being developed for an unreleased version of Windows. co-engineering drivers: 
+        * will only be distributed to applicable devices in the Microsoft insider program.
+        * Will not be distributed to devices that are not a part of the Microsoft insider program after a successful flight.
+        * will be terminated for flighting after 60 days. A flight bug report will be provided after the flighting process is complete. 
+
+
 5. Complete the shipping label process as usual.
 
 After promoting your driver for shipping, Microsoft will evaluate your driver for approval, and provide a driver flighting report when the evaluation is complete – typically within two weeks from the time of shipping label publication. Please note that if a previously created shipping label is reused, its publication date will not be updated.
