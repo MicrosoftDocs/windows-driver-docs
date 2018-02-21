@@ -120,7 +120,7 @@ MyAdapterSetCapabilities(
     NET_ADAPTER_RX_CAPABILITIES rxCapabilities;
     NET_ADAPTER_RX_CAPABILITIES_INIT_SYSTEM_MANAGED_DMA(&rxCapabilities,
                                                         &rxDmaCapabilities,
-                                                        MAX_PACKET_SIZE + FRAME_CRC_SIZE + RSVD_BUF_SIZE
+                                                        MAX_PACKET_SIZE + FRAME_CRC_SIZE + RSVD_BUF_SIZE,
                                                         1
                                                         );
     rxCapabilities.FragmentBufferAlignment = 64;
