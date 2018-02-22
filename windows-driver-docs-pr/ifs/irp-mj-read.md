@@ -1,6 +1,6 @@
 ---
-title: IRP\_MJ\_READ
-description: IRP\_MJ\_READ
+title: IRP_MJ_READ
+description: IRP_MJ_READ
 ms.assetid: f2f909ff-4af6-433e-9f3c-9692b5ab7171
 keywords: ["IRP_MJ_READ Installable File System Drivers"]
 topic_type:
@@ -31,21 +31,21 @@ The file system driver should extract and decode the file object to determine th
 
 For memory descriptor list (MDL) read requests, the file system should check the minor function code to determine which operation is requested. The following are the valid minor function codes, which can be used only for cached file I/O:
 
-IRP\_MN\_COMPLETE
+- IRP\_MN\_COMPLETE
 
-IRP\_MN\_COMPLETE\_MDL
+- IRP\_MN\_COMPLETE\_MDL
 
-IRP\_MN\_COMPLETE\_MDL\_DPC
+- IRP\_MN\_COMPLETE\_MDL\_DPC
 
-IRP\_MN\_COMPRESSED
+- IRP\_MN\_COMPRESSED
 
-IRP\_MN\_DPC
+- IRP\_MN\_DPC
 
-IRP\_MN\_MDL
+- IRP\_MN\_MDL
 
-IRP\_MN\_MDL\_DPC
+- IRP\_MN\_MDL\_DPC
 
-IRP\_MN\_NORMAL
+- IRP\_MN\_NORMAL
 
 For more information about handling this IRP, study the CDFS and FASTFAT samples that are included in the Windows Driver Kit (WDK).
 
@@ -60,54 +60,65 @@ The filter driver should perform any needed processing and, depending on the nat
 A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff549174) with the given IRP to get a pointer to its own [**stack location**](https://msdn.microsoft.com/library/windows/hardware/ff550659) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information contained in the following members of the IRP and the IRP stack location in processing a read request:
 
 <a href="" id="deviceobject"></a>*DeviceObject*  
+
 Pointer to the target device object.
 
 <a href="" id="irp--associatedirp-systembuffer"></a>*Irp-&gt;AssociatedIrp.SystemBuffer*  
+
 Pointer to a system-supplied buffer to be used as an intermediate system buffer, if the DO\_BUFFERED\_IO flag is set in *DeviceObject-&gt;Flags*. Otherwise, this member is set to **NULL**.
 
 <a href="" id="irp--iostatus"></a>*Irp-&gt;IoStatus*  
+
 Pointer to an [**IO\_STATUS\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff550671) structure that receives the final completion status and information about the requested operation. For more information, see the description of the *IoStatusBlock* parameter to [**ZwReadFile**](https://msdn.microsoft.com/library/windows/hardware/ff567072).
 
 <a href="" id="irp--mdladdress"></a>*Irp-&gt;MdlAddress*  
+
 Address of a memory descriptor list (MDL) describing the pages that contain the data to be read.
 
 <a href="" id="irp--userbuffer"></a>*Irp-&gt;UserBuffer*  
+
 Pointer to a caller-supplied output buffer that receives the data that is read from the file.
 
 <a href="" id="irpsp--fileobject"></a>*IrpSp-&gt;FileObject*  
+
 Pointer to the file object that is associated with *DeviceObject*. If the FO\_SYNCHRONOUS\_IO flag is set in *IrpSp-&gt;FileObject-&gt;Flags*, the file object was opened for synchronous I/O.
 
 The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_READ and should not be used.
 
 <a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*  
+
 Specifies IRP\_MJ\_READ.
 
 <a href="" id="irpsp--minorfunction"></a>*IrpSp-&gt;MinorFunction*  
-One of the following:
 
-IRP\_MN\_COMPLETE
+Specifies the operation being requested and contains one of the following:
 
-IRP\_MN\_COMPLETE\_MDL
+- IRP\_MN\_COMPLETE
 
-IRP\_MN\_COMPLETE\_MDL\_DPC
+- IRP\_MN\_COMPLETE\_MDL
 
-IRP\_MN\_COMPRESSED
+- IRP\_MN\_COMPLETE\_MDL\_DPC
 
-IRP\_MN\_DPC
+- IRP\_MN\_COMPRESSED
 
-IRP\_MN\_MDL
+- IRP\_MN\_DPC
 
-IRP\_MN\_MDL\_DPC
+- IRP\_MN\_MDL
 
-IRP\_MN\_NORMAL
+- IRP\_MN\_MDL\_DPC
+
+- IRP\_MN\_NORMAL
 
 <a href="" id="irpsp--parameters-read-byteoffset"></a>*IrpSp-&gt;Parameters.Read.ByteOffset*
-Pointer to a LARGE\_INTEGER variable that specifies the starting byte offset within the file of the data to be read.
+
+A LARGE\_INTEGER variable that specifies the starting byte offset within the file of the data to be read.
 
 <a href="" id="irpsp--parameters-read-key"></a>*IrpSp-&gt;Parameters.Read.Key*
+
 Key value associated with a byte-range lock on the target file.
 
 <a href="" id="irpsp--parameters-read-length"></a>*IrpSp-&gt;Parameters.Read.Length*
+
 Length in bytes of the data to be read. If the read operation is successful, the number of bytes read is returned in the **Information** member of the [**IO\_STATUS\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff550671) structure pointed to by *Irp-&gt;IoStatus*.
 
 Remarks

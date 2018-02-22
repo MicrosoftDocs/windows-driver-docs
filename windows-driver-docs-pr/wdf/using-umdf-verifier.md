@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Using UMDF Verifier
 
 
-The framework provides built-in verification functionality that you can use to test a running User-Mode Driver Framework (UMDF) driver. This functionality, sometimes called UMDF Verifier, extensively validates your driver's state and the arguments that the driver passes to framework object methods. You can use UMDF Verifier by itself or together with the general-purpose [Application Verifier (AppVerif.exe)](http://www.microsoft.com/download/details.aspx?id=20028) tool.
+The framework provides built-in verification functionality that you can use to test a running User-Mode Driver Framework (UMDF) driver. This functionality, sometimes called UMDF Verifier, extensively validates your driver's state and the arguments that the driver passes to framework object methods. You can use UMDF Verifier by itself or together with the general-purpose [Application Verifier (AppVerif.exe)](../debugger/debugger-download-tools.md) tool.
 
 UMDF Verifier checks lock acquisition and hierarchies, verifies correct I/O cancellation and queue usage, and ensures that the driver and framework follow the documented contracts.
 
@@ -33,13 +33,13 @@ UMDF Verifier causes failures in UMDF driver code to *bug check* the host proces
 
 Starting in UMDF 2.0, UMDF Verifier issues breakpoints in some cases, and causes a UMDF bug check in others. This behavior is similar to that of KMDF Verifier.
 
-We recommend running [Application Verifier (AppVerif.exe)](http://www.microsoft.com/download/details.aspx?id=20028) on WUDFHost.exe while testing or debugging your UMDF driver. Use the following command, and then reboot.
+We strongly recommend doing all development and testing of your driver after enabling [Application Verifier (AppVerif.exe)](../debugger/debugger-download-tools.md) on WUDFHost.exe. Use the following command, attach a debugger and then reboot.
 
 ```
 AppVerif –enable Heaps Exceptions Handles Locks Memory TLS Leak –for WudfHost.exe
 ```
 
-Starting in version 2.0 of UMDF, if you run [Application Verifier](http://www.microsoft.com/download/details.aspx?id=20028) on the driver host process (Wudfhost), UMDF Verifier is automatically enabled for all UMDF 2.0 drivers in that host, as well as all UMDF 2.0 drivers in future driver host processes.
+Starting in version 2.0 of UMDF, if you run [Application Verifier](../debugger/debugger-download-tools.md) on the driver host process (Wudfhost), UMDF Verifier is automatically enabled for all UMDF 2.0 drivers in that host, as well as all UMDF 2.0 drivers in future driver host processes.
 
 In UMDF 1.11 and earlier, the framework's verifier is always on and you cannot turn it off.
 
