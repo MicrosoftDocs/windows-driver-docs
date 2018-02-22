@@ -15,6 +15,7 @@
 ## [Power-up sequence for a NetAdapterCx client driver](power-up-sequence-for-a-netadaptercx-client-driver.md)
 ## [Power-down sequence for a NetAdapterCx client driver](power-down-sequence-for-a-netadaptercx-client-driver.md)
 ## [NetAdapterCx buffer manager](netadaptercx-buffer-manager.md)
+## [Datapath descriptors and packet extensions](datapath-descriptors-and-packet-extensions.md)
 ## [NetAdapterCx limitations](netadaptercx-limitations.md)
 ## [NetAdapterCx API reference](netadaptercx-api-reference.md)
 ### [NetAdapterCx callback functions](netadaptercx-callback-functions.md)

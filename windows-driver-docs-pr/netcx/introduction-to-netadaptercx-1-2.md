@@ -25,7 +25,7 @@ Buffer manager is a new feature in NetAdapterCx 1.2 that enables Network Interfa
 
 For more info about the buffer manager feature, see [NetAdapterCx buffer manager](netadaptercx-buffer-manager.md).
 
-The following new DDIs and data structures were introduced in NetAdapterCx 1.2 to support the buffer manager feature.
+The following new DDIs and data structures were introduced in NetAdapterCx 1.2 to support buffer manager.
 
 - *[EVT_NET_ADAPTER_RETURN_RX_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_return_rx_buffer)*
 - [NET_ADAPTER_DMA_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_dma_capabilities)
@@ -41,33 +41,42 @@ The following new DDIs and data structures were introduced in NetAdapterCx 1.2 t
 - [NET_ADAPTER_TX_CAPABILITIES_INIT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_tx_capabilities_init)
 - [NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_tx_capabilities_init_for_dma)
 
-### Packet Extensions
+### Datapath descriptors, multi-level ring buffers, and packet extensions
 
-- NetPacketExtension
-- NET_PACKET_EXTENSION
-- NET_PACKET_EXTENSION_INIT
-- NET_PACKET_EXTENSION_QUERY
-- NET_PACKET_EXTENSION_QUERY_INIT
-- NetRxQueueGetPacketExtensionOffset
-- NetTxQueueGetPacketExtensionOffset
+Version 1.2 brings both datapath descriptors and packet extensions to NetAdapterCx. Datapath descriptors are small, runtime-extensible structures that describe a network packet. They can be used by different components in the system, such as by NetAdapterCx in its interface with NIC client drivers.
 
-### Offloads
+In NetAdapterCx 1.2, client drivers mainly use datapath descriptors to access the ring buffers for their datapath queues. Each queue has a [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor) associated with it. Along with this new method of getting ring buffers (instead of a dedicated method), NetAdapterCx 1.2 introduces the concept of multi-level ring buffers. Previously, each receive and transmit queue had one ring buffer of [NET_PACKET](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) structures, each of which had a [NET_PACKET_FRAGMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_fragment) embedded. Each of those **NET_PACKET_FRAGMENTS** might have been linked to another fragment in a chain. Now, in version 1.2, each **NET_PACKET** has its own ring buffer of fragments that can be accessed more quickly and easily based on the datapath descriptor.
 
-- NetPacketGetPacketChecksum
-- NetPacketGetPacketLargeSendSegmentation
-- NetPacketGetPacketReceiveSetmentCoalescence
-- NET_PACKET_LARGE_SEND_SEGMENTATION
-- NET_PACKET_RECEIVE_SEGMENT_COALESCENCE
+Another new feature in NetAdapterCx 1.2 is packet extensions. Attached to each datapath queue's core descriptor, they are used by client drivers to share information with the upper layers. Packet extensions can hold information such as advanced offload tasks like checksum, LSO, and RSS hash, or they can hold application-specific details.
 
-### Multi-level Ring Buffer
+For more information on datapath descriptors and packet extensions, see [Datapath descriptors and packet extensions](datapath-descriptors-and-packet-extensions.md). Note that this topic does not discuss multi-level ring buffers because they are a specific application of the general concept of a datapath descriptor.
 
-- NetRingBufferReturnAllPackets
-- NetPacketGetFragmentCount
+The following new DDIs and data structures were introduced in NetAdapterCx 1.2 to support datapath descriptors, multi-level ring buffers, and packet extensions.
+
 - NetRxQueueGetDatapathDescriptor
 - NetTxQueueGetDatapathDescriptor
 - PCNET_DATAPATH_DESCRIPTOR
 - NET_DATAPATH_DESCRIPTOR
 - NET_DATAPATH_RING_BUFFER_INDEX
+- NetRingBufferReturnAllPackets
+- NetPacketGetFragmentCount
+
+- [NET_PACKET_EXTENSION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/ns-netadapterpacket-_net_packet_extension)
+- NET_PACKET_EXTENSION_INIT
+- NET_PACKET_EXTENSION_QUERY
+- NET_PACKET_EXTENSION_QUERY_INIT
+- NetPacketGetExtension
+- NetRxQueueGetPacketExtensionOffset
+- NetTxQueueGetPacketExtensionOffset
+
+### Offloads
+
+- NET_PACKET_ADVANCED_OFFLOAD
+- NET_PACKET_LARGE_SEND_SEGMENTATION
+- NET_PACKET_RECEIVE_SEGMENT_COALESCENCE
+- NetPacketGetPacketChecksum
+- NetPacketGetPacketLargeSendSegmentation
+- NetPacketGetPacketReceiveSetmentCoalescence
 
 ### Multiple NetAdapter objects per device
 
@@ -111,13 +120,14 @@ The following DDIs and data structures were updated in NetAdapterCx 1.2.
 - [NetAdapterSetDataPathCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetdatapathcapabilities)
 - [NET_PACKET](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet)
 - [NET_PACKET_FRAGMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_fragment)
-
-^^ done
-- [NET_ADAPTER_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_config)
-- [NetPacketGetContextFromToken](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-netpacketgetcontextfromtoken)
-- [NetPacketGetTypedContext](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-netpacketgettypedcontext)
 - [NET_RXQUEUE_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/ns-netrxqueue-_net_rxqueue_config)
 - [NET_TXQUEUE_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/ns-nettxqueue-_net_txqueue_config)
+- [NET_ADAPTER_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_config)
+
+^^ done
+
+- [NetPacketGetContextFromToken](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-netpacketgetcontextfromtoken)
+- [NetPacketGetTypedContext](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-netpacketgettypedcontext)
 
 ^^ not done
 
