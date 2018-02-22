@@ -46,13 +46,14 @@ After being submitted to the Windows Hardware Dev Center Dashboard, you can prom
 4. Select the appropriate statements that apply to your driver. These answers will improve the speed of the evaluation process:
     ![An image showing the statements that may apply to a driver being flighted: it is a co-engineering driver, it requires a reboot, it deploys UI and/or software, It supports a new or unreleased device](images/driver-flighting-statements.png)
     
-    Please note the following:
-    * It is recommended to avoid requiring a reboot after driver installation. 
-    * Drivers that deploy UI and/or software during installation are not windows 10 S compliant, and cannot be flighted to this operating system.
-    * A co-engineering driver is a driver being developed for an unreleased version of Windows. co-engineering drivers: 
-        * will only be distributed to applicable devices in the Microsoft insider program.
-        * Will not be distributed to devices that are not a part of the Microsoft insider program after a successful flight.
-        * will be terminated for flighting after 60 days. A flight bug report will be provided after the flighting process is complete. 
+    > [!IMPORTANT] 
+    > Please note the following:
+    > * It is recommended to avoid requiring a reboot after driver installation. 
+    > * Drivers that deploy UI and/or software during installation are not windows 10 S compliant, and cannot be flighted to this operating system.
+    > * A co-engineering driver is a driver being developed for an unreleased version of Windows. co-engineering drivers: 
+    >    * will only be distributed to applicable devices in the Microsoft insider program during the flighting process.
+    >    * Will not be distributed to devices that are not a part of the Microsoft insider program after a successful flight.
+    >    * will be terminated for flighting after 60 days. A flight bug report will be provided after the flighting process is complete. 
 
 
 5. Complete the shipping label process as usual.
