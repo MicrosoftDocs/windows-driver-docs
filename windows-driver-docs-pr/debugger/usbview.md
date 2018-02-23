@@ -66,7 +66,7 @@ To use Windows Device Manager to display USB information:
 9. Use the **Property** pull down box to view desired information such as *Status* or *Problem code*.
 
 
-## USB Troubleshooter
+## Windows USB Troubleshooter
 
 If you are trying to diagnose a USB device that does not eject using the Safely Remove Hardware dialog box, you might want to try the [Windows USB Troubleshooter](https://support.microsoft.com/help/17614/automatically-diagnose-and-fix-windows-usb-problems).
 
