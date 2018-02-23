@@ -13,7 +13,7 @@ ms.technology: windows-devices
 
 ## Overview
 
-The Device Guard Readiness tool is designed to check a number of requirements for creating a PC that supports a variety of security enhancement features. This section describes how to use the tool to evaluate the ability of a driver to run in a Hypervisor Code Integrity (HVCI) environment. 
+The Device Guard Readiness tool is designed to check a number of requirements for creating a PC that supports a variety of security enhancement features. This section describes how to use the tool to evaluate the ability of a driver to run in a Hypervisor-protected Code Integrity (HVCI) environment. 
 
 OS and Hardware requirements for testing HVCI driver Device Guard compatibility:
 
