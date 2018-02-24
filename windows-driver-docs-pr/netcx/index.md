@@ -57,5 +57,5 @@ This section contains the following topics:
 * [Power-up sequence for a NetAdapterCx client driver](power-up-sequence-for-a-netadaptercx-client-driver.md)
 * [Power-down sequence for a NetAdapterCx client driver](power-down-sequence-for-a-netadaptercx-client-driver.md)
 * [NetAdapterCx buffer manager](netadaptercx-buffer-manager.md)
-* [Datapath descriptors and packet extensions](datapath-descriptors-multi-level-ring-buffers-and-packet-extensions.md)
+* [Datapath descriptors and packet extensions](datapath-descriptors-and-packet-extensions.md)
 * [NetAdapterCx limitations](netadaptercx-limitations.md)
