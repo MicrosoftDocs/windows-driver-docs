@@ -8,6 +8,8 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
+# Handling dispatch routines in stream drivers
+
 This topic provides guidance for handling driver dispatch routines.
 
 ## AddDevice routine for AVStream minidrivers
