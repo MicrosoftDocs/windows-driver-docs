@@ -19,14 +19,14 @@ The NetAdapterCx enables the client drivers and the system to work together when
 
 ## The benefits of buffer management in NetAdapterCx
 
-The choice of where the buffers are allocated from system memory for packet payloads is critical to the performance of the data path. In NetAdapterCx, the buffer management model is heavily optimized for DMA capable NIC hardware and the best way to take advantage of it is to let the system allocate the data buffers on the behalf of the client driver for both the transmit (Tx) path and the the receive (Rx) path. Meanwhile, the NIC client driver still can influence the system about where and how to allocate the data buffers so they can be easily consumed by their hardware. 
+The choice of where the buffers are allocated from system memory for packet payloads is critical to the performance of the data path. In NetAdapterCx, the buffer management model is optimized for DMA capable NIC hardware and the best way to take advantage of it is to let the system allocate the data buffers on the behalf of the client driver for both the transmit (Tx) path and the the receive (Rx) path. Meanwhile, the NIC client driver still can influence the system about where and how to allocate the data buffers so they can be easily consumed by their hardware. 
 
-For a typical DMA capable NIC, there are serval benefits of this approach:
+Consider a typical DMA capable NIC for example, there are serval benefits of this approach:
 1. The data buffers are allocated and freed by the system, therefore the client driver is free of burden of memory lifetime management.
-2. The system makes sure that the allocated data buffers are DMA-ready for the NIC hardware according to the capabilities declared by the client driver. Therefore, the client driver can simply programs the data buffer into their hardware as is, without perform any additional DMA mapping operation.
-3. The system can take the needs of upper layer applications into consideration when allocating the data buffers, so that the system can use heuristics to optimize the end-to-end performance.
+2. The system makes sure that the allocated data buffers are DMA-ready for the NIC hardware based on the capabilities declared by the client driver. Therefore, the client driver can simply programs the data buffer into their hardware as is, without perform any additional DMA mapping operation.
+3. The system can take the needs of upper layer applications into consideration when allocating the data buffers, so that the system can decide to optimize for global end-to-end performance, instead merely local ones.
 
-For non-DMA capabile NIC, such like USB based network dangle, or other advanced/software NICs, the system still have an option to leave the data buffer management completely to the client driver. 
+For non-DMA capabile NIC such like USB based network dangle, or other advanced/software NICs, the system alos provides an option to leave the data buffer management completely to the client driver. 
 
 ## How to leverage the buffer management
 
