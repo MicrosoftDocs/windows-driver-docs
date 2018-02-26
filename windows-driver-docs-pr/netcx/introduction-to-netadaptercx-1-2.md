@@ -19,13 +19,13 @@ This topic introduces version 1.2 of the WDF Network Adapter Class Extension (Ne
 
 ## Feature updates
 
-### Buffer manager
+### Buffer management
 
-Buffer manager is a new feature in NetAdapterCx 1.2 that enables Network Interface Card (NIC) drivers, protocol drivers, and NetAdapterCx to work together on memory buffer allocation for the receive and transmit data paths. This can result in faster performance for the NIC and gives more control over aspects like data buffer lifetime management, variable-size buffers, and more. Buffer manager for NetAdapterCx also provides more flexibility than the previous buffer manager model in the [Packet Direct Provider Interface (PDPI)](https://docs.microsoft.com/windows-hardware/drivers/network/introduction-to-ndis-pdpi) that NDIS 6.*X* miniport drivers could optionally use.
+Buffer management is a new feature in NetAdapterCx 1.2 that enables Network Interface Card (NIC) client drivers and the operating system to work together when allocating packet data buffers from system memory for the transmit (Tx) and receive (Rx) data paths. This can result in faster performance for the NIC, easier memory lifetime management for the NIC's client driver, and more control for the system over the memory.
 
-For more info about the buffer manager feature, see [NetAdapterCx buffer manager](netadaptercx-buffer-manager.md).
+For more info about buffer management, see [Network data buffer management](network-data-buffer-management.md).
 
-The following new DDIs and data structures were introduced in NetAdapterCx 1.2 to support buffer manager.
+The following new DDIs and data structures were introduced in NetAdapterCx 1.2 to support buffer management.
 
 - *[EVT_NET_ADAPTER_RETURN_RX_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_return_rx_buffer)*
 - [NET_ADAPTER_DMA_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_dma_capabilities)

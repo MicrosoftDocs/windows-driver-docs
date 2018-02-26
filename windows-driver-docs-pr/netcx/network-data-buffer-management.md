@@ -1,9 +1,9 @@
 ---
-title: NetAdapterCx Buffer Manager
-description: NetAdapterCx Buffer Manager
+title: Network data buffer management
+description: Network data buffer management
 ms.assetid: BFE1D376-88FB-41CB-AB6D-A0D6BB83128C
 keywords:
-- WDF Network Adapter Class Extension Buffer Manager, NetAdapterCx Buffer Manager
+- WDF Network Adapter Class Extension Buffer Manager, Network data buffer management
 ms.author: windowsdriverdev
 ms.date: 02/20/2018
 ms.topic: article
@@ -15,26 +15,27 @@ ms.technology: windows-devices
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The NetAdapterCx enables the client drivers and the system to work together when allocating data buffer from the system memory for the network packets being received and transmitted. This can result in faster performance for the NIC's data path, easier memory lifetime managment for the client drivers, and gives more control to the system.
+Buffer management is a new feature in NetAdapterCx 1.2 that enables Network Interface Card (NIC) client drivers and the operating system to work together when allocating packet data buffers from system memory for the transmit (Tx) and receive (Rx) data paths. This can result in faster performance for the NIC, easier memory lifetime management for the NIC's client driver, and more control for the system over the memory.
 
 ## The benefits of buffer management in NetAdapterCx
 
-The choice of where the buffers are allocated from system memory for packet payloads is critical to the performance of the data path. In NetAdapterCx, the buffer management model is optimized for DMA capable NIC hardware and the best way to take advantage of it is to let the system allocate the data buffers on the behalf of the client driver for both the transmit (Tx) path and the the receive (Rx) path. Meanwhile, the NIC client driver still can influence the system about where and how to allocate the data buffers so they can be easily consumed by their hardware. 
+The choice of where data buffers are allocated from system memory for packet payloads is critical to the performance of the data path. In NetAdapterCx, the buffer management model is optimized for DMA-capable NIC hardware, and the best way for client drivers to take advantage of it is to let the system allocate data buffers on their behalf for both the Tx and Rx paths. However, client drivers can still influence where and how the system allocates the data buffers so they can be easily consumed by the client's hardware. 
 
-Consider a typical DMA capable NIC for example, there are serval benefits of this approach:
-1. The data buffers are allocated and freed by the system, therefore the client driver is free of burden of memory lifetime management.
-2. The system makes sure that the allocated data buffers are DMA-ready for the NIC hardware based on the capabilities declared by the client driver. Therefore, the client driver can simply programs the data buffer into their hardware as is, without perform any additional DMA mapping operation.
-3. The system can take the needs of upper layer applications into consideration when allocating the data buffers, so that the system can decide to optimize for global end-to-end performance, instead merely local ones.
+Consider a typical DMA capable NIC, for example. There are serval benefits to this approach:
 
-For non-DMA capabile NIC such like USB based network dangle, or other advanced/software NICs, the system alos provides an option to leave the data buffer management completely to the client driver. 
+1. The data buffers are allocated and freed by the system. Therefore, the client driver is freed from the burden of memory lifetime management.
+2. The system makes sure that the allocated data buffers are DMA-ready for the NIC hardware based on the capabilities declared by the client driver. Then, the client driver can simply program the data buffers into their hardware as-is without performing any additional DMA mapping operations.
+3. The system can take the needs of upper layer applications into consideration when allocating the data buffers, so it can decide to optimize for global end-to-end performance instead of only local end-to-end performance.
 
-## How to leverage the buffer management
+For non-DMA capabile NICs like a USB-based network dongle, or for other advanced/software NICs, the buffer management model also provides an option to leave data buffer management completely to the client driver. 
+
+## How to leverage buffer management
 
 The buffer management feature is supported starting in NetAdapterCx 1.2, which ships with Windows 10, version 1803. To opt in, follow these steps:
 
-1. In your *[EvtNetAdapterSetCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities)* callback, tells the system about your hardware's data buffer capabilities and constraints using the [NET_ADAPTER_RX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_rx_capabilities) and [NET_ADAPTER_TX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_tx_capabilities) data structure for Rx and Tx path respectively. 
-2. Initialize the two capabilities structures by calling one of the initialization functions. For instance, a  DMA-capable NIC would use **NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA** and **NET_ADAPTER_RX_CAPABILITIES_INIT_SYSTEM_MANAGED** to declare its DMA capablities and to instruct the system to fully manage the data buffer on behalf of the client driver.
-4. Pass the initialized Tx and Rx capabilities structures to the [NetAdapterSetDatapathCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetdatapathcapabilities) method in your *[EvtNetAdapterSetCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities)* callback function.
+1. In your *[EvtNetAdapterSetCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities)* callback, tell the system about your hardware's data buffer capabilities and constraints using the [NET_ADAPTER_RX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_rx_capabilities) and [NET_ADAPTER_TX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_tx_capabilities) data structure for the Rx and Tx path respectively. 
+2. Initialize the two capabilities structures by calling one of the initialization functions. For instance, a DMA-capable NIC client driver would use [NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_tx_capabilities_init_for_dma) and [NET_ADAPTER_RX_CAPABILITIES_INIT_SYSTEM_MANAGED](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_rx_capabilities_init_system_managed) to declare its hardware DMA capablities and to instruct the system to fully manage the data buffers on its behalf.
+3. Pass the initialized Tx and Rx capabilities structures to the [NetAdapterSetDatapathCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetdatapathcapabilities) method in your *[EvtNetAdapterSetCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities)* callback function.
 
 ## Example
 
