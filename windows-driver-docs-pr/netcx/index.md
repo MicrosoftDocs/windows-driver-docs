@@ -52,7 +52,7 @@ This section contains the following topics:
 * [Debugging a NetAdapterCx client driver](debugging-a-netadaptercx-client-driver.md)
 * [Transferring network data](transferring-network-data.md)
 * [Network data buffer management](network-data-buffer-management.md)
-* [Datapath descriptors and packet extensions](datapath-descriptors-and-packet-extensions.md)
+* [Packet descriptors and extensions](packet-descriptors-and-extensions.md)
 * [Configuring power management](configuring-power-management.md)
 * [NDIS-WDF function equivalents](ndis-wdf-function-equivalents.md)
 * [Summary of objects](summary-of-objects.md)

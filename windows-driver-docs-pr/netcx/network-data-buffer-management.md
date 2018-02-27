@@ -21,7 +21,7 @@ Buffer management is a new feature in NetAdapterCx 1.2 that enables Network Inte
 
 The choice of where data buffers are allocated from system memory for packet payloads is critical to the performance of the data path. In NetAdapterCx, the buffer management model is optimized for DMA-capable NIC hardware, and the best way for client drivers to take advantage of it is to let the system allocate data buffers on their behalf for both the Tx and Rx paths. However, client drivers can still influence where and how the system allocates the data buffers so they can be easily consumed by the client's hardware. 
 
-Consider a typical DMA capable NIC, for example. There are serval benefits to this approach:
+Consider a typical DMA-capable NIC, for example. There are serval benefits to this approach:
 
 1. The data buffers are allocated and freed by the system. Therefore, the client driver is freed from the burden of memory lifetime management.
 2. The system makes sure that the allocated data buffers are DMA-ready for the NIC hardware based on the capabilities declared by the client driver. Then, the client driver can simply program the data buffers into their hardware as-is without performing any additional DMA mapping operations.
