@@ -27,7 +27,7 @@ When you write a universal driver package, there are four design principles to c
 
 *  Declarative: Use directives in the INF file for installation operations and not extension points such as co-installers, RegisterDlls, etc.
 *  Componentized: System and/or OEM-specific customizations are in an [extension INF](../install/using-an-extension-inf-file.md) driver package separate from the base driver package, facilitating independent updates of different components owned by different organizations.
-*  Hardware Support Apps (HSA): Use [custom capabilities](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md) to associate a hardware-specific UWP (Universal Windows Platform) application with your driver.  The resulting app can be delivered and serviced from the Microsoft Store.
+*  Hardware Support Apps (HSA): An HSA is a [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/design/basics/design-and-ui-intro) app that is paired with a specific driver using a [custom capability](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md).  The resulting app can be delivered and serviced from the Microsoft Store.
 *  Universal API compliance: Binaries in the universal driver package only call APIs and DDIs that are included in the OneCore subset.  INF files use only universal INF syntax.
 
 In the documentation, we use the acronym DCHU to refer to the above principles.
