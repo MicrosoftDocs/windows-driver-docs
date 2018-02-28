@@ -19,7 +19,7 @@ A Universal INF file is an INF file that only uses the [subset of INF syntax](..
 
 Any binaries referenced by the Universal INF file must use only device driver interfaces (DDI) that are included in [UWP-based editions of Windows 10](windows-10-editions-for-universal-drivers.md).  These DDIs are marked as **Universal** on the corresponding documentation reference pages.  The driver binary can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the Windows Driver Model (WDM).
 
-Other binaries contained in your Universal Windows driver must pass the [API validation tests](../devtest/infverif.md).
+Other binaries contained in your Universal Windows driver must pass the [API validation tests](../develop/validating-universal-drivers.md).
 
 ## Design Principles
 
