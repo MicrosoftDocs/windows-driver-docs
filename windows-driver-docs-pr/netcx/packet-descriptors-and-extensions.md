@@ -23,7 +23,7 @@ This topic introduces concepts underlying packet descriptors and extensions in N
 
 ## Packet descriptor and extension design and benefits
 
-NetAdapterCx 1.2 introduces packet descriptors and a system for NIC client drivers to use packet extensions. Packet descriptors used by NetAdapterCx 1.2 and later are designed for high scalability and provide the follwing benefits.
+Packet descriptors used by NetAdapterCx 1.2 and later are designed for high scalability and provide the follwing benefits.
 
 ### Extensibility
 
@@ -62,5 +62,6 @@ NetAdapterCx client drivers can target network interface cards (NICs) that are c
 3. There is no need for pointers, which saves space.
 4. Features that aren't used occupy 0 bytes of space.
 
-## Using packet extensions in a NetAdapterCx client driver
+## Working with packet extensions
 
+TBD after filling out DDIs

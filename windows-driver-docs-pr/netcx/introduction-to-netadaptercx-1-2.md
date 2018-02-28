@@ -41,25 +41,26 @@ The following new DDIs and data structures were introduced in NetAdapterCx 1.2 t
 
 ## Multi-level ring buffers and datapath descriptors
 
-NetAdapterCx 1.2 brings multi-level ring buffers to each datapath queue, one for the queue's **NET_PACKET**s and one for its **NET_PACKET_FRAGMENT**s. Where before each queue had one ring buffer for its packets and NIC client drivers had to access fragments through the packet's members, now drivers can directly traverse "down a level" to a separate ring buffer for fragments.
+NetAdapterCx 1.2 brings multi-level ring buffers to each datapath queue, one for the queue's **NET_PACKET**s and one for its **NET_PACKET_FRAGMENT**s. Where before each queue had only one ring buffer for its packets, now fragments are organized "down a level" in a second, separate ring buffer from packets. Each packet in the packet ring buffer references the start of its fragments in the fragment ring buffer. Though drivers do not access the fragment ring buffer directly, the new organization of fragments in a ring buffer means that NIC client drivers can access fragments more transparently and use array-based logic in fragment operations. For example, getting a fragment based on its index in the packet or getting the number of fragments in a packet and `for` looping over them is now easier.
 
-Each queue also has a new datapath descriptor structure that describes its ring buffers. Several convenient macros are provided that use this datapath descriptor to easily access a particular ring buffer, get an individual fragment, or get a count of all fragments in a packet. Also, many of the methods defined in the [Netadapterpacket.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/) header have been updated to use the datapath descriptor structure, so client drivers have consistency in ring buffer manipulation.
+To interface with multiple ring buffers, each queue now has a new datapath descriptor structure that describes all of its ring buffers. Several convenient macros are provided that use this datapath descriptor to easily access a particular ring buffer or fragment. Also, many of the methods defined in the [Netadapterpacket.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/) header have been updated to use the datapath descriptor structure, so client drivers have consistency in ring buffer manipulation.
+
+For an example of accessing fragments in the fragment ring buffer, see [NET_PACKET_GET_FRAGMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_packet_get_fragment).
 
 The following new DDIs and data structures support multi-level ring buffers and datapath descriptors.
 
 ### Multi-level ring buffers
 
-- NET_DATAPATH_RING_BUFFER_INDEX
-- NET_DATAPATH_DESCRIPTOR_GET_PACKET_RING_BUFFER
-- NET_DATAPATH_DESCRIPTOR_GET_FRAGMENT_RING_BUFFER
-- NET_PACKET_GET_FRAGMENT
+- [NET_DATAPATH_RING_BUFFER_INDEX](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ne-netdatapathdescriptor-_net_datapath_ring_buffer_index)
+- [NET_DATAPATH_DESCRIPTOR_GET_PACKET_RING_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_datapath_descriptor_get_packet_ring_buffer)
+- [NET_DATAPATH_DESCRIPTOR_GET_FRAGMENT_RING_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_datapath_descriptor_get_fragment_ring_buffer)
+- [NET_PACKET_GET_FRAGMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_packet_get_fragment)
 - NetRingBufferReturnAllPackets
-- NetPacketGetFragmentCount
+- [NetPacketGetFragmentCount](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-netpacketgetfragmentcount)
 
 ### Datapath descriptors
 
-- PCNET_DATAPATH_DESCRIPTOR
-- NET_DATAPATH_DESCRIPTOR
+- [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor)
 - NetRxQueueGetDatapathDescriptor
 - NetTxQueueGetDatapathDescriptor
 
@@ -159,7 +160,7 @@ The following DDIs and data structures were removed in NetAdapterCx 1.2. Their r
 | <ul><li>NET_ADAPTER_DATAPATH_CAPABILITIES</li><li>NET_ADAPTER_DATAPATH_CAPABILITIES_INIT</li></ul> | This combined datapath capabilities structure and its init method have been replaced by separate Rx and Tx capabilities structures/init methods. For more info, see [NET_ADAPTER_RX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_rx_capabilities) and [NET_ADAPTER_TX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_tx_capabilities). |
 | <ul><li>NET_RXQUEUE_DMA_ALLOCATOR_CONFIG</li><li>NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT</li><li>NetRxQueueInitSetDmaAllocatorConfig</li><li>NetRxQueueQueryAllocatorCacheEnabled</li></ul> | DMA capabilities have been genericized for Rx queues and Tx queues in NetAdapterCx 1.2, obviating the need for specialized Rx queue DMA structures and methods. For more info, see [NET_ADAPTER_DMA_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_dma_capabilities), [NET_ADAPTER_RX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_rx_capabilities), and [NET_ADAPTER_TX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_tx_capabilities). |
 | <ul><li>NetRxQueueGetBufferLayoutHint</li></ul> | TBD |
-| <ul><li>NetRxQueueGetRingBuffer</li><li>NetTxQueueGetRingBuffer</li></ul> | NIC client drivers now retrieve ring buffers by using a queue's [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor) structure. After calling **NetRx(Tx)QueueGetDatapathDescriptor** to get the descriptor, drivers can call either [NET_DATAPATH_DESCRIPTOR_GET_PACKET_RING_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nm-netdatapathdescriptor-net_datapath_descriptor_get_packet_ring_buffer) or [NET_DATAPATH_DESCRIPTOR_GET_FRAGMENT_RING_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nm-netdatapathdescriptor-net_datapath_descriptor_get_fragment_ring_buffer) to get the ring buffer they need. |
+| <ul><li>NetRxQueueGetRingBuffer</li><li>NetTxQueueGetRingBuffer</li></ul> | NIC client drivers now retrieve ring buffers by using a queue's [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor) structure. After calling **NetRx(Tx)QueueGetDatapathDescriptor** to get the descriptor, drivers can call either [NET_DATAPATH_DESCRIPTOR_GET_PACKET_RING_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_datapath_descriptor_get_packet_ring_buffer) or [NET_DATAPATH_DESCRIPTOR_GET_FRAGMENT_RING_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_datapath_descriptor_get_fragment_ring_buffer) to get the ring buffer they need. |
 
 ## Compiling a NetAdapterCx 1.2 client driver
 
