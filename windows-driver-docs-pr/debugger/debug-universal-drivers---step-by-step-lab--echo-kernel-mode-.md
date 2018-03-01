@@ -187,7 +187,7 @@ Reboot the target system.
 
 **&lt;-On the host system**
 
-In a minute or two, debug output should be displayed on the host system.
+In a minute or two, debug output should be displayed on the host system. You might need to press break button on the tool bar to make below log show.
 
 ![windows debugger showing command window output from a live kernel connection](images/debuglab-image-winddbg-hh.png)
 
@@ -343,7 +343,7 @@ To download and build the Echo sample audio driver, perform the following steps.
 
 4.  **Set the runtime library**
 
-    Set the runtime library - Change Runtime Library from DLL version to non DLL version. Without this setting, you have to install the MSVC runtime to the target computer separately.
+    Set the runtime library of the echoapp project - Change Runtime Library from DLL version to non DLL version, you can bring below dialog by right click echoapp project symbol and select Properties. Without this setting, you have to install the MSVC runtime to the target computer separately.
 
     ![echo property page highlighting the runtime library setting](images/debuglab-image-echoapp-properties.png)
 
@@ -404,12 +404,13 @@ To install the driver on the target system, perform the following steps.
 
 Enable the ability to run test signed drivers:
 
-a. Open Windows Settings.
-b. In Update and Security, select **Recovery**.
-c. Under Advanced startup, click **Restart Now**.
-d. When the PC reboots, select **Startup options**.
-e. Select Disable driver signature enforcement by pressing the **F7** key.
-f. Reboot the target computer.
+a. Open Windows Settings.  
+b. In Update and Security, select **Recovery**.  
+c. Under Advanced startup, click **Restart Now**.  
+d. When the PC reboots, select **Startup options**. In windows 10, select **Troubleshoot** / **Advanced options** / **Startup Settings** , then click Restart button.  
+e. Select Disable driver signature enforcement by pressing the **F7** key.  
+f. Reboot the target computer.  
+
 **&lt;- On the host system**
 
 Navigate to the Tools folder in your WDK installation and locate the DevCon tool. For example, look in the following folder:
