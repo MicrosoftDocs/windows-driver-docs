@@ -17,7 +17,7 @@ ms.technology: windows-devices
 
 # Using a custom capability to pair a Hardware Support App (HSA) with a driver
 
-This topic describes how to associate your [Universal Windows Platform (UWP)](https://msdn.microsoft.com/50a5605e-3a91-41db-800a-9180717c1e86) app with a driver or [RPC (Remote Procedure Call)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378651) endpoint using a custom capability.  When paired in this fashion, the UWP app is referred to as a Hardware Support App (HSA).
+This topic describes how to associate your [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/design/basics/design-and-ui-intro) app with a driver or [RPC (Remote Procedure Call)](https://msdn.microsoft.com/library/windows/desktop/aa378651) endpoint using a custom capability.  When paired in this fashion, the app is referred to as a Hardware Support App (HSA).
 
 The steps required by the owner of the driver or RPC endpoint are described in [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](creating-a-custom-capability-to-pair-driver-with-hsa.md).
 

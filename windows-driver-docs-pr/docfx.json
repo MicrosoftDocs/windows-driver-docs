@@ -19,6 +19,9 @@
         "uhfHeaderId": "MSDocsHeader-WinHW",
         "breadcrumb_path": "/windows-hardware/drivers/breadcrumbs/toc.json",
         "searchScope": ["Drivers"],
+        "feedback_system": "GitHub",
+        "feedback_github_repo": "MicrosoftDocs/windows-driver-docs",
+        "feedback_product_url": "https://wpdev.uservoice.com/",
         "contributors_to_exclude": ["barrygolden", "PageWriter-MSFT", "tedhudek"]
     },
     "externalReference": [
