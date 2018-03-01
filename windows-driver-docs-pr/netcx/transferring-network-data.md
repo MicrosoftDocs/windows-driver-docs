@@ -73,9 +73,12 @@ See the above pages for details on what the client needs to do in each event cal
 
 ## Using the ring buffer
 
-The [**NET_RING_BUFFER**](net-ring-buffer.md) is a circular buffer of one or more [**NET_PACKET**](net-packet.md) structures that is shared between NetAdapterCx and a client.
+A [**NET_RING_BUFFER**](net-ring-buffer.md) is a circular buffer of one or more [**NET_PACKET**](net-packet.md) structures that is shared between NetAdapterCx and a client. In NetAdapterCx 1.2 and later, each datapath queue has two ring buffers: one **NET_PACKET** ring buffer and one [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) ring buffer. Both ring buffers are described by a [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor) structure.
 
-Each element in a [**NET_RING_BUFFER**](net-ring-buffer.md) is owned by either the client driver or NetAdapterCx.  The values of the index members control ownership.  Specifically, the client driver owns every element from **BeginIndex** to **EndIndex - 1** inclusive.
+> [!IMPORTANT]
+> Each packet in the packet ring buffer references the start of its fragments in the fragment ring buffer. Therefore, the fragment ring buffer makes it easy to query a packet for how many fragments it has, retrieve a single fragment, or loop over all fragments in a packet, but it is not accessed directly. This topic explains how client drivers work with the packet ring buffer.
+
+Each element in a packet [**NET_RING_BUFFER**](net-ring-buffer.md) is owned by either the client driver or NetAdapterCx.  The values of the index members control ownership.  Specifically, the client driver owns every element from **BeginIndex** to **EndIndex - 1** inclusive.
 For example, if **BeginIndex** is 2 and **EndIndex** is 5, the client driver owns three elements: the elements with index values 2, 3, and 4.
 If **BeginIndex** is equal to **EndIndex**, the client driver does not own any elements.
 
@@ -98,16 +101,17 @@ The NetAdapter data path is a polling model.  This polling model is implemented 
 
 ## PCI Device Drivers
 
-Drivers for devices that use ring buffers at the hardware level (for example typical PCI NICs) typically manipulate the [**NET_RING_BUFFER**](net-ring-buffer.md) indices directly.
+Drivers for devices that use ring buffers at the hardware level (for example, typical PCI NICs) normally manipulate the [**NET_RING_BUFFER**](net-ring-buffer.md) indices directly.
 
 Here is a typical sequence for a PCI device driver:
 
-1. Call [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md) or [**NetTxQueueGetRingBuffer**](nettxqueuegetringbuffer.md) to retrieve the ring buffer.
-2. Program packets to hardware by looping until the ring buffer's **NextIndex** equals **EndIndex**:
+1. Call [**NetRxQueueGetDatapathDescriptor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/nf-netrxqueue-netrxqueuegetdatapathdescriptor) or [**NetTxQueueGetDatapathDescriptor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nf-nettxqueue-nettxqueuegetdatapathdescriptor) to retrieve the queue's datapath descriptor. You can store this in the queue's context space to reduce calls out of the driver.
+2. Use the datapath descriptor to retrieve the queue's packet ring buffer by calling [NET_DATAPATH_DESCRIPTOR_GET_PACKET_RING_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_datapath_descriptor_get_packet_ring_buffer).
+3. Program packets to hardware by looping until the ring buffer's **NextIndex** equals **EndIndex**:
     1.  Call [**NetRingBufferGetPacketAtIndex**](NetRingBufferGetPacketAtIndex.md) on **NextIndex**.
     2.  Translate the **NET_PACKET** descriptor into the associated hardware packet descriptors.
     3.  Call [**NetRingBufferIncrementIndex**](NetRingBufferIncrementIndex.md).
-3. Complete packets by looping until **BeginIndex** equals **NextIndex** or until an incomplete packet is reached:
+4. Complete packets by looping until **BeginIndex** equals **NextIndex** or until an incomplete packet is reached:
     1.  Call [**NetRingBufferGetPacketAtIndex**](NetRingBufferGetPacketAtIndex.md) on **BeginIndex**.
     2.  Detect if the associated hardware descriptors indicate completion.  If not, terminate.
     3.  Translate the hardware descriptor to the [**NET_PACKET**](net-packet.md).
@@ -115,7 +119,7 @@ Here is a typical sequence for a PCI device driver:
 
 ## Device Drivers with Asynchronous I/O
 
-While a client driver that targets a device with an asynchronous I/O model such as USB can also modify the [**NET_RING_BUFFER**](net-ring-buffer.md) indices directly, we recommend instead using  higher level routines to manage out of order completions:
+While a client driver that targets a device with an asynchronous I/O model, such as USB, can also modify the [**NET_RING_BUFFER**](net-ring-buffer.md) indices directly, we recommend instead using higher level routines to manage out-of-order-completions:
 
 * [**NetRingBufferAdvanceNextPacket**](netringbufferadvancenextpacket.md)
 * [**NetRingBufferGetNextPacket**](netringbuffergetnextpacket.md)
@@ -123,11 +127,12 @@ While a client driver that targets a device with an asynchronous I/O model such 
 
 Here is a typical sequence for a device driver with asynchronous I/O:
 
-1. Call [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md) or [**NetTxQueueGetRingBuffer**](nettxqueuegetringbuffer.md) to retrieve the ring buffer.
-2. Iterate on the packets in the ring buffer.  Typically, do the following in a loop:
+1. [**NetRxQueueGetDatapathDescriptor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/nf-netrxqueue-netrxqueuegetdatapathdescriptor) or [**NetTxQueueGetDatapathDescriptor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nf-nettxqueue-nettxqueuegetdatapathdescriptor) to retrieve the queue's datapath descriptor.
+2. Use the datapath descriptor to retrieve the queue's packet ring buffer by calling [NET_DATAPATH_DESCRIPTOR_GET_PACKET_RING_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_datapath_descriptor_get_packet_ring_buffer).
+3. Iterate on the packets in the ring buffer. Typically, do the following in a loop:
     1. Call [**NetRingBufferGetNextPacket**](netringbuffergetnextpacket.md).
-    2. Program hardware to receive or transmit.  This initiates the asynchronous I/O.
+    2. Program hardware to receive or transmit. This initiates the asynchronous I/O.
     3. Call [**NetRingBufferAdvanceNextPacket**](netringbufferadvancenextpacket.md).
-3. Call [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md).
+4. Call [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md).
 
-As asynchronous I/O completions come in, the client sets the **Completed** flag of the associated [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) to **TRUE**.  This enables [**NetRingBufferReturnCompletedPackets**](NetRingBufferReturnCompletedPackets.md) to complete packets.
+As asynchronous I/O completions come in, the client sets the **Completed** flag of the first associated [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) to **TRUE**.  This enables [**NetRingBufferReturnCompletedPackets**](NetRingBufferReturnCompletedPackets.md) to complete packets.
