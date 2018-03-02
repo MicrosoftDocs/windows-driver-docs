@@ -9,7 +9,7 @@
       ],
     "resource": [
         {
-          "files": ["**/images/**", "**/*.json", "**/*.png"],
+          "files": ["**/images/**", "**/*.json", "**/*.png", "CONTRIBUTING"],
           "exclude": ["**/obj/**", "**/README.md"]
         }
     ],
