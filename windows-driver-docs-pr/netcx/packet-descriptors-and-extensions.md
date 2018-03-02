@@ -65,3 +65,7 @@ NetAdapterCx client drivers can target network interface cards (NICs) that are c
 ## Working with packet extensions
 
 TBD after filling out DDIs
+
+- Registering in SetCapabilities callback??
+- Querying in queue creation and storing in context (see code examples on queue create ref pages)
+- Available constants, wrapper functions, and helper macros

@@ -66,7 +66,7 @@ The following DDIs and data structures are new in NetAdapterCx 1.2 for multi-lev
 - [NetTxQueueGetDatapathDescriptor](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nf-nettxqueue-nettxqueuegetdatapathdescriptor)
 - [NetRingBufferReturnAllPackets](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-netringbufferreturnallpackets)
 
-The following DDIs and data structures were updated to use a [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor) as a parameter.
+The following DDIs and data structures were updated in NetAdapterCx 1.2 to use a [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor) as a parameter.
 
 - [NetRingBufferGetPacketAtIndex](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-netringbuffergetpacketatindex)
 - [NetRingBufferGetNextPacket](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-netringbuffergetnextpacket)
@@ -78,16 +78,16 @@ The following DDIs and data structures were updated to use a [NET_DATAPATH_DESCR
 
 ## Packet extensions and advanced offloads
 
-In addition to datapath descriptors for queues, NetAdapterCx also introduces packet descriptors and packet extensions for each **NET_PACKET**. Packet descriptors hold OS-specific information, while packet extensions provide space for NIC client drivers to store per-packet metadata. Attached to each packet's core descriptor, extensions are used by client drivers to share information with the upper layers. They can also hold advanced offload information like checksum, LSO, and RSS hash, or they can hold application-specific details.
+In addition to datapath descriptors for queues, NetAdapterCx also introduces packet descriptors and packet extensions for each **NET_PACKET**. Packet descriptors hold OS-specific information, while packet extensions provide space for NIC client drivers to store per-packet metadata. Attached to each packet's core descriptor, extensions are used by client drivers to share information with the upper layers. They can hold advanced offload information like checksum, LSO, and RSS hash results, or they can hold application-specific details.
 
 For more information about packet descriptors and extensions, see [Packet descriptors and extensions](packet-descriptors-and-extensions.md).
 
-### New DDIs and data structures for packet extensions and advanced offloads
+The following DDIs and data structures are new in NetAdapterCx 1.2 for packet extensions and advanced offloads.
 
 - [NET_PACKET_EXTENSION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/ns-netadapterpacket-_net_packet_extension)
-- NET_PACKET_EXTENSION_INIT
-- NET_PACKET_EXTENSION_QUERY
-- NET_PACKET_EXTENSION_QUERY_INIT
+- [NET_PACKET_EXTENSION_INIT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-net_packet_extension_init)
+- [NET_PACKET_EXTENSION_QUERY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/ns-netadapterpacket-_net_packet_extension_query)
+- [NET_PACKET_EXTENSION_QUERY_INIT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-net_packet_extension_query_init)
 - NetPacketGetExtension
 - NetRxQueueGetPacketExtensionOffset
 - NetTxQueueGetPacketExtensionOffset
@@ -96,7 +96,7 @@ For more information about packet descriptors and extensions, see [Packet descri
 - NET_PACKET_RECEIVE_SEGMENT_COALESCENCE
 - NetPacketGetPacketChecksum
 - NetPacketGetPacketLargeSendSegmentation
-- NetPacketGetPacketReceiveSetmentCoalescence
+- NetPacketGetPacketReceiveSegmentCoalescence
 
 ## Multiple NetAdapter objects per device
 
@@ -129,11 +129,10 @@ In version 1.2 of NetAdapterCx, NIC client drivers can now create, start, and st
 
 ## Other new DDIs and data structures
 
-- SIZE_T
 - NetRequestGetAdapter
-- NETADAPTER
 - NetPacketIsIpv4
 - NetPacketIsIpv6
+- NET_PACKET_GET_FRAGMENT_VALID
 
 ## Other updated DDIs and data structures
 
@@ -151,7 +150,7 @@ The following DDIs and data structures were removed in NetAdapterCx 1.2. Their r
 | <ul><li>NET_ADAPTER_DATAPATH_CAPABILITIES</li><li>NET_ADAPTER_DATAPATH_CAPABILITIES_INIT</li></ul> | This combined datapath capabilities structure and its init method have been replaced by separate Rx and Tx capabilities structures/init methods. For more info, see [NET_ADAPTER_RX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_rx_capabilities) and [NET_ADAPTER_TX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_tx_capabilities). |
 | <ul><li>NET_RXQUEUE_DMA_ALLOCATOR_CONFIG</li><li>NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT</li><li>NetRxQueueInitSetDmaAllocatorConfig</li><li>NetRxQueueQueryAllocatorCacheEnabled</li></ul> | DMA capabilities have been genericized for Rx queues and Tx queues in NetAdapterCx 1.2, obviating the need for specialized Rx queue DMA structures and methods. For more info, see [NET_ADAPTER_DMA_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_dma_capabilities), [NET_ADAPTER_RX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_rx_capabilities), and [NET_ADAPTER_TX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_tx_capabilities). |
 | <ul><li>NetRxQueueGetBufferLayoutHint</li></ul> | TBD |
-| <ul><li>NetRxQueueGetRingBuffer</li><li>NetTxQueueGetRingBuffer</li></ul> | NIC client drivers now retrieve ring buffers by using a queue's [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor) structure. After calling **NetRx(Tx)QueueGetDatapathDescriptor** to get the descriptor, drivers can call either [NET_DATAPATH_DESCRIPTOR_GET_PACKET_RING_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_datapath_descriptor_get_packet_ring_buffer) or [NET_DATAPATH_DESCRIPTOR_GET_FRAGMENT_RING_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_datapath_descriptor_get_fragment_ring_buffer) to get the ring buffer they need. |
+| <ul><li>NetRxQueueGetRingBuffer</li><li>NetTxQueueGetRingBuffer</li></ul> | NIC client drivers now retrieve ring buffers by using a queue's [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor) structure. After calling **NetRx(Tx)QueueGetDatapathDescriptor** to get the descriptor, drivers call [NET_DATAPATH_DESCRIPTOR_GET_PACKET_RING_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_datapath_descriptor_get_packet_ring_buffer) to get the packet ring buffer. |
 
 ## Compiling a NetAdapterCx 1.2 client driver
 
