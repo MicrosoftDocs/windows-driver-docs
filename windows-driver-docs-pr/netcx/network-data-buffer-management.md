@@ -45,46 +45,13 @@ Note that the example also sets some hints about its fragment buffers after it i
 
 Error handling has been left out for clarity.
 
-```c++
-NTSTATUS
-MyDeviceAdd(
-    WDFDRIVER Driver,
-    PWDFDEVICE_INIT DeviceInit
-)
-{
-    NTSTATUS status;
-
-    // Other device setup tasks
-    ...
-
-    // Set up the NETADAPTER object
-    NET_ADAPTER_CONFIG  adapterConfig;
-    NET_ADAPTER_CONFIG_INIT(&adapterConfig,
-                            MyAdapterSetCapabilities,
-                            MyAdapterCreateTxQueue,
-                            MyAdapterCreateRxQueue
-                            );
-
-    WDF_OBJECT_ATTRIBUTES adapterAttributes;
-    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&adapterAttributes, MY_CONTEXT);
-
-    NETADAPTER netAdapter;
-    status = NetAdapterCreate(wdfDevice,
-                              &adapterAttributes,
-                              &adapterConfig,
-                              &netAdapter
-                              );
-
-    // Other device setup tasks
-    ...
-}
-
+```C++
 NTSTATUS
 MyAdapterSetCapabilities(
     NETADAPTER Adapter
 )
 {
-    NTSTATUS status;
+    NTSTATUS status = STATUS_SUCCESS;
 
     // Get the device context
     PMY_DEVICE_CONTEXT deviceContext = GetMyContextFromDevice(Adapter);
@@ -126,7 +93,7 @@ MyAdapterSetCapabilities(
     // Set the adapter's datapath capabilities
     NetAdapterSetDatapathCapabilities(Adapter, &txCapabilities, &rxCapabilities);
 
-    // Set other needed capabilities
+    // Set other needed capabilities such as registring for packet extensions
     ...
 }
 ```

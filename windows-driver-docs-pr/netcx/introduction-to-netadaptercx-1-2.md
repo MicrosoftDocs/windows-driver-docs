@@ -21,7 +21,7 @@ This topic introduces version 1.2 of the WDF Network Adapter Class Extension (Ne
 
 Buffer management is a new feature in NetAdapterCx 1.2 that enables Network Interface Card (NIC) client drivers and the operating system to work together when allocating packet data buffers from system memory for the transmit (Tx) and receive (Rx) data paths. This can result in faster performance for the NIC, easier memory lifetime management for the NIC's client driver, and more control for the system over the memory.
 
-For more info about buffer management, see [Network data buffer management](network-data-buffer-management.md).
+For more information about buffer management, see [Network data buffer management](network-data-buffer-management.md).
 
 ### New DDIs and data structures for buffer management
 
@@ -48,7 +48,7 @@ For more info about buffer management, see [Network data buffer management](netw
 
 ## Multi-level ring buffers and datapath descriptors
 
-NetAdapterCx 1.2 brings multi-level ring buffers to each datapath queue, one for the queue's [NET_PACKET](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet)s and one for its [NET_PACKET_FRAGMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_fragment)s. Where before each queue had only one ring buffer for its packets and fragment organization was opaque to drivers, now fragments are grouped "down a level" in a second, separate ring buffer from packets. 
+NetAdapterCx 1.2 brings multi-level ring buffers to each datapath queue, one [NET_PACKET](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) ring buffer and one [NET_PACKET_FRAGMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_fragment) ring buffer. Where before each queue had only one ring buffer for its packets and fragment organization was opaque to drivers, now fragments are grouped "down a level" in a second, separate ring buffer from packets. 
 
 Each packet in the packet ring buffer references the start of its fragments in the fragment ring buffer. Client drivers only work with the packet buffer directly, but this new arrangement of fragments means that they can now easily query a packet for how many fragments it has, retrieve a single fragment, or loop over all fragments in a packet. To do this, NetAdapterCx 1.2 provides several convenient macros and methods: [NetPacketGetFragmentCount](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-netpacketgetfragmentcount) and [NET_PACKET_GET_FRAGMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_packet_get_fragment).
 
@@ -76,27 +76,26 @@ The following DDIs and data structures were updated in NetAdapterCx 1.2 to use a
 - [NetPacketGetContextFromToken](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-netpacketgetcontextfromtoken)
 - [NetPacketGetTypedContext](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-netpacketgettypedcontext)
 
-## Packet extensions and advanced offloads
+## Packet extensions and offloads
 
-In addition to datapath descriptors for queues, NetAdapterCx also introduces packet descriptors and packet extensions for each **NET_PACKET**. Packet descriptors hold OS-specific information, while packet extensions provide space for NIC client drivers to store per-packet metadata. Attached to each packet's core descriptor, extensions are used by client drivers to share information with the upper layers. They can hold advanced offload information like checksum, LSO, and RSS hash results, or they can hold application-specific details.
+In addition to datapath descriptors for queues, NetAdapterCx also introduces packet descriptors and packet extensions for each **NET_PACKET**. Packet descriptors hold OS-specific information, while packet extensions provide space for NIC client drivers to store per-packet metadata. Attached to each packet's core descriptor, extensions are used by client drivers to share information with the upper layers. They can hold offload information for checksum, large send offload (LSO), and receive segment coalescence (RSC), or they can hold application-specific details.
 
 For more information about packet descriptors and extensions, see [Packet descriptors and extensions](packet-descriptors-and-extensions.md).
 
-The following DDIs and data structures are new in NetAdapterCx 1.2 for packet extensions and advanced offloads.
+The following DDIs and data structures are new in NetAdapterCx 1.2 for packet extensions and offloads.
 
 - [NET_PACKET_EXTENSION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/ns-netadapterpacket-_net_packet_extension)
 - [NET_PACKET_EXTENSION_INIT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-net_packet_extension_init)
 - [NET_PACKET_EXTENSION_QUERY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/ns-netadapterpacket-_net_packet_extension_query)
 - [NET_PACKET_EXTENSION_QUERY_INIT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-net_packet_extension_query_init)
-- NetPacketGetExtension
-- NetRxQueueGetPacketExtensionOffset
-- NetTxQueueGetPacketExtensionOffset
-- NET_PACKET_ADVANCED_OFFLOAD
-- NET_PACKET_LARGE_SEND_SEGMENTATION
-- NET_PACKET_RECEIVE_SEGMENT_COALESCENCE
-- NetPacketGetPacketChecksum
-- NetPacketGetPacketLargeSendSegmentation
-- NetPacketGetPacketReceiveSegmentCoalescence
+- [NetPacketGetExtension](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/nf-netpacket-netpacketgetextension)
+- [NetRxQueueGetPacketExtensionOffset](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/nf-netrxqueue-netrxqueuegetpacketextensionoffset)
+- [NetTxQueueGetPacketExtensionOffset](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nf-nettxqueue-nettxqueuegetpacketextensionoffset)
+- [NET_PACKET_LARGE_SEND_SEGMENTATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_large_send_segmentation)
+- [NET_PACKET_RECEIVE_SEGMENT_COALESCENCE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_receive_segment_coalescence)
+- [NetPacketGetPacketChecksum](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/nf-netpacket-netpacketgetpacketchecksum)
+- [NetPacketGetPacketLargeSendSegmentation](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/nf-netpacket-netpacketgetpacketlargesendsegmentation)
+- [NetPacketGetPacketReceiveSegmentCoalescence](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/nf-netpacket-netpacketgetpacketreceivesegmentcoalescence)
 
 ## Multiple NetAdapter objects per device
 
