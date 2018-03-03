@@ -64,7 +64,7 @@ NetAdapterCx client drivers can target network interface cards (NICs) that are c
 
 ## Registering packet extensions
 
-The first step in working with packet extensions in your NIC client driver is to declare and register them in your *[EvtNetAdapterSetCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities)* callback function. You might do so like in the following example. Note that the example leaves error handling out for clarity.
+The first step in working with packet extensions in your NIC client driver is to declare and register them in your *[EvtNetAdapterSetCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities)* callback function. You might do so like in the following example. Note that the example leaves out error handling for clarity.
 
 > [!IMPORTANT]
 > This example calls the **NetAdapterRegisterPacketExtension** method, which is available in the *NetPacketExtensionP.h* header from the [Realtek Github sample driver](https://github.com/Microsoft/NetAdapter-Cx-Driver-Samples/tree/master/RtEthSample). Because this header is prereleased product, it may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the contents of this header.
@@ -109,7 +109,7 @@ MyAdapterSetCapabilities(
 
 ## Querying packet extension offsets for datapath queues
 
-After registering packet extensions during *EvtNetAdapterSetCapabilities*, you'll need the extension offsets to access each one as you process your packets. To reduce calls out of your driver and improve performance, you can query the offsets for your extensions during the *EvtNetAdapterCreateTx(Rx)Queue* callback functions and store the offset information in your queue context. Here is an example for a transmit (Tx) queue. This example is similar to the example on *[EvtNetAdapterCreateTxQueue](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_create_txqueue)* but focuses only on packet extensions.
+After registering packet extensions during *EvtNetAdapterSetCapabilities*, you'll need the extension offsets to access each one as you process your packets. To reduce calls out of your driver and improve performance, you can query the offsets for your extensions during the *EvtNetAdapterCreateTx(Rx)Queue* callback function and store the offset information in your queue context. Here is an example for a transmit queue. This example is similar to the example on *[EvtNetAdapterCreateTxQueue](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_create_txqueue)* but focuses only on packet extensions.
 
 ```C++
 NTSTATUS
@@ -188,9 +188,9 @@ To help with common packet extension operations, NetAdapterCx provides definitio
 | Constant | Definition |
 | --- | --- |
 | NET_PACKET_EXTENSION_INVALID_OFFSET | Guards against invalid offset sizes. |
-| <ul><li>NET_PACKET_EXTENSION_CHECKSUM_NAME</li><li>NET_PACKET_EXTENSION_CHECKSUM_VERSION_1</li><li>NET_PACKET_EXTENSION_CHECKSUM_VERSION_1_SIZE</li></ul> | The name, version, and size of the version of the checksum packet extension. |
-| <ul><li>NET_PACKET_EXTENSION_LSO_NAME</li><li>NET_PACKET_EXTENSION_LSO_VERSION_1</li><li>NET_PACKET_EXTENSION_LSO_VERSION_1_SIZE</li></ul> | The name, version, and size of the version of the large send offload (LSO) packet extension. |
-| <ul><li>NET_PACKET_EXTENSION_RSC_NAME</li><li>NET_PACKET_EXTENSION_RSC_VERSION_1</li><li>NET_PACKET_EXTENSION_RSC_VERSION_1_SIZE</li></ul> | The name, version, and size of the version of the receive segment coalescence (RSC) packet extension. |
+| <ul><li>NET_PACKET_EXTENSION_CHECKSUM_NAME</li><li>NET_PACKET_EXTENSION_CHECKSUM_VERSION_1</li><li>NET_PACKET_EXTENSION_CHECKSUM_VERSION_1_SIZE</li></ul> | The name, version, and size of the checksum packet extension. |
+| <ul><li>NET_PACKET_EXTENSION_LSO_NAME</li><li>NET_PACKET_EXTENSION_LSO_VERSION_1</li><li>NET_PACKET_EXTENSION_LSO_VERSION_1_SIZE</li></ul> | The name, version, and size of the large send offload (LSO) packet extension. |
+| <ul><li>NET_PACKET_EXTENSION_RSC_NAME</li><li>NET_PACKET_EXTENSION_RSC_VERSION_1</li><li>NET_PACKET_EXTENSION_RSC_VERSION_1_SIZE</li></ul> | The name, version, and size of the receive segment coalescence (RSC) packet extension. |
 
 Additionally, NetAdapterCx provides three helper methods that act as wrappers around the [NetPacketGetExtension](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/nf-netpacket-netpacketgetextension) method. Each of these methods returns a pointer to the appropriate type of structure.
 
