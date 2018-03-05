@@ -12,6 +12,7 @@
 ## [WDF Architecture](kernel-mode-driver-framework-architecture.md)
 ## [Writing a Simple WDF Driver](writing-a-simple-kmdf-driver.md)
 ## [DriverEntry for WDF Drivers routine](driverentry-for-kmdf-drivers.md)
+## [WDFDEVICE_INIT](wdfdevice_init.md)
 ## [Sample KMDF Drivers](sample-kmdf-drivers.md)
 ## [Sample UMDF Drivers](sample-umdf-drivers.md)
 ## [Sample Toaster Driver Programming Tour](sample-toaster-driver-programming-tour.md)

@@ -234,6 +234,7 @@
 ### [Handling Events](handling-events.md)
 ### [Minidriver Synchronization](minidriver-synchronization.md)
 ### [Synchronization Examples](synchronization-examples.md)
+### [Handling dispatch routines in stream drivers](handling-dispatch-routines-in-stream-drivers.md)
 ### [Notes on Writing Stream Class Minidrivers](notes-on-writing-stream-class-minidrivers.md)
 ### [Stream Class Debugging](stream-class-debugging.md)
 ## [USBCAMD Minidriver Library](usbcamd-minidriver-library.md)
