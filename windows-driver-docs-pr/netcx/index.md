@@ -53,6 +53,7 @@ This section contains the following topics:
 * [Transferring network data](transferring-network-data.md)
 * [Network data buffer management](network-data-buffer-management.md)
 * [Packet descriptors and extensions](packet-descriptors-and-extensions.md)
+* [NetAdapterCx Receive Side Scaling](netadaptercx-receive-side-scaling.md)
 * [Configuring power management](configuring-power-management.md)
 * [NDIS-WDF function equivalents](ndis-wdf-function-equivalents.md)
 * [Summary of objects](summary-of-objects.md)

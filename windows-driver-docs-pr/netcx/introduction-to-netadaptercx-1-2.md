@@ -101,17 +101,20 @@ The following DDIs and data structures are new in NetAdapterCx 1.2 for packet ex
 
 In version 1.2 of NetAdapterCx, NIC client drivers can now create, start, and stop multiple NETADAPTER objects per device object.
 
-- NetAdapterStart
-- NetAdapterStop
+- [NetAdapterStart](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart)
+- [NetAdapterStop]((https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstop)
 
 ## NetAdapter RSS
 
-- EVT_NET_ADAPTER_CREATE_RSSQUEUE_GROUP
+TBD short paragraph
+
+For more information about RSS in NetAdapterCx, see [NetAdapterCx Receive Side Scaling](netadaptercx-receive-side-scaling.md).
+
+- [EVT_NET_ADAPTER_CREATE_RSSQUEUE_GROUP](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_create_rssqueue_group)
 - NetAdapterGetReceiveScalingHashSecretKey
 - NetAdapterGetReceiveScalingHashType
 - NetAdapterGetReceiveScalingProtocolTypes
 - NetAdapterSetReceiveScalingCapabilities
-- NETRSSQUEUEGROUP_INIT
 - EVT_NET_ADAPTER_RECEIVE_SCALING_ENABLE
 - EVT_NET_ADAPTER_RECEIVE_SCALING_DISABLE
 - EVT_NET_ADAPTER_RECEIVE_SCALING_SET_HASH_SECRET_KEY
