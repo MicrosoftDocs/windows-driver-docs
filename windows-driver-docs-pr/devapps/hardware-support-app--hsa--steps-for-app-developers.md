@@ -1,5 +1,5 @@
 ---
-title: Using a custom capability to pair a Hardware Support App (HSA) with a driver
+title: Hardware Support App (HSA) Steps for App Developers
 author: windows-driver-content
 description: Guide to developing a Hardware Support App (HSA) with custom capabilities
 keywords:
@@ -15,13 +15,19 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Using a custom capability to pair a Hardware Support App (HSA) with a driver
+# Hardware Support App (HSA): Steps for App Developers
 
-This topic describes how to associate your [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/design/basics/design-and-ui-intro) app with a driver or [RPC (Remote Procedure Call)](https://msdn.microsoft.com/library/windows/desktop/aa378651) endpoint using a custom capability.  When paired in this fashion, the app is referred to as a Hardware Support App (HSA).
+This topic describes how to associate a device-specific app with a driver or [RPC (Remote Procedure Call)](https://msdn.microsoft.com/library/windows/desktop/aa378651) endpoint.  When paired in this fashion, the app is referred to as a Hardware Support App (HSA).  You can distribute and update a Hardware Support App through the Microsoft Store.
 
-The steps required by the owner of the driver or RPC endpoint are described in [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](creating-a-custom-capability-to-pair-driver-with-hsa.md).
+Start with either a [Universal Windows Platform (UWP) app](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide) or a desktop (Win32) app.  If you would like to use a desktop app, use the [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) to create a Windows App Package that you can upload to the Store.
 
-Before you get started, install the latest version of Visual Studio and create an UWP app project.  To build a UWP app with a custom capability, you'll need Windows SDK version 10.0.15063 (Windows 10 Creators Update) or later. For more help getting configured, see [Develop UWP apps using Visual Studio](https://developer.microsoft.com/en-us/windows/apps/develop).
+This page describes the procedure for a UWP app, but the steps are similar for the Win32 option. 
+
+The steps for the driver developer are described in [Hardware Support App (HSA): Steps for Driver Developers](hardware-support-app--hsa--steps-for-driver-developers.md).
+
+## Getting Started
+
+First, install the latest version of Visual Studio and create a UWP app project.  To build a UWP app with a custom capability, you'll need Windows SDK version 10.0.15063 (Windows 10 Creators Update) or later. For more help getting configured, see [Develop UWP apps using Visual Studio](https://developer.microsoft.com/en-us/windows/apps/develop).
 
 Starting in Windows 10 version 1709, you can specify that a Universal Windows Platform (UWP) app should only load if a specific driver is present.  To learn how, see [Pairing a driver with a UWP app](../install/pairing-app-and-driver-versions.md).
 
@@ -54,7 +60,7 @@ Signature Hash:
 ca9fc964db7e0c2938778f4559946833e7a8cfde0f3eaa07650766d4764e86c4
 ```
 
-The capability owner uses this info to generate a [Signed custom capability Descriptor](creating-a-custom-capability-to-pair-driver-with-hsa.md) file and sends this file to the app developer.
+The capability owner uses this info to generate a [Signed custom capability Descriptor](hardware-support-app--hsa--steps-for-driver-developers.md#sccd-xml-schema) file and sends this file to the app developer.
 
 The app developer can continue developing an app with custom capabilities in developer mode while waiting for the capability owner to approve the request. For example, use the following in the SCCD on a desktop PC in [Developer Mode](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development):
 
@@ -92,6 +98,10 @@ Finally, right-click the project, select **Store**, then **Create App Packages**
 
 **Note**: There is no support for UWP apps with custom capabilities on mobile platforms.
 
+## Install the App
+
+To pre-install a UWP app with custom capabilities, use [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).
+
 ## Troubleshooting
 
 When the target machine is in Developer Mode, you can try the following steps to debug app registration failure:
@@ -106,7 +116,10 @@ When the target machine is in Developer Mode, you can try the following steps to
 
 ## See Also
 
+* [Hardware Support App (HSA): Steps for Driver Developers](hardware-support-app--hsa--steps-for-driver-developers.md)
 * [Enable your device for development](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
 * [Custom Capability sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomCapability)
 * [Getting Started with Universal Windows drivers](../develop/getting-started-with-universal-drivers.md)
 * [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md)
+* [Intro to the Universal Windows Platform](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide)
+* [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/design/basics/design-and-ui-intro)
