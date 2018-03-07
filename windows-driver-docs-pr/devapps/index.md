@@ -74,8 +74,12 @@ If you're looking for info about UWP mobile broadband apps, see [Mobile Broadban
 </tr>
 </tr>
 <tr class="even">
-<td align="left"><p>[Hardware access for Universal Windows Platform apps](hardware-access-for-universal-windows-platform-apps.md)</p></td>
-<td align="left"><p>This topic introduces getting Hardware access for Universal Windows Platform apps.</p></td>
+<td align="left"><p>[Hardware Support App (HSA): Steps for Driver Developers](hardware-support-app--hsa--steps-for-driver-developers.md)</p></td>
+<td align="left"><p>This topic provides steps for a driver developer to associate a driver with a Universal Windows Platform (UWP) app.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>[Hardware Support App (HSA): Steps for App Developers](hardware-support-app--hsa--steps-for-app-developers.md)</p></td>
+<td align="left"><p>This topic provides steps for an app developer to associate a Universal Windows Platform (UWP) app with a Universal Windows driver.</p></td>
 </tr>
 </tbody>
 </table>
