@@ -97,7 +97,7 @@ The following DDIs and data structures are new in NetAdapterCx 1.2 for packet ex
 - [NetPacketGetPacketLargeSendSegmentation](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/nf-netpacket-netpacketgetpacketlargesendsegmentation)
 - [NetPacketGetPacketReceiveSegmentCoalescence](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/nf-netpacket-netpacketgetpacketreceivesegmentcoalescence)
 
-## Multiple NetAdapter objects per device
+## Multiple NetAdapter objects per device's's's
 
 In version 1.2 of NetAdapterCx, NIC client drivers can now create, start, and stop multiple NETADAPTER objects per device object.
 
@@ -105,29 +105,28 @@ In version 1.2 of NetAdapterCx, NIC client drivers can now create, start, and st
 - [NetAdapterStop]((https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstop)
 
 ## NetAdapter RSS
-
 TBD short paragraph
 
 For more information about RSS in NetAdapterCx, see [NetAdapterCx Receive Side Scaling](netadaptercx-receive-side-scaling.md).
 
 - [EVT_NET_ADAPTER_CREATE_RSSQUEUE_GROUP](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_create_rssqueue_group)
-- NetAdapterGetReceiveScalingHashSecretKey
+- [NetAdapterGetReceiveScalingHashSecretKey](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nf-netreceivescaling-netadaptergetreceivescalinghashsecretkey)
 - NetAdapterGetReceiveScalingHashType
 - NetAdapterGetReceiveScalingProtocolTypes
 - NetAdapterSetReceiveScalingCapabilities
 - EVT_NET_ADAPTER_RECEIVE_SCALING_ENABLE
 - EVT_NET_ADAPTER_RECEIVE_SCALING_DISABLE
 - EVT_NET_ADAPTER_RECEIVE_SCALING_SET_HASH_SECRET_KEY
-- EVT_NET_ADAPTER_RECEIVE_SCALING_SET_INDIRECTION_ENTRIES
+- [EVT_NET_ADAPTER_RECEIVE_SCALING_SET_INDIRECTION_ENTRIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nc-netreceivescaling-evt_net_adapter_receive_scaling_set_indirection_entries)
 - NET_ADAPTER_RECEIVE_SCALING_CAPABILITIES
 - NET_ADAPTER_RECEIVE_SCALING_CAPABILITIES_INIT
-- NET_ADAPTER_RECEIVE_SCALING_ENCAPSULATION_TYPE
-- NET_ADAPTER_RECEIVE_SCALING_HASH_SECRET_KEY
-- NET_ADAPTER_RECEIVE_SCALING_HASH_TYPE
-- NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRIES
-- NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRY
-- NET_ADAPTER_RECEIVE_SCALING_PROTOCOL_TYPE
-- NET_ADAPTER_RECEIVE_SCALING_UNHASHED_TARGET_TYPE
+- [NET_ADAPTER_RECEIVE_SCALING_ENCAPSULATION_TYPE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/ne-netreceivescaling-_net_adapter_receive_scaling_encapsulation_type)
+- [NET_ADAPTER_RECEIVE_SCALING_HASH_SECRET_KEY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/ns-netreceivescaling-_net_adapter_receive_scaling_hash_secret_key)
+- [NET_ADAPTER_RECEIVE_SCALING_HASH_TYPE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/ne-netreceivescaling-_net_adapter_receive_scaling_hash_type)
+- [NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/ns-netreceivescaling-_net_adapter_receive_scaling_indirection_entries)
+- [NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/ns-netreceivescaling-_net_adapter_receive_scaling_indirection_entry)
+- [NET_ADAPTER_RECEIVE_SCALING_PROTOCOL_TYPE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/ne-netreceivescaling-_net_adapter_receive_scaling_protocol_type)
+- [NET_ADAPTER_RECEIVE_SCALING_UNHASHED_TARGET_TYPE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/ne-netreceivescaling-_net_adapter_receive_scaling_unhashed_target_type)
 
 ## Other new DDIs and data structures
 
