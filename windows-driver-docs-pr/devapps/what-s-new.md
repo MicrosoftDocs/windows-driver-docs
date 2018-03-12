@@ -21,7 +21,7 @@ This section provides a glimpse of what's new for UWP device apps. For more info
 ## <span id="What_s_new_for_Windows_10"></span><span id="what_s_new_for_windows_10"></span><span id="WHAT_S_NEW_FOR_WINDOWS_10"></span>What's new for Windows 10
 
 
-With Windows 10, there are no changes to the Microsoft Store device app functionality. The Windows 8.1 processes for building, testing, and submitting UWP device apps will continue to work with Windows 10. However, it is recomended to develop a Universal Windows Platform app with Custom Capabilities. For more info, see [Using a custom capability to pair a Hardware Support App (HSA) with a driver](using-a-custom-capability-to-pair-hsa-with-driver.md)
+With Windows 10, there are no changes to the Microsoft Store device app functionality. The Windows 8.1 processes for building, testing, and submitting UWP device apps will continue to work with Windows 10. However, we recommend developing a Universal Windows Platform (UWP) app with custom capabilities. For more info, see [Hardware Support App (HSA): Steps for App Developers](hardware-support-app--hsa--steps-for-app-developers.md).
 
 ## <span id="Device_metadata_wizard"></span><span id="device_metadata_wizard"></span><span id="DEVICE_METADATA_WIZARD"></span>Device metadata wizard
 

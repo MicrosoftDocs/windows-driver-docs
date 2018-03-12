@@ -1,7 +1,7 @@
 ---
-title: Creating a custom capability to pair a driver with a Hardware Support App (HSA)
+title: Hardware Support App (HSA) Steps for Driver Developers
 author: windows-driver-content
-description: getting Creating a custom capability to pair a driver with a Hardware Support App (HSA)
+description: Creating a custom capability to pair a driver with a Hardware Support App (HSA)
 keywords:
 - Custom , Capabilities
 - UWP Apps
@@ -15,17 +15,19 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Creating a custom capability to pair a driver with a Hardware Support App (HSA)
+# Hardware Support App (HSA): Steps for Driver Developers
 
-A Hardware Support App (HSA) is a [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/design/basics/design-and-ui-intro) app that is paired with a specific driver or [RPC (Remote Procedure Call)](https://msdn.microsoft.com/library/windows/desktop/aa378651) using a custom capability.  You can use the [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) to convert a Win32 app to a UWP app for use as an HSA.
+A Hardware Support App (HSA) is a device-specific app that is paired with a specific driver or [RPC (Remote Procedure Call)](https://msdn.microsoft.com/library/windows/desktop/aa378651) endpoint.
 
-The owner of the driver or RPC endpoint reserves the custom capability, permits access to apps that advertise it, and then provides the capability to the app developer.  This page describes these steps for the driver developer.
+To associate a Store app with a driver, first reserve a special value called a custom capability. Then permit access to apps that advertise the capability and provide the capability to the app developer.  This page describes these steps for the driver developer.
 
-The steps for the app developer are described in [Using a custom capability to pair a Hardware Support App (HSA) with a driver](using-a-custom-capability-to-pair-hsa-with-driver.md).
+The steps for the app developer are described in [Hardware Support App (HSA): Steps for App Developers](hardware-support-app--hsa--steps-for-app-developers.md).
+
+HSA is one of the four ("DCHU") design principles of [Universal Windows drivers](../develop/getting-started-with-universal-drivers.md).
 
 ## Reserving a custom capability
 
-To reserve a custom capability:
+First, reserve a custom capability:
 
 1.  Email Microsoft Hardware Support Apps Review (<HSAReview@microsoft.com>) with the following information:
 
@@ -116,7 +118,7 @@ Next, the custom capability owner obtains the Package Family Name (PFN) and the 
 
 After completing the SCCD, the capability owner emails it to Microsoft for signing.  Microsoft returns the signed SCCD to the capability owner.
 
-The capability owner then sends the SCCD to the app developer.  The app developer includes the signed SCCD in the app manifest.  To learn what the app developer needs to do, see [Using a custom capability to pair a Hardware Support App (HSA) with a driver](using-a-custom-capability-to-pair-hsa-with-driver.md).
+The capability owner then sends the SCCD to the app developer.  The app developer includes the signed SCCD in the app manifest.  To learn what the app developer needs to do, see [Hardware Support App (HSA): Steps for App Developers](hardware-support-app--hsa--steps-for-app-developers.md).
 
 ## Limiting the scope of an SCCD
 
@@ -146,14 +148,22 @@ The following diagram summarizes the sequence described above:
 
 ![Getting an SCCD signed](images/signsccd.png)
 
-## Resources
+## See Also
 
-* [App capability declarations](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations)
-* [Custom Capability sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomCapability)
 * [Getting Started with Universal Windows drivers](../develop/getting-started-with-universal-drivers.md)
+* [Intro to the Universal Windows Platform](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide)
+* [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/design/basics/design-and-ui-intro)
+* [App capabilities](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations)
+* [Develop UWP apps using Visual Studio](https://developer.microsoft.com/en-us/windows/apps/develop)
 * [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md)
+* [Develop UWP apps](https://developer.microsoft.com/en-us/windows/apps/develop)
+* [Package an app using the Desktop App Converter (Desktop Bridge)](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter)
+* [Custom Capability Sample App](http://go.microsoft.com/fwlink/p/?LinkId=846904)
+* [Custom Capability Driver Sample](https://aka.ms/customcapabilitydriversample )
+* [Sideload apps in Windows 10](https://technet.microsoft.com/library/mt269549.aspx)
+* [FAQ on Custom Capabilities](FAQ-on-custom-capabilities.md)
 
-### SCCD XML Schema
+## SCCD XML Schema
 
 The following is the formal XML XSD schema for an SCCD file.  Use this schema to validate your SCCD before submitting it for review.  See [Schema Cache](https://docs.microsoft.com/visualstudio/xml-tools/schema-cache) and [XML Document validation](https://docs.microsoft.com/visualstudio/xml-tools/xml-document-validation) for info on importing a schema and validating with IntelliSense.
 
