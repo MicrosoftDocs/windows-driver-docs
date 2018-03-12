@@ -105,9 +105,10 @@ In version 1.2 of NetAdapterCx, NIC client drivers can now create, start, and st
 - [NetAdapterStop]((https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstop)
 
 ## NetAdapter RSS
-TBD short paragraph
 
-For more information about RSS in NetAdapterCx, see [NetAdapterCx Receive Side Scaling](netadaptercx-receive-side-scaling.md).
+In version 1.2, NetAdapterCx supports receive side scaling (RSS), a network driver technology that enables the efficient distribution of network receive processing across multiple CPUs in multiprocessor systems. RSS in NetAdapterCx is easy to set up and can be turned on or off as needed once it has been configured.
+
+For more information about RSS in NetAdapterCx, see [NetAdapterCx receive side scaling](netadaptercx-receive-side-scaling.md).
 
 - [EVT_NET_ADAPTER_CREATE_RSSQUEUE_GROUP](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_create_rssqueue_group)
 - [NetAdapterGetReceiveScalingHashSecretKey](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nf-netreceivescaling-netadaptergetreceivescalinghashsecretkey)
@@ -130,10 +131,10 @@ For more information about RSS in NetAdapterCx, see [NetAdapterCx Receive Side S
 
 ## Other new DDIs and data structures
 
-- NetRequestGetAdapter
-- NetPacketIsIpv4
-- NetPacketIsIpv6
-- NET_PACKET_GET_FRAGMENT_VALID
+- [NetRequestGetAdapter](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequest/nf-netrequest-netrequestgetadapter)
+- [NetPacketIsIpv4](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/nf-netpacket-netpacketisipv4)
+- [NetPacketIsIpv6](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/nf-netpacket-netpacketisipv4)
+- [NET_PACKET_GET_FRAGMENT_VALID](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/nf-net_packet_get_fragment_valid)
 
 ## Other updated DDIs and data structures
 
@@ -150,7 +151,7 @@ The following DDIs and data structures were removed in NetAdapterCx 1.2. Their r
 | --- | --- |
 | <ul><li>NET_ADAPTER_DATAPATH_CAPABILITIES</li><li>NET_ADAPTER_DATAPATH_CAPABILITIES_INIT</li></ul> | This combined datapath capabilities structure and its init method have been replaced by separate Rx and Tx capabilities structures/init methods. For more info, see [NET_ADAPTER_RX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_rx_capabilities) and [NET_ADAPTER_TX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_tx_capabilities). |
 | <ul><li>NET_RXQUEUE_DMA_ALLOCATOR_CONFIG</li><li>NET_RXQUEUE_DMA_ALLOCATOR_CONFIG_INIT</li><li>NetRxQueueInitSetDmaAllocatorConfig</li><li>NetRxQueueQueryAllocatorCacheEnabled</li></ul> | DMA capabilities have been genericized for Rx queues and Tx queues in NetAdapterCx 1.2, obviating the need for specialized Rx queue DMA structures and methods. For more info, see [NET_ADAPTER_DMA_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_dma_capabilities), [NET_ADAPTER_RX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_rx_capabilities), and [NET_ADAPTER_TX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_tx_capabilities). |
-| <ul><li>NetRxQueueGetBufferLayoutHint</li></ul> | TBD |
+| <ul><li>NetRxQueueGetBufferLayoutHint</li></ul> | Receive buffer layout hints are no longer necessary due to NetAdapterCx 1.2's new buffer management feature. NIC client drivers can ask the system to manage receive buffer allocation and attachment, which removes the burden from the client to manage receive buffer padding. |
 | <ul><li>NetRxQueueGetRingBuffer</li><li>NetTxQueueGetRingBuffer</li></ul> | NIC client drivers now retrieve ring buffers by using a queue's [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor) structure. After calling **NetRx(Tx)QueueGetDatapathDescriptor** to get the descriptor, drivers call [NET_DATAPATH_DESCRIPTOR_GET_PACKET_RING_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_datapath_descriptor_get_packet_ring_buffer) to get the packet ring buffer. |
 
 ## Compiling a NetAdapterCx 1.2 client driver
