@@ -51,7 +51,7 @@ EvtAdapterCreateTxQueue(NETADAPTER Adapter, PNETTXQUEUE_INIT NetTxQueueInit)
 }
 ```
 
-To create a receive queue from [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md), use the same pattern to call [**NetRxQueueCreate**](netrxqueuecreate.md).  For an example, see [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md).
+To create a receive queue from [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md), use the same pattern to call [**NetRxQueueCreate**](netrxqueuecreate.md). For an example, see [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md).
 
 The framework empties queues before transitioning to a low power state and deletes them before deleting the adapter.
 
@@ -73,31 +73,30 @@ See the above pages for details on what the client needs to do in each event cal
 
 ## Using the ring buffer
 
-A [**NET_RING_BUFFER**](net-ring-buffer.md) is a circular buffer of one or more [**NET_PACKET**](net-packet.md) structures that is shared between NetAdapterCx and a client. In NetAdapterCx 1.2 and later, each datapath queue has two ring buffers: one **NET_PACKET** ring buffer and one [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) ring buffer. Both ring buffers are described by a [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor) structure.
+A [**NET_RING_BUFFER**](net-ring-buffer.md) is a circular buffer of one or more [**NET_PACKET**](net-packet.md) structures that is shared between NetAdapterCx and a client. Currently, each datapath queue has two ring buffers: one **NET_PACKET** ring buffer and one [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) ring buffer. The queue's ring buffers are described by a [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor) structure.
 
-> [!IMPORTANT]
-> Each packet in the packet ring buffer references the start of its fragments in the fragment ring buffer. Therefore, the fragment ring buffer makes it easy to query a packet for how many fragments it has, retrieve a single fragment, or loop over all fragments in a packet, but it is not accessed directly. This topic explains how client drivers work with the packet ring buffer.
+Each packet in the packet ring buffer references the start of its fragments in the fragment ring buffer. Typically, NIC client drivers only work with the packet ring buffer. This topic explains how client drivers work with the packet ring buffer.
 
-Each element in a packet [**NET_RING_BUFFER**](net-ring-buffer.md) is owned by either the client driver or NetAdapterCx.  The values of the index members control ownership.  Specifically, the client driver owns every element from **BeginIndex** to **EndIndex - 1** inclusive.
+Each element in the packet [**NET_RING_BUFFER**](net-ring-buffer.md) is owned by either the client driver or NetAdapterCx. The values of the index members control ownership. Specifically, the client driver owns every element from **BeginIndex** to **EndIndex - 1** inclusive.
+
 For example, if **BeginIndex** is 2 and **EndIndex** is 5, the client driver owns three elements: the elements with index values 2, 3, and 4.
 If **BeginIndex** is equal to **EndIndex**, the client driver does not own any elements.
 
-NetAdapterCx adds elements to the ring buffer by incrementing **EndIndex**.
-A client driver returns ownership of the elements by incrementing **BeginIndex**.
+NetAdapterCx adds elements to the ring buffer by incrementing **EndIndex**. A client driver returns ownership of the elements by incrementing **BeginIndex**.
 
 The client driver may optionally set **NextIndex** to the index of the next packet that it will submit to the hardware.
 
 ![Using the ring buffer](images/using-the-ring-buffer.gif "Using the ring buffer")
 
-In this model, the client has submitted packets with index values between **BeginIndex** and **NextIndex - 1** inclusive to hardware.  Packets with index values between **NextIndex** and **EndIndex - 1** are owned by the client but have not yet been sent to hardware.  If the value of **BeginIndex** is equal to the value of **NextIndex**, the client has not programmed any packets to hardware.
+In this model, the client has submitted packets with index values between **BeginIndex** and **NextIndex - 1** inclusive to hardware. Packets with index values between **NextIndex** and **EndIndex - 1** are owned by the client but have not yet been sent to hardware. If the value of **BeginIndex** is equal to the value of **NextIndex**, the client has not programmed any packets to hardware.
 
-After the hardware transmits or receives data, the client advances **BeginIndex** to transfer ownership of the packets to NetAdapterCx.  If the client tracks packet completion using the **Completed** flag on **NET_PACKET_FRAGMENT**, the client can call [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md) to advance **BeginIndex** automatically through each completed packet.
+After the hardware transmits or receives data, the client advances **BeginIndex** to transfer ownership of the packets to NetAdapterCx. If the client tracks packet completion using the **Completed** flag on **NET_PACKET_FRAGMENT**, the client can call [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md) to advance **BeginIndex** automatically through each completed packet.
 
-Because the ring buffer is circular, eventually the index values wrap around the end of the buffer and come back to the beginning.  To handle wrap around when incrementing ring buffer indices, call [**NetRingBufferIncrementIndex**](NetRingBufferIncrementIndex.md).
+Because the ring buffer is circular, eventually the index values wrap around the end of the buffer and come back to the beginning. To handle wrap around when incrementing ring buffer indices, call [**NetRingBufferIncrementIndex**](NetRingBufferIncrementIndex.md).
 
 ## Polling model
 
-The NetAdapter data path is a polling model.  This polling model is implemented by calling the client driver's queue advance callbacks.  For code examples, see [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) and [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md).
+The NetAdapter data path is a polling model. This polling model is implemented by calling the client driver's queue advance callbacks. For code examples, see [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) and [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md).
 
 ## PCI Device Drivers
 
@@ -108,14 +107,14 @@ Here is a typical sequence for a PCI device driver:
 1. Call [**NetRxQueueGetDatapathDescriptor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/nf-netrxqueue-netrxqueuegetdatapathdescriptor) or [**NetTxQueueGetDatapathDescriptor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nf-nettxqueue-nettxqueuegetdatapathdescriptor) to retrieve the queue's datapath descriptor. You can store this in the queue's context space to reduce calls out of the driver.
 2. Use the datapath descriptor to retrieve the queue's packet ring buffer by calling [NET_DATAPATH_DESCRIPTOR_GET_PACKET_RING_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_datapath_descriptor_get_packet_ring_buffer).
 3. Program packets to hardware by looping until the ring buffer's **NextIndex** equals **EndIndex**:
-    1.  Call [**NetRingBufferGetPacketAtIndex**](NetRingBufferGetPacketAtIndex.md) on **NextIndex**.
-    2.  Translate the **NET_PACKET** descriptor into the associated hardware packet descriptors.
-    3.  Call [**NetRingBufferIncrementIndex**](NetRingBufferIncrementIndex.md).
+    1. Call [**NetRingBufferGetPacketAtIndex**](NetRingBufferGetPacketAtIndex.md) on **NextIndex**.
+    2. Translate the **NET_PACKET** descriptor into the associated hardware packet descriptors.
+    3. Call [**NetRingBufferIncrementIndex**](NetRingBufferIncrementIndex.md).
 4. Complete packets by looping until **BeginIndex** equals **NextIndex** or until an incomplete packet is reached:
-    1.  Call [**NetRingBufferGetPacketAtIndex**](NetRingBufferGetPacketAtIndex.md) on **BeginIndex**.
-    2.  Detect if the associated hardware descriptors indicate completion.  If not, terminate.
-    3.  Translate the hardware descriptor to the [**NET_PACKET**](net-packet.md).
-    4.  Call [**NetRingBufferIncrementIndex**](NetRingBufferIncrementIndex.md).
+    1. Call [**NetRingBufferGetPacketAtIndex**](NetRingBufferGetPacketAtIndex.md) on **BeginIndex**.
+    2. Detect if the associated hardware descriptors indicate completion. If not, terminate.
+    3. Translate the hardware descriptor to the [**NET_PACKET**](net-packet.md).
+    4. Call [**NetRingBufferIncrementIndex**](NetRingBufferIncrementIndex.md).
 
 ## Device Drivers with Asynchronous I/O
 
@@ -135,4 +134,4 @@ Here is a typical sequence for a device driver with asynchronous I/O:
     3. Call [**NetRingBufferAdvanceNextPacket**](netringbufferadvancenextpacket.md).
 4. Call [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md).
 
-As asynchronous I/O completions come in, the client sets the **Completed** flag of the first associated [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) to **TRUE**.  This enables [**NetRingBufferReturnCompletedPackets**](NetRingBufferReturnCompletedPackets.md) to complete packets.
+As asynchronous I/O completions come in, the client sets the **Completed** flag of the first associated [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) to **TRUE**. This enables [**NetRingBufferReturnCompletedPackets**](NetRingBufferReturnCompletedPackets.md) to complete packets.
