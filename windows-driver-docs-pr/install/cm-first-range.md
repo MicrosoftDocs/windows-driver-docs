@@ -13,6 +13,8 @@ api_type:
 
 # CM_First_Range
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-first-range-dr"></a>
 

@@ -13,6 +13,8 @@ api_type:
 
 # CM_Enable_DevNode_Ex
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-enable-devnode-ex-dr"></a>
 

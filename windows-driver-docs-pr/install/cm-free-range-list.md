@@ -13,6 +13,8 @@ api_type:
 
 # CM_Free_Range_List
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-free-range-list-dr"></a>
 

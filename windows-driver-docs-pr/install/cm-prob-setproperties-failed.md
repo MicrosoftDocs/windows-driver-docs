@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_SETPROPERTIES_FAILED
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-setproperties-failed-dg"></a>
 

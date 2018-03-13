@@ -13,6 +13,8 @@ api_type:
 
 # CM_Query_Remove_SubTree_Ex
 
+This function is reserved for system use.
+
 
  
 

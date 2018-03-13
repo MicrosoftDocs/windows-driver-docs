@@ -14,6 +14,8 @@ api_type:
 
 # CM_Unregister_Device_Interface_Ex
 
+This function is reserved for system use.
+
 
  
 

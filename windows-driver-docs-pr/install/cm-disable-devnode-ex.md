@@ -13,6 +13,8 @@ api_type:
 
 # CM_Disable_DevNode_Ex
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-disable-devnode-ex-dr"></a>
 

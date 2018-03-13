@@ -15,6 +15,8 @@ api_type:
 
 # CM_Set_HW_Prof_Flags
 
+This function is reserved for system use.
+
 
  
 

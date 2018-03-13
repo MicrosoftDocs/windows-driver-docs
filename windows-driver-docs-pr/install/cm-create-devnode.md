@@ -14,6 +14,8 @@ api_type:
 
 # CM_Create_DevNode
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-create-devnode-dr"></a>
 

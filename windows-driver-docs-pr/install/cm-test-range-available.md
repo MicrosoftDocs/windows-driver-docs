@@ -13,6 +13,8 @@ api_type:
 
 # CM_Test_Range_Available
 
+This function is reserved for system use.
+
 
  
 

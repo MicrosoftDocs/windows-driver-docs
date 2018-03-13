@@ -13,6 +13,8 @@ api_type:
 
 # CM_Create_Range_List
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-create-range-list-dr"></a>
 

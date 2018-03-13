@@ -13,6 +13,8 @@ api_type:
 
 # CM_WaitNoPendingInstallEvents
 
+This function is reserved for system use.
+
 
 **CM_WaitNoPendingInstallEvents** is defined in *Cfgmgr32.h* as follows:
 

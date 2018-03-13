@@ -13,6 +13,8 @@ api_type:
 
 # CM_Set_HW_Prof
 
+This function is reserved for system use.
+
 
  
 

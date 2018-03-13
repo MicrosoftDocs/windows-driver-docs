@@ -11,9 +11,19 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows-driver-docs-pr/devapps/hardware-access-for-universal-windows-platform-apps.md",
+      "source_path": "windows-driver-docs-pr/devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md",
       "redirect_URL": "/windows-hardware/drivers/devapps/hardware-support-app--hsa--steps-for-driver-developers",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/using-a-custom-capability-to-pair-hsa-with-driver.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/hardware-support-app--hsa--steps-for-app-developers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devapps/hardware-access-for-universal-windows-platform-apps.md",
+      "redirect_URL": "/windows-hardware/drivers/devapps/hardware-support-app--hsa--steps-for-driver-developers",
+      "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/debugger/debugging-windows-store-apps-using-the-windows-debugger.md",

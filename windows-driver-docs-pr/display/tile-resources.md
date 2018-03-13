@@ -1,6 +1,6 @@
 ---
 title: Tile resources
-description: For tile resources, the asynchronous video memory manager services running on the device paging queue arenâ€™t sufficient.
+description: For tile resources, the asynchronous video memory manager services running on the device paging queue aren't sufficient.
 ms.assetid: D48D2046-64A6-4B0E-9235-84DD2A83DB39
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Tile resources
 
 
-For tile resources, the asynchronous video memory manager services running on the device paging queue arenâ€™t sufficient. In particular, for tile resources we want to queue page table updates along with rendering and ensure that the updates are applied synchronously between draw operations.
+For tile resources, the asynchronous video memory manager services running on the device paging queue aren't sufficient. In particular, for tile resources we want to queue page table updates along with rendering and ensure that the updates are applied synchronously between draw operations.
 
 For example, given the following API call sequence by an application:
 

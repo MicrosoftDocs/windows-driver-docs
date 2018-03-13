@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_TRANSLATION_FAILED
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-translation-failed-dg"></a>
 

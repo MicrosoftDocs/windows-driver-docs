@@ -14,6 +14,8 @@ api_type:
 
 # CM_Get_Device_Interface_Alias_Ex
 
+This function is reserved for system use.
+
 
  
 

@@ -13,6 +13,8 @@ api_type:
 
 # CM_Delete_Range
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-delete-range-dr"></a>
 

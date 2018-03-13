@@ -13,6 +13,8 @@ api_type:
 
 # CM_Register_Device_Driver
 
+This function is reserved for system use.
+
 
 This function is obsolete and no longer supported.
 

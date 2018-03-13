@@ -13,6 +13,8 @@ api_type:
 
 # CM_Remove_SubTree
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-remove-subtree-dr"></a>
 

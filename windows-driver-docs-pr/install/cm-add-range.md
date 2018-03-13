@@ -13,6 +13,8 @@ api_type:
 
 # CM_Add_Range
 
+This function is reserved for system use.
+
 
  
 

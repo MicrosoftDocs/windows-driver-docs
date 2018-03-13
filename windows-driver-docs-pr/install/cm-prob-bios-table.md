@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_BIOS_TABLE
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-bios-table-dg"></a>
 

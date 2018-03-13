@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_LEGACY_SERVICE_NO_DEVICES
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-legacy-service-no-devices-dg"></a>
 
