@@ -420,6 +420,7 @@
 ##### [ACPI notifications](acpi-notifications.md)
 ##### [Device power management (DPM) notifications](dpm-notifications.md)
 ##### [Processor power management (PPM) notifications](ppm-notifications.md)
+##### [PPM power control codes](ppm-power-control-codes.md)
 #### [Power Management Responsibilities for Drivers](power-management-responsibilities-for-drivers.md)
 ##### [Reporting Device Power Capabilities](reporting-device-power-capabilities.md)
 ###### [DeviceD1 and DeviceD2](deviced1-and-deviced2.md)
