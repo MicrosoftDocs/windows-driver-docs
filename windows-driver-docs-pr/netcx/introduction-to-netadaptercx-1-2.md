@@ -108,7 +108,7 @@ In version 1.2 of NetAdapterCx, NIC client drivers can now create, start, and st
 
 In version 1.2, NetAdapterCx supports receive side scaling (RSS), a network driver technology that enables the efficient distribution of network receive processing across multiple CPUs in multiprocessor systems. RSS in NetAdapterCx is easy to set up and can be turned on or off as needed once it has been configured.
 
-For more information about RSS in NetAdapterCx, see [NetAdapterCx receive side scaling](netadaptercx-receive-side-scaling.md).
+For more information about RSS in NetAdapterCx, see [NetAdapterCx receive side scaling](netadaptercx-receive-side-scaling-rss-.md).
 
 - [EVT_NET_ADAPTER_CREATE_RSSQUEUE_GROUP](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_create_rssqueue_group)
 - [NetAdapterGetReceiveScalingHashSecretKey](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nf-netreceivescaling-netadaptergetreceivescalinghashsecretkey)
