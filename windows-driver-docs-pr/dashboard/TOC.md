@@ -15,6 +15,7 @@
 ### [Expire a driver from Windows Update](expire-a-driver-from-windows-update.md)
 ### [View partner shipping labels for a shared driver](viewing-shipping-labels-for-your-shared-driver.md)
 ### [Using Computer Hardware IDs (CHIDs)](using-chids.md)
+### [Limiting driver distribution by Windows version](driver-expansion.md)
 ### [Publishing for test distribution](publishing-for-test-distribution.md)
 ## [Dashboard Administration](dashboard-administration.md)
 ### [Get started with the Hardware Program](get-started-with-the-hardware-dashboard.md)
