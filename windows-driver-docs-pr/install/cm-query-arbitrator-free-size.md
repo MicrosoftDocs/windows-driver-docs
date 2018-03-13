@@ -13,6 +13,8 @@ api_type:
 
 # CM_Query_Arbitrator_Free_Size
 
+This function is reserved for system use.
+
 
  
 

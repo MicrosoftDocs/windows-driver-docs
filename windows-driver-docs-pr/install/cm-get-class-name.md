@@ -14,6 +14,8 @@ api_type:
 
 # CM_Get_Class_Name
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-get-class-name-dr"></a>
 

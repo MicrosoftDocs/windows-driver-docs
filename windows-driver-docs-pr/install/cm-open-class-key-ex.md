@@ -14,6 +14,8 @@ api_type:
 
 # CM_Open_Class_Key_Ex
 
+This function is reserved for system use.
+
 
  
 

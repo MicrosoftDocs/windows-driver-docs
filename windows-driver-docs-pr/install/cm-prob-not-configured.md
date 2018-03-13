@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_NOT_CONFIGURED
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-not-configured-dg"></a>
 

@@ -14,6 +14,8 @@ api_type:
 
 # CM_Get_Device_Interface_List_Size_Ex
 
+This function is reserved for system use.
+
 
  
 

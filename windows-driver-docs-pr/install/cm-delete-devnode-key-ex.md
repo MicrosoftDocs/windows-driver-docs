@@ -13,6 +13,8 @@ api_type:
 
 # CM_Delete_DevNode_Key_Ex
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-delete-devnode-key-ex-dr"></a>
 

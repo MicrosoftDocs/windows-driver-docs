@@ -13,6 +13,8 @@ api_type:
 
 # CM_Get_Global_State_Ex
 
+This function is reserved for system use.
+
 
  
 

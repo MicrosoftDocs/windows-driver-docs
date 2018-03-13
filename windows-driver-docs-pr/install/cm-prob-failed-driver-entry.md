@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_FAILED_DRIVER_ENTRY
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-failed-driver-entry-dg"></a>
 

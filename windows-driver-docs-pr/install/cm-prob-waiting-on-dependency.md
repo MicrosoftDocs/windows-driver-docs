@@ -11,6 +11,8 @@ ms.technology: windows-devices
 
 # CM_PROB_WAITING_ON_DEPENDENCY
 
+This function is reserved for system use.
+
 
 The device did not start because it has a dependency on another device that has not started.
 

@@ -13,6 +13,8 @@ api_type:
 
 # CM_Detect_Resource_Conflict
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-detect-resource-conflict-dr"></a>
 

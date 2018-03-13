@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_NORMAL_CONFLICT
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-normal-conflict-dg"></a>
 

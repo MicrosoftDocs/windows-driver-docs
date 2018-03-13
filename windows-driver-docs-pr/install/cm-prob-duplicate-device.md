@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_DUPLICATE_DEVICE
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-duplicate-device-dg"></a>
 

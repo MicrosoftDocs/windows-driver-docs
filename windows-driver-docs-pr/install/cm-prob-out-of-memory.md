@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_OUT_OF_MEMORY
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-out-of-memory-dg"></a>
 

@@ -13,6 +13,8 @@ api_type:
 
 # CM_Uninstall_DevNode_Ex
 
+This function is reserved for system use.
+
 
  
 

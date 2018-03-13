@@ -13,6 +13,8 @@ api_type:
 
 # CM_Move_DevNode
 
+This function is reserved for system use.
+
 
  
 

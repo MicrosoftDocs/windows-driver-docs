@@ -13,6 +13,8 @@ api_type:
 
 # CM_Dup_Range_List
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-dup-range-list-dr"></a>
 

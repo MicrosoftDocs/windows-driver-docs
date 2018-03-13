@@ -13,6 +13,8 @@ api_type:
 
 # CM_Find_Range
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-find-range-dr"></a>
 

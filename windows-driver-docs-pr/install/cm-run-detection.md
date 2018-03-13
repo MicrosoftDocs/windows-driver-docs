@@ -13,6 +13,8 @@ api_type:
 
 # CM_Run_Detection
 
+This function is reserved for system use.
+
 
 This function is obsolete and no longer supported.
 

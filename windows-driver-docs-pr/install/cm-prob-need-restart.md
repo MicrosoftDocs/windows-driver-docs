@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_NEED_RESTART
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-need-restart-dg"></a>
 

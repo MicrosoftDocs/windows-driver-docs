@@ -14,6 +14,8 @@ api_type:
 
 # CM_Get_Class_Key_Name_Ex
 
+This function is reserved for system use.
+
 
  
 

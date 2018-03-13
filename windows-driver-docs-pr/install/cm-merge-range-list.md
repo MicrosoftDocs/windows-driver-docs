@@ -13,6 +13,8 @@ api_type:
 
 # CM_Merge_Range_List
 
+This function is reserved for system use.
+
 
  
 
