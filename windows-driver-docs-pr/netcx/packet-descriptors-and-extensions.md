@@ -13,70 +13,73 @@ ms.technology: windows-devices
 
 # Packet descriptors and extensions
 
-In NetAdapterCx, *Packet descriptors* are small, compat and runtime-extensible structures that describe a network packet. Each packet requires 
-- one core descriptor 
-- one or more fragment descriptors
-- zero or more packet extensions 
+In NetAdapterCx, *packet descriptors* are small, compact and runtime-extensible structures that describe a network packet. Each packet requires the following:
 
-*Core descriptor* ([*NET_PACKET*]()) contains the most basic metadata applicable for any packets, such like the framing layout of a given packet and the index to the first fragment descriptor.   
+- One core descriptor 
+- One or more fragment descriptors
+- Zero or more packet extensions 
 
-*Fragment descriptor* ([*NET_PACKET_FRAGMENT*]()) describes the location within the system memory where the packet data resides. There is at least one fragment descriptor per packet.
+The *core descriptor* of the packet is the [NET_PACKET](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) structure itself. It contains only the most basic metadata applicable for all packets, such as the framing layout of a given packet and the index to the first fragment descriptor.   
 
-*Packet extensions* are optional and hold per-packet metadata for scenario-specific features. For instance, extensions can hold offload information for checksum, large send offload (LSO), and receive segment coalescence (RSC), or they can also hold application-specific details.
+Each core descriptor (**NET_PACKET**) contains one or more *fragment descriptors*, or [NET_PACKET_FRAGMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_fragment) structures, that describe the location within system memory where the packet data resides.
 
-They together hold all the metadata about the packet and below are two examples of how they describe a packet: the first figure shows a scenario that the entire packet stored inside a single memory fragment and checksum offload has been turned on for this packet; the second figure shows a packet stored across two memory fragments and it has both RSC and checksum offload enabled
+*Packet extensions* are optional and hold per-packet metadata for scenario-specific features. For instance, extensions can hold offload information for checksum, large send offload (LSO), and receive segment coalescence (RSC), or they can hold application-specific details.
+
+Together, these descriptors and extensions hold all the metadata about a network packet. Here are two examples of how they describe a packet. The first figure shows a scenario where the entire packet is stored inside a single memory fragment and checksum offload has been turned on.
 
 ![1 fragment packet layout](images/packet-one-frag.png)
 
+The second figure shows a packet stored across two memory fragments, with both RSC and checksum offload enabled.
 
 ![2 fragments packet layout](images/packet-two-frag.png)
 
 ## Extensibility
 
-Extensibility is a core feature of the NetAdapterCx packet descriptor, and it's the fundation for the descriptor's versionability and performance. At runtime, the operating system allocates all packets descriptors of a given packet queue in a contiguous block, together with any avaiable extensions. Each extension block is immediately behind the core descriptor, as shown in the following figure:
+Extensibility is a core feature of the NetAdapterCx packet descriptor, forming the foundation for the descriptor's versionability and performance. At runtime, the operating system allocates all packets descriptors for each packet queue in a contiguous block, together with any avaiable extensions. Each extension block is immediately behind the core descriptor, as shown in the following figure:
 
 ![NetAdapterCx packet descriptor layout](images/packet-descriptors-1-layout.png)
 
-The client drivers are not permitted to hardcode the offset to any extension block. Instead, they must query at runtime for the offset to any particular extension. For example, a driver might query the offset to Extension B, and get back 70 bytes like in the following figure:
+NIC client drivers are not permitted to hardcode the offset to any extension block. Instead, they must query at runtime for the offset to any particular extension. For example, a driver might query the offset to Extension B, and get back 70 bytes like in the following figure:
 
 ![Querying the offset to an extension of the core packet descriptor](images/packet-descriptors-2-offset-query.png)
 
-Once a packet queue and its descriptors are created, all their extension offsets are guaranteed by the OS to be constant, so drivers don't have to re-query offsets often. Furthermore, because all extensions are pre-allocated by the OS in a block at the time the packet queue is initialized, there is no need for runtime allocation of blocks, searching a list for a specific descriptor, or having to store pointers to every packet extension.
+Once a packet queue and its descriptors are created, all their extension offsets are guaranteed by the system to be constant, so drivers don't have to re-query offsets often. Furthermore, because all extensions are pre-allocated by the system in a block at the time the packet queue is initialized, there is no need for runtime allocation of blocks, searching a list for a specific descriptor, or having to store pointers to every packet extension.
 
 ## Versionability
 
-NetAdapterCx's core packet descriptor can be easily extended in future release by adding new fields to the end, such as in the following figure:
+NetAdapterCx's core packet descriptor can be easily extended in future releases by adding new fields to the end, such as in the following figure:
 
 ![NetAdapterCx core packet descriptor versioning](images/packet-descriptors-3-core-descriptor-versioning.png)
 
-The newer client drivers that know about the V2 fields can access them, while older V1-only drivers will use extension offsets to skip over the V2 fields so they can access the fields they do understand. In addition, each extension can be versioned in the same way, as the following figure shows:
+Newer client drivers that know about the V2 fields can access them, while older V1-only drivers will use extension offsets to skip over the V2 fields so they can access the fields they do understand. In addition, each extension can be versioned in the same way, as the following figure shows:
 
 ![NetAdapterCx packet extension versioning](images/packet-descriptors-4-extension-versioning.png)
 
 A client driver that understands the new extension can use it. Other client drivers can skip over the new fields. This permits different parts of the packet descriptor to be versioned independently.
 
 ## Performance
-The extensibility feature outlined previously provides benefits to help the client drivers meet the performance requirements of NICs that are capabable of hundres of gigabits per second and with thousands of queues:
+The extensibility feature outlined previously provides benefits to help client drivers meet the performance requirements of NICs that are capabable of hundreds of gigabits per second and with thousands of queues:
 
-1. The packet descriptors are kept as compact as possible to improve CPU cache hits, as features/extensions that aren't used occupy 0 bytes of space in the descriptors. 
-2. There is no pointer dereferencing but just offset arithmetic because extensions are in-line, which not only saves space but also helps with CPU cache hits. 
+1. The packet descriptors are kept as compact as possible to improve CPU cache hits, as features and extensions that aren't used occupy 0 bytes of space in the descriptors. 
+2. There is no pointer dereferencing, only offset arithmetic because extensions are in-line, which not only saves space but also helps with CPU cache hits. 
 3. Extensions are allocated at queue creation time, so drivers don't have to allocate and deallocate memory in the active data path or deal with lookaside lists of context blocks.
 
-## Using packet extension in the client driver
+## Using packet extensions in client drivers
 
-Currently, the client drivers are limited to [those pre-existing packet extensions defined by the operating system](#Predefined-packet-extension-constants-and-helper-methods).   
+> [!IMPORTANT]
+> Currently, client drivers are limited to [pre-existing packet extensions defined by the operating system](#predefined-packet-extension-constants-and-helper-methods).
 
 ### Registering packet extensions
 
 The first step in working with packet extensions in your NIC client driver is to declare and register them in your *[EvtNetAdapterSetCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities)* callback function. You might do so like in the following example. Note that the example leaves out error handling for clarity.
 
-> [!IMPORTANT]
+> [!WARNING]
 > This example calls the **NetAdapterRegisterPacketExtension** method, which is available in the *NetPacketExtensionP.h* header from the [Realtek Github sample driver](https://github.com/Microsoft/NetAdapter-Cx-Driver-Samples/tree/master/RtEthSample). Because this header is prereleased product, it may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the contents of this header.
 
 ```
 NTSTATUS
 MyAdapterSetCapabilities(
-    NETADAPTER Adapter
+    _In_ NETADAPTER Adapter
 )
 {
     NTSTATUS status = STATUS_SUCCESS;
@@ -118,8 +121,9 @@ After registering packet extensions during *EvtNetAdapterSetCapabilities*, you'l
 ```C++
 NTSTATUS
 MyAdapterCreateTxQueue(
-    _In_    NETADAPTER netAdapter,
-    _Inout_ PNETTXQUEUE_INIT txQueueInit)
+    _In_    NETADAPTER          Adapter,
+    _Inout_ PNETTXQUEUE_INIT    TxQueueInit
+)
 {
     NTSTATUS status = STATUS_SUCCESS;
 
