@@ -3,7 +3,7 @@ title: Bug Check 0x144 BUGCODE_USB3_DRIVER
 description: The BUGCODE_USB3_DRIVER bug check has a value of 0x00000144. This is the code used for all USB 3 bug checks.
 ms.assetid: 39414287-3E20-405B-846A-B7F9F8AEE078
 keywords: ["Bug Check 0x144 BUGCODE_USB3_DRIVER", "BUGCODE_USB3_DRIVER"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

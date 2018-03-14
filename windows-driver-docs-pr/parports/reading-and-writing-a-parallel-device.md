@@ -30,6 +30,5 @@ If a client uses read and write I/O requests, the parallel port bus driver queue
  
 
 
---------------------
 
 

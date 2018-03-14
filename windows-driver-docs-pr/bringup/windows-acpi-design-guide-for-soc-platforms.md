@@ -78,6 +78,5 @@ This section contains guidelines for implementing Windows PCs and devices that s
  
 
 
---------------------
 
 

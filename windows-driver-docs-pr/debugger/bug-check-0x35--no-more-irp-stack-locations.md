@@ -3,7 +3,7 @@ title: Bug Check 0x35 NO_MORE_IRP_STACK_LOCATIONS
 description: The NO_MORE_IRP_STACK_LOCATIONS bug check has a value of 0x00000035. This bug check occurs when the IoCallDriver packet has no more stack locations remaining.
 ms.assetid: 1a8d5a1b-70aa-4846-bafe-0fef041570c1
 keywords: ["Bug Check 0x35 NO_MORE_IRP_STACK_LOCATIONS", "NO_MORE_IRP_STACK_LOCATIONS"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

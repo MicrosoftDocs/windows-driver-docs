@@ -79,6 +79,5 @@ This function is available starting in revision 0x00010001 of the **EFI\_USBFN\_
  
 
 
---------------------
 
 

@@ -130,6 +130,5 @@ If a hardware vendor decides to implement additional logic to determine whether 
 [Device I/O from the UEFI environment](device-i-o-from-the-uefi-environment.md)  
 [Firmware update status](firmware-update-status.md)  
 
---------------------
 
 

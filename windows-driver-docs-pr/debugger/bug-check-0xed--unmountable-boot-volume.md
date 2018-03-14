@@ -3,7 +3,7 @@ title: Bug Check 0xED UNMOUNTABLE_BOOT_VOLUME
 description: The UNMOUNTABLE_BOOT_VOLUME bug check has a value of 0x000000ED. This indicates that the I/O subsystem attempted to mount the boot volume and it failed.
 ms.assetid: 7c4ab301-f110-4fc8-9ff8-242e0d2155fd
 keywords: ["Bug Check 0xED UNMOUNTABLE_BOOT_VOLUME", "UNMOUNTABLE_BOOT_VOLUME"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

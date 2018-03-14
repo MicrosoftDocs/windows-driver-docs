@@ -3,7 +3,7 @@ title: Bug Check 0x189 BAD_OBJECT_HEADER
 description: The BAD_OBJECT_HEADER bug check has a value of 0x00000189. This indicates that The OBJECT_HEADER has been corrupted.
 ms.assetid: 1B4F586A-2DFB-421A-863B-CC706FB4795B
 keywords: ["Bug Check 0x189 BAD_OBJECT_HEADER", "BAD_OBJECT_HEADER"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

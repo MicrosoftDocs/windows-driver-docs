@@ -57,6 +57,5 @@ Information about writing battery miniclass drivers is organized as follows:
  
 
 
---------------------
 
 

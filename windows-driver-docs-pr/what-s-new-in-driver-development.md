@@ -197,7 +197,7 @@ In Windows 10, version 1709, several new routines to the Windows Kernel for driv
     * [PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt843941(v=vs.85).aspx)
     * [PROCESS_READWRITEVM_LOGGING_INFORMATION](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826264(v=vs.85).aspx)
 
-* [PsGetServerSiloActiveConsoleId](https://msdnstage.redmond.corp.microsoft.com/en-us/Library/Windows/Hardware/mt826266(v=vs.85).aspx) and [PsGetParentSilo](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826265(v=vs.85).aspx) &ndash; New Silo APIs to get information about server silos that are created and destroyed on a machine.
+* [PsGetServerSiloActiveConsoleId](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-psgetserversiloactiveconsoleid) and [PsGetParentSilo](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826265(v=vs.85).aspx) &ndash; New Silo APIs to get information about server silos that are created and destroyed on a machine.
 * The following is a list of new RTL functions for using correlation vector to reference events and the generated logs for diagnostic purposes.
     * [CORRELATION_VECTOR](https://msdn.microsoft.com/En-US/Library/Windows/Hardware/mt826258)
     * [RtlExtendCorrelationVector](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826269(v=vs.85).aspx)

@@ -49,6 +49,5 @@ status = FsRtlRegisterFileSystemFilterCallbacks(DriverObject, &fsFilterCallbacks
  
 
 
---------------------
 
 

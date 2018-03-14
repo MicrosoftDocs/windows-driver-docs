@@ -3,7 +3,7 @@ title: Bug Check 0x175 PREVIOUS_FATAL_ABNORMAL_RESET_ERROR
 description: The PREVIOUS_FATAL_ABNORMAL_RESET_ERROR bug check has a value of 0x00000175.
 ms.assetid: C1F74858-DAF4-466C-9696-6FE5390574C3
 keywords: ["Bug Check 0x175 PREVIOUS_FATAL_ABNORMAL_RESET_ERROR", "PREVIOUS_FATAL_ABNORMAL_RESET_ERROR"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

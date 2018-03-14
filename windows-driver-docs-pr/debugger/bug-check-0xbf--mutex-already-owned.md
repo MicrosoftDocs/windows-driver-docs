@@ -3,7 +3,7 @@ title: Bug Check 0xBF MUTEX_ALREADY_OWNED
 description: The MUTEX_ALREADY_OWNED bug check has a value of 0x000000BF. This indicates that a thread attempted to acquire ownership of a mutex it already owned.
 ms.assetid: 0008c6eb-3add-4169-b29a-6fe4d77c5c9e
 keywords: ["Bug Check 0xBF MUTEX_ALREADY_OWNED", "MUTEX_ALREADY_OWNED"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

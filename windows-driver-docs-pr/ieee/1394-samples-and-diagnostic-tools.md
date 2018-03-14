@@ -30,6 +30,5 @@ The system enumerates *1394vdev.sys* and *1394diag.sys* differently. The 1394vde
  
 
 
---------------------
 
 

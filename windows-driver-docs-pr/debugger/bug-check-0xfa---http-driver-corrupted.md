@@ -3,7 +3,7 @@ title: Bug Check 0xFA HTTP_DRIVER_CORRUPTED
 description: The HTTP_DRIVER_CORRUPTED bug check has a value of 0x000000FA. This indicates that the HTTP kernel driver (Http.sys) has reached a corrupted state and cannot recover.
 ms.assetid: f7e3c1bf-2259-4aa6-af19-267b537dedfe
 keywords: ["Bug Check 0xFA HTTP_DRIVER_CORRUPTED", "HTTP_DRIVER_CORRUPTED"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

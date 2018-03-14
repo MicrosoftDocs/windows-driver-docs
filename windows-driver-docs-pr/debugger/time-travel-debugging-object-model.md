@@ -1,7 +1,7 @@
 ---
 title: Time Travel Debugging - Introduction to Time Travel Debugging objects
 description: This section describes how to use the data model to query time travel traces. 
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,7 +23,7 @@ There are TTD extensions that add data to the *Session* and *Process* data model
 ## Process Objects
 The primary objects added to *Process* objects can be found in the *TTD* namespace off of any *Process* object. For example, `@$curprocess.TTD`.
 
-### Children
+### Properties
 | Object | Description |
 | --- | --- |
 | Lifetime | A [TTD range object](time-travel-debugging-range-objects.md) describing the lifetime of the entire trace. |
@@ -47,6 +47,9 @@ The primary objects added to *Session* objects can be found in the *TTD* namespa
 | --- | --- |
 | Data.Heap() | A collection of [heap objects](time-travel-debugging-heap-objects.md) that were allocated during the trace. Note that this is a function that does computation, so it takes a while to run.|
 | Calls() | Returns a collection of [calls objects](time-travel-debugging-calls-objects.md) that match the input string. The input string can contain wildcards. Note that this is a function that does computation, so it takes a while to run.  |
+| Memory() | This is a method that takes beginAddress, endAddress and dataAccessMask parameters and returns a collection of [memory objects](time-travel-debugging-memory-objects.md). Note that this is a function that does computation, so it takes a while to run.  |
+
+
 
 ## Examples
 
@@ -201,7 +204,6 @@ Use this LINQ query to display in grid format, the approximate longest running t
 
 ---
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20Using%20WinDbg%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

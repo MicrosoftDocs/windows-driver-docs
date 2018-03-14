@@ -85,6 +85,5 @@ Returned product-id of the device. Product IDs (PIDs) are 16-bit numbers assigne
  
 
 
---------------------
 
 

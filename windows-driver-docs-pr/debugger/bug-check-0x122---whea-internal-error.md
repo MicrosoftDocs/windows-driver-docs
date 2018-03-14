@@ -3,7 +3,7 @@ title: Bug Check 0x122 WHEA_INTERNAL_ERROR
 description: The WHEA_INTERNAL_ERROR bug check has a value of 0x00000122.
 ms.assetid: b0bf1f27-bfdd-4d5d-aeac-f74f45c6174f
 keywords: ["Bug Check 0x122 WHEA_INTERNAL_ERROR", "WHEA_INTERNAL_ERROR"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

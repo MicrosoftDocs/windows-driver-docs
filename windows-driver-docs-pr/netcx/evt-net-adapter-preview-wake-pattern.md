@@ -45,7 +45,10 @@ A handle to the net power settings object.
 An [**NDIS_PM_WOL_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff566766) enumeration value that specifies the type of the WOL packet.
 
 *PatternToBeAdded* [in]  
-A pointer to a structure of type [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) that specifies the wake-on-LAN (WOL) pattern to accept or reject.
+A pointer to a structure of type [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) that specifies the wake-on-LAN (WOL) pattern to accept or reject. 
+
+>[!IMPORTANT]
+> The client driver can use this pointer to examine the **NDIS_PM_WOL_PATTERN** structure but should not retain it.  NetAdapterCx will destroy the wake pattern structure once the driver's *EvtNetAdapterPreviewWakePattern* returns.
 
 Return value
 ------------
@@ -63,7 +66,7 @@ Register your implementation of this callback function by setting the appropriat
 
 In this callback, the driver typically uses the NETPOWERSETTINGS handle it receives in the *ExistingPowerSettings* parameter to iterate through the enabled wake patterns to determine whether to accept or reject *PatternToBeAdded*.  For an example, see [Configuring Power Management](configuring-power-management.md).
 
-The client driver can use the pointer to examine the [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) structure, but should not retain it.  NetAdapterCx will destroy the wake pattern structure once the driver's EvtNetAdapterPreviewWakePattern returns.
+The client driver can use the pointer to examine the **NDIS_PM_WOL_PATTERN** structure but should not retain it.  NetAdapterCx will destroy the wake pattern structure once the driver's *EvtNetAdapterPreviewWakePattern* returns.
 
 In its [*EvtDeviceArmWakeFromS0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) and [*EvtDeviceArmWakeFromSx*](https://msdn.microsoft.com/library/windows/hardware/ff540844) callback functions, the driver can iterate through the enabled wake patterns and protocol offloads to program them into the hardware.
 

@@ -85,6 +85,5 @@ This function must ignore the *bMaxPacketSize0* field of the Standard Device Des
  
 
 
---------------------
 
 

@@ -67,6 +67,5 @@ The following list provides EFI GUID values for a selection of EFI\_RNG\_PROTOCO
  
 
 
---------------------
 
 

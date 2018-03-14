@@ -3,7 +3,7 @@ title: Bug Check 0xAB SESSION_HAS_VALID_POOL_ON_EXIT
 description: The SESSION_HAS_VALID_POOL_ON_EXIT bug check has a value of 0x000000AB. This bug check indicates that a session unload occurred while a session driver still held memory.
 ms.assetid: fe4587cc-2567-4452-a3e7-22a53def76b2
 keywords: ["Bug Check 0xAB SESSION_HAS_VALID_POOL_ON_EXIT", "SESSION_HAS_VALID_POOL_ON_EXIT"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Bug Check 0xDA SYSTEM_PTE_MISUSE
 description: The SYSTEM_PTE_MISUSE bug check has a value of 0x000000DA. This indicates that a page table entry (PTE) routine has been used in an improper way.
 ms.assetid: a9a9f3e9-39b7-4e4a-a326-2f510e0aaa99
 keywords: ["Bug Check 0xDA SYSTEM_PTE_MISUSE", "SYSTEM_PTE_MISUSE"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

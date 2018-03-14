@@ -3,7 +3,7 @@ title: Bug Check 0x132 RESOURCE_OWNER_POINTER_INVALID
 description: The RESOURCE_OWNER_POINTER_INVALID bug check has a value of 0x00000132. This indicates that an invalid resource owner pointer was supplied.
 ms.assetid: 0DEFEFF0-A88C-4797-BF36-0D1E532FA371
 keywords: ["Bug Check 0x132 RESOURCE_OWNER_POINTER_INVALID", "RESOURCE_OWNER_POINTER_INVALID"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

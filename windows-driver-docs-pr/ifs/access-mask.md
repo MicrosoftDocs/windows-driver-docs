@@ -98,6 +98,5 @@ The actual mapping of generic rights to standard and specific rights for file ob
  
 
 
---------------------
 
 

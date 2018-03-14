@@ -3,7 +3,7 @@ title: Bug Check 0x6B PROCESS1_INITIALIZATION_FAILED
 description: The PROCESS1_INITIALIZATION_FAILED bug check has a value of 0x0000006B. This bug check indicates that the initialization of the Microsoft Windows operating system failed.
 ms.assetid: 8680d924-3041-4927-a228-52b281bbc267
 keywords: ["Bug Check 0x6B PROCESS1_INITIALIZATION_FAILED", "PROCESS1_INITIALIZATION_FAILED"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

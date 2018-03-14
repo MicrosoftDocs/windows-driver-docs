@@ -3,7 +3,7 @@ title: Bug Check 0x12B FAULTY_HARDWARE_CORRUPTED_PAGE
 description: The FAULTY_HARDWARE_CORRUPTED_PAGE bug check has a value of 0x0000012B. This bug check indicates that a single-bit error was found in this page. This is a hardware memory error.
 ms.assetid: caa57d76-946f-4394-bfcf-1dbf3813a55b
 keywords: ["Bug Check 0x12B FAULTY_HARDWARE_CORRUPTED_PAGE", "FAULTY_HARDWARE_CORRUPTED_PAGE"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

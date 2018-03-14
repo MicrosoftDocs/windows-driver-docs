@@ -3,7 +3,7 @@ title: Bug Check 0x2A INCONSISTENT_IRP
 description: The INCONSISTENT_IRP bug check has a value of 0x0000002A. This indicates that an IRP was found to contain inconsistent information.
 ms.assetid: e8dcfba1-94ed-499c-ae00-e0dfaf7f5094
 keywords: ["Bug Check 0x2A INCONSISTENT_IRP", "INCONSISTENT_IRP"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

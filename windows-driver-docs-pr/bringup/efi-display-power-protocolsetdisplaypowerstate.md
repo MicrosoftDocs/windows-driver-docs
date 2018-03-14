@@ -83,6 +83,5 @@ This function must allow redundant calls without returning an error code. Multip
 ## Related topics
 [EFI\_DISPLAY\_POWER\_PROTOCOL](efi-display-power-protocol.md)  
 
---------------------
 
 

@@ -68,6 +68,5 @@ A changer miniclass driver reports the type and number of a changer's elements i
  
 
 
---------------------
 
 

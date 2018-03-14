@@ -3,7 +3,7 @@ title: Bug Check 0x4D NO_PAGES_AVAILABLE
 description: The NO_PAGES_AVAILABLE bug check has a value of 0x0000004D. This indicates that no free pages are available to continue operations.
 ms.assetid: c1f8fb33-a01c-4455-87a7-59aa6ba7cb37
 keywords: ["Bug Check 0x4D NO_PAGES_AVAILABLE", "NO_PAGES_AVAILABLE"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

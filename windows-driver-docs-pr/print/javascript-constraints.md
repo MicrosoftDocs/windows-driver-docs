@@ -50,7 +50,7 @@ However, since *PrintConfig.dll* is loaded and unloaded frequently, debugging an
 
 The test app alone is sufficient to enable debugging, but it is also beneficial to add unit tests to ensure that the whole driver is handling PrintTicket, PrintCapabilities and constraints as expected. For more information on how to build Unit tests in Visual Studio, please see the following topics:
 
-[A Unit Testing Walkthrough with Visual Studio Team Test](http://msdn.microsoft.com/en-US/library/ms379625.aspx)
+[A Unit Testing Walkthrough with Visual Studio Team Test](http://msdn.microsoft.com/library/ms379625.aspx)
 
 [Unit Testing with Microsoft Visual Studio 2010 and Team Foundation Server](http://channel9.msdn.com/Events/TechEd/Australia/2010/DEV362)
 
@@ -217,7 +217,5 @@ For more information about how to use JavaScript constraints, see the [Print dri
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20JavaScript%20Constraints%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

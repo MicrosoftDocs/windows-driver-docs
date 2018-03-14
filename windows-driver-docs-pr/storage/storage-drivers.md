@@ -51,6 +51,5 @@ Subsequent sections contain guidelines for designing the following kinds of Wind
  
 
 
---------------------
 
 

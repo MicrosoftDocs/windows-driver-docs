@@ -66,6 +66,5 @@ As shown in the preceding figure, the role of each component in battery operatio
  
 
 
---------------------
 
 

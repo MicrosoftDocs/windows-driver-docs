@@ -38,4 +38,3 @@ The ATA port driver does not support target resets for devices that have multipl
  
 
 
---------------------

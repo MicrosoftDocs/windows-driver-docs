@@ -45,6 +45,5 @@ For more information about how to operate parallel ports and devices that are at
  
 
 
---------------------
 
 

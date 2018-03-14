@@ -3,7 +3,7 @@ title: Bug Check 0x101 CLOCK_WATCHDOG_TIMEOUT
 description: The CLOCK_WATCHDOG_TIMEOUT bug check has a value of 0x00000101 that indicates that an expected clock interrupt on a secondary processor, was not received within the allocated interval.
 ms.assetid: 2e35d8c5-00b3-4722-b596-a76f38eb5179
 keywords: ["Bug Check 0x101 CLOCK_WATCHDOG_TIMEOUT", "CLOCK_WATCHDOG_TIMEOUT"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

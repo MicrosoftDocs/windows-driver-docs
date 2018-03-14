@@ -38,6 +38,5 @@ By default, the code for kernel-mode drivers is not pageable, nor is the global 
  
 
 
---------------------
 
 

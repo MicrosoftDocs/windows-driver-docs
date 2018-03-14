@@ -91,6 +91,5 @@ This function fails with **EFI\_INVALID\_PARAMETER** if the specified direction 
  
 
 
---------------------
 
 

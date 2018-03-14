@@ -47,6 +47,5 @@ The Windows boot flow requires the battery to be charged to a certain level befo
  
 
 
---------------------
 
 

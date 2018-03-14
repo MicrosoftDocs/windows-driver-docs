@@ -3,7 +3,7 @@ title: Bug Check 0x14E SOC_CRITICAL_DEVICE_REMOVED
 description: The SOC_CRITICAL_DEVICE_REMOVED bug check has a value of 0x0000014E. This indicates that a critical SOC device has been unexpectedly removed or failed.
 ms.assetid: FC0A9CED-F078-4651-BD3E-4246ED36E81A
 keywords: ["Bug Check 0x14E SOC_CRITICAL_DEVICE_REMOVED", "SOC_CRITICAL_DEVICE_REMOVED"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

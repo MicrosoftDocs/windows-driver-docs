@@ -3,7 +3,7 @@ title: Bug Check 0x7B INACCESSIBLE_BOOT_DEVICE
 description: The INACCESSIBLE_BOOT_DEVICE bug check has a value of 0x0000007B. This bug check indicates that the Microsoft Windows operating system has lost access to the system partition during startup.
 ms.assetid: 0dfcb519-4ea3-4419-a1c3-60fdff96404d
 keywords: ["Bug Check 0x7B INACCESSIBLE_BOOT_DEVICE", "INACCESSIBLE_BOOT_DEVICE"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware

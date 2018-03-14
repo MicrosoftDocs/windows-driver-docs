@@ -3,7 +3,7 @@ title: Bug Check 0x16E ERESOURCE_INVALID_RELEASE
 description: The ERESOURCE_INVALID_RELEASE bug check has a value of 0x0000016E. This indicates that the target thread pointer supplied to ExReleaseResourceForThreadLite was invalid.
 ms.assetid: F180D28D-70B7-4E78-9E04-C5DC19A41EB9
 keywords: ["Bug Check 0x16E ERESOURCE_INVALID_RELEASE", "ERESOURCE_INVALID_RELEASE"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
