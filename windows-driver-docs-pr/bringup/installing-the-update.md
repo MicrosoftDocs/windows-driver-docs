@@ -34,4 +34,3 @@ The EFI System Resource Table provides the current firmware version and the stat
 [Authoring a firmware update package](authoring-a-firmware-update-package.md)  
 [Certifying and signing the update package](certifying-and-signing-the-update-package.md)  
 
---------------------

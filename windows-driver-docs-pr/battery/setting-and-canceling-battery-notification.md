@@ -59,6 +59,5 @@ Miniclass drivers can omit functionality for both routines and return STATUS\_NO
  
 
 
---------------------
 
 

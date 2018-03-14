@@ -185,6 +185,5 @@ You are now ready to run I²C tests. You can run a single test, all tests at onc
 ## Related topics
 [Testing with Multi Interface Test Tool (MITT)](https://msdn.microsoft.com/library/windows/hardware/dn919874)  
 
---------------------
 
 

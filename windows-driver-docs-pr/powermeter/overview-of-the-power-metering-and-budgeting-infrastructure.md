@@ -66,6 +66,5 @@ For more information, see [ACPI Power Meter Interface](acpi-power-meter-interfac
  
 
 
---------------------
 
 

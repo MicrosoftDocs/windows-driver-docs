@@ -125,4 +125,3 @@ Synchronization is on a per channel basis. Therefore, on a synchronized channel,
  
 
 
---------------------

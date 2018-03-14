@@ -4,7 +4,7 @@ author: windows-driver-content
 description: Provides information on device requirements for a Wi-Fi Direct Printing implementation.
 ms.assetid: 03266F8F-4C91-49E7-9CAF-2D08AF5E3E18
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -20,8 +20,8 @@ For a WFD-WSD device to get the seamless connectivity experience as described in
 
 -   The device must support Vertical pairing and send the relevant DPWS (WSD) data in the WPS messages (formats described in "Implementing Vertical Pairing Data Blob" below)
 -   All logical devices in the physical device MUST use the same PnP-X Container ID in its PnP-X extension
-    -   For details on implementing PnP-X Container IDs for Network Connected Devices, see [Overview of Container IDs](https://msdn.microsoft.com/library/windows/hardware/ff549447).
-    -   For general information on PnP-X extensions, see the [PnP-X: Plug and Play Extensions for Windows Specification](http://msdn.microsoft.com/en-US/windows/hardware/gg463082).
+    -   For details on implementing PnP-X Container IDs for Network Connected Devices, see [Overview of Container IDs](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-container-ids).
+    -   For general information on PnP-X extensions, see the [PnP-X: Plug and Play Extensions for Windows Specification](http://msdn.microsoft.com/windows/hardware/gg463082).
 
 Since the WFD Container ID will match the UUID of the printer, PnP-X Container ID will not be required in the device metadata. However, it is still recommended that the device supports PnP-X metadata in the device metadata and advertise a PnP-X Container ID as part of the PnP-X metadata in the device metadata. This Container ID should match the WFD Container ID.
 
@@ -42,7 +42,7 @@ Windows discovers Printers over Wi-Fi Direct using a Probe Request/Response per 
 
 Both the Probe Request & Probe Response Frames can be extended using Custom IEs. Microsoft has defined a Custom IE with several attributes to enable various extensions.
 
-**How to construct a Microsoft 802.11 Custom IE?**
+**How to construct a Microsoft 802.11 Custom IE**
 
 A Custom IE consists of a Vendor ID & Vendor Data.
 
@@ -102,7 +102,7 @@ The Vertical Pairing Data Blob allows for the PC to understand the WSD Print ser
 
 Like the Container UUID, Vertical Pairing Data Blob is also an attribute of the Microsoft IE. Unlike the Container ID attribute, this must be published in either M7/M8 WPS message (during Wi-Fi Direct Pairing) from the Device depending upon its role.
 
-**How to construct a Microsoft 802.11 Custom IE?**
+**How to construct a Microsoft 802.11 Custom IE**
 
 A Custom IE consists of a Vendor ID & Vendor Data.
 
@@ -325,7 +325,5 @@ After the device connects to the Wi-Fi network and announces its DPWS services, 
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Wi-Fi%20Direct%20Printing%20Implementation%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

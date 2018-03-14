@@ -47,6 +47,5 @@ Because a parallel port is shared by drivers, the parallel port function driver 
  
 
 
---------------------
 
 

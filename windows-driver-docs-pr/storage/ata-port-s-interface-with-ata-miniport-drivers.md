@@ -70,4 +70,3 @@ An ATA miniport driver that implements the channel interface exposes controller 
  
 
 
---------------------

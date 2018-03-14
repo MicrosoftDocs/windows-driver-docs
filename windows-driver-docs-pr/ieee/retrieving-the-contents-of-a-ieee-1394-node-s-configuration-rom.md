@@ -61,6 +61,5 @@ You can find descriptions of the configuration ROM values in the previous steps 
 [Modifying the 1394 Configuration ROM](https://msdn.microsoft.com/library/windows/hardware/ff537433)  
 [**REQUEST\_GET\_CONFIG\_ROM**](https://msdn.microsoft.com/library/windows/hardware/gg266404)  
 
---------------------
 
 

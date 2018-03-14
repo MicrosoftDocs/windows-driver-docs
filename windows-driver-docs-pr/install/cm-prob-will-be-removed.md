@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_WILL_BE_REMOVED
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-will-be-removed-dg"></a>
 

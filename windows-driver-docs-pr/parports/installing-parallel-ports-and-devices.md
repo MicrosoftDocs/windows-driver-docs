@@ -42,6 +42,5 @@ For more information about system support for parallel ports and devices attache
  
 
 
---------------------
 
 

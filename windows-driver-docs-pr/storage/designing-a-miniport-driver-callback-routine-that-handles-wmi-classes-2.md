@@ -169,6 +169,5 @@ Before returning, your callback routine should call [**ScsiPortWmiPostProcess**]
  
 
 
---------------------
 
 

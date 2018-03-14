@@ -28,6 +28,5 @@ Storport Idle Power Management (IPM) allows the classpnp and disk class drivers 
  
 
 
---------------------
 
 

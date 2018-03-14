@@ -48,6 +48,5 @@ To obtain the path and name of child objects in the ACPI namespace of a device, 
  
 
 
---------------------
 
 

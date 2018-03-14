@@ -40,6 +40,5 @@ See [Battery Miniclass Driver Routines](https://msdn.microsoft.com/library/windo
  
 
 
---------------------
 
 

@@ -356,6 +356,5 @@ A convertible-PC-sensing device interrupts the system when a convertible PC swit
  
 
 
---------------------
 
 

@@ -24,6 +24,5 @@ GpioClx allocates the storage for a device object. If a GPIO controller driver h
  
 
 
---------------------
 
 

@@ -36,6 +36,5 @@ The [**BatteryClassIoctl**](https://msdn.microsoft.com/library/windows/hardware/
  
 
 
---------------------
 
 

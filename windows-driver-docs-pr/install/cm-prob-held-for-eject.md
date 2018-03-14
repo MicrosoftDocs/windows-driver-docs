@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_HELD_FOR_EJECT
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-held-for-eject-dg"></a>
 

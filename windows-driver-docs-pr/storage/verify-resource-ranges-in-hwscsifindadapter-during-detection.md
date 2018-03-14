@@ -32,6 +32,5 @@ The miniport driver should call [**ScsiPortValidateRange**](https://msdn.microso
  
 
 
---------------------
 
 

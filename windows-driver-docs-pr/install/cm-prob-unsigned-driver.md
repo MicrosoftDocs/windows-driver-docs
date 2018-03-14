@@ -11,6 +11,8 @@ ms.technology: windows-devices
 
 # CM_PROB_UNSIGNED_DRIVER
 
+This function is reserved for system use.
+
 
 The device did not start on a 64-bit version of Windows because it has a driver that is not digitally signed. For more information about how to sign drivers, see [Driver Signing](driver-signing.md).
 

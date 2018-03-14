@@ -17,11 +17,11 @@ The Enterprise WDK contains the necessary elements to build drivers and basic Wi
 
 ## Enterprise WDK 1709 Prerequisites
 
-*	.NET Framework 4.6 SDK build 4.6.01586
+*	.NET Framework 4.6
 
 ## Enterprise WDK 1703 Prerequisites
 
-*	.NET Framework 4.6 SDK build 4.6.01586
+*	.NET Framework 4.6
 
 ## Getting Started
 

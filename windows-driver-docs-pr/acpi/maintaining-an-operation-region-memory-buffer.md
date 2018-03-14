@@ -11,7 +11,7 @@ keywords:
 - operation region memory buffer WDK ACPI
 - memory buffers WDK ACPI
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 01/24/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -19,8 +19,6 @@ ms.technology: windows-devices
 
 # Maintaining an Operation Region Memory Buffer
 
-
-## <a href="" id="ddk-maintaining-an-operation-region-memory-buffer-kg"></a>
 
 
 The driver maintains an operation region memory buffer. The memory buffer contains the data fields associated with an operation region. The ACPI driver calls an operation region handler to access the data fields in an operation region memory buffer.
@@ -33,13 +31,11 @@ The operation region memory buffer must comply with the following:
 
 -   The buffer must be allocated before the driver registers an operation region handler that accesses it, and maintained as long as the handler is registered.
 
-For detailed information about constraints on operation regions, see the [Advanced Configuration and Power Interface Specification](http://go.microsoft.com/fwlink/p/?linkid=57185).
+For detailed information about constraints on operation regions, see the [Advanced Configuration and Power Interface Specification](https://go.microsoft.com/fwlink/p/?linkid=866846).
 
  
 
  
 
-
---------------------
 
 

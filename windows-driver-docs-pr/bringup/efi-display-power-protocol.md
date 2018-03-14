@@ -53,6 +53,5 @@ Returns the current power state of the display and backlight. For more informati
  
 
 
---------------------
 
 

@@ -48,6 +48,5 @@ This section contains guidelines for writing a new changer miniclass driver.
  
 
 
---------------------
 
 

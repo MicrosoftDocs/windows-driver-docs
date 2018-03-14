@@ -11,6 +11,8 @@ ms.technology: windows-devices
 
 # CM_PROB_USED_BY_DEBUGGER
 
+This function is reserved for system use.
+
 ### Error
 
 53

@@ -40,6 +40,5 @@ Callers of [**FltCancelFileOpen**](https://msdn.microsoft.com/library/windows/ha
  
 
 
---------------------
 
 

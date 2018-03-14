@@ -259,19 +259,11 @@ Disable Use of an Embedded Manifest by setting project properties for your APO p
 ## <span id="Packaging_your_APO_with_a_Driver"></span><span id="packaging_your_apo_with_a_driver"></span><span id="PACKAGING_YOUR_APO_WITH_A_DRIVER"></span>Packaging your APO with a Driver
 
 
-When you develop your own audio driver and wrap or replace the system-supplied APOs, you must provide a driver package for installing the driver and APOs. The driver package would typically contain the following:
+When you develop your own audio driver and wrap or replace the system-supplied APOs, you must provide a driver package for installing the driver and APOs. For Windows 10, please see [Universal Windows Drivers for Audio](audio-universal-drivers.md). Your audio related driver packages should follow the policies and packaging model detailed there.  
 
--   A custom HD or USB audio driver
+The custom APO is packaged as a DLL, and any configuration UI is packaged as a separate UWP or Desktop Bridge app. The APO device INF copies the DLLs to the system folders that are indicated in the associated INF CopyFile directive. The DLL that contains the APOs must register itself by including an AddReg section in the INF file.
 
--   Custom APOs
-
--   A configuration user interface
-
--   An INF file
-
-The custom APO and the configuration UI are packaged as separate DLLs. The device installation program or a setup program copies the DLLs to the system folders that are indicated in the associated INF file. The DLL that contains the APOs must register itself by including an AddReg section in the INF file.
-
-The following paragraphs and INF file fragments show the modifications that are necessary to use the standard INF file to copy and register APOs and the configuration UI.
+The following paragraphs and INF file fragments show the modifications that are necessary to use the standard INF file to copy and register APOs.
 
 The tabletaudiosample.inf and phoneaudiosample.inf files included with the Sysvad sample illustrate how the SwapApo.dll APOs are registered.
 
@@ -577,7 +569,5 @@ This section describes the differences between Windows Mobile and Windows Deskto
 [Implementing a UI for Configuring APO Effects](implementing-a-ui-for-configuring-apo-effects.md)  
 [Windows Audio Processing Objects](windows-audio-processing-objects.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Implementing%20Audio%20Processing%20Objects%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

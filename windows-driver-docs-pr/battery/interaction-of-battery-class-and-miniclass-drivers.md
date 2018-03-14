@@ -33,6 +33,5 @@ The class driver is designed to handle the superset of possible battery informat
  
 
 
---------------------
 
 

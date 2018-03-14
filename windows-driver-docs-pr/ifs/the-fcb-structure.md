@@ -65,6 +65,5 @@ An FCB structure contains the following:
  
 
 
---------------------
 
 

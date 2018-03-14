@@ -46,6 +46,5 @@ The following topics provide guidelines for handling buffer addresses and MDLs f
  
 
 
---------------------
 
 

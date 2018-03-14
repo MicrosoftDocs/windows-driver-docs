@@ -29,6 +29,5 @@ If a user-mode application has an open connection to the communication server po
  
 
 
---------------------
 
 
