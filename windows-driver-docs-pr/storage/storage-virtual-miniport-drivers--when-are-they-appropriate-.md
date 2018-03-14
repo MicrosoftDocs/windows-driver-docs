@@ -22,6 +22,5 @@ A virtual miniport is inappropriate when it is directly controlling real hardwar
  
 
 
---------------------
 
 

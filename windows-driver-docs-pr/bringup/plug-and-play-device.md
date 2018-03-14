@@ -52,6 +52,5 @@ Notice that two hardware IDs are reported by each firmware resource device; the 
 [Seamless crisis prevention and recovery](seamless-crisis-prevention-and-recovery.md)  
 [Firmware update status](firmware-update-status.md)  
 
---------------------
 
 

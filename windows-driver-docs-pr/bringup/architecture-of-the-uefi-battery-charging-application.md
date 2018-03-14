@@ -266,6 +266,5 @@ The following steps describe how the application draws the UI to the screen:
  
 
 
---------------------
 
 

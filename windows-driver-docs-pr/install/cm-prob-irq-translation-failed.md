@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_IRQ_TRANSLATION_FAILED
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-irq-translation-failed-dg"></a>
 

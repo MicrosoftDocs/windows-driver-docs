@@ -37,6 +37,5 @@ A client disconnects from a device by using a [**IOCTL\_INTERNAL\_PARCLASS\_DISC
  
 
 
---------------------
 
 

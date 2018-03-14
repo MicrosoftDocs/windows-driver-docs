@@ -120,6 +120,5 @@ In response to the secondary interrupt, the SPB peripheral device driver posts a
  
 
 
---------------------
 
 

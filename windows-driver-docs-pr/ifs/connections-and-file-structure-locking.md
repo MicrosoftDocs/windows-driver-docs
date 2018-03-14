@@ -166,6 +166,5 @@ When you have successfully acquired the lock, insert the node into the table, re
  
 
 
---------------------
 
 

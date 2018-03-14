@@ -70,6 +70,5 @@ To receive interrupts from the GPIO pin in an interrupt resource, a peripheral d
  
 
 
---------------------
 
 

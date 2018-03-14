@@ -53,6 +53,5 @@ For more information, see [Interrupt Synchronization for GPIO Controller Drivers
  
 
 
---------------------
 
 

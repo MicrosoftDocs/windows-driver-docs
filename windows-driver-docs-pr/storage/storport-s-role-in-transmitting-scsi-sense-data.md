@@ -24,6 +24,5 @@ When Storport completes the IRP\_MJ\_SCSI IRP associated with the SRB, it must i
  
 
 
---------------------
 
 

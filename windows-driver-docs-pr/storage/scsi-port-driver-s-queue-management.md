@@ -29,6 +29,5 @@ The following sections describe the conditions that cause SCSI Port to change th
  
 
 
---------------------
 
 

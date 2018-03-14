@@ -42,6 +42,5 @@ Typically, a UPS minidriver communicates with a UPS unit through a COM port by c
  
 
 
---------------------
 
 

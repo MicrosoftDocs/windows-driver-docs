@@ -82,6 +82,5 @@ The miniclass driver should create an FDO and attach it to the device stack for 
  
 
 
---------------------
 
 

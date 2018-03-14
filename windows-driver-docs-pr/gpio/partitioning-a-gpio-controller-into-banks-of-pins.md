@@ -38,6 +38,5 @@ If a GPIO bank supports component-level power management, GpioClx enables a tran
  
 
 
---------------------
 
 

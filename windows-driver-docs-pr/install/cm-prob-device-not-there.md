@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_DEVICE_NOT_THERE
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-device-not-there-dg"></a>
 

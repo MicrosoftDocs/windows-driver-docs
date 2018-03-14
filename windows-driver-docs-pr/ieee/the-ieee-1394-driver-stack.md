@@ -41,6 +41,5 @@ During normal operation, drivers receive ordinary I/O requests (such as [**IRP\_
 ## Related topics
 [IEEE 1394 Bus Driver in Windows 7](https://msdn.microsoft.com/library/windows/hardware/gg266402)  
 
---------------------
 
 

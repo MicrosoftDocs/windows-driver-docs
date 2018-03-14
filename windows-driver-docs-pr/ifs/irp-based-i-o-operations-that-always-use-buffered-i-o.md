@@ -37,6 +37,5 @@ Note that IRP\_MJ\_QUERY\_INFORMATION can also be a fast I/O operation. When it 
  
 
 
---------------------
 
 

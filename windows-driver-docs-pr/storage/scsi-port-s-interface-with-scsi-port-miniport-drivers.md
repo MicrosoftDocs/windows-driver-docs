@@ -39,6 +39,5 @@ For an explanation of these values, see the SCSI-2 specification.
  
 
 
---------------------
 
 

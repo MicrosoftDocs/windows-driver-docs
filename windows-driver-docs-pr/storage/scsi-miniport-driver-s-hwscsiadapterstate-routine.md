@@ -36,6 +36,5 @@ See [**HwScsiAdapterState**](https://msdn.microsoft.com/library/windows/hardware
  
 
 
---------------------
 
 

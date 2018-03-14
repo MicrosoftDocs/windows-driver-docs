@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_PARTIAL_LOG_CONF
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-partial-log-conf-dg"></a>
 

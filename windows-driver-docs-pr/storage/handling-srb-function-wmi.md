@@ -72,6 +72,5 @@ For more information about WMI, see [Windows Management Instrumentation](https:/
  
 
 
---------------------
 
 

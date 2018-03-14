@@ -47,6 +47,5 @@ For more information about the communication modes that the parallel port bus dr
  
 
 
---------------------
 
 

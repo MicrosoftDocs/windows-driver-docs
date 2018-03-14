@@ -198,4 +198,3 @@ The removable user data partition refers to the data stored on the SD card. The 
  
 
 
---------------------

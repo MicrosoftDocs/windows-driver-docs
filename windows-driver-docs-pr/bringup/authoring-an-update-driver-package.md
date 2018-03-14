@@ -372,6 +372,5 @@ After the next reboot, the OS Loader will call into UpdateCapsule() with the pay
 [Seamless crisis prevention and recovery](seamless-crisis-prevention-and-recovery.md)  
 [Firmware update status](firmware-update-status.md)  
 
---------------------
 
 
