@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_NO_SOFTCONFIG
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-no-softconfig-dg"></a>
 

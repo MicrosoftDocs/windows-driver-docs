@@ -48,6 +48,5 @@ Starting from the bottom of the figure, the following describes each device obje
  
 
 
---------------------
 
 

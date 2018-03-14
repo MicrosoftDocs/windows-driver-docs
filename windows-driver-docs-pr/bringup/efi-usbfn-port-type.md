@@ -84,6 +84,5 @@ Refer to "Battery Charging Specification, Revision 1.1” on the [USB.org](http:
  
 
 
---------------------
 
 

@@ -33,6 +33,5 @@ It does not matter how a miniclass driver translates element addresses as long a
  
 
 
---------------------
 
 

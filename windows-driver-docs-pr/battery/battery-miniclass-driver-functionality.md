@@ -40,6 +40,5 @@ Every battery miniclass driver provides a set of [BatteryMini*Xxx*](https://msdn
  
 
 
---------------------
 
 

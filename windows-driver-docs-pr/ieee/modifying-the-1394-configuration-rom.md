@@ -33,6 +33,5 @@ A Microsoft Windows system connected to the 1394 bus exposes a Configuration ROM
 ## Related topics
 [Retrieving the Contents of a IEEE 1394 Node's Configuration ROM](https://msdn.microsoft.com/library/windows/hardware/gg266408)  
 
---------------------
 
 

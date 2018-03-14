@@ -59,6 +59,5 @@ Another reason why the *DeviceType* parameter is important is that many filters 
  
 
 
---------------------
 
 

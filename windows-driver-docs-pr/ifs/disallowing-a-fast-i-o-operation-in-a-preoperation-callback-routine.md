@@ -45,6 +45,5 @@ Minifilter drivers cannot return FLT\_PREOP\_DISALLOW\_FASTIO for IRP\_MJ\_SHUTD
  
 
 
---------------------
 
 

@@ -60,6 +60,5 @@ To you use Multiple Interface Test Tool (MITT), order you need a MITT board and 
 ## Related topics
 [Testing with Multi Interface Test Tool (MITT)](https://msdn.microsoft.com/library/windows/hardware/dn919874)  
 
---------------------
 
 

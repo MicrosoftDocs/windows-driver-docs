@@ -207,6 +207,5 @@ Reports the status of utility-supplied power into the UPS. Values are listed in 
  
 
 
---------------------
 
 

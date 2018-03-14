@@ -81,6 +81,5 @@ Returns the maximum packet size supported by this protocol. See [EFI\_SIMPLE\_WI
  
 
 
---------------------
 
 

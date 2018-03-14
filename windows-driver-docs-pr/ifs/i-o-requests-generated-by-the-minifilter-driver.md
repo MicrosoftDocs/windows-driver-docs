@@ -82,6 +82,5 @@ The filter manager also provides the following general-purpose routines:
  
 
 
---------------------
 
 

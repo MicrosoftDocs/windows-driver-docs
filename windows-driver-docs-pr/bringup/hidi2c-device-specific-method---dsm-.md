@@ -38,6 +38,5 @@ An integer containing the HidDescriptorAddress. This address is the register off
  
 
 
---------------------
 
 

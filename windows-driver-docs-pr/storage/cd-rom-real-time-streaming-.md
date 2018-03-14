@@ -80,6 +80,5 @@ The MMC specification recommends that applications indicate the desirable read a
 [**MARK\_HANDLE\_INFO**](https://msdn.microsoft.com/library/windows/desktop/aa365229)  
 [**CDROM\_PERFORMANCE\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/gg441233)  
 
---------------------
 
 

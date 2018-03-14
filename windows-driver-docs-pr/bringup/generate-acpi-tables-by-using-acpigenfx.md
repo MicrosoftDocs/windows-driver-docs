@@ -445,6 +445,5 @@ In development and test scenarios, you can replace the AML binary that is genera
 ## Related topics
 [ACPI system description tables](acpi-system-description-tables.md)  
 
---------------------
 
 

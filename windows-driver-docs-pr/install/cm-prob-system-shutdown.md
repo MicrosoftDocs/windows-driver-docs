@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_SYSTEM_SHUTDOWN
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-system-shutdown-dg"></a>
 

@@ -97,6 +97,5 @@ OEMs can include a Device-Specific Method (\_DSM) to support the Microsoft therm
  
 
 
---------------------
 
 

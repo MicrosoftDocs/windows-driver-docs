@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_INVALID_DATA
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-invalid-data-dg"></a>
 

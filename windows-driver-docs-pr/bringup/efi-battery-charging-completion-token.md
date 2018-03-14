@@ -48,6 +48,5 @@ EFI\_BATTERY\_CHARGING\_COMPLETION\_TOKEN is returned in the *CompletionToken* p
 [EFI\_BATTERY\_CHARGING\_PROTOCOL.ChargeBattery](efi-battery-charging-protocolchargebattery.md)  
 [EFI\_BATTERY\_CHARGING\_STATUS](efi-battery-charging-status.md)  
 
---------------------
 
 

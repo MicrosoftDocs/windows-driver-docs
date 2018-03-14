@@ -43,6 +43,5 @@ For more information about the Microsoft-provided UEFI battery charging applicat
 ## Related topics
 [Architecture of the UEFI battery charging application](architecture-of-the-uefi-battery-charging-application.md)  
 
---------------------
 
 
