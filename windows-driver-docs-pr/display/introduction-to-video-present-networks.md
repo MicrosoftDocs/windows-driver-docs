@@ -27,7 +27,7 @@ ms.technology: windows-devices
 # Introduction to Video Present Networks
 
 
-The video present network (VidPN) manager, which is a component of the DirextX graphics kernel subsystem (Dxgkrnl.sys), is responsible for managing the collection of monitors and other display devices that are connected to a display adapter. The responsibilities of the VidPN manager include the following:
+The video present network (VidPN) manager, which is a component of the DirectX graphics kernel subsystem (Dxgkrnl.sys), is responsible for managing the collection of monitors and other display devices that are connected to a display adapter. The responsibilities of the VidPN manager include the following:
 
 -   Respond to hot plugging and unplugging of monitors.
 
