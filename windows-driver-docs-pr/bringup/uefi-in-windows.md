@@ -76,6 +76,5 @@ OEMs that choose to implement UEFI applications should make sure that they have 
 ## Related topics
 [UEFI protocols for Windows](uefi-protocols-for-windows.md)  
 
---------------------
 
 

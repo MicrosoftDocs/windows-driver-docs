@@ -185,6 +185,5 @@ Specifies the maximum possible transaction speed between the source device and t
 [The IEEE 1394 Driver Stack](https://msdn.microsoft.com/library/windows/hardware/ff538867)  
 [IEEE 1394 Bus Driver in Windows 7](https://msdn.microsoft.com/library/windows/hardware/gg266402)  
 
---------------------
 
 

@@ -46,6 +46,5 @@ When used with [EFI\_DISPLAY\_POWER\_PROTOCOL.GetDisplayPowerState](efi-display-
 ## Related topics
 [EFI\_DISPLAY\_POWER\_PROTOCOL](efi-display-power-protocol.md)  
 
---------------------
 
 

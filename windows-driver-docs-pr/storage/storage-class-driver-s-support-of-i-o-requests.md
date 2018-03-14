@@ -40,6 +40,5 @@ The designer of a class driver for an entirely new type of storage device must d
  
 
 
---------------------
 
 

@@ -64,6 +64,5 @@ An SPB provides no bus-specific means to convey interrupt requests from peripher
  
 
 
---------------------
 
 

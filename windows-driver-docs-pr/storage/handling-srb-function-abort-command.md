@@ -41,6 +41,5 @@ Otherwise, the *HwScsiStartIo* routine does the following:
  
 
 
---------------------
 
 

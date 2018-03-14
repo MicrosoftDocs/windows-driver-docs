@@ -43,6 +43,5 @@ Starting from the bottom of the figure, the following list describes each device
  
 
 
---------------------
 
 

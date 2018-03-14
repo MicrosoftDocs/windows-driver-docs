@@ -31,6 +31,5 @@ A parallel port can be one device on a multifunction peripheral bus card or a de
  
 
 
---------------------
 
 

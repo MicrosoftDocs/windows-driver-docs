@@ -53,6 +53,5 @@ Indicates USB OUT transfer. Direction is from host to device
  
 
 
---------------------
 
 

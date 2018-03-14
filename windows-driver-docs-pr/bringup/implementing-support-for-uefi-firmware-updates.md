@@ -31,6 +31,5 @@ This section describes the steps necessary for a firmware vendor to implement su
  
 
 
---------------------
 
 
