@@ -73,11 +73,9 @@ See the above pages for details on what the client needs to do in each event cal
 
 ## Using the ring buffer
 
-A [**NET_RING_BUFFER**](net-ring-buffer.md) is a circular buffer of one or more [**NET_PACKET**](net-packet.md) structures that is shared between NetAdapterCx and a client. Currently, each datapath queue has two ring buffers: one **NET_PACKET** ring buffer and one [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) ring buffer. The queue's ring buffers are described by a [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor) structure.
+A [**NET_RING_BUFFER**](net-ring-buffer.md) is a circular buffer of one or more [**NET_PACKET**](net-packet.md) structures that is shared between NetAdapterCx and a client. To access a queue's packet ring buffer, first call **NetRx(Tx)QueueGetDatapathDescriptor** to get the queue's datapath descriptor structure, then call [NET_DATAPATH_DESCRIPTOR_GET_PACKET_RING_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_datapath_descriptor_get_packet_ring_buffer) to get the ring buffer.
 
-Each packet in the packet ring buffer references the start of its fragments in the fragment ring buffer. Typically, NIC client drivers only work with the packet ring buffer. This topic explains how client drivers work with the packet ring buffer.
-
-Each element in the packet [**NET_RING_BUFFER**](net-ring-buffer.md) is owned by either the client driver or NetAdapterCx. The values of the index members control ownership. Specifically, the client driver owns every element from **BeginIndex** to **EndIndex - 1** inclusive.
+Each element in the packet ring buffer is owned by either the client driver or NetAdapterCx. The values of the index members control ownership. Specifically, the client driver owns every element from **BeginIndex** to **EndIndex - 1** inclusive.
 
 For example, if **BeginIndex** is 2 and **EndIndex** is 5, the client driver owns three elements: the elements with index values 2, 3, and 4.
 If **BeginIndex** is equal to **EndIndex**, the client driver does not own any elements.
@@ -93,6 +91,10 @@ In this model, the client has submitted packets with index values between **Begi
 After the hardware transmits or receives data, the client advances **BeginIndex** to transfer ownership of the packets to NetAdapterCx. If the client tracks packet completion using the **Completed** flag on **NET_PACKET_FRAGMENT**, the client can call [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md) to advance **BeginIndex** automatically through each completed packet.
 
 Because the ring buffer is circular, eventually the index values wrap around the end of the buffer and come back to the beginning. To handle wrap around when incrementing ring buffer indices, call [**NetRingBufferIncrementIndex**](NetRingBufferIncrementIndex.md).
+
+### Fragment ring buffer
+
+Each datapath queue has one ring buffer for its packets, as well as a ring buffer for those packets' [NET_PACKET_FRAGMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_fragment) structures. Fragments are organized in system memory this way for faster performance and easier access with helper functions like [NetPacketGetFragmentCount](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-netpacketgetfragmentcount) and [NET_PACKET_GET_FRAGMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_packet_get_fragment). However, client drivers typically do not access the fragment ring directly. Instead, they work with the packet ring buffer, and each packet references the start of its fragments in the fragment ring buffer. 
 
 ## Polling model
 

@@ -19,7 +19,7 @@ In NetAdapterCx, *packet descriptors* are small, compact and runtime-extensible 
 - One or more fragment descriptors
 - Zero or more packet extensions 
 
-The *core descriptor* of the packet is the [NET_PACKET](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) structure itself. It contains only the most basic metadata applicable for all packets, such as the framing layout of a given packet and the index to the first fragment descriptor.   
+The *core descriptor* of the packet is the [NET_PACKET](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) structure. It contains only the most basic metadata applicable to all packets, such as the framing layout of a given packet and the index to the first fragment descriptor.   
 
 Each core descriptor (**NET_PACKET**) contains one or more *fragment descriptors*, or [NET_PACKET_FRAGMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_fragment) structures, that describe the location within system memory where the packet data resides.
 
@@ -27,11 +27,11 @@ Each core descriptor (**NET_PACKET**) contains one or more *fragment descriptors
 
 Together, these descriptors and extensions hold all the metadata about a network packet. Here are two examples of how they describe a packet. The first figure shows a scenario where the entire packet is stored inside a single memory fragment and checksum offload has been turned on.
 
-![1 fragment packet layout](images/packet-one-frag.png)
+![1 fragment packet layout](images/packet_layout_1_extension_1_fragment.png)
 
 The second figure shows a packet stored across two memory fragments, with both RSC and checksum offload enabled.
 
-![2 fragments packet layout](images/packet-two-frag.png)
+![2 fragments packet layout](images/packet_layout_2_extensions_2_fragments.png)
 
 ## Extensibility
 
