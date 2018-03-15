@@ -42,6 +42,5 @@ To determine the current mode, a client can use the IOCTL\_INTERNAL\_GET\_PARALL
  
 
 
---------------------
 
 

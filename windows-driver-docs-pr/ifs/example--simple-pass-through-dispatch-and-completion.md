@@ -71,6 +71,5 @@ Because it runs in an arbitrary thread context at IRQL &lt;= DISPATCH\_LEVEL, a 
  
 
 
---------------------
 
 

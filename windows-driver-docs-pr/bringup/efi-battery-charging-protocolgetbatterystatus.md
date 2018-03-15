@@ -92,6 +92,5 @@ This function returns rated capacity and state of charge (SOC) for the main batt
 ## Related topics
 [EFI\_BATTERY\_CHARGING\_PROTOCOL](efi-battery-charging-protocol.md)  
 
---------------------
 
 

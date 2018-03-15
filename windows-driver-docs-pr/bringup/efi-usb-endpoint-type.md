@@ -52,6 +52,5 @@ Interrupt transfer - non-periodic communication with guarantee of maximum latenc
  
 
 
---------------------
 
 

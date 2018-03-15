@@ -39,6 +39,5 @@ In order to expose a virtual device on the 1394 bus, an emulation driver must ad
  
 
 
---------------------
 
 

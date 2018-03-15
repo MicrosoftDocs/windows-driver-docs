@@ -63,6 +63,5 @@ A completion routine cannot return STATUS\_MORE\_PROCESSING\_REQUIRED for an opl
  
 
 
---------------------
 
 

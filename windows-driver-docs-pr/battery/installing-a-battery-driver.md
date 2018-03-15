@@ -97,6 +97,5 @@ ServiceBinary  = %12%\NewBatt.sys
  
 
 
---------------------
 
 

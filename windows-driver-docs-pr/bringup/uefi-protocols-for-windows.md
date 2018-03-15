@@ -34,6 +34,5 @@ This section describes UEFI protocols that are defined by Windows. These protoco
  
 
 
---------------------
 
 

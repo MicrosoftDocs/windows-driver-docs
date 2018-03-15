@@ -33,6 +33,5 @@ If the device reset fails or times out, or if the time-out occurs while the port
  
 
 
---------------------
 
 

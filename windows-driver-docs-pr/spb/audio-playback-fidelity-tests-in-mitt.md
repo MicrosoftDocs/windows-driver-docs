@@ -66,6 +66,5 @@ If the tests all pass, your device is connected correctly and operating as expec
  
 
 
---------------------
 
 

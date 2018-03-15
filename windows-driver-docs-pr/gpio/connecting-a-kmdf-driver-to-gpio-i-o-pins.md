@@ -200,6 +200,5 @@ For a sample driver that shows how to write a GPIO peripheral driver that runs i
  
 
 
---------------------
 
 

@@ -57,6 +57,5 @@ The class driver's [**BatteryClassStatusNotify**](https://msdn.microsoft.com/lib
  
 
 
---------------------
 
 

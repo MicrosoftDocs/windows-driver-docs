@@ -34,6 +34,5 @@ Battery miniclass drivers are not required to do any WMI IRP processing beyond c
  
 
 
---------------------
 
 

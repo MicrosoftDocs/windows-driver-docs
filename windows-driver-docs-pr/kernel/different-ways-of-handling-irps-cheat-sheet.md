@@ -1,4 +1,4 @@
-﻿---
+---
 title: Different ways of handling IRPs - Cheat sheet
 author: kaushika-msft
 description: Different ways of handling IRPs

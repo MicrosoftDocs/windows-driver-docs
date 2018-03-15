@@ -119,6 +119,5 @@ To create patterns use the example pattern as a starting point. You can create a
 ## Related topics
 [Testing with Multi Interface Test Tool (MITT)](https://msdn.microsoft.com/library/windows/hardware/dn919874)  
 
---------------------
 
 

@@ -42,6 +42,5 @@ An [**IOCTL\_ACPI\_ENUM\_CHILDREN**](https://msdn.microsoft.com/library/windows/
  
 
 
---------------------
 
 

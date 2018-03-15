@@ -47,6 +47,5 @@ For an "AT-compatible" HBA, *HwScsiFindAdapter* should check the input **Atdisk.
  
 
 
---------------------
 
 

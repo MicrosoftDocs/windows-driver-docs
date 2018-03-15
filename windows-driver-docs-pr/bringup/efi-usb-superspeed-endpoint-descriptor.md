@@ -50,6 +50,5 @@ The **EFI\_USB\_ENDPOINT\_DESCRIPTOR** structure is defined in the UEFI specific
  
 
 
---------------------
 
 

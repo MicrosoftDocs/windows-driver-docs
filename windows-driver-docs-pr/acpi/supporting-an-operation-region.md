@@ -36,6 +36,5 @@ An operation region is the communication interface between an ACPI device and th
  
 
 
---------------------
 
 

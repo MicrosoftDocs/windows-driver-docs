@@ -25,6 +25,5 @@ A miniport driver must configure Storport to operate in full-duplex mode while e
  
 
 
---------------------
 
 

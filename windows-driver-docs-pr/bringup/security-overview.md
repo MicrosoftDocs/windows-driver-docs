@@ -100,6 +100,5 @@ The following table describes a subset of the SDL practices that are most useful
  
 
  
---------------------
 
 

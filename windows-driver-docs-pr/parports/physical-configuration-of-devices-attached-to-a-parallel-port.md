@@ -87,6 +87,5 @@ For more information about supporting IEEE 1284.3 devices, see:
  
 
 
---------------------
 
 

@@ -41,6 +41,5 @@ A client releases parallel port information by using an [**IOCTL\_INTERNAL\_RELE
  
 
 
---------------------
 
 
