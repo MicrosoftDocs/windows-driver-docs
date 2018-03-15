@@ -101,6 +101,5 @@ The following only applies when a *stream* is being written and the write is not
  
 
 
---------------------
 
 

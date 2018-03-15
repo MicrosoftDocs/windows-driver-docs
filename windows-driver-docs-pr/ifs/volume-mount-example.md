@@ -48,6 +48,5 @@ Some notes about the preceding figure:
  
 
 
---------------------
 
 

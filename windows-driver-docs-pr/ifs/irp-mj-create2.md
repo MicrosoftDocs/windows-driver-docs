@@ -387,6 +387,5 @@ The check to break Batch and Filter oplocks occurs before the share access check
  
 
 
---------------------
 
 

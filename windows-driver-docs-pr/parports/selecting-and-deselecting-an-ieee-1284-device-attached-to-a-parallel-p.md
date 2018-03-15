@@ -46,6 +46,5 @@ Microsoft Windows 2000 supports four daisy chain devices per port; however, Micr
  
 
 
---------------------
 
 

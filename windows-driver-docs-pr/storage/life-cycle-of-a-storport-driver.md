@@ -32,6 +32,5 @@ When the system is shutdown, [**HwStorStartIo**](https://msdn.microsoft.com/libr
  
 
 
---------------------
 
 

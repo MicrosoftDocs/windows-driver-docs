@@ -80,6 +80,5 @@ Bus speed updated, returned buffer indicated bus speed using an [EFI\_USB\_BUS\_
  
 
 
---------------------
 
 

@@ -62,6 +62,5 @@ Some batteries are not capable of reporting all this information. A miniclass dr
  
 
 
---------------------
 
 

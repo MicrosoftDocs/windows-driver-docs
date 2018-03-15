@@ -33,6 +33,5 @@ Note that the operating system - specific port driver manages SCSI bus-reset del
  
 
 
---------------------
 
 

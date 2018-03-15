@@ -53,6 +53,5 @@ For more information about system support for parallel ports, see:
  
 
 
---------------------
 
 

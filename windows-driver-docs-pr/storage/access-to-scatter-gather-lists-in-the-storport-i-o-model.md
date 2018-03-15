@@ -31,6 +31,5 @@ The miniport driver should perform any necessary translation of the scatter/gath
  
 
 
---------------------
 
 

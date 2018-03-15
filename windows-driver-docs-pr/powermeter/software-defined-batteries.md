@@ -179,7 +179,6 @@ Alternatively, HPMI may act as a forwarder and simply forward the Windows batter
 A full flow-chart model depicting how SDB Algorithm is implemented is shown in [Implementing SDB Algorithm in Firmware](#IMPLEMENTING-SDB).
 
 
---------------------
 
 ## Interface Definitions
 
@@ -409,6 +408,5 @@ Refer to [HMPI.h](https://msdn.microsoft.com/library/windows/hardware/mt828470.a
 >[!NOTE]
 > Contents of this document are subject to change without notice.
 
---------------------
 
 

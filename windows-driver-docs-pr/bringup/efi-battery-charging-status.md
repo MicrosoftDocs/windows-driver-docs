@@ -103,6 +103,5 @@ EFI\_BATTERY\_CHARGING\_STATUS is returned in the **Status** member of the [EFI\
 ## Related topics
 [EFI\_BATTERY\_CHARGING\_COMPLETION\_TOKEN](efi-battery-charging-completion-token.md)  
 
---------------------
 
 

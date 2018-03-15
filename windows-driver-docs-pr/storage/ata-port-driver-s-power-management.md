@@ -33,4 +33,3 @@ Doing idle detection from a miniport driver is strongly discouraged.
  
 
 
---------------------

@@ -117,6 +117,5 @@ If MuttUtil returns an error while updating or installing the firmware,
 ## Related topics
 [Testing with Multi Interface Test Tool (MITT)](https://msdn.microsoft.com/library/windows/hardware/dn919874)  
 
---------------------
 
 

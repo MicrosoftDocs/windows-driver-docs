@@ -26,6 +26,5 @@ If a completion routine does not signal an event, it must check the **Irp‑&gt;
  
 
 
---------------------
 
 

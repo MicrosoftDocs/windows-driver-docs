@@ -58,6 +58,5 @@ For code examples that show how to send I/O requests to SPB-connected peripheral
  
 
 
---------------------
 
 

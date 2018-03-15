@@ -59,6 +59,5 @@ This topic summarizes the subset of Advanced Configuration and Power Interface (
  
 
 
---------------------
 
 
