@@ -4,7 +4,7 @@ description: Start here for an overview of Debugging Tools for Windows. This too
 ms.assetid: 938ef180-84de-442f-9b6c-1138c2fc8d5a
 keywords: ["Debugging Tools for Windows", "Windows debugging", "Windows Debugger", "Kernel debugging", "Kernel debugger", "WinDbg"]
 ms.author: domars
-ms.date: 12/07/2017
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -13,24 +13,26 @@ ms.technology: windows-devices
 # Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)
 
 
-December 2017
+February 2018
 
 Start here for an overview of Debugging Tools for Windows. This tool set includes WinDbg and other debuggers.
 
 ## <span id="3_ways_to_get_Debugging_Tools_for_Windows"></span><span id="3_ways_to_get_debugging_tools_for_windows"></span><span id="3_WAYS_TO_GET_DEBUGGING_TOOLS_FOR_WINDOWS"></span>3 ways to get Debugging Tools for Windows
 
-
 -   **As part of the WDK**
 
-    Install Microsoft Visual Studio and then install the Windows Driver Kit (WDK). Debugging Tools for Windows is included in the WDK. You can [get the integrated environment here](https://go.microsoft.com/fwlink/p?LinkID=239721).
+    Debugging Tools for Windows is included in the WDK. You can [get the WDK here](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
+
+   
+-   **As a standalone tool set**
+
+    If you want to download only Debugging Tools for Windows, [install the Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk), and, during the installation, select the **Debugging Tools for Windows** box and clear all the other boxes.
+
 
 -   **As part of the Windows SDK**
 
-    Install the Windows Software Development Kit (SDK). Debugging Tools for Windows is included in the Windows SDK. You can [get the Windows SDK here](https://go.microsoft.com/fwlink/p?LinkID=271979).
+    Install the complete Windows Software Development Kit (SDK). Debugging Tools for Windows is included in the Windows SDK. You can [get the Windows SDK here](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
--   **As a standalone tool set**
-
-    If you want to download only Debugging Tools for Windows, [install the Windows SDK](https://go.microsoft.com/fwlink/p?LinkID=271979), and, during the installation, select the **Debugging Tools for Windows** box and clear all the other boxes.
 
 ## <span id="Getting_Started_with_Windows_Debugging"></span><span id="getting_started_with_windows_debugging"></span><span id="GETTING_STARTED_WITH_WINDOWS_DEBUGGING"></span>Getting Started with Windows Debugging
 

@@ -19,7 +19,7 @@ A Universal INF file is an INF file that only uses the [subset of INF syntax](..
 
 Any binaries referenced by the Universal INF file must use only device driver interfaces (DDI) that are included in [UWP-based editions of Windows 10](windows-10-editions-for-universal-drivers.md).  These DDIs are marked as **Universal** on the corresponding documentation reference pages.  The driver binary can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the Windows Driver Model (WDM).
 
-Other binaries contained in your Universal Windows driver must pass the [API validation tests](../devtest/infverif.md).
+Other binaries contained in your Universal Windows driver must pass the [API validation tests](../develop/validating-universal-drivers.md).
 
 ## Design Principles
 
@@ -27,7 +27,7 @@ When you write a universal driver package, there are four design principles to c
 
 *  Declarative: Use directives in the INF file for installation operations and not extension points such as co-installers, RegisterDlls, etc.
 *  Componentized: System and/or OEM-specific customizations are in an [extension INF](../install/using-an-extension-inf-file.md) driver package separate from the base driver package, facilitating independent updates of different components owned by different organizations.
-*  Hardware Support Apps (HSA): Use [custom capabilities](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md) to associate a hardware-specific UWP (Universal Windows Platform) application with your driver.  The resulting app can be delivered and serviced from the Microsoft Store.
+*  Hardware Support Apps (HSA): Any user interface distributed with a univeral driver must be an HSA. An HSA is a [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/design/basics/design-and-ui-intro) app that is paired with a specific driver using a [custom capability](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md).  The resulting app can be delivered and serviced from the Microsoft Store.
 *  Universal API compliance: Binaries in the universal driver package only call APIs and DDIs that are included in the OneCore subset.  INF files use only universal INF syntax.
 
 In the documentation, we use the acronym DCHU to refer to the above principles.

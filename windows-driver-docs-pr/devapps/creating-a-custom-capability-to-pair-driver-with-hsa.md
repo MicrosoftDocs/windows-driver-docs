@@ -17,7 +17,9 @@ ms.technology: windows-devices
 
 # Creating a custom capability to pair a driver with a Hardware Support App (HSA)
 
-A Hardware Support App (HSA) is a [Universal Windows Platform (UWP)](https://msdn.microsoft.com/50a5605e-3a91-41db-800a-9180717c1e86) app that is paired with a specific driver or [RPC (Remote Procedure Call)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378651) using a custom capability.  The owner of the driver or RPC endpoint reserves the custom capability, permits access to UWP apps that advertise it, and then provides the capability to the app developer.  This page describes that process.
+A Hardware Support App (HSA) is a [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/design/basics/design-and-ui-intro) app that is paired with a specific driver or [RPC (Remote Procedure Call)](https://msdn.microsoft.com/library/windows/desktop/aa378651) using a custom capability.  You can use the [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) to convert a Win32 app to a UWP app for use as an HSA.
+
+The owner of the driver or RPC endpoint reserves the custom capability, permits access to apps that advertise it, and then provides the capability to the app developer.  This page describes these steps for the driver developer.
 
 The steps for the app developer are described in [Using a custom capability to pair a Hardware Support App (HSA) with a driver](using-a-custom-capability-to-pair-hsa-with-driver.md).
 

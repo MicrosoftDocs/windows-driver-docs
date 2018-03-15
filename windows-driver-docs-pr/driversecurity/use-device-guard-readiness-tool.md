@@ -3,7 +3,7 @@ title: Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility
 description: Follow these steps to use Device Guard Readiness Tool to evaluate HVCI driver compatibility of your driver code.
 ms.assetid: 
 ms.author: windowsdriverdev
-ms.date: 02/05/2017
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -13,11 +13,11 @@ ms.technology: windows-devices
 
 ## Overview
 
-The Device Guard Readiness tool is designed to check a number of requirements for creating a PC that supports a variety of security enhancement features. This section describes how to use the tool to evaluate the ability of a driver to run in a Hypervisor Code Integrity (HVCI) environment. 
+The Device Guard Readiness tool is designed to check a number of requirements for creating a PC that supports a variety of security enhancement features. This section describes how to use the tool to evaluate the ability of a driver to run in a Hypervisor-protected Code Integrity (HVCI) environment. 
 
 OS and Hardware requirements for testing HVCI driver Device Guard compatibility:
 
-1. Windows: Available only on Windows 10 Enterprise, Windows Server, and Windows 10 IoT Enterprise
+1. Windows: Available on all versions of Windows, such as Windows Pro, Windows 10 Enterprise, Windows Server, and Windows 10 IoT Enterprise (Not supported in S Mode).
 
 2. Hardware: Recent hardware that supports virtualization extension with SLAT.
 

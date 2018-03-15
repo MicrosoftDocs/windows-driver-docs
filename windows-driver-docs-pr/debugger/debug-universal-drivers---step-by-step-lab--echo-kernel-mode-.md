@@ -4,7 +4,7 @@ description: This lab introduces the WinDbg kernel debugger. WinDbg is used to d
 ms.assetid: 3FBC3693-4288-42BA-B1E8-84DC2A9AFFD9
 keywords: ["debug lab", "step-by-step", "ECHO"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -32,6 +32,7 @@ In this lab, a live kernel debug connection is used to explore the following:
 -   Work with thread and process context
 
 **Note**  When working with the Windows debugger, there are two types of debugging that can be performed - user or kernel mode debugging.
+
 *User mode* - Applications and subsystems run on the computer in user mode. Processes that run in user mode do so within their own virtual address spaces. They are restricted from gaining direct access to many parts of the system, including system hardware, memory that was not allocated for their use, and other portions of the system that might compromise system integrity. Because processes that run in user mode are effectively isolated from the system and other user mode processes, they cannot interfere with these resources.
 
 *Kernel mode* - Kernel mode is the processor access mode in which the operating system and privileged programs run. Kernel mode code has permission to access any part of the system, and is not restricted like user mode code. It can gain access to any part of any other process running in either user mode or kernel mode. Much of the core OS functionality and many hardware device drivers run in kernel mode.
@@ -189,7 +190,29 @@ Reboot the target system.
 
 In a minute or two, debug output should be displayed on the host system.
 
-![windows debugger showing command window output from a live kernel connection](images/debuglab-image-winddbg-hh.png)
+```
+Microsoft (R) Windows Debugger Version 10.0.17074.1002 AMD64
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+Using NET for debugging
+Opened WinSock 2.0
+Waiting to reconnect...
+Connected to target 169.182.1.1 on port 50005 on local IP 169.182.1.2
+You can get the target MAC address by running .kdtargetmac command.
+Connected to Windows 10 16299 x64 target at (Wed Feb 28 17:16:23.051 2018 (UTC - 8:00)), ptr64 TRUE
+Kernel Debugger connection established.  (Initial Breakpoint requested)
+Symbol search path is: srv*
+Executable search path is: 
+Windows 10 Kernel Version 16299 MP (4 procs) Free x64
+Product: WinNt, suite: TerminalServer SingleUserTS
+Built by: 16299.15.amd64fre.rs3_release.170928-1534
+Machine Name:
+Kernel base = 0xfffff800`9540d000 PsLoadedModuleList = 0xfffff800`95774110
+Debug session time: Wed Feb 28 17:16:23.816 2018 (UTC - 8:00)
+System Uptime: 0 days 0:00:20.534
+
+
+```
 
 The Debugger Command window is the primary debugging information window in WinDbg. You can enter debugger commands and view the command output in this window.
 
@@ -209,6 +232,9 @@ In the command entry pane, use the up arrow and down arrow keys to scroll throug
 Some debug commands display text using Debugger Markup Language that you can click on to quickly gather more information.
 
 1. Use Ctrl+Break (Scroll Lock) in WinDBg to break into the code running on the target system. It may take a bit of time for the target system to respond.
+
+![windows debugger showing command window output from a live kernel connection](images/debuglab-image-winddbg-hh.png)
+
 
 2. Type the following command to enable DML in the Debugger Command window.
 
@@ -343,13 +369,13 @@ To download and build the Echo sample audio driver, perform the following steps.
 
 4.  **Set the runtime library**
 
-    Set the runtime library - Change Runtime Library from DLL version to non DLL version. Without this setting, you have to install the MSVC runtime to the target computer separately.
+    Set the runtime library - Open the echo driver’s property page and locate **C/C++** &gt; **Code Generation**.  Change Runtime Library from DLL version to non DLL version. Without this setting, you have to install the MSVC runtime to the target computer separately.
 
     ![echo property page highlighting the runtime library setting](images/debuglab-image-echoapp-properties.png)
 
 5.  **Check driver signing**
 
-    Open the echo driver’s property page and make sure **Driver Signing** &gt; **Sign Mode** is set to “Test Sign”. This is required because Windows requires that drivers are signed.
+    Also on the driver’s properties make sure **Driver Signing** &gt; **Sign Mode** is set to “Test Sign”. This is required because Windows requires that drivers are signed.
 
     ![echo property page highlighting the sign mode setting](images/debuglab-image-echoapp-driver-signing.png)
 
@@ -405,11 +431,18 @@ To install the driver on the target system, perform the following steps.
 Enable the ability to run test signed drivers:
 
 a. Open Windows Settings.
+
 b. In Update and Security, select **Recovery**.
+
 c. Under Advanced startup, click **Restart Now**.
-d. When the PC reboots, select **Startup options**.
+
+d. When the PC reboots, select **Startup options**. In Windows 10, select **Troubleshoot** > **Advanced options** > **Startup Settings** , then click Restart button. 
+
 e. Select Disable driver signature enforcement by pressing the **F7** key.
+
 f. Reboot the target computer.
+
+
 **&lt;- On the host system**
 
 Navigate to the Tools folder in your WDK installation and locate the DevCon tool. For example, look in the following folder:

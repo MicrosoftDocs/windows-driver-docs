@@ -706,6 +706,10 @@ SAFECode - [https://www.safecode.org/](https://www.safecode.org/)
 
 *Writing Secure Software Second Edition*, Michael Howard and David LeBlanc
 
+*The Art of Software Security Assessment: Identifying and Preventing Software Vulnerabilities*, Mark Dowd and John McDonald
+
+*Secure Coding in C and C++ (SEI Series in Software Engineering) 2nd Edition*, Robert C. Seacord
+
 *Programming the Microsoft Windows Driver Model (2nd Edition)*, Walter Oney
 
 *Developing Drivers with the Windows Driver Foundation (Developer Reference)*, Penny Orwick and Guy Smith 

@@ -3,7 +3,7 @@ title: Driver Security Guidance
 description: This section contains information on enhancing driver security.
 ms.assetid: 50D09948-8CE2-446F-A208-35F7B3795A6B
 ms.author: windowsdriverdev
-ms.date: 11/01/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,7 +43,7 @@ This section contains information on enhancing driver security.
 </tr>
 <tr class="odd">
 <td align="left"><p>[Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility](use-device-guard-readiness-tool.md)</p></td>
-<td align="left"><p>This topic describes how to use the tool to evaluate the ability of a driver to run in a Hypervisor Code Integrity (HVCI) environment. </p></td>
+<td align="left"><p>This topic describes how to use the tool to evaluate the ability of a driver to run in a Hypervisor-protected Code Integrity (HVCI) environment. </p></td>
 </tr>
 </tr>
 </tbody>
