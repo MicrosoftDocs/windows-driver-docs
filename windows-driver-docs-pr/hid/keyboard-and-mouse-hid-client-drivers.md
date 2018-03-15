@@ -66,9 +66,7 @@ Microsoft provides the following guidance for IHVs writing drivers:
         -   Filter drivers are allowed in the following scenarios:
             -   As an upper filter to kbdhid/mouhid
             -   As an upper filter to kbdclass/mouclass
-        -   Filter drivers are NOT recommended in the following scenarios:
-            -   As a lower filter to the HID transport (e.g. HIDI2C)
-            -   As a filter between HIDCLASS and HID Transport minidriver
+        -   Filter drivers are _not_ recommended as a filter between HIDCLASS and HID Transport minidriver
 
     2.  Function Drivers: Alternatively vendors can create a function driver (instead of a filter driver) but only for vendor specific HID PDOs (with a user mode service if necessary).
 
