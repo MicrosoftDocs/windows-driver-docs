@@ -22,6 +22,5 @@ A Storport virtual miniport driver must support the [**SCSI\_REQUEST\_BLOCK**](h
  
 
 
---------------------
 
 

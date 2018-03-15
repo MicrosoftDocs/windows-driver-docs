@@ -52,6 +52,5 @@ For more information about support for parallel devices attached to a parallel p
  
 
 
---------------------
 
 

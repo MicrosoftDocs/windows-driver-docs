@@ -43,6 +43,5 @@ The class driver uses the battery tag internally and in calls to the miniclass d
  
 
 
---------------------
 
 

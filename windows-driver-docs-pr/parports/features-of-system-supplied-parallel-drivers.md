@@ -102,6 +102,5 @@ For information about parallel port and device standards, see the following spec
  
 
 
---------------------
 
 

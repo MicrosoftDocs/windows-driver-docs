@@ -72,6 +72,5 @@ The Multiple Interface Test Tool (MITT) is a test tool for validating hardware a
  
 
 
---------------------
 
 

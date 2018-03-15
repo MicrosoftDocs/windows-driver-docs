@@ -80,6 +80,5 @@ UEFI components that attempt to read or write to disk during flashing must imple
 [UEFI requirements that apply to all Windows editions](uefi-requirements-that-apply-to-all-windows-platforms.md)  
 [UEFI requirements for Windows 10 Mobile](uefi-requirements-specific-to-windows-mobile.md)  
 
---------------------
 
 

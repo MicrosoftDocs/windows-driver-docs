@@ -822,6 +822,5 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
  
 
 
---------------------
 
 

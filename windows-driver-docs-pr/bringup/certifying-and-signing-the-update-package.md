@@ -80,6 +80,5 @@ Submitting the firmware update package to the Microsoft Windows Dev Center Hardw
 [Authoring a firmware update package](authoring-a-firmware-update-package.md)  
 [Installing the update](installing-the-update.md)  
 
---------------------
 
 

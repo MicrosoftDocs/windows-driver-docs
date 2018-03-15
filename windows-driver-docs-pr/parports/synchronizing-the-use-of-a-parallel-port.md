@@ -52,6 +52,5 @@ A client should use the [**PPARALLEL\_QUERY\_WAITERS\_ROUTINE**](https://msdn.mi
  
 
 
---------------------
 
 

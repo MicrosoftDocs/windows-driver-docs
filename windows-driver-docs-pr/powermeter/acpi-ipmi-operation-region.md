@@ -29,6 +29,5 @@ For more information, refer to the [IPMI version 2.0 Specification](http://go.mi
  
 
 
---------------------
 
 

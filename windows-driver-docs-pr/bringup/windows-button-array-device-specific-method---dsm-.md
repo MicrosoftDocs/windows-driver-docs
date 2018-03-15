@@ -45,6 +45,5 @@ An integer (DWORD) that has the following bit-field definitions:
  
 
 
---------------------
 
 

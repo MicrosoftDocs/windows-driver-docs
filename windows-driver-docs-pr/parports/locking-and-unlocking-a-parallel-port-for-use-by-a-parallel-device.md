@@ -45,6 +45,5 @@ If the parallel port bus driver can allocate the port to the parallel device wit
  
 
 
---------------------
 
 

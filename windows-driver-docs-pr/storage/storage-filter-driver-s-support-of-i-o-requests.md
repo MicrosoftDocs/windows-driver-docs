@@ -44,6 +44,5 @@ If its device has special features, an SFD can support a set of driver-defined I
  
 
 
---------------------
 
 

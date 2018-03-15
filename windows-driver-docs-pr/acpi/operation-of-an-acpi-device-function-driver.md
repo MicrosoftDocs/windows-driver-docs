@@ -40,6 +40,5 @@ A function driver for an ACPI device is a WDM driver that does the following:
  
 
 
---------------------
 
 

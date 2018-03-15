@@ -53,6 +53,5 @@ A request for the product name of the device.
  
 
 
---------------------
 
 

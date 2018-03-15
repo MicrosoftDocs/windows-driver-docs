@@ -54,6 +54,5 @@ See [**HwScsiAdapterControl**](https://msdn.microsoft.com/library/windows/hardwa
  
 
 
---------------------
 
 
