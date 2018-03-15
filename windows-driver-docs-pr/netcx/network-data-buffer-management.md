@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Buffer management is a new feature in NetAdapterCx 1.2 that enables Network Interface Card (NIC) client drivers and the operating system to work together when allocating packet data buffers from system memory for the transmit (Tx) and receive (Rx) data paths. This can result in faster performance for the NIC, easier memory lifetime management for the NIC's client driver, and more control for the system over the memory.
+Buffer management is a feature that enables Network Interface Card (NIC) client drivers and the operating system to work together when allocating packet data buffers from system memory for the transmit (Tx) and receive (Rx) data paths. This can result in faster performance for the NIC, easier memory lifetime management for the NIC's client driver, and more control for the system over the memory.
 
 ## The benefits of buffer management in NetAdapterCx
 
@@ -31,7 +31,7 @@ For non-DMA capabile NICs like a USB-based network dongle, or for other advanced
 
 ## How to leverage buffer management
 
-The buffer management feature is supported starting in NetAdapterCx 1.2, which ships with Windows 10, version 1803. To opt in, follow these steps:
+To opt in to buffer management, follow these steps:
 
 1. In your *[EvtNetAdapterSetCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities)* callback, tell the system about your hardware's data buffer capabilities and constraints using the [NET_ADAPTER_RX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_rx_capabilities) and [NET_ADAPTER_TX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_tx_capabilities) data structure for the Rx and Tx path respectively. 
 2. Initialize the two capabilities structures by calling one of the initialization functions. For instance, a DMA-capable NIC client driver would use [NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_tx_capabilities_init_for_dma) and [NET_ADAPTER_RX_CAPABILITIES_INIT_SYSTEM_MANAGED](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_rx_capabilities_init_system_managed) to declare its hardware DMA capablities and to instruct the system to fully manage the data buffers on its behalf.
@@ -48,7 +48,7 @@ Error handling has been left out for clarity.
 ```C++
 NTSTATUS
 MyAdapterSetCapabilities(
-    NETADAPTER Adapter
+    _In_ NETADAPTER Adapter
 )
 {
     NTSTATUS status = STATUS_SUCCESS;
@@ -93,7 +93,7 @@ MyAdapterSetCapabilities(
     // Set the adapter's datapath capabilities
     NetAdapterSetDatapathCapabilities(Adapter, &txCapabilities, &rxCapabilities);
 
-    // Set other needed capabilities such as registring for packet extensions
+    // Set other needed capabilities such as registering for packet extensions
     ...
 }
 ```
