@@ -1,6 +1,6 @@
 ---
-title: Driver Expansion
-description: Creating a floor or ceiling for a driver submission
+title: Driver distribution expansion
+description: Creating a floor or ceiling for a driver submission in order to change its distribution.
 ms.assetid: 
 ms.author: 
 ms.date: 
@@ -35,18 +35,18 @@ There are two types of floors and ceilings supported by the HDC Dashboard:
 
 | Floor/ceiling type | Description |
 | -- | -- |
-| OS release-based | <ul><li>Used to expand or restrict the driver to additional Windows versions other than the certified Windows OS version.</li><li>Meant for drivers released to the public</li></ul> |
+| OS release-based | <ul><li>Used to expand or restrict the driver to additional Windows versions other than the certified Windows OS version.</li><li>Meant for drivers released to the public.</li></ul> |
 | Build number-based | <ul><li>Used when developing drivers for newer and unreleased versions of Windows. </li><li>Available for Microsoft co-engineering partners only.</li></ul> |
 
 ## Setting floors and ceilings for your driver distribution
 
 1. Create a shipping label and enter your details for the label’s name, publisher and targeting. For more information, see [Publish a driver to Windows Update](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update).
 
-2. In **Select PNPs**, select Hardware ID and operating system combinations you wish to publish to. Note that a floor can be set for each Hardware ID, but a ceiling is applied to all IDs within the same shipping label. Additionally, the oldest operating system you select will automatically be selected as the floor for your label. 
+2. In **Select PNPs**, select the Hardware ID and operating system combinations you wish to publish to. Note that a floor can be set for each Hardware ID, but a ceiling is applied to all IDs within the same shipping label. Additionally, the oldest operating system you select will automatically be selected as the floor for your label. 
 
 ### Adding a floor
 
-1. You can add a floor for your driver’s distribution by clicking **Please expand operating systems for driver’s distribution here**, below the label’s targeting information. OS based driver expansion (Floor) can be done in the same screen as shown.  Below is the section of the page showing the same OS based driver expansion.
+1. You can add a floor (OS based driver expansion) for your driver’s distribution by clicking **Please expand operating systems for driver’s distribution here**, located below the label’s targeting information. 
     ![A screen showing the dashboard screen to add a floor to a driver.](images/driver-floor-screen.png)
 
     Clicking the link will present a list of operating systems that you can extend driver coverage to.
