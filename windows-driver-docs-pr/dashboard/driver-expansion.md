@@ -70,14 +70,14 @@ There are two types of floors and ceilings supported by the HDC Dashboard:
 
 ## FAQ
 
-*When would I need to specify a floor or ceiling for a version of Windows that has been released?*
+**When would I need to specify a floor or ceiling for a version of Windows that has been released?**
 
-**To prevent a pre-existing driver from being distributed to future versions of Windows. For example, while developing a replacement driver targeting an unreleased version of Windows.**
+*To prevent a pre-existing driver from being distributed to future versions of Windows. For example, while developing a replacement driver targeting an unreleased version of Windows.*
 
-*When would I need to specify a floor and/or ceiling for a co-engineering driver? (coming soon)*
+**When would I need to specify a floor and/or ceiling for a co-engineering driver? (coming soon)**
 
-**You may need to specify a version of Windows that is currently in development as a floor If your driver contains a dependency contained in it.**
+*You may need to specify a version of Windows that is currently in development as a floor If your driver contains a dependency contained in it.*
 
-*How can I target a Windows version that is older than my driver’s certification?*
+**How can I target a Windows version that is older than my driver’s certification?**
 
-**You can specify an earlier version of Windows as a floor; enabling the driver to target both that version and later of Windows.**
+*You can specify an earlier version of Windows as a floor; enabling the driver to target both that version and later of Windows.*
