@@ -22,7 +22,6 @@ The driver samples in this directory provide a starting point for writing a cust
 |------------------------|-------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | Keyboard Filter        | [kbfiltr](http://go.microsoft.com/fwlink/p/?LinkId=620194)        | A WDF example of a keyboard input filter driver.                                         |
 | Mouse Filter           | [moufiltr](http://go.microsoft.com/fwlink/p/?LinkId=620195)       | A WDF example of a mouse input filter driver.                                            |
-| Synaptics Touch Sample | [SynapticsTouch](http://go.microsoft.com/fwlink/p/?LinkId=620196) | Demonstrates how to write a HID miniport driver for the Synaptics 3202 touch controller. |
 
  
 
