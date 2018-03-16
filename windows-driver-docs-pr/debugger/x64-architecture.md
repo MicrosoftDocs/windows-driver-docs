@@ -192,7 +192,6 @@ Instructions, such as **jmp**, **call**, **push**, and **pop**, that implicitly 
  
 ## See Also
 
-
 [X86-64 Wikipedia](https://en.wikipedia.org/wiki/X86-64)
 
 [AMD 64 Developer Resources](https://developer.amd.com/resources/)
