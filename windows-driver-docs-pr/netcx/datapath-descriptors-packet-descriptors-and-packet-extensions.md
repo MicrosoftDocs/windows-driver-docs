@@ -1,17 +1,31 @@
 ---
-title: Packet descriptors and extensions
-description: Packet descriptors and extensions
+title: Datapath descriptors, packet descriptors, and packet extensions
+description: Datapath descriptors, packet descriptors, and packet extensions
 ms.assetid: 7B2357AE-F446-4AE8-A873-E13DF04D8D71
 keywords:
-- WDF Network Adapter Class Extension packet descriptors and extensions, NetAdapterCx packet descriptors, NetAdapterCx packet extensions
+- WDF Network Adapter Class Extension Datapath descriptors, packet descriptors, and packet extensions, NetAdapterCx datapath descriptors, multi-ring buffers, NetAdapterCx packet descriptors, NetAdapterCx packet extensions
 ms.author: windowsdriverdev
-ms.date: 02/22/2018
+ms.date: 03/18/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Packet descriptors and extensions
+# Datapath descriptors, packet descriptors, and packet extensions
+
+## Datapath descriptors and multi-ring buffers
+
+A *datapath descriptor* is a structure that describes the network data ring buffers for a datapath queue. It is represented by a [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor) structure and contains pointers to each ring buffer for the queue. Currently, each queue has two ring buffers: one for its packets and one for those packets' fragments, as shown in the following figure:
+
+TBD insert figure for datapath descriptor and ring buffers
+
+## Using datapath descriptors
+
+Client drivers 
+
+Each packet in the packet ring references the start of its fragments in the fragment ring. Client drivers use a queue's datapath descriptor with convenient macros to access the packet ring buffer, but typically do not access the fragment ring directly. Instead, as they process each packet in the packet ring, 
+
+## Packet descriptors and packet extensions
 
 In NetAdapterCx, *packet descriptors* are small, compact and runtime-extensible structures that describe a network packet. Each packet requires the following:
 
@@ -33,7 +47,7 @@ The second figure shows a packet stored across two memory fragments, with both R
 
 ![2 fragments packet layout](images/packet_layout_2_extensions_2_fragments.png)
 
-## Extensibility
+## Packet descriptor extensibility
 
 Extensibility is a core feature of the NetAdapterCx packet descriptor, forming the foundation for the descriptor's versionability and performance. At runtime, the operating system allocates all packets descriptors for each packet queue in a contiguous block, together with any avaiable extensions. Each extension block is immediately behind the core descriptor, as shown in the following figure:
 
@@ -45,7 +59,7 @@ NIC client drivers are not permitted to hardcode the offset to any extension blo
 
 Once a packet queue and its descriptors are created, all their extension offsets are guaranteed by the system to be constant, so drivers don't have to re-query offsets often. Furthermore, because all extensions are pre-allocated by the system in a block at the time the packet queue is initialized, there is no need for runtime allocation of blocks, searching a list for a specific descriptor, or having to store pointers to every packet extension.
 
-## Versionability
+## Packet descriptor versionability
 
 NetAdapterCx's core packet descriptor can be easily extended in future releases by adding new fields to the end, such as in the following figure:
 
@@ -57,14 +71,14 @@ Newer client drivers that know about the V2 fields can access them, while older 
 
 A client driver that understands the new extension can use it. Other client drivers can skip over the new fields. This permits different parts of the packet descriptor to be versioned independently.
 
-## Performance
+## Packet descriptors and datapath performance
 The extensibility feature outlined previously provides benefits to help client drivers meet the performance requirements of NICs that are capabable of hundreds of gigabits per second and with thousands of queues:
 
 1. The packet descriptors are kept as compact as possible to improve CPU cache hits, as features and extensions that aren't used occupy 0 bytes of space in the descriptors. 
 2. There is no pointer dereferencing, only offset arithmetic because extensions are in-line, which not only saves space but also helps with CPU cache hits. 
 3. Extensions are allocated at queue creation time, so drivers don't have to allocate and deallocate memory in the active data path or deal with lookaside lists of context blocks.
 
-## Using packet extensions in client drivers
+## Using packet extensions 
 
 > [!IMPORTANT]
 > Currently, client drivers are limited to [pre-existing packet extensions defined by the operating system](#predefined-packet-extension-constants-and-helper-methods).
