@@ -11,21 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Datapath descriptors, packet descriptors, and packet extensions
-
-## Datapath descriptors and multi-ring buffers
-
-A *datapath descriptor* is a structure that describes the network data ring buffers for a datapath queue. It is represented by a [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor) structure and contains pointers to each ring buffer for the queue. Currently, each queue has two ring buffers: one for its packets and one for those packets' fragments, as shown in the following figure:
-
-TBD insert figure for datapath descriptor and ring buffers
-
-## Using datapath descriptors
-
-Client drivers 
-
-Each packet in the packet ring references the start of its fragments in the fragment ring. Client drivers use a queue's datapath descriptor with convenient macros to access the packet ring buffer, but typically do not access the fragment ring directly. Instead, as they process each packet in the packet ring, 
-
-## Packet descriptors and packet extensions
+# Packet descriptors and extensions
 
 In NetAdapterCx, *packet descriptors* are small, compact and runtime-extensible structures that describe a network packet. Each packet requires the following:
 
@@ -35,7 +21,7 @@ In NetAdapterCx, *packet descriptors* are small, compact and runtime-extensible 
 
 The *core descriptor* of the packet is the [NET_PACKET](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) structure. It contains only the most basic metadata applicable to all packets, such as the framing layout of a given packet and the index to the first fragment descriptor.   
 
-Each core descriptor (**NET_PACKET**) contains one or more *fragment descriptors*, or [NET_PACKET_FRAGMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_fragment) structures, that describe the location within system memory where the packet data resides.
+Each packet must also have one or more *fragment descriptors*, or [NET_PACKET_FRAGMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_fragment) structures, that describe the location within system memory where the packet data resides.
 
 *Packet extensions* are optional and hold per-packet metadata for scenario-specific features. For instance, extensions can hold offload information for checksum, large send offload (LSO), and receive segment coalescence (RSC), or they can hold application-specific details.
 
@@ -46,6 +32,17 @@ Together, these descriptors and extensions hold all the metadata about a network
 The second figure shows a packet stored across two memory fragments, with both RSC and checksum offload enabled.
 
 ![2 fragments packet layout](images/packet_layout_2_extensions_2_fragments.png)
+
+
+## Storage of packet descriptors
+
+The core descriptors and fragment descriptors are stored indepenently in two separated ring buffers, *packet ring* and *fragment ring*. Every core descriptor in the packet ring, has indexs into the fragment ring for locating the fragment descriptors of the same packet. Another data structure, NET_PACKET_DESCRIPTORS groups the packet ring and fragment ring together for a given packet queue.
+
+![multi-ring layout](images/multi-ring.png) 
+
+Every packet queue has its own NET_PACKET_DESCRIPTORS structure, and consequently its own packet ring, fragment ring and those descriptors in them. Therefore, the network data transfer operation of each packet queue is completely independent. To know more about packet queue, [please see this topic](transmit-and-receive-queues.md).
+
+The client drivers are recommended to use predefined convenient macros to access the packet ring, the fragment ring and the descriptors in them. To know more about them, see [here](using-the-ring-buffer.md).
 
 ## Packet descriptor extensibility
 
