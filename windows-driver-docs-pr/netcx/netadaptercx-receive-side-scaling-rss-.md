@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 Receive side scaling (RSS) is a network driver technology that enables the efficient distribution of network receive processing across multiple CPUs in multiprocessor systems. RSS improves system performance and increases network scalability by harnessing all available processors in a system and dynamically rebalancing CPU workloads. 
 
-This topic highlights RSS for NetAdapterCx client drivers and assumes knowledge of RSS underpinnings and terminology. For more information about RSS in general, including diagrams illustrating RSS in different hardware scenarios, see [Receive Side Scaling](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-receive-side-scaling2).
+This topic highlights RSS for NetAdapterCx client drivers and assumes knowledge of RSS concepts and terminology. For more information about RSS in general, including diagrams illustrating RSS in different hardware scenarios, see [Receive Side Scaling](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-receive-side-scaling2).
 
 ## Overview of RSS in NetAdapterCx
 
@@ -25,9 +25,9 @@ RSS in NetAdapterCx focuses on ease of configuration, simplicity of enablement a
 2. The driver's datapath queues must be created and ready to accept requests.
 3. The driver must be in the *D0* power state.
 
-Because of these criteria, the design of RSS in NetAdapterCx guarantees that the system will not call a client's RSS callbacks and enable RSS until the very end of the [power-up sequence](power-up-sequence-for-a-netadaptercx-client-driver.md). Clients do not have to manage indirection table move requests or handle other RSS events until everything they need is ready. 
+The design of RSS in NetAdapterCx guarantees that the system will not call a client's RSS callbacks and enable RSS until the very end of the [power-up sequence](power-up-sequence-for-a-netadaptercx-client-driver.md). Clients do not have to manage indirection table move requests or handle other RSS events until everything they need is ready. 
 
-Later, when the driver is unloading, NetAdapterCx will not call RSS callbacks after datapath queues have been destroyed during the [power-down sequence](power-down-sequence-for-a-netadaptercx-client-driver.md). Since datapath queues are torn down as the first step during power-down, this means that clients do not have to handle possible RSS events at any stage during power-down.
+Later, when the driver is unloading, NetAdapterCx will not call RSS callbacks after datapath queues have been destroyed during the [power-down sequence](power-down-sequence-for-a-netadaptercx-client-driver.md). Since datapath queues are torn down as the first step during power-down, this means that clients do not have to handle possible RSS events at any other stage during power-down.
 
 ## Setting RSS capabilities
 
@@ -44,9 +44,14 @@ To get started with RSS in NetAdapterCx, follow these steps:
 
 ## Enabling and disabling RSS
 
-After you set RSS capabilities in the *[EvtNetAdapterSetCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities)* callback function, the system will continue with the power-up sequence for your driver. Once the final step of creating datapath queues has finished, NetAdapterCx starts invoking your driver's RSS callbacks. At this point, RSS can be enabled and disabled as needed by the system. 
+After you set RSS capabilities in the *[EvtNetAdapterSetCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities)* callback function, the system will continue with the power-up sequence for your driver. NetAdapterCx starts invoking your driver's RSS callbacks once the final step of creating datapath queues has finished. At this point, RSS can be enabled and disabled as needed by the system. 
 
-To enable RSS, NetAdapterCx invokes your driver's *[EvtNetAdapterReceiveScalingEnable](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nc-netreceivescaling-evt_net_adapter_receive_scaling_enable)* callback. In the context of this callback, you typically get any information you need to turn RSS on, then enable control bits in your hardware. You can call these helper methods to get required information:
+> [!IMPORTANT]
+> You should **not** clear or reset your indirection table when enabling or disabling RSS. The framework will set the your initial indirection table state.
+
+### Enabling RSS
+
+NetAdapterCx enables RSS by invoking your driver's *[EvtNetAdapterReceiveScalingEnable](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nc-netreceivescaling-evt_net_adapter_receive_scaling_enable)* callback. In the context of this callback, you typically get any information you need to turn RSS on, then enable control bits in your hardware. You can call these helper methods to get required information:
 
 - [NetAdapterGetReceiveScalingProtocoltypes](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nf-netreceivescaling-netadaptergetreceivescalingprotocoltypes)
 - [NetAdapterGetReceiveScalingHashType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nf-netreceivescaling-netadaptergetreceivescalinghashtype)
@@ -54,12 +59,11 @@ To enable RSS, NetAdapterCx invokes your driver's *[EvtNetAdapterReceiveScalingE
 
 For a code example of enabling RSS, see *[EvtNetAdapterReceiveScalingEnable](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nc-netreceivescaling-evt_net_adapter_receive_scaling_enable)*.
 
-To disable RSS, NetAdapterCx invokes your driver's *[EvtNetAdapterReceiveScalingDisable](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nc-netreceivescaling-evt_net_adapter_receive_scaling_disable)* callback. Here, you typically disable the control bit in your hardware that you previously set in *EvtNetAdapterReceiveScalingEnable*. 
+### Disabling RSS
+
+NetAdapterCx disables RSS by invoking your driver's *[EvtNetAdapterReceiveScalingDisable](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nc-netreceivescaling-evt_net_adapter_receive_scaling_disable)* callback. Here, you typically disable the control bit in your hardware that you previously set in *EvtNetAdapterReceiveScalingEnable*. 
 
 For a code example of disabling RSS, see *[EvtNetAdapterReceiveScalingDisable](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nc-netreceivescaling-evt_net_adapter_receive_scaling_disable)*.
-
-> [!IMPORTANT]
-> You should **not** clear or reset your indirection table when enabling or disabling RSS. The framework will set the your initial indirection table state.
 
 ## Setting the hash secret key
 
@@ -74,4 +78,3 @@ While RSS is running on the system, upper layer protocol drivers monitor process
 In this callback, you move each entry in your NIC's indirection table to the specified receive queue. Each [NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/ns-netreceivescaling-_net_adapter_receive_scaling_indirection_entry) structure in the **NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRIES** array contains the hash index for that entry in the table, the new receive queue to which to assign the entry, and a status field indicating if that individual move succeeded or not. 
 
 The method of assigning index entries to hardware receive queues depends on the design of your NIC and the number of receive queues it has. For more information and a code example, see *[EvtNetAdapterReceiveScalingSetIndirectionEntries](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nc-netreceivescaling-evt_net_adapter_receive_scaling_set_indirection_entries)*.
-
