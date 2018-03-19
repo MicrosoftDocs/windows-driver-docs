@@ -34,5 +34,5 @@ This notification uses the [NDIS_WWAN_UICC_RESET_INFO](https://msdn.microsoft.co
 
 [NDIS_WWAN_UICC_RESET_INFO](https://msdn.microsoft.com/library/windows/hardware/9CBAFC44-187A-41ED-9405-1208167AC75D)
 
-[MB UICC reset operations](mb-uicc-reset-operations.md)
+[MB low level UICC access](mb-low-level-uicc-access.md)
 

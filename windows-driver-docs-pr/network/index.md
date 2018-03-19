@@ -46,7 +46,7 @@ This guide includes the following sections:
 
 [Remote NDIS (RNDIS)](remote-ndis--rndis-2.md)
 
-[Kernel Mode SDK Topics for Network Drivers](kernel-mode-sdk-topics-for-network-drivers.md)
+[Network driver topics in SDK header files](network-driver-topics-in-sdk-header-files.md)
 
 [Previous Versions of Network Drivers](previous-versions-of-network-drivers.md)
  
