@@ -28,6 +28,5 @@ In the previous diagram, note that the system is identical in all respects, with
 [Certifying and signing the update package](certifying-and-signing-the-update-package.md)  
 [Installing the update](installing-the-update.md)  
 
---------------------
 
 

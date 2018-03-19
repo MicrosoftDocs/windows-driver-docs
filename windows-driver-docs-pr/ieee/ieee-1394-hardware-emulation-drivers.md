@@ -38,6 +38,5 @@ With just a few exceptions, the emulation driver can use the complete 1394 DDI i
  
 
 
---------------------
 
 

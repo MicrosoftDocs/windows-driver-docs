@@ -28,6 +28,5 @@ If a miniport driver calls **ScsiPortInitialize** more than once, its **DriverEn
  
 
 
---------------------
 
 

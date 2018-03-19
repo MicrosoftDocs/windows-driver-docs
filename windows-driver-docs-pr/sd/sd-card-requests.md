@@ -111,6 +111,5 @@ This section contains two code examples: a command request that reads a byte of 
  
 
 
---------------------
 
 

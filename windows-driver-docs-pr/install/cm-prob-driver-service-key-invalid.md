@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_DRIVER_SERVICE_KEY_INVALID
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-driver-service-key-invalid-dg"></a>
 

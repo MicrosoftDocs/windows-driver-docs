@@ -29,6 +29,5 @@ For details on the UpdateCapsule function, the structure of a capsule, and UEFI 
 [Seamless crisis prevention and recovery](seamless-crisis-prevention-and-recovery.md)  
 [Firmware update status](firmware-update-status.md)  
 
---------------------
 
 

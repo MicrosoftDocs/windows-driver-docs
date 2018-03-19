@@ -32,4 +32,3 @@ When an ATA miniport driver calls **AtaPortRequestSynchronizedRoutine**, it must
  
 
 
---------------------

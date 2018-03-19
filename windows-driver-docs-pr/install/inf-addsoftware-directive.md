@@ -76,7 +76,7 @@ Instead, use one of the following options to preinstall an app in an OEM image o
 * To preinstall a Win32 app, boot to audit mode and install the app. For details, see [Audit Mode Overview](https://docs.microsoft.com/windows-hardware/manufacture/desktop/audit-mode-overview).
 * To preinstall a Microsoft Store (UWP) app, see [Preinstallable apps for desktop devices](https://docs.microsoft.com/windows-hardware/customize/preinstall/preinstallable-apps-for-windows-10-desktop).
 
-For info about pairing a driver with a Universal Windows Platform (UWP) app, see [Pairing a driver with a Universal Windows Platform (UWP) app](pairing-app-and-driver-versions.md) and [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md).
+For info about pairing a driver with a Universal Windows Platform (UWP) app, see [Pairing a driver with a Universal Windows Platform (UWP) app](pairing-app-and-driver-versions.md) and [Hardware Support App (HSA): Steps for Driver Developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md).
 
 **SoftwareBinary**=*filename*
 
@@ -139,4 +139,4 @@ Specifies a Microsoft Store identifier and identifier type.  Currently, only Pac
 * [INF DDInstall.Software Section](inf-ddinstall-software-section.md)
 * [INF AddComponent Directive](inf-addcomponent-directive.md)
 * [Pairing a driver with a Universal Windows Platform (UWP) app](pairing-app-and-driver-versions.md)
-* [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md)
+* [Hardware Support App (HSA): Steps for Driver Developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md)

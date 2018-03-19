@@ -63,6 +63,5 @@ If the call to [**IoGetDeviceObjectPointer**](https://msdn.microsoft.com/library
  
 
 
---------------------
 
 

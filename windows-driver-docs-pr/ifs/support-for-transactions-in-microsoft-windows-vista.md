@@ -22,6 +22,5 @@ On Windows Vista, there is currently no support for transactions for network min
  
 
 
---------------------
 
 

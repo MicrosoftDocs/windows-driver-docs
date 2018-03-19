@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_DRIVER_FAILED_LOAD
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-driver-failed-load-dg"></a>
 

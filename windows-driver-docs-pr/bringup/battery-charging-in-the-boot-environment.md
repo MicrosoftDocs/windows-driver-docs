@@ -193,6 +193,5 @@ The left side of the diagram shows all thresholds that affect the user experienc
 [Architecture of the UEFI battery charging application provided by Microsoft](architecture-of-the-uefi-battery-charging-application.md)  
 [Boot and UEFI](boot-and-uefi.md)  
 
---------------------
 
 

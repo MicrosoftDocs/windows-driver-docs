@@ -58,6 +58,5 @@ If you call [**IoSkipCurrentIrpStackLocation**](https://msdn.microsoft.com/libra
  
 
 
---------------------
 
 

@@ -44,6 +44,5 @@ For more information about support for parallel ports and devices, see:
  
 
 
---------------------
 
 

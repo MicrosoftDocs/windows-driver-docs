@@ -31,6 +31,5 @@ The following diagram illustrates buffers used in isochronous transfer.
  
 
 
---------------------
 
 

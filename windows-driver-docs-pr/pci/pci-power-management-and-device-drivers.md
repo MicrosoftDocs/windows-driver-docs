@@ -84,6 +84,5 @@ The OnNow architecture is a layered architecture, handling the integration of th
  
 
 
---------------------
 
 

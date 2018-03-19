@@ -142,6 +142,5 @@ This function is available starting in revision 0x00010002 of the EFI\_BATTERY\_
 ## Related topics
 [EFI\_BATTERY\_CHARGING\_PROTOCOL](efi-battery-charging-protocol.md)  
 
---------------------
 
 

@@ -441,6 +441,5 @@ The platform must implement the Hardware Security Test Interface, and the platfo
 [UEFI requirements for Windows 10 Mobile](uefi-requirements-specific-to-windows-mobile.md)  
 [UEFI requirements for USB flashing support](uefi-requirements-for-usb-flashing-support.md)  
 
---------------------
 
 

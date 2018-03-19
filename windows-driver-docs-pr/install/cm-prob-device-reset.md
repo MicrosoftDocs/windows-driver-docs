@@ -11,6 +11,8 @@ ms.technology: windows-devices
 
 # CM_PROB_DEVICE_RESET
 
+This function is reserved for system use.
+
 ### Error
 
 54

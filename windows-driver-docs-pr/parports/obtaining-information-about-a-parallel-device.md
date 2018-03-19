@@ -45,6 +45,5 @@ In addition to [connecting to a parallel device](connecting-to-a-parallel-device
  
 
 
---------------------
 
 

@@ -46,6 +46,5 @@ Such a miniport driver also might call **ScsiPortNotification** with a miniport 
  
 
 
---------------------
 
 
