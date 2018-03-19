@@ -4,7 +4,7 @@ description: x64 Architecture
 ms.assetid: 6c0d92d5-cb16-4909-bae5-39fc5c15f736
 keywords: ["x64 processor, architecture", "registers, on an x64 processor", "x64 processor, registers"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 03/16/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -190,10 +190,9 @@ The addressing modes in 64-bit mode are similar to, but not identical to, x86.
 Instructions, such as **jmp**, **call**, **push**, and **pop**, that implicitly refer to the instruction pointer and the stack pointer treat them as 64 bits registers on x64.
 
  
+## See Also
 
- 
+[X86-64 Wikipedia](https://en.wikipedia.org/wiki/X86-64)
 
-
-
-
+[AMD 64 Developer Resources](https://developer.amd.com/resources/)
 
