@@ -81,7 +81,7 @@ Before setting BCDEdit options you might need to disable or suspend BitLocker an
 
 ### Mapping Boot.ini Options to BCDEdit Options and Elements
 
-The following table provides a mapping from the boot options used in operating systems prior to Windows Vista (in Boot.ini), to the BCDEdit options and the BCD elements used in Windows. For information about the BCD boot elements see [BCD Reference](http://go.microsoft.com/fwlink/p/?linkid=56420) on MSDN.
+The following table provides a mapping from the boot options used in operating systems prior to Windows Vista (in Boot.ini), to the BCDEdit options and the BCD elements used in Windows. For information about the BCD boot elements see [BCD Reference](http://go.microsoft.com/fwlink/p/?linkid=56420).
 
 <table>
 <colgroup>
