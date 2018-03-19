@@ -27,6 +27,5 @@ For more information, see [**PORT\_CONFIGURATION\_INFORMATION (SCSI)**](https://
  
 
 
---------------------
 
 

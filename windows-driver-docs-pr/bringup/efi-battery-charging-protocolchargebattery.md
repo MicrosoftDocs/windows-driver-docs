@@ -95,6 +95,5 @@ To detect errors, the event type contained in *CompletionToken* must be EVT\_NOT
 [EFI\_BATTERY\_CHARGING\_PROTOCOL](efi-battery-charging-protocol.md)  
 [EFI\_BATTERY\_CHARGING\_COMPLETION\_TOKEN](efi-battery-charging-completion-token.md)  
 
---------------------
 
 

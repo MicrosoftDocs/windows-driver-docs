@@ -48,6 +48,5 @@ A vendor can supply an optional WDM function driver for an ACPI device. The func
  
 
 
---------------------
 
 

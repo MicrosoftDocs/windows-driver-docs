@@ -76,6 +76,5 @@ Returns one of the following status codes.
 ## Related topics
 [EFI\_DISPLAY\_POWER\_PROTOCOL](efi-display-power-protocol.md)  
 
---------------------
 
 

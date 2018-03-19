@@ -37,6 +37,5 @@ None. Firmware is responsible for taking the current thermal limit into account 
  
 
 
---------------------
 
 

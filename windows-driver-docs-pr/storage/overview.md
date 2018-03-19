@@ -26,6 +26,5 @@ This topic describes the underlying design and architecture of the storage silo 
  
 
 
---------------------
 
 

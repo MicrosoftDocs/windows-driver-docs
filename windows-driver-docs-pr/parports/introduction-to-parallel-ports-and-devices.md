@@ -56,6 +56,5 @@ For more information about Windows support for parallel ports and devices, see:
  
 
 
---------------------
 
 

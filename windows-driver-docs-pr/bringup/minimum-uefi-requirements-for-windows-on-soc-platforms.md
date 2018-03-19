@@ -60,6 +60,5 @@ Windows supports firmware revisions based on the Unified Extensible Firmware Int
  
 
 
---------------------
 
 

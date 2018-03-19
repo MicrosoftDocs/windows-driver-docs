@@ -60,6 +60,5 @@ This section describes how to write a driver for a general-purpose I/O (GPIO) co
  
 
 
---------------------
 
 

@@ -24,6 +24,5 @@ If the function member of an SRB is set to SRB\_FUNCTION\_PNP, the SRB is a stru
  
 
 
---------------------
 
 

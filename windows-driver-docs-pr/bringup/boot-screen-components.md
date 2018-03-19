@@ -142,6 +142,5 @@ The firmware update display capsule is modeled off of the Boot Graphics Resource
 ## Related topics
 [User experience for UEFI firmware updates](user-experience-for-uefi-firmware-updates.md)  
 
---------------------
 
 

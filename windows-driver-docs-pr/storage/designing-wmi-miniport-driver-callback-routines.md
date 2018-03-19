@@ -44,6 +44,5 @@ The following sections will help you design the *HwScsiWmiExecuteMethod* callbac
  
 
 
---------------------
 
 

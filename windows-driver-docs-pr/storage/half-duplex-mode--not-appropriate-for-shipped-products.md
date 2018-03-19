@@ -22,6 +22,5 @@ If you continue to ship a half-duplex miniport, you risk compatibility issues wi
  
 
 
---------------------
 
 

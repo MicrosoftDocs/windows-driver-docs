@@ -69,6 +69,5 @@ Verifies the signature and hash of the FFU catalog file. See [EFI\_CHECKSIG\_PRO
  
 
 
---------------------
 
 

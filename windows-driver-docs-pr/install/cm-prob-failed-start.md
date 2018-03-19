@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # CM_PROB_FAILED_START
 
+This function is reserved for system use.
+
 
 ## <a href="" id="ddk-cm-prob-failed-start-dg"></a>
 

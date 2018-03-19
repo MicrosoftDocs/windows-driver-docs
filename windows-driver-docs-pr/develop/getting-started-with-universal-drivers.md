@@ -19,7 +19,7 @@ A Universal INF file is an INF file that only uses the [subset of INF syntax](..
 
 Any binaries referenced by the Universal INF file must use only device driver interfaces (DDI) that are included in [UWP-based editions of Windows 10](windows-10-editions-for-universal-drivers.md).  These DDIs are marked as **Universal** on the corresponding documentation reference pages.  The driver binary can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the Windows Driver Model (WDM).
 
-Other binaries contained in your Universal Windows driver must pass the [API validation tests](../devtest/infverif.md).
+Other binaries contained in your Universal Windows driver must pass the [API validation tests](../develop/validating-universal-drivers.md).
 
 ## Design Principles
 
@@ -27,7 +27,7 @@ When you write a universal driver package, there are four design principles to c
 
 *  Declarative: Use directives in the INF file for installation operations and not extension points such as co-installers, RegisterDlls, etc.
 *  Componentized: System and/or OEM-specific customizations are in an [extension INF](../install/using-an-extension-inf-file.md) driver package separate from the base driver package, facilitating independent updates of different components owned by different organizations.
-*  Hardware Support Apps (HSA): Use [custom capabilities](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md) to associate a hardware-specific UWP (Universal Windows Platform) application with your driver.  The resulting app can be delivered and serviced from the Microsoft Store.
+*  Hardware Support Apps (HSA): Any user interface distributed with a universal driver must be packaged as a Hardware Support App.  An HSA is a device-specific app that is paired with a specific driver.  The application can be a [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide) or a [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) app.  You must distribute and update the app through the Microsoft Store.  For details, see [Hardware Support App (HSA): Steps for Driver Developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md) and [Hardware Support App (HSA): Steps for App Developers](../devapps/hardware-support-app--hsa--steps-for-app-developers.md).
 *  Universal API compliance: Binaries in the universal driver package only call APIs and DDIs that are included in the OneCore subset.  INF files use only universal INF syntax.
 
 In the documentation, we use the acronym DCHU to refer to the above principles.
@@ -54,7 +54,7 @@ Use the following best practices:
     3. Use the drop-down menu to set **Target Platform** to `Universal`.
     
 *  If your INF performs any custom setup actions that depend on the target platform, consider separating them out into an extension INF.  You can update an extension INF independently from the base driver package to improve robustness and servicing.  See [Using an Extension INF File](../install/using-an-extension-inf-file.md).
-*  If you would like to provide an application that works with your device, please provide a UWP app.  For details, see [Hardware access for Universal Windows Platform apps](../devapps/hardware-access-for-universal-windows-platform-apps.md).  In Windows 10, version 1703, the OEM needs to pre-load such an app using [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).  Alternatively, users can manually download the app from the Microsoft Store.
+*  If you would like to provide an application that works with your device, please provide a UWP app.  For details, see [Hardware Support App (HSA): Steps for Driver Developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md).  In Windows 10, version 1703, the OEM needs to pre-load such an app using [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).  Alternatively, users can manually download the app from the Microsoft Store.
 *  In the [**INF DestinationDirs Section**](../install/inf-destinationdirs-section.md), set the destination directories to [dirid 13](../install/using-dirids.md) to make the driver run from the Driver Store.  This will not work for some devices.
 *  Submit your universal driver package for certification in the Windows Hardware Compatibility Program. See these topics for more details:
 

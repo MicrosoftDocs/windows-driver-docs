@@ -117,6 +117,5 @@ At the end of the preceding code example, the \*`Settings` structure contains th
  
 
 
---------------------
 
 

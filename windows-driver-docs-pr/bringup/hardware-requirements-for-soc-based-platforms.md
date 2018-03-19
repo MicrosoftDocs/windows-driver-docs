@@ -52,6 +52,5 @@ For more information about GPIO-signaled ACPI events, see section 5.6.5, "GPIO-S
  
 
 
---------------------
 
 

@@ -160,6 +160,5 @@ There are two scenarios in which NTFS truncates the range to be offload read or 
  
 
 
---------------------
 
 

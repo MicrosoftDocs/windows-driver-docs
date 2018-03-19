@@ -34,6 +34,5 @@ A client uses following device control requests to set the indicated operations 
  
 
 
---------------------
 
 

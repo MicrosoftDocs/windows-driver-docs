@@ -30,6 +30,5 @@ Only the system-supplied ACPI driver modifies the data in an operation region. T
  
 
 
---------------------
 
 

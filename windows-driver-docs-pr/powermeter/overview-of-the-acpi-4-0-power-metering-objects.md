@@ -40,6 +40,5 @@ Each ACPI PMI namespace object has appropriate control methods that allow intera
  
 
 
---------------------
 
 

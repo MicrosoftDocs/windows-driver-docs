@@ -55,6 +55,5 @@ After calling **BatteryClassInitializeDevice**, the [*AddDevice*](https://msdn.m
  
 
 
---------------------
 
 

@@ -63,6 +63,5 @@ If a temperature sensor device is reported via \_DSM function index 2, the therm
  
 
 
---------------------
 
 

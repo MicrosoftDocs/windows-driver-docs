@@ -36,6 +36,5 @@ A command line tool (*Powercfg.exe*) can also be used. Type **powercfg /?** for 
  
 
 
---------------------
 
 
