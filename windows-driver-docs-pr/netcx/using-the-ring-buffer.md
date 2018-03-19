@@ -13,7 +13,7 @@ ms.technology: windows-devices
 
 # Using the ring buffer
 
-A [**NET_RING_BUFFER**](net-ring-buffer.md) is a circular buffer of one or more [**NET_PACKET**](net-packet.md) structures that is shared between NetAdapterCx and a client. To access a queue's packet ring buffer, first call **NetRx(Tx)QueueGetDatapathDescriptor** to get the queue's datapath descriptor structure, then call [NET_DATAPATH_DESCRIPTOR_GET_PACKET_RING_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_datapath_descriptor_get_packet_ring_buffer) to get the ring buffer.
+A [**NET_RING_BUFFER**](net-ring-buffer.md) is a circular buffer of one or more [**NET_PACKET**](net-packet.md) structures that is shared between NetAdapterCx and a client. To access a queue's packet ring buffer, first call **NetRx(Tx)QueueGetDatapathDescriptor** to get the queue's datapath descriptor structure, then call the [NET_DATAPATH_DESCRIPTOR_GET_PACKET_RING_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_datapath_descriptor_get_packet_ring_buffer) macro to get the ring buffer.
 
 Each element in the packet ring buffer is owned by either the client driver or NetAdapterCx. The values of the index members control ownership. Specifically, the client driver owns every element from **BeginIndex** to **EndIndex - 1** inclusive.
 

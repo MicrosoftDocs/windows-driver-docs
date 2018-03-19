@@ -13,7 +13,7 @@ ms.technology: windows-devices
 
 # Transmit and receive queues
 
-*Packet queues*, or *datapath queues* are objects introduced in NetAdapterCx to allow the client drivers to model their hardware features, such like hardware transmit and receive queues, more explicitly in the software drivers. This topic explains how to work with transmit and receive queues in NetAdapterCx. 
+*Packet queues*, or *datapath queues* are objects introduced in NetAdapterCx to enable client drivers to model their hardware features, such as hardware transmit and receive queues, more explicitly in software drivers. This topic explains how to work with transmit and receive queues in NetAdapterCx. 
 
 ## Creating transmit and receive queues
 
@@ -65,7 +65,7 @@ Similarly, when creating a receive (Rx) queue, the client must provide pointers 
 * [*EVT_RXQUEUE_SET_NOTIFICATION_ENABLED*](evt-rxqueue-set-notification-enabled.md)
 * [*EVT_RXQUEUE_CANCEL*](evt-rxqueue-cancel.md)
 
-See the above pages for details on what the client needs to do in each event callback function.
+See each of these pages for details on what the client needs to do in each event callback function.
 
 ## Polling model
 

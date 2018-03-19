@@ -78,7 +78,7 @@ The following DDIs and data structures were updated in NetAdapterCx 1.2 to use a
 
 NetAdapterCx introduces packet extensions for each **NET_PACKET**, which provide space for NIC client drivers to store per-packet metadata. Attached to each packet's core descriptor, extensions are used by client drivers to share information with the upper layers. They can hold offload information for checksum, large send offload (LSO), and receive segment coalescence (RSC), or they can hold application-specific details.
 
-For more information about packet descriptors and extensions, see [Datapath descriptors, packet descriptors, and packet extensions](datapath-descriptors-packet-descriptors-and-packet-extensions.md).
+For more information about packet descriptors and extensions, see [Packet descriptors and extensions](packet-descriptors-and-extensions.md).
 
 The following DDIs and data structures are new in NetAdapterCx 1.2 for packet extensions and offloads.
 

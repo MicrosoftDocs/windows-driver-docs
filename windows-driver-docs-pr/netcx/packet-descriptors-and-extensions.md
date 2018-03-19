@@ -1,9 +1,9 @@
 ---
-title: Datapath descriptors, packet descriptors, and packet extensions
-description: Datapath descriptors, packet descriptors, and packet extensions
+title: Packet descriptors and extensions
+description: Packet descriptors and extensions
 ms.assetid: 7B2357AE-F446-4AE8-A873-E13DF04D8D71
 keywords:
-- WDF Network Adapter Class Extension Datapath descriptors, packet descriptors, and packet extensions, NetAdapterCx datapath descriptors, multi-ring buffers, NetAdapterCx packet descriptors, NetAdapterCx packet extensions
+- WDF Network Adapter Class Extension Packet descriptors and extensions, NetAdapterCx datapath descriptors, multi-ring buffers, NetAdapterCx packet descriptors, NetAdapterCx packet extensions
 ms.author: windowsdriverdev
 ms.date: 03/18/2018
 ms.topic: article
@@ -19,7 +19,7 @@ In NetAdapterCx, *packet descriptors* are small, compact and runtime-extensible 
 - One or more fragment descriptors
 - Zero or more packet extensions 
 
-The *core descriptor* of the packet is the [NET_PACKET](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) structure. It contains only the most basic metadata applicable to all packets, such as the framing layout of a given packet and the index to the first fragment descriptor.   
+The *core descriptor* of the packet is the [NET_PACKET](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) structure. It contains only the most basic metadata applicable to all packets, such as the framing layout of a given packet and the index to the packet's first fragment descriptor.   
 
 Each packet must also have one or more *fragment descriptors*, or [NET_PACKET_FRAGMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_fragment) structures, that describe the location within system memory where the packet data resides.
 
@@ -36,13 +36,13 @@ The second figure shows a packet stored across two memory fragments, with both R
 
 ## Storage of packet descriptors
 
-The core descriptors and fragment descriptors are stored indepenently in two separated ring buffers, *packet ring* and *fragment ring*. Every core descriptor in the packet ring, has indexs into the fragment ring for locating the fragment descriptors of the same packet. Another data structure, NET_PACKET_DESCRIPTORS groups the packet ring and fragment ring together for a given packet queue.
+The core descriptors and fragment descriptors are stored indepenently in two separate ring buffers, the *packet ring* and *fragment ring*. Every core descriptor in the packet ring has indices into the fragment ring for locating that packet's fragment descriptors. Another data structure, [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor), groups the packet ring and fragment ring together for a given packet queue.
 
 ![multi-ring layout](images/multi-ring.png) 
 
-Every packet queue has its own NET_PACKET_DESCRIPTORS structure, and consequently its own packet ring, fragment ring and those descriptors in them. Therefore, the network data transfer operation of each packet queue is completely independent. To know more about packet queue, [please see this topic](transmit-and-receive-queues.md).
+Every packet queue has its own [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor) structure, and, consequently, its own packet ring, fragment ring, and descriptors in those rings. Therefore, the network data transfer operation of each packet queue is completely independent. To learn more about packet queues, see [Transmit and receive queues](transmit-and-receive-queues.md).
 
-The client drivers are recommended to use predefined convenient macros to access the packet ring, the fragment ring and the descriptors in them. To know more about them, see [here](using-the-ring-buffer.md).
+Client drivers are advised to use predefined convenient macros to access the packet ring, the fragment ring and the descriptors they contain. To learn more about these macros, see [Using the ring buffer](using-the-ring-buffer.md).
 
 ## Packet descriptor extensibility
 
@@ -69,7 +69,8 @@ Newer client drivers that know about the V2 fields can access them, while older 
 A client driver that understands the new extension can use it. Other client drivers can skip over the new fields. This permits different parts of the packet descriptor to be versioned independently.
 
 ## Packet descriptors and datapath performance
-The extensibility feature outlined previously provides benefits to help client drivers meet the performance requirements of NICs that are capabable of hundreds of gigabits per second and with thousands of queues:
+
+The extensibility feature outlined previously provides benefits to help client drivers meet the performance requirements of NICs that are capabable of hundreds of gigabits per second, with thousands of queues:
 
 1. The packet descriptors are kept as compact as possible to improve CPU cache hits, as features and extensions that aren't used occupy 0 bytes of space in the descriptors. 
 2. There is no pointer dereferencing, only offset arithmetic because extensions are in-line, which not only saves space but also helps with CPU cache hits. 
