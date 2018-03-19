@@ -13,7 +13,7 @@ ms.technology: windows-devices
 
 # Transmit and receive queues
 
-This topic explains how to work with transmit and receive queues in NetAdapterCx. 
+*Packet queues*, or *datapath queues* are objects introduced in NetAdapterCx to allow the client drivers to model their hardware features, such like hardware transmit and receive queues, more explicitly in the software drivers. This topic explains how to work with transmit and receive queues in NetAdapterCx. 
 
 ## Creating transmit and receive queues
 
