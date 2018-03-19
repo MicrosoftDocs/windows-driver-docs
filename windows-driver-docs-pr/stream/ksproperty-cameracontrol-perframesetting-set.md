@@ -87,7 +87,7 @@ KSCAMERA_EXTENDEDPROP_ISO_MANUAL (min = 30, max = 210, step =20)
     KSCAMERA_EXTENDEDPROP_VALUE.Value.ul = 50
     ```
 
-The following table summarizes the available controls and values for per-frame settings. The actual availability is determined by the driverâ€™s actual capability, which can be obtained using [**KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_CAPABILITY**](ksproperty-cameracontrol-perframesetting-capability.md).
+The following table summarizes the available controls and values for per-frame settings. The actual availability is determined by the driver's actual capability, which can be obtained using [**KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_CAPABILITY**](ksproperty-cameracontrol-perframesetting-capability.md).
 
 <table>
 <colgroup>

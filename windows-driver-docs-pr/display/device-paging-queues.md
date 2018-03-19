@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Device paging queues
 
 
-Various services exposed by the video memory manager can take a non-trivial amount of time to finish. For example, making an allocation resident can possibly involve bringing the allocation content, which hasnâ€™t been used in a long time, back from the page file. Reserving graphics processing unit (GPU) virtual address or mapping a virtual address to an already resident allocation arenâ€™t quite as expensive but still involve immediate page table update which needs to be queued onto the paging engine and may take a little while to finish.
+Various services exposed by the video memory manager can take a non-trivial amount of time to finish. For example, making an allocation resident can possibly involve bringing the allocation content, which hasn't been used in a long time, back from the page file. Reserving graphics processing unit (GPU) virtual address or mapping a virtual address to an already resident allocation aren't quite as expensive but still involve immediate page table update which needs to be queued onto the paging engine and may take a little while to finish.
 
 Rather than forcing the thread requesting these services to wait until their completion, the video memory manager implements these services using an asynchronous queue. This asynchronous queue is called the device paging queue.
 
