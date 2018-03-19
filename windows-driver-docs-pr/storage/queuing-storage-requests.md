@@ -38,6 +38,5 @@ If an HBA supports command queuing, as indicated in the returned STORAGE\_ADAPTE
  
 
 
---------------------
 
 

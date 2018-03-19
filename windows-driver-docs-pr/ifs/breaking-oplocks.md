@@ -63,6 +63,5 @@ A break of a Windows 7 oplock requires an acknowledgment if the REQUEST\_OPLOCK\
  
 
 
---------------------
 
 

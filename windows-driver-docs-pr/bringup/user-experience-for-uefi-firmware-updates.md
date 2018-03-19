@@ -47,6 +47,5 @@ The firmware update UX needs to display from the time UpdateCapsule() is called 
 ## Related topics
 [Boot screen components](boot-screen-components.md)  
 
---------------------
 
 

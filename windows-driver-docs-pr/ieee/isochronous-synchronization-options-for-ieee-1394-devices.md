@@ -47,6 +47,5 @@ To determine if the host controller supports synchronization on cycle times, the
  
 
 
---------------------
 
 

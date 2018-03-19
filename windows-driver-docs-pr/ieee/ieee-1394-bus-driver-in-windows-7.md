@@ -69,6 +69,5 @@ In Windows 7, the 1394 DDIs were changed to support faster speeds as defined by 
 [The IEEE 1394 Driver Stack](https://msdn.microsoft.com/library/windows/hardware/ff538867)  
 [Retrieving the Contents of a IEEE 1394 Node's Configuration ROM](https://msdn.microsoft.com/library/windows/hardware/gg266408)  
 
---------------------
 
 

@@ -32,6 +32,5 @@ The *pciide.sys* sample is binary compatible between Windows 95/98/Me and NT-bas
  
 
 
---------------------
 
 

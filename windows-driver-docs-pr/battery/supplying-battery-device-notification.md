@@ -32,6 +32,5 @@ In addition to the [*BatteryMiniQueryStatus*](https://msdn.microsoft.com/library
  
 
 
---------------------
 
 

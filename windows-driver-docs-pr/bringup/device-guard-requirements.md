@@ -162,6 +162,5 @@ These flowcharts show the expected behavior of your implementation:
 [Protect derived domain credentials with Credential Guard]( http://go.microsoft.com/fwlink/p/?LinkId=717899)  
 [UEFI Specifications](http://go.microsoft.com/fwlink/p/?LinkId=717873)  
 
---------------------
 
 

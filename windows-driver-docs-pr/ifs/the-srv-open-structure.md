@@ -56,6 +56,5 @@ A SRV\_OPEN structure contains the following:
  
 
 
---------------------
 
 

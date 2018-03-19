@@ -72,6 +72,5 @@ Windows supports firmware revisions based on the [ACPI 5.0 specification](http:/
  
 
 
---------------------
 
 

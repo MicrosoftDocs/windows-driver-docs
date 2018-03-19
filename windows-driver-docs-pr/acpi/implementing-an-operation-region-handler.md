@@ -46,6 +46,5 @@ In addition to the previously described parameters, the ACPI driver also passes 
  
 
 
---------------------
 
 

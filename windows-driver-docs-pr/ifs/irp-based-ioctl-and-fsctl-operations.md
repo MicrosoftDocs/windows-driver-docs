@@ -52,6 +52,5 @@ Note that IRP\_MJ\_DEVICE\_CONTROL can also be a fast I/O operation. When it is 
  
 
 
---------------------
 
 

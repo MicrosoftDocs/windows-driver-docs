@@ -41,6 +41,5 @@ Although IRP\_MJ\_LOCK\_CONTROL can be an IRP-based or fast I/O operation, it ha
  
 
 
---------------------
 
 

@@ -184,6 +184,5 @@ In the **WdfIoTargetSendWriteSynchronously** call, the driver supplies a variabl
  
 
 
---------------------
 
 

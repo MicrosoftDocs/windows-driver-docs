@@ -69,6 +69,5 @@ For more information see [Mobile Battery Life Solutions - A Guide for Mobile Pla
  
 
 
---------------------
 
 

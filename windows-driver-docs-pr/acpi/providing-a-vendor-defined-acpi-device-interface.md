@@ -33,6 +33,5 @@ The device interface class GUID is vendor-defined.
  
 
 
---------------------
 
 

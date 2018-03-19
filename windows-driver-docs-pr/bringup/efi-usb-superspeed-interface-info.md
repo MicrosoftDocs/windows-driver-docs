@@ -50,6 +50,5 @@ The **EFI\_USB\_INTERFACE\_DESCRIPTOR** structure is defined in the UEFI specifi
  
 
 
---------------------
 
 

@@ -20,6 +20,5 @@ The LsiU3AdapterControl routine allows for special adapter control routines to b
  
 
 
---------------------
 
 

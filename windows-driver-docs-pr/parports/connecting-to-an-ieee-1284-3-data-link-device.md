@@ -27,6 +27,5 @@ The system-supplied function driver for parallel ports does not provide full sup
  
 
 
---------------------
 
 

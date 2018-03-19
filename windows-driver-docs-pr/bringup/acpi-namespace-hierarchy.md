@@ -44,6 +44,5 @@ For example, dimming displays or reporting battery status.
  
 
 
---------------------
 
 
