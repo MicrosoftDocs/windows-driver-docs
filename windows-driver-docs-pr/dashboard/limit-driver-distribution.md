@@ -64,7 +64,7 @@ There are two types of floors and ceilings supported by the HDC Dashboard:
 2. Select **Publish**
 
 > [!NOTE]
-> Note fhe following when adding a ceiling
+> Note the following when adding a ceiling
 > * The ceiling option is only enabled for Windows 10 versions in the PNP list
 > * The ceiling you select should be higher than the PNP selections you made.
 
