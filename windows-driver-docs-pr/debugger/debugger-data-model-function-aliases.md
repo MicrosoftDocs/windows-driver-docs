@@ -3,7 +3,7 @@ title: Debugger Data Model Function Aliases
 description: Function aliases are a quick unique short name by which a user of the debugger can access functionality defined in a debugger extension.
 keywords: ["Debugger Data Model Function Aliases"]
 ms.author: domars
-ms.date: 01/19/2017
+ms.date: 03/19/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -185,15 +185,12 @@ As with other dx commands, you can right click on a command after it was execute
 
 Debugger objects are projected into a namespace rooted at "Debugger". Processes, modules, threads, stacks, stack frames, and local variables are all available to be used in a LINQ query.
 
-TBD TBD TBD - Wasn't able to get this to work - get message about missing colon :. Maybe a different syntax is used for p => new?
-
-
 This example shows the top processes running the most threads:
 
 ```
 function __Processes()
 {
-    return host.currentSession.Processes.Select(p => new { Name = p.Name, ThreadCount = p.Threads.Count() });
+    return host.currentSession.Processes.Select(p => new { Name:p.Name, ThreadCount: p.Threads.Count() });
 }
 
 function initializeScript()
@@ -203,7 +200,9 @@ function initializeScript()
 
 ```
 
-TBD TBD TBD - This works...
+In this example the top 5 threads are listed.
+
+TBD TBD TBD - Output needs to show !Processes 
 
 ```
 0: kd> dx -r2 Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.ThreadCount),5
