@@ -13,17 +13,23 @@ ms.technology: windows-devices
 
 # Mobile Broadband (MBB) WDF class extension (MBBCx)
 
-Any MBB-NetAdapter client driver is first and foremost a full-fledged WDF client driver, and then it's also a NetAdapterCx client driver just like other NIC drivers, and finally it's a client driver to the MBB class extension, which provides MBB media specific functionalities. 
+Starting in Windows 10, version 1809, the Windows Driver Kit (WDK) includes a Mobile Broadband (MBB) WDF class extension that works with NetAdapterCx. MBB-NetAdapter client drivers are first and foremost fully fledged WDF client drivers, then they're NetAdapterCx client drivers just like other NIC drivers, and finally they're client drivers of the MBB class extension (MBBCx) that provides MBB media-specific functionality. The following block diagram illustrates the MBBCx architecture:
 
 ![MbbCx architecture](images/MbbCx.png)
 
-Therefore, a MBB-NetAdapter driver performs 3 categories of tasks
-- call [standard WDF APIs](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/_wdf/) for common device tasks, like Pnp and Power management
-- call [NetAdapterCx APIs](netadaptercx-api-reference.md) for common network device operations, like transmitting/receiving network packets.
-- call [MbbCx APIs]() for MBB specific control path operation, such as MBIM message handling
+An MBB-NetAdapter client driver performs 3 categories of tasks based on its relationships with the framework:
 
-Before you begin
-- Familiarize yourself with [Windows Driver Foundation (WDF)](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-the-framework-to-develop-a-driver)
-- Familiarize yourself with [NetAdapter class extension](index.md)
+- Call [standard WDF APIs](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_wdf/) for common device tasks like Pnp and Power management.
+- Call [NetAdapterCx APIs](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/#netadaptercx) for common network device operations like transmitting or receiving network packets.
+- Call [MbbCx APIs](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/#mbbcx) for MBB-specific control path operations like MBIM message handling.
 
-This topic assume you have already known how to write a NetAdapterCx client driver for a basic NIC, and it focues on the codes needed specifically for MBBCx. 
+Before you begin, you should familiarize yourself with these concepts:
+
+- [Windows Driver Foundation (WDF)](../wdf/using-the-framework-to-develop-a-driver.md)
+- [NetAdapter class extension](index.md)
+
+The topics in this section assume you already know how to write a NetAdapterCx client driver for a basic NIC, so they focus only on MBBCx-specific code.
+
+This section contains the following topics:
+
+- [Writing an MBBCx client driver](writing-an-mbbcx-client-driver.md)

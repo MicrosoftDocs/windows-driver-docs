@@ -21,7 +21,7 @@
 ## [Power-down sequence for a NetAdapterCx client driver](power-down-sequence-for-a-netadaptercx-client-driver.md)
 ## [NetAdapterCx limitations](netadaptercx-limitations.md)
 ## [Mobile Broadband (MBB) WDF class extension (MBBCx)](mobile-broadband-mbb-wdf-class-extension-mbbcx-.md)
-### [Writing a MBB-NetAdapterCx client driver](writing-a-mbb-netadaptercx-client-driver.md)
+### [Writing an MBBCx client driver](writing-an-MBBcx-client-driver.md)
 ## [NetAdapterCx API reference](netadaptercx-api-reference.md)
 ### [NetAdapterCx callback functions](netadaptercx-callback-functions.md)
 #### [EVT_NET_ADAPTER_CREATE_RXQUEUE](evt-net-adapter-create-rxqueue.md)

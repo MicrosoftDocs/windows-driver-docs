@@ -11,10 +11,11 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Writing a MBB-NetAdapterCx client driver
+# Writing an MBBCx client driver
 
 ## Initialize the device
-In addition to [these tasks required by NetAdapterCx for device initialization](device-initialization.md), the MBB client driver must perform the following tasks in its [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function:
+
+In addition to the [tasks required by NetAdapterCx for device initialization](device-initialization.md), an MBB client driver must perform the following tasks in its [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function:
 
 1. Call [**MbbDeviceInitConfig**]() after calling [**NetAdapterDeviceInitConfig**]() with the same reference to [*WDFDEVICE\_INIT*](https://msdn.microsoft.com/library/windows/hardware/ff546951) passed by the framework. It must be called before calling [*WdfDeviceCreate*](https://msdn.microsoft.com/library/windows/hardware/ff545926), 
 
