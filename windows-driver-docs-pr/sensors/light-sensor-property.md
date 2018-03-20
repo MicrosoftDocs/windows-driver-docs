@@ -58,7 +58,7 @@ The property key for the light sensor.
 
  
 
-For more information about the data type shown in the **Type** column, see [MSDN PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
+For more information about the data type shown in the **Type** column, see [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
 
 **Remarks**
 

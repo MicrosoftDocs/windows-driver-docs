@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 This topic provides information about the accelerometer thresholds and interval.
 
-The following table shows the default thresholds for the accelerometer. For more information about the types shown in the type column, see [MSDN PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
+The following table shows the default thresholds for the accelerometer. For more information about the types shown in the type column, see [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
 
 <table>
 <colgroup>
@@ -65,7 +65,7 @@ The default interval for the accelerometer is 50 Hz.
 ## <span id="related_topics"></span>Related topics
 
 
-[MSDN PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
 
  
 

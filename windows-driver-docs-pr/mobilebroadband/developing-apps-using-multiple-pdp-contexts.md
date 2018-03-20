@@ -471,9 +471,9 @@ The following sample XML file demonstrates how to use Windows provisioning metad
 <?xml version="1.0" encoding="utf-8"?>
 <CarrierProvisioning xmlns="http://www.microsoft.com/networking/CarrierControl/v1">
   <Global>
-    <!-- Adjust the Carrier ID to fit your own ID. Refer to the MSDN documentation about Carrier ID's. -->
+    <!-- Adjust the Carrier ID to fit your own ID. Refer to the documentation about Carrier ID's. -->
     <CarrierId>{11111111-1111-1111-1111-111111111111}</CarrierId>
-    <!-- Adjust the Susbscriber ID. Refer to the MSDN documentation about Subscriber ID's. -->
+    <!-- Adjust the Susbscriber ID. Refer to the documentation about Subscriber ID's. -->
     <SubscriberId>1234567890</SubscriberId>
   </Global>
   <Extensions>
@@ -486,7 +486,7 @@ The following sample XML file demonstrates how to use Windows provisioning metad
             <Context>
               <!-- Adjust the access string to your APN. -->
               <AccessString>Contoso.Contoso1</AccessString>
-              <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the MSDN documentation about UserLogonCred's. -->
+              <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the documentation about UserLogonCred's. -->
               <UserLogonCred>
                 <UserName>user1</UserName>
                 <Password>password1</Password>
@@ -504,7 +504,7 @@ The following sample XML file demonstrates how to use Windows provisioning metad
             <Context>
               <!-- Adjust the access string to your APN. -->
               <AccessString>Contoso.Contoso2</AccessString>
-              <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the MSDN documentation about UserLogonCred. -->
+              <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the documentation about UserLogonCred. -->
               <UserLogonCred>
                 <UserName>user2</UserName>
                 <Password>password2</Password>
