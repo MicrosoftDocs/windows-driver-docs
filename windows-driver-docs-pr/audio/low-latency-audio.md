@@ -528,7 +528,7 @@ static struct
 };
 ```
 
-MSDN provides more in-depth information regarding these structures:
+See the following topics for more in-depth information regarding these structures:
 
 -   [**KSAUDIO\_PACKETSIZE\_CONSTRAINTS structure**](https://msdn.microsoft.com/library/windows/hardware/dn965561)
 -   [**KSAUDIO\_PACKETSIZE\_PROCESSINGMODE\_CONSTRAINT structure**](https://msdn.microsoft.com/library/windows/hardware/dn965562)

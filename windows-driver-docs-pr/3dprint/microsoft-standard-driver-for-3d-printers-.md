@@ -164,7 +164,7 @@ static const uint8_t PROGMEM ms3dprint_properties_descriptor[] = {
 };
 ```
 
-Information regarding the extended properties OS feature descriptor are in the *OS\_Desc\_Ext\_Prop.doc* file available on MSDN at [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?LinkId=533944).
+Information regarding the extended properties OS feature descriptor are in the *OS\_Desc\_Ext\_Prop.doc* file. See [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?LinkId=533944) for more information.
 
 ## Verifying the print capabilities
 

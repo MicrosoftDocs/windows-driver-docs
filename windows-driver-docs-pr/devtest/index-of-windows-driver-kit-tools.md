@@ -86,7 +86,7 @@ The information in the following tables describes the tools that are useful for 
 <td align="left"><p>%WindowsSdkDir%\tools\x86\graphedt.exe</p>
 <p>%WindowsSdkDir%\tools\x64\graphedt.exe</p></td>
 <td align="left"><p>Builds filter graphs to test streaming audio/video capture drivers.</p>
-<p>MSDN Documentation:</p>
+<p>Documentation:</p>
 <p>[Overview of GraphEdit](http://go.microsoft.com/fwlink/p/?linkid=9230)</p></td>
 </tr>
 <tr class="odd">
@@ -312,7 +312,7 @@ The information in the following tables describes the tools that are useful for 
 <td align="left"><p>Validates the conformance of an XPS file to the XPS and OPC specifications.</p>
 <p>For information about command options, type</p>
 <p><strong>isxps /?</strong> in a Command prompt window.</p>
-<p>For more information, see [isXPS Conformance Tool](http://go.microsoft.com/fwlink/p/?linkid=150004) in the Windows MSDN library.</p></td>
+<p>For more information, see [isXPS Conformance Tool](http://go.microsoft.com/fwlink/p/?linkid=150004).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Looksgood (Looksgood.exe)</p>
@@ -472,7 +472,7 @@ The information in the following tables describes the tools that are useful for 
 <td align="left"><p>%WindowsSdkDir%\tools\x64\DC2WMIParser.exe</p>
 <p>%WindowsSdkDir%\tools\x86\DC2WMIParser.exe</p></td>
 <td align="left"><p>DC2WMIParser is a tool that collects the WMI IRP records created by Driver Verifier and converts this log to a text file.</p>
-<p>MSDN Documentation:</p>
+<p>Documentation:</p>
 <p>[IRP Logging](http://go.microsoft.com/fwlink/p/?LinkId=698758)</p></td>
 </tr>
 <tr class="odd">

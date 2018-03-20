@@ -49,7 +49,7 @@ Microsoft provides a symbol server on the Internet that you can use to analyze t
 ## <span id="Integrate_WER_into_applications"></span><span id="integrate_wer_into_applications"></span><span id="INTEGRATE_WER_INTO_APPLICATIONS"></span>Integrate WER into applications
 
 
-Information on integrating WER into applications can be found on MSDN at [Using WER](http://msdn.microsoft.com/library/bb513616.aspx).
+For more information on integrating WER into applications, see [Using WER](http://msdn.microsoft.com/library/bb513616.aspx).
 
 ## <span id="related_topics"></span>Related topics
 
@@ -66,7 +66,7 @@ Information on integrating WER into applications can be found on MSDN at [Using 
 
 [Windows Error Reporting](http://msdn.microsoft.com/library/bb513641(vs.85).aspx)
 
-[MSDN Webcast: Windows Error Reporting (Level 200)](https://msevents.microsoft.com/CUI/EventDetail.aspx?EventId=1032314332)
+[Webcast: Windows Error Reporting (Level 200)](https://msevents.microsoft.com/CUI/EventDetail.aspx?EventId=1032314332)
 
 [VERSIONINFO resource](http://msdn.microsoft.com/library/aa381058.aspx)
 

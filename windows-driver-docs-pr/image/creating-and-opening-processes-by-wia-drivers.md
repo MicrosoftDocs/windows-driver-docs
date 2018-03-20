@@ -24,7 +24,7 @@ WIA drivers should not start other processes on the system. The two most importa
 
 The **LocalService** account does not have sufficient privileges to start other processes. Therefore, on Microsoft Windows Server 2003 and later, WIA drivers cannot create processes.
 
-If another process is required for device functionality, it is recommended that it be implemented as a system service or local COM server. See the MSDN documentation for specific security information related to the creation of system services and COM servers.
+If another process is required for device functionality, it is recommended that it be implemented as a system service or local COM server. See the Microsoft documentation for specific security information related to the creation of system services and COM servers.
 
  
 
