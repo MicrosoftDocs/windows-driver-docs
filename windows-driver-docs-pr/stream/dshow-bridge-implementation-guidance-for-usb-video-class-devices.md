@@ -10,59 +10,50 @@ ms.technology: windows-devices
 
 # Dshow bridge implementation guidance for UVC devices
 
-This document describes procedures for configuring Dshow Bridge for cameras and devices that comply with the USB Video Class specification. The platform uses [Microsoft OS Descriptors](https://msdn.microsoft.com/en-us/library/windows/hardware/gg463179.aspx) from the USB bus standard to configure Dshow Bridge. The Extended Properties OS Descriptors are an extension of USB standard descriptors and they are used by USB devices to return Windows specific device properties that are not enabled through standard specifications.
+This document describes procedures for configuring Dshow Bridge for cameras and devices that comply with the USB Video Class specification. The platform uses [Microsoft OS Descriptors](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors) from the USB bus standard to configure Dshow Bridge. The Extended Properties OS Descriptors are an extension of USB standard descriptors and they are used by USB devices to return Windows specific device properties that are not enabled through standard specifications.
 
 ## Overview
 
-The Microsoft Camera Capture stack comprises of a legacy framework stack called DirectShow and a Modern Framework called the Multimedia Foundation. The IHVs and OEMs have always had to write components for their devices to satisfy both pipelines.
+The Microsoft Camera Capture stack comprises of a legacy framework stack called DirectShow and a Modern Framework called the Multimedia Foundation. IHVs and OEMs have had to write components for their devices to satisfy both pipelines.
 
-DShow bridge was written with the intent of bridging the Dshow Pipeline with Media Foundation platform. This enables true universal driver so that device maker can just write driver that can run with MediaFoundation and DShow applications on all Windows 14393 or newer OS. With DShow bridge opt-in enabled, DShow application and sharing applications can share the same camera hardware concurrently.
+DShow bridge was written with the intent of bridging the Dshow Pipeline with Media Foundation platform. This enables true universal driver so that device maker can just write driver that can run with MediaFoundation and DShow applications on Windows version 1607 and later. With DShow bridge opt-in enabled, DShow application and sharing applications can share the same camera hardware concurrently.
 
-The IHVs or the OEMs might sometimes need an exemption from the policies governing Dshow pipeline. Partners can enable the following features using the OS Descriptors
+IHVs and OEMs may need an exemption from the policies governing the Dshow pipeline. Partners can enable the following features using the OS Descriptors:
 
 -   Opting In/Out of Dshow Bridge: - Device can opt into/ out of the Bridge to a pipeline better suited to their needs. The modern pipeline is more thoroughly documented and utilizes the features added to the OS over the multiple releases. The legacy pipeline, being in maintenance mode, lags behind.
 
 -   MJPEG decompression in Frame server: - Frame server is a service virtualizing a camera device. This enables the Pins from the device to be shared between multiple clients. Architectures having an optimized Media Foundation decompressor can use this feature to decode MJPEG in Frame Server. The Uncompressed translated media formats(YUY2) are offered to the multiple applications. The stream is only decompressed once for multiple possible clients. This improves the performance of applications. The following diagram shows the camera capture pipeline:
 
-<img src="media/image1.jpg" width="624" height="318" />
-
-
+![camera capture pipeline](images/camera-capture-pipeline.png)
 
 The OEMs and IHVs packaging their USB camera devices can use the USB bus standard’s Extended Properties OS Feature Descriptor specification to configure Dshow Bridge without resorting to any INF file changes for their UVC driver.
 
 The OS descriptors allow devices to define registry properties for USB devices or composite devices.
 
-> To configure Dshow Bridges using the USB OS Descriptors, the host software should create the following registry key for each USB device interface:
+To configure Dshow Bridges using the USB OS Descriptors, the host software should create the following registry key for each USB device interface:
 
-|                                                                                                                 |
-|-----------------------------------------------------------------------------------------------------------------|
-| HKLM\\SYSTEM\\CurrentControlSet\\Enum\\USB\\&lt;DeviceVID&PID&gt; \\&lt;*DeviceInstance*&gt;\\Device Parameters 
-                                                                                                                  
- DWORD: **EnableDshowRedirection**                                                                                |
+> HKLM\\SYSTEM\\CurrentControlSet\\Enum\\USB\\&lt;DeviceVID&PID&gt; \\&lt;*DeviceInstance*&gt;\\Device Parameters 
+>                                                                                                               
+> DWORD: **EnableDshowRedirection**                                                                                |
 
-> The Registry value **EnableDshowRedirection** is a Bit Mask value which can be used to configure Dshow Bridge as described by the table below.
+The Registry value **EnableDshowRedirection** is a Bit Mask value which can be used to configure Dshow Bridge as described by the table below.
 
-| Bit Mask   | Description                            | Remarks                                                                  |
-|------------|----------------------------------------|--------------------------------------------------------------------------|
-| 0x00000001 | Opt into Dshow bridge\*                | -   0 – Opt-out                                                          
-                                                                             
-   -   1 – Opt-In                                                            |
-| 0x00000002 | Enable MJPEG decoding in Frame Server⃰ | -   1 – Expose the translated uncompressed media types from MJPEG (YUY2) 
-                                                                             
-   -   0 – MJPEG compressed media type Exposed (No operation)                |
+| Bit Mask | Description | Remarks |
+|---|---|---|
+| 0x00000001 | Opt into Dshow bridge\* | -   0 – Opt-out  -   1 – Opt-In  |
+| 0x00000002 | Enable MJPEG decoding in Frame Server (see note below) | -   1 – Expose the translated uncompressed media types from MJPEG (YUY2) -   0 – MJPEG compressed media type Exposed (No operation) |
 
-> ⃰ Enable MJPEG decoding optimization in Frame Server. It enables MJPEG decoding once and only uncompressed media types are offered to applications*.*
+> [!NOTE] Enable MJPEG decoding optimization in Frame Server. It enables MJPEG decoding once and only uncompressed media types are offered to applications.
 
 ## Example Layouts
 
-
-> Below are examples listed using:
+Below are examples listed using:
 
 -   Microsoft OS extended descriptors specification 1.0
 
--   Microsoft OS 2.0 Descriptors specification
+-   Microsoft OS 2.0 descriptors specification
 
-### Microsoft OS extended property descriptors specification version 1.0.
+### Microsoft OS extended property descriptors specification version 1.0
 
 The extended properties OS descriptor has two components
 
@@ -72,7 +63,7 @@ The extended properties OS descriptor has two components
 
 #### Header Section
 
--   The header section describes the entire extended properties descriptor, including the total length and the version number.
+The header section describes the entire extended properties descriptor, including the total length and the version number.
 
 | Offset | Field      | Size (bytes) | Value      | Description                     |
 |--------|------------|--------------|------------|---------------------------------|
@@ -90,13 +81,13 @@ The USB HID device’s extended property OS descriptor has one custom property s
 | 0      | dwSize               | 4       | 0x00000042 (66 Bytes for this property)   |
 | 4      | dwPropertyDataType   | 4       | 0x00000004 (REG\_DWORD\_LITTLE\_ENDIAN)   |
 | 8      | wPropertyNameLength  | 2       | 0x0030                                    |
-| 10     | bPropertyName        | 48      | “EnableDshowRedirection” (Unicode string) |
+| 10     | bPropertyName        | 48      | **EnableDshowRedirection** (Unicode string) |
 | 58     | dwPropertyDataLength | 4       | 0x00000004 (Sizeof(DWORD))                |
 | 62     | bPropertyData        | 4       | 0x00000001 (DWORD data)                   |
 
-### Microsoft OS 2.0 Descriptors specification
+### Microsoft OS 2.0 descriptors specification
 
-This example demonstrates how Microsoft 2.0 descriptor sets can be used to provide a single DWORD registry value of “EnableDshowRedirection” that applies to Windows versions
+This example demonstrates how Microsoft 2.0 descriptor sets can be used to provide a single DWORD registry value of **EnableDshowRedirection** that applies to Windows versions.
 
 #### Custom Property Section
 
