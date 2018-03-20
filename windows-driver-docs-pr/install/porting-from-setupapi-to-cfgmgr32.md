@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Porting code from SetupApi to CfgMgr32
 
 
-This topic provides code examples that show how to port code that uses Setupapi.dll functionality to use Cfgmgr32.dll instead. Porting your code allows you to run your code on the Universal Windows Platform (UWP), which does not support SetupApi. A subset of CfgMgr32 is supported on UWP, specifically functionality exposed through the api-ms-win-devices-config-l1-1-0.dll API set. To see a list of functions in this API set, please refer to [Windows API Sets](https://msdn.microsoft.com/library/windows/desktop/hh802935).
+This topic provides code examples that show how to port code that uses Setupapi.dll functionality to use Cfgmgr32.dll instead. Porting your code allows you to run your code on the Universal Windows Platform (UWP), which does not support SetupApi. A subset of CfgMgr32 is supported on UWP, specifically functionality exposed through the api-ms-win-devices-config-l1-1-1.dll API set. To see a list of functions in this API set, please refer to [Windows API Sets](https://msdn.microsoft.com/library/windows/desktop/hh802935).
 
 The following sections include code examples that applications would typically use.
 
