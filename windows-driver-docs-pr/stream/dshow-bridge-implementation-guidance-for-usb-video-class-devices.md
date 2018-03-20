@@ -1,6 +1,6 @@
 ---
-title: Dshow bridge implementation guidance for UVC devices
-description: Provides Dshow bridge implementation guidance for UVC devices.
+title: DShow Bridge implementation guidance for UVC devices
+description: Provides DShow Bridge implementation guidance for UVC devices.
 ms.author: windowsdriverdev
 ms.date: 03/19/2018
 ms.topic: article
@@ -8,42 +8,42 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Dshow bridge implementation guidance for UVC devices
+# DShow Bridge implementation guidance for UVC devices
 
-This document describes procedures for configuring Dshow Bridge for cameras and devices that comply with the USB Video Class specification. The platform uses [Microsoft OS Descriptors](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors) from the USB bus standard to configure Dshow Bridge. The Extended Properties OS Descriptors are an extension of USB standard descriptors and they are used by USB devices to return Windows specific device properties that are not enabled through standard specifications.
+This document describes procedures for configuring DShow Bridge for cameras and devices that comply with the USB Video Class specification. The platform uses [Microsoft OS Descriptors](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors) from the USB bus standard to configure DShow Bridge. The Extended Properties OS Descriptors are an extension of USB standard descriptors and they are used by USB devices to return Windows specific device properties that are not enabled through standard specifications.
 
 ## Overview
 
 The Microsoft Camera Capture stack comprises of a legacy framework stack called DirectShow and a Modern Framework called the Multimedia Foundation. IHVs and OEMs have had to write components for their devices to satisfy both pipelines.
 
-DShow bridge was written with the intent of bridging the Dshow Pipeline with Media Foundation platform. This enables true universal driver so that device maker can just write driver that can run with MediaFoundation and DShow applications on Windows version 1607 and later. With DShow bridge opt-in enabled, DShow application and sharing applications can share the same camera hardware concurrently.
+DShow Bridge was written with the intent of bridging the DShow pipeline with Media Foundation platform. This enables true universal drivers so that device maker can just write drivers that can run with MediaFoundation and DShow applications on Windows version 1607 and later. With DShow Bridge opt-in enabled, DShow application and sharing applications can share the same camera hardware concurrently.
 
-IHVs and OEMs may need an exemption from the policies governing the Dshow pipeline. Partners can enable the following features using the OS Descriptors:
+IHVs and OEMs may need an exemption from the policies governing the DShow pipeline. Partners can enable the following features using the OS Descriptors:
 
--   Opting In/Out of Dshow Bridge: - Device can opt into/ out of the Bridge to a pipeline better suited to their needs. The modern pipeline is more thoroughly documented and utilizes the features added to the OS over the multiple releases. The legacy pipeline, being in maintenance mode, lags behind.
+-   **Opting in or out of DShow Bridge**: Device can opt in or out of the Bridge to a pipeline better suited to their needs. The modern pipeline is more thoroughly documented and utilizes the features added to the OS over the multiple releases. The legacy pipeline, being in maintenance mode, lags behind.
 
--   MJPEG decompression in Frame server: - Frame server is a service virtualizing a camera device. This enables the Pins from the device to be shared between multiple clients. Architectures having an optimized Media Foundation decompressor can use this feature to decode MJPEG in Frame Server. The Uncompressed translated media formats(YUY2) are offered to the multiple applications. The stream is only decompressed once for multiple possible clients. This improves the performance of applications. The following diagram shows the camera capture pipeline:
+-   **MJPEG decompression in Frame server**: Frame server is a service virtualizing a camera device. This enables the Pins from the device to be shared between multiple clients. Architectures having an optimized Media Foundation decompressor can use this feature to decode MJPEG in Frame Server. The Uncompressed translated media formats(YUY2) are offered to the multiple applications. The stream is only decompressed once for multiple possible clients. This improves the performance of applications. The following diagram shows the camera capture pipeline:
 
 ![camera capture pipeline](images/camera-capture-pipeline.png)
 
-The OEMs and IHVs packaging their USB camera devices can use the USB bus standard’s Extended Properties OS Feature Descriptor specification to configure Dshow Bridge without resorting to any INF file changes for their UVC driver.
+The OEMs and IHVs packaging their USB camera devices can use the USB bus standard’s Extended Properties OS Feature Descriptor specification to configure DShow Bridge without resorting to any INF file changes for their UVC driver.
 
 The OS descriptors allow devices to define registry properties for USB devices or composite devices.
 
-To configure Dshow Bridges using the USB OS Descriptors, the host software should create the following registry key for each USB device interface:
+To configure DShow Bridges using the USB OS Descriptors, the host software should create the following registry key for each USB device interface:
 
 > HKLM\\SYSTEM\\CurrentControlSet\\Enum\\USB\\&lt;DeviceVID&PID&gt; \\&lt;*DeviceInstance*&gt;\\Device Parameters 
 >                                                                                                               
-> DWORD: **EnableDshowRedirection**                                                                                |
+> DWORD: **EnableDshowRedirection**
 
-The Registry value **EnableDshowRedirection** is a Bit Mask value which can be used to configure Dshow Bridge as described by the table below.
+The Registry value **EnableDshowRedirection** is a Bit Mask value which can be used to configure DShow Bridge as described by the table below.
 
 | Bit Mask | Description | Remarks |
 |---|---|---|
-| 0x00000001 | Opt into Dshow bridge\* | -   0 – Opt-out  -   1 – Opt-In  |
+| 0x00000001 | Opt into DShow Bridge\* | -   0 – Opt-out  -   1 – Opt-In  |
 | 0x00000002 | Enable MJPEG decoding in Frame Server (see note below) | -   1 – Expose the translated uncompressed media types from MJPEG (YUY2) -   0 – MJPEG compressed media type Exposed (No operation) |
 
-> [!NOTE] Enable MJPEG decoding optimization in Frame Server. It enables MJPEG decoding once and only uncompressed media types are offered to applications.
+[!NOTE] Enable MJPEG decoding optimization in Frame Server. It enables MJPEG decoding once and only uncompressed media types are offered to applications.
 
 ## Example Layouts
 
@@ -160,7 +160,7 @@ UCHAR Example2\_MSOS20DescriptorSetForFutureWindows\[0x48\] =
 }
 ```                                                                                           
                                                                                              
-*0x00000003:- Dshow Bridge is enabled and MJPEG is decoded in FrameServer i.e. the Source*
+*0x00000003:- DShow Bridge is enabled and MJPEG is decoded in FrameServer i.e. the Source*
 
 ### Resources
 
