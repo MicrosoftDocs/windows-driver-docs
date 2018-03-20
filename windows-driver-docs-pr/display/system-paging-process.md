@@ -46,7 +46,7 @@ Here is how the setup is done:
 2.  The allocations are committed to a memory segment.
 3.  Multiple [*UpdatePageTable*](https://msdn.microsoft.com/library/windows/hardware/ff560815) paging operations are issued to the driver to initialize the page table entries.
 
-As an example of the paging process virtual address space initialization, letâ€™s consider the case with the following parameters:
+As an example of the paging process virtual address space initialization, let's consider the case with the following parameters:
 
 -   Page size is 4096 bytes
 -   Paging process virtual address space is 1 GB
