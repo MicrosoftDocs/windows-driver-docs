@@ -32,19 +32,19 @@ The OS descriptors allow devices to define registry properties for USB devices o
 
 To configure DShow Bridges using the USB OS Descriptors, the host software should create the following registry key for each USB device interface:
 
-> HKLM\\SYSTEM\\CurrentControlSet\\Enum\\USB\\&lt;DeviceVID&PID&gt; \\&lt;*DeviceInstance*&gt;\\Device Parameters 
->                                                                                                               
+> HKLM\\SYSTEM\\CurrentControlSet\\Enum\\USB\\&lt;DeviceVID&PID&gt; \\&lt;*DeviceInstance*&gt;\\Device Parameters
+>
 > DWORD: **EnableDshowRedirection**
 
 The **EnableDshowRedirection** registry value is a bit mask value which can be used to configure DShow Bridge as described by the table below.
 
 | Bit mask | Description | Remarks |
 |---|---|---|
-| 0x00000001 | Opt into DShow Bridge\* | -   0 – Opt-out  -   1 – Opt-In  |
-| 0x00000002 | Enable MJPEG decoding in Frame Server (see note below) | -   1 – Expose the translated uncompressed media types from MJPEG (YUY2) -   0 – MJPEG compressed media type Exposed (No operation) |
+| 0x00000001 | Opt into DShow Bridge | 0 – Opt-out<br>1 – Opt-in  |
+| 0x00000002 | Enable MJPEG decoding in Frame Server (see note below) | 0 – MJPEG compressed media type Exposed (no operation)<br>1 – Expose the translated uncompressed media types from MJPEG (YUY2) |
 
-> [!NOTE] 
-> Enable MJPEG decoding optimization in Frame Server. It enables MJPEG decoding once and only uncompressed media types are offered to applications.
+> [!NOTE]
+> Enables MJPEG decoding once and only uncompressed media types are offered to applications.
 
 ## Example Layouts
 
@@ -70,8 +70,8 @@ The header section describes the entire extended properties descriptor, includin
 |--------|------------|--------------|------------|---------------------------------|
 | 0      | dwLength   | 4            | 0x0000004c | 76 decimal                      |
 | 4      | bcdVersion | 2            | 0x0100     | Version 1.0                     |
-| 6      | wIndex     | 2            | 0x005      | Extended Property OS descriptor |
-| 8      | wCount     | 2            | 0x0001     | 1 custom property               |
+| 6      | wIndex     | 2            | 0x005      | Extended property OS descriptor |
+| 8      | wCount     | 2            | 0x0001     | One custom property             |
 
 #### Custom Property Section
 
@@ -79,7 +79,7 @@ The USB HID device’s extended property OS descriptor has one custom property s
 
 | Offset | Field | Size (bytes) | Value |
 |--------|----------------------|---------|-------------------------------------------|
-| 0      | dwSize               | 4       | 0x00000042 (66 Bytes for this property)   |
+| 0      | dwSize               | 4       | 0x00000042 (66 bytes for this property)   |
 | 4      | dwPropertyDataType   | 4       | 0x00000004 (REG\_DWORD\_LITTLE\_ENDIAN)   |
 | 8      | wPropertyNameLength  | 2       | 0x0030                                    |
 | 10     | bPropertyName        | 48      | **EnableDshowRedirection** (Unicode string) |
@@ -94,7 +94,7 @@ This example demonstrates how Microsoft 2.0 descriptor sets can be used to provi
 
 | Offset | Field | Size (bytes) | Value |
 |--------|----------------------|----------|-----------------------------------------|
-| 0      | wLength              | 2        | Length in bytes of this Descriptor      |
+| 0      | wLength              | 2        | Length in bytes of this descriptor      |
 | 4      | wDescriptorType      | 2        | 0x00000004 (REG\_DWORD\_LITTLE\_ENDIAN) |
 | 8      | wPropertyDataType    | 2        | 0x0030                                  |
 |        | wPropertyNameLength  | 2        |                                         |
@@ -104,63 +104,40 @@ This example demonstrates how Microsoft 2.0 descriptor sets can be used to provi
 
 
 ```
-UCHAR Example2\_MSOS20DescriptorSetForFutureWindows\[0x48\] =                              
-{                                                                                            
-//                                                                                           
-// Microsoft OS 2.0 Descriptor Set Header                                                   
-//                                                                                          
-                                                                                             
-0x0A, 0x00, // wLength - 12 bytes                                                       
-                                                                                             
-0x00, 0x00, // MSOS20\_SET\_HEADER\_DESCRIPTOR                                          
-                                                                                             
-0x00, 0x00, 0x0?, 0x06, // dwWindowsVersion – 0x06030000 for Future Windows Version         
-                                                                                             
-0x4A, 0x00, // wTotalLength – 72 bytes                                                      
-                                                                                             
-//                                                                          
-// Microsoft OS 2.0 Registry Value Feature Descriptor                                       
-//                                                                                          
-                                                                                             
- 0x3E, 0x00, // wLength - 62 bytes                                                           
-                                                                                             
- 0x04, 0x00, // wDescriptorType – 5 for Registry Property                                    
-                                                                                             
- 0x04, 0x00, // wPropertyDataType - 4 for REG\_DWORD                                         
-                                                                                             
- 0x30, 0x00, // wPropertyNameLength – 48 bytes                                               
-                                                                                             
- 0x45, 0x00, 0x6E, 0x00, // Property Name - “EnableDshowRedirection”                         
-                                                                                             
- 0x61, 0x00, 0x62, 0x00,                                                                     
-                                                                                             
- 0x6C, 0x00, 0x65, 0x00,                                                                     
-                                                                                             
- 0x44, 0x00, 0x73, 0x00,                                                                     
-                                                                                             
- 0x68, 0x00, 0x6F, 0x00,                                                                     
-                                                                                             
- 0x77, 0x00, 0x52, 0x00,                                                                     
-                                                                                             
- 0x65, 0x00, 0x64, 0x00,                                                                     
-                                                                                             
- 0x69, 0x00, 0x72, 0x00,                                                                     
-                                                                                             
- 0x65, 0x00, 0x63, 0x00,                                                                     
-                                                                                             
- 0x74, 0x00, 0x69, 0x00,                                                                     
-                                                                                             
- 0x6F, 0x00, 0x6E, 0x00,                                                                     
-                                                                                             
- 0x00, 0x00, 0x00, 0x00,                                                                     
-                                                                                             
- 0x04, 0x00, // wPropertyDataLength – 4 bytes                                                
-                                                                                             
- 0x00, 0x00, 0x00, 0x00 // PropertyData – 0x00000003                                         
-                                                                                             
+UCHAR Example2\_MSOS20DescriptorSetForFutureWindows\[0x48\] =
+{
+    //
+    // Microsoft OS 2.0 Descriptor Set Header
+    //
+    0x0A, 0x00,                 // wLength - 12 bytes
+    0x00, 0x00,                 // MSOS20\_SET\_HEADER\_DESCRIPTOR
+    0x00, 0x00, 0x0?, 0x06,     // dwWindowsVersion – 0x06030000 for Future Windows Version
+    0x4A, 0x00,                 // wTotalLength – 72 bytes
+
+    //
+    // Microsoft OS 2.0 Registry Value Feature Descriptor
+    //
+    0x3E, 0x00,                 // wLength - 62 bytes
+    0x04, 0x00,                 // wDescriptorType – 5 for Registry Property
+    0x04, 0x00,                 // wPropertyDataType - 4 for REG\_DWORD
+    0x30, 0x00,                 // wPropertyNameLength – 48 bytes
+    0x45, 0x00, 0x6E, 0x00,     // Property Name - "EnableDshowRedirection"
+    0x61, 0x00, 0x62, 0x00,
+    0x6C, 0x00, 0x65, 0x00,
+    0x44, 0x00, 0x73, 0x00,
+    0x68, 0x00, 0x6F, 0x00,
+    0x77, 0x00, 0x52, 0x00,
+    0x65, 0x00, 0x64, 0x00,
+    0x69, 0x00, 0x72, 0x00,
+    0x65, 0x00, 0x63, 0x00,
+    0x74, 0x00, 0x69, 0x00,
+    0x6F, 0x00, 0x6E, 0x00,
+    0x00, 0x00, 0x00, 0x00,
+    0x04, 0x00,                 // wPropertyDataLength – 4 bytes
+    0x00, 0x00, 0x00, 0x00      // PropertyData – 0x00000003
 }
-```                                                                                           
-                                                                                             
+```
+
 *0x00000003:- DShow Bridge is enabled and MJPEG is decoded in FrameServer i.e. the Source*
 
 ### Resources
