@@ -19,7 +19,7 @@ ms.technology: windows-devices
 ## <a href="" id="ddk-avstream-samples-ksg"></a>
 
 
-Source code and descriptions of two sample AVStream minidrivers are provided in the MSDN Code Gallery:
+Source code and descriptions of two sample AVStream minidrivers are provided in the Windows Driver Kit samples download:
 
 <a href="" id="avstream-filter-centric-simulated-capture-driver--avssamp-"></a>[AVStream Filter-Centric Simulated Capture Driver (Avssamp)](http://go.microsoft.com/fwlink/p/?linkid=256084)  
 A pin-centric capture driver for a simulated piece of hardware that shows how to implement DMA through AVStream.
