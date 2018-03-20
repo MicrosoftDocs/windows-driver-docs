@@ -10,13 +10,13 @@ ms.technology: windows-devices
 
 # DShow Bridge implementation guidance for UVC devices
 
-This document describes procedures for configuring DShow Bridge for cameras and devices that comply with the USB Video Class specification. The platform uses [Microsoft OS Descriptors](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors) from the USB bus standard to configure DShow Bridge. The Extended Properties OS Descriptors are an extension of USB standard descriptors and they are used by USB devices to return Windows specific device properties that are not enabled through standard specifications.
+This topic provides implementation guidance for configuring DShow Bridge for cameras and devices that comply with the USB Video Class (UVC) specification. The platform uses [Microsoft OS Descriptors](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors) from the USB bus standard to configure DShow Bridge. The Extended Properties OS Descriptors are an extension of USB standard descriptors and are used by USB devices to return Windows specific device properties that are not enabled through standard specifications.
 
 ## Overview
 
-The Microsoft Camera Capture stack comprises of a legacy framework stack called DirectShow and a Modern Framework called the Multimedia Foundation. IHVs and OEMs have had to write components for their devices to satisfy both pipelines.
+The Microsoft Camera Capture stack comprises of a legacy framework stack called DirectShow and a modern framework called the Multimedia Foundation. IHVs and OEMs have had to write components for their devices to satisfy both pipelines.
 
-DShow Bridge was written with the intent of bridging the DShow pipeline with Media Foundation platform. This enables true universal drivers so that device maker can just write drivers that can run with MediaFoundation and DShow applications on Windows version 1607 and later. With DShow Bridge opt-in enabled, DShow application and sharing applications can share the same camera hardware concurrently.
+DShow Bridge was written with the intent of bridging the DShow pipeline with Media Foundation platform. This enables true universal drivers so IHVs and OEMs can write drivers that can run with MediaFoundation and DShow applications on Windows version 1607 and later. With DShow Bridge opt-in enabled, a DShow application and sharing applications can share the same camera hardware concurrently.
 
 IHVs and OEMs may need an exemption from the policies governing the DShow pipeline. Partners can enable the following features using the OS Descriptors:
 
@@ -36,18 +36,19 @@ To configure DShow Bridges using the USB OS Descriptors, the host software shoul
 >                                                                                                               
 > DWORD: **EnableDshowRedirection**
 
-The Registry value **EnableDshowRedirection** is a Bit Mask value which can be used to configure DShow Bridge as described by the table below.
+The **EnableDshowRedirection** registry value is a bit mask value which can be used to configure DShow Bridge as described by the table below.
 
-| Bit Mask | Description | Remarks |
+| Bit mask | Description | Remarks |
 |---|---|---|
 | 0x00000001 | Opt into DShow Bridge\* | -   0 – Opt-out  -   1 – Opt-In  |
 | 0x00000002 | Enable MJPEG decoding in Frame Server (see note below) | -   1 – Expose the translated uncompressed media types from MJPEG (YUY2) -   0 – MJPEG compressed media type Exposed (No operation) |
 
-[!NOTE] Enable MJPEG decoding optimization in Frame Server. It enables MJPEG decoding once and only uncompressed media types are offered to applications.
+> [!NOTE] 
+> Enable MJPEG decoding optimization in Frame Server. It enables MJPEG decoding once and only uncompressed media types are offered to applications.
 
 ## Example Layouts
 
-Below are examples listed using:
+Examples are included below for the following specifications:
 
 -   Microsoft OS extended descriptors specification 1.0
 
