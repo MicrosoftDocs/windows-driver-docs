@@ -313,7 +313,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 -   No special requirements for testing.
 
-    **Note**  The Simple I/O plug-in for webcam devices has a dependency on the MFPlat.dll file, which is not available on versions of Windows that do not include Media Player and related technologies, for example Windows 7 N or Windows 7 KN. On these version of Windows, the Media Feature Pack must be installed. You can download the Media Feature Pack from MSDN. For more information, see [KB Article 968211](http://go.microsoft.com/fwlink/p/?linkid=266437).
+    **Note**  The Simple I/O plug-in for webcam devices has a dependency on the MFPlat.dll file, which is not available on versions of Windows that do not include Media Player and related technologies, for example Windows 7 N or Windows 7 KN. On these version of Windows, the Media Feature Pack must be installed. The Media Feature Pack is available for download. For more information, see [KB Article 968211](http://go.microsoft.com/fwlink/p/?linkid=266437).
 
      
 

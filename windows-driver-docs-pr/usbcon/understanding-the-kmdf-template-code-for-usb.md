@@ -386,7 +386,7 @@ MyUSBDriver_EvtDevicePrepareHardware(
         //
         // Specifying a client contract version of 602 enables us to query for
         // and use the new capabilities of the USB driver stack for Windows 8.
-        // It also implies that we conform to rules mentioned in MSDN
+        // It also implies that we conform to rules mentioned in the documentation
         // documentation for WdfUsbTargetDeviceCreateWithParameters.
         //
         WDF_USB_DEVICE_CREATE_CONFIG_INIT(&createParams,

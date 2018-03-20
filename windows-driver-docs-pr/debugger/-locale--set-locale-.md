@@ -58,7 +58,7 @@ Specifies the locale that you want. If you omit this parameter, the debugger dis
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For more information about locale, see the **setlocale** routine in the MSDN Library.
+For more information about locale, see the **setlocale** routine reference page.
 
 Remarks
 -------

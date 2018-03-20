@@ -50,7 +50,7 @@ The Web Services for Devices (WSD) Installed construct indicates whether a print
 
  
 
-The XPath language, implemented in Windows beginning with Microsoft XML (MSXML) 2.6, provides a convenient way to specify elements in an XML file. See the XML Developer's Guide in the Windows SDK and [XPath Reference](http://go.microsoft.com/fwlink/p/?linkid=33165) in the MSDN Library.
+The XPath language, implemented in Windows beginning with Microsoft XML (MSXML) 2.6, provides a convenient way to specify elements in an XML file. See the XML Developer's Guide in the Windows SDK and [XPath Reference](http://go.microsoft.com/fwlink/p/?linkid=33165) for more information.
 
 The behavior of an Installed construct depends on the definition of its parent nodes. If an Installed construct is specified without the use of a Parameter, the schema will always exist when queried. If an Installed construct is specified with the use of a Parameter, the schema will exist only if the associated Parameter value is found in the current WSD device queries. The software that is making the queries must be able to handle the case where the Installed schema is not returned.
 

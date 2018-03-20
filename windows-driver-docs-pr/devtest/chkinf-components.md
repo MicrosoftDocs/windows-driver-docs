@@ -52,7 +52,7 @@ ChkINF consists of a variety of Perl scripts and support applications. The follo
 <td align="left"><p>ChkSD.exe</p></td>
 <td align="left"><p>tools\chkinf\i386</p></td>
 <td align="left"><p>A support application that is called by the parsing modules to validate any security descriptors that are specified within an INF file.</p>
-<p>For more information, see [Specifying a Security Descriptor From an INF File](http://go.microsoft.com/fwlink/p/?linkid=151340) in the MSDN documentation.</p></td>
+<p>For more information, see [Specifying a Security Descriptor From an INF File](http://go.microsoft.com/fwlink/p/?linkid=151340).</p></td>
 </tr>
 </tbody>
 </table>

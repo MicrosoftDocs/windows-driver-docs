@@ -10,7 +10,7 @@ ms.technology: windows-devices
 
 # USB Video Class (UVC) driver implementation checklist
 
-## Step 1: Get started with USB Video Class (UVC) using documentation from USB.org and MSDN
+## Step 1: Get started with USB Video Class (UVC) using documentation from USB.org and Microsoft
 
 Use these links to get acquainted with UVC:
 
@@ -18,7 +18,7 @@ Use these links to get acquainted with UVC:
 
 - Download the [USB Video Class 1.5](http://www.usb.org/developers/docs/devclass_docs/USB_Video_Class_1_5.zip) documentation from USB.org
 
-- Review the [USB Video Class driver overview](https://msdn.microsoft.com/windows/hardware/drivers/stream/usb-video-class-driver-overview) on MSDN 
+- Review the [USB Video Class driver overview](https://msdn.microsoft.com/windows/hardware/drivers/stream/usb-video-class-driver-overview) topic 
 
 ## Step 2: Implement the platform-supplied Device MFT
 

@@ -259,9 +259,9 @@ Windows accepts an XML-based provisioning file from you. A sample version of the
 <?xml version="1.0" encoding="utf-8"?>
 <CarrierProvisioning xmlns="http://www.microsoft.com/networking/CarrierControl/v1">
     <Global>
-        <!-- Adjust the Carrier ID to fit match the Service Number in service metadata. Refer to the MSDN documentation about CarrierId. -->
+        <!-- Adjust the Carrier ID to fit match the Service Number in service metadata. Refer to the documentation about CarrierId. -->
         <CarrierId>{11111111-1111-1111-1111-111111111111}</CarrierId>
-        <!-- Adjust the Susbscriber ID. Refer to the MSDN documentation about Subscriber ID's. -->
+        <!-- Adjust the Susbscriber ID. Refer to the documentation about Subscriber ID's. -->
         <SubscriberId>1234567890</SubscriberId>
     </Global>
     <MBNProfiles>
@@ -274,7 +274,7 @@ Windows accepts an XML-based provisioning file from you. A sample version of the
             <Context>
                 <!-- Adjust the access string to your APN. -->
                 <AccessString>Contoso.Contoso</AccessString>
-                <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the MSDN documentation about UserLogonCred's. -->
+                <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the documentation about UserLogonCred's. -->
                 <UserLogonCred>
                     <UserName>user</UserName>
                     <Password>password</Password>
