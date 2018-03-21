@@ -92,9 +92,9 @@ See the following for information about keyboard layouts:
 
 -   Keyboard header file, kdb.h, in the Windows Driver Development Kit (DDK), which documents general information about keyboard layouts.
 
--   Sample keyboard [layouts](http://go.microsoft.com/fwlink/p/?linkid=256128) in the MSDN Code Gallery.
+-   Sample keyboard [layouts](http://go.microsoft.com/fwlink/p/?linkid=256128).
 
-To visualize the layout of a specific keyboard, please review to the “Windows Keyboard Layout” article in MSDN.
+To visualize the layout of a specific keyboard, see [Windows Keyboard Layouts](https://docs.microsoft.com/globalization/windows-keyboard-layouts).
 
 For additional details around the keyboard layout, visit Control Panel\\Clock, Language, and Region\\Language.
 
@@ -176,8 +176,9 @@ Kbfiltr is designed to be used with Kbdclass, the system class driver for keyboa
 
 For more information about Kbfiltr operation, see the following:
 
-The ntddkbd.h WDK header file. 
-The sample [Kbfiltr](http://go.microsoft.com/fwlink/p/?linkid=256125) source code in the MSDN Code Gallery. 
+* The ntddkbd.h WDK header file. 
+
+* The sample [Kbfiltr](http://go.microsoft.com/fwlink/p/?linkid=256125) source code. 
 
 ### Kbfiltr IOCTLs
 

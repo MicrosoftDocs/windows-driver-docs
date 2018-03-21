@@ -18,7 +18,7 @@ ms.technology: windows-devices
 
 This section describes how to use the Event Tracing for Windows (ETW) kernel-mode API to add event tracing to kernel-mode drivers. The ETW kernel-mode API was introduced with Windows Vista and is not supported in earlier operating systems. Use [WPP Software Tracing](wpp-software-tracing.md) or [WMI Event Tracing](https://msdn.microsoft.com/library/windows/hardware/ff566350) if your driver needs to support trace capability in Windows 2000 and later.
 
-**Tip**  To view sample code that shows how to implement ETW using the Windows Driver Kit (WDK) 8.1 and Visual Studio, see the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109) in the MSDN Code Gallery.
+**Tip**  To view sample code that shows how to implement ETW using the Windows Driver Kit (WDK) 8.1 and Visual Studio, see the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109).
 
  
 
@@ -172,7 +172,7 @@ You can include this step as part of your build process in a couple of ways:
 -   Adding the message compiler task to the driver project file (as shown in the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109)).
 -   Using Visual Studio to add the instrumentation manifest and to configure the Message Compiler properties.
 
-**Adding a message compiler task to the project file** For an example of how you can include the message compiler in the build process, look at the project file for the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109) in the MSDN Code Gallery. In the Eventdrv.vcxproj file, there is a **&lt;MessageCompile&gt;** section that calls the message compiler. The message compiler uses the manifest file (evntdrv.xml) as input to generate the header file evntdrvEvents.h. This section also specifies the paths for the generated RC files and enables the kernel mode logging macros. You can copy this section and add it to your driver project file (.vcxproj).
+**Adding a message compiler task to the project file** For an example of how you can include the message compiler in the build process, look at the project file for the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109). In the Eventdrv.vcxproj file, there is a **&lt;MessageCompile&gt;** section that calls the message compiler. The message compiler uses the manifest file (evntdrv.xml) as input to generate the header file evntdrvEvents.h. This section also specifies the paths for the generated RC files and enables the kernel mode logging macros. You can copy this section and add it to your driver project file (.vcxproj).
 
 ```XML
   

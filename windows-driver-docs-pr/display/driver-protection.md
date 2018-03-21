@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Driver protection
 
 
-Along with every virtual address, the video memory manager allows independent hardware vendors (IHVs) to define a driver / hardware specific protection (i.e. page table entry encoding) that is associated specifically with that virtual address. Think about driver protection as extra bit in the page table entry that the video memory manager doesnâ€™t know about but that the driver must control in order for the graphics processing unit (GPU) to access memory in an optimum way.
+Along with every virtual address, the video memory manager allows independent hardware vendors (IHVs) to define a driver / hardware specific protection (i.e. page table entry encoding) that is associated specifically with that virtual address. Think about driver protection as extra bit in the page table entry that the video memory manager doesn't know about but that the driver must control in order for the graphics processing unit (GPU) to access memory in an optimum way.
 
 **Note**  Driver protection is optional and can be left at zero on any platform that doesn't require this functionality.
 
@@ -27,7 +27,7 @@ Driver protection only applies to level 0 page table entries and will be set to 
 ## <span id="Paging_and_unique_driver_protection"></span><span id="paging_and_unique_driver_protection"></span><span id="PAGING_AND_UNIQUE_DRIVER_PROTECTION"></span>Paging and unique driver protection
 
 
-When paging an allocation in or out of a memory segment, the video memory manager assigns a temporary virtual address from the system device address space for the purpose of transferring the allocationâ€™s content. When creating this mapping, the driver protection related to the allocation is ambiguous since there could exist multiple mapping in various process address space with different driver protection.
+When paging an allocation in or out of a memory segment, the video memory manager assigns a temporary virtual address from the system device address space for the purpose of transferring the allocation's content. When creating this mapping, the driver protection related to the allocation is ambiguous since there could exist multiple mapping in various process address space with different driver protection.
 
 Because of this, the video memory manager will specify a driver protection of zero for any system device mapping used for paging by default.
 

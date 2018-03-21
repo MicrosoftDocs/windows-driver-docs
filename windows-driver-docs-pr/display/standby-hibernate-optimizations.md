@@ -48,7 +48,7 @@ WDDM 1.2 drivers can take advantage of these optimizations by specifying which a
 
 Newer generations of discrete graphics adapters can be designed to refresh their memory when in standby (self refreshing VRAM). These adapters will benefit from these optimizations.
 
-Eviction will still be relevant for discrete graphics adapters that donâ€™t have the self-refreshing VRAM feature. In these cases, the performance optimization is to minimize the amount of data that is preserved. For example, unused data in video memory such as offered allocations, discarded allocations, and unused direct memory access (DMA) buffers can be discarded.
+Eviction will still be relevant for discrete graphics adapters that don't have the self-refreshing VRAM feature. In these cases, the performance optimization is to minimize the amount of data that is preserved. For example, unused data in video memory such as offered allocations, discarded allocations, and unused direct memory access (DMA) buffers can be discarded.
 
 This feature can yield these benefits:
 

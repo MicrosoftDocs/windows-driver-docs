@@ -18,7 +18,7 @@ Clients can use the ReadFile function to retrieve information from these data fi
 
 The following table shows the common data fields.
 
-For more information about the types shown in the type column, see [MSDN PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
+For more information about the types shown in the type column, see [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ For more information about the types shown in the type column, see [MSDN PROPVAR
 ## <span id="related_topics"></span>Related topics
 
 
-[MSDN PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
 
  
 

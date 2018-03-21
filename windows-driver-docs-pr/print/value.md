@@ -58,7 +58,7 @@ The WSD `Value` construct allows you to extend the bidi communications schema wi
 
  
 
-The XPath language is implemented in Windows and provides a convenient way to specify elements in an XML file. See the XML Developer's Guide in the Windows SDK and [XPath Reference](http://go.microsoft.com/fwlink/p/?linkid=33165) in the MSDN Library.
+The XPath language is implemented in Windows and provides a convenient way to specify elements in an XML file. See the XML Developer's Guide in the Windows SDK and [XPath Reference](http://go.microsoft.com/fwlink/p/?linkid=33165) for more information.
 
 The **xmllang** attribute is used only when the type attribute of the `Value` construct is either "BIDI\_STRING" or "BIDI\_TEXT".
 

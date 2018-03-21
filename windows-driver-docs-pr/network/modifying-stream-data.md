@@ -21,7 +21,7 @@ A callout can replace data in the stream with other data by blocking the data th
 
 For a callout driver to inject data into a data stream, it must first create an injection handle. This can be the same injection handle that is created for injecting modified packet data back into the network stack. See [Inspecting Packet and Stream Data](inspecting-packet-and-stream-data.md) for information about how to create an injection handle.
 
-For information about how to modify stream data, see the "Windows Filtering Platform Stream Edit Sample" in the [MSDN Hardware Samples](http://go.microsoft.com/fwlink/p/?LinkId=618052) code gallery.
+For information about how to modify stream data, see the "Windows Filtering Platform Stream Edit Sample" in the [Hardware Samples](http://go.microsoft.com/fwlink/p/?LinkId=618052) code gallery.
 
  
 

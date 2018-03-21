@@ -60,7 +60,7 @@ The KSPIN\_MEDIUM structure returned from either SRB\_GET\_STREAM\_INFO (for a S
 
 In addition to implementing mediums and medium GUIDs correctly, it is necessary to follow other guidelines to ensure processes can work with multiple filter graphs. The minidriver must not lock any hardware resources until the filter graph transitions to the **KSSTATE\_ACQUIRE** value of KSSTATE. This helps to ensure that two built, but not running filter graphs can coexist without interfering with one another.
 
-For more information about mediums, including how to implement them, see the [AVStream Simulated Hardware Sample Driver (AVSHwS)](http://go.microsoft.com/fwlink/p/?linkid=256083) in the MSDN Code Gallery.
+For more information about mediums, including how to implement them, see the [AVStream Simulated Hardware Sample Driver (AVSHwS)](http://go.microsoft.com/fwlink/p/?linkid=256083).
 
 **Note**  : When deriving a new minidriver from sample code in the Windows Driver Kit, you must generate new GUID values for the mediums to reflect the unique hardware topology of the device. Failure to do so can result in the mediums for one device colliding with the mediums that are defined for another device.
 

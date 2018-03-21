@@ -191,7 +191,7 @@ To check the current setting, use this command.
 !sym prompts
 ```
 
-For more information see [**!sym**](-sym.md) and [Firewalls and Proxy Servers](firewalls-and-proxy-servers.md) on MSDN.
+For more information see [**!sym**](-sym.md) and [Firewalls and Proxy Servers](firewalls-and-proxy-servers.md).
 
  
 
