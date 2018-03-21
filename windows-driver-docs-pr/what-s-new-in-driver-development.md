@@ -150,13 +150,13 @@ Universal Windows drivers also require a special kind of INF file called a *univ
 
 When you're ready, use the [InfVerif](https://msdn.microsoft.com/library/windows/hardware/dn929319) tool to test your driver's INF file. In addition to reporting INF syntax problems, the tool reports if the INF file will work with a Universal Windows driver.
 
-You can also find information about which APIs you can call from a Universal Windows driver. This information is located in the Requirements block at the bottom of MSDN reference pages.
+You can also find information about which APIs you can call from a Universal Windows driver. This information is located in the Requirements block at the bottom of driver reference pages.
 
 For example, you'll see a listing similar to this one that tells you if a given DDI is **Universal.**
 
 ![target platform set to universal in requirements block](targetplatform.png)
 
-For more info, see [Target platform on MSDN driver reference pages](https://msdn.microsoft.com/windows-drivers/develop/windows_10_editions_for_universal_drivers).
+For more info, see [Target platform on driver reference pages](https://msdn.microsoft.com/windows-drivers/develop/windows_10_editions_for_universal_drivers).
 
 ### Windows compatible hardware development boards
 

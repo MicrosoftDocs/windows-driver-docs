@@ -117,7 +117,7 @@ The Windows power management framework (PoFx) sends this notification when the c
 
 If the processor was executing a deep idle state, the PEP must not wait until it receives the complete notification to restore core context or notify the OS that core resources have been restored. The OS expects these resources to have been restored once the execute notification has completed. When the hypervisor is enabled, the PEP will only receive this notification upon exit from a platform idle state, and with the ProcessorState field set to PEP_PROCESSOR_IDLE_STATE_UNKNOWN. 
 
-When using the coordinated idle state interface, the OS uses the PEP_PPM_IDLE_COMPLETE_V2 structure which includes the CoordinatedStateCount and CoordinatedState fields with the list of coordinated idle states that will be exited by the idle transition. The PlatformState field will specify the deepest platform coordinated idle state thatâ€™s being exited, if any. Note that the set of coordinated idle states exited by this processor may be different from the set of coordinated idle states entered by it, if loose synchronization is used. 
+When using the coordinated idle state interface, the OS uses the PEP_PPM_IDLE_COMPLETE_V2 structure which includes the CoordinatedStateCount and CoordinatedState fields with the list of coordinated idle states that will be exited by the idle transition. The PlatformState field will specify the deepest platform coordinated idle state that's being exited, if any. Note that the set of coordinated idle states exited by this processor may be different from the set of coordinated idle states entered by it, if loose synchronization is used. 
 
 When not using the coordinated idle state interface, the OS uses the PEP_PPM_IDLE_COMPLETE structure. 
 
@@ -193,7 +193,7 @@ A pointer to a PEP_PPM_FEEDBACK_READ structure.
 
 The Windows power management framework (PoFx) sends this notification when it wants to query a feedback counter's current value. 
 
-This notification may be sent with interrupts disabled. If the counterâ€™s Affinitized field is set, this notification is executed on the target processor. Otherwise, this notification may be executed from any processor.
+This notification may be sent with interrupts disabled. If the counter's Affinitized field is set, this notification is executed on the target processor. Otherwise, this notification may be executed from any processor.
 
 For a PEP_NOTIFY_PPM_FEEDBACK_READ notification, the AcceptProcessorNotification routine may be called at IRQL = DISPATCH_LEVEL.
 
@@ -436,7 +436,7 @@ Data
 A pointer to a PEP_PPM_PLATFORM_STATE_RESIDENCIES structure.
  Informs the PEP that it should capture the actual accumulated time spent in each platform idle state since boot.
 
-The Windows power management framework (PoFx) sends this notification to the PEP to capture the actual accumulated time spent in each platform idle state since boot. As such, this query is only applicable to platforms where the underlying hardware may autonomously decide to enter a platform idle state different from that requested by the OS. The values returned are used for diagnostic purposes and identify when the OSâ€™s view of platform idle state residency differs significantly from what the platform actually achieved. 
+The Windows power management framework (PoFx) sends this notification to the PEP to capture the actual accumulated time spent in each platform idle state since boot. As such, this query is only applicable to platforms where the underlying hardware may autonomously decide to enter a platform idle state different from that requested by the OS. The values returned are used for diagnostic purposes and identify when the OS's view of platform idle state residency differs significantly from what the platform actually achieved. 
 
 Count specifies the number of elements in the States array, where the element index corresponds to platform idle state index. The PEP will fill each element with the matching state's actual residency and transition count. 
 

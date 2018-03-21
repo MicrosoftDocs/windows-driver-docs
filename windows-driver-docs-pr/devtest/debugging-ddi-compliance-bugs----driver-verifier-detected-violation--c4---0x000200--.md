@@ -136,7 +136,7 @@ FAULTING_SOURCE_LINE_NUMBER:  206
 
 ### Fixing the cause of the DDI compliance violation
 
-Fixing these bug checks that have Arg1 values in the range 0x00020000 to 0x00020022, generally consists of verifying the driver meets the API and DDI usage conditions described on the corresponding documentation on MSDN.
+Fixing these bug checks that have Arg1 values in the range 0x00020000 to 0x00020022, generally consists of verifying the driver meets the API and DDI usage conditions described in the corresponding documentation.
 
 In the example we've used here (0x20004), a memory allocation of any sort in the ISR is going to violate the IRQL rules set for the [**ExAllocatePoolWithTagPriority**](https://msdn.microsoft.com/library/windows/hardware/ff544523) routine.
 

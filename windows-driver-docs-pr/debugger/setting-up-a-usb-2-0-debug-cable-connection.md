@@ -149,7 +149,7 @@ In a case like this, you might still be able to establish kernel-mode debugging 
 
 ### <span id="software-setup"></span><span id="SOFTWARE_SETUP"></span>Additional Support
 
-For troubleshooting tips and detailed instructions on setting up kernel debugging over USB, see [Setting Up Kernel Debugging with USB 2.0](http://go.microsoft.com/fwlink/p?linkid=389435) in MSDN Blogs.
+For troubleshooting tips and detailed instructions on setting up kernel debugging over USB, see [Setting Up Kernel Debugging with USB 2.0](http://go.microsoft.com/fwlink/p?linkid=389435).
 
 ## <span id="related-topics"></span>Related topics
 

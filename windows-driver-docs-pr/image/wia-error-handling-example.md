@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Error Handling Example
 
 
-For an example of a driver that sends device status messages, please see the Extended WIA Monster Driver sample in the[WIA Driver Samples](http://go.microsoft.com/fwlink/p/?linkid=256210) in the MSDN Code Gallery. The sample illustrates how a simple error handler can be implemented.
+For an example of a driver that sends device status messages, please see the Extended WIA Monster Driver sample in the [WIA Driver Samples](http://go.microsoft.com/fwlink/p/?linkid=256210). The sample illustrates how a simple error handler can be implemented.
 
 ### Example: Error Handling Extension
 

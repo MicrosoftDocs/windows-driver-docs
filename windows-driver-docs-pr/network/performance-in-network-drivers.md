@@ -26,7 +26,7 @@ ms.technology: windows-devices
 
 Although the send and receive paths differ from driver to driver, there are some general rules for performance optimizations:
 
--   Optimize for the common paths. The Kernprof.exe tool is provided with the MSDN and IDW builds of Windows that extracts the needed information. The developer should look at the routines that consume the most CPU cycles and attempt to reduce the frequency of these routines being called or the time spent in these routines.
+-   Optimize for the common paths. The Kernprof.exe tool is provided with the developer and IDW builds of Windows that extracts the needed information. The developer should look at the routines that consume the most CPU cycles and attempt to reduce the frequency of these routines being called or the time spent in these routines.
 
 -   Reduce time spent in DPC so that the network adapter driver does not use excessive system resources, which would cause overall system performance to suffer.
 
