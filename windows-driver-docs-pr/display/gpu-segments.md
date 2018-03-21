@@ -39,7 +39,7 @@ In the DDI, physical memory references always take the form of a segment ID-segm
 ## <span id="Accessing_allocations_by_physical_address"></span><span id="accessing_allocations_by_physical_address"></span><span id="ACCESSING_ALLOCATIONS_BY_PHYSICAL_ADDRESS"></span>Accessing allocations by physical address
 
 
-GPU engines, which donâ€™t support GPU virtual addressing, need to access allocations through their physical addresses. This has implication on how an allocation gets assigned resources from a segment. Physical references imply that an allocation must be allocated either contiguously in a memory segment or occupy a contiguous range in the aperture segment.
+GPU engines, which don't support GPU virtual addressing, need to access allocations through their physical addresses. This has implication on how an allocation gets assigned resources from a segment. Physical references imply that an allocation must be allocated either contiguously in a memory segment or occupy a contiguous range in the aperture segment.
 
 To avoid unnecessary and expensive contiguous allocations, the kernel mode driver must explicitly identify allocations, which require to be accessed physically by a rendering engine, by setting the new [**DXGK\_ALLOCATIONINFOFLAGS2**](https://msdn.microsoft.com/library/windows/hardware/ff560970)::**AccessedPhysically** flag during allocation creation.
 

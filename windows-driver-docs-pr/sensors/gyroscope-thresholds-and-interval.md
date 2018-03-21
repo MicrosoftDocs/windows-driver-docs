@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 This topic provides information about the gyroscope thresholds and interval.
 
-The following table shows the default thresholds for the gyroscope. The default interval for the gyrometer is 10 Hz. For more information about the types shown in the type column, see [MSDN PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
+The following table shows the default thresholds for the gyroscope. The default interval for the gyrometer is 10 Hz. For more information about the types shown in the type column, see [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
 
 <table>
 <colgroup>
@@ -63,7 +63,7 @@ The following table shows the default thresholds for the gyroscope. The default 
 ## <span id="related_topics"></span>Related topics
 
 
-[MSDN PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
 
  
 

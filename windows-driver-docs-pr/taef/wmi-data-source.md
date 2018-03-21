@@ -57,7 +57,7 @@ Run the test for each printer connected to this computer. Allow the test to acce
 <span id="SELECT_Name__User__Location_FROM_Win32_StartupCommand"></span><span id="select_name__user__location_from_win32_startupcommand"></span><span id="SELECT_NAME__USER__LOCATION_FROM_WIN32_STARTUPCOMMAND"></span>SELECT Name, User, Location FROM Win32\_StartupCommand  
 Run the test for each process that gets run at Windows startup. For each process let the test know what the Name of the process is, where it is located (Location), and what User the process runs as.
 
-You can find more examples in the MSDN page mentioned above as well as in the .cs file and header file in the examples you have opened. The general, over-simplified syntax is as follows:
+You can find more examples in the documentation mentioned above as well as in the .cs file and header file in the examples you have opened. The general, over-simplified syntax is as follows:
 
 ```
 SELECT <comma separated properties> FROM <WMI Class name> [WHERE <add condition on some properties>]

@@ -26,7 +26,7 @@ AVStream minidrivers that are VRAM-enabled can capture uncompressed data by prov
 
 -   To expose binary formats for MPEG2 capture, set **biCompression** equal to D3DDDIFMT\_BINARYBUFFER, **biHeight** equal to one, and **biWidth** equal to the size of the binary buffer.
 
-The *Capture.cpp* file of the [AVStream Simulated Hardware Sample Driver (AVSHwS)](http://go.microsoft.com/fwlink/p/?linkid=256083) in the MSDN Code Gallery contains examples of the items in the preceding list.
+The *Capture.cpp* file of the [AVStream Simulated Hardware Sample Driver (AVSHwS)](http://go.microsoft.com/fwlink/p/?linkid=256083) contains examples of the items in the preceding list.
 
  
 

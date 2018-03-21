@@ -24,7 +24,7 @@ The Windows Driver Kit (WDK) version 7600 that shipped with Windows 7 includes 
 
 When you install the WDK version 7600, you can install these samples. Each BDA driver sample is installed in the \\src\\Swtuner\\ subdirectory under the main directory of your WDK installation. For more information about these samples, see the source code for each BDA driver sample in the WDK.
 
-These samples are not available on the MSDN code gallery or in the WDK version 8 that shipped with Windows 8.
+These samples are not available in the code gallery or in the WDK version 8 that shipped with Windows 8.
 
  
 

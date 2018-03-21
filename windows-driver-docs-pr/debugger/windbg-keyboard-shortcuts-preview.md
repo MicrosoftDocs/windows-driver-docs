@@ -95,7 +95,7 @@ Ctrl+↑ / ↓		|   Move up/down a stack frame
 | Keystroke     | Description             |
 | ------------- |-------------------------|
 F1	          	|   	Open help file
-Shift+F1		|   	Search selection on MSDN (source window)
+Shift+F1		|   	Search selection online (source window)
 
 
 ### Misc.  
