@@ -60,7 +60,7 @@ The following new or updated display driver DDIs are also provided in Windows 8
 
 Provides a limited set of display functions without rendering capability.
 
-**Note**  Refer also to the [Kernel mode display-only miniport driver](http://go.microsoft.com/fwlink/p/?linkid=258742) sample in the MSDN hardware sample gallery.
+**Note**  Refer also to the [Kernel mode display-only miniport driver](http://go.microsoft.com/fwlink/p/?linkid=258742) sample.
 
  
 

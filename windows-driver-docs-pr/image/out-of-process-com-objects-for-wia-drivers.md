@@ -18,7 +18,7 @@ ms.technology: windows-devices
 
 If a driver calls **CoCreatInstance** (described in the Microsoft Windows SDK documentation) on an out-of-process component, that call will fail unless the component has the appropriate permissions set to allow the driver access.
 
-Consult COM programming books or the MSDN documentation for detailed information about COM's security model. Following is a brief explanation.
+Consult COM programming books or the online documentation for detailed information about COM's security model. Following is a brief explanation.
 
 There are two kinds of permissions associated with out-of-process COM components:
 

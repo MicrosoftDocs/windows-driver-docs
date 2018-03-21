@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 This topic provides information about the data fields that are specific to the device orientation sensor.
 
-The following table shows the data fields. For more information about the types shown in the type column, see [MSDN PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
+The following table shows the data fields. For more information about the types shown in the type column, see [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
 
 <table>
 <colgroup>

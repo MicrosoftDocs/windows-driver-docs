@@ -11,15 +11,15 @@ ms.technology: windows-devices
 
 # Limiting driver distribution by Windows versions
 
-IHVs, OEMs, and ODMs often need to change the distribution of a driver in Windows Update to a specific range of Windows versions. For example, a driver might
+IHVs, OEMs, and ODMs often need to change the distribution of a driver in Windows Update to a specific range of Windows versions. For example, a driver might:
 
-* have known problems in a specified range of versions.
+* Have known problems in a specified range of versions.
 
-* need to be deployed to fix issues in past versions of Windows while a current driver is distributed to current versions.
+* Need to be deployed to fix issues in past versions of Windows while a current driver is distributed to current versions.
 
-* extend its distribution to earlier, current or newer Windows versions.
+* Extend its distribution to earlier, current or newer Windows versions.
 
-These distribution ranges are defined by a “floor” and “ceiling”. A floor describes the earliest Windows version the driver will be distributed to, and a ceiling marks the latest. By adding a floor, you can expand your driver’s distribution. By adding a ceiling, you can restrict it. Floors and ceilings are specified in [shipping labels](https://docs.microsoft.com/windows-hardware/drivers/dashboard/manage-driver-distribution-by-submission) within the Hardware Dev Center Dashboard for the following driver submission formats:
+These distribution ranges are defined by a **floor** and **ceiling**. A floor describes the earliest Windows version the driver will be distributed to, and a ceiling marks the latest. By adding a floor, you can expand your driver’s distribution. By adding a ceiling, you can restrict it. Floors and ceilings are specified in [shipping labels](https://docs.microsoft.com/windows-hardware/drivers/dashboard/manage-driver-distribution-by-submission) within the Hardware Dev Center Dashboard for the following driver submission formats:
 
 * .HLKX
 * .HCKX
@@ -49,7 +49,7 @@ There are two types of floors and ceilings supported by the HDC Dashboard:
 1. You can add a floor (OS based driver expansion) for your driver’s distribution by clicking **Please expand operating systems for driver’s distribution here**, located below the label’s targeting information. 
     ![A screen showing the dashboard screen to add a floor to a driver.](images/driver-floor-screen.png)
 
-    Clicking the link will present a list of operating systems that you can extend driver coverage to.
+    When you click the link, a list of operating systems appears that you can extend driver coverage to.
 
     ![An image showing the operating systems available to expand coverage to.](images/driver-floor-screen-2.png)
 
@@ -65,7 +65,7 @@ There are two types of floors and ceilings supported by the HDC Dashboard:
 
 > [!NOTE]
 > Note the following when adding a ceiling
-> * The ceiling option is only enabled for Hardware IDs which target Windows 10, and only after clicking Publish in the **Select PNPs** selection area.
+> * The ceiling option is enabled only for Hardware IDs that target Windows 10, and only after clicking Publish in the **Select PNPs** selection area.
 
 > * The ceiling you select should be higher than the PNP selections you made.
 

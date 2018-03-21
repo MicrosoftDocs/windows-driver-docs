@@ -39,7 +39,7 @@ Review the following resources to help you develop software that protects user p
 
 -   [Privacy Guidelines for Developing Software Products and Services](http://go.microsoft.com/fwlink/p/?linkid=237149)
 
--   [MSDN Security Developer Center](http://go.microsoft.com/fwlink/p/?linkid=237150)
+-   [TechNet Security Developer Center](http://go.microsoft.com/fwlink/p/?linkid=237150)
 
 ## Related topics
 [Architecture Overview](https://msdn.microsoft.com/library/windows/hardware/ff545400)  

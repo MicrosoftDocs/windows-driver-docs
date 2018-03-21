@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 This topic provides information about the light sensor thresholds and interval.
 
-The following table shows the driver's default thresholds for the light sensor. The default interval for the light sensor is 10 Hz. For more information about the types shown in the type column, see [MSDN PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
+The following table shows the driver's default thresholds for the light sensor. The default interval for the light sensor is 10 Hz. For more information about the types shown in the type column, see [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
 
 <table>
 <colgroup>
@@ -97,7 +97,7 @@ The following table shows the driver's default thresholds for the light sensor. 
 ## <span id="related_topics"></span>Related topics
 
 
-[MSDN PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
 
  
 

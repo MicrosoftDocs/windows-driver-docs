@@ -5,7 +5,7 @@
 ## [Building for OneCore](building-for-onecore.md)
 ## [Universal Driver Scenarios](universal-driver-scenarios.md)
 ## [Debugging a Universal driver](debugging-a-universal-driver.md)
-## [Target platform on MSDN driver reference pages](windows-10-editions-for-universal-drivers.md)
+## [Target platform on driver reference pages](windows-10-editions-for-universal-drivers.md)
 ## [Driver convergence model for Windows 10](driver-model-convergence.md)
 # [Creating a New Device Function Driver](creating-a-new-driver.md)
 # [Creating a New Filter Driver](creating-a-new-filter-driver.md)

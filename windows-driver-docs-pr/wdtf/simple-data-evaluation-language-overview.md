@@ -26,7 +26,7 @@ ms.technology: windows-devices
 # Simple Data Evaluation Language Overview
 
 
-WDTF includes a simple query language to simplify the task of collecting targets based on attributes or relationships. The Simple Data Evaluation Language (SDEL) is similar to XPath. For more information about XPath, see [XPath Reference](http://go.microsoft.com/fwlink/p/?linkid=33165) in the MSDN Library.
+WDTF includes a simple query language to simplify the task of collecting targets based on attributes or relationships. The Simple Data Evaluation Language (SDEL) is similar to XPath. For more information about XPath, see [XPath Reference](http://go.microsoft.com/fwlink/p/?linkid=33165).
 
 The following sections within this topic describe how you can use SDEL.
 

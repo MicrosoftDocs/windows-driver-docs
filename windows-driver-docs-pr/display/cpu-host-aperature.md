@@ -1,6 +1,6 @@
 ---
 title: CPU host aperture
-description: For 32bit OS discrete graphics processing units (GPUs), which donâ€™t support resizable BAR or when resizing the frame buffer BAR fails, Windows Display Driver Model (WDDM) v2 will offer an alternative mechanism by which a discrete GPU VRAM can be efficiently accessed. For GPUs, which support a programmable BAR address space, a new CPU Host Aperture functionality is introduced in WDDM v2 to abstract that functionality.
+description: For 32bit OS discrete graphics processing units (GPUs), which don't support resizable BAR or when resizing the frame buffer BAR fails, Windows Display Driver Model (WDDM) v2 will offer an alternative mechanism by which a discrete GPU VRAM can be efficiently accessed. For GPUs, which support a programmable BAR address space, a new CPU Host Aperture functionality is introduced in WDDM v2 to abstract that functionality.
 ms.assetid: 0E4D01E4-93AF-4205-A360-0CA3470716D2
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # CPU host aperture
 
 
-For 32bit OS discrete graphics processing units (GPUs), which donâ€™t support resizable BAR or when resizing the frame buffer BAR fails, Windows Display Driver Model (WDDM) v2 will offer an alternative mechanism by which a discrete GPU VRAM can be efficiently accessed. For GPUs, which support a programmable BAR address space, a new CPU Host Aperture functionality is introduced in WDDM v2 to abstract that functionality.
+For 32bit OS discrete graphics processing units (GPUs), which don't support resizable BAR or when resizing the frame buffer BAR fails, Windows Display Driver Model (WDDM) v2 will offer an alternative mechanism by which a discrete GPU VRAM can be efficiently accessed. For GPUs, which support a programmable BAR address space, a new CPU Host Aperture functionality is introduced in WDDM v2 to abstract that functionality.
 
 When exposing a CPU host aperture, the kernel mode driver fills out a new [**DXGK\_CPUHOSTAPERTURE**](https://msdn.microsoft.com/library/windows/hardware/dn894624) caps structure for every segment supporting a CPU host aperture. This defines the size of the CPU host aperture, this allows driver to reserve some of the BAR for internal purposes. The page size is the same as the GPU pages of the memory segment.
 

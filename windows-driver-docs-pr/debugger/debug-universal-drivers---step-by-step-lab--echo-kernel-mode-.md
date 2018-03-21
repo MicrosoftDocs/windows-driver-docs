@@ -720,7 +720,7 @@ This diagram shows a more complex device node tree.
 
 ![device node tree with about 20 nodes](images/debuglab-image-device-node-tree.png)
 
-**Note**  For more information about more complex driver stacks, see [Driver stacks](https://msdn.microsoft.com/library/windows/hardware/hh439632) and [Device nodes and device stacks](https://msdn.microsoft.com/library/windows/hardware/ff554721) on MSDN.
+**Note**  For more information about more complex driver stacks, see [Driver stacks](https://msdn.microsoft.com/library/windows/hardware/hh439632) and [Device nodes and device stacks](https://msdn.microsoft.com/library/windows/hardware/ff554721).
 
  
 
@@ -1400,7 +1400,7 @@ The commands to view and set threads are very similar to those of processes. Use
     Call stack elements such as **KiCommitThreadWait** indicate that this thread is not running as is expected.
 
 **Note**  
-For more information about threads and processes, see the following references on MSDN:
+For more information about threads and processes, see the following references:
 
 [Threads and Processes](threads-and-processes.md)
 

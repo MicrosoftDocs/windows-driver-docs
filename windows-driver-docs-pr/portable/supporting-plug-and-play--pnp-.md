@@ -19,7 +19,7 @@ Because all but one of the WPD samples emulate hardware, the methods for these i
 
 The one exception is the WpdBasicHardwareDriver sample. Because this driver supports actual hardware, it contains working code for two methods in the **IPnpCallback** interface. The two methods supported by this sample are [**IPnpCallback::OnD0Entry**](https://msdn.microsoft.com/library/windows/hardware/ff556799) and [**IPnpCallback::OnD0Exit**](https://msdn.microsoft.com/library/windows/hardware/ff556803). The first method retrieves a pointer to the I/O Target that the sample driver uses to forward I/O requests to the kernel-mode RS232 driver. After retrieving this pointer, the **IPnpCallback::OnDOEntry** method starts the I/O target. The second method, **IPnpCallback::OnD0Exit** retrieves a pointer to the I/O Target and then stops it.
 
-If your driver supports hardware, you'll want to add support for one, or both, of these interfaces. For a complete description of PnP and Power-Management in user-mode device drivers, refer to the [PnP and Power Management Scenarios in UMDF](https://msdn.microsoft.com/library/windows/hardware/ff560452)topic on MSDN.
+If your driver supports hardware, you'll want to add support for one, or both, of these interfaces. For a complete description of PnP and Power-Management in user-mode device drivers, see [PnP and Power Management Scenarios in UMDF](https://msdn.microsoft.com/library/windows/hardware/ff560452).
 
 ## <span id="related_topics"></span>Related topics
 

@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Reporting Miracast encode chunks and statistics
 
 
-Display hardware can process each video frame sent over a Miracast wireless display link by splitting the frame into multiple parts, or *encode chunks*. Each chunk has a unique chunk ID thatâ€™s generated from the frame number and the frame part (or slice) number. Each chunk thatâ€™s related to the same desktop frame update must be assigned the same frame number.
+Display hardware can process each video frame sent over a Miracast wireless display link by splitting the frame into multiple parts, or *encode chunks*. Each chunk has a unique chunk ID that's generated from the frame number and the frame part (or slice) number. Each chunk that's related to the same desktop frame update must be assigned the same frame number.
 
 ## <span id="Reporting_chunk_processing"></span><span id="reporting_chunk_processing"></span><span id="REPORTING_CHUNK_PROCESSING"></span>Reporting chunk processing
 

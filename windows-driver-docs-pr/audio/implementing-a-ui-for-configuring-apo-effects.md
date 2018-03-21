@@ -57,9 +57,9 @@ See [About Property Sheets](http://go.microsoft.com/fwlink/p/?linkid=106006) and
 
 To design and implement the custom property page provider, perform the following steps.
 
-1.  Create a custom property page. See the [creating property sheets](http://go.microsoft.com/fwlink/p/?linkid=106006) topic on the MSDN website for more information.
+1.  Create a custom property page. See [Creating property sheets](http://go.microsoft.com/fwlink/p/?linkid=106006) for more information.
 
-2.  Package your property page as a DLL. See the [creating and using a DLL](http://go.microsoft.com/fwlink/p/?linkid=106014) topic on the MSDN website to help you package your custom page as a DLL.
+2.  Package your property page as a DLL. See [Creating and using a DLL](http://go.microsoft.com/fwlink/p/?linkid=106014) topic for more information on packaging your custom page as a DLL.
 
 3.  Modify your [INF file](https://msdn.microsoft.com/library/windows/hardware/ff549520) to install and register the DLL for the property page.
 
