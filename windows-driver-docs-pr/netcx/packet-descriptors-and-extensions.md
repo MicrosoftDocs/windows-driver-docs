@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # Packet descriptors and extensions
 
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
 In NetAdapterCx, *packet descriptors* are small, compact and runtime-extensible structures that describe a network packet. Each packet requires the following:
 
 - One core descriptor 

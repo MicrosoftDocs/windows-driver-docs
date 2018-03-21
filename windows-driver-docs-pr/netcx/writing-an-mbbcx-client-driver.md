@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # Writing an MBBCx client driver
 
+[!include[MBBCx Beta Prerelease](../mbbcx-beta-prerelease.md)]
+
 ## Initialize the device
 
 In addition to the [tasks required by NetAdapterCx for device initialization](device-initialization.md), an MBB client driver must perform the following tasks in its [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function:
