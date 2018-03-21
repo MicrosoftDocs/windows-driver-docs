@@ -25,7 +25,7 @@ ms.technology: windows-devices
 # Encoder Code Examples
 
 
-The following code examples are based on the [AVStream Simulated Hardware Sample Driver (AVSHwS)](http://go.microsoft.com/fwlink/p/?linkid=256083) in the MSDN Code Gallery. They demonstrate the following:
+The following code examples are based on the [AVStream Simulated Hardware Sample Driver (AVSHwS)](http://go.microsoft.com/fwlink/p/?linkid=256083). They demonstrate the following:
 
 -   How to specify the encoder's supported bit rates
 

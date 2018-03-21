@@ -18,6 +18,29 @@ If threads from different processes attempt to use the same resource at the same
 
 Routines that provide a direct interface to the process and thread manager are usually prefixed with the letters "**Ps**"; for example, **PsCreateSystemThread**. For a list of process and thread manager routines, see [Process and Thread Manager Routines](https://msdn.microsoft.com/library/windows/hardware/ff559917). For a list of routines that relate to processes, threads, and synchronization, see [Synchronization](https://msdn.microsoft.com/library/windows/hardware/ff564517).
 
+## <a name="best"></a>Best practices for implementing process and thread-related callback functions
+
+This set of guidelines applies to these callback routines:
+
+[_PCREATE_PROCESS_NOTIFY_ROUTINE_](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pcreate_process_notify_routine)
+
+[_PCREATE_PROCESS_NOTIFY_ROUTINE_EX_](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pcreate_process_notify_routine_ex)
+
+[_PCREATE_THREAD_NOTIFY_ROUTINE_](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pcreate_thread_notify_routine)
+
+[_PLOAD_IMAGE_NOTIFY_ROUTINE_](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pload_image_notify_routine)
+
+-    Keep notify routines short and simple.
+-    Do not make calls into a user mode service to validate the process, thread, or image. 
+-    Do not make registry calls. 
+-    Do not make blocking and/or Interprocess Communication (IPC) function calls. 
+-    Do not synchronize with other threads because it can lead to reentrancy deadlocks. 
+-    Use [System Worker Threads](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/system-worker-threads) to queue work especially work involving: 
+        -    Slow API’s or API’s that call into other process. 
+        -    Any blocking behavior which could interrupt threads in core services. 
+-    Be considerate of best practices for kernel mode stack usage. For examples, see [How do I keep my driver from running out of kernel-mode stack?](https://docs.microsoft.com/en-us/previous-versions/windows/hardware/design/dn613940(v=vs.85)) and [Key Driver Concepts and Tips](https://docs.microsoft.com/en-us/previous-versions/windows/hardware/design/dn614604(v%3dvs.85)).
+
+
 ## Subsystem Processes
 
 

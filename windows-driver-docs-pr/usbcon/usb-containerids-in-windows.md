@@ -161,7 +161,7 @@ Device manufacturers must ensure that each instance of a device that they produc
 Recommendations for Implementing a USB **ContainerID** The following are recommendations for device vendors that design, manufacture, and ship USB devices:
 
 -   Learn how Windows 7 improves the support for multifunction and multiple transport USB devices through the use of a **ContainerID**. We recommend that you start by reading “Multifunction Device Support and Device Container Groupings in Windows 7.”
--   Make sure that the serial number on each USB device is unique. A Windows Hardware Certification requirement states that, if your device includes a serial number, the serial number must be unique for each instance of your device. For more information about the WLK test for USB serial numbers, see ”USB Serial Number” on MSDN®.
+-   Make sure that the serial number on each USB device is unique. A Windows Hardware Certification requirement states that, if your device includes a serial number, the serial number must be unique for each instance of your device.
 -   Do not provide a **ContainerID** for a USB device that is embedded in a system. Integrated USB devices should rely on ACPI BIOS settings or the USB hub descriptor **DeviceRemovable** bit for the port.
 -   Ensure that all USB devices that are attached to a system have unique **ContainerID** values. Do not share **ContainerID** values or USB serial numbers across your product lines.
 -   Make sure to set the Removable Device Capability correctly for your device.

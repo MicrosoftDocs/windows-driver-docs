@@ -410,7 +410,7 @@ Windows Metadata and Internet Services (WMIS) is a cloud-based Windows service t
 
 The Microsoft Store is the primary way that UWP apps are delivered to Windows 8, Windows 8.1, and Windows 10 PCs. For a mobile broadband app, the app package is retrieved from the Microsoft Store whenever Internet connectivity is available after the device is connected. The app package is automatically installed and available to the user at that point. In Windows 8.1 and Windows 10, the app is available in **All Apps** but is not automatically pinned to the Start screen.
 
-For more information about UWP device apps, see the [UWP device apps](https://msdn.microsoft.com/library/windows/hardware/dn265154) topic on MSDN.
+For more information about UWP device apps, see [UWP device apps](https://msdn.microsoft.com/library/windows/hardware/dn265154).
 
 **Note**  
 Although enterprises can side load UWP apps under certain conditions, these will not be covered in this document.

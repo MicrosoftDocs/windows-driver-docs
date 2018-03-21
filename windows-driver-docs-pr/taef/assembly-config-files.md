@@ -32,7 +32,7 @@ The .NET Configuration files are XML files in the following form:
 </configuration>
 ```
 
-Note, the configuration file is a collection of name / value pairs. See MSDN for more info.
+Note, the configuration file is a collection of name / value pairs.
 
 ## <span id="reading_cf"></span><span id="READING_CF"></span>Reading the Configuration File from Your Tests
 

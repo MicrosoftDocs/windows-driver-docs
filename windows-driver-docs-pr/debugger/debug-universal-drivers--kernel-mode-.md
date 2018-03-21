@@ -1751,7 +1751,7 @@ The image name is rundll32.exe, which is indeed not the image name associated wi
 **Note**  
 To set the current thread, type .thread &lt;thread number&gt;.
 
-For more information about threads and processes, see the following references on MSDN:
+For more information about threads and processes, see the following references:
 
 [Threads and Processes](threads-and-processes.md)
 

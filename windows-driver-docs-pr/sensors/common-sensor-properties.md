@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 This topic describes the sensor properties that are common for all sensors.
 
-The following table shows common properties. For more information about the types shown in the type column, see [MSDN PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
+The following table shows common properties. For more information about the types shown in the type column, see [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
 
 <table>
 <colgroup>
@@ -155,7 +155,7 @@ When the client driver reports the following properties, the client driver must 
 
 [EvtSensorSetBatchLatency](https://msdn.microsoft.com/library/windows/hardware/mt219125)
 
-[MSDN PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
 
 [Sensor properties](sensor-properties2.md)
 

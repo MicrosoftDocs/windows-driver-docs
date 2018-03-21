@@ -47,7 +47,7 @@ If a system-supplied driver handles your device, you do not have to supply a ful
 
 ### To create icons
 
--   Follow the MSDN guidelines that are provided at the Creating [Windows XP Icons](http://go.microsoft.com/fwlink/p/?linkid=6938) website. These guidelines describe how to create icons that have the appearance and behavior of Windows XP graphical elements.
+-   Follow the guidelines that are provided at the Creating [Windows XP Icons](http://go.microsoft.com/fwlink/p/?linkid=6938) website. These guidelines describe how to create icons that have the appearance and behavior of Windows XP graphical elements.
 
 ### To specify the icons in an INF file
 

@@ -21,7 +21,7 @@ The key benefits of using MSBDD are as follows:
 -   MSBDD supports Unified Extensible Firmware Interface (UEFI) Graphics Output Protocol (GOP).
 -   MSBDD works on both XDDM and WDDM hardware.
 
-MSBDD is the default in-box display driver that is loaded during setup, in safe mode, in the absence of an IHV graphics driver, or when the inbox installed graphics IHV driver is not working or is disabled. The primary purpose of this driver is to enable Windows to write to the display controllerâ€™s linear frame buffer.
+MSBDD is the default in-box display driver that is loaded during setup, in safe mode, in the absence of an IHV graphics driver, or when the inbox installed graphics IHV driver is not working or is disabled. The primary purpose of this driver is to enable Windows to write to the display controller's linear frame buffer.
 
 MSBDD can use the video BIOS to manage modes and resolutions on a single monitor. On UEFI platforms, MSBDD inherits the linear frame buffer that is set during boot; in this case, no mode or resolution changes are possible. As shown in *Figure 1 Scenarios supported by Microsoft Basic Display Driver*, MSBDD is used in the following scenarios:
 

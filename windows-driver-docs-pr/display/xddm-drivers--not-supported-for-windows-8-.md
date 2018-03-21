@@ -37,7 +37,7 @@ T*able 1 Driver Upgrade Experience in Windows 8* summarizes graphics driver migr
 
 In cases where the Windows 7 graphics driver itself is not migrated, any IHV or OEM value-add components from the Windows 7 graphics driver package, such as control panels and OpenGL support libraries, can persist after a Windows 8 upgrade installation. This happens because the Windows 8 installer cannot know that these value-add components are associated with the Windows 7 retail or OEM driver package. These value-add components might not function properly in the absence of the rest of their driver package.
 
-IHVs should harden these value-add components to simply exit in such cases. In the rare cases where the value-add causes problems, the specific value-add components can be blocked from migrating by the Microsoft compatibility team. In some cases, an IHVâ€™s Windows 8 in-box driver removes the value-add component on upgrade. This is up to the IHV.
+IHVs should harden these value-add components to simply exit in such cases. In the rare cases where the value-add causes problems, the specific value-add components can be blocked from migrating by the Microsoft compatibility team. In some cases, an IHV's Windows 8 in-box driver removes the value-add component on upgrade. This is up to the IHV.
 
 Some retail and OEM Windows 7 graphics drivers are intentionally structured to prevent their installation on Windows 8. Windows 8 might try to migrate such a driver according to the rules above, but it would fail to install on Windows 8, resulting in the use of the MSBDD.
 
