@@ -44,112 +44,28 @@ Configures Inf2Cat to verify that the [driver package](https://msdn.microsoft.co
 <span id="_os_WindowsVersionList"></span><span id="_os_windowsversionlist"></span><span id="_OS_WINDOWSVERSIONLIST"></span>**/os:***WindowsVersionList*  
 Configures Inf2Cat to verify that a [driver package's](https://msdn.microsoft.com/library/windows/hardware/ff544840) INF file complies with the signing requirements for the Windows versions that are specified by *WindowsVersionList*. *WindowsVersionList* is a comma-separated list that includes one or more of the following version identifiers.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Windows version</th>
-<th align="left">Version identifier</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Windows 8.1 x86 Edition</p></td>
-<td align="left"><p>6_3_X86</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows 8.1 x64 Edition</p></td>
-<td align="left"><p>6_3_X64</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows 8.1 ARM Edition</p></td>
-<td align="left"><p>6_3_ARM</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Server 2012 R2</p></td>
-<td align="left"><p>Server6_3_X64</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows 8 x64 Edition</p></td>
-<td align="left"><p>8_X64</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows 8 x86 Edition</p></td>
-<td align="left"><p>8_X86</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows 8 ARM Edition</p></td>
-<td align="left"><p>8_ARM</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Server 2012</p></td>
-<td align="left"><p>Server8_X64</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2008 R2 x64 Edition</p></td>
-<td align="left"><p>Server2008R2_X64</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Server 2008 R2 Itanium Edition</p></td>
-<td align="left"><p>Server2008R2_IA64</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows 7 x64 Edition</p></td>
-<td align="left"><p>7_X64</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows 7 x86 Edition</p></td>
-<td align="left"><p>7_X86</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2008 x64 Edition</p></td>
-<td align="left"><p>Server2008_X64</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Server 2008 Itanium Edition</p></td>
-<td align="left"><p>Server2008_IA64</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2008 x86 Edition</p></td>
-<td align="left"><p>Server2008_X86</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Vista x64 Edition</p></td>
-<td align="left"><p>Vista_X64</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Vista x86 Edition</p></td>
-<td align="left"><p>Vista_X86</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Server 2003 x64 Edition</p></td>
-<td align="left"><p>Server2003_X64</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2003 Itanium Edition</p></td>
-<td align="left"><p>Server2003_IA64</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Server 2003 x86 Edition</p></td>
-<td align="left"><p>Server2003_X86</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows XP x64 Edition</p></td>
-<td align="left"><p>XP_X64</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows XP x86 Edition</p></td>
-<td align="left"><p>XP_X86</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows 2000</p></td>
-<td align="left"><p>2000</p></td>
-</tr>
-</tbody>
-</table>
+|Windows version|Version identifier|
+|--- |--- |
+|Windows 10 x86 Edition|10_X86|
+|Windows 10 x64 Edition|10_X64|
+|Windows Server 2016|Server10_X64|
+|Windows Server 2016 on ARM|Server10_ARM64|
+|Windows 8.1 x86 Edition|6_3_X86|
+|Windows 8.1 x64 Edition|6_3_X64|
+|Windows 8.1 ARM Edition|6_3_ARM|
+|Windows Server 2012 R2|Server6_3_X64|
+|Windows 8 x64 Edition|8_X64|
+|Windows 8 x86 Edition|8_X86|
+|Windows 8 ARM Edition|8_ARM|
+|Windows Server 2012|Server8_X64|
+|Windows Server 2008 R2 x64 Edition|Server2008R2_X64|
+|Windows Server 2008 R2 Itanium Edition|Server2008R2_IA64|
+|Windows 7 x64 Edition|7_X64|
+|Windows 7 x86 Edition|7_X86|
+|Windows Server 2008 x64 Edition|Server2008_X64|
+|Windows Server 2008 Itanium Edition|Server2008_IA64|
+|Windows Server 2008 x86 Edition|Server2008_X86|
+
 
  
 
