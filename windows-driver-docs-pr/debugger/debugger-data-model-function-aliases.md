@@ -3,7 +3,7 @@ title: Debugger Data Model Function Aliases
 description: Function aliases are a quick unique short name by which a user of the debugger can access functionality defined in a debugger extension.
 keywords: ["Debugger Data Model Function Aliases"]
 ms.author: domars
-ms.date: 03/19/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -181,16 +181,16 @@ As with other dx commands, you can right click on a command after it was execute
 
 
 
-## User Mode Example
+## Process Threads Example
 
 Debugger objects are projected into a namespace rooted at "Debugger". Processes, modules, threads, stacks, stack frames, and local variables are all available to be used in a LINQ query.
 
-This example shows the top processes running the most threads:
+This example JavaScript shows how to display the thread count for the current sessions processes:
 
 ```
 function __Processes()
 {
-    return host.currentSession.Processes.Select(p => new { Name:p.Name, ThreadCount: p.Threads.Count() });
+    return host.currentSession.Processes.Select(p => ({Name: p.Name, ThreadCount: p.Threads.Count()}));
 }
 
 function initializeScript()
@@ -199,32 +199,41 @@ function initializeScript()
 }
 
 ```
+This shows the example output with the !Processes function alias.
 
-In this example the top 5 threads are listed.
-
-TBD TBD TBD - Output needs to show !Processes 
 
 ```
-0: kd> dx -r2 Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.ThreadCount),5
-Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.ThreadCount),5 
+0: kd> !Processes
+@$Processes()                
+    [0x0]            : [object Object]
+    [0x4]            : [object Object]
+    [0x1b4]          : [object Object]
+    [0x248]          : [object Object]
+    [0x2c4]          : [object Object]
+    [0x340]          : [object Object]
+    [0x350]          : [object Object]
+    [0x3d4]          : [object Object]
+    [0x3e8]          : [object Object]
+    [0x4c]           : [object Object]
+    [0x214]          : [object Object]
+    [0x41c]          : [object Object]
+    [0x494]          : [object Object]
 
-: 
-    [0x4]            : 
-        Name             : <Unknown Image>
-        ThreadCount      : 0x73
-    [0x708]          : 
-        Name             : explorer.exe
-        ThreadCount      : 0x2d
-    [0x37c]          : 
-        Name             : svchost.exe
-        ThreadCount      : 0x2c
-    [0x6b0]          : 
-        Name             : MsMpEng.exe
-        ThreadCount      : 0x22
-    [0x57c]          : 
-        Name             : svchost.exe
-        ThreadCount      : 0x15
-    [...]       
+...    
+
+```
+In this example the top 5 process with the largest thread count are displayed.
+
+```
+0: kd> dx -r1 @$Processes().OrderByDescending(p =>p.ThreadCount),5
+@$Processes().OrderByDescending(p =>p.ThreadCount),5                
+    [0x4]            : [object Object]
+    [0x180]          : [object Object]
+    [0x978]          : [object Object]
+    [0xda4]          : [object Object]
+    [0x3e8]          : [object Object]
+    [...]   
+     
 ```
 
 
@@ -241,8 +250,6 @@ Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount
 
 ---
 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20dx%20%28Display%20Debugger%20Object%20Model%20Expression%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 
