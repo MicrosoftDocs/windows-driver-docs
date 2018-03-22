@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# <span id="p_phpartappdev.wi-fi_direct"></span>Wi-Fi Direct
+# Wi-Fi Direct
 
 
 The WDI driver in Windows 10 and the associated Wi-Fi Direct APIs replace the NDIS driver and associated SoftAP APIs in Windows 8.1. While you can continue to use the SoftAP API to work with the NDIS driver in Windows 10, the APIs are deprecated starting in Windows 8.1. That includes IDot11AdHocManager and related interfaces.
@@ -28,20 +28,20 @@ Developers of desktop applications can use this sample to see how to replace the
 
  
 
-## <span id="Resources"></span><span id="resources"></span><span id="RESOURCES"></span>Resources
+## Resources
 
 
-### <span id="Recorded_sessions"></span><span id="recorded_sessions"></span><span id="RECORDED_SESSIONS"></span>Recorded sessions
+### Recorded sessions
 
 -   [Wi-Fi Direct and Wi-Fi Direct Services API (including sample code)](http://go.microsoft.com/fwlink/?LinkId=617632)
 
-### <span id="MSDN_Library"></span><span id="msdn_library"></span><span id="MSDN_LIBRARY"></span>MSDN Library
+### Articles
 
 -   [Wi-Fi Direct Services API](http://go.microsoft.com/fwlink/?LinkId=617633)
 -   [What's new in driver development?]( http://go.microsoft.com/fwlink/?LinkId=617634)
 -   [Using WinRT API in Win32 App]( http://go.microsoft.com/fwlink/?LinkId=617635)
 
-### <span id="Wi-Fi_Direct_in_Windows_8"></span><span id="wi-fi_direct_in_windows_8"></span><span id="WI-FI_DIRECT_IN_WINDOWS_8"></span>Wi-Fi Direct in Windows 8
+### Wi-Fi Direct in Windows 8
 
 -   [Understanding Wi-Fi Direct in Windows 8](http://go.microsoft.com/fwlink/?LinkId=617636)
 -   [Ask the experts panel: Connected apps](http://go.microsoft.com/fwlink/?LinkId=617637)

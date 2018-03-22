@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 ### <span id="display_samples"></span><span id="DISPLAY_SAMPLES"></span>
 
-Starting with Windows 8, samples are published in the [MSDN Developer Samples code gallery](http://go.microsoft.com/fwlink/p/?LinkId=618052), along with documentation. For Windows 7 and earlier, samples and documentation were included in the Windows Driver Kit (WDK) or Driver Development Kit (DDK).
+Starting with Windows 8, [samples are available for download](http://go.microsoft.com/fwlink/p/?LinkId=618052) from the Hardware Dev Center. For Windows 7 and earlier, samples and documentation were included in the Windows Driver Kit (WDK) or Driver Development Kit (DDK).
 
 <table>
 <colgroup>
@@ -38,7 +38,7 @@ Starting with Windows 8, samples are published in the [MSDN Developer Samples c
 <tbody>
 <tr class="odd">
 <td align="left"><p>[Kernel mode display-only miniport driver](http://go.microsoft.com/fwlink/p/?LinkId=618052)</p>
-<p>Available in the MSDN Developer Samples code gallery.</p></td>
+<p>Available in the Hardware Dev Center.</p></td>
 <td align="left"><p></p>
 Windows 8</td>
 <td align="left"><p></p>
@@ -49,7 +49,7 @@ Windows 8</td>
 </tr>
 <tr class="even">
 <td align="left"><p>[PixLib](http://go.microsoft.com/fwlink/p/?LinkId=618052)</p>
-<p>Available in the MSDN Developer Samples code gallery.</p></td>
+<p>Available in the Hardware Dev Center.</p></td>
 <td align="left"><p></p>
 Windows 8
 Windows 7

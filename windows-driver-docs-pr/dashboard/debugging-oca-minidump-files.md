@@ -53,7 +53,7 @@ Microsoft provides a symbol server on the Internet that you can use to analyze t
 ## <span id="Integrating_WER_into_Applications"></span><span id="integrating_wer_into_applications"></span><span id="INTEGRATING_WER_INTO_APPLICATIONS"></span>Integrating WER into Applications
 
 
-Information on integrating WER into applications can be found on MSDN at [Using WER](http://msdn.microsoft.com/library/bb513616.aspx).
+For more information on integrating WER into applications, see [Using WER](http://msdn.microsoft.com/library/bb513616.aspx).
 
 ## <span id="WER_debugging_resources"></span><span id="wer_debugging_resources"></span><span id="WER_DEBUGGING_RESOURCES"></span>WER debugging resources
 

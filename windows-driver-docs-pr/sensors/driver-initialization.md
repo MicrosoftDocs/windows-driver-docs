@@ -25,7 +25,7 @@ Driver initialization is one of the more complex phases of a user-mode driver’
 
 The sample driver is designed so that the sensor is permanently connected to an I2C bus. Instead of supporting Plug and Play, it supports the Advanced Configuration and Power Interface (ACPI).
 
-ACPI allows Windows to control a device’s configuration and power management. The ACPI spec has definitions for tables that link your Windows device and peripheral devices connected to the system board. The Differentiated System Description Table (DSDT) describes peripheral devices connected to the system—including sensors. It’s stored in a binary format known as the ACPI Machine Language (AML). For more information about the DSDT table, see to the ACPI system description tables topic on MSDN. (Note that some systems also use the Secondary System Description Table (SSDT) to describe peripheral devices.)
+ACPI allows Windows to control a device’s configuration and power management. The ACPI spec has definitions for tables that link your Windows device and peripheral devices connected to the system board. The Differentiated System Description Table (DSDT) describes peripheral devices connected to the system—including sensors. It’s stored in a binary format known as the ACPI Machine Language (AML). For more information about the DSDT table, see to the ACPI system description tables topic. (Note that some systems also use the Secondary System Description Table (SSDT) to describe peripheral devices.)
 
 To install a sensor device and driver on your Windows SoC device, you’ll need to update the DSDT table with a corresponding node. This node has information about the sample device’s controllers and connectors. Here’s how Windows and your driver use the data in the node:
 

@@ -22,7 +22,7 @@ In addition to the transactional interfaces that you can use by accessing KTM, M
 
 -   The Distributed Transaction Coordinator (DTC) provides interoperability with KTM through the **IKernelTransaction** interface. For more information about the **IKernelTransaction** interface, see the Microsoft Windows SDK.
 
--   The .NET Framework supports the **System.Transactions** namespace. For more information about this namespace, see the [MSDN website](http://go.microsoft.com/fwlink/p/?linkid=8714).
+-   The .NET Framework supports the **System.Transactions** namespace. For more information about this namespace, see the [Microsoft developer website](http://go.microsoft.com/fwlink/p/?linkid=8714).
 
  
 

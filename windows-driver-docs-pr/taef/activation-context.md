@@ -32,7 +32,7 @@ Providing the 'Activation context' enables users to choose a particular version 
             
 ```
 
-The manifest file, **'Comctlv6.manifest'**, that is shown above specifies that version 6 of the comctl32.dll is to be used during test execution. To learn more about manifest files, refer to [MSDN](http://msdn.microsoft.com/library/aa375632(VS.85).aspx)
+The manifest file, **'Comctlv6.manifest'**, that is shown above specifies that version 6 of the comctl32.dll is to be used during test execution. To learn more about manifest files, see [Manifest files reference](http://msdn.microsoft.com/library/aa375632(VS.85).aspx)
 
 ## <span id="Specifying_ActivationContext_manifest_at_the_Command_Prompt"></span><span id="specifying_activationcontext_manifest_at_the_command_prompt"></span><span id="SPECIFYING_ACTIVATIONCONTEXT_MANIFEST_AT_THE_COMMAND_PROMPT"></span>Specifying ActivationContext manifest at the Command Prompt
 

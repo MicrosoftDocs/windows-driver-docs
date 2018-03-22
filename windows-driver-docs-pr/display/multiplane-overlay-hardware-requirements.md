@@ -21,9 +21,9 @@ Display drivers and hardware are not required to support multiplane overlays. Ho
     -   The hardware must be able to enable or disable alpha blending on a per-plane basis. (Alpha blending is a technique where the color in a source bitmap is combined with that in a destination bitmap to produce a new destination bitmap.)
     -   Blending between the planes using pre-multiplied alpha must be supported.
 -   When only one output target is active, the active output must support multiplane overlays. In the case of clone mode, where multiple outputs are simultaneously active, hardware should not report that it supports multiplane overlays unless all active outputs support multiplane overlays.
--   The Desktop Window Manager (DWM)â€™s swapchain (plane 0) must be able to interact with the other overlay planes.
--   All planes must be able to be enabled and disabled, including plane 0 (the DWMâ€™s swapchain).
--   All planes must support source and destination clipping, including plane 0 (the DWMâ€™s swapchain).
+-   The Desktop Window Manager (DWM)'s swapchain (plane 0) must be able to interact with the other overlay planes.
+-   All planes must be able to be enabled and disabled, including plane 0 (the DWM's swapchain).
+-   All planes must support source and destination clipping, including plane 0 (the DWM's swapchain).
 -   At least one plane must support shrinking and stretching, independent from other planes that might be enabled.
 -   Planes that support scaling must support both bilinear filtering and filtering quality that is better than bilinear.
 -   At least one plane must support these YUV formats (for more info, see [YUV format ranges in Windows 8.1](yuv-format-ranges.md)):
