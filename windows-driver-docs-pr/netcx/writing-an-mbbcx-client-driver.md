@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 In addition to the tasks required by NetAdapterCx for [device initialization](device-initialization.md), an MBB client driver must perform the following tasks in its [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function:
 
-1. Call [**MbbDeviceInitConfig**](mbbdeviceinitconfig.md) after calling [**NetAdapterDeviceInitConfig**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterdeviceinitconfig), referencing the same [*WDFDEVICE\_INIT*](../wdf/wdfdevice_init.md) object passed by the framework. **MbbDeviceInitConfig** must be called before calling [*WdfDeviceCreate*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreate). 
+1. Call [**MbbDeviceInitConfig**](mbbdeviceinitconfig.md) after calling [**NetAdapterDeviceInitConfig**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterdeviceinitconfig), referencing the same [*WDFDEVICE\_INIT*](../wdf/wdfdevice_init.md) object passed by the framework. **MbbDeviceInitConfig** must be called before calling [*WdfDeviceCreate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreate). 
 
 2. Call [**MbbDeviceInitialize**](mbbdeviceinitialize.md) to register MBB device-specific callback functions using an initialized [MBB_DEVICE_CONFIG](mbb-device-config.md) structure and the WDFDEVICE object obtained from **WdfDeviceCreate**.
 
@@ -47,7 +47,7 @@ The following example demonstrates how to initialize the MBB device. NOte that e
 ```
 Unlike other types of NetAdapterCx drivers, MBB client drivers must not create the NETADAPTER object from within the *EvtDriverDeviceAdd* callback function. Instead, it will be instructed by MBBCx to do so later.
 
-In the [*EvtDevicePrepareHardware*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function that follows, the client driver must call [**MbbDeviceSetMbimParameters**](mbbdevicesetmbimparameters.md).
+In the [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function that follows, the client driver must call [**MbbDeviceSetMbimParameters**](mbbdevicesetmbimparameters.md).
 
 ## Handling MBIM control messages
 
@@ -130,21 +130,21 @@ MBBCx guarantees that it calls *EvtMbbDeviceCreateAdapter* before requesting **M
 
 ![NETADAPTER creation and activation for an MBB client driver](images/activation.png)
 
-Flow for creating the NETADAPTER object for the primary PDP context/default EPS bearer is initiated by MBBCx when [*EvtDevicePrepareHardware*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) has successfully finished.
+Flow for creating the NETADAPTER object for the primary PDP context/default EPS bearer is initiated by MBBCx when [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) has successfully finished.
 
 Flow for creating the NETADAPTER object for the secondary PDP context/dedicated EPS bearer is triggered by WwanSvc whenever on-demand connections are requested by applications.
 
 ### Lifetime of the NETADAPTER object
 
-The NETADAPTER object created by the client driver will be automatically destroyed by MBBCx when it's no longer in use. For example, this happens after additional PDP context/EPS bearers are deactivated. **MBBCx client drivers must not call [**WdfObjectDelete**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfobject/nf-wdfobject-wdfobjectdelete) on the NETADAPTER objects they create.** 
+The NETADAPTER object created by the client driver will be automatically destroyed by MBBCx when it's no longer in use. For example, this happens after additional PDP context/EPS bearers are deactivated. **MBBCx client drivers must not call [WdfObjectDelete](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nf-wdfobject-wdfobjectdelete) on the NETADAPTER objects they create.** 
 
-If a client driver needs to clean up context data tied to a NETADAPTER object, it should provide an [*EvtDestroyCallback*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfobject/nc-wdfobject-evt_wdf_object_context_destroy) function in the object attributes structure when calling **NetAdapterCreate**.  
+If a client driver needs to clean up context data tied to a NETADAPTER object, it should provide an [*EvtDestroyCallback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nc-wdfobject-evt_wdf_object_context_destroy) function in the object attributes structure when calling **NetAdapterCreate**.  
 
 ## Power management of the MBB device
 
 The MBIM specification defines the **MBIM_CID_DEVICE_SERVICE_SUBSCRIBE_LIST** and **MBIM_CID_IP_PACKET_FILTERS** commands for arming wakeup. MBBCx provides two APIs, [**MbbDeviceArmWake**](mbbdevicearmwake.md) and [**MbbDeviceDisarmWake**](mbbdevicedisarmwake.md), for client drivers that want to arm and disarm their device wakeup using MBIM messages. If a client driver decides not to use MBIM messages for wakeup, it can choose to use the NETPOWERSETTINGS object instead [like other types of NetAdapterCx client drivers](configuring-power-management.md).
 
-The following example shows how to call the MBBCx-specific power management APIs in the context of your [*EvtDeviceArmWakeFromS0*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_s0) and [*EvtDeviceDisarmWakeFromS0*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_s0) callback functions.
+The following example shows how to call the MBBCx-specific power management APIs in the context of your [*EvtDeviceArmWakeFromS0*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_s0) and [*EvtDeviceDisarmWakeFromS0*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_s0) callback functions.
 
 ```cpp
     NTSTATUS
