@@ -46,7 +46,7 @@ To get started with debugging kernel mode drivers, see [Debug Universal Drivers 
 
 After you install Visual Studio and the WDK, you'll have six available [debugging environments](debuggers-in-the-debugging-tools-for-windows-package.md). All of these debugging environments provide user interfaces for the same underlying debugging engine, which is implemented in dbgeng.dll. This debugging engine is called the *Windows debugger*, and the six debugging environments are collectively called the *Windows debuggers*.
 
-**Note**  Visual Studio includes its own debugging environment and debugging engine, which together are called the *Visual Studio debugger*. For information on debugging in Visual Studio, see [Visual Studio debugger](https://go.microsoft.com/fwlink/p/?LinkID=238333). If you are looking to debug managed code such as C#, using the Visual Studio debugger is often easiest way to get started.
+**Note**  Visual Studio includes its own debugging environment and debugging engine, which together are called the *Visual Studio debugger*. For information on debugging in Visual Studio, see [Visual Studio debugger](https://go.microsoft.com/fwlink/p/?LinkID=238333). If you are looking to debug managed code such as C#, using the Visual Studio debugger is often the easiest way to get started.
 
  
 
