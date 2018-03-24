@@ -15,7 +15,9 @@ ms.technology: windows-devices
 
 [!include[MBBCx Beta Prerelease](../mbbcx-beta-prerelease.md)]
 
+The client driver shall call this method when there is a MBIM control message ready from the device, as the response of a previous MBIM control message sent to the device from the MbbCx framework.
 
+It can also call this method to notify the MbbCx framework of an unsolicated device event.
 
 ## Syntax
 
@@ -29,13 +31,14 @@ MbbDeviceResponseAvailable(
 ## Parameters
 
 *Device* [in]  
-
+A handle to a framework device object
 
 ## Return value
-
+This method does not return a value.
 
 ## Remarks
 
+For more information, see [**Handling MBIM control messages**](writing-an-mbbcx-client-driver.md#handling-mbim-control-messages).
 
 ## Requirements
 

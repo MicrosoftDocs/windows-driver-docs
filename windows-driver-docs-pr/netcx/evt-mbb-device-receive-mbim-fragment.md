@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 [!include[MBBCx Beta Prerelease](../mbbcx-beta-prerelease.md)]
 
-A client driver's *EvtMbbDeviceReceiveMbimFragment* event callabck function puts the response message returned from its hardware in response to the previous MBIM control message sent from MbbCx. It's the equivalent of *GetEncapsulatedResponse* request defined in MBIM specification
+A client driver's *EvtMbbDeviceReceiveMbimFragment* event callabck function puts the response message returned from its device in response to the previous MBIM control message sent from MbbCx. It's the equivalent of *GetEncapsulatedResponse* request defined in MBIM specification
 
 ## Syntax
 
@@ -38,7 +38,7 @@ typedef EVT_MBIM_DEVICE_RECEIVE_MBIM_FRAGMENT *PFN_MBB_DEVICE_RECEIVE_MBIM_FRAGM
 A handle to a framework device object
 
 *ReceiveRequest* [in]  
-A handle to the framework object which represents the request to receive a fragemented MBIM message from the hardware
+A handle to the framework object which represents the request to receive a fragemented MBIM message from the device
 
 ## Return value
 None
@@ -46,12 +46,15 @@ None
 ## Remarks
 A MbbCx client driver must register an *EvtMbbDeviceReceiveMbimFragment* callback function by calling [**MbbDeviceInitialize**](mbbdeviceinitialize.md)
 
-The MbbCx framework calls this callback function after it being notified by the client driver that [**a response MBIM message is available**](), in response to a previoius MBIM control message [**request from MbbCx framework**].
-In this callback function, the client driver shall put the response MBIM message into the buffer space pre-allocated by the MbbCx framework. The size of the pre-allocated buffer is equal to the maximum fragment size [**set by the client driver**](). If the size of a single response message is larger than the size of the pre-allocated buffer, and then it must split this response message into multiple fragmented messages as described in the MBIM specification. When fragmentation happens, the MbbCx will continue to call this callback function, once per fragment, until all fragments of the response MBIM message has been received.
+The MbbCx framework calls this callback function after it being notified by the client driver that [**a MBIM message is available from the device**](mbbdeviceresponseavailable.md), either because it's a response to [**a previoius MBIM control message request from MbbCx framework**](evt-mbb-device-send-mbim-fragment.md), or an unsolicated device event.
 
-To access the pre-allocated buffer space, the clinet driver should call [**MbbRequestGetBuffer**](). Once the client driver fills this buffer space with the response message, or a fragment of the response message, it must call [**MbbRequestCompleteWithInformation**] with the number of bytes actually being filled. This can be done either asychronously or sychronously.
+In this callback function, the client driver shall put the response MBIM message into the buffer space pre-allocated by the MbbCx framework. If the size of a single response message is larger than the size of the pre-allocated buffer, and then it must split this response message into multiple fragmented messages as described in the MBIM specification. When fragmentation happens, the MbbCx will continue to call this callback function, once per fragment, until all fragments of the response MBIM message has been received.
 
-Optionally, the client driver can call [**MbbRequestGetActivityId**]() to get an unique GUID that can be used to identify the receive request is for which control request sent by the MbbCx earliy on. The framgnets belongs to the same MBIM response message will be retreived by requests with the same GUID.
+To access the pre-allocated buffer space and its size, the clinet driver should call [**MbbRequestGetBuffer**](mbbrequestgetbuffer.md). Once the client driver fills this buffer space with the response message, or a fragment of the response message, it must call [**MbbRequestCompleteWithInformation**](mbbrequestcompletewithinformation.md) with the number of bytes actually being filled. This can be done either asychronously or sychronously.
+
+Optionally, the client driver can call [**MbbRequestGetActivityId**](mbbrequestgetactivityid.md) to get an unique GUID that can be used to identify the receive request is for which control request sent by the MbbCx earliy on. The framgnets belongs to the same MBIM response message will be retreived by requests with the same GUID.
+
+For more information, see [**Handling MBIM control messages**](writing-an-mbbcx-client-driver.md#handling-mbim-control-messages).
 
 ## Example
 
