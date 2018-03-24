@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 [!include[MBBCx Beta Prerelease](../mbbcx-beta-prerelease.md)]
 
-
+This structure describes pointers to a client driver's MBB specific callback functions. The client driver must supply an initialized **MBB_DEVICE_CONFIG** structure as an input parameter to [**MbbDeviceInitialize**](mbbdeviceinitialize.md)
 
 ## Syntax
 
@@ -34,15 +34,23 @@ typedef struct _MBB_DEVICE_CONFIG
 ## Members
 
 **Size**  
+Size of the **MBB_DEVICE_CONFIG** structure
+
+**SendMbimFragment**
+A pointer to the client driver's implementation of [*EVT_MBB_DEVICE_SEND_MBIM_FRAGMENT*](evt-mbb-device-send-mbim-framgment.md) callback function.
 
 **ReceiveMbimFragment**  
+A pointer to the client driver's implementation of [*EVT_MBB_DEVICE_RECEIVE_MBIM_FRAGMENT*](evt-mbb-device-receive-mbim-framgment.md) callback function.
 
 **SendDeviceServiceSessionData**  
+A pointer to the client driver's implementation of [*EVT_MBB_DEVICE_SEND_SERVICE_SESSION_DATA*](evt-mbb-device-send-service-session-data.md) callback function.
 
 **CreateAdapter**  
+A pointer to the client driver's implementation of [*EVT_MBB_DEVICE_CREATE_ADAPTER*](evt-mbb-device-create-adapter.md) callback function.
 
 ## Remarks
 
+Call [**MBB_DEVICE_CONFIG_INIT**](mbb-device-config-init.md) to intialize this structure.
 
 ## Requirements
 

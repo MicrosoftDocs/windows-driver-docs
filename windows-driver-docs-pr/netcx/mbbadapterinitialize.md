@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 [!include[MBBCx Beta Prerelease](../mbbcx-beta-prerelease.md)]
 
-
+This method initilizes the newly created NETADAPTER to MbbCx
 
 ## Syntax
 
@@ -29,13 +29,13 @@ MbbDeviceInitialize(
 ## Parameters
 
 *Adapter* [in]  
-
+A handle to a NetAdapterCx NETADAPTER object previously created by NetAdapterCreate.
 
 ## Return value
-
+This method might return failure in low resource situation
 
 ## Remarks
-
+The client driver must calls this method from whithin EvtMbbDeviceCreateAdapter. For more information, see [**Creating the NetAdapter interface for the PDP context/EPS bearer**](writing-an-mbbcx-client-driver.md#creating-the-netadapter-interface-for-the-pdp-contexteps-bearer).
 
 ## Requirements
 

@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 [!include[MBBCx Beta Prerelease](../mbbcx-beta-prerelease.md)]
 
-
+This method registers the client driver's MBB specific callback functions.
 
 ## Syntax
 
@@ -30,13 +30,13 @@ MbbDeviceInitialize(
 ## Parameters
 
 *Device* [in]  
-
+A handle to a framework device object.
 
 *Config* [in]  
-
+A pointer to a client driver initialized [**MBB_DEVICE_CONFIG**](mbb-device-config.md).
 
 ## Return value
-
+This method might return failure in low resource situation
 
 ## Remarks
 
