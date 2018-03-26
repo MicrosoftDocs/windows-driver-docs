@@ -58,12 +58,8 @@ We are interested in your feedback about symbols. Please mail suggestions or bug
 
 The packages released in October 2017 contain the full set of symbols required to debug the following: Windows&nbsp;10, Windows&nbsp;10 Enterprise, Windows Server Standard, version 1709, and Windows Server Datacenter, version 1709.
 
-<ul class="bulleted-list">
-                                                        <li>
-                                                            <a href="http://download.microsoft.com/download/5/C/9/5C911080-15B0-4829-9D62-E65FC6F16301/Windows_RS3.16299.15.170928-1534.x64FRE.Symbols.msi">Windows&nbsp;10, x64 retail symbols</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="http://download.microsoft.com/download/5/C/9/5C911080-15B0-4829-9D62-E65FC6F16301/Windows_RS3.16299.15.170928-1534.X86FRE.Symbols.msi">Windows&nbsp;10, x86 32-bit retail symbols</a>
+- [Windows&nbsp;10, x64 retail symbols](http://download.microsoft.com/download/5/C/9/5C911080-15B0-4829-9D62-E65FC6F16301/Windows_RS3.16299.15.170928-1534.x64FRE.Symbols.msi)
+- [Windows&nbsp;10, x86 32-bit retail symbols](http://download.microsoft.com/download/5/C/9/5C911080-15B0-4829-9D62-E65FC6F16301/Windows_RS3.16299.15.170928-1534.X86FRE.Symbols.msi)
                                                         </li>
 </ul>
 
@@ -72,76 +68,42 @@ The packages released in October 2017 contain the full set of symbols required t
 
 The packages released in April of 2017 contain the full set of symbols required to debug the following: Windows&nbsp;10, Windows&nbsp;10 Enterprise, Windows Server 2016, Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 Workgroup, Windows Storage Server 2016 Standard, Windows Server 2016 Essentials, and Microsoft Hyper-V Server 2016. 
 
-<ul class="bulleted-list">
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/6/9/C/69C86A1F-C8E9-4F28-B6FC-9FA2BCE98BC0/Windows_Rs2.15063.0.170317-1834.x64FRE.Symbols.msi">Windows&nbsp;10, x64 retail symbols</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/6/9/C/69C86A1F-C8E9-4F28-B6FC-9FA2BCE98BC0/Windows_Rs2.15063.0.170317-1834.X86FRE.Symbols.msi">Windows&nbsp;10, x86 32-bit retail symbols</a>
-                                                        </li>
-</ul>
+- [Windows&nbsp;10, x64 retail symbols](http://download.microsoft.com/download/6/9/C/69C86A1F-C8E9-4F28-B6FC-9FA2BCE98BC0/Windows_Rs2.15063.0.170317-1834.x64FRE.Symbols.msi)
+- [Windows&nbsp;10, x86 32-bit retail symbols](http://download.microsoft.com/download/6/9/C/69C86A1F-C8E9-4F28-B6FC-9FA2BCE98BC0/Windows_Rs2.15063.0.170317-1834.X86FRE.Symbols.msi)
 
 
 #### Windows&nbsp;10 preview symbols - September 2016 
 
 The packages released September 2016, contain the preview symbols required to debug Windows&nbsp;10 and Windows&nbsp;10 Enterprise.  These are preview symbols that should be used with the pre-release or flighted builds of Windows&nbsp;10.
 
-<ul class="bulleted-list">
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/1/7/8/17859C19-BD31-42F9-A669-3C7516BA3B12/Windows_Rs.14915.1000.160826-1902.x64FRE.Symbols.msi">Windows&nbsp;10, x64 retail symbols</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/1/7/8/17859C19-BD31-42F9-A669-3C7516BA3B12/Windows_Rs.14915.1000.160826-1902.X86FRE.Symbols.msi">Windows&nbsp;10, x86 32-bit retail symbols</a>
-                                                        </li>
-</ul>
+- [Windows&nbsp;10, x64 retail symbols](http://download.microsoft.com/download/1/7/8/17859C19-BD31-42F9-A669-3C7516BA3B12/Windows_Rs.14915.1000.160826-1902.x64FRE.Symbols.msi)
+- [Windows&nbsp;10, x86 32-bit retail symbols](http://download.microsoft.com/download/1/7/8/17859C19-BD31-42F9-A669-3C7516BA3B12/Windows_Rs.14915.1000.160826-1902.X86FRE.Symbols.msi)
 
 
 #### Windows&nbsp;10, version 1607 and Windows Server 2016 Symbols - August 2016
 
 The packages released August 2016, contain the full set of symbols required to debug Windows&nbsp;10, Windows&nbsp;10 Enterprise, Windows Server 2016, Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 Workgroup, Windows Storage Server 2016 Standard, Windows Server 2016 Essentials, Microsoft Hyper-V Server 2016.
 
-<ul class="bulleted-list">
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/D/1/9/D196C4F3-FC5B-48D2-A5D9-D3D42CE5F4F0/Windows_Rs1.14393.0.160715-1616.x64FRE.Symbols.msi">Windows&nbsp;10, x64 retail symbols</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/D/1/9/D196C4F3-FC5B-48D2-A5D9-D3D42CE5F4F0/Windows_Rs1.14393.0.160715-1616.X86FRE.Symbols.msi">Windows&nbsp;10, x86 32-bit retail symbols</a>
-                                                        </li>
-</ul>
- 
+- [Windows&nbsp;10, x64 retail symbols](http://download.microsoft.com/download/D/1/9/D196C4F3-FC5B-48D2-A5D9-D3D42CE5F4F0/Windows_Rs1.14393.0.160715-1616.x64FRE.Symbols.msi)
+- [Windows&nbsp;10, x86 32-bit retail symbols](http://download.microsoft.com/download/D/1/9/D196C4F3-FC5B-48D2-A5D9-D3D42CE5F4F0/Windows_Rs1.14393.0.160715-1616.X86FRE.Symbols.msi)
+
 
  #### Windows&nbsp;10 Insider Preview Build 14295  – March 2016 
  
  The packages released March 2016, contain the full set of symbols required to debug Windows&nbsp;10 Insider Preview Build 14295.
  
- <ul class="bulleted-list">
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/0/F/9/0F9FBD64-AACA-4152-BCC1-6C7D6FD64A19/Windows_Rs1.14295.1000.160318-1628.x64FRE.Symbols.msi">Windows&nbsp;10, x64 retail symbols</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/0/F/9/0F9FBD64-AACA-4152-BCC1-6C7D6FD64A19/Windows_Rs1.14295.1000.160318-1628.X86FRE.Symbols.msi">Windows&nbsp;10, x86 32-bit retail symbols</a>
-                                                        </li>
-</ul>
-                                    
+ - [Windows&nbsp;10, x64 retail symbols](http://download.microsoft.com/download/0/F/9/0F9FBD64-AACA-4152-BCC1-6C7D6FD64A19/Windows_Rs1.14295.1000.160318-1628.x64FRE.Symbols.msi)
+- [Windows&nbsp;10, x86 32-bit retail symbols](http://download.microsoft.com/download/0/F/9/0F9FBD64-AACA-4152-BCC1-6C7D6FD64A19/Windows_Rs1.14295.1000.160318-1628.X86FRE.Symbols.msi)
+
                                     
 #### Windows&nbsp;10, Version 1511 Symbols – November 2015
 
 The packages released November 2015, contain the full set of symbols required to debug Windows&nbsp;10, Windows&nbsp;10 Enterprise, Windows Server Technical Preview, Windows Datacenter Technical Preview, and Windows Hyper-V Server Technical Preview.
 
-<ul class="bulleted-list">
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/B/9/0/B90E8A27-A45C-499B-931E-D908F8CB84F1/Windows_Th2.10586.0.151029-1700.x64FRE.Symbols.msi">Windows&nbsp;10, x64 retail symbols</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/B/9/0/B90E8A27-A45C-499B-931E-D908F8CB84F1/Windows_Th2.10586.0.151029-1700.x64CHK.Symbols.msi">Windows&nbsp;10, x64 checked symbols</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/B/9/0/B90E8A27-A45C-499B-931E-D908F8CB84F1/Windows_Th2.10586.0.151029-1700.X86FRE.Symbols.msi">Windows&nbsp;10, x86 32-bit retail symbols</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/B/9/0/B90E8A27-A45C-499B-931E-D908F8CB84F1/Windows_Th2.10586.0.151029-1700.X86CHK.Symbols.msi">Windows&nbsp;10, x86 32-bit checked symbols</a>
-                                                        </li>
-</ul>
+- [Windows&nbsp;10, x64 retail symbols](http://download.microsoft.com/download/B/9/0/B90E8A27-A45C-499B-931E-D908F8CB84F1/Windows_Th2.10586.0.151029-1700.x64FRE.Symbols.msi)
+- [Windows&nbsp;10, x64 checked symbols](http://download.microsoft.com/download/B/9/0/B90E8A27-A45C-499B-931E-D908F8CB84F1/Windows_Th2.10586.0.151029-1700.x64CHK.Symbols.msi)
+- [Windows&nbsp;10, x86 32-bit retail symbols](http://download.microsoft.com/download/B/9/0/B90E8A27-A45C-499B-931E-D908F8CB84F1/Windows_Th2.10586.0.151029-1700.X86FRE.Symbols.msi)
+- [Windows&nbsp;10, x86 32-bit checked symbols](http://download.microsoft.com/download/B/9/0/B90E8A27-A45C-499B-931E-D908F8CB84F1/Windows_Th2.10586.0.151029-1700.X86CHK.Symbols.msi)
 
 
 
@@ -149,117 +111,53 @@ The packages released November 2015, contain the full set of symbols required to
 
 These packages contain the full set of symbols required to debug Windows&nbsp;10, Windows&nbsp;10 for Enterprise, Windows Server Technical Preview, Windows Datacenter Technical Preview, and Windows Hyper-V Server Technical Preview, released July 29, 2015.
 
-<ul class="bulleted-list">
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/C/F/F/CFFED264-98B4-40C5-8A9E-9C1659E01092/Windows_TH1.10240.16384.150709-1700.x64FRE.Symbols.msi">Windows&nbsp;10, x64 retail symbols</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/C/F/F/CFFED264-98B4-40C5-8A9E-9C1659E01092/Windows_TH1.10240.16384.150709-1700.x64CHK.Symbols.msi">Windows&nbsp;10, x64 checked symbols</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/C/F/F/CFFED264-98B4-40C5-8A9E-9C1659E01092/Windows_TH1.10240.16384.150709-1700.X86FRE.Symbols.msi">Windows&nbsp;10, x86 32-bit retail symbols</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/C/F/F/CFFED264-98B4-40C5-8A9E-9C1659E01092/Windows_TH1.10240.16384.150709-1700.X86CHK.Symbols.msi">Windows&nbsp;10, x86 32-bit checked symbols</a>
-                                                        </li>
-</ul>
-
+- [Windows&nbsp;10, x64 retail symbols](http://download.microsoft.com/download/C/F/F/CFFED264-98B4-40C5-8A9E-9C1659E01092/Windows_TH1.10240.16384.150709-1700.x64FRE.Symbols.msi)
+- [Windows&nbsp;10, x64 checked symbols](http://download.microsoft.com/download/C/F/F/CFFED264-98B4-40C5-8A9E-9C1659E01092/Windows_TH1.10240.16384.150709-1700.x64CHK.Symbols.msi)
+- [Windows&nbsp;10, x86 32-bit retail symbols](http://download.microsoft.com/download/C/F/F/CFFED264-98B4-40C5-8A9E-9C1659E01092/Windows_TH1.10240.16384.150709-1700.X86FRE.Symbols.msi)
+- [Windows&nbsp;10, x86 32-bit checked symbols](http://download.microsoft.com/download/C/F/F/CFFED264-98B4-40C5-8A9E-9C1659E01092/Windows_TH1.10240.16384.150709-1700.X86CHK.Symbols.msi)
 
 ### Windows RT 8.1 ARM, Windows&nbsp;8.1 and Windows Server 2012 R2 Symbols
 
 These packages contain the full set of symbols required to debug Windows RT 8.1 ARM, Windows&nbsp;8.1 and Windows Server 2012 R2, released October 17, 2013.
 
-<ul class="bulleted-list">
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/D/1/A/D1AD0063-7ECE-4589-A846-4971B56AFF09/Windows_winblue.9600.16384.130821-1623.woachk.Symbols-IRM_SYM_WOACHK_EN-US_MSI.msi">Windows RT 8.1 ARM checked symbols</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/D/1/A/D1AD0063-7ECE-4589-A846-4971B56AFF09/Windows_winblue.9600.16384.130821-1623.woafre.Symbols-IRM_SYM_WOAFRE_EN-US_MSI.msi">Windows RT 8.1 ARM retail symbols</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/D/1/A/D1AD0063-7ECE-4589-A846-4971B56AFF09/Windows_winblue.9600.16384.130821-1623.x64chk.Symbols-IRM_SYM_X64CHK_EN-US_MSI.msi">Windows&nbsp;8.1 and Windows Server 2012 R2, x64 checked symbols</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/D/1/A/D1AD0063-7ECE-4589-A846-4971B56AFF09/Windows_winblue.9600.16384.130821-1623.x64fre.Symbols-IRM_SYM_X64FRE_EN-US_MSI.msi">Windows&nbsp;8.1 and Windows Server 2012 R2, x64 retail symbols</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/D/1/A/D1AD0063-7ECE-4589-A846-4971B56AFF09/Windows_winblue.9600.16384.130821-1623.x86chk.Symbols-IRM_SYM_X86CHK_EN-US_MSI.msi">Windows&nbsp;8.1 x86 32-bit checked symbols</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/D/1/A/D1AD0063-7ECE-4589-A846-4971B56AFF09/Windows_winblue.9600.16384.130821-1623.x86fre.Symbols-IRM_SYM_X86FRE_EN-US_MSI.msi">Windows&nbsp;8.1 x86 32-bit retail symbols</a>
-                                                        </li>
-</ul>
-
+- [Windows RT 8.1 ARM checked symbols](http://download.microsoft.com/download/D/1/A/D1AD0063-7ECE-4589-A846-4971B56AFF09/Windows_winblue.9600.16384.130821-1623.woachk.Symbols-IRM_SYM_WOACHK_EN-US_MSI.msi)
+- [Windows RT 8.1 ARM retail symbols](http://download.microsoft.com/download/D/1/A/D1AD0063-7ECE-4589-A846-4971B56AFF09/Windows_winblue.9600.16384.130821-1623.woafre.Symbols-IRM_SYM_WOAFRE_EN-US_MSI.msi)
+- [Windows&nbsp;8.1 and Windows Server 2012 R2, x64 checked symbols](http://download.microsoft.com/download/D/1/A/D1AD0063-7ECE-4589-A846-4971B56AFF09/Windows_winblue.9600.16384.130821-1623.x64chk.Symbols-IRM_SYM_X64CHK_EN-US_MSI.msi)
+- [Windows&nbsp;8.1 and Windows Server 2012 R2, x64 retail symbols](http://download.microsoft.com/download/D/1/A/D1AD0063-7ECE-4589-A846-4971B56AFF09/Windows_winblue.9600.16384.130821-1623.x64fre.Symbols-IRM_SYM_X64FRE_EN-US_MSI.msi)
+- [Windows&nbsp;8.1 x86 32-bit checked symbols](http://download.microsoft.com/download/D/1/A/D1AD0063-7ECE-4589-A846-4971B56AFF09/Windows_winblue.9600.16384.130821-1623.x86chk.Symbols-IRM_SYM_X86CHK_EN-US_MSI.msi)
+-  [Windows&nbsp;8.1 x86 32-bit retail symbols](http://download.microsoft.com/download/D/1/A/D1AD0063-7ECE-4589-A846-4971B56AFF09/Windows_winblue.9600.16384.130821-1623.x86fre.Symbols-IRM_SYM_X86FRE_EN-US_MSI.msi)
 
 
 ### Windows&nbsp;8 and Windows Server 2012 Symbols
 
 These packages contain the full set of symbols required to debug Windows&nbsp;8 and Windows Server 2012, released August 15, 2012.
 
-<ul class="bulleted-list">
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/D/6/A/D6A258F4-11DA-479A-8A30-F9EB0B2951F9/Windows_Win8.9200.16384.120725-1247.X86FRE.Symbols.msi">Windows&nbsp;8 RTM x86 32-bit retail symbols</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/D/6/A/D6A258F4-11DA-479A-8A30-F9EB0B2951F9/Windows_Win8.9200.16384.120725-1247.X86CHK.Symbols.msi">Windows&nbsp;8 RTM x86 32-bit checked symbols</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/D/1/7/D17C7B6B-D0A0-4918-9B83-82024D2EC9D2/Windows_Win8.9200.16384.120725-1247.x64FRE.Symbols.msi">Windows&nbsp;8 RTM, x64 retail symbols</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/D/1/7/D17C7B6B-D0A0-4918-9B83-82024D2EC9D2/Windows_Win8.9200.16384.120725-1247.x64CHK.Symbols.msi">Windows&nbsp;8 RTM, x64 checked symbols</a>
-                                                        </li>
-</ul>
-
+- [Windows&nbsp;8 RTM x86 32-bit retail symbols](http://download.microsoft.com/download/D/6/A/D6A258F4-11DA-479A-8A30-F9EB0B2951F9/Windows_Win8.9200.16384.120725-1247.X86FRE.Symbols.msi)
+- [Windows&nbsp;8 RTM x86 32-bit checked symbols](http://download.microsoft.com/download/D/6/A/D6A258F4-11DA-479A-8A30-F9EB0B2951F9/Windows_Win8.9200.16384.120725-1247.X86CHK.Symbols.msi)
+- [Windows&nbsp;8 RTM, x64 retail symbols](http://download.microsoft.com/download/D/1/7/D17C7B6B-D0A0-4918-9B83-82024D2EC9D2/Windows_Win8.9200.16384.120725-1247.x64FRE.Symbols.msi)
+- [Windows&nbsp;8 RTM, x64 checked symbols](http://download.microsoft.com/download/D/1/7/D17C7B6B-D0A0-4918-9B83-82024D2EC9D2/Windows_Win8.9200.16384.120725-1247.x64CHK.Symbols.msi)
 
 ### Windows&nbsp;7 Service Pack 1 Symbols
 
 These packages contain the full set of symbols required to debug the Windows&nbsp;7 Service Pack 1.
 
-<p>
-<strong>Note:</strong> These packages also contain the full set of symbols required to debug Windows Server 2008 R2 Service Pack 1.
-</p>
-<ul class="bulleted-list">
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/0/A/F/0AFB5316-3062-494A-AB78-7FB0D4461357/Windows_Win7SP1.7601.17514.101119-1850.X86FRE.Symbols.msi">Windows&nbsp;7 Service Pack 1 x86 retail symbols, all languages</a> (File size: 330 MB - Most customers want this package.)
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/0/A/F/0AFB5316-3062-494A-AB78-7FB0D4461357/Windows_Win7SP1.7601.17514.101119-1850.X86CHK.Symbols.msi">Windows&nbsp;7 Service Pack 1 x86 checked symbols, all languages</a> (File size: 294 MB)
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/0/A/F/0AFB5316-3062-494A-AB78-7FB0D4461357/Windows_Win7SP1.7601.17514.101119-1850.AMD64FRE.Symbols.msi">Windows&nbsp;7 Service Pack 1 x64 retail symbols, all languages</a> (File size: 287 MB)
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/0/A/F/0AFB5316-3062-494A-AB78-7FB0D4461357/Windows_Win7SP1.7601.17514.101119-1850.AMD64CHK.Symbols.msi">Windows&nbsp;7 Service Pack 1 x64 checked symbols, all languages</a> (File size: 262 MB)
-                                                        </li>
-</ul>
+**Note:**   These packages also contain the full set of symbols required to debug Windows Server 2008 R2 Service Pack 1.
+
+- [Windows&nbsp;7 Service Pack 1 x86 retail symbols, all languages](http://download.microsoft.com/download/0/A/F/0AFB5316-3062-494A-AB78-7FB0D4461357/Windows_Win7SP1.7601.17514.101119-1850.X86FRE.Symbols.msi) (File size: 330 MB - Most customers want this package.)
+- [Windows&nbsp;7 Service Pack 1 x86 checked symbols, all languages](http://download.microsoft.com/download/0/A/F/0AFB5316-3062-494A-AB78-7FB0D4461357/Windows_Win7SP1.7601.17514.101119-1850.X86CHK.Symbols.msi) (File size: 294 MB)
+- [Windows&nbsp;7 Service Pack 1 x64 retail symbols, all languages](http://download.microsoft.com/download/0/A/F/0AFB5316-3062-494A-AB78-7FB0D4461357/Windows_Win7SP1.7601.17514.101119-1850.AMD64FRE.Symbols.msi) (File size: 287 MB)
+- [Windows&nbsp;7 Service Pack 1 x64 checked symbols, all languages](http://download.microsoft.com/download/0/A/F/0AFB5316-3062-494A-AB78-7FB0D4461357/Windows_Win7SP1.7601.17514.101119-1850.AMD64CHK.Symbols.msi) (File size: 262 MB)
 
 ### Windows&nbsp;7 RTM Symbols
 
- <p>
 These packages contain the full set of symbols required to debug the Windows&nbsp;7 RTM.
-</p>
 
-<p>
-<b>Note:</b> These packages also contain the full set of symbols required to debug Windows Server 2008 R2 RTM.
-</p>
+**Note:**   These packages also contain the full set of symbols required to debug Windows Server 2008 R2 RTM.
 
-
-<ul class="bulleted-list">
-<li>
-                                                            <a href="//download.microsoft.com/download/7/F/B/7FBF7E6A-D0DE-442A-A683-4F9885A96FC9/Windows_Win7.7600.16385.090713-1255.X86FRE.Symbols.msi">Windows&nbsp;7 RTM x86 retail symbols, all languages</a> (File size: 323 MB - Most customers want this package.)
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/7/F/B/7FBF7E6A-D0DE-442A-A683-4F9885A96FC9/Windows_Win7.7600.16385.090713-1255.X86CHK.Symbols.msi">Windows&nbsp;7 RTM x86 checked symbols, all languages</a> (File size: 288 MB)
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/F/1/1/F11206A1-C532-4C9E-86FF-1261A693AA53/Windows_Win7.7600.16385.090713-1255.X64FRE.Symbols.msi">Windows&nbsp;7 RTM x64 retail symbols, all languages</a> (File size: 286 MB)
-                                                        </li>
-                                                        <li>
-                                                            <a href="//download.microsoft.com/download/F/1/1/F11206A1-C532-4C9E-86FF-1261A693AA53/Windows_Win7.7600.16385.090713-1255.X64CHK.Symbols.msi">Windows&nbsp;7 RTM x64 checked symbols, all languages</a> (File size: 260 MB)
-</li>
-</ul>
-
+- [Windows&nbsp;7 RTM x86 retail symbols, all languages](http://download.microsoft.com/download/7/F/B/7FBF7E6A-D0DE-442A-A683-4F9885A96FC9/Windows_Win7.7600.16385.090713-1255.X86FRE.Symbols.msi) (File size: 323 MB - Most customers want this package.)
+- [Windows&nbsp;7 RTM x86 checked symbols, all languages](http://download.microsoft.com/download/7/F/B/7FBF7E6A-D0DE-442A-A683-4F9885A96FC9/Windows_Win7.7600.16385.090713-1255.X86CHK.Symbols.msi) (File size: 288 MB)
+- [Windows&nbsp;7 RTM x64 retail symbols, all languages](http://download.microsoft.com/download/F/1/1/F11206A1-C532-4C9E-86FF-1261A693AA53/Windows_Win7.7600.16385.090713-1255.X64FRE.Symbols.msi) (File size: 286 MB)
+- [Windows&nbsp;7 RTM x64 checked symbols, all languages](http://download.microsoft.com/download/F/1/1/F11206A1-C532-4C9E-86FF-1261A693AA53/Windows_Win7.7600.16385.090713-1255.X64CHK.Symbols.msi) (File size: 260 MB)
 
 
 
