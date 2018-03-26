@@ -3,7 +3,7 @@ title: Download  Windows Symbol Packages for Debugging
 description: This page provides downloads for Windows Symbol Packages which are used for debugging.
 keywords: ["Windows Debugging Downloads", "WinDbg", "Download", "Symbols","Download Symbols"]
 ms.author: domars
-ms.date: 02/01/2018
+ms.date: 03/26/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,9 +48,15 @@ For information on how to retrieve symbols for a machine that is not connected t
 We are interested in your feedback about symbols. Please mail suggestions or bug reports to [windbgfb@microsoft.com](mailto:windbgfb@microsoft.com). Technical support is not available from this address, but your feedback will help us to plan future changes for symbols and will make them more useful to you in the future. 
 
 
+
+
+## Download Windows Symbol Packages
+
+### Windows 10
+
 <section class="section remove-header-rule">
                         <header class="section-header">
-                            <h2 id="Download_windows">Download Windows Symbol Packages</h2>
+                            <h2 id="Download_windows"></h2>
                         </header>
                         <div class="section-body">
                             <div class="spacer-32-top">
@@ -236,13 +242,15 @@ We are interested in your feedback about symbols. Please mail suggestions or bug
                                         </div>
                                     </section>
 
+### Windows RT 8.1 ARM, Windows&nbsp;8.1 and Windows Server 2012 R2 Symbols
+
 <section class="section remove-header-rule spacer-32-bottom">
                                         <header class="section-header">
                                         </header>
                                         <div class="section-body collapse" id="win8-toggle">
                                             <section class="section item-section">
                                                 <header class="section-header">
-                                                    <h4 class="section-title">Windows RT 8.1 ARM, Windows&nbsp;8.1 and Windows Server 2012 R2 Symbols</h4>
+                                                    <h4 class="section-title"></h4>
                                                 </header>
                                                 <div class="section-body">
                                                     <p>
@@ -272,13 +280,16 @@ We are interested in your feedback about symbols. Please mail suggestions or bug
                                             </section>                                 
                                         </div>
  </section>
+
+### Windows&nbsp;8 and Windows Server 2012 Symbols
+
 <section class="section remove-header-rule spacer-32-bottom">
                                         <header class="section-header">
                                         </header>
                                         <div class="section-body collapse" id="win8-2-toggle">
                                             <section class="section item-section">
                                                 <header class="section-header">
-                                                    <h4 class="section-title">Windows&nbsp;8 and Windows Server 2012 Symbols</h4>
+                                                    <h4 class="section-title"></h4>
                                                 </header>
                                                 <div class="section-body">
                                                     <p>
@@ -303,13 +314,15 @@ We are interested in your feedback about symbols. Please mail suggestions or bug
                                         </div>
 </section>
 
+### Windows&nbsp;7 Service Pack 1 Symbols
+
 <section class="section remove-header-rule spacer-32-bottom">
                                         <header class="section-header">
                                         </header>
                                         <div class="section-body collapse" id="win7-toggle">
                                             <section class="section item-section">
                                                 <header class="section-header">
-                                                    <h4 class="section-title">Windows&nbsp;7 Service Pack 1 Symbols</h4>
+                                                    <h4 class="section-title"></h4>
                                                 </header>
                                                 <div class="section-body">
                                                     <p>
@@ -335,9 +348,11 @@ We are interested in your feedback about symbols. Please mail suggestions or bug
                                                 </div>
 </section>
 
+### Windows&nbsp;7 RTM Symbols
+
 <section class="section item-section">
                                                 <header class="section-header">
-                                                    <h4 class="section-title">Windows&nbsp;7 RTM Symbols</h4>
+                                                    <h4 class="section-title"></h4>
                                                 </header>
                                                 <div class="section-body">
                                                     <p>
@@ -362,6 +377,7 @@ We are interested in your feedback about symbols. Please mail suggestions or bug
                                                     </ul>
                                                 </div>
 </section>
+
 
 
 
