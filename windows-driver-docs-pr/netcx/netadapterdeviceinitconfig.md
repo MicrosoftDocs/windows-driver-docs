@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Initializes device initialization operations when the Plug and Play (PnP) manager reports the existence of a device.
+Initializes NetAdapterCx device initialization operations when the Plug and Play (PnP) manager reports the existence of a device.
 
 Syntax
 ------
