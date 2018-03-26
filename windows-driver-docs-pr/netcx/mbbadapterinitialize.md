@@ -1,6 +1,6 @@
 ---
 title: MbbDeviceInitialize
-description: 
+description: The MbbDeviceInitialize method initializes a newly created NETADAPTER object for MBBCx.
 ms.assetid: DDB50DBD-B52D-4212-99CC-167E2014B29E
 keywords:
 - Mobile Broadband WDF Class Extension MbbDeviceInitialize, MBBCx MbbDeviceInitialize
@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 [!include[MBBCx Beta Prerelease](../mbbcx-beta-prerelease.md)]
 
-This method initilizes the newly created NETADAPTER to MbbCx
+The **MbbDeviceInitialize** method initializes a newly created NETADAPTER object for MBBCx.
 
 ## Syntax
 
@@ -29,20 +29,26 @@ MbbDeviceInitialize(
 ## Parameters
 
 *Adapter* [in]  
-A handle to a NetAdapterCx NETADAPTER object previously created by NetAdapterCreate.
+A handle to a NetAdapterCx NETADAPTER object obtained in a previous call to [**NetAdapterCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptercreate).
 
 ## Return value
-This method might return failure in low resource situation
+
+Returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+
+This method might return failure in low resource situations.
 
 ## Remarks
-The client driver must calls this method from whithin EvtMbbDeviceCreateAdapter. For more information, see [**Creating the NetAdapter interface for the PDP context/EPS bearer**](writing-an-mbbcx-client-driver.md#creating-the-netadapter-interface-for-the-pdp-contexteps-bearer).
+
+The client driver must call this method from within [*EvtMbbDeviceCreateAdapter*](evt-mbb-device-create-adapter.md). 
+
+For more information, see [**Creating the NetAdapter interface for the PDP context/EPS bearer**](writing-an-mbbcx-client-driver.md#creating-the-netadapter-interface-for-the-pdp-contexteps-bearer).
 
 ## Requirements
 
 |     |     |
 | --- | --- |
 | Target platform | Universal |
-| Minimum KMDF version | 1.25 |
-| Minimum NetAdapterCx version | 1.2 |
+| Minimum KMDF version | 1.27 |
+| Minimum NetAdapterCx version | 1.3 |
 | Header | Mbbcx.h |
 | IRQL | PASSIVE_LEVEL |

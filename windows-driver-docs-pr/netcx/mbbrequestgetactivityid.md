@@ -1,6 +1,6 @@
 ---
 title: MbbRequestGetActivityId
-description: 
+description: Client drivers can call the MbbRequestGetCorrelationId method to correlate a pair of send and receive requests that exchange MBIM control messages between the MBBCx framework and the client driver.
 ms.assetid: E6718686-A54A-42C2-BE1D-BA33AB9EE4F9
 keywords:
 - Mobile Broadband WDF Class Extension MbbRequestGetCorrelationId, MBBCx MbbRequestGetCorrelationId
@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 [!include[MBBCx Beta Prerelease](../mbbcx-beta-prerelease.md)]
 
-The client driver can use this method to correlate a pair of send and receive requests that exchanges MBIM control message between the MbbCx framework and the client driver
+Client drivers can call the **MbbRequestGetCorrelationId** method to correlate a pair of send and receive requests that exchange MBIM control messages between the MBBCx framework and the client driver.
 
 ## Syntax
 
@@ -29,24 +29,26 @@ MbbRequestGetActivityId(
 ## Parameters
 
 *Request* [in]  
-A handle to the framework object which represents a request from MbbCx framework, either to send a MBIM control command message to the device, or receive a MBIM control response message from the device.
+A handle to the framework object that represents a request from the MBBCx framework, either to send a MBIM control command message to the device or to receive an MBIM control response message from the device.
 
 ## Return value
+
 A GUID value.
 
-Its purpose is similar to the *TransactionId* field of MBIM message header defined in MBIM specification. The MbbCx framework provides this value, so the client driver is not required to parse the MBIM message if some sorts of corrletions are needed. 
+The GUID's purpose is similar to the *TransactionId* field of the MBIM message header defined in the MBIM specification. The MBBCx framework provides this value, so the client driver is not required to parse the MBIM message if some sort of correlation is needed. 
 
 ## Remarks
-The MbbCx framework calls into the client driver to issue an MBIM command message, and later calls into the client driver again to retreive the response message for that command. The GUID value returned for both calls will be the same, and it would only change if a new pair of command and response are requested.
 
-Sometime the pair of the command and response message may get fragemented due to size limitation, in that case, all fragmented from the same pair will have the same GUID value.
+The MBBCx framework calls into the client driver to issue an MBIM command message, and later calls into the client driver again to retreive the response message for that command. The GUID value returned for both calls will be the same, and it would only change if a new command and response message pair is requested.
+
+Sometimes, the command and response message pair may get fragemented due to size limitations. In that case, all fragments from the same pair will have the same GUID value.
 
 ## Requirements
 
 |     |     |
 | --- | --- |
 | Target platform | Universal |
-| Minimum KMDF version | 1.25 |
-| Minimum NetAdapterCx version | 1.2 |
+| Minimum KMDF version | 1.27 |
+| Minimum NetAdapterCx version | 1.3 |
 | Header | Mbbcx.h |
 | IRQL | PASSIVE_LEVEL |

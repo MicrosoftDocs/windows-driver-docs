@@ -58,7 +58,7 @@ typedef EVT_MBB_DEVICE_SEND_SERVICE_SESSION_DATA *PFN_MBB_DEVICE_SEND_SERVICE_SE
 |     |     |
 | --- | --- |
 | Target platform | Universal |
-| Minimum KMDF version | 1.25 |
-| Minimum NetAdapterCx version | 1.2 |
+| Minimum KMDF version | 1.27 |
+| Minimum NetAdapterCx version | 1.3 |
 | Header | Mbbcx.h |
 | IRQL | PASSIVE_LEVEL |

@@ -46,7 +46,7 @@ MbbDeviceSendServiceSessionDataComplete(
 |     |     |
 | --- | --- |
 | Target platform | Universal |
-| Minimum KMDF version | 1.25 |
-| Minimum NetAdapterCx version | 1.2 |
+| Minimum KMDF version | 1.27 |
+| Minimum NetAdapterCx version | 1.3 |
 | Header | Mbbcx.h |
 | IRQL | PASSIVE_LEVEL |

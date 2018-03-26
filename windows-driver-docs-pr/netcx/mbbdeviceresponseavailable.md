@@ -1,6 +1,7 @@
 ---
 title: MbbDeviceResponseAvailable
-description: 
+description: A client driver calls the MbbDeviceResponseAvailable method when there is an MBIM control message ready from the device, as the response to a previous MBIM control message sent to the device from the MBBCx framework.
+
 ms.assetid: A8BECE96-3845-4A9D-BA36-50A2666E52E1
 keywords:
 - Mobile Broadband WDF Class Extension MbbDeviceResponseAvailable, MBBCx MbbDeviceResponseAvailable
@@ -15,9 +16,9 @@ ms.technology: windows-devices
 
 [!include[MBBCx Beta Prerelease](../mbbcx-beta-prerelease.md)]
 
-The client driver shall call this method when there is a MBIM control message ready from the device, as the response of a previous MBIM control message sent to the device from the MbbCx framework.
+A client driver calls the **MbbDeviceResponseAvailable** method when there is an MBIM control message ready from the device, as the response to a previous MBIM control message sent to the device from the MBBCx framework.
 
-It can also call this method to notify the MbbCx framework of an unsolicated device event.
+It can also call this method to notify the MBBCx framework of an unsolicited device event.
 
 ## Syntax
 
@@ -31,9 +32,10 @@ MbbDeviceResponseAvailable(
 ## Parameters
 
 *Device* [in]  
-A handle to a framework device object
+A handle to a framework device object the client driver obtained from a previous call to [WdfDeviceCreate](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreate).
 
 ## Return value
+
 This method does not return a value.
 
 ## Remarks
@@ -45,7 +47,7 @@ For more information, see [**Handling MBIM control messages**](writing-an-mbbcx-
 |     |     |
 | --- | --- |
 | Target platform | Universal |
-| Minimum KMDF version | 1.25 |
-| Minimum NetAdapterCx version | 1.2 |
+| Minimum KMDF version | 1.27 |
+| Minimum NetAdapterCx version | 1.3 |
 | Header | Mbbcx.h |
 | IRQL | <= DISPATCH_LEVEL |

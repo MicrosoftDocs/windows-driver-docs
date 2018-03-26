@@ -1,6 +1,6 @@
 ---
 title: EVT_MBB_DEVICE_SEND_MBIM_FRAGMENT
-description: 
+description: A client driver's EvtMbbDeviceSendMbimFragment event callabck function informs its device to perform the task specified by the MBIM control message. This callback function is the equivalent of the SendEncapsulatedCommand request defined in the MBIM specification.
 ms.assetid: 75AD00A8-B472-46D2-89CE-5EAB3E364954
 keywords:
 - Mobile Broadband WDF Class Extension EVT_MBB_DEVICE_SEND_MBIM_FRAGMENT, MBBCx EVT_MBB_DEVICE_SEND_MBIM_FRAGMENT
@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 [!include[MBBCx Beta Prerelease](../mbbcx-beta-prerelease.md)]
 
-A client driver's *EvtMbbDeviceSendMbimFragment* event callabck function informs its device to perform the task specified by the MBIM control message. It's the equivalent of *SendEncapsulatedCommand* request defined in MBIM specification
+A client driver's *EvtMbbDeviceSendMbimFragment* event callabck function informs its device to perform the task specified by the MBIM control message. This callback function is the equivalent of the *SendEncapsulatedCommand* request defined in the MBIM specification.
 
 ## Syntax
 
@@ -35,67 +35,75 @@ typedef EVT_MBB_DEVICE_SEND_MBIM_FRAGMENT *PFN_MBB_DEVICE_SEND_MBIM_FRAGMENT;
 ## Parameters
 
 *Device* [in]  
-A handle to a framework device object
+A handle to a framework device object the client driver obtained from a previous call to [WdfDeviceCreate](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreate).
 
 *SendRequest* [in]  
-A handle to the framework object which represents the request to send a fragemented MBIM message to the device
+A handle to the framework object that represents the request to send a fragemented MBIM message to the device.
 
 ## Return value
-None
+
+This callback function does not return a value.
 
 ## Remarks
-A MbbCx client driver must register an *EvtMbbDeviceSendMbimFragment* callback function by calling [**MbbDeviceInitialize**](mbbdeviceinitialize.md)
 
-The MbbCx framework calls this callback function when it wants to issue a command in the format of MBIM control message to the client driver. If the size of the MBIM control message is larger than the maximum fragment size [**set by the client driver**](), the MbbCx framework would split the MBIM control message to multiple fragmented messages, and calls this callback function once per each fragemented message.
+An MBBCx client driver must register an *EvtMbbDeviceSendMbimFragment* callback function by calling [**MbbDeviceInitialize**](mbbdeviceinitialize.md).
 
-To get the actual MBIM message fragment being sent, the client driver should call [**MbbRequestGetBuffer**]() to get the buffer where the MBIM message fragment is stored. Once its device has successfully accepts the control request, or any failure condition has happend, the client driver must acknowledge that to the MbbCx by calling [**MbbRequestComplete**](), either asynchronously or sychronously. 
+The MBBCx framework calls this callback function when it wants to issue a command in the format of an MBIM control message to the client driver. If the size of the MBIM control message is larger than the maximum fragment size set by the client driver in the [**MBB_DEVICE_MBIM_PARAMETERS**](mbb-device-mbim-parameters.md) structure, the MBBCx framework splits the MBIM control message into multiple fragmented messages and calls this callback function once per fragemented message.
 
-Optionally, the client driver can call [**MbbRequestGetActivityId**]() to get an unique GUID that can be used to correlate all MBIM message framgnets belongs to the same control request.
+To get the actual MBIM message fragment being sent, the client driver should call [**MbbRequestGetBuffer**](mbbrequestgetbuffer.md) to get the buffer where the MBIM message fragment is stored. Once its device has successfully accepted the control request, or any failure condition has occurred, the client driver must acknowledge this to MBBCx by calling [**MbbRequestComplete**](mbbrequestcomplete.md) either asynchronously or sychronously. 
 
-For more information, see [**Handling MBIM control messages**](writing-an-mbbcx-client-driver.md#handling-mbim-control-messages).
+Optionally, the client driver can call [**MbbRequestGetActivityId**](mbbrequestgetactivityid.md) to get a unique GUID that can be used to correlate all MBIM message framgnets belonging to the same control request.
+
+For more information, see [Handling MBIM control messages](writing-an-mbbcx-client-driver.md#handling-mbim-control-messages).
 
 ## Example
 
-> Error handling code has been excised from this example for brevity and clarity.
+Error handling code has been left out of this example for brevity and clarity.
 
-```cpp
+```C++
 VOID
 EvtMbbDeviceSendMbimFragment(
     WDFDEVICE  Device,
     MBBREQUEST SendRequest
 )
 {
-    // the client driver specified framework object context
+    // The client driver-specified framework object context
     PMY_DEVICE_CONTEXT myContext = GetMyDeviceContext(Device);
 
     size_t bufferSize = 0;
     PVOID buffer = MbbRequestGetBuffer(SendRequest, &bufferSize);
 
-    // this client driver example uses asynchronous completion
+    // This client driver example uses asynchronous completion
     auto myDeviceSendCompletionRoutine = [](MBBREQUEST SendRequest, NTSTATUS NtStatus)
     {
-        //acknowledge back to MbbCx
+        //Acknowledge back to MBBCx
         MbbRequestComplete(SendRequest, NtStatus);
     };
 
-    // the client driver specified function call into its device
+    // The client driver-specified function call into its device
     NTSTATUS sendStatus = MyDeviceAsyncSend(
-        //the client driver specific handle
+        
+        // The client driver-specific handle
         myContext->MyDeviceHandle,
-        //the context for completion
+
+        // The context for completion
         SendRequest,
-        //MBIM message               
+
+        // MBIM message               
         buffer,
-        //MBIM message size
+
+        // MBIM message size
         bufferSize,   
-        //Can be used for logging purpose, for example              
+
+        // Can be used for logging purpose, for example              
         MbbRequestGetActivityId(SendRequest), 
-        //the client driver specific completion routine
+
+        // The client driver-specific completion routine
         myDeviceSendCompletionRoutine);
 
     if (sendStatus != STATUS_PENDING)
     {
-        //acknowledge back to MbbCx
+        // Acknowledge back to MBBCx
         myDeviceSendCompletionRoutine(
             SendRequest,
             sendStatus);
@@ -108,7 +116,7 @@ EvtMbbDeviceSendMbimFragment(
 |     |     |
 | --- | --- |
 | Target platform | Universal |
-| Minimum KMDF version | 1.25 |
-| Minimum NetAdapterCx version | 1.2 |
+| Minimum KMDF version | 1.27 |
+| Minimum NetAdapterCx version | 1.3 |
 | Header | Mbbcx.h |
 | IRQL | PASSIVE_LEVEL |

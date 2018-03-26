@@ -17,17 +17,6 @@ ms.technology: windows-devices
 
 This topic contains API reference topics for Mobile Broadband WDF Class Extension (MBBCx) client drivers. These APIs and data structures are found in the Mbbcx.h header.
 
-## Callback functions
-
-- *[EVT_MBB_DEVICE_SEND_MBIM_FRAGMENT](evt-mbb-device-send-mbim-fragment.md)*
-- *[EVT_MBB_DEVICE_RECEIVE_MBIM_FRAGMENT](evt-mbb-device-receive-mbim-fragment.md)*
-- *[EVT_MBB_DEVICE_SEND_SERVICE_SESSION_DATA](evt-mbb-device-send-service-session-data.md)*
-- *[EVT_MBB_DEVICE_CREATE_ADAPTER](evt-mbb-device-create-adapter.md)*
-
-## Structures
-- **[MBB_DEVICE_CONFIG](mbb-device-config.md)**
-- **[MBB_DEVICE_MBIM_PARAMETERS](mbb-device-mbim-parameters.md)**
-
 ## Methods
 
 - [MBB_DEVICE_CONFIG_INIT](mbb-device-config-init.md)
@@ -46,3 +35,18 @@ This topic contains API reference topics for Mobile Broadband WDF Class Extensio
 - [MbbRequestGetActivityId](mbbrequestgetactivityid.md)
 - [MbbRequestComplete](mbbrequestcomplete.md)
 - [MbbRequestCompleteWithInformation](mbbrequestcompletewithinformation.md)
+
+## Callback functions
+
+- *[EVT_MBB_DEVICE_SEND_MBIM_FRAGMENT](evt-mbb-device-send-mbim-fragment.md)*
+- *[EVT_MBB_DEVICE_RECEIVE_MBIM_FRAGMENT](evt-mbb-device-receive-mbim-fragment.md)*
+- *[EVT_MBB_DEVICE_SEND_SERVICE_SESSION_DATA](evt-mbb-device-send-service-session-data.md)*
+- *[EVT_MBB_DEVICE_CREATE_ADAPTER](evt-mbb-device-create-adapter.md)*
+
+## Structures
+- **[MBB_DEVICE_CONFIG](mbb-device-config.md)**
+- **[MBB_DEVICE_MBIM_PARAMETERS](mbb-device-mbim-parameters.md)**
+
+## Enumerations
+
+- **[MBB_MBIM_VERSION](mbb-mbim-version.md)**

@@ -1,6 +1,6 @@
 ---
 title: MbbRequestComplete
-description: 
+description: Client drivers call the MbbRequestComplete method to complete a specified request for sending an MBIM control message to the device.
 ms.assetid: 7BD76E70-4F63-4F76-A8B9-B7FACBE0936C
 keywords:
 - Mobile Broadband WDF Class Extension MbbRequestComplete, MBBCx MbbRequestComplete
@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 [!include[MBBCx Beta Prerelease](../mbbcx-beta-prerelease.md)]
 
-The cleint driver uses this method to complete a specified request for sending MBIM control message to the device.
+Client drivers call the **MbbRequestComplete** method to complete a specified request for sending an MBIM control message to the device.
 
 ## Syntax
 
@@ -30,26 +30,27 @@ MbbRequestComplete(
 ## Parameters
 
 *Request* [in]  
-A handle to the framework request object that passed in from [**EvtMbbDeviceSendMbimFragment**](evt-mbb-device-send-mbim-fragment.md) callback function
+A handle to the framework request object passed in from the [*EvtMbbDeviceSendMbimFragment*](evt-mbb-device-send-mbim-fragment.md) callback function.
 
 *NtStatus* [in]  
-An NTSTAUT value that represents the completion status of the request.
+An NTSTATUS value that represents the completion status of the request.
 
 ## Return value
-None
+
+This method does not return a value.
 
 ## Remarks
 
-It must only be used to complete the request from *EvtMbbDeviceSendMbimFragment* callback function.
+This method must only be used to complete requests from the [*EvtMbbDeviceSendMbimFragment*](evt-mbb-device-send-mbim-fragment.md) callback function.
 
-To complete the request from [**EvtMbbDeviceReceiveMbimFragment**](evt-mbb-device-receive-mbim-fragment.md) callback function, the client driver must use [**MbbRequestCompleteWithInformation**](mbbrequestcompletewithinformation.md) method.
+To complete the request from [*EvtMbbDeviceReceiveMbimFragment*](evt-mbb-device-receive-mbim-fragment.md) callback function, the client driver must call the [**MbbRequestCompleteWithInformation**](mbbrequestcompletewithinformation.md) method.
 
 ## Requirements
 
 |     |     |
 | --- | --- |
 | Target platform | Universal |
-| Minimum KMDF version | 1.25 |
-| Minimum NetAdapterCx version | 1.2 |
+| Minimum KMDF version | 1.27 |
+| Minimum NetAdapterCx version | 1.3 |
 | Header | Mbbcx.h |
 | IRQL | <= DISPATCH_LEVEL |
