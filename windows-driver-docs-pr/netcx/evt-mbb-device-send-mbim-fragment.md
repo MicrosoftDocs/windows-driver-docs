@@ -48,7 +48,7 @@ A MbbCx client driver must register an *EvtMbbDeviceSendMbimFragment* callback f
 
 The MbbCx framework calls this callback function when it wants to issue a command in the format of MBIM control message to the client driver. If the size of the MBIM control message is larger than the maximum fragment size [**set by the client driver**](), the MbbCx framework would split the MBIM control message to multiple fragmented messages, and calls this callback function once per each fragemented message.
 
-To retrieve the actual MBIM message fragment, the client driver should call [**MbbRequestGetBuffer**]() to get the buffer where the MBIM message fragment is stored. Once its device has successfully accepts the control request, or any failure condition has happend, the client driver must acknowledge that to the MbbCx by calling [**MbbRequestComplete**](), either asynchronously or sychronously. 
+To get the actual MBIM message fragment being sent, the client driver should call [**MbbRequestGetBuffer**]() to get the buffer where the MBIM message fragment is stored. Once its device has successfully accepts the control request, or any failure condition has happend, the client driver must acknowledge that to the MbbCx by calling [**MbbRequestComplete**](), either asynchronously or sychronously. 
 
 Optionally, the client driver can call [**MbbRequestGetActivityId**]() to get an unique GUID that can be used to correlate all MBIM message framgnets belongs to the same control request.
 

@@ -33,7 +33,7 @@ MBB_DEVICE_CONFIG_INIT(
 ## Parameters
 
 *Config* [out]  
-A pointer to the client driver allocated MBB_DEVICe_CONFIG structure.
+A pointer to the client driver allocated MBB_DEVICE_CONFIG structure.
 
 *SendMbimFragment* [in]  
 A pointer to the client driver's implementation of [*EVT_MBB_DEVICE_SEND_MBIM_FRAGMENT*](evt-mbb-device-send-mbim-framgment.md) callback function.
@@ -51,7 +51,7 @@ A pointer to the client driver's implementation of [*EVT_MBB_DEVICE_CREATE_ADAPT
 None
 
 ## Remarks
-The client typically calls this method from its EVT_WDF_DRIVER_DEVICE_ADD event callback function.
+The client driver calls this method from its EVT_WDF_DRIVER_DEVICE_ADD event callback function in preparation of calling **MbbDeviceInitilize**.
 
 ## Requirements
 

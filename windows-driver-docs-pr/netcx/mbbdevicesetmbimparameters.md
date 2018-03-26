@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 [!include[MBBCx Beta Prerelease](../mbbcx-beta-prerelease.md)]
 
-
+The client driver calls this method to report its MBIM specification related parameters.
 
 ## Syntax
 
@@ -30,16 +30,16 @@ MbbDeviceSetMbimParameters(
 ## Parameters
 
 *Device* [in]  
-
+A handle to a framework device object.
 
 *MbimParameters* [in]  
-
+A pointer to a client driver initialized [**MBB_DEVICE_MBIM_PARAMETERs**](mbb-device-mbim-parameters.md).
 
 ## Return value
-
+None
 
 ## Remarks
-
+The client driver typically calls this method from within EVT_DEVICE_PREPARE_HARDWARE. For more information, see [**Initialize the device**](writing-an-mbbcx-client-driver.md#initialize-the-device).
 
 ## Requirements
 

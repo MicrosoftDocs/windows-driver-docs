@@ -39,6 +39,7 @@ A pointer to a client driver initialized [**MBB_DEVICE_CONFIG**](mbb-device-conf
 This method might return failure in low resource situation
 
 ## Remarks
+The client driver must call this method after it calls WdfDeviceCreate from within WdfDeviceCreate. For more information, see [**Initialize the device**](writing-an-mbbcx-client-driver.md#initialize-the-device).
 
 
 ## Requirements
