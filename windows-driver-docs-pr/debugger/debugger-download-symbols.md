@@ -85,7 +85,7 @@ The packages released September 2016, contain the preview symbols required to de
 The packages released August 2016, contain the full set of symbols required to debug Windows&nbsp;10, Windows&nbsp;10 Enterprise, Windows Server 2016, Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 Workgroup, Windows Storage Server 2016 Standard, Windows Server 2016 Essentials, Microsoft Hyper-V Server 2016.
 
 - [Windows&nbsp;10, x64 retail symbols](http://download.microsoft.com/download/D/1/9/D196C4F3-FC5B-48D2-A5D9-D3D42CE5F4F0/Windows_Rs1.14393.0.160715-1616.x64FRE.Symbols.msi)
-- [Windows&nbsp;10, x86 32-bit retail symbols](http//download.microsoft.com/download/D/1/9/D196C4F3-FC5B-48D2-A5D9-D3D42CE5F4F0/Windows_Rs1.14393.0.160715-1616.X86FRE.Symbols.msi)
+- [Windows&nbsp;10, x86 32-bit retail symbols](http://download.microsoft.com/download/D/1/9/D196C4F3-FC5B-48D2-A5D9-D3D42CE5F4F0/Windows_Rs1.14393.0.160715-1616.X86FRE.Symbols.msi)
 
 
  #### Windows&nbsp;10 Insider Preview Build 14295  – March 2016 
