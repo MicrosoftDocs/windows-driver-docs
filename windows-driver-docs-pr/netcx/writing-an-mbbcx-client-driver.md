@@ -20,13 +20,15 @@ ms.technology: windows-devices
 
 ## Initialize the device
 
-In addition to the tasks required by NetAdapterCx for [device initialization](device-initialization.md), an MBB client driver must perform the following tasks in its [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function:
+In addition to those tasks required by NetAdapterCx for [NetAdapter device initialization](device-initialization.md), an MBB client driver must also perform the following tasks in its [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function:
 
-1. Call [**MbbDeviceInitConfig**](mbbdeviceinitconfig.md) after calling [**NetAdapterDeviceInitConfig**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterdeviceinitconfig), referencing the same [*WDFDEVICE\_INIT*](../wdf/wdfdevice_init.md) object passed by the framework. **MbbDeviceInitConfig** must be called before calling [*WdfDeviceCreate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreate). 
+1. Call [**MbbDeviceInitConfig**](mbbdeviceinitconfig.md) after calling [*NetAdapterDeviceInitConfig*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterdeviceinitconfig) but before calling [*WdfDeviceCreate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreate), referencing the same [*WDFDEVICE\_INIT*](../wdf/wdfdevice_init.md) object passed-in by the framework.
 
-2. Call [**MbbDeviceInitialize**](mbbdeviceinitialize.md) to register MBB device-specific callback functions using an initialized [MBB_DEVICE_CONFIG](mbb-device-config.md) structure and the WDFDEVICE object obtained from **WdfDeviceCreate**.
+2. Call [**MbbDeviceInitialize**](mbbdeviceinitialize.md) to register MBB device-specific callback functions using an initialized [MBB_DEVICE_CONFIG](mbb-device-config.md) structure and the WDFDEVICE object obtained from *WdfDeviceCreate*.
 
-The following example demonstrates how to initialize the MBB device. NOte that error handling has been left out for clarity.
+The following example demonstrates how to initialize the MBB device.
+
+>the error handling has been left out for clarity.
 
 ```C++
     status = NetAdapterDeviceInitConfig(deviceInit);
@@ -47,38 +49,43 @@ The following example demonstrates how to initialize the MBB device. NOte that e
 ```
 Unlike other types of NetAdapterCx drivers, MBB client drivers must not create the NETADAPTER object from within the *EvtDriverDeviceAdd* callback function. Instead, it will be instructed by MBBCx to do so later.
 
-In the [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function that follows, the client driver must call [**MbbDeviceSetMbimParameters**](mbbdevicesetmbimparameters.md).
+Next, the client driver must call [**MbbDeviceSetMbimParameters**](mbbdevicesetmbimparameters.md), typically in the [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function that follows, .
 
 ## Handling MBIM control messages
 
 MBBCx uses the standard MBIM control commands defined in MBIM specification Rev 1.0, sections 8, 9, and 10, for the control plane. Commands and responses are exchanged through a set of callback functions provided by the client driver and APIs provided by MBBCx. MBBCx mimics the operational model of an MBIM device, as defined in MBIM specification Rev 1.0, section 5.3, by using these function calls:
 
-- MBBCx sends an MBIM control message to the client driver by invoking its [*EvtMbbDeviceSendMbimFragment*](evt-mbb-device-send-mbim-fragment.md) callback function. The client driver asynchronously completes this send request by calling [**MbbRequestComplete**](mbbrequestcomplete.md).
+- MBBCx sends an MBIM command message to the client driver by invoking its [**EvtMbbDeviceSendMbimFragment**](evt-mbb-device-send-mbim-fragment.md) callback function. The client driver asynchronously completes this send request by calling [**MbbRequestComplete**](mbbrequestcomplete.md).
 - The client driver signals availability of the result by calling [**MbbDeviceResponseAvailable**](mbbdeviceresponseavailable.md).
-- MBBCx fetches the response from the client driver by invoking its [*EvtMbbDeviceReceiveMbimFragment*](evt-mbb-device-receive-mbim-fragment.md) callback function. The client driver asynchronously completes this get-response request by calling [**MbbRequestCompleteWithInformation**](mbbrequestcompletewithinformation.md). 
-- The Mbb client driver may notify MBBCx of an unsolicited device event by calling **MbbDeviceResponsAvailable**. MBBCx then retrieves the information from the client driver similarly to how it fetches responses.
+- MBBCx fetches the MBIM response message from the client driver by invoking its [**EvtMbbDeviceReceiveMbimFragment**](evt-mbb-device-receive-mbim-fragment.md) callback function. The client driver asynchronously completes this get-response request by calling [**MbbRequestCompleteWithInformation**](mbbrequestcompletewithinformation.md). 
+- The Mbb client driver may notify MBBCx of an unsolicited device event by calling **MbbDeviceResponseAvailable**. MBBCx then retrieves the information from the client driver similarly to how it fetches MBIM response messages.
 
 The following diagram illustrates MBBCx-client driver message exchange flow.
 
 ![Mbim Message Exchange](images/mbim.png)
 
-power-up 
+### Synchronization of MBIM control message
+The MbbCx framework always serializes the calls into the client driver's **EvtMbbDeviceSendMbimFragment** or **EvtMbbDeviceReceiveMbimFragment** callback functions. No new calls will be made by the MbbCx framework until the client driver calls either **MbbRequestComplete** or **MbbRequestCompleteWithInformation**.
 
-MBIM_CLOSE_MSG
+While the client driver is guaranteed not to receive overlapped **EvtMbbDeviceSendMbimFragment** or **EvtMbbDeviceReceiveMbimFragment** callbacks, but it may be receiving multiple of them in successions, before the response for a previous command is available from the device.
+
+If the device is not in D0 state, the MbbCx framework will first bring the device to D0, i.e. calls [*EvtDeviceD0Entry*]() callback function, before it calls **EvtMbbDeviceSendMbimFragment** or **EvtMbbDeviceReceiveMbimFragment** callback. The MbbCx framework also guarantees to keep the device in D0 states, i.e. not to call [*EvtDeviceD0Exit*](), until the client calls **MbbRequestComplete** or **MbbRequestCompleteWithInformation**.
 
 ## Creating the NetAdapter interface for the PDP context/EPS bearer
 
-Before establishing a data session, MBBCx will instruct the client driver to create a NETADAPTER object that will be used to represent the network interface for the data session activated. This is accomplished by a call from MBBCx into the client driver's [*EvtMbbDeviceCreateAdapter*](evt-mbb-device-create-adapter.md) callback function. 
+Before establishing a data session, MBBCx will instruct the client driver to create a NETADAPTER object, and it will be used by MbbCx to represent the network interface for the data session activated. This is accomplished by MBBCx calling into the client driver's [*EvtMbbDeviceCreateAdapter*](evt-mbb-device-create-adapter.md) callback function. 
 
-In the implementation of the *EvtMbbDeviceCreateAdapter* callback function, the client driver must first perform the same tasks for creating a NETADAPTER object as required by any NetAdapterCx client driver. Furthermore, it must perform the following additional tasks:
+In the implementation of the *EvtMbbDeviceCreateAdapter* callback function, the MbbCx client driver must first perform the same tasks required for creating a NETADAPTER object as any NetAdapterCx client driver. Additionally, it must also perform the following additional tasks:
 
-1. Call [**MbbAdapterInitialize**](mbbadapterinitialize.md) with the NETADAPTER object created by [*NetAdapterCreate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptercreate).
+1. Call [**MbbAdapterInitialize**](mbbadapterinitialize.md) on the NETADAPTER object created by [*NetAdapterCreate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptercreate).
 
 2. After calling *MbbAdapterinitialize*, call [**MbbAdapterGetSessionId**](mbbadaptergetsessionid.md) to retreive the data session ID for which MBBCx intends to use this NETADAPTER object. For example, if the returned value is 0, it means MBBCx will use this NETADAPTER interface for the data session established by the primary PDP context/default EPS bearer.
 
 3. We recommend that MBBCx client drivers keep an internal mapping between the created NETADAPTER object and the returned *SessionId*. This helps track the data session-to-NETADAPTER object relationship, which is especially useful when multiple PDP contexts/EPS bearers have been activated.
 
 MBBCx invokes this callback function at least once, so there is always 1 NETADPATER object for the primary PDP context/default EPS bearer. If multiple PDP contexts/EPS bearers are activated, MBBCx might invoke this callback function more times, once for every data session to be established. There must be a 1-to-1 relationship between the network interface represented by the NETADAPTER object and a data session.
+
+![Multiple NetAdapters](images/multi-netadapter.png)
 
 The following example shows how to create a NETADAPTER object for a data session.
 
@@ -130,9 +137,9 @@ MBBCx guarantees that it calls *EvtMbbDeviceCreateAdapter* before requesting **M
 
 ![NETADAPTER creation and activation for an MBB client driver](images/activation.png)
 
-Flow for creating the NETADAPTER object for the primary PDP context/default EPS bearer is initiated by MBBCx when [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) has successfully finished.
+The flow for creating the NETADAPTER object for the primary PDP context/default EPS bearer is initiated by MBBCx when [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) has successfully finished.
 
-Flow for creating the NETADAPTER object for the secondary PDP context/dedicated EPS bearer is triggered by WwanSvc whenever on-demand connections are requested by applications.
+The flow for creating the NETADAPTER object for the secondary PDP context/dedicated EPS bearer is triggered by WwanSvc whenever on-demand connections are requested by applications.
 
 ### Lifetime of the NETADAPTER object
 
@@ -171,6 +178,6 @@ The following example shows how to call the MBBCx-specific power management APIs
 
 ## Handling device service sessions
 
-When an application sends DSS data down to the modem device, MBBCx invokes the client driver's[*EvtMbbDeviceSendServiceSessionData*](evt-mbb-device-send-service-session-data.md) callback function. The client driver should then send the data asynchronously to the device and call [**MbbDeviceSenServiceSessionDataComplete**](mbbdevicesendservicesessiondatacomplete.md) once the send has completed, so MBBCx then can free the memory allocated for the data. 
+When an application sends DSS data down to the modem device, MBBCx invokes the client driver's [*EvtMbbDeviceSendServiceSessionData*](evt-mbb-device-send-service-session-data.md) callback function. The client driver should then send the data asynchronously to the device and call [**MbbDeviceSenServiceSessionDataComplete**](mbbdevicesendservicesessiondatacomplete.md) once the send has completed, so MBBCx then can free the memory allocated for the data. 
 
 Conversely, the client driver calls [**MbbDeviceReceiveServiceSessionData**](mbbdevicereceiveservicesessiondata.md) to pass any data up to the application through MBBCx.
