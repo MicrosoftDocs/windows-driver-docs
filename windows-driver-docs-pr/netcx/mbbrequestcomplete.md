@@ -15,31 +15,34 @@ ms.technology: windows-devices
 
 [!include[MBBCx Beta Prerelease](../mbbcx-beta-prerelease.md)]
 
-
+The cleint driver uses this method to complete a specified request for sending MBIM control message to the device.
 
 ## Syntax
 
 ```C++
 VOID
 MbbRequestComplete(
-    _In_ MBBREQUEST Fragment,
+    _In_ MBBREQUEST Request,
     _In_ NTSTATUS NtStatus
 );
 ```
 
 ## Parameters
 
-*Fragment* [in]  
-
+*Request* [in]  
+A handle to the framework request object that passed in from [**EvtMbbDeviceSendMbimFragment**](evt-mbb-device-send-mbim-fragment.md) callback function
 
 *NtStatus* [in]  
-
+An NTSTAUT value that represents the completion status of the request.
 
 ## Return value
-
+None
 
 ## Remarks
 
+It must only be used to complete the request from *EvtMbbDeviceSendMbimFragment* callback function.
+
+To complete the request from [**EvtMbbDeviceReceiveMbimFragment**](evt-mbb-device-receive-mbim-fragment.md) callback function, the client driver must use [**MbbRequestCompleteWithInformation**](mbbrequestcompletewithinformation.md) method.
 
 ## Requirements
 

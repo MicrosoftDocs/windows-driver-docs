@@ -15,16 +15,21 @@ ms.technology: windows-devices
 
 [!include[MBBCx Beta Prerelease](../mbbcx-beta-prerelease.md)]
 
-
+The client driver uses this structure to describe its MBIM specification related parameters to the MbbCx framework
 
 ## Syntax
 
 ```C++
+typedef enum _MBB_MBIM_VERSION {
+    MBB_MBIM_VERSION1_0 = 0,
+    MBB_MBIM_VERSION1_0_ERRATA,
+} MBB_MBIM_VERSION;
+
 typedef struct _MBB_DEVICE_MBIM_PARAMETERS
 {
     ULONG Size;
 
-    USHORT Version;
+    MBB_MBIM_VERSION Version;
     ULONG MaximumFragmentSize;
 } MBB_DEVICE_MBIM_PARAMETERS, *PMBB_DEVICE_MBIM_PARAMETERS;
 ```
@@ -32,13 +37,20 @@ typedef struct _MBB_DEVICE_MBIM_PARAMETERS
 ## Members
 
 **Size**  
+Size of the **MBB_DEVICE_MBIM_PARAMETERS** structure
 
 **Version**  
+The version of MBIM specification that the client driver supports. The value of this field must be *MBB_MBIM_VERSION1_0_ERRATA*.
+
+The client driver and device must support MBIM specification Rev 1.0 Errata-1
 
 **MaximumFragmentSize**  
+The maximum size of the MBIM control message the client driver can support.
+
+The MbbCx framework uses the value of this field to determine if it needs to fragment the MBIM message when later it calls into the client driver's [**EvtMbbDeviceSendMbimFragment**](evt-mbb-device-send-mbim-fragment.md) callback functions to issue command.  
 
 ## Remarks
-
+Call [**MBB_DEVICE_MBIM_PARAMETERS_INIT**](mbb-device-mbim-parameters-init.md) to intialize this structure.
 
 ## Requirements
 

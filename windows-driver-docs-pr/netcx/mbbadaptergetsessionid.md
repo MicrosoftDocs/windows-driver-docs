@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 [!include[MBBCx Beta Prerelease](../mbbcx-beta-prerelease.md)]
 
-
+Retreive the data session Id represented by the given NETADAPTER object
 
 ## Syntax
 
@@ -29,12 +29,13 @@ MbbAdapterGetSessionId(
 ## Parameters
 
 *Adapter* [in]  
-
+A handle to a NetAdapterCx NETADAPTER object previously created with a call to NetAdapterCreate and initialized with [**MbbAdapterInitialize**](mbbadaptergetsessionid.md).
 
 ## Return value
-
+The data sessions ID to the network interface represented by the NETADAPTER object.
 
 ## Remarks
+The client driver must call [**MbbAdapterInitialize**](mbbadaptergetsessionid.md) first before calling this method. For more information, see [**Creating the NetAdapter interface for the PDP context/EPS bearer**](writing-an-mbbcx-client-driver.md#creating-the-netadapter-interface-for-the-pdp-contexteps-bearer).
 
 
 ## Requirements

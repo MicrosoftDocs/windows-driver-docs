@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 [!include[MBBCx Beta Prerelease](../mbbcx-beta-prerelease.md)]
 
-
+Initializes the [**MBB_DEVICE_MBIM_PARAMETERS**](mbb-device-mbim-parameters.md) structure.
 
 ## Syntax
 
@@ -31,19 +31,19 @@ MBB_DEVICE_MBIM_PARAMETERS_INIT(
 ## Parameters
 
 *MbimParameters* [out]  
-
+A pointer to the client driver allocated MBB_DEVICE_MBIM_PARAMETERS structure.
 
 *Version* [in]  
-
+The version of MBIM specification that the client driver supports. The value of this field must be *MBB_MBIM_VERSION1_0_ERRATA*.
 
 *MaximumFragmentSize* [in]  
-
+The maximum size of the MBIM control message the client driver can support.
 
 ## Return value
-
+None
 
 ## Remarks
-
+The client driver typically calls this method from its EVT_WDF_DEVICE_PREPARE_HARDWARE event callback function in preparation of calling **MbbDeviceSetMbimParameters**.
 
 ## Requirements
 
