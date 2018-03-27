@@ -60,8 +60,6 @@ The packages released in October 2017 contain the full set of symbols required t
 
 - [Windows&nbsp;10, x64 retail symbols](http://download.microsoft.com/download/5/C/9/5C911080-15B0-4829-9D62-E65FC6F16301/Windows_RS3.16299.15.170928-1534.x64FRE.Symbols.msi)
 - [Windows&nbsp;10, x86 32-bit retail symbols](http://download.microsoft.com/download/5/C/9/5C911080-15B0-4829-9D62-E65FC6F16301/Windows_RS3.16299.15.170928-1534.X86FRE.Symbols.msi)
-                                                        </li>
-</ul>
 
 
 #### Windows&nbsp;10, version 1703 and Windows Server 2016 symbols – April 2017
