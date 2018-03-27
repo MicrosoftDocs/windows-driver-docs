@@ -100,7 +100,7 @@ The following DDIs and data structures are new in NetAdapterCx 1.2 for packet ex
 In version 1.2 of NetAdapterCx, NIC client drivers can now create, start, and stop multiple NETADAPTER objects per device object.
 
 - [NetAdapterStart](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart)
-- [NetAdapterStop]((https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstop)
+- [NetAdapterStop](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstop)
 
 ## NetAdapter RSS
 
