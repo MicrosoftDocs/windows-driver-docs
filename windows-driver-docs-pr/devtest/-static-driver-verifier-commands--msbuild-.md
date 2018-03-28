@@ -41,7 +41,7 @@ For more information, see [Preparing your source code](using-static-driver-verif
 <span id="________check_Rule____Rule_..._"></span><span id="________check_rule____rule_..._"></span><span id="________CHECK_RULE____RULE_..._"></span> **/check:***Rule* | \[*Rule*,...\]  
 Starts a verification with the specified rule(s). You can specify more than one rule by enclosing the list of rules in square brackets and separating each rule with a comma. Run the **/check:** command and specify the driver's Visual Studio project file (\*.vcxproj).
 
-*Rule* is the name of one [rule](static-driver-verifier-rule.md) or a rule name pattern that includes wildcard characters (**\***) to represent one or more characters. When used alone, the wildcard character (**\***) represents all rules.
+*Rule* is the name of one [rule](static-driver-verifier-rule.md) or a rule name pattern that includes wildcard characters (\*) to represent one or more characters. When used alone, the wildcard character (\*) represents all rules.
 
 <span id="________check_rulelist.sdv______"></span><span id="________CHECK_RULELIST.SDV______"></span> **/check:***RuleList***.sdv**   
 Starts a verification with the rules in the specified rule list file. You can list only one file with this parameter. In the rule list file, each line can be the name of one rule or it can be a wildcard character (\*), which represents all SDV rules. You can also use the wildcard character (\*) in a rule name to mean any character or characters. Run **/check:***RuleList***.sdv** command and specify the driver's Visual Studio project file (\*.vcxproj).
@@ -88,7 +88,7 @@ Displays usage for SDV commands. Commands that use this parameter do not have to
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-Running **msbuild /t:/sdv p:/Inputs= /? ** without parameters displays usage for the SDV commands.
+Running **msbuild /t:/sdv p:/Inputs= /?** without parameters displays usage for the SDV commands.
 
 A **/clean** command deletes the files that SDV uses to create the Static Driver Verifier Report display for a verification. After running this command, the Static Driver Verifier Report display for the verification is no longer available.
 
