@@ -1239,6 +1239,11 @@
       "source_path": "windows-driver-docs-pr/3dprint/microsoft-3d-printer-drivers.md",
       "redirect_URL": "/windows-hardware/drivers/3dprint/index",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/network-driver-topics-in-sdk-header-files.md",
+      "redirect_URL": "/windows-hardware/drivers/network/kernel-mode-sdk-topics-for-network-drivers",
+      "redirect_document_id": true
     }
   ]
 }
