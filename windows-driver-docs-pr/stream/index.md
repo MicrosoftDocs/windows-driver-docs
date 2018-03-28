@@ -8,7 +8,7 @@ keywords:
 - media streaming WDK
 - data streaming WDK
 ms.author: windowsdriverdev
-ms.date: 01/24/2018
+ms.date: 03/20/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -20,7 +20,7 @@ Use the guidance in this section to design and implement drivers for devices tha
 
 ## In this section
 
-
+-   [DShow Bridge implementation guidance for UVC devices](dshow-bridge-implementation-guidance-for-usb-video-class-devices.md)
 -   [Camera class INF file setting for Universal camera drivers](camera-driver-inf-file-class-setting.md) (new for Windows 10, version 1709)
 -   [USB Video Class (UVC) driver implementation checklist](uvc-driver-implementation-checklist.md) (new for Windows 10, version 1703)
 -   [AVStream Minidrivers](avstream-minidrivers-design-guide.md)

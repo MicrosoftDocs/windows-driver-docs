@@ -304,7 +304,7 @@ DriverContextCleanup(
 
     // Clean up WPP resources on unload
     //
-    WPP_CLEANUP(WdfDriverWdmGetDriverObject(DriverObject));
+    WPP_CLEANUP(DriverObject);
 
    // ...
 
