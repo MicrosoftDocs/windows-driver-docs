@@ -91,7 +91,7 @@ MyEvtMbbDeviceSendServiceSessionData(
     deviceContext->DSSPacketsSentCount++;
 
     // Clean up the memory
-    MbbDeviceSendServiceSessionDataComplete(packet->Data,
+    MbbDeviceSendServiceSessionDataComplete(Data,
                                             status);
     MyCleanupDssPacket(packet);
 
