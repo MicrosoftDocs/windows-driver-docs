@@ -90,7 +90,7 @@ The first step in working with packet extensions in your NIC client driver is to
 > [!WARNING]
 > This example calls the **NetAdapterRegisterPacketExtension** method, which is available in the *NetPacketExtensionP.h* header from the [Realtek Github sample driver](https://github.com/Microsoft/NetAdapter-Cx-Driver-Samples/tree/master/RtEthSample). Because this header is prereleased product, it may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the contents of this header.
 
-```
+```C++
 NTSTATUS
 MyAdapterSetCapabilities(
     _In_ NETADAPTER Adapter
