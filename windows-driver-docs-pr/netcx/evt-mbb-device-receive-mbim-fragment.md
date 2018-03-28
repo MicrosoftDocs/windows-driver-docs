@@ -69,9 +69,6 @@ EvtMbbDeviceReceiveMbimFragment(
     MBBREQUEST ReceiveRequest
 )
 {
-    // The client driver-specified framework object context
-    PMY_DEVICE_CONTEXT myContext = GetMyDeviceContext(Device);
-
     size_t filledSize = 0;
     size_t bufferSize = 0;
     PVOID buffer = MbbRequestGetBuffer(ReceiveRequest, &bufferSize);

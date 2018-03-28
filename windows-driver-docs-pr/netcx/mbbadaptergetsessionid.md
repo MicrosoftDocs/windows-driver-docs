@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 [!include[MBBCx Beta Prerelease](../mbbcx-beta-prerelease.md)]
 
-The **MbbAdapterGetSessionId** method retreives the data Session ID represented by the given NETADAPTER object.
+The **MbbAdapterGetSessionId** method retreives the data session ID represented by the given NETADAPTER object.
 
 ## Syntax
 

@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 In addition to those tasks required by NetAdapterCx for [NetAdapter device initialization](device-initialization.md), an MBB client driver must also perform the following tasks in its [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function:
 
-1. Call [**MbbDeviceInitConfig**](mbbdeviceinitconfig.md) after calling [*NetAdapterDeviceInitConfig*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterdeviceinitconfig) but before calling [*WdfDeviceCreate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreate), referencing the same [*WDFDEVICE\_INIT*](../wdf/wdfdevice_init.md) object passed in by the framework.
+1. Call [**MbbDeviceInitConfig**](mbbdeviceinitconfig.md) after calling [*NetAdapterDeviceInitConfig*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterdeviceinitconfig) but before calling [*WdfDeviceCreate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreate), referencing the same [**WDFDEVICE\_INIT**](../wdf/wdfdevice_init.md) object passed in by the framework.
 
 2. Call [**MbbDeviceInitialize**](mbbdeviceinitialize.md) to register MBB device-specific callback functions using an initialized [MBB_DEVICE_CONFIG](mbb-device-config.md) structure and the WDFDEVICE object obtained from *WdfDeviceCreate*.
 
@@ -72,9 +72,9 @@ If the device is not in the *D0* state, the MBBCx framework will first bring the
 
 ## Creating the NetAdapter interface for the PDP context/EPS bearer
 
-Before establishing a data session, MBBCx will instruct the client driver to create a NETADAPTER object, and it will be used by MbbCx to represent the network interface for the data session activated. This is accomplished by MBBCx calling into the client driver's [*EvtMbbDeviceCreateAdapter*](evt-mbb-device-create-adapter.md) callback function. 
+Before establishing a data session, MBBCx will instruct the client driver to create a NETADAPTER object, and it will be used by MBBCx to represent the network interface for the data session activated. This is accomplished by MBBCx calling into the client driver's [*EvtMbbDeviceCreateAdapter*](evt-mbb-device-create-adapter.md) callback function. 
 
-In the implementation of the *EvtMbbDeviceCreateAdapter* callback function, the MbbCx client driver must first perform the same tasks required for creating a NETADAPTER object as any NetAdapterCx client driver. Additionally, it must also perform the following additional tasks:
+In the implementation of the *EvtMbbDeviceCreateAdapter* callback function, the MBBCx client driver must first perform the same tasks required for creating a NETADAPTER object as any NetAdapterCx client driver. Additionally, it must also perform the following additional tasks:
 
 1. Call [**MbbAdapterInitialize**](mbbadapterinitialize.md) on the NETADAPTER object created by [*NetAdapterCreate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptercreate).
 
@@ -177,6 +177,6 @@ The following example shows how to call the MBBCx-specific power management APIs
 
 ## Handling device service sessions
 
-When an application sends DSS data down to the modem device, MBBCx invokes the client driver's [*EvtMbbDeviceSendServiceSessionData*](evt-mbb-device-send-service-session-data.md) callback function. The client driver should then send the data asynchronously to the device and call [**MbbDeviceSenServiceSessionDataComplete**](mbbdevicesendservicesessiondatacomplete.md) once the send has completed, so MBBCx then can free the memory allocated for the data. 
+When an application sends DSS data down to the modem device, MBBCx invokes the client driver's [*EvtMbbDeviceSendServiceSessionData*](evt-mbb-device-send-service-session-data.md) callback function. The client driver should then send the data asynchronously to the device and call [**MbbDeviceSendServiceSessionDataComplete**](mbbdevicesendservicesessiondatacomplete.md) once the send has completed, so MBBCx then can free the memory allocated for the data. 
 
 Conversely, the client driver calls [**MbbDeviceReceiveServiceSessionData**](mbbdevicereceiveservicesessiondata.md) to pass any data up to the application through MBBCx.
