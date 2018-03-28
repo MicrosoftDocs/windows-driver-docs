@@ -24,14 +24,14 @@ You typically need to process the code for libraries that your driver requires o
 
 If you cannot process a required library for any reason, you can still run a verification, but the results are less reliable.
 
- **To reprocess a library**
+**To reprocess a library**
 
 1.  Start Static Driver Verifier. From the **Driver** menu in Visual Studio, click **Launch Static Driver Verifier...**.
 2.  On the **Main** tab, click **Clean**.
 3.  Click the **Libraries** tab and click **Add Library** to add the library.
 4.  Navigate to the library directory and select the project file for the library.
 
- **To re-process all libraries**
+**To re-process all libraries**
 
 1.  Start Static Driver Verifier. From the **Driver** menu in Visual Studio, click **Launch Static Driver Verifier...**.
 2.  Click the **Libraries** tab to select the library (or libraries), and click **Remove Libraries** to remove the library or libraries from the cache.
