@@ -73,7 +73,7 @@ After your registration is complete, additional administrative tasks are availab
 
 -   [Manage users and permissions](https://msdn.microsoft.com/library/windows/hardware/mt786457)
 
-When you are finished with administrative tasks, you are ready to create your first hardware submission. See [Hardware submissions](hardware-certification-submissions.md) for information and instructions.
+When you are finished with any administrative tasks, you are ready to create your first hardware submission. See [Hardware submissions](hardware-certification-submissions.md) for information and instructions.
 
  
 
