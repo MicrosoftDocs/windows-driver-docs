@@ -61,7 +61,7 @@ There are five main steps to the Hardware Program registration.
 
     -   Enter in account details, such as your organization display name and personal contact information.
 
-    -   Sign the required hardware developer legal agreements, located in the account settings tab, as shown below:
+    -   Sign the required hardware developer legal agreements, located in the account settings tab as shown below:
 
         ![an image showing the 'agreements' button.](images/legal-agreements-location.png)
 
