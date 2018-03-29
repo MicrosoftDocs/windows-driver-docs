@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # Metadata
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The Metadata element specifies the namespaces of the XML schemas that are referenced in the service metadata package.
 

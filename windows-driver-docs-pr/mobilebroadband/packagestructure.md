@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # PackageStructure
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The PackageStructure element specifies the XML schemas that are referenced by the service metadata package. Each XML schema is specified through the [Metadata](metadata-service-schema.md) element.
 

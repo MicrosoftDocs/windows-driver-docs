@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # Package (SoftwareInfo)
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The Package element specifies the app that will be downloaded when the operator’s mobile broadband hardware is detected on the PC.
 

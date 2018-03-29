@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # SoftwareInfo
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The SoftwareInfo element is the parent element of the [SoftwareInfo XML schema](softwareinfo-xml-schema.md).
 

@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # MetadataKey
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The MetadataKey element specifies the attributes of the service metadata package. These include the following:
 

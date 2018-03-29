@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # ServiceCategory
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The ServiceCategory element specifies the functional category that applies to the service.
 

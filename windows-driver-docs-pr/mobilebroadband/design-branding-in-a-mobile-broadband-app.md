@@ -56,7 +56,7 @@ You can use branding in the following places in your mobile broadband app:
 
     ![windows connection manager](images/mb-fig5-wcm.png)
 
-For more info aboutWindows 8, Windows 8.1, and Windows 10 branding guidance, see [UWP app marketing guidelines](https://msdn.microsoft.com/library/windows/apps/hh694084).
+For more info about Windows 10 branding guidance, see [UWP app marketing guidelines](https://msdn.microsoft.com/library/windows/apps/hh694084).
 
 ## <span id="Quick_summary"></span><span id="quick_summary"></span><span id="QUICK_SUMMARY"></span>Quick summary
 

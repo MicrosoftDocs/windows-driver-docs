@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # PackageInfo XML data types
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 This section describes the XML data types that are defined by the [PackageInfo XML schema](packageinfo-xml-schema.md):
 
