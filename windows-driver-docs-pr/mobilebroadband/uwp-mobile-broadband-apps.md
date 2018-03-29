@@ -63,15 +63,15 @@ This app does not provide connection management functionality, but instead provi
 
 Mobile broadband app experience apps, or MBAE apps, are replaced in Windows 10, version 1803 and later by MO UWP apps. MO UWP apps are now part of COSA and don't require creating service metadata on the Windows Dev Center Hardware dashboard (Sysdev). Windows 8, Windows 8.1, and versions of Windows 10 before 1803 continue to use MBAE apps via service metadata published on Sysdev. 
 
-In Windows 10, version 1803, MBAE apps work without having to migrate to COSA. However, we strongly recommend that mobile operators migrate to an MO UWP app and COSA. 
+In Windows 10, version 1803, MBAE apps work without having to migrate to COSA. However, we strongly recommend that mobile operators migrate to an MO UWP app and COSA. For details about COSA, see [COSA overview](cosa-overview.md). For more information about COSA settings, see [Desktop COSA/APN database settings](desktop-cosa-apn-database-settings.md).
 
-If the **AppID** setting is filled out in COSA, Windows will not check for a matching Sysdev metadata package to download your app. If **AppID** is not filled out, then Windows will check for a matching Sysdev metadata package.
+If the **AppID** setting is filled out in COSA, Windows will not check for a matching Sysdev metadata package to download your app. If **AppID** is not filled out, then Windows will check for a matching Sysdev metadata package to download your app.
 
 The following table provides information about the differences between MBAE and MO UWP apps.
 
 |   | Target platform | Delivery mechanism | Icon retrieval |
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | MBAE | Windows 8, Windows 8.1, or Windows 10 | Sysdev metadata | Sysdev metadata or COSA if declared as part of the profile | 
 | MO UWP app | Windows 10 (preferably version 1803 and later with the same SDK version) | COSA database | COSA database |
 
-UI source code between MBAE and an MO UWP app might differ due to changes between Windows 8/Windows 8.1 and Windows 10 UI principles. Most business logic source code, however, should not require much change. For example, the code for accessing the back end and accessing mobile broadband information might be the same. However, MOs should validate each scenario accordingly.
+UI source code between MBAE and an MO UWP app might differ due to changes between Windows 8/Windows 8.1 and Windows 10 UI principles. Most business logic source code, however, should not require much change. For example, the code for accessing the back end and accessing mobile broadband information might be the same. However, MOs should validate each of the [Mobile broadband app scenarios](mobile-broadband-app-scenarios.md) accordingly.
