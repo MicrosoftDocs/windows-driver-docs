@@ -12,108 +12,30 @@ ms.technology: windows-devices
 # Static Driver Verifier Diagnostics
 
 
-SDV has a diagnostics mode that can help you and Microsoft troubleshoot problems that SDV might encounter. When diagnostics mode is enabled, SDV logs messages to a file in your driver's sources directory, tracing SDV activity. The name of the file is StaticDVTrace.log.
+SDV has a diagnostics mode that can help you and Microsoft troubleshoot problems that SDV might encounter. When diagnostics mode is enabled, SDV logs messages to a series of files in your driver project, one per stage of verification and per rule.
 
 ### <span id="enabling_diagnostics"></span><span id="ENABLING_DIAGNOSTICS"></span>Enabling Diagnostics
 
-To enable diagnostics mode, you must edit the Staticdv.exe.config XML configuration file that is located in the SDV bin directory. You can edit the value of the TraceLevelSwitch XML element to set the trace level to one of five values. The default value is 1 - only error messages are logged.
+Diagnostics mode for SDV (also known as debug mode) can currently only be enabled when running from the command line.  For more details on running from the command line, see [Static Driver Verifier commands (MSBuild)](-static-driver-verifier-commands--msbuild-.md).
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Level</th>
-<th align="left">Value</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Off</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>None (default)</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Error</p></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Only error messages</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Warning</p></td>
-<td align="left"><p>2</p></td>
-<td align="left"><p>Warning messages and error messages</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Info</p></td>
-<td align="left"><p>3</p></td>
-<td align="left"><p>Informational messages, warning messages, and error messages</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Verbose</p></td>
-<td align="left"><p>4</p></td>
-<td align="left"><p>Verbose messages, informational messages, warning messages, and error messages</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-The following procedure describes how to enable diagnostic mode and how to set the level of trace activity to log.
-
-**To enable diagnostics**
-
-1.  Change to the %DDKPATH%\\tools\\sdv\\bin directory.
-
-2.  Using Notepad or another text editor, open the StaticDV.exe.config file.
-
-3.  Change the value of **DataMessagesSwitch** to **1**.
-    ```
-    <add name="DataMessagesSwitch" value="1" />
-    ```
-
-4.  Select a value for **TraceLevelSwitch** from **0** (no trace diagnostics) to **4** (verbose). If you are sending log files to Microsoft for diagnostics, you might be asked to set the **TraceLevelSwitch** to level **3**, which logs informational messages, warning messages, and error messages.
-    ```
-    <add name=" TraceLevelSwitch" value="3" />
-    ```
-
-5.  Save the StaticDV.exe.config file and run SDV on your driver.
-
-    SDV writes the messages to the StaticDVTrace.log file in your driver's sources directory.
-
-### <span id="the_staticdv_exe_config_file"></span><span id="THE_STATICDV_EXE_CONFIG_FILE"></span>The StaticDV.exe.config file
-
-The following is an example configuration file that enables diagnostics and sets the tracing level to level 3 (Info).
+To activate diagnostics, add the **/debug** flag after a **/check** command.  For example:
 
 ```
-<?xml version="1.0"?>
-<configuration>
-<system.diagnostics>
- <trace autoflush="false" indentsize="4">
- </trace>
-<switches>
-<!-- This switch controls data messages. In order to receive data 
-         trace messages, change value="0" to value="1" -->
- <add name="DataMessagesSwitch" value="1" />
- <!-- This switch controls general messages. In order to 
-         receive general trace messages change the value to the 
-         appropriate level. "1" gives error messages, "2" gives errors 
-         and warnings, "3" gives more detailed error information, and 
-         "4" gives verbose trace information -->
-  <add name="TraceLevelSwitch" value="3" />
-</switches>
-  </system.diagnostics>
-</configuration>
+msbuild /t:sdv /p:Inputs="/check:* /debug" mydriver.VcxProj /p:Configuration="Release" /p:Platform=x64
 ```
 
- 
+Enabling diagnostics will result in significantly more output to the command window, as wel as the creation of specific log files.
 
- 
+### <span id="enabling_diagnostics"></span><span id="ENABLING_DIAGNOSTICS"></span>Understanding Diagonistics
 
+SDV will create several files at each stage of execution which will provide details on that step.  When SDV fails partway through execution, it will not create any diagonistic files for later stages.
 
+The files created are, in order:
+* **smvexecute-NormalBuild.log**: This is located in your driver's source directory and shows the output of SDV's initial attempt to build the driver without additional instrumentation and analysis.
+* **smvexecute-InterceptedBuild.log**: This is located in your driver's source directory and shows the output of SDV building the driver with analysis hooks added.  
+* **smvcl.log**: This is located in the "sdv" directory created in your driver project by SDV.  It shows the compiler output of the InterceptedBuild step.  If you see a failure in **smvexecute-InterceptedBuild.log**, you may be able to find additional details in **smvcl.log.**
+* **smvexecute-Scan.log**: This is located in the "sdv" directory created in your driver project by SDV.  It shows the output of SDV's attempt to scan the driver to find entry points.  An error here may indicate that no entry points were found and you should update your function roletypes or sdv-map.h.  See [Using Function Role Type Declarations](using-function-role-type-declarations.md) and [Approving the Sdv-map.h File](approving-the-sdv-map-h-file) for more information.
+* **smvexecute-FinalCompile.log**: One of these files is created for each rule verified by sdv, and can be found in the "sdv\check\[rule name]" subfolder SDV creates in your driver project.  This file shows the output of SDV's attempt to build the driver with the OS model and specific rule.  
+* **smvexecute-CheckRule.log**: One of these files is created for each rule verified by sdv, and can be found in the "sdv\check\[rule name]" subfolder SDV creates in your driver project.  This file shows the output of SDV's attempt to verify the specified rule against your driver.
 
-
-
+You should look for the file corresponding to the stage listing as failed in the command output.  If the failure occurred in the **FinalCompile** or **CheckRule** steps, be sure to check the folder for the specific rule listed as failing.
