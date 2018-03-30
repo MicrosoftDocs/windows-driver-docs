@@ -34,7 +34,7 @@ This section includes:
 
 [Approving Sdv-map.h](approving-the-sdv-map-h-file.md)
 
-[Duplicate Entry Points for a Function Role Type](duplicate-entry-points-for-a-function-role-type)
+[Duplicate Entry Points for a Function Role Type](duplicate-entry-points-for-a-function-role-type.md)
 
  
 
