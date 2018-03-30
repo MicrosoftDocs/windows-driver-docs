@@ -19,7 +19,7 @@ ms.technology: windows-devices
 
 For SDV to verify a driver, it must be able to interpret the driver code, specifically, the driver's entry points and the code in functions and routines that support required driver functionality.
 
-The following sections describe the basic requirements for drivers and the specific syntax that SDV expects of the drivers that it verifies. SDV does not verify that drivers comply with these requirements, but if the driver does not comply, SDV declares errors and, in rare situations, it reports false positive or false negative results because of misinterpretation.
+The following sections describe the basic requirements for drivers and the specific syntax that SDV expects of the drivers that it verifies. SDV does not verify that drivers comply with these requirements, but if the driver does not comply, SDV may fail to run and, in rare situations, it reports false positive or false negative results because of misinterpretation.
 
 ### <span id="basic_driver_characteristics"></span><span id="BASIC_DRIVER_CHARACTERISTICS"></span>Basic Driver Characteristics
 
@@ -27,7 +27,9 @@ SDV is able to verify only drivers with the following characteristics:
 
 -   SDV verifies drivers and libraries that are written in C and C++.
 
--   SDV verifies only KMDF-compliant and WDM-compliant device drivers (function drivers, filter drivers, and bus drivers), NDIS drivers (filter, miniport, and protocol drivers), and Storport drivers.
+-   SDV performs full verification only on KMDF-compliant and WDM-compliant device drivers (function drivers, filter drivers, and bus drivers), NDIS drivers (filter, miniport, and protocol drivers), and Storport drivers.
+
+-   SDV attempts limited verification of generic properties (such as [NullCheck](nullcheckw.md)) on drivers that do not fit into the above categories.
 
 -   SDV can verify WDM drivers that declare their driver callback functions by using the WDM function role types. For information about how to declare functions, see [Declaring Functions Using Function Role Types for WDM Drivers](declaring-functions-using-function-role-types-for-wdm-drivers.md).
 
