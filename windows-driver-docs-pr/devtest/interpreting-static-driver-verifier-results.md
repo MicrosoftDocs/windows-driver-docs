@@ -78,13 +78,6 @@ The number of times that SDV encountered an internal error from which it could n
 
 This result is inconclusive. Use the **Send comments about this topic to Microsoft** link at the bottom of each WDK Documentation page to report the problem.
 
-<span id="Workaround"></span><span id="workaround"></span><span id="WORKAROUND"></span>**Workaround**  
-SDV has determined that additional analysis might yield useful results. In these cases, SDV automatically generates a rule file called Refine.sdv in the sources directory. This file contains those rules which might benefit from further verification. Follow the instructions in the results summary and type the following commands to continue the analysis:
-
-```
-msbuild /t:sdv /p:"Inputs=/refine" myproj.vcxproj
-```
-
  
 
  
