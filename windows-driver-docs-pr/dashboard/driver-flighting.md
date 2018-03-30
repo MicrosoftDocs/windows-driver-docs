@@ -15,7 +15,14 @@ The following video provides an overview for the driver flighting program in mor
 
 ## Signing up for driver flighting
 
-To sign up for driver flighting, submit a support ticket to the Windows Hardware Dev Center Dashboard. Within the ticket, specify the following:
+To sign up for driver flighting, submit a support ticket to the Windows Hardware Dev Center Dashboard. Support for the Hardware Dev Center is accessed in the upper-right corner of the browser window, as shown below:
+
+![The button for accessing Hardware Dev Center Support](images/support.jpg)
+
+> [!NOTE]
+> When signing up for driver flighting, make sure you are inside the Hardware Dev Center Dashboard. Clicking the support button from another area of the Dev Center will connect you with a non-dashboard support group.
+
+Within the ticket, specify the following:
 * The estimated number of existing devices that will be targeted by the driver
 * The estimated volume of promotion requests you will make per month
 * Your seller and/or publisher ID

@@ -12,16 +12,16 @@ ms.technology: windows-devices
 # Register for the Hardware Program
 
 
-Your company's administrator must [register](http://go.microsoft.com/fwlink/?LinkID=828002) for the Windows Hardware Dev Center program.
+Your organization's administrator must [register](http://go.microsoft.com/fwlink/?LinkID=828002) for the Windows Hardware Dev Center program.
 
 ## <span id="Before_you_sign_up"></span><span id="before_you_sign_up"></span><span id="BEFORE_YOU_SIGN_UP"></span>Before you sign up
 
 
 Review the following requirements before you start the registration process.
 
--   If you have an existing company Dev Center account that you want to use for the Hardware program, sign in with it before you begin registration.
+-   If you have an existing organization Dev Center account that you want to use for the Hardware program, sign in with it before you begin registration.
 
--   You must have an Extended Validation (EV) code signing certificate. Check whether your company already has a code signing certificate. If your company already has a certificate, have the certificate available as you will be asked to sign a file. If your company does not have a certificate, you will need to buy one as part of the registration process.
+-   You must have an Extended Validation (EV) code signing certificate. Check whether your organization already has a code signing certificate. If your organization already has a certificate, have the certificate available as you will be asked to sign a file. If your organization does not have a certificate, you will need to buy one as part of the registration process.
 
     For information about code signing certificates and how to get a certificate, see [Get a code signing certificate](get-a-code-signing-certificate.md).
 
@@ -49,19 +49,22 @@ There are five main steps to the Hardware Program registration.
     
     1. Download the provided signable file.
     2. Sign the file with signtool.exe and your code signing certificate.
-    3. Upload the signed file. Your company name and ID number is extracted from the signed file.
+    3. Upload the signed file. Your organization name and ID number is extracted from the signed file.
 
 4.  Sign in with an Azure AD Global administrator account
 
-    -   If your company already has an Azure AD directory, sign in with a [Global administrator](http://go.microsoft.com/fwlink/?LinkId=746654) account.
+    -   If your organization already has an Azure AD directory, sign in with a [Global administrator](http://go.microsoft.com/fwlink/?LinkId=746654) account.
 
-    -   If your company does not have an Azure AD directory, you must create one and sign in.
+    -   If your organization does not have an Azure AD directory, you must create one and sign in.
 
 5.  Account details
 
-    -   Enter in account details, such as company display name and personal contact information.
+    -   Enter in account details, such as your organization display name and personal contact information.
 
-    -   Sign the required hardware developer legal agreements.
+    -   Sign the required hardware developer legal agreements, located in the account settings tab as shown below:
+
+        ![an image showing the 'agreements' button.](images/legal-agreements-location.png)
+
 
 ## <span id="After_registration"></span><span id="after_registration"></span><span id="AFTER_REGISTRATION"></span>After registration
 
@@ -70,7 +73,7 @@ After your registration is complete, additional administrative tasks are availab
 
 -   [Manage users and permissions](https://msdn.microsoft.com/library/windows/hardware/mt786457)
 
-When you are finished with administrative tasks, you are ready to create your first hardware submission. See [Hardware submissions](hardware-certification-submissions.md) for information and instructions.
+When you are finished with any administrative tasks, you are ready to create your first hardware submission. See [Hardware submissions](hardware-certification-submissions.md) for information and instructions.
 
  
 
