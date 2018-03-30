@@ -2007,6 +2007,7 @@
 #### [WDI_TLV_OFFLOAD_SCOPE](wdi-tlv-offload-scope.md)
 #### [WDI_TLV_OPERATING_CLASS](wdi-tlv-operating-class.md)
 #### [WDI_TLV_OPERATION_MODE](wdi-tlv-operation-mode.md)
+#### [WDI_TLV_OS_POWER_MANAGEMENT_FEATURES](wdi-tlv-os-power-management-features.md)
 #### [WDI_TLV_P2P_ACTION_FRAME_DEVICE_CONTEXT](wdi-tlv-p2p-action-frame-device-context.md)
 #### [WDI_TLV_P2P_ACTION_FRAME_IES](wdi-tlv-p2p-action-frame-ies.md)
 #### [WDI_TLV_P2P_ACTION_FRAME_RESPONSE_PARAMETERS](wdi-tlv-p2p-action-frame-response-parameters.md)

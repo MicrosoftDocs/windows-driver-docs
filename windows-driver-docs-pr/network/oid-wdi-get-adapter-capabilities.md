@@ -30,7 +30,7 @@ No additional parameters. The data in the header is sufficient.
 ## Get property results
 
 
-If the adapter supports Wi-Fi Direct, both [**WDI\_TLV\_AP\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/dn926129) and [**WDI\_TLV\_P2P\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/dn897863) must be specified
+If the adapter supports Wi-Fi Direct, both [**WDI\_TLV\_AP\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/dn926129) and [**WDI\_TLV\_P2P\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/dn897863) must be specified.
 
 <table>
 <colgroup>
@@ -132,6 +132,12 @@ If the adapter supports Wi-Fi Direct, both [**WDI\_TLV\_AP\_ATTRIBUTES**](https:
 <td><p>X</p></td>
 <td><p>Added in Windows 10, version 1607, WDI version 1.0.21.</p>
 <p>A list of GUIDs that are passed on to NDIS when WDI is queried for [OID_GEN_SUPPORTED_GUIDS](https://msdn.microsoft.com/library/windows/hardware/ff569641).</p></td>
+</tr>
+<tr class="odd">
+<td><p>[<strong>WDI_TLV_OS_POWER_MANAGEMENT_FEATURES</strong>](wdi-tlv-os-power-management-features.md)</p></td>
+<td><p>Added in Windows 10, version 1803, WDI version 1.1.6.</p>
+<p>Used to enable advanced OS power management features.</p>
+</td>
 </tr>
 </tbody>
 </table>

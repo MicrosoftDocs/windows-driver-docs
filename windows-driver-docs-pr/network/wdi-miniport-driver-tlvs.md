@@ -167,6 +167,7 @@ This section contains WDI TLVs (Type-Length-Value).
 -   [**WDI_TLV_OFFLOAD_SCOPE**](wdi-tlv-offload-scope.md)
 -   [**WDI\_TLV\_OPERATING\_CLASS**](wdi-tlv-operating-class.md)
 -   [**WDI\_TLV\_OPERATION\_MODE**](wdi-tlv-operation-mode.md)
+-   [**WDI_TLV_OS_POWER_MANAGEMENT_FEATURES**](wdi-tlv-os-power-management-features.md)
 -   [**WDI\_TLV\_P2P\_ACTION\_FRAME\_DEVICE\_CONTEXT**](wdi-tlv-p2p-action-frame-device-context.md)
 -   [**WDI\_TLV\_P2P\_ACTION\_FRAME\_IES**](wdi-tlv-p2p-action-frame-ies.md)
 -   [**WDI\_TLV\_P2P\_ACTION\_FRAME\_RESPONSE\_PARAMETERS**](wdi-tlv-p2p-action-frame-response-parameters.md)
