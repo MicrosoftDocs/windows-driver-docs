@@ -41,8 +41,8 @@ Starts a verification with the specified rule(s). You can specify more than one 
 
 *Rule* is the name of one [rule](static-driver-verifier-rule.md) or a rule name pattern that includes wildcard characters (\*) to represent one or more characters. When used alone, the wildcard character (\*) represents all rules.
 
-<span id="________check_rulelist.sdv______"></span><span id="________CHECK_RULELIST.SDV______"></span> **/check:***RuleList***.sdv**   
-Starts a verification with the rules in the specified rule list file. You can list only one file with this parameter. In the rule list file, each line can be the name of one rule or it can be a wildcard character (\*), which represents all SDV rules.  Run **/check:***RuleList***.sdv** command and specify the driver's Visual Studio project file (\*.vcxproj).
+<span id="________check_rulelist.sdv______"></span><span id="________CHECK_RULELIST.SDV______"></span> **/check:*RuleList*.sdv**   
+Starts a verification with the rules in the specified rule list file. You can list only one file with this parameter. In the rule list file, each line can be the name of one rule or it can be a wildcard character (\*), which represents all SDV rules.  Run **/check:*RuleList*.sdv** command and specify the driver's Visual Studio project file (\*.vcxproj).
 
 *RuleList***.sdv** is the fully qualified path and file name of a [rule list file](static-driver-verifier-rule-list-file.md). The file must have the **.sdv** file name extension. Unless the file is in the local directory, the path is required. If the path or file name includes spaces, you must enclose *RuleList.***sdv** in quotation marks.
 
