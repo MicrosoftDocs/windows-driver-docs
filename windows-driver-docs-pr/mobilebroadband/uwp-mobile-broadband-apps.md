@@ -15,7 +15,7 @@ The following sections are available in this topic:
 
 - [UWP apps](#uwp-apps)
 - [UWP mobile broadband apps](#uwp-mobile-broadband-apps)
-- [UWP mobile broadband apps and MBAE apps](#uwp-mobile-broadband-apps-and-mbae-apps)
+- [UWP mobile broadband apps and MBAE apps](#uwp-mobile-broadband-apps-and-mbae)
 
 ## UWP apps
 
