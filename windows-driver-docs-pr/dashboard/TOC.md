@@ -17,6 +17,7 @@
 ### [Using Computer Hardware IDs (CHIDs)](using-chids.md)
 ### [Limiting driver distribution by Windows version](limit-driver-distribution.md)
 ### [Publishing for test distribution](publishing-for-test-distribution.md)
+## [Hardware dashboard API](dashboard-api.md)
 ## [Dashboard Administration](dashboard-administration.md)
 ### [Get started with the Hardware Program](get-started-with-the-hardware-dashboard.md)
 ### [Register for the Hardware Program](register-for-the-hardware-program.md)
