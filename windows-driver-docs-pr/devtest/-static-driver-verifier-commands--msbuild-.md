@@ -69,6 +69,8 @@ Run a **/clean** command for a driver project before each verification.
 
 Run a **/clean** command for a library when the library files are outdated, such as when the library code changes.
 
+A **/clean** command does not remove the Sdv-map.h file, if the approved flag is set to true in the Sdv-map.h file (Approved=true). SDV can then use this file for future verifications.
+
 <span id="_______________"></span> **/?**   
 Displays usage for SDV commands. Commands that use this parameter do not have to be run in a build environment window.
 
