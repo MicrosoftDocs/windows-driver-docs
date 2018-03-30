@@ -28,8 +28,6 @@ SDV has the following general limitations:
 
 The SDV [verification engine](verification-engine.md) has technical limitations that prevent it from correctly interpreting some driver code. Specifically, the verification engine:
 
--   Assumes that the statically declared type of a pointer is always correct and accurately reflects its actual dynamic type.
-
 -   Does not recognize that 32-bit integers are limited to 32 bits. As a result, it does not detect overflow or underflow errors.
 
 -   Makes sure that drivers that declare their entry points with the **static** keyword are processed correctly. However, to ensure that static entry points are recognized, SDV required a change to the [Sdv-map.h](sdv-map-h.md) files for static functions: For example, if you declare a static entry point:
@@ -104,8 +102,6 @@ The SDV [verification engine](verification-engine.md) has technical limitations 
 
 -   Only initializes arrays that are function pointer arrays. SDV issues a warning and compresses the array initializer to the first 1000 elements. For other array types, only the first element is initialized.
 
--   Cannot correctly interpret arrays that are dynamically allocated or whose size is unknown at compile time. Also, cannot correctly interpret variables that are declared as pointers but are used as arrays. In these situations, SDV interprets the arrays to be unconstrained, which could produce false defects and lead to an incorrect analysis. In addition, using variable indexes to access array elements in **for** loops can lead to incorrect analysis.
-
 -   Constructors of objects that are initialized in arrays are not called. For example, in the following code snippet, *x* does not get set to 10 because SDV does not call the constructor.
 
     ```
@@ -144,7 +140,7 @@ The SDV [verification engine](verification-engine.md) has technical limitations 
 
 -   SDV ignores precompiled headers. Drivers that use precompiled headers solely for speeding up compilation will compile slower with SDV. Drivers that must use precompiled headers for successful compilation will not compile with SDV.
 
--   Cannot infer some types of implicit assignments that are made through calls to **RtlZeroMemory** or **NdisZeroMemory**. The engine does not currently support these memory functions. As a result, code that depends upon these functions to initialize memory could yield false defects along some code paths.
+-   Cannot infer some types of implicit assignments that are made through calls to **RtlZeroMemory** or **NdisZeroMemory**. The engine does a best-effort analysis to initialize the memory to zero, but only when it can identify its type. As a result, code that depends upon these functions to initialize memory could yield false defects along some code paths.
 
 -   Does not support a memory model that would allow it to track the manual dispatching of I/O requests to a KMDF driver. The engine only supports methods that rely on the framework to deliver the I/O requests to the driver (for sequential or parallel dispatching).
 
