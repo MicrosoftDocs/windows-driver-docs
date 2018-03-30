@@ -36,7 +36,7 @@ You can use branding in the following places in your mobile broadband app:
 
     ![small tile](images/mb-fig2-start-screen-2x1-tile.png)
 
--   [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#setcharm) shows brand name
+-   [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#app-settings) shows brand name
 
 -   Uninstall user interface (UI) on the **Start** menu shows an icon and name
 
@@ -76,7 +76,7 @@ Inappropriate design for operator branding:
 
 -   [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#splash)
 
--   [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#setcharm)
+-   [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#app-settings)
 
 -   [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#tileandtoast)
 
