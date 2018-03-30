@@ -18,7 +18,9 @@ ms.technology: windows-devices
 
 SDV has the following general limitations:
 
--   SDV verifies only one driver at a time and the driver must follow one of these driver models: WDM, KMDF, NDIS, or Storport. For more information about the supported drivers, see [Determining if Static Driver Verifier supports your driver or library](determining-if-static-driver-verifier-supports-your-driver-or-library.md).
+-   SDV verifies only one driver at a time and the driver must follow one of these driver models to be fully verified: WDM, KMDF, NDIS, or Storport. For more information about the supported drivers, see [Determining if Static Driver Verifier supports your driver or library](determining-if-static-driver-verifier-supports-your-driver-or-library.md).
+
+-   Drivers that do not fall into one of the above categories will be severely limited in the rules that can be verified and are more likely to fail during analysis.
 
 -   The driver project file and source code must reside on the local computer. You cannot verify drivers remotely.
 
