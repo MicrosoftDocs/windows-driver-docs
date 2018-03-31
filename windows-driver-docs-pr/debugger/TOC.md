@@ -354,6 +354,8 @@
 ## [Native Debugger Objects in NatVis](native-debugger-objects-in-natvis.md)
 ## [Using LINQ With the debugger objects](using-linq-with-the-debugger-objects.md)
 ## [Debugger Data Model Function Aliases](debugger-data-model-function-aliases.md)
+## [Debugger Data Model C++ Interfaces](data-model-cpp-interfaces.md)
+
 ## [Glossary](glossary.md)
 ### [A](a.md)
 ### [B](b.md)
