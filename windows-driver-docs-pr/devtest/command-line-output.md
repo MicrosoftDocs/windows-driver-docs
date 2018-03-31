@@ -19,7 +19,7 @@ When you submit a command to SDV, it displays information about the command as i
 
 For example, the following illustration shows the command-line output from a command to verify the SDV-FailDriver-WDM sample driver with the [SpinLock](wdm-spinlock.md) rule. The SDV-FailDriver-WDM sample driver, a driver with intentional coding errors, is located in the \\tools\\sdv\\samples\\Sdv-FailDriver-WDM folder of the Windows Driver Samples.
 
-In this verification, SDV found a defect in the rule.
+In this verification, SDV found that the driver violated the rule.
 
 ```
 G:\Windows-driver-samples\tools\sdv\samples\SDV-FailDriver-WDM\driver>msbuild /p:Configuration=Release /p:Platform=x64 /t:sdv /p:inputs=/check:spinlock
@@ -100,7 +100,7 @@ Build succeeded.
 Time Elapsed 00:01:37.93
 ```
 
-After viewing the results summary to see which rules were violated, you can specify the **/view** option in an MSBuild command to see the Static Driver Verifier Report. For information about the command options, see [Static Driver Verifier commands (MSBuild)](-static-driver-verifier-commands--msbuild-.md). For information about the **Build** and **Check** steps in the output, see [Verification Process](verification-process.md).
+After viewing the results summary to see which rules were violated, you can specify the **/view** option in an MSBuild command to see the Static Driver Verifier Report. For information about the command options, see [Static Driver Verifier commands (MSBuild)](-static-driver-verifier-commands--msbuild-.md). For information about the **Scan**, **Build** and **Check** steps in the output, see [Verification Process](verification-process.md).
 
 The following table describes the results that can appear in the results summary.
 
