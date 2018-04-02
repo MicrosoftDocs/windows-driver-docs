@@ -56,7 +56,7 @@ After a device is attached, Windows first attempts to locate and install a drive
 
 -   The best matching driver that already exists in the driver store is first installed onto the device, allowing the device to begin operation quickly. In parallel and in a different process, the following will happen:
 
--   Windows automatically downloads matching [driver packages](driver-packages.md) from Windows Update. If a matching driver package is found, Windows downloads the package and stages it to the [driver store](driver-store.md).
+-   Windows automatically downloads matching [driver packages](driver-packages.md) from Windows Update. If a matching driver package is found, Windows downloads the package and stages it to the [driver store](driver-store.md).  Windows Update will search and offer Critical/Automatic updates first.  Only if there is nothing found will optionally published drivers be considered.  This means an older Critical driver of equal rank would be offered before a newer optionally published one.
 
     Windows also searches for driver packages that were preloaded in the locations that are specified by the **DevicePath** registry value. This value is under the following subkey of the registry.
 
