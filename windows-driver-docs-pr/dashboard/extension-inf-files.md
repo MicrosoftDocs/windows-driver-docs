@@ -25,7 +25,7 @@ This section describes how to submit and publish an INF package. See the highlig
 
 > [!IMPORTANT]
 > Microsoft recommends always creating a separate submission for each of your Extension INFs, and a separate submission containing only your base driver submission. Publishing your base driver and Extension INFs in a single submission will cause the following issues:
-> * All shipping labels will be classified and evaluated as “Extension Drivers” by The Hardware Dev Center Dashboard.
+> * All shipping labels will be classified and evaluated as "Extension Drivers" by The Hardware Dev Center Dashboard.
 > * After being published to Windows Update, users may be forced to download your driver packages multiple times: Once when the base driver is installed, and again for each applicable extension that PnP detects.
 
 ### Creating a submission package
@@ -51,7 +51,7 @@ This section describes how to submit and publish an INF package. See the highlig
 
     ![an image showing the 'replace driver' option in the HLK](images/hlk-replace-driver.png)
 
-2. Add the Extension INF to the driver’s folder with any referenced binaries. If you have multiple Extension INFs, only add one file. 
+2. Add the Extension INF to the driver's folder with any referenced binaries. If you have multiple Extension INFs, only add one file. 
 
 3. Create and sign this new HLK package. This will be your Extension INF package.
 
@@ -77,8 +77,8 @@ For example, when you create an ExtensionID for a new system part:
 >
 > If your organization manages projects and submissions for another organization, note the following:
 > * ExtensionID ownership is assigned to the SellerID who finalizes the submission. 
-> * Using another organization’s SellerID enables you to use their ExtensionID.
-> * To use your organization’s SellerID, you will need to create your own ExtensionID for the part or part series.
+> * Using another organization's SellerID enables you to use their ExtensionID.
+> * To use your organization's SellerID, you will need to create your own ExtensionID for the part or part series.
 
 You should generate a new ExtensionID for the initial version of an Extension INF (i.e. The first time you customize and submit an Extension INF). This includes the first time you receive a new shared shipping label for a new device. Visual Studio includes a GUID creation utilities in Tools > Create GUID, though any online GUID generation tool should work, if it matches the registry format as shown below.
 
@@ -100,8 +100,8 @@ All Extension INFs go through the driver flighting process to be distributed thr
 
 Because extensions are customizations for specific devices, they must always be specifically targeted.  Follow the below guidelines when working with Extension INF targeting:
 * Extension INF files must have 4-part Hardware IDs (HWIDs) if possible. 
-* In addition to having a 4-part HWID, CHIDs may also be added to the Extension INF’s shipping label.
-* For parts and part series that don’t have a 4-part HWID, CHID targeting is required on the Shipping Label.
+* In addition to having a 4-part HWID, CHIDs may also be added to the Extension INF's shipping label.
+* For parts and part series that don't have a 4-part HWID, CHID targeting is required on the Shipping Label.
 
 This targeting information is vital to accurately evaluate your Extension INF during distribution through Windows Update (WU). There are two stages in which WU evaluates drivers:
 
@@ -110,14 +110,14 @@ This targeting information is vital to accurately evaluate your Extension INF du
 
 In general, there are a few key principles in regards to the ranking/targeting for Extension INFs:  
 
-* The Extension INF’s ExtensionID is not used for applicability – just for lineage and versioning identification.
+* The Extension INF's ExtensionID is not used for applicability – just for lineage and versioning identification.
 
 * WU will offer (and PnP will install) the highest-ranked extension driver for each applicable Extension ID.
 
 * Extension drivers are ONLY ranked by Date & Version which is included in the DriverVer directive. This is used by both WU and PnP.  See [INF Version Section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section) and [INF DriverVer directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive) for more information.
-    * Note that PnP and WU don’t consider the Feature or Identifier Score (i.e. 2-part vs. 4-part) in regards to extension drivers.
+    * Note that PnP and WU don't consider the Feature or Identifier Score (i.e. 2-part vs. 4-part) in regards to extension drivers.
 
-* CHID information is not used when ranking extension drivers on WU (i.e., you can’t “block” other extension drivers with CHID targeting).
+* CHID information is not used when ranking extension drivers on WU (i.e., you can't "block" other extension drivers with CHID targeting).
 
 * For information on driver selection and targeting within the Windows operating system, see [Using an Extension INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file)
 
@@ -127,7 +127,7 @@ In general, there are a few key principles in regards to the ranking/targeting f
 
 **Do we need to change the ExtensionID every time we make an update to our base driver?**
 
-No, you should keep the same Extension ID when making updates to your base driver.  The ExtensionID is used for version comparison and driver lineage identification.  It should not change within a driver’s lineage. 
+No, you should keep the same Extension ID when making updates to your base driver.  The ExtensionID is used for version comparison and driver lineage identification.  It should not change within a driver's lineage. 
 
 **Do we need to create a new Extension INF submission every time we submit a base driver update?**
 
@@ -146,7 +146,7 @@ No. If you plan on owning the servicing aspect of the extension, then you must u
 
 No, and you must not.  The base driver package must always be backwards compatible with existing extensions.
  
-**What happens when an updated base driver is published and applied to an end user’s system?** 
+**What happens when an updated base driver is published and applied to an end user's system?** 
 
 When a base driver update is applied, the currently installed Extension INF will be evaluated and applied if necessary. If there are no Extension INFs installed, Windows Update will download the latest applicable version.
 
